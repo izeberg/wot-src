@@ -14,11 +14,12 @@ from gui.shared.items_parameters import functions, getShellDescriptors, NO_DATA
 from gui.shared.items_parameters.comparator import rateParameterState, PARAM_STATE
 from gui.shared.items_parameters.functions import getBasicShell, getRocketAccelerationKpiFactors
 from gui.shared.items_parameters.params_cache import g_paramsCache
-from gui.shared.utils import DAMAGE_PROP_NAME, PIERCING_POWER_PROP_NAME, AIMING_TIME_PROP_NAME, STUN_DURATION_PROP_NAME, AUTO_RELOAD_PROP_NAME, GUN_AUTO_RELOAD, GUN_CAN_BE_AUTO_RELOAD, MAX_STEERING_LOCK_ANGLE, WHEELED_SWITCH_OFF_TIME, WHEELED_SWITCH_ON_TIME, WHEELED_SWITCH_TIME, WHEELED_SPEED_MODE_SPEED, GUN_DUAL_GUN, GUN_CAN_BE_DUAL_GUN, RELOAD_TIME_SECS_PROP_NAME, DUAL_GUN_CHARGE_TIME, DUAL_GUN_RATE_TIME, TURBOSHAFT_ENGINE_POWER, TURBOSHAFT_SPEED_MODE_SPEED, TURBOSHAFT_INVISIBILITY_MOVING_FACTOR, TURBOSHAFT_INVISIBILITY_STILL_FACTOR, TURBOSHAFT_SWITCH_TIME, TURBOSHAFT_SWITCH_ON_TIME, TURBOSHAFT_SWITCH_OFF_TIME, CHASSIS_REPAIR_TIME, ROCKET_ACCELERATION_ENGINE_POWER, ROCKET_ACCELERATION_SPEED_LIMITS, ROCKET_ACCELERATION_REUSE_AND_DURATION, SHELLS_BURST_COUNT_PROP_NAME, SHELLS_FLAME_BURST_COUNT_PROP_NAME, DUAL_ACCURACY_COOLING_DELAY, DUAL_ACCURACY_AFTER_SHOT_DISPERSION_ANGLE, BURST_FIRE_RATE, GUN_AUTOSHOOT_FLAME, RELOAD_TIME_PER_SECOND, AVG_DAMAGE_PER_SECOND, AUTOSHOOT_FLAME_CHANGE_SHELL_TIME, AUOTSHOOT_FLAME_OVERHEAT_COOLING_TIME, AUTOSHOOT_FIRE_UNTIL_OVERHEAT_TIME, THERMAL_VISION_REUSE_AND_DURATION, THERMAL_VISION_DISTANCE, GUN_AUTO_RELOAD_DUAL_GUN, GUN_CLIP_DUAL_GUN
+from gui.shared.utils import DAMAGE_PROP_NAME, PIERCING_POWER_PROP_NAME, AIMING_TIME_PROP_NAME, STUN_DURATION_PROP_NAME, AUTO_RELOAD_PROP_NAME, GUN_AUTO_RELOAD, GUN_CAN_BE_AUTO_RELOAD, MAX_STEERING_LOCK_ANGLE, WHEELED_SWITCH_OFF_TIME, WHEELED_SWITCH_ON_TIME, WHEELED_SWITCH_TIME, WHEELED_SPEED_MODE_SPEED, GUN_DUAL_GUN, GUN_CAN_BE_DUAL_GUN, RELOAD_TIME_SECS_PROP_NAME, DUAL_GUN_CHARGE_TIME, DUAL_GUN_RATE_TIME, TURBOSHAFT_ENGINE_POWER, TURBOSHAFT_SPEED_MODE_SPEED, TURBOSHAFT_INVISIBILITY_MOVING_FACTOR, TURBOSHAFT_INVISIBILITY_STILL_FACTOR, TURBOSHAFT_SWITCH_TIME, TURBOSHAFT_SWITCH_ON_TIME, TURBOSHAFT_SWITCH_OFF_TIME, CHASSIS_REPAIR_TIME, ROCKET_ACCELERATION_ENGINE_POWER, ROCKET_ACCELERATION_SPEED_LIMITS, ROCKET_ACCELERATION_REUSE_AND_DURATION, SHELLS_BURST_COUNT_PROP_NAME, SHELLS_FLAME_BURST_COUNT_PROP_NAME, DUAL_ACCURACY_COOLING_DELAY, DUAL_ACCURACY_AFTER_SHOT_DISPERSION_ANGLE, BURST_FIRE_RATE, GUN_AUTOSHOOT_FLAME, RELOAD_TIME_PER_SECOND, AVG_DAMAGE_PER_SECOND, AUTOSHOOT_FLAME_CHANGE_SHELL_TIME, AUOTSHOOT_FLAME_OVERHEAT_COOLING_TIME, AUTOSHOOT_FIRE_UNTIL_OVERHEAT_TIME, THERMAL_VISION_REUSE_AND_DURATION, THERMAL_VISION_DISTANCE, GUN_AUTO_RELOAD_DUAL_GUN, GUN_CLIP_DUAL_GUN, SHOT_SPEED_ACCELERATED_PROP_NAME
 from gui.shared.utils import DISPERSION_RADIUS_PROP_NAME, SHELLS_PROP_NAME, GUN_NORMAL, SHELLS_COUNT_PROP_NAME
 from gui.shared.utils import GUN_CAN_BE_CLIP, RELOAD_TIME_PROP_NAME
 from gui.shared.utils import RELOAD_MAGAZINE_TIME_PROP_NAME, SHELL_RELOADING_TIME_PROP_NAME, GUN_CLIP
 from helpers import time_utils, dependency
+from helpers_common import computeDistanceFactor
 from items import getTypeOfCompactDescr, getTypeInfoByIndex, ITEM_TYPES, vehicles, tankmen
 from items import utils as items_utils
 from items.components import component_constants
@@ -671,9 +672,6 @@ class VehicleParams(_ParameterBase):
             damageMulKpi = self.vehicleGunDamage / 100.0 + 1
             minDamage *= damageMulKpi
             maxDamage *= damageMulKpi
-        if self.__vehicle.isOnlyForPortalBattlesVehicle:
-            minDamage *= self._itemDescr.miscAttrs['damageFactor']
-            maxDamage *= self._itemDescr.miscAttrs['damageFactor']
         return (
          int(floor(minDamage - minDamage * lowerBoundRandomization)),
          int(ceil(maxDamage + maxDamage * upperBoundRandomization)))
@@ -711,7 +709,7 @@ class VehicleParams(_ParameterBase):
 
     @property
     def avgPiercingPower(self):
-        return int(round(sum(self.piercingPower) / 2.0))
+        return int(round(sum(self.piercingPower) * 0.5))
 
     @property
     def piercingPower(self):
@@ -838,7 +836,9 @@ class VehicleParams(_ParameterBase):
     @property
     def autoReloadTime(self):
         if self.__hasAutoReload():
-            return tuple(reversed(items_utils.getClipReloadTime(self._itemDescr, self.__factors)))
+            reloadTimes = tuple(reversed(items_utils.getClipReloadTime(self._itemDescr, self.__factors)))
+            reloadTimes = tuple(self._itemDescr.battleModifiers(BattleParams.AUTORELOAD_TIME, reloadTime) for reloadTime in reloadTimes)
+            return reloadTimes
         else:
             return
 
@@ -849,6 +849,7 @@ class VehicleParams(_ParameterBase):
             argName = 'gunReloadSpeed'
             loaderDesperadoReloadFactor = self.__getFactorValueFromSkill(skillName, argName, Tankman.ROLES.LOADER, True)
             reloadTimes = tuple(reversed(items_utils.getClipReloadTime(self._itemDescr, self.__factors)))
+            reloadTimes = tuple(self._itemDescr.battleModifiers(BattleParams.AUTORELOAD_TIME, reloadTime) for reloadTime in reloadTimes)
             return tuple(reloadTime * loaderDesperadoReloadFactor for reloadTime in reloadTimes)
         else:
             return
@@ -995,23 +996,30 @@ class VehicleParams(_ParameterBase):
             gunParams = self._itemDescr.gun
             clipData = gunParams.clip
             if self.__hasAutoReload():
-                reloadTime = sum(items_utils.getClipReloadTime(self._itemDescr, self.__factors))
+                reloadTimes = items_utils.getClipReloadTime(self._itemDescr, self.__factors)
+                reloadTimes = tuple(self._itemDescr.battleModifiers(BattleParams.AUTORELOAD_TIME, reloadTime) for reloadTime in reloadTimes)
+                reloadTime = sum(reloadTimes)
             else:
                 reloadTime = items_utils.getReloadTime(self._itemDescr, self.__factors)
+                reloadTime = self._itemDescr.battleModifiers(BattleParams.RELOAD_TIME, reloadTime)
             return (
              reloadTime, self._itemDescr.gun.dualGun.rateTime, clipData[0])
         else:
             if self.__hasDualGun():
                 reloadTimes = items_utils.getDualGunReloadTime(self._itemDescr, self.__factors)
+                reloadTimes = tuple(self._itemDescr.battleModifiers(BattleParams.AUTORELOAD_TIME, reloadTime) for reloadTime in reloadTimes)
                 return (
                  sum(reloadTimes), self._itemDescr.gun.dualGun.rateTime, len(reloadTimes))
             if self.__hasClipGun():
                 gunParams = self._itemDescr.gun
                 clipData = gunParams.clip
                 if self.__hasAutoReload():
-                    reloadTime = sum(items_utils.getClipReloadTime(self._itemDescr, self.__factors))
+                    reloadTimes = items_utils.getClipReloadTime(self._itemDescr, self.__factors)
+                    reloadTimes = tuple(self._itemDescr.battleModifiers(BattleParams.AUTORELOAD_TIME, reloadTime) for reloadTime in reloadTimes)
+                    reloadTime = sum(reloadTimes)
                 else:
                     reloadTime = items_utils.getReloadTime(self._itemDescr, self.__factors)
+                    reloadTime = self._itemDescr.battleModifiers(BattleParams.RELOAD_TIME, reloadTime)
                 return (
                  reloadTime, clipData[1], clipData[0])
             return
@@ -1433,19 +1441,22 @@ class VehicleParams(_ParameterBase):
             argName = 'gunReloadSpeed'
             loaderDesperadoReloadFactor = self.__getFactorValueFromSkill(skillName, argName, Tankman.ROLES.LOADER, isSituational)
 
-        def getParams(f):
+        def getParams(f, battleParam):
             reloadTimes = f(self._itemDescr, self.__factors)
             reloadTimesMax = max(reloadTimes) * loaderDesperadoReloadFactor
+            reloadTimesMax = self._itemDescr.battleModifiers(battleParam, reloadTimesMax)
             reloadTimesMin = min(reloadTimes) * loaderDesperadoReloadFactor
+            reloadTimesMin = self._itemDescr.battleModifiers(battleParam, reloadTimesMin)
             return (getShotsPerMinute(self._itemDescr.gun, reloadTimesMax, hasAutoReload),
              getShotsPerMinute(self._itemDescr.gun, reloadTimesMin, hasAutoReload))
 
         hasAutoReload = self.__hasAutoReload()
         if self.__hasDualGun():
-            return getParams(items_utils.getDualGunReloadTime)
+            return getParams(items_utils.getDualGunReloadTime, BattleParams.RELOAD_TIME)
         if hasAutoReload:
-            return getParams(items_utils.getClipReloadTime)
+            return getParams(items_utils.getClipReloadTime, BattleParams.AUTORELOAD_TIME)
         reloadTime = items_utils.getReloadTime(self._itemDescr, self.__factors)
+        reloadTime = self._itemDescr.battleModifiers(BattleParams.RELOAD_TIME, reloadTime)
         return (
          getShotsPerMinute(self._itemDescr.gun, reloadTime * loaderDesperadoReloadFactor, hasAutoReload),)
 
@@ -1817,7 +1828,7 @@ class ShellParams(CompatibleParams):
 
     @property
     def piercingPowerTable(self):
-        if self._itemDescr.kind in _POWER_PIERCING_SHELLS:
+        if self._itemDescr.kind in _POWER_PIERCING_SHELLS or self._itemDescr.distanceFactor is not None:
             if self._vehicleDescr is None:
                 return NO_DATA
             result = []
@@ -1828,8 +1839,13 @@ class ShellParams(CompatibleParams):
             for distance in PIERCING_DISTANCES:
                 if distance > maxDistance:
                     distance = int(maxDistance)
-                currPiercing = PIERCING_POWER.computePiercingPowerAtDist(shellDescriptor.piercingPower, distance, maxDistance)
-                result.append((distance, currPiercing))
+                if self._itemDescr.distanceFactor is not None:
+                    pierceFactor = computeDistanceFactor(self._itemDescr, distance, 'pierceFactor')
+                    piercingPower = shellDescriptor.piercingPower[0] * pierceFactor
+                else:
+                    piercingPower = shellDescriptor.piercingPower
+                    piercingPower = PIERCING_POWER.computePiercingPowerAtDist(piercingPower, distance, maxDistance)
+                result.append((distance, piercingPower))
 
             return result
         return
@@ -1880,6 +1896,17 @@ class ShellParams(CompatibleParams):
                 projSpeedFactor = vehicles.g_cache.commonConfig['miscParams']['projectileSpeedFactor']
                 return result.speed / projSpeedFactor
         return
+
+    @property
+    def shotSpeedAccelerated(self):
+        if self._itemDescr.kind in _SHELL_KINDS and self._vehicleDescr is not None:
+            result = self.__getShellDescriptor()
+            if result:
+                projSpeedFactor = vehicles.g_cache.commonConfig['miscParams']['projectileSpeedFactor']
+                minSpeed, maxSpeed = self._getRawParams()[SHOT_SPEED_ACCELERATED_PROP_NAME]
+                return (
+                 int(minSpeed / projSpeedFactor), int(maxSpeed / projSpeedFactor))
+        return self._getRawParams()[SHOT_SPEED_ACCELERATED_PROP_NAME]
 
     def getParamsDict(self):
         stunConditionParams = ('stunMaxDuration', )

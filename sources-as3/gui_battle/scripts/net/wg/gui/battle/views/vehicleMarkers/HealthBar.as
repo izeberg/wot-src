@@ -3,6 +3,7 @@ package net.wg.gui.battle.views.vehicleMarkers
    import flash.display.MovieClip;
    import flash.events.Event;
    import flash.utils.getDefinitionByName;
+   import net.wg.data.constants.Errors;
    import net.wg.data.constants.InvalidationType;
    import net.wg.gui.battle.components.BattleUIComponent;
    
@@ -60,6 +61,7 @@ package net.wg.gui.battle.views.vehicleMarkers
       
       override protected function draw() : void
       {
+         var barColor:String = null;
          var linkage:String = null;
          var healthProgressBarClass:Class = null;
          var progressBar:MovieClip = null;
@@ -72,21 +74,17 @@ package net.wg.gui.battle.views.vehicleMarkers
             {
                removeChild(this.healthBar);
             }
-            linkage = HEALTH_PROGRESS_BAR_PREFIX + this._color;
+            barColor = this._color != VehicleMarkersConstants.COLOR_RED && this._color != VehicleMarkersConstants.COLOR_PURPLE && this._color != VehicleMarkersConstants.COLOR_WHITE ? VehicleMarkersConstants.COLOR_GREEN : this._color;
+            linkage = HEALTH_PROGRESS_BAR_PREFIX + barColor;
             try
             {
                healthProgressBarClass = getDefinitionByName(linkage) as Class;
                progressBar = new healthProgressBarClass();
+               addChildAt(progressBar,0);
             }
             catch(error:ReferenceError)
             {
-               linkage = HEALTH_PROGRESS_BAR_PREFIX + VehicleMarkersConstants.COLOR_GREEN;
-               healthProgressBarClass = getDefinitionByName(linkage) as Class;
-               progressBar = new healthProgressBarClass();
-            }
-            finally
-            {
-               addChildAt(progressBar,0);
+               DebugUtils.LOG_ERROR(Errors.BAD_LINKAGE + linkage);
             }
             this.healthBar = progressBar;
             this.healthBar.stop();

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>n_metal0</identifier>
+					<fx>shaders/std_effects/glow.fx</fx>
+					<materialKind>73</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Environment/hd_env_UNI_0005_DeerGlow/NY23_MegaIllumination_AM.dds</Texture>
+					</property>
+					<property>
+						g_tintColor
+						<Vector4>0.721569 0.682353 0.592157 1.000000</Vector4>
+					</property>
+					<property>
+						selfIllumination
+						<Float>50.000000</Float>
+					</property>
+				</material>
+				<groupOrigin>0.245715 1.343580 -0.148817</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-0.732853 -0.063052 -0.939533</min>
+		<max>1.224284 2.733666 0.709321</max>
+	</boundingBox>
+	<customBsp>true</customBsp>
+	<geometrySize>10084</geometrySize>
+	<minUVDensity>0.106934</minUVDensity>
+</root>

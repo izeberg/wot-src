@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/french/F123_ERAC_105_Proto/normal/lod1/Chassis</parent>
+	<tank>true</tank>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.219995 -0.000361 -2.399775</min>
+		<max>1.220004 0.925366 2.433178</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/french/F123_ERAC_105_Proto/normal/lod0/Chassis</nodefullVisual>
+</root>

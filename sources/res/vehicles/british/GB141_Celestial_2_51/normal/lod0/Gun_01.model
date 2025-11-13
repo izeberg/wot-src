@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB141_Celestial_2_51/normal/lod0/Gun_01</nodefullVisual>
+	<visibilityBox>
+		<min>-0.451680 -0.356054 -0.204409</min>
+		<max>0.455878 0.375083 4.148000</max>
+	</visibilityBox>
+	<parent>vehicles/british/GB141_Celestial_2_51/normal/lod1/Gun_01</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+</root>

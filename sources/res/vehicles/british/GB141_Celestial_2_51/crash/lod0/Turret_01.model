@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<visibilityBox>
+		<min>-1.362638 -0.147596 -2.214849</min>
+		<max>1.414912 1.399700 1.809071</max>
+	</visibilityBox>
+	<parent>vehicles/british/GB141_Celestial_2_51/crash/lod1/Turret_01</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/british/GB141_Celestial_2_51/crash/lod0/Turret_01</nodefullVisual>
+</root>

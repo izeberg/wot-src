@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/intunion/Un12_Merkava_M48/normal/lod2/Chassis</parent>
+	<tank>true</tank>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.847880 -0.005333 -3.700081</min>
+		<max>1.847358 1.296252 3.623039</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/intunion/Un12_Merkava_M48/normal/lod1/Chassis</nodefullVisual>
+</root>

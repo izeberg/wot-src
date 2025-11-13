@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>95.000008</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>truck_01</name>
+		<type>model</type>
+		<resource>content/Hangars/h08_mt_hangar/enviroment/normal/lod0/hd_h08_MTV1_0019_Truck.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 -0.005000 0.000000</value>
+				<inTangent>0.000000 0.000167 -8.034266</inTangent>
+				<outTangent>0.000000 0.000125 -7.032485</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>40.000004</startTime>
+				<value>0.000000 0.000000 -281.299408</value>
+				<inTangent>-0.000000 0.000125 -7.032485</inTangent>
+				<outTangent>-0.000000 0.000167 -8.034266</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 180.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>truck_02</name>
+		<type>model</type>
+		<resource>content/Hangars/h08_mt_hangar/enviroment/normal/lod0/hd_h08_MTV1_0019_Truck.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>49.000004</startTime>
+				<value>0.000000 -0.005000 0.000000</value>
+				<inTangent>0.000000 0.000139 -6.695221</inTangent>
+				<outTangent>0.000000 0.000139 -7.747972</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>85.000008</startTime>
+				<value>0.000000 0.000000 -278.927032</value>
+				<inTangent>-0.000000 0.000139 -7.747972</inTangent>
+				<outTangent>0.000000 0.000000 -0.237238</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>95.000008</startTime>
+				<value>0.000000 0.000000 -281.299408</value>
+				<inTangent>-0.000000 -0.000000 -0.237238</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>49.000004</startTime>
+				<value>0.000000 180.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 5.921052 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>truck_01_sound</name>
+		<type>sound</type>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>35.000000</duration>
+				<value>truck_01|root</value>
+			</frame>
+		</track>
+		<track>
+			<name>Sound</name>
+			<type>sound</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>34.999901</duration>
+				<sequenceSound>hangar_h08_truck_01</sequenceSound>
+				<type>play_till_end</type>
+				<fade>0.000000</fade>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>truck_02_sound</name>
+		<type>sound</type>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>49.000004</startTime>
+				<duration>41.166668</duration>
+				<value>truck_02|root</value>
+			</frame>
+		</track>
+		<track>
+			<name>Sound</name>
+			<type>sound</type>
+			<frame>
+				<startTime>49.000004</startTime>
+				<duration>41.133335</duration>
+				<sequenceSound>hangar_h08_truck_02</sequenceSound>
+				<type>play_till_end</type>
+				<fade>0.000000</fade>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

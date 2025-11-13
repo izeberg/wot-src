@@ -422,6 +422,10 @@ class CrewWidget(ViewImpl):
             self.__updateSettings()
 
     def __onCacheResync(self, reason, diff):
+        if self.__currentVehicle and GUI_ITEM_TYPE.VEHICLE in diff:
+            self.__currentVehicle = self.itemsCache.items.getVehicle(self.__currentVehicle.invID)
+            if self.__currentVehicle is None:
+                self.__currentTankman = None
         with self.viewModel.transaction() as (vm):
             if reason == CACHE_SYNC_REASON.SHOP_RESYNC:
                 self.__updateCrewBooksDiscount(vm.buttonsBar.crewBooks)

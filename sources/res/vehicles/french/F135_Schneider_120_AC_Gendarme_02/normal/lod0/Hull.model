@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.610241 -0.591476 -3.954115</min>
+		<max>1.605516 0.508881 3.549652</max>
+	</visibilityBox>
+	<parent>vehicles/french/F135_Schneider_120_AC_Gendarme_02/normal/lod1/Hull</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/french/F135_Schneider_120_AC_Gendarme_02/normal/lod0/Hull</nodefullVisual>
+</root>

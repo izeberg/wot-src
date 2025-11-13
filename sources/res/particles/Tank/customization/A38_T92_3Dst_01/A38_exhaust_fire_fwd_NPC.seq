@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>2.200000</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Fire_1</name>
+		<type>particle</type>
+		<resource>particles/Tank/customization/A38_T92_3Dst_01/A38_exhaust_fire.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>2.096283 2.706741 -0.995445</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-50.000000 102.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>14.999999</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>66305</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.500000</startTime>
+				<value>1.000000</value>
+				<inTangent>5.949204</inTangent>
+				<outTangent>0.019158</outTangent>
+				<tangentMode>66307</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.666667</startTime>
+				<value>1.000000</value>
+				<inTangent>-0.015044</inTangent>
+				<outTangent>-6.252470</outTangent>
+				<tangentMode>66307</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>-0.568649</inTangent>
+				<outTangent>-0.568649</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Fire_2</name>
+		<type>particle</type>
+		<resource>particles/Tank/customization/A38_T92_3Dst_01/A38_exhaust_fire.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>2.160278 2.599041 -1.182228</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-48.000000 102.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>14.999999</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>66305</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.500000</startTime>
+				<value>1.000000</value>
+				<inTangent>5.949204</inTangent>
+				<outTangent>0.019158</outTangent>
+				<tangentMode>66307</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.666667</startTime>
+				<value>1.000000</value>
+				<inTangent>-0.015044</inTangent>
+				<outTangent>-6.252470</outTangent>
+				<tangentMode>66307</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>-0.568649</inTangent>
+				<outTangent>-0.568649</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Fire_3</name>
+		<type>particle</type>
+		<resource>particles/Tank/customization/A38_T92_3Dst_01/A38_exhaust_fire.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-2.096280 2.706740 -0.995450</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-48.000000 -102.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>14.999999</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>66305</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.500000</startTime>
+				<value>1.000000</value>
+				<inTangent>5.949204</inTangent>
+				<outTangent>0.019158</outTangent>
+				<tangentMode>66307</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.666667</startTime>
+				<value>1.000000</value>
+				<inTangent>-0.015044</inTangent>
+				<outTangent>-6.252470</outTangent>
+				<tangentMode>66307</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>-0.568649</inTangent>
+				<outTangent>-0.568649</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Fire_4</name>
+		<type>particle</type>
+		<resource>particles/Tank/customization/A38_T92_3Dst_01/A38_exhaust_fire.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-2.005981 2.658730 -1.186897</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-48.000000 -102.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>14.999999</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>66305</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.500000</startTime>
+				<value>1.000000</value>
+				<inTangent>5.949204</inTangent>
+				<outTangent>0.019158</outTangent>
+				<tangentMode>66307</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.666667</startTime>
+				<value>1.000000</value>
+				<inTangent>-0.015044</inTangent>
+				<outTangent>-6.252470</outTangent>
+				<tangentMode>66307</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>-0.568649</inTangent>
+				<outTangent>-0.568649</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Sound 0</name>
+		<type>sound</type>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>0.033333</startTime>
+				<duration>2.166667</duration>
+				<value>Root|</value>
+			</frame>
+		</track>
+		<track>
+			<name>Sound</name>
+			<type>sound</type>
+			<frame>
+				<startTime>0.033333</startTime>
+				<duration>2.166667</duration>
+				<sequenceSound>style_3D_A38_T92_3Dst_01_fire_NPC</sequenceSound>
+				<type>one_shot</type>
+				<fade>0.000000</fade>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

@@ -1591,7 +1591,8 @@ SYS_MESSAGE_TYPE = Enumeration('systemMessageType', [
  'prbVehicleMaxFlamethrowerKick',
  'playStreakRewards',
  'playStreakSysMessage',
- 'playStreakSysWithRewardsMessage'])
+ 'playStreakSysWithRewardsMessage',
+ 'armoryYardRevertRerollMessage'])
 SYS_MESSAGE_IMPORTANCE = Enumeration('systemMessageImportance', [
  'normal',
  'high'])

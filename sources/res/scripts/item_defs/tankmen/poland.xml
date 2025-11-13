@@ -4943,5 +4943,125 @@
 				<_31119>tankmen_Portal25_4.png</_31119>
 			</icons>
 		</tankmen_Portal25_4>
+		<ny26_krieger>
+			<groupID>31120</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>male</sex>
+			<notInShop>true</notInShop>
+			<tags>passportReplacementForbidden commander gunner driver radioman loader</tags>
+			<roles>commander gunner driver radioman loader</roles>
+			<firstNames>
+				<_31120>#poland_tankmen:names/ny26_krieger_n</_31120>
+			</firstNames>
+			<lastNames>
+				<_31120>#poland_tankmen:names/ny26_krieger</_31120>
+			</lastNames>
+			<icons>
+				<_31120>ny26_krieger.png</_31120>
+			</icons>
+		</ny26_krieger>
+		<ny26_terentij>
+			<groupID>31121</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>male</sex>
+			<notInShop>true</notInShop>
+			<tags>passportReplacementForbidden ny26_ded_terentiy_specialVoice commander gunner driver radioman loader</tags>
+			<roles>commander gunner driver radioman loader</roles>
+			<firstNames>
+				<_31121>#poland_tankmen:names/ny26_terentij_n</_31121>
+			</firstNames>
+			<lastNames>
+				<_31121>#poland_tankmen:names/ny26_terentij</_31121>
+			</lastNames>
+			<icons>
+				<_31121>ny26_terentij.png</_31121>
+			</icons>
+		</ny26_terentij>
+		<ny26_snowmaiden_1>
+			<groupID>31127</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>female</sex>
+			<notInShop>true</notInShop>
+			<tags>passportReplacementForbidden commander gunner driver radioman loader</tags>
+			<roles>commander gunner driver radioman loader</roles>
+			<firstNames>
+				<_31127>#poland_tankmen:names/ny26_snowmaiden_1_n</_31127>
+			</firstNames>
+			<lastNames>
+				<_31127>#poland_tankmen:names/ny26_snowmaiden_1</_31127>
+			</lastNames>
+			<icons>
+				<_31127>ny26_snowmaiden_1.png</_31127>
+			</icons>
+		</ny26_snowmaiden_1>
+		<ny26_snowmaiden_2>
+			<groupID>31128</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>female</sex>
+			<notInShop>true</notInShop>
+			<tags>passportReplacementForbidden commander gunner driver radioman loader</tags>
+			<roles>commander gunner driver radioman loader</roles>
+			<firstNames>
+				<_31128>#poland_tankmen:names/ny26_snowmaiden_2_n</_31128>
+			</firstNames>
+			<lastNames>
+				<_31128>#poland_tankmen:names/ny26_snowmaiden_2</_31128>
+			</lastNames>
+			<icons>
+				<_31128>ny26_snowmaiden_2.png</_31128>
+			</icons>
+		</ny26_snowmaiden_2>
+		<ny26_snowmaiden_3>
+			<groupID>31129</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>female</sex>
+			<notInShop>true</notInShop>
+			<tags>passportReplacementForbidden commander gunner driver radioman loader</tags>
+			<roles>commander gunner driver radioman loader</roles>
+			<firstNames>
+				<_31129>#poland_tankmen:names/ny26_snowmaiden_3_n</_31129>
+			</firstNames>
+			<lastNames>
+				<_31129>#poland_tankmen:names/ny26_snowmaiden_3</_31129>
+			</lastNames>
+			<icons>
+				<_31129>ny26_snowmaiden_3.png</_31129>
+			</icons>
+		</ny26_snowmaiden_3>
+		<ny26_snowmaiden_4>
+			<groupID>31130</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>female</sex>
+			<notInShop>true</notInShop>
+			<tags>passportReplacementForbidden commander gunner driver radioman loader</tags>
+			<roles>commander gunner driver radioman loader</roles>
+			<firstNames>
+				<_31130>#poland_tankmen:names/ny26_snowmaiden_4_n</_31130>
+			</firstNames>
+			<lastNames>
+				<_31130>#poland_tankmen:names/ny26_snowmaiden_4</_31130>
+			</lastNames>
+			<icons>
+				<_31130>ny26_snowmaiden_4.png</_31130>
+			</icons>
+		</ny26_snowmaiden_4>
 	</premiumGroups>
 </root>

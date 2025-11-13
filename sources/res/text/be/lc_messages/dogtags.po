@@ -153,13 +153,13 @@ msgid "component/background/base/31018/title"
 msgstr "Удзельнік каманды Yusha"
 
 msgid "component/background/base/31019/description"
-msgstr "За участие в торгах за самые горящие лоты и за удачное их получение."
+msgstr "За ўдзел у таргах за самыя гарачыя лоты і за ўдалае іх атрыманне."
 
 msgid "component/background/base/31019/description_locked"
 msgstr "?empty?"
 
 msgid "component/background/base/31019/title"
-msgstr "Круг посвящённых"
+msgstr "Круг прысвечаных"
 
 msgid "component/background/base/500/description"
 msgstr "За дасягненне 6-га ўзроўню каманднай прагрэсіі ў Бітве блогераў 2021"
@@ -493,6 +493,83 @@ msgstr "?empty?"
 
 msgid "component/background/base/70/title"
 msgstr "Зігзаг"
+
+msgid "component/background/base/701/description"
+msgstr ""
+"Отображает вашу итоговую позицию в таблице лидеров, активной в рамках "
+"события «Наш Новый год» в 2026 году."
+
+msgid "component/background/base/701/description_locked"
+msgstr "?empty?"
+
+msgid "component/background/base/701/title"
+msgstr "Таблица лидеров"
+
+msgid "component/background/base/702/description"
+msgstr ""
+"Отображает вашу итоговую позицию в таблице лидеров, активной в рамках "
+"события «Наш Новый год» в 2026 году."
+
+msgid "component/background/base/702/description_locked"
+msgstr "?empty?"
+
+msgid "component/background/base/702/title"
+msgstr "Таблица лидеров"
+
+msgid "component/background/base/703/description"
+msgstr ""
+"Отображает вашу итоговую позицию в таблице лидеров, активной в рамках "
+"события «Наш Новый год» в 2026 году."
+
+msgid "component/background/base/703/description_locked"
+msgstr "?empty?"
+
+msgid "component/background/base/703/title"
+msgstr "Таблица лидеров"
+
+msgid "component/background/base/704/description"
+msgstr ""
+"Отображает вашу итоговую позицию в таблице лидеров, активной в рамках "
+"события «Наш Новый год» в 2026 году."
+
+msgid "component/background/base/704/description_locked"
+msgstr "?empty?"
+
+msgid "component/background/base/704/title"
+msgstr "Таблица лидеров"
+
+msgid "component/background/base/705/description"
+msgstr ""
+"Отображает вашу итоговую позицию в таблице лидеров, активной в рамках "
+"события «Наш Новый год» в 2026 году."
+
+msgid "component/background/base/705/description_locked"
+msgstr "?empty?"
+
+msgid "component/background/base/705/title"
+msgstr "Таблица лидеров"
+
+msgid "component/background/base/706/description"
+msgstr ""
+"Отображает вашу итоговую позицию в таблице лидеров, активной в рамках "
+"события «Наш Новый год» в 2026 году."
+
+msgid "component/background/base/706/description_locked"
+msgstr "?empty?"
+
+msgid "component/background/base/706/title"
+msgstr "Таблица лидеров"
+
+msgid "component/background/base/707/description"
+msgstr ""
+"Отображает вашу итоговую позицию в таблице лидеров, активной в рамках "
+"события «Наш Новый год» в 2026 году."
+
+msgid "component/background/base/707/description_locked"
+msgstr "?empty?"
+
+msgid "component/background/base/707/title"
+msgstr "Таблица лидеров"
 
 msgid "component/background/base/71/description"
 msgstr " "
@@ -880,6 +957,17 @@ msgstr ""
 msgid "component/engraving/skill/407/title"
 msgstr "MTR"
 
+msgid "component/engraving/static/700/description"
+msgstr ""
+"Отображает вашу итоговую позицию в таблице лидеров, активной в рамках "
+"события «Наш Новый год» в 2026 году."
+
+msgid "component/engraving/static/700/description_locked"
+msgstr "?empty?"
+
+msgid "component/engraving/static/700/title"
+msgstr "Позиция в таблице лидеров"
+
 msgid "component/engraving/triumph/201/description"
 msgstr "Найбольшая колькасць заблакаваных пашкоджанняў у адным баі"
 
@@ -1032,6 +1120,9 @@ msgstr "Упартасць"
 msgid "component/purposeGroup/season"
 msgstr "Майстэрства"
 
+msgid "component/purposeGroup/static"
+msgstr "Уникальность"
+
 msgid "component/purposeGroup/triumph"
 msgstr "Трыумф"
 
@@ -1049,6 +1140,12 @@ msgstr ""
 "Пакажыце свой узровень майстэрства, здабыўшы гэтыя каштоўныя кампаненты і "
 "палепшыўшы іх да Х узроўню. Яны паказваюць вашу сезонную статыстыку. "
 "Напрыклад, найлепшы вынік за мінулыя тры месяцы ў Зале славы."
+
+msgid "component/purposeTooltip/static"
+msgstr ""
+"Демонстрируйте свои уникальные или редкие достижения в игре. Участвуйте в "
+"разнообразных состязаниях в рамках событий, зарабатывайте памятные и очень "
+"редкие гравировки и фоны, соберите свой собственный неповторимый жетон."
 
 msgid "component/purposeTooltip/triumph"
 msgstr ""
@@ -1072,6 +1169,9 @@ msgstr "Упартасць"
 
 msgid "customization/category/skill"
 msgstr "Майстэрства"
+
+msgid "customization/category/static"
+msgstr "Уникальность"
 
 msgid "customization/category/triumph"
 msgstr "Трыумф"

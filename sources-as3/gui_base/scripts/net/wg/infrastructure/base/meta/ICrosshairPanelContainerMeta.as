@@ -120,12 +120,18 @@ package net.wg.infrastructure.base.meta
       
       function as_setOverheatState(param1:Number) : void;
       
+      function as_setCoolantAbilityReloadingPenalty(param1:Number) : void;
+      
       function as_setShotFlyTimeIndVisibility(param1:Boolean) : void;
       
       function as_setShotFlyTimeIndValue(param1:Number) : void;
       
       function as_setShotDamageIndVisibility(param1:Boolean) : void;
       
-      function as_setShotDamageIndValue(param1:int, param2:int) : void;
+      function as_setShotDamageIndValue(param1:int) : void;
+      
+      function as_animShotHitMarker(param1:String) : void;
+      
+      function as_setShotHitMarkerVisibility(param1:Boolean) : void;
    }
 }

@@ -66,11 +66,15 @@ package net.wg.infrastructure.base.meta
       
       function as_updateEntityState(param1:String, param2:String) : int;
       
-      function as_setPanelSettings(param1:int) : void;
+      function as_setPanelSettings(param1:int, param2:Boolean) : void;
       
       function as_setSPGShotResult(param1:int, param2:int) : void;
       
       function as_addAbilityEquipmentSlot(param1:int, param2:Number, param3:Number, param4:int, param5:Number, param6:Number, param7:String, param8:String, param9:int) : void;
+      
+      function as_showAbilityModifier(param1:int, param2:Boolean) : void;
+      
+      function as_hideAbilityModifier(param1:Boolean) : void;
       
       function as_addRoleSkillSlot(param1:int, param2:Number, param3:Number, param4:int, param5:Number, param6:Number, param7:String, param8:String, param9:int) : void;
       

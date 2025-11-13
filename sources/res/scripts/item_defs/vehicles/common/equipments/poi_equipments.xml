@@ -179,14 +179,14 @@
 			<attrFactorMods>
 				<circularVisionRadius>
 					<value>
-						-0.75
+						-0.95
 						<!--BW_String-->
 					</value>
 					<ignoreAllies>True</ignoreAllies>
 				</circularVisionRadius>
 				<crewRolesFactor>
 					<value>
-						-0.35
+						-0.25
 						<!--BW_String-->
 					</value>
 					<ignoreAllies>True</ignoreAllies>

@@ -34,11 +34,5 @@
 			<space>h00_armory_yard</space>
 			<customEventMode>True</customEventMode>
 		</item>
-		<item>
-			<name>PORTAL</name>
-			<space>h13_mt_portal_2025</space>
-			<waitingMessage>portal/hangarLoading</waitingMessage>
-			<waitingBackground>gui/maps/icons/lobby/portalBgHangarScene.png</waitingBackground>
-		</item>
 	</hangar_scene_spaces>
 </root>

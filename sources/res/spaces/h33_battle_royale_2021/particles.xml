@@ -46,56 +46,92 @@
 			<shader>\data\shaders\ps_water.fx</shader>
 			<texture>particles/content_forward/PFX_textures/tracers.dds</texture>
 		</preload>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/hangar/h26_battle_royale_fire_small.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/hangar/h26_br_angle_grinder_1.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/hangar/h26_br_angle_grinder_2.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/hangar/h26_br_angle_grinder_3.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/hangar/h26_br_blizzard.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/hangar/h26_br_dot_green.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/hangar/h26_br_dot_red.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/hangar/h26_br_falling_yellow_snow.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/hangar/h26_br_falling_yellow_snow_s.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/hangar/h26_br_frosty_breath.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/hangar/h26_br_generator_smoke.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/hangar/h26_br_snow_dust.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/hangar/h26_br_snow_dust_s.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/hangar/h26_br_snow_from_window.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/hangar/h26_br_snow_from_window_s.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/hangar/h26_lightning.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/hangar/h31_CrowFlock.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/hangar/h33_br_electricity_sparks_01.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/h33_br_fog_monolith_02.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/Trees/Broadleaves/tree_Birch_Bold_Twisted_fall.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/Trees/Broadleaves/tree_birch_bold_twisted_touchdown.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/Trees/Conifers/tree_Spruce_24m_fall.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/Trees/Conifers/tree_Spruce_24m_touchdown.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/Trees/Conifers/tree_Spruce_Ragged_14m_fall.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/Trees/Conifers/tree_spruce_ragged_14m_touchdown.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/hangar/h26_battle_royale_fire_small.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/hangar/h26_br_angle_grinder_1.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/hangar/h26_br_angle_grinder_2.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/hangar/h26_br_angle_grinder_3.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/hangar/h26_br_blizzard.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/hangar/h26_br_dot_green.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/hangar/h26_br_dot_red.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/hangar/h26_br_falling_yellow_snow.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/hangar/h26_br_falling_yellow_snow_s.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/hangar/h26_br_frosty_breath.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/hangar/h26_br_generator_smoke.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/hangar/h26_br_snow_dust.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/hangar/h26_br_snow_dust_s.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/hangar/h26_br_snow_from_window.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/hangar/h26_br_snow_from_window_s.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/hangar/h26_lightning.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/hangar/h31_crowflock.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/hangar/h33_br_electricity_sparks_01.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/interior/h33_br_fog_monolith_02.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/trees/broadleaves/tree_birch_bold_twisted_fall.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/trees/broadleaves/tree_birch_bold_twisted_touchdown.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/trees/conifers/tree_spruce_24m_fall.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/trees/conifers/tree_spruce_24m_touchdown.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/trees/conifers/tree_spruce_ragged_14m_fall.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/trees/conifers/tree_spruce_ragged_14m_touchdown.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/environment/hangar/h26_battle_royale_fire_small.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/hangar/h26_br_angle_grinder_1.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/hangar/h26_br_angle_grinder_2.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/hangar/h26_br_angle_grinder_3.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/hangar/h26_br_angle_grinder_1.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/hangar/h26_br_angle_grinder_2.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/hangar/h26_br_angle_grinder_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/hangar/h26_br_blizzard.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/hangar/h26_br_dot_green.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/hangar/h26_br_dot_red.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/hangar/h26_br_falling_yellow_snow.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/hangar/h26_br_dot_green.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/hangar/h26_br_dot_red.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/hangar/h26_br_falling_yellow_snow.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/hangar/h26_br_frosty_breath.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/hangar/h26_br_generator_smoke.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/hangar/h26_br_frosty_breath.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/hangar/h26_br_generator_smoke.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/hangar/h26_br_snow_dust.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/hangar/h26_br_snow_from_window.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/hangar/h26_lightning.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/hangar/h31_CrowFlock.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/hangar/h26_br_snow_from_window.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/hangar/h26_lightning.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/hangar/h31_crowflock.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/hangar/h33_br_electricity_sparks_01.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/h33_br_fog_monolith_02.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/h33_br_fog_monolith_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/trees/broadleaves/tree_birch_bold_twisted_fall.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/trees/broadleaves/tree_birch_bold_twisted_touchdown.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/trees/Conifers/tree_Spruce_24m_fall.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/trees/Conifers/tree_Spruce_24m_touchdown.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/trees/conifers/tree_spruce_24m_fall.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/trees/conifers/tree_spruce_24m_touchdown.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/trees/conifers/tree_spruce_ragged_14m_fall.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/trees/conifers/tree_spruce_ragged_14m_touchdown.eff</fn_effect_bin>
 		<preloadVisual>particles/mesh_particles/tree_twig_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/tree_twig_02.visual</preloadVisual>
+		<preloadVisual>particles/mesh_particles/wood_plank_02.visual</preloadVisual>
+		<preload>
+			<shader>data/shaders/ps.fx</shader>
+			<texture>particles/content_forward/pfx_textures/251_crows_01.dds</texture>
+		</preload>
+		<preload>
+			<shader>data/shaders/ps.fx</shader>
+			<texture>particles/content_forward/pfx_textures/eff_tex_h25_portal.dds</texture>
+		</preload>
+		<preload>
+			<shader>data/shaders/ps.fx</shader>
+			<texture>particles/content_forward/pfx_textures/eff_tex_snow_250_br_battle.dds</texture>
+		</preload>
+		<preload>
+			<shader>data/shaders/ps_long.fx</shader>
+			<texture>particles/content_forward/pfx_textures/eff_tex_snow_250_br_battle.dds</texture>
+		</preload>
+		<preload>
+			<shader>data/shaders/ps.fx</shader>
+			<texture>particles/content_forward/pfx_textures/eff_tex_h24_winter.dds</texture>
+		</preload>
+		<preload>
+			<shader>data/shaders/ps.fx</shader>
+			<texture>particles/content_forward/pfx_textures/eff_tex_hangar_v3.dds</texture>
+		</preload>
+		<preload>
+			<shader>data/shaders/ps_long.fx</shader>
+			<texture>particles/content_forward/pfx_textures/eff_tex_hangar_v3.dds</texture>
+		</preload>
+		<preload>
+			<shader>data/shaders/ps.fx</shader>
+			<texture>particles/content_forward/pfx_textures/eff_tex_h07_new_year_2015.dds</texture>
+		</preload>
+		<preload>
+			<shader>data/shaders/ps.fx</shader>
+			<texture>particles/content_forward/pfx_textures/eff_tex_long.dds</texture>
+		</preload>
 	</forward>
 	<deferred>
 		<name>default</name>
@@ -171,55 +207,96 @@
 			<shader>\data\shaders\ps_water.fx</shader>
 			<texture>particles/content_deferred/PFX_textures/250_br_battle_snow_dust_2_2.dds</texture>
 		</preload>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/exterior/h31_CrowFlock.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/hangar/h26_battle_royale_fire_small.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/hangar/h26_br_angle_grinder_1.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/hangar/h26_br_angle_grinder_2.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/hangar/h26_br_angle_grinder_3.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/hangar/h26_br_blizzard.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/hangar/h26_br_dot_green.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/hangar/h26_br_dot_red.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/hangar/h26_br_falling_yellow_snow.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/hangar/h26_br_falling_yellow_snow_s.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/hangar/h26_br_frosty_breath.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/hangar/h26_br_generator_smoke.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/hangar/h26_br_snow_dust.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/hangar/h26_br_snow_dust_s.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/hangar/h26_br_snow_from_window.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/hangar/h26_br_snow_from_window_s.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/hangar/h26_lightning.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/hangar/h33_br_electricity_sparks_01.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/h33_br_fog_monolith_02.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/Trees/Broadleaves/tree_Birch_Bold_Twisted_fall.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/Trees/Broadleaves/tree_birch_bold_twisted_touchdown.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/Trees/Conifers/tree_Spruce_24m_fall.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/Trees/Conifers/tree_Spruce_24m_touchdown.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/Trees/Conifers/tree_Spruce_Ragged_14m_fall.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/Trees/Conifers/tree_spruce_ragged_14m_touchdown.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/exterior/h31_crowflock.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/hangar/h26_battle_royale_fire_small.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/hangar/h26_br_angle_grinder_1.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/hangar/h26_br_angle_grinder_2.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/hangar/h26_br_angle_grinder_3.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/hangar/h26_br_blizzard.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/hangar/h26_br_dot_green.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/hangar/h26_br_dot_red.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/hangar/h26_br_falling_yellow_snow.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/hangar/h26_br_falling_yellow_snow_s.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/hangar/h26_br_frosty_breath.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/hangar/h26_br_generator_smoke.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/hangar/h26_br_snow_dust.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/hangar/h26_br_snow_dust_s.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/hangar/h26_br_snow_from_window.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/hangar/h26_br_snow_from_window_s.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/hangar/h26_lightning.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/hangar/h33_br_electricity_sparks_01.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/interior/h33_br_fog_monolith_02.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/trees/broadleaves/tree_birch_bold_twisted_fall.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/trees/broadleaves/tree_birch_bold_twisted_touchdown.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/trees/conifers/tree_spruce_24m_fall.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/trees/conifers/tree_spruce_24m_touchdown.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/trees/conifers/tree_spruce_ragged_14m_fall.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/trees/conifers/tree_spruce_ragged_14m_touchdown.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/null.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/environment/hangar/h26_battle_royale_fire_small.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/hangar/h26_br_angle_grinder_1.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/hangar/h26_br_angle_grinder_2.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/hangar/h26_br_angle_grinder_3.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/hangar/h26_br_angle_grinder_1.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/hangar/h26_br_angle_grinder_2.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/hangar/h26_br_angle_grinder_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/hangar/h26_br_blizzard.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/hangar/h26_br_dot_green.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/hangar/h26_br_dot_red.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/hangar/h26_br_falling_yellow_snow.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/hangar/h26_br_dot_green.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/hangar/h26_br_dot_red.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/hangar/h26_br_falling_yellow_snow.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/hangar/h26_br_frosty_breath.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/hangar/h26_br_generator_smoke.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/hangar/h26_br_frosty_breath.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/hangar/h26_br_generator_smoke.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/hangar/h26_br_snow_dust.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/hangar/h26_br_snow_from_window.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/hangar/h26_lightning.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/hangar/h31_CrowFlock.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/hangar/h26_br_snow_from_window.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/hangar/h26_lightning.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/hangar/h31_crowflock.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/hangar/h33_br_electricity_sparks_01.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/h33_br_fog_monolith_02.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/h33_br_fog_monolith_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/trees/broadleaves/tree_birch_bold_twisted_fall.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/trees/broadleaves/tree_birch_bold_twisted_touchdown.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/trees/Conifers/tree_Spruce_24m_fall.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/trees/Conifers/tree_Spruce_24m_touchdown.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/trees/conifers/tree_spruce_24m_fall.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/trees/conifers/tree_spruce_24m_touchdown.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/trees/conifers/tree_spruce_ragged_14m_fall.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/trees/conifers/tree_spruce_ragged_14m_touchdown.eff</fn_effect_bin>
 		<preloadVisual>particles/mesh_particles/tree_twig_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/tree_twig_02.visual</preloadVisual>
+		<preloadVisual>particles/mesh_particles/wood_plank_02.visual</preloadVisual>
+		<preload>
+			<shader>data/shaders/ps.fx</shader>
+			<texture>particles/content_deferred/pfx_textures/251_crows_01.dds</texture>
+		</preload>
+		<preload>
+			<shader>data/shaders/ps_long.fx</shader>
+			<texture>particles/content_deferred/pfx_textures/eff_tex_hangar_v3.dds</texture>
+		</preload>
+		<preload>
+			<shader>data/shaders/ps.fx</shader>
+			<texture>particles/content_deferred/pfx_textures/eff_tex_h25_portal.dds</texture>
+		</preload>
+		<preload>
+			<shader>data/shaders/ps_long.fx</shader>
+			<texture>particles/content_deferred/gfx_models/gfx_textures/lightning_02.dds</texture>
+		</preload>
+		<preload>
+			<shader>data/shaders/ps.fx</shader>
+			<texture>particles/content_deferred/pfx_textures/eff_tex_snow_250_br_battle.dds</texture>
+		</preload>
+		<preload>
+			<shader>data/shaders/ps_long.fx</shader>
+			<texture>particles/content_deferred/pfx_textures/eff_tex_snow_250_br_battle.dds</texture>
+		</preload>
+		<preload>
+			<shader>data/shaders/ps.fx</shader>
+			<texture>particles/content_deferred/pfx_textures/eff_tex_hangar_v3.dds</texture>
+		</preload>
+		<preload>
+			<shader>data/shaders/ps.fx</shader>
+			<texture>particles/content_deferred/pfx_textures/eff_tex_h24_winter.dds</texture>
+		</preload>
+		<preload>
+			<shader>data/shaders/ps.fx</shader>
+			<texture>particles/content_deferred/pfx_textures/eff_tex_h07_new_year_2015.dds</texture>
+		</preload>
+		<preload>
+			<shader>data/shaders/ps.fx</shader>
+			<texture>particles/content_deferred/pfx_textures/eff_tex_long.dds</texture>
+		</preload>
 	</deferred>
 </root>

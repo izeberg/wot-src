@@ -61,9 +61,17 @@ package net.wg.data.constants.generated
       
       public static const ARMORY_YARD_VEHICLE_PREVIEW:String = "armoryYardVehiclePreview";
       
+      public static const ARMORY_YARD_STYLE_PREVIEW:String = "armoryYardStylePreview";
+      
       public static const ARMORY_YARD_VEH_POST_PROGRESSION:String = "armoryYardVehPostProgression";
       
       public static const EARLY_ACCESS_SECONDARY_ENTRY_POINT:String = "EarlyAccessSecondaryEntryPoint";
+      
+      public static const NY_TANK_CAROUSEL_BTN_CONTAINER:String = "NYBtnEnvSwitcherContainer";
+      
+      public static const NY_TANK_CAROUSEL_BTN_TIP_CONTAINER:String = "NYBtnEnvSwitcherTipContainer";
+      
+      public static const NY_MAIN_WIDGET_UI:String = "NYMainWidgetUI";
       
       public static const VEH_PARAM_RENDERER_STATE_SIMPLE_TOP:String = "simpleTop";
       

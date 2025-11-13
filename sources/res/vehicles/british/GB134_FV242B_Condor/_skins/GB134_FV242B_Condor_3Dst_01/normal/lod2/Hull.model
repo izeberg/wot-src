@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/british/GB134_FV242B_Condor/_skins/GB134_FV242B_Condor_3Dst_01/normal/lod3/Hull</parent>
+	<tank>true</tank>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-2.067681 -0.600270 -4.247943</min>
+		<max>2.016048 0.947117 4.368654</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/british/GB134_FV242B_Condor/_skins/GB134_FV242B_Condor_3Dst_01/normal/lod2/Hull</nodefullVisual>
+</root>

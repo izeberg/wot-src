@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A175_OTAC_MT_58/_skins/A175_OTAC_MT_58_02_3Dst_01/normal/lod2/Hull</nodefullVisual>
+	<parent>vehicles/american/A175_OTAC_MT_58/_skins/A175_OTAC_MT_58_02_3Dst_01/normal/lod3/Hull</parent>
+	<tank>true</tank>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.769513 -0.464775 -3.091349</min>
+		<max>1.769513 0.593655 3.100664</max>
+	</visibilityBox>
+</root>

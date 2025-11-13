@@ -49,7 +49,7 @@ BACKWARD_QUALITY_PARAMS = frozenset([
  WHEELED_SWITCH_OFF_TIME,
  WHEELED_SWITCH_ON_TIME,
  TURBOSHAFT_SWITCH_TIME,
- KPI.Name.VEHICLE_RAM_CHASSIS_DAMAGE_RESISTANCE,
+ KPI.Name.TRACK_RAMMING_DAMAGE_FACTOR,
  KPI.Name.WOUNDED_CREW_EFFICIENCY,
  DUAL_GUN_RATE_TIME,
  DUAL_ACCURACY_COOLING_DELAY,
@@ -63,7 +63,17 @@ BACKWARD_QUALITY_PARAMS = frozenset([
  THERMAL_VISION_RELOAD_TIME,
  'vehicleWeight'])
 PARAMS_WITH_BATTLE_MODIFIERS = {'maxHealth': {
-               'vehicleHealth'}}
+               'vehicleHealth'}, 
+   'reloadTime': {
+                'reloadTime'}, 
+   'reloadTimeSecs': {
+                    'reloadTime'}, 
+   'autoReloadTime': {
+                    'autoReloadTime'}, 
+   'avgDamagePerMinute': {
+                        'reloadTime', 'autoReloadTime'}, 
+   'clipFireRate': {
+                  'reloadTime', 'autoReloadTime'}}
 NEGATIVE_PARAMS = [
  'switchOnTime', 'switchOffTime', CHASSIS_REPAIR_TIME]
 NOT_COMPARABLE_PARAMS = [
@@ -163,6 +173,7 @@ class VehiclesComparator(ItemsComparator):
         penalties = self.__penalties.get(paramName, [])
         allPossibleParamBonuses = self.__getPossibleParamBonuses(paramName)
         currentParamBonuses, inactive = self.__getCurrentParamBonuses(paramName, allPossibleParamBonuses)
+        currentParamBonuses = currentParamBonuses.union(self.__getBattleModifierBonuses(paramName))
         possibleBonuses = allPossibleParamBonuses - currentParamBonuses
         return (possibleBonuses, currentParamBonuses, inactive, penalties)
 
@@ -180,11 +191,6 @@ class VehiclesComparator(ItemsComparator):
         if paramName in CONDITIONAL_BONUSES:
             return self.__getConditionalBonuses(paramName, possibleBonuses)
         result = possibleBonuses.intersection(self.__bonuses)
-        suitableBattleModifiers = PARAMS_WITH_BATTLE_MODIFIERS.get(paramName, set())
-        for bonusName, bonusGroup in self.__bonuses:
-            if bonusGroup == BonusTypes.BATTLE_MODIFIERS and bonusName in suitableBattleModifiers:
-                result.add((bonusName, bonusGroup))
-
         return (
          result, {})
 
@@ -200,6 +206,16 @@ class VehiclesComparator(ItemsComparator):
 
         return (
          currentBonuses, affectedBonuses)
+
+    def __getBattleModifierBonuses(self, paramName):
+        result = set()
+        suitableBattleModifiers = PARAMS_WITH_BATTLE_MODIFIERS.get(paramName, set())
+        for bonusName, bonusGroup in self.__bonuses:
+            if bonusGroup == BonusTypes.BATTLE_MODIFIERS and bonusName in suitableBattleModifiers:
+                result.add((bonusName, bonusGroup))
+                return result
+
+        return result
 
     def __getUnmatchedDependency(self, paramName, activeBonuses, bonus):
         dependencies = CONDITIONAL_BONUSES[paramName].get(bonus, ())
@@ -559,36 +575,36 @@ def _getComparableValue(currentValue, comparableList, idx):
 
 
 def _getParamStateInfo(paramName, val1, val2, customReverted=False):
-    if val1 is None or val2 is None:
-        hasNoParam = True
-        diff = 0
-    else:
-        hasNoParam = False
-        if isinstance(val1, float) and isinstance(val2, float):
-            diff = val1 - val2
-            diff = round(diff, 4)
-        else:
-            if isinstance(val1, float):
-                val1 = round(val1, 4)
-            if isinstance(val2, float):
-                val2 = round(val2, 4)
-            diff = val1 - val2
     if paramName in NOT_COMPARABLE_PARAMS:
         return (PARAM_STATE.NORMAL, 0)
     else:
-        if paramName in NEGATIVE_PARAMS and hasNoParam:
-            if val1 is None and val2 is None:
+        if val1 is None or val2 is None:
+            hasNoParam = True
+            diff = 0
+        else:
+            hasNoParam = False
+            if isinstance(val1, float) and isinstance(val2, float):
+                diff = val1 - val2
+                diff = round(diff, 4)
+            else:
+                if isinstance(val1, float):
+                    val1 = round(val1, 4)
+                if isinstance(val2, float):
+                    val2 = round(val2, 4)
+                diff = val1 - val2
+            if paramName in NEGATIVE_PARAMS and hasNoParam:
+                if val1 is None and val2 is None:
+                    return (PARAM_STATE.NORMAL, diff)
+                if val1 is None:
+                    return (PARAM_STATE.BETTER, diff)
+                return (PARAM_STATE.WORSE, diff)
+            if diff == 0:
+                if hasNoParam and paramName in PARAMS_WITH_IGNORED_EMPTY_VALUES:
+                    return (PARAM_STATE.NOT_APPLICABLE, diff)
                 return (PARAM_STATE.NORMAL, diff)
-            if val1 is None:
-                return (PARAM_STATE.BETTER, diff)
-            return (PARAM_STATE.WORSE, diff)
-        if diff == 0:
-            if hasNoParam and paramName in PARAMS_WITH_IGNORED_EMPTY_VALUES:
-                return (PARAM_STATE.NOT_APPLICABLE, diff)
-            return (PARAM_STATE.NORMAL, diff)
-        isInverted = paramName in BACKWARD_QUALITY_PARAMS or customReverted
-        if isInverted and diff > 0 or not isInverted and diff < 0:
-            return (PARAM_STATE.WORSE, diff)
+            isInverted = paramName in BACKWARD_QUALITY_PARAMS or customReverted
+            if isInverted and diff > 0 or not isInverted and diff < 0:
+                return (PARAM_STATE.WORSE, diff)
         return (
          PARAM_STATE.BETTER, diff)
 

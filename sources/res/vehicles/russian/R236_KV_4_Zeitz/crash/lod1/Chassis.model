@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/russian/R236_KV_4_Zeitz/crash/lod1/Chassis</nodefullVisual>
+	<parent>vehicles/russian/R236_KV_4_Zeitz/crash/lod2/Chassis</parent>
+	<tank>true</tank>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-2.013409 0.000000 -5.227818</min>
+		<max>2.013245 1.398505 4.745211</max>
+	</visibilityBox>
+</root>

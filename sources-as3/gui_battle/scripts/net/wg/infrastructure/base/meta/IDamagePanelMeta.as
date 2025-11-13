@@ -26,6 +26,8 @@ package net.wg.infrastructure.base.meta
       
       function as_updateSpeed(param1:int) : void;
       
+      function as_showRamming() : void;
+      
       function as_setCruiseMode(param1:int) : void;
       
       function as_setAutoRotation(param1:Boolean) : void;

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodelessVisual>vehicles/german/G184_EisBaer/crash/lod3/Gun_01</nodelessVisual>
+	<parent>vehicles/german/G184_EisBaer/crash/lod4/Gun_01</parent>
+	<tank>true</tank>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-0.259516 -0.319559 -1.104237</min>
+		<max>0.260927 0.280598 5.246040</max>
+	</visibilityBox>
+</root>

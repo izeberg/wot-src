@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/russian/R213_TET_100/normal/lod3/Chassis</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.998879 0.000565 -5.149792</min>
+		<max>1.998879 1.654545 4.970968</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/russian/R213_TET_100/normal/lod2/Chassis</nodefullVisual>
+</root>

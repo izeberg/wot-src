@@ -1394,11 +1394,6 @@
 				<name>buyLootboxes</name>
 				<type>url</type>
 			</item>
-			<item>
-				$PARAMS(/portal_category)
-				<name>portalShop</name>
-				<type>url</type>
-			</item>
 		</value>
 	</setting>
 	<setting>
@@ -1913,6 +1908,22 @@
 									</item>
 								</value>
 							</item>
+							<item>
+								<name>modifiers</name>
+								<type>list</type>
+								<value>
+									<item>
+										<name>name</name>
+										<type>string</type>
+										<value>modifiers</value>
+									</item>
+									<item>
+										<name>type</name>
+										<type>string</type>
+										<value>page</value>
+									</item>
+								</value>
+							</item>
 						</value>
 					</item>
 				</value>
@@ -2233,23 +2244,6 @@
 			<item>
 				https://webbrg.tanki.su/$LANGUAGE_CODE/promocontent/birthday-2025/
 				<name>default</name>
-				<type>url</type>
-			</item>
-		</value>
-	</setting>
-	<setting>
-		<name>portalInfoPageURL</name>
-		<type>macros</type>
-		<macros>AUTH_REALM</macros>
-		<value>
-			<item>
-				https://webbrg.tanki.su/$LANGUAGE_CODE/promocontent/razlom/
-				<name>default</name>
-				<type>url</type>
-			</item>
-			<item>
-				https://webbrg-rpt.tanki.su/$LANGUAGE_CODE/promocontent/razlom/
-				<name>CT</name>
 				<type>url</type>
 			</item>
 		</value>

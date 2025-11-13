@@ -239,6 +239,30 @@
 			</hints>
 		</lesson>
 		<lesson>
+			<id>48</id>
+			<num>
+				5.12
+				<!--BW_String-->
+			</num>
+			<template>hints_page</template>
+			<background>../maps/icons/manual/backgrounds/distanceFactorShell.png</background>
+			<title>_(#manual:chapter-5/lesson-17/title)</title>
+			<hints>
+				<hint>
+					<text>_(#manual:chapter-5/lesson-17/hint-1/text)</text>
+					<icon>../maps/icons/manual/chapters/distanceFactorShell_1.png</icon>
+				</hint>
+				<hint>
+					<text>_(#manual:chapter-5/lesson-17/hint-2/text)</text>
+					<icon>../maps/icons/manual/chapters/distanceFactorShell_2.png</icon>
+				</hint>
+				<hint>
+					<text>_(#manual:chapter-5/lesson-17/hint-3/text)</text>
+					<icon>../maps/icons/manual/chapters/distanceFactorShell_3.png</icon>
+				</hint>
+			</hints>
+		</lesson>
+		<lesson>
 			<id>49</id>
 			<num>
 				5.12

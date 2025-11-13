@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
+	<visibilityBox>
+		<min>-4.477232 -0.034443 -4.508166</min>
+		<max>4.532284 17.610477 4.633940</max>
+	</visibilityBox>
+	<extent>96.000000</extent>
 	<nodefullVisual>content/MilitaryEnvironment/mle000_BaseFlagstaff/normal/lod1/mle000_BaseFlagstaff01</nodefullVisual>
 	<parent>content/MilitaryEnvironment/mle000_BaseFlagstaff/normal/lod2/mle000_BaseFlagstaff01</parent>
-	<extent>60.000000</extent>
-	<visibilityBox>
-		<min>-7.889294 -0.187979 -7.889294</min>
-		<max>3.004191 20.184780 7.889294</max>
-	</visibilityBox>
 </root>

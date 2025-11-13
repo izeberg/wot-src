@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A38_T92/_skins/A38_T92_3Dst_01/crash/lod3/Gun_01</nodefullVisual>
+	<parent>vehicles/american/A38_T92/_skins/A38_T92_3Dst_01/crash/lod4/Gun_01</parent>
+	<tank>true</tank>
+	<extent>
+		192.0
+		<!--BW_String-->
+	</extent>
+	<visibilityBox>
+		<min>-0.419993 -0.549606 -1.672982</min>
+		<max>0.420502 0.805506 6.933226</max>
+	</visibilityBox>
+</root>

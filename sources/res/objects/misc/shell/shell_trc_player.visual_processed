@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>s_nd0.vertices</vertices>
+			<stream>s_nd0.uv2</stream>
+			<primitive>s_nd0.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0</identifier>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>0</materialKind>
+					<fx>shaders/std_effects/lightonly.fx</fx>
+					<property>
+						diffuseMap
+						<Texture>objects/misc/shell/shell_TRC_player.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.000467 -0.000091 0.463132</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-0.098673 -0.098096 0.011760</min>
+		<max>0.097738 0.097914 0.914504</max>
+	</boundingBox>
+	<geometrySize>4780</geometrySize>
+	<minUVDensity>0.223768</minUVDensity>
+</root>

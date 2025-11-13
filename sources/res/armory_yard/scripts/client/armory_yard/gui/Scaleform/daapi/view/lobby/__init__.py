@@ -1,3 +1,4 @@
+from armory_yard.gui.Scaleform.daapi.view.lobby.hangar.armory_yard_style_preview import ArmoryYardStylePreview
 from armory_yard.gui.impl.lobby.feature.armory_yard_hangar_widget_view import isArmoryYardEntryPointAvailable
 from frameworks.wulf import WindowLayer
 from armory_yard.gui.Scaleform.daapi.view.lobby.hangar.armory_yard_vehicle_preview import ArmoryYardVehiclePreview
@@ -22,6 +23,7 @@ def getViewSettings():
      ComponentSettings(HANGAR_ALIASES.ARMORY_YARD_ENTRY_POINT, ArmoryYardEntryPoint, ScopeTemplates.DEFAULT_SCOPE),
      ComponentSettings(HANGAR_ALIASES.ARMORY_YARD_WIDGET_ENTRY_POINT, ArmoryYardEntryPointWidget, ScopeTemplates.DEFAULT_SCOPE),
      ViewSettings(HANGAR_ALIASES.ARMORY_YARD_VEHICLE_PREVIEW, ArmoryYardVehiclePreview, 'vehiclePreview.swf', WindowLayer.SUB_VIEW, HANGAR_ALIASES.ARMORY_YARD_VEHICLE_PREVIEW, ScopeTemplates.LOBBY_SUB_SCOPE),
+     ViewSettings(HANGAR_ALIASES.ARMORY_YARD_STYLE_PREVIEW, ArmoryYardStylePreview, 'vehicleBasePreview.swf', WindowLayer.SUB_VIEW, HANGAR_ALIASES.ARMORY_YARD_STYLE_PREVIEW, ScopeTemplates.LOBBY_SUB_SCOPE),
      ViewSettings(HANGAR_ALIASES.ARMORY_YARD_VEH_POST_PROGRESSION, ArmoryYardVehiclePostProgressionCfgView, 'vehPostProgressionView.swf', WindowLayer.SUB_VIEW, HANGAR_ALIASES.ARMORY_YARD_VEH_POST_PROGRESSION, ScopeTemplates.LOBBY_SUB_SCOPE))
 
 
@@ -38,11 +40,21 @@ class _ArmoryYardBusinessHandler(PackageBusinessHandler):
          (
           HANGAR_ALIASES.ARMORY_YARD_VEHICLE_PREVIEW, self.__handleVehConfiguratorEvent),
          (
+          HANGAR_ALIASES.ARMORY_YARD_STYLE_PREVIEW, self.__handleStyleConfiguratorEvent),
+         (
           HANGAR_ALIASES.ARMORY_YARD_VEH_POST_PROGRESSION, self.loadViewByCtxEvent))
         super(_ArmoryYardBusinessHandler, self).__init__(listeners, app_settings.APP_NAME_SPACE.SF_LOBBY, EVENT_BUS_SCOPE.LOBBY)
 
     def __handleVehConfiguratorEvent(self, event):
         window = self.findViewByAlias(WindowLayer.TOP_WINDOW, HANGAR_ALIASES.ARMORY_YARD_VEHICLE_PREVIEW)
+        if window is not None:
+            window.destroy()
+        else:
+            self.loadViewByCtxEvent(event)
+        return
+
+    def __handleStyleConfiguratorEvent(self, event):
+        window = self.findViewByAlias(WindowLayer.TOP_WINDOW, HANGAR_ALIASES.ARMORY_YARD_STYLE_PREVIEW)
         if window is not None:
             window.destroy()
         else:

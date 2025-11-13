@@ -69,14 +69,14 @@
 						<Texture>vehicles/british/GB139_Vulcan/Vulcan_guns_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.139724 0.252840 -0.049027</groupOrigin>
+				<groupOrigin>0.074645 0.252840 0.014188</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-0.725645 -0.155225 -0.839994</min>
-		<max>1.005092 0.660904 0.741941</max>
+		<min>-0.725645 -0.155225 -0.713564</min>
+		<max>0.874934 0.660904 0.741941</max>
 	</boundingBox>
-	<geometrySize>19734</geometrySize>
+	<geometrySize>15626</geometrySize>
 	<minUVDensity>0.009422</minUVDensity>
 </root>

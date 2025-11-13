@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>4.000000</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>aurora_trail_01</name>
+		<type>particle</type>
+		<resource>particles/Environment/hangar/h03_ny26_aurora_trail.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.937634 2.000000 5.330185</value>
+				<inTangent>-10.688032 0.000000 -0.134452</inTangent>
+				<outTangent>-10.688032 0.000000 -0.134452</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.000000</startTime>
+				<value>-5.677902 2.000000 0.316311</value>
+				<inTangent>0.616704 -0.000000 -8.968659</inTangent>
+				<outTangent>0.616704 -0.000000 -8.968659</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.000000</startTime>
+				<value>0.441364 2.000000 -4.532291</value>
+				<inTangent>8.857599 -0.000000 0.106915</inTangent>
+				<outTangent>8.857599 -0.000000 0.106915</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.000000</startTime>
+				<value>6.760139 2.000000 1.045767</value>
+				<inTangent>-1.345509 -0.000000 10.196338</inTangent>
+				<outTangent>-1.345509 -0.000000 10.196338</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.000000</startTime>
+				<value>0.937634 2.000000 5.330180</value>
+				<inTangent>-5.822507 0.000004 0.265476</inTangent>
+				<outTangent>-5.822507 0.000004 0.265476</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>opacity</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>7.531240</inTangent>
+				<outTangent>7.531240</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.333333</startTime>
+				<value>1.000000</value>
+				<inTangent>-0.012196</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>65795</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.666667</startTime>
+				<value>1.000000</value>
+				<inTangent>-0.000000</inTangent>
+				<outTangent>0.006573</outTangent>
+				<tangentMode>66307</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>-8.042504</inTangent>
+				<outTangent>-8.042504</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>particleSize</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.500000</value>
+				<inTangent>0.000000</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

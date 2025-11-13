@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/intunion/Un12_Merkava_M48/normal/lod4/Gun_01</nodefullVisual>
+	<visibilityBox>
+		<min>-0.600945 -0.358536 -0.209507</min>
+		<max>0.576291 0.628787 4.139027</max>
+	</visibilityBox>
+</root>

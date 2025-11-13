@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/american/A38_T92/_skins/A38_T92_3Dst_01/normal/lod1/Hull</parent>
+	<tank>true</tank>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-2.130222 -0.692847 -5.188540</min>
+		<max>2.204449 2.989447 3.759069</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/american/A38_T92/_skins/A38_T92_3Dst_01/normal/lod0/Hull</nodefullVisual>
+</root>

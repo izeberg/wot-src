@@ -91,7 +91,8 @@ class ShopBaseUIPacker(object):
         model.setTemplate(self.template)
         model.setCount(self.count)
         model.setTitle(self.title)
-        model.setImage(self.largeIcon if isLargeIcon else self.icon)
+        model.setImage(self.icon)
+        model.setLargeImage(self.largeIcon)
         model.setEffect(self.effect)
         model.setLongDescription(self.longDescription)
         model.setDescription(self.description)
@@ -219,7 +220,6 @@ class CustomizationPacker(ShopBaseUIPacker):
 
     def __init__(self, params):
         super(CustomizationPacker, self).__init__(1)
-        self.__productId = params[0]
         styleParams = params[1][0]
         styleType = styleParams['custType']
         self.__itemTypeID = GUI_ITEM_TYPE_INDICES.get(styleType) if styleType != 'projection_decal' else GUI_ITEM_TYPE.PROJECTION_DECAL
@@ -236,13 +236,13 @@ class CustomizationPacker(ShopBaseUIPacker):
     def icon(self):
         if self.__itemTypeID == GUI_ITEM_TYPE.PROJECTION_DECAL:
             return self.__item.iconUrl
-        return backport.image(self.__customizationImgPath.num(STORE_CONSTANTS.ICON_SIZE_SMALL).num(self.__productId)())
+        return backport.image(self.__customizationImgPath.num(STORE_CONSTANTS.ICON_SIZE_SMALL).num(self.__item.id)())
 
     @property
     def largeIcon(self):
         if self.__itemTypeID == GUI_ITEM_TYPE.PROJECTION_DECAL:
             return self.__item.iconUrl
-        return backport.image(self.__customizationImgPath.num(STORE_CONSTANTS.ICON_SIZE_MEDIUM).num(self.__productId)())
+        return backport.image(self.__customizationImgPath.num(STORE_CONSTANTS.ICON_SIZE_296).num(self.__item.id)())
 
     @property
     def title(self):
@@ -380,6 +380,8 @@ class ItemPacker(ShopBaseUIPacker):
                 return self.__item.formattedShortDescription(self.__DEFAULT_TEMPLATE)
             if self.__item.isCrewBooster():
                 return self.__item.shortDescriptionSpecial
+            if self.__item.isEconomicBooster():
+                return self.__item.getEconomicDirectivesDescription()
             return self.__item.getOptDeviceBoosterDescription(None, valueFormatter=self.__format)
 
     @property
@@ -391,6 +393,8 @@ class ItemPacker(ShopBaseUIPacker):
                 return self.__item.fullDescription
             if self.__item.isCrewBooster():
                 return self.__item.fullDescriptionSpecial
+            if self.__item.isEconomicBooster():
+                return self.__item.getEconomicDirectivesDescription()
             return self.__item.getOptDeviceBoosterDescription(None)
 
     @property
@@ -406,6 +410,8 @@ class ItemPacker(ShopBaseUIPacker):
 
     @property
     def template(self):
+        if self.__item.itemTypeID == GUI_ITEM_TYPE.BATTLE_BOOSTER and self.__item.isEconomicBooster():
+            return TemplateType.ECONOMICBOOSTER
         return TemplateType.MAINTAIN
 
     @property

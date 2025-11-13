@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/french/F123_ERAC_105_Proto/crash/lod3/Chassis</parent>
+	<tank>true</tank>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.217560 -0.003646 -2.456033</min>
+		<max>1.217560 0.920492 2.547563</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/french/F123_ERAC_105_Proto/crash/lod2/Chassis</nodefullVisual>
+</root>

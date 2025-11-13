@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G184_EisBaer/crash/lod3/Hull</nodefullVisual>
+	<parent>vehicles/german/G184_EisBaer/crash/lod4/Hull</parent>
+	<tank>true</tank>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.736105 -1.039882 -3.910853</min>
+		<max>1.721033 0.652488 3.837881</max>
+	</visibilityBox>
+</root>

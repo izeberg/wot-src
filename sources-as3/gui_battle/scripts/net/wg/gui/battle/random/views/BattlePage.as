@@ -401,7 +401,7 @@ package net.wg.gui.battle.random.views
          }
       }
       
-      protected function updatePositionForQuestProgress() : void
+      private function updatePositionForQuestProgress() : void
       {
          var _loc1_:int = 0;
          this.endWarningPanel.y = this.teamBasesPanelUI.y + this.teamBasesPanelUI.panelHeight;

@@ -41,9 +41,6 @@ msgstr "WS No. 19 Special"
 msgid "C13B42"
 msgstr "C.13/B.42"
 
-msgid "C13B42_ISP"
-msgstr "C.13/B.42"
-
 msgid "C13B47"
 msgstr "C.13/B.47"
 
@@ -58,9 +55,6 @@ msgstr "SR C42"
 
 msgid "C42_B47"
 msgstr "C42/B47 AFV stations complete"
-
-msgid "C42_B47_H"
-msgstr "C42/B47 AFV SC"
 
 msgid "C42_B47_SH"
 msgstr "C42/B47 AFV SC"
@@ -80,30 +74,11 @@ msgstr "SR C45"
 msgid "C45A_Gonsalo"
 msgstr "C45AG"
 
-msgid "C45A_H"
-msgstr "SR C45"
-
 msgid "C45A_SH"
-msgstr "SR C45"
-
-msgid "C45_ISP"
 msgstr "SR C45"
 
 msgid "Cadillac_75_x_3"
 msgstr "Cadillac \"75\" x3"
-
-msgid "Cavalier_H"
-msgstr "Лицедей"
-
-msgid "Cavalier_H_descr"
-msgstr ""
-"Пионеры танкостроения не теряют хватку, производя прекрасные машины. Их "
-"технику ценят танкисты и боится противник. Образец, выпущенный на «охоту», —"
-" не исключение. Легендарная британская сталь снова готова показать своё "
-"превосходство."
-
-msgid "Cavalier_H_short"
-msgstr "Лицедей"
 
 msgid "Cavalier_SH"
 msgstr "Harbinger Mk. IV"
@@ -202,9 +177,6 @@ msgstr "A24"
 msgid "Chassis_GB107_Cavalier_2"
 msgstr "A27"
 
-msgid "Chassis_GB107_Cavalier_H"
-msgstr "Cavalier"
-
 msgid "Chassis_GB107_Cavalier_SH"
 msgstr "Cavalier"
 
@@ -254,9 +226,6 @@ msgid "Chassis_GB11_Caernarvon_2"
 msgstr "FV221A"
 
 msgid "Chassis_GB120_Concept_No_5"
-msgstr "Concept No. 5"
-
-msgid "Chassis_GB120_Concept_No_5_ISP"
 msgstr "Concept No. 5"
 
 msgid "Chassis_GB121_GSOR_1010_FB"
@@ -342,6 +311,15 @@ msgstr "Vulcan Mk. I"
 
 msgid "Chassis_GB13_FV215b"
 msgstr "FV215"
+
+msgid "Chassis_GB140_Champion"
+msgstr "Champion"
+
+msgid "Chassis_GB141_Celestial_2_51"
+msgstr "Celestial 2-51"
+
+msgid "Chassis_GB143_Captain"
+msgstr "Captain"
 
 msgid "Chassis_GB14_M2"
 msgstr "M2A1"
@@ -604,9 +582,6 @@ msgstr "FV4005 Stage II"
 msgid "Chassis_GB84_Chieftain_Mk6"
 msgstr "Chieftain Mk. 6"
 
-msgid "Chassis_GB84_Chieftain_Mk6_H"
-msgstr "Chieftain Mk. 6"
-
 msgid "Chassis_GB84_Chieftain_Mk6_SH"
 msgstr "Chieftain Mk. 6"
 
@@ -616,9 +591,6 @@ msgstr "Cromwell"
 msgid "Chassis_GB86_Centurion_Action_X"
 msgstr "Centurion Action X"
 
-msgid "Chassis_GB86_Centurion_Action_X_ISP"
-msgstr "Centurion Action X"
-
 msgid "Chassis_GB87_Chieftain_T95_turret"
 msgstr "Chieftain/T95"
 
@@ -626,9 +598,6 @@ msgid "Chassis_GB88_T95_Chieftain_turret"
 msgstr "T95/Chieftain"
 
 msgid "Chassis_GB91_Super_Conqueror"
-msgstr "Super Conqueror"
-
-msgid "Chassis_GB91_Super_Conqueror_ISP"
 msgstr "Super Conqueror"
 
 msgid "Chassis_GB92_FV217"
@@ -647,9 +616,6 @@ msgid "Chassis_GB96_Excalibur"
 msgstr "Excalibur"
 
 msgid "Chassis_GB97_Chimera"
-msgstr "Chimera"
-
-msgid "Chassis_GB97_Chimera_H"
 msgstr "Chimera"
 
 msgid "Chassis_GB97_Chimera_SH"
@@ -1189,7 +1155,7 @@ msgstr "Vickers Mark 3"
 
 msgid "GB114_Vickers_MBT_Mk3_desc"
 msgstr ""
-"Vickers МВТ Mk.3 стал результатом совершенствования танка Vickers МВТ Mk.1. Он был разработан в инициативном порядке и предназначался для экспортных продаж как недорогая альтернатива сложным и дорогим танкам, таким как Chieftain. Vickers МВТ Mk.3 получил новую башню смешанной конструкции из литых и сварных элементов, а также иную компоновку крыши МТО. В целом машина не могла похвастаться выдающейся броней: основной акцент был сделан на подвижности и вооружении. Последнее включало 105-мм нарезную пушку L7, стабилизированную в двух плоскостях, и современную систему управления огнём. Дизельный двигатель Detroit Diesel 12V-71T мощностью 720 л.с. обеспечивал приемлемую подвижность и максимальную скорость около 50 км/ч. Машина производилась до 1995 года.\n"
+"Vickers МВТ Mk.3 стал результатом совершенствования танка Vickers МВТ Mk.1. Он был разработан в инициативном порядке и предназначался для экспортных продаж как недорогая альтернатива сложным и дорогим танкам, таким как Chieftain. Vickers МВТ Mk.3 получил новую башню смешанной конструкции из литых и сварных элементов, а также иную компоновку крыши МТО. В целом машина не могла похвастаться выдающейся бронёй: основной акцент был сделан на подвижности и вооружении. Последнее включало 105-мм нарезную пушку L7, стабилизированную в двух плоскостях, и современную систему управления огнём. Дизельный двигатель Detroit Diesel 12V-71T мощностью 720 л.с. обеспечивал приемлемую подвижность и максимальную скорость около 50 км/ч. Машина производилась до 1995 года.\n"
 "\n"
 "Характеристики машины могут быть изменены без компенсации."
 
@@ -1294,29 +1260,6 @@ msgstr "Caernarvon"
 
 msgid "GB120_Concept_No_5"
 msgstr "Concept No. 5"
-
-msgid "GB120_Concept_No_5_ISP"
-msgstr "Concept No. 5 (И)"
-
-msgid "GB120_Concept_No_5_ISP_descr"
-msgstr ""
-"В послевоенные годы в Британии продолжалась работа над тяжёлыми "
-"бронеавтомобилями. Один из амбициозных проектов назывался Concept 5 Future "
-"Tank Design. По сути, это был танк на колёсах. Такие машины предназначались "
-"для специфичных театров военных действий, где у колёсной техники было "
-"преимущество. Например, для каменистых пустынь. Вооружение в виде 105-мм "
-"пушки позволяло бороться со средними танками того периода. Проект так и "
-"остался на стадии концепции, из-за решения развивать основные танки и "
-"гусеничные боевые машины."
-
-msgid "GB120_Concept_No_5_ISP_long_special"
-msgstr "?empty?"
-
-msgid "GB120_Concept_No_5_ISP_short"
-msgstr "Concept 5 (И)"
-
-msgid "GB120_Concept_No_5_ISP_short_special"
-msgstr "?empty?"
 
 msgid "GB120_Concept_No_5_bob"
 msgstr "Concept No. 5 BB"
@@ -1726,6 +1669,60 @@ msgstr ""
 
 msgid "GB13_FV215b_short_special"
 msgstr "Комфортное орудие, высокая прочность"
+
+msgid "GB140_Champion"
+msgstr "Champion"
+
+msgid "GB140_Champion_descr"
+msgstr ""
+".\n"
+"\n"
+"Характеристики машины могут быть изменены без компенсации."
+
+msgid "GB140_Champion_long_special"
+msgstr "?empty?"
+
+msgid "GB140_Champion_short"
+msgstr "Champion"
+
+msgid "GB140_Champion_short_special"
+msgstr "?empty?"
+
+msgid "GB141_Celestial_2_51"
+msgstr "Celestial 2-51"
+
+msgid "GB141_Celestial_2_51_descr"
+msgstr ""
+".\n"
+"\n"
+"Характеристики машины могут быть изменены без компенсации."
+
+msgid "GB141_Celestial_2_51_long_special"
+msgstr "?empty?"
+
+msgid "GB141_Celestial_2_51_short"
+msgstr "Celestial"
+
+msgid "GB141_Celestial_2_51_short_special"
+msgstr "?empty?"
+
+msgid "GB143_Captain"
+msgstr "Captain"
+
+msgid "GB143_Captain_descr"
+msgstr ""
+".\n"
+"\n"
+"Характеристики машины могут быть изменены без компенсации."
+
+msgid "GB143_Captain_long_special"
+msgstr "?empty?"
+
+msgid "GB143_Captain_short"
+msgstr "Captain"
+
+msgid "GB143_Captain_short_special"
+msgstr "?empty?"
 
 msgid "GB14_M2"
 msgstr "M2"
@@ -2564,25 +2561,6 @@ msgstr "Cent. AX 7x7"
 msgid "GB86_Centurion_Action_X_7x7_short_special"
 msgstr "?empty?"
 
-msgid "GB86_Centurion_Action_X_ISP"
-msgstr "Centurion Action X (И)"
-
-msgid "GB86_Centurion_Action_X_ISP_descr"
-msgstr ""
-"Башню Action X предполагалось использовать на танках Centurion более поздних"
-" модификаций. Один прототип башни был установлен на шасси танка Centurion "
-"Mark 7, ещё один использовался для баллистических испытаний. Танки с башней "
-"Action X серийно не выпускались, на вооружении не состояли."
-
-msgid "GB86_Centurion_Action_X_ISP_long_special"
-msgstr "?empty?"
-
-msgid "GB86_Centurion_Action_X_ISP_short"
-msgstr "Centurion AX (И)"
-
-msgid "GB86_Centurion_Action_X_ISP_short_special"
-msgstr "?empty?"
-
 msgid "GB86_Centurion_Action_X_descr"
 msgstr ""
 "Башню Action X предполагалось использовать на танках Centurion более поздних"
@@ -2643,26 +2621,6 @@ msgstr "Комфортные УВН, отличная стабилизация"
 
 msgid "GB91_Super_Conqueror"
 msgstr "Super Conqueror"
-
-msgid "GB91_Super_Conqueror_ISP"
-msgstr "Super Conqueror (И)"
-
-msgid "GB91_Super_Conqueror_ISP_descr"
-msgstr ""
-"Вариант танка Conqueror с дополнительным бронированием был изготовлен в "
-"первой половине 50-х годов для испытаний боевых частей противотанковых "
-"управляемых ракет (ПТУР) «Dart» и «Malkara». На испытаниях данная машина "
-"играла роль тяжёлого танка, который мог бы появиться в будущем. Серийно не "
-"производился."
-
-msgid "GB91_Super_Conqueror_ISP_long_special"
-msgstr "?empty?"
-
-msgid "GB91_Super_Conqueror_ISP_short"
-msgstr "S. Conqueror (И)"
-
-msgid "GB91_Super_Conqueror_ISP_short_special"
-msgstr "?empty?"
 
 msgid "GB91_Super_Conqueror_descr"
 msgstr ""
@@ -2916,14 +2874,6 @@ msgstr "L50"
 msgid "LandRover_Meteorite_V8"
 msgstr "Land-Rover Meteorite V8"
 
-msgid "LandRover_Meteorite_V8_ISP"
-msgstr "Land-Rover Meteorite V8"
-
-msgid "LandRover_Meteorite_V8_ISP_short"
-msgstr ""
-"Land-Rover\n"
-"Meteorite V8"
-
 msgid "LandRover_Meteorite_V8_short"
 msgstr ""
 "Land-Rover\n"
@@ -2937,9 +2887,6 @@ msgstr "2x Leyland E164"
 
 msgid "Leyland_L60_No_4"
 msgstr "Leyland L60 No. 4 Mk. 13A"
-
-msgid "Leyland_L60_No_4_H"
-msgstr "Leyland L No.90-4"
 
 msgid "Leyland_L60_No_4_Mk_1A"
 msgstr "Leyland L60 No. 4, Mk. 1A"
@@ -2992,9 +2939,6 @@ msgstr "WS No. 14"
 msgid "N19Mk1"
 msgstr "WS No. 19 Mk. I"
 
-msgid "N19Mk1_H"
-msgstr "WS No. 19 Mk. I"
-
 msgid "N19Mk1_SH"
 msgstr "WS No. 19 Mk. I"
 
@@ -3005,6 +2949,9 @@ msgid "N19Mk2_Aust"
 msgstr "WS No. 19 Mk. II (Aust.)"
 
 msgid "N19Mk3"
+msgstr "WS No. 19 Mk. III"
+
+msgid "N19Mk3_C"
 msgstr "WS No. 19 Mk. III"
 
 msgid "N19_1"
@@ -3041,9 +2988,6 @@ msgid "OQF_17pdr_Gun_Mk_IV_SH_SH"
 msgstr "OQF 17-pdr Gun Mk. IV SH-SH"
 
 msgid "OQF_17pdr_Gun_Mk_VII"
-msgstr "OQF 17-pdr Gun Mk. VII"
-
-msgid "OQF_17pdr_Gun_Mk_VII_H"
 msgstr "OQF 17-pdr Gun Mk. VII"
 
 msgid "OQF_17pdr_Gun_Mk_VII_SH"
@@ -3166,20 +3110,23 @@ msgstr "Rolls-Royce Griffon"
 msgid "Rolls_Royce_Griffon_180"
 msgstr "Rolls-Royce Griffon 180"
 
+msgid "Rolls_Royce_Griffon_180C"
+msgstr "Rolls-Royce Griffon 180"
+
 msgid "Rolls_Royce_Griffon_180P"
 msgstr "Rolls-Royce Griffon 180"
 
 msgid "Rolls_Royce_Griffon_A"
 msgstr "Rolls-Royce Griffon A"
 
-msgid "Rolls_Royce_Griffon_ISP"
-msgstr "Rolls-Royce Griffon"
-
 msgid "Rolls_Royce_K60"
 msgstr "Rolls Royce K60"
 
 msgid "Rolls_Royce_K60_Mk2"
 msgstr "Rolls Royce K60 Mk. 2"
+
+msgid "Rolls_Royce_Meteor_C"
+msgstr "Rolls-Royce Meteor C"
 
 msgid "Rolls_Royce_Meteor_M300"
 msgstr "Rolls-Royce Meteor M300"
@@ -3194,9 +3141,6 @@ msgid "Rolls_Royce_Meteor_P"
 msgstr "Rolls-Royce Meteor P"
 
 msgid "Rolls_Royce_Meteor_with_twin_turbo_supercharges"
-msgstr "Rolls-Royce Meteor TTSC"
-
-msgid "Rolls_Royce_Meteor_with_twin_turbo_supercharges_ISP"
 msgstr "Rolls-Royce Meteor TTSC"
 
 msgid "Rolls_Royce_Meteorite_202"
@@ -3219,9 +3163,6 @@ msgstr "Rolls-Royce FB60"
 
 msgid "Rolls_Royse_Meteor"
 msgstr "Rolls-Royce Meteor"
-
-msgid "Rolls_Royse_Meteor_H"
-msgstr "Rolls-Royce Satellite"
 
 msgid "Rolls_Royse_Meteor_M120"
 msgstr "Rolls-Royce Meteor M120"
@@ -3262,9 +3203,6 @@ msgstr "Rolls-Royce Meteor Mk. XI"
 msgid "Rolls_Royse_Meteor_Mk_XI_supercharged"
 msgstr "Rolls-Royce Meteor Mk. XI SC"
 
-msgid "Rolls_Royse_Meteor_Mk_XI_supercharged_H"
-msgstr "Rolls-Royce Satellite Mk. XI SC"
-
 msgid "Rolls_Royse_Meteor_Mk_XI_supercharged_SH"
 msgstr "Rolls-Royce Satellite Mk. XI SC"
 
@@ -3281,6 +3219,12 @@ msgid "Rover_Meteorite"
 msgstr "Rover Meteorite"
 
 msgid "SR_C42"
+msgstr "SR C42"
+
+msgid "SR_C42_C"
+msgstr "SR C42"
+
+msgid "SR_C42_CP"
 msgstr "SR C42"
 
 msgid "SR_C42_S"
@@ -3315,9 +3259,6 @@ msgstr "Matilda Mk. IIA"
 
 msgid "Turret_1_GB08_Churchill_I"
 msgstr "Churchill I"
-
-msgid "Turret_1_GB08_Churchill_I_H"
-msgstr "Churchill I Mk. IX"
 
 msgid "Turret_1_GB08_Churchill_I_SH"
 msgstr "Churchill I Mk. IX"
@@ -3388,9 +3329,6 @@ msgstr "Centurion Mk. II"
 msgid "Turret_1_GB120_Concept_No_5"
 msgstr "Concept No. 5"
 
-msgid "Turret_1_GB120_Concept_No_5_ISP"
-msgstr "Concept No. 5"
-
 msgid "Turret_1_GB121_GSOR_1010_FB"
 msgstr "GSOR 1010 FB"
 
@@ -3441,6 +3379,15 @@ msgstr "Vulcan Mk. I"
 
 msgid "Turret_1_GB13_FV215b"
 msgstr "FV215"
+
+msgid "Turret_1_GB140_Champion"
+msgstr "Champion"
+
+msgid "Turret_1_GB141_Celestial_2_51"
+msgstr "Celestial 2-51"
+
+msgid "Turret_1_GB143_Captain"
+msgstr "Captain"
 
 msgid "Turret_1_GB14_M2"
 msgstr "M2A1"
@@ -3595,9 +3542,6 @@ msgstr "Cromwell Mk. IV"
 msgid "Turret_1_GB86_Centurion_Action_X"
 msgstr "Centurion Action X"
 
-msgid "Turret_1_GB86_Centurion_Action_X_ISP"
-msgstr "Centurion Action X"
-
 msgid "Turret_1_GB87_Chieftain_T95_turret"
 msgstr "Chieftain/T95"
 
@@ -3605,9 +3549,6 @@ msgid "Turret_1_GB88_T95_Chieftain_turret"
 msgstr "T95/Chieftain"
 
 msgid "Turret_1_GB91_Super_Conqueror"
-msgstr "Conqueror «Unorthodox» ABP"
-
-msgid "Turret_1_GB91_Super_Conqueror_ISP"
 msgstr "Conqueror «Unorthodox» ABP"
 
 msgid "Turret_1_GB92_FV217"
@@ -3672,9 +3613,6 @@ msgstr "A24 Vauxhall"
 
 msgid "Turret_2_GB10_Black_Prince"
 msgstr "Black Prince"
-
-msgid "Turret_2_GB10_Black_Prince_H"
-msgstr "Churchill BP"
 
 msgid "Turret_2_GB10_Black_Prince_SH"
 msgstr "Churchill BP"
@@ -3766,11 +3704,11 @@ msgstr "Cruiser Mk. II"
 msgid "Turret_3_GB17_Grant_I"
 msgstr "Grant I"
 
-msgid "Turret_3_GB70_N_FV4202_105_H"
-msgstr "FV4202 Series"
-
 msgid "Turret_3_GB70_N_FV4202_105_SH"
 msgstr "FV4202 Series"
+
+msgid "Unit_2983F"
+msgstr "Unit 2983F"
 
 msgid "Vauxhall_Bedford_Twin_Six"
 msgstr "Bedford Twin-Six"
@@ -3809,9 +3747,6 @@ msgstr ""
 "Wright (Continental)\n"
 "R975 EC2"
 
-msgid "_105mm_APCR_L5_H"
-msgstr "APCR L5"
-
 msgid "_105mm_APCR_L5_SH"
 msgstr "APCR L5"
 
@@ -3821,14 +3756,17 @@ msgstr "APDS L-28"
 msgid "_105mm_APCR_L7D"
 msgstr "APDS L28"
 
+msgid "_105mm_APCR_L7LCD"
+msgstr "APDS L28C"
+
 msgid "_105mm_APCR_L7LD"
 msgstr "APDS L28L"
 
 msgid "_105mm_APCR_L7SD"
 msgstr "APDS L28S"
 
-msgid "_105mm_APCR_L7_ISP"
-msgstr "APDS L-28"
+msgid "_105mm_APCR_L7_C"
+msgstr "APDS L28 C"
 
 msgid "_105mm_APCR_L7_proto"
 msgstr "APDS L-28P"
@@ -3854,12 +3792,6 @@ msgstr "105 mm Royal Ordnance L7A1"
 msgid "_105mm_Gun_L7_HEAT"
 msgstr "105 mm Gun L7A2"
 
-msgid "_105mm_Gun_L7_HEAT_H"
-msgstr "105 mm Gun L7A2"
-
-msgid "_105mm_Gun_L7_HEAT_ISP"
-msgstr "105 mm Gun L7A2"
-
 msgid "_105mm_Gun_L7_HEAT_SH"
 msgstr "105 mm Gun L7A2"
 
@@ -3872,6 +3804,9 @@ msgstr "US HEAT M456"
 msgid "_105mm_HEAT_L7D"
 msgstr "HEAT L51"
 
+msgid "_105mm_HEAT_L7LCD"
+msgstr "HEAT L51C"
+
 msgid "_105mm_HEAT_L7LD"
 msgstr "HEAT L51L"
 
@@ -3881,11 +3816,8 @@ msgstr "HEAT L51S"
 msgid "_105mm_HEAT_L7_AL"
 msgstr "HEAT-T L-37"
 
-msgid "_105mm_HEAT_L7_H"
-msgstr "US AP M456"
-
-msgid "_105mm_HEAT_L7_ISP"
-msgstr "US HEAT M456"
+msgid "_105mm_HEAT_L7_C"
+msgstr "HEAT L51 C"
 
 msgid "_105mm_HEAT_L7_SH"
 msgstr "US AP M456"
@@ -3908,14 +3840,17 @@ msgstr "HESH-T L-35"
 msgid "_105mm_HE_L7D"
 msgstr "HESH L35"
 
+msgid "_105mm_HE_L7LCD"
+msgstr "HESH L35C"
+
 msgid "_105mm_HE_L7LD"
 msgstr "HESH L35L"
 
 msgid "_105mm_HE_L7SD"
 msgstr "HESH L35S"
 
-msgid "_105mm_HE_L7_ISP"
-msgstr "HESH-T L-35"
+msgid "_105mm_HE_L7_C"
+msgstr "HESH L35 C"
 
 msgid "_105mm_HE_L7_Mk13"
 msgstr "HE L7 Mk. 13"
@@ -3938,11 +3873,17 @@ msgstr "105mm HV HE"
 msgid "_105mm_HV_MK2_Gun"
 msgstr "105mm HV Gun Mk.II"
 
+msgid "_105mm_L7L_C_dualgun"
+msgstr "105 mm Dual Gun L7L"
+
 msgid "_105mm_L7L_dualgun"
 msgstr "105 mm Dual Gun L7L"
 
 msgid "_105mm_L7S_dualgun"
 msgstr "105 mm Dual Gun L7S"
+
+msgid "_105mm_L7_C"
+msgstr "105 mm Gun L7 C"
 
 msgid "_105mm_L7_dualgun"
 msgstr "105 mm Dual Gun L7"
@@ -3974,22 +3915,10 @@ msgstr "110 mm MV AP"
 msgid "_110mm_MV_APDS"
 msgstr "110 mm MV APCR"
 
-msgid "_110mm_MV_APDS_ISP"
-msgstr "110 mm MV APCR"
-
-msgid "_110mm_MV_AP_ISP"
-msgstr "110 mm MV AP"
-
 msgid "_110mm_MV_Gun"
 msgstr "110 mm Medium Velocity Gun"
 
-msgid "_110mm_MV_Gun_ISP"
-msgstr "110 mm Medium Velocity Gun"
-
 msgid "_110mm_MV_HE"
-msgstr "110 mm MV HE"
-
-msgid "_110mm_MV_HE_ISP"
 msgstr "110 mm MV HE"
 
 msgid "_110mm_MV_N_AP"
@@ -4016,9 +3945,6 @@ msgstr "AP-T L1"
 msgid "_120mm_AP-T_L1A1V"
 msgstr "AP-T L1V"
 
-msgid "_120mm_AP-T_L1A1_ISP"
-msgstr "AP-T L1"
-
 msgid "_120mm_APDS_L15"
 msgstr "APDS L15"
 
@@ -4042,9 +3968,6 @@ msgstr "APDS L1"
 
 msgid "_120mm_APDS_L1A1V"
 msgstr "APDS L1V"
-
-msgid "_120mm_APDS_L1A1_ISP"
-msgstr "APDS L1"
 
 msgid "_120mm_AP_L15A11"
 msgstr "AP L15A11"
@@ -4073,9 +3996,6 @@ msgstr "120 mm Gun L1A1"
 msgid "_120mm_Gun_L1A1_A"
 msgstr "120 mm Gun L1A1 A"
 
-msgid "_120mm_Gun_L1A1_ISP"
-msgstr "120 mm Gun L1A1"
-
 msgid "_120mm_Gun_LV"
 msgstr "120 mm Low Velocity Gun"
 
@@ -4102,9 +4022,6 @@ msgstr "HESH-T L1"
 
 msgid "_120mm_HE_L1A1V"
 msgstr "HESH-T L1V"
-
-msgid "_120mm_HE_L1A1_ISP"
-msgstr "HESH-T L1"
 
 msgid "_120mm_QF_1_gun"
 msgstr "QF 120 mm Gonsalo"
@@ -4151,6 +4068,18 @@ msgstr "6-inch HEP"
 msgid "_150mm_QF_5_9inch"
 msgstr "QF 6-inch Caliban"
 
+msgid "_152mm_APCR"
+msgstr "APFSDS Mk. 59"
+
+msgid "_152mm_HE"
+msgstr "HE Mk. 34"
+
+msgid "_152mm_HEAT"
+msgstr "APFSDS Mk. 60 mod."
+
+msgid "_152mm_QF_MK_N5T"
+msgstr "152 mm QF Mk. N5T"
+
 msgid "_15mm_AP_W_Mk1"
 msgstr "AP W Mk. 1"
 
@@ -4162,9 +4091,6 @@ msgstr "APCBC 17-Pr. Mk. 8T"
 
 msgid "_17pdr_APC_Mk1T"
 msgstr "APC 17-Pr. Mk. 1T"
-
-msgid "_17pdr_APC_Mk4S_H"
-msgstr "APC Mk. 4S"
 
 msgid "_17pdr_APC_Mk4S_SH"
 msgstr "APC Mk. 4S"
@@ -4183,9 +4109,6 @@ msgstr "APCBC 17-Pr. Mk. 9T"
 
 msgid "_17pdr_AP_Mk6T"
 msgstr "AP 17-Pr. Mk. 6T"
-
-msgid "_17pdr_HEAT_Mk1T_H"
-msgstr "AP 17-Pr. Mk. 1T"
 
 msgid "_17pdr_HEAT_Mk1T_SH"
 msgstr "AP 17-Pr. Mk. 1T"
@@ -4250,9 +4173,6 @@ msgstr "APCBC Mk. 1"
 msgid "_20pdr_APC_Mk2"
 msgstr "APC Mk. 2"
 
-msgid "_20pdr_APC_Mk4ST_H"
-msgstr "APC Mk. 4ST"
-
 msgid "_20pdr_APC_Mk4ST_SH"
 msgstr "APC Mk. 4ST"
 
@@ -4263,9 +4183,6 @@ msgid "_20pdr_APDS_Mk3D"
 msgstr "APDS Mk. 3"
 
 msgid "_20pdr_AP_Mk1"
-msgstr "AP Mk. 1"
-
-msgid "_20pdr_AP_Mk1_H"
 msgstr "AP Mk. 1"
 
 msgid "_20pdr_AP_Mk1_SH"
@@ -4284,9 +4201,6 @@ msgid "_20pdr_Gun_Type_B"
 msgstr "OQF 20-pdr Gun Type B Barrel"
 
 msgid "_20pdr_Gun_Type_B_1"
-msgstr "OQF 20-pdr Gun Type B Barrel"
-
-msgid "_20pdr_Gun_Type_B_H"
 msgstr "OQF 20-pdr Gun Type B Barrel"
 
 msgid "_20pdr_Gun_Type_B_SH"
@@ -4394,9 +4308,6 @@ msgstr "AP Mk. 1T"
 msgid "_3.7inch_APCR"
 msgstr "APCR Mk. 2T"
 
-msgid "_3.7inch_APCR_M2_H"
-msgstr "APCR M2"
-
 msgid "_3.7inch_APCR_M2_SH"
 msgstr "APCR M2"
 
@@ -4409,9 +4320,6 @@ msgstr "HE Mk. 1C"
 msgid "_3.7inch_HEAT_Mk1"
 msgstr "HEAT Mk. 1"
 
-msgid "_3.7inch_HEAT_Mk1_H"
-msgstr "3.7 inch AP Mk. 1"
-
 msgid "_3.7inch_HEAT_Mk1_SH"
 msgstr "3.7 inch AP Mk. 1"
 
@@ -4419,9 +4327,6 @@ msgid "_3.7inch_HE_Mk3"
 msgstr "HE Mk. 3"
 
 msgid "_3.7inch_Howitzer"
-msgstr "3.7-inch Howitzer"
-
-msgid "_3.7inch_Howitzer_H"
 msgstr "3.7-inch Howitzer"
 
 msgid "_3.7inch_Howitzer_SH"
@@ -4437,9 +4342,6 @@ msgid "_32_pounder_AT_Gun_OQF_Mk_II"
 msgstr "OQF 32-pdr AT Gun Mk. II"
 
 msgid "_32_pounder_Gun_OQF"
-msgstr "OQF 32-pdr Gun Mk. II"
-
-msgid "_32_pounder_Gun_OQF_H"
 msgstr "OQF 32-pdr Gun Mk. II"
 
 msgid "_32_pounder_Gun_OQF_SH"
@@ -4463,9 +4365,6 @@ msgstr "APCBC Mk. 3"
 msgid "_32pdr_APCBC_Mk_I_D"
 msgstr "APCBC Mk. I"
 
-msgid "_32pdr_APCR_Mk3_H"
-msgstr "APCR Mk. 3"
-
 msgid "_32pdr_APCR_Mk3_SH"
 msgstr "APCR Mk. 3"
 
@@ -4483,9 +4382,6 @@ msgstr "APDS Mk. III"
 
 msgid "_32pdr_AP_MkI"
 msgstr "AP Mk. 1"
-
-msgid "_32pdr_HEAT_Mk_3_H"
-msgstr "AP Mk. 3"
 
 msgid "_32pdr_HEAT_Mk_3_SH"
 msgstr "AP Mk. 3"
@@ -4604,9 +4500,6 @@ msgstr "APDS"
 msgid "_55pdr_HE"
 msgstr "HE"
 
-msgid "_5_5inch_APC_Mk_5_H"
-msgstr "APC Mk. 5"
-
 msgid "_5_5inch_APC_Mk_5_SH"
 msgstr "APC Mk. 5"
 
@@ -4616,14 +4509,8 @@ msgstr "AP Mk. 1"
 msgid "_5_5inch_AT_Gun"
 msgstr "B.L. 5.5-in. AT Gun"
 
-msgid "_5_5inch_AT_Gun_H"
-msgstr "B.L. 5.5-in. AT Gun"
-
 msgid "_5_5inch_AT_Gun_SH"
 msgstr "B.L. 5.5-in. AT Gun"
-
-msgid "_5_5inch_HEAT_Mk_1T_H"
-msgstr "AP Mk. 1T"
 
 msgid "_5_5inch_HEAT_Mk_1T_SH"
 msgstr "AP Mk. 1T"

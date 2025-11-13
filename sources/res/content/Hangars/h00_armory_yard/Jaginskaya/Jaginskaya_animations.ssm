@@ -2,52 +2,16 @@
 <root>
 	<params>
 		<param>
-			<name>random_idle</name>
+			<name>stage</name>
+			<type>float</type>
+		</param>
+		<param>
+			<name>random_sequence</name>
 			<type>random_float</type>
 		</param>
 		<param>
-			<name>seq_1</name>
-			<type>trigger</type>
-		</param>
-		<param>
-			<name>seq_2</name>
-			<type>trigger</type>
-		</param>
-		<param>
-			<name>seq_3</name>
-			<type>trigger</type>
-		</param>
-		<param>
-			<name>seq_4</name>
-			<type>trigger</type>
-		</param>
-		<param>
-			<name>seq_5</name>
-			<type>trigger</type>
-		</param>
-		<param>
-			<name>seq_6</name>
-			<type>trigger</type>
-		</param>
-		<param>
-			<name>group_0</name>
-			<type>trigger</type>
-		</param>
-		<param>
-			<name>group_1</name>
-			<type>trigger</type>
-		</param>
-		<param>
-			<name>group_2</name>
-			<type>trigger</type>
-		</param>
-		<param>
-			<name>group_3</name>
-			<type>trigger</type>
-		</param>
-		<param>
-			<name>group_4</name>
-			<type>trigger</type>
+			<name>random_idle</name>
+			<type>random_float</type>
 		</param>
 	</params>
 	<node>
@@ -55,73 +19,95 @@
 		<type>sleep</type>
 		<time>1.000000 1.000000</time>
 		<transition>
-			<to>1-6</to>
+			<to>0-6</to>
 			<blendDuration>0.000000</blendDuration>
 			<conditions>
 				<condition>
-					<type>trigger</type>
-					<name>group_0</name>
+					<type>random_float</type>
+					<name>random_sequence</name>
+					<rangeStart>0.000000</rangeStart>
+					<rangeEnd>7.000000</rangeEnd>
 				</condition>
 			</conditions>
 		</transition>
 		<transition>
-			<to>7-19</to>
+			<to>7-11</to>
 			<blendDuration>0.000000</blendDuration>
 			<conditions>
 				<condition>
-					<type>trigger</type>
-					<name>group_1</name>
+					<type>float</type>
+					<name>stage</name>
+					<rangeStart>7.000000</rangeStart>
+					<rangeEnd>12.000000</rangeEnd>
 				</condition>
 			</conditions>
 		</transition>
 		<transition>
-			<to>20</to>
+			<to>20-24</to>
 			<blendDuration>0.000000</blendDuration>
 			<conditions>
 				<condition>
-					<type>trigger</type>
-					<name>group_2</name>
+					<type>float</type>
+					<name>stage</name>
+					<rangeStart>20.000000</rangeStart>
+					<rangeEnd>25.000000</rangeEnd>
 				</condition>
 			</conditions>
 		</transition>
 		<transition>
-			<to>21-22</to>
+			<to>25-26</to>
 			<blendDuration>0.000000</blendDuration>
 			<conditions>
 				<condition>
-					<type>trigger</type>
-					<name>group_3</name>
+					<type>float</type>
+					<name>stage</name>
+					<rangeStart>25.000000</rangeStart>
+					<rangeEnd>27.000000</rangeEnd>
 				</condition>
 			</conditions>
 		</transition>
 		<transition>
-			<to>23-25</to>
+			<to>27-33</to>
 			<blendDuration>0.000000</blendDuration>
 			<conditions>
 				<condition>
-					<type>trigger</type>
-					<name>group_4</name>
+					<type>float</type>
+					<name>stage</name>
+					<rangeStart>27.000000</rangeStart>
+					<rangeEnd>34.000000</rangeEnd>
 				</condition>
 			</conditions>
 		</transition>
-		<uiPosition>213.500000 -217.000000 0.000000</uiPosition>
+		<transition>
+			<to>34-40</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>float</type>
+					<name>stage</name>
+					<rangeStart>34.000000</rangeStart>
+					<rangeEnd>41.000000</rangeEnd>
+				</condition>
+			</conditions>
+		</transition>
+		<transition>
+			<to>12-19</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>float</type>
+					<name>stage</name>
+					<rangeStart>12.000000</rangeStart>
+					<rangeEnd>20.000000</rangeEnd>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>219.500000 -330.000000 0.000000</uiPosition>
 	</node>
 	<node>
 		<name>idle</name>
 		<type>sleep</type>
 		<time>1.000000 1.000000</time>
-		<transition>
-			<to>idle_start</to>
-			<blendDuration>0.000000</blendDuration>
-			<conditions>
-				<condition>
-					<type>random_float</type>
-					<name>random_idle</name>
-					<rangeStart>2.000000</rangeStart>
-					<rangeEnd>3.000000</rangeEnd>
-				</condition>
-			</conditions>
-		</transition>
 		<transition>
 			<to>idle_head</to>
 			<blendDuration>0.000000</blendDuration>
@@ -129,201 +115,218 @@
 				<condition>
 					<type>random_float</type>
 					<name>random_idle</name>
-					<rangeStart>1.000000</rangeStart>
-					<rangeEnd>2.000000</rangeEnd>
-				</condition>
-			</conditions>
-		</transition>
-		<transition>
-			<to>idle_streches</to>
-			<blendDuration>0.000000</blendDuration>
-			<conditions>
-				<condition>
-					<type>random_float</type>
-					<name>random_idle</name>
 					<rangeStart>0.000000</rangeStart>
-					<rangeEnd>1.000000</rangeEnd>
+					<rangeEnd>25.000000</rangeEnd>
 				</condition>
 			</conditions>
 		</transition>
 		<transition>
-			<to>idle_standing_shifting</to>
+			<to>idle_standing</to>
 			<blendDuration>0.000000</blendDuration>
 			<conditions>
 				<condition>
 					<type>random_float</type>
 					<name>random_idle</name>
-					<rangeStart>3.000000</rangeStart>
-					<rangeEnd>4.000000</rangeEnd>
+					<rangeStart>25.000000</rangeStart>
+					<rangeEnd>50.000000</rangeEnd>
 				</condition>
 			</conditions>
 		</transition>
-		<uiPosition>272.000000 247.000000 0.000000</uiPosition>
-	</node>
-	<node>
-		<name>idle_start</name>
-		<type>sequence</type>
-		<resource>content/Hangars/h00_armory_yard/Jaginskaya/Sequence/Jaginskaya_Start_01.seq</resource>
-		<isLoop>true</isLoop>
-		<loop>0</loop>
 		<transition>
-			<to>check_stage</to>
+			<to>idle_start</to>
 			<blendDuration>0.000000</blendDuration>
 			<conditions>
 				<condition>
-					<type>exit_time</type>
-					<exitOffset>1.000000</exitOffset>
+					<type>random_float</type>
+					<name>random_idle</name>
+					<rangeStart>50.000000</rangeStart>
+					<rangeEnd>75.000000</rangeEnd>
 				</condition>
 			</conditions>
 		</transition>
-		<uiPosition>538.500000 326.000000 0.000000</uiPosition>
-	</node>
-	<node>
-		<name>table_with_documents</name>
-		<type>sequence</type>
-		<resource>content/Hangars/h00_armory_yard/Jaginskaya/Sequence/Jaginskaya_Table_with_documents_01.seq</resource>
-		<isLoop>false</isLoop>
-		<loop>1</loop>
 		<transition>
-			<to>idle</to>
+			<to>idle_stretches</to>
 			<blendDuration>0.000000</blendDuration>
 			<conditions>
 				<condition>
-					<type>exit_time</type>
-					<exitOffset>1.000000</exitOffset>
+					<type>random_float</type>
+					<name>random_idle</name>
+					<rangeStart>75.000000</rangeStart>
+					<rangeEnd>100.000000</rangeEnd>
 				</condition>
 			</conditions>
 		</transition>
-		<uiPosition>347.500000 90.000000 0.000000</uiPosition>
+		<uiPosition>231.000000 292.000000 0.000000</uiPosition>
 	</node>
 	<node>
-		<name>racoon_scared_her</name>
-		<type>sequence</type>
-		<resource>content/Hangars/h00_armory_yard/Jaginskaya/Sequence/Jaginskaya_and_Raccoon_Scared_her_01.seq</resource>
-		<isLoop>false</isLoop>
-		<loop>1</loop>
+		<name>7-11</name>
+		<type>sleep</type>
+		<time>1.000000 1.000000</time>
 		<transition>
-			<to>idle</to>
+			<to>Measures_tank</to>
 			<blendDuration>0.000000</blendDuration>
 			<conditions>
 				<condition>
-					<type>exit_time</type>
-					<exitOffset>1.000000</exitOffset>
+					<type>random_float</type>
+					<name>random_sequence</name>
+					<rangeStart>0.000000</rangeStart>
+					<rangeEnd>50.000000</rangeEnd>
 				</condition>
 			</conditions>
 		</transition>
-		<uiPosition>-201.000000 88.500000 0.000000</uiPosition>
-	</node>
-	<node>
-		<name>belissimo</name>
-		<type>sequence</type>
-		<resource>content/Hangars/h00_armory_yard/Jaginskaya/Sequence/Jaginskaya_Belissimo_01.seq</resource>
-		<isLoop>false</isLoop>
-		<loop>1</loop>
 		<transition>
-			<to>idle</to>
+			<to>Table_with_document</to>
 			<blendDuration>0.000000</blendDuration>
 			<conditions>
 				<condition>
-					<type>exit_time</type>
-					<exitOffset>1.000000</exitOffset>
+					<type>random_float</type>
+					<name>random_sequence</name>
+					<rangeStart>50.000000</rangeStart>
+					<rangeEnd>100.000000</rangeEnd>
 				</condition>
 			</conditions>
 		</transition>
-		<uiPosition>717.000000 89.000000 0.000000</uiPosition>
+		<uiPosition>-172.500000 -267.000000 0.000000</uiPosition>
 	</node>
 	<node>
-		<name>measures_tank</name>
-		<type>sequence</type>
-		<resource>content/Hangars/h00_armory_yard/Jaginskaya/Sequence/Jaginskaya_Measures_tank_01.seq</resource>
-		<isLoop>false</isLoop>
-		<loop>1</loop>
+		<name>25-26</name>
+		<type>sleep</type>
+		<time>1.000000 1.000000</time>
 		<transition>
-			<to>idle</to>
+			<to>Walks_around_stops_V2</to>
 			<blendDuration>0.000000</blendDuration>
 			<conditions>
 				<condition>
-					<type>exit_time</type>
-					<exitOffset>1.000000</exitOffset>
+					<type>random_float</type>
+					<name>random_sequence</name>
+					<rangeStart>50.000000</rangeStart>
+					<rangeEnd>75.000000</rangeEnd>
 				</condition>
 			</conditions>
 		</transition>
-		<uiPosition>-14.500000 85.500000 0.000000</uiPosition>
-	</node>
-	<node>
-		<name>tells_racoon_about_weapon</name>
-		<type>sequence</type>
-		<resource>content/Hangars/h00_armory_yard/Jaginskaya/Sequence/Jaginskaya_Tells_Raccoon_about_the_weapon_01.seq</resource>
-		<isLoop>false</isLoop>
-		<loop>1</loop>
 		<transition>
-			<to>idle</to>
+			<to>Table_with_document</to>
 			<blendDuration>0.000000</blendDuration>
 			<conditions>
 				<condition>
-					<type>exit_time</type>
-					<exitOffset>1.000000</exitOffset>
+					<type>random_float</type>
+					<name>random_sequence</name>
+					<rangeStart>25.000000</rangeStart>
+					<rangeEnd>50.000000</rangeEnd>
 				</condition>
 			</conditions>
 		</transition>
-		<uiPosition>534.000000 89.500000 0.000000</uiPosition>
-	</node>
-	<node>
-		<name>idle_streches</name>
-		<type>sequence</type>
-		<resource>content/Hangars/h00_armory_yard/Jaginskaya/Sequence/Jaginskaya_Stretches_01.seq</resource>
-		<isLoop>true</isLoop>
-		<loop>0</loop>
 		<transition>
-			<to>check_stage</to>
+			<to>Belissimo</to>
 			<blendDuration>0.000000</blendDuration>
 			<conditions>
 				<condition>
-					<type>exit_time</type>
-					<exitOffset>1.000000</exitOffset>
+					<type>random_float</type>
+					<name>random_sequence</name>
+					<rangeStart>75.000000</rangeStart>
+					<rangeEnd>100.000000</rangeEnd>
 				</condition>
 			</conditions>
 		</transition>
-		<uiPosition>-17.000000 321.500000 0.000000</uiPosition>
-	</node>
-	<node>
-		<name>idle_standing_shifting</name>
-		<type>sequence</type>
-		<resource>content/Hangars/h00_armory_yard/Jaginskaya/Sequence/Jaginskaya_Standing_shifting_01.seq</resource>
-		<isLoop>true</isLoop>
-		<loop>0</loop>
 		<transition>
-			<to>check_stage</to>
+			<to>Stroking</to>
 			<blendDuration>0.000000</blendDuration>
 			<conditions>
 				<condition>
-					<type>exit_time</type>
-					<exitOffset>1.000000</exitOffset>
+					<type>random_float</type>
+					<name>random_sequence</name>
+					<rangeStart>0.000000</rangeStart>
+					<rangeEnd>25.000000</rangeEnd>
 				</condition>
 			</conditions>
 		</transition>
-		<uiPosition>163.500000 323.000000 0.000000</uiPosition>
+		<uiPosition>336.500000 -208.500000 0.000000</uiPosition>
 	</node>
 	<node>
-		<name>idle_head</name>
-		<type>sequence</type>
-		<resource>content/Hangars/h00_armory_yard/Jaginskaya/Sequence/Jaginskaya_Idle_head_01.seq</resource>
-		<isLoop>true</isLoop>
-		<loop>0</loop>
+		<name>20-24</name>
+		<type>sleep</type>
+		<time>1.000000 1.000000</time>
 		<transition>
-			<to>check_stage</to>
+			<to>Table_with_document</to>
 			<blendDuration>0.000000</blendDuration>
 			<conditions>
 				<condition>
-					<type>exit_time</type>
-					<exitOffset>1.000000</exitOffset>
+					<type>random_float</type>
+					<name>random_sequence</name>
+					<rangeStart>33.000000</rangeStart>
+					<rangeEnd>66.000000</rangeEnd>
 				</condition>
 			</conditions>
 		</transition>
-		<uiPosition>349.000000 325.000000 0.000000</uiPosition>
+		<transition>
+			<to>Walks_around_stops_V2</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>random_float</type>
+					<name>random_sequence</name>
+					<rangeStart>66.000000</rangeStart>
+					<rangeEnd>100.000000</rangeEnd>
+				</condition>
+			</conditions>
+		</transition>
+		<transition>
+			<to>Stroking</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>random_float</type>
+					<name>random_sequence</name>
+					<rangeStart>0.000000</rangeStart>
+					<rangeEnd>33.000000</rangeEnd>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>122.000000 -184.500000 0.000000</uiPosition>
 	</node>
 	<node>
-		<name>walks_banner</name>
+		<name>0-6</name>
+		<type>sleep</type>
+		<time>1.000000 1.000000</time>
+		<transition>
+			<to>Walks_around_stops_banner</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>random_float</type>
+					<name>random_sequence</name>
+					<rangeStart>0.000000</rangeStart>
+					<rangeEnd>50.000000</rangeEnd>
+				</condition>
+			</conditions>
+		</transition>
+		<transition>
+			<to>Measures_tank</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>random_float</type>
+					<name>random_sequence</name>
+					<rangeStart>50.000000</rangeStart>
+					<rangeEnd>100.000000</rangeEnd>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>-345.000000 -303.500000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>27-33</name>
+		<type>sleep</type>
+		<time>1.000000 1.000000</time>
+		<transition>
+			<to>Belissimo_V2</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions/>
+		</transition>
+		<uiPosition>471.500000 -245.500000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>Walks_around_stops_banner</name>
 		<type>sequence</type>
 		<resource>content/Hangars/h00_armory_yard/Jaginskaya/Sequence/Jaginskaya_Walks_around_stops_banner_01.seq</resource>
 		<isLoop>false</isLoop>
@@ -338,340 +341,287 @@
 				</condition>
 			</conditions>
 		</transition>
-		<uiPosition>165.000000 90.000000 0.000000</uiPosition>
+		<uiPosition>-424.000000 123.000000 0.000000</uiPosition>
 	</node>
 	<node>
-		<name>7-19</name>
-		<type>sleep</type>
-		<time>1.000000 1.000000</time>
+		<name>Measures_tank</name>
+		<type>sequence</type>
+		<resource>content/Hangars/h00_armory_yard/Jaginskaya/Sequence/Jaginskaya_Measures_tank_01.seq</resource>
+		<isLoop>false</isLoop>
+		<loop>1</loop>
 		<transition>
-			<to>measures_tank</to>
-			<blendDuration>0.000000</blendDuration>
-			<conditions>
-				<condition>
-					<type>trigger</type>
-					<name>seq_5</name>
-				</condition>
-			</conditions>
-		</transition>
-		<transition>
-			<to>racoon_scared_her</to>
-			<blendDuration>0.000000</blendDuration>
-			<conditions>
-				<condition>
-					<type>trigger</type>
-					<name>seq_1</name>
-				</condition>
-			</conditions>
-		</transition>
-		<transition>
-			<to>walks_banner</to>
-			<blendDuration>0.000000</blendDuration>
-			<conditions>
-				<condition>
-					<type>trigger</type>
-					<name>seq_3</name>
-				</condition>
-			</conditions>
-		</transition>
-		<transition>
-			<to>table_with_documents</to>
-			<blendDuration>0.000000</blendDuration>
-			<conditions>
-				<condition>
-					<type>trigger</type>
-					<name>seq_4</name>
-				</condition>
-			</conditions>
-		</transition>
-		<transition>
-			<to>idle_head</to>
-			<blendDuration>0.000000</blendDuration>
-			<conditions>
-				<condition>
-					<type>trigger</type>
-					<name>seq_2</name>
-				</condition>
-			</conditions>
-		</transition>
-		<transition>
-			<to>idle_streches</to>
-			<blendDuration>0.000000</blendDuration>
-			<conditions>
-				<condition>
-					<type>trigger</type>
-					<name>seq_6</name>
-				</condition>
-			</conditions>
-		</transition>
-		<uiPosition>41.000000 -90.500000 0.000000</uiPosition>
-	</node>
-	<node>
-		<name>20</name>
-		<type>sleep</type>
-		<time>1.000000 1.000000</time>
-		<transition>
-			<to>racoon_scared_her</to>
-			<blendDuration>0.000000</blendDuration>
-			<conditions>
-				<condition>
-					<type>trigger</type>
-					<name>seq_1</name>
-				</condition>
-			</conditions>
-		</transition>
-		<transition>
-			<to>walks_banner</to>
-			<blendDuration>0.000000</blendDuration>
-			<conditions>
-				<condition>
-					<type>trigger</type>
-					<name>seq_3</name>
-				</condition>
-			</conditions>
-		</transition>
-		<transition>
-			<to>table_with_documents</to>
-			<blendDuration>0.000000</blendDuration>
-			<conditions>
-				<condition>
-					<type>trigger</type>
-					<name>seq_4</name>
-				</condition>
-			</conditions>
-		</transition>
-		<transition>
-			<to>tells_racoon_about_weapon</to>
-			<blendDuration>0.000000</blendDuration>
-			<conditions>
-				<condition>
-					<type>trigger</type>
-					<name>seq_2</name>
-				</condition>
-			</conditions>
-		</transition>
-		<transition>
-			<to>belissimo</to>
-			<blendDuration>0.000000</blendDuration>
-			<conditions>
-				<condition>
-					<type>trigger</type>
-					<name>seq_6</name>
-				</condition>
-			</conditions>
-		</transition>
-		<transition>
-			<to>idle_standing_shifting</to>
-			<blendDuration>0.000000</blendDuration>
-			<conditions>
-				<condition>
-					<type>trigger</type>
-					<name>seq_5</name>
-				</condition>
-			</conditions>
-		</transition>
-		<uiPosition>227.000000 -89.500000 0.000000</uiPosition>
-	</node>
-	<node>
-		<name>23-25</name>
-		<type>sleep</type>
-		<time>1.000000 1.000000</time>
-		<transition>
-			<to>walks_banner</to>
-			<blendDuration>0.000000</blendDuration>
-			<conditions>
-				<condition>
-					<type>trigger</type>
-					<name>seq_3</name>
-				</condition>
-			</conditions>
-		</transition>
-		<transition>
-			<to>table_with_documents</to>
-			<blendDuration>0.000000</blendDuration>
-			<conditions>
-				<condition>
-					<type>trigger</type>
-					<name>seq_4</name>
-				</condition>
-			</conditions>
-		</transition>
-		<transition>
-			<to>racoon_scared_her</to>
-			<blendDuration>0.000000</blendDuration>
-			<conditions>
-				<condition>
-					<type>trigger</type>
-					<name>seq_1</name>
-				</condition>
-			</conditions>
-		</transition>
-		<transition>
-			<to>tells_racoon_about_weapon</to>
-			<blendDuration>0.000000</blendDuration>
-			<conditions>
-				<condition>
-					<type>trigger</type>
-					<name>seq_2</name>
-				</condition>
-			</conditions>
-		</transition>
-		<transition>
-			<to>belissimo</to>
-			<blendDuration>0.000000</blendDuration>
-			<conditions>
-				<condition>
-					<type>trigger</type>
-					<name>seq_6</name>
-				</condition>
-			</conditions>
-		</transition>
-		<transition>
-			<to>idle_start</to>
-			<blendDuration>0.000000</blendDuration>
-			<conditions>
-				<condition>
-					<type>trigger</type>
-					<name>seq_5</name>
-				</condition>
-			</conditions>
-		</transition>
-		<uiPosition>596.500000 -92.500000 0.000000</uiPosition>
-	</node>
-	<node>
-		<name>21-22</name>
-		<type>sleep</type>
-		<time>1.000000 1.000000</time>
-		<transition>
-			<to>walks_banner</to>
-			<blendDuration>0.000000</blendDuration>
-			<conditions>
-				<condition>
-					<type>trigger</type>
-					<name>seq_3</name>
-				</condition>
-			</conditions>
-		</transition>
-		<transition>
-			<to>table_with_documents</to>
-			<blendDuration>0.000000</blendDuration>
-			<conditions>
-				<condition>
-					<type>trigger</type>
-					<name>seq_4</name>
-				</condition>
-			</conditions>
-		</transition>
-		<transition>
-			<to>idle_start</to>
+			<to>idle</to>
 			<blendDuration>0.000000</blendDuration>
 			<conditions>
 				<condition>
 					<type>exit_time</type>
 					<exitOffset>1.000000</exitOffset>
 				</condition>
-				<condition>
-					<type>trigger</type>
-					<name>seq_1</name>
-				</condition>
 			</conditions>
 		</transition>
-		<transition>
-			<to>idle_head</to>
-			<blendDuration>0.000000</blendDuration>
-			<conditions>
-				<condition>
-					<type>trigger</type>
-					<name>seq_2</name>
-				</condition>
-			</conditions>
-		</transition>
-		<transition>
-			<to>idle_streches</to>
-			<blendDuration>0.000000</blendDuration>
-			<conditions>
-				<condition>
-					<type>trigger</type>
-					<name>seq_5</name>
-				</condition>
-			</conditions>
-		</transition>
-		<transition>
-			<to>idle_standing_shifting</to>
-			<blendDuration>0.000000</blendDuration>
-			<conditions>
-				<condition>
-					<type>trigger</type>
-					<name>seq_6</name>
-				</condition>
-			</conditions>
-		</transition>
-		<uiPosition>410.000000 -93.500000 0.000000</uiPosition>
+		<uiPosition>-242.500000 129.000000 0.000000</uiPosition>
 	</node>
 	<node>
-		<name>1-6</name>
+		<name>Table_with_document</name>
+		<type>sequence</type>
+		<resource>content/Hangars/h00_armory_yard/Jaginskaya/Sequence/Jaginskaya_Table_with_documents_01.seq</resource>
+		<isLoop>false</isLoop>
+		<loop>1</loop>
+		<transition>
+			<to>idle</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>1.000000</exitOffset>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>134.500000 132.500000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>Walks_around_stops_V2</name>
+		<type>sequence</type>
+		<resource>content/Hangars/h00_armory_yard/Jaginskaya/Sequence/Jaginskaya_Walks_around_stops_banner_02.seq</resource>
+		<isLoop>false</isLoop>
+		<loop>1</loop>
+		<transition>
+			<to>idle</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>1.000000</exitOffset>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>321.500000 133.000000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>Belissimo</name>
+		<type>sequence</type>
+		<resource>content/Hangars/h00_armory_yard/Jaginskaya/Sequence/Jaginskaya_Belissimo_01.seq</resource>
+		<isLoop>false</isLoop>
+		<loop>1</loop>
+		<transition>
+			<to>idle</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>1.000000</exitOffset>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>505.000000 133.000000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>Belissimo_V2</name>
+		<type>sequence</type>
+		<resource>content/Hangars/h00_armory_yard/Jaginskaya/Sequence/Jaginskaya_Belissimo_02.seq</resource>
+		<isLoop>false</isLoop>
+		<loop>1</loop>
+		<transition>
+			<to>idle</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>1.000000</exitOffset>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>688.500000 133.000000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>idle_head</name>
+		<type>sequence</type>
+		<resource>content/Hangars/h00_armory_yard/Jaginskaya/Sequence/Jaginskaya_Idle_head_01.seq</resource>
+		<isLoop>false</isLoop>
+		<loop>1</loop>
+		<transition>
+			<to>repeat</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>1.000000</exitOffset>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>-147.500000 403.500000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>idle_standing</name>
+		<type>sequence</type>
+		<resource>content/Hangars/h00_armory_yard/Jaginskaya/Sequence/Jaginskaya_Standing_shifting_01.seq</resource>
+		<isLoop>false</isLoop>
+		<loop>1</loop>
+		<transition>
+			<to>repeat</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>1.000000</exitOffset>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>92.000000 405.500000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>idle_start</name>
+		<type>sequence</type>
+		<resource>content/Hangars/h00_armory_yard/Jaginskaya/Sequence/Jaginskaya_Start_01.seq</resource>
+		<isLoop>false</isLoop>
+		<loop>1</loop>
+		<transition>
+			<to>repeat</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>1.000000</exitOffset>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>355.000000 404.500000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>idle_stretches</name>
+		<type>sequence</type>
+		<resource>content/Hangars/h00_armory_yard/Jaginskaya/Sequence/Jaginskaya_Stretches_01.seq</resource>
+		<isLoop>false</isLoop>
+		<loop>1</loop>
+		<transition>
+			<to>repeat</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>1.000000</exitOffset>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>613.000000 404.000000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>repeat</name>
 		<type>sleep</type>
 		<time>1.000000 1.000000</time>
 		<transition>
-			<to>measures_tank</to>
+			<to>check_stage</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions/>
+		</transition>
+		<uiPosition>220.500000 471.000000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>34-40</name>
+		<type>sleep</type>
+		<time>1.000000 1.000000</time>
+		<transition>
+			<to>Belissimo_V2</to>
 			<blendDuration>0.000000</blendDuration>
 			<conditions>
 				<condition>
-					<type>trigger</type>
-					<name>seq_5</name>
+					<type>random_float</type>
+					<name>random_sequence</name>
+					<rangeStart>0.000000</rangeStart>
+					<rangeEnd>50.000000</rangeEnd>
 				</condition>
 			</conditions>
 		</transition>
 		<transition>
-			<to>racoon_scared_her</to>
+			<to>Stroking_V2</to>
 			<blendDuration>0.000000</blendDuration>
 			<conditions>
 				<condition>
-					<type>trigger</type>
-					<name>seq_1</name>
+					<type>random_float</type>
+					<name>random_sequence</name>
+					<rangeStart>50.000000</rangeStart>
+					<rangeEnd>100.000000</rangeEnd>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>609.500000 -288.500000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>Stroking</name>
+		<type>sequence</type>
+		<resource>content/Hangars/h00_armory_yard/Jaginskaya/Sequence/Jaginskaya_Scene_Stroking_01.seq</resource>
+		<isLoop>false</isLoop>
+		<loop>1</loop>
+		<transition>
+			<to>idle</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>1.000000</exitOffset>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>-52.500000 133.500000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>Stroking_V2</name>
+		<type>sequence</type>
+		<resource>content/Hangars/h00_armory_yard/Jaginskaya/Sequence/Jaginskaya_Scene_Stroking_02.seq</resource>
+		<isLoop>false</isLoop>
+		<loop>1</loop>
+		<transition>
+			<to>idle</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>1.000000</exitOffset>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>873.500000 134.000000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>12-19</name>
+		<type>sleep</type>
+		<time>1.000000 1.000000</time>
+		<transition>
+			<to>Measures_tank</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>random_float</type>
+					<name>random_sequence</name>
+					<rangeStart>0.000000</rangeStart>
+					<rangeEnd>33.000000</rangeEnd>
 				</condition>
 			</conditions>
 		</transition>
 		<transition>
-			<to>walks_banner</to>
+			<to>Table_with_document</to>
 			<blendDuration>0.000000</blendDuration>
 			<conditions>
 				<condition>
-					<type>trigger</type>
-					<name>seq_3</name>
+					<type>random_float</type>
+					<name>random_sequence</name>
+					<rangeStart>66.000000</rangeStart>
+					<rangeEnd>100.000000</rangeEnd>
 				</condition>
 			</conditions>
 		</transition>
 		<transition>
-			<to>idle_streches</to>
+			<to>Stroking</to>
 			<blendDuration>0.000000</blendDuration>
 			<conditions>
 				<condition>
-					<type>trigger</type>
-					<name>seq_2</name>
+					<type>random_float</type>
+					<name>random_sequence</name>
+					<rangeStart>33.000000</rangeStart>
+					<rangeEnd>66.000000</rangeEnd>
 				</condition>
 			</conditions>
 		</transition>
-		<transition>
-			<to>idle_standing_shifting</to>
-			<blendDuration>0.000000</blendDuration>
-			<conditions>
-				<condition>
-					<type>trigger</type>
-					<name>seq_4</name>
-				</condition>
-			</conditions>
-		</transition>
-		<transition>
-			<to>idle_head</to>
-			<blendDuration>0.000000</blendDuration>
-			<conditions>
-				<condition>
-					<type>trigger</type>
-					<name>seq_6</name>
-				</condition>
-			</conditions>
-		</transition>
-		<uiPosition>-145.000000 -86.500000 0.000000</uiPosition>
+		<uiPosition>-13.500000 -230.000000 0.000000</uiPosition>
 	</node>
 </root>

@@ -17,13 +17,13 @@ package net.wg.gui.lobby.vehiclePreview.bottomPanel
    public class VPBottomPanelStatTrack extends VehiclePreviewBottomPanelStatTrackMeta implements IVPBottomPanel, IStageSizeDependComponent
    {
       
-      private static const LABEL_OFFSET:int = 15;
+      private static const LABEL_OFFSET:int = 2;
       
       private static const INFO_ICON_OFFSET:int = 13;
       
       private static const SMALL_SCALE_VALUE:Number = 0.85;
       
-      private static const HOVER_ANIMATION_DURATION:int = 100;
+      private static const HOVER_ANIMATION_DURATION:int = 500;
       
       private static const SMALL_HEIGHT_VALUE:int = 80;
       
@@ -59,6 +59,7 @@ package net.wg.gui.lobby.vehiclePreview.bottomPanel
          addEventListener(MouseEvent.ROLL_OUT,this.onInfoRollOut);
          this.bgShine.mouseChildren = this.bgShine.mouseEnabled = false;
          this.labelTF.autoSize = TextFieldAutoSize.LEFT;
+         this.hover.alpha = Values.ZERO;
          App.stageSizeMgr.register(this);
       }
       

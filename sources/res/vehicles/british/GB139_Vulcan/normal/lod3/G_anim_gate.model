@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<nodefullVisual>vehicles/british/GB139_Vulcan/normal/lod2/G_anim_gate</nodefullVisual>
 	<tank>true</tank>
+	<nodefullVisual>vehicles/british/GB139_Vulcan/normal/lod3/G_anim_gate</nodefullVisual>
 	<visibilityBox>
-		<min>-0.165000 -0.265411 -4.872107</min>
-		<max>0.183225 0.268904 -4.224552</max>
+		<min>-0.230615 -0.164656 -4.986102</min>
+		<max>0.270838 0.158916 -4.206268</max>
 	</visibilityBox>
-	<extent>96.000000</extent>
 </root>

@@ -1104,18 +1104,6 @@
 	</renderSet>
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
-		<node>WD_L4_BlendBone</node>
-		<node>WD_L3_BlendBone</node>
-		<node>WD_L2_BlendBone</node>
-		<node>WD_L1_BlendBone</node>
-		<node>WD_L0_BlendBone</node>
-		<node>W_L6_BlendBone</node>
-		<node>W_L5_BlendBone</node>
-		<node>W_L4_BlendBone</node>
-		<node>W_L3_BlendBone</node>
-		<node>W_L2_BlendBone</node>
-		<node>W_L1_BlendBone</node>
-		<node>W_L0_BlendBone</node>
 		<node>V_BlendBone</node>
 		<node>Track_L0_BlendBone</node>
 		<node>Track_L2_BlendBone</node>
@@ -1124,9 +1112,21 @@
 		<node>Track_L3_BlendBone</node>
 		<node>Track_L4_BlendBone</node>
 		<node>Track_L5_BlendBone</node>
+		<node>W_L0_BlendBone</node>
+		<node>W_L1_BlendBone</node>
+		<node>W_L2_BlendBone</node>
+		<node>W_L3_BlendBone</node>
+		<node>W_L4_BlendBone</node>
+		<node>W_L5_BlendBone</node>
+		<node>W_L6_BlendBone</node>
+		<node>WD_L0_BlendBone</node>
+		<node>WD_L1_BlendBone</node>
+		<node>WD_L2_BlendBone</node>
+		<node>WD_L3_BlendBone</node>
+		<node>WD_L4_BlendBone</node>
 		<geometry>
-			<vertices>exportChassL1_Shape.vertices</vertices>
-			<primitive>exportChassL1_Shape.indices</primitive>
+			<vertices>chassis_L_Shape.vertices</vertices>
+			<primitive>chassis_L_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -1165,18 +1165,6 @@
 	</renderSet>
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
-		<node>WD_R4_BlendBone</node>
-		<node>WD_R3_BlendBone</node>
-		<node>WD_R2_BlendBone</node>
-		<node>WD_R1_BlendBone</node>
-		<node>WD_R0_BlendBone</node>
-		<node>W_R6_BlendBone</node>
-		<node>W_R5_BlendBone</node>
-		<node>W_R4_BlendBone</node>
-		<node>W_R3_BlendBone</node>
-		<node>W_R2_BlendBone</node>
-		<node>W_R1_BlendBone</node>
-		<node>W_R0_BlendBone</node>
 		<node>V_BlendBone</node>
 		<node>Track_R0_BlendBone</node>
 		<node>Track_R2_BlendBone</node>
@@ -1185,9 +1173,21 @@
 		<node>Track_R3_BlendBone</node>
 		<node>Track_R4_BlendBone</node>
 		<node>Track_R5_BlendBone</node>
+		<node>W_R0_BlendBone</node>
+		<node>W_R1_BlendBone</node>
+		<node>W_R2_BlendBone</node>
+		<node>W_R3_BlendBone</node>
+		<node>W_R4_BlendBone</node>
+		<node>W_R5_BlendBone</node>
+		<node>W_R6_BlendBone</node>
+		<node>WD_R0_BlendBone</node>
+		<node>WD_R1_BlendBone</node>
+		<node>WD_R2_BlendBone</node>
+		<node>WD_R3_BlendBone</node>
+		<node>WD_R4_BlendBone</node>
 		<geometry>
-			<vertices>exportChassR1_Shape.vertices</vertices>
-			<primitive>exportChassR1_Shape.indices</primitive>
+			<vertices>chassis_R_Shape.vertices</vertices>
+			<primitive>chassis_R_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>

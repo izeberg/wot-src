@@ -1,0 +1,1815 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>hd_bld_SU_0050_VHouseGarland</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>HP_module10</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-11.010389 3.422293 -1.736607</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_module11</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-10.942110 3.422293 1.374864</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_module12</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-5.053931 3.422293 1.374864</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_module13</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-5.015028 0.000000 -0.325391</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_module1_7</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.931378 0.000000 -0.059455</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_module2_8</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.931378 0.000000 -1.325391</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_module3_9</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-4.992201 0.000000 -1.478359</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_module4_10</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-10.686578 0.000000 -1.478359</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_module5_11</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-10.709405 0.000000 1.322758</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_module6_12</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-5.015028 0.000000 1.322758</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_module7</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.761395 3.422293 1.499223</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_module8</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>1.613704 3.422293 -1.757919</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_module9</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-5.122210 3.422293 -1.736607</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>lod0</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.000000 0.000000</row3>
+				</transform>
+				<node>
+					<identifier>d0_4_10</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>d0_5_11</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>d0_6_12</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>d1_10</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>d1_11</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>d1_12</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>d1_7</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>d1_8</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>d1_9</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>n0_1_7</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>n0_2_8</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>n0_3_9</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>n0_4_10</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>n0_5_11</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>n0_6_12</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>n1_10</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>n1_11</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>n1_12</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>n1_7</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>n1_8</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>n1_9</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>n2_1</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>n2_3</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>n2_5</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>n2_6</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>n3_1</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>n3_3</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>n3_5</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>n3_6</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>n4_2</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>n4_4</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>n4_5</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>n5_2</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>n5_5</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>n6_13</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>s_ramp0</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_ramp_0</identifier>
+					<materialKind>108</materialKind>
+					<collisionFlags>131</collisionFlags>
+				</material>
+				<groupOrigin>-5.276390 0.214364 -0.001320</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>d_wood1_12</identifier>
+					<fx>shaders/std_effects/PBS_ext_detail.fx</fx>
+					<materialKind>98</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Roof_01_AM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_detailMap
+						<Texture>content/Detail_tex/Detail_tile_wood.dds</Texture>
+					</property>
+					<property>
+						g_detailRejectTiling
+						<Vector4>1.000000 1.000000 16.000000 16.000000</Vector4>
+					</property>
+					<property>
+						g_enableTerrainBlending
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Roof_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Roof_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-4.633095 4.000672 0.367580</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				2
+				<material>
+					<identifier>d_wood1_11</identifier>
+					<fx>shaders/std_effects/PBS_ext_detail.fx</fx>
+					<materialKind>97</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Roof_01_AM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_detailMap
+						<Texture>content/Detail_tex/Detail_tile_wood.dds</Texture>
+					</property>
+					<property>
+						g_detailRejectTiling
+						<Vector4>1.000000 1.000000 16.000000 16.000000</Vector4>
+					</property>
+					<property>
+						g_enableTerrainBlending
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Roof_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Roof_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-10.898069 4.559120 1.386651</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				3
+				<material>
+					<identifier>d_wood1_10</identifier>
+					<fx>shaders/std_effects/PBS_ext_detail.fx</fx>
+					<materialKind>96</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Roof_01_AM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_detailMap
+						<Texture>content/Detail_tex/Detail_tile_wood.dds</Texture>
+					</property>
+					<property>
+						g_detailRejectTiling
+						<Vector4>1.000000 1.000000 16.000000 16.000000</Vector4>
+					</property>
+					<property>
+						g_enableTerrainBlending
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Roof_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Roof_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-10.799389 2.914701 -2.165375</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				4
+				<material>
+					<identifier>d_wood1_9</identifier>
+					<fx>shaders/std_effects/PBS_ext_detail.fx</fx>
+					<materialKind>95</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Roof_01_AM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_detailMap
+						<Texture>content/Detail_tex/Detail_tile_wood.dds</Texture>
+					</property>
+					<property>
+						g_detailRejectTiling
+						<Vector4>1.000000 1.000000 16.000000 16.000000</Vector4>
+					</property>
+					<property>
+						g_enableTerrainBlending
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Roof_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Roof_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-4.053679 4.588495 -1.491895</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				5
+				<material>
+					<identifier>d_wood1_8</identifier>
+					<fx>shaders/std_effects/PBS_ext_detail.fx</fx>
+					<materialKind>94</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Roof_01_AM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_detailMap
+						<Texture>content/Detail_tex/Detail_tile_wood.dds</Texture>
+					</property>
+					<property>
+						g_detailRejectTiling
+						<Vector4>1.000000 1.000000 16.000000 16.000000</Vector4>
+					</property>
+					<property>
+						g_enableTerrainBlending
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Roof_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Roof_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>1.355603 2.852376 -0.702150</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				6
+				<material>
+					<identifier>d_wood1_7</identifier>
+					<fx>shaders/std_effects/PBS_ext_detail.fx</fx>
+					<materialKind>93</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Roof_01_AM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_detailMap
+						<Texture>content/Detail_tex/Detail_tile_wood.dds</Texture>
+					</property>
+					<property>
+						g_detailRejectTiling
+						<Vector4>1.000000 1.000000 16.000000 16.000000</Vector4>
+					</property>
+					<property>
+						g_enableTerrainBlending
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Roof_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Roof_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.847965 2.738872 0.447819</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				7
+				<material>
+					<identifier>d_wood0_6_12</identifier>
+					<fx>shaders/std_effects/PBS_ext_detail.fx</fx>
+					<materialKind>92</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Wall_01_AM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_detailMap
+						<Texture>content/Detail_tex/Detail_tile_wood.dds</Texture>
+					</property>
+					<property>
+						g_detailRejectTiling
+						<Vector4>12.000000 1.000000 16.000000 16.000000</Vector4>
+					</property>
+					<property>
+						g_enableTerrainBlending
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Wall_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Wall_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-7.363004 0.249151 1.799122</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				8
+				<material>
+					<identifier>d_wood0_5_11</identifier>
+					<fx>shaders/std_effects/PBS_ext_detail.fx</fx>
+					<materialKind>91</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Wall_01_AM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_detailMap
+						<Texture>content/Detail_tex/Detail_tile_wood.dds</Texture>
+					</property>
+					<property>
+						g_detailRejectTiling
+						<Vector4>12.000000 1.000000 16.000000 16.000000</Vector4>
+					</property>
+					<property>
+						g_enableTerrainBlending
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Wall_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Wall_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-11.859772 0.322125 1.418417</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				9
+				<material>
+					<identifier>d_wood0_4_10</identifier>
+					<fx>shaders/std_effects/PBS_ext_detail.fx</fx>
+					<materialKind>90</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Wall_01_AM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_detailMap
+						<Texture>content/Detail_tex/Detail_tile_wood.dds</Texture>
+					</property>
+					<property>
+						g_detailRejectTiling
+						<Vector4>12.000000 1.000000 16.000000 16.000000</Vector4>
+					</property>
+					<property>
+						g_enableTerrainBlending
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Wall_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Wall_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-11.716257 0.321503 -1.956371</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				10
+				<material>
+					<identifier>d_wood0_3_9</identifier>
+					<fx>shaders/std_effects/PBS_ext_detail.fx</fx>
+					<materialKind>89</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Wall_01_AM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_detailMap
+						<Texture>content/Detail_tex/Detail_tile_wood.dds</Texture>
+					</property>
+					<property>
+						g_detailRejectTiling
+						<Vector4>12.000000 1.000000 16.000000 16.000000</Vector4>
+					</property>
+					<property>
+						g_enableTerrainBlending
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Wall_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Wall_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-4.755821 0.435044 -1.366736</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				11
+				<material>
+					<identifier>d_wood0_2_8</identifier>
+					<fx>shaders/std_effects/PBS_ext_detail.fx</fx>
+					<materialKind>88</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Wall_01_AM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_detailMap
+						<Texture>content/Detail_tex/Detail_tile_wood.dds</Texture>
+					</property>
+					<property>
+						g_detailRejectTiling
+						<Vector4>12.000000 1.000000 16.000000 16.000000</Vector4>
+					</property>
+					<property>
+						g_enableTerrainBlending
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Wall_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Wall_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.470971 0.314707 -1.761460</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				12
+				<material>
+					<identifier>d_wood0_1_7</identifier>
+					<fx>shaders/std_effects/PBS_ext_detail.fx</fx>
+					<materialKind>87</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Wall_01_AM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_detailMap
+						<Texture>content/Detail_tex/Detail_tile_wood.dds</Texture>
+					</property>
+					<property>
+						g_detailRejectTiling
+						<Vector4>12.000000 1.000000 16.000000 16.000000</Vector4>
+					</property>
+					<property>
+						g_enableTerrainBlending
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Wall_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Wall_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>2.165950 0.327162 0.473236</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				13
+				<material>
+					<identifier>n_wood6_13</identifier>
+					<fx>shaders/std_effects/glow.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>85</materialKind>
+					<property>
+						destBlend
+						<Int>2</Int>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Environment/00_Detail_Sets_NY/Detail_Set_Groundlight_04_AM.dds</Texture>
+					</property>
+					<property>
+						selfIllumination
+						<Float>50.000000</Float>
+					</property>
+				</material>
+				<groupOrigin>-2.267848 1.739798 0.021591</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				14
+				<material>
+					<identifier>n_wood5_5</identifier>
+					<fx>shaders/std_effects/glow.fx</fx>
+					<materialKind>77</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Environment/00_Detail_Sets_NY/Detail_Set_Groundlight_04_NM.dds</Texture>
+					</property>
+					<property>
+						g_tintColor
+						<Vector4>1.000000 0.988235 0.698039 1.000000</Vector4>
+					</property>
+					<property>
+						selfIllumination
+						<Float>60.400002</Float>
+					</property>
+				</material>
+				<groupOrigin>-13.288236 1.875043 1.460270</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				15
+				<material>
+					<identifier>n_wood5_2</identifier>
+					<fx>shaders/std_effects/glow.fx</fx>
+					<materialKind>74</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Environment/00_Detail_Sets_NY/Detail_Set_Groundlight_04_NM.dds</Texture>
+					</property>
+					<property>
+						g_tintColor
+						<Vector4>1.000000 0.988235 0.698039 1.000000</Vector4>
+					</property>
+					<property>
+						selfIllumination
+						<Float>60.400002</Float>
+					</property>
+				</material>
+				<groupOrigin>1.724800 3.136964 -1.707187</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				16
+				<material>
+					<identifier>n_wood4_5</identifier>
+					<fx>shaders/std_effects/glow.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>77</materialKind>
+					<property>
+						destBlend
+						<Int>2</Int>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Environment/00_Detail_Sets_NY/Detail_Set_Trees_05_04_01_AM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						selfIllumination
+						<Float>15.000000</Float>
+					</property>
+				</material>
+				<groupOrigin>-13.769549 4.544324 1.375747</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				17
+				<material>
+					<identifier>n_wood4_4</identifier>
+					<fx>shaders/std_effects/glow.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>76</materialKind>
+					<property>
+						destBlend
+						<Int>2</Int>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Environment/00_Detail_Sets_NY/Detail_Set_Trees_05_04_01_AM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						selfIllumination
+						<Float>15.000000</Float>
+					</property>
+				</material>
+				<groupOrigin>-11.132412 4.043996 -1.656564</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				18
+				<material>
+					<identifier>n_wood4_2</identifier>
+					<fx>shaders/std_effects/glow.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>74</materialKind>
+					<property>
+						destBlend
+						<Int>2</Int>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Environment/00_Detail_Sets_NY/Detail_Set_Trees_05_04_01_AM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						selfIllumination
+						<Float>20.000000</Float>
+					</property>
+				</material>
+				<groupOrigin>2.770492 2.592530 0.000000</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				19
+				<material>
+					<identifier>n_wood3_6</identifier>
+					<fx>shaders/std_effects/glow.fx</fx>
+					<materialKind>78</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						destBlend
+						<Int>2</Int>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Environment/00_Detail_Sets_NY/Detail_Set_025_NightGarland_AM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						selfIllumination
+						<Float>100.000000</Float>
+					</property>
+				</material>
+				<groupOrigin>-5.978154 2.134303 3.420063</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				20
+				<material>
+					<identifier>n_wood3_5</identifier>
+					<fx>shaders/std_effects/glow.fx</fx>
+					<materialKind>77</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						destBlend
+						<Int>2</Int>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Environment/00_Detail_Sets_NY/Detail_Set_025_NightGarland_AM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						selfIllumination
+						<Float>100.000000</Float>
+					</property>
+				</material>
+				<groupOrigin>-11.514866 3.758400 1.551350</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				21
+				<material>
+					<identifier>n_wood3_3</identifier>
+					<fx>shaders/std_effects/glow.fx</fx>
+					<materialKind>75</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						destBlend
+						<Int>2</Int>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Environment/00_Detail_Sets_NY/Detail_Set_025_NightGarland_AM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						selfIllumination
+						<Float>100.000000</Float>
+					</property>
+				</material>
+				<groupOrigin>-4.642193 2.265666 -3.414099</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				22
+				<material>
+					<identifier>n_wood3_1</identifier>
+					<fx>shaders/std_effects/glow.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>73</materialKind>
+					<property>
+						destBlend
+						<Int>2</Int>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Environment/00_Detail_Sets_NY/Detail_Set_025_NightGarland_AM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						selfIllumination
+						<Float>100.000000</Float>
+					</property>
+				</material>
+				<groupOrigin>0.609693 3.791000 1.532661</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				23
+				<material>
+					<identifier>n_wood2_6</identifier>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<materialKind>78</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						alphaReference
+						<Int>80</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Environment/00_Detail_Sets_NY/Detail_Set_025_NightGarland_AM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Environment/00_Detail_Sets_NY/Detail_Set_025_NightGarland_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Environment/00_Detail_Sets_NY/Detail_Set_025_NightGarland_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-5.994092 2.085566 3.420063</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				24
+				<material>
+					<identifier>n_wood2_5</identifier>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<materialKind>77</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						alphaReference
+						<Int>80</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Environment/00_Detail_Sets_NY/Detail_Set_025_NightGarland_AM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Environment/00_Detail_Sets_NY/Detail_Set_025_NightGarland_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Environment/00_Detail_Sets_NY/Detail_Set_025_NightGarland_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-11.511259 3.750757 1.590592</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				25
+				<material>
+					<identifier>n_wood2_3</identifier>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>75</materialKind>
+					<property>
+						alphaReference
+						<Int>80</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Environment/00_Detail_Sets_NY/Detail_Set_025_NightGarland_AM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Environment/00_Detail_Sets_NY/Detail_Set_025_NightGarland_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Environment/00_Detail_Sets_NY/Detail_Set_025_NightGarland_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-4.599401 2.257601 -3.406821</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				26
+				<material>
+					<identifier>n_wood2_1</identifier>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<materialKind>73</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						alphaReference
+						<Int>80</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Environment/00_Detail_Sets_NY/Detail_Set_025_NightGarland_AM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Environment/00_Detail_Sets_NY/Detail_Set_025_NightGarland_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Environment/00_Detail_Sets_NY/Detail_Set_025_NightGarland_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.646517 3.908722 1.571293</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				27
+				<material>
+					<identifier>n_wood1_12</identifier>
+					<fx>shaders/std_effects/PBS_ext_detail.fx</fx>
+					<materialKind>84</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Roof_01_AM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_detailMap
+						<Texture>content/Detail_tex/Detail_tile_wood.dds</Texture>
+					</property>
+					<property>
+						g_detailRejectTiling
+						<Vector4>1.000000 1.000000 16.000000 16.000000</Vector4>
+					</property>
+					<property>
+						g_enableTerrainBlending
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Roof_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Roof_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-4.833298 4.267437 0.395728</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				28
+				<material>
+					<identifier>n_wood1_11</identifier>
+					<fx>shaders/std_effects/PBS_ext_detail.fx</fx>
+					<materialKind>83</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Roof_01_AM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_detailMap
+						<Texture>content/Detail_tex/Detail_tile_wood.dds</Texture>
+					</property>
+					<property>
+						g_detailRejectTiling
+						<Vector4>1.000000 1.000000 16.000000 16.000000</Vector4>
+					</property>
+					<property>
+						g_enableTerrainBlending
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Roof_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Roof_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-10.808965 4.559120 1.398289</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				29
+				<material>
+					<identifier>n_wood1_10</identifier>
+					<fx>shaders/std_effects/PBS_ext_detail.fx</fx>
+					<materialKind>82</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Roof_01_AM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_detailMap
+						<Texture>content/Detail_tex/Detail_tile_wood.dds</Texture>
+					</property>
+					<property>
+						g_detailRejectTiling
+						<Vector4>1.000000 1.000000 16.000000 16.000000</Vector4>
+					</property>
+					<property>
+						g_enableTerrainBlending
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Roof_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Roof_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-10.425498 4.610391 -1.579328</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				30
+				<material>
+					<identifier>n_wood1_9</identifier>
+					<fx>shaders/std_effects/PBS_ext_detail.fx</fx>
+					<materialKind>81</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Roof_01_AM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_detailMap
+						<Texture>content/Detail_tex/Detail_tile_wood.dds</Texture>
+					</property>
+					<property>
+						g_detailRejectTiling
+						<Vector4>1.000000 1.000000 16.000000 16.000000</Vector4>
+					</property>
+					<property>
+						g_enableTerrainBlending
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Roof_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Roof_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-4.522408 4.600679 -1.523514</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				31
+				<material>
+					<identifier>n_wood1_8</identifier>
+					<fx>shaders/std_effects/PBS_ext_detail.fx</fx>
+					<materialKind>80</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Roof_01_AM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_detailMap
+						<Texture>content/Detail_tex/Detail_tile_wood.dds</Texture>
+					</property>
+					<property>
+						g_detailRejectTiling
+						<Vector4>1.000000 1.000000 16.000000 16.000000</Vector4>
+					</property>
+					<property>
+						g_enableTerrainBlending
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Roof_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Roof_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.871384 4.594151 -0.175604</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				32
+				<material>
+					<identifier>n_wood1_7</identifier>
+					<fx>shaders/std_effects/PBS_ext_detail.fx</fx>
+					<materialKind>79</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Roof_01_AM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_detailMap
+						<Texture>content/Detail_tex/Detail_tile_wood.dds</Texture>
+					</property>
+					<property>
+						g_detailRejectTiling
+						<Vector4>1.000000 1.000000 16.000000 16.000000</Vector4>
+					</property>
+					<property>
+						g_enableTerrainBlending
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Roof_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Roof_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.346838 4.643807 0.085760</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				33
+				<material>
+					<identifier>n_wood0_6_12</identifier>
+					<fx>shaders/std_effects/PBS_ext_detail.fx</fx>
+					<materialKind>78</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Wall_01_AM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_detailInfluences
+						<Vector4>0.350000 0.350000 0.350000 1.000000</Vector4>
+					</property>
+					<property>
+						g_detailMap
+						<Texture>content/Detail_tex/Detail_tile_wood.dds</Texture>
+					</property>
+					<property>
+						g_detailRejectTiling
+						<Vector4>1.000000 1.000000 8.000000 8.000000</Vector4>
+					</property>
+					<property>
+						g_enableTerrainBlending
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Wall_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Wall_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-5.294166 1.258067 1.611425</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				34
+				<material>
+					<identifier>n_wood0_5_11</identifier>
+					<fx>shaders/std_effects/PBS_ext_detail.fx</fx>
+					<materialKind>77</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Wall_01_AM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_detailInfluences
+						<Vector4>0.350000 0.350000 0.350000 1.000000</Vector4>
+					</property>
+					<property>
+						g_detailMap
+						<Texture>content/Detail_tex/Detail_tile_wood.dds</Texture>
+					</property>
+					<property>
+						g_detailRejectTiling
+						<Vector4>1.000000 1.000000 8.000000 8.000000</Vector4>
+					</property>
+					<property>
+						g_enableTerrainBlending
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Wall_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Wall_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-10.894707 1.261559 1.371635</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				35
+				<material>
+					<identifier>n_wood0_4_10</identifier>
+					<fx>shaders/std_effects/PBS_ext_detail.fx</fx>
+					<materialKind>76</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Wall_01_AM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_detailInfluences
+						<Vector4>0.350000 0.350000 0.350000 1.000000</Vector4>
+					</property>
+					<property>
+						g_detailMap
+						<Texture>content/Detail_tex/Detail_tile_wood.dds</Texture>
+					</property>
+					<property>
+						g_detailRejectTiling
+						<Vector4>1.000000 1.000000 8.000000 8.000000</Vector4>
+					</property>
+					<property>
+						g_enableTerrainBlending
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Wall_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Wall_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-10.372027 1.262371 -1.436338</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				36
+				<material>
+					<identifier>n_wood0_3_9</identifier>
+					<fx>shaders/std_effects/PBS_ext_detail.fx</fx>
+					<materialKind>75</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Wall_01_AM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_detailInfluences
+						<Vector4>0.350000 0.350000 0.350000 1.000000</Vector4>
+					</property>
+					<property>
+						g_detailMap
+						<Texture>content/Detail_tex/Detail_tile_wood.dds</Texture>
+					</property>
+					<property>
+						g_detailRejectTiling
+						<Vector4>1.000000 1.000000 8.000000 8.000000</Vector4>
+					</property>
+					<property>
+						g_enableTerrainBlending
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Wall_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Wall_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-4.195180 3.145788 -1.232482</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				37
+				<material>
+					<identifier>n_wood0_2_8</identifier>
+					<fx>shaders/std_effects/PBS_ext_detail.fx</fx>
+					<materialKind>74</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Wall_01_AM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_detailInfluences
+						<Vector4>0.350000 0.350000 0.350000 1.000000</Vector4>
+					</property>
+					<property>
+						g_detailMap
+						<Texture>content/Detail_tex/Detail_tile_wood.dds</Texture>
+					</property>
+					<property>
+						g_detailRejectTiling
+						<Vector4>1.000000 1.000000 8.000000 8.000000</Vector4>
+					</property>
+					<property>
+						g_enableTerrainBlending
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Wall_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Wall_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.773036 1.261692 -0.573395</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				38
+				<material>
+					<identifier>n_wood0_1_7</identifier>
+					<fx>shaders/std_effects/PBS_ext_detail.fx</fx>
+					<materialKind>73</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Wall_01_AM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_detailInfluences
+						<Vector4>0.350000 0.350000 0.350000 1.000000</Vector4>
+					</property>
+					<property>
+						g_detailMap
+						<Texture>content/Detail_tex/Detail_tile_wood.dds</Texture>
+					</property>
+					<property>
+						g_detailRejectTiling
+						<Vector4>1.000000 1.000000 8.000000 8.000000</Vector4>
+					</property>
+					<property>
+						g_enableTerrainBlending
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Wall_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Buildings/hd_bld_SU_201_VHouse/hd_bld_SU_004_Constructor_01_Wall_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.349778 3.145784 1.286920</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-16.360336 -0.827129 -4.860245</min>
+		<max>6.003542 6.816094 4.857605</max>
+	</boundingBox>
+	<customBsp>true</customBsp>
+	<geometrySize>337738</geometrySize>
+	<minUVDensity>0.000199</minUVDensity>
+</root>

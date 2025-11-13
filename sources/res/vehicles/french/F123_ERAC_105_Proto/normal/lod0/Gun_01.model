@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/french/F123_ERAC_105_Proto/normal/lod1/Gun_01</parent>
+	<tank>true</tank>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/french/F123_ERAC_105_Proto/normal/lod0/Gun_01</nodefullVisual>
+	<visibilityBox>
+		<min>-0.170000 -0.146190 0.044150</min>
+		<max>0.526381 0.219895 3.385444</max>
+	</visibilityBox>
+</root>

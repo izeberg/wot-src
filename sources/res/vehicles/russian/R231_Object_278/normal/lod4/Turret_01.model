@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/russian/R231_Object_278/normal/lod4/Turret_01</nodefullVisual>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.441623 -0.141172 -1.791305</min>
+		<max>
+			1.459677 1.30844 1.594776
+			<!--BW_String-->
+		</max>
+	</visibilityBox>
+</root>

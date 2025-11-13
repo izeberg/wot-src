@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>30.000000</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Steam_1</name>
+		<type>particle</type>
+		<resource>particles/Tank/abilities/GB140_Champion/GB140_steam.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.007248 0.100165 6.914436</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>90.000000 90.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>3.000000</value>
+				<inTangent>0.000000</inTangent>
+				<outTangent>-0.111111</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.500000</startTime>
+				<value>1.000000</value>
+				<inTangent>-0.362637</inTangent>
+				<outTangent>-0.362637</outTangent>
+				<tangentMode>1</tangentMode>
+			</frame>
+			<frame>
+				<startTime>10.000001</startTime>
+				<value>0.000000</value>
+				<inTangent>-0.153846</inTangent>
+				<outTangent>-0.999999</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>startSpeed</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>2.000000</value>
+				<inTangent>-0.500000</inTangent>
+				<outTangent>-0.333333</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.000000</startTime>
+				<value>1.000000</value>
+				<inTangent>-0.333333</inTangent>
+				<outTangent>-0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Steam_2</name>
+		<type>particle</type>
+		<resource>particles/Tank/abilities/GB140_Champion/GB140_steam.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.094543 -0.082504 6.907349</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>210.000000 -90.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>3.000000</value>
+				<inTangent>-0.100000</inTangent>
+				<outTangent>-0.111111</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.500000</startTime>
+				<value>1.000000</value>
+				<inTangent>-0.571429</inTangent>
+				<outTangent>-0.153846</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>10.000001</startTime>
+				<value>0.000000</value>
+				<inTangent>-0.153846</inTangent>
+				<outTangent>-0.999999</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>startSpeed</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>2.000000</value>
+				<inTangent>-0.500000</inTangent>
+				<outTangent>-0.333333</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.000000</startTime>
+				<value>1.000000</value>
+				<inTangent>-0.333333</inTangent>
+				<outTangent>-0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Steam_3</name>
+		<type>particle</type>
+		<resource>particles/Tank/abilities/GB140_Champion/GB140_steam.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.065155 -0.080242 6.898582</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-150.000000 90.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>3.000000</value>
+				<inTangent>-0.100000</inTangent>
+				<outTangent>-0.111111</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.500000</startTime>
+				<value>1.000000</value>
+				<inTangent>-0.571429</inTangent>
+				<outTangent>-0.153846</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>10.000001</startTime>
+				<value>0.000000</value>
+				<inTangent>-0.153846</inTangent>
+				<outTangent>-0.999999</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>startSpeed</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>2.000000</value>
+				<inTangent>-0.500000</inTangent>
+				<outTangent>-0.333333</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.000000</startTime>
+				<value>1.000000</value>
+				<inTangent>-0.333333</inTangent>
+				<outTangent>-0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Sound 0</name>
+		<type>sound</type>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>30.000000</duration>
+				<value>Root|</value>
+			</frame>
+		</track>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 6.872070</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>Sound</name>
+			<type>sound</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>30.000000</duration>
+				<sequenceSound>ability_champion_steam_shot</sequenceSound>
+				<type>play_till_end</type>
+				<fade>0.000000</fade>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0</identifier>
+					<fx>shaders/std_effects/glow.fx</fx>
+					<materialKind>112</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Environment/hd_env_UNI_0016_SnowflakeGlow/hd_env_UNI_0016_SnowflakeGlow_AM.dds</Texture>
+					</property>
+					<property>
+						g_tintColor
+						<Vector4>0.560784 0.533333 0.462745 1.000000</Vector4>
+					</property>
+					<property>
+						selfIllumination
+						<Float>80.000000</Float>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+				</material>
+				<groupOrigin>0.000810 0.246521 0.003915</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-0.003396 -0.004156 -0.222077</min>
+		<max>0.005017 0.491594 0.229906</max>
+	</boundingBox>
+	<customBsp>true</customBsp>
+	<geometrySize>2584</geometrySize>
+	<minUVDensity>14.359786</minUVDensity>
+</root>

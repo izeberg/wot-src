@@ -29,7 +29,7 @@
 				<exports>vse tooltip</exports>
 			</radius>
 			<heal>
-				20 50 120
+				20 40 60
 				<exports>vse</exports>
 			</heal>
 			<secondaryHealDebuff>
@@ -64,7 +64,7 @@
 				<exports>vse</exports>
 			</cooldownSeconds>
 			<duration>
-				20
+				15
 				<exports>vse tooltip</exports>
 			</duration>
 			<crewBuff>
@@ -252,7 +252,7 @@
 				<exports>vse tooltip</exports>
 			</delay>
 			<radius>
-				10 12 15
+				8 10 12
 				<exports>vse tooltip</exports>
 			</radius>
 			<damage>
@@ -311,7 +311,7 @@
 				<exports>vse</exports>
 			</cooldownSeconds>
 			<gunReloadTimeBuff>
-				0.65 0.45 0.25
+				0.65 0.4 0.2
 				<!--BW_String-->
 				<exports>vse</exports>
 			</gunReloadTimeBuff>
@@ -334,7 +334,7 @@
 				</server>
 			</visualScript>
 			<cooldownSeconds>
-				10
+				5
 				<exports>vse</exports>
 			</cooldownSeconds>
 			<duration>
@@ -356,7 +356,7 @@
 				<exports>vse tooltip</exports>
 			</repairBuff>
 			<gunReloadBoost>
-				6.0
+				7.0
 				<!--BW_String-->
 				<exports>vse tooltip</exports>
 			</gunReloadBoost>
@@ -392,7 +392,7 @@
 				<exports>vse</exports>
 			</shotDispersionFactors>
 			<slvl>
-				0.7 0.85 0.97
+				1 1.2 1.5
 				<!--BW_String-->
 				<exports>vse</exports>
 			</slvl>
@@ -424,7 +424,7 @@
 				<exports>vse</exports>
 			</cooldownSeconds>
 			<duration>
-				10 15 20
+				10 15 25
 				<exports>vse tooltip</exports>
 			</duration>
 			<dispersionFactor>
@@ -468,7 +468,7 @@
 				<exports>vse tooltip</exports>
 			</duration>
 			<healDuration>
-				6
+				5
 				<exports>vse tooltip</exports>
 			</healDuration>
 			<baseHeal>

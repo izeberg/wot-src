@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>s1Shape.vertices</vertices>
+			<stream>s1Shape.colour</stream>
+			<primitive>s1Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd1</identifier>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<materialKind>108</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						alphaReference
+						<Int>55</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h03_mt_ny_2026/environment/h03_NY26_Oak_00_Leaves_AM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_vertexAnimationParams
+						<Vector4>0.000000 0.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_vertexColorMode
+						<Int>1</Int>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/h03_mt_ny_2026/environment/h03_NY26_Oak_00_Leaves_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/h03_mt_ny_2026/environment/h03_NY26_Oak_00_Leaves_ANM.dds</Texture>
+					</property>
+					<property>
+						g_enableTransmission
+						<Bool>true</Bool>
+					</property>
+				</material>
+				<groupOrigin>-0.271833 17.201025 1.968334</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>s2Shape.vertices</vertices>
+			<primitive>s2Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd2</identifier>
+					<fx>shaders/std_effects/glow.fx</fx>
+					<materialKind>112</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						alphaReference
+						<Int>57</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h03_mt_ny_2026/customization/Illumination/NY26_Lights_Atlas_AM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						selfIllumination
+						<Float>23.700001</Float>
+					</property>
+				</material>
+				<groupOrigin>1.094164 7.129953 1.953316</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>s0Shape.vertices</vertices>
+			<stream>s0Shape.uv2</stream>
+			<primitive>s0Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0</identifier>
+					<fx>shaders/std_effects/PBS_tiled.fx</fx>
+					<materialKind>108</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						albedoHeightTile0
+						<Texture>content/Hangars/h03_mt_ny_2026/environment/buildings/tiles/Bark_Pine_01_512_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile1
+						<Texture>content/Hangars/h03_mt_ny_2026/environment/buildings/tiles/Snow_01_512_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile2
+						<Texture>content/Hangars/h03_mt_ny_2026/environment/buildings/tiles/Wood_Universal_Crash_Horizontal_02_512_AM.dds</Texture>
+					</property>
+					<property>
+						blendMask
+						<Texture>content/Hangars/h03_mt_ny_2026/environment/h03_NY26_Oak_00_blend.png</Texture>
+					</property>
+					<property>
+						colorTex
+						<Texture>content/Hangars/h03_mt_ny_2026/environment/h03_NY26_Oak_00_GCM.dds</Texture>
+					</property>
+					<property>
+						dirtMap
+						<Texture>content/Buildings/00_Tiles/dds/Bark_Pine_01_512_AM.dds</Texture>
+					</property>
+					<property>
+						g_enableTerrainBlending
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicAOTile0
+						<Texture>content/Hangars/h03_mt_ny_2026/environment/buildings/tiles/Bark_Pine_01_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile1
+						<Texture>content/Hangars/h03_mt_ny_2026/environment/buildings/tiles/Snow_01_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile2
+						<Texture>content/Hangars/h03_mt_ny_2026/environment/buildings/tiles/Wood_Universal_Crash_Horizontal_02_512_MAO.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile0
+						<Texture>content/Hangars/h03_mt_ny_2026/environment/buildings/tiles/Bark_Pine_01_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile1
+						<Texture>content/Hangars/h03_mt_ny_2026/environment/buildings/tiles/Snow_01_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile2
+						<Texture>content/Hangars/h03_mt_ny_2026/environment/buildings/tiles/Wood_Universal_Crash_Horizontal_02_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						g_dirtColorParams
+						<Vector4>0.100000 0.380000 0.000000 1.000000</Vector4>
+					</property>
+				</material>
+				<groupOrigin>-0.813711 13.470647 1.660647</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-18.997026 -1.064492 -15.790189</min>
+		<max>18.453360 30.674578 19.726856</max>
+	</boundingBox>
+	<customBsp>true</customBsp>
+	<geometrySize>1034828</geometrySize>
+	<minUVDensity>0.003062</minUVDensity>
+</root>

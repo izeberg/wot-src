@@ -42,20 +42,17 @@ package net.wg.gui.components.battleDamagePanel.components
       
       private var _atlasName:String = "";
       
-      private var _atlasIconPathModificator:String = "";
-      
       private var _isShortMode:Boolean = false;
       
       private var _disposed:Boolean = false;
       
-      public function DamageLogDetailsController(param1:DisplayObjectContainer, param2:Boolean, param3:String, param4:String = "")
+      public function DamageLogDetailsController(param1:DisplayObjectContainer, param2:Boolean, param3:String)
       {
          this._poolRenderers = new Vector.<DamageLogRenderer>();
          this._damageLogDetailsImages = new Sprite();
          this._damageLogDetailsText = new Sprite();
          super();
          this._atlasName = param3;
-         this._atlasIconPathModificator = param4;
          this._isTop = param2;
          this._rendererClass = App.utils.classFactory.getClass(LOG_RENDERER_ALIAS);
          param1.addChild(this._damageLogDetailsImages);
@@ -242,7 +239,7 @@ package net.wg.gui.components.battleDamagePanel.components
             this._damageLogDetailsImages.addChild(_loc3_);
             this._lastYValue += -BattleDamageLogConstants.RENDER_STEP_SIZE;
             _loc5_ = new this._rendererClass();
-            _loc5_.init(_loc3_,!this._isTop || this._isCroppedBG,this._isTop,this._atlasName,this._atlasIconPathModificator);
+            _loc5_.init(_loc3_,!this._isTop || this._isCroppedBG,this._isTop,this._atlasName);
             _loc3_.y += this._lastYValue;
             _loc5_.y += this._lastYValue;
             _loc5_.visible = false;

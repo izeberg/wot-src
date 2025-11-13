@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodelessVisual>vehicles/russian/R236_KV_4_Zeitz/crash/lod3/Gun_01</nodelessVisual>
+	<parent>vehicles/russian/R236_KV_4_Zeitz/crash/lod4/Gun_01</parent>
+	<tank>true</tank>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-0.280822 -0.360269 -1.167328</min>
+		<max>0.278463 0.435398 4.480760</max>
+	</visibilityBox>
+</root>

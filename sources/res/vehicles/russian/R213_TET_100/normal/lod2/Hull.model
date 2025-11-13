@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/russian/R213_TET_100/normal/lod2/Hull</nodefullVisual>
+	<parent>vehicles/russian/R213_TET_100/normal/lod3/Hull</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-2.038005 -0.932445 -5.242363</min>
+		<max>2.037246 1.007724 5.266859</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

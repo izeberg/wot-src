@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<htmlTemplatesSimple/>
+	<htmlTemplates>
+		<ArmoryYardMainSysMessage>
+			<type>grey</type>
+			<icon>ArmoryCoinIcon</icon>
+			<priority>medium</priority>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;%(header)s&lt;/font&gt;&lt;br/&gt;%(text)s</message>
+			<buttonsLayout>
+				<button>
+					<type>submit</type>
+					<label>_(#messenger:serviceChannelMessages/armoryYard/button/main)</label>
+					<action>openArmoryYardMain</action>
+				</button>
+			</buttonsLayout>
+		</ArmoryYardMainSysMessage>
+		<ArmoryYardPostprogressionSysMessage>
+			<type>grey</type>
+			<icon>ArmoryCoinIcon</icon>
+			<priority>medium</priority>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;%(header)s&lt;/font&gt;&lt;br/&gt;%(text)s</message>
+			<buttonsLayout>
+				<button>
+					<type>submit</type>
+					<label>_(#messenger:serviceChannelMessages/armoryYard/button/postProgression)</label>
+					<action>openArmoryYardBuy</action>
+				</button>
+			</buttonsLayout>
+		</ArmoryYardPostprogressionSysMessage>
+		<ArmoryYardOpenChapterSysMessage>
+			<type>grey</type>
+			<icon>ArmoryCoinIcon</icon>
+			<priority>medium</priority>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;%(header)s&lt;/font&gt;&lt;br/&gt;%(text)s</message>
+			<buttonsLayout>
+				<button>
+					<type>submit</type>
+					<label>_(#messenger:serviceChannelMessages/armoryYard/button/quest)</label>
+					<action>openArmoryYardQuest</action>
+				</button>
+			</buttonsLayout>
+		</ArmoryYardOpenChapterSysMessage>
+		<ArmoryYardBundlePurchaseSysMessage>
+			<type>grey</type>
+			<icon>ArmoryCoinIcon</icon>
+			<bgIcon>BgAYBundlePurchase</bgIcon>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;%(header)s&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;%(text)s</message>
+		</ArmoryYardBundlePurchaseSysMessage>
+		<ArmoryYardRerollTransactionForGoldSysMessage>
+			<type>yellow</type>
+			<icon>GoldIcon</icon>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;%(header)s&lt;/font&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;%(text)s&lt;/font&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;%(paymentText)s&lt;/font&gt;</message>
+		</ArmoryYardRerollTransactionForGoldSysMessage>
+		<ArmoryYardRerollTransactionForCrystalSysMessage>
+			<type>yellow</type>
+			<icon>CrystalIcon</icon>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;%(header)s&lt;/font&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;%(text)s&lt;/font&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;%(paymentText)s&lt;/font&gt;</message>
+		</ArmoryYardRerollTransactionForCrystalSysMessage>
+		<ArmoryYardRerollTransactionForFreeRerollSysMessage>
+			<type>yellow</type>
+			<icon>ArmoryCoinIcon</icon>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;%(header)s&lt;/font&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;%(text)s&lt;/font&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;%(paymentText)s&lt;/font&gt;</message>
+		</ArmoryYardRerollTransactionForFreeRerollSysMessage>
+		<ArmoryYardRerollNotCompletedSysMessage>
+			<type>grey</type>
+			<icon>ArmoryCoinIcon</icon>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;%(header)s&lt;/font&gt;&lt;br/&gt;%(text)s</message>
+			<buttonsLayout>
+				<button>
+					<type>submit</type>
+					<label>_(#armory_yard.armory_yard:notifications/task/replacementNotCompleted/button)</label>
+					<action>openArmoryYardRerollQuest</action>
+				</button>
+			</buttonsLayout>
+		</ArmoryYardRerollNotCompletedSysMessage>
+		<ArmoryYardReceivingAwardsSysMessage>
+			<type>yellow</type>
+			<icon>ArmoryCoinIcon</icon>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#armory_yard.armory_yard:notifications/title)&lt;/font&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;%(text)s&lt;/font&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;%(rewards)s&lt;/font&gt;</message>
+		</ArmoryYardReceivingAwardsSysMessage>
+		<ArmoryYardInformationHeaderSysMessage>
+			<priority>medium</priority>
+			<type>grey</type>
+			<icon>ArmoryCoinIcon</icon>
+			<filters>
+				<filter>
+					<name>glow</name>
+					<color>EA5200</color>
+				</filter>
+				<filter>
+					<name>dropshadow</name>
+					<color>
+						000000
+						<!--BW_String-->
+					</color>
+				</filter>
+			</filters>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;%(header)s&lt;/font&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;%(text)s&lt;/font&gt;</message>
+		</ArmoryYardInformationHeaderSysMessage>
+		<FinancialTransactionWithArmoryCoinsHeaderSysMessage>
+			<type>yellow</type>
+			<icon>ArmoryFreeCoinIcon</icon>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;%(header)s&lt;/font&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;%(text)s&lt;/font&gt;</message>
+		</FinancialTransactionWithArmoryCoinsHeaderSysMessage>
+		<FinancialTransactionWithGoldAndArmoryCoinsHeaderSysMessage>
+			<type>yellow</type>
+			<icon>GoldIcon</icon>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;%(header)s&lt;/font&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;%(text)s&lt;/font&gt;</message>
+		</FinancialTransactionWithGoldAndArmoryCoinsHeaderSysMessage>
+		<FinancialTransactionBuyAYCoinsSysMessage>
+			<type>yellow</type>
+			<icon>ArmoryCoinIcon</icon>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;%(header)s&lt;/font&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;%(text)s&lt;/font&gt;</message>
+		</FinancialTransactionBuyAYCoinsSysMessage>
+		<FinancialTransactionBuyAYFreeCoinsSysMessage>
+			<type>yellow</type>
+			<icon>ArmoryFreeCoinIcon</icon>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;%(header)s&lt;/font&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;%(text)s&lt;/font&gt;</message>
+		</FinancialTransactionBuyAYFreeCoinsSysMessage>
+	</htmlTemplates>
+</root>

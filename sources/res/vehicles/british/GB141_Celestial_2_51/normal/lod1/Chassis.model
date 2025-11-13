@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/british/GB141_Celestial_2_51/normal/lod2/Chassis</parent>
+	<tank>true</tank>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.696167 -0.000000 -3.497878</min>
+		<max>1.696167 1.234874 3.399967</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/british/GB141_Celestial_2_51/normal/lod1/Chassis</nodefullVisual>
+</root>

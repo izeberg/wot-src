@@ -118,9 +118,9 @@ class ConsumablesPanelMeta(BaseDAAPIComponent):
         if self._isDAAPIInited():
             return self.flashObject.as_updateEntityState(entityName, entityState)
 
-    def as_setPanelSettingsS(self, settingsId):
+    def as_setPanelSettingsS(self, settingsId, isExtendedAnim):
         if self._isDAAPIInited():
-            return self.flashObject.as_setPanelSettings(settingsId)
+            return self.flashObject.as_setPanelSettings(settingsId, isExtendedAnim)
 
     def as_setSPGShotResultS(self, shellIdx, shotResult):
         if self._isDAAPIInited():
@@ -129,6 +129,14 @@ class ConsumablesPanelMeta(BaseDAAPIComponent):
     def as_addAbilityEquipmentSlotS(self, idx, keyCode, sfKeyCode, quantity, timeRemaining, reloadingTime, iconPath, tooltipText, animation):
         if self._isDAAPIInited():
             return self.flashObject.as_addAbilityEquipmentSlot(idx, keyCode, sfKeyCode, quantity, timeRemaining, reloadingTime, iconPath, tooltipText, animation)
+
+    def as_showAbilityModifierS(self, value, immediately=False):
+        if self._isDAAPIInited():
+            return self.flashObject.as_showAbilityModifier(value, immediately)
+
+    def as_hideAbilityModifierS(self, immediately=False):
+        if self._isDAAPIInited():
+            return self.flashObject.as_hideAbilityModifier(immediately)
 
     def as_addRoleSkillSlotS(self, idx, keyCode, sfKeyCode, quantity, timeRemaining, reloadingTime, iconPath, tooltipText, animation):
         if self._isDAAPIInited():

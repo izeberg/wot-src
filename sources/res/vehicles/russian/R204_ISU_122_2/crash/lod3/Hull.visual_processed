@@ -86,7 +86,6 @@
 						colorIdMap
 						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
-					<sortOrder>0</sortOrder>
 				</material>
 				<groupOrigin>0.001001 0.671860 -0.172987</groupOrigin>
 			</primitiveGroup>
@@ -103,11 +102,11 @@
 					</property>
 					<property>
 						diffuseMap
-						<Texture>vehicles/russian/R204_ISU_122_2/ISU_122-2_equipment_AM.dds</Texture>
+						<Texture>vehicles/russian/R204_ISU_122_2/ISU_122_2_equipment_AM.dds</Texture>
 					</property>
 					<property>
 						excludeMaskAndAOMap
-						<Texture>vehicles/russian/R204_ISU_122_2/ISU_122-2_equipment_AO.dds</Texture>
+						<Texture>vehicles/russian/R204_ISU_122_2/ISU_122_2_equipment_AO.dds</Texture>
 					</property>
 					<property>
 						g_crashUVTiling
@@ -115,17 +114,16 @@
 					</property>
 					<property>
 						metallicGlossMap
-						<Texture>vehicles/russian/R204_ISU_122_2/ISU_122-2_equipment_GMM.dds</Texture>
+						<Texture>vehicles/russian/R204_ISU_122_2/ISU_122_2_equipment_GMM.dds</Texture>
 					</property>
 					<property>
 						normalMap
-						<Texture>vehicles/russian/R204_ISU_122_2/ISU_122-2_equipment_ANM.dds</Texture>
+						<Texture>vehicles/russian/R204_ISU_122_2/ISU_122_2_equipment_ANM.dds</Texture>
 					</property>
 					<property>
 						colorIdMap
 						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
-					<sortOrder>0</sortOrder>
 				</material>
 				<groupOrigin>0.108048 1.220871 -0.763371</groupOrigin>
 			</primitiveGroup>
@@ -160,7 +158,6 @@
 						g_useNormalPackDXT1
 						<Bool>true</Bool>
 					</property>
-					<sortOrder>0</sortOrder>
 				</material>
 				<groupOrigin>0.007043 0.534381 0.359931</groupOrigin>
 			</primitiveGroup>
@@ -195,15 +192,14 @@
 						excludeMaskAndAOMap
 						<Texture>vehicles/russian/R204_ISU_122_2/ISU_122_2_chassis_01_AO.dds</Texture>
 					</property>
-					<sortOrder>0</sortOrder>
 				</material>
 				<groupOrigin>0.005050 -0.379855 0.065242</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-1.526111 0.064294 -3.823142</min>
-		<max>1.536211 3.103748 3.477168</max>
+		<min>-1.526111 -0.912515 -3.823142</min>
+		<max>1.536211 2.126938 3.477168</max>
 	</boundingBox>
 	<geometrySize>220410</geometrySize>
 	<minUVDensity>0.002010</minUVDensity>

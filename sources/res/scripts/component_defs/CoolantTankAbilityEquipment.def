@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<Parent>AbilityEquipment</Parent>
+	<Properties>
+		<currentPenaltyReloadTime>
+			<Type>INT32</Type>
+			<Flags>ALL_CLIENTS</Flags>
+			<DetailLevel>MY_VEHICLE</DetailLevel>
+			<Default>-1</Default>
+		</currentPenaltyReloadTime>
+	</Properties>
+</root>

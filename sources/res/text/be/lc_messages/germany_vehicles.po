@@ -158,9 +158,6 @@ msgstr "E 50 Ausf. M"
 msgid "Chassis_G00_Bomber_SH"
 msgstr "?empty?"
 
-msgid "Chassis_G00_Ratte"
-msgstr "Ratte"
-
 msgid "Chassis_G04_PzVI_Tiger_IA"
 msgstr "Pz.Kpfw. Tiger Ausf. E"
 
@@ -201,6 +198,9 @@ msgstr "Pz.Kpfw. II Ausf. D"
 
 msgid "Chassis_G109_Steyr_WT"
 msgstr "Krupp-Steyr Waffenträger"
+
+msgid "Chassis_G1105_T-55_NVA_DDR_T"
+msgstr "T 55 Test"
 
 msgid "Chassis_G110_Typ_205"
 msgstr "170 ton Panzer"
@@ -260,9 +260,6 @@ msgid "Chassis_G120_M41_90_GrandFinal"
 msgstr "leKpz M 41 90 mm"
 
 msgid "Chassis_G121_Grille_15_L63"
-msgstr "Grille 15"
-
-msgid "Chassis_G121_Grille_15_L63_ISP"
 msgstr "Grille 15"
 
 msgid "Chassis_G122_VK6501H"
@@ -367,6 +364,9 @@ msgstr "Maus"
 msgid "Chassis_G182_Mausekonig"
 msgstr "Mausekönig"
 
+msgid "Chassis_G184_EisBaer"
+msgstr "Eisbär"
+
 msgid "Chassis_G189_E100_02"
 msgstr "E 100 Feuerbär"
 
@@ -451,9 +451,6 @@ msgid "Chassis_JagdTiger_SdKfz_185"
 msgstr "Jagdtiger 8,8"
 
 msgid "Chassis_Leopard1"
-msgstr "Leopard 1"
-
-msgid "Chassis_Leopard1_ISP"
 msgstr "Leopard 1"
 
 msgid "Chassis_Lowe"
@@ -991,15 +988,6 @@ msgstr "Брандар 21"
 msgid "G00_K_bomber__HW_21_AI_short"
 msgstr "Брандар 21"
 
-msgid "G00_Ratte"
-msgstr "Ратте"
-
-msgid "G00_Ratte_descr"
-msgstr "Ратте"
-
-msgid "G00_Ratte_short"
-msgstr "Ратте"
-
 msgid "G04"
 msgstr "G04"
 
@@ -1226,6 +1214,24 @@ msgstr "Steyr WT"
 
 msgid "G109_Steyr_WT_short_special"
 msgstr "Выгодная гармата, добрая маскіроўка"
+
+msgid "G1105_T-55_NVA_DDR_T"
+msgstr "T 55 Test"
+
+msgid "G1105_T-55_NVA_DDR_T_descr"
+msgstr ""
+" \n"
+"\n"
+"Характарыстыкі машыны могуць быць зменены без кампенсацыі."
+
+msgid "G1105_T-55_NVA_DDR_T_long_special"
+msgstr "?empty?"
+
+msgid "G1105_T-55_NVA_DDR_T_short"
+msgstr "T 55 (T)"
+
+msgid "G1105_T-55_NVA_DDR_T_short_special"
+msgstr "?empty?"
 
 msgid "G110_Typ_205"
 msgstr "Mäuschen"
@@ -1575,31 +1581,6 @@ msgstr "Выдатная гармата, добрая рухомасць"
 
 msgid "G121_Grille_15_L63"
 msgstr "Grille 15"
-
-msgid "G121_Grille_15_L63_ISP"
-msgstr "Grille 15 (И)"
-
-msgid "G121_Grille_15_L63_ISP_descr"
-msgstr ""
-"Улетку 1942 г. Упраўленне ўзбраенняў сухапутных сіл Германіі заключыла "
-"дагавор з кампаніямі Krupp і Rheinmetall на стварэнне СТ-САУ на шасі танка "
-"Panther. Разглядаліся варыянты ўсталявання 128-мм гарматы K 43 і 150-мм "
-"гаўбіцы sFH 43. Праекты атрымалі абазначэнні Grille 12 і Grille 15, "
-"вылучаліся заднім размяшчэннем баявога аддзялення і адрозніваліся паміж "
-"сабой толькі тыпам артылерыйскай сістэмы. Пазней было прынята патрабаванне "
-"аб усталяванні 150-мм гарматы з даўжынёй рулі ў 63 калібру на Grille 15. "
-"Такая гармата мела магчымасць прабіцця снарадамі 200-мм брані на дыстанцыі "
-"4000 метраў. Аднак работы зацягнуліся, і праект Grille 15 так і застаўся "
-"толькі на паперы."
-
-msgid "G121_Grille_15_L63_ISP_long_special"
-msgstr "?empty?"
-
-msgid "G121_Grille_15_L63_ISP_short"
-msgstr "Grille 15 (И)"
-
-msgid "G121_Grille_15_L63_ISP_short_special"
-msgstr "?empty?"
 
 msgid "G121_Grille_15_L63_descr"
 msgstr ""
@@ -2355,9 +2336,9 @@ msgstr "StuG Maus 17 cm"
 
 msgid "G181_StuG_Maus_17cm_descr"
 msgstr ""
-".\n"
+" \n"
 "\n"
-"Характеристики машины могут быть изменены без компенсации."
+"Характарыстыкі машыны могуць быць зменены без кампенсацыі."
 
 msgid "G181_StuG_Maus_17cm_long_special"
 msgstr "?empty?"
@@ -2391,6 +2372,24 @@ msgstr "Mausekönig"
 msgid "G182_Mausekonig_short_special"
 msgstr "Выдатнае браніраванне, вялікі агнявы патэнцыял"
 
+msgid "G184_EisBaer"
+msgstr "Eisbär"
+
+msgid "G184_EisBaer_descr"
+msgstr ""
+" \n"
+"\n"
+"Характарыстыкі машыны могуць быць зменены без кампенсацыі."
+
+msgid "G184_EisBaer_long_special"
+msgstr "?empty?"
+
+msgid "G184_EisBaer_short"
+msgstr "Eisbär"
+
+msgid "G184_EisBaer_short_special"
+msgstr "?empty?"
+
 msgid "G189_E100_02"
 msgstr "Е 100 Feuerbär"
 
@@ -2423,9 +2422,9 @@ msgstr "E 75 Ausf B Doppel"
 
 msgid "G196_E_75_Ausf_B_Doppel_descr"
 msgstr ""
-".\n"
+" \n"
 "\n"
-"Характеристики машины могут быть изменены без компенсации."
+"Характарыстыкі машыны могуць быць зменены без кампенсацыі."
 
 msgid "G196_E_75_Ausf_B_Doppel_long_special"
 msgstr "?empty?"
@@ -3054,24 +3053,6 @@ msgstr "Leichttraktor verstärkteketten"
 msgid "Leopard1"
 msgstr "Leopard 1"
 
-msgid "Leopard1_ISP"
-msgstr "Leopard 1 (И)"
-
-msgid "Leopard1_ISP_descr"
-msgstr ""
-"Асноўны баявы танк ФРГ. Работы над машынай пачаліся ў 1956 г. Першыя "
-"доследныя ўзоры былі выраблены ў 1965 г. на заводзе Krauss-Maffei. Быў на "
-"ўзбраенні больш як у 10 краінах свету."
-
-msgid "Leopard1_ISP_long_special"
-msgstr "?empty?"
-
-msgid "Leopard1_ISP_short"
-msgstr "Leopard 1 (И)"
-
-msgid "Leopard1_ISP_short_special"
-msgstr "?empty?"
-
 msgid "Leopard1_bob"
 msgstr "Leopard 1 BB"
 
@@ -3142,9 +3123,6 @@ msgstr "Luchs"
 msgid "Luchsketten_Ausf_B"
 msgstr "Luchs verstärkteketten"
 
-msgid "MAN_V12Z32_44"
-msgstr "MAN V12Z32/44"
-
 msgid "MB-503"
 msgstr "Daimler-Benz MB 503"
 
@@ -3178,12 +3156,6 @@ msgstr "MTU MB 838 CaM 500"
 msgid "MB-838_CAM-500_1"
 msgstr "MTU MB 838 CaM 500A"
 
-msgid "MB-838_CAM-500_1_ISP"
-msgstr "MTU MB 838 CaM 500A"
-
-msgid "MB-838_CAM-500_1_ISP_short"
-msgstr "MB 838 CaM 500A"
-
 msgid "MB-838_CAM-500_1_short"
 msgstr "MB 838 CaM 500A"
 
@@ -3213,6 +3185,9 @@ msgstr "MB 837 F"
 
 msgid "MB_837_K"
 msgstr "MB 837 K"
+
+msgid "MB_838_CAM_500_EB"
+msgstr "MB-838 CaM-500"
 
 msgid "MB_881"
 msgstr "MB 881"
@@ -3508,9 +3483,6 @@ msgstr "Maybach Neues Projekt A"
 
 msgid "Maybach_HL_234P60_short"
 msgstr "Maybach Neues Projekt"
-
-msgid "Maybach_HL_234_ISP"
-msgstr "Maybach NL 234"
 
 msgid "Maybach_HL_234_TRM_P30"
 msgstr "Maybach HL 234 TRM P30"
@@ -4311,21 +4283,19 @@ msgstr "Pz.Kpfw. Tiger Ausf. E"
 
 msgid "PzVI_descr"
 msgstr ""
-"Распрацоўка танка пачалася ў 1937 годзе кампаніяй Henschel. Выпускаўся "
-"серыйна з 1942 года. Упершыню выкарыстоўваўся ў баявых дзеяннях пад "
-"Ленінградам. Танк удзельнічаў у баях у Тунісе, самае масавае выкарыстанне "
-"было падчас бітвы на Курскай дузе. Нягледзячы на спыненне вытворчасці ўлетку"
-" 1944 года, «Тыгр I» выкарыстоўваўся да канца вайны. Усяго было выпушчана "
-"1354 танкі."
+"Разработка танка началась в 1937 году компанией Henschel. Выпускался серийно"
+" с 1942 года. Впервые использовался в боевых действиях под Ленинградом. Танк"
+" участвовал в боях в Тунисе, самое массовое применение было в ходе сражения "
+"на Курской дуге. Несмотря на прекращение производства летом 1944 года, «Тигр"
+" I» использовался до конца войны. Всего было выпущено 1354 танка."
 
 msgid "PzVI_descr_MapsTraining_Player_HT_2"
 msgstr ""
-"Распрацоўка танка пачалася ў 1937 годзе кампаніяй Henschel. Выпускаўся "
-"серыйна з 1942 года. Упершыню выкарыстоўваўся ў баявых дзеяннях пад "
-"Ленінградам. Танк удзельнічаў у баях у Тунісе, самае масавае выкарыстанне "
-"было падчас бітвы на Курскай дузе. Нягледзячы на спыненне вытворчасці ўлетку"
-" 1944 года, «Тыгр I» выкарыстоўваўся да канца вайны. Усяго было выпушчана "
-"1354 танкі."
+"Разработка танка началась в 1937 году компанией Henschel. Выпускался серийно"
+" с 1942 года. Впервые использовался в боевых действиях под Ленинградом. Танк"
+" участвовал в боях в Тунисе, самое массовое применение было в ходе сражения "
+"на Курской дуге. Несмотря на прекращение производства летом 1944 года, «Тигр"
+" I» использовался до конца войны. Всего было выпущено 1354 танка."
 
 msgid "PzV_PzIV"
 msgstr "Pz.Kpfw. V/IV"
@@ -4377,8 +4347,8 @@ msgstr "Pz. V/IV"
 
 msgid "PzV_descr"
 msgstr ""
-"Гэты славуты танк выпускаўся са студзеня 1943 г. па красавік 1945 г. Усяго "
-"былі выпушчаны 5796 машын, не ўлічваючы васьмі шасі серыі F."
+"Гэты славуты танк выпускаўся са студзеня 1943 па красавік 1945 года. Усяго "
+"было выпушчаны 5796 машын, не ўлічваючы васьмі шасі серыі F."
 
 msgid "PzV_short"
 msgstr "Panther"
@@ -4468,6 +4438,9 @@ msgstr "Pz.Sfl. IVc"
 msgid "R113"
 msgstr "R-113"
 
+msgid "R113_T"
+msgstr "R-113 Test"
+
 msgid "R_4_T"
 msgstr "R/4-T"
 
@@ -4479,9 +4452,6 @@ msgstr "FuG 12 A-OR"
 
 msgid "Radio_VK4502P_G"
 msgstr "FuG5 W"
-
-msgid "Ratte_Radio"
-msgstr "10WSc"
 
 msgid "Renault"
 msgstr "Renault"
@@ -4538,10 +4508,10 @@ msgstr "SEM 25"
 msgid "SEM25_1"
 msgstr "SEM 25A"
 
-msgid "SEM25_1_ISP"
+msgid "SEM_25A"
 msgstr "SEM 25A"
 
-msgid "SEM_25A"
+msgid "SEM_25A_EB"
 msgstr "SEM 25A"
 
 msgid "SEM_25B"
@@ -4736,9 +4706,6 @@ msgstr "E 50 Ausf. M"
 msgid "Turret_1_G00_Bomber_SH"
 msgstr "?empty?"
 
-msgid "Turret_1_G00_Ratte"
-msgstr "Ratte"
-
 msgid "Turret_1_G04_PzVI_Tiger_IA"
 msgstr "Pz.Kpfw. Tiger Ausf. E"
 
@@ -4778,6 +4745,9 @@ msgstr "Pz.Kpfw. II Ausf. D"
 
 msgid "Turret_1_G109_Steyr_WT"
 msgstr "Krupp-Steyr Waffenträger"
+
+msgid "Turret_1_G1105_T-55_NVA_DDR_T"
+msgstr "T 55 Test"
 
 msgid "Turret_1_G110_Typ_205"
 msgstr "Mäuschen"
@@ -4828,9 +4798,6 @@ msgid "Turret_1_G120_M41_90_GrandFinal"
 msgstr "leKpz M 41 90 mm"
 
 msgid "Turret_1_G121_Grille_15_L63"
-msgstr "Grille 15"
-
-msgid "Turret_1_G121_Grille_15_L63_ISP"
 msgstr "Grille 15"
 
 msgid "Turret_1_G122_VK6501H"
@@ -4935,6 +4902,9 @@ msgstr "StuG Maus"
 msgid "Turret_1_G182_Mausekonig"
 msgstr "Mausekönig"
 
+msgid "Turret_1_G184_EisBaer"
+msgstr "Eisbär"
+
 msgid "Turret_1_G196_E_75_Ausf_B_Doppel"
 msgstr "Doppel"
 
@@ -4981,9 +4951,6 @@ msgid "Turret_1_JagdTiger_SdKfz_185"
 msgstr "8,8 cm Pak 43 Jagdtiger"
 
 msgid "Turret_1_Leopard1"
-msgstr "Leopard 1"
-
-msgid "Turret_1_Leopard1_ISP"
 msgstr "Leopard 1"
 
 msgid "Turret_1_Lowe"
@@ -5532,6 +5499,9 @@ msgstr "L.K.A. 2"
 msgid "W-55"
 msgstr "W-55"
 
+msgid "W-55_T"
+msgstr "W-55 Test"
+
 msgid "Waffentrager_E100"
 msgstr "Waffenträger auf E 100"
 
@@ -5587,14 +5557,26 @@ msgstr "Wespe"
 msgid "_100mm_3UBK4"
 msgstr "3UBK4"
 
+msgid "_100mm_3UBK4_T"
+msgstr "3UBK4 T"
+
 msgid "_100mm_BR-412D"
 msgstr "UBR-412D"
+
+msgid "_100mm_BR-412D_T"
+msgstr "UBR-412D T"
 
 msgid "_100mm_Typ_D-10T2S"
 msgstr "100 mm Panzerkanone D-10T2S L/56"
 
+msgid "_100mm_Typ_D-10T2S_T"
+msgstr "100 mm Panzerkanone D-10T2S L/56 Test"
+
 msgid "_100mm_UOF-412"
 msgstr "UOF-412"
+
+msgid "_100mm_UOF-412_T"
+msgstr "UOF-412 T"
 
 msgid "_105mmGr39H1A"
 msgstr "Gr 39 H1A"
@@ -5608,16 +5590,10 @@ msgstr "Gr 39 H1A K"
 msgid "_105mm_APCR_DM23"
 msgstr "DM23"
 
-msgid "_105mm_APCR_DM23_ISP"
-msgstr "DM23"
-
 msgid "_105mm_APDS_M_SH"
 msgstr "M 42/43"
 
 msgid "_105mm_AP_DM13"
-msgstr "DM13"
-
-msgid "_105mm_AP_DM13_ISP"
 msgstr "DM13"
 
 msgid "_105mm_AP_DM7_SH"
@@ -5630,9 +5606,6 @@ msgid "_105mm_BK_L7"
 msgstr "10,5 cm Bordkanone L7"
 
 msgid "_105mm_BK_L7A3_L51"
-msgstr "10,5 cm Bordkanone L7A3"
-
-msgid "_105mm_BK_L7A3_L51_ISP"
 msgstr "10,5 cm Bordkanone L7A3"
 
 msgid "_105mm_DM11A1"
@@ -5675,9 +5648,6 @@ msgid "_105mm_Gr_39H1H_SH"
 msgstr "Gr 39H1H"
 
 msgid "_105mm_HE_DM11"
-msgstr "DM11"
-
-msgid "_105mm_HE_DM11_ISP"
 msgstr "DM11"
 
 msgid "_105mm_K18_L52"
@@ -5834,9 +5804,6 @@ msgstr "10WSc"
 msgid "_10WSc_02"
 msgstr "10WSc F"
 
-msgid "_10WSc_ISP"
-msgstr "10WSc"
-
 msgid "_10WSc_MK"
 msgstr "10WSc"
 
@@ -5852,17 +5819,26 @@ msgstr "DM14"
 msgid "_120mm_Delta_1965"
 msgstr "120mm Delta 1965"
 
+msgid "_120mm_Delta_EB"
+msgstr "120 mm Delta"
+
 msgid "_120mm_HEAT_DM12_MZ"
 msgstr "DM12 MZ"
 
 msgid "_120mm_HE_DM10"
 msgstr "DM10"
 
+msgid "_120mm_HlGr59"
+msgstr "Pzgr 61 mod."
+
 msgid "_120mm_M820"
 msgstr "M820 AP-T"
 
 msgid "_120mm_M820_HEAT"
 msgstr "M820 HEAT"
+
+msgid "_120mm_Pzgr59"
+msgstr "Pzgr 59"
 
 msgid "_120mm_RhD"
 msgstr "120 mm RhD"
@@ -5872,6 +5848,9 @@ msgstr "SDRN1 HE"
 
 msgid "_120mm_SDRN1V"
 msgstr "SDRN1V HE"
+
+msgid "_120mm_Sprgr56"
+msgstr "Sprgr 56"
 
 msgid "_120mm_VKL65G"
 msgstr "VKL65G"
@@ -6092,9 +6071,6 @@ msgstr "15 cm Gr. 19 Stg FES"
 msgid "_150mm_Gr_HL"
 msgstr "Gr. HL"
 
-msgid "_150mm_Gr_HL_ISP"
-msgstr "Gr. HL"
-
 msgid "_150mm_KwK44_L38"
 msgstr "15 cm Kw.K. L/38"
 
@@ -6107,9 +6083,6 @@ msgstr "15 cm Kw.K. L/38"
 msgid "_150mm_Pak_L63"
 msgstr "15 cm Pak L/63"
 
-msgid "_150mm_Pak_L63_ISP"
-msgstr "15 cm Pak L/63"
-
 msgid "_150mm_PzGr39H2_SH"
 msgstr "Pzgr 39 H2"
 
@@ -6120,9 +6093,6 @@ msgid "_150mm_PzGr42_02"
 msgstr "Pzgr 42"
 
 msgid "_150mm_Pzgr"
-msgstr "Pzgr."
-
-msgid "_150mm_Pzgr_ISP"
 msgstr "Pzgr."
 
 msgid "_150mm_Rohr_L29_5"
@@ -6156,9 +6126,6 @@ msgid "_150mm_Sprg_L.erz"
 msgstr "Sprgr L erz."
 
 msgid "_150mm_Sprgr"
-msgstr "Sprgr."
-
-msgid "_150mm_Sprgr_ISP"
 msgstr "Sprgr."
 
 msgid "_150mm_sFH13_L17"
@@ -6259,18 +6226,6 @@ msgstr "Gr. 18 Stg"
 
 msgid "_210mm_Sprg18_Ausf_G"
 msgstr "Gr. 18"
-
-msgid "_283mm_PzGr_L44"
-msgstr "Pz.Gr. L/4,4"
-
-msgid "_283mm_SKC_34"
-msgstr "28 cm SKC/34"
-
-msgid "_283mm_SprGr_L44"
-msgstr "Spr.Gr. L/4,4 Bdz"
-
-msgid "_283mm_SprGr_L46"
-msgstr "Spr.Gr. L/4,6 Kz"
 
 msgid "_2x_Hanomag_Boxer"
 msgstr "2x Hanomag Boxer"

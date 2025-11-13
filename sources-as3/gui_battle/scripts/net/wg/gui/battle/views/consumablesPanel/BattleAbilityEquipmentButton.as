@@ -5,6 +5,7 @@ package net.wg.gui.battle.views.consumablesPanel
    import net.wg.data.constants.InteractiveStates;
    import net.wg.data.constants.InvalidationType;
    import net.wg.data.constants.Values;
+   import net.wg.data.constants.generated.CONSUMABLES_PANEL_SETTINGS;
    import scaleform.clik.motion.Tween;
    
    public class BattleAbilityEquipmentButton extends BattleEquipmentButton
@@ -36,6 +37,11 @@ package net.wg.gui.battle.views.consumablesPanel
       public function BattleAbilityEquipmentButton()
       {
          super();
+      }
+      
+      private static function isSpecialGlowID(param1:int) : Boolean
+      {
+         return param1 == CONSUMABLES_PANEL_SETTINGS.GLOW_ID_ORANGE_SPECIAL;
       }
       
       override protected function configUI() : void
@@ -80,7 +86,7 @@ package net.wg.gui.battle.views.consumablesPanel
       
       override public function showGlow(param1:int) : void
       {
-         if(isReloading || !enabled)
+         if(isReloading && !isSpecialGlowID(param1) || !enabled)
          {
             return;
          }

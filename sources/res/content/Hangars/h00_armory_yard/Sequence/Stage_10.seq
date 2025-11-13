@@ -9,7 +9,7 @@
 	<sequenceObject>
 		<name>stg_10_cooling_system</name>
 		<type>model</type>
-		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_10_cooling_system_xray.model</resource>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/R226_Object_757A/normal/lod0/stg_10_cooling_system_xray.model</resource>
 		<castsShadow>false</castsShadow>
 		<track>
 			<name>visibility</name>
@@ -38,16 +38,16 @@
 			<frame>
 				<startTime>2.366667</startTime>
 				<value>0.000000</value>
-				<inTangent>-0.000000</inTangent>
-				<outTangent>0.428571</outTangent>
-				<tangentMode>257</tangentMode>
+				<inTangent>0.017771</inTangent>
+				<outTangent>0.017771</outTangent>
+				<tangentMode>771</tangentMode>
 			</frame>
 			<frame>
 				<startTime>4.700000</startTime>
 				<value>1.000000</value>
-				<inTangent>0.428572</inTangent>
-				<outTangent>0.000000</outTangent>
-				<tangentMode>257</tangentMode>
+				<inTangent>0.012676</inTangent>
+				<outTangent>0.012676</outTangent>
+				<tangentMode>771</tangentMode>
 			</frame>
 			<frame>
 				<startTime>5.000000</startTime>
@@ -79,9 +79,9 @@
 		</track>
 	</sequenceObject>
 	<sequenceObject>
-		<name>stg_10_fan</name>
+		<name>stg_10_can_water_xray</name>
 		<type>model</type>
-		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_10_fan_xray.model</resource>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/R226_Object_757A/normal/lod0/stg_10_can_water_xray.model</resource>
 		<castsShadow>false</castsShadow>
 		<track>
 			<name>visibility</name>
@@ -110,16 +110,16 @@
 			<frame>
 				<startTime>3.333333</startTime>
 				<value>0.000000</value>
-				<inTangent>-0.000000</inTangent>
-				<outTangent>0.428571</outTangent>
-				<tangentMode>257</tangentMode>
+				<inTangent>-0.001968</inTangent>
+				<outTangent>-0.001968</outTangent>
+				<tangentMode>771</tangentMode>
 			</frame>
 			<frame>
 				<startTime>5.666667</startTime>
 				<value>1.000000</value>
-				<inTangent>0.428571</inTangent>
-				<outTangent>0.000000</outTangent>
-				<tangentMode>257</tangentMode>
+				<inTangent>0.013946</inTangent>
+				<outTangent>0.013946</outTangent>
+				<tangentMode>771</tangentMode>
 			</frame>
 			<frame>
 				<startTime>5.966667</startTime>
@@ -158,7 +158,7 @@
 			<type>attach</type>
 			<frame>
 				<startTime>1.000000</startTime>
-				<duration>7.800000</duration>
+				<duration>7.000000</duration>
 				<value>Root|</value>
 			</frame>
 		</track>
@@ -167,24 +167,24 @@
 			<type>vector3</type>
 			<frame>
 				<startTime>1.000000</startTime>
-				<value>0.000000 1.371719 -2.688065</value>
+				<value>-0.404797 1.371719 -2.214260</value>
 				<inTangent>0.000000 0.000000 0.000000</inTangent>
 				<outTangent>0.000000 0.000000 0.000000</outTangent>
 				<tangentMode>0</tangentMode>
 			</frame>
 			<frame>
-				<startTime>4.000000</startTime>
-				<value>0.000000 1.371719 -2.688065</value>
-				<inTangent>0.058424 0.359139 1.413767</inTangent>
-				<outTangent>0.058424 0.359139 1.413767</outTangent>
-				<tangentMode>0</tangentMode>
+				<startTime>4.133334</startTime>
+				<value>-0.404797 1.371719 -2.214260</value>
+				<inTangent>-0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.349099 0.000000 -2.354709</outTangent>
+				<tangentMode>257</tangentMode>
 			</frame>
 			<frame>
-				<startTime>4.500000</startTime>
-				<value>0.058424 1.730859 -1.274298</value>
-				<inTangent>0.116848 0.718279 2.827534</inTangent>
-				<outTangent>0.116848 0.718279 2.827534</outTangent>
-				<tangentMode>0</tangentMode>
+				<startTime>4.400000</startTime>
+				<value>-0.497890 1.371719 -2.842182</value>
+				<inTangent>-0.349099 -0.000000 -2.354709</inTangent>
+				<outTangent>-0.349100 -0.000000 -2.354713</outTangent>
+				<tangentMode>257</tangentMode>
 			</frame>
 		</track>
 		<track>
@@ -192,7 +192,7 @@
 			<type>sound</type>
 			<frame>
 				<startTime>1.000000</startTime>
-				<duration>7.800000</duration>
+				<duration>7.000000</duration>
 				<sequenceSound>ay_ep_07_seq_stage_10</sequenceSound>
 				<type>play_till_end</type>
 				<fade>0.000000</fade>

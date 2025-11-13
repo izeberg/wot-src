@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<nodefullVisual>vehicles/chinese/Ch74_WZ_57_I/crash/lod2/Gun_01</nodefullVisual>
 	<parent>vehicles/chinese/Ch74_WZ_57_I/crash/lod3/Gun_01</parent>
 	<extent>96.000000</extent>
 	<visibilityBox>
@@ -8,4 +7,5 @@
 		<max>0.467244 0.388874 4.623553</max>
 	</visibilityBox>
 	<tank>true</tank>
+	<nodefullVisual>vehicles/chinese/Ch74_WZ_57_I/crash/lod2/Gun_01</nodefullVisual>
 </root>

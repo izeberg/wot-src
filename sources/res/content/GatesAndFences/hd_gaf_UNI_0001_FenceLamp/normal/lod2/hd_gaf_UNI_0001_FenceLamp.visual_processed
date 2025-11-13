@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>hd_gaf_UNI_0001_FenceLamp</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>HP_module0</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.000000 0.000000</row3>
+				</transform>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_wall_0</identifier>
+					<materialKind>73</materialKind>
+					<collisionFlags>131</collisionFlags>
+				</material>
+				<groupOrigin>0.080358 0.756762 3.982973</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>n_wood1</identifier>
+					<fx>shaders/std_effects/glow.fx</fx>
+					<materialKind>73</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						destBlend
+						<Int>2</Int>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Environment/hd_env_UNI_0005_DeerGlow/NY23_MegaIllumination_AM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_tintColor
+						<Vector4>0.929412 0.835294 0.678431 1.000000</Vector4>
+					</property>
+					<property>
+						selfIllumination
+						<Float>600.000000</Float>
+					</property>
+				</material>
+				<groupOrigin>-0.004832 1.621029 6.022563</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				2
+				<material>
+					<identifier>n_wood0</identifier>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<materialKind>73</materialKind>
+					<collisionFlags>128</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/GatesAndFences/hd_gaf011_Fence/hd_gaf011_Fence_AM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/GatesAndFences/hd_gaf011_Fence/hd_gaf011_Fence_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/GatesAndFences/hd_gaf011_Fence/hd_gaf011_Fence_ANM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+				</material>
+				<groupOrigin>0.063122 0.709865 4.017618</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-0.156851 -0.091115 -0.261574</min>
+		<max>0.167729 1.769524 8.291320</max>
+	</boundingBox>
+	<customBsp>true</customBsp>
+	<geometrySize>4518</geometrySize>
+	<minUVDensity>0.013876</minUVDensity>
+</root>

@@ -5426,7 +5426,7 @@ _config = {'regular_1_1_1': {'win': {'type': PROGRESS_TEMPLATE.BINARY,
                                            'visibleScope': [
                                                           VISIBLE_SCOPE.BATTLE, VISIBLE_SCOPE.HANGAR], 
                                            'params': {'assistTypes': [
-                                                                    ASSIST_TYPES.TRACK, ASSIST_TYPES.STUN]}}, 
+                                                                    ASSIST_TYPES.TRACK]}}, 
                                 'description': DESCRIPTIONS.REGULAR(iconID=CONDITION_ICON.ASSIST)}, 
                      'hits': {'type': PROGRESS_TEMPLATE.VALUE, 
                               'config': {'goal': 8, 
@@ -13735,7 +13735,7 @@ _config_pm3 = {'pm3_8_1_1': {'damage': {'type': PROGRESS_TEMPLATE.VALUE,
                                          'visibleScope': [
                                                         VISIBLE_SCOPE.BATTLE, VISIBLE_SCOPE.HANGAR], 
                                          'params': {'assistTypes': [
-                                                                  ASSIST_TYPES.TRACK, ASSIST_TYPES.RADIO, ASSIST_TYPES.STUN]}}, 
+                                                                  ASSIST_TYPES.TRACK, ASSIST_TYPES.RADIO]}}, 
                               'description': DESCRIPTIONS.REGULAR(iconID=CONDITION_ICON.ASSIST)}, 
                    'piercings': {'type': PROGRESS_TEMPLATE.VALUE, 
                                  'config': {'goal': 3, 

@@ -108,7 +108,6 @@ class ItemPackType(CONST_CONTAINER):
     CUSTOM_LOOTBOX = 'custom/lootbox'
     CUSTOM_LOOTBOXKEY = 'custom/LootBoxKey'
     CUSTOM_BERTHS = 'custom/berths'
-    CUSTOM_RAZLOM_COIN = 'custom/razlom_coin'
     TOKEN = 'token'
     PAINT_ALL = 'paint/all'
     PAINT_SUMMER = 'paint/summer'
@@ -207,8 +206,7 @@ class ItemPackTypeGroup(CONST_CONTAINER):
      ItemPackType.CUSTOM_EVENT_COIN_EXTERNAL,
      ItemPackType.CUSTOM_REFERRAL_CREW,
      ItemPackType.CUSTOM_SLOT,
-     ItemPackType.CUSTOM_SUPPLY_POINT,
-     ItemPackType.CUSTOM_RAZLOM_COIN)
+     ItemPackType.CUSTOM_SUPPLY_POINT)
     CREW = (
      ItemPackType.CREW_50,
      ItemPackType.CREW_75,

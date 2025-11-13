@@ -2,6 +2,7 @@ package net.wg.gui.components.crosshairPanel
 {
    import flash.display.MovieClip;
    import flash.display.Sprite;
+   import flash.events.Event;
    import flash.external.ExternalInterface;
    import flash.text.TextField;
    import flash.utils.getDefinitionByName;
@@ -16,6 +17,7 @@ package net.wg.gui.components.crosshairPanel
    import net.wg.gui.components.crosshairPanel.components.ShotFlyTimeInd;
    import net.wg.gui.components.crosshairPanel.components.autoloader.AutoloaderIndicator;
    import net.wg.gui.components.crosshairPanel.components.autoloader.BoostIndicatorStateParamsVO;
+   import net.wg.gui.components.crosshairPanel.components.coolantAbility.CoolantAbilityIndicator;
    import net.wg.gui.components.crosshairPanel.components.overheatBar.OverheatBar;
    import net.wg.gui.components.crosshairPanel.constants.CrosshairConsts;
    
@@ -29,6 +31,8 @@ package net.wg.gui.components.crosshairPanel
       private static const FRACTIONAL_FORMAT_CMD:String = "getFractionalFormat";
       
       private static const TF_LEFT_MARGIN:int = 2;
+      
+      private static const COOLANT_ABILITY_INDICATOR_OFFSET:int = -60;
        
       
       public var timerProgressTextField:TextField = null;
@@ -89,6 +93,8 @@ package net.wg.gui.components.crosshairPanel
       
       private var _overheatBar:OverheatBar = null;
       
+      private var _coolantAbilityIndicator:CoolantAbilityIndicator = null;
+      
       private var _clipsByType:Vector.<ClipQuantityIndicator> = null;
       
       private var _clipType:int = 0;
@@ -114,6 +120,10 @@ package net.wg.gui.components.crosshairPanel
       private var _reloadTimeBlinkYPos:Array = null;
       
       private var _disposed:Boolean = false;
+      
+      private var _shotFlyTimeIndVisible:Boolean = false;
+      
+      private var _shotDamageIndVisible:Boolean = false;
       
       public function CrosshairBase()
       {
@@ -149,6 +159,27 @@ package net.wg.gui.components.crosshairPanel
          this.updateNetMC();
       }
       
+      private function addCoolantAbilityIndicator() : void
+      {
+         var _loc1_:Class = Class(getDefinitionByName(Linkages.COOLANT_ABILITY_INDICATOR));
+         this._coolantAbilityIndicator = CoolantAbilityIndicator(new _loc1_());
+         addChild(this._coolantAbilityIndicator);
+         this._coolantAbilityIndicator.x = this.timerProgressTextField.x + COOLANT_ABILITY_INDICATOR_OFFSET;
+         this._coolantAbilityIndicator.y = this.timerProgressTextField.y;
+         this._coolantAbilityIndicator.addEventListener(CoolantAbilityIndicator.ACTIVATED,this.onCoolantAbilityActivatedHandler);
+         this._coolantAbilityIndicator.addEventListener(CoolantAbilityIndicator.DEACTIVATED,this.onCoolantAbilityDeactivatedHandler);
+      }
+      
+      private function onCoolantAbilityDeactivatedHandler(param1:Event) : void
+      {
+         this.blinkReloadTime(CROSSHAIR_CONSTANTS.CROSSHAIR_BLINK_ORANGE_HORIZONTAL);
+      }
+      
+      private function onCoolantAbilityActivatedHandler(param1:Event) : void
+      {
+         this.blinkReloadTime(CROSSHAIR_CONSTANTS.CROSSHAIR_BLINK_GREEN_HORIZONTAL);
+      }
+      
       public function autoloaderBoostUpdate(param1:BoostIndicatorStateParamsVO, param2:Number, param3:Boolean = false) : void
       {
          if(this.isAutoloader)
@@ -165,11 +196,15 @@ package net.wg.gui.components.crosshairPanel
          }
       }
       
-      public function autoloaderShowShot() : void
+      public function showShot() : void
       {
          if(this.isAutoloader)
          {
             this._clipsByType[this._clipType].autoloaderShowShot();
+         }
+         if(this._coolantAbilityIndicator)
+         {
+            this._coolantAbilityIndicator.hideAbilityMod();
          }
       }
       
@@ -340,6 +375,7 @@ package net.wg.gui.components.crosshairPanel
             this.setReloadingBarFrame();
             this.updateNetSeparatorVisibility();
             this.updateQuickReloadingTimer();
+            this.updateShotIndicatorsVisibility();
          }
       }
       
@@ -412,12 +448,11 @@ package net.wg.gui.components.crosshairPanel
          }
       }
       
-      public function setShotDamageIndValue(param1:int, param2:int) : void
+      public function setShotDamageIndValue(param1:int) : void
       {
          if(this.shotDamageInd)
          {
             this.shotDamageInd.setValue(param1);
-            this.shotDamageInd.setState(param2);
          }
       }
       
@@ -425,7 +460,8 @@ package net.wg.gui.components.crosshairPanel
       {
          if(this.shotDamageInd)
          {
-            this.shotDamageInd.visible = param1;
+            this._shotDamageIndVisible = param1;
+            this.shotDamageInd.visible = this._shotDamageIndVisible;
          }
       }
       
@@ -441,8 +477,19 @@ package net.wg.gui.components.crosshairPanel
       {
          if(this.shotFlyTimeInd)
          {
-            this.shotFlyTimeInd.visible = param1;
+            this._shotFlyTimeIndVisible = param1;
+            this.shotFlyTimeInd.visible = this._shotFlyTimeIndVisible;
          }
+      }
+      
+      public function setCoolantAbilityReloadingPenalty(param1:Number) : void
+      {
+         if(!this._coolantAbilityIndicator)
+         {
+            this.addCoolantAbilityIndicator();
+            this._coolantAbilityIndicator.validateNow();
+         }
+         this._coolantAbilityIndicator.updateReloadingPenalty(param1);
       }
       
       public function setTimerReloadingState() : void
@@ -561,6 +608,13 @@ package net.wg.gui.components.crosshairPanel
          this.cassetteMC = null;
          this.mbCassetteMC.dispose();
          this.mbCassetteMC = null;
+         if(this._coolantAbilityIndicator)
+         {
+            this._coolantAbilityIndicator.removeEventListener(CoolantAbilityIndicator.ACTIVATED,this.onCoolantAbilityActivatedHandler);
+            this._coolantAbilityIndicator.removeEventListener(CoolantAbilityIndicator.DEACTIVATED,this.onCoolantAbilityDeactivatedHandler);
+            this._coolantAbilityIndicator.dispose();
+            this._coolantAbilityIndicator = null;
+         }
          if(this.shotFlyTimeInd)
          {
             this.shotFlyTimeInd.dispose();
@@ -585,8 +639,11 @@ package net.wg.gui.components.crosshairPanel
       
       protected function arrangeReloadTimeBlink() : void
       {
-         this.reloadTimeBlink.x = this._currentTimerTextField.x + (this._currentTimerTextField.textWidth >> 1) + TF_LEFT_MARGIN;
-         this.reloadTimeBlink.y = this._reloadTimeBlinkYPos[this.netType];
+         if(this.reloadTimeBlink && this._currentTimerTextField)
+         {
+            this.reloadTimeBlink.x = this._currentTimerTextField.x + (this._currentTimerTextField.textWidth >> 1) + TF_LEFT_MARGIN;
+            this.reloadTimeBlink.y = this._reloadTimeBlinkYPos[this.netType];
+         }
       }
       
       protected function updateNetType() : void
@@ -750,6 +807,26 @@ package net.wg.gui.components.crosshairPanel
          if(!visible)
          {
             param1.stopImmediatePropagation();
+         }
+      }
+      
+      public function animShotHitMarker(param1:String) : void
+      {
+      }
+      
+      public function setShotHitMarkerVisibility(param1:Boolean) : void
+      {
+      }
+      
+      private function updateShotIndicatorsVisibility() : void
+      {
+         if(this.shotDamageInd)
+         {
+            this.shotDamageInd.visible = this._shotDamageIndVisible;
+         }
+         if(this.shotFlyTimeInd)
+         {
+            this.shotFlyTimeInd.visible = this._shotFlyTimeIndVisible;
          }
       }
    }

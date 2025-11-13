@@ -110,9 +110,9 @@
 	</node>
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
-		<node>G_BlendBone</node>
 		<node>static_joint_BlendBone</node>
 		<node>Gun_BlendBone</node>
+		<node>G_BlendBone</node>
 		<node>attach_BlendBone</node>
 		<geometry>
 			<vertices>gun_01_Shape.vertices</vertices>
@@ -186,15 +186,15 @@
 						</Float>
 					</property>
 				</material>
-				<groupOrigin>0.165348 -0.282001 -1.532011</groupOrigin>
+				<groupOrigin>0.165349 -0.232616 -1.532013</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<constraints/>
 	<boundingBox>
-		<min>-0.704835 -0.894999 -3.276275</min>
-		<max>1.035532 0.330997 6.340298</max>
+		<min>-0.704835 -0.894998 -3.276274</min>
+		<max>1.035532 0.429767 6.340299</max>
 	</boundingBox>
-	<geometrySize>458884</geometrySize>
+	<geometrySize>461360</geometrySize>
 	<minUVDensity>0.011606</minUVDensity>
 </root>

@@ -36,9 +36,6 @@ from skeletons.gui.lobby_context import ILobbyContext
 from skeletons.gui.server_events import IEventsCache
 from skeletons.gui.shared import IItemsCache
 from skeletons.gui.web import IWebController
-from portal.skeletons.portal_event_controller import IPortalEventController
-from portal_common.portal_constants import PREBATTLE_TYPE as PREBATTLE_TYPE_EXT
-from portal.gui.portal_gui_constants import PREBATTLE_ACTION_NAME as PREBATTLE_ACTION_NAME_EXT
 
 class _EXTENDED_OPT_IDS(object):
     VEHICLE_COMPARE = 'userVehicleCompare'
@@ -68,7 +65,6 @@ class USER(object):
     CREATE_MAPBOX_SQUAD = 'createMapboxSquad'
     CREATE_COMP7_SQUAD = 'createComp7Squad'
     CREATE_RANKED_SQUAD = 'createRankedSquad'
-    CREATE_PORTAL_SQUAD = 'createPortalSquad'
 
 
 _CM_ICONS = {USER.END_REFERRAL_COMPANY: 'endReferralCompany'}
@@ -85,7 +81,6 @@ class BaseUserCMHandler(AbstractContextMenuHandler, EventSystemEntity):
     __epicCtrl = dependency.descriptor(IEpicBattleMetaGameController)
     __comp7Ctrl = dependency.descriptor(IComp7Controller)
     __rankedCtrl = dependency.descriptor(IRankedBattlesController)
-    __portalController = dependency.descriptor(IPortalEventController)
 
     @prbDispatcherProperty
     def prbDispatcher(self):
@@ -191,9 +186,6 @@ class BaseUserCMHandler(AbstractContextMenuHandler, EventSystemEntity):
     def createRankedSquad(self):
         self._doSelect(PREBATTLE_ACTION_NAME.RANKED_SQUAD, (self.databaseID,))
 
-    def createPortalSquad(self):
-        self._doSelect(PREBATTLE_ACTION_NAME_EXT.PORTAL_BATTLE_SQUAD, (self.databaseID,))
-
     def invite(self):
         user = self.usersStorage.getUser(self.databaseID)
         if self.prbEntity.getPermissions().canSendInvite():
@@ -223,8 +215,7 @@ class BaseUserCMHandler(AbstractContextMenuHandler, EventSystemEntity):
            USER.REQUEST_FRIENDSHIP: 'requestFriendship', 
            USER.CREATE_MAPBOX_SQUAD: 'createMapboxSquad', 
            USER.CREATE_COMP7_SQUAD: 'createComp7Squad', 
-           USER.CREATE_RANKED_SQUAD: 'createRankedSquad', 
-           USER.CREATE_PORTAL_SQUAD: 'createPortalSquad'}
+           USER.CREATE_RANKED_SQUAD: 'createRankedSquad'}
         if not IS_CHINA:
             handlers.update({USER.SET_MUTED: 'setMuted', 
                USER.UNSET_MUTED: 'unsetMuted'})
@@ -327,10 +318,6 @@ class BaseUserCMHandler(AbstractContextMenuHandler, EventSystemEntity):
                 isEnabled = primeTimeStatus == PrimeTimeStatus.AVAILABLE and self.__rankedCtrl.hasSuitableVehicles()
                 options.append(self._makeItem(USER.CREATE_RANKED_SQUAD, MENU.contextmenu(USER.CREATE_RANKED_SQUAD), optInitData={'enabled': canCreate and isEnabled, 
                    'textColor': 13347959}))
-            if self.__portalController.isEnabled():
-                if not self.__isSquadAlreadyCreated(PREBATTLE_TYPE_EXT.PORTAL):
-                    options.append(self._makeItem(USER.CREATE_PORTAL_SQUAD, MENU.contextmenu(USER.CREATE_PORTAL_SQUAD), optInitData={'enabled': canCreate, 
-                       'textColor': 13347959}))
         return options
 
     def _addPrebattleInfo(self, options, userCMInfo):
@@ -676,6 +663,7 @@ class UserContextMenuInfo(object):
         self.canAddToIgnore = True
         self.canDoDenunciations = True
         self.isFriend = False
+        self.isAnySub = False
         self.isIgnored = False
         self.isTemporaryIgnored = False
         self.isMuted = False
@@ -686,6 +674,7 @@ class UserContextMenuInfo(object):
         self.isCurrentPlayer = False
         if self.user is not None:
             self.isFriend = self.user.isFriend()
+            self.isAnySub = self.user.isAnySub()
             self.isIgnored = self.user.isIgnored()
             self.isTemporaryIgnored = self.user.isTemporaryIgnored()
             self.isMuted = self.user.isMuted()

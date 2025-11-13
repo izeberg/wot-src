@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>1.293959 2.306105 -1.500785</min>
+		<max>1.383976 2.538871 -1.220396</max>
+	</visibilityBox>
+	<parent>vehicles/british/GB134_FV242B_Condor/_skins/GB134_FV242B_Condor_3Dst_01/normal/lod1/Hatch_right_anim_01</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/british/GB134_FV242B_Condor/_skins/GB134_FV242B_Condor_3Dst_01/normal/lod0/Hatch_right_anim_01</nodefullVisual>
+	<tank>true</tank>
+</root>

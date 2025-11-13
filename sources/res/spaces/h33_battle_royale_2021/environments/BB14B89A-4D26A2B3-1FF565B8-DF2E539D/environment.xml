@@ -155,7 +155,7 @@
 		<dynamicShadowsLightSize>13.000000</dynamicShadowsLightSize>
 	</Shadow>
 	<SSShadows>
-		<enableFromPreset>-1</enableFromPreset>
+		<enable>false</enable>
 		<amplify>0.500000</amplify>
 	</SSShadows>
 	<VFX>

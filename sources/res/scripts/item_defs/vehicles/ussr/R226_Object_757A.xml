@@ -57,7 +57,7 @@
 			</invisibilityBonus>
 		</trophyUpgradedAdditionalInvisibilityDevice>
 	</optDevsOverrides>
-	<repairCost>9</repairCost>
+	<repairCost>10</repairCost>
 	<premiumVehicleXPFactor>
 		0.05
 		<!--BW_String-->
@@ -114,7 +114,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>27860</weight>
-		<maxHealth>1000</maxHealth>
+		<maxHealth>900</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>200</maxHealth>
 			<maxRegenHealth>135</maxRegenHealth>
@@ -139,7 +139,7 @@
 				<!--BW_String-->
 			</rollParams>
 			<sensitivityToImpulse>
-				0.94
+				0.14
 				<!--BW_String-->
 			</sensitivityToImpulse>
 		</swinging>
@@ -2750,21 +2750,24 @@
 					<pitchLimits>
 						<minPitch>0 -20 1 -20</minPitch>
 						<maxPitch>
-							0 8 0.34 8 0.40 2 0.60 2 0.66 8 1 8
+							0 5 0.34 5 0.40 2 0.60 2 0.66 5 1 5
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
 					<shotDispersionRadius>
-						0.01
+						0.05
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>11</reloadTime>
+					<reloadTime>13</reloadTime>
 					<clip>
 						<count>2</count>
-						<rate>24</rate>
+						<rate>
+							18.1818
+							<!--BW_String-->
+						</rate>
 					</clip>
 					<autoreload>
-						<reloadTime>14 11</reloadTime>
+						<reloadTime>15 13</reloadTime>
 					</autoreload>
 					<shotDispersionFactors>
 						<turretRotation>
@@ -3323,39 +3326,48 @@
 	<extras>
 		<surprise>
 			NoneExtra : CustomAttributeModifier
+			<vehicleFilter>
+				<include>
+					<componentFilters>
+						<gun>
+							<tags>GLUM</tags>
+						</gun>
+					</componentFilters>
+				</include>
+			</vehicleFilter>
 			<modifiers>
 				<mul>
 					<name>dynAttrs/chassis/shotDispersionFactors/movement</name>
 					<value>
-						100.0
+						12.5
 						<!--BW_String-->
 					</value>
 				</mul>
 				<mul>
 					<name>dynAttrs/chassis/shotDispersionFactors/rotation</name>
 					<value>
-						100.0
+						12.5
 						<!--BW_String-->
 					</value>
 				</mul>
 				<mul>
 					<name>dynAttrs/gun/shotDispersionFactors/afterShot</name>
 					<value>
-						100.0
+						12.5
 						<!--BW_String-->
 					</value>
 				</mul>
 				<mul>
 					<name>dynAttrs/gun/shotDispersionFactors/turretRotation</name>
 					<value>
-						100.0
+						6.0
 						<!--BW_String-->
 					</value>
 				</mul>
 				<mul>
 					<name>dynAttrs/gun/aimingTime</name>
 					<value>
-						0.25
+						0.55
 						<!--BW_String-->
 					</value>
 				</mul>

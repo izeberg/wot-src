@@ -1,4 +1,4 @@
-import enum, calendar, time
+import enum, calendar, time, datetime
 from math import cos, radians
 from time import time as timestamp
 from collections import namedtuple
@@ -882,6 +882,7 @@ class Configs(enum.Enum):
     PLAY_STREAK_CONFIG = 'play_streak_config'
     BLACK_MARKET_CONFIG = 'black_market_config'
     INGAME_BROWSER_EVENT_CONFIG = 'ingame_browser_event_config'
+    LOOTBOX_STATISTICS_CONFIG = 'lootbox_statistics_config'
 
 
 INBATTLE_CONFIGS = [
@@ -1174,9 +1175,6 @@ class ATTACK_REASON(object):
     STATIC_DEATH_ZONE = 'static_deathzone'
     CGF_WORLD = 'cgf_world'
     AUTOSHOOT = 'autoshoot'
-    GUIDED_MISSILE = 'guided_missile'
-    SUPER_BOSS_AURA = 'super_boss_aura'
-    SENTINEL_ATTACK = 'sentinel_attack'
     NONE = 'none'
 
     @classmethod
@@ -1196,7 +1194,7 @@ ATTACK_REASONS = (
  ATTACK_REASON.THUNDER_STRIKE, ATTACK_REASON.FIRE_CIRCLE, ATTACK_REASON.CLING_BRANDER,
  ATTACK_REASON.CLING_BRANDER_RAM, ATTACK_REASON.BRANDER_RAM,
  ATTACK_REASON.FORT_ARTILLERY_EQ, ATTACK_REASON.STATIC_DEATH_ZONE, ATTACK_REASON.AUTOSHOOT,
- ATTACK_REASON.CGF_WORLD, ATTACK_REASON.GUIDED_MISSILE, ATTACK_REASON.SUPER_BOSS_AURA, ATTACK_REASON.SENTINEL_ATTACK)
+ ATTACK_REASON.CGF_WORLD)
 ATTACK_REASON_INDICES = dict((value, index) for index, value in enumerate(ATTACK_REASONS))
 BOT_RAM_REASONS = (
  ATTACK_REASON.BRANDER_RAM, ATTACK_REASON.CLING_BRANDER_RAM)
@@ -1274,7 +1272,6 @@ DAMAGE_INFO_CODES = ('DEVICE_CRITICAL', 'DEVICE_DESTROYED', 'TANKMAN_HIT', 'DEVI
                      'DEATH_FROM_ARTILLERY_PROTECTION', 'DEATH_FROM_ARTILLERY_SECTOR',
                      'DEATH_FROM_BOMBER', 'DEATH_FROM_RECOVERY', 'DEATH_FROM_KAMIKAZE',
                      'DEATH_FROM_FIRE_CIRCLE', 'DEATH_FROM_THUNDER_STRIKE', 'DEATH_FROM_CORRODING_SHOT',
-                     'DEATH_FROM_SENTINEL_ATTACK', 'DEATH_FROM_SUPER_BOSS_AURA',
                      'DEATH_FROM_CLING_BRANDER')
 
 class IGR_TYPE:
@@ -1391,6 +1388,7 @@ LOOTBOX_TOKEN_PREFIX = 'lootBox:'
 LOOTBOX_LIMIT_ITEM_PREFIX = 'lb_limit_item:'
 LOOTBOX_KEY_PREFIX = 'lb_key:'
 LOOTBOX_MTL_CATEGORY = 'mtl_universal'
+VERY_BIG_TIME = int(time.mktime(datetime.datetime(2050, 1, 1).timetuple()))
 TWITCH_TOKEN_PREFIX = 'token:twitch'
 CUSTOMIZATION_PROGRESS_PREFIX = 'cust_progress_'
 EMAIL_CONFIRMATION_QUEST_ID = 'email_confirmation'
@@ -1679,6 +1677,19 @@ class REQUEST_COOLDOWN:
     ANONYMIZER = 1.0
     UPDATE_IN_BATTLE_PLAYER_RELATIONS = 1.0
     FLUSH_RELATIONS = 1.0
+    NEW_YEAR_SLOT_FILL = 0.4
+    NEW_YEAR_CRAFT = 0.5
+    NEW_YEAR_CRAFT_OLD_TOYS = 0.5
+    NEW_YEAR_BREAK_TOYS = 1.0
+    NEW_YEAR_SEE_INVENTORY_TOYS = 0.5
+    NEW_YEAR_SEE_COLLECTION_TOYS = 0.5
+    NEW_YEAR_SELECT_DISCOUNT = 1.0
+    NEW_YEAR_VIEW_ALBUM = 0.5
+    NEW_YEAR_CONVERT_FILLERS = 1.0
+    NEW_YEAR_FILL_OLD_COLLECTION = 0.5
+    NEW_YEAR_BUY_MACHINE_COINS = 1.0
+    NEW_YEAR_UPGRADE_OBJECT_LEVEL = 1.0
+    NEW_YEAR_BUY_TOY = 1.0
     EQUIP_ENHANCEMENT = 1.0
     DISMOUNT_ENHANCEMENT = 1.0
     BUY_BATTLE_PASS = 1.0
@@ -1732,6 +1743,9 @@ class REQUEST_COOLDOWN:
     EQUIP_TANKMAN_SKIN = 1.0
     UNEQUIP_TANKMAN_SKIN = 1.0
     GET_VEHICLE_DAMAGE_DISTRIBUTION = 0.5
+    GET_STATISTIC_LOOTBOX = 5.0
+    ARMORY_YARD_REROLL_ARMORY_QUEST = 1.0
+    ARMORY_YARD_ACCEPT_REROLL_ARMORY_QUEST = 1.0
 
 
 IS_SHOW_INGAME_HELP_FIRST_TIME = False
@@ -2048,6 +2062,10 @@ INT_USER_SETTINGS_KEYS = {USER_SERVER_SETTINGS.VERSION: 'Settings version',
    USER_SERVER_SETTINGS.BATTLE_MATTERS_QUESTS: 'battle matters quests show reward info', 
    USER_SERVER_SETTINGS.QUESTS_PROGRESS: 'feedback quests progress', 
    91: 'Loot box last viewed count', 
+   92: 'Oriental loot box last viewed count', 
+   93: 'New year loot box last viewed count', 
+   94: 'Fairytale loot box last viewed count', 
+   95: 'Christmas loot box last viewed count', 
    USER_SERVER_SETTINGS.SESSION_STATS: 'sessiong statistics settings', 
    97: 'BattlePass carouse filter 1', 
    98: 'Battle Pass Storage', 
@@ -2058,6 +2076,7 @@ INT_USER_SETTINGS_KEYS = {USER_SERVER_SETTINGS.VERSION: 'Settings version',
    103: 'Mapbox carousel filter 1', 
    104: 'Mapbox carousel filter 2', 
    USER_SERVER_SETTINGS.NEW_YEAR: 'New Year settings storage', 
+   106: 'Common loot box last viewed count', 
    USER_SERVER_SETTINGS.CONTOUR: 'Contour settings', 
    107: 'Fun Random carousel filter 1', 
    108: 'Fun Random carousel filter 2', 
@@ -2526,20 +2545,33 @@ class BATTLE_LOG_SHELL_TYPES(enum.IntEnum):
     HE_LEGACY_NO_STUN = 7
     FLAME = 8
     ARMOR_PIERCING_FSDS = 9
+    HOLLOW_CHARGE_DF = 10
+    ARMOR_PIERCING_DF = 11
+    ARMOR_PIERCING_HE_DF = 12
+    ARMOR_PIERCING_CR_DF = 13
+    HE_MODERN_DF = 14
 
     @classmethod
     def getType(cls, shellDescr):
         shellKind = shellDescr.kind
+        hasDistanceFactor = shellDescr.distanceFactor
         if shellKind not in HAS_EXPLOSION_EFFECT:
+            if hasDistanceFactor is not None:
+                shellKind += '_DF'
             return cls[shellKind]
         else:
             if shellDescr.type.mechanics == SHELL_MECHANICS_TYPE.MODERN and shellKind == SHELL_TYPES.HIGH_EXPLOSIVE:
+                if hasDistanceFactor is not None:
+                    return cls.HE_MODERN_DF
                 return cls.HE_MODERN
-            if shellDescr.type.mechanics == SHELL_MECHANICS_TYPE.MODERN and shellKind == SHELL_TYPES.FLAME:
-                return cls.FLAME
-            if shellDescr.hasStun:
-                return cls.HE_LEGACY_STUN
-            return cls.HE_LEGACY_NO_STUN
+            else:
+                if shellDescr.type.mechanics == SHELL_MECHANICS_TYPE.MODERN and shellKind == SHELL_TYPES.FLAME:
+                    return cls.FLAME
+                if shellDescr.hasStun:
+                    return cls.HE_LEGACY_STUN
+                return cls.HE_LEGACY_NO_STUN
+
+            return
 
     @classmethod
     def getIndex(cls, shellDescr):
@@ -3376,6 +3408,9 @@ class BuffDisplayedState(enum.IntEnum):
     ABILITY_CONCENTRATION = 16
     ABILITY_SURE_SHOT = 17
     ABILITY_RECOIL_RECUPERATOR = 18
+    ABILITY_COOLANT_TANK = 19
+    ABILITY_TANK_RAM = 20
+    ABILITY_SHOT_PASSION = 21
 
 
 class EntityCaptured(object):

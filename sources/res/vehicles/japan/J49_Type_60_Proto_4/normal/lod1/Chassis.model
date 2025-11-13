@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/japan/J49_Type_60_Proto_4/normal/lod2/Chassis</parent>
+	<tank>true</tank>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.112884 -0.000001 -1.962951</min>
+		<max>1.112884 0.860992 2.093097</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/japan/J49_Type_60_Proto_4/normal/lod1/Chassis</nodefullVisual>
+</root>

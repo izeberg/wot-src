@@ -1,0 +1,61 @@
+from new_year.gui.impl.gen.view_models.views.lobby.new_year.views.pet.ny_indicator_type import NyIndicatorType
+
+class NyPetItemActivatePopoverModel(NyIndicatorType):
+    __slots__ = ('onItemActivate', 'onItemAmountChange')
+
+    def __init__(self, properties=8, commands=2):
+        super(NyPetItemActivatePopoverModel, self).__init__(properties=properties, commands=commands)
+
+    def getItemsInInventory(self):
+        return self._getNumber(1)
+
+    def setItemsInInventory(self, value):
+        self._setNumber(1, value)
+
+    def getLoyaltyPoints(self):
+        return self._getNumber(2)
+
+    def setLoyaltyPoints(self, value):
+        self._setNumber(2, value)
+
+    def getVitalityPoints(self):
+        return self._getNumber(3)
+
+    def setVitalityPoints(self, value):
+        self._setNumber(3, value)
+
+    def getPotentialLoyaltyPoints(self):
+        return self._getNumber(4)
+
+    def setPotentialLoyaltyPoints(self, value):
+        self._setNumber(4, value)
+
+    def getPotentialVitalityPoints(self):
+        return self._getNumber(5)
+
+    def setPotentialVitalityPoints(self, value):
+        self._setNumber(5, value)
+
+    def getIsOnboarding(self):
+        return self._getBool(6)
+
+    def setIsOnboarding(self, value):
+        self._setBool(6, value)
+
+    def getMaxValue(self):
+        return self._getNumber(7)
+
+    def setMaxValue(self, value):
+        self._setNumber(7, value)
+
+    def _initialize(self):
+        super(NyPetItemActivatePopoverModel, self)._initialize()
+        self._addNumberProperty('itemsInInventory', 0)
+        self._addNumberProperty('loyaltyPoints', 0)
+        self._addNumberProperty('vitalityPoints', 0)
+        self._addNumberProperty('potentialLoyaltyPoints', 0)
+        self._addNumberProperty('potentialVitalityPoints', 0)
+        self._addBoolProperty('isOnboarding', False)
+        self._addNumberProperty('maxValue', -1)
+        self.onItemActivate = self._addCommand('onItemActivate')
+        self.onItemAmountChange = self._addCommand('onItemAmountChange')

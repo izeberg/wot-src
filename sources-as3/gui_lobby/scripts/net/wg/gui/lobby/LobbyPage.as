@@ -5,6 +5,7 @@ package net.wg.gui.lobby
    import flash.display.DisplayObject;
    import flash.display.InteractiveObject;
    import flash.display.Sprite;
+   import flash.events.Event;
    import flash.events.MouseEvent;
    import flash.geom.Point;
    import net.wg.data.Aliases;
@@ -17,6 +18,7 @@ package net.wg.gui.lobby
    import net.wg.gui.components.containers.ManagedContainer;
    import net.wg.gui.components.vehicleHitArea.VehicleHitAreaComponent;
    import net.wg.gui.events.LobbyEvent;
+   import net.wg.gui.lobby.hangar.CrewDropDownEvent;
    import net.wg.gui.lobby.header.LobbyHeader;
    import net.wg.gui.lobby.header.headerButtonBar.HBC_Settings;
    import net.wg.gui.lobby.header.headerButtonBar.HeaderButton;
@@ -32,6 +34,7 @@ package net.wg.gui.lobby
    import scaleform.clik.constants.InvalidationType;
    import scaleform.clik.motion.Tween;
    import scaleform.clik.utils.Constraints;
+   import scaleform.gfx.Extensions;
    
    public class LobbyPage extends LobbyPageMeta implements ILobbyPage
    {
@@ -45,6 +48,8 @@ package net.wg.gui.lobby
       private static const TOP_SUB_VIEW_POSITION:Number = 53;
       
       private static const WARNING_EMPTY_HIT_AREA:String = "vehicleHitArea is null!";
+      
+      private static const HEADER_INVISIBLE_Y:int = -2000;
        
       
       public var vehicleHitArea:VehicleHitAreaComponent = null;
@@ -85,7 +90,7 @@ package net.wg.gui.lobby
       
       override public function updateStage(param1:Number, param2:Number) : void
       {
-         var _loc5_:IManagedContainer = null;
+         var _loc7_:IManagedContainer = null;
          _originalWidth = param1;
          _originalHeight = param2;
          setSize(param1,param2);
@@ -93,17 +98,15 @@ package net.wg.gui.lobby
          this.vehicleHitArea.height = param2 - this.vehicleHitArea.y;
          this.messengerBar.updateStage(param1,param2);
          var _loc3_:Array = this.getSubContainers();
-         var _loc4_:Number = param2 - TOP_SUB_VIEW_POSITION;
-         if(this.messengerBar.visible)
+         var _loc4_:int = !!this.messengerBar.visible ? int(MessengerBar.BAR_VISIBLE_HEIGHT) : int(0);
+         var _loc5_:int = !!this.header.visible ? int(TOP_SUB_VIEW_POSITION) : int(0);
+         var _loc6_:Number = param2 - _loc5_ - _loc4_;
+         for each(_loc7_ in _loc3_)
          {
-            _loc4_ -= MessengerBar.BAR_VISIBLE_HEIGHT;
-         }
-         for each(_loc5_ in _loc3_)
-         {
-            if(_loc5_)
+            if(_loc7_)
             {
-               _loc5_.y = TOP_SUB_VIEW_POSITION;
-               _loc5_.updateStage(param1,_loc4_);
+               _loc7_.y = _loc5_;
+               _loc7_.updateStage(param1,_loc6_);
             }
          }
          this.header.width = param1;
@@ -165,12 +168,14 @@ package net.wg.gui.lobby
          this.subTopContainer = this.addSubContainer(LAYER_NAMES.TOP_SUB_VIEW,_loc1_ + 1);
          this.subViewContainer.manageSize = false;
          this.subTopContainer.manageSize = false;
+         addEventListener(CrewDropDownEvent.SHOW_DROP_DOWN,this.onHangarShowDropDownHandler);
       }
       
       override protected function onDispose() : void
       {
          App.stage.removeEventListener(LobbyEvent.REGISTER_DRAGGING,this.onRegisterDraggingHandler);
          App.stage.removeEventListener(LobbyEvent.UNREGISTER_DRAGGING,this.onUnregisterDraggingHandler);
+         removeEventListener(CrewDropDownEvent.SHOW_DROP_DOWN,this.onHangarShowDropDownHandler);
          removeEventListener(TeaserEvent.HIDE,this.onTeaserHideHandler,true);
          removeChild(this.notificationPopupViewer);
          this.vehicleHitArea.hit.removeEventListener(MouseEvent.MOUSE_WHEEL,this.onHitAreaMouseWheelHandler);
@@ -216,15 +221,16 @@ package net.wg.gui.lobby
          this.waiting.hide();
       }
       
-      public function as_showHelpLayout() : void
+      public function as_setHeaderVisible(param1:Boolean) : void
       {
-      }
-      
-      public function as_showWaiting(param1:String) : void
-      {
-         this.waiting.setMessage(param1);
-         this.waiting.setSize(_width,_height);
-         this.waiting.show();
+         if(this.header.visible != param1)
+         {
+            this.header.visible = param1;
+            this.header.y = !!param1 ? Number(0) : Number(HEADER_INVISIBLE_Y);
+            this.updateCursorState();
+            this.updateStage(App.appWidth,App.appHeight);
+            dispatchEvent(new Event(Event.RESIZE));
+         }
       }
       
       public function as_setSubContainerItemsVisibility(param1:Boolean) : void
@@ -250,6 +256,17 @@ package net.wg.gui.lobby
          {
             setFocus(_loc2_);
          }
+      }
+      
+      public function as_showHelpLayout() : void
+      {
+      }
+      
+      public function as_showWaiting(param1:String) : void
+      {
+         this.waiting.setMessage(param1);
+         this.waiting.setSize(_width,_height);
+         this.waiting.show();
       }
       
       public function getDragType() : String
@@ -337,12 +354,22 @@ package net.wg.gui.lobby
          App.cursor.unRegisterDragging(this);
       }
       
+      private function updateCursorState() : void
+      {
+         var _loc1_:DisplayObject = Extensions.getMouseTopMostEntity(false);
+         var _loc2_:Boolean = this.vehicleHitArea.hit == _loc1_;
+         if(!_loc2_)
+         {
+            this._resetDragParams = true;
+         }
+         notifyCursorOver3dSceneS(_loc2_);
+      }
+      
       private function onTeaserHideHandler(param1:TeaserEvent) : void
       {
-         var _loc2_:Point = null;
          addChildAt(this._teaserOverlay = new Sprite(),getChildIndex(this.header) + 1);
          this._teaser = param1.teaser.drawToBitmap();
-         _loc2_ = new Point(this._teaser.x,this._teaser.y);
+         var _loc2_:Point = new Point(this._teaser.x,this._teaser.y);
          _loc2_ = this._teaserOverlay.globalToLocal(_loc2_);
          this._teaser.x = _loc2_.x;
          this._teaser.y = _loc2_.y;
@@ -382,6 +409,15 @@ package net.wg.gui.lobby
       private function onUnregisterDraggingHandler(param1:LobbyEvent) : void
       {
          this.unregisterDragging();
+      }
+      
+      private function onHangarShowDropDownHandler(param1:CrewDropDownEvent) : void
+      {
+         var _loc2_:DisplayObject = param1.dropDownref;
+         var _loc3_:Point = globalToLocal(new Point(_loc2_.x,_loc2_.y));
+         addChild(_loc2_);
+         _loc2_.x = _loc3_.x;
+         _loc2_.y = _loc3_.y;
       }
    }
 }

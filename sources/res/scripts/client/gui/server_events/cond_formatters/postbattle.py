@@ -49,7 +49,7 @@ class MissionsPostBattleConditionsFormatter(MissionsBattleConditionsFormatter):
            'isAlive': _SurviveFormatter(), 
            'achievements': _AchievementsFormatter(), 
            'clanKills': _ClanKillsFormatter(), 
-           'results': _BattleResultsFormatter(), 
+           'results': BattleResultsFormatter(), 
            'unitResults': _UnitResultsFormatter(), 
            'crits': _CritsFormatter(), 
            'multiStunEvent': _MultiStunEventFormatter(), 
@@ -219,7 +219,7 @@ class _FirstBloodFormatter(EmptyMissionsFormatter):
     pass
 
 
-class _BattleResultsFormatter(SimpleMissionsFormatter):
+class BattleResultsFormatter(SimpleMissionsFormatter):
 
     @classmethod
     def _getTitle(cls, condition):
@@ -229,7 +229,7 @@ class _BattleResultsFormatter(SimpleMissionsFormatter):
             return packSimpleTitle(i18n.makeString(QUESTS.DETAILS_CONDITIONS_TOP_TITLE, value=topRangeLower))
         else:
             if value is None:
-                return super(_BattleResultsFormatter, cls)._getTitle()
+                return super(BattleResultsFormatter, cls)._getTitle()
             if condition.keyName == 'markOfMastery':
                 return packSimpleTitle(value)
             if condition.keyName == 'rankChange':
@@ -255,7 +255,7 @@ class _BattleResultsFormatter(SimpleMissionsFormatter):
                 LOG_WARNING("Condition's text description is not supported.", condition.keyName)
                 return POSSIBLE_BATTLE_RESUTLS_KEYS[condition.keyName]
             LOG_ERROR('Condition is not supported.', condition.keyName)
-            return super(_BattleResultsFormatter, cls)._getIconKey()
+            return super(BattleResultsFormatter, cls)._getIconKey()
 
     def _getSortKey(self, condition):
         _, topRangeLower = condition.getMaxRange()
@@ -272,7 +272,7 @@ class _UnitResultsFormatter(SimpleMissionsFormatter):
             isAllAlive = condition.isAllAlive()
             if isAllAlive is not None:
                 result.append(self._packGui(condition))
-            resultsFormatter = _BattleResultsFormatter()
+            resultsFormatter = BattleResultsFormatter()
             for c in condition.getResults():
                 if not c.isHidden():
                     result.extend(resultsFormatter.format(c, event))

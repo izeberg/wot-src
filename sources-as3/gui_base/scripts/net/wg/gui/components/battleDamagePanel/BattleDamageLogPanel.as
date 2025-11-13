@@ -75,11 +75,7 @@ package net.wg.gui.components.battleDamagePanel
       
       private var _atlasName:String = "";
       
-      private var _atlasIconsPathMod:String = "";
-      
       private var _topContainerXPos:int = 0;
-      
-      private var _initiated:Boolean = false;
       
       public function BattleDamageLogPanel()
       {
@@ -198,19 +194,13 @@ package net.wg.gui.components.battleDamagePanel
          updateSummaryCounter(this.stunAnimation,this.stunValTF,param1);
       }
       
-      public function init(param1:String, param2:String = "") : void
+      public function init(param1:String) : void
       {
-         if(this._initiated)
-         {
-            return;
-         }
-         this._initiated = true;
          this._atlasName = param1;
-         this._atlasIconsPathMod = param2;
          addChild(this._detailsTopContainer);
-         this._damageLogDetailsTopController = new DamageLogDetailsController(this._detailsTopContainer,true,this._atlasName,param2);
+         this._damageLogDetailsTopController = new DamageLogDetailsController(this._detailsTopContainer,true,this._atlasName);
          addChild(this._detailsBottomContainer);
-         this._damageLogDetailsBottomController = new DamageLogDetailsController(this._detailsBottomContainer,false,this._atlasName,param2);
+         this._damageLogDetailsBottomController = new DamageLogDetailsController(this._detailsBottomContainer,false,this._atlasName);
          this.summaryDamageBlock.visible = this.summaryDefenceBlock.visible = this.summarySupportBlock.visible = this.summaryStunBlock.visible = false;
       }
       
@@ -246,10 +236,10 @@ package net.wg.gui.components.battleDamagePanel
             this.summaryDefenceBlock.init(this._atlasName);
             this.summarySupportBlock.init(this._atlasName);
             this.summaryStunBlock.init(this._atlasName);
-            this.summaryDamageBlock.loadImages(BATTLEDAMAGELOG_IMAGES.DAMAGELOG_DAMAGE_TOTAL,BATTLEDAMAGELOG_IMAGES.DAMAGELOG_DAMAGE_16X16 + this._atlasIconsPathMod);
+            this.summaryDamageBlock.loadImages(BATTLEDAMAGELOG_IMAGES.DAMAGELOG_DAMAGE_TOTAL,BATTLEDAMAGELOG_IMAGES.DAMAGELOG_DAMAGE_16X16);
             this.summaryDefenceBlock.loadImages(BATTLEDAMAGELOG_IMAGES.DAMAGELOG_DAMAGE_TOTAL,BATTLEDAMAGELOG_IMAGES.DAMAGELOG_REFLECT_16X16);
-            this.summarySupportBlock.loadImages(BATTLEDAMAGELOG_IMAGES.DAMAGELOG_DAMAGE_TOTAL,BATTLEDAMAGELOG_IMAGES.DAMAGELOG_ASSIST_16X16 + this._atlasIconsPathMod);
-            this.summaryStunBlock.loadImages(BATTLEDAMAGELOG_IMAGES.DAMAGELOG_DAMAGE_TOTAL,BATTLEDAMAGELOG_IMAGES.DAMAGELOG_STUN_16X16 + this._atlasIconsPathMod);
+            this.summarySupportBlock.loadImages(BATTLEDAMAGELOG_IMAGES.DAMAGELOG_DAMAGE_TOTAL,BATTLEDAMAGELOG_IMAGES.DAMAGELOG_ASSIST_16X16);
+            this.summaryStunBlock.loadImages(BATTLEDAMAGELOG_IMAGES.DAMAGELOG_DAMAGE_TOTAL,BATTLEDAMAGELOG_IMAGES.DAMAGELOG_STUN_16X16);
             this._isInited = true;
          }
          this._currentPositionTF = 0;

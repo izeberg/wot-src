@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/french/F134_ARL_Projet_F/normal/lod2/Chassis</parent>
+	<extent>64.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.772736 -0.000031 -4.500011</min>
+		<max>1.772736 1.643193 5.057634</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/french/F134_ARL_Projet_F/normal/lod1/Chassis</nodefullVisual>
+</root>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/british/GB141_Celestial_2_51/normal/lod3/Hull</parent>
+	<tank>true</tank>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.795709 -0.751643 -3.488484</min>
+		<max>1.793116 0.573758 3.507396</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/british/GB141_Celestial_2_51/normal/lod2/Hull</nodefullVisual>
+</root>

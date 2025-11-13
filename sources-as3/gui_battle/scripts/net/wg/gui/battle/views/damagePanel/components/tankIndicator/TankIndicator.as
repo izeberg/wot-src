@@ -137,7 +137,7 @@ package net.wg.gui.battle.views.damagePanel.components.tankIndicator
          {
             this._gunSPG.state = param2;
          }
-         else if(param1 != VehicleModules.TURRET_ROTATOR)
+         else
          {
             this._hull.setModuleState(param1,param2);
          }

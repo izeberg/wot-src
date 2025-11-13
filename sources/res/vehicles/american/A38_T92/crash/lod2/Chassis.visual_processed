@@ -169,15 +169,15 @@
 						<Bool>false</Bool>
 					</property>
 				</material>
-				<groupOrigin>-1.396976 0.656348 -0.163990</groupOrigin>
+				<groupOrigin>-1.396976 0.653703 0.285223</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<constraints/>
 	<boundingBox>
 		<min>-1.689105 0.002000 -3.237361</min>
-		<max>1.689105 1.310695 3.560194</max>
+		<max>1.689105 1.305406 3.560194</max>
 	</boundingBox>
-	<geometrySize>48552</geometrySize>
+	<geometrySize>37482</geometrySize>
 	<minUVDensity>0.302813</minUVDensity>
 </root>

@@ -86,25 +86,28 @@
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/280_cosm_geyser_bubbles.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/Shells_Eff/cosm_stun_debuff.eff</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Shells_Eff/cosm_stun_debuff.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/210_bf_epic_dot_light_01.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/280_cosm_comet_explosion_01.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/280_cosm_comet_trail_01.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/280_cosm_comet_trail_03.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/280_cosm_dust_tornado.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/280_cosm_dust_tornado_s.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/280_cosm_ship_trail_01.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/280_cosm_ship_trail_02.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/interior/210_bf_epic_dot_light_01.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/interior/280_cosm_comet_explosion_01.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/interior/280_cosm_comet_trail_01.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/interior/280_cosm_comet_trail_03.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/interior/280_cosm_dust_tornado.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/interior/280_cosm_dust_tornado_s.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/interior/280_cosm_ship_trail_01.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/interior/280_cosm_ship_trail_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/210_bf_epic_dot_light_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/280_cosm_comet_explosion_01.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/280_cosm_comet_explosion_01.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/280_cosm_comet_trail_01.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/280_cosm_comet_trail_03.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/280_cosm_comet_trail_01.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/280_cosm_comet_trail_03.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/280_cosm_dust_tornado.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/280_cosm_map_dust_02.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/280_cosm_ship_trail_01.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/280_cosm_ship_trail_02.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/280_cosm_ship_trail_01.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/280_cosm_ship_trail_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/280_cosm_water_deform_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/280_cosmic_debris_06_dust.eff</fn_effect_bin>
+		<preload>
+			<shader>data/shaders/ps.fx</shader>
+			<texture>particles/content_forward/pfx_textures/eff_tex_tornado.dds</texture>
+		</preload>
 	</forward>
 	<deferred>
 		<name>default</name>
@@ -232,28 +235,31 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/280_cosm_geyser_bubbles.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/Shells_Eff/cosm_stun_debuff.eff</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Shells_Eff/cosm_stun_debuff.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/CameraEffects/280_cosm_dust_01.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/210_bf_epic_dot_light_01.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/280_cosm_comet_explosion_01.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/280_cosm_comet_trail_01.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/280_cosm_comet_trail_03.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/280_cosm_dust_tornado.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/280_cosm_dust_tornado_s.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/280_cosm_map_dust_02.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/280_cosm_ship_trail_01.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/280_cosm_ship_trail_02.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/280_cosm_water_deform_01.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/280_cosmic_debris_06_dust.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/cameraeffects/280_cosm_dust_01.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/interior/210_bf_epic_dot_light_01.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/interior/280_cosm_comet_explosion_01.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/interior/280_cosm_comet_trail_01.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/interior/280_cosm_comet_trail_03.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/interior/280_cosm_dust_tornado.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/interior/280_cosm_dust_tornado_s.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/interior/280_cosm_map_dust_02.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/interior/280_cosm_ship_trail_01.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/interior/280_cosm_ship_trail_02.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/interior/280_cosm_water_deform_01.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/interior/280_cosmic_debris_06_dust.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/210_bf_epic_dot_light_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/280_cosm_comet_explosion_01.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/280_cosm_comet_explosion_01.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/280_cosm_comet_trail_01.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/280_cosm_comet_trail_03.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/280_cosm_comet_trail_01.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/280_cosm_comet_trail_03.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/280_cosm_dust_tornado.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/280_cosm_map_dust_02.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/280_cosm_ship_trail_01.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/280_cosm_ship_trail_02.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/280_cosm_ship_trail_01.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/280_cosm_ship_trail_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/280_cosm_water_deform_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/280_cosmic_debris_06_dust.eff</fn_effect_bin>
+		<preload>
+			<shader>data/shaders/ps.fx</shader>
+			<texture>particles/content_deferred/pfx_textures/eff_tex_tornado.dds</texture>
+		</preload>
 	</deferred>
 </root>

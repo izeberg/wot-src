@@ -1037,6 +1037,15 @@
 				<bank>portal25/Yaginskaya/voiceover.bnk</bank>
 			</wwbanks>
 		</mode>
+		<mode>
+			<name>ny26_ded_terentiy</name>
+			<wwise_language>NY2026/Ded_Terentiy</wwise_language>
+			<description/>
+			<invisible>True</invisible>
+			<wwbanks>
+				<bank>NY2026/Ded_Terentiy/voiceover.bnk</bank>
+			</wwbanks>
+		</mode>
 	</modes>
 	<nationalPresets>
 		<preset>

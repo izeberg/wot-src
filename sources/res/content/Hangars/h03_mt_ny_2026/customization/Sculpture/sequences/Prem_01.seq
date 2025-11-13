@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>0.000000</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Sculpture_Prem_1</name>
+		<type>model</type>
+		<resource>content/Hangars/h03_mt_ny_2026/customization/Sculpture/normal/lod0/h03_NY26_Sculpture_Prem_1.model</resource>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Sculpture_Prem_1_eff</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/environment/New_Year/sculpture_prem_01.model</resource>
+	</sequenceObject>
+	<events/>
+</root>

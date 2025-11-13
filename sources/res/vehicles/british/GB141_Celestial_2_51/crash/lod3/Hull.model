@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB141_Celestial_2_51/crash/lod3/Hull</nodefullVisual>
+	<parent>vehicles/british/GB141_Celestial_2_51/crash/lod4/Hull</parent>
+	<tank>true</tank>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-2.100260 -0.974837 -3.491988</min>
+		<max>2.338471 0.573424 3.463204</max>
+	</visibilityBox>
+</root>

@@ -32,7 +32,7 @@ package net.wg.gui.components.crosshairPanel
       {
       }
       
-      public function autoloaderShowShot() : void
+      public function showShot() : void
       {
       }
       
@@ -141,6 +141,10 @@ package net.wg.gui.components.crosshairPanel
       {
       }
       
+      public function setCoolantAbilityReloadingPenalty(param1:Number) : void
+      {
+      }
+      
       public function setVisibleNet(param1:int) : void
       {
       }
@@ -207,7 +211,15 @@ package net.wg.gui.components.crosshairPanel
       {
       }
       
-      public function setShotDamageIndValue(param1:int, param2:int) : void
+      public function setShotDamageIndValue(param1:int) : void
+      {
+      }
+      
+      public function animShotHitMarker(param1:String) : void
+      {
+      }
+      
+      public function setShotHitMarkerVisibility(param1:Boolean) : void
       {
       }
    }

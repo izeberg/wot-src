@@ -10,23 +10,23 @@ msgstr ""
 
 msgid "awardView/description"
 msgstr ""
-"Отличное пополнение в рядах тяжёлых советских танков, логичное развитие "
-"концепции тяжелобронированной и прекрасно вооружённой машины прорыва, "
-"способной в одиночку удерживать высоты или продавливать направления, больно "
-"кусая снарядами 152-мм орудия и реализуя неукротимый потенциал "
-"инновационного газотурбинного двигателя."
+"Выдатнае папаўненне ў шэрагах цяжкіх савецкіх танкаў. Гэта лагічнае развіццё"
+" канцэпцыі цяжкабраніраванай і магутна ўзброенай машыны прарыву. Яна "
+"здольная ў адзіночку ўтрымліваць вышыні або праціскаць кірунак атакі, сеючы "
+"знішчэнне 152-мм гарматай, а інавацыйны газатурбінны рухавік дае машыне "
+"ўражальную мабільнасць."
 
 msgid "awardView/end"
 msgstr "ПАДЗЕЯ ЗАВЯРШЫЛАСЯ"
 
 msgid "awardView/inHangar"
-msgstr "В Ангаре"
+msgstr "У Гаражы"
 
 msgid "awardView/info"
 msgstr "Нумар стылю"
 
 msgid "awardView/role"
-msgstr "Средний танк поддержки"
+msgstr "Сярэдні танк падтрымкі"
 
 msgid "awardView/toHangar"
 msgstr "Паглядзець у Гаражы"
@@ -158,7 +158,7 @@ msgstr "?empty?"
 
 msgid "mainView/footer/beforeEvent/title"
 msgstr ""
-"Поторопитесь вложить необходимые для сборки ресурсы и получите "
+"Паспяшайцеся ўкласці неабходныя для зборкі рэсурсы і атрымайце "
 "%(vehicleName)s!"
 
 msgid "mainView/footer/buttonChoose/text"
@@ -207,7 +207,7 @@ msgid "mainView/timer/leftTime"
 msgstr "Засталося"
 
 msgid "mainView/timer/lessThanMinute"
-msgstr "< 1 мин"
+msgstr "< 1 мин."
 
 msgid "resourcesLoadingView/buttons/close"
 msgstr "Закрыць"
@@ -261,7 +261,7 @@ msgid "resourcesLoadingView/resourcesHeader/blueprints"
 msgstr "Фрагменты чарцяжоў"
 
 msgid "resourcesLoadingView/resourcesHeader/currency"
-msgstr "Ресурсы"
+msgstr "Рэсурсы"
 
 msgid "resourcesLoadingView/resourcesHeader/premiums"
 msgstr "Дні прэміум акаўнту"
@@ -301,11 +301,11 @@ msgstr "Машыны без нумара"
 
 msgid "tooltips/entryPoint/notStartedEvent/text"
 msgstr ""
-"Участвуйте в событии, вкладывайте ресурсы и получите %(vehicleName) "
-"%(uniqVehicleText)Количество машин ограничено."
+"Удзельнічайце ў падзеі, укладвайце рэсурсы і атрымайце %(vehicleName) "
+"%(uniqVehicleText)Колькасць машын абмежаваная."
 
 msgid "tooltips/entryPoint/notStartedEvent/vehicleString/text"
-msgstr "с номерным 3D-стилем."
+msgstr "з нумарным 3D-стылем."
 
 msgid "tooltips/entryPoint/paused/text"
 msgstr "Падзея часова недаступная"
@@ -368,12 +368,12 @@ msgstr "Фрагменты чарцяжоў"
 
 msgid "tooltips/resourcesLoadingView/header/currency_description"
 msgstr ""
-"Ряд игровых валют, которые можно использовать для обмена. Золото можно "
-"приобрести за реальные деньги, остальное — заработать в сражениях, получить "
-"за боевые задачи и другие активные действия в игре."
+"Шэраг гульнявых валют, якія можна выкарыстаць для абмену. Золата можна "
+"набыць за рэальныя грошы, астатняе — заслужыць у баях, атрымаць за баявыя "
+"задачы і іншыя актыўныя дзеянні ў гульні."
 
 msgid "tooltips/resourcesLoadingView/header/currency_title"
-msgstr "Ресурсы"
+msgstr "Рэсурсы"
 
 msgid "tooltips/resourcesLoadingView/header/premiums_description"
 msgstr "Дні Танкавага прэміум акаўнту."
@@ -407,7 +407,7 @@ msgstr ""
 msgid "tooltips/uniq_style/description/secondPart"
 msgstr ""
 "Номер располагается на стволе с двух сторон и на задней части корпуса. "
-"Каждый владелец такой машины имеет свой уникальный номер, который не может "
+"Машина у каждого владельца имеет свой уникальный номер, который не может "
 "повторяться. Количество машин с уникальными номерами ограничено."
 
 msgid "tooltips/uniq_style/moreInfo"

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/intunion/Un02_Merkava_LP/_skins/Un02_Merkava_LP_3Dst_01/crash/lod2/Chassis</nodefullVisual>
+	<parent>vehicles/intunion/Un02_Merkava_LP/_skins/Un02_Merkava_LP_3Dst_01/crash/lod3/Chassis</parent>
+	<tank>true</tank>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.847358 -0.000107 -3.780452</min>
+		<max>1.847358 1.284848 3.653712</max>
+	</visibilityBox>
+</root>

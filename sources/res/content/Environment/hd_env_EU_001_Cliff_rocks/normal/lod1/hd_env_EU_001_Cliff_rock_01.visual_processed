@@ -13,9 +13,9 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<stream>uv2</stream>
-			<primitive>indices</primitive>
+			<vertices>s0Shape.vertices</vertices>
+			<stream>s0Shape.uv2</stream>
+			<primitive>s0Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -72,15 +72,15 @@
 						<Texture>content/Environment/hd_env_EU_001_Cliff_rocks/hd_env_EU_001_Cliff_rocks_dirt_DM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.399990 3.055338 -0.240267</groupOrigin>
+				<groupOrigin>-0.465589 3.059455 -0.165767</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-8.939303 -0.230440 -5.693392</min>
-		<max>8.139323 6.349339 5.142908</max>
+		<min>-8.937934 -0.230430 -5.693392</min>
+		<max>8.128240 6.349339 5.106050</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>32404</geometrySize>
-	<minUVDensity>0.010859</minUVDensity>
+	<geometrySize>34400</geometrySize>
+	<minUVDensity>0.008206</minUVDensity>
 </root>

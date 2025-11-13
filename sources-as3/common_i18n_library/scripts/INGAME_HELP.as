@@ -354,6 +354,12 @@ package
       public static const DETAILSHELP_DUALGUNWITHCLIP_TITLE:String = "#ingame_help:detailsHelp/dualgunWithClip/title";
       
       public static const DETAILSHELP_DUALGUNWITHCLIP_DESCRIPTION:String = "#ingame_help:detailsHelp/dualgunWithClip/description";
+      
+      public static const DETAILSHELP_DISTANCEDAMAGE_HEADERTITLE:String = "#ingame_help:detailsHelp/distanceDamage/headerTitle";
+      
+      public static const DETAILSHELP_DISTANCEDAMAGE_TITLE:String = "#ingame_help:detailsHelp/distanceDamage/title";
+      
+      public static const DETAILSHELP_DISTANCEDAMAGE_DESCRIPTION:String = "#ingame_help:detailsHelp/distanceDamage/description";
        
       
       public function INGAME_HELP()

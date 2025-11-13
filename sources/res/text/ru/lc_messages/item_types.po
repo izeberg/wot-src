@@ -188,6 +188,12 @@ msgstr "Бронебойный"
 msgid "shell/kinds/ARMOR_PIERCING_CR"
 msgstr "Подкалиберный"
 
+msgid "shell/kinds/ARMOR_PIERCING_CR_DF"
+msgstr "НУРС бронебойный подкалиберный"
+
+msgid "shell/kinds/ARMOR_PIERCING_DF"
+msgstr "НУРС бронебойный"
+
 msgid "shell/kinds/ARMOR_PIERCING_FSDS"
 msgstr "Бронебойный оперённый подкалиберный"
 
@@ -197,14 +203,23 @@ msgstr "Бронебойный оперённый"
 msgid "shell/kinds/ARMOR_PIERCING_HE"
 msgstr "Бронебойный каморный"
 
+msgid "shell/kinds/ARMOR_PIERCING_HE_DF"
+msgstr "НУРС бронебойный каморный"
+
 msgid "shell/kinds/FLAME"
 msgstr "Огнемётная смесь"
 
 msgid "shell/kinds/HIGH_EXPLOSIVE"
 msgstr "Осколочно-фугасный"
 
+msgid "shell/kinds/HIGH_EXPLOSIVE_DF"
+msgstr "НУРС осколочно-фугасный"
+
 msgid "shell/kinds/HOLLOW_CHARGE"
 msgstr "Кумулятивный"
+
+msgid "shell/kinds/HOLLOW_CHARGE_DF"
+msgstr "НУРС кумулятивный"
 
 msgid "shell/kindsAbbreviation/ARMOR_PIERCING"
 msgstr "ББ"
@@ -212,11 +227,20 @@ msgstr "ББ"
 msgid "shell/kindsAbbreviation/ARMOR_PIERCING_CR"
 msgstr "БП"
 
+msgid "shell/kindsAbbreviation/ARMOR_PIERCING_CR_DF"
+msgstr "НБП"
+
+msgid "shell/kindsAbbreviation/ARMOR_PIERCING_DF"
+msgstr "НБ"
+
 msgid "shell/kindsAbbreviation/ARMOR_PIERCING_FSDS"
 msgstr "БОПС"
 
 msgid "shell/kindsAbbreviation/ARMOR_PIERCING_HE"
 msgstr "БК"
+
+msgid "shell/kindsAbbreviation/ARMOR_PIERCING_HE_DF"
+msgstr "НФ"
 
 msgid "shell/kindsAbbreviation/FLAME"
 msgstr "ОC"
@@ -224,8 +248,14 @@ msgstr "ОC"
 msgid "shell/kindsAbbreviation/HIGH_EXPLOSIVE"
 msgstr "ОФ"
 
+msgid "shell/kindsAbbreviation/HIGH_EXPLOSIVE_DF"
+msgstr "НФ"
+
 msgid "shell/kindsAbbreviation/HOLLOW_CHARGE"
 msgstr "КC"
+
+msgid "shell/kindsAbbreviation/HOLLOW_CHARGE_DF"
+msgstr "НК"
 
 msgid "shell/kindsAbbreviation/SMOKE"
 msgstr "?empty?"

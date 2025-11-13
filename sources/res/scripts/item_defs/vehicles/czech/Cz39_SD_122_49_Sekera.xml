@@ -12,8 +12,8 @@
 	<postProgressionTree>role_ATSPG_support</postProgressionTree>
 	<customRoleSlotOptions>3 5</customRoleSlotOptions>
 	<speedLimits>
-		<forward>45</forward>
-		<backward>15</backward>
+		<forward>35</forward>
+		<backward>12</backward>
 	</speedLimits>
 	<invisibility>
 		<moving>
@@ -84,15 +84,15 @@
 			<battle>0</battle>
 		</fakeTurrets>
 		<armor>
-			<armor_1>160</armor_1>
-			<armor_2>100</armor_2>
+			<armor_1>210</armor_1>
+			<armor_2>150</armor_2>
 			<armor_3>80</armor_3>
 			<armor_4>80</armor_4>
 			<armor_5>40</armor_5>
 			<armor_6>40</armor_6>
 			<armor_7>80</armor_7>
 			<armor_8>0</armor_8>
-			<armor_9>80</armor_9>
+			<armor_9>130</armor_9>
 			<armor_10>30</armor_10>
 			<armor_11>80</armor_11>
 			<armor_12>80</armor_12>
@@ -117,10 +117,7 @@
 			<armor_19>100</armor_19>
 			<armor_20>80</armor_20>
 			<armor_21>40</armor_21>
-			<armor_22>
-				40
-				<vehicleDamageFactor>0</vehicleDamageFactor>
-			</armor_22>
+			<armor_22>125</armor_22>
 			<armor_23>230</armor_23>
 			<armor_24>200</armor_24>
 			<armor_25>200</armor_25>
@@ -2994,11 +2991,11 @@
 					<turretYawLimits>-11 11</turretYawLimits>
 					<reloadTime>22</reloadTime>
 					<aimingTime>
-						2.6
+						2.1
 						<!--BW_String-->
 					</aimingTime>
 					<shotDispersionRadius>
-						0.38
+						0.40
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<invisibilityFactorAtShot>
@@ -3145,8 +3142,8 @@
 		<detailed>
 			<engines>
 				<V_12_7>
-					<smplEnginePower>1000</smplEnginePower>
-					<smplFwMaxSpeed>45</smplFwMaxSpeed>
+					<smplEnginePower>850</smplEnginePower>
+					<smplFwMaxSpeed>35</smplFwMaxSpeed>
 				</V_12_7>
 			</engines>
 			<chassis>

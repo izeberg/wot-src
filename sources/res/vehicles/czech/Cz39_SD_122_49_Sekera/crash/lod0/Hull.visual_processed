@@ -217,10 +217,6 @@
 						<Texture>vehicles/czech/Cz39_SD_122_49_Sekera/SD_122_49_Sekera_chassis_01_ANM.dds</Texture>
 					</property>
 					<property>
-						doubleSided
-						<Bool>true</Bool>
-					</property>
-					<property>
 						excludeMaskAndAOMap
 						<Texture>vehicles/czech/Cz39_SD_122_49_Sekera/SD_122_49_Sekera_chassis_01_AO.dds</Texture>
 					</property>

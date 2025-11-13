@@ -321,6 +321,10 @@
 						normalMap
 						<Texture>vehicles/british/GB139_Vulcan/Vulcan_guns_ANM.dds</Texture>
 					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
 				</material>
 				<groupOrigin>-0.477802 -0.059907 2.086369</groupOrigin>
 			</primitiveGroup>

@@ -68,11 +68,11 @@ _LAYERS = [
 class VideoView(ViewImpl):
     __slots__ = ('__onVideoStartedHandle', '__onVideoStoppedHandle', '__onVideoClosedHandle',
                  '__isAutoClose', '__soundControl', '__previouslyVisibleLayers',
-                 '__app')
+                 '__app', '__videoSource', '__isUiVisible')
     __appFactory = dependency.descriptor(IAppLoader)
 
-    def __init__(self, *args, **kwargs):
-        settings = ViewSettings(R.views.lobby.video.video_view.VideoView())
+    def __init__(self, viewId, *args, **kwargs):
+        settings = ViewSettings(viewId or R.views.lobby.video.video_view.VideoView())
         settings.model = VideoViewModel()
         settings.args = args
         settings.kwargs = kwargs
@@ -81,23 +81,29 @@ class VideoView(ViewImpl):
         self.__onVideoStoppedHandle = kwargs.get('onVideoStopped')
         self.__onVideoClosedHandle = kwargs.get('onVideoClosed')
         self.__isAutoClose = kwargs.get('isAutoClose')
+        self.__isUiVisible = kwargs.get('isUiVisible')
         self.__soundControl = kwargs.get('soundControl') or DummySoundManager()
         self.__previouslyVisibleLayers = []
         self.__app = self.__appFactory.getApp()
+        self.__videoSource = kwargs.get('videoSource')
 
     @property
     def viewModel(self):
         return super(VideoView, self).getViewModel()
 
-    def _onLoading(self, videoSource, *args, **kwargs):
+    def _onLoading(self, *args, **kwargs):
         super(VideoView, self)._onLoading(*args, **kwargs)
-        if videoSource is None:
+        if self.__videoSource is None:
             _logger.error('__videoSource is not specified!')
         else:
-            self.viewModel.setVideoSource(videoSource)
+            self.viewModel.setVideoSource(self.__videoSource)
+            self.viewModel.setIsUIVisible(bool(self.__isUiVisible))
             language = getClientLanguage()
             self.viewModel.setSubtitleTrack(_LOCALE_TO_SUBTITLE_MAP.get(language, 0))
             self.viewModel.setIsWindowAccessible(Windowing.isWindowAccessible())
+            self.viewModel.setCanEscape(kwargs.get('canEscape', True))
+            self.viewModel.setIsUIVisible(kwargs.get('isUIVisible', False))
+            self.viewModel.setUiShowDelay(kwargs.get('uiShowDelay', -1))
             g_playerEvents.onAccountBecomeNonPlayer += self.__removeClosedHandle
             Windowing.addWindowAccessibilitynHandler(self.__onWindowAccessibilityChanged)
             switchVideoOverlaySoundFilter(on=True)
@@ -189,6 +195,6 @@ class VideoView(ViewImpl):
 class VideoViewWindow(LobbyWindow):
     __slots__ = ()
 
-    def __init__(self, *args, **kwargs):
-        super(VideoViewWindow, self).__init__(content=VideoView(*args, **kwargs), wndFlags=WindowFlags.WINDOW | WindowFlags.WINDOW_FULLSCREEN, layer=WindowLayer.OVERLAY, decorator=None)
+    def __init__(self, viewId=None, parent=None, *args, **kwargs):
+        super(VideoViewWindow, self).__init__(content=VideoView(viewId=viewId, *args, **kwargs), wndFlags=WindowFlags.WINDOW | WindowFlags.WINDOW_FULLSCREEN, layer=WindowLayer.OVERLAY, decorator=None, parent=parent)
         return

@@ -46,16 +46,16 @@ package net.wg.gui.battle.views.ribbonsPanel
          this._queue = null;
       }
       
-      public function pushShow(param1:String, param2:Number, param3:String, param4:String, param5:String, param6:String, param7:Boolean, param8:String, param9:String) : void
+      public function pushShow(param1:String, param2:Number, param3:String, param4:String, param5:String, param6:String, param7:Boolean, param8:String, param9:String, param10:String) : void
       {
-         var _loc10_:RibbonQueueItem = this._queueMapById[param2];
-         if(_loc10_ == null)
+         var _loc11_:RibbonQueueItem = this._queueMapById[param2];
+         if(_loc11_ == null)
          {
-            _loc10_ = this.getItemFromPool();
-            this._queueMapById[param2] = _loc10_;
-            this._queue.push(_loc10_);
+            _loc11_ = this.getItemFromPool();
+            this._queueMapById[param2] = _loc11_;
+            this._queue.push(_loc11_);
          }
-         _loc10_.setData(RibbonQueueItem.SHOW,param1,param2,param3,param4,param5,param6,param7,param8,param9);
+         _loc11_.setData(RibbonQueueItem.SHOW,param1,param2,param3,param4,param5,param6,param7,param8,param9,param10);
       }
       
       public function readNext() : RibbonQueueItem
@@ -81,7 +81,7 @@ package net.wg.gui.battle.views.ribbonsPanel
       public function unShiftHide(param1:Number) : void
       {
          var _loc2_:RibbonQueueItem = this.getItemFromPool();
-         _loc2_.setData(RibbonQueueItem.HIDE,Values.EMPTY_STR,param1,Values.EMPTY_STR,Values.EMPTY_STR,Values.EMPTY_STR,Values.EMPTY_STR,false,Values.EMPTY_STR,Values.EMPTY_STR);
+         _loc2_.setData(RibbonQueueItem.HIDE,Values.EMPTY_STR,param1,Values.EMPTY_STR,Values.EMPTY_STR,Values.EMPTY_STR,Values.EMPTY_STR,false,Values.EMPTY_STR,Values.EMPTY_STR,Values.EMPTY_STR);
          this._queue.unshift(_loc2_);
       }
       

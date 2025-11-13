@@ -54,14 +54,14 @@
 						<Texture>vehicles/british/GB139_Vulcan/Vulcan_proxy_AO.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.151473 -0.282203 1.526013</groupOrigin>
+				<groupOrigin>-0.156236 -0.236267 1.525712</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-0.699787 -0.882634 -3.244014</min>
-		<max>0.396841 0.318228 6.296040</max>
+		<min>-0.699787 -0.882634 -3.244314</min>
+		<max>0.387315 0.410100 6.295739</max>
 	</boundingBox>
-	<geometrySize>5744</geometrySize>
-	<minUVDensity>0.004156</minUVDensity>
+	<geometrySize>5484</geometrySize>
+	<minUVDensity>0.003306</minUVDensity>
 </root>

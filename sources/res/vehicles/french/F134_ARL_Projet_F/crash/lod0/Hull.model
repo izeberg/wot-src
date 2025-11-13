@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<parent>vehicles/french/F134_ARL_Projet_F/crash/lod1/Hull</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-2.052948 -1.357326 -5.317582</min>
+		<max>2.560917 0.614261 5.066014</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/french/F134_ARL_Projet_F/crash/lod0/Hull</nodefullVisual>
+</root>

@@ -48,8 +48,6 @@ package net.wg.gui.battle.views.destroyTimers
       
       public var container:SecondaryTimerContainer = null;
       
-      public var useAutoHide:Boolean = true;
-      
       private var _xScale:Number = 1;
       
       private var _yScale:Number = 1;
@@ -190,7 +188,7 @@ package net.wg.gui.battle.views.destroyTimers
                onIntervalHideComplete();
             }
          }
-         else if(this.useAutoHide)
+         else
          {
             this._xScale -= HIDE_SCALE_STEP_VALUE;
             this._yScale -= HIDE_SCALE_STEP_VALUE;

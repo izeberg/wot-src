@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/american/A175_OTAC_MT_58/_skins/A175_OTAC_MT_58_02_3Dst_01/crash/lod2/Turret_01</parent>
+	<tank>true</tank>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.719348 -0.014135 -2.635812</min>
+		<max>1.742843 1.883079 1.676801</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/american/A175_OTAC_MT_58/_skins/A175_OTAC_MT_58_02_3Dst_01/crash/lod1/Turret_01</nodefullVisual>
+</root>

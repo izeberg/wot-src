@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<nodefullVisual>vehicles/british/GB139_Vulcan/normal/lod1/G_anim_gate</nodefullVisual>
 	<tank>true</tank>
-	<visibilityBox>
-		<min>-0.165000 -0.265412 -4.828595</min>
-		<max>0.165000 0.269442 -4.217381</max>
-	</visibilityBox>
+	<nodefullVisual>vehicles/british/GB139_Vulcan/normal/lod1/G_anim_gate</nodefullVisual>
 	<parent>vehicles/british/GB139_Vulcan/normal/lod2/G_anim_gate</parent>
 	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.232723 -0.164989 -4.975168</min>
+		<max>0.264994 0.165016 -4.207402</max>
+	</visibilityBox>
 </root>

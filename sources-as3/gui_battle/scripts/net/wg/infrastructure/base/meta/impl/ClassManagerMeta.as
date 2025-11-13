@@ -525,6 +525,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.battle.views.carousel.PrebattleCarouselView;
    import net.wg.gui.battle.views.consumablesPanel.BattleAbilityEquipmentButton;
    import net.wg.gui.battle.views.consumablesPanel.BattleAbilityEquipmentButtonGlow;
+   import net.wg.gui.battle.views.consumablesPanel.BattleAbilityModifierIndicator;
    import net.wg.gui.battle.views.consumablesPanel.BattleEquipmentButton;
    import net.wg.gui.battle.views.consumablesPanel.BattleEquipmentButtonGlow;
    import net.wg.gui.battle.views.consumablesPanel.BattleOptionalDeviceButton;
@@ -838,11 +839,11 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.battle.views.recoveryPanel.RecoveryHint;
    import net.wg.gui.battle.views.recoveryPanel.RecoveryPanel;
    import net.wg.gui.battle.views.ribbonsPanel.AnimationSet;
+   import net.wg.gui.battle.views.ribbonsPanel.EfficiencyAbilityBonusAnimation;
    import net.wg.gui.battle.views.ribbonsPanel.EfficiencyBonusAnimation;
    import net.wg.gui.battle.views.ribbonsPanel.RibbonCtrl;
    import net.wg.gui.battle.views.ribbonsPanel.RibbonQueue;
    import net.wg.gui.battle.views.ribbonsPanel.RibbonsPanel;
-   import net.wg.gui.battle.views.ribbonsPanel.RibbonsPanelBase;
    import net.wg.gui.battle.views.ribbonsPanel.RibbonsPool;
    import net.wg.gui.battle.views.ribbonsPanel.data.RibbonAnimationStates;
    import net.wg.gui.battle.views.ribbonsPanel.data.RibbonQueueItem;
@@ -2056,6 +2057,8 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_BATTLE_VIEWS_CONSUMABLESPANEL_BATTLEABILITYEQUIPMENTBUTTONGLOW:Class = BattleAbilityEquipmentButtonGlow;
       
+      public static const NET_WG_GUI_BATTLE_VIEWS_CONSUMABLESPANEL_BATTLEABILITYMODIFIERINDICATOR:Class = BattleAbilityModifierIndicator;
+      
       public static const NET_WG_GUI_BATTLE_VIEWS_CONSUMABLESPANEL_BATTLEEQUIPMENTBUTTON:Class = BattleEquipmentButton;
       
       public static const NET_WG_GUI_BATTLE_VIEWS_CONSUMABLESPANEL_BATTLEEQUIPMENTBUTTONGLOW:Class = BattleEquipmentButtonGlow;
@@ -2682,6 +2685,8 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_BATTLE_VIEWS_RIBBONSPANEL_ANIMATIONSET:Class = AnimationSet;
       
+      public static const NET_WG_GUI_BATTLE_VIEWS_RIBBONSPANEL_EFFICIENCYABILITYBONUSANIMATION:Class = EfficiencyAbilityBonusAnimation;
+      
       public static const NET_WG_GUI_BATTLE_VIEWS_RIBBONSPANEL_EFFICIENCYBONUSANIMATION:Class = EfficiencyBonusAnimation;
       
       public static const NET_WG_GUI_BATTLE_VIEWS_RIBBONSPANEL_RIBBONCTRL:Class = RibbonCtrl;
@@ -2689,8 +2694,6 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_BATTLE_VIEWS_RIBBONSPANEL_RIBBONQUEUE:Class = RibbonQueue;
       
       public static const NET_WG_GUI_BATTLE_VIEWS_RIBBONSPANEL_RIBBONSPANEL:Class = RibbonsPanel;
-      
-      public static const NET_WG_GUI_BATTLE_VIEWS_RIBBONSPANEL_RIBBONSPANELBASE:Class = RibbonsPanelBase;
       
       public static const NET_WG_GUI_BATTLE_VIEWS_RIBBONSPANEL_RIBBONSPOOL:Class = RibbonsPool;
       

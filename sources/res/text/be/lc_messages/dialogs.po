@@ -494,6 +494,18 @@ msgstr ""
 msgid "bootcampCenterUnavailable/title"
 msgstr "Вучэбны палігон недаступны"
 
+msgid "breakDecorations/cancel"
+msgstr "Скасаваць"
+
+msgid "breakDecorations/message"
+msgstr "Разбить украшения и получить %(price)s?"
+
+msgid "breakDecorations/submit"
+msgstr "Пацвердзіць"
+
+msgid "breakDecorations/title"
+msgstr "Предупреждение операции"
+
 msgid "buyBerths/hangarBerths/header"
 msgstr "Месцы ў Жаўнерні (%(berthsCount)s шт)"
 
@@ -2389,6 +2401,18 @@ msgstr "Добра"
 msgid "moneyTransferRestriction/title"
 msgstr "Перавод золата забаронены."
 
+msgid "newYear/buyToy/cancel"
+msgstr "Скасаваць"
+
+msgid "newYear/buyToy/message"
+msgstr "Купить украшение за %(price)s?"
+
+msgid "newYear/buyToy/submit"
+msgstr "Купіць"
+
+msgid "newYear/buyToy/title"
+msgstr "Пацвярджэнне аперацыі"
+
 msgid "nextBattleOptionConfirmation/cancel"
 msgstr "Не"
 
@@ -2507,9 +2531,9 @@ msgstr ""
 
 msgid "punishmentWindow/message/penalty"
 msgstr ""
-"Уважаемый игрок, ввиду нарушения вами игровых правил на карте %(arenaName)s в %(time)s, а именно статьи «%(reason)s», к вам применено дисциплинарное взыскание. Указанный ниже штраф является крайней мерой наказания.\n"
+"Шаноўны гулец, за парушэнне вамі правіл гульні на мапе %(arenaName)s у %(time)s, а менавіта артыкула «%(reason)s», на вас накладзена дысцыплінарнае спагнанне. Паказаны ніжэй штраф — крайняя мера пакарання.\n"
 "\n"
-"Принятые меры:\n"
+"Прынятыя меры:\n"
 " "
 
 msgid "punishmentWindow/message/warning"

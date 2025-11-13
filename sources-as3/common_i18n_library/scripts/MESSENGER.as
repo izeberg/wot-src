@@ -2273,6 +2273,18 @@ package
       
       public static const PLATFORMCURRENCYMSG_DEBITED_FAMECOIN:String = "#messenger:platformCurrencyMsg/debited/famecoin";
       
+      public static const PLATFORMCURRENCYMSG_RECEIVED_NYRFOOD:String = "#messenger:platformCurrencyMsg/received/nyrfood";
+      
+      public static const PLATFORMCURRENCYMSG_DEBITED_NYRFOOD:String = "#messenger:platformCurrencyMsg/debited/nyrfood";
+      
+      public static const PLATFORMCURRENCYMSG_RECEIVED_NYRFUN:String = "#messenger:platformCurrencyMsg/received/nyrfun";
+      
+      public static const PLATFORMCURRENCYMSG_DEBITED_NYRFUN:String = "#messenger:platformCurrencyMsg/debited/nyrfun";
+      
+      public static const PLATFORMCURRENCYMSG_RECEIVED_NYRACTIV:String = "#messenger:platformCurrencyMsg/received/nyractiv";
+      
+      public static const PLATFORMCURRENCYMSG_DEBITED_NYRACTIV:String = "#messenger:platformCurrencyMsg/debited/nyractiv";
+      
       public static const PLATFORMCURRENCYMSG_RECEIVED_FREEXP:String = "#messenger:platformCurrencyMsg/received/freeXP";
       
       public static const PLATFORMCURRENCYMSG_DEBITED_FREEXP:String = "#messenger:platformCurrencyMsg/debited/freeXP";
@@ -2470,10 +2482,6 @@ package
       public static const SERVICECHANNELMESSAGES_PLAYSTREAKFREEZESINPROGRESS_BODY:String = "#messenger:serviceChannelMessages/playStreakFreezesInProgress/body";
       
       public static const SERVICECHANNELMESSAGES_PLAYSTREAKFREEZESEND_BODY:String = "#messenger:serviceChannelMessages/playStreakFreezesEnd/body";
-      
-      public static const PLATFORMCURRENCYMSG_RECEIVED_RAZLOM_COIN:String = "#messenger:platformCurrencyMsg/received/razlom_coin";
-      
-      public static const PLATFORMCURRENCYMSG_DEBITED_RAZLOM_COIN:String = "#messenger:platformCurrencyMsg/debited/razlom_coin";
       
       public static const DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_ENUM:Array = [DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_OFFLINE,DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_NOTREADY,DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_READY,DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_INBATTLE,DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_AFK];
        

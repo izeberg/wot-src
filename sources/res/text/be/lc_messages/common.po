@@ -45,16 +45,19 @@ msgid "dropdown/placeholder/select"
 msgstr "Выбраць"
 
 msgid "duration/days"
-msgstr "{days} д."
+msgstr "{days} сут."
 
 msgid "duration/hours"
-msgstr "{hours} ч."
+msgstr "{hours} гадз."
 
 msgid "duration/minutes"
-msgstr "{minutes} мин."
+msgstr "{minutes} хв."
 
 msgid "duration/seconds"
 msgstr "{seconds} с"
+
+msgid "duration/shortMinutes"
+msgstr "{minutes} м"
 
 msgid "duration/unlimited"
 msgstr "Бестэрмінова"

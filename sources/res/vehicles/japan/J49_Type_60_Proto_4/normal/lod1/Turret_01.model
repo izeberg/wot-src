@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/japan/J49_Type_60_Proto_4/normal/lod2/Turret_01</parent>
+	<tank>true</tank>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.872727 -0.006837 -0.271184</min>
+		<max>0.300312 1.212307 0.857955</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/japan/J49_Type_60_Proto_4/normal/lod1/Turret_01</nodefullVisual>
+</root>

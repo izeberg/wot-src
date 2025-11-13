@@ -66,6 +66,7 @@
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
 		<node>Tank_BlendBone</node>
+		<node>V_BlendBone</node>
 		<geometry>
 			<vertices>chassis_R_Shape.vertices</vertices>
 			<primitive>chassis_R_Shape.indices</primitive>
@@ -104,6 +105,7 @@
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
 		<node>Tank_BlendBone</node>
+		<node>V_BlendBone</node>
 		<geometry>
 			<vertices>chassis_L_Shape.vertices</vertices>
 			<primitive>chassis_L_Shape.indices</primitive>
@@ -141,9 +143,9 @@
 	</renderSet>
 	<constraints/>
 	<boundingBox>
-		<min>-1.455359 0.000033 -3.390722</min>
-		<max>1.455359 1.140586 3.418719</max>
+		<min>-1.455359 0.000031 -3.390721</min>
+		<max>1.455359 1.140589 3.418719</max>
 	</boundingBox>
 	<geometrySize>4712</geometrySize>
-	<minUVDensity>0.002789</minUVDensity>
+	<minUVDensity>0.002777</minUVDensity>
 </root>

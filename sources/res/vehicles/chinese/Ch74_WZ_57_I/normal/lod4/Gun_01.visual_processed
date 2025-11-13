@@ -92,25 +92,17 @@
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>tank_proxy_skinned</identifier>
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
 					<materialKind>0</materialKind>
+					<identifier>tank_proxy_skinned</identifier>
 					<collisionFlags>0</collisionFlags>
 					<property>
 						diffuseMap
 						<Texture>vehicles/chinese/Ch74_WZ_57_I/WZ_57_I_proxy_AM.dds</Texture>
 					</property>
 					<property>
-						excludeMaskAndAOMap
-						<Texture>vehicles/chinese/Ch74_WZ_57_I/WZ_57_I_proxy_AO.dds</Texture>
-					</property>
-					<property>
-						g_detailUVTiling
-						<Vector4>3.506850 3.506850 0.000000 0.000000</Vector4>
-					</property>
-					<property>
-						metallicDetailMap
-						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 					<property>
 						metallicGlossMap
@@ -121,8 +113,8 @@
 						<Texture>vehicles/chinese/Ch74_WZ_57_I/WZ_57_I_proxy_ANM.dds</Texture>
 					</property>
 					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+						excludeMaskAndAOMap
+						<Texture>vehicles/chinese/Ch74_WZ_57_I/WZ_57_I_proxy_AO.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>0.000000 0.050247 -2.315231</groupOrigin>

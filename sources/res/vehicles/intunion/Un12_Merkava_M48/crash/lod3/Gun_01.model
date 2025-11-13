@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/intunion/Un12_Merkava_M48/crash/lod4/Gun_01</parent>
+	<tank>true</tank>
+	<extent>192.000000</extent>
+	<nodelessVisual>vehicles/intunion/Un12_Merkava_M48/crash/lod3/Gun_01</nodelessVisual>
+	<visibilityBox>
+		<min>-0.496252 -0.289356 -0.881143</min>
+		<max>0.534139 0.641512 4.138476</max>
+	</visibilityBox>
+</root>

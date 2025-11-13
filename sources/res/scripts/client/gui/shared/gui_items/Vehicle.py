@@ -178,7 +178,6 @@ class VEHICLE_TAGS(CONST_CONTAINER):
     WOT_PLUS = constants.VEHICLE_WOT_PLUS_TAG
     NO_CREW_TRANSFER_PENALTY_TAG = constants.VEHICLE_NO_CREW_TRANSFER_PENALTY_TAG
     HIDDEN = 'hidden_in_hangar'
-    PORTAL = 'portal'
 
 
 DISCLAIMER_TAGS = frozenset((VEHICLE_TAGS.T34_DISCLAIMER,))
@@ -627,10 +626,10 @@ class Vehicle(FittingItem):
         return
 
     def _getOutfitComponent(self, proxy, style, styleProgressionLevel, styleSerialNumber, season):
-        if style is not None:
+        if style is not None and season != SeasonType.EVENT:
             return self.__getStyledOutfitComponent(proxy, style, styleProgressionLevel, styleSerialNumber, season)
         else:
-            if self._isStyleInstalled:
+            if self._isStyleInstalled and season != SeasonType.EVENT:
                 return self.__getEmptyOutfitComponent()
             return self.__getCustomOutfitComponent(proxy, season)
 
@@ -1073,11 +1072,11 @@ class Vehicle(FittingItem):
 
     @property
     def ammoMaxSize(self):
-        return self.descriptor.gun.maxAmmo - sum(s.count * s.ammoWeight - s.count for s in self.shells.layout.getItems())
+        return self.descriptor.gun.maxAmmo
 
     @property
     def ammoMinSize(self):
-        return self.ammoMaxSize * NOT_FULL_AMMO_MULTIPLIER
+        return self.descriptor.gun.maxAmmo * NOT_FULL_AMMO_MULTIPLIER
 
     @property
     def isAmmoFull(self):
@@ -1564,10 +1563,6 @@ class Vehicle(FittingItem):
     @property
     def isEarnCrystals(self):
         return checkForTags(self.tags, VEHICLE_TAGS.EARN_CRYSTALS)
-
-    @property
-    def isOnlyForPortalBattlesVehicle(self):
-        return checkForTags(self.tags, VEHICLE_TAGS.PORTAL)
 
     def getCrystalsEarnedInfo(self):
         limit = 0

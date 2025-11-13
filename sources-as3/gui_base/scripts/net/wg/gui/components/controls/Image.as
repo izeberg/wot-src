@@ -106,11 +106,6 @@ package net.wg.gui.components.controls
          this._imgData.removeEventListener(IOErrorEvent.IO_ERROR,this.onImgDataIoErrorHandler);
       }
       
-      public function get bitmap() : Bitmap
-      {
-         return this._bitmap;
-      }
-      
       public function get source() : String
       {
          return this._source;

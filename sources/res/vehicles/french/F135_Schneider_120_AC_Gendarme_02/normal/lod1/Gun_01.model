@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/french/F135_Schneider_120_AC_Gendarme_02/normal/lod1/Gun_01</nodefullVisual>
+	<parent>vehicles/french/F135_Schneider_120_AC_Gendarme_02/normal/lod2/Gun_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.921000 -0.758948 -2.178962</min>
+		<max>0.921680 0.781548 8.856282</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

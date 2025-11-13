@@ -1,4 +1,4 @@
-from armory_yard.gui.shared.bonus_packers import getArmoryYardBuyViewPacker
+from armory_yard.gui.shared.bonus_packers import getArmoryYardBonusPacker
 from frameworks.wulf import ViewSettings
 from armory_yard.gui.impl.gen.view_models.views.lobby.feature.tooltips.rest_reward_tooltip_view_model import RestRewardTooltipViewModel
 from gui.impl.gen import R
@@ -22,5 +22,5 @@ class RestRewardTooltipView(ViewImpl):
         super(RestRewardTooltipView, self)._onLoading()
         with self.viewModel.transaction() as (vm):
             rewardsModel = vm.getRewards()
-            packBonusModelAndTooltipData(self.__rewards, rewardsModel, packer=getArmoryYardBuyViewPacker())
+            packBonusModelAndTooltipData(self.__rewards, rewardsModel, packer=getArmoryYardBonusPacker())
             rewardsModel.invalidate()

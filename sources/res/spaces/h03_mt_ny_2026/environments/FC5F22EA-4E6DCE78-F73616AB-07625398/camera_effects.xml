@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<effectMap>spaces/h03_mt_ny_2026/environments/FC5F22EA-4E6DCE78-F73616AB-07625398/camera_effects_map.dds</effectMap>
+	<effect>
+		<id>1</id>
+		<name>particles/content_deferred/PFX/Environment/CameraEffects/h03_new_year_snow.vfx</name>
+		<alignToTerrain>false</alignToTerrain>
+		<useCameraTarget>true</useCameraTarget>
+	</effect>
+</root>

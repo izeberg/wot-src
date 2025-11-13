@@ -13,8 +13,8 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<primitive>indices</primitive>
+			<vertices>track_1Shape.vertices</vertices>
+			<primitive>track_1Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -67,14 +67,14 @@
 						<Vector4>2.104110 2.104110 0.000000 0.000000</Vector4>
 					</property>
 				</material>
-				<groupOrigin>0.002648 -0.024420 0.000000</groupOrigin>
+				<groupOrigin>0.000000 -0.024015 0.000000</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-0.288408 -0.089665 -0.104157</min>
-		<max>0.293704 0.040825 0.104157</max>
+		<min>-0.291056 -0.089261 -0.104157</min>
+		<max>0.291056 0.041230 0.104157</max>
 	</boundingBox>
 	<geometrySize>6656</geometrySize>
-	<minUVDensity>1.501247</minUVDensity>
+	<minUVDensity>1.501253</minUVDensity>
 </root>

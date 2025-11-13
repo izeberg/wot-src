@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/intunion/Un12_Merkava_M48/normal/lod3/Hull</parent>
+	<tank>true</tank>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.871747 -0.661436 -4.045004</min>
+		<max>1.892577 0.840771 3.908855</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/intunion/Un12_Merkava_M48/normal/lod2/Hull</nodefullVisual>
+</root>

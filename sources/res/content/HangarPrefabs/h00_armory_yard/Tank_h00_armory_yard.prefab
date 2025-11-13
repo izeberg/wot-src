@@ -122,7 +122,7 @@
 					<property>
 						<name>Position</name>
 						<value>
-							-4.07037 0.784402 -7.98854
+							2.11596e-06 1.56283 -8.86327
 							<!--BW_String-->
 						</value>
 					</property>
@@ -133,7 +133,7 @@
 					<property>
 						<name>Rotation</name>
 						<value>
-							0.0872665 0.471239 0
+							0.174533 -2.38419e-07 -3.60752e-15
 							<!--BW_String-->
 						</value>
 					</property>
@@ -268,19 +268,22 @@
 					</property>
 					<property>
 						<name>PitchLimits</name>
-						<value>-70 -5</value>
+						<value>
+							-80 -6.5
+							<!--BW_String-->
+						</value>
 					</property>
 					<property>
 						<name>DistLimits</name>
-						<value>6 9</value>
+						<value>6 10</value>
 					</property>
 					<property>
 						<name>StartYaw</name>
-						<value>-153</value>
+						<value>-180</value>
 					</property>
 					<property>
 						<name>StartPitch</name>
-						<value>-5</value>
+						<value>-10</value>
 					</property>
 					<property>
 						<name>StartDist</name>
@@ -342,7 +345,10 @@
 					</property>
 					<property>
 						<name>DistLimits</name>
-						<value>7 10</value>
+						<value>
+							6.5 10
+							<!--BW_String-->
+						</value>
 					</property>
 					<property>
 						<name>EasingInTime</name>
@@ -358,7 +364,7 @@
 					</property>
 					<property>
 						<name>YawPeriod</name>
-						<value>140</value>
+						<value>100</value>
 					</property>
 				</config>
 			</component>

@@ -47,9 +47,6 @@ msgstr "T-11"
 msgid "Chassis_Cz04_T50_51"
 msgstr "TVP T 50/51"
 
-msgid "Chassis_Cz04_T50_51_ISP"
-msgstr "TVP T 50/51"
-
 msgid "Chassis_Cz05_T34_100"
 msgstr "T-34/85"
 
@@ -264,25 +261,6 @@ msgstr "LT vz. 35"
 msgid "Cz04_T50_51"
 msgstr "TVP T 50/51"
 
-msgid "Cz04_T50_51_ISP"
-msgstr "TVP T 50/51 (И)"
-
-msgid "Cz04_T50_51_ISP_descr"
-msgstr ""
-"Сумесны праект кампаній Škoda і ČKD. 14 студзеня 1950 г. пачалося "
-"абмеркаванне спецыфікацый будучага танка, аднак ужо 4 сакавіка 1950 г. "
-"Міністэрства абароны Чэхаславакіі абвясціла пра спыненне работы над "
-"праектам. Першаўзор пабудаваны не быў. Існаваў толькі ў чарцяжах."
-
-msgid "Cz04_T50_51_ISP_long_special"
-msgstr "?empty?"
-
-msgid "Cz04_T50_51_ISP_short"
-msgstr "TVP T 50/51 (И)"
-
-msgid "Cz04_T50_51_ISP_short_special"
-msgstr "?empty?"
-
 msgid "Cz04_T50_51_descr"
 msgstr ""
 "Сумесны праект кампаній Škoda і ČKD. 14 студзеня 1950 г. пачалося "
@@ -492,7 +470,7 @@ msgid "Cz17_Vz_55_CN_short"
 msgstr "Warrior"
 
 msgid "Cz17_Vz_55_CN_short_special"
-msgstr "Уникальный внешний вид, магазин на два снаряда"
+msgstr "Унікальны выгляд, магазін на два снарады"
 
 msgid "Cz17_Vz_55_descr"
 msgstr ""
@@ -766,9 +744,9 @@ msgstr "SD-122/49 Sekera"
 
 msgid "Cz39_SD_122_49_Sekera_descr"
 msgstr ""
-".\n"
+" \n"
 "\n"
-"Характеристики машины могут быть изменены без компенсации."
+"Характарыстыкі машыны могуць быць зменены без кампенсацыі."
 
 msgid "Cz39_SD_122_49_Sekera_long_special"
 msgstr "?empty?"
@@ -804,9 +782,6 @@ msgid "PepelacRadio"
 msgstr "Метэор"
 
 msgid "Praga_AXK"
-msgstr "Praga AXK"
-
-msgid "Praga_AXK_ISP"
 msgstr "Praga AXK"
 
 msgid "Praga_AXK_X16"
@@ -853,9 +828,6 @@ msgstr "Radiostanice RM-31T"
 
 msgid "Radiostanice_RM_31T_A_CN"
 msgstr "Radiostanice RM-31T GW"
-
-msgid "Radiostanice_RM_31T_A_ISP"
-msgstr "Radiostanice RM-31T"
 
 msgid "Radiostanice_RM_31T_K"
 msgstr "Radiostanice RM-31T"
@@ -972,9 +944,6 @@ msgid "Turret_1_Cz03_LT_vz35"
 msgstr "LT vz. 35"
 
 msgid "Turret_1_Cz04_T50_51"
-msgstr "TVP T 50/51"
-
-msgid "Turret_1_Cz04_T50_51_ISP"
 msgstr "TVP T 50/51"
 
 msgid "Turret_1_Cz05_T34_100"
@@ -1115,9 +1084,6 @@ msgstr "100 mm A20"
 msgid "_100mm_AK1"
 msgstr "100 mm AK1"
 
-msgid "_100mm_AK1_ISP"
-msgstr "100 mm AK1"
-
 msgid "_100mm_BS_3"
 msgstr "100 mm BS-3"
 
@@ -1142,16 +1108,10 @@ msgstr "Nárazový vz. 49"
 msgid "_100mm_Narazovy_vz_50"
 msgstr "Nárazový vz. 50"
 
-msgid "_100mm_Narazovy_vz_50_ISP"
-msgstr "Nárazový vz. 50"
-
 msgid "_100mm_Prupalny_s_53"
 msgstr "Průpalný S 53"
 
 msgid "_100mm_Prupalny_vz_50"
-msgstr "Průpalný vz. 50"
-
-msgid "_100mm_Prupalny_vz_50_ISP"
 msgstr "Průpalný vz. 50"
 
 msgid "_100mm_Prupalny_vz_PP5"
@@ -1173,9 +1133,6 @@ msgid "_100mm_Prurazny_vz_49_s_oc_jadrem"
 msgstr "Průrazný vz. 49 (s jádrem)"
 
 msgid "_100mm_Prurazny_vz_50"
-msgstr "Průrazný vz. 50"
-
-msgid "_100mm_Prurazny_vz_50_ISP"
 msgstr "Průrazný vz. 50"
 
 msgid "_100mm_Prurazny_vz_PJ8_Dravec"

@@ -1,5 +1,5 @@
 import logging
-from gui_lootboxes.gui.lb_gui_constants import SCH_CLIENT_MSG_TYPE
+from gui_lootboxes.gui.lb_gui_constants import SCH_CLIENT_MSG_TYPE, GLOW
 from constants import LOOTBOX_KEY_PREFIX
 from gui.server_events.bonuses import getMergedBonusesFromDicts
 from gui.shared.money import ZERO_MONEY, Currency, Money
@@ -7,6 +7,7 @@ from helpers import dependency
 from skeletons.gui.system_messages import ISystemMessages
 TOKEN_COMPENSATION_TEMPLATE = 'lb_comp:{}:{}:{}:{}'
 TOKEN_COMPENSATION_PREFIX = 'lb_comp:'
+CURRENCY_TOKENS = ('ny26_mandarin', )
 _logger = logging.getLogger(__name__)
 
 def preformatCompensationValue(rewards):
@@ -16,6 +17,7 @@ def preformatCompensationValue(rewards):
         if tokenID.startswith(TOKEN_COMPENSATION_PREFIX):
             compValue += _getCompensationValueFromToken(tokenID)
 
+    _modifyLBCompensation(rewards)
     for currency in Currency.ALL:
         if compValue.get(currency, 0) > 0:
             currencyValue = rewards.pop(currency, 0)
@@ -25,6 +27,22 @@ def preformatCompensationValue(rewards):
                     rewards[currency] = max(newCurrencyValue, 0)
 
     return
+
+
+def _modifyLBCompensation(rewards):
+    tokens = rewards.get('tokens', {})
+    popTokens = set()
+    for tokenName, info in tokens.iteritems():
+        if tokenName.startswith(TOKEN_COMPENSATION_PREFIX):
+            currency, amount, _, _ = parseCompenstaionToken(tokenName)
+            if currency in CURRENCY_TOKENS:
+                amount *= info['count']
+                tokens[currency]['count'] = tokens[currency]['count'] - amount
+                if tokens[currency]['count'] == 0:
+                    popTokens.add(currency)
+
+    for tokenName in popTokens:
+        tokens.pop(tokenName)
 
 
 def _getCompensationVehicleValue(vehiclesList):
@@ -60,6 +78,20 @@ def preformatKey(rewards, dataUsedKeys, dataFaildKey):
                 rewards['tokens'][token]['count'] += 1
 
 
+def preformatVehicleItems(rewards):
+    items = rewards.get('items')
+    if not items:
+        return
+    else:
+        vehiclesList = rewards.get('vehicles', [])
+        for vehiclesDict in vehiclesList:
+            for _, vehicleData in vehiclesDict.iteritems():
+                for unlockModule in vehicleData.get('unlockModules', []):
+                    rewards.get('items', {}).pop(unlockModule, None)
+
+        return
+
+
 def prepareOpenResult(result):
     if result and result.success and result.auxData:
         bonus = result.auxData.get('bonus', [])
@@ -69,9 +101,11 @@ def prepareOpenResult(result):
             preformatCompensationValue(rewards)
             preformatStyle(rewards)
             preformatKey(rewards, dataUsedKeys, dataFaildKey)
+            preformatVehicleItems(rewards)
 
         rewards = getMergedBonusesFromDicts(bonus)
         openedLootBoxesData = result.auxData.get('extData', {}).get('openedLootBoxes', {})
+        result.auxData['clientData']['uniqueOpening'] = GLOW in rewards.get('meta', {})
         message = {'rewards': rewards, 'failedKeys': dataFaildKey, 
            'usedKeys': dataUsedKeys, 
            'openedLootBoxes': openedLootBoxesData}
@@ -88,3 +122,11 @@ def parseCompenstaionToken(tokenID):
         return (None, None, None, None)
 
     return
+
+
+def calculateCountBonusItems(bonuses):
+    count = 0
+    for bonus in bonuses:
+        count += bonus.getCount()
+
+    return count

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-0.729678 -0.037405 -0.667589</min>
+		<max>0.834809 2.541847 0.820057</max>
+	</visibilityBox>
+	<parent>content/Environment/hd_env_UNI_0005_DeerGlow/normal/lod1/hd_env_UNI_0005_DeerGlow</parent>
+	<extent>35.000000</extent>
+	<havok>
+		<damagedState>true</damagedState>
+	</havok>
+	<nodefullVisual>content/Environment/hd_env_UNI_0005_DeerGlow/normal/lod0/hd_env_UNI_0005_DeerGlow</nodefullVisual>
+</root>

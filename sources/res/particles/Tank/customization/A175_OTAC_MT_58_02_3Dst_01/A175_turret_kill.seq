@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>3.033000</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>glow</name>
+		<type>particle</type>
+		<resource>particles/Tank/customization/A175_OTAC_MT_58_02_3Dst_01/a175_turret_energy.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.160484 -0.597240 6.059593</value>
+				<inTangent>-10.535202 12.118740 -7.180138</inTangent>
+				<outTangent>-10.535202 12.118740 -7.180138</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.200000</startTime>
+				<value>-1.946556 1.826508 4.623566</value>
+				<inTangent>0.590572 0.785211 -8.282457</inTangent>
+				<outTangent>0.590572 0.785211 -8.282457</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.366667</startTime>
+				<value>0.006172 0.068451 3.059433</value>
+				<inTangent>3.357537 -2.506801 -8.388340</inTangent>
+				<outTangent>3.357537 -2.506801 -8.388340</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.533333</startTime>
+				<value>-0.827370 0.990900 1.827454</value>
+				<inTangent>-4.999014 1.919899 -7.366616</inTangent>
+				<outTangent>-4.999014 1.919899 -7.366616</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.700000</startTime>
+				<value>-1.660164 0.708413 0.603897</value>
+				<inTangent>-2.797526 -1.889990 -7.229795</inTangent>
+				<outTangent>-2.797526 -1.889990 -7.229795</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.900000</startTime>
+				<value>-1.779823 0.291401 -0.819756</value>
+				<inTangent>2.022515 -0.294480 -7.414552</inTangent>
+				<outTangent>2.022515 -0.294480 -7.414552</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.100000</startTime>
+				<value>-0.851158 0.590621 -2.361923</value>
+				<inTangent>6.462980 0.164794 -2.834149</inTangent>
+				<outTangent>6.462980 0.164794 -2.834149</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.266667</startTime>
+				<value>0.529282 0.396202 -2.021500</value>
+				<inTangent>6.944503 0.701309 4.311951</inTangent>
+				<outTangent>6.944503 0.701309 4.311951</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.433333</startTime>
+				<value>1.463676 0.824390 -0.924606</value>
+				<inTangent>2.538690 1.417926 7.418838</inTangent>
+				<outTangent>2.538690 1.417926 7.418838</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.600000</startTime>
+				<value>1.375511 0.868844 0.451447</value>
+				<inTangent>-3.369072 0.607461 4.580267</inTangent>
+				<outTangent>-3.369072 0.607461 4.580267</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.766667</startTime>
+				<value>0.340652 1.026877 0.602150</value>
+				<inTangent>-3.834367 1.573738 -2.983315</inTangent>
+				<outTangent>-3.834367 1.573738 -2.983315</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.933333</startTime>
+				<value>0.097389 1.393423 -0.542992</value>
+				<inTangent>1.310919 1.099637 -3.645310</inTangent>
+				<outTangent>1.310919 1.099637 -3.645310</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.066667</startTime>
+				<value>0.641579 1.393423 -0.598961</value>
+				<inTangent>2.040709 0.804497 2.882541</inTangent>
+				<outTangent>2.040709 0.804497 2.882541</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.166667</startTime>
+				<value>0.641579 1.554322 0.019524</value>
+				<inTangent>-0.000000 1.608993 6.184851</inTangent>
+				<outTangent>-0.000000 1.608993 6.184851</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>25.611179</inTangent>
+				<outTangent>25.611179</outTangent>
+				<tangentMode>256</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.066667</startTime>
+				<value>1.707412</value>
+				<inTangent>25.611053</inTangent>
+				<outTangent>0.002691</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.200000</startTime>
+				<value>1.713153</value>
+				<inTangent>0.002691</inTangent>
+				<outTangent>-25.697227</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.266667</startTime>
+				<value>0.000000</value>
+				<inTangent>-25.697227</inTangent>
+				<outTangent>0.082833</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>sparks_tracker</name>
+		<type>particle</type>
+		<resource>particles/tank/customization/a175_otac_mt_58_02_3dst_01/a175_turret_sparks_outside.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.570000 1.630000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>2.133333</startTime>
+				<value>0.000000</value>
+				<inTangent>51.222408</inTangent>
+				<outTangent>51.222408</outTangent>
+				<tangentMode>256</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.166667</startTime>
+				<value>1.707412</value>
+				<inTangent>51.222408</inTangent>
+				<outTangent>0.014352</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.566667</startTime>
+				<value>1.713153</value>
+				<inTangent>0.014352</inTangent>
+				<outTangent>-25.697319</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.633333</startTime>
+				<value>0.000000</value>
+				<inTangent>-25.697319</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Flash</name>
+		<type>particle</type>
+		<resource>particles/tank/customization/a175_otac_mt_58_02_3dst_01/a175_turret_flash.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.570000 1.630000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>2.100000</startTime>
+				<value>0.000000</value>
+				<inTangent>51.222408</inTangent>
+				<outTangent>51.222408</outTangent>
+				<tangentMode>256</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.133333</startTime>
+				<value>1.707412</value>
+				<inTangent>51.222408</inTangent>
+				<outTangent>0.043057</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.266667</startTime>
+				<value>1.713153</value>
+				<inTangent>0.043057</inTangent>
+				<outTangent>-25.697319</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.333333</startTime>
+				<value>0.000000</value>
+				<inTangent>-25.697319</inTangent>
+				<outTangent>0.082833</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Flash_stattracker</name>
+		<type>particle</type>
+		<resource>particles/tank/customization/a175_otac_mt_58_02_3dst_01/a175_turret_flash.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.580002 0.420000 -1.979279</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>1.200000</startTime>
+				<value>0.000000</value>
+				<inTangent>51.222408</inTangent>
+				<outTangent>51.222408</outTangent>
+				<tangentMode>256</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.233333</startTime>
+				<value>1.707412</value>
+				<inTangent>51.222408</inTangent>
+				<outTangent>0.024604</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.466667</startTime>
+				<value>1.713153</value>
+				<inTangent>0.024604</inTangent>
+				<outTangent>-51.394455</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.500000</startTime>
+				<value>0.000000</value>
+				<inTangent>-51.394455</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>particleSize</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.800000</value>
+				<inTangent>0.000000</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>sparks_bird</name>
+		<type>particle</type>
+		<resource>particles/tank/customization/a175_otac_mt_58_02_3dst_01/a175_turret_sparks_outside.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.570000 0.427532 -2.042931</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>1.200000</startTime>
+				<value>0.000000</value>
+				<inTangent>51.222408</inTangent>
+				<outTangent>51.222408</outTangent>
+				<tangentMode>256</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.233333</startTime>
+				<value>1.707412</value>
+				<inTangent>51.222408</inTangent>
+				<outTangent>0.014352</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.633333</startTime>
+				<value>1.713153</value>
+				<inTangent>0.014352</inTangent>
+				<outTangent>-25.697319</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.700000</startTime>
+				<value>0.000000</value>
+				<inTangent>-25.697319</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Flash_start</name>
+		<type>particle</type>
+		<resource>particles/tank/customization/a175_otac_mt_58_02_3dst_01/a175_turret_flash.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.160484 -0.597240 6.059590</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>51.222359</inTangent>
+				<outTangent>51.222359</outTangent>
+				<tangentMode>256</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.033333</startTime>
+				<value>1.707412</value>
+				<inTangent>51.222359</inTangent>
+				<outTangent>0.043057</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.166667</startTime>
+				<value>1.713153</value>
+				<inTangent>0.043057</inTangent>
+				<outTangent>-25.697290</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.233333</startTime>
+				<value>0.000000</value>
+				<inTangent>-25.697290</inTangent>
+				<outTangent>0.082833</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>sparks_start</name>
+		<type>particle</type>
+		<resource>particles/tank/customization/a175_otac_mt_58_02_3dst_01/a175_turret_sparks_outside.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.160484 -0.597240 6.059590</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>51.222359</inTangent>
+				<outTangent>51.222359</outTangent>
+				<tangentMode>256</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.033333</startTime>
+				<value>1.707412</value>
+				<inTangent>51.222359</inTangent>
+				<outTangent>0.014352</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.433333</startTime>
+				<value>1.713153</value>
+				<inTangent>0.014352</inTangent>
+				<outTangent>-25.697308</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.500000</startTime>
+				<value>0.000000</value>
+				<inTangent>-25.697308</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>turret_kill</name>
+		<type>sound</type>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>3.033000</duration>
+				<value>Root|</value>
+			</frame>
+		</track>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.571716 1.581565 0.010376</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>Sound</name>
+			<type>sound</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>3.033000</duration>
+				<sequenceSound>style_3D_A175_OTAC_MT_58_02_3Dst_01_turret_kill</sequenceSound>
+				<type>play_till_end</type>
+				<fade>0.000000</fade>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

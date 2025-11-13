@@ -42,10 +42,9 @@ from gui.shared.tutorial_helper import getTutorialGlobalStorage
 from gui.techtree.go_back_helper import WulfPreviewAlias
 from helpers import dependency
 from helpers.i18n import makeString as _ms
-from preview_selectable_logic import PreviewSelectableLogic
 from skeletons.account_helpers.settings_core import ISettingsCore
 from skeletons.gui.game_control import IHeroTankController, IVehicleComparisonBasket, IPersonalMissionsController
-from skeletons.gui.impl import IGuiLoader
+from skeletons.gui.impl import IGuiLoader, INewYearNavigation
 from skeletons.gui.server_events import IEventsCache
 from skeletons.gui.shared import IItemsCache
 from skeletons.gui.shared.utils import IHangarSpace
@@ -120,13 +119,14 @@ class VehiclePreview(LobbySelectableView, VehiclePreviewMeta):
     __background_alpha__ = 0.0
     __metaclass__ = event_bus_handlers.EventBusListener
     _itemsCache = dependency.descriptor(IItemsCache)
+    _hangarSpace = dependency.descriptor(IHangarSpace)
     __eventsCache = dependency.descriptor(IEventsCache)
     __comparisonBasket = dependency.descriptor(IVehicleComparisonBasket)
     __heroTanksControl = dependency.descriptor(IHeroTankController)
-    __hangarSpace = dependency.descriptor(IHangarSpace)
     __settingsCore = dependency.descriptor(ISettingsCore)
     __guiLoader = dependency.descriptor(IGuiLoader)
     __personalMissionsController = dependency.descriptor(IPersonalMissionsController)
+    __newYearNavigation = dependency.descriptor(INewYearNavigation)
 
     def __init__(self, ctx=None):
         self.__ctx = ctx
@@ -177,7 +177,7 @@ class VehiclePreview(LobbySelectableView, VehiclePreviewMeta):
         self.__keepVehicleSelectionEnabled = False
         self._needToResetAppearance = True
         if not self.__isHeroTank:
-            self.__hangarSpace.removeVehicle()
+            self._hangarSpace.removeVehicle()
         g_currentPreviewVehicle.selectHeroTank(self.__isHeroTank)
         self.__uiMetricsLogger, self.__uiFlowLogger = getPreviewUILoggers(bool(self._itemsPack), str(self._vehicleCD), self.__buyParams)
         return
@@ -207,9 +207,9 @@ class VehiclePreview(LobbySelectableView, VehiclePreviewMeta):
             g_currentPreviewVehicle.onVehicleInventoryChanged += self._onInventoryChanged
             self.__comparisonBasket.onChange += self.__onCompareBasketChanged
             self.__comparisonBasket.onSwitchChange += self.__updateHeaderData
-            self.__hangarSpace.onSpaceCreate += self.__onHangarCreateOrRefresh
-            self.__hangarSpace.onSpaceRefresh += self.closeView
-            self.__hangarSpace.setVehicleSelectable(True)
+            self._hangarSpace.onSpaceCreate += self.__onHangarCreateOrRefresh
+            self._hangarSpace.onSpaceRefresh += self.closeView
+            self._hangarSpace.setVehicleSelectable(True)
             if not g_currentPreviewVehicle.isPresent():
                 event_dispatcher.showHangar()
             if not self._heroInteractive:
@@ -244,13 +244,14 @@ class VehiclePreview(LobbySelectableView, VehiclePreviewMeta):
         g_currentPreviewVehicle.onVehicleInventoryChanged -= self._onInventoryChanged
         self.__comparisonBasket.onChange -= self.__onCompareBasketChanged
         self.__comparisonBasket.onSwitchChange -= self.__updateHeaderData
-        self.__hangarSpace.onSpaceCreate -= self.__onHangarCreateOrRefresh
-        self.__hangarSpace.onSpaceRefresh -= self.closeView
-        self.__hangarSpace.setVehicleSelectable(self.__keepVehicleSelectionEnabled)
+        self._hangarSpace.onSpaceCreate -= self.__onHangarCreateOrRefresh
+        self._hangarSpace.onSpaceRefresh -= self.closeView
+        self._hangarSpace.setVehicleSelectable(self.__keepVehicleSelectionEnabled)
         self.removeListener(CameraRelatedEvents.CAMERA_ENTITY_UPDATED, self.handleSelectedEntityUpdated)
         isMapsTrainingViewOpened = self.__guiLoader.windowsManager.getViewByLayoutID(R.views.lobby.maps_training.MapsTrainingPage()) is not None
         if self._needToResetAppearance and not isMapsTrainingViewOpened:
-            g_currentPreviewVehicle.selectNoVehicle()
+            if self.__newYearNavigation.getCurrentObject() is None:
+                g_currentPreviewVehicle.selectNoVehicle()
             g_currentPreviewVehicle.resetAppearance()
         g_currentPreviewVehicle.selectHeroTank(False)
         g_eventBus.handleEvent(events.LobbySimpleEvent(events.LobbySimpleEvent.VEHICLE_PREVIEW_HIDDEN), scope=EVENT_BUS_SCOPE.LOBBY)
@@ -313,7 +314,7 @@ class VehiclePreview(LobbySelectableView, VehiclePreviewMeta):
                         event_dispatcher.showResourceWellHeroPreview(vehicleCD=vehicleCD, previewAlias=VIEW_ALIAS.VEHICLE_PREVIEW, previousBackAlias=self._backAlias, backCallback=self._previewBackCb)
                     else:
                         event_dispatcher.showHeroTankPreview(vehicleCD, previewAlias=VIEW_ALIAS.VEHICLE_PREVIEW, previousBackAlias=self._backAlias, previewBackCb=self._previewBackCb, backBtnLabel=self._backBtnLabel)
-            elif entity.id == self.__hangarSpace.space.vehicleEntityId:
+            elif entity.id == self._hangarSpace.space.vehicleEntityId:
                 self._processBackClick({'entity': entity})
         return
 
@@ -324,9 +325,6 @@ class VehiclePreview(LobbySelectableView, VehiclePreviewMeta):
 
     def _fade3DEntityAndHideTT(self, entity):
         self.as_hide3DSceneTooltipS()
-
-    def _createSelectableLogic(self):
-        return PreviewSelectableLogic()
 
     def _onRegisterFlashComponent(self, viewPy, alias):
         if alias == VEHPREVIEW_CONSTANTS.TOP_PANEL_TABS_PY_ALIAS:
@@ -412,7 +410,7 @@ class VehiclePreview(LobbySelectableView, VehiclePreviewMeta):
 
     def _getExitEvent(self):
         hangarVehicleCD = None
-        hangarVehicle = self.__hangarSpace.getVehicleEntity()
+        hangarVehicle = self._hangarSpace.getVehicleEntity()
         currentVehicle = g_currentVehicle.item
         hangarVehicleDescr = hangarVehicle.typeDescriptor
         if self.__isHeroTank and currentVehicle is not None and hangarVehicleDescr is not None and hangarVehicleDescr.type.compactDescr != currentVehicle.compactDescr:
@@ -520,11 +518,7 @@ class VehiclePreview(LobbySelectableView, VehiclePreviewMeta):
             return QUEUE_TYPE.UNKNOWN
 
     def __onHangarCreateOrRefresh(self):
-        if self._getPrbEntityType() in (QUEUE_TYPE.BATTLE_ROYALE, QUEUE_TYPE.BATTLE_ROYALE_TOURNAMENT):
-            self.closeView()
-            return
-        self.__keepVehicleSelectionEnabled = True
-        self.__handleWindowClose()
+        self.closeView()
 
     @event_bus_handlers.eventBusHandler(events.HideWindowEvent.HIDE_VEHICLE_PREVIEW, EVENT_BUS_SCOPE.LOBBY)
     def __handleWindowClose(self, event=None):

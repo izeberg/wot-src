@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/intunion/Un12_Merkava_M48/normal/lod2/Turret_01</parent>
+	<tank>true</tank>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.360126 0.003966 -2.498557</min>
+		<max>1.391278 4.221684 1.254709</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/intunion/Un12_Merkava_M48/normal/lod1/Turret_01</nodefullVisual>
+</root>

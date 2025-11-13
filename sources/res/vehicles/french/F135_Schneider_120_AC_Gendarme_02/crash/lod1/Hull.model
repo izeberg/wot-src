@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/french/F135_Schneider_120_AC_Gendarme_02/crash/lod2/Hull</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.624217 0.043990 -3.380532</min>
+		<max>1.609058 1.404567 3.319745</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/french/F135_Schneider_120_AC_Gendarme_02/crash/lod1/Hull</nodefullVisual>
+</root>

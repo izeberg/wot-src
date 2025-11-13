@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB141_Celestial_2_51/normal/lod2/Turret_01</nodefullVisual>
+	<parent>vehicles/british/GB141_Celestial_2_51/normal/lod3/Turret_01</parent>
+	<tank>true</tank>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.360384 -0.000023 -2.167498</min>
+		<max>1.360322 1.143654 1.717800</max>
+	</visibilityBox>
+</root>

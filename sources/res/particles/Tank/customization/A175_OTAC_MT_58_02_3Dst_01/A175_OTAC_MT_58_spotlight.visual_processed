@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>polySurface11Shape.vertices</vertices>
+			<stream>polySurface11Shape.colour</stream>
+			<primitive>polySurface11Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0</identifier>
+					<fx>shaders/std_effects/glow.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						diffuseMap
+						<Texture>particles/Tank/customization/A175_OTAC_MT_58_02_3Dst_01/gradient_radial.dds</Texture>
+					</property>
+					<property>
+						g_tintColor
+						<Vector4>1.000000 0.031373 0.031373 1.000000</Vector4>
+					</property>
+					<property>
+						selfIllumination
+						<Float>18.000000</Float>
+					</property>
+				</material>
+				<groupOrigin>0.000000 0.248829 -2.838634</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-1.093197 0.064104 -2.906612</min>
+		<max>1.093197 0.433554 -2.770655</max>
+	</boundingBox>
+	<geometrySize>20344</geometrySize>
+	<minUVDensity>3.718425</minUVDensity>
+</root>

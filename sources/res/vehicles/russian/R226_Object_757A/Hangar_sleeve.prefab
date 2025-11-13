@@ -90,6 +90,10 @@
 						<name>Cast Shadows</name>
 						<value>1</value>
 					</property>
+					<property>
+						<name>Parts</name>
+						<collection/>
+					</property>
 				</config>
 			</component>
 		</ComponentPool>
@@ -140,7 +144,7 @@
 					</property>
 					<property>
 						<name>enableDirt</name>
-						<value>1</value>
+						<value>0</value>
 					</property>
 				</config>
 			</component>

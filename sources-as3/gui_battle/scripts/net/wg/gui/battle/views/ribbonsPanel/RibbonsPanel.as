@@ -94,22 +94,22 @@ package net.wg.gui.battle.views.ribbonsPanel
          }
       }
       
-      public function as_addBattleEfficiencyEvent(param1:String, param2:Number, param3:String, param4:String, param5:String, param6:String, param7:int, param8:String) : void
+      public function as_addBattleEfficiencyEvent(param1:String, param2:Number, param3:String, param4:String, param5:String, param6:String, param7:int, param8:String, param9:String) : void
       {
-         var _loc9_:RibbonCtrl = null;
+         var _loc10_:RibbonCtrl = null;
          if(this._isShowPlaying || this._isHidePlaying)
          {
-            this._ribbonQueue.pushShow(param1,param2,param3,param4,param5,param6,true,this.getBonusLabel(param7),param8);
+            this._ribbonQueue.pushShow(param1,param2,param3,param4,param5,param6,true,this.getBonusLabel(param7),param8,param9);
          }
          else
          {
-            _loc9_ = this._ribbonPool.getItemFromPool(param1);
-            this._visibleItemsById[param2] = _loc9_;
+            _loc10_ = this._ribbonPool.getItemFromPool(param1);
+            this._visibleItemsById[param2] = _loc10_;
             this._isShowPlaying = true;
             this.shiftItems();
-            this._visibleItems.push(_loc9_);
-            _loc9_.updateData(param2,param3,param4,param5,param6,this.getBonusLabel(param7),param8);
-            _loc9_.showAnim(this._countVisibleItems);
+            this._visibleItems.push(_loc10_);
+            _loc10_.updateData(param2,param3,param4,param5,param6,this.getBonusLabel(param7),param8,param9);
+            _loc10_.showAnim(this._countVisibleItems);
             ++this._countShowAnimItems;
             ++this._countVisibleItems;
             onShowS(param2);
@@ -126,26 +126,26 @@ package net.wg.gui.battle.views.ribbonsPanel
          this.setSettings(param1,param2,param3,param4);
       }
       
-      public function as_updateBattleEfficiencyEvent(param1:String, param2:Number, param3:String, param4:String, param5:String, param6:String, param7:int, param8:String) : void
+      public function as_updateBattleEfficiencyEvent(param1:String, param2:Number, param3:String, param4:String, param5:String, param6:String, param7:int, param8:String, param9:String) : void
       {
-         var _loc9_:RibbonCtrl = this._visibleItemsById[param2];
-         if(_loc9_ != null)
+         var _loc10_:RibbonCtrl = this._visibleItemsById[param2];
+         if(_loc10_ != null)
          {
-            _loc9_.updateData(param2,param3,param4,param5,param6,this.getBonusLabel(param7),param8);
+            _loc10_.updateData(param2,param3,param4,param5,param6,this.getBonusLabel(param7),param8,param9);
             onChangeS();
          }
          else
          {
-            this._ribbonQueue.pushShow(param1,param2,param3,param4,param5,param6,false,this.getBonusLabel(param7),param8);
+            this._ribbonQueue.pushShow(param1,param2,param3,param4,param5,param6,false,this.getBonusLabel(param7),param8,param9);
          }
       }
       
-      override public function setFreeWorkingHeight(param1:int) : void
+      public function setFreeWorkingHeight(param1:int) : void
       {
          this._calculatedMaxCountRenderers = Math.min(param1 / RibbonCtrl.ITEM_HEIGHT ^ 0,MAX_COUNT_RIBBONS);
       }
       
-      override public function setSettings(param1:Boolean, param2:Boolean, param3:Boolean, param4:Boolean) : void
+      public function setSettings(param1:Boolean, param2:Boolean, param3:Boolean, param4:Boolean) : void
       {
          if(param1 != this._isVisible)
          {
@@ -157,7 +157,7 @@ package net.wg.gui.battle.views.ribbonsPanel
          dispatchEvent(new Event(Event.CHANGE));
       }
       
-      override public function shiftItems() : void
+      public function shiftItems() : void
       {
          var _loc1_:RibbonCtrl = null;
          var _loc2_:int = this._countVisibleItems;
@@ -245,7 +245,7 @@ package net.wg.gui.battle.views.ribbonsPanel
                   _loc3_ = this._visibleItemsById[_loc2_];
                   if(_loc3_)
                   {
-                     _loc3_.updateData(_loc2_,_loc1_.valueStr,_loc1_.vehName,_loc1_.vehType,_loc1_.countVehs,_loc1_.bonusLabel,_loc1_.role);
+                     _loc3_.updateData(_loc2_,_loc1_.valueStr,_loc1_.vehName,_loc1_.vehType,_loc1_.countVehs,_loc1_.bonusLabel,_loc1_.role,_loc1_.ability);
                   }
                   onChangeS();
                }
@@ -254,7 +254,7 @@ package net.wg.gui.battle.views.ribbonsPanel
                   _loc3_ = this._ribbonPool.getItemFromPool(_loc1_.ribbonType);
                   this._isShowPlaying = true;
                   this.shiftItems();
-                  _loc3_.updateData(_loc2_,_loc1_.valueStr,_loc1_.vehName,_loc1_.vehType,_loc1_.countVehs,_loc1_.bonusLabel,_loc1_.role);
+                  _loc3_.updateData(_loc2_,_loc1_.valueStr,_loc1_.vehName,_loc1_.vehType,_loc1_.countVehs,_loc1_.bonusLabel,_loc1_.role,_loc1_.ability);
                   _loc3_.showAnim(this._countVisibleItems);
                   this._visibleItems.push(_loc3_);
                   this._visibleItemsById[_loc2_] = _loc3_;
@@ -317,12 +317,12 @@ package net.wg.gui.battle.views.ribbonsPanel
          return param1 > -1 ? this._bonusLabels[param1] : null;
       }
       
-      override public function get freeHeightForRenderers() : int
+      public function get freeHeightForRenderers() : int
       {
          return this._calculatedMaxCountRenderers * RibbonCtrl.ITEM_HEIGHT;
       }
       
-      override public function get offsetX() : int
+      public function get offsetX() : int
       {
          return this._offsetX;
       }

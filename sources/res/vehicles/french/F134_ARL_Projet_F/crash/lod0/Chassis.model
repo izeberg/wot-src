@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<visibilityBox>
+		<min>-1.748161 -0.004347 -4.983893</min>
+		<max>1.750000 1.784780 5.856189</max>
+	</visibilityBox>
+	<parent>vehicles/french/F134_ARL_Projet_F/crash/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/french/F134_ARL_Projet_F/crash/lod0/Chassis</nodefullVisual>
+</root>

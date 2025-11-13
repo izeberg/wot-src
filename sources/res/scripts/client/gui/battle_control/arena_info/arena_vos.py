@@ -207,10 +207,6 @@ class PlayerInfoVO(object):
     def __cmp__(self, other):
         return cmp(self.name, other.name)
 
-    @property
-    def isBot(self):
-        return self.accountDBID <= 0
-
     def update(self, invalidate=_INVALIDATE_OP.NONE, name=None, accountDBID=0, avatarSessionID='', clanAbbrev='', isPrebattleCreator=False, igrType=IGR_TYPE.NONE, forbidInBattleInvitations=False, fakeName='', **kwargs):
         if name != self.name:
             self.name = name
@@ -251,7 +247,8 @@ class VehicleTypeInfoVO(object):
                  'isAssaultVehicle', 'hasDualAccuracy', 'isAutoShootFlamethrowerVehicle',
                  'guiName', 'shortNameWithPrefix', 'classTag', 'nationID', 'turretYawLimits',
                  'maxHealth', 'strCompactDescr', 'isOnlyForBattleRoyaleBattles',
-                 'tags', 'chassisType', 'role', 'isMultiTrack', 'hasThermalVision')
+                 'tags', 'chassisType', 'role', 'isMultiTrack', 'hasThermalVision',
+                 'hasDistanceFactorShells')
 
     def __init__(self, vehicleType=None, maxHealth=None, **kwargs):
         super(VehicleTypeInfoVO, self).__init__()
@@ -312,6 +309,7 @@ class VehicleTypeInfoVO(object):
             self.iconName = settings.makeVehicleIconName(vName)
             self.iconPath = settings.makeContourIconSFPath(vName)
             self.role = vehicleType.role
+            self.hasDistanceFactorShells = bool(vehicleDescr.shot.shell.distanceFactor)
         else:
             vehicleName = i18n.makeString(settings.UNKNOWN_VEHICLE_NAME)
             self.tags = frozenset()
@@ -341,6 +339,7 @@ class VehicleTypeInfoVO(object):
             self.maxHealth = None
             self.isOnlyForBattleRoyaleBattles = False
             self.role = ROLE_TYPE.NOT_DEFINED
+            self.hasDistanceFactorShells = False
         return
 
     def getClassName(self):
@@ -407,10 +406,6 @@ class VehicleArenaInfoVO(object):
     def selectedSuffixBadge(self):
         return self.__suffixBadge
 
-    @property
-    def isBot(self):
-        return self.player.isBot
-
     def getBadgeExtraInfo(self):
         if self.badges:
             _, extraInfo = self.badges
@@ -469,13 +464,6 @@ class VehicleArenaInfoVO(object):
             invalidate = _INVALIDATE_OP.addIfNot(invalidate, _INVALIDATE_OP.VEHICLE_INFO)
         return invalidate
 
-    def updateCommonInfo(self, invalidate=_INVALIDATE_OP.NONE, team=None, **kwargs):
-        if team is not None:
-            if self.team ^ team:
-                self.team = team
-                invalidate = _INVALIDATE_OP.addIfNot(invalidate, _INVALIDATE_OP.VEHICLE_INFO)
-        return invalidate
-
     def updateGameModeSpecificStats(self, *args):
         return self.gameModeSpecific.update(*args)
 
@@ -498,7 +486,6 @@ class VehicleArenaInfoVO(object):
         invalidate = self.updateInvitationStatus(invalidate=invalidate, **kwargs)
         invalidate = self.updateRanked(invalidate=invalidate, **kwargs)
         invalidate = self.updateEvents(invalidate=invalidate, **kwargs)
-        invalidate = self.updateCommonInfo(invalidate=invalidate, **kwargs)
         return invalidate
 
     def getSquadID(self):
@@ -572,7 +559,7 @@ class VehicleArenaInfoVO(object):
 
     def isChatCommandsDisabled(self, isAlly):
         arena = avatar_getter.getArena()
-        isEvent = arena.guiType in (ARENA_GUI_TYPE.EVENT_BATTLES, ARENA_GUI_TYPE.PORTAL) if arena else False
+        isEvent = arena.guiType == ARENA_GUI_TYPE.EVENT_BATTLES if arena else False
         if not (self.player.avatarSessionID or isEvent):
             if isAlly:
                 return True

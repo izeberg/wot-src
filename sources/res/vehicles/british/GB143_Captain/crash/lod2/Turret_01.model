@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB143_Captain/crash/lod2/Turret_01</nodefullVisual>
+	<parent>vehicles/british/GB143_Captain/crash/lod3/Turret_01</parent>
+	<tank>true</tank>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.354047 -0.020626 -2.935869</min>
+		<max>1.364856 1.373637 1.699705</max>
+	</visibilityBox>
+</root>

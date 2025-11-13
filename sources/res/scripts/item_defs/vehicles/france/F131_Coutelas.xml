@@ -3133,11 +3133,8 @@
 				<slot>
 					<slotType>inscription</slotType>
 					<slotId>34000</slotId>
-					<rayStart>-1.762156 0.466828 -0.002291</rayStart>
-					<rayEnd>
-						-1.573691 0.399899 -0.00304
-						<!--BW_String-->
-					</rayEnd>
+					<rayStart>-1.856391 0.500293 -0.001916</rayStart>
+					<rayEnd>-1.479456 0.366434 -0.003415</rayEnd>
 					<rayUp>0.334587 0.942294 -0.011582</rayUp>
 					<size>1</size>
 					<hideIfDamaged>true</hideIfDamaged>
@@ -3146,12 +3143,9 @@
 				<slot>
 					<slotType>inscription</slotType>
 					<slotId>34001</slotId>
-					<rayStart>
-						1.7609 0.466828 -0.002291
-						<!--BW_String-->
-					</rayStart>
+					<rayStart>1.855135 0.500293 -0.001916</rayStart>
 					<rayEnd>
-						1.572435 0.399899 -0.00304
+						1.4782 0.366434 -0.003415
 						<!--BW_String-->
 					</rayEnd>
 					<rayUp>-0.334587 0.942294 -0.011583</rayUp>

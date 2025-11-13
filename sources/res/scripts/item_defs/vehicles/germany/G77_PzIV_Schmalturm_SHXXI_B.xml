@@ -2305,7 +2305,10 @@
 							<camouflage>GUN</camouflage>
 						</customizableVehicleAreas>
 					</customization>
-					<shotOffset>0.000000 -0.000000 -0.183746</shotOffset>
+					<shotOffset>
+						-0.012099 0.014756 0
+						<!--BW_String-->
+					</shotOffset>
 					<camouflage>
 						<tiling>
 							0.75 0.75 2.0 0.0

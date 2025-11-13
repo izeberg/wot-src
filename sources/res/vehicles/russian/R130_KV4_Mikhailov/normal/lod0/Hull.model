@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/russian/R130_KV4_Mikhailov/normal/lod1/Hull</parent>
+	<extent>32.000000</extent>
+	<materialNames/>
+	<visibilityBox>
+		<min>-1.833641 -0.962544 -4.760881</min>
+		<max>1.820880 0.856865 4.339869</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<projAreaCoeff>1</projAreaCoeff>
+	<nodefullVisual>vehicles/russian/R130_KV4_Mikhailov/normal/lod0/Hull</nodefullVisual>
+</root>

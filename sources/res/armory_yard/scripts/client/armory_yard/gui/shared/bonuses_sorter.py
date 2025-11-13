@@ -17,17 +17,20 @@ class BonusesSortWeights(IntEnum):
     CREW_BATTLE_BOOSTER = 3
     BATTLE_BOOSTER = 4
     RECERTIFICATION_FORM = 5
-    CREDITS = 6
-    BOOSTER_CREDITS = 7
-    CREW_BOOK = 8
-    TMAN = 9
-    FREE_XP = 10
-    CRYSTALS = 11
+    AY_COIN = 6
+    CREDITS = 7
+    BOOSTER_CREDITS = 8
+    CREW_BOOK = 9
+    TMAN = 10
+    FREE_XP = 11
     SLOTS = 12
     PREMUIM_PLUS = 13
-    STYLE = 14
-    OPTIONAL_DEVICE = 15
-    VEHICLE = 16
+    CRYSTALS = 14
+    EQUIP_COIN = 15
+    OPTIONAL_DEVICE = 16
+    LOOTBOX = 17
+    STYLE = 18
+    VEHICLE = 19
 
 
 def _itemsBonusKeyFunc(bonus):
@@ -87,6 +90,10 @@ _BONUSES_KEYS_FUNC = {VehiclesBonus.VEHICLES_BONUS: _vehiclesBonusKeyFunc,
                     -BonusesSortWeights.CREDITS, 0), 
    Currency.CRYSTAL: lambda b: (
                     -BonusesSortWeights.CRYSTALS, 0), 
+   Currency.EQUIP_COIN: lambda b: (
+                       -BonusesSortWeights.EQUIP_COIN, 0), 
+   Currency.AYCOIN: lambda b: (
+                   -BonusesSortWeights.AY_COIN, 0), 
    'freeXP': lambda b: (
             -BonusesSortWeights.FREE_XP, 0), 
    'goodies': _goodieBonusKeyFunc, 
@@ -95,7 +102,9 @@ _BONUSES_KEYS_FUNC = {VehiclesBonus.VEHICLES_BONUS: _vehiclesBonusKeyFunc,
    'crewBooks': lambda b: (
                -BonusesSortWeights.CREW_BOOK, 0), 
    'customizations': lambda b: (
-                    -BonusesSortWeights.STYLE, 0)}
+                    -BonusesSortWeights.STYLE, 0), 
+   'lootBoxToken': lambda b: (
+                  -BonusesSortWeights.LOOTBOX, 0)}
 
 def bonusesSortKeyFunc(bonus):
     return _BONUSES_KEYS_FUNC.get(bonus.getName(), lambda b: (BonusesSortWeights.UNSORTABLE, bonus.getName()))(bonus)

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/japan/J49_Type_60_Proto_4/crash/lod3/Hull</parent>
+	<tank>true</tank>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.155935 -0.667690 -2.214772</min>
+		<max>1.155755 0.799201 2.143268</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/japan/J49_Type_60_Proto_4/crash/lod2/Hull</nodefullVisual>
+</root>
