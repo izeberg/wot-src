@@ -20,6 +20,8 @@ from skeletons.gui.shared import IItemsCache
 from skeletons.gui.shared.utils import IHangarSpace
 from frontline.gui.frontline_helpers import isFinishedCycleState
 from PlayerEvents import g_playerEvents
+from wg_async import wg_async, wg_await, delay
+from constants import SERVER_TICK_LENGTH
 
 class _LastEntryState(object):
 
@@ -112,9 +114,12 @@ class FrontlineEventWidget(TooltipPositionerMixin, FLOverlapCtrlMixin, ViewCompo
                 vm.setRewardsHash(rewardsHash)
                 _g_entryLastState.update(rewards, rewardsHash)
 
+    @wg_async
     def __onTokensUpdate(self, diff, _):
-        if diff.get('tokens') and isFinishedCycleState():
-            self._rawUpdate()
+        if diff.get('tokens'):
+            yield wg_await(delay(SERVER_TICK_LENGTH))
+            if _g_entryLastState.rewards and not self.__epicController.getNotChosenRewardTokens():
+                self._rawUpdate()
 
     def __onProgressionClick(self):
         if self.__epicController.getNotChosenRewardCount() and isFinishedCycleState():

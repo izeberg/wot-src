@@ -1,6 +1,6 @@
 from __future__ import absolute_import
 import json, logging, time
-from builtins import round
+from future.builtins import round
 import BigWorld
 from account_helpers.AccountSettings import AdventCalendar
 from adisp import adisp_process
@@ -37,6 +37,7 @@ CONFIG_TO_MODEL_MARK_MAP = {DoorMarkType.NY_START: Mark.NY,
    DoorMarkType.NONE: Mark.NONE}
 QUEST_COMPLETED_TIMEOUT = 20
 _INVALID_IDX = -1
+FADE_IN_ANIMATION_TIME = 2
 
 class AdventCalendarMainView(ComponentsPresenterView):
     __adventController = dependency.descriptor(IAdventCalendarController)
@@ -52,9 +53,11 @@ class AdventCalendarMainView(ComponentsPresenterView):
         self.__lastHighlightDoorAnimTime = 0
         self.__lasOpenDoorTime = 0
         self.__waitSuccessfulOpenDoor = False
+        self.__worldDrawCallbackID = None
         self.__scope = AsyncScope()
         self.__doorOpenedQuestCompletedEvent = AsyncEvent(scope=self.__scope)
         super(AdventCalendarMainView, self).__init__(settings)
+        return
 
     @property
     def viewModel(self):
@@ -123,13 +126,22 @@ class AdventCalendarMainView(ComponentsPresenterView):
         if not getAdventCalendarSetting(AdventCalendar.INTRO_SHOWN):
             self.__openIntro(isFirstTime=True)
 
+    def _initialize(self, *args, **kwargs):
+        self.__worldDrawCallbackID = BigWorld.callback(FADE_IN_ANIMATION_TIME, self.__worldDrawCallback)
+        super(AdventCalendarMainView, self)._initialize(*args, **kwargs)
+
     def _finalize(self):
         self.__doorOpenedQuestCompletedEvent.clear()
         self.__scope.destroy()
         self.__completedProgressionRewardsIdx = _INVALID_IDX
         self.__selectedDayId = 0
         self.__waitSuccessfulOpenDoor = False
+        if self.__worldDrawCallbackID is not None:
+            BigWorld.cancelCallback(self.__worldDrawCallbackID)
+            self.__worldDrawCallbackID = None
+        BigWorld.worldDrawEnabled(True)
         super(AdventCalendarMainView, self)._finalize()
+        return
 
     def _registerSubModels(self):
         return []
@@ -405,6 +417,11 @@ class AdventCalendarMainView(ComponentsPresenterView):
 
     def __onClose(self, *_, **__):
         self.destroyWindow()
+
+    def __worldDrawCallback(self):
+        self.__worldDrawCallbackID = None
+        BigWorld.worldDrawEnabled(False)
+        return
 
 
 class AdventCalendarMainWindow(LobbyWindow):

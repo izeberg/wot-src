@@ -1000,7 +1000,7 @@
 			</bulkHealthFactor>
 			<maxHealth>60</maxHealth>
 			<maxRegenHealth>45</maxRegenHealth>
-			<repairCost>2</repairCost>
+			<repairCost>4</repairCost>
 			<models>
 				<undamaged>vehicles/french/F138_Renault_R35_FCM_36/normal/lod0/Chassis.model</undamaged>
 				<destroyed>vehicles/french/F138_Renault_R35_FCM_36/crash/lod0/Chassis.model</destroyed>
@@ -3327,7 +3327,7 @@
 			<surveyingDeviceHealth>
 				<maxHealth>40</maxHealth>
 				<maxRegenHealth>20</maxRegenHealth>
-				<repairCost>2</repairCost>
+				<repairCost>1</repairCost>
 			</surveyingDeviceHealth>
 			<guns>
 				<_37mm_APX_SA18A>

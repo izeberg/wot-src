@@ -1005,6 +1005,7 @@ class DIALOGS(object):
     RETRAIN_PRICECARD_CREDITS_DESCRIPTION = '#dialogs:retrain/priceCard/credits/description'
     RETRAIN_PRICECARD_GOLD_DESCRIPTION = '#dialogs:retrain/priceCard/gold/description'
     RETRAIN_TITLE_MASSIVE = '#dialogs:retrain/title/massive'
+    RETRAIN_TITLE_MASSIVEVEHICLETAG = '#dialogs:retrain/title/massiveVehicleTag'
     RETRAIN_MASSIVE_TANKMENCOUNT = '#dialogs:retrain/massive/tankmenCount'
     RETRAIN_CHANGEROLE = '#dialogs:retrain/changeRole'
     RETRAIN_PRICE = '#dialogs:retrain/price'
@@ -2064,6 +2065,7 @@ class DIALOGS(object):
      RETRAIN_PRICECARD_CREDITS_DESCRIPTION,
      RETRAIN_PRICECARD_GOLD_DESCRIPTION,
      RETRAIN_TITLE_MASSIVE,
+     RETRAIN_TITLE_MASSIVEVEHICLETAG,
      RETRAIN_MASSIVE_TANKMENCOUNT,
      RETRAIN_CHANGEROLE,
      RETRAIN_PRICE,

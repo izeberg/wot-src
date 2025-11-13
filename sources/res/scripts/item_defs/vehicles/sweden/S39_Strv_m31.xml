@@ -1593,12 +1593,12 @@
 			<price>2000</price>
 			<notInShop>true</notInShop>
 			<armor>
-				<leftTrack>20</leftTrack>
-				<rightTrack>20</rightTrack>
+				<leftTrack>10</leftTrack>
+				<rightTrack>10</rightTrack>
 			</armor>
 			<weight>2875</weight>
 			<terrainResistance>
-				1.0 1.2 2
+				1 1.2 2
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>11500</brakeForce>

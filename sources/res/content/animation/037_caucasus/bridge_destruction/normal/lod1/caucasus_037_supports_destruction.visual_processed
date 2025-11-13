@@ -808,6 +808,15 @@
 					</transform>
 				</node>
 			</node>
+			<node>
+				<identifier>root_BlendBone</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 -1.000000</row2>
+					<row3>0.000000 0.000000 0.000000</row3>
+				</transform>
+			</node>
 		</node>
 	</node>
 	<renderSet>
@@ -888,6 +897,10 @@
 						<Texture>content/Buildings/00_Tiles/Dirt_CaucasusBridge_02.dds</Texture>
 					</property>
 					<property>
+						ditherTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
 						g_dirtColor
 						<Vector4>0.470000 0.430000 0.380000 0.200000</Vector4>
 					</property>
@@ -922,10 +935,6 @@
 					<property>
 						normalGlossSpecTile2
 						<Texture>content/Buildings/00_Tiles/dds/Moss_green_01_512_GBMT.dds</Texture>
-					</property>
-					<property>
-						ditherTestEnable
-						<Bool>true</Bool>
 					</property>
 				</material>
 				<groupOrigin>0.000000 -8.693498 0.000000</groupOrigin>

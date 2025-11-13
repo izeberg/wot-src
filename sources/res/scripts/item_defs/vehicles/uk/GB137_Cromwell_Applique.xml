@@ -1410,7 +1410,7 @@
 			<userString>#gb_vehicles:Chassis_GB137_Cromwell_Applique</userString>
 			<tags/>
 			<level>5</level>
-			<price>4000</price>
+			<price>10000</price>
 			<notInShop>true</notInShop>
 			<armor>
 				<leftTrack>20</leftTrack>
@@ -2718,7 +2718,7 @@
 			<userString>#gb_vehicles:Turret_1_GB137_Cromwell_Applique</userString>
 			<tags/>
 			<level>5</level>
-			<price>11100</price>
+			<price>10000</price>
 			<notInShop>true</notInShop>
 			<armor>
 				<armor_1>
@@ -2760,6 +2760,7 @@
 				<armor_13>
 					101.6
 					<!--BW_String-->
+					<tags>gunMask</tags>
 				</armor_13>
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>

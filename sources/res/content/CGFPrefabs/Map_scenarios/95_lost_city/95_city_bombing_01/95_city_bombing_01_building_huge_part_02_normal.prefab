@@ -746,13 +746,16 @@
 					<property>
 						<name>Position</name>
 						<value>
-							68.027 21.3672 23.386
+							68.0278 16.4106 23.386
 							<!--BW_String-->
 						</value>
 					</property>
 					<property>
 						<name>Scale</name>
-						<value>1 1 1</value>
+						<value>
+							2.22792 0.97318 2.19626
+							<!--BW_String-->
+						</value>
 					</property>
 					<property>
 						<name>Rotation</name>
@@ -770,18 +773,21 @@
 					<property>
 						<name>Position</name>
 						<value>
-							67.732 16.7824 7.016
+							69.9527 16.6087 11.4115
 							<!--BW_String-->
 						</value>
 					</property>
 					<property>
 						<name>Scale</name>
-						<value>1 1 1</value>
+						<value>
+							1.64854 0.85102 1.78633
+							<!--BW_String-->
+						</value>
 					</property>
 					<property>
 						<name>Rotation</name>
 						<value>
-							-0 -0.00349066 0
+							0 -2.36928 0
 							<!--BW_String-->
 						</value>
 					</property>
@@ -794,21 +800,21 @@
 					<property>
 						<name>Position</name>
 						<value>
-							62.47 12.6529 28.83
+							78.2117 16.4933 14.6446
 							<!--BW_String-->
 						</value>
 					</property>
 					<property>
 						<name>Scale</name>
 						<value>
-							0.335765 1 0.628233
+							1.98419 0.851024 1.14487
 							<!--BW_String-->
 						</value>
 					</property>
 					<property>
 						<name>Rotation</name>
 						<value>
-							-0 -2.36928 0
+							-0 1.38527 0
 							<!--BW_String-->
 						</value>
 					</property>
@@ -821,18 +827,21 @@
 					<property>
 						<name>Position</name>
 						<value>
-							78.211 21.4115 14.644
+							67.7327 16.4119 7.01673
 							<!--BW_String-->
 						</value>
 					</property>
 					<property>
 						<name>Scale</name>
-						<value>1 1 1</value>
+						<value>
+							0.883029 0.08025 2.15658
+							<!--BW_String-->
+						</value>
 					</property>
 					<property>
 						<name>Rotation</name>
 						<value>
-							-0 1.38527 0
+							0 -0.00349066 0
 							<!--BW_String-->
 						</value>
 					</property>
@@ -845,18 +854,21 @@
 					<property>
 						<name>Position</name>
 						<value>
-							69.95 21.4115 11.411
+							62.4742 7.64629 28.8363
 							<!--BW_String-->
 						</value>
 					</property>
 					<property>
 						<name>Scale</name>
-						<value>1 1 1</value>
+						<value>
+							0.615716 1.02919 1.83698
+							<!--BW_String-->
+						</value>
 					</property>
 					<property>
 						<name>Rotation</name>
 						<value>
-							-0 -2.36928 0
+							0 -2.36928 0
 							<!--BW_String-->
 						</value>
 					</property>
@@ -869,14 +881,14 @@
 					<property>
 						<name>Position</name>
 						<value>
-							63.323 12.374 28.41
+							63.3237 12.3743 28.4129
 							<!--BW_String-->
 						</value>
 					</property>
 					<property>
 						<name>Scale</name>
 						<value>
-							0.524322 0.119818 1.20428
+							0.883026 0.046298 2.15657
 							<!--BW_String-->
 						</value>
 					</property>
@@ -1388,22 +1400,19 @@
 								<object>
 									<property>
 										<name>Type</name>
-										<value>0</value>
+										<value>3</value>
 									</property>
 									<property>
 										<name>Parameters</name>
 										<object>
 											<property>
-												<name>Offset</name>
-												<value>(( 22.4083,       0,-9.53674e-07,       0), (       0,  10.035,       0,       0), (9.53674e-07,       0, 22.0781,       0), (       0,-2.47955e-05,       0,       1))</value>
+												<name>Model name</name>
+												<isAsset>true</isAsset>
+												<value>objects/misc/bbox/no_camera_box.model</value>
 											</property>
 											<property>
-												<name>Size</name>
-												<value>(( 22.4083,       0,-9.53674e-07,       0), (       0,  10.035,       0,       0), (9.53674e-07,       0, 22.0781,       0), (       0,-2.47955e-05,       0,       1))</value>
-											</property>
-											<property>
-												<name>Rotation</name>
-												<value>(( 22.4083,       0,-9.53674e-07,       0), (       0,  10.035,       0,       0), (9.53674e-07,       0, 22.0781,       0), (       0,-2.47955e-05,       0,       1))</value>
+												<name>Module name</name>
+												<value>default</value>
 											</property>
 										</object>
 									</property>
@@ -1424,22 +1433,19 @@
 								<object>
 									<property>
 										<name>Type</name>
-										<value>0</value>
+										<value>3</value>
 									</property>
 									<property>
 										<name>Parameters</name>
 										<object>
 											<property>
-												<name>Offset</name>
-												<value>(( 8.90885,       0,-7.93487e-07,       0), (       0, 1.10363,       0,       0), (2.5183e-06,       0, 21.6923,       0), (       0,-3.24249e-05,-7.62939e-06,       1))</value>
+												<name>Model name</name>
+												<isAsset>true</isAsset>
+												<value>objects/misc/bbox/no_camera_box.model</value>
 											</property>
 											<property>
-												<name>Size</name>
-												<value>(( 8.90885,       0,-7.93487e-07,       0), (       0, 1.10363,       0,       0), (2.5183e-06,       0, 21.6923,       0), (       0,-3.24249e-05,-7.62939e-06,       1))</value>
-											</property>
-											<property>
-												<name>Rotation</name>
-												<value>(( 8.90885,       0,-7.93487e-07,       0), (       0, 1.10363,       0,       0), (2.5183e-06,       0, 21.6923,       0), (       0,-3.24249e-05,-7.62939e-06,       1))</value>
+												<name>Module name</name>
+												<value>default</value>
 											</property>
 										</object>
 									</property>
@@ -1460,22 +1466,19 @@
 								<object>
 									<property>
 										<name>Type</name>
-										<value>0</value>
+										<value>3</value>
 									</property>
 									<property>
 										<name>Parameters</name>
 										<object>
 											<property>
-												<name>Offset</name>
-												<value>(( 21.6295,       0,-1.43051e-06,       0), (       0, 11.2847,       0,       0), (       0,       0, 34.3964,       0), (-2.28882e-05,-2.67029e-05,-3.8147e-05,       1))</value>
+												<name>Model name</name>
+												<isAsset>true</isAsset>
+												<value>objects/misc/bbox/no_camera_box.model</value>
 											</property>
 											<property>
-												<name>Size</name>
-												<value>(( 21.6295,       0,-1.43051e-06,       0), (       0, 11.2847,       0,       0), (       0,       0, 34.3964,       0), (-2.28882e-05,-2.67029e-05,-3.8147e-05,       1))</value>
-											</property>
-											<property>
-												<name>Rotation</name>
-												<value>(( 21.6295,       0,-1.43051e-06,       0), (       0, 11.2847,       0,       0), (       0,       0, 34.3964,       0), (-2.28882e-05,-2.67029e-05,-3.8147e-05,       1))</value>
+												<name>Module name</name>
+												<value>default</value>
 											</property>
 										</object>
 									</property>
@@ -1496,22 +1499,19 @@
 								<object>
 									<property>
 										<name>Type</name>
-										<value>0</value>
+										<value>3</value>
 									</property>
 									<property>
 										<name>Parameters</name>
 										<object>
 											<property>
-												<name>Offset</name>
-												<value>(( 20.7202,       0,       0,       0), (       0, 10.4195,       0,       0), (-7.15256e-07,       0, 13.5846,       0), (-3.72529e-09,-2.86102e-05,       0,       1))</value>
+												<name>Model name</name>
+												<isAsset>true</isAsset>
+												<value>objects/misc/bbox/no_camera_box.model</value>
 											</property>
 											<property>
-												<name>Size</name>
-												<value>(( 20.7202,       0,       0,       0), (       0, 10.4195,       0,       0), (-7.15256e-07,       0, 13.5846,       0), (-3.72529e-09,-2.86102e-05,       0,       1))</value>
-											</property>
-											<property>
-												<name>Rotation</name>
-												<value>(( 20.7202,       0,       0,       0), (       0, 10.4195,       0,       0), (-7.15256e-07,       0, 13.5846,       0), (-3.72529e-09,-2.86102e-05,       0,       1))</value>
+												<name>Module name</name>
+												<value>default</value>
 											</property>
 										</object>
 									</property>
@@ -1532,22 +1532,19 @@
 								<object>
 									<property>
 										<name>Type</name>
-										<value>0</value>
+										<value>3</value>
 									</property>
 									<property>
 										<name>Parameters</name>
 										<object>
 											<property>
-												<name>Offset</name>
-												<value>((  17.544,       0,       0,       0), (       0, 7.65448,       0,       0), (-9.53674e-07,       0, 17.9351,       0), (       0,-2.86102e-05,       0,       1))</value>
+												<name>Model name</name>
+												<isAsset>true</isAsset>
+												<value>objects/misc/bbox/no_camera_box.model</value>
 											</property>
 											<property>
-												<name>Size</name>
-												<value>((  17.544,       0,       0,       0), (       0, 7.65448,       0,       0), (-9.53674e-07,       0, 17.9351,       0), (       0,-2.86102e-05,       0,       1))</value>
-											</property>
-											<property>
-												<name>Rotation</name>
-												<value>((  17.544,       0,       0,       0), (       0, 7.65448,       0,       0), (-9.53674e-07,       0, 17.9351,       0), (       0,-2.86102e-05,       0,       1))</value>
+												<name>Module name</name>
+												<value>default</value>
 											</property>
 										</object>
 									</property>
@@ -1568,22 +1565,19 @@
 								<object>
 									<property>
 										<name>Type</name>
-										<value>0</value>
+										<value>3</value>
 									</property>
 									<property>
 										<name>Parameters</name>
 										<object>
 											<property>
-												<name>Offset</name>
-												<value>((  17.544,       0,       0,       0), (       0, 7.65448,       0,       0), (-9.53674e-07,       0, 17.9351,       0), (       0,-2.86102e-05,       0,       1))</value>
+												<name>Model name</name>
+												<isAsset>true</isAsset>
+												<value>objects/misc/bbox/no_camera_box.model</value>
 											</property>
 											<property>
-												<name>Size</name>
-												<value>((  17.544,       0,       0,       0), (       0, 7.65448,       0,       0), (-9.53674e-07,       0, 17.9351,       0), (       0,-2.86102e-05,       0,       1))</value>
-											</property>
-											<property>
-												<name>Rotation</name>
-												<value>((  17.544,       0,       0,       0), (       0, 7.65448,       0,       0), (-9.53674e-07,       0, 17.9351,       0), (       0,-2.86102e-05,       0,       1))</value>
+												<name>Module name</name>
+												<value>default</value>
 											</property>
 										</object>
 									</property>
@@ -1877,6 +1871,10 @@
 						<value>1</value>
 					</property>
 					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
 						<name>decorType</name>
 						<value>0</value>
 					</property>
@@ -1893,6 +1891,10 @@
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
 						<value>0</value>
 					</property>
 					<property>
@@ -1915,6 +1917,10 @@
 						<value>0</value>
 					</property>
 					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
 						<name>decorType</name>
 						<value>0</value>
 					</property>
@@ -1931,6 +1937,10 @@
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
 						<value>0</value>
 					</property>
 					<property>
@@ -1953,6 +1963,10 @@
 						<value>0</value>
 					</property>
 					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
 						<name>decorType</name>
 						<value>0</value>
 					</property>
@@ -1969,6 +1983,10 @@
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
 						<value>0</value>
 					</property>
 					<property>
@@ -1991,6 +2009,10 @@
 						<value>0</value>
 					</property>
 					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
 						<name>decorType</name>
 						<value>0</value>
 					</property>
@@ -2010,6 +2032,10 @@
 						<value>1</value>
 					</property>
 					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
 						<name>decorType</name>
 						<value>0</value>
 					</property>
@@ -2027,6 +2053,10 @@
 					<property>
 						<name>Cast Shadows</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
 					</property>
 					<property>
 						<name>decorType</name>

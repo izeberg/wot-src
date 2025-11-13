@@ -908,13 +908,16 @@
 					<property>
 						<name>Position</name>
 						<value>
-							78.3237 20.9988 -14.1581
+							78.4084 16.9961 -14.2268
 							<!--BW_String-->
 						</value>
 					</property>
 					<property>
 						<name>Scale</name>
-						<value>1 1 1</value>
+						<value>
+							1.98419 0.851023 1.14487
+							<!--BW_String-->
+						</value>
 					</property>
 					<property>
 						<name>Rotation</name>
@@ -932,18 +935,21 @@
 					<property>
 						<name>Position</name>
 						<value>
-							75.35 20.9988 -5.84
+							75.3551 17.0123 -5.84348
 							<!--BW_String-->
 						</value>
 					</property>
 					<property>
 						<name>Scale</name>
-						<value>1 1 1</value>
+						<value>
+							2.99996 0.851023 1.78634
+							<!--BW_String-->
+						</value>
 					</property>
 					<property>
 						<name>Rotation</name>
 						<value>
-							-0 -0.798488 0
+							0 -0.798488 0
 							<!--BW_String-->
 						</value>
 					</property>
@@ -1778,22 +1784,19 @@
 								<object>
 									<property>
 										<name>Type</name>
-										<value>0</value>
+										<value>3</value>
 									</property>
 									<property>
 										<name>Parameters</name>
 										<object>
 											<property>
-												<name>Offset</name>
-												<value>(( 19.9503,       0,       0,       0), (       0, 8.81686,       0,       0), (       0,       0, 11.7408,       0), (       0,       0,       0,       1))</value>
+												<name>Model name</name>
+												<isAsset>true</isAsset>
+												<value>objects/misc/bbox/no_camera_box.model</value>
 											</property>
 											<property>
-												<name>Size</name>
-												<value>(( 19.9503,       0,       0,       0), (       0, 8.81686,       0,       0), (       0,       0, 11.7408,       0), (       0,       0,       0,       1))</value>
-											</property>
-											<property>
-												<name>Rotation</name>
-												<value>(( 19.9503,       0,       0,       0), (       0, 8.81686,       0,       0), (       0,       0, 11.7408,       0), (       0,       0,       0,       1))</value>
+												<name>Module name</name>
+												<value>default</value>
 											</property>
 										</object>
 									</property>
@@ -1814,22 +1817,19 @@
 								<object>
 									<property>
 										<name>Type</name>
-										<value>0</value>
+										<value>3</value>
 									</property>
 									<property>
 										<name>Parameters</name>
 										<object>
 											<property>
-												<name>Offset</name>
-												<value>(( 30.0366,       0,       0,       0), (       0, 8.81686,       0,       0), (       0,       0, 17.9029,       0), (       0,       0,       0,       1))</value>
+												<name>Model name</name>
+												<isAsset>true</isAsset>
+												<value>objects/misc/bbox/no_camera_box.model</value>
 											</property>
 											<property>
-												<name>Size</name>
-												<value>(( 30.0366,       0,       0,       0), (       0, 8.81686,       0,       0), (       0,       0, 17.9029,       0), (       0,       0,       0,       1))</value>
-											</property>
-											<property>
-												<name>Rotation</name>
-												<value>(( 30.0366,       0,       0,       0), (       0, 8.81686,       0,       0), (       0,       0, 17.9029,       0), (       0,       0,       0,       1))</value>
+												<name>Module name</name>
+												<value>default</value>
 											</property>
 										</object>
 									</property>
@@ -2151,6 +2151,10 @@
 						<value>1</value>
 					</property>
 					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
 						<name>decorType</name>
 						<value>0</value>
 					</property>
@@ -2168,6 +2172,10 @@
 					<property>
 						<name>Cast Shadows</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
 					</property>
 					<property>
 						<name>decorType</name>
@@ -2189,6 +2197,10 @@
 						<value>1</value>
 					</property>
 					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
 						<name>decorType</name>
 						<value>0</value>
 					</property>
@@ -2208,6 +2220,10 @@
 						<value>1</value>
 					</property>
 					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
 						<name>decorType</name>
 						<value>0</value>
 					</property>
@@ -2224,6 +2240,10 @@
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
 						<value>0</value>
 					</property>
 					<property>
@@ -2246,6 +2266,10 @@
 						<value>0</value>
 					</property>
 					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
 						<name>decorType</name>
 						<value>0</value>
 					</property>
@@ -2265,6 +2289,10 @@
 						<value>1</value>
 					</property>
 					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
 						<name>decorType</name>
 						<value>0</value>
 					</property>
@@ -2281,6 +2309,10 @@
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
 						<value>0</value>
 					</property>
 					<property>
@@ -2303,6 +2335,10 @@
 						<value>0</value>
 					</property>
 					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
 						<name>decorType</name>
 						<value>0</value>
 					</property>
@@ -2320,6 +2356,10 @@
 					<property>
 						<name>Cast Shadows</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
 					</property>
 					<property>
 						<name>decorType</name>
@@ -2341,6 +2381,10 @@
 						<value>1</value>
 					</property>
 					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
 						<name>decorType</name>
 						<value>0</value>
 					</property>
@@ -2357,6 +2401,10 @@
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
 						<value>0</value>
 					</property>
 					<property>
@@ -2379,6 +2427,10 @@
 						<value>0</value>
 					</property>
 					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
 						<name>decorType</name>
 						<value>0</value>
 					</property>
@@ -2396,6 +2448,10 @@
 					<property>
 						<name>Cast Shadows</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
 					</property>
 					<property>
 						<name>decorType</name>
@@ -2417,6 +2473,10 @@
 						<value>0</value>
 					</property>
 					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
 						<name>decorType</name>
 						<value>0</value>
 					</property>
@@ -2433,6 +2493,10 @@
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
 						<value>0</value>
 					</property>
 					<property>
