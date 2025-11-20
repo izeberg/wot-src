@@ -1,4 +1,5 @@
 import typing
+from itertools import chain
 from armory_yard.gui.impl.gen.view_models.views.lobby.feature.armory_yard_quest_model import ArmoryYardQuestModel as QuestModel
 from armory_yard.gui.shared.bonus_packers import getArmoryYardBonusPacker
 from frameworks.wulf.view.array import fillIntsArray
@@ -73,3 +74,16 @@ def getRequiredVehicleDescrForQuest(quest, itemsCache=None):
         vehicleLevels = vehicleLevels or levels
         return (vehicleClasses or tuple(), sorted(vehicleLevels), vehicleNations or tuple())
     return (tuple(), set(), tuple())
+
+
+def visitQuestInModel(questModel):
+    isUpdated = False
+    for item in chain(questModel.bonusCondition.getItems(), questModel.postBattleCondition.getItems()):
+        if item.getEarned():
+            isUpdated = True
+            item.setEarned(0)
+
+    if questModel.getEarned():
+        isUpdated = True
+        questModel.setEarned(0)
+    return isUpdated

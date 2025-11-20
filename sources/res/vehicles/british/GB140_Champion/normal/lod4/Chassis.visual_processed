@@ -1152,25 +1152,17 @@
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>tank_proxy_skinned</identifier>
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
 					<materialKind>0</materialKind>
+					<identifier>tank_proxy_skinned</identifier>
 					<collisionFlags>0</collisionFlags>
-					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
-					</property>
 					<property>
 						diffuseMap
 						<Texture>vehicles/british/GB140_Champion/Champion_proxy_AM.dds</Texture>
 					</property>
 					<property>
-						excludeMaskAndAOMap
-						<Texture>vehicles/british/GB140_Champion/Champion_proxy_AO.dds</Texture>
-					</property>
-					<property>
-						metallicDetailMap
-						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 					<property>
 						metallicGlossMap
@@ -1179,6 +1171,10 @@
 					<property>
 						normalMap
 						<Texture>vehicles/british/GB140_Champion/Champion_proxy_ANM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/british/GB140_Champion/Champion_proxy_AO.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>-1.394192 0.681356 -0.063504</groupOrigin>
@@ -1194,25 +1190,17 @@
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>tank_proxy_skinned</identifier>
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
 					<materialKind>0</materialKind>
+					<identifier>tank_proxy_skinned</identifier>
 					<collisionFlags>0</collisionFlags>
-					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
-					</property>
 					<property>
 						diffuseMap
 						<Texture>vehicles/british/GB140_Champion/Champion_proxy_AM.dds</Texture>
 					</property>
 					<property>
-						excludeMaskAndAOMap
-						<Texture>vehicles/british/GB140_Champion/Champion_proxy_AO.dds</Texture>
-					</property>
-					<property>
-						metallicDetailMap
-						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 					<property>
 						metallicGlossMap
@@ -1221,6 +1209,10 @@
 					<property>
 						normalMap
 						<Texture>vehicles/british/GB140_Champion/Champion_proxy_ANM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/british/GB140_Champion/Champion_proxy_AO.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>1.394192 0.681356 -0.063504</groupOrigin>

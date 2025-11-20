@@ -787,5 +787,4 @@ class Hangar(LobbySelectableView, HangarMeta, IGlobalListener):
 
     def __isNeedToShowNyEnvSwitcherTip(self, carouselAlias):
         if carouselAlias == HANGAR_ALIASES.TANK_CAROUSEL:
-            if self.__nyEnvSwitcherController.needToShowTip:
-                self.as_shouldInjectNyBtnTipS(True)
+            self.as_shouldInjectNyBtnTipS(self.__nyEnvSwitcherController.needToShowTip)

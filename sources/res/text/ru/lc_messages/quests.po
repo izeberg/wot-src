@@ -1548,10 +1548,10 @@ msgid "dailyQuests/condition/doDamage_accum"
 msgstr "Нанести %(value)s ед. урона"
 
 msgid "dailyQuests/condition/earnExp"
-msgstr "Заработать %(value)d «чистого» опыта за бой"
+msgstr "Заработать %(value)s «чистого» опыта за бой"
 
 msgid "dailyQuests/condition/earnExp_accum"
-msgstr "Заработать %(value)d «чистого» опыта"
+msgstr "Заработать %(value)s «чистого» опыта"
 
 msgid "dailyQuests/condition/expTop"
 msgstr ""
@@ -4812,7 +4812,7 @@ msgstr ""
 "стандартные задачи, так и за бонусную."
 
 msgid "infoPage/lootboxConditionsTitle"
-msgstr "Малые контейнеры в ежедневных задачах"
+msgstr "Ящики с мандаринами в ежедневных задачах"
 
 msgid "infoPage/missionSwitch/winback"
 msgstr ""
@@ -5457,8 +5457,8 @@ msgstr ""
 
 msgid "nyInfo/block/subtitle/second"
 msgstr ""
-"Здесь находятся задачи, количество которых ограниченно одним днём. Выполнили"
-" все — завтра заходите за новыми."
+"Здесь находятся задачи, количество которых ограничено одним днём. Выполнили "
+"все — завтра заходите за новыми."
 
 msgid "nyInfo/block/subtitle/third"
 msgstr ""

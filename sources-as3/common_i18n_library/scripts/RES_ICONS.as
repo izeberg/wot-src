@@ -24971,7 +24971,11 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_CH56_BZ_74_1:String = "../maps/icons/quests/bonuses/s180x135/Ch56_BZ_74_1.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_CHOCOLATE:String = "../maps/icons/quests/bonuses/s180x135/chocolate.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_COATEDOPTICS:String = "../maps/icons/quests/bonuses/s180x135/coatedOptics.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_COCACOLA:String = "../maps/icons/quests/bonuses/s180x135/cocacola.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_COMBOXPDIRECTIVESBATTLEBOOSTER1:String = "../maps/icons/quests/bonuses/s180x135/comboXpDirectivesBattleBooster1.png";
       
@@ -25041,9 +25045,13 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_GROUSERS:String = "../maps/icons/quests/bonuses/s180x135/grousers.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_GUNNER_RANCOROUS:String = "../maps/icons/quests/bonuses/s180x135/gunner_rancorous.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_GUNNER_SMOOTHTURRET:String = "../maps/icons/quests/bonuses/s180x135/gunner_smoothTurret.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_HANDEXTINGUISHERS:String = "../maps/icons/quests/bonuses/s180x135/handExtinguishers.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_HOTCOFFEE:String = "../maps/icons/quests/bonuses/s180x135/hotCoffee.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_IMPROVEDCONFIGURATION:String = "../maps/icons/quests/bonuses/s180x135/improvedConfiguration.png";
       
@@ -25058,6 +25066,8 @@ package
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_LARGEMEDKIT:String = "../maps/icons/quests/bonuses/s180x135/largeMedkit.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_LARGEREPAIRKIT:String = "../maps/icons/quests/bonuses/s180x135/largeRepairkit.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_LOADER_PEDANT:String = "../maps/icons/quests/bonuses/s180x135/loader_pedant.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_LOOTBOX_NEWYEAR_USUAL:String = "../maps/icons/quests/bonuses/s180x135/lootBox_newYear_usual.png";
       
@@ -25090,6 +25100,12 @@ package
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_NEW_DEVICE_PM3_GIFT:String = "../maps/icons/quests/bonuses/s180x135/new_device_pm3_gift.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_NYMANDARINS:String = "../maps/icons/quests/bonuses/s180x135/nyMandarins.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_NYRACTIV:String = "../maps/icons/quests/bonuses/s180x135/nyractiv.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_NYRFOOD:String = "../maps/icons/quests/bonuses/s180x135/nyrfood.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_NYRFUN:String = "../maps/icons/quests/bonuses/s180x135/nyrfun.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_NY_2025_TANKS:String = "../maps/icons/quests/bonuses/s180x135/ny_2025_tanks.png";
       
@@ -25132,6 +25148,22 @@ package
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_RADIOMAN_LASTEFFORT:String = "../maps/icons/quests/bonuses/s180x135/radioman_lastEffort.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_RAMMER:String = "../maps/icons/quests/bonuses/s180x135/rammer.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_RATION:String = "../maps/icons/quests/bonuses/s180x135/ration.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_RATION_CHINA:String = "../maps/icons/quests/bonuses/s180x135/ration_china.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_RATION_CZECH:String = "../maps/icons/quests/bonuses/s180x135/ration_czech.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_RATION_ITALY:String = "../maps/icons/quests/bonuses/s180x135/ration_italy.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_RATION_JAPAN:String = "../maps/icons/quests/bonuses/s180x135/ration_japan.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_RATION_POLAND:String = "../maps/icons/quests/bonuses/s180x135/ration_poland.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_RATION_SWEDEN:String = "../maps/icons/quests/bonuses/s180x135/ration_sweden.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_RATION_UK:String = "../maps/icons/quests/bonuses/s180x135/ration_uk.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_RECERTIFICATIONFORM:String = "../maps/icons/quests/bonuses/s180x135/recertificationForm.png";
       
@@ -26103,6 +26135,12 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_NYMANDARINS:String = "../maps/icons/quests/bonuses/s296x222/nyMandarins.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_NYRACTIV:String = "../maps/icons/quests/bonuses/s296x222/nyractiv.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_NYRFOOD:String = "../maps/icons/quests/bonuses/s296x222/nyrfood.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_NYRFUN:String = "../maps/icons/quests/bonuses/s296x222/nyrfun.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_NY_2025_BIG:String = "../maps/icons/quests/bonuses/s296x222/ny_2025_big.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_NY_2025_SMALL:String = "../maps/icons/quests/bonuses/s296x222/ny_2025_small.png";
@@ -27054,6 +27092,12 @@ package
       public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_NYGIFTMACHINETOKEN:String = "../maps/icons/quests/bonuses/s400x300/nyGiftMachineToken.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_NYMANDARINS:String = "../maps/icons/quests/bonuses/s400x300/nyMandarins.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_NYRACTIV:String = "../maps/icons/quests/bonuses/s400x300/nyractiv.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_NYRFOOD:String = "../maps/icons/quests/bonuses/s400x300/nyrfood.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_NYRFUN:String = "../maps/icons/quests/bonuses/s400x300/nyrfun.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_NY_2025_BIG:String = "../maps/icons/quests/bonuses/s400x300/ny_2025_big.png";
       

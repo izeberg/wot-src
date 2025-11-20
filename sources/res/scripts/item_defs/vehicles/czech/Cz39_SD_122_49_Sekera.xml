@@ -9,7 +9,7 @@
 		<loader/>
 	</crew>
 	<supplySlots>4 1 1 6 6 6 7 8 8 8</supplySlots>
-	<postProgressionTree>role_ATSPG_support</postProgressionTree>
+	<postProgressionTree>role_ATSPG_assault</postProgressionTree>
 	<customRoleSlotOptions>3 5</customRoleSlotOptions>
 	<speedLimits>
 		<forward>35</forward>
@@ -84,7 +84,7 @@
 			<battle>0</battle>
 		</fakeTurrets>
 		<armor>
-			<armor_1>210</armor_1>
+			<armor_1>220</armor_1>
 			<armor_2>150</armor_2>
 			<armor_3>80</armor_3>
 			<armor_4>80</armor_4>
@@ -117,7 +117,10 @@
 			<armor_19>100</armor_19>
 			<armor_20>80</armor_20>
 			<armor_21>40</armor_21>
-			<armor_22>125</armor_22>
+			<armor_22>
+				80
+				<vehicleDamageFactor>0</vehicleDamageFactor>
+			</armor_22>
 			<armor_23>230</armor_23>
 			<armor_24>200</armor_24>
 			<armor_25>200</armor_25>
@@ -3015,7 +3018,7 @@
 					</shotDispersionFactors>
 					<clip>
 						<count>2</count>
-						<rate>30</rate>
+						<rate>24</rate>
 					</clip>
 					<customizationSlots>
 						<slot>

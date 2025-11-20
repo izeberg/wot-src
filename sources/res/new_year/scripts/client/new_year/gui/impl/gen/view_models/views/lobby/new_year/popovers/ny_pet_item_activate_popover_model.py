@@ -3,7 +3,7 @@ from new_year.gui.impl.gen.view_models.views.lobby.new_year.views.pet.ny_indicat
 class NyPetItemActivatePopoverModel(NyIndicatorType):
     __slots__ = ('onItemActivate', 'onItemAmountChange')
 
-    def __init__(self, properties=8, commands=2):
+    def __init__(self, properties=9, commands=2):
         super(NyPetItemActivatePopoverModel, self).__init__(properties=properties, commands=commands)
 
     def getItemsInInventory(self):
@@ -42,11 +42,17 @@ class NyPetItemActivatePopoverModel(NyIndicatorType):
     def setIsOnboarding(self, value):
         self._setBool(6, value)
 
+    def getWasLeaderboardFinished(self):
+        return self._getBool(7)
+
+    def setWasLeaderboardFinished(self, value):
+        self._setBool(7, value)
+
     def getMaxValue(self):
-        return self._getNumber(7)
+        return self._getNumber(8)
 
     def setMaxValue(self, value):
-        self._setNumber(7, value)
+        self._setNumber(8, value)
 
     def _initialize(self):
         super(NyPetItemActivatePopoverModel, self)._initialize()
@@ -56,6 +62,7 @@ class NyPetItemActivatePopoverModel(NyIndicatorType):
         self._addNumberProperty('potentialLoyaltyPoints', 0)
         self._addNumberProperty('potentialVitalityPoints', 0)
         self._addBoolProperty('isOnboarding', False)
+        self._addBoolProperty('wasLeaderboardFinished', False)
         self._addNumberProperty('maxValue', -1)
         self.onItemActivate = self._addCommand('onItemActivate')
         self.onItemAmountChange = self._addCommand('onItemAmountChange')

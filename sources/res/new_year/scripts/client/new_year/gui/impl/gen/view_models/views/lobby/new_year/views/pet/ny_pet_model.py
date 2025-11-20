@@ -32,7 +32,7 @@ class NyPetModel(ViewModel):
                  'onPetStateAnimationsChange', 'onShopClick', 'onStoryClick', 'onGetGift',
                  'onItemClick')
 
-    def __init__(self, properties=20, commands=11):
+    def __init__(self, properties=21, commands=11):
         super(NyPetModel, self).__init__(properties=properties, commands=commands)
 
     @property
@@ -91,83 +91,89 @@ class NyPetModel(ViewModel):
     def setHasPetAnimations(self, value):
         self._setBool(6, value)
 
-    def getIsOnboarding(self):
+    def getWasLeaderboardFinished(self):
         return self._getBool(7)
 
-    def setIsOnboarding(self, value):
+    def setWasLeaderboardFinished(self, value):
         self._setBool(7, value)
 
-    def getIsOnboardingVideoClosed(self):
+    def getIsOnboarding(self):
         return self._getBool(8)
 
-    def setIsOnboardingVideoClosed(self, value):
+    def setIsOnboarding(self, value):
         self._setBool(8, value)
 
+    def getIsOnboardingVideoClosed(self):
+        return self._getBool(9)
+
+    def setIsOnboardingVideoClosed(self, value):
+        self._setBool(9, value)
+
     def getSingleTip(self):
-        return SingleTipType(self._getNumber(9))
+        return SingleTipType(self._getNumber(10))
 
     def setSingleTip(self, value):
-        self._setNumber(9, value.value)
+        self._setNumber(10, value.value)
 
     def getNeedToCloseSingleTip(self):
-        return self._getBool(10)
+        return self._getBool(11)
 
     def setNeedToCloseSingleTip(self, value):
-        self._setBool(10, value)
+        self._setBool(11, value)
 
     def getNewStoryOpenedNumber(self):
-        return self._getNumber(11)
+        return self._getNumber(12)
 
     def setNewStoryOpenedNumber(self, value):
-        self._setNumber(11, value)
+        self._setNumber(12, value)
 
     def getIsPopoverOpened(self):
-        return self._getBool(12)
-
-    def setIsPopoverOpened(self, value):
-        self._setBool(12, value)
-
-    def getIsGuiLootBoxesVisible(self):
         return self._getBool(13)
 
-    def setIsGuiLootBoxesVisible(self, value):
+    def setIsPopoverOpened(self, value):
         self._setBool(13, value)
 
+    def getIsGuiLootBoxesVisible(self):
+        return self._getBool(14)
+
+    def setIsGuiLootBoxesVisible(self, value):
+        self._setBool(14, value)
+
     def getGiftTime(self):
-        return self._getNumber(14)
-
-    def setGiftTime(self, value):
-        self._setNumber(14, value)
-
-    def getGiftCount(self):
         return self._getNumber(15)
 
-    def setGiftCount(self, value):
+    def setGiftTime(self, value):
         self._setNumber(15, value)
 
-    def getMaxBonus(self):
+    def getGiftCount(self):
         return self._getNumber(16)
 
-    def setMaxBonus(self, value):
+    def setGiftCount(self, value):
         self._setNumber(16, value)
 
-    def getCurBonus(self):
+    def getMaxBonus(self):
         return self._getNumber(17)
 
-    def setCurBonus(self, value):
+    def setMaxBonus(self, value):
         self._setNumber(17, value)
 
+    def getCurBonus(self):
+        return self._getNumber(18)
+
+    def setCurBonus(self, value):
+        self._setNumber(18, value)
+
     def getState(self):
-        return State(self._getString(18))
+        return State(self._getString(19))
 
     def setState(self, value):
-        self._setString(18, value.value)
+        self._setString(19, value.value)
 
     def getIsStoryEntryPointBubble(self):
-        return self._getBool(19)
+        return self._getBool(20)
 
     def setIsStoryEntryPointBubble(self, value):
-        self._setBool(19, value)
+        self._setBool(20, value)
 
     def _initialize(self):
         super(NyPetModel, self)._initialize()
@@ -178,6 +184,7 @@ class NyPetModel(ViewModel):
         self._addViewModelProperty('activityIndicator', NyPetIndicatorModel())
         self._addArrayProperty('petNeeds', Array())
         self._addBoolProperty('hasPetAnimations', True)
+        self._addBoolProperty('wasLeaderboardFinished', False)
         self._addBoolProperty('isOnboarding', False)
         self._addBoolProperty('isOnboardingVideoClosed', False)
         self._addNumberProperty('singleTip', SingleTipType.EMPTY.value)

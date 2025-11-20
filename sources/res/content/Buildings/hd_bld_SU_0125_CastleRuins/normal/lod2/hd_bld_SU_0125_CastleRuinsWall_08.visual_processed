@@ -13,9 +13,9 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<stream>uv2</stream>
-			<primitive>indices</primitive>
+			<vertices>s0Shape.vertices</vertices>
+			<stream>s0Shape.uv2</stream>
+			<primitive>s0Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -80,7 +80,7 @@
 						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_GBMT.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.022629 4.538954 -0.015765</groupOrigin>
+				<groupOrigin>0.022629 4.563274 -0.015765</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -89,6 +89,6 @@
 		<max>0.965607 9.128290 1.419994</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>688</geometrySize>
-	<minUVDensity>0.041639</minUVDensity>
+	<geometrySize>860</geometrySize>
+	<minUVDensity>0.023632</minUVDensity>
 </root>

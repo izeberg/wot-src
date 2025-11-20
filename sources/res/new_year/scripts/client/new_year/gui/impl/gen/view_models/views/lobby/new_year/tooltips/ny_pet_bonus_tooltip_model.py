@@ -5,7 +5,7 @@ from new_year.gui.impl.gen.view_models.views.lobby.new_year.views.pet.ny_pet_ind
 class NyPetBonusTooltipModel(ViewModel):
     __slots__ = ()
 
-    def __init__(self, properties=4, commands=0):
+    def __init__(self, properties=5, commands=0):
         super(NyPetBonusTooltipModel, self).__init__(properties=properties, commands=commands)
 
     def getCurrentBonus(self):
@@ -26,11 +26,17 @@ class NyPetBonusTooltipModel(ViewModel):
     def setMaxBonus(self, value):
         self._setNumber(2, value)
 
+    def getWasLeaderboardFinished(self):
+        return self._getBool(3)
+
+    def setWasLeaderboardFinished(self, value):
+        self._setBool(3, value)
+
     def getIndicators(self):
-        return self._getArray(3)
+        return self._getArray(4)
 
     def setIndicators(self, value):
-        self._setArray(3, value)
+        self._setArray(4, value)
 
     @staticmethod
     def getIndicatorsType():
@@ -41,4 +47,5 @@ class NyPetBonusTooltipModel(ViewModel):
         self._addNumberProperty('currentBonus', 0)
         self._addNumberProperty('minBonus', 0)
         self._addNumberProperty('maxBonus', 0)
+        self._addBoolProperty('wasLeaderboardFinished', False)
         self._addArrayProperty('indicators', Array())

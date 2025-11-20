@@ -1,6 +1,5 @@
 import logging, weakref, typing, BigWorld
 from functools import partial
-from CurrentVehicle import g_currentPreviewVehicle
 from Event import Event
 from HeroTank import HeroTank
 from cgf_components.hangar_camera_manager import HangarCameraManager, CameraMode
@@ -153,7 +152,7 @@ class MainView(ViewImpl, IViewCameraSync):
         return self.__skipCameraFlightOnClose
 
     def _initialize(self, *args, **kwargs):
-        self.__toggleHangarVehicleSelection(False)
+        NewYearNavigation.toggleHangarVehicleSelection(False)
         HangarCameraManager.forbidState(CameraMode.DEFAULT)
         g_eventBus.handleEvent(events.LobbyHeaderEvent(events.LobbyHeaderEvent.TOGGLE_VISIBILITY, ctx={'visible': False}), EVENT_BUS_SCOPE.LOBBY)
 
@@ -199,7 +198,7 @@ class MainView(ViewImpl, IViewCameraSync):
         self.onNewYearViewInitialized.clear()
         if self.__tipWindow:
             self.__onTipClosed()
-        self.__resetHangarUI()
+        NewYearNavigation.resetHangarUI()
         return
 
     def _getEvents(self):
@@ -235,19 +234,6 @@ class MainView(ViewImpl, IViewCameraSync):
           NewYearEvent.UPDATE_BACK_BUTTON,
           self.__onBackButtonUpdated,
           EVENT_BUS_SCOPE.LOBBY))
-
-    def __resetHangarUI(self):
-        self.__toggleHangarVehicleSelection(True)
-        g_currentPreviewVehicle.selectNoVehicle()
-        g_currentPreviewVehicle.resetAppearance()
-
-    def __toggleHangarVehicleSelection(self, isSelect):
-        if not (self.__hangarSpace.spaceInited and self.__hangarSpace.space.getVehicleEntity()):
-            return
-        if isSelect:
-            self.__hangarSpace.space.getVehicleEntity().onSelect()
-            return
-        self.__hangarSpace.space.getVehicleEntity().deselectAll()
 
     def __registerSubModels(self):
         self.__contentPresentersMap = _PresentersMap(self)

@@ -1168,37 +1168,47 @@
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>track_mat_R_skinned</identifier>
 					<fx>shaders/std_effects/PBS_tank_uvtransform_skinned_ao.fx</fx>
 					<materialKind>0</materialKind>
+					<identifier>track_mat_R_skinned</identifier>
 					<collisionFlags>0</collisionFlags>
 					<property>
-						alphaReference
-						<Int>128</Int>
+						diffuseMap
+						<Texture>vehicles/british/tracks/Champion_track_AM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/british/tracks/Champion_track_GMM.dds</Texture>
+					</property>
+					<property>
+						g_detailPowerGloss
+						<Float>
+							0.35
+							<!--BW_String-->
+						</Float>
 					</property>
 					<property>
 						alphaTestEnable
 						<Bool>true</Bool>
 					</property>
 					<property>
-						diffuseMap
-						<Texture>vehicles/british/tracks/Champion_track_AM.dds</Texture>
-					</property>
-					<property>
-						g_detailUVTiling
-						<Vector4>3.507000 0.876750 0.000000 0.000000</Vector4>
+						g_maskBias
+						<Float>
+							0.18
+							<!--BW_String-->
+						</Float>
 					</property>
 					<property>
 						g_useDetailMetallic
 						<Bool>true</Bool>
 					</property>
 					<property>
-						metallicDetailMap
-						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+						g_detailUVTiling
+						<Vector4>3.507000 3.507000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
-						metallicGlossMap
-						<Texture>vehicles/british/tracks/Champion_track_GMM.dds</Texture>
+						g_detailPower
+						<Float>5</Float>
 					</property>
 					<property>
 						normalMap
@@ -1207,6 +1217,21 @@
 					<property>
 						doubleSided
 						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						alphaReference
+						<Int>128</Int>
+					</property>
+					<property>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
 					</property>
 				</material>
 				<groupOrigin>1.551481 0.629693 -0.053420</groupOrigin>
@@ -1238,37 +1263,47 @@
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>track_mat_L_skinned</identifier>
 					<fx>shaders/std_effects/PBS_tank_uvtransform_skinned_ao.fx</fx>
 					<materialKind>0</materialKind>
+					<identifier>track_mat_L_skinned</identifier>
 					<collisionFlags>0</collisionFlags>
 					<property>
-						alphaReference
-						<Int>128</Int>
+						diffuseMap
+						<Texture>vehicles/british/tracks/Champion_track_AM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/british/tracks/Champion_track_GMM.dds</Texture>
+					</property>
+					<property>
+						g_detailPowerGloss
+						<Float>
+							0.35
+							<!--BW_String-->
+						</Float>
 					</property>
 					<property>
 						alphaTestEnable
 						<Bool>true</Bool>
 					</property>
 					<property>
-						diffuseMap
-						<Texture>vehicles/british/tracks/Champion_track_AM.dds</Texture>
-					</property>
-					<property>
-						g_detailUVTiling
-						<Vector4>3.507000 0.876750 0.000000 0.000000</Vector4>
+						g_maskBias
+						<Float>
+							0.18
+							<!--BW_String-->
+						</Float>
 					</property>
 					<property>
 						g_useDetailMetallic
 						<Bool>true</Bool>
 					</property>
 					<property>
-						metallicDetailMap
-						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+						g_detailUVTiling
+						<Vector4>3.507000 3.507000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
-						metallicGlossMap
-						<Texture>vehicles/british/tracks/Champion_track_GMM.dds</Texture>
+						g_detailPower
+						<Float>5</Float>
 					</property>
 					<property>
 						normalMap
@@ -1277,6 +1312,21 @@
 					<property>
 						doubleSided
 						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						alphaReference
+						<Int>128</Int>
+					</property>
+					<property>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
 					</property>
 				</material>
 				<groupOrigin>-1.551481 0.629693 -0.053420</groupOrigin>
@@ -1315,13 +1365,21 @@
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>tank_chassis_01_skinned</identifier>
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
-					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
+					<identifier>tank_chassis_01_skinned</identifier>
+					<collisionFlags>0</collisionFlags>
 					<property>
-						g_detailUVTiling
-						<Vector4>3.507000 3.507000 0.000000 0.000000</Vector4>
+						diffuseMap
+						<Texture>vehicles/british/GB140_Champion/Champion_chassis_01_AM.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/british/GB140_Champion/Champion_chassis_01_GMM.dds</Texture>
 					</property>
 					<property>
 						g_detailPowerGloss
@@ -1331,11 +1389,8 @@
 						</Float>
 					</property>
 					<property>
-						g_detailPowerAlbedo
-						<Float>
-							0.11
-							<!--BW_String-->
-						</Float>
+						alphaTestEnable
+						<Bool>true</Bool>
 					</property>
 					<property>
 						g_maskBias
@@ -1345,44 +1400,43 @@
 						</Float>
 					</property>
 					<property>
-						g_detailPower
-						<Float>5</Float>
-					</property>
-					<property>
-						metallicDetailMap
-						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
-					</property>
-					<property>
 						g_useDetailMetallic
 						<Bool>true</Bool>
 					</property>
 					<property>
-						metallicGlossMap
-						<Texture>vehicles/british/GB140_Champion/Champion_chassis_01_GMM.dds</Texture>
+						g_detailUVTiling
+						<Vector4>3.507000 3.507000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_detailPower
+						<Float>5</Float>
 					</property>
 					<property>
 						normalMap
 						<Texture>vehicles/british/GB140_Champion/Champion_chassis_01_ANM.dds</Texture>
 					</property>
 					<property>
-						diffuseMap
-						<Texture>vehicles/british/GB140_Champion/Champion_chassis_01_AM.dds</Texture>
+						doubleSided
+						<Bool>true</Bool>
 					</property>
 					<property>
 						excludeMaskAndAOMap
 						<Texture>vehicles/british/GB140_Champion/Champion_chassis_01_AO.dds</Texture>
 					</property>
 					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
 						alphaReference
 						<Int>128</Int>
 					</property>
 					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
 					</property>
 				</material>
 				<groupOrigin>-1.466959 0.648595 -0.031396</groupOrigin>
@@ -1421,13 +1475,21 @@
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>tank_chassis_01_skinned</identifier>
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
-					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
+					<identifier>tank_chassis_01_skinned</identifier>
+					<collisionFlags>0</collisionFlags>
 					<property>
-						g_detailUVTiling
-						<Vector4>3.507000 3.507000 0.000000 0.000000</Vector4>
+						diffuseMap
+						<Texture>vehicles/british/GB140_Champion/Champion_chassis_01_AM.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/british/GB140_Champion/Champion_chassis_01_GMM.dds</Texture>
 					</property>
 					<property>
 						g_detailPowerGloss
@@ -1437,11 +1499,8 @@
 						</Float>
 					</property>
 					<property>
-						g_detailPowerAlbedo
-						<Float>
-							0.11
-							<!--BW_String-->
-						</Float>
+						alphaTestEnable
+						<Bool>true</Bool>
 					</property>
 					<property>
 						g_maskBias
@@ -1451,44 +1510,43 @@
 						</Float>
 					</property>
 					<property>
-						g_detailPower
-						<Float>5</Float>
-					</property>
-					<property>
-						metallicDetailMap
-						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
-					</property>
-					<property>
 						g_useDetailMetallic
 						<Bool>true</Bool>
 					</property>
 					<property>
-						metallicGlossMap
-						<Texture>vehicles/british/GB140_Champion/Champion_chassis_01_GMM.dds</Texture>
+						g_detailUVTiling
+						<Vector4>3.507000 3.507000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_detailPower
+						<Float>5</Float>
 					</property>
 					<property>
 						normalMap
 						<Texture>vehicles/british/GB140_Champion/Champion_chassis_01_ANM.dds</Texture>
 					</property>
 					<property>
-						diffuseMap
-						<Texture>vehicles/british/GB140_Champion/Champion_chassis_01_AM.dds</Texture>
+						doubleSided
+						<Bool>true</Bool>
 					</property>
 					<property>
 						excludeMaskAndAOMap
 						<Texture>vehicles/british/GB140_Champion/Champion_chassis_01_AO.dds</Texture>
 					</property>
 					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
 						alphaReference
 						<Int>128</Int>
 					</property>
 					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
 					</property>
 				</material>
 				<groupOrigin>1.466959 0.648595 -0.031396</groupOrigin>

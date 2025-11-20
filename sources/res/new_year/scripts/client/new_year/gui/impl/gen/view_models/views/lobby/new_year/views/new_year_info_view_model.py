@@ -22,6 +22,7 @@ class NewYearInfoViewModel(ViewModel):
     QUESTS = 'quests'
     REWARDS = 'rewards'
     LEADERS = 'leaders'
+    LEADERS_RULES = 'leaders_rules'
 
     def __init__(self, properties=14, commands=1):
         super(NewYearInfoViewModel, self).__init__(properties=properties, commands=commands)

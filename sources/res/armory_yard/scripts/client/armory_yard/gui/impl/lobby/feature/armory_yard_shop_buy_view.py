@@ -169,7 +169,8 @@ class ArmoryYardShopBuyView(ArmoryYardShopBaseView):
             styleID = customization.get('id', '')
             self.onClose()
             self.__armoryYardCtrl.isVehiclePreview = True
-            self.__armoryYardCtrl.showShopStylePreview(styleID=styleID)
+            self.__armoryYardCtrl.showShopStylePreview(styleID=styleID, backCallback=partial(self.__armoryYardCtrl.goToArmoryYard, ctx={'loadShopBuyView': True, 
+               'productID': self.__productId}))
             self.__armoryYardCtrl.cameraManager.goToHangar()
 
     def __onPurchaseResponse(self, requestID, resultID, errorStr, data=None, isBundle=False, stages=0):

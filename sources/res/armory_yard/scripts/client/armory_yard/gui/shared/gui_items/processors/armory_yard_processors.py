@@ -1,6 +1,7 @@
 import logging, BigWorld
 from gui.shared.gui_items.processors import Processor
 from gui.shared.gui_items.processors.plugins import MoneyValidator, SyncValidator, WalletValidator, makeSuccess, makeError
+from gui.shared.gui_items.processors import makeError as makeErrorMsg
 from helpers import dependency
 from skeletons.gui.game_control import IArmoryYardController
 from gui import SystemMessages
@@ -68,8 +69,7 @@ class CollectRewardsProcessor(Processor):
         return super(CollectRewardsProcessor, self)._successHandler(code, ctx)
 
     def _errorHandler(self, code, errStr='', ctx=None):
-        SystemMessages.pushMessage(text=backport.text(R.strings.armory_yard.notifications.rewardOutTime()), type=SystemMessages.SM_TYPE.ErrorHeader, priority=NotificationPriorityLevel.HIGH, messageData={'header': R.strings.armory_yard.notifications.title()})
-        return super(CollectRewardsProcessor, self)._errorHandler(code, errStr, ctx)
+        return makeErrorMsg(userMsg=backport.text(R.strings.armory_yard.notifications.rewardOutTime()), msgType=SystemMessages.SM_TYPE.ErrorHeader, msgData={'header': backport.text(R.strings.armory_yard.notifications.title())}, msgPriority=NotificationPriorityLevel.HIGH)
 
 
 class BuyStepTokens(Processor):
@@ -111,6 +111,4 @@ class ClaimRareRewardProcessor(Processor):
         return super(ClaimRareRewardProcessor, self)._successHandler(code, ctx)
 
     def _errorHandler(self, code, errStr='', ctx=None):
-        _logger.error('[Armory Yard] Failed to claim rare reward')
-        SystemMessages.pushMessage(text=backport.text(R.strings.armory_yard.notifications.rewardOutTime()), type=SystemMessages.SM_TYPE.ErrorHeader, priority=NotificationPriorityLevel.HIGH, messageData={'header': R.strings.armory_yard.notifications.title()})
-        return super(ClaimRareRewardProcessor, self)._errorHandler(code, errStr, ctx)
+        return makeErrorMsg(userMsg=backport.text(R.strings.armory_yard.notifications.rewardOutTime()), msgType=SystemMessages.SM_TYPE.ErrorHeader, msgData={'header': backport.text(R.strings.armory_yard.notifications.title())}, msgPriority=NotificationPriorityLevel.HIGH)

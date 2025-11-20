@@ -7,6 +7,7 @@ from new_year.gui.impl.gen.view_models.views.lobby.new_year.views.pet.ny_indicat
 from new_year.gui.impl.gen.view_models.views.lobby.new_year.views.pet.ny_pet_item_leaderboard_point import NyPetItemLeaderboardPoint
 from new_year.gui.impl.gen.view_models.views.lobby.new_year.views.pet.ny_pet_model import NyPetModel
 from new_year.gui.impl.gen.view_models.views.lobby.new_year.views.pet.ny_pet_model import State
+from new_year.gui.impl.lobby.new_year.ny_leaderboard_recount_view import NyLeaderboardRecountViewWindow
 from new_year.gui.impl.lobby.new_year.sub_model_presenter import SubModelPresenter
 from new_year.ny_constants import PERCENT
 from new_year.skeletons.new_year import ITamagotchiDataProvider, INewYearController, IRaccoonAnimationController
@@ -144,9 +145,10 @@ class NyPetIndicatorsBlock(SubModelPresenter):
     def __onItemsActivateRequested(self, *_, **__):
         self.__toggleIndicatorsWaiting(True)
 
-    def __onItemsActivated(self, isSuccess, itemId, count):
+    def __onItemsActivated(self, isSuccess, itemId, count, isRecalculation):
         self.__toggleIndicatorsWaiting(False)
-        if not isSuccess:
+        if not isSuccess and isRecalculation:
+            NyLeaderboardRecountViewWindow(parent=self.getParentWindow()).load()
             return
         with self.viewModel.transaction() as (tx):
             for name, indicator in self._dataProvider.config.indicators.iteritems():
@@ -156,13 +158,14 @@ class NyPetIndicatorsBlock(SubModelPresenter):
                 indicatorType = IndicatorType(name)
                 model = self.getIndicator(indicatorType, tx)
                 model.setWasOverflowed(self._dataProvider.playerInfo.indicators[name] >= indicator.maxPoints)
-                points = model.getItemLeaderboardPoint()
-                item = NyPetItemLeaderboardPoint()
-                item.setId(getCurrentTimestamp())
-                item.setValue(count * indicator.item.leaderboardPoint)
-                item.setType(indicatorType)
-                points.addViewModel(item)
-                points.invalidate()
+                if not self._dataProvider.isLeaderboardFinished:
+                    points = model.getItemLeaderboardPoint()
+                    item = NyPetItemLeaderboardPoint()
+                    item.setId(getCurrentTimestamp())
+                    item.setValue(count * indicator.item.leaderboardPoint)
+                    item.setType(indicatorType)
+                    points.addViewModel(item)
+                    points.invalidate()
 
     def __onGiftCountUpdated(self):
         with self.viewModel.transaction() as (tx):

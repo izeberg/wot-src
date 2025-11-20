@@ -41,7 +41,7 @@ from skeletons.gui.system_messages import ISystemMessages
 from skeletons.gui.game_control import IUnseenEventsCounter
 from new_year.skeletons.new_year import INewYearController
 from skeletons.gui.game_control import IBootcampController, IBattleRoyaleController, IGuiLootBoxesController
-from new_year.helpers.server_settings import getNewYearObjectsConfig, getNewYearGeneralConfig
+from new_year.helpers.server_settings import getNewYearObjectsConfig, getNewYearGeneralConfig, getNewYearMachineConfig
 from new_year.gui.shared.utils.ny_requester import NewYearToy
 from new_year.helpers.ny_helpers import getCurrentObjectLevel
 from new_year.ny_constants import NewYearLootBoxes
@@ -106,6 +106,8 @@ class NewYearController(INewYearController, IGlobalListener):
         self.__tutorialController = NewYearTutorialController()
         self.__lockedUIControls = set()
         self.__customReturnActionName = None
+        self.__lastMachineEnabled = None
+        self.__lastPetVisible = None
         return
 
     def init(self):
@@ -123,6 +125,8 @@ class NewYearController(INewYearController, IGlobalListener):
         return
 
     def onLobbyInited(self, event):
+        self.__lastMachineEnabled = getNewYearMachineConfig().isEnabled()
+        self.__lastPetVisible = getNewYearGeneralConfig().getPetVisible()
         if self._bootcampController.isInBootcamp():
             return
         self.__isBattleRoyaleMode = self._battleRoyaleController.isBattleRoyaleMode()
@@ -632,6 +636,8 @@ class NewYearController(INewYearController, IGlobalListener):
         self.__levelsInfo = None
         self.__spaceUpdated = False
         self.__customReturnActionName = None
+        self.__lastMachineEnabled = None
+        self.__lastPetVisible = None
         self.__lockedUIControls.clear()
         self.__navigationHelper.clear()
         self.stopGlobalListening()
@@ -670,7 +676,8 @@ class NewYearController(INewYearController, IGlobalListener):
         from gui.shared.gui_items.loot_box import addBonusesToGroup
         addBonusesToGroup(LootBoxBonusGroup.FEATUREITEMS, (CurrentNYConstants.IP_TYPE_CUSTOM_TOYS,
          CurrentNYConstants.IP_TYPE_CUSTOM_ANYOF_TOYS,
-         CurrentNYConstants.IP_TYPE_CUSTOM_MANDATINS))
+         CurrentNYConstants.IP_TYPE_CUSTOM_MANDATINS,
+         CurrentNYConstants.IP_TYPE_CUSTOM_CURRENCIES))
         from gui_lootboxes_common import constants_utils
         from new_year.gui.bonuses.bonuses_packers import NYMysteryBoxWithToysBonusUIPacker, NYBoxWithToysBonusUIPacker, NYToyBonusUIPackerLarge, NYToyBonusUIPacker
         from new_year.gui.impl.new_year.new_year_bonus_packer import NYMandarinsBonusPacker
@@ -712,11 +719,17 @@ class NewYearController(INewYearController, IGlobalListener):
 
     def __sendMachineNotification(self, diff):
         isMachineEnabled = diff.get('ny_config', {}).get('machine_config', {}).get('isEnabled')
-        if isMachineEnabled is not None and not isMachineEnabled:
-            SystemMessages.pushMessage(text=backport.text(R.strings.ny.notification.machine.unavailable.text()), type=SM_TYPE.ErrorHeader, priority=NotificationPriorityLevel.HIGH, messageData={'header': backport.text(R.strings.ny.notification.machine.header())})
-        if isMachineEnabled:
-            SystemMessages.pushMessage(text=backport.text(R.strings.ny.notification.machine.available.text()), type=SM_TYPE.InformationHeader, priority=NotificationPriorityLevel.HIGH, messageData={'header': backport.text(R.strings.ny.notification.machine.header())})
-        return
+        if isMachineEnabled is None:
+            return
+        else:
+            if self.__lastMachineEnabled is not None and isMachineEnabled == self.__lastMachineEnabled:
+                return
+            self.__lastMachineEnabled = isMachineEnabled
+            if isMachineEnabled:
+                SystemMessages.pushMessage(text=backport.text(R.strings.ny.notification.machine.available.text()), type=SM_TYPE.InformationHeader, priority=NotificationPriorityLevel.HIGH, messageData={'header': backport.text(R.strings.ny.notification.machine.header())})
+            else:
+                SystemMessages.pushMessage(text=backport.text(R.strings.ny.notification.machine.unavailable.text()), type=SM_TYPE.ErrorHeader, priority=NotificationPriorityLevel.HIGH, messageData={'header': backport.text(R.strings.ny.notification.machine.header())})
+            return
 
     def __sendRacoonNotification(self, diff):
         isRacoonEnabled = diff.get('ny_config', {}).get('general_config', {}).get('petVisible')
@@ -726,12 +739,15 @@ class NewYearController(INewYearController, IGlobalListener):
             self.onPetVisibilityUpdated(isRacoonEnabled)
             if NewYearAtmospherePresenter.getLevel() < getNewYearGeneralConfig().getRaccoonLevelOpen():
                 return
-            if not isRacoonEnabled:
-                SystemMessages.pushMessage(text=backport.text(R.strings.ny.notification.racoon.unavailable.text()), type=SM_TYPE.ErrorHeader, priority=NotificationPriorityLevel.HIGH, messageData={'header': backport.text(R.strings.ny.notification.racoon.header())})
-                SystemMessages.pushMessage(text=backport.text(R.strings.ny.notification.leaderboard.unavailable()), type=SM_TYPE.ErrorHeader, priority=NotificationPriorityLevel.HIGH, messageData={'header': backport.text(R.strings.ny.notification.leaderboard.header())})
-            else:
-                SystemMessages.pushMessage(text=backport.text(R.strings.ny.notification.racoon.available.text()), type=SM_TYPE.InformationHeader, priority=NotificationPriorityLevel.HIGH, messageData={'header': backport.text(R.strings.ny.notification.racoon.header())})
+            if self.__lastPetVisible is not None and isRacoonEnabled == self.__lastPetVisible:
+                return
+            self.__lastPetVisible = isRacoonEnabled
+            if isRacoonEnabled:
+                SystemMessages.pushMessage(text=backport.text(R.strings.ny.notification.racoon.available.text()), type=SM_TYPE.InformationHeader, priority=NotificationPriorityLevel.HIGH, messageData={'header': backport.text(R.strings.ny.notification.racoon.news())})
                 SystemMessages.pushMessage(text=backport.text(R.strings.ny.notification.leaderboard.available()), type=SM_TYPE.InformationHeader, priority=NotificationPriorityLevel.HIGH, messageData={'header': backport.text(R.strings.ny.notification.leaderboard.header())})
+            else:
+                SystemMessages.pushMessage(text=backport.text(R.strings.ny.notification.racoon.unavailable.text()), type=SM_TYPE.ErrorHeader, priority=NotificationPriorityLevel.HIGH, messageData={'header': backport.text(R.strings.ny.notification.racoon.news())})
+                SystemMessages.pushMessage(text=backport.text(R.strings.ny.notification.leaderboard.unavailable()), type=SM_TYPE.ErrorHeader, priority=NotificationPriorityLevel.HIGH, messageData={'header': backport.text(R.strings.ny.notification.leaderboard.header())})
             return
 
     def __updateUnseenQuests(self):

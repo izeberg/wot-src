@@ -2,11 +2,14 @@ import logging
 from collections import namedtuple
 import typing, Event
 from ClientSelectableCameraObject import ClientSelectableCameraObject
+from CurrentVehicle import g_currentPreviewVehicle
 from adisp import adisp_process
 from constants import DEFAULT_HANGAR_SCENE
 from gui.Scaleform.managers.fade_manager import FadeState
 from gui.app_loader import sf_lobby
+from gui.shared import g_eventBus
 from gui.shared.event_dispatcher import showHangar
+from gui.shared.events import ArmoryYardEvent
 from new_year.gui.impl.new_year.sounds import NewYearSoundsManager, NewYearSoundEvents
 from new_year.gui.shared.event_dispatcher import showNewYearMainView, showNewYearOnboardingView
 from helpers import dependency
@@ -16,6 +19,7 @@ from new_year.ny_constants import ANCHOR_TO_OBJECT, NyWidgetTopMenu, Collections
 from skeletons.gui.impl import INewYearNavigation
 from skeletons.gui.game_control import IHangarSpaceSwitchController
 from new_year.skeletons.new_year import INewYearController
+from skeletons.gui.shared.utils import IHangarSpace
 _logger = logging.getLogger(__name__)
 _SwitchCtx = namedtuple('_SwitchCtx', ('viewAlias', 'args', 'kwargs'))
 
@@ -151,6 +155,7 @@ class NewYearNavigation(INewYearNavigation):
     _navigationState = _NavigationState()
     __nyController = dependency.descriptor(INewYearController)
     __spaceSwitchController = dependency.descriptor(IHangarSpaceSwitchController)
+    _hangarSpace = dependency.descriptor(IHangarSpace)
     __delayedSwitchViewCtx = None
     onObjectStateChanged = Event.Event()
     onUpdateCurrentView = Event.Event()
@@ -208,12 +213,15 @@ class NewYearNavigation(INewYearNavigation):
     @classmethod
     @adisp_process
     def showViewAfterPrbSwitch(cls, viewAlias, *args, **kwargs):
-        if not cls.__nyController.isNewYearBattleMode() and cls.__spaceSwitchController.currentSceneName != DEFAULT_HANGAR_SCENE:
-            result = yield cls.__nyController.switchToNewYearPrebattle()
-            if result:
-                cls.__delayedSwitchViewCtx = _SwitchCtx(viewAlias=viewAlias, args=args, kwargs=kwargs)
-        else:
-            cls.showNavigationView(viewAlias, **kwargs)
+        if cls.__spaceSwitchController.currentSceneName == DEFAULT_HANGAR_SCENE:
+            cls.showNavigationView(viewAlias, *args, **kwargs)
+            return
+        result = yield cls.__nyController.switchToNewYearPrebattle()
+        if not result:
+            return
+        cls.__delayedSwitchViewCtx = _SwitchCtx(viewAlias=viewAlias, args=args, kwargs=kwargs)
+        if cls.__spaceSwitchController.currentSceneName != DEFAULT_HANGAR_SCENE:
+            g_eventBus.handleEvent(ArmoryYardEvent(ArmoryYardEvent.DESTROY_ARMORY_YARD_MAIN_VIEW))
 
     @classmethod
     def onHeroTankReady(cls):
@@ -253,6 +261,9 @@ class NewYearNavigation(INewYearNavigation):
             _logger.warning("When fade isn't done, switching to obj=%s is locked.", objectName)
             return
         else:
+            if cls.__spaceSwitchController.currentSceneName != DEFAULT_HANGAR_SCENE:
+                _logger.error('[NY] failed to swith UI. Use showViewAfterPrbSwitch instead %s %s', objectName, viewAlias)
+                return
             cls._navigationState.setCurrentObject(objectName)
             if withFade:
                 cls._navigationState.setIsSceneInFade(True)
@@ -281,6 +292,21 @@ class NewYearNavigation(INewYearNavigation):
             cls.onObjectStateChanged()
             cls.__playTransitionSound(objectName)
             return
+
+    @classmethod
+    def toggleHangarVehicleSelection(cls, isSelect):
+        if not (cls._hangarSpace.spaceInited and cls._hangarSpace.space.getVehicleEntity()):
+            return
+        if isSelect:
+            cls._hangarSpace.space.getVehicleEntity().onSelect()
+            return
+        cls._hangarSpace.space.getVehicleEntity().deselectAll()
+
+    @classmethod
+    def resetHangarUI(cls):
+        cls.toggleHangarVehicleSelection(True)
+        g_currentPreviewVehicle.selectNoVehicle()
+        g_currentPreviewVehicle.resetAppearance()
 
     @classmethod
     def clear(cls):

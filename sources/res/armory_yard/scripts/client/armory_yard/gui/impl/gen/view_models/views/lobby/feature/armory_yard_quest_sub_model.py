@@ -7,6 +7,7 @@ class QuestStatus(Enum):
     DONE = 'done'
     UNDONESUBSCRIPTION = 'undoneSubscription'
     LOCKED = 'notAvailable'
+    DISABLED = 'disabled'
     ACTIVE = ''
 
 

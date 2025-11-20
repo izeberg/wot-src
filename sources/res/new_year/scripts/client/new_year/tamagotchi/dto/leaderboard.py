@@ -4,12 +4,13 @@ from new_year.tamagotchi.dto.base import BaseDto
 class Leaderboard(BaseDto):
 
     class Dto(BaseDto):
-        __slots__ = ('updateTime', 'nextUpdateTime', 'user', 'page')
+        __slots__ = ('updateTime', 'nextUpdateTime', 'isRecalcTime', 'user', 'page')
 
         def __init__(self):
             super(Leaderboard.Dto, self).__init__()
             self.updateTime = 0.0
             self.nextUpdateTime = 0.0
+            self.isRecalcTime = False
             self.user = Leaderboard.User.Dto()
             self.page = Leaderboard.Page.Dto()
 

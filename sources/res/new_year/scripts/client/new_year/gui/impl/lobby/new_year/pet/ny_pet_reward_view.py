@@ -57,7 +57,7 @@ class PetRewardView(ViewImpl):
         SoundGroups.g_instance.setState(RaccoonStates.GROUP, RaccoonStates.MAIN)
         self.destroyWindow()
 
-    def __onGiftObtained(self, isSuccess, _, count, isSecret):
+    def __onGiftObtained(self, isSuccess, _, count, isSecret, isRecalculation):
         g_messengerEvents.onLockPopUpMessages(lockHigh=True)
         Waiting.hide(_WAIT_ID)
         if not isSuccess:

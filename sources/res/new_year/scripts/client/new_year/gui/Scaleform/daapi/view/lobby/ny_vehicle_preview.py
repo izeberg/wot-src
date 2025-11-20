@@ -5,19 +5,8 @@ from gui.impl.gen import R
 
 class NyVehiclePreview(VehiclePreview):
 
-    def __init__(self, ctx=None):
-        super(NyVehiclePreview, self).__init__(ctx)
-        self.__isVehicleSelectable = ctx.get('isVehicleSelectable', False)
-        self.__isShowBackButton = ctx.get('isShowBackButton', False)
-
-    def _populate(self):
-        super(NyVehiclePreview, self)._populate()
-        self._hangarSpace.setVehicleSelectable(self.__isVehicleSelectable)
-
-    def _getData(self):
-        result = super(NyVehiclePreview, self)._getData()
-        result['showBackButton'] = self.__isShowBackButton
-        return result
+    def _getBackBtnLabel(self):
+        return ''
 
     def _onRegisterFlashComponent(self, viewPy, alias):
         super(NyVehiclePreview, self)._onRegisterFlashComponent(viewPy, alias)

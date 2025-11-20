@@ -137,7 +137,7 @@ class _NewYearTamagotchiTutorSkipHandler(ActionHandler):
         return ('skipTamagotchiTutorial', )
 
     def handleAction(self, model, entityID, action):
-        self._dataProvider.isOnboarding = False
+        self._dataProvider.onOnboardingSkipped()
         model.removeNotification(self.getNotType(), entityID)
 
 

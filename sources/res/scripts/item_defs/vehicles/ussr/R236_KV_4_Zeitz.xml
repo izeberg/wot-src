@@ -1236,18 +1236,15 @@
 						<isLeft>true</isLeft>
 						<destructionEffect/>
 						<physicalParams>
-							<renderModelOffset>
-								-0.015
-								<!--BW_String-->
-							</renderModelOffset>
-							<lengthwiseSpringLength>0.148333</lengthwiseSpringLength>
-							<widthwiseSpringLength>0.817781</widthwiseSpringLength>
-							<hingeJointStiffness>1922.642334</hingeJointStiffness>
+							<renderModelOffset>-0.044137</renderModelOffset>
+							<lengthwiseSpringLength>0.148192</lengthwiseSpringLength>
+							<widthwiseSpringLength>0.795493</widthwiseSpringLength>
+							<hingeJointStiffness>1925.042603</hingeJointStiffness>
 							<torsionStiffnessStep>8</torsionStiffnessStep>
 							<wheelGroups>
 								<wheelGroup>
 									<wheelName>WD_L5</wheelName>
-									<groupRadius>0.361668</groupRadius>
+									<groupRadius>0.379661</groupRadius>
 									<groupInnerOffset>
 										0.52389
 										<!--BW_String-->
@@ -1275,7 +1272,10 @@
 									<wheelName>WD_L3</wheelName>
 									<wheelName>WD_L2</wheelName>
 									<wheelName>WD_L1</wheelName>
-									<groupRadius>0.178131</groupRadius>
+									<groupRadius>
+										0.17842
+										<!--BW_String-->
+									</groupRadius>
 									<groupInnerOffset>
 										0.52389
 										<!--BW_String-->
@@ -1284,7 +1284,7 @@
 								</wheelGroup>
 								<wheelGroup>
 									<wheelName>WD_L0</wheelName>
-									<groupRadius>0.368301</groupRadius>
+									<groupRadius>0.386294</groupRadius>
 									<groupInnerOffset>
 										0.52389
 										<!--BW_String-->
@@ -1294,16 +1294,16 @@
 							</wheelGroups>
 							<hullCollider>
 								<boxCollider>
-									<row0>2.305732 0.000000 0.000000</row0>
-									<row1>0.000000 1.338531 0.000000</row1>
-									<row2>0.000000 0.000000 9.096292</row2>
-									<row3>0.000000 1.219264 0.114570</row3>
+									<row0>2.305730 0.000000 0.000000</row0>
+									<row1>0.000000 1.338530 0.000000</row1>
+									<row2>0.000000 0.000000 9.096290</row2>
+									<row3>0.000000 1.219260 0.114570</row3>
 								</boxCollider>
 								<boxCollider>
-									<row0>4.026492 0.000000 0.000000</row0>
+									<row0>4.026490 0.000000 0.000000</row0>
 									<row1>0.000000 0.300000 0.000000</row1>
-									<row2>0.000000 0.000000 8.070606</row2>
-									<row3>0.000000 1.528538 0.037274</row3>
+									<row2>0.000000 0.000000 8.070610</row2>
+									<row3>0.000000 1.528540 0.037274</row3>
 								</boxCollider>
 								<boxCollider>
 									<row0>4.026490 -0.000002 0.000001</row0>
@@ -1315,7 +1315,7 @@
 									<row0>4.026490 0.000000 0.000001</row0>
 									<row1>-0.000000 0.287749 0.084858</row1>
 									<row2>-0.000000 -0.185469 0.628914</row2>
-									<row3>-0.000001 1.548212 4.178042</row3>
+									<row3>-0.000001 1.548210 4.178040</row3>
 								</boxCollider>
 							</hullCollider>
 						</physicalParams>
@@ -1324,18 +1324,18 @@
 						<isLeft>false</isLeft>
 						<destructionEffect/>
 						<physicalParams>
-							<renderModelOffset>
-								-0.015
+							<renderModelOffset>-0.046462</renderModelOffset>
+							<lengthwiseSpringLength>0.147093</lengthwiseSpringLength>
+							<widthwiseSpringLength>0.795492</widthwiseSpringLength>
+							<hingeJointStiffness>
+								1942.70166
 								<!--BW_String-->
-							</renderModelOffset>
-							<lengthwiseSpringLength>0.147253</lengthwiseSpringLength>
-							<widthwiseSpringLength>0.817781</widthwiseSpringLength>
-							<hingeJointStiffness>1940.251221</hingeJointStiffness>
+							</hingeJointStiffness>
 							<torsionStiffnessStep>8</torsionStiffnessStep>
 							<wheelGroups>
 								<wheelGroup>
 									<wheelName>WD_R5</wheelName>
-									<groupRadius>0.362536</groupRadius>
+									<groupRadius>0.382853</groupRadius>
 									<groupInnerOffset>
 										-0.52389
 										<!--BW_String-->
@@ -1363,7 +1363,10 @@
 									<wheelName>WD_R3</wheelName>
 									<wheelName>WD_R2</wheelName>
 									<wheelName>WD_R1</wheelName>
-									<groupRadius>0.178138</groupRadius>
+									<groupRadius>
+										0.17847
+										<!--BW_String-->
+									</groupRadius>
 									<groupInnerOffset>
 										-0.52389
 										<!--BW_String-->
@@ -1372,7 +1375,10 @@
 								</wheelGroup>
 								<wheelGroup>
 									<wheelName>WD_R0</wheelName>
-									<groupRadius>0.369573</groupRadius>
+									<groupRadius>
+										0.38989
+										<!--BW_String-->
+									</groupRadius>
 									<groupInnerOffset>
 										-0.52389
 										<!--BW_String-->
@@ -2092,7 +2098,7 @@
 								-3.020482 0.3926
 								<!--BW_String-->
 							</basePos>
-							<shiftVec>0.054832 -0.322317</shiftVec>
+							<shiftVec>0.054832 -0.322318</shiftVec>
 							<jointIdx>84</jointIdx>
 						</bottomBack>
 						<bottomFront>
@@ -2135,7 +2141,7 @@
 								<xStart>-4.378442</xStart>
 								<xStep>0.075464</xStep>
 								<ySamples>
-									1.20397 1.26665 1.3042 1.32607 1.33438 1.33512 1.33512 1.33512 1.33512 1.33512 1.33512 1.33512 1.33512 1.33512 1.33512 1.33512 1.33512 1.33512 1.33512 1.33512 1.33512 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33361 1.3316 1.32951 1.32715 1.32536 1.32618 1.32796 1.32974 1.33161 1.33359 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.3327 1.3294 1.32611 1.32281 1.31952 1.31843 1.32004 1.32393 1.32759 1.33123 1.33395 1.33511 1.33511 1.33511 1.33511 1.33421 1.32518 1.30211 1.26351
+									1.20397 1.26665 1.3042 1.32607 1.33438 1.33512 1.33512 1.33512 1.33512 1.33512 1.33512 1.33512 1.33512 1.33512 1.33512 1.33512 1.33512 1.33512 1.33512 1.33512 1.33512 1.33512 1.33512 1.33512 1.33512 1.33512 1.33512 1.33512 1.33512 1.33512 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33361 1.3316 1.32951 1.32715 1.32536 1.32618 1.32796 1.32974 1.33161 1.33359 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.3327 1.3294 1.32611 1.32281 1.31952 1.31843 1.32004 1.32394 1.32759 1.33123 1.33395 1.33511 1.33511 1.33511 1.33511 1.33421 1.32518 1.30211 1.26351
 									<!--BW_String-->
 								</ySamples>
 							</part>
@@ -2318,10 +2324,7 @@
 						<!--BW_String-->
 					</segmentsOuterThickness>
 					<segmentsInnerThickness>0</segmentsInnerThickness>
-					<segmentsPlaneOffset>
-						1.595
-						<!--BW_String-->
-					</segmentsPlaneOffset>
+					<segmentsPlaneOffset>1.595157</segmentsPlaneOffset>
 					<mainSegment>
 						<model>vehicles/russian/R236_KV_4_Zeitz/track/segment.model</model>
 						<length>0.151129</length>
@@ -2340,10 +2343,7 @@
 								0.146
 								<!--BW_String-->
 							</front>
-							<bottom>
-								0.09663
-								<!--BW_String-->
-							</bottom>
+							<bottom>0.097352</bottom>
 						</backwardMovement>
 						<forwardMovement>
 							<back>
@@ -2358,10 +2358,7 @@
 								0.147
 								<!--BW_String-->
 							</front>
-							<bottom>
-								0.09663
-								<!--BW_String-->
-							</bottom>
+							<bottom>0.097352</bottom>
 						</forwardMovement>
 					</springsLength>
 					<bottomWheels>
@@ -2380,10 +2377,7 @@
 						<topFront>
 							<wheelName>WD_R0</wheelName>
 							<basePos>4.133301 0.928109</basePos>
-							<shiftVec>
-								0.345984 0.12992
-								<!--BW_String-->
-							</shiftVec>
+							<shiftVec>0.345984 0.129922</shiftVec>
 							<jointIdx>13</jointIdx>
 						</topFront>
 						<topBack>
@@ -2404,7 +2398,7 @@
 								-3.19048 0.392601
 								<!--BW_String-->
 							</basePos>
-							<shiftVec>0.037785 -0.319994</shiftVec>
+							<shiftVec>0.037786 -0.319994</shiftVec>
 							<jointIdx>85</jointIdx>
 						</bottomBack>
 						<bottomFront>
@@ -2414,7 +2408,7 @@
 								<!--BW_String-->
 							</basePos>
 							<shiftVec>
-								0.016272 -0.31958
+								0.016274 -0.31958
 								<!--BW_String-->
 							</shiftVec>
 							<jointIdx>0</jointIdx>
@@ -2453,7 +2447,7 @@
 								<xStart>-4.374437</xStart>
 								<xStep>0.075564</xStep>
 								<ySamples>
-									1.20546 1.26759 1.30593 1.32709 1.33472 1.33512 1.33512 1.33512 1.33512 1.33512 1.33512 1.33512 1.33512 1.33512 1.33512 1.33512 1.33512 1.33512 1.33512 1.33512 1.33512 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.3339 1.33228 1.33051 1.33167 1.33369 1.33627 1.3385 1.3382 1.33788 1.33608 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33512 1.33512 1.33512 1.33512 1.33513 1.33515 1.33516 1.33518 1.33519 1.33321 1.33003 1.32798 1.32737 1.32699 1.32837 1.32976 1.33114 1.33192 1.33229 1.33266 1.33303 1.3334 1.33378 1.33415 1.33452 1.33489 1.33312 1.32183 1.29701 1.28805
+									1.20546 1.26759 1.30593 1.32709 1.33472 1.33512 1.33512 1.33512 1.33512 1.33512 1.33512 1.33512 1.33512 1.33512 1.33512 1.33512 1.33512 1.33512 1.33512 1.33512 1.33512 1.33512 1.33512 1.33512 1.33512 1.33512 1.33512 1.33512 1.33512 1.33512 1.33512 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.3339 1.33228 1.33051 1.33167 1.33369 1.33627 1.3385 1.3382 1.33788 1.33608 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33511 1.33512 1.33512 1.33512 1.33512 1.33513 1.33515 1.33516 1.33518 1.33519 1.33322 1.33003 1.32798 1.32737 1.32699 1.32837 1.32976 1.33114 1.33192 1.33229 1.33266 1.33303 1.3334 1.33378 1.33415 1.33452 1.33489 1.33312 1.32183 1.29701 1.28805
 									<!--BW_String-->
 								</ySamples>
 							</part>

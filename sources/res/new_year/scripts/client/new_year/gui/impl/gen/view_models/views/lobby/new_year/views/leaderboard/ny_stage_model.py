@@ -12,7 +12,7 @@ class StageState(Enum):
 class NyStageModel(ViewModel):
     __slots__ = ()
 
-    def __init__(self, properties=6, commands=0):
+    def __init__(self, properties=7, commands=0):
         super(NyStageModel, self).__init__(properties=properties, commands=commands)
 
     def getId(self):
@@ -45,11 +45,17 @@ class NyStageModel(ViewModel):
     def setPosition(self, value):
         self._setNumber(4, value)
 
+    def getIsRecalc(self):
+        return self._getBool(5)
+
+    def setIsRecalc(self, value):
+        self._setBool(5, value)
+
     def getTops(self):
-        return self._getArray(5)
+        return self._getArray(6)
 
     def setTops(self, value):
-        self._setArray(5, value)
+        self._setArray(6, value)
 
     @staticmethod
     def getTopsType():
@@ -62,4 +68,5 @@ class NyStageModel(ViewModel):
         self._addNumberProperty('endDate', 0)
         self._addStringProperty('state')
         self._addNumberProperty('position', 0)
+        self._addBoolProperty('isRecalc', False)
         self._addArrayProperty('tops', Array())

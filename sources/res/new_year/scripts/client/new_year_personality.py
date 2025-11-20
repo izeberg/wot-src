@@ -1,6 +1,7 @@
 from debug_utils import LOG_DEBUG
 from account_helpers.AccountSettings import AccountSettings, KEY_SETTINGS
 from NewYearBonusesClient import NewYearBonusesClient
+from gui.Scaleform.daapi.view.lobby.vehicle_preview.vehicle_preview_constants import VEHICLE_PREVIEW_ALIASES
 from new_year.gui.impl.lobby.new_year.gui_lootbox_integration.unique_reward_handler import NewYearUniqueRewardHandler
 from new_year_common.items import new_year, collectibles
 from gui.impl.gen import R
@@ -44,6 +45,7 @@ def init():
     replaceNewYearNavigation()
     replaceHangarSoundSpace()
     AccountSettings.overrideDefaultSettings(KEY_SETTINGS, ACCOUNT_DEFAULT_SETTINGS)
+    VEHICLE_PREVIEW_ALIASES.append(VIEW_ALIAS.NY_VEHICLE_PREVIEW)
     if g_extensionsManager.isExtensionEnabled('gui_lootboxes'):
         from gui_lootboxes.gui.impl.lobby.gui_lootboxes import RegisteredTooltips
         RegisteredTooltips.registerLootBoxTooltipHandler(R.views.new_year.lobby.new_year.tooltips.NyDecorationTooltip(), NyDecorationTooltipHandler(NyDecorationTooltip))

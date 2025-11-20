@@ -376,6 +376,8 @@ class _ProgressionTabPresenter(object):
         self._checkAndShowRareRewardWindow()
 
     def _checkAndShowRareRewardWindow(self):
+        if not self.__viewModel:
+            return
         armoryCtrl = self.__armoryYardCtrl
         hasPostProgression = armoryCtrl.getFinalRewardStep() != armoryCtrl.getFinalPostProgressionRewardStep()
         if not self.__armoryYardCtrl.isClaimedProgressionReward() and self.__lastPlayedStageID >= self.__armoryYardCtrl.startStepOfPostProgression:

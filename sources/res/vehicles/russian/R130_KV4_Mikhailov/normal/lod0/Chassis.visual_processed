@@ -751,9 +751,9 @@
 		<node>V_BlendBone</node>
 		<node>Track_VD_L1_BlendBone</node>
 		<geometry>
-			<vertices>track_LShape.vertices</vertices>
-			<stream>track_LShape.uv2</stream>
-			<primitive>track_LShape.indices</primitive>
+			<vertices>track_L_Shape.vertices</vertices>
+			<stream>track_L_Shape.uv2</stream>
+			<primitive>track_L_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -793,7 +793,7 @@
 					</property>
 					<property>
 						g_detailUVTiling
-						<Vector4>3.507000 0.876750 0.000000 0.000000</Vector4>
+						<Vector4>3.507000 0.860000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_detailPower
@@ -823,7 +823,7 @@
 						</Float>
 					</property>
 				</material>
-				<groupOrigin>-1.250551 0.868856 0.138624</groupOrigin>
+				<groupOrigin>-1.250551 0.868856 0.138623</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -836,8 +836,8 @@
 		<node>Track_R2_BlendBone</node>
 		<node>Track_R1_BlendBone</node>
 		<node>Track_R0_BlendBone</node>
-		<node>V_BlendBone</node>
 		<node>Track_VD_R0_BlendBone</node>
+		<node>V_BlendBone</node>
 		<node>Track_VD_R1_BlendBone</node>
 		<geometry>
 			<vertices>track_RShape.vertices</vertices>
@@ -882,7 +882,7 @@
 					</property>
 					<property>
 						g_detailUVTiling
-						<Vector4>3.507000 0.876750 0.000000 0.000000</Vector4>
+						<Vector4>3.507000 0.860000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_detailPower
@@ -912,7 +912,7 @@
 						</Float>
 					</property>
 				</material>
-				<groupOrigin>1.248343 0.868856 0.138624</groupOrigin>
+				<groupOrigin>1.248343 0.868856 0.138623</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>

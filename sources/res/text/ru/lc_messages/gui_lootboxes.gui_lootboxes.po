@@ -312,7 +312,7 @@ msgstr "Гарантированная награда из этапов"
 
 msgid "guaranteedRewardTooltip/block4/bonus/text"
 msgstr ""
-"Награду из третьего списка можно получать неограниченное количество раз."
+"Награды из третьего списка можно получать неограниченное количество раз."
 
 msgid "guaranteedRewardTooltip/block4/vehicle/text"
 msgstr ""
@@ -513,7 +513,7 @@ msgid "openBoxScreen/backBtn/1"
 msgstr "В МАГАЗИН"
 
 msgid "openBoxScreen/backBtn/10"
-msgstr "К КАТКУ"
+msgstr "К ПИРОТЕХНИКЕ"
 
 msgid "openBoxScreen/backBtn/11"
 msgstr "К АТТРАКЦИОНУ"
@@ -522,7 +522,7 @@ msgid "openBoxScreen/backBtn/12"
 msgstr "К ПИТОМЦУ"
 
 msgid "openBoxScreen/backBtn/2"
-msgstr "НА ПЛОЩАДЬ"
+msgstr "В ГОРОДОК"
 
 msgid "openBoxScreen/backBtn/3"
 msgstr "К ОСКОЛКАМ"
@@ -531,19 +531,19 @@ msgid "openBoxScreen/backBtn/4"
 msgstr "К РЕФЕРАЛЬНОЙ ПРОГРАММЕ"
 
 msgid "openBoxScreen/backBtn/5"
-msgstr "К ПРАЗДНИЧНОЙ ПОЧТЕ"
+msgstr "К ПРАЗДНИЧНОЙ ЕЛИ"
 
 msgid "openBoxScreen/backBtn/6"
-msgstr "К ЕЛИ"
+msgstr "К ТЕРЕМУ"
 
 msgid "openBoxScreen/backBtn/7"
-msgstr "К ИЛЛЮМИНАЦИИ"
-
-msgid "openBoxScreen/backBtn/8"
 msgstr "К ИНСТАЛЛЯЦИИ"
 
+msgid "openBoxScreen/backBtn/8"
+msgstr "К СТОЛОВОЙ"
+
 msgid "openBoxScreen/backBtn/9"
-msgstr "К ЯРМАРКЕ"
+msgstr "К ГОРКЕ"
 
 msgid "openBoxScreen/backBtnMain"
 msgstr "В Ангар"
@@ -958,7 +958,7 @@ msgstr ""
 
 msgid "tooltips/probabilityStageButtons/description2"
 msgstr ""
-"Награду из третьего списка можно получить неограниченное количество раз."
+"Награды из третьего списка можно получить неограниченное количество раз."
 
 msgid "tooltips/probabilityStageButtons/title"
 msgstr "Списки содержимого"
@@ -987,6 +987,9 @@ msgstr "Это прекрасно!"
 
 msgid "videoreward/description/commonText"
 msgstr "В Ангаре пополнение!"
+
+msgid "videoreward/description/rewardText"
+msgstr "Гарантированная награда!"
 
 msgid "videoreward/description/vehicleText"
 msgstr "Прибыл гарантированный танк!"

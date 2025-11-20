@@ -284,7 +284,7 @@ class Group(ServerEventAbstract):
     def getLinkedAction(self, actions):
         return getLinkedActionID(self.getID(), actions)
 
-    def getMainQuest(self, events):
+    def getMainQuest(self, events, skipMainTokenQuestError=True):
         if not self.isMarathon():
             LOG_ERROR('Trying to find main quest in non-marathon group', self.getID())
             return
@@ -293,7 +293,8 @@ class Group(ServerEventAbstract):
                 if events_helpers.isMarathon(quest.getID()):
                     return quest
 
-            LOG_ERROR('There is no main token quest in the marathon', self.getID())
+            if not skipMainTokenQuestError:
+                LOG_ERROR('There is no main token quest in the marathon', self.getID())
             return
 
     def withManyTokenSources(self, svrEvents):

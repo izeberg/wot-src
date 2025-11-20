@@ -3,6 +3,7 @@ from functools import partial
 from adisp import adisp_process
 from account_helpers import AccountSettings
 from account_helpers.AccountSettings import ArmoryYard
+from armory_yard.gui.impl.lobby.feature.tooltips.task_condition_tooltip_view import TaskConditionTooltipView
 from shared_utils import first
 from armory_yard_constants import POST_PROGRESSION_GROUP_PREFIX
 from frameworks.wulf import ViewSettings, WindowFlags, WindowLayer, ViewModel, ViewStatus
@@ -221,6 +222,8 @@ class ArmoryYardRerollView(ViewImpl):
             return ArmoryYardCurrencyTooltipView(event.getArgument('currency'))
         if contentID == R.views.armory_yard.lobby.feature.tooltips.RerollDescriptionTooltipView():
             return ViewImpl(ViewSettings(contentID, model=ViewModel()))
+        if contentID == R.views.armory_yard.lobby.feature.tooltips.TaskConditionTooltipView():
+            return TaskConditionTooltipView(event.getArgument('vehicleLevels'), event.getArgument('vehicleTypes'), event.getArgument('battleTypes'), event.getArgument('vehicleNations'))
         return super(ArmoryYardRerollView, self).createToolTipContent(event, contentID)
 
     def getTooltipData(self, event):
@@ -231,7 +234,8 @@ class ArmoryYardRerollView(ViewImpl):
             return self.__tooltipData.get(int(tooltipId))
 
     def getParentWindowContent(self):
-        return self.getParentWindow().parent.content
+        if self.getParentWindow():
+            return self.getParentWindow().parent.content
 
     def __closeView(self):
         parentView = self.getParentWindowContent()

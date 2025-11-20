@@ -409,7 +409,7 @@
 						<Texture>content/Hangars/h03_mt_ny_2026/environment/tiles/Wood_sawn_01_GBMT.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.029576 1.105328 -0.375873</groupOrigin>
+				<groupOrigin>0.031123 1.105328 -1.407373</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				1
@@ -487,15 +487,15 @@
 						<Texture>content/Hangars/h03_mt_ny_2026/environment/tiles/Wood_branch_01_GBMT.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.108523 1.725928 -0.266711</groupOrigin>
+				<groupOrigin>0.108523 1.725928 -1.499041</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-3.627864 -0.063101 -4.638826</min>
+		<min>-3.627864 -0.063101 -6.477631</min>
 		<max>3.734298 3.933291 4.535028</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>1655772</geometrySize>
+	<geometrySize>1664742</geometrySize>
 	<minUVDensity>0.012807</minUVDensity>
 </root>

@@ -273,6 +273,7 @@ class CurrentNYConstants(object):
     MANDARINS = 'nyMandarins'
     TOY_COMPENSATION = 'NYComp'
     IP_TYPE_CUSTOM_MANDATINS = ('custom/{}').format(MANDARINS)
+    IP_TYPE_CUSTOM_CURRENCIES = 'custom/currencies'
     NY_CELEB_QUESTS_PREFIX = ('NY{}_clbty:').format(YEARS_INFO.CURRENT_YEAR)
     NY_DAILY_QUESTS_PREFIX = ('NY{}_clbty:daily').format(YEARS_INFO.CURRENT_YEAR)
     NY_WEEKLY_QUESTS_PREFIX = ('NY{}_clbty:weekly').format(YEARS_INFO.CURRENT_YEAR)

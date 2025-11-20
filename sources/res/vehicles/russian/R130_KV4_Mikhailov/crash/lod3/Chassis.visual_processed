@@ -94,6 +94,10 @@
 						</Float>
 					</property>
 					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
 						g_maskBias
 						<Float>
 							0.18
@@ -113,22 +117,18 @@
 						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
 					</property>
 					<property>
+						alphaReference
+						<Int>128</Int>
+					</property>
+					<property>
 						g_detailPowerAlbedo
 						<Float>
 							0.11
 							<!--BW_String-->
 						</Float>
 					</property>
-					<property>
-						alphaReference
-						<Int>128</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
 				</material>
-				<groupOrigin>-1.250365 0.858987 0.058954</groupOrigin>
+				<groupOrigin>-1.250551 0.868856 0.061014</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -163,6 +163,10 @@
 						</Float>
 					</property>
 					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
 						g_maskBias
 						<Float>
 							0.18
@@ -182,30 +186,26 @@
 						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
 					</property>
 					<property>
+						alphaReference
+						<Int>128</Int>
+					</property>
+					<property>
 						g_detailPowerAlbedo
 						<Float>
 							0.11
 							<!--BW_String-->
 						</Float>
 					</property>
-					<property>
-						alphaReference
-						<Int>128</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
 				</material>
-				<groupOrigin>1.249865 0.862620 0.298994</groupOrigin>
+				<groupOrigin>1.248343 0.862620 0.300196</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<constraints/>
 	<boundingBox>
-		<min>-1.652506 -0.010464 -5.050244</min>
-		<max>1.650744 1.728438 4.609407</max>
+		<min>-1.649908 0.000842 -5.062491</min>
+		<max>1.647699 1.736870 4.613073</max>
 	</boundingBox>
-	<geometrySize>57360</geometrySize>
-	<minUVDensity>0.130225</minUVDensity>
+	<geometrySize>93744</geometrySize>
+	<minUVDensity>0.133916</minUVDensity>
 </root>

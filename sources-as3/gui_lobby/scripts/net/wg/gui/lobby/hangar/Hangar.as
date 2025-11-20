@@ -147,7 +147,7 @@ package net.wg.gui.lobby.hangar
       
       private static const PARAMS_SMALL_SCREEN_BOTTOM_MARGIN:int = 36;
       
-      private static const AMMUNITION_PANEL_OFFSET_Y:int = -19;
+      private static const AMMUNITION_PANEL_OFFSET_Y:int = 4;
       
       private static const AMMUNITION_PANEL_INJECT_OFFSET_RIGHT:int = 5;
       

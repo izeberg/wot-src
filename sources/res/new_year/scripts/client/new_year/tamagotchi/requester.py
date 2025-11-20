@@ -8,6 +8,7 @@ from skeletons.gui.web import IWebController
 
 class TamagotchiWebRequester(ITamagotchiWebRequester):
     __slots__ = ()
+    _RECALCULATION_CODE = 409
     _webController = dependency.descriptor(IWebController)
     _dataProvider = dependency.descriptor(ITamagotchiDataProvider)
 
@@ -64,7 +65,7 @@ class TamagotchiWebRequester(ITamagotchiWebRequester):
             LOG_ERROR('[Tamagotchi] Failed to activate items', result.getExtraCode())
         else:
             self._dataProvider.playerInfo = result.data
-        self._dataProvider.onItemsActivated(result.isSuccess(), itemId, count)
+        self._dataProvider.onItemsActivated(result.isSuccess(), itemId, count, result.getExtraCode() == self._RECALCULATION_CODE)
 
     @adisp_process
     def takeGift(self):
@@ -78,4 +79,4 @@ class TamagotchiWebRequester(ITamagotchiWebRequester):
             count = result.data['count']
             isSecret = result.data['secret']
             self._dataProvider.playerInfo = result.data.get('player_data')
-        self._dataProvider.onGiftObtained(result.isSuccess(), initialCount, count, isSecret)
+        self._dataProvider.onGiftObtained(result.isSuccess(), initialCount, count, isSecret, result.getExtraCode() == self._RECALCULATION_CODE)

@@ -6,8 +6,7 @@ from items import vehicles
 class CoolantTankAbilityEquipment(AbilityEquipment):
     __sessionProvider = dependency.descriptor(IBattleSessionProvider)
 
-    def set_currentPenaltyReloadTime(self, _):
-        currentPenaltyReloadTime = self.currentPenaltyReloadTime
+    def updateCurrentPenaltyReloadTime(self, currentPenaltyReloadTime, appliedPenaltyReloadTime):
         ammoCtrl = self.__sessionProvider.shared.ammo
         descriptor = vehicles.getItemByCompactDescr(self.compactDescr)
         reloadTimeFactor = 1.0
@@ -16,4 +15,4 @@ class CoolantTankAbilityEquipment(AbilityEquipment):
                 reloadTimeFactor = factor.value
                 break
 
-        ammoCtrl.updatePenaltyReloadTime(reloadTimeFactor, currentPenaltyReloadTime)
+        ammoCtrl.updatePenaltyReloadTime(reloadTimeFactor, currentPenaltyReloadTime, appliedPenaltyReloadTime)

@@ -83,6 +83,7 @@ def readTamagotchiLeaderboard(rawData):
     result.nextUpdateTime = rawData.get('next_update_time')
     if result.nextUpdateTime is None:
         result.nextUpdateTime = result.updateTime + ONE_MINUTE * 5
+    result.isRecalcTime = rawData.get('is_recalc_time', False)
     pageData = rawData['page_data']
     pageDto = result.page
     pageDto.totalPage = pageData['total_page']

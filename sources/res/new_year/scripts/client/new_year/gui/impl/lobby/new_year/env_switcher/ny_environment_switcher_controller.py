@@ -37,13 +37,14 @@ def _normalizeEnvConfigs(configs):
 _normalizeEnvConfigs(ENV_CONFIGS)
 
 class NewYearEnvironmentSwitcherController(INewYearEnvironmentSwitchController):
-    __slots__ = ('__envState', '__needToShowTip', '__envSwitcher')
+    __slots__ = ('__envState', '__needToShowTip', '__envSwitcher', '__appliedDayNightMode')
 
     def __init__(self, *args, **kwargs):
         super(NewYearEnvironmentSwitcherController, self).__init__(*args, **kwargs)
         self.onEnvironmentSwitched = Event.Event()
         self.onEnvSwitcherBtnPressed = Event.Event()
         self.__envState = EnvironmentState.AUTO
+        self.__appliedDayNightMode = EnvironmentState.DAY
         self.__needToShowTip = False
         self.__envSwitcher = None
         return
@@ -60,8 +61,14 @@ class NewYearEnvironmentSwitcherController(INewYearEnvironmentSwitchController):
     def currentDayNightMode(self):
         return self.resolveDayNightMode(self.__envState)
 
+    @property
+    def currentAppliedDayNightMode(self):
+        return self.__appliedDayNightMode
+
     def onConnected(self):
         self.__envState = self._getAccountEnvState()
+
+    def onLobbyInited(self, event):
         self.__needToShowTip = self._getTipState()
 
     def skipSwitcherTip(self):
@@ -77,6 +84,7 @@ class NewYearEnvironmentSwitcherController(INewYearEnvironmentSwitchController):
 
     def applyCurrentEnvironment(self):
         self.switchEnvironment(self.__envState.value, setCallback=False)
+        self.__appliedDayNightMode = self.resolveDayNightMode(self.__envState)
 
     def switchEnvironment(self, newEnv, setCallback=True):
         newEnvState = EnvironmentState(newEnv)
@@ -165,7 +173,9 @@ class NewYearEnvironmentSwitcherController(INewYearEnvironmentSwitchController):
             return
         self.__playByMode(_EXIT_SOUNDS, self.currentDayNightMode)
         self.__commitEnvState(newEnvState)
-        self.__playByMode(_ENTER_SOUNDS, self.currentDayNightMode)
+        currentMode = self.currentDayNightMode
+        self.__appliedDayNightMode = currentMode
+        self.__playByMode(_ENTER_SOUNDS, currentMode)
         self.onEnvironmentSwitched()
 
     def __commitEnvState(self, newEnvState):

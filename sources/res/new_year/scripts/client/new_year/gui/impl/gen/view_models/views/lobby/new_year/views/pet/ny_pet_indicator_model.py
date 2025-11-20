@@ -59,16 +59,16 @@ class NyPetIndicatorModel(NyIndicatorType):
         return NyPetItemLeaderboardPoint
 
     def getScaleDowngradeTime(self):
-        return self._getNumber(8)
+        return self._getReal(8)
 
     def setScaleDowngradeTime(self, value):
-        self._setNumber(8, value)
+        self._setReal(8, value)
 
     def getScaleEmptyTime(self):
-        return self._getNumber(9)
+        return self._getReal(9)
 
     def setScaleEmptyTime(self, value):
-        self._setNumber(9, value)
+        self._setReal(9, value)
 
     def getIsLocked(self):
         return self._getBool(10)
@@ -109,8 +109,8 @@ class NyPetIndicatorModel(NyIndicatorType):
         self._addNumberProperty('itemCount', 0)
         self._addNumberProperty('itemScalePoint', 0)
         self._addArrayProperty('itemLeaderboardPoint', Array())
-        self._addNumberProperty('scaleDowngradeTime', 0)
-        self._addNumberProperty('scaleEmptyTime', 0)
+        self._addRealProperty('scaleDowngradeTime', 0.0)
+        self._addRealProperty('scaleEmptyTime', 0.0)
         self._addBoolProperty('isLocked', False)
         self._addNumberProperty('lettersToUnlock', 0)
         self._addBoolProperty('isLoading', False)

@@ -747,8 +747,8 @@
 		<node>Track_R2_BlendBone</node>
 		<node>Track_R1_BlendBone</node>
 		<node>Track_R0_BlendBone</node>
-		<node>V_BlendBone</node>
 		<node>Track_VD_R0_BlendBone</node>
+		<node>V_BlendBone</node>
 		<node>Track_VD_R1_BlendBone</node>
 		<geometry>
 			<vertices>track_R_Shape.vertices</vertices>
@@ -789,7 +789,7 @@
 					</property>
 					<property>
 						g_detailUVTiling
-						<Vector4>3.507000 0.860000 0.000000 0.000000</Vector4>
+						<Vector4>3.507000 3.507000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_detailPower
@@ -813,10 +813,6 @@
 							0.11
 							<!--BW_String-->
 						</Float>
-					</property>
-					<property>
-						doubleSided
-						<Bool>true</Bool>
 					</property>
 				</material>
 				<groupOrigin>1.248343 0.864640 0.138254</groupOrigin>
@@ -874,7 +870,7 @@
 					</property>
 					<property>
 						g_detailUVTiling
-						<Vector4>3.507000 0.860000 0.000000 0.000000</Vector4>
+						<Vector4>3.507000 3.507000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_detailPower
@@ -898,10 +894,6 @@
 							0.11
 							<!--BW_String-->
 						</Float>
-					</property>
-					<property>
-						doubleSided
-						<Bool>true</Bool>
 					</property>
 				</material>
 				<groupOrigin>-1.250551 0.864640 0.138254</groupOrigin>
@@ -989,7 +981,7 @@
 					</property>
 					<property>
 						alphaReference
-						<Int>64</Int>
+						<Int>128</Int>
 					</property>
 					<property>
 						g_detailPowerAlbedo
@@ -1084,7 +1076,7 @@
 					</property>
 					<property>
 						alphaReference
-						<Int>64</Int>
+						<Int>128</Int>
 					</property>
 					<property>
 						g_detailPowerAlbedo

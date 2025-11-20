@@ -1,5 +1,4 @@
 import typing
-from gui.Scaleform.genConsts.TOOLTIPS_CONSTANTS import TOOLTIPS_CONSTANTS
 from gui.impl.backport import TooltipData
 from gui.impl.gen import R
 from new_year.gui.impl.gen.view_models.common.ny_currency_type_model import NyCurrencyType
@@ -10,7 +9,6 @@ from new_year.gui.impl.lobby.new_year.tooltips.ny_marketplace_token_tooltip impo
 from new_year.gui.impl.new_year.new_year_bonus_packer import getNewYearBonusPacker, packBonusModelAndTooltipData
 from new_year.gui.impl.new_year.new_year_helper import formatRomanNumber, IS_ROMAN_NUMBERS_ALLOWED, nyBonusGFSortOrder
 from gui.server_events.bonuses import splitBonuses
-from gui.server_events.recruit_helper import DEFAULT_NY_GIRL
 from helpers import dependency
 from skeletons.gui.shared import IItemsCache
 from new_year.skeletons.new_year import INewYearController
@@ -33,11 +31,7 @@ class LevelRewardPresenter(object):
         if tooltipId is None:
             return
         else:
-            tooltipData = self.__tooltips.get(tooltipId)
-            if self.__levelInfo.hasTankman() and tooltipData is not None and tooltipData.specialAlias == TOOLTIPS_CONSTANTS.TANKMAN_NOT_RECRUITED and not self.__levelInfo.isAchieved():
-                tooltipData = TooltipData(tooltip=None, isSpecial=True, specialAlias=TOOLTIPS_CONSTANTS.TANKMAN_NOT_RECRUITED, specialArgs=[
-                 DEFAULT_NY_GIRL, True])
-            return tooltipData
+            return self.__tooltips.get(tooltipId)
 
     def createToolTipContent(self, event, contentID):
         if contentID == R.views.new_year.lobby.new_year.tooltips.NyMarketplaceTokenTooltip():

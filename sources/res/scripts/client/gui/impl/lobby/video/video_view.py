@@ -68,7 +68,7 @@ _LAYERS = [
 class VideoView(ViewImpl):
     __slots__ = ('__onVideoStartedHandle', '__onVideoStoppedHandle', '__onVideoClosedHandle',
                  '__isAutoClose', '__soundControl', '__previouslyVisibleLayers',
-                 '__app', '__videoSource', '__isUiVisible')
+                 '__app', '__videoSource', '__isUiVisible', '__backLayersAreVisible')
     __appFactory = dependency.descriptor(IAppLoader)
 
     def __init__(self, viewId, *args, **kwargs):
@@ -86,6 +86,7 @@ class VideoView(ViewImpl):
         self.__previouslyVisibleLayers = []
         self.__app = self.__appFactory.getApp()
         self.__videoSource = kwargs.get('videoSource')
+        self.__backLayersAreVisible = True
 
     @property
     def viewModel(self):
@@ -183,12 +184,14 @@ class VideoView(ViewImpl):
             containerManager = self.__app.containerManager
             self.__previouslyVisibleLayers = containerManager.getVisibleLayers()
             containerManager.setVisibleLayers(_LAYERS)
+            self.__backLayersAreVisible = False
         return
 
     def __showBack(self):
         BigWorld.worldDrawEnabled(True)
-        if self.__app is not None:
+        if self.__app is not None and not self.__backLayersAreVisible:
             self.__app.containerManager.setVisibleLayers(self.__previouslyVisibleLayers)
+            self.__backLayersAreVisible = True
         return
 
 

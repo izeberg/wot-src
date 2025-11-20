@@ -1,5 +1,6 @@
 import typing
 from functools import partial
+from gui.shared.event_dispatcher import showHangar
 from shared_utils import findFirst
 from frameworks.wulf import ViewSettings, WindowFlags, WindowLayer
 from gui.impl.gen import R
@@ -16,7 +17,7 @@ from gui.shared.gui_items import GUI_ITEM_TYPE
 from new_year.ny_constants import ViewAliases
 from new_year.gui.impl.gen.view_models.views.lobby.new_year.views.new_year_info_view_model import Tabs
 from new_year.gui.impl.new_year.sounds import OVERLAY_HANGAR_SOUND_SPACE
-from new_year.skeletons.new_year import ITamagotchiDataProvider, ITamagotchiWebRequester
+from new_year.skeletons.new_year import ITamagotchiDataProvider, ITamagotchiWebRequester, INewYearController
 from new_year.gui.impl.lobby.new_year.tooltips.ny_common_tooltip import NyCommonTooltip, getCommonTooltipArgsFromEvent
 from new_year.gui.impl.new_year.new_year_model_helper import packNyLeaderboardRewards
 from new_year.gui.impl.gen.view_models.views.lobby.new_year.views.leaderboard.ny_top_reward_model import NyTopRewardModel
@@ -30,21 +31,33 @@ if typing.TYPE_CHECKING:
     from frameworks.wulf import Array
 
 class NewYearWeeklyRewardsView(ViewImpl):
-    __slots__ = ('__tooltips', )
+    __slots__ = ('__tooltips', '__stageId')
     _COMMON_SOUND_SPACE = OVERLAY_HANGAR_SOUND_SPACE
     _dataProvider = dependency.descriptor(ITamagotchiDataProvider)
     _webRequester = dependency.descriptor(ITamagotchiWebRequester)
     _itemsCache = dependency.descriptor(IItemsCache)
+    _nyController = dependency.descriptor(INewYearController)
 
-    def __init__(self):
+    def __init__(self, stageId=0):
         settings = ViewSettings(R.views.new_year.lobby.new_year.WeeklyRewardsView())
         settings.model = NyWeeklyRewardsViewModel()
         super(NewYearWeeklyRewardsView, self).__init__(settings)
         self.__tooltips = {}
+        self.__stageId = stageId
 
     @property
     def viewModel(self):
         return super(NewYearWeeklyRewardsView, self).getViewModel()
+
+    @property
+    def currentSeasonId(self):
+        seasons = self._dataProvider.config.seasons
+        nowTime = getServerUTCTime()
+        seasonAboutToStart = findFirst(lambda season: season.startTime - nowTime > 0, seasons)
+        if seasonAboutToStart is None:
+            return self._dataProvider.currentSeason.id + 1
+        else:
+            return seasonAboutToStart.id
 
     def getTooltipData(self, event):
         tooltipId = event.getArgument('tooltipId')
@@ -75,9 +88,15 @@ class NewYearWeeklyRewardsView(ViewImpl):
          (
           self.viewModel.onPreviewClick, self.__onPreviewVehicle),
          (
+          self.viewModel.onTabSelected, self.__onTabSelected),
+         (
           self._dataProvider.onLeaderBoardUpdated, self.__onLeaderboardUpdated),
          (
           self._dataProvider.onPlayerStatsUpdated, self.__onPlayerStatsUpdated),
+         (
+          self._dataProvider.onSeasonEnded, self.__onSeasonEnded),
+         (
+          self._dataProvider.onNextSeasonStarted, self.__onSeasonStarted),
          (
           self._itemsCache.onSyncCompleted, self.__onInventoryUpdate))
 
@@ -85,6 +104,14 @@ class NewYearWeeklyRewardsView(ViewImpl):
         super(NewYearWeeklyRewardsView, self)._onLoading(*args, **kwargs)
         self.__updateModel()
         self.__makeRequestPlayerStats()
+        self.viewModel.setCurrentStage(self.__stageId or self._dataProvider.currentSeason.id - 1)
+
+    def __onSeasonEnded(self, seasonId):
+        self.__updateModel()
+        self.__updateRecalcState(seasonId)
+
+    def __onSeasonStarted(self, _):
+        self.__updateModel()
 
     def __onLeaderboardUpdated(self, isSuccess):
         if not isSuccess:
@@ -100,13 +127,16 @@ class NewYearWeeklyRewardsView(ViewImpl):
         stagesModel.clear()
         seasons = self._dataProvider.config.seasons
         user = self._dataProvider.leaderboard.user
-        model.setCurrentStage(self._dataProvider.currentSeason.id - 1)
+        leaderboard = self._dataProvider.leaderboard
+        currSeasonId = self.currentSeasonId
         for season in seasons:
+            stageState = self.__getStageState(season.startTime, season.endTime, season.id, currSeasonId)
             stageModel = NyStageModel()
             stageModel.setId(season.id)
             stageModel.setStartDate(season.startTime)
             stageModel.setEndDate(season.endTime)
-            stageModel.setState(self.__getStageState(season.startTime, season.endTime))
+            stageModel.setState(stageState)
+            stageModel.setIsRecalc(leaderboard.isRecalcTime if season.id == currSeasonId - 1 else False)
             stageModel.setPosition(user.position)
             self.__fillTops(stageModel, season, user)
             stagesModel.addViewModel(stageModel)
@@ -144,6 +174,16 @@ class NewYearWeeklyRewardsView(ViewImpl):
             nextTopRewardModel = topsModel[nextUserTopIdx]
             nextTopRewardModel.setPointsToTop(user.pointsByNextTop)
 
+    def __updateRecalcState(self, seasonId):
+        with self.getViewModel().transaction() as (tx):
+            stagesModel = tx.getStages()
+            leaderboard = self._dataProvider.leaderboard
+            for stageModel in stagesModel:
+                if stageModel.getId() == seasonId:
+                    stageModel.setIsRecalc(leaderboard.isRecalcTime)
+
+            stagesModel.invalidate()
+
     def __updateReceivedTopRewards(self, model):
         stagesModel = model.getStages()
         top = -1
@@ -154,7 +194,7 @@ class NewYearWeeklyRewardsView(ViewImpl):
             topsModel = findFirst(lambda topRewardModel: topRewardModel.getTop() == top, topsModels)
             if topsModel is None:
                 continue
-            isRewarded = playerStat.isRewarded if playerStat is not None else False
+            isRewarded = bool(playerStat.rewards) and playerStat.isRewarded if playerStat is not None else False
             topsModel.setIsRewarded(isRewarded)
             topsModels.invalidate()
 
@@ -165,12 +205,20 @@ class NewYearWeeklyRewardsView(ViewImpl):
         if GUI_ITEM_TYPE.VEHICLE in invDiff:
             self.__updateModel()
 
-    def __getStageState(self, startTime, endTime):
+    def __getStageState(self, startTime, endTime, seasonId, currentSeasonId):
         currTime = getServerUTCTime()
+        leaderboard = self._dataProvider.leaderboard
+        isRecalc = leaderboard.isRecalcTime
         if startTime <= currTime < endTime:
+            if isRecalc:
+                return StageState.NOTSTARTED
             return StageState.ACTIVE
         if currTime < startTime:
             return StageState.NOTSTARTED
+        if currTime > endTime:
+            if isRecalc and seasonId == currentSeasonId - 1:
+                return StageState.ACTIVE
+            return StageState.FINISHED
         return StageState.FINISHED
 
     def __makeRequestPlayerStats(self):
@@ -187,10 +235,19 @@ class NewYearWeeklyRewardsView(ViewImpl):
 
     @args2params(int)
     def __onPreviewVehicle(self, vehicleCD):
-        showNyVehiclePreview(vehicleCD, previewBackCb=self.__vehiclePreviewCallback)
+        callback = partial(self.__vehiclePreviewCallback, stageId=self.__stageId)
+        showNyVehiclePreview(vehicleCD, previewBackCb=callback)
 
-    def __vehiclePreviewCallback(self):
-        NewYearNavigation.switchTo(NewYearObjects.CITY_VIEW, True, ViewAliases.QUESTS_VIEW, switchCallback=showNYWeeklyRewardsViewWindow)
+    @args2params(int)
+    def __onTabSelected(self, id):
+        self.__stageId = id
+
+    @classmethod
+    def __vehiclePreviewCallback(cls, stageId):
+        if cls._dataProvider.raccoonState and cls._nyController.isInProgress():
+            NewYearNavigation.switchTo(NewYearObjects.CITY_VIEW, True, ViewAliases.QUESTS_VIEW, switchCallback=partial(showNYWeeklyRewardsViewWindow, stageId=stageId))
+            return
+        showHangar()
 
     def __onClose(self):
         self.destroyWindow()
@@ -202,6 +259,6 @@ class NewYearWeeklyRewardsView(ViewImpl):
 
 class NewYearWeeklyRewardsViewWindow(LobbyNotificationWindow):
 
-    def __init__(self, parent=None):
-        super(NewYearWeeklyRewardsViewWindow, self).__init__(content=NewYearWeeklyRewardsView(), wndFlags=WindowFlags.WINDOW | WindowFlags.WINDOW_FULLSCREEN, parent=parent, layer=WindowLayer.FULLSCREEN_WINDOW, decorator=None)
+    def __init__(self, parent=None, stageId=0):
+        super(NewYearWeeklyRewardsViewWindow, self).__init__(content=NewYearWeeklyRewardsView(stageId), wndFlags=WindowFlags.WINDOW | WindowFlags.WINDOW_FULLSCREEN, parent=parent, layer=WindowLayer.FULLSCREEN_WINDOW, decorator=None)
         return

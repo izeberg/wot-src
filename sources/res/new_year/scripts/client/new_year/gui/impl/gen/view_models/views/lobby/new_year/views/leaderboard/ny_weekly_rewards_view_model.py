@@ -3,9 +3,9 @@ from frameworks.wulf import ViewModel
 from new_year.gui.impl.gen.view_models.views.lobby.new_year.views.leaderboard.ny_stage_model import NyStageModel
 
 class NyWeeklyRewardsViewModel(ViewModel):
-    __slots__ = ('onClose', 'onInfoClick', 'onPreviewClick')
+    __slots__ = ('onClose', 'onInfoClick', 'onPreviewClick', 'onTabSelected')
 
-    def __init__(self, properties=2, commands=3):
+    def __init__(self, properties=2, commands=4):
         super(NyWeeklyRewardsViewModel, self).__init__(properties=properties, commands=commands)
 
     def getCurrentStage(self):
@@ -31,3 +31,4 @@ class NyWeeklyRewardsViewModel(ViewModel):
         self.onClose = self._addCommand('onClose')
         self.onInfoClick = self._addCommand('onInfoClick')
         self.onPreviewClick = self._addCommand('onPreviewClick')
+        self.onTabSelected = self._addCommand('onTabSelected')

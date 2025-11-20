@@ -25,11 +25,17 @@ class NyPetOverviewTooltip(ViewImpl):
     def _getEvents(self):
         return (
          (
-          self._dataProvider.onSimulationEnd, self.__onSimulationEnd),)
+          self._dataProvider.onSimulationEnd, self.__onSimulationEnd),
+         (
+          self._dataProvider.onBonusUpdated, self.__onBonusUpdated),
+         (
+          self._dataProvider.onGiftCountUpdated, self.__onGiftCountUpdated),
+         (
+          self._dataProvider.onSeasonEnded, self.__onSeasonEnded))
 
     def __updateModel(self):
         with self.getViewModel().transaction() as (tx):
-            tx.setIsLeaderboard(self._dataProvider.playerInfo.leaderboardPoint > 0)
+            tx.setIsLeaderboard(not self._dataProvider.isLeaderboardFinished and self._dataProvider.playerInfo.leaderboardPoint > 0)
             tx.setMailsAmount(self._dataProvider.playerInfo.giftCount)
             self.__fillBonus(tx)
             self.__fillIndicators(tx)
@@ -55,3 +61,16 @@ class NyPetOverviewTooltip(ViewImpl):
 
     def __onSimulationEnd(self):
         self.__updateModel()
+
+    def __onBonusUpdated(self):
+        with self.getViewModel().transaction() as (tx):
+            self.__fillBonus(tx)
+
+    def __onGiftCountUpdated(self):
+        with self.getViewModel().transaction() as (tx):
+            tx.setMailsAmount(self._dataProvider.playerInfo.giftCount)
+
+    def __onSeasonEnded(self, _):
+        if self._dataProvider.isLeaderboardFinished:
+            with self.getViewModel().transaction() as (tx):
+                tx.setIsLeaderboard(False)

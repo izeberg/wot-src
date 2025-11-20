@@ -9,6 +9,7 @@ class State(Enum):
     INITIAL = 'initial'
     SUCCESS = 'success'
     ERROR = 'error'
+    RECALC = 'Recalc'
 
 
 class LastAction(Enum):

@@ -288,6 +288,10 @@ class INewYearEnvironmentSwitchController(IGameController):
     def currentDayNightMode(self):
         raise NotImplementedError
 
+    @property
+    def currentAppliedDayNightMode(self):
+        raise NotImplementedError
+
     def notifyTipShouldClose(self):
         raise NotImplementedError
 
@@ -390,7 +394,8 @@ class ITamagotchiDataProvider(object):
                  'onRaccoonStateUpdated', 'onBonusUpdated', 'onSimulationEnd', 'onItemsActivateRequested',
                  'onItemsActivated', 'onItemsPurchased', 'onOnboardingChanged', 'onGiftObtained',
                  'onViewVisibilityChanged', 'onMailRewards', 'onGiftCountUpdated',
-                 'onUpdateTipsRequested')
+                 'onUpdateTipsRequested', 'onNextSeasonStarted', 'onSeasonEnded',
+                 'onOnboardingSkipped')
 
     def __init__(self):
         super(ITamagotchiDataProvider, self).__init__()
@@ -404,11 +409,14 @@ class ITamagotchiDataProvider(object):
         self.onItemsActivated = None
         self.onItemsPurchased = None
         self.onOnboardingChanged = None
+        self.onOnboardingSkipped = None
         self.onGiftObtained = None
         self.onViewVisibilityChanged = None
         self._onPlayerInfoUpdated = None
         self.onMailRewards = None
         self.onUpdateTipsRequested = None
+        self.onNextSeasonStarted = None
+        self.onSeasonEnded = None
         return
 
     @property
@@ -459,7 +467,14 @@ class ITamagotchiDataProvider(object):
     def isOnboarding(self, value):
         raise NotImplementedError
 
+    @property
+    def isLeaderboardFinished(self):
+        raise NotImplementedError
+
     def reset(self):
+        raise NotImplementedError
+
+    def resetData(self):
         raise NotImplementedError
 
     def getIndicatorCurrency(self, name):

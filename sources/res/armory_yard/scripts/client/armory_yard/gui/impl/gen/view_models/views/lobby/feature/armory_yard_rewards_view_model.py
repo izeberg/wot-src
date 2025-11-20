@@ -15,7 +15,7 @@ class ArmoryYardRewardsViewModel(ViewModel):
     ARG_REWARD_INDEX = 'tooltipId'
     MAX_REWARDS = 10
 
-    def __init__(self, properties=7, commands=2):
+    def __init__(self, properties=8, commands=2):
         super(ArmoryYardRewardsViewModel, self).__init__(properties=properties, commands=commands)
 
     def getState(self):
@@ -36,37 +36,43 @@ class ArmoryYardRewardsViewModel(ViewModel):
     def setHasAllRewards(self, value):
         self._setBool(2, value)
 
-    def getIsFinalReward(self):
+    def getIsAciveState(self):
         return self._getBool(3)
 
-    def setIsFinalReward(self, value):
+    def setIsAciveState(self, value):
         self._setBool(3, value)
 
+    def getIsFinalReward(self):
+        return self._getBool(4)
+
+    def setIsFinalReward(self, value):
+        self._setBool(4, value)
+
     def getVehicles(self):
-        return self._getArray(4)
+        return self._getArray(5)
 
     def setVehicles(self, value):
-        self._setArray(4, value)
+        self._setArray(5, value)
 
     @staticmethod
     def getVehiclesType():
         return ArmoryYardRewardsVehicleModel
 
     def getMainRewards(self):
-        return self._getArray(5)
+        return self._getArray(6)
 
     def setMainRewards(self, value):
-        self._setArray(5, value)
+        self._setArray(6, value)
 
     @staticmethod
     def getMainRewardsType():
         return ItemBonusModel
 
     def getRewards(self):
-        return self._getArray(6)
+        return self._getArray(7)
 
     def setRewards(self, value):
-        self._setArray(6, value)
+        self._setArray(7, value)
 
     @staticmethod
     def getRewardsType():
@@ -77,6 +83,7 @@ class ArmoryYardRewardsViewModel(ViewModel):
         self._addStringProperty('state')
         self._addNumberProperty('stages', 0)
         self._addBoolProperty('hasAllRewards', False)
+        self._addBoolProperty('isAciveState', False)
         self._addBoolProperty('isFinalReward', False)
         self._addArrayProperty('vehicles', Array())
         self._addArrayProperty('mainRewards', Array())

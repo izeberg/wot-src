@@ -2,6 +2,7 @@ import SoundGroups, typing, CGF
 from account_helpers.AccountSettings import LOOT_BOXES_VIEWED_COUNT
 from gui.impl.gui_decorators import args2params
 from gui.impl.pub import PopOverWindow
+from new_year.gui.impl.lobby.new_year.ny_leaderboard_recount_view import NyLeaderboardRecountViewWindow
 from new_year.gui.impl.lobby.new_year.pet.ny_pet_reward_view import PetRewardViewWindow
 from new_year.gui.impl.lobby.new_year.pet.ny_pet_story_view import PetStoryViewWindow, PetStoryView
 from new_year.helpers.ny_helpers import showWebmVideoView
@@ -124,9 +125,8 @@ class NyPetView(HistorySubModelPresenter):
             model.setIsGuiLootBoxesVisible(self.__guiLootBoxes.isEnabled())
             model.setIsOnboarding(isOnboarding)
             model.setHasPetAnimations(getNYSetting(NY_HAS_PET_ANIMATION))
-            model.setGiftCount(self._dataProvider.playerInfo.giftCount)
-            model.setGiftTime(self._dataProvider.getGiftDelay())
             model.setIsOnboardingVideoClosed(not isOnboarding)
+            model.setWasLeaderboardFinished(self._dataProvider.isLeaderboardFinished)
         if isOnboarding:
             TamagotchiSysMsgHandler.showSkipMsg()
             self.__showVideo()
@@ -205,13 +205,17 @@ class NyPetView(HistorySubModelPresenter):
          (
           self.viewModel.onCloseSingleTip, self.__onCloseSingleTip),
          (
-          self._dataProvider.onOnboardingChanged, self.__onOnboardingChanged),
-         (
-          self._dataProvider.onGiftCountUpdated, self.__onGiftCountUpdated),
+          self._dataProvider.onOnboardingSkipped, self.__onOnboardingSkipped),
          (
           self._dataProvider.onUpdateTipsRequested, self.__onUpdateTipsRequested),
          (
-          self._dataProvider.onItemsActivated, self.__onItemsActivated))
+          self._dataProvider.onItemsActivated, self.__onItemsActivated),
+         (
+          self._dataProvider.onItemsActivateRequested, self.__onItemsActivateRequested),
+         (
+          self._dataProvider.onGiftObtained, self.__onGiftObtained),
+         (
+          self._dataProvider.onSeasonEnded, self.__onSeasonEnded))
         if self.__hangarSpace.spaceID is not None and self.hangarCameraManager is not None:
             result += ((self.hangarCameraManager.onProgressChanged, self.__fadeSteps.process),)
         return result
@@ -272,17 +276,22 @@ class NyPetView(HistorySubModelPresenter):
         self.__forceStopFillSound()
         PetStoryViewWindow(self.getParentWindow()).load()
 
-    def __onOnboardingChanged(self, value):
+    def __onOnboardingSkipped(self):
         SoundGroups.g_instance.playSound2D(NewYearSoundEvents.OLDMAN_ONBOARDING_SKIP)
-        self.viewModel.setIsOnboarding(value)
+        self.viewModel.setIsOnboarding(False)
+        self._dataProvider.isOnboarding = False
 
-    def __onGiftCountUpdated(self):
-        with self.viewModel.transaction() as (tx):
-            tx.setGiftCount(self._dataProvider.playerInfo.giftCount)
-            tx.setGiftTime(self._dataProvider.getGiftDelay())
+    def __onGiftObtained(self, isSuccess, initialCount, count, isSecret, isRecalculation):
+        if not isSuccess and isRecalculation:
+            NyLeaderboardRecountViewWindow(parent=self.getParentWindow()).load()
 
     def __onItemsActivated(self, *_, **__):
         self.__tryShowTip()
+
+    def __onItemsActivateRequested(self, *_, **__):
+        if self._dataProvider.isOnboarding:
+            SoundGroups.g_instance.playSound2D(NewYearSoundEvents.OLDMAN_ONBOARDING_SKIP)
+            self._dataProvider.isOnboarding = False
 
     def __onUpdateTipsRequested(self, state):
         if state:
@@ -293,30 +302,28 @@ class NyPetView(HistorySubModelPresenter):
     def __tryShowTip(self):
         if self._dataProvider.isOnboarding:
             return
-        else:
-            pInfo = self._dataProvider.playerInfo
-            seen = getNYSetting(NY_TAMAGOTCHI_SEEN_TIPS)
-            if pInfo.indicators[IndicatorType.FUN.value] >= 0 and SingleTipType.FUNOPENED.value not in seen:
-                self.viewModel.setSingleTip(SingleTipType.FUNOPENED)
-                return
-            if pInfo.indicators[IndicatorType.ACTIVITY.value] >= 0 and SingleTipType.ACTIVITYOPENED.value not in seen:
-                self.viewModel.setSingleTip(SingleTipType.ACTIVITYOPENED)
-                return
-            if SingleTipType.LEADERBOARD.value not in seen and self._dataProvider.config is not None:
-                for name, points in pInfo.indicators.iteritems():
-                    lastLevel = self._dataProvider.config.indicators[name].levels[(-1)]
-                    if points >= lastLevel.points:
-                        self.viewModel.setSingleTip(SingleTipType.LEADERBOARD)
-                        return
-
-            week = PetStoryView.getCurrentWeekStep()
-            with self.viewModel.transaction() as (tx):
-                tx.setIsStoryEntryPointBubble(getNYSetting(NY_TAMAGOTCHI_STORY_BUBLE) != week)
-                if getNYSetting(NY_TAMAGOTCHI_STORY_TIP) != week:
-                    tx.setSingleTip(SingleTipType.NEWSTORY)
-                    tx.setNewStoryOpenedNumber(week)
-                    return
+        pInfo = self._dataProvider.playerInfo
+        seen = getNYSetting(NY_TAMAGOTCHI_SEEN_TIPS)
+        if pInfo.indicators[IndicatorType.FUN.value] >= 0 and SingleTipType.FUNOPENED.value not in seen:
+            self.viewModel.setSingleTip(SingleTipType.FUNOPENED)
             return
+        if pInfo.indicators[IndicatorType.ACTIVITY.value] >= 0 and SingleTipType.ACTIVITYOPENED.value not in seen:
+            self.viewModel.setSingleTip(SingleTipType.ACTIVITYOPENED)
+            return
+        if not self._dataProvider.isLeaderboardFinished and SingleTipType.LEADERBOARD.value not in seen:
+            for name, points in pInfo.indicators.iteritems():
+                lastLevel = self._dataProvider.config.indicators[name].levels[(-1)]
+                if points >= lastLevel.points:
+                    self.viewModel.setSingleTip(SingleTipType.LEADERBOARD)
+                    return
+
+        week = PetStoryView.getCurrentWeekStep()
+        with self.viewModel.transaction() as (tx):
+            tx.setIsStoryEntryPointBubble(getNYSetting(NY_TAMAGOTCHI_STORY_BUBLE) != week)
+            if getNYSetting(NY_TAMAGOTCHI_STORY_TIP) != week:
+                tx.setSingleTip(SingleTipType.NEWSTORY)
+                tx.setNewStoryOpenedNumber(week)
+                return
 
     def __saveSeenTip(self):
         if self._dataProvider.isOnboarding:
@@ -334,13 +341,19 @@ class NyPetView(HistorySubModelPresenter):
         setNYSettings(NY_TAMAGOTCHI_SEEN_TIPS, seen)
 
     def __onOnboardingFinish(self):
-        self._dataProvider.isOnboarding = False
+        self.viewModel.setIsOnboarding(False)
 
     def __onPetStateAnimationsChange(self):
         with self.viewModel.transaction() as (tx):
             desired = not tx.getHasPetAnimations()
             tx.setHasPetAnimations(desired)
         self.__raccoonCtrl.setAnimationsEnabled(desired)
+
+    def __onSeasonEnded(self, _):
+        if self._dataProvider.isLeaderboardFinished:
+            self.viewModel.setWasLeaderboardFinished(True)
+            if self.viewModel.getSingleTip() is SingleTipType.LEADERBOARD:
+                self.viewModel.setSingleTip(SingleTipType.EMPTY)
 
     @args2params(IndicatorType, int)
     def __onDeleteItemLeaderboardPoint(self, type, id):

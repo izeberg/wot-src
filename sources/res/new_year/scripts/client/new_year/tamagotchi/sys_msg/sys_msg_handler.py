@@ -3,7 +3,7 @@ from gui.impl.gen import R
 from gui.shared.notifications import NotificationPriorityLevel
 from helpers import dependency
 from helpers.events_handler import EventsHandler
-from helpers.time_utils import ONE_MINUTE
+from helpers.time_utils import ONE_MINUTE, getServerUTCTime
 from messenger import MessengerEntry
 from messenger.m_constants import SCH_CLIENT_MSG_TYPE
 from new_year.gui.shared.formatters import formatPurchaseItems, formatPurchasedItems, formatActivatedItem, formatMailRewardsItems
@@ -52,17 +52,18 @@ class TamagotchiSysMsgHandler(EventsHandler):
     def showSkipMsg(cls):
         cls.pushClientSysMessage(backport.text(R.strings.ny.notification.tamagotchi.tutor.skip.msg()), msgType=SCH_CLIENT_MSG_TYPE.NY_TAMAGOTCHI_TUTORIAL, msgName='NYTamagotchiTutorSkip', priority=NotificationPriorityLevel.LOW)
 
-    def _onItemsActivated(self, isSuccess, itemId, count):
+    def _onItemsActivated(self, isSuccess, itemId, count, isRecalculation):
+        if isRecalculation:
+            return
         if isSuccess:
             itemName, item = findFirst(lambda (name, indicator): indicator.item.id == itemId, self._dataProvider.config.indicators.iteritems())
             extraScalePoints = int(item.item.scalePoint * count)
-            potentialLoyaltyPoints = 0 if self._dataProvider.config.currentSeason is None else int(item.item.leaderboardPoint * count)
+            potentialLoyaltyPoints = 0 if self._dataProvider.isLeaderboardFinished else int(item.item.leaderboardPoint * count)
             self.pushClientSysMessage(formatActivatedItem(itemName, count, extraScalePoints, potentialLoyaltyPoints), msgType=SCH_CLIENT_MSG_TYPE.NY_TAMAGOTCHI_TUTORIAL, msgName='NYTamagotchiItemsActivated', priority=NotificationPriorityLevel.MEDIUM, messageData={'header': backport.text(R.strings.ny.notification.racoon.activated.header.dyn(itemName)())})
         else:
             SystemMessages.pushMessage(backport.text(R.strings.ny.notification.racoon.activated.error()), type=SM_TYPE.ErrorSimple, priority=NotificationPriorityLevel.MEDIUM)
             if self._dataProvider.isOnboarding:
                 self.pushClientSysMessage(backport.text(R.strings.ny.notification.tamagotchi.tutor.error.msg()), msgType=SCH_CLIENT_MSG_TYPE.NY_TAMAGOTCHI_TUTORIAL, msgName='NYTamagotchiTutorError', priority=NotificationPriorityLevel.MEDIUM)
-        return
 
     def _onItemsPurchased(self, isSuccess, itemsDict):
         if isSuccess:
@@ -76,8 +77,8 @@ class TamagotchiSysMsgHandler(EventsHandler):
         else:
             SystemMessages.pushMessage(text=backport.text(R.strings.ny.notification.racoon.purchased.error.text()), type=SM_TYPE.ErrorSimple, priority=NotificationPriorityLevel.MEDIUM)
 
-    def __onGiftObtained(self, isSuccess, initialCount, count, isSecret):
-        if not isSuccess:
+    def __onGiftObtained(self, isSuccess, initialCount, count, isSecret, isRecalculation):
+        if not isSuccess and not isRecalculation:
             SystemMessages.pushMessage(backport.text(R.strings.ny.notification.racoon.gift.error()), type=SM_TYPE.ErrorSimple, priority=NotificationPriorityLevel.MEDIUM)
 
     def __onMailRewards(self, rewards):
@@ -92,12 +93,14 @@ class TamagotchiSysMsgHandler(EventsHandler):
             self.pushClientSysMessage(backport.text(R.strings.ny.notification.tamagotchi.check_state.text()), msgType=SCH_CLIENT_MSG_TYPE.NY_TAMAGOTCHI_TUTORIAL, msgName='NYTamagotchiCheckState', priority=NotificationPriorityLevel.MEDIUM)
 
     def __onLeaderboardUpdate(self):
-        leaderboardConfig = self._dataProvider.config.currentSeason
-        if leaderboardConfig is None:
+        if not self._dataProvider.isValidConfig:
             return
         else:
-            endTime = int(round(leaderboardConfig.endTime / ONE_MINUTE))
-            seasonId = leaderboardConfig.id
+            currentSeason = self._dataProvider.config.currentSeason
+            if currentSeason is None:
+                return
+            endTime = int(round((currentSeason.endTime - getServerUTCTime()) / ONE_MINUTE))
+            seasonId = currentSeason.id
             if endTime > START_SHOW_LEADERBOARD_NOTIF_END:
                 return
             if self.__isFirstEntry:

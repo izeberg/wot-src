@@ -13,9 +13,8 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>sShape2.vertices</vertices>
-			<stream>sShape2.colour</stream>
-			<primitive>sShape2.indices</primitive>
+			<vertices>s2Shape.vertices</vertices>
+			<primitive>s2Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -47,38 +46,21 @@
 						g_tintColor
 						<Vector4>1.000000 0.949020 0.866667 1.000000</Vector4>
 					</property>
+					<sortOrder>3</sortOrder>
 				</material>
-				<groupOrigin>0.266306 1.610038 0.031825</groupOrigin>
+				<groupOrigin>0.267978 1.610038 0.031826</groupOrigin>
 			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>s0Shape.vertices</vertices>
+			<stream>s0Shape.colour</stream>
+			<primitive>s0Shape.indices</primitive>
 			<primitiveGroup>
-				1
-				<material>
-					<identifier>s_nd1</identifier>
-					<fx>shaders/std_effects/glow.fx</fx>
-					<collisionFlags>255</collisionFlags>
-					<materialKind>110</materialKind>
-					<property>
-						destBlend
-						<Int>7</Int>
-					</property>
-					<property>
-						diffuseMap
-						<Texture>content/Hangars/h03_mt_ny_2026/customization/Illumination/Pyro/NY22_Pyro_05_AM.dds</Texture>
-					</property>
-					<property>
-						g_tintColor
-						<Vector4>1.000000 0.796078 0.403922 1.000000</Vector4>
-					</property>
-					<property>
-						selfIllumination
-						<Float>18.500000</Float>
-					</property>
-					<sortOrder>10</sortOrder>
-				</material>
-				<groupOrigin>0.625277 1.202059 0.040701</groupOrigin>
-			</primitiveGroup>
-			<primitiveGroup>
-				2
+				0
 				<material>
 					<identifier>s_nd0</identifier>
 					<fx>shaders/std_effects/PBS_ext.fx</fx>
@@ -107,6 +89,33 @@
 				</material>
 				<groupOrigin>0.219394 1.544767 0.032248</groupOrigin>
 			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>s_nd1</identifier>
+					<fx>shaders/std_effects/glow.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>110</materialKind>
+					<property>
+						destBlend
+						<Int>7</Int>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h03_mt_ny_2026/customization/Illumination/Pyro/NY22_Pyro_05_AM.dds</Texture>
+					</property>
+					<property>
+						g_tintColor
+						<Vector4>1.000000 0.796078 0.403922 1.000000</Vector4>
+					</property>
+					<property>
+						selfIllumination
+						<Float>18.500000</Float>
+					</property>
+					<sortOrder>10</sortOrder>
+				</material>
+				<groupOrigin>0.625277 1.202059 0.040701</groupOrigin>
+			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
@@ -114,6 +123,6 @@
 		<max>0.652959 3.139272 4.267272</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>106200</geometrySize>
+	<geometrySize>101452</geometrySize>
 	<minUVDensity>0.080689</minUVDensity>
 </root>

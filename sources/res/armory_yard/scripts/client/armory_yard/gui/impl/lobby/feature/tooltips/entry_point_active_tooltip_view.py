@@ -1,4 +1,5 @@
 from armory_yard.gui.impl.gen.view_models.views.lobby.feature.tooltips.armory_yard_tooltip_chapter_model import ArmoryYardTooltipChapterModel, TooltipChapterState
+from armory_yard.gui.server_events.events_helpers import getQuestsCompletedFunc
 from frameworks.wulf import ViewSettings, Array
 from armory_yard.gui.impl.gen.view_models.views.lobby.feature.tooltips.entry_point_active_tooltip_view_model import EntryPointActiveTooltipViewModel
 from helpers import dependency, time_utils
@@ -34,13 +35,14 @@ class EntryPointActiveTooltipView(ViewImpl):
         activeQuests = 0
         if not ctrl.isEnabled():
             return
+        completedFunc = getQuestsCompletedFunc()
         for cycle in sorted(ctrl.serverSettings.getCurrentSeason().getAllCycles().values(), key=lambda item: item.ID):
             chapter = ArmoryYardTooltipChapterModel()
             totalQuests = 0
             completedQuests = 0
             for quests in self.__armoryYardCtrl.iterCycleProgressionQuests(cycle.ID):
                 totalQuests += 1
-                if any([ quest.isCompleted() for quest in quests ]):
+                if completedFunc(quests):
                     completedQuests += 1
 
             state = TooltipChapterState.ACTIVE
@@ -89,9 +91,10 @@ class EntryPointActiveTooltipView(ViewImpl):
         activeQuests = 0
         totalQuests = 0
         completedQuests = 0
+        completedFunc = getQuestsCompletedFunc()
         for quests in self.__armoryYardCtrl.iterCyclePostProgressionQuests():
             totalQuests += 1
-            if any([ quest.isCompleted() for quest in quests ]):
+            if completedFunc(quests):
                 completedQuests += 1
 
         state = TooltipChapterState.ACTIVE

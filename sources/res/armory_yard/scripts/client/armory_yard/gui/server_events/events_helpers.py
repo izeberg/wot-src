@@ -1,3 +1,4 @@
+import typing
 from armory_quests_common.armory_quests_cache import getArmoryQuestsCache
 from armory_yard.skeletons.armory_yard_reroll_controller import IArmoryYardRerollController
 from armory_yard_constants import CONDITION_PREFIX, getConditionTokenByQuestID, getConditionToken
@@ -9,6 +10,10 @@ from gui.server_events.event_items import IExtensionQuestsSource
 from helpers import dependency
 from skeletons.gui.game_control import IArmoryYardController
 from skeletons.gui.shared import IItemsCache
+if typing.TYPE_CHECKING:
+    from typing import List, Optional, Callable
+    from gui.server_events.event_items import Quest
+    from armory_yard.gui.shared.armory_dynamic_quest import ArmoryDynamicQuest
 
 class ArmoryPlayerConditionQuestsSource(IExtensionQuestsSource):
     __armoryYardController = dependency.descriptor(IArmoryYardController)
@@ -76,3 +81,18 @@ class ArmoryDynamicQuestPostBattleInfo(QuestPostBattleInfo):
                        'progressDiffTooltip': backport.text(R.strings.tooltips.quests.progress.earnedInBattle())})
 
         return progresses
+
+
+def _simpleQuestsCompleted(quests):
+    return any(quest.isCompleted() for quest in quests)
+
+
+def _rerollQuestsCompleted(quests):
+    return any(quest.isTokenQuestCompleted() for quest in quests)
+
+
+@dependency.replace_none_kwargs(armoryYardReroll=IArmoryYardRerollController)
+def getQuestsCompletedFunc(armoryYardReroll=None):
+    if armoryYardReroll.isRerollEnabled():
+        return _rerollQuestsCompleted
+    return _simpleQuestsCompleted

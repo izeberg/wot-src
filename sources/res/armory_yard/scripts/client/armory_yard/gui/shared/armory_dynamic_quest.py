@@ -77,6 +77,13 @@ class ArmoryDynamicQuest(PersonalQuest):
             self.__connected = True
         return self.__tokenQuestID
 
+    def isTokenQuestCompleted(self, progress=None):
+        tokenQuest = self.getTokenQuest()
+        if tokenQuest is not None:
+            return tokenQuest.isCompleted(progress=progress)
+        else:
+            return
+
     def getMainID(self):
         return self.__mainCondID
 

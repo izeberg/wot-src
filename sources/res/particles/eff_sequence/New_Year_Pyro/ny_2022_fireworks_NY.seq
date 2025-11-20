@@ -1346,15 +1346,6 @@
 		<type>particle</type>
 		<resource>particles/Environment/hangar/fw_sparks_smoke.eff</resource>
 		<track>
-			<name>attach</name>
-			<type>attach</type>
-			<frame>
-				<startTime>0.000000</startTime>
-				<duration>1.000000</duration>
-				<value>2021|</value>
-			</frame>
-		</track>
-		<track>
 			<name>position</name>
 			<type>vector3</type>
 			<frame>
@@ -1381,15 +1372,6 @@
 		<name>Particle Object 8</name>
 		<type>particle</type>
 		<resource>particles/Environment/hangar/fw_sparks_smoke.eff</resource>
-		<track>
-			<name>attach</name>
-			<type>attach</type>
-			<frame>
-				<startTime>0.000000</startTime>
-				<duration>1.000000</duration>
-				<value>2021|</value>
-			</frame>
-		</track>
 		<track>
 			<name>position</name>
 			<type>vector3</type>

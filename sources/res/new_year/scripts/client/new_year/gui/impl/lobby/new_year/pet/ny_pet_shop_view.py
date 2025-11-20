@@ -62,7 +62,9 @@ class NyPetShopView(SubModelPresenter):
                 count = self._dataProvider.getIndicatorCurrency(card.getType().value)
                 card.setItemsInInventory(count)
 
-            tx.setIsBuyButtonEnabled(self.__canBuy(tx.getFullPrice()))
+            canBuy = self.__canBuy(tx.getFullPrice())
+            tx.setIsBuyButtonEnabled(canBuy)
+            tx.setIsEnough(canBuy)
 
     def __initShopCards(self):
         with self.viewModel.transaction() as (model):
@@ -121,7 +123,9 @@ class NyPetShopView(SubModelPresenter):
                 fullPrice += card.getCurrentPrice()
 
             model.setFullPrice(fullPrice)
-            model.setIsBuyButtonEnabled(self.__canBuy(fullPrice))
+            canBuy = self.__canBuy(fullPrice)
+            model.setIsBuyButtonEnabled(canBuy)
+            model.setIsEnough(canBuy)
 
     def __onDialogClose(self):
         SoundGroups.g_instance.setState(RaccoonStates.GROUP, RaccoonStates.SHOP)

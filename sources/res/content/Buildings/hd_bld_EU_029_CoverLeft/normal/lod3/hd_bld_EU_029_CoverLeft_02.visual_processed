@@ -13,10 +13,28 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<primitive>indices</primitive>
+			<vertices>s_wall1Shape.vertices</vertices>
+			<primitive>s_wall1Shape.indices</primitive>
 			<primitiveGroup>
 				0
+				<material>
+					<identifier>s_wall_1</identifier>
+					<materialKind>111</materialKind>
+					<collisionFlags>131</collisionFlags>
+				</material>
+				<groupOrigin>-0.311263 2.506903 0.571045</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>s_wall_0</identifier>
+					<materialKind>0</materialKind>
+					<collisionFlags>144</collisionFlags>
+				</material>
+				<groupOrigin>-0.381548 7.556857 -0.523167</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				2
 				<material>
 					<identifier>s_nd0</identifier>
 					<fx>shaders/std_effects/PBS_ext.fx</fx>
@@ -57,24 +75,6 @@
 				</material>
 				<groupOrigin>-0.387378 8.364552 -0.251650</groupOrigin>
 			</primitiveGroup>
-			<primitiveGroup>
-				1
-				<material>
-					<identifier>s_wall_1</identifier>
-					<materialKind>111</materialKind>
-					<collisionFlags>131</collisionFlags>
-				</material>
-				<groupOrigin>-0.311263 2.506903 0.571045</groupOrigin>
-			</primitiveGroup>
-			<primitiveGroup>
-				2
-				<material>
-					<identifier>s_wall_0</identifier>
-					<materialKind>0</materialKind>
-					<collisionFlags>144</collisionFlags>
-				</material>
-				<groupOrigin>-0.381548 7.556857 -0.523167</groupOrigin>
-			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
@@ -82,6 +82,6 @@
 		<max>11.910819 18.146999 10.048098</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>11442</geometrySize>
+	<geometrySize>11314</geometrySize>
 	<minUVDensity>0.000214</minUVDensity>
 </root>

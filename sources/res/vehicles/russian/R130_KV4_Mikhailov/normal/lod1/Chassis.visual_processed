@@ -747,8 +747,8 @@
 		<node>Track_R2_BlendBone</node>
 		<node>Track_R1_BlendBone</node>
 		<node>Track_R0_BlendBone</node>
-		<node>V_BlendBone</node>
 		<node>Track_VD_R0_BlendBone</node>
+		<node>V_BlendBone</node>
 		<node>Track_VD_R1_BlendBone</node>
 		<geometry>
 			<vertices>track_R_Shape.vertices</vertices>
@@ -793,7 +793,7 @@
 					</property>
 					<property>
 						g_detailUVTiling
-						<Vector4>3.507000 0.876750 0.000000 0.000000</Vector4>
+						<Vector4>3.507000 0.860000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_detailPower
@@ -882,7 +882,7 @@
 					</property>
 					<property>
 						g_detailUVTiling
-						<Vector4>3.507000 0.876750 0.000000 0.000000</Vector4>
+						<Vector4>3.507000 0.860000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_detailPower

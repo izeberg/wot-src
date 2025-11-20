@@ -15,7 +15,6 @@ from gui.impl.pub import ViewImpl
 from gui.impl.pub.lobby_window import LobbyNotificationWindow
 from gui.impl.lobby.common.view_wrappers import createBackportTooltipDecorator
 from helpers import dependency
-from helpers.time_utils import getServerUTCTime
 from shared_utils import findFirst
 
 class NyLeaderboardRewardView(ViewImpl):
@@ -76,13 +75,11 @@ class NyLeaderboardRewardView(ViewImpl):
                 self.__fillModel(tx)
 
     def __fillModel(self, model):
-        config = self.__dataProvider.config
-        lastSeason = config.seasons[(-1)]
         playerPos, playerTop = self.__getPlayerPositionAndTop()
         model.setStage(self.__seasonID)
-        model.setIsFinal(getServerUTCTime() > lastSeason.endTime)
         model.setPosition(playerPos)
         model.setTop(playerTop)
+        model.setIsFinal(self.__dataProvider.isLeaderboardFinished)
         packNyLeaderboardRewards(self.__rewards, model.rewards, self.__tooltips, (
          CurrentNYConstants.NY_STATIC_DOGTAG, self.__ctxUpdater))
 
@@ -122,7 +119,7 @@ class NyLeaderboardRewardView(ViewImpl):
              playerPos, playerTop)
 
     def __getDataFromPlayerStats(self):
-        playerPos = 0
+        playerPos = -1
         playerTop = 0
         if self.__isRequestInProgress:
             return (playerPos, playerTop)
@@ -131,6 +128,7 @@ class NyLeaderboardRewardView(ViewImpl):
         if not (playerStats and config and config.seasons):
             return (playerPos, playerTop)
         top = self.__dataProvider.getRewardedTopThreshold(self.__seasonID)
+        playerPos = self.__getPlayerPos(self.__seasonID)
         self.__top = top if top else playerTop
         return (
          playerPos, top)
@@ -153,6 +151,15 @@ class NyLeaderboardRewardView(ViewImpl):
                 return 0
             return rewardSeason.topConfig[(-1)].endPos
 
+    def __getPlayerPos(self, seasonID):
+        playerWeekStat = self.__dataProvider.getPlayerWeekStat(seasonID)
+        if playerWeekStat is None:
+            return -1
+        else:
+            if playerWeekStat.position == -1:
+                return 0
+            return playerWeekStat.position
+
     def __filterDogtags(self):
         dogTagRewards = self.__rewards.get('dogTagComponents', [])
         if dogTagRewards:
@@ -168,7 +175,7 @@ class NyLeaderboardRewardView(ViewImpl):
             return comp is not None and comp.viewType == ComponentViewType.ENGRAVING
 
     def __ctxUpdater(self):
-        return self.__top
+        return int(self.__top)
 
     def __onClose(self):
         self.destroyWindow()

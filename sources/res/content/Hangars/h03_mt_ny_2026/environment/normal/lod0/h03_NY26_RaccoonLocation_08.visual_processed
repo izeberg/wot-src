@@ -13,9 +13,9 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>s8_flameShape.vertices</vertices>
-			<stream>s8_flameShape.colour</stream>
-			<primitive>s8_flameShape.indices</primitive>
+			<vertices>s8Shape.vertices</vertices>
+			<stream>s8Shape.colour</stream>
+			<primitive>s8Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -398,9 +398,9 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>s1_TILEDShape.vertices</vertices>
-			<stream>s1_TILEDShape.uv2</stream>
-			<primitive>s1_TILEDShape.indices</primitive>
+			<vertices>s1Shape.vertices</vertices>
+			<stream>s1Shape.uv2</stream>
+			<primitive>s1Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -473,7 +473,7 @@
 						<Texture>content/Hangars/h03_mt_ny_2026/environment/tiles/Wood_sawn_01_GBMT.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.029576 1.105328 -0.375873</groupOrigin>
+				<groupOrigin>0.031123 1.105328 -1.407373</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				1
@@ -551,15 +551,15 @@
 						<Vector4>0.450000 0.430000 0.380000 0.000000</Vector4>
 					</property>
 				</material>
-				<groupOrigin>0.108523 1.725928 -0.266711</groupOrigin>
+				<groupOrigin>0.108523 1.725928 -1.499041</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-3.627864 -0.063101 -4.414629</min>
+		<min>-3.627864 -0.063101 -6.477631</min>
 		<max>3.734298 3.933291 3.662884</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>2531654</geometrySize>
+	<geometrySize>2540442</geometrySize>
 	<minUVDensity>0.012807</minUVDensity>
 </root>

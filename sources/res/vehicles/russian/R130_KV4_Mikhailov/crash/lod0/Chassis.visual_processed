@@ -110,7 +110,7 @@
 					</property>
 					<property>
 						g_detailUVTiling
-						<Vector4>3.507000 0.876750 0.000000 0.000000</Vector4>
+						<Vector4>3.507000 3.507000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						normalMap
@@ -136,7 +136,7 @@
 						</Float>
 					</property>
 				</material>
-				<groupOrigin>-1.250144 0.863203 0.061014</groupOrigin>
+				<groupOrigin>-1.250144 0.868856 0.061014</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -187,7 +187,7 @@
 					</property>
 					<property>
 						g_detailUVTiling
-						<Vector4>3.507000 0.876750 0.000000 0.000000</Vector4>
+						<Vector4>3.507000 3.507000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						normalMap
@@ -219,9 +219,9 @@
 	</renderSet>
 	<constraints/>
 	<boundingBox>
-		<min>-1.652506 -0.010464 -5.062491</min>
+		<min>-1.652506 0.000842 -5.062491</min>
 		<max>1.652861 1.736870 4.613073</max>
 	</boundingBox>
-	<geometrySize>128448</geometrySize>
-	<minUVDensity>0.050988</minUVDensity>
+	<geometrySize>122118</geometrySize>
+	<minUVDensity>0.132050</minUVDensity>
 </root>

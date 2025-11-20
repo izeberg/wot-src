@@ -42,7 +42,7 @@ msgid "buttonLabel/open"
 msgstr "Открыть"
 
 msgid "buttonLabel/openBox"
-msgstr "Открыть коробку"
+msgstr "Открыть контейнер"
 
 msgid "buttonLabel/quest"
 msgstr "К задачам"
@@ -374,16 +374,16 @@ msgid "entryDesc/boxesCount"
 msgstr "x{count}"
 
 msgid "entryDesc/buySlot"
-msgstr "Большие коробки можно купить в Премиум магазине"
+msgstr "Большие контейнеры можно купить в Премиум магазине"
 
 msgid "entryDesc/newYear_premium"
 msgstr "Большие контейнеры"
 
 msgid "entryDesc/newYear_usual"
-msgstr "Малые контейнеры"
+msgstr "Ящики с мандаринами"
 
 msgid "entryDesc/questSlot"
-msgstr "Малые коробки можно заработать, выполняя задачи"
+msgstr "Ящики с мандаринами можно заработать, выполняя задачи"
 
 msgid "entryDesc/restrictedMode"
 msgstr "Функциональность временно недоступна. Попробуйте позже."
@@ -392,14 +392,14 @@ msgid "entryPoint/header"
 msgstr "Коробки"
 
 msgid "entryTooltip/body/h1"
-msgstr "Где купить большие коробки:"
+msgstr "Где купить большие контейнеры:"
 
 msgid "entryTooltip/body/h2"
-msgstr "Как получить малые коробки:"
+msgstr "Как получить ящики с мандаринами:"
 
 msgid "entryTooltip/body/p1"
 msgstr ""
-"Покупайте коробки с новогодними украшениями для себя и своих друзей в "
+"Покупайте контейнеры с новогодними украшениями для себя и своих друзей в "
 "Премиум магазине."
 
 msgid "entryTooltip/body/p2"
@@ -416,12 +416,12 @@ msgstr "ДОКУПИТЬ КОРОБКИ"
 
 msgid "entryView/ended/newYear_premium"
 msgstr ""
-"Большие коробки на Складе закончились,\n"
+"Большие контейнеры на Складе закончились,\n"
 "можете купить их в Премиум магазине"
 
 msgid "entryView/ended/newYear_usual"
 msgstr ""
-"Малые коробки закончились,\n"
+"Ящики с мандаринами закончились,\n"
 "можете заработать их в бою"
 
 msgid "entryView/lootboxesCount"
@@ -457,13 +457,13 @@ msgid "multiOpenView/applyLabel"
 msgstr "Так точно!"
 
 msgid "multiOpenView/boxesInStorage"
-msgstr "Коробок в наличии: {count}"
+msgstr "Контейнеров в наличии: {count}"
 
 msgid "multiOpenView/boxesNotAvailable"
 msgstr "Контейнеры закончились"
 
 msgid "multiOpenView/openBoxesLabel"
-msgstr "Открыть следующие {count} коробок"
+msgstr "Открыть следующие {count} контейнеров"
 
 msgid "multiOpenView/openedCount"
 msgstr "x{count}"
@@ -626,7 +626,7 @@ msgid "restrictedMessage/header"
 msgstr "Внимание:"
 
 msgid "rewardView/boxesCount"
-msgstr "Коробок в наличии: {count}"
+msgstr "Контейнеров в наличии: {count}"
 
 msgid "rewardView/closeBtnLabel"
 msgstr "Закрыть"
@@ -710,10 +710,10 @@ msgid "tooltip/category/rewards/header"
 msgstr "Награды:"
 
 msgid "tooltip/entryView/buyBoxes"
-msgstr "Купить дополнительные коробки в Премиум магазине."
+msgstr "Купить дополнительные контейнеры в Премиум магазине."
 
 msgid "tooltip/entryView/openBoxes"
-msgstr "Открывать одновременно по несколько коробок."
+msgstr "Открывать одновременно по несколько контейнеров."
 
 msgid "tooltip/restrictedMode"
 msgstr "Операция временно недоступна. Попробуйте позже."
@@ -776,10 +776,10 @@ msgid "userName/mtl_universal"
 msgstr "Зов сокола"
 
 msgid "userName/newYear_premium"
-msgstr "БОЛЬШИЕ КОРОБКИ"
+msgstr "БОЛЬШИЕ КОНТЕЙНЕРЫ"
 
 msgid "userName/newYear_usual"
-msgstr "МАЛЫЕ КОНТЕЙНЕРЫ"
+msgstr "ЯЩИКИ С МАНДАРИНАМИ"
 
 msgid "userName/ny_2024_VI"
 msgstr "Ёлочные игрушки"

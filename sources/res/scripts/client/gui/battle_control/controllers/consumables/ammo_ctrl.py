@@ -579,10 +579,10 @@ class AmmoController(MethodsRules, ViewComponentsController):
         self.processDelayer('setCurrentShellCD')
         return
 
-    def updatePenaltyReloadTime(self, reloadTimeFactor, penaltyTime):
+    def updatePenaltyReloadTime(self, reloadTimeFactor, penaltyTime, appliedPenaltyReloadTime):
         penaltyReloadTime = 0.0
         if penaltyTime >= 0:
-            baseTime = self.getGunReloadingState().getBaseValue() / reloadTimeFactor
+            baseTime = (self.getGunReloadingState().getBaseValue() - appliedPenaltyReloadTime) / reloadTimeFactor
             penaltyReloadTime = round(baseTime + penaltyTime, 2)
         self.onPenaltyReloadTimeUpdated(penaltyReloadTime)
 

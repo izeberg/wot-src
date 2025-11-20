@@ -292,6 +292,7 @@
 		<fn_effect_bin>particles/content_forward/PFX/Tank/customization/R77_KV2_3Dst_02/R77_KV2_bees_idle.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/tank/abilities/g182_mausekonig/g182_fire_burst_exhaust.eff</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Tank/abilities/G182_Mausekonig/G182_fire_burst_exhaust.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/tank/abilities/gb140_champion/gb140_steam.eff</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/battle_royal/corrodedhit/corrodedhit.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/battle_royal/corrodedhit/corrodedhit_fail.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/battle_royal/corrodedhit/corrodedhit_trace.vfx</fn_effect_bin>
@@ -806,6 +807,7 @@
 		<fn_effect_bin>particles/content_forward/pfx/strike_eff/artillerystrike_snowhit.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/strike_eff/artillerystrike_stonehit.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/strike_eff/artillerystrike_waterhit.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/tank/abilities/gb140_champion/gb140_steam.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/tank/armor_parts_smoke_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/tank/armor_parts_smoke_spark.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/tank/armor_parts_smoke_white.vfx</fn_effect_bin>
@@ -2913,6 +2915,14 @@
 			<shader>data/shaders/ps_long.fx</shader>
 			<texture>particles/content_forward/pfx_textures/eff_tex_h07_new_year_2015.dds</texture>
 		</preload>
+		<preload>
+			<shader>data/shaders/ps.fx</shader>
+			<texture>particles/content_forward/pfx_textures/eff_tex_fog.dds</texture>
+		</preload>
+		<preload>
+			<shader>data/shaders/ps.fx</shader>
+			<texture>particles/content_forward/pfx_textures/eff_tex_smoke.dds</texture>
+		</preload>
 	</forward>
 	<deferred>
 		<name>default</name>
@@ -3243,6 +3253,7 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/customization/R77_KV2_3Dst_02/R77_KV2_bees_out.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/customization/R77_KV2_3Dst_02/R77_KV2_bees_in.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/customization/R77_KV2_3Dst_02/R77_KV2_bees_idle.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/tank/abilities/gb140_champion/gb140_steam.eff</fn_effect_bin>
 		<preloadVisual>content/environment/env_null_model/null_model.visual</preloadVisual>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/battle_royal/corrodedhit/corrodedhit.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/battle_royal/corrodedhit/corrodedhit_fail.vfx</fn_effect_bin>
@@ -3804,6 +3815,7 @@
 		<fn_effect_bin>particles/content_deferred/pfx/strike_eff/artillerystrike_waterhit.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/strike_eff/artillerystrike_waterhit_add.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/strike_eff/artillerystrike_waterhit_snp.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/tank/abilities/gb140_champion/gb140_steam.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/tank/armor_parts_smoke_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/tank/armor_parts_smoke_spark.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/tank/armor_parts_smoke_white.vfx</fn_effect_bin>
@@ -5986,6 +5998,14 @@
 		<preload>
 			<shader>data/shaders/ps_long.fx</shader>
 			<texture>particles/content_deferred/pfx_textures/eff_tex_h07_new_year_2015.dds</texture>
+		</preload>
+		<preload>
+			<shader>data/shaders/ps.fx</shader>
+			<texture>particles/content_deferred/pfx_textures/eff_tex_fog.dds</texture>
+		</preload>
+		<preload>
+			<shader>data/shaders/ps.fx</shader>
+			<texture>particles/content_deferred/pfx_textures/eff_tex_smoke.dds</texture>
 		</preload>
 	</deferred>
 </root>

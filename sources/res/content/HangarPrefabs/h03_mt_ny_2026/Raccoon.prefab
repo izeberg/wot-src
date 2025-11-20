@@ -514,7 +514,7 @@
 					</property>
 					<property>
 						<name>DistLimits</name>
-						<value>3 4</value>
+						<value>4 4</value>
 					</property>
 					<property>
 						<name>StartYaw</name>
@@ -526,10 +526,7 @@
 					</property>
 					<property>
 						<name>StartDist</name>
-						<value>
-							3.9
-							<!--BW_String-->
-						</value>
+						<value>4</value>
 					</property>
 				</config>
 			</component>

@@ -6,6 +6,7 @@ from armory_yard.gui.shared.bonuses_sorter import bonusesSortKeyFunc
 from frameworks.wulf import ViewFlags, ViewSettings, WindowFlags
 from gui.impl.gen import R
 from armory_yard.gui.impl.gen.view_models.views.lobby.feature.armory_yard_rewards_view_model import ArmoryYardRewardsViewModel, State
+from armory_yard_constants import State as ArmoryYardState
 from gui.impl.lobby.common.view_helpers import packBonusModelAndTooltipData
 from gui.impl.lobby.common.view_wrappers import createBackportTooltipDecorator
 from gui.impl.pub import ViewImpl
@@ -98,6 +99,7 @@ class ArmoryYardRewardsView(ViewImpl):
             vm.setStages(self.__stages)
             vm.setHasAllRewards(self.__hasAllRewards())
             vm.setIsFinalReward(self.__isFinalReward)
+            vm.setIsAciveState(self.__armoryYardCtrl.getState() == ArmoryYardState.ACTIVE)
             self.__fillVehiclesModel(self.__vehicles, vm.getVehicles())
             self.__bonuses = self.__fillRewardsModel(self.__bonuses, vm.getRewards(), getArmoryYardBonusPacker)
             self.__fillRewardsModel(self.__mainBonuses, vm.getMainRewards(), getArmoryYardMainRewardBonusPacker)

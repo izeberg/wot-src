@@ -5,32 +5,35 @@ from gui.goodies.goodie_items import BOOSTERS_ORDERS
 from gui.server_events.bonuses import VehiclesBonus
 from gui.shared.gui_items import GUI_ITEM_TYPE
 from gui.shared.money import Currency
+from items.components.c11n_components import VehicleFilter
 from items.components.supply_slot_categories import SlotCategories
 from shared_utils import first
 if typing.TYPE_CHECKING:
     from gui.shared.missions.packers.bonus import ItemsBonus, GoodiesBonus, SimpleBonus
 
 class BonusesSortWeights(IntEnum):
-    DEMOUNT_KIT = 0
-    UNSORTABLE = 1
-    BOOSTER_GOODIE = 2
-    CREW_BATTLE_BOOSTER = 3
-    BATTLE_BOOSTER = 4
-    RECERTIFICATION_FORM = 5
+    UNSORTABLE = 0
+    SLOTS = 1
+    CUSTOMIZATION = 2
+    BOOSTER_GOODIE = 3
+    CREW_BATTLE_BOOSTER = 4
+    BATTLE_BOOSTER = 5
     AY_COIN = 6
     CREDITS = 7
-    BOOSTER_CREDITS = 8
-    CREW_BOOK = 9
-    TMAN = 10
-    FREE_XP = 11
-    SLOTS = 12
-    PREMUIM_PLUS = 13
-    CRYSTALS = 14
-    EQUIP_COIN = 15
-    OPTIONAL_DEVICE = 16
-    LOOTBOX = 17
-    STYLE = 18
-    VEHICLE = 19
+    FREE_XP = 8
+    DEMOUNT_KIT = 9
+    RECERTIFICATION_FORM = 10
+    CREW_BOOK = 11
+    BOOSTER_CREDITS = 12
+    STYLE = 13
+    TMAN = 14
+    PREMUIM_PLUS = 15
+    CRYSTALS = 16
+    EQUIP_COIN = 17
+    OPTIONAL_DEVICE = 18
+    LOOTBOX = 19
+    UNIQUE_CUSTOMIZATION = 20
+    VEHICLE = 21
 
 
 def _itemsBonusKeyFunc(bonus):
@@ -80,6 +83,22 @@ def _vehiclesBonusKeyFunc(bonus):
          -BonusesSortWeights.VEHICLE, 0)
 
 
+def _customizationsBonusKeyFunc(bonus):
+    item = bonus.getC11nItem(first(bonus.getCustomizations()))
+    if item.itemTypeID == GUI_ITEM_TYPE.STYLE:
+        itemFilter = item.descriptor.filter
+        vehiclesForStyle = []
+        if isinstance(itemFilter, VehicleFilter):
+            for node in itemFilter.include:
+                if node.vehicles:
+                    vehiclesForStyle.extend(node.vehicles)
+
+        if len(vehiclesForStyle) == 1:
+            return (-BonusesSortWeights.UNIQUE_CUSTOMIZATION, 0)
+        return (-BonusesSortWeights.STYLE, 0)
+    return (-BonusesSortWeights.CUSTOMIZATION, 0)
+
+
 _BONUSES_KEYS_FUNC = {VehiclesBonus.VEHICLES_BONUS: _vehiclesBonusKeyFunc, 
    'items': _itemsBonusKeyFunc, 
    constants.PREMIUM_ENTITLEMENTS.PLUS: lambda b: (
@@ -101,8 +120,7 @@ _BONUSES_KEYS_FUNC = {VehiclesBonus.VEHICLES_BONUS: _vehiclesBonusKeyFunc,
                -BonusesSortWeights.TMAN, 0), 
    'crewBooks': lambda b: (
                -BonusesSortWeights.CREW_BOOK, 0), 
-   'customizations': lambda b: (
-                    -BonusesSortWeights.STYLE, 0), 
+   'customizations': _customizationsBonusKeyFunc, 
    'lootBoxToken': lambda b: (
                   -BonusesSortWeights.LOOTBOX, 0)}
 

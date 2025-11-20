@@ -123,7 +123,7 @@ class NewYearTutorialController(INewYearTutorialController, EventsHandler):
 
     def __showNYGreetingsVideo(self):
         self.__videoStartStopHandler = VideoStartStopHandler(checkPauseOnStart=False)
-        showWebmVideoView(videoSource=R.videos.new_year.greetings.ng_greetings(), parent=getParentWindow(), onVideoStarted=self.__onCelebSpeechVideoStarted, onVideoClosed=self.__onCelebSpeechVideoDone, isAutoClose=True, canEscape=True, isUIVisible=True, uiShowDelay=1)
+        showWebmVideoView(videoSource=R.videos.new_year.greetings.ng_greetings(), parent=getParentWindow(), onVideoStarted=self.__onCelebSpeechVideoStarted, onVideoClosed=self.__onCelebSpeechVideoDone, isAutoClose=True, canEscape=False, isUIVisible=True, uiShowDelay=1)
 
     @adisp_process
     def __onCelebSpeechVideoStarted(self):

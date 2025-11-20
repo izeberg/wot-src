@@ -3,7 +3,7 @@ from gui.shared import EVENT_BUS_SCOPE
 from gui.Scaleform.Waiting import Waiting
 from new_year.gui.shared.events import NewYearEvent
 from helpers import dependency
-from helpers.time_utils import getCurrentTimestamp
+from helpers.time_utils import getServerUTCTime
 from helpers.CallbackDelayer import CallbackDelayer
 from new_year.gui.impl.gen.view_models.views.lobby.new_year.views.new_year_info_view_model import Tabs
 from new_year.helpers.server_settings import getNewYearGeneralConfig
@@ -36,7 +36,7 @@ class NewYearLeaderboardView(HistorySubModelPresenter):
 
     @property
     def isLeaderboardReady(self):
-        return not self.getViewModel().getIsLoading() and not self.__isRequiredDataMissed()
+        return not self.getViewModel().getIsLoading() and not self.__isRequiredDataMissed() and self.getViewModel().getState() != State.ERROR
 
     def initialize(self, *args, **kwargs):
         self.getViewModel().setState(State.INITIAL)
@@ -70,7 +70,11 @@ class NewYearLeaderboardView(HistorySubModelPresenter):
          (
           self.getViewModel().onRefresh, self._onRefresh),
          (
-          self._dataProvider.onLeaderBoardUpdated, self._onLeaderBoardUpdated))
+          self._dataProvider.onLeaderBoardUpdated, self._onLeaderBoardUpdated),
+         (
+          self._dataProvider.onSeasonEnded, self._onRefresh),
+         (
+          self._dataProvider.onNextSeasonStarted, self._onRefresh))
 
     def _getListeners(self):
         return (
@@ -116,7 +120,7 @@ class NewYearLeaderboardView(HistorySubModelPresenter):
         showNYWeeklyRewardsViewWindow(self.getParentWindow())
         setNYSettings(NY_IS_LEADERBOARD_REWARDS_CHECKED, True)
 
-    def _onRefresh(self):
+    def _onRefresh(self, _):
         lastRequestedPage = self.getViewModel().getCurrentPage()
         self._requestUpdate(lastRequestedPage, actionType=self.getViewModel().getLastAction())
 
@@ -139,13 +143,11 @@ class NewYearLeaderboardView(HistorySubModelPresenter):
             self.__checkRunningWaiting()
 
     def _updateTopTabs(self, model):
-        config = self._dataProvider.config
         leaderboard = self._dataProvider.leaderboard
         season = self._dataProvider.currentSeason
-        lastSeason = config and config.seasons[(-1)]
         model.setFromTimestamp(season.startTime)
         model.setToTimestamp(season.endTime)
-        model.setIsFinal(getCurrentTimestamp() > lastSeason.endTime)
+        model.setIsFinal(self._dataProvider.isLeaderboardFinished)
         model.setIsRewardsCheck(getNYSetting(NY_IS_LEADERBOARD_REWARDS_CHECKED))
         totalPages = leaderboard.page.totalPage
         userPos = leaderboard.user.position
@@ -179,7 +181,8 @@ class NewYearLeaderboardView(HistorySubModelPresenter):
         model.selfRank.setUserName(BigWorld.player().name)
         model.selfRank.setScore(user.points)
         self.__updateLeaderboard(leaderboard, model)
-        model.setState(State.SUCCESS)
+        state = State.RECALC if leaderboard.isRecalcTime else State.SUCCESS
+        model.setState(state)
         model.setIsLoading(False)
 
     def __updateLeaderboard(self, leaderboard, model):
@@ -226,7 +229,7 @@ class NewYearLeaderboardView(HistorySubModelPresenter):
             switchCallback(parent=self.getParentWindow())
 
     def __runDelayedUpdate(self):
-        timeToNextUpdate = max(self._dataProvider.leaderboard.nextUpdateTime - getCurrentTimestamp(), _MIN_REQ_DELAY)
+        timeToNextUpdate = max(self._dataProvider.leaderboard.nextUpdateTime + _MIN_REQ_DELAY - getServerUTCTime(), _MIN_REQ_DELAY)
         self.__timer.delayCallback(timeToNextUpdate, self.__timerUpdate)
 
     def __delayedHideWaiting(self):

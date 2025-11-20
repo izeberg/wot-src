@@ -20,13 +20,15 @@ class NyPetMailsTooltip(ViewImpl):
     def _getEvents(self):
         return (
          (
-          self._dataProvider.onGiftCountUpdated, self.__onGiftCountUpdated),)
+          self._dataProvider.onGiftCountUpdated, self.__updateGiftData),
+         (
+          self._dataProvider.onSimulationEnd, self.__updateGiftData))
 
     def _onLoading(self, *args, **kwargs):
-        self.__onGiftCountUpdated()
+        self.__updateGiftData()
         super(NyPetMailsTooltip, self)._onLoading(*args, **kwargs)
 
-    def __onGiftCountUpdated(self):
+    def __updateGiftData(self):
         with self.getViewModel().transaction() as (tx):
             tx.setMailsAmount(self._dataProvider.playerInfo.giftCount)
             tx.setNextMailTime(self._dataProvider.getGiftDelay())

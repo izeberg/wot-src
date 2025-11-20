@@ -1,4 +1,5 @@
 from adisp import adisp_process
+from new_year.gui.impl.new_year.navigation import NewYearNavigation
 from new_year.gui.impl.new_year.sounds import NewYearSoundEvents, NewYearSoundsManager
 from new_year.gui.impl.new_year.views.toy_presenter import PopoverToyPresenter
 from gui.shared import g_eventBus, EVENT_BUS_SCOPE
@@ -11,6 +12,7 @@ from new_year.skeletons.new_year import INewYearController
 from new_year.gui.impl.gen.view_models.views.lobby.new_year.views.city.ny_city_view_model import NyCityViewModel
 from new_year.gui.impl.lobby.new_year.sub_model_presenter import HistorySubModelPresenter
 from shared_utils import findFirst
+from itertools import chain
 _HANG_SOUNDS_MAP = {ToyTypes.TOP: NewYearSoundEvents.ADD_TOY_TREE, 
    ToyTypes.BALL: NewYearSoundEvents.ADD_TOY_TREE, 
    ToyTypes.GARLAND_FIR: NewYearSoundEvents.ADD_TOY_TREE, 
@@ -34,7 +36,7 @@ _HANG_SOUNDS_MAP = {ToyTypes.TOP: NewYearSoundEvents.ADD_TOY_TREE,
    ToyTypes.FENCE: NewYearSoundEvents.ADD_TOY_TEREM}
 
 class NyDecorationsPopover(HistorySubModelPresenter):
-    __slots__ = ('__selectedSlotId', )
+    __slots__ = ('__selectedSlotId', '__newToys')
     _nyController = dependency.descriptor(INewYearController)
     _itemsCache = dependency.descriptor(IItemsCache)
     __settingsCore = dependency.descriptor(ISettingsCore)
@@ -42,22 +44,35 @@ class NyDecorationsPopover(HistorySubModelPresenter):
     def __init__(self, viewModel=None, parentView=None, selectedSlotId=None, **kwargs):
         super(NyDecorationsPopover, self).__init__(viewModel, parentView, **kwargs)
         self.__selectedSlotId = selectedSlotId
+        self.__newToys = {}
 
     @property
     def viewModel(self):
         return super(NyDecorationsPopover, self).getViewModel()
+
+    def finalize(self):
+        self.__sendSeenToy()
+        super(NyDecorationsPopover, self).finalize()
 
     def _getEvents(self):
         return (
          (
           self.viewModel.onIsNewStateChanged, self.__onIsNewStateChanged),
          (
-          self.viewModel.onApplyDecorationSelection, self.__onApplyDecorationSelection))
+          self.viewModel.onApplyDecorationSelection, self.__onApplyDecorationSelection),
+         (
+          self._nyController.onCustomizationObjectUpdated, self.__onCustomizationObjectUpdated))
 
     def setSelectedSlotID(self, selectedSlotId):
         self.__selectedSlotId = selectedSlotId
         with self.viewModel.transaction() as (model):
             self.__updateDecorationSlots(model=model)
+
+    def __onCustomizationObjectUpdated(self, *args):
+        currentObject = NewYearNavigation.getCurrentObject()
+        if currentObject in args:
+            with self.viewModel.transaction() as (model):
+                self.__updateDecorationSlots(model=model)
 
     def __onApplyDecorationSelection(self, args):
         toyId = int(args['index'])
@@ -69,17 +84,17 @@ class NyDecorationsPopover(HistorySubModelPresenter):
         toyID = int(args.get('index'))
         toySlots = self.viewModel.getDecorationsSlots()
         toyItem = findFirst(lambda toySlot: toySlot.getToyID() == toyID, toySlots)
-        if toyItem and toyItem.getIsNew():
-            self.__updateNewToys(toyID)
-            toyItem.setIsNew(False)
-
-    def __updateNewToys(self, toyID):
         inventoryToys = self._itemsCache.items.festivity.getToys()
-        if inventoryToys.get(toyID) is not None:
-            toyInfo = inventoryToys[toyID]
-            if toyInfo.getCount() > 0:
-                self._nyController.sendSeenToys([toyID, toyInfo.getUnseenCount()])
+        toyInfo = inventoryToys.get(toyID)
+        if toyItem and toyItem.getIsNew() and toyInfo is not None:
+            self.__newToys[toyID] = toyInfo.getUnseenCount()
+            toyItem.setIsNew(False)
         return
+
+    def __sendSeenToy(self):
+        if self.__newToys:
+            self._nyController.sendSeenToys([ toy for toy in chain(*self.__newToys.iteritems()) ])
+            self.__newToys = {}
 
     def __updateDecorationSlots(self, model, selectedToyID=None):
         selectedSlotId = self.__selectedSlotId
@@ -87,6 +102,7 @@ class NyDecorationsPopover(HistorySubModelPresenter):
         slots.clear()
         if selectedSlotId < 0:
             slots.invalidate()
+            self.__sendSeenToy()
             return
         else:
             decorationType = self._nyController.getSlotDescrs()[selectedSlotId].type
@@ -96,9 +112,12 @@ class NyDecorationsPopover(HistorySubModelPresenter):
                 slot = PopoverToyPresenter(toyDescriptor).asSlotViewModel()
                 if selectedToyID == toyDescriptor.getID():
                     slot.setIsSelected(True)
+                if toyDescriptor.getID() in self.__newToys:
+                    slot.setIsNew(False)
                 slots.addViewModel(slot)
 
             slots.invalidate()
+            self.__sendSeenToy()
             return
 
     @adisp_process

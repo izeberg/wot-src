@@ -135,8 +135,10 @@ def showYardQuestRerollWindowByTokenQuestID(tokenQuestID, questsToSelect=None, p
 @dependency.replace_none_kwargs(armoryYard=IArmoryYardController)
 def showArmoryYardIntroWindow(closeCallback=None, parent=None, armoryYard=None, loadedCallback=None):
     from armory_yard.gui.impl.lobby.feature.armory_yard_intro_view import ArmoryYardIntroWindow
+    from gui.shared.event_dispatcher import hideVehiclePreview
     finalRewardVehicle = armoryYard.getFinalRewardVehicle()
     if finalRewardVehicle:
+        hideVehiclePreview(back=False)
         window = ArmoryYardIntroWindow(finalRewardVehicle, closeCallback, parent=parent, loadedCallback=loadedCallback)
         window.load()
     else:

@@ -35,7 +35,9 @@ class NyPetItemActivatePopover(PopOverViewImpl):
          (
           self.viewModel.onItemActivate, self.__onItemActivate),
          (
-          self._dataProvider.onOnboardingChanged, self.__onOnboardingChanged))
+          self._dataProvider.onOnboardingChanged, self.__onOnboardingChanged),
+         (
+          self._dataProvider.onSeasonEnded, self.__onSeasonEnded))
 
     def createToolTipContent(self, event, contentID):
         if contentID == R.views.new_year.lobby.new_year.tooltips.NyPetTokenStepperTooltip():
@@ -48,6 +50,7 @@ class NyPetItemActivatePopover(PopOverViewImpl):
         config = self._dataProvider.config.indicators[name]
         maxValue = itemsCount = self._dataProvider.getIndicatorCurrency(name)
         initAmount = 1 if itemsCount > 0 else 0
+        isLeaderboardFinished = self._dataProvider.isLeaderboardFinished
         if self._dataProvider.config.currentSeason is None:
             maxValue = max(0, config.maxPoints - self._dataProvider.playerInfo.indicators[name])
             maxValue = math.ceil(maxValue / float(config.item.scalePoint))
@@ -56,9 +59,11 @@ class NyPetItemActivatePopover(PopOverViewImpl):
             tx.setIsOnboarding(self._dataProvider.isOnboarding)
             tx.setType(self.__indicatorType)
             tx.setItemsInInventory(itemsCount)
-            tx.setLoyaltyPoints(config.item.leaderboardPoint)
             tx.setVitalityPoints(config.item.scalePoint)
             tx.setMaxValue(maxValue)
+            tx.setWasLeaderboardFinished(isLeaderboardFinished)
+            if not isLeaderboardFinished:
+                tx.setLoyaltyPoints(config.item.leaderboardPoint)
             self.__applyPreview(tx, initAmount)
         super(NyPetItemActivatePopover, self)._onLoading(*args, **kwargs)
         return
@@ -93,3 +98,7 @@ class NyPetItemActivatePopover(PopOverViewImpl):
 
     def __onOnboardingChanged(self, state):
         self.viewModel.setIsOnboarding(state)
+
+    def __onSeasonEnded(self, _):
+        if self._dataProvider.isLeaderboardFinished:
+            self.viewModel.setWasLeaderboardFinished(True)

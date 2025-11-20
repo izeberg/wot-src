@@ -4,6 +4,7 @@ from functools import partial
 from typing import Dict
 import adisp, BigWorld
 from account_helpers.AccountSettings import ArmoryYard, AccountSettings
+from armory_yard.gui.server_events.events_helpers import getQuestsCompletedFunc
 from armory_yard.skeletons.armory_yard_reroll_controller import IArmoryYardRerollController
 from armory_yard_constants import getProgressionToken, getGroupName, getStageToken, getEndToken, getBundleBlockToken, PROGRESSION_LEVEL_PDATA_KEY, State, PDATA_KEY_ARMORY_YARD, INTRO_VIDEO, MAX_BUNDLE_TOKENS, isArmoryYardStyleQuest, DAY_BEFORE_END_STYLE_QUEST, VEHICLE_NAME, getPurchaseStagePaidEntitlement, getSubtrahendStageToken, getPostProgressionToken, getPostProgressionGroupName, POST_PROGRESSION_GROUP_PREFIX, CLAIMED_PROGRESSION_REWARD, CLAIMED_POST_PROGRESSION_REWARD, CONDITION_PREFIX, ARMORY_YARD_QUEST_PREFIX
 from armory_yard.gui.window_events import showArmoryYardIntroWindow, showArmoryYardWaiting, hideArmoryYardWaiting, showArmoryYardVehiclePreview, showArmoryYardStylePreview
@@ -542,13 +543,14 @@ class ArmoryYardController(IArmoryYardController):
         isPrevChapterFinished = True
         count = 0
         allCycles = self.currentSeason.getAllCycles() if self.currentSeason else {}
+        completedFunc = getQuestsCompletedFunc()
         for cycle in sorted(allCycles.values(), key=lambda item: item.ID):
             if currentTime > cycle.startDate and isPrevChapterFinished:
-                count += len([ quests for quests in self.iterCycleProgressionQuests(cycle.ID) if not any([ quest.isCompleted() for quest in quests ]) ])
+                count += len([ quests for quests in self.iterCycleProgressionQuests(cycle.ID) if not completedFunc(quests) ])
                 isPrevChapterFinished = self.isChapterFinished(cycle.ID)
 
         if self.isPostProgressionState:
-            ppCount = len([ quests for quests in self.iterCyclePostProgressionQuests() if not any([ quest.isCompleted() for quest in quests ]) ])
+            ppCount = len([ quests for quests in self.iterCyclePostProgressionQuests() if not completedFunc(quests) ])
             count += min(ppCount, self.serverSettings.getPostProgressionData().get('availableQuestAtOneTime', 1))
         return count
 
@@ -847,13 +849,14 @@ class ArmoryYardController(IArmoryYardController):
             self.cameraManager.goToHangar()
             return
 
-    def showShopStylePreview(self, styleID=None):
+    def showShopStylePreview(self, styleID=None, backCallback=None):
         vehicle = self.getFinalRewardVehicle()
         if vehicle is None:
             return
         else:
             self.isVehiclePreview = True
-            showArmoryYardStylePreview(style=self.__c11nService.getItemByID(GUI_ITEM_TYPE.STYLE, styleID) if styleID else None, backCallback=self.goToArmoryYardShop, backBtnDescrLabel=backport.text(R.strings.armory_shop.shopBuyView.backGoto()))
+            backCallback = backCallback or self.goToArmoryYardShop
+            showArmoryYardStylePreview(style=self.__c11nService.getItemByID(GUI_ITEM_TYPE.STYLE, styleID) if styleID else None, backCallback=backCallback, backBtnDescrLabel=backport.text(R.strings.armory_shop.shopBuyView.backGoto()))
             self.cameraManager.goToHangar()
             return
 

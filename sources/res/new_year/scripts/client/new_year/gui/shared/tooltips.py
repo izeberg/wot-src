@@ -57,7 +57,7 @@ class NyStaticDogTagInfoTooltip(DogTagInfoTooltip):
         playerPos = componentProgress.value
         if playerPos:
             valueBlock = list()
-            valueBlock.append(text_styles.main(('{}: ').format(backport.text(R.strings.ny.dogTag.top.place()))))
+            valueBlock.append(text_styles.main(('{} ').format(backport.text(R.strings.ny.dogTag.top.place()))))
             statStr = formatComponentValue(getLanguageCode(), playerPos, comp.numberType, specialReplacements=False)
             valueBlock.append(text_styles.neutral(statStr))
             items.append(formatters.packTextBlockData(text_styles.concatStylesToSingleLine(*valueBlock)))

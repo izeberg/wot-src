@@ -107,6 +107,7 @@ class OnboardingView(ViewImpl, IViewCameraSync):
 
     def _initialize(self, *args, **kwargs):
         super(OnboardingView, self)._initialize(*args, **kwargs)
+        NewYearNavigation.toggleHangarVehicleSelection(False)
         HangarCameraManager.forbidState(CameraMode.DEFAULT)
         g_eventBus.handleEvent(events.LobbyHeaderEvent(events.LobbyHeaderEvent.TOGGLE_VISIBILITY, ctx={'visible': False}), EVENT_BUS_SCOPE.LOBBY)
         self.viewModel.onClose += self.__onBack
@@ -174,12 +175,11 @@ class OnboardingView(ViewImpl, IViewCameraSync):
             self.__hangarSpace.setVehicleSelectable(False)
             self.__onHideBlur()
             g_eventBus.handleEvent(events.LobbyHeaderEvent(events.LobbyHeaderEvent.TOGGLE_VISIBILITY, ctx={'visible': True}), EVENT_BUS_SCOPE.LOBBY)
+            NewYearNavigation.resetHangarUI()
             return
 
     def _getEvents(self):
-        return (
-         (
-          self.viewModel.onMoveSpace, self.__onMoveSpace),
+        return ((self.viewModel.onMoveSpace, self.__onMoveSpace),
          (
           self.viewModel.onHoverMarker, self.__onHoverMarker),
          (
@@ -294,11 +294,11 @@ class OnboardingView(ViewImpl, IViewCameraSync):
 
     def __showVideo(self):
         self.__videoHandler = VideoStartStopHandler(checkPauseOnStart=False)
-        onboardingVideo = R.videos.new_year.onboarding.onboarding_day() if self.__nyEnvSwitcherController.currentDayNightMode == EnvironmentState.DAY else R.videos.new_year.onboarding.onboarding_night()
+        onboardingVideo = R.videos.new_year.onboarding.onboarding_day() if self.__nyEnvSwitcherController.currentAppliedDayNightMode == EnvironmentState.DAY else R.videos.new_year.onboarding.onboarding_night()
         self.__video = showWebmVideoView(videoSource=onboardingVideo, onVideoStarted=self.__onVideoStarted, onVideoClosed=self.__onVideoClosed, isAutoClose=True, canEscape=True, isUIVisible=True, uiShowDelay=3)
 
     def __onVideoStarted(self):
-        onboardingSound = Videos.ONBOARDING_DAY if self.__nyEnvSwitcherController.currentDayNightMode == EnvironmentState.DAY else Videos.ONBOARDING_NIGHT
+        onboardingSound = Videos.ONBOARDING_DAY if self.__nyEnvSwitcherController.currentAppliedDayNightMode == EnvironmentState.DAY else Videos.ONBOARDING_NIGHT
         self.__videoHandler.onVideoStart(onboardingSound)
 
     def __onVideoClosed(self):

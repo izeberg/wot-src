@@ -259,12 +259,20 @@ class LootBox(GUIItem):
             return self.__guaranteedFrequency
         if len(self.__guaranteedFrequency) == 1:
             return self.__guaranteedFrequency[0]
-        return self.__guaranteedFrequency[self.getRotationStage()]
+        return self.__guaranteedFrequency[self.predictRotationStage()]
 
     def getGuaranteedFrequencyName(self):
         if len(self.__guaranteedFrequencyName) == 1:
             return self.__guaranteedFrequencyName[0]
-        return self.__guaranteedFrequencyName[self.getRotationStage()]
+        return self.__guaranteedFrequencyName[self.predictRotationStage()]
+
+    def predictRotationStage(self):
+        if not self.hasLootLists():
+            return self._getRotationStage()
+        rotationStage = self.getCurrentRotationStage()
+        if rotationStage > 0:
+            return rotationStage - 1
+        return rotationStage
 
     def getGuaranteedVehicleLevelsRange(self):
         levels = set()
@@ -310,7 +318,7 @@ class LootBox(GUIItem):
     def getLootLists(self):
         return self.__rotationLists
 
-    def getRotationStage(self):
+    def _getRotationStage(self):
         return self.__rotationStage
 
     def isMultipleStage(self):
@@ -404,12 +412,17 @@ class LootBox(GUIItem):
               None], [0])
 
     def getCurrentRotationStage(self):
-        rotationStage = self.getRotationStage()
+        rotationStage = self._getRotationStage()
         if self.hasLootLists():
             lootLists = self.getLootLists()
-            firstSlot = findFirst(lambda x: x is not None, lootLists[rotationStage])
-            if firstSlot is not None:
-                rotationStage += isAllVehiclesObtainedInSlot(lootLists[rotationStage][firstSlot])
+            for lootList in lootLists[rotationStage:]:
+                firstSlot = findFirst(lambda x: x is not None, lootList)
+                if firstSlot is not None:
+                    if isAllVehiclesObtainedInSlot(lootList[firstSlot]):
+                        rotationStage += 1
+                    else:
+                        break
+
             rotationStage += 1
             rotationStage = min(rotationStage, len(lootLists))
         return rotationStage

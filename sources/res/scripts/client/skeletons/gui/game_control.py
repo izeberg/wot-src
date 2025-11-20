@@ -3527,7 +3527,7 @@ class IArmoryYardController(IGameController):
     def showStylePreview(self, isAnimationActive=False, disableAnimation=None, backLabel=None, backCallback=None):
         raise NotImplementedError
 
-    def showShopStylePreview(self, styleID=None):
+    def showShopStylePreview(self, styleID=None, backCallback=None):
         raise NotImplementedError
 
 

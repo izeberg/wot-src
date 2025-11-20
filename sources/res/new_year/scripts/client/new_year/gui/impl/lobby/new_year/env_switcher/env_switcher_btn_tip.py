@@ -10,6 +10,7 @@ from helpers import dependency
 from gui.impl.gen import R
 
 class EnvSwitcherBtnTipInject(InjectComponentAdaptor):
+    __nyEnvSwitcherController = dependency.descriptor(INewYearEnvironmentSwitchController)
 
     def _makeInjectView(self):
         return EnvSwitcherBtnTip()
@@ -43,9 +44,6 @@ class EnvSwitcherBtnTip(ViewImpl):
 
     def _onLoading(self, *args, **kwargs):
         super(EnvSwitcherBtnTip, self)._onLoading(*args, **kwargs)
-        if not self.__nyEnvSwitcherController.needToShowTip:
-            self.destroy()
-            return
         if self.__mainView and self.__hangarSpace.spaceInited:
             self.__delayShow()
 

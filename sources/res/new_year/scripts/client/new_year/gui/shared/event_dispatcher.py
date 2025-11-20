@@ -115,16 +115,15 @@ def showNYLeaderboardInfoWindow(parent=None):
     window.load()
 
 
-def showNYWeeklyRewardsViewWindow(parent=None):
+def showNYWeeklyRewardsViewWindow(parent=None, stageId=0):
     from new_year.gui.impl.lobby.new_year.leaderboard.ny_weekly_rewards_view import NewYearWeeklyRewardsViewWindow
-    window = NewYearWeeklyRewardsViewWindow(parent=parent)
+    window = NewYearWeeklyRewardsViewWindow(parent=parent, stageId=stageId)
     window.load()
 
 
-def showNyVehiclePreview(vehTypeCompDescr, previewAlias=VIEW_ALIAS.VEHICLE_PREVIEW, viewAlias=NY_VIEW_ALIAS.NY_VEHICLE_PREVIEW, previewBackCb=None, backBtnLabel=None, isShowBackButton=False, bottomPanelTextData=None):
+def showNyVehiclePreview(vehTypeCompDescr, previewAlias=VIEW_ALIAS.VEHICLE_PREVIEW, viewAlias=NY_VIEW_ALIAS.NY_VEHICLE_PREVIEW, previewBackCb=None, backBtnLabel=None, bottomPanelTextData=None):
     g_eventBus.handleEvent(events.LoadViewEvent(SFViewLoadParams(viewAlias), ctx={'itemCD': vehTypeCompDescr, 
        'previewBackCb': previewBackCb, 
        'backBtnLabel': backBtnLabel, 
        'previewAlias': previewAlias, 
-       'isShowBackButton': isShowBackButton, 
        'bottomPanelTextData': bottomPanelTextData}), scope=EVENT_BUS_SCOPE.LOBBY)

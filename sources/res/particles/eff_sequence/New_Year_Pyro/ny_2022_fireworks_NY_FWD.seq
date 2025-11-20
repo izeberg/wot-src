@@ -1278,15 +1278,6 @@
 		<type>particle</type>
 		<resource>particles/Environment/hangar/fw_sparks_smoke.eff</resource>
 		<track>
-			<name>attach</name>
-			<type>attach</type>
-			<frame>
-				<startTime>0.000000</startTime>
-				<duration>1.000000</duration>
-				<value>2021|</value>
-			</frame>
-		</track>
-		<track>
 			<name>position</name>
 			<type>vector3</type>
 			<frame>
@@ -1321,57 +1312,6 @@
 				<value>-1.996834 0.132276 1.122334</value>
 				<inTangent>0.000000 0.000000 0.000000</inTangent>
 				<outTangent>0.000000 0.000000 0.000000</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-		</track>
-	</sequenceObject>
-	<sequenceObject>
-		<name>Model Object 15</name>
-		<type>model</type>
-		<resource>particles/content_deferred/GFX_models/environment/New_Year/customization_fireworks/NY_pyro_glow_red_FWD.model</resource>
-		<track>
-			<name>position</name>
-			<type>vector3</type>
-			<frame>
-				<startTime>0.000000</startTime>
-				<value>-1.542648 5.126728 -0.000114</value>
-				<inTangent>0.000000 0.000000 0.000000</inTangent>
-				<outTangent>0.000000 0.000000 0.000000</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-		</track>
-		<track>
-			<name>rotationEuler</name>
-			<type>vector3</type>
-			<frame>
-				<startTime>0.000000</startTime>
-				<value>0.050526 -8.212262 -89.649277</value>
-				<inTangent>0.000000 0.000000 0.000000</inTangent>
-				<outTangent>0.000000 0.000000 0.000000</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-		</track>
-		<track>
-			<name>scale</name>
-			<type>vector3</type>
-			<frame>
-				<startTime>0.000000</startTime>
-				<value>2.533476 1.000001 6.600510</value>
-				<inTangent>0.000000 0.000000 0.000000</inTangent>
-				<outTangent>0.000000 0.000000 0.000000</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-		</track>
-		<track>
-			<name>material property color</name>
-			<type>vector4</type>
-			<identifier>glow</identifier>
-			<property>TintlColor</property>
-			<frame>
-				<startTime>0.000000</startTime>
-				<value>1.000000 0.917647 0.615686 0.250000</value>
-				<inTangent>0.000000 0.000000 0.000000 0.000000</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
 				<tangentMode>0</tangentMode>
 			</frame>
 		</track>
