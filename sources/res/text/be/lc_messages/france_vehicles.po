@@ -848,7 +848,7 @@ msgid "Chassis_F126_Char_Lourd_AP58"
 msgstr "АР58"
 
 msgid "Chassis_F128_Schneider_90_DCA"
-msgstr "Schneider 90 DCA"
+msgstr "Schneider 105 DCA"
 
 msgid "Chassis_F129_Schneider_120_AC_Gendarme"
 msgstr "Schneider 120 AC"
@@ -1538,13 +1538,20 @@ msgstr ""
 "Характарыстыкі машыны могуць быць зменены без кампенсацыі."
 
 msgid "F128_Schneider_90_105_DCA_Oie_long_special"
-msgstr "?empty?"
+msgstr ""
+"Снайперская СТ-САУ падтрымкі, якая мае двухгарматную ўстаноўку, нядрэнную "
+"дынаміку, вежу няпоўнага кручэння і даволі сціплае браніраванне. Гульнявы "
+"​​працэс пераважна засадны: машына здольная ўпэўнена дзівіць суперніка на "
+"далёкай дыстанцыі, не падстаўляючыся пад зваротны агонь. Мабільнасць і "
+"маскіроўка дазваляюць без цяжкасцяў перамяшчацца па карце, займаючы ключавыя"
+" снайперскія пазіцыі. У самаходкі высокія страты ў хвіліну, што таксама "
+"можна выкарыстоўваць пры гульні «у размен»."
 
 msgid "F128_Schneider_90_105_DCA_Oie_short"
 msgstr "Schneider Oie"
 
 msgid "F128_Schneider_90_105_DCA_Oie_short_special"
-msgstr "?empty?"
+msgstr "Выдатная прылада, годная мабільнасць"
 
 msgid "F129_Schneider_120_AC_Gendarme"
 msgstr "120 AC «Gendarme»"
@@ -3148,7 +3155,7 @@ msgid "Turret_1_S_35CA"
 msgstr "S35 CA"
 
 msgid "Turret_1_Schneider_90_DCA"
-msgstr "Turret 01 Schneider 90 DCA"
+msgstr "Schneider 105 DCA"
 
 msgid "Turret_1_Somua_S35"
 msgstr "APX 1CE"
