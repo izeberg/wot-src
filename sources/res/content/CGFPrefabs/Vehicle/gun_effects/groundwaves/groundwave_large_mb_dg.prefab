@@ -87,6 +87,16 @@
 			<UUID>df87a7b3-598a-3287-915b-db72f4d39092</UUID>
 			<flags>8</flags>
 		</GameObject>
+		<GameObject>
+			<name>groundwave_large_blacksand</name>
+			<UUID>6bd28cb8-7a77-3e6b-9ba5-148507a7a48d</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>groundwave_large_blacksand</name>
+			<UUID>5b280f61-398d-36f9-8a03-0a4b02e2defb</UUID>
+			<flags>0</flags>
+		</GameObject>
 	</GameObjects>
 	<components>
 		<ComponentPool>
@@ -244,6 +254,26 @@
 			</component>
 			<component>
 				<UUID>df87a7b3-598a-3287-915b-db72f4d39092</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>4001a4a5-f95e-36f7-9b49-fc6d2217fb52</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>6bd28cb8-7a77-3e6b-9ba5-148507a7a48d</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>56284f74-a529-3eeb-bb64-10f52c5a1c00</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>5b280f61-398d-36f9-8a03-0a4b02e2defb</UUID>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -562,6 +592,42 @@
 					</property>
 				</config>
 			</component>
+			<component>
+				<UUID>6bd28cb8-7a77-3e6b-9ba5-148507a7a48d</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>5b280f61-398d-36f9-8a03-0a4b02e2defb</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
 		</ComponentPool>
 		<ComponentPool>
 			<type>CastFilter</type>
@@ -766,6 +832,18 @@
 									</property>
 								</object>
 							</item>
+							<item>
+								<object>
+									<property>
+										<name>materialKindName</name>
+										<value>blacksand</value>
+									</property>
+									<property>
+										<name>transformLink</name>
+										<link>6bd28cb8-7a77-3e6b-9ba5-148507a7a48d</link>
+									</property>
+								</object>
+							</item>
 						</collection>
 					</property>
 				</config>
@@ -877,6 +955,18 @@
 									<property>
 										<name>transformLink</name>
 										<link>e937f015-7c4c-39a3-9f1b-1c735b8fafcc</link>
+									</property>
+								</object>
+							</item>
+							<item>
+								<object>
+									<property>
+										<name>materialKindName</name>
+										<value>blacksand</value>
+									</property>
+									<property>
+										<name>transformLink</name>
+										<link>5b280f61-398d-36f9-8a03-0a4b02e2defb</link>
 									</property>
 								</object>
 							</item>
@@ -1044,6 +1134,26 @@
 			</component>
 			<component>
 				<UUID>df87a7b3-598a-3287-915b-db72f4d39092</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>destroyDelay</name>
+						<value>5</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>6bd28cb8-7a77-3e6b-9ba5-148507a7a48d</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>destroyDelay</name>
+						<value>5</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>5b280f61-398d-36f9-8a03-0a4b02e2defb</UUID>
 				<flags>3</flags>
 				<config>
 					<property>
@@ -1787,6 +1897,116 @@
 						<name>effect</name>
 						<isAsset>true</isAsset>
 						<value>particles/Tank/shots/groundwave_large_water.eff</value>
+					</property>
+					<property>
+						<name>Rate</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>autoStart</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>oneTimeEffect</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>tintColour</name>
+						<value>1 1 1 1</value>
+					</property>
+					<property>
+						<name>opacity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>epicenterOffset</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>emissionSize</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>startSpeed</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>gravity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>windWeight</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>fps</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>6bd28cb8-7a77-3e6b-9ba5-148507a7a48d</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>effect</name>
+						<isAsset>true</isAsset>
+						<value>particles/Tank/shots/groundwave_dualgun_large_blacksand_mb.eff</value>
+					</property>
+					<property>
+						<name>Rate</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>autoStart</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>oneTimeEffect</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>tintColour</name>
+						<value>1 1 1 1</value>
+					</property>
+					<property>
+						<name>opacity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>epicenterOffset</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>emissionSize</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>startSpeed</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>gravity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>windWeight</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>fps</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>5b280f61-398d-36f9-8a03-0a4b02e2defb</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>effect</name>
+						<isAsset>true</isAsset>
+						<value>particles/Tank/shots/groundwave_large_blacksand_mb.eff</value>
 					</property>
 					<property>
 						<name>Rate</name>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/Environment/hd_env_UNI_210_Debris/normal/lod3/hd_env_UNI_210_Debris_06</parent>
+	<extent>100.000000</extent>
+	<visibilityBox>
+		<min>-4.062948 -0.049382 -1.662089</min>
+		<max>4.068815 0.301231 1.616034</max>
+	</visibilityBox>
+	<nodefullVisual>content/Environment/hd_env_UNI_210_Debris/normal/lod2/hd_env_UNI_210_Debris_06</nodefullVisual>
+</root>

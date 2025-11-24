@@ -2104,6 +2104,22 @@ msgstr "Reset"
 msgid "perksReset/title"
 msgstr "Reset All Crew Member’s Perks?"
 
+msgid "physicsSoundQualityDoesNotMatch/cancel"
+msgstr "Cancel"
+
+msgid "physicsSoundQualityDoesNotMatch/message"
+msgstr ""
+"The selected Sound Physics Quality differs from the setting automatically "
+"detected by the game client. Enabling this option may affect performance. We"
+" recommend testing performance before confirming. Do you want to apply these"
+" changes?"
+
+msgid "physicsSoundQualityDoesNotMatch/submit"
+msgstr "Confirm"
+
+msgid "physicsSoundQualityDoesNotMatch/title"
+msgstr "Sound Physics Quality Mismatch"
+
 msgid "postmortem/cancel"
 msgstr "Leave"
 
@@ -2766,7 +2782,10 @@ msgid "retrain/submit"
 msgstr "Retrain"
 
 msgid "retrain/title/massive"
-msgstr "Retrain crew for %(vehicleName)s?"
+msgstr "Retrain crew for %(vehicleName)s&zwnbsp;?"
+
+msgid "retrain/title/massiveVehicleTag"
+msgstr "%(vehicleName)s?"
 
 msgid "retrain/title/single/complex"
 msgstr ""

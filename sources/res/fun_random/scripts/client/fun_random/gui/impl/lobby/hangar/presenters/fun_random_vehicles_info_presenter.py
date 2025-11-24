@@ -1,5 +1,5 @@
 from __future__ import absolute_import
-from gui.impl.lobby.hangar.presenters.vehicles_info_presenter import VehiclesInfoPresenter
+from gui.impl.lobby.common.presenters.vehicles_info_presenter import VehiclesInfoPresenter
 from gui.shared.gui_items.Vehicle import Vehicle
 
 class FunRandomVehiclesInfoPresenter(VehiclesInfoPresenter):

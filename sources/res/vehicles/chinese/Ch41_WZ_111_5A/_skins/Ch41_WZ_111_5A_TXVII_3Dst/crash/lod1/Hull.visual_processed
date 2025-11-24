@@ -96,10 +96,18 @@
 			<primitiveGroup>
 				1
 				<material>
-					<identifier>tank_equipment</identifier>
+					<identifier>equipment</identifier>
+					<fx>shaders/std_effects/PBS_tank_crash.fx</fx>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
-					<fx>shaders/std_effects/PBS_tank_crash.fx</fx>
+					<property>
+						alphaReference
+						<Int>64</Int>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
 					<property>
 						crashTileMap
 						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
@@ -119,10 +127,6 @@
 					<property>
 						normalMap
 						<Texture>vehicles/chinese/Ch41_WZ_111_5A/_skins/Ch41_WZ_111_5A_TXVII_3Dst/WZ_111_5A_TXVII_3Dst_equipment_01_ANM.dds</Texture>
-					</property>
-					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>-0.024119 -0.071803 -0.165758</groupOrigin>
@@ -159,7 +163,7 @@
 						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.107282 -0.394335 -0.002613</groupOrigin>
+				<groupOrigin>-0.001128 -0.375105 -0.002613</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				3
@@ -194,8 +198,8 @@
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-1.791033 -0.914664 -4.014939</min>
-		<max>1.876311 0.767672 3.805271</max>
+		<min>-1.791033 -0.911278 -4.014939</min>
+		<max>1.797838 0.767672 3.805271</max>
 	</boundingBox>
 	<geometrySize>691030</geometrySize>
 </root>

@@ -1,14 +1,13 @@
-import logging
+import logging, typing
 from operator import attrgetter
-import typing
-from BWUtil import AsyncReturn
 import Steam, adisp
+from BWUtil import AsyncReturn
 from CurrentVehicle import HeroTankPreviewAppearance
 from advanced_achievements_client.constants import TROPHIES_ACHIEVEMENT_ID
 from constants import GameSeasonType, RentType
 from debug_utils import LOG_WARNING
 from frameworks.wulf import ViewFlags, Window, WindowFlags, WindowLayer, WindowStatus
-from gui import DialogsInterface, GUI_SETTINGS, SystemMessages
+from gui import GUI_SETTINGS, DialogsInterface, SystemMessages
 from gui.Scaleform.daapi.settings.views import VIEW_ALIAS
 from gui.Scaleform.daapi.view.dialogs import DIALOG_BUTTON_ID, I18nConfirmDialogMeta, I18nInfoDialogMeta
 from gui.Scaleform.daapi.view.dialogs.ConfirmModuleMeta import SellModuleMeta
@@ -41,22 +40,23 @@ from gui.impl.lobby.tank_setup.dialogs.refill_shells import ExitFromShellsConfir
 from gui.impl.pub.lobby_window import LobbyNotificationWindow, LobbyWindow
 from gui.impl.pub.notification_commands import EventNotificationCommand, NotificationEvent, WindowNotificationCommand
 from gui.limited_ui.lui_rules_storage import LUI_RULES
-from gui.prb_control.entities.base.ctx import PrbAction
 from gui.prb_control.settings import CTRL_ENTITY_TYPE, PREBATTLE_ACTION_NAME
+from gui.prb_control.entities.base.ctx import PrbAction
 from gui.shared import events, g_eventBus
 from gui.shared.event_bus import EVENT_BUS_SCOPE
 from gui.shared.formatters import text_styles
 from gui.shared.gui_items.Tankman import NO_SLOT, NO_TANKMAN
 from gui.shared.gui_items.Vehicle import NO_VEHICLE_ID, getNationLessName, getUserName
 from gui.shared.gui_items.processors.goodies import BoosterActivator
-from gui.shared.money import Currency, MONEY_UNDEFINED, Money
+from gui.shared.money import MONEY_UNDEFINED, Currency, Money
 from gui.shared.utils import isPopupsWindowsOpenDisabled
 from gui.shared.utils.functions import getUniqueViewName, getViewName
 from gui.shared.utils.requesters import REQ_CRITERIA
 from gui.shop import showBlueprintsExchangeOverlay, showBuyGoldForRentWebOverlay, showBuyProductOverlay
 from helpers import dependency
 from helpers.aop import pointcutable
-from items import ITEM_TYPES, parseIntCompactDescr, vehicles as vehicles_core
+from items import ITEM_TYPES, parseIntCompactDescr
+from items import vehicles as vehicles_core
 from nations import NAMES
 from shared_utils import first
 from skeletons.gui.app_loader import IAppLoader
@@ -64,6 +64,7 @@ from skeletons.gui.game_control import IBattlePassController, IBoostersControlle
 from skeletons.gui.goodies import IGoodiesCache
 from skeletons.gui.impl import IGuiLoader, INotificationWindowController
 from skeletons.gui.lobby_context import ILobbyContext
+from skeletons.gui.pet_system import IPetSystemController
 from skeletons.gui.shared import IItemsCache
 from soft_exception import SoftException
 from wg_async import wg_async, wg_await
@@ -970,14 +971,17 @@ def showBattlePass(childStateID=R.invalid(), chapterID=0, battlePass=None, **kwa
     if guiLoader.windowsManager.getViewByLayoutID(R.views.lobby.battle_pass.MainView()):
         bp = R.aliases.battle_pass
         if childStateID in (bp.Progression(), bp.PostProgression()):
-            STATES[bp.ChapterChoice()].goTo()
-        STATES[childStateID].goTo(chapterID=chapterID, **kwargs)
+            STATES[bp.ChapterChoice()].goTo(childStateID=childStateID, chapterID=chapterID, **kwargs)
+        STATES[childStateID].goTo(childStateID=childStateID, chapterID=chapterID, **kwargs)
     else:
         BattlePassState.goTo(childStateID=childStateID, chapterID=chapterID, **kwargs)
 
 
-def showBattlePassAwardsWindow(bonuses, data, useQueue=False, needNotifyClosing=True, packageRewards=None):
+@dependency.replace_none_kwargs(battlePass=IBattlePassController)
+def showBattlePassAwardsWindow(bonuses, data, useQueue=False, needNotifyClosing=True, packageRewards=None, battlePass=None):
     from gui.impl.lobby.battle_pass.battle_pass_awards_view import BattlePassAwardWindow
+    if battlePass.isHoliday():
+        data['chapter'] = battlePass.getHolidayChapterID()
     findAndLoadWindow(useQueue, BattlePassAwardWindow, bonuses, data, packageRewards, needNotifyClosing)
 
 
@@ -2092,3 +2096,24 @@ def showPM30RewardsWindow(ctx, notificationMgr=None):
     from gui.impl.lobby.personal_missions_30.rewards_view import RewardsViewWindow
     window = RewardsViewWindow(ctx)
     notificationMgr.append(WindowNotificationCommand(window))
+
+
+@dependency.replace_none_kwargs(petController=IPetSystemController)
+def showPetStorageView(petController=None):
+    from gui.impl.lobby.pet_system.states import PetStorageState
+    if petController.isEnabled:
+        PetStorageState.goTo()
+
+
+def openPetEventFullscreenWindow(ctx):
+    from gui.impl.lobby.pet_system.states import PetEventFullscreenWindowState
+    PetEventFullscreenWindowState.goTo(ctx=ctx)
+
+
+def showPetEventView(ctx):
+    g_eventBus.handleEvent(events.LoadViewEvent(SFViewLoadParams(VIEW_ALIAS.PET_EVENT), ctx=ctx), scope=EVENT_BUS_SCOPE.LOBBY)
+
+
+def showPetInfoPage():
+    url = GUI_SETTINGS.petSystemInfoPage
+    showBrowserOverlayView(url, VIEW_ALIAS.WEB_VIEW_TRANSPARENT)

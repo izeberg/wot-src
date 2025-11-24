@@ -40,7 +40,7 @@
 						<Bool>true</Bool>
 					</property>
 				</material>
-				<groupOrigin>-0.041561 8.784739 -1.071100</groupOrigin>
+				<groupOrigin>0.273641 9.164640 -0.892709</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				1
@@ -114,7 +114,7 @@
 						<Texture>content/UniversalTextures/Universal_GCM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.045310 13.750061 -3.093549</groupOrigin>
+				<groupOrigin>-0.041561 8.784750 -1.071100</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				2
@@ -196,7 +196,7 @@
 						<Texture>content/UniversalTextures/Universal_GCM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.257072 0.679858 -1.497039</groupOrigin>
+				<groupOrigin>-0.018184 13.775095 -1.399411</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				3
@@ -274,7 +274,7 @@
 						<Texture>content/UniversalTextures/Universal_GCM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.018184 13.775095 -1.399411</groupOrigin>
+				<groupOrigin>0.257072 0.679858 -1.497039</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				4
@@ -356,7 +356,7 @@
 						<Texture>content/UniversalTextures/Universal_GCM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.273641 9.177504 -0.892709</groupOrigin>
+				<groupOrigin>-0.045310 13.750061 -3.093549</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -366,5 +366,5 @@
 	</boundingBox>
 	<customBsp>true</customBsp>
 	<primitivesName>content/Buildings/hd_bld_AM_018_Factory_02/normal/lod1/hd_bld_AM_018_Factory_02</primitivesName>
-	<geometrySize>1694544</geometrySize>
+	<geometrySize>1718782</geometrySize>
 </root>

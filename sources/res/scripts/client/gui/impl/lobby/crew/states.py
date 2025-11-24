@@ -133,6 +133,7 @@ class TankChangeState(GuiImplViewLobbyState, _RemovableFromHistoryMixin):
         self.__cachedParams = {}
 
     def registerTransitions(self):
+        self.addNavigationTransition(self, transitionType=TransitionType.EXTERNAL)
         lsm = self.getMachine()
         lsm.addNavigationTransitionFromParent(self)
 
@@ -175,6 +176,7 @@ class MemberChangeState(GuiImplViewLobbyState):
         self.__cachedParams = {}
 
     def registerTransitions(self):
+        self.addNavigationTransition(self, transitionType=TransitionType.EXTERNAL)
         lsm = self.getMachine()
         lsm.addNavigationTransitionFromParent(self)
 

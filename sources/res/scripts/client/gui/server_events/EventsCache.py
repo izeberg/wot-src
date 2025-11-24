@@ -77,7 +77,7 @@ class DefaultQuestMaker(object):
 
     def __call__(self, qID, qData, progressRequester):
         self.__builders = self.__builders or collectQuestBuilders()
-        return createQuest(self.__builders, qData.get('type', 0), qID, qData, progressRequester.getQuestProgress(qID), progressRequester.getTokenExpiryTime(qData.get('requiredToken')))
+        return createQuest(self.__builders, qData.get('type', 0), qID, qData, progress=progressRequester.getQuestProgress(qID), expiryTime=progressRequester.getTokenExpiryTime(qData.get('requiredToken')))
 
 
 class EventsCache(IEventsCache):
@@ -573,13 +573,14 @@ class EventsCache(IEventsCache):
         result = {}
         groups = {}
         filterFunc = filterFunc or (lambda a: True)
+        timeUTCNow = time_utils.getServerUTCTime()
         for qID, q in self.__getCommonQuestsIterator():
             if qID in self.__quests2actions:
                 q.linkedActions = self.__quests2actions[qID]
             if q.getType() == EVENT_TYPE.GROUP:
                 groups[qID] = q
                 continue
-            if q.getFinishTimeLeft() <= 0:
+            if q.getFinishTimeRawInUTC() - timeUTCNow <= 0:
                 continue
             if not filterFunc(q):
                 continue

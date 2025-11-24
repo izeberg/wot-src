@@ -1,15 +1,15 @@
-import base64, cPickle as pickle, copy, logging
+import base64, cPickle as pickle, copy, logging, typing
 from copy import deepcopy
-import typing, BigWorld, CommandMapping, Event, Keys, Settings, WWISE, constants, nations
+import BigWorld, CommandMapping, Event, Keys, Settings, WWISE, constants, nations
 from account_helpers import gameplay_ctx
-from account_helpers.settings_core.settings_constants import AIM, BATTLE_EVENTS, BattleCommStorageKeys, CONTOUR, GAME, GuiSettingsBehavior, SOUND, SPGAim, ScorePanelStorageKeys, ArmorFlashlight, PersonalMission3
+from account_helpers.settings_core.settings_constants import AIM, BATTLE_EVENTS, CONTOUR, GAME, SOUND, ArmorFlashlight, BattleCommStorageKeys, GuiSettingsBehavior, PersonalMission3, ScorePanelStorageKeys, SPGAim
 from aih_constants import CTRL_MODE_NAME
 from constants import MAX_VEHICLE_LEVEL, VEHICLE_CLASSES
 from debug_utils import LOG_CURRENT_EXCEPTION
 from gui.Scaleform.genConsts.MISSIONS_CONSTANTS import MISSIONS_CONSTANTS
 from gui.Scaleform.genConsts.PROFILE_CONSTANTS import PROFILE_CONSTANTS
 from gui.Scaleform.genConsts.STORE_CONSTANTS import STORE_CONSTANTS
-from gui.collection.collections_constants import COLLECTIONS_UPDATED_ENTRY_SEEN, COLLECTION_RENEW_SEEN, COLLECTION_START_SEEN
+from gui.collection.collections_constants import COLLECTION_RENEW_SEEN, COLLECTION_START_SEEN, COLLECTIONS_UPDATED_ENTRY_SEEN
 from gui.integrated_auction.constants import AUCTION_FINISH_STAGE_SEEN, AUCTION_STAGE_START_SEEN
 from gui.prb_control.settings import SELECTOR_BATTLE_TYPES
 from helpers import dependency, getClientVersion
@@ -162,6 +162,7 @@ BUY_ANIMATIONS_WAS_SHOWN = 'buyAnimationsWasShown'
 IS_BATTLE_PASS_START_ANIMATION_SEEN = 'isBattlePassStartAnimationSeen'
 LAST_BATTLE_PASS_EXTRA_CHAPTER_SEEN = 'lastBattlePassExtraChapterSeen'
 UMG_BATTLE_PASS_EXTRA_CHAPTER_SEEN = 'umgBattlePassExtraChapterSeen'
+LAST_BATTLE_PASS_HOLIDAY_CHAPTER_SEEN = 'lastBattlePassHolidayChapterSeen'
 BR_UI_SECTION = 'battleRoyale'
 BR_PROGRESSION_SEEN_QUESTS = 'battleRoyaleSeenQuests'
 BR_PROGRESSION_POINTS_SEEN = 'brProgressionPointsSeen'
@@ -337,6 +338,8 @@ VEH_SKILL_TREE_RECORDED_NOFITICATION_NODE = 'vehSkillTreeRecordedNotificationNod
 VEH_SKILL_TREE_PRESTIGE_GLARE_SHOWN = 'vehSkillTreePrestigeGlareShown'
 VEH_SKILL_TREE_INTRO_SHOWN = 'vehSkillTreeIntroShown'
 PERSONAL_MISSION_3 = 'PERSONAL_MISSION_3'
+HANGAR_VIEW_SETTINGS = 'hangarView'
+HANGAR_KEY_BINDINGS = 'hangarKeyBindings'
 
 class BattleMatters(object):
     BATTLE_MATTERS_SETTINGS = 'battleMattersSettings'
@@ -365,7 +368,7 @@ class AdventCalendar(object):
     SETTINGS = 'adventCalendarSettings'
     INTRO_SHOWN = 'adventCalendarIntroShown'
     LAST_HIGHLIGHTED_DOOR = 'adventCalendarLastHighlightedDoor'
-    FIRST_ENTRY_NOTIFICATION_SHOWN = 'adventCalendarFirstEntryNotificationShown'
+    FIRST_ENTRY_NOTIFICATION_SHOWING_DAY = 'adventCalendarFirstEntryNotificationShowingDay'
     LAST_DAY_POPUP_SEEN = 'adventCalendarLastDayPopupSeen'
 
 
@@ -377,6 +380,14 @@ class StrongholdEvent(object):
 
 class OptionalDevicesAssistant(object):
     SELECTED_PRESET = 'optionalDevicesAssistantSelectedPreset'
+
+
+class PetSystem(object):
+    SETTINGS = 'petSystemSettings'
+    SEEN_PET_NAME_IDS = 'petSystemSeenPetNameIDs'
+    SEEN_PET_LEVELS = 'petSystemSeenPetLevels'
+    SEEN_IN_STORAGE_PET_IDS = 'petSystemSeenInStoragePetIDs'
+    SEEN_PROMO_PET_IDS = 'petSystemSeenPromoPetIDs'
 
 
 KNOWN_SELECTOR_BATTLES = 'knownSelectorBattles'
@@ -1097,10 +1108,11 @@ DEFAULT_VALUES = {KEY_FILTERS: {STORE_TAB: 0,
                   'dynamicRange': 0, 
                   'soundDevice': 0, 
                   'bassBoost': False, 
-                  'lowQualitySound': WWISE.WG_isMSR(), 
+                  SOUND.LOW_QUALITY: WWISE.WG_isMSR(), 
                   'nightMode': False, 
                   SOUND.DETECTION_ALERT_SOUND: 'lightbulb', 
                   SOUND.ARTY_SHOT_ALERT_SOUND: 'artillery_lightbulb', 
+                  SOUND.PHYSICS_QUALITY: 'disabled', 
                   PREVIEW_INFO_PANEL_IDX: 0, 
                   'carouselType': 0, 
                   'doubleCarouselType': 0, 
@@ -1108,8 +1120,7 @@ DEFAULT_VALUES = {KEY_FILTERS: {STORE_TAB: 0,
                   'vehicleCarouselStats': True, 
                   WHEELED_DEATH_DELAY_COUNT: 10, 
                   FREE_CAM_USES_COUNT: 0, 
-                  NEW_SETTINGS_COUNTER: {'GameSettings': {'gameplay_epicStandard': True, 
-                                                          BattleCommStorageKeys.SHOW_LOCATION_MARKERS: True, 
+                  NEW_SETTINGS_COUNTER: {'GameSettings': {BattleCommStorageKeys.SHOW_LOCATION_MARKERS: True, 
                                                           BattleCommStorageKeys.ENABLE_COMMENDATIONS_FEEDBACK: True, 
                                                           GAME.DISPLAY_PLATOON_MEMBERS: True, 
                                                           'hangarCamParallaxEnabled': True, 
@@ -1165,7 +1176,8 @@ DEFAULT_VALUES = {KEY_FILTERS: {STORE_TAB: 0,
                                                                                 ArmorFlashlight.OPACITY: True, 
                                                                                 ArmorFlashlight.FILL: True, 
                                                                                 ArmorFlashlight.RESOLUTION: True}}, 
-                                         'SoundSettings': {'artyBulbVoices': True}}, 
+                                         'SoundSettings': {'artyBulbVoices': True, 
+                                                           'physicsQuality': True}}, 
                   CLAN_PREBATTLE_SORTING_KEY: 0, 
                   SHOW_OPT_DEVICE_HINT: True, 
                   SHOW_OPT_DEVICE_HINT_TROPHY: True, 
@@ -1231,6 +1243,7 @@ DEFAULT_VALUES = {KEY_FILTERS: {STORE_TAB: 0,
                   IS_BATTLE_PASS_EXTRA_START_NOTIFICATION_SEEN: set(), 
                   LAST_BATTLE_PASS_EXTRA_CHAPTER_SEEN: 0, 
                   UMG_BATTLE_PASS_EXTRA_CHAPTER_SEEN: 0, 
+                  LAST_BATTLE_PASS_HOLIDAY_CHAPTER_SEEN: 0, 
                   IS_BATTLE_PASS_COLLECTION_SEEN: False, 
                   IS_BATTLE_PASS_START_NOTIFICATION_SEEN: False, 
                   EXTRA_CHAPTERS_VIDEO_SHOWN: set(), 
@@ -1296,7 +1309,7 @@ DEFAULT_VALUES = {KEY_FILTERS: {STORE_TAB: 0,
                                                                                                              0, 1, 2]}, 
                   AdventCalendar.SETTINGS: {AdventCalendar.INTRO_SHOWN: False, 
                                             AdventCalendar.LAST_HIGHLIGHTED_DOOR: -1, 
-                                            AdventCalendar.FIRST_ENTRY_NOTIFICATION_SHOWN: False, 
+                                            AdventCalendar.FIRST_ENTRY_NOTIFICATION_SHOWING_DAY: -1, 
                                             AdventCalendar.LAST_DAY_POPUP_SEEN: 0}, 
                   PERSONAL_MISSION_3: {PersonalMission3.INTRO: False, 
                                        PersonalMission3.INTRO_OP_8: False, 
@@ -1309,7 +1322,21 @@ DEFAULT_VALUES = {KEY_FILTERS: {STORE_TAB: 0,
                   OPEN_BUNDLE_ENTRY_POINT_SHOWN: set(), 
                   OPEN_BUNDLE_ENTRY_POINT_ANIMATION_SHOWN: set(), 
                   OPEN_BUNDLE_INTRO_SHOWN: set(), 
-                  StrongholdEvent.SETTINGS: {}}, 
+                  StrongholdEvent.SETTINGS: {}, PetSystem.SETTINGS: {PetSystem.SEEN_PET_NAME_IDS: set(), 
+                                       PetSystem.SEEN_PET_LEVELS: {}, PetSystem.SEEN_IN_STORAGE_PET_IDS: set(), 
+                                       PetSystem.SEEN_PROMO_PET_IDS: set()}, 
+                  HANGAR_VIEW_SETTINGS: {'allVehicles': {'crewEnabled': True, 
+                                                         'ttcEnabled': True}}, 
+                  HANGAR_KEY_BINDINGS: {'vehicleMenu': {'retrainCrew': Keys.KEY_E, 
+                                                        'quickTraining': Keys.KEY_T, 
+                                                        'returnCrew': Keys.KEY_W, 
+                                                        'aboutVehicle': Keys.KEY_V, 
+                                                        'upgrades': Keys.KEY_F, 
+                                                        'compare': Keys.KEY_C, 
+                                                        'research': Keys.KEY_R, 
+                                                        'armor': Keys.KEY_A, 
+                                                        'quickService': Keys.KEY_Q, 
+                                                        'customization': Keys.KEY_Z}}}, 
    KEY_COUNTERS: {NEW_HOF_COUNTER: {PROFILE_CONSTANTS.HOF_ACHIEVEMENTS_BUTTON: True, 
                                     PROFILE_CONSTANTS.HOF_VEHICLES_BUTTON: True, 
                                     PROFILE_CONSTANTS.HOF_VIEW_RATING_BUTTON: True}, 
@@ -1527,7 +1554,7 @@ def _recursiveStep(defaultDict, savedDict, finalDict):
 
 class AccountSettings(object):
     onSettingsChanging = Event.Event()
-    version = 95
+    version = 97
     settingsCore = dependency.descriptor(ISettingsCore)
     __cache = {'login': None, 'section': None}
     __sessionSettings = {'login': None, 'section': None}
@@ -2404,6 +2431,19 @@ class AccountSettings(object):
                            BattleMatters.REMINDER_LAST_DISPLAY_TIME: 0, 
                            BattleMatters.LAST_BATTLE_TIME: 0})
                         accSettings.write(bmKey, _pack(bmAccSettings))
+
+            if currVersion < 96:
+                for key, section in _filterAccountSection(ads):
+                    keySettings = AccountSettings._readSection(section, KEY_SETTINGS)
+                    adventCalendarDefaultSection = DEFAULT_VALUES[KEY_SETTINGS][AdventCalendar.SETTINGS].copy()
+                    keySettings.write(AdventCalendar.SETTINGS, _pack(adventCalendarDefaultSection))
+
+            if currVersion < 97:
+                for key, section in _filterAccountSection(ads):
+                    accSettings = AccountSettings._readSection(section, KEY_SETTINGS)
+                    obsoleteKey = 'lowQualitySound'
+                    if obsoleteKey in accSettings.keys():
+                        accSettings.deleteSection(obsoleteKey)
 
             ads.writeInt('version', AccountSettings.version)
         return

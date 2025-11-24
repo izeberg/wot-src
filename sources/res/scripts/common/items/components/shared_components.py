@@ -34,7 +34,7 @@ __all__ = ('MaterialInfo', 'DEFAULT_MATERIAL_INFO', 'EmblemSlot', 'LodSettings',
            'DeviceHealth', 'ModelStatesPaths', 'RocketAccelerationParams', 'ImpulseData',
            'MechanicsParams', 'AccuracyStacksParams', 'BattleFuryParams', 'ConcentrationModeParams',
            'ExtraShotClipParams', 'RechargeableNitroParams', 'OverheatStacksParams',
-           'ChargeShotParams', 'ChargeableBurstParams')
+           'ChargeShotParams', 'ChargeableBurstParams', 'TargetDesignatorParams')
 MaterialInfo = reflectedNamedTuple('MaterialInfo', ('kind', 'armor', 'extra', 'multipleExtra',
                                                     'vehicleDamageFactor', 'useArmorHomogenization',
                                                     'useHitAngle', 'useAntifragmentationLining',
@@ -459,7 +459,7 @@ class GunMechanicsParams(MechanicsParams):
 
 class RechargeableNitroParams(MechanicsParams):
     __slots__ = ('deployTime', 'reloadTime', 'duration', 'threshold', 'cooldown', 'addMaxSpeedForwardBonus',
-                 'addRotationSpeedBonus', 'impulse', 'modifiers')
+                 'addRotationSpeedBonus', 'impulse')
     MECHANICS_NAME = 'rechargeableNitro'
 
     def __init__(self, deployTime, reloadTime, duration, cooldown, addMaxSpeedForwardBonus, addRotationSpeedBonus, impulse, modifiers, threshold=0):
@@ -1089,7 +1089,7 @@ class StanceDanceParams(MechanicsParams):
                  'activeFightReloadSpdBonus', 'activeTurboCost', 'activeTurboDuration',
                  'activeTurboFwdSpdBonusKmh', 'activeTurboBkwdSpdBonusKmh', 'activeTurboEnginePowerBonus',
                  'activeTurboRotationSpeedDebuff', 'activeTurboRammingDmgBonus',
-                 'impulse', 'modifiers')
+                 'impulse')
     MECHANICS_NAME = 'stanceDance'
 
     def __init__(self, timeSwitchStance, maxEnergy, gainFightEnergyPoints, gainTurboEnergyPoints, gainEnergyTime, gainTurboEnergyBonusPoints, gainTurboEnergySpdLimitKmh, passiveFightEnergyBonusPerHit, passiveTurboFwdSpdBonusKmh, passiveTurboBkwdSpdBonusKmh, passiveTurboEnginePowerBonus, passiveTurboAccuracyDebuff, passiveTurboAimSpeedDebuff, passiveTurboStabilizeDebuff, passiveTurboAfterShotDispersionDebuff, activeFightCost, activeFightDuration, activeFightAccuracyBonus, activeFightAimSpeedBonus, activeFightStabilizeBonus, activeFightAfterShotDispersionBonus, activeFightReloadSpdBonus, activeTurboCost, activeTurboDuration, activeTurboFwdSpdBonusKmh, activeTurboBkwdSpdBonusKmh, activeTurboEnginePowerBonus, activeTurboRotationSpeedDebuff, activeTurboRammingDmgBonus, impulse):

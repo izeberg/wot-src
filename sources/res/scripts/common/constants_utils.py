@@ -532,6 +532,10 @@ class AbstractBattleMode(object):
     def _client_hangarEventBannerType(self):
         return
 
+    @property
+    def _client_prebattleCtrlMode(self):
+        return
+
     def registerHangarEventBanner(self):
         if IS_CLIENT:
             if self._client_hangarEventBannerType is not None:
@@ -873,3 +877,7 @@ class AbstractBattleMode(object):
     def registerPrbTypeForWotPlusAssistant(self, loadoutType):
         from gui.game_control.wot_plus_assistant import registerAllowedPrebattleType
         registerAllowedPrebattleType(self._PREBATTLE_TYPE, loadoutType)
+
+    def registerPrebattleCtrlMode(self):
+        from gui.shared.system_factory import registerPrebattleCtrlMode
+        registerPrebattleCtrlMode(self._ARENA_BONUS_TYPE, self._client_prebattleCtrlMode)

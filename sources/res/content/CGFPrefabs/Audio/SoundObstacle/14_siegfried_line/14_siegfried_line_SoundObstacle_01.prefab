@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<version>4</version>
+	<GameObjects>
+		<GameObject>
+			<name>14_siegfried_line_SoundObstacle_01</name>
+			<UUID>45c4e375-5603-42c5-9b61-13f07b60f7a1</UUID>
+			<flags>0</flags>
+		</GameObject>
+	</GameObjects>
+	<components>
+		<ComponentPool>
+			<type>Transform</type>
+			<version>1</version>
+			<component>
+				<UUID>45c4e375-5603-42c5-9b61-13f07b60f7a1</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>BW::SoundObstacleModel</type>
+			<version>1</version>
+			<component>
+				<UUID>45c4e375-5603-42c5-9b61-13f07b60f7a1</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>modelPath</name>
+						<isAsset>true</isAsset>
+						<value>content/Audio/SoundObstacle/14_siegfried_line/14_siegfried_line_SoundObstacle_01.model</value>
+					</property>
+					<property>
+						<name>transmissionLoss</name>
+						<value>100</value>
+					</property>
+					<property>
+						<name>useForDiffraction</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>enableEdgeDiffraction</name>
+						<value>0</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+	</components>
+</root>

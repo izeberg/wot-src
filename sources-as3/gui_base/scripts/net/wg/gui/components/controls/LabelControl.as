@@ -24,7 +24,11 @@ package net.wg.gui.components.controls
       
       private var _owner:UIComponent = null;
       
+      private var _overseer:UIComponent = null;
+      
       private var _tooltip:String = "";
+      
+      private var _tooltipMaxWidth:int = 0;
       
       private var _tooltipType:ToolTipShowType;
       
@@ -53,6 +57,7 @@ package net.wg.gui.components.controls
          }
          this.hitMc = null;
          this._owner = null;
+         this._overseer = null;
          this._tooltipType = null;
          super.onDispose();
       }
@@ -82,6 +87,7 @@ package net.wg.gui.components.controls
                {
                   this.createInfoIco();
                }
+               this._infoIco.tooltipMaxWidth = this._tooltipMaxWidth;
                this._infoIco.tooltip = this._tooltip;
                this._infoIco.icoType = this._infoIcoType;
                this._infoIco.tooltipType = this._tooltipType;
@@ -207,6 +213,21 @@ package net.wg.gui.components.controls
       public function set owner(param1:UIComponent) : void
       {
          this._owner = param1;
+      }
+      
+      public function get belongsTo() : UIComponent
+      {
+         return this._overseer;
+      }
+      
+      public function set belongsTo(param1:UIComponent) : void
+      {
+         this._overseer = param1;
+      }
+      
+      public function set tooltipMaxWidth(param1:int) : void
+      {
+         this._tooltipMaxWidth = param1;
       }
    }
 }

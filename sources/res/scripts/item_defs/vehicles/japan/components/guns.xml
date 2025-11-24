@@ -65,6 +65,7 @@
 		<_120mm_Type_60_Gun>63</_120mm_Type_60_Gun>
 		<_120mm_Type_71_Gun>64</_120mm_Type_71_Gun>
 		<_105mm_Gun_Type_91>68</_105mm_Gun_Type_91>
+		<Rensouhou_127_mm_Type_89>71</Rensouhou_127_mm_Type_89>
 		<_105mm_Cannon_Type_92_SP>72</_105mm_Cannon_Type_92_SP>
 		<_105mm_Gun_Type_52>73</_105mm_Gun_Type_52>
 		<_90mm_Gun_Type_61_MHI>2000</_90mm_Gun_Type_61_MHI>
@@ -8589,6 +8590,115 @@
 				</_120mm_HE_Commerce_Raid>
 			</shots>
 		</_120mm_Short_Barrel_Gun>
+		<Rensouhou_127_mm_Type_89>
+			<userString>#japan_vehicles:Rensouhou_127_mm_Type_89</userString>
+			<tags/>
+			<level>9</level>
+			<price>200000</price>
+			<notInShop>true</notInShop>
+			<impulse>
+				0.38
+				<!--BW_String-->
+			</impulse>
+			<recoil>
+				<lodDist>MEDIUM</lodDist>
+				<amplitude>
+					0.65
+					<!--BW_String-->
+				</amplitude>
+				<recoilEffect>large</recoilEffect>
+			</recoil>
+			<effects>shot_largeext</effects>
+			<reloadEffect>dualgun_reload115_152</reloadEffect>
+			<pitchLimits>
+				<minPitch>
+					0.0 -15.0 1.0 -15.0
+					<!--BW_String-->
+				</minPitch>
+				<maxPitch>
+					0.0 8.0 1.0 8.0
+					<!--BW_String-->
+				</maxPitch>
+			</pitchLimits>
+			<turretYawLimits>-180 180</turretYawLimits>
+			<rotationSpeed>20</rotationSpeed>
+			<reloadTime>
+				13.5
+				<!--BW_String-->
+			</reloadTime>
+			<maxAmmo>50</maxAmmo>
+			<aimingTime>
+				2.3
+				<!--BW_String-->
+			</aimingTime>
+			<weight>6200</weight>
+			<maxHealth>200</maxHealth>
+			<maxRegenHealth>100</maxRegenHealth>
+			<repairCost>9</repairCost>
+			<invisibilityFactorAtShot>
+				0.1
+				<!--BW_String-->
+			</invisibilityFactorAtShot>
+			<shotDispersionRadius>
+				0.35
+				<!--BW_String-->
+			</shotDispersionRadius>
+			<shotDispersionFactors>
+				<turretRotation>
+					0.12
+					<!--BW_String-->
+				</turretRotation>
+				<afterShot>
+					3.0
+					<!--BW_String-->
+				</afterShot>
+				<whileGunDamaged>
+					2.0
+					<!--BW_String-->
+				</whileGunDamaged>
+			</shotDispersionFactors>
+			<shots>
+				<_127mm_Common_AP_DB>
+					<defaultPortion>
+						0.75
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>950</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>265 230</piercingPower>
+				</_127mm_Common_AP_DB>
+				<_127mm_Common_AP_2_DB>
+					<defaultPortion>
+						0.00
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>1100</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>305 265</piercingPower>
+				</_127mm_Common_AP_2_DB>
+				<_127mm_Common_HE_DB>
+					<defaultPortion>
+						0.25
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>900</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>80 80</piercingPower>
+				</_127mm_Common_HE_DB>
+			</shots>
+		</Rensouhou_127_mm_Type_89>
 		<_127mm_Gun_Type_89_J>
 			<userString>#japan_vehicles:_127mm_Gun_Type_89_J</userString>
 			<tags/>

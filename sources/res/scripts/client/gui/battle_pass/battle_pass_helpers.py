@@ -389,14 +389,14 @@ def _updateServerSettings(data):
 def showFinalRewardPreviewBattlePassState(chapterID, bonusID=None, level=None, itemsCache=None):
     from gui.Scaleform.daapi.view.lobby.storage.storage_helpers import getVehicleCDForStyle
     styleInfo = getStyleForChapter(chapterID) if bonusID is None else itemsCache.items.getItemByCD(bonusID)
-    vehicleCD = getVehicleCDForStyle(styleInfo)
-    if styleInfo is not None and styleInfo.isProgression:
+    vehicleCD = getVehicleCDForStyle(styleInfo) if styleInfo is not None else None
+    allRewardTypes = getAllFinalRewards(chapterID)
+    if FinalReward.PROGRESSIVE_STYLE in allRewardTypes:
         showBattlePassStyleProgressionPreview(vehicleCD, styleInfo, styleInfo.getDescription(), chapterId=chapterID, styleLevel=int(level or styleInfo.getProgressionLevel() or 1))
         return
     else:
         previewItemPack = (
          ItemPackEntry(type=ItemPackType.CREW_100, groupID=1),)
-        allRewardTypes = getAllFinalRewards(chapterID)
         if not bonusID and FinalReward.VEHICLE in allRewardTypes:
             vehicle, style = getVehicleInfoForChapter(chapterID, awardSource=BattlePassConsts.REWARD_BOTH)
             if styleInfo is not None:

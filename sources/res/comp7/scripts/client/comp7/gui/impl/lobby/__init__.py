@@ -11,6 +11,7 @@ def registerComp7Lobby():
     from comp7.gui.Scaleform.daapi.view.lobby.rally.action_button_state_vo import unitRestrictionsGetter
     from comp7.gui.game_control.award_controller import Comp7QuestRewardHandler, Comp7InvoiceRewardHandler, Comp7PunishWindowHandler
     from comp7.gui.hangar_presets.comp7_dynamic_gui_provider import getComp7BattleModifiers
+    from comp7.gui.impl.lobby.user_missions.hangar_widget.event_banners.comp7_tournament_banner import Comp7TournamentBanner
     from comp7.notification.actions_handlers import Comp7OpenPunishmentWindowHandler
     from comp7.notification.listeners import Comp7OfferTokenListener
     from comp7.web.web_client_api import Comp7WebApi, Comp7OpenWindowWebApi
@@ -33,6 +34,7 @@ def registerComp7Lobby():
     from gui.impl.lobby.common.lobby_header_utils import registerFightButtonTooltipGetter
     from gui.impl.lobby.crew.widget.crew_widget import CrewWidget
     from gui.impl.gen.view_models.views.lobby.crew.common.crew_widget_model import SlotSizeMode
+    from gui.impl.lobby.user_missions.hangar_widget.event_banners.event_banners_container import EventBannersContainer
     from messenger.formatters.service_channel import AchievementFormatter
     from notification.actions_handlers import _AVAILABLE_HANDLERS, _OpenPunishmentWindowHandler
     from web.web_client_api.ui import OpenWindowWebApi
@@ -64,6 +66,7 @@ def registerComp7Lobby():
      'comp7_4_yearly_gold',
      'comp7_4_yearly_champion',
      'comp7_4_yearly_legend'})
+    EventBannersContainer().registerEventBanner(Comp7TournamentBanner)
 
 
 def _fightButtonTooltipGetter(pValidation):

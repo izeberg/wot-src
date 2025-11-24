@@ -50,7 +50,6 @@ from gui.shared.utils import decorators
 from gui.shared.utils.functions import makeTooltip
 from gui.shared.utils.requesters.ItemsRequester import REQ_CRITERIA
 from gui.sounds.filters import States, StatesGroup
-from gui.tournament.tournament_helpers import isTournamentEnabled
 from helpers import dependency
 from helpers.CallbackDelayer import CallbackDelayer
 from helpers.i18n import makeString as _ms
@@ -242,8 +241,6 @@ class Hangar(LobbySelectableView, HangarMeta, IGlobalListener):
         self.epicController.onPrimeTimeStatusUpdated += self.__onEpicBattleUpdated
         self.epicController.onGameModeStatusTick += self.__updateAlertMessage
         self._promoController.onNewTeaserReceived += self.__onTeaserReceived
-        self.__comp7Controller.onTournamentBannerStateChanged += self.__updateComp7TournamentWidget
-        self.__comp7Controller.onGrandTournamentBannerAvailabilityChanged += self.__updateComp7GrandTournamentWidget
         self.hangarSpace.lockVehicleSelectable(self)
         self.__lootBoxes.onStatusChanged += self.__onLootBoxesStatusChanged
         g_prbCtrlEvents.onVehicleClientStateChanged += self.__onVehicleClientStateChanged
@@ -298,8 +295,6 @@ class Hangar(LobbySelectableView, HangarMeta, IGlobalListener):
         self.epicController.onPrimeTimeStatusUpdated -= self.__onEpicBattleUpdated
         self.epicController.onGameModeStatusTick -= self.__updateAlertMessage
         self._promoController.onNewTeaserReceived -= self.__onTeaserReceived
-        self.__comp7Controller.onTournamentBannerStateChanged -= self.__updateComp7TournamentWidget
-        self.__comp7Controller.onGrandTournamentBannerAvailabilityChanged -= self.__updateComp7GrandTournamentWidget
         if self.__teaser is not None:
             self.__teaser.stop()
             self.__teaser = None
@@ -455,8 +450,6 @@ class Hangar(LobbySelectableView, HangarMeta, IGlobalListener):
         self.__updateCrew()
         self.__hangarGuiCtrl.sfController.updateComponentsVisibility()
         self.__updatePrestigeProgressWidget()
-        self.__updateComp7TournamentWidget()
-        self.__updateComp7GrandTournamentWidget()
         self.__updateAlertMessage()
         Waiting.hide('updateVehicle')
 
@@ -539,8 +532,6 @@ class Hangar(LobbySelectableView, HangarMeta, IGlobalListener):
         self.__switchCarousels()
         self.__hangarGuiCtrl.sfController.updateComponentsVisibility()
         self.__updatePrestigeProgressWidget()
-        self.__updateComp7TournamentWidget()
-        self.__updateComp7GrandTournamentWidget()
         self.__updateAlertMessage()
         self.__updateIsComp7SpaceLoaded()
         self.__updateCrew()
@@ -619,16 +610,6 @@ class Hangar(LobbySelectableView, HangarMeta, IGlobalListener):
 
     def __updateIsComp7SpaceLoaded(self):
         self.as_setComp7SpaceLoadedS(self.__comp7Controller.isModePrbActive())
-
-    @ifComponentAvailable(HANGAR_CONSTS.COMP7_TOURNAMENT_BANNER)
-    def __updateComp7TournamentWidget(self):
-        isBannerVisible = self.__comp7Controller.isTournamentBannerEnabled and isTournamentEnabled()
-        self.as_setEventTournamentBannerVisibleS(HANGAR_ALIASES.COMP7_TOURNAMENT_BANNER, isBannerVisible)
-
-    @ifComponentAvailable(HANGAR_CONSTS.COMP7_GRAND_TOURNAMENT_BANNER)
-    def __updateComp7GrandTournamentWidget(self):
-        isBannerVisible = self.__comp7Controller.isGrandTournamentBannerEnabled
-        self.as_setEventTournamentBannerVisibleS(HANGAR_ALIASES.COMP7_GRAND_TOURNAMENT_BANNER, isBannerVisible)
 
     @ifComponentAvailable(HANGAR_CONSTS.PRESTIGE_WIDGET)
     def __updatePrestigeProgressWidget(self):

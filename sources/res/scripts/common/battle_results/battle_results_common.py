@@ -778,7 +778,11 @@ BATTLE_RESULTS = [
  (
   'commendationsReceived', int, 0, None, 'skip', ENTRY_TYPE.ACCOUNT_SELF),
  (
-  'commendationsSent', int, 0, None, 'skip', ENTRY_TYPE.ACCOUNT_SELF)]
+  'commendationsSent', int, 0, None, 'skip', ENTRY_TYPE.ACCOUNT_SELF),
+ (
+  'petSystemCredits', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_SELF),
+ (
+  'petSystemCreditsFactor100', int, 0, None, 'skip', ENTRY_TYPE.VEHICLE_SELF)]
 BATTLE_PASS_RESULTS = [
  (
   'bpChaptersInfo', dict, {}, None, 'skip', ENTRY_TYPE.ACCOUNT_ALL),

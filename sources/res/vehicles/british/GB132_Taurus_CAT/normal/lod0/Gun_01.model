@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-0.136000 -0.192173 0.191694</min>
+		<max>0.136000 0.080184 3.684049</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/british/GB132_Taurus_CAT/normal/lod0/Gun_01</nodefullVisual>
+	<parent>vehicles/british/GB132_Taurus_CAT/normal/lod1/Gun_01</parent>
+	<extent>32.000000</extent>
+</root>

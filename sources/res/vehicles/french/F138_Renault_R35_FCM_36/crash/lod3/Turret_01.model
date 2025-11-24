@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/french/F138_Renault_R35_FCM_36/crash/lod3/Turret_01</nodefullVisual>
+	<parent>vehicles/french/F138_Renault_R35_FCM_36/crash/lod4/Turret_01</parent>
+	<extent>192.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.600116 -0.010193 -1.358981</min>
+		<max>0.590847 0.729657 0.782566</max>
+	</visibilityBox>
+</root>

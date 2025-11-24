@@ -938,8 +938,8 @@ msgstr ""
 
 msgid "tooltip/missionsCategory/footer"
 msgstr ""
-"{{@ split}}{{@ colorLegacy 'b2afab'}}{{operationName}}{{/}} operation "
-"missions can only be completed in Tier {{@ colorLegacy "
+"{{@ colorLegacy 'b2afab'}}{{operationName}}{{/}} operation missions can only"
+" be completed in Tier {{@ colorLegacy "
 "'b2afab'}}{{minLevel}}-{{maxLevel}}{{/}} vehicles."
 
 msgid "tooltip/missionsCategory/innerBlock/description/assault"

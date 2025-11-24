@@ -8,11 +8,11 @@ from account_shared import LayoutIterator
 from adisp import adisp_async, adisp_process
 from battle_pass_common import BATTLE_PASS_PDATA_KEY
 from constants import CustomizationInvData, SkinInvData
-from debug_utils import LOG_DEBUG, LOG_WARNING, LOG_NOTE
+from debug_utils import LOG_DEBUG, LOG_NOTE, LOG_WARNING
 from dossiers2.ui.achievements import BADGES_BLOCK
 from goodies.goodie_constants import GOODIE_STATE
 from gui.game_loading.resources.consts import Milestones
-from gui.shared.gui_items import GUI_ITEM_TYPE, GUI_ITEM_TYPE_NAMES, ItemsCollection, getVehicleSuitablesByType, checkForTags
+from gui.shared.gui_items import GUI_ITEM_TYPE, GUI_ITEM_TYPE_NAMES, ItemsCollection, checkForTags, getVehicleSuitablesByType
 from gui.shared.gui_items.Vehicle import VEHICLE_TAGS
 from gui.shared.gui_items.gui_item_economics import ITEM_PRICE_EMPTY
 from gui.shared.utils.requesters import vehicle_items_getter
@@ -21,12 +21,12 @@ from helpers import dependency, isPlayerAvatar
 from items import getTypeOfCompactDescr, makeIntCompactDescrByID, tankmen, vehicles
 from items.components.c11n_constants import CustomizationDisplayType, SeasonType
 from items.components.crew_skins_constants import CrewSkinType
-from nation_change.nation_change_helpers import isMainInNationGroupSafe, iterVehTypeCDsInNationGroup, iterVehiclesWithNationGroupInOrder
+from nation_change.nation_change_helpers import isMainInNationGroupSafe, iterVehiclesWithNationGroupInOrder, iterVehTypeCDsInNationGroup
 from shared_utils.account_helpers.diff_utils import synchronizeDicts
 from skeletons.gui.game_control import IVehiclePostProgressionController
 from skeletons.gui.shared import IItemsCache, IItemsRequester
 from skeletons.gui.shared.gui_items import IGuiItemsFactory
-from gui.shared.system_factory import collectGuiItemsCacheInvalidators, GuiItemsCacheInvalidatorParams
+from gui.shared.system_factory import GuiItemsCacheInvalidatorParams, collectGuiItemsCacheInvalidators
 from wg_async import wg_async, wg_await, distributeLoopOverTicks
 if TYPE_CHECKING:
     from typing import Optional, Dict, List
@@ -353,7 +353,7 @@ class REQ_CRITERIA(object):
     class RECRUIT(object):
         ROLES = staticmethod(lambda roles=tankmen.ROLES: RequestCriteria(PredicateCondition(--- This code section failed: ---
 
- L. 613         0  LOAD_FAST             0  'item'
+ L. 610         0  LOAD_FAST             0  'item'
                 3  LOAD_ATTR             0  'getRoles'
                 6  CALL_FUNCTION_0       0  None
                 9  POP_JUMP_IF_FALSE    53  'to 53'
@@ -477,7 +477,7 @@ class ItemsRequester(IItemsRequester):
     _AccountItem = namedtuple('_AccountItem', ['dossier', 'clanInfo', 'seasons', 'ranked',
      'dogTag', 'battleRoyaleStats', 'wtr', 'layout', 'layoutState'])
 
-    def __init__(self, inventory, stats, dossiers, goodies, shop, recycleBin, vehicleRotation, ranked, battleRoyale, badges, epicMetaGame, tokens, festivityRequester, blueprints=None, sessionStatsRequester=None, anonymizerRequester=None, battlePassRequester=None, giftSystemRequester=None, gameRestrictionsRequester=None, achievements20Requester=None):
+    def __init__(self, inventory, stats, dossiers, goodies, shop, recycleBin, vehicleRotation, ranked, battleRoyale, badges, epicMetaGame, tokens, festivityRequester, blueprints=None, sessionStatsRequester=None, anonymizerRequester=None, battlePassRequester=None, giftSystemRequester=None, gameRestrictionsRequester=None, achievements20Requester=None, petSystemRequester=None):
         self.__inventory = inventory
         self.__stats = stats
         self.__dossiers = dossiers
@@ -498,6 +498,7 @@ class ItemsRequester(IItemsRequester):
         self.__giftSystem = giftSystemRequester
         self.__gameRestrictions = gameRestrictionsRequester
         self.__achievements20 = achievements20Requester
+        self.__petSystem = petSystemRequester
         self.__itemsCache = defaultdict(dict)
         self.__brokenSyncAlreadyLoggedTypes = set()
         self.__fittingItemRequesters = {
@@ -588,6 +589,10 @@ class ItemsRequester(IItemsRequester):
         return self.__achievements20
 
     @property
+    def petSystem(self):
+        return self.__petSystem
+
+    @property
     def tankmenStatsCache(self):
         return self.__tankmenStatsCache
 
@@ -631,12 +636,13 @@ class ItemsRequester(IItemsRequester):
         yield wg_await(self.__giftSystem.request())
         yield wg_await(self.__gameRestrictions.request())
         yield wg_await(self.__achievements20.request())
+        yield wg_await(self.__petSystem.request())
         Waiting.hide('download/common')
         self.__brokenSyncAlreadyLoggedTypes.clear()
 
     def isSynced--- This code section failed: ---
 
- L.1065         0  LOAD_FAST             0  'self'
+ L.1070         0  LOAD_FAST             0  'self'
                 3  LOAD_ATTR             0  '__blueprints'
                 6  LOAD_CONST               None
                 9  COMPARE_OP            9  is-not
@@ -1004,6 +1010,7 @@ Parse error at or near `None' instruction at offset -1
 
     def getItems(self, itemTypeID=None, criteria=REQ_CRITERIA.EMPTY, nationID=None, onlyWithPrices=True, limit=None):
         result = ItemsCollection()
+        playerIsAvatar = isPlayerAvatar()
         if not isinstance(itemTypeID, tuple):
             itemTypeID = (
              itemTypeID,)
@@ -1025,7 +1032,7 @@ Parse error at or near `None' instruction at offset -1
                 for intCD in vehicle_items_getter.getItemsIterator(self.__shop.getItemsData(), nationID=nationID, itemTypeID=typeID, onlyWithPrices=onlyWithPrices):
                     if protector is not None and protector.isTriggered(intCD):
                         continue
-                    item = itemGetter(intCD)
+                    item = itemGetter(intCD, playerIsAvatar)
                     if criteria(item):
                         result[intCD] = item
                     if limit is not None and len(result) >= limit:
@@ -1151,10 +1158,16 @@ Parse error at or near `None' instruction at offset -1
     def getBadgeByID(self, badgeID):
         return self.__makeBadge(badgeID)
 
-    def getItemByCD(self, typeCompDescr):
+    def getItemByCD(self, typeCompDescr, playerIsAvatar=None):
         if getTypeOfCompactDescr(typeCompDescr) == GUI_ITEM_TYPE.VEHICLE:
-            return self.__makeVehicle(typeCompDescr)
-        return self.__makeSimpleItem(typeCompDescr)
+            return self.__makeVehicle(typeCompDescr, playerIsAvatar=playerIsAvatar)
+        return self.__makeSimpleItem(typeCompDescr, playerIsAvatar=playerIsAvatar)
+
+    def getTypedItemsByCDs(self, itemType, itemCDs):
+        if itemType == GUI_ITEM_TYPE.VEHICLE:
+            return [ self.__makeVehicle(itemCD) for itemCD in itemCDs
+                   ]
+        return self.__makeSimpleItemsByType(itemType, itemCDs)
 
     def getItem(self, itemTypeID, nationID, innationID):
         typeCompDescr = vehicles.makeIntCompactDescrByID(GUI_ITEM_TYPE_NAMES[itemTypeID], nationID, innationID)
@@ -1327,12 +1340,13 @@ Parse error at or near `None' instruction at offset -1
     def __getVehicleDossierDescr(self, vehTypeCompDescr):
         return dossiers2.getVehicleDossierDescr(self.__dossiers.getVehicleDossier(vehTypeCompDescr))
 
-    def __makeItem(self, itemTypeIdx, uid, *args, **kwargs):
+    def __makeItem(self, itemTypeIdx, uid, playerIsAvatar=None, *args, **kwargs):
         container = self.__itemsCache[itemTypeIdx]
         if uid in container:
             return container[uid]
         else:
-            if not isPlayerAvatar():
+            isAvatar = playerIsAvatar if playerIsAvatar is not None else isPlayerAvatar()
+            if not isAvatar:
                 self.__checkFittingItemsSync(itemTypeIdx)
             item = self.itemsFactory.createGuiItem(itemTypeIdx, *args, **kwargs)
             if item is not None:
@@ -1348,7 +1362,7 @@ Parse error at or near `None' instruction at offset -1
                 del self.__vehCustomStateCache[uid]
         return
 
-    def __makeVehicle(self, typeCompDescr, vehInvData=None):
+    def __makeVehicle(self, typeCompDescr, vehInvData=None, playerIsAvatar=None):
         container = self.__itemsCache[GUI_ITEM_TYPE.VEHICLE]
         if typeCompDescr in container:
             return container[typeCompDescr]
@@ -1356,8 +1370,8 @@ Parse error at or near `None' instruction at offset -1
             vehInvData = vehInvData or self.__inventory.getItemData(typeCompDescr)
             vehExtData = self.__inventory.getVehExtData(typeCompDescr)
             if vehInvData is not None:
-                return self.__makeItem(GUI_ITEM_TYPE.VEHICLE, typeCompDescr, strCompactDescr=vehInvData.compDescr, inventoryID=vehInvData.invID, typeCompDescr=typeCompDescr, proxy=self, extData=vehExtData)
-            return self.__makeItem(GUI_ITEM_TYPE.VEHICLE, typeCompDescr, typeCompDescr=typeCompDescr, proxy=self, extData=vehExtData)
+                return self.__makeItem(GUI_ITEM_TYPE.VEHICLE, typeCompDescr, strCompactDescr=vehInvData.compDescr, inventoryID=vehInvData.invID, typeCompDescr=typeCompDescr, proxy=self, extData=vehExtData, playerIsAvatar=playerIsAvatar)
+            return self.__makeItem(GUI_ITEM_TYPE.VEHICLE, typeCompDescr, typeCompDescr=typeCompDescr, proxy=self, extData=vehExtData, playerIsAvatar=playerIsAvatar)
 
     def __makeTankman(self, tmanInvID, tmanInvData=None):
         tmanInvData = tmanInvData or self.__inventory.getTankmanData(tmanInvID)
@@ -1373,8 +1387,25 @@ Parse error at or near `None' instruction at offset -1
         strCD, dismissedAt = tmanData
         return self.__makeItem(GUI_ITEM_TYPE.TANKMAN, tmanID, strCompactDescr=strCD, inventoryID=tmanID, proxy=self, dismissedAt=dismissedAt)
 
-    def __makeSimpleItem(self, typeCompDescr):
-        return self.__makeItem(getTypeOfCompactDescr(typeCompDescr), typeCompDescr, intCompactDescr=typeCompDescr, proxy=self)
+    def __makeSimpleItem(self, typeCompDescr, playerIsAvatar=None):
+        return self.__makeItem(getTypeOfCompactDescr(typeCompDescr), typeCompDescr, intCompactDescr=typeCompDescr, proxy=self, playerIsAvatar=playerIsAvatar)
+
+    def __makeSimpleItemsByType(self, itemType, typeCompDescrs):
+        if not isPlayerAvatar():
+            self.__checkFittingItemsSync(itemType)
+        items = []
+        compDescrs = []
+        container = self.__itemsCache[itemType]
+        for compDescr in typeCompDescrs:
+            if compDescr in container:
+                items.append(container[compDescr])
+            else:
+                compDescrs.append(compDescr)
+
+        createdItems = self.itemsFactory.createGuiItemsOfSameType(itemType, compDescrs, proxy=self)
+        container.update(dict(zip(compDescrs, createdItems)))
+        items.extend(createdItems)
+        return items
 
     def __makeBadge(self, badgeID, badgeData=None, receivedBadges=None):
         if badgeData is None:

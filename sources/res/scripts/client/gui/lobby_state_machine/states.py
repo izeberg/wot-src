@@ -8,7 +8,8 @@ from frameworks.state_machine.visitor import isDescendantOf, getLCA
 from frameworks.wulf import WindowStatus
 from gui.Scaleform.framework import ScopeTemplates
 from gui.Scaleform.framework.ScopeTemplates import SimpleScope
-from gui.Scaleform.framework.entities.View import ViewKey
+from gui.Scaleform.framework.entities.View import ViewKey, View
+from gui.Scaleform.framework.entities.wulf_adapter import WulfPackageLayoutAdapter
 from gui.Scaleform.framework.managers.loaders import SFViewLoadParams, GuiImplViewLoadParams
 from gui.impl import backport
 from gui.impl.gen import R
@@ -27,7 +28,8 @@ EMPTY_STATE_ID_ENDING = 'empty'
 
 class LobbyStateFlags(StateFlags):
     HANGAR = StateFlags.MAX << 1
-    MAX = HANGAR
+    POST_BATTLE_RESULTS = HANGAR << 1
+    MAX = POST_BATTLE_RESULTS
 
 
 class LobbyStateDescription(object):
@@ -156,10 +158,10 @@ class LobbyState(State):
         window = uiLoader.windowsManager.getWindow(uniqueWindowId)
         if not compareViewKeys(window.content, self.getViewKey()):
             return
-        if isinstance(window.content, ViewImpl):
-            self._onViewExternallyDestroyed()
-        else:
+        if isinstance(window.content, (View, WulfPackageLayoutAdapter)):
             window.content.onDisposed += WeakMethodProxy(self.__shouldDisposeView)
+        else:
+            self._onViewExternallyDestroyed()
 
 
 class ViewLobbyState(LobbyState):
@@ -202,7 +204,7 @@ class GuiImplViewLobbyState(LobbyState):
 
     def _focusView(self, view, event):
         parentWindow = view.getParentWindow()
-        if not parentWindow.isFocused:
+        if not parentWindow.isFocused and not parentWindow.isHidden():
             parentWindow.tryFocus()
 
 

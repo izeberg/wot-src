@@ -131,37 +131,37 @@ package net.wg.gui.lobby.settings
          return this._toolTipMapping[param1];
       }
       
-      protected function trySetLabel(param1:String, param2:String = "", param3:String = "") : void
+      protected function trySetLabel(param1:String, param2:SettingsControlProp, param3:String = "", param4:String = "") : void
       {
-         var _loc4_:String = null;
-         var _loc5_:LabelControl = null;
-         var _loc6_:TextField = null;
-         var _loc7_:CheckBox = null;
+         var _loc5_:String = null;
+         var _loc6_:LabelControl = null;
+         var _loc7_:TextField = null;
+         var _loc8_:CheckBox = null;
          if(this._data[param1])
          {
-            _loc4_ = Values.EMPTY_STR;
+            _loc5_ = Values.EMPTY_STR;
             if(this._data[param1].current != null)
             {
-               _loc4_ = SettingsConfigHelper.LOCALIZATION + param2 + param1 + param3;
+               _loc5_ = SettingsConfigHelper.LOCALIZATION + param3 + param1 + param4;
             }
             if(this._data[param1].hasLabel && this[param1 + SettingsConfigHelper.TYPE_LABEL])
             {
                if(this[param1 + SettingsConfigHelper.TYPE_LABEL] is LabelControl)
                {
-                  _loc5_ = this[param1 + SettingsConfigHelper.TYPE_LABEL];
-                  _loc5_.text = _loc4_;
-                  _loc5_.visible = true;
+                  _loc6_ = this[param1 + SettingsConfigHelper.TYPE_LABEL];
+                  _loc6_.text = _loc5_;
+                  _loc6_.visible = _loc6_.belongsTo != null ? Boolean(_loc6_.belongsTo.visible) : Boolean(true);
                }
                else
                {
-                  _loc6_ = this[param1 + SettingsConfigHelper.TYPE_LABEL];
-                  _loc6_.text = _loc4_;
+                  _loc7_ = this[param1 + SettingsConfigHelper.TYPE_LABEL];
+                  _loc7_.text = _loc5_;
                }
             }
             else if(this[param1 + SettingsConfigHelper.TYPE_CHECKBOX] && this[param1 + SettingsConfigHelper.TYPE_CHECKBOX].label == Values.EMPTY_STR)
             {
-               _loc7_ = this[param1 + SettingsConfigHelper.TYPE_CHECKBOX];
-               _loc7_.label = _loc4_;
+               _loc8_ = this[param1 + SettingsConfigHelper.TYPE_CHECKBOX];
+               _loc8_.label = _loc5_;
             }
          }
       }
@@ -174,7 +174,7 @@ package net.wg.gui.lobby.settings
       {
       }
       
-      protected final function findSelectedIndexForDD(param1:Number, param2:Array) : Number
+      protected final function findSelectedIndexForDD(param1:Object, param2:Array) : Number
       {
          var _loc3_:int = 0;
          var _loc4_:int = param2.length;

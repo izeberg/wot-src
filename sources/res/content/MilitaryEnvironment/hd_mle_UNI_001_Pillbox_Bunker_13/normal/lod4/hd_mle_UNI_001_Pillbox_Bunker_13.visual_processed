@@ -8,6 +8,33 @@
 			<row2>0.000000 0.000000 1.000000</row2>
 			<row3>0.000000 0.000000 0.000000</row3>
 		</transform>
+		<node>
+			<identifier>hd_mle_UNI_001_Pillbox_Bunker_13</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>lod0</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.000000 0.000000</row3>
+				</transform>
+				<node>
+					<identifier>s_wall0</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+			</node>
+		</node>
 	</node>
 	<renderSet>
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
@@ -15,6 +42,7 @@
 		<geometry>
 			<vertices>vertices</vertices>
 			<stream>uv2</stream>
+			<stream>colour</stream>
 			<primitive>indices</primitive>
 			<primitiveGroup>
 				0
@@ -47,11 +75,24 @@
 						diffuseMap2
 						<Texture>content/MilitaryEnvironment/hd_mle_UNI_001_Pillbox_Bunker_13/hd_mle_UNI_001_Pillbox_Bunker_13_gun_AM2.dds</Texture>
 					</property>
+					<property>
+						g_vertexColorMode
+						<Int>3</Int>
+					</property>
 				</material>
 				<groupOrigin>0.051177 5.901567 -2.661343</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				1
+				<material>
+					<identifier>s_wall_0</identifier>
+					<collisionFlags>128</collisionFlags>
+					<materialKind>111</materialKind>
+				</material>
+				<groupOrigin>0.141069 6.538685 -5.404708</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				2
 				<material>
 					<identifier>s_nd1</identifier>
 					<collisionFlags>0</collisionFlags>
@@ -76,15 +117,6 @@
 				</material>
 				<groupOrigin>-6.057544 2.924741 -4.881387</groupOrigin>
 			</primitiveGroup>
-			<primitiveGroup>
-				2
-				<material>
-					<identifier>s_wall_0</identifier>
-					<collisionFlags>128</collisionFlags>
-					<materialKind>111</materialKind>
-				</material>
-				<groupOrigin>0.141069 6.538685 -5.404708</groupOrigin>
-			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
@@ -92,5 +124,5 @@
 		<max>18.304575 11.994062 13.417760</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>24934</geometrySize>
+	<geometrySize>27206</geometrySize>
 </root>

@@ -2285,7 +2285,7 @@
 						<!--BW_String-->
 					</segmentLength>
 					<segmentOffset>
-						-0.022
+						0.04
 						<!--BW_String-->
 					</segmentOffset>
 					<atlas>
@@ -2423,12 +2423,15 @@
 						</segmentSyncPivotOffset>
 						<sync>
 							<name>WD_L1</name>
-							<startAngle>-137.380005</startAngle>
+							<startAngle>-38.996151</startAngle>
 							<teethCount>13</teethCount>
 						</sync>
 						<sync>
 							<name>WD_L0</name>
-							<startAngle>-134.438995</startAngle>
+							<startAngle>
+								-104.95752
+								<!--BW_String-->
+							</startAngle>
 							<teethCount>13</teethCount>
 						</sync>
 					</teethSyncs>
@@ -2894,7 +2897,7 @@
 						</segmentSyncPivotOffset>
 						<sync>
 							<name>WD_R1</name>
-							<startAngle>-137.371002</startAngle>
+							<startAngle>-71.420639</startAngle>
 							<teethCount>13</teethCount>
 						</sync>
 						<sync>

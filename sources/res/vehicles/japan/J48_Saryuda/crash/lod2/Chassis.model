@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/japan/J48_Saryuda/crash/lod3/Chassis</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.600676 -0.000001 -3.778988</min>
+		<max>1.601156 1.200158 3.528291</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/japan/J48_Saryuda/crash/lod2/Chassis</nodefullVisual>
+</root>

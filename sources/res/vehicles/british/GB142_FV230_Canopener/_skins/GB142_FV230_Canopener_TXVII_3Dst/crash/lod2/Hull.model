@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<nodefullVisual>vehicles/british/GB142_FV230_Canopener/_skins/GB142_FV230_Canopener_TXVII_3Dst/crash/lod2/Hull</nodefullVisual>
 	<parent>vehicles/british/GB142_FV230_Canopener/_skins/GB142_FV230_Canopener_TXVII_3Dst/crash/lod3/Hull</parent>
 	<extent>96.000000</extent>
 	<visibilityBox>
@@ -8,4 +7,5 @@
 		<max>2.031456 0.919869 3.769169</max>
 	</visibilityBox>
 	<tank>true</tank>
+	<nodefullVisual>vehicles/british/GB142_FV230_Canopener/_skins/GB142_FV230_Canopener_TXVII_3Dst/crash/lod2/Hull</nodefullVisual>
 </root>

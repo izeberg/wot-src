@@ -1614,15 +1614,6 @@ msgstr "WoT Plus manageable XP multiplier is available"
 msgid "serviceChannelMessages/additionalXP/unavailable/title"
 msgstr "WoT Plus manageable XP multiplier is unavailable"
 
-msgid "serviceChannelMessages/adventCalendar/reward/button"
-msgstr "Claim Reward"
-
-msgid "serviceChannelMessages/adventCalendar/reward/description"
-msgstr "Open Calendar doors every day and receive gifts."
-
-msgid "serviceChannelMessages/adventCalendar/reward/header"
-msgstr "Advent Calendar Gift Available!"
-
 msgid "serviceChannelMessages/autoBoosterErrorNoWallet"
 msgstr ""
 "Failed to resupply consumables on the %s. All your gold will be available "
@@ -2189,6 +2180,9 @@ msgstr "%(name)s (x%(count)s)"
 
 msgid "serviceChannelMessages/battleResults/quests/personal_missions_points"
 msgstr "Campaign Points: %(count)s"
+
+msgid "serviceChannelMessages/battleResults/quests/pets"
+msgstr "Pets received"
 
 msgid "serviceChannelMessages/battleResults/quests/premium"
 msgstr "Days of Wargaming Premium Account added"

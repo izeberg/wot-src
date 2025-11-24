@@ -6323,6 +6323,9 @@ msgstr "?empty?"
 msgid "camouflage/pub_west_charity_2/label"
 msgstr "Heart of Gold"
 
+msgid "camouflage/pub_west_ebr_racing/label"
+msgstr "Racing Stripes"
+
 msgid "camouflage/pub_west_germany_reunification_2025/description"
 msgstr "?empty?"
 
@@ -6647,6 +6650,12 @@ msgstr "?empty?"
 msgid "camouflage/shreder/label"
 msgstr "Oroku Saki"
 
+msgid "camouflage/snowy_climb/description"
+msgstr "?empty?"
+
+msgid "camouflage/snowy_climb/label"
+msgstr "Snowy Climb"
+
 msgid "camouflage/solo_dday_2024/description"
 msgstr ""
 "A camouflage inspired by Allied vehicles at the Normandy landings of 1944."
@@ -6853,6 +6862,12 @@ msgstr "?empty?"
 
 msgid "camouflage/tankfest_2025/label"
 msgstr "Urban Ops"
+
+msgid "camouflage/tankmas_2025/description"
+msgstr "?empty?"
+
+msgid "camouflage/tankmas_2025/label"
+msgstr "Panettone Parade"
 
 msgid "camouflage/tanksmen_day/description"
 msgstr ""
@@ -7971,6 +7986,36 @@ msgstr "?empty?"
 msgid "camouflage/well_deserved_award_2023_1/label"
 msgstr "Sweet Memory"
 
+msgid "camouflage/well_deserved_reward_2025_1/description"
+msgstr "The first level of camouflage awarded with the Old Hand style."
+
+msgid "camouflage/well_deserved_reward_2025_1/label"
+msgstr "Old Hand I"
+
+msgid "camouflage/well_deserved_reward_2025_2/description"
+msgstr "The second level of camouflage awarded with the Old Hand style."
+
+msgid "camouflage/well_deserved_reward_2025_2/label"
+msgstr "Old Hand II"
+
+msgid "camouflage/well_deserved_reward_2025_3/description"
+msgstr "The third level of camouflage awarded with the Old Hand style."
+
+msgid "camouflage/well_deserved_reward_2025_3/label"
+msgstr "Old Hand III"
+
+msgid "camouflage/well_deserved_reward_2025_4/description"
+msgstr "The fourth level of camouflage awarded with the Old Hand style."
+
+msgid "camouflage/well_deserved_reward_2025_4/label"
+msgstr "Old Hand IV"
+
+msgid "camouflage/well_deserved_reward_2025_5/description"
+msgstr "The fifth level of camouflage awarded with the Old Hand style."
+
+msgid "camouflage/well_deserved_reward_2025_5/label"
+msgstr "Old Hand V"
+
 msgid "camouflage/western_warriors/description"
 msgstr "?empty?"
 
@@ -8057,6 +8102,12 @@ msgstr ""
 
 msgid "camouflage/white_tiger_2021_standalone/label"
 msgstr "Transductor (Off)"
+
+msgid "camouflage/winback_1/label"
+msgstr "The Akrobat's Choice!"
+
+msgid "camouflage/winback_2/label"
+msgstr "Cygnition"
 
 msgid "camouflage/winter"
 msgstr "Winter"
@@ -10271,6 +10322,20 @@ msgid "customization/tooltip/quests/veni_vidi_vici_775/condition"
 msgstr ""
 "Win an Onslaught battle by destroying all enemy vehicles in under 150 "
 "seconds."
+
+msgid "customization/tooltip/quests/wdr_style_1200_1_stage_2/condition"
+msgstr "Achieve the Commander rank in the Well-Deserved Reward event"
+
+msgid "customization/tooltip/quests/wdr_style_1200_1_stage_3/condition"
+msgstr "Achieve the Officer rank in the Well-Deserved Reward event."
+
+msgid "customization/tooltip/quests/wdr_style_1200_1_stage_4/condition"
+msgstr "Achieve the Veteran rank in the Well-Deserved Reward event."
+
+msgid "customization/tooltip/quests/wdr_style_1200_1_stage_5/condition"
+msgstr ""
+"Achieve the Legend rank or have Alpha tester or Beta tester rank in the "
+"Well-Deserved Reward event."
 
 msgid "customization/tooltip/quests/workhorse_1026/condition"
 msgstr "Spot or destroy 500 enemy vehicles in Onslaught."
@@ -13316,6 +13381,15 @@ msgstr "Anniversary Cat"
 msgid "emblem/special/sticker_871"
 msgstr "Anniversary Mouse"
 
+msgid "emblem/special/sticker_876"
+msgstr "Mouz"
+
+msgid "emblem/special/sticker_877"
+msgstr "Cyganzor Smile"
+
+msgid "emblem/special/sticker_879"
+msgstr "Snowy Climb"
+
 msgid "filter/popover/bonusType/title"
 msgstr "Bonus Types"
 
@@ -16149,6 +16223,12 @@ msgstr "Vitals: Full"
 
 msgid "inscription/special/special_837"
 msgstr "Wolfenstein"
+
+msgid "inscription/special/special_838"
+msgstr "MOUZAKROBAT"
+
+msgid "inscription/special/special_839"
+msgstr "CYGANZOR"
 
 msgid "inscription/special/special_847"
 msgstr "Don't Open Dead Inside"
@@ -19055,6 +19135,141 @@ msgstr "Becoming a Dragon"
 msgid "projection_decals/holiday/projection_decal_08"
 msgstr "Mascot"
 
+msgid "projection_decals/holiday/projection_decal_101"
+msgstr "Three Blessings Gold Sycees"
+
+msgid "projection_decals/holiday/projection_decal_102"
+msgstr "Three Blessings Coin Charm"
+
+msgid "projection_decals/holiday/projection_decal_103"
+msgstr "Dragon and Phoenix Coin Charm"
+
+msgid "projection_decals/holiday/projection_decal_104"
+msgstr "Five Blessings Coin Charm"
+
+msgid "projection_decals/holiday/projection_decal_105"
+msgstr "Gold Ten-Coin Charm"
+
+msgid "projection_decals/holiday/projection_decal_106"
+msgstr "Red Ten-Coin Charm"
+
+msgid "projection_decals/holiday/projection_decal_107"
+msgstr "Gold-Edged Chinese Knot"
+
+msgid "projection_decals/holiday/projection_decal_108"
+msgstr "Happiness Gold Coin"
+
+msgid "projection_decals/holiday/projection_decal_109"
+msgstr "Peace Gold Coin"
+
+msgid "projection_decals/holiday/projection_decal_110"
+msgstr "Longevity Gold Coin"
+
+msgid "projection_decals/holiday/projection_decal_111"
+msgstr "Bamboo Branches"
+
+msgid "projection_decals/holiday/projection_decal_112"
+msgstr "Gillyflower"
+
+msgid "projection_decals/holiday/projection_decal_113"
+msgstr "White Daffodils"
+
+msgid "projection_decals/holiday/projection_decal_114"
+msgstr "Yellow Daffodils"
+
+msgid "projection_decals/holiday/projection_decal_115"
+msgstr "Peach Blossom Branch"
+
+msgid "projection_decals/holiday/projection_decal_116"
+msgstr "Good Fortune and Prosperity"
+
+msgid "projection_decals/holiday/projection_decal_117"
+msgstr "Gilded \"Happiness\" Arrives"
+
+msgid "projection_decals/holiday/projection_decal_118"
+msgstr "Gilded Spring Festival Decoration"
+
+msgid "projection_decals/holiday/projection_decal_119"
+msgstr "\"Happiness\" Chinese Knot with Golden Thread"
+
+msgid "projection_decals/holiday/projection_decal_120"
+msgstr "Gilded Scroll of \"Happiness\""
+
+msgid "projection_decals/holiday/projection_decal_121"
+msgstr "Dandelion Firework"
+
+msgid "projection_decals/holiday/projection_decal_122"
+msgstr "Triple-color Peony Firework"
+
+msgid "projection_decals/holiday/projection_decal_123"
+msgstr "Chrysanthemum Firework"
+
+msgid "projection_decals/holiday/projection_decal_124"
+msgstr "Base Drum with Dragon Patterns"
+
+msgid "projection_decals/holiday/projection_decal_125"
+msgstr "String of Gilded Firecrackers"
+
+msgid "projection_decals/holiday/projection_decal_126"
+msgstr "Gilded Firecrackers"
+
+msgid "projection_decals/holiday/projection_decal_127"
+msgstr "Dark Gold Cloud"
+
+msgid "projection_decals/holiday/projection_decal_128"
+msgstr "\"Happiness\" Fan with Three Tassels"
+
+msgid "projection_decals/holiday/projection_decal_129"
+msgstr "Red Fan with Golden Bamboo Patterns"
+
+msgid "projection_decals/holiday/projection_decal_130"
+msgstr "Red Fan with Wintersweet Patterns"
+
+msgid "projection_decals/holiday/projection_decal_131"
+msgstr "Flower Lantern with Wintersweet Patterns"
+
+msgid "projection_decals/holiday/projection_decal_132"
+msgstr "Red Lantern with Golden Carp Patterns"
+
+msgid "projection_decals/holiday/projection_decal_133"
+msgstr "Fan Lantern with Wintersweet Patterns"
+
+msgid "projection_decals/holiday/projection_decal_134"
+msgstr "Palace Lantern with Wintersweet Patterns"
+
+msgid "projection_decals/holiday/projection_decal_135"
+msgstr "Vase Lantern with Spring Motifs"
+
+msgid "projection_decals/holiday/projection_decal_136"
+msgstr "Harmonious Lantern with Gold Dragon Patterns"
+
+msgid "projection_decals/holiday/projection_decal_137"
+msgstr "\"Good Fortune\" Grand Red Lantern"
+
+msgid "projection_decals/holiday/projection_decal_138"
+msgstr "\"Happiness\" Hexagonal Lantern"
+
+msgid "projection_decals/holiday/projection_decal_139"
+msgstr "Paper Lantern with Golden Rims"
+
+msgid "projection_decals/holiday/projection_decal_140"
+msgstr "Small Red Lantern with Spring Motifs"
+
+msgid "projection_decals/holiday/projection_decal_141"
+msgstr "Gold Incense Burner with Dragon Ears"
+
+msgid "projection_decals/holiday/projection_decal_142"
+msgstr "Gold Three-legged Toad"
+
+msgid "projection_decals/holiday/projection_decal_143"
+msgstr "Gold Dragon Turtle"
+
+msgid "projection_decals/holiday/projection_decal_144"
+msgstr "Gold Lion"
+
+msgid "projection_decals/holiday/projection_decal_145"
+msgstr "Gold Leaping Carp"
+
 msgid "projection_decals/holiday/projection_decal_146"
 msgstr "Charge of Love"
 
@@ -19839,6 +20054,15 @@ msgstr "Survivors"
 
 msgid "projection_decals/special/projection_decal_1012"
 msgstr "We Fight for Our Future"
+
+msgid "projection_decals/special/projection_decal_1013"
+msgstr "Deck the Hull"
+
+msgid "projection_decals/special/projection_decal_1014"
+msgstr "Team Leader"
+
+msgid "projection_decals/special/projection_decal_1015"
+msgstr "Ice Picks"
 
 msgid "projection_decals/special/projection_decal_102"
 msgstr "Playing With Fire"
@@ -22976,6 +23200,12 @@ msgstr "Among Wolves"
 msgid "projection_decals/special/projection_decal_971"
 msgstr "8-Bit.J."
 
+msgid "projection_decals/special/projection_decal_976"
+msgstr "mouzAkrobat"
+
+msgid "projection_decals/special/projection_decal_977"
+msgstr "Purple Planet"
+
 msgid "projection_decals/special/projection_decal_979"
 msgstr "Steel Hunter, Mk. I"
 
@@ -24753,6 +24983,9 @@ msgstr "Sword of Devana"
 
 msgid "repaint/shreder"
 msgstr "Oroku Saki"
+
+msgid "repaint/snowy_climb"
+msgstr "Snowy Climb"
 
 msgid "repaint/solo_dday_2024_us_desc"
 msgstr "A paint inspired by Allied vehicles at the Normandy landings of 1944."
@@ -28276,6 +28509,18 @@ msgstr "Magic Toy"
 
 msgid "special_style/advent_calendar_2024_2_desc"
 msgstr "An all-season style dedicated to much-loved holiday gifts."
+
+msgid "special_style/advent_calendar_2025_1_desc"
+msgstr "Stay ice-cold on the battlefield with this frosty all-season style."
+
+msgid "special_style/advent_calendar_2025_2_desc"
+msgstr ""
+"Wrap your armor in this frost-hewn all-season style to become one with the "
+"tundra."
+
+msgid "special_style/advent_calendar_2025_3_desc"
+msgstr ""
+"An all-season style that sheathes your vehicle in winter's biting embrace."
 
 msgid "special_style/allbetsareoff"
 msgstr "All Bets Are Off"
@@ -34100,6 +34345,19 @@ msgstr ""
 "possibilities to keep you winning. You're in control—now show what you can "
 "do."
 
+msgid "special_style/pub_west_ebr_racing"
+msgstr "Racing Stripes"
+
+msgid "special_style/pub_west_ebr_racing_desc"
+msgstr "A streamlined all-season style for when speed is of the essence."
+
+msgid "special_style/pub_west_ebr_racing_desc/long"
+msgstr ""
+"Racing cars are cool—fast and stylish, sure. But are they \"awesome "
+"caterpillar tracks and a massive gun\" cool? Didn't think so. Get the best "
+"of both worlds with this slick paint job, and switch between three colorways"
+" to either blend into the battlefield or steal the spotlight."
+
 msgid "special_style/pub_west_germany_reunification_2025"
 msgstr "EIN Berlin"
 
@@ -34761,6 +35019,21 @@ msgstr ""
 "with its deadly claws—and that's the end of the story. Sergeant Vasilevich, "
 "bring me lime and brushes. Let’s decorate our vehicle.\""
 
+msgid "special_style/snowy_climb"
+msgstr "Snowy Climb"
+
+msgid "special_style/snowy_climb_desc"
+msgstr ""
+"With this intrepid all-season style, you can quite literally move mountains."
+
+msgid "special_style/snowy_climb_desc/long"
+msgstr ""
+"Looks like your climb to greatness has taken you to new heights, Commander! "
+"Inspired by the barren terrain of a snow-covered summit, this rugged design "
+"helps you channel your inner mountaineer. But even if you're as adventurous "
+"as they come, best not to peer down from the cupola if you want to keep a "
+"clear head on the battlefield."
+
 msgid "special_style/solo_dday_2024_uk"
 msgstr "My Mistake"
 
@@ -35145,6 +35418,23 @@ msgstr "An all-season style to celebrate Tankfest 2023."
 
 msgid "special_style/tankfest_desc/long"
 msgstr "?empty?"
+
+msgid "special_style/tankmas_2025"
+msgstr "Panettone Parade"
+
+msgid "special_style/tankmas_2025_desc"
+msgstr "Deck your hull with holly in this delicious all-season style."
+
+msgid "special_style/tankmas_2025_desc/long"
+msgstr ""
+"What's big, bold, and smells faintly of citrus? That's right—me. They "
+"dressed me up like panettone, with holly on my hull and a magnificent red "
+"bow that tickles when I roll. I used to be all grit and grime, but now I'm "
+"the belle of the holiday ball. Crews chuckle, children wave, and even the "
+"snowflakes seem to dance as I march by. The scent of pine lingers in the "
+"air, and the festive spirit embraces me like a cloak of powdered sugar. 'Tis"
+" the season, and I'm full of cheer, not to mention raisins. Just don't try "
+"to eat me—I may look soft and doughy, but I've still got a bite."
 
 msgid "special_style/tanksman_day"
 msgstr "Tanker Day"
@@ -35920,6 +36210,20 @@ msgstr ""
 msgid "special_style/well_deserved_award_2023_2"
 msgstr "Veteran Tanker"
 
+msgid "special_style/well_deserved_reward_2025"
+msgstr "Old Hand"
+
+msgid "special_style/well_deserved_reward_2025_desc"
+msgstr "An all-season style that celebrates your World of Tanks journey."
+
+msgid "special_style/well_deserved_reward_2025_desc/long"
+msgstr ""
+"An all-season style awarded to World of Tanks players in recognition of "
+"their dedication to the art of tanking. The style evolves as your experience"
+" grows, changing colors with each new rank so that everyone knows who's the "
+"most seasoned tanker of them all! Awarded during the Well-Deserved Reward "
+"event."
+
 msgid "special_style/western_warriors"
 msgstr "Warrior of the West"
 
@@ -35963,6 +36267,36 @@ msgstr "Inductor Coil"
 
 msgid "special_style/white_tiger_2021_hounds"
 msgstr "System Board (On)"
+
+msgid "special_style/winback_1"
+msgstr "The Akrobat's Choice!"
+
+msgid "special_style/winback_1_desc"
+msgstr ""
+"Show off your support for MouzAkrobat with this electrifying all-season "
+"style."
+
+msgid "special_style/winback_1_desc/long"
+msgstr ""
+"Mouz by name but mammoth by nature, he's your go-to guy for strategy videos "
+"and gameplay streams. A seasoned ace with a cool head and a mind for "
+"tactics, he's a goldmine of tanking expertise. Match your armor to his "
+"channel's signature aesthetic and prove you've learned from the best—while "
+"adding some serious flair to the battlefield."
+
+msgid "special_style/winback_2"
+msgstr "Cygnition"
+
+msgid "special_style/winback_2_desc"
+msgstr "A flashy all-season style inspired by content creator Cyganzor."
+
+msgid "special_style/winback_2_desc/long"
+msgstr ""
+"They say a smile is the best accessory, so why not wear a bunch of them? We "
+"think Cyganzor would approve. This up-and-coming creator showcases his "
+"impeccable playstyle and smart tactics, all while remaining upbeat and "
+"affable. Show off your support by sprucing up your vehicle with this eye-"
+"catching design."
 
 msgid "special_style/winter"
 msgstr "Winter"

@@ -90,8 +90,7 @@ class _SimpleReloadDesc(_ReloadDesc):
 
 
 class _DualGunReloadDesc(_SimpleReloadDesc):
-    __slots__ = ('ammoLowSound', 'soundEvent', 'runTimeDelta', 'runTimeDeltaAmmoLow',
-                 'caliber')
+    __slots__ = ('ammoLowSound', 'runTimeDelta', 'runTimeDeltaAmmoLow', 'caliber')
 
     def __init__(self, dataSection, eType):
         super(_DualGunReloadDesc, self).__init__(dataSection, eType)

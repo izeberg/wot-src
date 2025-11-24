@@ -1545,6 +1545,10 @@ package
       
       public static const PREBATTLE_RTS_TANKLABEL:String = "#menu:prebattle/rts/tankLabel";
       
+      public static const HEADERBUTTONS_BATTLE_VEHICLEINFO:String = "#menu:headerButtons/battle/vehicleInfo";
+      
+      public static const HEADERBUTTONS_BATTLE_MODEINFO:String = "#menu:headerButtons/battle/modeInfo";
+      
       public static const HEADERBUTTONS_BATTLE_TYPES_RTS_AVAILABILITY_DEFAULT:String = "#menu:headerButtons/battle/types/rts/availability/default";
       
       public static const HEADERBUTTONS_BATTLE_TYPES_RTS_AVAILABILITY_AFTERCYCLE:String = "#menu:headerButtons/battle/types/rts/availability/afterCycle";
@@ -4242,6 +4246,8 @@ package
       public static const DISCOUNT_USERNAME_VEHICLE:String = "#menu:discount/userName/vehicle";
       
       public static const DISCOUNT_DESCRIPTION_VEHICLE:String = "#menu:discount/description/vehicle";
+      
+      public static const DISCOUNT_DESCRIPTION_PET:String = "#menu:discount/description/pet";
       
       public static const CONTEXTMENU_VIEWCLANPROFILE:String = "#menu:contextMenu/viewClanProfile";
       

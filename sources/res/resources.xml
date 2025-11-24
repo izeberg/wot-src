@@ -236,6 +236,8 @@
 			<module>client.DeathComponent</module>
 			<module>client.SequenceNetworkSync</module>
 			<module>client.ShotsReceiver</module>
+			<module>client.gui.pet_system.cgf_components.pet_place_component</module>
+			<module>client.gui.pet_system.cgf_components.storage_state_component</module>
 			<module>cell.cgf_cell.cgf_replication_hash</module>
 			<module>client.cgf_components.armor_inspector_component</module>
 			<module>cell.cgf_cell.vehicle_mechanics.stationary_reload_sequence_params</module>
@@ -345,6 +347,7 @@
 			<path>particles/Tank/customization/Cz17_Vz_55_NY2025_3Dst/Cz17_Vz_55_NY2025_3Dst_Gun_01.prefab</path>
 			<path>particles/Tank/customization/Cz17_Vz_55_NY2025_3Dst/Cz17_Vz_55_NY2025_3Dst_Gun_02.prefab</path>
 			<path>content/CGFPrefabs/Frontline/fullDestruction.prefab</path>
+			<path>content/HangarPrefabs/PetSystem/PetSystem_dog.prefab</path>
 		</prefabs>
 	</cgf>
 </root>

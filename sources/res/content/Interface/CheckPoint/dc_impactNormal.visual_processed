@@ -20,7 +20,7 @@
 				<material>
 					<identifier>s_012</identifier>
 					<fx>shaders/std_effects/lightonly_alpha.fx</fx>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>0</materialKind>
 					<property>
 						diffuseMap

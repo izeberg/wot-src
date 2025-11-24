@@ -1,5 +1,5 @@
 import typing
-from gui.impl.lobby.hangar.presenters.vehicles_info_presenter import VehiclesInfoPresenter
+from gui.impl.lobby.common.presenters.vehicles_info_presenter import VehiclesInfoPresenter
 if typing.TYPE_CHECKING:
     from gui.shared.gui_items import Vehicle
 

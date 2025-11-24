@@ -25,10 +25,6 @@ package net.wg.data.constants.generated
       
       public static const CAROUSEL:String = "carousel";
       
-      public static const COMP7_TOURNAMENT_BANNER:String = "comp7TournamentBanner";
-      
-      public static const COMP7_GRAND_TOURNAMENT_BANNER:String = "comp7GrandTournamentBanner";
-      
       public static const MINI_CLIENT:String = "miniClient";
       
       public static const PRESTIGE_WIDGET:String = "prestigeWidget";

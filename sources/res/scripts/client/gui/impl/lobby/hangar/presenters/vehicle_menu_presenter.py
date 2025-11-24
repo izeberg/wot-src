@@ -16,6 +16,7 @@ from gui.easy_tank_equip.easy_tank_equip_helpers import isAvailableForVehicle
 from gui.impl.auxiliary.crew_books_helper import crewBooksViewedCache
 from gui.impl.dialogs.dialogs import showRetrainMassiveDialog
 from gui.impl.gen.view_models.views.lobby.hangar.vehicle_menu_model import VehicleMenuModel
+from gui.impl.lobby.crew.crew_helpers.skill_helpers import getTmanNewSkillCount
 from gui.impl.lobby.tank_setup.dialogs.main_content.main_contents import NeedRepairMainContent
 from gui.impl.lobby.tank_setup.dialogs.need_repair import NeedRepair
 from gui.impl.pub.view_component import ViewComponent
@@ -29,6 +30,7 @@ from gui.shared.gui_items.processors.vehicle import VehicleAutoReturnProcessor
 from gui.shared.items_cache import CACHE_SYNC_REASON
 from gui.shared.notifications import NotificationPriorityLevel
 from gui.shared.utils import decorators
+from gui.shared.utils.HangarSpace import HangarVideoCameraController
 from gui.shared.utils.module_upd_available_helper import getResearchInfo
 from gui.shared.utils.requesters import REQ_CRITERIA
 from gui.veh_post_progression.helpers import storeLastSeenStep, needToShowCounter
@@ -42,6 +44,7 @@ from skeletons.gui.shared import IItemsCache
 from skeletons.gui.game_control import IPlatoonController
 from gui.prb_control.entities.base.listener import IPrbListener
 from gui.shared import events, EVENT_BUS_SCOPE
+from skeletons.gui.shared.utils import IHangarSpace
 if typing.TYPE_CHECKING:
     from gui.shared.utils.requesters import RequestCriteria
 _logger = logging.getLogger(__name__)
@@ -60,16 +63,22 @@ class VehicleMenuPresenter(ViewComponent[VehicleMenuModel], IPrbListener):
     __platoonCtrl = dependency.descriptor(IPlatoonController)
     __cmpBasket = dependency.descriptor(IVehicleComparisonBasket)
     __lobbyContext = dependency.descriptor(ILobbyContext)
+    __hangarSpace = dependency.descriptor(IHangarSpace)
 
     def __init__(self):
         super(VehicleMenuPresenter, self).__init__(model=VehicleMenuModel)
         self._menuItems = {}
         self.__hasInventoryTankman = False
         self.__hasTankman = False
+        self.__isVehicleChanging = False
 
     @property
     def viewModel(self):
         return super(VehicleMenuPresenter, self).getViewModel()
+
+    @property
+    def _cameraController(self):
+        return self.__hangarSpace.videoCameraController
 
     def _createMenuItems(self):
         return {VehicleMenuModel.CUSTOMIZATION: _ItemInfo(partial(self.__getStylesState, requestCriteria=~REQ_CRITERIA.CUSTOMIZATION.HAS_TAGS([ItemTags.IS_3D])), 0, self.__customizationService.showCustomization), 
@@ -83,7 +92,7 @@ class VehicleMenuPresenter(ViewComponent[VehicleMenuModel], IPrbListener):
            VehicleMenuModel.ARMOR_INSPECTOR: _ItemInfo(self.__getArmorState, 0, partial(_handleFunctionCallForCurrentVehicle, showVehicleHubArmor)), 
            VehicleMenuModel.FIELD_MODIFICATION: _ItemInfo(self.__getProgressionState, 0, partial(_handleFunctionCallForCurrentVehicle, showVehPostProgressionView)), 
            VehicleMenuModel.RESEARCH: _ItemInfo(self.__getResearchState, self.__getAvailableModulesForResearchCount, partial(_handleFunctionCallForCurrentVehicle, showVehicleHubModules)), 
-           VehicleMenuModel.ABOUT_VEHICLE: _ItemInfo(lambda : VehicleMenuModel.ENABLED, 0, partial(_handleFunctionCallForCurrentVehicle, showVehicleHubOverview)), 
+           VehicleMenuModel.ABOUT_VEHICLE: _ItemInfo(self.__getAboutVehicleState, 0, partial(_handleFunctionCallForCurrentVehicle, showVehicleHubOverview)), 
            VehicleMenuModel.COMPARE: _ItemInfo(self.__getCompareState, 0, self.__handleCompare), 
            VehicleMenuModel.REPAIRS: _ItemInfo(self.__getRepairState, 0, self.__handleRepair), 
            VehicleMenuModel.VEH_SKILL_TREE: _ItemInfo(partial(self.__getProgressionState, isVehSkillTree=True), 0, partial(_handleFunctionCallForCurrentVehicle, showVehicleHubVehSkillTree))}
@@ -91,9 +100,13 @@ class VehicleMenuPresenter(ViewComponent[VehicleMenuModel], IPrbListener):
     def _getEvents(self):
         return (
          (
-          g_currentVehicle.onChanged, self.__updateModel),
+          g_currentVehicle.onChanged, self.__onVehicleChanged),
+         (
+          g_currentVehicle.onChangeStarted, self.__onVehicleChanging),
          (
           AccountSettings.onSettingsChanging, self.__onAccountSettingsChanging),
+         (
+          g_playerEvents.onConfigModelUpdated, self.__configChangeHandler),
          (
           self.viewModel.onNavigate, self.__onNavigate),
          (
@@ -107,7 +120,7 @@ class VehicleMenuPresenter(ViewComponent[VehicleMenuModel], IPrbListener):
          (
           self.__cmpBasket.onSwitchChange, self.__onVehCmpBasketStateChanged),
          (
-          g_playerEvents.onConfigModelUpdated, self.__configChangeHandler))
+          self._cameraController.onEnabledChange, self.__onCameraEnabledChage))
 
     def _getListeners(self):
         return (
@@ -127,7 +140,18 @@ class VehicleMenuPresenter(ViewComponent[VehicleMenuModel], IPrbListener):
         super(VehicleMenuPresenter, self)._finalize()
         self._menuItems = {}
         self.__styleCriteria = None
+        self.__isVehicleChanging = False
         return
+
+    def __onCameraEnabledChage(self, _):
+        self.__updateModel()
+
+    def __onVehicleChanging(self):
+        self.__isVehicleChanging = True
+
+    def __onVehicleChanged(self):
+        self.__isVehicleChanging = False
+        self.__updateModel()
 
     def __onPlatoonMembersUpdate(self, *_):
         self.__updateModel()
@@ -180,6 +204,8 @@ class VehicleMenuPresenter(ViewComponent[VehicleMenuModel], IPrbListener):
         menuItems.set(name, json.dumps(data))
 
     def __getMenuItemState(self, name):
+        if self._cameraController.isEnabled:
+            return VehicleMenuModel.DISABLED
         if not g_currentVehicle.isPresent():
             return VehicleMenuModel.DISABLED
         menuItemStateValue = self._menuItems[name].state()
@@ -328,14 +354,20 @@ class VehicleMenuPresenter(ViewComponent[VehicleMenuModel], IPrbListener):
             return VehicleMenuModel.DISABLED
         if not g_currentVehicle.hasCrew() or self.__isVehicleUnavailable():
             return VehicleMenuModel.DISABLED
-        if crewBooksViewedCache().haveNewCrewBooks():
+        if crewBooksViewedCache().haveNewCrewBooks() and not self.__isAllSkillsLearned():
             return VehicleMenuModel.WARNING
         return VehicleMenuModel.ENABLED
+
+    def __isAllSkillsLearned(self):
+        crew = g_currentVehicle.item.crew
+        if not crew:
+            return False
+        return all(getTmanNewSkillCount(tankman, withFree=True)[1].intSkillLvl == 100 for _, tankman in crew)
 
     def __getCompareState(self):
         cmpBasket = self.__cmpBasket
         readyToAdd = cmpBasket.isReadyToAdd(g_currentVehicle.item)
-        if not cmpBasket.isEnabled() or not readyToAdd:
+        if not cmpBasket.isEnabled() or not readyToAdd or g_currentVehicle.isInBattle():
             return VehicleMenuModel.DISABLED
         return VehicleMenuModel.ENABLED
 
@@ -347,6 +379,8 @@ class VehicleMenuPresenter(ViewComponent[VehicleMenuModel], IPrbListener):
         return VehicleMenuModel.ENABLED
 
     def __getResearchState(self):
+        if g_currentVehicle.isInBattle():
+            return VehicleMenuModel.DISABLED
         unviewedModules = self.__getUnviewedResearchModules()
         if unviewedModules:
             return VehicleMenuModel.WARNING
@@ -399,7 +433,13 @@ class VehicleMenuPresenter(ViewComponent[VehicleMenuModel], IPrbListener):
     def __getArmorState(self):
         vehicle = g_currentVehicle.item
         configModel = armorInspectorConfigSchema.getModel()
-        if vehicle is None or not configModel.enabled or configModel.isDisabledForVehicle(vehicle.name):
+        if vehicle is None or not configModel.enabled or configModel.isDisabledForVehicle(vehicle.name) or g_currentVehicle.isInBattle():
+            return VehicleMenuModel.DISABLED
+        else:
+            return VehicleMenuModel.ENABLED
+
+    def __getAboutVehicleState(self):
+        if g_currentVehicle.item is None or g_currentVehicle.isInBattle():
             return VehicleMenuModel.DISABLED
         else:
             return VehicleMenuModel.ENABLED
@@ -449,6 +489,13 @@ class VehicleMenuPresenter(ViewComponent[VehicleMenuModel], IPrbListener):
 
     def __onNavigate(self, args):
         name = args.get('name')
+        _logger.debug('Navigate to %s', name)
+        if self.__isVehicleChanging:
+            _logger.debug('Vehicle is changing, canceling the navigation')
+            return
+        if self._cameraController.isEnabled:
+            _logger.debug('Navigate to %s disabled by free camera', name)
+            return
         if name == VehicleMenuModel.FIELD_MODIFICATION:
             self.__updateLastSeenModification()
         self._menuItems[name].handler()

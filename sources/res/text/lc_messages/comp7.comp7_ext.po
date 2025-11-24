@@ -469,33 +469,6 @@ msgstr ""
 msgid "generalRankTooltip/subheading"
 msgstr "Includes Divisions: %(divisions)s"
 
-msgid "grandTournamentWidget/countdown"
-msgstr "%(timer)Tournament starts in %(countdown)s"
-
-msgid "grandTournamentWidget/countdownShort"
-msgstr "%(timer)Starts in %(countdown)s"
-
-msgid "grandTournamentWidget/counter/days"
-msgstr "%(days)s d %(hours)s h"
-
-msgid "grandTournamentWidget/counter/hours"
-msgstr "%(hours)s h %(minutes)s m"
-
-msgid "grandTournamentWidget/counter/lastMinute"
-msgstr "<1 min"
-
-msgid "grandTournamentWidget/counter/minutes"
-msgstr "%(minutes)s m"
-
-msgid "grandTournamentWidget/dayIsOver"
-msgstr "%(timer)More matches in %(countdown)s"
-
-msgid "grandTournamentWidget/finished"
-msgstr "Champion is decided!"
-
-msgid "grandTournamentWidget/live"
-msgstr "Watch LIVE now!"
-
 msgid "infoPageButtonLabel"
 msgstr "ABOUT THE EVENT"
 
@@ -1698,14 +1671,22 @@ msgstr "Season Updates"
 msgid "tournament/battleResult/personal/tooltip/descr"
 msgstr "Rating Points cannot be earned or lost in a Tournament."
 
-msgid "tournamentsWidget/heading"
-msgstr "Onslaught Tournaments"
+msgid "tournamentsEntryPointTooltip/description"
+msgstr ""
+"An epic clash is set to unfold at the World of Tanks Championship "
+"International in Suzhou, China, where the fiercest teams from around the "
+"globe will face off under Onslaught mode rules, all vying for the "
+"prestigious title of world champion. Experience the thrill as legends are "
+"born on the battlefield!"
 
-msgid "tournamentsWidget/text/active"
-msgstr "Don't miss the action!"
+msgid "tournamentsEntryPointTooltip/heading"
+msgstr "WCI'25"
 
-msgid "tournamentsWidget/text/registration"
-msgstr "Registration is now open!"
+msgid "tournamentsEntryPointTooltip/live"
+msgstr "Live streams will be available for %(timer)s"
+
+msgid "tournamentsEntryPointTooltip/showmatch"
+msgstr "More matches in %(timer)s"
 
 msgid "training/battleResult/personal/tooltip/descr"
 msgstr "Rating Points cannot be earned in Onslaught Training."
@@ -1724,6 +1705,146 @@ msgstr "Join voice chat"
 
 msgid "waitingSpinner/message"
 msgstr "Loading content..."
+
+msgid "wci/LBFinals"
+msgstr "LB FINALS"
+
+msgid "wci/LBRound1"
+msgstr "LB ROUND 1"
+
+msgid "wci/LBRound2"
+msgstr "LB ROUND 2"
+
+msgid "wci/LBSemifinals"
+msgstr "LB SEMI-FINALS"
+
+msgid "wci/UBFinals"
+msgstr "UB FINALS"
+
+msgid "wci/UBSemifinals"
+msgstr "UB SEMI-FINALS"
+
+msgid "wci/bestOf"
+msgstr "BEST OF %(number)s"
+
+msgid "wci/cny"
+msgstr "%(amount)s CNY"
+
+msgid "wci/cnySign"
+msgstr "¥%(amount)s"
+
+msgid "wci/comeBack"
+msgstr "Please try again later"
+
+msgid "wci/comingSoon"
+msgstr "COMING SOON %(addition)s"
+
+msgid "wci/comingSoonAddition"
+msgstr "TIMES MAY VARY DEPENDING ON MATCH LENGTH"
+
+msgid "wci/completed"
+msgstr "COMPLETED"
+
+msgid "wci/douyin"
+msgstr "Watch on Douyin"
+
+msgid "wci/drops/huya"
+msgstr ""
+"Watch on Huya and earn exclusive\n"
+"Huya Drops!"
+
+msgid "wci/drops/twitch"
+msgstr ""
+"Watch on Twitch and earn exclusive\n"
+"Twitch Drops!"
+
+msgid "wci/dropsShort/huya"
+msgstr "And earn exclusive Huya Drops!"
+
+msgid "wci/dropsShort/twitch"
+msgstr "And earn exclusive Twitch Drops!"
+
+msgid "wci/error"
+msgstr "ERROR LOADING DATA"
+
+msgid "wci/finalResult"
+msgstr "WINNER"
+
+msgid "wci/fundDistribution"
+msgstr "PRIZE POOL DISTRIBUTION"
+
+msgid "wci/grandFinals"
+msgstr "GRAND FINALS"
+
+msgid "wci/huya"
+msgstr "Watch on Huya"
+
+msgid "wci/noMatches"
+msgstr "NO MORE MATCHES SCHEDULED"
+
+msgid "wci/placement"
+msgstr "%(firstPlace)s - %(secondPlace)s"
+
+msgid "wci/prize"
+msgstr "PRIZE POOL %(addition)s"
+
+msgid "wci/prizeAddition"
+msgstr "AND THE CHANCE TO EARN EVERLASTING GLORY"
+
+msgid "wci/refresh"
+msgstr "Refresh"
+
+msgid "wci/refreshing"
+msgstr "Refreshing..."
+
+msgid "wci/roundOf"
+msgstr "ROUND OF %(number)s"
+
+msgid "wci/roundRobin"
+msgstr "ROUND ROBIN"
+
+msgid "wci/separator"
+msgstr "OR"
+
+msgid "wci/tab/overview"
+msgstr "OVERVIEW"
+
+msgid "wci/tab/schedule"
+msgstr "SCHEDULE"
+
+msgid "wci/teamPlaceholder"
+msgstr "TBD"
+
+msgid "wci/toShop"
+msgstr "Visit shop"
+
+msgid "wci/tooltip/infoPageButton/header"
+msgstr "About the tournament"
+
+msgid "wci/twitch"
+msgstr "Watch on Twitch"
+
+msgid "wci/viewFull"
+msgstr "View all"
+
+msgid "wci/visitShop/description"
+msgstr ""
+"Show your esports spirit with exclusive themed customization elements and "
+"unique tanks!"
+
+msgid "wci/visitShop/heading"
+msgstr "WCI BUNDLES"
+
+msgid "wci/vsBestOf"
+msgstr ""
+"VS\n"
+"BEST OF %(number)s"
+
+msgid "wci/winner"
+msgstr "Winner"
+
+msgid "wci/youtube"
+msgstr "Watch on Youtube"
 
 msgid "weeklyQuestWidgetTooltip/completed"
 msgstr "Onslaught Missions completed"

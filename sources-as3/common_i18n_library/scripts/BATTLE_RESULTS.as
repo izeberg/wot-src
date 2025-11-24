@@ -841,6 +841,10 @@ package
       
       public static const DETAILS_CALCULATIONS_CRYSTAL_EVENTS:String = "#battle_results:details/calculations/crystal/events";
       
+      public static const DETAILS_CALCULATIONS_PETCREDITS_FULLLABEL:String = "#battle_results:details/calculations/petCredits/fullLabel";
+      
+      public static const DETAILS_CALCULATIONS_PETCREDITS_SIMPLELABEL:String = "#battle_results:details/calculations/petCredits/simpleLabel";
+      
       public static const TANKSELECTOR_NEXT:String = "#battle_results:tankSelector/next";
       
       public static const VICTORYSCORE:String = "#battle_results:victoryScore";

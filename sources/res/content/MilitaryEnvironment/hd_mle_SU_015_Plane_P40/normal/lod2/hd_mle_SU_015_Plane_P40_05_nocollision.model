@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/MilitaryEnvironment/hd_mle_SU_015_Plane_P40/normal/lod3/hd_mle_SU_015_Plane_P40_05_nocollision</parent>
+	<extent>150.000000</extent>
+	<nodefullVisual>content/MilitaryEnvironment/hd_mle_SU_015_Plane_P40/normal/lod2/hd_mle_SU_015_Plane_P40_05_nocollision</nodefullVisual>
+	<visibilityBox>
+		<min>-1.473705 -0.905586 -0.390522</min>
+		<max>1.468540 1.647318 0.390521</max>
+	</visibilityBox>
+</root>

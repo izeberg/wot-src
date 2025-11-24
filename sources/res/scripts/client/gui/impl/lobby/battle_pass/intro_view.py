@@ -5,9 +5,9 @@ from gui.impl import backport
 from gui.impl.gen import R
 from gui.impl.gen.view_models.views.lobby.battle_pass.battle_pass_intro_view_model import BattlePassIntroViewModel
 from gui.impl.gen.view_models.views.lobby.common.intro_slide_model import IntroSlideModel
-from gui.impl.lobby.battle_pass.common import isExtraChapterSeen, setExtraChapterSeen
+from gui.impl.lobby.battle_pass.common import isExtraChapterSeen, isHolidayChapterSeen, setExtraChapterSeen, setHolidayChapterSeen
 from gui.impl.pub.view_component import ViewComponent
-from gui.shared.event_dispatcher import showBattlePass, showBrowserOverlayView
+from gui.shared.event_dispatcher import showBrowserOverlayView
 from helpers import dependency
 from skeletons.account_helpers.settings_core import ISettingsCore
 from skeletons.gui.game_control import IBattlePassController
@@ -35,7 +35,6 @@ class IntroPresenter(ViewComponent[BattlePassIntroViewModel]):
 
     def _onLoading(self, *args, **kwargs):
         super(IntroPresenter, self)._onLoading(*args, **kwargs)
-        self.__updateBattlePassState()
         self.__updateViewModel()
 
     def _getEvents(self):
@@ -43,11 +42,7 @@ class IntroPresenter(ViewComponent[BattlePassIntroViewModel]):
          (
           self.viewModel.onClose, self.__setIntroShown),
          (
-          self.viewModel.onVideo, self.__showVideo),
-         (
-          self.__battlePass.onBattlePassSettingsChange, self.__updateBattlePassState),
-         (
-          self.__battlePass.onSeasonStateChanged, self.__updateBattlePassState))
+          self.viewModel.onVideo, self.__showVideo))
 
     def __updateViewModel(self):
         with self.viewModel.transaction() as (tx):
@@ -73,6 +68,8 @@ class IntroPresenter(ViewComponent[BattlePassIntroViewModel]):
         self.__settingsCore.serverSettings.saveInBPStorage({BattlePassStorageKeys.INTRO_SHOWN: True})
         if self.__battlePass.hasExtra() and not isExtraChapterSeen():
             setExtraChapterSeen()
+        elif self.__battlePass.isHoliday() and not isHolidayChapterSeen():
+            setHolidayChapterSeen()
 
     @staticmethod
     def __showVideo():
@@ -87,7 +84,3 @@ class IntroPresenter(ViewComponent[BattlePassIntroViewModel]):
             commonResArgs[('tankName{}').format(idx)] = vehicle.userName if vehicle else ''
 
         return commonResArgs
-
-    def __updateBattlePassState(self, *_):
-        if self.__battlePass.isPaused():
-            showBattlePass()

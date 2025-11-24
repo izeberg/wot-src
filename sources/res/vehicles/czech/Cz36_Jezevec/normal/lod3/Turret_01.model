@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/czech/Cz36_Jezevec/normal/lod3/Turret_01</nodefullVisual>
+	<parent>vehicles/czech/Cz36_Jezevec/normal/lod4/Turret_01</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.174959 -0.006325 -1.162665</min>
+		<max>1.156576 1.037222 1.162814</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

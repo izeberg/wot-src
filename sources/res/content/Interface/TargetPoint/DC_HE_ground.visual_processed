@@ -20,7 +20,7 @@
 				<material>
 					<identifier>M_glow_circle</identifier>
 					<fx>shaders/controlPoint/wg_controlPointRadius.fx</fx>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>0</materialKind>
 					<property>
 						diffuseMap

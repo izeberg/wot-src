@@ -4,11 +4,11 @@ import BigWorld, AccountCommands, ClientPrebattle, Event
 from ChatManager import chatManager
 from ClientChat import ClientChat
 from ClientGlobalMap import ClientGlobalMap
-from ClientUnitMgr import ClientUnitMgr, ClientUnitBrowser
+from ClientUnitMgr import ClientUnitBrowser, ClientUnitMgr
 from ContactInfo import ContactInfo
 from OfflineMapCreator import g_offlineMapCreator
 from PlayerEvents import g_playerEvents as events
-from account_helpers import AccountSyncData, Inventory, DossierCache, Shop, Stats, QuestProgress, CustomFilesCache, BattleResultsCache, ClientGoodies, client_blueprints, client_recycle_bin, client_anonymizer, ClientBattleRoyale
+from account_helpers import AccountSyncData, Inventory, DossierCache, Shop, Stats, QuestProgress, CustomFilesCache, BattleResultsCache, ClientGoodies, client_blueprints, client_recycle_bin, client_anonymizer, ClientBattleRoyale, CrewAccountController
 from account_helpers import ClientInvitations, vehicle_rotation
 from account_helpers import client_epic_meta_game, tokens
 from account_helpers import client_ranked, client_badges
@@ -20,22 +20,20 @@ from account_helpers.game_restrictions import GameRestrictions
 from account_helpers.gift_system import GiftSystem
 from account_helpers.maps_training import MapsTraining
 from account_helpers.offers.sync_data import OffersSyncData
+from account_helpers.pet_system import PetSystem
 from account_helpers.session_statistics import SessionStatistics
 from account_helpers.settings_core import IntUserSettings
 from account_helpers.spa_flags import SPAFlags
 from account_helpers.telecom_rentals import TelecomRentals
 from account_helpers.trade_in import TradeIn
 from account_helpers.winback import Winback
-from account_helpers import CrewAccountController
 from account_shared import NotificationItem, readClientServerVersion
-from constants import ARENA_BONUS_TYPE, QUEUE_TYPE, EVENT_CLIENT_DATA, ARENA_GUI_TYPE
-from constants import PREBATTLE_INVITE_STATUS, PREBATTLE_TYPE, ARENA_GAMEPLAY_MASK_DEFAULT, ENABLE_FREE_PREMIUM_CREW
-from debug_utils import LOG_DEBUG, LOG_CURRENT_EXCEPTION, LOG_ERROR, LOG_DEBUG_DEV, LOG_WARNING
+from constants import ARENA_BONUS_TYPE, ARENA_GAMEPLAY_MASK_DEFAULT, ARENA_GUI_TYPE, ENABLE_FREE_PREMIUM_CREW, EVENT_CLIENT_DATA, PREBATTLE_INVITE_STATUS, PREBATTLE_TYPE, QUEUE_TYPE
+from debug_utils import LOG_CURRENT_EXCEPTION, LOG_DEBUG, LOG_DEBUG_DEV, LOG_ERROR, LOG_WARNING
 from gui.clans.clan_cache import g_clanCache
 from gui.prb_control import prbEntityProperty
 from gui.wgnc import g_wgncProvider
-from helpers import dependency
-from helpers import uniprof
+from helpers import dependency, uniprof
 from helpers.func_utils import isDeveloperFunc
 from items import tankmen
 from messenger import MessengerEntry
@@ -44,7 +42,7 @@ from skeletons.connection_mgr import IConnectionManager
 from skeletons.gui.lobby_context import ILobbyContext
 from skeletons.gui.shared.utils import IHangarSpace
 from soft_exception import SoftException
-from streamIDs import RangeStreamIDCallbacks, STREAM_ID_CHAT_MAX, STREAM_ID_CHAT_MIN
+from streamIDs import STREAM_ID_CHAT_MAX, STREAM_ID_CHAT_MIN, RangeStreamIDCallbacks
 from schema_manager import getSchemaManager
 StreamData = namedtuple('StreamData', ['data', 'isCorrupted', 'origPacketLen', 'packetLen', 'origCrc32', 'crc32'])
 StreamData.__new__.__defaults__ = (
@@ -96,7 +94,9 @@ class _ClientCommandProxy(object):
      (
       'doCmdStrArr', lambda args: len(args) == 1 and _isStrList(args[0])),
      (
-      'doCmdIntArrStrArr', lambda args: len(args) == 2 and _isIntList(args[0]) and _isStrList(args[1])))
+      'doCmdIntArrStrArr', lambda args: len(args) == 2 and _isIntList(args[0]) and _isStrList(args[1])),
+     (
+      'doCmdNoArgs', lambda args: len(args) == 0))
 
     def __init__(self):
         super(_ClientCommandProxy, self).__init__()
@@ -186,6 +186,7 @@ class PlayerAccount(BigWorld.Entity, ClientChat):
         self.crewAccountController = g_accountRepository.crewAccountController
         self.customFilesCache = g_accountRepository.customFilesCache
         self.renewableSubscription = g_accountRepository.renewableSubscription
+        self.petSystem = g_accountRepository.petSystem
         self.syncData.setAccount(self)
         self.inventory.setAccount(self)
         self.stats.setAccount(self)
@@ -272,6 +273,7 @@ class PlayerAccount(BigWorld.Entity, ClientChat):
         self.giftSystem.onAccountBecomePlayer()
         self.gameRestrictions.onAccountBecomePlayer()
         self.achievements20.onAccountBecomePlayer()
+        self.petSystem.onAccountBecomePlayer()
         chatManager.switchPlayerProxy(self)
         events.onAccountBecomePlayer()
         BigWorld.target.source = BigWorld.MouseTargetingMatrix()
@@ -316,6 +318,7 @@ class PlayerAccount(BigWorld.Entity, ClientChat):
         self.giftSystem.onAccountBecomeNonPlayer()
         self.gameRestrictions.onAccountBecomeNonPlayer()
         self.achievements20.onAccountBecomeNonPlayer()
+        self.petSystem.onAccountBecomeNonPlayer()
         self.__cancelCommands()
         self.syncData.setAccount(None)
         self.inventory.setAccount(None)
@@ -1160,6 +1163,7 @@ class PlayerAccount(BigWorld.Entity, ClientChat):
             self.giftSystem.synchronize(isFullSync, diff)
             self.gameRestrictions.synchronize(isFullSync, diff)
             self.achievements20.synchronize(isFullSync, diff)
+            self.petSystem.synchronize(isFullSync, diff)
             self._synchronizeServerSettings(diff)
             self._synchronizeDisabledPersonalMissions(diff)
             self._synchronizeEventNotifications(diff)
@@ -1427,6 +1431,7 @@ class _AccountRepository(object):
         self.freePremiumCrew = {}
         self.crewAccountController = CrewAccountController.CrewAccountController(self.inventory)
         self.renewableSubscription = {}
+        self.petSystem = PetSystem(self.syncData, self.commandProxy)
         self.gMap = ClientGlobalMap()
         self.onTokenReceived = Event.Event()
         self.requestID = AccountCommands.REQUEST_ID_UNRESERVED_MIN

@@ -59,6 +59,7 @@
 		<Kawasaki_Ha_9_IIE>56</Kawasaki_Ha_9_IIE>
 		<Kawasaki_Ha_9_IIF>57</Kawasaki_Ha_9_IIF>
 		<_Type_100_Suirei_V12Ni>60</_Type_100_Suirei_V12Ni>
+		<HA_9_V_SAR>62</HA_9_V_SAR>
 		<Continental_AOSI_1195_6>63</Continental_AOSI_1195_6>
 		<Mitsubishi_12HM20WT_61>2000</Mitsubishi_12HM20WT_61>
 		<Type_100_Kakyuu_V_12_CT>2001</Type_100_Kakyuu_V_12_CT>
@@ -1183,6 +1184,26 @@
 			<rpm_min>497</rpm_min>
 			<rpm_max>2663</rpm_max>
 		</_HA_9_V>
+		<HA_9_V_SAR>
+			<userString>#japan_vehicles:HA_9_V_SAR</userString>
+			<tags>gasoline</tags>
+			<level>9</level>
+			<price>90000</price>
+			<notInShop>true</notInShop>
+			<wwsoundPC>eng_ContinentalR_pc</wwsoundPC>
+			<wwsoundNPC>eng_ContinentalR_npc</wwsoundNPC>
+			<power>900</power>
+			<weight>850</weight>
+			<maxHealth>310</maxHealth>
+			<maxRegenHealth>155</maxRegenHealth>
+			<repairCost>9</repairCost>
+			<fireStartingChance>
+				0.2
+				<!--BW_String-->
+			</fireStartingChance>
+			<rpm_min>488</rpm_min>
+			<rpm_max>2035</rpm_max>
+		</HA_9_V_SAR>
 		<V12_Kawasaki_Type_97>
 			<userString>#japan_vehicles:V12_Kawasaki_Type_97</userString>
 			<tags>gasoline</tags>

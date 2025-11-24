@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>content/MilitaryEnvironment/hd_mle_UNI_009_BoxCamouflage/normal/lod0/hd_mle_UNI_009_BoxCamouflage_scenario</nodefullVisual>
+	<visibilityBox>
+		<min>-1.793672 -0.048172 -1.628771</min>
+		<max>1.518292 2.066965 1.587351</max>
+	</visibilityBox>
+	<extent>35.000000</extent>
+	<parent>content/MilitaryEnvironment/hd_mle_UNI_009_BoxCamouflage/normal/lod1/hd_mle_UNI_009_BoxCamouflage_scenario</parent>
+	<havok>
+		<damagedState>false</damagedState>
+	</havok>
+</root>

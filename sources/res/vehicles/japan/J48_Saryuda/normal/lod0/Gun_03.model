@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/japan/J48_Saryuda/normal/lod1/Gun_03</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-0.689872 -0.412191 -0.037051</min>
+		<max>0.590128 0.412180 4.677337</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/japan/J48_Saryuda/normal/lod0/Gun_03</nodefullVisual>
+</root>

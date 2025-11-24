@@ -75,6 +75,26 @@
 			<shader>\data\shaders\ps.fx</shader>
 			<texture>particles/content_deferred/pfx_textures/eff_tex_hangar_v4.dds</texture>
 		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/pfx_textures/pet_shepherd_butterfly.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/pfx_textures/eff_dog_hair.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/pfx_textures/eff_tex_h24_winter.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/pfx_textures/251_sulfurFumes.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/pfx_textures/smoke.dds</texture>
+		</preload>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/exterior/h_v4_CrowFlock.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/hangar/hangar_v4_dust_orient.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/hangar/hangar_v4_dust_roofset.vfx</fn_effect_bin>

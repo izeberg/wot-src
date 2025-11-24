@@ -685,14 +685,14 @@ class MainView(ViewImpl):
         status = DetailStatus.DEFAULT
         earnedPoints = 0
         if totalPoints >= maxDetailPoints or operation.isCompleted():
-            if detailIndex == MAX_DETAIL_ID - 1 and not self.__operation.getPM3RewardQuest().isCompleted():
+            if detailIndex == MAX_DETAIL_ID - 1 and not operation.getPM3RewardQuest().isCompleted():
                 status = DetailStatus.IN_PROGRESS
-            elif isInstalled or operation.isCompleted():
+            elif (isInstalled or operation.isCompleted()) and not (detailIndex == MAX_DETAIL_ID - 1 and not operation.isCompleted() and isInstalled):
                 status = DetailStatus.DONE
             else:
                 status = DetailStatus.NOT_RECEIVED
             earnedPoints = maxDetailPoints - minDetailPoints
-        elif totalPoints in range(minDetailPoints, maxDetailPoints):
+        elif minDetailPoints <= totalPoints < maxDetailPoints:
             status = DetailStatus.IN_PROGRESS
             earnedPoints = totalPoints - minDetailPoints
         return (
