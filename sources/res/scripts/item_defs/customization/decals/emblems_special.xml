@@ -6045,4 +6045,56 @@
 		<name>Clans 2D 2025</name>
 		<type>EMBLEM</type>
 	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:emblem/special</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>emblems 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>poland:Pl15_60TP_Lewandowskiego_CFE_A usa:A174_T57_58_Rush_Ep1</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<decal>
+			<id>1189</id>
+			<texture>gui/maps/vehicles/decals/player_stickers/special/sticker_876.dds</texture>
+			<userString>#vehicle_customization:emblem/special/sticker_876</userString>
+			<mirror>false</mirror>
+		</decal>
+		<decal>
+			<id>1190</id>
+			<texture>gui/maps/vehicles/decals/player_stickers/special/sticker_877.dds</texture>
+			<userString>#vehicle_customization:emblem/special/sticker_877</userString>
+			<mirror>false</mirror>
+		</decal>
+		<name>Win back with CCs</name>
+		<type>EMBLEM</type>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:emblem/special</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>emblems 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>poland:Pl15_60TP_Lewandowskiego_CFE_A usa:A174_T57_58_Rush_Ep1</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<decal>
+			<id>1216</id>
+			<texture>gui/maps/vehicles/decals/player_stickers/special/sticker_664.dds</texture>
+			<userString>#vehicle_customization:emblem/special/sticker_664</userString>
+			<tags>hiddenInUI</tags>
+			<mirror>false</mirror>
+		</decal>
+		<decal>
+			<id>1225</id>
+			<texture>gui/maps/vehicles/decals/player_stickers/special/sticker_665.dds</texture>
+			<userString>#vehicle_customization:emblem/special/sticker_665</userString>
+			<tags>hiddenInUI</tags>
+			<mirror>false</mirror>
+		</decal>
+		<name>Advent Calendar 2025</name>
+		<type>EMBLEM</type>
+	</itemGroup>
 </root>

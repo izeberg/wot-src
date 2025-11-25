@@ -54,6 +54,44 @@
 			<primitiveGroup>
 				0
 				<material>
+					<identifier>equipment</identifier>
+					<fx>shaders/std_effects/PBS_tank_crash.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						alphaReference
+						<Int>64</Int>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
+						crashTileMap
+						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/chinese/Ch41_WZ_111_5A/_skins/Ch41_WZ_111_5A_TXVII_3Dst/WZ_111_5A_TXVII_3Dst_equipment_01_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/chinese/Ch41_WZ_111_5A/_skins/Ch41_WZ_111_5A_TXVII_3Dst/WZ_111_5A_TXVII_3Dst_equipment_01_AO.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/chinese/Ch41_WZ_111_5A/_skins/Ch41_WZ_111_5A_TXVII_3Dst/WZ_111_5A_TXVII_3Dst_equipment_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/chinese/Ch41_WZ_111_5A/_skins/Ch41_WZ_111_5A_TXVII_3Dst/WZ_111_5A_TXVII_3Dst_equipment_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.023275 -0.087257 -0.163446</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
 					<identifier>tank_hull_01</identifier>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
@@ -94,40 +132,6 @@
 				<groupOrigin>0.003134 0.033404 0.051410</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				1
-				<material>
-					<identifier>tank_equipment</identifier>
-					<collisionFlags>0</collisionFlags>
-					<materialKind>0</materialKind>
-					<fx>shaders/std_effects/PBS_tank_crash.fx</fx>
-					<property>
-						crashTileMap
-						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
-					</property>
-					<property>
-						diffuseMap
-						<Texture>vehicles/chinese/Ch41_WZ_111_5A/_skins/Ch41_WZ_111_5A_TXVII_3Dst/WZ_111_5A_TXVII_3Dst_equipment_01_AM.dds</Texture>
-					</property>
-					<property>
-						excludeMaskAndAOMap
-						<Texture>vehicles/chinese/Ch41_WZ_111_5A/_skins/Ch41_WZ_111_5A_TXVII_3Dst/WZ_111_5A_TXVII_3Dst_equipment_01_AO.dds</Texture>
-					</property>
-					<property>
-						metallicGlossMap
-						<Texture>vehicles/chinese/Ch41_WZ_111_5A/_skins/Ch41_WZ_111_5A_TXVII_3Dst/WZ_111_5A_TXVII_3Dst_equipment_01_GMM.dds</Texture>
-					</property>
-					<property>
-						normalMap
-						<Texture>vehicles/chinese/Ch41_WZ_111_5A/_skins/Ch41_WZ_111_5A_TXVII_3Dst/WZ_111_5A_TXVII_3Dst_equipment_01_ANM.dds</Texture>
-					</property>
-					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
-					</property>
-				</material>
-				<groupOrigin>-0.023275 -0.087257 -0.163446</groupOrigin>
-			</primitiveGroup>
-			<primitiveGroup>
 				2
 				<material>
 					<identifier>tank_chassis_01</identifier>
@@ -159,26 +163,18 @@
 						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.144940 -0.413925 -0.021766</groupOrigin>
+				<groupOrigin>-0.001128 -0.394695 -0.021766</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				3
 				<material>
 					<identifier>tank_mat_inside</identifier>
+					<fx>shaders/std_effects/PBS_tank.fx</fx>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
-					<fx>shaders/std_effects/PBS_tank.fx</fx>
 					<property>
 						diffuseMap
 						<Texture>vehicles/russian/Crash_inside/crash_inside_AM.dds</Texture>
-					</property>
-					<property>
-						normalMap
-						<Texture>vehicles/russian/Crash_inside/crash_inside_NM.dds</Texture>
-					</property>
-					<property>
-						metallicGlossMap
-						<Texture>vehicles/russian/Crash_inside/crash_inside_GMM.dds</Texture>
 					</property>
 					<property>
 						excludeMaskAndAOMap
@@ -188,14 +184,22 @@
 						g_useNormalPackDXT1
 						<Bool>true</Bool>
 					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/russian/Crash_inside/crash_inside_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/russian/Crash_inside/crash_inside_NM.dds</Texture>
+					</property>
 				</material>
 				<groupOrigin>0.006581 0.009937 -0.117501</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-1.791570 -0.914664 -4.010585</min>
-		<max>1.876311 0.736768 3.806076</max>
+		<min>-1.791570 -0.911282 -4.010585</min>
+		<max>1.797838 0.736768 3.806076</max>
 	</boundingBox>
-	<geometrySize>141882</geometrySize>
+	<geometrySize>149418</geometrySize>
 </root>

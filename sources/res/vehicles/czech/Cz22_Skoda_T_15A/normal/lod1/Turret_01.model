@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/czech/Cz22_Skoda_T_15A/normal/lod1/Turret_01</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/czech/Cz22_Skoda_T_15A/normal/lod2/Turret_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.732088 -0.011000 -1.071640</min>
+		<max>0.732088 0.738000 0.851707</max>
+	</visibilityBox>
+</root>

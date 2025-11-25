@@ -45,6 +45,10 @@ package net.wg.infrastructure.base.meta.impl
       
       public var restartNewbieBattleHints:Function;
       
+      public var autodetectPhysicsSoundQuality:Function;
+      
+      public var canSelectPhysicsSoundQuality:Function;
+      
       private var _dataProvider:DataProvider;
       
       private var _vectorSettingsNewCountersVo:Vector.<SettingsNewCountersVo>;
@@ -193,6 +197,18 @@ package net.wg.infrastructure.base.meta.impl
       {
          App.utils.asserter.assertNotNull(this.restartNewbieBattleHints,"restartNewbieBattleHints" + Errors.CANT_NULL);
          this.restartNewbieBattleHints();
+      }
+      
+      public function autodetectPhysicsSoundQualityS() : String
+      {
+         App.utils.asserter.assertNotNull(this.autodetectPhysicsSoundQuality,"autodetectPhysicsSoundQuality" + Errors.CANT_NULL);
+         return this.autodetectPhysicsSoundQuality();
+      }
+      
+      public function canSelectPhysicsSoundQualityS(param1:int) : Boolean
+      {
+         App.utils.asserter.assertNotNull(this.canSelectPhysicsSoundQuality,"canSelectPhysicsSoundQuality" + Errors.CANT_NULL);
+         return this.canSelectPhysicsSoundQuality(param1);
       }
       
       public final function as_setCaptureDevices(param1:Number, param2:Array) : void

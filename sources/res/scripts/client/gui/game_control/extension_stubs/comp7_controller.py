@@ -21,8 +21,6 @@ class Comp7Controller(IComp7Controller):
         self.onHighestRankAchieved = Event.Event(em)
         self.onEntitlementsUpdated = Event.Event(em)
         self.onEntitlementsUpdateFailed = Event.Event(em)
-        self.onTournamentBannerStateChanged = Event.Event(em)
-        self.onGrandTournamentBannerAvailabilityChanged = Event.Event(em)
 
     @property
     def rating(self):
@@ -67,14 +65,6 @@ class Comp7Controller(IComp7Controller):
     @property
     def qualificationState(self):
         return
-
-    @property
-    def isTournamentBannerEnabled(self):
-        return False
-
-    @property
-    def isGrandTournamentBannerEnabled(self):
-        return False
 
     @property
     def remainingOfferTokensNotifications(self):
@@ -277,17 +267,8 @@ class Comp7Controller(IComp7Controller):
     def isEliteForSeason(self, seasonNumber=None):
         return False
 
-    def getTournamentBannerAvailability(self):
-        return False
-
-    def getTournamentBannerData(self):
-        return
-
     def updateEntitlementsCache(self, force=False, retryTimes=None):
         pass
-
-    def getGrandTournamentBannerData(self):
-        return
 
     def getPlatoonRankRestriction(self, squadSize=None):
         return 0

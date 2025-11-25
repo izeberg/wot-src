@@ -35,14 +35,14 @@
 						<Texture>content/Decor/dec_010_Murovanka_DebrisWood/dec_wood_branch_02_GMM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.951923 0.411435 -0.531742</groupOrigin>
+				<groupOrigin>-0.979767 0.409162 -0.531746</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-2.571461 0.005432 -2.123987</min>
-		<max>0.579841 0.817439 1.169851</max>
+		<min>-2.494622 0.000889 -2.091187</min>
+		<max>0.535088 0.817436 1.027695</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>6848</geometrySize>
+	<geometrySize>7008</geometrySize>
 </root>

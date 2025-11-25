@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/sweden/S39_Strv_m31/normal/lod2/Chassis</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/sweden/S39_Strv_m31/normal/lod3/Chassis</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.084028 -0.000000 -2.332078</min>
+		<max>1.081010 1.078253 2.568779</max>
+	</visibilityBox>
+</root>

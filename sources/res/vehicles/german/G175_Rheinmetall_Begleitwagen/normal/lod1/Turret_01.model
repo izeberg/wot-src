@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/german/G175_Rheinmetall_Begleitwagen/normal/lod2/Turret_01</parent>
+	<extent>64.000000</extent>
+	<nodefullVisual>vehicles/german/G175_Rheinmetall_Begleitwagen/normal/lod1/Turret_01</nodefullVisual>
+	<visibilityBox>
+		<min>-0.917631 0.037887 -1.133520</min>
+		<max>0.917637 0.929987 0.843840</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

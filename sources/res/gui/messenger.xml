@@ -602,6 +602,7 @@ _(#messenger:battle/toolTips/mutePlayer){/BODY}</value>
 		<battleQuestsPremium>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/battleResults/quests/premium): &lt;font color=&apos;#D6D7D4&apos;&gt;%(days)s&lt;/font&gt;&lt;/font&gt;</battleQuestsPremium>
 		<battleQuestsPremiumPlus>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/battleResults/quests/premium_plus): &lt;font color=&apos;#D6D7D4&apos;&gt;%(days)s&lt;/font&gt;&lt;/font&gt;</battleQuestsPremiumPlus>
 		<battleQuestsItems>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/battleResults/quests/items): &lt;font color=&apos;#D6D7D4&apos;&gt;%(names)s&lt;/font&gt;&lt;/font&gt;</battleQuestsItems>
+		<battleQuestsPets>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/battleResults/quests/pets): &lt;font color=&apos;#D6D7D4&apos;&gt;%(pets)s&lt;/font&gt;&lt;/font&gt;</battleQuestsPets>
 		<completionTokens>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:personalMissions/completionTokenGain): &lt;font color=&apos;#D6D7D4&apos;&gt;%(completionToken)s&lt;/font&gt;&lt;/font&gt;</completionTokens>
 		<vehiclesAccruedQuestsReceived>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/invoiceReceived/vehiclesAccrued): &lt;font color=&apos;#D6D7D4&apos;&gt;%(vehicles)s&lt;/font&gt;&lt;/font&gt;</vehiclesAccruedQuestsReceived>
 		<vehiclesDebitedQuestsReceived>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/invoiceReceived/vehiclesDebited): &lt;font color=&apos;#D6D7D4&apos;&gt;%(vehicles)s&lt;/font&gt;&lt;/font&gt;</vehiclesDebitedQuestsReceived>
@@ -3548,5 +3549,30 @@ _(#messenger:serviceChannelMessages/piggyBank/continueAfterSmashed)</message>
 			<icon>PowerlevelIcon</icon>
 			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;%(title)s&lt;/font&gt;&lt;br/&gt;&lt;font face=&quot;$FieldFont&quot; size=&quot;14&quot; color=&apos;#8C8C7E&apos;&gt;%(text)s&lt;/font&gt;</message>
 		</VehicleSkillTreePerksResearchedSysMessage>
+		<PetSystemPetAddedMessage>
+			<type>grey</type>
+			<priority>medium</priority>
+			<icon>petSystem</icon>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;%(header)s&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#8C8C7E&quot;&gt;%(text)s&lt;/font&gt;</message>
+			<buttonsLayout>
+				<button>
+					<type>submit</type>
+					<label>_(#pet_system:message/petAdded/button)</label>
+					<action>openPetStorage</action>
+				</button>
+			</buttonsLayout>
+		</PetSystemPetAddedMessage>
+		<PetSystemSynergyLevelUpMessage>
+			<type>grey</type>
+			<priority>medium</priority>
+			<icon>petSystem</icon>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;%(header)s&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#8C8C7E&quot;&gt;%(text)s&lt;/font&gt;</message>
+		</PetSystemSynergyLevelUpMessage>
+		<PetSystemSynergyMaxLevelMessage>
+			<type>grey</type>
+			<priority>medium</priority>
+			<icon>petSystem</icon>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;%(header)s&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#8C8C7E&quot;&gt;%(text)s&lt;/font&gt;</message>
+		</PetSystemSynergyMaxLevelMessage>
 	</htmlTemplates>
 </root>

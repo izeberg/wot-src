@@ -65,7 +65,11 @@
 					</property>
 					<property>
 						alphaReference
-						<Int>32</Int>
+						<Int>64</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
 					</property>
 				</material>
 				<groupOrigin>0.000772 -0.011902 -0.005045</groupOrigin>

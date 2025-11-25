@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/japan/J48_Saryuda/normal/lod1/Hull</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/japan/J48_Saryuda/normal/lod2/Hull</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.660492 -0.624140 -3.720517</min>
+		<max>1.659890 0.786288 3.606866</max>
+	</visibilityBox>
+</root>

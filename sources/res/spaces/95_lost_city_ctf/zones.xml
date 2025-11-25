@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<path>
+		<id>1607906870</id>
+		<name>path</name>
+		<node>
+			<name>95_city_bombing_01_building_huge_part_02_destroyed</name>
+			<colour>0.800000 0.325490 0.200000 0.498039</colour>
+			<id>1063813675</id>
+			<transform>
+				<row0>22.276480 0.000000 0.000000</row0>
+				<row1>0.000000 0.000002 -26.110584</row1>
+				<row2>0.000000 20.410269 0.000001</row2>
+				<row3>68.219315 7.667201 32.116211</row3>
+			</transform>
+		</node>
+		<node>
+			<name>95_city_bombing_01_building_huge_part_03_destroyed</name>
+			<colour>0.800000 0.200000 0.333333 0.498039</colour>
+			<id>4211352211</id>
+			<transform>
+				<row0>26.463240 0.000000 0.000000</row0>
+				<row1>0.000000 20.000000 0.000000</row1>
+				<row2>0.000000 0.000000 28.415655</row2>
+				<row3>69.777901 7.967002 -29.731249</row3>
+			</transform>
+		</node>
+		<node>
+			<name>95_city_bombing_01_building_huge_part_01_destroyed</name>
+			<colour>0.047059 0.274510 1.000000 0.498039</colour>
+			<id>4161563888</id>
+			<transform>
+				<row0>56.598461 0.000000 0.000000</row0>
+				<row1>0.000000 20.000000 0.000000</row1>
+				<row2>0.000000 0.000000 66.478363</row2>
+				<row3>95.418610 6.140866 2.212437</row3>
+			</transform>
+		</node>
+	</path>
+</root>

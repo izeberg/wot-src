@@ -18,26 +18,10 @@
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>tank_guns</identifier>
+					<identifier>tank_proxy</identifier>
+					<fx>shaders/std_effects/PBS_tank_crash.fx</fx>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
-					<fx>shaders/std_effects/PBS_tank_crash.fx</fx>
-					<property>
-						diffuseMap
-						<Texture>vehicles/british/GB142_FV230_Canopener/_skins/GB142_FV230_Canopener_TXVII_3Dst/FV230_Canopener_TXVII_3Dst_proxy_AM.dds</Texture>
-					</property>
-					<property>
-						normalMap
-						<Texture>vehicles/british/GB142_FV230_Canopener/_skins/GB142_FV230_Canopener_TXVII_3Dst/FV230_Canopener_TXVII_3Dst_proxy_ANM.dds</Texture>
-					</property>
-					<property>
-						metallicGlossMap
-						<Texture>vehicles/british/GB142_FV230_Canopener/_skins/GB142_FV230_Canopener_TXVII_3Dst/FV230_Canopener_TXVII_3Dst_proxy_GMM.dds</Texture>
-					</property>
-					<property>
-						excludeMaskAndAOMap
-						<Texture>vehicles/british/GB142_FV230_Canopener/_skins/GB142_FV230_Canopener_TXVII_3Dst/FV230_Canopener_TXVII_3Dst_proxy_AO.dds</Texture>
-					</property>
 					<property>
 						colorIdMap
 						<Texture>vehicles/british/GB142_FV230_Canopener/FV230_Canopener_guns_ID.dds</Texture>
@@ -47,8 +31,24 @@
 						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
 					</property>
 					<property>
+						diffuseMap
+						<Texture>vehicles/british/GB142_FV230_Canopener/_skins/GB142_FV230_Canopener_TXVII_3Dst/FV230_Canopener_TXVII_3Dst_proxy_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/british/GB142_FV230_Canopener/_skins/GB142_FV230_Canopener_TXVII_3Dst/FV230_Canopener_TXVII_3Dst_proxy_AO.dds</Texture>
+					</property>
+					<property>
 						g_detailUVTiling
 						<Vector4>4.208220 1.052060 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/british/GB142_FV230_Canopener/_skins/GB142_FV230_Canopener_TXVII_3Dst/FV230_Canopener_TXVII_3Dst_proxy_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/british/GB142_FV230_Canopener/_skins/GB142_FV230_Canopener_TXVII_3Dst/FV230_Canopener_TXVII_3Dst_proxy_ANM.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>-0.167914 0.210395 2.619740</groupOrigin>
@@ -59,5 +59,6 @@
 		<min>-1.324209 -0.344567 -0.682494</min>
 		<max>0.988381 0.765356 5.921975</max>
 	</boundingBox>
+	<customBsp>true</customBsp>
 	<geometrySize>9040</geometrySize>
 </root>

@@ -1,5 +1,6 @@
 from gui.shared import g_eventBus, EVENT_BUS_SCOPE
 from gui.shared.events import ComponentEvent
+from gui.shared.utils.callable_delayer import delayUntilParentWindowReady, CallableDelayer
 from shared_utils import findFirst
 from gui.Scaleform.framework.entities.DisposableEntity import DisposableEntity
 from gui.Scaleform.framework import ScopeTemplates
@@ -18,6 +19,7 @@ class ScopeController(DisposableEntity):
         self.__mainView = None
         self.__views = []
         self.__loadingViews = []
+        self.__callableDelayer = CallableDelayer()
         return
 
     @property
@@ -140,7 +142,7 @@ class ScopeController(DisposableEntity):
         if self.__mainView != pyView:
             if self.__mainView is not None:
                 self.__removeAllSubControllers()
-                self.__destroyViews()
+                self.__destroyViews(pyView)
             self.__mainView = pyView
         return
 
@@ -167,7 +169,8 @@ class ScopeController(DisposableEntity):
         self.__mainView = None
         self.__removeAllSubControllers()
         self.__clearLoadingViews()
-        self.__destroyViews()
+        self.__destroyViews(None)
+        self.__callableDelayer.clear()
         super(ScopeController, self)._dispose()
         return
 
@@ -229,19 +232,18 @@ class ScopeController(DisposableEntity):
 
         return newController
 
-    def __destroyViews(self):
-        self.__destroyViewsFrom(self.__views)
+    def __destroyViews(self, newMainView):
+        self.__destroyViewsFrom(self.__views, newMainView)
 
     def __clearLoadingViews(self):
         self.__clearViewsFrom(self.__loadingViews)
 
-    @classmethod
-    def __destroyViewsFrom(cls, views):
+    def __destroyViewsFrom(self, views, newMainView):
         while views:
             pyView = views.pop()
-            pyView.onDispose -= cls._handleViewDispose
+            pyView.onDispose -= self._handleViewDispose
             if not pyView.isDisposed():
-                pyView.destroy()
+                delayUntilParentWindowReady(self.__callableDelayer, newMainView, pyView.destroy)
 
     @classmethod
     def __clearViewsFrom(cls, views):

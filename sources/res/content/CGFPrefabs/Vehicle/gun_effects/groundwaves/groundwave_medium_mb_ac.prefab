@@ -87,6 +87,16 @@
 			<UUID>b77b2ca6-b971-33f1-a834-a07077199931</UUID>
 			<flags>8</flags>
 		</GameObject>
+		<GameObject>
+			<name>groundwave_medium_blacksand</name>
+			<UUID>15aab857-ed48-38e4-ba4d-9c68c79dfc92</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>groundwave_medium_blacksand</name>
+			<UUID>5ba55a61-f52d-30d5-9028-970ef4b639c9</UUID>
+			<flags>0</flags>
+		</GameObject>
 	</GameObjects>
 	<components>
 		<ComponentPool>
@@ -244,6 +254,26 @@
 			</component>
 			<component>
 				<UUID>b77b2ca6-b971-33f1-a834-a07077199931</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>ffdddad0-3d71-3d14-81fd-40f4667518ea</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>15aab857-ed48-38e4-ba4d-9c68c79dfc92</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>56284f74-a529-3eeb-bb64-10f52c5a1c00</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>5ba55a61-f52d-30d5-9028-970ef4b639c9</UUID>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -562,6 +592,42 @@
 					</property>
 				</config>
 			</component>
+			<component>
+				<UUID>15aab857-ed48-38e4-ba4d-9c68c79dfc92</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>5ba55a61-f52d-30d5-9028-970ef4b639c9</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
 		</ComponentPool>
 		<ComponentPool>
 			<type>CastFilter</type>
@@ -771,6 +837,20 @@
 					</property>
 				</config>
 			</component>
+			<component>
+				<UUID>15aab857-ed48-38e4-ba4d-9c68c79dfc92</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>factor</name>
+						<value>10</value>
+					</property>
+					<property>
+						<name>maxEmissionRate</name>
+						<value>10000</value>
+					</property>
+				</config>
+			</component>
 		</ComponentPool>
 		<ComponentPool>
 			<type>GroundWaveContinuousMode</type>
@@ -893,6 +973,18 @@
 									</property>
 								</object>
 							</item>
+							<item>
+								<object>
+									<property>
+										<name>materialKindName</name>
+										<value>blacksand</value>
+									</property>
+									<property>
+										<name>transformLink</name>
+										<link>15aab857-ed48-38e4-ba4d-9c68c79dfc92</link>
+									</property>
+								</object>
+							</item>
 						</collection>
 					</property>
 				</config>
@@ -1007,6 +1099,18 @@
 									</property>
 								</object>
 							</item>
+							<item>
+								<object>
+									<property>
+										<name>materialKindName</name>
+										<value>blacksand</value>
+									</property>
+									<property>
+										<name>transformLink</name>
+										<link>5ba55a61-f52d-30d5-9028-970ef4b639c9</link>
+									</property>
+								</object>
+							</item>
 						</collection>
 					</property>
 				</config>
@@ -1044,6 +1148,10 @@
 				<flags>35</flags>
 				<config>
 					<property>
+						<name>castShadows</name>
+						<value>0</value>
+					</property>
+					<property>
 						<name>Visible in ARCADE MODE</name>
 						<value>1</value>
 					</property>
@@ -1085,6 +1193,26 @@
 					</property>
 					<property>
 						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in KILL_CAM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in LOOK_AT_KILLER MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in TWIN_GUN MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in SM_STRATEGIC MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in SM_ENTITY_VIEW MODE</name>
 						<value>1</value>
 					</property>
 				</config>
@@ -1094,6 +1222,10 @@
 				<flags>35</flags>
 				<config>
 					<property>
+						<name>castShadows</name>
+						<value>0</value>
+					</property>
+					<property>
 						<name>Visible in ARCADE MODE</name>
 						<value>1</value>
 					</property>
@@ -1135,6 +1267,26 @@
 					</property>
 					<property>
 						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in KILL_CAM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in LOOK_AT_KILLER MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in TWIN_GUN MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in SM_STRATEGIC MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in SM_ENTITY_VIEW MODE</name>
 						<value>1</value>
 					</property>
 				</config>
@@ -1144,6 +1296,10 @@
 				<flags>35</flags>
 				<config>
 					<property>
+						<name>castShadows</name>
+						<value>0</value>
+					</property>
+					<property>
 						<name>Visible in ARCADE MODE</name>
 						<value>1</value>
 					</property>
@@ -1185,6 +1341,26 @@
 					</property>
 					<property>
 						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in KILL_CAM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in LOOK_AT_KILLER MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in TWIN_GUN MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in SM_STRATEGIC MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in SM_ENTITY_VIEW MODE</name>
 						<value>1</value>
 					</property>
 				</config>
@@ -1194,6 +1370,10 @@
 				<flags>35</flags>
 				<config>
 					<property>
+						<name>castShadows</name>
+						<value>0</value>
+					</property>
+					<property>
 						<name>Visible in ARCADE MODE</name>
 						<value>1</value>
 					</property>
@@ -1235,6 +1415,26 @@
 					</property>
 					<property>
 						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in KILL_CAM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in LOOK_AT_KILLER MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in TWIN_GUN MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in SM_STRATEGIC MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in SM_ENTITY_VIEW MODE</name>
 						<value>1</value>
 					</property>
 				</config>
@@ -1244,6 +1444,10 @@
 				<flags>35</flags>
 				<config>
 					<property>
+						<name>castShadows</name>
+						<value>0</value>
+					</property>
+					<property>
 						<name>Visible in ARCADE MODE</name>
 						<value>1</value>
 					</property>
@@ -1285,6 +1489,26 @@
 					</property>
 					<property>
 						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in KILL_CAM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in LOOK_AT_KILLER MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in TWIN_GUN MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in SM_STRATEGIC MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in SM_ENTITY_VIEW MODE</name>
 						<value>1</value>
 					</property>
 				</config>
@@ -1294,6 +1518,10 @@
 				<flags>35</flags>
 				<config>
 					<property>
+						<name>castShadows</name>
+						<value>0</value>
+					</property>
+					<property>
 						<name>Visible in ARCADE MODE</name>
 						<value>1</value>
 					</property>
@@ -1335,6 +1563,26 @@
 					</property>
 					<property>
 						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in KILL_CAM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in LOOK_AT_KILLER MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in TWIN_GUN MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in SM_STRATEGIC MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in SM_ENTITY_VIEW MODE</name>
 						<value>1</value>
 					</property>
 				</config>
@@ -1344,6 +1592,10 @@
 				<flags>35</flags>
 				<config>
 					<property>
+						<name>castShadows</name>
+						<value>0</value>
+					</property>
+					<property>
 						<name>Visible in ARCADE MODE</name>
 						<value>1</value>
 					</property>
@@ -1385,6 +1637,26 @@
 					</property>
 					<property>
 						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in KILL_CAM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in LOOK_AT_KILLER MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in TWIN_GUN MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in SM_STRATEGIC MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in SM_ENTITY_VIEW MODE</name>
 						<value>1</value>
 					</property>
 				</config>
@@ -1394,6 +1666,10 @@
 				<flags>35</flags>
 				<config>
 					<property>
+						<name>castShadows</name>
+						<value>0</value>
+					</property>
+					<property>
 						<name>Visible in ARCADE MODE</name>
 						<value>1</value>
 					</property>
@@ -1435,6 +1711,26 @@
 					</property>
 					<property>
 						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in KILL_CAM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in LOOK_AT_KILLER MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in TWIN_GUN MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in SM_STRATEGIC MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in SM_ENTITY_VIEW MODE</name>
 						<value>1</value>
 					</property>
 				</config>
@@ -1444,6 +1740,10 @@
 				<flags>35</flags>
 				<config>
 					<property>
+						<name>castShadows</name>
+						<value>0</value>
+					</property>
+					<property>
 						<name>Visible in ARCADE MODE</name>
 						<value>1</value>
 					</property>
@@ -1485,6 +1785,26 @@
 					</property>
 					<property>
 						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in KILL_CAM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in LOOK_AT_KILLER MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in TWIN_GUN MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in SM_STRATEGIC MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in SM_ENTITY_VIEW MODE</name>
 						<value>1</value>
 					</property>
 				</config>
@@ -1494,6 +1814,10 @@
 				<flags>35</flags>
 				<config>
 					<property>
+						<name>castShadows</name>
+						<value>0</value>
+					</property>
+					<property>
 						<name>Visible in ARCADE MODE</name>
 						<value>1</value>
 					</property>
@@ -1535,6 +1859,26 @@
 					</property>
 					<property>
 						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in KILL_CAM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in LOOK_AT_KILLER MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in TWIN_GUN MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in SM_STRATEGIC MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in SM_ENTITY_VIEW MODE</name>
 						<value>1</value>
 					</property>
 				</config>
@@ -1544,6 +1888,10 @@
 				<flags>35</flags>
 				<config>
 					<property>
+						<name>castShadows</name>
+						<value>0</value>
+					</property>
+					<property>
 						<name>Visible in ARCADE MODE</name>
 						<value>1</value>
 					</property>
@@ -1585,6 +1933,26 @@
 					</property>
 					<property>
 						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in KILL_CAM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in LOOK_AT_KILLER MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in TWIN_GUN MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in SM_STRATEGIC MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in SM_ENTITY_VIEW MODE</name>
 						<value>1</value>
 					</property>
 				</config>
@@ -1594,6 +1962,10 @@
 				<flags>35</flags>
 				<config>
 					<property>
+						<name>castShadows</name>
+						<value>0</value>
+					</property>
+					<property>
 						<name>Visible in ARCADE MODE</name>
 						<value>1</value>
 					</property>
@@ -1635,6 +2007,26 @@
 					</property>
 					<property>
 						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in KILL_CAM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in LOOK_AT_KILLER MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in TWIN_GUN MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in SM_STRATEGIC MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in SM_ENTITY_VIEW MODE</name>
 						<value>1</value>
 					</property>
 				</config>
@@ -1644,6 +2036,10 @@
 				<flags>35</flags>
 				<config>
 					<property>
+						<name>castShadows</name>
+						<value>0</value>
+					</property>
+					<property>
 						<name>Visible in ARCADE MODE</name>
 						<value>1</value>
 					</property>
@@ -1685,6 +2081,26 @@
 					</property>
 					<property>
 						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in KILL_CAM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in LOOK_AT_KILLER MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in TWIN_GUN MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in SM_STRATEGIC MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in SM_ENTITY_VIEW MODE</name>
 						<value>1</value>
 					</property>
 				</config>
@@ -1694,6 +2110,10 @@
 				<flags>35</flags>
 				<config>
 					<property>
+						<name>castShadows</name>
+						<value>0</value>
+					</property>
+					<property>
 						<name>Visible in ARCADE MODE</name>
 						<value>1</value>
 					</property>
@@ -1735,6 +2155,174 @@
 					</property>
 					<property>
 						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in KILL_CAM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in LOOK_AT_KILLER MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in TWIN_GUN MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in SM_STRATEGIC MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in SM_ENTITY_VIEW MODE</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>15aab857-ed48-38e4-ba4d-9c68c79dfc92</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>castShadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in SNIPER MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in STRATEGIC MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in ARTY MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in POSTMORTEM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in RESPAWN_DEATH MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DEATH_FREE_CAM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DUAL_GUN MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in KILL_CAM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in LOOK_AT_KILLER MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in TWIN_GUN MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in SM_STRATEGIC MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in SM_ENTITY_VIEW MODE</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>5ba55a61-f52d-30d5-9028-970ef4b639c9</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>castShadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in SNIPER MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in STRATEGIC MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in ARTY MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in POSTMORTEM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in RESPAWN_DEATH MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DEATH_FREE_CAM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DUAL_GUN MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in KILL_CAM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in LOOK_AT_KILLER MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in TWIN_GUN MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in SM_STRATEGIC MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in SM_ENTITY_VIEW MODE</name>
 						<value>1</value>
 					</property>
 				</config>
@@ -1883,6 +2471,26 @@
 					</property>
 				</config>
 			</component>
+			<component>
+				<UUID>15aab857-ed48-38e4-ba4d-9c68c79dfc92</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>destroyDelay</name>
+						<value>5</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>5ba55a61-f52d-30d5-9028-970ef4b639c9</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>destroyDelay</name>
+						<value>5</value>
+					</property>
+				</config>
+			</component>
 		</ComponentPool>
 		<ComponentPool>
 			<type>DetachableGameObjectsHandler</type>
@@ -1916,6 +2524,38 @@
 						<name>oneTimeEffect</name>
 						<value>0</value>
 					</property>
+					<property>
+						<name>tintColour</name>
+						<value>1 1 1 1</value>
+					</property>
+					<property>
+						<name>opacity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>epicenterOffset</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>emissionSize</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>startSpeed</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>gravity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>windWeight</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>fps</name>
+						<value>1</value>
+					</property>
 				</config>
 			</component>
 			<component>
@@ -1938,6 +2578,38 @@
 					<property>
 						<name>oneTimeEffect</name>
 						<value>0</value>
+					</property>
+					<property>
+						<name>tintColour</name>
+						<value>1 1 1 1</value>
+					</property>
+					<property>
+						<name>opacity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>epicenterOffset</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>emissionSize</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>startSpeed</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>gravity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>windWeight</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>fps</name>
+						<value>1</value>
 					</property>
 				</config>
 			</component>
@@ -1962,6 +2634,38 @@
 						<name>oneTimeEffect</name>
 						<value>0</value>
 					</property>
+					<property>
+						<name>tintColour</name>
+						<value>1 1 1 1</value>
+					</property>
+					<property>
+						<name>opacity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>epicenterOffset</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>emissionSize</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>startSpeed</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>gravity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>windWeight</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>fps</name>
+						<value>1</value>
+					</property>
 				</config>
 			</component>
 			<component>
@@ -1984,6 +2688,38 @@
 					<property>
 						<name>oneTimeEffect</name>
 						<value>0</value>
+					</property>
+					<property>
+						<name>tintColour</name>
+						<value>1 1 1 1</value>
+					</property>
+					<property>
+						<name>opacity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>epicenterOffset</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>emissionSize</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>startSpeed</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>gravity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>windWeight</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>fps</name>
+						<value>1</value>
 					</property>
 				</config>
 			</component>
@@ -2008,6 +2744,38 @@
 						<name>oneTimeEffect</name>
 						<value>0</value>
 					</property>
+					<property>
+						<name>tintColour</name>
+						<value>1 1 1 1</value>
+					</property>
+					<property>
+						<name>opacity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>epicenterOffset</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>emissionSize</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>startSpeed</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>gravity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>windWeight</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>fps</name>
+						<value>1</value>
+					</property>
 				</config>
 			</component>
 			<component>
@@ -2030,6 +2798,38 @@
 					<property>
 						<name>oneTimeEffect</name>
 						<value>0</value>
+					</property>
+					<property>
+						<name>tintColour</name>
+						<value>1 1 1 1</value>
+					</property>
+					<property>
+						<name>opacity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>epicenterOffset</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>emissionSize</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>startSpeed</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>gravity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>windWeight</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>fps</name>
+						<value>1</value>
 					</property>
 				</config>
 			</component>
@@ -2054,6 +2854,38 @@
 						<name>oneTimeEffect</name>
 						<value>0</value>
 					</property>
+					<property>
+						<name>tintColour</name>
+						<value>1 1 1 1</value>
+					</property>
+					<property>
+						<name>opacity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>epicenterOffset</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>emissionSize</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>startSpeed</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>gravity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>windWeight</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>fps</name>
+						<value>1</value>
+					</property>
 				</config>
 			</component>
 			<component>
@@ -2075,6 +2907,38 @@
 					</property>
 					<property>
 						<name>oneTimeEffect</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>tintColour</name>
+						<value>1 1 1 1</value>
+					</property>
+					<property>
+						<name>opacity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>epicenterOffset</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>emissionSize</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>startSpeed</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>gravity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>windWeight</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>fps</name>
 						<value>1</value>
 					</property>
 				</config>
@@ -2100,6 +2964,38 @@
 						<name>oneTimeEffect</name>
 						<value>1</value>
 					</property>
+					<property>
+						<name>tintColour</name>
+						<value>1 1 1 1</value>
+					</property>
+					<property>
+						<name>opacity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>epicenterOffset</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>emissionSize</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>startSpeed</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>gravity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>windWeight</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>fps</name>
+						<value>1</value>
+					</property>
 				</config>
 			</component>
 			<component>
@@ -2121,6 +3017,38 @@
 					</property>
 					<property>
 						<name>oneTimeEffect</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>tintColour</name>
+						<value>1 1 1 1</value>
+					</property>
+					<property>
+						<name>opacity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>epicenterOffset</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>emissionSize</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>startSpeed</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>gravity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>windWeight</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>fps</name>
 						<value>1</value>
 					</property>
 				</config>
@@ -2146,6 +3074,38 @@
 						<name>oneTimeEffect</name>
 						<value>1</value>
 					</property>
+					<property>
+						<name>tintColour</name>
+						<value>1 1 1 1</value>
+					</property>
+					<property>
+						<name>opacity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>epicenterOffset</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>emissionSize</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>startSpeed</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>gravity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>windWeight</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>fps</name>
+						<value>1</value>
+					</property>
 				</config>
 			</component>
 			<component>
@@ -2167,6 +3127,38 @@
 					</property>
 					<property>
 						<name>oneTimeEffect</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>tintColour</name>
+						<value>1 1 1 1</value>
+					</property>
+					<property>
+						<name>opacity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>epicenterOffset</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>emissionSize</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>startSpeed</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>gravity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>windWeight</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>fps</name>
 						<value>1</value>
 					</property>
 				</config>
@@ -2192,6 +3184,38 @@
 						<name>oneTimeEffect</name>
 						<value>1</value>
 					</property>
+					<property>
+						<name>tintColour</name>
+						<value>1 1 1 1</value>
+					</property>
+					<property>
+						<name>opacity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>epicenterOffset</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>emissionSize</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>startSpeed</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>gravity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>windWeight</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>fps</name>
+						<value>1</value>
+					</property>
 				</config>
 			</component>
 			<component>
@@ -2213,6 +3237,148 @@
 					</property>
 					<property>
 						<name>oneTimeEffect</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>tintColour</name>
+						<value>1 1 1 1</value>
+					</property>
+					<property>
+						<name>opacity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>epicenterOffset</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>emissionSize</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>startSpeed</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>gravity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>windWeight</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>fps</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>15aab857-ed48-38e4-ba4d-9c68c79dfc92</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>effect</name>
+						<isAsset>true</isAsset>
+						<value>particles/Tank/auto_shoot/shots/gw_50mb_ground.eff</value>
+					</property>
+					<property>
+						<name>Rate</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>autoStart</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>oneTimeEffect</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>tintColour</name>
+						<value>1 1 1 1</value>
+					</property>
+					<property>
+						<name>opacity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>epicenterOffset</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>emissionSize</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>startSpeed</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>gravity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>windWeight</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>fps</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>5ba55a61-f52d-30d5-9028-970ef4b639c9</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>effect</name>
+						<isAsset>true</isAsset>
+						<value>particles/Tank/auto_shoot/shots/gw_50mb_ground_start.eff</value>
+					</property>
+					<property>
+						<name>Rate</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>autoStart</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>oneTimeEffect</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>tintColour</name>
+						<value>1 1 1 1</value>
+					</property>
+					<property>
+						<name>opacity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>epicenterOffset</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>emissionSize</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>startSpeed</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>gravity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>windWeight</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>fps</name>
 						<value>1</value>
 					</property>
 				</config>

@@ -27,6 +27,7 @@ _AVAILABLE_GUI_TYPES_LABELS = {constants.ARENA_BONUS_TYPE.REGULAR: constants.ARE
    constants.ARENA_BONUS_TYPE.TOURNAMENT_REGULAR: constants.ARENA_GUI_TYPE.TRAINING}
 _AVAILABLE_BONUS_TYPES_LABELS = {constants.ARENA_BONUS_TYPE.CYBERSPORT: 'team7x7'}
 _RELATIONS = formatters.RELATIONS
+_ALL_RELATIONS = _RELATIONS.ALL()
 _RELATIONS_SCHEME = formatters.RELATIONS_SCHEME
 _ET = constants.EVENT_TYPE
 _TOKEN_REQUIREMENT_QUESTS = set(_ET.LIKE_BATTLE_QUESTS + _ET.LIKE_TOKEN_QUESTS)
@@ -57,6 +58,11 @@ class GROUP_TYPE(CONST_CONTAINER):
     AND = 'and'
 
 
+class CLASS_TYPE(CONST_CONTAINER):
+    CONDITION = 'Condition'
+    CONDITION_GROUP = 'ConditionsGroup'
+
+
 _SORT_ORDER = ('igrType', 'premiumPlusAccount', 'premiumAccount', 'inClan', 'GR', 'accountDossier',
                'vehiclesUnlocked', 'vehiclesOwned', 'token', 'hasReceivedMultipliedXP',
                'vehicleDossier', 'vehicleDescr', 'customization', 'bonusTypes', 'isSquad',
@@ -83,7 +89,7 @@ def _handleRelation(relation, source, toCompare):
 
 
 def _findRelation(condDataKeys):
-    res = set(_RELATIONS.ALL()) & set(condDataKeys)
+    res = set(_ALL_RELATIONS) & set(condDataKeys)
     if res:
         return res.pop()
     else:
@@ -173,7 +179,7 @@ class _Condition(_Typeable):
 
     @property
     def classType(self):
-        return 'Condition'
+        return CLASS_TYPE.CONDITION
 
     def getName(self):
         return self._name
@@ -235,7 +241,7 @@ class _ConditionsGroup(_AvailabilityCheckable, _Negatable, _Typeable):
 
     @property
     def classType(self):
-        return 'ConditionsGroup'
+        return CLASS_TYPE.CONDITION_GROUP
 
     def getName(self):
         return self.type

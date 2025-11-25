@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB137_Cromwell_Applique/normal/lod3/Gun_01</nodefullVisual>
+	<parent>vehicles/british/GB137_Cromwell_Applique/normal/lod4/Gun_01</parent>
+	<extent>192</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.328182 -0.270159 -0.009787</min>
+		<max>
+			0.2387 0.289541 1.369215
+			<!--BW_String-->
+		</max>
+	</visibilityBox>
+</root>

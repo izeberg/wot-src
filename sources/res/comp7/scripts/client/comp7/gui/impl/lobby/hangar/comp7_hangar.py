@@ -1,12 +1,17 @@
 from __future__ import absolute_import
 import logging, typing
+from account_helpers.AccountSettings import HANGAR_VIEW_SETTINGS, HANGAR_KEY_BINDINGS
 from comp7.gui.Scaleform.genConsts.COMP7_HANGAR_ALIASES import COMP7_HANGAR_ALIASES
 from comp7.gui.impl.lobby.comp7_helpers.comp7_shared import getComp7Criteria
 from gui.Scaleform.framework.entities.View import ViewKey
 from gui.Scaleform.lobby_entry import getLobbyStateMachine
+from gui.impl.gen.view_models.views.lobby.hangar.hangar_settings_model import HangarSettingsModel
+from gui.impl.gen.view_models.views.lobby.hangar.key_bindings_model import KeyBindingsModel
+from gui.impl.lobby.common.presenters.settings_presenter import SettingsPresenter
 from gui.impl.lobby.hangar.base.account_styles import AccountStyles
 from gui.lobby_state_machine.router import SubstateRouter
 from shared_utils import nextTick
+from gui.impl.lobby.hangar.base.blur import RandomHangarBlur
 from ClientSelectableCameraObject import ClientSelectableCameraObject
 from CurrentVehicle import g_currentPreviewVehicle, g_currentVehicle
 from PlayerEvents import g_playerEvents
@@ -45,6 +50,7 @@ from gui.shared.event_dispatcher import showLobbyMenu
 from hangar_selectable_objects import HangarSelectableLogic
 from helpers import dependency
 from helpers.statistics import HANGAR_LOADING_STATE
+from skeletons.gui.shared.utils import IHangarSpace
 from skeletons.helpers.statistics import IStatisticsCollector
 if typing.TYPE_CHECKING:
     from gui.impl.pub.view_impl import TViewModel
@@ -66,6 +72,7 @@ class Comp7HangarWindow(WindowImpl):
 
 class Comp7Hangar(ViewComponent[RouterModel], IRoutableView):
     _COMMON_SOUND_SPACE = RANDOM_HANGAR_SOUND_SPACE
+    __hangarSpace = dependency.descriptor(IHangarSpace)
 
     def __init__(self, layoutId=R.views.comp7.mono.lobby.hangar(), model=RouterModel):
         super(Comp7Hangar, self).__init__(layoutId, model)
@@ -75,7 +82,12 @@ class Comp7Hangar(ViewComponent[RouterModel], IRoutableView):
         self.__carouselFilter = Comp7CarouselFilter()
         self.__carouselFilter.setDisabledUpdateCriteries(True)
         self.__accountStyles = AccountStyles()
+        self.__blur = RandomHangarBlur()
         return
+
+    @property
+    def blur(self):
+        return self.__blur
 
     def getRouterModel(self):
         return self.getViewModel()
@@ -96,6 +108,8 @@ class Comp7Hangar(ViewComponent[RouterModel], IRoutableView):
            hangar.Teaser(): TeaserPresenter, 
            hangar.HeroTank(): HeroTankPresenter, 
            hangar.OptionalDevicesAssistant(): Comp7OptionalDevicesAssistantPresenter, 
+           hangar.Settings(): lambda : SettingsPresenter(HangarSettingsModel, HANGAR_VIEW_SETTINGS), 
+           hangar.KeyBindings(): lambda : SettingsPresenter(KeyBindingsModel, HANGAR_KEY_BINDINGS, readOnly=True), 
            comp7Hangar.AlertMessage(): AlertMessagePresenter, 
            comp7Hangar.Schedule(): SchedulePresenter, 
            comp7Hangar.SeasonModifier(): SeasonModifierPresenter, 
@@ -114,6 +128,7 @@ class Comp7Hangar(ViewComponent[RouterModel], IRoutableView):
         self.__inputManager = self.__app.gameInputManager
         self.__vehicleFilter.initialize()
         self.__accountStyles.initialize()
+        self.__blur.init()
         super(Comp7Hangar, self)._onLoading(*args, **kwargs)
 
     def _onShown(self):
@@ -142,6 +157,8 @@ class Comp7Hangar(ViewComponent[RouterModel], IRoutableView):
         self.__inputManager = None
         self.__accountStyles.destroy()
         self.__accountStyles = None
+        self.__blur.destroy()
+        self.__blur = None
         return
 
     @app_getter

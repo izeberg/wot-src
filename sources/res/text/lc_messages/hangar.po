@@ -119,6 +119,12 @@ msgstr "Trade-in"
 msgid "carousel/filters/allVehicle"
 msgstr "All My Vehicles"
 
+msgid "myVehicles/buttons/crewToggle"
+msgstr "Crew"
+
+msgid "myVehicles/buttons/ttcToggle"
+msgstr "Characteristics"
+
 msgid "rentalCounter/count/battles"
 msgid_plural "plural/rentalCounter/count/battles"
 msgstr[0] "{{count}} battle"
@@ -148,6 +154,27 @@ msgstr "Click to go to your vehicle playlists"
 
 msgid "tooltip/filters/myVehicle/header"
 msgstr "My Vehicles"
+
+msgid "vehicleMenu/menuButton/tooltip/crew/body"
+msgstr "Crew training, retraining, and management."
+
+msgid "vehicleMenu/menuButton/tooltip/crew/header"
+msgstr "Crew Management"
+
+msgid "vehicleMenu/menuButton/tooltip/customization/body"
+msgstr "Vehicle customization: applying 2D/3D styles and other elements."
+
+msgid "vehicleMenu/menuButton/tooltip/customization/header"
+msgstr "Customization"
+
+msgid "vehicleMenu/menuButton/tooltip/hotkey/title"
+msgstr "Press to open"
+
+msgid "vehicleMenu/menuButton/tooltip/vehicle/body"
+msgstr "Vehicle Information, research, comparison, and repair."
+
+msgid "vehicleMenu/menuButton/tooltip/vehicle/header"
+msgstr "Vehicle Management"
 
 msgid "vehicleMenu/menuItem/aboutVehicle/title"
 msgstr "ABOUT VEHICLE"

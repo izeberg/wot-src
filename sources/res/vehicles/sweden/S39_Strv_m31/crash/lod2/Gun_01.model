@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/sweden/S39_Strv_m31/crash/lod2/Gun_01</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/sweden/S39_Strv_m31/crash/lod3/Gun_01</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-0.497998 -0.237862 -0.474591</min>
+		<max>0.328361 0.228475 1.220941</max>
+	</visibilityBox>
+</root>

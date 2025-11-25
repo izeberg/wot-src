@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.415271 -0.007773 -2.985755</min>
+		<max>1.414003 1.071189 3.007406</max>
+	</visibilityBox>
+	<parent>vehicles/british/GB137_Cromwell_Applique/normal/lod3/Chassis</parent>
+	<extent>96.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/british/GB137_Cromwell_Applique/normal/lod2/Chassis</nodefullVisual>
+</root>

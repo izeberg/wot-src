@@ -17,7 +17,7 @@ from gui.impl.gen.view_models.views.lobby.battle_pass.post_progression_view_mode
 from gui.impl.pub.view_component import ViewComponent
 from gui.impl.wrappers.function_helpers import replaceNoneKwargsModel
 from gui.lootbox_system.base.common import ViewID, Views
-from gui.shared.event_dispatcher import showBattlePass, showBattlePassHowToEarnPointsView, showBattlePassTankmenVoiceover, showBrowserOverlayView, showShop
+from gui.shared.event_dispatcher import showBattlePassHowToEarnPointsView, showBattlePassTankmenVoiceover, showBrowserOverlayView, showShop
 from helpers import dependency, time_utils
 from shared_utils import first
 from skeletons.gui.game_control import IBattlePassController, ICollectionsSystemController, ILootBoxSystemController
@@ -70,7 +70,7 @@ class PostProgressionPresenter(ViewComponent[PostProgressionViewModel]):
         self.__fillModel()
 
     def onExtraChapterExpired(self):
-        self.__checkBattlePassState()
+        self.__fillModel()
 
     def _onLoading(self, *args, **kwargs):
         super(PostProgressionPresenter, self)._onLoading(*args, **kwargs)
@@ -257,10 +257,8 @@ class PostProgressionPresenter(ViewComponent[PostProgressionViewModel]):
         return False
 
     def __checkBattlePassState(self, *_):
-        if self.__battlePass.isPaused():
-            showBattlePass()
-            return
-        self.__fillModel()
+        if not self.__battlePass.isPaused():
+            self.__fillModel()
 
     @staticmethod
     def __showInfoPage():

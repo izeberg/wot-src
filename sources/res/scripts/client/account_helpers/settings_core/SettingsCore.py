@@ -432,6 +432,8 @@ class SettingsCore(ISettingsCore):
          (
           SOUND.ARTY_SHOT_ALERT_SOUND, options.ArtyShotAlertSound(SOUND.ARTY_SHOT_ALERT_SOUND)),
          (
+          SOUND.PHYSICS_QUALITY, options.PhysicsQualitySoundSettings()),
+         (
           SOUND.GAME_EVENT_AMBIENT, options.SoundSetting('ev_ambient')),
          (
           SOUND.GAME_EVENT_EFFECTS, options.SoundSetting('ev_effects')),

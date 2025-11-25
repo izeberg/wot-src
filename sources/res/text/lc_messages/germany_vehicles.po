@@ -56,11 +56,11 @@ msgstr ""
 
 msgid "Auf_Panther_long_special"
 msgstr ""
-"This German light tank demonstrates high firing efficiency. Its accurate "
-"gun, remarkable gun depression/elevation angles, and high shell velocity "
-"allow for effective combat when using the terrain irregularities. However, "
-"its mediocre damage per shot keeps this vehicle from fighting capably in "
-"close-range encounters, but makes it a great sniper."
+"This German light tank demonstrates high firing efficiency. Its accurate gun"
+" with remarkable depression and high shell velocity allows for effective "
+"combat when using terrain irregularities. Mediocre damage per shot keeps "
+"this vehicle from fighting capably in close-range encounters, but it remains"
+" a great sniper."
 
 msgid "Auf_Panther_short"
 msgstr "Aufkl.Panther"
@@ -486,6 +486,9 @@ msgstr "15 tonnin rynnäkkötykkipanssarivaunu BT-42"
 
 msgid "Chassis_G174_Kpz3_GST_Turm"
 msgstr "Kampfpanzer 3 GST Turm"
+
+msgid "Chassis_G175_Rheinmetall_Begleitwagen"
+msgstr "Rheinmetall Begleitwagen"
 
 msgid "Chassis_G176_Jagdpanzer_E90"
 msgstr "Jagdpanzer E 90"
@@ -1094,6 +1097,9 @@ msgstr "FuG 5 A"
 
 msgid "FuG6"
 msgstr "FuG 6"
+
+msgid "FuG6_SE20v"
+msgstr "FuG 6 SE20v"
 
 msgid "FuG7"
 msgstr "FuG 7"
@@ -2229,12 +2235,11 @@ msgstr ""
 
 msgid "G147_Kunze_Panzer_long_special"
 msgstr ""
-"A Tier IX German medium tank with great dynamics and high concealment and "
-"view range characteristics. Siege mode allows this vehicle to increase its "
-"gun accuracy and depression/elevation angles, while Travel mode improves its"
-" rate of fire and helps it change position quickly. However, always keep in "
-"mind that, due to its low survivability, this tank cannot withstand enemy "
-"fire for too long."
+"A Tier IX German medium tank with great dynamics and good concealment and "
+"view range values. Siege mode increases the vehicle's gun accuracy and "
+"depression, while Travel mode improves the fire rate and helps it change "
+"position quickly. However, keep in mind that low survivability means this "
+"tank cannot withstand enemy fire for long."
 
 msgid "G147_Kunze_Panzer_short"
 msgstr "Kunze Panzer"
@@ -2640,11 +2645,11 @@ msgstr ""
 
 msgid "G169_T_54D_long_special"
 msgstr ""
-"Modernized version of the German T-54. The modification received improved "
-"armor and a modern British 105 mm L7A3 gun. The general approach to "
-"modernization of the T-54 caused some increase in the combat weight of the "
-"vehicle, but the combination of improved firepower and protection resulted "
-"in a significant increase in the tank's combat effectiveness."
+"A modernized version of the German T-54. The modification had improved armor"
+" and a modern British 105 mm L7A3 gun. The general approach to modernizing "
+"the T-54 increased the vehicle's combat weight to some degree, but the "
+"combination of improved firepower and protection significantly improved "
+"combat effectiveness."
 
 msgid "G169_T_54D_short"
 msgstr "T 54D"
@@ -2817,6 +2822,36 @@ msgstr "GST Turm"
 
 msgid "G174_Kpz3_GST_Turm_short_special"
 msgstr "Solid frontal armor, automatic hydropneumatic suspension"
+
+msgid "G175_Rheinmetall_Begleitwagen"
+msgstr "Rheinmetall Begleitwagen"
+
+msgid "G175_Rheinmetall_Begleitwagen_desc"
+msgstr ""
+"In the second half of 1934, the Germans started developing a tank designated"
+" as the Verbesserten Nb.Fz. The Rheinmetall company was responsible for its "
+"design. The vehicle was supposed to weigh 17-18 tons. Its armament consisted"
+" of a short-barreled 75 mm gun and a coaxial machine gun. Another machine "
+"gun was placed on a small turret at the front of the hull. Higher-density "
+"configuration with the transmission in the front helped dramatically reduce "
+"the hull length. There were also plans to use a special V-shaped 10-liter "
+"12-cylinder Maybach HL 100 TR engine with 300 h.p. of power. Rheinmetall "
+"produced a life-size wooden mockup, and later a chassis out of construction "
+"steel. Many improvements were made to the latter, but it did not become the "
+"base for the mass-produced tank."
+
+msgid "G175_Rheinmetall_Begleitwagen_long_special"
+msgstr ""
+"The Rheinmetall Begleitwagen is a Tier III German medium tank. It has a 7.5 "
+"cm gun with impressive damage per shot. The vehicle's armor is average for "
+"its tier, while it has decent mobility. This Begleitwagen is most effective "
+"when trading shots at close range, making use of its high alpha."
+
+msgid "G175_Rheinmetall_Begleitwagen_short"
+msgstr "B.W.(Rh) "
+
+msgid "G175_Rheinmetall_Begleitwagen_short_special"
+msgstr "Powerful gun, decent mobility"
 
 msgid "G176_Jagdpanzer_E90"
 msgstr "Jagdpanzer E 90"
@@ -4200,6 +4235,9 @@ msgstr "2 x Maybach HL 66 P"
 
 msgid "Maybach_HL90"
 msgstr "Maybach HL 90"
+
+msgid "Maybach_HL_100TR_BW"
+msgstr "Maybach HL 100 TR BW"
 
 msgid "Maybach_HL_100_WT_IV"
 msgstr "Maybach HL 100 (WT IV)"
@@ -5784,6 +5822,9 @@ msgstr "BT-rynnäkkötykki"
 
 msgid "Turret_1_G174_Kpz3_GST_Turm"
 msgstr "Kampfpanzer 3 GST Turm"
+
+msgid "Turret_1_G175_Rheinmetall_Begleitwagen"
+msgstr "Rheinmetall Begleitwagen"
 
 msgid "Turret_1_G176_Jagdpanzer_E90"
 msgstr "Jagdpanzer E 90"
@@ -7794,11 +7835,20 @@ msgstr "APCBC"
 msgid "_75mm_Flak_L60"
 msgstr "7,5 cm Flak L/60"
 
+msgid "_75mm_Gr_38_HL_C"
+msgstr "Gr 38 HL C"
+
+msgid "_75mm_K_Gr_rot_Pz_C"
+msgstr "K.Gr.rot.Pz.C"
+
 msgid "_75mm_KwK41_L58U_conic"
 msgstr "7,5/5,5 cm Waffe SP"
 
 msgid "_75mm_KwK45_L100"
 msgstr "7,5 cm Kw.K. L/100"
+
+msgid "_75mm_KwK_36_L21"
+msgstr "7,5 cm Kw.K. 36 L/21"
 
 msgid "_75mm_KwK_37_L24"
 msgstr "7,5 cm Kw.K. 37 L/24"
@@ -8012,6 +8062,9 @@ msgstr "Sprgr.Patr 18"
 
 msgid "_75mm_Sprg_18_B"
 msgstr "Sprgr. 18 (B)"
+
+msgid "_75mm_Sprg_34_C"
+msgstr "Sprgr 34 C"
 
 msgid "_75mm_Sprgr_18L_G"
 msgstr "Sprgr. 18L (G)"

@@ -1812,51 +1812,6 @@
 					<!--BW_String-->
 				</anchorShift>
 			</slot>
-			<slot>
-				<slotType>attachment</slotType>
-				<slotId>18000</slotId>
-				<position>-0.438124 0.335669 -3.982802</position>
-				<rotation>-0.017453 -1.569051 1.570796</rotation>
-				<scale>
-					0.999999 0.999999 1
-					<!--BW_String-->
-				</scale>
-				<applyType>universal</applyType>
-				<size>medium</size>
-			</slot>
-			<slot>
-				<slotType>attachment</slotType>
-				<slotId>18001</slotId>
-				<position>-1.700326 0.201215 -0.570452</position>
-				<rotation>
-					0 0 1.429557
-					<!--BW_String-->
-				</rotation>
-				<scale>
-					0.999999 0.999999 1
-					<!--BW_String-->
-				</scale>
-				<applyType>universal</applyType>
-				<size>medium</size>
-			</slot>
-			<slot>
-				<slotType>attachment</slotType>
-				<slotId>18002</slotId>
-				<position>
-					1.69842 0.201215 -0.570452
-					<!--BW_String-->
-				</position>
-				<rotation>
-					-0 3.139847 1.429599
-					<!--BW_String-->
-				</rotation>
-				<scale>
-					0.999999 0.999999 1
-					<!--BW_String-->
-				</scale>
-				<applyType>universal</applyType>
-				<size>medium</size>
-			</slot>
 		</customizationSlots>
 		<customization>
 			<customizableVehicleAreas>
@@ -3123,10 +3078,7 @@
 						0.38
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>
-						5.6
-						<!--BW_String-->
-					</reloadTime>
+					<reloadTime>6</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
 							0.12
@@ -3157,10 +3109,7 @@
 						</chargeTime>
 						<shootImpulse>200</shootImpulse>
 						<reloadLockTime>1</reloadLockTime>
-						<reloadTimes>
-							5.6 5.6
-							<!--BW_String-->
-						</reloadTimes>
+						<reloadTimes>6 6</reloadTimes>
 						<rateTime>
 							2.5
 							<!--BW_String-->
@@ -3953,24 +3902,6 @@
 						<!--BW_String-->
 					</anchorShift>
 				</slot>
-				<slot>
-					<slotType>attachment</slotType>
-					<slotId>38000</slotId>
-					<position>0.771069 0.999592 0.702883</position>
-					<rotation>-0 -0 0</rotation>
-					<scale>1 1 1</scale>
-					<applyType>gunMantlet</applyType>
-					<size>medium</size>
-				</slot>
-				<slot>
-					<slotType>attachment</slotType>
-					<slotId>38001</slotId>
-					<position>0.174861 1.002046 -1.131634</position>
-					<rotation>-0 -0 0</rotation>
-					<scale>1 1 1</scale>
-					<applyType>turret</applyType>
-					<size>medium</size>
-				</slot>
 			</customizationSlots>
 			<physicsShape>
 				1.004 0.001 1.011 0 0.705 0.114 0 0.594 0.26 0.523 0.276 0.5 0 0 0
@@ -4052,4 +3983,5 @@
 			<!--BW_String-->
 		</alpha>
 	</emblems>
+	<baseColorID>6</baseColorID>
 </root>

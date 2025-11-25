@@ -10,7 +10,8 @@ from helpers import dependency
 from skeletons.gui.shared import IItemsCache
 if typing.TYPE_CHECKING:
     from gui.shared.utils.requesters import RequestCriteria
-_VEHICLE_UPDATES = (CACHE_SYNC_REASON.SHOP_RESYNC,
+_VEHICLE_UPDATES = (
+ CACHE_SYNC_REASON.SHOP_RESYNC,
  CACHE_SYNC_REASON.DOSSIER_RESYNC,
  CACHE_SYNC_REASON.CLIENT_UPDATE)
 

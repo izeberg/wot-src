@@ -222,7 +222,10 @@ package net.wg.gui.lobby.battleResults
          this.creditsCounter.dispose();
          this.crystalsCounter.dispose();
          this.xpCounter.dispose();
-         this._register.unregisterFlashComponentS(EPICBATTLES_ALIASES.EPIC_BATTLES_PROGRESS_INFO_ALIAS);
+         if(this._register.isFlashComponentRegisteredS(EPICBATTLES_ALIASES.EPIC_BATTLES_PROGRESS_INFO_ALIAS))
+         {
+            this._register.unregisterFlashComponentS(EPICBATTLES_ALIASES.EPIC_BATTLES_PROGRESS_INFO_ALIAS);
+         }
          this._register = null;
          this.progressInfo = null;
          this.noIncomeAlert = null;

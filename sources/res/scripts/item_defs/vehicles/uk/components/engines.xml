@@ -102,9 +102,11 @@
 		<Rolls_Royse_Meteor_MkIV_N>124</Rolls_Royse_Meteor_MkIV_N>
 		<Vauxhall_Bedford_Twin_Six_BPXIV>125</Vauxhall_Bedford_Twin_Six_BPXIV>
 		<Rolls_Royse_Meteor_MkIX>126</Rolls_Royse_Meteor_MkIX>
+		<Rolls_Royce_717>127</Rolls_Royce_717>
 		<Leyland_L60_No_4_Mk_1A_G>128</Leyland_L60_No_4_Mk_1A_G>
 		<Rolls_Royce_Meteor_M120A>131</Rolls_Royce_Meteor_M120A>
 		<Rolls_Royce_Meteor_GD>132</Rolls_Royce_Meteor_GD>
+		<Rolls_Royce_Meteor_A>133</Rolls_Royce_Meteor_A>
 		<Rolls_Royce_Griffon_180>134</Rolls_Royce_Griffon_180>
 		<Meteorite_M120_GSOR>135</Meteorite_M120_GSOR>
 		<Rolls_Royce_Griffon_180_B>136</Rolls_Royce_Griffon_180_B>
@@ -557,6 +559,7 @@
 			<tags>gasoline</tags>
 			<level>7</level>
 			<price>40000</price>
+			<notInShop>true</notInShop>
 			<wwsoundPC>eng_Ford_GAA_pc</wwsoundPC>
 			<wwsoundNPC>eng_Ford_GAA_npc</wwsoundNPC>
 			<power>650</power>
@@ -668,6 +671,26 @@
 			<rpm_min>632</rpm_min>
 			<rpm_max>2354</rpm_max>
 		</Rolls_Royce_Meteor_Mk_IVA>
+		<Rolls_Royce_Meteor_A>
+			<userString>#gb_vehicles:Rolls_Royce_Meteor_A</userString>
+			<tags>gasoline</tags>
+			<level>5</level>
+			<price>20000</price>
+			<notInShop>true</notInShop>
+			<wwsoundPC>eng_Ford_GAA_pc</wwsoundPC>
+			<wwsoundNPC>eng_Ford_GAA_npc</wwsoundNPC>
+			<power>600</power>
+			<weight>744</weight>
+			<maxHealth>170</maxHealth>
+			<maxRegenHealth>85</maxRegenHealth>
+			<repairCost>5</repairCost>
+			<fireStartingChance>
+				0.2
+				<!--BW_String-->
+			</fireStartingChance>
+			<rpm_min>700</rpm_min>
+			<rpm_max>2200</rpm_max>
+		</Rolls_Royce_Meteor_A>
 		<Rolls_Royce_Meteor_MkIV>
 			<userString>#gb_vehicles:Rolls_Royce_Meteor_MkIV</userString>
 			<tags>gasoline</tags>
@@ -2930,6 +2953,26 @@
 			<rpm_min>446</rpm_min>
 			<rpm_max>2170</rpm_max>
 		</Rolls_Royce_Meteor_M120A>
+		<Rolls_Royce_717>
+			<userString>#gb_vehicles:Rolls_Royce_717</userString>
+			<tags>diesel</tags>
+			<level>8</level>
+			<price>60000</price>
+			<notInShop>true</notInShop>
+			<wwsoundPC>eng_v55_pc</wwsoundPC>
+			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
+			<power>700</power>
+			<weight>775</weight>
+			<maxHealth>275</maxHealth>
+			<maxRegenHealth>138</maxRegenHealth>
+			<repairCost>8</repairCost>
+			<fireStartingChance>
+				0.15
+				<!--BW_String-->
+			</fireStartingChance>
+			<rpm_min>333</rpm_min>
+			<rpm_max>2200</rpm_max>
+		</Rolls_Royce_717>
 		<Wright_Continental_R-975EC2_A>
 			<userString>#gb_vehicles:Wright_Continental_R-975EC2_A</userString>
 			<shortUserString>#gb_vehicles:Wright_Continental_R-975EC2_A_short</shortUserString>

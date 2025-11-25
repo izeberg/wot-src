@@ -21,6 +21,8 @@ package net.wg.gui.lobby.settings
    {
       
       private static const TOOLTIP_PREFIX:String = "sounds/";
+      
+      private static const PHYSICS_SOUND_TOOLTIP_MAX_WIDTH:int = 300;
        
       
       public var masterVolumeToggleCheckbox:CheckBox = null;
@@ -78,6 +80,12 @@ package net.wg.gui.lobby.settings
       public var ambientVolumeSlider:Slider = null;
       
       public var ambientVolumeValue:LabelControl = null;
+      
+      public var physicsQualityLabel:LabelControl = null;
+      
+      public var physicsQualityDropDown:DropdownMenu = null;
+      
+      public var physicsQualityRecommendedBtn:SoundButtonEx = null;
       
       public var soundOtherFieldSet:FieldSet = null;
       
@@ -295,9 +303,15 @@ package net.wg.gui.lobby.settings
       override protected function configUI() : void
       {
          super.configUI();
+         this.physicsQualityRecommendedBtn.label = SETTINGS.SOUNDS_PHYSICSQUALITYRECOMMENDED;
          this.masterVolumeToggleCheckbox.label = SETTINGS.SOUNDS_MASTERVOLUMETOGGLE;
          this.masterVolumeLabel.text = SETTINGS.SOUNDS_MASTERVOLUME;
          this.masterVolumeValue.textAlign = TextFormatAlign.RIGHT;
+         this.physicsQualityLabel.owner = this;
+         this.physicsQualityLabel.belongsTo = this.physicsQualityDropDown;
+         this.physicsQualityLabel.infoIcoType = InfoIcon.TYPE_INFO;
+         this.physicsQualityLabel.toolTip = SETTINGS.SOUNDS_PHYSICSQUALITY;
+         this.physicsQualityLabel.tooltipMaxWidth = PHYSICS_SOUND_TOOLTIP_MAX_WIDTH;
          registerToolTip(this.bulbVoicesDropDown,SettingsConfigHelper.BULB_VOICES);
          registerToolTip(this.bulbVoicesLabel,SettingsConfigHelper.BULB_VOICES);
          registerToolTip(this.masterVolumeToggleCheckbox,SettingsConfigHelper.MASTER_VOLUME_TOGGLE);
@@ -306,6 +320,7 @@ package net.wg.gui.lobby.settings
          registerToolTip(this.soundQualityCheckbox,SettingsConfigHelper.SOUND_QUALITY);
          registerToolTip(this.artyBulbVoicesLabel,SettingsConfigHelper.ARTY_BULB_VOICES);
          registerToolTip(this.artyBulbVoicesDropDown,SettingsConfigHelper.ARTY_BULB_VOICES);
+         registerToolTip(this.physicsQualityRecommendedBtn,SettingsConfigHelper.PHYSICS_SOUND_QUALITY_RECOMMENDED);
       }
       
       override protected function getTooltipID(param1:String) : String
@@ -396,6 +411,12 @@ package net.wg.gui.lobby.settings
          this.specialMusicVolumeSlider = null;
          this.specialMusicVolumeValue = null;
          this.voiceAnimation = null;
+         this.physicsQualityRecommendedBtn.dispose();
+         this.physicsQualityRecommendedBtn = null;
+         this.physicsQualityLabel.dispose();
+         this.physicsQualityLabel = null;
+         this.physicsQualityDropDown.dispose();
+         this.physicsQualityDropDown = null;
          this.masterVolumeToggleCheckbox.dispose();
          this.masterVolumeToggleCheckbox = null;
          this.masterVolumeLabel.dispose();

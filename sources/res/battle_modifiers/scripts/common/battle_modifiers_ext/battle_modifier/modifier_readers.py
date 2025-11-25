@@ -7,27 +7,9 @@ from items.components.component_constants import KMH_TO_MS, MS_TO_KMH
 from modifier_helpers import makeUseTypeMethods
 from math import radians, degrees
 from renewable_subscription_common.config import readGoldReserveGains
-from soft_exception import SoftException
 g_cache = {}
-
-def _readInt(dataSection):
-    try:
-        int(dataSection.asString)
-    except ValueError:
-        raise SoftException('Expecting integer, got "%s"' % dataSection.asString)
-
-    return dataSection.asInt
-
-
-def _readFloat(dataSection):
-    try:
-        float(dataSection.asString)
-    except ValueError:
-        raise SoftException('Expecting float, got "%s"' % dataSection.asString)
-
-    return dataSection.asFloat
-
-
+_readInt = lambda dataSection: dataSection.asInt
+_readFloat = lambda dataSection: dataSection.asFloat
 _readString = lambda dataSection: dataSection.asString
 _readDict = lambda dataSection: {k:v.asString for k, v in dataSection.items()}
 _dataTypeReaders = {DataType.INT: {UseType.VAL: _readInt, 

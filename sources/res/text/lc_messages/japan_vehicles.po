@@ -232,6 +232,9 @@ msgstr "Type Mitsu 95"
 msgid "Chassis_J45_Mitsu_108_2"
 msgstr "Type Mitsu 108"
 
+msgid "Chassis_J48_Saryuda"
+msgstr "Saryuda"
+
 msgid "Chassis_J50_Type_1_Ho_Ni_II"
 msgstr "Type 1 Ho-Ni II"
 
@@ -312,6 +315,9 @@ msgstr "Experimental 57 mm Tank Gun Shin (2)"
 
 msgid "FuG5A"
 msgstr "Fu 5 mit 20 WS.E."
+
+msgid "HA_9_V_SAR"
+msgstr "Kawasaki Ha9 Army Type 98"
 
 msgid "J01_NC27"
 msgstr "Renault Otsu"
@@ -999,6 +1005,38 @@ msgstr ""
 msgid "J45_Mitsu_108_short"
 msgstr "Mitsu 108"
 
+msgid "J48_Saryuda"
+msgstr "Saryuda"
+
+msgid "J48_Saryuda_descr"
+msgstr ""
+"Expecting World War II to arrive at the coasts of the Empire, Japan began "
+"preparing for coastal defense of Honshu and the other islands of the "
+"archipelago. As a result, the task arose of creating a tank destroyer that "
+"would be capable of coastal defense and could also stand its ground against "
+"any Allied armored vehicles in land battles. As armament, various naval gun "
+"options were considered, which had been built but were no longer of use to "
+"the Imperial Navy. To increase the rate of fire, it was planned to mount a "
+"double-barreled gun system on a spacious welded turret. Additionally, to "
+"increase firepower, the vehicle would have been mounted with three machine "
+"guns (two bow guns and one rear-facing) and a 20 mm gun with a high fire "
+"rate on the turret. However, excessive weight and difficulty to produce led "
+"to the project being closed."
+
+msgid "J48_Saryuda_long_special"
+msgstr ""
+"The Saryuda is a Tier IX Japanese tank destroyer. It is equipped with a 12.7"
+" cm double-barrel gun that causes considerable damage with each shot and is "
+"especially deadly when firing from both barrels. The vehicle's mobility is "
+"good enough for taking key positions, while reliable armor helps defend "
+"these positions from enemy vehicles."
+
+msgid "J48_Saryuda_short"
+msgstr "Saryuda"
+
+msgid "J48_Saryuda_short_special"
+msgstr "Double gun system, reliable frontal armor"
+
 msgid "J50_Type_1_Ho_Ni_II"
 msgstr "Type 1 Ho-Ni II"
 
@@ -1165,6 +1203,9 @@ msgstr "Nameless"
 
 msgid "Nameless_Radio"
 msgstr "Nameless"
+
+msgid "Rensouhou_127_mm_Type_89"
+msgstr "Rensouhou 12.7 cm Type 89"
 
 msgid "STA_2_3"
 msgstr "STA-2"
@@ -1334,6 +1375,9 @@ msgstr "Type 3 Ju-Nu Plan 1"
 msgid "Turret_1_J45_Mitsu_108"
 msgstr "Mitsu 75"
 
+msgid "Turret_1_J48_Saryuda"
+msgstr "Saryuda"
+
 msgid "Turret_1_J50_Type_1_Ho_Ni_II"
 msgstr "Type 1 Ho-Ni II"
 
@@ -1402,6 +1446,9 @@ msgstr "Mitsu 105"
 
 msgid "Turret_2_Ke_Ni"
 msgstr "Type 2 Ke-To"
+
+msgid "Type3_Ko_SAR"
+msgstr "Type 3 Ko"
 
 msgid "Type_100_Kakyuu_V_12_CT"
 msgstr "Type 100 Kakyuu V-12 (CT)"
@@ -1757,11 +1804,20 @@ msgstr "12.7 cm Capped Common AP"
 msgid "_127mm_Capped_Common_Type_1"
 msgstr "12.7 cm Capped Common Type 1 APHE"
 
+msgid "_127mm_Common_AP_2_DB"
+msgstr "APHE Common Type 89B"
+
+msgid "_127mm_Common_AP_DB"
+msgstr "AP Common Type 89B"
+
 msgid "_127mm_Common_AP_J_1"
 msgstr "AP Common Type 89"
 
 msgid "_127mm_Common_AP_J_2"
 msgstr "APHE Common Type 89"
+
+msgid "_127mm_Common_HE_DB"
+msgstr "HE Common Type 89B"
 
 msgid "_127mm_Common_HE_J_1"
 msgstr "HE Common Type 89"

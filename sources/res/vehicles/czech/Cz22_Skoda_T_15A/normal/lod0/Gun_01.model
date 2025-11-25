@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/czech/Cz22_Skoda_T_15A/normal/lod0/Gun_01</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/czech/Cz22_Skoda_T_15A/normal/lod1/Gun_01</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-0.360000 -0.170372 -0.030041</min>
+		<max>0.438020 0.170372 2.000000</max>
+	</visibilityBox>
+</root>

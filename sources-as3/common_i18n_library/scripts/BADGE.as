@@ -948,6 +948,18 @@ package
       public static const BADGE_218:String = "#badge:badge_218";
       
       public static const BADGE_218_DESCR:String = "#badge:badge_218_descr";
+      
+      public static const BADGE_219:String = "#badge:badge_219";
+      
+      public static const BADGE_219_DESCR:String = "#badge:badge_219_descr";
+      
+      public static const BADGE_220:String = "#badge:badge_220";
+      
+      public static const BADGE_220_DESCR:String = "#badge:badge_220_descr";
+      
+      public static const BADGE_221:String = "#badge:badge_221";
+      
+      public static const BADGE_221_DESCR:String = "#badge:badge_221_descr";
        
       
       public function BADGE()

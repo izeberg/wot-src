@@ -60,6 +60,7 @@ class NavigationPresenter(ViewComponent[NavigationBarModel], EventsHandler):
         delayUntilParentWindowReady(self.__callableDelayer, view, partial(self.__processRouteChange, routeInfo))
 
     def __processRouteChange(self, routeInfo):
+        from gui.Scaleform.daapi.view.lobby.battle_queue.states import CommonBattleQueueState
         backNavigationTargetsHangar = bool(routeInfo.visualBackNavigationTarget.getFlags() & LobbyStateFlags.HANGAR)
         self.__infoActionHandlers = []
         if routeInfo.currentDescription is not None:
@@ -80,7 +81,7 @@ class NavigationPresenter(ViewComponent[NavigationBarModel], EventsHandler):
 
             else:
                 model.setPageTitle('')
-            allowBackNav = not backNavigationTargetsHangar and routeInfo.backDescription is not None
+            allowBackNav = not backNavigationTargetsHangar and routeInfo.backDescription is not None and not self.__lsm.getStateByCls(CommonBattleQueueState).STATE_ID == routeInfo.state.STATE_ID
             model.setBackNavigationAllowed(allowBackNav)
             model.setBackNavigationDescription(routeInfo.backDescription or '')
             infoButtons.invalidate()

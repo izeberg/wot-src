@@ -2794,7 +2794,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.notification.custom.NotificationAchievements;
    import net.wg.gui.notification.custom.NotificationAchievementsFirstEntry;
    import net.wg.gui.notification.custom.NotificationAchievementsFirstEntryWithoutWTR;
-   import net.wg.gui.notification.custom.NotificationAdventCalendarReward;
    import net.wg.gui.notification.custom.NotificationBMTaskReminder;
    import net.wg.gui.notification.custom.NotificationCollectionsCustom;
    import net.wg.gui.notification.custom.NotificationPM3Quest;
@@ -2803,7 +2802,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.notification.custom.SMAchievements;
    import net.wg.gui.notification.custom.SMAchievementsFirstEntry;
    import net.wg.gui.notification.custom.SMAchievementsFirstEntryWithoutWTR;
-   import net.wg.gui.notification.custom.SMAdventCalendarReward;
    import net.wg.gui.notification.custom.SMBattleMattersReminder;
    import net.wg.gui.notification.custom.SMCollectionsCustom;
    import net.wg.gui.notification.custom.SMFunRandomReward;
@@ -2823,7 +2821,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.notification.custom.pm3.PM3VehicleInfo;
    import net.wg.gui.notification.custom.vo.PM3QuestVO;
    import net.wg.gui.notification.custom.vo.PM3QuestVehicleVO;
-   import net.wg.gui.notification.custom.vo.SMAdventCalendarRewardVO;
    import net.wg.gui.notification.custom.vo.SMBattleMattersTaskReminderVO;
    import net.wg.gui.notification.custom.vo.SMCustomSeniorityAwardsTokensVO;
    import net.wg.gui.notification.custom.vo.SMExchangeRatePersonalDiscountVO;
@@ -8546,8 +8543,6 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_NOTIFICATION_CUSTOM_NOTIFICATIONACHIEVEMENTSFIRSTENTRYWITHOUTWTR:Class = NotificationAchievementsFirstEntryWithoutWTR;
       
-      public static const NET_WG_GUI_NOTIFICATION_CUSTOM_NOTIFICATIONADVENTCALENDARREWARD:Class = NotificationAdventCalendarReward;
-      
       public static const NET_WG_GUI_NOTIFICATION_CUSTOM_NOTIFICATIONBMTASKREMINDER:Class = NotificationBMTaskReminder;
       
       public static const NET_WG_GUI_NOTIFICATION_CUSTOM_NOTIFICATIONCOLLECTIONSCUSTOM:Class = NotificationCollectionsCustom;
@@ -8565,8 +8560,6 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_NOTIFICATION_CUSTOM_SMACHIEVEMENTSFIRSTENTRY:Class = SMAchievementsFirstEntry;
       
       public static const NET_WG_GUI_NOTIFICATION_CUSTOM_SMACHIEVEMENTSFIRSTENTRYWITHOUTWTR:Class = SMAchievementsFirstEntryWithoutWTR;
-      
-      public static const NET_WG_GUI_NOTIFICATION_CUSTOM_SMADVENTCALENDARREWARD:Class = SMAdventCalendarReward;
       
       public static const NET_WG_GUI_NOTIFICATION_CUSTOM_SMBATTLEMATTERSREMINDER:Class = SMBattleMattersReminder;
       
@@ -8603,8 +8596,6 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_NOTIFICATION_CUSTOM_VO_PM3QUESTVEHICLEVO:Class = PM3QuestVehicleVO;
       
       public static const NET_WG_GUI_NOTIFICATION_CUSTOM_VO_PM3QUESTVO:Class = PM3QuestVO;
-      
-      public static const NET_WG_GUI_NOTIFICATION_CUSTOM_VO_SMADVENTCALENDARREWARDVO:Class = SMAdventCalendarRewardVO;
       
       public static const NET_WG_GUI_NOTIFICATION_CUSTOM_VO_SMBATTLEMATTERSTASKREMINDERVO:Class = SMBattleMattersTaskReminderVO;
       

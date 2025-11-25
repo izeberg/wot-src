@@ -533,7 +533,7 @@ class _ModuleChangeRequester(object):
 
 
 class ProgressionController(IProgressionController, ViewComponentsController):
-    __slots__ = ('onPageTriggered', '__progressionWindowCtrl', '_viewComponents', '__modulesStorage',
+    __slots__ = ('onPageTriggered', '__progressionWindowCtrl', '__modulesStorage',
                  '__averageLevel', '__enemiesAmount', '__vehicleModulesStorage',
                  '__enemyTeamsAmount', '__isStarted', '__upgradesAvailability', '__tmpProgressionRecord',
                  'onVehicleUpgradeStarted', 'onVehicleUpgradeFinished', '__vehicleHolder',

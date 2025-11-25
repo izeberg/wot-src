@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/japan/J48_Saryuda/crash/lod1/Gun_03</nodefullVisual>
+	<parent>vehicles/japan/J48_Saryuda/crash/lod2/Gun_03</parent>
+	<extent>64.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.694374 -0.415155 -1.444237</min>
+		<max>0.592900 0.415093 4.677757</max>
+	</visibilityBox>
+</root>

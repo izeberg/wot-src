@@ -71,6 +71,7 @@ BONUS_TOKENS = 69
 VIEWS_FOR_MONITORING = 70
 LIFECYCLE_HANDLED_SUB_VIEWS = 71
 BATTLE_BUTTON_MANUAL_CONTROL = 72
+PREBATTLE_CONTROL_MODE = 73
 
 class _CollectEventsManager(object):
 
@@ -1085,3 +1086,15 @@ def registerBattleButtonManualControl(queueType, handler):
 
 def collectBattleButtonManualControl():
     return __collectEM.handleEvent(BATTLE_BUTTON_MANUAL_CONTROL, ctx={'battleButtonManualControl': {}})['battleButtonManualControl']
+
+
+def registerPrebattleCtrlMode(bonusType, controlModes):
+
+    def onCollect(ctx):
+        ctx['prebattleCtrlMode'][bonusType] = controlModes
+
+    __collectEM.addListener(PREBATTLE_CONTROL_MODE, onCollect)
+
+
+def collectPrebattleCtrlMode():
+    return __collectEM.handleEvent(PREBATTLE_CONTROL_MODE, ctx={'prebattleCtrlMode': {}})['prebattleCtrlMode']

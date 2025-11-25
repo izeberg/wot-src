@@ -525,7 +525,7 @@ package net.wg.gui.lobby.settings
          for(; _loc8_ < _loc5_; _loc8_++)
          {
             _loc6_ = _loc3_[_loc8_];
-            trySetLabel(_loc6_);
+            trySetLabel(_loc6_,_loc7_);
             if(this._skipIdList.indexOf(_loc6_) >= 0)
             {
                if(_loc6_ == SettingsConfigHelper.GRAPHIC_QUALITY_HDSD)
@@ -1489,7 +1489,7 @@ package net.wg.gui.lobby.settings
          var _loc2_:DropdownMenu = DropdownMenu(param1.target);
          var _loc3_:String = this._settingsConfigHelper.getControlIdByControlNameAndType(_loc2_.name,SettingsConfigHelper.TYPE_DROPDOWN);
          var _loc4_:SettingsControlProp = SettingsControlProp(data[_loc3_]);
-         var _loc5_:Number = _loc4_.isDataAsSelectedIndex && _loc4_.options[param1.index].hasOwnProperty(DATA_STR) ? Number(_loc4_.options[param1.index].data) : Number(param1.index);
+         var _loc5_:Number = !!_loc4_.isDataAsSelectedIndex ? Number(_loc4_.options[param1.index].data) : Number(param1.index);
          _loc4_.changedVal = _loc5_;
          if(_loc3_ == SettingsConfigHelper.SIZES)
          {

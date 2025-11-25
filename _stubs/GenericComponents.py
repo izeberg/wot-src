@@ -97,9 +97,11 @@ class AnimatorComponent(PyComponentWrapperBase):
 	def id(self, *args, **kwargs): pass
 	def isPlaying(self, *args, **kwargs): pass
 	def isPlayingByName(self, *args, **kwargs): pass
+	def removeEventReaction(self, *args, **kwargs): pass
 	def reset(self, *args, **kwargs): pass
 	def setBoolParam(self, *args, **kwargs): pass
 	def setFloatParam(self, *args, **kwargs): pass
+	def setIntParam(self, *args, **kwargs): pass
 	def setTrigger(self, *args, **kwargs): pass
 	def start(self, *args, **kwargs): pass
 	def startLayerByIndex(self, *args, **kwargs): pass

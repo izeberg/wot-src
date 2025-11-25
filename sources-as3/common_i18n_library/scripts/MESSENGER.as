@@ -685,6 +685,8 @@ package
       
       public static const SERVICECHANNELMESSAGES_BATTLERESULTS_QUESTS_BATTLEPASSPOINTS:String = "#messenger:serviceChannelMessages/battleResults/quests/battlePassPoints";
       
+      public static const SERVICECHANNELMESSAGES_BATTLERESULTS_QUESTS_PETS:String = "#messenger:serviceChannelMessages/battleResults/quests/pets";
+      
       public static const SERVICECHANNELMESSAGES_BATTLERESULTS_SENIORITYREWARDHEADER:String = "#messenger:serviceChannelMessages/battleResults/seniorityRewardHeader";
       
       public static const SERVICECHANNELMESSAGES_BATTLERESULTS_SENIORITYREWARDBODY:String = "#messenger:serviceChannelMessages/battleResults/seniorityRewardBody";
@@ -2502,12 +2504,6 @@ package
       public static const SERVICECHANNELMESSAGES_EXTERNALVEHICLERENT_EXPIRED_REASON_DEFAULT:String = "#messenger:serviceChannelMessages/externalVehicleRent/expired/reason_default";
       
       public static const SERVICECHANNELMESSAGES_EXTERNALVEHICLERENT_EXPIRED_REASON_BOOSTEROID:String = "#messenger:serviceChannelMessages/externalVehicleRent/expired/reason_boosteroid";
-      
-      public static const SERVICECHANNELMESSAGES_ADVENTCALENDAR_REWARD_HEADER:String = "#messenger:serviceChannelMessages/adventCalendar/reward/header";
-      
-      public static const SERVICECHANNELMESSAGES_ADVENTCALENDAR_REWARD_DESCRIPTION:String = "#messenger:serviceChannelMessages/adventCalendar/reward/description";
-      
-      public static const SERVICECHANNELMESSAGES_ADVENTCALENDAR_REWARD_BUTTON:String = "#messenger:serviceChannelMessages/adventCalendar/reward/button";
       
       public static const SERVICECHANNELMESSAGES_COMMENDATIONS_MESSAGES_ENABLE:String = "#messenger:serviceChannelMessages/commendations/messages/enable";
       

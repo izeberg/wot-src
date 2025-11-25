@@ -25,6 +25,7 @@ from PlayerEvents import g_playerEvents
 from post_progression_common import ROLESLOT_FEATURE, SETUPS_FEATURES
 from helpers import dependency
 from helpers.algorithms import shortestPath
+from skeletons.gui.game_control import IExchangeRatesWithDiscountsProvider
 from skeletons.gui.shared import IItemsCache
 from uilogging.veh_skill_tree.logger import SkillTreeUILogger
 from gui.impl.lobby.exchange.exchange_rates_helper import calculateMaxPossibleFreeXp
@@ -57,6 +58,7 @@ _STEP_TYPE_TO_TOOLTIP = {Type.MAJOR: MajorPerkTooltipView,
    Type.SPECIAL: SpecialPerkTooltipView}
 
 class TreePresenter(SubModelPresenter, IPresenterLocationController):
+    __exchangeRates = dependency.descriptor(IExchangeRatesWithDiscountsProvider)
     __itemsCache = dependency.descriptor(IItemsCache)
 
     def __init__(self, viewModel, parentView):
@@ -133,6 +135,8 @@ class TreePresenter(SubModelPresenter, IPresenterLocationController):
           self.viewModel.onSelectNode, self.__onSelectNode),
          (
           self.viewModel.onFinalNodeResearchAnimationFinished, self.__onFinalNodeResearchAnimationFinished),
+         (
+          self.__exchangeRates.freeXpTranslation.onUpdated, self.__onXPStatsChanged),
          (
           self.__itemsCache.onSyncCompleted, self.__onCacheResync),
          (

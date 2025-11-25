@@ -54,7 +54,7 @@ class _VehicleParamsPresenterBase(ViewComponent[VehicleParamsViewModel]):
                 toolTipMgr = self.__appLoader.getApp().getToolTipMgr()
                 if toolTipMgr is not None:
                     toolTipMgr.onCreateWulfTooltip(tooltipId, (
-                     paramId, self.__context, True), event.mouse.positionX, event.mouse.positionY)
+                     paramId, self.__context, True), event.mouse.positionX, event.mouse.positionY, self.getParentWindow())
                     return tooltipId
         return super(_VehicleParamsPresenterBase, self).createToolTip(event)
 
