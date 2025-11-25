@@ -317,6 +317,9 @@ msgstr "FV225 收藏家"
 msgid "Chassis_GB131_Crusher"
 msgstr "克鲁瑟"
 
+msgid "Chassis_GB132_Taurus_CAT"
+msgstr "弗里泽克与赫普夫纳(液气)"
+
 msgid "Chassis_GB133_Charioteer_MkVII"
 msgstr "御夫座流浪者"
 
@@ -325,6 +328,9 @@ msgstr "格里芬"
 
 msgid "Chassis_GB136_Churchill_BPXIV"
 msgstr "\"丘吉尔\" VII"
+
+msgid "Chassis_GB137_Cromwell_Applique"
+msgstr "A27 \"克伦威尔\"加强型"
 
 msgid "Chassis_GB139_FV226_Contradictious"
 msgstr "FV226 反制者"
@@ -1273,6 +1279,25 @@ msgstr "克鲁瑟"
 msgid "GB131_Crusher_short_special"
 msgstr "高射速的火炮，殷实的装甲"
 
+msgid "GB132_Taurus_CAT"
+msgstr "金牛座 CAT"
+
+msgid "GB132_Taurus_CAT_desc"
+msgstr ""
+"1968年，皇家装甲兵团提出一项前景可观的新型坦克研发计划，代号\"战斗兵种坦克\"。研发重点依次为: "
+"火力、机动性、防护，以及尽可能精简的车组。该坦克原计划由皇家装甲兵团与步兵部队(战斗兵种)共同使用。然而，随着Y系陆军发展规划的调整，已不再需要这辆坦克。该计划最终被叫停。"
+
+msgid "GB132_Taurus_CAT_long_special"
+msgstr ""
+"金牛座 "
+"CAT是一辆Y系VIII级自行反坦克炮，也是首辆配备液气悬挂装置的Y系坦克，同时亦是首辆配备弹夹炮而非常规循环式火炮的此类坦克。它速度快、灵巧敏捷，配合高射速的弹夹炮，让您可以更主动、更激进地投身战斗。"
+
+msgid "GB132_Taurus_CAT_short"
+msgstr "金牛座 CAT"
+
+msgid "GB132_Taurus_CAT_short_special"
+msgstr "弹夹炮与液气悬挂装置"
+
 msgid "GB133_Charioteer_MkVII"
 msgstr "御夫座流浪者"
 
@@ -1323,6 +1348,23 @@ msgstr "\"鳄鱼\""
 
 msgid "GB136_Churchill_BPXIV_short_special"
 msgstr "良好的平均每分钟损伤，精准的火炮"
+
+msgid "GB137_Cromwell_Applique"
+msgstr "\"克伦威尔\"加强型"
+
+msgid "GB137_Cromwell_Applique_desc"
+msgstr ""
+"\"克伦威尔\"加强型是\"克伦威尔\"坦克的改进型版本，加装了间隙装甲。1943年由罗·罗公司研发，旨在应对D系自行反坦克炮与装甲部队日益增强的威胁。通过在车体与炮塔加装焊接附加装甲板，坦克的正面装甲提高至101毫米，但战斗全重也随之增至29吨。由谢菲尔德钢铁公司生产的间隙装甲于1943年6月21日进行了实弹测试，炮弹导致接缝处出现裂痕，后续对焊接处进行了强化。该坦克在测试中累计完成174英里公路行驶与110英里越野行驶，虽悬挂系统经受住了考验，但有两个托带轮出现严重磨损，制动系统也需进一步改进。尽管间隙装甲获准用于所有量产型\"克伦威尔\"坦克，但最终产量不足200辆，且列装时间过晚。随着性能更优越的彗星坦克投产，\"克伦威尔\"系列很快被全面替代。"
+
+msgid "GB137_Cromwell_Applique_long_special"
+msgstr ""
+"\"克伦威尔\"加强型是一辆Y系V级中型坦克。该\"克伦威尔\"版本在车体正面加装了附加装甲，额外防护提高了坦克的生存能力，但也增加了重量；尽管如此，该坦克仍然相当灵活。它还配备了经典的Y系高射速火炮。"
+
+msgid "GB137_Cromwell_Applique_short"
+msgstr "\"克伦威尔\"加强型"
+
+msgid "GB137_Cromwell_Applique_short_special"
+msgstr "良好的装甲和机动性，较高的射速"
 
 msgid "GB139_FV226_Contradictious"
 msgstr "FV226 反制者"
@@ -1533,7 +1575,7 @@ msgid "GB156_Black_Prince_II"
 msgstr "\"黑亲王\" II"
 
 msgid "GB156_Black_Prince_II_descr"
-msgstr "A43步兵坦克\"黑亲王\" II重型坦克计划，采用焊接式炮塔，并搭载两门强劲的77毫米火炮。 该坦克从未投入生产。"
+msgstr "A43步兵坦克\"黑亲王\" II重型坦克计划，采用焊接式炮塔，并搭载两门强劲的77毫米火炮。该坦克从未投入生产。"
 
 msgid "GB156_Black_Prince_II_long_special"
 msgstr ""
@@ -2442,6 +2484,9 @@ msgstr "WS No.19 Mk.I"
 msgid "N19Mk2"
 msgstr "WS No.19 Mk.II"
 
+msgid "N19Mk2A"
+msgstr "WS NO.19 Mk.IIA"
+
 msgid "N19Mk2_Aust"
 msgstr "WS No.19 Mk.II (大洋型)"
 
@@ -2682,6 +2727,9 @@ msgstr "QF 6磅AT炮 Mk.I(8英担型)"
 msgid "QF_6_pounder_Mk_III"
 msgstr "QF 6磅炮Mk.III"
 
+msgid "QF_6_pounder_Mk_IIIA"
+msgstr "QF 6磅炮Mk.III A"
+
 msgid "QF_6_pounder_Mk_III_AT"
 msgstr "QF 6磅AT炮 Mk.III"
 
@@ -2732,6 +2780,9 @@ msgstr "QF 4.5英寸榴弹炮 (\"主教\")"
 
 msgid "Q_F_6_in_Gun_Mk_V"
 msgstr "QF 6英寸Mk.V炮"
+
+msgid "Rolls_Royce_717"
+msgstr "罗·罗 717"
 
 msgid "Rolls_Royce_B80"
 msgstr "罗·罗 B80"
@@ -2795,6 +2846,9 @@ msgstr "罗·罗 流星"
 
 msgid "Rolls_Royce_Meteor_4101"
 msgstr "罗.罗 流星 (4101)"
+
+msgid "Rolls_Royce_Meteor_A"
+msgstr "罗·罗 流星 A"
 
 msgid "Rolls_Royce_Meteor_A27M"
 msgstr "罗·罗 流星 (A27M)"
@@ -2954,6 +3008,9 @@ msgstr "2x 罗·罗 幻影 II"
 msgid "Rover_Meteorite"
 msgstr "流浪者陨石"
 
+msgid "SR_40_E"
+msgstr "SR 40 E"
+
 msgid "SR_C42H"
 msgstr "SR C42H"
 
@@ -3095,11 +3152,17 @@ msgstr "FV225 收藏家"
 msgid "Turret_1_GB131_Crusher"
 msgstr "克鲁瑟"
 
+msgid "Turret_1_GB132_Taurus_CAT"
+msgstr "金牛座 CAT"
+
 msgid "Turret_1_GB133_Charioteer_MkVII"
 msgstr "御夫座流浪者"
 
 msgid "Turret_1_GB134_Gryphon"
 msgstr "格里芬"
+
+msgid "Turret_1_GB137_Cromwell_Applique"
+msgstr "A27M \"克伦威尔\"加强型"
 
 msgid "Turret_1_GB139_FV226_Contradictious"
 msgstr "FV226 反制者"
@@ -3586,6 +3649,9 @@ msgstr "APCR T29E3 MBC"
 msgid "_105mm_APC_EX20"
 msgstr "105mm APC EX20"
 
+msgid "_105mm_APDS_HVKE"
+msgstr "APDS HVKE"
+
 msgid "_105mm_APDS_Kl14"
 msgstr "APDS Kl/14"
 
@@ -3634,6 +3700,9 @@ msgstr "105mm L7A2炮"
 msgid "_105mm_Gun_L7_HEAT_SH"
 msgstr "105mm L7A2炮"
 
+msgid "_105mm_HEAT_HVKE"
+msgstr "HEAT HVKE"
+
 msgid "_105mm_HEAT_L7"
 msgstr "US HEAT M456"
 
@@ -3679,6 +3748,9 @@ msgstr "HESH-T P-35"
 msgid "_105mm_HE_EX20"
 msgstr "105mm HE EX20"
 
+msgid "_105mm_HE_HVKE"
+msgstr "HE HVKE"
+
 msgid "_105mm_HE_L7"
 msgstr "HESH-T L-35"
 
@@ -3696,6 +3768,9 @@ msgstr "HE M1"
 
 msgid "_105mm_HE_M11_MBC"
 msgstr "HE M11 MBC"
+
+msgid "_105mm_HVKE"
+msgstr "105mm HVKE炮"
 
 msgid "_105mm_HV_AP"
 msgstr "105mm HV AP"
@@ -4834,6 +4909,9 @@ msgstr "HE Mk.V"
 msgid "_6_in_HE_Mk_VI"
 msgstr "HE Mk.VI"
 
+msgid "_6pdr_APCR_MK_1A"
+msgstr "APCR Mk.1A"
+
 msgid "_6pdr_APCR_MK_1GD"
 msgstr "APCR Mk.1GD"
 
@@ -4845,6 +4923,9 @@ msgstr "APCR Mk.1T"
 
 msgid "_6pdr_APCR_MK_1TM"
 msgstr "APCR Mk.IA"
+
+msgid "_6pdr_AP_MK_1A"
+msgstr "AP Mk.1A"
 
 msgid "_6pdr_AP_MK_1GD"
 msgstr "AP Mk.1GD"
@@ -4878,6 +4959,9 @@ msgstr "HE Mk.10T"
 
 msgid "_6pdr_HE_MK_10TM"
 msgstr "HE Mk.XA"
+
+msgid "_6pdr_HE_MK_1A"
+msgstr "HE Mk.1A"
 
 msgid "_75mm_APCR_HV_Mk3"
 msgstr "APCR HV Mk.3"

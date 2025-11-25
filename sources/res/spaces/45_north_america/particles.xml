@@ -630,6 +630,30 @@
 			<shader>\data\shaders\ps.fx</shader>
 			<texture>particles/content_deferred/PFX_textures/Spark.dds</texture>
 		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/tracers.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_tex_83_kharkiv_fire.dds</texture>
+		</preload>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/random_events/45_north_america_bomb_explosion.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/random_events/45_north_america_ground_plowing.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/random_events/45_north_america_ground_plowing_small.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/random_events/45_north_america_plane_trail.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/random_events/45_north_america_scattering_coal.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/random_events/45_north_america_smoke_after_explosion.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/random_events/45_north_america_smoke_coal.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/random_events/45_north_america_train_crash_house.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/random_events/45_north_america_train_crash_sparks.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/random_events/45_north_america_train_spilled_coal.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/random_events/45_north_america_train_steam.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/random_events/45_north_america_train_steam_hit.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/random_events/45_north_america_train_steam_hit_big.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/random_events/45_north_america_train_steam_tiny.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/random_events/45_north_america_train_tank_explosion.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/random_events/45_north_america_train_tank_fire.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/hd_bld_AM_033_ServiceStation_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/hd_bld_AM_033_ServiceStation_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/hd_bld_AM_033_ServiceStation_5.vfx</fn_effect_bin>

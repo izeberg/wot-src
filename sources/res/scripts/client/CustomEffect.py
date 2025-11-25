@@ -134,7 +134,7 @@ class SelectorDesc(object):
 
 
 class DiscreteSelectorDesc(SelectorDesc):
-    __slots__ = ('_selectors', '_variable')
+    __slots__ = ('_selectors', )
 
     @property
     def selectors(self):
@@ -179,7 +179,7 @@ class DiscreteSelectorDesc(SelectorDesc):
 
 
 class MatkindSelectorDesc(DiscreteSelectorDesc):
-    __slots__ = ('_variable', )
+    __slots__ = ()
 
     def read(self, dataSection, effects):
         SelectorDesc.read(self, dataSection, effects)
@@ -194,7 +194,7 @@ class MatkindSelectorDesc(DiscreteSelectorDesc):
 
 
 class RangeSelectorDesc(SelectorDesc):
-    __slots__ = ('_selectors', '_variable', '__keys')
+    __slots__ = ('_selectors', '__keys')
 
     def __init__(self):
         super(RangeSelectorDesc, self).__init__()
@@ -275,7 +275,7 @@ class UnionSelectorDesc(SelectorDesc):
 
 
 class EffectSelectorDesc(SelectorDesc):
-    __slots__ = ('__hardPoint', '_id', '__ttl', '_effectList', '_variable')
+    __slots__ = ('__hardPoint', '_id', '__ttl', '_effectList')
 
     @property
     def isEffectList(self):
@@ -376,7 +376,7 @@ class EffectSelectorDesc(SelectorDesc):
 
 
 class EffectListSelectorDesc(EffectSelectorDesc):
-    __slots__ = ('_effectList', )
+    __slots__ = ()
 
     def __init__(self):
         super(EffectListSelectorDesc, self).__init__()
@@ -395,7 +395,7 @@ class EffectDescriptorBase(object):
 
 
 class CustomEffectsDescriptor(EffectDescriptorBase):
-    __slots__ = ('__effects', '_selectorDesc')
+    __slots__ = ('__effects', )
 
     @staticmethod
     def getDescriptor(dataSection, customDescriptors, xmlCtx, name):

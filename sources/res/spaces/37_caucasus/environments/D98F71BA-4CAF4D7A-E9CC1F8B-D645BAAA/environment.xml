@@ -88,28 +88,25 @@
 		</bloom>
 		<environment>
 			<sunlightLumMultiplier>24.000000</sunlightLumMultiplier>
-			<ambientLumMultiplier>1.000000</ambientLumMultiplier>
 			<sunLumMultiplier>50.000000</sunLumMultiplier>
 			<skyLumMultiplier>0.510000</skyLumMultiplier>
+			<skyLumMultiplierDeferred>1.000000</skyLumMultiplierDeferred>
 			<LDR2HDRenableLumaMask>false</LDR2HDRenableLumaMask>
 			<LDR2HDRsaturation>0.600000</LDR2HDRsaturation>
 		</environment>
 		<tonemappings>
 			<tonemapping>
 				<name>RexpTM</name>
-				<middleGray>0.200000</middleGray>
 				<whitePoint>1.000000</whitePoint>
 				<blackPoint>1.000000</blackPoint>
 			</tonemapping>
 			<tonemapping>
 				<name>FilmicTM</name>
-				<middleGray>0.140000</middleGray>
 				<whitePoint>12.790000</whitePoint>
 				<blackPoint>3.500000</blackPoint>
 			</tonemapping>
 			<tonemapping>
 				<name>LinearExpTM</name>
-				<middleGray>0.090000</middleGray>
 				<whitePoint>1.750000</whitePoint>
 				<blackPoint>1.000000</blackPoint>
 			</tonemapping>

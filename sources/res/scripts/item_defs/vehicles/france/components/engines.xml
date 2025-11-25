@@ -114,6 +114,7 @@
 		<HS_110_2>131</HS_110_2>
 		<Moteur_E_P_C_version_4>132</Moteur_E_P_C_version_4>
 		<AMX_APX_E_P_C_Moteur>133</AMX_APX_E_P_C_Moteur>
+		<Renault_V4A>135</Renault_V4A>
 		<SOFAM_8_Gxb_105_AM>2000</SOFAM_8_Gxb_105_AM>
 		<Baudouin_6F_11_SRY_105_AM>2001</Baudouin_6F_11_SRY_105_AM>
 		<Maybach_HL_230_TRM_P30_L50>2002</Maybach_HL_230_TRM_P30_L50>
@@ -1270,6 +1271,26 @@
 			<rpm_min>396</rpm_min>
 			<rpm_max>2329</rpm_max>
 		</Renault_V4>
+		<Renault_V4A>
+			<userString>#france_vehicles:Renault_V4A</userString>
+			<tags>gasoline</tags>
+			<level>2</level>
+			<price>1000</price>
+			<notInShop>true</notInShop>
+			<wwsoundPC>eng_gaz_aa_pc</wwsoundPC>
+			<wwsoundNPC>eng_gaz_aa_npc</wwsoundNPC>
+			<power>82</power>
+			<weight>266</weight>
+			<maxHealth>65</maxHealth>
+			<maxRegenHealth>33</maxRegenHealth>
+			<repairCost>2</repairCost>
+			<fireStartingChance>
+				0.2
+				<!--BW_String-->
+			</fireStartingChance>
+			<rpm_min>396</rpm_min>
+			<rpm_max>2329</rpm_max>
+		</Renault_V4A>
 		<Renault_A>
 			<userString>#france_vehicles:Renault_A</userString>
 			<tags>gasoline</tags>
@@ -2734,8 +2755,8 @@
 				0.2
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>432</rpm_min>
-			<rpm_max>2215</rpm_max>
+			<rpm_min>404</rpm_min>
+			<rpm_max>2305</rpm_max>
 		</Maybach_HL_295_a_injection_d_essence_FL>
 		<SOFAM_G_s_c_4>
 			<userString>#france_vehicles:SOFAM_G_s_c_4</userString>
@@ -3009,8 +3030,8 @@
 				0.2
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>564</rpm_min>
-			<rpm_max>2508</rpm_max>
+			<rpm_min>402</rpm_min>
+			<rpm_max>2879</rpm_max>
 		</Maybach_HL_230_TRM_P30_B>
 		<Renault_Reinastella>
 			<userString>#france_vehicles:Renault_Reinastella</userString>

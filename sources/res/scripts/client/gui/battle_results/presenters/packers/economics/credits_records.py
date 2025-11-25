@@ -5,7 +5,7 @@ from gui.impl.gen.view_models.views.lobby.battle_results.currency_records_item_m
 from gui.battle_results.presenters.packers.economics.currency_packers import CurrencyRecord
 from gui.battle_results.presenters.packers.economics.value_extractors import getCreditsFromAdditional, getBaseAccountValue, getBaseAccountEarnedValue, getPremiumAccountValue, getBaseAccountWotPlusBonusValue, getPremiumAccountWotPlusBonusValue, getPremiumAccountEarnedValue, getBaseAccountEventValue, getPremiumAccountEventValue, getBaseAccountTotalMoneyValue, getPremiumAccountTotalMoneyValue, getBaseAccountWotPlusCurrentBonusValue, getPremiumAccountWotPlusCurrentBonusValue
 from gui.battle_results.settings import CurrenciesConstants
-from gui.battle_results.pbs_helpers.economics import isPiggyBankCreditsAvailable, isCreditsAvailable, hasCreditsReferralFactor, isWotPlusBonusEnabled
+from gui.battle_results.pbs_helpers.economics import isPiggyBankCreditsAvailable, isCreditsAvailable, hasCreditsReferralFactor, isWotPlusBonusEnabled, hasCreditsPetFactor
 _STR_PATH = R.strings.battle_results.details.calculations
 BASE_EARNED_CREDITS = CurrencyRecord(recordNames=('originalCredits', 'originalCreditsToDraw',
                                                   'appliedPremiumCreditsFactor100'), subtractRecords=('achievementCredits', ), baseAccountValueExtractor=getBaseAccountEarnedValue, premiumAccountValueExtractor=getPremiumAccountEarnedValue, detailsValuesExtractors=(), capsToBeChecked=None, paramName=CurrencyRecordsItemModel.BASE_EARNED_CREDITS, label=_STR_PATH.base, modifiers=(), showZeroValue=False, currencyType=CurrenciesConstants.CREDITS)
@@ -21,6 +21,9 @@ WOT_PLUS_CURRENT_ONLY_BONUS_CREDITS = CurrencyRecord(recordNames=('wotPlusCredit
                                                                   'wotPlusCreditsFactor100'), subtractRecords=(), baseAccountValueExtractor=getBaseAccountWotPlusCurrentBonusValue, premiumAccountValueExtractor=getPremiumAccountWotPlusCurrentBonusValue, detailsValuesExtractors=(), capsToBeChecked=None, paramName=CurrencyRecordsItemModel.WOT_PLUS_BONUS_CREDITS, label=_STR_PATH.wotPlus, modifiers=(), showZeroValue=False, currencyType=CurrenciesConstants.CREDITS)
 WOT_PLUS_BONUS_CREDITS = CurrencyRecord(recordNames=('wotPlusCredits', 'wotPlusCreditsFactor100'), subtractRecords=(), baseAccountValueExtractor=getBaseAccountWotPlusBonusValue, premiumAccountValueExtractor=getPremiumAccountWotPlusBonusValue, detailsValuesExtractors=(
  isWotPlusBonusEnabled,), capsToBeChecked=None, paramName=CurrencyRecordsItemModel.WOT_PLUS_BONUS_CREDITS, label=_STR_PATH.wotPlus, modifiers=(), showZeroValue=False, currencyType=CurrenciesConstants.CREDITS)
+PET_SYSTEM_BONUS_CREDITS = CurrencyRecord(recordNames=('petSystemCreditsFactor100', ), subtractRecords=(), baseAccountValueExtractor=getBaseAccountValue, premiumAccountValueExtractor=getPremiumAccountValue, detailsValuesExtractors=(
+ hasCreditsPetFactor,), capsToBeChecked={
+ _CAPS.PET_SYSTEM_BONUSES}, paramName=CurrencyRecordsItemModel.PET_SYSTEM_BONUS_CREDITS, label=_STR_PATH.petCredits.simpleLabel, modifiers=(), showZeroValue=False, currencyType=CurrenciesConstants.CREDITS)
 FRIENDLY_FIRE_PENALTY_CREDITS = CurrencyRecord(recordNames=('originalCreditsPenalty',
                                                             'originalCreditsContributionOut',
                                                             'originalCreditsPenaltySquad',

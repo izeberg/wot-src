@@ -99,6 +99,11 @@ class FrontlineRootHangarState(LobbyState):
     def __init__(self, flags=StateFlags.UNDEFINED):
         super(FrontlineRootHangarState, self).__init__(flags=flags | LobbyStateFlags.HANGAR)
 
+    def _onEntered(self, event):
+        super(FrontlineRootHangarState, self)._onEntered(event)
+        lsm = self.getMachine()
+        lsm.getRelatedView(self).blur.disable()
+
 
 class _FlLoadoutConfirmStatePrototype(_LoadoutConfirmStatePrototype):
     STATE_ID = FrontlineStateIDs.LOADOUT_CONFIRM_LEAVE
@@ -107,6 +112,11 @@ class _FlLoadoutConfirmStatePrototype(_LoadoutConfirmStatePrototype):
 @FrontlineHangarState.parentOf
 class FrontlineAllVehiclesState(LobbyState):
     STATE_ID = FrontlineStateIDs.ALL_VEHICLES
+
+    def _onEntered(self, event):
+        super(FrontlineAllVehiclesState, self)._onEntered(event)
+        lsm = self.getMachine()
+        lsm.getRelatedView(self).blur.enable()
 
     def getNavigationDescription(self):
         return LobbyStateDescription(title=backport.text(R.strings.pages.titles.allVehicles()))

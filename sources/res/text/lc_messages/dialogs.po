@@ -1955,6 +1955,18 @@ msgstr "重置"
 msgid "perksReset/title"
 msgstr "重置乘员的全部特长？"
 
+msgid "physicsSoundQualityDoesNotMatch/cancel"
+msgstr "取消"
+
+msgid "physicsSoundQualityDoesNotMatch/message"
+msgstr "所选物理音效质量与游戏客户端自动检测的设置不一致。开启该选项可能影响性能。建议在确认前测试性能。是否要应用这些更改？"
+
+msgid "physicsSoundQualityDoesNotMatch/submit"
+msgstr "确认"
+
+msgid "physicsSoundQualityDoesNotMatch/title"
+msgstr "物理音效质量不匹配"
+
 msgid "postmortem/cancel"
 msgstr "取消"
 
@@ -2577,6 +2589,9 @@ msgstr "再训练"
 
 msgid "retrain/title/massive"
 msgstr "再训练为%(vehicleName)s的乘员？"
+
+msgid "retrain/title/massiveVehicleTag"
+msgstr "%(vehicleName)s？"
 
 msgid "retrain/title/single/complex"
 msgstr ""

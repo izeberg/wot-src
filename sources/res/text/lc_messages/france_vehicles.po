@@ -434,6 +434,9 @@ msgstr "AS-XX 40t"
 msgid "Chassis_F136_AMX_67_Imbattable"
 msgstr "AMX 67 \"无双\""
 
+msgid "Chassis_F138_Renault_R35_FCM_36"
+msgstr "雷诺 R35"
+
 msgid "Chassis_F13_AMX38"
 msgstr "AMX 38原型1号车"
 
@@ -785,6 +788,9 @@ msgstr "ER 53"
 msgid "ER_54"
 msgstr "ER 54"
 
+msgid "ER_54A"
+msgstr "ER 54A"
+
 msgid "ER_55"
 msgstr "ER 55"
 
@@ -954,8 +960,8 @@ msgstr "?empty?"
 
 msgid "F112_M10_RBFM_long_special"
 msgstr ""
-"这辆自行反坦克炮配备了一门具有优秀俯仰角的强大火炮，但薄弱的装甲、较大的尺寸抵消了这一点优势。该坦克与M10 "
-"\"狼獾\"类似，但由于其发动机功率较低，机动性稍有不足。另一方面，其精准火炮可让您从远距离造成损伤，同时避免被击中。"
+"这辆自行反坦克炮配备了一门具有优秀俯角的强大火炮，但薄弱的装甲、较大的尺寸平衡了这一点优势。该坦克与M10 "
+"\"狼獾\"类似，但由于其发动机功率较低，机动性稍有不足。此外，其精准火炮使您可以从远距离造成损伤，同时避免被击中。"
 
 msgid "F112_M10_RBFM_short"
 msgstr "M10 RBFM"
@@ -1315,6 +1321,25 @@ msgstr ""
 msgid "F136_AMX_67_Imbattable_short"
 msgstr "AMX 67 \"无双\""
 
+msgid "F138_Renault_R35_FCM_36"
+msgstr "雷诺 R35/FCM 36"
+
+msgid "F138_Renault_R35_FCM_36_desc"
+msgstr ""
+"作为20世纪30年代研发和生产新坦克计划的一部分，F系曾积极推进各型坦克炮塔的统一设计。其中一项试验型计划是配备FCM "
+"36炮塔的轻型坦克R35。该坦克从未投入量产。"
+
+msgid "F138_Renault_R35_FCM_36_long_special"
+msgstr ""
+"雷诺 R35/FCM 36是一辆F系II级轻型坦克，结合了雷诺R35的车体和FCM "
+"36的炮塔。该坦克配备一门射速极高的37毫米火炮，并拥有坚固可靠的装甲。得益于这种优势组合，它既能固守关键点位，亦可突破敌方火力封锁。"
+
+msgid "F138_Renault_R35_FCM_36_short"
+msgstr "R35/FCM 36"
+
+msgid "F138_Renault_R35_FCM_36_short_special"
+msgstr "良好的装甲，较高的射速"
+
 msgid "F13_AMX38"
 msgstr "AMX 38"
 
@@ -1661,7 +1686,7 @@ msgstr "?empty?"
 
 msgid "F73_M4A1_Revalorise_long_special"
 msgstr ""
-"这辆中型坦克配备了一门强劲火炮，凭借其高额的平均单发损伤、良好的火炮俯角、较高的炮弹飞行速度，这辆坦克即使在逆境中也有机会扭转战局。得益于良好的观察范围，它可以点亮敌方坦克，先发制人。不过需要注意的是，该坦克的装甲和机动性都相当平庸。"
+"这辆中型坦克配备了一门强劲火炮，凭借其高额的平均单发损伤、良好的火炮俯角、较高的炮弹飞行速度，这辆坦克即使在逆境中也有机会扭转战局。得益于良好的观察范围，它可以点亮敌方坦克，先发制人。不过需要注意的是，其装甲和机动性都相当平庸。"
 
 msgid "F73_M4A1_Revalorise_short"
 msgstr "M4A1升级型"
@@ -1864,7 +1889,7 @@ msgstr "?empty?"
 
 msgid "F97_ELC_EVEN_90_long_special"
 msgstr ""
-"这是一辆强大的侦察坦克，拥有低矮的外形、出色的机动性和优秀的隐蔽性。凭借这些优势，它总能在合适的时间抵达正确的位置。此外，其3连发弹夹炮有能力造成660点左右的损伤。请注意，由于装甲平庸，该坦克非常容易受到撞击损伤。"
+"这是一辆强大的侦察坦克，拥有低矮的外形、出色的机动性和优秀的隐蔽性。凭借这些优势，它总能在合适的时间抵达正确的位置。此外，其3连发弹夹炮可造成660点的平均损伤。请注意，由于装甲平庸，该坦克非常容易受到撞击损伤。"
 
 msgid "F97_ELC_EVEN_90_short"
 msgstr "ELC EVEN 90"
@@ -2349,6 +2374,9 @@ msgstr "雷诺 T14 (V39)"
 msgid "Renault_V4"
 msgstr "雷诺 V4"
 
+msgid "Renault_V4A"
+msgstr "雷诺 V4A"
+
 msgid "SARL42"
 msgstr "SARL 42"
 
@@ -2668,6 +2696,9 @@ msgstr "AS-XX 40t"
 
 msgid "Turret_1_F136_AMX_67_Imbattable"
 msgstr "AMX 67 \"无双\""
+
+msgid "Turret_1_F138_Renault_R35_FCM_36"
+msgstr "FCM 36"
 
 msgid "Turret_1_F13_AMX38"
 msgstr "AMX 38"
@@ -3626,11 +3657,17 @@ msgstr ""
 msgid "_37mm_APX_SA18"
 msgstr "37mm APX SA18炮"
 
+msgid "_37mm_APX_SA18A"
+msgstr "37mm APX SA18A炮"
+
 msgid "_37mm_APX_SA18_FT"
 msgstr "37mm APX SA18炮 (FT)"
 
 msgid "_37mm_FrtPrf1935"
 msgstr "Frt.Prf. mle.35"
+
+msgid "_37mm_FrtPrf1935A"
+msgstr "Frt.Prf. mle.35A"
 
 msgid "_37mm_Frt_Prf_mle_1935_FT"
 msgstr "Frt.Prf. mle.35 (FT)"
@@ -3662,6 +3699,9 @@ msgstr "OE mle.32 (38)"
 msgid "_37mm_OE_mle_1932_FCM"
 msgstr "OE mle.32 (FCM)"
 
+msgid "_37mm_OE_mle__1916A"
+msgstr "OE mle.16A"
+
 msgid "_37mm_Odr_mle._1932"
 msgstr "ODR mle.32"
 
@@ -3670,6 +3710,9 @@ msgstr "ODR mle.35"
 
 msgid "_37mm_Odr_mle._1939"
 msgstr "ODR mle.39"
+
+msgid "_37mm_Odr_mle__1935A"
+msgstr "ODR mle.35A"
 
 msgid "_37mm_Oe_mle._1932"
 msgstr "OE mle.32"

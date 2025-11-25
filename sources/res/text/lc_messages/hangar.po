@@ -116,6 +116,12 @@ msgstr "折价置换"
 msgid "carousel/filters/allVehicle"
 msgstr "我的全部坦克"
 
+msgid "myVehicles/buttons/crewToggle"
+msgstr "乘员"
+
+msgid "myVehicles/buttons/ttcToggle"
+msgstr "参数"
+
 msgid "rentalCounter/count/battles"
 msgid_plural "plural/rentalCounter/count/battles"
 msgstr[0] "{{count}}场战斗"
@@ -145,6 +151,27 @@ msgstr "点击前往您的坦克游玩列表"
 
 msgid "tooltip/filters/myVehicle/header"
 msgstr "我的坦克"
+
+msgid "vehicleMenu/menuButton/tooltip/crew/body"
+msgstr "乘员训练、再训练和管理。"
+
+msgid "vehicleMenu/menuButton/tooltip/crew/header"
+msgstr "乘员管理"
+
+msgid "vehicleMenu/menuButton/tooltip/customization/body"
+msgstr "坦克个性化: 应用2D/3D风格及其他元素。"
+
+msgid "vehicleMenu/menuButton/tooltip/customization/header"
+msgstr "个性化"
+
+msgid "vehicleMenu/menuButton/tooltip/hotkey/title"
+msgstr "按下即可打开"
+
+msgid "vehicleMenu/menuButton/tooltip/vehicle/body"
+msgstr "坦克信息、研发、对比和维修。"
+
+msgid "vehicleMenu/menuButton/tooltip/vehicle/header"
+msgstr "坦克管理"
 
 msgid "vehicleMenu/menuItem/aboutVehicle/title"
 msgstr "关于坦克"

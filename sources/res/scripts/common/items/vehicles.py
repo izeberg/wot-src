@@ -6995,7 +6995,11 @@ def _vehicleValues(xmlCtx, section, sectionName, defNationID):
             try:
                 nationID, vehID = g_list.getIDsByName(vehName)
             except:
-                _xml.raiseWrongXml(xmlCtx, sectionName, "unknown vehicle name '%s'" % vehName)
+                if not IS_UE_EDITOR:
+                    _xml.raiseWrongXml(xmlCtx, sectionName, "unknown vehicle name '%s'" % vehName)
+                else:
+                    ERROR_MSG('Unknown vehicle name ' + vehName + '. The name was skipped.')
+                    continue
 
             yield VehicleValue(vehName, makeIntCompactDescrByID('vehicle', nationID, vehID), ctx, subsection)
 

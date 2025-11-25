@@ -361,7 +361,7 @@ class DamageDetailsBlock(_DetailsBlock):
 
 
 class ArmorUsingDetailsBlock(_DetailsBlock):
-    __slots__ = ('usedArmorCount', 'armorValues', 'armorNames', '_isEmpty')
+    __slots__ = ('usedArmorCount', 'armorValues', 'armorNames')
 
     def __init__(self, meta=None, field='', *path):
         super(ArmorUsingDetailsBlock, self).__init__(meta, field, *path)
@@ -388,7 +388,7 @@ class ArmorUsingDetailsBlock(_DetailsBlock):
 
 
 class AssistDetailsBlock(_DetailsBlock):
-    __slots__ = ('damageAssisted', 'damageAssistedValues', 'damageAssistedNames', '_isEmpty')
+    __slots__ = ('damageAssisted', 'damageAssistedValues', 'damageAssistedNames')
 
     def __init__(self, meta=None, field='', *path):
         super(AssistDetailsBlock, self).__init__(meta, field, *path)
@@ -416,7 +416,7 @@ class AssistDetailsBlock(_DetailsBlock):
 
 
 class StunDetailsBlock(_DetailsBlock):
-    __slots__ = ('stunNum', 'stunValues', 'stunNames', 'stunDuration', '_isEmpty')
+    __slots__ = ('stunNum', 'stunValues', 'stunNames', 'stunDuration')
 
     def __init__(self, meta=None, field='', *path):
         super(StunDetailsBlock, self).__init__(meta, field, *path)
@@ -445,8 +445,7 @@ class StunDetailsBlock(_DetailsBlock):
 
 
 class CritsDetailsBlock(_DetailsBlock):
-    __slots__ = ('critsCount', 'criticalDevices', 'destroyedDevices', 'destroyedTankmen',
-                 '_isEmpty')
+    __slots__ = ('critsCount', 'criticalDevices', 'destroyedDevices', 'destroyedTankmen')
 
     def __init__(self, meta=None, field='', *path):
         super(CritsDetailsBlock, self).__init__(meta, field, *path)
@@ -516,7 +515,7 @@ class TeamBaseDetailsBlock(base.StatsBlock):
 
 
 class EnemyTeamBaseDetailBlock(TeamBaseDetailsBlock):
-    __slots__ = ('_showCapturePoints', 'label', 'isEnemyBase')
+    __slots__ = ()
 
     def __init__(self, meta=None, field='', *path):
         super(EnemyTeamBaseDetailBlock, self).__init__(meta, field, *path)
@@ -526,7 +525,7 @@ class EnemyTeamBaseDetailBlock(TeamBaseDetailsBlock):
 
 
 class AllyTeamBaseDetailBlock(TeamBaseDetailsBlock):
-    __slots__ = ('_showDefencePoints', 'label')
+    __slots__ = ()
 
     def __init__(self, meta=None, field='', *path):
         super(AllyTeamBaseDetailBlock, self).__init__(meta, field, *path)
@@ -537,7 +536,7 @@ class AllyTeamBaseDetailBlock(TeamBaseDetailsBlock):
 
 class EnemyDetailsBlock(_DetailsBlock):
     __slots__ = ('vehicleIcon', 'vehicleName', 'vehicleIntCD', 'vehicleID', 'deathReason',
-                 'spotted', 'piercings', 'damageDealt', 'killCount', '_isEmpty')
+                 'spotted', 'piercings', 'damageDealt', 'killCount')
 
     def setRecord(self, result, reusable):
         if result.vehicle is not None:

@@ -535,6 +535,9 @@ msgstr "T-44M"
 msgid "Chassis_R217_Object_Kust"
 msgstr "库斯特工程"
 
+msgid "Chassis_R218_T_115"
+msgstr "T-115"
+
 msgid "Chassis_R219_Object_265T"
 msgstr "265工程T"
 
@@ -1086,6 +1089,9 @@ msgstr "M-17F (212A)"
 msgid "M_17F_SU_14"
 msgstr "M-17F (SU-14)"
 
+msgid "M_17F_T"
+msgstr "M-17F T"
+
 msgid "M_17F_T_28"
 msgstr "M-17F (T-28)"
 
@@ -1437,7 +1443,7 @@ msgstr "?empty?"
 
 msgid "R114_Object_244_long_special"
 msgstr ""
-"这辆S系VI级重型坦克用途广泛，虽然没有特别可靠的装甲，但却拥有相对于其类型来说较为良好的机动性和操控性。它配备了一门85毫米火炮，平均单发损伤较低，但高额的平均每分钟损伤弥补了这一不足之处。此外，别忘了其火炮的俯仰角有限。"
+"这辆S系VI级重型坦克用途广泛，虽然没有特别可靠的装甲，但却拥有同类型坦克中较为良好的机动性和操控性。它配备了一门85毫米火炮，平均单发损伤较低，但高额的平均每分钟损伤弥补了这一不足之处。请注意，其火炮的俯角有限。"
 
 msgid "R114_Object_244_short"
 msgstr "244工程"
@@ -2482,7 +2488,7 @@ msgstr ""
 
 msgid "R191_Object_283_long_special"
 msgstr ""
-"一辆采用炮塔后置布局的S系IX级金币中型坦克。可靠的装甲和牢靠的侧面让这辆坦克具有扭转战局的能力，其出色的生存能力也会出乎敌人的预料。您可以利用它低矮的尺寸和高效的火炮，在有合适掩体的开阔区域伏击敌人。"
+"一辆采用炮塔后置布局的S系IX级中型坦克。可靠的装甲和牢靠的侧面让这辆坦克具有扭转战局的能力，其出色的生存能力也会出乎敌人的预料。您可以利用它低矮的外形和高效的火炮，在有合适掩体的开阔区域伏击敌人。"
 
 msgid "R191_Object_283_short"
 msgstr "283工程"
@@ -2724,8 +2730,15 @@ msgstr ""
 " "
 "完全气密的车体和高端的有害辐射防护系统。其外部的磁脉冲系统用于在异象区域中捕捉任何类型的低温等离子体，将它转换并提升坦克的性能。该坦克运作正常，随时可以启动。虽然残留些许銤元素辐射，但并不足以对其中的乘员造成负面影响。磁脉冲系统已关闭并封存。"
 
+msgid "R205_Tank_Rozanova_Obsidian_long_special"
+msgstr ""
+"一辆S系VIII级中型坦克，配备了一门精准且高射速的85毫米火炮，能造成高额的平均每分钟损伤。这辆车身低矮的坦克不但拥有坚固的装甲，其侧面还装备了间隙装甲来提供额外防护，让您能够充分发挥其潜力。"
+
 msgid "R205_Tank_Rozanova_Obsidian_short"
 msgstr "黑曜石"
+
+msgid "R205_Tank_Rozanova_Obsidian_short_special"
+msgstr "高射速的火炮，低矮的车身"
 
 msgid "R205_Tank_Rozanova_descr"
 msgstr ""
@@ -2771,6 +2784,23 @@ msgstr "库斯特工程"
 
 msgid "R217_Object_Kust_short_special"
 msgstr "液气悬挂装置，强劲的火炮"
+
+msgid "R218_T_115"
+msgstr "T-115"
+
+msgid "R218_T_115_descr"
+msgstr ""
+"1935年，第185号试验工厂第一设计室开始了T-29坦克的替代方案研发。该计划代号\"115号重装甲坦克\"，针对前身的缺陷进行了全面改进。其突出特点之一是火炮与机枪均具有出色俯仰角，且延续了T-29的轮履两用驱动模式。1938年2月完成T-115初步设计方案后，又衍生出包括纯履带版本在内的多种型号。然而，多炮塔坦克当时已失去战术价值。未建造原型车。"
+
+msgid "R218_T_115_long_special"
+msgstr ""
+"T-115是一辆S系V级中型坦克。其正面装甲得到了强化，并配备一门射速高、平均单发损伤可观的先进火炮。得益于附加装甲，其生存能力显著优于同等级普通中坦，配合不俗的机动性，可运用激进玩法。"
+
+msgid "R218_T_115_short"
+msgstr "T-115"
+
+msgid "R218_T_115_short_special"
+msgstr "不俗的装甲，较高的射速"
 
 msgid "R219_Object_265T"
 msgstr "265工程T"
@@ -3824,6 +3854,9 @@ msgstr "T-44"
 
 msgid "Turret_1_R217_Object_Kust"
 msgstr "库斯特工程"
+
+msgid "Turret_1_R218_T_115"
+msgstr "T-115"
 
 msgid "Turret_1_R219_Object_265T"
 msgstr "265工程T"
@@ -6780,6 +6813,9 @@ msgstr "71-TK-IT"
 msgid "_71_TK_1SH"
 msgstr "71-TK-1SH"
 
+msgid "_71_TK_T"
+msgstr "71-TK"
+
 msgid "_76_Shrap_354T"
 msgstr "Sh-354T"
 
@@ -6806,6 +6842,9 @@ msgstr "Sh-354T"
 
 msgid "_76mm_BR_350B"
 msgstr "BR-350A"
+
+msgid "_76mm_BR_350_P_T"
+msgstr "BP-354 T"
 
 msgid "_76mm_F-32"
 msgstr "76mm F-32炮"
@@ -6864,6 +6903,9 @@ msgstr "76mm L-11炮"
 msgid "_76mm_L_10_T_28"
 msgstr "76mm L-10炮 (T-28)"
 
+msgid "_76mm_L_11_T"
+msgstr "76mm L-11 T炮"
+
 msgid "_76mm_OF_350M"
 msgstr "OF-350M"
 
@@ -6920,6 +6962,9 @@ msgstr "UBR-354A (KV-1S)"
 
 msgid "_76mm_UBR_354A_SU_76"
 msgstr "UBR-354A (SU-76)"
+
+msgid "_76mm_UBR_354A_T"
+msgstr "UBR-354A T"
 
 msgid "_76mm_UBR_354A_T_34_F"
 msgstr "UBR-354A (T-34/F)"
@@ -6992,6 +7037,9 @@ msgstr "UOF-354 (KV-1S)"
 
 msgid "_76mm_UOF_354_SU_76"
 msgstr "UOF-354 (SU-76)"
+
+msgid "_76mm_UOF_354_T"
+msgstr "UOF-354 T"
 
 msgid "_76mm_UOF_354_T_34_F"
 msgstr "UOF-354 (T-34/F)"

@@ -83,8 +83,6 @@ package net.wg.gui.lobby.settings.config
       
       public static const VOICE_CHAT_SUPPORTED:String = "voiceChatSupported";
       
-      public static const MIC_VIVOX_VOLUME:String = "micVivoxVolume";
-      
       public static const ALTERNATIVE_VOICES:String = "alternativeVoices";
       
       public static const BULB_VOICES:String = "bulbVoices";
@@ -101,13 +99,13 @@ package net.wg.gui.lobby.settings.config
       
       public static const SOUND_DEVICE_ID_FIELD:String = "id";
       
-      public static const SOUND_DEVICE_SPEAKER_ID:String = "speakerId";
-      
       public static const SOUND_DEVICE:String = "soundDevice";
       
       public static const SOUND_DEVICE_ALERT_FIELD:String = "showDeviceAlert";
       
-      public static const DEF_ALTERNATIVE_VOICE:String = "default";
+      public static const PHYSICS_SOUND_QUALITY:String = "physicsQuality";
+      
+      public static const PHYSICS_SOUND_QUALITY_RECOMMENDED:String = "physicsQualityRecommended";
       
       public static const AUTODETECT_BUTTON:String = "autodetectButton";
       
@@ -122,8 +120,6 @@ package net.wg.gui.lobby.settings.config
       public static const BASS_BOOST:String = "bassBoost";
       
       public static const SOUND_QUALITY:String = "soundQuality";
-      
-      public static const SUBTITLES:String = "subtitles";
       
       public static const SOUND_QUALITY_VISIBLE:String = "soundQualityVisible";
       
@@ -240,8 +236,6 @@ package net.wg.gui.lobby.settings.config
       public static const RECEIVE_CLAN_INVITES_NOTIFICATIONS:String = "receiveClanInvitesNotifications";
       
       public static const GAMEPLAY_DEVMAPS:String = "gameplay_devMaps";
-      
-      public static const INTERFACE_SCALE_DISABLED:String = "interfaceScaleDisabled";
       
       public static const NEWBIE_PREBATTLE_HINTS:String = "newbiePrebattleHints";
       

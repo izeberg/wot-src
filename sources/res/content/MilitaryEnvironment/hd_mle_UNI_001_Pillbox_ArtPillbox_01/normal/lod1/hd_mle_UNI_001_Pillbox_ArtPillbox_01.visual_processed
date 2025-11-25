@@ -19,119 +19,17 @@
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>s_nd4</identifier>
-					<collisionFlags>0</collisionFlags>
-					<materialKind>111</materialKind>
-					<fx>shaders/std_effects/PBS_tiled.fx</fx>
-					<property>
-						g_fakeShadowsAndDetailParams
-						<Vector4>
-							0.5 0.5 1 0.000000
-							<!--BW_String-->
-						</Vector4>
-					</property>
-					<property>
-						g_dirtColor
-						<Vector4>
-							0.47 0.43 0.38 0.09
-							<!--BW_String-->
-						</Vector4>
-					</property>
-					<property>
-						g_atlasSizes
-						<Vector4>4 2 1 1</Vector4>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						dirtMap
-						<Texture>content/MilitaryEnvironment/00_Tiles/Dirt_Bunker_01.dds</Texture>
-					</property>
-					<property>
-						blendMask
-						<Texture>content/MilitaryEnvironment/hd_mle_UNI_001_Pillbox_ArtPillbox_01/hd_mle_UNI_001_Pillbox_ArtPillbox_01_atlas_blend.png</Texture>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
-						albedoHeightTile0
-						<Texture>content/MilitaryEnvironment/00_Tiles/dds/01_Concrete_main_01_512_AM.dds</Texture>
-					</property>
-					<property>
-						normalGlossSpecTile0
-						<Texture>content/MilitaryEnvironment/00_Tiles/dds/01_Concrete_main_01_512_GBMT.dds</Texture>
-					</property>
-					<property>
-						metallicAOTile0
-						<Texture>content/MilitaryEnvironment/00_Tiles/dds/01_Concrete_main_01_512_MAO.dds</Texture>
-					</property>
-					<property>
-						albedoHeightTile1
-						<Texture>content/MilitaryEnvironment/00_Tiles/dds/02_Concrete_damaged_01_512_AM.dds</Texture>
-					</property>
-					<property>
-						normalGlossSpecTile1
-						<Texture>content/MilitaryEnvironment/00_Tiles/dds/02_Concrete_damaged_01_512_GBMT.dds</Texture>
-					</property>
-					<property>
-						metallicAOTile1
-						<Texture>content/MilitaryEnvironment/00_Tiles/dds/02_Concrete_damaged_01_512_MAO.dds</Texture>
-					</property>
-					<property>
-						albedoHeightTile2
-						<Texture>content/MilitaryEnvironment/00_Tiles/dds/04_Concrete_damaged_01_512_AM.dds</Texture>
-					</property>
-					<property>
-						normalGlossSpecTile2
-						<Texture>content/MilitaryEnvironment/00_Tiles/dds/04_Concrete_damaged_01_512_GBMT.dds</Texture>
-					</property>
-					<property>
-						metallicAOTile2
-						<Texture>content/MilitaryEnvironment/00_Tiles/dds/04_Concrete_damaged_01_512_MAO.dds</Texture>
-					</property>
-					<property>
-						colorTex
-						<Texture>content/UniversalTextures/Universal_GCM.dds</Texture>
-					</property>
-				</material>
-				<groupOrigin>1.300351 2.883368 -0.096608</groupOrigin>
-			</primitiveGroup>
-			<primitiveGroup>
-				1
-				<material>
 					<identifier>s_nd3</identifier>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>111</materialKind>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
 					<property>
-						g_fakeShadowsAndDetailParams
-						<Vector4>
-							0.5 0.5 1 0.000000
-							<!--BW_String-->
-						</Vector4>
-					</property>
-					<property>
 						g_dirtColor
-						<Vector4>
-							0.47 0.43 0.38 0.02
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.470000 0.430000 0.380000 0.020000</Vector4>
 					</property>
 					<property>
 						g_atlasSizes
 						<Vector4>4 2 1 1</Vector4>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
 					</property>
 					<property>
 						dirtMap
@@ -140,14 +38,6 @@
 					<property>
 						blendMask
 						<Texture>content/MilitaryEnvironment/hd_mle_UNI_001_Pillbox_ArtPillbox_01/hd_mle_UNI_001_Pillbox_ArtPillbox_01_atlas_blend.png</Texture>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>0</Int>
 					</property>
 					<property>
 						albedoHeightTile0
@@ -193,95 +83,33 @@
 				<groupOrigin>1.030425 3.056434 -0.012786</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				2
+				1
 				<material>
-					<identifier>s_nd2</identifier>
+					<identifier>s_nd0</identifier>
 					<collisionFlags>0</collisionFlags>
-					<materialKind>111</materialKind>
-					<fx>shaders/std_effects/PBS_tiled.fx</fx>
+					<materialKind>112</materialKind>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
 					<property>
-						g_fakeShadowsAndDetailParams
-						<Vector4>
-							0.5 0.5 1 0.000000
-							<!--BW_String-->
-						</Vector4>
+						normalMap
+						<Texture>content/MilitaryEnvironment/00_Detail_Sets/Bunker_Details_ANM.dds</Texture>
 					</property>
 					<property>
-						g_dirtColor
-						<Vector4>
-							0.47 0.43 0.38 0.05
-							<!--BW_String-->
-						</Vector4>
+						metallicGlossMap
+						<Texture>content/MilitaryEnvironment/00_Detail_Sets/Bunker_Details_GMM.dds</Texture>
 					</property>
 					<property>
-						g_atlasSizes
-						<Vector4>4 2 1 1</Vector4>
+						diffuseMap
+						<Texture>content/MilitaryEnvironment/00_Detail_Sets/Bunker_Details_AM.dds</Texture>
 					</property>
 					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						dirtMap
-						<Texture>content/MilitaryEnvironment/00_Tiles/Dirt_Bunker_01.dds</Texture>
-					</property>
-					<property>
-						blendMask
-						<Texture>content/MilitaryEnvironment/hd_mle_UNI_001_Pillbox_ArtPillbox_01/hd_mle_UNI_001_Pillbox_ArtPillbox_01_atlas_blend.png</Texture>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
-						albedoHeightTile0
-						<Texture>content/MilitaryEnvironment/00_Tiles/dds/01_Concrete_main_01_512_AM.dds</Texture>
-					</property>
-					<property>
-						normalGlossSpecTile0
-						<Texture>content/MilitaryEnvironment/00_Tiles/dds/01_Concrete_main_01_512_GBMT.dds</Texture>
-					</property>
-					<property>
-						metallicAOTile0
-						<Texture>content/MilitaryEnvironment/00_Tiles/dds/01_Concrete_main_01_512_MAO.dds</Texture>
-					</property>
-					<property>
-						albedoHeightTile1
-						<Texture>content/MilitaryEnvironment/00_Tiles/dds/01_Concrete_main_02_512_AM.dds</Texture>
-					</property>
-					<property>
-						normalGlossSpecTile1
-						<Texture>content/MilitaryEnvironment/00_Tiles/dds/01_Concrete_main_02_512_GBMT.dds</Texture>
-					</property>
-					<property>
-						metallicAOTile1
-						<Texture>content/MilitaryEnvironment/00_Tiles/dds/01_Concrete_main_02_512_MAO.dds</Texture>
-					</property>
-					<property>
-						albedoHeightTile2
-						<Texture>content/MilitaryEnvironment/00_Tiles/dds/04_Concrete_damaged_02_512_AM.dds</Texture>
-					</property>
-					<property>
-						normalGlossSpecTile2
-						<Texture>content/MilitaryEnvironment/00_Tiles/dds/04_Concrete_damaged_02_512_GBMT.dds</Texture>
-					</property>
-					<property>
-						metallicAOTile2
-						<Texture>content/MilitaryEnvironment/00_Tiles/dds/04_Concrete_damaged_02_512_MAO.dds</Texture>
-					</property>
-					<property>
-						colorTex
-						<Texture>content/UniversalTextures/Universal_GCM.dds</Texture>
+						g_enableAO
+						<Bool>true</Bool>
 					</property>
 				</material>
-				<groupOrigin>1.300071 1.782966 -0.013261</groupOrigin>
+				<groupOrigin>0.794327 3.813249 -0.689370</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				3
+				2
 				<material>
 					<identifier>s_nd1</identifier>
 					<collisionFlags>0</collisionFlags>
@@ -289,18 +117,11 @@
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
 					<property>
 						g_dirtColor
-						<Vector4>
-							0.47 0.43 0.38 0.07
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.470000 0.430000 0.380000 0.070000</Vector4>
 					</property>
 					<property>
 						g_atlasSizes
 						<Vector4>4 2 1 1</Vector4>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
 					</property>
 					<property>
 						dirtMap
@@ -309,14 +130,6 @@
 					<property>
 						blendMask
 						<Texture>content/MilitaryEnvironment/hd_mle_UNI_001_Pillbox_ArtPillbox_01/hd_mle_UNI_001_Pillbox_ArtPillbox_01_atlas_blend.png</Texture>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>0</Int>
 					</property>
 					<property>
 						albedoHeightTile0
@@ -362,42 +175,136 @@
 				<groupOrigin>1.300151 2.751045 0.732136</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				4
+				3
 				<material>
-					<identifier>s_nd0</identifier>
+					<identifier>s_nd4</identifier>
 					<collisionFlags>0</collisionFlags>
-					<materialKind>112</materialKind>
-					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<materialKind>111</materialKind>
+					<fx>shaders/std_effects/PBS_tiled.fx</fx>
 					<property>
-						normalMap
-						<Texture>content/MilitaryEnvironment/00_Detail_Sets/Bunker_Details_ANM.dds</Texture>
+						g_dirtColor
+						<Vector4>0.470000 0.430000 0.380000 0.090000</Vector4>
 					</property>
 					<property>
-						metallicGlossMap
-						<Texture>content/MilitaryEnvironment/00_Detail_Sets/Bunker_Details_GMM.dds</Texture>
+						g_atlasSizes
+						<Vector4>4 2 1 1</Vector4>
 					</property>
 					<property>
-						doubleSided
-						<Bool>false</Bool>
+						dirtMap
+						<Texture>content/MilitaryEnvironment/00_Tiles/Dirt_Bunker_01.dds</Texture>
 					</property>
 					<property>
-						diffuseMap
-						<Texture>content/MilitaryEnvironment/00_Detail_Sets/Bunker_Details_AM.dds</Texture>
+						blendMask
+						<Texture>content/MilitaryEnvironment/hd_mle_UNI_001_Pillbox_ArtPillbox_01/hd_mle_UNI_001_Pillbox_ArtPillbox_01_atlas_blend.png</Texture>
 					</property>
 					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
+						albedoHeightTile0
+						<Texture>content/MilitaryEnvironment/00_Tiles/dds/01_Concrete_main_01_512_AM.dds</Texture>
 					</property>
 					<property>
-						alphaReference
-						<Int>0</Int>
+						normalGlossSpecTile0
+						<Texture>content/MilitaryEnvironment/00_Tiles/dds/01_Concrete_main_01_512_GBMT.dds</Texture>
 					</property>
 					<property>
-						g_enableAO
-						<Bool>true</Bool>
+						metallicAOTile0
+						<Texture>content/MilitaryEnvironment/00_Tiles/dds/01_Concrete_main_01_512_MAO.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile1
+						<Texture>content/MilitaryEnvironment/00_Tiles/dds/02_Concrete_damaged_01_512_AM.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile1
+						<Texture>content/MilitaryEnvironment/00_Tiles/dds/02_Concrete_damaged_01_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile1
+						<Texture>content/MilitaryEnvironment/00_Tiles/dds/02_Concrete_damaged_01_512_MAO.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile2
+						<Texture>content/MilitaryEnvironment/00_Tiles/dds/04_Concrete_damaged_01_512_AM.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile2
+						<Texture>content/MilitaryEnvironment/00_Tiles/dds/04_Concrete_damaged_01_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile2
+						<Texture>content/MilitaryEnvironment/00_Tiles/dds/04_Concrete_damaged_01_512_MAO.dds</Texture>
+					</property>
+					<property>
+						colorTex
+						<Texture>content/UniversalTextures/Universal_GCM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.794327 3.813249 -0.689370</groupOrigin>
+				<groupOrigin>1.300351 2.883368 -0.096608</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				4
+				<material>
+					<identifier>s_nd2</identifier>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>111</materialKind>
+					<fx>shaders/std_effects/PBS_tiled.fx</fx>
+					<property>
+						g_dirtColor
+						<Vector4>0.470000 0.430000 0.380000 0.050000</Vector4>
+					</property>
+					<property>
+						g_atlasSizes
+						<Vector4>4 2 1 1</Vector4>
+					</property>
+					<property>
+						dirtMap
+						<Texture>content/MilitaryEnvironment/00_Tiles/Dirt_Bunker_01.dds</Texture>
+					</property>
+					<property>
+						blendMask
+						<Texture>content/MilitaryEnvironment/hd_mle_UNI_001_Pillbox_ArtPillbox_01/hd_mle_UNI_001_Pillbox_ArtPillbox_01_atlas_blend.png</Texture>
+					</property>
+					<property>
+						albedoHeightTile0
+						<Texture>content/MilitaryEnvironment/00_Tiles/dds/01_Concrete_main_01_512_AM.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile0
+						<Texture>content/MilitaryEnvironment/00_Tiles/dds/01_Concrete_main_01_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile0
+						<Texture>content/MilitaryEnvironment/00_Tiles/dds/01_Concrete_main_01_512_MAO.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile1
+						<Texture>content/MilitaryEnvironment/00_Tiles/dds/01_Concrete_main_02_512_AM.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile1
+						<Texture>content/MilitaryEnvironment/00_Tiles/dds/01_Concrete_main_02_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile1
+						<Texture>content/MilitaryEnvironment/00_Tiles/dds/01_Concrete_main_02_512_MAO.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile2
+						<Texture>content/MilitaryEnvironment/00_Tiles/dds/04_Concrete_damaged_02_512_AM.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile2
+						<Texture>content/MilitaryEnvironment/00_Tiles/dds/04_Concrete_damaged_02_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile2
+						<Texture>content/MilitaryEnvironment/00_Tiles/dds/04_Concrete_damaged_02_512_MAO.dds</Texture>
+					</property>
+					<property>
+						colorTex
+						<Texture>content/UniversalTextures/Universal_GCM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>1.300071 1.782966 -0.013261</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -406,5 +313,5 @@
 		<max>9.933996 7.312751 9.825317</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>263900</geometrySize>
+	<geometrySize>262460</geometrySize>
 </root>

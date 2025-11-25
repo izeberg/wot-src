@@ -10,6 +10,9 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "B_58_J"
+msgstr "B-58J"
+
 msgid "CKD_AXK"
 msgstr "CKD AXK"
 
@@ -133,6 +136,9 @@ msgstr "Vz.60 S"
 msgid "Chassis_Cz21_Vz_60S_Dravec"
 msgstr "Vz.60 S \"掠食者\""
 
+msgid "Chassis_Cz22_Skoda_T_15A"
+msgstr "斯柯达 T15A"
+
 msgid "Chassis_Cz23_Skoda_T_17"
 msgstr "斯柯达 T17 I型"
 
@@ -168,6 +174,9 @@ msgstr "Vz.71 T"
 
 msgid "Chassis_Cz35_T56_G"
 msgstr "TT-130M"
+
+msgid "Chassis_Cz36_Jezevec"
+msgstr "\"蜜獾\""
 
 msgid "Chassis_Cz37_SDT_58_Vlkodav"
 msgstr "SDT-58 V"
@@ -487,6 +496,26 @@ msgstr "Vz.60 S"
 msgid "Cz21_Vz_60S_short_special"
 msgstr "出色的装甲，优秀的火炮手感"
 
+msgid "Cz22_Skoda_T_15A"
+msgstr "斯柯达 T15A"
+
+msgid "Cz22_Skoda_T_15A_descr"
+msgstr ""
+"斯柯达兵工厂的侦察坦克计划。1940年夏季开始研发，首批斯柯达 "
+"T15原型车在同年10月及12月相继下线。在对比测试中，其综合表现排在II型\"山猫\"与38 "
+"nA之后，位列第三。研发团队随后继续改进设计，推出了坦克的改进型版本——斯柯达 T15A。该型号绘制了多份蓝图并制作了木制样车，但未建造金属原型车。"
+
+msgid "Cz22_Skoda_T_15A_long_special"
+msgstr ""
+"斯柯达 "
+"T15A是一辆J系IV级轻型坦克。它拥有相对于其类型来说较高的平均单发损伤，以及良好的平均穿透力，加上较短的装填时间，可进行稳定输出。较高的最大速度与出色的单位功率，使其成为同等级中机动性较强的轻型坦克之一。"
+
+msgid "Cz22_Skoda_T_15A_short"
+msgstr "斯柯达 T15A"
+
+msgid "Cz22_Skoda_T_15A_short_special"
+msgstr "强劲的火炮，良好的机动性"
+
 msgid "Cz23_Skoda_T_17"
 msgstr "斯柯达 T17"
 
@@ -616,6 +645,22 @@ msgstr "TT-130M"
 
 msgid "Cz35_T56_G_short_special"
 msgstr "火箭助推器，坚固的装甲"
+
+msgid "Cz36_Jezevec"
+msgstr "\"蜜獾\""
+
+msgid "Cz36_Jezevec_descr"
+msgstr ""
+"20世纪60年代初，J系军方决定设计一辆兼具强劲火力和低矮外形的中型坦克。乘员舱位于车体中，战斗室则设置在坦克后部。火炮安装于摇摆式炮塔的上塔体，并通过遥控操作，同时配备弹夹装填系统。发动机和传动装置位于坦克前部，以为乘员提供额外防护。该计划最终仅停留在蓝图阶段。"
+
+msgid "Cz36_Jezevec_long_special"
+msgstr "?empty?"
+
+msgid "Cz36_Jezevec_short"
+msgstr "\"蜜獾\""
+
+msgid "Cz36_Jezevec_short_special"
+msgstr "?empty?"
 
 msgid "Cz37_SDT_58_Vlkodav"
 msgstr "SDT-58 V"
@@ -747,6 +792,9 @@ msgstr "9RM"
 msgid "Radiostanice_Fu_12"
 msgstr "Fu 12"
 
+msgid "Radiostanice_Fu_5"
+msgstr "Fu 5"
+
 msgid "Radiostanice_Fu_7"
 msgstr "Fu 7"
 
@@ -773,6 +821,9 @@ msgstr "R-112"
 
 msgid "Radiostanice_R_113"
 msgstr "R-113"
+
+msgid "Radiostanice_R_113_J"
+msgstr "R-123J"
 
 msgid "Radiostanice_R_113_JA"
 msgstr "R-123JA"
@@ -867,6 +918,9 @@ msgstr "斯柯达 16缸柴油机(660)"
 msgid "Skoda_V16_diesel_660_a"
 msgstr "斯柯达 16缸柴油机(A660)"
 
+msgid "Skoda_V8"
+msgstr "斯柯达 V8"
+
 msgid "Skoda_V8_diesel"
 msgstr "斯柯达 8缸柴油机"
 
@@ -945,6 +999,9 @@ msgstr "Vz.60 S"
 msgid "Turret_1_Cz21_Vz_60S_Dravec"
 msgstr "Vz.60 S \"掠食者\""
 
+msgid "Turret_1_Cz22_Skoda_T_15A"
+msgstr "斯柯达 T15A"
+
 msgid "Turret_1_Cz23_Skoda_T_17"
 msgstr "斯柯达 T17 I型"
 
@@ -971,6 +1028,9 @@ msgstr "Vz.71 T"
 
 msgid "Turret_1_Cz35_T56_G"
 msgstr "TT-130M"
+
+msgid "Turret_1_Cz36_Jezevec"
+msgstr "\"蜜獾\""
 
 msgid "Turret_1_Cz37_SDT_58_Vlkodav"
 msgstr "SDT-58 V"
@@ -1469,6 +1529,9 @@ msgstr "HE"
 msgid "_47mm_Narazovy_vz_36"
 msgstr "HE vz.36"
 
+msgid "_47mm_Narazovy_vz_36_A"
+msgstr "HE vz.36 A"
+
 msgid "_47mm_Narazovy_vz_36_A11"
 msgstr "HE vz.36 (A11)"
 
@@ -1481,6 +1544,9 @@ msgstr "APCR(钢芯)"
 msgid "_47mm_Prurazny_vz_36"
 msgstr "AP vz.36"
 
+msgid "_47mm_Prurazny_vz_36_A"
+msgstr "AP vz.36 A"
+
 msgid "_47mm_Prurazny_vz_36_A11"
 msgstr "AP vz.36 (A11)"
 
@@ -1490,6 +1556,9 @@ msgstr "APCR vz.40(A11钨芯)"
 msgid "_47mm_Prurazny_vz_40_s_wolf_jadrem"
 msgstr "APCR vz.40(钨芯)"
 
+msgid "_47mm_Prurazny_vz_40_s_wolf_jadrem_A"
+msgstr "APCR vz.40(钨芯) A"
+
 msgid "_47mm_Rychlopalne_delo_Vickers_L_20"
 msgstr "47mm L/20 维克斯速射炮"
 
@@ -1498,6 +1567,9 @@ msgstr "47mm 斯柯达 A11炮"
 
 msgid "_47mm_Skoda_A11_vylepseny"
 msgstr "47mm 斯柯达 A11炮(改进型)"
+
+msgid "_47mm_Skoda_A24"
+msgstr "47mm 斯柯达 A24炮"
 
 msgid "_47mm_Skoda_A9"
 msgstr "47mm 斯柯达 A9炮"
@@ -1631,6 +1703,18 @@ msgstr ""
 
 msgid "_75mm_Skoda_A26"
 msgstr "75mm 斯柯达 A26炮"
+
+msgid "_85mm_D_58J"
+msgstr "85mm D-58J炮"
+
+msgid "_85mm_UBR_372I"
+msgstr "85mm UBR 372I"
+
+msgid "_85mm_UBR_372S"
+msgstr "85mm UBR 372S"
+
+msgid "_85mm_UOF_372F"
+msgstr "85mm UOF 372F"
 
 msgid "_85mm_vz_44S"
 msgstr "85mm vz.44S炮"

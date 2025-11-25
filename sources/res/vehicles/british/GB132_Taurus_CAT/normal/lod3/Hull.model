@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/british/GB132_Taurus_CAT/normal/lod4/Hull</parent>
+	<extent>192.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.679630 -0.459899 -3.346129</min>
+		<max>1.690387 1.478437 3.647836</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/british/GB132_Taurus_CAT/normal/lod3/Hull</nodefullVisual>
+</root>

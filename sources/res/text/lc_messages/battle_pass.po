@@ -396,9 +396,6 @@ msgstr "无敌装甲"
 msgid "chapter/fullName/183"
 msgstr "机械狂潮"
 
-msgid "chapter/fullName/185"
-msgstr "The Walking Dead"
-
 msgid "chapter/fullNameUppercased/10021"
 msgstr "猎牛之歌"
 
@@ -413,9 +410,6 @@ msgstr "无敌装甲"
 
 msgid "chapter/fullNameUppercased/183"
 msgstr "机械狂潮"
-
-msgid "chapter/fullNameUppercased/185"
-msgstr "THE WALKING DEAD"
 
 msgid "chapter/title"
 msgstr "章节%(chapter)s"
@@ -604,8 +598,11 @@ msgstr "%(chapterName)s"
 msgid "holidayFinalScreen/completed"
 msgstr "已完成章节"
 
-msgid "holidayFinalScreen/finalState/button"
-msgstr "车库中查看"
+msgid "holidayFinalScreen/finalState/button/showHangar"
+msgstr "返回车库"
+
+msgid "holidayFinalScreen/finalState/button/showVehicle"
+msgstr "在车库中查看"
 
 msgid "holidayFinalScreen/finalState/label"
 msgstr "已获得所有活动奖励"
@@ -816,7 +813,7 @@ msgid "navigation/chapterChoice"
 msgstr "战斗通行证赛季%(seasonNum)s"
 
 msgid "navigation/holidayFinal"
-msgstr "?empty?"
+msgstr "战斗通行证"
 
 msgid "navigation/intro"
 msgstr "战斗通行证赛季%(seasonNum)s"
@@ -840,10 +837,10 @@ msgid "postProgressionView/footer/description/text"
 msgstr "完成所有章节后开放。已完成章节: %(completedChapters)/%(chaptersAmount)"
 
 msgid "postProgressionView/footer/extraChapter/description/text"
-msgstr "获取金币坦克和专属个性化元素"
+msgstr "投身其中，获取专属奖励和独特个性化元素。"
 
 msgid "postProgressionView/footer/extraChapter/title/text"
-msgstr "The Walking Dead降临！"
+msgstr "特殊章节来了！"
 
 msgid "postProgressionView/footer/purchaseIP/banner/text"
 msgstr "购买高级通行证，获取更多奖励！"
@@ -919,6 +916,9 @@ msgstr "购买高级通行证"
 
 msgid "progression/battlePassBuyDescr"
 msgstr "高级通行证可以解锁当前章节的高级奖励轨道。"
+
+msgid "progression/battlePassBuyHolidayDescr"
+msgstr "高级通行证可以解锁高级奖励轨道。"
 
 msgid "progression/battlePassNextChapterBuyDescr"
 msgstr "完成前一章节以购买此章节的高级通行证。"
@@ -1439,6 +1439,9 @@ msgstr "完成前一章节以购买该章节中的阶段。"
 msgid "tooltips/footerBuyBtn/episode/descr"
 msgstr "购买阶段后，您将立即获得其基础和高级奖励。各个章节的阶段需单独购买。"
 
+msgid "tooltips/footerBuyBtn/episode/holidayDescr"
+msgstr "购买阶段后，您将立即获得其基础和高级奖励。"
+
 msgid "tooltips/goldMission/description"
 msgstr "%(highlight)s您将无法从错过的日期中获得金币。"
 
@@ -1461,6 +1464,13 @@ msgstr ""
 msgid "tooltips/iconLock/descr2"
 msgstr ""
 "您可随时购买高级通行证。购买章节的高级通行证后，您将立即获得该章节已完成阶段的全部高级奖励。在战斗通行证主界面点击\"购买高级通行证\"按钮即可进行购买。"
+
+msgid "tooltips/iconLock/holidayDescr1"
+msgstr "您可通过购买高级通行证来解锁更多阶段奖励。购买高级通行证后，完成每个后续阶段时，您都将同时获得其基础和高级奖励。"
+
+msgid "tooltips/iconLock/holidayDescr2"
+msgstr ""
+"您可随时购买高级通行证。购买后，您将立即获得已完成阶段的全部高级奖励。在战斗通行证主界面点击\"购买高级通行证\"按钮即可进行购买，更加丰厚的奖励等待着您。"
 
 msgid "tooltips/iconLock/title"
 msgstr "战斗通行证的高级奖励"

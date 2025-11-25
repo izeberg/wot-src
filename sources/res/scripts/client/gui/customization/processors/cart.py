@@ -91,8 +91,7 @@ class StubItemPurchaseDescription(BasePurchaseDescription):
 
 
 class SeparateItemPurchaseDescription(BasePurchaseDescription):
-    __slots__ = ('intCD', 'identificator', 'selected', 'itemData', 'compoundPrice',
-                 'quantity', 'isFromInventory', 'purchaseIndices', 'group', 'locked',
+    __slots__ = ('itemData', 'compoundPrice', 'isFromInventory', 'group', 'locked',
                  'isEdited')
 
     def __init__(self, purchaseItem, purchaseIdx, progressionLevel=-1):

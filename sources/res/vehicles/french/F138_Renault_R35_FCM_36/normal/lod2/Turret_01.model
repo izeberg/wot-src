@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/french/F138_Renault_R35_FCM_36/normal/lod2/Turret_01</nodefullVisual>
+	<parent>vehicles/french/F138_Renault_R35_FCM_36/normal/lod3/Turret_01</parent>
+	<extent>96.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.600326 -0.018536 -0.784784</min>
+		<max>0.589378 0.724866 0.789496</max>
+	</visibilityBox>
+</root>

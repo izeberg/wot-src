@@ -538,7 +538,7 @@ class Source(object):
          'customizations', 'vehicleChoice', 'crewSkin', 'blueprint', 'blueprintAny', 'enhancement',
          'eventCoin', 'bpcoin', 'entitlement', 'rankedDailyBattles', 'rankedBonusBattles', 'equipCoin',
          'dogTagComponent', 'battlePassPoints', 'currency', 'freePremiumCrew', 'entitlementList',
-         'dailyQuestReroll', 'noviceReset'}
+         'dailyQuestReroll', 'noviceReset', 'pets'}
         if eventType in (EVENT_TYPE.BATTLE_QUEST, EVENT_TYPE.PERSONAL_QUEST, EVENT_TYPE.NT_QUEST):
             bonusTypes.update(('xp', 'tankmenXP', 'xpFactor', 'creditsFactor', 'freeXPFactor',
                                'tankmenXPFactor'))

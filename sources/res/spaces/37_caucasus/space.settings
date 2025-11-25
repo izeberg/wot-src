@@ -30,7 +30,7 @@
 			<type>
 				<name>GBufferDecals</name>
 				<atlas>
-					<width>2048</width>
+					<width>3072</width>
 					<height>4096</height>
 					<format>DXT5</format>
 					<constrains>
@@ -42,7 +42,7 @@
 					</constrains>
 				</atlas>
 				<atlas>
-					<width>2048</width>
+					<width>3072</width>
 					<height>4096</height>
 					<format>DXT5</format>
 					<constrains>
@@ -54,7 +54,7 @@
 					</constrains>
 				</atlas>
 				<atlas>
-					<width>2048</width>
+					<width>3072</width>
 					<height>4096</height>
 					<format>DXT5</format>
 					<constrains>
@@ -146,4 +146,7 @@
 	<enableClusteredShading>false</enableClusteredShading>
 	<isSHGridQualityOverridden>false</isSHGridQualityOverridden>
 	<overrideSHGridQuality>0</overrideSHGridQuality>
+	<lightsCutOffDistance>500.000000</lightsCutOffDistance>
+	<isSimplifiedSHGridQualityOverridden>false</isSimplifiedSHGridQualityOverridden>
+	<overrideSimplifiedSHGridQuality>2</overrideSimplifiedSHGridQuality>
 </root>

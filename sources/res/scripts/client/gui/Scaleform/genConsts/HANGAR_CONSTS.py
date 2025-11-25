@@ -12,8 +12,6 @@ class HANGAR_CONSTS(object):
     DAILY_QUEST = 'dailyQuest'
     ALERT_MESSAGE = 'alertMessage'
     CAROUSEL = 'carousel'
-    COMP7_TOURNAMENT_BANNER = 'comp7TournamentBanner'
-    COMP7_GRAND_TOURNAMENT_BANNER = 'comp7GrandTournamentBanner'
     MINI_CLIENT = 'miniClient'
     PRESTIGE_WIDGET = 'prestigeWidget'
     HEADER_WIDGET = 'headerWidget'

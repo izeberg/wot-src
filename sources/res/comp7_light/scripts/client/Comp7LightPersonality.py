@@ -187,6 +187,11 @@ class ClientComp7LightBattleMode(Comp7LightBattleMode):
         return Comp7LightControllerRepository
 
     @property
+    def _client_prebattleCtrlMode(self):
+        from AvatarInputHandler import _CTRL_MODE
+        return (_CTRL_MODE.VEHICLES_SELECTION, _CTRL_MODE.POSTMORTEM)
+
+    @property
     def _client_battleRequiredLibraries(self):
         return ['comp7_light|comp7_light_battle.swf', 'comp7_core|minimapEntriesLibrary.swf']
 
@@ -221,6 +226,7 @@ def preInit():
     battleMode.registerDynamicObjectCache()
     battleMode.registerBattleControllersRepository()
     battleMode.registerScaleformRequiredLibraries()
+    battleMode.registerPrebattleCtrlMode()
     registerComp7LightScaleform()
     registerComp7LightLobby()
     registerComp7LightOthersPrbParams()

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/french/F138_Renault_R35_FCM_36/crash/lod0/Gun_01</nodefullVisual>
+	<parent>vehicles/french/F138_Renault_R35_FCM_36/crash/lod1/Gun_01</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.288829 -0.155953 -0.774584</min>
+		<max>0.291171 0.169391 0.464692</max>
+	</visibilityBox>
+</root>

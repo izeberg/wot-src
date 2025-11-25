@@ -21,7 +21,10 @@
 					<identifier>track_mat</identifier>
 					<property>
 						g_detailUVTiling
-						<Vector4>0.876713 0.876713 0.000000 0.000000</Vector4>
+						<Vector4>
+							1.75342 1.75342 0.000000 0.000000
+							<!--BW_String-->
+						</Vector4>
 					</property>
 					<property>
 						g_detailPowerGloss

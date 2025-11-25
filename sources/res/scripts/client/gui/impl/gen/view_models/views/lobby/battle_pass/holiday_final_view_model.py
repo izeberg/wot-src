@@ -1,4 +1,4 @@
-from enum import IntEnum
+from enum import Enum, IntEnum
 from frameworks.wulf import ViewModel
 from gui.impl.gen.view_models.views.lobby.battle_pass.awards_widget_model import AwardsWidgetModel
 from gui.impl.gen.view_models.views.lobby.battle_pass.battle_pass_buy_rewards_view_model import BattlePassBuyRewardsViewModel
@@ -10,16 +10,22 @@ class ChapterStates(IntEnum):
     NOTSTARTED = 3
 
 
+class FinalRewardTypes(Enum):
+    VEHICLE = 'vehicle'
+    STYLE = 'style'
+    TANKMAN = 'tankman'
+
+
 class HolidayFinalViewModel(ViewModel):
-    __slots__ = ('showRewards', 'onTakeRewardsClick', 'showTankmen', 'onBackClick',
-                 'onPreviewVehicle', 'showVehicle', 'showBuy', 'onClose')
+    __slots__ = ('onTakeRewardsClick', 'showTankmen', 'onPreviewVehicle', 'showHangar',
+                 'onClose')
     BUY_STATE = 'buyState'
     REWARDS_STATE = 'rewardsState'
     TANKMEN_STATE = 'tankmenState'
     SELECTABLE_REWARDS_STATE = 'selectableRewardsState'
     FINAL_STATE = 'finalState'
 
-    def __init__(self, properties=9, commands=8):
+    def __init__(self, properties=10, commands=5):
         super(HolidayFinalViewModel, self).__init__(properties=properties, commands=commands)
 
     @property
@@ -74,11 +80,17 @@ class HolidayFinalViewModel(ViewModel):
     def setChapterState(self, value):
         self._setNumber(7, value.value)
 
+    def getFinalRewardType(self):
+        return FinalRewardTypes(self._getString(8))
+
+    def setFinalRewardType(self, value):
+        self._setString(8, value.value)
+
     def getIsSeasonEndingSoon(self):
-        return self._getBool(8)
+        return self._getBool(9)
 
     def setIsSeasonEndingSoon(self, value):
-        self._setBool(8, value)
+        self._setBool(9, value)
 
     def _initialize(self):
         super(HolidayFinalViewModel, self)._initialize()
@@ -90,12 +102,10 @@ class HolidayFinalViewModel(ViewModel):
         self._addNumberProperty('chapterID', 0)
         self._addNumberProperty('currentLevel', 0)
         self._addNumberProperty('chapterState')
+        self._addStringProperty('finalRewardType')
         self._addBoolProperty('isSeasonEndingSoon', False)
-        self.showRewards = self._addCommand('showRewards')
         self.onTakeRewardsClick = self._addCommand('onTakeRewardsClick')
         self.showTankmen = self._addCommand('showTankmen')
-        self.onBackClick = self._addCommand('onBackClick')
         self.onPreviewVehicle = self._addCommand('onPreviewVehicle')
-        self.showVehicle = self._addCommand('showVehicle')
-        self.showBuy = self._addCommand('showBuy')
+        self.showHangar = self._addCommand('showHangar')
         self.onClose = self._addCommand('onClose')

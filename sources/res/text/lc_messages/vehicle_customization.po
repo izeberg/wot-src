@@ -5856,6 +5856,9 @@ msgstr "?empty?"
 msgid "camouflage/pub_west_charity_2/label"
 msgstr "仁者之心"
 
+msgid "camouflage/pub_west_ebr_racing/label"
+msgstr "疾速条纹"
+
 msgid "camouflage/pub_west_germany_reunification_2025/description"
 msgstr "?empty?"
 
@@ -6171,6 +6174,12 @@ msgstr "?empty?"
 msgid "camouflage/shreder/label"
 msgstr "施莱德"
 
+msgid "camouflage/snowy_climb/description"
+msgstr "?empty?"
+
+msgid "camouflage/snowy_climb/label"
+msgstr "雪域攀峰"
+
 msgid "camouflage/solo_dday_2024/description"
 msgstr "一款灵感源于1944年诺曼底登陆参战盟军坦克的涂装。"
 
@@ -6371,6 +6380,12 @@ msgstr "?empty?"
 
 msgid "camouflage/tankfest_2025/label"
 msgstr "城市行动"
+
+msgid "camouflage/tankmas_2025/description"
+msgstr "?empty?"
+
+msgid "camouflage/tankmas_2025/label"
+msgstr "节日面包巡礼"
 
 msgid "camouflage/tanksmen_day/description"
 msgstr "一款为庆祝坦克兵日而设计的独特涂装图案，一般在每年九月的第二个周日庆祝此节日。"
@@ -7428,6 +7443,36 @@ msgstr "?empty?"
 msgid "camouflage/well_deserved_award_2023_1/label"
 msgstr "美好回忆"
 
+msgid "camouflage/well_deserved_reward_2025_1/description"
+msgstr "\"沙场宿将\"风格的等级I涂装图案。"
+
+msgid "camouflage/well_deserved_reward_2025_1/label"
+msgstr "沙场宿将I"
+
+msgid "camouflage/well_deserved_reward_2025_2/description"
+msgstr "\"沙场宿将\"风格的等级II涂装图案。"
+
+msgid "camouflage/well_deserved_reward_2025_2/label"
+msgstr "沙场宿将II"
+
+msgid "camouflage/well_deserved_reward_2025_3/description"
+msgstr "\"沙场宿将\"风格的等级III涂装图案。"
+
+msgid "camouflage/well_deserved_reward_2025_3/label"
+msgstr "沙场宿将III"
+
+msgid "camouflage/well_deserved_reward_2025_4/description"
+msgstr "\"沙场宿将\"风格的等级IV涂装图案。"
+
+msgid "camouflage/well_deserved_reward_2025_4/label"
+msgstr "沙场宿将IV"
+
+msgid "camouflage/well_deserved_reward_2025_5/description"
+msgstr "\"沙场宿将\"风格的等级V涂装图案。"
+
+msgid "camouflage/well_deserved_reward_2025_5/label"
+msgstr "沙场宿将V"
+
 msgid "camouflage/western_warriors/description"
 msgstr "?empty?"
 
@@ -7505,6 +7550,12 @@ msgstr "可在2021年最终兵器活动中获得的特殊迷彩涂装。"
 
 msgid "camouflage/white_tiger_2021_standalone/label"
 msgstr "电抗器(关)"
+
+msgid "camouflage/winback_1/label"
+msgstr "Akrobat之选！"
+
+msgid "camouflage/winback_2/label"
+msgstr "CYGANZOR认证"
 
 msgid "camouflage/winter"
 msgstr "雪地"
@@ -9460,6 +9511,18 @@ msgstr "通过在180秒内击毁所有敌方坦克赢得1场天梯战。"
 
 msgid "customization/tooltip/quests/veni_vidi_vici_775/condition"
 msgstr "通过在150秒内击毁所有敌方坦克赢得1场天梯战。"
+
+msgid "customization/tooltip/quests/wdr_style_1200_1_stage_2/condition"
+msgstr "在\"当之无愧\"奖励活动中达成\"指挥官\"头衔。"
+
+msgid "customization/tooltip/quests/wdr_style_1200_1_stage_3/condition"
+msgstr "在\"当之无愧\"奖励活动中达成\"军官\"头衔。"
+
+msgid "customization/tooltip/quests/wdr_style_1200_1_stage_4/condition"
+msgstr "在\"当之无愧\"奖励活动中达成\"老兵\"头衔。"
+
+msgid "customization/tooltip/quests/wdr_style_1200_1_stage_5/condition"
+msgstr "在\"当之无愧\"奖励活动中达成\"传说\"、\"Alpha测试老兵\"或\"Beta测试老兵\"头衔。"
 
 msgid "customization/tooltip/quests/workhorse_1026/condition"
 msgstr "在天梯战中，累计点亮或击毁500辆敌方坦克。"
@@ -12499,6 +12562,15 @@ msgstr "周年纪念萌猫"
 msgid "emblem/special/sticker_871"
 msgstr "周年纪念壮鼠"
 
+msgid "emblem/special/sticker_876"
+msgstr "Mouz"
+
+msgid "emblem/special/sticker_877"
+msgstr "Cyganzor之笑"
+
+msgid "emblem/special/sticker_879"
+msgstr "雪域攀峰"
+
 msgid "filter/popover/bonusType/title"
 msgstr "加成类型"
 
@@ -15314,6 +15386,12 @@ msgstr "生命值充足"
 msgid "inscription/special/special_837"
 msgstr "Wolfenstein"
 
+msgid "inscription/special/special_838"
+msgstr "MOUZAKROBAT"
+
+msgid "inscription/special/special_839"
+msgstr "CYGANZOR"
+
 msgid "inscription/special/special_847"
 msgstr "幸存者字迹"
 
@@ -17859,6 +17937,141 @@ msgstr "化身为龙"
 msgid "projection_decals/holiday/projection_decal_08"
 msgstr "吉祥物"
 
+msgid "projection_decals/holiday/projection_decal_101"
+msgstr "三福金锭"
+
+msgid "projection_decals/holiday/projection_decal_102"
+msgstr "三福铜钱配饰"
+
+msgid "projection_decals/holiday/projection_decal_103"
+msgstr "龙凤铜钱配饰"
+
+msgid "projection_decals/holiday/projection_decal_104"
+msgstr "五福铜钱配饰"
+
+msgid "projection_decals/holiday/projection_decal_105"
+msgstr "金十全锦金佩"
+
+msgid "projection_decals/holiday/projection_decal_106"
+msgstr "金十全锦红佩"
+
+msgid "projection_decals/holiday/projection_decal_107"
+msgstr "金边中国结"
+
+msgid "projection_decals/holiday/projection_decal_108"
+msgstr "福缘金币"
+
+msgid "projection_decals/holiday/projection_decal_109"
+msgstr "岁岁平安吉语金钱"
+
+msgid "projection_decals/holiday/projection_decal_110"
+msgstr "寿纹金币"
+
+msgid "projection_decals/holiday/projection_decal_111"
+msgstr "竹丛"
+
+msgid "projection_decals/holiday/projection_decal_112"
+msgstr "紫罗兰花丛"
+
+msgid "projection_decals/holiday/projection_decal_113"
+msgstr "白喇叭水仙花丛"
+
+msgid "projection_decals/holiday/projection_decal_114"
+msgstr "黄喇叭水仙花丛"
+
+msgid "projection_decals/holiday/projection_decal_115"
+msgstr "桃花枝丫"
+
+msgid "projection_decals/holiday/projection_decal_116"
+msgstr "大吉大利"
+
+msgid "projection_decals/holiday/projection_decal_117"
+msgstr "金箔福倒"
+
+msgid "projection_decals/holiday/projection_decal_118"
+msgstr "金箔吉祥如意"
+
+msgid "projection_decals/holiday/projection_decal_119"
+msgstr "金丝福字中国结"
+
+msgid "projection_decals/holiday/projection_decal_120"
+msgstr "金福图卷轴"
+
+msgid "projection_decals/holiday/projection_decal_121"
+msgstr "蒲公英礼花"
+
+msgid "projection_decals/holiday/projection_decal_122"
+msgstr "三重芯牡丹礼花"
+
+msgid "projection_decals/holiday/projection_decal_123"
+msgstr "金菊冠礼花"
+
+msgid "projection_decals/holiday/projection_decal_124"
+msgstr "龙纹大鼓"
+
+msgid "projection_decals/holiday/projection_decal_125"
+msgstr "烫金春福鞭炮"
+
+msgid "projection_decals/holiday/projection_decal_126"
+msgstr "烫金春福坐炮"
+
+msgid "projection_decals/holiday/projection_decal_127"
+msgstr "暗金云纹"
+
+msgid "projection_decals/holiday/projection_decal_128"
+msgstr "三坠锦福"
+
+msgid "projection_decals/holiday/projection_decal_129"
+msgstr "红底金竹"
+
+msgid "projection_decals/holiday/projection_decal_130"
+msgstr "红底梅花"
+
+msgid "projection_decals/holiday/projection_decal_131"
+msgstr "梅纹花灯"
+
+msgid "projection_decals/holiday/projection_decal_132"
+msgstr "金鲤红灯笼"
+
+msgid "projection_decals/holiday/projection_decal_133"
+msgstr "梅纹扇影灯"
+
+msgid "projection_decals/holiday/projection_decal_134"
+msgstr "梅纹宫灯"
+
+msgid "projection_decals/holiday/projection_decal_135"
+msgstr "迎春花灯"
+
+msgid "projection_decals/holiday/projection_decal_136"
+msgstr "一团和气金龙灯"
+
+msgid "projection_decals/holiday/projection_decal_137"
+msgstr "财源广进红灯笼"
+
+msgid "projection_decals/holiday/projection_decal_138"
+msgstr "六角福灯"
+
+msgid "projection_decals/holiday/projection_decal_139"
+msgstr "金边纸质灯笼"
+
+msgid "projection_decals/holiday/projection_decal_140"
+msgstr "迎春小灯笼"
+
+msgid "projection_decals/holiday/projection_decal_141"
+msgstr "金双龙耳簋式炉"
+
+msgid "projection_decals/holiday/projection_decal_142"
+msgstr "金三足金蟾纳财"
+
+msgid "projection_decals/holiday/projection_decal_143"
+msgstr "金龙龟守财兽"
+
+msgid "projection_decals/holiday/projection_decal_144"
+msgstr "金狮守兽"
+
+msgid "projection_decals/holiday/projection_decal_145"
+msgstr "金锦鲤跃江"
+
 msgid "projection_decals/holiday/projection_decal_146"
 msgstr "爱心炮弹"
 
@@ -18635,6 +18848,15 @@ msgstr "末日幸存者"
 
 msgid "projection_decals/special/projection_decal_1012"
 msgstr "我们为我们的未来而战"
+
+msgid "projection_decals/special/projection_decal_1013"
+msgstr "圣诞装扮"
+
+msgid "projection_decals/special/projection_decal_1014"
+msgstr "领头驯鹿"
+
+msgid "projection_decals/special/projection_decal_1015"
+msgstr "开冰辟雪"
 
 msgid "projection_decals/special/projection_decal_102"
 msgstr "玩火上身"
@@ -21558,6 +21780,12 @@ msgstr "深入敌营"
 msgid "projection_decals/special/projection_decal_971"
 msgstr "8位像素乔瑟夫"
 
+msgid "projection_decals/special/projection_decal_976"
+msgstr "mouzAkrobat"
+
+msgid "projection_decals/special/projection_decal_977"
+msgstr "紫色星球"
+
 msgid "projection_decals/special/projection_decal_979"
 msgstr "马克 I钢铁猎手"
 
@@ -23327,6 +23555,9 @@ msgstr "第瓦那之剑"
 
 msgid "repaint/shreder"
 msgstr "施莱德"
+
+msgid "repaint/snowy_climb"
+msgstr "雪域攀峰"
 
 msgid "repaint/solo_dday_2024_us_desc"
 msgstr "一款灵感源于1944年诺曼底登陆参战盟军坦克的喷漆。"
@@ -25798,6 +26029,15 @@ msgstr "魔法玩具"
 
 msgid "special_style/advent_calendar_2024_2_desc"
 msgstr "一款全地形风格，以广受喜爱的假日礼物为设计原型。"
+
+msgid "special_style/advent_calendar_2025_1_desc"
+msgstr "应用这款冰霜全地形风格，在战场上时刻保持冷酷心境。"
+
+msgid "special_style/advent_calendar_2025_2_desc"
+msgstr "为您的座驾应用这款冰铸全地形风格，与雪原融为一体。"
+
+msgid "special_style/advent_calendar_2025_3_desc"
+msgstr "一款全地形风格，让您的座驾在寒冬刺骨的怀抱中尽显雄姿。"
 
 msgid "special_style/allbetsareoff"
 msgstr "世事难料"
@@ -29913,6 +30153,16 @@ msgid "special_style/pub_west_desc/long"
 msgstr ""
 "在激战中，您需要一套值得信赖的配置、一套关键时刻绝不掉链子的设定。操控设备如同您的肢体延伸——运用自如，毫无延迟，唯有疾如闪电的反应与纯粹的技巧。四键启程，却蕴藏无限制胜可能。全局在握，此刻，一展您的风采。"
 
+msgid "special_style/pub_west_ebr_racing"
+msgstr "疾速条纹"
+
+msgid "special_style/pub_west_ebr_racing_desc"
+msgstr "一款简约大气的全地形风格，专为追求极致速度而设计。"
+
+msgid "special_style/pub_west_ebr_racing_desc/long"
+msgstr ""
+"赛车固然帅气——快速且有型，但岂能媲美钢铁履带与巨炮的震撼？想必不能。应用这款炫酷风格，一举两得，而且三种配色随心切换，既能隐入战场，也能成为焦点。"
+
 msgid "special_style/pub_west_germany_reunification_2025"
 msgstr "D系庆典"
 
@@ -30385,6 +30635,16 @@ msgstr ""
 "“他们有黑豹，老虎……。我们也有猫科动物。我看雪豹就非常适合我们的坦克: "
 "它会进入掩体，保持隐匿，并用锋利的爪子攻击猎物，故事到此结束。瓦西里维奇中士，把石灰和刷子拿来。让我们装饰一下我们的坦克吧。”"
 
+msgid "special_style/snowy_climb"
+msgstr "雪域攀峰"
+
+msgid "special_style/snowy_climb_desc"
+msgstr "应用这款无畏的全地形风格，您将具备移山之力。"
+
+msgid "special_style/snowy_climb_desc/long"
+msgstr ""
+"指挥官，您的登峰之路已抵达全新高度！以覆雪之巅的苍茫地貌为灵感，这款粗犷设计将助您唤醒体内登山家之魂。但即便您胆识过人，若想在战场上保持冷静，建议不要从车长塔上俯视深渊。"
+
 msgid "special_style/solo_dday_2024_uk"
 msgstr "我的失误"
 
@@ -30637,6 +30897,16 @@ msgstr "一款为庆祝2023坦克嘉年华而设计的全地形风格。"
 
 msgid "special_style/tankfest_desc/long"
 msgstr "?empty?"
+
+msgid "special_style/tankmas_2025"
+msgstr "节日面包巡礼"
+
+msgid "special_style/tankmas_2025_desc"
+msgstr "应用这款美味的全地形风格，用冬青装饰您的车体。"
+
+msgid "special_style/tankmas_2025_desc/long"
+msgstr ""
+"何物既庞大又壮观，还散发淡淡橘香？正是在下。他们把我装点得像节日面包一样，车体上点缀着冬青，还有一个华丽的红色蝴蝶结，行进时随风飘扬、轻抚车身。曾经布满尘土和泥迹的我，如今成了假日舞会的焦点。乘员笑声不断，孩童雀跃挥手，连雪花都为我翩跹起舞。空气中松木清香萦绕，节日氛围如同糖霜将我温柔包裹。在这个假日季，我满载喜悦——与葡萄干。但请勿妄图品尝，纵使外表松软如糕，我依然极具威胁。"
 
 msgid "special_style/tanksman_day"
 msgstr "坦克兵日"
@@ -31170,6 +31440,16 @@ msgstr ""
 msgid "special_style/well_deserved_award_2023_2"
 msgstr "资深坦克手"
 
+msgid "special_style/well_deserved_reward_2025"
+msgstr "沙场宿将"
+
+msgid "special_style/well_deserved_reward_2025_desc"
+msgstr "一款全地形风格，致敬您的《坦克世界》峥嵘征程。"
+
+msgid "special_style/well_deserved_reward_2025_desc/long"
+msgstr ""
+"一款奖励给《坦克世界》玩家的全地形风格，以表彰他们对坦克战斗艺术的卓越贡献。该风格将随玩家经验增长而演变，达到新头衔时就会改变颜色，展示谁才是最资深的坦克手！\"当之无愧\"奖励活动期间授予。"
+
 msgid "special_style/western_warriors"
 msgstr "铁甲斗士"
 
@@ -31206,6 +31486,26 @@ msgstr "电感线圈"
 
 msgid "special_style/white_tiger_2021_hounds"
 msgstr "系统主板(开)"
+
+msgid "special_style/winback_1"
+msgstr "Akrobat之选！"
+
+msgid "special_style/winback_1_desc"
+msgstr "应用这款电光闪闪的全地形风格，展示您对MouzAkrobat的支持。"
+
+msgid "special_style/winback_1_desc/long"
+msgstr ""
+"昵称意为老鼠，但本人气势如猛犸。他是您观看战术解析视频与游戏直播的首选。作为一名头脑冷静、精通战术的资深王牌，他堪称坦克专业知识的宝库。为您的座驾应用灵感源于其频道标志性美学的风格，既能展现真正的战术传承，同时在战场上展现独特风采。"
+
+msgid "special_style/winback_2"
+msgstr "CYGANZOR认证"
+
+msgid "special_style/winback_2_desc"
+msgstr "一款绚丽的全地形风格，灵感源于内容创作者Cyganzor。"
+
+msgid "special_style/winback_2_desc/long"
+msgstr ""
+"常言道笑容是最佳配饰，何不让坦克满载笑容？相信Cyganzor定会赞同。这位新锐创作者不仅展示出无可挑剔的玩法风格和精妙战术，而且还始终保持乐观与亲和。为座驾应用这款设计炫目的风格，展示您的鼎力支持。"
 
 msgid "special_style/winter"
 msgstr "冬季"

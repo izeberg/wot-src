@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/french/F138_Renault_R35_FCM_36/crash/lod2/Hull</nodefullVisual>
+	<parent>vehicles/french/F138_Renault_R35_FCM_36/crash/lod3/Hull</parent>
+	<extent>96.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.969724 -0.786545 -1.927628</min>
+		<max>0.970881 0.516648 2.047849</max>
+	</visibilityBox>
+</root>

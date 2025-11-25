@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<nodefullVisual>vehicles/british/GB142_FV230_Canopener/_skins/GB142_FV230_Canopener_TXVII_3Dst/crash/lod2/Gun_01</nodefullVisual>
 	<parent>vehicles/british/GB142_FV230_Canopener/_skins/GB142_FV230_Canopener_TXVII_3Dst/crash/lod3/Gun_01</parent>
 	<extent>96.000000</extent>
 	<visibilityBox>
@@ -8,4 +7,5 @@
 		<max>0.972664 0.777646 5.894089</max>
 	</visibilityBox>
 	<tank>true</tank>
+	<nodefullVisual>vehicles/british/GB142_FV230_Canopener/_skins/GB142_FV230_Canopener_TXVII_3Dst/crash/lod2/Gun_01</nodefullVisual>
 </root>

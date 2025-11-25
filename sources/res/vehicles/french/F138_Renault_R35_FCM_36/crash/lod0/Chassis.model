@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/french/F138_Renault_R35_FCM_36/crash/lod0/Chassis</nodefullVisual>
+	<parent>vehicles/french/F138_Renault_R35_FCM_36/crash/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.917188 -0.003470 -1.958296</min>
+		<max>0.917188 0.932920 2.072430</max>
+	</visibilityBox>
+</root>

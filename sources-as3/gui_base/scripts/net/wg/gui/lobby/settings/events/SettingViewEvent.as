@@ -28,6 +28,10 @@ package net.wg.gui.lobby.settings.events
       public static var ON_COLOR_SETTING_OPEN:String = "on_color_setting_open";
       
       public static var ON_RESTART_NEWBIE_BATTLE_HINTS:String = "on_restart_newbie_battle_hints";
+      
+      public static var ON_PHYSICS_SOUND_CHANGE:String = "on_physics_sound_change";
+      
+      public static var ON_AUTO_DETECT_PHYSICS_SOUND_QUALITY:String = "on_auto_detect_physics_sound_quality";
        
       
       public var viewId:String;

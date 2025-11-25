@@ -8677,6 +8677,12 @@ package
       
       public static const NOTRECRUITEDTANKMAN_TANKMEN_BP18_9_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/tankmen_bp18_9/howToGetInfo";
       
+      public static const NOTRECRUITEDTANKMAN_JOHN_CHRISTMAS_LABEL:String = "#tooltips:notrecruitedtankman/john_christmas/label";
+      
+      public static const NOTRECRUITEDTANKMAN_JOHN_CHRISTMAS_DESC:String = "#tooltips:notrecruitedtankman/john_christmas/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_JOHN_CHRISTMAS_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/john_christmas/howToGetInfo";
+      
       public static const NOTRECRUITEDTANKMAN_TANKMEN_BP18_10_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_bp18_10/label";
       
       public static const NOTRECRUITEDTANKMAN_TANKMEN_BP18_10_DESC:String = "#tooltips:notrecruitedtankman/tankmen_bp18_10/desc";

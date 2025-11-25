@@ -1,0 +1,216 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-04-22 10:00+0300\n"
+"PO-Revision-Date: 2025-04-22 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "bonus/credits/description"
+msgstr "获取银币加成，提高战斗收益！"
+
+msgid "bonus/credits/title"
+msgstr "银币"
+
+msgid "bonus/crew/description"
+msgstr "获取乘员经验加成，在战斗中获得更多收益！"
+
+msgid "bonus/crew/title"
+msgstr "乘员经验"
+
+msgid "bonus/crystal/description"
+msgstr "获取战争债券加成，在战斗中获得更多收益！"
+
+msgid "bonus/crystal/title"
+msgstr "战争债券"
+
+msgid "bonus/events/description"
+msgstr "在此过程中解锁带有奖励的独特故事！"
+
+msgid "bonus/events/title"
+msgstr "事件"
+
+msgid "bonus/freeXP/title"
+msgstr "全局经验"
+
+msgid "bonus/gold/title"
+msgstr "金币"
+
+msgid "bonus/showoff/description"
+msgstr "展示您的忠实伙伴！"
+
+msgid "bonus/showoff/title"
+msgstr "展示"
+
+msgid "bonus/tankmenXP/description"
+msgstr "获取战斗经验加成，在战斗中获得更多收益！"
+
+msgid "bonus/tankmenXP/title"
+msgstr "战斗经验"
+
+msgid "breedName/dog_1"
+msgstr "黑贝"
+
+msgid "eventView/button"
+msgstr "收到!"
+
+msgid "infoPageEntryPoint"
+msgstr "如何与宠物增进感情？"
+
+msgid "message/petAdded/button"
+msgstr "前往宠物小窝"
+
+msgid "message/petAdded/header"
+msgstr "全新%(petType)s已添加至您的账号"
+
+msgid "message/petAdded/text"
+msgstr "%(petBreed)s已添加至宠物小窝"
+
+msgid "message/petBuy/success"
+msgstr "已成功购买%(petName)s。花费%(price)s。"
+
+msgid "message/server_error"
+msgstr "暂时无法操作。请稍后再试。"
+
+msgid "message/synergyLevelUp/header"
+msgstr "%(petName)s的亲密度已提高！"
+
+msgid "message/synergyLevelUp/text"
+msgstr "全新动画现已开放。持续互动即可解锁更多内容！"
+
+msgid "message/synergyMaxLevel/header"
+msgstr "%(petName)s的亲密度已提高！"
+
+msgid "message/synergyMaxLevel/text"
+msgstr "全新动画已开放"
+
+msgid "petDescription/dog_1"
+msgstr ""
+"黑贝如魅影般穿梭于战火硝烟中，感官敏锐如刃。当训导员被爆炸击倒时，这只军犬奋力将伤者拖至掩体后方，并守护在身旁，直到救援到来。它虽负伤但仍忠诚守护，寸步不离，堪称真正的战士守护者。"
+
+msgid "petEventTooltip/body"
+msgstr "%(petName)s在您离开时发现了一些好物！快去查看！"
+
+msgid "petHouseMarker/default"
+msgstr "宠物小窝"
+
+msgid "petHouseMarker/pet"
+msgstr "宠物小窝: {{petName}}"
+
+msgid "petSettings/cancelButton"
+msgstr "取消"
+
+msgid "petSettings/naming/subtitle"
+msgstr "可随时为您的宠物重命名"
+
+msgid "petSettings/naming/tip/subtitle"
+msgstr "重命名宠物"
+
+msgid "petSettings/naming/tip/title"
+msgstr "更改名字"
+
+msgid "petSettings/naming/title"
+msgstr "宠物名字"
+
+msgid "petSettings/saveButton/label"
+msgstr "保存"
+
+msgid "petSettings/uniqueName/tip/subtitle"
+msgstr "该宠物拥有不可更改的独特名字。"
+
+msgid "petSettings/uniqueName/tip/title"
+msgstr "不可用"
+
+msgid "petSettings/visibility/select/always"
+msgstr "始终显示"
+
+msgid "petSettings/visibility/select/disableAnimation"
+msgstr "关闭动画"
+
+msgid "petSettings/visibility/select/onlyIntoPetPlace"
+msgstr "仅在车库中显示"
+
+msgid "petSettings/visibility/subtitle"
+msgstr "如果宠物过于调皮，您可将其送到车库。"
+
+msgid "petSettings/visibility/tip/subtitle"
+msgstr "更改宠物的显示模式"
+
+msgid "petSettings/visibility/tip/title"
+msgstr "宠物显示"
+
+msgid "petSettings/visibility/title"
+msgstr "宠物显示"
+
+msgid "petStorage/petBonus/title"
+msgstr "已激活的加成:"
+
+msgid "petStorage/petBonus/tooltip/content"
+msgstr "无论战斗结果如何，加成都会应用于收益。达到上限后，加成不再生效。"
+
+msgid "petStorage/petCard/promo"
+msgstr "新"
+
+msgid "petStorage/progressbarDescription"
+msgstr "每天可在有限场次的战斗中获得更多收益。"
+
+msgid "petStorage/progressbarTitle"
+msgstr "剩余的战斗收益加成"
+
+msgid "petStorage/progressbarTooltip/content"
+msgstr "可用战斗收益加成数量将于明天重置。每场战斗消耗一个加成，无论战斗结果如何均可获得奖励收益。"
+
+msgid "petStorage/progressbarTooltip/title"
+msgstr "可用加成"
+
+msgid "petStorage/status/select"
+msgstr "选择"
+
+msgid "petStorage/status/selected"
+msgstr "已选择"
+
+msgid "petStorage/title"
+msgstr "宠物小窝"
+
+msgid "petStorageTooltip/bonus/caption"
+msgstr "剩余战斗场次。明天重置"
+
+msgid "petStorageTooltip/bonus/currentBonus"
+msgstr "{{value}}每场战斗"
+
+msgid "petStorageTooltip/bonus/inProgress"
+msgstr "剩余战斗场次"
+
+msgid "petStorageTooltip/bonus/title"
+msgstr "加成"
+
+msgid "petType/dog"
+msgstr "犬种"
+
+msgid "plusPercentValue"
+msgstr "+{{value}}%"
+
+msgid "promotion/button/challenge"
+msgstr "任务"
+
+msgid "promotion/button/purchase"
+msgstr "购买"
+
+msgid "promotion/challengeInfo/text_1"
+msgstr "任务信息"
+
+msgid "promotion/challengeInfo/title_1"
+msgstr "任务"
+
+msgid "synergyTooltip/description/done"
+msgstr "宠物的亲密度每提高一级，你们的关系就会更牢固。这位与您并肩作战的忠实战友是您最可靠的盟友。如果长期不活跃，该等级将会下降。"
+
+msgid "synergyTooltip/description/inProgress"
+msgstr "与宠物互动可提高亲密度。达到最高等级即可获得\"忠实战友\"状态。如果长期不活跃，该等级将会下降。"
+
+msgid "synergyTooltip/title"
+msgstr "战友状态"

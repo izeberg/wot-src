@@ -3028,6 +3028,72 @@
 		<normalizationAngle>5</normalizationAngle>
 		<ricochetAngle>70</ricochetAngle>
 	</_75_55mm_Pzgr_41_StK>
+	<_75mm_K_Gr_rot_Pz_C>
+		<id>421</id>
+		<userString>#germany_vehicles:_75mm_K_Gr_rot_Pz_C</userString>
+		<icon>ap</icon>
+		<price>21</price>
+		<kind>ARMOR_PIERCING</kind>
+		<caliber>75</caliber>
+		<isTracer>true</isTracer>
+		<effects>mediumArmorPiercing</effects>
+		<damage>
+			<armor>85</armor>
+			<devices>100</devices>
+		</damage>
+		<normalizationAngle>5</normalizationAngle>
+		<ricochetAngle>70</ricochetAngle>
+	</_75mm_K_Gr_rot_Pz_C>
+	<_75mm_Gr_38_HL_C>
+		<id>422</id>
+		<userString>#germany_vehicles:_75mm_Gr_38_HL_C</userString>
+		<icon>hc_premium</icon>
+		<price>2400</price>
+		<improved>true</improved>
+		<kind>HOLLOW_CHARGE</kind>
+		<caliber>75</caliber>
+		<isTracer>true</isTracer>
+		<effects>mediumHollowCharge</effects>
+		<damage>
+			<armor>85</armor>
+			<devices>100</devices>
+		</damage>
+		<ricochetAngle>85</ricochetAngle>
+		<piercingPowerLossFactorByDistance>
+			0.05
+			<!--BW_String-->
+		</piercingPowerLossFactorByDistance>
+	</_75mm_Gr_38_HL_C>
+	<_75mm_Sprg_34_C>
+		<id>423</id>
+		<userString>#germany_vehicles:_75mm_Sprg_34_C</userString>
+		<icon>he_modern</icon>
+		<price>57</price>
+		<kind>HIGH_EXPLOSIVE</kind>
+		<mechanics>MODERN</mechanics>
+		<caliber>75</caliber>
+		<explosionRadius>
+			1.06
+			<!--BW_String-->
+		</explosionRadius>
+		<isTracer>true</isTracer>
+		<effects>mediumHighExplosive</effects>
+		<damage>
+			<armor>140</armor>
+			<devices>100</devices>
+		</damage>
+		<armorSpalls>
+			<impactRadius>
+				1.06
+				<!--BW_String-->
+			</impactRadius>
+			<coneAngle>90</coneAngle>
+			<damage>
+				<armor>70</armor>
+				<devices>50</devices>
+			</damage>
+		</armorSpalls>
+	</_75mm_Sprg_34_C>
 	<APCNR_U>
 		<id>303</id>
 		<userString>#germany_vehicles:APCNR_U</userString>

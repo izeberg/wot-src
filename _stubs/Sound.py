@@ -182,4 +182,8 @@ class SoundZoneComponent(PyComponentWrapperBase):
 __doc__ = None
 __name__ = 'Sound'
 __package__ = None
+def getRecommendedPreset(*args, **kwargs): pass
+def getSpatialAudioPreset(*args, **kwargs): pass
 def reloadSoundEngine(*args, **kwargs): pass
+def setSpatialAudioEnabled(*args, **kwargs): pass
+def setSpatialAudioPreset(*args, **kwargs): pass

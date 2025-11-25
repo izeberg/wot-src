@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/german/G175_Rheinmetall_Begleitwagen/crash/lod1/Hull</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.533794 -0.913178 -2.805486</min>
+		<max>1.548907 0.703399 2.812022</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/german/G175_Rheinmetall_Begleitwagen/crash/lod0/Hull</nodefullVisual>
+</root>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/german/G175_Rheinmetall_Begleitwagen/normal/lod0/Chassis</nodefullVisual>
+	<parent>vehicles/german/G175_Rheinmetall_Begleitwagen/normal/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.383424 0.000375 -2.791469</min>
+		<max>1.383130 1.146795 2.831037</max>
+	</visibilityBox>
+</root>

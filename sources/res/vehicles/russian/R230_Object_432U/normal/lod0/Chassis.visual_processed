@@ -1089,8 +1089,8 @@
 		<node>WD_L3_BlendBone</node>
 		<node>WD_L4_BlendBone</node>
 		<geometry>
-			<vertices>chassis_L_Shape.vertices</vertices>
-			<primitive>chassis_L_Shape.indices</primitive>
+			<vertices>chassis_LShape.vertices</vertices>
+			<primitive>chassis_LShape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -1205,8 +1205,8 @@
 		<node>WD_R3_BlendBone</node>
 		<node>WD_R4_BlendBone</node>
 		<geometry>
-			<vertices>chassis_R_Shape.vertices</vertices>
-			<primitive>chassis_R_Shape.indices</primitive>
+			<vertices>chassis_RShape.vertices</vertices>
+			<primitive>chassis_RShape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>

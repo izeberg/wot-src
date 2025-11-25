@@ -1336,6 +1336,21 @@
 		<tags>heavyTank role_HT_assault HD heavyTank1 improvedVentilation_class2_user tankRammer_class2_user extraHealthReserve_class2_user antifragmentationLining_medium_user lockOutfit restoreWithStyle</tags>
 		<level>6</level>
 	</GB136_Churchill_BPXIV>
+	<GB132_Taurus_CAT>
+		<id>248</id>
+		<userString>#gb_vehicles:GB132_Taurus_CAT</userString>
+		<shortUserString>#gb_vehicles:GB132_Taurus_CAT_short</shortUserString>
+		<description>#gb_vehicles:GB132_Taurus_CAT_desc</description>
+		<shortDescriptionSpecial>#gb_vehicles:GB132_Taurus_CAT_short_special</shortDescriptionSpecial>
+		<longDescriptionSpecial>#gb_vehicles:GB132_Taurus_CAT_long_special</longDescriptionSpecial>
+		<price>
+			100
+			<gold/>
+		</price>
+		<notInShop>true</notInShop>
+		<tags>AT-SPG role_ATSPG_support HD siegeMode hydraulicChassis mediumAT-SPG AT-SPG1 improvedVentilation_class2_user extraHealthReserve_class2_user antifragmentationLining_medium_user secret testTank</tags>
+		<level>8</level>
+	</GB132_Taurus_CAT>
 	<GB139_FV226_Contradictious>
 		<id>249</id>
 		<userString>#gb_vehicles:GB139_FV226_Contradictious</userString>
@@ -1437,6 +1452,21 @@
 		<tags>heavyTank role_HT_universal HD special improvedVentilation_class1_user aimingStabilizer_class1_user extraHealthReserve_class1_user antifragmentationLining_heavy_user earn_crystals</tags>
 		<level>10</level>
 	</GB134_Gryphon>
+	<GB137_Cromwell_Applique>
+		<id>83</id>
+		<userString>#gb_vehicles:GB137_Cromwell_Applique</userString>
+		<description>#gb_vehicles:GB137_Cromwell_Applique_desc</description>
+		<shortUserString>#gb_vehicles:GB137_Cromwell_Applique_short</shortUserString>
+		<shortDescriptionSpecial>#gb_vehicles:GB137_Cromwell_Applique_short_special</shortDescriptionSpecial>
+		<longDescriptionSpecial>#gb_vehicles:GB137_Cromwell_Applique_long_special</longDescriptionSpecial>
+		<price>
+			100
+			<gold/>
+		</price>
+		<notInShop>true</notInShop>
+		<tags>mediumTank HD improvedVentilation_class2_user tankRammer_class2_user extraHealthReserve_class2_user antifragmentationLining_medium_user secret testTank</tags>
+		<level>5</level>
+	</GB137_Cromwell_Applique>
 	<GB146_Gabler_s_Destroyer>
 		<id>82</id>
 		<userString>#gb_vehicles:GB146_Gabler_s_Destroyer</userString>
@@ -1535,11 +1565,11 @@
 		<shortDescriptionSpecial>#gb_vehicles:GB156_Black_Prince_II_short_special</shortDescriptionSpecial>
 		<longDescriptionSpecial>#gb_vehicles:GB156_Black_Prince_II_long_special</longDescriptionSpecial>
 		<price>
-			100
+			6150
 			<gold/>
 		</price>
 		<notInShop>true</notInShop>
-		<tags>heavyTank role_HT_assault HD improvedVentilation_class2_user siegeMode dualgun charger aimingStabilizer_class2_user extraHealthReserve_class2_user antifragmentationLining_medium_user special secret testTank</tags>
+		<tags>heavyTank role_HT_assault HD improvedVentilation_class2_user siegeMode dualgun charger aimingStabilizer_class2_user extraHealthReserve_class2_user antifragmentationLining_medium_user special</tags>
 		<level>7</level>
 	</GB156_Black_Prince_II>
 	<GB147_FV4025_Contriver>

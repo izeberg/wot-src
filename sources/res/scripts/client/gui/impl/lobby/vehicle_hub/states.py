@@ -52,7 +52,8 @@ class _VehicleHubChildState(LobbyState, SubhangarStateGroupConfigProvider):
         lsm = self.getMachine()
         self.addNavigationTransition(lsm.getStateByCls(VehicleCompareState), record=True)
         self.addNavigationTransition(lsm.getStateByCls(BlueprintState), record=True)
-        self.addNavigationTransition(lsm.getStateByCls(_LoadingState), record=True)
+        loadingState = lsm.getStateByCls(_LoadingState)
+        self.addTransition(loadingState.makeTransition(TransitionType.INTERNAL, True), loadingState)
         from gui.Scaleform.daapi.view.lobby.profile.states import ServiceRecordState
         self.addNavigationTransition(lsm.getStateByCls(ServiceRecordState), record=True)
 

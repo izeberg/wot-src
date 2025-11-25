@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/czech/Cz36_Jezevec/normal/lod0/Gun_01</nodefullVisual>
+	<parent>vehicles/czech/Cz36_Jezevec/normal/lod1/Gun_01</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-0.580527 -0.598614 -1.886690</min>
+		<max>0.580527 0.590463 5.848224</max>
+	</visibilityBox>
+</root>

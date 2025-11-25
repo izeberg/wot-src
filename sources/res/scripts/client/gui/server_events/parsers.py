@@ -1,11 +1,13 @@
 import weakref
-from typing import Union
+from typing import Union, TYPE_CHECKING
 from gui.server_events import formatters, conditions
-from gui.server_events.conditions import _Cumulativable, CumulativeResult, _ConditionsGroup
+from gui.server_events.conditions import CumulativeResult, CLASS_TYPE
 from gui.shared.utils.requesters import REQ_CRITERIA
 from helpers import dependency
 from skeletons.gui.shared import IItemsCache
 from soft_exception import SoftException
+if TYPE_CHECKING:
+    from gui.server_events.conditions import _ConditionsGroup, _Cumulativable
 
 class ConditionsParser(object):
     LOGICAL_OPS = {'and': conditions.AndGroup, 
@@ -74,7 +76,7 @@ class ConditionsParser(object):
             return
         else:
             for node in group.items:
-                if isinstance(node, conditions._ConditionsGroup):
+                if node.classType == CLASS_TYPE.CONDITION_GROUP:
                     self.__forEachNode(node, handler)
                 else:
                     handler(node)

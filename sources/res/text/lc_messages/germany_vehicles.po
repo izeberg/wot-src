@@ -51,7 +51,7 @@ msgstr "?empty?"
 
 msgid "Auf_Panther_long_special"
 msgstr ""
-"这辆D系轻型坦克的射击效率非常高。精确的火炮，出色的俯仰角，极高的弹速使其在不规则地形上也能发挥最大效率。虽然平庸的单发损伤在近距离遭遇战中占不到便宜，但是它完全可以成为一位强大的狙击手。"
+"这辆D系轻型坦克的射击效率非常高。精确的火炮，出色的俯角，极高的弹速使其在不规则地形上也能发挥最大效率。虽然平庸的单发损伤在近距离遭遇战中占不到便宜，但是它可以高效地执行狙击战术。"
 
 msgid "Auf_Panther_short"
 msgstr "“黑豹”侦察车"
@@ -448,6 +448,9 @@ msgstr "15吨突击坦克 BT-42"
 
 msgid "Chassis_G174_Kpz3_GST_Turm"
 msgstr "3GST常规型主战"
+
+msgid "Chassis_G175_Rheinmetall_Begleitwagen"
+msgstr "Rhm BW"
 
 msgid "Chassis_G176_Jagdpanzer_E90"
 msgstr "E-90坦克歼击车"
@@ -1016,6 +1019,9 @@ msgstr "FuG 5A"
 
 msgid "FuG6"
 msgstr "FuG 6"
+
+msgid "FuG6_SE20v"
+msgstr "FuG 6 SE20v"
 
 msgid "FuG7"
 msgstr "FuG 7"
@@ -1784,7 +1790,7 @@ msgstr "一个拥有前倾式炮塔的中型坦克项目。所有乘员都位于
 
 msgid "G147_Kunze_Panzer_long_special"
 msgstr ""
-"一辆D系IX级中型坦克，具有强大的机动性，优异的隐蔽性和观察范围。攻城模式可以提高火炮的精度和俯仰角，行驶模式则能提高射速并使其能够快速专场。然而请注意，由于生存能力较低，这辆坦克无法长时间暴露在敌方火力下。"
+"一辆D系IX级中型坦克，具有强大的机动性，优异的隐蔽系数和观察范围。攻城模式可以强化火炮的精度和俯角，行驶模式则能提高射速并使其能够快速转场。然而，由于其装甲防护乏善可陈，建议您尽量避开敌方炮火。"
 
 msgid "G147_Kunze_Panzer_short"
 msgstr "昆泽试验车"
@@ -2057,7 +2063,7 @@ msgstr ""
 msgid "G169_T_54D_long_special"
 msgstr ""
 "D系T-54的现代化改型。其装甲防护得到了提升，并装备了一门105mm "
-"L7A3炮。现代化改造方案使得该坦克的战斗重量有所增加，但更强的火力和防护明显提高了它的战斗效能。"
+"L7A3炮。现代化改造方案使得该坦克的战斗全重有所增加，但更强的火力和防护明显提高了它的战斗效能。"
 
 msgid "G169_T_54D_short"
 msgstr "T-54D"
@@ -2173,6 +2179,26 @@ msgstr "3GST常规型主战"
 
 msgid "G174_Kpz3_GST_Turm_short_special"
 msgstr "坚固的正面装甲，自动液气悬挂装置"
+
+msgid "G175_Rheinmetall_Begleitwagen"
+msgstr "Rhm BW"
+
+msgid "G175_Rheinmetall_Begleitwagen_desc"
+msgstr ""
+"1934年下半年，D系开始研发一款代号为\"Nb.Fz改进型\"的坦克，由莱茵金属公司负责设计。该坦克设计重量17-18吨，主要武器为短管75毫米火炮与一挺同轴机枪。另一挺机枪安装在车体前部的小型炮塔上。采用传动装置前置的紧凑型布局有效压缩了车体长度，还计划搭载特制V型12缸迈巴赫HL"
+" 100 "
+"TR发动机(10升排量)，可输出300马力。莱茵金属公司先后完成全尺寸木质样车与结构钢试制底盘。虽经多次技术改进，最终该底盘方案仍未被选作量产坦克的基准构型。"
+
+msgid "G175_Rheinmetall_Begleitwagen_long_special"
+msgstr ""
+"Rhm "
+"BW是一辆D系III级中型坦克，配备一门7.5厘米火炮，平均单发损伤令人印象深刻。其装甲相对于其等级来说中规中矩，同时它还拥有不俗的机动性。该坦克非常适合利用自身高额平均单发损伤的优势，与对手近距离相互消耗。"
+
+msgid "G175_Rheinmetall_Begleitwagen_short"
+msgstr "Rhm BW"
+
+msgid "G175_Rheinmetall_Begleitwagen_short_special"
+msgstr "强劲的火炮，不俗的机动性"
 
 msgid "G176_Jagdpanzer_E90"
 msgstr "E-90坦克歼击车"
@@ -3174,6 +3200,9 @@ msgstr "2x迈巴赫 HL 66 P"
 
 msgid "Maybach_HL90"
 msgstr "迈巴赫 HL90"
+
+msgid "Maybach_HL_100TR_BW"
+msgstr "迈巴赫 HL 100 TR BW"
 
 msgid "Maybach_HL_100_WT_IV"
 msgstr "迈巴赫 HL 100 (IV WT)"
@@ -4601,6 +4630,9 @@ msgstr "BT-突击炮"
 
 msgid "Turret_1_G174_Kpz3_GST_Turm"
 msgstr "3GST常规型主战"
+
+msgid "Turret_1_G175_Rheinmetall_Begleitwagen"
+msgstr "Rhm BW"
 
 msgid "Turret_1_G176_Jagdpanzer_E90"
 msgstr "E-90坦克歼击车"
@@ -6623,11 +6655,20 @@ msgstr "APCBC"
 msgid "_75mm_Flak_L60"
 msgstr "7.5cm Flak L/60炮"
 
+msgid "_75mm_Gr_38_HL_C"
+msgstr "Gr 38 HL C"
+
+msgid "_75mm_K_Gr_rot_Pz_C"
+msgstr "K.Gr.rot.Pz.C"
+
 msgid "_75mm_KwK41_L58U_conic"
 msgstr "7.5/5.5cm 武器SP"
 
 msgid "_75mm_KwK45_L100"
 msgstr "7.5cm KwK L/100炮"
+
+msgid "_75mm_KwK_36_L21"
+msgstr "7.5cm KwK 36 L/21炮"
 
 msgid "_75mm_KwK_37_L24"
 msgstr ""
@@ -6863,6 +6904,9 @@ msgstr "Sprgr Patr 18"
 
 msgid "_75mm_Sprg_18_B"
 msgstr "Sprgr 18 (B)"
+
+msgid "_75mm_Sprg_34_C"
+msgstr "Sprgr 34 C"
 
 msgid "_75mm_Sprgr_18L_G"
 msgstr "Sprgr 18L (G)"

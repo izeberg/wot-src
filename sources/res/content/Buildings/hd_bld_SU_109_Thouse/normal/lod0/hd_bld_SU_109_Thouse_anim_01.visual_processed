@@ -1,0 +1,5566 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>root</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>jointpiece_0</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-0.783005 4.818100 2.351398</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_0_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.783005 -4.818100 -2.351398</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_1</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-4.051240 4.787698 0.054311</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_1_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>4.051240 -4.787698 -0.054311</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_10</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-0.552034 4.653421 -7.599158</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_10_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.552034 -4.653421 7.599158</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_100</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-0.944531 3.835301 3.109152</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_100_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.944531 -3.835301 -3.109152</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_101</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-6.828921 3.835500 3.109152</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_101_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>6.828921 -3.835500 -3.109152</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_102</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-3.424762 3.838105 3.267036</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_102_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>3.424762 -3.838105 -3.267036</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_103</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.752577 3.835548 3.109152</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_103_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-0.752577 -3.835548 -3.109152</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_104</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>2.217297 3.839389 -7.889322</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_104_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-2.217297 -3.839389 7.889322</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_105</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-4.332761 3.835618 2.995795</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_105_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>4.332761 -3.835618 -2.995795</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_106</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>3.569834 3.835537 3.109152</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_106_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-3.569834 -3.835537 -3.109152</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_107</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-3.921643 3.835301 3.041017</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_107_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>3.921643 -3.835301 -3.041017</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_108</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-4.142868 3.839389 -7.965072</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_108_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>4.142868 -3.839389 7.965072</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_109</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-3.150055 3.835301 2.988553</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_109_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>3.150055 -3.835301 -2.988553</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_11</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-1.599318 4.653421 -4.368926</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_11_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>1.599318 -4.653421 4.368926</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_110</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>3.974297 3.839389 -8.148770</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_110_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-3.974297 -3.839389 8.148770</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_111</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>2.342977 3.836473 3.077967</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_111_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-2.342977 -3.836473 -3.077967</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_112</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-0.773839 3.839390 -7.817841</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_112_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.773839 -3.839390 7.817841</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_113</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>3.822846 3.839390 -7.802650</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_113_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-3.822846 -3.839390 7.802650</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_114</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>1.389938 3.839389 -7.965072</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_114_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-1.389938 -3.839389 7.965072</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_115</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>1.807952 3.836473 3.200963</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_115_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-1.807952 -3.836473 -3.200963</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_116</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-7.636698 4.886647 -7.967571</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_116_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>7.636698 -4.886647 7.967571</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_117</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-3.735673 5.036716 3.274413</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_117_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>3.735673 -5.036716 -3.274413</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_118</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>4.544199 4.639636 2.988531</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_118_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-4.544199 -4.639636 -2.988531</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_119</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-5.182065 5.056484 2.938980</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_119_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>5.182065 -5.056484 -2.938980</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_12</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-2.066657 4.653421 -0.697121</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_12_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>2.066657 -4.653421 0.697121</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_120</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-2.846426 5.078177 -8.171643</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_120_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>2.846426 -5.078177 8.171643</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_121</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-6.514306 4.670482 3.059601</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_121_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>6.514306 -4.670482 -3.059601</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_122</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-5.103801 4.606085 2.988531</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_122_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>5.103801 -4.606085 -2.988531</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_123</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>4.159856 4.571824 2.988531</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_123_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-4.159856 -4.571824 -2.988531</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_124</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>2.221026 4.464622 -7.844452</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_124_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-2.221026 -4.464622 7.844452</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_125</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-3.650725 4.954920 -7.600111</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_125_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>3.650725 -4.954920 7.600111</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_126</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.092530 4.512338 2.988531</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_126_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-0.092530 -4.512338 -2.988531</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_127</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-3.612728 5.221035 -8.315527</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_127_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>3.612728 -5.221035 8.315527</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_128</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>2.435556 4.951390 -8.238702</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_128_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-2.435556 -4.951390 8.238702</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_129</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>2.367869 4.743442 2.938979</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_129_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-2.367869 -4.743442 -2.938979</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_13</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-2.291826 4.653421 -2.522554</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_13_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>2.291826 -4.653421 2.522554</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_130</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-3.135575 5.155116 -7.627079</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_130_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>3.135575 -5.155116 7.627079</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_131</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-7.633458 4.670482 3.137292</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_131_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>7.633458 -4.670482 -3.137292</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_132</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-2.519774 4.378044 -7.844452</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_132_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>2.519774 -4.378044 7.844452</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_133</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>3.281341 4.907537 -7.654698</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_133_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-3.281341 -4.907537 7.654698</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_134</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>4.371930 4.670482 -7.794903</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_134_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-4.371930 -4.670482 7.794903</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_135</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-5.199598 5.068721 3.336419</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_135_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>5.199598 -5.068721 -3.336419</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_136</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-6.541010 4.703431 -7.713683</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_136_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>6.541010 -4.703431 7.713683</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_137</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-1.035131 4.989457 2.980432</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_137_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>1.035131 -4.989457 -2.980432</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_138</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-4.331115 4.352713 -7.844452</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_138_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>4.331115 -4.352713 7.844452</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_139</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>2.933748 4.891598 3.273401</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_139_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-2.933748 -4.891598 -3.273401</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_14</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.778884 4.653421 -1.672994</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_14_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-0.778884 -4.653421 1.672994</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_140</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-2.843162 5.221035 3.407848</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_140_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>2.843162 -5.221035 -3.407848</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_141</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-7.275356 4.977643 -8.110515</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_141_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>7.275356 -4.977643 8.110515</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_142</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.866184 4.919049 -7.967567</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_142_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-0.866184 -4.919049 7.967567</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_143</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>4.239843 4.960007 3.059600</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_143_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-4.239843 -4.960007 -3.059600</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_144</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>2.321881 4.353694 2.988531</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_144_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-2.321881 -4.353694 -2.988531</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_145</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-4.719522 4.960052 3.382023</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_145_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>4.719522 -4.960052 -3.382023</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_146</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-2.106049 4.953341 -7.659821</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_146_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>2.106049 -4.953341 7.659821</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_147</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-2.610853 4.954124 -7.676133</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_147_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>2.610853 -4.954124 7.676133</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_148</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-2.181260 5.291925 2.675725</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_148_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>2.181260 -5.291925 -2.675725</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_149</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-2.213346 4.748399 2.985043</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_149_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>2.213346 -4.748399 -2.985043</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_15</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-4.295571 4.653421 -1.018141</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_15_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>4.295571 -4.653421 1.018141</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_150</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-4.403109 4.929559 3.031835</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_150_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>4.403109 -4.929559 -3.031835</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_151</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-2.077981 4.962162 -8.017115</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_151_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>2.077981 -4.962162 8.017115</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_152</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-4.122143 4.797659 -7.822648</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_152_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>4.122143 -4.797659 7.822648</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_153</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>3.303897 4.435039 2.988531</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_153_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-3.303897 -4.435039 -2.988531</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_154</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>1.631347 4.961133 3.137290</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_154_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-1.631347 -4.961133 -3.137290</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_155</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>4.159086 5.221035 3.386170</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_155_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-4.159086 -5.221035 -3.386170</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_156</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-3.897677 4.670482 2.938980</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_156_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>3.897677 -4.670482 -2.938980</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_157</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-4.702987 4.932919 -7.696545</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_157_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>4.702987 -4.932919 7.696545</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_158</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-2.991812 4.892953 3.194937</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_158_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>2.991812 -4.892953 -3.194937</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_159</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>2.943810 4.869740 -8.124454</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_159_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-2.943810 -4.869740 8.124454</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_16</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-3.439653 4.653421 -7.660679</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_16_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>3.439653 -4.653421 7.660679</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_160</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-6.381929 4.738492 -8.075330</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_160_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>6.381929 -4.738492 8.075330</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_161</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-3.104728 4.948417 2.861668</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_161_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>3.104728 -4.948417 -2.861668</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_162</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.308339 4.967601 3.137291</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_162_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-0.308339 -4.967601 -3.137291</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_163</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-6.003119 4.670482 -8.115279</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_163_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>6.003119 -4.670482 8.115279</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_164</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-1.654093 4.409462 -7.844452</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_164_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>1.654093 -4.409462 7.844452</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_165</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-1.463696 4.950962 -8.017115</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_165_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>1.463696 -4.950962 8.017115</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_166</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-6.977392 4.411615 -7.844452</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_166_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>6.977392 -4.411615 7.844452</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_167</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-2.134421 5.041730 3.137291</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_167_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>2.134421 -5.041730 -3.137291</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_168</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-3.120485 4.478785 -7.844452</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_168_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>3.120485 -4.478785 7.844452</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_169</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-2.524567 4.932924 2.938980</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_169_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>2.524567 -4.932924 -2.938980</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_17</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-1.651072 4.653421 -5.878982</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_17_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>1.651072 -4.653421 5.878982</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_170</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>4.033298 5.060933 -8.046890</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_170_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-4.033298 -5.060933 8.046890</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_171</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-5.342207 4.670482 -7.798351</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_171_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>5.342207 -4.670482 7.798351</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_172</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-2.982729 4.339447 2.988531</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_172_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>2.982729 -4.339447 -2.988531</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_173</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>3.560091 4.481130 -7.844452</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_173_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-3.560091 -4.481130 7.844452</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_174</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-2.394302 4.979924 -8.166520</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_174_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>2.394302 -4.979924 8.166520</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_175</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.637800 4.670482 -7.967568</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_175_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-0.637800 -4.670482 7.967568</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_176</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>3.369183 5.011117 3.106643</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_176_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-3.369183 -5.011117 -3.106643</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_177</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-6.101334 4.780966 3.165927</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_177_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>6.101334 -4.780966 -3.165927</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_178</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-0.413132 4.670482 -7.992372</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_178_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.413132 -4.670482 7.992372</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_179</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-1.426809 4.991751 3.308879</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_179_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>1.426809 -4.991751 -3.308879</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_18</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-3.596318 4.653421 -3.634289</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_18_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>3.596318 -4.653421 3.634289</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_180</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>4.490543 4.274070 2.988531</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_180_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-4.490543 -4.274070 -2.988531</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_181</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-0.504251 4.670482 3.137291</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_181_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.504251 -4.670482 -3.137291</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_182</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-3.032511 4.912421 -7.799412</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_182_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>3.032511 -4.912421 7.799412</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_183</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>1.794954 4.961611 -7.689657</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_183_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-1.794954 -4.961611 7.689657</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_184</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>3.863064 5.003506 -7.804740</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_184_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-3.863064 -5.003506 7.804740</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_185</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.926093 4.378988 -7.844452</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_185_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-0.926093 -4.378988 7.844452</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_186</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>2.530276 4.909503 -7.794904</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_186_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-2.530276 -4.909503 7.794904</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_187</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>1.424332 4.886993 -8.169095</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_187_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-1.424332 -4.886993 8.169095</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_188</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>3.995893 4.237150 2.988531</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_188_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-3.995893 -4.237150 -2.988531</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_189</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-3.615358 5.067834 -8.164699</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_189_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>3.615358 -5.067834 8.164699</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_19</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-3.572083 4.653421 1.502153</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_19_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>3.572083 -4.653421 -1.502153</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_190</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-3.582867 4.990232 -7.893898</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_190_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>3.582867 -4.990232 7.893898</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_191</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-5.360165 4.975153 -8.235863</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_191_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>5.360165 -4.975153 8.235863</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_192</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-5.894484 4.889444 2.888955</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_192_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>5.894484 -4.889444 -2.888955</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_193</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-0.968886 4.834673 -7.967568</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_193_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.968886 -4.834673 7.967568</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_194</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>1.385272 4.527573 2.988531</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_194_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-1.385272 -4.527573 -2.988531</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_195</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-4.639070 4.807281 -8.175648</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_195_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>4.639070 -4.807281 8.175648</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_196</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-1.495639 4.507033 2.988531</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_196_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>1.495639 -4.507033 -2.988531</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_197</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-4.908371 4.816403 -7.244129</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_197_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>4.908371 -4.816403 7.244129</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_198</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.548873 4.806658 -7.369580</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_198_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-0.548873 -4.806658 7.369580</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_199</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-0.552034 4.653421 -7.599158</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_199_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.552034 -4.653421 7.599158</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_2</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-2.219222 4.787698 -2.528518</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_2_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>2.219222 -4.787698 2.528518</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_20</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-1.845284 2.363069 -8.185274</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_20_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>1.845284 -2.363069 8.185274</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_200</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-3.439653 4.653421 -7.660679</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_200_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>3.439653 -4.653421 7.660679</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_201</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.501888 4.653421 -7.606123</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_201_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-0.501888 -4.653421 7.606123</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_202</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>1.188585 4.815424 -7.199305</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_202_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-1.188585 -4.815424 7.199305</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_203</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-1.599318 4.653421 -4.368926</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_203_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>1.599318 -4.653421 4.368926</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_204</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-0.768393 4.653421 2.549566</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_204_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.768393 -4.653421 -2.549566</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_205</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.472937 4.653421 0.509728</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_205_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-0.472937 -4.653421 -0.509728</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_206</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-4.733383 4.653421 -5.667074</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_206_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>4.733383 -4.653421 5.667074</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_207</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-2.670622 4.653421 2.708438</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_207_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>2.670622 -4.653421 -2.708438</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_208</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-4.011912 4.653421 0.054068</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_208_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>4.011912 -4.653421 -0.054068</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_209</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-2.066657 4.653421 -0.697121</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_209_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>2.066657 -4.653421 0.697121</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_21</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-1.852227 2.357526 3.336169</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_21_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>1.852227 -2.357526 -3.336169</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_210</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-5.300364 4.653421 -7.435664</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_210_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>5.300364 -4.653421 7.435664</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_211</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-0.878020 4.653421 -2.668413</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_211_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.878020 -4.653421 2.668413</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_212</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-2.172788 4.653421 -7.189723</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_212_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>2.172788 -4.653421 7.189723</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_213</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-2.291826 4.653421 -2.522554</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_213_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>2.291826 -4.653421 2.522554</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_214</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-1.354602 4.653421 0.998774</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_214_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>1.354602 -4.653421 -0.998774</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_215</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-2.615826 4.653421 1.927197</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_215_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>2.615826 -4.653421 -1.927197</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_216</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>1.128498 4.653421 -7.451355</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_216_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-1.128498 -4.653421 7.451355</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_217</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.778884 4.653421 -1.672994</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_217_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-0.778884 -4.653421 1.672994</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_218</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-4.295571 4.653421 -1.018141</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_218_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>4.295571 -4.653421 1.018141</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_219</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-4.058649 4.653421 -1.932409</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_219_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>4.058649 -4.653421 1.932409</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_22</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-1.845284 3.235022 -8.149240</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_22_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>1.845284 -3.235022 8.149240</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_220</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-3.604879 4.653421 -6.268063</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_220_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>3.604879 -4.653421 6.268063</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_221</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.433239 4.653421 -5.269461</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_221_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-0.433239 -4.653421 5.269461</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_222</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-2.747645 4.653421 -4.357353</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_222_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>2.747645 -4.653421 4.357353</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_223</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-0.155830 4.653421 -6.564057</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_223_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.155830 -4.653421 6.564057</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_224</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-1.651072 4.653421 -5.878982</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_224_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>1.651072 -4.653421 5.878982</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_225</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-3.596318 4.653421 -3.634289</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_225_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>3.596318 -4.653421 3.634289</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_226</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-3.572083 4.653421 1.502152</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_226_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>3.572083 -4.653421 -1.502152</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_227</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-0.104585 4.653421 -4.278669</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_227_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.104585 -4.653421 4.278669</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_228</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-4.873255 4.672441 0.976883</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_228_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>4.873255 -4.672441 -0.976883</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_229</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>2.596725 2.711466 -4.579250</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_229_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-2.596725 -2.711466 4.579250</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_23</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-1.852227 3.386389 3.196320</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_23_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>1.852227 -3.386389 -3.196320</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_230</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>1.649532 2.445474 -0.486600</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_230_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-1.649532 -2.445474 0.486600</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_231</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>2.714765 2.792378 -0.486600</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_231_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-2.714765 -2.792378 0.486600</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_232</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-0.749204 2.267069 -0.486601</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_232_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.749204 -2.267069 0.486601</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_233</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-3.282022 2.040235 -0.486601</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_233_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>3.282022 -2.040235 0.486601</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_234</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-5.000122 2.654825 -0.486601</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_234_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>5.000122 -2.654825 0.486601</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_235</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-6.496668 2.548097 -0.486601</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_235_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>6.496668 -2.548097 0.486601</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_236</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-0.461929 1.609289 -4.579250</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_236_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.461929 -1.609289 4.579250</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_237</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-1.090191 2.694985 -4.579250</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_237_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>1.090191 -2.694985 4.579250</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_238</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-5.309769 4.101230 -0.486600</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_238_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>5.309769 -4.101230 0.486600</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_239</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-6.445937 2.808287 -4.579251</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_239_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>6.445937 -2.808287 4.579251</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_24</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-1.852227 2.622546 3.104640</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_24_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>1.852227 -2.622546 -3.104640</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_240</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>1.090563 1.325794 -4.579250</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_240_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-1.090563 -1.325794 4.579250</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_241</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-2.077433 2.721352 -4.579250</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_241_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>2.077433 -2.721352 4.579250</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_242</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-4.451296 2.720381 -4.579251</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_242_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>4.451296 -2.720381 4.579251</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_243</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-1.606642 3.301632 -0.486600</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_243_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>1.606642 -3.301632 0.486600</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_25</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-1.852228 1.879638 3.182883</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_25_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>1.852228 -1.879638 -3.182883</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_26</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-1.845285 1.552660 -8.076145</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_26_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>1.845285 -1.552660 8.076145</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_27</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-1.852228 1.317205 3.202905</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_27_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>1.852228 -1.317205 -3.202905</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_28</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-1.852227 3.449517 3.280854</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_28_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>1.852227 -3.449517 -3.280854</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_29</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-5.129855 2.007382 -8.031552</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_29_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>5.129855 -2.007382 8.031552</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_3</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.772230 4.787698 -1.710903</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_3_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-0.772230 -4.787698 1.710903</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_30</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-5.129855 3.518303 -8.149244</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_30_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>5.129855 -3.518303 8.149244</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_31</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-5.134718 1.322315 3.204083</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_31_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>5.134718 -1.322315 -3.204083</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_32</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>1.437206 3.435716 -8.149240</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_32_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-1.437206 -3.435716 8.149240</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_33</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-5.129855 2.612484 -7.987175</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_33_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>5.129855 -2.612484 7.987175</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_34</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-5.134717 2.663825 3.150578</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_34_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>5.134717 -2.663825 -3.150578</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_35</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-5.129855 1.425620 -8.089080</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_35_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>5.129855 -1.425620 8.089080</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_36</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-5.129855 2.354470 -8.029477</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_36_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>5.129855 -2.354470 8.029477</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_37</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>1.437206 3.005745 -8.240958</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_37_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-1.437206 -3.005745 8.240958</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_38</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>1.437206 2.363403 -8.204134</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_38_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-1.437206 -2.363403 8.204134</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_39</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-5.134718 2.380646 3.286700</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_39_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>5.134718 -2.380646 -3.286700</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_4</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-4.304357 4.787698 -1.077545</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_4_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>4.304357 -4.787698 1.077545</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_40</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-5.129855 2.509227 -8.247107</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_40_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>5.129855 -2.509227 8.247107</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_41</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>1.437206 2.592721 -7.989645</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_41_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-1.437206 -2.592721 7.989645</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_42</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>1.432343 2.470768 3.226186</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_42_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-1.432343 -2.470768 -3.226186</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_43</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>1.432343 3.354895 3.270804</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_43_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-1.432343 -3.354895 -3.270804</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_44</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>1.437206 1.777110 -7.986954</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_44_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-1.437206 -1.777110 7.986954</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_45</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-5.134717 1.693857 3.200081</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_45_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>5.134717 -1.693857 -3.200081</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_46</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>1.437206 1.365956 -8.087161</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_46_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-1.437206 -1.365956 8.087161</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_47</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-5.134718 3.369935 3.270805</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_47_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>5.134718 -3.369935 -3.270805</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_48</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>1.432343 1.477752 3.215759</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_48_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-1.432343 -1.477752 -3.215759</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_49</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-5.129855 3.424962 -8.063546</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_49_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>5.129855 -3.424962 8.063546</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_5</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-2.782589 4.787698 -4.453630</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_5_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>2.782589 -4.787698 4.453630</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_50</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>2.885839 4.699767 -7.093827</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_50_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-2.885839 -4.699767 7.093827</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_51</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>2.807986 4.672441 -5.251410</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_51_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-2.807986 -4.672441 5.251410</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_52</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>3.380900 4.672441 -3.003050</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_52_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-3.380900 -4.672441 3.003050</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_53</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>3.191632 4.672441 0.442401</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_53_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-3.191632 -4.672441 -0.442401</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_54</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>2.277812 4.707693 2.089199</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_54_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-2.277812 -4.707693 -2.089199</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_55</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-6.660068 4.707896 -6.862770</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_55_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>6.660068 -4.707896 6.862770</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_56</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-7.258704 4.672441 -4.638813</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_56_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>7.258704 -4.672441 4.638813</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_57</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-6.635259 4.690703 0.990203</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_57_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>6.635259 -4.690703 -0.990203</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_58</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-5.842847 4.706903 2.457632</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_58_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>5.842847 -4.706903 -2.457632</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_59</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-5.986423 4.672441 -3.505705</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_59_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>5.986423 -4.672441 3.505705</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_6</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-0.105747 4.787698 -6.569441</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_6_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.105747 -4.787698 6.569441</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_60</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-6.103287 4.672441 -1.322046</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_60_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>6.103287 -4.672441 1.322046</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_61</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-0.444914 4.822033 -7.379694</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_61_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.444914 -4.822033 7.379694</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_62</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-1.626921 4.787698 -4.399919</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_62_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>1.626921 -4.787698 4.399919</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_63</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-0.783005 4.818100 2.351398</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_63_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.783005 -4.818100 -2.351398</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_64</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.484514 4.787698 0.485784</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_64_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-0.484514 -4.787698 -0.485784</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_65</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-2.633691 4.822520 2.575326</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_65_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>2.633691 -4.822520 -2.575326</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_66</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-4.051239 4.787698 0.054311</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_66_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>4.051239 -4.787698 -0.054311</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_67</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-2.047424 4.787698 -0.655882</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_67_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>2.047424 -4.787698 0.655882</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_68</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-0.865783 4.787698 -2.653019</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_68_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.865783 -4.787698 2.653019</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_69</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-2.104387 4.823660 -6.917962</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_69_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>2.104387 -4.823660 6.917962</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_7</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-3.574584 4.806263 -7.409878</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_7_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>3.574584 -4.806263 7.409878</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_70</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-2.219222 4.787698 -2.528518</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_70_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>2.219222 -4.787698 2.528518</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_71</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-1.346359 4.787698 0.966367</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_71_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>1.346359 -4.787698 -0.966367</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_72</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-2.611953 4.814264 1.922289</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_72_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>2.611953 -4.814264 -1.922289</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_73</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.772230 4.787698 -1.710903</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_73_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-0.772230 -4.787698 1.710903</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_74</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-4.304357 4.787698 -1.077545</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_74_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>4.304357 -4.787698 1.077545</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_75</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-4.043949 4.787698 -1.954543</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_75_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>4.043949 -4.787698 1.954543</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_76</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-3.624162 4.787698 -6.238112</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_76_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>3.624162 -4.787698 6.238112</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_77</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.453838 4.787698 -5.236080</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_77_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-0.453838 -4.787698 5.236080</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_78</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-2.782589 4.787698 -4.453630</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_78_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>2.782589 -4.787698 4.453630</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_79</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-0.105747 4.787698 -6.569442</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_79_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.105747 -4.787698 6.569442</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_8</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-1.686338 4.787698 -5.877307</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_8_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>1.686338 -4.787698 5.877307</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_80</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-3.574584 4.806263 -7.409878</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_80_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>3.574584 -4.806263 7.409878</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_81</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-1.686338 4.787698 -5.877307</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_81_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>1.686338 -4.787698 5.877307</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_82</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-3.536279 4.787698 -3.589393</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_82_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>3.536279 -4.787698 3.589393</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_83</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-3.477181 4.787698 1.485522</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_83_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>3.477181 -4.787698 -1.485522</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_84</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-0.058915 4.787698 -4.261467</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_84_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.058915 -4.787698 4.261467</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_85</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-4.816893 4.787698 -5.714829</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_85_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>4.816893 -4.787698 5.714829</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_86</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-0.720134 3.839389 -8.110073</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_86_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.720134 -3.839389 8.110073</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_87</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>3.054194 3.839389 -7.965072</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_87_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-3.054194 -3.839389 7.965072</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_88</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-4.437546 3.835618 3.205750</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_88_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>4.437546 -3.835618 -3.205750</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_89</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-5.995105 3.839389 -7.965072</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_89_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>5.995105 -3.839389 7.965072</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_9</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-0.058915 4.787698 -4.261467</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_9_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.058915 -4.787698 4.261467</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_90</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-2.754453 3.839389 -8.075179</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_90_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>2.754453 -3.839389 8.075179</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_91</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-1.837045 3.839389 -7.965072</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_91_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>1.837045 -3.839389 7.965072</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_92</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-5.538941 3.836472 3.251318</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_92_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>5.538941 -3.836472 -3.251318</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_93</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-2.729076 3.839389 -7.856355</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_93_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>2.729076 -3.839389 7.856355</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_94</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-2.289637 3.835301 3.109152</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_94_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>2.289637 -3.835301 -3.109152</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_95</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>1.937216 3.839389 -7.998563</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_95_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-1.937216 -3.839389 7.998563</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_96</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.582033 3.839389 -8.042572</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_96_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-0.582033 -3.839389 8.042572</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_97</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-7.420032 3.839389 -7.965072</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_97_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>7.420032 -3.839389 7.965072</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_98</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.597121 3.839389 -7.858074</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_98_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-0.597121 -3.839389 7.858074</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>jointpiece_99</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-5.095955 3.836472 2.991065</row3>
+				</transform>
+				<node>
+					<identifier>jointpiece_99_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>5.095955 -3.836472 -2.991065</row3>
+					</transform>
+				</node>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>jointpiece_186_BlendBone</node>
+		<node>jointpiece_101_BlendBone</node>
+		<node>jointpiece_144_BlendBone</node>
+		<node>jointpiece_100_BlendBone</node>
+		<node>jointpiece_184_BlendBone</node>
+		<node>jointpiece_99_BlendBone</node>
+		<node>jointpiece_149_BlendBone</node>
+		<node>jointpiece_133_BlendBone</node>
+		<node>jointpiece_159_BlendBone</node>
+		<node>jointpiece_98_BlendBone</node>
+		<node>jointpiece_97_BlendBone</node>
+		<node>jointpiece_96_BlendBone</node>
+		<node>jointpiece_172_BlendBone</node>
+		<node>jointpiece_139_BlendBone</node>
+		<node>jointpiece_95_BlendBone</node>
+		<node>jointpiece_158_BlendBone</node>
+		<node>jointpiece_94_BlendBone</node>
+		<node>jointpiece_185_BlendBone</node>
+		<node>jointpiece_93_BlendBone</node>
+		<node>jointpiece_92_BlendBone</node>
+		<node>jointpiece_157_BlendBone</node>
+		<node>jointpiece_156_BlendBone</node>
+		<node>jointpiece_91_BlendBone</node>
+		<node>jointpiece_90_BlendBone</node>
+		<node>jointpiece_89_BlendBone</node>
+		<geometry>
+			<vertices>polySurfaceShape1_split_7.vertices</vertices>
+			<stream>polySurfaceShape1_split_7.uv2</stream>
+			<stream>polySurfaceShape1_split_7.colour</stream>
+			<primitive>polySurfaceShape1_split_7.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd1_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tiled_skinned.fx</fx>
+					<materialKind>111</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						albedoHeightTile0
+						<Texture>content/Buildings/00_Tiles/dds/Paving_01_512_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile1
+						<Texture>content/Buildings/00_Tiles/dds/Paving_01_512_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile2
+						<Texture>content/Buildings/00_Tiles/dds/Paving_02_512_AM.dds</Texture>
+					</property>
+					<property>
+						blendMask
+						<Texture>content/Buildings/hd_bld_SU_109_Thouse/hd_bld_SU_109_Thouse_atlas_blend.png</Texture>
+					</property>
+					<property>
+						colorTex
+						<Texture>content/UniversalTextures/Universal_GCM.dds</Texture>
+					</property>
+					<property>
+						dirtMap
+						<Texture>content/Buildings/00_Tiles/Dirt_Yelow_Plaster_04_DM.dds</Texture>
+					</property>
+					<property>
+						g_dirtColor
+						<Vector4>0.517647 0.430000 0.380000 1.000000</Vector4>
+					</property>
+					<property>
+						g_dirtColorParams
+						<Vector4>1.500000 0.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_fakeShadowsAndDetailParams
+						<Vector4>0.090000 0.430000 1.000000 0.000000</Vector4>
+					</property>
+					<property>
+						metallicAOTile0
+						<Texture>content/Buildings/00_Tiles/dds/Paving_01_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile1
+						<Texture>content/Buildings/00_Tiles/dds/Paving_01_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile2
+						<Texture>content/Buildings/00_Tiles/dds/Paving_02_512_MAO.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile0
+						<Texture>content/Buildings/00_Tiles/dds/Paving_01_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile1
+						<Texture>content/Buildings/00_Tiles/dds/Paving_01_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile2
+						<Texture>content/Buildings/00_Tiles/dds/Paving_02_512_GBMT.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-1.815790 4.456978 2.441758</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>jointpiece_155_BlendBone</node>
+		<node>jointpiece_86_BlendBone</node>
+		<node>jointpiece_87_BlendBone</node>
+		<node>jointpiece_88_BlendBone</node>
+		<node>jointpiece_177_BlendBone</node>
+		<node>jointpiece_166_BlendBone</node>
+		<node>jointpiece_163_BlendBone</node>
+		<node>jointpiece_134_BlendBone</node>
+		<node>jointpiece_138_BlendBone</node>
+		<node>jointpiece_154_BlendBone</node>
+		<node>jointpiece_173_BlendBone</node>
+		<node>jointpiece_135_BlendBone</node>
+		<node>jointpiece_145_BlendBone</node>
+		<node>jointpiece_178_BlendBone</node>
+		<node>jointpiece_187_BlendBone</node>
+		<node>jointpiece_153_BlendBone</node>
+		<node>jointpiece_131_BlendBone</node>
+		<node>jointpiece_188_BlendBone</node>
+		<node>jointpiece_130_BlendBone</node>
+		<node>jointpiece_129_BlendBone</node>
+		<node>jointpiece_169_BlendBone</node>
+		<node>jointpiece_136_BlendBone</node>
+		<node>jointpiece_132_BlendBone</node>
+		<node>jointpiece_128_BlendBone</node>
+		<node>jointpiece_127_BlendBone</node>
+		<node>jointpiece_162_BlendBone</node>
+		<node>jointpiece_189_BlendBone</node>
+		<node>jointpiece_150_BlendBone</node>
+		<node>jointpiece_126_BlendBone</node>
+		<node>jointpiece_190_BlendBone</node>
+		<node>jointpiece_141_BlendBone</node>
+		<node>jointpiece_165_BlendBone</node>
+		<node>jointpiece_142_BlendBone</node>
+		<node>jointpiece_170_BlendBone</node>
+		<node>jointpiece_125_BlendBone</node>
+		<node>jointpiece_124_BlendBone</node>
+		<node>jointpiece_143_BlendBone</node>
+		<node>jointpiece_174_BlendBone</node>
+		<node>jointpiece_179_BlendBone</node>
+		<node>jointpiece_191_BlendBone</node>
+		<node>jointpiece_123_BlendBone</node>
+		<node>jointpiece_122_BlendBone</node>
+		<node>jointpiece_180_BlendBone</node>
+		<node>jointpiece_192_BlendBone</node>
+		<node>jointpiece_121_BlendBone</node>
+		<node>jointpiece_167_BlendBone</node>
+		<node>jointpiece_175_BlendBone</node>
+		<node>jointpiece_151_BlendBone</node>
+		<node>jointpiece_120_BlendBone</node>
+		<node>jointpiece_193_BlendBone</node>
+		<node>jointpiece_119_BlendBone</node>
+		<node>jointpiece_118_BlendBone</node>
+		<node>jointpiece_117_BlendBone</node>
+		<node>jointpiece_146_BlendBone</node>
+		<node>jointpiece_181_BlendBone</node>
+		<node>jointpiece_116_BlendBone</node>
+		<node>jointpiece_115_BlendBone</node>
+		<node>jointpiece_114_BlendBone</node>
+		<node>jointpiece_194_BlendBone</node>
+		<node>jointpiece_113_BlendBone</node>
+		<node>jointpiece_112_BlendBone</node>
+		<node>jointpiece_171_BlendBone</node>
+		<node>jointpiece_195_BlendBone</node>
+		<node>jointpiece_111_BlendBone</node>
+		<node>jointpiece_164_BlendBone</node>
+		<node>jointpiece_110_BlendBone</node>
+		<node>jointpiece_109_BlendBone</node>
+		<node>jointpiece_182_BlendBone</node>
+		<node>jointpiece_196_BlendBone</node>
+		<node>jointpiece_108_BlendBone</node>
+		<node>jointpiece_168_BlendBone</node>
+		<node>jointpiece_107_BlendBone</node>
+		<node>jointpiece_106_BlendBone</node>
+		<node>jointpiece_176_BlendBone</node>
+		<node>jointpiece_105_BlendBone</node>
+		<node>jointpiece_104_BlendBone</node>
+		<node>jointpiece_147_BlendBone</node>
+		<node>jointpiece_183_BlendBone</node>
+		<node>jointpiece_137_BlendBone</node>
+		<node>jointpiece_152_BlendBone</node>
+		<node>jointpiece_103_BlendBone</node>
+		<node>jointpiece_161_BlendBone</node>
+		<node>jointpiece_140_BlendBone</node>
+		<node>jointpiece_160_BlendBone</node>
+		<node>jointpiece_102_BlendBone</node>
+		<geometry>
+			<vertices>polySurfaceShape1_split_6.vertices</vertices>
+			<stream>polySurfaceShape1_split_6.uv2</stream>
+			<stream>polySurfaceShape1_split_6.colour</stream>
+			<primitive>polySurfaceShape1_split_6.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd1_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tiled_skinned.fx</fx>
+					<materialKind>111</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						albedoHeightTile0
+						<Texture>content/Buildings/00_Tiles/dds/Paving_01_512_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile1
+						<Texture>content/Buildings/00_Tiles/dds/Paving_01_512_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile2
+						<Texture>content/Buildings/00_Tiles/dds/Paving_02_512_AM.dds</Texture>
+					</property>
+					<property>
+						blendMask
+						<Texture>content/Buildings/hd_bld_SU_109_Thouse/hd_bld_SU_109_Thouse_atlas_blend.png</Texture>
+					</property>
+					<property>
+						colorTex
+						<Texture>content/UniversalTextures/Universal_GCM.dds</Texture>
+					</property>
+					<property>
+						dirtMap
+						<Texture>content/Buildings/00_Tiles/Dirt_Yelow_Plaster_04_DM.dds</Texture>
+					</property>
+					<property>
+						g_dirtColor
+						<Vector4>0.517647 0.430000 0.380000 1.000000</Vector4>
+					</property>
+					<property>
+						g_dirtColorParams
+						<Vector4>1.500000 0.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_fakeShadowsAndDetailParams
+						<Vector4>0.090000 0.430000 1.000000 0.000000</Vector4>
+					</property>
+					<property>
+						metallicAOTile0
+						<Texture>content/Buildings/00_Tiles/dds/Paving_01_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile1
+						<Texture>content/Buildings/00_Tiles/dds/Paving_01_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile2
+						<Texture>content/Buildings/00_Tiles/dds/Paving_02_512_MAO.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile0
+						<Texture>content/Buildings/00_Tiles/dds/Paving_01_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile1
+						<Texture>content/Buildings/00_Tiles/dds/Paving_01_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile2
+						<Texture>content/Buildings/00_Tiles/dds/Paving_02_512_GBMT.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-1.690432 4.458583 2.439878</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>jointpiece_239_BlendBone</node>
+		<node>jointpiece_204_BlendBone</node>
+		<node>jointpiece_205_BlendBone</node>
+		<node>jointpiece_206_BlendBone</node>
+		<node>jointpiece_207_BlendBone</node>
+		<node>jointpiece_208_BlendBone</node>
+		<node>jointpiece_209_BlendBone</node>
+		<node>jointpiece_210_BlendBone</node>
+		<node>jointpiece_211_BlendBone</node>
+		<node>jointpiece_212_BlendBone</node>
+		<node>jointpiece_213_BlendBone</node>
+		<node>jointpiece_214_BlendBone</node>
+		<node>jointpiece_215_BlendBone</node>
+		<node>jointpiece_216_BlendBone</node>
+		<node>jointpiece_217_BlendBone</node>
+		<node>jointpiece_218_BlendBone</node>
+		<node>jointpiece_219_BlendBone</node>
+		<node>jointpiece_220_BlendBone</node>
+		<node>jointpiece_221_BlendBone</node>
+		<node>jointpiece_223_BlendBone</node>
+		<node>jointpiece_224_BlendBone</node>
+		<node>jointpiece_225_BlendBone</node>
+		<node>jointpiece_226_BlendBone</node>
+		<node>jointpiece_227_BlendBone</node>
+		<node>jointpiece_228_BlendBone</node>
+		<node>jointpiece_229_BlendBone</node>
+		<node>jointpiece_230_BlendBone</node>
+		<node>jointpiece_231_BlendBone</node>
+		<node>jointpiece_232_BlendBone</node>
+		<node>jointpiece_233_BlendBone</node>
+		<node>jointpiece_234_BlendBone</node>
+		<node>jointpiece_235_BlendBone</node>
+		<node>jointpiece_236_BlendBone</node>
+		<node>jointpiece_237_BlendBone</node>
+		<node>jointpiece_238_BlendBone</node>
+		<geometry>
+			<vertices>polySurfaceShape1_split_5.vertices</vertices>
+			<stream>polySurfaceShape1_split_5.uv2</stream>
+			<stream>polySurfaceShape1_split_5.colour</stream>
+			<primitive>polySurfaceShape1_split_5.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd6_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tiled_skinned.fx</fx>
+					<materialKind>111</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						albedoHeightTile0
+						<Texture>content/Buildings/00_Tiles/dds/Paving_02_512_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile1
+						<Texture>content/Buildings/00_Tiles/dds/Concrete_07_512_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile2
+						<Texture>content/Buildings/00_Tiles/dds/Plaster_05_old_512_AM.dds</Texture>
+					</property>
+					<property>
+						blendMask
+						<Texture>content/Buildings/hd_bld_SU_109_Thouse/hd_bld_SU_109_Thouse_atlas_blend.png</Texture>
+					</property>
+					<property>
+						colorTex
+						<Texture>content/UniversalTextures/Universal_GCM.dds</Texture>
+					</property>
+					<property>
+						dirtMap
+						<Texture>content/Buildings/00_Tiles/Dirt_Desert_02_DM.dds</Texture>
+					</property>
+					<property>
+						g_dirtColor
+						<Vector4>0.517647 0.430000 0.380000 0.300000</Vector4>
+					</property>
+					<property>
+						g_fakeShadowsAndDetailParams
+						<Vector4>0.140000 0.360000 1.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_tile1Tint
+						<Vector4>0.784314 0.776471 0.756863 1.000000</Vector4>
+					</property>
+					<property>
+						g_tile2Tint
+						<Vector4>0.705882 0.666667 0.647059 1.000000</Vector4>
+					</property>
+					<property>
+						metallicAOTile0
+						<Texture>content/Buildings/00_Tiles/dds/Paving_02_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile1
+						<Texture>content/Buildings/00_Tiles/dds/Concrete_07_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile2
+						<Texture>content/Buildings/00_Tiles/dds/Plaster_05_old_512_MAO.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile0
+						<Texture>content/Buildings/00_Tiles/dds/Paving_02_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile1
+						<Texture>content/Buildings/00_Tiles/dds/Concrete_07_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile2
+						<Texture>content/Buildings/00_Tiles/dds/Plaster_05_old_512_GBMT.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-1.969368 2.775513 2.474869</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>jointpiece_240_BlendBone</node>
+		<node>jointpiece_117_BlendBone</node>
+		<node>jointpiece_118_BlendBone</node>
+		<node>jointpiece_119_BlendBone</node>
+		<node>jointpiece_120_BlendBone</node>
+		<node>jointpiece_121_BlendBone</node>
+		<node>jointpiece_122_BlendBone</node>
+		<node>jointpiece_123_BlendBone</node>
+		<node>jointpiece_124_BlendBone</node>
+		<node>jointpiece_125_BlendBone</node>
+		<node>jointpiece_126_BlendBone</node>
+		<node>jointpiece_127_BlendBone</node>
+		<node>jointpiece_128_BlendBone</node>
+		<node>jointpiece_129_BlendBone</node>
+		<node>jointpiece_130_BlendBone</node>
+		<node>jointpiece_153_BlendBone</node>
+		<node>jointpiece_132_BlendBone</node>
+		<node>jointpiece_137_BlendBone</node>
+		<node>jointpiece_154_BlendBone</node>
+		<node>jointpiece_138_BlendBone</node>
+		<node>jointpiece_155_BlendBone</node>
+		<node>jointpiece_156_BlendBone</node>
+		<node>jointpiece_157_BlendBone</node>
+		<node>jointpiece_131_BlendBone</node>
+		<node>jointpiece_158_BlendBone</node>
+		<node>jointpiece_139_BlendBone</node>
+		<node>jointpiece_159_BlendBone</node>
+		<node>jointpiece_133_BlendBone</node>
+		<node>jointpiece_160_BlendBone</node>
+		<node>jointpiece_161_BlendBone</node>
+		<node>jointpiece_140_BlendBone</node>
+		<node>jointpiece_162_BlendBone</node>
+		<node>jointpiece_134_BlendBone</node>
+		<node>jointpiece_141_BlendBone</node>
+		<node>jointpiece_163_BlendBone</node>
+		<node>jointpiece_164_BlendBone</node>
+		<node>jointpiece_165_BlendBone</node>
+		<node>jointpiece_166_BlendBone</node>
+		<node>jointpiece_167_BlendBone</node>
+		<node>jointpiece_168_BlendBone</node>
+		<node>jointpiece_142_BlendBone</node>
+		<node>jointpiece_169_BlendBone</node>
+		<node>jointpiece_170_BlendBone</node>
+		<node>jointpiece_171_BlendBone</node>
+		<node>jointpiece_172_BlendBone</node>
+		<node>jointpiece_173_BlendBone</node>
+		<node>jointpiece_174_BlendBone</node>
+		<node>jointpiece_143_BlendBone</node>
+		<node>jointpiece_175_BlendBone</node>
+		<node>jointpiece_176_BlendBone</node>
+		<node>jointpiece_144_BlendBone</node>
+		<node>jointpiece_177_BlendBone</node>
+		<node>jointpiece_178_BlendBone</node>
+		<node>jointpiece_135_BlendBone</node>
+		<node>jointpiece_145_BlendBone</node>
+		<node>jointpiece_179_BlendBone</node>
+		<node>jointpiece_180_BlendBone</node>
+		<node>jointpiece_146_BlendBone</node>
+		<node>jointpiece_181_BlendBone</node>
+		<node>jointpiece_182_BlendBone</node>
+		<node>jointpiece_183_BlendBone</node>
+		<node>jointpiece_147_BlendBone</node>
+		<node>jointpiece_184_BlendBone</node>
+		<node>jointpiece_185_BlendBone</node>
+		<node>jointpiece_149_BlendBone</node>
+		<node>jointpiece_186_BlendBone</node>
+		<node>jointpiece_187_BlendBone</node>
+		<node>jointpiece_188_BlendBone</node>
+		<node>jointpiece_189_BlendBone</node>
+		<node>jointpiece_136_BlendBone</node>
+		<node>jointpiece_190_BlendBone</node>
+		<node>jointpiece_150_BlendBone</node>
+		<node>jointpiece_191_BlendBone</node>
+		<node>jointpiece_192_BlendBone</node>
+		<node>jointpiece_151_BlendBone</node>
+		<node>jointpiece_193_BlendBone</node>
+		<node>jointpiece_222_BlendBone</node>
+		<node>jointpiece_194_BlendBone</node>
+		<node>jointpiece_195_BlendBone</node>
+		<node>jointpiece_196_BlendBone</node>
+		<node>jointpiece_199_BlendBone</node>
+		<node>jointpiece_200_BlendBone</node>
+		<node>jointpiece_201_BlendBone</node>
+		<node>jointpiece_152_BlendBone</node>
+		<node>jointpiece_203_BlendBone</node>
+		<geometry>
+			<vertices>polySurfaceShape1_split_4.vertices</vertices>
+			<stream>polySurfaceShape1_split_4.uv2</stream>
+			<stream>polySurfaceShape1_split_4.colour</stream>
+			<primitive>polySurfaceShape1_split_4.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd6_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tiled_skinned.fx</fx>
+					<materialKind>111</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						albedoHeightTile0
+						<Texture>content/Buildings/00_Tiles/dds/Paving_02_512_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile1
+						<Texture>content/Buildings/00_Tiles/dds/Concrete_07_512_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile2
+						<Texture>content/Buildings/00_Tiles/dds/Plaster_05_old_512_AM.dds</Texture>
+					</property>
+					<property>
+						blendMask
+						<Texture>content/Buildings/hd_bld_SU_109_Thouse/hd_bld_SU_109_Thouse_atlas_blend.png</Texture>
+					</property>
+					<property>
+						colorTex
+						<Texture>content/UniversalTextures/Universal_GCM.dds</Texture>
+					</property>
+					<property>
+						dirtMap
+						<Texture>content/Buildings/00_Tiles/Dirt_Desert_02_DM.dds</Texture>
+					</property>
+					<property>
+						g_dirtColor
+						<Vector4>0.517647 0.430000 0.380000 0.300000</Vector4>
+					</property>
+					<property>
+						g_fakeShadowsAndDetailParams
+						<Vector4>0.140000 0.360000 1.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_tile1Tint
+						<Vector4>0.784314 0.776471 0.756863 1.000000</Vector4>
+					</property>
+					<property>
+						g_tile2Tint
+						<Vector4>0.705882 0.666667 0.647059 1.000000</Vector4>
+					</property>
+					<property>
+						metallicAOTile0
+						<Texture>content/Buildings/00_Tiles/dds/Paving_02_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile1
+						<Texture>content/Buildings/00_Tiles/dds/Concrete_07_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile2
+						<Texture>content/Buildings/00_Tiles/dds/Plaster_05_old_512_MAO.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile0
+						<Texture>content/Buildings/00_Tiles/dds/Paving_02_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile1
+						<Texture>content/Buildings/00_Tiles/dds/Concrete_07_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile2
+						<Texture>content/Buildings/00_Tiles/dds/Plaster_05_old_512_GBMT.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-1.776771 3.090554 2.414650</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>jointpiece_241_BlendBone</node>
+		<node>jointpiece_10_BlendBone</node>
+		<node>jointpiece_11_BlendBone</node>
+		<node>jointpiece_12_BlendBone</node>
+		<node>jointpiece_13_BlendBone</node>
+		<node>jointpiece_14_BlendBone</node>
+		<node>jointpiece_15_BlendBone</node>
+		<node>jointpiece_16_BlendBone</node>
+		<node>jointpiece_17_BlendBone</node>
+		<node>jointpiece_18_BlendBone</node>
+		<node>jointpiece_19_BlendBone</node>
+		<node>jointpiece_20_BlendBone</node>
+		<node>jointpiece_21_BlendBone</node>
+		<node>jointpiece_22_BlendBone</node>
+		<node>jointpiece_23_BlendBone</node>
+		<node>jointpiece_24_BlendBone</node>
+		<node>jointpiece_25_BlendBone</node>
+		<node>jointpiece_26_BlendBone</node>
+		<node>jointpiece_27_BlendBone</node>
+		<node>jointpiece_28_BlendBone</node>
+		<node>jointpiece_29_BlendBone</node>
+		<node>jointpiece_30_BlendBone</node>
+		<node>jointpiece_31_BlendBone</node>
+		<node>jointpiece_32_BlendBone</node>
+		<node>jointpiece_33_BlendBone</node>
+		<node>jointpiece_34_BlendBone</node>
+		<node>jointpiece_35_BlendBone</node>
+		<node>jointpiece_36_BlendBone</node>
+		<node>jointpiece_37_BlendBone</node>
+		<node>jointpiece_38_BlendBone</node>
+		<node>jointpiece_39_BlendBone</node>
+		<node>jointpiece_40_BlendBone</node>
+		<node>jointpiece_41_BlendBone</node>
+		<node>jointpiece_42_BlendBone</node>
+		<node>jointpiece_43_BlendBone</node>
+		<node>jointpiece_44_BlendBone</node>
+		<node>jointpiece_45_BlendBone</node>
+		<node>jointpiece_46_BlendBone</node>
+		<node>jointpiece_47_BlendBone</node>
+		<node>jointpiece_48_BlendBone</node>
+		<node>jointpiece_49_BlendBone</node>
+		<node>jointpiece_50_BlendBone</node>
+		<node>jointpiece_51_BlendBone</node>
+		<node>jointpiece_52_BlendBone</node>
+		<node>jointpiece_53_BlendBone</node>
+		<node>jointpiece_54_BlendBone</node>
+		<node>jointpiece_55_BlendBone</node>
+		<node>jointpiece_56_BlendBone</node>
+		<node>jointpiece_57_BlendBone</node>
+		<node>jointpiece_58_BlendBone</node>
+		<node>jointpiece_59_BlendBone</node>
+		<node>jointpiece_60_BlendBone</node>
+		<node>jointpiece_242_BlendBone</node>
+		<node>jointpiece_86_BlendBone</node>
+		<node>jointpiece_243_BlendBone</node>
+		<node>jointpiece_87_BlendBone</node>
+		<node>jointpiece_88_BlendBone</node>
+		<node>jointpiece_89_BlendBone</node>
+		<node>jointpiece_90_BlendBone</node>
+		<node>jointpiece_91_BlendBone</node>
+		<node>jointpiece_92_BlendBone</node>
+		<node>jointpiece_93_BlendBone</node>
+		<node>jointpiece_94_BlendBone</node>
+		<node>jointpiece_95_BlendBone</node>
+		<node>jointpiece_96_BlendBone</node>
+		<node>jointpiece_97_BlendBone</node>
+		<node>jointpiece_98_BlendBone</node>
+		<node>jointpiece_99_BlendBone</node>
+		<node>jointpiece_100_BlendBone</node>
+		<node>jointpiece_101_BlendBone</node>
+		<node>jointpiece_102_BlendBone</node>
+		<node>jointpiece_103_BlendBone</node>
+		<node>jointpiece_104_BlendBone</node>
+		<node>jointpiece_105_BlendBone</node>
+		<node>jointpiece_106_BlendBone</node>
+		<node>jointpiece_107_BlendBone</node>
+		<node>jointpiece_108_BlendBone</node>
+		<node>jointpiece_109_BlendBone</node>
+		<node>jointpiece_110_BlendBone</node>
+		<node>jointpiece_111_BlendBone</node>
+		<node>jointpiece_112_BlendBone</node>
+		<node>jointpiece_113_BlendBone</node>
+		<node>jointpiece_114_BlendBone</node>
+		<node>jointpiece_115_BlendBone</node>
+		<node>jointpiece_116_BlendBone</node>
+		<geometry>
+			<vertices>polySurfaceShape1_split_3.vertices</vertices>
+			<stream>polySurfaceShape1_split_3.uv2</stream>
+			<stream>polySurfaceShape1_split_3.colour</stream>
+			<primitive>polySurfaceShape1_split_3.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd6_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tiled_skinned.fx</fx>
+					<materialKind>111</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						albedoHeightTile0
+						<Texture>content/Buildings/00_Tiles/dds/Paving_02_512_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile1
+						<Texture>content/Buildings/00_Tiles/dds/Concrete_07_512_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile2
+						<Texture>content/Buildings/00_Tiles/dds/Plaster_05_old_512_AM.dds</Texture>
+					</property>
+					<property>
+						blendMask
+						<Texture>content/Buildings/hd_bld_SU_109_Thouse/hd_bld_SU_109_Thouse_atlas_blend.png</Texture>
+					</property>
+					<property>
+						colorTex
+						<Texture>content/UniversalTextures/Universal_GCM.dds</Texture>
+					</property>
+					<property>
+						dirtMap
+						<Texture>content/Buildings/00_Tiles/Dirt_Desert_02_DM.dds</Texture>
+					</property>
+					<property>
+						g_dirtColor
+						<Vector4>0.517647 0.430000 0.380000 0.300000</Vector4>
+					</property>
+					<property>
+						g_fakeShadowsAndDetailParams
+						<Vector4>0.140000 0.360000 1.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_tile1Tint
+						<Vector4>0.784314 0.776471 0.756863 1.000000</Vector4>
+					</property>
+					<property>
+						g_tile2Tint
+						<Vector4>0.705882 0.666667 0.647059 1.000000</Vector4>
+					</property>
+					<property>
+						metallicAOTile0
+						<Texture>content/Buildings/00_Tiles/dds/Paving_02_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile1
+						<Texture>content/Buildings/00_Tiles/dds/Concrete_07_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile2
+						<Texture>content/Buildings/00_Tiles/dds/Plaster_05_old_512_MAO.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile0
+						<Texture>content/Buildings/00_Tiles/dds/Paving_02_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile1
+						<Texture>content/Buildings/00_Tiles/dds/Concrete_07_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile2
+						<Texture>content/Buildings/00_Tiles/dds/Plaster_05_old_512_GBMT.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-1.441457 3.004919 2.439213</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>jointpiece_51_BlendBone</node>
+		<node>jointpiece_10_BlendBone</node>
+		<node>jointpiece_52_BlendBone</node>
+		<node>jointpiece_11_BlendBone</node>
+		<node>jointpiece_237_BlendBone</node>
+		<node>jointpiece_225_BlendBone</node>
+		<node>jointpiece_211_BlendBone</node>
+		<node>jointpiece_12_BlendBone</node>
+		<node>jointpiece_13_BlendBone</node>
+		<node>jointpiece_199_BlendBone</node>
+		<node>jointpiece_200_BlendBone</node>
+		<node>jointpiece_203_BlendBone</node>
+		<node>jointpiece_224_BlendBone</node>
+		<node>jointpiece_53_BlendBone</node>
+		<node>jointpiece_14_BlendBone</node>
+		<node>jointpiece_15_BlendBone</node>
+		<node>jointpiece_201_BlendBone</node>
+		<node>jointpiece_236_BlendBone</node>
+		<node>jointpiece_16_BlendBone</node>
+		<node>jointpiece_17_BlendBone</node>
+		<node>jointpiece_205_BlendBone</node>
+		<node>jointpiece_208_BlendBone</node>
+		<node>jointpiece_207_BlendBone</node>
+		<node>jointpiece_235_BlendBone</node>
+		<node>jointpiece_18_BlendBone</node>
+		<node>jointpiece_217_BlendBone</node>
+		<node>jointpiece_54_BlendBone</node>
+		<node>jointpiece_19_BlendBone</node>
+		<node>jointpiece_223_BlendBone</node>
+		<node>jointpiece_206_BlendBone</node>
+		<node>jointpiece_234_BlendBone</node>
+		<node>jointpiece_216_BlendBone</node>
+		<node>jointpiece_55_BlendBone</node>
+		<node>jointpiece_56_BlendBone</node>
+		<node>jointpiece_215_BlendBone</node>
+		<node>jointpiece_233_BlendBone</node>
+		<node>jointpiece_57_BlendBone</node>
+		<node>jointpiece_204_BlendBone</node>
+		<node>jointpiece_210_BlendBone</node>
+		<node>jointpiece_58_BlendBone</node>
+		<node>jointpiece_232_BlendBone</node>
+		<node>jointpiece_209_BlendBone</node>
+		<node>jointpiece_59_BlendBone</node>
+		<node>jointpiece_222_BlendBone</node>
+		<node>jointpiece_60_BlendBone</node>
+		<node>jointpiece_221_BlendBone</node>
+		<node>jointpiece_231_BlendBone</node>
+		<node>jointpiece_220_BlendBone</node>
+		<node>jointpiece_214_BlendBone</node>
+		<node>jointpiece_230_BlendBone</node>
+		<node>jointpiece_229_BlendBone</node>
+		<node>jointpiece_243_BlendBone</node>
+		<node>jointpiece_219_BlendBone</node>
+		<node>jointpiece_213_BlendBone</node>
+		<node>jointpiece_242_BlendBone</node>
+		<node>jointpiece_228_BlendBone</node>
+		<node>jointpiece_241_BlendBone</node>
+		<node>jointpiece_227_BlendBone</node>
+		<node>jointpiece_218_BlendBone</node>
+		<node>jointpiece_240_BlendBone</node>
+		<node>jointpiece_239_BlendBone</node>
+		<node>jointpiece_212_BlendBone</node>
+		<node>jointpiece_226_BlendBone</node>
+		<node>jointpiece_238_BlendBone</node>
+		<node>jointpiece_50_BlendBone</node>
+		<geometry>
+			<vertices>polySurfaceShape1_split_2.vertices</vertices>
+			<stream>polySurfaceShape1_split_2.uv2</stream>
+			<stream>polySurfaceShape1_split_2.colour</stream>
+			<primitive>polySurfaceShape1_split_2.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd5_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tiled_skinned.fx</fx>
+					<materialKind>111</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						albedoHeightTile0
+						<Texture>content/Buildings/00_Tiles/dds/Floor_01_512_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile1
+						<Texture>content/Buildings/00_Tiles/dds/Metal_01_Painted_512_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile2
+						<Texture>content/Buildings/00_Tiles/dds/Plaster_07_Painted_03_512_AM.dds</Texture>
+					</property>
+					<property>
+						blendMask
+						<Texture>content/Buildings/hd_bld_SU_109_Thouse/hd_bld_SU_109_Thouse_atlas_blend.png</Texture>
+					</property>
+					<property>
+						colorTex
+						<Texture>content/UniversalTextures/Universal_GCM.dds</Texture>
+					</property>
+					<property>
+						dirtMap
+						<Texture>content/Buildings/00_Tiles/ClayWall_Painted01_DM.dds</Texture>
+					</property>
+					<property>
+						g_dirtColor
+						<Vector4>0.517647 0.430000 0.380000 0.450000</Vector4>
+					</property>
+					<property>
+						g_fakeShadowsAndDetailParams
+						<Vector4>0.200000 0.360000 1.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_tile0Tint
+						<Vector4>0.811765 0.811765 0.811765 1.000000</Vector4>
+					</property>
+					<property>
+						g_tile1Tint
+						<Vector4>0.803922 0.960784 0.882353 1.000000</Vector4>
+					</property>
+					<property>
+						metallicAOTile0
+						<Texture>content/Buildings/00_Tiles/dds/Floor_01_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile1
+						<Texture>content/Buildings/00_Tiles/dds/Metal_01_Painted_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile2
+						<Texture>content/Buildings/00_Tiles/dds/Plaster_07_Painted_03_512_MAO.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile0
+						<Texture>content/Buildings/00_Tiles/dds/Floor_01_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile1
+						<Texture>content/Buildings/00_Tiles/dds/Metal_01_Painted_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile2
+						<Texture>content/Buildings/00_Tiles/dds/Plaster_07_Painted_03_512_GBMT.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-1.441457 2.775531 2.475329</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>jointpiece_73_BlendBone</node>
+		<node>jointpiece_163_BlendBone</node>
+		<node>jointpiece_57_BlendBone</node>
+		<node>jointpiece_165_BlendBone</node>
+		<node>jointpiece_116_BlendBone</node>
+		<node>jointpiece_167_BlendBone</node>
+		<node>jointpiece_58_BlendBone</node>
+		<node>jointpiece_117_BlendBone</node>
+		<node>jointpiece_169_BlendBone</node>
+		<node>jointpiece_59_BlendBone</node>
+		<node>jointpiece_170_BlendBone</node>
+		<node>jointpiece_171_BlendBone</node>
+		<node>jointpiece_174_BlendBone</node>
+		<node>jointpiece_119_BlendBone</node>
+		<node>jointpiece_60_BlendBone</node>
+		<node>jointpiece_61_BlendBone</node>
+		<node>jointpiece_62_BlendBone</node>
+		<node>jointpiece_63_BlendBone</node>
+		<node>jointpiece_65_BlendBone</node>
+		<node>jointpiece_66_BlendBone</node>
+		<node>jointpiece_67_BlendBone</node>
+		<node>jointpiece_68_BlendBone</node>
+		<node>jointpiece_69_BlendBone</node>
+		<node>jointpiece_70_BlendBone</node>
+		<node>jointpiece_71_BlendBone</node>
+		<node>jointpiece_72_BlendBone</node>
+		<geometry>
+			<vertices>polySurfaceShape1_split_1.vertices</vertices>
+			<stream>polySurfaceShape1_split_1.uv2</stream>
+			<stream>polySurfaceShape1_split_1.colour</stream>
+			<primitive>polySurfaceShape1_split_1.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd3_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tiled_skinned.fx</fx>
+					<materialKind>112</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						albedoHeightTile0
+						<Texture>content/Buildings/00_Tiles/dds/RoofBitumen_02_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile1
+						<Texture>content/Buildings/00_Tiles/dds/Roof_04_Metal_Crashed_Rusted_512_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile2
+						<Texture>content/Buildings/00_Tiles/dds/SandDunes_01_512_AM.dds</Texture>
+					</property>
+					<property>
+						blendMask
+						<Texture>content/Buildings/hd_bld_SU_109_Thouse/hd_bld_SU_109_Thouse_atlas_blend.png</Texture>
+					</property>
+					<property>
+						colorTex
+						<Texture>content/UniversalTextures/Universal_GCM.dds</Texture>
+					</property>
+					<property>
+						dirtMap
+						<Texture>content/Buildings/00_Tiles/Dirt_Desert_02_DM.dds</Texture>
+					</property>
+					<property>
+						g_dirtColor
+						<Vector4>0.517647 0.430000 0.380000 0.100000</Vector4>
+					</property>
+					<property>
+						g_fakeShadowsAndDetailParams
+						<Vector4>0.150000 0.330000 1.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_tile0Tint
+						<Vector4>1.000000 0.992157 0.988235 1.000000</Vector4>
+					</property>
+					<property>
+						g_tile1Tint
+						<Vector4>0.431373 0.478431 0.513726 1.000000</Vector4>
+					</property>
+					<property>
+						metallicAOTile0
+						<Texture>content/Buildings/00_Tiles/dds/RoofBitumen_02_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile1
+						<Texture>content/Buildings/00_Tiles/dds/Roof_04_Metal_Crashed_Rusted_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile2
+						<Texture>content/Buildings/00_Tiles/dds/SandDunes_01_512_MAO.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile0
+						<Texture>content/Buildings/00_Tiles/dds/RoofBitumen_02_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile1
+						<Texture>content/Buildings/00_Tiles/dds/Roof_04_Metal_Crashed_Rusted_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile2
+						<Texture>content/Buildings/00_Tiles/dds/SandDunes_01_512_GBMT.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-1.668026 5.043342 2.414705</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>jointpiece_74_BlendBone</node>
+		<node>jointpiece_0_BlendBone</node>
+		<node>jointpiece_1_BlendBone</node>
+		<node>jointpiece_2_BlendBone</node>
+		<node>jointpiece_3_BlendBone</node>
+		<node>jointpiece_4_BlendBone</node>
+		<node>jointpiece_5_BlendBone</node>
+		<node>jointpiece_6_BlendBone</node>
+		<node>jointpiece_7_BlendBone</node>
+		<node>jointpiece_8_BlendBone</node>
+		<node>jointpiece_9_BlendBone</node>
+		<node>jointpiece_75_BlendBone</node>
+		<node>jointpiece_76_BlendBone</node>
+		<node>jointpiece_77_BlendBone</node>
+		<node>jointpiece_78_BlendBone</node>
+		<node>jointpiece_79_BlendBone</node>
+		<node>jointpiece_80_BlendBone</node>
+		<node>jointpiece_81_BlendBone</node>
+		<node>jointpiece_82_BlendBone</node>
+		<node>jointpiece_83_BlendBone</node>
+		<node>jointpiece_84_BlendBone</node>
+		<node>jointpiece_85_BlendBone</node>
+		<node>jointpiece_175_BlendBone</node>
+		<node>jointpiece_120_BlendBone</node>
+		<node>jointpiece_176_BlendBone</node>
+		<node>jointpiece_121_BlendBone</node>
+		<node>jointpiece_177_BlendBone</node>
+		<node>jointpiece_178_BlendBone</node>
+		<node>jointpiece_179_BlendBone</node>
+		<node>jointpiece_181_BlendBone</node>
+		<node>jointpiece_182_BlendBone</node>
+		<node>jointpiece_183_BlendBone</node>
+		<node>jointpiece_184_BlendBone</node>
+		<node>jointpiece_186_BlendBone</node>
+		<node>jointpiece_187_BlendBone</node>
+		<node>jointpiece_189_BlendBone</node>
+		<node>jointpiece_125_BlendBone</node>
+		<node>jointpiece_190_BlendBone</node>
+		<node>jointpiece_191_BlendBone</node>
+		<node>jointpiece_192_BlendBone</node>
+		<node>jointpiece_193_BlendBone</node>
+		<node>jointpiece_127_BlendBone</node>
+		<node>jointpiece_195_BlendBone</node>
+		<node>jointpiece_128_BlendBone</node>
+		<node>jointpiece_197_BlendBone</node>
+		<node>jointpiece_129_BlendBone</node>
+		<node>jointpiece_198_BlendBone</node>
+		<node>jointpiece_202_BlendBone</node>
+		<node>jointpiece_131_BlendBone</node>
+		<node>jointpiece_228_BlendBone</node>
+		<node>jointpiece_130_BlendBone</node>
+		<node>jointpiece_157_BlendBone</node>
+		<node>jointpiece_133_BlendBone</node>
+		<node>jointpiece_134_BlendBone</node>
+		<node>jointpiece_135_BlendBone</node>
+		<node>jointpiece_64_BlendBone</node>
+		<node>jointpiece_136_BlendBone</node>
+		<node>jointpiece_137_BlendBone</node>
+		<node>jointpiece_50_BlendBone</node>
+		<node>jointpiece_139_BlendBone</node>
+		<node>jointpiece_140_BlendBone</node>
+		<node>jointpiece_51_BlendBone</node>
+		<node>jointpiece_141_BlendBone</node>
+		<node>jointpiece_142_BlendBone</node>
+		<node>jointpiece_52_BlendBone</node>
+		<node>jointpiece_143_BlendBone</node>
+		<node>jointpiece_145_BlendBone</node>
+		<node>jointpiece_146_BlendBone</node>
+		<node>jointpiece_147_BlendBone</node>
+		<node>jointpiece_148_BlendBone</node>
+		<node>jointpiece_150_BlendBone</node>
+		<node>jointpiece_53_BlendBone</node>
+		<node>jointpiece_151_BlendBone</node>
+		<node>jointpiece_152_BlendBone</node>
+		<node>jointpiece_154_BlendBone</node>
+		<node>jointpiece_155_BlendBone</node>
+		<node>jointpiece_156_BlendBone</node>
+		<node>jointpiece_54_BlendBone</node>
+		<node>jointpiece_158_BlendBone</node>
+		<node>jointpiece_159_BlendBone</node>
+		<node>jointpiece_55_BlendBone</node>
+		<node>jointpiece_160_BlendBone</node>
+		<node>jointpiece_161_BlendBone</node>
+		<node>jointpiece_56_BlendBone</node>
+		<node>jointpiece_162_BlendBone</node>
+		<geometry>
+			<vertices>polySurfaceShape1_split_0.vertices</vertices>
+			<stream>polySurfaceShape1_split_0.uv2</stream>
+			<stream>polySurfaceShape1_split_0.colour</stream>
+			<primitive>polySurfaceShape1_split_0.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd3_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tiled_skinned.fx</fx>
+					<materialKind>112</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						albedoHeightTile0
+						<Texture>content/Buildings/00_Tiles/dds/RoofBitumen_02_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile1
+						<Texture>content/Buildings/00_Tiles/dds/Roof_04_Metal_Crashed_Rusted_512_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile2
+						<Texture>content/Buildings/00_Tiles/dds/SandDunes_01_512_AM.dds</Texture>
+					</property>
+					<property>
+						blendMask
+						<Texture>content/Buildings/hd_bld_SU_109_Thouse/hd_bld_SU_109_Thouse_atlas_blend.png</Texture>
+					</property>
+					<property>
+						colorTex
+						<Texture>content/UniversalTextures/Universal_GCM.dds</Texture>
+					</property>
+					<property>
+						dirtMap
+						<Texture>content/Buildings/00_Tiles/Dirt_Desert_02_DM.dds</Texture>
+					</property>
+					<property>
+						g_dirtColor
+						<Vector4>0.517647 0.430000 0.380000 0.100000</Vector4>
+					</property>
+					<property>
+						g_fakeShadowsAndDetailParams
+						<Vector4>0.150000 0.330000 1.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_tile0Tint
+						<Vector4>1.000000 0.992157 0.988235 1.000000</Vector4>
+					</property>
+					<property>
+						g_tile1Tint
+						<Vector4>0.431373 0.478431 0.513726 1.000000</Vector4>
+					</property>
+					<property>
+						metallicAOTile0
+						<Texture>content/Buildings/00_Tiles/dds/RoofBitumen_02_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile1
+						<Texture>content/Buildings/00_Tiles/dds/Roof_04_Metal_Crashed_Rusted_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile2
+						<Texture>content/Buildings/00_Tiles/dds/SandDunes_01_512_MAO.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile0
+						<Texture>content/Buildings/00_Tiles/dds/RoofBitumen_02_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile1
+						<Texture>content/Buildings/00_Tiles/dds/Roof_04_Metal_Crashed_Rusted_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile2
+						<Texture>content/Buildings/00_Tiles/dds/SandDunes_01_512_GBMT.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-1.255423 5.043456 2.414712</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>-8.768774 0.691912 -8.519441</min>
+		<max>6.108885 5.318331 3.644685</max>
+	</boundingBox>
+	<geometrySize>3659592</geometrySize>
+</root>

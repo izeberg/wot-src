@@ -232,6 +232,9 @@ msgstr "三重九五式"
 msgid "Chassis_J45_Mitsu_108_2"
 msgstr "三重108式"
 
+msgid "Chassis_J48_Saryuda"
+msgstr "清道夫"
+
 msgid "Chassis_J50_Type_1_Ho_Ni_II"
 msgstr "二式炮战车"
 
@@ -303,6 +306,9 @@ msgstr "试制5.7cm新坦克炮 (2)"
 
 msgid "FuG5A"
 msgstr "Fu 5 (20 WS.E.)"
+
+msgid "HA_9_V_SAR"
+msgstr "川崎 Ha9 陆军 九八式"
 
 msgid "J01_NC27"
 msgstr "雷诺乙型"
@@ -757,6 +763,23 @@ msgstr ""
 msgid "J45_Mitsu_108_short"
 msgstr "三重108"
 
+msgid "J48_Saryuda"
+msgstr "清道夫"
+
+msgid "J48_Saryuda_descr"
+msgstr ""
+"随着战火逼近，R系开始加强中部及周边岛屿的海岸防御体系。为此开始研发一辆既能进行海岸防御，又能在陆地战斗中应对任意盟军装甲车辆的自行反坦克炮。武器方面，考虑采用已建造完成但未被海军列装的舰炮。为提高射速，设计采用宽敞的焊接炮塔搭载双管火炮系统，并在炮塔上加装三挺机枪(两挺前向、一挺后向)，以及一门高射速20毫米机炮。最终，该计划因坦克过重和生产困难被终止。"
+
+msgid "J48_Saryuda_long_special"
+msgstr ""
+"清道夫是一辆R系IX级自行反坦克炮，配备12.7厘米双管火炮，能造成可观的平均单发损伤，双管齐射时更具威胁性。凭借良好的机动性，它能迅速占据关键点位，而可靠的装甲更能助您坚守到底。"
+
+msgid "J48_Saryuda_short"
+msgstr "清道夫"
+
+msgid "J48_Saryuda_short_special"
+msgstr "双管火炮系统，可靠的正面装甲"
+
 msgid "J50_Type_1_Ho_Ni_II"
 msgstr "二式炮战车"
 
@@ -895,6 +918,9 @@ msgstr "无名"
 
 msgid "Nameless_Radio"
 msgstr "无名"
+
+msgid "Rensouhou_127_mm_Type_89"
+msgstr "12.7cm 八九式连装炮"
 
 msgid "STA_2_3"
 msgstr "STA-2"
@@ -1052,6 +1078,9 @@ msgstr "十式重战一号案"
 msgid "Turret_1_J45_Mitsu_108"
 msgstr "三重75"
 
+msgid "Turret_1_J48_Saryuda"
+msgstr "清道夫"
+
 msgid "Turret_1_J50_Type_1_Ho_Ni_II"
 msgstr "二式炮战车"
 
@@ -1120,6 +1149,9 @@ msgstr "三重105"
 
 msgid "Turret_2_Ke_Ni"
 msgstr "二式轻战"
+
+msgid "Type3_Ko_SAR"
+msgstr "三式甲型"
 
 msgid "Type_100_Kakyuu_V_12_CT"
 msgstr "百式 V-12(增压型) (CT)"
@@ -1475,11 +1507,20 @@ msgstr "12.7cm 通常弹(被帽穿甲)"
 msgid "_127mm_Capped_Common_Type_1"
 msgstr "12.7cm 一式通常弹(被帽半穿甲)"
 
+msgid "_127mm_Common_AP_2_DB"
+msgstr "APHE 八九式B型通常弹"
+
+msgid "_127mm_Common_AP_DB"
+msgstr "AP 八九式B型通常弹"
+
 msgid "_127mm_Common_AP_J_1"
 msgstr "AP 八九式通常弹"
 
 msgid "_127mm_Common_AP_J_2"
 msgstr "APHE 八九式通常弹"
+
+msgid "_127mm_Common_HE_DB"
+msgstr "HE 八九式B型通常弹"
 
 msgid "_127mm_Common_HE_J_1"
 msgstr "HE 八九式通常弹"

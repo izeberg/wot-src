@@ -11,8 +11,8 @@
 	<postProgressionTree>role_MT_support</postProgressionTree>
 	<customRoleSlotOptions>3 5</customRoleSlotOptions>
 	<speedLimits>
-		<forward>55</forward>
-		<backward>21</backward>
+		<forward>50</forward>
+		<backward>18</backward>
 	</speedLimits>
 	<invisibility>
 		<moving>
@@ -101,7 +101,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>28250</weight>
-		<maxHealth>1520</maxHealth>
+		<maxHealth>1440</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>250</maxHealth>
 			<maxRegenHealth>188</maxRegenHealth>
@@ -3580,7 +3580,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_16</primaryArmor>
 			<weight>9850</weight>
-			<maxHealth>380</maxHealth>
+			<maxHealth>360</maxHealth>
 			<rotationSpeed>35</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>185</maxHealth>
@@ -3686,7 +3686,7 @@
 					</invisibilityFactorAtShot>
 					<clip>
 						<count>3</count>
-						<rate>12</rate>
+						<rate>10</rate>
 					</clip>
 					<autoreload>
 						<reloadTime>12</reloadTime>
@@ -4664,7 +4664,7 @@
 			<engines>
 				<MB_838_CaM_500A>
 					<smplEnginePower>950</smplEnginePower>
-					<smplFwMaxSpeed>55</smplFwMaxSpeed>
+					<smplFwMaxSpeed>50</smplFwMaxSpeed>
 				</MB_838_CaM_500A>
 			</engines>
 			<chassis>

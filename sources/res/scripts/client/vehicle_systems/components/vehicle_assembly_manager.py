@@ -67,11 +67,6 @@ class TurretGunRotationAssembler(Assembler):
                 return appearance.gunMatrix
             if not hasGunInclination and slotName == veh_comp.VehicleSlots.GUN.value:
                 return appearance.gunMatrix
-            if appearance.renderMode == TankRenderMode.OVERLAY_COLLISION:
-                if slotName == veh_comp.VehicleSlots.TURRET_COLLISION.value:
-                    return appearance.turretMatrix
-                if slotName == veh_comp.VehicleSlots.GUN_COLLISION.value:
-                    return appearance.gunMatrix
             return
 
 

@@ -2095,6 +2095,9 @@ msgstr "战场直觉音效"
 msgid "otherTitle"
 msgstr "其它"
 
+msgid "physicsQuality"
+msgstr "物理音效质量"
+
 msgid "refreshRate"
 msgstr "帧速率"
 
@@ -2346,6 +2349,45 @@ msgstr "夜间模式"
 
 msgid "sounds/nightMode/description"
 msgstr "降低音量，减少尖锐的声音，并最大限度地降低游戏频率，为深夜游戏提供一个舒适柔软的声音环境。"
+
+msgid "sounds/physicsQuality/attention"
+msgstr "开启该功能可能影响性能。"
+
+msgid "sounds/physicsQuality/body"
+msgstr ""
+"控制物理音效的质量。\n"
+"\n"
+"模拟声音如何绕过障碍物并穿过地图表面。\n"
+"\n"
+"使用地图几何来生成坦克声音从附近物体反弹的早期反射。\n"
+" "
+
+msgid "sounds/physicsQuality/header"
+msgstr "物理音效质量"
+
+msgid "sounds/physicsQuality/options/disabled"
+msgstr "关闭"
+
+msgid "sounds/physicsQuality/options/high"
+msgstr "高"
+
+msgid "sounds/physicsQuality/options/low"
+msgstr "低"
+
+msgid "sounds/physicsQuality/options/medium"
+msgstr "中"
+
+msgid "sounds/physicsQualityRecommended"
+msgstr "推荐配置"
+
+msgid "sounds/physicsQualityRecommended/description"
+msgstr ""
+"依据电脑硬件配置调整物理音效质量。\n"
+"\n"
+"调整需要一点时间。"
+
+msgid "sounds/physicsQualityRecommended/name"
+msgstr "推荐配置"
 
 msgid "sounds/sixthSense/body"
 msgstr "自定义声音。请把sixthSense.mp3文件移动到res/audioww文件夹。"

@@ -404,6 +404,7 @@ class BattleRoyaleBattleResultsView(ViewComponent[BattleResultViewModel], IPrbLi
         model.setVehicleName(vehicleInfo['vehicleName'])
         model.setVehicleType(vehicleInfo['vehicleType'])
         model.setHasPremium(self.__hasPremium())
+        model.setIsObserver(vehicleInfo['isObserver'])
         return
 
     def __setMapName(self):

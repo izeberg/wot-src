@@ -20,6 +20,7 @@ class IExchangeComponent(object):
 
 
 class IExchangeComposer(object):
+    __slots__ = ()
 
     def clear(self):
         raise NotImplementedError

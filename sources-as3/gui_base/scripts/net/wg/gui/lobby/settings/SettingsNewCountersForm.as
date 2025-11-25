@@ -102,15 +102,7 @@ package net.wg.gui.lobby.settings
       
       override protected function onBeforeDispose() : void
       {
-         this._counterManager.disposeCountersForContainer(this._counterStaticContainerId);
-         var _loc1_:Vector.<DisplayObject> = this._counterManager.disposeCountersForContainer(this._counterDynamicContainerId);
-         if(_loc1_)
-         {
-            while(_loc1_.length)
-            {
-               _loc1_.pop().removeEventListener(MouseEvent.CLICK,this.onControlNewCounterClickHandler);
-            }
-         }
+         this.clearNewCounters();
          super.onBeforeDispose();
       }
       
@@ -344,6 +336,19 @@ package net.wg.gui.lobby.settings
       protected function getTargetControlId(param1:DisplayObject) : String
       {
          return SettingsConfigHelper.instance.getControlIdByControl(param1);
+      }
+      
+      protected function clearNewCounters() : void
+      {
+         this._counterManager.disposeCountersForContainer(this._counterStaticContainerId);
+         var _loc1_:Vector.<DisplayObject> = this._counterManager.disposeCountersForContainer(this._counterDynamicContainerId);
+         if(_loc1_)
+         {
+            while(_loc1_.length)
+            {
+               _loc1_.pop().removeEventListener(MouseEvent.CLICK,this.onControlNewCounterClickHandler);
+            }
+         }
       }
       
       private function onControlNewCounterClick(param1:DisplayObject) : void

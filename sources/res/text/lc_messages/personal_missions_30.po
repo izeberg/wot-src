@@ -897,8 +897,8 @@ msgstr "适合提供空中火力支援和侦察敌方阵地情报的坦克。"
 
 msgid "tooltip/missionsCategory/footer"
 msgstr ""
-"{{@ split}}{{@ colorLegacy 'b2afab'}}\"{{operationName}}\"{{/}}作战行动任务只能使用{{@"
-" colorLegacy 'b2afab'}}{{minLevel}}-{{maxLevel}}{{/}}级坦克来完成。"
+"{{@ colorLegacy 'b2afab'}}\"{{operationName}}\"{{/}}作战行动任务只能使用{{@ "
+"colorLegacy 'b2afab'}}{{minLevel}}-{{maxLevel}}{{/}}级坦克来完成。"
 
 msgid "tooltip/missionsCategory/innerBlock/description/assault"
 msgstr "\"先锋\"任务可使用以下坦克依次完成:"

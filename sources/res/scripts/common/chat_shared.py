@@ -1613,7 +1613,11 @@ SYS_MESSAGE_TYPE = Enumeration('systemMessageType', [
  'battlePassPostProgressionPaused',
  'personalMission3Quest',
  'prestigeMilestoneReward',
- 'prestigeMilestoneRewardError'])
+ 'prestigeMilestoneRewardError',
+ 'petBuy',
+ 'petAdded',
+ 'petSynergyUp',
+ 'petSynergyMax'])
 SYS_MESSAGE_IMPORTANCE = Enumeration('systemMessageImportance', [
  'normal',
  'high'])

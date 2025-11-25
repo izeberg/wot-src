@@ -203,10 +203,13 @@ msgid "Chassis_S34_Lago_M38"
 msgstr "Lago M38"
 
 msgid "Chassis_S35_Stridsyxa"
-msgstr "\"战斧\""
+msgstr "\"利斧\""
 
 msgid "Chassis_S36_Strv_107_12"
 msgstr "Strv 107-12"
+
+msgid "Chassis_S39_Strv_m31"
+msgstr "Strv m/31"
 
 msgid "DB_605"
 msgstr "DB 605"
@@ -231,6 +234,9 @@ msgstr "利兰 L60"
 
 msgid "MTU_837_Ea_500"
 msgstr "MTU837 Ea-500"
+
+msgid "Maybach_DSO"
+msgstr "迈巴赫 DSO"
 
 msgid "Meteor_Mark_IVB"
 msgstr "流星 Mk.IV B"
@@ -553,7 +559,7 @@ msgstr "?empty?"
 
 msgid "S23_Strv_81_long_special"
 msgstr ""
-"凭借可抵挡数次射击的坚固炮塔、出色的火炮俯仰角，这辆V系坦克能利用不规则地形痛击对手。除此之外，该坦克还拥有出色的观察范围和平均穿透力。另一方面，其侧面装甲较为薄弱，移动速度也有待提高。"
+"凭借能够可靠抵挡炮火的坚固炮塔、出色的火炮俯角，这辆V系坦克能利用不规则地形痛击对手。除此之外，该坦克还拥有出色的观察范围和平均穿透力。然而，其侧面装甲较为薄弱，移动速度也有待提高。"
 
 msgid "S23_Strv_81_sabaton"
 msgstr "Strv 81 S型"
@@ -563,7 +569,7 @@ msgstr "?empty?"
 
 msgid "S23_Strv_81_sabaton_long_special"
 msgstr ""
-"凭借可抵挡数次射击的坚固炮塔、出色的火炮俯仰角，这辆V系坦克能利用不规则地形痛击对手。除此之外，该坦克还拥有出色的观察范围和平均穿透力。另一方面，其侧面装甲较为薄弱，移动速度也有待提高。"
+"凭借能够可靠抵挡炮火的坚固炮塔、出色的火炮俯角，这辆V系坦克能利用不规则地形痛击对手。除此之外，该坦克还拥有出色的观察范围和平均穿透力。然而，其侧面装甲较为薄弱，移动速度也有待提高。"
 
 msgid "S23_Strv_81_sabaton_short"
 msgstr "Strv 81 S型"
@@ -728,7 +734,7 @@ msgid "S34_Lago_M38_short_special"
 msgstr "可靠的正面装甲和较高的射速"
 
 msgid "S35_Stridsyxa"
-msgstr "\"战斧\""
+msgstr "\"利斧\""
 
 msgid "S35_Stridsyxa_descr"
 msgstr ""
@@ -737,10 +743,10 @@ msgstr ""
 
 msgid "S35_Stridsyxa_long_special"
 msgstr ""
-"\"战斧\"是一辆V系VIII级中型坦克，配备一门105毫米火炮，拥有舒适的俯仰角、可靠的火炮手感和高额的平均每分钟损伤。得益于良好的机动性和可靠的正面装甲，它还能快速转场，这也是其本已多样的战术之一。"
+"\"利斧\"是一辆V系VIII级中型坦克，配备一门105毫米火炮，拥有舒适的俯仰角、可靠的火炮手感和高额的平均每分钟损伤。得益于良好的机动性和可靠的正面装甲，它还能快速转场，这也是其本已多样的战术之一。"
 
 msgid "S35_Stridsyxa_short"
-msgstr "\"战斧\""
+msgstr "\"利斧\""
 
 msgid "S35_Stridsyxa_short_special"
 msgstr "可靠的正面装甲，良好的火炮手感"
@@ -761,6 +767,25 @@ msgstr ""
 
 msgid "S36_Strv_107_12_short"
 msgstr "Strv 107-12"
+
+msgid "S39_Strv_m31"
+msgstr "Strv m/31"
+
+msgid "S39_Strv_m31_descr"
+msgstr ""
+"一辆由兰德斯维克公司在20世纪30年代研发的轻型坦克，旨在取代老旧的Strv "
+"m/21。其机动性与武器在当时堪称不俗，正面装甲厚度达到24毫米。然而Strv m/31自身也很快落伍，因此未投入量产。仅制造了3辆。"
+
+msgid "S39_Strv_m31_long_special"
+msgstr ""
+"Strv "
+"m/31是一辆V系III级轻型坦克。其高射速火炮具有可观的平均穿透力，以及相对于其等级来说较为出色的精度，非常适合用来应对拥有轻型和中型装甲的目标。它还拥有不俗的最大速度和良好的单位功率。得益于精准的火炮与优秀的机动性，它非常适合用来远距离攻击对手。"
+
+msgid "S39_Strv_m31_short"
+msgstr "Strv m/31"
+
+msgid "S39_Strv_m31_short_special"
+msgstr "精准的火炮，不俗的机动性"
 
 msgid "SFA_8_cyl_boxer"
 msgstr "SFA 8缸(水平对置)"
@@ -919,10 +944,13 @@ msgid "Turret_1_S34_Lago_M38"
 msgstr "Lago M38"
 
 msgid "Turret_1_S35_Stridsyxa"
-msgstr "\"战斧\""
+msgstr "\"利斧\""
 
 msgid "Turret_1_S36_Strv_107_12"
 msgstr "Strv 107-12"
+
+msgid "Turret_1_S39_Strv_m31"
+msgstr "Strv m/31"
 
 msgid "Turret_2_S02_Strv_M42"
 msgstr "Strv m/42"
@@ -1350,6 +1378,9 @@ msgstr "12cm L/40坦克炮"
 msgid "_1_W_Sv"
 msgstr "1 W Sv"
 
+msgid "_1_W_Sv_A"
+msgstr "1 W Sv A"
+
 msgid "_20mm_akan_m_40"
 msgstr "20mm m/40自动炮"
 
@@ -1431,6 +1462,9 @@ msgstr "2x 斯堪尼亚-瓦比斯 L603/1 (42)"
 msgid "_2_st_Scania_Vabis_L_603_1_74"
 msgstr "2x 斯堪尼亚-瓦比斯 L603/1 (74)"
 
+msgid "_37_mm_kan_fm_32"
+msgstr "37mm fm/32炮"
+
 msgid "_37mm_kan_m_38_49_strv"
 msgstr "37mm m/38-49坦克炮"
 
@@ -1451,6 +1485,9 @@ msgstr "37mm m/38反坦克炮"
 
 msgid "_37mm_sgr_m_34"
 msgstr "sgr m/34"
+
+msgid "_37mm_sgr_m_34_32"
+msgstr "slpprj m/34 (32)"
 
 msgid "_37mm_sgr_m_34_38"
 msgstr "sgr m/34 (38)"
@@ -1473,6 +1510,9 @@ msgstr "slpprj fm/47"
 msgid "_37mm_slpprj_m_38"
 msgstr "slpprj m/38"
 
+msgid "_37mm_slpprj_m_38_32"
+msgstr "slpprj m/38 (32)"
+
 msgid "_37mm_slpprj_m_38_38"
 msgstr "slpprj m/38 (38)"
 
@@ -1484,6 +1524,9 @@ msgstr "slpprj m/49"
 
 msgid "_37mm_uprj_fm_47"
 msgstr "uprj fm/47"
+
+msgid "_37mm_uprj_fm_47_32"
+msgstr "slpprj m/47 (32)"
 
 msgid "_37mm_uprj_fm_47_38"
 msgstr "uprj fm/47 (38)"

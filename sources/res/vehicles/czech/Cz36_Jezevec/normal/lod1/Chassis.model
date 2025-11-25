@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/czech/Cz36_Jezevec/normal/lod2/Chassis</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.665219 -0.000010 -3.183557</min>
+		<max>1.665220 1.187917 3.212602</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/czech/Cz36_Jezevec/normal/lod1/Chassis</nodefullVisual>
+</root>

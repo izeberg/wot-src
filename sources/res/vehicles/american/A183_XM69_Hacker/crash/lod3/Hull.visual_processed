@@ -54,40 +54,6 @@
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>tank_hull_01</identifier>
-					<collisionFlags>0</collisionFlags>
-					<materialKind>0</materialKind>
-					<fx>shaders/std_effects/PBS_tank_crash.fx</fx>
-					<property>
-						metallicGlossMap
-						<Texture>vehicles/american/A183_XM69_Hacker/XM69_Hacker_hull_01_GMM.dds</Texture>
-					</property>
-					<property>
-						normalMap
-						<Texture>vehicles/american/A183_XM69_Hacker/XM69_Hacker_hull_01_ANM.dds</Texture>
-					</property>
-					<property>
-						diffuseMap
-						<Texture>vehicles/american/A183_XM69_Hacker/XM69_Hacker_hull_01_AM.dds</Texture>
-					</property>
-					<property>
-						excludeMaskAndAOMap
-						<Texture>vehicles/american/A183_XM69_Hacker/XM69_Hacker_hull_01_AO.dds</Texture>
-					</property>
-					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
-					</property>
-					<property>
-						crashTileMap
-						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
-					</property>
-				</material>
-				<groupOrigin>-0.001744 0.106165 -0.296767</groupOrigin>
-			</primitiveGroup>
-			<primitiveGroup>
-				1
-				<material>
 					<identifier>tank_chassis_01</identifier>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
@@ -117,7 +83,41 @@
 						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.000000 -0.385010 -0.324539</groupOrigin>
+				<groupOrigin>0.000000 -0.385012 -0.324539</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>tank_hull_01</identifier>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<fx>shaders/std_effects/PBS_tank_crash.fx</fx>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/american/A183_XM69_Hacker/XM69_Hacker_hull_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/american/A183_XM69_Hacker/XM69_Hacker_hull_01_ANM.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/american/A183_XM69_Hacker/XM69_Hacker_hull_01_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/american/A183_XM69_Hacker/XM69_Hacker_hull_01_AO.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
+						crashTileMap
+						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.001744 0.106163 -0.296767</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -125,5 +125,5 @@
 		<min>-1.863430 -0.909222 -3.870870</min>
 		<max>1.859941 0.808781 3.277335</max>
 	</boundingBox>
-	<geometrySize>193752</geometrySize>
+	<geometrySize>196158</geometrySize>
 </root>

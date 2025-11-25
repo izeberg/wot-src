@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G175_Rheinmetall_Begleitwagen/normal/lod1/Gun_02</nodefullVisual>
+	<parent>vehicles/german/G175_Rheinmetall_Begleitwagen/normal/lod2/Gun_02</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.306045 -0.150830 -0.043334</min>
+		<max>0.307309 0.150823 0.966403</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

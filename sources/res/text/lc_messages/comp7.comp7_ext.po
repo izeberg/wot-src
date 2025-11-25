@@ -433,33 +433,6 @@ msgstr ""
 msgid "generalRankTooltip/subheading"
 msgstr "包括梯队：%(divisions)s"
 
-msgid "grandTournamentWidget/countdown"
-msgstr "%(timer)距赛事开始还有%(countdown)s"
-
-msgid "grandTournamentWidget/countdownShort"
-msgstr "%(timer)距开始还有%(countdown)s"
-
-msgid "grandTournamentWidget/counter/days"
-msgstr "%(days)s天%(hours)s时"
-
-msgid "grandTournamentWidget/counter/hours"
-msgstr "%(hours)s时%(minutes)s分"
-
-msgid "grandTournamentWidget/counter/lastMinute"
-msgstr "少于1分钟"
-
-msgid "grandTournamentWidget/counter/minutes"
-msgstr "%(minutes)s分"
-
-msgid "grandTournamentWidget/dayIsOver"
-msgstr "%(timer)距更多比赛开放还有%(countdown)s"
-
-msgid "grandTournamentWidget/finished"
-msgstr "冠军诞生！"
-
-msgid "grandTournamentWidget/live"
-msgstr "即刻观看直播！"
-
 msgid "infoPageButtonLabel"
 msgstr "活动详情"
 
@@ -1531,14 +1504,18 @@ msgstr "赛季更新"
 msgid "tournament/battleResult/personal/tooltip/descr"
 msgstr "在赛事中不会获取或失去评级点数。"
 
-msgid "tournamentsWidget/heading"
-msgstr "天梯战赛事"
+msgid "tournamentsEntryPointTooltip/description"
+msgstr ""
+"坦克世界国际冠军赛(WCI)将在中国苏州举行，一场史诗般的对决即将展开。届时，来自全球各地的顶尖战队将在此一决高下，争夺国际冠军的荣誉称号。见证传奇在战场上诞生的荣耀时刻！"
 
-msgid "tournamentsWidget/text/active"
-msgstr "精彩不容错过！"
+msgid "tournamentsEntryPointTooltip/heading"
+msgstr "2025WCI"
 
-msgid "tournamentsWidget/text/registration"
-msgstr "报名现已开放！"
+msgid "tournamentsEntryPointTooltip/live"
+msgstr "直播将开放%(timer)s"
+
+msgid "tournamentsEntryPointTooltip/showmatch"
+msgstr "距后续比赛开启还有%(timer)s"
 
 msgid "training/battleResult/personal/tooltip/descr"
 msgstr "在天梯战训练中无法获取评级点数。"
@@ -1557,6 +1534,144 @@ msgstr "加入语音聊天"
 
 msgid "waitingSpinner/message"
 msgstr "加载内容中..."
+
+msgid "wci/LBFinals"
+msgstr "败者组决赛"
+
+msgid "wci/LBRound1"
+msgstr "败者组第1轮"
+
+msgid "wci/LBRound2"
+msgstr "败者组第2轮"
+
+msgid "wci/LBSemifinals"
+msgstr "败者组半决赛"
+
+msgid "wci/UBFinals"
+msgstr "胜者组决赛"
+
+msgid "wci/UBSemifinals"
+msgstr "胜者组半决赛"
+
+msgid "wci/bestOf"
+msgstr "%(number)s局决胜制"
+
+msgid "wci/cny"
+msgstr "%(amount)sCNY"
+
+msgid "wci/cnySign"
+msgstr "%(amount)sCNY"
+
+msgid "wci/comeBack"
+msgstr "请稍后再试"
+
+msgid "wci/comingSoon"
+msgstr "近期赛程 %(addition)s"
+
+msgid "wci/comingSoonAddition"
+msgstr "具体时间以实际比赛进程为准"
+
+msgid "wci/completed"
+msgstr "已结束"
+
+msgid "wci/douyin"
+msgstr "在抖音上观看"
+
+msgid "wci/drops/huya"
+msgstr ""
+"在虎牙上观看，同时获取专属\n"
+"虎牙掉宝奖励！"
+
+msgid "wci/drops/twitch"
+msgstr ""
+"在Twitch上观看，同时获取专属\n"
+"Twitch掉宝奖励！"
+
+msgid "wci/dropsShort/huya"
+msgstr "同时获取专属虎牙掉宝奖励！"
+
+msgid "wci/dropsShort/twitch"
+msgstr "同时获取专属Twitch掉宝奖励！"
+
+msgid "wci/error"
+msgstr "加载数据时出错"
+
+msgid "wci/finalResult"
+msgstr "胜者"
+
+msgid "wci/fundDistribution"
+msgstr "奖金池分配"
+
+msgid "wci/grandFinals"
+msgstr "总决赛"
+
+msgid "wci/huya"
+msgstr "在虎牙上观看"
+
+msgid "wci/noMatches"
+msgstr "暂无赛程安排"
+
+msgid "wci/placement"
+msgstr "%(firstPlace)s - %(secondPlace)s"
+
+msgid "wci/prize"
+msgstr "奖金池%(addition)s"
+
+msgid "wci/prizeAddition"
+msgstr "及赢得永恒荣耀的机会"
+
+msgid "wci/refresh"
+msgstr "刷新"
+
+msgid "wci/refreshing"
+msgstr "正在刷新..."
+
+msgid "wci/roundOf"
+msgstr "第%(number)s轮"
+
+msgid "wci/roundRobin"
+msgstr "小组赛"
+
+msgid "wci/separator"
+msgstr "或"
+
+msgid "wci/tab/overview"
+msgstr "概览"
+
+msgid "wci/tab/schedule"
+msgstr "赛程"
+
+msgid "wci/teamPlaceholder"
+msgstr "TBD"
+
+msgid "wci/toShop"
+msgstr "前往购买"
+
+msgid "wci/tooltip/infoPageButton/header"
+msgstr "关于赛事"
+
+msgid "wci/twitch"
+msgstr "在Twitch上观看"
+
+msgid "wci/viewFull"
+msgstr "查看全部"
+
+msgid "wci/visitShop/description"
+msgstr "入手专属主题个性化元素与独特坦克，展现您的电竞精神！"
+
+msgid "wci/visitShop/heading"
+msgstr "WCI礼包"
+
+msgid "wci/vsBestOf"
+msgstr ""
+"VS\n"
+"%(number)s局决胜制"
+
+msgid "wci/winner"
+msgstr "胜者"
+
+msgid "wci/youtube"
+msgstr "在Youtube上观看"
 
 msgid "weeklyQuestWidgetTooltip/completed"
 msgstr "已完成天梯战任务"

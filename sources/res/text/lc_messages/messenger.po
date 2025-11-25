@@ -143,7 +143,7 @@ msgid "chat_error/WRONG_ARGS"
 msgstr "参数无效。"
 
 msgid "client/BATTLE_ROYALE_SQUAD/disableVOIP"
-msgstr "语音聊天已关闭。如果要跟小队成员沟通，请按%(keyName)s开启语音聊天。"
+msgstr "语音聊天已关闭。如果要跟小队成员沟通，请按下%(keyName)s开启语音聊天。"
 
 msgid "client/COMP7/disableVOIP"
 msgstr "语音聊天已关闭。如果要跟小队成员沟通，请启用语音聊天(%(keyName)s)。"
@@ -1553,15 +1553,6 @@ msgstr "坦克世界Plus可控经验加成可用"
 msgid "serviceChannelMessages/additionalXP/unavailable/title"
 msgstr "坦克世界Plus可控经验加成不可用"
 
-msgid "serviceChannelMessages/adventCalendar/reward/button"
-msgstr "领取奖励"
-
-msgid "serviceChannelMessages/adventCalendar/reward/description"
-msgstr "每天开启每日精选窗口，获取礼物。"
-
-msgid "serviceChannelMessages/adventCalendar/reward/header"
-msgstr "每日精选礼物已开放！"
-
 msgid "serviceChannelMessages/autoBoosterErrorNoWallet"
 msgstr "无法补给给养给%s。您的所有金币将在资产同步完成后可用。"
 
@@ -2085,6 +2076,9 @@ msgstr "%(name)s (x%(count)s)"
 
 msgid "serviceChannelMessages/battleResults/quests/personal_missions_points"
 msgstr "个人任务点数: %(count)s"
+
+msgid "serviceChannelMessages/battleResults/quests/pets"
+msgstr "已获得宠物"
 
 msgid "serviceChannelMessages/battleResults/quests/premium"
 msgstr "添加高级账号天数"

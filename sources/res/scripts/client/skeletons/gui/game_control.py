@@ -2863,9 +2863,6 @@ class IComp7Controller(IGameController, ISeasonProvider):
     onNewMaxRank = None
     onEntitlementsUpdated = None
     onEntitlementsUpdateFailed = None
-    onTournamentBannerStateChanged = None
-    onGrandTournamentBannerAvailabilityChanged = None
-    onGrandTournamentBannerUpdate = None
 
     @property
     def rating(self):
@@ -2909,14 +2906,6 @@ class IComp7Controller(IGameController, ISeasonProvider):
 
     @property
     def qualificationState(self):
-        raise NotImplementedError
-
-    @property
-    def isTournamentBannerEnabled(self):
-        raise NotImplementedError
-
-    @property
-    def isGrandTournamentBannerEnabled(self):
         raise NotImplementedError
 
     @property
@@ -3032,15 +3021,6 @@ class IComp7Controller(IGameController, ISeasonProvider):
         raise NotImplementedError
 
     def isEliteForSeason(self, seasonNumber=None):
-        raise NotImplementedError
-
-    def getTournamentBannerAvailability(self):
-        raise NotImplementedError
-
-    def getTournamentBannerData(self):
-        raise NotImplementedError
-
-    def getGrandTournamentBannerData(self):
         raise NotImplementedError
 
     def updateEntitlementsCache(self, force=False, retryTimes=None):
@@ -3892,3 +3872,23 @@ class ICrewController(IGameController):
 
     def getWidgetData(self):
         raise NotImplementedError
+
+
+class IIngameTournamentController(IGameController):
+    onTournamentBannerUpdated = None
+    onTournamentWGCGDataUpdated = None
+
+    def isTournamentBannerAvailable(self):
+        raise NotImplementedError()
+
+    def getActiveBannerData(self):
+        raise NotImplementedError()
+
+    def getTournamentDates(self):
+        raise NotImplementedError()
+
+    def requestTournamentWGCGData(self):
+        raise NotImplementedError()
+
+    def openShop(self):
+        raise NotImplementedError()
