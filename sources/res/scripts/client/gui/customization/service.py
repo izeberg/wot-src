@@ -60,6 +60,9 @@ class _ServiceItemShopMixin(object):
         intCD = makeIntCompactDescrByID('customizationItem', C11N_ITEM_TYPE_MAP.get(itemTypeID), itemID)
         return self.itemsCache.items.getItemByCD(intCD)
 
+    def getTypedItemsByCDs(self, itemTypeID, itemCDs):
+        return self.itemsCache.items.getTypedItemsByCDs(itemTypeID, itemCDs)
+
     def getItemByCD(self, itemCD):
         return self.itemsCache.items.getItemByCD(itemCD)
 

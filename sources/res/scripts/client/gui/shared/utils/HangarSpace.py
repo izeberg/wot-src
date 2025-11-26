@@ -67,11 +67,17 @@ class HangarVideoCameraController(object):
     appLoader = dependency.descriptor(IAppLoader)
 
     def __init__(self):
+        self.__eventManager = em = Event.EventManager()
         self.__videoCamera = None
         self.__enabled = False
         self.__lastCameraName = None
         self.__videoCamera = None
+        self.onEnabledChange = Event.SafeEvent(em)
         return
+
+    @property
+    def isEnabled(self):
+        return self.__enabled
 
     def init(self):
         if not IS_DEVELOPMENT:
@@ -91,33 +97,36 @@ class HangarVideoCameraController(object):
             return
 
     def destroy(self):
-        if self.__videoCamera is None:
-            return
-        else:
+        self.__eventManager.clear()
+        if self.__videoCamera is not None:
             self.__videoCamera.destroy()
-            InputHandler.g_instance.onKeyDown -= self.handleKeyEvent
-            InputHandler.g_instance.onKeyUp -= self.handleKeyEvent
-            g_mouseEventHandlers.discard(self.handleMouseEvent)
-            return
+        InputHandler.g_instance.onKeyDown -= self.handleKeyEvent
+        InputHandler.g_instance.onKeyUp -= self.handleKeyEvent
+        g_mouseEventHandlers.discard(self.handleMouseEvent)
+        return
 
     def handleKeyEvent(self, event):
         if self.__videoCamera is None:
             return
         else:
             if BigWorld.isKeyDown(Keys.KEY_CAPSLOCK) and event.isKeyDown() and event.key == Keys.KEY_F3:
-                self.__enabled = not self.__enabled
-                if self.__enabled:
+                self.__setEnabled(not self.isEnabled)
+                if self.isEnabled:
                     self.__enableVideoCamera()
                 else:
                     self.__disableVideoCamera()
-            if self.__enabled:
+            if self.isEnabled:
                 return self.__videoCamera.handleKeyEvent(event.key, event.isKeyDown())
             return False
+
+    def __setEnabled(self, enabled):
+        self.__enabled = enabled
+        self.onEnabledChange(self.__enabled)
 
     def __enableVideoCamera(self):
         playerVehicle = self.hangarSpace.space.getVehicleEntity()
         if playerVehicle is not None and playerVehicle.state != CameraMovementStates.ON_OBJECT:
-            self.__enabled = False
+            self.__setEnabled(False)
             return
         else:
             cameraManager = CGF.getManager(self.hangarSpace.spaceID, HangarCameraManager)
@@ -144,7 +153,7 @@ class HangarVideoCameraController(object):
         if self.__videoCamera is None:
             return
         else:
-            if self.__enabled:
+            if self.isEnabled:
                 return self.__videoCamera.handleMouseEvent(event.dx, event.dy, event.dz)
             return False
 
@@ -194,6 +203,10 @@ class HangarSpace(IHangarSpace):
         self._performanceMetricsLogger = HangarMetricsLogger()
         self._statisticsLogger = BattleMetricsLogger()
         return
+
+    @property
+    def videoCameraController(self):
+        return self.__videoCameraController
 
     @property
     def space(self):

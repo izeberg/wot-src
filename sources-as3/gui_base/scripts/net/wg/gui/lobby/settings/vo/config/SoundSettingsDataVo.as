@@ -73,6 +73,8 @@ package net.wg.gui.lobby.settings.vo.config
       
       public var artyBulbVoices:SettingsControlProp = null;
       
+      public var physicsQuality:SettingsControlProp = null;
+      
       public function SoundSettingsDataVo()
       {
          super({
@@ -99,9 +101,10 @@ package net.wg.gui.lobby.settings.vo.config
             "subtitles":createControl(ControlsFactory.TYPE_CHECKBOX).build(),
             "bassBoost":createControl(ControlsFactory.TYPE_CHECKBOX).build(),
             "nightMode":createControl(ControlsFactory.TYPE_CHECKBOX).build(),
-            "bulbVoices":createControl(ControlsFactory.TYPE_DROPDOWN).isDataAsSelectedIndex(true).build(),
-            "artyBulbVoices":createControl(ControlsFactory.TYPE_DROPDOWN).isDataAsSelectedIndex(true).build(),
-            "alternativeVoices":createControl(ControlsFactory.TYPE_DROPDOWN).isDataAsSelectedIndex(true).build(),
+            "bulbVoices":createControl(ControlsFactory.TYPE_DROPDOWN).build(),
+            "artyBulbVoices":createControl(ControlsFactory.TYPE_DROPDOWN).build(),
+            "alternativeVoices":createControl(ControlsFactory.TYPE_DROPDOWN).build(),
+            "physicsQuality":createControl(ControlsFactory.TYPE_DROPDOWN).hasLabel(true).build(),
             "specialMusicVolume":createControl(ControlsFactory.TYPE_SLIDER).hasValue(true).build(),
             "specialVehiclesVolume":createControl(ControlsFactory.TYPE_SLIDER).hasValue(true).build(),
             "specialEffectsVolume":createControl(ControlsFactory.TYPE_SLIDER).hasValue(true).build(),
@@ -123,6 +126,7 @@ package net.wg.gui.lobby.settings.vo.config
          this.guiVolume = null;
          this.ambientVolume = null;
          this.alternativeVoices = null;
+         this.physicsQuality = null;
          this.soundDevice = null;
          this.soundSpeakers = null;
          this.enableVoIP = null;

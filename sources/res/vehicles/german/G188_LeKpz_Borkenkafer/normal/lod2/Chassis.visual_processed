@@ -921,18 +921,18 @@
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
 		<node>Track_R4_BlendBone</node>
-		<node>Track_VD_R1_BlendBone</node>
 		<node>Track_R3_BlendBone</node>
 		<node>Track_R2_BlendBone</node>
 		<node>Track_R1_BlendBone</node>
 		<node>Track_R0_BlendBone</node>
 		<node>Track_VD_R0_BlendBone</node>
 		<node>V_BlendBone</node>
+		<node>Track_VD_R1_BlendBone</node>
+		<node>Track_VT_R0_BlendBone</node>
+		<node>Track_VT_R1_BlendBone</node>
 		<node>Track_VT_R2_BlendBone</node>
 		<node>Track_VT_R3_BlendBone</node>
 		<node>Track_VT_R4_BlendBone</node>
-		<node>Track_VT_R0_BlendBone</node>
-		<node>Track_VT_R1_BlendBone</node>
 		<geometry>
 			<vertices>track_R_Shape.vertices</vertices>
 			<stream>track_R_Shape.uv2</stream>
@@ -1019,12 +1019,12 @@
 		<node>Track_L0_BlendBone</node>
 		<node>Track_VD_L0_BlendBone</node>
 		<node>V_BlendBone</node>
+		<node>Track_VT_L0_BlendBone</node>
+		<node>Track_VT_L1_BlendBone</node>
 		<node>Track_VT_L2_BlendBone</node>
 		<node>Track_VT_L3_BlendBone</node>
 		<node>Track_VT_L4_BlendBone</node>
-		<node>Track_VT_L0_BlendBone</node>
 		<node>Track_VD_L1_BlendBone</node>
-		<node>Track_VT_L1_BlendBone</node>
 		<geometry>
 			<vertices>track_L_Shape.vertices</vertices>
 			<stream>track_L_Shape.uv2</stream>
@@ -1122,8 +1122,8 @@
 		<node>WD_L4_BlendBone</node>
 		<node>WD_L5_BlendBone</node>
 		<geometry>
-			<vertices>chassis_L_Shape.vertices</vertices>
-			<primitive>chassis_L_Shape.indices</primitive>
+			<vertices>chassis_LShape.vertices</vertices>
+			<primitive>chassis_LShape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -1205,8 +1205,8 @@
 		<node>WD_R4_BlendBone</node>
 		<node>WD_R5_BlendBone</node>
 		<geometry>
-			<vertices>chassis_R_Shape.vertices</vertices>
-			<primitive>chassis_R_Shape.indices</primitive>
+			<vertices>chassis_RShape.vertices</vertices>
+			<primitive>chassis_RShape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>

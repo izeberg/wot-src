@@ -136,6 +136,8 @@ package net.wg.gui.lobby.settings
       
       private var _disabledTabsOverlay:DisabledTabsOverlay = null;
       
+      private var _isPhysicsSoundVisible:Boolean = true;
+      
       private var _settingsConfigHelper:SettingsConfigHelper;
       
       private var _countersData:Vector.<SettingsNewCountersVo> = null;
@@ -200,6 +202,8 @@ package net.wg.gui.lobby.settings
          addEventListener(SettingViewEvent.ON_GAMMA_SETTING_OPEN,this.onOnGammaSettingOpenHandler);
          addEventListener(SettingViewEvent.ON_COLOR_SETTING_OPEN,this.onOnColorSettingOpenHandler);
          addEventListener(SettingViewEvent.ON_RESTART_NEWBIE_BATTLE_HINTS,this.onOnRestartNewbieBattleHintsHandler);
+         addEventListener(SettingViewEvent.ON_AUTO_DETECT_PHYSICS_SOUND_QUALITY,this.onOnAutoDetectPhysicsSoundQualityHandler);
+         addEventListener(SettingViewEvent.ON_PHYSICS_SOUND_CHANGE,this.onOnPhysicsSoundChangeHandler);
          updateStage(App.appWidth,App.appHeight);
          window.addEventListener(WindowEvent.SCALE_Y_CHANGED,this.onWindowScaleYChangedHandler);
       }
@@ -269,6 +273,8 @@ package net.wg.gui.lobby.settings
          removeEventListener(SettingViewEvent.ON_GAMMA_SETTING_OPEN,this.onOnGammaSettingOpenHandler);
          removeEventListener(SettingViewEvent.ON_COLOR_SETTING_OPEN,this.onOnColorSettingOpenHandler);
          removeEventListener(SettingViewEvent.ON_RESTART_NEWBIE_BATTLE_HINTS,this.onOnRestartNewbieBattleHintsHandler);
+         removeEventListener(SettingViewEvent.ON_AUTO_DETECT_PHYSICS_SOUND_QUALITY,this.onOnAutoDetectPhysicsSoundQualityHandler);
+         removeEventListener(SettingViewEvent.ON_PHYSICS_SOUND_CHANGE,this.onOnPhysicsSoundChangeHandler);
          this._settingsConfigHelper.changesData.clear();
          this._settingsConfigHelper = null;
          this._invalidTabs = App.utils.data.cleanupDynamicObject(this._invalidTabs);
@@ -310,6 +316,17 @@ package net.wg.gui.lobby.settings
          {
             this._feedbackDataProvider = param1;
             this._isFeedbackDPInstalled = false;
+         }
+      }
+      
+      override protected function setDisabledTabsOverlay(param1:Vector.<int>, param2:String) : void
+      {
+         if(this._disabledTabsOverlay == null)
+         {
+            this._disabledTabsOverlay = App.utils.classFactory.getComponent(DISABLED_OVERLAY_LINKAGE,DisabledTabsOverlay);
+            addChild(this._disabledTabsOverlay);
+            this._disabledTabsOverlay.setupTabs(this.tabs,param1,param2);
+            this.updateCurrentDisabledView(this.view.currentView);
          }
       }
       
@@ -397,6 +414,15 @@ package net.wg.gui.lobby.settings
          return false;
       }
       
+      public function as_onPhysicsSoundQualityApply(param1:Boolean) : void
+      {
+         var _loc2_:SoundSettings = this.getSoundSettings();
+         if(_loc2_ != null)
+         {
+            _loc2_.isPhysicsSoundQualityApply(param1);
+         }
+      }
+      
       public function as_onSoundSpeakersPresetApply(param1:Boolean) : void
       {
          var _loc2_:SoundSettings = this.getSoundSettings();
@@ -460,6 +486,25 @@ package net.wg.gui.lobby.settings
       {
          this._limitedUISettingVisible = param1;
          invalidate(INV_LIMITED_UI_SETTING_VISIBLE);
+      }
+      
+      public function as_showPhysicsSoundSettings(param1:Boolean) : void
+      {
+         if(this._isPhysicsSoundVisible == param1)
+         {
+            return;
+         }
+         this._isPhysicsSoundVisible = param1;
+         this.updatePhysicsSoundSettingsVisibility();
+      }
+      
+      private function updatePhysicsSoundSettingsVisibility() : void
+      {
+         var _loc1_:SoundSettings = this.getSoundSettings();
+         if(_loc1_)
+         {
+            _loc1_.setPhysicsSoundSettingsVisibility(this._isPhysicsSoundVisible);
+         }
       }
       
       public function as_updateVideoSettings(param1:Object) : void
@@ -695,6 +740,10 @@ package net.wg.gui.lobby.settings
          {
             this.updateLimitedUISettingVisible();
          }
+         else if(param1 == SoundSettings.LINKAGE)
+         {
+            this.updatePhysicsSoundSettingsVisibility();
+         }
       }
       
       private function initializeCommonData(param1:SettingsDataVo) : void
@@ -740,17 +789,6 @@ package net.wg.gui.lobby.settings
             {
                this.tabs.selectedIndex = _currentTab;
             }
-         }
-      }
-      
-      override protected function setDisabledTabsOverlay(param1:Vector.<int>, param2:String) : void
-      {
-         if(this._disabledTabsOverlay == null)
-         {
-            this._disabledTabsOverlay = App.utils.classFactory.getComponent(DISABLED_OVERLAY_LINKAGE,DisabledTabsOverlay);
-            addChild(this._disabledTabsOverlay);
-            this._disabledTabsOverlay.setupTabs(this.tabs,param1,param2);
-            this.updateCurrentDisabledView(this.view.currentView);
          }
       }
       
@@ -1276,42 +1314,69 @@ package net.wg.gui.lobby.settings
       
       private function onOnVivoxTestHandler(param1:SettingViewEvent) : void
       {
-         var _loc2_:Boolean = Boolean(param1.controlValue);
-         var _loc3_:Boolean = startVOIPTestS(_loc2_);
-         var _loc4_:SoundSettings = this.getSoundSettings();
-         if(_loc4_)
+         var _loc3_:Boolean = false;
+         var _loc4_:Boolean = false;
+         var _loc2_:SoundSettings = this.getSoundSettings();
+         if(_loc2_)
          {
-            _loc4_.setVoiceTestState(!(_loc3_ || !_loc2_));
+            _loc3_ = Boolean(param1.controlValue);
+            _loc4_ = startVOIPTestS(_loc3_);
+            _loc2_.setVoiceTestState(!(_loc4_ || !_loc3_));
          }
       }
       
       private function onOnAutoDetectQualityHandler(param1:SettingViewEvent) : void
       {
-         var _loc2_:Number = autodetectQualityS();
-         var _loc3_:GraphicSettings = this.getGraphicsSettings();
-         if(_loc3_ != null)
+         var _loc3_:Number = NaN;
+         var _loc2_:GraphicSettings = this.getGraphicsSettings();
+         if(_loc2_ != null)
          {
-            _loc3_.setPresetAfterAutoDetect(_loc2_);
+            _loc3_ = autodetectQualityS();
+            _loc2_.setPresetAfterAutoDetect(_loc3_);
+         }
+      }
+      
+      private function onOnAutoDetectPhysicsSoundQualityHandler(param1:SettingViewEvent) : void
+      {
+         var _loc3_:String = null;
+         var _loc2_:SoundSettings = this.getSoundSettings();
+         if(_loc2_ != null)
+         {
+            _loc3_ = autodetectPhysicsSoundQualityS();
+            _loc2_.setPhysicsSoundQualityAfterAutoDetect(_loc3_);
          }
       }
       
       private function onOnAutoDetectAcousticHandler(param1:SettingViewEvent) : void
       {
-         var _loc2_:String = autodetectAcousticTypeS();
-         var _loc3_:SoundSettings = this.getSoundSettings();
-         if(_loc3_ != null)
+         var _loc3_:String = null;
+         var _loc2_:SoundSettings = this.getSoundSettings();
+         if(_loc2_ != null)
          {
-            _loc3_.updateAcousticDeviceByType(_loc2_);
+            _loc3_ = autodetectAcousticTypeS();
+            _loc2_.updateAcousticDeviceByType(_loc3_);
          }
       }
       
       private function onOnSoundSpeakerChangeHandler(param1:SettingViewEvent) : void
       {
-         var _loc2_:Boolean = canSelectAcousticTypeS(Number(param1.controlValue));
-         var _loc3_:SoundSettings = this.getSoundSettings();
-         if(_loc3_ != null)
+         var _loc3_:Boolean = false;
+         var _loc2_:SoundSettings = this.getSoundSettings();
+         if(_loc2_ != null)
          {
-            _loc3_.isCanSelectAcousticType(_loc2_);
+            _loc3_ = canSelectAcousticTypeS(Number(param1.controlValue));
+            _loc2_.isCanSelectAcousticType(_loc3_);
+         }
+      }
+      
+      private function onOnPhysicsSoundChangeHandler(param1:SettingViewEvent) : void
+      {
+         var _loc3_:Boolean = false;
+         var _loc2_:SoundSettings = this.getSoundSettings();
+         if(_loc2_ != null)
+         {
+            _loc3_ = canSelectPhysicsSoundQualityS(Number(param1.controlValue));
+            _loc2_.isCanSelectPhysicsSoundQuality(_loc3_);
          }
       }
       

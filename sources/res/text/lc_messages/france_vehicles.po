@@ -462,6 +462,9 @@ msgstr "AS-XX 40 t"
 msgid "Chassis_F136_AMX_67_Imbattable"
 msgstr "AMX 67 Imbattable"
 
+msgid "Chassis_F138_Renault_R35_FCM_36"
+msgstr "Renault R35"
+
 msgid "Chassis_F13_AMX38"
 msgstr "AMX 38 1er prototype"
 
@@ -820,6 +823,9 @@ msgstr "ER 53"
 msgid "ER_54"
 msgstr "ER 54"
 
+msgid "ER_54A"
+msgstr "ER 54A"
+
 msgid "ER_55"
 msgstr "ER 55"
 
@@ -946,10 +952,10 @@ msgstr ""
 msgid "F106_Panhard_EBR_75_Mle1954_long_special"
 msgstr ""
 "A wheeled vehicle with four axles and two movement modes: Cruise and Rapid. "
-"Its mediocre view range and low firepower are compensated with fantastic "
+"Its mediocre view range and low firepower are compensated for by fantastic "
 "speed and dynamics. In addition, good concealment puts this vehicle in the "
-"role of an active scout and makes it most suitable for effective flanking "
-"maneuvers and breaking through enemy lines."
+"role of an active scout and makes it effective for flanking maneuvers and "
+"breaking through enemy lines."
 
 msgid "F106_Panhard_EBR_75_Mle1954_short"
 msgstr "EBR 75 FL 10"
@@ -1066,12 +1072,11 @@ msgstr ""
 
 msgid "F112_M10_RBFM_long_special"
 msgstr ""
-"This tank destroyer features a devastating gun with nice "
-"elevation/depression angles that is balanced by its weak armor and large "
-"dimensions. It is similar to the M10 Wolverine but cannot boast high "
-"mobility due to its less powerful engine. On the other hand, the more "
-"accurate gun allows you to cause damage from long distances and avoid being "
-"hit."
+"This tank destroyer features a devastating gun with good depression, "
+"balanced by the vehicle's weak armor and large size. It is similar to the "
+"M10 Wolverine but cannot boast high mobility due to a less powerful engine. "
+"At the same time, the more accurate gun lets it cause damage from long range"
+" and avoid being hit."
 
 msgid "F112_M10_RBFM_short"
 msgstr "M10 RBFM"
@@ -1169,11 +1174,11 @@ msgstr ""
 
 msgid "F116_Bat_Chatillon_Bourrasque_DV_long_special"
 msgstr ""
-"A dynamic tank with a powerful gun featuring the magazine reloading system "
-"for two shells. Weak armor and a small amount of hit points make it hard to "
-"fight on the front line. On the other hand, high mobility and speed allow "
-"for unexpected outflanking, attacking enemy vehicles from the side or rear, "
-"firing two shells and driving back to reload another one."
+"A dynamic tank with a powerful gun featuring a two-shell magazine reloading "
+"system. Weak armor and low HP make it hard to fight on the front line. On "
+"the other hand, high mobility and speed allow for unexpected outflanking, "
+"attacking opponents from the side or rear, and firing two shells and driving"
+" back to reload another one."
 
 msgid "F116_Bat_Chatillon_Bourrasque_DV_short"
 msgstr "Miel"
@@ -1189,11 +1194,11 @@ msgstr ""
 
 msgid "F116_Bat_Chatillon_Bourrasque_long_special"
 msgstr ""
-"A dynamic tank with a powerful gun featuring the magazine reloading system "
-"for two shells. Weak armor and a small amount of hit points make it hard to "
-"fight on the front line. On the other hand, high mobility and speed allow "
-"for unexpected outflanking, attacking enemy vehicles from the side or rear, "
-"firing two shells and driving back to reload another one."
+"A dynamic tank with a powerful gun featuring a two-shell magazine reloading "
+"system. Weak armor and low HP make it hard to fight on the front line. On "
+"the other hand, high mobility and speed allow for unexpected outflanking, "
+"attacking opponents from the side or rear, and firing two shells and driving"
+" back to reload another one."
 
 msgid "F116_Bat_Chatillon_Bourrasque_short"
 msgstr "Bourrasque"
@@ -1611,6 +1616,30 @@ msgstr ""
 
 msgid "F136_AMX_67_Imbattable_short"
 msgstr "Imbattable"
+
+msgid "F138_Renault_R35_FCM_36"
+msgstr "Renault R35/FCM 36"
+
+msgid "F138_Renault_R35_FCM_36_desc"
+msgstr ""
+"As part of a 1930s program to develop and produce new tanks, France was "
+"actively working to unify the turrets of different vehicles. One such "
+"experimental project was the R35 light tank with the turret of the FCM 36. "
+"The vehicle never entered mass production."
+
+msgid "F138_Renault_R35_FCM_36_long_special"
+msgstr ""
+"The Renault R35/FCM 36 is a Tier II French light tank. It combines the hull "
+"of the Renault R35 with the turret of the FCM 36. The tank has a 37 mm gun "
+"with an exceptionally high rate of fire and good, reliable armor. This "
+"combination of characteristics allows the vehicle to hold key positions and "
+"push through enemy shots."
+
+msgid "F138_Renault_R35_FCM_36_short"
+msgstr "R35/FCM 36"
+
+msgid "F138_Renault_R35_FCM_36_short_special"
+msgstr "Good armor, high rate of fire"
 
 msgid "F13_AMX38"
 msgstr "AMX 38"
@@ -2120,12 +2149,11 @@ msgstr ""
 
 msgid "F73_M4A1_Revalorise_long_special"
 msgstr ""
-"This medium tank is equipped with a powerful gun that features high damage "
-"per shot, good depression angles, and high shell velocity, which allows the "
-"vehicle to turn the tide of even the most desperate battle. Its good view "
-"range allows for spotting enemy vehicles and securing the first hit. "
-"However, keep in mind that the tank's armoring and mobility are rather "
-"mediocre."
+"This medium tank has a powerful gun that features high damage per shot, good"
+" depression, and high shell velocity, allowing the vehicle to turn the tide "
+"of even the most desperate battle. Its good view range allows for spotting "
+"opponents and securing the first hit. However, keep in mind that the armor "
+"and mobility are rather mediocre."
 
 msgid "F73_M4A1_Revalorise_short"
 msgstr "M4A1 Rev."
@@ -2416,11 +2444,11 @@ msgstr ""
 
 msgid "F97_ELC_EVEN_90_long_special"
 msgstr ""
-"An excellent recon vehicle with a low silhouette, exceptional mobility, and "
+"An excellent recon vehicle with a low profile, exceptional mobility, and "
 "great concealment. These features help to ensure it is always in the right "
-"place at the right time. In addition, a 3-shell magazine gun provides a "
-"potential damage output of 660 HP. However, don't forget about its mediocre "
-"armor that is highly vulnerable to ramming."
+"place at the right time. In addition, a three-shell autoloader gives "
+"potential damage of 660 HP. However, don't forget its mediocre armor, which "
+"is highly vulnerable to ramming."
 
 msgid "F97_ELC_EVEN_90_short"
 msgstr "ELC EVEN 90"
@@ -2951,6 +2979,9 @@ msgstr "Renault T14 (V39)"
 msgid "Renault_V4"
 msgstr "Renault V4"
 
+msgid "Renault_V4A"
+msgstr "Renault V4A"
+
 msgid "SARL42"
 msgstr "SARL 42"
 
@@ -3275,6 +3306,9 @@ msgstr "AS-XX 40 t"
 
 msgid "Turret_1_F136_AMX_67_Imbattable"
 msgstr "AMX 67 Imbattable"
+
+msgid "Turret_1_F138_Renault_R35_FCM_36"
+msgstr "FCM 36"
 
 msgid "Turret_1_F13_AMX38"
 msgstr "AMX 38"
@@ -4239,11 +4273,17 @@ msgstr ""
 msgid "_37mm_APX_SA18"
 msgstr "37 mm APX SA18"
 
+msgid "_37mm_APX_SA18A"
+msgstr "37 mm APX SA18A"
+
 msgid "_37mm_APX_SA18_FT"
 msgstr "37 mm APX SA18 (FT)"
 
 msgid "_37mm_FrtPrf1935"
 msgstr "Frt.Prf. mle. 1935"
+
+msgid "_37mm_FrtPrf1935A"
+msgstr "Frt.Prf. mle. 1935A"
 
 msgid "_37mm_Frt_Prf_mle_1935_FT"
 msgstr "Frt.Prf. mle. 1935 (FT)"
@@ -4275,6 +4315,9 @@ msgstr "OE mle. 1932 (38)"
 msgid "_37mm_OE_mle_1932_FCM"
 msgstr "OE mle. 1932 (FCM)"
 
+msgid "_37mm_OE_mle__1916A"
+msgstr "OE mle. 1916A"
+
 msgid "_37mm_Odr_mle._1932"
 msgstr "ODR mle. 1932"
 
@@ -4283,6 +4326,9 @@ msgstr "ODR mle. 1935"
 
 msgid "_37mm_Odr_mle._1939"
 msgstr "ODR mle. 1939"
+
+msgid "_37mm_Odr_mle__1935A"
+msgstr "ODR mle. 1935A"
 
 msgid "_37mm_Oe_mle._1932"
 msgstr "OE mle. 1932"

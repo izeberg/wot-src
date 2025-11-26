@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.690121 -0.002025 -3.822124</min>
+		<max>1.633841 1.282664 3.806117</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/british/GB132_Taurus_CAT/crash/lod0/Chassis</nodefullVisual>
+	<parent>vehicles/british/GB132_Taurus_CAT/crash/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+</root>

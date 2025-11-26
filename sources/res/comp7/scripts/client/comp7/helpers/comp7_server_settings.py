@@ -25,14 +25,14 @@ class Comp7Config(settingsBlock('Comp7Config', ('isEnabled', 'isShopEnabled', 'i
                               'roleEquipments', 'poiEquipments', 'numPlayers', 'levels',
                               'forbiddenClassTags', 'forbiddenVehTypes', 'squadRankRestriction',
                               'squadSizes', 'createVivoxTeamChannels', 'qualification',
-                              'maps', 'tournaments', 'grandTournament', 'remainingOfferTokensNotifications',
-                              'clientEntitlementsCache', 'participantTokens'))):
+                              'maps', 'remainingOfferTokensNotifications', 'clientEntitlementsCache',
+                              'participantTokens'))):
     __slots__ = ()
 
     @classmethod
     def defaults(cls):
         return dict(isEnabled=False, isShopEnabled=False, isTrainingEnabled=False, peripheryIDs={}, primeTimes={}, seasons={}, battleModifiersDescr=(), cycleTimes={}, roleEquipments={}, poiEquipments={}, numPlayers=7, levels=[], forbiddenClassTags=set(), forbiddenVehTypes=set(), squadRankRestriction={}, squadSizes=[
-         0, 0], createVivoxTeamChannels=False, qualification={}, maps=set(), tournaments={}, grandTournament={}, remainingOfferTokensNotifications=[], clientEntitlementsCache={}, participantTokens=())
+         0, 0], createVivoxTeamChannels=False, qualification={}, maps=set(), remainingOfferTokensNotifications=[], clientEntitlementsCache={}, participantTokens=())
 
     @classmethod
     def _preprocessData(cls, data):

@@ -7332,6 +7332,26 @@
 				<_3310>tankmen_bp18_9.png</_3310>
 			</icons>
 		</tankmen_bp18_9>
+		<john_christmas>
+			<groupID>327</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>male</sex>
+			<notInShop>true</notInShop>
+			<tags>commander  passportReplacementForbidden</tags>
+			<roles>commander</roles>
+			<firstNames>
+				<_3313>#ussr_crew:names/john_christmas_n</_3313>
+			</firstNames>
+			<lastNames>
+				<_3313>#ussr_crew:names/john_christmas</_3313>
+			</lastNames>
+			<icons>
+				<_3313>john_christmas.png</_3313>
+			</icons>
+		</john_christmas>
 		<tankmen_bp18_10>
 			<groupID>328</groupID>
 			<weight>

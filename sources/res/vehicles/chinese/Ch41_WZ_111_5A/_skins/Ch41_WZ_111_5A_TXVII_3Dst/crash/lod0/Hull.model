@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<nodefullVisual>vehicles/chinese/Ch41_WZ_111_5A/_skins/Ch41_WZ_111_5A_TXVII_3Dst/crash/lod0/Hull</nodefullVisual>
 	<visibilityBox>
 		<min>-1.791034 -0.914664 -4.014894</min>
 		<max>1.876311 0.768696 3.805435</max>
@@ -8,4 +7,5 @@
 	<parent>vehicles/chinese/Ch41_WZ_111_5A/_skins/Ch41_WZ_111_5A_TXVII_3Dst/crash/lod1/Hull</parent>
 	<extent>32.000000</extent>
 	<tank>true</tank>
+	<nodefullVisual>vehicles/chinese/Ch41_WZ_111_5A/_skins/Ch41_WZ_111_5A_TXVII_3Dst/crash/lod0/Hull</nodefullVisual>
 </root>

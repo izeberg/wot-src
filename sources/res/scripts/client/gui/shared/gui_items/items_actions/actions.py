@@ -1560,8 +1560,11 @@ class PurchaseVehSkillTreeSteps(AsyncGUIItemAction):
     def _confirm(self, callback):
         shortage = self.__getXPShortage()
         if shortage > 0:
-            isOk, _, _ = yield future_async.wg_await(shared_events.showExchangeXPDialogWindow)(self.__formatValue(shortage))
-            callback(isOk and self.__getXPShortage() <= 0)
+            isOk, result, _ = yield future_async.wg_await(shared_events.showExchangeXPDialogWindow)(self.__formatValue(shortage))
+            confirm = isOk and self.__getXPShortage() <= 0
+            if confirm and result.userMsg:
+                self._showResult(result)
+            callback(confirm)
         else:
             callback(True)
 

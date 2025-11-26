@@ -433,9 +433,6 @@ msgstr "Project Überpanzer"
 msgid "chapter/fullName/183"
 msgstr "Mechanized Momentum"
 
-msgid "chapter/fullName/185"
-msgstr "The Walking Dead"
-
 msgid "chapter/fullNameUppercased/10021"
 msgstr "CARMEN DE BISONTE"
 
@@ -450,9 +447,6 @@ msgstr "PROJECT ÜBERPANZER"
 
 msgid "chapter/fullNameUppercased/183"
 msgstr "MECHANIZED MOMENTUM"
-
-msgid "chapter/fullNameUppercased/185"
-msgstr "THE WALKING DEAD"
 
 msgid "chapter/title"
 msgstr "CHAPTER %(chapter)s"
@@ -657,7 +651,10 @@ msgstr "%(chapterName)s"
 msgid "holidayFinalScreen/completed"
 msgstr "CHAPTER COMPLETED"
 
-msgid "holidayFinalScreen/finalState/button"
+msgid "holidayFinalScreen/finalState/button/showHangar"
+msgstr "Back to Garage"
+
+msgid "holidayFinalScreen/finalState/button/showVehicle"
 msgstr "View in Garage"
 
 msgid "holidayFinalScreen/finalState/label"
@@ -881,7 +878,7 @@ msgid "navigation/chapterChoice"
 msgstr "BATTLE PASS SEASON %(seasonNum)s"
 
 msgid "navigation/holidayFinal"
-msgstr "?empty?"
+msgstr "BATTLE PASS"
 
 msgid "navigation/intro"
 msgstr "BATTLE PASS SEASON %(seasonNum)s"
@@ -907,10 +904,10 @@ msgstr ""
 "%(completedChapters)/%(chaptersAmount)"
 
 msgid "postProgressionView/footer/extraChapter/description/text"
-msgstr "Grab a Premium vehicle and exclusive customization elements"
+msgstr "Dive into it for exclusive rewards and unique customization elements."
 
 msgid "postProgressionView/footer/extraChapter/title/text"
-msgstr "The Walking Dead are here!"
+msgstr "The Special Chapter is here!"
 
 msgid "postProgressionView/footer/purchaseIP/banner/text"
 msgstr "Purchase the Improved Pass and get more rewards!"
@@ -996,6 +993,9 @@ msgid "progression/battlePassBuyDescr"
 msgstr ""
 "The Improved Pass unlocks the Improved Rewards Track for the current "
 "Chapter."
+
+msgid "progression/battlePassBuyHolidayDescr"
+msgstr "The Improved Pass unlocks the Improved Rewards Track."
 
 msgid "progression/battlePassNextChapterBuyDescr"
 msgstr ""
@@ -1553,6 +1553,11 @@ msgstr ""
 "By purchasing Stages, you will instantly receive their Base and Improved "
 "Rewards. Stages are purchased separately for each Chapter."
 
+msgid "tooltips/footerBuyBtn/episode/holidayDescr"
+msgstr ""
+"By purchasing Stages, you will instantly receive their Base and Improved "
+"Rewards."
+
 msgid "tooltips/goldMission/description"
 msgstr "%(highlight)s You will not receive gold for the days you miss."
 
@@ -1583,6 +1588,19 @@ msgstr ""
 "Improved Rewards for the completed Stages of the Chapter for which you have "
 "purchased it. You can improve your rewards on the Battle Pass main screen by"
 " clicking the Purchase Improved Pass button."
+
+msgid "tooltips/iconLock/holidayDescr1"
+msgstr ""
+"You can increase the list of Stage rewards by purchasing the Improved Pass. "
+"With the Improved Pass, you will receive both Base and Improved Rewards for "
+"completing each subsequent Stage."
+
+msgid "tooltips/iconLock/holidayDescr2"
+msgstr ""
+"You can purchase the Improved Pass at any time. It will instantly grant you "
+"all Improved Rewards for already completed Stages. You can improve your "
+"rewards on the Battle Pass main screen by clicking the Purchase Improved "
+"Pass button."
 
 msgid "tooltips/iconLock/title"
 msgstr "Improved Reward of Battle Pass"

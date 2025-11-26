@@ -176,7 +176,6 @@ class SubhangarObserver(BaseStateObserver):
             if configWithCameras:
                 subHangar, _, cameraMover = configWithCameras[(-1)]
                 _logger.debug('Switching to %s camera (group: %s).', subHangar.defaultCamera, subHangar)
-                cameraManager.clearCurrentCameraComponents()
                 self.__callbackDelayer.clearCallbacks()
                 self.__callbackDelayer.delayCallback(0, partial(self.__switchToCameraWhenLoaded, subHangar.defaultCamera, cameraMover))
             else:

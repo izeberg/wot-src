@@ -170,7 +170,7 @@ _ENABLE_CONTROL_MODE = {
  PageStates.RADIAL,
  PageStates.LOADING}
 _PAGE_STATE_TO_CONTROL_PARAMS = {(PageStates.TABSCREEN, False): (
-                                 BATTLE_VIEW_ALIASES.FULL_STATS, True, True), 
+                                 BATTLE_VIEW_ALIASES.FULL_STATS, True, False), 
    (PageStates.RESPAWN, False): (
                                FRONTLINE_BATTLE_VIEW_ALIASES.FRONTLINE_RESPAWN_VIEW, True, True), 
    (PageStates.RADIAL, False): (

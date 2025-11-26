@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/czech/Cz22_Skoda_T_15A/crash/lod0/Turret_01</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/czech/Cz22_Skoda_T_15A/crash/lod1/Turret_01</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-0.734726 -0.014902 -1.071640</min>
+		<max>0.734726 0.940247 0.851707</max>
+	</visibilityBox>
+</root>

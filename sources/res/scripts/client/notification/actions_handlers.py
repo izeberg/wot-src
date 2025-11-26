@@ -28,7 +28,7 @@ from gui.prestige.prestige_helpers import showPrestigeOnboardingWindow, showPres
 from gui.ranked_battles import ranked_helpers
 from gui.server_events.events_dispatcher import showMissionsMapboxProgression, showPersonalMission, showBanWindow, showPenaltyWindow, showWarningWindow, showBattleMatters
 from gui.shared import EVENT_BUS_SCOPE, actions, event_dispatcher as shared_events, events, g_eventBus
-from gui.shared.event_dispatcher import hideWebBrowserOverlay, showBlueprintsSalePage, showCollectionAwardsWindow, showCollectionWindow, showCollectionsMainPage, showDelayedReward, showEpicBattlesAfterBattleWindow, showProgressiveRewardWindow, showRankedYearAwardWindow, showShop, showSteamConfirmEmailOverlay, showWinbackSelectRewardView, showBarracks, showSeniorityRewardVehiclesWindow, showAdvancedAchievementsView, showTrophiesView, showAdvancedAchievementsCatalogView, showExchangeGoldWindow, showExchangeFreeXPWindow, showCrewPostProgressionView, showPersonalMissionMainWindow
+from gui.shared.event_dispatcher import hideWebBrowserOverlay, showBattlePass, showBlueprintsSalePage, showCollectionAwardsWindow, showCollectionWindow, showCollectionsMainPage, showDelayedReward, showEpicBattlesAfterBattleWindow, showProgressiveRewardWindow, showRankedYearAwardWindow, showShop, showSteamConfirmEmailOverlay, showWinbackSelectRewardView, showBarracks, showSeniorityRewardVehiclesWindow, showAdvancedAchievementsView, showTrophiesView, showAdvancedAchievementsCatalogView, showExchangeGoldWindow, showExchangeFreeXPWindow, showCrewPostProgressionView, showPersonalMissionMainWindow, showPetStorageView
 from gui.shared.gui_items import GUI_ITEM_TYPE
 from gui.shared.gui_items.processors.common import ClaimRewardForPostProgression
 from gui.shared.notifications import NotificationPriorityLevel
@@ -954,12 +954,9 @@ class _OpenBattlePassProgressionView(NavigationDisabledActionHandler):
         hideWebBrowserOverlay()
         if savedData is not None:
             chapterID = savedData.get('chapterID')
-            if not isPostProgressionChapter(chapterID):
-                shared_events.showBattlePass(R.aliases.battle_pass.Progression(), chapterID)
-            else:
-                shared_events.showBattlePass(R.aliases.battle_pass.PostProgression())
+            showBattlePass(R.aliases.battle_pass.PostProgression() if isPostProgressionChapter(chapterID) else (self.__battlePass.isHoliday() or R.aliases.battle_pass.Progression)() if 1 else R.invalid(), chapterID)
         else:
-            shared_events.showBattlePass()
+            showBattlePass()
         return
 
 
@@ -1513,6 +1510,20 @@ class _BattleMattersTaskReminder(NavigationDisabledActionHandler):
         showBattleMatters()
 
 
+class _PetSystemPetAddedNotification(NavigationDisabledActionHandler):
+
+    @classmethod
+    def getNotType(cls):
+        return NOTIFICATION_TYPE.MESSAGE
+
+    @classmethod
+    def getActions(cls):
+        return ('openPetStorage', )
+
+    def doAction(self, model, entityID, action):
+        showPetStorageView()
+
+
 _AVAILABLE_HANDLERS = [
  ShowBattleResultsHandler,
  ShowFortBattleResultsHandler,
@@ -1589,7 +1600,8 @@ _AVAILABLE_HANDLERS = [
  _ClaimRewardPostProgression,
  _OpenPM3Operation,
  _AffirmativePM3Notification,
- _BattleMattersTaskReminder]
+ _BattleMattersTaskReminder,
+ _PetSystemPetAddedNotification]
 registerNotificationsActionsHandlers(_AVAILABLE_HANDLERS)
 
 class NotificationsActionsHandlers(object):

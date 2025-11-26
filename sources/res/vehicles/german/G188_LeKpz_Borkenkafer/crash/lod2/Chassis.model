@@ -5,7 +5,7 @@
 		<max>1.250163 1.035418 2.744709</max>
 	</visibilityBox>
 	<tank>true</tank>
-	<nodefullVisual>vehicles/german/G188_LeKPZ_Borkenkafer/crash/lod2/Chassis</nodefullVisual>
 	<parent>vehicles/german/G188_LeKpz_Borkenkafer/crash/lod3/Chassis</parent>
 	<extent>96.000000</extent>
+	<nodefullVisual>vehicles/german/G188_LeKpz_Borkenkafer/crash/lod2/Chassis</nodefullVisual>
 </root>

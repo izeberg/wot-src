@@ -49,6 +49,7 @@
 		<_2_st_Scania_Vabis_1664_a>50</_2_st_Scania_Vabis_1664_a>
 		<Motoraggregat_10>51</Motoraggregat_10>
 		<AOS_895_S>53</AOS_895_S>
+		<Maybach_DSO>55</Maybach_DSO>
 		<Motoraggregat_3_FL>501</Motoraggregat_3_FL>
 		<_2_st_Scania_DS14>52</_2_st_Scania_DS14>
 		<Scania_Vabis_1664_Sav>2000</Scania_Vabis_1664_Sav>
@@ -179,6 +180,26 @@
 			<rpm_min>273</rpm_min>
 			<rpm_max>2723</rpm_max>
 		</Scania_Vabis_1664_Sav>
+		<Maybach_DSO>
+			<userString>#sweden_vehicles:Maybach_DSO</userString>
+			<tags>gasoline</tags>
+			<level>3</level>
+			<price>5000</price>
+			<notInShop>true</notInShop>
+			<wwsoundPC>eng_Continental_R975_pc</wwsoundPC>
+			<wwsoundNPC>eng_Continental_R975_npc</wwsoundNPC>
+			<power>220</power>
+			<weight>485</weight>
+			<maxHealth>100</maxHealth>
+			<maxRegenHealth>50</maxRegenHealth>
+			<repairCost>3</repairCost>
+			<fireStartingChance>
+				0.2
+				<!--BW_String-->
+			</fireStartingChance>
+			<rpm_min>487</rpm_min>
+			<rpm_max>2240</rpm_max>
+		</Maybach_DSO>
 		<Scania_Vabis_L_603>
 			<userString>#sweden_vehicles:Scania_Vabis_L_603</userString>
 			<tags>gasoline</tags>
@@ -989,8 +1010,8 @@
 				0.2
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>488</rpm_min>
-			<rpm_max>2035</rpm_max>
+			<rpm_min>474</rpm_min>
+			<rpm_max>2080</rpm_max>
 		</Meteor_Mark_IVB>
 		<AV_1790>
 			<userString>#sweden_vehicles:AV_1790</userString>

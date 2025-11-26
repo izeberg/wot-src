@@ -2047,6 +2047,9 @@ msgstr "desynchronization of components related to \"Customization\" (1013)"
 msgid "disconnect/codes/1014"
 msgstr "unsynchronization of researched components (1014)"
 
+msgid "discount/description/pet"
+msgstr "%(effectValue)s off pet purchase price"
+
 msgid "discount/description/vehicle"
 msgstr "a %(effectValue)s discount on purchasing the %(targetName)s"
 
@@ -2897,6 +2900,9 @@ msgstr "Team Training"
 msgid "headerButtons/battle/menu/unit"
 msgstr "Team Battle"
 
+msgid "headerButtons/battle/modeInfo"
+msgstr "Mode: {{mode}}"
+
 msgid "headerButtons/battle/types/battleRoyale"
 msgstr "Steel Hunter"
 
@@ -3133,6 +3139,9 @@ msgstr "Team Battle"
 
 msgid "headerButtons/battle/types/winback"
 msgstr "Random Battle: Warm-Up"
+
+msgid "headerButtons/battle/vehicleInfo"
+msgstr "Enter {{mode}} in the {{level}}{{type}}{{name}}"
 
 msgid "headerButtons/browser"
 msgstr "Browser"

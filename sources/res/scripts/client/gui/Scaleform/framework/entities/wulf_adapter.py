@@ -1,6 +1,4 @@
-import logging
-from functools import partial
-import typing, BigWorld
+import logging, typing, BigWorld
 from Event import Event, EventManager
 from frameworks.wulf import WindowStatus, WindowLayer
 from frameworks.wulf.gui_constants import ShowingStatus
@@ -48,7 +46,7 @@ class WulfPackageLayoutAdapter(object):
         self.__window = window
         if hasattr(window, '__background_alpha__'):
             self.__background_alpha__ = window.__background_alpha__
-        self.__window.onReady += partial(self.onWulfViewLoaded, self)
+        self.__window.onReady += self.__onViewLoaded
 
     def load(self):
         if self.__window.content is None and self.__window.decorator is None:
@@ -167,6 +165,11 @@ class WulfPackageLayoutAdapter(object):
         self.__loadID = None
         self.__window.load()
         return
+
+    def __onViewLoaded(self):
+        self.onWulfViewLoaded(self)
+        if self.__sfWindow:
+            self.__sfWindow.isReady = True
 
     def __onStatusChanged(self, newStatus):
         if newStatus == WindowStatus.DESTROYING and self.__window.windowStatus != WindowStatus.LOADED:

@@ -8971,6 +8971,58 @@
 		<type>EMBLEM</type>
 	</itemGroup>
 	<itemGroup>
+		<userString>#vehicle_customization:emblem/special</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>emblems 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>poland:Pl15_60TP_Lewandowskiego_CFE_A usa:A174_T57_58_Rush_Ep1</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<decal>
+			<id>1189</id>
+			<texture>gui/maps/vehicles/decals/player_stickers/special/sticker_876.dds</texture>
+			<userString>#vehicle_customization:emblem/special/sticker_876</userString>
+			<mirror>false</mirror>
+		</decal>
+		<decal>
+			<id>1190</id>
+			<texture>gui/maps/vehicles/decals/player_stickers/special/sticker_877.dds</texture>
+			<userString>#vehicle_customization:emblem/special/sticker_877</userString>
+			<mirror>false</mirror>
+		</decal>
+		<name>Win back with CCs</name>
+		<type>EMBLEM</type>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:emblem/special</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>emblems 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>poland:Pl15_60TP_Lewandowskiego_CFE_A usa:A174_T57_58_Rush_Ep1</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<decal>
+			<id>1216</id>
+			<texture>gui/maps/vehicles/decals/player_stickers/special/sticker_664.dds</texture>
+			<userString>#vehicle_customization:emblem/special/sticker_664</userString>
+			<tags>hiddenInUI</tags>
+			<mirror>false</mirror>
+		</decal>
+		<decal>
+			<id>1225</id>
+			<texture>gui/maps/vehicles/decals/player_stickers/special/sticker_665.dds</texture>
+			<userString>#vehicle_customization:emblem/special/sticker_665</userString>
+			<tags>hiddenInUI</tags>
+			<mirror>false</mirror>
+		</decal>
+		<name>Advent Calendar 2025</name>
+		<type>EMBLEM</type>
+	</itemGroup>
+	<itemGroup>
 		<userString>#vehicle_customization:emblem/IGR</userString>
 		<season>ALL</season>
 		<historical>1</historical>
@@ -9607,6 +9659,13 @@
 			<id>16023</id>
 			<texture>gui/maps/vehicles/decals/player_stickers/special/sticker_863.dds</texture>
 			<userString>#vehicle_customization:emblem/special/sticker_863</userString>
+			<mirror>true</mirror>
+			<tags>hiddenInUI</tags>
+		</decal>
+		<decal>
+			<id>16028</id>
+			<texture>gui/maps/vehicles/decals/player_stickers/special/sticker_879.dds</texture>
+			<userString>#vehicle_customization:emblem/special/sticker_879</userString>
 			<mirror>true</mirror>
 			<tags>hiddenInUI</tags>
 		</decal>
@@ -17118,6 +17177,51 @@
 			<mirror>false</mirror>
 		</decal>
 		<name>SH 2025</name>
+		<type>INSCRIPTION</type>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:inscription/special</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>inscriptions 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>poland:Pl15_60TP_Lewandowskiego_CFE_A usa:A174_T57_58_Rush_Ep1</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<decal>
+			<id>1198</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_838.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_838</userString>
+			<mirror>false</mirror>
+		</decal>
+		<decal>
+			<id>1199</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_839.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_839</userString>
+			<mirror>false</mirror>
+		</decal>
+		<name>Win back with CCs</name>
+		<type>INSCRIPTION</type>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:inscription/special</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>inscriptions 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>poland:Pl15_60TP_Lewandowskiego_CFE_A usa:A174_T57_58_Rush_Ep1</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<decal>
+			<id>1226</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_490.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_490</userString>
+			<tags>hiddenInUI</tags>
+			<mirror>false</mirror>
+		</decal>
+		<name>Advent Calendar 2025</name>
 		<type>INSCRIPTION</type>
 	</itemGroup>
 	<itemGroup>

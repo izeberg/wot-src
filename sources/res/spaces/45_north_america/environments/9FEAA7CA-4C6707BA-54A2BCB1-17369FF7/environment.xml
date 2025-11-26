@@ -49,8 +49,8 @@
 		</deferred>
 		<simplifiedDeferred>
 			<useEdgeFog>true</useEdgeFog>
-			<color>1.000000 0.945098 0.800000 1.000000</color>
-			<density>0.004500</density>
+			<color>0.419608 0.603922 1.000000 9.000000</color>
+			<density>0.001000</density>
 			<height>41.810001</height>
 			<heightFalloff>0.029000</heightFalloff>
 			<startDistance>75.000000</startDistance>
@@ -84,9 +84,9 @@
 		</bloom>
 		<environment>
 			<sunlightLumMultiplier>34.000000</sunlightLumMultiplier>
-			<ambientLumMultiplier>1.000000</ambientLumMultiplier>
 			<sunLumMultiplier>60.000000</sunLumMultiplier>
 			<skyLumMultiplier>5.000000</skyLumMultiplier>
+			<skyLumMultiplierDeferred>1.000000</skyLumMultiplierDeferred>
 			<LDR2HDRenableLumaMask>false</LDR2HDRenableLumaMask>
 			<LDR2HDRsaturation>1.000000</LDR2HDRsaturation>
 		</environment>

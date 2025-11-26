@@ -2125,6 +2125,9 @@ msgstr "Sixth Sense Activation Sound"
 msgid "otherTitle"
 msgstr "Other"
 
+msgid "physicsQuality"
+msgstr "Sound Physics Quality"
+
 msgid "refreshRate"
 msgstr "Display Refresh Rate"
 
@@ -2396,6 +2399,45 @@ msgstr ""
 "Levels out volume differences, reduces sharp sounds, and minimizes low "
 "frequencies in-game, providing a comfortable and soft sound environment for "
 "late-night gaming."
+
+msgid "sounds/physicsQuality/attention"
+msgstr "Enabling this feature may impact performance."
+
+msgid "sounds/physicsQuality/body"
+msgstr ""
+"Controls the quality of sound physics.\n"
+"\n"
+"Simulates how sound bends around obstacles and passes through map surfaces.\n"
+"\n"
+"Uses map geometry to generate early reflections of tank sounds bouncing off nearby objects.\n"
+" "
+
+msgid "sounds/physicsQuality/header"
+msgstr "Sound Physics Quality"
+
+msgid "sounds/physicsQuality/options/disabled"
+msgstr "Disabled"
+
+msgid "sounds/physicsQuality/options/high"
+msgstr "High"
+
+msgid "sounds/physicsQuality/options/low"
+msgstr "Low"
+
+msgid "sounds/physicsQuality/options/medium"
+msgstr "Medium"
+
+msgid "sounds/physicsQualityRecommended"
+msgstr "Recommended"
+
+msgid "sounds/physicsQualityRecommended/description"
+msgstr ""
+"Determines the optimum sound physics quality for your computer.\n"
+"\n"
+"This may take some time."
+
+msgid "sounds/physicsQualityRecommended/name"
+msgstr "Recommended"
 
 msgid "sounds/sixthSense/body"
 msgstr "Custom sound. Move the sixthSense.mp3 file to the res/audioww folder."

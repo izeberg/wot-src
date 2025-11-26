@@ -8,7 +8,7 @@ from fun_random.gui.feature.util.fun_mixins import FunSubModesWatcher, FunAssetP
 from fun_random.gui.impl.lobby.feature.fun_random_tier_list_view import FunRandomTierListView
 from gui.impl import backport
 from gui.impl.gen import R
-from gui.lobby_state_machine.states import GuiImplViewLobbyState, SubScopeSubLayerState, SubScopeTopLayerState, LobbyStateDescription, ViewLobbyState
+from gui.lobby_state_machine.states import GuiImplViewLobbyState, SubScopeSubLayerState, SubScopeTopLayerState, LobbyStateDescription, ViewLobbyState, LobbyStateFlags
 from gui.Scaleform.genConsts.FUNRANDOM_ALIASES import FUNRANDOM_ALIASES
 from gui.Scaleform.framework import ScopeTemplates
 from gui.Scaleform.framework.entities.View import ViewKey
@@ -71,7 +71,7 @@ class FunPostBattleResultsState(ViewLobbyState):
                               FunBattleResultsSubPresenter, R.views.fun_random.mono.lobby.battle_results())}
 
     def __init__(self, flags=StateFlags.UNDEFINED):
-        super(FunPostBattleResultsState, self).__init__(flags=flags)
+        super(FunPostBattleResultsState, self).__init__(flags=flags | LobbyStateFlags.POST_BATTLE_RESULTS)
         self.__cachedParams = {}
 
     def getViewKey(self, params=None):

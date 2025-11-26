@@ -551,6 +551,9 @@ msgstr "T-44M"
 msgid "Chassis_R217_Object_Kust"
 msgstr "Object Kust"
 
+msgid "Chassis_R218_T_115"
+msgstr "T-115"
+
 msgid "Chassis_R219_Object_265T"
 msgstr "Object 265T"
 
@@ -1181,6 +1184,9 @@ msgstr "M-17F (212A)"
 msgid "M_17F_SU_14"
 msgstr "M-17F (SU-14)"
 
+msgid "M_17F_T"
+msgstr "M-17F T"
+
 msgid "M_17F_T_28"
 msgstr "M-17F (T-28)"
 
@@ -1679,8 +1685,8 @@ msgstr ""
 "A multi-purpose Tier VI Soviet heavy tank that cannot boast exceptionally "
 "reliable armor but, for its type, demonstrates good mobility and "
 "maneuverability. It features an 85 mm gun with quite low damage per shot "
-"that is compensated by its high damage per minute. In addition, one should "
-"always keep its mediocre depression/elevation angles in mind."
+"that is compensated for by high damage per minute. Keep in mind its mediocre"
+" gun depression."
 
 msgid "R114_Object_244_short"
 msgstr "Obj. 244"
@@ -3289,10 +3295,10 @@ msgstr ""
 
 msgid "R191_Object_283_long_special"
 msgstr ""
-"A Tier IX Premium Soviet medium tank with rear turret placement. Good armor "
-"and sturdy sides allow this vehicle to turn the battle around and surprise "
-"the enemy with great survivability. Its low silhouette and effective gun "
-"allow you to play ambush tactics in open spaces with suitable cover."
+"A Tier IX Soviet medium tank with rear turret placement. Good armor and "
+"sturdy sides allow this vehicle to turn the battle around and surprise the "
+"enemy with great survivability. Its low silhouette and effective gun allow "
+"you to play ambush tactics in open spaces with suitable cover."
 
 msgid "R191_Object_283_short"
 msgstr "Obj. 283"
@@ -3677,8 +3683,18 @@ msgstr ""
 "Mirium radiation safe for the crew are present. The Impulse system is "
 "disabled and sealed."
 
+msgid "R205_Tank_Rozanova_Obsidian_long_special"
+msgstr ""
+"A Soviet Tier VIII medium tank with an accurate and rapid-firing 85 mm gun "
+"that deals huge amounts of damage per minute. In addition to the sturdy "
+"armor, this low-profile vehicle also has screens on the sides that provide "
+"additional protection, allowing you to harness the vehicle's full potential."
+
 msgid "R205_Tank_Rozanova_Obsidian_short"
 msgstr "Obsidian"
+
+msgid "R205_Tank_Rozanova_Obsidian_short_special"
+msgstr "High rate of fire and low profile"
 
 msgid "R205_Tank_Rozanova_descr"
 msgstr ""
@@ -3750,6 +3766,34 @@ msgstr "Kust"
 
 msgid "R217_Object_Kust_short_special"
 msgstr "Hydropneumatic suspension, powerful gun"
+
+msgid "R218_T_115"
+msgstr "T-115"
+
+msgid "R218_T_115_descr"
+msgstr ""
+"In 1935, development of an alternative to the T-29 began in the first office"
+" of Experimental Plant #185. The project, named Heavily Armored Tank #115, "
+"took into account the shortcomings of its predecessor. One of the vehicle's "
+"distinguishing features was the large depression/elevation angles of its gun"
+" and machine guns. Additionally, like the T-29, it was a convertible-drive "
+"tank. The preliminary design of the T-115 was ready in February 1938. "
+"Several more variants appeared later, including an exclusively tracked "
+"configuration. However, by that time, multi-turreted tanks had lost their "
+"relevance and no prototype was built."
+
+msgid "R218_T_115_long_special"
+msgstr ""
+"The T-115 is a Tier V Soviet medium tank. It features extra frontal armor "
+"and an advanced gun with a high rate of fire and decent damage per shot. The"
+" tank's additional armor allows it to survive enemy fire better than regular"
+" mediums, while mobility remains decent, enabling an aggressive playstyle."
+
+msgid "R218_T_115_short"
+msgstr "T-115"
+
+msgid "R218_T_115_short_special"
+msgstr "Decent armor, high rate of fire"
 
 msgid "R219_Object_265T"
 msgstr "Object 265T"
@@ -5139,6 +5183,9 @@ msgstr "T-44"
 
 msgid "Turret_1_R217_Object_Kust"
 msgstr "Object Kust"
+
+msgid "Turret_1_R218_T_115"
+msgstr "T-115"
 
 msgid "Turret_1_R219_Object_265T"
 msgstr "Object 265T"
@@ -8102,6 +8149,9 @@ msgstr "71-TK-IT"
 msgid "_71_TK_1SH"
 msgstr "71-TK-1SH"
 
+msgid "_71_TK_T"
+msgstr "71-TK"
+
 msgid "_76_Shrap_354T"
 msgstr "Sh-354T"
 
@@ -8128,6 +8178,9 @@ msgstr "Sh-354T"
 
 msgid "_76mm_BR_350B"
 msgstr "BR-350A"
+
+msgid "_76mm_BR_350_P_T"
+msgstr "BP-354 T"
 
 msgid "_76mm_F-32"
 msgstr "76 mm F-32"
@@ -8186,6 +8239,9 @@ msgstr "76 mm L-11"
 msgid "_76mm_L_10_T_28"
 msgstr "76 mm L-10 (T-28)"
 
+msgid "_76mm_L_11_T"
+msgstr "76 mm L-11 T"
+
 msgid "_76mm_OF_350M"
 msgstr "OF-350M"
 
@@ -8242,6 +8298,9 @@ msgstr "UBR-354A (KV-1S)"
 
 msgid "_76mm_UBR_354A_SU_76"
 msgstr "UBR-354A (SU-76)"
+
+msgid "_76mm_UBR_354A_T"
+msgstr "UBR-354A T"
 
 msgid "_76mm_UBR_354A_T_34_F"
 msgstr "UBR-354A (T-34/F)"
@@ -8314,6 +8373,9 @@ msgstr "UOF-354 (KV-1S)"
 
 msgid "_76mm_UOF_354_SU_76"
 msgstr "UOF-354 (SU-76)"
+
+msgid "_76mm_UOF_354_T"
+msgstr "UOF-354 T"
 
 msgid "_76mm_UOF_354_T_34_F"
 msgstr "UOF-354 (T-34/F)"

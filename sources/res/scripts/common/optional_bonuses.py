@@ -138,6 +138,10 @@ def __mergeEntitlementList(total, key, value, isLeaf=False, count=1, *args):
     entitlementList.setdefault('items', []).extend(value.get('items', []) * count)
 
 
+def __mergePets(total, key, value, isLeaf, count, *args):
+    total.setdefault(key, set()).update(value)
+
+
 def __mergeCurrencies(total, key, value, isLeaf=False, count=1, *args):
     totalCurrency = total.setdefault(key, {})
     for currencyCode, currencyData in value.iteritems():
@@ -267,7 +271,8 @@ BONUS_MERGERS = {'credits': __mergeValue,
    'freePremiumCrew': __mergeFreePremiumCrew, 
    'meta': __mergeMeta, 
    'dailyQuestReroll': __mergeDailyQuestReroll, 
-   'noviceReset': __mergeNoviceReset}
+   'noviceReset': __mergeNoviceReset, 
+   'pets': __mergePets}
 ITEM_INVENTORY_CHECKERS = {'vehicles': lambda account, key: account._inventory.getVehicleInvID(key) != 0 and not account._rent.isVehicleRented(account._inventory.getVehicleInvID(key)), 
    'customizations': lambda account, key: account._customizations20.getItems((key,), 0)[key] > 0, 
    'tokens': lambda account, key: account._quests.hasToken(key)}

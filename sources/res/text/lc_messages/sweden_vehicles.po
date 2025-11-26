@@ -208,6 +208,9 @@ msgstr "Stridsyxa"
 msgid "Chassis_S36_Strv_107_12"
 msgstr "Strv 107-12"
 
+msgid "Chassis_S39_Strv_m31"
+msgstr "Strv m/31"
+
 msgid "DB_605"
 msgstr "DB 605"
 
@@ -231,6 +234,9 @@ msgstr "Leyland L60"
 
 msgid "MTU_837_Ea_500"
 msgstr "MTU 837 Ea-500"
+
+msgid "Maybach_DSO"
+msgstr "Maybach DSO"
 
 msgid "Meteor_Mark_IVB"
 msgstr "Meteor Mark IVB"
@@ -691,11 +697,10 @@ msgstr ""
 
 msgid "S23_Strv_81_long_special"
 msgstr ""
-"This Swedish tank takes advantage of terrain irregularities thanks to its "
-"reliable turret that can resist multiple shots, and excellent gun "
-"elevation/depression angles. In addition, the vehicle boasts an outstanding "
-"view range and gun penetration characteristics. On the other hand, it has "
-"weak side armor, and its movement speed leaves much to be desired."
+"This Swedish tank excels on uneven terrain thanks to a reliable turret that "
+"can resist multiple shots and excellent gun depression. In addition, the "
+"vehicle boasts outstanding view range and gun penetration values. On the "
+"other hand, it has weak side armor and its speed leaves much to be desired."
 
 msgid "S23_Strv_81_sabaton"
 msgstr "Primo Victoria"
@@ -711,11 +716,10 @@ msgstr ""
 
 msgid "S23_Strv_81_sabaton_long_special"
 msgstr ""
-"This Swedish tank takes advantage of terrain irregularities thanks to its "
-"reliable turret that can resist multiple shots, and excellent gun "
-"elevation/depression angles. In addition, the vehicle boasts an outstanding "
-"view range and gun penetration characteristics. On the other hand, it has "
-"weak side armor, and its movement speed leaves much to be desired."
+"This Swedish tank excels on uneven terrain thanks to a reliable turret that "
+"can resist multiple shots and excellent gun depression. In addition, the "
+"vehicle boasts outstanding view range and gun penetration values. On the "
+"other hand, it has weak side armor and its speed leaves much to be desired."
 
 msgid "S23_Strv_81_sabaton_short"
 msgstr "P:Victoria"
@@ -1010,6 +1014,31 @@ msgstr ""
 msgid "S36_Strv_107_12_short"
 msgstr "Strv 107-12"
 
+msgid "S39_Strv_m31"
+msgstr "Strv m/31"
+
+msgid "S39_Strv_m31_descr"
+msgstr ""
+"A light tank developed in the 1930s by the Landsverk company. The vehicle "
+"was created to replace the outdated Strv m/21. It had decent mobility and "
+"armament for its time, and its frontal armor thickness reached 24 mm. "
+"However, the Strv m/31 quickly became outdated itself, and so did not enter "
+"mass production. Only three vehicles were manufactured."
+
+msgid "S39_Strv_m31_long_special"
+msgstr ""
+"The Strv m/31 is a Tier III Swedish light tank. Its fast-firing gun with "
+"respectable penetration and excellent dispersion for its tier make it "
+"reliable against lightly and medium armored foes. It also has a decent top "
+"speed and a good power-to-weight ratio. Use its accurate gun and mobility to"
+" attack opponents from afar."
+
+msgid "S39_Strv_m31_short"
+msgstr "Strv m/31"
+
+msgid "S39_Strv_m31_short_special"
+msgstr "Accurate gun, decent mobility"
+
 msgid "SFA_8_cyl_boxer"
 msgstr "SFA 8 cyl boxer"
 
@@ -1171,6 +1200,9 @@ msgstr "Stridsyxa"
 
 msgid "Turret_1_S36_Strv_107_12"
 msgstr "Strv 107-12"
+
+msgid "Turret_1_S39_Strv_m31"
+msgstr "Strv m/31"
 
 msgid "Turret_2_S02_Strv_M42"
 msgstr "Strv m/42"
@@ -1598,6 +1630,9 @@ msgstr "12 cm strvkan L/40"
 msgid "_1_W_Sv"
 msgstr "1 W Sv"
 
+msgid "_1_W_Sv_A"
+msgstr "1 W Sv A"
+
 msgid "_20mm_akan_m_40"
 msgstr "20 mm akan m/40"
 
@@ -1679,6 +1714,9 @@ msgstr "2 st Scania-Vabis L 603/1 (42)"
 msgid "_2_st_Scania_Vabis_L_603_1_74"
 msgstr "2 st Scania-Vabis L 603/1 (74)"
 
+msgid "_37_mm_kan_fm_32"
+msgstr "37 mm kan fm/32"
+
 msgid "_37mm_kan_m_38_49_strv"
 msgstr "37 mm kan m/38-49 strv"
 
@@ -1699,6 +1737,9 @@ msgstr "37 mm pvkan m/38"
 
 msgid "_37mm_sgr_m_34"
 msgstr "sgr m/34"
+
+msgid "_37mm_sgr_m_34_32"
+msgstr "slpprj m/34 (32)"
 
 msgid "_37mm_sgr_m_34_38"
 msgstr "sgr m/34 (38)"
@@ -1721,6 +1762,9 @@ msgstr "slpprj fm/47"
 msgid "_37mm_slpprj_m_38"
 msgstr "slpprj m/38"
 
+msgid "_37mm_slpprj_m_38_32"
+msgstr "slpprj m/38 (32)"
+
 msgid "_37mm_slpprj_m_38_38"
 msgstr "slpprj m/38 (38)"
 
@@ -1732,6 +1776,9 @@ msgstr "slpprj m/49"
 
 msgid "_37mm_uprj_fm_47"
 msgstr "uprj fm/47"
+
+msgid "_37mm_uprj_fm_47_32"
+msgstr "slpprj m/47 (32)"
 
 msgid "_37mm_uprj_fm_47_38"
 msgstr "uprj fm/47 (38)"

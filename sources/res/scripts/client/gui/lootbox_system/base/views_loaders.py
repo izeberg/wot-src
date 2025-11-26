@@ -6,6 +6,7 @@ from gui.customization.constants import CustomizationModes
 from gui.impl.gen import R
 from gui.lootbox_system.base.common import ViewID, Views
 from gui.lootbox_system.base.utils import getIntroVideoUrl, getIsShowIntro, getShopOverlayUrl, getVehicleForStyle
+from gui.Scaleform.daapi.view.common.battle_royale.br_helpers import currentHangarIsBattleRoyale
 from gui.shared.event_dispatcher import hideVehiclePreview, selectVehicleInHangar, showBrowserOverlayView, showStylePreview, showShop, showVehiclePreviewWithoutBottomPanel
 from gui.shared.gui_items import GUI_ITEM_TYPE
 from gui.shared.utils.requesters import REQ_CRITERIA
@@ -57,7 +58,7 @@ def showItemPreview(itemType, itemID, styleID, customization=None, itemsCache=No
             showVehiclePreviewWithoutBottomPanel(itemID, style=style)
     elif itemType == 'customizations':
         style = customization.getItemByID(GUI_ITEM_TYPE.STYLE, itemID)
-        if style.is3D:
+        if style.is3D and not currentHangarIsBattleRoyale():
             showCustomizationHangar(style)
         else:
             showVehicleStylePreview(style)

@@ -1,0 +1,229 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-04-22 10:00+0300\n"
+"PO-Revision-Date: 2025-04-22 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "bonus/credits/description"
+msgstr "Get a Credits bonus to gain more in battle!"
+
+msgid "bonus/credits/title"
+msgstr "Credits"
+
+msgid "bonus/crew/description"
+msgstr "Get a Crew Experience bonus to gain more in battle!"
+
+msgid "bonus/crew/title"
+msgstr "Crew XP"
+
+msgid "bonus/crystal/description"
+msgstr "Get a Bonds bonus to gain more in battle!"
+
+msgid "bonus/crystal/title"
+msgstr "Bonds"
+
+msgid "bonus/events/description"
+msgstr "Get unique stories with rewards along the way!"
+
+msgid "bonus/events/title"
+msgstr "Events"
+
+msgid "bonus/freeXP/title"
+msgstr "Free XP"
+
+msgid "bonus/gold/title"
+msgstr "Gold"
+
+msgid "bonus/showoff/description"
+msgstr "Show off your loyal companion to the world!"
+
+msgid "bonus/showoff/title"
+msgstr "Showcase"
+
+msgid "bonus/tankmenXP/description"
+msgstr "Get a Combat Experience bonus to gain more in battle!"
+
+msgid "bonus/tankmenXP/title"
+msgstr "Combat XP"
+
+msgid "breedName/dog_1"
+msgstr "German shepherd"
+
+msgid "eventView/button"
+msgstr "Affirmative"
+
+msgid "infoPageEntryPoint"
+msgstr "How do I make friends with my pet?"
+
+msgid "message/petAdded/button"
+msgstr "To Den"
+
+msgid "message/petAdded/header"
+msgstr "New %(petType)s added to your account"
+
+msgid "message/petAdded/text"
+msgstr "%(petBreed)s added to den"
+
+msgid "message/petBuy/success"
+msgstr "The %(petName)s successfully purchased. Spent %(price)s."
+
+msgid "message/server_error"
+msgstr "Action temporarily unavailable. Try again later."
+
+msgid "message/synergyLevelUp/header"
+msgstr "%(petName)s's synergy level has increased!"
+
+msgid "message/synergyLevelUp/text"
+msgstr "New animations are now available. Keep interacting to unlock more!"
+
+msgid "message/synergyMaxLevel/header"
+msgstr "%(petName)s's synergy level has increased!"
+
+msgid "message/synergyMaxLevel/text"
+msgstr "New animations are available"
+
+msgid "petDescription/dog_1"
+msgstr ""
+"The German Shepherd moved silently across the battlefield, senses keen. When"
+" a blast floored its handler, the dog dragged the fallen man to cover and "
+"shielded him until rescue came. Wounded but loyal, never leaving his side. A"
+" true soldier's guardian."
+
+msgid "petEventTooltip/body"
+msgstr "%(petName)s found something while you were gone! Go check it out!"
+
+msgid "petHouseMarker/default"
+msgstr "Pet Den"
+
+msgid "petHouseMarker/pet"
+msgstr "Den: {{petName}}"
+
+msgid "petSettings/cancelButton"
+msgstr "Cancel"
+
+msgid "petSettings/naming/subtitle"
+msgstr "Feel free to rename your pet"
+
+msgid "petSettings/naming/tip/subtitle"
+msgstr "Rename your pet"
+
+msgid "petSettings/naming/tip/title"
+msgstr "Change Name"
+
+msgid "petSettings/naming/title"
+msgstr "Pet Name"
+
+msgid "petSettings/saveButton/label"
+msgstr "Save"
+
+msgid "petSettings/uniqueName/tip/subtitle"
+msgstr "This pet has a unique name which cannot be changed."
+
+msgid "petSettings/uniqueName/tip/title"
+msgstr "Unavailable"
+
+msgid "petSettings/visibility/select/always"
+msgstr "Always show"
+
+msgid "petSettings/visibility/select/disableAnimation"
+msgstr "Disable animations"
+
+msgid "petSettings/visibility/select/onlyIntoPetPlace"
+msgstr "Only show in Garage"
+
+msgid "petSettings/visibility/subtitle"
+msgstr "You can send your pet to the Garage if they misbehave."
+
+msgid "petSettings/visibility/tip/subtitle"
+msgstr "Change your pet's visibility mode"
+
+msgid "petSettings/visibility/tip/title"
+msgstr "Pet Visibility"
+
+msgid "petSettings/visibility/title"
+msgstr "Pet visibility"
+
+msgid "petStorage/petBonus/title"
+msgstr "Active bonus:"
+
+msgid "petStorage/petBonus/tooltip/content"
+msgstr ""
+"The bonus is applied to the reward regardless of the battle result. Once the"
+" limit is reached, the bonus is not applied."
+
+msgid "petStorage/petCard/promo"
+msgstr "NEW"
+
+msgid "petStorage/progressbarDescription"
+msgstr "Increases the rewards for a limited number of battles each day."
+
+msgid "petStorage/progressbarTitle"
+msgstr "Battle Bonus Left"
+
+msgid "petStorage/progressbarTooltip/content"
+msgstr ""
+"The number of available battle bonuses will be reset tomorrow. One bonus is "
+"used per battle, and rewards are granted regardless of the battle result."
+
+msgid "petStorage/progressbarTooltip/title"
+msgstr "Available bonuses"
+
+msgid "petStorage/status/select"
+msgstr "Select"
+
+msgid "petStorage/status/selected"
+msgstr "Selected"
+
+msgid "petStorage/title"
+msgstr "Den"
+
+msgid "petStorageTooltip/bonus/caption"
+msgstr "Battles left. Resets tomorrow"
+
+msgid "petStorageTooltip/bonus/currentBonus"
+msgstr "{{value}} for each battle"
+
+msgid "petStorageTooltip/bonus/inProgress"
+msgstr "Battles left"
+
+msgid "petStorageTooltip/bonus/title"
+msgstr "Bonus"
+
+msgid "petType/dog"
+msgstr "dog"
+
+msgid "plusPercentValue"
+msgstr "+{{value}}%"
+
+msgid "promotion/button/challenge"
+msgstr "Missions"
+
+msgid "promotion/button/purchase"
+msgstr "Purchase"
+
+msgid "promotion/challengeInfo/text_1"
+msgstr "Mission information"
+
+msgid "promotion/challengeInfo/title_1"
+msgstr "Missions"
+
+msgid "synergyTooltip/description/done"
+msgstr ""
+"Each level of pet synergy strengthens your friendship. With a Battle Comrade"
+" at your side, you couldn't ask for a finer ally. If you are inactive for a "
+"long time, this level will decrease."
+
+msgid "synergyTooltip/description/inProgress"
+msgstr ""
+"Interact with your pet to raise your friendship level. Reaching the maximum "
+"level earns you the status of Battle Comrade. If you are inactive for a long"
+" time, this level will decrease."
+
+msgid "synergyTooltip/title"
+msgstr "Comrade status"

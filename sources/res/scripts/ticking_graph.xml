@@ -17,6 +17,9 @@
 		<compositionUpdate/>
 		<vehicleHierarchyPostUpdate/>
 		<postModelUpdate/>
+		<addAttributeModifier/>
+		<addAttributeStorage/>
+		<removeAttributeModifier/>
 	</Init>
 	<Simulation>
 		<PreSimulation>

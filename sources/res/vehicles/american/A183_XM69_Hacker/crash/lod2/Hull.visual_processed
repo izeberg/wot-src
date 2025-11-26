@@ -54,32 +54,36 @@
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>tank_mat_inside</identifier>
+					<identifier>tank_chassis_01</identifier>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
-					<fx>shaders/std_effects/PBS_tank.fx</fx>
+					<fx>shaders/std_effects/PBS_tank_crash.fx</fx>
 					<property>
 						metallicGlossMap
-						<Texture>vehicles/american/crash_inside/crash_inside_GMM.dds</Texture>
+						<Texture>vehicles/american/A183_XM69_Hacker/XM69_Hacker_chassis_01_GMM.dds</Texture>
 					</property>
 					<property>
 						normalMap
-						<Texture>vehicles/american/crash_inside/crash_inside_NM.dds</Texture>
+						<Texture>vehicles/american/A183_XM69_Hacker/XM69_Hacker_chassis_01_ANM.dds</Texture>
 					</property>
 					<property>
 						diffuseMap
-						<Texture>vehicles/american/crash_inside/crash_inside_AM.dds</Texture>
+						<Texture>vehicles/american/A183_XM69_Hacker/XM69_Hacker_chassis_01_AM.dds</Texture>
 					</property>
 					<property>
 						excludeMaskAndAOMap
-						<Texture>vehicles/american/crash_inside/crash_inside_AO.dds</Texture>
+						<Texture>vehicles/american/A183_XM69_Hacker/XM69_Hacker_chassis_01_AO.dds</Texture>
 					</property>
 					<property>
-						g_useNormalPackDXT1
-						<Bool>true</Bool>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
+						crashTileMap
+						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.000001 -0.005756 0.852434</groupOrigin>
+				<groupOrigin>0.000000 -0.385012 -0.324539</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				1
@@ -113,41 +117,37 @@
 						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.001744 0.104889 -0.301984</groupOrigin>
+				<groupOrigin>-0.001744 0.104886 -0.301984</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				2
 				<material>
-					<identifier>tank_chassis_01</identifier>
+					<identifier>tank_mat_inside</identifier>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
-					<fx>shaders/std_effects/PBS_tank_crash.fx</fx>
+					<fx>shaders/std_effects/PBS_tank.fx</fx>
 					<property>
 						metallicGlossMap
-						<Texture>vehicles/american/A183_XM69_Hacker/XM69_Hacker_chassis_01_GMM.dds</Texture>
+						<Texture>vehicles/american/crash_inside/crash_inside_GMM.dds</Texture>
 					</property>
 					<property>
 						normalMap
-						<Texture>vehicles/american/A183_XM69_Hacker/XM69_Hacker_chassis_01_ANM.dds</Texture>
+						<Texture>vehicles/american/crash_inside/crash_inside_NM.dds</Texture>
 					</property>
 					<property>
 						diffuseMap
-						<Texture>vehicles/american/A183_XM69_Hacker/XM69_Hacker_chassis_01_AM.dds</Texture>
+						<Texture>vehicles/american/crash_inside/crash_inside_AM.dds</Texture>
 					</property>
 					<property>
 						excludeMaskAndAOMap
-						<Texture>vehicles/american/A183_XM69_Hacker/XM69_Hacker_chassis_01_AO.dds</Texture>
+						<Texture>vehicles/american/crash_inside/crash_inside_AO.dds</Texture>
 					</property>
 					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
-					</property>
-					<property>
-						crashTileMap
-						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
+						g_useNormalPackDXT1
+						<Bool>true</Bool>
 					</property>
 				</material>
-				<groupOrigin>0.000000 -0.385010 -0.324539</groupOrigin>
+				<groupOrigin>-0.000001 -0.005758 0.852434</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -155,5 +155,5 @@
 		<min>-1.863430 -0.909222 -3.881303</min>
 		<max>1.859941 0.806228 3.277336</max>
 	</boundingBox>
-	<geometrySize>376638</geometrySize>
+	<geometrySize>376524</geometrySize>
 </root>

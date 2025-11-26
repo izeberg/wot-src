@@ -10,7 +10,7 @@ NON_VEH_CD = 0
 BpPointsSettings = namedtuple('BpPointsSettings', 'vehTypeCompDescr, isWinner, rank')
 
 class BattlePassIntegrationInterface(object):
-    __slots__ = ('teamSize', 'bonusTypeName', 'bonusType')
+    __slots__ = ()
 
     def getTeamSize(self):
         raise NotImplementedError()
@@ -62,7 +62,7 @@ class BattlePassIntegrationRandom(BattlePassIntegrationInterface):
 
 
 class BattlePassIntegrationEpicBattle(BattlePassIntegrationRandom):
-    __slots__ = ('teamSize', 'bonusTypeName', 'bonusType')
+    __slots__ = ()
 
     def calculatePointsSettings(self, storage):
         vehTypeCompDescr, isWinner, rank = super(BattlePassIntegrationEpicBattle, self).calculatePointsSettings(storage)
@@ -82,7 +82,7 @@ class BattlePassIntegrationEpicBattle(BattlePassIntegrationRandom):
 
 
 class BattlePassIntegrationBattleRoyale(BattlePassIntegrationRandom):
-    __slots__ = ('teamSize', 'bonusTypeName', 'bonusType', 'twinBonusType')
+    __slots__ = ('twinBonusType', )
 
     def __init__(self, teamSize, bonusTypeName):
         super(BattlePassIntegrationBattleRoyale, self).__init__(teamSize, bonusTypeName)

@@ -117,6 +117,16 @@
 			</directory>
 		</directory>
 		<directory>
+			<path>LightMasks</path>
+			<directory>
+				<path>CookieTextures</path>
+				<rule>
+					<allowSplit>false</allowSplit>
+					<pattern>.*</pattern>
+				</rule>
+			</directory>
+		</directory>
+		<directory>
 			<path>MilitaryEnvironment</path>
 			<directory>
 				<path>00_Tiles</path>

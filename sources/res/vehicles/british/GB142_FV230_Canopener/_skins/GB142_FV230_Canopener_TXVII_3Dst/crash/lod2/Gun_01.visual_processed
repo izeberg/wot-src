@@ -24,19 +24,19 @@
 					<fx>shaders/std_effects/PBS_tank_crash.fx</fx>
 					<property>
 						diffuseMap
-						<Texture>vehicles/british/GB142_FV230_Canopener/FV230_Canopener_guns_AM.dds</Texture>
+						<Texture>vehicles/british/GB142_FV230_Canopener/_skins/GB142_FV230_Canopener_TXVII_3Dst/FV230_Canopener_TXVII_3Dst_guns_AM.dds</Texture>
 					</property>
 					<property>
 						normalMap
-						<Texture>vehicles/british/GB142_FV230_Canopener/FV230_Canopener_guns_ANM.dds</Texture>
+						<Texture>vehicles/british/GB142_FV230_Canopener/_skins/GB142_FV230_Canopener_TXVII_3Dst/FV230_Canopener_TXVII_3Dst_guns_ANM.dds</Texture>
 					</property>
 					<property>
 						metallicGlossMap
-						<Texture>vehicles/british/GB142_FV230_Canopener/FV230_Canopener_guns_GMM.dds</Texture>
+						<Texture>vehicles/british/GB142_FV230_Canopener/_skins/GB142_FV230_Canopener_TXVII_3Dst/FV230_Canopener_TXVII_3Dst_guns_GMM.dds</Texture>
 					</property>
 					<property>
 						excludeMaskAndAOMap
-						<Texture>vehicles/british/GB142_FV230_Canopener/FV230_Canopener_guns_AO.dds</Texture>
+						<Texture>vehicles/british/GB142_FV230_Canopener/_skins/GB142_FV230_Canopener_TXVII_3Dst/FV230_Canopener_TXVII_3Dst_guns_AO.dds</Texture>
 					</property>
 					<property>
 						alphaReference
@@ -63,5 +63,6 @@
 		<min>-1.330800 -0.367036 -1.606855</min>
 		<max>0.972664 0.777646 5.894089</max>
 	</boundingBox>
-	<geometrySize>70666</geometrySize>
+	<customBsp>true</customBsp>
+	<geometrySize>71686</geometrySize>
 </root>

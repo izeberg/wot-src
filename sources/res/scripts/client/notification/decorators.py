@@ -1,6 +1,7 @@
 import typing, BigWorld
 from CurrentVehicle import g_currentVehicle
 from PlayerEvents import g_playerEvents
+from constants import DEFAULT_HANGAR_SCENE
 from debug_utils import LOG_ERROR
 from frameworks.wulf import WindowLayer
 from gui.ClientUpdateManager import g_clientUpdateManager
@@ -35,11 +36,13 @@ from messenger.proto import proto_getter
 from messenger.proto.xmpp.xmpp_constants import XMPP_ITEM_TYPE
 from notification.settings import NOTIFICATION_BUTTON_STATE, NOTIFICATION_TYPE, makePathToIcon
 from personal_missions import PM_BRANCH
+from pet_system_common import pet_constants
 from skeletons.gui.battle_matters import IBattleMattersController
-from skeletons.gui.game_control import IBattlePassController, ICollectionsSystemController, ILootBoxSystemController, IMapboxController, ISeniorityAwardsController
+from skeletons.gui.game_control import IBattlePassController, ICollectionsSystemController, IHangarSpaceSwitchController, ILootBoxSystemController, IMapboxController, ISeniorityAwardsController
 from skeletons.gui.app_loader import IAppLoader
 from skeletons.gui.impl import IGuiLoader
 from skeletons.gui.lobby_context import ILobbyContext
+from skeletons.gui.pet_system import IPetSystemController
 from skeletons.gui.shared import IItemsCache
 from skeletons.gui.web import IWebController
 if typing.TYPE_CHECKING:
@@ -1530,3 +1533,38 @@ class VehSkillTreePerkAvailableDecorator(MessageDecorator):
     @staticmethod
     def isPinned():
         return True
+
+
+class PetSystemDecorator(LockButtonMessageDecorator):
+    __appLoader = dependency.descriptor(IAppLoader)
+    __lobbyContext = dependency.descriptor(ILobbyContext)
+    __petController = dependency.descriptor(IPetSystemController)
+    __hangarSwitchController = dependency.descriptor(IHangarSpaceSwitchController)
+
+    def __init__(self, entityID, entity=None, settings=None, model=None):
+        super(PetSystemDecorator, self).__init__(entityID, entity, settings, model)
+        self.__lobbyContext.getServerSettings().onServerSettingsChange += self.__onServerSettingsChange
+        g_eventBus.addListener(HangarSpacesSwitcherEvent.SWITCH_TO_HANGAR_SPACE, self._changeHangarSpace, EVENT_BUS_SCOPE.LOBBY)
+
+    def clear(self):
+        self.__lobbyContext.getServerSettings().onServerSettingsChange -= self.__onServerSettingsChange
+        g_eventBus.removeListener(HangarSpacesSwitcherEvent.SWITCH_TO_HANGAR_SPACE, self._changeHangarSpace, EVENT_BUS_SCOPE.LOBBY)
+        super(PetSystemDecorator, self).clear()
+
+    def _make(self, formatted=None, settings=None):
+        super(PetSystemDecorator, self)._make(formatted, settings)
+        isOnBattleQueueScreen = self.__appLoader.getApp().containerManager.getView(WindowLayer.SUB_VIEW, criteria={POP_UP_CRITERIA.VIEW_ALIAS: VIEW_ALIAS.BATTLE_QUEUE}) is not None
+        self._updateButtonsState(lock=isOnBattleQueueScreen)
+        return
+
+    def _updateButtonsState(self, lock=False):
+        lock |= not self.__petController.isEnabled
+        super(PetSystemDecorator, self)._updateButtonsState(lock)
+
+    def _changeHangarSpace(self, *args, **kwargs):
+        isInDefaultHangar = self.__hangarSwitchController.currentSceneName == DEFAULT_HANGAR_SCENE
+        self._updateButtonsState(lock=not isInDefaultHangar)
+
+    def __onServerSettingsChange(self, diff):
+        if pet_constants.PETS_SYSTEM_CONFIG in diff:
+            self._updateButtonsState()

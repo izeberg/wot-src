@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/sweden/S39_Strv_m31/normal/lod3/Hull</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/sweden/S39_Strv_m31/normal/lod4/Hull</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.036541 -0.635893 -2.768322</min>
+		<max>1.040693 0.671714 2.490272</max>
+	</visibilityBox>
+</root>

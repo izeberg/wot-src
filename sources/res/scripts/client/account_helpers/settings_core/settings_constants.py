@@ -179,6 +179,16 @@ class SOUND(CONST_CONTAINER):
     BASS_BOOST = 'bassBoost'
     NIGHT_MODE = 'nightMode'
     LOW_QUALITY = 'lowQualitySound'
+    PHYSICS_QUALITY = 'physicsQuality'
+
+
+class SoundPhysicsQuality(CONST_CONTAINER):
+    DISABLE = 'disabled'
+    LOW = 'low'
+    MEDIUM = 'medium'
+    HIGH = 'high'
+    ORDER = (
+     HIGH, MEDIUM, LOW, DISABLE)
 
 
 class CONTROLS(CONST_CONTAINER):

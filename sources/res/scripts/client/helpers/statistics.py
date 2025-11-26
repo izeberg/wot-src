@@ -1,6 +1,6 @@
-import BigWorld, ResMgr, Settings
+import BigWorld, ResMgr, Settings, Sound
 from constants import ARENA_PERIOD, INVALID_CLIENT_STATS
-from account_helpers.settings_core.settings_constants import GRAPHICS
+from account_helpers.settings_core.settings_constants import GRAPHICS, SOUND, SoundPhysicsQuality
 from gui.shared.utils.graphics import getGraphicsEngineValue
 from gui.shared.utils import monitor_settings
 from debug_utils import LOG_DEBUG, LOG_NOTE
@@ -225,6 +225,11 @@ class StatisticsCollector(IStatisticsCollector):
            BigWorld.WindowModeBorderless: 2}
         monitorSettings = monitor_settings.g_monitorSettings
         resolutionContainer = monitorSettings.screenResolution
+        recommendedSoundPresetString = Sound.getRecommendedPreset()
+        soundPrefs = Settings.g_instance.userPrefs[Settings.KEY_SOUND_PREFERENCES]
+        selectedSoundPresetString = soundPrefs.readString(SOUND.PHYSICS_QUALITY, recommendedSoundPresetString)
+        recommendedSoundPreset = SoundPhysicsQuality.ORDER.index(recommendedSoundPresetString) & 255
+        selectedSoundPreset = SoundPhysicsQuality.ORDER.index(selectedSoundPresetString) & 255
         data = {'started_at': int(self.gameSession.sessionStartedAt), 
            'map': lastArenaTypeID & 65535, 
            'mode': lastArenaTypeID >> 16, 
@@ -276,7 +281,7 @@ class StatisticsCollector(IStatisticsCollector):
            'active_time': statisticsDict['activeTime'], 
            'loading_time': statisticsDict['loadingTime'], 
            'dynamic_drr': BigWorld.isDRRAutoscalingEnabled(), 
-           'sound_quality': Settings.g_instance.userPrefs[Settings.KEY_SOUND_PREFERENCES].readInt('LQ_render', 0), 
+           'sound_quality': recommendedSoundPreset << 8 | selectedSoundPreset, 
            'hangar_loading_time': self.__hangarLoadingTime, 
            'ram_available': statisticsDict['ramAvailable'], 
            'ram_peak': statisticsDict['ramPeak'], 

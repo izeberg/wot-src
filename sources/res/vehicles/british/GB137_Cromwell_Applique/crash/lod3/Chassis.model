@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>
+			-1.41913 -0.005512 -3.013354
+			<!--BW_String-->
+		</min>
+		<max>1.416322 1.064606 3.011565</max>
+	</visibilityBox>
+	<parent>vehicles/british/GB137_Cromwell_Applique/crash/lod4/Chassis</parent>
+	<extent>192.000000</extent>
+	<nodefullVisual>vehicles/british/GB137_Cromwell_Applique/crash/lod3/Chassis</nodefullVisual>
+	<tank>true</tank>
+</root>

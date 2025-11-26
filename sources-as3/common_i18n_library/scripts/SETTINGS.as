@@ -17,6 +17,8 @@ package
       
       public static const SOUNDS_SPEAKERS_OPTIONALSUB:String = "#settings:sounds/speakers/optionalsub";
       
+      public static const SOUNDS_PHYSICSQUALITY:String = "#settings:sounds/physicsQuality";
+      
       public static const CURSOR_OVERLAPCONTOUR_TOOLTIP:String = "#settings:cursor/overlapContour/tooltip";
       
       public static const MARKER_LEVEL_TOOLTIP:String = "#settings:marker/level/tooltip";
@@ -714,6 +716,28 @@ package
       public static const SOUND_SOUNDMODES_U03:String = "#settings:sound/soundModes/U03";
       
       public static const SOUND_SOUNDMODES_U04:String = "#settings:sound/soundModes/U04";
+      
+      public static const PHYSICSQUALITY:String = "#settings:physicsQuality";
+      
+      public static const SOUNDS_PHYSICSQUALITY_HEADER:String = "#settings:sounds/physicsQuality/header";
+      
+      public static const SOUNDS_PHYSICSQUALITY_BODY:String = "#settings:sounds/physicsQuality/body";
+      
+      public static const SOUNDS_PHYSICSQUALITY_ATTENTION:String = "#settings:sounds/physicsQuality/attention";
+      
+      public static const SOUNDS_PHYSICSQUALITY_OPTIONS_DISABLED:String = "#settings:sounds/physicsQuality/options/disabled";
+      
+      public static const SOUNDS_PHYSICSQUALITY_OPTIONS_LOW:String = "#settings:sounds/physicsQuality/options/low";
+      
+      public static const SOUNDS_PHYSICSQUALITY_OPTIONS_MEDIUM:String = "#settings:sounds/physicsQuality/options/medium";
+      
+      public static const SOUNDS_PHYSICSQUALITY_OPTIONS_HIGH:String = "#settings:sounds/physicsQuality/options/high";
+      
+      public static const SOUNDS_PHYSICSQUALITYRECOMMENDED:String = "#settings:sounds/physicsQualityRecommended";
+      
+      public static const SOUNDS_PHYSICSQUALITYRECOMMENDED_NAME:String = "#settings:sounds/physicsQualityRecommended/name";
+      
+      public static const SOUNDS_PHYSICSQUALITYRECOMMENDED_DESCRIPTION:String = "#settings:sounds/physicsQualityRecommended/description";
       
       public static const VOICE_CHAT_FIELDSET_HEADER:String = "#settings:voice_chat/fieldset/header";
       

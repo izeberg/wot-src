@@ -26,7 +26,7 @@ def isSeasonStatisticsShouldBeShown(comp7Controller=None):
 
 
 def isComp7OnboardingShouldBeShown():
-    return _needToShowComp7Intro(includePreannounced=True) and not _hasParticipantToken()
+    return _needToShowComp7Intro(includePreannounced=True, includeNext=True) and not _hasParticipantToken()
 
 
 def isComp7WhatsNewShouldBeShown():
@@ -50,12 +50,12 @@ def isViewShown(key, settingsCore=None):
 
 
 @dependency.replace_none_kwargs(comp7Ctrl=IComp7Controller)
-def _needToShowComp7Intro(comp7Ctrl=None, includePreannounced=False):
+def _needToShowComp7Intro(comp7Ctrl=None, includePreannounced=False, includeNext=False):
     if not comp7Ctrl.isAvailable():
         return False
     else:
         nextSeason = comp7Ctrl.getNextSeason()
-        launchedNextSeason = nextSeason if nextSeason and not nextSeason.hasTentativeDates() else None
+        launchedNextSeason = nextSeason if includeNext and nextSeason and not nextSeason.hasTentativeDates() else None
         season = comp7Ctrl.getCurrentSeason(includePreannounced=includePreannounced) or launchedNextSeason
         if not season:
             return False

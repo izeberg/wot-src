@@ -62,6 +62,30 @@
 			<shader>\data\shaders\ps_long.fx</shader>
 			<texture>particles/content_forward/PFX_textures/eff_rocket_accelerator.dds</texture>
 		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_customization.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_customization.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_customization_2.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_customization_2.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_forward/PFX_textures/Spark.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_forward/PFX_textures/Spark.dds</texture>
+		</preload>
 		<fn_effect_bin>particles/Environment/interior/95_lost_city_Sand_Storm_Bottom.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/95_lost_city_Sand_Storm_Bottom_Distant.eff</fn_effect_bin>
 		<preloadVisual>particles/mesh_particles/environment/Lightning_mesh_01.visual</preloadVisual>
@@ -154,6 +178,7 @@
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env_UNI_046_OldPail_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env_UNI_046_OldPail_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_envAF_006_BarrelFuel_01.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_envAF_006_BarrelFuel_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_envAM_002_Barrels_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_envAM_002_Barrels_02_03.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_envAM_002_Barrels_04.vfx</fn_effect_bin>
@@ -180,6 +205,8 @@
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_gaf003_RabitzFence_End.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_gaf_026_WoodFence_Tile_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_gaf_026_WoodFence_Tile_02.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle009_BoxCamouflage1.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle009_BoxCamouflage_detonation.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle010_LittleBobbin1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle019_GerBoxes1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mleAF_002_Radiolocator.vfx</fn_effect_bin>
@@ -189,6 +216,8 @@
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_rw010_RailStrelki.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_rw011_Transformator.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_shells_detonation_medium.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_shells_detonation_small.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/random_events/02_malinovka_fires_tiny.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Trees/Broadleaves/inf_tree_bush_dry_fall.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Trees/Broadleaves/inf_tree_bush_dry_fall_small.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Trees/Broadleaves/inf_tree_bush_dry_touchdown.vfx</fn_effect_bin>
@@ -296,6 +325,7 @@
 		<fn_effect_bin>particles/Environment/objects/inf_env_UNI_046_OldPail_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env_UNI_046_OldPail_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_envAF_006_BarrelFuel_01.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_envAF_006_BarrelFuel_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_envAM_002_Barrels_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_envAM_002_Barrels_02_03.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_envAM_002_Barrels_04.eff</fn_effect_bin>
@@ -322,6 +352,8 @@
 		<fn_effect_bin>particles/Environment/objects/inf_gaf003_RabitzFence_End.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_gaf_026_WoodFence_Tile_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_gaf_026_WoodFence_Tile_02.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_mle009_BoxCamouflage1.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_mle009_BoxCamouflage_detonation.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle010_LittleBobbin1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle019_GerBoxes1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mleAF_002_Radiolocator.eff</fn_effect_bin>
@@ -331,6 +363,8 @@
 		<fn_effect_bin>particles/Environment/objects/inf_rw010_RailStrelki.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_rw011_Transformator.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_shells_detonation_medium.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_shells_detonation_small.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/random_events/02_malinovka_fires_tiny.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/trees/Broadleaves/inf_tree_bush_dry_fall.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/trees/Broadleaves/inf_tree_bush_dry_fall_small.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/trees/Broadleaves/inf_tree_bush_dry_touchdown.eff</fn_effect_bin>
@@ -459,6 +493,26 @@
 			<shader>\data\shaders\ps_long.fx</shader>
 			<texture>particles/content_deferred/PFX_textures/eff_rocket_accelerator.dds</texture>
 		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization_2.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization_2.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/Spark.dds</texture>
+		</preload>
 		<fn_effect_bin>particles/Environment/interior/95_lost_city_Sand_Storm_Bottom.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/95_lost_city_Sand_Storm_Bottom_Distant.eff</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/95_lost_city_Sand_Storm_Bottom_Distant.vfx</fn_effect_bin>
@@ -466,6 +520,20 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/95_lost_city_Sand_Storm_Lighting.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/95_lost_city_Sand_Storm_Bottom_big_dust_P.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/95_lost_city_Sand_Storm_Bottom_medium_dust_P.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/random_events/95_lost_city_ctf_missile_trail.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/random_events/95_lost_city_ctf_building_firewave.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/random_events/95_lost_city_ctf_building_firewave_post.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/random_events/95_lost_city_ctf_building_small_explosion_dust.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/random_events/95_lost_city_ctf_building_explosion_post.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/random_events/95_lost_city_ctf_building_explosion_post_wind.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/random_events/95_lost_city_ctf_groundwave.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/random_events/95_lost_city_ctf_groundwave_dust.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/random_events/95_lost_city_ctf_plane_trail.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/random_events/95_lost_city_ctf_building_explosion_dust.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/random_events/95_lost_city_ctf_building_huge_post.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/random_events/95_lost_city_ctf_groundwave_dust_build_small.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/random_events/95_lost_city_ctf_groundwave_dust_build.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/random_events/95_lost_city_ctf_building_explosion_small.vfx</fn_effect_bin>
 		<preloadVisual>particles/mesh_particles/environment/Lightning_mesh_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/environment/Lightning_mesh_02.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/environment/Lightning_mesh_03.visual</preloadVisual>
@@ -569,6 +637,7 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env_UNI_046_OldPail_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env_UNI_046_OldPail_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_envAF_006_BarrelFuel_01.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_envAF_006_BarrelFuel_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_envAM_002_Barrels_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_envAM_002_Barrels_02_03.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_envAM_002_Barrels_04.vfx</fn_effect_bin>
@@ -595,6 +664,8 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_gaf003_RabitzFence_End.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_gaf_026_WoodFence_Tile_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_gaf_026_WoodFence_Tile_02.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle009_BoxCamouflage1.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle009_BoxCamouflage_detonation.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle010_LittleBobbin1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle019_GerBoxes1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mleAF_002_Radiolocator.vfx</fn_effect_bin>
@@ -604,6 +675,8 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_rw010_RailStrelki.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_rw011_Transformator.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_shells_detonation_medium.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_shells_detonation_small.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/random_events/02_malinovka_fires_tiny.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Trees/Broadleaves/inf_tree_bush_dry_fall.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Trees/Broadleaves/inf_tree_bush_dry_fall_small.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Trees/Broadleaves/inf_tree_bush_dry_touchdown.vfx</fn_effect_bin>
@@ -711,6 +784,7 @@
 		<fn_effect_bin>particles/Environment/objects/inf_env_UNI_046_OldPail_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env_UNI_046_OldPail_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_envAF_006_BarrelFuel_01.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_envAF_006_BarrelFuel_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_envAM_002_Barrels_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_envAM_002_Barrels_02_03.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_envAM_002_Barrels_04.eff</fn_effect_bin>
@@ -737,6 +811,8 @@
 		<fn_effect_bin>particles/Environment/objects/inf_gaf003_RabitzFence_End.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_gaf_026_WoodFence_Tile_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_gaf_026_WoodFence_Tile_02.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_mle009_BoxCamouflage1.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_mle009_BoxCamouflage_detonation.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle010_LittleBobbin1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle019_GerBoxes1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mleAF_002_Radiolocator.eff</fn_effect_bin>
@@ -746,6 +822,8 @@
 		<fn_effect_bin>particles/Environment/objects/inf_rw010_RailStrelki.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_rw011_Transformator.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_shells_detonation_medium.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_shells_detonation_small.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/random_events/02_malinovka_fires_tiny.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/trees/Broadleaves/inf_tree_bush_dry_fall.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/trees/Broadleaves/inf_tree_bush_dry_fall_small.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/trees/Broadleaves/inf_tree_bush_dry_touchdown.eff</fn_effect_bin>
