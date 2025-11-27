@@ -4,7 +4,7 @@
 		<min>-8.808652 -4.267308 -9.123160</min>
 		<max>25.152998 19.604252 24.414185</max>
 	</visibilityBox>
-	<parent>content/Buildings/hd_bld_UNI_034_ConstructionSite/normal/lod1/hd_bld_UNI_034_ConstructionSite_03</parent>
+	<nodelessVisual>content/Buildings/hd_bld_UNI_034_ConstructionSite/normal/lod0/hd_bld_UNI_034_ConstructionSite_03</nodelessVisual>
 	<extent>96.000000</extent>
-	<nodefullVisual>content/Buildings/hd_bld_UNI_034_ConstructionSite/normal/lod0/hd_bld_UNI_034_ConstructionSite_03</nodefullVisual>
+	<parent>content/Buildings/hd_bld_UNI_034_ConstructionSite/normal/lod1/hd_bld_UNI_034_ConstructionSite_03</parent>
 </root>
