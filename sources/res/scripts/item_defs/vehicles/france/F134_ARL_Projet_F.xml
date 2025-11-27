@@ -82,11 +82,11 @@
 	<hull>
 		<armor>
 			<armor_1>200</armor_1>
-			<armor_2>200</armor_2>
+			<armor_2>180</armor_2>
 			<armor_3>150</armor_3>
 			<armor_4>120</armor_4>
-			<armor_5>40</armor_5>
-			<armor_6>40</armor_6>
+			<armor_5>60</armor_5>
+			<armor_6>60</armor_6>
 			<armor_7>300</armor_7>
 			<armor_8>0</armor_8>
 			<armor_9>300</armor_9>
@@ -116,12 +116,12 @@
 				50
 				<vehicleDamageFactor>0</vehicleDamageFactor>
 			</armor_24>
-			<armor_26>250</armor_26>
+			<armor_26>340</armor_26>
 			<armor_27>250</armor_27>
-			<armor_28>170</armor_28>
+			<armor_28>180</armor_28>
 			<armor_29>107</armor_29>
-			<armor_30>200</armor_30>
-			<armor_31>250</armor_31>
+			<armor_30>250</armor_30>
+			<armor_31>320</armor_31>
 			<armor_32>140</armor_32>
 			<armor_33>60</armor_33>
 			<armor_34>140</armor_34>
@@ -3104,8 +3104,8 @@
 				<armor_2>200</armor_2>
 				<armor_3>150</armor_3>
 				<armor_4>120</armor_4>
-				<armor_5>40</armor_5>
-				<armor_6>40</armor_6>
+				<armor_5>60</armor_5>
+				<armor_6>60</armor_6>
 				<armor_7>120</armor_7>
 				<armor_8>0</armor_8>
 				<armor_9>230</armor_9>
@@ -3155,7 +3155,7 @@
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_1>
 						<armor_2>
-							200
+							220
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_2>
 						<armor_3>
@@ -3183,7 +3183,7 @@
 					<pitchLimits>
 						<minPitch>0 -20 1 -20</minPitch>
 						<maxPitch>
-							0.00000 9.00 0.01667 5.00 0.04722 5.00 0.05000 9.00 0.40000 9.00 0.44000 6.00 0.56000 6.00 0.60000 9.00 1.00000 9.00
+							0.00000 8.00 0.01667 5.00 0.04722 5.00 0.05000 8.00 0.40000 8.00 0.44000 6.00 0.56000 6.00 0.60000 8.00 1.00000 8.00
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
@@ -3191,13 +3191,13 @@
 						0.144
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
-					<reloadTime>35</reloadTime>
+					<reloadTime>32</reloadTime>
 					<clip>
 						<count>3</count>
 						<rate>20</rate>
 					</clip>
 					<aimingTime>
-						2.6
+						2.5
 						<!--BW_String-->
 					</aimingTime>
 					<shotDispersionFactors>

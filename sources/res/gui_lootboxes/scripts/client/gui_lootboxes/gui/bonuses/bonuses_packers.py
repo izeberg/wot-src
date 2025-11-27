@@ -1,6 +1,7 @@
 import copy, logging, typing, constants
 from dog_tags_common.components_config import componentConfigAdapter
 from dog_tags_common.config.common import ComponentViewType
+from gui.Scaleform.locale.TOOLTIPS import TOOLTIPS
 from gui.collection.collections_constants import COLLECTION_ITEM_BONUS_NAME
 from gui.collection.collections_helpers import getItemName, getCollectionRes
 from gui.impl import backport
@@ -18,13 +19,16 @@ from gui.impl.gen import R
 from gui.server_events.bonuses import getServiceBonuses, CollectionEntitlementBonus, AnyCollectionItemBonus
 from gui.server_events.recruit_helper import getRecruitInfo
 from gui.shared.gui_items.Vehicle import getNationLessName
-from gui.shared.missions.packers.bonus import BACKPORT_TOOLTIP_CONTENT_ID, BonusUIPacker, CustomizationBonusUIPacker, SimpleBonusUIPacker, VehiclesBonusUIPacker, getDefaultBonusPackersMap, TankmenBonusUIPacker, TokenBonusUIPacker, CrewBookBonusUIPacker, DogTagComponentsUIPacker, PremiumDaysBonusPacker
+from gui.shared.missions.packers.bonus import BACKPORT_TOOLTIP_CONTENT_ID, BonusUIPacker, CustomizationBonusUIPacker, SimpleBonusUIPacker, VehiclesBonusUIPacker, getDefaultBonusPackersMap, TankmenBonusUIPacker, TokenBonusUIPacker, CrewBookBonusUIPacker, DogTagComponentsUIPacker, PremiumDaysBonusPacker, getLocalizedBonusName, BaseBonusUIPacker
 from gui_lootboxes.gui.impl.gen.view_models.views.lobby.gui_lootboxes.dog_tag_bonus_model import DogTagBonusModel, DogTagType
 from gui_lootboxes.gui.impl.gen.view_models.views.lobby.gui_lootboxes.vehicle_bonus_model import VehicleBonusModel, VehicleType
 from helpers import dependency
 from items.tankmen import RECRUIT_TMAN_TOKEN_PREFIX
 from shared_utils import first
 from skeletons.gui.game_control import ICollectionsSystemController
+from gui.impl.gen.view_models.common.missions.bonuses.bonus_model import BonusModel
+if typing.TYPE_CHECKING:
+    from gui.server_events.bonuses import CurrenciesBonus
 _logger = logging.getLogger(__name__)
 EXTRA_BONUS_PACKER_MAPS_DEFAULT = {}
 EXTRA_BONUS_PACKER_MAPS_REWARDS = {}
@@ -53,7 +57,8 @@ def getStatisticsBonusPackerMap():
        'collectionItem': LootBoxAnyCollectionItemBonusUIPacker(), 
        'anyCollectionItem': LootBoxAnyCollectionItemBonusUIPacker(), 
        'dogTagComponents': LootBoxDogTagUIPacker(), 
-       constants.PREMIUM_ENTITLEMENTS.PLUS: PremiumDaysBonusPacker()})
+       constants.PREMIUM_ENTITLEMENTS.PLUS: PremiumDaysBonusPacker(), 
+       'currencies': LootBoxCurrenciesBonusUIPacker()})
     mapping.update(EXTRA_BONUS_PACKER_STATISTICS)
     return mapping
 
@@ -726,3 +731,46 @@ class LootBoxAnyCollectionItemBonusUIPacker(LootBoxCollectionItemBonusUIPacker):
     @classmethod
     def _getBonusModel(cls):
         return IconBonusModel()
+
+
+class LootBoxCurrenciesBonusUIPacker(BaseBonusUIPacker):
+
+    @classmethod
+    def _pack(cls, bonus):
+        result = []
+        for code, _ in bonus.getCurrencies().iteritems():
+            label = getLocalizedBonusName(code)
+            result.append(cls._packSingleBonus(bonus, code, label if label else ''))
+
+        return result
+
+    @classmethod
+    def _packSingleBonus(cls, bonus, code, label):
+        model = cls._getBonusModel()
+        model.setName(code)
+        model.setIsCompensation(bonus.isCompensation())
+        model.setValue(str(bonus.getCurrencies()[code].get('count', 0)))
+        model.setLabel(label)
+        return model
+
+    @classmethod
+    def _getToolTip(cls, bonus):
+        result = []
+        for code, _ in bonus.getCurrencies().iteritems():
+            header = TOOLTIPS.getAwardHeader(code)
+            body = TOOLTIPS.getAwardBody(code)
+            result.append(createTooltipData(makeTooltip(header or None, body or None)))
+
+        return result
+
+    @classmethod
+    def _getContentId(cls, bonus):
+        result = []
+        for _ in bonus.getCurrencies():
+            result.append(BACKPORT_TOOLTIP_CONTENT_ID)
+
+        return result
+
+    @classmethod
+    def _getBonusModel(cls):
+        return BonusModel()

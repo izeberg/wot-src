@@ -434,6 +434,7 @@ class CurrenciesBonus(IntegralBonus):
 
     def __init__(self, *args, **kwargs):
         super(CurrenciesBonus, self).__init__(*args, **kwargs)
+        self._allValues = self._value
         self._code = self._value.keys()[0]
         self._value = self._value[self._code]['count']
 
@@ -471,6 +472,9 @@ class CurrenciesBonus(IntegralBonus):
             'icon': {AWARDS_SIZES.SMALL: self.getIconBySize(AWARDS_SIZES.SMALL), AWARDS_SIZES.BIG: self.getIconBySize(AWARDS_SIZES.BIG)}, 
             'name': backport.text(awardItem.header()) if awardItem else '', 
             'description': backport.text(awardItem.body()) if awardItem else ''}]
+
+    def getCurrencies(self):
+        return self._allValues
 
 
 class SaCoinCompensationBonus(SimpleBonus):

@@ -30,6 +30,7 @@ def packNyLeaderboardRewards(rewards, model, tooltips, ctx=None):
 
 
 def _preprocessRewards(rewards):
+    _preprocessStyle(rewards)
     for key, val in _BONUS_SWAP.iteritems():
         if key in rewards:
             rewards[val] = rewards.pop(key)
@@ -45,6 +46,14 @@ def _preprocessRewards(rewards):
     accountDossier = dossier.setdefault(DOSSIER_TYPE.ACCOUNT, {})
     accountDossier.update(remapBadges)
     _remapStrKeysToInt('vehicles', rewards)
+
+
+def _preprocessStyle(rewards):
+    customizations = rewards.get('customizations', [])
+    if customizations:
+        rewards['customizations'] = [ cData for cData in customizations if not cData.get('boundToCurrentVehicle', False) ]
+        if not rewards['customizations']:
+            rewards.pop('customizations')
 
 
 def _remapStrKeysToInt(rewardKey, rewards):

@@ -11,8 +11,8 @@
 	<postProgressionTree>role_ATSPG_support</postProgressionTree>
 	<customRoleSlotOptions>3 5</customRoleSlotOptions>
 	<speedLimits>
-		<forward>33</forward>
-		<backward>12</backward>
+		<forward>30</forward>
+		<backward>10</backward>
 	</speedLimits>
 	<invisibility>
 		<moving>
@@ -2975,12 +2975,12 @@
 						<gun>50</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.38
+						0.35
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>33</reloadTime>
+					<reloadTime>30</reloadTime>
 					<aimingTime>
-						2.6
+						2.4
 						<!--BW_String-->
 					</aimingTime>
 					<clip>
@@ -3005,7 +3005,7 @@
 					<turretYawLimits>-30 30</turretYawLimits>
 					<pitchLimits>
 						<minPitch>0 -20 1 -20</minPitch>
-						<maxPitch>0 10 1 10</maxPitch>
+						<maxPitch>0 8 1 8</maxPitch>
 					</pitchLimits>
 					<customizationSlots>
 						<slot>
@@ -3689,7 +3689,7 @@
 			<engines>
 				<Maybach_HL_275>
 					<smplEnginePower>580</smplEnginePower>
-					<smplFwMaxSpeed>33</smplFwMaxSpeed>
+					<smplFwMaxSpeed>30</smplFwMaxSpeed>
 				</Maybach_HL_275>
 			</engines>
 			<chassis>
@@ -3697,19 +3697,19 @@
 					<grounds>
 						<soft>
 							<rollingFriction>
-								0.2318
+								0.18544
 								<!--BW_String-->
 							</rollingFriction>
 						</soft>
 						<medium>
 							<rollingFriction>
-								0.1352
+								0.10816
 								<!--BW_String-->
 							</rollingFriction>
 						</medium>
 						<firm>
 							<rollingFriction>
-								0.12558
+								0.10046
 								<!--BW_String-->
 							</rollingFriction>
 						</firm>

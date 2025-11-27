@@ -63,12 +63,9 @@ class NyLeaderboardRewardView(ViewImpl):
          (
           self.__dataProvider.onPlayerStatsUpdated, self.__onPlayerStatsUpdated))
 
-    def initialize(self, *args, **kwargs):
-        self.__makeRequestPlayerStats()
-        super(NyLeaderboardRewardView, self).initialize(*args, **kwargs)
-
     def _onLoading(self, *args, **kwargs):
         super(NyLeaderboardRewardView, self)._onLoading(*args, **kwargs)
+        self.__makeRequestPlayerStats()
         with self.getViewModel().transaction() as (tx):
             self.__filterDogtags()
             if not self.__isRequestInProgress:
@@ -113,7 +110,7 @@ class NyLeaderboardRewardView(ViewImpl):
             playerGrade = componentProgress.grade
             if not comp.grades:
                 return (playerPos, playerTop)
-            playerTop = self.__getGrade(playerPos, playerGrade, comp)
+            playerTop = self.__getGrade(playerGrade, comp)
             self.__top = playerTop
             return (
              playerPos, playerTop)
@@ -125,7 +122,7 @@ class NyLeaderboardRewardView(ViewImpl):
             return (playerPos, playerTop)
         playerStats = self.__dataProvider.playerStats
         config = self.__dataProvider.config
-        if not (playerStats and config and config.seasons):
+        if not (playerStats and config):
             return (playerPos, playerTop)
         top = self.__dataProvider.getRewardedTopThreshold(self.__seasonID)
         playerPos = self.__getPlayerPos(self.__seasonID)
@@ -133,12 +130,10 @@ class NyLeaderboardRewardView(ViewImpl):
         return (
          playerPos, top)
 
-    def __getGrade(self, playerPos, playerGrade, comp):
+    def __getGrade(self, playerGrade, comp):
         nextGrade = playerGrade + 1
         if nextGrade >= len(comp.grades):
             return self.__getMaxGrade()
-        if playerPos == 1:
-            return comp.grades[playerGrade]
         return comp.grades[nextGrade] - 1
 
     def __getMaxGrade(self):

@@ -170,7 +170,7 @@ class NewYearWeeklyRewardsView(ViewImpl):
              CurrentNYConstants.NY_STATIC_DOGTAG, partial(self.__ctxUpdater, top)))
             topsModel.addViewModel(topRewardModel)
 
-        if nextUserTopIdx + 1 < len(topsModel):
+        if nextUserTopIdx < len(topsModel):
             nextTopRewardModel = topsModel[nextUserTopIdx]
             nextTopRewardModel.setPointsToTop(user.pointsByNextTop)
 

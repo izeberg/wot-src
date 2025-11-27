@@ -1,5 +1,7 @@
 package net.wg.gui.lobby.battlequeue
 {
+   import flash.display.Graphics;
+   import flash.display.Sprite;
    import flash.events.KeyboardEvent;
    import flash.text.TextField;
    import flash.ui.Keyboard;
@@ -79,9 +81,12 @@ package net.wg.gui.lobby.battlequeue
       
       private var _viewFrameHelper:FrameHelper;
       
+      private var _fixClickOnHangar:Sprite;
+      
       public function BattleQueue()
       {
          super();
+         this.createLayerForClick();
       }
       
       private static function getListHeight(param1:String) : int
@@ -97,10 +102,34 @@ package net.wg.gui.lobby.battlequeue
          return LIST_HEIGHT_USUAL;
       }
       
+      private function createLayerForClick() : void
+      {
+         this._fixClickOnHangar = new Sprite();
+         var _loc1_:Graphics = this._fixClickOnHangar.graphics;
+         _loc1_.beginFill(0);
+         _loc1_.drawRect(0,0,100,100);
+         _loc1_.endFill();
+         this._fixClickOnHangar.alpha = 0;
+         this._fixClickOnHangar.name = "fixClickOnHangar";
+         addChildAt(this._fixClickOnHangar,0);
+      }
+      
       override public function updateStage(param1:Number, param2:Number) : void
       {
+         if(this._fixClickOnHangar)
+         {
+            removeChild(this._fixClickOnHangar);
+         }
          x = param1 - actualWidth >> 1;
          y = Math.max(Math.min(-parent.y + (param2 - actualHeight >> 1) ^ 0,MAX_POS_Y),-MAX_POS_Y);
+         if(this._fixClickOnHangar)
+         {
+            this._fixClickOnHangar.width = param1;
+            this._fixClickOnHangar.height = param2;
+            this._fixClickOnHangar.x = -x;
+            this._fixClickOnHangar.y = -y;
+            addChildAt(this._fixClickOnHangar,0);
+         }
       }
       
       override protected function configUI() : void
@@ -158,6 +187,7 @@ package net.wg.gui.lobby.battlequeue
          this.tankIcon = null;
          this.battleIconBg.dispose();
          this.battleIconBg = null;
+         this._fixClickOnHangar = null;
          super.onDispose();
       }
       

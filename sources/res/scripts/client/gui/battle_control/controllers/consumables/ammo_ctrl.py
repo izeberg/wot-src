@@ -111,7 +111,7 @@ class _GunSettings(namedtuple('_GunSettings', 'clip burst dualgun shots reloadEf
                     if distance > maxDistance:
                         distance = int(maxDistance)
                     pierceFactor = computeDistanceFactor(shellDescr, distance, 'pierceFactor')
-                    piercingPower = piercing[0] * pierceFactor
+                    piercingPower = int(piercing[0] * pierceFactor)
                     piercings.append(piercingPower)
 
                 return tuple(piercings)

@@ -88,13 +88,14 @@ class ShellProvider(VehicleBaseArrayProvider):
         hasDistanceFactor = item.descriptor.distanceFactor is not None
         for rowParams in _SHELLS_INFO_PARAMS:
             for paramName in rowParams:
-                formattedParam = formatParameter(paramName, shellParam.get(paramName))
-                if formattedParam is None:
-                    continue
                 if hasDistanceFactor and paramName in _DISTANCE_FACTOR_KEYS:
                     overridedParamName, visualParamName = _DISTANCE_FACTOR_PARAMS[paramName]
                     formattedParam = formatParameter(overridedParamName, shellParam.get(overridedParamName))
                     paramName = visualParamName
+                else:
+                    formattedParam = formatParameter(paramName, shellParam.get(paramName))
+                if formattedParam is None:
+                    continue
                 model = self._getSpecificationsModel(paramName, formattedParam)
                 specifications.addViewModel(model)
                 break

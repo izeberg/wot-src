@@ -9,7 +9,7 @@ from gui import GUI_SETTINGS
 from gui.shared.formatters import text_styles
 from gui.shared.gui_items import KPI
 from gui.shared.gui_items.Tankman import Tankman, isSkillLearnt, crewMemberRealSkillLevel
-from gui.shared.items_parameters import calcGunParams, calcShellParams, getShotsPerMinute, getGunDescriptors, isAutoReloadGun, isDualGun, isDualAccuracy, isAutoShootGun, isAutoShootFlameGun
+from gui.shared.items_parameters import calcGunParams, calcShellParams, getShotsPerMinute, getGunDescriptors, isAutoReloadGun, isDualGun, isDualAccuracy, isAutoShootGun, isAutoShootFlameGun, PIERCING_DISTANCES
 from gui.shared.items_parameters import functions, getShellDescriptors, NO_DATA
 from gui.shared.items_parameters.comparator import rateParameterState, PARAM_STATE
 from gui.shared.items_parameters.functions import getBasicShell, getRocketAccelerationKpiFactors
@@ -34,7 +34,6 @@ if typing.TYPE_CHECKING:
 _logger = logging.getLogger(__name__)
 MAX_VISION_RADIUS = 500
 MIN_VISION_RADIUS = 150
-PIERCING_DISTANCES = (50, 500)
 ONE_HUNDRED_PERCENTS = 100
 MIN_RELATIVE_VALUE = 1
 EXTRAS_CAMOUFLAGE = 'camouflageExtras'
@@ -673,12 +672,12 @@ class VehicleParams(_ParameterBase):
             minDamage *= damageMulKpi
             maxDamage *= damageMulKpi
         return (
-         int(floor(minDamage - minDamage * lowerBoundRandomization)),
-         int(ceil(maxDamage + maxDamage * upperBoundRandomization)))
+         minDamage - minDamage * lowerBoundRandomization,
+         maxDamage + maxDamage * upperBoundRandomization)
 
     @property
     def avgDamage(self):
-        return int(round(sum(self.damage) / 2.0))
+        return int(int(sum(self.damage)) * 0.5)
 
     @property
     def chargeTime(self):
@@ -713,15 +712,25 @@ class VehicleParams(_ParameterBase):
 
     @property
     def piercingPower(self):
-        piercingPower = self._itemDescr.shot.piercingPower[0]
-        piercingPowerRandomization = self._itemDescr.shot.shell.piercingPowerRandomization
-        lowerRandomizationFactor = self.damageAndPiercingDistributionLowerBound / 100.0
-        upperRandomizationFactor = self.damageAndPiercingDistributionUpperBound / 100.0
-        lowerBoundRandomization = piercingPowerRandomization - lowerRandomizationFactor
-        upperBoundRandomization = piercingPowerRandomization + upperRandomizationFactor
-        return (
-         int(floor(piercingPower - piercingPower * lowerBoundRandomization)),
-         int(ceil(piercingPower + piercingPower * upperBoundRandomization)))
+        shot = self._itemDescr.shot
+        shell = shot.shell
+        if shell.distanceFactor is not None:
+            pierceFactor = computeDistanceFactor(shell, PIERCING_DISTANCES[0], 'pierceFactor')
+            piercingPower = shot.piercingPower[0] * pierceFactor
+            pierceFactor = computeDistanceFactor(shell, PIERCING_DISTANCES[1], 'pierceFactor')
+            maxPiercingPower = shot.piercingPower[0] * pierceFactor
+            return (
+             int(piercingPower), int(maxPiercingPower))
+        else:
+            piercingPower = shot.piercingPower[0]
+            piercingPowerRandomization = shell.piercingPowerRandomization
+            lowerRandomizationFactor = self.damageAndPiercingDistributionLowerBound / 100.0
+            upperRandomizationFactor = self.damageAndPiercingDistributionUpperBound / 100.0
+            lowerBoundRandomization = piercingPowerRandomization - lowerRandomizationFactor
+            upperBoundRandomization = piercingPowerRandomization + upperRandomizationFactor
+            return (
+             int(floor(piercingPower - piercingPower * lowerBoundRandomization)),
+             int(ceil(piercingPower + piercingPower * upperBoundRandomization)))
 
     @property
     def reloadTime(self):
@@ -1841,7 +1850,7 @@ class ShellParams(CompatibleParams):
                     distance = int(maxDistance)
                 if self._itemDescr.distanceFactor is not None:
                     pierceFactor = computeDistanceFactor(self._itemDescr, distance, 'pierceFactor')
-                    piercingPower = shellDescriptor.piercingPower[0] * pierceFactor
+                    piercingPower = int(shellDescriptor.piercingPower[0] * pierceFactor)
                 else:
                     piercingPower = shellDescriptor.piercingPower
                     piercingPower = PIERCING_POWER.computePiercingPowerAtDist(piercingPower, distance, maxDistance)

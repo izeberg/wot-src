@@ -167,7 +167,7 @@
 						<Texture>vehicles/russian/Crash_inside/crash_inside_AO.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.001209 0.004006 -0.119818</groupOrigin>
+				<groupOrigin>-0.001857 0.004006 -0.119818</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -175,6 +175,6 @@
 		<min>-1.750000 -0.829182 -2.957592</min>
 		<max>1.750000 0.519804 3.032926</max>
 	</boundingBox>
-	<geometrySize>326902</geometrySize>
+	<geometrySize>326978</geometrySize>
 	<minUVDensity>0.003126</minUVDensity>
 </root>

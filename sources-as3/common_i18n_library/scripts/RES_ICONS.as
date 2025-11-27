@@ -25155,6 +25155,8 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_RATION_CZECH:String = "../maps/icons/quests/bonuses/s180x135/ration_czech.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_RATION_INTUNION:String = "../maps/icons/quests/bonuses/s180x135/ration_intunion.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_RATION_ITALY:String = "../maps/icons/quests/bonuses/s180x135/ration_italy.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_RATION_JAPAN:String = "../maps/icons/quests/bonuses/s180x135/ration_japan.png";

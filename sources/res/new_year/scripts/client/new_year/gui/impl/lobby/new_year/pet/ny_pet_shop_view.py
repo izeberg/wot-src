@@ -81,16 +81,16 @@ class NyPetShopView(SubModelPresenter):
         card = ShopCard()
         config = self._dataProvider.config.indicators[indicatorName]
         indicatorType = IndicatorType(indicatorName.lower())
-        isLocked = self._dataProvider.initialPlayerInfo.indicators.get(indicatorName, -1) < 0
+        giftsLeft = config.giftCountUnlock - self._dataProvider.initialPlayerInfo.giftCollected
         card.setType(indicatorType)
-        card.setLettersToUnlock(config.giftCountUnlock)
+        card.setLettersToUnlock(max(0, giftsLeft))
         card.setCurrentPointPrice(config.item.price)
         card.setCurrentPrice(config.item.price)
         card.setId(config.item.id)
         card.setLoyaltyPoints(config.item.leaderboardPoint)
         card.setVitalityPoints(config.item.scalePoint)
         card.setItemsInInventory(self._dataProvider.getIndicatorCurrency(indicatorName))
-        card.setIsLocked(isLocked)
+        card.setIsLocked(giftsLeft > 0)
         return card
 
     def __onBuy(self):

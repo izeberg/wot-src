@@ -26,6 +26,7 @@ _HIDE_WAITING_DELAY = 30
 class NewYearLeaderboardView(HistorySubModelPresenter):
     __slots__ = ('__timer', )
     _WAITING_NAME = 'leaderboardRewards'
+    _STOP_DELAY = -1.0
     _INTERNAL_VIEW_STATE = InternalViewState.RACCOON
     _webRequester = dependency.descriptor(ITamagotchiWebRequester)
     _dataProvider = dependency.descriptor(ITamagotchiDataProvider)
@@ -37,6 +38,10 @@ class NewYearLeaderboardView(HistorySubModelPresenter):
     @property
     def isLeaderboardReady(self):
         return not self.getViewModel().getIsLoading() and not self.__isRequiredDataMissed() and self.getViewModel().getState() != State.ERROR
+
+    @property
+    def timeToNextUpdate(self):
+        return max(self._dataProvider.leaderboard.nextUpdateTime + _MIN_REQ_DELAY - getServerUTCTime(), _MIN_REQ_DELAY)
 
     def initialize(self, *args, **kwargs):
         self.getViewModel().setState(State.INITIAL)
@@ -189,6 +194,7 @@ class NewYearLeaderboardView(HistorySubModelPresenter):
         user = leaderboard.user
         page = leaderboard.page
         leaderboard = page.leaderboard
+        pointsModel = model.personalPoints
         rows = []
         for row in leaderboard:
             playerModel = NyPlayerModel()
@@ -198,6 +204,8 @@ class NewYearLeaderboardView(HistorySubModelPresenter):
             playerModel.setPositionType(self.__getPositionType(row.upDown))
             if row.position == user.position:
                 model.selfRank.setPositionType(self.__getPositionType(row.upDown))
+            if row.position + 1 == user.position:
+                pointsModel.setOpponentPoints(max(row.point - user.points, 0))
             rows.append(playerModel)
 
         start, end = leaderboard[0].position, leaderboard[(-1)].position
@@ -229,14 +237,16 @@ class NewYearLeaderboardView(HistorySubModelPresenter):
             switchCallback(parent=self.getParentWindow())
 
     def __runDelayedUpdate(self):
-        timeToNextUpdate = max(self._dataProvider.leaderboard.nextUpdateTime + _MIN_REQ_DELAY - getServerUTCTime(), _MIN_REQ_DELAY)
-        self.__timer.delayCallback(timeToNextUpdate, self.__timerUpdate)
+        self.__timer.delayCallback(self.timeToNextUpdate, self.__timerUpdate)
 
     def __delayedHideWaiting(self):
         self.__timer.delayCallback(_HIDE_WAITING_DELAY, self.__hideRewardWaiting)
 
     def __timerUpdate(self):
+        if self._dataProvider.isLeaderboardFinished:
+            return self._STOP_DELAY
         self._requestUpdate(self.getViewModel().getCurrentPage(), actionType=self.getViewModel().getLastAction())
+        return self.timeToNextUpdate
 
     def __hideRewardWaiting(self):
         Waiting.hide(self._WAITING_NAME)
