@@ -1,27 +1,30 @@
+from __future__ import absolute_import
 import logging
 from account_helpers import AccountSettings
 from account_helpers.AccountSettings import SENIORITY_AWARDS_COINS_REMINDER_SHOWN_TIMESTAMP
-from gui.Scaleform.genConsts.TOOLTIPS_CONSTANTS import TOOLTIPS_CONSTANTS
-from gui.impl.gen.view_models.views.lobby.blueprints.blueprint_screen_tooltips import BlueprintScreenTooltips
-from gui.impl.lobby.seniority_awards.tooltip.seniority_awards_tooltip import SeniorityAwardsTooltip
-from gui.impl.lobby.seniority_awards.seniority_awards_helper import getVehicleCD, getRewardCategoryForUI
-from helpers import dependency, time_utils
 from frameworks.wulf import ViewSettings, WindowLayer
+from gui.Scaleform.daapi.view.lobby.store.browser.shop_helpers import getPlayerSeniorityAwardsUrl
+from gui.Scaleform.genConsts.TOOLTIPS_CONSTANTS import TOOLTIPS_CONSTANTS
 from gui.game_control.seniority_awards_controller import WDR_CURRENCY
-from gui.impl.auxiliary.rewards_helper import getRewardTooltipContent
 from gui.impl import backport
+from gui.impl.auxiliary.rewards_helper import getRewardTooltipContent
 from gui.impl.auxiliary.rewards_helper import getSeniorityAwardsBonuses
-from gui.impl.backport import BackportTooltipWindow, createTooltipData
+from gui.impl.backport import createTooltipData
 from gui.impl.gen import R
+from gui.impl.gen.view_models.views.lobby.blueprints.blueprint_screen_tooltips import BlueprintScreenTooltips
 from gui.impl.gen.view_models.views.lobby.seniority_awards.seniority_reward_award_view_model import SeniorityRewardAwardViewModel, ShopOnOpenState
+from gui.impl.lobby.common.view_wrappers import createBackportTooltipDecorator
+from gui.impl.lobby.seniority_awards.seniority_awards_helper import getVehicleCD, getRewardCategoryForUI
 from gui.impl.lobby.seniority_awards.seniority_awards_sounds import SENIORITY_REWARD_SOUND_SPACE
+from gui.impl.lobby.seniority_awards.tooltip.seniority_awards_tooltip import SeniorityAwardsTooltip
 from gui.impl.pub import ViewImpl
 from gui.impl.pub.lobby_window import LobbyNotificationWindow
 from gui.shared.event_dispatcher import showShop
+from gui.shared.system_factory import collectSeniorityAwardViewClass
+from helpers import dependency, time_utils
 from skeletons.gui.game_control import ISeniorityAwardsController
 from skeletons.gui.lobby_context import ILobbyContext
 from skeletons.gui.shared import IItemsCache
-from gui.Scaleform.daapi.view.lobby.store.browser.shop_helpers import getPlayerSeniorityAwardsUrl
 _logger = logging.getLogger(__name__)
 _T50_2_STYLE_NAME = backport.text(R.strings.vehicle_customization.special_style.t50_2())
 _AT_BADGE = backport.text(R.strings.badge.badge_56())
@@ -50,10 +53,7 @@ class SeniorityRewardAwardView(ViewImpl):
     __seniorityAwardsCtrl = dependency.descriptor(ISeniorityAwardsController)
 
     def __init__(self, contentResId, *args, **kwargs):
-        settings = ViewSettings(contentResId)
-        settings.model = SeniorityRewardAwardViewModel()
-        settings.args = args
-        settings.kwargs = kwargs
+        settings = ViewSettings(layoutID=contentResId, model=SeniorityRewardAwardViewModel(), args=args, kwargs=kwargs)
         super(SeniorityRewardAwardView, self).__init__(settings)
         self.__bonuses = []
         self.__specialCurrencies = {}
@@ -63,18 +63,16 @@ class SeniorityRewardAwardView(ViewImpl):
     def viewModel(self):
         return self.getViewModel()
 
+    @createBackportTooltipDecorator()
     def createToolTip(self, event):
-        if event.contentID == R.views.common.tooltip_window.backport_tooltip_content.BackportTooltipContent():
-            tooltipData = self.__getBackportTooltipData(event)
-            window = BackportTooltipWindow(tooltipData, self.getParentWindow(), event) if tooltipData is not None else None
-            if window is not None:
-                window.load()
-            return window
         return super(SeniorityRewardAwardView, self).createToolTip(event)
 
+    def getTooltipData(self, event):
+        return self.__getBackportTooltipData(event)
+
     def createToolTipContent(self, event, contentID):
-        if contentID == R.views.lobby.seniority_awards.SeniorityAwardsTooltip():
-            return SeniorityAwardsTooltip(str(self.viewModel.getCategory()), self.__seniorityAwardsCtrl.yearsInGame)
+        if contentID == R.views.mono.seniority_awards.tooltips.seniority_tooltip():
+            return SeniorityAwardsTooltip(str(self.viewModel.getCategory()), str(self.viewModel.getMaxCategory()), self.__seniorityAwardsCtrl.yearsInGame)
         tooltipData = self.__getBackportTooltipData(event)
         return getRewardTooltipContent(event, tooltipData)
 
@@ -92,6 +90,7 @@ class SeniorityRewardAwardView(ViewImpl):
                 vm.setShopOnOpenState(self.__getShopOnOpenState())
                 category = getRewardCategoryForUI()
                 vm.setCategory(category.lower())
+                vm.setMaxCategory(self.__seniorityAwardsCtrl.maxCategory)
             return
 
     def _onLoaded(self, *args, **kwargs):
@@ -111,17 +110,17 @@ class SeniorityRewardAwardView(ViewImpl):
          (
           self.viewModel.onShopBtnClick, self.__onShopBtnClick),
          (
-          self.__seniorityAwardsCtrl.onUpdated, self.__onSettingsChange))
+          self.__seniorityAwardsCtrl.onUpdated, self._onSettingsChange))
 
     def __getShopOnOpenState(self):
-        if self.__needBlockShopTransition:
+        if self._needBlockShopTransition:
             return ShopOnOpenState.NOT_AVAILABLE
         if not self.__seniorityAwardsCtrl.isAvailable:
             return ShopOnOpenState.DISABLED
         return ShopOnOpenState.AVAILABLE
 
     @property
-    def __needBlockShopTransition(self):
+    def _needBlockShopTransition(self):
         return not self.__specialCurrencies.get(WDR_CURRENCY)
 
     def __setBonuses(self, viewModel):
@@ -171,7 +170,7 @@ class SeniorityRewardAwardView(ViewImpl):
         if self.viewModel.getShopOnOpenState() == ShopOnOpenState.AVAILABLE:
             showShop(getPlayerSeniorityAwardsUrl())
 
-    def __onSettingsChange(self):
+    def _onSettingsChange(self):
         with self.viewModel.transaction() as (vm):
             vm.setShopOnOpenState(self.__getShopOnOpenState())
 
@@ -180,4 +179,5 @@ class SeniorityRewardAwardWindow(LobbyNotificationWindow):
     __slots__ = ()
 
     def __init__(self, data=None, viewID=None):
-        super(SeniorityRewardAwardWindow, self).__init__(content=SeniorityRewardAwardView(viewID, data=data), layer=WindowLayer.TOP_WINDOW)
+        viewCls = collectSeniorityAwardViewClass() or SeniorityRewardAwardView
+        super(SeniorityRewardAwardWindow, self).__init__(content=viewCls(viewID, data=data), layer=WindowLayer.TOP_WINDOW)

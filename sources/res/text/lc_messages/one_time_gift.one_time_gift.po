@@ -1,0 +1,364 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-01 10:00+0300\n"
+"PO-Revision-Date: 2010-06-01 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "#PluralForms"
+msgstr "nplurals=1; plural=0;"
+
+msgid "added/attachment"
+msgstr "已添加3D附件:"
+
+msgid "added/battle_bonus_x5"
+msgstr "5倍胜场经验任务: %(amount)s"
+
+msgid "added/credits"
+msgstr "银币: %(amount)s"
+
+msgid "added/crewRetraining"
+msgstr "再训练命令: %(amount)s"
+
+msgid "added/crew_bonus_x3"
+msgstr "3倍乘员经验任务: %(amount)s"
+
+msgid "added/crystal"
+msgstr "战争债券: %(amount)s"
+
+msgid "added/currencies"
+msgstr "已添加货币:"
+
+msgid "added/emblem"
+msgstr "已添加\"%(element_name)s\"徽章"
+
+msgid "added/equipment"
+msgstr "已添加配件:"
+
+msgid "added/gold"
+msgstr "金币: %(amount)s"
+
+msgid "added/inscription"
+msgstr "已添加\"%(element_name)s\"签名"
+
+msgid "added/medal"
+msgstr "已添加\"%(element_name)s\"勋章"
+
+msgid "added/pm_token"
+msgstr "已添加一系列任务"
+
+msgid "added/premium"
+msgstr "已添加《坦克世界》高级账号天数: %(amount)s"
+
+msgid "added/premiumVehicles"
+msgstr "已添加金币坦克:"
+
+msgid "added/projectionDecal"
+msgstr "已添加\"%(element_name)s\"贴花"
+
+msgid "added/rentedDays"
+msgstr "%(vehName)s(%(days)s天)"
+
+msgid "added/slots"
+msgstr "已添加车位:"
+
+msgid "added/style"
+msgstr "已添加\"%(element_name)s\"2D风格"
+
+msgid "added/universalManual"
+msgstr "已添加通用手册: %(amount)s"
+
+msgid "added/vehicles"
+msgstr "已添加坦克:"
+
+msgid "added/vehiclesRented"
+msgstr "已添加租用金币坦克:"
+
+msgid "addedCollector/badge"
+msgstr "已添加%(element_name)s"
+
+msgid "addedCollector/medal"
+msgstr "已添加\"%(element_name)s\"勋章"
+
+msgid "addedCollector/stripe"
+msgstr "已添加\"%(element_name)s\"条纹"
+
+msgid "additionReward/title"
+msgstr "同时获得:"
+
+msgid "awardNameTemplate/badge"
+msgstr "{name}"
+
+msgid "awardNameTemplate/medal"
+msgstr "勋章: {name}"
+
+msgid "awardNameTemplate/stripe"
+msgstr "条纹: {name}"
+
+msgid "awards/additionalRewardFull/bottomNote"
+msgstr "同时获得:"
+
+msgid "awards/additionalRewardFull/button/submit"
+msgstr "收到！"
+
+msgid "awards/additionalRewardFull/reward/missions"
+msgstr "一系列任务"
+
+msgid "awards/additionalRewardFull/title"
+msgstr "已获得奖励！"
+
+msgid "awards/bonusVehiclesReward/button/submit"
+msgstr "更多奖励！"
+
+msgid "awards/bonusVehiclesReward/subTitle"
+msgstr "额外奖励"
+
+msgid "awards/bonusVehiclesReward/title"
+msgstr "已获得{gold_Open}金币坦克{gold_Close}！"
+
+msgid "awards/branchReward/button/affirmative"
+msgstr "收到！"
+
+msgid "awards/branchReward/button/moreRewards"
+msgstr "更多奖励！"
+
+msgid "awards/branchReward/button/moreVehicles"
+msgstr "更多坦克！"
+
+msgid "awards/branchReward/button/selectAnotherBranch"
+msgstr "选择另一条研发分支"
+
+msgid "awards/branchReward/title"
+msgstr "已获得研发分支"
+
+msgid "awards/collectorsCompensation/button/affirmative"
+msgstr "收到！"
+
+msgid "awards/collectorsCompensation/button/moreRewards"
+msgstr "更多奖励！"
+
+msgid "awards/collectorsCompensation/subTitle"
+msgstr "恭喜"
+
+msgid "awards/collectorsCompensation/title"
+msgstr "您是名副其实的{gold_Open}大收藏家！{gold_Close}"
+
+msgid "awards/collectorsCompensation/underTitle"
+msgstr ""
+"您已研发并购买了所有VI-"
+"X级坦克——这是一个惊人的壮举。您的奉献以及对游戏的热情令人赞叹。我们为您准备了\"大收藏家\"称号以示感谢。请自豪地佩戴它——您当之无愧！"
+
+msgid "branchSelection/basic/subtitle"
+msgstr "选择您要获得的研发分支"
+
+msgid "branchSelection/branchCounter/progress"
+msgstr "%(value) / %(maxValue)"
+
+msgid "branchSelection/branchCounter/text"
+msgstr "研发分支:"
+
+msgid "branchSelection/claimButton/disabledTooltip/text"
+msgstr "选择您要获得的升级路线研发分支"
+
+msgid "branchSelection/claimButton/text"
+msgstr "领取奖励"
+
+msgid "branchSelection/disabledNationFlagTooltip/text"
+msgstr "您已拥有该系别中的所有坦克。"
+
+msgid "branchSelection/navigationPanel/pageTitle"
+msgstr "领取奖励"
+
+msgid "branchSelection/navigationPanel/tooltip"
+msgstr "点击即可了解活动详情"
+
+msgid "branchSelection/selectLaterButton/text"
+msgstr "稍后选择"
+
+msgid "branchSelection/selectionIndicator/text"
+msgstr "您将获得:"
+
+msgid "branchSelection/selectionIndicator/vehiclesCounter"
+msgid_plural "plural/branchSelection/selectionIndicator/vehiclesCounter"
+msgstr[0] "%(value)辆坦克"
+msgstr[1] "%(value)辆坦克"
+msgstr[2] "%(value)辆坦克"
+
+msgid "branchSelection/title"
+msgstr "\"当之无愧\"奖励: 免费研发分支"
+
+msgid "branchSelection/vehiclesObtained/button/text"
+msgstr "选择另一条研发分支"
+
+msgid "branchSelection/vehiclesObtained/header/text"
+msgstr "选择研发分支"
+
+msgid "branchSelection/vehiclesObtained/text"
+msgstr "您已拥有列表中的所有坦克"
+
+msgid "branchSelection/wdr/subtitle"
+msgstr "选择您要获得的研发分支"
+
+msgid "equipmentSet/rewards/label"
+msgstr "配件套装(%(count)s个物品)"
+
+msgid "equipmentSet/tooltip/header"
+msgstr "配件套装:"
+
+msgid "introPage/button/confirm"
+msgstr "领取奖励"
+
+msgid "introPage/button/youtube"
+msgstr "关于奖励"
+
+msgid "introPage/content/section1/description"
+msgstr "所选研发分支的VI-X级坦克将立即研发完毕并发放至您的账号，您已拥有的坦克除外。"
+
+msgid "introPage/content/section1/title"
+msgstr "升级路线研发分支"
+
+msgid "introPage/content/section2/description"
+msgstr "您将获得所选坦克的全部模块，以及丰厚的战斗资源。"
+
+msgid "introPage/content/section2/title"
+msgstr "整军备战"
+
+msgid "introPage/content/section3/description"
+msgstr "如果您是在12月3日后加入游戏，将可以额外获得一条研发分支。"
+
+msgid "introPage/content/section3/title"
+msgstr "给予新兵的研发分支"
+
+msgid "introPage/deadline"
+msgstr "请在%(datetime)前领取奖励"
+
+msgid "introPage/title"
+msgstr "《坦克世界》2.0奖励回归！"
+
+msgid "nations/china"
+msgstr "C系"
+
+msgid "nations/czech"
+msgstr "J系"
+
+msgid "nations/france"
+msgstr "F系"
+
+msgid "nations/germany"
+msgstr "D系"
+
+msgid "nations/italy"
+msgstr "I系"
+
+msgid "nations/japan"
+msgstr "R系"
+
+msgid "nations/poland"
+msgstr "B系"
+
+msgid "nations/sweden"
+msgstr "V系"
+
+msgid "nations/uk"
+msgstr "Y系"
+
+msgid "nations/usa"
+msgstr "M系"
+
+msgid "nations/ussr"
+msgstr "S系"
+
+msgid "notAvailableVehicleTooltip/description"
+msgstr "您无法在本次活动获取这辆坦克"
+
+msgid "notAvailableVehicleTooltip/level_and_type"
+msgstr "%(vehicleLevel)级%(vehicleType)"
+
+msgid "notAvailableVehicleTooltip/title"
+msgstr "不可用"
+
+msgid "notification/claimButton/text"
+msgstr "领取奖励"
+
+msgid "notification/disabledClaimButtonTooltip/text"
+msgstr "当身处小队中、等待加入战斗、安装坦克个性化元素或在训练房间中时，您将无法使用此功能。"
+
+msgid "notification/title"
+msgstr "立即领取您的《坦克世界》2.0版本更新奖励！"
+
+msgid "rewardCompensation/button/label"
+msgstr "收到!"
+
+msgid "rewardCompensation/text"
+msgstr "您已集齐所有VI-X级可研发坦克，达成辉煌里程碑。这份对《坦克世界》的执着与热爱，铸就了您的传奇之名。诚挚感谢您始终与我们并肩同行！"
+
+msgid "rewardCompensation/title"
+msgstr "非凡成就！"
+
+msgid "rewardReceived/title"
+msgstr "已获得奖励"
+
+msgid "selectionConfirm/cancelButton/text"
+msgstr "取消"
+
+msgid "selectionConfirm/claimButton/text"
+msgstr "领取奖励"
+
+msgid "selectionConfirm/description"
+msgstr "确认后您将无法更改选择"
+
+msgid "selectionConfirm/title"
+msgid_plural "plural/selectionConfirm/title"
+msgstr[0] "领取%(branchName)研发分支的%(count)辆坦克？"
+msgstr[1] "领取%(branchName)研发分支的%(count)辆坦克？"
+msgstr[2] "领取%(branchName)研发分支的%(count)辆坦克？"
+
+msgid "selectionConfirm/vehiclesDivider"
+msgstr "、"
+
+msgid "selectionConfirm/warning/moreThanOneVehicle"
+msgstr "{{vehiclesList}}已存在于您的车库中，因此系统不会发放这些坦克，并且不予以补偿"
+
+msgid "selectionConfirm/warning/oneVehicle"
+msgstr "{{vehiclesList}}已存在于您的车库中，因此系统不会发放该坦克，并且不予以补偿"
+
+msgid "tooltips/OTGQuestTooltip/expireTime"
+msgstr ""
+"{whiteSpanish_Open}任务{whiteSpanish_Close}将开放{whiteSpanish_Open}至%(month)s%(day)s日{whiteSpanish_Close}"
+
+msgid "tooltips/OTGQuestTooltip/rewards/personalReserves"
+msgstr "个人储备x30"
+
+msgid "tooltips/OTGQuestTooltip/rewards/premium"
+msgstr "30天《坦克世界》高级账号"
+
+msgid "tooltips/OTGQuestTooltip/rewards/x3CrewExperience"
+msgstr "3倍乘员经验任务x30"
+
+msgid "tooltips/OTGQuestTooltip/rewards/x5BattleExperience"
+msgstr "5倍胜场经验任务x30"
+
+msgid "tooltips/OTGQuestTooltip/rewardsTitle"
+msgstr "解锁一系列任务，完成这些任务即可获得额外奖励:"
+
+msgid "tooltips/OTGQuestTooltip/title"
+msgstr "一系列任务"
+
+msgid "tooltips/event_banner/description"
+msgstr ""
+"如果您在2.0版本更新期间错过了《坦克世界》史上最豪华的大礼，现在仍可领取！此外，您还能免费额外领取一条研发分支，作为\"当之无愧\"奖励的一部分。"
+
+msgid "tooltips/event_banner/inactive/text"
+msgstr "当身处小队中、等待加入战斗、安装坦克个性化元素或在训练房间中时，您将无法使用此功能。"
+
+msgid "tooltips/event_banner/timer/text"
+msgstr "活动将开放{{timer}}"
+
+msgid "tooltips/event_banner/title"
+msgstr "《坦克世界》2.0奖励"

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>content/3D_Customization/Cus_123_Aviation_Radar/normal/lod0/Cus_123_Aviation_Radar_01_anim</nodefullVisual>
+	<visibilityBox>
+		<min>-0.289807 -0.200000 -0.200220</min>
+		<max>0.276481 0.599423 0.283412</max>
+	</visibilityBox>
+	<parent>content/3D_Customization/Cus_123_Aviation_Radar/normal/lod1/Cus_123_Aviation_Radar_01_anim</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+</root>

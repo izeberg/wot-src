@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-0.457633 -0.015965 -0.746847</min>
+		<max>0.065800 0.333327 0.689774</max>
+	</visibilityBox>
+	<parent>content/3D_Customization/Cus_120_Biker_Engine/normal/lod1/Cus_120_Biker_Engine_01</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>content/3D_Customization/Cus_120_Biker_Engine/normal/lod0/Cus_120_Biker_Engine_01</nodefullVisual>
+	<tank>true</tank>
+</root>

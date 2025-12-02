@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.653200 0.000000 -0.973912</min>
+		<max>0.132328 0.546348 1.011632</max>
+	</visibilityBox>
+	<parent>content/3D_Customization/Cus_142_PE25_Shipwreck/normal/lod1/Cus_142_PE25_Shipwreck</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>content/3D_Customization/Cus_142_PE25_Shipwreck/normal/lod0/Cus_142_PE25_Shipwreck</nodefullVisual>
+</root>

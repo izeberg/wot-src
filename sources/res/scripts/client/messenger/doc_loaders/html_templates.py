@@ -72,7 +72,7 @@ class MessageTemplates(templates.XMLCollection):
            'bgIconSizeAuto': source.readBool('bgIconSizeAuto'), 
            'icon': source.readString('icon'), 
            'defaultIcon': source.readString('defaultIcon'), 
-           'filters': [], 'buttonsLayout': [], 'buttonsAlign': source.readString('buttonsAlign', 'left'), 
+           'filters': [], 'buttonsStates': {}, 'buttonsLayout': [], 'buttonsAlign': source.readString('buttonsAlign', default='left'), 
            'lifeTime': source.readInt('lifeTime'), 
            'gfViewName': source.readString('gfViewName')}
         priority = source.readString('priority', NotificationPriorityLevel.MEDIUM)

@@ -1,6 +1,6 @@
 from enum import Enum
 from frameworks.wulf import Array, ViewModel
-from advent_calendar.gui.impl.gen.view_models.views.lobby.tooltips.loot_box_bonus_view_model import LootBoxBonusViewModel
+from advent_calendar.gui.impl.gen.view_models.views.lobby.tooltips.lootbox_group_model import LootboxGroupModel
 
 class ProgressionState(Enum):
     REWARD_RECEIVED = 'rewardReceived'
@@ -50,15 +50,15 @@ class BigLootboxTooltipModel(ViewModel):
     def setIsShowStatus(self, value):
         self._setBool(5, value)
 
-    def getBonuses(self):
+    def getGroups(self):
         return self._getArray(6)
 
-    def setBonuses(self, value):
+    def setGroups(self, value):
         self._setArray(6, value)
 
     @staticmethod
-    def getBonusesType():
-        return LootBoxBonusViewModel
+    def getGroupsType():
+        return LootboxGroupModel
 
     def _initialize(self):
         super(BigLootboxTooltipModel, self)._initialize()
@@ -68,4 +68,4 @@ class BigLootboxTooltipModel(ViewModel):
         self._addStringProperty('boxName', '')
         self._addStringProperty('boxCategory', '')
         self._addBoolProperty('isShowStatus', False)
-        self._addArrayProperty('bonuses', Array())
+        self._addArrayProperty('groups', Array())

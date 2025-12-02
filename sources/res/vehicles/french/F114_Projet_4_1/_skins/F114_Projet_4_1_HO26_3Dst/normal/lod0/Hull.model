@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/french/F114_Projet_4_1/_skins/F114_Projet_4_1_HO26_3Dst/normal/lod0/Hull</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/french/F114_Projet_4_1/_skins/F114_Projet_4_1_HO26_3Dst/normal/lod1/Hull</parent>
+	<visibilityBox>
+		<min>-1.833281 -0.644287 -3.675604</min>
+		<max>1.830680 0.651670 3.274863</max>
+	</visibilityBox>
+	<extent>32.000000</extent>
+</root>

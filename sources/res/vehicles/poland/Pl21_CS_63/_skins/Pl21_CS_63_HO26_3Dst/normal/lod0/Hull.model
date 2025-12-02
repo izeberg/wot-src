@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/poland/Pl21_CS_63/_skins/Pl21_CS_63_HO26_3Dst/normal/lod0/Hull</nodefullVisual>
+	<parent>vehicles/poland/Pl21_CS_63/_skins/Pl21_CS_63_HO26_3Dst/normal/lod1/Hull</parent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.646089 -0.614933 -3.136702</min>
+		<max>1.646430 0.596700 3.171180</max>
+	</visibilityBox>
+	<extent>32.000000</extent>
+</root>

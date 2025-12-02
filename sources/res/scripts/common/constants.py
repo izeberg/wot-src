@@ -857,6 +857,7 @@ class Configs(enum.Enum):
     POSTMORTEM_SETTINGS_CONFIG = 'postmortem_settings_config'
     LIVE_OPS_EVENTS_CONFIG = 'live_ops_events_config'
     ADVANCED_ACHIEVEMENTS_CONFIG = 'advanced_achievements_config'
+    NY_DOG_CONFIG = 'ny_dog_config'
     LOOTBOXES_TOOLTIP_CONFIG = 'lootboxes_tooltip_config'
     UNIT_ASSEMBLER_CONFIG = 'unit_assembler_config'
     EASY_TANK_EQUIP_CONFIG = 'easy_tank_equip_config'
@@ -1124,6 +1125,7 @@ class EQUIPMENT_STAGES:
      UNAVAILABLE,
      READY,
      PREPARING,
+     WAIT_FOR_CHOICE,
      ACTIVE,
      COOLDOWN,
      SHARED_COOLDOWN,
@@ -1140,7 +1142,9 @@ class EQUIPMENT_STAGES:
            cls.PREPARING: 'preparing', 
            cls.ACTIVE: 'active', 
            cls.COOLDOWN: 'cooldown', 
+           cls.SHARED_COOLDOWN: 'sharedCooldown', 
            cls.STARTUP_COOLDOWN: 'startupCooldown', 
+           cls.WAIT_FOR_CHOICE: 'waitForChoice', 
            cls.INTERRUPTED: 'interrupted', 
            cls.EXHAUSTED: 'exhausted'}.get(value)
 
@@ -1281,10 +1285,10 @@ ATTACK_REASON_INDICES = {value:index for index, value in enumerate(ATTACK_REASON
 BOT_RAM_REASONS = (
  ATTACK_REASON.BRANDER_RAM, ATTACK_REASON.CLING_BRANDER_RAM)
 WORLD_ATTACK_REASONS = (ATTACK_REASON.WORLD_COLLISION, ATTACK_REASON.CGF_WORLD)
-BATTLE_FEEDBACK_REASONS_AFTER_DEATH = frozenset((
+BATTLE_FEEDBACK_REASONS_AFTER_DEATH = {
  ATTACK_REASON.SHOT, ATTACK_REASON.FIRE, ATTACK_REASON.RAM, ATTACK_REASON.WORLD_COLLISION,
  ATTACK_REASON.DROWNING, ATTACK_REASON.OVERTURN, ATTACK_REASON.SPAWNED_BOT_EXPLOSION, ATTACK_REASON.BRANDER_RAM,
- ATTACK_REASON.CLING_BRANDER_RAM))
+ ATTACK_REASON.CLING_BRANDER_RAM}
 DEATH_REASON_ALIVE = -1
 
 class REPAIR_TYPE:
@@ -1825,7 +1829,7 @@ class REQUEST_COOLDOWN:
     SEND_INVITATION_COOLDOWN = 1.0
     RUN_QUEST = 1.0
     PAWN_FREE_AWARD_LIST = 1.0
-    LOOTBOX = 1.0
+    LOOTBOX = 0.3
     BADGES = 2.0
     CREW_SKINS = 0.3
     BPF_COMMAND = 1.0
@@ -1840,6 +1844,21 @@ class REQUEST_COOLDOWN:
     ANONYMIZER = 1.0
     UPDATE_IN_BATTLE_PLAYER_RELATIONS = 1.0
     FLUSH_RELATIONS = 1.0
+    NEW_YEAR_SLOT_FILL = 0.4
+    NEW_YEAR_SEE_INVENTORY_TOYS = 0.5
+    NEW_YEAR_SEE_COLLECTION_TOYS = 0.5
+    NEW_YEAR_SELECT_DISCOUNT = 1.0
+    NEW_YEAR_BUY_MARKETPLACE_ITEM = 1.0
+    NEW_YEAR_REROLL_CELEBRITY_QUEST = 1.0
+    NEW_YEAR_CHOOSE_XP_BONUS = 0.5
+    NEW_YEAR_CONVERT_RESOURCES = 0.5
+    NEW_YEAR_UPGRADE_OBJECT_LEVEL = 0.5
+    NEW_YEAR_COMPLETE_GUEST_QUEST = 0.5
+    NEW_YEAR_SET_HANGAR_NAME_MASK = 0.5
+    NEW_YEAR_BUY_GIFT_MACHINE_COIN = 0.5
+    NEW_YEAR_MANUAL_RESOURCE_COLLECTING = 0.5
+    NEW_YEAR_GET_NY_PIGGY_BANK_REWARDS = 0.5
+    NEW_YEAR_BUY_DOG_LEVEL = 1.0
     EQUIP_ENHANCEMENT = 1.0
     DISMOUNT_ENHANCEMENT = 1.0
     BUY_BATTLE_PASS = 1.0
@@ -2196,6 +2215,10 @@ INT_USER_SETTINGS_KEYS = {USER_SERVER_SETTINGS.VERSION: 'Settings version',
    USER_SERVER_SETTINGS.BATTLE_MATTERS_QUESTS: 'battle matters quests show reward info', 
    USER_SERVER_SETTINGS.QUESTS_PROGRESS: 'feedback quests progress', 
    91: 'Loot box last viewed count', 
+   92: 'Oriental loot box last viewed count', 
+   93: 'New year loot box last viewed count', 
+   94: 'Fairytale loot box last viewed count', 
+   95: 'Christmas loot box last viewed count', 
    USER_SERVER_SETTINGS.SESSION_STATS: 'sessiong statistics settings', 
    97: 'BattlePass carouse filter 1', 
    98: 'Battle Pass Storage', 
@@ -2205,6 +2228,7 @@ INT_USER_SETTINGS_KEYS = {USER_SERVER_SETTINGS.VERSION: 'Settings version',
    USER_SERVER_SETTINGS.GAME_EXTENDED_2: 'Game extended section settings 2', 
    103: 'Mapbox carousel filter 1', 
    104: 'Mapbox carousel filter 2', 
+   105: 'New Year settings storage', 
    USER_SERVER_SETTINGS.CONTOUR: 'Contour settings', 
    107: 'Fun Random carousel filter 1', 
    108: 'Fun Random carousel filter 2', 
@@ -2215,6 +2239,7 @@ INT_USER_SETTINGS_KEYS = {USER_SERVER_SETTINGS.VERSION: 'Settings version',
    USER_SERVER_SETTINGS.REFERRAL_PROGRAM: 'referral program settings', 
    USER_SERVER_SETTINGS.ADVANCED_ACHIEVEMENTS_STORAGE: 'advanced achievements storage', 
    116: 'Once only hints', 
+   117: 'Common loot box last viewed count', 
    118: 'Ranked carousel filter 3', 
    119: 'Frontline carousel filter 3', 
    120: 'Mapbox carousel filter 3', 
@@ -2883,11 +2908,13 @@ class BotNamingType(object):
     CREW_MEMBER = 1
     VEHICLE_MODEL = 2
     CUSTOM = 3
+    MASTER = 4
     DEFAULT = CREW_MEMBER
     CONFIG_TYPE = ('BotNamingTypeEnumType', 'py::BotNamingTypeEnum')
     _parseDict = {'crew': CREW_MEMBER, 
        'vehicle': VEHICLE_MODEL, 
        'custom': CUSTOM, 
+       'master': MASTER, 
        'default': DEFAULT}
     _descriptions = {}
 
@@ -2904,7 +2931,8 @@ BotNamingConfig = namedtuple('BotNamingConfig', ('prefix', 'argTypes', 'argSepar
 class LocalizableBotName(object):
     CONFIGS = {BotNamingType.CREW_MEMBER: BotNamingConfig('BotCrew_', (int, int, int), '_'), 
        BotNamingType.VEHICLE_MODEL: BotNamingConfig('BotVeh_', (int, int, int), '_'), 
-       BotNamingType.CUSTOM: BotNamingConfig('BotLoc_', (int, str), ' ')}
+       BotNamingType.CUSTOM: BotNamingConfig('BotLoc_', (int, str), ' '), 
+       BotNamingType.MASTER: BotNamingConfig('BotMas_', (int, str, str, int), ' ')}
 
     @staticmethod
     def create(namingType, *args):

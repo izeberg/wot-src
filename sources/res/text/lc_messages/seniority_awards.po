@@ -14,93 +14,34 @@ msgstr ""
 msgid "#PluralForms"
 msgstr "nplurals=1; plural=0;"
 
-msgid "multiOpenView/applyLabel"
-msgstr "了解！"
+msgid "notifications/count"
+msgstr "×{count}"
 
-msgid "multiOpenView/boxesInStorage"
-msgstr "可用的箱子：{count}"
-
-msgid "multiOpenView/boxesNotAvailable"
-msgstr "没有可用的箱子"
-
-msgid "multiOpenView/openBoxesLabel"
-msgstr "打开{count}个物品"
-
-msgid "multiOpenView/skipBtn"
-msgstr "跳过动画"
-
-msgid "multiOpenView/title"
-msgstr "祝贺您！"
-
-msgid "notifications/description"
-msgstr "因您多年服役而赠予您的专属奖励箱子！打开箱子领取奖励。"
-
-msgid "notifications/header"
-msgstr "一份专属奖励"
-
-msgid "notifications/quest/button"
+msgid "notifications/manualClaim/button"
 msgstr "领取奖励"
 
-msgid "notifications/quest/title"
-msgstr ""
-"您的服役资历奖励\n"
-"在等待着您！"
+msgid "notifications/manualClaim/title"
+msgstr "服役资历奖励等待着您！"
 
 msgid "notifications/selectVehicles/button"
 msgstr "选择"
 
 msgid "notifications/selectVehicles/title"
-msgstr "服役资历奖励坦克"
+msgstr ""
+"自选服役资历\n"
+"奖励坦克"
 
 msgid "notifications/tokens/button"
 msgstr "前往军械库"
 
-msgid "notifications/tokens/timeLeft/days"
-msgstr "%(day)s天%(hour)s时"
-
-msgid "notifications/tokens/timeLeft/hours"
-msgstr "%(hour)s时%(min)s分"
-
-msgid "notifications/tokens/timeLeft/lessMin"
-msgstr "少于1分钟"
-
-msgid "notifications/tokens/timeLeft/min"
-msgstr "%(min)s分"
-
-msgid "notifications/tokens/timer"
-msgstr "距令牌被移除还有%(timeLeft)s"
-
 msgid "notifications/tokens/title"
-msgstr ""
-"使用服役资历令牌\n"
-"兑换奖励！"
-
-msgid "notifications/vehicleSelectionAvailable/title"
-msgstr "选择您想要的坦克！"
-
-msgid "openBoxView/autoOpenTooltip/body"
-msgstr "我们会在{date}为您打开这个专属奖励箱子并赠予你对应的奖励。"
-
-msgid "openBoxView/autoOpenTooltip/header"
-msgstr "自动打开中"
-
-msgid "openBoxView/boxesInStorage"
-msgstr "可用的箱子：{count}"
-
-msgid "openBoxView/description"
-msgstr "内含一份专属于你的奖励。打开箱子领取奖励吧。"
-
-msgid "openBoxView/header"
-msgstr "一份专属奖励"
-
-msgid "openBoxView/openBoxesLabel"
-msgstr "打开{count}个物品"
-
-msgid "rewardsScreen/showGiftButtonLabel"
-msgstr "查看奖励"
+msgstr "使用服役资历令牌兑换奖励！"
 
 msgid "rewardsView/applyBtn"
 msgstr "了解！"
+
+msgid "rewardsView/claimMoreRewards"
+msgstr "领取更多专属奖励。"
 
 msgid "rewardsView/exchangeCoins"
 msgstr "使用您的令牌在军械库中兑换奖励。"
@@ -114,68 +55,41 @@ msgstr "前往军械库"
 msgid "rewardsView/info"
 msgstr "关于头衔的更多信息"
 
-msgid "rewardsView/lootBox/descr"
-msgstr "打开箱子领取奖励吧！"
-
-msgid "rewardsView/lootBox/multiplier"
-msgstr "x"
-
-msgid "rewardsView/lootBox/title"
-msgstr ""
-"您的\n"
-"专属\n"
-"奖励箱子"
-
 msgid "rewardsView/moreRewardsBtn"
 msgstr "更多奖励！"
 
-msgid "rewardsView/nextBtn"
-msgstr "下一个奖励(%(count)s)"
-
-msgid "rewardsView/openBtn"
-msgstr "打开"
+msgid "rewardsView/moreRewardsWithCountBtn"
+msgstr "更多奖励！({count})"
 
 msgid "rewardsView/selection/available"
-msgstr "%(count)s辆服役资历奖励坦克"
+msgstr "{{count}}辆自选服役资历奖励坦克"
 
 msgid "rewardsView/selection/received"
 msgstr "已获得奖励"
 
-msgid "rewardsView/subTitle/at"
-msgstr "已达成%(gradientStart)老兵%(gradientEnd)头衔"
-
-msgid "rewardsView/subTitle/bt"
-msgstr "已达成%(gradientStart)老兵%(gradientEnd)头衔"
-
-msgid "rewardsView/subTitle/ctg1"
-msgstr "已达成%(gradientStart)新兵%(gradientEnd)头衔"
-
-msgid "rewardsView/subTitle/ctg2"
-msgstr "已达成%(gradientStart)勇士%(gradientEnd)头衔"
-
-msgid "rewardsView/subTitle/ctg3"
-msgstr "已达成%(gradientStart)指挥官%(gradientEnd)头衔"
-
-msgid "rewardsView/subTitle/ctg4"
-msgstr "已达成%(gradientStart)军官%(gradientEnd)头衔"
-
-msgid "rewardsView/subTitle/ctg5"
-msgstr "已达成%(gradientStart)老兵%(gradientEnd)头衔"
-
-msgid "rewardsView/subTitle/ctg6"
-msgstr "已达成%(gradientStart)传说%(gradientEnd)头衔"
-
 msgid "rewardsView/subTitle/otherRewards"
 msgstr "您同时获得:"
 
-msgid "rewardsView/textButton/back"
-msgstr "后退"
+msgid "rewardsView/subTitle/rank/ctg1"
+msgstr "新兵"
 
-msgid "rewardsView/textButton/close"
-msgstr "关闭"
+msgid "rewardsView/subTitle/rank/ctg2"
+msgstr "勇士"
 
-msgid "rewardsView/textButton/goto"
-msgstr "前往坦克"
+msgid "rewardsView/subTitle/rank/ctg3"
+msgstr "指挥官"
+
+msgid "rewardsView/subTitle/rank/ctg4"
+msgstr "军官"
+
+msgid "rewardsView/subTitle/rank/ctg5"
+msgstr "老兵"
+
+msgid "rewardsView/subTitle/rank/ctg6"
+msgstr "传说"
+
+msgid "rewardsView/subTitle/text"
+msgstr "已达成{rank}头衔"
 
 msgid "rewardsView/textButton/select"
 msgstr "选择"
@@ -190,13 +104,7 @@ msgid "specialItem/body"
 msgstr "因战斗资历而获奖。活动结束后，所有剩余的令牌将被移除。"
 
 msgid "specialItem/header"
-msgstr "服役资历令牌: %(count)s"
-
-msgid "tooltip/congratulation/at"
-msgstr "恭喜您达成老兵头衔"
-
-msgid "tooltip/congratulation/bt"
-msgstr "恭喜您达成老兵头衔"
+msgstr "服役资历令牌: {count}"
 
 msgid "tooltip/congratulation/ctg1"
 msgstr "恭喜您达成新兵头衔"
@@ -217,7 +125,7 @@ msgid "tooltip/congratulation/ctg6"
 msgstr "恭喜您达成传说头衔"
 
 msgid "tooltip/medalBlock/label/and"
-msgstr "和"
+msgstr "{abLabel}与{yearsLabel}"
 
 msgid "tooltip/medalBlock/label/ca"
 msgstr "参加Alpha测试"
@@ -225,14 +133,11 @@ msgstr "参加Alpha测试"
 msgid "tooltip/medalBlock/label/cb"
 msgstr "参加Beta测试"
 
-msgid "tooltip/medalBlock/label/cbcn"
-msgstr "参加Beta测试"
-
 msgid "tooltip/medalBlock/label/duration"
 msgid_plural "plural/tooltip/medalBlock/label/duration"
-msgstr[0] "服役1年"
-msgstr[1] "服役%(years)s年"
-msgstr[2] "服役%(years)s年"
+msgstr[0] "服役{{count}}年"
+msgstr[1] "服役{{count}}年"
+msgstr[2] "服役{{count}}年"
 
 msgid "tooltip/rank/ctg1"
 msgstr "新兵"
@@ -252,11 +157,8 @@ msgstr "老兵"
 msgid "tooltip/rank/ctg6"
 msgstr "传说"
 
-msgid "tooltip/restrictedMode"
-msgstr "操作暂时无法使用。稍后再试。"
-
 msgid "tooltip/segment/ctg1"
-msgstr "未满1年"
+msgstr "少于一年"
 
 msgid "tooltip/segment/ctg2"
 msgstr "1–3年"

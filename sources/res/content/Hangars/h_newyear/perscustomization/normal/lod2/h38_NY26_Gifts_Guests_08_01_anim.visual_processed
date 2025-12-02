@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>root_moto</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>drift</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.000000 -0.787384</row3>
+				</transform>
+				<node>
+					<identifier>main</identifier>
+					<transform>
+						<row0>0.000000 0.000000 1.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>-1.000000 0.000000 0.000000</row2>
+						<row3>0.000000 0.000000 0.787384</row3>
+					</transform>
+					<node>
+						<identifier>cog</identifier>
+						<transform>
+							<row0>-0.846416 0.532522 0.000000</row0>
+							<row1>-0.532522 -0.846416 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>0.090000 0.530000 0.000000</row3>
+						</transform>
+						<node>
+							<identifier>RWheel</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 1.000000</row2>
+								<row3>-0.568222 -0.088775 0.000000</row3>
+							</transform>
+							<node>
+								<identifier>RWheel_BlendBone</identifier>
+								<transform>
+									<row0>-0.000000 -0.000000 -1.000000</row0>
+									<row1>0.532522 -0.846416 0.000000</row1>
+									<row2>0.846416 0.532522 -0.000000</row2>
+									<row3>0.362163 0.585302 -0.000000</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>handlebar</identifier>
+							<transform>
+								<row0>-0.017740 0.999843 -0.000000</row0>
+								<row1>0.999843 0.017740 -0.000001</row1>
+								<row2>-0.000001 -0.000000 -1.000000</row2>
+								<row3>0.577136 -0.000000 -0.000000</row3>
+							</transform>
+							<node>
+								<identifier>handlebar_end</identifier>
+								<transform>
+									<row0>0.000000 0.000000 -1.000000</row0>
+									<row1>-1.000000 0.000000 0.000000</row1>
+									<row2>0.000000 1.000000 0.000000</row2>
+									<row3>0.145202 0.000000 0.000000</row3>
+								</transform>
+								<node>
+									<identifier>fork_base</identifier>
+									<transform>
+										<row0>1.000000 -0.000000 0.000000</row0>
+										<row1>-0.000000 -0.000286 1.000000</row1>
+										<row2>0.000000 -1.000000 -0.000286</row2>
+										<row3>0.000000 -0.000000 0.056215</row3>
+									</transform>
+									<node>
+										<identifier>fork</identifier>
+										<transform>
+											<row0>1.000000 0.000000 0.000000</row0>
+											<row1>0.000000 1.000000 0.000000</row1>
+											<row2>0.000000 0.000000 1.000000</row2>
+											<row3>0.000000 0.000000 0.513651</row3>
+										</transform>
+										<node>
+											<identifier>FWheel</identifier>
+											<transform>
+												<row0>1.000000 0.000000 0.000000</row0>
+												<row1>0.000000 1.000000 0.000000</row1>
+												<row2>0.000000 0.000000 1.000000</row2>
+												<row3>0.000000 0.000001 -0.000001</row3>
+											</transform>
+											<node>
+												<identifier>FWheel_BlendBone</identifier>
+												<transform>
+													<row0>-1.000000 0.000001 -0.000000</row0>
+													<row1>0.000000 0.517178 -0.855878</row1>
+													<row2>0.000001 0.855878 0.517178</row2>
+													<row3>-0.000001 -0.830376 -0.148271</row3>
+												</transform>
+											</node>
+										</node>
+										<node>
+											<identifier>fork_BlendBone</identifier>
+											<transform>
+												<row0>-1.000000 0.000001 -0.000000</row0>
+												<row1>0.000000 0.517178 -0.855878</row1>
+												<row2>0.000001 0.855878 0.517178</row2>
+												<row3>-0.000001 -0.830374 -0.148272</row3>
+											</transform>
+										</node>
+									</node>
+								</node>
+							</node>
+							<node>
+								<identifier>l_lever</identifier>
+								<transform>
+									<row0>0.836888 0.538132 -0.100164</row0>
+									<row1>-0.438403 0.768532 0.466006</row1>
+									<row2>0.327752 -0.346083 0.879094</row2>
+									<row3>-0.065919 0.003877 0.153996</row3>
+								</transform>
+								<node>
+									<identifier>l_lever_BlendBone</identifier>
+									<transform>
+										<row0>-0.100164 0.466007 0.879093</row0>
+										<row1>-0.437708 0.772810 -0.459539</row1>
+										<row2>0.893520 0.430816 -0.126567</row2>
+										<row3>0.078950 -0.922424 0.322796</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>r_lever</identifier>
+								<transform>
+									<row0>-0.836888 -0.538132 -0.100163</row0>
+									<row1>-0.438404 0.768532 -0.466005</row1>
+									<row2>0.327751 -0.346082 -0.879094</row2>
+									<row3>-0.065920 0.003877 -0.153994</row3>
+								</transform>
+								<node>
+									<identifier>r_lever_BlendBone</identifier>
+									<transform>
+										<row0>-0.100164 -0.466005 -0.879094</row0>
+										<row1>0.437709 0.772811 -0.459537</row1>
+										<row2>-0.893520 0.430816 -0.126567</row2>
+										<row3>-0.078950 -0.922424 0.322796</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>handlebar_BlendBone</identifier>
+								<transform>
+									<row0>0.000000 0.000001 1.000000</row0>
+									<row1>-0.855730 0.517423 -0.000000</row1>
+									<row2>0.517423 0.855730 -0.000001</row2>
+									<row3>0.510343 -0.774264 0.000001</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>cog_BlendBone</identifier>
+							<transform>
+								<row0>-0.000000 -0.000000 -1.000000</row0>
+								<row1>0.532522 -0.846416 0.000000</row1>
+								<row2>0.846416 0.532522 -0.000000</row2>
+								<row3>-0.206059 0.496528 -0.000000</row3>
+							</transform>
+						</node>
+					</node>
+				</node>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>cog_BlendBone</node>
+		<node>RWheel_BlendBone</node>
+		<node>fork_BlendBone</node>
+		<node>FWheel_BlendBone</node>
+		<node>handlebar_BlendBone</node>
+		<geometry>
+			<vertices>s3_3Shape.vertices</vertices>
+			<primitive>s3_3Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd3_skinned</identifier>
+					<fx>shaders/custom/emissive_playground_skinned.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>110</materialKind>
+					<property>
+						angleFalloffParams
+						<Vector4>1.000000 1.000000 2.000000 0.000000</Vector4>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						emissionMap
+						<Texture>content/Hangars/h_newyear/perscustomization/h38_NY26_Gifts_Guests_08_glow_AM.dds</Texture>
+					</property>
+					<property>
+						g_contrast
+						<Float>3.000000</Float>
+					</property>
+					<property>
+						g_deferredMult
+						<Float>69.699997</Float>
+					</property>
+					<property>
+						g_offsetBlack
+						<Float>0.610000</Float>
+					</property>
+					<property>
+						g_zeroPhaseLum
+						<Float>0.150000</Float>
+					</property>
+					<property>
+						pattern
+						<Texture>content/Hangars/h_newyear/perscustomization/h38_NY26_Gifts_Guests_08_glow_AM.dds</Texture>
+					</property>
+					<property>
+						phaseMap
+						<Texture>content/Hangars/h_newyear/perscustomization/h38_NY26_Gifts_Guests_08_glow_CM.dds</Texture>
+					</property>
+					<property>
+						speed
+						<Float>0.350000</Float>
+					</property>
+					<property>
+						usePhaseMap
+						<Bool>true</Bool>
+					</property>
+					<property>
+						waveLen
+						<Float>4.000000</Float>
+					</property>
+				</material>
+				<groupOrigin>0.006655 0.457430 0.006538</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>handlebar_BlendBone</node>
+		<geometry>
+			<vertices>s1_3Shape.vertices</vertices>
+			<primitive>s1_3Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd1_skinned</identifier>
+					<fx>shaders/std_effects/PBS_glass_skinned.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>112</materialKind>
+					<property>
+						dirtAlbedoMap
+						<Texture>content/Hangars/h_newyear/perscustomization/h38_NY26_Gifts_Guests_08_glass_AM.dds</Texture>
+					</property>
+					<property>
+						glassMap
+						<Texture>content/Hangars/h_newyear/perscustomization/h38_NY26_Gifts_Guests_08_glass_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/h_newyear/perscustomization/h38_NY26_Gifts_Guests_08_glass_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.000000 0.869344 0.609634</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>cog_BlendBone</node>
+		<node>fork_BlendBone</node>
+		<node>handlebar_BlendBone</node>
+		<node>RWheel_BlendBone</node>
+		<node>r_lever_BlendBone</node>
+		<node>l_lever_BlendBone</node>
+		<node>FWheel_BlendBone</node>
+		<geometry>
+			<vertices>s0_3Shape.vertices</vertices>
+			<primitive>s0_3Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0_skinned</identifier>
+					<fx>shaders/std_effects/PBS_ext_skinned.fx</fx>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h_newyear/perscustomization/h38_NY26_Gifts_Guests_08_01_AM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/h_newyear/perscustomization/h38_NY26_Gifts_Guests_08_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/h_newyear/perscustomization/h38_NY26_Gifts_Guests_08_01_ANM.dds</Texture>
+					</property>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>112</materialKind>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+				</material>
+				<groupOrigin>-0.000373 0.474920 0.059375</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>-0.302091 -0.011859 -1.101791</min>
+		<max>0.301345 0.961698 0.985656</max>
+	</boundingBox>
+	<geometrySize>381420</geometrySize>
+</root>

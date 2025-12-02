@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/poland/Pl21_CS_63/_skins/Pl21_CS_63_HO26_3Dst/normal/lod1/Chassis</parent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.579672 0.019481 -2.909121</min>
+		<max>1.578990 1.150848 2.864194</max>
+	</visibilityBox>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/poland/Pl21_CS_63/_skins/Pl21_CS_63_HO26_3Dst/normal/lod0/Chassis</nodefullVisual>
+</root>

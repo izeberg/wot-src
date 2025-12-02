@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/french/F114_Projet_4_1/_skins/F114_Projet_4_1_HO26_3Dst/normal/lod2/Gun_01</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/french/F114_Projet_4_1/_skins/F114_Projet_4_1_HO26_3Dst/normal/lod3/Gun_01</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.270955 -0.945185 -1.839797</min>
+		<max>1.311376 1.102106 5.049123</max>
+	</visibilityBox>
+</root>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/german/G147_Kunze_Panzer/_skins/G147_Kunze_Panzer_HO26_3Dst/normal/lod2/Hull</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.450176 -0.683452 -3.077338</min>
+		<max>1.448405 0.615119 3.071695</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/german/G147_Kunze_Panzer/_skins/G147_Kunze_Panzer_HO26_3Dst/normal/lod1/Hull</nodefullVisual>
+</root>

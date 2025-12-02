@@ -87,6 +87,11 @@ package net.wg.gui.battle.views.vehicleMarkers
          this.tfMap = null;
       }
       
+      protected function updateTextFieldMap(param1:String, param2:TextField) : void
+      {
+         this.tfMap[param1] = param2;
+      }
+      
       private function showTF(param1:String) : void
       {
          if(this.tfMap[param1])

@@ -1457,6 +1457,16 @@ def _migrateTo150(core, data, initialized):
                 clear[section] = clear.get(section, 0) | settingOffset
 
 
+def _migrateTo151(core, data, initialized):
+    from account_helpers.settings_core.ServerSettingsManager import SETTINGS_SECTIONS
+    storedValue = _getSettingsCache().getSectionSettings(SETTINGS_SECTIONS.NEW_YEAR, 0)
+    if storedValue:
+        clear = data['clear']
+        clear[SETTINGS_SECTIONS.NEW_YEAR] = clear.get(SETTINGS_SECTIONS.NEW_YEAR, 0) | storedValue
+    from account_helpers.settings_core.ServerSettingsManager import UI_STORAGE_KEYS
+    data[SETTINGS_SECTIONS.UI_STORAGE_2][UI_STORAGE_KEYS.ONE_TIME_GIFT_INTRO_SHOWN] = False
+
+
 _versions = (
  (
   1, _initializeDefaultSettings, True, False),
@@ -1755,7 +1765,9 @@ _versions = (
  (
   149, _migrateTo149, False, False),
  (
-  150, _migrateTo150, False, False))
+  150, _migrateTo150, False, False),
+ (
+  151, _migrateTo151, False, False))
 
 @adisp_async
 @adisp_process

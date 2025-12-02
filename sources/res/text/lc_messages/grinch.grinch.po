@@ -1,0 +1,397 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-01 10:00+0300\n"
+"PO-Revision-Date: 2010-06-01 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "abilityTooltip/blizzard/body"
+msgstr "在自身坦克周围生成暴风雪，对敌人造成损伤，并冰封对方，使其无法移动或使用能力，持续%duration%秒。"
+
+msgid "abilityTooltip/blizzard/header"
+msgstr "极寒冰封"
+
+msgid "abilityTooltip/dart/body"
+msgstr "射击粘滞弹，使目标的全部能力失效，持续%duration%秒，并造成持续损伤。可在隐身状态下使用。"
+
+msgid "abilityTooltip/dart/header"
+msgstr "粘滞弹"
+
+msgid "abilityTooltip/jump/body"
+msgstr "使自身坦克在不损失速度的情况下朝着视角方向战术突进。"
+
+msgid "abilityTooltip/jump/header"
+msgstr "战术突进"
+
+msgid "abilityTooltip/missiles/body"
+msgstr "锁定目标%duration%秒后发射制导导弹。导弹将追踪目标直至命中或丢失目标。"
+
+msgid "abilityTooltip/missiles/header"
+msgstr "导弹"
+
+msgid "abilityTooltip/rage/body"
+msgstr "坦克的装填速度、炮塔旋转速度和发动机功率均会得到提高，但每秒也会受到一次损伤，持续%duration%秒。坦克在此期间无法被击毁。"
+
+msgid "abilityTooltip/rage/header"
+msgstr "高能狂暴"
+
+msgid "abilityTooltip/ram/body"
+msgstr "激活火箭助推器，持续%duration%秒，降低受到的撞击损伤，并干扰制导导弹的追踪。"
+
+msgid "abilityTooltip/ram/header"
+msgstr "火箭加速"
+
+msgid "abilityTooltip/repairKit/body"
+msgstr "修复坦克履带，并恢复少量生命值。"
+
+msgid "abilityTooltip/repairKit/header"
+msgstr "紧急修复"
+
+msgid "abilityTooltip/shellAssault/body"
+msgstr "一门常规火炮，射击飞行速度低、平均损伤高的高爆纸球。"
+
+msgid "abilityTooltip/shellAssault/header"
+msgstr "纸球"
+
+msgid "abilityTooltip/shellCarrier/body"
+msgstr "一门弹夹炮，射击飞行速度慢、穿透力强的纸弹。"
+
+msgid "abilityTooltip/shellCarrier/header"
+msgstr "纸弹"
+
+msgid "abilityTooltip/shellSupport/body"
+msgstr "一门高射速机枪，射击纸钉。射击初期相当精准，但精度会迅速降低。"
+
+msgid "abilityTooltip/shellSupport/header"
+msgstr "纸钉"
+
+msgid "abilityTooltip/sonar/body"
+msgstr "对坦克前方区域实施脉冲扫描，对范围内的敌方坦克造成损伤，并标记对方，持续%duration%秒。被标记的目标保持可见并受到额外损伤。"
+
+msgid "abilityTooltip/sonar/header"
+msgstr "脉冲扫描"
+
+msgid "abilityTooltip/stealth/body"
+msgstr "在%duration%秒内无法被点亮。隐身状态下的第一次射击可造成更高损伤。"
+
+msgid "abilityTooltip/stealth/header"
+msgstr "藏形匿影"
+
+msgid "abilityTooltip/turret/body"
+msgstr "部署一座可点亮并攻击敌人的炮塔。最多同时激活2座炮塔——当部署第3座时，最早部署的炮塔会被移除。"
+
+msgid "abilityTooltip/turret/header"
+msgstr "炮塔"
+
+msgid "arena_start_errors/prb/kick/timeout"
+msgstr "战斗等待时间过长。请选择其它服务器或稍后再试。"
+
+msgid "banner/eventLasts"
+msgstr "持续至%(month)s%(day)s日"
+
+msgid "banner/info/disabled"
+msgstr "活动即将开启"
+
+msgid "banner/infoSmall/disabled"
+msgstr "活动即将开启"
+
+msgid "banner/new"
+msgstr "新"
+
+msgid "banner/pause"
+msgstr ""
+"章节%(chapter)s的战斗\n"
+"于%(date)s开始"
+
+msgid "banner/postmortem"
+msgstr ""
+"活动战斗已结束\n"
+"进度开放"
+
+msgid "banner/postmortem_until"
+msgstr "至%(date)s"
+
+msgid "banner/startsIn"
+msgstr "距开始还有%(start)s"
+
+msgid "banner/subtitle"
+msgstr "节日游戏模式"
+
+msgid "banner/title"
+msgstr "寒冬突袭"
+
+msgid "base/A"
+msgstr "A"
+
+msgid "base/B"
+msgstr "B"
+
+msgid "base/C"
+msgstr "C"
+
+msgid "battle/baseCapturing/activePlayers"
+msgstr "占领生效的玩家数量:"
+
+msgid "battle/baseCapturing/baseCaptured"
+msgstr "已占领小岛"
+
+msgid "battle/baseCapturing/blockedByEnemy"
+msgstr "敌人在占领区域内"
+
+msgid "battle/baseCapturing/blockedByTurret"
+msgstr "击毁敌方炮塔"
+
+msgid "battle/baseCapturing/captured"
+msgstr "已占领！"
+
+msgid "battle/baseCapturing/seconds"
+msgstr "%(seconds)s"
+
+msgid "battle/baseCapturing/unavailable"
+msgstr "不可用"
+
+msgid "battle/helpView/giftDefend/hint1"
+msgstr "夺取礼物，并将其运送至团队基地"
+
+msgid "battle/helpView/giftDefend/hint2"
+msgstr "礼物会在地图的特定区域出现——确保您的团队及时抵达并收集礼物"
+
+msgid "battle/helpView/giftDefend/hint3"
+msgstr "您也可从敌方团队的基地盗取礼物"
+
+msgid "battle/helpView/giftDefend/hint4"
+msgstr "击毁敌方坦克后，对方的礼物就会掉落"
+
+msgid "battle/helpView/lastGiftStanding/hint1"
+msgstr "夺取礼物，并将其运送至团队基地"
+
+msgid "battle/helpView/lastGiftStanding/hint2"
+msgstr "礼物会在地图的特定区域出现——确保您的团队及时抵达并收集礼物"
+
+msgid "battle/helpView/lastGiftStanding/hint3"
+msgstr "您也可从敌方团队的基地盗取礼物"
+
+msgid "battle/helpView/lastGiftStanding/hint4"
+msgstr "击毁敌方坦克后，对方的礼物就会掉落"
+
+msgid "battle/helpView/title"
+msgstr "规则"
+
+msgid "battle/loadingScreen/hint1/description"
+msgstr "收集礼物，赢得胜利。您可在地图上或敌方基地找到散落的礼物，也可在击毁敌方坦克后拾取对方掉落的礼物。"
+
+msgid "battle/loadingScreen/hint1/title"
+msgstr "夺取礼物！"
+
+msgid "battle/loadingScreen/hint2/description"
+msgstr "保持警惕，因为其他团队会尝试从您这里盗取礼物。阻止他们，或者先下手为强，盗取他们的礼物！"
+
+msgid "battle/loadingScreen/hint2/title"
+msgstr "寒冬突袭"
+
+msgid "battle/loadingScreen/hint3/description"
+msgstr "团队基地会逐渐恢复您的生命值，除非您正在受到敌人的攻击。"
+
+msgid "battle/loadingScreen/hint3/title"
+msgstr "直捣黄龙"
+
+msgid "battle/loadingScreen/hint4/description"
+msgstr "选择合适的坦克类型，最大限度地提高您的表现。运载能手来去无踪，防御标兵可侦察并狩猎敌人，而突击勇士则能造成高额损伤。"
+
+msgid "battle/loadingScreen/hint4/title"
+msgstr "您青睐哪种类型？"
+
+msgid "battle/missileMarker/shoot"
+msgstr "发射"
+
+msgid "battle/settings/disabled"
+msgstr "在该游戏模式中，您无法更改这些设置"
+
+msgid "common/teams/blue"
+msgstr "幽蓝"
+
+msgid "common/teams/magenta"
+msgstr "绛紫"
+
+msgid "common/teams/yellow"
+msgstr "杏黄"
+
+msgid "entryPointTooltip/complete"
+msgstr "可获得的额外奖励"
+
+msgid "entryPointTooltip/description"
+msgstr ""
+"假日行动村镇中出现了一辆满载奇珍异宝的神秘货车。在这些稀奇古怪的东西中，有一个不同寻常的棋盘游戏。仔细一看，您就会发现这是一个用纸做的微型冬季世界，而且...那些折纸坦克是在动吗？这块棋盘正召唤您投身节日挑战，体验令人难忘的冒险，并收获大量好物！"
+
+msgid "entryPointTooltip/header"
+msgstr "寒冬突袭"
+
+msgid "entryPointTooltip/mode"
+msgstr "模式"
+
+msgid "entryPointTooltip/modeDescription"
+msgstr "—— 正在切换至其他游戏模式"
+
+msgid "entryPointTooltip/notAvailable"
+msgstr "活动即将开启"
+
+msgid "entryPointTooltip/performanceRisk/text/highRisk"
+msgstr "您的计算机性能不足以运行此模式。您可能会遇到图形和坦克移动方面的问题。游戏客户端也有可能崩溃。"
+
+msgid "entryPointTooltip/performanceRisk/text/mediumRisk"
+msgstr "该模式需要较高的计算机性能。您可能会遇到地图加载、图形和坦克移动方面的问题。如果性能不足，请在设置中尝试较低的图形质量。"
+
+msgid "entryPointTooltip/performanceRisk/title/highRisk"
+msgstr "低性能"
+
+msgid "entryPointTooltip/performanceRisk/title/mediumRisk"
+msgstr "性能降低"
+
+msgid "entryPointTooltip/year"
+msgstr "2026"
+
+msgid "headerButtons/fightBtn/tooltip/notAvailable/body"
+msgstr "所有寒冬突袭战斗已结束"
+
+msgid "headerButtons/fightBtn/tooltip/notAvailable/header"
+msgstr "战斗未开放"
+
+msgid "npc"
+msgstr "护卫坦克"
+
+msgid "postBattle/battleScore/rewardTitle"
+msgstr "战斗统计奖励"
+
+msgid "postBattle/battleScore/scoreType/ability_assist"
+msgstr "能力协助"
+
+msgid "postBattle/battleScore/scoreType/base_defended"
+msgstr "防守基地"
+
+msgid "postBattle/battleScore/scoreType/damage_caused"
+msgstr "造成损伤"
+
+msgid "postBattle/battleScore/scoreType/delivered"
+msgstr "运送礼物"
+
+msgid "postBattle/battleScore/scoreType/destroyed"
+msgstr "击毁"
+
+msgid "postBattle/battleScore/scoreType/ram"
+msgstr "撞击"
+
+msgid "postBattle/battleScore/scoreType/spot_and_damage_assist"
+msgstr "点亮/协助"
+
+msgid "postBattle/battleScore/teamLabel/cyan"
+msgstr "幽蓝"
+
+msgid "postBattle/battleScore/teamLabel/magenta"
+msgstr "绛紫"
+
+msgid "postBattle/battleScore/teamLabel/yellow"
+msgstr "杏黄"
+
+msgid "postBattle/battleScore/teamPosition/first"
+msgstr "第1"
+
+msgid "postBattle/battleScore/teamPosition/second"
+msgstr "第2"
+
+msgid "postBattle/battleScore/teamPosition/third"
+msgstr "第3"
+
+msgid "postBattle/captionSubtitle"
+msgstr "战斗结束: %(timestamp)s"
+
+msgid "postBattle/captionTitle"
+msgstr "寒冬突袭%(nickname)s"
+
+msgid "postBattle/close"
+msgstr "关闭"
+
+msgid "postBattle/continueButton"
+msgstr "继续"
+
+msgid "postBattle/place"
+msgstr "排名"
+
+msgid "postBattle/placeInTeam"
+msgstr "在团队中的排名"
+
+msgid "postBattle/tab/battleResults"
+msgstr "战斗结果"
+
+msgid "postBattle/tab/battleScore"
+msgstr "战斗统计"
+
+msgid "postBattle/tab/battleScoreDescription"
+msgstr "因在战斗中表现出色并获得%(points)点数"
+
+msgid "postBattle/team"
+msgstr "团队"
+
+msgid "postBattle/yourTotalreward/headingAbove"
+msgstr "您的全部奖励"
+
+msgid "postBattle/yourTotalreward/textBelow"
+msgstr "礼物硬币"
+
+msgid "ribbon/efficiencyRibbons/abilityAssistBlizzard"
+msgstr "能力协助"
+
+msgid "ribbon/efficiencyRibbons/abilityAssistBuff"
+msgstr "能力协助"
+
+msgid "ribbon/efficiencyRibbons/abilityAssistFlare"
+msgstr "能力协助"
+
+msgid "ribbon/efficiencyRibbons/abilityAssistSonar"
+msgstr "能力协助"
+
+msgid "ribbon/efficiencyRibbons/baseDefenderBonus"
+msgstr "防守基地"
+
+msgid "ribbon/efficiencyRibbons/blizzardCausedDamage"
+msgstr "造成损伤"
+
+msgid "ribbon/efficiencyRibbons/damageByDart"
+msgstr "受到损伤"
+
+msgid "ribbon/efficiencyRibbons/damagedByBlizzard"
+msgstr "受到损伤"
+
+msgid "ribbon/efficiencyRibbons/damagedBySnowstorm"
+msgstr "受到损伤"
+
+msgid "ribbon/efficiencyRibbons/dartDamageCaused"
+msgstr "造成损伤"
+
+msgid "ribbon/efficiencyRibbons/missileDamageCaused"
+msgstr "造成损伤"
+
+msgid "ribbon/efficiencyRibbons/missileDamageReceived"
+msgstr "受到损伤"
+
+msgid "ribbon/efficiencyRibbons/presentsDelivery"
+msgstr "运送礼物"
+
+msgid "ribbon/efficiencyRibbons/rageDamage"
+msgstr "受到损伤"
+
+msgid "ribbon/efficiencyRibbons/sonarCausedDamage"
+msgstr "受到损伤"
+
+msgid "ribbon/efficiencyRibbons/sonarDamage"
+msgstr "造成损伤"
+
+msgid "ribbon/efficiencyRibbons/turretDealtDamage"
+msgstr "造成损伤"
+
+msgid "ribbon/efficiencyRibbons/turretDestroyed"
+msgstr "击毁炮塔"

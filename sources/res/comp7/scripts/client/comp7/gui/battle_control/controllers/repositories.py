@@ -16,10 +16,13 @@ class Comp7ControllerRepository(ClassicControllersRepository):
         settings = cls.__comp7Controller.getModeSettings()
         isTeamChannelAvailable = settings.createVivoxTeamChannels if settings is not None else False
         repository.addArenaController(Comp7VOIPController(isTeamChannelAvailable), setup)
-        repository.addController(Comp7BattleSoundController())
         repository.addArenaViewController(PrebattleSetupController(setup), setup)
         return repository
 
     @staticmethod
     def _getAppearanceCacheController(setup):
         return Comp7AppearanceCacheController(setup)
+
+    @staticmethod
+    def _getSoundController(setup):
+        return Comp7BattleSoundController()

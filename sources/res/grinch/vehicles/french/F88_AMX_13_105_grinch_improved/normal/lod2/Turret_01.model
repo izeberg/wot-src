@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>grinch/vehicles/french/F88_AMX_13_105_grinch_improved/normal/lod2/Turret_01</nodefullVisual>
+	<tank>true</tank>
+	<parent>grinch/vehicles/french/F88_AMX_13_105_grinch_improved/normal/lod3/Turret_01</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-0.937854 -0.021517 -0.859015</min>
+		<max>0.949895 0.434265 0.897873</max>
+	</visibilityBox>
+</root>

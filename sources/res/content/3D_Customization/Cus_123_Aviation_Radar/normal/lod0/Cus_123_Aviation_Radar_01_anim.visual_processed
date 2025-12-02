@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>group</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>Cus_123_Aviation_Radar</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.000000 0.000000</row3>
+				</transform>
+				<node>
+					<identifier>joint_root</identifier>
+					<transform>
+						<row0>0.000000 0.999996 0.002968</row0>
+						<row1>0.000000 0.002968 -0.999996</row1>
+						<row2>-1.000000 0.000000 0.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+					<node>
+						<identifier>joint_hip</identifier>
+						<transform>
+							<row0>0.760834 0.648947 -0.000000</row0>
+							<row1>0.648947 -0.760834 0.000000</row1>
+							<row2>0.000000 -0.000000 -1.000000</row2>
+							<row3>0.097378 0.000293 0.000000</row3>
+						</transform>
+						<node>
+							<identifier>joint1</identifier>
+							<transform>
+								<row0>0.254156 -0.967163 -0.000000</row0>
+								<row1>0.967163 0.254156 0.000000</row1>
+								<row2>-0.000000 0.000000 1.000000</row2>
+								<row3>0.065988 -0.001159 -0.000000</row3>
+							</transform>
+							<node>
+								<identifier>joint2</identifier>
+								<transform>
+									<row0>-0.577207 0.816598 0.000000</row0>
+									<row1>0.816598 0.577207 -0.000000</row1>
+									<row2>-0.000000 -0.000000 -1.000000</row2>
+									<row3>0.061409 0.000070 0.000000</row3>
+								</transform>
+								<node>
+									<identifier>joint3</identifier>
+									<transform>
+										<row0>0.226771 -0.973948 0.000000</row0>
+										<row1>0.973948 0.226771 0.000000</row1>
+										<row2>-0.000000 0.000000 1.000000</row2>
+										<row3>0.270189 -0.000046 0.000000</row3>
+									</transform>
+									<node>
+										<identifier>joint_radar</identifier>
+										<transform>
+											<row0>0.000000 -0.000000 -1.000000</row0>
+											<row1>0.059677 0.998218 0.000000</row1>
+											<row2>0.998218 -0.059677 0.000000</row2>
+											<row3>0.053574 -0.000118 0.000000</row3>
+										</transform>
+										<node>
+											<identifier>joint_radar_BlendBone</identifier>
+											<transform>
+												<row0>1.000000 0.000000 -0.000000</row0>
+												<row1>-0.000000 1.000000 -0.000000</row1>
+												<row2>-0.000000 -0.000000 -1.000000</row2>
+												<row3>0.000000 -0.389931 -0.000003</row3>
+											</transform>
+										</node>
+									</node>
+								</node>
+								<node>
+									<identifier>joint2_BlendBone</identifier>
+									<transform>
+										<row0>0.000000 -0.000000 -1.000000</row0>
+										<row1>0.985745 0.168245 0.000000</row1>
+										<row2>-0.168245 0.985745 -0.000000</row2>
+										<row3>-0.102149 -0.117852 0.000000</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>joint1_BlendBone</identifier>
+								<transform>
+									<row0>-0.000000 0.000000 1.000000</row0>
+									<row1>-0.431590 0.902070 -0.000000</row1>
+									<row2>0.902070 0.431590 -0.000000</row2>
+									<row3>0.024132 -0.151370 0.000000</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>joint_hip_BlendBone</identifier>
+							<transform>
+								<row0>0.000000 0.000000 1.000000</row0>
+								<row1>0.762757 0.646685 -0.000000</row1>
+								<row2>0.646685 -0.762757 -0.000000</row2>
+								<row3>-0.074279 -0.062970 0.000000</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>joint_root_BlendBone</identifier>
+						<transform>
+							<row0>0.000000 0.000000 -1.000000</row0>
+							<row1>0.999996 0.002968 0.000000</row1>
+							<row2>-0.002968 0.999996 -0.000000</row2>
+							<row3>0.000000 0.000000 0.000000</row3>
+						</transform>
+					</node>
+				</node>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>joint_radar_BlendBone</node>
+		<node>joint2_BlendBone</node>
+		<node>joint_hip_BlendBone</node>
+		<node>joint_root_BlendBone</node>
+		<node>joint1_BlendBone</node>
+		<geometry>
+			<vertices>s0Shape.vertices</vertices>
+			<primitive>s0Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>112</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/3D_Customization/Cus_123_Aviation_Radar/Cus_123_Aviation_Radar_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>content/3D_Customization/Cus_123_Aviation_Radar/Cus_123_Aviation_Radar_AO.dds</Texture>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>8.000000 8.000000 8.000000 8.000000</Vector4>
+					</property>
+					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/3D_Customization/Cus_123_Aviation_Radar/Cus_123_Aviation_Radar_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/3D_Customization/Cus_123_Aviation_Radar/Cus_123_Aviation_Radar_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.006663 0.199711 -0.041596</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>-0.289807 -0.200000 -0.200220</min>
+		<max>0.276481 0.599423 0.283412</max>
+	</boundingBox>
+	<geometrySize>352752</geometrySize>
+</root>

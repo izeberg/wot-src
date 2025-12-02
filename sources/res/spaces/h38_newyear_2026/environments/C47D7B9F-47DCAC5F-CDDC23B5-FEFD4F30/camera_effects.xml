@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<effectMap>spaces/h38_newyear_2026/environments/C47D7B9F-47DCAC5F-CDDC23B5-FEFD4F30/camera_effects_map.dds</effectMap>
+	<effect>
+		<id>1</id>
+		<name>particles/content_deferred/PFX/Environment/CameraEffects/winter_snow_sparks.vfx</name>
+		<alignToTerrain>false</alignToTerrain>
+		<useCameraTarget>false</useCameraTarget>
+	</effect>
+</root>

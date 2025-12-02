@@ -69,6 +69,10 @@ __all__ = (
  'creamTitle',
  'lightGray',
  'lightBlue',
+ 'nyAmber',
+ 'nyCrystal',
+ 'nyEmerald',
+ 'nyIron',
  'bptaler')
 
 def _getStyle(style, ctx=None):
@@ -327,6 +331,22 @@ def brProgressionToken(text):
     return _formatText('brProgressionToken', text)
 
 
+def nyAmber(text):
+    return _formatText('nyAmber', text)
+
+
+def nyIron(text):
+    return _formatText('nyIron', text)
+
+
+def nyCrystal(text):
+    return _formatText('nyCrystal', text)
+
+
+def nyEmerald(text):
+    return _formatText('nyEmerald', text)
+
+
 def defRes(text):
     return _formatText('defresText', text)
 
@@ -349,6 +369,10 @@ def titleFont(text):
 
 def tutorial(text):
     return _formatText('tutorialText', text)
+
+
+def tutorialBig(text):
+    return _formatText('tutorialTextBig', text)
 
 
 def playerOnline(text):

@@ -357,7 +357,7 @@
 		<shortUserString>#germany_vehicles:G61_G_E_short</shortUserString>
 		<description>#germany_vehicles:G61_G_E_descr</description>
 		<price>6100000</price>
-		<tags>SPG role_SPG HD heavySPG tankRammer_class1_user antifragmentationLining_superheavy_user earn_crystals</tags>
+		<tags>SPG role_SPG HD heavySPG tankRammer_class1_user antifragmentationLining_superheavy_user earn_crystals NY_style</tags>
 		<level>10</level>
 	</G61_G_E>
 	<G56_E-100>
@@ -375,7 +375,7 @@
 		<shortUserString>#germany_vehicles:G55_E-75_short</shortUserString>
 		<description>#germany_vehicles:G55_E-75_descr</description>
 		<price>3480000</price>
-		<tags>heavyTank role_HT_universal HD heavyTank1 improvedVentilation_class1_user tankRammer_class1_user aimingStabilizer_class1_user extraHealthReserve_class1_user antifragmentationLining_superheavy_user</tags>
+		<tags>heavyTank role_HT_universal HD heavyTank1 improvedVentilation_class1_user tankRammer_class1_user aimingStabilizer_class1_user extraHealthReserve_class1_user antifragmentationLining_superheavy_user NY_style</tags>
 		<level>9</level>
 	</G55_E-75>
 	<G66_VK2801>
@@ -706,7 +706,7 @@
 		<description>#germany_vehicles:G121_Grille_15_L63_descr</description>
 		<shortUserString>#germany_vehicles:G121_Grille_15_L63_short</shortUserString>
 		<price>6100000</price>
-		<tags>AT-SPG role_ATSPG_sniper HD mediumAT-SPG AT-SPG1 tankRammer_class1_user extraHealthReserve_class1_user antifragmentationLining_medium_user earn_crystals</tags>
+		<tags>AT-SPG role_ATSPG_sniper HD mediumAT-SPG AT-SPG1 tankRammer_class1_user extraHealthReserve_class1_user antifragmentationLining_medium_user earn_crystals NY_style</tags>
 		<level>10</level>
 	</G121_Grille_15_L63>
 	<G134_PzKpfw_VII>
@@ -884,11 +884,11 @@
 		<shortDescriptionSpecial>#germany_vehicles:G176_Jagdpanzer_E90_short_special</shortDescriptionSpecial>
 		<longDescriptionSpecial>#germany_vehicles:G176_Jagdpanzer_E90_long_special</longDescriptionSpecial>
 		<price>
-			100
+			10350
 			<gold/>
 		</price>
 		<notInShop>true</notInShop>
-		<tags>AT-SPG role_ATSPG_assault HD heavyAT-SPG improvedVentilation_class1_user tankRammer_class1_user extraHealthReserve_class1_user antifragmentationLining_superheavy_user earn_crystals secret testTank</tags>
+		<tags>AT-SPG role_ATSPG_assault HD heavyAT-SPG improvedVentilation_class1_user tankRammer_class1_user extraHealthReserve_class1_user antifragmentationLining_superheavy_user earn_crystals</tags>
 		<level>9</level>
 	</G176_Jagdpanzer_E90>
 	<G168_KJpz_T_III>
@@ -2394,11 +2394,11 @@
 		<shortDescriptionSpecial>#germany_vehicles:G175_Rheinmetall_Begleitwagen_short_special</shortDescriptionSpecial>
 		<longDescriptionSpecial>#germany_vehicles:G175_Rheinmetall_Begleitwagen_long_special</longDescriptionSpecial>
 		<price>
-			100
+			500
 			<gold/>
 		</price>
 		<notInShop>true</notInShop>
-		<tags>mediumTank HD improvedVentilation_class3_user extraHealthReserve_class3_user secret testTank</tags>
+		<tags>mediumTank HD improvedVentilation_class3_user extraHealthReserve_class3_user</tags>
 		<level>3</level>
 	</G175_Rheinmetall_Begleitwagen>
 	<G178_KanJpz_2>

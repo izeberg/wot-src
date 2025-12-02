@@ -24,6 +24,7 @@ _REWARD_ORDER = (
  Type.GOLD,
  Type.CRYSTAL,
  Type.CREDITS,
+ Type.HOTOYS,
  Type.FREEXP,
  Type.CUSTOMIZATIONS,
  Type.EXPERIMENTALEQUIPMENT,
@@ -38,16 +39,23 @@ _REWARD_ORDER = (
  Type.CREWBONUSX3,
  Type.PERSONALRESERVES,
  Type.CONSUMABLES,
- Type.RATIONS)
+ Type.RATIONS,
+ Type.HOCRYSTAL,
+ Type.HOEMERALD,
+ Type.HOAMBER,
+ Type.HOIRON)
 _CUSTOMIZATIONS = (
  Type.STYLE, Type.STYLE3D, Type.CUSTOMIZATIONS, Type.ATTACHMENT)
-_UNCOUNTABLE = (Type.PREMIUMPLUS, Type.GOLD, Type.CRYSTAL, Type.CREDITS, Type.FREEXP, Type.COMPONENTS)
+_UNCOUNTABLE = (
+ Type.PREMIUMPLUS, Type.GOLD, Type.CRYSTAL, Type.CREDITS, Type.FREEXP, Type.COMPONENTS, Type.HOCRYSTAL,
+ Type.HOEMERALD, Type.HOAMBER, Type.HOIRON)
 _ITEMS = (
  Type.DIRECTIVES, Type.IMPROVEDEQUIPMENT, Type.EXPERIMENTALEQUIPMENT, Type.BOUNTYEQUIPMENT, Type.CONSUMABLES,
  Type.RATIONS)
 _COMBINED = (
  Type.STANDARDEQUIPMENT, Type.TRAININGMATERIALS)
 _TOKENS = (Type.LOOTBOX, Type.CREWMEMBER, Type.BATTLEBONUSX5, Type.CREWBONUSX3)
+_HO_RESOURCES = (Type.HOCRYSTAL, Type.HOEMERALD, Type.HOAMBER, Type.HOIRON)
 
 class Statistics(object):
     __slots__ = ('__eventName', )
@@ -86,6 +94,8 @@ class Statistics(object):
                 rewardData = rewardsData.get('blueprints')
             elif rewardType in _TOKENS:
                 rewardData = rewardsData.get('tokens')
+            elif rewardType in _HO_RESOURCES:
+                rewardData = rewardsData.get('currencies', {}).get(rewardType.value, {}).get('count', 0)
             else:
                 rewardData = rewardsData.get(rewardType.value)
             rewardModel = _getRewardModel(rewardType, rewardData)
@@ -210,6 +220,10 @@ def _countRations(rewardData):
     return _countItems(rewardData, lambda i: _isEquipment(i) and i.isStimulator)
 
 
+def _countToys(rewardData):
+    return sum(sum(toys.itervalues()) for toys in rewardData.itervalues())
+
+
 def _isOptionalDevice(item):
     return item.itemTypeName == 'optionalDevice'
 
@@ -258,5 +272,6 @@ _COUNT_REWARDS = {Type.VEHICLES: _countVehicles,
    Type.CREWBONUSX3: _countCrewBonusX3, 
    Type.PERSONALRESERVES: _countPersonalReserves, 
    Type.CONSUMABLES: _countConsumables, 
-   Type.RATIONS: _countRations}
+   Type.RATIONS: _countRations, 
+   Type.HOTOYS: _countToys}
 _COUNT_REWARDS.update({rewardType:lambda rewardData: rewardData for rewardType in _UNCOUNTABLE})

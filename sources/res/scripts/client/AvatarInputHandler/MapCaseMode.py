@@ -18,7 +18,7 @@ from Math import Vector2, Vector3
 from AvatarInputHandler.control_modes import IControlMode
 from AvatarInputHandler import AimingSystems
 import SoundGroups
-from constants import SERVER_TICK_LENGTH
+from constants import SERVER_TICK_LENGTH, CollisionFlags
 from debug_utils import LOG_ERROR, LOG_WARNING
 from items import vehicles as vehs_core, artefacts
 from constants import AIMING_MODE
@@ -80,6 +80,8 @@ class _VehiclesSelector(object):
         self.__clearEdgedVehicles()
         vehicles = [ v for v in BigWorld.player().vehicles if self._validateVehicle(v) ]
         selected = self.__intersectChecker(vehicles)
+        if not selected:
+            return
         for v in selected:
             v.drawEdge(True)
             self.__edgedVehicles.append(v)
@@ -295,12 +297,13 @@ class _AreaStrikeSelector(_DefaultStrikeSelector):
 
 class _ArenaBoundsAreaStrikeSelector(_AreaStrikeSelector):
 
-    def __init__(self, position, equipment, direction=_DEFAULT_STRIKE_DIRECTION):
+    def __init__(self, position, equipment, direction=_DEFAULT_STRIKE_DIRECTION, terrainOnly=False):
         super(_ArenaBoundsAreaStrikeSelector, self).__init__(position, equipment, direction)
         self.__arena = BigWorld.player().arena
-        self.__wasInsideArenaBounds = True
-        self.__outFromBoundsAimArea = None
+        self.__wasPositionValid = True
+        self.outFromBoundsAimArea = None
         self.__insetRadius = 0
+        self.__terrainOnly = terrainOnly
         size = self._getAreaSize()
         visualPath = equipment.areaVisual
         color = None
@@ -310,36 +313,40 @@ class _ArenaBoundsAreaStrikeSelector(_AreaStrikeSelector):
             color = aimLimits.areaColor
             if aimLimits.areaSwitch:
                 visualPath = aimLimits.areaSwitch
-        self.__outFromBoundsAimArea = CombatSelectedArea()
-        self.__outFromBoundsAimArea.setup(position, direction, size, visualPath, color, marker=None)
-        self.__outFromBoundsAimArea.setGUIVisible(False)
+        self.outFromBoundsAimArea = CombatSelectedArea()
+        self.outFromBoundsAimArea.setup(position, direction, size, visualPath, color, marker=None)
+        self.outFromBoundsAimArea.setGUIVisible(False)
         self._updatePositionsAndVisibility(position)
         return
 
     def destroy(self):
         super(_ArenaBoundsAreaStrikeSelector, self).destroy()
-        if self.__outFromBoundsAimArea:
-            self.__outFromBoundsAimArea.destroy()
-            self.__outFromBoundsAimArea = None
+        if self.outFromBoundsAimArea:
+            self.outFromBoundsAimArea.destroy()
+            self.outFromBoundsAimArea = None
         return
 
     def setGUIVisible(self, isVisible):
-        if self.__wasInsideArenaBounds:
+        if self.__wasPositionValid:
             super(_ArenaBoundsAreaStrikeSelector, self).setGUIVisible(isVisible)
-        if self.__outFromBoundsAimArea:
-            self.__outFromBoundsAimArea.setGUIVisible(isVisible and not self.__wasInsideArenaBounds)
+        if self.outFromBoundsAimArea:
+            self.outFromBoundsAimArea.setGUIVisible(isVisible and not self.__wasPositionValid)
 
     def processHover(self, position, force=False):
         super(_ArenaBoundsAreaStrikeSelector, self).processHover(position, force)
         self._updatePositionsAndVisibility(position)
 
     def processSelection(self, position, reset=False):
-        if self.__wasInsideArenaBounds or reset:
+        if self.__wasPositionValid or reset:
             return super(_ArenaBoundsAreaStrikeSelector, self).processSelection(position, reset)
         return False
 
     def _validatePosition(self, position):
         return self.__arena.isPointInsideArenaBB(position)
+
+    def _isTerrain(self, position):
+        spaceId = BigWorld.player().spaceID
+        return not BigWorld.wg_collideSegment(spaceId, position + Math.Vector3(0, 100, 0), position + Math.Vector3(0, -0.1, 0), CollisionFlags.TRIANGLE_TERRAIN)
 
     def _updatePositionsAndVisibility(self, position):
         checkPosition = position
@@ -347,21 +354,22 @@ class _ArenaBoundsAreaStrikeSelector(_AreaStrikeSelector):
         if radius > 0:
             checkPosition = Math.Vector3(position.x + (radius if position.x > 0 else -radius), position.y, position.z + (radius if position.z > 0 else -radius))
         isInside = self._validatePosition(checkPosition)
-        if isInside != self.__wasInsideArenaBounds:
-            self.__wasInsideArenaBounds = isInside
-            if self.__outFromBoundsAimArea:
-                self.area.setGUIVisible(self.__wasInsideArenaBounds)
-                self.__outFromBoundsAimArea.setGUIVisible(not self.__wasInsideArenaBounds)
-        if self.__outFromBoundsAimArea and not self.__wasInsideArenaBounds:
-            self.__outFromBoundsAimArea.relocate(position, self.direction)
+        isValid = isInside and self._isTerrain(position) if self.__terrainOnly else isInside
+        if isValid != self.__wasPositionValid:
+            self.__wasPositionValid = isValid
+            if self.outFromBoundsAimArea:
+                self.area.setGUIVisible(self.__wasPositionValid)
+                self.outFromBoundsAimArea.setGUIVisible(not self.__wasPositionValid)
+        if self.outFromBoundsAimArea and not self.__wasPositionValid:
+            self.outFromBoundsAimArea.relocate(position, self.direction)
 
     def _enableWaterCollision(self, value):
         super(_ArenaBoundsAreaStrikeSelector, self)._enableWaterCollision(value)
-        self.__outFromBoundsAimArea.enableWaterCollision(value)
+        self.outFromBoundsAimArea.enableWaterCollision(value)
 
     def _updateOutFromBoundsPosition(self, position):
-        if self.__outFromBoundsAimArea:
-            self.__outFromBoundsAimArea.relocate(position, self.direction)
+        if self.outFromBoundsAimArea:
+            self.outFromBoundsAimArea.relocate(position, self.direction)
 
 
 class _DirectionalAreaStrikeSelector(_AreaStrikeSelector):
@@ -470,7 +478,7 @@ class _ArcadeBomberStrikeSelector(_ArenaBoundsAreaStrikeSelector, _VehiclesSelec
 
     def __init__(self, position, equipment):
         _ArenaBoundsAreaStrikeSelector.__init__(self, position, equipment)
-        _VehiclesSelector.__init__(self, self.__intersected)
+        _VehiclesSelector.__init__(self, self._intersected)
         self.area.enableWaterCollision(True)
         self.__updateDirection(position)
 
@@ -496,7 +504,7 @@ class _ArcadeBomberStrikeSelector(_ArenaBoundsAreaStrikeSelector, _VehiclesSelec
                 self.direction = Vector3(0, 0, 1)
         return
 
-    def __intersected(self, vehicles):
+    def _intersected(self, vehicles):
         for v in vehicles:
             if self.area.pointInside(v.position):
                 yield v

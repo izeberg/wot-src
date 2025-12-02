@@ -12,6 +12,7 @@ from notification import NotificationMVC
 from notification.BaseNotificationView import BaseNotificationView
 from notification.settings import NOTIFICATION_STATE
 from notification.utils import dynamicNotificationRegister
+from shared_utils import nextTick
 from skeletons.connection_mgr import IConnectionManager
 from skeletons.gui.shared.utils import IHangarSpace
 _logger = logging.getLogger(__name__)
@@ -31,6 +32,7 @@ class NotificationPopUpViewer(NotificationPopUpViewerMeta, BaseNotificationView)
         self.__noDisplayingPopups = True
         self.__lockedNotificationUseQueue = True
         self.__lockedNotificationPriority = {}
+        self.__locks = set()
         self.__pendingMessagesQueue = []
         super(NotificationPopUpViewer, self).__init__()
         self.setModel(mvc.getModel())
@@ -95,6 +97,8 @@ class NotificationPopUpViewer(NotificationPopUpViewerMeta, BaseNotificationView)
     def __onNotificationReceived(self, notification):
         if self._model.getDisplayState() == NOTIFICATION_STATE.POPUPS:
             self.__incrementOrDecrementNotifiedMessagesCount(notification)
+            if notification.onlyNCList():
+                return
             if NotificationMVC.g_instance.getAlertController().isAlertShowing():
                 self.__pendingMessagesQueue.append(notification)
             elif self.__pendingMessagesQueue or self.__isLocked(notification):
@@ -164,21 +168,41 @@ class NotificationPopUpViewer(NotificationPopUpViewerMeta, BaseNotificationView)
 
     def __isLocked(self, notification):
         priorities = {priority for val in self.__lockedNotificationPriority.values() for priority in val}
-        return notification.getPriorityLevel() in priorities
+        return notification.getPriorityLevel() in priorities or notification.getPriorityLevel() in self.__locks
 
-    def __onLockPopUpMessages(self, key, lockHigh=False, useQueue=True):
+    def __onLockPopUpMessages(self, key, lockHigh=False, useQueue=True, clear=False):
         priorities = self.__lockedNotificationPriority.setdefault(key, {NotificationPriorityLevel.MEDIUM})
         if lockHigh:
             priorities.add(NotificationPriorityLevel.HIGH)
+            locks = {NotificationPriorityLevel.MEDIUM, NotificationPriorityLevel.HIGH}
+        else:
+            locks = {
+             NotificationPriorityLevel.MEDIUM}
         self.__lockedNotificationUseQueue = useQueue
+        self.__lockedNotificationPriority[key] = locks
+        self.__updateLocks()
+        if clear:
+            self.as_removeAllMessagesS()
 
     def __onUnlockPopUpMessages(self, key):
+        _logger.debug('NotificationPopUpViewer has been unlocked. key=%s', key)
+        if key not in self.__lockedNotificationPriority:
+            _logger.error('Failed to lock NotificationPopUpViewer. Missing key=%s.', key)
+        if self.__lockedNotificationPriority.get(key):
+            del self.__lockedNotificationPriority[key]
+        self.__updateLocks()
+        if not self.__locks:
+            self.__showMessagesFromQueue()
         self.__lockedNotificationUseQueue = True
         if key in self.__lockedNotificationPriority:
             del self.__lockedNotificationPriority[key]
         if self.__pendingMessagesQueue and any(self.__isLocked(n) for n in self.__pendingMessagesQueue):
             return
         self.__showMessagesFromQueue()
+
+    def __updateLocks(self):
+        locks = self.__lockedNotificationPriority.values()
+        self.__locks = set.union(*locks) if locks else set()
 
     def __startNotifications(self):
         if self.__hangarSpace.spaceInited:
@@ -191,7 +215,7 @@ class NotificationPopUpViewer(NotificationPopUpViewerMeta, BaseNotificationView)
             mvcInstance.getAlertController().onAllAlertsClosed += self.__allAlertsMessageCloseHandler
             g_messengerEvents.onLockPopUpMessages += self.__onLockPopUpMessages
             g_messengerEvents.onUnlockPopUpMessages += self.__onUnlockPopUpMessages
-            self._model.setup()
+            nextTick(self._model.setup)()
         else:
             g_playerEvents.onLoadingMilestoneReached += self._onLoadingMilestoneReached
 

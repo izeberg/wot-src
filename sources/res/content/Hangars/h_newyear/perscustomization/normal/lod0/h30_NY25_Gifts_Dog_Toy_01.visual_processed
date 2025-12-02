@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0</identifier>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<materialKind>110</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						alphaReference
+						<Int>68</Int>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h_newyear/perscustomization/h30_NY25_Gifts_Dog_Toy_01_AM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/h_newyear/perscustomization/h30_NY25_Gifts_Dog_Toy_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/h_newyear/perscustomization/h30_NY25_Gifts_Dog_Toy_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.000000 0.179742 -0.006052</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>s_nd1</identifier>
+					<fx>shaders/custom/emissive_playground.fx</fx>
+					<materialKind>110</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						emissionMap
+						<Texture>content/Hangars/h_newyear/perscustomization/h30_NY25_Gifts_Dog_Toy_01_Garland_AM.dds</Texture>
+					</property>
+					<property>
+						g_contrast
+						<Float>3.000000</Float>
+					</property>
+					<property>
+						g_deferredMult
+						<Float>69.699997</Float>
+					</property>
+					<property>
+						g_offsetBlack
+						<Float>0.610000</Float>
+					</property>
+					<property>
+						phaseMap
+						<Texture>content/Hangars/h_newyear/perscustomization/h30_NY25_Gifts_Dog_Toy_01_Garland_CM.dds</Texture>
+					</property>
+					<property>
+						speed
+						<Float>0.350000</Float>
+					</property>
+					<property>
+						usePhaseMap
+						<Bool>true</Bool>
+					</property>
+					<property>
+						waveLen
+						<Float>4.000000</Float>
+					</property>
+					<property>
+						pattern
+						<Texture>content/Hangars/h_newyear/perscustomization/h30_NY25_Gifts_Dog_Toy_01_Garland_AM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_zeroPhaseLum
+						<Float>0.150000</Float>
+					</property>
+					<property>
+						angleFalloffParams
+						<Vector4>1.000000 1.000000 2.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_offsetBlackFwd
+						<Float>0.900000</Float>
+					</property>
+				</material>
+				<groupOrigin>0.037763 0.185888 -0.033089</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-0.414231 -0.006980 -0.205229</min>
+		<max>0.477915 0.378756 0.139051</max>
+	</boundingBox>
+	<customBsp>true</customBsp>
+	<geometrySize>91004</geometrySize>
+</root>

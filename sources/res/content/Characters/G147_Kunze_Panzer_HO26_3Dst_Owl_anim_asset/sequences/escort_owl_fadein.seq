@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>2.500000</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>owl_01</name>
+		<type>model</type>
+		<resource>content/Characters/G147_Kunze_Panzer_HO26_3Dst_Owl_anim_asset/normal/lod0/Owl_01.model</resource>
+		<track>
+			<name>animation</name>
+			<type>animation</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>0.833333</duration>
+				<resourceID>content/Characters/G147_Kunze_Panzer_HO26_3Dst_Owl_anim_asset/animation/games_animations/fast_flight.fbx</resourceID>
+				<clipName/>
+				<speed>1.000000</speed>
+				<layer>0</layer>
+				<blendIn>constant</blendIn>
+				<blendOut>constant</blendOut>
+				<blendInTime>0.000000</blendInTime>
+				<blendOutTime>0.000000</blendOutTime>
+				<clipStartTime>0.000000</clipStartTime>
+				<clipEndTime>1.666667</clipEndTime>
+			</frame>
+			<frame>
+				<startTime>0.833333</startTime>
+				<duration>1.666667</duration>
+				<resourceID>content/Characters/G147_Kunze_Panzer_HO26_3Dst_Owl_anim_asset/animation/games_animations/fast_flight.fbx</resourceID>
+				<clipName/>
+				<speed>1.000000</speed>
+				<layer>0</layer>
+				<blendIn>constant</blendIn>
+				<blendOut>constant</blendOut>
+				<blendInTime>0.000000</blendInTime>
+				<blendOutTime>0.000000</blendOutTime>
+				<clipStartTime>0.000000</clipStartTime>
+				<clipEndTime>1.666667</clipEndTime>
+			</frame>
+		</track>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.500000 15.345299 -33.863548</value>
+				<inTangent>-0.405780 -13.932494 30.866034</inTangent>
+				<outTangent>-0.405780 -13.932494 30.866034</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.833333</startTime>
+				<value>0.500000 5.870342 -12.321636</value>
+				<inTangent>-0.101445 -5.838801 11.924443</inTangent>
+				<outTangent>-0.101445 -5.838801 11.924443</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.500000</startTime>
+				<value>1.500000 3.500000 -1.500000</value>
+				<inTangent>-0.032882 -0.166168 -0.147151</inTangent>
+				<outTangent>-0.032882 -0.166168 -0.147151</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-16.095369 180.000000 -0.000004</value>
+				<inTangent>18.229818 0.000000 -0.000002</inTangent>
+				<outTangent>18.229818 0.000000 -0.000002</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.833333</startTime>
+				<value>-0.903859 180.000000 -0.000006</value>
+				<inTangent>9.386066 0.000000 -0.000001</inTangent>
+				<outTangent>9.386066 0.000000 -0.000001</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.500000</startTime>
+				<value>0.000000 180.000000 -0.000004</value>
+				<inTangent>0.542315 -0.000000 0.000001</inTangent>
+				<outTangent>0.542315 -0.000000 0.000001</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.800000 0.800000 0.800000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.000000</startTime>
+				<value>0.800000 0.800000 0.800000</value>
+				<inTangent>0.800000 0.800000 0.800000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.500000</startTime>
+				<value>0.800000 0.800000 0.800000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

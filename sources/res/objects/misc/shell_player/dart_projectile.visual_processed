@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>m_dart_projectile</identifier>
+					<fx>shaders/std_effects/glow.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h38_newyear_2025/environment/h32_CND_049_BackPlane_Water_ANM.dds</Texture>
+					</property>
+					<property>
+						g_tintColor
+						<Vector4>1.000000 0.443137 0.000000 1.000000</Vector4>
+					</property>
+					<property>
+						selfIllumination
+						<Float>150.000000</Float>
+					</property>
+				</material>
+				<groupOrigin>-0.000000 0.000000 0.351246</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-0.263518 -0.263518 -0.255305</min>
+		<max>0.263518 0.263518 0.957797</max>
+	</boundingBox>
+	<geometrySize>1536</geometrySize>
+</root>

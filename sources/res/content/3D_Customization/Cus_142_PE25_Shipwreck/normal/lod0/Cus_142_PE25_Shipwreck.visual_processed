@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0</identifier>
+					<fx>shaders/std_effects/PBS_tank.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>108</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/3D_Customization/Cus_142_PE25_Shipwreck/Cus_142_PE25_Shipwreck_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>content/3D_Customization/Cus_142_PE25_Shipwreck/Cus_142_PE25_Shipwreck_AO.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/3D_Customization/Cus_142_PE25_Shipwreck/Cus_142_PE25_Shipwreck_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/3D_Customization/Cus_142_PE25_Shipwreck/Cus_142_PE25_Shipwreck_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.260436 0.273174 0.018860</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-0.653200 0.000000 -0.973912</min>
+		<max>0.132328 0.546348 1.011632</max>
+	</boundingBox>
+	<customBsp>true</customBsp>
+	<geometrySize>440100</geometrySize>
+</root>

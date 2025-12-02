@@ -7578,6 +7578,57 @@ msgstr "达到特定节日气氛等级。"
 msgid "notrecruitedtankman/ny25defaultGirl/label"
 msgstr "假日行动2025"
 
+msgid "notrecruitedtankman/ny26_girl_1/desc"
+msgstr ""
+"奖励给在假日行动2026中达到特定节日气氛等级的玩家。该女性乘员拥有训练至100%熟练度的\"零历练\"兄弟连特长，以及足以将另一项特长训练至100%的经验。"
+
+msgid "notrecruitedtankman/ny26_girl_1/label"
+msgstr "假日行动2026"
+
+msgid "notrecruitedtankman/ny26_girl_2/desc"
+msgstr ""
+"奖励给在假日行动2026中达到特定节日气氛等级的玩家。该女性乘员拥有训练至100%熟练度的\"零历练\"兄弟连特长，以及足以将另一项特长训练至100%的经验。"
+
+msgid "notrecruitedtankman/ny26_girl_2/label"
+msgstr "假日行动2026"
+
+msgid "notrecruitedtankman/ny26_girl_3/desc"
+msgstr ""
+"奖励给在假日行动2026中达到特定节日气氛等级的玩家。该女性乘员拥有训练至100%熟练度的\"零历练\"兄弟连特长，以及足以将另一项特长训练至100%的经验。"
+
+msgid "notrecruitedtankman/ny26_girl_3/label"
+msgstr "假日行动2026"
+
+msgid "notrecruitedtankman/ny26_girl_4/desc"
+msgstr ""
+"奖励给在假日行动2026中达到特定节日气氛等级的玩家。该女性乘员拥有训练至100%熟练度的\"零历练\"兄弟连特长，以及足以将另一项特长训练至100%的经验。"
+
+msgid "notrecruitedtankman/ny26_girl_4/label"
+msgstr "假日行动2026"
+
+msgid "notrecruitedtankman/ny26_men/desc"
+msgstr ""
+"您是否有时觉得战斗少了些许风度与雅致？欢迎康伯巴奇指挥官闪亮登场。这位舞台与银幕的传奇兼具危险魅力与完美仪表，将为战火注入一丝绅士的优雅。无论是丰富多样的角色，还是炉火纯青的演技，他都是当之无愧的百变巨匠。如今，他将像征服观众一样指挥您的坦克——以标志性的潇洒风范、犀利的英式幽默，还有比炮弹更具威力的妙语，让敌人心惊胆战。"
+
+msgid "notrecruitedtankman/ny26_men/event"
+msgstr "假日行动2026"
+
+msgid "notrecruitedtankman/ny26_men/label"
+msgstr "假日行动2026"
+
+msgid "notrecruitedtankman/ny26defaultGirl/desc"
+msgstr ""
+"节日气氛升至特定等级后，您将获得一名女性乘员。该女性乘员拥有训练至100%熟练度的\"零历练\"兄弟连特长，以及足以将另一项特长训练至100%的经验。"
+
+msgid "notrecruitedtankman/ny26defaultGirl/event"
+msgstr "假日行动2026"
+
+msgid "notrecruitedtankman/ny26defaultGirl/howToGetInfo"
+msgstr "达到特定的节日气氛等级。"
+
+msgid "notrecruitedtankman/ny26defaultGirl/label"
+msgstr "假日行动2026"
+
 msgid "notrecruitedtankman/offspring_commander/desc"
 msgstr ""
 "这名主唱、吉他手兼作曲人是当代公认的全才！他拥有分子生物学博士学位，会做Gringo "
@@ -7902,6 +7953,26 @@ msgstr "?empty?"
 
 msgid "notrecruitedtankman/tankmen_bp1004_5/label"
 msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp1005_1/desc"
+msgstr ""
+"圣诞老人家喻户晓。此刻却急需休整。他的待办事项清单比小精灵的加班记录还长，数十亿份礼物亟待准时送达。雪上加霜的是，曾经的合作伙伴查尔斯·克拉姆波夫斯基暗中作乱，企图彻底破坏圣诞佳节。圣诞老人当然不会坐视不管。他虽以乐观开朗的性情和洪亮的笑声闻名，但绝不容许任何人破坏假日季。今年，他将亲临战场。"
+
+msgid "notrecruitedtankman/tankmen_bp1005_1/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp1005_1/label"
+msgstr "假日行动2026"
+
+msgid "notrecruitedtankman/tankmen_bp1005_2/desc"
+msgstr ""
+"查尔斯·克拉姆波夫斯基的动机如同他的身世般笼罩着神秘色彩。这位技艺超群的机械师曾与圣诞老人并肩协作，为表现优异的坦克手打造精良装备。然而久而久之，他却对制造混乱产生了浓厚兴趣。如今，被逐出工坊、名列淘气名单的他，执意要破坏节日庆典。圣诞守护战已然打响，战火即将引爆——您将加入谁的阵营？"
+
+msgid "notrecruitedtankman/tankmen_bp1005_2/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp1005_2/label"
+msgstr "假日行动2026"
 
 msgid "notrecruitedtankman/tankmen_bp10_1/desc"
 msgstr ""
@@ -10095,6 +10166,9 @@ msgstr "还有%(count)s个"
 
 msgid "quests/awards/additional/header"
 msgstr "奖励:"
+
+msgid "quests/awards/additional/header/count"
+msgstr "还有%(count)s个"
 
 msgid "quests/awards/nearest/header"
 msgstr "下组奖励:"

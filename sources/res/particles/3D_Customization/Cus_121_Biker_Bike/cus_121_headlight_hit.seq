@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>2.000000</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Model 0</name>
+		<type>model</type>
+		<resource>particles/3D_Customization/Cus_121_Biker_Bike/cus_121_headlight_01.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.008209 0.198133 0.555481</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>90.000000 90.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>s_light</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.166667</startTime>
+				<value>1.000000 0.913725 0.792157 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 -0.013376</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -0.013376</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.266667</startTime>
+				<value>1.000000 0.913725 0.792157 0.100000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.048479</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.048479</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.333333</startTime>
+				<value>1.000000 0.913725 0.792157 1.000000</value>
+				<inTangent>0.000000 0.000001 0.000000 -0.018295</inTangent>
+				<outTangent>0.000000 0.000001 0.000000 -0.018295</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.366667</startTime>
+				<value>1.000000 0.913725 0.792157 0.500000</value>
+				<inTangent>0.000000 0.000001 0.000000 0.064896</inTangent>
+				<outTangent>0.000000 0.000001 0.000000 0.064896</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.466667</startTime>
+				<value>1.000000 0.913725 0.792157 1.000000</value>
+				<inTangent>0.000000 -0.000000 0.000000 0.249999</inTangent>
+				<outTangent>0.000000 -0.000000 0.000000 0.249999</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.533333</startTime>
+				<value>1.000000 0.913725 0.792157 0.700000</value>
+				<inTangent>0.000000 0.000000 0.000000 -0.160984</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -0.160984</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.000000</startTime>
+				<value>1.000000 0.913725 0.792157 1.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 0.246293</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.246293</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

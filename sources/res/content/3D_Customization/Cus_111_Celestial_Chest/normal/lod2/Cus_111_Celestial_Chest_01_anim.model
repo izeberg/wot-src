@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>content/3D_Customization/Cus_111_Celestial_Chest/normal/lod2/Cus_111_Celestial_Chest_01_anim</nodefullVisual>
+	<parent>content/3D_Customization/Cus_111_Celestial_Chest/normal/lod3/Cus_111_Celestial_Chest_01_anim</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-0.341940 -0.001054 -0.446207</min>
+		<max>0.050404 0.393103 0.446368</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

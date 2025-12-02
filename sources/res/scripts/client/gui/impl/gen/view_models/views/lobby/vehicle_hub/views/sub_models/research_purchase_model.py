@@ -8,6 +8,8 @@ class ResearchPurchaseModel(ViewModel):
     ACTION_PURCHASE_SHOP = 'action_purchase_shop'
     ACTION_RESTORE = 'action_restore'
     ACTION_IN_GARAGE = 'action_in_garage'
+    ACTION_TO_LOOTBOX = 'action_in_lootbox'
+    ACTION_PURCHASE_LOOTBOX = 'action_purchase_lootbox'
     ACTION_STATE_ENABLED = 'action_state_enabled'
     ACTION_STATE_DISABLED = 'action_state_disabled'
     ACTION_DESC_NOT_ENOUGH_CREDITS = 'notEnoughCredits'
@@ -17,7 +19,7 @@ class ResearchPurchaseModel(ViewModel):
     ACTION_DESC_RESTORE_REQUESTED = 'restoreRequested'
     ACTION_READY_FOR_TRADE_IN = 'readyForTradeIn'
 
-    def __init__(self, properties=19, commands=2):
+    def __init__(self, properties=20, commands=2):
         super(ResearchPurchaseModel, self).__init__(properties=properties, commands=commands)
 
     def getAction(self):
@@ -134,6 +136,12 @@ class ResearchPurchaseModel(ViewModel):
     def setElite(self, value):
         self._setBool(18, value)
 
+    def getIsControlHidden(self):
+        return self._getBool(19)
+
+    def setIsControlHidden(self, value):
+        self._setBool(19, value)
+
     def _initialize(self):
         super(ResearchPurchaseModel, self)._initialize()
         self._addStringProperty('action', '')
@@ -155,5 +163,6 @@ class ResearchPurchaseModel(ViewModel):
         self._addBoolProperty('canTradeIn', False)
         self._addBoolProperty('premium', False)
         self._addBoolProperty('elite', False)
+        self._addBoolProperty('isControlHidden', False)
         self.onAction = self._addCommand('onAction')
         self.onBlueprint = self._addCommand('onBlueprint')

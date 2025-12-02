@@ -1,0 +1,4656 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>Root</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 -0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>Hips</identifier>
+				<transform>
+					<row0>0.000000 0.032068 0.999486</row0>
+					<row1>0.000000 0.999486 -0.032068</row1>
+					<row2>-1.000000 0.000000 0.000000</row2>
+					<row3>0.000000 0.661550 -0.371560</row3>
+				</transform>
+				<node>
+					<identifier>HindLeg1_L</identifier>
+					<transform>
+						<row0>-0.995415 -0.073355 -0.061391</row0>
+						<row1>0.073493 -0.997296 0.000000</row1>
+						<row2>-0.061225 -0.004511 0.998114</row2>
+						<row3>0.002367 -0.056223 0.088660</row3>
+					</transform>
+					<node>
+						<identifier>HindLeg2_L</identifier>
+						<transform>
+							<row0>-0.306595 0.945991 0.105356</row0>
+							<row1>-0.951548 -0.301878 -0.058527</row1>
+							<row2>-0.023561 -0.118195 0.992711</row2>
+							<row3>0.366456 0.186099 0.020726</row3>
+						</transform>
+						<node>
+							<identifier>HindLeg2_L_BlendBone</identifier>
+							<transform>
+								<row0>-0.123980 0.000000 -0.992285</row0>
+								<row1>-0.909135 0.400713 0.113591</row1>
+								<row2>-0.397621 -0.916204 0.049680</row2>
+								<row3>0.619631 0.500093 -0.164944</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>HindLeg1_L_BlendBone</identifier>
+						<transform>
+							<row0>0.061391 -0.000000 -0.998114</row0>
+							<row1>-0.105238 -0.994426 -0.006472</row1>
+							<row2>0.992550 -0.105437 0.061049</row2>
+							<row3>-0.295497 0.640794 -0.107003</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>HindLeg1_R</identifier>
+					<transform>
+						<row0>-0.995415 -0.073355 -0.061391</row0>
+						<row1>0.073493 -0.997296 0.000001</row1>
+						<row2>-0.061225 -0.004511 0.998114</row2>
+						<row3>0.002367 -0.056222 -0.088660</row3>
+					</transform>
+					<node>
+						<identifier>HindLeg2_R</identifier>
+						<transform>
+							<row0>-0.306595 0.945991 0.105356</row0>
+							<row1>-0.951548 -0.301878 -0.058527</row1>
+							<row2>-0.023561 -0.118195 0.992711</row2>
+							<row3>0.366233 0.186100 0.024340</row3>
+						</transform>
+						<node>
+							<identifier>HindLeg3_R</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>-0.000000 0.000000 1.000000</row2>
+								<row3>0.358697 -0.000000 -0.091055</row3>
+							</transform>
+							<node>
+								<identifier>HindLeg3_R_BlendBone</identifier>
+								<transform>
+									<row0>-0.123980 -0.000000 -0.992285</row0>
+									<row1>-0.909135 0.400713 0.113591</row1>
+									<row2>-0.397621 -0.916204 0.049680</row2>
+									<row3>0.282469 0.500093 0.098470</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>HindLeg2_R_BlendBone</identifier>
+							<transform>
+								<row0>-0.123980 -0.000000 -0.992285</row0>
+								<row1>-0.909135 0.400713 0.113591</row1>
+								<row2>-0.397621 -0.916204 0.049680</row2>
+								<row3>0.641166 0.500093 0.007415</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>HindLeg1_R_BlendBone</identifier>
+						<transform>
+							<row0>0.061391 -0.000001 -0.998114</row0>
+							<row1>-0.105238 -0.994426 -0.006472</row1>
+							<row2>0.992550 -0.105437 0.061049</row2>
+							<row3>-0.306382 0.640794 0.069982</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>Hip_L</identifier>
+					<transform>
+						<row0>0.039915 -0.993478 0.106814</row0>
+						<row1>0.999194 0.040144 0.000000</row1>
+						<row2>-0.004288 0.106728 0.994279</row2>
+						<row3>0.002367 -0.056223 0.088660</row3>
+					</transform>
+					<node>
+						<identifier>Knee_L</identifier>
+						<transform>
+							<row0>0.569445 -0.820311 -0.053122</row0>
+							<row1>0.816707 0.571918 -0.076810</row1>
+							<row2>0.093389 0.000354 0.995630</row2>
+							<row3>0.222936 0.000000 0.000000</row3>
+						</transform>
+						<node>
+							<identifier>Ankle_L</identifier>
+							<transform>
+								<row0>0.482155 0.869552 0.106799</row0>
+								<row1>-0.875072 0.483868 0.010980</row1>
+								<row2>-0.042129 -0.098751 0.994220</row2>
+								<row3>0.308679 0.000000 -0.000000</row3>
+							</transform>
+							<node>
+								<identifier>Ball_L</identifier>
+								<transform>
+									<row0>0.563362 0.814962 0.135867</row0>
+									<row1>-0.826210 0.555494 0.093829</row1>
+									<row2>0.000994 -0.165114 0.986274</row2>
+									<row3>0.148109 0.000000 0.000000</row3>
+								</transform>
+								<node>
+									<identifier>Toe_L</identifier>
+									<transform>
+										<row0>1.000000 -0.000000 0.000000</row0>
+										<row1>-0.000000 1.000000 0.000000</row1>
+										<row2>-0.000000 0.000000 1.000000</row2>
+										<row3>0.117225 0.000000 -0.000000</row3>
+									</transform>
+									<node>
+										<identifier>Toe_L_BlendBone</identifier>
+										<transform>
+											<row0>-0.210058 0.000953 -0.977688</row0>
+											<row1>-0.392127 0.915963 0.085142</row1>
+											<row2>-0.895607 -0.401263 0.192032</row2>
+											<row3>0.379192 0.185662 -0.242235</row3>
+										</transform>
+									</node>
+								</node>
+								<node>
+									<identifier>Ball_L_BlendBone</identifier>
+									<transform>
+										<row0>-0.210058 0.000953 -0.977688</row0>
+										<row1>-0.392127 0.915963 0.085142</row1>
+										<row2>-0.895607 -0.401263 0.192032</row2>
+										<row3>0.496417 0.185662 -0.242235</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>Ankle_L_BlendBone</identifier>
+								<transform>
+									<row0>-0.120098 -0.009230 -0.992719</row0>
+									<row1>-0.977602 0.175185 0.116640</row1>
+									<row2>-0.172833 -0.984492 0.030063</row2>
+									<row3>0.274134 0.547691 -0.154043</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>Knee_L_BlendBone</identifier>
+							<transform>
+								<row0>-0.008006 -0.010866 -0.999909</row0>
+								<row1>-0.629569 -0.776827 0.013482</row1>
+								<row2>0.776903 -0.629620 0.000621</row2>
+								<row3>-0.031925 0.518596 -0.117862</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>Hip_L_BlendBone</identifier>
+						<transform>
+							<row0>-0.106814 -0.000000 -0.994279</row0>
+							<row1>-0.991687 0.072166 0.106535</row1>
+							<row2>-0.071753 -0.997393 0.007708</row2>
+							<row3>0.617290 0.322741 -0.155484</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>Hip_R</identifier>
+					<transform>
+						<row0>0.039915 -0.993478 0.106814</row0>
+						<row1>0.999194 0.040144 0.000000</row1>
+						<row2>-0.004288 0.106728 0.994279</row2>
+						<row3>0.002367 -0.056222 -0.088660</row3>
+					</transform>
+					<node>
+						<identifier>Knee_R</identifier>
+						<transform>
+							<row0>0.569445 -0.820311 -0.053122</row0>
+							<row1>0.816707 0.571918 -0.076810</row1>
+							<row2>0.093389 0.000354 0.995630</row2>
+							<row3>0.217849 -0.000000 -0.047353</row3>
+						</transform>
+						<node>
+							<identifier>Ankle_R</identifier>
+							<transform>
+								<row0>0.482155 0.869552 0.106799</row0>
+								<row1>-0.875072 0.483868 0.010980</row1>
+								<row2>-0.042129 -0.098751 0.994220</row2>
+								<row3>0.308640 -0.000054 -0.004942</row3>
+							</transform>
+							<node>
+								<identifier>Ball_R</identifier>
+								<transform>
+									<row0>0.563362 0.814962 0.135867</row0>
+									<row1>-0.826210 0.555494 0.093829</row1>
+									<row2>0.000994 -0.165114 0.986274</row2>
+									<row3>0.143836 -0.000328 -0.035316</row3>
+								</transform>
+								<node>
+									<identifier>Toe_R</identifier>
+									<transform>
+										<row0>1.000000 -0.000000 0.000000</row0>
+										<row1>-0.000000 1.000000 0.000000</row1>
+										<row2>-0.000000 0.000000 1.000000</row2>
+										<row3>0.106880 0.000047 -0.048149</row3>
+									</transform>
+									<node>
+										<identifier>Toe_R_BlendBone</identifier>
+										<transform>
+											<row0>-0.210058 0.000953 -0.977688</row0>
+											<row1>-0.392127 0.915963 0.085142</row1>
+											<row2>-0.895607 -0.401263 0.192032</row2>
+											<row3>0.445299 0.185362 0.065453</row3>
+										</transform>
+									</node>
+								</node>
+								<node>
+									<identifier>Ball_R_BlendBone</identifier>
+									<transform>
+										<row0>-0.210058 0.000953 -0.977688</row0>
+										<row1>-0.392127 0.915963 0.085142</row1>
+										<row2>-0.895607 -0.401263 0.192032</row2>
+										<row3>0.552179 0.185409 0.017304</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>Ankle_R_BlendBone</identifier>
+								<transform>
+									<row0>-0.120098 -0.009230 -0.992719</row0>
+									<row1>-0.977602 0.175185 0.116640</row1>
+									<row2>-0.172833 -0.984492 0.030063</row2>
+									<row3>0.301743 0.549814 0.074169</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>Knee_R_BlendBone</identifier>
+							<transform>
+								<row0>-0.008006 -0.010866 -0.999909</row0>
+								<row1>-0.629569 -0.776827 0.013482</row1>
+								<row2>0.776903 -0.629620 0.000621</row2>
+								<row3>-0.030125 0.521040 0.107061</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>Hip_R_BlendBone</identifier>
+						<transform>
+							<row0>-0.106814 -0.000000 -0.994279</row0>
+							<row1>-0.991687 0.072166 0.106535</row1>
+							<row2>-0.071753 -0.997393 0.007708</row2>
+							<row3>0.636231 0.322741 0.020820</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>Spine1</identifier>
+					<transform>
+						<row0>1.000000 0.000000 -0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 -0.000000 1.000000</row2>
+						<row3>0.166705 0.000000 0.000000</row3>
+					</transform>
+					<node>
+						<identifier>Spine2</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 -0.000000</row1>
+							<row2>0.000000 -0.000000 1.000000</row2>
+							<row3>0.166705 0.000000 0.000000</row3>
+						</transform>
+						<node>
+							<identifier>Spine3</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 -0.000000 1.000000</row2>
+								<row3>0.166705 0.000000 0.000000</row3>
+							</transform>
+							<node>
+								<identifier>Chest</identifier>
+								<transform>
+									<row0>0.691283 0.722584 -0.000000</row0>
+									<row1>-0.722584 0.691283 -0.000000</row1>
+									<row2>0.000000 -0.000000 1.000000</row2>
+									<row3>0.166705 0.000000 -0.000000</row3>
+								</transform>
+								<node>
+									<identifier>Neck</identifier>
+									<transform>
+										<row0>0.955819 0.293955 0.000000</row0>
+										<row1>-0.293955 0.955819 0.000000</row1>
+										<row2>0.000000 -0.000000 1.000000</row2>
+										<row3>0.125383 -0.000000 0.000000</row3>
+									</transform>
+									<node>
+										<identifier>Head_M</identifier>
+										<transform>
+											<row0>0.419439 -0.907784 -0.000000</row0>
+											<row1>0.907784 0.419439 -0.000000</row1>
+											<row2>0.000000 -0.000000 1.000000</row2>
+											<row3>0.130688 0.000000 0.000000</row3>
+										</transform>
+										<node>
+											<identifier>Ear1_L</identifier>
+											<transform>
+												<row0>0.000519 0.955318 0.295580</row0>
+												<row1>-0.999842 -0.004753 0.017115</row1>
+												<row2>0.017755 -0.295542 0.955165</row2>
+												<row3>-0.002081 0.042625 0.056442</row3>
+											</transform>
+											<node>
+												<identifier>Dog_CapBase_jnt</identifier>
+												<transform>
+													<row0>-0.262365 -0.316915 -0.911444</row0>
+													<row1>0.862381 0.346795 -0.368825</row1>
+													<row2>0.432970 -0.882779 0.182315</row2>
+													<row3>0.009971 -0.027352 0.013869</row3>
+												</transform>
+												<node>
+													<identifier>Dog_CapBase_jnt_BlendBone</identifier>
+													<transform>
+														<row0>0.953553 0.091451 -0.287009</row0>
+														<row1>0.020234 0.931203 0.363938</row1>
+														<row2>-0.300546 0.352841 -0.886101</row2>
+														<row3>-0.088209 -0.709657 -0.770637</row3>
+													</transform>
+												</node>
+											</node>
+											<node>
+												<identifier>Ear2_L</identifier>
+												<transform>
+													<row0>0.985193 -0.157739 0.067177</row0>
+													<row1>0.158096 0.987424 -0.000000</row1>
+													<row2>-0.066332 0.010620 0.997741</row2>
+													<row3>0.040478 -0.000000 -0.000000</row3>
+												</transform>
+												<node>
+													<identifier>Ear3_L</identifier>
+													<transform>
+														<row0>0.967592 -0.251224 0.025528</row0>
+														<row1>0.250943 0.967905 0.013734</row1>
+														<row2>-0.028159 -0.006883 0.999580</row2>
+														<row3>0.040245 0.000000 0.000000</row3>
+													</transform>
+													<node>
+														<identifier>Ear4_L</identifier>
+														<transform>
+															<row0>1.000000 0.000000 -0.000000</row0>
+															<row1>0.000000 1.000000 -0.000000</row1>
+															<row2>0.000000 0.000000 1.000000</row2>
+															<row3>0.064463 -0.000000 0.000000</row3>
+														</transform>
+														<node>
+															<identifier>Ear4_L_BlendBone</identifier>
+															<transform>
+																<row0>-0.349086 -0.162909 -0.922822</row0>
+																<row1>0.846276 0.368109 -0.385114</row1>
+																<row2>-0.402437 0.915400 -0.009364</row2>
+																<row3>-1.127028 0.014313 0.309913</row3>
+															</transform>
+														</node>
+													</node>
+													<node>
+														<identifier>Ear3_L_BlendBone</identifier>
+														<transform>
+															<row0>-0.349086 -0.162909 -0.922822</row0>
+															<row1>0.846276 0.368109 -0.385114</row1>
+															<row2>-0.402437 0.915400 -0.009364</row2>
+															<row3>-1.062565 0.014313 0.309913</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>Ear2_L_BlendBone</identifier>
+													<transform>
+														<row0>-0.352668 -0.063630 -0.933583</row0>
+														<row1>0.922069 0.146340 -0.358293</row1>
+														<row2>-0.159419 0.987186 -0.007062</row2>
+														<row3>-0.993019 0.278662 0.282854</row3>
+													</transform>
+												</node>
+											</node>
+											<node>
+												<identifier>Ear1_L_BlendBone</identifier>
+												<transform>
+													<row0>-0.295580 -0.017115 -0.955165</row0>
+													<row1>0.955318 -0.004752 -0.295542</row1>
+													<row2>-0.000519 0.999842 -0.017755</row2>
+													<row3>-0.912544 0.434800 0.215508</row3>
+												</transform>
+											</node>
+										</node>
+										<node>
+											<identifier>Ear1_R</identifier>
+											<transform>
+												<row0>-0.003960 0.955174 -0.296018</row0>
+												<row1>-0.999966 -0.001642 0.008081</row1>
+												<row2>0.007232 0.296039 0.955148</row2>
+												<row3>-0.002952 0.042597 -0.058626</row3>
+											</transform>
+											<node>
+												<identifier>Ear2_R</identifier>
+												<transform>
+													<row0>0.985193 -0.158438 -0.065512</row0>
+													<row1>0.170565 0.944469 0.280866</row1>
+													<row2>0.017374 -0.287881 0.957509</row2>
+													<row3>0.040478 0.000000 0.000000</row3>
+												</transform>
+												<node>
+													<identifier>Ear3_R</identifier>
+													<transform>
+														<row0>0.967592 -0.247757 0.048800</row0>
+														<row1>0.232080 0.948678 0.214822</row1>
+														<row2>-0.099519 -0.196534 0.975433</row2>
+														<row3>0.040245 0.000000 0.000000</row3>
+													</transform>
+													<node>
+														<identifier>Ear4_R</identifier>
+														<transform>
+															<row0>1.000000 0.000000 -0.000000</row0>
+															<row1>0.000000 0.995523 0.094519</row1>
+															<row2>0.000000 -0.094519 0.995523</row2>
+															<row3>0.064463 -0.000000 -0.000000</row3>
+														</transform>
+														<node>
+															<identifier>Ear4_R_BlendBone</identifier>
+															<transform>
+																<row0>0.355548 -0.407531 -0.841133</row0>
+																<row1>0.846106 0.522690 0.104406</row1>
+																<row2>-0.397102 0.748809 -0.530656</row2>
+																<row3>-1.125338 -0.168128 -0.266023</row3>
+															</transform>
+														</node>
+													</node>
+													<node>
+														<identifier>Ear3_R_BlendBone</identifier>
+														<transform>
+															<row0>0.355548 -0.326203 -0.875886</row0>
+															<row1>0.846106 0.510481 0.153343</row1>
+															<row2>-0.397102 0.795613 -0.457503</row2>
+															<row3>-1.060875 -0.142231 -0.280723</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>Ear2_R_BlendBone</identifier>
+													<transform>
+														<row0>0.355488 -0.225410 -0.907093</row0>
+														<row1>0.921897 0.244517 0.300528</row1>
+														<row2>-0.154057 0.943081 -0.294728</row2>
+														<row3>-0.991321 0.183080 -0.356152</row3>
+													</transform>
+												</node>
+											</node>
+											<node>
+												<identifier>Ear1_R_BlendBone</identifier>
+												<transform>
+													<row0>0.296018 -0.008081 -0.955148</row0>
+													<row1>0.955174 -0.001642 0.296040</row1>
+													<row2>0.003960 0.999966 -0.007232</row2>
+													<row3>-0.911125 0.432505 -0.224654</row3>
+												</transform>
+											</node>
+										</node>
+										<node>
+											<identifier>FaceJoint_M</identifier>
+											<transform>
+												<row0>0.007571 0.000243 0.999971</row0>
+												<row1>-0.000001 1.000000 -0.000243</row1>
+												<row2>-0.999971 0.000001 0.007571</row2>
+												<row3>0.026145 0.000000 -0.000198</row3>
+											</transform>
+											<node>
+												<identifier>CheekBoneJoint_L</identifier>
+												<transform>
+													<row0>0.202017 0.000000 0.979382</row0>
+													<row1>0.000000 1.000000 0.000000</row1>
+													<row2>-0.979382 -0.000000 0.202017</row2>
+													<row3>0.062668 -0.013529 -0.117573</row3>
+												</transform>
+												<node>
+													<identifier>CheekBoneJoint_L_BlendBone</identifier>
+													<transform>
+														<row0>-0.209427 0.000243 0.977824</row0>
+														<row1>0.000050 1.000000 -0.000238</row1>
+														<row2>0.977824 0.000001 0.209427</row2>
+														<row3>0.551899 -0.881373 0.181400</row3>
+													</transform>
+												</node>
+											</node>
+											<node>
+												<identifier>CheekBoneJoint_R</identifier>
+												<transform>
+													<row0>0.202017 0.000000 -0.979382</row0>
+													<row1>-0.000000 -1.000000 0.000000</row1>
+													<row2>-0.979382 -0.000000 -0.202017</row2>
+													<row3>-0.064897 -0.013531 -0.117575</row3>
+												</transform>
+												<node>
+													<identifier>CheekBoneJoint_R_BlendBone</identifier>
+													<transform>
+														<row0>-0.194596 -0.000243 0.980883</row0>
+														<row1>0.000048 -1.000000 -0.000238</row1>
+														<row2>-0.980884 -0.000001 -0.194596</row2>
+														<row3>-0.552864 0.881371 -0.176730</row3>
+													</transform>
+												</node>
+											</node>
+											<node>
+												<identifier>CheekJoint_L</identifier>
+												<transform>
+													<row0>0.111006 0.000000 0.993820</row0>
+													<row1>0.000000 1.000000 0.000000</row1>
+													<row2>-0.993820 -0.000000 0.111006</row2>
+													<row3>0.085432 -0.038550 -0.077262</row3>
+												</transform>
+												<node>
+													<identifier>CheekJoint_L_BlendBone</identifier>
+													<transform>
+														<row0>-0.118528 0.000243 0.992951</row0>
+														<row1>0.000028 1.000000 -0.000241</row1>
+														<row2>0.992951 0.000001 0.118528</row2>
+														<row3>0.523664 -0.856352 0.147976</row3>
+													</transform>
+												</node>
+											</node>
+											<node>
+												<identifier>CheekJoint_R</identifier>
+												<transform>
+													<row0>0.111006 0.000000 -0.993820</row0>
+													<row1>-0.000000 -1.000000 0.000000</row1>
+													<row2>-0.993820 -0.000000 -0.111006</row2>
+													<row3>-0.087719 -0.038554 -0.077254</row3>
+												</transform>
+												<node>
+													<identifier>CheekJoint_R_BlendBone</identifier>
+													<transform>
+														<row0>-0.103479 -0.000243 0.994632</row0>
+														<row1>0.000026 -1.000000 -0.000242</row1>
+														<row2>-0.994632 -0.000001 -0.103479</row2>
+														<row3>-0.524179 0.856349 -0.143293</row3>
+													</transform>
+												</node>
+											</node>
+											<node>
+												<identifier>ChinCreaseJoint_M</identifier>
+												<transform>
+													<row0>1.000000 0.000000 0.000000</row0>
+													<row1>0.000000 1.000000 0.000000</row1>
+													<row2>0.000000 -0.000000 1.000000</row2>
+													<row3>-0.001100 -0.142530 -0.207112</row3>
+												</transform>
+												<node>
+													<identifier>ChinCreaseJoint_M_BlendBone</identifier>
+													<transform>
+														<row0>-0.999971 0.000243 -0.007571</row0>
+														<row1>0.000243 1.000000 0.000001</row1>
+														<row2>-0.007571 0.000001 0.999971</row2>
+														<row3>-0.002399 -0.752373 0.666704</row3>
+													</transform>
+												</node>
+											</node>
+											<node>
+												<identifier>EyeBrowCenterJoint_M</identifier>
+												<transform>
+													<row0>1.000000 0.000000 0.000000</row0>
+													<row1>0.000000 1.000000 0.000000</row1>
+													<row2>0.000000 -0.000000 1.000000</row2>
+													<row3>-0.001100 0.044343 -0.130203</row3>
+												</transform>
+												<node>
+													<identifier>EyeBrowCenterJoint_M_BlendBone</identifier>
+													<transform>
+														<row0>-0.999971 0.000243 -0.007571</row0>
+														<row1>0.000243 1.000000 0.000001</row1>
+														<row2>-0.007571 0.000001 0.999971</row2>
+														<row3>-0.002399 -0.939245 0.589795</row3>
+													</transform>
+												</node>
+											</node>
+											<node>
+												<identifier>EyeBrowInnerJoint_L</identifier>
+												<transform>
+													<row0>0.254703 -0.000000 0.967019</row0>
+													<row1>0.000000 1.000000 0.000000</row1>
+													<row2>-0.967019 -0.000000 0.254703</row2>
+													<row3>0.016002 0.054632 -0.126912</row3>
+												</transform>
+												<node>
+													<identifier>EyeBrowInnerJoint_L_BlendBone</identifier>
+													<transform>
+														<row0>-0.262017 0.000243 0.965063</row0>
+														<row1>0.000063 1.000000 -0.000235</row1>
+														<row2>0.965063 0.000001 0.262017</row2>
+														<row3>0.562194 -0.949534 0.168242</row3>
+													</transform>
+												</node>
+											</node>
+											<node>
+												<identifier>EyeBrowInnerJoint_R</identifier>
+												<transform>
+													<row0>0.254703 0.000000 -0.967019</row0>
+													<row1>-0.000000 -1.000000 0.000000</row1>
+													<row2>-0.967019 -0.000000 -0.254703</row2>
+													<row3>-0.018203 0.054632 -0.126912</row3>
+												</transform>
+												<node>
+													<identifier>EyeBrowInnerJoint_R_BlendBone</identifier>
+													<transform>
+														<row0>-0.247374 -0.000243 0.968920</row0>
+														<row1>0.000061 -1.000000 -0.000235</row1>
+														<row2>-0.968920 -0.000001 -0.247374</row2>
+														<row3>-0.563416 0.949534 -0.163603</row3>
+													</transform>
+												</node>
+											</node>
+											<node>
+												<identifier>EyeBrowOuterJoint_L</identifier>
+												<transform>
+													<row0>0.157095 -0.000000 0.987584</row0>
+													<row1>0.000000 1.000000 0.000000</row1>
+													<row2>-0.987584 -0.000000 0.157095</row2>
+													<row3>0.069168 0.014275 -0.098431</row3>
+												</transform>
+												<node>
+													<identifier>EyeBrowOuterJoint_L_BlendBone</identifier>
+													<transform>
+														<row0>-0.164568 0.000243 0.986366</row0>
+														<row1>0.000039 1.000000 -0.000240</row1>
+														<row2>0.986366 0.000001 0.164568</row2>
+														<row3>0.539679 -0.909177 0.159428</row3>
+													</transform>
+												</node>
+											</node>
+											<node>
+												<identifier>EyeBrowOuterJoint_R</identifier>
+												<transform>
+													<row0>0.157095 -0.000000 -0.987584</row0>
+													<row1>-0.000000 -1.000000 0.000000</row1>
+													<row2>-0.987583 -0.000000 -0.157095</row2>
+													<row3>-0.071369 0.014275 -0.098431</row3>
+												</transform>
+												<node>
+													<identifier>EyeBrowOuterJoint_R_BlendBone</identifier>
+													<transform>
+														<row0>-0.149613 -0.000243 0.988745</row0>
+														<row1>0.000037 -1.000000 -0.000240</row1>
+														<row2>-0.988745 -0.000001 -0.149613</row2>
+														<row3>-0.540432 0.909177 -0.154690</row3>
+													</transform>
+												</node>
+											</node>
+											<node>
+												<identifier>EyeJoint_L</identifier>
+												<transform>
+													<row0>1.000000 0.000000 0.000000</row0>
+													<row1>0.000000 1.000000 0.000000</row1>
+													<row2>0.000000 -0.000000 1.000000</row2>
+													<row3>0.041165 0.016831 -0.118412</row3>
+												</transform>
+												<node>
+													<identifier>EyeJoint_L_BlendBone</identifier>
+													<transform>
+														<row0>-0.999971 0.000243 -0.007571</row0>
+														<row1>0.000243 1.000000 0.000001</row1>
+														<row2>-0.007571 0.000001 0.999971</row2>
+														<row3>-0.044664 -0.911734 0.578004</row3>
+													</transform>
+												</node>
+											</node>
+											<node>
+												<identifier>EyeJoint_R</identifier>
+												<transform>
+													<row0>1.000000 0.000000 0.000000</row0>
+													<row1>0.000000 1.000000 0.000000</row1>
+													<row2>0.000000 -0.000000 1.000000</row2>
+													<row3>-0.043366 0.016831 -0.118412</row3>
+												</transform>
+												<node>
+													<identifier>EyeJoint_R_BlendBone</identifier>
+													<transform>
+														<row0>-0.999971 0.000243 -0.007571</row0>
+														<row1>0.000243 1.000000 0.000001</row1>
+														<row2>-0.007571 0.000001 0.999971</row2>
+														<row3>0.039866 -0.911734 0.578004</row3>
+													</transform>
+												</node>
+											</node>
+											<node>
+												<identifier>EyeLidJoints_M</identifier>
+												<transform>
+													<row0>1.000000 0.000000 0.000000</row0>
+													<row1>0.000000 1.000000 0.000000</row1>
+													<row2>0.000000 -0.000000 1.000000</row2>
+													<row3>-0.001100 0.016831 -0.118412</row3>
+												</transform>
+												<node>
+													<identifier>lowerLidMain1_R</identifier>
+													<transform>
+														<row0>1.000000 0.000000 0.000000</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.000000 -0.000000 1.000000</row2>
+														<row3>-0.029543 -0.006318 -0.011870</row3>
+													</transform>
+													<node>
+														<identifier>lowerLidMain1_R_BlendBone</identifier>
+														<transform>
+															<row0>-0.999971 0.000243 -0.007571</row0>
+															<row1>0.000243 1.000000 0.000001</row1>
+															<row2>-0.007571 0.000001 0.999971</row2>
+															<row3>0.027144 -0.905416 0.589874</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>lowerLidMain2_L</identifier>
+													<transform>
+														<row0>1.000000 0.000000 0.000000</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.000000 -0.000000 1.000000</row2>
+														<row3>0.032519 -0.005815 -0.011318</row3>
+													</transform>
+													<node>
+														<identifier>lowerLidMain2_L_BlendBone</identifier>
+														<transform>
+															<row0>-0.999971 0.000243 -0.007571</row0>
+															<row1>0.000243 1.000000 0.000001</row1>
+															<row2>-0.007571 0.000001 0.999971</row2>
+															<row3>-0.034918 -0.905918 0.589323</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>lowerLidMain2_R</identifier>
+													<transform>
+														<row0>1.000000 0.000000 0.000000</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.000000 -0.000000 1.000000</row2>
+														<row3>-0.032419 -0.005466 -0.011406</row3>
+													</transform>
+													<node>
+														<identifier>lowerLidMain2_R_BlendBone</identifier>
+														<transform>
+															<row0>-0.999971 0.000243 -0.007571</row0>
+															<row1>0.000243 1.000000 0.000001</row1>
+															<row2>-0.007571 0.000001 0.999971</row2>
+															<row3>0.030020 -0.906268 0.589411</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>lowerLidMain3_L</identifier>
+													<transform>
+														<row0>1.000000 0.000000 0.000000</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.000000 -0.000000 1.000000</row2>
+														<row3>0.036698 -0.007078 -0.013192</row3>
+													</transform>
+													<node>
+														<identifier>lowerLidMain3_L_BlendBone</identifier>
+														<transform>
+															<row0>-0.999971 0.000243 -0.007571</row0>
+															<row1>0.000243 1.000000 0.000001</row1>
+															<row2>-0.007571 0.000001 0.999971</row2>
+															<row3>-0.039096 -0.904656 0.591197</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>lowerLidMain3_R</identifier>
+													<transform>
+														<row0>1.000000 0.000000 0.000000</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.000000 -0.000000 1.000000</row2>
+														<row3>-0.036513 -0.006509 -0.013404</row3>
+													</transform>
+													<node>
+														<identifier>lowerLidMain3_R_BlendBone</identifier>
+														<transform>
+															<row0>-0.999971 0.000243 -0.007571</row0>
+															<row1>0.000243 1.000000 0.000001</row1>
+															<row2>-0.007571 0.000001 0.999971</row2>
+															<row3>0.034114 -0.905225 0.591409</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>lowerLidMain4_L</identifier>
+													<transform>
+														<row0>1.000000 0.000000 0.000000</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.000000 -0.000000 1.000000</row2>
+														<row3>0.043727 -0.008331 -0.013452</row3>
+													</transform>
+													<node>
+														<identifier>lowerLidMain4_L_BlendBone</identifier>
+														<transform>
+															<row0>-0.999971 0.000243 -0.007571</row0>
+															<row1>0.000243 1.000000 0.000001</row1>
+															<row2>-0.007571 0.000001 0.999971</row2>
+															<row3>-0.046126 -0.903403 0.591457</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>lowerLidMain4_R</identifier>
+													<transform>
+														<row0>1.000000 0.000000 0.000000</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.000000 -0.000000 1.000000</row2>
+														<row3>-0.043695 -0.007684 -0.013835</row3>
+													</transform>
+													<node>
+														<identifier>lowerLidMain4_R_BlendBone</identifier>
+														<transform>
+															<row0>-0.999971 0.000243 -0.007571</row0>
+															<row1>0.000243 1.000000 0.000001</row1>
+															<row2>-0.007571 0.000001 0.999971</row2>
+															<row3>0.041296 -0.904050 0.591840</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>lowerLidMain5_L</identifier>
+													<transform>
+														<row0>1.000000 0.000000 0.000000</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.000000 -0.000000 1.000000</row2>
+														<row3>0.050052 -0.007990 -0.011731</row3>
+													</transform>
+													<node>
+														<identifier>lowerLidMain5_L_BlendBone</identifier>
+														<transform>
+															<row0>-0.999971 0.000243 -0.007571</row0>
+															<row1>0.000243 1.000000 0.000001</row1>
+															<row2>-0.007571 0.000001 0.999971</row2>
+															<row3>-0.052451 -0.903744 0.589735</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>lowerLidMain5_R</identifier>
+													<transform>
+														<row0>1.000000 0.000000 0.000000</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.000000 -0.000000 1.000000</row2>
+														<row3>-0.050196 -0.007377 -0.012033</row3>
+													</transform>
+													<node>
+														<identifier>lowerLidMain5_R_BlendBone</identifier>
+														<transform>
+															<row0>-0.999971 0.000243 -0.007571</row0>
+															<row1>0.000243 1.000000 0.000001</row1>
+															<row2>-0.007571 0.000001 0.999971</row2>
+															<row3>0.047797 -0.904357 0.590037</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>lowerLidMain6_L</identifier>
+													<transform>
+														<row0>1.000000 0.000000 0.000000</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.000000 -0.000000 1.000000</row2>
+														<row3>0.054641 -0.006232 -0.008577</row3>
+													</transform>
+													<node>
+														<identifier>lowerLidMain6_L_BlendBone</identifier>
+														<transform>
+															<row0>-0.999971 0.000243 -0.007571</row0>
+															<row1>0.000243 1.000000 0.000001</row1>
+															<row2>-0.007571 0.000001 0.999971</row2>
+															<row3>-0.057040 -0.905502 0.586582</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>lowerLidMain6_R</identifier>
+													<transform>
+														<row0>1.000000 0.000000 0.000000</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.000000 -0.000000 1.000000</row2>
+														<row3>-0.054763 -0.005794 -0.008707</row3>
+													</transform>
+													<node>
+														<identifier>lowerLidMain6_R_BlendBone</identifier>
+														<transform>
+															<row0>-0.999971 0.000243 -0.007571</row0>
+															<row1>0.000243 1.000000 0.000001</row1>
+															<row2>-0.007571 0.000001 0.999971</row2>
+															<row3>0.052364 -0.905939 0.586711</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>lowerLidMain7_L</identifier>
+													<transform>
+														<row0>1.000000 0.000000 0.000000</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.000000 -0.000000 1.000000</row2>
+														<row3>0.056636 -0.003289 -0.004988</row3>
+													</transform>
+													<node>
+														<identifier>lowerLidMain7_L_BlendBone</identifier>
+														<transform>
+															<row0>-0.999971 0.000243 -0.007571</row0>
+															<row1>0.000243 1.000000 0.000001</row1>
+															<row2>-0.007571 0.000001 0.999971</row2>
+															<row3>-0.059035 -0.908445 0.582992</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>lowerLidMain7_R</identifier>
+													<transform>
+														<row0>1.000000 0.000000 0.000000</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.000000 -0.000000 1.000000</row2>
+														<row3>-0.056659 -0.003143 -0.005015</row3>
+													</transform>
+													<node>
+														<identifier>lowerLidMain7_R_BlendBone</identifier>
+														<transform>
+															<row0>-0.999971 0.000243 -0.007571</row0>
+															<row1>0.000243 1.000000 0.000001</row1>
+															<row2>-0.007571 0.000001 0.999971</row2>
+															<row3>0.054260 -0.908591 0.583019</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>lowerLidOuter1_L</identifier>
+													<transform>
+														<row0>1.000000 0.000000 0.000000</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.000000 -0.000000 1.000000</row2>
+														<row3>0.026601 -0.005298 -0.014838</row3>
+													</transform>
+													<node>
+														<identifier>lowerLidOuter1_L_BlendBone</identifier>
+														<transform>
+															<row0>-0.999971 0.000243 -0.007571</row0>
+															<row1>0.000243 1.000000 0.000001</row1>
+															<row2>-0.007571 0.000001 0.999971</row2>
+															<row3>-0.029000 -0.906436 0.592843</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>lowerLidOuter1_R</identifier>
+													<transform>
+														<row0>1.000000 0.000000 0.000000</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.000000 -0.000000 1.000000</row2>
+														<row3>-0.026602 -0.005298 -0.014843</row3>
+													</transform>
+													<node>
+														<identifier>lowerLidOuter1_R_BlendBone</identifier>
+														<transform>
+															<row0>-0.999971 0.000243 -0.007571</row0>
+															<row1>0.000243 1.000000 0.000001</row1>
+															<row2>-0.007571 0.000001 0.999971</row2>
+															<row3>0.024203 -0.906436 0.592848</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>lowerLidOuter2_L</identifier>
+													<transform>
+														<row0>1.000000 0.000000 0.000000</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.000000 -0.000000 1.000000</row2>
+														<row3>0.028449 -0.008660 -0.014785</row3>
+													</transform>
+													<node>
+														<identifier>lowerLidOuter2_L_BlendBone</identifier>
+														<transform>
+															<row0>-0.999971 0.000243 -0.007571</row0>
+															<row1>0.000243 1.000000 0.000001</row1>
+															<row2>-0.007571 0.000001 0.999971</row2>
+															<row3>-0.030848 -0.903074 0.592789</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>lowerLidOuter2_R</identifier>
+													<transform>
+														<row0>1.000000 0.000000 0.000000</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.000000 -0.000000 1.000000</row2>
+														<row3>-0.028452 -0.008660 -0.014796</row3>
+													</transform>
+													<node>
+														<identifier>lowerLidOuter2_R_BlendBone</identifier>
+														<transform>
+															<row0>-0.999971 0.000243 -0.007571</row0>
+															<row1>0.000243 1.000000 0.000001</row1>
+															<row2>-0.007571 0.000001 0.999971</row2>
+															<row3>0.026053 -0.903074 0.592801</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>lowerLidOuter3_L</identifier>
+													<transform>
+														<row0>1.000000 0.000000 0.000000</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.000000 -0.000000 1.000000</row2>
+														<row3>0.032315 -0.011984 -0.014098</row3>
+													</transform>
+													<node>
+														<identifier>lowerLidOuter3_L_BlendBone</identifier>
+														<transform>
+															<row0>-0.999971 0.000243 -0.007571</row0>
+															<row1>0.000243 1.000000 0.000001</row1>
+															<row2>-0.007571 0.000001 0.999971</row2>
+															<row3>-0.034714 -0.899749 0.592103</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>lowerLidOuter3_R</identifier>
+													<transform>
+														<row0>1.000000 0.000000 0.000000</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.000000 -0.000000 1.000000</row2>
+														<row3>-0.032320 -0.011985 -0.014118</row3>
+													</transform>
+													<node>
+														<identifier>lowerLidOuter3_R_BlendBone</identifier>
+														<transform>
+															<row0>-0.999971 0.000243 -0.007571</row0>
+															<row1>0.000243 1.000000 0.000001</row1>
+															<row2>-0.007571 0.000001 0.999971</row2>
+															<row3>0.029921 -0.899749 0.592122</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>lowerLidOuter4_L</identifier>
+													<transform>
+														<row0>1.000000 0.000000 0.000000</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.000000 -0.000000 1.000000</row2>
+														<row3>0.037735 -0.013583 -0.013377</row3>
+													</transform>
+													<node>
+														<identifier>lowerLidOuter4_L_BlendBone</identifier>
+														<transform>
+															<row0>-0.999971 0.000243 -0.007571</row0>
+															<row1>0.000243 1.000000 0.000001</row1>
+															<row2>-0.007571 0.000001 0.999971</row2>
+															<row3>-0.040134 -0.898150 0.591382</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>lowerLidOuter4_R</identifier>
+													<transform>
+														<row0>1.000000 0.000000 0.000000</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.000000 -0.000000 1.000000</row2>
+														<row3>-0.037741 -0.013584 -0.013402</row3>
+													</transform>
+													<node>
+														<identifier>lowerLidOuter4_R_BlendBone</identifier>
+														<transform>
+															<row0>-0.999971 0.000243 -0.007571</row0>
+															<row1>0.000243 1.000000 0.000001</row1>
+															<row2>-0.007571 0.000001 0.999971</row2>
+															<row3>0.035342 -0.898150 0.591407</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>lowerLidOuter5_L</identifier>
+													<transform>
+														<row0>1.000000 0.000000 0.000000</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.000000 -0.000000 1.000000</row2>
+														<row3>0.044106 -0.014299 -0.012974</row3>
+													</transform>
+													<node>
+														<identifier>lowerLidOuter5_L_BlendBone</identifier>
+														<transform>
+															<row0>-0.999971 0.000243 -0.007571</row0>
+															<row1>0.000243 1.000000 0.000001</row1>
+															<row2>-0.007571 0.000001 0.999971</row2>
+															<row3>-0.046505 -0.897435 0.590978</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>lowerLidOuter5_R</identifier>
+													<transform>
+														<row0>1.000000 0.000000 0.000000</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.000000 -0.000000 1.000000</row2>
+														<row3>-0.044112 -0.014299 -0.013001</row3>
+													</transform>
+													<node>
+														<identifier>lowerLidOuter5_R_BlendBone</identifier>
+														<transform>
+															<row0>-0.999971 0.000243 -0.007571</row0>
+															<row1>0.000243 1.000000 0.000001</row1>
+															<row2>-0.007571 0.000001 0.999971</row2>
+															<row3>0.041714 -0.897435 0.591006</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>lowerLidOuter6_L</identifier>
+													<transform>
+														<row0>1.000000 0.000000 0.000000</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.000000 -0.000000 1.000000</row2>
+														<row3>0.050007 -0.014922 -0.010697</row3>
+													</transform>
+													<node>
+														<identifier>lowerLidOuter6_L_BlendBone</identifier>
+														<transform>
+															<row0>-0.999971 0.000243 -0.007571</row0>
+															<row1>0.000243 1.000000 0.000001</row1>
+															<row2>-0.007571 0.000001 0.999971</row2>
+															<row3>-0.052406 -0.896812 0.588701</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>lowerLidOuter6_R</identifier>
+													<transform>
+														<row0>1.000000 0.000000 0.000000</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.000000 -0.000000 1.000000</row2>
+														<row3>-0.050013 -0.014922 -0.010723</row3>
+													</transform>
+													<node>
+														<identifier>lowerLidOuter6_R_BlendBone</identifier>
+														<transform>
+															<row0>-0.999971 0.000243 -0.007571</row0>
+															<row1>0.000243 1.000000 0.000001</row1>
+															<row2>-0.007571 0.000001 0.999971</row2>
+															<row3>0.047614 -0.896811 0.588728</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>lowerLidOuter7_L</identifier>
+													<transform>
+														<row0>1.000000 0.000000 0.000000</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.000000 -0.000000 1.000000</row2>
+														<row3>0.055195 -0.013145 -0.006540</row3>
+													</transform>
+													<node>
+														<identifier>lowerLidOuter7_L_BlendBone</identifier>
+														<transform>
+															<row0>-0.999971 0.000243 -0.007571</row0>
+															<row1>0.000243 1.000000 0.000001</row1>
+															<row2>-0.007571 0.000001 0.999971</row2>
+															<row3>-0.057594 -0.898589 0.584544</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>lowerLidOuter7_R</identifier>
+													<transform>
+														<row0>1.000000 0.000000 0.000000</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.000000 -0.000000 1.000000</row2>
+														<row3>-0.055200 -0.013145 -0.006562</row3>
+													</transform>
+													<node>
+														<identifier>lowerLidOuter7_R_BlendBone</identifier>
+														<transform>
+															<row0>-0.999971 0.000243 -0.007571</row0>
+															<row1>0.000243 1.000000 0.000001</row1>
+															<row2>-0.007571 0.000001 0.999971</row2>
+															<row3>0.052801 -0.898589 0.584566</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>lowerLidOuter8_L</identifier>
+													<transform>
+														<row0>1.000000 0.000000 0.000000</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.000000 -0.000000 1.000000</row2>
+														<row3>0.057405 -0.009613 -0.001372</row3>
+													</transform>
+													<node>
+														<identifier>lowerLidOuter8_L_BlendBone</identifier>
+														<transform>
+															<row0>-0.999971 0.000243 -0.007571</row0>
+															<row1>0.000243 1.000000 0.000001</row1>
+															<row2>-0.007571 0.000001 0.999971</row2>
+															<row3>-0.059803 -0.902120 0.579376</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>lowerLidOuter8_R</identifier>
+													<transform>
+														<row0>1.000000 0.000000 0.000000</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.000000 -0.000000 1.000000</row2>
+														<row3>-0.057408 -0.009613 -0.001386</row3>
+													</transform>
+													<node>
+														<identifier>lowerLidOuter8_R_BlendBone</identifier>
+														<transform>
+															<row0>-0.999971 0.000243 -0.007571</row0>
+															<row1>0.000243 1.000000 0.000001</row1>
+															<row2>-0.007571 0.000001 0.999971</row2>
+															<row3>0.055009 -0.902120 0.579390</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>lowerLidOuter9_L</identifier>
+													<transform>
+														<row0>1.000000 0.000000 0.000000</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.000000 -0.000000 1.000000</row2>
+														<row3>0.058354 -0.005087 0.000659</row3>
+													</transform>
+													<node>
+														<identifier>lowerLidOuter9_L_BlendBone</identifier>
+														<transform>
+															<row0>-0.999971 0.000243 -0.007571</row0>
+															<row1>0.000243 1.000000 0.000001</row1>
+															<row2>-0.007571 0.000001 0.999971</row2>
+															<row3>-0.060753 -0.906647 0.577345</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>lowerLidOuter9_R</identifier>
+													<transform>
+														<row0>1.000000 0.000000 0.000000</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.000000 -0.000000 1.000000</row2>
+														<row3>-0.058355 -0.005087 0.000654</row3>
+													</transform>
+													<node>
+														<identifier>lowerLidOuter9_R_BlendBone</identifier>
+														<transform>
+															<row0>-0.999971 0.000243 -0.007571</row0>
+															<row1>0.000243 1.000000 0.000001</row1>
+															<row2>-0.007571 0.000001 0.999971</row2>
+															<row3>0.055957 -0.906647 0.577350</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>upperLidMain0_L</identifier>
+													<transform>
+														<row0>1.000000 0.000000 0.000000</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.000000 -0.000000 1.000000</row2>
+														<row3>0.029049 -0.004456 -0.011925</row3>
+													</transform>
+													<node>
+														<identifier>upperLidMain0_L_BlendBone</identifier>
+														<transform>
+															<row0>-0.999971 0.000243 -0.007571</row0>
+															<row1>0.000243 1.000000 0.000001</row1>
+															<row2>-0.007571 0.000001 0.999971</row2>
+															<row3>-0.031448 -0.907278 0.589929</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>upperLidMain0_R</identifier>
+													<transform>
+														<row0>1.000000 0.000000 0.000000</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.000000 -0.000000 1.000000</row2>
+														<row3>-0.029049 -0.004456 -0.011925</row3>
+													</transform>
+													<node>
+														<identifier>upperLidMain0_R_BlendBone</identifier>
+														<transform>
+															<row0>-0.999971 0.000243 -0.007571</row0>
+															<row1>0.000243 1.000000 0.000001</row1>
+															<row2>-0.007571 0.000001 0.999971</row2>
+															<row3>0.026650 -0.907278 0.589929</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>upperLidMain1_L</identifier>
+													<transform>
+														<row0>1.000000 0.000000 0.000000</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.000000 -0.000000 1.000000</row2>
+														<row3>0.030039 0.000070 -0.012345</row3>
+													</transform>
+													<node>
+														<identifier>upperLidMain1_L_BlendBone</identifier>
+														<transform>
+															<row0>-0.999971 0.000243 -0.007571</row0>
+															<row1>0.000243 1.000000 0.000001</row1>
+															<row2>-0.007571 0.000001 0.999971</row2>
+															<row3>-0.032437 -0.911804 0.590350</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>upperLidMain1_R</identifier>
+													<transform>
+														<row0>1.000000 0.000000 0.000000</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.000000 -0.000000 1.000000</row2>
+														<row3>-0.030039 0.000070 -0.012345</row3>
+													</transform>
+													<node>
+														<identifier>upperLidMain1_R_BlendBone</identifier>
+														<transform>
+															<row0>-0.999971 0.000243 -0.007571</row0>
+															<row1>0.000243 1.000000 0.000001</row1>
+															<row2>-0.007571 0.000001 0.999971</row2>
+															<row3>0.027640 -0.911804 0.590350</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>upperLidMain2_L</identifier>
+													<transform>
+														<row0>1.000000 0.000000 0.000000</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.000000 -0.000000 1.000000</row2>
+														<row3>0.033012 0.005495 -0.012849</row3>
+													</transform>
+													<node>
+														<identifier>upperLidMain2_L_BlendBone</identifier>
+														<transform>
+															<row0>-0.999971 0.000243 -0.007571</row0>
+															<row1>0.000243 1.000000 0.000001</row1>
+															<row2>-0.007571 0.000001 0.999971</row2>
+															<row3>-0.035411 -0.917229 0.590853</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>upperLidMain2_R</identifier>
+													<transform>
+														<row0>1.000000 0.000000 0.000000</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.000000 -0.000000 1.000000</row2>
+														<row3>-0.033012 0.005495 -0.012849</row3>
+													</transform>
+													<node>
+														<identifier>upperLidMain2_R_BlendBone</identifier>
+														<transform>
+															<row0>-0.999971 0.000243 -0.007571</row0>
+															<row1>0.000243 1.000000 0.000001</row1>
+															<row2>-0.007571 0.000001 0.999971</row2>
+															<row3>0.030613 -0.917229 0.590853</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>upperLidMain3_L</identifier>
+													<transform>
+														<row0>1.000000 0.000000 0.000000</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.000000 -0.000000 1.000000</row2>
+														<row3>0.037033 0.008636 -0.012628</row3>
+													</transform>
+													<node>
+														<identifier>upperLidMain3_L_BlendBone</identifier>
+														<transform>
+															<row0>-0.999971 0.000243 -0.007571</row0>
+															<row1>0.000243 1.000000 0.000001</row1>
+															<row2>-0.007571 0.000001 0.999971</row2>
+															<row3>-0.039432 -0.920369 0.590632</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>upperLidMain3_R</identifier>
+													<transform>
+														<row0>1.000000 0.000000 0.000000</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.000000 -0.000000 1.000000</row2>
+														<row3>-0.037033 0.008636 -0.012628</row3>
+													</transform>
+													<node>
+														<identifier>upperLidMain3_R_BlendBone</identifier>
+														<transform>
+															<row0>-0.999971 0.000243 -0.007571</row0>
+															<row1>0.000243 1.000000 0.000001</row1>
+															<row2>-0.007571 0.000001 0.999971</row2>
+															<row3>0.034634 -0.920369 0.590632</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>upperLidMain4_L</identifier>
+													<transform>
+														<row0>1.000000 0.000000 0.000000</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.000000 -0.000000 1.000000</row2>
+														<row3>0.041863 0.010239 -0.012803</row3>
+													</transform>
+													<node>
+														<identifier>upperLidMain4_L_BlendBone</identifier>
+														<transform>
+															<row0>-0.999971 0.000243 -0.007571</row0>
+															<row1>0.000243 1.000000 0.000001</row1>
+															<row2>-0.007571 0.000001 0.999971</row2>
+															<row3>-0.044262 -0.921973 0.590807</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>upperLidMain4_R</identifier>
+													<transform>
+														<row0>1.000000 0.000000 0.000000</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.000000 -0.000000 1.000000</row2>
+														<row3>-0.041863 0.010239 -0.012803</row3>
+													</transform>
+													<node>
+														<identifier>upperLidMain4_R_BlendBone</identifier>
+														<transform>
+															<row0>-0.999971 0.000243 -0.007571</row0>
+															<row1>0.000243 1.000000 0.000001</row1>
+															<row2>-0.007571 0.000001 0.999971</row2>
+															<row3>0.039465 -0.921973 0.590807</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>upperLidMain5_L</identifier>
+													<transform>
+														<row0>1.000000 0.000000 0.000000</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.000000 -0.000000 1.000000</row2>
+														<row3>0.047186 0.009276 -0.012498</row3>
+													</transform>
+													<node>
+														<identifier>upperLidMain5_L_BlendBone</identifier>
+														<transform>
+															<row0>-0.999971 0.000243 -0.007571</row0>
+															<row1>0.000243 1.000000 0.000001</row1>
+															<row2>-0.007571 0.000001 0.999971</row2>
+															<row3>-0.049585 -0.921009 0.590503</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>upperLidMain5_R</identifier>
+													<transform>
+														<row0>1.000000 0.000000 0.000000</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.000000 -0.000000 1.000000</row2>
+														<row3>-0.047186 0.009276 -0.012498</row3>
+													</transform>
+													<node>
+														<identifier>upperLidMain5_R_BlendBone</identifier>
+														<transform>
+															<row0>-0.999971 0.000243 -0.007571</row0>
+															<row1>0.000243 1.000000 0.000001</row1>
+															<row2>-0.007571 0.000001 0.999971</row2>
+															<row3>0.044787 -0.921009 0.590503</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>upperLidMain6_L</identifier>
+													<transform>
+														<row0>1.000000 0.000000 0.000000</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.000000 -0.000000 1.000000</row2>
+														<row3>0.051818 0.006944 -0.011302</row3>
+													</transform>
+													<node>
+														<identifier>upperLidMain6_L_BlendBone</identifier>
+														<transform>
+															<row0>-0.999971 0.000243 -0.007571</row0>
+															<row1>0.000243 1.000000 0.000001</row1>
+															<row2>-0.007571 0.000001 0.999971</row2>
+															<row3>-0.054216 -0.918678 0.589307</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>upperLidMain6_R</identifier>
+													<transform>
+														<row0>1.000000 0.000000 0.000000</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.000000 -0.000000 1.000000</row2>
+														<row3>-0.051818 0.006944 -0.011302</row3>
+													</transform>
+													<node>
+														<identifier>upperLidMain6_R_BlendBone</identifier>
+														<transform>
+															<row0>-0.999971 0.000243 -0.007571</row0>
+															<row1>0.000243 1.000000 0.000001</row1>
+															<row2>-0.007571 0.000001 0.999971</row2>
+															<row3>0.049419 -0.918678 0.589307</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>upperLidMain7_L</identifier>
+													<transform>
+														<row0>1.000000 0.000000 0.000000</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.000000 -0.000000 1.000000</row2>
+														<row3>0.054817 0.004226 -0.009328</row3>
+													</transform>
+													<node>
+														<identifier>upperLidMain7_L_BlendBone</identifier>
+														<transform>
+															<row0>-0.999971 0.000243 -0.007571</row0>
+															<row1>0.000243 1.000000 0.000001</row1>
+															<row2>-0.007571 0.000001 0.999971</row2>
+															<row3>-0.057216 -0.915960 0.587333</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>upperLidMain7_R</identifier>
+													<transform>
+														<row0>1.000000 0.000000 0.000000</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.000000 -0.000000 1.000000</row2>
+														<row3>-0.054817 0.004226 -0.009328</row3>
+													</transform>
+													<node>
+														<identifier>upperLidMain7_R_BlendBone</identifier>
+														<transform>
+															<row0>-0.999971 0.000243 -0.007571</row0>
+															<row1>0.000243 1.000000 0.000001</row1>
+															<row2>-0.007571 0.000001 0.999971</row2>
+															<row3>0.052418 -0.915960 0.587333</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>upperLidMain8_L</identifier>
+													<transform>
+														<row0>1.000000 0.000000 0.000000</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.000000 -0.000000 1.000000</row2>
+														<row3>0.056758 0.001350 -0.006614</row3>
+													</transform>
+													<node>
+														<identifier>upperLidMain8_L_BlendBone</identifier>
+														<transform>
+															<row0>-0.999971 0.000243 -0.007571</row0>
+															<row1>0.000243 1.000000 0.000001</row1>
+															<row2>-0.007571 0.000001 0.999971</row2>
+															<row3>-0.059156 -0.913084 0.584619</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>upperLidMain8_R</identifier>
+													<transform>
+														<row0>1.000000 0.000000 0.000000</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.000000 -0.000000 1.000000</row2>
+														<row3>-0.056758 0.001350 -0.006614</row3>
+													</transform>
+													<node>
+														<identifier>upperLidMain8_R_BlendBone</identifier>
+														<transform>
+															<row0>-0.999971 0.000243 -0.007571</row0>
+															<row1>0.000243 1.000000 0.000001</row1>
+															<row2>-0.007571 0.000001 0.999971</row2>
+															<row3>0.054359 -0.913084 0.584619</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>upperLidMain9_L</identifier>
+													<transform>
+														<row0>1.000000 0.000000 0.000000</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.000000 -0.000000 1.000000</row2>
+														<row3>0.057274 -0.001941 -0.003712</row3>
+													</transform>
+													<node>
+														<identifier>upperLidMain9_L_BlendBone</identifier>
+														<transform>
+															<row0>-0.999971 0.000243 -0.007571</row0>
+															<row1>0.000243 1.000000 0.000001</row1>
+															<row2>-0.007571 0.000001 0.999971</row2>
+															<row3>-0.059673 -0.909793 0.581717</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>upperLidMain9_R</identifier>
+													<transform>
+														<row0>1.000000 0.000000 0.000000</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.000000 -0.000000 1.000000</row2>
+														<row3>-0.057274 -0.001941 -0.003712</row3>
+													</transform>
+													<node>
+														<identifier>upperLidMain9_R_BlendBone</identifier>
+														<transform>
+															<row0>-0.999971 0.000243 -0.007571</row0>
+															<row1>0.000243 1.000000 0.000001</row1>
+															<row2>-0.007571 0.000001 0.999971</row2>
+															<row3>0.054875 -0.909793 0.581717</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>upperLidOuter0_L</identifier>
+													<transform>
+														<row0>1.000000 0.000000 0.000000</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.000000 -0.000000 1.000000</row2>
+														<row3>0.025146 -0.000506 -0.013797</row3>
+													</transform>
+													<node>
+														<identifier>upperLidOuter0_L_BlendBone</identifier>
+														<transform>
+															<row0>-0.999971 0.000243 -0.007571</row0>
+															<row1>0.000243 1.000000 0.000001</row1>
+															<row2>-0.007571 0.000001 0.999971</row2>
+															<row3>-0.027545 -0.911228 0.591802</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>upperLidOuter0_R</identifier>
+													<transform>
+														<row0>1.000000 0.000000 0.000000</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.000000 -0.000000 1.000000</row2>
+														<row3>-0.025146 -0.000506 -0.013797</row3>
+													</transform>
+													<node>
+														<identifier>upperLidOuter0_R_BlendBone</identifier>
+														<transform>
+															<row0>-0.999971 0.000243 -0.007571</row0>
+															<row1>0.000243 1.000000 0.000001</row1>
+															<row2>-0.007571 0.000001 0.999971</row2>
+															<row3>0.022747 -0.911228 0.591802</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>upperLidOuter1_L</identifier>
+													<transform>
+														<row0>1.000000 0.000000 0.000000</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.000000 -0.000000 1.000000</row2>
+														<row3>0.029238 0.009667 -0.011474</row3>
+													</transform>
+													<node>
+														<identifier>upperLidOuter1_L_BlendBone</identifier>
+														<transform>
+															<row0>-0.999971 0.000243 -0.007571</row0>
+															<row1>0.000243 1.000000 0.000001</row1>
+															<row2>-0.007571 0.000001 0.999971</row2>
+															<row3>-0.031637 -0.921400 0.589478</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>upperLidOuter1_R</identifier>
+													<transform>
+														<row0>1.000000 0.000000 0.000000</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.000000 -0.000000 1.000000</row2>
+														<row3>-0.029238 0.009667 -0.011474</row3>
+													</transform>
+													<node>
+														<identifier>upperLidOuter1_R_BlendBone</identifier>
+														<transform>
+															<row0>-0.999971 0.000243 -0.007571</row0>
+															<row1>0.000243 1.000000 0.000001</row1>
+															<row2>-0.007571 0.000001 0.999971</row2>
+															<row3>0.026839 -0.921400 0.589478</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>upperLidOuter2_L</identifier>
+													<transform>
+														<row0>1.000000 0.000000 0.000000</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.000000 -0.000000 1.000000</row2>
+														<row3>0.033822 0.013341 -0.009501</row3>
+													</transform>
+													<node>
+														<identifier>upperLidOuter2_L_BlendBone</identifier>
+														<transform>
+															<row0>-0.999971 0.000243 -0.007571</row0>
+															<row1>0.000243 1.000000 0.000001</row1>
+															<row2>-0.007571 0.000001 0.999971</row2>
+															<row3>-0.036221 -0.925075 0.587506</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>upperLidOuter2_R</identifier>
+													<transform>
+														<row0>1.000000 0.000000 0.000000</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.000000 -0.000000 1.000000</row2>
+														<row3>-0.033822 0.013341 -0.009501</row3>
+													</transform>
+													<node>
+														<identifier>upperLidOuter2_R_BlendBone</identifier>
+														<transform>
+															<row0>-0.999971 0.000243 -0.007571</row0>
+															<row1>0.000243 1.000000 0.000001</row1>
+															<row2>-0.007571 0.000001 0.999971</row2>
+															<row3>0.031423 -0.925075 0.587506</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>upperLidOuter3_L</identifier>
+													<transform>
+														<row0>1.000000 0.000000 0.000000</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.000000 -0.000000 1.000000</row2>
+														<row3>0.039577 0.015657 -0.007793</row3>
+													</transform>
+													<node>
+														<identifier>upperLidOuter3_L_BlendBone</identifier>
+														<transform>
+															<row0>-0.999971 0.000243 -0.007571</row0>
+															<row1>0.000243 1.000000 0.000001</row1>
+															<row2>-0.007571 0.000001 0.999971</row2>
+															<row3>-0.041976 -0.927391 0.585797</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>upperLidOuter3_R</identifier>
+													<transform>
+														<row0>1.000000 0.000000 0.000000</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.000000 -0.000000 1.000000</row2>
+														<row3>-0.039577 0.015657 -0.007793</row3>
+													</transform>
+													<node>
+														<identifier>upperLidOuter3_R_BlendBone</identifier>
+														<transform>
+															<row0>-0.999971 0.000243 -0.007571</row0>
+															<row1>0.000243 1.000000 0.000001</row1>
+															<row2>-0.007571 0.000001 0.999971</row2>
+															<row3>0.037178 -0.927391 0.585797</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>upperLidOuter4_L</identifier>
+													<transform>
+														<row0>1.000000 0.000000 0.000000</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.000000 -0.000000 1.000000</row2>
+														<row3>0.046318 0.015520 -0.006096</row3>
+													</transform>
+													<node>
+														<identifier>upperLidOuter4_L_BlendBone</identifier>
+														<transform>
+															<row0>-0.999971 0.000243 -0.007571</row0>
+															<row1>0.000243 1.000000 0.000001</row1>
+															<row2>-0.007571 0.000001 0.999971</row2>
+															<row3>-0.048717 -0.927253 0.584100</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>upperLidOuter4_R</identifier>
+													<transform>
+														<row0>1.000000 0.000000 0.000000</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.000000 -0.000000 1.000000</row2>
+														<row3>-0.046318 0.015520 -0.006096</row3>
+													</transform>
+													<node>
+														<identifier>upperLidOuter4_R_BlendBone</identifier>
+														<transform>
+															<row0>-0.999971 0.000243 -0.007571</row0>
+															<row1>0.000243 1.000000 0.000001</row1>
+															<row2>-0.007571 0.000001 0.999971</row2>
+															<row3>0.043919 -0.927253 0.584100</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>upperLidOuter5_L</identifier>
+													<transform>
+														<row0>1.000000 0.000000 0.000000</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.000000 -0.000000 1.000000</row2>
+														<row3>0.051981 0.012773 -0.004864</row3>
+													</transform>
+													<node>
+														<identifier>upperLidOuter5_L_BlendBone</identifier>
+														<transform>
+															<row0>-0.999971 0.000243 -0.007571</row0>
+															<row1>0.000243 1.000000 0.000001</row1>
+															<row2>-0.007571 0.000001 0.999971</row2>
+															<row3>-0.054380 -0.924507 0.582869</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>upperLidOuter5_R</identifier>
+													<transform>
+														<row0>1.000000 0.000000 0.000000</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.000000 -0.000000 1.000000</row2>
+														<row3>-0.051981 0.012773 -0.004864</row3>
+													</transform>
+													<node>
+														<identifier>upperLidOuter5_R_BlendBone</identifier>
+														<transform>
+															<row0>-0.999971 0.000243 -0.007571</row0>
+															<row1>0.000243 1.000000 0.000001</row1>
+															<row2>-0.007571 0.000001 0.999971</row2>
+															<row3>0.049582 -0.924507 0.582869</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>upperLidOuter6_L</identifier>
+													<transform>
+														<row0>1.000000 0.000000 0.000000</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.000000 -0.000000 1.000000</row2>
+														<row3>0.056721 0.008101 -0.003719</row3>
+													</transform>
+													<node>
+														<identifier>upperLidOuter6_L_BlendBone</identifier>
+														<transform>
+															<row0>-0.999971 0.000243 -0.007571</row0>
+															<row1>0.000243 1.000000 0.000001</row1>
+															<row2>-0.007571 0.000001 0.999971</row2>
+															<row3>-0.059120 -0.919835 0.581724</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>upperLidOuter6_R</identifier>
+													<transform>
+														<row0>1.000000 0.000000 0.000000</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.000000 -0.000000 1.000000</row2>
+														<row3>-0.056721 0.008101 -0.003719</row3>
+													</transform>
+													<node>
+														<identifier>upperLidOuter6_R_BlendBone</identifier>
+														<transform>
+															<row0>-0.999971 0.000243 -0.007571</row0>
+															<row1>0.000243 1.000000 0.000001</row1>
+															<row2>-0.007571 0.000001 0.999971</row2>
+															<row3>0.054322 -0.919835 0.581724</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>upperLidOuter7_L</identifier>
+													<transform>
+														<row0>1.000000 0.000000 0.000000</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.000000 -0.000000 1.000000</row2>
+														<row3>0.059458 0.003730 -0.002232</row3>
+													</transform>
+													<node>
+														<identifier>upperLidOuter7_L_BlendBone</identifier>
+														<transform>
+															<row0>-0.999971 0.000243 -0.007571</row0>
+															<row1>0.000243 1.000000 0.000001</row1>
+															<row2>-0.007571 0.000001 0.999971</row2>
+															<row3>-0.061857 -0.915464 0.580236</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>upperLidOuter7_R</identifier>
+													<transform>
+														<row0>1.000000 0.000000 0.000000</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.000000 -0.000000 1.000000</row2>
+														<row3>-0.059458 0.003730 -0.002232</row3>
+													</transform>
+													<node>
+														<identifier>upperLidOuter7_R_BlendBone</identifier>
+														<transform>
+															<row0>-0.999971 0.000243 -0.007571</row0>
+															<row1>0.000243 1.000000 0.000001</row1>
+															<row2>-0.007571 0.000001 0.999971</row2>
+															<row3>0.057059 -0.915464 0.580236</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>upperLidOuter8_L</identifier>
+													<transform>
+														<row0>1.000000 0.000000 0.000000</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.000000 -0.000000 1.000000</row2>
+														<row3>0.060027 -0.000872 -0.000511</row3>
+													</transform>
+													<node>
+														<identifier>upperLidOuter8_L_BlendBone</identifier>
+														<transform>
+															<row0>-0.999971 0.000243 -0.007571</row0>
+															<row1>0.000243 1.000000 0.000001</row1>
+															<row2>-0.007571 0.000001 0.999971</row2>
+															<row3>-0.062425 -0.910862 0.578516</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>upperLidOuter8_R</identifier>
+													<transform>
+														<row0>1.000000 0.000000 0.000000</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.000000 -0.000000 1.000000</row2>
+														<row3>-0.060027 -0.000872 -0.000511</row3>
+													</transform>
+													<node>
+														<identifier>upperLidOuter8_R_BlendBone</identifier>
+														<transform>
+															<row0>-0.999971 0.000243 -0.007571</row0>
+															<row1>0.000243 1.000000 0.000001</row1>
+															<row2>-0.007571 0.000001 0.999971</row2>
+															<row3>0.057628 -0.910862 0.578516</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>EyeLidJoints_M_BlendBone</identifier>
+													<transform>
+														<row0>-0.999971 0.000243 -0.007571</row0>
+														<row1>0.000243 1.000000 0.000001</row1>
+														<row2>-0.007571 0.000001 0.999971</row2>
+														<row3>-0.002399 -0.911734 0.578004</row3>
+													</transform>
+												</node>
+											</node>
+											<node>
+												<identifier>FrownBulgeJoint_L</identifier>
+												<transform>
+													<row0>0.132184 -0.000000 0.991225</row0>
+													<row1>0.000000 1.000000 0.000000</row1>
+													<row2>-0.991225 -0.000000 0.132184</row2>
+													<row3>0.059291 -0.107380 -0.085032</row3>
+												</transform>
+												<node>
+													<identifier>FrownBulgeJoint_L_BlendBone</identifier>
+													<transform>
+														<row0>-0.139685 0.000243 0.990196</row0>
+														<row1>0.000033 1.000000 -0.000241</row1>
+														<row2>0.990196 0.000001 0.139685</row2>
+														<row3>0.531545 -0.787522 0.134230</row3>
+													</transform>
+												</node>
+											</node>
+											<node>
+												<identifier>FrownBulgeJoint_R</identifier>
+												<transform>
+													<row0>0.132184 -0.000000 -0.991225</row0>
+													<row1>-0.000000 -1.000000 0.000000</row1>
+													<row2>-0.991225 -0.000000 -0.132184</row2>
+													<row3>-0.061568 -0.107391 -0.084922</row3>
+												</transform>
+												<node>
+													<identifier>FrownBulgeJoint_R_BlendBone</identifier>
+													<transform>
+														<row0>-0.124675 -0.000243 0.992198</row0>
+														<row1>0.000031 -1.000000 -0.000241</row1>
+														<row2>-0.992198 -0.000001 -0.124675</row2>
+														<row3>-0.532060 0.787512 -0.129535</row3>
+													</transform>
+												</node>
+											</node>
+											<node>
+												<identifier>JawJoint_M</identifier>
+												<transform>
+													<row0>1.000000 0.000000 0.000000</row0>
+													<row1>0.000000 1.000000 0.000000</row1>
+													<row2>0.000000 -0.000000 1.000000</row2>
+													<row3>-0.001100 -0.052319 -0.015047</row3>
+												</transform>
+												<node>
+													<identifier>JawJoint_M_BlendBone</identifier>
+													<transform>
+														<row0>-0.999971 0.000243 -0.007571</row0>
+														<row1>0.000243 1.000000 0.000001</row1>
+														<row2>-0.007571 0.000001 0.999971</row2>
+														<row3>-0.002399 -0.842584 0.474639</row3>
+													</transform>
+												</node>
+											</node>
+											<node>
+												<identifier>LipJoints_M</identifier>
+												<transform>
+													<row0>1.000000 0.000000 0.000000</row0>
+													<row1>0.000000 1.000000 0.000000</row1>
+													<row2>0.000000 -0.000000 1.000000</row2>
+													<row3>-0.001100 -0.106722 -0.243997</row3>
+												</transform>
+												<node>
+													<identifier>cornerLipJoint_L</identifier>
+													<transform>
+														<row0>0.506752 0.000000 0.862092</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>-0.862092 -0.000000 0.506752</row2>
+														<row3>0.053202 0.034993 0.119159</row3>
+													</transform>
+													<node>
+														<identifier>cornerLipJoint_L_BlendBone</identifier>
+														<transform>
+															<row0>-0.513265 0.000243 0.858230</row0>
+															<row1>0.000124 1.000000 -0.000209</row1>
+															<row2>0.858230 0.000001 0.513265</row2>
+															<row3>0.475657 -0.823174 0.344094</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>cornerLipJoint_R</identifier>
+													<transform>
+														<row0>0.506752 -0.000000 -0.862092</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.862092 0.000000 0.506752</row2>
+														<row3>-0.053738 0.034853 0.119529</row3>
+													</transform>
+													<node>
+														<identifier>cornerLipJoint_R_BlendBone</identifier>
+														<transform>
+															<row0>-0.500211 0.000243 -0.865904</row0>
+															<row1>0.000122 1.000000 0.000210</row1>
+															<row2>-0.865904 0.000001 0.500211</row2>
+															<row3>-0.477497 -0.823034 0.340233</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>lowerLipJoint0_M</identifier>
+													<transform>
+														<row0>0.978444 0.000000 -0.206513</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.206513 -0.000000 0.978444</row2>
+														<row3>-0.000116 -0.023696 0.027169</row3>
+													</transform>
+													<node>
+														<identifier>lowerLipJoint0_M_BlendBone</identifier>
+														<transform>
+															<row0>-0.976852 0.000243 -0.213916</row0>
+															<row1>0.000237 1.000000 0.000051</row1>
+															<row2>-0.213916 0.000001 0.976852</row2>
+															<row3>-0.141923 -0.764485 0.661368</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>lowerLipJoint10_L</identifier>
+													<transform>
+														<row0>0.889033 0.000000 0.457842</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>-0.457842 -0.000000 0.889033</row2>
+														<row3>0.047570 0.018811 0.121501</row3>
+													</transform>
+													<node>
+														<identifier>lowerLipJoint10_L_BlendBone</identifier>
+														<transform>
+															<row0>-0.892474 0.000243 0.451098</row0>
+															<row1>0.000216 1.000000 -0.000110</row1>
+															<row2>0.451098 0.000001 0.892474</row2>
+															<row3>0.222080 -0.806992 0.540374</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>lowerLipJoint10_R</identifier>
+													<transform>
+														<row0>0.889033 0.000000 -0.457842</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.457842 0.000000 0.889033</row2>
+														<row3>-0.047872 0.018908 0.121646</row3>
+													</transform>
+													<node>
+														<identifier>lowerLipJoint10_R_BlendBone</identifier>
+														<transform>
+															<row0>-0.885541 0.000243 -0.464560</row0>
+															<row1>0.000215 1.000000 0.000112</row1>
+															<row2>-0.464560 0.000001 0.885541</row2>
+															<row3>-0.226011 -0.807089 0.538187</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>lowerLipJoint11_L</identifier>
+													<transform>
+														<row0>0.966657 0.000000 0.256075</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>-0.256075 0.000000 0.966657</row2>
+														<row3>0.050403 0.024215 0.123355</row3>
+													</transform>
+													<node>
+														<identifier>lowerLipJoint11_L_BlendBone</identifier>
+														<transform>
+															<row0>-0.968568 0.000243 0.248749</row0>
+															<row1>0.000235 1.000000 -0.000061</row1>
+															<row2>0.248749 0.000001 0.968568</row2>
+															<row3>0.097542 -0.812396 0.574408</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>lowerLipJoint11_R</identifier>
+													<transform>
+														<row0>0.966657 0.000000 -0.256075</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.256075 -0.000000 0.966657</row2>
+														<row3>-0.050754 0.024271 0.123534</row3>
+													</transform>
+													<node>
+														<identifier>lowerLipJoint11_R_BlendBone</identifier>
+														<transform>
+															<row0>-0.964690 0.000243 -0.263387</row0>
+															<row1>0.000235 1.000000 0.000063</row1>
+															<row2>-0.263387 0.000001 0.964690</row2>
+															<row3>-0.101795 -0.812452 0.573096</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>lowerLipJoint12_L</identifier>
+													<transform>
+														<row0>0.995485 0.000000 0.094923</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>-0.094923 -0.000000 0.995485</row2>
+														<row3>0.052422 0.028868 0.124297</row3>
+													</transform>
+													<node>
+														<identifier>lowerLipJoint12_L_BlendBone</identifier>
+														<transform>
+															<row0>-0.996175 0.000243 0.087383</row0>
+															<row1>0.000242 1.000000 -0.000022</row1>
+															<row2>0.087383 0.000001 0.996175</row2>
+															<row3>0.000415 -0.817049 0.581880</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>lowerLipJoint12_R</identifier>
+													<transform>
+														<row0>0.995485 0.000000 -0.094923</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.094923 0.000000 0.995485</row2>
+														<row3>-0.052830 0.028868 0.124528</row3>
+													</transform>
+													<node>
+														<identifier>lowerLipJoint12_R_BlendBone</identifier>
+														<transform>
+															<row0>-0.994737 0.000243 -0.102458</row0>
+															<row1>0.000242 1.000000 0.000024</row1>
+															<row2>-0.102458 0.000001 0.994737</row2>
+															<row3>-0.004763 -0.817049 0.581233</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>lowerLipJoint13_L</identifier>
+													<transform>
+														<row0>0.932633 0.000000 -0.360825</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.360825 0.000000 0.932633</row2>
+														<row3>0.053048 0.032009 0.123973</row3>
+													</transform>
+													<node>
+														<identifier>lowerLipJoint13_L_BlendBone</identifier>
+														<transform>
+															<row0>-0.929875 0.000243 -0.367876</row0>
+															<row1>0.000226 1.000000 0.000089</row1>
+															<row2>-0.367876 0.000001 0.929875</row2>
+															<row3>-0.260852 -0.820190 0.520563</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>lowerLipJoint13_R</identifier>
+													<transform>
+														<row0>0.932633 -0.000000 0.360825</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>-0.360825 -0.000000 0.932633</row2>
+														<row3>-0.053500 0.031962 0.124249</row3>
+													</transform>
+													<node>
+														<identifier>lowerLipJoint13_R_BlendBone</identifier>
+														<transform>
+															<row0>-0.935339 0.000243 0.353754</row0>
+															<row1>0.000227 1.000000 -0.000087</row1>
+															<row2>0.353754 0.000001 0.935339</row2>
+															<row3>0.256699 -0.820143 0.521873</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>lowerLipJoint14_L</identifier>
+													<transform>
+														<row0>0.308225 0.000000 -0.951313</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.951313 0.000000 0.308225</row2>
+														<row3>0.052700 0.033986 0.122553</row3>
+													</transform>
+													<node>
+														<identifier>lowerLipJoint14_L_BlendBone</identifier>
+														<transform>
+															<row0>-0.301013 0.000243 -0.953620</row0>
+															<row1>0.000074 1.000000 0.000231</row1>
+															<row2>-0.953620 0.000001 0.301013</row2>
+															<row3>-0.569731 -0.822167 0.126673</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>lowerLipJoint14_R</identifier>
+													<transform>
+														<row0>0.308225 -0.000000 0.951313</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>-0.951313 -0.000000 0.308225</row2>
+														<row3>-0.053187 0.033901 0.122867</row3>
+													</transform>
+													<node>
+														<identifier>lowerLipJoint14_R_BlendBone</identifier>
+														<transform>
+															<row0>-0.315419 0.000243 0.948952</row0>
+															<row1>0.000076 1.000000 -0.000231</row1>
+															<row2>0.948953 0.000001 0.315419</row2>
+															<row3>0.568103 -0.822082 0.130677</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>lowerLipJoint1_L</identifier>
+													<transform>
+														<row0>0.978444 -0.000000 0.206513</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>-0.206513 0.000000 0.978444</row2>
+														<row3>0.011477 -0.023692 0.029568</row3>
+													</transform>
+													<node>
+														<identifier>lowerLipJoint1_L_BlendBone</identifier>
+														<transform>
+															<row0>-0.979979 0.000243 0.199099</row0>
+															<row1>0.000238 1.000000 -0.000049</row1>
+															<row2>0.199099 0.000001 0.979979</row2>
+															<row3>0.125618 -0.764489 0.662357</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>lowerLipJoint1_R</identifier>
+													<transform>
+														<row0>0.978444 0.000000 -0.206513</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.206513 -0.000000 0.978444</row2>
+														<row3>-0.011709 -0.023685 0.029665</row3>
+													</transform>
+													<node>
+														<identifier>lowerLipJoint1_R_BlendBone</identifier>
+														<transform>
+															<row0>-0.976852 0.000243 -0.213916</row0>
+															<row1>0.000237 1.000000 0.000051</row1>
+															<row2>-0.213916 0.000001 0.976852</row2>
+															<row3>-0.130065 -0.764496 0.661320</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>lowerLipJoint2_L</identifier>
+													<transform>
+														<row0>0.705069 0.000000 0.709139</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>-0.709139 0.000000 0.705069</row2>
+														<row3>0.018202 -0.023550 0.034147</row3>
+													</transform>
+													<node>
+														<identifier>lowerLipJoint2_L_BlendBone</identifier>
+														<transform>
+															<row0>-0.710418 0.000243 0.703780</row0>
+															<row1>0.000172 1.000000 -0.000171</row1>
+															<row2>0.703780 0.000001 0.710418</row2>
+															<row3>0.460202 -0.764630 0.486612</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>lowerLipJoint2_R</identifier>
+													<transform>
+														<row0>0.705069 0.000000 -0.709139</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.709139 -0.000000 0.705069</row2>
+														<row3>-0.018435 -0.023539 0.034305</row3>
+													</transform>
+													<node>
+														<identifier>lowerLipJoint2_R_BlendBone</identifier>
+														<transform>
+															<row0>-0.699679 0.000243 -0.714457</row0>
+															<row1>0.000170 1.000000 0.000173</row1>
+															<row2>-0.714457 0.000001 0.699679</row2>
+															<row3>-0.463309 -0.764642 0.483263</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>lowerLipJoint3_L</identifier>
+													<transform>
+														<row0>0.478528 -0.000000 0.878072</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>-0.878073 -0.000000 0.478528</row2>
+														<row3>0.023689 -0.020169 0.043275</row3>
+													</transform>
+													<node>
+														<identifier>lowerLipJoint3_L_BlendBone</identifier>
+														<transform>
+															<row0>-0.485162 0.000243 0.874424</row0>
+															<row1>0.000117 1.000000 -0.000213</row1>
+															<row2>0.874424 0.000001 0.485162</row2>
+															<row3>0.567320 -0.768012 0.338886</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>lowerLipJoint3_R</identifier>
+													<transform>
+														<row0>0.478528 0.000000 -0.878073</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.878072 0.000000 0.478528</row2>
+														<row3>-0.023922 -0.020154 0.043502</row3>
+													</transform>
+													<node>
+														<identifier>lowerLipJoint3_R_BlendBone</identifier>
+														<transform>
+															<row0>-0.471866 0.000243 -0.881670</row0>
+															<row1>0.000115 1.000000 0.000214</row1>
+															<row2>-0.881670 0.000001 0.471866</row2>
+															<row3>-0.569304 -0.768027 0.334769</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>lowerLipJoint4_L</identifier>
+													<transform>
+														<row0>0.485448 0.000000 0.874265</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>-0.874265 0.000000 0.485448</row2>
+														<row3>0.026612 -0.015325 0.055635</row3>
+													</transform>
+													<node>
+														<identifier>lowerLipJoint4_L_BlendBone</identifier>
+														<transform>
+															<row0>-0.492054 0.000243 0.870565</row0>
+															<row1>0.000119 1.000000 -0.000212</row1>
+															<row2>0.870565 0.000001 0.492054</row2>
+															<row3>0.552400 -0.772856 0.339911</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>lowerLipJoint4_R</identifier>
+													<transform>
+														<row0>0.485448 0.000000 -0.874265</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.874265 0.000000 0.485448</row2>
+														<row3>-0.026846 -0.015309 0.055918</row3>
+													</transform>
+													<node>
+														<identifier>lowerLipJoint4_R_BlendBone</identifier>
+														<transform>
+															<row0>-0.478815 0.000243 -0.877916</row0>
+															<row1>0.000117 1.000000 0.000213</row1>
+															<row2>-0.877916 0.000001 0.478815</row2>
+															<row3>-0.554368 -0.772872 0.335783</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>lowerLipJoint5_L</identifier>
+													<transform>
+														<row0>0.483557 -0.000000 0.875313</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>-0.875313 -0.000000 0.483557</row2>
+														<row3>0.025797 -0.006920 0.067357</row3>
+													</transform>
+													<node>
+														<identifier>lowerLipJoint5_L_BlendBone</identifier>
+														<transform>
+															<row0>-0.490171 0.000243 0.871626</row0>
+															<row1>0.000118 1.000000 -0.000212</row1>
+															<row2>0.871626 0.000001 0.490171</row2>
+															<row3>0.543268 -0.781261 0.332335</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>lowerLipJoint5_R</identifier>
+													<transform>
+														<row0>0.483557 0.000000 -0.875313</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.875313 0.000000 0.483557</row2>
+														<row3>-0.026031 -0.006901 0.067662</row3>
+													</transform>
+													<node>
+														<identifier>lowerLipJoint5_R_BlendBone</identifier>
+														<transform>
+															<row0>-0.476916 0.000243 -0.878949</row0>
+															<row1>0.000116 1.000000 0.000213</row1>
+															<row2>-0.878949 0.000001 0.476916</row2>
+															<row3>-0.545207 -0.781280 0.328192</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>lowerLipJoint6_L</identifier>
+													<transform>
+														<row0>0.405924 0.000000 0.913907</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>-0.913907 -0.000000 0.405924</row2>
+														<row3>0.030084 -0.003236 0.078400</row3>
+													</transform>
+													<node>
+														<identifier>lowerLipJoint6_L_BlendBone</identifier>
+														<transform>
+															<row0>-0.412832 0.000243 0.910807</row0>
+															<row1>0.000100 1.000000 -0.000222</row1>
+															<row2>0.910807 0.000001 0.412832</row2>
+															<row3>0.558179 -0.784945 0.283465</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>lowerLipJoint6_R</identifier>
+													<transform>
+														<row0>0.405924 0.000000 -0.913907</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.913907 0.000000 0.405924</row2>
+														<row3>-0.030316 -0.003208 0.078696</row3>
+													</transform>
+													<node>
+														<identifier>lowerLipJoint6_R_BlendBone</identifier>
+														<transform>
+															<row0>-0.398993 0.000243 -0.916954</row0>
+															<row1>0.000098 1.000000 0.000222</row1>
+															<row2>-0.916954 0.000001 0.398993</row2>
+															<row3>-0.559762 -0.784973 0.279173</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>lowerLipJoint7_L</identifier>
+													<transform>
+														<row0>0.413169 -0.000000 0.910654</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>-0.910654 -0.000000 0.413169</row2>
+														<row3>0.033390 -0.000667 0.089545</row3>
+													</transform>
+													<node>
+														<identifier>lowerLipJoint7_L_BlendBone</identifier>
+														<transform>
+															<row0>-0.420052 0.000243 0.907500</row0>
+															<row1>0.000101 1.000000 -0.000221</row1>
+															<row2>0.907500 0.000001 0.420052</row2>
+															<row3>0.544395 -0.787514 0.286295</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>lowerLipJoint7_R</identifier>
+													<transform>
+														<row0>0.413169 -0.000000 -0.910654</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.910654 0.000000 0.413169</row2>
+														<row3>-0.033620 -0.000616 0.089807</row3>
+													</transform>
+													<node>
+														<identifier>lowerLipJoint7_R_BlendBone</identifier>
+														<transform>
+															<row0>-0.406262 0.000243 -0.913756</row0>
+															<row1>0.000099 1.000000 0.000222</row1>
+															<row2>-0.913757 0.000001 0.406262</row2>
+															<row3>-0.546044 -0.787565 0.282027</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>lowerLipJoint8_L</identifier>
+													<transform>
+														<row0>0.545314 0.000000 0.838232</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>-0.838232 -0.000000 0.545314</row2>
+														<row3>0.038509 0.005342 0.105083</row3>
+													</transform>
+													<node>
+														<identifier>lowerLipJoint8_L_BlendBone</identifier>
+														<transform>
+															<row0>-0.551645 0.000243 0.834079</row0>
+															<row1>0.000133 1.000000 -0.000203</row1>
+															<row2>0.834079 0.000001 0.551645</row2>
+															<row3>0.479379 -0.793523 0.360664</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>lowerLipJoint8_R</identifier>
+													<transform>
+														<row0>0.545314 -0.000000 -0.838232</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.838232 0.000000 0.545314</row2>
+														<row3>-0.038736 0.005447 0.105261</row3>
+													</transform>
+													<node>
+														<identifier>lowerLipJoint8_R_BlendBone</identifier>
+														<transform>
+															<row0>-0.538951 0.000243 -0.842337</row0>
+															<row1>0.000132 1.000000 0.000204</row1>
+															<row2>-0.842337 0.000001 0.538951</row2>
+															<row3>-0.481723 -0.793627 0.356736</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>lowerLipJoint9_L</identifier>
+													<transform>
+														<row0>0.703872 -0.000000 0.710326</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>-0.710326 -0.000000 0.703872</row2>
+														<row3>0.044422 0.013193 0.117002</row3>
+													</transform>
+													<node>
+														<identifier>lowerLipJoint9_L_BlendBone</identifier>
+														<transform>
+															<row0>-0.709230 0.000243 0.704977</row0>
+															<row1>0.000172 1.000000 -0.000172</row1>
+															<row2>0.704977 0.000001 0.709231</row2>
+															<row3>0.383712 -0.801374 0.446140</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>lowerLipJoint9_R</identifier>
+													<transform>
+														<row0>0.703872 -0.000000 -0.710326</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.710326 0.000000 0.703872</row2>
+														<row3>-0.044680 0.013315 0.117134</row3>
+													</transform>
+													<node>
+														<identifier>lowerLipJoint9_R_BlendBone</identifier>
+														<transform>
+															<row0>-0.698474 0.000243 -0.715635</row0>
+															<row1>0.000170 1.000000 0.000173</row1>
+															<row2>-0.715635 0.000001 0.698474</row2>
+															<row3>-0.386813 -0.801495 0.442823</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>upperLipJoint0_M</identifier>
+													<transform>
+														<row0>0.997014 0.000000 -0.077217</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.077217 0.000000 0.997014</row2>
+														<row3>-0.000161 0.029851 0.002278</row3>
+													</transform>
+													<node>
+														<identifier>upperLipJoint0_M_BlendBone</identifier>
+														<transform>
+															<row0>-0.996401 0.000243 -0.084764</row0>
+															<row1>0.000242 1.000000 0.000020</row1>
+															<row2>-0.084764 0.000001 0.996401</row2>
+															<row3>-0.056385 -0.818032 0.699045</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>upperLipJoint1_L</identifier>
+													<transform>
+														<row0>0.997014 0.000000 0.077217</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>-0.077217 0.000000 0.997014</row2>
+														<row3>0.005452 0.027466 0.002720</row3>
+													</transform>
+													<node>
+														<identifier>upperLipJoint1_L_BlendBone</identifier>
+														<transform>
+															<row0>-0.997570 0.000243 0.069666</row0>
+															<row1>0.000242 1.000000 -0.000018</row1>
+															<row2>0.069666 0.000001 0.997570</row2>
+															<row3>0.046292 -0.815647 0.699382</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>upperLipJoint1_R</identifier>
+													<transform>
+														<row0>0.997014 0.000000 -0.077217</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.077217 0.000000 0.997014</row2>
+														<row3>-0.005773 0.027458 0.002781</row3>
+													</transform>
+													<node>
+														<identifier>upperLipJoint1_R_BlendBone</identifier>
+														<transform>
+															<row0>-0.996401 0.000243 -0.084764</row0>
+															<row1>0.000242 1.000000 0.000020</row1>
+															<row2>-0.084764 0.000001 0.996401</row2>
+															<row3>-0.050750 -0.815639 0.698976</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>upperLipJoint2_L</identifier>
+													<transform>
+														<row0>0.819082 0.000000 0.573676</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>-0.573676 -0.000000 0.819082</row2>
+														<row3>0.013631 0.022215 0.008333</row3>
+													</transform>
+													<node>
+														<identifier>upperLipJoint2_L_BlendBone</identifier>
+														<transform>
+															<row0>-0.823402 0.000243 0.567458</row0>
+															<row1>0.000200 1.000000 -0.000138</row1>
+															<row2>0.567458 0.000001 0.823402</row2>
+															<row3>0.385723 -0.810396 0.578668</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>upperLipJoint2_R</identifier>
+													<transform>
+														<row0>0.819082 0.000000 -0.573676</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.573676 0.000000 0.819082</row2>
+														<row3>-0.013949 0.022195 0.008492</row3>
+													</transform>
+													<node>
+														<identifier>upperLipJoint2_R_BlendBone</identifier>
+														<transform>
+															<row0>-0.814715 0.000243 -0.579861</row0>
+															<row1>0.000198 1.000000 0.000140</row1>
+															<row2>-0.579862 0.000001 0.814715</row2>
+															<row3>-0.389300 -0.810376 0.575968</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>upperLipJoint3_L</identifier>
+													<transform>
+														<row0>0.641812 0.000000 0.766862</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>-0.766862 -0.000000 0.641813</row2>
+														<row3>0.022156 0.018859 0.016371</row3>
+													</transform>
+													<node>
+														<identifier>upperLipJoint3_L_BlendBone</identifier>
+														<transform>
+															<row0>-0.647600 0.000243 0.761980</row0>
+															<row1>0.000157 1.000000 -0.000186</row1>
+															<row2>0.761980 0.000001 0.647600</row2>
+															<row3>0.511242 -0.807040 0.459895</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>upperLipJoint3_R</identifier>
+													<transform>
+														<row0>0.641812 0.000000 -0.766862</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.766862 0.000000 0.641812</row2>
+														<row3>-0.022468 0.018829 0.016627</row3>
+													</transform>
+													<node>
+														<identifier>upperLipJoint3_R_BlendBone</identifier>
+														<transform>
+															<row0>-0.635988 0.000243 -0.771699</row0>
+															<row1>0.000155 1.000000 0.000187</row1>
+															<row2>-0.771699 0.000001 0.635988</row2>
+															<row3>-0.513925 -0.807010 0.456291</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>upperLipJoint4_L</identifier>
+													<transform>
+														<row0>0.351812 0.000000 0.936071</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>-0.936071 -0.000000 0.351812</row2>
+														<row3>0.030241 0.017011 0.029089</row3>
+													</transform>
+													<node>
+														<identifier>upperLipJoint4_L_BlendBone</identifier>
+														<transform>
+															<row0>-0.358890 0.000243 0.933380</row0>
+															<row1>0.000087 1.000000 -0.000227</row1>
+															<row2>0.933380 0.000001 0.358890</row2>
+															<row3>0.619896 -0.805192 0.267851</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>upperLipJoint4_R</identifier>
+													<transform>
+														<row0>0.351812 0.000000 -0.936071</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.936071 0.000000 0.351812</row2>
+														<row3>-0.030541 0.016977 0.029422</row3>
+													</transform>
+													<node>
+														<identifier>upperLipJoint4_R_BlendBone</identifier>
+														<transform>
+															<row0>-0.344715 0.000243 -0.938707</row0>
+															<row1>0.000084 1.000000 0.000228</row1>
+															<row2>-0.938707 0.000001 0.344715</row2>
+															<row3>-0.621167 -0.805158 0.263524</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>upperLipJoint5_L</identifier>
+													<transform>
+														<row0>0.208523 0.000000 0.978018</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>-0.978018 -0.000000 0.208523</row2>
+														<row3>0.033907 0.017752 0.047778</row3>
+													</transform>
+													<node>
+														<identifier>upperLipJoint5_L_BlendBone</identifier>
+														<transform>
+															<row0>-0.215922 0.000243 0.976411</row0>
+															<row1>0.000052 1.000000 -0.000237</row1>
+															<row2>0.976411 0.000001 0.215922</row2>
+															<row3>0.633824 -0.805933 0.172259</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>upperLipJoint5_R</identifier>
+													<transform>
+														<row0>0.208523 -0.000000 -0.978018</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.978018 0.000000 0.208523</row2>
+														<row3>-0.034189 0.017724 0.048145</row3>
+													</transform>
+													<node>
+														<identifier>upperLipJoint5_R_BlendBone</identifier>
+														<transform>
+															<row0>-0.201112 0.000243 -0.979568</row0>
+															<row1>0.000050 1.000000 0.000238</row1>
+															<row2>-0.979568 0.000001 0.201112</row2>
+															<row3>-0.634407 -0.805905 0.167766</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>upperLipJoint6_L</identifier>
+													<transform>
+														<row0>0.306729 -0.000000 0.951797</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>-0.951797 -0.000000 0.306729</row2>
+														<row3>0.036573 0.021821 0.065839</row3>
+													</transform>
+													<node>
+														<identifier>upperLipJoint6_L_BlendBone</identifier>
+														<transform>
+															<row0>-0.313927 0.000243 0.949447</row0>
+															<row1>0.000076 1.000000 -0.000231</row1>
+															<row2>0.949447 0.000001 0.313927</row2>
+															<row3>0.595054 -0.810002 0.232710</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>upperLipJoint6_R</identifier>
+													<transform>
+														<row0>0.306729 -0.000000 -0.951797</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.951797 -0.000000 0.306729</row2>
+														<row3>-0.036839 0.021808 0.066182</row3>
+													</transform>
+													<node>
+														<identifier>upperLipJoint6_R_BlendBone</identifier>
+														<transform>
+															<row0>-0.299514 0.000243 -0.954092</row0>
+															<row1>0.000073 1.000000 0.000232</row1>
+															<row2>-0.954092 0.000001 0.299514</row2>
+															<row3>-0.596119 -0.809989 0.228291</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>upperLipJoint7_L</identifier>
+													<transform>
+														<row0>0.338605 -0.000000 0.940929</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>-0.940929 -0.000000 0.338605</row2>
+														<row3>0.040786 0.027324 0.083710</row3>
+													</transform>
+													<node>
+														<identifier>upperLipJoint7_L_BlendBone</identifier>
+														<transform>
+															<row0>-0.345719 0.000243 0.938338</row0>
+															<row1>0.000083 1.000000 -0.000228</row1>
+															<row2>0.938338 0.000001 0.345720</row2>
+															<row3>0.568639 -0.815505 0.250528</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>upperLipJoint7_R</identifier>
+													<transform>
+														<row0>0.338605 0.000000 -0.940929</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.940929 0.000000 0.338605</row2>
+														<row3>-0.041047 0.027328 0.083986</row3>
+													</transform>
+													<node>
+														<identifier>upperLipJoint7_R_BlendBone</identifier>
+														<transform>
+															<row0>-0.331471 0.000243 -0.943465</row0>
+															<row1>0.000081 1.000000 0.000229</row1>
+															<row2>-0.943465 0.000001 0.331471</row2>
+															<row3>-0.569916 -0.815509 0.246166</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>upperLipJoint8_L</identifier>
+													<transform>
+														<row0>0.367957 0.000000 0.929843</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>-0.929843 -0.000000 0.367957</row2>
+														<row3>0.044279 0.031980 0.100699</row3>
+													</transform>
+													<node>
+														<identifier>upperLipJoint8_L_BlendBone</identifier>
+														<transform>
+															<row0>-0.374986 0.000243 0.927030</row0>
+															<row1>0.000090 1.000000 -0.000225</row1>
+															<row2>0.927030 0.000001 0.374986</row2>
+															<row3>0.543417 -0.820161 0.265240</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>upperLipJoint8_R</identifier>
+													<transform>
+														<row0>0.367957 0.000000 -0.929843</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.929843 0.000000 0.367957</row2>
+														<row3>-0.044597 0.031965 0.100946</row3>
+													</transform>
+													<node>
+														<identifier>upperLipJoint8_R_BlendBone</identifier>
+														<transform>
+															<row0>-0.360906 0.000243 -0.932602</row0>
+															<row1>0.000088 1.000000 0.000226</row1>
+															<row2>-0.932602 0.000001 0.360906</row2>
+															<row3>-0.544836 -0.820146 0.260984</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>upperLipJoint9_L</identifier>
+													<transform>
+														<row0>0.506752 0.000000 0.862092</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>-0.862092 -0.000000 0.506752</row2>
+														<row3>0.049739 0.034103 0.113038</row3>
+													</transform>
+													<node>
+														<identifier>upperLipJoint9_L_BlendBone</identifier>
+														<transform>
+															<row0>-0.513265 0.000243 0.858230</row0>
+															<row1>0.000124 1.000000 -0.000209</row1>
+															<row2>0.858230 0.000001 0.513265</row2>
+															<row3>0.482688 -0.822283 0.344211</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>upperLipJoint9_R</identifier>
+													<transform>
+														<row0>0.506752 -0.000000 -0.862092</row0>
+														<row1>0.000000 1.000000 0.000000</row1>
+														<row2>0.862092 0.000000 0.506752</row2>
+														<row3>-0.050176 0.034022 0.113338</row3>
+													</transform>
+													<node>
+														<identifier>upperLipJoint9_R_BlendBone</identifier>
+														<transform>
+															<row0>-0.500211 0.000243 -0.865904</row0>
+															<row1>0.000122 1.000000 0.000210</row1>
+															<row2>-0.865904 0.000001 0.500211</row2>
+															<row3>-0.484639 -0.822203 0.340299</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>LipJoints_M_BlendBone</identifier>
+													<transform>
+														<row0>-0.999971 0.000243 -0.007571</row0>
+														<row1>0.000243 1.000000 0.000001</row1>
+														<row2>-0.007571 0.000001 0.999971</row2>
+														<row3>-0.002399 -0.788181 0.703589</row3>
+													</transform>
+												</node>
+											</node>
+											<node>
+												<identifier>NoseBridgeJoint_M</identifier>
+												<transform>
+													<row0>1.000000 0.000000 0.000000</row0>
+													<row1>0.000000 1.000000 0.000000</row1>
+													<row2>0.000000 -0.000000 1.000000</row2>
+													<row3>-0.001100 0.007462 -0.175307</row3>
+												</transform>
+												<node>
+													<identifier>NoseBridgeJoint_M_BlendBone</identifier>
+													<transform>
+														<row0>-0.999971 0.000243 -0.007571</row0>
+														<row1>0.000243 1.000000 0.000001</row1>
+														<row2>-0.007571 0.000001 0.999971</row2>
+														<row3>-0.002399 -0.902365 0.634899</row3>
+													</transform>
+												</node>
+											</node>
+											<node>
+												<identifier>NoseCornerJoint_L</identifier>
+												<transform>
+													<row0>0.880683 -0.000000 0.473707</row0>
+													<row1>0.000000 1.000000 0.000000</row1>
+													<row2>-0.473707 -0.000000 0.880683</row2>
+													<row3>0.020062 -0.049775 -0.246797</row3>
+												</transform>
+												<node>
+													<identifier>NoseCornerJoint_L_BlendBone</identifier>
+													<transform>
+														<row0>-0.884244 0.000243 0.467025</row0>
+														<row1>0.000214 1.000000 -0.000114</row1>
+														<row2>0.467025 0.000001 0.884244</row2>
+														<row3>0.313871 -0.845128 0.633266</row3>
+													</transform>
+												</node>
+											</node>
+											<node>
+												<identifier>NoseCornerJoint_R</identifier>
+												<transform>
+													<row0>0.880683 0.000000 -0.473707</row0>
+													<row1>-0.000000 -1.000000 0.000000</row1>
+													<row2>-0.473707 -0.000000 -0.880683</row2>
+													<row3>-0.022278 -0.049776 -0.246789</row3>
+												</transform>
+												<node>
+													<identifier>NoseCornerJoint_R_BlendBone</identifier>
+													<transform>
+														<row0>-0.877071 -0.000243 0.480361</row0>
+														<row1>0.000213 -1.000000 -0.000116</row1>
+														<row2>-0.480361 -0.000001 -0.877071</row2>
+														<row3>-0.318079 0.845126 -0.630993</row3>
+													</transform>
+												</node>
+											</node>
+											<node>
+												<identifier>NoseCreaseJoint_M</identifier>
+												<transform>
+													<row0>1.000000 0.000000 0.000000</row0>
+													<row1>0.000000 1.000000 0.000000</row1>
+													<row2>0.000000 -0.000000 1.000000</row2>
+													<row3>-0.001100 0.012578 -0.162920</row3>
+												</transform>
+												<node>
+													<identifier>NoseCreaseJoint_M_BlendBone</identifier>
+													<transform>
+														<row0>-0.999971 0.000243 -0.007571</row0>
+														<row1>0.000243 1.000000 0.000001</row1>
+														<row2>-0.007571 0.000001 0.999971</row2>
+														<row3>-0.002399 -0.907481 0.622512</row3>
+													</transform>
+												</node>
+											</node>
+											<node>
+												<identifier>NoseJoint_M</identifier>
+												<transform>
+													<row0>1.000000 0.000000 0.000000</row0>
+													<row1>0.000000 1.000000 0.000000</row1>
+													<row2>0.000000 -0.000000 1.000000</row2>
+													<row3>-0.001100 -0.030173 -0.269568</row3>
+												</transform>
+												<node>
+													<identifier>NoseJoint_M_BlendBone</identifier>
+													<transform>
+														<row0>-0.999971 0.000243 -0.007571</row0>
+														<row1>0.000243 1.000000 0.000001</row1>
+														<row2>-0.007571 0.000001 0.999971</row2>
+														<row3>-0.002399 -0.864730 0.729161</row3>
+													</transform>
+												</node>
+											</node>
+											<node>
+												<identifier>NoseSideJoint_L</identifier>
+												<transform>
+													<row0>0.475923 0.000000 0.879487</row0>
+													<row1>0.000000 1.000000 0.000000</row1>
+													<row2>-0.879487 -0.000000 0.475923</row2>
+													<row3>0.023202 -0.009886 -0.185800</row3>
+												</transform>
+												<node>
+													<identifier>NoseSideJoint_L_BlendBone</identifier>
+													<transform>
+														<row0>-0.482568 0.000243 0.875858</row0>
+														<row1>0.000117 1.000000 -0.000213</row1>
+														<row2>0.875858 0.000001 0.482568</row2>
+														<row3>0.554907 -0.885017 0.330640</row3>
+													</transform>
+												</node>
+											</node>
+											<node>
+												<identifier>NoseSideJoint_R</identifier>
+												<transform>
+													<row0>0.475923 0.000000 -0.879487</row0>
+													<row1>-0.000000 -1.000000 0.000000</row1>
+													<row2>-0.879487 -0.000000 -0.475923</row2>
+													<row3>-0.025402 -0.009886 -0.185801</row3>
+												</transform>
+												<node>
+													<identifier>NoseSideJoint_R_BlendBone</identifier>
+													<transform>
+														<row0>-0.469250 -0.000243 0.883065</row0>
+														<row1>0.000115 -1.000000 -0.000214</row1>
+														<row2>-0.883065 -0.000001 -0.469250</row2>
+														<row3>-0.557190 0.885017 -0.326420</row3>
+													</transform>
+												</node>
+											</node>
+											<node>
+												<identifier>NoseUnderJoint_M</identifier>
+												<transform>
+													<row0>1.000000 0.000000 0.000000</row0>
+													<row1>0.000000 1.000000 0.000000</row1>
+													<row2>0.000000 -0.000000 1.000000</row2>
+													<row3>-0.001100 -0.064825 -0.250594</row3>
+												</transform>
+												<node>
+													<identifier>NoseUnderJoint_M_BlendBone</identifier>
+													<transform>
+														<row0>-0.999971 0.000243 -0.007571</row0>
+														<row1>0.000243 1.000000 0.000001</row1>
+														<row2>-0.007571 0.000001 0.999971</row2>
+														<row3>-0.002399 -0.830078 0.710187</row3>
+													</transform>
+												</node>
+											</node>
+											<node>
+												<identifier>NostrilJoint_L</identifier>
+												<transform>
+													<row0>0.938006 0.000000 0.346619</row0>
+													<row1>0.000000 1.000000 0.000000</row1>
+													<row2>-0.346619 -0.000000 0.938006</row2>
+													<row3>0.018518 -0.037924 -0.262969</row3>
+												</transform>
+												<node>
+													<identifier>NostrilJoint_L_BlendBone</identifier>
+													<transform>
+														<row0>-0.940604 0.000243 0.339507</row0>
+														<row1>0.000228 1.000000 -0.000083</row1>
+														<row2>0.339507 0.000001 0.940604</row2>
+														<row3>0.229801 -0.856979 0.685398</row3>
+													</transform>
+												</node>
+											</node>
+											<node>
+												<identifier>NostrilJoint_R</identifier>
+												<transform>
+													<row0>0.938006 0.000000 -0.346619</row0>
+													<row1>-0.000000 -1.000000 0.000000</row1>
+													<row2>-0.346619 -0.000000 -0.938006</row2>
+													<row3>-0.020719 -0.037924 -0.262969</row3>
+												</transform>
+												<node>
+													<identifier>NostrilJoint_R_BlendBone</identifier>
+													<transform>
+														<row0>-0.935355 -0.000243 0.353711</row0>
+														<row1>0.000227 -1.000000 -0.000085</row1>
+														<row2>-0.353711 -0.000001 -0.935355</row2>
+														<row3>-0.234302 0.856979 -0.683736</row3>
+													</transform>
+												</node>
+											</node>
+											<node>
+												<identifier>SmileBulgeJoint_L</identifier>
+												<transform>
+													<row0>0.156123 -0.000000 0.987738</row0>
+													<row1>0.000000 1.000000 0.000000</row1>
+													<row2>-0.987738 -0.000000 0.156122</row2>
+													<row3>0.070735 -0.026197 -0.098396</row3>
+												</transform>
+												<node>
+													<identifier>SmileBulgeJoint_L_BlendBone</identifier>
+													<transform>
+														<row0>-0.163597 0.000243 0.986527</row0>
+														<row1>0.000039 1.000000 -0.000240</row1>
+														<row2>0.986527 0.000001 0.163597</row2>
+														<row3>0.539556 -0.868706 0.160438</row3>
+													</transform>
+												</node>
+											</node>
+											<node>
+												<identifier>SmileBulgeJoint_R</identifier>
+												<transform>
+													<row0>0.156122 -0.000000 -0.987738</row0>
+													<row1>-0.000000 -1.000000 0.000000</row1>
+													<row2>-0.987738 -0.000000 -0.156122</row2>
+													<row3>-0.073067 -0.026198 -0.098165</row3>
+												</transform>
+												<node>
+													<identifier>SmileBulgeJoint_R_BlendBone</identifier>
+													<transform>
+														<row0>-0.148639 -0.000243 0.988891</row0>
+														<row1>0.000037 -1.000000 -0.000240</row1>
+														<row2>-0.988891 -0.000001 -0.148639</row2>
+														<row3>-0.540056 0.868704 -0.155793</row3>
+													</transform>
+												</node>
+											</node>
+											<node>
+												<identifier>Tongue0Joint_M</identifier>
+												<transform>
+													<row0>0.000000 0.009268 -0.999957</row0>
+													<row1>-0.000000 0.999957 0.009268</row1>
+													<row2>1.000000 0.000000 0.000000</row2>
+													<row3>-0.001100 -0.089892 -0.057295</row3>
+												</transform>
+												<node>
+													<identifier>Tongue1Joint_M</identifier>
+													<transform>
+														<row0>0.972349 -0.233533 0.000000</row0>
+														<row1>0.233533 0.972349 0.000000</row1>
+														<row2>0.000000 -0.000000 1.000000</row2>
+														<row3>0.099784 0.000000 -0.000000</row3>
+													</transform>
+													<node>
+														<identifier>Tongue2Joint_M</identifier>
+														<transform>
+															<row0>0.885488 -0.464663 0.000000</row0>
+															<row1>0.464663 0.885488 -0.000000</row1>
+															<row2>0.000000 0.000000 1.000000</row2>
+															<row3>0.036317 0.000000 0.000000</row3>
+														</transform>
+														<node>
+															<identifier>Tongue3Joint_M</identifier>
+															<transform>
+																<row0>0.818451 -0.574576 -0.000000</row0>
+																<row1>0.574576 0.818451 0.000000</row1>
+																<row2>0.000000 -0.000000 1.000000</row2>
+																<row3>0.038395 -0.000000 0.000000</row3>
+															</transform>
+															<node>
+																<identifier>Tongue3Joint_M_BlendBone</identifier>
+																<transform>
+																	<row0>0.001631 0.007398 -0.999971</row0>
+																	<row1>-0.969156 0.246447 0.000243</row1>
+																	<row2>-0.246442 -0.969128 -0.007571</row2>
+																	<row3>0.581052 -0.850618 -0.002399</row3>
+																</transform>
+															</node>
+														</node>
+														<node>
+															<identifier>Tongue2Joint_M_BlendBone</identifier>
+															<transform>
+																<row0>0.005585 0.005118 -0.999971</row0>
+																<row1>-0.651604 0.758559 0.000243</row1>
+																<row2>-0.758539 -0.651584 -0.007571</row2>
+																<row3>0.025212 -1.030048 -0.002399</row3>
+															</transform>
+														</node>
+													</node>
+													<node>
+														<identifier>Tongue1Joint_M_BlendBone</identifier>
+														<transform>
+															<row0>0.007324 0.001937 -0.999971</row0>
+															<row1>-0.224513 0.974471 0.000243</row1>
+															<row2>-0.974444 -0.224505 -0.007571</row2>
+															<row3>-0.419983 -0.923810 -0.002399</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>Tongue0Joint_M_BlendBone</identifier>
+													<transform>
+														<row0>0.007573 0.000173 -0.999971</row0>
+														<row1>0.009266 0.999957 0.000243</row1>
+														<row2>-0.999928 0.009268 -0.007571</row2>
+														<row3>-0.524326 -0.800185 -0.002399</row3>
+													</transform>
+												</node>
+											</node>
+											<node>
+												<identifier>lowerLidOuterJoint_L</identifier>
+												<transform>
+													<row0>0.978313 0.000000 0.207133</row0>
+													<row1>0.000000 1.000000 0.000000</row1>
+													<row2>-0.207133 0.000000 0.978313</row2>
+													<row3>0.044827 0.002092 -0.130922</row3>
+												</transform>
+												<node>
+													<identifier>lowerLidOuterJoint_L_BlendBone</identifier>
+													<transform>
+														<row0>-0.979853 0.000243 0.199720</row0>
+														<row1>0.000238 1.000000 -0.000049</row1>
+														<row2>0.199720 0.000001 0.979853</row2>
+														<row3>0.075037 -0.896995 0.587717</row3>
+													</transform>
+												</node>
+											</node>
+											<node>
+												<identifier>lowerLidOuterJoint_R</identifier>
+												<transform>
+													<row0>0.978313 0.000000 -0.207133</row0>
+													<row1>-0.000000 -1.000000 0.000000</row1>
+													<row2>-0.207133 0.000000 -0.978313</row2>
+													<row3>-0.047034 0.002092 -0.130950</row3>
+												</transform>
+												<node>
+													<identifier>lowerLidOuterJoint_R_BlendBone</identifier>
+													<transform>
+														<row0>-0.976717 -0.000243 0.214534</row0>
+														<row1>0.000237 -1.000000 -0.000051</row1>
+														<row2>-0.214534 -0.000001 -0.976717</row2>
+														<row3>-0.079730 0.896994 -0.586752</row3>
+													</transform>
+												</node>
+											</node>
+											<node>
+												<identifier>lowerTeethJoint_M</identifier>
+												<transform>
+													<row0>1.000000 0.000000 0.000000</row0>
+													<row1>0.000000 1.000000 0.000000</row1>
+													<row2>0.000000 -0.000000 1.000000</row2>
+													<row3>-0.001100 -0.107480 -0.150031</row3>
+												</transform>
+												<node>
+													<identifier>lowerTeethJoint_M_BlendBone</identifier>
+													<transform>
+														<row0>-0.999971 0.000243 -0.007571</row0>
+														<row1>0.000243 1.000000 0.000001</row1>
+														<row2>-0.007571 0.000001 0.999971</row2>
+														<row3>-0.002399 -0.787422 0.609623</row3>
+													</transform>
+												</node>
+											</node>
+											<node>
+												<identifier>upperTeethJoint_M</identifier>
+												<transform>
+													<row0>1.000000 0.000000 0.000000</row0>
+													<row1>0.000000 1.000000 0.000000</row1>
+													<row2>0.000000 -0.000000 1.000000</row2>
+													<row3>-0.001100 -0.066719 -0.158102</row3>
+												</transform>
+												<node>
+													<identifier>upperTeethJoint_M_BlendBone</identifier>
+													<transform>
+														<row0>-0.999971 0.000243 -0.007571</row0>
+														<row1>0.000243 1.000000 0.000001</row1>
+														<row2>-0.007571 0.000001 0.999971</row2>
+														<row3>-0.002399 -0.828184 0.617694</row3>
+													</transform>
+												</node>
+											</node>
+											<node>
+												<identifier>FaceJoint_M_BlendBone</identifier>
+												<transform>
+													<row0>-0.999971 0.000243 -0.007571</row0>
+													<row1>0.000243 1.000000 0.000001</row1>
+													<row2>-0.007571 0.000001 0.999971</row2>
+													<row3>-0.003499 -0.894902 0.459592</row3>
+												</transform>
+											</node>
+										</node>
+										<node>
+											<identifier>Root_Head</identifier>
+											<transform>
+												<row0>0.000000 -0.000000 -1.000000</row0>
+												<row1>0.000000 1.000000 -0.000000</row1>
+												<row2>1.000000 0.000000 0.000000</row2>
+												<row3>0.048676 0.025217 0.000952</row3>
+											</transform>
+											<node>
+												<identifier>Root_Head_BlendBone</identifier>
+												<transform>
+													<row0>1.000000 0.000000 -0.000000</row0>
+													<row1>-0.000000 1.000000 -0.000000</row1>
+													<row2>-0.000000 -0.000000 -1.000000</row2>
+													<row3>0.000952 -0.920120 -0.482135</row3>
+												</transform>
+											</node>
+										</node>
+										<node>
+											<identifier>Head_M_BlendBone</identifier>
+											<transform>
+												<row0>0.000000 0.000000 -1.000000</row0>
+												<row1>-0.000000 1.000000 0.000000</row1>
+												<row2>-1.000000 -0.000000 -0.000000</row2>
+												<row3>-0.433459 -0.894903 -0.000000</row3>
+											</transform>
+										</node>
+									</node>
+									<node>
+										<identifier>Root_Neck</identifier>
+										<transform>
+											<row0>-0.064033 -0.241130 -0.968378</row0>
+											<row1>-0.008450 0.970466 -0.241091</row1>
+											<row2>0.997912 -0.007255 -0.064179</row2>
+											<row3>-0.031571 -0.030078 -0.001148</row3>
+										</transform>
+										<node>
+											<identifier>Root_Neck_BlendBone</identifier>
+											<transform>
+												<row0>0.968378 0.241091 0.064179</row0>
+												<row1>-0.159267 0.399380 0.902845</row1>
+												<row2>-0.192036 0.884517 -0.425149</row2>
+												<row3>0.040534 0.053538 -0.830615</row3>
+											</transform>
+										</node>
+									</node>
+									<node>
+										<identifier>Neck_BlendBone</identifier>
+										<transform>
+											<row0>0.000000 0.000000 -1.000000</row0>
+											<row1>0.907783 0.419439 0.000000</row1>
+											<row2>-0.419439 0.907783 0.000000</row2>
+											<row3>-0.863500 0.018130 -0.000000</row3>
+										</transform>
+									</node>
+								</node>
+								<node>
+									<identifier>Shoulder_L</identifier>
+									<transform>
+										<row0>-0.450475 -0.883476 0.128618</row0>
+										<row1>0.886548 -0.425657 0.181242</row1>
+										<row2>-0.105376 0.195671 0.974992</row2>
+										<row3>0.013524 0.058610 0.084199</row3>
+									</transform>
+									<node>
+										<identifier>Arm_L</identifier>
+										<transform>
+											<row0>0.524025 -0.851703 -0.000000</row0>
+											<row1>0.851703 0.524025 -0.000000</row1>
+											<row2>0.000000 -0.000000 1.000000</row2>
+											<row3>0.207601 -0.000000 0.000000</row3>
+										</transform>
+										<node>
+											<identifier>Forearm_L</identifier>
+											<transform>
+												<row0>0.768816 0.639470 -0.000000</row0>
+												<row1>-0.639470 0.768816 0.000000</row1>
+												<row2>0.000000 0.000000 1.000000</row2>
+												<row3>0.169392 -0.000000 0.000000</row3>
+											</transform>
+											<node>
+												<identifier>Hand_L</identifier>
+												<transform>
+													<row0>0.928249 0.371960 0.000001</row0>
+													<row1>-0.371960 0.928249 -0.000000</row1>
+													<row2>-0.000001 -0.000000 1.000000</row2>
+													<row3>0.289516 -0.000000 -0.000000</row3>
+												</transform>
+												<node>
+													<identifier>Fingers1_L</identifier>
+													<transform>
+														<row0>0.692416 0.721499 -0.000000</row0>
+														<row1>-0.721499 0.692416 0.000000</row1>
+														<row2>0.000000 0.000000 1.000000</row2>
+														<row3>0.098104 0.000000 0.000000</row3>
+													</transform>
+													<node>
+														<identifier>Fingers2_L</identifier>
+														<transform>
+															<row0>1.000000 0.000000 -0.000000</row0>
+															<row1>0.000000 1.000000 0.000000</row1>
+															<row2>0.000000 0.000000 1.000000</row2>
+															<row3>0.098636 -0.000000 -0.000000</row3>
+														</transform>
+														<node>
+															<identifier>Fingers2_L_BlendBone</identifier>
+															<transform>
+																<row0>-0.221303 -0.020408 -0.974992</row0>
+																<row1>-0.317386 0.946857 0.052221</row1>
+																<row2>-0.922112 -0.321006 0.216019</row2>
+																<row3>-0.384751 -0.120402 -0.064091</row3>
+															</transform>
+														</node>
+													</node>
+													<node>
+														<identifier>Fingers1_L_BlendBone</identifier>
+														<transform>
+															<row0>-0.221303 -0.020408 -0.974992</row0>
+															<row1>-0.317386 0.946857 0.052221</row1>
+															<row2>-0.922112 -0.321006 0.216019</row2>
+															<row3>-0.286115 -0.120402 -0.064091</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>Hand_L_BlendBone</identifier>
+													<transform>
+														<row0>-0.138509 -0.173801 -0.974992</row0>
+														<row1>-0.902920 0.426625 0.052221</row1>
+														<row2>-0.406880 -0.887572 0.216020</row2>
+														<row3>-0.013137 -0.289800 -0.064091</row3>
+													</transform>
+												</node>
+											</node>
+											<node>
+												<identifier>Forearm_L_BlendBone</identifier>
+												<transform>
+													<row0>-0.063923 -0.212850 -0.974992</row0>
+													<row1>-0.996822 0.060164 0.052220</row1>
+													<row2>-0.047544 -0.975231 0.216019</row2>
+													<row3>0.385116 -0.273893 -0.064091</row3>
+												</transform>
+											</node>
+										</node>
+										<node>
+											<identifier>Arm_L_BlendBone</identifier>
+											<transform>
+												<row0>0.086966 -0.204519 -0.974992</row0>
+												<row1>-0.804845 -0.591183 0.052220</row1>
+												<row2>0.587078 -0.780176 0.216019</row2>
+												<row3>0.640621 0.035697 -0.064091</row3>
+											</transform>
+										</node>
+									</node>
+									<node>
+										<identifier>HindHand1_L</identifier>
+										<transform>
+											<row0>0.216830 -0.976209 -0.000000</row0>
+											<row1>0.976210 0.216829 -0.000000</row1>
+											<row2>0.000000 -0.000000 1.000000</row2>
+											<row3>0.207601 0.000000 0.000000</row3>
+										</transform>
+										<node>
+											<identifier>HindHand2_L</identifier>
+											<transform>
+												<row0>0.149712 0.988730 0.000000</row0>
+												<row1>-0.988730 0.149712 -0.000000</row1>
+												<row2>-0.000000 -0.000000 1.000000</row2>
+												<row3>0.265279 0.000000 0.000000</row3>
+											</transform>
+											<node>
+												<identifier>HindHand3_L</identifier>
+												<transform>
+													<row0>1.000000 0.000000 0.000001</row0>
+													<row1>0.000000 1.000000 0.000000</row1>
+													<row2>-0.000001 0.000000 1.000000</row2>
+													<row3>0.404461 0.000000 0.000000</row3>
+												</transform>
+												<node>
+													<identifier>HindHand3_L_BlendBone</identifier>
+													<transform>
+														<row0>-0.140686 -0.172044 -0.974992</row0>
+														<row1>-0.897479 0.437956 0.052221</row1>
+														<row2>-0.418019 -0.882381 0.216020</row2>
+														<row3>-0.114880 -0.288377 -0.064091</row3>
+													</transform>
+												</node>
+											</node>
+											<node>
+												<identifier>HindHand2_L_BlendBone</identifier>
+												<transform>
+													<row0>-0.140685 -0.172044 -0.974992</row0>
+													<row1>-0.897479 0.437956 0.052220</row1>
+													<row2>-0.418019 -0.882381 0.216019</row2>
+													<row3>0.289581 -0.288377 -0.064091</row3>
+												</transform>
+											</node>
+										</node>
+										<node>
+											<identifier>HindHand1_L_BlendBone</identifier>
+											<transform>
+												<row0>0.149043 -0.164856 -0.974992</row0>
+												<row1>-0.567383 -0.821797 0.052220</row1>
+												<row2>0.809853 -0.545411 0.216019</row2>
+												<row3>0.593760 0.243144 -0.064091</row3>
+											</transform>
+										</node>
+									</node>
+									<node>
+										<identifier>Shoulder_L_BlendBone</identifier>
+										<transform>
+											<row0>-0.128618 -0.181242 -0.974992</row0>
+											<row1>-0.925271 0.375695 0.052220</row1>
+											<row2>-0.356835 -0.908848 0.216019</row2>
+											<row3>0.573705 -0.526913 -0.064091</row3>
+										</transform>
+									</node>
+								</node>
+								<node>
+									<identifier>Shoulder_R</identifier>
+									<transform>
+										<row0>0.450475 0.883476 0.128618</row0>
+										<row1>-0.886548 0.425657 0.181242</row1>
+										<row2>0.105376 -0.195671 0.974992</row2>
+										<row3>0.014244 0.060699 -0.083767</row3>
+									</transform>
+									<node>
+										<identifier>Arm_R</identifier>
+										<transform>
+											<row0>0.524025 -0.851703 -0.000000</row0>
+											<row1>0.851703 0.524025 -0.000000</row1>
+											<row2>0.000000 -0.000000 1.000000</row2>
+											<row3>-0.207601 0.000000 0.000000</row3>
+										</transform>
+										<node>
+											<identifier>Forearm_R</identifier>
+											<transform>
+												<row0>0.768816 0.639470 -0.000000</row0>
+												<row1>-0.639470 0.768816 -0.000000</row1>
+												<row2>0.000000 0.000000 1.000000</row2>
+												<row3>-0.169392 -0.000000 -0.000000</row3>
+											</transform>
+											<node>
+												<identifier>Hand_R</identifier>
+												<transform>
+													<row0>0.928249 0.371960 0.000001</row0>
+													<row1>-0.371960 0.928249 -0.000000</row1>
+													<row2>-0.000001 -0.000000 1.000000</row2>
+													<row3>-0.289516 -0.000000 -0.000000</row3>
+												</transform>
+												<node>
+													<identifier>Fingers1_R</identifier>
+													<transform>
+														<row0>0.692416 0.721499 -0.000000</row0>
+														<row1>-0.721499 0.692416 0.000000</row1>
+														<row2>0.000000 0.000000 1.000000</row2>
+														<row3>-0.098104 0.000001 0.000000</row3>
+													</transform>
+													<node>
+														<identifier>Fingers2_R</identifier>
+														<transform>
+															<row0>1.000000 0.000000 0.000000</row0>
+															<row1>0.000000 1.000000 -0.000000</row1>
+															<row2>0.000000 0.000000 1.000000</row2>
+															<row3>-0.098635 0.000000 0.000000</row3>
+														</transform>
+														<node>
+															<identifier>Fingers2_R_BlendBone</identifier>
+															<transform>
+																<row0>-0.221303 -0.020408 -0.974992</row0>
+																<row1>0.317386 -0.946857 -0.052221</row1>
+																<row2>0.922112 0.321006 -0.216019</row2>
+																<row3>0.383051 0.121876 0.064003</row3>
+															</transform>
+														</node>
+													</node>
+													<node>
+														<identifier>Fingers1_R_BlendBone</identifier>
+														<transform>
+															<row0>-0.221303 -0.020408 -0.974992</row0>
+															<row1>0.317386 -0.946857 -0.052221</row1>
+															<row2>0.922112 0.321006 -0.216019</row2>
+															<row3>0.284416 0.121876 0.064003</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>Hand_R_BlendBone</identifier>
+													<transform>
+														<row0>-0.138509 -0.173801 -0.974992</row0>
+														<row1>0.902920 -0.426625 -0.052221</row1>
+														<row2>0.406880 0.887572 -0.216020</row2>
+														<row3>0.010897 0.289595 0.064003</row3>
+													</transform>
+												</node>
+											</node>
+											<node>
+												<identifier>Forearm_R_BlendBone</identifier>
+												<transform>
+													<row0>-0.063923 -0.212850 -0.974992</row0>
+													<row1>0.996822 -0.060164 -0.052220</row1>
+													<row2>0.047544 0.975231 -0.216019</row2>
+													<row3>-0.387119 0.272869 0.064003</row3>
+												</transform>
+											</node>
+										</node>
+										<node>
+											<identifier>Arm_R_BlendBone</identifier>
+											<transform>
+												<row0>0.086966 -0.204519 -0.974992</row0>
+												<row1>0.804845 0.591183 -0.052220</row1>
+												<row2>-0.587078 0.780176 -0.216019</row2>
+												<row3>-0.641507 -0.037765 0.064002</row3>
+											</transform>
+										</node>
+									</node>
+									<node>
+										<identifier>HindHand1_R</identifier>
+										<transform>
+											<row0>0.216830 -0.976209 -0.000000</row0>
+											<row1>0.976210 0.216829 -0.000000</row1>
+											<row2>0.000000 -0.000000 1.000000</row2>
+											<row3>-0.207601 0.000000 0.000000</row3>
+										</transform>
+										<node>
+											<identifier>HindHand2_R</identifier>
+											<transform>
+												<row0>0.149712 0.988730 0.000000</row0>
+												<row1>-0.988730 0.149712 -0.000000</row1>
+												<row2>-0.000000 -0.000000 1.000000</row2>
+												<row3>-0.265279 -0.000000 -0.000000</row3>
+											</transform>
+											<node>
+												<identifier>HindHand3_R</identifier>
+												<transform>
+													<row0>1.000000 0.000000 0.000000</row0>
+													<row1>0.000000 1.000000 0.000000</row1>
+													<row2>-0.000000 0.000000 1.000000</row2>
+													<row3>-0.404461 0.000000 -0.000000</row3>
+												</transform>
+												<node>
+													<identifier>HindHand3_R_BlendBone</identifier>
+													<transform>
+														<row0>-0.140685 -0.172044 -0.974992</row0>
+														<row1>0.897479 -0.437956 -0.052220</row1>
+														<row2>0.418019 0.882381 -0.216019</row2>
+														<row3>0.112637 0.288200 0.064003</row3>
+													</transform>
+												</node>
+											</node>
+											<node>
+												<identifier>HindHand2_R_BlendBone</identifier>
+												<transform>
+													<row0>-0.140685 -0.172044 -0.974992</row0>
+													<row1>0.897479 -0.437956 -0.052220</row1>
+													<row2>0.418019 0.882381 -0.216019</row2>
+													<row3>-0.291824 0.288200 0.064003</row3>
+												</transform>
+											</node>
+										</node>
+										<node>
+											<identifier>HindHand1_R_BlendBone</identifier>
+											<transform>
+												<row0>0.149043 -0.164856 -0.974992</row0>
+												<row1>0.567383 0.821797 -0.052220</row1>
+												<row2>-0.809853 0.545411 -0.216019</row2>
+												<row3>-0.593921 -0.245388 0.064002</row3>
+											</transform>
+										</node>
+									</node>
+									<node>
+										<identifier>Shoulder_R_BlendBone</identifier>
+										<transform>
+											<row0>-0.128618 -0.181242 -0.974992</row0>
+											<row1>0.925271 -0.375695 -0.052220</row1>
+											<row2>0.356835 0.908848 -0.216019</row2>
+											<row3>-0.575931 0.526584 0.064003</row3>
+										</transform>
+									</node>
+								</node>
+								<node>
+									<identifier>Chest_BlendBone</identifier>
+									<transform>
+										<row0>0.000000 0.000000 -1.000000</row0>
+										<row1>0.744381 0.667755 0.000000</row1>
+										<row2>-0.667755 0.744381 0.000000</row2>
+										<row3>-0.705296 -0.236501 0.000000</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>Spine3_BlendBone</identifier>
+								<transform>
+									<row0>0.000000 0.000000 -1.000000</row0>
+									<row1>0.032068 0.999486 0.000000</row1>
+									<row2>-0.999486 0.032068 0.000000</row2>
+									<row3>-0.149962 -0.673125 0.000000</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>Spine2_BlendBone</identifier>
+							<transform>
+								<row0>0.000000 0.000000 -1.000000</row0>
+								<row1>0.032068 0.999486 0.000000</row1>
+								<row2>-0.999486 0.032068 0.000000</row2>
+								<row3>0.016744 -0.673125 0.000000</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>Spine1_BlendBone</identifier>
+						<transform>
+							<row0>0.000000 0.000000 -1.000000</row0>
+							<row1>0.032068 0.999486 0.000000</row1>
+							<row2>-0.999486 0.032068 0.000000</row2>
+							<row3>0.183449 -0.673125 0.000000</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>Tail1</identifier>
+					<transform>
+						<row0>0.921434 0.388536 -0.000000</row0>
+						<row1>-0.388536 0.921434 -0.000000</row1>
+						<row2>-0.000000 0.000000 1.000000</row2>
+						<row3>-0.115073 -0.048522 0.000000</row3>
+					</transform>
+					<node>
+						<identifier>Tail2</identifier>
+						<transform>
+							<row0>0.978330 -0.207051 0.000000</row0>
+							<row1>0.207051 0.978330 0.000000</row1>
+							<row2>-0.000000 -0.000000 1.000000</row2>
+							<row3>-0.177348 0.037533 0.000000</row3>
+						</transform>
+						<node>
+							<identifier>Tail3</identifier>
+							<transform>
+								<row0>0.986856 -0.161603 0.000000</row0>
+								<row1>0.161603 0.986856 0.000000</row1>
+								<row2>0.000000 -0.000000 1.000000</row2>
+								<row3>-0.146141 0.023931 0.000000</row3>
+							</transform>
+							<node>
+								<identifier>Tail4</identifier>
+								<transform>
+									<row0>0.974367 -0.224965 0.000000</row0>
+									<row1>0.224965 0.974367 0.000000</row1>
+									<row2>0.000000 0.000000 1.000000</row2>
+									<row3>-0.124035 0.028638 -0.000000</row3>
+								</transform>
+								<node>
+									<identifier>Tail5</identifier>
+									<transform>
+										<row0>1.000000 0.000000 0.000000</row0>
+										<row1>0.000000 1.000000 0.000000</row1>
+										<row2>0.000000 0.000000 1.000000</row2>
+										<row3>-0.131877 0.020022 0.000000</row3>
+									</transform>
+									<node>
+										<identifier>Tail5_BlendBone</identifier>
+										<transform>
+											<row0>-0.000000 0.000000 -1.000000</row0>
+											<row1>-0.165897 0.986143 0.000000</row1>
+											<row2>-0.986143 -0.165897 0.000000</row2>
+											<row3>1.150573 -0.438375 -0.000000</row3>
+										</transform>
+									</node>
+								</node>
+								<node>
+									<identifier>Tail4_BlendBone</identifier>
+									<transform>
+										<row0>-0.000000 0.000000 -1.000000</row0>
+										<row1>-0.165897 0.986143 0.000000</row1>
+										<row2>-0.986143 -0.165897 0.000000</row2>
+										<row3>1.018696 -0.418353 -0.000000</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>Tail3_BlendBone</identifier>
+								<transform>
+									<row0>-0.000000 0.000000 -1.000000</row0>
+									<row1>0.060204 0.998186 0.000000</row1>
+									<row2>-0.998186 0.060204 0.000000</row2>
+									<row3>0.774433 -0.608162 -0.000000</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>Tail2_BlendBone</identifier>
+							<transform>
+								<row0>-0.000000 0.000000 -1.000000</row0>
+								<row1>0.220723 0.975337 0.000000</row1>
+								<row2>-0.975337 0.220723 0.000000</row2>
+								<row3>0.519831 -0.701388 -0.000000</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>Tail1_BlendBone</identifier>
+						<transform>
+							<row0>0.000000 0.000000 -1.000000</row0>
+							<row1>0.417884 0.908500 0.000000</row1>
+							<row2>-0.908500 0.417884 0.000000</row2>
+							<row3>0.185996 -0.756287 -0.000000</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>Hips_BlendBone</identifier>
+					<transform>
+						<row0>0.000000 0.000000 -1.000000</row0>
+						<row1>0.032068 0.999486 0.000000</row1>
+						<row2>-0.999486 0.032068 0.000000</row2>
+						<row3>0.350154 -0.673125 0.000000</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>Root_BlendBone</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 -1.000000</row2>
+					<row3>-0.000000 0.000000 0.000000</row3>
+				</transform>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>Tongue3Joint_M_BlendBone</node>
+		<node>Tongue2Joint_M_BlendBone</node>
+		<node>Tongue1Joint_M_BlendBone</node>
+		<node>Tongue0Joint_M_BlendBone</node>
+		<geometry>
+			<vertices>tongueShape.vertices</vertices>
+			<primitive>tongueShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>Eyes_skinned</identifier>
+					<fx>shaders/std_effects/PBS_ext_skinned.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>110</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/Characters/h38_newyear_2025/NY25_Huskey_01/NY25_Huskey_01_AM.dds</Texture>
+					</property>
+					<property>
+						dynamicObject
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/Characters/h38_newyear_2025/NY25_Huskey_01/NY25_Huskey_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/Characters/h38_newyear_2025/NY25_Huskey_01/NY25_Huskey_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.000000 0.778778 -0.605588</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>upperTeethJoint_M_BlendBone</node>
+		<geometry>
+			<vertices>jaw_upperShape.vertices</vertices>
+			<primitive>jaw_upperShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>Eyes_skinned</identifier>
+					<fx>shaders/std_effects/PBS_ext_skinned.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>110</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/Characters/h38_newyear_2025/NY25_Huskey_01/NY25_Huskey_01_AM.dds</Texture>
+					</property>
+					<property>
+						dynamicObject
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/Characters/h38_newyear_2025/NY25_Huskey_01/NY25_Huskey_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/Characters/h38_newyear_2025/NY25_Huskey_01/NY25_Huskey_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.000000 0.824246 -0.619442</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>lowerTeethJoint_M_BlendBone</node>
+		<geometry>
+			<vertices>jaw_bottomShape.vertices</vertices>
+			<primitive>jaw_bottomShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>Eyes_skinned</identifier>
+					<fx>shaders/std_effects/PBS_ext_skinned.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>110</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/Characters/h38_newyear_2025/NY25_Huskey_01/NY25_Huskey_01_AM.dds</Texture>
+					</property>
+					<property>
+						dynamicObject
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/Characters/h38_newyear_2025/NY25_Huskey_01/NY25_Huskey_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/Characters/h38_newyear_2025/NY25_Huskey_01/NY25_Huskey_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.000000 0.791694 -0.612527</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>lowerLidMain7_R_BlendBone</node>
+		<geometry>
+			<vertices>eye_lShape.vertices</vertices>
+			<primitive>eye_lShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>Eyes_skinned</identifier>
+					<fx>shaders/std_effects/PBS_ext_skinned.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>110</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/Characters/h38_newyear_2025/NY25_Huskey_01/NY25_Huskey_01_AM.dds</Texture>
+					</property>
+					<property>
+						dynamicObject
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/Characters/h38_newyear_2025/NY25_Huskey_01/NY25_Huskey_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/Characters/h38_newyear_2025/NY25_Huskey_01/NY25_Huskey_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.042312 0.911873 -0.583779</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>EyeJoint_L_BlendBone</node>
+		<geometry>
+			<vertices>eye_rShape.vertices</vertices>
+			<primitive>eye_rShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>Eyes_skinned</identifier>
+					<fx>shaders/std_effects/PBS_ext_skinned.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>110</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/Characters/h38_newyear_2025/NY25_Huskey_01/NY25_Huskey_01_AM.dds</Texture>
+					</property>
+					<property>
+						dynamicObject
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/Characters/h38_newyear_2025/NY25_Huskey_01/NY25_Huskey_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/Characters/h38_newyear_2025/NY25_Huskey_01/NY25_Huskey_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.042312 0.911873 -0.583779</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>NoseCornerJoint_R_BlendBone</node>
+		<node>upperLipJoint3_R_BlendBone</node>
+		<node>upperLipJoint4_R_BlendBone</node>
+		<node>upperLipJoint5_R_BlendBone</node>
+		<node>SmileBulgeJoint_R_BlendBone</node>
+		<node>upperLipJoint2_R_BlendBone</node>
+		<node>upperLipJoint1_R_BlendBone</node>
+		<node>upperLipJoint6_R_BlendBone</node>
+		<node>upperLipJoint7_R_BlendBone</node>
+		<node>upperLipJoint8_R_BlendBone</node>
+		<node>NoseSideJoint_R_BlendBone</node>
+		<node>upperLipJoint9_R_BlendBone</node>
+		<node>cornerLipJoint_R_BlendBone</node>
+		<node>NoseUnderJoint_M_BlendBone</node>
+		<node>NostrilJoint_R_BlendBone</node>
+		<node>upperLipJoint0_M_BlendBone</node>
+		<node>upperLipJoint1_L_BlendBone</node>
+		<node>lowerLipJoint14_R_BlendBone</node>
+		<node>lowerLipJoint8_R_BlendBone</node>
+		<node>upperLipJoint5_L_BlendBone</node>
+		<node>upperLipJoint2_L_BlendBone</node>
+		<node>upperLipJoint4_L_BlendBone</node>
+		<node>upperLipJoint3_L_BlendBone</node>
+		<node>upperLipJoint7_L_BlendBone</node>
+		<node>upperLipJoint6_L_BlendBone</node>
+		<node>upperLipJoint8_L_BlendBone</node>
+		<node>lowerLipJoint8_L_BlendBone</node>
+		<node>upperLipJoint9_L_BlendBone</node>
+		<node>CheekBoneJoint_R_BlendBone</node>
+		<node>lowerLidOuter5_R_BlendBone</node>
+		<geometry>
+			<vertices>bodyShape_split_3.vertices</vertices>
+			<primitive>bodyShape_split_3.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>Fur_skinned</identifier>
+					<fx>shaders/std_effects/fur_skinned.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>110</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/Characters/h38_newyear_2025/NY25_Huskey_01/NY25_Huskey_01_AM.dds</Texture>
+					</property>
+					<property>
+						furDisplacementAmplitude
+						<Texture>content/Hangars/Characters/h38_newyear_2025/NY25_Huskey_01/NY25_Huskey_01_fur_disp.dds</Texture>
+					</property>
+					<property>
+						furMap
+						<Texture>content/Hangars/Characters/h38_newyear_2025/NY25_Huskey_01/Animal_fur.dds</Texture>
+					</property>
+					<property>
+						g_furParams
+						<Vector4>2.100000 0.200000 0.830000 0.540000</Vector4>
+					</property>
+					<property>
+						g_furParams2
+						<Vector4>28.469999 0.470000 0.200000 0.140000</Vector4>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/Characters/h38_newyear_2025/NY25_Huskey_01/NY25_Huskey_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/Characters/h38_newyear_2025/NY25_Huskey_01/NY25_Huskey_01_ANM.dds</Texture>
+					</property>
+					<property>
+						g_rootColor
+						<Vector4>0.521569 0.521569 0.521569 1.000000</Vector4>
+					</property>
+					<property>
+						g_tipColor
+						<Vector4>0.427451 0.427451 0.427451 1.000000</Vector4>
+					</property>
+				</material>
+				<groupOrigin>0.011472 0.842654 -0.620335</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>upperLidOuter8_R_BlendBone</node>
+		<node>lowerLidOuter9_R_BlendBone</node>
+		<node>CheekBoneJoint_R_BlendBone</node>
+		<node>EyeBrowOuterJoint_R_BlendBone</node>
+		<node>Head_M_BlendBone</node>
+		<node>upperLidOuter6_R_BlendBone</node>
+		<node>upperLidOuter7_R_BlendBone</node>
+		<node>upperLidOuter4_R_BlendBone</node>
+		<node>EyeBrowInnerJoint_R_BlendBone</node>
+		<node>upperLidOuter5_R_BlendBone</node>
+		<node>upperLidOuter2_R_BlendBone</node>
+		<node>EyeBrowCenterJoint_M_BlendBone</node>
+		<node>upperLidOuter1_R_BlendBone</node>
+		<node>upperLidOuter3_R_BlendBone</node>
+		<node>upperLidOuter0_R_BlendBone</node>
+		<node>upperLidMain3_R_BlendBone</node>
+		<node>upperLidMain2_R_BlendBone</node>
+		<node>upperLidMain1_R_BlendBone</node>
+		<node>upperLidMain4_R_BlendBone</node>
+		<node>upperLidMain5_R_BlendBone</node>
+		<node>upperLidMain6_R_BlendBone</node>
+		<node>upperLidMain7_R_BlendBone</node>
+		<node>upperLidMain8_R_BlendBone</node>
+		<node>upperLidMain9_R_BlendBone</node>
+		<node>lowerLidOuter7_R_BlendBone</node>
+		<node>lowerLidOuter8_R_BlendBone</node>
+		<node>lowerLidMain6_R_BlendBone</node>
+		<node>lowerLidMain7_R_BlendBone</node>
+		<node>lowerLidMain5_R_BlendBone</node>
+		<node>lowerLidOuter6_R_BlendBone</node>
+		<node>lowerLidOuter5_R_BlendBone</node>
+		<node>lowerLidMain5_L_BlendBone</node>
+		<node>lowerLidMain6_L_BlendBone</node>
+		<node>lowerLidMain4_L_BlendBone</node>
+		<node>lowerLidMain3_L_BlendBone</node>
+		<node>upperLidMain9_L_BlendBone</node>
+		<node>lowerLidMain7_L_BlendBone</node>
+		<node>upperLidOuter6_L_BlendBone</node>
+		<node>lowerLidOuter5_L_BlendBone</node>
+		<node>lowerLidOuter3_L_BlendBone</node>
+		<node>lowerLidOuter4_L_BlendBone</node>
+		<node>lowerLidOuter6_L_BlendBone</node>
+		<node>lowerLidOuter7_L_BlendBone</node>
+		<node>NoseSideJoint_L_BlendBone</node>
+		<node>CheekBoneJoint_L_BlendBone</node>
+		<node>upperLidMain8_L_BlendBone</node>
+		<node>upperLidOuter8_L_BlendBone</node>
+		<node>upperLidMain7_L_BlendBone</node>
+		<node>upperLidOuter7_L_BlendBone</node>
+		<node>upperLidMain6_L_BlendBone</node>
+		<node>upperLidOuter5_L_BlendBone</node>
+		<node>EyeBrowOuterJoint_L_BlendBone</node>
+		<node>EyeBrowInnerJoint_L_BlendBone</node>
+		<node>upperLidOuter4_L_BlendBone</node>
+		<node>upperLidOuter3_L_BlendBone</node>
+		<node>upperLidOuter2_L_BlendBone</node>
+		<node>upperLidMain5_L_BlendBone</node>
+		<node>upperLidMain4_L_BlendBone</node>
+		<node>upperLidMain3_L_BlendBone</node>
+		<node>upperLidMain2_L_BlendBone</node>
+		<node>upperLidMain1_L_BlendBone</node>
+		<node>lowerLidOuter9_L_BlendBone</node>
+		<node>SmileBulgeJoint_L_BlendBone</node>
+		<node>lowerLidOuter8_L_BlendBone</node>
+		<node>lowerLipJoint0_M_BlendBone</node>
+		<node>lowerLipJoint1_L_BlendBone</node>
+		<node>lowerLipJoint1_R_BlendBone</node>
+		<node>lowerLipJoint2_L_BlendBone</node>
+		<node>ChinCreaseJoint_M_BlendBone</node>
+		<node>lowerLipJoint3_L_BlendBone</node>
+		<node>lowerLipJoint3_R_BlendBone</node>
+		<node>lowerLipJoint2_R_BlendBone</node>
+		<node>lowerLipJoint4_R_BlendBone</node>
+		<node>lowerLipJoint5_R_BlendBone</node>
+		<node>FaceJoint_M_BlendBone</node>
+		<node>lowerLipJoint7_L_BlendBone</node>
+		<node>lowerLipJoint6_R_BlendBone</node>
+		<node>lowerLipJoint7_R_BlendBone</node>
+		<node>lowerLipJoint8_R_BlendBone</node>
+		<node>lowerLipJoint4_L_BlendBone</node>
+		<node>lowerLipJoint8_L_BlendBone</node>
+		<node>lowerLipJoint6_L_BlendBone</node>
+		<node>lowerLipJoint5_L_BlendBone</node>
+		<geometry>
+			<vertices>bodyShape_split_2.vertices</vertices>
+			<primitive>bodyShape_split_2.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>Fur_skinned</identifier>
+					<fx>shaders/std_effects/fur_skinned.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>110</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/Characters/h38_newyear_2025/NY25_Huskey_01/NY25_Huskey_01_AM.dds</Texture>
+					</property>
+					<property>
+						furDisplacementAmplitude
+						<Texture>content/Hangars/Characters/h38_newyear_2025/NY25_Huskey_01/NY25_Huskey_01_fur_disp.dds</Texture>
+					</property>
+					<property>
+						furMap
+						<Texture>content/Hangars/Characters/h38_newyear_2025/NY25_Huskey_01/Animal_fur.dds</Texture>
+					</property>
+					<property>
+						g_furParams
+						<Vector4>2.100000 0.200000 0.830000 0.540000</Vector4>
+					</property>
+					<property>
+						g_furParams2
+						<Vector4>28.469999 0.470000 0.200000 0.140000</Vector4>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/Characters/h38_newyear_2025/NY25_Huskey_01/NY25_Huskey_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/Characters/h38_newyear_2025/NY25_Huskey_01/NY25_Huskey_01_ANM.dds</Texture>
+					</property>
+					<property>
+						g_rootColor
+						<Vector4>0.521569 0.521569 0.521569 1.000000</Vector4>
+					</property>
+					<property>
+						g_tipColor
+						<Vector4>0.427451 0.427451 0.427451 1.000000</Vector4>
+					</property>
+				</material>
+				<groupOrigin>-0.003960 0.855945 -0.611990</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>lowerLidOuter6_R_BlendBone</node>
+		<node>lowerLidOuter5_R_BlendBone</node>
+		<node>lowerLidMain5_R_BlendBone</node>
+		<node>CheekBoneJoint_R_BlendBone</node>
+		<node>lowerLidOuter7_R_BlendBone</node>
+		<node>lowerLidOuter9_R_BlendBone</node>
+		<node>lowerLidOuter8_R_BlendBone</node>
+		<node>SmileBulgeJoint_R_BlendBone</node>
+		<node>Head_M_BlendBone</node>
+		<node>upperLidOuter8_R_BlendBone</node>
+		<node>EyeBrowOuterJoint_R_BlendBone</node>
+		<node>EyeBrowInnerJoint_R_BlendBone</node>
+		<node>Ear1_R_BlendBone</node>
+		<node>CheekJoint_R_BlendBone</node>
+		<node>Neck_BlendBone</node>
+		<node>FrownBulgeJoint_R_BlendBone</node>
+		<node>lowerLipJoint12_R_BlendBone</node>
+		<node>Ear2_R_BlendBone</node>
+		<node>Ear1_L_BlendBone</node>
+		<node>Chest_BlendBone</node>
+		<node>FrownBulgeJoint_L_BlendBone</node>
+		<node>FaceJoint_M_BlendBone</node>
+		<node>Shoulder_L_BlendBone</node>
+		<node>Shoulder_R_BlendBone</node>
+		<node>Spine3_BlendBone</node>
+		<node>Spine2_BlendBone</node>
+		<node>Arm_L_BlendBone</node>
+		<node>Spine1_BlendBone</node>
+		<node>Forearm_L_BlendBone</node>
+		<node>Arm_R_BlendBone</node>
+		<node>Hand_L_BlendBone</node>
+		<node>Fingers1_L_BlendBone</node>
+		<node>Forearm_R_BlendBone</node>
+		<node>Ear3_R_BlendBone</node>
+		<node>Hand_R_BlendBone</node>
+		<node>Fingers1_R_BlendBone</node>
+		<node>EyeBrowCenterJoint_M_BlendBone</node>
+		<node>Hips_BlendBone</node>
+		<node>Hip_L_BlendBone</node>
+		<node>Tail1_BlendBone</node>
+		<node>Hip_R_BlendBone</node>
+		<node>Tail2_BlendBone</node>
+		<node>Tail3_BlendBone</node>
+		<node>Tail4_BlendBone</node>
+		<node>Knee_L_BlendBone</node>
+		<node>Ankle_L_BlendBone</node>
+		<node>Ball_L_BlendBone</node>
+		<node>Knee_R_BlendBone</node>
+		<node>Ankle_R_BlendBone</node>
+		<node>Ball_R_BlendBone</node>
+		<node>lowerLipJoint14_R_BlendBone</node>
+		<node>cornerLipJoint_R_BlendBone</node>
+		<node>lowerLipJoint13_R_BlendBone</node>
+		<node>lowerLipJoint11_R_BlendBone</node>
+		<node>lowerLipJoint10_R_BlendBone</node>
+		<node>lowerLipJoint9_R_BlendBone</node>
+		<node>lowerLipJoint8_R_BlendBone</node>
+		<node>lowerLipJoint7_R_BlendBone</node>
+		<node>lowerLipJoint8_L_BlendBone</node>
+		<node>upperLipJoint9_R_BlendBone</node>
+		<node>lowerLipJoint6_R_BlendBone</node>
+		<node>lowerLipJoint5_R_BlendBone</node>
+		<node>upperLipJoint8_R_BlendBone</node>
+		<node>lowerLipJoint7_L_BlendBone</node>
+		<node>lowerLipJoint9_L_BlendBone</node>
+		<node>lowerLipJoint11_L_BlendBone</node>
+		<node>lowerLipJoint10_L_BlendBone</node>
+		<node>lowerLipJoint12_L_BlendBone</node>
+		<node>lowerLipJoint14_L_BlendBone</node>
+		<node>SmileBulgeJoint_L_BlendBone</node>
+		<node>lowerLipJoint13_L_BlendBone</node>
+		<node>cornerLipJoint_L_BlendBone</node>
+		<node>upperLipJoint8_L_BlendBone</node>
+		<node>upperLipJoint7_L_BlendBone</node>
+		<node>upperLipJoint7_R_BlendBone</node>
+		<node>upperLipJoint9_L_BlendBone</node>
+		<node>lowerLipJoint6_L_BlendBone</node>
+		<node>lowerLipJoint5_L_BlendBone</node>
+		<node>lowerLipJoint4_L_BlendBone</node>
+		<node>ChinCreaseJoint_M_BlendBone</node>
+		<node>lowerLipJoint3_L_BlendBone</node>
+		<node>lowerLipJoint3_R_BlendBone</node>
+		<node>lowerLipJoint2_L_BlendBone</node>
+		<node>lowerLipJoint1_L_BlendBone</node>
+		<node>lowerLipJoint0_M_BlendBone</node>
+		<geometry>
+			<vertices>bodyShape_split_1.vertices</vertices>
+			<primitive>bodyShape_split_1.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>Fur_skinned</identifier>
+					<fx>shaders/std_effects/fur_skinned.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>110</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/Characters/h38_newyear_2025/NY25_Huskey_01/NY25_Huskey_01_AM.dds</Texture>
+					</property>
+					<property>
+						furDisplacementAmplitude
+						<Texture>content/Hangars/Characters/h38_newyear_2025/NY25_Huskey_01/NY25_Huskey_01_fur_disp.dds</Texture>
+					</property>
+					<property>
+						furMap
+						<Texture>content/Hangars/Characters/h38_newyear_2025/NY25_Huskey_01/Animal_fur.dds</Texture>
+					</property>
+					<property>
+						g_furParams
+						<Vector4>2.100000 0.200000 0.830000 0.540000</Vector4>
+					</property>
+					<property>
+						g_furParams2
+						<Vector4>28.469999 0.470000 0.200000 0.140000</Vector4>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/Characters/h38_newyear_2025/NY25_Huskey_01/NY25_Huskey_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/Characters/h38_newyear_2025/NY25_Huskey_01/NY25_Huskey_01_ANM.dds</Texture>
+					</property>
+					<property>
+						g_rootColor
+						<Vector4>0.521569 0.521569 0.521569 1.000000</Vector4>
+					</property>
+					<property>
+						g_tipColor
+						<Vector4>0.427451 0.427451 0.427451 1.000000</Vector4>
+					</property>
+				</material>
+				<groupOrigin>0.000000 0.534137 0.188853</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>lowerLidOuter3_R_BlendBone</node>
+		<node>lowerLidOuter5_R_BlendBone</node>
+		<node>lowerLidOuter4_R_BlendBone</node>
+		<node>NoseSideJoint_R_BlendBone</node>
+		<node>lowerLidOuter6_R_BlendBone</node>
+		<node>CheekBoneJoint_R_BlendBone</node>
+		<node>SmileBulgeJoint_R_BlendBone</node>
+		<node>lowerLidMain5_R_BlendBone</node>
+		<node>lowerLidMain4_R_BlendBone</node>
+		<node>lowerLidMain3_R_BlendBone</node>
+		<node>Head_M_BlendBone</node>
+		<node>upperLidOuter6_R_BlendBone</node>
+		<node>lowerLidMain6_R_BlendBone</node>
+		<node>lowerLidMain7_R_BlendBone</node>
+		<node>upperLidOuter7_R_BlendBone</node>
+		<node>upperLidMain9_R_BlendBone</node>
+		<node>upperLidMain8_R_BlendBone</node>
+		<node>upperLidMain7_R_BlendBone</node>
+		<node>lowerLidMain2_R_BlendBone</node>
+		<node>lowerLidMain1_R_BlendBone</node>
+		<node>lowerLidOuter2_R_BlendBone</node>
+		<node>upperLidMain0_R_BlendBone</node>
+		<node>lowerLidOuter1_R_BlendBone</node>
+		<node>upperLidMain1_R_BlendBone</node>
+		<node>upperLidOuter0_R_BlendBone</node>
+		<node>NoseBridgeJoint_M_BlendBone</node>
+		<node>NoseCornerJoint_R_BlendBone</node>
+		<node>NoseJoint_M_BlendBone</node>
+		<node>NostrilJoint_R_BlendBone</node>
+		<node>NoseSideJoint_L_BlendBone</node>
+		<node>upperLidOuter0_L_BlendBone</node>
+		<node>NoseCreaseJoint_M_BlendBone</node>
+		<node>lowerLidOuter1_L_BlendBone</node>
+		<node>EyeBrowCenterJoint_M_BlendBone</node>
+		<node>upperLidOuter1_L_BlendBone</node>
+		<node>upperLidOuter1_R_BlendBone</node>
+		<node>upperLidMain2_R_BlendBone</node>
+		<node>upperLidMain3_R_BlendBone</node>
+		<node>upperLidMain4_R_BlendBone</node>
+		<node>upperLidOuter2_R_BlendBone</node>
+		<node>EyeBrowInnerJoint_R_BlendBone</node>
+		<node>EyeBrowInnerJoint_L_BlendBone</node>
+		<node>upperLidOuter4_L_BlendBone</node>
+		<node>EyeBrowOuterJoint_L_BlendBone</node>
+		<node>Ear1_L_BlendBone</node>
+		<node>Ear2_L_BlendBone</node>
+		<node>Ear3_L_BlendBone</node>
+		<node>CheekBoneJoint_L_BlendBone</node>
+		<node>Ear1_R_BlendBone</node>
+		<node>Neck_BlendBone</node>
+		<node>FrownBulgeJoint_L_BlendBone</node>
+		<node>SmileBulgeJoint_L_BlendBone</node>
+		<node>CheekJoint_L_BlendBone</node>
+		<node>lowerLipJoint12_L_BlendBone</node>
+		<node>lowerLipJoint14_L_BlendBone</node>
+		<node>cornerLipJoint_L_BlendBone</node>
+		<node>lowerLidOuter5_L_BlendBone</node>
+		<node>NoseCornerJoint_L_BlendBone</node>
+		<node>NostrilJoint_L_BlendBone</node>
+		<node>NoseUnderJoint_M_BlendBone</node>
+		<node>upperLipJoint7_L_BlendBone</node>
+		<node>upperLipJoint4_L_BlendBone</node>
+		<node>lowerLidOuter3_L_BlendBone</node>
+		<node>lowerLidOuter2_L_BlendBone</node>
+		<node>upperLidMain1_L_BlendBone</node>
+		<node>lowerLidMain2_L_BlendBone</node>
+		<node>lowerLidMain3_L_BlendBone</node>
+		<node>lowerLidMain4_L_BlendBone</node>
+		<node>upperLidOuter6_L_BlendBone</node>
+		<node>upperLidMain2_L_BlendBone</node>
+		<node>upperLidMain3_L_BlendBone</node>
+		<node>upperLipJoint3_L_BlendBone</node>
+		<node>upperLipJoint5_L_BlendBone</node>
+		<node>upperLipJoint6_L_BlendBone</node>
+		<node>upperLipJoint8_L_BlendBone</node>
+		<node>upperLipJoint2_L_BlendBone</node>
+		<node>upperLipJoint9_L_BlendBone</node>
+		<node>lowerLipJoint13_L_BlendBone</node>
+		<node>upperLidOuter2_L_BlendBone</node>
+		<node>lowerLidOuter7_L_BlendBone</node>
+		<node>upperLipJoint0_M_BlendBone</node>
+		<node>upperLipJoint1_L_BlendBone</node>
+		<node>upperLipJoint1_R_BlendBone</node>
+		<node>lowerLidOuter4_L_BlendBone</node>
+		<node>lowerLidMain5_L_BlendBone</node>
+		<geometry>
+			<vertices>bodyShape_split_0.vertices</vertices>
+			<primitive>bodyShape_split_0.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>Fur_skinned</identifier>
+					<fx>shaders/std_effects/fur_skinned.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>110</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/Characters/h38_newyear_2025/NY25_Huskey_01/NY25_Huskey_01_AM.dds</Texture>
+					</property>
+					<property>
+						furDisplacementAmplitude
+						<Texture>content/Hangars/Characters/h38_newyear_2025/NY25_Huskey_01/NY25_Huskey_01_fur_disp.dds</Texture>
+					</property>
+					<property>
+						furMap
+						<Texture>content/Hangars/Characters/h38_newyear_2025/NY25_Huskey_01/Animal_fur.dds</Texture>
+					</property>
+					<property>
+						g_furParams
+						<Vector4>2.100000 0.200000 0.830000 0.540000</Vector4>
+					</property>
+					<property>
+						g_furParams2
+						<Vector4>28.469999 0.470000 0.200000 0.140000</Vector4>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/Characters/h38_newyear_2025/NY25_Huskey_01/NY25_Huskey_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/Characters/h38_newyear_2025/NY25_Huskey_01/NY25_Huskey_01_ANM.dds</Texture>
+					</property>
+					<property>
+						g_rootColor
+						<Vector4>0.521569 0.521569 0.521569 1.000000</Vector4>
+					</property>
+					<property>
+						g_tipColor
+						<Vector4>0.427451 0.427451 0.427451 1.000000</Vector4>
+					</property>
+				</material>
+				<groupOrigin>-0.000433 0.900611 -0.538295</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>Knee_R_BlendBone</node>
+		<node>Hip_R_BlendBone</node>
+		<node>Hips_BlendBone</node>
+		<node>Ankle_R_BlendBone</node>
+		<node>Spine1_BlendBone</node>
+		<node>Ball_R_BlendBone</node>
+		<node>Knee_L_BlendBone</node>
+		<node>Hip_L_BlendBone</node>
+		<node>Ankle_L_BlendBone</node>
+		<node>Ball_L_BlendBone</node>
+		<node>Tail1_BlendBone</node>
+		<node>Tail2_BlendBone</node>
+		<node>Tail3_BlendBone</node>
+		<node>Spine2_BlendBone</node>
+		<node>Spine3_BlendBone</node>
+		<node>Tail4_BlendBone</node>
+		<node>Forearm_R_BlendBone</node>
+		<node>Arm_R_BlendBone</node>
+		<node>Forearm_L_BlendBone</node>
+		<node>Arm_L_BlendBone</node>
+		<node>Chest_BlendBone</node>
+		<node>Shoulder_R_BlendBone</node>
+		<node>Hand_R_BlendBone</node>
+		<node>Shoulder_L_BlendBone</node>
+		<node>Ear1_L_BlendBone</node>
+		<node>Head_M_BlendBone</node>
+		<node>Ear2_L_BlendBone</node>
+		<node>Neck_BlendBone</node>
+		<node>FrownBulgeJoint_R_BlendBone</node>
+		<node>Ear1_R_BlendBone</node>
+		<node>FaceJoint_M_BlendBone</node>
+		<node>Hand_L_BlendBone</node>
+		<node>CheekJoint_R_BlendBone</node>
+		<node>Ear2_R_BlendBone</node>
+		<node>Ear3_L_BlendBone</node>
+		<node>Fingers1_R_BlendBone</node>
+		<node>Fingers1_L_BlendBone</node>
+		<node>FrownBulgeJoint_L_BlendBone</node>
+		<node>EyeBrowOuterJoint_L_BlendBone</node>
+		<node>EyeBrowOuterJoint_R_BlendBone</node>
+		<node>SmileBulgeJoint_L_BlendBone</node>
+		<node>EyeLidJoints_M_BlendBone</node>
+		<node>SmileBulgeJoint_R_BlendBone</node>
+		<node>Ear3_R_BlendBone</node>
+		<node>CheekJoint_L_BlendBone</node>
+		<geometry>
+			<vertices>furShape.vertices</vertices>
+			<primitive>furShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>Fur_skinned</identifier>
+					<fx>shaders/std_effects/fur_skinned.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>110</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/Characters/h38_newyear_2025/NY25_Huskey_01/NY25_Huskey_01_AM.dds</Texture>
+					</property>
+					<property>
+						furDisplacementAmplitude
+						<Texture>content/Hangars/Characters/h38_newyear_2025/NY25_Huskey_01/NY25_Huskey_01_fur_disp.dds</Texture>
+					</property>
+					<property>
+						furMap
+						<Texture>content/Hangars/Characters/h38_newyear_2025/NY25_Huskey_01/Animal_fur.dds</Texture>
+					</property>
+					<property>
+						g_furParams
+						<Vector4>2.100000 0.200000 0.830000 0.540000</Vector4>
+					</property>
+					<property>
+						g_furParams2
+						<Vector4>28.469999 0.470000 0.200000 0.140000</Vector4>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/Characters/h38_newyear_2025/NY25_Huskey_01/NY25_Huskey_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/Characters/h38_newyear_2025/NY25_Huskey_01/NY25_Huskey_01_ANM.dds</Texture>
+					</property>
+					<property>
+						g_rootColor
+						<Vector4>0.521569 0.521569 0.521569 1.000000</Vector4>
+					</property>
+					<property>
+						g_tipColor
+						<Vector4>0.427451 0.427451 0.427451 1.000000</Vector4>
+					</property>
+				</material>
+				<groupOrigin>0.000000 0.523710 0.261251</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>-0.186925 -0.010133 -1.059935</min>
+		<max>0.186925 1.078407 0.723903</max>
+	</boundingBox>
+	<geometrySize>591042</geometrySize>
+</root>

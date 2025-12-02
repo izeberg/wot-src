@@ -1,0 +1,74 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-01 10:00+0300\n"
+"PO-Revision-Date: 2022-05-01 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "grinchBattle/chased_by_missile/indicator"
+msgstr "导弹来袭！"
+
+msgid "grinchBattle/dart_stun_mark/indicator"
+msgstr "粘滞弹损伤"
+
+msgid "grinchBattle/death_zone/indicator"
+msgstr "您被冻住了！"
+
+msgid "grinchBattle/flare_mark/indicator"
+msgstr "您已被标记"
+
+msgid "grinchBattle/healing_interrupted/indicator"
+msgstr "不可用"
+
+msgid "grinchBattle/missile/locked_on"
+msgstr "已锁定"
+
+msgid "grinchBattle/missile/targeting"
+msgstr "正在寻找目标"
+
+msgid "grinchBattle/quit/leaver/cancel"
+msgstr "取消"
+
+msgid "grinchBattle/quit/leaver/descriptionAlive"
+msgstr "您的团队仍然需要您！中途离场会让盟友处于不利地位，而且您将无法获得任何奖励或推动任何任务进度。"
+
+msgid "grinchBattle/quit/leaver/submit"
+msgstr "离开"
+
+msgid "grinchBattle/quit/leaver/title"
+msgstr "您将离开棋盘"
+
+msgid "grinchBattle/warning_zone/indicator"
+msgstr "立刻离开危险区域！"
+
+msgid "player_errors/equipment/grinchRepairkit/allDevicesAreNotDamaged"
+msgstr "不需要维修: 所有装备完好无损。"
+
+msgid "postmortem_messages/DEATH_FROM_ABILITIES"
+msgstr "坦克被该玩家的能力击毁"
+
+msgid "postmortem_messages/DEATH_FROM_BIG_TURRET"
+msgstr "坦克被炮台击毁"
+
+msgid "postmortem_messages/DEATH_FROM_DART"
+msgstr "坦克被粘滞弹摧毁"
+
+msgid "postmortem_messages/DEATH_FROM_MISSILE"
+msgstr "坦克被导弹击毁"
+
+msgid "postmortem_messages/DEATH_FROM_RAGE"
+msgstr "坦克被摧毁"
+
+msgid "postmortem_messages/DEATH_FROM_SNOWSTORM"
+msgstr "坦克被暴风雪摧毁"
+
+msgid "postmortem_messages/DEATH_FROM_SONAR"
+msgstr "坦克被脉冲扫描摧毁"
+
+msgid "postmortem_messages/DEATH_FROM_TURRET"
+msgstr "坦克被炮塔击毁"

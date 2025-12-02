@@ -26,7 +26,6 @@ from gui.Scaleform.locale.VEHICLE_CUSTOMIZATION import VEHICLE_CUSTOMIZATION
 from gui.SystemMessages import SM_TYPE, CURRENCY_TO_SM_TYPE
 from gui.customization.constants import CustomizationModes
 from gui.customization.shared import chooseMode, appliedToFromSlotsIds, C11nId, SEASON_IDX_TO_TYPE, SEASON_TYPE_TO_NAME, SEASON_TYPE_TO_IDX, SEASONS_ORDER, getTotalPurchaseInfo, containsVehicleBound, C11N_ITEM_TYPE_MAP
-from gui.hangar_cameras.hangar_camera_common import CameraRelatedEvents
 from gui.impl import backport
 from gui.impl.dialogs import dialogs
 from gui.impl.dialogs.builders import ResSimpleDialogBuilder
@@ -763,6 +762,7 @@ class MainView(LobbySubView, CustomizationMainViewMeta, LobbyHeaderVisibility):
         self.__ctx.events.onHideStyleInfo += self.__onHideStyleInfo
         self.__ctx.events.onEditModeEnabled += self.__onEditModeEnabled
         self.__ctx.events.onGetItemBackToHand += self.__onGetItemBackToHand
+        self.__ctx.events.onCloseWindow += self.onCloseWindow
         self.__ctx.events.onSlotSelected += self.__onSlotSelected
         self.__ctx.events.onSlotUnselected += self.__onSlotUnselected
         self.__ctx.events.onAnchorsStateChanged += self.__onAnchorsStateChanged
@@ -782,7 +782,6 @@ class MainView(LobbySubView, CustomizationMainViewMeta, LobbyHeaderVisibility):
         self.__setSeasonData()
         self.__ctx.refreshOutfit()
         self.as_selectSeasonS(SEASON_TYPE_TO_IDX[self.__ctx.season])
-        self.fireEvent(CameraRelatedEvents(CameraRelatedEvents.FORCE_DISABLE_IDLE_PARALAX_MOVEMENT, ctx={'isDisable': True, 'setIdle': True, 'setParallax': True}), scope=EVENT_BUS_SCOPE.LOBBY)
         self.suspendLobbyHeader(self.key, HeaderMenuVisibilityState.ONLINE_COUNTER)
         self.__setEnvironment()
         if self.__ctx.vehicleAnchorsUpdater is not None:
@@ -835,7 +834,6 @@ class MainView(LobbySubView, CustomizationMainViewMeta, LobbyHeaderVisibility):
             entity.appearance.turretRotator.onTurretRotated -= self.__onTurretAndGunRotated
         self.__onVehicleLoadFinishedEvent = None
         self.resumeLobbyHeader(self.key)
-        self.fireEvent(CameraRelatedEvents(CameraRelatedEvents.FORCE_DISABLE_IDLE_PARALAX_MOVEMENT, ctx={'isDisable': False, 'setIdle': True, 'setParallax': True}), scope=EVENT_BUS_SCOPE.LOBBY)
         if self.__styleInfo is not None:
             self.__styleInfo.disableBlur()
             self.__disableStyleInfoSound()
@@ -878,6 +876,7 @@ class MainView(LobbySubView, CustomizationMainViewMeta, LobbyHeaderVisibility):
         self.__ctx.events.onHideStyleInfo -= self.__onHideStyleInfo
         self.__ctx.events.onEditModeEnabled -= self.__onEditModeEnabled
         self.__ctx.events.onGetItemBackToHand -= self.__onGetItemBackToHand
+        self.__ctx.events.onCloseWindow -= self.onCloseWindow
         self.__ctx.events.onSlotSelected -= self.__onSlotSelected
         self.__ctx.events.onSlotUnselected -= self.__onSlotUnselected
         self.__ctx.events.onAnchorsStateChanged -= self.__onAnchorsStateChanged
@@ -887,8 +886,6 @@ class MainView(LobbySubView, CustomizationMainViewMeta, LobbyHeaderVisibility):
         if self.__initAnchorsPositionsCallback is not None:
             BigWorld.cancelCallback(self.__initAnchorsPositionsCallback)
             self.__initAnchorsPositionsCallback = None
-        if self.__itemsGrabMode:
-            self.__finishGrabMode()
         super(MainView, self)._dispose()
         self.__ctx = None
         return

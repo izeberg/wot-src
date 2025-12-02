@@ -216,6 +216,8 @@ package net.wg.data.constants.generated
       public static const TARGET_DESIGNATOR_UNSPOTTED_MARKER:String = "targetDesignatorUnspottedMarker";
       
       public static const VEHICLE_MECHANICS_PANELS:Array = [WIDGETS_PANEL,DECORATIVE_CROSSHAIR_PANEL];
+      
+      public static const GRINCH_HUD:String = "grinchHud";
        
       
       public function BATTLE_VIEW_ALIASES()

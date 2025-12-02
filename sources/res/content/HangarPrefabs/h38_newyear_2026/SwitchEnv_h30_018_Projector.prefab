@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<version>4</version>
+	<GameObjects>
+		<GameObject>
+			<name>SwitchEnv_h30_018_Projector</name>
+			<UUID>5f798bfb-8e54-475a-a7cf-e4698c58ed2e</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>Night</name>
+			<UUID>631809c9-614e-4405-893e-6e3be0fd12ca</UUID>
+			<flags>8</flags>
+		</GameObject>
+		<GameObject>
+			<name>volume_lights_big</name>
+			<UUID>a6d45e85-d842-4062-b2f8-d609731bd927</UUID>
+			<flags>0</flags>
+		</GameObject>
+	</GameObjects>
+	<components>
+		<ComponentPool>
+			<type>Hierarchy</type>
+			<version>2</version>
+			<component>
+				<UUID>631809c9-614e-4405-893e-6e3be0fd12ca</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>5f798bfb-8e54-475a-a7cf-e4698c58ed2e</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>a6d45e85-d842-4062-b2f8-d609731bd927</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>631809c9-614e-4405-893e-6e3be0fd12ca</link>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>Transform</type>
+			<version>1</version>
+			<component>
+				<UUID>5f798bfb-8e54-475a-a7cf-e4698c58ed2e</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>631809c9-614e-4405-893e-6e3be0fd12ca</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>a6d45e85-d842-4062-b2f8-d609731bd927</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							-0.0486546 0.659635 0.0135422
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>
+							2.97294 2.97298 2.9729
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>
+							0.0117709 1.5125 2.20795
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>DynamicModel</type>
+			<version>1</version>
+			<component>
+				<UUID>a6d45e85-d842-4062-b2f8-d609731bd927</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Model name</name>
+						<isAsset>true</isAsset>
+						<value>particles/content_deferred/GFX_models/environment/New_Year/volume_lights_big.model</value>
+					</property>
+					<property>
+						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>VSEComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>5f798bfb-8e54-475a-a7cf-e4698c58ed2e</UUID>
+				<flags>1</flags>
+				<config>
+					<property>
+						<name>Path</name>
+						<isAsset>true</isAsset>
+						<value>vscript/plans/new_year/SwitchEnvironment.xml</value>
+					</property>
+					<property>
+						<name>AutoStart</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+	</components>
+</root>

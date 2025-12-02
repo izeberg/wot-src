@@ -236,6 +236,11 @@ msgid "info_page/main/standard/description"
 msgstr ""
 "普通任务由每天都可以完成的随机任务条件构成。进度会在每场战斗结束后更新。我们建议您在获得普通任务的当天完成。否则，它将顺延至第二天，阻碍下一个任务的完成。战斗通行证期间，完成普通任务即可获得战斗通行证点数。其他游戏活动期间，完成这些任务也有机会获得活动专属奖励。"
 
+msgid "info_page/main/standard/description_ho"
+msgstr ""
+"普通任务的完成条件随机，并且每天都可完成。与个人任务相似，普通任务进度仅在每场战斗结束后更新。请记得在获得普通任务的当天完成。否则，该任务会顺延至第二天，并导致您无法完成后续任务。假日行动2026期间，每个任务都会为您带来数量不等的{{@"
+" style (color 'white')}}随机{{/}}{{@ style (color 'white')}}资源{{/}}。"
+
 msgid "info_page/main/standard/title"
 msgstr "普通任务"
 

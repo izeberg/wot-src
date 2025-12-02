@@ -2,6 +2,8 @@
 <root>
 	<htmlTemplatesSimple>
 		<adventLootbox>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#advent_calendar.advent_calendar:notification/lootbox/title): %(count)s&lt;/font&gt;</adventLootbox>
+		<adventNYGP>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#advent_calendar.advent_calendar:notification/ny_gp/title): &lt;font color=&apos;#C9C9B6&apos;&gt;%(count)s&lt;/font&gt;&lt;/font&gt;</adventNYGP>
+		<adventNyTerminalToken>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#advent_calendar.advent_calendar:notification/nyTerminalToken/title): %(count)s&lt;/font&gt;</adventNyTerminalToken>
 	</htmlTemplatesSimple>
 	<htmlTemplates>
 		<adventCalendarQuestReward>

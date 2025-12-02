@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<CellMethods>
+		<updateLauncherState>
+			<Args>
+				<newState>INT8</newState>
+			</Args>
+			<Exposed>OWN_CLIENT</Exposed>
+		</updateLauncherState>
+	</CellMethods>
+	<Properties>
+		<launcherState>
+			<Type>INT8</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</launcherState>
+	</Properties>
+	<ofEntity>
+		<Vehicle/>
+	</ofEntity>
+	<DefaultKeyName>GrinchLauncherControllerComponent</DefaultKeyName>
+</root>

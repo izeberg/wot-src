@@ -3868,7 +3868,7 @@
 					<pitchLimits>
 						<minPitch>0 -20 1 -20</minPitch>
 						<maxPitch>
-							0 8 0.361 8 0.389 0 0.611 0 0.639 8 1 8
+							0 8 0.361 8 0.41667 4 0.58333 4 0.639 8 1 8
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
@@ -3876,7 +3876,7 @@
 						0.108
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
-					<reloadTime>24</reloadTime>
+					<reloadTime>21</reloadTime>
 					<aimingTime>3</aimingTime>
 					<shotDispersionFactors>
 						<turretRotation>
