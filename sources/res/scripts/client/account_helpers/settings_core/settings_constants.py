@@ -413,6 +413,7 @@ class OnceOnlyHints(CONST_CONTAINER):
     C11N_VEHICLE_LIST_HINT = 'C11nVehicleListHint'
     VEHICLE_C11N_FILTER_HINT = 'VehicleC11nFilterHint'
     VDAY_DIFFICULTY_HINT = 'VDayDifficultyHint'
+    GRINCH_PROGRESSION_FIGHT_BUTTON_HINT = 'GrinchProgressionFightButtonHint'
 
 
 class SESSION_STATS(CONST_CONTAINER):
@@ -546,3 +547,15 @@ class PersonalMission3(CONST_CONTAINER):
 
 
 COLOR_GRADING_TECHNIQUE_DEFAULT = 0
+
+class NYLootBoxesStorageKeys(CONST_CONTAINER):
+    NEW_COUNT = 'newCount'
+    DELIVERED_COUNT = 'deliveredCount'
+
+
+class NewYearStorageKeys(CONST_CONTAINER):
+    NY_STATISTICS_HINT_SHOWN = 'nyLootboxStatisticsHintShown'
+    LOOT_BOX_VIDEO_OFF = 'lootBoxVideoOff'
+    NY_INTRO_SHOWN = 'nyIntroShown'
+    BOOL_FLAGS = (
+     NY_STATISTICS_HINT_SHOWN, LOOT_BOX_VIDEO_OFF, NY_INTRO_SHOWN)

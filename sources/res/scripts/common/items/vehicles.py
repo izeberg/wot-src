@@ -2309,6 +2309,9 @@ class VehicleType(object):
     def getVehicleClass(self):
         return getVehicleClassFromVehicleType(self)
 
+    def getAllDevices(self):
+        return {d.compactDescr for d in self.chassis + self.engines + self.radios + self.fuelTanks + self.turrets[0] + tuple(self.getGuns())}
+
     def __getRoleFromTags(self):
         roles = g_cache.roles()
         suitableRoles = [ tag for tag in roles if ROLE_TYPE_TO_LABEL[tag] in self.tags ]
@@ -6598,22 +6601,20 @@ def _readAndRegisterDamageStickerTextureParams(xmlCtx, section, stickerName, rai
     if not section.has_key('texName'):
         if raiseError:
             _xml.raiseWrongXml(xmlCtx, section.name, 'texName for damage sticker is not specified')
-        return
+        return None
     texAM = _xml.readNonEmptyString(xmlCtx, section, 'texName')
     texNM = _xml.readNonEmptyString(xmlCtx, section, 'bumpTexName') if section.has_key('bumpTexName') else ''
     texGMM = _xml.readNonEmptyString(xmlCtx, section, 'smTexName') if section.has_key('smTexName') else ''
-    randomYaw = True
-    subsection = section['randomYaw']
-    if subsection is not None:
-        randomYaw = subsection.asBool
+    randomYaw = section.readBool('randomYaw', True)
+    ignoreAlbedo = section.readBool('ignoreAlbedo', False)
     variation = section.readFloat('variation', 0.0)
     v = _xml.readPositiveVector2(xmlCtx, section, 'modelSizes')
     modelSizes = v.tuple()
-    result = BigWorld.wg_registerDamageSticker(stickerName, texAM, texNM, texGMM, modelSizes, variation, randomYaw)
+    result = BigWorld.wg_registerDamageSticker(stickerName, texAM, texNM, texGMM, modelSizes, variation, randomYaw, ignoreAlbedo)
     if pdc.isEnabled():
         _auxSerializingData[DAMAGE_STICKERS_DATA].append((
          (
-          stickerName, texAM, texNM, texGMM, modelSizes, variation, randomYaw),
+          stickerName, texAM, texNM, texGMM, modelSizes, variation, randomYaw, ignoreAlbedo),
          result))
     return result
 

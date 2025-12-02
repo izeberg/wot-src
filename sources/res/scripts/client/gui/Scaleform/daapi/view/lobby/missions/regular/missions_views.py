@@ -22,8 +22,9 @@ from gui.Scaleform.locale.QUESTS import QUESTS
 from gui.Scaleform.genConsts.QUESTS_ALIASES import QUESTS_ALIASES
 from gui.Scaleform.locale.RES_ICONS import RES_ICONS
 from gui.event_boards.settings import expandGroup, isGroupMinimized
+from gui.impl.lobby.missions.daily_quests_view import DailyTabs
 from gui.server_events import settings, caches
-from gui.server_events.events_dispatcher import hideMissionDetails
+from gui.server_events.events_dispatcher import hideMissionDetails, showDailyQuests
 from gui.server_events.events_dispatcher import showMissionsCategories
 from gui.server_events.events_helpers import isMarathon, isDailyQuest, isPremium
 from gui.shared import actions
@@ -33,7 +34,7 @@ from gui.shared.event_dispatcher import showTankPremiumAboutPage, showHangar
 from gui.shared.formatters import text_styles, icons
 from helpers import dependency
 from helpers.i18n import makeString as _ms
-from skeletons.gui.game_control import IReloginController, IMarathonEventsController, IBrowserController
+from skeletons.gui.game_control import IReloginController, IMarathonEventsController, IBrowserController, IFestivityController
 from skeletons.gui.lobby_context import ILobbyContext
 from skeletons.gui.server_events import IEventsCache
 from gui import makeHtmlString
@@ -53,6 +54,9 @@ class _GroupedMissionsView(MissionsGroupedViewMeta):
                     blockData['isCollapsed'] = settings.isGroupMinimized(gID)
 
         return
+
+    def onDailyClick(self):
+        pass
 
 
 class MissionsGroupedView(_GroupedMissionsView):
@@ -337,6 +341,7 @@ class MissionsEventBoardsView(MissionsEventBoardsViewMeta):
 
 class MissionsCategoriesView(_GroupedMissionsView):
     _lobbyContext = dependency.descriptor(ILobbyContext)
+    _festivityController = dependency.descriptor(IFestivityController)
     __showDQInMissionsTab = False
 
     @classmethod
@@ -355,12 +360,17 @@ class MissionsCategoriesView(_GroupedMissionsView):
     def onClickButtonDetails(self):
         showTankPremiumAboutPage()
 
+    def onDailyClick(self):
+        showDailyQuests(subTab=DailyTabs.QUESTS)
+
     def _populate(self):
         super(MissionsCategoriesView, self)._populate()
         self._lobbyContext.getServerSettings().onServerSettingsChange += self.__onServerSettingsChange
+        self._festivityController.onStateChanged += self.__festivityStateChanged
 
     def _dispose(self):
         self._lobbyContext.getServerSettings().onServerSettingsChange -= self.__onServerSettingsChange
+        self._festivityController.onStateChanged -= self.__festivityStateChanged
         super(MissionsCategoriesView, self)._dispose()
 
     @staticmethod
@@ -378,6 +388,9 @@ class MissionsCategoriesView(_GroupedMissionsView):
         diffConfig = diff.get(PremiumConfigs.PREM_QUESTS)
         if 'enabled' in diffConfig:
             self._onEventsUpdate()
+
+    def __festivityStateChanged(self):
+        self._filterMissions()
 
 
 class CurrentVehicleMissionsView(CurrentVehicleMissionsViewMeta):

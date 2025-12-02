@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/german/G147_Kunze_Panzer/_skins/G147_Kunze_Panzer_HO26_3Dst/normal/lod3/Chassis</nodefullVisual>
+	<parent>vehicles/german/G147_Kunze_Panzer/_skins/G147_Kunze_Panzer_HO26_3Dst/normal/lod4/Chassis</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.401553 -0.022628 -2.865141</min>
+		<max>1.401554 1.207744 2.856787</max>
+	</visibilityBox>
+</root>

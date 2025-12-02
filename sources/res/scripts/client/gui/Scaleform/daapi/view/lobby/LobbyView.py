@@ -14,6 +14,7 @@ from gui.Scaleform.genConsts.PREBATTLE_ALIASES import PREBATTLE_ALIASES
 from gui.Scaleform.genConsts.RANKEDBATTLES_ALIASES import RANKEDBATTLES_ALIASES
 from gui.Scaleform.locale.SYSTEM_MESSAGES import SYSTEM_MESSAGES
 from gui.hangar_cameras.hangar_camera_common import CameraRelatedEvents
+from gui.hangar_presets.hangar_gui_controller import HangarGuiController
 from gui.impl import backport
 from gui.impl.gen import R
 from gui.impl.pub.view_component import ViewComponent
@@ -25,13 +26,14 @@ from helpers import dependency, i18n, uniprof
 from messenger.m_constants import PROTO_TYPE
 from messenger.proto import proto_getter
 from skeletons.gui.app_loader import IWaitingWidget
-from skeletons.gui.game_control import IIGRController, IMapsTrainingController, IWalletController, IHangarGuiController
+from skeletons.gui.game_control import IIGRController, IMapsTrainingController, IWalletController, IHangarGuiController, IFestivityController
 from skeletons.gui.lobby_context import ILobbyContext
 from skeletons.gui.shared import IItemsCache
 _logger = logging.getLogger(__name__)
 registerLifecycleHandledSubViews([
  VIEW_ALIAS.LOBBY_HANGAR,
  VIEW_ALIAS.LEGACY_LOBBY_HANGAR,
+ VIEW_ALIAS.HOLIDAY_OPS,
  VIEW_ALIAS.LOBBY_STORE,
  VIEW_ALIAS.LOBBY_STORAGE,
  VIEW_ALIAS.LOBBY_PROFILE,
@@ -142,6 +144,7 @@ class LobbyView(LobbyPageMeta, IWaitingWidget, IGlobalListener):
     lobbyContext = dependency.descriptor(ILobbyContext)
     wallet = dependency.descriptor(IWalletController)
     mapsTrainingController = dependency.descriptor(IMapsTrainingController)
+    __festivityController = dependency.descriptor(IFestivityController)
 
     def __init__(self, ctx=None):
         super(LobbyView, self).__init__(ctx)
@@ -202,6 +205,7 @@ class LobbyView(LobbyPageMeta, IWaitingWidget, IGlobalListener):
         self.fireEvent(events.GUICommonEvent(events.GUICommonEvent.LOBBY_VIEW_LOADING))
         super(LobbyView, self)._populate()
         self.__currIgrType = self.igrCtrl.getRoomType()
+        self.app.containerManager.onViewAddedToContainer += self.__onViewAddedToContainer
         self.addListener(events.LobbySimpleEvent.SHOW_HELPLAYOUT, self.__showHelpLayout, EVENT_BUS_SCOPE.LOBBY)
         self.addListener(events.LobbySimpleEvent.CLOSE_HELPLAYOUT, self.__closeHelpLayout, EVENT_BUS_SCOPE.LOBBY)
         self.addListener(events.GameEvent.SCREEN_SHOT_MADE, self.__handleScreenShotMade, EVENT_BUS_SCOPE.GLOBAL)
@@ -229,6 +233,7 @@ class LobbyView(LobbyPageMeta, IWaitingWidget, IGlobalListener):
         self.igrCtrl.onIgrTypeChanged -= self.__onIgrTypeChanged
         self.wallet.onWalletStatusChanged -= self.__onWalletChanged
         self.__viewLifecycleWatcher.stop()
+        self.app.containerManager.onViewAddedToContainer -= self.__onViewAddedToContainer
         self.removeListener(events.LobbySimpleEvent.SHOW_HELPLAYOUT, self.__showHelpLayout, EVENT_BUS_SCOPE.LOBBY)
         self.removeListener(events.LobbySimpleEvent.CLOSE_HELPLAYOUT, self.__closeHelpLayout, EVENT_BUS_SCOPE.LOBBY)
         self.removeListener(events.GameEvent.SCREEN_SHOT_MADE, self.__handleScreenShotMade, EVENT_BUS_SCOPE.GLOBAL)
@@ -275,3 +280,10 @@ class LobbyView(LobbyPageMeta, IWaitingWidget, IGlobalListener):
 
     def __onWalletChanged(self, status):
         self.as_setWalletStatusS(status)
+
+    def __onViewAddedToContainer(self, _, pyEntity):
+        if not pyEntity.isDisposed() and pyEntity.layer in (WindowLayer.SUB_VIEW, WindowLayer.TOP_SUB_VIEW):
+            pyEntity.onDispose += self.__onViewDisposed
+
+    def __onViewDisposed(self, pyEntity):
+        pyEntity.onDispose -= self.__onViewDisposed

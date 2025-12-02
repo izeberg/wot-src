@@ -157,6 +157,8 @@ class ARENAS(object):
     C_210_BF_EPIC_DESERT_DESCRIPTION = '#arenas:210_bf_epic_desert/description'
     C_08_RUINBERG_SM24_NAME = '#arenas:08_ruinberg_sm24/name'
     C_08_RUINBERG_SM24_DESCRIPTION = '#arenas:08_ruinberg_sm24/description'
+    C_227_GIFT_DEFEND_NAME = '#arenas:227_gift_defend/name'
+    C_228_LAST_GIFT_STANDING_NAME = '#arenas:228_last_gift_standing/name'
     C_14_SIEGFRIED_LINE_WT_NAME = '#arenas:14_siegfried_line_wt/name'
     C_34_REDSHIRE_WT_NAME = '#arenas:34_redshire_wt/name'
     C_35_STEPPES_WT_NAME = '#arenas:35_steppes_wt/name'
@@ -325,6 +327,8 @@ class ARENAS(object):
      C_210_BF_EPIC_DESERT_DESCRIPTION,
      C_08_RUINBERG_SM24_NAME,
      C_08_RUINBERG_SM24_DESCRIPTION,
+     C_227_GIFT_DEFEND_NAME,
+     C_228_LAST_GIFT_STANDING_NAME,
      C_14_SIEGFRIED_LINE_WT_NAME,
      C_34_REDSHIRE_WT_NAME,
      C_35_STEPPES_WT_NAME,

@@ -1,6 +1,6 @@
 import logging
 from typing import TYPE_CHECKING
-import Windowing
+import SoundGroups, Windowing
 from gui.Scaleform.framework.entities.View import ViewKey
 from gui.Scaleform.daapi.settings.views import VIEW_ALIAS
 from gui.Scaleform.lobby_entry import getLobbyStateMachine
@@ -17,6 +17,7 @@ from gui.lootbox_system.base.utils import isShopVisible, openBoxes
 from gui.lootbox_system.base.views_loaders import showItemPreview
 from gui.server_events.bonuses import SimpleBonus
 from gui.shared import EVENT_BUS_SCOPE, events
+from gui.sounds.filters import StatesGroup, States
 from helpers import dependency
 from shared_utils import first
 from skeletons.gui.game_control import ILootBoxSystemController
@@ -97,6 +98,7 @@ class SingleBoxRewards(SubViewImpl):
     def __setVideoPlaying(self, ctx=None):
         isPlaying = ctx.get('isPlaying')
         self.__isVideoPlaying = isPlaying
+        SoundGroups.g_instance.setState(StatesGroup.VIDEO_OVERLAY, States.VIDEO_OVERLAY_ON if isPlaying else States.VIDEO_OVERLAY_OFF)
 
     def _getListeners(self):
         return (

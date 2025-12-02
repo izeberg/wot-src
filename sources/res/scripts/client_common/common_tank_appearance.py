@@ -118,6 +118,7 @@ class CommonTankAppearance(ScriptGameObject):
     vehicleStickers = property(lambda self: self._vehicleStickers)
     isTurretDetached = property(lambda self: self._isTurretDetached)
     weaponEnergy = property(lambda self: self.__weaponEnergy)
+    isCompositionReady = property(lambda self: self.__isCompositionReady)
     filter = AutoProperty()
     areaTriggerTarget = ComponentDescriptor()
     vehicleSoundTriggerTarget = ComponentDescriptor()
@@ -212,6 +213,7 @@ class CommonTankAppearance(ScriptGameObject):
         self._gunRecoilLink = CGF.ComponentLink(Vehicular.GunRecoilComponent)
         self._gunAnimators = GunAnimators()
         self._entityGameObject = CGF.GameObject.INVALID_GAME_OBJECT
+        self.__isCompositionReady = False
         return
 
     @property
@@ -561,6 +563,9 @@ class CommonTankAppearance(ScriptGameObject):
 
     def getWheelsSteeringMax(self):
         return 0
+
+    def setCompositionReady(self, ready):
+        self.__isCompositionReady = ready
 
     def _prepareOutfit(self, outfitCD):
         outfitComponent = camouflages.getOutfitComponent(outfitCD)

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G147_Kunze_Panzer/_skins/G147_Kunze_Panzer_HO26_3Dst/crash/lod1/Gun_01</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/german/G147_Kunze_Panzer/_skins/G147_Kunze_Panzer_HO26_3Dst/crash/lod2/Gun_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.328243 -0.206543 -0.732371</min>
+		<max>0.327213 0.591579 3.526710</max>
+	</visibilityBox>
+</root>

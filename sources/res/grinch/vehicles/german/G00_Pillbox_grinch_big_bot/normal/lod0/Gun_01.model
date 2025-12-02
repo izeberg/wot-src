@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.908231 -0.830483 -0.296458</min>
+		<max>0.894202 0.683891 2.794738</max>
+	</visibilityBox>
+	<parent>grinch/vehicles/german/G00_Pillbox_grinch_big_bot/normal/lod1/Gun_01</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>grinch/vehicles/german/G00_Pillbox_grinch_big_bot/normal/lod0/Gun_01</nodefullVisual>
+</root>

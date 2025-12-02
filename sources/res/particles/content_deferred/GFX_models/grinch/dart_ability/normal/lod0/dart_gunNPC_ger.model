@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-0.363753 1.399377 1.799984</min>
+		<max>0.503483 2.182693 3.425954</max>
+	</visibilityBox>
+	<parent>particles/content_deferred/GFX_models/grinch/dart_ability/normal/lod1/dart_gunNPC_ger</parent>
+	<extent>35.000000</extent>
+	<nodefullVisual>particles/content_deferred/GFX_models/grinch/dart_ability/normal/lod0/dart_gunNPC_ger</nodefullVisual>
+</root>

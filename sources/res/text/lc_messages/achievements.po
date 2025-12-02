@@ -168,6 +168,17 @@ msgstr ""
 msgid "14YearsOfService_descr"
 msgstr "You have been in the game since %(regDate)s"
 
+msgid "15YearsOfService"
+msgstr "For 15 years of service"
+
+msgid "15YearsOfService_condition"
+msgstr ""
+"Awarded to players for their invaluable contribution to the evolution of "
+"World of Tanks."
+
+msgid "15YearsOfService_descr"
+msgstr "You have been in the game since %(regDate)s"
+
 msgid "BPReserveAchievement_10"
 msgstr "BP Reserve Achievement 10"
 
@@ -1181,6 +1192,26 @@ msgid "NY25_CelebChallenge_descr"
 msgstr ""
 "Awarded for completing the corresponding Mission From Jason Statham during "
 "Holiday Ops 2025."
+
+msgid "NY26_AtmsphrLevel"
+msgstr "Spirit of the Season"
+
+msgid "NY26_AtmsphrLevel_condition"
+msgstr ""
+"• You can enhance the Festive Atmosphere by increasing the object Levels in your Village.\n"
+"• Awarded to all players who fulfill the respective condition during Holiday Ops 2026."
+
+msgid "NY26_AtmsphrLevel_descr"
+msgstr ""
+"Reach Festive Atmosphere Level X by participating in Holiday Ops 2026."
+
+msgid "NY26_CelebChallenge"
+msgstr "Wit and Wisdom"
+
+msgid "NY26_CelebChallenge_descr"
+msgstr ""
+"Awarded for completing the corresponding Mission From Benedict Cumberbatch "
+"during Holiday Ops 2026."
 
 msgid "RP2018firstmed"
 msgstr "Exemplary Cadet, Class III"
@@ -2583,6 +2614,17 @@ msgstr ""
 
 msgid "godOfWar_descr"
 msgstr "While driving an SPG, be the last survivor and win the battle."
+
+msgid "grinch_medal_2026"
+msgstr "Winter Raid"
+
+msgid "grinch_medal_2026_condition"
+msgstr ""
+"Awarded to all players who fulfill the required conditions in the special "
+"game event."
+
+msgid "grinch_medal_2026_descr"
+msgstr "Complete the Winter Raid mode Progression."
 
 msgid "guardsman"
 msgstr "Guardsman %(rank)s"

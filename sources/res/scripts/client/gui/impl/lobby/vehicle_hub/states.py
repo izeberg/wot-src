@@ -15,6 +15,7 @@ from gui.impl.lobby.vehicle_hub.camera_mover import VehicleHubCameraMover
 from gui.impl.lobby.vehicle_hub.sound_constants import VH_SOUND_SPACE
 from gui.lobby_state_machine.states import SFViewLobbyState, SubScopeSubLayerState, LobbyState, LobbyStateFlags, LobbyStateDescription
 from gui.shared import g_eventBus, events, EVENT_BUS_SCOPE
+from gui.shared.event_dispatcher import showHangar
 from gui.shared.utils.module_upd_available_helper import updateViewedItems
 from gui.shared.view_helpers.blur_manager import CachedBlur
 from gui.subhangar.subhangar_observer import selectItemByTankSize, hangarVehicleAABB
@@ -22,6 +23,7 @@ from gui.subhangar.subhangar_state_groups import SubhangarStateGroupConfigProvid
 from gui.veh_post_progression.models.progression import PostProgressionCompletion
 from helpers import dependency
 from helpers.CallbackDelayer import CallbackDelayer
+from helpers.events_handler import EventsHandler
 from skeletons.gui.shared import IItemsCache
 from skeletons.gui.shared.utils import IHangarSpace
 from sound_gui_manager import ViewSoundExtension
@@ -78,7 +80,7 @@ class _VehicleHubChildState(LobbyState, SubhangarStateGroupConfigProvider):
 
 
 @SubScopeSubLayerState.parentOf
-class VehicleHubState(SFViewLobbyState, SubhangarStateGroupConfigProvider):
+class VehicleHubState(SFViewLobbyState, EventsHandler, SubhangarStateGroupConfigProvider):
     STATE_ID = VIEW_ALIAS.VEHICLE_HUB
     VIEW_KEY = ViewKey(VIEW_ALIAS.VEHICLE_HUB)
     __hangarSpace = dependency.descriptor(IHangarSpace)
@@ -135,6 +137,7 @@ class VehicleHubState(SFViewLobbyState, SubhangarStateGroupConfigProvider):
 
     def _onEntered(self, event):
         super(VehicleHubState, self)._onEntered(event)
+        self._subscribe()
         self.__blur = CachedBlur(enabled=False)
         self.__soundExtension.initSoundManager()
         self.__soundExtension.startSoundSpace()
@@ -156,6 +159,7 @@ class VehicleHubState(SFViewLobbyState, SubhangarStateGroupConfigProvider):
            'shadowYOffset': shadowYOffset}), scope=EVENT_BUS_SCOPE.LOBBY)
 
     def _onExited(self):
+        self._unsubscribe()
         if self.__blur is not None:
             self.__blur.fini()
             self.__blur = None
@@ -168,6 +172,12 @@ class VehicleHubState(SFViewLobbyState, SubhangarStateGroupConfigProvider):
         if self.__hangarSpace.spaceInited:
             self.__hangarSpace.space.turretAndGunAngles.reset()
         return
+
+    def _getEvents(self):
+        return ((self.__hangarSpace.onSpaceChanged, self.__onSpaceChanged),)
+
+    def __onSpaceChanged(self):
+        showHangar()
 
 
 @VehicleHubState.parentOf

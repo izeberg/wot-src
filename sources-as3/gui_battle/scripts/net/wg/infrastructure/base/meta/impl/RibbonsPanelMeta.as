@@ -44,10 +44,10 @@ package net.wg.infrastructure.base.meta.impl
          this.onShow(param1);
       }
       
-      public function onChangeS() : void
+      public function onChangeS(param1:Number) : void
       {
          App.utils.asserter.assertNotNull(this.onChange,"onChange" + Errors.CANT_NULL);
-         this.onChange();
+         this.onChange(param1);
       }
       
       public function onHideS(param1:Number) : void

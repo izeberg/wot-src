@@ -19,6 +19,7 @@ from gui.battle_control.controllers.sound_ctrls.stronghold_battle_sounds import 
 from gui.battle_control.controllers.spam_protection import battle_spam_ctrl
 from gui.battle_control.controllers.vse_hud_settings_ctrl import vse_hud_settings_ctrl
 from gui.shared.system_factory import registerBattleControllerRepo
+from gui.battle_control.controllers.sound_ctrls.new_year_battle_sounds import NewYearSoundController
 from skeletons.gui.battle_session import ISharedControllersLocator, IDynamicControllersLocator
 _logger = logging.getLogger(__name__)
 
@@ -507,8 +508,17 @@ class ClassicControllersRepository(ControllersRepositoryByBonuses):
         repository.addViewController(battle_hints_ctrl.BattleHintsController(), setup)
         repository.addArenaViewController(battle_field_ctrl.BattleFieldCtrl(), setup)
         repository.addArenaController(cls._getAppearanceCacheController(setup), setup)
-        repository.addController(ShotsResultSoundController())
+        repository.addController(cls._getShotsResultSoundController())
+        repository.addController(cls._getSoundController(setup))
         return repository
+
+    @staticmethod
+    def _getShotsResultSoundController():
+        return ShotsResultSoundController()
+
+    @staticmethod
+    def _getSoundController(setup):
+        return NewYearSoundController()
 
     @staticmethod
     def _getAppearanceCacheController(setup):
@@ -553,11 +563,9 @@ class MapsTrainingControllerRepository(ControllersRepositoryByBonuses):
 class StrongholdControllerRepository(ClassicControllersRepository):
     __slots__ = ()
 
-    @classmethod
-    def create(cls, setup):
-        repository = super(StrongholdControllerRepository, cls).create(setup)
-        repository.addController(StrongholdBattleSoundController())
-        return repository
+    @staticmethod
+    def _getSoundController(setup):
+        return StrongholdBattleSoundController()
 
 
 class PVEBaseControllerRepository(ClassicControllersRepository):

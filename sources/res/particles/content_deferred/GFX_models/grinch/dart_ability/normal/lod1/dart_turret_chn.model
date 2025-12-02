@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>particles/content_deferred/GFX_models/grinch/dart_ability/normal/lod2/dart_turret_chn</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.495000 -0.170768 -1.988262</min>
+		<max>1.475887 1.012586 7.120205</max>
+	</visibilityBox>
+	<nodefullVisual>particles/content_deferred/GFX_models/grinch/dart_ability/normal/lod1/dart_turret_chn</nodefullVisual>
+</root>

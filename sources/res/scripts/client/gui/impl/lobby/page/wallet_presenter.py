@@ -177,7 +177,7 @@ class WalletPresenter(ViewComponent[WalletModel]):
     def _getEvents(self):
         return (
          (
-          self.viewModel.onCurrencyAction, self.__onCurrencyAction),)
+          self.viewModel.onCurrencyAction, self._onCurrencyAction),)
 
     def _onLoading(self, *args, **kwargs):
         super(WalletPresenter, self)._onLoading(*args, **kwargs)
@@ -210,7 +210,7 @@ class WalletPresenter(ViewComponent[WalletModel]):
         for currencyType in self._currencyProviders:
             self.__onCurrencyChanged(currencyType)
 
-    def __onCurrencyAction(self, args):
+    def _onCurrencyAction(self, args):
         curType = args.get('type')
         currencyWatcher = self._currencyProviders.get(curType, None)
         if currencyWatcher is None:

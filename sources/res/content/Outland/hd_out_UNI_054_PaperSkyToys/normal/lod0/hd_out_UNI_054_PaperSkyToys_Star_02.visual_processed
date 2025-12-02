@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0</identifier>
+					<fx>shaders/custom/emissive_playground.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>117</materialKind>
+					<property>
+						angleFalloffParams
+						<Vector4>1.500000 2.500000 0.500000 0.000000</Vector4>
+					</property>
+					<property>
+						destBlend
+						<Int>2</Int>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						emissionMap
+						<Texture>content/Outland/hd_out_UNI_054_PaperSkyToys/hd_out_UNI_054_PaperSkyToys_Star_emissive.dds</Texture>
+					</property>
+					<property>
+						g_contrast
+						<Float>4.000000</Float>
+					</property>
+					<property>
+						g_offsetBlack
+						<Float>0.700000</Float>
+					</property>
+					<property>
+						g_tint
+						<Vector4>1.000000 0.533333 0.149020 1.000000</Vector4>
+					</property>
+					<property>
+						g_zeroPhaseLum
+						<Float>0.800000</Float>
+					</property>
+					<property>
+						pattern
+						<Texture>content/Outland/hd_out_UNI_054_PaperSkyToys/hd_out_UNI_054_PaperSkyToys_Star_emissive.dds</Texture>
+					</property>
+					<property>
+						patternFilteringMode
+						<Int>1</Int>
+					</property>
+					<property>
+						phaseMap
+						<Texture>content/Outland/hd_out_UNI_054_PaperSkyToys/hd_out_UNI_054_PaperSkyToys_Star_controlmap.dds</Texture>
+					</property>
+					<property>
+						speed
+						<Float>0.350000</Float>
+					</property>
+					<property>
+						srcBlend
+						<Int>3</Int>
+					</property>
+					<property>
+						usePhaseMap
+						<Bool>true</Bool>
+					</property>
+					<property>
+						waveLen
+						<Float>4.000000</Float>
+					</property>
+				</material>
+				<groupOrigin>-1.915313 289.709198 -3.043676</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-25.286972 -8.522812 -25.760614</min>
+		<max>21.456347 587.941223 19.673262</max>
+	</boundingBox>
+	<customBsp>true</customBsp>
+	<geometrySize>35280</geometrySize>
+</root>

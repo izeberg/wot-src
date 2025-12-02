@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>grinch/vehicles/german/G89_Leopard1_grinch_improved/normal/lod0/Pencil</nodefullVisual>
+	<visibilityBox>
+		<min>-0.162885 -0.162885 -1.045624</min>
+		<max>0.162885 0.162885 1.045624</max>
+	</visibilityBox>
+	<parent>grinch/vehicles/german/G89_Leopard1_grinch_improved/normal/lod1/Pencil</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+</root>

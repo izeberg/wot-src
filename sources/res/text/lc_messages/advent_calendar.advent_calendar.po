@@ -107,7 +107,7 @@ msgid "mainView/tooltip/availableSometime/description"
 msgstr "Calendar doors are available to open from %(time)s each day."
 
 msgid "mainView/tooltip/availableSometime/title"
-msgstr "Will be available on {FFE4C0_Open}%(date)s{FFE4C0_Close}"
+msgstr "Will be available {FFE4C0_Open}on %(date)s{FFE4C0_Close}"
 
 msgid "mainView/tooltip/availableToday"
 msgstr "Will be available {FFE4C0_Open}from %(time)s today{FFE4C0_Close}"
@@ -117,7 +117,7 @@ msgstr "Will be available {FFE4C0_Open}from %(time)s tomorrow{FFE4C0_Close}"
 
 msgid "mainView/tooltip/enoughResources/description"
 msgstr ""
-"Start with door {FFE4C0_Open}%(day)s{FFE4C0_Close}, then open other doors in"
+"Start with {FFE4C0_Open}door %(day)s{FFE4C0_Close}, then open other doors in"
 " numerical order."
 
 msgid "mainView/tooltip/enoughResources/title"
@@ -130,6 +130,14 @@ msgstr ""
 
 msgid "mainView/tooltip/expired/title"
 msgstr "Door Not Opened in Time"
+
+msgid "mainView/tooltip/notEnoughResources/description"
+msgstr ""
+"Resources can be obtained for completing missions, collected daily from your"
+" Village and in your Best Friends' Villages, or received in Large Boxes."
+
+msgid "mainView/tooltip/notEnoughResources/title"
+msgstr "{orange_Open}Not Enough Resources{orange_Close}"
 
 msgid "marker/exclamationMark"
 msgstr "!"
@@ -169,6 +177,12 @@ msgstr ""
 msgid "notification/lootbox/title"
 msgstr "Large Christmas Box"
 
+msgid "notification/nyTerminalToken/title"
+msgstr "Gift Terminal Token added"
+
+msgid "notification/ny_gp/title"
+msgstr "Gift Coins added"
+
 msgid "notification/progerssion/finished"
 msgstr "Advent Calendar Progression Complete"
 
@@ -183,6 +197,83 @@ msgstr "Progression gifts can only be received in numerical order."
 
 msgid "progressionRewards/tooltip/lock/title"
 msgstr "Receive Previous Gift"
+
+msgid "progressionRewards/tooltip/lootbox/bonusName/attachment"
+msgstr "3D attachments"
+
+msgid "progressionRewards/tooltip/lootbox/bonusName/color_fir"
+msgstr "Color"
+
+msgid "progressionRewards/tooltip/lootbox/bonusName/credits"
+msgstr "Credits"
+
+msgid "progressionRewards/tooltip/lootbox/bonusName/gold"
+msgstr "Gold"
+
+msgid "progressionRewards/tooltip/lootbox/bonusName/highTierVehicles"
+msgstr "Tier VIII–X Premium or special vehicle"
+
+msgid "progressionRewards/tooltip/lootbox/bonusName/lowTierVehicles"
+msgstr "Tier II–V Premium vehicle"
+
+msgid "progressionRewards/tooltip/lootbox/bonusName/nyRandomResource"
+msgstr "Random resources"
+
+msgid "progressionRewards/tooltip/lootbox/bonusName/ny_amber"
+msgstr "Warm Amber"
+
+msgid "progressionRewards/tooltip/lootbox/bonusName/ny_crystal"
+msgstr "Rock Crystal"
+
+msgid "progressionRewards/tooltip/lootbox/bonusName/ny_emerald"
+msgstr "Pure Emerald"
+
+msgid "progressionRewards/tooltip/lootbox/bonusName/ny_iron"
+msgstr "Meteoric Iron"
+
+msgid "progressionRewards/tooltip/lootbox/bonusName/premium_plus"
+msgstr "Days of WoT Premium Account"
+
+msgid "progressionRewards/tooltip/lootbox/bonusName/randomNyToy"
+msgstr "Random decoration"
+
+msgid "progressionRewards/tooltip/lootbox/bonusName/style_3d"
+msgstr "3D styles for Tier IX–X vehicles"
+
+msgid "progressionRewards/tooltip/lootbox/boxName"
+msgstr "Large Christmas Box"
+
+msgid "progressionRewards/tooltip/lootbox/necessary/title"
+msgstr "EACH BOX CONTAINS"
+
+msgid "progressionRewards/tooltip/lootbox/probability/item/title"
+msgstr ""
+"Drop chance of items from the list: "
+"%(FFE4C0_Open)s%(probability)s%(FFE4C0_Close)s"
+
+msgid "progressionRewards/tooltip/lootbox/probability/vechicle/title"
+msgstr ""
+"Drop chance of items from the list: "
+"%(whiteSpanish_Open)s%(probability)s%(whiteSpanish_Close)s"
+
+msgid "progressionRewards/tooltip/lootbox/rewardInProgress/title"
+msgid_plural ""
+"plural/progressionRewards/tooltip/lootbox/rewardInProgress/title"
+msgstr[0] ""
+"Open {FFE4C0_Open}%(count)s more Calendar door{FFE4C0_Close} to receive this"
+" gift."
+msgstr[1] ""
+"Open {FFE4C0_Open}%(count)s more Calendar doors{FFE4C0_Close} to receive "
+"this gift."
+msgstr[2] ""
+"Open {FFE4C0_Open}%(count)s more Calendar doors{FFE4C0_Close} to receive "
+"this gift."
+
+msgid "progressionRewards/tooltip/lootbox/separator/comma"
+msgstr ", "
+
+msgid "progressionRewards/tooltip/lootbox/separator/slash"
+msgstr " / "
 
 msgid "progressionRewards/tooltip/lootbox/simple/body"
 msgstr ""
@@ -219,6 +310,29 @@ msgstr "%(img)s Receive the previous gift in the Progression to unlock."
 msgid "progressionRewards/tooltip/rewardReceived/title"
 msgstr "%(img)s Received"
 
+msgid "purchaseView/cancel"
+msgstr "Cancel"
+
+msgid "purchaseView/notEnoughResources/subTitle"
+msgstr ""
+"Resources can be obtained for completing missions,\n"
+"collected daily from your Village and in your Best Friends' Villages, or received in Large Boxes."
+
+msgid "purchaseView/notEnoughResources/title"
+msgstr "Not Enough Resources"
+
+msgid "purchaseView/open"
+msgstr "Open"
+
+msgid "purchaseView/title"
+msgstr "Open Advent Calendar door {FFE4C0_Open}{{day}}{FFE4C0_Close}?"
+
+msgid "purchaseView/toBoxes/label"
+msgstr "To Boxes"
+
+msgid "purchaseView/toBoxes/tooltip"
+msgstr "Click to go to Large Boxes"
+
 msgid "rewardView/confirm"
 msgstr "Affirmative!"
 
@@ -248,5 +362,5 @@ msgstr "Congratulations!"
 
 msgid "server_error"
 msgstr ""
-"Operation temporarily unavailable due to technical reasons. Please try again"
-" later."
+"The operation is temporarily unavailable due to technical reasons. Please "
+"try again later."

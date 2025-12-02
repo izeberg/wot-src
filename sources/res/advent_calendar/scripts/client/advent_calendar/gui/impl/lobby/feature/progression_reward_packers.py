@@ -6,6 +6,7 @@ from advent_calendar.gui.impl.lobby.feature.advent_helper import getProgressionR
 from constants import LOOTBOX_TOKEN_PREFIX
 from gui.Scaleform.genConsts.TOOLTIPS_CONSTANTS import TOOLTIPS_CONSTANTS
 from gui.impl.backport import TooltipData
+from gui.impl.gen import R
 from gui.shared.gui_items.customization import CustomizationTooltipContext
 from gui.shared.missions.packers.bonus import BonusUIPacker, BaseBonusUIPacker, BACKPORT_TOOLTIP_CONTENT_ID
 from items.tankmen import RECRUIT_TMAN_TOKEN_PREFIX
@@ -116,7 +117,7 @@ class LootboxTokensPacker(BaseProgressionRewardPacker):
         result = []
         for tokenID in bonus.getTokens().keys():
             if tokenID.startswith(LOOTBOX_TOKEN_PREFIX):
-                result.append(BACKPORT_TOOLTIP_CONTENT_ID)
+                result.append(R.views.advent_calendar.mono.lobby.tooltips.advent_calendar_big_loot_box_tooltip())
 
         return result
 
@@ -125,6 +126,6 @@ class LootboxTokensPacker(BaseProgressionRewardPacker):
         result = []
         for tokenID in bonus.getTokens().keys():
             if tokenID.startswith(LOOTBOX_TOKEN_PREFIX):
-                result.append(TooltipData())
+                result.append(TooltipData(specialArgs=(questID,)))
 
         return result

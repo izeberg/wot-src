@@ -6,32 +6,37 @@ from advent_calendar.gui.impl.gen.view_models.views.lobby.reward_view_model impo
 from advent_calendar.gui.impl.lobby.feature.advent_helper import openAndWaitDoor, isAdventAnimationEnabled
 from advent_calendar.gui.impl.lobby.feature.bonus_grouper import RewardBonusGrouper, RewardsBonusGroups
 from advent_calendar.gui.impl.lobby.feature.bonus_packers import getRewardBonusPacker
+from advent_calendar.gui.impl.lobby.feature.tooltips.advent_calendar_big_lootbox_tooltip import AdventCalendarBigLootBoxTooltip
 from advent_calendar.gui.shared import events
 from advent_calendar.skeletons.game_controller import IAdventCalendarController
 from frameworks.wulf import ViewSettings, WindowFlags, WindowLayer
 from gui.impl.gen import R
 from gui.impl.lobby.common.view_helpers import packBonusModelAndTooltipData
 from gui.impl.lobby.common.view_wrappers import createBackportTooltipDecorator
+from gui.impl.lobby.new_year.tooltips.ny_gift_machine_token_tooltip import NyGiftMachineTokenTooltip
 from gui.impl.pub import ViewImpl
 from gui.impl.pub.lobby_window import LobbyWindow
-from gui.server_events.bonuses import BattleTokensBonus, LootBoxTokensBonus
+from gui.server_events.bonuses import LootBoxTokensBonus
 from gui.shared import g_eventBus, EVENT_BUS_SCOPE
+from gui.shared.event_dispatcher import showLootBoxEntry
 from helpers import dependency
 if typing.TYPE_CHECKING:
     from typing import Any, List, Tuple
     from gui.impl.backport import TooltipData
     from gui.server_events.bonuses import SimpleBonus
 _logger = logging.getLogger(__name__)
-EXCLUDET_CLASSES = (BattleTokensBonus,)
 _BONUSES_ORDER = (
  RewardsBonusGroups.LOOTBOX,
  RewardsBonusGroups.EXPERIMENTAL_EQUIPMENT,
  RewardsBonusGroups.MENTORING_LICENSE,
+ RewardsBonusGroups.NY_GP_TOKEN,
+ RewardsBonusGroups.NY_TOY,
  RewardsBonusGroups.CREW_MEMBER,
  RewardsBonusGroups.STYLE_2D,
  RewardsBonusGroups.FREEXP,
  RewardsBonusGroups.PREMIUM,
  RewardsBonusGroups.COMPONENTS,
+ RewardsBonusGroups.NY_COIN,
  RewardsBonusGroups.CREDITS,
  RewardsBonusGroups.RESERVE_CREDITS,
  RewardsBonusGroups.RESERVE_EXP,
@@ -53,7 +58,7 @@ def sortBonuses(groupedBonuses, excluded=(), excludedCls=()):
 
 
 class RewardView(ViewImpl):
-    __slots__ = ('__bonuses', '__isProgressionReward', '__tooltips')
+    __slots__ = ('__bonuses', '__isProgressionReward', '__tooltips', '__currency')
     __adventController = dependency.descriptor(IAdventCalendarController)
 
     def __init__(self, *args, **kwargs):
@@ -61,6 +66,7 @@ class RewardView(ViewImpl):
         super(RewardView, self).__init__(settings)
         self.__tooltips = {}
         self.__isProgressionReward = False
+        self.__currency = kwargs.get('currency', '')
 
     @property
     def viewModel(self):
@@ -69,6 +75,17 @@ class RewardView(ViewImpl):
     @createBackportTooltipDecorator()
     def createToolTip(self, event):
         return super(RewardView, self).createToolTip(event)
+
+    def createToolTipContent(self, event, contentID):
+        if contentID == R.views.advent_calendar.mono.lobby.tooltips.advent_calendar_big_loot_box_tooltip():
+            tooltipData = self.getTooltipData(event)
+            if tooltipData is None:
+                return
+            return AdventCalendarBigLootBoxTooltip(*tooltipData.specialArgs)
+        else:
+            if contentID == R.views.mono.holiday_ops.tooltips.ho_gift_machine_token_tooltip():
+                return NyGiftMachineTokenTooltip()
+            return super(RewardView, self).createToolTipContent(event, contentID)
 
     def getTooltipData(self, event):
         tooltipId = event.getArgument('tooltipId')
@@ -90,7 +107,7 @@ class RewardView(ViewImpl):
         openedDoors = len(self.__adventController.completedAwardsQuests)
         openedDoors = (isProgressionReward or openedDoors) + 1 if 1 else openedDoors
         with self.viewModel.transaction() as (vm):
-            packBonusModelAndTooltipData(sortBonuses(RewardBonusGrouper().group(bonuses), excludedCls=EXCLUDET_CLASSES), vm.getBonuses(), self.__tooltips, packer=getRewardBonusPacker())
+            packBonusModelAndTooltipData(sortBonuses(RewardBonusGrouper().group(bonuses)), vm.getBonuses(), self.__tooltips, packer=getRewardBonusPacker())
             vm.setDayId(dayId)
             vm.setDoorsOpenedAm(openedDoors)
             vm.setShowBoxesButton(self._isLootBoxInBonuses(bonuses))
@@ -125,6 +142,7 @@ class RewardView(ViewImpl):
 
     def __onOpenBoxes(self):
         self.destroyWindow()
+        showLootBoxEntry()
 
     def __onSetBlur(self, event):
         param = event.get('setBlur', '')
@@ -142,7 +160,7 @@ class RewardView(ViewImpl):
     def __requestOpenDoor(self, doorId):
         _logger.debug('Created open request for doorId=%d', doorId)
         openDoorClb = partial(self.__processServerDoorOpen, dayId=doorId)
-        openAndWaitDoor(dayID=doorId, callback=openDoorClb)
+        openAndWaitDoor(dayID=doorId, currency=self.__currency, callback=openDoorClb)
 
     def __processServerDoorOpen(self, dayId, result):
         _logger.debug('Waiting for reward window finished, doorId=%d', dayId)
@@ -155,5 +173,5 @@ class RewardView(ViewImpl):
 
 class AdventCalendarRewardWindow(LobbyWindow):
 
-    def __init__(self, dayId, isProgressionReward, data, parent=None):
-        super(AdventCalendarRewardWindow, self).__init__(WindowFlags.WINDOW | WindowFlags.WINDOW_FULLSCREEN, layer=WindowLayer.FULLSCREEN_WINDOW, content=RewardView(dayId, isProgressionReward, data), parent=parent)
+    def __init__(self, dayId, isProgressionReward, data, currency='', parent=None):
+        super(AdventCalendarRewardWindow, self).__init__(WindowFlags.WINDOW | WindowFlags.WINDOW_FULLSCREEN, layer=WindowLayer.FULLSCREEN_WINDOW, content=RewardView(dayId, isProgressionReward, data, currency=currency), parent=parent)

@@ -644,6 +644,8 @@
 		<terrain>maps/landscape/00_AllTerrain3_tiles/SnowDunesSmall_36_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Snow_35_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Ice3_AM</terrain>
+		<terrain>maps/landscape/00_AllTerrain3_tiles/Snow_Frosty_02_AM</terrain>
+		<terrain>maps/landscape/00_AllTerrain3_tiles/Snow_Step_01_AM</terrain>
 	</kind>
 	<kind>
 		<id>111</id>
@@ -766,6 +768,34 @@
 		<terrain>maps/landscape/00_AllTerrain3_tiles/SandIceland_01_Dark_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Sand_Iceland_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/StonesSandyDark_00347_AM</terrain>
+	</kind>
+	<kind>
+		<id>117</id>
+		<desc>paper</desc>
+		<help>Paper</help>
+		<effect_material>paper</effect_material>
+		<terrain>maps/landscape/00_AllTerrain3_tiles/Paper_01_AM</terrain>
+		<terrain>maps/landscape/00_AllTerrain3_tiles/Paper_03_AM</terrain>
+		<terrain>maps/landscape/00_AllTerrain3_tiles/Paper_07_AM</terrain>
+		<terrain>maps/landscape/00_AllTerrain3_tiles/Paper_12_AM</terrain>
+		<terrain>maps/landscape/00_AllTerrain3_tiles/Paper_13_AM</terrain>
+		<terrain>maps/landscape/00_AllTerrain3_tiles/Paper_14_AM</terrain>
+		<terrain>maps/landscape/00_AllTerrain3_tiles/Paper_17_AM</terrain>
+		<terrain>maps/landscape/00_AllTerrain3_tiles/Paper_18_AM</terrain>
+		<terrain>maps/landscape/00_AllTerrain3_tiles/Paper_19_AM</terrain>
+		<terrain>maps/landscape/00_AllTerrain3_tiles/Paper_20_AM</terrain>
+		<terrain>maps/landscape/00_AllTerrain3_tiles/Paper_21_AM</terrain>
+		<terrain>maps/landscape/00_AllTerrain3_tiles/Paper_22_AM</terrain>
+		<terrain>maps/landscape/00_AllTerrain3_tiles/Paper_23_AM</terrain>
+		<terrain>maps/landscape/00_AllTerrain3_tiles/Paper_24_AM</terrain>
+		<terrain>maps/landscape/00_AllTerrain3_tiles/Paper_25_AM</terrain>
+		<terrain>maps/landscape/00_AllTerrain3_tiles/Paper_26_AM</terrain>
+		<terrain>maps/landscape/00_AllTerrain3_tiles/Paper_27_AM</terrain>
+		<terrain>maps/landscape/00_AllTerrain3_tiles/Paper_28_AM</terrain>
+		<terrain>maps/landscape/00_AllTerrain3_tiles/Paper_29_AM</terrain>
+		<terrain>maps/landscape/00_AllTerrain3_tiles/Paper_30_AM</terrain>
+		<terrain>maps/landscape/00_AllTerrain3_tiles/Paper_31_AM</terrain>
+		<terrain>maps/landscape/00_AllTerrain3_tiles/Paper_32_AM</terrain>
 	</kind>
 	<kind>
 		<id>254</id>

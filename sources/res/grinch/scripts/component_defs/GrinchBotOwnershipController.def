@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<Properties>
+		<slavesLimit>
+			<Type>INT8</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</slavesLimit>
+		<slaves>
+			<Type>
+				ARRAY
+				<of>OBJECT_ID</of>
+			</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</slaves>
+	</Properties>
+	<ofEntity>
+		<Vehicle/>
+	</ofEntity>
+	<DefaultKeyName>grinch_bot_ownership_controller</DefaultKeyName>
+</root>

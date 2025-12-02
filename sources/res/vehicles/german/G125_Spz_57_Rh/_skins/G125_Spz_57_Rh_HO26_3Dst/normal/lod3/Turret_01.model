@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G125_Spz_57_Rh/_skins/G125_Spz_57_Rh_HO26_3Dst/normal/lod3/Turret_01</nodefullVisual>
+	<parent>vehicles/german/G125_Spz_57_Rh/_skins/G125_Spz_57_Rh_HO26_3Dst/normal/lod4/Turret_01</parent>
+	<extent>192.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.389473 0.000756 -1.899485</min>
+		<max>1.292168 2.365719 1.384158</max>
+	</visibilityBox>
+</root>

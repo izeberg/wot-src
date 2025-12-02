@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>10.683334</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.000002 -0.438717 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Model Object 0</name>
+		<type>model</type>
+		<resource>content/Hangars/CharacterAnimations/h30_newyear/normal/lod0/ny_Boy_01.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>animation</name>
+			<type>animation</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>10.666667</duration>
+				<resourceID>content/Hangars/CharacterAnimations/h30_newyear/animation/NY2021_Snowballs/NY21_snowballs_anim_sextet_02.fbx</resourceID>
+				<clipName/>
+				<speed>1.000000</speed>
+				<layer>0</layer>
+				<blendIn>constant</blendIn>
+				<blendOut>constant</blendOut>
+				<blendInTime>0.000000</blendInTime>
+				<blendOutTime>0.000000</blendOutTime>
+				<clipStartTime>0.000000</clipStartTime>
+				<clipEndTime>10.666667</clipEndTime>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>snowball</name>
+		<type>model</type>
+		<resource>content/Hangars/CharacterAnimations/h30_newyear/normal/lod0/ny_Snowball_02.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>animation</name>
+			<type>animation</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>10.683334</duration>
+				<resourceID>content/Hangars/CharacterAnimations/h30_newyear/animation/NY2021_Snowballs/NY21_snowballs_anim_sextet_02_snowball.fbx</resourceID>
+				<clipName/>
+				<speed>1.000000</speed>
+				<layer>0</layer>
+				<blendIn>constant</blendIn>
+				<blendOut>constant</blendOut>
+				<blendInTime>0.000000</blendInTime>
+				<blendOutTime>0.000000</blendOutTime>
+				<clipStartTime>0.000000</clipStartTime>
+				<clipEndTime>17.666666</clipEndTime>
+			</frame>
+		</track>
+		<track>
+			<name>visibility</name>
+			<type>bool</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>true</value>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Particle Object 0</name>
+		<type>particle</type>
+		<resource>particles/Environment/hangar/ny_snowball.eff</resource>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>10.666667</duration>
+				<value>snowball|NY21_Snowball_01_jnt</value>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

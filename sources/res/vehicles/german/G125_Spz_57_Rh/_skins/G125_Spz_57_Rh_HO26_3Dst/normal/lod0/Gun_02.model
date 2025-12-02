@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G125_Spz_57_Rh/_skins/G125_Spz_57_Rh_HO26_3Dst/normal/lod0/Gun_02</nodefullVisual>
+	<parent>vehicles/german/G125_Spz_57_Rh/_skins/G125_Spz_57_Rh_HO26_3Dst/normal/lod1/Gun_02</parent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.482491 -0.441657 -2.269998</min>
+		<max>0.399311 0.404955 2.936239</max>
+	</visibilityBox>
+	<extent>32.000000</extent>
+</root>

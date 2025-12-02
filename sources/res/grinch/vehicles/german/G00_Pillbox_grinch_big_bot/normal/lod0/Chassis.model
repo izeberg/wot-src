@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>grinch/vehicles/german/G00_Pillbox_grinch_big_bot/normal/lod0/Chassis</nodefullVisual>
+	<visibilityBox>
+		<min>-0.751479 -0.051272 -0.578568</min>
+		<max>0.751481 0.582359 0.581923</max>
+	</visibilityBox>
+	<parent>grinch/vehicles/german/G00_Pillbox_grinch_big_bot/normal/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+</root>

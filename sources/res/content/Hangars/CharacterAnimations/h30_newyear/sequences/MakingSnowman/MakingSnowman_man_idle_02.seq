@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>9.833334</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Model Object 0</name>
+		<type>model</type>
+		<resource>content/Hangars/CharacterAnimations/h30_newyear/normal/lod0/ny_Man_03.model</resource>
+		<track>
+			<name>animation</name>
+			<type>animation</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>9.833334</duration>
+				<resourceID>content/Hangars/CharacterAnimations/h30_newyear/animation/NY21MakingSnowman/NY21_snowman_idle_man_01.fbx</resourceID>
+				<clipName/>
+				<speed>1.000000</speed>
+				<layer>0</layer>
+				<blendIn>constant</blendIn>
+				<blendOut>constant</blendOut>
+				<blendInTime>0.000000</blendInTime>
+				<blendOutTime>0.000000</blendOutTime>
+				<clipStartTime>0.000000</clipStartTime>
+				<clipEndTime>9.833333</clipEndTime>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Snowball_man</name>
+		<type>model</type>
+		<resource>content/Hangars/CharacterAnimations/h30_newyear/normal/lod0/ny_Snowball_01.model</resource>
+		<track>
+			<name>animation</name>
+			<type>animation</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>9.833334</duration>
+				<resourceID>content/Hangars/CharacterAnimations/h30_newyear/animation/NY21MakingSnowman/NY21_snowman_idle_man_snowball_01.fbx</resourceID>
+				<clipName/>
+				<speed>1.000000</speed>
+				<layer>0</layer>
+				<blendIn>constant</blendIn>
+				<blendOut>constant</blendOut>
+				<blendInTime>0.000000</blendInTime>
+				<blendOutTime>0.000000</blendOutTime>
+				<clipStartTime>0.000000</clipStartTime>
+				<clipEndTime>9.833333</clipEndTime>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

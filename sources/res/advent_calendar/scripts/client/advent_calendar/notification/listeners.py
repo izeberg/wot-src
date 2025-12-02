@@ -7,15 +7,18 @@ from advent_calendar.gui.impl.gen.view_models.views.lobby.notifications.availabl
 from advent_calendar.gui.impl.lobby.feature.advent_helper import getDoorState, getAdventCalendarSetting, setAdventCalendarSetting
 from advent_calendar.notification.decorators import AdventCalendarDoorsAvailableDecorator
 from advent_calendar.skeletons import IAdventCalendarController
+from gui.shared import g_eventBus, EVENT_BUS_SCOPE, events
 from gui.shared.notifications import NotificationPriorityLevel
 from helpers import dependency, time_utils
 from notification.listeners import BaseReminderListener
 from notification.settings import NOTIFICATION_TYPE, NotificationData
 from skeletons.gui.shared import IItemsCache
+from skeletons.new_year import INewYearController
 
 class AdventCalendarDoorsAvailableListener(BaseReminderListener):
     __adventController = dependency.descriptor(IAdventCalendarController)
     __itemsCache = dependency.descriptor(IItemsCache)
+    __nyController = dependency.descriptor(INewYearController)
     MSG_ID = 0
     POPUP_NOTIFICATION_DELAY = 30
     POPUP_NOTIFICATION_DELAY_WITH_HO = 90
@@ -31,10 +34,12 @@ class AdventCalendarDoorsAvailableListener(BaseReminderListener):
         self.__adventController.onDoorOpened += self.__tryNotify
         self.__adventController.onDoorsStateChanged += self.__tryNotify
         self.__adventController.onConfigChanged += self.__tryNotify
+        g_eventBus.addListener(events.NyInitialNotificationEvent.INITIAL_NOTIFICATION_SHOWN, self.__onNyInitialNotificationShown, EVENT_BUS_SCOPE.LOBBY)
         return result
 
     def stop(self):
         super(AdventCalendarDoorsAvailableListener, self).stop()
+        g_eventBus.removeListener(events.NyInitialNotificationEvent.INITIAL_NOTIFICATION_SHOWN, self.__onNyInitialNotificationShown, EVENT_BUS_SCOPE.LOBBY)
         self.__adventController.onConfigChanged -= self.__tryNotify
         self.__adventController.onDoorsStateChanged -= self.__tryNotify
         self.__adventController.onDoorOpened -= self.__tryNotify
@@ -82,22 +87,21 @@ class AdventCalendarDoorsAvailableListener(BaseReminderListener):
         self.__popUpNotificationCallbackID = BigWorld.callback(delay, callback)
 
     def __getNotificationInfo(self, availableDoorsAmount):
-        canShowPopUp = False
-        state = AvailableDoorsNotificationState.DOORS_AVAILABLE
         currentDay = self.__adventController.getCurrentDayNumber()
         firstEntryNTDay = getAdventCalendarSetting(AdventCalendar.FIRST_ENTRY_NOTIFICATION_SHOWING_DAY)
         if firstEntryNTDay < 0:
             setAdventCalendarSetting(AdventCalendar.FIRST_ENTRY_NOTIFICATION_SHOWING_DAY, currentDay)
             firstEntryNTDay = currentDay
-        isFirstEntry = firstEntryNTDay == currentDay
+        isPopUpSeenToday = getAdventCalendarSetting(AdventCalendar.LAST_DAY_POPUP_SEEN) == currentDay
         if self.__adventController.isInPostActivePhase():
-            state = AvailableDoorsNotificationState.POST_EVENT
-        elif isFirstEntry:
-            state = AvailableDoorsNotificationState.FIRST_ENTRY
+            isSpecialPostEventDay = self.__isFirstDayPostEvent() or self.__isLastDayPostEvent()
+            canShowPopUp = isSpecialPostEventDay and not isPopUpSeenToday
+            return (
+             AvailableDoorsNotificationState.POST_EVENT, canShowPopUp)
+        if firstEntryNTDay == currentDay:
+            return (AvailableDoorsNotificationState.FIRST_ENTRY, not isPopUpSeenToday)
         isEnoughAvailableDoors = availableDoorsAmount >= MIN_AVAILABLE_DOORS_REQUIRED_FOR_NOTIFICATION
-        if self.__isFirstDayPostEvent() or self.__isLastDayPostEvent() or isEnoughAvailableDoors or isFirstEntry:
-            canShowPopUp = getAdventCalendarSetting(AdventCalendar.LAST_DAY_POPUP_SEEN) < currentDay
-        return (state, canShowPopUp)
+        return (AvailableDoorsNotificationState.DOORS_AVAILABLE, isEnoughAvailableDoors and not isPopUpSeenToday)
 
     def __isFirstDayPostEvent(self):
         startDate = self.__adventController.postEventStartDate
@@ -106,6 +110,9 @@ class AdventCalendarDoorsAvailableListener(BaseReminderListener):
     def __isLastDayPostEvent(self):
         endDate = self.__adventController.postEventEndDate
         return endDate > self.__adventController.getCurrentTime > endDate - time_utils.ONE_DAY
+
+    def __onNyInitialNotificationShown(self, _):
+        self.__tryNotify()
 
     def __cancelPopUpNotificationCallback(self):
         if self.__popUpNotificationCallbackID is not None:

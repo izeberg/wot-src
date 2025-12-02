@@ -1,0 +1,1903 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>nyMan_root_jnt</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>nyMan_hips_jnt</identifier>
+				<transform>
+					<row0>0.000000 1.000000 0.000000</row0>
+					<row1>-0.000000 0.000000 -1.000000</row1>
+					<row2>-1.000000 0.000000 0.000000</row2>
+					<row3>-0.000021 0.916524 -0.012498</row3>
+				</transform>
+				<node>
+					<identifier>nyMan_leg_left_jnt</identifier>
+					<transform>
+						<row0>-0.994735 -0.035691 -0.096066</row0>
+						<row1>0.020260 0.850406 -0.525737</row1>
+						<row2>0.100459 -0.524915 -0.845205</row2>
+						<row3>-0.049841 0.006890 -0.097444</row3>
+					</transform>
+					<node>
+						<identifier>nyMan_knee_left_jnt</identifier>
+						<transform>
+							<row0>0.997944 -0.063981 -0.003784</row0>
+							<row1>0.063969 0.997947 -0.003214</row1>
+							<row2>0.003982 0.002965 0.999988</row2>
+							<row3>0.362338 0.000000 -0.000000</row3>
+						</transform>
+						<node>
+							<identifier>nyMan_ancle_left_jnt</identifier>
+							<transform>
+								<row0>0.743892 0.660958 -0.098784</row0>
+								<row1>-0.666195 0.745126 -0.031183</row1>
+								<row2>0.052996 0.089007 0.994620</row2>
+								<row3>0.383860 -0.000000 0.000000</row3>
+							</transform>
+							<node>
+								<identifier>nyMan_toe_left_jnt</identifier>
+								<transform>
+									<row0>0.644029 0.763806 0.042741</row0>
+									<row1>-0.763645 0.645208 -0.023491</row1>
+									<row2>-0.045520 -0.017510 0.998810</row2>
+									<row3>0.162538 -0.000000 0.000000</row3>
+								</transform>
+								<node>
+									<identifier>nyMan_toe_left_jnt_BlendBone</identifier>
+									<transform>
+										<row0>0.487671 -0.045682 0.871832</row0>
+										<row1>-0.020678 0.997746 0.063846</row1>
+										<row2>0.872783 0.049164 -0.485627</row2>
+										<row3>-0.153779 0.008267 -0.148870</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>nyMan_ancle_left_jnt_BlendBone</identifier>
+								<transform>
+									<row0>0.309273 0.327746 0.892711</row0>
+									<row1>-0.778147 0.626842 0.039448</row1>
+									<row2>0.546659 0.706861 -0.448900</row2>
+									<row3>0.063964 -0.109517 -0.155460</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>nyMan_knee_left_jnt_BlendBone</identifier>
+							<transform>
+								<row0>0.059033 0.528086 0.847137</row0>
+								<row1>-0.994366 -0.043736 0.096557</row1>
+								<row2>-0.088041 0.848064 -0.522529</row2>
+								<row3>0.496163 -0.053163 -0.157527</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>nyMan_leg_left_jnt_BlendBone</identifier>
+						<transform>
+							<row0>0.096066 0.525737 0.845206</row0>
+							<row1>-0.994735 0.020260 0.100459</row1>
+							<row2>-0.035691 0.850406 -0.524915</row2>
+							<row3>0.853452 -0.085266 -0.159232</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>nyMan_leg_right_jnt</identifier>
+					<transform>
+						<row0>0.994735 0.035680 -0.096074</row0>
+						<row1>-0.020273 -0.850407 -0.525735</row1>
+						<row2>-0.100460 0.524915 -0.845205</row2>
+						<row3>-0.049841 0.006890 0.097444</row3>
+					</transform>
+					<node>
+						<identifier>nyMan_knee_right_jnt</identifier>
+						<transform>
+							<row0>0.997942 -0.064006 -0.003786</row0>
+							<row1>0.063994 0.997945 -0.003214</row1>
+							<row2>0.003983 0.002965 0.999988</row2>
+							<row3>-0.362339 -0.000000 -0.000000</row3>
+						</transform>
+						<node>
+							<identifier>nyMan_ancle_right_jnt</identifier>
+							<transform>
+								<row0>0.743884 0.660968 -0.098784</row0>
+								<row1>-0.666205 0.745117 -0.031184</row1>
+								<row2>0.052994 0.089007 0.994620</row2>
+								<row3>-0.383860 0.000022 0.000035</row3>
+							</transform>
+							<node>
+								<identifier>nyMan_toe_right_jnt</identifier>
+								<transform>
+									<row0>0.644029 0.763806 0.042741</row0>
+									<row1>-0.763645 0.645208 -0.023491</row1>
+									<row2>-0.045520 -0.017510 0.998810</row2>
+									<row3>-0.162538 -0.000000 -0.000000</row3>
+								</transform>
+								<node>
+									<identifier>nyMan_toeTip_right_jnt</identifier>
+									<transform>
+										<row0>1.000000 -0.000004 0.000007</row0>
+										<row1>0.000004 1.000000 -0.000009</row1>
+										<row2>-0.000007 0.000009 1.000000</row2>
+										<row3>-0.111122 0.000000 -0.000000</row3>
+									</transform>
+									<node>
+										<identifier>nyMan_toeTip_right_jnt_BlendBone</identifier>
+										<transform>
+											<row0>0.487678 -0.045688 0.871827</row0>
+											<row1>0.020681 -0.997745 -0.063855</row1>
+											<row2>-0.872779 -0.049171 0.485633</row2>
+											<row3>0.264902 -0.008270 0.148868</row3>
+										</transform>
+									</node>
+								</node>
+								<node>
+									<identifier>nyMan_toe_right_jnt_BlendBone</identifier>
+									<transform>
+										<row0>0.487671 -0.045682 0.871832</row0>
+										<row1>0.020677 -0.997746 -0.063846</row1>
+										<row2>-0.872783 -0.049163 0.485627</row2>
+										<row3>0.153779 -0.008269 0.148870</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>nyMan_ancle_right_jnt_BlendBone</identifier>
+								<transform>
+									<row0>0.309274 0.327745 0.892711</row0>
+									<row1>0.778147 -0.626842 -0.039448</row1>
+									<row2>-0.546660 -0.706860 0.448900</row2>
+									<row3>-0.063961 0.109515 0.155460</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>nyMan_knee_right_jnt_BlendBone</identifier>
+							<transform>
+								<row0>0.059026 0.528087 0.847137</row0>
+								<row1>0.994366 0.043748 -0.096557</row1>
+								<row2>0.088051 -0.848063 0.522529</row2>
+								<row3>-0.496161 0.053184 0.157562</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>nyMan_leg_right_jnt_BlendBone</identifier>
+						<transform>
+							<row0>0.096074 0.525735 0.845205</row0>
+							<row1>0.994735 -0.020273 -0.100460</row1>
+							<row2>0.035680 -0.850407 0.524915</row2>
+							<row3>-0.853447 0.085299 0.159267</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>nyMan_spine01_jnt</identifier>
+					<transform>
+						<row0>0.988917 0.148471 -0.000000</row0>
+						<row1>-0.148471 0.988917 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.070496 0.000000 0.000000</row3>
+					</transform>
+					<node>
+						<identifier>nyMan_spine02_jnt</identifier>
+						<transform>
+							<row0>0.990090 -0.140432 -0.000000</row0>
+							<row1>0.140432 0.990090 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>0.139378 0.000000 -0.000000</row3>
+						</transform>
+						<node>
+							<identifier>nyMan_spine03_jnt</identifier>
+							<transform>
+								<row0>0.996838 -0.079465 -0.000000</row0>
+								<row1>0.079465 0.996838 -0.000000</row1>
+								<row2>-0.000000 -0.000000 1.000000</row2>
+								<row3>0.137838 0.000000 -0.000000</row3>
+							</transform>
+							<node>
+								<identifier>nyMan_chest_jnt</identifier>
+								<transform>
+									<row0>0.998970 -0.045375 0.000000</row0>
+									<row1>0.045375 0.998970 0.000000</row1>
+									<row2>0.000000 0.000000 1.000000</row2>
+									<row3>0.120324 0.000000 0.000000</row3>
+								</transform>
+								<node>
+									<identifier>nyMan_neck01_jnt</identifier>
+									<transform>
+										<row0>0.981410 0.191924 0.000137</row0>
+										<row1>-0.191924 0.981410 -0.000013</row1>
+										<row2>-0.000137 -0.000013 1.000000</row2>
+										<row3>0.112106 0.000000 0.000000</row3>
+									</transform>
+									<node>
+										<identifier>nyMan_head_jnt</identifier>
+										<transform>
+											<row0>0.997090 -0.076234 -0.000137</row0>
+											<row1>0.076234 0.997090 0.000003</row1>
+											<row2>0.000137 -0.000013 1.000000</row2>
+											<row3>0.110516 0.000000 0.000000</row3>
+										</transform>
+										<node>
+											<identifier>nyMan_headTip_jnt</identifier>
+											<transform>
+												<row0>0.000000 0.000000 -1.000000</row0>
+												<row1>1.000000 0.000000 0.000000</row1>
+												<row2>0.000000 -1.000000 0.000000</row2>
+												<row3>0.180468 0.000000 0.000000</row3>
+											</transform>
+											<node>
+												<identifier>nyMan_headTip_jnt_BlendBone</identifier>
+												<transform>
+													<row0>1.000000 -0.000000 0.000000</row0>
+													<row1>0.000000 1.000000 0.000000</row1>
+													<row2>0.000000 0.000000 -1.000000</row2>
+													<row3>0.000036 -1.784710 0.021084</row3>
+												</transform>
+											</node>
+										</node>
+										<node>
+											<identifier>nyMan_head_jnt_BlendBone</identifier>
+											<transform>
+												<row0>0.000000 -0.000000 -1.000000</row0>
+												<row1>1.000000 -0.000000 0.000000</row1>
+												<row2>0.000000 1.000000 -0.000000</row2>
+												<row3>-1.604242 -0.021084 -0.000036</row3>
+											</transform>
+										</node>
+									</node>
+									<node>
+										<identifier>nyMan_neck01_jnt_BlendBone</identifier>
+										<transform>
+											<row0>-0.000137 0.000013 -1.000000</row0>
+											<row1>0.997090 -0.076234 -0.000137</row1>
+											<row2>0.076234 0.997090 0.000003</row2>
+											<row3>-1.490665 0.101275 0.000185</row3>
+										</transform>
+									</node>
+								</node>
+								<node>
+									<identifier>nyMan_shoulder_left_jnt</identifier>
+									<transform>
+										<row0>-0.089431 -0.377554 -0.921659</row0>
+										<row1>-0.160175 0.918774 -0.360830</row1>
+										<row2>0.983029 0.115358 -0.142641</row2>
+										<row3>0.039112 0.001603 -0.058309</row3>
+									</transform>
+									<node>
+										<identifier>nyMan_arm_left_jnt</identifier>
+										<transform>
+											<row0>0.649896 0.196859 -0.734085</row0>
+											<row1>-0.238424 0.969923 0.049024</row1>
+											<row2>0.721657 0.143163 0.677286</row2>
+											<row3>0.147306 -0.000000 0.000000</row3>
+										</transform>
+										<node>
+											<identifier>nyMan_foreArm_left_jnt</identifier>
+											<transform>
+												<row0>0.914422 0.403879 0.026750</row0>
+												<row1>-0.403901 0.914790 -0.004810</row1>
+												<row2>-0.026414 -0.006406 0.999630</row2>
+												<row3>0.260807 0.000000 -0.000000</row3>
+											</transform>
+											<node>
+												<identifier>nyMan_hand_left_jnt</identifier>
+												<transform>
+													<row0>0.987120 0.148524 -0.059453</row0>
+													<row1>-0.152035 0.986573 -0.059667</row1>
+													<row2>0.049793 0.067937 0.996446</row2>
+													<row3>0.253149 0.000000 0.000000</row3>
+												</transform>
+												<node>
+													<identifier>nyMan_index01_left_jnt</identifier>
+													<transform>
+														<row0>0.991923 0.124413 0.024704</row0>
+														<row1>-0.088310 0.537562 0.838587</row1>
+														<row2>0.091051 -0.833995 0.544207</row2>
+														<row3>0.024871 0.012331 -0.010898</row3>
+													</transform>
+													<node>
+														<identifier>nyMan_index02_left_jnt</identifier>
+														<transform>
+															<row0>0.980293 -0.157172 -0.119675</row0>
+															<row1>0.158310 0.987389 0.000000</row1>
+															<row2>0.118165 -0.018946 0.992813</row2>
+															<row3>0.077368 0.000000 -0.000000</row3>
+														</transform>
+														<node>
+															<identifier>nyMan_index03_left_jnt</identifier>
+															<transform>
+																<row0>0.909465 -0.414219 0.036012</row0>
+																<row1>0.414154 0.910156 0.009581</row1>
+																<row2>-0.036745 0.006200 0.999305</row2>
+																<row3>0.040294 -0.000000 -0.000000</row3>
+															</transform>
+															<node>
+																<identifier>nyMan_index04_left_jnt</identifier>
+																<transform>
+																	<row0>0.988828 -0.144957 0.034732</row0>
+																	<row1>0.145050 0.989424 -0.000157</row1>
+																	<row2>-0.034342 0.005194 0.999397</row2>
+																	<row3>0.021329 0.000000 -0.000000</row3>
+																</transform>
+																<node>
+																	<identifier>nyMan_index05_left_jnt</identifier>
+																	<transform>
+																		<row0>0.017348 0.681999 0.731147</row0>
+																		<row1>-0.977677 0.164716 -0.130447</row1>
+																		<row2>-0.209396 -0.712563 0.669632</row2>
+																		<row3>0.026238 0.000000 0.000000</row3>
+																	</transform>
+																	<node>
+																		<identifier>nyMan_index05_left_jnt_BlendBone</identifier>
+																		<transform>
+																			<row0>1.000000 -0.000009 0.000007</row0>
+																			<row1>0.000009 1.000000 -0.000002</row1>
+																			<row2>0.000007 -0.000002 -1.000000</row2>
+																			<row3>-0.548310 -0.862366 0.149282</row3>
+																		</transform>
+																	</node>
+																</node>
+																<node>
+																	<identifier>nyMan_index04_left_jnt_BlendBone</identifier>
+																	<transform>
+																		<row0>0.017354 0.681993 0.731153</row0>
+																		<row1>-0.977676 0.164723 -0.130442</row1>
+																		<row2>0.209398 0.712568 -0.669627</row2>
+																		<row3>0.828583 -0.622365 -0.188438</row3>
+																	</transform>
+																</node>
+															</node>
+															<node>
+																<identifier>nyMan_index03_left_jnt_BlendBone</identifier>
+																<transform>
+																	<row0>0.090974 0.676062 0.731208</row0>
+																	<row1>-0.938381 0.304025 -0.164346</row1>
+																	<row2>0.333413 0.671200 -0.662062</row2>
+																	<row3>0.756852 -0.736871 -0.159448</row3>
+																</transform>
+															</node>
+														</node>
+														<node>
+															<identifier>nyMan_index02_left_jnt_BlendBone</identifier>
+															<transform>
+																<row0>0.335863 0.582172 0.740453</row0>
+																<row1>-0.721472 0.664386 -0.195112</row1>
+																<row2>0.605536 0.468686 -0.643164</row2>
+																<row3>0.429305 -0.985159 -0.139142</row3>
+															</transform>
+														</node>
+													</node>
+													<node>
+														<identifier>nyMan_index01_left_jnt_BlendBone</identifier>
+														<transform>
+															<row0>0.508904 0.508014 0.694938</row0>
+															<row1>-0.625131 0.773100 -0.107368</row1>
+															<row2>0.591800 0.379787 -0.711009</row2>
+															<row3>0.325811 -1.037574 -0.189519</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>nyMan_midle01_left_jnt</identifier>
+													<transform>
+														<row0>0.999151 0.004306 0.040981</row0>
+														<row1>-0.038193 0.470152 0.881758</row1>
+														<row2>-0.015470 -0.882575 0.469918</row2>
+														<row3>0.026252 0.000012 -0.003463</row3>
+													</transform>
+													<node>
+														<identifier>nyMan_midle02_left_jnt</identifier>
+														<transform>
+															<row0>0.992200 -0.123995 -0.012796</row0>
+															<row1>0.124005 0.992281 -0.000000</row1>
+															<row2>0.012697 -0.001587 0.999918</row2>
+															<row3>0.074509 -0.000000 0.000000</row3>
+														</transform>
+														<node>
+															<identifier>nyMan_midle03_left_jnt</identifier>
+															<transform>
+																<row0>0.900726 -0.433002 -0.034678</row0>
+																<row1>0.420226 0.888796 -0.182900</row1>
+																<row2>0.110018 0.150170 0.982520</row2>
+																<row3>0.042232 -0.000000 -0.000000</row3>
+															</transform>
+															<node>
+																<identifier>nyMan_midle04_left_jnt</identifier>
+																<transform>
+																	<row0>0.986923 -0.161130 -0.004391</row0>
+																	<row1>0.159538 0.972556 0.169361</row1>
+																	<row2>-0.023019 -0.167847 0.985544</row2>
+																	<row3>0.030105 -0.000000 -0.000000</row3>
+																</transform>
+																<node>
+																	<identifier>nyMan_midle05_left_jnt</identifier>
+																	<transform>
+																		<row0>0.009467 0.792282 0.610082</row0>
+																		<row1>-0.988585 0.099158 -0.113431</row1>
+																		<row2>-0.150364 -0.602044 0.784177</row2>
+																		<row3>0.026823 0.000000 0.000000</row3>
+																	</transform>
+																	<node>
+																		<identifier>nyMan_midle05_left_jnt_BlendBone</identifier>
+																		<transform>
+																			<row0>1.000000 -0.000009 0.000007</row0>
+																			<row1>0.000009 1.000000 -0.000002</row1>
+																			<row2>0.000007 -0.000002 -1.000000</row2>
+																			<row3>-0.567960 -0.846140 0.123636</row3>
+																		</transform>
+																	</node>
+																</node>
+																<node>
+																	<identifier>nyMan_midle04_left_jnt_BlendBone</identifier>
+																	<transform>
+																		<row0>0.009475 0.792277 0.610088</row0>
+																		<row1>-0.988585 0.099166 -0.113427</row1>
+																		<row2>0.150366 0.602050 -0.784172</row2>
+																		<row3>0.839337 -0.608320 -0.153571</row3>
+																	</transform>
+																</node>
+															</node>
+															<node>
+																<identifier>nyMan_midle03_left_jnt_BlendBone</identifier>
+																<transform>
+																	<row0>0.121705 0.666605 0.735408</row0>
+																	<row1>-0.957226 0.274774 -0.090652</row1>
+																	<row2>0.262500 0.692919 -0.671533</row2>
+																	<row3>0.764951 -0.701092 -0.258062</row3>
+																</transform>
+															</node>
+														</node>
+														<node>
+															<identifier>nyMan_midle02_left_jnt_BlendBone</identifier>
+															<transform>
+																<row0>0.470655 0.650213 0.596411</row0>
+																<row1>-0.756704 0.645086 -0.106129</row1>
+																<row2>0.453743 0.401357 -0.795632</row2>
+																<row3>0.408234 -0.993106 -0.151849</row3>
+															</transform>
+														</node>
+													</node>
+													<node>
+														<identifier>nyMan_midle01_left_jnt_BlendBone</identifier>
+														<transform>
+															<row0>0.555187 0.585890 0.590340</row0>
+															<row1>-0.672156 0.734102 -0.096437</row1>
+															<row2>0.489871 0.343260 -0.801373</row2>
+															<row3>0.354481 -1.035819 -0.157060</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>nyMan_pinky01_left_jnt</identifier>
+													<transform>
+														<row0>0.975240 -0.220007 0.022438</row0>
+														<row1>-0.005459 0.077480 0.996979</row1>
+														<row2>-0.221080 -0.972416 0.074361</row2>
+														<row3>0.024675 -0.025578 0.010100</row3>
+													</transform>
+													<node>
+														<identifier>nyMan_pinky02_left_jnt</identifier>
+														<transform>
+															<row0>0.978883 0.030083 0.202197</row0>
+															<row1>-0.030718 0.999528 -0.000000</row1>
+															<row2>-0.202102 -0.006211 0.979345</row2>
+															<row3>0.067372 0.000000 -0.000000</row3>
+														</transform>
+														<node>
+															<identifier>nyMan_pinky03_left_jnt</identifier>
+															<transform>
+																<row0>0.952375 -0.303552 -0.028956</row0>
+																<row1>0.303630 0.952788 -0.001749</row1>
+																<row2>0.028120 -0.007127 0.999579</row2>
+																<row3>0.028402 0.000000 -0.000000</row3>
+															</transform>
+															<node>
+																<identifier>nyMan_pinky04_left_jnt</identifier>
+																<transform>
+																	<row0>0.996172 0.043042 -0.076076</row0>
+																	<row1>-0.042988 0.999073 0.002346</row1>
+																	<row2>0.076107 0.000934 0.997099</row2>
+																	<row3>0.018458 0.000000 0.000000</row3>
+																</transform>
+																<node>
+																	<identifier>nyMan_pinky05_left_jnt</identifier>
+																	<transform>
+																		<row0>0.397122 0.912758 0.095741</row0>
+																		<row1>-0.898949 0.407874 -0.159779</row1>
+																		<row2>-0.184890 -0.022615 0.982499</row2>
+																		<row3>0.025906 0.000000 0.000000</row3>
+																	</transform>
+																	<node>
+																		<identifier>nyMan_pinky05_left_jnt_BlendBone</identifier>
+																		<transform>
+																			<row0>1.000000 -0.000009 0.000007</row0>
+																			<row1>0.000009 1.000000 -0.000002</row1>
+																			<row2>0.000007 -0.000002 -1.000000</row2>
+																			<row3>-0.593394 -0.867847 0.060566</row3>
+																		</transform>
+																	</node>
+																</node>
+																<node>
+																	<identifier>nyMan_pinky04_left_jnt_BlendBone</identifier>
+																	<transform>
+																		<row0>0.397128 0.912755 0.095750</row0>
+																		<row1>-0.898946 0.407881 -0.159780</row1>
+																		<row2>0.184895 0.022621 -0.982498</row2>
+																		<row3>0.559209 -0.896967 0.141357</row3>
+																	</transform>
+																</node>
+															</node>
+															<node>
+																<identifier>nyMan_pinky03_left_jnt_BlendBone</identifier>
+																<transform>
+																	<row0>0.363658 0.929091 0.067401</row0>
+																	<row1>-0.925199 0.368662 -0.089971</row1>
+																	<row2>0.108440 0.029640 -0.993661</row2>
+																	<row3>0.624844 -0.871934 0.096301</row3>
+																</transform>
+															</node>
+														</node>
+														<node>
+															<identifier>nyMan_pinky02_left_jnt_BlendBone</identifier>
+															<transform>
+																<row0>0.630334 0.774358 0.055218</row0>
+																<row1>-0.771730 0.632744 -0.063788</row1>
+																<row2>0.084333 0.002406 -0.996435</row2>
+																<row3>0.361451 -1.021127 0.079692</row3>
+															</transform>
+														</node>
+													</node>
+													<node>
+														<identifier>nyMan_pinky01_left_jnt_BlendBone</identifier>
+														<transform>
+															<row0>0.582077 0.792612 0.181529</row0>
+															<row1>-0.761978 0.609625 -0.218512</row1>
+															<row2>0.283860 0.011130 -0.958801</row2>
+															<row3>0.436451 -1.010267 0.151130</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>nyMan_ring01_left_jnt</identifier>
+													<transform>
+														<row0>0.995059 -0.093387 -0.033721</row0>
+														<row1>0.053261 0.215423 0.975067</row1>
+														<row2>-0.083795 -0.972045 0.219332</row2>
+														<row3>0.025834 -0.013026 0.004383</row3>
+													</transform>
+													<node>
+														<identifier>nyMan_ring02_left_jnt</identifier>
+														<transform>
+															<row0>0.994006 0.083059 0.071085</row0>
+															<row1>-0.083270 0.996527 -0.000000</row1>
+															<row2>-0.070838 -0.005919 0.997470</row2>
+															<row3>0.070850 -0.000000 -0.000000</row3>
+														</transform>
+														<node>
+															<identifier>nyMan_ring03_left_jnt</identifier>
+															<transform>
+																<row0>0.842240 -0.526517 0.115809</row0>
+																<row1>0.525243 0.849827 0.043760</row1>
+																<row2>-0.121458 0.023971 0.992307</row2>
+																<row3>0.039693 0.000000 0.000000</row3>
+															</transform>
+															<node>
+																<identifier>nyMan_ring04_left_jnt</identifier>
+																<transform>
+																	<row0>0.988123 -0.142758 -0.056869</row0>
+																	<row1>0.143064 0.989713 0.001323</row1>
+																	<row2>0.056095 -0.009443 0.998381</row2>
+																	<row3>0.025479 -0.000000 -0.000000</row3>
+																</transform>
+																<node>
+																	<identifier>nyMan_ring05_left_jnt</identifier>
+																	<transform>
+																		<row0>0.011069 0.962509 0.271024</row0>
+																		<row1>-0.989950 0.048762 -0.132743</row1>
+																		<row2>-0.140982 -0.266831 0.953376</row2>
+																		<row3>0.030211 -0.000000 0.000000</row3>
+																	</transform>
+																	<node>
+																		<identifier>nyMan_ring05_left_jnt_BlendBone</identifier>
+																		<transform>
+																			<row0>1.000000 -0.000009 0.000007</row0>
+																			<row1>0.000009 1.000000 -0.000002</row1>
+																			<row2>0.000007 -0.000002 -1.000000</row2>
+																			<row3>-0.577156 -0.846106 0.094346</row3>
+																		</transform>
+																	</node>
+																</node>
+																<node>
+																	<identifier>nyMan_ring04_left_jnt_BlendBone</identifier>
+																	<transform>
+																		<row0>0.011076 0.962507 0.271032</row0>
+																		<row1>-0.989950 0.048771 -0.132743</row1>
+																		<row2>0.140984 0.266838 -0.953373</row2>
+																		<row3>0.848125 -0.621950 0.045839</row3>
+																	</transform>
+																</node>
+															</node>
+															<node>
+																<identifier>nyMan_ring03_left_jnt_BlendBone</identifier>
+																<transform>
+																	<row0>0.163848 0.948464 0.271236</row0>
+																	<row1>-0.978661 0.190846 -0.076166</row1>
+																	<row2>0.124005 0.252968 -0.959494</row2>
+																	<row3>0.777123 -0.737061 -0.003290</row3>
+																</transform>
+															</node>
+														</node>
+														<node>
+															<identifier>nyMan_ring02_left_jnt_BlendBone</identifier>
+															<transform>
+																<row0>0.603229 0.726264 0.329630</row0>
+																<row1>-0.714776 0.675641 -0.180566</row1>
+																<row2>0.353850 0.126688 -0.926682</row2>
+																<row3>0.307482 -1.035622 0.054479</row3>
+															</transform>
+														</node>
+													</node>
+													<node>
+														<identifier>nyMan_ring01_left_jnt_BlendBone</identifier>
+														<transform>
+															<row0>0.515787 0.771894 0.371676</row0>
+															<row1>-0.753961 0.614995 -0.230920</row1>
+															<row2>0.406825 0.161124 -0.899185</row2>
+															<row3>0.458865 -1.006808 0.076199</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>nyMan_thumb01_left_jnt</identifier>
+													<transform>
+														<row0>0.776117 0.342481 -0.529480</row0>
+														<row1>-0.603859 0.645528 -0.467598</row1>
+														<row2>0.181651 0.682642 0.707816</row2>
+														<row3>0.009065 0.015846 -0.015381</row3>
+													</transform>
+													<node>
+														<identifier>nyMan_thumb02_left_jnt</identifier>
+														<transform>
+															<row0>0.990817 -0.133244 0.022967</row0>
+															<row1>0.133279 0.991078 -0.000000</row1>
+															<row2>-0.022763 0.003061 0.999736</row2>
+															<row3>0.051114 0.000000 0.000000</row3>
+														</transform>
+														<node>
+															<identifier>nyMan_thumb03_left_jnt</identifier>
+															<transform>
+																<row0>0.995282 0.093807 0.024786</row0>
+																<row1>-0.095566 0.903628 0.417521</row1>
+																<row2>0.016769 -0.417920 0.908329</row2>
+																<row3>0.031912 -0.000000 0.000000</row3>
+															</transform>
+															<node>
+																<identifier>nyMan_thumb04_left_jnt</identifier>
+																<transform>
+																	<row0>-0.051483 -0.568730 0.820911</row0>
+																	<row1>-0.688022 0.616004 0.383620</row1>
+																	<row2>-0.723861 -0.545055 -0.423013</row2>
+																	<row3>0.039099 -0.000000 0.000000</row3>
+																</transform>
+																<node>
+																	<identifier>nyMan_thumb04_left_jnt_BlendBone</identifier>
+																	<transform>
+																		<row0>1.000000 -0.000009 0.000007</row0>
+																		<row1>0.000009 1.000000 -0.000002</row1>
+																		<row2>0.000007 -0.000002 -1.000000</row2>
+																		<row3>-0.473142 -0.909245 0.148014</row3>
+																	</transform>
+																</node>
+															</node>
+															<node>
+																<identifier>nyMan_thumb03_left_jnt_BlendBone</identifier>
+																<transform>
+																	<row0>-0.051483 -0.568739 0.820905</row0>
+																	<row1>-0.688021 0.616000 0.383628</row1>
+																	<row2>0.723862 0.545050 0.423018</row2>
+																	<row3>0.581897 -0.371684 -0.799825</row3>
+																</transform>
+															</node>
+														</node>
+														<node>
+															<identifier>nyMan_thumb02_left_jnt_BlendBone</identifier>
+															<transform>
+																<row0>0.016878 -0.861831 0.506915</row0>
+																<row1>-0.737211 0.331768 0.588600</row1>
+																<row2>0.675452 0.383638 0.629751</row2>
+																<row3>0.633172 0.052984 -0.867267</row3>
+															</transform>
+														</node>
+													</node>
+													<node>
+														<identifier>nyMan_thumb01_left_jnt_BlendBone</identifier>
+														<transform>
+															<row0>-0.109679 -0.854839 0.507169</row0>
+															<row1>-0.699621 0.428839 0.571513</row1>
+															<row2>0.706045 0.292143 0.645099</row2>
+															<row3>0.705275 -0.034509 -0.852496</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>nyMan_hand_left_jnt_BlendBone</identifier>
+													<transform>
+														<row0>0.523206 -0.243171 0.816776</row0>
+														<row1>-0.698130 0.427359 0.574438</row1>
+														<row2>0.488743 0.870766 -0.053832</row2>
+														<row3>0.422423 -0.346837 -0.976083</row3>
+													</transform>
+												</node>
+											</node>
+											<node>
+												<identifier>nyMan_foreArm_left_jnt_BlendBone</identifier>
+												<transform>
+													<row0>0.594107 -0.106708 0.797277</row0>
+													<row1>-0.725509 0.356957 0.588403</row1>
+													<row2>0.347381 0.928006 -0.134653</row2>
+													<row3>0.674261 -0.345752 -0.977034</row3>
+												</transform>
+											</node>
+										</node>
+										<node>
+											<identifier>nyMan_arm_left_jnt_BlendBone</identifier>
+											<transform>
+												<row0>0.565304 0.137225 0.813388</row0>
+												<row1>-0.823138 0.029754 0.567061</row1>
+												<row2>-0.053613 0.990093 -0.129775</row2>
+												<row3>1.042822 -0.037713 -0.956973</row3>
+											</transform>
+										</node>
+									</node>
+									<node>
+										<identifier>nyMan_shoulder_left_jnt_BlendBone</identifier>
+										<transform>
+											<row0>0.921659 0.360830 0.142641</row0>
+											<row1>-0.132825 -0.052001 0.989774</row1>
+											<row2>-0.364557 0.931181 0.000000</row2>
+											<row3>0.143417 0.031708 -1.415513</row3>
+										</transform>
+									</node>
+								</node>
+								<node>
+									<identifier>nyMan_shoulder_right_jnt</identifier>
+									<transform>
+										<row0>0.089431 0.377554 -0.921659</row0>
+										<row1>0.160175 -0.918774 -0.360830</row1>
+										<row2>-0.983029 -0.115358 -0.142641</row2>
+										<row3>0.039115 0.001603 0.058309</row3>
+									</transform>
+									<node>
+										<identifier>nyMan_arm_right_jnt</identifier>
+										<transform>
+											<row0>0.649892 0.196855 -0.734091</row0>
+											<row1>-0.238422 0.969924 0.049021</row1>
+											<row2>0.721662 0.143166 0.677280</row2>
+											<row3>-0.147306 -0.000000 0.000004</row3>
+										</transform>
+										<node>
+											<identifier>nyMan_foreArm_right_jnt</identifier>
+											<transform>
+												<row0>0.914421 0.403880 0.026751</row0>
+												<row1>-0.403902 0.914790 -0.004810</row1>
+												<row2>-0.026414 -0.006406 0.999631</row2>
+												<row3>-0.260806 -0.000000 -0.000001</row3>
+											</transform>
+											<node>
+												<identifier>nyMan_hand_right_jnt</identifier>
+												<transform>
+													<row0>0.987121 0.148518 -0.059453</row0>
+													<row1>-0.152029 0.986573 -0.059669</row1>
+													<row2>0.049793 0.067939 0.996446</row2>
+													<row3>-0.253147 -0.000001 -0.000001</row3>
+												</transform>
+												<node>
+													<identifier>nyMan_index01_right_jnt</identifier>
+													<transform>
+														<row0>0.991923 0.124414 0.024704</row0>
+														<row1>-0.088310 0.537562 0.838587</row1>
+														<row2>0.091052 -0.833995 0.544207</row2>
+														<row3>-0.024873 -0.012329 0.010900</row3>
+													</transform>
+													<node>
+														<identifier>nyMan_index02_right_jnt</identifier>
+														<transform>
+															<row0>0.980293 -0.157172 -0.119675</row0>
+															<row1>0.158310 0.987389 -0.000000</row1>
+															<row2>0.118165 -0.018946 0.992813</row2>
+															<row3>-0.077368 0.000000 -0.000000</row3>
+														</transform>
+														<node>
+															<identifier>nyMan_index03_right_jnt</identifier>
+															<transform>
+																<row0>0.909465 -0.414219 0.036012</row0>
+																<row1>0.414154 0.910156 0.009581</row1>
+																<row2>-0.036745 0.006201 0.999305</row2>
+																<row3>-0.040294 0.000000 -0.000000</row3>
+															</transform>
+															<node>
+																<identifier>nyMan_index04_right_jnt</identifier>
+																<transform>
+																	<row0>0.988828 -0.144957 0.034732</row0>
+																	<row1>0.145050 0.989424 -0.000157</row1>
+																	<row2>-0.034342 0.005193 0.999397</row2>
+																	<row3>-0.021329 -0.000000 0.000001</row3>
+																</transform>
+																<node>
+																	<identifier>nyMan_index05_right_jnt</identifier>
+																	<transform>
+																		<row0>0.017347 0.681999 0.731147</row0>
+																		<row1>-0.977677 0.164716 -0.130447</row1>
+																		<row2>-0.209396 -0.712563 0.669632</row2>
+																		<row3>-0.026238 0.000000 0.000000</row3>
+																	</transform>
+																	<node>
+																		<identifier>nyMan_index05_right_jnt_BlendBone</identifier>
+																		<transform>
+																			<row0>1.000000 -0.000002 0.000005</row0>
+																			<row1>-0.000002 -1.000000 -0.000005</row1>
+																			<row2>-0.000005 -0.000005 1.000000</row2>
+																			<row3>0.548341 0.862368 -0.149275</row3>
+																		</transform>
+																	</node>
+																</node>
+																<node>
+																	<identifier>nyMan_index04_right_jnt_BlendBone</identifier>
+																	<transform>
+																		<row0>0.017348 0.681995 0.731151</row0>
+																		<row1>0.977678 -0.164713 0.130442</row1>
+																		<row2>-0.209391 -0.712567 0.669629</row2>
+																		<row3>-0.828585 0.622382 0.188465</row3>
+																	</transform>
+																</node>
+															</node>
+															<node>
+																<identifier>nyMan_index03_right_jnt_BlendBone</identifier>
+																<transform>
+																	<row0>0.090968 0.676065 0.731205</row0>
+																	<row1>0.938384 -0.304015 0.164346</row1>
+																	<row2>-0.333406 -0.671201 0.662064</row2>
+																	<row3>-0.756854 0.736888 0.159476</row3>
+																</transform>
+															</node>
+														</node>
+														<node>
+															<identifier>nyMan_index02_right_jnt_BlendBone</identifier>
+															<transform>
+																<row0>0.335860 0.582178 0.740451</row0>
+																<row1>0.721479 -0.664379 0.195112</row1>
+																<row2>-0.605530 -0.468689 0.643167</row2>
+																<row3>-0.429300 0.985175 0.139170</row3>
+															</transform>
+														</node>
+													</node>
+													<node>
+														<identifier>nyMan_index01_right_jnt_BlendBone</identifier>
+														<transform>
+															<row0>0.508901 0.508020 0.694935</row0>
+															<row1>0.625139 -0.773094 0.107367</row1>
+															<row2>-0.591795 -0.379792 0.711011</row2>
+															<row3>-0.325800 1.037589 0.189546</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>nyMan_midle01_right_jnt</identifier>
+													<transform>
+														<row0>0.999151 0.004306 0.040981</row0>
+														<row1>-0.038192 0.470152 0.881758</row1>
+														<row2>-0.015470 -0.882575 0.469917</row2>
+														<row3>-0.026255 -0.000010 0.003465</row3>
+													</transform>
+													<node>
+														<identifier>nyMan_midle02_right_jntw</identifier>
+														<transform>
+															<row0>0.992200 -0.123994 -0.012796</row0>
+															<row1>0.124005 0.992282 0.000000</row1>
+															<row2>0.012697 -0.001587 0.999918</row2>
+															<row3>-0.074509 0.000000 -0.000000</row3>
+														</transform>
+														<node>
+															<identifier>nyMan_midle03_right_jnt</identifier>
+															<transform>
+																<row0>0.900726 -0.433002 -0.034678</row0>
+																<row1>0.420226 0.888796 -0.182900</row1>
+																<row2>0.110018 0.150170 0.982520</row2>
+																<row3>-0.042232 -0.000000 -0.000000</row3>
+															</transform>
+															<node>
+																<identifier>nyMan_midle04_right_jnt</identifier>
+																<transform>
+																	<row0>0.986923 -0.161131 -0.004391</row0>
+																	<row1>0.159538 0.972556 0.169361</row1>
+																	<row2>-0.023019 -0.167847 0.985544</row2>
+																	<row3>-0.030105 0.000000 -0.000001</row3>
+																</transform>
+																<node>
+																	<identifier>nyMan_midle05_right_jnt</identifier>
+																	<transform>
+																		<row0>0.009467 0.792282 0.610082</row0>
+																		<row1>-0.988585 0.099158 -0.113431</row1>
+																		<row2>-0.150364 -0.602044 0.784177</row2>
+																		<row3>-0.026823 -0.000001 0.000001</row3>
+																	</transform>
+																	<node>
+																		<identifier>nyMan_midle05_right_jnt_BlendBone</identifier>
+																		<transform>
+																			<row0>1.000000 -0.000002 0.000005</row0>
+																			<row1>-0.000002 -1.000000 -0.000005</row1>
+																			<row2>-0.000005 -0.000005 1.000000</row2>
+																			<row3>0.567992 0.846141 -0.123629</row3>
+																		</transform>
+																	</node>
+																</node>
+																<node>
+																	<identifier>nyMan_midle04_right_jnt_BlendBone</identifier>
+																	<transform>
+																		<row0>0.009468 0.792279 0.610086</row0>
+																		<row1>0.988586 -0.099156 0.113426</row1>
+																		<row2>-0.150358 -0.602049 0.784175</row2>
+																		<row3>-0.839340 0.608341 0.153596</row3>
+																	</transform>
+																</node>
+															</node>
+															<node>
+																<identifier>nyMan_midle03_right_jnt_BlendBone</identifier>
+																<transform>
+																	<row0>0.121699 0.666608 0.735406</row0>
+																	<row1>0.957229 -0.274765 0.090652</row1>
+																	<row2>-0.262493 -0.692920 0.671535</row2>
+																	<row3>-0.764950 0.701108 0.258090</row3>
+																</transform>
+															</node>
+														</node>
+														<node>
+															<identifier>nyMan_midle02_right_jntw_BlendBone</identifier>
+															<transform>
+																<row0>0.470651 0.650218 0.596409</row0>
+																<row1>0.756710 -0.645078 0.106127</row1>
+																<row2>-0.453736 -0.401360 0.795634</row2>
+																<row3>-0.408224 0.993124 0.151873</row3>
+															</transform>
+														</node>
+													</node>
+													<node>
+														<identifier>nyMan_midle01_right_jnt_BlendBone</identifier>
+														<transform>
+															<row0>0.555183 0.585895 0.590337</row0>
+															<row1>0.672163 -0.734096 0.096436</row1>
+															<row2>-0.489865 -0.343264 0.801375</row2>
+															<row3>-0.354468 1.035836 0.157084</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>nyMan_pinky01_right_jnt</identifier>
+													<transform>
+														<row0>0.975240 -0.220007 0.022438</row0>
+														<row1>-0.005459 0.077480 0.996979</row1>
+														<row2>-0.221080 -0.972416 0.074361</row2>
+														<row3>-0.024678 0.025579 -0.010099</row3>
+													</transform>
+													<node>
+														<identifier>nyMan_pinky02_right_jnt</identifier>
+														<transform>
+															<row0>0.978883 0.030083 0.202197</row0>
+															<row1>-0.030718 0.999528 -0.000000</row1>
+															<row2>-0.202102 -0.006211 0.979345</row2>
+															<row3>-0.067372 0.000001 0.000000</row3>
+														</transform>
+														<node>
+															<identifier>nyMan_pinky03_right_jnt</identifier>
+															<transform>
+																<row0>0.952375 -0.303552 -0.028956</row0>
+																<row1>0.303630 0.952788 -0.001749</row1>
+																<row2>0.028120 -0.007127 0.999579</row2>
+																<row3>-0.028402 -0.000000 0.000000</row3>
+															</transform>
+															<node>
+																<identifier>nyMan_pinky04_right_jnt</identifier>
+																<transform>
+																	<row0>0.996173 0.043042 -0.076076</row0>
+																	<row1>-0.042988 0.999073 0.002346</row1>
+																	<row2>0.076107 0.000934 0.997099</row2>
+																	<row3>-0.018458 0.000000 0.000000</row3>
+																</transform>
+																<node>
+																	<identifier>nyMan_pinky05_right_jnt</identifier>
+																	<transform>
+																		<row0>0.397122 0.912758 0.095741</row0>
+																		<row1>-0.898949 0.407873 -0.159779</row1>
+																		<row2>-0.184890 -0.022615 0.982499</row2>
+																		<row3>-0.025906 -0.000000 -0.000000</row3>
+																	</transform>
+																	<node>
+																		<identifier>nyMan_pinky05_right_jnt_BlendBone</identifier>
+																		<transform>
+																			<row0>1.000000 -0.000002 0.000005</row0>
+																			<row1>-0.000002 -1.000000 -0.000005</row1>
+																			<row2>-0.000005 -0.000005 1.000000</row2>
+																			<row3>0.593425 0.867849 -0.060559</row3>
+																		</transform>
+																	</node>
+																</node>
+																<node>
+																	<identifier>nyMan_pinky04_right_jnt_BlendBone</identifier>
+																	<transform>
+																		<row0>0.397122 0.912757 0.095747</row0>
+																		<row1>0.898950 -0.407875 0.159774</row1>
+																		<row2>-0.184887 -0.022622 0.982499</row2>
+																		<row3>-0.559200 0.896996 -0.141348</row3>
+																	</transform>
+																</node>
+															</node>
+															<node>
+																<identifier>nyMan_pinky03_right_jnt_BlendBone</identifier>
+																<transform>
+																	<row0>0.363652 0.929094 0.067398</row0>
+																	<row1>0.925203 -0.368655 0.089965</row1>
+																	<row2>-0.108432 -0.029641 0.993662</row2>
+																	<row3>-0.624835 0.871963 -0.096292</row3>
+																</transform>
+															</node>
+														</node>
+														<node>
+															<identifier>nyMan_pinky02_right_jnt_BlendBone</identifier>
+															<transform>
+																<row0>0.630329 0.774362 0.055215</row0>
+																<row1>0.771735 -0.632738 0.063781</row1>
+																<row2>-0.084326 -0.002409 0.996435</row2>
+																<row3>-0.361432 1.021152 -0.079683</row3>
+															</transform>
+														</node>
+													</node>
+													<node>
+														<identifier>nyMan_pinky01_right_jnt_BlendBone</identifier>
+														<transform>
+															<row0>0.582073 0.792616 0.181526</row0>
+															<row1>0.761984 -0.609620 0.218506</row1>
+															<row2>-0.283853 -0.011133 0.958803</row2>
+															<row3>-0.436435 1.010293 -0.151118</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>nyMan_ring01_right_jnt</identifier>
+													<transform>
+														<row0>0.995059 -0.093387 -0.033721</row0>
+														<row1>0.053261 0.215423 0.975067</row1>
+														<row2>-0.083795 -0.972045 0.219332</row2>
+														<row3>-0.025836 0.013028 -0.004381</row3>
+													</transform>
+													<node>
+														<identifier>nyMan_ring02_right_jnt</identifier>
+														<transform>
+															<row0>0.994006 0.083059 0.071085</row0>
+															<row1>-0.083269 0.996527 -0.000000</row1>
+															<row2>-0.070838 -0.005919 0.997470</row2>
+															<row3>-0.070850 0.000001 -0.000000</row3>
+														</transform>
+														<node>
+															<identifier>nyMan_ring03_right_jnt</identifier>
+															<transform>
+																<row0>0.842240 -0.526517 0.115809</row0>
+																<row1>0.525243 0.849827 0.043760</row1>
+																<row2>-0.121458 0.023971 0.992307</row2>
+																<row3>-0.039693 -0.000000 0.000000</row3>
+															</transform>
+															<node>
+																<identifier>nyMan_ring04_right_jnt</identifier>
+																<transform>
+																	<row0>0.988123 -0.142758 -0.056869</row0>
+																	<row1>0.143064 0.989712 0.001323</row1>
+																	<row2>0.056095 -0.009443 0.998381</row2>
+																	<row3>-0.025479 -0.000000 -0.000000</row3>
+																</transform>
+																<node>
+																	<identifier>nyMan_ring05_right_jnt</identifier>
+																	<transform>
+																		<row0>0.011068 0.962509 0.271024</row0>
+																		<row1>-0.989950 0.048762 -0.132743</row1>
+																		<row2>-0.140982 -0.266831 0.953376</row2>
+																		<row3>-0.030210 0.000000 0.000000</row3>
+																	</transform>
+																	<node>
+																		<identifier>nyMan_ring05_right_jnt_BlendBone</identifier>
+																		<transform>
+																			<row0>1.000000 -0.000002 0.000005</row0>
+																			<row1>-0.000002 -1.000000 -0.000005</row1>
+																			<row2>-0.000005 -0.000005 1.000000</row2>
+																			<row3>0.577187 0.846108 -0.094339</row3>
+																		</transform>
+																	</node>
+																</node>
+																<node>
+																	<identifier>nyMan_ring04_right_jnt_BlendBone</identifier>
+																	<transform>
+																		<row0>0.011069 0.962507 0.271029</row0>
+																		<row1>0.989951 -0.048762 0.132738</row1>
+																		<row2>-0.140977 -0.266836 0.953375</row2>
+																		<row3>-0.848127 0.621978 -0.045824</row3>
+																	</transform>
+																</node>
+															</node>
+															<node>
+																<identifier>nyMan_ring03_right_jnt_BlendBone</identifier>
+																<transform>
+																	<row0>0.163841 0.948466 0.271234</row0>
+																	<row1>0.978663 -0.190837 0.076161</row1>
+																	<row2>-0.123998 -0.252968 0.959496</row2>
+																	<row3>-0.777120 0.737089 0.003305</row3>
+																</transform>
+															</node>
+														</node>
+														<node>
+															<identifier>nyMan_ring02_right_jnt_BlendBone</identifier>
+															<transform>
+																<row0>0.603225 0.726269 0.329626</row0>
+																<row1>0.714783 -0.675635 0.180562</row1>
+																<row2>-0.353844 -0.126692 0.926684</row2>
+																<row3>-0.307466 1.035644 -0.054463</row3>
+															</transform>
+														</node>
+													</node>
+													<node>
+														<identifier>nyMan_ring01_right_jnt_BlendBone</identifier>
+														<transform>
+															<row0>0.515783 0.771899 0.371673</row0>
+															<row1>0.753968 -0.614989 0.230916</row1>
+															<row2>-0.406818 -0.161127 0.899187</row2>
+															<row3>-0.458853 1.006832 -0.076181</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>nyMan_thumb01_right_jnt</identifier>
+													<transform>
+														<row0>0.776117 0.342482 -0.529480</row0>
+														<row1>-0.603859 0.645528 -0.467598</row1>
+														<row2>0.181651 0.682642 0.707816</row2>
+														<row3>-0.009067 -0.015844 0.015382</row3>
+													</transform>
+													<node>
+														<identifier>nyMan_thumb02_right_jnt</identifier>
+														<transform>
+															<row0>0.990817 -0.133244 0.022968</row0>
+															<row1>0.133279 0.991078 -0.000000</row1>
+															<row2>-0.022763 0.003061 0.999736</row2>
+															<row3>-0.051114 -0.000000 -0.000000</row3>
+														</transform>
+														<node>
+															<identifier>nyMan_thumb03_right_jnt</identifier>
+															<transform>
+																<row0>0.995282 0.093807 0.024787</row0>
+																<row1>-0.095567 0.903628 0.417521</row1>
+																<row2>0.016769 -0.417920 0.908329</row2>
+																<row3>-0.031913 0.000001 0.000001</row3>
+															</transform>
+															<node>
+																<identifier>nyMan_thumb04_right_jnt</identifier>
+																<transform>
+																	<row0>-0.051483 -0.568730 0.820912</row0>
+																	<row1>-0.688022 0.616004 0.383620</row1>
+																	<row2>-0.723861 -0.545055 -0.423013</row2>
+																	<row3>-0.039100 -0.000000 -0.000000</row3>
+																</transform>
+																<node>
+																	<identifier>nyMan_thumb04_right_jnt_BlendBone</identifier>
+																	<transform>
+																		<row0>1.000000 -0.000002 0.000005</row0>
+																		<row1>-0.000002 -1.000000 -0.000005</row1>
+																		<row2>-0.000005 -0.000005 1.000000</row2>
+																		<row3>0.473174 0.909246 -0.148007</row3>
+																	</transform>
+																</node>
+															</node>
+															<node>
+																<identifier>nyMan_thumb03_right_jnt_BlendBone</identifier>
+																<transform>
+																	<row0>-0.051486 -0.568734 0.820909</row0>
+																	<row1>0.688026 -0.616000 -0.383620</row1>
+																	<row2>-0.723857 -0.545055 -0.423019</row2>
+																	<row3>-0.581905 0.371663 0.799848</row3>
+																</transform>
+															</node>
+														</node>
+														<node>
+															<identifier>nyMan_thumb02_right_jnt_BlendBone</identifier>
+															<transform>
+																<row0>0.016875 -0.861828 0.506921</row0>
+																<row1>0.737216 -0.331771 -0.588592</row1>
+																<row2>-0.675447 -0.383642 -0.629755</row2>
+																<row3>-0.633178 -0.053014 0.867280</row3>
+															</transform>
+														</node>
+													</node>
+													<node>
+														<identifier>nyMan_thumb01_right_jnt_BlendBone</identifier>
+														<transform>
+															<row0>-0.109683 -0.854836 0.507174</row0>
+															<row1>0.699626 -0.428842 -0.571505</row1>
+															<row2>-0.706041 -0.292148 -0.645102</row2>
+															<row3>-0.705284 0.034481 0.852508</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>nyMan_hand_right_jnt_BlendBone</identifier>
+													<transform>
+														<row0>0.523202 -0.243166 0.816780</row0>
+														<row1>0.698138 -0.427354 -0.574432</row1>
+														<row2>-0.488737 -0.870769 0.053829</row2>
+														<row3>-0.422413 0.346825 0.976112</row3>
+													</transform>
+												</node>
+											</node>
+											<node>
+												<identifier>nyMan_foreArm_right_jnt_BlendBone</identifier>
+												<transform>
+													<row0>0.594102 -0.106705 0.797281</row0>
+													<row1>0.725514 -0.356956 -0.588398</row1>
+													<row2>-0.347380 -0.928007 0.134652</row2>
+													<row3>-0.674244 0.345747 0.977060</row3>
+												</transform>
+											</node>
+										</node>
+										<node>
+											<identifier>nyMan_arm_right_jnt_BlendBone</identifier>
+											<transform>
+												<row0>0.565298 0.137225 0.813392</row0>
+												<row1>0.823142 -0.029751 -0.567055</row1>
+												<row2>0.053615 -0.990093 0.129774</row2>
+												<row3>-1.042805 0.037713 0.956999</row3>
+											</transform>
+										</node>
+									</node>
+									<node>
+										<identifier>nyMan_shoulder_right_jnt_BlendBone</identifier>
+										<transform>
+											<row0>0.921659 0.360830 0.142641</row0>
+											<row1>0.132825 0.052001 -0.989774</row1>
+											<row2>0.364557 -0.931181 0.000000</row2>
+											<row3>-0.143379 -0.031693 1.415522</row3>
+										</transform>
+									</node>
+								</node>
+								<node>
+									<identifier>nyMan_chest_jnt_BlendBone</identifier>
+									<transform>
+										<row0>0.000000 -0.000000 -1.000000</row0>
+										<row1>0.993185 0.116549 0.000000</row1>
+										<row2>-0.116549 0.993185 -0.000000</row2>
+										<row3>-1.370284 -0.186703 -0.000021</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>nyMan_spine03_jnt_BlendBone</identifier>
+								<transform>
+									<row0>0.000000 -0.000000 -1.000000</row0>
+									<row1>0.997450 0.071364 0.000000</row1>
+									<row2>-0.071364 0.997450 -0.000000</row2>
+									<row3>-1.257020 -0.124335 -0.000021</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>nyMan_spine02_jnt_BlendBone</identifier>
+							<transform>
+								<row0>0.000000 -0.000000 -1.000000</row0>
+								<row1>0.999967 -0.008124 0.000000</row1>
+								<row2>0.008124 0.999967 -0.000000</row2>
+								<row3>-1.125087 -0.024053 -0.000021</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>nyMan_spine01_jnt_BlendBone</identifier>
+						<transform>
+							<row0>0.000000 -0.000000 -1.000000</row0>
+							<row1>0.988917 -0.148471 0.000000</row1>
+							<row2>0.148471 0.988917 -0.000000</row2>
+							<row3>-0.977937 0.134184 -0.000021</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>nyMan_hips_jnt_BlendBone</identifier>
+					<transform>
+						<row0>0.000000 -0.000000 -1.000000</row0>
+						<row1>1.000000 0.000000 0.000000</row1>
+						<row2>0.000000 1.000000 -0.000000</row2>
+						<row3>-0.916524 -0.012498 -0.000021</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>nyMan_root_jnt_BlendBone</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 -1.000000</row2>
+					<row3>0.000000 0.000000 0.000000</row3>
+				</transform>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>nyMan_head_jnt_BlendBone</node>
+		<geometry>
+			<vertices>EyesShape.vertices</vertices>
+			<primitive>EyesShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>NY21_Man_02_Body1_skinned</identifier>
+					<fx>shaders/std_effects/PBS_ext_skinned_repaint.fx</fx>
+					<materialKind>0</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/CharacterAnimations/Characters/NY21_Man_02_Body_AM.dds</Texture>
+					</property>
+					<property>
+						g_baseColor
+						<Vector4>0.631373 0.631373 0.631373 1.000000</Vector4>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_repaintColor
+						<Vector4>0.533333 0.588235 0.764706 1.000000</Vector4>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/CharacterAnimations/Characters/NY21_Man_02_Body_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/CharacterAnimations/Characters/NY21_Man_02_Body_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.000000 1.650090 0.115558</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>nyMan_foreArm_right_jnt_BlendBone</node>
+		<node>nyMan_hand_right_jnt_BlendBone</node>
+		<node>nyMan_pinky01_right_jnt_BlendBone</node>
+		<node>nyMan_thumb01_right_jnt_BlendBone</node>
+		<node>nyMan_ring01_right_jnt_BlendBone</node>
+		<node>nyMan_midle01_right_jnt_BlendBone</node>
+		<node>nyMan_arm_right_jnt_BlendBone</node>
+		<node>nyMan_index01_right_jnt_BlendBone</node>
+		<geometry>
+			<vertices>SweaterShape_split_1.vertices</vertices>
+			<primitive>SweaterShape_split_1.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>NY21_Man_02_Body1_skinned</identifier>
+					<fx>shaders/std_effects/PBS_ext_skinned_repaint.fx</fx>
+					<materialKind>0</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/CharacterAnimations/Characters/NY21_Man_02_Body_AM.dds</Texture>
+					</property>
+					<property>
+						g_baseColor
+						<Vector4>0.631373 0.631373 0.631373 1.000000</Vector4>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_repaintColor
+						<Vector4>0.533333 0.588235 0.764706 1.000000</Vector4>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/CharacterAnimations/Characters/NY21_Man_02_Body_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/CharacterAnimations/Characters/NY21_Man_02_Body_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.422262 1.091473 -0.012837</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>nyMan_spine03_jnt_BlendBone</node>
+		<node>nyMan_shoulder_left_jnt_BlendBone</node>
+		<node>nyMan_arm_left_jnt_BlendBone</node>
+		<node>nyMan_chest_jnt_BlendBone</node>
+		<node>nyMan_spine02_jnt_BlendBone</node>
+		<node>nyMan_spine01_jnt_BlendBone</node>
+		<node>nyMan_neck01_jnt_BlendBone</node>
+		<node>nyMan_shoulder_right_jnt_BlendBone</node>
+		<node>nyMan_head_jnt_BlendBone</node>
+		<node>nyMan_arm_right_jnt_BlendBone</node>
+		<node>nyMan_foreArm_right_jnt_BlendBone</node>
+		<node>nyMan_hips_jnt_BlendBone</node>
+		<node>nyMan_foreArm_left_jnt_BlendBone</node>
+		<node>nyMan_leg_right_jnt_BlendBone</node>
+		<node>nyMan_leg_left_jnt_BlendBone</node>
+		<node>nyMan_hand_left_jnt_BlendBone</node>
+		<node>nyMan_pinky01_left_jnt_BlendBone</node>
+		<node>nyMan_thumb01_left_jnt_BlendBone</node>
+		<node>nyMan_index01_left_jnt_BlendBone</node>
+		<node>nyMan_ring01_left_jnt_BlendBone</node>
+		<node>nyMan_midle01_left_jnt_BlendBone</node>
+		<geometry>
+			<vertices>SweaterShape_split_0.vertices</vertices>
+			<primitive>SweaterShape_split_0.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>NY21_Man_02_Body1_skinned</identifier>
+					<fx>shaders/std_effects/PBS_ext_skinned_repaint.fx</fx>
+					<materialKind>0</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/CharacterAnimations/Characters/NY21_Man_02_Body_AM.dds</Texture>
+					</property>
+					<property>
+						g_baseColor
+						<Vector4>0.631373 0.631373 0.631373 1.000000</Vector4>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_repaintColor
+						<Vector4>0.533333 0.588235 0.764706 1.000000</Vector4>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/CharacterAnimations/Characters/NY21_Man_02_Body_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/CharacterAnimations/Characters/NY21_Man_02_Body_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.022725 1.222434 0.003346</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>nyMan_hips_jnt_BlendBone</node>
+		<node>nyMan_leg_left_jnt_BlendBone</node>
+		<node>nyMan_leg_right_jnt_BlendBone</node>
+		<node>nyMan_knee_left_jnt_BlendBone</node>
+		<node>nyMan_toe_left_jnt_BlendBone</node>
+		<node>nyMan_ancle_left_jnt_BlendBone</node>
+		<node>nyMan_knee_right_jnt_BlendBone</node>
+		<node>nyMan_toe_right_jnt_BlendBone</node>
+		<node>nyMan_ancle_right_jnt_BlendBone</node>
+		<node>nyMan_spine01_jnt_BlendBone</node>
+		<geometry>
+			<vertices>FeetShape.vertices</vertices>
+			<primitive>FeetShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>NY21_Man_02_Body1_skinned</identifier>
+					<fx>shaders/std_effects/PBS_ext_skinned_repaint.fx</fx>
+					<materialKind>0</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/CharacterAnimations/Characters/NY21_Man_02_Body_AM.dds</Texture>
+					</property>
+					<property>
+						g_baseColor
+						<Vector4>0.631373 0.631373 0.631373 1.000000</Vector4>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_repaintColor
+						<Vector4>0.533333 0.588235 0.764706 1.000000</Vector4>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/CharacterAnimations/Characters/NY21_Man_02_Body_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/CharacterAnimations/Characters/NY21_Man_02_Body_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.000000 0.474921 0.028122</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>nyMan_head_jnt_BlendBone</node>
+		<geometry>
+			<vertices>HatShape.vertices</vertices>
+			<primitive>HatShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>NY21_Man_02_Body1_skinned</identifier>
+					<fx>shaders/std_effects/PBS_ext_skinned_repaint.fx</fx>
+					<materialKind>0</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/CharacterAnimations/Characters/NY21_Man_02_Body_AM.dds</Texture>
+					</property>
+					<property>
+						g_baseColor
+						<Vector4>0.631373 0.631373 0.631373 1.000000</Vector4>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_repaintColor
+						<Vector4>0.533333 0.588235 0.764706 1.000000</Vector4>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/CharacterAnimations/Characters/NY21_Man_02_Body_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/CharacterAnimations/Characters/NY21_Man_02_Body_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.020575 1.679497 0.023570</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>nyMan_head_jnt_BlendBone</node>
+		<geometry>
+			<vertices>HeadShape.vertices</vertices>
+			<primitive>HeadShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>NY21_Man_02_Skin1_skinned</identifier>
+					<fx>shaders/std_effects/PBS_sss_skinned.fx</fx>
+					<materialKind>0</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/CharacterAnimations/Characters/NY21_Man_02_Skin_AM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/CharacterAnimations/Characters/NY21_Man_02_Skin_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/CharacterAnimations/Characters/NY21_Man_02_Skin_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.001436 1.637933 0.053763</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>nyMan_pinky02_left_jnt_BlendBone</node>
+		<node>nyMan_pinky01_left_jnt_BlendBone</node>
+		<node>nyMan_ring02_left_jnt_BlendBone</node>
+		<node>nyMan_index02_left_jnt_BlendBone</node>
+		<node>nyMan_index01_left_jnt_BlendBone</node>
+		<node>nyMan_index03_left_jnt_BlendBone</node>
+		<node>nyMan_midle02_left_jnt_BlendBone</node>
+		<node>nyMan_midle01_left_jnt_BlendBone</node>
+		<node>nyMan_ring01_left_jnt_BlendBone</node>
+		<node>nyMan_thumb01_left_jnt_BlendBone</node>
+		<node>nyMan_hand_left_jnt_BlendBone</node>
+		<node>nyMan_foreArm_left_jnt_BlendBone</node>
+		<node>nyMan_thumb03_left_jnt_BlendBone</node>
+		<node>nyMan_thumb02_left_jnt_BlendBone</node>
+		<node>nyMan_thumb04_left_jnt_BlendBone</node>
+		<geometry>
+			<vertices>HandsShape_split_3.vertices</vertices>
+			<primitive>HandsShape_split_3.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>NY21_Man_02_Skin1_skinned</identifier>
+					<fx>shaders/std_effects/PBS_sss_skinned.fx</fx>
+					<materialKind>0</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/CharacterAnimations/Characters/NY21_Man_02_Skin_AM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/CharacterAnimations/Characters/NY21_Man_02_Skin_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/CharacterAnimations/Characters/NY21_Man_02_Skin_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.512703 0.961785 0.084053</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>nyMan_index03_right_jnt_BlendBone</node>
+		<node>nyMan_index04_right_jnt_BlendBone</node>
+		<node>nyMan_index02_right_jnt_BlendBone</node>
+		<node>nyMan_index05_right_jnt_BlendBone</node>
+		<node>nyMan_ring04_left_jnt_BlendBone</node>
+		<node>nyMan_ring05_left_jnt_BlendBone</node>
+		<node>nyMan_ring03_left_jnt_BlendBone</node>
+		<node>nyMan_midle03_left_jnt_BlendBone</node>
+		<node>nyMan_midle04_left_jnt_BlendBone</node>
+		<node>nyMan_midle05_left_jnt_BlendBone</node>
+		<node>nyMan_midle02_left_jnt_BlendBone</node>
+		<node>nyMan_index03_left_jnt_BlendBone</node>
+		<node>nyMan_index02_left_jnt_BlendBone</node>
+		<node>nyMan_ring02_left_jnt_BlendBone</node>
+		<node>nyMan_index01_left_jnt_BlendBone</node>
+		<node>nyMan_midle01_left_jnt_BlendBone</node>
+		<node>nyMan_ring01_left_jnt_BlendBone</node>
+		<node>nyMan_hand_left_jnt_BlendBone</node>
+		<node>nyMan_thumb02_left_jnt_BlendBone</node>
+		<node>nyMan_thumb01_left_jnt_BlendBone</node>
+		<node>nyMan_thumb03_left_jnt_BlendBone</node>
+		<node>nyMan_index04_left_jnt_BlendBone</node>
+		<node>nyMan_index05_left_jnt_BlendBone</node>
+		<geometry>
+			<vertices>HandsShape_split_2.vertices</vertices>
+			<primitive>HandsShape_split_2.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>NY21_Man_02_Skin1_skinned</identifier>
+					<fx>shaders/std_effects/PBS_sss_skinned.fx</fx>
+					<materialKind>0</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/CharacterAnimations/Characters/NY21_Man_02_Skin_AM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/CharacterAnimations/Characters/NY21_Man_02_Skin_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/CharacterAnimations/Characters/NY21_Man_02_Skin_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.014307 0.917115 0.101708</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>nyMan_index01_right_jnt_BlendBone</node>
+		<node>nyMan_hand_right_jnt_BlendBone</node>
+		<node>nyMan_midle01_right_jnt_BlendBone</node>
+		<node>nyMan_ring01_right_jnt_BlendBone</node>
+		<node>nyMan_foreArm_right_jnt_BlendBone</node>
+		<node>nyMan_pinky01_right_jnt_BlendBone</node>
+		<node>nyMan_thumb01_right_jnt_BlendBone</node>
+		<node>nyMan_thumb03_right_jnt_BlendBone</node>
+		<node>nyMan_thumb02_right_jnt_BlendBone</node>
+		<node>nyMan_thumb04_right_jnt_BlendBone</node>
+		<node>nyMan_pinky04_left_jnt_BlendBone</node>
+		<node>nyMan_pinky03_left_jnt_BlendBone</node>
+		<node>nyMan_pinky05_left_jnt_BlendBone</node>
+		<node>nyMan_pinky02_left_jnt_BlendBone</node>
+		<node>nyMan_ring02_left_jnt_BlendBone</node>
+		<node>nyMan_pinky01_left_jnt_BlendBone</node>
+		<node>nyMan_ring01_left_jnt_BlendBone</node>
+		<node>nyMan_midle02_left_jnt_BlendBone</node>
+		<node>nyMan_midle01_left_jnt_BlendBone</node>
+		<node>nyMan_ring03_left_jnt_BlendBone</node>
+		<node>nyMan_ring04_left_jnt_BlendBone</node>
+		<node>nyMan_midle03_left_jnt_BlendBone</node>
+		<node>nyMan_index02_left_jnt_BlendBone</node>
+		<geometry>
+			<vertices>HandsShape_split_1.vertices</vertices>
+			<primitive>HandsShape_split_1.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>NY21_Man_02_Skin1_skinned</identifier>
+					<fx>shaders/std_effects/PBS_sss_skinned.fx</fx>
+					<materialKind>0</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/CharacterAnimations/Characters/NY21_Man_02_Skin_AM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/CharacterAnimations/Characters/NY21_Man_02_Skin_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/CharacterAnimations/Characters/NY21_Man_02_Skin_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.027290 0.941568 0.086225</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>nyMan_pinky02_right_jnt_BlendBone</node>
+		<node>nyMan_pinky01_right_jnt_BlendBone</node>
+		<node>nyMan_ring02_right_jnt_BlendBone</node>
+		<node>nyMan_midle02_right_jntw_BlendBone</node>
+		<node>nyMan_midle01_right_jnt_BlendBone</node>
+		<node>nyMan_index02_right_jnt_BlendBone</node>
+		<node>nyMan_index01_right_jnt_BlendBone</node>
+		<node>nyMan_index03_right_jnt_BlendBone</node>
+		<node>nyMan_ring01_right_jnt_BlendBone</node>
+		<node>nyMan_hand_right_jnt_BlendBone</node>
+		<node>nyMan_thumb01_right_jnt_BlendBone</node>
+		<node>nyMan_thumb02_right_jnt_BlendBone</node>
+		<node>nyMan_thumb03_right_jnt_BlendBone</node>
+		<node>nyMan_pinky03_right_jnt_BlendBone</node>
+		<node>nyMan_ring03_right_jnt_BlendBone</node>
+		<node>nyMan_pinky04_right_jnt_BlendBone</node>
+		<node>nyMan_ring04_right_jnt_BlendBone</node>
+		<node>nyMan_midle03_right_jnt_BlendBone</node>
+		<node>nyMan_index04_right_jnt_BlendBone</node>
+		<node>nyMan_pinky05_right_jnt_BlendBone</node>
+		<node>nyMan_ring05_right_jnt_BlendBone</node>
+		<node>nyMan_midle04_right_jnt_BlendBone</node>
+		<node>nyMan_midle05_right_jnt_BlendBone</node>
+		<geometry>
+			<vertices>HandsShape_split_0.vertices</vertices>
+			<primitive>HandsShape_split_0.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>NY21_Man_02_Skin1_skinned</identifier>
+					<fx>shaders/std_effects/PBS_sss_skinned.fx</fx>
+					<materialKind>0</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/CharacterAnimations/Characters/NY21_Man_02_Skin_AM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/CharacterAnimations/Characters/NY21_Man_02_Skin_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/CharacterAnimations/Characters/NY21_Man_02_Skin_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.530276 0.917115 0.089861</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>nyMan_head_jnt_BlendBone</node>
+		<geometry>
+			<vertices>TeethShape.vertices</vertices>
+			<primitive>TeethShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>NY21_Man_02_Skin1_skinned</identifier>
+					<fx>shaders/std_effects/PBS_sss_skinned.fx</fx>
+					<materialKind>0</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/CharacterAnimations/Characters/NY21_Man_02_Skin_AM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/CharacterAnimations/Characters/NY21_Man_02_Skin_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/CharacterAnimations/Characters/NY21_Man_02_Skin_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.000264 1.580478 0.097323</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>nyMan_head_jnt_BlendBone</node>
+		<geometry>
+			<vertices>Hair_cardsShape.vertices</vertices>
+			<stream>Hair_cardsShape.uv2</stream>
+			<primitive>Hair_cardsShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>NY21_Man_02_Hair2_skinned</identifier>
+					<fx>shaders/std_effects/PBS_hair_skinned.fx</fx>
+					<materialKind>0</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						alphaReference
+						<Int>70</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						aoMap
+						<Texture>content/Hangars/CharacterAnimations/Characters/NY21_Man_02_Hair_AO.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/CharacterAnimations/Characters/SM_All_hair.dds</Texture>
+					</property>
+					<property>
+						g_glossMetallic
+						<Vector4>0.500000 0.400000 0.300000 0.000000</Vector4>
+					</property>
+					<property>
+						g_normalVariationZ
+						<Vector4>-0.250000 0.300000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_tipColor_LQ
+						<Vector4>0.184314 0.141176 0.078431 1.000000</Vector4>
+					</property>
+				</material>
+				<groupOrigin>0.000726 1.637641 0.019531</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>-0.593469 -0.003495 -0.161536</min>
+		<max>0.593469 1.795846 0.141352</max>
+	</boundingBox>
+	<geometrySize>113926</geometrySize>
+</root>

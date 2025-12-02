@@ -1,0 +1,1368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>nyBaby_root_jnt</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>nyBaby_hips_jnt</identifier>
+				<transform>
+					<row0>-0.002023 0.999974 0.006969</row0>
+					<row1>-0.000014 0.006969 -0.999976</row1>
+					<row2>-0.999998 -0.002023 0.000000</row2>
+					<row3>0.000017 0.401012 -0.002506</row3>
+				</transform>
+				<node>
+					<identifier>nyBaby_leg_left_jnt</identifier>
+					<transform>
+						<row0>-0.995731 0.002623 -0.092264</row0>
+						<row1>0.002552 0.999996 0.000882</row1>
+						<row2>0.092266 0.000642 -0.995734</row2>
+						<row3>-0.011271 0.000185 -0.078905</row3>
+					</transform>
+					<node>
+						<identifier>nyGirl01_knee_left_jnt</identifier>
+						<transform>
+							<row0>0.959216 -0.277999 -0.051195</row0>
+							<row1>0.277632 0.960581 -0.014288</row1>
+							<row2>0.053149 -0.000508 0.998586</row2>
+							<row3>0.160377 0.000000 -0.000000</row3>
+						</transform>
+						<node>
+							<identifier>nyGirl01_ancle_left_jnt</identifier>
+							<transform>
+								<row0>0.515792 0.854019 0.067901</row0>
+								<row1>-0.853213 0.504911 0.130736</row1>
+								<row2>0.077367 -0.125367 0.989089</row2>
+								<row3>0.162843 0.008158 0.000470</row3>
+							</transform>
+							<node>
+								<identifier>nyGirl01_toe_left_jnt</identifier>
+								<transform>
+									<row0>0.690827 0.722898 -0.013315</row0>
+									<row1>-0.722962 0.690888 0.000000</row1>
+									<row2>0.009199 0.009626 0.999911</row2>
+									<row3>0.098705 0.000000 0.000000</row3>
+								</transform>
+								<node>
+									<identifier>nyGirl01_toe_left_jnt_BlendBone</identifier>
+									<transform>
+										<row0>0.128356 -0.000000 0.991728</row0>
+										<row1>-0.000000 1.000000 0.000000</row1>
+										<row2>0.991728 0.000000 -0.128356</row2>
+										<row3>-0.049811 0.000000 -0.105222</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>nyGirl01_ancle_left_jnt_BlendBone</identifier>
+								<transform>
+									<row0>0.097795 0.102335 0.989931</row0>
+									<row1>-0.722962 0.690888 0.000000</row1>
+									<row2>0.683931 0.715682 -0.141550</row2>
+									<row3>0.063326 -0.037021 -0.104549</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>nyGirl01_knee_left_jnt_BlendBone</identifier>
+							<transform>
+								<row0>0.039716 0.011085 0.999150</row0>
+								<row1>-0.962373 -0.268586 0.041234</row1>
+								<row2>-0.268814 0.963192 -0.000000</row2>
+								<row3>0.219005 0.056654 -0.103479</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>nyBaby_leg_left_jnt_BlendBone</identifier>
+						<transform>
+							<row0>0.094278 -0.000901 0.995545</row0>
+							<row1>-0.995500 0.009520 0.094282</row1>
+							<row2>0.009562 0.999954 -0.000001</row2>
+							<row3>0.380679 -0.006409 -0.115354</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>nyBaby_leg_right_jnt</identifier>
+					<transform>
+						<row0>0.995350 -0.002624 -0.096291</row0>
+						<row1>-0.002547 -0.999996 0.000921</row1>
+						<row2>-0.096293 -0.000671 -0.995353</row2>
+						<row3>-0.010951 0.000187 0.078984</row3>
+					</transform>
+					<node>
+						<identifier>nyGirl01_knee_right_jnt</identifier>
+						<transform>
+							<row0>0.959217 -0.277996 -0.051195</row0>
+							<row1>0.277629 0.960582 -0.014288</row1>
+							<row2>0.053148 -0.000508 0.998587</row2>
+							<row3>-0.160378 0.000000 0.000000</row3>
+						</transform>
+						<node>
+							<identifier>nyGirl01_ancle_right_jnt</identifier>
+							<transform>
+								<row0>0.515781 0.854025 0.067903</row0>
+								<row1>-0.853220 0.504900 0.130734</row1>
+								<row2>0.077366 -0.125366 0.989089</row2>
+								<row3>-0.162843 -0.008158 -0.000470</row3>
+							</transform>
+							<node>
+								<identifier>nyGirl01_toe_right_jnt</identifier>
+								<transform>
+									<row0>0.690827 0.722898 -0.013315</row0>
+									<row1>-0.722962 0.690888 0.000000</row1>
+									<row2>0.009199 0.009626 0.999911</row2>
+									<row3>-0.098705 0.000000 -0.000000</row3>
+								</transform>
+								<node>
+									<identifier>nyGirl01_toeTip_right_jnt</identifier>
+									<transform>
+										<row0>1.000000 -0.000000 -0.000000</row0>
+										<row1>0.000000 1.000000 -0.000000</row1>
+										<row2>-0.000000 0.000000 1.000000</row2>
+										<row3>-0.057258 0.000000 0.000000</row3>
+									</transform>
+									<node>
+										<identifier>nyGirl01_toeTip_right_jnt_BlendBone</identifier>
+										<transform>
+											<row0>0.128355 -0.000003 0.991728</row0>
+											<row1>-0.000015 -1.000000 -0.000001</row1>
+											<row2>-0.991728 0.000015 0.128355</row2>
+											<row3>0.107070 0.000000 0.105221</row3>
+										</transform>
+									</node>
+								</node>
+								<node>
+									<identifier>nyGirl01_toe_right_jnt_BlendBone</identifier>
+									<transform>
+										<row0>0.128355 -0.000003 0.991728</row0>
+										<row1>-0.000015 -1.000000 -0.000001</row1>
+										<row2>-0.991728 0.000015 0.128355</row2>
+										<row3>0.049812 0.000000 0.105222</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>nyGirl01_ancle_right_jnt_BlendBone</identifier>
+								<transform>
+									<row0>0.097796 0.102332 0.989931</row0>
+									<row1>0.722952 -0.690899 -0.000001</row1>
+									<row2>-0.683942 -0.715673 0.141548</row2>
+									<row3>-0.063326 0.037022 0.104549</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>nyGirl01_knee_right_jnt_BlendBone</identifier>
+							<transform>
+								<row0>0.039717 0.011084 0.999150</row0>
+								<row1>0.962373 0.268584 -0.041235</row1>
+								<row2>0.268813 -0.963193 -0.000000</row2>
+								<row3>-0.219004 -0.056654 0.103479</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>nyBaby_leg_right_jnt_BlendBone</identifier>
+						<transform>
+							<row0>0.094278 -0.000902 0.995546</row0>
+							<row1>0.995500 -0.009518 -0.094282</row1>
+							<row2>-0.009560 -0.999954 -0.000000</row2>
+							<row3>-0.380679 0.006409 0.115354</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>nyBaby_spine01_jnt</identifier>
+					<transform>
+						<row0>0.963023 0.269421 -0.000199</row0>
+						<row1>-0.269421 0.963023 0.000052</row1>
+						<row2>0.000205 0.000003 1.000000</row2>
+						<row3>0.025098 0.000000 0.000000</row3>
+					</transform>
+					<node>
+						<identifier>nyBaby_spine02_jnt</identifier>
+						<transform>
+							<row0>0.986904 -0.161170 -0.006671</row0>
+							<row1>0.161178 0.986925 0.000696</row1>
+							<row2>0.006472 -0.001762 0.999978</row2>
+							<row3>0.047811 -0.000000 0.000000</row3>
+						</transform>
+						<node>
+							<identifier>nyBaby_spine03_jnt</identifier>
+							<transform>
+								<row0>0.984188 -0.176815 0.010487</row0>
+								<row1>0.176817 0.984243 0.000775</row1>
+								<row2>-0.010459 0.001091 0.999945</row2>
+								<row3>0.059356 -0.000000 0.000000</row3>
+							</transform>
+							<node>
+								<identifier>nyBaby_chest_jnt</identifier>
+								<transform>
+									<row0>0.987825 -0.154940 -0.013975</row0>
+									<row1>0.154909 0.987923 -0.003263</row1>
+									<row2>0.014312 0.001059 0.999897</row2>
+									<row3>0.066223 -0.000000 0.000000</row3>
+								</transform>
+								<node>
+									<identifier>nyBaby_neck_jnt</identifier>
+									<transform>
+										<row0>0.974147 0.225335 0.016171</row0>
+										<row1>-0.225365 0.974274 0.000036</row1>
+										<row2>-0.015747 -0.003679 0.999869</row2>
+										<row3>0.070124 0.000000 0.000000</row3>
+									</transform>
+									<node>
+										<identifier>nyGirl01_head_jnt</identifier>
+										<transform>
+											<row0>0.999970 0.002056 -0.007445</row0>
+											<row1>-0.002056 0.999998 0.000008</row1>
+											<row2>0.007445 0.000008 0.999972</row2>
+											<row3>0.071112 0.000000 0.000000</row3>
+										</transform>
+										<node>
+											<identifier>nyGirl01_headTip_jnt</identifier>
+											<transform>
+												<row0>1.000000 0.000000 0.000000</row0>
+												<row1>0.000000 1.000000 0.000000</row1>
+												<row2>-0.000000 0.000000 1.000000</row2>
+												<row3>0.125724 0.000000 0.000000</row3>
+											</transform>
+											<node>
+												<identifier>nyGirl01_headTip_jnt_BlendBone</identifier>
+												<transform>
+													<row0>-0.000000 -0.000008 -1.000000</row0>
+													<row1>1.000000 -0.000000 -0.000000</row1>
+													<row2>0.000000 1.000000 -0.000008</row2>
+													<row3>-0.862437 -0.000075 -0.000134</row3>
+												</transform>
+											</node>
+										</node>
+										<node>
+											<identifier>nyGirl01_head_jnt_BlendBone</identifier>
+											<transform>
+												<row0>-0.000000 -0.000008 -1.000000</row0>
+												<row1>1.000000 -0.000000 -0.000000</row1>
+												<row2>0.000000 1.000000 -0.000008</row2>
+												<row3>-0.736713 -0.000075 -0.000134</row3>
+											</transform>
+										</node>
+									</node>
+									<node>
+										<identifier>nyBaby_neck_jnt_BlendBone</identifier>
+										<transform>
+											<row0>-0.007445 -0.000015 -0.999972</row0>
+											<row1>0.999970 0.002056 -0.007445</row1>
+											<row2>-0.002056 0.999998 0.000000</row2>
+											<row3>-0.665579 -0.001590 0.005351</row3>
+										</transform>
+									</node>
+								</node>
+								<node>
+									<identifier>nyBaby_scarf00_jnt</identifier>
+									<transform>
+										<row0>-0.858084 -0.513096 0.020590</row0>
+										<row1>0.513077 -0.858317 -0.006588</row1>
+										<row2>0.021053 0.004911 0.999766</row2>
+										<row3>0.074847 -0.078746 0.023914</row3>
+									</transform>
+									<node>
+										<identifier>nyBaby_scarf01_jnt</identifier>
+										<transform>
+											<row0>0.972248 -0.229009 -0.047841</row0>
+											<row1>0.229444 0.973315 0.003742</row1>
+											<row2>0.045704 -0.014613 0.998848</row2>
+											<row3>0.070343 0.000000 0.000000</row3>
+										</transform>
+										<node>
+											<identifier>nyBaby_scarf02_jnt</identifier>
+											<transform>
+												<row0>0.998239 -0.042132 0.041769</row0>
+												<row1>0.041888 0.999100 0.006698</row1>
+												<row2>-0.042012 -0.004937 0.999105</row2>
+												<row3>0.094823 0.000000 0.000000</row3>
+											</transform>
+											<node>
+												<identifier>nyBaby_scarf03_jnt</identifier>
+												<transform>
+													<row0>1.000000 0.000000 -0.000000</row0>
+													<row1>0.000000 1.000000 -0.000000</row1>
+													<row2>0.000002 -0.000000 1.000000</row2>
+													<row3>0.080437 -0.000000 -0.000000</row3>
+												</transform>
+												<node>
+													<identifier>nyBaby_scarf03_jnt_BlendBone</identifier>
+													<transform>
+														<row0>-0.024131 -0.007334 -0.999682</row0>
+														<row1>-0.999066 0.036020 0.023852</row1>
+														<row2>-0.035834 -0.999324 0.008196</row2>
+														<row3>0.405731 -0.124143 -0.034830</row3>
+													</transform>
+												</node>
+											</node>
+											<node>
+												<identifier>nyBaby_scarf02_jnt_BlendBone</identifier>
+												<transform>
+													<row0>-0.024131 -0.007334 -0.999682</row0>
+													<row1>-0.999066 0.036020 0.023852</row1>
+													<row2>-0.035834 -0.999324 0.008196</row2>
+													<row3>0.486168 -0.124143 -0.034830</row3>
+												</transform>
+											</node>
+										</node>
+										<node>
+											<identifier>nyBaby_scarf01_jnt_BlendBone</identifier>
+											<transform>
+												<row0>0.017605 -0.001375 -0.999844</row0>
+												<row1>-0.996800 0.077963 -0.017659</row1>
+												<row2>-0.077975 -0.996955 -0.000002</row2>
+												<row3>0.576397 -0.144343 -0.015323</row3>
+											</transform>
+										</node>
+									</node>
+									<node>
+										<identifier>nyBaby_scarf00_jnt_BlendBone</identifier>
+										<transform>
+											<row0>-0.028899 0.009242 -0.999540</row0>
+											<row1>-0.952056 0.304416 0.030341</row1>
+											<row2>-0.304556 -0.952494 -0.000002</row2>
+											<row3>0.596926 -0.272267 -0.043421</row3>
+										</transform>
+									</node>
+								</node>
+								<node>
+									<identifier>nyBaby_shoulder_left_jnt</identifier>
+									<transform>
+										<row0>-0.046852 -0.278532 -0.959284</row0>
+										<row1>-0.248150 0.933478 -0.258920</row1>
+										<row2>0.967588 0.225916 -0.112853</row2>
+										<row3>0.024788 -0.004374 -0.011189</row3>
+									</transform>
+									<node>
+										<identifier>nyGirl_arm_left_jnt</identifier>
+										<transform>
+											<row0>0.739519 0.214575 -0.638017</row0>
+											<row1>-0.194688 0.975504 0.102414</row1>
+											<row2>0.644365 0.048476 0.763182</row2>
+											<row3>0.110027 -0.000000 0.000000</row3>
+										</transform>
+										<node>
+											<identifier>nyGirl_foreArm_left_jnt</identifier>
+											<transform>
+												<row0>0.913571 0.394724 -0.097883</row0>
+												<row1>-0.396088 0.918194 0.005911</row1>
+												<row2>0.092209 0.033370 0.995181</row2>
+												<row3>0.132177 0.000000 0.000000</row3>
+											</transform>
+											<node>
+												<identifier>nyGirl_hand_left_jnt</identifier>
+												<transform>
+													<row0>0.979939 -0.178397 -0.088849</row0>
+													<row1>0.170725 0.981418 -0.087587</row1>
+													<row2>0.102823 0.070662 0.992187</row2>
+													<row3>0.111804 0.000000 0.000000</row3>
+												</transform>
+												<node>
+													<identifier>nyGirl_index00_left_jnt</identifier>
+													<transform>
+														<row0>0.983816 -0.178754 -0.012337</row0>
+														<row1>0.008126 -0.024269 0.999672</row1>
+														<row2>-0.178995 -0.983594 -0.022424</row2>
+														<row3>0.025168 0.022849 0.002899</row3>
+													</transform>
+													<node>
+														<identifier>nyGirl_index01_left_jnt</identifier>
+														<transform>
+															<row0>0.865070 -0.498568 -0.055537</row0>
+															<row1>0.500835 0.864667 0.038925</row1>
+															<row2>0.028614 -0.061488 0.997698</row2>
+															<row3>0.024423 0.000000 0.000000</row3>
+														</transform>
+														<node>
+															<identifier>nyGirl_index02_left_jnt</identifier>
+															<transform>
+																<row0>0.975722 -0.208299 0.067663</row0>
+																<row1>0.207016 0.978004 0.025531</row1>
+																<row2>-0.071492 -0.010904 0.997381</row2>
+																<row3>0.028434 -0.000000 0.000000</row3>
+															</transform>
+															<node>
+																<identifier>nyGirl_index03_left_jnt</identifier>
+																<transform>
+																	<row0>1.000000 0.000000 0.000000</row0>
+																	<row1>0.000000 1.000000 0.000000</row1>
+																	<row2>0.000000 0.000000 1.000000</row2>
+																	<row3>0.024446 0.000000 0.000000</row3>
+																</transform>
+																<node>
+																	<identifier>nyGirl_index03_left_jnt_BlendBone</identifier>
+																	<transform>
+																		<row0>-0.150562 0.988569 -0.007882</row0>
+																		<row1>-0.987218 -0.150768 -0.051678</row1>
+																		<row2>0.052276 -0.000000 -0.998633</row2>
+																		<row3>0.384267 -0.241077 0.081525</row3>
+																	</transform>
+																</node>
+															</node>
+															<node>
+																<identifier>nyGirl_index02_left_jnt_BlendBone</identifier>
+																<transform>
+																	<row0>-0.150562 0.988569 -0.007882</row0>
+																	<row1>-0.987218 -0.150768 -0.051678</row1>
+																	<row2>0.052276 -0.000000 -0.998633</row2>
+																	<row3>0.408712 -0.241077 0.081525</row3>
+																</transform>
+															</node>
+														</node>
+														<node>
+															<identifier>nyGirl_index01_left_jnt_BlendBone</identifier>
+															<transform>
+																<row0>0.058307 0.998273 0.007191</row0>
+																<row1>-0.990766 0.058749 -0.122190</row1>
+																<row2>0.122401 0.000000 -0.992481</row2>
+																<row3>0.371488 -0.321798 0.102811</row3>
+															</transform>
+														</node>
+													</node>
+													<node>
+														<identifier>nyGirl_index00_left_jnt_BlendBone</identifier>
+														<transform>
+															<row0>0.550616 0.833661 0.042794</row0>
+															<row1>-0.831155 0.552276 -0.064598</row1>
+															<row2>0.077487 0.000000 -0.996993</row2>
+															<row3>0.187560 -0.469782 0.069417</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>nyGirl_pinky00_left_jnt</identifier>
+													<transform>
+														<row0>0.982472 -0.179058 -0.051830</row0>
+														<row1>0.046411 -0.034325 0.998333</row1>
+														<row2>-0.180538 -0.983240 -0.025413</row2>
+														<row3>0.019447 -0.019733 0.003343</row3>
+													</transform>
+													<node>
+														<identifier>nyGirl_pinky01_left_jnt</identifier>
+														<transform>
+															<row0>0.849206 -0.509614 -0.138359</row0>
+															<row1>0.518890 0.853925 0.039553</row1>
+															<row2>0.097992 -0.105382 0.989592</row2>
+															<row3>0.029770 0.000000 -0.000000</row3>
+														</transform>
+														<node>
+															<identifier>nyGirl_pinky02_left_jnt</identifier>
+															<transform>
+																<row0>0.941801 -0.333828 -0.039625</row0>
+																<row1>0.335878 0.939341 0.069456</row1>
+																<row2>0.014035 -0.078722 0.996798</row2>
+																<row3>0.026772 -0.000000 0.000000</row3>
+															</transform>
+															<node>
+																<identifier>nyGirl_pinky03_left_jnt</identifier>
+																<transform>
+																	<row0>1.000000 -0.000000 0.000000</row0>
+																	<row1>0.000000 1.000000 0.000000</row1>
+																	<row2>0.000000 0.000000 1.000000</row2>
+																	<row3>0.019476 -0.000000 0.000000</row3>
+																</transform>
+																<node>
+																	<identifier>nyGirl_pinky03_left_jnt_BlendBone</identifier>
+																	<transform>
+																		<row0>-0.335502 0.938711 -0.079117</row0>
+																		<row1>-0.913651 -0.344704 -0.215455</row1>
+																		<row2>0.229522 0.000000 -0.973304</row2>
+																		<row3>0.411399 -0.160499 0.121893</row3>
+																	</transform>
+																</node>
+															</node>
+															<node>
+																<identifier>nyGirl_pinky02_left_jnt_BlendBone</identifier>
+																<transform>
+																	<row0>-0.335502 0.938711 -0.079117</row0>
+																	<row1>-0.913651 -0.344704 -0.215455</row1>
+																	<row2>0.229522 0.000000 -0.973304</row2>
+																	<row3>0.430874 -0.160499 0.121893</row3>
+																</transform>
+															</node>
+														</node>
+														<node>
+															<identifier>nyGirl_pinky01_left_jnt_BlendBone</identifier>
+															<transform>
+																<row0>-0.001794 0.999998 -0.000371</row0>
+																<row1>-0.979280 -0.001832 -0.202504</row1>
+																<row2>0.202504 -0.000000 -0.979281</row2>
+																<row3>0.380373 -0.304197 0.093282</row3>
+															</transform>
+														</node>
+													</node>
+													<node>
+														<identifier>nyGirl_pinky00_left_jnt_BlendBone</identifier>
+														<transform>
+															<row0>0.517330 0.854877 0.039434</row0>
+															<row1>-0.852404 0.518831 -0.064976</row1>
+															<row2>0.076006 0.000000 -0.997107</row2>
+															<row3>0.204081 -0.463435 0.027651</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>nyGirl_thumb01_left_jnt</identifier>
+													<transform>
+														<row0>0.949007 -0.005968 -0.315199</row0>
+														<row1>0.038206 0.994628 0.096201</row1>
+														<row2>0.312932 -0.103338 0.944137</row2>
+														<row3>0.016360 0.027997 -0.016774</row3>
+													</transform>
+													<node>
+														<identifier>nyGirl_thumb02_left_jnt</identifier>
+														<transform>
+															<row0>0.999983 0.004881 -0.003070</row0>
+															<row1>-0.004878 0.999988 0.000739</row1>
+															<row2>0.003074 -0.000724 0.999995</row2>
+															<row3>0.022146 0.000000 0.000000</row3>
+														</transform>
+														<node>
+															<identifier>nyGirl_thumb03_left_jnt</identifier>
+															<transform>
+																<row0>1.000000 0.000000 0.000000</row0>
+																<row1>0.000000 1.000000 -0.000000</row1>
+																<row2>0.000000 0.000000 1.000000</row2>
+																<row3>0.021542 0.000000 0.000000</row3>
+															</transform>
+															<node>
+																<identifier>nyGirl_thumb03_left_jnt_BlendBone</identifier>
+																<transform>
+																	<row0>0.250701 -0.060321 0.966183</row0>
+																	<row1>-0.939374 0.226023 0.257856</row1>
+																	<row2>0.233934 0.972252 0.000000</row2>
+																	<row3>0.268454 -0.133610 -0.362196</row3>
+																</transform>
+															</node>
+														</node>
+														<node>
+															<identifier>nyGirl_thumb02_left_jnt_BlendBone</identifier>
+															<transform>
+																<row0>0.250701 -0.060321 0.966183</row0>
+																<row1>-0.939374 0.226023 0.257856</row1>
+																<row2>0.233934 0.972252 0.000000</row2>
+																<row3>0.289996 -0.133610 -0.362196</row3>
+															</transform>
+														</node>
+													</node>
+													<node>
+														<identifier>nyGirl_thumb01_left_jnt_BlendBone</identifier>
+														<transform>
+															<row0>0.253961 -0.059796 0.965365</row0>
+															<row1>-0.939669 0.221249 0.260905</row1>
+															<row2>0.229188 0.973382 0.000000</row2>
+															<row3>0.311675 -0.131931 -0.363183</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>nyGirl_hand_left_jnt_BlendBone</identifier>
+													<transform>
+														<row0>0.540819 -0.160749 0.825636</row0>
+														<row1>-0.801653 0.198707 0.563797</row1>
+														<row2>0.254690 0.966786 0.021400</row2>
+														<row3>0.193450 -0.067555 -0.470600</row3>
+													</transform>
+												</node>
+											</node>
+											<node>
+												<identifier>nyGirl_foreArm_left_jnt_BlendBone</identifier>
+												<transform>
+													<row0>0.587421 -0.195902 0.785213</row0>
+													<row1>-0.693675 0.377866 0.613214</row1>
+													<row2>0.416835 0.904898 -0.086074</row2>
+													<row3>0.241452 -0.134064 -0.478194</row3>
+												</transform>
+											</node>
+										</node>
+										<node>
+											<identifier>nyGirl_arm_left_jnt_BlendBone</identifier>
+											<transform>
+												<row0>0.686648 0.078196 0.722772</row0>
+												<row1>-0.726846 0.093607 0.680391</row1>
+												<row2>0.014452 0.992534 -0.121112</row2>
+												<row3>0.361768 -0.043747 -0.500315</row3>
+											</transform>
+										</node>
+									</node>
+									<node>
+										<identifier>nyBaby_shoulder_left_jnt_BlendBone</identifier>
+										<transform>
+											<row0>0.958295 0.258656 0.121519</row0>
+											<row1>-0.117320 -0.031666 0.992589</row1>
+											<row2>-0.260587 0.965450 0.000000</row2>
+											<row3>0.063692 0.010697 -0.617125</row3>
+										</transform>
+									</node>
+								</node>
+								<node>
+									<identifier>nyBaby_shoulder_right_jnt</identifier>
+									<transform>
+										<row0>0.063137 0.282340 -0.957235</row0>
+										<row1>0.252546 -0.932451 -0.258372</row1>
+										<row2>-0.965523 -0.225433 -0.130176</row2>
+										<row3>0.024598 -0.004419 0.011190</row3>
+									</transform>
+									<node>
+										<identifier>nyGirl_arm_right_jnt</identifier>
+										<transform>
+											<row0>0.739520 0.214574 -0.638020</row0>
+											<row1>-0.194688 0.975504 0.102414</row1>
+											<row2>0.644366 0.048477 0.763179</row2>
+											<row3>-0.110027 -0.000000 -0.000000</row3>
+										</transform>
+										<node>
+											<identifier>nyGirl_foreArm_right_jnt</identifier>
+											<transform>
+												<row0>0.913570 0.394725 -0.097883</row0>
+												<row1>-0.396089 0.918193 0.005911</row1>
+												<row2>0.092209 0.033371 0.995180</row2>
+												<row3>-0.132177 0.000000 0.000000</row3>
+											</transform>
+											<node>
+												<identifier>nyGirl_hand_right_jnt</identifier>
+												<transform>
+													<row0>0.979939 -0.178400 -0.088840</row0>
+													<row1>0.170728 0.981417 -0.087595</row1>
+													<row2>0.102816 0.070670 0.992187</row2>
+													<row3>-0.111805 0.000000 0.000000</row3>
+												</transform>
+												<node>
+													<identifier>nyGirl_index00_right_jnt</identifier>
+													<transform>
+														<row0>0.983816 -0.178754 -0.012337</row0>
+														<row1>0.008126 -0.024269 0.999673</row1>
+														<row2>-0.178995 -0.983594 -0.022424</row2>
+														<row3>-0.025168 -0.022849 -0.002899</row3>
+													</transform>
+													<node>
+														<identifier>nyGirl_index01_right_jnt</identifier>
+														<transform>
+															<row0>0.865070 -0.498568 -0.055537</row0>
+															<row1>0.500835 0.864667 0.038925</row1>
+															<row2>0.028614 -0.061488 0.997698</row2>
+															<row3>-0.024424 0.000000 -0.000000</row3>
+														</transform>
+														<node>
+															<identifier>nyGirl_index02_right_jnt</identifier>
+															<transform>
+																<row0>0.975722 -0.208299 0.067663</row0>
+																<row1>0.207016 0.978004 0.025531</row1>
+																<row2>-0.071492 -0.010904 0.997381</row2>
+																<row3>-0.028433 0.000001 0.000000</row3>
+															</transform>
+															<node>
+																<identifier>nyGirl_index03_right_jnt</identifier>
+																<transform>
+																	<row0>1.000000 -0.000000 0.000000</row0>
+																	<row1>0.000000 1.000000 -0.000000</row1>
+																	<row2>-0.000000 -0.000000 1.000000</row2>
+																	<row3>-0.024445 -0.000001 0.000000</row3>
+																</transform>
+																<node>
+																	<identifier>nyGirl_index03_right_jnt_BlendBone</identifier>
+																	<transform>
+																		<row0>-0.150552 0.988571 -0.007880</row0>
+																		<row1>0.987219 0.150758 0.051671</row1>
+																		<row2>-0.052269 -0.000000 0.998633</row2>
+																		<row3>-0.384265 0.241082 -0.081521</row3>
+																	</transform>
+																</node>
+															</node>
+															<node>
+																<identifier>nyGirl_index02_right_jnt_BlendBone</identifier>
+																<transform>
+																	<row0>-0.150552 0.988571 -0.007880</row0>
+																	<row1>0.987219 0.150758 0.051671</row1>
+																	<row2>-0.052269 -0.000000 0.998633</row2>
+																	<row3>-0.408710 0.241081 -0.081521</row3>
+																</transform>
+															</node>
+														</node>
+														<node>
+															<identifier>nyGirl_index01_right_jnt_BlendBone</identifier>
+															<transform>
+																<row0>0.058317 0.998272 0.007194</row0>
+																<row1>0.990767 -0.058759 0.122183</row1>
+																<row2>-0.122395 -0.000002 0.992481</row2>
+																<row3>-0.371485 0.321803 -0.102807</row3>
+															</transform>
+														</node>
+													</node>
+													<node>
+														<identifier>nyGirl_index00_right_jnt_BlendBone</identifier>
+														<transform>
+															<row0>0.550624 0.833656 0.042796</row0>
+															<row1>0.831150 -0.552284 0.064590</row1>
+															<row2>-0.077482 -0.000005 0.996994</row2>
+															<row3>-0.187556 0.469784 -0.069413</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>nyGirl_pinky00_right_jnt</identifier>
+													<transform>
+														<row0>0.982472 -0.179058 -0.051831</row0>
+														<row1>0.046411 -0.034325 0.998333</row1>
+														<row2>-0.180538 -0.983240 -0.025413</row2>
+														<row3>-0.019447 0.019733 -0.003343</row3>
+													</transform>
+													<node>
+														<identifier>nyGirl_pinky01_right_jnt</identifier>
+														<transform>
+															<row0>0.849206 -0.509614 -0.138359</row0>
+															<row1>0.518890 0.853925 0.039553</row1>
+															<row2>0.097992 -0.105382 0.989592</row2>
+															<row3>-0.029770 -0.000000 -0.000000</row3>
+														</transform>
+														<node>
+															<identifier>nyGirl_pinky02_right_jnt</identifier>
+															<transform>
+																<row0>0.941801 -0.333828 -0.039625</row0>
+																<row1>0.335878 0.939341 0.069456</row1>
+																<row2>0.014035 -0.078723 0.996798</row2>
+																<row3>-0.026772 0.000000 0.000000</row3>
+															</transform>
+															<node>
+																<identifier>nyGirl_pinky03_right_jnt</identifier>
+																<transform>
+																	<row0>1.000000 -0.000000 0.000000</row0>
+																	<row1>-0.000000 1.000000 -0.000000</row1>
+																	<row2>-0.000000 0.000000 1.000000</row2>
+																	<row3>-0.019476 -0.000000 0.000000</row3>
+																</transform>
+																<node>
+																	<identifier>nyGirl_pinky03_right_jnt_BlendBone</identifier>
+																	<transform>
+																		<row0>-0.335493 0.938715 -0.079114</row0>
+																		<row1>0.913656 0.344695 0.215449</row1>
+																		<row2>-0.229515 0.000001 0.973305</row2>
+																		<row3>-0.411399 0.160504 -0.121889</row3>
+																	</transform>
+																</node>
+															</node>
+															<node>
+																<identifier>nyGirl_pinky02_right_jnt_BlendBone</identifier>
+																<transform>
+																	<row0>-0.335493 0.938715 -0.079114</row0>
+																	<row1>0.913656 0.344695 0.215449</row1>
+																	<row2>-0.229515 0.000001 0.973305</row2>
+																	<row3>-0.430875 0.160504 -0.121889</row3>
+																</transform>
+															</node>
+														</node>
+														<node>
+															<identifier>nyGirl_pinky01_right_jnt_BlendBone</identifier>
+															<transform>
+																<row0>-0.001784 0.999998 -0.000367</row0>
+																<row1>0.979281 0.001822 0.202497</row1>
+																<row2>-0.202497 -0.000001 0.979283</row2>
+																<row3>-0.380371 0.304201 -0.093277</row3>
+															</transform>
+														</node>
+													</node>
+													<node>
+														<identifier>nyGirl_pinky00_right_jnt_BlendBone</identifier>
+														<transform>
+															<row0>0.517338 0.854872 0.039436</row0>
+															<row1>0.852400 -0.518839 0.064969</row1>
+															<row2>-0.076001 -0.000005 0.997108</row2>
+															<row3>-0.204077 0.463437 -0.027647</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>nyGirl_thumb01_right_jnt</identifier>
+													<transform>
+														<row0>0.949007 -0.005968 -0.315199</row0>
+														<row1>0.038206 0.994628 0.096201</row1>
+														<row2>0.312932 -0.103338 0.944137</row2>
+														<row3>-0.016359 -0.027998 0.016774</row3>
+													</transform>
+													<node>
+														<identifier>nyGirl_thumb02_right_jnt</identifier>
+														<transform>
+															<row0>0.999983 0.004881 -0.003070</row0>
+															<row1>-0.004878 0.999988 0.000739</row1>
+															<row2>0.003073 -0.000724 0.999995</row2>
+															<row3>-0.022146 0.000000 -0.000001</row3>
+														</transform>
+														<node>
+															<identifier>nyGirl_thumb03_right_jnt</identifier>
+															<transform>
+																<row0>1.000000 0.000000 0.000000</row0>
+																<row1>0.000000 1.000000 -0.000000</row1>
+																<row2>-0.000000 -0.000000 1.000000</row2>
+																<row3>-0.021542 0.000000 0.000001</row3>
+															</transform>
+															<node>
+																<identifier>nyGirl_thumb03_right_jnt_BlendBone</identifier>
+																<transform>
+																	<row0>0.250710 -0.060325 0.966181</row0>
+																	<row1>0.939373 -0.226016 -0.257865</row1>
+																	<row2>-0.233928 -0.972254 -0.000003</row2>
+																	<row3>-0.268451 0.133606 0.362199</row3>
+																</transform>
+															</node>
+														</node>
+														<node>
+															<identifier>nyGirl_thumb02_right_jnt_BlendBone</identifier>
+															<transform>
+																<row0>0.250710 -0.060325 0.966181</row0>
+																<row1>0.939373 -0.226016 -0.257865</row1>
+																<row2>-0.233928 -0.972254 -0.000003</row2>
+																<row3>-0.289993 0.133606 0.362200</row3>
+															</transform>
+														</node>
+													</node>
+													<node>
+														<identifier>nyGirl_thumb01_right_jnt_BlendBone</identifier>
+														<transform>
+															<row0>0.253969 -0.059800 0.965362</row0>
+															<row1>0.939668 -0.221242 -0.260915</row1>
+															<row2>-0.229181 -0.973384 -0.000003</row2>
+															<row3>-0.311673 0.131927 0.363186</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>nyGirl_hand_right_jnt_BlendBone</identifier>
+													<transform>
+														<row0>0.540826 -0.160752 0.825630</row0>
+														<row1>0.801650 -0.198699 -0.563805</row1>
+														<row2>-0.254685 -0.966787 -0.021405</row2>
+														<row3>-0.193446 0.067550 0.470601</row3>
+													</transform>
+												</node>
+											</node>
+											<node>
+												<identifier>nyGirl_foreArm_right_jnt_BlendBone</identifier>
+												<transform>
+													<row0>0.587420 -0.195901 0.785213</row0>
+													<row1>0.693676 -0.377865 -0.613214</row1>
+													<row2>-0.416834 -0.904898 0.086074</row2>
+													<row3>-0.241452 0.134063 0.478194</row3>
+												</transform>
+											</node>
+										</node>
+										<node>
+											<identifier>nyGirl_arm_right_jnt_BlendBone</identifier>
+											<transform>
+												<row0>0.686648 0.078197 0.722772</row0>
+												<row1>0.726846 -0.093606 -0.680391</row1>
+												<row2>-0.014451 -0.992534 0.121111</row2>
+												<row3>-0.361768 0.043746 0.500316</row3>
+											</transform>
+										</node>
+									</node>
+									<node>
+										<identifier>nyBaby_shoulder_right_jnt_BlendBone</identifier>
+										<transform>
+											<row0>0.958295 0.258656 0.121519</row0>
+											<row1>0.117320 0.031666 -0.992589</row1>
+											<row2>0.260587 -0.965450 -0.000000</row2>
+											<row3>-0.063692 -0.010697 0.617125</row3>
+										</transform>
+									</node>
+								</node>
+								<node>
+									<identifier>nyBaby_chest_jnt_BlendBone</identifier>
+									<transform>
+										<row0>0.008497 0.001987 -0.999962</row0>
+										<row1>0.973772 0.227359 0.008726</row1>
+										<row2>-0.227368 0.973809 0.000003</row2>
+										<row3>-0.577974 -0.151547 -0.005413</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>nyBaby_spine03_jnt_BlendBone</identifier>
+								<transform>
+									<row0>-0.005610 -0.000412 -0.999984</row0>
+									<row1>0.997261 0.073747 -0.005625</row1>
+									<row2>-0.073748 0.997277 0.000002</row2>
+									<row3>-0.528267 -0.060172 0.003160</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>nyBaby_spine02_jnt_BlendBone</identifier>
+							<transform>
+								<row0>0.004864 -0.000505 -0.999988</row0>
+								<row1>0.994591 -0.103752 0.004890</row1>
+								<row2>0.103753 0.994603 0.000002</row2>
+								<row3>-0.471231 0.034185 -0.002427</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>nyBaby_spine01_jnt_BlendBone</identifier>
+						<transform>
+							<row0>-0.001753 0.000479 -0.999998</row0>
+							<row1>0.964875 -0.262702 -0.001817</row1>
+							<row2>0.262703 0.964877 0.000002</row2>
+							<row3>-0.411755 0.109691 0.000741</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>nyBaby_hips_jnt_BlendBone</identifier>
+					<transform>
+						<row0>-0.002023 -0.000014 -0.999998</row0>
+						<row1>0.999974 0.006969 -0.002023</row1>
+						<row2>-0.006969 0.999976 -0.000000</row2>
+						<row3>-0.400984 -0.005301 0.000828</row3>
+					</transform>
+				</node>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>nyGirl01_head_jnt_BlendBone</node>
+		<geometry>
+			<vertices>EyesShape.vertices</vertices>
+			<primitive>EyesShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>eyeShader_skinned</identifier>
+					<fx>shaders/std_effects/PBS_ext_skinned_repaint.fx</fx>
+					<materialKind>0</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/CharacterAnimations/Characters/NY21_Child_01_Body_AM.dds</Texture>
+					</property>
+					<property>
+						g_baseColor
+						<Vector4>0.490196 0.490196 0.490196 1.000000</Vector4>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_repaintColor
+						<Vector4>0.533333 0.533333 0.533333 1.000000</Vector4>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/CharacterAnimations/Characters/NY21_Child_01_Body_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/CharacterAnimations/Characters/NY21_Child_01_Body_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.000000 0.765194 0.073349</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>nyGirl01_head_jnt_BlendBone</node>
+		<geometry>
+			<vertices>HatShape.vertices</vertices>
+			<primitive>HatShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>NY21_Child_01_Body1_skinned</identifier>
+					<fx>shaders/std_effects/PBS_ext_skinned_repaint.fx</fx>
+					<materialKind>0</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/CharacterAnimations/Characters/NY21_Child_01_Body_AM.dds</Texture>
+					</property>
+					<property>
+						g_baseColor
+						<Vector4>0.490196 0.490196 0.490196 1.000000</Vector4>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_repaintColor
+						<Vector4>0.494118 0.015686 0.035294 1.000000</Vector4>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/CharacterAnimations/Characters/NY21_Child_01_Body_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/CharacterAnimations/Characters/NY21_Child_01_Body_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.000009 0.795128 0.043720</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>nyGirl01_toe_left_jnt_BlendBone</node>
+		<node>nyGirl01_ancle_left_jnt_BlendBone</node>
+		<node>nyGirl01_toe_right_jnt_BlendBone</node>
+		<node>nyGirl01_ancle_right_jnt_BlendBone</node>
+		<geometry>
+			<vertices>BootsShape.vertices</vertices>
+			<primitive>BootsShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>NY21_Child_01_Body1_skinned</identifier>
+					<fx>shaders/std_effects/PBS_ext_skinned_repaint.fx</fx>
+					<materialKind>0</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/CharacterAnimations/Characters/NY21_Child_01_Body_AM.dds</Texture>
+					</property>
+					<property>
+						g_baseColor
+						<Vector4>0.490196 0.490196 0.490196 1.000000</Vector4>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_repaintColor
+						<Vector4>0.494118 0.015686 0.035294 1.000000</Vector4>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/CharacterAnimations/Characters/NY21_Child_01_Body_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/CharacterAnimations/Characters/NY21_Child_01_Body_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.000000 0.039623 0.004974</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>nyGirl_pinky00_left_jnt_BlendBone</node>
+		<node>nyGirl_pinky01_left_jnt_BlendBone</node>
+		<node>nyGirl_index01_left_jnt_BlendBone</node>
+		<node>nyGirl_hand_left_jnt_BlendBone</node>
+		<node>nyGirl_foreArm_left_jnt_BlendBone</node>
+		<node>nyGirl_thumb01_left_jnt_BlendBone</node>
+		<node>nyGirl_pinky02_left_jnt_BlendBone</node>
+		<node>nyGirl_index00_left_jnt_BlendBone</node>
+		<node>nyGirl_index02_left_jnt_BlendBone</node>
+		<geometry>
+			<vertices>Body3Shape_split_2.vertices</vertices>
+			<primitive>Body3Shape_split_2.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>NY21_Child_01_Body1_skinned</identifier>
+					<fx>shaders/std_effects/PBS_ext_skinned_repaint.fx</fx>
+					<materialKind>0</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/CharacterAnimations/Characters/NY21_Child_01_Body_AM.dds</Texture>
+					</property>
+					<property>
+						g_baseColor
+						<Vector4>0.490196 0.490196 0.490196 1.000000</Vector4>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_repaintColor
+						<Vector4>0.494118 0.015686 0.035294 1.000000</Vector4>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/CharacterAnimations/Characters/NY21_Child_01_Body_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/CharacterAnimations/Characters/NY21_Child_01_Body_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.284892 0.396820 0.025864</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>nyBaby_leg_right_jnt_BlendBone</node>
+		<node>nyBaby_hips_jnt_BlendBone</node>
+		<node>nyGirl01_knee_right_jnt_BlendBone</node>
+		<node>nyBaby_spine01_jnt_BlendBone</node>
+		<node>nyBaby_leg_left_jnt_BlendBone</node>
+		<node>nyBaby_spine02_jnt_BlendBone</node>
+		<node>nyBaby_spine03_jnt_BlendBone</node>
+		<node>nyGirl_arm_left_jnt_BlendBone</node>
+		<node>nyGirl_arm_right_jnt_BlendBone</node>
+		<node>nyGirl01_knee_left_jnt_BlendBone</node>
+		<node>nyBaby_shoulder_right_jnt_BlendBone</node>
+		<node>nyBaby_chest_jnt_BlendBone</node>
+		<node>nyBaby_shoulder_left_jnt_BlendBone</node>
+		<node>nyBaby_scarf00_jnt_BlendBone</node>
+		<node>nyBaby_neck_jnt_BlendBone</node>
+		<node>nyGirl01_head_jnt_BlendBone</node>
+		<node>nyGirl01_headTip_jnt_BlendBone</node>
+		<node>nyGirl_index01_left_jnt_BlendBone</node>
+		<node>nyGirl_index00_left_jnt_BlendBone</node>
+		<node>nyGirl_thumb01_left_jnt_BlendBone</node>
+		<node>nyGirl_thumb02_left_jnt_BlendBone</node>
+		<node>nyGirl_hand_left_jnt_BlendBone</node>
+		<node>nyGirl_foreArm_left_jnt_BlendBone</node>
+		<geometry>
+			<vertices>Body3Shape_split_1.vertices</vertices>
+			<primitive>Body3Shape_split_1.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>NY21_Child_01_Body1_skinned</identifier>
+					<fx>shaders/std_effects/PBS_ext_skinned_repaint.fx</fx>
+					<materialKind>0</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/CharacterAnimations/Characters/NY21_Child_01_Body_AM.dds</Texture>
+					</property>
+					<property>
+						g_baseColor
+						<Vector4>0.490196 0.490196 0.490196 1.000000</Vector4>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_repaintColor
+						<Vector4>0.494118 0.015686 0.035294 1.000000</Vector4>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/CharacterAnimations/Characters/NY21_Child_01_Body_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/CharacterAnimations/Characters/NY21_Child_01_Body_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.056562 0.522463 0.006386</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>nyGirl_index01_right_jnt_BlendBone</node>
+		<node>nyGirl_thumb01_right_jnt_BlendBone</node>
+		<node>nyGirl_index00_right_jnt_BlendBone</node>
+		<node>nyGirl_pinky00_right_jnt_BlendBone</node>
+		<node>nyGirl_hand_right_jnt_BlendBone</node>
+		<node>nyGirl_pinky01_right_jnt_BlendBone</node>
+		<node>nyGirl_foreArm_right_jnt_BlendBone</node>
+		<node>nyGirl_arm_right_jnt_BlendBone</node>
+		<node>nyGirl_pinky02_right_jnt_BlendBone</node>
+		<node>nyGirl_thumb02_right_jnt_BlendBone</node>
+		<node>nyGirl_index02_right_jnt_BlendBone</node>
+		<node>nyGirl01_knee_right_jnt_BlendBone</node>
+		<node>nyGirl01_ancle_right_jnt_BlendBone</node>
+		<node>nyGirl01_knee_left_jnt_BlendBone</node>
+		<node>nyGirl01_ancle_left_jnt_BlendBone</node>
+		<node>nyGirl_foreArm_left_jnt_BlendBone</node>
+		<node>nyGirl_arm_left_jnt_BlendBone</node>
+		<node>nyBaby_scarf01_jnt_BlendBone</node>
+		<node>nyBaby_scarf00_jnt_BlendBone</node>
+		<node>nyBaby_scarf02_jnt_BlendBone</node>
+		<node>nyBaby_chest_jnt_BlendBone</node>
+		<node>nyBaby_shoulder_right_jnt_BlendBone</node>
+		<node>nyBaby_spine03_jnt_BlendBone</node>
+		<geometry>
+			<vertices>Body3Shape_split_0.vertices</vertices>
+			<primitive>Body3Shape_split_0.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>NY21_Child_01_Body1_skinned</identifier>
+					<fx>shaders/std_effects/PBS_ext_skinned_repaint.fx</fx>
+					<materialKind>0</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/CharacterAnimations/Characters/NY21_Child_01_Body_AM.dds</Texture>
+					</property>
+					<property>
+						g_baseColor
+						<Vector4>0.490196 0.490196 0.490196 1.000000</Vector4>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_repaintColor
+						<Vector4>0.494118 0.015686 0.035294 1.000000</Vector4>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/CharacterAnimations/Characters/NY21_Child_01_Body_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/CharacterAnimations/Characters/NY21_Child_01_Body_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.017393 0.377307 -0.005303</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>nyGirl01_head_jnt_BlendBone</node>
+		<node>nyBaby_neck_jnt_BlendBone</node>
+		<node>nyBaby_chest_jnt_BlendBone</node>
+		<geometry>
+			<vertices>HeadShape.vertices</vertices>
+			<primitive>HeadShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>NY21_Child_01_Skin1_skinned</identifier>
+					<fx>shaders/std_effects/PBS_sss_skinned.fx</fx>
+					<materialKind>0</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/CharacterAnimations/Characters/NY21_Child_01_Skin_AM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/CharacterAnimations/Characters/NY21_Child_01_Skin_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/CharacterAnimations/Characters/NY21_Child_01_Skin_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.000289 0.732944 0.066059</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>nyGirl01_head_jnt_BlendBone</node>
+		<geometry>
+			<vertices>TeethShape.vertices</vertices>
+			<primitive>TeethShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>NY21_Child_01_Skin1_skinned</identifier>
+					<fx>shaders/std_effects/PBS_sss_skinned.fx</fx>
+					<materialKind>0</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/CharacterAnimations/Characters/NY21_Child_01_Skin_AM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/CharacterAnimations/Characters/NY21_Child_01_Skin_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/CharacterAnimations/Characters/NY21_Child_01_Skin_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.000000 0.709738 0.067090</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>nyGirl01_head_jnt_BlendBone</node>
+		<node>nyBaby_neck_jnt_BlendBone</node>
+		<node>nyBaby_chest_jnt_BlendBone</node>
+		<node>nyBaby_shoulder_left_jnt_BlendBone</node>
+		<node>nyBaby_shoulder_right_jnt_BlendBone</node>
+		<node>nyGirl01_headTip_jnt_BlendBone</node>
+		<geometry>
+			<vertices>FurShape.vertices</vertices>
+			<primitive>FurShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>NY21_Child_01_Fur1_skinned</identifier>
+					<fx>shaders/std_effects/fur_skinned.fx</fx>
+					<materialKind>0</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/CharacterAnimations/Characters/NY21_Child_01_Fur_AM.dds</Texture>
+					</property>
+					<property>
+						furMap
+						<Texture>content/Hangars/CharacterAnimations/Characters/SM_All_height.dds</Texture>
+					</property>
+					<property>
+						g_furParams2
+						<Vector4>2.500000 0.330000 0.500000 0.190000</Vector4>
+					</property>
+					<property>
+						g_rootColor
+						<Vector4>0.133333 0.133333 0.133333 1.000000</Vector4>
+					</property>
+					<property>
+						g_tipColor
+						<Vector4>0.498039 0.498039 0.498039 1.000000</Vector4>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/CharacterAnimations/Characters/NY21_Child_01_Fur_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/CharacterAnimations/Characters/NY21_Child_01_Fur_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.000182 0.771643 0.095323</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>
+			-5 -0.007342 -5
+			<!--BW_String-->
+		</min>
+		<max>5 5 5</max>
+	</boundingBox>
+	<geometrySize>109988</geometrySize>
+</root>

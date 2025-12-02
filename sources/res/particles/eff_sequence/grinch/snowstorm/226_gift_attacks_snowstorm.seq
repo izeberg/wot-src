@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>12.000001</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>CTRL_Rot</name>
+		<type>model</type>
+		<resource>content/Environment/env_null_model/null_model.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 360.000000 0.000000</value>
+				<inTangent>-0.000000 23.999998 -0.000000</inTangent>
+				<outTangent>0.000000 71.999992 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>10.000001</startTime>
+				<value>0.000000 1080.000000 0.000000</value>
+				<inTangent>-0.000000 71.999992 -0.000000</inTangent>
+				<outTangent>0.000000 61.016964 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>11.966667</startTime>
+				<value>0.000000 1200.000000 0.000000</value>
+				<inTangent>-0.000000 61.016964 -0.000000</inTangent>
+				<outTangent>-0.000000 61.016994 -0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>model_area</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/grinch/snowstorm/mesh_blizzard_area.model</resource>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>12.000000</duration>
+				<value>CTRL_Rot|</value>
+			</frame>
+		</track>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>1.000000 1.000000 1.000000</inTangent>
+				<outTangent>4.000000 4.000000 4.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.000000</startTime>
+				<value>4.000000 4.000000 4.000000</value>
+				<inTangent>4.000000 4.000000 4.000000</inTangent>
+				<outTangent>-0.134615 -0.134615 -0.134615</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>lambert2</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 1.000000 1.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 1.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 1.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.000000</startTime>
+				<value>1.000000 1.000000 1.000000 1.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 1.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>10.000001</startTime>
+				<value>1.000000 1.000000 1.000000 1.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>12.000001</startTime>
+				<value>1.000000 1.000000 1.000000 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.500000</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>pfx_smoke_ground</name>
+		<type>particle</type>
+		<resource>particles/Environment/interior/226_gift_attack_dust_floor_01.eff</resource>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>4.000000</value>
+				<inTangent>0.266667</inTangent>
+				<outTangent>-0.100000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>10.000001</startTime>
+				<value>3.000000</value>
+				<inTangent>-0.100000</inTangent>
+				<outTangent>-1.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>12.000001</startTime>
+				<value>0.000000</value>
+				<inTangent>-1.500000</inTangent>
+				<outTangent>-1.525425</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>tintColor</name>
+			<type>vector4</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.784314 1.000000 1.000000 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>particleSize</name>
+			<type>float</type>
+			<frame>
+				<startTime>10.000001</startTime>
+				<value>15.000000</value>
+				<inTangent>0.600000</inTangent>
+				<outTangent>-7.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>12.000001</startTime>
+				<value>0.000000</value>
+				<inTangent>-7.500000</inTangent>
+				<outTangent>-7.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>pfx_snow</name>
+		<type>particle</type>
+		<resource>particles/Environment/interior/226_gift_attack_paper_snow_fall_03.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 -5.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.000000</inTangent>
+				<outTangent>1.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.000000</startTime>
+				<value>1.000000</value>
+				<inTangent>1.000000</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>10.000001</startTime>
+				<value>1.000000</value>
+				<inTangent>-0.000000</inTangent>
+				<outTangent>-0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>12.000001</startTime>
+				<value>0.000000</value>
+				<inTangent>-0.500000</inTangent>
+				<outTangent>-0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/poland/Pl21_CS_63/_skins/Pl21_CS_63_HO26_3Dst/normal/lod1/Gun_01</nodefullVisual>
+	<parent>vehicles/poland/Pl21_CS_63/_skins/Pl21_CS_63_HO26_3Dst/normal/lod2/Gun_01</parent>
+	<extent>64.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.193778 -0.223468 0.079556</min>
+		<max>0.288446 0.299644 5.287732</max>
+	</visibilityBox>
+</root>

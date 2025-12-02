@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<stream>colour</stream>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>mt_screen</identifier>
+					<fx>shaders/custom/volumetric_effect_vtx.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						destBlend
+						<Int>2</Int>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>particles/3D_Customization/Cus_146_CS_Radar/mt_screen.dds</Texture>
+					</property>
+					<property>
+						distortionMap
+						<Texture>particles/content_deferred/GFX_models/GFX_textures/Distortion02.dds</Texture>
+					</property>
+					<property>
+						lightMultipliers
+						<Vector4>50.000000 0.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						softFactor
+						<Float>0.000000</Float>
+					</property>
+					<property>
+						TintlColor
+						<Vector4>0.145098 1.000000 0.000000 1.000000</Vector4>
+					</property>
+				</material>
+				<groupOrigin>0.000000 0.407735 -0.172225</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-0.060479 0.347255 -0.181210</min>
+		<max>0.060479 0.468214 -0.163240</max>
+	</boundingBox>
+	<geometrySize>6984</geometrySize>
+</root>

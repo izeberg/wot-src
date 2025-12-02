@@ -28,12 +28,12 @@ _LOBBY_RELEASE_PACKAGES = ('gui.Scaleform.daapi.view.lobby', 'gui.Scaleform.daap
                            'gui.impl.lobby.blueprints', 'gui.impl.lobby.currency_reserves',
                            'gui.impl.lobby.crystals_promo', 'gui.impl.lobby.account_dashboard',
                            'gui.impl.lobby.dog_tags', 'gui.impl.lobby.hangar', 'gui.impl.lobby.easy_tank_equip',
-                           'gui.impl.lobby.mode_selector', 'gui.impl.lobby.maps_training',
-                           'gui.impl.lobby.battle_results', 'gui.impl.lobby.vehicle_hub',
-                           'gui.impl.lobby.maps_blacklist', 'gui.impl.lobby.daily_experience',
-                           'gui.impl.lobby.personal_missions_30', 'gui.impl.lobby.personal_reserves',
-                           'gui.impl.lobby.battle_pass', 'gui.impl.lobby.clan_supply',
-                           'gui.impl.lobby.crew', 'gui.impl.lobby.lootbox_system',
+                           'gui.impl.lobby.mode_selector', 'gui.impl.lobby.new_year',
+                           'gui.impl.lobby.maps_training', 'gui.impl.lobby.battle_results',
+                           'gui.impl.lobby.vehicle_hub', 'gui.impl.lobby.maps_blacklist',
+                           'gui.impl.lobby.daily_experience', 'gui.impl.lobby.personal_missions_30',
+                           'gui.impl.lobby.personal_reserves', 'gui.impl.lobby.battle_pass',
+                           'gui.impl.lobby.clan_supply', 'gui.impl.lobby.crew', 'gui.impl.lobby.lootbox_system',
                            'gui.impl.lobby.collection', 'gui.impl.lobby.pet_system')
 _LOBBY_DEBUG_PACKAGES = ('gui.development.ui.messenger.view.lobby', 'gui.development.ui.demo',
                          'gui.development.ui.gf_viewer')

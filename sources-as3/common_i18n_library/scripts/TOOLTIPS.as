@@ -5123,6 +5123,8 @@ package
       
       public static const QUESTS_AWARDS_ADDITIONAL_HEADER:String = "#tooltips:quests/awards/additional/header";
       
+      public static const QUESTS_AWARDS_ADDITIONAL_HEADER_COUNT:String = "#tooltips:quests/awards/additional/header/count";
+      
       public static const QUESTS_AWARDS_NEAREST_HEADER:String = "#tooltips:quests/awards/nearest/header";
       
       public static const QUESTS_AWARDS_ADDITIONAL_BOTTOM:String = "#tooltips:quests/awards/additional/bottom";
@@ -7713,6 +7715,36 @@ package
       
       public static const NOTRECRUITEDTANKMAN_NY25_GIRL_4_DESC:String = "#tooltips:notrecruitedtankman/ny25_girl_4/desc";
       
+      public static const NOTRECRUITEDTANKMAN_NY26DEFAULTGIRL_EVENT:String = "#tooltips:notrecruitedtankman/ny26defaultGirl/event";
+      
+      public static const NOTRECRUITEDTANKMAN_NY26DEFAULTGIRL_LABEL:String = "#tooltips:notrecruitedtankman/ny26defaultGirl/label";
+      
+      public static const NOTRECRUITEDTANKMAN_NY26DEFAULTGIRL_DESC:String = "#tooltips:notrecruitedtankman/ny26defaultGirl/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_NY26DEFAULTGIRL_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/ny26defaultGirl/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_NY26_MEN_EVENT:String = "#tooltips:notrecruitedtankman/ny26_men/event";
+      
+      public static const NOTRECRUITEDTANKMAN_NY26_MEN_LABEL:String = "#tooltips:notrecruitedtankman/ny26_men/label";
+      
+      public static const NOTRECRUITEDTANKMAN_NY26_MEN_DESC:String = "#tooltips:notrecruitedtankman/ny26_men/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_NY26_GIRL_1_LABEL:String = "#tooltips:notrecruitedtankman/ny26_girl_1/label";
+      
+      public static const NOTRECRUITEDTANKMAN_NY26_GIRL_1_DESC:String = "#tooltips:notrecruitedtankman/ny26_girl_1/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_NY26_GIRL_2_LABEL:String = "#tooltips:notrecruitedtankman/ny26_girl_2/label";
+      
+      public static const NOTRECRUITEDTANKMAN_NY26_GIRL_2_DESC:String = "#tooltips:notrecruitedtankman/ny26_girl_2/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_NY26_GIRL_3_LABEL:String = "#tooltips:notrecruitedtankman/ny26_girl_3/label";
+      
+      public static const NOTRECRUITEDTANKMAN_NY26_GIRL_3_DESC:String = "#tooltips:notrecruitedtankman/ny26_girl_3/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_NY26_GIRL_4_LABEL:String = "#tooltips:notrecruitedtankman/ny26_girl_4/label";
+      
+      public static const NOTRECRUITEDTANKMAN_NY26_GIRL_4_DESC:String = "#tooltips:notrecruitedtankman/ny26_girl_4/desc";
+      
       public static const ADDITIONALREWARDS_LEVELHEADER:String = "#tooltips:additionalRewards/levelHeader";
       
       public static const ADDITIONALREWARDS_GOLD:String = "#tooltips:additionalRewards/gold";
@@ -8682,6 +8714,18 @@ package
       public static const NOTRECRUITEDTANKMAN_JOHN_CHRISTMAS_DESC:String = "#tooltips:notrecruitedtankman/john_christmas/desc";
       
       public static const NOTRECRUITEDTANKMAN_JOHN_CHRISTMAS_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/john_christmas/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP1005_1_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_bp1005_1/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP1005_1_DESC:String = "#tooltips:notrecruitedtankman/tankmen_bp1005_1/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP1005_1_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/tankmen_bp1005_1/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP1005_2_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_bp1005_2/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP1005_2_DESC:String = "#tooltips:notrecruitedtankman/tankmen_bp1005_2/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP1005_2_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/tankmen_bp1005_2/howToGetInfo";
       
       public static const NOTRECRUITEDTANKMAN_TANKMEN_BP18_10_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_bp18_10/label";
       

@@ -1,0 +1,2667 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>root_jnt</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>main_jnt</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.111593 0.000000</row3>
+				</transform>
+				<node>
+					<identifier>cable_back_across_base_jnt</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000023 0.163590 0.065760</row3>
+					</transform>
+					<node>
+						<identifier>cable_back_acreoss_01_jnt</identifier>
+						<transform>
+							<row0>0.999989 0.004782 -0.000003</row0>
+							<row1>-0.000003 -0.000000 -1.000000</row1>
+							<row2>-0.004782 0.999989 -0.000000</row2>
+							<row3>-0.000003 -0.134484 0.000002</row3>
+						</transform>
+						<node>
+							<identifier>cable_back_acreoss_01_jnt_BlendBone</identifier>
+							<transform>
+								<row0>0.999989 -0.000003 -0.004782</row0>
+								<row1>0.004782 -0.000000 0.999989</row1>
+								<row2>0.000003 1.000000 0.000000</row2>
+								<row3>-0.000693 0.065762 -0.140697</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_back_acreoss_02_jnt</identifier>
+						<transform>
+							<row0>0.988538 0.150974 -0.000002</row0>
+							<row1>-0.000002 -0.000000 -1.000000</row1>
+							<row2>-0.150974 0.988538 -0.000000</row2>
+							<row3>0.013558 -0.133773 0.000002</row3>
+						</transform>
+						<node>
+							<identifier>cable_back_acreoss_02_jnt_BlendBone</identifier>
+							<transform>
+								<row0>0.988538 -0.000002 -0.150974</row0>
+								<row1>0.150974 -0.000000 0.988538</row1>
+								<row2>0.000002 1.000000 -0.000000</row2>
+								<row3>-0.034774 0.065762 -0.137738</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_back_acreoss_03_jnt</identifier>
+						<transform>
+							<row0>0.892756 0.450541 0.000004</row0>
+							<row1>0.000003 0.000002 -1.000000</row1>
+							<row2>-0.450541 0.892756 -0.000000</row2>
+							<row3>0.026408 -0.129523 0.000002</row3>
+						</transform>
+						<node>
+							<identifier>cable_back_acreoss_03_jnt_BlendBone</identifier>
+							<transform>
+								<row0>0.892756 0.000003 -0.450541</row0>
+								<row1>0.450541 0.000002 0.892756</row1>
+								<row2>-0.000004 1.000000 -0.000000</row2>
+								<row3>-0.089222 0.065762 -0.118130</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_back_acreoss_04_jnt</identifier>
+						<transform>
+							<row0>0.769097 0.639132 -0.000006</row0>
+							<row1>-0.000005 -0.000004 -1.000000</row1>
+							<row2>-0.639132 0.769097 0.000000</row2>
+							<row3>0.037722 -0.122045 0.000002</row3>
+						</transform>
+						<node>
+							<identifier>cable_back_acreoss_04_jnt_BlendBone</identifier>
+							<transform>
+								<row0>0.769097 -0.000005 -0.639132</row0>
+								<row1>0.639132 -0.000004 0.769097</row1>
+								<row2>0.000006 1.000000 0.000000</row2>
+								<row3>-0.126904 0.065763 -0.093653</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_back_acreoss_05_jnt</identifier>
+						<transform>
+							<row0>0.610703 0.791860 0.000015</row0>
+							<row1>0.000009 0.000012 -1.000000</row1>
+							<row2>-0.791860 0.610703 0.000000</row2>
+							<row3>0.047192 -0.112333 0.000002</row3>
+						</transform>
+						<node>
+							<identifier>cable_back_acreoss_05_jnt_BlendBone</identifier>
+							<transform>
+								<row0>0.610703 0.000009 -0.791860</row0>
+								<row1>0.791860 0.000012 0.610703</row1>
+								<row2>-0.000015 1.000000 0.000000</row2>
+								<row3>-0.157789 0.065760 -0.062065</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_back_acreoss_06_jnt</identifier>
+						<transform>
+							<row0>0.413717 0.910406 -0.000036</row0>
+							<row1>-0.000015 -0.000033 -1.000000</row1>
+							<row2>-0.910406 0.413717 -0.000000</row2>
+							<row3>0.054091 -0.100658 0.000003</row3>
+						</transform>
+						<node>
+							<identifier>cable_back_acreoss_06_jnt_BlendBone</identifier>
+							<transform>
+								<row0>0.413717 -0.000015 -0.910406</row0>
+								<row1>0.910406 -0.000033 0.413717</row1>
+								<row2>0.000036 1.000000 -0.000000</row2>
+								<row3>-0.181273 0.065769 -0.022938</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_back_acreoss_07_jnt</identifier>
+						<transform>
+							<row0>0.198101 0.980182 0.000087</row0>
+							<row1>0.000017 0.000085 -1.000000</row1>
+							<row2>-0.980182 0.198101 0.000000</row2>
+							<row3>0.058414 -0.087803 0.000001</row3>
+						</transform>
+						<node>
+							<identifier>cable_back_acreoss_07_jnt_BlendBone</identifier>
+							<transform>
+								<row0>0.198101 0.000017 -0.980182</row0>
+								<row1>0.980182 0.000085 0.198101</row1>
+								<row2>-0.000087 1.000000 0.000000</row2>
+								<row3>-0.195248 0.065744 0.020159</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_back_acreoss_08_jnt</identifier>
+						<transform>
+							<row0>-0.058417 0.998292 -0.000234</row0>
+							<row1>0.000014 -0.000233 -1.000000</row1>
+							<row2>-0.998292 -0.058417 0.000000</row2>
+							<row3>0.059231 -0.074274 0.000004</row3>
+						</transform>
+						<node>
+							<identifier>cable_back_acreoss_08_jnt_BlendBone</identifier>
+							<transform>
+								<row0>-0.058417 0.000014 -0.998292</row0>
+								<row1>0.998292 -0.000233 -0.058417</row1>
+								<row2>0.000234 1.000000 0.000000</row2>
+								<row3>-0.197089 0.065810 0.070889</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_back_acreoss_09_jnt</identifier>
+						<transform>
+							<row0>-0.237257 0.971447 0.000817</row0>
+							<row1>-0.000194 0.000794 -1.000000</row1>
+							<row2>-0.971447 -0.237257 0.000000</row2>
+							<row3>0.057194 -0.060853 0.000000</row3>
+						</transform>
+						<node>
+							<identifier>cable_back_acreoss_09_jnt_BlendBone</identifier>
+							<transform>
+								<row0>-0.237257 -0.000194 -0.971447</row0>
+								<row1>0.971447 0.000794 -0.237257</row1>
+								<row2>-0.000817 1.000000 0.000000</row2>
+								<row3>-0.194688 0.065601 0.106435</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_back_acreoss_10_jnt</identifier>
+						<transform>
+							<row0>-0.399068 0.916885 -0.008171</row0>
+							<row1>0.003261 -0.007493 -0.999967</row1>
+							<row2>-0.916916 -0.399081 0.000000</row2>
+							<row3>0.052854 -0.047991 -0.000017</row3>
+						</transform>
+						<node>
+							<identifier>cable_back_acreoss_10_jnt_BlendBone</identifier>
+							<transform>
+								<row0>-0.399068 0.003261 -0.916915</row0>
+								<row1>0.916885 -0.007493 -0.399081</row1>
+								<row2>0.008171 0.999967 0.000000</row2>
+								<row3>-0.186669 0.067270 0.139152</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_back_acreoss_11_jnt</identifier>
+						<transform>
+							<row0>-0.463806 0.885571 -0.025470</row0>
+							<row1>0.011817 -0.022563 -0.999676</row1>
+							<row2>-0.885858 -0.463957 0.000000</row2>
+							<row3>0.046791 -0.035833 -0.000260</row3>
+						</transform>
+						<node>
+							<identifier>cable_back_acreoss_11_jnt_BlendBone</identifier>
+							<transform>
+								<row0>-0.463806 0.011817 -0.885858</row0>
+								<row1>0.885571 -0.022563 -0.463957</row1>
+								<row2>0.025470 0.999676 0.000000</row2>
+								<row3>-0.188580 0.070326 0.152519</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_back_acreoss_12_jnt</identifier>
+						<transform>
+							<row0>-0.466377 0.884074 -0.030096</row0>
+							<row1>0.014042 -0.026619 -0.999547</row1>
+							<row2>-0.884474 -0.466589 0.000000</row2>
+							<row3>0.040519 -0.023782 -0.000653</row3>
+						</transform>
+						<node>
+							<identifier>cable_back_acreoss_12_jnt_BlendBone</identifier>
+							<transform>
+								<row0>-0.466378 0.014042 -0.884474</row0>
+								<row1>0.884074 -0.026619 -0.466589</row1>
+								<row2>0.030096 0.999547 0.000000</row2>
+								<row3>-0.201389 0.071201 0.153159</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_back_acreoss_13_jnt</identifier>
+						<transform>
+							<row0>-0.469028 0.882767 -0.027107</row0>
+							<row1>0.012719 -0.023938 -0.999633</row1>
+							<row2>-0.883091 -0.469201 0.000000</row2>
+							<row3>0.034119 -0.011797 -0.001044</row3>
+						</transform>
+						<node>
+							<identifier>cable_back_acreoss_13_jnt_BlendBone</identifier>
+							<transform>
+								<row0>-0.469028 0.012719 -0.883092</row0>
+								<row1>0.882767 -0.023938 -0.469201</row1>
+								<row2>0.027107 0.999633 0.000000</row2>
+								<row3>-0.214740 0.070563 0.153732</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_back_acreoss_14_jnt</identifier>
+						<transform>
+							<row0>-0.464090 0.885499 -0.022637</row0>
+							<row1>0.010508 -0.020050 -0.999744</row1>
+							<row2>-0.885726 -0.464209 0.000000</row2>
+							<row3>0.027798 0.000230 -0.001383</row3>
+						</transform>
+						<node>
+							<identifier>cable_back_acreoss_14_jnt_BlendBone</identifier>
+							<transform>
+								<row0>-0.464090 0.010508 -0.885726</row0>
+								<row1>0.885499 -0.020050 -0.464209</row1>
+								<row2>0.022637 0.999744 0.000000</row2>
+								<row3>-0.229508 0.069590 0.152490</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_back_acreoss_15_jnt</identifier>
+						<transform>
+							<row0>-0.460633 0.887415 -0.017669</row0>
+							<row1>0.008140 -0.015683 -0.999844</row1>
+							<row2>-0.887553 -0.460705 0.000000</row2>
+							<row3>0.021501 0.012272 -0.001657</row3>
+						</transform>
+						<node>
+							<identifier>cable_back_acreoss_15_jnt_BlendBone</identifier>
+							<transform>
+								<row0>-0.460633 0.008140 -0.887553</row0>
+								<row1>0.887415 -0.015683 -0.460705</row1>
+								<row2>0.017669 0.999844 0.000000</row2>
+								<row3>-0.244044 0.068425 0.151536</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_back_acreoss_16_jnt</identifier>
+						<transform>
+							<row0>-0.455309 0.890253 -0.011953</row0>
+							<row1>0.005443 -0.010642 -0.999929</row1>
+							<row2>-0.890317 -0.455342 0.000000</row2>
+							<row3>0.015282 0.024355 -0.001860</row3>
+						</transform>
+						<node>
+							<identifier>cable_back_acreoss_16_jnt_BlendBone</identifier>
+							<transform>
+								<row0>-0.455309 0.005443 -0.890317</row0>
+								<row1>0.890253 -0.010642 -0.455342</row1>
+								<row2>0.011953 0.999929 -0.000000</row2>
+								<row3>-0.258932 0.067000 0.150018</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_back_acreoss_17_jnt</identifier>
+						<transform>
+							<row0>-0.448279 0.893877 -0.005503</row0>
+							<row1>0.002467 -0.004919 -0.999985</row1>
+							<row2>-0.893890 -0.448286 0.000000</row2>
+							<row3>0.009135 0.036477 -0.001979</row3>
+						</transform>
+						<node>
+							<identifier>cable_back_acreoss_17_jnt_BlendBone</identifier>
+							<transform>
+								<row0>-0.448279 0.002467 -0.893890</row0>
+								<row1>0.893877 -0.004919 -0.448286</row1>
+								<row2>0.005503 0.999985 0.000000</row2>
+								<row3>-0.274129 0.065290 0.147899</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_back_acreoss_18_jnt</identifier>
+						<transform>
+							<row0>-0.439532 0.898224 0.002328</row0>
+							<row1>-0.001023 0.002091 -0.999997</row1>
+							<row2>-0.898227 -0.439533 0.000000</row2>
+							<row3>0.003102 0.048656 -0.002003</row3>
+						</transform>
+						<node>
+							<identifier>cable_back_acreoss_18_jnt_BlendBone</identifier>
+							<transform>
+								<row0>-0.439532 -0.001023 -0.898226</row0>
+								<row1>0.898224 0.002091 -0.439533</row1>
+								<row2>-0.002328 0.999997 -0.000000</row2>
+								<row3>-0.289655 0.063083 0.145144</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_back_acreoss_19_jnt</identifier>
+						<transform>
+							<row0>-0.424907 0.905169 0.011054</row0>
+							<row1>-0.004697 0.010007 -0.999939</row1>
+							<row2>-0.905225 -0.424933 0.000000</row2>
+							<row3>-0.002784 0.060908 -0.001912</row3>
+						</transform>
+						<node>
+							<identifier>cable_back_acreoss_19_jnt_BlendBone</identifier>
+							<transform>
+								<row0>-0.424907 -0.004697 -0.905225</row0>
+								<row1>0.905169 0.010007 -0.424933</row1>
+								<row2>-0.011054 0.999939 -0.000000</row2>
+								<row3>-0.306097 0.060468 0.140317</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_back_acreoss_20_jnt</identifier>
+						<transform>
+							<row0>-0.406307 0.913455 0.022668</row0>
+							<row1>-0.009213 0.020712 -0.999743</row1>
+							<row2>-0.913690 -0.406412 0.000000</row2>
+							<row3>-0.008436 0.073265 -0.001688</row3>
+						</transform>
+						<node>
+							<identifier>cable_back_acreoss_20_jnt_BlendBone</identifier>
+							<transform>
+								<row0>-0.406307 -0.009213 -0.913690</row0>
+								<row1>0.913455 0.020712 -0.406412</row1>
+								<row2>-0.022668 0.999743 0.000000</row2>
+								<row3>-0.323162 0.056762 0.133927</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_back_acreoss_21_jnt</identifier>
+						<transform>
+							<row0>-0.365040 0.930367 0.034108</row0>
+							<row1>-0.012458 0.031752 -0.999418</row1>
+							<row2>-0.930909 -0.365252 0.000000</row2>
+							<row3>-0.013715 0.085784 -0.001300</row3>
+						</transform>
+						<node>
+							<identifier>cable_back_acreoss_21_jnt_BlendBone</identifier>
+							<transform>
+								<row0>-0.365040 -0.012458 -0.930909</row0>
+								<row1>0.930367 0.031752 -0.365252</row1>
+								<row2>-0.034108 0.999418 0.000000</row2>
+								<row3>-0.343028 0.052791 0.119098</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_back_acreoss_22_jnt</identifier>
+						<transform>
+							<row0>-0.295313 0.954171 0.048452</row0>
+							<row1>-0.014325 0.046286 -0.998825</row1>
+							<row2>-0.955293 -0.295660 -0.000000</row2>
+							<row3>-0.018260 0.098577 -0.000738</row3>
+						</transform>
+						<node>
+							<identifier>cable_back_acreoss_22_jnt_BlendBone</identifier>
+							<transform>
+								<row0>-0.295313 -0.014325 -0.955293</row0>
+								<row1>0.954171 0.046286 -0.295660</row1>
+								<row2>-0.048452 0.998825 -0.000000</row2>
+								<row3>-0.365166 0.047384 0.093085</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_back_acreoss_23_jnt</identifier>
+						<transform>
+							<row0>-0.031294 0.999120 0.027926</row0>
+							<row1>-0.000874 0.027912 -0.999610</row1>
+							<row2>-0.999510 -0.031306 0.000000</row2>
+							<row3>-0.020785 0.111877 -0.000169</row3>
+						</transform>
+						<node>
+							<identifier>cable_back_acreoss_23_jnt_BlendBone</identifier>
+							<transform>
+								<row0>-0.031294 -0.000874 -0.999510</row0>
+								<row1>0.999120 0.027912 -0.031306</row1>
+								<row2>-0.027926 0.999610 -0.000000</row2>
+								<row3>-0.389201 0.054744 -0.008635</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_back_acreoss_24_jnt</identifier>
+						<transform>
+							<row0>0.550743 0.834674 0.001214</row0>
+							<row1>0.000669 0.001013 -0.999999</row1>
+							<row2>-0.834675 0.550743 -0.000000</row2>
+							<row3>-0.017530 0.124841 0.000015</row3>
+						</transform>
+						<node>
+							<identifier>cable_back_acreoss_24_jnt_BlendBone</identifier>
+							<transform>
+								<row0>0.550743 0.000669 -0.834675</row0>
+								<row1>0.834674 0.001013 0.550743</row1>
+								<row2>-0.001214 0.999999 -0.000000</row2>
+								<row3>-0.324327 0.065381 -0.234923</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_back_acreoss_25_jnt</identifier>
+						<transform>
+							<row0>0.952450 0.304695 -0.000123</row0>
+							<row1>-0.000118 -0.000038 -1.000000</row1>
+							<row2>-0.304695 0.952450 -0.000000</row2>
+							<row3>-0.006909 0.132900 -0.000006</row3>
+						</transform>
+						<node>
+							<identifier>cable_back_acreoss_25_jnt_BlendBone</identifier>
+							<transform>
+								<row0>0.952450 -0.000118 -0.304695</row0>
+								<row1>0.304695 -0.000038 0.952450</row1>
+								<row2>0.000123 1.000000 -0.000000</row2>
+								<row3>-0.117775 0.065769 -0.390776</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_back_acreoss_26_jnt</identifier>
+						<transform>
+							<row0>0.954107 -0.299464 0.000774</row0>
+							<row1>0.000738 -0.000232 -1.000000</row1>
+							<row2>0.299464 0.954108 0.000000</row2>
+							<row3>0.006475 0.132892 0.000007</row3>
+						</transform>
+						<node>
+							<identifier>cable_back_acreoss_26_jnt_BlendBone</identifier>
+							<transform>
+								<row0>0.954107 0.000738 0.299464</row0>
+								<row1>-0.299464 -0.000232 0.954108</row1>
+								<row2>-0.000774 1.000000 -0.000000</row2>
+								<row3>0.115953 0.065857 -0.391292</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_back_acreoss_27_jnt</identifier>
+						<transform>
+							<row0>0.518237 -0.855235 -0.001956</row0>
+							<row1>-0.001014 0.001673 -0.999998</row1>
+							<row2>0.855236 0.518238 -0.000000</row2>
+							<row3>0.016996 0.124787 -0.000004</row3>
+						</transform>
+						<node>
+							<identifier>cable_back_acreoss_27_jnt_BlendBone</identifier>
+							<transform>
+								<row0>0.518237 -0.001014 0.855236</row0>
+								<row1>-0.855235 0.001673 0.518238</row1>
+								<row2>0.001956 0.999998 0.000000</row2>
+								<row3>0.333376 0.065104 -0.221835</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_back_acreoss_28_jnt</identifier>
+						<transform>
+							<row0>0.044141 -0.998959 0.011505</row0>
+							<row1>0.000508 -0.011494 -0.999934</row1>
+							<row2>0.999025 0.044144 0.000000</row2>
+							<row3>0.020677 0.111845 0.000033</row3>
+						</transform>
+						<node>
+							<identifier>cable_back_acreoss_28_jnt_BlendBone</identifier>
+							<transform>
+								<row0>0.044141 0.000508 0.999025</row0>
+								<row1>-0.998959 -0.011494 0.044144</row1>
+								<row2>-0.011505 0.999934 0.000000</row2>
+								<row3>0.384953 0.070227 -0.037765</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_back_acreoss_29_jnt</identifier>
+						<transform>
+							<row0>-0.313341 -0.948415 0.048231</row0>
+							<row1>-0.015130 -0.045797 -0.998836</row1>
+							<row2>0.949520 -0.313706 0.000000</row2>
+							<row3>0.018609 0.098498 0.000441</row3>
+						</transform>
+						<node>
+							<identifier>cable_back_acreoss_29_jnt_BlendBone</identifier>
+							<transform>
+								<row0>-0.313341 -0.015130 0.949520</row0>
+								<row1>-0.948415 -0.045797 -0.313706</row1>
+								<row2>-0.048231 0.998836 0.000000</row2>
+								<row3>0.357049 0.083520 0.099535</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_back_acreoss_30_jnt</identifier>
+						<transform>
+							<row0>-0.365913 -0.929777 0.040274</row0>
+							<row1>-0.014749 -0.037476 -0.999189</row1>
+							<row2>0.930532 -0.366210 0.000000</row2>
+							<row3>0.013741 0.085826 0.001088</row3>
+						</transform>
+						<node>
+							<identifier>cable_back_acreoss_30_jnt_BlendBone</identifier>
+							<transform>
+								<row0>-0.365913 -0.014749 0.930532</row0>
+								<row1>-0.929777 -0.037476 -0.366210</row1>
+								<row2>-0.040274 0.999189 0.000000</row2>
+								<row3>0.338002 0.080526 0.119397</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_back_acreoss_31_jnt</identifier>
+						<transform>
+							<row0>-0.389394 -0.920578 0.030142</row0>
+							<row1>-0.011743 -0.027761 -0.999546</row1>
+							<row2>0.920997 -0.389571 -0.000000</row2>
+							<row3>0.008636 0.073239 0.001558</row3>
+						</transform>
+						<node>
+							<identifier>cable_back_acreoss_31_jnt_BlendBone</identifier>
+							<transform>
+								<row0>-0.389394 -0.011743 0.920996</row0>
+								<row1>-0.920578 -0.027761 -0.389571</row1>
+								<row2>-0.030142 0.999546 0.000000</row2>
+								<row3>0.322092 0.077062 0.127759</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_back_acreoss_32_jnt</identifier>
+						<transform>
+							<row0>-0.404689 -0.914278 0.017946</row0>
+							<row1>-0.007264 -0.016411 -0.999839</row1>
+							<row2>0.914425 -0.404754 0.000000</row2>
+							<row3>0.003228 0.060774 0.001888</row3>
+						</transform>
+						<node>
+							<identifier>cable_back_acreoss_32_jnt_BlendBone</identifier>
+							<transform>
+								<row0>-0.404689 -0.007264 0.914425</row0>
+								<row1>-0.914278 -0.016411 -0.404754</row1>
+								<row2>-0.017946 0.999839 0.000000</row2>
+								<row3>0.307259 0.073174 0.133006</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_back_acreoss_33_jnt</identifier>
+						<transform>
+							<row0>-0.423818 -0.905715 0.007608</row0>
+							<row1>-0.003225 -0.006891 -0.999971</row1>
+							<row2>0.905742 -0.423831 0.000000</row2>
+							<row3>-0.002399 0.048403 0.002060</row3>
+						</transform>
+						<node>
+							<identifier>cable_back_acreoss_33_jnt_BlendBone</identifier>
+							<transform>
+								<row0>-0.423818 -0.003225 0.905742</row0>
+								<row1>-0.905715 -0.006891 -0.423831</row1>
+								<row2>-0.007608 0.999971 -0.000000</row2>
+								<row3>0.291554 0.070040 0.139297</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_back_acreoss_34_jnt</identifier>
+						<transform>
+							<row0>-0.438837 -0.898562 -0.002950</row0>
+							<row1>0.001294 0.002650 -0.999996</row1>
+							<row2>0.898566 -0.438839 0.000000</row2>
+							<row3>-0.008265 0.036142 0.002091</row3>
+						</transform>
+						<node>
+							<identifier>cable_back_acreoss_34_jnt_BlendBone</identifier>
+							<transform>
+								<row0>-0.438837 0.001294 0.898566</row0>
+								<row1>-0.898562 0.002650 -0.438839</row1>
+								<row2>0.002950 0.999996 -0.000000</row2>
+								<row3>0.276328 0.067037 0.144027</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_back_acreoss_35_jnt</identifier>
+						<transform>
+							<row0>-0.454417 -0.890705 -0.012263</row0>
+							<row1>0.005573 0.010923 -0.999925</row1>
+							<row2>0.890772 -0.454451 0.000000</row2>
+							<row3>-0.014337 0.023984 0.001986</row3>
+						</transform>
+						<node>
+							<identifier>cable_back_acreoss_35_jnt_BlendBone</identifier>
+							<transform>
+								<row0>-0.454417 0.005573 0.890772</row0>
+								<row1>-0.890705 0.010923 -0.454451</row1>
+								<row2>0.012263 0.999925 0.000000</row2>
+								<row3>0.260795 0.064553 0.148706</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_back_acreoss_36_jnt</identifier>
+						<transform>
+							<row0>-0.465577 -0.884773 -0.020347</row0>
+							<row1>0.009475 0.018006 -0.999793</row1>
+							<row2>0.884956 -0.465674 0.000000</row2>
+							<row3>-0.020591 0.011918 0.001763</row3>
+						</transform>
+						<node>
+							<identifier>cable_back_acreoss_36_jnt_BlendBone</identifier>
+							<transform>
+								<row0>-0.465577 0.009475 0.884956</row0>
+								<row1>-0.884773 0.018006 -0.465674</row1>
+								<row2>0.020347 0.999793 0.000000</row2>
+								<row3>0.245817 0.062534 0.151897</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_back_acreoss_37_jnt</identifier>
+						<transform>
+							<row0>-0.475650 -0.879244 -0.026201</row0>
+							<row1>0.012467 0.023045 -0.999657</row1>
+							<row2>0.879546 -0.475813 0.000000</row2>
+							<row3>-0.026998 -0.000065 0.001442</row3>
+						</transform>
+						<node>
+							<identifier>cable_back_acreoss_37_jnt_BlendBone</identifier>
+							<transform>
+								<row0>-0.475650 0.012467 0.879546</row0>
+								<row1>-0.879244 0.023045 -0.475813</row1>
+								<row2>0.026201 0.999657 0.000000</row2>
+								<row3>0.230826 0.061175 0.154630</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_back_acreoss_38_jnt</identifier>
+						<transform>
+							<row0>-0.474147 -0.880023 -0.027265</row0>
+							<row1>0.012932 0.024003 -0.999628</row1>
+							<row2>0.880351 -0.474324 0.000000</row2>
+							<row3>-0.033453 -0.012020 0.001075</row3>
+						</transform>
+						<node>
+							<identifier>cable_back_acreoss_38_jnt_BlendBone</identifier>
+							<transform>
+								<row0>-0.474147 0.012932 0.880351</row0>
+								<row1>-0.880023 0.024003 -0.474324</row1>
+								<row2>0.027265 0.999628 -0.000000</row2>
+								<row3>0.217561 0.060925 0.154254</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_back_acreoss_39_jnt</identifier>
+						<transform>
+							<row0>-0.473900 -0.880206 -0.025630</row0>
+							<row1>0.012150 0.022567 -0.999672</row1>
+							<row2>0.880495 -0.474056 0.000000</row2>
+							<row3>-0.039915 -0.023971 0.000713</row3>
+						</transform>
+						<node>
+							<identifier>cable_back_acreoss_39_jnt_BlendBone</identifier>
+							<transform>
+								<row0>-0.473900 0.012150 0.880495</row0>
+								<row1>-0.880206 0.022567 -0.474056</row1>
+								<row2>0.025630 0.999671 0.000000</row2>
+								<row3>0.203916 0.061267 0.154213</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_back_acreoss_40_jnt</identifier>
+						<transform>
+							<row0>-0.457276 -0.889036 -0.022665</row0>
+							<row1>0.010367 0.020155 -0.999743</row1>
+							<row2>0.889264 -0.457394 0.000000</row2>
+							<row3>-0.046219 -0.036008 0.000384</row3>
+						</transform>
+						<node>
+							<identifier>cable_back_acreoss_40_jnt_BlendBone</identifier>
+							<transform>
+								<row0>-0.457276 0.010367 0.889264</row0>
+								<row1>-0.889036 0.020155 -0.457394</row1>
+								<row2>0.022665 0.999743 0.000000</row2>
+								<row3>0.193010 0.061785 0.150478</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_back_acreoss_41_jnt</identifier>
+						<transform>
+							<row0>-0.434886 -0.900339 -0.016250</row0>
+							<row1>0.007068 0.014633 -0.999868</row1>
+							<row2>0.900458 -0.434943 0.000000</row2>
+							<row3>-0.052434 -0.048092 0.000106</row3>
+						</transform>
+						<node>
+							<identifier>cable_back_acreoss_41_jnt_BlendBone</identifier>
+							<transform>
+								<row0>-0.434886 0.007068 0.900458</row0>
+								<row1>-0.900339 0.014633 -0.434943</row1>
+								<row2>0.016250 0.999868 0.000000</row2>
+								<row3>0.182736 0.062905 0.145965</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_back_acreoss_42_jnt</identifier>
+						<transform>
+							<row0>-0.250464 -0.968126 -0.000787</row0>
+							<row1>0.000197 0.000762 -1.000000</row1>
+							<row2>0.968126 -0.250464 0.000000</row2>
+							<row3>-0.057149 -0.060813 0.000001</row3>
+						</transform>
+						<node>
+							<identifier>cable_back_acreoss_42_jnt_BlendBone</identifier>
+							<transform>
+								<row0>-0.250464 0.000197 0.968126</row0>
+								<row1>-0.968126 0.000762 -0.250464</row1>
+								<row2>0.000787 1.000000 0.000000</row2>
+								<row3>0.193280 0.065609 0.108996</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_back_acreoss_43_jnt</identifier>
+						<transform>
+							<row0>-0.060299 -0.998180 0.000019</row0>
+							<row1>-0.000001 -0.000019 -1.000000</row1>
+							<row2>0.998180 -0.060299 0.000000</row2>
+							<row3>-0.059328 -0.074209 0.000002</row3>
+						</transform>
+						<node>
+							<identifier>cable_back_acreoss_43_jnt_BlendBone</identifier>
+							<transform>
+								<row0>-0.060299 -0.000001 0.998180</row0>
+								<row1>-0.998180 -0.000019 -0.060299</row1>
+								<row2>-0.000019 1.000000 0.000000</row2>
+								<row3>0.197030 0.065766 0.071315</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_back_acreoss_44_jnt</identifier>
+						<transform>
+							<row0>0.195165 -0.980770 -0.000014</row0>
+							<row1>-0.000003 0.000014 -1.000000</row1>
+							<row2>0.980770 0.195165 -0.000000</row2>
+							<row3>-0.058417 -0.087732 0.000002</row3>
+						</transform>
+						<node>
+							<identifier>cable_back_acreoss_44_jnt_BlendBone</identifier>
+							<transform>
+								<row0>0.195165 -0.000003 0.980770</row0>
+								<row1>-0.980770 0.000014 0.195165</row1>
+								<row2>0.000014 1.000000 0.000000</row2>
+								<row3>0.195243 0.065759 0.020687</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_back_acreoss_45_jnt</identifier>
+						<transform>
+							<row0>0.418114 -0.908394 0.000008</row0>
+							<row1>0.000004 -0.000008 -1.000000</row1>
+							<row2>0.908394 0.418114 -0.000000</row2>
+							<row3>-0.054170 -0.100609 0.000002</row3>
+						</transform>
+						<node>
+							<identifier>cable_back_acreoss_45_jnt_BlendBone</identifier>
+							<transform>
+								<row0>0.418114 0.000004 0.908394</row0>
+								<row1>-0.908394 -0.000008 0.418114</row1>
+								<row2>-0.000008 1.000000 0.000000</row2>
+								<row3>0.181220 0.065764 -0.023805</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_back_acreoss_46_jnt</identifier>
+						<transform>
+							<row0>0.598118 -0.801408 -0.000005</row0>
+							<row1>-0.000003 0.000004 -1.000000</row1>
+							<row2>0.801408 0.598118 0.000000</row2>
+							<row3>-0.047304 -0.112311 0.000002</row3>
+						</transform>
+						<node>
+							<identifier>cable_back_acreoss_46_jnt_BlendBone</identifier>
+							<transform>
+								<row0>0.598118 -0.000003 0.801408</row0>
+								<row1>-0.801408 0.000004 0.598118</row1>
+								<row2>0.000005 1.000000 0.000000</row2>
+								<row3>0.158806 0.065761 -0.059525</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_back_acreoss_47_jnt</identifier>
+						<transform>
+							<row0>0.782029 -0.623242 0.000003</row0>
+							<row1>0.000003 -0.000002 -1.000000</row1>
+							<row2>0.623242 0.782029 0.000000</row2>
+							<row3>-0.037820 -0.121993 0.000002</row3>
+						</transform>
+						<node>
+							<identifier>cable_back_acreoss_47_jnt_BlendBone</identifier>
+							<transform>
+								<row0>0.782029 0.000003 0.623242</row0>
+								<row1>-0.623242 -0.000002 0.782029</row1>
+								<row2>-0.000003 1.000000 0.000000</row2>
+								<row3>0.125032 0.065763 -0.096242</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_back_acreoss_48_jnt</identifier>
+						<transform>
+							<row0>0.896951 -0.442131 -0.000001</row0>
+							<row1>-0.000001 0.000001 -1.000000</row1>
+							<row2>0.442131 0.896951 -0.000000</row2>
+							<row3>-0.026408 -0.129329 0.000002</row3>
+						</transform>
+						<node>
+							<identifier>cable_back_acreoss_48_jnt_BlendBone</identifier>
+							<transform>
+								<row0>0.896951 -0.000001 0.442131</row0>
+								<row1>-0.442131 0.000001 0.896951</row1>
+								<row2>0.000001 1.000000 0.000000</row2>
+								<row3>0.088152 0.065762 -0.119158</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_back_acreoss_49_jnt</identifier>
+						<transform>
+							<row0>0.984097 -0.177634 0.000003</row0>
+							<row1>0.000003 -0.000001 -1.000000</row1>
+							<row2>0.177634 0.984097 0.000000</row2>
+							<row3>-0.013537 -0.133557 0.000002</row3>
+						</transform>
+						<node>
+							<identifier>cable_back_acreoss_49_jnt_BlendBone</identifier>
+							<transform>
+								<row0>0.984097 0.000003 0.177634</row0>
+								<row1>-0.177634 -0.000001 0.984097</row1>
+								<row2>-0.000003 1.000000 -0.000000</row2>
+								<row3>0.038457 0.065762 -0.136972</row3>
+							</transform>
+						</node>
+					</node>
+				</node>
+				<node>
+					<identifier>cable_front_base_jnt</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000023 0.163590 -0.065762</row3>
+					</transform>
+					<node>
+						<identifier>cable_front_01_jnt</identifier>
+						<transform>
+							<row0>0.999814 0.019262 0.000001</row0>
+							<row1>0.000001 0.000000 -1.000000</row1>
+							<row2>-0.019262 0.999814 0.000000</row2>
+							<row3>-0.000023 -0.136350 -0.000000</row3>
+						</transform>
+						<node>
+							<identifier>cable_front_01_jnt_BlendBone</identifier>
+							<transform>
+								<row0>0.999814 0.000001 -0.019262</row0>
+								<row1>0.019262 0.000000 0.999814</row1>
+								<row2>-0.000001 1.000000 0.000000</row2>
+								<row3>-0.002674 -0.065762 -0.138807</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_front_02_jnt</identifier>
+						<transform>
+							<row0>0.989375 0.145385 0.000001</row0>
+							<row1>0.000001 0.000000 -1.000000</row1>
+							<row2>-0.145385 0.989375 0.000000</row2>
+							<row3>0.013210 -0.135592 -0.000000</row3>
+						</transform>
+						<node>
+							<identifier>cable_front_02_jnt_BlendBone</identifier>
+							<transform>
+								<row0>0.989375 0.000001 -0.145385</row0>
+								<row1>0.145385 0.000000 0.989375</row1>
+								<row2>-0.000001 1.000000 0.000000</row2>
+								<row3>-0.033387 -0.065762 -0.136183</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_front_03_jnt</identifier>
+						<transform>
+							<row0>0.908459 0.417974 0.000000</row0>
+							<row1>0.000000 0.000000 -1.000000</row1>
+							<row2>-0.417974 0.908459 0.000000</row2>
+							<row3>0.025896 -0.131868 -0.000000</row3>
+						</transform>
+						<node>
+							<identifier>cable_front_03_jnt_BlendBone</identifier>
+							<transform>
+								<row0>0.908459 0.000000 -0.417974</row0>
+								<row1>0.417974 0.000000 0.908459</row1>
+								<row2>-0.000000 1.000000 0.000000</row2>
+								<row3>-0.083448 -0.065762 -0.119362</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_front_04_jnt</identifier>
+						<transform>
+							<row0>0.790605 0.612326 -0.000001</row0>
+							<row1>-0.000000 -0.000000 -1.000000</row1>
+							<row2>-0.612326 0.790605 0.000000</row2>
+							<row3>0.037131 -0.124869 -0.000000</row3>
+						</transform>
+						<node>
+							<identifier>cable_front_04_jnt_BlendBone</identifier>
+							<transform>
+								<row0>0.790605 -0.000000 -0.612326</row0>
+								<row1>0.612326 -0.000000 0.790605</row1>
+								<row2>0.000001 1.000000 0.000000</row2>
+								<row3>-0.121415 -0.065762 -0.096088</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_front_05_jnt</identifier>
+						<transform>
+							<row0>0.648193 0.761476 -0.000000</row0>
+							<row1>-0.000000 -0.000000 -1.000000</row1>
+							<row2>-0.761476 0.648193 0.000000</row2>
+							<row3>0.046766 -0.115786 -0.000000</row3>
+						</transform>
+						<node>
+							<identifier>cable_front_05_jnt_BlendBone</identifier>
+							<transform>
+								<row0>0.648193 -0.000000 -0.761476</row0>
+								<row1>0.761476 -0.000000 0.648193</row1>
+								<row2>0.000000 1.000000 0.000000</row2>
+								<row3>-0.151705 -0.065762 -0.067691</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_front_06_jnt</identifier>
+						<transform>
+							<row0>0.465321 0.885142 -0.000000</row0>
+							<row1>-0.000000 -0.000000 -1.000000</row1>
+							<row2>-0.885142 0.465321 0.000000</row2>
+							<row3>0.054156 -0.104802 -0.000000</row3>
+						</transform>
+						<node>
+							<identifier>cable_front_06_jnt_BlendBone</identifier>
+							<transform>
+								<row0>0.465321 -0.000000 -0.885142</row0>
+								<row1>0.885142 -0.000000 0.465321</row1>
+								<row2>0.000000 1.000000 0.000000</row2>
+								<row3>-0.176021 -0.065762 -0.031325</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_front_07_jnt</identifier>
+						<transform>
+							<row0>0.279233 0.960223 0.000000</row0>
+							<row1>0.000000 0.000000 -1.000000</row1>
+							<row2>-0.960223 0.279233 0.000000</row2>
+							<row3>0.059097 -0.092516 -0.000000</row3>
+						</transform>
+						<node>
+							<identifier>cable_front_07_jnt_BlendBone</identifier>
+							<transform>
+								<row0>0.279233 0.000000 -0.960224</row0>
+								<row1>0.960224 0.000000 0.279233</row1>
+								<row2>-0.000000 1.000000 0.000000</row2>
+								<row3>-0.191909 -0.065762 0.005762</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_front_08_jnt</identifier>
+						<transform>
+							<row0>0.026126 0.999659 0.000000</row0>
+							<row1>0.000000 0.000000 -1.000000</row1>
+							<row2>-0.999659 0.026126 0.000000</row2>
+							<row3>0.061241 -0.079462 -0.000000</row3>
+						</transform>
+						<node>
+							<identifier>cable_front_08_jnt_BlendBone</identifier>
+							<transform>
+								<row0>0.026126 0.000000 -0.999659</row0>
+								<row1>0.999659 0.000000 0.026126</row1>
+								<row2>-0.000000 1.000000 -0.000000</row2>
+								<row3>-0.197254 -0.065762 0.056130</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_front_09_jnt</identifier>
+						<transform>
+							<row0>-0.170999 0.985271 -0.000000</row0>
+							<row1>0.000000 -0.000000 -1.000000</row1>
+							<row2>-0.985271 -0.170999 -0.000000</row2>
+							<row3>0.060104 -0.066268 -0.000000</row3>
+						</transform>
+						<node>
+							<identifier>cable_front_09_jnt_BlendBone</identifier>
+							<transform>
+								<row0>-0.170999 0.000000 -0.985271</row0>
+								<row1>0.985271 -0.000000 -0.170999</row1>
+								<row2>0.000000 1.000000 0.000000</row2>
+								<row3>-0.195556 -0.065762 0.094965</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_front_10_jnt</identifier>
+						<transform>
+							<row0>-0.200526 0.979688 0.000000</row0>
+							<row1>-0.000000 0.000000 -1.000000</row1>
+							<row2>-0.979688 -0.200526 0.000000</row2>
+							<row3>0.057463 -0.053269 -0.000000</row3>
+						</transform>
+						<node>
+							<identifier>cable_front_10_jnt_BlendBone</identifier>
+							<transform>
+								<row0>-0.200526 -0.000000 -0.979688</row0>
+								<row1>0.979688 0.000000 -0.200526</row1>
+								<row2>-0.000000 1.000000 0.000000</row2>
+								<row3>-0.205878 -0.065762 0.100818</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_front_11_jnt</identifier>
+						<transform>
+							<row0>-0.204494 0.978868 -0.000000</row0>
+							<row1>0.000000 -0.000000 -1.000000</row1>
+							<row2>-0.978868 -0.204494 0.000000</row2>
+							<row3>0.054828 -0.040267 -0.000000</row3>
+						</transform>
+						<node>
+							<identifier>cable_front_11_jnt_BlendBone</identifier>
+							<transform>
+								<row0>-0.204494 0.000000 -0.978868</row0>
+								<row1>0.978868 -0.000000 -0.204494</row1>
+								<row2>0.000000 1.000000 0.000000</row2>
+								<row3>-0.218734 -0.065762 0.101730</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_front_12_jnt</identifier>
+						<transform>
+							<row0>-0.206210 0.978508 0.000000</row0>
+							<row1>-0.000000 0.000000 -1.000000</row1>
+							<row2>-0.978508 -0.206210 -0.000000</row2>
+							<row3>0.052076 -0.027291 -0.000000</row3>
+						</transform>
+						<node>
+							<identifier>cable_front_12_jnt_BlendBone</identifier>
+							<transform>
+								<row0>-0.206210 -0.000000 -0.978508</row0>
+								<row1>0.978508 0.000000 -0.206210</row1>
+								<row2>-0.000000 1.000000 0.000000</row2>
+								<row3>-0.231820 -0.065762 0.102097</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_front_13_jnt</identifier>
+						<transform>
+							<row0>-0.205970 0.978558 -0.000000</row0>
+							<row1>0.000000 -0.000000 -1.000000</row1>
+							<row2>-0.978558 -0.205970 0.000000</row2>
+							<row3>0.049351 -0.014308 -0.000000</row3>
+						</transform>
+						<node>
+							<identifier>cable_front_13_jnt_BlendBone</identifier>
+							<transform>
+								<row0>-0.205970 0.000000 -0.978558</row0>
+								<row1>0.978558 -0.000000 -0.205970</row1>
+								<row2>0.000000 1.000000 -0.000000</row2>
+								<row3>-0.245111 -0.065762 0.102048</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_front_14_jnt</identifier>
+						<transform>
+							<row0>-0.204901 0.978783 0.000000</row0>
+							<row1>-0.000000 0.000000 -1.000000</row1>
+							<row2>-0.978783 -0.204901 0.000000</row2>
+							<row3>0.046621 -0.001327 -0.000000</row3>
+						</transform>
+						<node>
+							<identifier>cable_front_14_jnt_BlendBone</identifier>
+							<transform>
+								<row0>-0.204901 -0.000000 -0.978783</row0>
+								<row1>0.978783 0.000000 -0.204901</row1>
+								<row2>-0.000000 1.000000 0.000000</row2>
+								<row3>-0.258487 -0.065762 0.101767</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_front_15_jnt</identifier>
+						<transform>
+							<row0>-0.203462 0.979083 -0.000000</row0>
+							<row1>0.000000 -0.000000 -1.000000</row1>
+							<row2>-0.979083 -0.203462 0.000000</row2>
+							<row3>0.043914 0.011659 -0.000000</row3>
+						</transform>
+						<node>
+							<identifier>cable_front_15_jnt_BlendBone</identifier>
+							<transform>
+								<row0>-0.203462 0.000000 -0.979083</row0>
+								<row1>0.979083 -0.000000 -0.203462</row1>
+								<row2>0.000000 1.000000 0.000000</row2>
+								<row3>-0.271902 -0.065762 0.101380</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_front_16_jnt</identifier>
+						<transform>
+							<row0>-0.203437 0.979088 0.000000</row0>
+							<row1>-0.000000 0.000000 -1.000000</row1>
+							<row2>-0.979088 -0.203437 0.000000</row2>
+							<row3>0.041216 0.024645 -0.000000</row3>
+						</transform>
+						<node>
+							<identifier>cable_front_16_jnt_BlendBone</identifier>
+							<transform>
+								<row0>-0.203437 -0.000000 -0.979088</row0>
+								<row1>0.979088 0.000000 -0.203437</row1>
+								<row2>-0.000000 1.000000 -0.000000</row2>
+								<row3>-0.285168 -0.065762 0.101373</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_front_17_jnt</identifier>
+						<transform>
+							<row0>-0.201335 0.979522 -0.000000</row0>
+							<row1>0.000000 -0.000000 -1.000000</row1>
+							<row2>-0.979522 -0.201335 0.000000</row2>
+							<row3>0.038530 0.037638 -0.000000</row3>
+						</transform>
+						<node>
+							<identifier>cable_front_17_jnt_BlendBone</identifier>
+							<transform>
+								<row0>-0.201335 0.000000 -0.979522</row0>
+								<row1>0.979522 -0.000000 -0.201335</row1>
+								<row2>0.000000 1.000000 0.000000</row2>
+								<row3>-0.298652 -0.065762 0.100745</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_front_18_jnt</identifier>
+						<transform>
+							<row0>-0.203709 0.979031 0.000000</row0>
+							<row1>-0.000000 0.000000 -1.000000</row1>
+							<row2>-0.979031 -0.203709 0.000000</row2>
+							<row3>0.035846 0.050628 -0.000000</row3>
+						</transform>
+						<node>
+							<identifier>cable_front_18_jnt_BlendBone</identifier>
+							<transform>
+								<row0>-0.203709 -0.000000 -0.979031</row0>
+								<row1>0.979031 0.000000 -0.203709</row1>
+								<row2>-0.000000 1.000000 -0.000000</row2>
+								<row3>-0.311672 -0.065762 0.101488</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_front_19_jnt</identifier>
+						<transform>
+							<row0>-0.198373 0.980127 -0.000000</row0>
+							<row1>0.000000 -0.000000 -1.000000</row1>
+							<row2>-0.980127 -0.198373 0.000000</row2>
+							<row3>0.033177 0.063623 -0.000000</row3>
+						</transform>
+						<node>
+							<identifier>cable_front_19_jnt_BlendBone</identifier>
+							<transform>
+								<row0>-0.198373 0.000000 -0.980127</row0>
+								<row1>0.980127 -0.000000 -0.198373</row1>
+								<row2>0.000000 1.000000 0.000000</row2>
+								<row3>-0.325486 -0.065762 0.099750</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_front_20_jnt</identifier>
+						<transform>
+							<row0>-0.207820 0.978167 0.000000</row0>
+							<row1>-0.000000 0.000000 -1.000000</row1>
+							<row2>-0.978167 -0.207820 0.000000</row2>
+							<row3>0.030485 0.076611 -0.000000</row3>
+						</transform>
+						<node>
+							<identifier>cable_front_20_jnt_BlendBone</identifier>
+							<transform>
+								<row0>-0.207820 -0.000000 -0.978167</row0>
+								<row1>0.978167 0.000000 -0.207820</row1>
+								<row2>-0.000000 1.000000 0.000000</row2>
+								<row3>-0.337773 -0.065762 0.102952</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_front_21_jnt</identifier>
+						<transform>
+							<row0>-0.189832 0.981817 -0.000000</row0>
+							<row1>0.000000 -0.000000 -1.000000</row1>
+							<row2>-0.981817 -0.189832 0.000000</row2>
+							<row3>0.027848 0.089612 -0.000000</row3>
+						</transform>
+						<node>
+							<identifier>cable_front_21_jnt_BlendBone</identifier>
+							<transform>
+								<row0>-0.189832 0.000000 -0.981817</row0>
+								<row1>0.981817 -0.000000 -0.189832</row1>
+								<row2>0.000000 1.000000 0.000000</row2>
+								<row3>-0.352870 -0.065762 0.096614</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_front_22_jnt</identifier>
+						<transform>
+							<row0>-0.221464 0.975169 0.000001</row0>
+							<row1>-0.000000 0.000001 -1.000000</row1>
+							<row2>-0.975169 -0.221464 0.000000</row2>
+							<row3>0.025106 0.102589 -0.000000</row3>
+						</transform>
+						<node>
+							<identifier>cable_front_22_jnt_BlendBone</identifier>
+							<transform>
+								<row0>-0.221464 -0.000000 -0.975169</row0>
+								<row1>0.975169 0.000001 -0.221464</row1>
+								<row2>-0.000001 1.000000 0.000000</row2>
+								<row3>-0.362826 -0.065762 0.108168</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_front_23_jnt</identifier>
+						<transform>
+							<row0>-0.190293 0.981727 -0.000001</row0>
+							<row1>0.000000 -0.000001 -1.000000</row1>
+							<row2>-0.981727 -0.190293 0.000000</row2>
+							<row3>0.022573 0.115608 -0.000000</row3>
+						</transform>
+						<node>
+							<identifier>cable_front_23_jnt_BlendBone</identifier>
+							<transform>
+								<row0>-0.190293 0.000000 -0.981727</row0>
+								<row1>0.981727 -0.000001 -0.190293</row1>
+								<row2>0.000001 1.000000 0.000000</row2>
+								<row3>-0.379350 -0.065762 0.096548</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_front_24_jnt</identifier>
+						<transform>
+							<row0>-0.628595 0.777733 0.000003</row0>
+							<row1>-0.000002 0.000002 -1.000000</row1>
+							<row2>-0.777733 -0.628595 -0.000000</row2>
+							<row3>0.017440 0.127680 -0.000000</row3>
+						</transform>
+						<node>
+							<identifier>cable_front_24_jnt_BlendBone</identifier>
+							<transform>
+								<row0>-0.628595 -0.000002 -0.777733</row0>
+								<row1>0.777733 0.000002 -0.628595</row1>
+								<row2>-0.000003 1.000000 0.000000</row2>
+								<row3>-0.302342 -0.065763 0.266818</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_front_25_jnt</identifier>
+						<transform>
+							<row0>-0.964052 0.265715 0.000003</row0>
+							<row1>-0.000003 0.000001 -1.000000</row1>
+							<row2>-0.265715 -0.964052 -0.000000</row2>
+							<row3>0.006525 0.134822 0.000000</row3>
+						</transform>
+						<node>
+							<identifier>cable_front_25_jnt_BlendBone</identifier>
+							<transform>
+								<row0>-0.964052 -0.000003 -0.265715</row0>
+								<row1>0.265715 0.000001 -0.964052</row1>
+								<row2>-0.000003 1.000000 -0.000000</row2>
+								<row3>-0.102632 -0.065762 0.397005</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_front_26_jnt</identifier>
+						<transform>
+							<row0>-0.965949 -0.258734 -0.000008</row0>
+							<row1>0.000008 0.000002 -1.000000</row1>
+							<row2>0.258734 -0.965949 0.000000</row2>
+							<row3>-0.006592 0.134892 0.000000</row3>
+						</transform>
+						<node>
+							<identifier>cable_front_26_jnt_BlendBone</identifier>
+							<transform>
+								<row0>-0.965949 0.000008 0.258734</row0>
+								<row1>-0.258734 0.000002 -0.965949</row1>
+								<row2>0.000008 1.000000 0.000000</row2>
+								<row3>0.099755 -0.065763 0.397810</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_front_27_jnt</identifier>
+						<transform>
+							<row0>-0.619128 -0.785290 0.000001</row0>
+							<row1>-0.000001 -0.000001 -1.000000</row1>
+							<row2>0.785290 -0.619128 0.000000</row2>
+							<row3>-0.017453 0.127698 -0.000000</row3>
+						</transform>
+						<node>
+							<identifier>cable_front_27_jnt_BlendBone</identifier>
+							<transform>
+								<row0>-0.619128 -0.000001 0.785290</row0>
+								<row1>-0.785290 -0.000001 -0.619128</row1>
+								<row2>-0.000001 1.000000 -0.000000</row2>
+								<row3>0.305587 -0.065762 0.263122</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_front_28_jnt</identifier>
+						<transform>
+							<row0>-0.195275 -0.980749 0.000002</row0>
+							<row1>-0.000000 -0.000002 -1.000000</row1>
+							<row2>0.980749 -0.195275 0.000000</row2>
+							<row3>-0.022565 0.115605 -0.000000</row3>
+						</transform>
+						<node>
+							<identifier>cable_front_28_jnt_BlendBone</identifier>
+							<transform>
+								<row0>-0.195275 -0.000000 0.980749</row0>
+								<row1>-0.980749 -0.000002 -0.195275</row1>
+								<row2>-0.000002 1.000000 -0.000000</row2>
+								<row3>0.378863 -0.065762 0.098419</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_front_29_jnt</identifier>
+						<transform>
+							<row0>-0.222205 -0.975000 -0.000000</row0>
+							<row1>0.000000 0.000000 -1.000000</row1>
+							<row2>0.975000 -0.222205 0.000000</row2>
+							<row3>-0.025144 0.102595 -0.000000</row3>
+						</transform>
+						<node>
+							<identifier>cable_front_29_jnt_BlendBone</identifier>
+							<transform>
+								<row0>-0.222205 0.000000 0.975000</row0>
+								<row1>-0.975000 0.000000 -0.222205</row1>
+								<row2>0.000000 1.000000 0.000000</row2>
+								<row3>0.362751 -0.065762 0.108437</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_front_30_jnt</identifier>
+						<transform>
+							<row0>-0.189931 -0.981797 0.000000</row0>
+							<row1>-0.000000 -0.000000 -1.000000</row1>
+							<row2>0.981797 -0.189931 0.000000</row2>
+							<row3>-0.027885 0.089618 -0.000000</row3>
+						</transform>
+						<node>
+							<identifier>cable_front_30_jnt_BlendBone</identifier>
+							<transform>
+								<row0>-0.189931 -0.000000 0.981797</row0>
+								<row1>-0.981797 -0.000000 -0.189931</row1>
+								<row2>-0.000000 1.000000 0.000000</row2>
+								<row3>0.352868 -0.065762 0.096642</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_front_31_jnt</identifier>
+						<transform>
+							<row0>-0.209717 -0.977762 -0.000000</row0>
+							<row1>0.000000 0.000000 -1.000000</row1>
+							<row2>0.977762 -0.209717 0.000000</row2>
+							<row3>-0.030539 0.076620 -0.000000</row3>
+						</transform>
+						<node>
+							<identifier>cable_front_31_jnt_BlendBone</identifier>
+							<transform>
+								<row0>-0.209717 0.000000 0.977762</row0>
+								<row1>-0.977762 0.000000 -0.209717</row1>
+								<row2>0.000000 1.000000 0.000000</row2>
+								<row3>0.337579 -0.065762 0.103617</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_front_32_jnt</identifier>
+						<transform>
+							<row0>-0.198452 -0.980111 0.000000</row0>
+							<row1>-0.000000 -0.000000 -1.000000</row1>
+							<row2>0.980111 -0.198452 0.000000</row2>
+							<row3>-0.033242 0.063634 -0.000000</row3>
+						</transform>
+						<node>
+							<identifier>cable_front_32_jnt_BlendBone</identifier>
+							<transform>
+								<row0>-0.198452 -0.000000 0.980111</row0>
+								<row1>-0.980111 -0.000000 -0.198452</row1>
+								<row2>-0.000000 1.000000 0.000000</row2>
+								<row3>0.325485 -0.065762 0.099797</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_front_33_jnt</identifier>
+						<transform>
+							<row0>-0.205147 -0.978731 -0.000000</row0>
+							<row1>0.000000 0.000000 -1.000000</row1>
+							<row2>0.978731 -0.205147 0.000000</row2>
+							<row3>-0.035923 0.050642 -0.000000</row3>
+						</transform>
+						<node>
+							<identifier>cable_front_33_jnt_BlendBone</identifier>
+							<transform>
+								<row0>-0.205147 0.000000 0.978731</row0>
+								<row1>-0.978731 0.000000 -0.205147</row1>
+								<row2>0.000000 1.000000 0.000000</row2>
+								<row3>0.311530 -0.065762 0.101978</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_front_34_jnt</identifier>
+						<transform>
+							<row0>-0.202033 -0.979379 0.000000</row0>
+							<row1>0.000000 0.000000 -1.000000</row1>
+							<row2>0.979379 -0.202033 0.000000</row2>
+							<row3>-0.038621 0.037654 -0.000000</row3>
+						</transform>
+						<node>
+							<identifier>cable_front_34_jnt_BlendBone</identifier>
+							<transform>
+								<row0>-0.202033 0.000000 0.979379</row0>
+								<row1>-0.979379 0.000000 -0.202033</row1>
+								<row2>0.000000 1.000000 0.000000</row2>
+								<row3>0.298587 -0.065762 0.101005</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_front_35_jnt</identifier>
+						<transform>
+							<row0>-0.204150 -0.978940 0.000000</row0>
+							<row1>0.000000 0.000000 -1.000000</row1>
+							<row2>0.978940 -0.204150 0.000000</row2>
+							<row3>-0.041316 0.024665 -0.000000</row3>
+						</transform>
+						<node>
+							<identifier>cable_front_35_jnt_BlendBone</identifier>
+							<transform>
+								<row0>-0.204150 0.000000 0.978940</row0>
+								<row1>-0.978940 0.000000 -0.204150</row1>
+								<row2>0.000000 1.000000 0.000000</row2>
+								<row3>0.285103 -0.065762 0.101637</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_front_36_jnt</identifier>
+						<transform>
+							<row0>-0.203538 -0.979067 -0.000000</row0>
+							<row1>-0.000000 0.000000 -1.000000</row1>
+							<row2>0.979067 -0.203538 -0.000000</row2>
+							<row3>-0.044020 0.011679 -0.000000</row3>
+						</transform>
+						<node>
+							<identifier>cable_front_36_jnt_BlendBone</identifier>
+							<transform>
+								<row0>-0.203538 -0.000000 0.979067</row0>
+								<row1>-0.979067 0.000000 -0.203538</row1>
+								<row2>-0.000000 1.000000 0.000000</row2>
+								<row3>0.271901 -0.065762 0.101463</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_front_37_jnt</identifier>
+						<transform>
+							<row0>-0.204445 -0.978878 0.000000</row0>
+							<row1>-0.000000 -0.000000 -1.000000</row1>
+							<row2>0.978878 -0.204445 0.000000</row2>
+							<row3>-0.046724 -0.001308 -0.000000</row3>
+						</transform>
+						<node>
+							<identifier>cable_front_37_jnt_BlendBone</identifier>
+							<transform>
+								<row0>-0.204445 -0.000000 0.978878</row0>
+								<row1>-0.978878 -0.000000 -0.204445</row1>
+								<row2>-0.000000 1.000000 -0.000000</row2>
+								<row3>0.258542 -0.065762 0.101707</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_front_38_jnt</identifier>
+						<transform>
+							<row0>-0.205050 -0.978752 0.000000</row0>
+							<row1>-0.000000 -0.000000 -1.000000</row1>
+							<row2>0.978752 -0.205050 0.000000</row2>
+							<row3>-0.049445 -0.014291 -0.000000</row3>
+						</transform>
+						<node>
+							<identifier>cable_front_38_jnt_BlendBone</identifier>
+							<transform>
+								<row0>-0.205050 -0.000000 0.978752</row0>
+								<row1>-0.978752 -0.000000 -0.205050</row1>
+								<row2>-0.000000 1.000000 0.000000</row2>
+								<row3>0.245214 -0.065762 0.101868</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_front_39_jnt</identifier>
+						<transform>
+							<row0>-0.205197 -0.978721 0.000000</row0>
+							<row1>0.000000 0.000000 -1.000000</row1>
+							<row2>0.978721 -0.205197 0.000000</row2>
+							<row3>-0.052155 -0.027277 -0.000000</row3>
+						</transform>
+						<node>
+							<identifier>cable_front_39_jnt_BlendBone</identifier>
+							<transform>
+								<row0>-0.205197 0.000000 0.978721</row0>
+								<row1>-0.978721 0.000000 -0.205197</row1>
+								<row2>0.000000 1.000000 0.000000</row2>
+								<row3>0.231933 -0.065762 0.101893</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_front_40_jnt</identifier>
+						<transform>
+							<row0>-0.202824 -0.979215 -0.000000</row0>
+							<row1>0.000000 0.000000 -1.000000</row1>
+							<row2>0.979215 -0.202824 -0.000000</row2>
+							<row3>-0.054894 -0.040256 -0.000000</row3>
+						</transform>
+						<node>
+							<identifier>cable_front_40_jnt_BlendBone</identifier>
+							<transform>
+								<row0>-0.202824 0.000000 0.979215</row0>
+								<row1>-0.979215 0.000000 -0.202824</row1>
+								<row2>0.000000 1.000000 0.000000</row2>
+								<row3>0.218914 -0.065762 0.101379</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_front_41_jnt</identifier>
+						<transform>
+							<row0>-0.199732 -0.979851 -0.000001</row0>
+							<row1>0.000000 0.000001 -1.000000</row1>
+							<row2>0.979851 -0.199732 -0.000000</row2>
+							<row3>-0.057500 -0.053263 -0.000000</row3>
+						</transform>
+						<node>
+							<identifier>cable_front_41_jnt_BlendBone</identifier>
+							<transform>
+								<row0>-0.199732 0.000000 0.979851</row0>
+								<row1>-0.979851 0.000001 -0.199732</row1>
+								<row2>0.000001 1.000000 -0.000000</row2>
+								<row3>0.205967 -0.065762 0.100643</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_front_42_jnt</identifier>
+						<transform>
+							<row0>-0.172133 -0.985074 -0.000000</row0>
+							<row1>0.000000 0.000000 -1.000000</row1>
+							<row2>0.985074 -0.172133 0.000000</row2>
+							<row3>-0.060165 -0.066256 -0.000000</row3>
+						</transform>
+						<node>
+							<identifier>cable_front_42_jnt_BlendBone</identifier>
+							<transform>
+								<row0>-0.172133 0.000000 0.985074</row0>
+								<row1>-0.985074 0.000000 -0.172133</row1>
+								<row2>0.000000 1.000000 0.000000</row2>
+								<row3>0.195455 -0.065762 0.095207</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_front_43_jnt</identifier>
+						<transform>
+							<row0>0.028404 -0.999597 0.000000</row0>
+							<row1>0.000000 -0.000000 -1.000000</row1>
+							<row2>0.999597 0.028404 0.000000</row2>
+							<row3>-0.061269 -0.079454 -0.000000</row3>
+						</transform>
+						<node>
+							<identifier>cable_front_43_jnt_BlendBone</identifier>
+							<transform>
+								<row0>0.028404 0.000000 0.999596</row0>
+								<row1>-0.999596 -0.000000 0.028404</row1>
+								<row2>-0.000000 1.000000 0.000000</row2>
+								<row3>0.197389 -0.065762 0.055661</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_front_44_jnt</identifier>
+						<transform>
+							<row0>0.277970 -0.960590 -0.000000</row0>
+							<row1>-0.000000 0.000000 -1.000000</row1>
+							<row2>0.960590 0.277970 0.000000</row2>
+							<row3>-0.059144 -0.092511 -0.000000</row3>
+						</transform>
+						<node>
+							<identifier>cable_front_44_jnt_BlendBone</identifier>
+							<transform>
+								<row0>0.277970 -0.000000 0.960590</row0>
+								<row1>-0.960590 0.000000 0.277970</row1>
+								<row2>0.000000 1.000000 -0.000000</row2>
+								<row3>0.191906 -0.065762 0.006014</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_front_45_jnt</identifier>
+						<transform>
+							<row0>0.464878 -0.885375 0.000000</row0>
+							<row1>0.000000 -0.000000 -1.000000</row1>
+							<row2>0.885375 0.464878 0.000000</row2>
+							<row3>-0.054188 -0.104792 -0.000000</row3>
+						</transform>
+						<node>
+							<identifier>cable_front_45_jnt_BlendBone</identifier>
+							<transform>
+								<row0>0.464878 0.000000 0.885375</row0>
+								<row1>-0.885375 -0.000000 0.464878</row1>
+								<row2>-0.000000 1.000000 0.000000</row2>
+								<row3>0.176039 -0.065762 -0.031255</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_front_46_jnt</identifier>
+						<transform>
+							<row0>0.642682 -0.766133 0.000000</row0>
+							<row1>0.000000 0.000000 -1.000000</row1>
+							<row2>0.766133 0.642682 0.000000</row2>
+							<row3>-0.046855 -0.115815 -0.000000</row3>
+						</transform>
+						<node>
+							<identifier>cable_front_46_jnt_BlendBone</identifier>
+							<transform>
+								<row0>0.642682 0.000000 0.766133</row0>
+								<row1>-0.766133 0.000000 0.642682</row1>
+								<row2>0.000000 1.000000 0.000000</row2>
+								<row3>0.152194 -0.065762 -0.066543</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_front_47_jnt</identifier>
+						<transform>
+							<row0>0.804963 -0.593325 -0.000000</row0>
+							<row1>-0.000000 0.000000 -1.000000</row1>
+							<row2>0.593325 0.804963 0.000000</row2>
+							<row3>-0.037203 -0.124871 -0.000000</row3>
+						</transform>
+						<node>
+							<identifier>cable_front_47_jnt_BlendBone</identifier>
+							<transform>
+								<row0>0.804963 -0.000000 0.593325</row0>
+								<row1>-0.593325 0.000000 0.804963</row1>
+								<row2>0.000000 1.000000 -0.000000</row2>
+								<row3>0.119112 -0.065762 -0.098935</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_front_48_jnt</identifier>
+						<transform>
+							<row0>0.905413 -0.424533 -0.000001</row0>
+							<row1>-0.000001 0.000000 -1.000000</row1>
+							<row2>0.424533 0.905413 0.000000</row2>
+							<row3>-0.025770 -0.131555 -0.000000</row3>
+						</transform>
+						<node>
+							<identifier>cable_front_48_jnt_BlendBone</identifier>
+							<transform>
+								<row0>0.905413 -0.000001 0.424533</row0>
+								<row1>-0.424533 0.000000 0.905413</row1>
+								<row2>0.000001 1.000000 -0.000000</row2>
+								<row3>0.084286 -0.065762 -0.119111</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_front_49_jnt</identifier>
+						<transform>
+							<row0>0.984994 -0.172589 0.000001</row0>
+							<row1>0.000001 -0.000000 -1.000000</row1>
+							<row2>0.172589 0.984994 -0.000000</row2>
+							<row3>-0.013250 -0.135819 -0.000000</row3>
+						</transform>
+						<node>
+							<identifier>cable_front_49_jnt_BlendBone</identifier>
+							<transform>
+								<row0>0.984994 0.000001 0.172589</row0>
+								<row1>-0.172589 -0.000000 0.984994</row1>
+								<row2>-0.000001 1.000000 0.000000</row2>
+								<row3>0.037081 -0.065762 -0.134989</row3>
+							</transform>
+						</node>
+					</node>
+				</node>
+				<node>
+					<identifier>cirle_01_jnt</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.276587 -0.006942</row3>
+					</transform>
+					<node>
+						<identifier>cirle_01_jnt_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>0.000000 -0.388179 0.006942</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>cirle_02_jnt</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.276587 0.006943</row3>
+					</transform>
+					<node>
+						<identifier>cirle_02_jnt_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>0.000000 -0.388179 -0.006943</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>lever_jnt</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.087318 0.176121</row3>
+					</transform>
+					<node>
+						<identifier>lever_01_jnt</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>0.000000 -0.052110 0.032058</row3>
+						</transform>
+						<node>
+							<identifier>lever_01_jnt_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>0.000000 -0.146800 -0.208180</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>lever_jnt_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>0.000000 -0.198910 -0.176121</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>lf_chain_jnt</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.200000 0.188407 0.000000</row3>
+					</transform>
+					<node>
+						<identifier>lf_chain_02_jnt</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>-0.001603 0.151530 -0.130249</row3>
+						</transform>
+						<node>
+							<identifier>lf_chain_02_jnt_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>-0.198397 -0.451530 0.130249</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>lf_chain_03_jnt</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>0.000221 0.134908 -0.125457</row3>
+						</transform>
+						<node>
+							<identifier>lf_chain_03_jnt_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>-0.200221 -0.434908 0.125457</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>lf_chain_04_jnt</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>0.002877 0.119598 -0.118476</row3>
+						</transform>
+						<node>
+							<identifier>lf_chain_04_jnt_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>-0.202877 -0.419598 0.118476</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>lf_chain_05_jnt</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>0.006322 0.106086 -0.109424</row3>
+						</transform>
+						<node>
+							<identifier>lf_chain_05_jnt_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>-0.206322 -0.406086 0.109424</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>lf_chain_06_jnt</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>0.010484 0.094783 -0.098487</row3>
+						</transform>
+						<node>
+							<identifier>lf_chain_06_jnt_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>-0.210484 -0.394783 0.098487</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>lf_chain_07_jnt</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>0.015275 0.086044 -0.085897</row3>
+						</transform>
+						<node>
+							<identifier>lf_chain_07_jnt_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>-0.215275 -0.386044 0.085897</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>lf_chain_08_jnt</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>0.020587 0.080138 -0.071938</row3>
+						</transform>
+						<node>
+							<identifier>lf_chain_08_jnt_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>-0.220587 -0.380138 0.071938</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>lf_chain_09_jnt</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>0.026279 0.077156 -0.056979</row3>
+						</transform>
+						<node>
+							<identifier>lf_chain_09_jnt_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>-0.226279 -0.377156 0.056979</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>lf_chain_10_jnt</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>0.032197 0.077095 -0.041427</row3>
+						</transform>
+						<node>
+							<identifier>lf_chain_10_jnt_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>-0.232197 -0.377095 0.041427</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>lf_chain_11_jnt</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>0.038181 0.079879 -0.025701</row3>
+						</transform>
+						<node>
+							<identifier>lf_chain_11_jnt_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>-0.238181 -0.379879 0.025701</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>lf_chain_12_jnt</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>0.044064 0.085330 -0.010242</row3>
+						</transform>
+						<node>
+							<identifier>lf_chain_12_jnt_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>-0.244064 -0.385330 0.010242</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>lf_chain_13_jnt</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>0.047918 0.092978 -0.000077</row3>
+						</transform>
+						<node>
+							<identifier>lf_chain_13_jnt_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>-0.247918 -0.392978 0.000077</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>lf_chain_jnt_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>-0.200000 -0.300000 0.000000</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>lf_lever_01_jnt</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.226456 0.301536 0.000000</row3>
+					</transform>
+					<node>
+						<identifier>lf_lever_02_jnt</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>0.000000 0.244604 0.000000</row3>
+						</transform>
+						<node>
+							<identifier>lf_lever_02_jnt_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>-0.226456 -0.657732 0.000000</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>lf_lever_01_jnt_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>-0.226456 -0.413129 0.000000</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>rt_chain_jnt</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>-0.200000 0.188407 0.000000</row3>
+					</transform>
+					<node>
+						<identifier>rt_chain_01_jnt</identifier>
+						<transform>
+							<row0>0.358099 -0.000000 0.933684</row0>
+							<row1>0.000000 1.000000 -0.000000</row1>
+							<row2>-0.933684 0.000000 0.358099</row2>
+							<row3>0.002568 0.168948 -0.132785</row3>
+						</transform>
+						<node>
+							<identifier>rt_chain_01_jnt_BlendBone</identifier>
+							<transform>
+								<row0>0.358099 0.000000 -0.933684</row0>
+								<row1>-0.000000 1.000000 0.000000</row1>
+								<row2>-0.933684 0.000000 -0.358099</row2>
+								<row3>0.194679 -0.468948 -0.136789</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>rt_chain_02_jnt</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>0.001603 0.151530 -0.130249</row3>
+						</transform>
+						<node>
+							<identifier>rt_chain_02_jnt_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>0.198397 -0.451530 0.130249</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>rt_chain_03_jnt</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>-0.000221 0.134908 -0.125457</row3>
+						</transform>
+						<node>
+							<identifier>rt_chain_03_jnt_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>0.200221 -0.434908 0.125457</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>rt_chain_04_jnt</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>-0.002877 0.119598 -0.118476</row3>
+						</transform>
+						<node>
+							<identifier>rt_chain_04_jnt_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>0.202877 -0.419598 0.118476</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>rt_chain_05_jnt</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>-0.006322 0.106086 -0.109424</row3>
+						</transform>
+						<node>
+							<identifier>rt_chain_05_jnt_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>0.206322 -0.406086 0.109424</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>rt_chain_06_jnt</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>-0.010484 0.094783 -0.098487</row3>
+						</transform>
+						<node>
+							<identifier>rt_chain_06_jnt_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>0.210484 -0.394783 0.098487</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>rt_chain_07_jnt</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>-0.015275 0.086044 -0.085897</row3>
+						</transform>
+						<node>
+							<identifier>rt_chain_07_jnt_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>0.215275 -0.386044 0.085897</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>rt_chain_08_jnt</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>-0.020587 0.080138 -0.071938</row3>
+						</transform>
+						<node>
+							<identifier>rt_chain_08_jnt_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>0.220587 -0.380138 0.071938</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>rt_chain_09_jnt</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>-0.026279 0.077156 -0.056979</row3>
+						</transform>
+						<node>
+							<identifier>rt_chain_09_jnt_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>0.226279 -0.377156 0.056979</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>rt_chain_10_jnt</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>-0.032197 0.077095 -0.041427</row3>
+						</transform>
+						<node>
+							<identifier>rt_chain_10_jnt_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>0.232197 -0.377095 0.041427</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>rt_chain_11_jnt</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>-0.038181 0.079879 -0.025701</row3>
+						</transform>
+						<node>
+							<identifier>rt_chain_11_jnt_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>0.238181 -0.379879 0.025701</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>rt_chain_12_jnt</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>-0.044064 0.085330 -0.010242</row3>
+						</transform>
+						<node>
+							<identifier>rt_chain_12_jnt_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>0.244064 -0.385330 0.010242</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>rt_chain_13_jnt</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>-0.048188 0.094164 0.000532</row3>
+						</transform>
+						<node>
+							<identifier>rt_chain_13_jnt_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>0.248188 -0.394164 -0.000532</row3>
+							</transform>
+						</node>
+					</node>
+				</node>
+				<node>
+					<identifier>rt_lever_01_jnt</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>-0.226460 0.301536 -0.000000</row3>
+					</transform>
+					<node>
+						<identifier>rt_lever_02_jnt</identifier>
+						<transform>
+							<row0>1.000000 -0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>0.000000 0.244604 0.000000</row3>
+						</transform>
+						<node>
+							<identifier>rt_lever_02_jnt_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>0.226460 -0.657732 0.000000</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>rt_lever_01_jnt_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>0.226460 -0.413129 0.000000</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>main_jnt_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.000000 -0.111593 0.000000</row3>
+					</transform>
+				</node>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>cable_front_01_jnt_BlendBone</node>
+		<node>cable_front_49_jnt_BlendBone</node>
+		<node>cable_front_03_jnt_BlendBone</node>
+		<node>cable_front_02_jnt_BlendBone</node>
+		<node>cable_front_04_jnt_BlendBone</node>
+		<node>cable_front_05_jnt_BlendBone</node>
+		<node>cable_front_06_jnt_BlendBone</node>
+		<node>cable_front_07_jnt_BlendBone</node>
+		<node>cable_front_08_jnt_BlendBone</node>
+		<node>cable_front_09_jnt_BlendBone</node>
+		<node>cable_front_10_jnt_BlendBone</node>
+		<node>cable_front_23_jnt_BlendBone</node>
+		<node>cable_front_22_jnt_BlendBone</node>
+		<node>cable_front_24_jnt_BlendBone</node>
+		<node>cable_front_25_jnt_BlendBone</node>
+		<node>cable_front_26_jnt_BlendBone</node>
+		<node>cable_front_27_jnt_BlendBone</node>
+		<node>cable_front_28_jnt_BlendBone</node>
+		<node>cable_front_29_jnt_BlendBone</node>
+		<node>cable_front_43_jnt_BlendBone</node>
+		<node>cable_front_42_jnt_BlendBone</node>
+		<node>cable_front_45_jnt_BlendBone</node>
+		<node>cable_front_44_jnt_BlendBone</node>
+		<node>cable_front_46_jnt_BlendBone</node>
+		<node>cable_front_47_jnt_BlendBone</node>
+		<node>cable_front_48_jnt_BlendBone</node>
+		<node>cable_back_acreoss_01_jnt_BlendBone</node>
+		<node>cable_back_acreoss_49_jnt_BlendBone</node>
+		<node>cable_back_acreoss_03_jnt_BlendBone</node>
+		<node>cable_back_acreoss_02_jnt_BlendBone</node>
+		<node>cable_back_acreoss_04_jnt_BlendBone</node>
+		<node>cable_back_acreoss_05_jnt_BlendBone</node>
+		<node>cable_back_acreoss_06_jnt_BlendBone</node>
+		<node>cable_back_acreoss_07_jnt_BlendBone</node>
+		<node>cable_back_acreoss_08_jnt_BlendBone</node>
+		<node>cable_back_acreoss_09_jnt_BlendBone</node>
+		<node>cable_back_acreoss_10_jnt_BlendBone</node>
+		<node>cable_back_acreoss_11_jnt_BlendBone</node>
+		<node>cable_back_acreoss_22_jnt_BlendBone</node>
+		<node>cable_back_acreoss_23_jnt_BlendBone</node>
+		<node>cable_back_acreoss_24_jnt_BlendBone</node>
+		<node>cable_back_acreoss_25_jnt_BlendBone</node>
+		<node>cable_back_acreoss_26_jnt_BlendBone</node>
+		<node>cable_back_acreoss_27_jnt_BlendBone</node>
+		<node>cable_back_acreoss_28_jnt_BlendBone</node>
+		<node>cable_back_acreoss_29_jnt_BlendBone</node>
+		<node>cable_back_acreoss_30_jnt_BlendBone</node>
+		<node>cable_back_acreoss_31_jnt_BlendBone</node>
+		<node>cable_back_acreoss_42_jnt_BlendBone</node>
+		<node>cable_back_acreoss_41_jnt_BlendBone</node>
+		<node>cable_back_acreoss_43_jnt_BlendBone</node>
+		<node>cable_back_acreoss_45_jnt_BlendBone</node>
+		<node>cable_back_acreoss_44_jnt_BlendBone</node>
+		<node>cable_back_acreoss_46_jnt_BlendBone</node>
+		<node>cable_back_acreoss_47_jnt_BlendBone</node>
+		<node>cable_back_acreoss_48_jnt_BlendBone</node>
+		<geometry>
+			<vertices>sShape2.vertices</vertices>
+			<primitive>sShape2.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0_skinned</identifier>
+					<fx>shaders/std_effects/PBS_ext_skinned.fx</fx>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h_newyear/perscustomization/h38_NY26_Gifts_Guests_07_AM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/h_newyear/perscustomization/h38_NY26_Gifts_Guests_07_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/h_newyear/perscustomization/h38_NY26_Gifts_Guests_07_ANM.dds</Texture>
+					</property>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						alphaReference
+						<Int>48</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+				</material>
+				<groupOrigin>0.000045 0.273794 -0.000124</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>main_jnt_BlendBone</node>
+		<geometry>
+			<vertices>sShape1.vertices</vertices>
+			<primitive>sShape1.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd1_skinned</identifier>
+					<fx>shaders/std_effects/PBS_glassNY_skinned.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>110</materialKind>
+					<property>
+						alphaReference
+						<Int>119</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						dirtAlbedoMap
+						<Texture>content/Hangars/h_newyear/perscustomization/h38_NY26_Gifts_Guests_07_Glass_AM.dds</Texture>
+					</property>
+					<property>
+						g_filterColor
+						<Vector4>0.600000 0.776471 1.000000 1.000000</Vector4>
+					</property>
+					<property>
+						g_reflectionMultiplier
+						<Float>6.590000</Float>
+					</property>
+					<property>
+						glassMap
+						<Texture>content/Hangars/h_newyear/perscustomization/h38_NY26_Gifts_Guests_07_Glass_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/h_newyear/perscustomization/h38_NY26_Gifts_Guests_07_Glass_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.000000 0.311123 0.129772</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>main_jnt_BlendBone</node>
+		<node>cirle_01_jnt_BlendBone</node>
+		<node>cirle_02_jnt_BlendBone</node>
+		<node>lever_01_jnt_BlendBone</node>
+		<node>lever_jnt_BlendBone</node>
+		<node>lf_lever_01_jnt_BlendBone</node>
+		<node>lf_lever_02_jnt_BlendBone</node>
+		<node>rt_lever_01_jnt_BlendBone</node>
+		<node>rt_lever_02_jnt_BlendBone</node>
+		<node>lf_chain_12_jnt_BlendBone</node>
+		<node>lf_chain_11_jnt_BlendBone</node>
+		<node>lf_chain_13_jnt_BlendBone</node>
+		<node>lf_chain_jnt_BlendBone</node>
+		<node>lf_chain_02_jnt_BlendBone</node>
+		<node>lf_chain_03_jnt_BlendBone</node>
+		<node>lf_chain_04_jnt_BlendBone</node>
+		<node>lf_chain_05_jnt_BlendBone</node>
+		<node>lf_chain_06_jnt_BlendBone</node>
+		<node>lf_chain_07_jnt_BlendBone</node>
+		<node>lf_chain_08_jnt_BlendBone</node>
+		<node>lf_chain_09_jnt_BlendBone</node>
+		<node>lf_chain_10_jnt_BlendBone</node>
+		<node>rt_chain_12_jnt_BlendBone</node>
+		<node>rt_chain_11_jnt_BlendBone</node>
+		<node>rt_chain_13_jnt_BlendBone</node>
+		<node>rt_chain_01_jnt_BlendBone</node>
+		<node>rt_chain_02_jnt_BlendBone</node>
+		<node>rt_chain_03_jnt_BlendBone</node>
+		<node>rt_chain_04_jnt_BlendBone</node>
+		<node>rt_chain_05_jnt_BlendBone</node>
+		<node>rt_chain_06_jnt_BlendBone</node>
+		<node>rt_chain_07_jnt_BlendBone</node>
+		<node>rt_chain_08_jnt_BlendBone</node>
+		<node>rt_chain_09_jnt_BlendBone</node>
+		<node>rt_chain_10_jnt_BlendBone</node>
+		<geometry>
+			<vertices>sShape0.vertices</vertices>
+			<primitive>sShape0.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0_skinned</identifier>
+					<fx>shaders/std_effects/PBS_ext_skinned.fx</fx>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h_newyear/perscustomization/h38_NY26_Gifts_Guests_07_AM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/h_newyear/perscustomization/h38_NY26_Gifts_Guests_07_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/h_newyear/perscustomization/h38_NY26_Gifts_Guests_07_ANM.dds</Texture>
+					</property>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						alphaReference
+						<Int>48</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+				</material>
+				<groupOrigin>0.000000 0.338873 -0.016681</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>-0.387098 -0.000000 -0.189266</min>
+		<max>0.387098 0.677745 0.222627</max>
+	</boundingBox>
+	<geometrySize>178500</geometrySize>
+</root>

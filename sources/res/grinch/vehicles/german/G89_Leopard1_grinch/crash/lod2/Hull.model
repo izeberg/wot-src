@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>grinch/vehicles/german/G89_Leopard1_grinch/crash/lod2/Hull</nodefullVisual>
+	<parent>grinch/vehicles/german/G89_Leopard1_grinch/crash/lod3/Hull</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.641966 -0.854531 -3.714929</min>
+		<max>1.690716 0.829292 3.359184</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

@@ -9,7 +9,7 @@ from aih_constants import ShakeReason
 from cgf_components.arena_camera_manager import ArenaCameraManager
 from cgf_modules import game_events
 from cgf_modules.game_events import ArmorHitPlacement
-from cgf_script.entity_dyn_components import BWEntitiyComponentTracker
+from cgf_obsolete_script.entity_component_tracker import BWVehicleComponentTrackerClient
 from constants import VEHICLE_HIT_EFFECT, VEHICLE_SIEGE_STATE, ATTACK_REASON_INDICES, ATTACK_REASON, SPT_MATKIND
 from debug_utils import LOG_DEBUG_DEV
 from shared_utils import nextTick
@@ -85,7 +85,7 @@ DebuffInfo = namedtuple('DebuffInfo', ('duration', 'animated'))
 VEHICLE_COMPONENTS = {
  BattleAbilitiesComponent}
 
-class Vehicle(BigWorld.Entity, BWEntitiyComponentTracker, BattleAbilitiesComponent):
+class Vehicle(BigWorld.Entity, BWVehicleComponentTrackerClient, BattleAbilitiesComponent):
     isEnteringWorld = property(lambda self: self.__isEnteringWorld)
     isTurretDetached = property(lambda self: constants.SPECIAL_VEHICLE_HEALTH.IS_TURRET_DETACHED(self.health) and self.__turretDetachmentConfirmed)
     isTurretMarkedForDetachment = property(lambda self: constants.SPECIAL_VEHICLE_HEALTH.IS_TURRET_DETACHED(self.health))
@@ -194,6 +194,7 @@ class Vehicle(BigWorld.Entity, BWEntitiyComponentTracker, BattleAbilitiesCompone
         return self.masterVehID
 
     def __init__(self):
+        BWVehicleComponentTrackerClient.__init__(self)
         for comp in VEHICLE_COMPONENTS:
             comp.__init__(self)
 
@@ -203,6 +204,7 @@ class Vehicle(BigWorld.Entity, BWEntitiyComponentTracker, BattleAbilitiesCompone
         self.typeDescriptor = None
         self.appearance = None
         self.onAppearanceReady = SafeEvent()
+        self.onCompositionUpdated = SafeEvent()
         self.onDiscreteShotDone = SafeEvent()
         self.isPlayerVehicle = False
         self.isStarted = False

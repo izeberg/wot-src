@@ -120,7 +120,9 @@ class VehicleMenuPresenter(ViewComponent[VehicleMenuModel], IPrbListener):
          (
           self.__cmpBasket.onSwitchChange, self.__onVehCmpBasketStateChanged),
          (
-          self._cameraController.onEnabledChange, self.__onCameraEnabledChage))
+          self._cameraController.onEnabledChange, self.__onCameraEnabledChage),
+         (
+          self.__lobbyContext.getServerSettings().onServerSettingsChange, self.__onServerSettingChanged))
 
     def _getListeners(self):
         return (
@@ -171,6 +173,10 @@ class VehicleMenuPresenter(ViewComponent[VehicleMenuModel], IPrbListener):
 
     def __onSettingsChange(self):
         self.__updateMenuItemModel(VehicleMenuModel.EASY_EQUIP)
+
+    def __onServerSettingChanged(self, diff):
+        if 'isCustomizationEnabled' in diff:
+            self.__updateMenuItemModel(VehicleMenuModel.CUSTOMIZATION)
 
     def __updateModel(self):
         self.__hasInventoryTankman = bool(self.__itemsCache.items.getInventoryTankmen(limit=1))

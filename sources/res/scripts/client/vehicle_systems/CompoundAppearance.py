@@ -226,6 +226,12 @@ class CompoundAppearance(CommonTankAppearance, CallbackDelayer):
                 self.__setTurbochargerSound(self._vehicle.getOptionalDevices())
             return
 
+    def __cleanupTmpGameObjects(self):
+        while self.__tmpGameObjects:
+            _, go = self.__tmpGameObjects.popitem()
+            self.removeComponent(go)
+            go.deactivate()
+
     def __destroyEngineAudition(self):
         self.engineAudition = None
         if self.detailedEngineState is not None:
@@ -270,11 +276,7 @@ class CompoundAppearance(CommonTankAppearance, CallbackDelayer):
             self.wheelsAnimator = None
         self.gearbox = None
         self.gunRotatorAudition = None
-        while self.__tmpGameObjects:
-            _, go = self.__tmpGameObjects.popitem()
-            self.removeComponent(go)
-            go.deactivate()
-
+        self.__cleanupTmpGameObjects()
         fashions = VehiclePartsTuple(BigWorld.WGVehicleFashion(), None, None, None)
         self._setFashions(fashions, isTurretDetached)
         model_assembler.setupTracksFashion(self.typeDescriptor, self.fashion)
@@ -301,6 +303,7 @@ class CompoundAppearance(CommonTankAppearance, CallbackDelayer):
         return
 
     def destroy(self):
+        self.__cleanupTmpGameObjects()
         if self._vehicle is not None:
             self.deactivate()
         self.__destroyEngineAudition()
@@ -601,6 +604,7 @@ class CompoundAppearance(CommonTankAppearance, CallbackDelayer):
             dynSlots = None
             if self.typeDescriptor.type.isWheeledVehicle:
                 dynSlots = self.typeDescriptor.chassis.generalWheelsAnimatorConfig.getNonTrackWheelNodeNames()
+            self.setCompositionReady(False)
             removeComposition(self.gameObject)
             createVehicleComposition(gameObject=self.gameObject, vehicleGameObject=self._entityGameObject, prefabMap=prefabMap, followNodes=True, extraSlots=extraSlots, dynSlotNodes=dynSlots)
             self.onModelChanged()

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>tube_root_jnt</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>tube_root00_jnt</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.061551 0.000000</row3>
+				</transform>
+				<node>
+					<identifier>tube_jnt11</identifier>
+					<transform>
+						<row0>0.231332 0.089002 -0.968795</row0>
+						<row1>-0.047312 0.995658 0.080172</row1>
+						<row2>0.971724 0.027289 0.234539</row2>
+						<row3>-0.211148 0.009024 -0.004130</row3>
+					</transform>
+					<node>
+						<identifier>tube_jnt10</identifier>
+						<transform>
+							<row0>0.999648 0.019872 -0.017572</row0>
+							<row1>-0.019872 0.999803 0.000175</row1>
+							<row2>0.017572 0.000175 0.999846</row2>
+							<row3>-0.085075 -0.000900 -0.000025</row3>
+						</transform>
+						<node>
+							<identifier>tube_jnt9</identifier>
+							<transform>
+								<row0>0.564598 -0.110132 -0.817986</row0>
+								<row1>0.132820 0.990265 -0.041651</row1>
+								<row2>0.814609 -0.085129 0.573729</row2>
+								<row3>-0.028437 0.004868 0.043302</row3>
+							</transform>
+							<node>
+								<identifier>tube_jnt9_BlendBone</identifier>
+								<transform>
+									<row0>-0.671962 -0.063541 0.737855</row0>
+									<row1>-0.072046 0.997196 0.020262</row1>
+									<row2>0.737073 0.039544 0.674656</row2>
+									<row3>-0.040961 -0.072745 0.220548</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>tube_jnt10_BlendBone</identifier>
+							<transform>
+								<row0>0.213235 -0.051730 0.975630</row0>
+								<row1>0.108277 0.993697 0.029023</row1>
+								<row2>0.970983 -0.099449 -0.217492</row2>
+								<row3>0.118435 -0.081433 0.206372</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>tube_jnt11_BlendBone</identifier>
+						<transform>
+							<row0>0.231332 -0.047312 0.971724</row0>
+							<row1>0.089002 0.995658 0.027289</row1>
+							<row2>0.968795 -0.080172 -0.234539</row2>
+							<row3>0.038563 -0.079927 0.204220</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>tube_jnt6</identifier>
+					<transform>
+						<row0>-0.713049 0.684882 -0.149990</row0>
+						<row1>0.670215 0.728654 0.140980</row1>
+						<row2>0.205846 -0.000000 -0.978584</row2>
+						<row3>-0.035131 0.002408 0.231698</row3>
+					</transform>
+					<node>
+						<identifier>tube_jnt7</identifier>
+						<transform>
+							<row0>0.601584 -0.555614 0.573925</row0>
+							<row1>0.680337 0.732890 -0.003617</row1>
+							<row2>-0.418615 0.392638 0.818900</row2>
+							<row3>0.082108 -0.000357 0.000000</row3>
+						</transform>
+						<node>
+							<identifier>tube_jnt8</identifier>
+							<transform>
+								<row0>0.827999 -0.559408 -0.038461</row0>
+								<row1>0.558824 0.828892 -0.025558</row1>
+								<row2>0.046177 -0.000331 0.998933</row2>
+								<row3>0.060138 -0.001338 -0.000000</row3>
+							</transform>
+							<node>
+								<identifier>tube_jnt8_BlendBone</identifier>
+								<transform>
+									<row0>-0.596759 -0.396029 0.697883</row0>
+									<row1>-0.553439 0.832889 -0.000604</row1>
+									<row2>0.581020 0.386596 0.716212</row2>
+									<row3>0.087223 -0.084789 0.219927</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>tube_jnt7_BlendBone</identifier>
+							<transform>
+								<row0>-0.683200 0.005336 0.730212</row0>
+								<row1>0.007164 0.999974 -0.000605</row1>
+								<row2>0.730196 -0.004818 0.683221</row2>
+								<row3>0.095132 -0.120485 0.218504</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>tube_jnt6_BlendBone</identifier>
+						<transform>
+							<row0>-0.713049 0.670215 0.205846</row0>
+							<row1>0.684883 0.728654 0.000000</row1>
+							<row2>0.149990 -0.140980 0.978584</row2>
+							<row3>-0.034102 -0.055723 0.233967</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>tube_root00_jnt_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.000000 -0.061551 0.000000</row3>
+					</transform>
+				</node>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>tube_root00_jnt_BlendBone</node>
+		<node>tube_jnt7_BlendBone</node>
+		<node>tube_jnt8_BlendBone</node>
+		<node>tube_jnt6_BlendBone</node>
+		<node>tube_jnt9_BlendBone</node>
+		<node>tube_jnt10_BlendBone</node>
+		<node>tube_jnt11_BlendBone</node>
+		<geometry>
+			<vertices>s0Shape.vertices</vertices>
+			<stream>s0Shape.colour</stream>
+			<primitive>s0Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0_skinned</identifier>
+					<fx>shaders/std_effects/PBS_ext_skinned.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h_newyear/perscustomization/h30_NY24_Gifts_Cat_01_AM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/h_newyear/perscustomization/h30_NY24_Gifts_Cat_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/h_newyear/perscustomization/h30_NY24_Gifts_Cat_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.021246 0.076527 -0.032593</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>-0.254037 0.000084 -0.211546</min>
+		<max>0.211546 0.152970 0.276732</max>
+	</boundingBox>
+	<geometrySize>44880</geometrySize>
+</root>

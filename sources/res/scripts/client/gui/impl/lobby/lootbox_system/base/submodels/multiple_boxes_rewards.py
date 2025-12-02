@@ -1,5 +1,5 @@
 from typing import TYPE_CHECKING
-import Windowing
+import SoundGroups, Windowing
 from frameworks.wulf import Array
 from gui.Scaleform.framework.entities.View import ViewKey
 from gui.Scaleform.daapi.settings.views import VIEW_ALIAS
@@ -17,6 +17,7 @@ from gui.lootbox_system.base.sound import enterLootBoxesMultipleRewardState, exi
 from gui.lootbox_system.base.utils import isShopVisible, openBoxes
 from gui.lootbox_system.base.views_loaders import showItemPreview
 from gui.shared import EVENT_BUS_SCOPE, events
+from gui.sounds.filters import StatesGroup, States
 from helpers import dependency
 from skeletons.gui.game_control import ILootBoxSystemController
 if TYPE_CHECKING:
@@ -102,6 +103,7 @@ class MultipleBoxesRewards(SubViewImpl):
     def __setVideoPlaying(self, ctx=None):
         isPlaying = ctx.get('isPlaying')
         self.__isVideoPlaying = isPlaying
+        SoundGroups.g_instance.setState(StatesGroup.VIDEO_OVERLAY, States.VIDEO_OVERLAY_ON if isPlaying else States.VIDEO_OVERLAY_OFF)
 
     @replaceNoneKwargsModel
     def __setWindowAccessible(self, model=None):

@@ -1,18 +1,22 @@
 from __future__ import absolute_import
+import logging
 from collections import OrderedDict
 from builtins import round
-from advent_calendar.gui.feature.constants import GUARANTEED_REWARD_GROUP_NAME
-from advent_calendar.gui.impl.gen.view_models.views.lobby.tooltips.big_lootbox_tooltip_model import BigLootboxTooltipModel
+from typing import Tuple
+from advent_calendar.gui.feature.constants import ADVENT_CALENDAR_TOKEN
+from advent_calendar.gui.impl.gen.view_models.views.lobby.tooltips.big_lootbox_tooltip_model import BigLootboxTooltipModel, ProgressionState
 from advent_calendar.gui.impl.gen.view_models.views.lobby.tooltips.bonus_item_view_model import BonusItemViewModel
-from advent_calendar.gui.impl.gen.view_models.views.lobby.tooltips.loot_box_bonus_view_model import LootBoxBonusViewModel
+from advent_calendar.gui.impl.gen.view_models.views.lobby.tooltips.lootbox_group_model import LootboxGroupModel
+from advent_calendar.gui.impl.lobby.feature.advent_helper import getAccountTokensAmount, getQuestNeededTokensCount
 from advent_calendar.skeletons import IAdventCalendarController
 from frameworks.wulf import ViewSettings
 from frameworks.wulf.view.array import fillStringsArray
 from gui.impl.gen import R
 from gui.impl.pub import ViewImpl
 from helpers import dependency
+_logger = logging.getLogger(__name__)
 BONUS_TYPE_TO_ICON_NAME = {'guest_cat': 'guest_cat', 
-   'randomNy24Toy': 'randomNy24Toy', 
+   'randomNyToy': 'randomNyToy', 
    'highTierVehicles': 'vehicles', 
    'lowTierVehicles': 'vehicles', 
    'gold': 'gold', 
@@ -24,21 +28,24 @@ BONUS_TYPE_TO_ICON_NAME = {'guest_cat': 'guest_cat',
    'credits': 'credits', 
    'style_3d': 'style_3d', 
    'style_2d': 'style', 
+   'attachment': 'attachment', 
    'nyRandomResource': 'nyRandomResource', 
    'color_fir': 'N24_ChTree_Color_05'}
 _PROBABILITY_GROUPS_ORDER = OrderedDict((
  (
-  'guaranteed', ('ny_amber', 'ny_iron', 'ny_emerald', 'ny_crystal', 'nyRandomResource')),
+  'guaranteed', ('gold', 'ny_amber', 'ny_iron', 'ny_emerald', 'ny_crystal', 'nyRandomResource')),
  (
-  'currency', ('gold', 'credits', 'premium_plus')),
+  'currency', ('gold', 'premium_plus', 'credits')),
  (
-  'ny_items', ('guest_cat', 'randomNy24Toy', 'color_fir')),
+  'ny_items', ('guest_cat', 'randomNyToy', 'color_fir')),
  (
-  'high_tier_vehicles', ()),
+  'attachments', ()),
  (
-  'low_tier_vehicles', ()),
+  'customizations', ()),
  (
-  'customizations', ())))
+  LootboxGroupModel.HIGH_TIER_VEHICLES, ()),
+ (
+  LootboxGroupModel.LOW_TIER_VEHICLES, ())))
 
 def _sortGroups(bonusGroup):
     groupName = bonusGroup[0]
@@ -68,51 +75,53 @@ def _adjustProbabilityForUi(probability):
 class AdventCalendarBigLootBoxTooltip(ViewImpl):
     __adventController = dependency.descriptor(IAdventCalendarController)
 
-    def __init__(self, *args):
-        settings = ViewSettings(R.views.advent_calendar.mono.lobby.tooltips.advent_calendar_big_loot_box_tooltip())
-        settings.model = BigLootboxTooltipModel()
-        settings.args = args
+    def __init__(self, *args, **kwargs):
+        settings = ViewSettings(R.views.advent_calendar.mono.lobby.tooltips.advent_calendar_big_loot_box_tooltip(), model=BigLootboxTooltipModel(), args=args, kwargs=kwargs)
         super(AdventCalendarBigLootBoxTooltip, self).__init__(settings)
 
     @property
     def viewModel(self):
         return super(AdventCalendarBigLootBoxTooltip, self).getViewModel()
 
-    def _onLoading(self, state, doorsToOpenAmount, isPostEvent, isShowStatus, *args, **kwargs):
-        lootBoxInfo = self.__adventController.getLootBoxInfo()
-        if lootBoxInfo:
-            with self.viewModel.transaction() as (tx):
-                tx.setState(state)
-                tx.setIsPostEvent(isPostEvent)
-                tx.setDoorsToOpenAmount(doorsToOpenAmount)
-                tx.setIsShowStatus(isShowStatus)
-                self.__fillViewModel(tx, lootBoxInfo)
-            super(AdventCalendarBigLootBoxTooltip, self)._onLoading(*args, **kwargs)
-
     def _getEvents(self):
         return (
          (
-          self.__adventController.onLootBoxInfoUpdated, self.__updateModel),)
+          self.__adventController.onLootBoxInfoUpdated, self.__onLootBoxInfoUpdated),)
+
+    def _onLoading(self, questID, *args, **kwargs):
+        lootBoxInfo = self.__adventController.getLootBoxInfo()
+        if not lootBoxInfo:
+            _logger.error('Lootbox info not found.')
+            return
+        else:
+            state, doorsToOpenAmount = self.__getModelInfo(questID)
+            with self.viewModel.transaction() as (tx):
+                tx.setIsShowStatus(questID is not None)
+                tx.setState(state)
+                tx.setIsPostEvent(self.__adventController.isInPostActivePhase())
+                tx.setDoorsToOpenAmount(doorsToOpenAmount)
+                self.__fillViewModel(tx, lootBoxInfo)
+            super(AdventCalendarBigLootBoxTooltip, self)._onLoading(*args, **kwargs)
+            return
 
     def __fillViewModel(self, viewModel, lootBoxInfo):
         viewModel.setBoxName(lootBoxInfo.name)
         viewModel.setBoxCategory(lootBoxInfo.category)
-        modelBonuses = viewModel.getBonuses()
+        modelBonuses = viewModel.getGroups()
         modelBonuses.clear()
         for groupName, probabilityGroups in sorted(lootBoxInfo.bonuses.items(), key=_sortGroups):
             for probability, bonuses in sorted(probabilityGroups.items(), key=lambda x: x[0]):
-                bonusModel = LootBoxBonusViewModel()
-                bonusModel.setProbability(_adjustProbabilityForUi(probability))
-                if groupName == GUARANTEED_REWARD_GROUP_NAME:
-                    bonusModel.setIsGuaranteed(True)
-                self.__fillBonusModelItems(bonusModel, groupName, bonuses)
-                modelBonuses.addViewModel(bonusModel)
+                groupModel = LootboxGroupModel()
+                groupModel.setProbability(_adjustProbabilityForUi(probability))
+                groupModel.setGroupName(groupName)
+                self.__fillBonusModelItems(groupModel, groupName, bonuses)
+                modelBonuses.addViewModel(groupModel)
 
         modelBonuses.invalidate()
 
     @staticmethod
-    def __fillBonusModelItems(bonusViewModel, groupName, bonuses):
-        items = bonusViewModel.getBonusItems()
+    def __fillBonusModelItems(groupModel, groupName, bonuses):
+        items = groupModel.getBonusItems()
         items.clear()
         for bonusType, values in sorted(bonuses.items(), key=lambda b: _sortBonuses(b, groupName)):
             if bonusType in BONUS_TYPE_TO_ICON_NAME:
@@ -126,8 +135,31 @@ class AdventCalendarBigLootBoxTooltip(ViewImpl):
 
         items.invalidate()
 
-    def __updateModel(self):
+    def __onLootBoxInfoUpdated(self):
         lootBoxInfo = self.__adventController.getLootBoxInfo()
-        if lootBoxInfo:
-            with self.viewModel.transaction() as (tx):
-                self.__fillViewModel(tx, lootBoxInfo)
+        if not lootBoxInfo:
+            return
+        with self.viewModel.transaction() as (tx):
+            self.__fillViewModel(tx, lootBoxInfo)
+
+    def __getModelInfo(self, questID):
+        if questID is None:
+            return (ProgressionState.REWARD_RECEIVED, 0)
+        else:
+            prevQuest = None
+            quest = None
+            for q in self.__adventController.progressionRewardQuestsOrdered:
+                if q.getID() == questID:
+                    quest = q
+                    break
+                prevQuest = q
+
+            if quest.isCompleted():
+                return (ProgressionState.REWARD_RECEIVED, 0)
+            if prevQuest is not None and not prevQuest.isCompleted():
+                return (ProgressionState.REWARD_LOCKED, 0)
+            accountTokensAmount = getAccountTokensAmount(ADVENT_CALENDAR_TOKEN)
+            requiredTokensAmount = getQuestNeededTokensCount(quest)
+            doorsToOpenAmount = requiredTokensAmount - accountTokensAmount
+            return (
+             ProgressionState.REWARD_IN_PROGRESS, doorsToOpenAmount)

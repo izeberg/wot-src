@@ -2,6 +2,7 @@ import logging, adisp
 from gui import DialogsInterface
 from gui.Scaleform.daapi.view.dialogs.ExchangeDialogMeta import ExchangeCreditsWebProductMeta
 from gui.impl.dialogs.dialogs import showExchangeToBuyItemsDialog
+from gui.game_control import CalendarInvokeOrigin
 from gui.shared import event_dispatcher as shared_events
 from gui.shared.event_dispatcher import showCrystalWindow
 from gui.shared.gui_items import GUI_ITEM_TYPE
@@ -9,6 +10,7 @@ from gui.shared.gui_items.items_actions import factory as ActionsFactory
 from helpers import dependency
 from skeletons.gui.game_control import IBrowserController
 from skeletons.gui.shared import IItemsCache
+from skeletons.gui.game_control import ICalendarController
 from web.web_client_api import Field, W2CSchema, w2c
 from wg_async import wg_async, wg_await
 _logger = logging.getLogger(__name__)
@@ -43,6 +45,7 @@ class HangarTabWebApiMixin(object):
 class HangarWindowsWebApiMixin(object):
     itemsCache = dependency.descriptor(IItemsCache)
     __browserController = dependency.descriptor(IBrowserController)
+    __calendarCtrl = dependency.descriptor(ICalendarController)
 
     @w2c(_ExchangeWindowSchema, 'currency_exchange')
     def openCurrencyExchangeWindow(self, cmd):
@@ -75,6 +78,10 @@ class HangarWindowsWebApiMixin(object):
     @w2c(W2CSchema, 'show_crystal_info_window')
     def openCrystalInfoWindow(self, _):
         showCrystalWindow()
+
+    @w2c(W2CSchema, 'show_advent_calendar')
+    def showAdventCalendar(self, _):
+        self.__calendarCtrl.showCalendar(invokedFrom=CalendarInvokeOrigin.BANNER)
 
     def validateItems(self, itemCD):
         item = self.itemsCache.items.getItemByCD(itemCD)

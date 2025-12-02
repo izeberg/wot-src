@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>nodes_01</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>HP_G147_Attachment_Hull</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.000000 0.000000</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Fire_1</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 -0.044676 -1.215785</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Fire_2</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 -0.044676 0.624230</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_LFront</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.978148 0.207912</row1>
+					<row2>0.000000 -0.207912 0.978148</row2>
+					<row3>-1.147532 0.145217 2.647856</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_LRear</identifier>
+				<transform>
+					<row0>-1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.990268 -0.139173</row1>
+					<row2>-0.000000 -0.139173 -0.990268</row2>
+					<row3>-1.147532 0.150931 -2.654723</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_RFront</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.978148 0.207912</row1>
+					<row2>0.000000 -0.207912 0.978148</row2>
+					<row3>1.147532 0.125108 2.647856</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_RRear</identifier>
+				<transform>
+					<row0>-1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.990268 -0.139173</row1>
+					<row2>-0.000000 -0.139173 -0.990268</row2>
+					<row3>1.147532 0.129762 -2.654723</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Track_Exhaus_1</identifier>
+				<transform>
+					<row0>0.258819 -0.965926 0.000000</row0>
+					<row1>-0.250000 -0.066987 0.965926</row1>
+					<row2>-0.933013 -0.250000 -0.258819</row2>
+					<row3>-1.274207 0.382508 -2.046045</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Track_Exhaus_2</identifier>
+				<transform>
+					<row0>0.258819 0.965926 -0.000000</row0>
+					<row1>0.250000 -0.066987 0.965926</row1>
+					<row2>0.933013 -0.250000 -0.258819</row2>
+					<row3>1.272213 0.382438 -2.046045</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_turretJoint</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.995884 0.090633</row1>
+					<row2>0.000000 -0.090633 0.995884</row2>
+					<row3>0.000331 0.518731 0.736917</row3>
+				</transform>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_hull_01</identifier>
+					<fx>shaders/std_effects/PBS_tank.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						g_detailPowerGloss
+						<Float>
+							0.35
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_maskBias
+						<Float>
+							0.18
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailPower
+						<Float>5</Float>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/german/G147_Kunze_Panzer/_skins/G147_Kunze_Panzer_HO26_3Dst/Kunze_Panzer_HO26_3Dst_hull_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/german/G147_Kunze_Panzer/_skins/G147_Kunze_Panzer_HO26_3Dst/Kunze_Panzer_HO26_3Dst_hull_01_ANM.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/german/G147_Kunze_Panzer/_skins/G147_Kunze_Panzer_HO26_3Dst/Kunze_Panzer_HO26_3Dst_hull_01_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/german/G147_Kunze_Panzer/_skins/G147_Kunze_Panzer_HO26_3Dst/Kunze_Panzer_HO26_3Dst_hull_01_AO.dds</Texture>
+					</property>
+					<property>
+						alphaReference
+						<Int>64</Int>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.002704 -0.049249 0.001004</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>tank_equipment_03</identifier>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						alphaReference
+						<Int>127</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/german/G147_Kunze_Panzer/_skins/G147_Kunze_Panzer_HO26_3Dst/Kunze_Panzer_HO26_3Dst_equipment_03_AM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_enableTransmission
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/german/G147_Kunze_Panzer/_skins/G147_Kunze_Panzer_HO26_3Dst/Kunze_Panzer_HO26_3Dst_equipment_03_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/german/G147_Kunze_Panzer/_skins/G147_Kunze_Panzer_HO26_3Dst/Kunze_Panzer_HO26_3Dst_equipment_03_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-1.237999 0.384798 1.185829</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				2
+				<material>
+					<identifier>tank_equipment_02</identifier>
+					<fx>shaders/std_effects/PBS_tank.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						alphaReference
+						<Int>64</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/german/G147_Kunze_Panzer/_skins/G147_Kunze_Panzer_HO26_3Dst/Kunze_Panzer_HO26_3Dst_equipment_02_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/german/G147_Kunze_Panzer/_skins/G147_Kunze_Panzer_HO26_3Dst/Kunze_Panzer_HO26_3Dst_equipment_02_AO.dds</Texture>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/german/G147_Kunze_Panzer/_skins/G147_Kunze_Panzer_HO26_3Dst/Kunze_Panzer_HO26_3Dst_equipment_02_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/german/G147_Kunze_Panzer/_skins/G147_Kunze_Panzer_HO26_3Dst/Kunze_Panzer_HO26_3Dst_equipment_02_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-1.183883 0.313470 1.187774</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				3
+				<material>
+					<identifier>tank_equipment_01</identifier>
+					<fx>shaders/std_effects/PBS_tank.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						alphaReference
+						<Int>64</Int>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/german/G147_Kunze_Panzer/_skins/G147_Kunze_Panzer_HO26_3Dst/Kunze_Panzer_HO26_3Dst_equipment_01_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/german/G147_Kunze_Panzer/_skins/G147_Kunze_Panzer_HO26_3Dst/Kunze_Panzer_HO26_3Dst_equipment_01_AO.dds</Texture>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/german/G147_Kunze_Panzer/_skins/G147_Kunze_Panzer_HO26_3Dst/Kunze_Panzer_HO26_3Dst_equipment_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/german/G147_Kunze_Panzer/_skins/G147_Kunze_Panzer_HO26_3Dst/Kunze_Panzer_HO26_3Dst_equipment_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.136424 0.398747 -0.246487</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-1.450175 -0.684250 -3.068143</min>
+		<max>1.444768 0.608348 3.070151</max>
+	</boundingBox>
+	<geometrySize>99684</geometrySize>
+</root>

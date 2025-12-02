@@ -20,7 +20,7 @@ from skeletons.gui.game_control import IMarathonEventsController
 from skeletons.gui.lobby_context import ILobbyContext
 from skeletons.gui.server_events import IEventsCache
 from skeletons.gui.shared import IItemsCache
-from gui.server_events.events_constants import BATTLE_MATTERS_QUEST_ID, MARATHON_GROUP_PREFIX, PREMIUM_GROUP_PREFIX, DAILY_QUEST_ID_PREFIX, RANKED_DAILY_GROUP_ID, RANKED_PLATFORM_GROUP_ID, BATTLE_ROYALE_GROUPS_ID, EPIC_BATTLE_GROUPS_ID, MAPS_TRAINING_GROUPS_ID, MAPS_TRAINING_QUEST_PREFIX, WEEKLY_QUEST_ID_PREFIX
+from gui.server_events.events_constants import BATTLE_MATTERS_QUEST_ID, MARATHON_GROUP_PREFIX, PREMIUM_GROUP_PREFIX, DAILY_QUEST_ID_PREFIX, RANKED_DAILY_GROUP_ID, RANKED_PLATFORM_GROUP_ID, BATTLE_ROYALE_GROUPS_ID, EPIC_BATTLE_GROUPS_ID, MAPS_TRAINING_GROUPS_ID, MAPS_TRAINING_QUEST_PREFIX, WEEKLY_QUEST_ID_PREFIX, CELEBRITY_QUESTS_PREFIX
 from helpers.i18n import makeString as _ms
 from weekly_quests_common.weekly_quests_schema import weeklyQuestsSchema
 if typing.TYPE_CHECKING:
@@ -326,27 +326,19 @@ def isMapsTrainingQuest(eventID):
 
 
 def isBattleMattersQuestID(questID):
-    if questID:
-        return questID.startswith(BATTLE_MATTERS_QUEST_ID)
-    return False
+    return questID and questID.startswith(BATTLE_MATTERS_QUEST_ID)
 
 
 def isPremium(eventID):
-    if eventID:
-        return eventID.startswith(PREMIUM_GROUP_PREFIX)
-    return False
+    return eventID and eventID.startswith(PREMIUM_GROUP_PREFIX)
 
 
 def isDailyEpic(eventID):
-    if eventID:
-        return eventID.startswith(EPIC_BATTLE_GROUPS_ID)
-    return False
+    return eventID and eventID.startswith(EPIC_BATTLE_GROUPS_ID)
 
 
 def isBattleRoyale(eventID):
-    if eventID:
-        return eventID.startswith(BATTLE_ROYALE_GROUPS_ID)
-    return False
+    return eventID and eventID.startswith(BATTLE_ROYALE_GROUPS_ID)
 
 
 def isRankedDaily(eventID):
@@ -356,15 +348,11 @@ def isRankedDaily(eventID):
 
 
 def isRankedPlatform(eventID):
-    if eventID:
-        return eventID.startswith(RANKED_PLATFORM_GROUP_ID)
-    return False
+    return eventID and eventID.startswith(RANKED_PLATFORM_GROUP_ID)
 
 
 def isDailyQuest(eventID):
-    if eventID:
-        return eventID.startswith(DAILY_QUEST_ID_PREFIX)
-    return False
+    return eventID and eventID.startswith(DAILY_QUEST_ID_PREFIX)
 
 
 def isWeeklyQuest(eventID):
@@ -374,9 +362,7 @@ def isWeeklyQuest(eventID):
 
 
 def isACEmailConfirmationQuest(eventID):
-    if eventID:
-        return eventID == EMAIL_CONFIRMATION_QUEST_ID
-    return False
+    return eventID and eventID == EMAIL_CONFIRMATION_QUEST_ID
 
 
 def isPM30MilestoneQuest(eventID):
@@ -387,8 +373,12 @@ def isPM30OperationFinishedQuest(eventID):
     return eventID.startswith(FINAL_PT_TOKEN_PREFIX) and eventID.endswith(PM3_PERSONAL_MISSION_HONOR_POSTFIX)
 
 
+def isCelebrityQuest(eventID):
+    return eventID and eventID.startswith(CELEBRITY_QUESTS_PREFIX)
+
+
 def isRegularQuest(eventID):
-    idGameModeEvent = isDailyEpic(eventID) or isRankedDaily(eventID) or isRankedPlatform(eventID)
+    idGameModeEvent = isDailyEpic(eventID) or isRankedDaily(eventID) or isRankedPlatform(eventID) or isCelebrityQuest(eventID)
     return not (isMarathon(eventID) or isBattleMattersQuestID(eventID) or isPremium(eventID) or idGameModeEvent)
 
 
@@ -441,7 +431,7 @@ def getLootboxesFromBonuses(bonuses, itemsCache=None):
             tokens = bonus.getTokens()
             boxes = itemsCache.items.tokens.getLootBoxes()
             for token in tokens.values():
-                if 'lootBox' in token.id:
+                if 'lootBox' in token.id and token.id in boxes:
                     lootboxType = boxes[token.id].getType()
                     if lootboxType not in lootboxes:
                         lootboxes[lootboxType] = {'count': token.count, 'isFree': boxes[token.id].isFree()}

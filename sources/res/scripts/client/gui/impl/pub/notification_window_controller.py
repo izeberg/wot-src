@@ -16,7 +16,7 @@ _logger = logging.getLogger(__name__)
 class NotificationWindowController(INotificationWindowController, IGlobalListener):
     __slots__ = ('__accountID', '__activeQueue', '__postponedQueue', '__currentWindow',
                  '__callbackID', '__isWaitingShown', '__processAfterWaiting', '__isLobbyLoaded',
-                 '__locks', '__isExecuting')
+                 '__locks', '__isExecuting', '__predicate')
     __gui = dependency.descriptor(IGuiLoader)
     __gameplay = dependency.descriptor(IGameplayLogic)
 
@@ -26,6 +26,7 @@ class NotificationWindowController(INotificationWindowController, IGlobalListene
         self.__postponedQueue = []
         self.__locks = set()
         self.__currentWindow = None
+        self.__predicate = None
         self.__callbackID = None
         self.__isWaitingShown = False
         self.__processAfterWaiting = False
@@ -112,13 +113,20 @@ class NotificationWindowController(INotificationWindowController, IGlobalListene
         del self.__activeQueue[:]
         del self.__postponedQueue[:]
         self.__locks.clear()
+        self.__predicate = None
+        return
 
     def append(self, command):
-        _logger.debug('Append %r', command)
-        command.init()
-        self.__removeSameInstance(command)
-        self.__activeQueue.append(command)
-        self.__tryProcess()
+        if self.__predicate is not None and not self.__predicate(command):
+            _logger.debug('Skip append %r on predicate %r', command, self.__predicate)
+            return
+        else:
+            _logger.debug('Append %r', command)
+            command.init()
+            self.__removeSameInstance(command)
+            self.__activeQueue.append(command)
+            self.__tryProcess()
+            return
 
     def releasePostponed(self, fireReleased=True):
         _logger.debug('Releasing the postponed queue.')
@@ -165,6 +173,12 @@ class NotificationWindowController(INotificationWindowController, IGlobalListene
     def hasLock(self, key):
         return key in self.__locks
 
+    def setFilterPredicate(self, predicate):
+        if predicate is not None and self.__predicate is not None:
+            _logger.warning('Filter predicate %r is overwritten with %r', self.__predicate, predicate)
+        self.__predicate = predicate
+        return
+
     @staticmethod
     def __discardNonPersistentCommands(queue):
         result = []
@@ -176,6 +190,11 @@ class NotificationWindowController(INotificationWindowController, IGlobalListene
                 cmd.fini()
 
         return result
+
+    @staticmethod
+    def isQueuePausingWindow(window):
+        return window.windowStatus in (WindowStatus.LOADING, WindowStatus.LOADED) and window.layer in (
+         WindowLayer.OVERLAY, WindowLayer.TOP_WINDOW, WindowLayer.FULLSCREEN_WINDOW)
 
     def __tryProcess(self):
         if not self.__locks:
@@ -215,13 +234,17 @@ class NotificationWindowController(INotificationWindowController, IGlobalListene
         if not self.__activeQueue or self.__isWaitingShown:
             return
         self.__processAfterWaiting = False
-        if self.isEnabled() and not self.__locks and not self.__gui.windowsManager.findWindows(self.__overlappingWindowsPredicate):
+        if self.isEnabled() and not self.__locks and not self.__gui.windowsManager.findWindows(self.isQueuePausingWindow):
             command = self.__activeQueue.pop(0)
-            _logger.debug('Executing next command: %r', command)
-            self.__currentWindow = command.getWindow()
-            self.__isExecuting = True
-            command.execute()
-            self.__isExecuting = False
+            if command.isOverdue():
+                _logger.debug('Command %r is overdue. Skip it.', command)
+                self.__processNext()
+            else:
+                _logger.debug('Executing next command: %r', command)
+                self.__currentWindow = command.getWindow()
+                self.__isExecuting = True
+                command.execute()
+                self.__isExecuting = False
         return
 
     def __destroyCurrentWindow(self):
@@ -249,8 +272,3 @@ class NotificationWindowController(INotificationWindowController, IGlobalListene
             BigWorld.cancelCallback(self.__callbackID)
             self.__callbackID = None
         return
-
-    @staticmethod
-    def __overlappingWindowsPredicate(window):
-        return window.windowStatus in (WindowStatus.LOADING, WindowStatus.LOADED) and window.layer in (
-         WindowLayer.OVERLAY, WindowLayer.TOP_WINDOW, WindowLayer.FULLSCREEN_WINDOW)
