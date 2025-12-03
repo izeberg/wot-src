@@ -53,27 +53,22 @@
 			<flags>0</flags>
 		</GameObject>
 		<GameObject>
-			<name>hd_env_114_18_ConcreteSlab_04_Box_01</name>
+			<name>building_wall1_01</name>
 			<UUID>33f21b0b-1ad9-4fed-9616-c6154bb77348</UUID>
 			<flags>2</flags>
 		</GameObject>
 		<GameObject>
-			<name>hd_env_114_18_ConcreteSlab_04_Box_02</name>
+			<name>building_wall1_02</name>
 			<UUID>44c1d4b3-be31-37ec-911b-a8bfcc77143a</UUID>
 			<flags>2</flags>
 		</GameObject>
 		<GameObject>
-			<name>hd_env_114_18_ConcreteSlab_04_Box_03</name>
+			<name>building_wall1_03</name>
 			<UUID>0653cf9a-3712-3be8-8ef5-e384209b8e7b</UUID>
 			<flags>2</flags>
 		</GameObject>
 		<GameObject>
-			<name>hd_env_114_18_ConcreteSlab_04_Box_04</name>
-			<UUID>760368fd-86b9-3899-b894-66cccdab97aa</UUID>
-			<flags>2</flags>
-		</GameObject>
-		<GameObject>
-			<name>hd_env_114_18_ConcreteSlab_04_Box_05</name>
+			<name>building_wall1_04</name>
 			<UUID>ff41dd03-a559-325f-aaeb-339c6fe438f2</UUID>
 			<flags>2</flags>
 		</GameObject>
@@ -239,16 +234,6 @@
 			</component>
 			<component>
 				<UUID>0653cf9a-3712-3be8-8ef5-e384209b8e7b</UUID>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Parent</name>
-						<link>70951f15-d572-460f-bc2c-81e985a4237f</link>
-					</property>
-				</config>
-			</component>
-			<component>
-				<UUID>760368fd-86b9-3899-b894-66cccdab97aa</UUID>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -593,21 +578,21 @@
 					<property>
 						<name>Position</name>
 						<value>
-							69.3641 9.90805 35.8561
+							69.3819 7.65779 36.0734
 							<!--BW_String-->
 						</value>
 					</property>
 					<property>
 						<name>Scale</name>
 						<value>
-							1 1 1.5735
+							1.21959 0.999999 0.999998
 							<!--BW_String-->
 						</value>
 					</property>
 					<property>
 						<name>Rotation</name>
 						<value>
-							5.96046e-08 -0.742888 1.5708
+							-0.000174533 -2.18463 -0.00191986
 							<!--BW_String-->
 						</value>
 					</property>
@@ -620,21 +605,18 @@
 					<property>
 						<name>Position</name>
 						<value>
-							65.7621 10.2307 36.0719
+							65.9881 7.66527 36.4328
 							<!--BW_String-->
 						</value>
 					</property>
 					<property>
 						<name>Scale</name>
-						<value>
-							1 1 1.5735
-							<!--BW_String-->
-						</value>
+						<value>0.999997 0.999997 0.999996</value>
 					</property>
 					<property>
 						<name>Rotation</name>
 						<value>
-							3.14159 0.827908 -1.57079
+							-0.000349066 2.44241 -0.00191986
 							<!--BW_String-->
 						</value>
 					</property>
@@ -647,48 +629,21 @@
 					<property>
 						<name>Position</name>
 						<value>
-							69.3038 10.6431 32.2206
+							68.6334 7.65923 30.4154
 							<!--BW_String-->
 						</value>
 					</property>
 					<property>
 						<name>Scale</name>
 						<value>
-							1 1 1.5735
+							1.67263 0.999997 0.999996
 							<!--BW_String-->
 						</value>
 					</property>
 					<property>
 						<name>Rotation</name>
 						<value>
-							3.14159 0.663849 -1.57079
-							<!--BW_String-->
-						</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<UUID>760368fd-86b9-3899-b894-66cccdab97aa</UUID>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Position</name>
-						<value>
-							66.7481 10.6431 28.9817
-							<!--BW_String-->
-						</value>
-					</property>
-					<property>
-						<name>Scale</name>
-						<value>
-							1 0.999999 0.994605
-							<!--BW_String-->
-						</value>
-					</property>
-					<property>
-						<name>Rotation</name>
-						<value>
-							3.14159 0.69076 -1.57079
+							-0.000698131 2.27451 -0.00174533
 							<!--BW_String-->
 						</value>
 					</property>
@@ -701,21 +656,21 @@
 					<property>
 						<name>Position</name>
 						<value>
-							69.9858 14.6054 36.202
+							70.192 12.7004 36.1457
 							<!--BW_String-->
 						</value>
 					</property>
 					<property>
 						<name>Scale</name>
 						<value>
-							1 1 2.04691
+							1.21959 0.999999 0.999998
 							<!--BW_String-->
 						</value>
 					</property>
 					<property>
 						<name>Rotation</name>
 						<value>
-							2.98023e-07 -0.807672 1.5708
+							-0.000523599 -2.34782 -0.00191986
 							<!--BW_String-->
 						</value>
 					</property>
@@ -787,7 +742,7 @@
 					<property>
 						<name>Rotation</name>
 						<value>
-							0 -2.36928 0
+							-0 -2.36928 0
 							<!--BW_String-->
 						</value>
 					</property>
@@ -841,7 +796,7 @@
 					<property>
 						<name>Rotation</name>
 						<value>
-							0 -0.00349066 0
+							-0 -0.00349066 0
 							<!--BW_String-->
 						</value>
 					</property>
@@ -868,7 +823,7 @@
 					<property>
 						<name>Rotation</name>
 						<value>
-							0 -2.36928 0
+							-0 -2.36928 0
 							<!--BW_String-->
 						</value>
 					</property>
@@ -1243,7 +1198,7 @@
 											<property>
 												<name>Model name</name>
 												<isAsset>true</isAsset>
-												<value>content/Environment/hd_env_114_18_ConcreteSlab/normal/lod0/hd_env_114_18_ConcreteSlab_04_Box.model</value>
+												<value>objects/misc/bbox/building_wall1.model</value>
 											</property>
 											<property>
 												<name>Module name</name>
@@ -1276,7 +1231,7 @@
 											<property>
 												<name>Model name</name>
 												<isAsset>true</isAsset>
-												<value>content/Environment/hd_env_114_18_ConcreteSlab/normal/lod0/hd_env_114_18_ConcreteSlab_04_Box.model</value>
+												<value>objects/misc/bbox/building_wall1.model</value>
 											</property>
 											<property>
 												<name>Module name</name>
@@ -1309,40 +1264,7 @@
 											<property>
 												<name>Model name</name>
 												<isAsset>true</isAsset>
-												<value>content/Environment/hd_env_114_18_ConcreteSlab/normal/lod0/hd_env_114_18_ConcreteSlab_04_Box.model</value>
-											</property>
-											<property>
-												<name>Module name</name>
-												<value>default</value>
-											</property>
-										</object>
-									</property>
-								</object>
-							</item>
-						</collection>
-					</property>
-				</config>
-			</component>
-			<component>
-				<UUID>760368fd-86b9-3899-b894-66cccdab97aa</UUID>
-				<flags>34</flags>
-				<config>
-					<property>
-						<name>Colliders</name>
-						<collection>
-							<item>
-								<object>
-									<property>
-										<name>Type</name>
-										<value>3</value>
-									</property>
-									<property>
-										<name>Parameters</name>
-										<object>
-											<property>
-												<name>Model name</name>
-												<isAsset>true</isAsset>
-												<value>content/Environment/hd_env_114_18_ConcreteSlab/normal/lod0/hd_env_114_18_ConcreteSlab_04_Box.model</value>
+												<value>objects/misc/bbox/building_wall1.model</value>
 											</property>
 											<property>
 												<name>Module name</name>
@@ -1375,7 +1297,7 @@
 											<property>
 												<name>Model name</name>
 												<isAsset>true</isAsset>
-												<value>content/Environment/hd_env_114_18_ConcreteSlab/normal/lod0/hd_env_114_18_ConcreteSlab_04_Box.model</value>
+												<value>objects/misc/bbox/building_wall1.model</value>
 											</property>
 											<property>
 												<name>Module name</name>
@@ -1785,20 +1707,6 @@
 			</component>
 			<component>
 				<UUID>0653cf9a-3712-3be8-8ef5-e384209b8e7b</UUID>
-				<flags>34</flags>
-				<config>
-					<property>
-						<name>spawnResolveType</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>cameraName</name>
-						<value/>
-					</property>
-				</config>
-			</component>
-			<component>
-				<UUID>760368fd-86b9-3899-b894-66cccdab97aa</UUID>
 				<flags>34</flags>
 				<config>
 					<property>

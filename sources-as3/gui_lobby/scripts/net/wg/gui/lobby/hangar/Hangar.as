@@ -148,6 +148,8 @@ package net.wg.gui.lobby.hangar
       private static const CAROUSEL_EVENT_ENTRY_Y_OFFSET:int = 110;
       
       private static const HELP_LAYOUT_ADDITIONAL_WIDTH:int = -30;
+      
+      private static const BOTTOM_BG_Y_OFFSET:int = 6;
        
       
       public var vehResearchPanel:ResearchPanel;
@@ -287,7 +289,7 @@ package net.wg.gui.lobby.hangar
          if(this.bottomBg != null)
          {
             this.bottomBg.x = 0;
-            this.bottomBg.y = _originalHeight >> 0;
+            this.bottomBg.y = _originalHeight - BOTTOM_BG_Y_OFFSET | 0;
             this.bottomBg.width = _originalWidth;
          }
          this.alignToCenter(this.switchModePanel);
@@ -448,7 +450,7 @@ package net.wg.gui.lobby.hangar
          var _loc3_:Boolean = isInvalid(PARAMS_POSITION_INVALID);
          var _loc4_:Boolean = false;
          var _loc5_:Boolean = isInvalid(INVALIDATE_PRESTIGE_WIDGET_VISIBILITY);
-         if(isInvalid(INVALIDATE_CAROUSEL_SIZE))
+         if(this.carousel && isInvalid(INVALIDATE_CAROUSEL_SIZE))
          {
             this.carousel.visible = this._carouselVisible;
             this.updateCarouselPosition();
@@ -662,11 +664,7 @@ package net.wg.gui.lobby.hangar
          this._carouselAlias = param2;
          this._carousel = this._utils.classFactory.getComponent(param1,TankCarousel);
          this.carousel.visible = false;
-         if(this._carouselEventEntryVisible)
-         {
-            this.carousel.setRightMargin(CarouselEventEntry.WIDTH + CAROUSEL_EVENT_ENTRY_X_OFFSET);
-         }
-         else if(this._eventTournamentBanner)
+         if(this._eventTournamentBanner)
          {
             this.carousel.setRightMargin(this._eventTournamentBanner.width);
          }
@@ -1095,9 +1093,9 @@ package net.wg.gui.lobby.hangar
       
       private function updateCarouselPosition() : void
       {
-         this._carousel.updateCarouselPosition(_height - this._carousel.getBottom() ^ 0);
+         var _loc1_:int = _height - this._carousel.getBottom();
+         this._carousel.updateCarouselPosition(_loc1_);
          this.updateEventTournamentBannerSizeAndPosition();
-         this.updateCarouselEventEntryWidgetPosition();
          this.updateAmmunitionPanelPosition();
          if(this._hangarViewSwitchAnimator)
          {

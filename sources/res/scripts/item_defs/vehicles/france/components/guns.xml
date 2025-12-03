@@ -4490,7 +4490,7 @@
 						<!--BW_String-->
 					</gravity>
 					<maxDistance>720</maxDistance>
-					<piercingPower>204 190</piercingPower>
+					<piercingPower>210 194</piercingPower>
 				</_75mm_Prf1930B>
 				<_75mm_FrtPrf1944B>
 					<defaultPortion>
@@ -4503,7 +4503,7 @@
 						<!--BW_String-->
 					</gravity>
 					<maxDistance>720</maxDistance>
-					<piercingPower>236 214</piercingPower>
+					<piercingPower>248 224</piercingPower>
 				</_75mm_FrtPrf1944B>
 				<_75mm_OE_mle_1924B>
 					<defaultPortion>
@@ -10375,7 +10375,7 @@
 			<recoil>
 				<lodDist>MEDIUM</lodDist>
 				<amplitude>
-					0.65
+					0.32
 					<!--BW_String-->
 				</amplitude>
 				<recoilEffect>main</recoilEffect>

@@ -13,7 +13,7 @@ class MainViewModel(ViewModel):
     __slots__ = ('onClose', 'onOpenDoorAnimStarted', 'onOpenDoorAnimEnded', 'onShowPurchaseDialog',
                  'onAnimationCompleted', 'onOpenDownloadLink', 'onInfoClick')
 
-    def __init__(self, properties=13, commands=7):
+    def __init__(self, properties=14, commands=7):
         super(MainViewModel, self).__init__(properties=properties, commands=commands)
 
     @property
@@ -102,6 +102,12 @@ class MainViewModel(ViewModel):
     def setIsIntroScreenVisible(self, value):
         self._setBool(12, value)
 
+    def getIsWalletAvailable(self):
+        return self._getBool(13)
+
+    def setIsWalletAvailable(self, value):
+        self._setBool(13, value)
+
     def _initialize(self):
         super(MainViewModel, self)._initialize()
         self._addViewModelProperty('progressionRewards', ProgressionRewardsViewModel())
@@ -117,6 +123,7 @@ class MainViewModel(ViewModel):
         self._addBoolProperty('isAnimationEnabled', False)
         self._addBoolProperty('isCalendarCompleted', False)
         self._addBoolProperty('isIntroScreenVisible', False)
+        self._addBoolProperty('isWalletAvailable', False)
         self.onClose = self._addCommand('onClose')
         self.onOpenDoorAnimStarted = self._addCommand('onOpenDoorAnimStarted')
         self.onOpenDoorAnimEnded = self._addCommand('onOpenDoorAnimEnded')

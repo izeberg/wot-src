@@ -62,30 +62,3 @@ class IsAdventCalendarAvailable(Block, AdventCalendarMeta):
 
     def _execute(self):
         self._isAvailable.setValue(self.__adventController.isAvailable())
-
-
-class OnPreviewVehicleOrStyleSelected(Block, AdventCalendarMeta):
-
-    def __init__(self, *args, **kwargs):
-        super(OnPreviewVehicleOrStyleSelected, self).__init__(*args, **kwargs)
-        self._out = self._makeEventOutputSlot('out')
-
-    def onStartScript(self):
-        CurrentVehicle.g_currentPreviewVehicle.onChanged += self.__onPreviewVehicleSelected
-
-    def onFinishScript(self):
-        CurrentVehicle.g_currentPreviewVehicle.onChanged -= self.__onPreviewVehicleSelected
-
-    def __onPreviewVehicleSelected(self):
-        self._out.call()
-
-
-class IsPreviewVehicleOrStyleSelected(Block, AdventCalendarMeta):
-
-    def __init__(self, *args, **kwargs):
-        super(IsPreviewVehicleOrStyleSelected, self).__init__(*args, **kwargs)
-        self._isSelected = self._makeDataOutputSlot('isSelected', SLOT_TYPE.BOOL, self._execute)
-
-    def _execute(self):
-        self._isSelected.setValue(CurrentVehicle.g_currentPreviewVehicle.item is not None)
-        return

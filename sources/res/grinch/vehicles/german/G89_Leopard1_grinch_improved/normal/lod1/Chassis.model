@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>grinch/vehicles/german/G89_Leopard1_grinch_improved/normal/lod2/Chassis</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.670255 -0.000112 -3.138860</min>
+		<max>1.670255 1.040982 3.204239</max>
+	</visibilityBox>
+	<nodefullVisual>grinch/vehicles/german/G89_Leopard1_grinch_improved/normal/lod1/Chassis</nodefullVisual>
+</root>

@@ -21,7 +21,7 @@ from gui.impl.lobby.vehicle_hub.states import OverviewState, VehicleHubState
 from gui.lobby_state_machine.states import SubScopeSubLayerState, LobbyStateDescription, LobbyState, ViewLobbyState
 from gui.lobby_state_machine.transitions import HijackTransition, NavigationTransition
 from gui.shared import EVENT_BUS_SCOPE
-from gui.shared.event_dispatcher import showPM30IntroWindow, showPM30OperationIntroWindow
+from gui.shared.event_dispatcher import showHangar, showPM30IntroWindow, showPM30OperationIntroWindow
 from gui.subhangar.subhangar_state_groups import SubhangarStateGroupConfigProvider, SubhangarStateGroupConfig, SubhangarStateGroups
 from helpers import dependency
 from helpers.events_handler import EventsHandler
@@ -29,6 +29,7 @@ from personal_missions import PM_BRANCH
 from skeletons.gui.app_loader import IAppLoader
 from skeletons.gui.impl import IGuiLoader
 from skeletons.gui.server_events import IEventsCache
+from skeletons.gui.shared.utils import IHangarSpace
 if typing.TYPE_CHECKING:
     from gui.lobby_state_machine.lobby_state_machine import LobbyStateMachine
     from gui.impl.lobby.personal_missions_30.main_view import MainView
@@ -66,10 +67,11 @@ class CampaignSelectorState(ViewLobbyState):
 
 
 @SubScopeSubLayerState.parentOf
-class PersonalMissions3EntryState(LobbyState, SubhangarStateGroupConfigProvider):
+class PersonalMissions3EntryState(LobbyState, EventsHandler, SubhangarStateGroupConfigProvider):
     STATE_ID = 'personalMissions3Entry'
     __uiLoader = dependency.descriptor(IGuiLoader)
     __eventsCache = dependency.descriptor(IEventsCache)
+    __hangarSpace = dependency.descriptor(IHangarSpace)
 
     def __init__(self, flags=StateFlags.UNDEFINED):
         super(PersonalMissions3EntryState, self).__init__(flags)
@@ -95,10 +97,12 @@ class PersonalMissions3EntryState(LobbyState, SubhangarStateGroupConfigProvider)
 
     def _onEntered(self, event):
         super(PersonalMissions3EntryState, self)._onEntered(event)
+        self._subscribe()
         self.assemblingManager = AssemblingManager()
         self.__cachedParams = dict(event.params)
 
     def _onExited(self):
+        self._unsubscribe()
         self.assemblingManager.deactivate()
         self.assemblingManager.destroy()
         self.assemblingManager = None
@@ -117,6 +121,16 @@ class PersonalMissions3EntryState(LobbyState, SubhangarStateGroupConfigProvider)
                 self.assemblingManager.startTopCameraAnimation()
         else:
             _logger.error('PersonalMissions3EntryState cachedParams is empty')
+
+    def _getEvents(self):
+        return (
+         (
+          self.__hangarSpace.onSpaceChanged, self.__onSpaceChanged),)
+
+    def __onSpaceChanged(self):
+        machine = self.getMachine()
+        machine.getStateByCls(PersonalMissions3State).setForceLeave()
+        showHangar()
 
 
 @PersonalMissions3EntryState.parentOf

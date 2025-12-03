@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>38.133335</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Cat</name>
+		<type>model</type>
+		<resource>content/Hangars/CharacterAnimations/h38_newyear_2025/normal/lod0/Cat_newyear2025_01.model</resource>
+		<track>
+			<name>animation</name>
+			<type>animation</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>5.333333</duration>
+				<resourceID>content/Hangars/CharacterAnimations/h38_newyear_2025/animations/Cat/NY25_Cat_Yawns01.fbx</resourceID>
+				<clipName/>
+				<speed>1.000000</speed>
+				<layer>0</layer>
+				<blendIn>constant</blendIn>
+				<blendOut>constant</blendOut>
+				<blendInTime>0.000000</blendInTime>
+				<blendOutTime>0.466667</blendOutTime>
+				<clipStartTime>0.000000</clipStartTime>
+				<clipEndTime>5.333333</clipEndTime>
+			</frame>
+			<frame>
+				<startTime>4.866667</startTime>
+				<duration>13.300001</duration>
+				<resourceID>content/Hangars/CharacterAnimations/h38_newyear_2025/animations/Cat/NY25_Cat_SleepIdle01.fbx</resourceID>
+				<clipName/>
+				<speed>1.000000</speed>
+				<layer>0</layer>
+				<blendIn>constant</blendIn>
+				<blendOut>constant</blendOut>
+				<blendInTime>0.466667</blendInTime>
+				<blendOutTime>0.600000</blendOutTime>
+				<clipStartTime>0.000000</clipStartTime>
+				<clipEndTime>13.300000</clipEndTime>
+			</frame>
+			<frame>
+				<startTime>17.566668</startTime>
+				<duration>8.000000</duration>
+				<resourceID>content/Hangars/CharacterAnimations/h38_newyear_2025/animations/Cat/Meow_01.fbx</resourceID>
+				<clipName/>
+				<speed>1.000000</speed>
+				<layer>0</layer>
+				<blendIn>constant</blendIn>
+				<blendOut>constant</blendOut>
+				<blendInTime>0.600000</blendInTime>
+				<blendOutTime>0.733334</blendOutTime>
+				<clipStartTime>0.000000</clipStartTime>
+				<clipEndTime>8.000000</clipEndTime>
+			</frame>
+			<frame>
+				<startTime>24.833334</startTime>
+				<duration>13.300001</duration>
+				<resourceID>content/Hangars/CharacterAnimations/h38_newyear_2025/animations/Cat/NY25_Cat_SleepIdle01.fbx</resourceID>
+				<clipName/>
+				<speed>1.000000</speed>
+				<layer>0</layer>
+				<blendIn>constant</blendIn>
+				<blendOut>constant</blendOut>
+				<blendInTime>0.733334</blendInTime>
+				<blendOutTime>0.000000</blendOutTime>
+				<clipStartTime>0.000000</clipStartTime>
+				<clipEndTime>13.300000</clipEndTime>
+			</frame>
+		</track>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>25.535500 -0.681564 23.520399</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.000000 -67.000000 -0.000000</value>
+				<inTangent>-0.000000 -4.711042 0.000000</inTangent>
+				<outTangent>-0.000000 -4.711042 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>20.000000 20.000000 20.000000</value>
+				<inTangent>58.000000 58.000000 58.000000</inTangent>
+				<outTangent>58.000000 58.000000 58.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

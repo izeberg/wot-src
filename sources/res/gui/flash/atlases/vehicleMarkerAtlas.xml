@@ -1,43 +1,43 @@
 <root>
 	<SubTexture>
 		<name> damageBar_gold </name>
+		<x> 1047 </x>
+		<y> 1022 </y>
+		<width> 26 </width>
+		<height> 50 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> damageBar_green </name>
 		<x> 2018 </x>
 		<y> 687 </y>
 		<width> 26 </width>
 		<height> 50 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> damageBar_green </name>
+		<name> damageBar_orange </name>
 		<x> 2012 </x>
 		<y> 562 </y>
 		<width> 26 </width>
 		<height> 50 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> damageBar_orange </name>
-		<x> 1533 </x>
-		<y> 938 </y>
-		<width> 26 </width>
-		<height> 50 </height>
-	</SubTexture>
-	<SubTexture>
 		<name> damageBar_purple </name>
-		<x> 1084 </x>
-		<y> 1021 </y>
+		<x> 508 </x>
+		<y> 1165 </y>
 		<width> 26 </width>
 		<height> 50 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> damageBar_red </name>
-		<x> 1111 </x>
-		<y> 1021 </y>
+		<x> 1164 </x>
+		<y> 1049 </y>
 		<width> 26 </width>
 		<height> 50 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> damageBar_yellow </name>
-		<x> 1472 </x>
-		<y> 963 </y>
+		<x> 801 </x>
+		<y> 1098 </y>
 		<width> 26 </width>
 		<height> 50 </height>
 	</SubTexture>
@@ -281,337 +281,337 @@
 	</SubTexture>
 	<SubTexture>
 		<name> squadIcon_gold1 </name>
-		<x> 2012 </x>
-		<y> 112 </y>
+		<x> 1212 </x>
+		<y> 1174 </y>
 		<width> 32 </width>
 		<height> 32 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> squadIcon_gold2 </name>
 		<x> 2012 </x>
-		<y> 937 </y>
+		<y> 112 </y>
 		<width> 32 </width>
 		<height> 32 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> squadIcon_gold3 </name>
-		<x> 1046 </x>
-		<y> 1022 </y>
+		<x> 2009 </x>
+		<y> 988 </y>
 		<width> 32 </width>
 		<height> 32 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> squadIcon_gold4 </name>
-		<x> 45 </x>
-		<y> 1325 </y>
+		<x> 2013 </x>
+		<y> 937 </y>
 		<width> 32 </width>
 		<height> 32 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> squadIcon_green1 </name>
-		<x> 2009 </x>
-		<y> 1113 </y>
+		<x> 1321 </x>
+		<y> 1267 </y>
 		<width> 32 </width>
 		<height> 32 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> squadIcon_green2 </name>
-		<x> 804 </x>
-		<y> 1248 </y>
+		<x> 1258 </x>
+		<y> 1292 </y>
 		<width> 32 </width>
 		<height> 32 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> squadIcon_green3 </name>
-		<x> 689 </x>
-		<y> 1249 </y>
+		<x> 1198 </x>
+		<y> 1294 </y>
 		<width> 32 </width>
 		<height> 32 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> squadIcon_green4 </name>
-		<x> 722 </x>
-		<y> 1249 </y>
+		<x> 760 </x>
+		<y> 1251 </y>
 		<width> 32 </width>
 		<height> 32 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> squadIcon_purple1 </name>
-		<x> 755 </x>
-		<y> 1273 </y>
+		<x> 699 </x>
+		<y> 1252 </y>
 		<width> 32 </width>
 		<height> 32 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> squadIcon_purple2 </name>
-		<x> 584 </x>
-		<y> 1273 </y>
+		<x> 793 </x>
+		<y> 1251 </y>
 		<width> 32 </width>
 		<height> 32 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> squadIcon_purple3 </name>
-		<x> 527 </x>
-		<y> 1290 </y>
+		<x> 826 </x>
+		<y> 1251 </y>
 		<width> 32 </width>
 		<height> 32 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> squadIcon_purple4 </name>
-		<x> 479 </x>
-		<y> 1314 </y>
+		<x> 615 </x>
+		<y> 1276 </y>
 		<width> 32 </width>
 		<height> 32 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> squadIcon_red1 </name>
-		<x> 421 </x>
-		<y> 1316 </y>
+		<x> 570 </x>
+		<y> 1293 </y>
 		<width> 32 </width>
 		<height> 32 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> squadIcon_red2 </name>
-		<x> 617 </x>
-		<y> 1273 </y>
+		<x> 530 </x>
+		<y> 1317 </y>
 		<width> 32 </width>
 		<height> 32 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> squadIcon_red3 </name>
-		<x> 650 </x>
-		<y> 1273 </y>
+		<x> 648 </x>
+		<y> 1276 </y>
 		<width> 32 </width>
 		<height> 32 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> squadIcon_red4 </name>
-		<x> 683 </x>
-		<y> 1282 </y>
+		<x> 433 </x>
+		<y> 1319 </y>
 		<width> 32 </width>
 		<height> 32 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> squadIcon_yellow1 </name>
-		<x> 716 </x>
-		<y> 1282 </y>
+		<x> 377 </x>
+		<y> 1334 </y>
 		<width> 32 </width>
 		<height> 32 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> squadIcon_yellow2 </name>
-		<x> 320 </x>
-		<y> 1332 </y>
-		<width> 32 </width>
-		<height> 32 </height>
-	</SubTexture>
-	<SubTexture>
-		<name> squadIcon_yellow3 </name>
-		<x> 266 </x>
-		<y> 1333 </y>
-		<width> 32 </width>
-		<height> 32 </height>
-	</SubTexture>
-	<SubTexture>
-		<name> squadIcon_yellow4 </name>
-		<x> 214 </x>
+		<x> 334 </x>
 		<y> 1335 </y>
 		<width> 32 </width>
 		<height> 32 </height>
 	</SubTexture>
 	<SubTexture>
+		<name> squadIcon_yellow3 </name>
+		<x> 466 </x>
+		<y> 1319 </y>
+		<width> 32 </width>
+		<height> 32 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> squadIcon_yellow4 </name>
+		<x> 252 </x>
+		<y> 1336 </y>
+		<width> 32 </width>
+		<height> 32 </height>
+	</SubTexture>
+	<SubTexture>
 		<name> sm_aggressiveDetection_green </name>
-		<x> 168 </x>
-		<y> 1345 </y>
+		<x> 212 </x>
+		<y> 1338 </y>
 		<width> 32 </width>
 		<height> 32 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> sm_aggressiveDetection_purple </name>
-		<x> 353 </x>
-		<y> 1332 </y>
+		<x> 285 </x>
+		<y> 1336 </y>
 		<width> 32 </width>
 		<height> 32 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> sm_aggressiveDetection_red </name>
-		<x> 386 </x>
-		<y> 1332 </y>
+		<x> 161 </x>
+		<y> 1346 </y>
 		<width> 32 </width>
 		<height> 32 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> sm_aggressiveDetection_white </name>
-		<x> 78 </x>
-		<y> 1348 </y>
+		<x> 120 </x>
+		<y> 1350 </y>
 		<width> 32 </width>
 		<height> 32 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> sm_allySupport_green </name>
-		<x> 45 </x>
-		<y> 1358 </y>
+		<x> 80 </x>
+		<y> 1360 </y>
 		<width> 32 </width>
 		<height> 32 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> sm_allySupport_purple </name>
-		<x> 0 </x>
-		<y> 1359 </y>
+		<x> 40 </x>
+		<y> 1377 </y>
 		<width> 32 </width>
 		<height> 32 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> sm_allySupport_red </name>
-		<x> 111 </x>
-		<y> 1348 </y>
+		<x> 0 </x>
+		<y> 1386 </y>
 		<width> 32 </width>
 		<height> 32 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> sm_allySupport_white </name>
-		<x> 560 </x>
-		<y> 1306 </y>
+		<x> 1354 </x>
+		<y> 1290 </y>
 		<width> 32 </width>
 		<height> 32 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> sm_aoeHeal_green </name>
-		<x> 512 </x>
-		<y> 1323 </y>
+		<x> 1291 </x>
+		<y> 1300 </y>
 		<width> 32 </width>
 		<height> 32 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> sm_aoeHeal_purple </name>
-		<x> 454 </x>
-		<y> 1347 </y>
+		<x> 1231 </x>
+		<y> 1325 </y>
 		<width> 32 </width>
 		<height> 32 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> sm_aoeHeal_red </name>
-		<x> 419 </x>
-		<y> 1349 </y>
+		<x> 1387 </x>
+		<y> 1290 </y>
 		<width> 32 </width>
 		<height> 32 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> sm_aoeHeal_white </name>
-		<x> 593 </x>
-		<y> 1306 </y>
+		<x> 1420 </x>
+		<y> 1290 </y>
 		<width> 32 </width>
 		<height> 32 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> sm_aoeInspire_green </name>
-		<x> 626 </x>
-		<y> 1306 </y>
+		<x> 1453 </x>
+		<y> 1290 </y>
 		<width> 32 </width>
 		<height> 32 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> sm_aoeInspire_purple </name>
-		<x> 299 </x>
-		<y> 1365 </y>
+		<x> 859 </x>
+		<y> 1253 </y>
 		<width> 32 </width>
 		<height> 32 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> sm_aoeInspire_red </name>
-		<x> 247 </x>
-		<y> 1366 </y>
+		<x> 892 </x>
+		<y> 1253 </y>
 		<width> 32 </width>
 		<height> 32 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> sm_aoeInspire_white </name>
-		<x> 201 </x>
-		<y> 1368 </y>
+		<x> 925 </x>
+		<y> 1253 </y>
 		<width> 32 </width>
 		<height> 32 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> sm_artillerySupport_green </name>
-		<x> 144 </x>
-		<y> 1378 </y>
+		<x> 958 </x>
+		<y> 1277 </y>
 		<width> 32 </width>
 		<height> 32 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> sm_artillerySupport_purple </name>
-		<x> 78 </x>
-		<y> 1381 </y>
+		<x> 991 </x>
+		<y> 1277 </y>
 		<width> 32 </width>
 		<height> 32 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> sm_artillerySupport_red </name>
-		<x> 111 </x>
-		<y> 1381 </y>
+		<x> 1024 </x>
+		<y> 1278 </y>
 		<width> 32 </width>
 		<height> 32 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> sm_artillerySupport_white </name>
-		<x> 33 </x>
-		<y> 1391 </y>
+		<x> 1057 </x>
+		<y> 1278 </y>
 		<width> 32 </width>
 		<height> 32 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> sm_berserker_green </name>
-		<x> 0 </x>
-		<y> 1392 </y>
+		<x> 1090 </x>
+		<y> 1299 </y>
 		<width> 32 </width>
 		<height> 32 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> sm_berserker_purple </name>
-		<x> 332 </x>
-		<y> 1365 </y>
+		<x> 1123 </x>
+		<y> 1299 </y>
 		<width> 32 </width>
 		<height> 32 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> sm_berserker_red </name>
-		<x> 365 </x>
-		<y> 1365 </y>
+		<x> 1156 </x>
+		<y> 1318 </y>
 		<width> 32 </width>
 		<height> 32 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> sm_berserker_white </name>
-		<x> 1622 </x>
-		<y> 1162 </y>
+		<x> 1189 </x>
+		<y> 1327 </y>
 		<width> 32 </width>
 		<height> 32 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> sm_concentration_green </name>
-		<x> 1571 </x>
-		<y> 1187 </y>
+		<x> 732 </x>
+		<y> 1284 </y>
 		<width> 32 </width>
 		<height> 32 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> sm_concentration_purple </name>
-		<x> 1461 </x>
-		<y> 1188 </y>
+		<x> 681 </x>
+		<y> 1285 </y>
 		<width> 32 </width>
 		<height> 32 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> sm_concentration_red </name>
-		<x> 1409 </x>
-		<y> 1190 </y>
+		<x> 603 </x>
+		<y> 1309 </y>
 		<width> 32 </width>
 		<height> 32 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> sm_concentration_white </name>
-		<x> 1338 </x>
-		<y> 1191 </y>
+		<x> 563 </x>
+		<y> 1326 </y>
 		<width> 32 </width>
 		<height> 32 </height>
 	</SubTexture>
@@ -645,29 +645,29 @@
 	</SubTexture>
 	<SubTexture>
 		<name> sm_fastRecharge_green </name>
-		<x> 1371 </x>
-		<y> 1191 </y>
+		<x> 636 </x>
+		<y> 1309 </y>
 		<width> 32 </width>
 		<height> 32 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> sm_fastRecharge_purple </name>
-		<x> 1286 </x>
-		<y> 1213 </y>
+		<x> 499 </x>
+		<y> 1350 </y>
 		<width> 32 </width>
 		<height> 32 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> sm_fastRecharge_red </name>
-		<x> 1225 </x>
-		<y> 1216 </y>
+		<x> 410 </x>
+		<y> 1352 </y>
 		<width> 32 </width>
 		<height> 32 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> sm_fastRecharge_white </name>
-		<x> 1159 </x>
-		<y> 1239 </y>
+		<x> 367 </x>
+		<y> 1367 </y>
 		<width> 32 </width>
 		<height> 32 </height>
 	</SubTexture>
@@ -694,225 +694,225 @@
 	</SubTexture>
 	<SubTexture>
 		<name> sm_hunter_green </name>
-		<x> 1192 </x>
-		<y> 1239 </y>
+		<x> 318 </x>
+		<y> 1368 </y>
 		<width> 32 </width>
 		<height> 32 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> sm_hunter_purple </name>
-		<x> 1099 </x>
-		<y> 1246 </y>
+		<x> 443 </x>
+		<y> 1352 </y>
 		<width> 32 </width>
 		<height> 32 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> sm_hunter_red </name>
-		<x> 1494 </x>
-		<y> 1188 </y>
+		<x> 245 </x>
+		<y> 1369 </y>
 		<width> 32 </width>
 		<height> 32 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> sm_hunter_white </name>
-		<x> 1527 </x>
-		<y> 1188 </y>
+		<x> 278 </x>
+		<y> 1369 </y>
 		<width> 32 </width>
 		<height> 32 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> sm_juggernaut_green </name>
-		<x> 944 </x>
-		<y> 1249 </y>
+		<x> 194 </x>
+		<y> 1371 </y>
 		<width> 32 </width>
 		<height> 32 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> sm_juggernaut_purple </name>
-		<x> 837 </x>
-		<y> 1250 </y>
+		<x> 153 </x>
+		<y> 1379 </y>
 		<width> 32 </width>
 		<height> 32 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> sm_juggernaut_red </name>
-		<x> 788 </x>
-		<y> 1281 </y>
+		<x> 113 </x>
+		<y> 1383 </y>
 		<width> 32 </width>
 		<height> 32 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> sm_juggernaut_white </name>
-		<x> 749 </x>
-		<y> 1306 </y>
+		<x> 73 </x>
+		<y> 1393 </y>
 		<width> 32 </width>
 		<height> 32 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> sm_march_green </name>
-		<x> 659 </x>
-		<y> 1315 </y>
+		<x> 33 </x>
+		<y> 1410 </y>
 		<width> 32 </width>
 		<height> 32 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> sm_march_purple </name>
-		<x> 692 </x>
-		<y> 1315 </y>
+		<x> 0 </x>
+		<y> 1419 </y>
 		<width> 32 </width>
 		<height> 32 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> sm_march_red </name>
-		<x> 870 </x>
-		<y> 1250 </y>
+		<x> 765 </x>
+		<y> 1284 </y>
 		<width> 32 </width>
 		<height> 32 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> sm_march_white </name>
-		<x> 903 </x>
-		<y> 1250 </y>
+		<x> 798 </x>
+		<y> 1284 </y>
 		<width> 32 </width>
 		<height> 32 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> sm_pointRecon_green </name>
-		<x> 545 </x>
-		<y> 1339 </y>
+		<x> 831 </x>
+		<y> 1286 </y>
 		<width> 32 </width>
 		<height> 32 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> sm_pointRecon_purple </name>
-		<x> 487 </x>
-		<y> 1356 </y>
+		<x> 864 </x>
+		<y> 1286 </y>
 		<width> 32 </width>
 		<height> 32 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> sm_pointRecon_red </name>
-		<x> 452 </x>
-		<y> 1380 </y>
+		<x> 897 </x>
+		<y> 1286 </y>
 		<width> 32 </width>
 		<height> 32 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> sm_pointRecon_white </name>
-		<x> 398 </x>
-		<y> 1382 </y>
+		<x> 930 </x>
+		<y> 1310 </y>
 		<width> 32 </width>
 		<height> 32 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> sm_riskyAttackHeal_green </name>
-		<x> 578 </x>
-		<y> 1339 </y>
+		<x> 963 </x>
+		<y> 1310 </y>
 		<width> 32 </width>
 		<height> 32 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> sm_riskyAttackHeal_purple </name>
-		<x> 611 </x>
-		<y> 1339 </y>
+		<x> 996 </x>
+		<y> 1311 </y>
 		<width> 32 </width>
 		<height> 32 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> sm_riskyAttackHeal_red </name>
-		<x> 280 </x>
-		<y> 1398 </y>
+		<x> 1029 </x>
+		<y> 1311 </y>
 		<width> 32 </width>
 		<height> 32 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> sm_riskyAttackHeal_white </name>
-		<x> 234 </x>
-		<y> 1399 </y>
+		<x> 1062 </x>
+		<y> 1332 </y>
 		<width> 32 </width>
 		<height> 32 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> sm_riskyAttack_green </name>
-		<x> 177 </x>
-		<y> 1401 </y>
+		<x> 1095 </x>
+		<y> 1332 </y>
 		<width> 32 </width>
 		<height> 32 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> sm_riskyAttack_purple </name>
-		<x> 144 </x>
-		<y> 1411 </y>
+		<x> 1128 </x>
+		<y> 1351 </y>
 		<width> 32 </width>
 		<height> 32 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> sm_riskyAttack_red </name>
-		<x> 66 </x>
-		<y> 1414 </y>
+		<x> 714 </x>
+		<y> 1317 </y>
 		<width> 32 </width>
 		<height> 32 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> sm_riskyAttack_white </name>
-		<x> 33 </x>
-		<y> 1424 </y>
+		<x> 669 </x>
+		<y> 1318 </y>
 		<width> 32 </width>
 		<height> 32 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> sm_sniper_green </name>
-		<x> 0 </x>
-		<y> 1425 </y>
+		<x> 596 </x>
+		<y> 1342 </y>
 		<width> 32 </width>
 		<height> 32 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> sm_sniper_purple </name>
-		<x> 99 </x>
-		<y> 1414 </y>
+		<x> 629 </x>
+		<y> 1342 </y>
 		<width> 32 </width>
 		<height> 32 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> sm_sniper_red </name>
-		<x> 313 </x>
-		<y> 1398 </y>
+		<x> 532 </x>
+		<y> 1359 </y>
 		<width> 32 </width>
 		<height> 32 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> sm_sniper_white </name>
-		<x> 346 </x>
-		<y> 1398 </y>
+		<x> 476 </x>
+		<y> 1383 </y>
 		<width> 32 </width>
 		<height> 32 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> sm_sureShot_green </name>
-		<x> 977 </x>
-		<y> 1249 </y>
+		<x> 400 </x>
+		<y> 1385 </y>
 		<width> 32 </width>
 		<height> 32 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> sm_sureShot_purple </name>
-		<x> 801 </x>
-		<y> 1097 </y>
+		<x> 351 </x>
+		<y> 1400 </y>
 		<width> 31 </width>
 		<height> 31 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> sm_sureShot_red </name>
-		<x> 1043 </x>
-		<y> 1249 </y>
+		<x> 311 </x>
+		<y> 1401 </y>
 		<width> 31 </width>
 		<height> 31 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> sm_sureShot_white </name>
-		<x> 1010 </x>
-		<y> 1249 </y>
+		<x> 433 </x>
+		<y> 1385 </y>
 		<width> 32 </width>
 		<height> 32 </height>
 	</SubTexture>
@@ -939,15 +939,15 @@
 	</SubTexture>
 	<SubTexture>
 		<name> vehicleLevel_2 </name>
-		<x> 291 </x>
-		<y> 365 </y>
+		<x> 400 </x>
+		<y> 1367 </y>
 		<width> 8 </width>
 		<height> 11 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> vehicleLevel_3 </name>
-		<x> 1287 </x>
-		<y> 970 </y>
+		<x> 603 </x>
+		<y> 1293 </y>
 		<width> 11 </width>
 		<height> 11 </height>
 	</SubTexture>
@@ -960,15 +960,15 @@
 	</SubTexture>
 	<SubTexture>
 		<name> vehicleLevel_5 </name>
-		<x> 335 </x>
-		<y> 265 </y>
+		<x> 291 </x>
+		<y> 365 </y>
 		<width> 9 </width>
 		<height> 11 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> vehicleLevel_6 </name>
-		<x> 545 </x>
-		<y> 1323 </y>
+		<x> 1299 </x>
+		<y> 945 </y>
 		<width> 12 </width>
 		<height> 11 </height>
 	</SubTexture>
@@ -988,302 +988,302 @@
 	</SubTexture>
 	<SubTexture>
 		<name> vehicleLevel_9 </name>
-		<x> 1181 </x>
-		<y> 1196 </y>
+		<x> 212 </x>
+		<y> 1270 </y>
 		<width> 12 </width>
 		<height> 11 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> blue_AT-SPG </name>
-		<x> 1404 </x>
-		<y> 986 </y>
+		<x> 147 </x>
+		<y> 1197 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> blue_heavyAT-SPG </name>
-		<x> 1339 </x>
-		<y> 989 </y>
+		<x> 92 </x>
+		<y> 1207 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> blue_heavySPG </name>
-		<x> 1271 </x>
-		<y> 1013 </y>
+		<x> 41 </x>
+		<y> 1224 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> blue_heavyTank </name>
-		<x> 1203 </x>
-		<y> 1020 </y>
+		<x> 0 </x>
+		<y> 1233 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> blue_lightTank </name>
-		<x> 1138 </x>
-		<y> 1022 </y>
+		<x> 410 </x>
+		<y> 1181 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> blue_mediumAT-SPG </name>
-		<x> 966 </x>
-		<y> 1022 </y>
+		<x> 187 </x>
+		<y> 1219 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> blue_mediumSPG </name>
-		<x> 1006 </x>
-		<y> 1022 </y>
+		<x> 132 </x>
+		<y> 1248 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> blue_mediumTank </name>
-		<x> 1046 </x>
-		<y> 1072 </y>
+		<x> 81 </x>
+		<y> 1258 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> blue_SPG </name>
-		<x> 1086 </x>
-		<y> 1072 </y>
+		<x> 40 </x>
+		<y> 1275 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> dynamic </name>
-		<x> 855 </x>
-		<y> 1045 </y>
+		<x> 0 </x>
+		<y> 1284 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> gold_AT-SPG </name>
-		<x> 793 </x>
-		<y> 1046 </y>
+		<x> 1653 </x>
+		<y> 936 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> gold_AT-SPG_elite </name>
-		<x> 895 </x>
-		<y> 1045 </y>
+		<x> 1693 </x>
+		<y> 936 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> gold_boss </name>
-		<x> 935 </x>
-		<y> 1073 </y>
+		<x> 1733 </x>
+		<y> 936 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> gold_heavyAT_SPG </name>
-		<x> 975 </x>
-		<y> 1073 </y>
+		<x> 1773 </x>
+		<y> 936 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> gold_heavySPG </name>
-		<x> 833 </x>
-		<y> 1096 </y>
+		<x> 1813 </x>
+		<y> 936 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> gold_heavyTank </name>
-		<x> 873 </x>
-		<y> 1096 </y>
+		<x> 1853 </x>
+		<y> 937 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> gold_heavyTank_elite </name>
-		<x> 681 </x>
-		<y> 1070 </y>
+		<x> 1893 </x>
+		<y> 937 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> gold_lightTank </name>
-		<x> 619 </x>
-		<y> 1087 </y>
+		<x> 1933 </x>
+		<y> 937 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> gold_lightTank_elite </name>
-		<x> 559 </x>
-		<y> 1111 </y>
+		<x> 1973 </x>
+		<y> 937 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> gold_mediumAT-SPG </name>
-		<x> 498 </x>
-		<y> 1113 </y>
+		<x> 1653 </x>
+		<y> 987 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> gold_mediumSPG </name>
-		<x> 721 </x>
-		<y> 1070 </y>
+		<x> 1573 </x>
+		<y> 988 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> gold_mediumTank </name>
-		<x> 761 </x>
-		<y> 1097 </y>
+		<x> 1613 </x>
+		<y> 988 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> gold_mediumTank_elite </name>
-		<x> 659 </x>
-		<y> 1121 </y>
+		<x> 1513 </x>
+		<y> 1013 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> gold_SPG </name>
-		<x> 599 </x>
-		<y> 1138 </y>
+		<x> 1444 </x>
+		<y> 1015 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> gold_SPG_elite </name>
-		<x> 538 </x>
-		<y> 1162 </y>
+		<x> 1379 </x>
+		<y> 1038 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> green_AT-SPG </name>
-		<x> 699 </x>
-		<y> 1121 </y>
+		<x> 1311 </x>
+		<y> 1041 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> green_AT-SPG_elite </name>
-		<x> 388 </x>
-		<y> 1129 </y>
+		<x> 1271 </x>
+		<y> 1065 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> green_boss </name>
-		<x> 330 </x>
-		<y> 1130 </y>
+		<x> 1191 </x>
+		<y> 1072 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> green_heavyAT-SPG </name>
-		<x> 273 </x>
-		<y> 1132 </y>
+		<x> 1231 </x>
+		<y> 1072 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> green_heavySPG </name>
-		<x> 217 </x>
-		<y> 1142 </y>
+		<x> 1087 </x>
+		<y> 1101 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> green_heavyTank </name>
-		<x> 161 </x>
-		<y> 1145 </y>
+		<x> 1127 </x>
+		<y> 1101 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> green_heavyTank_elite </name>
-		<x> 106 </x>
-		<y> 1155 </y>
+		<x> 1015 </x>
+		<y> 1125 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> green_lightTank </name>
-		<x> 52 </x>
-		<y> 1172 </y>
+		<x> 913 </x>
+		<y> 1126 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> green_lightTank_elite </name>
-		<x> 0 </x>
-		<y> 1181 </y>
+		<x> 953 </x>
+		<y> 1126 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> green_mediumAT-SPG </name>
-		<x> 428 </x>
-		<y> 1129 </y>
+		<x> 801 </x>
+		<y> 1149 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> green_mediumSPG </name>
-		<x> 468 </x>
-		<y> 1164 </y>
+		<x> 739 </x>
+		<y> 1150 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> green_mediumTank </name>
-		<x> 370 </x>
-		<y> 1180 </y>
+		<x> 841 </x>
+		<y> 1149 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> green_mediumTank_elite </name>
-		<x> 313 </x>
-		<y> 1181 </y>
+		<x> 640 </x>
+		<y> 1174 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> green_SPG </name>
-		<x> 257 </x>
-		<y> 1183 </y>
+		<x> 579 </x>
+		<y> 1191 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> green_SPG_elite </name>
-		<x> 201 </x>
-		<y> 1193 </y>
+		<x> 535 </x>
+		<y> 1215 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> purple_AT-SPG </name>
-		<x> 146 </x>
-		<y> 1196 </y>
+		<x> 680 </x>
+		<y> 1174 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> purple_AT-SPG_elite </name>
-		<x> 92 </x>
-		<y> 1206 </y>
+		<x> 450 </x>
+		<y> 1217 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
@@ -1296,15 +1296,15 @@
 	</SubTexture>
 	<SubTexture>
 		<name> purple_boss </name>
-		<x> 40 </x>
-		<y> 1223 </y>
+		<x> 410 </x>
+		<y> 1232 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> purple_heavyAT-SPG </name>
-		<x> 0 </x>
-		<y> 1232 </y>
+		<x> 490 </x>
+		<y> 1217 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
@@ -1317,8 +1317,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> purple_heavySPG </name>
-		<x> 410 </x>
-		<y> 1180 </y>
+		<x> 353 </x>
+		<y> 1233 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
@@ -1331,15 +1331,15 @@
 	</SubTexture>
 	<SubTexture>
 		<name> purple_heavyTank </name>
-		<x> 1612 </x>
-		<y> 936 </y>
+		<x> 297 </x>
+		<y> 1234 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> purple_heavyTank_elite </name>
-		<x> 1560 </x>
-		<y> 961 </y>
+		<x> 227 </x>
+		<y> 1236 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
@@ -1352,15 +1352,15 @@
 	</SubTexture>
 	<SubTexture>
 		<name> purple_lightTank </name>
-		<x> 1499 </x>
-		<y> 989 </y>
+		<x> 172 </x>
+		<y> 1270 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> purple_lightTank_elite </name>
-		<x> 1444 </x>
-		<y> 1014 </y>
+		<x> 121 </x>
+		<y> 1299 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
@@ -1373,8 +1373,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> purple_mediumAT-SPG </name>
-		<x> 1379 </x>
-		<y> 1037 </y>
+		<x> 80 </x>
+		<y> 1309 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
@@ -1387,8 +1387,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> purple_mediumSPG </name>
-		<x> 1311 </x>
-		<y> 1040 </y>
+		<x> 40 </x>
+		<y> 1326 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
@@ -1401,15 +1401,15 @@
 	</SubTexture>
 	<SubTexture>
 		<name> purple_mediumTank </name>
-		<x> 1243 </x>
-		<y> 1064 </y>
+		<x> 0 </x>
+		<y> 1335 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> purple_mediumTank_elite </name>
-		<x> 1178 </x>
-		<y> 1071 </y>
+		<x> 1693 </x>
+		<y> 987 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
@@ -1422,15 +1422,15 @@
 	</SubTexture>
 	<SubTexture>
 		<name> purple_SPG </name>
-		<x> 1126 </x>
-		<y> 1073 </y>
+		<x> 1733 </x>
+		<y> 987 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> purple_SPG_elite </name>
-		<x> 1015 </x>
-		<y> 1123 </y>
+		<x> 1773 </x>
+		<y> 987 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
@@ -1443,15 +1443,15 @@
 	</SubTexture>
 	<SubTexture>
 		<name> red_AT-SPG </name>
-		<x> 1055 </x>
-		<y> 1123 </y>
+		<x> 1813 </x>
+		<y> 987 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> red_AT-SPG_elite </name>
-		<x> 913 </x>
-		<y> 1124 </y>
+		<x> 1853 </x>
+		<y> 988 </y>
 		<width> 35 </width>
 		<height> 50 </height>
 	</SubTexture>
@@ -1464,15 +1464,15 @@
 	</SubTexture>
 	<SubTexture>
 		<name> red_boss </name>
-		<x> 949 </x>
-		<y> 1124 </y>
+		<x> 1889 </x>
+		<y> 988 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> red_heavyAT-SPG </name>
-		<x> 801 </x>
-		<y> 1147 </y>
+		<x> 1929 </x>
+		<y> 988 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
@@ -1485,8 +1485,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> red_heavySPG </name>
-		<x> 739 </x>
-		<y> 1148 </y>
+		<x> 1969 </x>
+		<y> 988 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
@@ -1499,15 +1499,15 @@
 	</SubTexture>
 	<SubTexture>
 		<name> red_heavyTank </name>
-		<x> 841 </x>
-		<y> 1147 </y>
+		<x> 1653 </x>
+		<y> 1038 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> red_heavyTank_elite </name>
-		<x> 639 </x>
-		<y> 1172 </y>
+		<x> 1553 </x>
+		<y> 1039 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
@@ -1520,15 +1520,15 @@
 	</SubTexture>
 	<SubTexture>
 		<name> red_lightTank </name>
-		<x> 578 </x>
-		<y> 1189 </y>
+		<x> 1593 </x>
+		<y> 1039 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> red_lightTank_elite </name>
-		<x> 679 </x>
-		<y> 1172 </y>
+		<x> 1484 </x>
+		<y> 1064 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
@@ -1541,8 +1541,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> red_mediumAT-SPG </name>
-		<x> 508 </x>
-		<y> 1213 </y>
+		<x> 1419 </x>
+		<y> 1066 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
@@ -1555,8 +1555,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> red_mediumSPG </name>
-		<x> 450 </x>
-		<y> 1215 </y>
+		<x> 1351 </x>
+		<y> 1089 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
@@ -1569,15 +1569,15 @@
 	</SubTexture>
 	<SubTexture>
 		<name> red_mediumTank </name>
-		<x> 353 </x>
-		<y> 1231 </y>
+		<x> 1311 </x>
+		<y> 1092 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> red_mediumTank_elite </name>
-		<x> 297 </x>
-		<y> 1232 </y>
+		<x> 1271 </x>
+		<y> 1116 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
@@ -1590,15 +1590,15 @@
 	</SubTexture>
 	<SubTexture>
 		<name> red_SPG </name>
-		<x> 241 </x>
-		<y> 1234 </y>
+		<x> 1167 </x>
+		<y> 1123 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> red_SPG_elite </name>
-		<x> 186 </x>
-		<y> 1244 </y>
+		<x> 1207 </x>
+		<y> 1123 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
@@ -1611,127 +1611,127 @@
 	</SubTexture>
 	<SubTexture>
 		<name> white_heavyTank </name>
-		<x> 132 </x>
-		<y> 1247 </y>
+		<x> 1055 </x>
+		<y> 1152 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> white_lightTank </name>
-		<x> 80 </x>
-		<y> 1257 </y>
+		<x> 993 </x>
+		<y> 1176 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> white_mediumTank </name>
-		<x> 40 </x>
-		<y> 1274 </y>
+		<x> 1095 </x>
+		<y> 1152 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> yellow_AT-SPG </name>
-		<x> 0 </x>
-		<y> 1283 </y>
+		<x> 881 </x>
+		<y> 1177 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> yellow_AT-SPG_elite </name>
-		<x> 393 </x>
-		<y> 1231 </y>
+		<x> 921 </x>
+		<y> 1177 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> yellow_boos </name>
-		<x> 1652 </x>
-		<y> 936 </y>
+		<x> 779 </x>
+		<y> 1200 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> yellow_heavyAT-SPG </name>
-		<x> 1692 </x>
-		<y> 936 </y>
+		<x> 720 </x>
+		<y> 1201 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> yellow_heavySPG </name>
-		<x> 1732 </x>
-		<y> 936 </y>
+		<x> 819 </x>
+		<y> 1200 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> yellow_heavyTank </name>
-		<x> 1772 </x>
-		<y> 936 </y>
+		<x> 619 </x>
+		<y> 1225 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> yellow_heavyTank_elite </name>
-		<x> 1812 </x>
-		<y> 936 </y>
+		<x> 575 </x>
+		<y> 1242 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> yellow_lightTank </name>
-		<x> 1852 </x>
-		<y> 937 </y>
+		<x> 530 </x>
+		<y> 1266 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> yellow_lightTank_elite </name>
-		<x> 1892 </x>
-		<y> 937 </y>
+		<x> 659 </x>
+		<y> 1225 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> yellow_mediumAT-SPG </name>
-		<x> 1932 </x>
-		<y> 937 </y>
+		<x> 450 </x>
+		<y> 1268 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> yellow_mediumSPG </name>
-		<x> 1972 </x>
-		<y> 937 </y>
+		<x> 490 </x>
+		<y> 1268 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> yellow_mediumTank </name>
-		<x> 1600 </x>
-		<y> 987 </y>
+		<x> 393 </x>
+		<y> 1283 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> yellow_mediumTank_elite </name>
-		<x> 1539 </x>
-		<y> 1012 </y>
+		<x> 337 </x>
+		<y> 1284 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> yellow_SPG </name>
-		<x> 1484 </x>
-		<y> 1040 </y>
+		<x> 267 </x>
+		<y> 1285 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> yellow_SPG_elite </name>
-		<x> 1419 </x>
-		<y> 1065 </y>
+		<x> 212 </x>
+		<y> 1287 </y>
 		<width> 39 </width>
 		<height> 50 </height>
 	</SubTexture>
@@ -1786,15 +1786,15 @@
 	</SubTexture>
 	<SubTexture>
 		<name> china-Ch06_Renault_NC31 </name>
-		<x> 490 </x>
-		<y> 1264 </y>
+		<x> 1736 </x>
+		<y> 1212 </y>
 		<width> 47 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> china-Ch07_Vickers_MkE_Type_BT26 </name>
-		<x> 433 </x>
-		<y> 1266 </y>
+		<x> 1574 </x>
+		<y> 1213 </y>
 		<width> 47 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -1807,8 +1807,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> china-Ch09_M5 </name>
-		<x> 1607 </x>
-		<y> 1137 </y>
+		<x> 1910 </x>
+		<y> 1241 </y>
 		<width> 46 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -2010,15 +2010,15 @@
 	</SubTexture>
 	<SubTexture>
 		<name> china-Ch30_T-26G_FT </name>
-		<x> 1575 </x>
-		<y> 1063 </y>
+		<x> 1162 </x>
+		<y> 1174 </y>
 		<width> 49 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> china-Ch31_M3G_FT </name>
-		<x> 1351 </x>
-		<y> 1088 </y>
+		<x> 161 </x>
+		<y> 1321 </y>
 		<width> 50 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -2318,8 +2318,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> czech-Cz03_LT_vz35 </name>
-		<x> 1283 </x>
-		<y> 1091 </y>
+		<x> 1693 </x>
+		<y> 1038 </y>
 		<width> 50 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -2339,8 +2339,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> czech-Cz06_Kolohousenka </name>
-		<x> 337 </x>
-		<y> 1282 </y>
+		<x> 1622 </x>
+		<y> 1213 </y>
 		<width> 47 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -2367,8 +2367,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> czech-Cz10_LT_vz38 </name>
-		<x> 0 </x>
-		<y> 1334 </y>
+		<x> 988 </x>
+		<y> 1227 </y>
 		<width> 44 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -2577,8 +2577,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> france-F01_RenaultFT </name>
-		<x> 1681 </x>
-		<y> 1062 </y>
+		<x> 1162 </x>
+		<y> 1199 </y>
 		<width> 49 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -2696,15 +2696,15 @@
 	</SubTexture>
 	<SubTexture>
 		<name> france-F110_Lynx_6x6 </name>
-		<x> 1218 </x>
-		<y> 1115 </y>
+		<x> 1744 </x>
+		<y> 1038 </y>
 		<width> 50 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> france-F111_AM39_Gendron_Somua </name>
-		<x> 768 </x>
-		<y> 1223 </y>
+		<x> 1383 </x>
+		<y> 1240 </y>
 		<width> 45 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -2801,15 +2801,15 @@
 	</SubTexture>
 	<SubTexture>
 		<name> france-F124_AMX_13FL11 </name>
-		<x> 1166 </x>
-		<y> 1122 </y>
+		<x> 1795 </x>
+		<y> 1038 </y>
 		<width> 50 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> france-F127_AMX_ELC_901 </name>
-		<x> 1095 </x>
-		<y> 1124 </y>
+		<x> 1846 </x>
+		<y> 1039 </y>
 		<width> 50 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -2829,8 +2829,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> france-F12_Hotchkiss_H35 </name>
-		<x> 716 </x>
-		<y> 1224 </y>
+		<x> 1308 </x>
+		<y> 1242 </y>
 		<width> 45 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -2871,8 +2871,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> france-F138_Renault_R35_FCM_36 </name>
-		<x> 814 </x>
-		<y> 1223 </y>
+		<x> 1229 </x>
+		<y> 1244 </y>
 		<width> 45 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -2899,22 +2899,22 @@
 	</SubTexture>
 	<SubTexture>
 		<name> france-F16_AMX_13_75 </name>
-		<x> 1334 </x>
-		<y> 1113 </y>
+		<x> 1693 </x>
+		<y> 1063 </y>
 		<width> 50 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> france-F17_AMX_13_90 </name>
-		<x> 1269 </x>
-		<y> 1116 </y>
+		<x> 1744 </x>
+		<y> 1063 </y>
 		<width> 50 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> france-F17_AMX_13_90_IGR </name>
-		<x> 1217 </x>
-		<y> 1140 </y>
+		<x> 1795 </x>
+		<y> 1063 </y>
 		<width> 50 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -2948,15 +2948,15 @@
 	</SubTexture>
 	<SubTexture>
 		<name> france-F20_RenaultBS </name>
-		<x> 1731 </x>
-		<y> 1062 </y>
+		<x> 1033 </x>
+		<y> 1203 </y>
 		<width> 49 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> france-F21_Lorraine39_L_AM </name>
-		<x> 385 </x>
-		<y> 1282 </y>
+		<x> 1834 </x>
+		<y> 1189 </y>
 		<width> 47 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -2997,8 +2997,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> france-F27_FCM_36Pak40 </name>
-		<x> 281 </x>
-		<y> 1283 </y>
+		<x> 1882 </x>
+		<y> 1189 </y>
 		<width> 47 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -3018,8 +3018,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> france-F30_RenaultFT_AC </name>
-		<x> 1781 </x>
-		<y> 1062 </y>
+		<x> 1083 </x>
+		<y> 1203 </y>
 		<width> 49 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -3102,15 +3102,15 @@
 	</SubTexture>
 	<SubTexture>
 		<name> france-F42_AMR_35 </name>
-		<x> 226 </x>
-		<y> 1285 </y>
+		<x> 1930 </x>
+		<y> 1191 </y>
 		<width> 47 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> france-F43_AMC_35_SH </name>
-		<x> 172 </x>
-		<y> 1295 </y>
+		<x> 1978 </x>
+		<y> 1191 </y>
 		<width> 47 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -3123,36 +3123,36 @@
 	</SubTexture>
 	<SubTexture>
 		<name> france-F49_RenaultR35 </name>
-		<x> 1483 </x>
-		<y> 1138 </y>
+		<x> 1957 </x>
+		<y> 1241 </y>
 		<width> 46 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> france-F50_FCM36_20t </name>
-		<x> 1675 </x>
-		<y> 1087 </y>
+		<x> 1863 </x>
+		<y> 1164 </y>
 		<width> 48 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> france-F52_RenaultUE57 </name>
-		<x> 126 </x>
-		<y> 1323 </y>
+		<x> 988 </x>
+		<y> 1252 </y>
 		<width> 41 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> france-F62_ELC_AMX </name>
-		<x> 120 </x>
-		<y> 1298 </y>
+		<x> 1784 </x>
+		<y> 1214 </y>
 		<width> 47 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> france-F62_ELC_AMX_IGR </name>
-		<x> 1038 </x>
-		<y> 1174 </y>
+		<x> 1832 </x>
+		<y> 1214 </y>
 		<width> 47 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -3186,8 +3186,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> france-F66_AMX_Ob_Am105 </name>
-		<x> 1146 </x>
-		<y> 1147 </y>
+		<x> 1897 </x>
+		<y> 1039 </y>
 		<width> 50 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -3207,8 +3207,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> france-F69_AMX13_57_100 </name>
-		<x> 1095 </x>
-		<y> 1149 </y>
+		<x> 1948 </x>
+		<y> 1039 </y>
 		<width> 50 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -3368,15 +3368,15 @@
 	</SubTexture>
 	<SubTexture>
 		<name> france-F97_ELC_EVEN_90 </name>
-		<x> 1057 </x>
-		<y> 1224 </y>
+		<x> 1030 </x>
+		<y> 1253 </y>
 		<width> 41 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> france-F97_ELC_EVEN_90_FL </name>
-		<x> 860 </x>
-		<y> 1225 </y>
+		<x> 1072 </x>
+		<y> 1253 </y>
 		<width> 41 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -3452,8 +3452,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> germany-G06_PzII </name>
-		<x> 1640 </x>
-		<y> 987 </y>
+		<x> 1846 </x>
+		<y> 1064 </y>
 		<width> 50 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -3466,22 +3466,22 @@
 	</SubTexture>
 	<SubTexture>
 		<name> germany-G08_Pz38t </name>
-		<x> 1724 </x>
-		<y> 1087 </y>
+		<x> 1912 </x>
+		<y> 1164 </y>
 		<width> 48 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> germany-G09_Hetzer </name>
-		<x> 1831 </x>
-		<y> 1063 </y>
+		<x> 1830 </x>
+		<y> 1139 </y>
 		<width> 49 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> germany-G09_Hetzer_MapsTraining_Dummy_ATSPG_1 </name>
-		<x> 1881 </x>
-		<y> 1063 </y>
+		<x> 1880 </x>
+		<y> 1139 </y>
 		<width> 49 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -3564,29 +3564,29 @@
 	</SubTexture>
 	<SubTexture>
 		<name> germany-G101_StuG_III </name>
-		<x> 1691 </x>
-		<y> 987 </y>
+		<x> 1693 </x>
+		<y> 1088 </y>
 		<width> 50 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> germany-G1023_Grille_StoryModeStealth </name>
-		<x> 1773 </x>
-		<y> 1087 </y>
+		<x> 1961 </x>
+		<y> 1166 </y>
 		<width> 48 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> germany-G1025_PzII_Luchs_StoryMode </name>
-		<x> 1026 </x>
-		<y> 1199 </y>
+		<x> 1033 </x>
+		<y> 1228 </y>
 		<width> 44 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> germany-G1025_PzII_Luchs_StoryModeStealth </name>
-		<x> 1071 </x>
-		<y> 1199 </y>
+		<x> 1078 </x>
+		<y> 1228 </y>
 		<width> 44 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -3599,8 +3599,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> germany-G102_Pz_III </name>
-		<x> 1742 </x>
-		<y> 987 </y>
+		<x> 1633 </x>
+		<y> 1089 </y>
 		<width> 50 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -3634,8 +3634,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> germany-G1043_PzII_Luchs_StoryMode </name>
-		<x> 1654 </x>
-		<y> 1137 </y>
+		<x> 1123 </x>
+		<y> 1249 </y>
 		<width> 44 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -3739,8 +3739,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> germany-G113_SP_I_C </name>
-		<x> 1931 </x>
-		<y> 1063 </y>
+		<x> 1930 </x>
+		<y> 1139 </y>
 		<width> 49 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -3781,8 +3781,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> germany-G117_Toldi_III </name>
-		<x> 1822 </x>
-		<y> 1088 </y>
+		<x> 1442 </x>
+		<y> 1140 </y>
 		<width> 48 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -3823,8 +3823,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> germany-G11_Bison_I </name>
-		<x> 1116 </x>
-		<y> 1221 </y>
+		<x> 859 </x>
+		<y> 1228 </y>
 		<width> 42 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -3879,8 +3879,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> germany-G12_Ltraktor </name>
-		<x> 971 </x>
-		<y> 1224 </y>
+		<x> 902 </x>
+		<y> 1228 </y>
 		<width> 42 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -3977,8 +3977,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> germany-G151_Pz_Sfl_IC </name>
-		<x> 1793 </x>
-		<y> 987 </y>
+		<x> 1744 </x>
+		<y> 1088 </y>
 		<width> 50 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -4019,8 +4019,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> germany-G160_Pz_Kpfw_35_R_mit_T_26_Turm </name>
-		<x> 1871 </x>
-		<y> 1088 </y>
+		<x> 1378 </x>
+		<y> 1142 </y>
 		<width> 48 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -4180,8 +4180,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> germany-G179_Straussler_V4 </name>
-		<x> 1844 </x>
-		<y> 988 </y>
+		<x> 1795 </x>
+		<y> 1088 </y>
 		<width> 50 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -4257,8 +4257,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> germany-G21_PanzerJager_I </name>
-		<x> 1086 </x>
-		<y> 1174 </y>
+		<x> 1880 </x>
+		<y> 1214 </y>
 		<width> 47 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -4271,8 +4271,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> germany-G23_Grille </name>
-		<x> 1920 </x>
-		<y> 1088 </y>
+		<x> 1491 </x>
+		<y> 1140 </y>
 		<width> 48 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -4292,8 +4292,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> germany-G25_PzII_Luchs </name>
-		<x> 1699 </x>
-		<y> 1137 </y>
+		<x> 1168 </x>
+		<y> 1268 </y>
 		<width> 44 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -4320,8 +4320,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> germany-G28_PzIII_IV </name>
-		<x> 1969 </x>
-		<y> 1088 </y>
+		<x> 1540 </x>
+		<y> 1140 </y>
 		<width> 48 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -4355,8 +4355,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> germany-G33_H39_captured </name>
-		<x> 597 </x>
-		<y> 1248 </y>
+		<x> 1429 </x>
+		<y> 1240 </y>
 		<width> 45 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -4376,8 +4376,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> germany-G36_PzII_J </name>
-		<x> 1981 </x>
-		<y> 1063 </y>
+		<x> 1980 </x>
+		<y> 1141 </y>
 		<width> 49 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -4404,8 +4404,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> germany-G39_Marder_III </name>
-		<x> 1624 </x>
-		<y> 1112 </y>
+		<x> 1589 </x>
+		<y> 1164 </y>
 		<width> 48 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -4516,8 +4516,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> germany-G50_T-15 </name>
-		<x> 1509 </x>
-		<y> 1113 </y>
+		<x> 1427 </x>
+		<y> 1165 </y>
 		<width> 48 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -4537,15 +4537,15 @@
 	</SubTexture>
 	<SubTexture>
 		<name> germany-G52_Pz38_NA </name>
-		<x> 1673 </x>
-		<y> 1112 </y>
+		<x> 1670 </x>
+		<y> 1237 </y>
 		<width> 47 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> germany-G53_PzI </name>
-		<x> 538 </x>
-		<y> 1265 </y>
+		<x> 1475 </x>
+		<y> 1240 </y>
 		<width> 45 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -4614,8 +4614,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> germany-G63_PzI_ausf_C </name>
-		<x> 1242 </x>
-		<y> 1191 </y>
+		<x> 2004 </x>
+		<y> 1241 </y>
 		<width> 43 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -4712,8 +4712,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> germany-G77_PzIV_Schmalturm </name>
-		<x> 1895 </x>
-		<y> 988 </y>
+		<x> 1524 </x>
+		<y> 1090 </y>
 		<width> 50 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -4761,8 +4761,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> germany-G82_Pz_II_AusfG </name>
-		<x> 1434 </x>
-		<y> 1140 </y>
+		<x> 1400 </x>
+		<y> 1215 </y>
 		<width> 46 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -4852,8 +4852,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> germany-G93_GW_Mk_VIe </name>
-		<x> 1744 </x>
-		<y> 1137 </y>
+		<x> 1213 </x>
+		<y> 1269 </y>
 		<width> 44 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -4922,29 +4922,29 @@
 	</SubTexture>
 	<SubTexture>
 		<name> italy-It03_M15_42 </name>
-		<x> 1946 </x>
-		<y> 988 </y>
+		<x> 1575 </x>
+		<y> 1090 </y>
 		<width> 50 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> italy-It04_Fiat_3000 </name>
-		<x> 1369 </x>
-		<y> 1141 </y>
+		<x> 1336 </x>
+		<y> 1217 </y>
 		<width> 46 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> italy-It05_Carro_L6_40 </name>
-		<x> 1181 </x>
-		<y> 1214 </y>
+		<x> 2000 </x>
+		<y> 1266 </y>
 		<width> 43 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> italy-It06_M14_41 </name>
-		<x> 1997 </x>
-		<y> 988 </y>
+		<x> 1897 </x>
+		<y> 1064 </y>
 		<width> 50 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -5174,8 +5174,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> japan-J01_NC27 </name>
-		<x> 1721 </x>
-		<y> 1112 </y>
+		<x> 1718 </x>
+		<y> 1237 </y>
 		<width> 47 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -5188,29 +5188,29 @@
 	</SubTexture>
 	<SubTexture>
 		<name> japan-J03_Ha_Go </name>
-		<x> 1317 </x>
-		<y> 1163 </y>
+		<x> 1261 </x>
+		<y> 1219 </y>
 		<width> 46 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> japan-J04_Ke_Ni </name>
-		<x> 481 </x>
-		<y> 1289 </y>
+		<x> 1521 </x>
+		<y> 1263 </y>
 		<width> 45 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> japan-J05_Ke_Ni_B </name>
-		<x> 1246 </x>
-		<y> 1166 </y>
+		<x> 1182 </x>
+		<y> 1243 </y>
 		<width> 46 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> japan-J06_Ke_Ho </name>
-		<x> 1769 </x>
-		<y> 1112 </y>
+		<x> 1928 </x>
+		<y> 1216 </y>
 		<width> 47 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -5608,8 +5608,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> poland-Pl09_7TP </name>
-		<x> 1640 </x>
-		<y> 1012 </y>
+		<x> 1948 </x>
+		<y> 1064 </y>
 		<width> 50 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -5643,8 +5643,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> poland-Pl14_4TP </name>
-		<x> 1789 </x>
-		<y> 1138 </y>
+		<x> 1492 </x>
+		<y> 1288 </y>
 		<width> 44 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -5853,8 +5853,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> sweden-S03_Strv_M38 </name>
-		<x> 1625 </x>
-		<y> 1087 </y>
+		<x> 1663 </x>
+		<y> 1163 </y>
 		<width> 49 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -5888,15 +5888,15 @@
 	</SubTexture>
 	<SubTexture>
 		<name> sweden-S08_Ikv_65_Alt_2 </name>
-		<x> 1558 </x>
-		<y> 1113 </y>
+		<x> 1378 </x>
+		<y> 1167 </y>
 		<width> 48 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> sweden-S09_L_120_TD </name>
-		<x> 433 </x>
-		<y> 1291 </y>
+		<x> 1567 </x>
+		<y> 1263 </y>
 		<width> 45 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -5937,8 +5937,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> sweden-S14_Ikv_103 </name>
-		<x> 1385 </x>
-		<y> 1116 </y>
+		<x> 1476 </x>
+		<y> 1165 </y>
 		<width> 48 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -5951,8 +5951,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> sweden-S15_L_60 </name>
-		<x> 1320 </x>
-		<y> 1138 </y>
+		<x> 1525 </x>
+		<y> 1165 </y>
 		<width> 48 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -5986,8 +5986,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> sweden-S19_Sav_M43 </name>
-		<x> 1817 </x>
-		<y> 1113 </y>
+		<x> 1976 </x>
+		<y> 1216 </y>
 		<width> 47 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -6105,8 +6105,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> sweden-S34_Lago_M38 </name>
-		<x> 1524 </x>
-		<y> 1088 </y>
+		<x> 1713 </x>
+		<y> 1163 </y>
 		<width> 49 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -6126,8 +6126,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> sweden-S39_Strv_m31 </name>
-		<x> 1691 </x>
-		<y> 1012 </y>
+		<x> 1846 </x>
+		<y> 1089 </y>
 		<width> 50 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -6196,8 +6196,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> uk-GB100_Manticore </name>
-		<x> 1574 </x>
-		<y> 1088 </y>
+		<x> 1763 </x>
+		<y> 1163 </y>
 		<width> 49 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -6224,22 +6224,22 @@
 	</SubTexture>
 	<SubTexture>
 		<name> uk-GB102_LHMTV </name>
-		<x> 1195 </x>
-		<y> 1189 </y>
+		<x> 1447 </x>
+		<y> 1215 </y>
 		<width> 46 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> uk-GB103_GSOR3301_AVR_FS </name>
-		<x> 1134 </x>
-		<y> 1196 </y>
+		<x> 1494 </x>
+		<y> 1215 </y>
 		<width> 46 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> uk-GB104_GSR_3301_Setter </name>
-		<x> 1742 </x>
-		<y> 1012 </y>
+		<x> 1897 </x>
+		<y> 1089 </y>
 		<width> 50 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -6273,8 +6273,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> uk-GB108_A46 </name>
-		<x> 1268 </x>
-		<y> 1141 </y>
+		<x> 1638 </x>
+		<y> 1188 </y>
 		<width> 48 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -6336,8 +6336,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> uk-GB116_Harry_Hopkins_I </name>
-		<x> 1197 </x>
-		<y> 1165 </y>
+		<x> 1574 </x>
+		<y> 1189 </y>
 		<width> 48 </width>
 		<height> 23 </height>
 	</SubTexture>
@@ -6406,8 +6406,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> uk-GB126_FSV_Scheme_A </name>
-		<x> 1146 </x>
-		<y> 1172 </y>
+		<x> 1687 </x>
+		<y> 1188 </y>
 		<width> 48 </width>
 		<height> 23 </height>
 	</SubTexture>
@@ -6574,8 +6574,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> uk-GB14_M2 </name>
-		<x> 1434 </x>
-		<y> 1116 </y>
+		<x> 1736 </x>
+		<y> 1188 </y>
 		<width> 48 </width>
 		<height> 23 </height>
 	</SubTexture>
@@ -6609,8 +6609,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> uk-GB15_Stuart_I </name>
-		<x> 989 </x>
-		<y> 1174 </y>
+		<x> 1427 </x>
+		<y> 1190 </y>
 		<width> 48 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -6686,8 +6686,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> uk-GB25_Loyd_Gun_Carriage </name>
-		<x> 643 </x>
-		<y> 1248 </y>
+		<x> 1354 </x>
+		<y> 1265 </y>
 		<width> 45 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -6763,8 +6763,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> uk-GB39_Universal_CarrierQF2 </name>
-		<x> 1577 </x>
-		<y> 1162 </y>
+		<x> 1537 </x>
+		<y> 1288 </y>
 		<width> 44 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -6833,8 +6833,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> uk-GB57_Alecto </name>
-		<x> 1530 </x>
-		<y> 1138 </y>
+		<x> 1541 </x>
+		<y> 1238 </y>
 		<width> 46 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -6875,8 +6875,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> uk-GB69_Cruiser_Mk_II </name>
-		<x> 1793 </x>
-		<y> 1012 </y>
+		<x> 1948 </x>
+		<y> 1089 </y>
 		<width> 50 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -6945,8 +6945,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> uk-GB76_Mk_VIC </name>
-		<x> 329 </x>
-		<y> 1307 </y>
+		<x> 1275 </x>
+		<y> 1267 </y>
 		<width> 45 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -7120,22 +7120,22 @@
 	</SubTexture>
 	<SubTexture>
 		<name> usa-A01_T1_Cunningham </name>
-		<x> 274 </x>
-		<y> 1308 </y>
+		<x> 1400 </x>
+		<y> 1265 </y>
 		<width> 45 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> usa-A02_M2_lt </name>
-		<x> 881 </x>
-		<y> 1175 </y>
+		<x> 1351 </x>
+		<y> 1192 </y>
 		<width> 48 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> usa-A03_M3_Stuart </name>
-		<x> 930 </x>
-		<y> 1175 </y>
+		<x> 1287 </x>
+		<y> 1194 </y>
 		<width> 48 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -7225,8 +7225,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> usa-A101_M56 </name>
-		<x> 1865 </x>
-		<y> 1113 </y>
+		<x> 1766 </x>
+		<y> 1239 </y>
 		<width> 47 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -7239,29 +7239,29 @@
 	</SubTexture>
 	<SubTexture>
 		<name> usa-A1034_M24_Chaffee_StoryMode </name>
-		<x> 1844 </x>
-		<y> 1013 </y>
+		<x> 1684 </x>
+		<y> 1113 </y>
 		<width> 50 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> usa-A1034_M24_Chaffee_StoryModeStealth </name>
-		<x> 1895 </x>
-		<y> 1013 </y>
+		<x> 1626 </x>
+		<y> 1114 </y>
 		<width> 50 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> usa-A103_T71E1 </name>
-		<x> 1946 </x>
-		<y> 1013 </y>
+		<x> 1735 </x>
+		<y> 1113 </y>
 		<width> 50 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> usa-A103_T71E1_IGR </name>
-		<x> 1997 </x>
-		<y> 1013 </y>
+		<x> 1786 </x>
+		<y> 1113 </y>
 		<width> 50 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -7288,8 +7288,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> usa-A107_T1_HMC </name>
-		<x> 902 </x>
-		<y> 1225 </y>
+		<x> 1114 </x>
+		<y> 1274 </y>
 		<width> 41 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -7302,8 +7302,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> usa-A109_T56_GMC </name>
-		<x> 1640 </x>
-		<y> 1037 </y>
+		<x> 1459 </x>
+		<y> 1115 </y>
 		<width> 50 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -7533,8 +7533,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> usa-A134_M24E2_SuperChaffee </name>
-		<x> 1579 </x>
-		<y> 1038 </y>
+		<x> 1391 </x>
+		<y> 1117 </y>
 		<width> 50 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -7652,8 +7652,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> usa-A148_Convertible_Medium_Tank_T3 </name>
-		<x> 1691 </x>
-		<y> 1037 </y>
+		<x> 1510 </x>
+		<y> 1115 </y>
 		<width> 50 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -7904,8 +7904,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> usa-A19_T2_lt </name>
-		<x> 220 </x>
-		<y> 1310 </y>
+		<x> 1446 </x>
+		<y> 1265 </y>
 		<width> 45 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -7939,8 +7939,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> usa-A24_T2_med </name>
-		<x> 1459 </x>
-		<y> 1091 </y>
+		<x> 1813 </x>
+		<y> 1164 </y>
 		<width> 49 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -7960,8 +7960,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> usa-A27_T82 </name>
-		<x> 779 </x>
-		<y> 1198 </y>
+		<x> 1212 </x>
+		<y> 1218 </y>
 		<width> 48 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -7995,22 +7995,22 @@
 	</SubTexture>
 	<SubTexture>
 		<name> usa-A33_MTLS-1G14 </name>
-		<x> 1481 </x>
-		<y> 1163 </y>
+		<x> 1775 </x>
+		<y> 1264 </y>
 		<width> 44 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> usa-A34_M24_Chaffee </name>
-		<x> 1742 </x>
-		<y> 1037 </y>
+		<x> 1561 </x>
+		<y> 1115 </y>
 		<width> 50 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> usa-A34_M24_Chaffee_CFE_V </name>
-		<x> 1793 </x>
-		<y> 1037 </y>
+		<x> 1837 </x>
+		<y> 1114 </y>
 		<width> 50 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -8079,8 +8079,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> usa-A43_M22_Locust </name>
-		<x> 1526 </x>
-		<y> 1163 </y>
+		<x> 1820 </x>
+		<y> 1264 </y>
 		<width> 44 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -8100,15 +8100,15 @@
 	</SubTexture>
 	<SubTexture>
 		<name> usa-A46_T3 </name>
-		<x> 168 </x>
-		<y> 1320 </y>
+		<x> 1729 </x>
+		<y> 1264 </y>
 		<width> 45 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> usa-A57_M8A1 </name>
-		<x> 1844 </x>
-		<y> 1038 </y>
+		<x> 1677 </x>
+		<y> 1138 </y>
 		<width> 50 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -8233,8 +8233,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> usa-A74_T1_E6 </name>
-		<x> 828 </x>
-		<y> 1198 </y>
+		<x> 1133 </x>
+		<y> 1224 </y>
 		<width> 48 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -8345,8 +8345,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> usa-A93_T7_Combat_Car </name>
-		<x> 1895 </x>
-		<y> 1038 </y>
+		<x> 1612 </x>
+		<y> 1139 </y>
 		<width> 50 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -8380,8 +8380,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> usa-A99_T92_LT </name>
-		<x> 1913 </x>
-		<y> 1113 </y>
+		<x> 1814 </x>
+		<y> 1239 </y>
 		<width> 47 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -8408,8 +8408,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> ussr-R03_BT-7 </name>
-		<x> 1946 </x>
-		<y> 1038 </y>
+		<x> 1728 </x>
+		<y> 1138 </y>
 		<width> 50 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -8450,15 +8450,15 @@
 	</SubTexture>
 	<SubTexture>
 		<name> ussr-R08_BT-2 </name>
-		<x> 1997 </x>
-		<y> 1038 </y>
+		<x> 1779 </x>
+		<y> 1138 </y>
 		<width> 50 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> ussr-R09_T-26 </name>
-		<x> 1014 </x>
-		<y> 1224 </y>
+		<x> 945 </x>
+		<y> 1228 </y>
 		<width> 42 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -8534,8 +8534,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> ussr-R10_AT-1 </name>
-		<x> 719 </x>
-		<y> 1199 </y>
+		<x> 1476 </x>
+		<y> 1190 </y>
 		<width> 48 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -8639,8 +8639,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> ussr-R11_MS-1 </name>
-		<x> 375 </x>
-		<y> 1307 </y>
+		<x> 1613 </x>
+		<y> 1287 </y>
 		<width> 45 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -8681,8 +8681,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> ussr-R125_T_45 </name>
-		<x> 80 </x>
-		<y> 1323 </y>
+		<x> 1659 </x>
+		<y> 1287 </y>
 		<width> 45 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -8884,15 +8884,15 @@
 	</SubTexture>
 	<SubTexture>
 		<name> ussr-R14_SU-5 </name>
-		<x> 1630 </x>
-		<y> 1062 </y>
+		<x> 1888 </x>
+		<y> 1114 </y>
 		<width> 50 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> ussr-R14_SU-5_MapsTraining_Dummy_SPG_1 </name>
-		<x> 1524 </x>
-		<y> 1063 </y>
+		<x> 1939 </x>
+		<y> 1114 </y>
 		<width> 50 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -9017,8 +9017,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> ussr-R16_SU-18 </name>
-		<x> 762 </x>
-		<y> 1248 </y>
+		<x> 1156 </x>
+		<y> 1293 </y>
 		<width> 41 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -9339,8 +9339,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> ussr-R22_T-46 </name>
-		<x> 1961 </x>
-		<y> 1113 </y>
+		<x> 1862 </x>
+		<y> 1239 </y>
 		<width> 47 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -9472,29 +9472,29 @@
 	</SubTexture>
 	<SubTexture>
 		<name> ussr-R42_T-60 </name>
-		<x> 1416 </x>
-		<y> 1165 </y>
+		<x> 1865 </x>
+		<y> 1264 </y>
 		<width> 44 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> ussr-R43_T-70 </name>
-		<x> 1364 </x>
-		<y> 1166 </y>
+		<x> 1910 </x>
+		<y> 1266 </y>
 		<width> 44 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> ussr-R44_T80 </name>
-		<x> 979 </x>
-		<y> 1199 </y>
+		<x> 1588 </x>
+		<y> 1238 </y>
 		<width> 46 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> ussr-R44_T80_MapsTraining_Dummy_LT_1 </name>
-		<x> 877 </x>
-		<y> 1200 </y>
+		<x> 1635 </x>
+		<y> 1262 </y>
 		<width> 46 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -9598,8 +9598,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> ussr-R56_T-127 </name>
-		<x> 618 </x>
-		<y> 1223 </y>
+		<x> 1525 </x>
+		<y> 1190 </y>
 		<width> 48 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -9661,15 +9661,15 @@
 	</SubTexture>
 	<SubTexture>
 		<name> ussr-R66_SU-26 </name>
-		<x> 667 </x>
-		<y> 1223 </y>
+		<x> 1785 </x>
+		<y> 1189 </y>
 		<width> 48 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> ussr-R67_M3_LL </name>
-		<x> 548 </x>
-		<y> 1240 </y>
+		<x> 1687 </x>
+		<y> 1212 </y>
 		<width> 48 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -9766,15 +9766,15 @@
 	</SubTexture>
 	<SubTexture>
 		<name> ussr-R84_Tetrarch_LL </name>
-		<x> 1293 </x>
-		<y> 1188 </y>
+		<x> 1955 </x>
+		<y> 1266 </y>
 		<width> 44 </width>
 		<height> 24 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> ussr-R86_LTP </name>
-		<x> 924 </x>
-		<y> 1200 </y>
+		<x> 1682 </x>
+		<y> 1262 </y>
 		<width> 46 </width>
 		<height> 24 </height>
 	</SubTexture>
@@ -9920,108 +9920,479 @@
 	</SubTexture>
 	<SubTexture>
 		<name> role_ATSPG_assault </name>
-		<x> 177 </x>
-		<y> 1378 </y>
+		<x> 1167 </x>
+		<y> 1100 </y>
 		<width> 22 </width>
 		<height> 22 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> role_ATSPG_sniper </name>
+		<x> 1589 </x>
+		<y> 1140 </y>
+		<width> 22 </width>
+		<height> 22 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> role_ATSPG_support </name>
+		<x> 2024 </x>
+		<y> 1216 </y>
+		<width> 22 </width>
+		<height> 22 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> role_ATSPG_universal </name>
 		<x> 1389 </x>
 		<y> 562 </y>
 		<width> 22 </width>
 		<height> 22 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> role_ATSPG_support </name>
-		<x> 944 </x>
-		<y> 1225 </y>
-		<width> 22 </width>
-		<height> 22 </height>
-	</SubTexture>
-	<SubTexture>
-		<name> role_ATSPG_universal </name>
-		<x> 1459 </x>
-		<y> 1065 </y>
-		<width> 22 </width>
-		<height> 22 </height>
-	</SubTexture>
-	<SubTexture>
 		<name> role_HT_assault </name>
+		<x> 1638 </x>
+		<y> 1164 </y>
+		<width> 22 </width>
+		<height> 22 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> role_HT_break </name>
+		<x> 1533 </x>
+		<y> 938 </y>
+		<width> 22 </width>
+		<height> 22 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> role_HT_support </name>
+		<x> 1400 </x>
+		<y> 1192 </y>
+		<width> 22 </width>
+		<height> 22 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> role_HT_universal </name>
+		<x> 1191 </x>
+		<y> 997 </y>
+		<width> 22 </width>
+		<height> 22 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> role_LT_universal </name>
+		<x> 1308 </x>
+		<y> 1219 </y>
+		<width> 22 </width>
+		<height> 22 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> role_LT_wheeled </name>
+		<x> 1287 </x>
+		<y> 1167 </y>
+		<width> 22 </width>
+		<height> 22 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> role_MT_assault </name>
+		<x> 1354 </x>
+		<y> 1242 </y>
+		<width> 22 </width>
+		<height> 22 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> role_MT_sniper </name>
+		<x> 1492 </x>
+		<y> 1265 </y>
+		<width> 22 </width>
+		<height> 22 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> role_MT_support </name>
+		<x> 930 </x>
+		<y> 1286 </y>
+		<width> 22 </width>
+		<height> 22 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> role_MT_universal </name>
 		<x> 2020 </x>
 		<y> 837 </y>
 		<width> 22 </width>
 		<height> 22 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> role_HT_break </name>
+		<name> role_SPG </name>
 		<x> 2024 </x>
 		<y> 812 </y>
 		<width> 22 </width>
 		<height> 22 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> role_HT_support </name>
-		<x> 1419 </x>
-		<y> 1037 </y>
-		<width> 22 </width>
-		<height> 22 </height>
+		<name> damageBar_amber </name>
+		<x> 1015 </x>
+		<y> 1074 </y>
+		<width> 26 </width>
+		<height> 50 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> role_HT_universal </name>
-		<x> 1299 </x>
-		<y> 772 </y>
-		<width> 22 </width>
-		<height> 22 </height>
+		<name> damageBar_cyan </name>
+		<x> 307 </x>
+		<y> 1285 </y>
+		<width> 26 </width>
+		<height> 50 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> role_LT_universal </name>
-		<x> 144 </x>
-		<y> 1348 </y>
-		<width> 22 </width>
-		<height> 22 </height>
+		<name> damageBar_grey </name>
+		<x> 961 </x>
+		<y> 1177 </y>
+		<width> 26 </width>
+		<height> 50 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> role_LT_wheeled </name>
-		<x> 1577 </x>
-		<y> 1138 </y>
-		<width> 22 </width>
-		<height> 22 </height>
+		<name> damageBar_grinchgold </name>
+		<x> 1135 </x>
+		<y> 1152 </y>
+		<width> 26 </width>
+		<height> 50 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> role_MT_assault </name>
-		<x> 2018 </x>
-		<y> 738 </y>
-		<width> 22 </width>
-		<height> 22 </height>
+		<name> damageBar_magenta </name>
+		<x> 1351 </x>
+		<y> 1140 </y>
+		<width> 26 </width>
+		<height> 50 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> role_MT_sniper </name>
-		<x> 2019 </x>
-		<y> 262 </y>
-		<width> 22 </width>
-		<height> 22 </height>
+		<name> amber_AT-SPG </name>
+		<x> 1151 </x>
+		<y> 997 </y>
+		<width> 39 </width>
+		<height> 51 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> role_MT_support </name>
-		<x> 2018 </x>
-		<y> 1088 </y>
-		<width> 22 </width>
-		<height> 22 </height>
+		<name> amber_AT-SPG_dead </name>
+		<x> 1084 </x>
+		<y> 1021 </y>
+		<width> 39 </width>
+		<height> 51 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> role_MT_universal </name>
-		<x> 1283 </x>
-		<y> 1064 </y>
-		<width> 22 </width>
-		<height> 22 </height>
-	</SubTexture>
-	<SubTexture>
-		<name> role_SPG </name>
+		<name> amber_heavyTank </name>
 		<x> 1311 </x>
+		<y> 1143 </y>
+		<width> 39 </width>
+		<height> 50 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> amber_heavyTank_dead </name>
+		<x> 966 </x>
+		<y> 1022 </y>
+		<width> 40 </width>
+		<height> 51 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> amber_lightTank </name>
+		<x> 1999 </x>
+		<y> 1039 </y>
+		<width> 39 </width>
+		<height> 50 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> amber_lightTank_dead </name>
+		<x> 1007 </x>
+		<y> 1022 </y>
+		<width> 39 </width>
+		<height> 51 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> amber_mediumTank </name>
+		<x> 1999 </x>
+		<y> 1090 </y>
+		<width> 39 </width>
+		<height> 50 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> amber_mediumTank_dead </name>
+		<x> 855 </x>
+		<y> 1045 </y>
+		<width> 39 </width>
+		<height> 51 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> amber_SPG </name>
+		<x> 793 </x>
+		<y> 1046 </y>
+		<width> 39 </width>
+		<height> 51 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> amber_SPG_dead </name>
+		<x> 895 </x>
+		<y> 1045 </y>
+		<width> 39 </width>
+		<height> 51 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> cyan_AT-SPG </name>
+		<x> 681 </x>
+		<y> 1070 </y>
+		<width> 39 </width>
+		<height> 51 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> cyan_AT-SPG_dead </name>
+		<x> 619 </x>
+		<y> 1087 </y>
+		<width> 39 </width>
+		<height> 51 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> cyan_heavyTank </name>
+		<x> 559 </x>
+		<y> 1111 </y>
+		<width> 39 </width>
+		<height> 51 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> cyan_heavyTank_dead </name>
+		<x> 498 </x>
+		<y> 1113 </y>
+		<width> 40 </width>
+		<height> 51 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> cyan_lightTank </name>
+		<x> 1247 </x>
+		<y> 1167 </y>
+		<width> 39 </width>
+		<height> 50 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> cyan_lightTank_dead </name>
+		<x> 721 </x>
+		<y> 1070 </y>
+		<width> 39 </width>
+		<height> 51 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> cyan_mediumTank </name>
+		<x> 388 </x>
+		<y> 1129 </y>
+		<width> 39 </width>
+		<height> 51 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> cyan_mediumTank_dead </name>
+		<x> 330 </x>
+		<y> 1130 </y>
+		<width> 39 </width>
+		<height> 51 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> cyan_SPG </name>
+		<x> 273 </x>
+		<y> 1132 </y>
+		<width> 39 </width>
+		<height> 51 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> cyan_SPG_dead </name>
+		<x> 217 </x>
+		<y> 1142 </y>
+		<width> 39 </width>
+		<height> 51 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> grey_AT-SPG </name>
+		<x> 161 </x>
+		<y> 1145 </y>
+		<width> 39 </width>
+		<height> 51 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> grey_AT-SPG_dead </name>
+		<x> 106 </x>
+		<y> 1155 </y>
+		<width> 40 </width>
+		<height> 51 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> grey_heavyTank </name>
+		<x> 52 </x>
+		<y> 1172 </y>
+		<width> 39 </width>
+		<height> 51 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> grey_heavyTank_dead </name>
+		<x> 0 </x>
+		<y> 1181 </y>
+		<width> 40 </width>
+		<height> 51 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> grey_lightTank </name>
+		<x> 428 </x>
+		<y> 1129 </y>
+		<width> 39 </width>
+		<height> 51 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> grey_lightTank_dead </name>
+		<x> 1612 </x>
+		<y> 936 </y>
+		<width> 40 </width>
+		<height> 51 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> grey_mediumTank </name>
+		<x> 1533 </x>
+		<y> 961 </y>
+		<width> 39 </width>
+		<height> 51 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> grey_mediumTank_dead </name>
+		<x> 1472 </x>
+		<y> 963 </y>
+		<width> 40 </width>
+		<height> 51 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> grey_SPG </name>
+		<x> 1404 </x>
+		<y> 986 </y>
+		<width> 39 </width>
+		<height> 51 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> grey_SPG_dead </name>
+		<x> 1339 </x>
+		<y> 989 </y>
+		<width> 39 </width>
+		<height> 51 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> grinchgold_heavyTank </name>
+		<x> 1271 </x>
 		<y> 1013 </y>
-		<width> 22 </width>
-		<height> 22 </height>
+		<width> 39 </width>
+		<height> 51 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> grinchgold_heavyTank_dead </name>
+		<x> 1191 </x>
+		<y> 1020 </y>
+		<width> 39 </width>
+		<height> 51 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> grinchgold_lightTank </name>
+		<x> 1231 </x>
+		<y> 1020 </y>
+		<width> 39 </width>
+		<height> 51 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> grinchgold_lightTank_dead </name>
+		<x> 1124 </x>
+		<y> 1049 </y>
+		<width> 39 </width>
+		<height> 51 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> grinchgold_mediumTank </name>
+		<x> 1047 </x>
+		<y> 1073 </y>
+		<width> 39 </width>
+		<height> 51 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> grinchgold_mediumTank_dead </name>
+		<x> 935 </x>
+		<y> 1074 </y>
+		<width> 39 </width>
+		<height> 51 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> grinchgold_SPG </name>
+		<x> 975 </x>
+		<y> 1074 </y>
+		<width> 39 </width>
+		<height> 51 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> grinchgold_SPG_dead </name>
+		<x> 833 </x>
+		<y> 1097 </y>
+		<width> 39 </width>
+		<height> 51 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> magenta_AT-SPG </name>
+		<x> 873 </x>
+		<y> 1097 </y>
+		<width> 39 </width>
+		<height> 51 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> magenta_AT-SPG_dead </name>
+		<x> 761 </x>
+		<y> 1098 </y>
+		<width> 39 </width>
+		<height> 51 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> magenta_heavyTank </name>
+		<x> 659 </x>
+		<y> 1122 </y>
+		<width> 39 </width>
+		<height> 51 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> magenta_heavyTank_dead </name>
+		<x> 599 </x>
+		<y> 1139 </y>
+		<width> 40 </width>
+		<height> 51 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> magenta_lightTank </name>
+		<x> 539 </x>
+		<y> 1163 </y>
+		<width> 39 </width>
+		<height> 51 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> magenta_lightTank_dead </name>
+		<x> 699 </x>
+		<y> 1122 </y>
+		<width> 39 </width>
+		<height> 51 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> magenta_mediumTank </name>
+		<x> 468 </x>
+		<y> 1165 </y>
+		<width> 39 </width>
+		<height> 51 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> magenta_mediumTank_dead </name>
+		<x> 370 </x>
+		<y> 1181 </y>
+		<width> 39 </width>
+		<height> 51 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> magenta_SPG </name>
+		<x> 313 </x>
+		<y> 1182 </y>
+		<width> 39 </width>
+		<height> 51 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> magenta_SPG_dead </name>
+		<x> 257 </x>
+		<y> 1184 </y>
+		<width> 39 </width>
+		<height> 51 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> germany-G1003_PzV_Panther_SM_SCC </name>
@@ -10060,8 +10431,8 @@
 	</SubTexture>
 	<SubTexture>
 		<name> germany-G1126_HWK_12_SM_SCC </name>
-		<x> 1151 </x>
-		<y> 997 </y>
+		<x> 201 </x>
+		<y> 1194 </y>
 		<width> 51 </width>
 		<height> 24 </height>
 	</SubTexture>

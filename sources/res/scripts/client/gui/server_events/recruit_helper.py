@@ -5,6 +5,7 @@ from constants import ENDLESS_TOKEN_TIME
 from gui.Scaleform.locale.PERSONAL_MISSIONS import PERSONAL_MISSIONS
 from gui.Scaleform.locale.QUESTS import QUESTS
 from gui.Scaleform.locale.TOOLTIPS import TOOLTIPS
+from gui.Scaleform.locale.RES_ICONS import RES_ICONS
 from gui.impl import backport
 from gui.impl.gen import R
 from gui.shared.gui_items import Tankman
@@ -14,6 +15,7 @@ from items import tankmen, vehicles
 from items.components import skills_constants
 from items.components.component_constants import EMPTY_STRING
 from items.special_crew import CustomCrew
+from items.components.ny_constants import YEARS_INFO
 from items.tankmen import TankmanDescr, MAX_SKILL_LEVEL
 from nations import NONE_INDEX, INDICES, NAMES as NationNames
 from shared_utils import first, findFirst
@@ -96,6 +98,8 @@ class RecruitSourceID(object):
      TWITCH_GUY)
 
 
+DEFAULT_NY_GIRL = ('tman_template::true:ny{}_girl_1:210063:::brotherhood:100:ny{}defaultGirl:').format(YEARS_INFO.CURRENT_YEAR, YEARS_INFO.CURRENT_YEAR)
+NY_SOURCE_GROUP = ('ny{}defaultGirl').format(YEARS_INFO.CURRENT_YEAR)
 _NEW_SKILL = 'new_skill'
 _BASE_NAME = 'base'
 _TANKWOMAN_ROLE_LEVEL = 100
@@ -189,6 +193,12 @@ class _BaseRecruitInfo(object):
             return backport.getShortDateFormat(self._expiryTime)
         return ''
 
+    def getHowToGetInfo(self):
+        return ''
+
+    def getAdditionalAlert(self):
+        return ''
+
     def getExpiryTimeStamp(self):
         return self._expiryTime
 
@@ -233,11 +243,10 @@ class _BaseRecruitInfo(object):
         return self._sourceID
 
     def getSpecialIcon(self):
-        dynAccessor = R.images.gui.maps.icons.tankmen.icons.special.dyn(self.getDynIconName())
-        if dynAccessor.isValid():
-            return backport.image(dynAccessor())
-        else:
-            return
+        return RES_ICONS.getSpecialIcon(self._icon)
+
+    def getSnapshotIcon(self):
+        return RES_ICONS.getSnapshotIcon(self._sourceID)
 
     def isFemale(self):
         return self._isFemale
@@ -437,6 +446,26 @@ class _TokenRecruitInfo(_BaseRecruitInfo):
              nationGroup.isFemales)
 
 
+class _DefaultNyGirlInfo(_TokenRecruitInfo):
+
+    def __init__(self, *args, **kwargs):
+        super(_DefaultNyGirlInfo, self).__init__(*args, **kwargs)
+        self._sourceID = ('ny{}defaultGirl').format(YEARS_INFO.CURRENT_YEAR)
+
+    def getFullUserName(self):
+        return backport.text(R.strings.ny.levelsRewards.tankWoman())
+
+    def getSpecialIcon(self):
+        return RES_ICONS.MAPS_ICONS_TANKMEN_ICONS_SPECIAL_NY21_DEFAULT_GIRL
+
+
+class _ObtainedNyGirlInfo(_TokenRecruitInfo):
+
+    def __init__(self, *args, **kwargs):
+        super(_ObtainedNyGirlInfo, self).__init__(*args, **kwargs)
+        self._sourceID = self._group
+
+
 def _getRecruitInfoFromQuest(questID):
     for quest, opName in getTankmanRewardQuests():
         if questID == quest.getID():
@@ -455,7 +484,27 @@ def _getRecruitInfoFromToken(tokenName, eventsCache=None):
         return _TokenRecruitInfo(tokenName, expiryTime, **tokenData)
 
 
+def _getDefaultNyGirl():
+    tokenData = tankmen.getRecruitInfoFromToken(DEFAULT_NY_GIRL)
+    if tokenData is None:
+        return
+    else:
+        return _DefaultNyGirlInfo(DEFAULT_NY_GIRL, ENDLESS_TOKEN_TIME, **tokenData)
+
+
+def _getObtainedNyGirl(tokenId):
+    tokenData = tankmen.getRecruitInfoFromToken(tokenId)
+    if tokenData is None:
+        return
+    else:
+        return _ObtainedNyGirlInfo(tokenId, ENDLESS_TOKEN_TIME, **tokenData)
+
+
 def getRecruitInfo(recruitID):
+    if NY_SOURCE_GROUP in recruitID:
+        if recruitID == DEFAULT_NY_GIRL:
+            return _getDefaultNyGirl()
+        return _getObtainedNyGirl(recruitID)
     try:
         questID = int(recruitID)
         return _getRecruitInfoFromQuest(questID)

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.705841 -0.274899 -0.257082</min>
+		<max>0.710375 0.325824 1.643887</max>
+	</visibilityBox>
+	<nodefullVisual>grinch/vehicles/german/G89_Leopard1_grinch_improved/normal/lod4/Gun_01</nodefullVisual>
+</root>

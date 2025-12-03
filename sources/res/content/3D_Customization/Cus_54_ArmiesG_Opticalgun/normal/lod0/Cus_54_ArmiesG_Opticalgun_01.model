@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-0.203676 -0.200000 -0.466875</min>
+		<max>0.315656 0.901904 0.741823</max>
+	</visibilityBox>
+	<parent>content/3D_Customization/Cus_54_ArmiesG_Opticalgun/normal/lod1/Cus_54_ArmiesG_Opticalgun_01</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>content/3D_Customization/Cus_54_ArmiesG_Opticalgun/normal/lod0/Cus_54_ArmiesG_Opticalgun_01</nodefullVisual>
+</root>

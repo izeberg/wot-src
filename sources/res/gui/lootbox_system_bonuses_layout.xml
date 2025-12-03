@@ -246,4 +246,27 @@
 			</override>
 		</vehicles>
 	</anniversaryCN>
+	<newYear_premium>
+		<customizations>
+			<style3D>
+				<rarity>rare</rarity>
+			</style3D>
+			<attachment>
+				<override>
+					<id>1096 1098 1100 1101 1107 1108</id>
+					<rarity>rare</rarity>
+				</override>
+			</attachment>
+		</customizations>
+		<vehicles>
+			<rarity>common</rarity>
+			<override>
+				<id>10545 6305 52593 59201 32785 55425</id>
+				<rarity>epic</rarity>
+			</override>
+		</vehicles>
+		<ny26Toys>
+			<priority>30</priority>
+		</ny26Toys>
+	</newYear_premium>
 </root>

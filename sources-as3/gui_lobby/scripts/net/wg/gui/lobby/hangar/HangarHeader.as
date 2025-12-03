@@ -140,16 +140,9 @@ package net.wg.gui.lobby.hangar
             else
             {
                this.secondaryEntryPoint.x = 0;
-               if(this._widget)
-               {
-                  this.questsFlags.offsetRightSideX = (this._widget.width >> 1) + this._widget.marginRight;
-               }
-               else
-               {
-                  this.questsFlags.offsetRightSideX = 0;
-               }
             }
             this.questsFlags.flagsOffsetY = HeaderQuestsFlags.DEFAULT_FLAGS_OFFSET_Y;
+            this.questsFlags.x = Values.ZERO;
          }
       }
       
@@ -162,6 +155,7 @@ package net.wg.gui.lobby.hangar
          this._data = param1;
          invalidateState();
          invalidateData();
+         invalidateLayout();
       }
       
       public function as_addEntryPoint(param1:String) : void

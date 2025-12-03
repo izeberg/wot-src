@@ -1,0 +1,26 @@
+from frameworks.wulf import ViewModel
+
+class IntroViewModel(ViewModel):
+    __slots__ = ('onContinue', 'onClose')
+
+    def __init__(self, properties=2, commands=2):
+        super(IntroViewModel, self).__init__(properties=properties, commands=commands)
+
+    def getEndTime(self):
+        return self._getNumber(0)
+
+    def setEndTime(self, value):
+        self._setNumber(0, value)
+
+    def getShowAnimation(self):
+        return self._getBool(1)
+
+    def setShowAnimation(self, value):
+        self._setBool(1, value)
+
+    def _initialize(self):
+        super(IntroViewModel, self)._initialize()
+        self._addNumberProperty('endTime', 0)
+        self._addBoolProperty('showAnimation', False)
+        self.onContinue = self._addCommand('onContinue')
+        self.onClose = self._addCommand('onClose')

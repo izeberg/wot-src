@@ -82,7 +82,7 @@
 						<transform>
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
-							<row2>0.000000 -0.000000 1.000000</row2>
+							<row2>-0.000000 -0.000000 1.000000</row2>
 							<row3>0.000000 0.355376 0.000000</row3>
 						</transform>
 						<node>
@@ -260,9 +260,9 @@
 					<node>
 						<identifier>W_L5</identifier>
 						<transform>
-							<row0>1.000000 0.000000 -0.000000</row0>
+							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
-							<row2>-0.000000 -0.000000 1.000000</row2>
+							<row2>0.000000 -0.000000 1.000000</row2>
 							<row3>0.000000 0.352523 0.000000</row3>
 						</transform>
 						<node>
@@ -332,7 +332,7 @@
 					<node>
 						<identifier>W_R1</identifier>
 						<transform>
-							<row0>1.000000 -0.000000 0.000000</row0>
+							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 1.000000</row2>
 							<row3>0.000000 0.352523 0.000000</row3>
@@ -368,7 +368,7 @@
 					<node>
 						<identifier>W_R2</identifier>
 						<transform>
-							<row0>1.000000 -0.000000 0.000000</row0>
+							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 1.000000</row2>
 							<row3>0.000000 0.354999 0.000000</row3>
@@ -404,7 +404,7 @@
 					<node>
 						<identifier>W_R3</identifier>
 						<transform>
-							<row0>1.000000 -0.000000 0.000000</row0>
+							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 1.000000</row2>
 							<row3>0.000000 0.352523 0.000000</row3>
@@ -440,7 +440,7 @@
 					<node>
 						<identifier>W_R4</identifier>
 						<transform>
-							<row0>1.000000 -0.000000 0.000000</row0>
+							<row0>1.000000 0.000000 -0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 1.000000</row2>
 							<row3>0.000000 0.354999 0.000000</row3>
@@ -476,9 +476,9 @@
 					<node>
 						<identifier>W_R5</identifier>
 						<transform>
-							<row0>1.000000 0.000000 0.000000</row0>
+							<row0>1.000000 -0.000000 -0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
-							<row2>-0.000000 -0.000000 1.000000</row2>
+							<row2>-0.000000 0.000000 1.000000</row2>
 							<row3>0.000000 0.352523 0.000000</row3>
 						</transform>
 						<node>
@@ -941,9 +941,38 @@
 				0
 				<material>
 					<identifier>track_mat_R_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tank_uvtransform_skinned_ao.fx</fx>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
-					<fx>shaders/std_effects/PBS_tank_uvtransform_skinned_ao.fx</fx>
+					<property>
+						g_detailPowerGloss
+						<Float>
+							0.35
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_maskBias
+						<Float>
+							0.18
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailPower
+						<Float>5</Float>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
 					<property>
 						metallicGlossMap
 						<Texture>vehicles/poland/tracks/CS_62_OSP3_3DSt_track_GMM.dds</Texture>
@@ -996,9 +1025,38 @@
 				0
 				<material>
 					<identifier>track_mat_L_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tank_uvtransform_skinned_ao.fx</fx>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
-					<fx>shaders/std_effects/PBS_tank_uvtransform_skinned_ao.fx</fx>
+					<property>
+						g_detailPowerGloss
+						<Float>
+							0.35
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_maskBias
+						<Float>
+							0.18
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailPower
+						<Float>5</Float>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
 					<property>
 						metallicGlossMap
 						<Texture>vehicles/poland/tracks/CS_62_OSP3_3DSt_track_GMM.dds</Texture>
@@ -1030,17 +1088,6 @@
 	</renderSet>
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
-		<node>WD_L0_BlendBone</node>
-		<node>W_L0_BlendBone</node>
-		<node>W_L1_BlendBone</node>
-		<node>W_L2_BlendBone</node>
-		<node>W_L3_BlendBone</node>
-		<node>W_L5_BlendBone</node>
-		<node>WD_L1_BlendBone</node>
-		<node>WD_L2_BlendBone</node>
-		<node>WD_L3_BlendBone</node>
-		<node>WD_L4_BlendBone</node>
-		<node>W_L4_BlendBone</node>
 		<node>Track_L0_BlendBone</node>
 		<node>Track_L1_BlendBone</node>
 		<node>Track_L2_BlendBone</node>
@@ -1048,16 +1095,56 @@
 		<node>Track_L4_BlendBone</node>
 		<node>Track_L5_BlendBone</node>
 		<node>V_BlendBone</node>
+		<node>W_L0_BlendBone</node>
+		<node>W_L1_BlendBone</node>
+		<node>W_L2_BlendBone</node>
+		<node>W_L3_BlendBone</node>
+		<node>W_L5_BlendBone</node>
+		<node>W_L4_BlendBone</node>
+		<node>WD_L0_BlendBone</node>
+		<node>WD_L1_BlendBone</node>
+		<node>WD_L2_BlendBone</node>
+		<node>WD_L3_BlendBone</node>
+		<node>WD_L4_BlendBone</node>
 		<geometry>
-			<vertices>exportChassL1_Shape.vertices</vertices>
-			<primitive>exportChassL1_Shape.indices</primitive>
+			<vertices>chassis_LShape.vertices</vertices>
+			<primitive>chassis_LShape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
 					<identifier>tank_chassis_01_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
-					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<property>
+						g_detailPowerGloss
+						<Float>
+							0.35
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_maskBias
+						<Float>
+							0.18
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailPower
+						<Float>5</Float>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
 					<property>
 						metallicGlossMap
 						<Texture>vehicles/poland/Pl21_CS_63_OSP3/_skins/Pl21_CS_63_OSP3_3DSt/CS_63_OSP3_3DSt_chassis_01_GMM.dds</Texture>
@@ -1075,16 +1162,16 @@
 						<Texture>vehicles/poland/Pl21_CS_63_OSP3/_skins/Pl21_CS_63_OSP3_3DSt/CS_63_OSP3_3DSt_chassis_01_AO.dds</Texture>
 					</property>
 					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
-					</property>
-					<property>
 						alphaReference
 						<Int>64</Int>
 					</property>
 					<property>
 						alphaTestEnable
 						<Bool>true</Bool>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>-1.255296 0.585289 0.044191</groupOrigin>
@@ -1093,17 +1180,6 @@
 	</renderSet>
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
-		<node>WD_R0_BlendBone</node>
-		<node>W_R0_BlendBone</node>
-		<node>W_R1_BlendBone</node>
-		<node>W_R2_BlendBone</node>
-		<node>W_R3_BlendBone</node>
-		<node>W_R4_BlendBone</node>
-		<node>W_R5_BlendBone</node>
-		<node>WD_R1_BlendBone</node>
-		<node>WD_R2_BlendBone</node>
-		<node>WD_R3_BlendBone</node>
-		<node>WD_R4_BlendBone</node>
 		<node>Track_R0_BlendBone</node>
 		<node>Track_R1_BlendBone</node>
 		<node>Track_R2_BlendBone</node>
@@ -1111,16 +1187,56 @@
 		<node>Track_R4_BlendBone</node>
 		<node>Track_R5_BlendBone</node>
 		<node>V_BlendBone</node>
+		<node>W_R0_BlendBone</node>
+		<node>W_R1_BlendBone</node>
+		<node>W_R2_BlendBone</node>
+		<node>W_R3_BlendBone</node>
+		<node>W_R4_BlendBone</node>
+		<node>W_R5_BlendBone</node>
+		<node>WD_R0_BlendBone</node>
+		<node>WD_R1_BlendBone</node>
+		<node>WD_R2_BlendBone</node>
+		<node>WD_R3_BlendBone</node>
+		<node>WD_R4_BlendBone</node>
 		<geometry>
-			<vertices>exportChassR1_Shape.vertices</vertices>
-			<primitive>exportChassR1_Shape.indices</primitive>
+			<vertices>chassis_RShape.vertices</vertices>
+			<primitive>chassis_RShape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
 					<identifier>tank_chassis_01_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
-					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<property>
+						g_detailPowerGloss
+						<Float>
+							0.35
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_maskBias
+						<Float>
+							0.18
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailPower
+						<Float>5</Float>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
 					<property>
 						metallicGlossMap
 						<Texture>vehicles/poland/Pl21_CS_63_OSP3/_skins/Pl21_CS_63_OSP3_3DSt/CS_63_OSP3_3DSt_chassis_01_GMM.dds</Texture>
@@ -1138,16 +1254,16 @@
 						<Texture>vehicles/poland/Pl21_CS_63_OSP3/_skins/Pl21_CS_63_OSP3_3DSt/CS_63_OSP3_3DSt_chassis_01_AO.dds</Texture>
 					</property>
 					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
-					</property>
-					<property>
 						alphaReference
 						<Int>64</Int>
 					</property>
 					<property>
 						alphaTestEnable
 						<Bool>true</Bool>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>1.256772 0.585276 0.044191</groupOrigin>

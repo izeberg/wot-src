@@ -59,3 +59,5 @@ class DAMAGEINDICATOR(object):
     TRIPLEX_CIRCLE = 'triplexCircle'
     TURRET_CIRCLE = 'turretCircle'
     WHEEL_CIRCLE = 'wheelCircle'
+    GRINCH_AT_SPG = 'grinch_AT-SPG'
+    GRINCH_SPG = 'grinch_SPG'

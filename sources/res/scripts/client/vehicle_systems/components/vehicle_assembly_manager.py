@@ -1,9 +1,10 @@
 from collections import namedtuple
 import typing, logging, CGF, GenericComponents, GpuDecals, Vehicular, DataLinks, math_utils, Compound
 from cgf_components.client_worlds_helpers import ClientWorld, clientWorldsManager, getClientWorld
-from cgf_script.managers_registrator import autoregister, onAddedQuery
+from cgf_script.managers_registrator import autoregister, onAddedQuery, onRemovedQuery
 from constants import IS_UE_EDITOR
 from vehicle_systems import vehicle_composition as veh_comp
+from vehicle_systems.CompoundAppearance import CompoundAppearance
 from vehicle_systems.components import vehicle_variable_storage, gun_info
 from vehicle_systems.tankStructure import TankPartNames, TankRenderMode, ModelStates
 if typing.TYPE_CHECKING:
@@ -18,6 +19,9 @@ class Assembler(object):
 
     def assemble(self, gameObject, slotMarker):
         raise NotImplementedError()
+
+    def disAssemble(self, gameObject, slotMarker):
+        pass
 
     @staticmethod
     def _replaceWithNodeDriver(go, appearance):
@@ -218,6 +222,34 @@ class GunInfoAssembler(Assembler):
         return
 
 
+class CompositionReadinessNotifier(Assembler):
+
+    def checkSlotMarker(self, slotMarker):
+        return slotMarker.slotName == GenericComponents.COMPOSITION_ROOT_SLOT_NAME
+
+    def assemble(self, gameObject, slotMarker):
+        from Vehicle import Vehicle
+        appearance = veh_comp.findParentVehicleAppearance(gameObject)
+        if appearance is None:
+            return
+        else:
+            appearance.setCompositionReady(True)
+            if isinstance(appearance, CompoundAppearance) and isinstance(appearance.getVehicle(), Vehicle):
+                appearance.getVehicle().onCompositionUpdated(True)
+            return
+
+    def disAssemble(self, gameObject, slotMarker):
+        from Vehicle import Vehicle
+        appearance = veh_comp.findParentVehicleAppearance(gameObject)
+        if appearance is None:
+            return
+        else:
+            appearance.setCompositionReady(False)
+            if isinstance(appearance, CompoundAppearance) and isinstance(appearance.getVehicle(), Vehicle):
+                appearance.getVehicle().onCompositionUpdated(False)
+            return
+
+
 _AssemblerData = namedtuple('_AssemblerData', ('worldFlags', 'assembler'))
 
 @autoregister(presentInAllWorlds=True, domain=CGF.DomainOption.DomainClient | CGF.DomainOption.DomainEditor)
@@ -228,7 +260,8 @@ class VehicleAssemblyManager(CGF.ComponentManager):
      _AssemblerData(ClientWorld.BATTLE | ClientWorld.EDITOR, MultiGunRecoilAssembler),
      _AssemblerData(ClientWorld.BATTLE | ClientWorld.EDITOR, SwingingAnimationManager),
      _AssemblerData(ClientWorld.BATTLE | ClientWorld.HANGAR | ClientWorld.EDITOR, DecalsAssembler),
-     _AssemblerData(ClientWorld.BATTLE | ClientWorld.EDITOR, GunInfoAssembler))
+     _AssemblerData(ClientWorld.BATTLE | ClientWorld.EDITOR, GunInfoAssembler),
+     _AssemblerData(ClientWorld.BATTLE | ClientWorld.EDITOR, CompositionReadinessNotifier))
 
     def __init__(self):
         super(VehicleAssemblyManager, self).__init__()
@@ -244,6 +277,12 @@ class VehicleAssemblyManager(CGF.ComponentManager):
         for assembler in self.__assemblers:
             if assembler.checkSlotMarker(slotMarker):
                 assembler.assemble(gameObject, slotMarker)
+
+    @onRemovedQuery(CGF.GameObject, GenericComponents.SlotMarkerComponent)
+    def onRemovedSlotMarker(self, gameObject, slotMarker):
+        for assembler in self.__assemblers:
+            if assembler.checkSlotMarker(slotMarker):
+                assembler.disAssemble(gameObject, slotMarker)
 
 
 @clientWorldsManager(ClientWorld.HANGAR | ClientWorld.EDITOR)

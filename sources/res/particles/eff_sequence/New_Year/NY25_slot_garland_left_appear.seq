@@ -1,0 +1,796 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>1.633333</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>magic_sparkle</name>
+		<type>particle</type>
+		<resource>particles/Environment/hangar/h23_slot_garland_sparkle4.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-31.300310 8.095732 22.643587</value>
+				<inTangent>-0.000038 46.544853 0.000000</inTangent>
+				<outTangent>-0.364826 40.083515 1.100295</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.253407</startTime>
+				<value>-31.392759 18.253159 22.922409</value>
+				<inTangent>-0.364826 40.083515 1.100295</inTangent>
+				<outTangent>25.407726 11.951138 19.543180</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.326120</startTime>
+				<value>-29.545275 19.122168 24.343462</value>
+				<inTangent>25.407726 11.951138 19.543180</inTangent>
+				<outTangent>6.331269 39.015995 -0.026162</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.391371</startTime>
+				<value>-29.132156 21.667980 24.341755</value>
+				<inTangent>6.331269 39.015995 -0.026162</inTangent>
+				<outTangent>-4.806808 39.448215 -4.226979</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.433368</startTime>
+				<value>-29.334028 23.324690 24.164234</value>
+				<inTangent>-4.806808 39.448215 -4.226979</inTangent>
+				<outTangent>26.642618 23.013546 16.592957</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.488271</startTime>
+				<value>-27.871265 24.588205 25.075239</value>
+				<inTangent>26.642618 23.013546 16.592957</inTangent>
+				<outTangent>27.088120 -22.468000 16.934389</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.543034</startTime>
+				<value>-26.387827 23.357780 26.002625</value>
+				<inTangent>27.088120 -22.468000 16.934389</inTangent>
+				<outTangent>0.000000 -39.858315 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.581226</startTime>
+				<value>-26.387827 21.835539 26.002625</value>
+				<inTangent>-0.000000 -39.858315 -0.000000</inTangent>
+				<outTangent>3.397472 -39.265163 5.317996</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.648090</startTime>
+				<value>-26.160658 19.210108 26.358208</value>
+				<inTangent>3.397472 -39.265163 5.317996</inTangent>
+				<outTangent>31.692698 -19.315327 15.069605</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.708624</startTime>
+				<value>-24.242151 18.040861 27.270441</value>
+				<inTangent>31.692698 -19.315327 15.069605</inTangent>
+				<outTangent>0.000000 -39.898365 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.739983</startTime>
+				<value>-24.242151 16.789680 27.270441</value>
+				<inTangent>-0.000000 -39.898365 -0.000000</inTangent>
+				<outTangent>26.290255 0.000000 24.450867</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.773485</startTime>
+				<value>-23.361383 16.789680 28.089586</value>
+				<inTangent>26.290255 -0.000000 24.450867</inTangent>
+				<outTangent>15.751792 33.797634 14.087030</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.857619</startTime>
+				<value>-22.036129 19.633196 29.274778</value>
+				<inTangent>15.751792 33.797634 14.087030</inTangent>
+				<outTangent>0.000000 40.112282 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.932009</startTime>
+				<value>-22.036129 22.617163 29.274778</value>
+				<inTangent>-0.000000 40.112282 -0.000000</inTangent>
+				<outTangent>25.579082 16.917116 21.857462</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.974243</startTime>
+				<value>-20.955822 23.331640 30.197906</value>
+				<inTangent>25.579082 16.917116 21.857462</inTangent>
+				<outTangent>24.552364 -21.185106 18.585398</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.012825</startTime>
+				<value>-20.008545 22.514278 30.914967</value>
+				<inTangent>24.552364 -21.185106 18.585398</inTangent>
+				<outTangent>-1.750164 -40.023209 -1.485189</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.085390</startTime>
+				<value>-20.135546 19.609991 30.807194</value>
+				<inTangent>-1.750164 -40.023209 -1.485189</inTangent>
+				<outTangent>18.671516 -32.048317 14.454183</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.167974</startTime>
+				<value>-18.593588 16.963331 32.000870</value>
+				<inTangent>18.671516 -32.048317 14.454183</inTangent>
+				<outTangent>16.602188 0.000000 14.106790</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.220210</startTime>
+				<value>-17.726353 16.963331 32.737755</value>
+				<inTangent>16.602188 -0.000000 14.106790</inTangent>
+				<outTangent>0.000000 -40.113586 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.500000</startTime>
+				<value>-17.726353 5.739944 32.737755</value>
+				<inTangent>-0.000000 -40.113586 -0.000000</inTangent>
+				<outTangent>-0.000000 -40.113586 -0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>59.999996</inTangent>
+				<outTangent>59.999996</outTangent>
+				<tangentMode>256</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.033333</startTime>
+				<value>2.000000</value>
+				<inTangent>59.999996</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.500000</startTime>
+				<value>2.000000</value>
+				<inTangent>-0.000000</inTangent>
+				<outTangent>-15.000041</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.633333</startTime>
+				<value>0.000000</value>
+				<inTangent>-15.000041</inTangent>
+				<outTangent>-7.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>magic_sparkle_2</name>
+		<type>particle</type>
+		<resource>particles/Environment/hangar/h23_slot_garland_sparkle4.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-57.389702 8.105667 10.049284</value>
+				<inTangent>-0.000038 46.544853 0.000000</inTangent>
+				<outTangent>0.216196 35.788765 -0.461236</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.310687</startTime>
+				<value>-57.322533 19.224773 9.905984</value>
+				<inTangent>0.216196 35.788765 -0.461236</inTangent>
+				<outTangent>-15.144310 30.528961 -10.942009</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.482891</startTime>
+				<value>-59.930443 24.481981 8.021727</value>
+				<inTangent>-15.144310 30.528961 -10.942009</inTangent>
+				<outTangent>-18.812082 -28.685251 -10.215539</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.626740</startTime>
+				<value>-62.636543 20.355635 6.552231</value>
+				<inTangent>-18.812082 -28.685251 -10.215539</inTangent>
+				<outTangent>0.000000 35.792385 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.653111</startTime>
+				<value>-62.636543 21.299524 6.552231</value>
+				<inTangent>-0.000000 35.792385 -0.000000</inTangent>
+				<outTangent>-32.140930 0.000000 -15.749834</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.693078</startTime>
+				<value>-63.921108 21.299524 5.922763</value>
+				<inTangent>-32.140930 -0.000000 -15.749834</inTangent>
+				<outTangent>-13.727036 31.889229 -8.702948</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.766396</startTime>
+				<value>-64.927551 23.637589 5.284678</value>
+				<inTangent>-13.727036 31.889229 -8.702948</inTangent>
+				<outTangent>0.000000 35.792381 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.821758</startTime>
+				<value>-64.927551 25.619122 5.284678</value>
+				<inTangent>-0.000000 35.792381 -0.000000</inTangent>
+				<outTangent>20.591942 28.444485 6.926833</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.843211</startTime>
+				<value>-64.485802 26.229328 5.433276</value>
+				<inTangent>20.591942 28.444485 6.926833</inTangent>
+				<outTangent>-18.036261 26.155172 -16.483221</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.910370</startTime>
+				<value>-65.697098 27.985882 4.326280</value>
+				<inTangent>-18.036261 26.155172 -16.483221</inTangent>
+				<outTangent>-19.189524 -24.004322 -18.348030</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.970384</startTime>
+				<value>-66.848747 26.545275 3.225132</value>
+				<inTangent>-19.189524 -24.004322 -18.348030</inTangent>
+				<outTangent>4.288398 -33.163239 12.763566</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.002425</startTime>
+				<value>-66.711342 25.482685 3.634092</value>
+				<inTangent>4.288398 -33.163239 12.763566</inTangent>
+				<outTangent>-4.588551 -35.200226 4.580985</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.078557</startTime>
+				<value>-67.060677 22.802828 3.982851</value>
+				<inTangent>-4.588551 -35.200226 4.580985</inTangent>
+				<outTangent>-14.446888 -30.212570 -12.632635</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.132989</startTime>
+				<value>-67.847054 21.158289 3.295228</value>
+				<inTangent>-14.446888 -30.212570 -12.632635</inTangent>
+				<outTangent>-17.823866 0.000000 -31.038773</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.172341</startTime>
+				<value>-68.548447 21.158289 2.073811</value>
+				<inTangent>-17.823866 -0.000000 -31.038773</inTangent>
+				<outTangent>0.000000 -35.792389 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.500000</startTime>
+				<value>-68.548447 9.430590 2.073811</value>
+				<inTangent>-0.000000 -35.792389 -0.000000</inTangent>
+				<outTangent>-0.000000 -175.915344 -0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>59.999996</inTangent>
+				<outTangent>59.999996</outTangent>
+				<tangentMode>256</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.033333</startTime>
+				<value>2.000000</value>
+				<inTangent>59.999996</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.500000</startTime>
+				<value>2.000000</value>
+				<inTangent>-0.000000</inTangent>
+				<outTangent>-15.000041</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.633333</startTime>
+				<value>0.000000</value>
+				<inTangent>-15.000041</inTangent>
+				<outTangent>-7.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>magic_sparkle_3</name>
+		<type>particle</type>
+		<resource>particles/Environment/hangar/h23_slot_garland_sparkle4.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-80.513618 11.533491 -16.775145</value>
+				<inTangent>-0.000038 46.544853 0.000000</inTangent>
+				<outTangent>0.706378 36.892715 -0.169005</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.212612</startTime>
+				<value>-80.363434 19.377337 -16.811077</value>
+				<inTangent>0.706378 36.892715 -0.169005</inTangent>
+				<outTangent>6.982798 0.000000 20.232080</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.253821</startTime>
+				<value>-80.075684 19.377337 -15.977345</value>
+				<inTangent>6.982798 -0.000000 20.232080</inTangent>
+				<outTangent>2.645440 33.596382 14.615916</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.359767</startTime>
+				<value>-79.795410 22.936735 -14.428848</value>
+				<inTangent>2.645440 33.596382 14.615916</inTangent>
+				<outTangent>7.142654 33.703514 -12.825504</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.395012</startTime>
+				<value>-79.543663 24.124636 -14.880891</value>
+				<inTangent>7.142654 33.703514 -12.825504</inTangent>
+				<outTangent>9.184184 16.529072 29.905661</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.424945</startTime>
+				<value>-79.268753 24.619400 -13.985725</value>
+				<inTangent>9.184184 16.529072 29.905661</inTangent>
+				<outTangent>10.388564 -17.145094 29.400808</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.454209</startTime>
+				<value>-78.964745 24.117670 -13.125347</value>
+				<inTangent>10.388564 -17.145094 29.400808</inTangent>
+				<outTangent>-8.082841 -34.144550 -2.605598</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.487177</startTime>
+				<value>-79.231216 22.992006 -13.211247</value>
+				<inTangent>-8.082841 -34.144550 -2.605598</inTangent>
+				<outTangent>4.722095 -33.509857 14.620121</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.594891</startTime>
+				<value>-78.722580 19.382521 -11.636454</value>
+				<inTangent>4.722095 -33.509857 14.620121</inTangent>
+				<outTangent>12.237445 0.000000 26.335342</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.625963</startTime>
+				<value>-78.342339 19.382521 -10.818163</value>
+				<inTangent>12.237445 -0.000000 26.335342</inTangent>
+				<outTangent>1.265845 36.703461 -2.642644</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.660679</startTime>
+				<value>-78.298393 20.656725 -10.909905</value>
+				<inTangent>1.265845 36.703461 -2.642644</inTangent>
+				<outTangent>13.139185 6.739712 33.731438</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.704046</startTime>
+				<value>-77.728584 20.949007 -9.447069</value>
+				<inTangent>13.139185 6.739712 33.731438</inTangent>
+				<outTangent>6.454678 33.607891 12.595204</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.773345</startTime>
+				<value>-77.281281 23.278006 -8.574232</value>
+				<inTangent>6.454678 33.607891 12.595204</inTangent>
+				<outTangent>0.017007 36.505409 -5.361150</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.847366</startTime>
+				<value>-77.280022 25.980150 -8.971066</value>
+				<inTangent>0.017007 36.505409 -5.361150</inTangent>
+				<outTangent>12.161691 16.475136 28.403412</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.898910</startTime>
+				<value>-76.653160 26.829344 -7.507042</value>
+				<inTangent>12.161691 16.475136 28.403412</inTangent>
+				<outTangent>18.572197 -15.293280 25.793915</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.949737</startTime>
+				<value>-75.709175 26.052019 -6.195993</value>
+				<inTangent>18.572197 -15.293280 25.793915</inTangent>
+				<outTangent>-3.966236 -36.672394 -0.372659</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.015105</startTime>
+				<value>-75.968437 23.654844 -6.220353</value>
+				<inTangent>-3.966236 -36.672394 -0.372659</inTangent>
+				<outTangent>6.390461 -34.275196 11.030925</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.088848</startTime>
+				<value>-75.497185 21.127285 -5.406898</value>
+				<inTangent>6.390461 -34.275196 11.030925</inTangent>
+				<outTangent>17.167154 0.000000 20.909754</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.146267</startTime>
+				<value>-74.511467 21.127285 -4.206285</value>
+				<inTangent>17.167154 -0.000000 20.909754</inTangent>
+				<outTangent>0.000000 -36.894238 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.500000</startTime>
+				<value>-74.511467 8.076560 -4.206285</value>
+				<inTangent>-0.000000 -36.894238 -0.000000</inTangent>
+				<outTangent>-0.000000 -36.894238 -0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>59.999996</inTangent>
+				<outTangent>59.999996</outTangent>
+				<tangentMode>256</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.033333</startTime>
+				<value>2.000000</value>
+				<inTangent>59.999996</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.500000</startTime>
+				<value>2.000000</value>
+				<inTangent>-0.000000</inTangent>
+				<outTangent>-15.000041</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.633333</startTime>
+				<value>0.000000</value>
+				<inTangent>-15.000041</inTangent>
+				<outTangent>-7.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>magic_sparkle_4</name>
+		<type>particle</type>
+		<resource>particles/Environment/hangar/h23_slot_garland_sparkle4.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-81.047775 8.467888 -27.776665</value>
+				<inTangent>-0.000038 46.544853 0.000000</inTangent>
+				<outTangent>0.000000 38.931931 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.310640</startTime>
+				<value>-81.047775 20.561687 -27.776665</value>
+				<inTangent>-0.000000 38.931931 -0.000000</inTangent>
+				<outTangent>-4.120018 20.997038 -32.524536</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.368271</startTime>
+				<value>-81.285217 21.771774 -29.651096</value>
+				<inTangent>-4.120018 20.997038 -32.524536</inTangent>
+				<outTangent>0.000000 36.611095 -13.240964</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.430260</startTime>
+				<value>-81.285217 24.041267 -30.471893</value>
+				<inTangent>-0.000000 36.611095 -13.240964</inTangent>
+				<outTangent>0.000000 38.393795 6.450662</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.483992</startTime>
+				<value>-81.285217 26.104244 -30.125286</value>
+				<inTangent>-0.000000 38.393795 6.450662</inTangent>
+				<outTangent>-5.451746 23.022303 -30.918394</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.542020</startTime>
+				<value>-81.601570 27.440178 -31.919413</value>
+				<inTangent>-5.451746 23.022303 -30.918394</inTangent>
+				<outTangent>-4.235390 -22.848980 -31.235880</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.604393</startTime>
+				<value>-81.865746 26.015011 -33.867699</value>
+				<inTangent>-4.235390 -22.848980 -31.235880</inTangent>
+				<outTangent>0.000000 -38.690258 4.331095</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.657649</startTime>
+				<value>-81.865746 23.954533 -33.637043</value>
+				<inTangent>-0.000000 -38.690258 4.331095</inTangent>
+				<outTangent>0.000000 -37.494446 -10.481522</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.723121</startTime>
+				<value>-81.865746 21.499701 -34.323288</value>
+				<inTangent>-0.000000 -37.494446 -10.481522</inTangent>
+				<outTangent>0.000000 -18.679487 -34.158035</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.779442</startTime>
+				<value>-81.865746 20.447660 -36.247089</value>
+				<inTangent>-0.000000 -18.679487 -34.158035</inTangent>
+				<outTangent>27.676830 -27.380402 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.808364</startTime>
+				<value>-81.065254 19.655743 -36.247089</value>
+				<inTangent>27.676830 -27.380402 -0.000000</inTangent>
+				<outTangent>0.000000 0.000000 -38.931889</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.835177</startTime>
+				<value>-81.065254 19.655743 -37.290974</value>
+				<inTangent>-0.000000 -0.000000 -38.931889</inTangent>
+				<outTangent>0.000000 32.415455 -21.562351</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.004227</startTime>
+				<value>-81.065254 25.135574 -40.936089</value>
+				<inTangent>-0.000000 32.415455 -21.562351</inTangent>
+				<outTangent>0.000000 -31.563078 -22.791861</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.157039</startTime>
+				<value>-81.065254 20.312365 -44.418953</value>
+				<inTangent>-0.000000 -31.563078 -22.791861</inTangent>
+				<outTangent>0.000000 0.000000 -38.931999</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.174882</startTime>
+				<value>-81.065254 20.312365 -45.113617</value>
+				<inTangent>-0.000000 -0.000000 -38.931999</inTangent>
+				<outTangent>0.000000 -38.931934 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.500000</startTime>
+				<value>-81.065254 7.654900 -45.113617</value>
+				<inTangent>-0.000000 -38.931934 -0.000000</inTangent>
+				<outTangent>-0.000000 -189.861816 -0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>59.999996</inTangent>
+				<outTangent>59.999996</outTangent>
+				<tangentMode>256</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.033333</startTime>
+				<value>2.000000</value>
+				<inTangent>59.999996</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.500000</startTime>
+				<value>2.000000</value>
+				<inTangent>-0.000000</inTangent>
+				<outTangent>-15.000041</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.633333</startTime>
+				<value>0.000000</value>
+				<inTangent>-15.000041</inTangent>
+				<outTangent>-7.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>magic_sparkle_5</name>
+		<type>particle</type>
+		<resource>particles/Environment/hangar/h23_slot_garland_sparkle4.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-73.937729 6.912149 -65.849350</value>
+				<inTangent>-0.000038 46.544853 0.000000</inTangent>
+				<outTangent>0.000000 20.643141 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.391103</startTime>
+				<value>-73.937729 14.985744 -65.849350</value>
+				<inTangent>-0.000000 20.643141 -0.000000</inTangent>
+				<outTangent>0.000000 9.076821 -18.540516</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.467925</startTime>
+				<value>-73.937729 15.683042 -67.273666</value>
+				<inTangent>-0.000000 9.076821 -18.540516</inTangent>
+				<outTangent>0.000000 18.763996 -8.605326</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.560250</startTime>
+				<value>-73.937729 17.415428 -68.068153</value>
+				<inTangent>-0.000000 18.763996 -8.605326</inTangent>
+				<outTangent>-2.668615 20.310413 2.550477</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.657314</startTime>
+				<value>-74.196754 19.386831 -67.820595</value>
+				<inTangent>-2.668615 20.310413 2.550477</inTangent>
+				<outTangent>-1.284468 11.610477 -17.020180</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.742917</startTime>
+				<value>-74.306709 20.380728 -69.277580</value>
+				<inTangent>-1.284468 11.610477 -17.020180</inTangent>
+				<outTangent>0.209631 -10.652170 -17.681248</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.827607</startTime>
+				<value>-74.288956 19.478598 -70.775002</value>
+				<inTangent>0.209631 -10.652170 -17.681248</inTangent>
+				<outTangent>-0.144520 -20.612043 1.123451</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.922314</startTime>
+				<value>-74.302643 17.526478 -70.668602</value>
+				<inTangent>-0.144520 -20.612043 1.123451</inTangent>
+				<outTangent>-1.695910 -19.459787 -6.676805</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.019509</startTime>
+				<value>-74.467476 15.635094 -71.317551</value>
+				<inTangent>-1.695910 -19.459787 -6.676805</inTangent>
+				<outTangent>0.000000 -9.091686 -18.533218</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.100487</startTime>
+				<value>-74.467476 14.898866 -72.818336</value>
+				<inTangent>-0.000000 -9.091686 -18.533218</inTangent>
+				<outTangent>0.000000 -20.643145 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.500000</startTime>
+				<value>-74.467476 6.651664 -72.818336</value>
+				<inTangent>-0.000000 -20.643145 -0.000000</inTangent>
+				<outTangent>-0.000000 -123.708038 -0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>59.999996</inTangent>
+				<outTangent>59.999996</outTangent>
+				<tangentMode>256</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.033333</startTime>
+				<value>2.000000</value>
+				<inTangent>59.999996</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.500000</startTime>
+				<value>2.000000</value>
+				<inTangent>-0.000000</inTangent>
+				<outTangent>-15.000041</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.633333</startTime>
+				<value>0.000000</value>
+				<inTangent>-15.000041</inTangent>
+				<outTangent>-7.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

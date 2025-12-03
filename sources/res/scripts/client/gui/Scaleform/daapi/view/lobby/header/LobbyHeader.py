@@ -6,12 +6,14 @@ import BigWorld, WWISE, typing
 from adisp import adisp_async, adisp_process
 from builtins import object, str
 from past.utils import old_div
+from gui.impl.new_year.navigation import NewYearNavigation
+from gui.shared.tutorial_helper import getTutorialGlobalStorage
 from shared_utils import CONST_CONTAINER
 import constants, wg_async as future_async
 from CurrentVehicle import g_currentPreviewVehicle, g_currentVehicle
 from PlayerEvents import g_playerEvents
 from SoundGroups import g_instance as SoundGroupsInstance
-from account_helpers.AccountSettings import ACTIVE_TEST_PARTICIPATION_CONFIRMED, AccountSettings, KNOWN_SELECTOR_BATTLES, LAST_SHOP_ACTION_COUNTER_MODIFICATION, NEW_LOBBY_TAB_COUNTER, NEW_SHOP_TABS, OVERRIDEN_HEADER_COUNTER_ACTION_ALIASES, QUESTS, QUEST_DELTAS, QUEST_DELTAS_COMPLETION, RECRUITS_NOTIFICATIONS
+from account_helpers.AccountSettings import ACTIVE_TEST_PARTICIPATION_CONFIRMED, AccountSettings, KNOWN_SELECTOR_BATTLES, LAST_SHOP_ACTION_COUNTER_MODIFICATION, NEW_LOBBY_TAB_COUNTER, NEW_SHOP_TABS, OVERRIDEN_HEADER_COUNTER_ACTION_ALIASES, QUESTS, QUEST_DELTAS, QUEST_DELTAS_COMPLETION, RECRUITS_NOTIFICATIONS, NY_DAILY_QUESTS_VISITED
 from constants import EPlatoonButtonState, PREBATTLE_TYPE, PREMIUM_TYPE
 from debug_utils import LOG_ERROR
 from exchange.personal_discounts_constants import EXCHANGE_RATE_GOLD_NAME, EXCHANGE_RATE_FREE_XP_NAME
@@ -74,11 +76,12 @@ from gui.tournament.tournament_helpers import showTournaments, isTournamentEnabl
 from helpers import dependency, i18n, isPlayerAccount, time_utils
 from predefined_hosts import PING_STATUSES, g_preDefinedHosts
 from renewable_subscription_common.settings_constants import WotPlusState
+from gui.shared.ny_vignette_settings_switcher import checkVignetteSettings
 from skeletons.account_helpers.settings_core import ISettingsCore
 from skeletons.connection_mgr import IConnectionManager
 from skeletons.gui.battle_matters import IBattleMattersController
 from skeletons.gui.game_control import IAnonymizerController, IBadgesController, IBattleRoyaleController, IBoostersController, IChinaController, IClanNotificationController, IEpicBattleMetaGameController, IGameSessionController, IIGRController, ILimitedUIController, IMapboxController, IMapsTrainingController, IPlatoonController, IRankedBattlesController, IServerStatsController, ISteamCompletionController, IWalletController, IAchievements20Controller, IAchievementsController, IHangarGuiController, IExchangeRatesWithDiscountsProvider
-from skeletons.gui.game_control import IWotPlusController
+from skeletons.gui.game_control import IWotPlusController, IFestivityController
 from skeletons.gui.goodies import IGoodiesCache
 from skeletons.gui.impl import IGuiLoader
 from skeletons.gui.lobby_context import ILobbyContext
@@ -90,6 +93,7 @@ from skeletons.gui.shared import IItemsCache
 from skeletons.gui.shared.utils import IHangarSpace
 from skeletons.gui.storage_novelty import IStorageNovelty
 from skeletons.gui.techtree_events import ITechTreeEventsListener
+from tutorial.control.context import GLOBAL_FLAG
 from uilogging.wot_plus.loggers import WotPlusHeaderLogger
 if typing.TYPE_CHECKING:
     from typing import Optional, Dict, Tuple
@@ -269,6 +273,7 @@ class LobbyHeader(LobbyHeaderMeta, ClanEmblemsHelper, IGlobalListener):
     __limitedUICtrl = dependency.descriptor(ILimitedUIController)
     __advAchmntCtrl = dependency.descriptor(IAchievementsController)
     __hangarGuiCtrl = dependency.descriptor(IHangarGuiController)
+    _festivityController = dependency.descriptor(IFestivityController)
     __exchangeRatesProvider = dependency.descriptor(IExchangeRatesWithDiscountsProvider)
     __SELECTOR_TOOLTIP_TYPE = TOOLTIPS.HEADER_BATTLETYPE
     __MODE_SELECTOR_ORANGE_LINKAGE = 'BGAnimOrangeUI'
@@ -283,6 +288,7 @@ class LobbyHeader(LobbyHeaderMeta, ClanEmblemsHelper, IGlobalListener):
         self.__isSubscriptionEnabled = isSubscriptionEnabled()
         self.__clanIconID = None
         self.__menuVisibilityHelper = _LobbyHeaderVisibilityHelper()
+        self.__addedTopSubViews = []
         self.__buttonsToExcludeCached = None
         self._wotPlusUILogger = WotPlusHeaderLogger()
         self.__luiRulesUpdaters = self.__getLuiRulesUpdaters()
@@ -609,6 +615,7 @@ class LobbyHeader(LobbyHeaderMeta, ClanEmblemsHelper, IGlobalListener):
         g_preDefinedHosts.requestPing()
         self.settingsCore.onSettingsChanged += self.__onSettingsChanged
         self.addListener(events.LobbyHeaderMenuEvent.TOGGLE_VISIBILITY, self.__onToggleVisibilityMenu, scope=EVENT_BUS_SCOPE.LOBBY)
+        self.addListener(events.LobbyHeaderEvent.TOGGLE_VISIBILITY, self.__onToggleVisibilityHeader, scope=EVENT_BUS_SCOPE.LOBBY)
         self.storageNovelty.onUpdated += self.__updateStorageTabCounter
         self.offersNovelty.onUpdated += self.__updateStorageTabCounter
         AccountSettings.onSettingsChanging += self.__onAccountSettingsChanging
@@ -699,6 +706,7 @@ class LobbyHeader(LobbyHeaderMeta, ClanEmblemsHelper, IGlobalListener):
         self._wotPlusCtrl.onDataChanged -= self._onWotPlusDataChanged
         self.lobbyContext.getServerSettings().onServerSettingsChange -= self._onServerSettingsChange
         self.removeListener(events.LobbyHeaderMenuEvent.TOGGLE_VISIBILITY, self.__onToggleVisibilityMenu, scope=EVENT_BUS_SCOPE.LOBBY)
+        self.removeListener(events.LobbyHeaderEvent.TOGGLE_VISIBILITY, self.__onToggleVisibilityHeader, scope=EVENT_BUS_SCOPE.LOBBY)
         self.storageNovelty.onUpdated -= self.__updateStorageTabCounter
         self.offersNovelty.onUpdated -= self.__updateStorageTabCounter
         AccountSettings.onSettingsChanging -= self.__onAccountSettingsChanging
@@ -733,6 +741,10 @@ class LobbyHeader(LobbyHeaderMeta, ClanEmblemsHelper, IGlobalListener):
     def __platoonDropdown(self, event):
         if event:
             self.as_setIsPlatoonDropdownShowingS(event.ctx['showing'])
+        for pyView in self.__addedTopSubViews:
+            pyView.onDispose -= self.__onViewDisposed
+
+        self.__addedTopSubViews = []
 
     def __onFullScreenModeSelector(self, event):
         if event:
@@ -773,8 +785,9 @@ class LobbyHeader(LobbyHeaderMeta, ClanEmblemsHelper, IGlobalListener):
                 self.requestClanEmblem16x16(g_clanCache.clanDBID)
             else:
                 self._updateHangarMenuData()
-            if diff is not None and any(self.goodiesCache.haveBooster(itemId) for itemId in diff):
-                SoundGroupsInstance.playSound2D('warehouse_booster')
+            if diff is not None and SoundGroupsInstance is not None:
+                if any(self.goodiesCache.haveBooster(itemId) for itemId in diff):
+                    SoundGroupsInstance.playSound2D('warehouse_booster')
             return
 
     def __setPlayerInfo(self, tooltip, tooltipType, tooltipArgs=None, warningIcon=False, userVO=None):
@@ -1015,7 +1028,7 @@ class LobbyHeader(LobbyHeaderMeta, ClanEmblemsHelper, IGlobalListener):
         self.__updateAccountAttrs()
 
     def __onViewAddedToContainer(self, _, pyEntity):
-        if pyEntity.layer is WindowLayer.SUB_VIEW:
+        if not pyEntity.isDisposed() and pyEntity.layer is WindowLayer.SUB_VIEW:
             pyAlias = pyEntity.alias
             alias = self._WULF_TO_TAB.get(pyAlias, self.__externalTabsWulfToTab.get(pyAlias, pyAlias))
             if alias in self.TABS.ALL() or alias in self.__externalTabs:
@@ -1023,6 +1036,16 @@ class LobbyHeader(LobbyHeaderMeta, ClanEmblemsHelper, IGlobalListener):
             elif self.__currentScreen is not None and alias in self.DESELECT_TAB_ALIASES:
                 self.as_doDeselectHeaderButtonS(self.__currentScreen)
                 self.__currentScreen = None
+        if not pyEntity.isDisposed() and pyEntity.layer is WindowLayer.TOP_SUB_VIEW:
+            self.__addedTopSubViews.append(pyEntity)
+            pyEntity.onDispose += self.__onViewDisposed
+        return
+
+    def __onViewDisposed(self, pyEntity):
+        pyEntity.onDispose -= self.__onViewDisposed
+        self.__addedTopSubViews.remove(pyEntity)
+        currentMenuName = NewYearNavigation.getCurrentMenuName()
+        getTutorialGlobalStorage().setValue(GLOBAL_FLAG.NY_NAVIGATION_DISABLED, currentMenuName is None)
         return
 
     def __getContainer(self, layer):
@@ -1102,6 +1125,7 @@ class LobbyHeader(LobbyHeaderMeta, ClanEmblemsHelper, IGlobalListener):
             self.__updateNavButtonsState(isNavigationEnabled)
             self.__updateAccountAttrs()
             self._updateHangarMenuData()
+            checkVignetteSettings(None)
             return
 
     def __deselectHeaderButtons(self, *_):
@@ -1115,6 +1139,10 @@ class LobbyHeader(LobbyHeaderMeta, ClanEmblemsHelper, IGlobalListener):
         newState = self.__menuVisibilityHelper.getActiveState()
         if prevState != newState:
             self.as_toggleVisibilityMenuS(newState)
+
+    def __onToggleVisibilityHeader(self, event):
+        visible = event.ctx['visible']
+        self.as_hideHeaderS(not visible)
 
     def _checkFightButtonDisabled(self, canDo, isLocked):
         return not canDo or isLocked
@@ -1188,6 +1216,8 @@ class LobbyHeader(LobbyHeaderMeta, ClanEmblemsHelper, IGlobalListener):
             AccountSettings.setSettings(QUESTS, questSettings)
 
     def __onMissionVisited(self, counter):
+        if not AccountSettings.getUIFlag(NY_DAILY_QUESTS_VISITED):
+            counter += 1
         if counter:
             if not self.__limitedUICtrl.isRuleCompleted(LUI_RULES.missions):
                 return

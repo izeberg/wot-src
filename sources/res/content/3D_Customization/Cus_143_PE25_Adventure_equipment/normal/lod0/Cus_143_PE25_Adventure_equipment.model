@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.506990 -0.011569 -1.024527</min>
+		<max>0.139239 0.461041 1.008752</max>
+	</visibilityBox>
+	<parent>content/3D_Customization/Cus_143_PE25_Adventure_equipment/normal/lod1/Cus_143_PE25_Adventure_equipment</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>content/3D_Customization/Cus_143_PE25_Adventure_equipment/normal/lod0/Cus_143_PE25_Adventure_equipment</nodefullVisual>
+</root>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodelessVisual>vehicles/poland/Pl21_CS_63/_skins/Pl21_CS_63_HO26_3Dst/crash/lod0/Gun_01</nodelessVisual>
+	<parent>vehicles/poland/Pl21_CS_63/_skins/Pl21_CS_63_HO26_3Dst/crash/lod1/Gun_01</parent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.362266 -0.296398 -1.748773</min>
+		<max>0.464059 0.299190 5.288879</max>
+	</visibilityBox>
+	<extent>32.000000</extent>
+</root>

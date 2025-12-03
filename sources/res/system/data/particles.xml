@@ -279,11 +279,20 @@
 		<fn_effect_bin>particles/3D_Customization/Cus_45_FGM_Brokencontainer/Brokencontainer_idle_loop.eff</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/3D_Customization/Cus_45_FGM_Brokencontainer/Brokencontainer_event.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/3D_Customization/Cus_45_FGM_Brokencontainer/Brokencontainer_idle.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/3D_Customization/Cus_56_ArmiesA_Searchlight/sparks.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_56_ArmiesA_Searchlight/sparks.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/3D_Customization/Cus_101_WT_Container/Cus_101_WT_Container_idle.eff</fn_effect_bin>
 		<fn_effect_bin>particles/3D_Customization/Cus_99_WT_Machinegun/cus_99_wt_machinegun_shot.eff</fn_effect_bin>
 		<fn_effect_bin>particles/3D_Customization/Cus_97_WT_Electriccontainer/Cus_97_WT_Electriccontainer_Close.eff</fn_effect_bin>
 		<fn_effect_bin>particles/3D_Customization/Cus_138_BP18_Locker/Cus_138_BP18_Locker_dust.eff</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_138_BP18_Locker/Cus_138_BP18_Locker_dust.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/3D_Customization/Cus_109_Celestial_Bell/cus_109_wave.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_109_Celestial_Bell/Cus_109_wave.vfx</fn_effect_bin>
+		<preloadVisual>particles/mesh_particles/customization/cus_111_oldchina_coin.visual</preloadVisual>
+		<fn_effect_bin>particles/3D_Customization/Cus_111_Celestial_Chest/cus_111_chest_hit.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_111_Celestial_Chest/cus_111_chest_hit.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/3D_Customization/Cus_121_Biker_Bike/cus_121_flame.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_121_Biker_Bike/cus_121_flame.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/tank/rocket_accelerator/idle_fire_big01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Tank/rocket_accelerator/idle_fire_big01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/destruction/bc_25t_extendedammo_explosion.eff</fn_effect_bin>
@@ -2994,6 +3003,10 @@
 			<texture>particles/content_deferred/PFX_textures/eff_dirt.dds</texture>
 		</preload>
 		<preload>
+			<shader>\data\shaders\ps_water.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/water_splash.dds</texture>
+		</preload>
+		<preload>
 			<shader>\data\shaders\ps_water_displacement.fx</shader>
 			<texture>particles/content_deferred/PFX_textures/eff_tex_water.dds</texture>
 		</preload>
@@ -3088,6 +3101,22 @@
 		<preload>
 			<shader>\data\shaders\ps.fx</shader>
 			<texture>particles/content_deferred/PFX_textures/eff_fireworks.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/grinch_atlas.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/flame_03.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/grinch_paper_01.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/pencil_rinds.dds</texture>
 		</preload>
 		<fn_effect_bin>particles/tank/customization/It36_Progetto_C45_mod_71_M/it36_movement_sand.eff</fn_effect_bin>
 		<fn_effect_bin>particles/tank/customization/It36_Progetto_C45_mod_71_M/it36_idle_sand.eff</fn_effect_bin>
@@ -3310,6 +3339,14 @@
 		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_66_PM3_Jetpack/Cus_66_PM3_Jetpack_engine.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/3D_Customization/Cus_66_PM3_Jetpack/Cus_66_PM3_Jetpack_start.eff</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_66_PM3_Jetpack/Cus_66_PM3_Jetpack_start.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/3D_Customization/Cus_103_A15_Mouse_Mascot/cus_103_idle.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_103_A15_Mouse_Mascot/cus_103_idle.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/3D_Customization/Cus_103_A15_Mouse_Mascot/Cus_103_killed_5.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_103_A15_Mouse_Mascot/Cus_103_killed_5.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/3D_Customization/Cus_103_A15_Mouse_Mascot/Cus_103_killed_1.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_103_A15_Mouse_Mascot/Cus_103_killed_1.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/3D_Customization/Cus_103_A15_Mouse_Mascot/Cus_103_killed_3.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_103_A15_Mouse_Mascot/Cus_103_killed_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/tank/rocket_accelerator/idle_fire_big01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/rocket_accelerator/idle_fire_big01.vfx</fn_effect_bin>
 		<preloadVisual>particles/gpu_mesh/mesh/metal_sheet_medium_02.visual</preloadVisual>
@@ -3329,14 +3366,8 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/rocket_accelerator/fail_liquidfuel_switch_bz79.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/rocket_accelerator/stop_liquidfuel_nearempty_bz79.eff</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/rocket_accelerator/stop_liquidfuel_nearempty_bz79.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/3D_Customization/Cus_103_A15_Mouse_Mascot/cus_103_idle.eff</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_103_A15_Mouse_Mascot/cus_103_idle.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/3D_Customization/Cus_103_A15_Mouse_Mascot/Cus_103_killed_5.eff</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_103_A15_Mouse_Mascot/Cus_103_killed_5.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/3D_Customization/Cus_103_A15_Mouse_Mascot/Cus_103_killed_1.eff</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_103_A15_Mouse_Mascot/Cus_103_killed_1.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/3D_Customization/Cus_103_A15_Mouse_Mascot/Cus_103_killed_3.eff</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_103_A15_Mouse_Mascot/Cus_103_killed_3.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/winter_raid_26/abilities/ability_guided_missiles_explosion_01.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/winter_raid_26/abilities/ability_guided_missiles_explosion_01.vfx</fn_effect_bin>
 		<preloadVisual>particles/Tank/mechanics/ion_engine_arc.visual</preloadVisual>
 		<preloadVisual>particles/Tank/mechanics/ion_engine_arc_sparks.visual</preloadVisual>
 		<preloadVisual>particles/Tank/mechanics/ion_engine_dots.visual</preloadVisual>
@@ -3349,10 +3380,105 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/exhaust/cs67_turbo_start.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/exhaust/cs67_turbo_stop.eff</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/exhaust/cs67_turbo_stop.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/winter_raid_26/abilities/ability_guided_missiles_trail_02.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/winter_raid_26/abilities/ability_guided_missiles_trail_02.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/winter_raid_26/abilities/ability_jump_oneshot.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/winter_raid_26/abilities/ability_jump_oneshot.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/winter_raid_26/abilities/ability_jump_trail_01.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/winter_raid_26/abilities/ability_jump_trail_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/customization/G177_E65_Zwilling_W25_3Dst/mgun_shooting.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/customization/G177_E65_Zwilling_W25_3Dst/steam_exhaust.eff</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/customization/G177_E65_Zwilling_W25_3Dst/mgun_shooting.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/customization/G177_E65_Zwilling_W25_3Dst/steam_exhaust.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/rocket_accelerator/ra_paper_loop_2.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/rocket_accelerator/ra_paper_loop_2.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/rocket_accelerator/ra_paper_in.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/rocket_accelerator/ra_paper_in.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/rocket_accelerator/ra_paper_out.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/rocket_accelerator/ra_paper_out.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/winter_raid_26/abilities/ability_ram_02.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/winter_raid_26/abilities/ability_ram_02.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/winter_raid_26/abilities/ability_sonar_blast.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/winter_raid_26/abilities/ability_sonar_blast.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/winter_raid_26/abilities/ability_dart_splash.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/winter_raid_26/abilities/ability_dart_splash.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/tank/auto_shoot/hits/grinch_hit_paper_small_ac.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/tank/auto_shoot/hits/grinch_hit_paper_small_ac.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/quality_set_0_grinch_hit_paper_small_ac.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/forcefieldHit_grinch_hit_paper_small_ac.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/tank/auto_shoot/shots/grinch_shot_ac.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/tank/auto_shoot/shots/grinch_shot_ac.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/shots/grinch_shot_ac_ForceField.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/tank/auto_shoot/shots/grinch_shot_ac_end.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/tank/auto_shoot/shots/grinch_shot_ac_end.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/tank/auto_shoot/shots/grinch_shot_ac_start.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/tank/auto_shoot/shots/grinch_shot_ac_start.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/shots/grinch_shot_ac_start_ForceField_start.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/tank/destruction/grinch_destruction_large.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/tank/destruction/grinch_destruction_large.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/destruction/quality_set_0_grinch_destruction_large.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/tank/destruction/grinch_destruction_medium.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/tank/destruction/grinch_destruction_medium.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/destruction/quality_set_0_grinch_destruction_medium.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/tank/destruction/grinch_destruction_small.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/tank/destruction/grinch_destruction_small.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/destruction/quality_set_0_grinch_destruction_small.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/tank/destruction/grinch_destruction_turret.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/tank/destruction/grinch_destruction_turret.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/destruction/quality_set_0_grinch_destruction_turret.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/destruction/grinch_destruction_ice_capture.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/destruction/grinch_destruction_ice_capture.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/destruction/quality_set_0_grinch_destruction_ice_capture.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/tank/shots/grinch_shot_medium.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/tank/shots/grinch_shot_medium.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/shots/grinch_shot_medium_ForceField.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/tank/shots/grinch_shot_small.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/tank/shots/grinch_shot_small.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/shots/grinch_shot_small_ForceField.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/tank/shots/grinch_shot_large.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/tank/shots/grinch_shot_large.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/shots/grinch_shot_large_ForceField.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/shells_eff/grinch_hit_paper_large.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/shells_eff/grinch_hit_paper_large.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Shells_Eff/forcefieldHit_grinch_hit_paper_large.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Shells_Eff/quality_set_0_grinch_hit_paper_large.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/shells_eff/grinch_hit_paper_medium.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/shells_eff/grinch_hit_paper_medium.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Shells_Eff/quality_set_0_grinch_hit_paper_medium.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Shells_Eff/forcefieldHit_grinch_hit_paper_medium.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/shells_eff/grinch_hit_paper_small.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/shells_eff/grinch_hit_paper_small.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Shells_Eff/quality_set_0_grinch_hit_paper_small.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Shells_Eff/forcefieldHit_grinch_hit_paper_small.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/interior/226_gift_attack_paper_health_02.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/226_gift_attack_paper_health_02.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/interior/226_gift_attack_paper_snow_fall_02.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/226_gift_attack_paper_snow_fall_02.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/Shells_Eff/grinch_trace_large.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Shells_Eff/grinch_trace_large.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/Shells_Eff/grinch_trace_main.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Shells_Eff/grinch_trace_main.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/Shells_Eff/grinch_hit_paper_glue_large.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Strike_Eff/grinch_hit_paper_glue_large.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/Shells_Eff/fep_ny_shellFall_large_HE.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Shells_Eff/fep_ny_shellFall_large_he.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/226_gift_attack_snow_dust_04.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/226_gift_attack_snow_dust_04.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/environment/winter_raid_26/map/jumper_platform.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/winter_raid_26/map/jumper_platform.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/environment/winter_raid_26/map/jumper_platform_splash.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/winter_raid_26/map/jumper_platform_splash.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/environment/winter_raid_26/abilities/ability_jump_jump_pad.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/winter_raid_26/abilities/ability_jump_jump_pad.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/null.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/winter_raid_26/abilities/ability_goo_shot_muzzle_splash.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/winter_raid_26/abilities/ability_goo_shot_muzzle_splash.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/winter_raid_26/abilities/ability_sonar_marked.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/winter_raid_26/abilities/ability_sonar_marked.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/tank_collision_paper.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/tank_collision_paper.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/tank_collision_paper_big.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/tank_collision_paper_big.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Battle_Royal/Afterburning/br_nitro_gearup.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Battle_Royal/Afterburning/br_nitro_idle.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Battle_Royal/Afterburning/br_nitro_load.vfx</fn_effect_bin>

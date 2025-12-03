@@ -5,7 +5,6 @@ if typing.TYPE_CHECKING:
     from collections_common import Collection, CollectionItem
     from comp7.helpers.comp7_server_settings import Comp7RewardsConfig, Comp7Config
     from Event import Event
-    from wg_async import _Future
     from gui.collection.resources.cdn.cache import CollectionsCdnCacheMgr
     from fun_random.gui.feature.models.common import FunSubModesStatus
     from fun_random.gui.feature.models.notifications import FunNotification
@@ -463,10 +462,19 @@ class IHeroTankController(IGameController):
     def getCurrentVehicleName(self):
         raise NotImplementedError
 
+    def getCurrentFromBoxes(self):
+        raise NotImplementedError
+
     def getCurrentShopUrl(self):
         raise NotImplementedError
 
     def setDebugTankCD(self, debugTankCD):
+        raise NotImplementedError
+
+    def isEnabled(self):
+        raise NotImplementedError
+
+    def setEnabled(self, isEnabled):
         raise NotImplementedError
 
 
@@ -1605,6 +1613,9 @@ class ICraftmachineController(IGameController):
 
 class ICalendarController(IGameController):
 
+    def mustShow(self):
+        raise NotImplementedError
+
     def updateHeroAdventActionInfo(self):
         raise NotImplementedError
 
@@ -2121,7 +2132,9 @@ class IMapboxController(IGameController, ISeasonProvider):
 
 
 class IOverlayController(IGameController):
+    onStateChanged = None
 
+    @property
     def isActive(self):
         raise NotImplementedError
 
@@ -2150,6 +2163,15 @@ class ISteamCompletionController(IGameController):
         raise NotImplementedError
 
     def setConfirmEmailOverlayAllowed(self, isAllowed):
+        raise NotImplementedError
+
+    def lock(self, key):
+        raise NotImplementedError
+
+    def unlock(self, key):
+        raise NotImplementedError
+
+    def hasLock(self, key):
         raise NotImplementedError
 
 
@@ -2517,6 +2539,7 @@ class IGiftSystemController(IGameController):
 class ISeniorityAwardsController(IGameController):
     onUpdated = None
     onVehicleSelectionChanged = None
+    onQuestsReceived = None
 
     @property
     def config(self):
@@ -2572,6 +2595,10 @@ class ISeniorityAwardsController(IGameController):
 
     @property
     def categories(self):
+        raise NotImplementedError
+
+    @property
+    def maxCategory(self):
         raise NotImplementedError
 
     @property
@@ -2633,9 +2660,6 @@ class ISeniorityAwardsController(IGameController):
         raise NotImplementedError
 
     def getAvailableVehicleSelectionRewards(self):
-        raise NotImplementedError
-
-    def selectVehicleReward(self, vehicleRewardId):
         raise NotImplementedError
 
     def getVehicleSelectionQuestReward(self, vehicleRewardId):
@@ -3106,6 +3130,10 @@ class IHangarSpaceSwitchController(IGameController):
     def lockHangarOverride(self, sceneName):
         raise NotImplementedError
 
+    @property
+    def currentSceneName(self):
+        raise NotImplementedError
+
 
 class ICollectionsSystemController(IGameController):
     onServerSettingsChanged = None
@@ -3231,6 +3259,15 @@ class IAchievements20EarningController(IGameController):
         raise NotImplementedError
 
     def resume(self):
+        raise NotImplementedError
+
+    def lock(self, key):
+        raise NotImplementedError
+
+    def unlock(self, key):
+        raise NotImplementedError
+
+    def hasLock(self, key):
         raise NotImplementedError
 
 
@@ -3644,6 +3681,13 @@ class IAchievementsController(IGameController):
         raise NotImplementedError
 
     def setShowHint(self, value):
+        raise NotImplementedError
+
+
+class IGFNotificationsController(IGameController):
+    onBattleQueueStateUpdated = None
+
+    def selectRandomBattle(self, callback):
         raise NotImplementedError
 
 

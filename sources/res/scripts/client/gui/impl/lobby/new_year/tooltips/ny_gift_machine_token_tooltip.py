@@ -1,0 +1,26 @@
+from frameworks.wulf import ViewSettings
+from gui.impl.gen import R
+from gui.impl.gen.view_models.views.lobby.new_year.tooltips.ny_gift_machine_token_tooltip_model import NyGiftMachineTokenTooltipModel
+from gui.impl.pub import ViewImpl
+from helpers import dependency
+from skeletons.new_year import INewYearController
+
+class NyGiftMachineTokenTooltip(ViewImpl):
+    __slots__ = ()
+
+    def __init__(self, *args, **kwargs):
+        settings = ViewSettings(R.views.mono.holiday_ops.tooltips.ho_gift_machine_token_tooltip())
+        settings.model = NyGiftMachineTokenTooltipModel()
+        settings.args = args
+        settings.kwargs = kwargs
+        super(NyGiftMachineTokenTooltip, self).__init__(settings)
+
+    @property
+    def viewModel(self):
+        return super(NyGiftMachineTokenTooltip, self).getViewModel()
+
+    def _initialize(self, *args, **kwargs):
+        super(NyGiftMachineTokenTooltip, self)._initialize()
+        _nyController = dependency.instance(INewYearController)
+        with self.viewModel.transaction() as (tx):
+            tx.setTokenCount(_nyController.currencies.getCoinsCount())

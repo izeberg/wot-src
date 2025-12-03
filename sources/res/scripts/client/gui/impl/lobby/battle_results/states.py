@@ -41,6 +41,7 @@ _TANK_SIZE_LOWER_BOUNDS = (
  float('-inf'), 5.0, 8.0)
 _HIDDEN_TANK_LOCATION = Math.Vector3(0, -10000, 0)
 _SHOULD_GO_BACK_AFTER_LOADING = 'shouldGoBackAfterLoading'
+_TAB_STATE_ID = 'tabStateId'
 _PBS_SUBHANGAR_GROUPS_BY_SIZE = (
  SubhangarStateGroups.PostBattleSmall,
  SubhangarStateGroups.PostBattleMedium,
@@ -107,8 +108,8 @@ class PostBattleResultsEntryState(LobbyState, SubhangarStateGroupConfigProvider)
         return self.__cachedParams
 
     @classmethod
-    def goTo(cls, arenaUniqueID, bonusType):
-        super(PostBattleResultsEntryState, cls).goTo(arenaUniqueID=arenaUniqueID, bonusType=bonusType)
+    def goTo(cls, arenaUniqueID, bonusType, tabStateId=None):
+        super(PostBattleResultsEntryState, cls).goTo(arenaUniqueID=arenaUniqueID, bonusType=bonusType, tabStateId=tabStateId)
 
     def getNavigationDescription(self):
         return LobbyStateDescription(title=backport.text(R.strings.pages.titles.battle_results()))
@@ -252,6 +253,9 @@ class PostBattleResultsState(SFViewLobbyState, SubhangarStateGroupConfigProvider
         self.__cachedParams = {}
         return
 
+    def serializeParams(self):
+        return self.__cachedParams
+
     def getSubhangarStateGroupConfig(self):
         _, reusable = self.__battleResults.getStatsCtrl(self.__cachedParams.get('arenaUniqueID', None)).getResults()
         geometryName = reusable.common.arenaType.getGeometryName()
@@ -321,6 +325,10 @@ class PostBattleResultsState(SFViewLobbyState, SubhangarStateGroupConfigProvider
         lockNotificationManager(False, source=self.STATE_ID, releasePostponed=True)
         self.__blur = self.__blurCtrl.createBlur((
          ImmediateSceneBlurConfig(spaceID=self.__hangarSpace.spaceID, settings=self.__blurCtrl.getSettingsByAlias(self._POST_BATTLE_BLUR_SETTINGS_KEY), persistent=True),))
+        if self.__cachedParams.get(_TAB_STATE_ID) is not None:
+            stateId = self.__cachedParams.pop(_TAB_STATE_ID)
+            self.getMachine().getStateByID(stateId).goTo(**self.__cachedParams)
+        return
 
     def _onExited(self):
         self.__blur.disable()
@@ -334,7 +342,7 @@ class PostBattleResultsState(SFViewLobbyState, SubhangarStateGroupConfigProvider
         return {'ctx': event.params}
 
 
-class PostBattleTab(LobbyState):
+class PostBattleTab(LobbyState, EventsHandler):
     __hangarSpace = dependency.descriptor(IHangarSpace)
 
     def __init__(self, flags=StateFlags.UNDEFINED):
@@ -347,11 +355,27 @@ class PostBattleTab(LobbyState):
 
     def _onEntered(self, event):
         super(PostBattleTab, self)._onEntered(event)
-        self.__cachedParams = event.params
+        self.__cachedParams = self.getParent().serializeParams()
+        self.__cachedParams.update(event.params)
         if hangarVehicleAABB() and self.__hangarSpace.spaceInited and self.__hangarSpace.isModelLoaded:
+            self._subscribe()
             return
         self.__cachedParams[_SHOULD_GO_BACK_AFTER_LOADING] = True
         _LoadingState.goTo(**self.__cachedParams)
+
+    def _onExited(self):
+        self.__cachedParams = {}
+        self._unsubscribe()
+        super(PostBattleTab, self)._onExited()
+
+    def _getEvents(self):
+        return (
+         (
+          self.__hangarSpace.onSpaceChanged, self.__onSpaceChanged),)
+
+    def __onSpaceChanged(self):
+        self.__cachedParams[_TAB_STATE_ID] = self.STATE_ID
+        PostBattleResultsEntryState.goTo(**self.__cachedParams)
 
 
 @PostBattleResultsState.parentOf

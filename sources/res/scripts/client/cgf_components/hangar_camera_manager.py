@@ -130,6 +130,7 @@ class HangarCameraManager(CGF.ComponentManager):
         self.__prevDOFParams = _DOFParams()
         self.__currentDOFParams = _DOFParams()
         self.__currentHorizontalFov = fovInstance.horizontalFov
+        self.__prevHorizontalFov = fovInstance.getFovAbsoluteValue()
         self.__isActive = True
         _logger.info('HangarCameraManager::activate')
         return
@@ -167,7 +168,7 @@ class HangarCameraManager(CGF.ComponentManager):
             _logger.info('HangarCameraManager::onTankCameraAdded')
 
     def isCameraAdded(self, cameraName):
-        for cameraComponent in self._cameraQuery:
+        for _, cameraComponent in self._cameraQuery:
             if cameraComponent.name == cameraName:
                 return True
 

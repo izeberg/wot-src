@@ -16,7 +16,9 @@ __all__ = ('ArgsEvent', 'ComponentEvent', 'LoadViewEvent', 'LoadGuiImplViewEvent
            'HasCtxEvent', 'DogTagsEvent', 'DeathCamEvent', 'FullscreenModeSelectorEvent',
            'ModeSelectorPopoverEvent', 'ModeSubSelectorEvent', 'NavigationEvent',
            'BackNavigationEvent', 'PersonalMissionsEvent', 'UserMissionsEvent', 'GUICommonEvent',
-           'PetObjectHoverEvent', 'PetSystemEvent')
+           'PetObjectHoverEvent', 'PetSystemEvent', 'ObjectHoverEvent', 'NyResourcesEvent',
+           'NyResourcesConverterPopup', 'NyGladeVisibilityEvent', 'NyMarketPlaceRewardEvent',
+           'NyCelebrityStoriesEvent', 'NyCelebrityAnimationEvent')
 _logger = logging.getLogger(__name__)
 
 class HasCtxEvent(SharedEvent):
@@ -74,9 +76,6 @@ class GameEvent(HasCtxEvent):
     SHOW_BTN_HINT = 'game/showBtnHint'
     HIDE_BTN_HINT = 'game/hideBtnHint'
     DESTROY_TIMERS_PANEL = 'game/destroyTimersPanel'
-    SHOW_LOOT_BOX_WINDOWS = 'game/showLootBoxWindows'
-    HIDE_LOOT_BOX_WINDOWS = 'game/hideLootBoxWindows'
-    CLOSE_LOOT_BOX_WINDOWS = 'game/closeLootBoxWindows'
     CHARGE_RELEASED = 'game/chargeReleased'
     PRE_CHARGE = 'game/preCharge'
     CONTROL_MODE_CHANGE = 'game/controlModeChange'
@@ -94,6 +93,7 @@ class GameEvent(HasCtxEvent):
     POINT_OF_INTEREST_ADDED = 'game/changeAmmunitionSetup'
     POINT_OF_INTEREST_REMOVED = 'game/changeAmmunitionSetup'
     PREBATTLE_INPUT_STATE_LOCKED = 'game/inputStateLocked'
+    IMAGE_VIEW_DONE = 'game/imageViewDone'
 
 
 class GUICommonEvent(SharedEvent):
@@ -235,6 +235,7 @@ class ShowDialogEvent(SharedEvent):
     SHOW_CYBER_SPORT_DIALOG = 'showCyberSportDialog'
     SHOW_CONFIRM_ORDER_DIALOG = 'showConfirmOrderDialog'
     SHOW_EXCHANGE_DIALOG = 'showExchangeDialog'
+    SHOW_EXCHANGE_DIALOG_TOP_WINDOW = 'showExchangeDialogTopWindow'
     SHOW_EXCHANGE_DIALOG_MODAL = 'showExchangeDialogModal'
     SHOW_CHECK_BOX_DIALOG = 'showCheckBoxDialog'
     SHOW_USE_AWARD_SHEET_DIALOG = 'useAwardSheetDialog'
@@ -319,6 +320,8 @@ class LobbySimpleEvent(HasCtxEvent):
     BATTLE_RESULTS_SHOW_QUEST = 'battleResultsWindowShowQuest'
     CHANGE_SOUND_ENVIRONMENT = 'changeSoundEnvironment'
     VEHICLE_PREVIEW_HIDDEN = 'vehiclePreviewHidden'
+    SWITCH_NEW_YEAR_VIEW = 'switchNewYearView'
+    SHOW_LOOT_BOX_VIEW = 'showLootBoxView'
 
 
 class MissionsEvent(HasCtxEvent):
@@ -382,6 +385,14 @@ class LobbyHeaderMenuEvent(LobbySimpleEvent):
     TOGGLE_VISIBILITY = 'toggleVisibilityHeaderMenu'
     MENU_CLICK = 'headerMenuClick'
     DESELECT_HEADER_BUTTONS = 'deselectHeaderButtons'
+
+
+class LobbyHeaderEvent(LobbySimpleEvent):
+    TOGGLE_VISIBILITY = 'toggleVisibilityHeader'
+
+
+class SkillDropEvent(SharedEvent):
+    SKILL_DROPPED_SUCCESSFULLY = 'skillDroppedSuccess'
 
 
 class CloseWindowEvent(SharedEvent):
@@ -530,6 +541,71 @@ class StrongholdEvent(HasCtxEvent):
     STRONGHOLD_LOADED = 'strongholdLoaded'
 
 
+class NyCelebrityAnimationEvent(HasCtxEvent):
+    ANIMATION_VIEW_CLOSED = 'animationViewClosed'
+    CLOSE_ANIMATION_VIEW = 'closeAnimationView'
+
+
+class NyCelebrityStoriesEvent(HasCtxEvent):
+    STORIES_VIEW_CLOSED = 'storiesViewClosed'
+
+
+class NyMarketPlaceRewardEvent(HasCtxEvent):
+    ON_VEHICLE_APPEARANCE_RESET = 'onVehicleAppearanceReset'
+
+
+class NyGladeVisibilityEvent(HasCtxEvent):
+    START_FADE_IN = 'startFadeIn'
+    END_FADE_IN = 'endFadeIn'
+    START_FADE_OUT = 'startFadeOut'
+    END_FADE_OUT = 'endFadeOut'
+    GLADE_FINALIZE = 'gladeFinalize'
+
+
+class NyDogEvent(SharedEvent):
+    DOG_PAGE_VISITED = 'dogPageVisited'
+    TO_HANGAR = 'toHangar'
+    START_PURCHASE = 'startPurchase'
+    END_PURCHASE = 'endPurchase'
+
+
+class NyResourcesEvent(HasCtxEvent):
+    RESOURCE_COLLECTED = 'resourceCollected'
+    FRIEND_RESOURCE_COLLECTED = 'friendResourceCollected'
+
+
+class NyJukeboxEvent(SharedEvent):
+    ON_CLICK_SIDA_A = 'onClickSideA'
+    ON_CLICK_SIDA_B = 'onClickSideB'
+    ON_HIGHLIGHT_ON = 'onHighlightOn'
+    ON_HIGHLIGHT_OFF = 'onHighlightOff'
+
+
+class NyResourcesConverterPopup(SharedEvent):
+    SHOW = 'NyResourcesConverterPopup/show'
+    HIDE = 'NyResourcesConverterPopup/hide'
+
+
+class NySelectVehiclePopOver(HasCtxEvent):
+    SHOW = 'NySelectVehiclePopOver/show'
+    HIDE = 'NySelectVehiclePopOver/hide'
+
+
+class HOLevelUpAnimation(HasCtxEvent):
+    START = 'start'
+    END = 'end'
+    CHANGED_VIEW = 'changedView'
+
+
+class NyInitialNotificationEvent(SharedEvent):
+    INITIAL_NOTIFICATION_SHOWN = 'initialNotificationShown'
+
+
+class ObjectHoverEvent(HasCtxEvent):
+    HOVER_IN = 'hoverIn'
+    HOVER_OUT = 'hoverOut'
+
+
 class ShopEvent(HasCtxEvent):
     SHOP_ACTIVATED = 'shopActivated'
     SHOP_DEACTIVATED = 'shopDeactivated'
@@ -638,6 +714,7 @@ class VehicleBuyEvent(HasCtxEvent):
 
 
 class HangarVehicleEvent(HasCtxEvent):
+    ON_HERO_TANK_LABEL_UPDATE_REQUIRED = 'hangarVehicle/onHeroTankLabelUpdateRequired'
     ON_HERO_TANK_LOADED = 'hangarVehicle/onHeroTankLoaded'
     ON_HERO_TANK_DESTROY = 'hangarVehicle/onHeroTankDestroy'
     ON_PLATOON_TANK_LOADED = 'hangarVehicle/onPlatoonTankLoaded'

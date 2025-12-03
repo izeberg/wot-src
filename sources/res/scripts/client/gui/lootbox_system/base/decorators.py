@@ -8,6 +8,9 @@ from gui.impl.gen.view_models.views.loot_box_compensation_tooltip_types import L
 from gui.impl.gen.view_models.views.loot_box_vehicle_compensation_tooltip_model import LootBoxVehicleCompensationTooltipModel
 from gui.impl.lobby.battle_pass.tooltips.battle_pass_coin_tooltip_view import BattlePassCoinTooltipView
 from gui.impl.lobby.battle_pass.tooltips.battle_pass_taler_tooltip import BattlePassTalerTooltip
+from gui.impl.lobby.new_year.tooltips.ny_decoration_tooltip import NyDecorationTooltip
+from gui.impl.lobby.new_year.tooltips.ny_random_resource_tooltip import NyRandomResourceTooltip
+from gui.impl.lobby.new_year.tooltips.ny_resource_tooltip import NyResourceTooltip
 from gui.impl.lobby.lootbox_system.base.tooltips.box_tooltip import BoxTooltip, BoxCompensationTooltip
 from gui.impl.lobby.lootbox_system.base.tooltips.guaranteed_reward_info_tooltip import GuaranteedRewardInfoTooltip
 from gui.impl.lobby.lootbox_system.base.tooltips.random_national_bonus_tooltip_view import RandomNationalBonusTooltipView
@@ -39,6 +42,8 @@ def createTooltipContentDecorator():
                 if contentID == R.views.lobby.battle_pass.tooltips.BattlePassTalerTooltip():
                     return BattlePassTalerTooltip()
                 tooltipData = getattr(self, 'getTooltipData', lambda _: None)(event)
+                if contentID == R.views.mono.holiday_ops.tooltips.ho_resource_tooltip() and tooltipData is None:
+                    return NyResourceTooltip(event.getArgument('type'))
                 if tooltipData is not None:
                     if contentID == R.views.lobby.awards.tooltips.RewardCompensationTooltip():
                         compTooltipData = {'iconBefore': event.getArgument('iconBefore', ''), 'labelBefore': event.getArgument('labelBefore', ''), 
@@ -52,6 +57,12 @@ def createTooltipContentDecorator():
                         return VehicleCompensationTooltipContent(settings)
                     if contentID == R.views.mono.lootbox.tooltips.random_national_bonus():
                         return RandomNationalBonusTooltipView(*tooltipData.specialArgs)
+                    if contentID == R.views.mono.holiday_ops.tooltips.ho_decoration_tooltip():
+                        return NyDecorationTooltip(*tooltipData.specialArgs)
+                    if contentID == R.views.mono.holiday_ops.tooltips.ho_resource_tooltip():
+                        return NyResourceTooltip(*tooltipData.specialArgs)
+                    if contentID == R.views.mono.holiday_ops.tooltips.ho_random_resource_tooltip():
+                        return NyRandomResourceTooltip(*tooltipData.specialArgs)
                 if contentID == R.views.mono.lootbox.tooltips.box_compensation():
                     if tooltipData is None:
                         return

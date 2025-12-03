@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.533985 -0.003895 -0.641958</min>
+		<max>0.107499 0.504722 0.630106</max>
+	</visibilityBox>
+	<parent>content/3D_Customization/Cus_144_PE25_Altar/normal/lod1/Cus_144_PE25_Altar</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>content/3D_Customization/Cus_144_PE25_Altar/normal/lod0/Cus_144_PE25_Altar</nodefullVisual>
+</root>

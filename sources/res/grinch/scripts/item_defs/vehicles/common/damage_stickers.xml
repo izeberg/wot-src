@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<grinch_hole>
+		<priority>1</priority>
+		<variant1>
+			<texName>maps/fx/damage_stickers/crumpled_paper_01_AM.dds</texName>
+			<bumpTexName>maps/fx/damage_stickers/crumpled_paper_01_NM.dds</bumpTexName>
+			<smTexName>maps/fx/damage_stickers/crumpled_paper_01_GMM.dds</smTexName>
+			<modelSizes>
+				0.6 0.6
+				<!--BW_String-->
+			</modelSizes>
+			<size>
+				0.01 0.01
+				<!--BW_String-->
+			</size>
+			<variation>
+				0.1
+				<!--BW_String-->
+			</variation>
+			<randomYaw>true</randomYaw>
+			<ignoreAlbedo>true</ignoreAlbedo>
+		</variant1>
+	</grinch_hole>
+</root>

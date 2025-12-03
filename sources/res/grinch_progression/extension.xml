@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<FeatureName>grinch_progression</FeatureName>
+	<IsEnabled>True</IsEnabled>
+	<Personality>GrinchProgressionPersonality</Personality>
+	<Components>
+		<StaticComponents>
+			<GrinchProgressionAccountComponent/>
+		</StaticComponents>
+		<DynamicComponents/>
+	</Components>
+	<Entities/>
+	<ExternalComponents/>
+</root>

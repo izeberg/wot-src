@@ -40,6 +40,7 @@ class LobbyStateDescription(object):
             INFO = 0
             QUESTION = 1
             VIDEO = 2
+            GIFT_MACHINE = 3
 
         def __init__(self, label='', tooltipHeader='', tooltipBody='', type=Type.INFO, onMoreInfoRequested=lambda : None):
             self.label = label

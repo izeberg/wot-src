@@ -34,6 +34,7 @@ from gui.Scaleform.required_libraries_config import LOBBY_REQUIRED_LIBRARIES
 from gui.sounds.SoundManager import SoundManager
 from gui.Scaleform.managers.TweenSystem import TweenManager
 from gui.Scaleform.managers.UtilsManager import UtilsManager
+from gui.Scaleform.managers.fade_manager import FadeManager
 from gui.Scaleform.managers.voice_chat import LobbyVoiceChatManager
 from gui.impl.gen import R
 from gui.shared import EVENT_BUS_SCOPE, g_eventBus
@@ -87,6 +88,7 @@ class LobbyEntry(AppEntry):
         self.__stateMachine = LobbyStateMachine()
         self.__untrackedStateObserver = _UntrackedStateObserver()
         self.__subhangarObserver = None
+        self.__fadeManager = None
         return
 
     @property
@@ -97,11 +99,16 @@ class LobbyEntry(AppEntry):
     def waitingManager(self):
         return self.__getWaitingFromContainer()
 
+    @property
+    def fadeManager(self):
+        return self.__fadeManager
+
     @uniprof.regionDecorator(label='gui.lobby', scope='enter')
     def afterCreate(self):
         g_eventBus.addListener(GUICommonEvent.LOBBY_VIEW_LOADING, self.__initLSM)
         g_playerEvents.onAccountBecomeNonPlayer += self.__finiLSM
         super(LobbyEntry, self).afterCreate()
+        self.__fadeManager.setup()
 
     @uniprof.regionDecorator(label='gui.lobby', scope='exit')
     def beforeDelete(self):
@@ -110,6 +117,10 @@ class LobbyEntry(AppEntry):
         g_playerEvents.onAccountBecomeNonPlayer -= self.__finiLSM
         g_eventBus.removeListener(GUICommonEvent.LOBBY_VIEW_LOADING, self.__initLSM)
         super(LobbyEntry, self).beforeDelete()
+        if self.__fadeManager:
+            self.__fadeManager.destroy()
+            self.__fadeManager = None
+        return
 
     def loadView(self, loadParams, *args, **kwargs):
 
@@ -151,6 +162,10 @@ class LobbyEntry(AppEntry):
                 self.__stateMachine.post(NavigationEvent(untrackedState.getStateID(), params=params))
                 return
         super(LobbyEntry, self).loadView(loadParams, *args, **kwargs)
+
+    def _createManagers(self):
+        super(LobbyEntry, self)._createManagers()
+        self.__fadeManager = FadeManager()
 
     def _createLoaderManager(self):
         return LoaderManager(self.proxy)

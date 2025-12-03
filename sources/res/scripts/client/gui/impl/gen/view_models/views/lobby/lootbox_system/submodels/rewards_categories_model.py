@@ -27,6 +27,11 @@ class Type(Enum):
     PERSONALRESERVES = 'personal_reserves'
     CONSUMABLES = 'consumables'
     RATIONS = 'rations'
+    HOTOYS = 'ny26Toys'
+    HOCRYSTAL = 'ny_crystal'
+    HOEMERALD = 'ny_emerald'
+    HOAMBER = 'ny_amber'
+    HOIRON = 'ny_iron'
 
 
 class RewardsCategoriesModel(ViewModel):

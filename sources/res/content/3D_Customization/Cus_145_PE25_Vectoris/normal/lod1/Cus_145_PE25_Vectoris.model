@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/3D_Customization/Cus_145_PE25_Vectoris/normal/lod2/Cus_145_PE25_Vectoris</parent>
+	<extent>64.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.117682 -0.100986 -0.354484</min>
+		<max>0.178088 0.581684 0.344669</max>
+	</visibilityBox>
+	<nodefullVisual>content/3D_Customization/Cus_145_PE25_Vectoris/normal/lod1/Cus_145_PE25_Vectoris</nodefullVisual>
+</root>

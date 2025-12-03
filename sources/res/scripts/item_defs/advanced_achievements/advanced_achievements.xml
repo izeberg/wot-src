@@ -8512,6 +8512,22 @@
 					<vehicle>germany:G185_Leopard_120_Verbessert</vehicle>
 				</conditions>
 			</achievement>
+			<achievement>
+				<id>472</id>
+				<deprecated>true</deprecated>
+				<UI>
+					<stringKey>GB156_Black_Prince_II</stringKey>
+					<background>vehicles</background>
+				</UI>
+				<stages>
+					<stage>
+						<value>1</value>
+					</stage>
+				</stages>
+				<conditions>
+					<vehicle>uk:GB156_Black_Prince_II</vehicle>
+				</conditions>
+			</achievement>
 		</vehicleAchievements>
 		<customizationAchievements>
 			<achievement>

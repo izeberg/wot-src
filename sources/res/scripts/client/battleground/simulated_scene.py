@@ -6,7 +6,7 @@ import AreaDestructibles
 from avatar_components.avatar_postmortem_component import SimulatedVehicleType
 from avatar_components.CombatEquipmentManager import CombatEquipmentManager
 from battleground.kill_cam_visuals import EffectsController
-from cgf_components.sequence_components import SequencePauseComponent, SequenceSnapshotComponent
+from cgf_components_common.sequence_components import SequencePauseComponent, SequenceSnapshotComponent
 from cgf_components_common.vehicle_mechanics import StationaryReloadSequenceParamsComponent
 from constants import SHELL_TYPES
 from gui.shared.gui_items.Vehicle import VEHICLE_CLASS_NAME

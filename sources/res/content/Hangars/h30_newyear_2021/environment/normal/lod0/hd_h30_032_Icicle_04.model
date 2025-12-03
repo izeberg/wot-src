@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>
+			-0.155468 0.0203621 -0.0625077
+			<!--BW_String-->
+		</min>
+		<max>
+			0.148568 1.04374 0.0477596
+			<!--BW_String-->
+		</max>
+	</visibilityBox>
+	<parent>content/Hangars/h30_newyear_2021/environment/normal/lod1/hd_h30_032_Icicle_04</parent>
+	<extent>100.000000</extent>
+	<nodelessVisual>content/Hangars/h30_newyear_2021/environment/normal/lod0/hd_h30_032_Icicle_04</nodelessVisual>
+</root>

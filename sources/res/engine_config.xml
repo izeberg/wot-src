@@ -1180,9 +1180,9 @@
 	</webBrowser>
 	<gameface>
 		<taskSystem>
-			<maxThreads>2</maxThreads>
+			<maxThreads>4</maxThreads>
 			<minThreads>2</minThreads>
-			<cpuCoresThreshold>5</cpuCoresThreshold>
+			<cpuCoresThreshold>1</cpuCoresThreshold>
 		</taskSystem>
 	</gameface>
 	<visualScript>

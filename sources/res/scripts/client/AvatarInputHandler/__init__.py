@@ -93,10 +93,10 @@ def addEmptyIfNotExits(name):
     return
 
 
+AIH_COMMANDS_DESC_MAP = {}
 OVERWRITE_CTRLS_DESC_MAP = {}
 for royaleBonusCap in constants.ARENA_BONUS_TYPE.BATTLE_ROYALE_RANGE:
-    OVERWRITE_CTRLS_DESC_MAP[royaleBonusCap] = {_CTRL_MODE.POSTMORTEM: (
-                             steel_hunter_control_modes.SHPostMortemControlMode, 'postMortemMode', _CTRL_TYPE.USUAL)}
+    OVERWRITE_CTRLS_DESC_MAP[royaleBonusCap] = {_CTRL_MODE.POSTMORTEM: (steel_hunter_control_modes.SHPostMortemControlMode, 'postMortemMode', _CTRL_TYPE.USUAL)}
 
 _DYNAMIC_CAMERAS = (
  DynamicCameras.ArcadeCamera.ArcadeCamera,
@@ -286,27 +286,33 @@ class AvatarInputHandler(CallbackDelayer, ScriptGameObject):
                     self.__commands.append(self.siegeModeControl)
             if typeDescr.isDualgunVehicle and not self.dualGunControl:
                 self.dualGunControl = DualGunController(typeDescr)
-            elif not typeDescr.isDualgunVehicle:
-                self.dualGunControl = None
-            self.__commands.extend(createMechanicControls(typeDescr))
-            if player.hasBonusCap(ARENA_BONUS_TYPE_CAPS.RADAR):
-                self.__commands.append(RadarControl())
-            if player.hasBonusCap(ARENA_BONUS_TYPE_CAPS.BATTLEROYALE):
-                self.__commands.append(VehicleUpdateControl())
-                self.__commands.append(VehicleUpgradePanelControl())
-                self.__detachedCommands.append(VehicleUpgradePanelControl())
-            if player.hasBonusCap(ARENA_BONUS_TYPE_CAPS.EPIC):
-                self.__detachedCommands.append(FLRandomReserves())
-            self.__persistentCommands.append(createDevCommandsControl())
-            if player.hasBonusCap(ARENA_BONUS_TYPE_CAPS.SWITCH_SETUPS):
-                self.__persistentCommands.append(PrebattleSetupsControl())
-            if vehicle.appearance:
-                vehicle.appearance.removeComponentByType(GenericComponents.ControlModeStatus)
-                vehicle.appearance.createComponent(GenericComponents.ControlModeStatus, _CTRL_MODES.index(self.__ctrlModeName))
-            if player.inWorld:
-                player.entityGameObject.removeComponentByType(GenericComponents.ControlModeStatus)
-                player.entityGameObject.createComponent(GenericComponents.ControlModeStatus, _CTRL_MODES.index(self.__ctrlModeName))
-            self.__commands.append(ArmorFlashlightControl())
+            else:
+                if not typeDescr.isDualgunVehicle:
+                    self.dualGunControl = None
+                self.__commands.extend(createMechanicControls(typeDescr))
+                if player.hasBonusCap(ARENA_BONUS_TYPE_CAPS.RADAR):
+                    self.__commands.append(RadarControl())
+                if player.hasBonusCap(ARENA_BONUS_TYPE_CAPS.BATTLEROYALE):
+                    self.__commands.append(VehicleUpdateControl())
+                    self.__commands.append(VehicleUpgradePanelControl())
+                    self.__detachedCommands.append(VehicleUpgradePanelControl())
+                if player.hasBonusCap(ARENA_BONUS_TYPE_CAPS.EPIC):
+                    self.__detachedCommands.append(FLRandomReserves())
+                self.__persistentCommands.append(createDevCommandsControl())
+                if player.hasBonusCap(ARENA_BONUS_TYPE_CAPS.SWITCH_SETUPS):
+                    self.__persistentCommands.append(PrebattleSetupsControl())
+                if vehicle.appearance:
+                    vehicle.appearance.removeComponentByType(GenericComponents.ControlModeStatus)
+                    vehicle.appearance.createComponent(GenericComponents.ControlModeStatus, _CTRL_MODES.index(self.__ctrlModeName))
+                if player.inWorld:
+                    player.entityGameObject.removeComponentByType(GenericComponents.ControlModeStatus)
+                    player.entityGameObject.createComponent(GenericComponents.ControlModeStatus, _CTRL_MODES.index(self.__ctrlModeName))
+                self.__commands.append(ArmorFlashlightControl())
+                for bonusCap, commands in AIH_COMMANDS_DESC_MAP.iteritems():
+                    if player.hasBonusCap(bonusCap):
+                        for command in commands:
+                            self.__commands.append(command())
+
             return
 
     def prerequisites(self):

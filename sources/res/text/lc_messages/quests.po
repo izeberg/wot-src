@@ -1232,6 +1232,30 @@ msgstr "Inscription"
 msgid "bonusName/modification"
 msgstr "Effect"
 
+msgid "bonusName/nyRandomResource"
+msgstr "Random resource"
+
+msgid "bonusName/nyToys"
+msgstr "Decorations"
+
+msgid "bonusName/nyTreeColors"
+msgstr "Tree Colors"
+
+msgid "bonusName/ny_amber"
+msgstr "Warm Amber"
+
+msgid "bonusName/ny_crystal"
+msgstr "Rock Crystal"
+
+msgid "bonusName/ny_emerald"
+msgstr "Pure Emerald"
+
+msgid "bonusName/ny_gp"
+msgstr "Gift Coins"
+
+msgid "bonusName/ny_iron"
+msgstr "Meteoric Iron"
+
 msgid "bonusName/optional_devices_assistant"
 msgstr "Assistant"
 
@@ -1363,6 +1387,9 @@ msgstr "Crew Skin:"
 
 msgid "bonuses/item/freeXPFactor"
 msgstr "Free Experience coefficient"
+
+msgid "bonuses/item/ny23RandomResources"
+msgstr "resources"
 
 msgid "bonuses/item/premium"
 msgstr "Days of Wargaming Premium Account:"
@@ -4803,6 +4830,14 @@ msgstr ""
 "only after the end of each battle. These missions do not have any time "
 "limits and can be completed at any time."
 
+msgid "infoPage/dailyMissions/nyDailyDailyMissions"
+msgstr ""
+"Complete missions, advance through the Back in Action Progression, and earn "
+"valuable rewards. During Holiday Ops 2026, each mission rewards you with a "
+"different number of {fff_Open}random resources{fff_Close}. One standard "
+"mission will be fixed and available for completion every day. Missions can "
+"be completed in Warm-Up and Random Battles."
+
 msgid "infoPage/dailyMissions/winback"
 msgstr ""
 "Standard Missions with random conditions can be completed every day. "
@@ -4964,6 +4999,14 @@ msgstr "Strategic mission"
 
 msgid "item/type/specialMission"
 msgstr "Stronghold: Special Instructions"
+
+msgid "lockedForRerollTooltip/body"
+msgstr ""
+"This mission will be available for completion every day during the event and"
+" cannot be re-rolled."
+
+msgid "lockedForRerollTooltip/header"
+msgstr "Fixed mission"
 
 msgid "metrics/state/done"
 msgstr "Completed"

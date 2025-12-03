@@ -72,6 +72,8 @@ class ContextMenuWebApi(UserMenuWebApiMixin):
     pass
 
 
-@w2capi(name='util', key='action')
+@w2capi(name='util', key='action', finiHandlerName='_utilFini')
 class UtilWebApi(UtilWebApiMixin, VehicleCompareWebApiMixin, WaitingWebApiMixin):
-    pass
+
+    def _utilFini(self):
+        self._hideWulfToolTip()

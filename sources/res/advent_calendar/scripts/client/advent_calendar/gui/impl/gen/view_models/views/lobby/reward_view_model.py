@@ -1,6 +1,6 @@
 from enum import Enum
 from frameworks.wulf import Array, ViewModel
-from gui.impl.gen.view_models.common.missions.bonuses.item_bonus_model import ItemBonusModel
+from gui.impl.gen.view_models.common.missions.bonuses.icon_bonus_model import IconBonusModel
 
 class AwardDayState(Enum):
     REGULARDAY = 'regularDay'
@@ -40,7 +40,7 @@ class RewardViewModel(ViewModel):
 
     @staticmethod
     def getBonusesType():
-        return ItemBonusModel
+        return IconBonusModel
 
     def getAwardDayState(self):
         return AwardDayState(self._getString(3))

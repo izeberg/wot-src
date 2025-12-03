@@ -1,0 +1,486 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-01 10:00+0300\n"
+"PO-Revision-Date: 2010-06-01 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "#PluralForms"
+msgstr "nplurals=2; plural=(n != 1);"
+
+msgid "abilityTooltip/description/_105mm_AP_DM13_grinch"
+msgstr ""
+"The pinnacle of origami engineering, this rapid-fire machine gun unleashes a"
+" volley of paper spikes. Its penetration isn't the highest, but the sheer "
+"volume of paper is impressive! Highly accurate at first, the gun gradually "
+"loses precision the longer it fires."
+
+msgid "abilityTooltip/description/_105mm_OFL_105_D1504_grinch"
+msgstr ""
+"A flawlessly folded magazine gun that fires slow yet armor-piercing rounds. "
+"Crafted with origami-like precision, it will help you shred your enemies "
+"with style."
+
+msgid "abilityTooltip/description/_152mm_AP_T_grinch"
+msgstr ""
+"A carefully constructed standard paper gun equipped with a very slow but "
+"highly destructive explosive ball. It delivers devastating damage to help "
+"you eliminate your enemies with both power and elegance, even if you miss."
+
+msgid "abilityTooltip/description/builtinGrinchBlizzard"
+msgstr ""
+"Creates an area-attack snowstorm within a %(ffaf5e_Open)s%(radius)s "
+"m%(ffaf5e_Close)s radius around your vehicle. The effect causes damage each "
+"second and freezes enemies for %(ffaf5e_Open)s%(debuffDuration)s "
+"s%(ffaf5e_Close)s. Frozen targets cannot move or use abilities."
+
+msgid "abilityTooltip/description/builtinGrinchDart"
+msgstr ""
+"Fires an armor-bypassing ball of glue at the targeted position. The glue "
+"causes a small amount of damage over time and disables all the target's "
+"abilities for %(ffaf5e_Open)s%(duration)s s%(ffaf5e_Close)s. Glue can be "
+"fired from stealth without revealing your position, making it particularly "
+"useful against enemies using Rage."
+
+msgid "abilityTooltip/description/builtinGrinchFlare"
+msgstr ""
+"Marks all targets within a %(ffaf5e_Open)s%(radius)s m "
+"radius%(ffaf5e_Close)s for %(ffaf5e_Open)s%(duration)s s%(ffaf5e_Close)s. "
+"Marked targets receive increased damage, remain constantly spotted to all "
+"other teams, and are more frequently engaged by bots."
+
+msgid "abilityTooltip/description/builtinGrinchHeal"
+msgstr ""
+"Heals and inspires all allies within a %(ffaf5e_Open)s%(radius)s m "
+"radius%(ffaf5e_Close)s around your vehicle for %(ffaf5e_Open)s%(duration)s "
+"s%(ffaf5e_Close)s. Inspired allies reload faster and have higher movement "
+"speed."
+
+msgid "abilityTooltip/description/builtinGrinchJump"
+msgstr ""
+"When you need a burst of power to escape a tough spot or dive into the heat "
+"of battle, your vehicle makes a quick jump in the direction of the camera "
+"without losing speed."
+
+msgid "abilityTooltip/description/builtinGrinchMissiles"
+msgstr ""
+"Fires a guided missile that deals massive damage and follows the target "
+"until it loses track or hits an obstacle. Missiles must be locked on for "
+"%(ffaf5e_Open)s%(duration)s s%(ffaf5e_Close)s before they can be fired."
+
+msgid "abilityTooltip/description/builtinGrinchRage"
+msgstr ""
+"For %(ffaf5e_Open)s%(duration)s s%(ffaf5e_Close)s your vehicle will have "
+"improved reload speed, turret traverse, and engine power, but it will also "
+"receive damage each second. Your vehicle cannot be destroyed while the "
+"ability is active."
+
+msgid "abilityTooltip/description/builtinGrinchRam"
+msgstr ""
+"Activates a rocket boost for %(ffaf5e_Open)s%(duration)s s%(ffaf5e_Close)s, "
+"reducing ramming damage taken and disrupting guided missile tracking."
+
+msgid "abilityTooltip/description/builtinGrinchRepairkit"
+msgstr ""
+"When your finely crafted paper tank takes a hit, it's Patch Tape to the "
+"rescue: this handy tool repairs tracks and modules while restoring a small "
+"amount of HP to keep you in the fight."
+
+msgid "abilityTooltip/description/builtinGrinchSonar"
+msgstr ""
+"Sends out a scan around the targeted position. Enemies in the area receive a"
+" small amount of damage and are marked for %(ffaf5e_Open)s%(duration)s "
+"s%(ffaf5e_Close)s. Marked targets receive increased damage, remain "
+"constantly spotted to all other teams, and are more frequently engaged by "
+"bots."
+
+msgid "abilityTooltip/description/builtinGrinchStealth"
+msgstr ""
+"After a short delay, you disappear for %(ffaf5e_Open)s%(duration)s "
+"s%(ffaf5e_Close)s in a cloud of confetti and cannot be actively spotted. The"
+" effect is canceled upon shooting, taking damage, or being marked. The first"
+" shot out of stealth deals bonus damage."
+
+msgid "abilityTooltip/description/builtinGrinchTurret"
+msgstr ""
+"Deploys a turret that spots and engages enemies independently. You can carry"
+" up to two in your vehicle, and have up to two on the map at once. When you "
+"place a third, the oldest turret is destroyed."
+
+msgid "abilityTooltip/name/_105mm_AP_DM13_grinch"
+msgstr "Paper Spikes"
+
+msgid "abilityTooltip/name/_105mm_OFL_105_D1504_grinch"
+msgstr "Paper Bullets"
+
+msgid "abilityTooltip/name/_152mm_AP_T_grinch"
+msgstr "Paper Ball"
+
+msgid "abilityTooltip/name/builtinGrinchBlizzard"
+msgstr "Frost"
+
+msgid "abilityTooltip/name/builtinGrinchDart"
+msgstr "Glue"
+
+msgid "abilityTooltip/name/builtinGrinchFlare"
+msgstr "Flare"
+
+msgid "abilityTooltip/name/builtinGrinchHeal"
+msgstr "Heal Aura"
+
+msgid "abilityTooltip/name/builtinGrinchJump"
+msgstr "Jump"
+
+msgid "abilityTooltip/name/builtinGrinchMissiles"
+msgstr "Missile"
+
+msgid "abilityTooltip/name/builtinGrinchRage"
+msgstr "Rage"
+
+msgid "abilityTooltip/name/builtinGrinchRam"
+msgstr "Boost"
+
+msgid "abilityTooltip/name/builtinGrinchRepairkit"
+msgstr "Patch Tape"
+
+msgid "abilityTooltip/name/builtinGrinchSonar"
+msgstr "Scan"
+
+msgid "abilityTooltip/name/builtinGrinchStealth"
+msgstr "Stealth"
+
+msgid "abilityTooltip/name/builtinGrinchTurret"
+msgstr "Turret"
+
+msgid "abilityTooltip/types/ability"
+msgstr "Ability"
+
+msgid "abilityTooltip/types/gun"
+msgstr "Gun"
+
+msgid "chapterHeaderTooltip/dates"
+msgstr "%(start)s — %(end)s"
+
+msgid "chapterHeaderTooltip/description"
+msgstr ""
+"You can also earn Gift Coins by completing special daily missions in Random "
+"Battles."
+
+msgid "chapterHeaderTooltip/subtitle/1"
+msgstr "Chapter 1"
+
+msgid "chapterHeaderTooltip/subtitle/2"
+msgstr "Chapter 2"
+
+msgid "chapterHeaderTooltip/subtitle/3"
+msgstr "Chapter 3"
+
+msgid "chapterHeaderTooltip/title"
+msgstr "Winter Raid schedule"
+
+msgid "common/yes"
+msgstr "Affirmative!"
+
+msgid "counter/aboveMaxValue"
+msgstr "+9999"
+
+msgid "duration/days"
+msgid_plural "duration/days"
+msgstr[0] "{days} day"
+msgstr[1] "{days} days"
+msgstr[2] "{days} days"
+
+msgid "duration/hours"
+msgstr "{hours} h"
+
+msgid "duration/minutes"
+msgstr "{minutes} min"
+
+msgid "gameBoardView/closeButton/label"
+msgstr "TO GARAGE"
+
+msgid "gameBoardView/header/eventDate"
+msgstr "%(start)s — %(end)s"
+
+msgid "gameBoardView/header/title"
+msgstr "Winter Raid"
+
+msgid "gameBoardView/infoButton/label"
+msgstr "ABOUT WINTER RAID"
+
+msgid "gameBoardView/menu/allModes"
+msgstr "ALL MODES"
+
+msgid "gameBoardView/menu/modeName"
+msgstr "WINTER RAID"
+
+msgid "gameBoardView/missionCard/title/assault"
+msgstr ""
+"ASSAULT\n"
+"MISSION"
+
+msgid "gameBoardView/missionCard/title/carrier"
+msgstr ""
+"CARRIER\n"
+"MISSION"
+
+msgid "gameBoardView/missionCard/title/defender"
+msgstr ""
+"DEFENDER\n"
+"MISSION"
+
+msgid "gameBoardView/missionCard/title/random"
+msgstr ""
+"RANDOM\n"
+"MISSION"
+
+msgid "gameBoardView/missionCard/unavailable"
+msgstr "The next mission will be available in"
+
+msgid "gameBoardView/missionTotal"
+msgstr "Missions:"
+
+msgid "gameBoardView/missionsDialog/acknowledge"
+msgstr "Acknowledge"
+
+msgid "gameBoardView/missionsDialog/acknowledgeKey"
+msgstr "ESC"
+
+msgid "gameBoardView/missionsDialog/description"
+msgstr "All missions must be completed one after the other"
+
+msgid "gameBoardView/missionsDialog/filter/assault"
+msgstr "ASSAULT"
+
+msgid "gameBoardView/missionsDialog/filter/carrier"
+msgstr "CARRIER"
+
+msgid "gameBoardView/missionsDialog/filter/defender"
+msgstr "DEFENDER"
+
+msgid "gameBoardView/missionsDialog/filter/random"
+msgstr "RANDOM"
+
+msgid "gameBoardView/missionsDialog/precondition/random"
+msgstr "Tier IV–XI vehicles. Random Battles."
+
+msgid "gameBoardView/missionsDialog/title"
+msgstr "Missions available"
+
+msgid "gameBoardView/missionsTooltip/event/body"
+msgstr "View missions available for the Winter Raid game mode"
+
+msgid "gameBoardView/missionsTooltip/event/heading"
+msgstr "Winter Raid Missions"
+
+msgid "gameBoardView/missionsTooltip/random/body"
+msgstr "View missions available for Random Battles"
+
+msgid "gameBoardView/missionsTooltip/random/heading"
+msgstr "Random Missions"
+
+msgid "gameBoardView/notepadMissions/allMissionsCompleted"
+msgstr "You have completed all missions for today. Come back tomorrow."
+
+msgid "gameBoardView/notepadMissions/allMissionsCompletedNoTomorrow"
+msgstr "Great work! You have completed all missions."
+
+msgid "gameBoardView/notepadMissions/oneTypeAvailable"
+msgstr "Click {T3} to view available missions!"
+
+msgid "gameBoardView/notepadMissions/onlyRandomAvailable"
+msgstr "View your missions for Random Battles and get Gift Coins!"
+
+msgid "gameBoardView/notepadMissions/prize"
+msgstr "+{prize}"
+
+msgid "gameBoardView/notepadMissions/progress"
+msgstr "{current} / {target}"
+
+msgid "gameBoardView/notepadMissions/randomBattlesNote"
+msgstr "All missions in Random Battles are for Tier IV–XI vehicles."
+
+msgid "gameBoardView/notepadMissions/tabs/random"
+msgstr "R"
+
+msgid "gameBoardView/notepadMissions/tabs/weekly"
+msgstr "W"
+
+msgid "gameBoardView/notepadMissions/title/assault"
+msgstr "Assault Mission"
+
+msgid "gameBoardView/notepadMissions/title/carrier"
+msgstr "Carrier Mission"
+
+msgid "gameBoardView/notepadMissions/title/random"
+msgstr "Random Battles"
+
+msgid "gameBoardView/notepadMissions/title/support"
+msgstr "Defender Mission"
+
+msgid "gameBoardView/notepadMissions/twoTypesAvailable"
+msgstr "Click {T1} or {T2} to view available missions!"
+
+msgid "gameBoardView/pointsCounter/label"
+msgstr "Gift Coins"
+
+msgid "gameBoardView/pointsCounter/tooltip"
+msgstr ""
+"Earn Gift Coins in action-packed battles across themed festive maps. "
+"Complete missions in both Winter Raid and Random Battles to accelerate your "
+"progress and unlock unique prizes as you advance to the final Epic "
+"Reward—then, collect even more bonus items with the Recurring Reward!"
+
+msgid "gameBoardView/rewardCard/rewardTypeLabel/style"
+msgstr "2D style"
+
+msgid "gameBoardView/rewardDialog/subHeading/epic"
+msgstr "Epic 3D Attachment"
+
+msgid "gameBoardView/rewardDialog/subHeading/rare"
+msgstr "Rare 3D Attachment"
+
+msgid "gameBoardView/rewardMarker/claim"
+msgstr "Claim"
+
+msgid "gameBoardView/rewardMarker/randomLabel"
+msgstr "Reward"
+
+msgid "gameBoardView/rewardMarker/randomTooltip"
+msgstr ""
+"Claim all the rewards on the map to unlock even more treasures with the "
+"Reward Card!"
+
+msgid "gameBoardView/statusCard/allCleared"
+msgstr "All completed!"
+
+msgid "gameBoardView/statusCard/completed"
+msgstr "All completed!"
+
+msgid "gameBoardView/statusCard/inBattle"
+msgstr "In battle"
+
+msgid "gameBoardView/statusCard/inTacticalUnit"
+msgstr "In tactical unit"
+
+msgid "gameBoardView/statusCard/notSuitable"
+msgstr "Not suitable"
+
+msgid "gameBoardView/tanks/description/assault"
+msgstr "?empty?"
+
+msgid "gameBoardView/tanks/description/carrier"
+msgstr "?empty?"
+
+msgid "gameBoardView/tanks/description/support"
+msgstr "?empty?"
+
+msgid "gameBoardView/tanks/keyFeature/assault"
+msgstr "ATTACK & CAPTURE"
+
+msgid "gameBoardView/tanks/keyFeature/carrier"
+msgstr "SNEAK & STEAL"
+
+msgid "gameBoardView/tanks/keyFeature/support"
+msgstr "SPOT & HUNT"
+
+msgid "gameBoardView/tanks/name/assault"
+msgstr "ASSAULT"
+
+msgid "gameBoardView/tanks/name/carrier"
+msgstr "CARRIER"
+
+msgid "gameBoardView/tanks/name/support"
+msgstr "DEFENDER"
+
+msgid "gameBoardView/tanks/states/inBattle"
+msgstr "In battle"
+
+msgid "gameBoardView/tanks/states/inPlatoon"
+msgstr "In tactical unit"
+
+msgid "gameBoardView/tutorial/battle"
+msgstr "PLAY A BATTLE TO EARN GIFT COINS"
+
+msgid "gameBoardView/tutorial/coins"
+msgstr "USE GIFT COINS TO MAKE MOVES & COLLECT REWARDS"
+
+msgid "gameBoardView/tutorial/missions"
+msgstr "COMPLETE MISSIONS FOR EXTRA COINS"
+
+msgid "gameBoardView/tutorial/move"
+msgstr "YOU HAVE ENOUGH GIFT COINS TO MAKE A MOVE AND COLLECT A REWARD"
+
+msgid "gameBoardView/tutorial/vehicle"
+msgstr "SELECT A VEHICLE TO PARTICIPATE IN THE EVENT"
+
+msgid "infoView/backButton"
+msgstr "BACK"
+
+msgid "infoView/continueButton"
+msgstr "Continue"
+
+msgid "infoView/description"
+msgstr ""
+"Choose one of three unique vehicles and join the festive fun in Winter Raid!"
+" Upgraded tank classes, new abilities, and valuable rewards await in action-"
+"packed battles from %(whiteSpanish_Open)s%(startDate)s%(whiteSpanish_Close)s"
+" through %(whiteSpanish_Open)s%(endDate)s%(whiteSpanish_Close)s."
+
+msgid "infoView/sources/description/eventProgress"
+msgstr ""
+"Collecting Gift Coins moves your paper tank along the Winter Raid board and "
+"earns you unique rewards—just don't forget to claim them!"
+
+msgid "infoView/sources/description/giftCoins"
+msgstr ""
+"Earn Gift Coins by playing Winter Raid or Random Battles. Daily Winter Raid "
+"missions will reward you with the most Gift Coins, so be sure to complete as"
+" many as you can!"
+
+msgid "infoView/sources/description/moreCoins"
+msgstr ""
+"Complete the Winter Raid Progression to unlock the Epic Reward—exclusive 3D "
+"customization elements that will bring festive magic to every battle!"
+
+msgid "infoView/sources/title/eventProgress"
+msgstr "Conquer the Board"
+
+msgid "infoView/sources/title/giftCoins"
+msgstr "Collect Gift Coins"
+
+msgid "infoView/sources/title/moreCoins"
+msgstr "Epic Reward"
+
+msgid "infoView/title"
+msgstr "WINTER RAID"
+
+msgid "infoView/toPortal"
+msgstr "Event Details"
+
+msgid "infoView/toWinterRaid"
+msgstr "TO WINTER RAID"
+
+msgid "notification/battleMission/claim/body"
+msgstr "Gift Coins received:"
+
+msgid "notification/battleMission/claim/header"
+msgstr "Mission Completed"
+
+msgid "notification/board/rewardClaim/header"
+msgstr "Reward claimed"
+
+msgid "notification/button/toStyle"
+msgstr "To Style"
+
+msgid "notification/header/itemReceived"
+msgstr "%(itemName)s received"
+
+msgid "notification/reward/error"
+msgstr "Action is temporarily unavailable. Try again later."

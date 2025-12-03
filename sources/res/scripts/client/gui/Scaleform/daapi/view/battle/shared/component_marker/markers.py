@@ -56,10 +56,10 @@ class MarkerBase(object):
         return self.mask & ComponentBitMask.FULLSCREEN_MAP_MARKER
 
     def getMarkerPosition(self):
-        for component in self._components.itervalues():
-            return component.position
-
-        return
+        if self._components:
+            return self._components.itervalues().next().position
+        else:
+            return
 
     def isEmpty(self):
         return not self._components
