@@ -1,6 +1,8 @@
 import logging
 from collections import namedtuple
-import typing, Event
+import typing
+from wotdecorators import noexcept
+import Event
 from GrinchProgressionAccountSettings import getSettings, setSettings, PREVIOUS_POINTS_COUNT, IS_FIRST_ENTRY, POINTS_SEEN_COUNT, CLAIMABLE_REWARDS_SEEN_COUNT
 from PlayerEvents import g_playerEvents
 from account_helpers import AccountSyncData
@@ -43,6 +45,7 @@ class GrinchProgressionController(IGrinchProgressionController):
         self.onDataUpdated = Event.Event()
         return
 
+    @noexcept
     def onLobbyInited(self, event):
         self._prevState = self.isEnabled
         self.__resetCompletedQuests()
