@@ -121,7 +121,7 @@ class NotificationListView(NotificationsListMeta, BaseNotificationView):
         self._model.resetNotifiedMessagesCount(self.__currentGroup)
 
     def __getMessagesList(self):
-        filtered = [ item for item in self._model.collection.getListIterator() if item.getGroup() == self.__currentGroup
+        filtered = [ item for item in self._model.collection.getListIterator() if item.getGroup() == self.__currentGroup and not item.onlyPopUp()
                    ]
         return [ self.__getListVO(item) for item in filtered ]
 

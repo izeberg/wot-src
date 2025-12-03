@@ -15,6 +15,7 @@ from gui.shared.gui_items.customization.slots import SLOT_ASPECT_RATIO, BaseCust
 from gui.shared.items_cache import CACHE_SYNC_REASON
 from helpers import dependency
 from items.components.c11n_constants import ApplyArea, AttachmentType
+from items.vehicles import VehicleDescr
 from skeletons.account_helpers.settings_core import ISettingsCore
 from skeletons.gui.shared import IItemsCache
 from skeletons.gui.shared.gui_items import IGuiItemsFactory
@@ -28,7 +29,7 @@ from vehicle_systems.tankStructure import VehiclePartsTuple, TankNodeNames
 from vehicle_systems.components.vehicle_appearance_component import VehicleAppearanceComponent
 from cgf_obsolete_script.script_game_object import ComponentDescriptor, ScriptGameObject
 from vehicle_systems.stricted_loading import makeCallbackWeak
-from CurrentVehicle import g_currentVehicle, g_currentPreviewVehicle
+from CurrentVehicle import g_currentPreviewVehicle
 from gui.hangar_cameras.hangar_camera_common import CameraMovementStates, CameraRelatedEvents
 from gui.shared import g_eventBus, EVENT_BUS_SCOPE
 from gui.ClientHangarSpace import hangarCFG
@@ -117,6 +118,7 @@ class HangarVehicleAppearance(ScriptGameObject):
     typeDescriptor = property(lambda self: self.__vDesc)
     vehicleStickers = property(lambda self: self.__vehicleStickers)
     vehicleState = property(lambda self: self.__vState)
+    isCompositionReady = property(lambda self: self.__isCompositionReady)
 
     @property
     def filter(self):
@@ -159,9 +161,9 @@ class HangarVehicleAppearance(ScriptGameObject):
         self.settingsCore.onSettingsChanged += self.__onSettingsChanged
         self.itemsCache.onSyncCompleted += self.__onItemsCacheSyncCompleted
         g_eventBus.addListener(CameraRelatedEvents.CAMERA_ENTITY_UPDATED, self.__handleEntityUpdated)
-        g_currentVehicle.onChanged += self.__onVehicleChanged
         self.customizationGameObjects = []
         self.onDecalsUpdated = Event.Event()
+        self.__isCompositionReady = False
         return
 
     def recreate(self, vDesc, vState=None, callback=None, outfit=None):
@@ -170,6 +172,7 @@ class HangarVehicleAppearance(ScriptGameObject):
 
     def remove(self):
         self.__clearCustomLogicComponents()
+        self.__clearAnchors()
         self.__loadState.unload()
         if self.shadowManager is not None:
             self.shadowManager.updatePlayerTarget(None)
@@ -203,6 +206,7 @@ class HangarVehicleAppearance(ScriptGameObject):
         if self.shadowManager is not None and self.__vEntity.model is not None:
             self.shadowManager.unregisterCompoundModel(self.__vEntity.model)
         self.__clearCustomLogicComponents()
+        self.__clearAnchors()
         self.__vehicleStickers = None
         ScriptGameObject.deactivate(self)
         ScriptGameObject.destroy(self)
@@ -219,7 +223,6 @@ class HangarVehicleAppearance(ScriptGameObject):
         self.settingsCore.onSettingsChanged -= self.__onSettingsChanged
         self.itemsCache.onSyncCompleted -= self.__onItemsCacheSyncCompleted
         g_eventBus.removeListener(CameraRelatedEvents.CAMERA_ENTITY_UPDATED, self.__handleEntityUpdated)
-        g_currentVehicle.onChanged -= self.__onVehicleChanged
         return
 
     @property
@@ -276,6 +279,9 @@ class HangarVehicleAppearance(ScriptGameObject):
         hullBB = Math.Matrix(self.__vEntity.model.getBoundsForPart(TankPartIndexes.HULL))
         return hullBB.applyVector(Math.Vector3(0.0, 0.0, 1.0)).length
 
+    def setCompositionReady(self, isCompositionReady):
+        self.__isCompositionReady = isCompositionReady
+
     def _getTurretYaw(self):
         return self.turretAndGunAngles.getTurretYaw()
 
@@ -284,6 +290,8 @@ class HangarVehicleAppearance(ScriptGameObject):
 
     def __reload(self, vDesc, vState, outfit):
         self.__clearCustomLogicComponents()
+        if vDesc is None or self.__vDesc is not None and self.__vDesc.makeCompactDescr() != vDesc.makeCompactDescr():
+            self.__clearAnchors()
         self.__loadState.unload()
         removeComposition(self.gameObject)
         if self.fashion is not None:
@@ -297,7 +305,7 @@ class HangarVehicleAppearance(ScriptGameObject):
         self.shadowManager = VehicleShadowManager()
         self.shadowManager.updatePlayerTarget(None)
         if outfit.style and outfit.style.isProgression:
-            outfit = self.__getStyleProgressionOutfitData(outfit)
+            outfit = self.__getStyleProgressionOutfitData(vDesc, outfit)
         self.__outfit = outfit.copy()
         self.__startBuild(vDesc, vState)
         return
@@ -470,19 +478,13 @@ class HangarVehicleAppearance(ScriptGameObject):
             self.refresh()
 
     def _getActiveOutfit(self, vDesc):
-        if g_currentPreviewVehicle.isPresent() and not g_currentPreviewVehicle.isHeroTank:
-            vehicleCD = g_currentPreviewVehicle.item.descriptor.makeCompactDescr()
-            return self.customizationService.getEmptyOutfitWithNationalEmblems(vehicleCD=vehicleCD)
+        if vDesc is None:
+            _logger.error('Failed to get active vehicle outfit. VehicleDescrType is None.')
+            return self.itemsFactory.createOutfit()
         else:
-            if not g_currentVehicle.isPresent():
-                if vDesc is not None:
-                    vehicleCD = vDesc.makeCompactDescr()
-                    outfit = self.customizationService.getEmptyOutfitWithNationalEmblems(vehicleCD=vehicleCD)
-                else:
-                    _logger.error('Failed to get base vehicle outfit. VehicleDescriptor is None.')
-                    outfit = self.itemsFactory.createOutfit()
-                return outfit
-            vehicle = g_currentVehicle.item
+            if g_currentPreviewVehicle.isPresent():
+                return self.customizationService.getEmptyOutfitWithNationalEmblems(vehicleCD=vDesc.makeCompactDescr())
+            vehicle = self.__getVehicleItemFromDesc(vDesc)
             season = g_tankActiveCamouflage.get(vehicle.intCD, vehicle.getAnyOutfitSeason())
             g_tankActiveCamouflage[vehicle.intCD] = season
             outfit = vehicle.getOutfit(season)
@@ -744,7 +746,7 @@ class HangarVehicleAppearance(ScriptGameObject):
 
     def __applyCustomization(self, outfit, callback):
         if outfit.style and outfit.style.isProgression:
-            outfit = self.__getStyleProgressionOutfitData(outfit)
+            outfit = self.__getStyleProgressionOutfitData(self.__vDesc, outfit)
             self.__updateStyleProgression(outfit)
         self.__updateCamouflage(outfit)
         self.__updatePaint(outfit)
@@ -760,10 +762,7 @@ class HangarVehicleAppearance(ScriptGameObject):
         if self.__isVehicleDestroyed:
             return
         else:
-            if g_currentVehicle.item:
-                vehicleCD = g_currentVehicle.item.descriptor.makeCompactDescr()
-            else:
-                vehicleCD = g_currentPreviewVehicle.item.descriptor.makeCompactDescr()
+            vehicleCD = self.__vDesc.makeCompactDescr()
             outfit = outfit or self.customizationService.getEmptyOutfitWithNationalEmblems(vehicleCD=vehicleCD)
             if self.recreateRequired(outfit):
                 self.refresh(outfit, callback)
@@ -923,17 +922,21 @@ class HangarVehicleAppearance(ScriptGameObject):
         self.customizationGameObjects = []
         return
 
-    def __onVehicleChanged(self):
+    def __clearAnchors(self):
         self.__anchorsParams = None
         self.__anchorsHelpers = None
         return
 
     def __initAnchorsParams(self):
-        self.__anchorsParams = {cType:{area:{} for area in Area.ALL} for cType in SLOT_TYPES}
-        if self.__anchorsHelpers is None:
-            self.__initAnchorsHelpers()
-        self.__updateAnchorsParams(TankPartIndexes.ALL)
-        return
+        if self.__vDesc is None:
+            _logger.error('Failed to init anchors helpers. VehicleDescrType is None')
+            return
+        else:
+            self.__anchorsParams = {cType:{area:{} for area in Area.ALL} for cType in SLOT_TYPES}
+            if self.__anchorsHelpers is None:
+                self.__initAnchorsHelpers()
+            self.__updateAnchorsParams(TankPartIndexes.ALL)
+            return
 
     def __updateAnchorsParams(self, tankPartsToUpdate):
         for slotType in SLOT_TYPES:
@@ -959,7 +962,7 @@ class HangarVehicleAppearance(ScriptGameObject):
         anchorsHelpers = {cType:{area:{} for area in Area.ALL} for cType in SLOT_TYPES}
         for slotType in SLOT_TYPES:
             for areaId in Area.ALL:
-                for regionIdx, anchor in g_currentVehicle.item.getAnchors(slotType, areaId):
+                for regionIdx, anchor in self.__getVehicleItemFromDesc(self.__vDesc).getAnchors(slotType, areaId):
                     if isinstance(anchor, EmblemSlot):
                         getAnchorHelper = self.__getEmblemAnchorHelper
                     elif isinstance(anchor, BaseCustomizationSlot):
@@ -1123,19 +1126,26 @@ class HangarVehicleAppearance(ScriptGameObject):
     def outfit(self):
         return self.__outfit
 
-    def __getStyleProgressionOutfitData(self, outfit):
-        vehicle = None
-        if g_currentVehicle.isPresent():
-            vehicle = g_currentVehicle.item
-        elif g_currentPreviewVehicle.isPresent():
-            vehicle = g_currentPreviewVehicle.item
-        if vehicle:
+    def __getStyleProgressionOutfitData(self, vDesc, outfit):
+        if vDesc is None:
+            _logger.error('Failed to get style progression data. VehicleDescrType is None')
+            return outfit
+        else:
+            if outfit.vehicleCD:
+                vehicleDescr = VehicleDescr(compactDescr=outfit.vehicleCD)
+                if vehicleDescr.type.id != vDesc.type.id:
+                    _logger.error('Vehicle(%s) and outfit vehicle(%s) mismatch', vDesc.type.name, vehicleDescr.type.name)
+                    return outfit
+            vehicle = self.__getVehicleItemFromDesc(vDesc)
             season = g_tankActiveCamouflage.get(vehicle.intCD, vehicle.getAnyOutfitSeason())
             progressionOutfit = camouflages.getStyleProgressionOutfit(outfit, outfit.progressionLevel, season)
             if progressionOutfit:
                 return progressionOutfit
-        return outfit
+            return outfit
 
     @property
     def _cameraPartsIdx(self):
         return TankPartNames.getIdx(TankPartNames.GUN) + len(self.__vDesc.chassis.trackPairs) + 1
+
+    def __getVehicleItemFromDesc(self, vDesc):
+        return self.itemsCache.items.getItem(GUI_ITEM_TYPE.VEHICLE, vDesc.type.id[0], vDesc.type.id[1])

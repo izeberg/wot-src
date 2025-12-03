@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<version>4</version>
+	<GameObjects>
+		<GameObject>
+			<name>h38_NY26_CelebrityPlace_Chimney</name>
+			<UUID>42467847-60d1-4a82-8545-0cf47d2b23ba</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>Models</name>
+			<UUID>4c6b61f4-08ef-485b-ba2c-82fcdd8a8a8c</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>h38_NY26_CelebrityPlace_Chimney</name>
+			<UUID>d2f86fea-1ce7-4d65-b860-644bffe3e6ad</UUID>
+			<flags>0</flags>
+		</GameObject>
+	</GameObjects>
+	<components>
+		<ComponentPool>
+			<type>Hierarchy</type>
+			<version>2</version>
+			<component>
+				<UUID>4c6b61f4-08ef-485b-ba2c-82fcdd8a8a8c</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>42467847-60d1-4a82-8545-0cf47d2b23ba</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>d2f86fea-1ce7-4d65-b860-644bffe3e6ad</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>4c6b61f4-08ef-485b-ba2c-82fcdd8a8a8c</link>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>Transform</type>
+			<version>1</version>
+			<component>
+				<UUID>42467847-60d1-4a82-8545-0cf47d2b23ba</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>4c6b61f4-08ef-485b-ba2c-82fcdd8a8a8c</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>d2f86fea-1ce7-4d65-b860-644bffe3e6ad</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>
+							-0 -2.42924 0
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>Colliders</type>
+			<version>1</version>
+			<component>
+				<UUID>d2f86fea-1ce7-4d65-b860-644bffe3e6ad</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Colliders</name>
+						<collection>
+							<item>
+								<object>
+									<property>
+										<name>Type</name>
+										<value>0</value>
+									</property>
+									<property>
+										<name>Parameters</name>
+										<object>
+											<property>
+												<name>Offset</name>
+												<value>((       2,       0,       0,       0), (       0,       6,       0,       0), (       0,       0,       2,       0), (       0,       2,       0,       1))</value>
+											</property>
+											<property>
+												<name>Size</name>
+												<value>((       2,       0,       0,       0), (       0,       6,       0,       0), (       0,       0,       2,       0), (       0,       2,       0,       1))</value>
+											</property>
+											<property>
+												<name>Rotation</name>
+												<value>((       2,       0,       0,       0), (       0,       6,       0,       0), (       0,       0,       2,       0), (       0,       2,       0,       1))</value>
+											</property>
+										</object>
+									</property>
+								</object>
+							</item>
+						</collection>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>CameraCollideComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>d2f86fea-1ce7-4d65-b860-644bffe3e6ad</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Distance</name>
+						<value>10</value>
+					</property>
+					<property>
+						<name>Become transparent</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>DynamicModel</type>
+			<version>1</version>
+			<component>
+				<UUID>d2f86fea-1ce7-4d65-b860-644bffe3e6ad</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Model name</name>
+						<isAsset>true</isAsset>
+						<value>content/Hangars/h38_newyear_2025/environment/normal/lod0/h38_NY26_CelebrityPlace_Chimney.model</value>
+					</property>
+					<property>
+						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+	</components>
+</root>

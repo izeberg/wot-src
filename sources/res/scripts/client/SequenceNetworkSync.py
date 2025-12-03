@@ -1,5 +1,5 @@
 import CGF, logging, BigWorld
-from cgf_components.sequence_components import SequencePauseComponent, SequenceSnapshotComponent
+from cgf_components_common.sequence_components import SequencePauseComponent, SequenceSnapshotComponent
 from cgf_script.managers_registrator import onAddedQuery, autoregister, onProcessQuery, onRemovedQuery
 from GenericComponents import Sequence
 from constants import HAS_DEV_RESOURCES, IS_EDITOR

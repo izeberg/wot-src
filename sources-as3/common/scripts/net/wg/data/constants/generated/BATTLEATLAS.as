@@ -4467,6 +4467,12 @@ package net.wg.data.constants.generated
       
       public static const BADGE_221:String = "badge_221";
       
+      public static const BADGE_222:String = "badge_222";
+      
+      public static const BADGE_223:String = "badge_223";
+      
+      public static const BADGE_224:String = "badge_224";
+      
       public static const BADGE_23:String = "badge_23";
       
       public static const BADGE_24:String = "badge_24";
@@ -4661,6 +4667,8 @@ package net.wg.data.constants.generated
       
       public static const STRIP_216:String = "strip_216";
       
+      public static const STRIP_223:String = "strip_223";
+      
       public static const STRIP_56:String = "strip_56";
       
       public static const STRIP_57:String = "strip_57";
@@ -4822,6 +4830,192 @@ package net.wg.data.constants.generated
       public static const WHITE_ICON_SPG_ELITE16X16:String = "whiteIconSPG_elite16x16";
       
       public static const COMP7_POINT_RECON_MINIMAP_ENTRY_UI:String = "Comp7PointReconMinimapEntryUI";
+      
+      public static const BIG_PRESENT:String = "big_present";
+      
+      public static const HOMEBASE_1:String = "homebase_1";
+      
+      public static const HOMEBASE_2:String = "homebase_2";
+      
+      public static const HOMEBASE_3:String = "homebase_3";
+      
+      public static const PRESENT:String = "present";
+      
+      public static const PRESENTBASE:String = "presentbase";
+      
+      public static const SNOWSTORM_DANGER:String = "snowstormDanger";
+      
+      public static const GRINCH_MINIMAP_B1:String = "grinch_minimap_b1";
+      
+      public static const GRINCH_MINIMAP_B2:String = "grinch_minimap_b2";
+      
+      public static const GRINCH_MINIMAP_B3:String = "grinch_minimap_b3";
+      
+      public static const GRINCH_MINIMAP_B4:String = "grinch_minimap_b4";
+      
+      public static const GRINCH_MINIMAP_B5:String = "grinch_minimap_b5";
+      
+      public static const GRINCH_MINIMAP_B6:String = "grinch_minimap_b6";
+      
+      public static const TEAM_0_A_BASE:String = "team_0_A_base";
+      
+      public static const TEAM_0_B_BASE:String = "team_0_B_base";
+      
+      public static const TEAM_0_C_BASE:String = "team_0_C_base";
+      
+      public static const TEAM_1_A_BASE:String = "team_1_A_base";
+      
+      public static const TEAM_1_B_BASE:String = "team_1_B_base";
+      
+      public static const TEAM_1_C_BASE:String = "team_1_C_base";
+      
+      public static const TEAM_2_A_BASE:String = "team_2_A_base";
+      
+      public static const TEAM_2_B_BASE:String = "team_2_B_base";
+      
+      public static const TEAM_2_C_BASE:String = "team_2_C_base";
+      
+      public static const TEAM_3_A_BASE:String = "team_3_A_base";
+      
+      public static const TEAM_3_B_BASE:String = "team_3_B_base";
+      
+      public static const TEAM_3_C_BASE:String = "team_3_C_base";
+      
+      public static const HEAVY_TANK_GRINCH_SQUADMAN_DEAD_GRINCHDARKGOLD:String = "heavyTank_grinch_squadman_dead_grinchdarkgold";
+      
+      public static const HEAVY_TANK_GRINCH_SQUADMAN_GRINCHGOLD:String = "heavyTank_grinch_squadman_grinchgold";
+      
+      public static const LIGHT_TANK_GRINCH_SQUADMAN_DEAD_GRINCHDARKGOLD:String = "lightTank_grinch_squadman_dead_grinchdarkgold";
+      
+      public static const LIGHT_TANK_GRINCH_SQUADMAN_GRINCHGOLD:String = "lightTank_grinch_squadman_grinchgold";
+      
+      public static const MEDIUM_TANK_GRINCH_SQUADMAN_DEAD_GRINCHDARKGOLD:String = "mediumTank_grinch_squadman_dead_grinchdarkgold";
+      
+      public static const MEDIUM_TANK_GRINCH_SQUADMAN_GRINCHGOLD:String = "mediumTank_grinch_squadman_grinchgold";
+      
+      public static const SPG_GRINCH_SQUADMAN_DEAD_GRINCHDARKGOLD:String = "SPG_grinch_squadman_dead_grinchdarkgold";
+      
+      public static const SPG_GRINCH_SQUADMAN_GRINCHGOLD:String = "SPG_grinch_squadman_grinchgold";
+      
+      public static const AT_SPG_TEAM_1_CYAN:String = "AT-SPG_team_1_cyan";
+      
+      public static const AT_SPG_TEAM_1_DEAD_CYAN:String = "AT-SPG_team_1_dead_cyan";
+      
+      public static const HEAVY_TANK_TEAM_1_CYAN:String = "heavyTank_team_1_cyan";
+      
+      public static const HEAVY_TANK_TEAM_1_DEAD_CYAN:String = "heavyTank_team_1_dead_cyan";
+      
+      public static const LIGHT_TANK_TEAM_1_CYAN:String = "lightTank_team_1_cyan";
+      
+      public static const LIGHT_TANK_TEAM_1_DEAD_CYAN:String = "lightTank_team_1_dead_cyan";
+      
+      public static const MEDIUM_TANK_TEAM_1_CYAN:String = "mediumTank_team_1_cyan";
+      
+      public static const MEDIUM_TANK_TEAM_1_DEAD_CYAN:String = "mediumTank_team_1_dead_cyan";
+      
+      public static const SPG_TEAM_1_CYAN:String = "SPG_team_1_cyan";
+      
+      public static const SPG_TEAM_1_DEAD_CYAN:String = "SPG_team_1_dead_cyan";
+      
+      public static const AT_SPG_TEAM_2_AMBER:String = "AT-SPG_team_2_amber";
+      
+      public static const AT_SPG_TEAM_2_DEAD_AMBER:String = "AT-SPG_team_2_dead_amber";
+      
+      public static const HEAVY_TANK_TEAM_2_AMBER:String = "heavyTank_team_2_amber";
+      
+      public static const HEAVY_TANK_TEAM_2_DEAD_AMBER:String = "heavyTank_team_2_dead_amber";
+      
+      public static const LIGHT_TANK_TEAM_2_AMBER:String = "lightTank_team_2_amber";
+      
+      public static const LIGHT_TANK_TEAM_2_DEAD_AMBER:String = "lightTank_team_2_dead_amber";
+      
+      public static const MEDIUM_TANK_TEAM_2_AMBER:String = "mediumTank_team_2_amber";
+      
+      public static const MEDIUM_TANK_TEAM_2_DEAD_AMBER:String = "mediumTank_team_2_dead_amber";
+      
+      public static const SPG_TEAM_2_AMBER:String = "SPG_team_2_amber";
+      
+      public static const SPG_TEAM_2_DEAD_AMBER:String = "SPG_team_2_dead_amber";
+      
+      public static const AT_SPG_TEAM_3_DEAD_MAGENTA:String = "AT-SPG_team_3_dead_magenta";
+      
+      public static const AT_SPG_TEAM_3_MAGENTA:String = "AT-SPG_team_3_magenta";
+      
+      public static const HEAVY_TANK_TEAM_3_DEAD_MAGENTA:String = "heavyTank_team_3_dead_magenta";
+      
+      public static const HEAVY_TANK_TEAM_3_MAGENTA:String = "heavyTank_team_3_magenta";
+      
+      public static const LIGHT_TANK_TEAM_3_DEAD_MAGENTA:String = "lightTank_team_3_dead_magenta";
+      
+      public static const LIGHT_TANK_TEAM_3_MAGENTA:String = "lightTank_team_3_magenta";
+      
+      public static const MEDIUM_TANK_TEAM_3_DEAD_MAGENTA:String = "mediumTank_team_3_dead_magenta";
+      
+      public static const MEDIUM_TANK_TEAM_3_MAGENTA:String = "mediumTank_team_3_magenta";
+      
+      public static const SPG_TEAM_3_DEAD_MAGENTA:String = "SPG_team_3_dead_magenta";
+      
+      public static const SPG_TEAM_3_MAGENTA:String = "SPG_team_3_magenta";
+      
+      public static const HEAVY_TANK_TEAM_4_DEAD_GREY:String = "heavyTank_team_4_dead_grey";
+      
+      public static const HEAVY_TANK_TEAM_4_GREY:String = "heavyTank_team_4_grey";
+      
+      public static const LIGHT_TANK_TEAM_4_DEAD_GREY:String = "lightTank_team_4_dead_grey";
+      
+      public static const LIGHT_TANK_TEAM_4_GREY:String = "lightTank_team_4_grey";
+      
+      public static const MEDIUM_TANK_TEAM_4_DEAD_GREY:String = "mediumTank_team_4_dead_grey";
+      
+      public static const MEDIUM_TANK_TEAM_4_GREY:String = "mediumTank_team_4_grey";
+      
+      public static const LASTLIT_GRINCH_SQUADMAN_GRINCHGOLD:String = "lastlit_grinch_squadman_grinchgold";
+      
+      public static const LASTLIT_TEAM_1_CYAN:String = "lastlit_team_1_cyan";
+      
+      public static const LASTLIT_TEAM_2_AMBER:String = "lastlit_team_2_amber";
+      
+      public static const LASTLIT_TEAM_3_MAGENTA:String = "lastlit_team_3_magenta";
+      
+      public static const LASTLIT_TEAM_4_GREY:String = "lastlit_team_4_grey";
+      
+      public static const RIBBONS_ABILITY_ASSIST_BLIZZARD:String = "ribbonsAbilityAssistBlizzard";
+      
+      public static const RIBBONS_ABILITY_ASSIST_BUFF:String = "ribbonsAbilityAssistBuff";
+      
+      public static const RIBBONS_ABILITY_ASSIST_FLARE:String = "ribbonsAbilityAssistFlare";
+      
+      public static const RIBBONS_ABILITY_ASSIST_SONAR:String = "ribbonsAbilityAssistSonar";
+      
+      public static const RIBBONS_BASE_DEFENDER_BONUS:String = "ribbonsBaseDefenderBonus";
+      
+      public static const RIBBONS_BLIZZARD_CAUSED_DAMAGE:String = "ribbonsBlizzardCausedDamage";
+      
+      public static const RIBBONS_DAMAGED_BY_BLIZZARD:String = "ribbonsDamagedByBlizzard";
+      
+      public static const RIBBONS_DAMAGED_BY_DART:String = "ribbonsDamagedByDart";
+      
+      public static const RIBBONS_DAMAGED_BY_SNOWSTORM:String = "ribbonsDamagedBySnowstorm";
+      
+      public static const RIBBONS_DART_DAMAGE_CAUSED:String = "ribbonsDartDamageCaused";
+      
+      public static const RIBBONS_MISSILE_DAMAGE_CAUSED:String = "ribbonsMissileDamageCaused";
+      
+      public static const RIBBONS_MISSILE_DAMAGE_RECEIVED:String = "ribbonsMissileDamageReceived";
+      
+      public static const RIBBONS_PRESENTS_DELIVERY:String = "ribbonsPresentsDelivery";
+      
+      public static const RIBBONS_RAGE:String = "ribbonsRage";
+      
+      public static const RIBBONS_SONAR_CAUSED_DAMAGE:String = "ribbonsSonarCausedDamage";
+      
+      public static const RIBBONS_TURRET_DEALT_DAMAGE:String = "ribbonsTurretDealtDamage";
+      
+      public static const RIBBONS_TURRET_DESTROYED:String = "ribbonsTurretDestroyed";
+      
+      public static const WHITE_ICON_TURRET_AT_SPG16X16:String = "whiteIconTurretAT-SPG16x16";
+      
+      public static const WHITE_ICON_TURRET_SPG16X16:String = "whiteIconTurretSPG16x16";
       
       public static const BUNKER_BLIND:String = "BunkerBlind";
       

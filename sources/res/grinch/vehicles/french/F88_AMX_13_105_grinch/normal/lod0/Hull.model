@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>grinch/vehicles/french/F88_AMX_13_105_grinch/normal/lod0/Hull</nodefullVisual>
+	<visibilityBox>
+		<min>-1.335811 -0.585593 -2.466029</min>
+		<max>1.303576 0.407899 2.447288</max>
+	</visibilityBox>
+	<parent>grinch/vehicles/french/F88_AMX_13_105_grinch/normal/lod1/Hull</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+</root>

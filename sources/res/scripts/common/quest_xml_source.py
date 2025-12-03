@@ -1,5 +1,6 @@
 import sys, time, typing, ArenaType, ResMgr, nations
 from persistent_data_cache_common.serializers import WGPickleSerializer
+from items.components.ny_constants import CurrentNYConstants, PREV_NY_TOYS_BONUSES
 from soft_exception import SoftException
 from copy import deepcopy
 from pprint import pformat
@@ -538,7 +539,8 @@ class Source(object):
          'customizations', 'vehicleChoice', 'crewSkin', 'blueprint', 'blueprintAny', 'enhancement',
          'eventCoin', 'bpcoin', 'entitlement', 'rankedDailyBattles', 'rankedBonusBattles', 'equipCoin',
          'dogTagComponent', 'battlePassPoints', 'currency', 'freePremiumCrew', 'entitlementList',
-         'dailyQuestReroll', 'noviceReset', 'pets'}
+         'dailyQuestReroll', 'noviceReset', 'pets', CurrentNYConstants.TOY_BONUS}
+        bonusTypes.update(PREV_NY_TOYS_BONUSES)
         if eventType in (EVENT_TYPE.BATTLE_QUEST, EVENT_TYPE.PERSONAL_QUEST, EVENT_TYPE.NT_QUEST):
             bonusTypes.update(('xp', 'tankmenXP', 'xpFactor', 'creditsFactor', 'freeXPFactor',
                                'tankmenXPFactor'))

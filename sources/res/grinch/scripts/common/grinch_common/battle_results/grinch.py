@@ -1,0 +1,90 @@
+from battle_results.battle_results_constants import BATTLE_RESULT_ENTRY_TYPE as ENTRY_TYPE
+BATTLE_RESULTS = [
+ (
+  'grinch/teamPlace', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_ALL),
+ (
+  'grinch/personalPlace', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_ALL),
+ (
+  'grinch/totalGrinchPoints', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_ALL),
+ (
+  'grinch/presentsDelivery', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_ALL),
+ (
+  'grinch/allPresentsDelivery', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_ALL),
+ (
+  'grinch/presentsDeliveryPoints', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_ALL),
+ (
+  'grinch/presentsTheft', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_ALL),
+ (
+  'grinch/presentsStealthTheft', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_ALL),
+ (
+  'grinch/carrierKilled', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_ALL),
+ (
+  'grinch/rageDamage', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_ALL),
+ (
+  'grinch/stealthDamage', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_ALL),
+ (
+  'grinch/heal', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_ALL),
+ (
+  'grinch/frozenKill', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_ALL),
+ (
+  'grinch/closeRangeDamage', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_ALL),
+ (
+  'grinch/flaredDamage', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_ALL),
+ (
+  'grinch/turretDamage', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_ALL),
+ (
+  'grinch/damage', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_ALL),
+ (
+  'grinch/ramming', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_ALL),
+ (
+  'grinch/rammingPoints', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_ALL),
+ (
+  'grinch/damagePoints', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_ALL),
+ (
+  'grinch/hitAssist', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_ALL),
+ (
+  'grinch/hitAssistPoints', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_ALL),
+ (
+  'grinch/abilityAssistFlare', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_ALL),
+ (
+  'grinch/abilityAssistFlarePoints', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_ALL),
+ (
+  'grinch/abilityAssistBlizzard', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_ALL),
+ (
+  'grinch/abilityAssistBlizzardPoints', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_ALL),
+ (
+  'grinch/abilityAssistSonar', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_ALL),
+ (
+  'grinch/abilityAssistSonarPoints', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_ALL),
+ (
+  'grinch/abilityAssistBuff', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_ALL),
+ (
+  'grinch/abilityAssistBuffPoints', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_ALL),
+ (
+  'grinch/kill', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_ALL),
+ (
+  'grinch/killPoints', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_ALL),
+ (
+  'grinch/baseDefenderBonus', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_ALL),
+ (
+  'grinch/baseDefenderBonusPoints', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_ALL),
+ (
+  'grinch/enemyDetection', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_ALL),
+ (
+  'grinch/enemyDetectionPoints', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_ALL),
+ (
+  'grinch/progressionPoints', int, 0, None, 'sum', ENTRY_TYPE.ACCOUNT_SELF),
+ (
+  'grinch/killCarrier', int, 0, None, 'sum', ENTRY_TYPE.ACCOUNT_SELF),
+ (
+  'grinch/killDefender', int, 0, None, 'sum', ENTRY_TYPE.ACCOUNT_SELF),
+ (
+  'grinch/damageToAssault', int, 0, None, 'sum', ENTRY_TYPE.ACCOUNT_SELF),
+ (
+  'grinch/damageToVehiclesUnderDart', int, 0, None, 'sum', ENTRY_TYPE.ACCOUNT_SELF),
+ (
+  'grinch/damageToVehiclesUnderSonar', int, 0, None, 'sum', ENTRY_TYPE.ACCOUNT_SELF),
+ (
+  'grinch/damageToTurrets', int, 0, None, 'sum', ENTRY_TYPE.ACCOUNT_SELF),
+ (
+  'grinch/missileDamage', int, 0, None, 'sum', ENTRY_TYPE.ACCOUNT_SELF)]

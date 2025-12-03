@@ -74,3 +74,16 @@ class GetVehicleOutfitLevel(Block, VehicleMeta):
         vehicle = self._vehicle.getValue()
         level = vehicle.publicInfo['outfitLevel']
         self._level.setValue(level)
+
+
+class GetVehicleName(Block, VehicleMeta):
+
+    def __init__(self, *args, **kwargs):
+        super(GetVehicleName, self).__init__(*args, **kwargs)
+        self._vehicle = self._makeDataInputSlot('vehicle', SLOT_TYPE.VEHICLE)
+        self._name = self._makeDataOutputSlot('name', SLOT_TYPE.STR, self._getName)
+
+    def _getName(self):
+        vehicle = self._vehicle.getValue()
+        name = vehicle.typeDescriptor.name
+        self._name.setValue(name)

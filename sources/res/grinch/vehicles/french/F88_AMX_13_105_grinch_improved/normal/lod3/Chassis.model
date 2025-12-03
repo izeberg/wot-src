@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>grinch/vehicles/french/F88_AMX_13_105_grinch_improved/normal/lod4/Chassis</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.260381 0.016157 -2.445751</min>
+		<max>1.262583 1.067816 2.460575</max>
+	</visibilityBox>
+	<nodefullVisual>grinch/vehicles/french/F88_AMX_13_105_grinch_improved/normal/lod3/Chassis</nodefullVisual>
+</root>

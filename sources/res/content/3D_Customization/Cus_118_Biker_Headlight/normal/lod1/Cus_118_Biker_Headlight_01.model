@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/3D_Customization/Cus_118_Biker_Headlight/normal/lod2/Cus_118_Biker_Headlight_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.215456 -0.201307 -0.116384</min>
+		<max>0.216214 0.364592 0.134936</max>
+	</visibilityBox>
+	<nodefullVisual>content/3D_Customization/Cus_118_Biker_Headlight/normal/lod1/Cus_118_Biker_Headlight_01</nodefullVisual>
+	<tank>true</tank>
+</root>

@@ -417,7 +417,7 @@ def hasGroupPenalties(groupName, comparator):
 def __hasEffect(groupName, comparator, targetState):
     for paramName in chain(PARAMS_GROUPS[groupName], EXTRA_PARAMS_GROUP[groupName]):
         state = comparator.getExtendedData(paramName).state
-        if type(state[0]) is not tuple:
+        if state and type(state[0]) is not tuple:
             state = (
              state,)
         if any([ status == targetState for status, _ in state ]):

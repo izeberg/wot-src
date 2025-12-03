@@ -1,0 +1,3934 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-01 10:00+0300\n"
+"PO-Revision-Date: 2010-06-01 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "#PluralForms"
+msgstr "nplurals=2; plural=(n != 1);"
+
+msgid "activityReward/tooltip/body/action"
+msgstr "The guest will do something with the item you have brought."
+
+msgid "activityReward/tooltip/body/decoration"
+msgstr "A beautiful decoration for your festive Village."
+
+msgid "activityReward/tooltip/body/story"
+msgstr "An amazing story Benedict is excited to share with you."
+
+msgid "activityReward/tooltip/header/action"
+msgstr "Action"
+
+msgid "activityReward/tooltip/header/decoration"
+msgstr "Village Decoration"
+
+msgid "activityReward/tooltip/header/story"
+msgstr "Story"
+
+msgid "allTown/defaultHangar"
+msgstr ""
+"Use resources to increase Christmas Tree, Fair, and Installation Levels."
+
+msgid "allTown/hello"
+msgstr "Welcome!"
+
+msgid "allTown/maxLevel"
+msgstr ""
+"Your Village has been upgraded to the maximum. Enjoy the pure beauty on your"
+" screen!"
+
+msgid "applyDiscountWindow/compatibleCheckBox/label"
+msgstr "Display only researched vehicles"
+
+msgid "applyDiscountWindow/infoText"
+msgstr ""
+"Select a Tier %(level)s vehicle to apply a %(discount)s%% credit discount "
+"to. The list does not display vehicles that already have the same or a "
+"larger discount applied."
+
+msgid "applyDiscountWindow/title"
+msgstr "Select a Tier %(level)s Vehicle"
+
+msgid "backButton/NewYearCelebrityView"
+msgstr "TO MISSIONS"
+
+msgid "backButton/NyFriendCelebrityView"
+msgstr "TO MISSIONS"
+
+msgid "backButton/NyFriendGladeView"
+msgstr "TO YOUR FRIEND'S SQUARE"
+
+msgid "backButton/NyFriendsView"
+msgstr "TO FRIENDS"
+
+msgid "backButton/NyGiftMachineView"
+msgstr "TO TERMINAL"
+
+msgid "backButton/NyGladeView"
+msgstr "TO SQUARE"
+
+msgid "backButton/NyInfoView"
+msgstr "TO EVENT"
+
+msgid "backButton/NyMarketplaceView"
+msgstr "TO STORE"
+
+msgid "backButton/NyRewardsInfoView"
+msgstr "TO REWARDS"
+
+msgid "backButton/capitalizedLabel"
+msgstr "Back"
+
+msgid "bonusPercentage"
+msgstr "%(operand) %(value)%"
+
+msgid "bundlePurchaseDialog/content/customization/description/lastDay/level2"
+msgstr ""
+"The customization set for Chaffee will only be available for less than 1 d, "
+"but the inscriptions are yours to keep!"
+
+msgid "bundlePurchaseDialog/content/customization/description/lastDay/level3"
+msgstr ""
+"The customization set for Chaffee will only be available for less than 1 d, "
+"but the decals are yours to keep!"
+
+msgid "bundlePurchaseDialog/content/customization/description/lastDay/level4"
+msgstr ""
+"The customization set for Chaffee will only be available for less than 1 d, "
+"but the 2D style is yours to keep!"
+
+msgid "bundlePurchaseDialog/content/customization/description/level2"
+msgid_plural "bundlePurchaseDialog/content/customization/description/level2"
+msgstr[0] ""
+"The customization set for Chaffee will only be available for %(daysCount)s "
+"day, but the inscriptions are yours to keep!"
+msgstr[1] ""
+"The customization set for Chaffee will only be available for %(daysCount)s "
+"days, but the inscriptions are yours to keep!"
+msgstr[2] ""
+"The customization set for Chaffee will only be available for %(daysCount)s "
+"days, but the inscriptions are yours to keep!"
+
+msgid "bundlePurchaseDialog/content/customization/description/level3"
+msgid_plural "bundlePurchaseDialog/content/customization/description/level3"
+msgstr[0] ""
+"The customization set for Chaffee will only be available for %(daysCount)s "
+"day, but the decals are yours to keep!"
+msgstr[1] ""
+"The customization set for Chaffee will only be available for %(daysCount)s "
+"days, but the decals are yours to keep!"
+msgstr[2] ""
+"The customization set for Chaffee will only be available for %(daysCount)s "
+"days, but the decals are yours to keep!"
+
+msgid "bundlePurchaseDialog/content/customization/description/level4"
+msgid_plural "bundlePurchaseDialog/content/customization/description/level4"
+msgstr[0] ""
+"The customization set for Chaffee will only be available for %(daysCount)s "
+"day, but the 2D style is yours to keep!"
+msgstr[1] ""
+"The customization set for Chaffee will only be available for %(daysCount)s "
+"days, but the 2D style is yours to keep!"
+msgstr[2] ""
+"The customization set for Chaffee will only be available for %(daysCount)s "
+"days, but the 2D style is yours to keep!"
+
+msgid "bundlePurchaseDialog/content/customization/title/level2"
+msgstr "%(amount)s inscriptions and an Enhanced customization set for Chaffee"
+
+msgid "bundlePurchaseDialog/content/customization/title/level3"
+msgstr "%(amount)s decals and an Excellent customization set for Chaffee"
+
+msgid "bundlePurchaseDialog/content/customization/title/level4"
+msgstr "2D style and an Awesome customization set for Chaffee"
+
+msgid "bundlePurchaseDialog/content/label"
+msgstr "This Sack is active."
+
+msgid "bundlePurchaseDialog/content/rewards/title/level1"
+msgstr "The Basic Sack will drop one of the following items:"
+
+msgid "bundlePurchaseDialog/content/rewards/title/level2"
+msgstr "Each Enhanced Sack will drop one of the following items:"
+
+msgid "bundlePurchaseDialog/content/rewards/title/level3"
+msgstr "Each Excellent Sack will drop one of the following items:"
+
+msgid "bundlePurchaseDialog/content/rewards/title/level4"
+msgstr "Each Awesome Sack will drop one of the following items:"
+
+msgid "bundlePurchaseDialog/logo/subtitle/level1"
+msgstr "Basic Bundle"
+
+msgid "bundlePurchaseDialog/logo/subtitle/level2"
+msgstr "Enhanced Bundle"
+
+msgid "bundlePurchaseDialog/logo/subtitle/level3"
+msgstr "Excellent Bundle"
+
+msgid "bundlePurchaseDialog/logo/subtitle/level4"
+msgstr "Awesome Bundle"
+
+msgid "bundlePurchaseDialog/purchase/tooltip/locked/body/level3"
+msgstr "Purchase the Enhanced Bundle to unlock the Excellent Bundle."
+
+msgid "bundlePurchaseDialog/purchase/tooltip/locked/body/level4"
+msgstr "Purchase the Excellent Bundle to unlock the Awesome Bundle."
+
+msgid "bundlePurchaseDialog/purchase/tooltip/locked/header/level3"
+msgstr "Purchase Enhanced Bundle"
+
+msgid "bundlePurchaseDialog/purchase/tooltip/locked/header/level4"
+msgstr "Purchase Excellent Bundle"
+
+msgid "celebrityChallenge/backLabel"
+msgstr "TO ASSIGNMENTS"
+
+msgid "celebrityGuestQuest/confirm/acceptButtonText"
+msgstr "Purchase"
+
+msgid "celebrityGuestQuest/confirm/cancelButtonText"
+msgstr "Cancel"
+
+msgid "celebrityGuestQuest/confirm/content"
+msgstr "Purchase the %(questId)s item?"
+
+msgid "celebrityGuestQuest/confirm/price"
+msgstr "Price:"
+
+msgid "challenge/celebrityAnimation/button"
+msgstr "To Assignments"
+
+msgid "challenge/dialogs/discount/apply"
+msgstr "Apply"
+
+msgid "challenge/dialogs/discount/reject"
+msgstr "Cancel"
+
+msgid "challenge/dialogs/discount/text"
+msgstr ""
+"Apply %(creamColor_Open)s%(percent)s% credit discount%(creamColor_Close)s "
+"for the %(inherit_Open)s%(vehicleIcon)s %(vehicleName)s%(inherit_Close)s?"
+
+msgid "challengeTokenTooltip/description_1/ho_mastery_challenge_token"
+msgstr ""
+"Awarded for completing {{@ style (color $color)}}both{{/}} missions in a "
+"Holiday Ops 2026 Challenge Stage."
+
+msgid "challengeTokenTooltip/description_1/ho_simple_challenge_token"
+msgstr ""
+"Awarded for completing {{@ style (color $color)}}one{{/}} of two missions in"
+" the Holiday Ops 2026 Challenge."
+
+msgid "challengeTokenTooltip/description_2/ho_mastery_challenge_token"
+msgstr "Collect {{missionsAmount}} to master the Holiday Ops Challenge!"
+
+msgid "challengeTokenTooltip/description_2/ho_simple_challenge_token"
+msgstr "Collect to advance through the Holiday Ops Challenge."
+
+msgid "challengeTokenTooltip/title/ho_mastery_challenge_token"
+msgstr "Mastery Seal"
+
+msgid "challengeTokenTooltip/title/ho_simple_challenge_token"
+msgstr "Challenge Seal"
+
+msgid "collectedResourceRewardScreen/button/accept"
+msgstr "Affirmative!"
+
+msgid "collectedResourceRewardScreen/button/toStyle"
+msgstr "To Style"
+
+msgid "collectedResourceRewardScreen/header/subtitle/multiReward"
+msgstr "Rewards received for collecting resources from Best Friends"
+
+msgid "collectedResourceRewardScreen/header/subtitle/singleReward"
+msgstr ""
+"Reward received for collecting resources from Best Friends "
+"%(whiteSpanish_Open)s%(numberOfRewards)s times%(whiteSpanish_Close)s"
+
+msgid "collectedResourceRewardScreen/header/title"
+msgstr "CONGRATULATIONS!"
+
+msgid "collectedResourceRewardScreen/stylePreview/backLabel"
+msgstr "TO REWARDS"
+
+msgid "common/dashes"
+msgstr "- - -"
+
+msgid "common/resources"
+msgid_plural "plural/common/resources"
+msgstr[0] "%(amount)s resource"
+msgstr[1] "%(amount)s resources"
+msgstr[2] "%(amount)s resources"
+
+msgid "customizationObject/marker/nonUpgradable"
+msgstr "!"
+
+msgid "customizationObjectTooltip/conjunction"
+msgstr "and"
+
+msgid "customizationObjectTooltip/costToUpgrade"
+msgstr ""
+"Required for%(creamColor_Open)s Level %(level)s%(creamColor_Close)s: %(cost)"
+
+msgid "customizationObjectTooltip/description/finished/Fair"
+msgstr "You have reached the maximum Fair Level."
+
+msgid "customizationObjectTooltip/description/finished/Fir"
+msgstr "You have reached the maximum Christmas Tree Level."
+
+msgid "customizationObjectTooltip/description/finished/Installation"
+msgstr "You have reached the maximum Installation Level."
+
+msgid "customizationObjectTooltip/description/headquartersChallenge"
+msgstr ""
+"Enter the Headquarters, complete missions and Benedict's Assignments, and receive rewards.\n"
+"\n"
+"You will get economic bonuses for completing Benedict's Assignments."
+
+msgid "customizationObjectTooltip/description/progress/Fair"
+msgstr ""
+"Improve the Fair to increase the Festive Atmosphere Level. For each new Fair"
+" Level you reach, you will unlock new Fair slots and receive decorations in "
+"each of them."
+
+msgid "customizationObjectTooltip/description/progress/Fir"
+msgstr ""
+"Improve the Christmas Tree to increase the Festive Atmosphere Level. For "
+"each new Christmas Tree Level you reach, you will unlock new Christmas Tree "
+"slots and receive decorations in each of them (except for Color slots)."
+
+msgid "customizationObjectTooltip/description/progress/Installation"
+msgstr ""
+"Improve the Installation to increase the Festive Atmosphere Level. For each "
+"new Installation Level you reach, you will unlock new Installation slots and"
+" receive decorations in each of them."
+
+msgid "customizationObjectTooltip/description/resources/default"
+msgstr ""
+"Use resources to complete assignments, increase the Christmas Tree, Installation, and Fair Levels, and perform other actions.\n"
+"You can collect %(brownColor_Open)s%(collectAmount)s resources %(brownColor_Close)sof each type once per day.\n"
+"If you miss one or more days, you will be able to collect %(brownColor_Open)s%(collectAmountExtra)s resources %(brownColor_Close)sof each type. Resources are compensated for %(brownColor_Open)sone %(brownColor_Close)smissed day only."
+
+msgid "customizationObjectTooltip/description/resources/finished"
+msgstr ""
+"You have collected all resources available in the Village this year!\n"
+"Check out the other ways to get more resources."
+
+msgid "customizationObjectTooltip/objectName/Fair"
+msgstr "Fair"
+
+msgid "customizationObjectTooltip/objectName/Fir"
+msgstr "Christmas Tree"
+
+msgid "customizationObjectTooltip/objectName/Installation"
+msgstr "Installation"
+
+msgid "customizationObjectTooltip/objectName/Resources"
+msgstr "Resources"
+
+msgid "customizationObjectTooltip/objectName/headquartersChallenge"
+msgstr "HQ"
+
+msgid "customizationObjectTooltip/objectStatus/headquartersChallenge"
+msgstr "Benedict's residence"
+
+msgid "customizationObjectTooltip/objectStatus/initial"
+msgstr "Level not reached."
+
+msgid "customizationObjectTooltip/objectStatus/progress"
+msgstr "Level %(currentLvl)s of %(maxLvl)s"
+
+msgid "customizationObjectTooltip/objectStatus/resources/available"
+msgstr "Resources available"
+
+msgid "customizationObjectTooltip/objectStatus/resources/collected"
+msgstr "Collected"
+
+msgid "customizations/inscription"
+msgstr "%(name)s inscription"
+
+msgid "customizations/projectionDecal"
+msgstr "%(name)s decal"
+
+msgid "customizations/style"
+msgstr "%(name)s 2D style"
+
+msgid "dailyQuests/info/buttons/submit"
+msgstr "Affirmative"
+
+msgid "dailyQuests/info/description"
+msgstr ""
+"During Holiday Ops 2026, you will receive {{@ style (color $color)}}random "
+"{{/}}{{@ style (color $color)}}event {{/}}{{@ style (color "
+"$color)}}resources {{/}}for completing standard and bonus daily missions, on"
+" top of other rewards. One standard mission will be fixed and available for "
+"completion every day."
+
+msgid "dailyQuests/info/title"
+msgstr "Random Resources for Daily Missions"
+
+msgid "decorationTypes/air_balloon"
+msgstr "Hot-Air Balloons"
+
+msgid "decorationTypes/attraction"
+msgstr "Ride"
+
+msgid "decorationTypes/ball"
+msgstr "Pendant"
+
+msgid "decorationTypes/bridge"
+msgstr "Grand Viaduct"
+
+msgid "decorationTypes/castle"
+msgstr "Nebelburg"
+
+msgid "decorationTypes/color_fir"
+msgstr "Color"
+
+msgid "decorationTypes/dog_bowl"
+msgstr "Dog Bowl"
+
+msgid "decorationTypes/dog_house"
+msgstr "Dog Bed"
+
+msgid "decorationTypes/dog_toy"
+msgstr "Dog Toy"
+
+msgid "decorationTypes/exposition"
+msgstr "Science and Tech"
+
+msgid "decorationTypes/ferris_wheel"
+msgstr "Ferris Wheel"
+
+msgid "decorationTypes/floor"
+msgstr "Gift"
+
+msgid "decorationTypes/garland_fair"
+msgstr "Garland: Fair"
+
+msgid "decorationTypes/garland_fir"
+msgstr "Garland: Christmas Tree"
+
+msgid "decorationTypes/garland_installation"
+msgstr "Garland: Installation"
+
+msgid "decorationTypes/gift"
+msgstr "Tree Skirt"
+
+msgid "decorationTypes/ground_light"
+msgstr "Small Illumination"
+
+msgid "decorationTypes/hanging"
+msgstr "Pendant"
+
+msgid "decorationTypes/house_decoration"
+msgstr "House"
+
+msgid "decorationTypes/house_lamp"
+msgstr "Small Illumination"
+
+msgid "decorationTypes/kiosk"
+msgstr "Stand"
+
+msgid "decorationTypes/kitchen"
+msgstr "Kitchen"
+
+msgid "decorationTypes/pavilion"
+msgstr "Gazebo"
+
+msgid "decorationTypes/pyro"
+msgstr "Pyrotechnics"
+
+msgid "decorationTypes/random"
+msgstr "Random Decoration Type"
+
+msgid "decorationTypes/sculpture"
+msgstr "Sculpture"
+
+msgid "decorationTypes/sculpture_light"
+msgstr "Sculpture Lighting"
+
+msgid "decorationTypes/snow_item"
+msgstr "Snow Carving"
+
+msgid "decorationTypes/snowman"
+msgstr "Snowman"
+
+msgid "decorationTypes/street_garland"
+msgstr "External Garlands"
+
+msgid "decorationTypes/table"
+msgstr "Table"
+
+msgid "decorationTypes/top"
+msgstr "Tree Topper"
+
+msgid "decorationTypes/typeDisplay/ball"
+msgstr "PENDANT"
+
+msgid "decorationTypes/typeDisplay/floor"
+msgstr "TREE SKIRT"
+
+msgid "decorationTypes/typeDisplay/garland_fir"
+msgstr "GARLAND"
+
+msgid "decorationTypes/typeDisplay/ground_light"
+msgstr "SMALL ILLUMINATION"
+
+msgid "decorationTypes/typeDisplay/kitchen"
+msgstr "KITCHEN"
+
+msgid "decorationTypes/typeDisplay/random"
+msgstr "Random"
+
+msgid "decorationTypes/typeDisplay/sculpture"
+msgstr "SCULPTURE"
+
+msgid "decorationTypes/typeDisplay/sculpture_light"
+msgstr "SCULPTURE LIGHTING"
+
+msgid "decorationTypes/typeDisplay/table"
+msgstr "TABLE"
+
+msgid "decorationTypes/typeDisplay/top"
+msgstr "TREE TOPPER"
+
+msgid "decorationTypes/typeDisplay/trees"
+msgstr "EXTERNAL GARLAND"
+
+msgid "decorations/tooltip/color_fir"
+msgstr "Colors do not affect the Festive Atmosphere Level."
+
+msgid "decorations/tooltip/dogDecoration/locked/description/sack_1"
+msgstr "To unlock this item, purchase the Enhanced Bundle"
+
+msgid "decorations/tooltip/dogDecoration/locked/description/sack_2"
+msgstr "To unlock this item, purchase the Excellent Bundle"
+
+msgid "decorations/tooltip/dogDecoration/locked/description/sack_3"
+msgstr "To unlock this item, purchase the Awesome Bundle"
+
+msgid "decorations/tooltip/dogDecoration/rented/description/base"
+msgid_plural ""
+"plural/decorations/tooltip/dogDecoration/rented/description/base"
+msgstr[0] ""
+"This rented item will be available for %(brownColor_Open)s%(daysCount)s "
+"d%(brownColor_Close)s, after which it will be removed from your account "
+"without compensation."
+msgstr[1] ""
+"This rented item will be available for %(brownColor_Open)s%(daysCount)s "
+"d%(brownColor_Close)s, after which it will be removed from your account "
+"without compensation."
+msgstr[2] ""
+"This rented item will be available for %(brownColor_Open)s%(daysCount)s "
+"d%(brownColor_Close)s, after which it will be removed from your account "
+"without compensation."
+
+msgid "decorations/tooltip/dogDecoration/rented/description/lastDay"
+msgstr ""
+"This rented item will be available for %(brownColor_Open)sless than 1 "
+"d%(brownColor_Close)s, after which it will be removed from your account "
+"without compensation."
+
+msgid "decorations/tooltip/dogDecoration/subtitle"
+msgstr "%(decorationType)s from the %(setName)s"
+
+msgid "decorations/tooltip/notaffect"
+msgstr "Decorations do not affect the Festive Atmosphere Level."
+
+msgid "decorations/tooltip/source/adventCalendar"
+msgstr "Received from the Advent Calendar."
+
+msgid "decorations/tooltip/source/bigBoxes"
+msgstr "Received from Large Boxes."
+
+msgid "decorations/tooltip/source/customizationObject/Fair"
+msgstr "Received for upgrading the Fair."
+
+msgid "decorations/tooltip/source/customizationObject/Fir"
+msgstr "Received for upgrading the Christmas Tree."
+
+msgid "decorations/tooltip/source/customizationObject/Installation"
+msgstr "Received for upgrading the Installation."
+
+msgid "decorations/tooltip/source/dog"
+msgstr "Received from Chaffee’s Sacks."
+
+msgid "decorations/tooltip/source/guest"
+msgstr "Received for completing certain Benedict's Assignments."
+
+msgid "decorations/tooltip/unavailable/description/adventCalendar"
+msgstr "It can be received from the Advent Calendar."
+
+msgid "decorations/tooltip/unavailable/description/bigBoxes"
+msgstr ""
+"It can be received from Large Boxes and placed in all corresponding slots."
+
+msgid "decorations/tooltip/unavailable/description/colorFir/adventCalendar"
+msgstr "This color can be received from the Advent Calendar."
+
+msgid "decorations/tooltip/unavailable/description/colorFir/bigBoxes"
+msgstr "Colors for your Christmas Tree can be received from Large Boxes."
+
+msgid "decorations/tooltip/unavailable/description/dog"
+msgstr "It can be received from Chaffee’s Sacks."
+
+msgid "decorations/tooltip/unavailable/description/fair"
+msgstr ""
+"Increase the Decoration Zone Level to unlock new slots and receive "
+"decorations of the corresponding group. Use Pure Emerald to improve the "
+"Fair."
+
+msgid "decorations/tooltip/unavailable/description/fir"
+msgstr ""
+"Increase the Decoration Zone Level to unlock new slots and receive "
+"decorations of the corresponding group, excluding Colors. Use Rock Crystal "
+"to improve the Christmas Tree."
+
+msgid "decorations/tooltip/unavailable/description/guest"
+msgstr "It can be received for completing certain Benedict's Assignments."
+
+msgid "decorations/tooltip/unavailable/description/installation"
+msgstr ""
+"Increase the Decoration Zone Level to unlock new slots and receive "
+"decorations of the corresponding group. Use Rock Crystal and Pure Emerald to"
+" improve the Installation."
+
+msgid "decorations/tooltip/unavailable/specific/title"
+msgstr "%(toyName)s Currently Unavailable"
+
+msgid "decorations/tooltip/unavailable/title"
+msgstr "Decoration Currently Unavailable"
+
+msgid "dialog/purchase/button/buy"
+msgstr "Purchase"
+
+msgid "dialog/purchase/button/notEnoughCredits"
+msgstr "Get More Credits"
+
+msgid "dialog/purchase/button/notEnoughGold"
+msgstr "Get More Gold"
+
+msgid "dialog/purchase/tooltip/unavailable/body"
+msgstr ""
+"Purchasing is temporarily unavailable for technical reasons. Try again "
+"later."
+
+msgid "dialog/purchase/tooltip/unavailable/header"
+msgstr "Purchasing Temporarily Unavailable"
+
+msgid "economicBonus/bonusName/creditsFactor"
+msgstr "credits"
+
+msgid "economicBonus/bonusName/freeXPFactor"
+msgstr "Free XP"
+
+msgid "economicBonus/bonusName/tankmenXPFactor"
+msgstr "Crew XP"
+
+msgid "economicBonus/bonusName/xpFactor"
+msgstr "Combat XP"
+
+msgid "economicBonusPopover/permanentBonus/title"
+msgstr "Continuous Bonus:"
+
+msgid "economicBonusPopover/selectableBonus/title"
+msgstr "Selectable Bonuses:"
+
+msgid "economicBonuswidget/label/default"
+msgstr "TO ASSIGNMENTS"
+
+msgid "friends/card/collect"
+msgstr "Collect Resources From Friend"
+
+msgid "friends/card/empty/available"
+msgstr "Mark your Best Friend with a star."
+
+msgid "friends/card/empty/cooldown"
+msgstr ""
+"Once the timer stops, you will be able to add friends to your Best Friends."
+
+msgid "friends/card/empty/promo/description"
+msgstr ""
+"You can collect up to %(value)s resources of each type from their Villages "
+"every day."
+
+msgid "friends/card/empty/promo/title"
+msgstr "Add More Friends!"
+
+msgid "friends/card/moveToHangar"
+msgstr "Go to Friend's Village"
+
+msgid "friends/card/resourcesCollected"
+msgstr "Resources collected by your friend"
+
+msgid "friends/card/visited"
+msgstr "Number of times they visited your Village"
+
+msgid "friends/failure/message"
+msgstr ""
+"Error updating the list of your friends' Villages. Please enter this section"
+" again or try checking back later if this error persists."
+
+msgid "friends/failure/title"
+msgstr "Error Updating the List"
+
+msgid "friends/glade/welcomeText"
+msgstr ""
+"Welcome to %(creamColor_Open)s%(friendName)s's%(creamColor_Close)s Village: "
+"%(creamColor_Open)s%(hangarName)s%(creamColor_Close)s"
+
+msgid "friends/header/best"
+msgstr "Best Friends: %(counter)s %(infoIcon)s"
+
+msgid "friends/header/bestCounter"
+msgstr "%(current)s / %(total)s"
+
+msgid "friends/header/friends"
+msgstr "Friends: %(amount)s"
+
+msgid "friends/hint"
+msgstr ""
+"Mark your Best Friends with %(icon)s. You can collect resources from each of"
+" them once a day, and the friend will not lose anything. The list of Best "
+"Friends can be changed."
+
+msgid "friends/info/banner"
+msgstr ""
+"Only friends who have chosen their Village Name and are participating in the"
+" Holiday Ops 2026 event are displayed. Updating your Friends list can take "
+"up to 30 minutes."
+
+msgid "friends/loading/message"
+msgstr "Updating your Friends list..."
+
+msgid "friends/noFriends/subtitle/battle"
+msgstr ""
+"If you enjoyed playing with a player, you can add them to your Friends list "
+"on the Battle Results screen."
+
+msgid "friends/noFriends/subtitle/clan"
+msgstr ""
+"You can find like-minded players in the clan to add to your Friends list."
+
+msgid "friends/noFriends/subtitle/common"
+msgstr ""
+"Friends will help you collect up to %(value)s resources of each type every "
+"day."
+
+msgid "friends/noFriends/subtitle/platoon"
+msgstr ""
+"If you like playing in a Platoon with another player, you can add them to "
+"your Friends list to stay in touch."
+
+msgid "friends/noFriends/subtitle/social"
+msgstr ""
+"You can add a player to your Friends list by searching for their nickname in"
+" the game. Nicknames can be found on social networks or forums."
+
+msgid "friends/noFriends/title/battle"
+msgstr "On the Battle Results Screen"
+
+msgid "friends/noFriends/title/clan"
+msgstr "In Clans"
+
+msgid "friends/noFriends/title/common"
+msgstr "Find Your Friends!"
+
+msgid "friends/noFriends/title/platoon"
+msgstr "In Platoons"
+
+msgid "friends/noFriends/title/social"
+msgstr "From Social Networks"
+
+msgid "friends/search/backToList"
+msgstr "Back to List"
+
+msgid "friends/search/found"
+msgstr "Found: %(count)s"
+
+msgid "friends/search/notFound"
+msgstr "Friend with this name not found."
+
+msgid "friends/search/placeholder"
+msgstr "Search for a friend"
+
+msgid "friends/title"
+msgstr "Collect Resources From Friends' Villages"
+
+msgid "friends/tooltip/clear"
+msgstr "Clear"
+
+msgid "friends/tooltip/search"
+msgstr "Search"
+
+msgid "friends/tooltips/commonInfo/bestFriends"
+msgstr ""
+"You can collect additional resources from each of your Best Friends once a day.\n"
+"\n"
+"This will not reduce the number of resources your friends can collect. Your list of Best Friends can be changed."
+
+msgid "friends/tooltips/commonInfo/friends"
+msgstr ""
+"You can only enter the Villages of friends who are participating in Holiday Ops 2026.\n"
+"\n"
+"To participate in the event, your friend needs to log in to the game and choose the name of their Village."
+
+msgid "friends/tooltips/favorite/disabled/max"
+msgstr ""
+"You cannot mark more than %(creamColor_Open)s%(count)s "
+"friends.%(creamColor_Close)s Unmark one of your friends to mark this one."
+
+msgid "friends/tooltips/favorite/disabled/thisYear"
+msgstr ""
+"You have collected all resources from this Best Friend's Village this year."
+
+msgid "friends/tooltips/favorite/disabled/until"
+msgstr "The mark can be removed in %(timer)s"
+
+msgid "friends/tooltips/favorite/markAsBest"
+msgstr "Mark a friend as a Best Friend."
+
+msgid "friends/tooltips/favorite/removeAsBest"
+msgstr "Remove from Best Friends."
+
+msgid "friends/tooltips/player/status/inBattle"
+msgstr "In battle"
+
+msgid "friends/tooltips/player/status/offline"
+msgstr "Offline"
+
+msgid "friends/tooltips/player/status/online"
+msgstr "Online"
+
+msgid "friends/tooltips/player/status/withServer"
+msgstr "%(status)s %(serverName)s"
+
+msgid "friends/tooltips/resources/unavailable/until"
+msgstr ""
+"You can collect more resources from this friend's Village in {{timer}}"
+
+msgid "friendsChallenge/challengeName/guest_A"
+msgstr ""
+"Benedict's\n"
+"Assignments"
+
+msgid "friendsChallenge/challengeName/guest_cat"
+msgstr ""
+"Redshire Cat's\n"
+"Assignments"
+
+msgid "friendsChallenge/challengeName/tournament"
+msgstr ""
+"Holiday Ops\n"
+"Challenge"
+
+msgid "friendsChallenge/title"
+msgstr ""
+"%(creamColor_Open)s%(friendName)s's%(creamColor_Close)s Progress in the "
+"Event"
+
+msgid "giftMachine/arrow/goToBuyTokens"
+msgstr ""
+"GET\n"
+"TOKENS"
+
+msgid "giftMachine/arrow/goToGiftMachine"
+msgstr ""
+"USE\n"
+"TOKENS"
+
+msgid "giftMachine/button/tooltip/description"
+msgstr ""
+"You can receive Tokens as a reward for completing Holiday Ops Challenges and"
+" increasing Festive Atmosphere Levels."
+
+msgid "giftMachine/button/tooltip/title"
+msgstr "No Tokens Available"
+
+msgid "giftMachine/buyTokensBlock/button"
+msgstr "Go to Purchase"
+
+msgid "giftMachine/buyTokensBlock/description"
+msgstr "There are a lot of different kinds of gifts. Good luck!"
+
+msgid "giftMachine/buyTokensBlock/resourcesTitle"
+msgstr "PURCHASE WITH"
+
+msgid "giftMachine/buyTokensBlock/title"
+msgstr "MORE TOKENS, MORE GIFTS!"
+
+msgid "giftMachine/error"
+msgstr "Error"
+
+msgid "giftMachine/errorType"
+msgstr "Error completing the operation."
+
+msgid "giftMachine/hint"
+msgstr ""
+"Double click the red button or double press SPACE to skip the animation."
+
+msgid "giftMachine/idleAnimation/gifts"
+msgstr "Receive Gifts"
+
+msgid "giftMachine/idleAnimation/tokens"
+msgstr "Earn Tokens"
+
+msgid "giftMachine/idleAnimationWithCoins/button"
+msgstr "Click the Round Red Button"
+
+msgid "giftMachine/purchaseUnavailable/conditions/button"
+msgstr "TO ASSIGNMENTS"
+
+msgid "giftMachine/purchaseUnavailable/conditions/challengeCompetedGuest"
+msgstr "Complete all of Benedict's Assignments"
+
+msgid "giftMachine/purchaseUnavailable/conditions/maxAtmosphereLevel"
+msgstr "Reach Festive Atmosphere Level&nbsp;{level}"
+
+msgid "giftMachine/purchaseUnavailable/conditions/title"
+msgstr "CONDITIONS FOR PURCHASING TOKENS"
+
+msgid "giftMachine/purchaseUnavailable/infoBlock/button"
+msgstr "TO VILLAGE"
+
+msgid "giftMachine/purchaseUnavailable/infoBlock/description"
+msgstr ""
+"You can receive Tokens as a reward for completing Holiday Ops Challenges and"
+" increasing Festive Atmosphere Levels."
+
+msgid "giftMachine/purchaseUnavailable/infoBlock/title"
+msgstr "RECEIVE TOKENS AS REWARDS"
+
+msgid "giftMachine/rentBattles"
+msgstr "%(clockIcon)s Rental battles: %(battles)s"
+
+msgid "giftMachine/rentDays"
+msgstr "%(clockIcon)s Rental days: %(days)s"
+
+msgid "giftMachine/retry"
+msgstr "Click the round red button again."
+
+msgid "giftMachine/vehiclePreview/button/continueText"
+msgstr "Continue"
+
+msgid "giftMachine/vehiclePreview/button/goToHangar"
+msgstr "Back to Garage"
+
+msgid "giftMachine/vehiclePreview/button/lookInHangar"
+msgstr "View in Garage"
+
+msgid "giftMachine/vehiclePreview/rentBattles"
+msgstr "%(clockIcon)s Rental battles: %(days)s"
+
+msgid "giftMachine/vehiclePreview/rentDays"
+msgstr "%(clockIcon)s Rental days: %(days)s"
+
+msgid "giftMachineLootlistView/description"
+msgstr ""
+"Each %(icon)s %(creamColor_Open)sToken%(creamColor_Close)s may grant you one"
+" of these items with the following probability:"
+
+msgid "giftMachineToken/tooltip/description"
+msgstr ""
+"Use Tokens to activate the Gift Terminal. You will receive one gift per "
+"Token."
+
+msgid "giftMachineToken/tooltip/footerText"
+msgstr ""
+"You can receive Tokens as a reward for completing Holiday Ops Challenges and"
+" increasing Festive Atmosphere Levels. Use Tokens to activate the Gift "
+"Terminal."
+
+msgid "giftMachineToken/tooltip/label"
+msgstr "Tokens available"
+
+msgid "giftMachineToken/tooltip/title"
+msgstr "Gift Terminal Token"
+
+msgid "giftMachineTokenPurchaseDialog/button/accept"
+msgstr "Purchase"
+
+msgid "giftMachineTokenPurchaseDialog/button/cancel"
+msgstr "Cancel"
+
+msgid "giftMachineTokenPurchaseDialog/button/disabledTooltip/description"
+msgstr ""
+"Purchasing is temporarily unavailable for technical reasons. Try again "
+"later."
+
+msgid "giftMachineTokenPurchaseDialog/button/disabledTooltip/title"
+msgstr "Purchasing Temporarily Unavailable"
+
+msgid "giftMachineTokenPurchaseDialog/button/purchasing"
+msgstr "Purchasing..."
+
+msgid "giftMachineTokenPurchaseDialog/error"
+msgstr "Error purchasing. Try again later."
+
+msgid "giftMachineTokenPurchaseDialog/price"
+msgstr "Price: %(price)s"
+
+msgid "giftMachineTokenPurchaseDialog/title"
+msgid_plural "plural/giftMachineTokenPurchaseDialog/title"
+msgstr[0] ""
+"Purchase %(creamColor_Open)s%(amount)s%(creamColor_Close)s Gift Terminal "
+"Token?"
+msgstr[1] ""
+"Purchase %(creamColor_Open)s%(amount)s%(creamColor_Close)s Gift Terminal "
+"Tokens?"
+msgstr[2] ""
+"Purchase %(creamColor_Open)s%(amount)s%(creamColor_Close)s Gift Terminal "
+"Tokens?"
+
+msgid "guestD/empty/button"
+msgstr "To Village"
+
+msgid "guestD/empty/description"
+msgstr ""
+"Reach Festive Atmosphere Level II by upgrading the Christmas Tree, Fair, and"
+" Installation in your Village. Then, Chaffee will arrive with missions, "
+"rewards, and customization elements!"
+
+msgid "guestD/empty/title"
+msgstr "Chaffee Is on the Way"
+
+msgid "guestQuest/description/gift_a_1"
+msgstr "Purchase this dragon's tooth to bring ancient power to your Village."
+
+msgid "guestQuest/description/gift_a_10"
+msgstr ""
+"Purchase this light-up polar bear installation to shine on your Village."
+
+msgid "guestQuest/description/gift_a_11"
+msgstr "Purchase this stack of page-turners to enrich your inner world."
+
+msgid "guestQuest/description/gift_a_12"
+msgstr ""
+"Purchase this motorcycle to give the gift of freedom—nothing beats the "
+"thrill of the open road!"
+
+msgid "guestQuest/description/gift_a_13"
+msgstr "Purchase this luminous garland to give your Village a festive glow."
+
+msgid "guestQuest/description/gift_a_14"
+msgstr "Purchase this old-school tape player and feel the rhythm."
+
+msgid "guestQuest/description/gift_a_15"
+msgstr "Purchase these lights to decorate Benedict's Headquarters."
+
+msgid "guestQuest/description/gift_a_16"
+msgstr "Purchase this Santa costume to spread some seasonal cheer."
+
+msgid "guestQuest/description/gift_a_17"
+msgstr "Purchase these tools to chisel a block of ice into a work of art."
+
+msgid "guestQuest/description/gift_a_18"
+msgstr "Purchase this snowflake ground artwork for some festive ambience."
+
+msgid "guestQuest/description/gift_a_19"
+msgstr "Purchase this dynamo to generate power for your Village."
+
+msgid "guestQuest/description/gift_a_2"
+msgstr "Purchase these floating lanterns to illuminate your Village's canal."
+
+msgid "guestQuest/description/gift_a_20"
+msgstr ""
+"Purchase these travel essentials and pack your suitcase for an adventure."
+
+msgid "guestQuest/description/gift_a_3"
+msgstr "Purchase this parachute pack for a soft (and snowy) landing."
+
+msgid "guestQuest/description/gift_a_4"
+msgstr "Purchase this wintery scarf for Benedict to wrap up warm."
+
+msgid "guestQuest/description/gift_a_5"
+msgstr "Purchase this notebook and pencil to ensure you're always prepared."
+
+msgid "guestQuest/description/gift_a_6"
+msgstr ""
+"Purchase this light bulb blueprint to cast a glow that'll burn long after "
+"the holiday season ends."
+
+msgid "guestQuest/description/gift_a_7"
+msgstr "Purchase this festive boat full of gifts."
+
+msgid "guestQuest/description/gift_a_8"
+msgstr "Purchase this classy set of menswear essentials."
+
+msgid "guestQuest/description/gift_a_9"
+msgstr "Purchase this fetching garland to adorn your Village."
+
+msgid "guestQuest/description/gift_cat_1"
+msgstr "Purchase treats to win the Cat's favor."
+
+msgid "guestQuest/description/gift_cat_2"
+msgstr "Purchase a retro robot cleaner to ride around."
+
+msgid "guestQuest/description/gift_cat_3"
+msgstr ""
+"Purchase this tasteful arty model—just don't put it on the edge of the "
+"table."
+
+msgid "guestQuest/mainDescriptionCompleted"
+msgstr "Success! Your guest received the treasured item."
+
+msgid "guestQuest/rewardItem/gift_a_1"
+msgstr "Dragon's Tooth"
+
+msgid "guestQuest/rewardItem/gift_a_10"
+msgstr "Polar Bear Installation"
+
+msgid "guestQuest/rewardItem/gift_a_11"
+msgstr "Pile of Books"
+
+msgid "guestQuest/rewardItem/gift_a_12"
+msgstr "Motorcycle"
+
+msgid "guestQuest/rewardItem/gift_a_13"
+msgstr "Detective Lights (Right)"
+
+msgid "guestQuest/rewardItem/gift_a_14"
+msgstr "Tape Player"
+
+msgid "guestQuest/rewardItem/gift_a_15"
+msgstr "Headquarters Lights"
+
+msgid "guestQuest/rewardItem/gift_a_16"
+msgstr "Santa Costume"
+
+msgid "guestQuest/rewardItem/gift_a_17"
+msgstr "Ice Sculpting Kit"
+
+msgid "guestQuest/rewardItem/gift_a_18"
+msgstr "Snowflake Artwork"
+
+msgid "guestQuest/rewardItem/gift_a_19"
+msgstr "Dynamo"
+
+msgid "guestQuest/rewardItem/gift_a_2"
+msgstr "Floating Lanterns"
+
+msgid "guestQuest/rewardItem/gift_a_20"
+msgstr "Plane Ticket and Postcard"
+
+msgid "guestQuest/rewardItem/gift_a_3"
+msgstr "Parachute Pack"
+
+msgid "guestQuest/rewardItem/gift_a_4"
+msgstr "Seasonal Scarf"
+
+msgid "guestQuest/rewardItem/gift_a_5"
+msgstr "Notebook"
+
+msgid "guestQuest/rewardItem/gift_a_6"
+msgstr "Light Bulb Blueprint"
+
+msgid "guestQuest/rewardItem/gift_a_7"
+msgstr "Gift Boat"
+
+msgid "guestQuest/rewardItem/gift_a_8"
+msgstr "Gentleman's Set"
+
+msgid "guestQuest/rewardItem/gift_a_9"
+msgstr "Detective Lights (Left)"
+
+msgid "guestQuest/rewardItem/gift_cat_1"
+msgstr "Treats"
+
+msgid "guestQuest/rewardItem/gift_cat_2"
+msgstr "Retro Robot Cleaner"
+
+msgid "guestQuest/rewardItem/gift_cat_3"
+msgstr "Glass Arty Model"
+
+msgid "guestQuest/unavailable/button"
+msgstr "To Village"
+
+msgid "guestQuest/unavailable/description"
+msgstr ""
+"Reach Festive Atmosphere Level V by upgrading the Christmas Tree, Fair, and "
+"Installation in your Village."
+
+msgid "guestQuest/unavailable/title"
+msgstr "Redshire Cat Is on the Way"
+
+msgid "hangarNameDialog/accept"
+msgstr "Save"
+
+msgid "hangarNameDialog/cancel"
+msgstr "Cancel"
+
+msgid "hangarNameDialog/descriptionNew"
+msgstr ""
+"You will not be able to change your Village's name later. Save this name?"
+
+msgid "hangarNameDialog/descriptionOriginal"
+msgstr ""
+"You will not be able to change your Village's name later. Save original "
+"name?"
+
+msgid "hangarNameView/changeBtn/label"
+msgstr "Randomize"
+
+msgid "hangarNameView/saveBtn/label"
+msgstr "Save Original"
+
+msgid "hangarNameView/submitBtn/label"
+msgstr "Save New"
+
+msgid "hangarNameView/submitBtn/tooltip"
+msgstr "You have not changed your Village name"
+
+msgid "hangarNameView/title"
+msgstr ""
+"Select and save a new name for your Village or save the original name. You "
+"cannot change the name later, so choose wisely!"
+
+msgid "hangarNameView/welcome/description"
+msgstr "This is the name of your Village. You can change it later."
+
+msgid "hangarNameView/welcome/title"
+msgstr "Welcome!"
+
+msgid "infoPage/description"
+msgstr ""
+"The festive game event will take place from {{fromDate}} through {{toDate}}."
+" Collect resources to decorate and upgrade your cozy Village, complete daily"
+" missions and assignments from Benedict to receive a number of valuable "
+"rewards, increase your economic bonuses, and visit your friends' Villages."
+
+msgid "infoPage/descriptions/body/kit"
+msgstr ""
+"Each Large Box may contain Premium vehicles, 3D styles, 3D attachments, or "
+"other valuable rewards. They also provide you with gold and resources as a "
+"gift."
+
+msgid "infoPage/descriptions/body/kitCN"
+msgstr ""
+"Each Large Box may contain Premium vehicles, 3D styles, 3D attachments, or "
+"other valuable rewards. Large Boxes also provide you with resources as a "
+"gift and some other valuable items."
+
+msgid "infoPage/descriptions/body/mining"
+msgstr ""
+"Earn resources for completing daily missions, or collect them in your "
+"Village and your Best Friends' Villages. Resources can also drop from Large "
+"Boxes."
+
+msgid "infoPage/descriptions/body/resource"
+msgstr ""
+"Resources can be used for a variety of purposes, including upgrading your "
+"Village, completing assignments from your guests, and receiving economic "
+"bonuses."
+
+msgid "infoPage/descriptions/title/kit"
+msgstr "Open Large Boxes and Receive Valuable Items"
+
+msgid "infoPage/descriptions/title/mining"
+msgstr "Get Resources From Different Sources"
+
+msgid "infoPage/descriptions/title/resource"
+msgstr "Use Festive Currency: Resources"
+
+msgid "infoPage/toBuy"
+msgstr "Go to Purchase"
+
+msgid "infoPage/toPortal"
+msgstr "Event Details"
+
+msgid "levelUpView/actionButton/toEvent"
+msgstr "Go to Event"
+
+msgid "levelUpView/actionButton/toGiftmachine"
+msgstr "To Terminal"
+
+msgid "levelUpView/actionButton/toGuestC"
+msgstr "To Cat"
+
+msgid "levelUpView/actionButton/toGuestD"
+msgstr "To Dog"
+
+msgid "levelUpView/actionButton/toMarkertplace"
+msgstr "To Store"
+
+msgid "levelUpView/actionButton/toRewards"
+msgstr "To Rewards"
+
+msgid "levelUpView/additionalRewards"
+msgstr "You also received:"
+
+msgid "levelUpView/congrats/levelUp"
+msgstr "FESTIVE ATMOSPHERE LEVEL INCREASED!"
+
+msgid "levelUpView/congrats/maxLevel"
+msgstr "MAXIMUM LEVEL!"
+
+msgid "levelUpView/level"
+msgstr "LEVEL %(level)s"
+
+msgid "levelUpView/okButton/default"
+msgstr "Affirmative!"
+
+msgid "levelUpView/okButton/level1"
+msgstr "To Garage"
+
+msgid "levelUpView/restAdditionalRewards"
+msgstr "And %(count)s more"
+
+msgid "levelUpView/rewards/description/primary"
+msgstr "Tier {level} Holiday Ops vehicle slot received"
+
+msgid "levelUpView/rewards/guestD"
+msgstr "Old Friend Chaffee"
+
+msgid "levelUpView/rewards/info/dog"
+msgstr ""
+"You can now make Chaffee your companion for good! Say hello to your old "
+"friend in the Garage."
+
+msgid "levelUpView/rewards/info/guestD"
+msgstr ""
+"Complete Chaffee's Missions to earn various rewards, and purchase Chaffee's "
+"Bundles to get even better rewards and special gifts for your old friend."
+
+msgid "levelUpView/rewards/info/marketplace"
+msgstr "The Holiday Ops Shop has been unlocked!"
+
+msgid "levelUpView/rewards/level"
+msgstr "LEVEL %(level)s"
+
+msgid "levelUpView/rewards/subtitle"
+msgstr "GIFTS FOR %(level)s"
+
+msgid "levelUpView/rewards/title"
+msgstr "CONGRATULATIONS!"
+
+msgid "levelsRewards/lock/tooltip/description"
+msgstr ""
+"Increase the Festive Atmosphere Level by upgrading the Christmas Tree, Fair,"
+" and Installation in your Village. To do this, use resources such as Rock "
+"Crystal and Pure Emerald."
+
+msgid "levelsRewards/lock/tooltip/header"
+msgstr "Festive Atmosphere Level Not Reached"
+
+msgid "levelsRewards/renderer/tankwomanBtn/label"
+msgstr "Recruit"
+
+msgid "levelsRewards/tankWoman"
+msgstr "Female Crew Member"
+
+msgid "levelsRewards/vehiclesBtn/label"
+msgstr "Holiday Ops Vehicles"
+
+msgid "lootBoxAutoOpen/reward/customization/label"
+msgstr "%(name)sx%(quantity)s"
+
+msgid "lootBoxAutoOpen/reward/premiumPlus/label"
+msgstr "x%(quantity)s"
+
+msgid "lootBoxAutoOpen/reward/premiumPlus/tooltip/body"
+msgstr ""
+"A special account status that gives you\n"
+"more credits and experience, as well as providing\n"
+"additional options."
+
+msgid "lootBoxAutoOpen/reward/premiumPlus/tooltip/header"
+msgstr "Days of WoT Premium Account: %(quantity)s"
+
+msgid "mainView/balance/convertBtn/tooltip/body"
+msgstr "Convert the resources that you have into the ones you need."
+
+msgid "mainView/balance/convertBtn/tooltip/header"
+msgstr "Resource Converter"
+
+msgid "marketplace/collectionYear/ny18"
+msgstr "2018"
+
+msgid "marketplace/collectionYear/ny19"
+msgstr "2019"
+
+msgid "marketplace/collectionYear/ny20"
+msgstr "2020"
+
+msgid "marketplace/collectionYear/ny21"
+msgstr "2021"
+
+msgid "marketplace/collectionYear/ny22"
+msgstr "2022"
+
+msgid "marketplace/collectionYear/ny23"
+msgstr "2023"
+
+msgid "marketplace/collectionYear/ny24"
+msgstr "2024"
+
+msgid "marketplace/collectionYear/ny25"
+msgstr "2025"
+
+msgid "marketplace/dialogs/buy/title"
+msgstr "Purchase the %(name)s?"
+
+msgid "marketplace/dialogs/purchase/acceptBtn"
+msgstr "Purchase"
+
+msgid "marketplace/dialogs/purchase/cancelBtn"
+msgstr "Cancel"
+
+msgid "marketplace/dialogs/purchase/toPay"
+msgstr "Total:"
+
+msgid "marketplace/dialogs/purchase/tooltips/acceptBtn/body"
+msgstr ""
+"Purchasing is temporarily unavailable for technical reasons. Try again "
+"later."
+
+msgid "marketplace/dialogs/purchase/tooltips/acceptBtn/header"
+msgstr "Purchasing Temporarily Unavailable"
+
+msgid "marketplace/kit/button/buy"
+msgstr "Purchase"
+
+msgid "marketplace/kit/button/toStyle"
+msgstr "Style Preview"
+
+msgid "marketplace/kit/description/Atm"
+msgstr ""
+"Rewards for increasing the Festive Atmosphere Level in %(year)s. This bundle might contain a style.\n"
+"\n"
+"The discount applied depends on the Festive Atmosphere Level reached in Holiday Ops %(year)s (excluding Level I)."
+
+msgid "marketplace/kit/description/Bro"
+msgstr ""
+"Rewards for collecting resources in Best Friends` Villages in %(year)s. This bundle might contain a style, decal, and inscriptions.\n"
+"\n"
+"The discount applied depends on the number of rewards received earlier."
+
+msgid "marketplace/kit/description/Cat"
+msgstr ""
+"Rewards for completing the Redshire Cat's Assignments in %(year)s. This bundle might contain styles, decals, and inscriptions.\n"
+"\n"
+"The discount applied depends on the number of rewards already received."
+
+msgid "marketplace/kit/description/Dog"
+msgstr ""
+"Rewards for opening Chaffee's Sacks in Holiday Ops %(year)s. This bundle might contain a 2D style, decal, or inscription.\n"
+"\n"
+"The discount applied depends on the number of rewards received earlier."
+
+msgid "marketplace/kit/description/Gift2"
+msgstr ""
+"Rewards for collecting resources in Best Friends` Villages in %(year)s. This bundle might contain a style, decal, and inscriptions.\n"
+"\n"
+"The discount applied depends on the number of rewards received earlier."
+
+msgid "marketplace/kit/description/GiftSystem"
+msgstr ""
+"Rewards for the Holiday Post %(year)s progression. This bundle might contain styles, decals, and inscriptions.\n"
+"\n"
+"The discount applied depends on the number of rewards received earlier."
+
+msgid "marketplace/kit/description/Surprise"
+msgstr "Surprise reward in Holiday Ops %(year)s. Contains a 2D style."
+
+msgid "marketplace/kit/description/default"
+msgstr ""
+"Rewards for completing a Collection from %(year)s. This bundle might contain styles, decals, emblems, and inscriptions.\n"
+"\n"
+"The discount applied depends on the number of Collections you already have."
+
+msgid "marketplace/kit/discount"
+msgstr "-%(value)s%"
+
+msgid "marketplace/kit/name/Atm_ny23"
+msgstr "Box of Decorations Style Bundle"
+
+msgid "marketplace/kit/name/Atm_ny24"
+msgstr " Chocolate Gift Style Bundle"
+
+msgid "marketplace/kit/name/Atm_ny25"
+msgstr "Snow Much Fun Style Bundle"
+
+msgid "marketplace/kit/name/Bro_ny24"
+msgstr "Manners Maketh Man Style Bundle"
+
+msgid "marketplace/kit/name/Bro_ny25"
+msgstr "From the Depths Style Bundle"
+
+msgid "marketplace/kit/name/Cat_ny23"
+msgstr "Casual Paw Print Style Bundle"
+
+msgid "marketplace/kit/name/Cat_ny24"
+msgstr "Box O'Cats Style Bundle"
+
+msgid "marketplace/kit/name/Cat_ny25"
+msgstr "Fluffball Style Bundle"
+
+msgid "marketplace/kit/name/Christmas_ny19"
+msgstr "Tempered Glass Style Bundle"
+
+msgid "marketplace/kit/name/Christmas_ny20"
+msgstr "Gingerbread Armor Style Bundle"
+
+msgid "marketplace/kit/name/Christmas_ny21"
+msgstr "\"G, FIS, E, D, C, H, A, G\" Style Bundle"
+
+msgid "marketplace/kit/name/Christmas_ny22"
+msgstr "Heat-Insulated Armor Style Bundle"
+
+msgid "marketplace/kit/name/Dog_ny24"
+msgstr "On Guard Style Bundle"
+
+msgid "marketplace/kit/name/Dog_ny25"
+msgstr "Good Boy Style Bundle"
+
+msgid "marketplace/kit/name/Fairytale_ny19"
+msgstr "Heavy Present Style Bundle"
+
+msgid "marketplace/kit/name/Fairytale_ny20"
+msgstr "Tangerhino Style Bundle"
+
+msgid "marketplace/kit/name/Fairytale_ny21"
+msgstr "Birth Chart Style Bundle"
+
+msgid "marketplace/kit/name/Fairytale_ny22"
+msgstr "Robot Camo Style Bundle"
+
+msgid "marketplace/kit/name/Gift2_ny23"
+msgstr "Forward to the Childhood Style Bundle"
+
+msgid "marketplace/kit/name/GiftSystem_ny22"
+msgstr "\"Unbent, UnBROken\" Style Bundle"
+
+msgid "marketplace/kit/name/Mega_ny20"
+msgstr "Christmas Tree Decoration Decal"
+
+msgid "marketplace/kit/name/Mega_ny21"
+msgstr "Unbridled Joy Decal"
+
+msgid "marketplace/kit/name/Mega_ny22"
+msgstr "Wonderland Decal"
+
+msgid "marketplace/kit/name/NewYear_ny19"
+msgstr "Bad Ace Tanker Style Bundle"
+
+msgid "marketplace/kit/name/NewYear_ny20"
+msgstr "Carpet Diem Style Bundle"
+
+msgid "marketplace/kit/name/NewYear_ny21"
+msgstr "Grainy Armor Style Bundle"
+
+msgid "marketplace/kit/name/NewYear_ny22"
+msgstr "Citrus Style Bundle"
+
+msgid "marketplace/kit/name/Oriental_ny19"
+msgstr "Sparkling Night Style Bundle"
+
+msgid "marketplace/kit/name/Oriental_ny20"
+msgstr "Sakura Blossom Style Bundle"
+
+msgid "marketplace/kit/name/Oriental_ny21"
+msgstr "Pandamagic Style Bundle"
+
+msgid "marketplace/kit/name/Oriental_ny22"
+msgstr "Adorarmor Style Bundle"
+
+msgid "marketplace/kit/name/Surprise_ny24"
+msgstr "Roll Into Christmas Style Bundle"
+
+msgid "marketplace/kit/name/Surprise_ny25"
+msgstr "Festive Cheer Style Bundle"
+
+msgid "marketplace/kit/name/asian_ny18"
+msgstr "Chinese New Year Style Bundle"
+
+msgid "marketplace/kit/name/modernWestern_ny18"
+msgstr "Modern Christmas Style Bundle"
+
+msgid "marketplace/kit/name/soviet_ny18"
+msgstr "Soviet New Year Style Bundle"
+
+msgid "marketplace/kit/name/traditionalWestern_ny18"
+msgstr "Traditional Christmas Style Bundle"
+
+msgid "marketplace/kit/rewardReceived"
+msgstr "RECEIVED"
+
+msgid "marketplace/kit/status/decalReceived"
+msgstr "Received"
+
+msgid "marketplace/kit/status/received"
+msgstr "Received"
+
+msgid "marketplace/kit/status/unavailable"
+msgstr ""
+"Festive Atmosphere Level %(level)s \n"
+"required for purchase"
+
+msgid "marketplace/kit/subTitle/buy"
+msgstr "PURCHASE METHOD"
+
+msgid "marketplace/kit/subTitle/composition"
+msgstr "BUNDLE CONTENT"
+
+msgid "marketplace/kit/subTitle/price"
+msgstr "PRICE"
+
+msgid "marketplace/kit/title/Atm_ny23"
+msgstr "Festive Atmosphere Progression 2023"
+
+msgid "marketplace/kit/title/Atm_ny24"
+msgstr "Festive Atmosphere Progression 2024"
+
+msgid "marketplace/kit/title/Atm_ny25"
+msgstr "Festive Atmosphere Progression 2025"
+
+msgid "marketplace/kit/title/Bro_ny24"
+msgstr "Best Friends Progression 2024"
+
+msgid "marketplace/kit/title/Bro_ny25"
+msgstr "Best Friends Progression 2025"
+
+msgid "marketplace/kit/title/Cat_ny23"
+msgstr "Redshire Cat Assignments 2023"
+
+msgid "marketplace/kit/title/Cat_ny24"
+msgstr "Redshire Cat Assignments 2024"
+
+msgid "marketplace/kit/title/Cat_ny25"
+msgstr "Redshire Cat Assignments 2025"
+
+msgid "marketplace/kit/title/Christmas_ny19"
+msgstr "Christmas Collection Album 2019"
+
+msgid "marketplace/kit/title/Christmas_ny20"
+msgstr "Christmas Collection Album 2020"
+
+msgid "marketplace/kit/title/Christmas_ny21"
+msgstr "Christmas Collection Album 2021"
+
+msgid "marketplace/kit/title/Christmas_ny22"
+msgstr "Christmas Collection Album 2022"
+
+msgid "marketplace/kit/title/Dog_ny24"
+msgstr "Chaffee's Missions 2024"
+
+msgid "marketplace/kit/title/Dog_ny25"
+msgstr "Chaffee's Missions 2025"
+
+msgid "marketplace/kit/title/Fairytale_ny19"
+msgstr "Magic Collection Album 2019"
+
+msgid "marketplace/kit/title/Fairytale_ny20"
+msgstr "Magic Collection Album 2020"
+
+msgid "marketplace/kit/title/Fairytale_ny21"
+msgstr "Magic Collection Album 2021"
+
+msgid "marketplace/kit/title/Fairytale_ny22"
+msgstr "Magic Collection Album 2022"
+
+msgid "marketplace/kit/title/Gift2_ny23"
+msgstr "Best Friends Progression 2023"
+
+msgid "marketplace/kit/title/GiftSystem_ny22"
+msgstr "Gift Giving System 2022"
+
+msgid "marketplace/kit/title/Mega_ny20"
+msgstr "Album of Large Decorations 2020"
+
+msgid "marketplace/kit/title/Mega_ny21"
+msgstr "Album of Large Decorations 2021"
+
+msgid "marketplace/kit/title/Mega_ny22"
+msgstr "Album of Large Decorations 2022"
+
+msgid "marketplace/kit/title/NewYear_ny19"
+msgstr "New Year Collection Album 2019"
+
+msgid "marketplace/kit/title/NewYear_ny20"
+msgstr "New Year Collection Album 2020"
+
+msgid "marketplace/kit/title/NewYear_ny21"
+msgstr "New Year Collection Album 2021"
+
+msgid "marketplace/kit/title/NewYear_ny22"
+msgstr "New Year Collection Album 2022"
+
+msgid "marketplace/kit/title/Oriental_ny19"
+msgstr "Lunar Collection Album 2019"
+
+msgid "marketplace/kit/title/Oriental_ny20"
+msgstr "Lunar Collection Album 2020"
+
+msgid "marketplace/kit/title/Oriental_ny21"
+msgstr "Lunar Collection Album 2021"
+
+msgid "marketplace/kit/title/Oriental_ny22"
+msgstr "Lunar Collection Album 2022"
+
+msgid "marketplace/kit/title/Surprise_ny24"
+msgstr "Christmas Special Gift 2024"
+
+msgid "marketplace/kit/title/Surprise_ny25"
+msgstr "Christmas Special Gift 2025"
+
+msgid "marketplace/kit/title/asian_ny18"
+msgstr "Chinese New Year Collection Album 2018"
+
+msgid "marketplace/kit/title/modernWestern_ny18"
+msgstr "Modern Christmas Collection Album 2018"
+
+msgid "marketplace/kit/title/soviet_ny18"
+msgstr "Soviet New Year Collection Album 2018"
+
+msgid "marketplace/kit/title/traditionalWestern_ny18"
+msgstr "Traditional Christmas Collection Album 2018"
+
+msgid "marketplace/tooltips/card/state/available"
+msgstr "Bundle not received"
+
+msgid "marketplace/tooltips/card/state/received"
+msgstr "Bundle received"
+
+msgid "marketplace/tooltips/card/state/unavailable"
+msgstr "Reach Festive Atmosphere Level {level} to get access to purchase."
+
+msgid "marketplace/tooltips/discount/collectionName/Atm"
+msgstr "Festive Atmosphere Progression"
+
+msgid "marketplace/tooltips/discount/collectionName/Bro"
+msgstr "Best Friends Progression"
+
+msgid "marketplace/tooltips/discount/collectionName/Cat"
+msgstr "Redshire Cat Assignments"
+
+msgid "marketplace/tooltips/discount/collectionName/Christmas"
+msgstr "Christmas Collection Album"
+
+msgid "marketplace/tooltips/discount/collectionName/Dog"
+msgstr "Chaffee's Missions"
+
+msgid "marketplace/tooltips/discount/collectionName/Fairytale"
+msgstr "Magic Collection Album"
+
+msgid "marketplace/tooltips/discount/collectionName/Gift2"
+msgstr "Best Friends Progression"
+
+msgid "marketplace/tooltips/discount/collectionName/GiftSystem"
+msgstr "Gift Giving System"
+
+msgid "marketplace/tooltips/discount/collectionName/Mega"
+msgstr "Album of Large Decorations"
+
+msgid "marketplace/tooltips/discount/collectionName/NewYear"
+msgstr "New Year Collection Album"
+
+msgid "marketplace/tooltips/discount/collectionName/Oriental"
+msgstr "Lunar Collection Album"
+
+msgid "marketplace/tooltips/discount/collectionName/Surprise"
+msgstr "Christmas Special Gift"
+
+msgid "marketplace/tooltips/discount/collectionName/asian"
+msgstr "Chinese New Year Collection Album"
+
+msgid "marketplace/tooltips/discount/collectionName/modernWestern"
+msgstr "Modern Christmas Collection Album"
+
+msgid "marketplace/tooltips/discount/collectionName/soviet"
+msgstr "Soviet New Year Collection Album"
+
+msgid "marketplace/tooltips/discount/collectionName/traditionalWestern"
+msgstr "Traditional Christmas Collection Album"
+
+msgid "marketplace/tooltips/discount/text/Atm"
+msgstr "Festive Atmosphere Level reached in Holiday Ops %(year)s: %(level)s"
+
+msgid "marketplace/tooltips/discount/text/default"
+msgstr "%(collectionName)s %(collectionYear)s completed: %(percentValue)s"
+
+msgid "marketplace/tooltips/discount/text/rewards"
+msgstr ""
+"%(collectionName)s %(collectionYear)s rewards received: "
+"%(99bcd0_Open)s%(currentAmount)s/%(totalAmount)s%(99bcd0_Close)s"
+
+msgid "marketplace/tooltips/goToStyle/unavailable/broken"
+msgstr "This vehicle requires repairs."
+
+msgid "marketplace/tooltips/goToStyle/unavailable/customizationUnavailable"
+msgstr "Customization of the selected vehicle is unavailable."
+
+msgid ""
+"marketplace/tooltips/goToStyle/unavailable/header/customizationUnavailable"
+msgstr "Unavailable"
+
+msgid "marketplace/tooltips/goToStyle/unavailable/inBattle"
+msgstr "This vehicle is in battle."
+
+msgid "marketplace/tooltips/goToStyle/unavailable/inUnit"
+msgstr "This vehicle is in a tactical unit."
+
+msgid "marketplace/tooltips/goToStyle/unavailable/notInInventory"
+msgstr "No suitable vehicles."
+
+msgid "marketplace/tooltips/lackTheResources/header"
+msgstr "Not Enough Resources"
+
+msgid "marketplace/tooltips/lackTheResources/notEnough"
+msgstr "Required:"
+
+msgid "marketplace/tooltips/lackTheResources/text"
+msgstr ""
+"Collect Resources in the Village, from your friends, or earn them in battle,"
+" as well as receive them from Large Boxes."
+
+msgid "marketplace/tooltips/tabs/ny21"
+msgstr "Rewards for Collections of 2021."
+
+msgid "marketplace/tooltips/tabs/ny22"
+msgstr "Rewards for Collections and Holiday Post rewards of 2022."
+
+msgid "marketplace/tooltips/tabs/ny23"
+msgstr ""
+"Rewards for completing the Event Progressions and collecting resources from "
+"your friends in Holiday Ops 2023."
+
+msgid "marketplace/tooltips/tabs/ny24"
+msgstr ""
+"Rewards for completing the Event Progressions and collecting resources from "
+"your friends in Holiday Ops 2024."
+
+msgid "marketplace/tooltips/tabs/ny25"
+msgstr ""
+"Rewards for completing the event progressions and collecting resources from "
+"your friends in Holiday Ops 2025."
+
+msgid "marketplace/tooltips/tabs/previous"
+msgstr "Rewards for Collections from 2018–2020"
+
+msgid "marketplaceToken/tooltip/condition"
+msgstr ""
+"Available to players who reach Festive Atmosphere Level {level} during the "
+"Holiday Ops event."
+
+msgid "marketplaceToken/tooltip/description"
+msgstr ""
+"You can use resources to purchase rewards from previous events in the "
+"Holiday Ops Shop."
+
+msgid "marketplaceToken/tooltip/title"
+msgstr "Special Items in the Holiday Ops Shop"
+
+msgid "maxLevelReached/buttons/accept/Fair"
+msgstr "Back to Fair"
+
+msgid "maxLevelReached/buttons/accept/Fir"
+msgstr "Back to Christmas Tree"
+
+msgid "maxLevelReached/buttons/accept/Installation"
+msgstr "Back to Installation"
+
+msgid "maxLevelReached/description"
+msgstr ""
+"As a reward, you have received decorations for your Village. They create a "
+"cozy atmosphere and will remain in your Village until the end of the event."
+
+msgid "maxLevelReached/title/Fair"
+msgstr ""
+"Fair Level increased to %(level)s. You received %(toysCount)s decorations "
+"and one scenery piece."
+
+msgid "maxLevelReached/title/Fir"
+msgstr ""
+"Christmas Tree Level increased to %(level)s. You received %(toysCount)s "
+"decorations and one scenery piece."
+
+msgid "maxLevelReached/title/Installation"
+msgstr ""
+"Installation Level increased to %(level)s. You received %(toysCount)s "
+"decorations and one scenery piece."
+
+msgid "menu/backToFriendsList"
+msgstr "TO FRIENDS LIST"
+
+msgid "menu/backToFriendsListTooltip"
+msgstr "Click to return to your Friends list."
+
+msgid "menu/close"
+msgstr "TO GARAGE"
+
+msgid "menu/closeTooltip"
+msgstr "Back to Garage"
+
+msgid "menu/showGiftMachineLootList"
+msgstr "Terminal Drop Rates"
+
+msgid "messages/quotes"
+msgstr "\"%(text)s\""
+
+msgid "navigation/widget/hangarName/friendView/tooltip/body"
+msgstr "Name of your friend's Village."
+
+msgid "navigation/widget/hangarName/mainView/tooltip/body"
+msgstr ""
+"Friends who visit your Village will see its unique name throughout the "
+"entire event."
+
+msgid "navigation/widget/hangarName/mainView/tooltip/header"
+msgstr "Name of Your Village"
+
+msgid "navigation/widget/progressBar/friendView/tooltip/body"
+msgstr "Festive Atmosphere Level in your friend's Village."
+
+msgid "newYear/celebrityChallenge/rewardScreen/inscription"
+msgstr "%(name)s inscription"
+
+msgid "newYear/celebrityChallenge/rewardScreen/inscriptions"
+msgstr "Inscriptions"
+
+msgid "newYear/celebrityChallenge/rewardScreen/projectionDecal"
+msgstr "%(name)s decal"
+
+msgid "newYear/celebrityChallenge/rewardScreen/projectionDecals"
+msgstr "Decals"
+
+msgid "newYear/celebrityChallenge/rewardScreen/rewards/achievement/label"
+msgstr "%(name)s medal"
+
+msgid "newYear/celebrityChallenge/rewardScreen/style"
+msgstr "%(name)s 2D style"
+
+msgid "newYear/celebrityChallenge/rewardScreen/tmanToken"
+msgstr "%(name)s"
+
+msgid "newYear/challenge/card/caption/fullMissions"
+msgstr "Full completion"
+
+msgid "newYear/challenge/card/caption/oneMission"
+msgstr "One mission"
+
+msgid "newYear/challenge/card/lessMinute"
+msgstr "Less than a minute"
+
+msgid "newYear/challenge/card/timerDays"
+msgstr "%(days)s d %(hours)s h"
+
+msgid "newYear/challenge/card/timerHours"
+msgstr "%(hours)s h %(minutes)s min"
+
+msgid "newYear/challenge/card/timerMinutes"
+msgstr "%(minutes)s min"
+
+msgid "newYear/challenge/challengeComplete/allReceived"
+msgstr "All rewards received."
+
+msgid "newYear/challenge/challengeComplete/andMore"
+msgstr "And {{count}} more"
+
+msgid "newYear/challenge/challengeComplete/button"
+msgstr "OTHER REWARDS"
+
+msgid "newYear/challenge/challengeComplete/logoCaption"
+msgstr "Completed"
+
+msgid "newYear/challenge/challengeComplete/title"
+msgstr "Select a vehicle to purchase at a discount."
+
+msgid "newYear/challenge/logo/counterCaption/quest"
+msgstr ""
+"ASSIGNMENTS\n"
+"COMPLETED%(indent)s"
+
+msgid "newYear/challenge/logo/description/guestA"
+msgstr ""
+"ALL ASSIGNMENTS\n"
+"ARE COMPLETED SEQUENTIALLY"
+
+msgid "newYear/challenge/logo/description/guestC"
+msgstr ""
+"ALL ASSIGNMENTS\n"
+"ARE COMPLETED SEQUENTIALLY"
+
+msgid "newYear/challenge/logo/description/tournament"
+msgstr ""
+"COMPLETE MISSIONS IN TIER IV–XI VEHICLES\n"
+"IN RANDOM BATTLES."
+
+msgid "newYear/challenge/logo/label/guestA"
+msgstr "Benedict's"
+
+msgid "newYear/challenge/logo/label/guestC"
+msgstr "Redshire Cat's"
+
+msgid "newYear/challenge/logo/label/tournament"
+msgstr "Holiday Ops"
+
+msgid "newYear/challenge/logo/title/guestA"
+msgstr "Assignments"
+
+msgid "newYear/challenge/logo/title/guestC"
+msgstr "Assignments"
+
+msgid "newYear/challenge/logo/title/tournament"
+msgstr "Challenge"
+
+msgid "newYear/challenge/office/description"
+msgstr ""
+"Complete Assignments to collect the entire set of items for your guests and "
+"hear their fascinating stories!"
+
+msgid "newYear/challenge/office/story"
+msgstr ""
+"Benedict's\n"
+"Amazing Story"
+
+msgid "newYear/challenge/office/storyCounter"
+msgstr "%(availableStories) / %(totalStories)"
+
+msgid "newYear/challenge/office/tooltips/action/body"
+msgstr ""
+"Our guest will definitely do something with the item that is brought to "
+"them."
+
+msgid "newYear/challenge/office/tooltips/action/header"
+msgstr "Action"
+
+msgid "newYear/challenge/office/tooltips/story/body"
+msgstr "Amazing stories Benedict is excited to share with you."
+
+msgid "newYear/challenge/office/tooltips/story/header"
+msgstr "Story"
+
+msgid "newYear/challenge/quests/bonus/active"
+msgstr "Continuous bonus:"
+
+msgid "newYear/challenge/quests/bonus/bonus"
+msgstr "%(currentValue)s / %(totalValue)s%"
+
+msgid "newYear/challenge/quests/bonus/choice"
+msgstr "Selectable bonuses:"
+
+msgid "newYear/challenge/quests/bonusMissing/description"
+msgstr ""
+"You will receive an inscription, decal, and 2D style for completing the "
+"Redshire Cat's Assignments."
+
+msgid "newYear/challenge/quests/bonusMissing/questsCompleted"
+msgstr ""
+"All of the Redshire Cat's Assignments have been completed. Rewards received."
+
+msgid "newYear/challenge/quests/bonusMissing/remark"
+msgstr ""
+"You will not receive any economic bonuses for completing these Assignments."
+
+msgid "newYear/challenge/quests/tooltip/body/walletDisabled"
+msgstr ""
+"Purchasing is temporarily unavailable for technical reasons. We are working "
+"on fixing the issue. Try again later."
+
+msgid "newYear/challenge/quests/tooltip/bonus/creditsFactor"
+msgstr "to credits"
+
+msgid "newYear/challenge/quests/tooltip/bonus/freeXPFactor"
+msgstr "to Free XP"
+
+msgid "newYear/challenge/quests/tooltip/bonus/tankmenXPFactor"
+msgstr "to Crew XP"
+
+msgid "newYear/challenge/quests/tooltip/bonus/xpFactor"
+msgstr "to Combat XP"
+
+msgid "newYear/challenge/quests/tooltip/economicBonus/description"
+msgstr "Economic bonuses for completing this assignment:"
+
+msgid "newYear/challenge/quests/tooltip/economicBonus/title"
+msgstr "Bonuses"
+
+msgid "newYear/challenge/quests/tooltip/maxBonus/description"
+msgstr ""
+"The maximum bonus for completing %(questsValue)s Benedict's Assignments"
+
+msgid "newYear/challenge/quests/tooltip/maxBonus/paragraph_1"
+msgstr ""
+"Only two bonuses work in battle: The bonus to credits is always active, "
+"while the second bonus to XP must be manually %(ffffff_Open)sselected in the"
+" Garage%(ffffff_Close)s."
+
+msgid "newYear/challenge/quests/tooltip/maxBonus/paragraph_2"
+msgstr ""
+"The selected bonus to XP applies to vehicles of the same tier as the Festive"
+" Atmosphere Level, as well as to all lower tier vehicles. The bonus does not"
+" apply to rental and Premium vehicles."
+
+msgid "newYear/challenge/quests/tooltip/maxBonus/paragraph_3"
+msgstr ""
+"At Festive Atmosphere Level X, bonuses will also apply to Tier XI vehicles."
+
+msgid "newYear/challenge/quests/tooltip/maxBonus/subTitle"
+msgstr "Bonus Application"
+
+msgid "newYear/challenge/quests/tooltip/maxBonus/title"
+msgstr "Maximum Bonus"
+
+msgid "newYear/challenge/quests/tooltip/title/walletDisabled"
+msgstr "Purchasing Temporarily Unavailable"
+
+msgid "newYear/challenge/stories/gift_a_1"
+msgstr ""
+"There's something about dragons that captures the human imagination. Take a "
+"look at the folklore of just about any region of the world, and chances are "
+"you'll find a story involving some kind of big, reptilian creature that "
+"breathes fire and guards untold treasures. In some cultures, they're "
+"benevolent beings associated with wisdom and good fortune; in others, "
+"they're malevolent lords of chaos who must be slain by a brave hero. In any "
+"case, an encounter with a dragon is a fateful event, and the holder of a "
+"dragon's tooth is a true champion indeed."
+
+msgid "newYear/challenge/stories/gift_a_11"
+msgstr ""
+"We humans are curious beasts. Survival alone isn't enough for us, like it is"
+" for most animals. It's in our nature to crave stimulation and inspiration, "
+"the chance to imagine and to dream. And what better way to do all that than "
+"with a good book, a film, or, dare I say it, a video game like World of "
+"Tanks? Each is a portal that carries us far from the mundane routine of "
+"everyday life into a world where anything's possible, even if only for a "
+"moment. That, if you ask me, is real magic."
+
+msgid "newYear/challenge/stories/gift_a_13"
+msgstr ""
+"Speaking of human nature, isn't it funny how we love problems? We're "
+"naturally drawn to puzzles, enigmas, mysteries, riddles. We all fancy "
+"ourselves as the brilliant maverick detective, don't we? The one who pieces "
+"the clues together and cracks the case others thought unsolvable through our"
+" intuition and sheer powers of deduction. That attention to small details "
+"and analytical mindset will serve you well anywhere, whether you're working "
+"on a cold case or not. And on the battlefield, they could just be the "
+"difference between victory and defeat."
+
+msgid "newYear/challenge/stories/gift_a_14"
+msgstr ""
+"Nothing beats the thrill of Christmas morning when you're a kid, does it? "
+"That feeling in your stomach when you wake up—if you managed to sleep at "
+"all, that is—then the rush as you see the pile of presents under the tree, "
+"waiting to be opened. They were never fancy presents, either. Video games "
+"were pretty primitive then, and World of Tanks was nothing but a speck on "
+"the horizon! But it didn't matter. That awkwardly wrapped tape player or "
+"bike might not seem like much now. But back then, they meant the whole "
+"world."
+
+msgid "newYear/challenge/stories/gift_a_16"
+msgstr ""
+"You know who my favourite superhero is? It's Father Christmas. I mean it. "
+"He's got an iconic costume and some of the finest facial hair around. But "
+"more importantly, he's blessed with the rarest superpower of all. No, not "
+"the power to deliver billions of presents in just 24 hours, or to consume "
+"heroic amounts of mince pies and cookies. The power to make people happy! "
+"Christmas is a time of joy, and nobody does joy better than Santa. Every "
+"December, we all have the chance to become a superhero just like him—by "
+"giving, sharing, and spreading a bit of Christmas cheer. Costume not "
+"mandatory!"
+
+msgid "newYear/challenge/stories/gift_a_17"
+msgstr ""
+"There's a lot of talk about what it means to be a man these days. Some would"
+" have you believe it's about having millions in the bank and a six-pack like"
+" an action figure. I don't know about you, but that's not my style. For me, "
+"a man is someone who takes responsibility for his actions. Someone who's "
+"respectful and considerate of those around him. And someone who has the "
+"courage to be vulnerable, without trying to be a tough guy all the time. "
+"Because the measure of a man is in his actions, not his abs."
+
+msgid "newYear/challenge/stories/gift_a_20"
+msgstr ""
+"Feeling stuck, or bored, or lost all your mirth? Go travelling. No, really. "
+"Buy a ticket somewhere you've never been before, or get in your car and "
+"drive. Even if it's only for a day. Consider that my professional advice to "
+"you. There's a whole world of adventure out there: new people and places, "
+"new experiences, new perspectives. All waiting for you. And trust me, "
+"wherever you go, you'll come back a different person. A little more worldly,"
+" a little more alive. It won't solve all your problems, sure. But it's a "
+"damn good place to start."
+
+msgid "newYear/challenge/stories/gift_a_3"
+msgstr ""
+"Much as it’s human nature to believe in mythical beasts like dragons, it's "
+"also in our nature to seek adventure, new knowledge, and new experiences. "
+"\"To strive, to seek, to find, and not to yield,\" as a certain poet once "
+"had it. Okay, that might sound a bit much. But that adventure doesn't have "
+"to mean jumping out of a plane, or an epic journey to the ends of the earth,"
+" exhilarating as those may be. It can be anything that pushes us to grow by "
+"nudging us just a little bit out of our comfort zone. Because, nice as it "
+"may be there, things start to get really interesting the moment we step "
+"outside it."
+
+msgid "newYear/challenge/stories/gift_a_5"
+msgstr ""
+"Fail to prepare, prepare to fail. Cliché, I know, but it's true. I'm a firm "
+"believer in doing your research ahead of time, and being as ready as you can"
+" for anything. That's especially true in tanking, where you quite literally "
+"need to do your research if you want your vehicle to stand a chance on the "
+"battlefield. But it's not just that. It's about knowing your strengths and "
+"weaknesses, and understanding what you're up against, so you can react "
+"accordingly. That way, whatever happens, you can say you gave it your all. "
+"So make sure you're ready, and don't let anyone catch you off guard. Do your"
+" research!"
+
+msgid "newYear/challenge/stories/gift_a_6"
+msgstr ""
+"Have you ever wondered what it must be like to invent something completely "
+"new? To create something never seen before in all of human history—something"
+" that could fundamentally change our very way of life, forever? Volta, "
+"Faraday, Edison, Tesla. The men who brought light to our world. All had a "
+"singular focus on their goal, a belief in their vision, and, perhaps even "
+"more importantly, a refusal to take no for an answer. We don't all have to "
+"change the world, but there's something in that: if you believe in "
+"something, then follow it through to the end, and don't let anyone tell you "
+"it can't be done."
+
+msgid "newYear/challenge/stories/gift_a_8"
+msgstr ""
+"Look, it's a truth universally acknowledged that a man needs a few basics in"
+" his life. A well-fitting suit. A tasteful tie, or perhaps even a bowtie, if"
+" you're feeling bold. A couple of understated cufflinks. And a sleek watch "
+"to round it all off. None of it has to be fancy, or cost an arm and a leg. "
+"It's about making you look good, and giving you an air of quiet confidence "
+"and measured authority. Because when you look good, you feel good. And when "
+"you feel good, you're unstoppable."
+
+msgid "newYear/challenge/stories/gift_a_9"
+msgstr ""
+"How often do you stop to look around you? Not just look, but really see. "
+"It's quite remarkable how much you can learn by just observing your "
+"surroundings. You know what they say: the devil's in the details. But it's "
+"not just him; there's magic in them, too, if you look hard enough. Next time"
+" you head out somewhere—be it the battlefield or elsewhere—keep your eyes "
+"and your mind open, and try to take in all the little things you'd normally "
+"ignore. You might just be surprised at what you discover."
+
+msgid "newYear/challenge/stories/tooltips/unavailable/body"
+msgstr "Complete the Benedict's Assignment to unlock the story."
+
+msgid "newYear/challenge/temporaryCard/caption"
+msgstr "Next rewards:"
+
+msgid "newYear/challenge/temporaryCard/description"
+msgstr "A new pair of missions will be available every day."
+
+msgid "newYear/challenge/variadicDiscount/tooltip/description/completed"
+msgstr ""
+"Select a researchable Tier {{@ style (color $color)}}{{level}} {{/}}vehicle "
+"to apply a {{@ style (color $color)}}{{discount}} {{/}}credit discount to."
+
+msgid "newYear/challenge/variadicDiscount/tooltip/description/discountApplied"
+msgstr ""
+"The vehicle price in credits has decreased by {{@ style (color "
+"$color)}}{{discount}}{{/}}."
+
+msgid "newYear/challenge/variadicDiscount/tooltip/description/inProgress"
+msgstr ""
+"Select a researchable Tier {{@ style (color $color)}}{{level}} {{/}}vehicle "
+"to apply a {{@ style (color $color)}}{{discount}} {{/}}credit discount to."
+
+msgid "newYear/challenge/variadicDiscount/tooltip/selectedVehicle"
+msgstr "The applied discount is permanent."
+
+msgid "newYear/challenge/variadicDiscount/tooltip/title/completed"
+msgstr "Select Vehicle for Discount"
+
+msgid "newYear/challenge/variadicDiscount/tooltip/title/discountApplied"
+msgstr "Discount Applied: {{@ style (color $color)}}{{vehicle}}{{/}}"
+
+msgid "newYear/challenge/variadicDiscount/tooltip/title/inProgress"
+msgstr "{{discount}} Discount on Tier {{tier}} Vehicles"
+
+msgid "newYear/masteryProgression/counter/title"
+msgstr ""
+"MASTERY\n"
+"SEALS"
+
+msgid "newYear/masteryProgression/discountRewardTooltip/description"
+msgid_plural ""
+"plural/newYear/masteryProgression/discountRewardTooltip/description"
+msgstr[0] ""
+"Collect {{tokens}} Mastery Seal for a {{discount}}% discount on the German "
+"Shepherd."
+msgstr[1] ""
+"Collect {{tokens}} Mastery Seals for a {{discount}}% discount on the German "
+"Shepherd."
+msgstr[2] ""
+"Collect {{tokens}} Mastery Seals for a {{discount}}% discount on the German "
+"Shepherd."
+
+msgid ""
+"newYear/masteryProgression/discountRewardTooltip/fullDiscountDescription"
+msgid_plural ""
+"plural/newYear/masteryProgression/discountRewardTooltip/fullDiscountDescription"
+msgstr[0] ""
+"Collect {{tokens}} Mastery Seal to receive the German Shepherd for free."
+msgstr[1] ""
+"Collect {{tokens}} Mastery Seals to receive the German Shepherd for free."
+msgstr[2] ""
+"Collect {{tokens}} Mastery Seals to receive the German Shepherd for free."
+
+msgid "newYear/masteryProgression/discountRewardTooltip/title"
+msgstr "Pet Discount"
+
+msgid "newYear/masteryProgression/progression/discountFullLabel"
+msgstr "Pet is free"
+
+msgid "newYear/masteryProgression/progression/discountLabel"
+msgstr "Pet discount"
+
+msgid "newYear/masteryProgression/rewardDetails/button"
+msgstr "How to Receive"
+
+msgid "newYear/masteryProgression/rewardDetails/disabledTooltip/body"
+msgstr ""
+"Chaffee needs to be in your Village before you can unlock him as a pet.\n"
+"\n"
+"Upgrade the Christmas Tree, Fair, and Installation in your Village and reach Festive Atmosphere Level II."
+
+msgid "newYear/masteryProgression/rewardDetails/disabledTooltip/header"
+msgstr "Chaffee Is on His Way"
+
+msgid "newYear/masteryProgression/rewardDetails/obtained"
+msgstr "Owned"
+
+msgid "notification/attached3D/button/toExterior"
+msgstr "To Exterior"
+
+msgid "notification/attached3D/button/toGarage"
+msgstr "To Garage"
+
+msgid "notification/attached3D/description"
+msgstr "Check the 3D Attachments section in the Exterior."
+
+msgid "notification/attached3D/subtitle"
+msgstr "%(rarity)s 3D attachment"
+
+msgid "notification/cityNameChanged"
+msgstr "Village name saved."
+
+msgid "notification/cityNameChanged/error"
+msgstr "Unable to save Village name. Try again later."
+
+msgid "notification/cityNameChanged/header"
+msgstr "Congratulations!"
+
+msgid "notification/collectionComplete"
+msgstr ""
+"For completing the %(year)s %(setting)s, you receive the following rewards:"
+
+msgid "notification/collectionComplete/bonusCount"
+msgstr "(x%(count)s)"
+
+msgid "notification/collectionComplete/button/reward"
+msgstr "Details"
+
+msgid "notification/collectionComplete/emblem"
+msgstr "Emblems:"
+
+msgid "notification/collectionComplete/header"
+msgstr "You completed the collection!"
+
+msgid "notification/collectionComplete/inscription"
+msgstr "Inscriptions:"
+
+msgid "notification/collectionComplete/name/christmas"
+msgstr "Christmas Collection"
+
+msgid "notification/collectionComplete/name/fairytale"
+msgstr "Magic Collection"
+
+msgid "notification/collectionComplete/name/fairytale_ny22"
+msgstr "Magic Collection"
+
+msgid "notification/collectionComplete/name/newyear"
+msgstr "New Year Collection"
+
+msgid "notification/collectionComplete/name/oriental"
+msgstr "Lunar Collection"
+
+msgid "notification/collectionComplete/projectionDecal"
+msgstr "Decals:"
+
+msgid "notification/collectionComplete/style"
+msgstr "Styles:"
+
+msgid "notification/collectionMegaComplete"
+msgstr ""
+"You received the following reward for collecting all %(year)s Large "
+"Decorations:"
+
+msgid "notification/collectionMegaComplete/header"
+msgstr "Large Decorations collected!"
+
+msgid "notification/finish"
+msgstr ""
+"Holiday Ops has ended. Thank you for your participation and see you on the "
+"battlefield!"
+
+msgid "notification/friendService/collectFriendResources/header"
+msgstr "Resources Collected From %(friendName)s!"
+
+msgid "notification/friendService/collectFriendResources/requestError"
+msgstr "Error completing the operation."
+
+msgid "notification/friendService/disabled"
+msgstr "The Friends section is unavailable for technical reasons."
+
+msgid "notification/friendService/requestError"
+msgstr "Error completing the operation."
+
+msgid "notification/fullCityName"
+msgstr "%(description)s %(name)s"
+
+msgid "notification/giftMachine/available/body"
+msgstr "You can now purchase Gift Terminal Tokens."
+
+msgid "notification/giftMachine/available/button"
+msgstr "To Terminal"
+
+msgid "notification/giftMachine/available/header"
+msgstr "Congratulations!"
+
+msgid "notification/levelUp/congrats/header"
+msgstr "Festive Atmosphere Level Reached: %(level)s of %(maxLevel)s"
+
+msgid "notification/levelUp/rewards/header"
+msgstr "Rewards Received!"
+
+msgid "notification/lootBox/suspend/body"
+msgstr "Operations with boxes are temporarily suspended."
+
+msgid "notification/lootBox/suspend/header"
+msgstr "Attention!"
+
+msgid "notification/marketplace/available/body"
+msgstr "Items are available for purchase in the Holiday Ops Shop."
+
+msgid "notification/marketplace/available/button"
+msgstr "Go to Shop"
+
+msgid "notification/marketplace/available/header"
+msgstr "Congratulations!"
+
+msgid "notification/oldCollectionComplete/header"
+msgstr "Conditions fulfilled! Reward:"
+
+msgid "notification/piggyBank/button/default"
+msgstr "Affirmative!"
+
+msgid "notification/piggyBank/button/style"
+msgstr "To Style"
+
+msgid "notification/piggyBank/button/toFriends"
+msgstr "To Friends"
+
+msgid "notification/piggyBank/title/multiple"
+msgstr "Rewards for Best Friends received!"
+
+msgid "notification/piggyBank/title/single"
+msgstr "%(reward)s received!"
+
+msgid "notification/resourcesReminder/button/FindFriends"
+msgstr "To Friends"
+
+msgid "notification/resourcesReminder/button/Friends"
+msgstr "Collect Resources"
+
+msgid "notification/resourcesReminder/button/Personal"
+msgstr "To Resources"
+
+msgid "notification/resourcesReminder/description/FindFriends"
+msgstr "Add some friends, and they will share resources with you!"
+
+msgid "notification/resourcesReminder/description/extraCollection"
+msgstr "You have missed a day, so make sure to collect more resources today!"
+
+msgid "notification/resourcesReminder/title/FindFriends"
+msgstr ""
+"Want to get up to %(ffffff_Open)s%(resourcesCount)s resources%(ffffff_Close)s\n"
+"of each type every day?"
+
+msgid "notification/resourcesReminder/title/Friends"
+msgstr ""
+"Collect %(ffffff_Open)s%(resourcesCount)s resources%(ffffff_Close)s of each\n"
+"type from %(ffffff_Open)s%(friendName)s!%(ffffff_Close)s"
+
+msgid "notification/resourcesReminder/title/Personal"
+msgstr ""
+"Collect %(bdd4ff_Open)s%(resourcesCount)s Resources%(bdd4ff_Close)s\n"
+"of Each Type!"
+
+msgid "notification/resume"
+msgstr "Holiday Ops has resumed."
+
+msgid "notification/rewardsReminder"
+msgstr ""
+"You have some unused rewards. Don't forget to activate them by the middle of"
+" March!"
+
+msgid "notification/suspend"
+msgstr "Holiday Ops is temporarily suspended."
+
+msgid "notifications/atmosphereLevelUp/button/more"
+msgstr "And %(amount)s More"
+
+msgid "notifications/atmosphereLevelUp/button/toEvent"
+msgstr "Go to Event"
+
+msgid "notifications/atmosphereLevelUp/title"
+msgstr ""
+"Festive Atmosphere Level Reached: %(bdd4ff_Open)s%(level)s%(bdd4ff_Close)s "
+"of %(bdd4ff_Open)s%(maxLevel)s%(bdd4ff_Close)s"
+
+msgid "notifications/challenge/button/andMore"
+msgstr "And %(value)s more"
+
+msgid "notifications/challenge/button/exterior"
+msgstr "To Exterior"
+
+msgid "notifications/challenge/button/garage"
+msgstr "To Garage"
+
+msgid "notifications/challenge/button/mission"
+msgstr "To Challenge"
+
+msgid "notifications/challenge/button/recruit"
+msgstr "To Barracks"
+
+msgid "notifications/challenge/completed/title"
+msgstr "All Holiday Ops Challenge Missions Completed"
+
+msgid "notifications/challenge/inProgress/title"
+msgstr ""
+"Holiday Ops Challenge Missions Completed: "
+"%(bdd4ff_Open)s%(completedAssignments)s%(bdd4ff_Close)s of "
+"%(bdd4ff_Open)s%(allAssignments)s%(bdd4ff_Close)s"
+
+msgid "notifications/challenge/label/attachment"
+msgstr "%(rarity)s 3D attachment"
+
+msgid "notifications/challenge/label/discount"
+msgstr "Discount on Tier %(level)s vehicle"
+
+msgid "notifications/guestQuests/button"
+msgstr "To Style"
+
+msgid "notifications/guestQuests/completed/title"
+msgstr "All %(guestName)s Assignments Completed!"
+
+msgid "notifications/guestQuests/guestA"
+msgstr "Benedict's"
+
+msgid "notifications/guestQuests/guestC"
+msgstr "Redshire Cat's"
+
+msgid "notifications/guestQuests/inProgress/title"
+msgstr ""
+"%(guestName)s Assignments Completed: "
+"%(bdd4ff_Open)s%(completedAssignments)s%(bdd4ff_Close)s of "
+"%(bdd4ff_Open)s%(allAssignments)s%(bdd4ff_Close)s"
+
+msgid "notifications/guestQuests/label/guestC"
+msgstr "Purrrfect job!"
+
+msgid "notifications/hoNewRewardKit/button"
+msgstr "To Boxes"
+
+msgid "notifications/hoNewRewardKit/title/Christmas"
+msgstr "Christmas Boxes Received!"
+
+msgid "notifications/hoNewRewardKit/title/Fairytale"
+msgstr "Magic Boxes Received!"
+
+msgid "notifications/hoNewRewardKit/title/NewYear"
+msgstr "New Year Boxes Received!"
+
+msgid "notifications/hoNewRewardKit/title/Oriental"
+msgstr "Lunar Boxes Received!"
+
+msgid "notifications/nyDogAchieved/button"
+msgstr "To Chaffee"
+
+msgid "notifications/nyDogAchieved/description"
+msgstr "Purchase Bundles to get improved rewards and items for Chaffee."
+
+msgid "notifications/nyDogAchieved/title"
+msgstr "Chaffee Is Here—With a Surprise for You!"
+
+msgid "notifications/nyDogMissionCompleted/button"
+msgstr "To Chaffee"
+
+msgid "notifications/nyDogMissionCompleted/title/base"
+msgstr "Chaffee's Missions %(completed)s"
+
+msgid "notifications/nyDogMissionCompleted/title/completed"
+msgstr ""
+"Completed: %(bdd4ff_Open)s%(current)s%(bdd4ff_Close)s / "
+"%(bdd4ff_Open)s%(total)s%(bdd4ff_Close)s"
+
+msgid "notifications/nySackRareLoot/button/default"
+msgstr "Affirmative!"
+
+msgid "notifications/nySackRareLoot/button/style"
+msgstr "To Style"
+
+msgid "notifications/nySackRareLoot/title/inscription"
+msgstr "Enjoy your gift: %(amount)s \"%(itemName)s\" inscriptions received"
+
+msgid "notifications/nySackRareLoot/title/projectionDecal"
+msgstr "Enjoy your gift: %(amount)s \"%(itemName)s\" decals received"
+
+msgid "notifications/nySackRareLoot/title/style"
+msgstr "Enjoy your gift: \"%(itemName)s\" 2D style received"
+
+msgid "nyMenuGiftTooltip/coinsCount"
+msgstr "Tokens available"
+
+msgid "nyMenuGiftTooltip/description"
+msgstr "Exchange Tokens for rewards in the special Gift Terminal."
+
+msgid "nyMenuGiftTooltip/note"
+msgstr ""
+"Earn Tokens by completing Holiday Ops Challenge missions or reaching certain"
+" Festive Atmosphere Levels. Tokens are used to activate the Gift Terminal."
+
+msgid "nyMenuGiftTooltip/title"
+msgstr "Gift Terminal"
+
+msgid "percentageValue/default"
+msgstr "%(value)s%"
+
+msgid "percentageValue/withMinus"
+msgstr "-{{value}}%"
+
+msgid "percentageValue/withPlus"
+msgstr "+%(value)s%"
+
+msgid "petPurchaseOverlay/buttons/getMoreGold"
+msgstr "Get More Gold"
+
+msgid "petPurchaseOverlay/buttons/previewInDen"
+msgstr "Preview in Den"
+
+msgid "petPurchaseOverlay/buttons/purchase"
+msgstr "Purchase"
+
+msgid "petPurchaseOverlay/buttons/toVillage"
+msgstr "To Village"
+
+msgid "petPurchaseOverlay/contentText1"
+msgstr ""
+"Pets don't join you in battle, but bring a touch of personality to your "
+"Garage and provide useful economic bonuses. The German Shepherd grants +10% "
+"to credits earned in each battle, up to 10 times per day."
+
+msgid "petPurchaseOverlay/contentText2"
+msgstr ""
+"Collect {{masterySealsForDiscount}} Mastery Seals for a {{discount}}% "
+"discount on your purchase, or {{masterySealsCountForFree}} Mastery Seals to "
+"get the pet completely free. Your pet will remain in your Garage forever, "
+"even after the event ends."
+
+msgid "petPurchaseOverlay/contentTitle"
+msgstr "German Shepherd"
+
+msgid "petPurchaseOverlay/info1"
+msgstr ""
+"Chaffee needs to be in your Village before you can unlock him as a pet."
+
+msgid "petPurchaseOverlay/info2"
+msgstr ""
+"Upgrade the Christmas Tree, Fair, and Installation in your Village and reach"
+" Festive Atmosphere Level II."
+
+msgid "petPurchaseOverlay/masteryTitle"
+msgstr "Collect Mastery Seals"
+
+msgid "petPurchaseOverlay/title"
+msgstr "Pet for Your Garage"
+
+msgid "petPurchaseOverlay/tooltip/purchasingUnavailableText"
+msgstr ""
+"Purchasing is temporarily unavailable for technical reasons. Try again "
+"later."
+
+msgid "petPurchaseOverlay/tooltip/purchasingUnavailableTitle"
+msgstr "Purchasing Temporarily Unavailable"
+
+msgid "petRewardView/buttonAccept"
+msgstr "Affirmative!"
+
+msgid "petRewardView/buttonGoTo"
+msgstr "Go to Den"
+
+msgid "petRewardView/rewardDescription"
+msgstr ""
+"{{petName}} will bring a touch of life to your Garage between battles.\n"
+"Get additional rewards and access unique events!"
+
+msgid "petRewardView/title"
+msgstr "{{petName}} is here to stay!"
+
+msgid "postbattle/lootBox/boxCount"
+msgstr "x%(count)s"
+
+msgid "postbattle/lootBox/boxesLabel"
+msgstr "%(boxName)s: %(icon)s%(boxCount)s"
+
+msgid "postbattle/nyCoin"
+msgstr "Gift Terminal token: %(count)s %(icon)s"
+
+msgid "postbattle/nyResources/ny_amber"
+msgstr "Warm Amber: %(count)s %(icon)s"
+
+msgid "postbattle/nyResources/ny_crystal"
+msgstr "Rock Crystal: %(count)s %(icon)s"
+
+msgid "postbattle/nyResources/ny_emerald"
+msgstr "Pure Emerald: %(count)s %(icon)s"
+
+msgid "postbattle/nyResources/ny_iron"
+msgstr "Meteoric Iron: %(count)s %(icon)s"
+
+msgid "progress/default"
+msgstr "%(value)s / %(maxValue)s"
+
+msgid "purchase/unavailable"
+msgstr "---"
+
+msgid "quests/bonuses/nyCoin/body"
+msgstr ""
+"Use Tokens to activate the Gift Terminal. You will receive one gift per "
+"Token."
+
+msgid "quests/bonuses/nyGuestEconomic/title"
+msgstr "Economic Bonuses"
+
+msgid "quests/bonuses/ny_cat/title"
+msgstr "Redshire Cat"
+
+msgid "quests/bonuses/ny_dog/title"
+msgstr "?empty?"
+
+msgid "quests/bonuses/ny_marketplace/title"
+msgstr "?empty?"
+
+msgid "randomResourceTooltip/description"
+msgstr ""
+"Use resources to complete assignments from your guests, increase the "
+"Christmas Tree, Installation, and Fair Levels, and perform other actions."
+
+msgid "randomResourceTooltip/subtitle"
+msgstr ""
+"%(brownColor_Open)s%(value)s items%(brownColor_Close)s of one of the "
+"following resources:"
+
+msgid "randomResourceTooltip/title"
+msgstr "Random Resource"
+
+msgid "randomReward/description/randomNyBooklet"
+msgstr ""
+"Applied to the whole crew. When studied, the Crew Book provides each crew "
+"member with 20,000 XP. Can be earned by completing missions and "
+"participating in game events."
+
+msgid "randomReward/description/randomNyCrewInstruction"
+msgstr ""
+"Directives are effective for one battle. They improve trained perks or "
+"activate those not yet trained. You can purchase directives with credits."
+
+msgid "randomReward/description/randomNyGuide"
+msgstr ""
+"Applied to the whole crew. When studied, the Crew Book provides each crew "
+"member with 100,000 XP. Can be earned by participating in game events."
+
+msgid "randomReward/description/randomNyInstruction"
+msgstr ""
+"Directives improve the effect of equipment mounted on a vehicle for one "
+"battle."
+
+msgid "randomReward/description/randomNyToy"
+msgstr ""
+"Decorations do not affect the Festive Atmosphere Level. They will stay with "
+"you until the event is over and make your Village nice and cozy."
+
+msgid "randomReward/subtitle/randomNyBooklet"
+msgstr "Get a random Training Booklet to train your crew members faster"
+
+msgid "randomReward/subtitle/randomNyCrewInstruction"
+msgstr "Get random crew directives"
+
+msgid "randomReward/subtitle/randomNyGuide"
+msgstr "Get a random Training Guide to train your crew members faster"
+
+msgid "randomReward/subtitle/randomNyInstruction"
+msgstr "Get random equipment directives"
+
+msgid "randomReward/subtitle/randomNyToy"
+msgstr "Get a random decoration for the Christmas Tree, Fair, or Installation"
+
+msgid "randomReward/title/randomNyBooklet"
+msgstr "Random Training Booklet"
+
+msgid "randomReward/title/randomNyCrewInstruction"
+msgstr "Random Crew Directives"
+
+msgid "randomReward/title/randomNyGuide"
+msgstr "Random Training Guide"
+
+msgid "randomReward/title/randomNyInstruction"
+msgstr "Random Equipment Directives"
+
+msgid "randomReward/title/randomNyToy"
+msgstr "Random Decoration"
+
+msgid "resource/marker/greaterZeroPrefix"
+msgstr "+"
+
+msgid "resource/type/ny_amber"
+msgstr "Warm Amber"
+
+msgid "resource/type/ny_crystal"
+msgstr "Rock Crystal"
+
+msgid "resource/type/ny_emerald"
+msgstr "Pure Emerald"
+
+msgid "resource/type/ny_iron"
+msgstr "Meteoric Iron"
+
+msgid "resource/withCounter/ny_amber"
+msgstr ""
+"Warm Amber \n"
+"%(currency)s"
+
+msgid "resource/withCounter/ny_crystal"
+msgstr ""
+"Rock Crystal \n"
+"%(currency)s"
+
+msgid "resource/withCounter/ny_emerald"
+msgstr ""
+"Pure Emerald \n"
+"%(currency)s"
+
+msgid "resource/withCounter/ny_iron"
+msgstr ""
+"Meteoric Iron \n"
+"%(currency)s"
+
+msgid "resourceBox/label/multiple"
+msgstr "CLAIM REWARDS"
+
+msgid "resourceBox/label/single"
+msgstr "CLAIM REWARD"
+
+msgid "resourceBox/tooltip/completed/body"
+msgstr "All rewards received."
+
+msgid "resourceBox/tooltip/content/description"
+msgstr ""
+"You can collect resources from each of your %(friendsCount)s Best Friends "
+"once a day. This will not reduce the number of resources they can collect in"
+" their Villages."
+
+msgid "resourceBox/tooltip/content/title"
+msgstr "Collecting Resources"
+
+msgid "resourceBox/tooltip/footer/label"
+msgstr "Click to View Rewards"
+
+msgid "resourceBox/tooltip/header/description"
+msgstr ""
+"You can receive rewards when collecting resources in your Best Friends' "
+"Villages."
+
+msgid "resourceBox/tooltip/header/title"
+msgstr "Reward for Collecting Resources From Best Friends"
+
+msgid "resourceCollector/button/collect"
+msgstr "Collect Resources"
+
+msgid "resourceCollector/button/setFavoriteFriend"
+msgstr "Mark as Best Friend"
+
+msgid "resourceCollector/button/toFriends"
+msgstr "To Friends"
+
+msgid "resourceCollector/days"
+msgid_plural "plural/resourceCollector/days"
+msgstr[0] "%(amount)s day"
+msgstr[1] "%(amount)s days"
+msgstr[2] "%(amount)s days"
+
+msgid "resourceCollector/status/Available"
+msgstr ""
+"Collect %(creamColor_Open)s%(collectAmount)s resources%(creamColor_Close)s "
+"of each type from your friend's Village every day!"
+
+msgid "resourceCollector/status/Finished"
+msgstr ""
+"You have collected all resources from this Best Friend's Village this year! "
+"Check out the other ways to get more resources."
+
+msgid "resourceCollector/status/Limit"
+msgstr ""
+"You already have %(creamColor_Open)stwo Best Friends%(creamColor_Close)s. To"
+" collect resources from this friend, mark them as a Best Friend in your "
+"Friends list."
+
+msgid "resourceCollector/status/LimitTimer"
+msgstr ""
+"You have exceeded the limit of %(creamColor_Open)sBest "
+"Friends%(creamColor_Close)s from whom you can collect additional resources. "
+"You can change your selection in your Friends list in %(icon)s "
+"%(creamColor_Open)s%(timer)s.%(creamColor_Close)s"
+
+msgid "resourceCollector/status/NotFavorite"
+msgstr ""
+"To collect %(creamColor_Open)s%(collectAmount)s "
+"resources%(creamColor_Close)s of each type every day from this friend's "
+"Village, mark them as a %(creamColor_Open)sBest Friend.%(creamColor_Close)s"
+
+msgid "resourceCollector/status/Timer"
+msgstr ""
+"%(icon)s You can collect %(creamColor_Open)s%(collectAmount)s "
+"resources%(creamColor_Close)s of each type from your Best Friend's Village "
+"in %(creamColor_Open)s%(timer)s.%(creamColor_Close)s"
+
+msgid "resourceCollector/status/available"
+msgstr ""
+"Collect %(creamColor_Open)s%(collectAmount)s resources "
+"%(creamColor_Close)sof each type!"
+
+msgid "resourceCollector/status/availableExtra"
+msgstr ""
+"%(icon)s Days of collecting missed: %(skippedDays)s. Today, you can collect "
+"your daily amount of %(creamColor_Open)s%(collectAmount)s resources "
+"%(creamColor_Close)sand an additional "
+"%(creamColor_Open)s%(collectAmountExtra)s resources %(creamColor_Close)sof "
+"each type!"
+
+msgid "resourceCollector/status/collected"
+msgstr ""
+"%(icon)s You can collect %(creamColor_Open)s%(collectAmount)s resources "
+"%(creamColor_Close)sof each type in %(creamColor_Open)s "
+"%(timer)s.%(creamColor_Close)s"
+
+msgid "resourceCollector/status/finished"
+msgstr ""
+"You have collected all resources available in the Village this year! \n"
+"Check out the other ways to get more resources."
+
+msgid "resourceCollector/status/note"
+msgstr "This will not reduce the number of resources your friend can collect."
+
+msgid "resourceCollectorTooltip/description/available"
+msgstr ""
+"You can collect %(brownColor_Open)s%(collectAmount)s resources %(brownColor_Close)sof each type once per day.\n"
+"If you miss one or more days, you will be able to collect %(brownColor_Open)s%(collectAmountExtra)s resources %(brownColor_Close)sof each type next time.\n"
+"Resources are compensated for%(brownColor_Open)s one%(brownColor_Close)s missed day only."
+
+msgid "resourceCollectorTooltip/description/availableExtra"
+msgstr ""
+"You have missed one or more days and have not collected resources. Today, you can collect %(brownColor_Open)s%(collectAmountExtra)s resources %(brownColor_Close)sof each type.\n"
+"Regular number per day: %(brownColor_Open)s%(collectAmount)s resources %(brownColor_Close)sof each type."
+
+msgid "resourceCollectorTooltip/description/collected"
+msgstr ""
+"You can collect %(brownColor_Open)s%(collectAmount)s resources %(brownColor_Close)sof each type once per day.\n"
+"If you miss one or more days, you will be able to collect %(brownColor_Open)s%(collectAmountExtra)s resources %(brownColor_Close)sof each type next time.\n"
+"Resources are compensated for%(brownColor_Open)s one%(brownColor_Close)s missed day only."
+
+msgid "resourceCollectorTooltip/description/finished"
+msgstr ""
+"You have collected all resources available in the Village this year!\n"
+"Check out the other ways to get more resources."
+
+msgid "resourceCollectorTooltip/description/unavailable"
+msgstr "We are working on fixing the issue. Please try again later."
+
+msgid "resourceCollectorTooltip/title/available"
+msgstr "Collecting Resources"
+
+msgid "resourceCollectorTooltip/title/availableExtra"
+msgstr "Resources for Missed Days"
+
+msgid "resourceCollectorTooltip/title/collected"
+msgstr "Resources will be available in %(timer)"
+
+msgid "resourceCollectorTooltip/title/finished"
+msgstr "Collecting Resources"
+
+msgid "resourceCollectorTooltip/title/unavailable"
+msgstr "Unable to Collect"
+
+msgid "resourceListTooltip/title"
+msgstr "Main Resources by Box Types"
+
+msgid "resourceProgression/collectLabel"
+msgstr "All rewards collected"
+
+msgid "resourceProgression/finalLabel"
+msgstr "All rewards received"
+
+msgid "resourceProgression/label"
+msgstr "Resource Collections From Best Friends"
+
+msgid "resourceTooltip/available"
+msgstr "Available"
+
+msgid "resourceTooltip/description"
+msgstr "Collected per day"
+
+msgid "resourceTooltip/footer/ny_amber"
+msgstr "Use Warm Amber to complete assignments."
+
+msgid "resourceTooltip/footer/ny_crystal"
+msgstr "Use Rock Crystal to increase Christmas Tree and Installation Levels."
+
+msgid "resourceTooltip/footer/ny_emerald"
+msgstr "Use Pure Emerald to increase Fair and Installation Levels."
+
+msgid "resourceTooltip/footer/ny_iron"
+msgstr "Use Meteoric Iron to complete assignments."
+
+msgid "resourceTooltip/forShop/description"
+msgstr ""
+"A temporary in-game currency in Holiday Ops. Use resources to complete "
+"assignments from your guests, increase the Christmas Tree, Installation, and"
+" Fair Levels, as well as perform other actions."
+
+msgid "resourceTooltip/forShop/footer"
+msgstr "Each box contains resources"
+
+msgid "resourceTooltip/secondaryDescription/ny_amber"
+msgstr "If you miss one or more days, you will get more Warm Amber next time."
+
+msgid "resourceTooltip/secondaryDescription/ny_crystal"
+msgstr ""
+"If you miss one or more days, you will get more Rock Crystal next time."
+
+msgid "resourceTooltip/secondaryDescription/ny_emerald"
+msgstr ""
+"If you miss one or more days, you will get more Pure Emerald next time."
+
+msgid "resourceTooltip/secondaryDescription/ny_iron"
+msgstr ""
+"If you miss one or more days, you will get more Meteoric Iron next time."
+
+msgid "resourceTooltip/unavailable/body"
+msgstr "We are working on fixing the issue. Please try again later."
+
+msgid "resourceTooltip/unavailable/header"
+msgstr "Data Unavailable"
+
+msgid "resourcesConvertDialog/button/accept"
+msgstr "Convert"
+
+msgid "resourcesConvertDialog/button/cancel"
+msgstr "Cancel"
+
+msgid "resourcesConvertDialog/button/disabledTooltip/body"
+msgstr ""
+"The operation is temporarily unavailable for technical reasons. Please try "
+"again later."
+
+msgid "resourcesConvertDialog/button/disabledTooltip/header"
+msgstr "Unable to Convert"
+
+msgid "resourcesConvertDialog/title"
+msgstr "Convert %(from)s into %(to)s?"
+
+msgid "resourcesConvertPopover/button/convert"
+msgstr "Convert"
+
+msgid "resourcesConvertPopover/button/disabledTooltip"
+msgstr ""
+"You have specified a greater value of resources than you have in your vault."
+
+msgid "resourcesConvertPopover/convertRate"
+msgstr "Exchange rate: %(from)s to %(to)s"
+
+msgid "resourcesConvertPopover/infoTooltip/from"
+msgstr ""
+"Specify a value that is a %(brownColor_Open)smultiple of "
+"%(multiple)s%(brownColor_Close)s to receive a whole number of the required "
+"resource. Values that are not multiples of %(multiple)s are "
+"%(brownColor_Open)sautomatically%(brownColor_Close)s rounded down."
+
+msgid "resourcesConvertPopover/infoTooltip/to"
+msgstr ""
+"Specify a value that is a %(brownColor_Open)smultiple of "
+"%(multiple)s%(brownColor_Close)s to spend a whole number of the required "
+"resource. Values that are not multiples of %(multiple)s are "
+"%(brownColor_Open)sautomatically%(brownColor_Close)s rounded down."
+
+msgid "resourcesConvertPopover/noResources/button/goToBoxes"
+msgstr "To Large Boxes"
+
+msgid "resourcesConvertPopover/noResources/button/goToQuests"
+msgstr "To Daily Missions"
+
+msgid "resourcesConvertPopover/noResources/description"
+msgstr ""
+"Collect Resources in the Village, from your friends, or earn them in battle,"
+" as well as receive them from Large Boxes."
+
+msgid "resourcesConvertPopover/noResources/title"
+msgstr "Not Enough Resources"
+
+msgid "resourcesConvertPopover/resource/tooltip/alreadySelected"
+msgstr "You have already selected the initial resource."
+
+msgid "resourcesConvertPopover/resource/tooltip/notEnough"
+msgstr "Not enough resources for exchange."
+
+msgid "resourcesConvertPopover/subTitleFrom"
+msgstr "From"
+
+msgid "resourcesConvertPopover/subTitleTo"
+msgstr "To"
+
+msgid "resourcesConvertPopover/title"
+msgstr "Resource Converter"
+
+msgid "reward/label/blueprint/national"
+msgstr "National fragments: %(count)s"
+
+msgid "reward/label/blueprint/universal"
+msgstr "Universal fragments: %(count)s"
+
+msgid "reward/label/booster"
+msgstr "Directive"
+
+msgid "reward/label/boosters"
+msgstr "Directives: %(count)s"
+
+msgid "reward/label/crewbook"
+msgstr "Crew Books"
+
+msgid "reward/label/crewbooks"
+msgstr "Crew Books: %(count)s"
+
+msgid "reward/label/equipment/autoExtinguishers"
+msgstr "Automatic Fire Extinguishers: %(count)s"
+
+msgid "reward/label/equipment/handExtinguishers"
+msgstr "Manual Fire Extinguishers: %(count)s"
+
+msgid "reward/label/equipment/largeMedkit"
+msgstr "Large First Aid Kits: %(count)s"
+
+msgid "reward/label/equipment/largeRepairkit"
+msgstr "Large Repair Kits: %(count)s"
+
+msgid "reward/label/equipment/modernizedAimDrivesAimingStabilizer"
+msgstr "Fire-Control System T1"
+
+msgid ""
+"reward/label/equipment/modernizedExtraHealthReserveAntifragmentationLining"
+msgstr "Survival Improvement Suite T1"
+
+msgid "reward/label/equipment/modernizedTurbochargerRotationMechanism"
+msgstr "Mobility Improvement System T1"
+
+msgid "reward/label/equipment/smallMedkit"
+msgstr "Small First Aid Kits: %(count)s"
+
+msgid "reward/label/equipment/smallRepairkit"
+msgstr "Small Repair Kits: %(count)s"
+
+msgid "reward/label/premiumDay"
+msgstr "WoT Premium Account day"
+
+msgid "reward/label/premiumDays"
+msgstr "WoT Premium Account days: %(count)s"
+
+msgid "reward/label/slots"
+msgstr "Garage slots: %(count)s"
+
+msgid "reward/label/style/2d"
+msgstr "%(name)s style"
+
+msgid "reward/label/style/3d"
+msgstr ""
+"%(name)s\n"
+"3D style"
+
+msgid "reward/label/toy"
+msgstr "Decoration"
+
+msgid "reward/label/toy/new"
+msgstr "New decoration"
+
+msgid "reward/label/toyWithCount"
+msgstr "{toyName}:%(creamColor_Open)s {count} items%(creamColor_Close)s"
+
+msgid "reward/tmanToken"
+msgstr "Crew member \"%(name)s\""
+
+msgid "rewardKit/Christmas"
+msgstr "Christmas"
+
+msgid "rewardKit/Fairytale"
+msgstr "Magic"
+
+msgid "rewardKit/NewYear"
+msgstr "New Year"
+
+msgid "rewardKit/Oriental"
+msgstr "Lunar"
+
+msgid "rewardKit/actionsUnavailable"
+msgstr "Purchasing and opening are temporarily unavailable"
+
+msgid "rewardKit/buy"
+msgstr "Purchase"
+
+msgid "rewardKit/get"
+msgstr "Get More"
+
+msgid "rewardKit/name/premium"
+msgstr "Large Boxes"
+
+msgid "rewardKit/open"
+msgstr "To Boxes"
+
+msgid "rewardKit/unavailable"
+msgstr "Temporarily unavailable"
+
+msgid "rewardKit/upper/get"
+msgstr "GET MORE"
+
+msgid "rewards/tooltip/condition/ny_cat"
+msgstr ""
+"Joins you at %(cdedff_Open)sFestive Atmosphere Level V%(cdedff_Close)s"
+
+msgid "rewards/tooltip/condition/ny_dog"
+msgstr ""
+"Joins you at %(cdedff_Open)sFestive Atmosphere Level II%(cdedff_Close)s"
+
+msgid "rewards/tooltip/description/ny_cat"
+msgstr ""
+"Complete Redshire Cat's Assignments to receive a %(cdedff_Open)sfluffy "
+"inscription, decal,%(cdedff_Close)s and %(cdedff_Open)s2D "
+"style.%(cdedff_Close)s"
+
+msgid "rewards/tooltip/description/ny_dog"
+msgstr ""
+"Chaffee will bring you Sacks for completing his Missions. You can also "
+"purchase new, enhanced %(cdedff_Open)sChaffee's Bundles%(cdedff_Close)s with"
+" improved rewards."
+
+msgid "rewards/tooltip/info/ny_cat"
+msgstr "Can be found at the Headquarters"
+
+msgid "rewards/tooltip/info/ny_dog"
+msgstr "Can be found at the Headquarters"
+
+msgid "rewards/tooltip/subtitle/ny_cat"
+msgstr "Guest with new Assignments"
+
+msgid "rewards/tooltip/subtitle/ny_dog"
+msgstr "Old friend"
+
+msgid "rewards/tooltip/title/ny_cat"
+msgstr "Redshire Cat"
+
+msgid "rewards/tooltip/title/ny_dog"
+msgstr "Chaffee"
+
+msgid "sacksActionButtonWidget/description/allPurchased"
+msgstr "?empty?"
+
+msgid "sacksActionButtonWidget/description/level2"
+msgstr "Get an Enhanced Sack and unlock the Enhanced Bundle for Chaffee."
+
+msgid "sacksActionButtonWidget/description/level3"
+msgstr "Get an Excellent Sack and unlock the Excellent Bundle for Chaffee."
+
+msgid "sacksActionButtonWidget/description/level4"
+msgstr "Get an Awesome Sack and unlock the Awesome Bundle for Chaffee."
+
+msgid "sacksActionButtonWidget/title"
+msgstr "More Rewards for Chaffee's Missions"
+
+msgid "sacksMarker/missionsInfo/description/completed"
+msgstr ""
+"%(missionsCompleted)s of %(missionsTotal)s Chaffee's Missions completed.\n"
+"Check back later for more."
+
+msgid "sacksMarker/missionsInfo/title/completed"
+msgstr ""
+"Completed: %(missionsCompleted)s %(lightBlueColor_Open)s/ "
+"%(missionsTotal)s%(lightBlueColor_Close)s"
+
+msgid "sacksMarker/missionsInfo/title/inProgress"
+msgstr "Chaffee's Missions %(completed)s"
+
+msgid "sacksTooltip/description/level1"
+msgstr ""
+"You will receive a %(ffffff_Open)sBasic Sack%(ffffff_Close)s for completing a Chaffee's Mission.\n"
+"\n"
+"Click Purchase to get more valuable rewards for completing a Chaffee's Mission."
+
+msgid "sacksTooltip/description/level2"
+msgstr ""
+"You will receive an %(ffffff_Open)sEnhanced Sack%(ffffff_Close)s for completing a Chaffee's Mission.\n"
+"\n"
+"Click Purchase to get more valuable rewards for completing a Chaffee's Mission."
+
+msgid "sacksTooltip/description/level3"
+msgstr ""
+"You will receive an %(ffffff_Open)sExcellent Sack%(ffffff_Close)s for completing a Chaffee's Mission.\n"
+"\n"
+"Click Purchase to get more valuable rewards for completing a Chaffee's Mission."
+
+msgid "sacksTooltip/description/level4"
+msgstr ""
+"You will receive an %(ffffff_Open)sAwesome Sack%(ffffff_Close)s for completing a Chaffee’s Mission.\n"
+"\n"
+"This Sack contains the most valuable rewards for completing a Chaffee’s Mission. To learn more about them, click the Sack information button."
+
+msgid "sacksTooltip/title/level1"
+msgstr "Basic Sack"
+
+msgid "sacksTooltip/title/level2"
+msgstr "Enhanced Sack"
+
+msgid "sacksTooltip/title/level3"
+msgstr "Excellent Sack"
+
+msgid "sacksTooltip/title/level4"
+msgstr "Awesome Sack"
+
+msgid "settings/Christmas"
+msgstr "Christmas"
+
+msgid "settings/Fairytale"
+msgstr "Magic New Year"
+
+msgid "settings/NewYear"
+msgstr "New Year"
+
+msgid "settings/Oriental"
+msgstr "Lunar New Year"
+
+msgid "settings/asian"
+msgstr "Chinese New Year"
+
+msgid "settings/modernWestern"
+msgstr "Modern Christmas"
+
+msgid "settings/soviet"
+msgstr "Soviet New Year"
+
+msgid "settings/traditionalWestern"
+msgstr "Traditional Christmas"
+
+msgid "shopOverlay/tooltip/content"
+msgid_plural "plural/shopOverlay/tooltip/content"
+msgstr[0] ""
+"%(bondColor_Open)s%(count)s%(bondColor_Close)s festive bundle available "
+"today"
+msgstr[1] ""
+"%(bondColor_Open)s%(count)s%(bondColor_Close)s festive bundles available "
+"today"
+msgstr[2] ""
+"%(bondColor_Open)s%(count)s%(bondColor_Close)s festive bundles available "
+"today"
+
+msgid "shopOverlay/tooltip/footer"
+msgstr ""
+"You cannot purchase more than %(maxCount)s festive bundles within 24 hours"
+
+msgid "shopOverlay/tooltip/lastDay"
+msgstr ""
+"Today is the final day of the event—you have already received all available "
+"festive bundles."
+
+msgid "shopOverlay/tooltip/lock"
+msgstr ""
+"You have already received %(maxCount)s festive bundles today. The limit will"
+" be reset in %(hours)s h : %(minutes)s m."
+
+msgid "shopOverlay/tooltip/title"
+msgstr "Festive Bundles Purchase"
+
+msgid "slotLockedTooltip/caption"
+msgstr ""
+"Upgrade this Decoration Zone "
+"to%(ffdd99_Open)s&nbsp;Level&nbsp;%(level)s%(ffdd99_Close)s to&nbsp;unlock "
+"this slot."
+
+msgid "surpriseBanner/active/description"
+msgstr "A gift is ready to claim"
+
+msgid "surpriseBanner/inactive/description"
+msgstr "A gift is coming soon"
+
+msgid "surpriseBanner/title"
+msgstr "Ho, ho, ho, Commanders!"
+
+msgid "surpriseGift/primaryButton"
+msgstr "View in Garage"
+
+msgid "systemMessage/challenge/guestQuestsCompleted/bonus"
+msgstr "+%(value)s%% bonus %(bonusName)s added"
+
+msgid "systemMessage/challenge/guestQuestsCompleted/bonus/creditsFactor"
+msgstr "to credits"
+
+msgid "systemMessage/challenge/guestQuestsCompleted/bonus/freeXPFactor"
+msgstr "to Free XP"
+
+msgid "systemMessage/challenge/guestQuestsCompleted/bonus/tankmenXPFactor"
+msgstr "to Crew XP"
+
+msgid "systemMessage/challenge/guestQuestsCompleted/bonus/xpFactor"
+msgstr "to Combat XP"
+
+msgid "systemMessage/challenge/guestQuestsCompleted/guest/guest_A"
+msgstr "Benedict's"
+
+msgid "systemMessage/challenge/guestQuestsCompleted/guest/guest_cat"
+msgstr "Redshire Cat's"
+
+msgid ""
+"systemMessage/challenge/guestQuestsCompleted/ho_mastery_challenge_token"
+msgstr "Mastery Seal added"
+
+msgid ""
+"systemMessage/challenge/guestQuestsCompleted/ho_mastery_challenge_tokens"
+msgstr "Mastery Seals added %(count)s"
+
+msgid "systemMessage/challenge/guestQuestsCompleted/ho_simple_challenge_token"
+msgstr "Challenge Seal added"
+
+msgid ""
+"systemMessage/challenge/guestQuestsCompleted/ho_simple_challenge_tokens"
+msgstr "Challenge Seals added %(count)s"
+
+msgid "systemMessage/challenge/guestQuestsCompleted/nyCoin"
+msgstr "Gift Terminal Token added"
+
+msgid "systemMessage/challenge/guestQuestsCompleted/nyCoins"
+msgstr "Gift Terminal Token added: %(count)s"
+
+msgid "systemMessage/challenge/guestQuestsCompleted/title"
+msgstr "%(guest)s Assignment Completed!"
+
+msgid "systemMessage/infoCollection"
+msgstr "All decorations of the %(year)s %(collection)s purchased"
+
+msgid "systemMessage/infoToy"
+msgstr "%(toyName)s decoration of the %(year)s %(collection)s purchased"
+
+msgid "systemMessage/ny18"
+msgstr "2018"
+
+msgid "systemMessage/ny19"
+msgstr "2019"
+
+msgid "systemMessage/ny20"
+msgstr "2020"
+
+msgid "systemMessage/ny21"
+msgstr "2021"
+
+msgid "systemMessage/ny22"
+msgstr "2022"
+
+msgid "systemMessage/questsFormatter/catUnlock"
+msgstr "Redshire Cat has arrived"
+
+msgid "systemMessage/questsFormatter/dogUnlock"
+msgstr "Chaffee the Dog has arrived"
+
+msgid "tabBar/Fair"
+msgstr "Fair"
+
+msgid "tabBar/Fir"
+msgstr "Christmas Tree"
+
+msgid "tabBar/FriendFair"
+msgstr "Fair"
+
+msgid "tabBar/FriendFir"
+msgstr "Christmas Tree"
+
+msgid "tabBar/FriendInstallation"
+msgstr "Installation"
+
+msgid "tabBar/FriendResources"
+msgstr "Resources"
+
+msgid "tabBar/FriendTown"
+msgstr "Village View"
+
+msgid "tabBar/Installation"
+msgstr "Installation"
+
+msgid "tabBar/Resources"
+msgstr "Resources"
+
+msgid "tabBar/Town"
+msgstr "Village View"
+
+msgid "tabBar/body/Fair"
+msgstr "Improve the Fair to increase the Festive Atmosphere Level."
+
+msgid "tabBar/body/Fir"
+msgstr "Improve the Christmas Tree to increase the Festive Atmosphere Level."
+
+msgid "tabBar/body/FriendFair"
+msgstr "The Fair decorated by your friend."
+
+msgid "tabBar/body/FriendFir"
+msgstr "The Christmas Tree decorated by your friend."
+
+msgid "tabBar/body/FriendInstallation"
+msgstr "The Installation decorated by your friend."
+
+msgid "tabBar/body/FriendResources"
+msgstr "Collect resources from your Best Friends' Villages and get rewards."
+
+msgid "tabBar/body/FriendTown"
+msgstr "A view of the decorated objects in your friend's Village."
+
+msgid "tabBar/body/Installation"
+msgstr "Improve the Installation to increase the Festive Atmosphere Level."
+
+msgid "tabBar/body/Resources"
+msgstr ""
+"Collect resources to advance through the Holiday Ops 2026 Progression."
+
+msgid "tabBar/body/Town"
+msgstr ""
+"Improve the objects in your Village to increase the Festive Atmosphere "
+"Level."
+
+msgid "tabBar/body/guestA"
+msgstr ""
+"Complete Benedict's Assignments to receive rewards, including economic "
+"bonuses."
+
+msgid "tabBar/body/guestC"
+msgstr "Complete Redshire Cat's Assignments to receive valuable rewards."
+
+msgid "tabBar/body/guestD"
+msgstr "Complete Chaffee's Missions to get more rewards."
+
+msgid "tabBar/body/headquarters"
+msgstr ""
+"At Headquarters, you will find all the guests, as well as the items gifted "
+"to them."
+
+msgid "tabBar/body/tournament"
+msgstr "Complete special missions and receive valuable rewards."
+
+msgid "tabBar/guestA"
+msgstr "Assignments"
+
+msgid "tabBar/guestC"
+msgstr "Redshire Cat"
+
+msgid "tabBar/guestD"
+msgstr "Chaffee"
+
+msgid "tabBar/headquarters"
+msgstr "HQ"
+
+msgid "tabBar/previous"
+msgstr "Legacy"
+
+msgid "tabBar/title/Fair"
+msgstr "?empty?"
+
+msgid "tabBar/title/Fir"
+msgstr "?empty?"
+
+msgid "tabBar/title/Installation"
+msgstr "?empty?"
+
+msgid "tabBar/title/Resources"
+msgstr "?empty?"
+
+msgid "tabBar/title/Town"
+msgstr "?empty?"
+
+msgid "tabBar/title/guestA"
+msgstr "Assignments"
+
+msgid "tabBar/title/guestC"
+msgstr "Redshire Cat"
+
+msgid "tabBar/title/guestD"
+msgstr "Chaffee"
+
+msgid "tabBar/title/headquarters"
+msgstr "Headquarters"
+
+msgid "tabBar/title/tournament"
+msgstr "Holiday Ops Challenge"
+
+msgid "tabBar/tournament"
+msgstr "Challenge"
+
+msgid "tankSlot/tooltip/bonus"
+msgstr "+%(value)%"
+
+msgid "tankSlot/tooltip/description"
+msgstr ""
+"You can select a Tier V–X vehicle (except for Premium and rental vehicles) "
+"for the slot. The vehicle tier depends on the Festive Atmosphere Level. The "
+"bonus for each slot with a vehicle is selected manually:"
+
+msgid "tankSlot/tooltip/freeXPFactor"
+msgstr "to Free Experience"
+
+msgid "tankSlot/tooltip/header"
+msgstr "Holiday Ops Slot"
+
+msgid "tankSlot/tooltip/secondaryDescription"
+msgstr ""
+"The maximum bonus to credits activated during the event will be applied to "
+"Holiday Ops vehicles for a certain period after the end of the event."
+
+msgid "tankSlot/tooltip/tankmenXPFactor"
+msgstr "to Crew Experience"
+
+msgid "tankSlot/tooltip/xpFactor"
+msgstr "to Combat Experience"
+
+msgid "titles/friendHangar"
+msgstr "FRIEND'S VILLAGE"
+
+msgid "titles/newYear"
+msgstr "HOLIDAY OPS 2026"
+
+msgid "tooltip/randomHOToy/description"
+msgstr ""
+"Get a random decoration for the Christmas Tree, Fair, or Installation.\n"
+"\n"
+"Decorations do not affect the Festive Atmosphere Level. They will stay with you until the event is over and make your Village nice and cozy."
+
+msgid "tooltip/randomHOToy/title"
+msgstr "Random Decoration"
+
+msgid "tooltip/randomHOTreeColor/description"
+msgstr ""
+"Get a random color for the Christmas Tree in your Village.\n"
+"\n"
+"Decorations do not affect the Festive Atmosphere Level. They will stay with you until the event is over and make your Village nice and cozy."
+
+msgid "tooltip/randomHOTreeColor/title"
+msgstr "Tree Colors"
+
+msgid "totalBonusWidget/pbBonus"
+msgstr "+%(value)s%%"
+
+msgid "tournament/backLabel"
+msgstr "TO CHALLENGE"
+
+msgid "toy18Infotype/decorLevel"
+msgstr "Decoration Level"
+
+msgid "triggerHints/DecorationZones"
+msgstr ""
+"Increase the Decoration\n"
+"Zone Level!"
+
+msgid "triggerHints/Resources"
+msgstr "Collect resources!"
+
+msgid "triggerHints/guestA"
+msgstr "Complete assignments!"
+
+msgid "triggerHints/tabs/DecorationZones"
+msgstr ""
+"Increase the Decoration\n"
+"Zone Level!"
+
+msgid "triggerHints/tabs/Resources"
+msgstr "Collect resources!"
+
+msgid "triggerHints/tabs/guestA"
+msgstr "Complete assignments!"
+
+msgid "triggerHints/tabs/tournament"
+msgstr "Complete missions!"
+
+msgid "triggerHints/tournament"
+msgstr "Complete missions!"
+
+msgid "upgrade/title/fair"
+msgstr "Increase the Fair Level to %(level)s"
+
+msgid "upgrade/title/fir"
+msgstr "Increase the Christmas Tree Level to %(level)s"
+
+msgid "upgrade/title/installation"
+msgstr "Increase the Installation Level to %(level)s"
+
+msgid "upgrade/title/notEnough"
+msgstr "Not Enough Resources"
+
+msgid "vehicleBonusPanel/tooltip/setCustomization/body"
+msgstr ""
+"Show/hide Holiday Ops style over the applied customization elements. Bonuses"
+" to concealment are not added together."
+
+msgid "vehicleBonusPanel/tooltip/setCustomization/disabled/body"
+msgstr ""
+"Show/hide Holiday Ops style over the applied customization elements. Bonuses"
+" to concealment are not added together."
+
+msgid "vehicleBonusPanel/tooltip/setCustomization/disabled/header"
+msgstr "Holiday Ops style"
+
+msgid "vehicleBonusPanel/tooltip/setCustomization/header"
+msgstr "Holiday Ops style"
+
+msgid "vehiclesView/bonusFormat"
+msgstr "+%(bonus)s%%"
+
+msgid "vehiclesView/bonuses/description"
+msgstr "The bonus for each unlocked slot is selected manually."
+
+msgid "vehiclesView/bonuses/freeXPFactor"
+msgstr "To Free Experience"
+
+msgid "vehiclesView/bonuses/levelUp"
+msgstr ""
+"Increase your Festive Atmosphere Level to select vehicles of a higher tier "
+"for the slots."
+
+msgid "vehiclesView/bonuses/separator"
+msgstr "OR"
+
+msgid "vehiclesView/bonuses/tankmenXPFactor"
+msgstr "To Crew Experience"
+
+msgid "vehiclesView/bonuses/xpFactor"
+msgstr "To Combat Experience"
+
+msgid "vehiclesView/levelsStr"
+msgstr "%(minLevel)s–%(maxLevel)s"
+
+msgid "vehiclesView/secondSubtitle"
+msgstr ""
+"You can select a Tier V–X vehicle for the slot. The vehicle tier depends on "
+"the Festive Atmosphere Level."
+
+msgid "vehiclesView/selectVehiclePopover/description"
+msgstr "After selecting the vehicle, the slot will be frozen for %(time)s"
+
+msgid "vehiclesView/selectVehiclePopover/header"
+msgstr "Select a Tier %(level)s vehicle"
+
+msgid "vehiclesView/selectVehiclePopover/noItems"
+msgstr ""
+"No suitable vehicles. Select any vehicle,\n"
+"except for Premium vehicles."
+
+msgid "vehiclesView/subtitle"
+msgstr ""
+"Select any vehicle (except for Premium and rental vehicles) and receive "
+"additional bonuses to the selected experience in Random Battles."
+
+msgid "vehiclesView/title"
+msgstr "Holiday Ops Vehicles"
+
+msgid "widget/description"
+msgstr ""
+"You have three objects to decorate. Each object has five levels. To improve "
+"an object, use the {{crystalIcon}} Rock Crystal and {{emeraldIcon}}Pure "
+"Emerald resources."
+
+msgid "widget/economicBonus/creditTooltip/description"
+msgstr ""
+"Permanently active. Can be increased upon completing Benedict's Assignments."
+
+msgid "widget/economicBonus/creditTooltip/title"
+msgstr "Credit Bonus"
+
+msgid "widget/economicBonus/infoTooltip/description"
+msgstr ""
+"When completing Benedict's Assignments, you accumulate economic bonuses that"
+" increase both the credits you earn in every battle and an experience type "
+"of your choice."
+
+msgid "widget/economicBonus/infoTooltip/title"
+msgstr "Economic Bonuses"
+
+msgid "widget/economicBonus/widgetTooltip/errorType/disjunction"
+msgstr "or"
+
+msgid "widget/economicBonus/widgetTooltip/errorType/level/firstDescription"
+msgstr ""
+"Increase the Festive Atmosphere to {{@ style (color $color)}}Level "
+"{{level}}{{/}}"
+
+msgid "widget/economicBonus/widgetTooltip/errorType/level/secondDescription"
+msgstr ""
+"Select {{@ style (color $color)}}a vehicle of a tier equal{{/}} to or lower "
+"than the Festive Atmosphere Level."
+
+msgid "widget/economicBonus/widgetTooltip/errorType/level/thirdDescription"
+msgstr ""
+"At Festive Atmosphere Level X, bonuses will also apply to Tier XI vehicles."
+
+msgid "widget/economicBonus/widgetTooltip/errorType/title"
+msgstr "Bonus to XP Not Active"
+
+msgid "widget/economicBonus/widgetTooltip/errorType/vehicle/description"
+msgstr ""
+"The bonus does not apply to {{@ style (color $color)}}Premium{{/}} and {{@ "
+"style (color $color)}}rental vehicles{{/}}."
+
+msgid "widget/economicBonus/xpInfoTooltip/firstDescription"
+msgstr "A bonus to one of three experience types of your choice."
+
+msgid "widget/economicBonus/xpInfoTooltip/secondDescription"
+msgstr ""
+"Active if the vehicle tier is equal to or lower than the Festive Atmosphere "
+"Level. Can be increased upon completing Benedict's Assignments."
+
+msgid "widget/economicBonus/xpInfoTooltip/thirdDescription"
+msgstr ""
+"At Festive Atmosphere Level X, bonuses will also apply to Tier XI vehicles."
+
+msgid "widget/economicBonus/xpInfoTooltip/title"
+msgstr "Bonus to XP"
+
+msgid "widget/menu/challenge/body"
+msgstr ""
+"Complete the Holiday Ops Challenge and Benedict's Assignments to receive "
+"valuable rewards, including economic bonuses."
+
+msgid "widget/menu/challenge/header"
+msgstr "Missions"
+
+msgid "widget/menu/challenge/title"
+msgstr "MISSIONS"
+
+msgid "widget/menu/friendChallenge/body"
+msgstr ""
+"Keep track of your Best Friends' progress on Guests' Assignments in the "
+"Holiday Ops event."
+
+msgid "widget/menu/friendChallenge/header"
+msgstr "Friend's HQ"
+
+msgid "widget/menu/friendChallenge/title"
+msgstr "FRIEND'S HQ"
+
+msgid "widget/menu/friendGlade/body"
+msgstr ""
+"Collect resources from your Best Friends' Villages, and keep track of their "
+"progress in the Holiday Ops event."
+
+msgid "widget/menu/friendGlade/header"
+msgstr "Friend's Village"
+
+msgid "widget/menu/friendGlade/title"
+msgstr "FRIEND'S VILLAGE"
+
+msgid "widget/menu/friends/body"
+msgstr ""
+"Collect resources from your Best Friends' Villages, and keep track of their "
+"progress in the Holiday Ops event."
+
+msgid "widget/menu/friends/disabledDescription"
+msgstr "The Friends section is currently unavailable for technical reasons."
+
+msgid "widget/menu/friends/header"
+msgstr "Friends"
+
+msgid "widget/menu/friends/title"
+msgstr "FRIENDS"
+
+msgid "widget/menu/gift/title"
+msgstr "TERMINAL"
+
+msgid "widget/menu/glade/body"
+msgstr ""
+"Improve the objects in your Village to increase the Festive Atmosphere "
+"Level."
+
+msgid "widget/menu/glade/header"
+msgstr "Village"
+
+msgid "widget/menu/glade/title"
+msgstr "VILLAGE"
+
+msgid "widget/menu/info/body"
+msgstr "Detailed information about Holiday Ops 2026."
+
+msgid "widget/menu/info/header"
+msgstr "About the Event"
+
+msgid "widget/menu/marketplace/body"
+msgstr "Purchase the rewards from past Holiday Ops events."
+
+msgid "widget/menu/marketplace/header"
+msgstr "Holiday Ops Shop"
+
+msgid "widget/menu/marketplace/title"
+msgstr "SHOP"
+
+msgid "widget/menu/rewards/body"
+msgstr "List of rewards for increasing the Festive Atmosphere Level."
+
+msgid "widget/menu/rewards/header"
+msgstr "Rewards"
+
+msgid "widget/menu/rewards/title"
+msgstr "REWARDS"
+
+msgid "widget/rewardsButton/label"
+msgstr "Level Rewards"
+
+msgid "widget/title"
+msgstr "Festive Atmosphere"
+
+msgid "widgetAtmosphere/editTooltip/body"
+msgstr ""
+"You can select and save a new name for your Village or save the original "
+"name."
+
+msgid "widgetAtmosphere/editTooltip/header"
+msgstr "Changing Your Village Name"
+
+msgid "widgetTooltip/level"
+msgstr "Atmosphere Level"
+
+msgid "widgetTooltip/levelsPattern"
+msgstr "{initialPoints} – {finalPoints}"
+
+msgid "widgetTooltip/necessaryPoint"
+msgstr "Atmosphere Points"
+
+msgid "widgetTooltip/pointLevelStatus"
+msgstr " / {finalPoints}"
+
+msgid "widgetTooltip/title"
+msgstr "Festive Atmosphere Level"
+
+msgid "widgetTooltip/titleDescription"
+msgstr "Increase the Festive Atmosphere Level to get valuable rewards."

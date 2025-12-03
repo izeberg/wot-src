@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/Environment/hd_env_UNI_225_PaperChest/normal/lod3/hd_env_UNI_225_PaperCoins_01</parent>
+	<extent>380.000000</extent>
+	<visibilityBox>
+		<min>-11.974155 0.026363 -9.461376</min>
+		<max>11.509495 12.205371 11.420764</max>
+	</visibilityBox>
+	<nodefullVisual>content/Environment/hd_env_UNI_225_PaperChest/normal/lod2/hd_env_UNI_225_PaperCoins_01</nodefullVisual>
+</root>

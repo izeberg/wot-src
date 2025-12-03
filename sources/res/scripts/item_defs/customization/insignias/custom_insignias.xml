@@ -991,4 +991,48 @@
 			<texture>gui/maps/vehicles/decals/insignia/custom/wci_3.dds</texture>
 		</insignia>
 	</itemGroup>
+	<itemGroup>
+		<name>NY 2026</name>
+		<userString>#vehicle_customization:insignias/special</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>insignias 50g notInShop</priceGroup>
+		<tags>hiddenInUI</tags>
+		<insignia>
+			<id>100</id>
+			<atlas>gui/maps/vehicles/decals/insignia/custom/gun_ny2026_1.dds</atlas>
+			<alphabet>gui/maps/vehicles/decals/insignia/custom/gun_ny2026_1.xml</alphabet>
+			<texture>gui/maps/vehicles/decals/insignia/custom/gun_ny2026_1_3.dds</texture>
+		</insignia>
+		<insignia>
+			<id>101</id>
+			<atlas>gui/maps/vehicles/decals/insignia/custom/gun_ny2026_4.dds</atlas>
+			<alphabet>gui/maps/vehicles/decals/insignia/custom/gun_ny2026_4.xml</alphabet>
+			<texture>gui/maps/vehicles/decals/insignia/custom/gun_ny2026_4_3.dds</texture>
+		</insignia>
+		<insignia>
+			<id>102</id>
+			<atlas>gui/maps/vehicles/decals/insignia/custom/gun_ny2026_6.dds</atlas>
+			<alphabet>gui/maps/vehicles/decals/insignia/custom/gun_ny2026_6.xml</alphabet>
+			<texture>gui/maps/vehicles/decals/insignia/custom/gun_ny2026_6_3.dds</texture>
+		</insignia>
+		<insignia>
+			<id>103</id>
+			<atlas>gui/maps/vehicles/decals/insignia/custom/gun_ny2026_7.dds</atlas>
+			<alphabet>gui/maps/vehicles/decals/insignia/custom/gun_ny2026_7.xml</alphabet>
+			<texture>gui/maps/vehicles/decals/insignia/custom/gun_ny2026_7_3.dds</texture>
+		</insignia>
+		<insignia>
+			<id>104</id>
+			<atlas>gui/maps/vehicles/decals/insignia/custom/gun_ny2026_8.dds</atlas>
+			<alphabet>gui/maps/vehicles/decals/insignia/custom/gun_ny2026_8.xml</alphabet>
+			<texture>gui/maps/vehicles/decals/insignia/custom/gun_ny2026_8_3.dds</texture>
+		</insignia>
+		<insignia>
+			<id>105</id>
+			<atlas>gui/maps/vehicles/decals/insignia/custom/gun_ny2026_9.dds</atlas>
+			<alphabet>gui/maps/vehicles/decals/insignia/custom/gun_ny2026_9.xml</alphabet>
+			<texture>gui/maps/vehicles/decals/insignia/custom/gun_ny2026_9_3.dds</texture>
+		</insignia>
+	</itemGroup>
 </root>

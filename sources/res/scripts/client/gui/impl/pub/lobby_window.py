@@ -50,10 +50,11 @@ class LobbyNotificationWindow(LobbyWindow):
     __slots__ = ('__initialParent', )
     __appLoader = dependency.descriptor(IAppLoader)
 
-    def __init__(self, wndFlags=None, decorator=None, content=None, parent=None, layer=WindowLayer.UNDEFINED):
+    def __init__(self, wndFlags=None, decorator=None, content=None, parent=None, layer=WindowLayer.UNDEFINED, isModal=True):
         self.__initialParent = None
         flags = wndFlags or WindowFlags.SERVICE_WINDOW | WindowFlags.WINDOW_FULLSCREEN
-        flags = flags | WindowFlags.WINDOW_MODAL
+        if isModal:
+            flags = flags | WindowFlags.WINDOW_MODAL
         super(LobbyNotificationWindow, self).__init__(flags, decorator, content, parent, layer)
         return
 
@@ -65,4 +66,32 @@ class LobbyNotificationWindow(LobbyWindow):
 
     def _getParent(self, parent, content):
         self.__initialParent = super(LobbyNotificationWindow, self)._getParent(parent, content)
+        return
+
+
+class OverlayBehaviorFlags(object):
+    DEFAULT = 0
+    IS_EXCLUSIVE = 1
+    IS_REPEATABLE = 2
+
+
+class OverlayBehavior(object):
+    __slots__ = ('_flags', )
+
+    def __init__(self, flags=OverlayBehaviorFlags.DEFAULT):
+        super(OverlayBehavior, self).__init__()
+        self._flags = flags
+
+    @property
+    def isExclusive(self):
+        return self._flags & OverlayBehaviorFlags.IS_EXCLUSIVE > 0
+
+    @property
+    def isRepeatable(self):
+        return self._flags & OverlayBehaviorFlags.IS_REPEATABLE > 0
+
+    def close(self, window):
+        pass
+
+    def repeat(self):
         return

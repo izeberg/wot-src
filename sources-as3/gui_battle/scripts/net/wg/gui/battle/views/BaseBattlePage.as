@@ -170,8 +170,11 @@ package net.wg.gui.battle.views
             this.prebattleTimer.updateStage(param1,param2);
          }
          this.updatePrebattleTimerPosition(_loc3_);
-         this.damagePanel.x = 0;
-         this.damagePanel.y = param2 - this.damagePanel.initedHeight;
+         if(this.damagePanel)
+         {
+            this.damagePanel.x = 0;
+            this.damagePanel.y = param2 - this.damagePanel.initedHeight;
+         }
          if(this.battleTimer)
          {
             this.battleTimer.x = param1 - this.battleTimer.initedWidth;
@@ -203,7 +206,10 @@ package net.wg.gui.battle.views
          this.updateMinimapPosition();
          this.vehicleErrorMessageListPositionUpdate();
          this.playerMessageListPositionUpdate();
-         this.vehicleMessageList.updateStage();
+         if(this.vehicleMessageList)
+         {
+            this.vehicleMessageList.updateStage();
+         }
          this.vehicleMessageListPositionUpdate();
          this.sixthSense.x = _loc3_;
          this.sixthSense.y = param2 >> 2;
@@ -276,7 +282,10 @@ package net.wg.gui.battle.views
          {
             this.registerComponent(this.prebattleTimer,BATTLE_VIEW_ALIASES.PREBATTLE_TIMER);
          }
-         this.registerComponent(this.damagePanel,BATTLE_VIEW_ALIASES.DAMAGE_PANEL);
+         if(this.damagePanel)
+         {
+            this.registerComponent(this.damagePanel,BATTLE_VIEW_ALIASES.DAMAGE_PANEL);
+         }
          if(this.battleTimer)
          {
             this.registerComponent(this.battleTimer,BATTLE_VIEW_ALIASES.BATTLE_TIMER);

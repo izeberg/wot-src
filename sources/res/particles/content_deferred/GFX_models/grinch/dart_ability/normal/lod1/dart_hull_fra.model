@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>particles/content_deferred/GFX_models/grinch/dart_ability/normal/lod2/dart_hull_fra</parent>
+	<extent>70.000000</extent>
+	<visibilityBox>
+		<min>-1.415491 0.266443 -2.586002</min>
+		<max>1.383434 1.858711 4.081812</max>
+	</visibilityBox>
+	<nodefullVisual>particles/content_deferred/GFX_models/grinch/dart_ability/normal/lod1/dart_hull_fra</nodefullVisual>
+</root>

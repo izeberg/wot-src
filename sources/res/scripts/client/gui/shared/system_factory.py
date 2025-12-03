@@ -72,6 +72,8 @@ VIEWS_FOR_MONITORING = 70
 LIFECYCLE_HANDLED_SUB_VIEWS = 71
 BATTLE_BUTTON_MANUAL_CONTROL = 72
 PREBATTLE_CONTROL_MODE = 73
+SENIORITY_AWARD_FOLLOWERS = 74
+SENIORITY_AWARD_VIEW_CLASS = 75
 
 class _CollectEventsManager(object):
 
@@ -1098,3 +1100,27 @@ def registerPrebattleCtrlMode(bonusType, controlModes):
 
 def collectPrebattleCtrlMode():
     return __collectEM.handleEvent(PREBATTLE_CONTROL_MODE, ctx={'prebattleCtrlMode': {}})['prebattleCtrlMode']
+
+
+def registerSeniorityAwardFollowers(*args):
+
+    def onCollect(ctx):
+        ctx['seniorityAwardFollowers'].extend(args)
+
+    __collectEM.addListener(SENIORITY_AWARD_FOLLOWERS, onCollect)
+
+
+def collectSeniorityAwardFollowers():
+    return __collectEM.handleEvent(SENIORITY_AWARD_FOLLOWERS, ctx={'seniorityAwardFollowers': []})['seniorityAwardFollowers']
+
+
+def registerSeniorityAwardViewClass(cls):
+
+    def onCollect(ctx):
+        ctx['seniorityAwardViewClass'] = cls
+
+    __collectEM.addListener(SENIORITY_AWARD_VIEW_CLASS, onCollect)
+
+
+def collectSeniorityAwardViewClass():
+    return __collectEM.handleEvent(SENIORITY_AWARD_VIEW_CLASS, ctx={}).get('seniorityAwardViewClass')

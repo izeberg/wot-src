@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<htmlTemplates>
+		<GrinchBattleResults>
+			<type>battleResult</type>
+			<icon>BattleResultIcon</icon>
+			<bgIcon>BgGrinchResultIcon</bgIcon>
+			<buttonsLayout>
+				<button>
+					<type>submit</type>
+					<label>_(#messenger:serviceChannelMessages/battleResults/button)</label>
+					<action>showBattleResults</action>
+				</button>
+			</buttonsLayout>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#messenger:serviceChannelMessages/battleResults/ended)&lt;/font&gt;
+&lt;font color=&apos;#929290&apos;&gt;_(#grinch.grinch_messenger:serviceChannelMessages/grinchBattleResults/eventName)&lt;/font&gt;
+&lt;font color=&apos;#929290&apos;&gt;_(#grinch.grinch_messenger:serviceChannelMessages/grinchBattleResults/battle): %(arenaName)s&lt;/font&gt;
+&lt;font color=&apos;#929290&apos;&gt;_(#grinch.grinch_messenger:serviceChannelMessages/grinchBattleResults/tanks): %(vehicleNames)s&lt;/font&gt;
+&lt;font color=&apos;#929290&apos;&gt;_(#grinch.grinch_messenger:serviceChannelMessages/grinchBattleResults/progressionPoints): &lt;font color=&apos;#C5CFCF&apos;&gt;%(progressionPoints)s&lt;/font&gt;&lt;/font&gt;</message>
+		</GrinchBattleResults>
+		<GrinchCongratulationsMessage>
+			<priority>medium</priority>
+			<type>grey</type>
+			<icon>InformationIcon</icon>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#grinch.grinch_messenger:serviceChannelMessages/congratulations/title)&lt;/font&gt;
+&lt;font color=&apos;#8C8C7E&apos;&gt;_(#grinch.grinch_messenger:serviceChannelMessages/congratulations/body)&lt;/font&gt; &lt;font color=&apos;#F9EFC7&apos;&gt;&quot;%(medal)s&quot;&lt;/font&gt;</message>
+		</GrinchCongratulationsMessage>
+		<GrinchEventSuspendedMessage>
+			<priority>medium</priority>
+			<type>grey</type>
+			<icon>ErrorIcon</icon>
+			<filters>
+				<filter>
+					<name>glow</name>
+					<color>EA5200</color>
+				</filter>
+				<filter>
+					<name>dropshadow</name>
+					<color>
+						000000
+						<!--BW_String-->
+					</color>
+				</filter>
+			</filters>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#grinch.grinch_messenger:serviceChannelMessages/eventName)&lt;/font&gt;
+&lt;font color=&apos;#8C8C7E&apos;&gt;_(#grinch.grinch_messenger:serviceChannelMessages/grinchEventSuspendedMessage/body)&lt;/font&gt;</message>
+		</GrinchEventSuspendedMessage>
+		<GrinchEventResumedMessage>
+			<priority>medium</priority>
+			<type>grey</type>
+			<icon>InformationIcon</icon>
+			<filters>
+				<filter>
+					<name>glow</name>
+					<color>EA5200</color>
+				</filter>
+				<filter>
+					<name>dropshadow</name>
+					<color>
+						000000
+						<!--BW_String-->
+					</color>
+				</filter>
+			</filters>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#grinch.grinch_messenger:serviceChannelMessages/eventName)&lt;/font&gt;
+&lt;font color=&apos;#929290&apos;&gt;_(#grinch.grinch_messenger:serviceChannelMessages/grinchEventResumedMessage/body)&lt;/font&gt;</message>
+		</GrinchEventResumedMessage>
+		<GrinchBattlesFinishMessage>
+			<priority>high</priority>
+			<type>grey</type>
+			<icon>InformationIcon</icon>
+			<filters>
+				<filter>
+					<name>glow</name>
+					<color>EA5200</color>
+				</filter>
+				<filter>
+					<name>dropshadow</name>
+					<color>
+						000000
+						<!--BW_String-->
+					</color>
+				</filter>
+			</filters>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#grinch.grinch_messenger:serviceChannelMessages/grinchBattlesFinishMessage/header)&lt;/font&gt;
+&lt;font color=&apos;#8C8C7E&apos;&gt;_(#grinch.grinch_messenger:serviceChannelMessages/grinchBattlesFinishMessage/body)&lt;/font&gt; &lt;font color=&apos;#D6D7D4&apos;&gt;%(date)s&lt;/font&gt;</message>
+		</GrinchBattlesFinishMessage>
+		<GrinchEventStartMessage>
+			<priority>high</priority>
+			<type>grey</type>
+			<icon>InformationIcon</icon>
+			<filters>
+				<filter>
+					<name>glow</name>
+					<color>EA5200</color>
+				</filter>
+				<filter>
+					<name>dropshadow</name>
+					<color>
+						000000
+						<!--BW_String-->
+					</color>
+				</filter>
+			</filters>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#grinch.grinch_messenger:serviceChannelMessages/grinchEventStartMessage/header)&lt;/font&gt;
+&lt;font color=&apos;#8C8C7E&apos;&gt;_(#grinch.grinch_messenger:serviceChannelMessages/grinchEventStartMessage/body)&lt;/font&gt;</message>
+			<buttonsLayout>
+				<button>
+					<type>submit</type>
+					<label>_(#grinch.grinch_messenger:common/toEvent)</label>
+					<action>grinchSwitchPrb</action>
+				</button>
+			</buttonsLayout>
+		</GrinchEventStartMessage>
+		<GrinchEventEndedMessage>
+			<priority>high</priority>
+			<type>grey</type>
+			<icon>InformationIcon</icon>
+			<filters>
+				<filter>
+					<name>glow</name>
+					<color>EA5200</color>
+				</filter>
+				<filter>
+					<name>dropshadow</name>
+					<color>
+						000000
+						<!--BW_String-->
+					</color>
+				</filter>
+			</filters>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#grinch.grinch_messenger:serviceChannelMessages/grinchEventEndMessage/header)&lt;/font&gt;
+&lt;font color=&apos;#8C8C7E&apos;&gt;_(#grinch.grinch_messenger:serviceChannelMessages/grinchEventEndMessage/body)&lt;/font&gt;</message>
+		</GrinchEventEndedMessage>
+	</htmlTemplates>
+</root>

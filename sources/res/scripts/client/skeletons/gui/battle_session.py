@@ -509,6 +509,9 @@ class IArenaDataProvider(object):
     def getPlayerVehicleID(self, forceUpdate=False):
         raise NotImplementedError
 
+    def isVehiclePresented(self, vID):
+        raise NotImplementedError
+
     def getVehicleInfo(self, vID=None):
         raise NotImplementedError
 

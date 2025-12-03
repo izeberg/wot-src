@@ -6,8 +6,10 @@ from CurrentVehicle import HeroTankPreviewAppearance
 from advanced_achievements_client.constants import TROPHIES_ACHIEVEMENT_ID
 from constants import GameSeasonType, RentType
 from debug_utils import LOG_WARNING
-from frameworks.wulf import ViewFlags, Window, WindowFlags, WindowLayer, WindowStatus
+from frameworks.wulf import ViewFlags, Window, WindowFlags, WindowLayer, WindowStatus, ViewStatus
 from gui import GUI_SETTINGS, DialogsInterface, SystemMessages
+from gui.impl.lobby.gf_notifications import pushGFNotification
+from gui.impl.lobby.gf_notifications.constants import GFNotificationTemplates
 from gui.Scaleform.daapi.settings.views import VIEW_ALIAS
 from gui.Scaleform.daapi.view.dialogs import DIALOG_BUTTON_ID, I18nConfirmDialogMeta, I18nInfoDialogMeta
 from gui.Scaleform.daapi.view.dialogs.ConfirmModuleMeta import SellModuleMeta
@@ -60,16 +62,18 @@ from items import vehicles as vehicles_core
 from nations import NAMES
 from shared_utils import first
 from skeletons.gui.app_loader import IAppLoader
-from skeletons.gui.game_control import IBattlePassController, IBoostersController, IBrowserController, IClanNotificationController, ICollectionsSystemController, IHeroTankController, IMarathonEventsController, IReferralProgramController, ILimitedUIController
+from skeletons.gui.game_control import IBattlePassController, IBoostersController, IBrowserController, IClanNotificationController, ICollectionsSystemController, IHeroTankController, ILimitedUIController, IMarathonEventsController, IReferralProgramController
 from skeletons.gui.goodies import IGoodiesCache
 from skeletons.gui.impl import IGuiLoader, INotificationWindowController
 from skeletons.gui.lobby_context import ILobbyContext
 from skeletons.gui.pet_system import IPetSystemController
 from skeletons.gui.shared import IItemsCache
+from skeletons.new_year import IFriendServiceController, INewYearController
 from soft_exception import SoftException
 from wg_async import wg_async, wg_await
 if typing.TYPE_CHECKING:
     from typing import Callable, Dict, Generator, Iterable, List, Union, Optional
+    from gui.impl.lobby.new_year.atmosphere_level_up.ho_level_up_view import HOAtmosphereLevelUpView
     from gui.marathon.marathon_event import MarathonEvent
     from uilogging.wot_plus.logging_constants import WotPlusInfoPageSource
     from gui.impl.lobby.crew.widget.crew_widget import BuildedMessage
@@ -116,6 +120,12 @@ def showRankedPrimeTimeWindow():
 def showMissionHubIntroWindow(header, icon, description, buttonText=None):
     from gui.impl.lobby.user_missions.hub.mission_hub_intro_view import MissionHubIntroWindow
     window = MissionHubIntroWindow(header, icon, description, buttonText)
+    window.load()
+
+
+def showHOResourcesIntro():
+    from gui.impl.lobby.user_missions.hub.ho_resources_intro_view import HOResourcesIntroWindow
+    window = HOResourcesIntroWindow()
     window.load()
 
 
@@ -864,6 +874,120 @@ def showBubbleTooltip(msg):
     g_eventBus.handleEvent(events.BubbleTooltipEvent(events.BubbleTooltipEvent.SHOW, msg), scope=EVENT_BUS_SCOPE.LOBBY)
 
 
+def showLootBoxEntry():
+    from skeletons.gui.game_control import ILootBoxSystemController
+    from gui.lootbox_system.base.common import Views, ViewID
+    lootBoxesCtrl = dependency.instance(ILootBoxSystemController)
+    Views.load(ViewID.MAIN, eventName=lootBoxesCtrl.mainEntryPoint)
+
+
+@dependency.replace_none_kwargs(notificationMgr=INotificationWindowController, nyController=INewYearController)
+def showCelebrityAnimationWindow(justReceived, previewType, notificationMgr=None, nyController=None):
+    if not nyController.isEnabled():
+        return
+    from gui.impl.lobby.new_year.challenge.ho_celebrity_animation_view import HOCelebrityAnimationWindow
+    window = HOCelebrityAnimationWindow(justReceived, previewType)
+    notificationMgr.append(WindowNotificationCommand(window))
+
+
+def pushNYLevelUpMessage(data):
+    pushGFNotification(GFNotificationTemplates.HO_RECEIVING_AWARDS, data)
+
+
+def pushNYChallengeRewardsMessage(data):
+    pushGFNotification(GFNotificationTemplates.HO_CHALLENGE_REWARDS, data)
+
+
+def pushNYAttached3DRewardsMessage(data):
+    pushGFNotification(GFNotificationTemplates.HO_ATTACHED_3D_REWARDS, data)
+
+
+def pushNYQuestRewardsMessage(data):
+    pushGFNotification(GFNotificationTemplates.HO_QUEST_REWARDS, data)
+
+
+def pushNYPiggyBankSingleRewardMessage(data):
+    pushGFNotification(GFNotificationTemplates.HO_PIGGY_BANK_ONE_REWARD, data)
+
+
+def pushNYPiggyBankMultipleRewardsMessage(data):
+    pushGFNotification(GFNotificationTemplates.HO_PIGGY_BANK_MULTIPLE_REWARDS, data)
+
+
+@dependency.replace_none_kwargs(lobbyCtx=ILobbyContext)
+def showHolidayOpsLootBoxBuyWindow(lobbyCtx=None):
+    if not lobbyCtx.getServerSettings().isLootBoxesEnabled():
+        _logger.debug('LootBoxes are disabled on server. Nothing will be shown!')
+        return
+    from gui.lootbox_system.base.utils import getShopOverlayUrl
+    showBrowserOverlayView(getShopOverlayUrl('newYear_premium'), VIEW_ALIAS.OVERLAY_WEB_STORE)
+
+
+def showAboutEvent():
+    url = GUI_SETTINGS.newYearInfo.get('aboutEventURL')
+    g_eventBus.handleEvent(events.OpenLinkEvent(events.OpenLinkEvent.SPECIFIED, url))
+
+
+@adisp.adisp_process
+@dependency.replace_none_kwargs(lobbyCtx=ILobbyContext)
+def showLootBoxExternalLink(linkName, lobbyCtx=None):
+    shopConfig = lobbyCtx.getServerSettings().getLootBoxShop()
+    rawUrl = shopConfig.get(linkName, '')
+    if not rawUrl:
+        _logger.warning('No %s URL is specified. Nothing will be shown!', linkName)
+        return
+    url = yield URLMacros().parse(rawUrl)
+    g_eventBus.handleEvent(events.OpenLinkEvent(events.OpenLinkEvent.SPECIFIED, url))
+
+
+def showNYHangarNameSelectionWindow(*args):
+    from gui.impl.lobby.new_year.hangar_name.hangar_name_view import HangarNameViewWindow
+    hangarNameWindow = HangarNameViewWindow(*args)
+    hangarNameWindow.load()
+
+
+def showNYLevelUpWindow(useQueue=True, *args, **kwargs):
+    from gui.impl.lobby.new_year.atmosphere_level_up.ho_level_up_view import HOLevelUpWindow
+    holidayOpsLevelUpWindow = findAndLoadWindow(useQueue, HOLevelUpWindow, *args, **kwargs)
+    levelUpView = holidayOpsLevelUpWindow.content
+    if levelUpView is not None and levelUpView.viewStatus in (ViewStatus.CREATED, ViewStatus.LOADING, ViewStatus.LOADED):
+        levelUpView.appendRewards(*args, **kwargs)
+    return
+
+
+def showHOPetRewardWindow(petID, useQueue=True):
+    from gui.impl.lobby.new_year.reward.ho_pet_reward import HOPetRewardWindow
+    findAndLoadWindow(useQueue, HOPetRewardWindow, petID)
+
+
+def showSurpriseGiftWindow():
+    uiLoader = dependency.instance(IGuiLoader)
+    contentResId = R.views.mono.holiday_ops.surprise_gift_view()
+    if uiLoader.windowsManager.getViewByLayoutID(contentResId) is None:
+        from gui.impl.lobby.new_year.surprise_gift_view.surprise_gift_view import SurpriseGiftWindow
+        window = SurpriseGiftWindow()
+        window.load()
+    return
+
+
+def showGiftMachineTokenPurchaseDialog(resourceType, amount):
+    from gui.impl.lobby.new_year.dialogs.gift_machine.gift_machine_token_purchase_dialog import GiftMachineCoinPurchaseDialogView
+    window = LobbyWindow(content=GiftMachineCoinPurchaseDialogView(R.views.mono.holiday_ops.dialogs.gift_machine.gift_machine_coin_purchase_dialog(), resourceType=resourceType, amount=amount), wndFlags=WindowFlags.WINDOW | WindowFlags.WINDOW_FULLSCREEN)
+    window.load()
+
+
+def showBundlePurchaseDialog(parent=None, *args, **kwargs):
+    from gui.impl.lobby.new_year.challenge.ny_challenge_bundle_purchase_view import BundlePurchaseDialogWindow
+    window = BundlePurchaseDialogWindow(parent=parent, *args, **kwargs)
+    window.load()
+
+
+def showPetPurchaseDialog(parent=None, *args, **kwargs):
+    from gui.impl.lobby.new_year.challenge.ho_pet_purchase_overlay import PetPurchaseOverlayWindow
+    window = PetPurchaseOverlayWindow(parent=parent, *args, **kwargs)
+    window.load()
+
+
 def showReferralProgramWindow(url=None):
     referralController = dependency.instance(IReferralProgramController)
     if url is None:
@@ -936,7 +1060,7 @@ def showProgressiveRewardAwardWindow(bonuses, specialRewardType, currentStep, no
 @dependency.replace_none_kwargs(notificationMgr=INotificationWindowController)
 def showSeniorityRewardVehiclesWindow(vehicles=None, fromEntryPoint=True, notificationMgr=None):
     from gui.impl.lobby.seniority_awards.seniority_awards_vehicles_view import SeniorityRewardVehiclesWindow
-    viewID = R.views.lobby.seniority_awards.SeniorityVehiclesAwardsView()
+    viewID = R.views.mono.seniority_awards.vehicle_rewards()
     uiLoader = dependency.instance(IGuiLoader)
     if uiLoader.windowsManager.getViewByLayoutID(viewID) is None:
         window = SeniorityRewardVehiclesWindow(viewID, vehicles, fromEntryPoint)
@@ -949,7 +1073,7 @@ def showSeniorityRewardVehiclesWindow(vehicles=None, fromEntryPoint=True, notifi
 @dependency.replace_none_kwargs(notificationMgr=INotificationWindowController)
 def showSeniorityRewardAwardWindow(data, notificationMgr=None):
     from gui.impl.lobby.seniority_awards.seniority_reward_award_view import SeniorityRewardAwardWindow
-    viewID = R.views.lobby.seniority_awards.SeniorityAwardsView()
+    viewID = R.views.mono.seniority_awards.rewards()
     uiLoader = dependency.instance(IGuiLoader)
     if uiLoader.windowsManager.getViewByLayoutID(viewID) is None:
         window = SeniorityRewardAwardWindow(data, viewID)
@@ -1098,6 +1222,15 @@ def showDynamicButtonInfoDialogBuilder(resources, icon, formattedMessage, parent
     builder.setFormattedMessage(formattedMessage)
     result = yield wg_await(dialogs.showSimple(builder.build(parent)))
     raise AsyncReturn(result)
+
+
+def showHolidayOpsMainView(objectName, *args, **kwargs):
+    from gui.impl.lobby.new_year.states import STATES_BY_OBJECT, FRIEND_STATES_BY_OBJECT
+    friendService = dependency.instance(IFriendServiceController)
+    statesMap = STATES_BY_OBJECT if not friendService.isInFriendHangar else FRIEND_STATES_BY_OBJECT
+    state = statesMap.get(objectName)
+    if state:
+        state.goTo(objectName=objectName, *args, **kwargs)
 
 
 @wg_async
@@ -1326,6 +1459,15 @@ def showActiveTestConfirmDialog(startTime, finishTime, link, parent=None):
     result = yield wg_await(dialogs.showSingleDialog(layoutID=R.views.lobby.matchmaker.ActiveTestConfirmView(), wrappedViewClass=ActiveTestConfirmView, startTime=startTime, finishTime=finishTime, link=link, parent=parent))
     isOK = result.result
     raise AsyncReturn(isOK)
+
+
+@dependency.replace_none_kwargs(notificationMgr=INotificationWindowController, nyController=INewYearController)
+def showCelebrityStories(level, justReceived, notificationMgr=None, nyController=None):
+    if not nyController.isEnabled():
+        return
+    from gui.impl.lobby.new_year.challenge.ho_challenge_stories_view import ChallengeStoriesViewWindow
+    window = ChallengeStoriesViewWindow(level, justReceived)
+    notificationMgr.append(WindowNotificationCommand(window))
 
 
 def showBattlePassRewardsSelectionWindow(chapterID=0, level=0, onRewardsReceivedCallback=None, onCloseCallback=None):
@@ -1991,6 +2133,21 @@ def showVanityRarityAwardScreen(element):
     window.load()
 
 
+def showHOGiftMachineLootListView():
+    from gui.impl.lobby.new_year.gift_machine.ny_gift_machine_loot_list_view import NyGiftMachineLootListWindow
+    from gui.impl.lobby.new_year.gift_machine.helper import isGiftMachineAnimationPlaying
+    if isGiftMachineAnimationPlaying():
+        return
+    else:
+        uiLoader = dependency.instance(IGuiLoader)
+        contentResId = R.views.mono.holiday_ops.ho_gift_machine_loot_list()
+        fullScreenWindows = uiLoader.windowsManager.findWindows(lambda w: w.layer == WindowLayer.FULLSCREEN_WINDOW)
+        if uiLoader.windowsManager.getViewByLayoutID(contentResId) is None and not fullScreenWindows:
+            window = NyGiftMachineLootListWindow()
+            window.load()
+        return
+
+
 def showViewByAlias(alias, parent=None, **kwargs):
     g_eventBus.handleEvent(events.LoadViewEvent(SFViewLoadParams(alias, parent=parent), **kwargs), scope=EVENT_BUS_SCOPE.LOBBY)
 
@@ -2117,3 +2274,18 @@ def showPetEventView(ctx):
 def showPetInfoPage():
     url = GUI_SETTINGS.petSystemInfoPage
     showBrowserOverlayView(url, VIEW_ALIAS.WEB_VIEW_TRANSPARENT)
+
+
+def showHOInfoViewWindow(*args, **kwargs):
+    from gui.impl.lobby.new_year.info_page.ho_info_view import HOInfoViewWindow
+    from gui.impl.lobby.new_year.gift_machine.helper import isGiftMachineAnimationPlaying
+    if isGiftMachineAnimationPlaying():
+        return
+    else:
+        uiLoader = dependency.instance(IGuiLoader)
+        contentResId = R.views.mono.holiday_ops.info_view()
+        fullScreenWindows = uiLoader.windowsManager.findWindows(lambda w: w.layer == WindowLayer.FULLSCREEN_WINDOW)
+        if uiLoader.windowsManager.getViewByLayoutID(contentResId) is None and not fullScreenWindows:
+            window = HOInfoViewWindow(*args, **kwargs)
+            window.load()
+        return

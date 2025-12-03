@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/3D_Customization/Cus_147_CS_EnigmaMachine/normal/lod2/Cus_147_CS_EnigmaMachine_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.350362 -0.002804 -0.650779</min>
+		<max>0.047039 0.319797 0.594514</max>
+	</visibilityBox>
+	<nodefullVisual>content/3D_Customization/Cus_147_CS_EnigmaMachine/normal/lod1/Cus_147_CS_EnigmaMachine_01</nodefullVisual>
+	<tank>true</tank>
+</root>

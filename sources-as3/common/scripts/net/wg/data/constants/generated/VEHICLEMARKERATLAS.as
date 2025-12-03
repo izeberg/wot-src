@@ -2867,6 +2867,112 @@ package net.wg.data.constants.generated
       
       public static const ROLE_SPG:String = "role_SPG";
       
+      public static const DAMAGE_BAR_AMBER:String = "damageBar_amber";
+      
+      public static const DAMAGE_BAR_CYAN:String = "damageBar_cyan";
+      
+      public static const DAMAGE_BAR_GREY:String = "damageBar_grey";
+      
+      public static const DAMAGE_BAR_GRINCHGOLD:String = "damageBar_grinchgold";
+      
+      public static const DAMAGE_BAR_MAGENTA:String = "damageBar_magenta";
+      
+      public static const AMBER_AT_SPG:String = "amber_AT-SPG";
+      
+      public static const AMBER_AT_SPG_DEAD:String = "amber_AT-SPG_dead";
+      
+      public static const AMBER_HEAVY_TANK:String = "amber_heavyTank";
+      
+      public static const AMBER_HEAVY_TANK_DEAD:String = "amber_heavyTank_dead";
+      
+      public static const AMBER_LIGHT_TANK:String = "amber_lightTank";
+      
+      public static const AMBER_LIGHT_TANK_DEAD:String = "amber_lightTank_dead";
+      
+      public static const AMBER_MEDIUM_TANK:String = "amber_mediumTank";
+      
+      public static const AMBER_MEDIUM_TANK_DEAD:String = "amber_mediumTank_dead";
+      
+      public static const AMBER_SPG:String = "amber_SPG";
+      
+      public static const AMBER_SPG_DEAD:String = "amber_SPG_dead";
+      
+      public static const CYAN_AT_SPG:String = "cyan_AT-SPG";
+      
+      public static const CYAN_AT_SPG_DEAD:String = "cyan_AT-SPG_dead";
+      
+      public static const CYAN_HEAVY_TANK:String = "cyan_heavyTank";
+      
+      public static const CYAN_HEAVY_TANK_DEAD:String = "cyan_heavyTank_dead";
+      
+      public static const CYAN_LIGHT_TANK:String = "cyan_lightTank";
+      
+      public static const CYAN_LIGHT_TANK_DEAD:String = "cyan_lightTank_dead";
+      
+      public static const CYAN_MEDIUM_TANK:String = "cyan_mediumTank";
+      
+      public static const CYAN_MEDIUM_TANK_DEAD:String = "cyan_mediumTank_dead";
+      
+      public static const CYAN_SPG:String = "cyan_SPG";
+      
+      public static const CYAN_SPG_DEAD:String = "cyan_SPG_dead";
+      
+      public static const GREY_AT_SPG:String = "grey_AT-SPG";
+      
+      public static const GREY_AT_SPG_DEAD:String = "grey_AT-SPG_dead";
+      
+      public static const GREY_HEAVY_TANK:String = "grey_heavyTank";
+      
+      public static const GREY_HEAVY_TANK_DEAD:String = "grey_heavyTank_dead";
+      
+      public static const GREY_LIGHT_TANK:String = "grey_lightTank";
+      
+      public static const GREY_LIGHT_TANK_DEAD:String = "grey_lightTank_dead";
+      
+      public static const GREY_MEDIUM_TANK:String = "grey_mediumTank";
+      
+      public static const GREY_MEDIUM_TANK_DEAD:String = "grey_mediumTank_dead";
+      
+      public static const GREY_SPG:String = "grey_SPG";
+      
+      public static const GREY_SPG_DEAD:String = "grey_SPG_dead";
+      
+      public static const GRINCHGOLD_HEAVY_TANK:String = "grinchgold_heavyTank";
+      
+      public static const GRINCHGOLD_HEAVY_TANK_DEAD:String = "grinchgold_heavyTank_dead";
+      
+      public static const GRINCHGOLD_LIGHT_TANK:String = "grinchgold_lightTank";
+      
+      public static const GRINCHGOLD_LIGHT_TANK_DEAD:String = "grinchgold_lightTank_dead";
+      
+      public static const GRINCHGOLD_MEDIUM_TANK:String = "grinchgold_mediumTank";
+      
+      public static const GRINCHGOLD_MEDIUM_TANK_DEAD:String = "grinchgold_mediumTank_dead";
+      
+      public static const GRINCHGOLD_SPG:String = "grinchgold_SPG";
+      
+      public static const GRINCHGOLD_SPG_DEAD:String = "grinchgold_SPG_dead";
+      
+      public static const MAGENTA_AT_SPG:String = "magenta_AT-SPG";
+      
+      public static const MAGENTA_AT_SPG_DEAD:String = "magenta_AT-SPG_dead";
+      
+      public static const MAGENTA_HEAVY_TANK:String = "magenta_heavyTank";
+      
+      public static const MAGENTA_HEAVY_TANK_DEAD:String = "magenta_heavyTank_dead";
+      
+      public static const MAGENTA_LIGHT_TANK:String = "magenta_lightTank";
+      
+      public static const MAGENTA_LIGHT_TANK_DEAD:String = "magenta_lightTank_dead";
+      
+      public static const MAGENTA_MEDIUM_TANK:String = "magenta_mediumTank";
+      
+      public static const MAGENTA_MEDIUM_TANK_DEAD:String = "magenta_mediumTank_dead";
+      
+      public static const MAGENTA_SPG:String = "magenta_SPG";
+      
+      public static const MAGENTA_SPG_DEAD:String = "magenta_SPG_dead";
+      
       public static const GERMANY_G1003_PZ_V_PANTHER_SM_SCC:String = "germany-G1003_PzV_Panther_SM_SCC";
       
       public static const GERMANY_G1003_PZ_V_PANTHER_STORY_MODE_D_DAY:String = "germany-G1003_PzV_Panther_StoryModeDDay";
@@ -2909,7 +3015,7 @@ package net.wg.data.constants.generated
       
       public static const VEHICLE_LEVEL_ENUM:Array = [VEHICLE_LEVEL_1,VEHICLE_LEVEL_10,VEHICLE_LEVEL_11,VEHICLE_LEVEL_2,VEHICLE_LEVEL_3,VEHICLE_LEVEL_4,VEHICLE_LEVEL_5,VEHICLE_LEVEL_6,VEHICLE_LEVEL_7,VEHICLE_LEVEL_8,VEHICLE_LEVEL_9];
       
-      public static const DAMAGE_BAR_ENUM:Array = [DAMAGE_BAR_GOLD,DAMAGE_BAR_GREEN,DAMAGE_BAR_ORANGE,DAMAGE_BAR_PURPLE,DAMAGE_BAR_RED,DAMAGE_BAR_YELLOW];
+      public static const DAMAGE_BAR_ENUM:Array = [DAMAGE_BAR_GOLD,DAMAGE_BAR_GREEN,DAMAGE_BAR_ORANGE,DAMAGE_BAR_PURPLE,DAMAGE_BAR_RED,DAMAGE_BAR_YELLOW,DAMAGE_BAR_AMBER,DAMAGE_BAR_CYAN,DAMAGE_BAR_GREY,DAMAGE_BAR_GRINCHGOLD,DAMAGE_BAR_MAGENTA];
       
       public static const PURPLE_ENUM:Array = [PURPLE_EXPLOSION,PURPLE_FIRE,PURPLE_AT_SPG,PURPLE_AT_SPG_ELITE,PURPLE_AT_SPG_HUNTED,PURPLE_BOSS,PURPLE_HEAVY_AT_SPG,PURPLE_HEAVY_AT_SPG_HUNTED,PURPLE_HEAVY_SPG,PURPLE_HEAVY_SPG_HUNTED,PURPLE_HEAVY_TANK,PURPLE_HEAVY_TANK_ELITE,PURPLE_HEAVY_TANK_HUNTED,PURPLE_LIGHT_TANK,PURPLE_LIGHT_TANK_ELITE,PURPLE_LIGHT_TANK_HUNTED,PURPLE_MEDIUM_AT_SPG,PURPLE_MEDIUM_AT_SPG_HUNTED,PURPLE_MEDIUM_SPG,PURPLE_MEDIUM_SPG_HUNTED,PURPLE_MEDIUM_TANK,PURPLE_MEDIUM_TANK_ELITE,PURPLE_MEDIUM_TANK_HUNTED,PURPLE_SPG,PURPLE_SPG_ELITE,PURPLE_SPG_HUNTED];
       

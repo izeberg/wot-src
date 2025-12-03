@@ -1,5 +1,6 @@
 from collections import OrderedDict
-from account_helpers.AccountSettings import Winback
+from account_helpers import AccountSettings
+from account_helpers.AccountSettings import Winback, NY_DAILY_QUESTS_VISITED
 from PlayerEvents import g_playerEvents
 from config_schemas.umg_config import umgConfigSchema
 from gui.impl.gen import R
@@ -11,17 +12,19 @@ from gui.impl.lobby.user_missions.hub.update_children_mixin import UpdateChildre
 from gui.impl.pub.view_component import ViewComponent
 from gui.shared import EVENT_BUS_SCOPE
 from gui.shared import g_eventBus
-from gui.shared.event_dispatcher import showWinbackIntroView
+from gui.shared.event_dispatcher import showWinbackIntroView, showHOResourcesIntro
 from gui.shared.events import UserMissionsEvent
 from gui.winback.winback_helpers import getWinbackSetting, setWinbackSetting
 from helpers import dependency
 from skeletons.gui.game_control import IWinbackController
+from skeletons.new_year import INewYearController
 TABS = OrderedDict([
  (
   TabId.BASIC, BasicMissionsTab)])
 
 class HubView(ViewComponent[HubViewModel]):
     __winbackController = dependency.descriptor(IWinbackController)
+    __nyController = dependency.descriptor(INewYearController)
 
     def __init__(self, tabID, questId):
         self.__tabID = tabID
@@ -42,6 +45,8 @@ class HubView(ViewComponent[HubViewModel]):
     def __update(self, *_):
         if self.__winbackController.isProgressionAvailable() and not self.__isWinbackIntroShown():
             self.__showWinbackIntroScreen()
+        if self.__nyController.isEnabled() and not AccountSettings.getUIFlag(NY_DAILY_QUESTS_VISITED) and not self.__winbackController.isProgressionAvailable():
+            self.__showHoResourcesIntroScreen()
 
     def __showWinbackIntroScreen(self):
         showWinbackIntroView()
@@ -49,6 +54,10 @@ class HubView(ViewComponent[HubViewModel]):
 
     def __isWinbackIntroShown(self):
         return getWinbackSetting(Winback.INTRO_SHOWN)
+
+    def __showHoResourcesIntroScreen(self):
+        showHOResourcesIntro()
+        AccountSettings.setUIFlag(NY_DAILY_QUESTS_VISITED, True)
 
     def _updateTabs(self):
         with self.viewModel.transaction() as (vm):
@@ -70,7 +79,9 @@ class HubView(ViewComponent[HubViewModel]):
          (
           self.viewModel.onContentLayoutChanged, self.__onContentLayoutChanged),
          (
-          g_playerEvents.onConfigModelUpdated, self.__onConfigModelUpdated))
+          g_playerEvents.onConfigModelUpdated, self.__onConfigModelUpdated),
+         (
+          self.__nyController.onStateChanged, self.__update))
 
     def _getListeners(self):
         return (

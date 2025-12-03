@@ -41,10 +41,16 @@ class VehicleStylePreview(LobbySelectableView, VehicleBasePreviewMeta):
         g_currentPreviewVehicle.selectHeroTank(ctx.get('isHeroTank', False))
         self.__uiMetricsLogger = ShopVehicleStylePreviewMetricsLogger(self._style.intCD)
         self.__uiFlowLogger = ShopVehicleStylePreviewFlowLogger()
+        self.__destroyCallback = ctx.get('destroyCallback')
         return
 
     def closeView(self):
-        event_dispatcher.showHangar()
+        if self.__destroyCallback is not None:
+            self.__destroyCallback()
+            self.__destroyCallback = None
+        else:
+            event_dispatcher.showHangar()
+        return
 
     def onBackClick(self):
         if self.__backPreviewAlias and self.__backPreviewAlias == VIEW_ALIAS.LOBBY_STORE:
@@ -77,6 +83,9 @@ class VehicleStylePreview(LobbySelectableView, VehicleBasePreviewMeta):
         self.__hangarSpace.onSpaceCreate -= self.__onHangarCreateOrRefresh
         self.__heroTanksControl.setInteractive(True)
         g_eventBus.handleEvent(events.LobbySimpleEvent(events.LobbySimpleEvent.VEHICLE_PREVIEW_HIDDEN), scope=EVENT_BUS_SCOPE.LOBBY)
+        if self.__destroyCallback is not None:
+            self.__destroyCallback()
+            self.__destroyCallback = None
         super(VehicleStylePreview, self)._dispose()
         return
 

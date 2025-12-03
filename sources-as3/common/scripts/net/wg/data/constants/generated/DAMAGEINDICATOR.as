@@ -118,6 +118,10 @@ package net.wg.data.constants.generated
       public static const TURRET_CIRCLE:String = "turretCircle";
       
       public static const WHEEL_CIRCLE:String = "wheelCircle";
+      
+      public static const GRINCH_AT_SPG:String = "grinch_AT-SPG";
+      
+      public static const GRINCH_SPG:String = "grinch_SPG";
        
       
       public function DAMAGEINDICATOR()

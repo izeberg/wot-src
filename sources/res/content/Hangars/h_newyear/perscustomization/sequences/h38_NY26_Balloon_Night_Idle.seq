@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>5.866667</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Balloon_model</name>
+		<type>model</type>
+		<resource>content/Hangars/h38_newyear_2025/environment/normal/lod0/h38_NY26_Balloon_DayNight.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd1</identifier>
+			<property>selfIllumination</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>2.000000</value>
+				<inTangent>0.000000</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>CrystalShine</name>
+		<type>particle</type>
+		<resource>particles/Environment/hangar/h38_crystal_shine.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 -0.874756</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>tintColor</name>
+			<type>vector4</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 0.466667 0.000000 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>particleSize</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000</value>
+				<inTangent>0.000000</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Crystal</name>
+		<type>model</type>
+		<resource>particles/gpu_mesh/mesh/h38_Balloon_crystal.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>5.000000</duration>
+				<value>Balloon_model|root</value>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>h38_NY26_Balloon_DayNight:s_nd1</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 0.466667 0.000000 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property vector4</name>
+			<type>vector4</type>
+			<identifier>h38_NY26_Balloon_DayNight:s_nd1</identifier>
+			<property>lightMultipliers</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>10.000000 10.000000 10.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.666667</startTime>
+				<value>10.000000 10.000000 10.000000 0.000000</value>
+				<inTangent>-29.999998 -29.999998 -29.999998 0.000000</inTangent>
+				<outTangent>-29.999998 -29.999998 -29.999998 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.833333</startTime>
+				<value>0.000000 0.000000 0.000000 0.000000</value>
+				<inTangent>-29.999998 -29.999998 -29.999998 0.000000</inTangent>
+				<outTangent>-29.999998 -29.999998 -29.999998 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.333333</startTime>
+				<value>0.000000 0.000000 0.000000 0.000000</value>
+				<inTangent>29.999985 29.999985 29.999985 0.000000</inTangent>
+				<outTangent>29.999985 29.999985 29.999985 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.500000</startTime>
+				<value>10.000000 10.000000 10.000000 0.000000</value>
+				<inTangent>29.999985 29.999985 29.999985 0.000000</inTangent>
+				<outTangent>29.999985 29.999985 29.999985 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.200000</startTime>
+				<value>10.000000 10.000000 10.000000 0.000000</value>
+				<inTangent>-21.428570 -21.428570 -21.428570 0.000000</inTangent>
+				<outTangent>-21.428570 -21.428570 -21.428570 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.433333</startTime>
+				<value>0.000000 0.000000 0.000000 0.000000</value>
+				<inTangent>-21.428570 -21.428570 -21.428570 0.000000</inTangent>
+				<outTangent>-21.428570 -21.428570 -21.428570 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.600000</startTime>
+				<value>0.000000 0.000000 0.000000 0.000000</value>
+				<inTangent>29.999985 29.999985 29.999985 0.000000</inTangent>
+				<outTangent>29.999985 29.999985 29.999985 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.766667</startTime>
+				<value>10.000000 10.000000 10.000000 0.000000</value>
+				<inTangent>29.999985 29.999985 29.999985 0.000000</inTangent>
+				<outTangent>29.999985 29.999985 29.999985 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.500000</startTime>
+				<value>10.000000 10.000000 10.000000 0.000000</value>
+				<inTangent>-30.000029 -30.000029 -30.000029 0.000000</inTangent>
+				<outTangent>-30.000029 -30.000029 -30.000029 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.666667</startTime>
+				<value>0.000000 0.000000 0.000000 0.000000</value>
+				<inTangent>-30.000029 -30.000029 -30.000029 0.000000</inTangent>
+				<outTangent>-30.000029 -30.000029 -30.000029 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.833333</startTime>
+				<value>0.000000 0.000000 0.000000 0.000000</value>
+				<inTangent>24.999964 24.999964 24.999964 0.000000</inTangent>
+				<outTangent>24.999964 24.999964 24.999964 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.033334</startTime>
+				<value>10.000000 10.000000 10.000000 0.000000</value>
+				<inTangent>24.999964 24.999964 24.999964 0.000000</inTangent>
+				<outTangent>24.999964 24.999964 24.999964 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.666667</startTime>
+				<value>10.000000 10.000000 10.000000 0.000000</value>
+				<inTangent>-25.000023 -25.000023 -25.000023 0.000000</inTangent>
+				<outTangent>-25.000023 -25.000023 -25.000023 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.866667</startTime>
+				<value>0.000000 0.000000 0.000000 0.000000</value>
+				<inTangent>-10.000031 -10.000031 -10.000031 0.000000</inTangent>
+				<outTangent>-10.000031 -10.000031 -10.000031 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.200000</startTime>
+				<value>10.000000 10.000000 10.000000 0.000000</value>
+				<inTangent>14.999992 14.999992 14.999992 0.000000</inTangent>
+				<outTangent>14.999992 14.999992 14.999992 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.666667</startTime>
+				<value>10.000000 10.000000 10.000000 0.000000</value>
+				<inTangent>-12.500011 -12.500011 -12.500011 0.000000</inTangent>
+				<outTangent>-12.500011 -12.500011 -12.500011 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.866667</startTime>
+				<value>5.000000 5.000000 5.000000 0.000000</value>
+				<inTangent>-25.000023 -25.000023 -25.000023 -0.000000</inTangent>
+				<outTangent>-25.000023 -25.000023 -25.000023 -0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property vector4</name>
+			<type>vector4</type>
+			<identifier>h38_NY26_Balloon_DayNight:s_nd1</identifier>
+			<property>diffuseUVSpeedAlphaOffset</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-1.000000 1.000000 1.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.433333</startTime>
+				<value>-1.000000 1.000000 1.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.100000</startTime>
+				<value>-1.000000 1.000000 1.000000 0.000000</value>
+				<inTangent>9.999986 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>9.999986 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.200000</startTime>
+				<value>1.000000 1.000000 1.000000 0.000000</value>
+				<inTangent>19.999971 -0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>19.999971 -0.000000 -0.000000 -0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Glow</name>
+		<type>particle</type>
+		<resource>particles/Environment/event_white_tiger/enemies/Waffentrager_E100_teleport/teleport_source_glow.eff</resource>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>6.000000</inTangent>
+				<outTangent>6.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.166667</startTime>
+				<value>1.000000</value>
+				<inTangent>3.000000</inTangent>
+				<outTangent>3.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.033334</startTime>
+				<value>1.000000</value>
+				<inTangent>-1.666668</inTangent>
+				<outTangent>-1.666668</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.333333</startTime>
+				<value>0.000000</value>
+				<inTangent>-3.333337</inTangent>
+				<outTangent>-3.333337</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>tintColor</name>
+			<type>vector4</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 0.466667 0.000000 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>opacity</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.200000</value>
+				<inTangent>0.000000</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emissionSize</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>particleSize</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.200000</value>
+				<inTangent>0.000000</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

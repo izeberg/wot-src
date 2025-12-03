@@ -92,7 +92,7 @@ class ACHangarMarkerView(ViewImpl):
         self._statesObserver = None
         return
 
-    def _setMarkerVisible(self, value):
+    def _setMarkerVisible(self, isVisible):
         pass
 
     def _canShowMarkers(self):

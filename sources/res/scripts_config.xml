@@ -250,6 +250,24 @@
 			<explosion_blacksand_small_GMM>
 				<texture>maps/fx/decal_blacksand_1_small_GMM.dds</texture>
 			</explosion_blacksand_small_GMM>
+			<crumpled_paper_01_AM>
+				<texture>maps/decals_pbs/crumpled_paper_01_AM.dds</texture>
+			</crumpled_paper_01_AM>
+			<crumpled_paper_01_NM>
+				<texture>maps/decals_pbs/crumpled_paper_01_NM.dds</texture>
+			</crumpled_paper_01_NM>
+			<crumpled_paper_01_GMM>
+				<texture>maps/decals_pbs/crumpled_paper_01_GMM.dds</texture>
+			</crumpled_paper_01_GMM>
+			<glue_on_paper_01_AM>
+				<texture>maps/decals_pbs/Splash_Goo_AM.dds</texture>
+			</glue_on_paper_01_AM>
+			<glue_on_paper_01_NM>
+				<texture>maps/decals_pbs/Splash_Goo_NM.dds</texture>
+			</glue_on_paper_01_NM>
+			<glue_on_paper_01_GMM>
+				<texture>maps/decals_pbs/Splash_Goo_GMM.dds</texture>
+			</glue_on_paper_01_GMM>
 		</textures>
 	</decal>
 	<camouflage>

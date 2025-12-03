@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/3D_Customization/Cus_55_ArmiesG_Gunskit/normal/lod2/Cus_55_ArmiesG_Gunskit_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.439565 0.000001 -0.621830</min>
+		<max>0.147378 0.439885 0.707617</max>
+	</visibilityBox>
+	<nodefullVisual>content/3D_Customization/Cus_55_ArmiesG_Gunskit/normal/lod1/Cus_55_ArmiesG_Gunskit_01</nodefullVisual>
+	<tank>true</tank>
+</root>

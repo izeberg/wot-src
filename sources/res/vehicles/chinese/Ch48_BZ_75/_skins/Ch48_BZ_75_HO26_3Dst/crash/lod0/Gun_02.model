@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodelessVisual>vehicles/chinese/Ch48_BZ_75/_skins/Ch48_BZ_75_HO26_3Dst/crash/lod0/Gun_02</nodelessVisual>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.424939 -0.435748 -1.709538</min>
+		<max>0.343264 0.251098 5.910366</max>
+	</visibilityBox>
+	<parent>vehicles/chinese/Ch48_BZ_75/_skins/Ch48_BZ_75_HO26_3Dst/crash/lod1/Gun_02</parent>
+	<extent>32.000000</extent>
+</root>

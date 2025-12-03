@@ -8,6 +8,7 @@ from Event import Event, EventManager
 from gui.pet_system.constants import PetPlaceName
 from pet_system_common.pet_constants import AnimationStateName, PetStateBehavior, PetStaticTrigger, PetTrigger, StorageStaticTrigger
 from skeletons.gui.pet_system import IPetSystemController
+from skeletons.new_year import IFriendServiceController
 PET_MOVE_TO_STORAGE_TIME_DELAY = 1
 PET_LOGIN_TIME_DELAY = 0
 
@@ -147,6 +148,7 @@ class PetPrefabProxy(CallbackDelayer):
 
 
 class StoragePrefabProxy(object):
+    friendService = dependency.descriptor(IFriendServiceController)
 
     def __init__(self, ctrl):
         self._ctrl = ctrl
@@ -158,7 +160,7 @@ class StoragePrefabProxy(object):
 
     @property
     def storageStaticTrigger(self):
-        if not self._ctrl.isEnabled:
+        if not self._ctrl.isEnabled or self.friendService.isInFriendHangar:
             return StorageStaticTrigger.EMPTY
         if not self._ctrl.haveActivePromotion() and not self._ctrl.getActivePet():
             return StorageStaticTrigger.DISABLED

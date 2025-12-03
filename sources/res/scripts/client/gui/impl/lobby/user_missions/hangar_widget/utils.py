@@ -41,6 +41,7 @@ class MissionItemPacker(object):
         fullQuestModel = questUIPacker.pack()
         isCompleted = fullQuestModel.getStatus().value == MISSIONS_STATES.COMPLETED
         model.setIsCompleted(isCompleted)
+        model.setIsLocked(raw.getData().get('meta', {}).get('locked', False))
         model.setAnimateCompletion(eventsCache.questsProgress.getQuestCompletionChanged(raw.getID()))
         model.setIcon(fullQuestModel.getIcon())
         preFormattedConditionModel = self._getFirstConditionModelFromQuestModel(fullQuestModel)

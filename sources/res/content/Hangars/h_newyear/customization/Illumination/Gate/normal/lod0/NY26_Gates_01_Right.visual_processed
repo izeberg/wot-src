@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0</identifier>
+					<fx>shaders/custom/emissive_playground.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>110</materialKind>
+					<property>
+						angleFalloffParams
+						<Vector4>1.000000 0.200000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						destBlend
+						<Int>2</Int>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						emissionMap
+						<Texture>content/Hangars/h_newyear/customization/Illumination/Gate/NY26_Gates_01_AM.dds</Texture>
+					</property>
+					<property>
+						g_contrast
+						<Float>5.000000</Float>
+					</property>
+					<property>
+						g_deferredMult
+						<Float>100.000000</Float>
+					</property>
+					<property>
+						g_offsetBlack
+						<Float>0.700000</Float>
+					</property>
+					<property>
+						pattern
+						<Texture>content/Hangars/h_newyear/customization/Illumination/Gate/NY26_Gates_01_CM.dds</Texture>
+					</property>
+					<property>
+						phaseMap
+						<Texture>content/Hangars/h_newyear/customization/Illumination/Gate/NY26_Gates_01_CM.dds</Texture>
+					</property>
+					<property>
+						speed
+						<Float>0.400000</Float>
+					</property>
+					<property>
+						usePhaseMap
+						<Bool>true</Bool>
+					</property>
+					<property>
+						waveLen
+						<Float>4.000000</Float>
+					</property>
+				</material>
+				<groupOrigin>52.957108 7.592845 -5.950857</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-0.003728 0.000435 -72.588516</min>
+		<max>72.161308 10.608669 60.686802</max>
+	</boundingBox>
+	<customBsp>true</customBsp>
+	<geometrySize>39380</geometrySize>
+</root>
