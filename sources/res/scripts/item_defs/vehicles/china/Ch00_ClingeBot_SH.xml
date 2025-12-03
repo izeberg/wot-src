@@ -69,6 +69,7 @@
 			0.2
 			<!--BW_String-->
 		</priceFactor>
+		<density>0.752859 0.752859</density>
 	</camouflage>
 	<hull>
 		<armor>
@@ -147,9 +148,13 @@
 				<camouflage>HULL</camouflage>
 			</customizableVehicleAreas>
 		</customization>
+		<hangarShadowTexture>vehicles/chinese/Ch00_ClingeBot_SH/ClingeBot_SH_HangarShadowMap.dds</hangarShadowTexture>
 		<camouflage>
-			<density>0.000000 0.000000</density>
-			<aoTextureSize>0.000000 0.000000</aoTextureSize>
+			<density>
+				103.08374 105.64064
+				<!--BW_String-->
+			</density>
+			<aoTextureSize>1024 512</aoTextureSize>
 		</camouflage>
 	</hull>
 	<chassis>
@@ -1049,8 +1054,8 @@
 					</hitTester>
 					<edgeByVisualModel>false</edgeByVisualModel>
 					<camouflage>
-						<density>0.000000 0.000000</density>
-						<aoTextureSize>0.000000 0.000000</aoTextureSize>
+						<density>164.715378 156.586685</density>
+						<aoTextureSize>1024 512</aoTextureSize>
 					</camouflage>
 				</Gun_Ch00_ClingeBot_SH>
 			</guns>
@@ -1093,8 +1098,8 @@
 				<!--BW_String-->
 			</physicsShape>
 			<camouflage>
-				<density>0.000000 0.000000</density>
-				<aoTextureSize>0.000000 0.000000</aoTextureSize>
+				<density>120.262108 119.780457</density>
+				<aoTextureSize>1024 512</aoTextureSize>
 			</camouflage>
 		</Turret_1_Ch00_ClingeBot_SH>
 	</turrets0>

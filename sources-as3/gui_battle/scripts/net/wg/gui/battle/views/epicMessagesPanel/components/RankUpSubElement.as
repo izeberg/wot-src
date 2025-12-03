@@ -34,9 +34,10 @@ package net.wg.gui.battle.views.epicMessagesPanel.components
       
       public function setText(param1:String) : void
       {
+         var _loc2_:int = 0;
          this.visible = param1 != "";
          this.mainTF.text = param1;
-         var _loc2_:int = this.mainTF.textWidth;
+         _loc2_ = this.mainTF.textWidth;
          this.mainTF.x = -(_loc2_ >> 1);
          this.lineElementMc.width = _loc2_ + LINE_PADDING;
          this.lineElementMc.x = -(_loc2_ + LINE_PADDING) >> 1;

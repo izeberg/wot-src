@@ -500,6 +500,83 @@ msgstr "?empty?"
 msgid "component/background/base/70/title"
 msgstr "Зигзаг"
 
+msgid "component/background/base/701/description"
+msgstr ""
+"Отображает вашу итоговую позицию в таблице лидеров, активной в рамках "
+"события «Наш Новый год» в 2026 году."
+
+msgid "component/background/base/701/description_locked"
+msgstr "?empty?"
+
+msgid "component/background/base/701/title"
+msgstr "Новогодний Топ-25"
+
+msgid "component/background/base/702/description"
+msgstr ""
+"Отображает вашу итоговую позицию в таблице лидеров, активной в рамках "
+"события «Наш Новый год» в 2026 году."
+
+msgid "component/background/base/702/description_locked"
+msgstr "?empty?"
+
+msgid "component/background/base/702/title"
+msgstr "Новогодний Топ-100"
+
+msgid "component/background/base/703/description"
+msgstr ""
+"Отображает вашу итоговую позицию в таблице лидеров, активной в рамках "
+"события «Наш Новый год» в 2026 году."
+
+msgid "component/background/base/703/description_locked"
+msgstr "?empty?"
+
+msgid "component/background/base/703/title"
+msgstr "Новогодний Топ-500"
+
+msgid "component/background/base/704/description"
+msgstr ""
+"Отображает вашу итоговую позицию в таблице лидеров, активной в рамках "
+"события «Наш Новый год» в 2026 году."
+
+msgid "component/background/base/704/description_locked"
+msgstr "?empty?"
+
+msgid "component/background/base/704/title"
+msgstr "Новогодний Топ-2500"
+
+msgid "component/background/base/705/description"
+msgstr ""
+"Отображает вашу итоговую позицию в таблице лидеров, активной в рамках "
+"события «Наш Новый год» в 2026 году."
+
+msgid "component/background/base/705/description_locked"
+msgstr "?empty?"
+
+msgid "component/background/base/705/title"
+msgstr "Новогодний Топ-10k"
+
+msgid "component/background/base/706/description"
+msgstr ""
+"Отображает вашу итоговую позицию в таблице лидеров, активной в рамках "
+"события «Наш Новый год» в 2026 году."
+
+msgid "component/background/base/706/description_locked"
+msgstr "?empty?"
+
+msgid "component/background/base/706/title"
+msgstr "Новогодний Топ-20k"
+
+msgid "component/background/base/707/description"
+msgstr ""
+"Отображает вашу итоговую позицию в таблице лидеров, активной в рамках "
+"события «Наш Новый год» в 2026 году."
+
+msgid "component/background/base/707/description_locked"
+msgstr "?empty?"
+
+msgid "component/background/base/707/title"
+msgstr "Новогодний Топ-40k"
+
 msgid "component/background/base/71/description"
 msgstr " "
 
@@ -882,6 +959,17 @@ msgstr ""
 msgid "component/engraving/skill/407/title"
 msgstr "MTR"
 
+msgid "component/engraving/static/700/description"
+msgstr ""
+"Отображает вашу итоговую позицию в таблице лидеров, активной в рамках "
+"события «Наш Новый год» в 2026 году."
+
+msgid "component/engraving/static/700/description_locked"
+msgstr "?empty?"
+
+msgid "component/engraving/static/700/title"
+msgstr "Позиция в таблице лидеров"
+
 msgid "component/engraving/triumph/201/description"
 msgstr "Наибольшее количество заблокированного урона в одном бою"
 
@@ -1029,6 +1117,9 @@ msgstr "Упорство"
 msgid "component/purposeGroup/season"
 msgstr "Мастерство"
 
+msgid "component/purposeGroup/static"
+msgstr "Уникальность"
+
 msgid "component/purposeGroup/triumph"
 msgstr "Триумф"
 
@@ -1046,6 +1137,12 @@ msgstr ""
 "Покажите свой уровень мастерства, заработав эти ценные компоненты и улучшив "
 "их до Х уровня. Они отображают вашу сезонную статистику. Например, лучший "
 "результат за прошедшие три месяца в Зале славы."
+
+msgid "component/purposeTooltip/static"
+msgstr ""
+"Демонстрируйте свои уникальные или редкие достижения в игре. Участвуйте в "
+"разнообразных состязаниях в рамках событий, зарабатывайте памятные и очень "
+"редкие гравировки и фоны, соберите свой собственный неповторимый жетон."
 
 msgid "component/purposeTooltip/triumph"
 msgstr ""
@@ -1069,6 +1166,9 @@ msgstr "Упорство"
 
 msgid "customization/category/skill"
 msgstr "Мастерство"
+
+msgid "customization/category/static"
+msgstr "Уникальность"
 
 msgid "customization/category/triumph"
 msgstr "Триумф"

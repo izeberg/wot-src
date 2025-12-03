@@ -285,6 +285,10 @@ package net.wg.data.constants
       
       public static const ABILITY_EQUIPMENT_BUTTON:String = "AbilityEquipmentButtonUI";
       
+      public static const ABILITY_MODIFIER_INDICATOR:String = "AbilityModifierIndicatorUI";
+      
+      public static const ABILITY_MODIFIER_SLOT_GLOW:String = "AbilityModifierSlotGlowUI";
+      
       public static const ENTITIES_POPUP:String = "EntitiesStatePopUpUI";
       
       public static const ENTITY_BUTTON:String = "EntityStateButtonUI";
@@ -679,6 +683,8 @@ package net.wg.data.constants
       
       public static const RIBBONS_BONUS_ANIMATION:String = "EfficiencyBonusAnimationUI";
       
+      public static const RIBBONS_ABILITY_BONUS_ANIMATION:String = "EfficiencyAbilityBonusAnimationUI";
+      
       public static const RIBBON_ICONS:String = "RibbonIconsUI";
       
       public static const RIBBON_TEXT:String = "RibbonTextsUI";
@@ -756,6 +762,8 @@ package net.wg.data.constants
       public static const ARTY_SHOT_INDICATOR_RENDERER:String = "ArtyShotIndicatorUI";
       
       public static const OVERHEAT_WIDGET:String = "OverheatWidgetUI";
+      
+      public static const COOLANT_ABILITY_INDICATOR:String = "CoolantAbilityIndicatorUI";
       
       public static const EQUIPMENT_OVERLAY:String = "ListOverlayUI";
       
@@ -842,6 +850,8 @@ package net.wg.data.constants
       public static const LOBBY_VEH_MARKER:String = "VehicleMarkersUI";
       
       public static const PLATOON_VEH_MARKER:String = "PlatoonMarkerUI";
+      
+      public static const RACCOON_MARKER:String = "RaccoonMarkerUI";
       
       public static const CUSTOM_MARKER:String = "CustomMarkerUI";
       
@@ -1060,6 +1070,12 @@ package net.wg.data.constants
       public static const EARLY_ACCESS_ENTRY_POINT:String = "EarlyAccessEntryPointUI";
       
       public static const WINBACK_WIDGET:String = "WinbackWidget";
+      
+      public static const HIT_MARKER:String = "HitMarker_UI";
+      
+      public static const SHOT_DAMAGE_INDICATOR:String = "ShotDamageInd_UI";
+      
+      public static const SHOT_FLY_TIME_INDICATOR:String = "ShotFlyTimeInd_UI";
        
       
       public function Linkages()

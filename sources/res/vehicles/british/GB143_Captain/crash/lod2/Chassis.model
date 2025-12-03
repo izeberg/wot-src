@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB143_Captain/crash/lod2/Chassis</nodefullVisual>
+	<parent>vehicles/british/GB143_Captain/crash/lod3/Chassis</parent>
+	<tank>true</tank>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.967660 -0.000757 -4.179374</min>
+		<max>1.967660 1.273206 3.944842</max>
+	</visibilityBox>
+</root>

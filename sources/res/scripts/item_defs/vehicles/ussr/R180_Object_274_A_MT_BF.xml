@@ -1817,7 +1817,7 @@
 					<leftMaterial>track_mat_L_skinned</leftMaterial>
 					<rightMaterial>track_mat_R_skinned</rightMaterial>
 					<textureScale>
-						-2.3
+						-2.8
 						<!--BW_String-->
 					</textureScale>
 					<trackDebris>
@@ -2337,7 +2337,7 @@
 						<!--BW_String-->
 					</segmentLength>
 					<segmentOffset>
-						0.182
+						0.16
 						<!--BW_String-->
 					</segmentOffset>
 					<atlas>
@@ -2482,7 +2482,7 @@
 						<sync>
 							<name>WD_L4</name>
 							<startAngle>
-								-2.85291
+								-2.75
 								<!--BW_String-->
 							</startAngle>
 							<teethCount>10</teethCount>
@@ -2968,7 +2968,7 @@
 						<sync>
 							<name>WD_R4</name>
 							<startAngle>
-								-2.8678
+								-2.75
 								<!--BW_String-->
 							</startAngle>
 							<teethCount>10</teethCount>

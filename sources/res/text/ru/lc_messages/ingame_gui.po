@@ -372,11 +372,20 @@ msgstr "ББ"
 msgid "damageLog/shellType/ARMOR_PIERCING_CR"
 msgstr "БП"
 
+msgid "damageLog/shellType/ARMOR_PIERCING_CR_DF"
+msgstr "НБП"
+
+msgid "damageLog/shellType/ARMOR_PIERCING_DF"
+msgstr "НБ"
+
 msgid "damageLog/shellType/ARMOR_PIERCING_FSDS"
 msgstr "БОПС"
 
 msgid "damageLog/shellType/ARMOR_PIERCING_HE"
 msgstr "ОФ"
+
+msgid "damageLog/shellType/ARMOR_PIERCING_HE_DF"
+msgstr "НФ"
 
 msgid "damageLog/shellType/FLAME"
 msgstr "ОС"
@@ -384,8 +393,14 @@ msgstr "ОС"
 msgid "damageLog/shellType/HIGH_EXPLOSIVE"
 msgstr "ОФ"
 
+msgid "damageLog/shellType/HIGH_EXPLOSIVE_DF"
+msgstr "НФ"
+
 msgid "damageLog/shellType/HOLLOW_CHARGE"
 msgstr "КС"
+
+msgid "damageLog/shellType/HOLLOW_CHARGE_DF"
+msgstr "НК"
 
 msgid "damage_panel/crew/commander/destroyed"
 msgstr "Командир экипажа ранен. ТТХ машины снижены."
@@ -1985,15 +2000,6 @@ msgstr "Дирижабль"
 msgid "prebattlemarker/prebattlemarker_51"
 msgstr "Склады"
 
-msgid "prebattlemarker/prebattlemarker_52"
-msgstr "Верхний рубеж"
-
-msgid "prebattlemarker/prebattlemarker_53"
-msgstr "Нижний рубеж"
-
-msgid "prebattlemarker/prebattlemarker_54"
-msgstr "Срединный рубеж"
-
 msgid "prebattlemarker/prebattlemarker_6"
 msgstr "Берег"
 
@@ -2765,11 +2771,20 @@ msgstr "%(caliber)s мм бронебойный снаряд %(userString)s"
 msgid "shells_kinds/ARMOR_PIERCING_CR"
 msgstr "%(caliber)s мм бронебойный подкалиберный снаряд %(userString)s"
 
+msgid "shells_kinds/ARMOR_PIERCING_CR_DF"
+msgstr "%(caliber)s мм бронебойный НУРС %(userString)s"
+
+msgid "shells_kinds/ARMOR_PIERCING_DF"
+msgstr "%(caliber)s мм бронебойный НУРС %(userString)s"
+
 msgid "shells_kinds/ARMOR_PIERCING_FSDS"
 msgstr "%(caliber)s мм БОПС %(userString)s"
 
 msgid "shells_kinds/ARMOR_PIERCING_HE"
 msgstr "%(caliber)s мм бронебойный каморный снаряд %(userString)s"
+
+msgid "shells_kinds/ARMOR_PIERCING_HE_DF"
+msgstr "%(caliber)s мм бронебойный НУРС %(userString)s"
 
 msgid "shells_kinds/FLAME"
 msgstr "Огнемётная смесь %(userString)s"
@@ -2777,8 +2792,14 @@ msgstr "Огнемётная смесь %(userString)s"
 msgid "shells_kinds/HIGH_EXPLOSIVE"
 msgstr "%(caliber)s мм осколочно-фугасный снаряд %(userString)s"
 
+msgid "shells_kinds/HIGH_EXPLOSIVE_DF"
+msgstr "%(caliber)s мм осколочно-фугасный НУРС %(userString)s"
+
 msgid "shells_kinds/HOLLOW_CHARGE"
 msgstr "%(caliber)s мм кумулятивный снаряд %(userString)s"
+
+msgid "shells_kinds/HOLLOW_CHARGE_DF"
+msgstr "%(caliber)s мм кумулятивный НУРС %(userString)s"
 
 msgid "shells_kinds/params/damage"
 msgstr "Средний урон: %(value)s ед."
@@ -2788,6 +2809,9 @@ msgstr "Урон в секунду: %(value)s ед."
 
 msgid "shells_kinds/params/damageRange"
 msgstr "Урон снаряда: %(value)s ед."
+
+msgid "shells_kinds/params/distanceFactorPiercingPower"
+msgstr "Бронепробиваемость: %(value)s мм"
 
 msgid "shells_kinds/params/explosionRadius"
 msgstr "Радиус поражения: %(value)s м"
@@ -2799,6 +2823,9 @@ msgid "shells_kinds/params/piercingPower"
 msgstr "Средняя бронепробиваемость: %(value)s мм"
 
 msgid "shells_kinds/params/shotSpeed"
+msgstr "Скорость полёта:  %(value)s м/с"
+
+msgid "shells_kinds/params/shotSpeedAccelerated"
 msgstr "Скорость полёта:  %(value)s м/с"
 
 msgid "shells_kinds/params/stunDuration"

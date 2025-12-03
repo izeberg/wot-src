@@ -387,12 +387,15 @@ package net.wg.gui.battle.views.stats.fullStats
                _loc6_ = this._enemyDP.requestItemAt(_loc4_) as DAAPIVehicleInfoVO;
                _loc5_.setDAAPIVehicleData(_loc6_);
                _loc5_.showDogTag(null);
-               for(_loc7_ in this._dogTagsToShow)
+               if(_loc6_ != null)
                {
-                  if(Number(_loc7_) == _loc6_.vehicleID)
+                  for(_loc7_ in this._dogTagsToShow)
                   {
-                     _loc5_.showDogTag(this._dogTagsToShow[_loc7_]);
-                     break;
+                     if(Number(_loc7_) == _loc6_.vehicleID)
+                     {
+                        _loc5_.showDogTag(this._dogTagsToShow[_loc7_]);
+                        break;
+                     }
                   }
                }
                if(_loc5_.isSelected)

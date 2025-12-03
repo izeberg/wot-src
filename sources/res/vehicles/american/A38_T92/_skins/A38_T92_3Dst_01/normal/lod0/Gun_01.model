@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/american/A38_T92/_skins/A38_T92_3Dst_01/normal/lod1/Gun_01</parent>
+	<tank>true</tank>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-0.435912 -1.073595 -1.732103</min>
+		<max>0.430432 0.798479 6.933115</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/american/A38_T92/_skins/A38_T92_3Dst_01/normal/lod0/Gun_01</nodefullVisual>
+</root>

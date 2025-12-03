@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A38_T92/_skins/A38_T92_3Dst_01/crash/lod1/Turret_01</nodefullVisual>
+	<parent>vehicles/american/A38_T92/_skins/A38_T92_3Dst_01/crash/lod2/Turret_01</parent>
+	<tank>true</tank>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.042037 -0.622686 -1.382814</min>
+		<max>0.879740 1.348551 0.645688</max>
+	</visibilityBox>
+</root>

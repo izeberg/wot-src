@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/Hangars/h03_mt_ny_2026/customization/Sculpture/normal/lod2/h03_NY26_Sculpture_01_01</parent>
+	<extent>60.000000</extent>
+	<visibilityBox>
+		<min>
+			-1.00503 0.084377 -2.66005
+			<!--BW_String-->
+		</min>
+		<max>
+			1.23284 1.72648 0.786992
+			<!--BW_String-->
+		</max>
+	</visibilityBox>
+	<nodelessVisual>content/Hangars/h03_mt_ny_2026/customization/Sculpture/normal/lod1/h03_NY26_Sculpture_01_01</nodelessVisual>
+</root>

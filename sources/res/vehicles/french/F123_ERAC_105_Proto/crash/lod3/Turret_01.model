@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/french/F123_ERAC_105_Proto/crash/lod4/Turret_01</parent>
+	<tank>true</tank>
+	<extent>192.000000</extent>
+	<nodefullVisual>vehicles/french/F123_ERAC_105_Proto/crash/lod3/Turret_01</nodefullVisual>
+	<visibilityBox>
+		<min>-0.947795 -0.016758 -1.611680</min>
+		<max>0.897781 0.939143 0.880563</max>
+	</visibilityBox>
+</root>

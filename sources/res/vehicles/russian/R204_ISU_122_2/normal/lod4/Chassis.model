@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<nodefullVisual>vehicles/russian/R204_ISU_122_2/normal/lod4/Chassis</nodefullVisual>
 	<tank>true</tank>
 	<visibilityBox>
-		<min>-1.577419 -0.006296 -3.215168</min>
-		<max>1.531664 1.168785 3.240067</max>
+		<min>-1.562129 0.000940 -3.215168</min>
+		<max>1.562129 1.165164 3.236316</max>
 	</visibilityBox>
+	<nodefullVisual>vehicles/russian/R204_ISU_122_2/normal/lod4/Chassis</nodefullVisual>
 </root>

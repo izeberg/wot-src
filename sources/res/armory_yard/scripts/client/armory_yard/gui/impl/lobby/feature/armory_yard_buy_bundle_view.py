@@ -1,9 +1,10 @@
 import BigWorld
 from adisp import adisp_process
 from armory_yard.gui.impl.gen.view_models.views.lobby.feature.armory_yard_buy_bundle_view_model import ArmoryYardBuyBundleViewModel, BundleType
+from armory_yard.gui.impl.lobby.feature.tooltips.armory_yard_currency_tooltip_view import ArmoryYardCurrencyTooltipView
 from armory_yard.gui.window_events import showBuyGoldForArmoryYard
 from armory_yard.gui.impl.lobby.feature.tooltips.rest_reward_tooltip_view import RestRewardTooltipView
-from armory_yard.gui.shared.bonus_packers import getArmoryYardBuyViewPacker, packRestModel
+from armory_yard.gui.shared.bonus_packers import packRestModel, getArmoryYardBonusPacker
 from armory_yard.gui.shared.bonuses_sorter import bonusesSortKeyFunc
 from gui.shared.money import Currency
 from frameworks.wulf import WindowFlags, WindowLayer, ViewSettings, ViewFlags
@@ -26,6 +27,7 @@ from skeletons.gui.web import IWebController
 BUNDLE_TYPES = {'small_bundle': BundleType.SMALL, 
    'medium_bundle': BundleType.MEDIUM, 
    'large_bundle': BundleType.LARGE}
+_LOOTBOX_RES = R.views.dyn('gui_lootboxes').dyn('lobby').dyn('gui_lootboxes').dyn('tooltips').dyn('LootboxTooltip')
 
 class ArmoryYardBuyBundleView(ViewImpl):
     __slots__ = ('__tooltipData', '__blur', '__onLoadedCallback', '__parent', '__bundleId',
@@ -63,7 +65,19 @@ class ArmoryYardBuyBundleView(ViewImpl):
         if contentID == R.views.armory_yard.lobby.feature.tooltips.RestRewardTooltipView():
             tooltipData = self.getTooltipData(event)
             return RestRewardTooltipView([] if tooltipData is None else tooltipData.specialArgs[0])
-        return super(ArmoryYardBuyBundleView, self).createToolTipContent(event, contentID)
+        if contentID == R.views.armory_yard.lobby.feature.tooltips.ArmoryYardCurrencyTooltipView():
+            currency = event.getArgument('currency')
+            if self.getTooltipData(event):
+                currency = currency or self.getTooltipData(event).specialArgs[0]
+            return ArmoryYardCurrencyTooltipView(currency)
+        else:
+            if _LOOTBOX_RES.exists() and contentID == _LOOTBOX_RES():
+                from gui_lootboxes.gui.impl.lobby.gui_lootboxes.tooltips.lootbox_tooltip import LootboxTooltip
+                tooltipData = self.getTooltipData(event)
+                lootBoxID = tooltipData.get('lootBoxID')
+                lootBox = self.__itemsCache.items.tokens.getLootBoxByID(int(lootBoxID))
+                return LootboxTooltip(lootBox)
+            return super(ArmoryYardBuyBundleView, self).createToolTipContent(event, contentID)
 
     def getTooltipData(self, event):
         return self.__tooltipData.get(event.getArgument('tooltipId'), None)
@@ -103,11 +117,11 @@ class ArmoryYardBuyBundleView(ViewImpl):
                 if not Waiting.isOpened('buyBundleArmoryYard'):
                     Waiting.show('buyBundleArmoryYard', isAlwaysOnTop=True, isSingle=True)
                 bundleTokens = product['tokens']
-                self.__stepAfterBuy = self.__armoryYardCtrl.getCurrencyTokenCount() + bundleTokens
-                maxTokensCount = self.__armoryYardCtrl.getTotalSteps()
+                self.__stepAfterBuy = self.__armoryYardCtrl.getProgressionTokenCount() + bundleTokens
+                maxTokensCount = self.__armoryYardCtrl.maxNumberOfSteps
                 postProgressionCoins = 0
                 if self.__stepAfterBuy > maxTokensCount:
-                    if self.__armoryYardCtrl.isPostProgressionEnabled():
+                    if self.__armoryYardCtrl.isPurchaseStageEnabled():
                         postProgressionCoins = self.__stepAfterBuy - maxTokensCount
                     self.__stepAfterBuy = maxTokensCount
                 result = yield self.__webCtrl.sendRequest(ctx=ShopBuyStorefrontProductCtx(storefront=self.__armoryYardCtrl.getStarterPackSettings()['storefrontName'], productCode=product['productCode'], amount=1, prices=[{'code': currency, 'amount': price.get(currency), 'item_type': 'currency'}]))
@@ -121,6 +135,7 @@ class ArmoryYardBuyBundleView(ViewImpl):
                     if not self.__isTokenDelivered():
                         self.__timeoutCallback = BigWorld.callback(10, self.__timeout)
                     else:
+                        self.__isBuying = False
                         Waiting.hide('buyBundleArmoryYard')
                         self.destroyWindow(isScene=True)
                 else:
@@ -130,7 +145,7 @@ class ArmoryYardBuyBundleView(ViewImpl):
             return
 
     def __isTokenDelivered(self):
-        return self.__stepAfterBuy is not None and self.__stepAfterBuy <= self.__armoryYardCtrl.getCurrencyTokenCount()
+        return self.__stepAfterBuy is not None and self.__stepAfterBuy <= self.__armoryYardCtrl.getProgressionTokenCount()
 
     def __timeout(self):
         if Waiting.isOpened('buyBundleArmoryYard'):
@@ -185,8 +200,8 @@ class ArmoryYardBuyBundleView(ViewImpl):
 
     def __setMainData(self):
         with self.viewModel.transaction() as (model):
-            currentTokens = self.__armoryYardCtrl.getCurrencyTokenCount()
-            maxTokens = self.__armoryYardCtrl.getTotalSteps()
+            currentTokens = self.__armoryYardCtrl.getProgressionTokenCount()
+            maxTokens = self.__armoryYardCtrl.maxNumberOfSteps
             for bundle in self.__armoryYardCtrl.bundlesProducts:
                 if self.__bundleId == bundle['id']:
                     product = bundle
@@ -222,6 +237,17 @@ class ArmoryYardBuyBundleView(ViewImpl):
             if not self.__armoryYardCtrl.isActive() or self.__armoryYardCtrl.isCompleted() or not self.__armoryYardCtrl.isStarterPackAvailable():
                 self.destroyWindow(isScene=True)
                 return
+            tokensCount = 0
+            product = None
+            for bundle in self.__armoryYardCtrl.bundlesProducts:
+                if self.__bundleId == bundle['id']:
+                    product = bundle
+                    tokensCount = product['tokens']
+                    break
+
+            if product is None or self.__armoryYardCtrl.bundleTokensLeft() < tokensCount:
+                self.destroyWindow(isScene=True)
+                return
             self.__fullUpdate()
             return
 
@@ -243,10 +269,10 @@ class ArmoryYardBuyBundleView(ViewImpl):
                     rewardsList.pop(idx)
 
             if len(rewardsList) > ArmoryYardBuyBundleViewModel.MAX_VISIBLE_REWARDS:
-                packBonusModelAndTooltipData(rewardsList[:ArmoryYardBuyBundleViewModel.MAX_VISIBLE_REWARDS - 1], rewards, self.__tooltipData, packer=getArmoryYardBuyViewPacker())
+                packBonusModelAndTooltipData(rewardsList[:ArmoryYardBuyBundleViewModel.MAX_VISIBLE_REWARDS - 1], rewards, self.__tooltipData, packer=getArmoryYardBonusPacker())
                 packRestModel(rewardsList[ArmoryYardBuyBundleViewModel.MAX_VISIBLE_REWARDS - 1:], rewards, self.__tooltipData, ArmoryYardBuyBundleViewModel.MAX_VISIBLE_REWARDS - 1)
             else:
-                packBonusModelAndTooltipData(rewardsList, rewards, self.__tooltipData, packer=getArmoryYardBuyViewPacker())
+                packBonusModelAndTooltipData(rewardsList, rewards, self.__tooltipData, packer=getArmoryYardBonusPacker())
             rewards.invalidate()
         return
 

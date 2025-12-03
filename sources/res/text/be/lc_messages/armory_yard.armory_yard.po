@@ -68,7 +68,7 @@ msgstr "< 1 хв."
 msgid "bundles/discount"
 msgstr "-%(discount)s%"
 
-msgid "bundles/or"
+msgid "bundles/separatorOr"
 msgstr "або"
 
 msgid "bundles/subtitleOne"
@@ -80,7 +80,7 @@ msgid "bundles/subtitleOptions"
 msgstr "%(firstSubtitle)s %(secondSubtitle)s %(thirdSubtitle)s"
 
 msgid "bundles/subtitleThree"
-msgstr "Бягучы этап прагрэсіі:"
+msgstr "Бягучы этап будаўніцтва:"
 
 msgid "bundles/subtitleTwo"
 msgstr "Купіць можна толькі адзін набор жэтонаў!"
@@ -107,9 +107,9 @@ msgstr "ДА ВЫБАРУ НАБОРАЎ"
 
 msgid "buyBundle/bundleTitle"
 msgid_plural "plural/buyBundle/bundleTitle"
-msgstr[0] "%(levelCount)s ЖЭТОН БУДАЎНІЦТВА"
-msgstr[1] "%(levelCount)s ЖЭТОНА БУДАЎНІЦТВА"
-msgstr[2] "%(levelCount)s ЖЭТОНАЎ БУДАЎНІЦТВА"
+msgstr[0] "ЖЭТОНЫ БУДАЎНІЦТВА: %(levelCount)s"
+msgstr[1] "ЖЭТОНЫ БУДАЎНІЦТВА: %(levelCount)s"
+msgstr[2] "ЖЭТОНЫ БУДАЎНІЦТВА: %(levelCount)s"
 
 msgid "buyBundle/controlBack"
 msgstr "Назад"
@@ -153,9 +153,6 @@ msgstr "за боны"
 msgid "buyView/gold"
 msgstr "за золата:"
 
-msgid "buyView/or"
-msgstr "або"
-
 msgid "buyView/price"
 msgstr "Кошт куплі: %(price)s"
 
@@ -168,24 +165,38 @@ msgstr "Узнагароды"
 msgid "buyView/rewards/fromToFormat"
 msgstr "{from} - {to}"
 
-msgid "buyView/rewards/manySteps"
+msgid "buyView/rewards/mainProgress"
 msgstr ""
 "Вам адразу будуць налічаны ўзнагароды за этапы будаўніцтва: "
 "%(completedSteps)s"
 
-msgid "buyView/rewards/singleStep"
+msgid "buyView/rewards/postProgress"
 msgstr ""
-"Вам адразу будуць налічаны ўзнагароды за этапы будаўніцтва: "
+"Вам адразу будуць налічаны ўзнагароды за этапы палігонных выпрабаванняў: "
 "%(completedSteps)s"
 
 msgid "buyView/selected"
 msgstr "Выбрана этапаў: %(amount)s"
+
+msgid "buyView/separatorOr"
+msgstr "або"
+
+msgid "buyView/stylePreview/tooltip"
+msgstr "Націсніце, каб перайсці да перадпрагляду стылю."
 
 msgid "buyView/title/mainTitle"
 msgstr "ЗБОРАЧНЫ ЦЭХ"
 
 msgid "buyView/title/pageTtile"
 msgstr "КУПЛЯ ЖЭТОНАЎ БУДАЎНІЦТВА"
+
+msgid "buyView/title/postProgression/pageTtile"
+msgstr "КУПЛЯ ЭТАПАЎ ПАЛІГОННЫХ ВЫПРАБАВАННЯЎ"
+
+msgid "buyView/title/postProgression/subTtile"
+msgstr ""
+"Вы можаце прасунуцца па прагрэсіі палігонных выпрабаванняў, дакупіўшы этапы "
+"і атрымаўшы за іх усе ўзнагароды."
 
 msgid "buyView/title/subTtile"
 msgstr ""
@@ -196,12 +207,12 @@ msgid "buyView/vehiclePreview/label"
 msgstr "Перадпрагляд"
 
 msgid "buyView/vehiclePreview/tooltip"
-msgstr "Націсніце, каб перайсці да перадпрагляду машыны."
+msgstr "Націсніце, каб перайсці да перадпрагляду тэхнікі."
 
 msgid "closeBtn/label"
 msgstr "ЗАКРЫЦЬ"
 
-msgid "currency/postProgression/titleCongrats"
+msgid "currency/purchaseStage/titleCongrats"
 msgstr "Вольны жэтон"
 
 msgid "entryPoint/tooltips/active/announce"
@@ -211,13 +222,13 @@ msgid "entryPoint/tooltips/active/description"
 msgstr "Выконваецца задач: %(questsInProgress)s"
 
 msgid "entryPoint/tooltips/active/endOfEventTime/hours"
-msgstr "Задачы можна выконваць яшчэ: %(hour)s ч %(min)s хв"
+msgstr "Да канца заданняў: %(hour)s гадз. %(min)s хв."
 
 msgid "entryPoint/tooltips/active/endOfEventTime/min"
-msgstr "Задачы можна выконваць яшчэ: %(min)s хв"
+msgstr "Да канца заданняў: %(min)s хв."
 
 msgid "entryPoint/tooltips/active/endOfEventTime/sec"
-msgstr "Задачы можна выконваць яшчэ: < 1 хв"
+msgstr "Да канца заданняў: < 1 хв."
 
 msgid "entryPoint/tooltips/active/header"
 msgstr "Задачы Зборачнага цэха"
@@ -237,11 +248,11 @@ msgstr[0] "Выканайце яшчэ %(questsCount)s задачу папярэ
 msgstr[1] "Выканайце яшчэ %(questsCount)s задачы папярэдняга раздзела"
 msgstr[2] "Выканайце яшчэ %(questsCount)s задач папярэдняга раздзела"
 
-msgid "entryPoint/tooltips/active/lockedV2"
-msgid_plural "plural/entryPoint/tooltips/active/lockedV2"
-msgstr[0] "Выканайце %(questsCount)s задачу папярэдняга раздзела"
-msgstr[1] "Выканайце %(questsCount)s задачы папярэдняга раздзела"
-msgstr[2] "Выканайце %(questsCount)s задач папярэдняга раздзела"
+msgid "entryPoint/tooltips/active/lockedPostProgression"
+msgid_plural "plural/entryPoint/tooltips/active/locked"
+msgstr[0] "Прайдзіце яшчэ %(questsCount)s этап Зборачнага цэха."
+msgstr[1] "Прайдзіце яшчэ %(questsCount)s этапы Зборачнага цэха."
+msgstr[2] "Прайдзіце яшчэ %(questsCount)s этапаў Зборачнага цэха."
 
 msgid "entryPoint/tooltips/active/questsCompleted"
 msgstr "Усе задачы раздзела выкананы."
@@ -263,8 +274,9 @@ msgstr "Будзе даступна"
 
 msgid "entryPoint/tooltips/beforeProgression/body"
 msgstr ""
-"Тут знаходзяцца ўсе задачы падзеі, разбітыя на IV раздзелы. Блокі задач "
-"адкрываюцца паслядоўна кожныя сем дзён."
+"Тут знаходзяцца ўсе задачы падзеі, разбітыя на 5 раздзелаў. Блокі задач "
+"першых чатырох раздзелаў адкрываюцца паслядоўна кожныя сем дзён, а дадатковы"
+" раздзел адкрыецца пасля завяршэння 26 этапаў прагрэсіі Зборачнага цэха."
 
 msgid "entryPoint/tooltips/beforeProgression/header"
 msgstr "Задачы Зборачнага цэха"
@@ -280,10 +292,10 @@ msgstr ""
 msgid "entryPoint/tooltips/disabled/header"
 msgstr "Задачы недаступныя"
 
-msgid "entryPoint/tooltips/postProgression/body"
-msgstr "Задачы падзеі «Зборачны цэх» больш не выдаюцца."
+msgid "entryPoint/tooltips/purchaseStage/body"
+msgstr "Задачы Зборачнага цэха больш не выдаюцца."
 
-msgid "entryPoint/tooltips/postProgression/header"
+msgid "entryPoint/tooltips/purchaseStage/header"
 msgstr "Задачы завершаны"
 
 msgid "entryPoint/widget/tooltips/disabled/body"
@@ -300,7 +312,7 @@ msgid "featureName"
 msgstr "ЗБОРАЧНЫ ЦЭХ"
 
 msgid "introView/backButton"
-msgstr "ПАДРАБЯЗНЕЙ ПРА ЗБОРАЧНЫ ЦЭХ"
+msgstr "ПАДРАБЯЗНЕЙ ПРА ЗБОРАЧНЫ ЦЭХ"
 
 msgid "introView/continueButton"
 msgstr "Працягнуць"
@@ -324,30 +336,34 @@ msgid "mainView/banner/description"
 msgstr "Дакупіўшы этапы, вы імгненна атрымаеце ўзнагароды за іх."
 
 msgid "mainView/banner/freeCoins/button"
-msgstr "Дакупіць"
+msgstr "Дакупіць этапы"
 
 msgid "mainView/banner/freeCoins/description"
-msgstr "Дакупіўшы жэтоны, вы зможаце абмяняць іх на ўнікальныя тавары."
+msgstr "Дакупіўшы этапы, вы імгненна атрымаеце ўзнагароды за іх."
 
 msgid "mainView/banner/freeCoins/title"
-msgstr "Купля жэтонаў"
+msgstr "Палігонныя выпрабаванні"
 
 msgid "mainView/banner/freeCoins/tooltip/body"
-msgstr "Дакупіўшы жэтоны, вы зможаце абмяняць іх на ўнікальныя тавары."
+msgstr ""
+"Дакупіўшы этапы, вы імгненна атрымаеце этапы палігонных выпрабаванняў і "
+"ўзнагароды за іх."
 
 msgid "mainView/banner/freeCoins/tooltip/header"
-msgstr "Купля жэтонаў"
+msgstr "Дакупля жэтонаў"
 
 msgid "mainView/banner/title"
 msgstr "Этапы будаўніцтва"
 
 msgid "mainView/banner/tooltip/body"
 msgstr ""
-"Дакупіўшы этапы, вы імгненна атрымаеце ўзнагароды за іх і прасунецеся па "
-"прагрэсіі падзеі."
+"Дакупіўшы этапы, вы імгненна атрымаеце этапы будаўніцтва і ўзнагароды за іх."
 
 msgid "mainView/banner/tooltip/header"
-msgstr "Дакупка этапаў"
+msgstr "Дакупля жэтонаў"
+
+msgid "mainView/chapter/additional/title"
+msgstr "Дад. раздзел: %(text)s"
 
 msgid "mainView/chapter/index/1"
 msgstr "Праектаванне"
@@ -356,10 +372,13 @@ msgid "mainView/chapter/index/2"
 msgstr "Асноўныя сістэмы"
 
 msgid "mainView/chapter/index/3"
-msgstr "Узбраенне і шасі"
+msgstr "Вузлы і агрэгаты"
 
 msgid "mainView/chapter/index/4"
-msgstr "Навясное абсталяванне"
+msgstr "Выніковае аснашчэнне"
+
+msgid "mainView/chapter/index/5"
+msgstr "Палігонныя выпрабаванні"
 
 msgid "mainView/chapter/quests/label"
 msgstr "Выканана задач:"
@@ -372,6 +391,17 @@ msgstr "Раздзел %(index)s: %(text)s"
 
 msgid "mainView/chapter/tokens/progress"
 msgstr "%(received)s / %(total)s"
+
+msgid "mainView/completedStages/completed"
+msgstr "Прагрэсія Зборачнага цэха пройдзена"
+
+msgid "mainView/completedStages/postProgression"
+msgstr ""
+"Пройдзена этапаў палігонных выпрабаванняў: %(receivedTokens)s / "
+"%(totalTokens)s"
+
+msgid "mainView/completedStages/progression"
+msgstr "Атрымана жэтонаў будаўніцтва: %(receivedTokens)s / %(totalTokens)s"
 
 msgid "mainView/dateFormat"
 msgstr "%(fromDate)s — %(toDate)s %(toTime)s"
@@ -392,30 +422,10 @@ msgid "mainView/playerLink/animate/stop"
 msgstr "СПЫНІЦЬ ПАЎТОР"
 
 msgid "mainView/playerLink/tooltip/body"
-msgstr ""
-"Паўторны прагляд усяго прагрэсу будаўніцтва, дасягнутага вамі на гэты "
-"момант."
+msgstr "Паўторны прагляд усіх анімацый ужо пройдзеных этапаў будаўніцтва."
 
 msgid "mainView/playerLink/tooltip/header"
-msgstr "Паўтор анімацыі"
-
-msgid "mainView/progress/future/tooltip/body"
-msgstr "Узнагарода за праходжання этапу недаступная."
-
-msgid "mainView/progress/future/tooltip/header"
-msgstr "Этап будаўніцтва"
-
-msgid "mainView/progress/past/tooltip/body"
-msgstr "Узнагарода за праходжанне этапу атрымана."
-
-msgid "mainView/progress/past/tooltip/header"
-msgstr "Этап будаўніцтва"
-
-msgid "mainView/progress/present/tooltip/body"
-msgstr "Есць узнагарода за праходжанне этапу."
-
-msgid "mainView/progress/present/tooltip/header"
-msgstr "Этап будаўніцтва"
+msgstr "Паўтор будаўніцтва"
 
 msgid "mainView/progress/title"
 msgstr "ЗБОРАЧНЫ ЦЭХ"
@@ -435,23 +445,31 @@ msgstr ","
 msgid "mainView/quest/battleType/tooltip/header"
 msgstr "Даступныя рэжымы:"
 
-msgid "mainView/quest/currencyToken/label"
-msgstr "Бонусная ўзнагарода:"
-
-msgid "mainView/quest/currencyToken/rewardReceived"
-msgid_plural "rewardReceived"
-msgstr[0] "Узнагарода атрымана"
-msgstr[1] "Узнагароды атрыманы"
-msgstr[2] "Узнагароды атрыманы"
-
 msgid "mainView/quest/levelRangeSeparator"
 msgstr "-"
 
 msgid "mainView/quest/levelSeparator"
 msgstr ", "
 
+msgid "mainView/quest/postProgressionToken/label"
+msgstr "+ праходжанне аднаго этапу"
+
 msgid "mainView/quest/progress"
 msgstr "%(current)s / %(total)s"
+
+msgid "mainView/quest/progressionToken/label"
+msgstr "Бонусная ўзнагарода:"
+
+msgid "mainView/quest/progressionToken/rewardReceived"
+msgid_plural "rewardReceived"
+msgstr[0] "Узнагарода атрымана"
+msgstr[1] "Узнагароды атрыманы"
+msgstr[2] "Узнагароды атрыманы"
+
+msgid "mainView/quest/rerollButton/hint"
+msgstr ""
+"ЦЯПЕР ЗАДАЧЫ\n"
+"МОЖНА ЗАМЯНЯЦЬ."
 
 msgid "mainView/quest/vehicleType/AT-SPG"
 msgstr "СТ-САУ"
@@ -480,26 +498,48 @@ msgstr "Лёгкія танкі"
 msgid "mainView/quest/vehicleType/mediumTank"
 msgstr "Сярэднія танкі"
 
+msgid "mainView/quests/disabledQuest/title"
+msgstr "Задача недаступная"
+
+msgid "mainView/quests/disabledQuest/tooltip/body"
+msgstr ""
+"З выкананнем кожнай актыўнай задачы будзе адкрывацца адна заблакаваная."
+
+msgid "mainView/quests/disabledQuest/tooltip/header"
+msgstr "Задача недаступная"
+
+msgid "mainView/quests/rerollButtonText"
+msgstr "Замена задачы"
+
+msgid "mainView/quests/rerollInfo/rerollCount"
+msgstr "Бясплатных замен: %(freeRerollCount)s"
+
+msgid "mainView/quests/rerollInfo/timer"
+msgstr "Да новых бясплатных замен:"
+
 msgid "mainView/quests/title"
 msgstr "ЗАДАЧЫ ЗБОРАЧНАГА ЦЭХА"
 
 msgid "mainView/shop/title"
 msgstr "КРАМА ЗБОРАЧНАГА ЦЭХА"
 
-msgid "mainView/state/postProgression"
-msgstr "ЭТАП ДАКУПЛІ"
-
 msgid "mainView/state/progression"
 msgstr "ЭТАП ВЫКАНАННЯ ЗАДАЧ"
 
+msgid "mainView/state/purchaseStage"
+msgstr "ЭТАП ДАКУПЛІ"
+
 msgid "mainView/subtitle"
 msgstr "%(step)s ЭТАП БУДАЎНІЦТВА"
+
+msgid "mainView/subtitlePostProgression"
+msgstr "%(step)s ЭТАП ВЫПРАБАВАННЯЎ"
 
 msgid "mainView/takeRewards/animate"
 msgstr "ЗАБРАЦЬ УЗНАГАРОДЫ"
 
 msgid "mainView/takeRewards/tooltip/body"
-msgstr "Націсніце, каб забраць узнагароды за пройдзеныя этапы будаўніцтва."
+msgstr "Забраць узнагароды за пройдзеныя этапы будаўніцтва."
 
 msgid "mainView/takeRewards/tooltip/header"
 msgstr "Забраць узнагароды"
@@ -511,29 +551,30 @@ msgid "mainView/title/step/1"
 msgstr "Знаёмства з ТЗ"
 
 msgid "mainView/title/step/10"
-msgstr "Усталяванне сістэмы ахаладжэння"
+msgstr "Усталяванне сістэмы ахаладжэння і сістэмы эжэкцыі выхлапных газаў"
 
 msgid "mainView/title/step/11"
-msgstr "Усталяванне змазачнага абсталявання"
+msgstr "Усталяванне сістэмы змазкі"
 
 msgid "mainView/title/step/12"
-msgstr "Усталяванне паліўнай сістэмы"
+msgstr "Усталяванне гарматы"
 
 msgid "mainView/title/step/13"
-msgstr ""
-"Усталяванне органаў кіравання, сістэмы сціснутага паветра і пажаратушэння"
+msgstr "Усталяванне паліўнай сістэмы"
 
 msgid "mainView/title/step/14"
-msgstr "Дастаўка гарматы"
+msgstr ""
+"Усталяванне органаў кіравання, сістэмы сціснутага паветра і сістэмы "
+"пажаратушэння"
 
 msgid "mainView/title/step/15"
-msgstr "Мантаж акумулятара і электраконтураў"
+msgstr "Мантаж унутранага абсталявання"
 
 msgid "mainView/title/step/16"
-msgstr "Усталяванне элементаў кіравання баявога аддзялення"
+msgstr "Усталяванне акумулятараў і паветранага фільтра"
 
 msgid "mainView/title/step/17"
-msgstr "Усталяванне стэлажоў для боекамплекту"
+msgstr "Усталяванне кошыка вежы з механізмам набівання"
 
 msgid "mainView/title/step/18"
 msgstr "Усталяванне ўнутранага абсталявання вежы"
@@ -542,16 +583,16 @@ msgid "mainView/title/step/19"
 msgstr "Усталяванне вежы і гарматы"
 
 msgid "mainView/title/step/2"
-msgstr "Габарыты машыны"
+msgstr "Вызначэнне габарытаў машыны"
 
 msgid "mainView/title/step/20"
-msgstr "Размяшчэнне ММГ снарадаў"
+msgstr "Размяшчэнне боекамплекта"
 
 msgid "mainView/title/step/21"
-msgstr "Усталяванне вядучых колаў"
+msgstr "Усталяванне вядучых колаў і падвескі"
 
 msgid "mainView/title/step/22"
-msgstr "Усталяванне падтрымных каткоў"
+msgstr "Усталяванне падтрымных каткоў і ляніўцаў"
 
 msgid "mainView/title/step/23"
 msgstr "Працяжка тракавых пасаў"
@@ -560,40 +601,88 @@ msgid "mainView/title/step/24"
 msgstr "Пафарбоўка"
 
 msgid "mainView/title/step/25"
-msgstr "Усталяванне навяснога абсталявання"
+msgstr "Усталяванне надгусенічных паліц і навяснога абсталявання"
 
 msgid "mainView/title/step/26"
 msgstr "Выкатка машыны"
 
+msgid "mainView/title/step/27"
+msgstr "Палігонныя выпрабаванні: дзень 1"
+
+msgid "mainView/title/step/28"
+msgstr "Палігонныя выпрабаванні: дзень 2"
+
+msgid "mainView/title/step/29"
+msgstr "Палігонныя выпрабаванні: дзень 3"
+
 msgid "mainView/title/step/3"
-msgstr "Канструкцыя вежы і гарматы"
+msgstr "Кампаноўка гарматы і вежы"
+
+msgid "mainView/title/step/30"
+msgstr "Палігонныя выпрабаванні: дзень 4"
+
+msgid "mainView/title/step/31"
+msgstr "Палігонныя выпрабаванні: дзень 5"
+
+msgid "mainView/title/step/32"
+msgstr "Палігонныя выпрабаванні: дзень 6"
+
+msgid "mainView/title/step/33"
+msgstr "Палігонныя выпрабаванні: дзень 7"
+
+msgid "mainView/title/step/34"
+msgstr "Палігонныя выпрабаванні: дзень 8"
+
+msgid "mainView/title/step/35"
+msgstr "Палігонныя выпрабаванні: дзень 9"
+
+msgid "mainView/title/step/36"
+msgstr "Палігонныя выпрабаванні: дзень 10"
+
+msgid "mainView/title/step/37"
+msgstr "Палігонныя выпрабаванні: дзень 11"
+
+msgid "mainView/title/step/38"
+msgstr "Палігонныя выпрабаванні: дзень 12"
+
+msgid "mainView/title/step/39"
+msgstr "Палігонныя выпрабаванні: дзень 13"
 
 msgid "mainView/title/step/4"
-msgstr "Разнясенне таўшчынь брані"
+msgstr "Праверка таўшчыняў брані"
+
+msgid "mainView/title/step/40"
+msgstr "Палігонныя выпрабаванні: дзень 14"
 
 msgid "mainView/title/step/5"
-msgstr "Кампанавальная схема сілавой устаноўкі"
+msgstr "Агульная кампаноўка асноўных вузлоў"
 
 msgid "mainView/title/step/6"
-msgstr "Схема дадатковай аховы і баявога аддзялення"
+msgstr "Кампаноўка баявога аддзялення і навеска абсталявання"
 
 msgid "mainView/title/step/7"
-msgstr "Загартоўка брані"
+msgstr "Загартоўка брані. Зборка корпуса і вежы"
 
 msgid "mainView/title/step/8"
 msgstr "Усталяванне рухавіка"
 
 msgid "mainView/title/step/9"
-msgstr "Мантаж трансмісіі і прыводаў"
+msgstr "Усталяванне трансмісіі"
 
 msgid "mainView/title/step/final"
-msgstr "Будаўніцтва завершана"
+msgstr "Выпрабаванні завершаны"
+
+msgid "mainView/title/step/universal"
+msgstr "Палігонныя выпрабаванні"
+
+msgid "notifications/ReceivedRewards"
+msgstr "Атрымана маёмасць:"
 
 msgid "notifications/active"
 msgstr ""
-"Ваяры! Новая падзея ўжо рушыла. Паспейце прайсці ўвесь шлях будаўніцтва "
-"ўнікальная машыны ад эскізаў на кульмане да гатовай баявой адзінкі. У "
-"працэсе праходжання вас чакае мноства каштоўных узнагарод."
+"Ваяры! Новая падзея ўжо рушыла. Паспейце прайсці ўвесь шлях стварэння "
+"ўнікальнай машыны — ад накідаў на кульмане да гатовай баявой адзінкі. У "
+"працэсе праходжання вас чакаюць і іншыя каштоўныя ўзнагароды."
 
 msgid "notifications/announcement/AT-SPG"
 msgstr "СТ-САУ"
@@ -606,9 +695,8 @@ msgstr "Раздзел %(count)d: %(chapter_name)s будзе даступны %
 
 msgid "notifications/announcement/event"
 msgstr ""
-"Байцы! У вас ёсць магчымасць пабудаваць унікальную машыну — %(typeName)s "
-"%(roleName)s %(tankLevel)s узроўню %(tankName)s. Падзея пачынаецца "
-"%(startDate)s."
+"Ваяры! У вас ёсць магчымасць пабудаваць унікальную машыну — %(tankName)s з "
+"пускавой устаноўкай, якая страляе НКРСамі. Падзея пачынаецца %(startDate)s."
 
 msgid "notifications/announcement/heavyTank"
 msgstr "цяжкі танк"
@@ -641,28 +729,45 @@ msgstr ""
 msgid "notifications/payed/error"
 msgstr "Адбылася памылка пры куплі этапаў. Паспрабуйце яшчэ раз."
 
+msgid "notifications/payed/freeReroll"
+msgstr "Патрачана бясплатных замен: %(price)s"
+
 msgid "notifications/payed/multiple"
 msgstr "Жэтоны будаўніцтва (%(count)d шт.) набыты."
 
 msgid "notifications/payed/priceCrystal"
-msgstr "Спісана бонаў: %(price)s"
+msgstr "Патрачана бонаў: %(price)s"
 
 msgid "notifications/payed/priceGold"
-msgstr "Спісана золата: %(price)s"
+msgstr "Патрачана золата: %(price)s"
 
 msgid "notifications/payed/single"
 msgstr "Жэтон будаўніцтва (%(count)d шт.) набыты."
 
 msgid "notifications/postPayed/multiple"
-msgstr "Вольныя жэтоны (%(count)d шт.) набыты."
+msgstr "Этапы палігонных выпрабаванняў (%(count)d шт.) набыты."
 
 msgid "notifications/postPayed/single"
-msgstr "Вольны жэтон (%(count)d шт.) набыты."
+msgstr "Этап палігонных выпрабаванняў (%(count)d шт.) набыты."
 
-msgid "notifications/postProgression"
+msgid "notifications/purchaseStage"
 msgstr ""
-"Задачы падзеі больш недаступныя. Адсутныя ў вас этапы можна дакупіць на "
-"экране падзеі."
+"Задачы падзеі больш недаступныя. Адсутныя этапы можна купіць на экране "
+"дакуплі."
+
+msgid "notifications/refund/freeReroll"
+msgstr "Вернута бясплатных замен: %(price)s"
+
+msgid "notifications/refund/priceCrystal"
+msgstr "Вернута бонаў: %(price)s"
+
+msgid "notifications/refund/priceGold"
+msgstr "Вернута золата: %(price)s"
+
+msgid "notifications/rewardOutTime"
+msgstr ""
+"Адбылася памылка пры налічэнні ўзнагароды. Не хвалюйцеся, яна неўзабаве "
+"паступіць на ваш акаўнт."
 
 msgid "notifications/rewards/title"
 msgstr "Этапы пройдзены"
@@ -683,28 +788,27 @@ msgstr ""
 "Зборачны цэх зноў працуе. Дзякуй за чаканнне.\n"
 "Падзея працягнута да %(endDate)s."
 
+msgid "notifications/task/cancelReplacement"
+msgstr "Скасаванне замены задачы."
+
+msgid "notifications/task/paymentForReplacement"
+msgstr "Аплата замены задачы."
+
+msgid "notifications/task/replacementNotCompleted/body"
+msgstr ""
+"Вы не завяршылі замену задачы! Наведайце Зборачны цэх, каб зрабіць гэта."
+
+msgid "notifications/task/replacementNotCompleted/button"
+msgstr "Замяніць задачу"
+
+msgid "notifications/task/replacementNotCompleted/header"
+msgstr "Замена не завершана."
+
+msgid "notifications/task/successfullyReplaced"
+msgstr "Задача заменена. Добрай гульні!"
+
 msgid "notifications/title"
 msgstr "Зборачны цэх"
-
-msgid "postprogression/buyTokens/description/body"
-msgstr ""
-"Вольныя жэтоны выкарыстоўваюцца ў краме Зборачнага цэха і не ўдзельнічаюць у"
-" прагрэсіі будаўніцтва наступных сезонаў."
-
-msgid "postprogression/buyTokens/description/title"
-msgstr "АПІСАННЕ"
-
-msgid "postprogression/buyTokens/footer/availableTokens"
-msgstr "Можна купіць разоў: %(tokens)s"
-
-msgid "postprogression/buyTokens/footer/buy"
-msgstr "Купіць"
-
-msgid "postprogression/buyTokens/header/available"
-msgstr "У наяўнасці:"
-
-msgid "postprogression/buyTokens/header/title"
-msgstr "Вольны жэтон"
 
 msgid "prevView/body"
 msgstr ""
@@ -716,22 +820,142 @@ msgstr "У Зборачны цэх"
 msgid "prevView/title"
 msgstr "Купля недаступная"
 
+msgid "purchaseStage/buyTokens/description/body"
+msgstr ""
+"Вольныя жэтоны выкарыстоўваюцца ў краме Зборачнага цэха і не ўдзельнічаюць у"
+" прагрэсіі будаўніцтва наступных сезонаў."
+
+msgid "purchaseStage/buyTokens/description/title"
+msgstr "АПІСАННЕ"
+
+msgid "purchaseStage/buyTokens/footer/availableTokens"
+msgstr "Можна купіць разоў: %(tokens)s"
+
+msgid "purchaseStage/buyTokens/footer/buy"
+msgstr "Купіць"
+
+msgid "purchaseStage/buyTokens/header/available"
+msgstr "У наяўнасці:"
+
+msgid "purchaseStage/buyTokens/header/title"
+msgstr "Вольны жэтон"
+
+msgid "rerollView/accept"
+msgstr "Так!"
+
+msgid "rerollView/close"
+msgstr "ЗАКРЫЦЬ"
+
+msgid "rerollView/content/description"
+msgstr "Вы збіраецеся {brown_Open}замяніць задачу{brown_Close}"
+
+msgid "rerollView/content/reroll/cancel"
+msgstr "Скасаваць"
+
+msgid "rerollView/content/reroll/conditions"
+msgstr ""
+"Вам будуць прапанаваны {brown_Open}тры новыя задачы{brown_Close}.\n"
+"Паказаць задачы?"
+
+msgid "rerollView/content/reroll/confirm"
+msgstr "Паказаць"
+
+msgid "rerollView/content/reroll/description"
+msgstr "На адну з наступных"
+
+msgid "rerollView/content/reroll/error"
+msgstr "Адбылася памылка. Паспрабуйце яшчэ раз пазней."
+
+msgid "rerollView/content/reroll/free"
+msgstr "%(count) бясплатная замена"
+
+msgid "rerollView/content/reroll/more"
+msgstr "Змяніць яшчэ"
+
+msgid "rerollView/content/reroll/price"
+msgstr "Кошт:"
+
+msgid "rerollView/content/reroll/timer"
+msgstr "Да новых бясплатных замен:"
+
+msgid "rerollView/content/reward/header"
+msgstr "Узнагарода за задачу не змяняецца"
+
+msgid "rerollView/footer/cancel"
+msgstr "Пакінуць старую"
+
+msgid "rerollView/footer/cashback/paid"
+msgstr "Вам будзе вернута %(value)"
+
+msgid "rerollView/footer/completeQuest/cashback/free"
+msgstr "Вам будзе вернута {brown_Open}бясплатная замена{brown_Close}."
+
+msgid "rerollView/footer/completeQuest/description"
+msgstr "Задача, якую вы хацелі замяніць, выканана!"
+
+msgid "rerollView/footer/confirm"
+msgstr "Пацвердзіць замену"
+
+msgid "rerollView/footer/confirmOnly"
+msgstr "Так"
+
+msgid "rerollView/footer/phaseEnd/description"
+msgstr "Вы ўсё яшчэ можаце патраціць вольныя жэтоны або дакупіць этапы."
+
+msgid "rerollView/footer/phaseEnd/header"
+msgstr "Этап выканання задач завершаны."
+
+msgid "rerollView/header/title"
+msgstr "ЗАМЕНА ЗАДАЧЫ"
+
+msgid "rerollView/intro/tips/tip_1/description"
+msgstr ""
+"Цяпер вам даступная новая механіка замены задач! Калі не спадабалася задача,"
+" проста замяніце яе на новую. Замяняць задачы можна як бясплатна, так і за "
+"ўнутрыгульнявую валюту."
+
+msgid "rerollView/intro/tips/tip_1/title"
+msgstr "Магчымасць замены задачы"
+
+msgid "rerollView/intro/tips/tip_2/description"
+msgstr ""
+"Пры замене задачы вам будуць прапанаваны тры новыя. Узнагарода за задачу не "
+"змяняецца. Калі не спадабаліся прапанаваныя задачы, можна замяніць іх зноў."
+
+msgid "rerollView/intro/tips/tip_2/title"
+msgstr "Тры задачы на выбар"
+
+msgid "rerollView/intro/tips/tip_3/description"
+msgstr ""
+"Бясплатныя замены можна атрымліваць на працягу ўсяго этапу выканання задач. "
+"Яны налічваюцца пры адкрыцці раздзела, а таксама штодня, калі вы патрацілі "
+"ўсе замены."
+
+msgid "rerollView/intro/tips/tip_3/title"
+msgstr "Зручнасць выканання задач"
+
+msgid "rerollView/intro/title"
+msgstr "ЗАМЕНА ЗАДАЧЫ"
+
+msgid "rerollView/state/intro"
+msgstr "ЗБОРАЧНЫ ЦЭХ"
+
 msgid "rewardsView/button"
 msgstr "Так!"
 
 msgid "rewardsView/getAllRewards"
 msgstr ""
-"Гэта яшчэ не ўсе ўзнагароды падзеі. Выконвайце задачы Зборачнага цэха або "
-"дакупляйце жэтоны будаўніцтва і забірайце галоўную ўзнагароду."
+"Гэта яшчэ не ўсе ўзнагароды падзеі. Працягвайце выконваць задачы Зборачнага "
+"цэха, каб атрымаць больш узнагарод."
+
+msgid "rewardsView/subTitle/final"
+msgstr "Атрымана ўзнагарода за фінальны этап палігонных выпрабаванняў"
 
 msgid "rewardsView/subTitle/stage"
 msgid_plural "plural/rewardsView/subTitle/stage"
-msgstr[0] "Атрымана ўзнагарода за %(stages)s этап будаўніцтва машыны"
-msgstr[1] "Атрымана ўзнагарода за %(stages)s этапы будаўніцтва машыны"
-msgstr[2] "Атрымана ўзнагарода за %(stages)s этапаў будаўнітва машыны"
-
-msgid "rewardsView/subTitle/style"
-msgstr "Вы атрымалі ўзнагароду за баявую задачу"
+msgstr[0] "Атрымана ўзнагарода за %(stages)s этап Зборачнага цэха."
+msgstr[1] "Атрымана ўзнагарода за %(stages)s этапы Зборачнага цэха."
+msgstr[2] "Атрымана ўзнагарода за %(stages)s этапаў Зборачнага цэха."
 
 msgid "rewardsView/title/stage/many"
 msgstr "ЭТАПЫ ПРОЙДЗЕНЫ!"
@@ -755,7 +979,7 @@ msgstr[1] ""
 "%(stages)s этапы будаўніцтва."
 msgstr[2] ""
 "Вы атрымалі прэміум машыну %(level) %(typeIcon) %(name) і ўзнагароды за "
-"%(stages)s этапы будаўніцтва."
+"%(stages)s этапаў будаўніцтва."
 
 msgid "rewardsView/vehicle/title"
 msgstr "Дзякуй за куплю!"
@@ -779,17 +1003,45 @@ msgid "tabs/label/2"
 msgstr "Крама"
 
 msgid "tooltip/chapter/disabled/doFuture/note"
-msgstr "Будзе даступна: %(startText)s"
+msgstr "Стане даступная: %(startText)s"
 
 msgid "tooltip/chapter/disabled/doFuture/noteDate"
 msgstr "%(color_open)sс %(startDate)s%(color_close)s"
 
 msgid "tooltip/chapter/disabled/doPrevious/body"
-msgstr ""
-"Выканайце яшчэ %(count)d задач папярэдняга раздзела для доступу да бягучага"
+msgid_plural "plural/body"
+msgstr[0] "Выканайце яшчэ %(count)s задачу папярэдняга раздзела"
+msgstr[1] "Выканайце яшчэ %(count)s задачы папярэдняга раздзела"
+msgstr[2] "Выканайце яшчэ %(count)s задач папярэдняга раздзела"
 
 msgid "tooltip/chapter/disabled/header"
 msgstr "Раздзел недаступны"
+
+msgid "tooltip/chapter/disabled/postProgression/doPrevious/body"
+msgid_plural "plural/body"
+msgstr[0] ""
+"Прайдзіце яшчэ %(count)s этап Зборачнага цэха для доступу да бягучай."
+msgstr[1] ""
+"Прайдзіце яшчэ %(count)s этапы Зборачнага цэха для доступу да бягучай."
+msgstr[2] ""
+"Прайдзіце яшчэ %(count)s этапаў Зборачнага цэха для доступу да бягучай."
+
+msgid "tooltip/currency/armory_coin/description"
+msgstr ""
+"Асаблівы рэсурс, даступны падчас правядзення падзеі %(featureName)s. "
+"Выкарыстоўваецца ў Краме Зборачнага цэха."
+
+msgid "tooltip/currency/armory_coin/gain/currency"
+msgstr "вольныя жэтоны"
+
+msgid "tooltip/currency/armory_coin/info"
+msgstr "Аўтаматычна дадаецца ў Краму"
+
+msgid "tooltip/currency/armory_coin/progress"
+msgstr "%(received)s"
+
+msgid "tooltip/currency/armory_coin/title"
+msgstr "Вольны жэтон"
 
 msgid "tooltip/currency/availability"
 msgstr "Даступныя:"
@@ -804,53 +1056,86 @@ msgstr ""
 "%(availability)s з %(startDay)d %(startMonth)s %(startTime)s да %(endDay)d "
 "%(endMonth)s %(endYear)d г. %(endTime)s"
 
-msgid "tooltip/currency/description"
-msgstr ""
-"Асаблівы рэсурс, даступны падчас правядзення падзеі %(featureName)s. "
-"Выкарыстоўваецца для праходжання этапаў будаўніцтва."
-
 msgid "tooltip/currency/featureName"
 msgstr "«Зборачны цэх»"
 
-msgid "tooltip/currency/gain/currency"
-msgstr "жэтоны будаўніцтва"
-
-msgid "tooltip/currency/gain/description"
+msgid "tooltip/currency/gain/description/armory_coin"
 msgstr ""
-"Выконвайце задачы ў раздзелах, каб атрымліваць %(token)s. Улічыце, што "
-"колькасць жэтонаў у кожным раздзеле абмежаваная."
+"Атрымаць вольныя жэтоны можна ва ўзнагароду за выкананне задач раздзела "
+"«Палігонныя выпрабаванні»."
+
+msgid "tooltip/currency/gain/description/progression_token"
+msgstr ""
+"Выконвайце задачы ў раздзелах I-IV, каб атрымліваць жэтоны будаўніцтва."
 
 msgid "tooltip/currency/gain/title"
 msgstr "Як атрымаць"
 
-msgid "tooltip/currency/info"
-msgstr "Аўтаматычна дадаецца да прагрэсіі."
+msgid "tooltip/currency/progressLabel"
+msgstr "У наяўнасці:"
 
-msgid "tooltip/currency/postProgression/description"
+msgid "tooltip/currency/progression_token/description"
 msgstr ""
 "Асаблівы рэсурс, даступны падчас правядзення падзеі %(featureName)s. "
-"Выкарыстоўваецца ў краме Зборачнага цэха."
+"Выкарыстоўваецца для праходжання этапаў будаўніцтва."
 
-msgid "tooltip/currency/postProgression/gain/currency"
-msgstr "вольныя жэтоны"
+msgid "tooltip/currency/progression_token/gain/currency"
+msgstr "жэтоны будаўніцтва"
 
-msgid "tooltip/currency/postProgression/info"
-msgstr "Аўтаматычна дадаецца ў Краму."
+msgid "tooltip/currency/progression_token/info"
+msgstr "Аўтаматычна дадаецца да прагрэсіі."
 
-msgid "tooltip/currency/postProgression/progress"
-msgstr "%(received)s"
-
-msgid "tooltip/currency/postProgression/title"
-msgstr "Вольны жэтон"
-
-msgid "tooltip/currency/progress"
+msgid "tooltip/currency/progression_token/progress"
 msgstr "%(received)s / %(total)s"
 
-msgid "tooltip/currency/progressLabel"
-msgstr "Атрымана"
+msgid "tooltip/currency/progression_token/title"
+msgstr "Жэтон будаўніцтва"
 
-msgid "tooltip/currency/title"
-msgstr "Жэтоны будаўніцтва"
+msgid "tooltip/mainView/postProgressionToken/body"
+msgstr "Кожная выкананая задача прасоўвае вас па прагрэсіі на адзін этап."
+
+msgid "tooltip/mainView/postProgressionToken/header"
+msgstr "Праходжанне аднаго этапу"
+
+msgid "tooltip/mainView/rerollButton/conditionListPoint"
+msgstr "•"
+
+msgid "tooltip/mainView/rerollButton/condition_1"
+msgstr ""
+"Замена адбываецца бясплатна (пры наяўнасці бясплатных замен) або за "
+"ўнутрыгульнявую валюту."
+
+msgid "tooltip/mainView/rerollButton/condition_2"
+msgstr "Вам будуць прапанаваны тры выпадковыя ўмовы;"
+
+msgid "tooltip/mainView/rerollButton/condition_3"
+msgstr "Таксама вы можаце пакінуць старую ўмову задачы;"
+
+msgid "tooltip/mainView/rerollButton/condition_4"
+msgstr "Узнагарода за выкананне задачы застанецца ранейшай."
+
+msgid "tooltip/mainView/rerollButton/condition_5"
+msgstr "Бясплатныя замены налічваюцца штодзённа ў 03:00 (Мінск);"
+
+msgid "tooltip/mainView/rerollButton/condition_6"
+msgstr "Замены налічваюцца для кожнага раздзела асобна;"
+
+msgid "tooltip/mainView/rerollButton/condition_7"
+msgstr ""
+"Замены не налічваюцца, калі ў мэтавым раздзеле ёсць прынамсі адна бясплатная"
+" замена."
+
+msgid "tooltip/mainView/rerollButton/description"
+msgstr "У вас ёсць магчымасць замяніць умову любой актыўнай задачы."
+
+msgid "tooltip/mainView/rerollButton/freeRerollCount"
+msgstr "Бясплатных замен: %(freeRerollCount)s"
+
+msgid "tooltip/mainView/rerollButton/title"
+msgstr "Замяніць умову задачы"
+
+msgid "tooltip/mainView/rerollInfoContainer/title"
+msgstr "Бясплатныя замены"
 
 msgid "tooltip/quests/task/arcade"
 msgstr "Аркада"
@@ -873,14 +1158,51 @@ msgstr[0] "На тэхніцы ўзроўню:"
 msgstr[1] "На тэхніцы ўзроўняў:"
 msgstr[2] "На тэхніцы ўзроўняў:"
 
+msgid "tooltip/quests/task/subtitle/vehicleNations"
+msgstr "У наступных дзяржавах:"
+
 msgid "tooltip/quests/task/subtitle/vehicleType"
 msgstr "На тэхніцы тыпу:"
 
+msgid "tooltip/rerollView/description/bodyCondition_1"
+msgstr "Вы мяняеце толькі ўмову задачы;"
+
+msgid "tooltip/rerollView/description/bodyCondition_2"
+msgstr "Узнагарода за выкананне задачы застанецца ранейшай;"
+
+msgid "tooltip/rerollView/description/bodyCondition_3"
+msgstr ""
+"Пры замене задачы ўвесь прагрэс задачы, якая замяняецца, будзе скінуты."
+
+msgid "tooltip/rerollView/description/header"
+msgstr "Замена ўмовы задачы"
+
+msgid "tooltip/step/audio/note"
+msgstr "Націсніце, каб праслухаць аўдыязапіс."
+
+msgid "tooltip/step/future/body"
+msgstr "Узнагарода за праходжанне этапу недаступная."
+
+msgid "tooltip/step/header"
+msgstr "Этап будаўніцтва"
+
+msgid "tooltip/step/past/body"
+msgstr "Узнагарода за праходжанне этапу атрымана."
+
+msgid "tooltip/step/postprogression/header"
+msgstr "Этап палігонных выпрабаванняў"
+
+msgid "tooltip/step/present/body"
+msgstr "Узнагарода за праходжанне этапу даступная."
+
+msgid "tooltip/step/video/note"
+msgstr "Націсніце, каб паглядзець відэа."
+
 msgid "tooltip/tab/progression/body"
-msgstr "Прагляд дасягнутага прагрэсу ў падзеі «Зборачны цэх»."
+msgstr "Галоўная прагрэсія Зборачнага цэха."
 
 msgid "tooltip/tab/progression/header"
-msgstr "Зборачны цэх"
+msgstr "Ангар будаўніцтва"
 
 msgid "tooltip/tab/quests/body"
 msgstr "Задачы падзеі «Зборачны цэх»."
@@ -910,7 +1232,7 @@ msgid "tooltip/tokenStepper/press"
 msgstr "Націсніце"
 
 msgid "videoRewardView/back"
-msgstr "Назад"
+msgstr "Працягнуць"
 
 msgid "videoRewardView/subTitle"
 msgstr "Машына пабудавана і пастаўлена на ход. Выдатная праца!"
@@ -945,10 +1267,13 @@ msgstr "%(min)s хв."
 msgid "widget/countdown/sec"
 msgstr "< 1 хв."
 
-msgid "widget/postProgression"
+msgid "widget/notReplaced"
+msgstr "Да %(date)s"
+
+msgid "widget/purchaseStage"
 msgstr "Купіць можна яшчэ: %(countdown)s"
 
-msgid "widget/postProgressionShort"
+msgid "widget/purchaseStageShort"
 msgstr "Даступна яшчэ %(countdown)s"
 
 msgid "widget/title"
@@ -965,3 +1290,6 @@ msgstr "Усе ўзнагароды атрыманы"
 
 msgid "widget/underTitle/takeRewards"
 msgstr "Забярыце ўзнагароду"
+
+msgid "widget/underTitle/taskNotReplaced"
+msgstr "Задача не заменена"

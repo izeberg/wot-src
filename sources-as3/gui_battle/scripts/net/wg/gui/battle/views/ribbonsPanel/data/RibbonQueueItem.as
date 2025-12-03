@@ -28,12 +28,14 @@ package net.wg.gui.battle.views.ribbonsPanel.data
       
       public var role:String = "";
       
+      public var ability:String = "";
+      
       public function RibbonQueueItem()
       {
          super();
       }
       
-      public function setData(param1:String, param2:String, param3:Number, param4:String, param5:String, param6:String, param7:String, param8:Boolean, param9:String, param10:String) : void
+      public function setData(param1:String, param2:String, param3:Number, param4:String, param5:String, param6:String, param7:String, param8:Boolean, param9:String, param10:String, param11:String) : void
       {
          this.isNew = param8;
          this.ribbonId = param3;
@@ -45,6 +47,7 @@ package net.wg.gui.battle.views.ribbonsPanel.data
          this.countVehs = param7;
          this.bonusLabel = param9;
          this.role = param10;
+         this.ability = param11;
       }
    }
 }

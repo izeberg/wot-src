@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G184_EisBaer/normal/lod1/G184_EisBaer_turret_luke_anim</nodefullVisual>
+	<parent>vehicles/german/G184_EisBaer/normal/lod2/G184_EisBaer_turret_luke_anim</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.406596 -0.164245 -0.064032</min>
+		<max>0.171305 0.162790 0.127144</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

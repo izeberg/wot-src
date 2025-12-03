@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>s1Shape.vertices</vertices>
+			<primitive>s1Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd1</identifier>
+					<materialKind>112</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<fx>shaders/std_effects/glow.fx</fx>
+					<property>
+						alphaReference
+						<Int>133</Int>
+					</property>
+					<property>
+						destBlend
+						<Int>5</Int>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h03_mt_ny_2026/customization/Christmas_tree/Top/h03_NY26_Top_01_AM.dds</Texture>
+					</property>
+					<property>
+						g_tintColor
+						<Vector4>0.882353 0.882353 0.882353 1.000000</Vector4>
+					</property>
+					<property>
+						selfIllumination
+						<Float>3.000000</Float>
+					</property>
+					<property>
+						selfIlluminationEnvDependent
+						<Float>13.900000</Float>
+					</property>
+					<property>
+						srcBlend
+						<Int>3</Int>
+					</property>
+				</material>
+				<groupOrigin>0.589584 0.634349 -0.000141</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>s_nd0</identifier>
+					<materialKind>112</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<property>
+						alphaReference
+						<Int>1</Int>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h03_mt_ny_2026/customization/Christmas_tree/Top/h03_NY26_Top_01_AM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/h03_mt_ny_2026/customization/Christmas_tree/Top/h03_NY26_Top_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/h03_mt_ny_2026/customization/Christmas_tree/Top/h03_NY26_Top_01_ANM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+				</material>
+				<groupOrigin>0.589584 0.634349 -0.000141</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-0.336701 -0.001703 -0.500000</min>
+		<max>1.515869 1.307301 0.500000</max>
+	</boundingBox>
+	<customBsp>true</customBsp>
+	<geometrySize>133886</geometrySize>
+	<minUVDensity>0.044458</minUVDensity>
+</root>

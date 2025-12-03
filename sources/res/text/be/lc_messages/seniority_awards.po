@@ -51,16 +51,16 @@ msgid "compensationTooltip/description/vehicles"
 msgstr "Кампенсацыя за машыну"
 
 msgid "compensationTooltip/footerDetails/collectionItem"
-msgstr "Кампенсацыя за ўжо наяўны элемент калекцыі."
+msgstr "Кампенсацыя за ўжо наяўны ў вас элемент калекцыі."
 
 msgid "compensationTooltip/footerDetails/freeTokens"
 msgstr "Узнагарода, якая выдаецца як кампенсацыя."
 
 msgid "compensationTooltip/footerDetails/selectableBonus"
-msgstr "Кампенсацыя за машыну, якая ўжо ёсць у вас у Гаражы."
+msgstr "Кампенсацыя за машыну, якая ўжо ёсць у вашым Гаражы."
 
 msgid "compensationTooltip/footerDetails/vehicles"
-msgstr "Кампенсацыя за машыну, якая ўжо ёсць у вас у Гаражы."
+msgstr "Кампенсацыя за машыну, якая ўжо ёсць у вашым Гаражы."
 
 msgid "compensationTooltip/title/credits"
 msgstr "Срэбра"
@@ -102,7 +102,7 @@ msgstr "Выбраць машыну"
 
 msgid "notifications/offer/title"
 msgstr ""
-"Не забудзьцеся забраць падарунка. \n"
+"Не забудзьцеся забраць падарунак.\n"
 "Машына Х узроўню чакае вас!"
 
 msgid "notifications/quest/button"
@@ -138,8 +138,8 @@ msgstr ""
 
 msgid "offer/tooltip/description/vehicle_10_gift"
 msgstr ""
-"Вы можаце выбраць даследаваную тэхніку Х узроўню, якой у вас няма ў "
-"наяўнасці (акрамя штурмавых САУ)"
+"Вы можаце выбраць даследаваную тэхніку Х узроўню, якой у вас няма (акрамя "
+"штурмавых САУ)"
 
 msgid "offer/tooltip/title/vehicle_10_gift"
 msgstr "Тэхніка Х узроўню на выбар"
@@ -375,7 +375,7 @@ msgid "vehicleSelector/selectScreen/filter/shownCountDivider"
 msgstr "/ %(count)s"
 
 msgid "vehicleSelector/selectScreen/filter/tooltip/clearFilter/body"
-msgstr "Націсніце, каб скінуць налады фільтра на стандартныя."
+msgstr "Націсніце, каб вярнуць стандартныя налады фільтра."
 
 msgid "vehicleSelector/selectScreen/filter/tooltip/clearFilter/header"
 msgstr "Паставіць стандартныя налады"
@@ -397,7 +397,7 @@ msgstr "Нічога не знойдзена. Змяніце налады або
 
 msgid "vehicleSelector/selectScreen/noVehicles/hasAllVehicles"
 msgstr ""
-"Вы ўжо маеце ўсю даследаваную тэхніку {brown_Open}X узроўню{brown_Close}."
+"У вас ужо ёсць уся даследаваная тэхніка {brown_Open}X узроўню{brown_Close}."
 
 msgid "vehicleSelector/selectScreen/popover/nationTitle"
 msgstr "Нацыя"
@@ -409,7 +409,7 @@ msgid "vehicleSelector/selectScreen/popover/tooltip/body"
 msgstr "Налады паказу тэхнікі з улікам дзяржавы, тыпу"
 
 msgid "vehicleSelector/selectScreen/popover/tooltip/header"
-msgstr "Фільтр параметраў"
+msgstr "Фільтр паводле параметраў"
 
 msgid "vehicleSelector/selectScreen/popover/vehicleTitle"
 msgstr "Тып тэхнікі"
@@ -417,7 +417,7 @@ msgstr "Тып тэхнікі"
 msgid "vehicleSelector/selectScreen/subTitleMultiple"
 msgstr ""
 "Выберыце машыны {brown_Open}X узроўню{brown_Close}, якія хочаце пакінуць "
-"сабе (акрамя шутрмавых САУ)"
+"сабе (акрамя штурмавых САУ)"
 
 msgid "vehicleSelector/selectScreen/subTitleSingle"
 msgstr ""

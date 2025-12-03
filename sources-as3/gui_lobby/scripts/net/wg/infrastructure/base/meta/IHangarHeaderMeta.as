@@ -24,6 +24,8 @@ package net.wg.infrastructure.base.meta
       
       function as_setEarlyAccessEntryPoint(param1:Boolean) : void;
       
+      function as_setNYEntryPoint(param1:Boolean) : void;
+      
       function as_updateEconomyWidget(param1:Object) : void;
    }
 }

@@ -249,6 +249,7 @@ class REQ_CRITERIA(object):
         ACTIVE_OR_MAIN_IN_NATION_GROUP = RequestCriteria(PredicateCondition(lambda item: item.activeInNationGroup if item.isInInventory else isMainInNationGroupSafe(item.intCD)))
         FAVORITE = RequestCriteria(PredicateCondition(lambda item: item.isFavorite))
         PREMIUM = RequestCriteria(PredicateCondition(lambda item: item.isPremium))
+        SPECIAL = RequestCriteria(PredicateCondition(lambda item: item.isSpecial))
         READY = RequestCriteria(PredicateCondition(lambda item: item.isReadyToFight))
         OBSERVER = RequestCriteria(PredicateCondition(lambda item: item.isObserver))
         EARN_CRYSTALS = RequestCriteria(PredicateCondition(lambda item: item.isEarnCrystals))
@@ -297,6 +298,7 @@ class REQ_CRITERIA(object):
         CAN_SELL = RequestCriteria(PredicateCondition(lambda item: item.canSell))
         CAN_NOT_BE_SOLD = RequestCriteria(PredicateCondition(lambda item: item.canNotBeSold))
         IS_IN_BATTLE = RequestCriteria(PredicateCondition(lambda item: item.isInBattle))
+        IS_IN_UNIT = RequestCriteria(PredicateCondition(lambda item: item.isInUnit))
         SECRET = RequestCriteria(PredicateCondition(lambda item: item.isSecret))
         NAME_VEHICLE = staticmethod(lambda nameVehicle: RequestCriteria(PredicateCondition(lambda item: nameVehicle in item.searchableUserName)))
         NAME_VEHICLE_WITH_SHORT = staticmethod(lambda nameVehicle: RequestCriteria(PredicateCondition(lambda item: nameVehicle in item.searchableShortUserName or nameVehicle in item.searchableUserName)))
@@ -346,7 +348,7 @@ class REQ_CRITERIA(object):
     class RECRUIT(object):
         ROLES = staticmethod(lambda roles=tankmen.ROLES: RequestCriteria(PredicateCondition(--- This code section failed: ---
 
- L. 582         0  LOAD_FAST             0  'item'
+ L. 586         0  LOAD_FAST             0  'item'
                 3  LOAD_ATTR             0  'getRoles'
                 6  CALL_FUNCTION_0       0  None
                 9  POP_JUMP_IF_FALSE    53  'to 53'
@@ -718,7 +720,7 @@ class ItemsRequester(IItemsRequester):
 
     def isSynced--- This code section failed: ---
 
- L.1186         0  LOAD_FAST             0  'self'
+ L.1190         0  LOAD_FAST             0  'self'
                 3  LOAD_ATTR             0  '__blueprints'
                 6  LOAD_CONST               None
                 9  COMPARE_OP            9  is-not

@@ -26,6 +26,12 @@ package net.wg.gui.battle.battleRoyale.views.components.fullStats
          this.icon.isCentralize = true;
       }
       
+      protected function onDispose() : void
+      {
+         this.icon = null;
+         this.descriptionTF = null;
+      }
+      
       public final function dispose() : void
       {
          if(this._baseDisposed)
@@ -34,11 +40,6 @@ package net.wg.gui.battle.battleRoyale.views.components.fullStats
          }
          this.onDispose();
          this._baseDisposed = true;
-      }
-      
-      public function isDisposed() : Boolean
-      {
-         return this._baseDisposed;
       }
       
       public function update(param1:Object) : void
@@ -65,10 +66,9 @@ package net.wg.gui.battle.battleRoyale.views.components.fullStats
          }
       }
       
-      protected function onDispose() : void
+      public function isDisposed() : Boolean
       {
-         this.icon = null;
-         this.descriptionTF = null;
+         return this._baseDisposed;
       }
    }
 }

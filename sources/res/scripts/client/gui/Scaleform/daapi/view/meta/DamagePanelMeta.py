@@ -37,6 +37,10 @@ class DamagePanelMeta(BaseDAAPIComponent):
         if self._isDAAPIInited():
             return self.flashObject.as_updateSpeed(speed)
 
+    def as_showRammingS(self):
+        if self._isDAAPIInited():
+            return self.flashObject.as_showRamming()
+
     def as_setCruiseModeS(self, mode):
         if self._isDAAPIInited():
             return self.flashObject.as_setCruiseMode(mode)

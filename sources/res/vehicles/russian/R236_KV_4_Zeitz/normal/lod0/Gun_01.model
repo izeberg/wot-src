@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/russian/R236_KV_4_Zeitz/normal/lod1/Gun_01</parent>
+	<tank>true</tank>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-0.274071 -0.360001 0.290806</min>
+		<max>0.274069 0.507446 4.480759</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/russian/R236_KV_4_Zeitz/normal/lod0/Gun_01</nodefullVisual>
+</root>

@@ -6,6 +6,7 @@ package net.wg.gui.battle.views.consumablesPanel
    import flash.geom.ColorTransform;
    import net.wg.data.constants.InvalidationType;
    import net.wg.data.constants.Linkages;
+   import net.wg.data.constants.Values;
    import net.wg.data.constants.generated.CONSUMABLES_PANEL_SETTINGS;
    import net.wg.gui.battle.battleRoyale.views.components.RespawnButton.BattleRoyaleRespawnButton;
    import net.wg.gui.battle.comp7.views.consumablesPanel.Comp7ConsumableButton;
@@ -31,7 +32,7 @@ package net.wg.gui.battle.views.consumablesPanel
       
       private static const ITEM_WIDTH_PADDING:int = 57;
       
-      private static const ITEM_WIDTH_SHORT_PADDING:int = 49;
+      private static const ITEM_WIDTH_SHORT_PADDING:int = 52;
       
       private static const ITEM_WIDTH_PADDING_BIG:int = 82;
       
@@ -96,6 +97,8 @@ package net.wg.gui.battle.views.consumablesPanel
       
       private var _settingsId:int = -1;
       
+      private var _isExtendedAnim:Boolean = false;
+      
       private var _equipmentButtonLinkage:String = "";
       
       private var _basePanelWidth:int = 0;
@@ -105,6 +108,10 @@ package net.wg.gui.battle.views.consumablesPanel
       private var _tween:Tween = null;
       
       private var _classFactory:IClassFactory;
+      
+      private var _abilityModifier:BattleAbilityModifierIndicator;
+      
+      private var _shellSlots:uint = 0;
       
       public function ConsumablesPanel()
       {
@@ -142,6 +149,11 @@ package net.wg.gui.battle.views.consumablesPanel
          {
             this._popUp.dispose();
             this._popUp = null;
+         }
+         if(this._abilityModifier)
+         {
+            this._abilityModifier.dispose();
+            this._abilityModifier = null;
          }
          for each(_loc1_ in this._renderers)
          {
@@ -270,6 +282,28 @@ package net.wg.gui.battle.views.consumablesPanel
          invalidate(INVALIDATE_DRAW_LAYOUT);
       }
       
+      public function as_showAbilityModifier(param1:int, param2:Boolean) : void
+      {
+         if(this._abilityModifier == null)
+         {
+            this._abilityModifier = this._classFactory.getComponent(Linkages.ABILITY_MODIFIER_INDICATOR,BattleAbilityModifierIndicator);
+            addChildAt(this._abilityModifier,Values.ZERO);
+            this._abilityModifier.shellSlots = this._shellSlots;
+            this._abilityModifier.shellPadding = this._itemsPadding;
+            this._abilityModifier.isSmall = this._itemsPadding == ITEM_WIDTH_SHORT_PADDING;
+            this._abilityModifier.updateAnimationsSettings(this._isExtendedAnim);
+         }
+         this._abilityModifier.show(param1,param2);
+      }
+      
+      public function as_hideAbilityModifier(param1:Boolean) : void
+      {
+         if(this._abilityModifier)
+         {
+            this._abilityModifier.hide(param1);
+         }
+      }
+      
       public function as_addOptionalDeviceSlot(param1:int, param2:Number, param3:String, param4:String, param5:Boolean, param6:int, param7:Boolean) : void
       {
          var _loc8_:IBattleOptionalDeviceButton = null;
@@ -338,6 +372,7 @@ package net.wg.gui.battle.views.consumablesPanel
             _loc9_ = this.createShellButton();
             this._renderers[param1] = _loc9_;
             addChild(DisplayObject(_loc9_));
+            ++this._shellSlots;
          }
          else
          {
@@ -354,6 +389,8 @@ package net.wg.gui.battle.views.consumablesPanel
             _loc9_.setQuantity(param4,true);
             _loc9_.key = param3;
             _loc9_.addClickCallBack(this);
+            _loc9_.addRollOverCallBack(this);
+            _loc9_.addRollOutCallBack(this);
          }
          invalidate(INVALIDATE_DRAW_LAYOUT);
       }
@@ -519,20 +556,25 @@ package net.wg.gui.battle.views.consumablesPanel
          }
       }
       
-      public function as_setPanelSettings(param1:int) : void
+      public function as_setPanelSettings(param1:int, param2:Boolean) : void
       {
+         this._isExtendedAnim = param2;
+         if(this._abilityModifier)
+         {
+            this._abilityModifier.updateAnimationsSettings(this._isExtendedAnim);
+         }
          if(this._settingsId == param1)
          {
             return;
          }
          this._settingsId = param1;
-         var _loc2_:ConsumablesPanelSettings = this._settings[this._settingsId];
-         this._bottomPadding = _loc2_.bottomPadding;
-         this._itemsPadding = _loc2_.itemPadding;
-         this._groupsGap = _loc2_.groupGap;
+         var _loc3_:ConsumablesPanelSettings = this._settings[this._settingsId];
+         this._bottomPadding = _loc3_.bottomPadding;
+         this._itemsPadding = _loc3_.itemPadding;
+         this._groupsGap = _loc3_.groupGap;
          this._customIndexGap.splice(0,this._customIndexGap.length);
-         this._customIndexGap = _loc2_.customIndexGap;
-         this._shellButtonLinkage = _loc2_.shellButtonLinkage;
+         this._customIndexGap = _loc3_.customIndexGap;
+         this._shellButtonLinkage = _loc3_.shellButtonLinkage;
          invalidate(INVALIDATE_DRAW_LAYOUT);
       }
       
@@ -672,11 +714,32 @@ package net.wg.gui.battle.views.consumablesPanel
          }
       }
       
+      public function onButtonRollOver(param1:Object) : void
+      {
+         if(this._abilityModifier)
+         {
+            this._abilityModifier.hasHover = true;
+         }
+      }
+      
+      public function onButtonRollOut(param1:Object) : void
+      {
+         if(this._abilityModifier)
+         {
+            this._abilityModifier.hasHover = false;
+         }
+      }
+      
       public function setStateSizeBoundaries(param1:int, param2:int) : void
       {
          if(this._settingsId == CONSUMABLES_PANEL_SETTINGS.DEFAULT_SETTINGS_ID)
          {
             this._itemsPadding = getItemWidthPadding(param1);
+            if(this._abilityModifier)
+            {
+               this._abilityModifier.shellPadding = this._itemsPadding;
+               this._abilityModifier.isSmall = this._itemsPadding == ITEM_WIDTH_SHORT_PADDING;
+            }
             this._settings[this._settingsId].itemPadding = this._itemsPadding;
             invalidate(INVALIDATE_DRAW_LAYOUT);
          }

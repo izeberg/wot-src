@@ -297,7 +297,7 @@ BATTLE_RESULTS = [
  (
   'eventEquipCoinList', list, [], None, 'skip', ENTRY_TYPE.VEHICLE_SELF),
  (
-  'eventCreditsFactor100List', list, [], None, 'skip', ENTRY_TYPE.VEHICLE_SELF),
+  'eventCreditsFactor1000List', list, [], None, 'skip', ENTRY_TYPE.VEHICLE_SELF),
  (
   'eventXPFactor100List', list, [], None, 'skip', ENTRY_TYPE.VEHICLE_SELF),
  (
@@ -792,7 +792,9 @@ BATTLE_RESULTS = [
  (
   'directivesFreeXPFactor100', int, 0, None, 'any', ENTRY_TYPE.VEHICLE_SELF),
  (
-  'directivesTMenXPFactor100', int, 0, None, 'any', ENTRY_TYPE.VEHICLE_SELF)]
+  'directivesTMenXPFactor100', int, 0, None, 'any', ENTRY_TYPE.VEHICLE_SELF),
+ (
+  'completedQuestIDs', set, set(), None, 'joinSets', ENTRY_TYPE.SERVER)]
 BATTLE_PASS_RESULTS = [
  (
   'bpChapter', int, 0, None, 'skip', ENTRY_TYPE.ACCOUNT_ALL),

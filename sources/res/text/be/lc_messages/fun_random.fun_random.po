@@ -158,13 +158,13 @@ msgid "invite/tooltip/noVehicles"
 msgstr "Патрэбная прынамсі адна машына ў Гаражы."
 
 msgid "mapsView/carousel/title/hidden"
-msgstr "Мапы Палявых выпрабаванняў"
+msgstr "Мапы Аркады"
 
 msgid "mapsView/carousel/title/visible"
 msgstr "Выберыце мапу"
 
 msgid "mapsView/infoBlock/firstBlock/empty"
-msgstr "На выбранай мапе мадыфікатары Палявых выпрабаванняў не дзейнічаюць."
+msgstr "На выбранай мапе мадыфікатары Аркады не дзейнічаюць."
 
 msgid "mapsView/infoBlock/firstBlock/title"
 msgstr "Дзейныя мадыфікатары на мапе:"
@@ -175,8 +175,7 @@ msgstr ""
 "пра ўсе асаблівасці."
 
 msgid "mapsView/infoBlock/secondBlock/empty"
-msgstr ""
-"На выбранай мапе няма асаблівых пунктаў інтарэсу Палявых выпрабаванняў."
+msgstr "На выбранай мапе няма асаблівых пунктаў інтарэсу Аркады."
 
 msgid "mapsView/infoBlock/secondBlock/repairZone/description"
 msgstr ""
@@ -188,7 +187,7 @@ msgid "mapsView/infoBlock/secondBlock/repairZone/title"
 msgstr "— Рамонтная зона"
 
 msgid "mapsView/title"
-msgstr "АСАБЛІВАСЦІ Палявых выпрабаванняў"
+msgstr "АСАБЛІВАСЦІ АРКАДЫ"
 
 msgid "metaProgressionTooltip/header/completedFinal"
 msgstr "УСЕ ЭТАПЫ ПРОЙДЗЕНЫЯ"
@@ -324,87 +323,6 @@ msgstr "?empty?"
 msgid "modes/development/userName"
 msgstr "?empty?"
 
-msgid "modes/fep138/capsUserName"
-msgstr "ПАЛЯВЫЯ ВЫПРАБАВАННІ"
-
-msgid "modes/fep138/detailedUserName"
-msgstr "%(modeName)s"
-
-msgid "modes/fep138/metaProgressionTooltip/header/active"
-msgstr ""
-"Задача палявых выпрабаванняў. Этап %(done)s{par_Open}/%(total)s{par_Close}"
-
-msgid "modes/fep138/metaProgressionTooltip/subheader"
-msgstr "Задача Палявых выпрабаванняў."
-
-msgid "modes/fep138/metaProgressionTooltip/timer/completedResettable"
-msgstr "да новай задачы Палявых выпрабаванняў"
-
-msgid "modes/fep138/modeSubSelector/progression/info"
-msgstr "?empty?"
-
-msgid "modes/fep138/modeSubSelector/progression/timer"
-msgstr "да новай задачы Палявых выпрабаванняў"
-
-msgid "modes/fep138/mode_selector/battleCondition"
-msgstr "15x15"
-
-msgid "modes/fep138/mode_selector/description"
-msgstr "Абмежаванне спецыяльных снарадаў."
-
-msgid "modes/fep138/mode_selector/levelCondition"
-msgstr "?empty?"
-
-msgid "modes/fep138/mode_selector/progression/resettable"
-msgstr "Да новай задачы Палявых выпрабаванняў"
-
-msgid "modes/fep138/notification/finishSubModes/withProgression"
-msgstr "Рэжым %(subModeName)s завершаны: прагрэсія скінута."
-
-msgid "modes/fep138/notification/finishSubModes/withoutProgression"
-msgstr "Рэжым %(subModeName)s завершаны."
-
-msgid "modes/fep138/notification/newSubModes/withProgression"
-msgstr "Даступны новыя ўзнагарды і рэжым %(subModeName)s."
-
-msgid "modes/fep138/notification/newSubModes/withoutProgression"
-msgstr "Даступны новы рэжым — %(subModeName)s."
-
-msgid "modes/fep138/notification/switchOffSubModes"
-msgstr "Рэжым %(subModeName)s недаступны: вядуцца тэхнічныя працы."
-
-msgid "modes/fep138/notification/switchOnSubModes"
-msgstr "Рэжым %(subModeName)s зноў даступны."
-
-msgid "modes/fep138/progression/congratulation/descr"
-msgstr "Вы выканалі ўсе задачы Палявых выпрабаванняў"
-
-msgid "modes/fep138/progression/title"
-msgstr "ЗАДАЧА ПАЛЯВЫХ ВЫПРАБАВАННЯЎ"
-
-msgid "modes/fep138/scheduler/notification/available"
-msgstr "Баі рэжыму %(subModeName)s зноў даступныя."
-
-msgid "modes/fep138/scheduler/notification/available/title"
-msgstr "Рэжым спынення агню"
-
-msgid "modes/fep138/scheduler/notification/primeTime"
-msgstr ""
-"Баі рэжым %(subModeName)s недаступныя да заканчэння рэжыму спынення агню."
-
-msgid "modes/fep138/scheduler/notification/primeTime/title"
-msgstr "Рэжым спынення агню"
-
-msgid "modes/fep138/tooltip/filter/body"
-msgstr ""
-"Паказваць/схаваць прыдатную тэхніку для рэжыму «Палявыя выпрабаванні»."
-
-msgid "modes/fep138/tooltip/filter/header"
-msgstr "Тэхніка рэжыму «Палявыя выпрабаванні»"
-
-msgid "modes/fep138/userName"
-msgstr "Палявыя выпрабаванні"
-
 msgid "modes/undefined/capsUserName"
 msgstr "АРКАДА"
 
@@ -483,8 +401,7 @@ msgid "modes/undefined/scheduler/notification/primeTime/title"
 msgstr "Рэжым спынення агню"
 
 msgid "modes/undefined/tooltip/filter/body"
-msgstr ""
-"Паказваць/схаваць прыдатную тэхніку для рэжыму «Палявыя выпрабаванні»."
+msgstr "Паказваць/схаваць прыдатную тэхніку для рэжыму «Аркада»."
 
 msgid "modes/undefined/tooltip/filter/header"
 msgstr "Аркадная тэхніка"
@@ -496,12 +413,12 @@ msgid "modifiersPanel/subtitle"
 msgstr "Падрабязней"
 
 msgid "modifiersPanel/title"
-msgstr "Асаблівасці Палявых выпрабаванняў"
+msgstr "Асаблівасці Аркады"
 
 msgid "modifiersPanel/tooltipBody"
 msgstr ""
 "Націсніце, каб даведацца падрабязней пра асаблівасці гульні на мапах рэжыму "
-"«Палявыя выпрабаванні»."
+"«Аркада»."
 
 msgid "navigationButton/goTo/maps_view"
 msgstr "Мапы Аркады"
@@ -768,56 +685,6 @@ msgstr "?empty?"
 
 msgid "sub_modes/development/userName/quoted"
 msgstr "?empty?"
-
-msgid "sub_modes/fep138/capsUserName"
-msgstr "ПАЛЯВЫЯ ВЫПРАБАВАННІ"
-
-msgid "sub_modes/fep138/detailsHelp/page1/description"
-msgstr ""
-"Снарады атрымалі параметр масы, і цяпер ваш боекамплект — гэта не проста "
-"арсенал, а стратэгічы выбар. Плануйце разважна: баланс паміж моцай і "
-"колькасцю можа вырашыць вынік бою."
-
-msgid "sub_modes/fep138/detailsHelp/page1/title"
-msgstr "Вага мае значэнне"
-
-msgid "sub_modes/fep138/detailsHelpHint/description"
-msgstr "для знаёмства з асаблівасцямі рэжыму"
-
-msgid "sub_modes/fep138/detailsHelpHint/press"
-msgstr "Націсніце"
-
-msgid "sub_modes/fep138/detailsHelpTitle"
-msgstr "Палявыя выпрабаванні"
-
-msgid "sub_modes/fep138/subModeCard/battleCondition"
-msgstr "15x15"
-
-msgid "sub_modes/fep138/subModeCard/description"
-msgstr ""
-"Стандартныя баі без мадыфікатараў\n"
-"і заліку ў статыстыку"
-
-msgid "sub_modes/fep138/subModeCard/levelCondition"
-msgstr "{parSecondary_open}I{parSecondary_close} %(levels)s&nbsp;узроўні"
-
-msgid "sub_modes/fep138/subModeCard/title"
-msgstr "Палявыя выпрабаванні"
-
-msgid "sub_modes/fep138/tips/tip1/description"
-msgstr ""
-"Снарады атрымалі параметр масы, і цяпер ваш боекамплект — гэта не проста "
-"арсенал, а стратэгічы выбар. Плануйце разважна: баланс паміж моцай і "
-"колькасцю можа вырашыць вынік бою."
-
-msgid "sub_modes/fep138/tips/tip1/title"
-msgstr "Вага мае значэнне"
-
-msgid "sub_modes/fep138/userName"
-msgstr "Палявыя выпрабаванні"
-
-msgid "sub_modes/fep138/userName/quoted"
-msgstr "Палявыя выпрабаванні"
 
 msgid "sub_modes/undefined/capsUserName"
 msgstr "UNKNOWN SUB MODE NAME"

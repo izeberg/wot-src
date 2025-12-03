@@ -159,6 +159,10 @@ class Vehicle(BigWorld.Entity, BWEntitiyComponentTracker, BattleAbilitiesCompone
         return self.publicInfo.maxHealth
 
     @property
+    def team(self):
+        return self.publicInfo.team
+
+    @property
     def battleModifiers(self):
         return self.guiSessionProvider.arenaVisitor.getArenaModifiers()
 

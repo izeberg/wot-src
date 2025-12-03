@@ -135,7 +135,7 @@ package net.wg.gui.battle.views.ribbonsPanel
          var _loc3_:RibbonCtrl = new RibbonCtrl(_loc2_,this._animationCallback);
          this._iconsContainer.addChildAt(_loc3_.iconsAnim,0);
          this._textsContainer.addChild(_loc3_.textsAnim);
-         this._bonusContainer.addChild(_loc3_.bonusAnim);
+         this._bonusContainer.addChild(_loc3_.bonusesContainer);
          this._ribbonsStorage.push(_loc3_);
          return _loc3_;
       }

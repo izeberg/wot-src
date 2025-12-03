@@ -4,9 +4,9 @@
 	<tank>true</tank>
 	<extent>192.000000</extent>
 	<visibilityBox>
-		<min>-0.725645 -0.155225 -0.839994</min>
-		<max>1.005092 0.660904 0.741941</max>
+		<min>-0.725645 -0.155225 -0.713564</min>
+		<max>0.874934 0.660904 0.741941</max>
 	</visibilityBox>
-	<nodefullVisual>vehicles/british/GB139_Vulcan/normal/lod3/Turret_01</nodefullVisual>
 	<tank>true</tank>
+	<nodefullVisual>vehicles/british/GB139_Vulcan/normal/lod3/Turret_01</nodefullVisual>
 </root>

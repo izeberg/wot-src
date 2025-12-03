@@ -1483,6 +1483,19 @@ def _migrateTo141(core, data, initialized):
     data[GUI_START_BEHAVIOR][GuiSettingsBehavior.RANKED_WELCOME_VIEW_SHOWED] = False
 
 
+def _migrateTo142(core, data, initialized):
+    nyStorageData = data['nyStorage']
+    nyStorageData[NewYearStorageKeys.NY_FIRST_ENTRANCE] = True
+    nyStorageData[NewYearStorageKeys.NY_WELCOME_NOTIFICATION] = False
+    nyStorageData[NewYearStorageKeys.NY_PET_TOYS_REMOVED] = False
+    nyStorageData[NewYearStorageKeys.NY_FIRST_QUEST_VIDEO_VISITED] = False
+    nyStorageData[NewYearStorageKeys.NY_FIRST_QUEST_ENTRANCE] = 0
+    nyStorageData[NewYearStorageKeys.DECORATIONS_POPOVER_VIEWED] = False
+    nyStorageData[NewYearStorageKeys.DECORATIONS_POPOVER_BROKEN] = False
+    nyStorageData[NewYearStorageKeys.HAS_TOYS_HINT_SHOWN] = False
+    nyStorageData[NewYearStorageKeys.NY_TAMAGOTCHI_TUTORIAL_COMPLETED] = 0
+
+
 _versions = (
  (
   1, _initializeDefaultSettings, True, False),
@@ -1763,7 +1776,9 @@ _versions = (
  (
   140, _migrateTo140, False, False),
  (
-  141, _migrateTo141, False, False))
+  141, _migrateTo141, False, False),
+ (
+  142, _migrateTo142, False, False))
 
 @adisp_async
 @adisp_process

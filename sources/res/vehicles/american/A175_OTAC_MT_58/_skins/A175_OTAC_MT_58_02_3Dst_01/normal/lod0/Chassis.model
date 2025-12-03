@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/american/A175_OTAC_MT_58/_skins/A175_OTAC_MT_58_02_3Dst_01/normal/lod1/Chassis</parent>
+	<tank>true</tank>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.651489 -0.000002 -2.802203</min>
+		<max>1.651489 1.031909 2.887187</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/american/A175_OTAC_MT_58/_skins/A175_OTAC_MT_58_02_3Dst_01/normal/lod0/Chassis</nodefullVisual>
+</root>

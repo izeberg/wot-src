@@ -1,7 +1,7 @@
 import operator, time
 from abc import ABCMeta
 from collections import namedtuple
-import typing, constants, nations
+import logging, typing, constants, nations
 from debug_utils import LOG_ERROR, LOG_DEBUG
 from dossiers2.ui.achievements import ACHIEVEMENT_BLOCK
 from gui.Scaleform.locale.PERSONAL_MISSIONS import PERSONAL_MISSIONS
@@ -22,8 +22,9 @@ from gui.shared.gui_items.Vehicle import VEHICLE_TYPES_ORDER
 from gui.shared.system_factory import registerQuestBuilders
 from gui.shared.utils import ValidationResult
 from gui.shared.utils.requesters.QuestsProgressRequester import PersonalMissionsProgressRequester
-from helpers import dependency, getLocalizedData, i18n, time_utils
-from personal_missions import PM_BRANCH, PM_BRANCH_TO_FINAL_PAWN_COST, PM_FLAG, PM_STATE as _PMS
+from helpers import dependency
+from helpers import getLocalizedData, i18n, time_utils
+from personal_missions import PM_STATE as _PMS, PM_FLAG, PM_BRANCH, PM_BRANCH_TO_FINAL_PAWN_COST
 from personal_missions_config import getQuestConfig
 from personal_missions_constants import DISPLAY_TYPE
 from shared_utils import findFirst, first
@@ -36,6 +37,7 @@ if typing.TYPE_CHECKING:
     from typing import Dict, Callable, List, Optional, Tuple, Union
     from gui.Scaleform.daapi.view.lobby.server_events.events_helpers import EventPostBattleInfo
     import pm_quests
+_logger = logging.getLogger()
 
 class DEFAULTS_GROUPS(object):
     FOR_CURRENT_VEHICLE = 'currentlyAvailable'
@@ -282,7 +284,7 @@ class Group(ServerEventAbstract):
     def getLinkedAction(self, actions):
         return getLinkedActionID(self.getID(), actions)
 
-    def getMainQuest(self, events):
+    def getMainQuest(self, events, skipMainTokenQuestError=True):
         if not self.isMarathon():
             LOG_ERROR('Trying to find main quest in non-marathon group', self.getID())
             return
@@ -291,7 +293,8 @@ class Group(ServerEventAbstract):
                 if events_helpers.isMarathon(quest.getID()):
                     return quest
 
-            LOG_ERROR('There is no main token quest in the marathon', self.getID())
+            if not skipMainTokenQuestError:
+                LOG_ERROR('There is no main token quest in the marathon', self.getID())
             return
 
     def withManyTokenSources(self, svrEvents):
@@ -744,7 +747,7 @@ class Action(ServerEventAbstract):
 
             return result
 
-    def getModifiers(self):
+    def getModifiersDict(self):
         result = {}
         for stepData in self._data.get('steps'):
             mName = stepData.get('name')
@@ -756,7 +759,10 @@ class Action(ServerEventAbstract):
             else:
                 result[mName] = m
 
-        return sorted(result.itervalues(), key=operator.methodcaller('getName'), cmp=compareModifiers)
+        return result
+
+    def getModifiers(self):
+        return sorted(self.getModifiersDict().itervalues(), key=operator.methodcaller('getName'), cmp=compareModifiers)
 
 
 class PMCampaign(object):
@@ -1594,3 +1600,18 @@ def getPM3QuestTypeByQuestID(questID):
         if divisionResult == 4:
             return PM3QuestLineTypes.MASTER
         return
+
+
+class IExtensionQuestsSource(object):
+
+    def isActive(self):
+        raise NotImplementedError
+
+    def questInSource(self, questID):
+        raise NotImplementedError
+
+    def getQuestsData(self):
+        raise NotImplementedError
+
+    def getQuestByID(self, questID):
+        raise NotImplementedError

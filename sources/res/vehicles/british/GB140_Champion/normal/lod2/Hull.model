@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/british/GB140_Champion/normal/lod3/Hull</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.973588 -0.598097 -4.096659</min>
+		<max>1.962732 0.744821 4.102455</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/british/GB140_Champion/normal/lod2/Hull</nodefullVisual>
+</root>

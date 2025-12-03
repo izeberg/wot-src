@@ -11,6 +11,8 @@ package net.wg.infrastructure.base.meta
       
       function as_createMarker(param1:int, param2:String, param3:String) : DisplayObject;
       
+      function as_createRaccoonMarker(param1:int, param2:String) : DisplayObject;
+      
       function as_createPlatoonMarker(param1:int, param2:String, param3:String) : DisplayObject;
       
       function as_createCustomMarker(param1:int, param2:String, param3:String, param4:String) : DisplayObject;

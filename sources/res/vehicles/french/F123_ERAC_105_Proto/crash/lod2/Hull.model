@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/french/F123_ERAC_105_Proto/crash/lod3/Hull</parent>
+	<tank>true</tank>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.289581 -0.729326 -3.093756</min>
+		<max>1.285074 0.857760 2.969807</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/french/F123_ERAC_105_Proto/crash/lod2/Hull</nodefullVisual>
+</root>

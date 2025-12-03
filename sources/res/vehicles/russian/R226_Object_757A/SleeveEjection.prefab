@@ -27,11 +27,6 @@
 			<UUID>5d90b069-c138-4cc6-a081-af73be644238</UUID>
 			<flags>0</flags>
 		</GameObject>
-		<GameObject>
-			<name/>
-			<UUID>0edcf051-d978-432e-8726-5bce3d70321a</UUID>
-			<flags>0</flags>
-		</GameObject>
 	</GameObjects>
 	<components>
 		<ComponentPool>
@@ -74,16 +69,6 @@
 					<property>
 						<name>Parent</name>
 						<link>91c6d5c7-d50d-49f9-be7c-9f4c30bc714c</link>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>5</objectIndex>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Parent</name>
-						<link>11c89a8d-15fc-4900-9a06-1adc695f1af8</link>
 					</property>
 				</config>
 			</component>
@@ -174,24 +159,6 @@
 			</component>
 			<component>
 				<objectIndex>4</objectIndex>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Position</name>
-						<value>0 0 0</value>
-					</property>
-					<property>
-						<name>Scale</name>
-						<value>1 1 1</value>
-					</property>
-					<property>
-						<name>Rotation</name>
-						<value>0 0 0</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>5</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -431,20 +398,9 @@
 						<name>Cast Shadows</name>
 						<value>1</value>
 					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>5</objectIndex>
-				<flags>0</flags>
-				<config>
 					<property>
-						<name>Model name</name>
-						<isAsset>true</isAsset>
-						<value>vehicles/russian/R226_Object_757A/normal/lod0/Turret_01.model</value>
-					</property>
-					<property>
-						<name>Cast Shadows</name>
-						<value>1</value>
+						<name>Parts</name>
+						<collection/>
 					</property>
 				</config>
 			</component>
@@ -533,7 +489,7 @@
 					</property>
 					<property>
 						<name>enableDirt</name>
-						<value>1</value>
+						<value>0</value>
 					</property>
 				</config>
 			</component>

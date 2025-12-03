@@ -92,7 +92,7 @@
 		<enabled>true</enabled>
 		<simRadius>100.000000</simRadius>
 	</havok>
-	<enableClusteredShading>false</enableClusteredShading>
+	<enableClusteredShading>true</enableClusteredShading>
 	<isSHGridQualityOverridden>true</isSHGridQualityOverridden>
 	<overrideSHGridQuality>0</overrideSHGridQuality>
 	<hangarSettings>

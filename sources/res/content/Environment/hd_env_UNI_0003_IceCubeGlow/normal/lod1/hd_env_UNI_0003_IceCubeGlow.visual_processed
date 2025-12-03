@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>hd_env_UNI_0003_IceCubeGlow</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>HP_module0</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.356895 0.000000</row3>
+				</transform>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_wall_0</identifier>
+					<materialKind>73</materialKind>
+					<collisionFlags>131</collisionFlags>
+				</material>
+				<groupOrigin>0.000582 0.960367 0.001144</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>n_metal0</identifier>
+					<fx>shaders/std_effects/glow.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>73</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/Environment/hd_env_UNI_0006_SledGlow/NY23_MegaIllumination_Garland_AM.dds</Texture>
+					</property>
+					<property>
+						selfIllumination
+						<Float>500.000000</Float>
+					</property>
+					<property>
+						alphaReference
+						<Int>66</Int>
+					</property>
+					<property>
+						g_tintColor
+						<Vector4>1.000000 0.039216 0.000000 1.000000</Vector4>
+					</property>
+				</material>
+				<groupOrigin>0.009619 0.584315 -0.038055</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				2
+				<material>
+					<identifier>n_metal1</identifier>
+					<fx>shaders/std_effects/glow.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>73</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/Environment/hd_env_UNI_0005_DeerGlow/NY23_MegaIllumination_AM.dds</Texture>
+					</property>
+					<property>
+						selfIllumination
+						<Float>50.000000</Float>
+					</property>
+					<property>
+						g_tintColor
+						<Vector4>0.643137 0.549020 0.384314 1.000000</Vector4>
+					</property>
+				</material>
+				<groupOrigin>0.000000 0.393893 0.000000</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-0.748390 -0.013072 -0.671270</min>
+		<max>0.767628 1.929909 0.595159</max>
+	</boundingBox>
+	<customBsp>true</customBsp>
+	<geometrySize>15294</geometrySize>
+	<minUVDensity>0.022429</minUVDensity>
+</root>

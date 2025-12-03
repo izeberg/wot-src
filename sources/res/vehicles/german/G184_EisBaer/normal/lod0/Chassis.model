@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/german/G184_EisBaer/normal/lod1/Chassis</parent>
+	<tank>true</tank>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.666785 -0.000000 -3.711481</min>
+		<max>1.666785 1.274967 3.646346</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/german/G184_EisBaer/normal/lod0/Chassis</nodefullVisual>
+</root>

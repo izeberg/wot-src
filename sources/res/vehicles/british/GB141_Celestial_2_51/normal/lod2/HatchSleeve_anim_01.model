@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/british/GB141_Celestial_2_51/normal/lod3/HatchSleeve_anim_01</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.244662 0.357392 -0.098875</min>
+		<max>-1.070660 0.775936 0.114201</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/british/GB141_Celestial_2_51/normal/lod2/HatchSleeve_anim_01</nodefullVisual>
+</root>

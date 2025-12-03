@@ -91,6 +91,8 @@ package net.wg.gui.battle.views.damagePanel
       
       public var background:BattleAtlasSprite = null;
       
+      public var rammingIndicator:MovieClip = null;
+      
       public var tankIndicator:TankIndicator;
       
       public var stunCounterMc:StunCounter;
@@ -162,6 +164,7 @@ package net.wg.gui.battle.views.damagePanel
          TextFieldEx.setNoTranslate(this.healthTF,true);
          this.speedTF.autoSize = TextFieldAutoSize.LEFT;
          initedHeight += BG_HEIGHT_COMPENSATE;
+         this.rammingIndicator.stop();
       }
       
       private static function checkTankmanName(param1:String) : Boolean
@@ -231,6 +234,7 @@ package net.wg.gui.battle.views.damagePanel
          this.speedTF = null;
          this.speedModeIndicator = null;
          this.background = null;
+         this.rammingIndicator = null;
          this.fireIndicator.removeEventListener(MouseEvent.CLICK,this.onFireIndicatorClickHandler);
          this.fireIndicator.dispose();
          this.fireIndicator = null;
@@ -267,6 +271,11 @@ package net.wg.gui.battle.views.damagePanel
          this._tooltipData.dispose();
          this._tooltipData = null;
          super.onDispose();
+      }
+      
+      public function as_showRamming() : void
+      {
+         this.rammingIndicator.gotoAndPlay(1);
       }
       
       override protected function draw() : void
@@ -500,11 +509,6 @@ package net.wg.gui.battle.views.damagePanel
       public function as_updateSpeed(param1:int) : void
       {
          this.updateSpeed(param1);
-      }
-      
-      public function setHealthBarProgressImageName(param1:String) : void
-      {
-         this.healthBar.setProgressImageName(param1);
       }
       
       private function updateSpeed(param1:int) : void

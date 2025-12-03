@@ -67,9 +67,9 @@ class MissionsBonusConditionsFormatter(MissionsBattleConditionsFormatter):
         super(MissionsBonusConditionsFormatter, self).__init__({'vehicleKillsCumulative': _VehicleKillsCumulativeFormatter(), 
            'vehicleDamageCumulative': _VehicleDamageCumulativeFormatter(), 
            'vehicleStunCumulative': _VehicleStunCumulativeFormatter(), 
-           'cumulative': _CumulativeResultFormatter(), 
-           'cumulativeExt': _CumulativeResultFormatter(), 
-           'unit': _CumulativeResultFormatter(), 
+           'cumulative': CumulativeResultFormatter(), 
+           'cumulativeExt': CumulativeResultFormatter(), 
+           'unit': CumulativeResultFormatter(), 
            'cumulativeSum': _CumulativeSumFormatter()})
 
 
@@ -140,7 +140,7 @@ class _CumulativableFormatter(MissionFormatter, CumulativableFormatter):
         return FormattableField(FORMATTER_IDS.CUMULATIVE, (int(current), int(total)))
 
 
-class _CumulativeResultFormatter(_CumulativableFormatter):
+class CumulativeResultFormatter(_CumulativableFormatter):
 
     @classmethod
     def _getIconKey(cls, condition=None):
@@ -231,7 +231,7 @@ class _CumulativeSumFormatter(_CumulativableFormatter):
         return packDescriptionField('')
 
 
-class BattlesCountFormatter(_CumulativeResultFormatter):
+class BattlesCountFormatter(CumulativeResultFormatter):
 
     def __init__(self, hasPostBattleConditions):
         self.__hasPostBattleConditions = hasPostBattleConditions

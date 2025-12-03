@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/german/G184_EisBaer/normal/lod1/Hull</parent>
+	<tank>true</tank>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/german/G184_EisBaer/normal/lod0/Hull</nodefullVisual>
+	<visibilityBox>
+		<min>-1.726349 -0.692843 -3.923312</min>
+		<max>1.726349 0.718127 3.850081</max>
+	</visibilityBox>
+</root>

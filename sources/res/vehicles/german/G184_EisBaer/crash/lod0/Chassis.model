@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<visibilityBox>
+		<min>-1.666785 0.000000 -3.713021</min>
+		<max>1.666785 1.274967 3.644867</max>
+	</visibilityBox>
+	<parent>vehicles/german/G184_EisBaer/crash/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/german/G184_EisBaer/crash/lod0/Chassis</nodefullVisual>
+</root>

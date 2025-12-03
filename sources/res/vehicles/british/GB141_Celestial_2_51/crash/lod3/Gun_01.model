@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/british/GB141_Celestial_2_51/crash/lod4/Gun_01</parent>
+	<tank>true</tank>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-0.433019 -0.307777 -2.053568</min>
+		<max>0.433019 0.266059 4.148001</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/british/GB141_Celestial_2_51/crash/lod3/Gun_01</nodefullVisual>
+</root>

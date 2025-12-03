@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<nodelessVisual>vehicles/russian/R204_ISU_122_2/crash/lod4/Gun_02</nodelessVisual>
 	<tank>true</tank>
 	<visibilityBox>
-		<min>-0.610072 -0.307894 0.200547</min>
-		<max>0.379150 0.335257 4.856171</max>
+		<min>-0.329843 -0.148064 0.285899</min>
+		<max>0.349542 0.143817 4.840921</max>
 	</visibilityBox>
 	<materialNames/>
+	<nodelessVisual>vehicles/russian/R204_ISU_122_2/crash/lod4/Gun_02</nodelessVisual>
 </root>

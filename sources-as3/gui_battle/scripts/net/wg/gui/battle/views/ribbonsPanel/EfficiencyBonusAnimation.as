@@ -12,41 +12,43 @@ package net.wg.gui.battle.views.ribbonsPanel
       
       private static const VALUE_OFFSET_X:int = 8;
       
-      private static const ROLE_IMAGE_FX_SCALE:Number = 1.5;
+      private static const IMAGE_FX_SCALE:Number = 1.5;
       
-      private static const ROLE_IMAGE_FX_DELAY:int = 400;
+      private static const IMAGE_FX_DELAY:uint = 400;
       
-      private static const ROLE_IMAGE_FX_DURATION:int = 300;
+      private static const IMAGE_FX_DURATION:uint = 300;
+      
+      private static const WIDTH_FROM_ATLAS:uint = 32;
        
       
-      public var roleImage:BattleAtlasSprite = null;
+      public var image:BattleAtlasSprite = null;
       
-      public var roleImageFx:BattleAtlasSprite = null;
+      public var imageFx:BattleAtlasSprite = null;
       
-      private var _isExtendedAnim:Boolean = true;
+      protected var _isExtendedAnim:Boolean = true;
       
-      private var _roleImageFxTween:Tween = null;
+      private var _imageFxTween:Tween = null;
       
       public function EfficiencyBonusAnimation()
       {
          super();
          visible = false;
          x = VALUE_OFFSET_X;
-         this.roleImage.isSmoothingEnabled = true;
-         this.roleImageFx.isSmoothingEnabled = true;
-         this.roleImage.visible = false;
-         this.roleImageFx.visible = false;
-         this.roleImageFx.isCentralize = true;
+         this.image.isSmoothingEnabled = true;
+         this.imageFx.isSmoothingEnabled = true;
+         this.image.visible = false;
+         this.imageFx.visible = false;
+         this.imageFx.isCentralize = true;
       }
       
       public final function dispose() : void
       {
-         this.roleImage = null;
-         this.roleImageFx = null;
-         if(this._roleImageFxTween)
+         this.image = null;
+         this.imageFx = null;
+         if(this._imageFxTween)
          {
-            this._roleImageFxTween.dispose();
-            this._roleImageFxTween = null;
+            this._imageFxTween.dispose();
+            this._imageFxTween = null;
          }
       }
       
@@ -55,13 +57,13 @@ package net.wg.gui.battle.views.ribbonsPanel
          this._isExtendedAnim = param1;
          if(this._isExtendedAnim)
          {
-            this._roleImageFxTween = new Tween(ROLE_IMAGE_FX_DURATION,this.roleImageFx,{
+            this._imageFxTween = new Tween(IMAGE_FX_DURATION,this.imageFx,{
                "scaleX":1,
                "scaleY":1
             },{
                "paused":true,
                "ease":Linear.easeOut,
-               "delay":ROLE_IMAGE_FX_DELAY,
+               "delay":IMAGE_FX_DELAY,
                "onComplete":this.onTweenComplete
             });
          }
@@ -71,10 +73,10 @@ package net.wg.gui.battle.views.ribbonsPanel
       {
          if(this._isExtendedAnim && visible)
          {
-            this.roleImage.visible = false;
-            this.roleImageFx.scaleX = this.roleImageFx.scaleY = ROLE_IMAGE_FX_SCALE;
-            this.roleImageFx.visible = true;
-            this._roleImageFxTween.paused = false;
+            this.image.visible = false;
+            this.imageFx.scaleX = this.imageFx.scaleY = IMAGE_FX_SCALE;
+            this.imageFx.visible = true;
+            this._imageFxTween.paused = false;
          }
       }
       
@@ -83,19 +85,24 @@ package net.wg.gui.battle.views.ribbonsPanel
          visible = StringUtils.isNotEmpty(param1);
          if(visible)
          {
-            this.roleImage.visible = !this._isExtendedAnim;
-            this.roleImage.imageName = BATTLEATLAS.getRole32x32Icon(param2);
+            this.image.visible = !this._isExtendedAnim;
+            this.image.imageName = BATTLEATLAS.getRole32x32Icon(param2);
             if(this._isExtendedAnim)
             {
-               this.roleImageFx.imageName = BATTLEATLAS.getRole32x32Icon(param2);
+               this.imageFx.imageName = BATTLEATLAS.getRole32x32Icon(param2);
             }
          }
       }
       
       private function onTweenComplete() : void
       {
-         this.roleImage.visible = true;
-         this.roleImageFx.visible = false;
+         this.image.visible = true;
+         this.imageFx.visible = false;
+      }
+      
+      public function get widthFromAtlas() : Number
+      {
+         return WIDTH_FROM_ATLAS;
       }
    }
 }

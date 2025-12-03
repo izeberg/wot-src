@@ -6,6 +6,7 @@ package net.wg.gui.lobby.lobbyVehicleMarkerView
    import net.wg.gui.components.common.lobbyVehicleMarkers.CustomMarker;
    import net.wg.gui.components.common.lobbyVehicleMarkers.LobbyVehicleMarkers;
    import net.wg.gui.components.common.lobbyVehicleMarkers.PlatoonMarker;
+   import net.wg.gui.components.common.lobbyVehicleMarkers.RaccoonMarker;
    import net.wg.infrastructure.base.meta.ILobbyVehicleMarkerViewMeta;
    import net.wg.infrastructure.base.meta.impl.LobbyVehicleMarkerViewMeta;
    
@@ -58,6 +59,15 @@ package net.wg.gui.lobby.lobbyVehicleMarkerView
          addChild(_loc4_);
          this._markers[param1] = _loc4_;
          return _loc4_;
+      }
+      
+      public function as_createRaccoonMarker(param1:int, param2:String) : DisplayObject
+      {
+         var _loc3_:RaccoonMarker = App.instance.utils.classFactory.getComponent(Linkages.RACCOON_MARKER,RaccoonMarker);
+         _loc3_.setLabel(param2);
+         addChild(_loc3_);
+         this._markers[param1] = _loc3_;
+         return _loc3_;
       }
       
       public function as_removeMarker(param1:int) : void

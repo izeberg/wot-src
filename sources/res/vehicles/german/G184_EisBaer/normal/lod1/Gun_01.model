@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G184_EisBaer/normal/lod1/Gun_01</nodefullVisual>
+	<parent>vehicles/german/G184_EisBaer/normal/lod2/Gun_01</parent>
+	<tank>true</tank>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.253175 -0.287206 0.143889</min>
+		<max>0.252896 0.284462 5.247581</max>
+	</visibilityBox>
+</root>

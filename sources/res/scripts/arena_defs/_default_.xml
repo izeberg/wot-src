@@ -186,13 +186,6 @@
 			<runDelayDev>45</runDelayDev>
 			<maxPlayersInTeam>7</maxPlayersInTeam>
 		</TOURNAMENT_COMP7>
-		<PORTAL>
-			<estimatedLoad>
-				0.6
-				<!--BW_String-->
-			</estimatedLoad>
-			<maxPlayersInTeam>5</maxPlayersInTeam>
-		</PORTAL>
 	</bonusTypeOverrides>
 	<gameplayTypes>
 		<ctf>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/russian/R130_KV4_Mikhailov/crash/lod3/Gun_02</parent>
+	<tank>true</tank>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-0.430419 -0.479255 -1.441198</min>
+		<max>0.385118 0.417726 6.125957</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/russian/R130_KV4_Mikhailov/crash/lod2/Gun_02</nodefullVisual>
+</root>

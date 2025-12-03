@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.901461 -0.000000 -3.812774</min>
+		<max>1.901461 1.259386 3.919614</max>
+	</visibilityBox>
+	<parent>vehicles/british/GB140_Champion/normal/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/british/GB140_Champion/normal/lod0/Chassis</nodefullVisual>
+</root>

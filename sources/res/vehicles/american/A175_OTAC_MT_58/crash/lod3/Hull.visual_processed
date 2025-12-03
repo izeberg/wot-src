@@ -49,8 +49,8 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>hull_Shape.vertices</vertices>
-			<primitive>hull_Shape.indices</primitive>
+			<vertices>hullShape.vertices</vertices>
+			<primitive>hullShape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -86,10 +86,9 @@
 						excludeMaskAndAOMap
 						<Texture>vehicles/american/A175_OTAC_MT_58/OTAC_MT_58_hull_01_AO.dds</Texture>
 					</property>
-					<sortOrder>0</sortOrder>
 					<property>
-						doubleSided
-						<Bool>true</Bool>
+						alphaReference
+						<Int>128</Int>
 					</property>
 				</material>
 				<groupOrigin>0.000000 0.018879 0.041625</groupOrigin>
@@ -106,12 +105,16 @@
 						<Texture>vehicles/american/A175_OTAC_MT_58/OTAC_MT_58_chassis_01_AM.dds</Texture>
 					</property>
 					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
 						metallicGlossMap
 						<Texture>vehicles/american/A175_OTAC_MT_58/OTAC_MT_58_chassis_01_GMM.dds</Texture>
 					</property>
 					<property>
 						g_crashUVTiling
-						<Vector4>4.000000 4.000000 0.000000 0.000000</Vector4>
+						<Vector4>2.000000 1.000000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						crashTileMap
@@ -125,17 +128,46 @@
 						excludeMaskAndAOMap
 						<Texture>vehicles/american/A175_OTAC_MT_58/OTAC_MT_58_chassis_01_AO.dds</Texture>
 					</property>
-					<sortOrder>0</sortOrder>
 					<property>
-						doubleSided
-						<Bool>true</Bool>
+						alphaReference
+						<Int>128</Int>
+					</property>
+				</material>
+				<groupOrigin>0.000000 -0.338859 0.026146</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				2
+				<material>
+					<fx>shaders/std_effects/PBS_tank.fx</fx>
+					<materialKind>0</materialKind>
+					<identifier>tank_mat_inside</identifier>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>vehicles/russian/Crash_inside/crash_inside_AM.dds</Texture>
 					</property>
 					<property>
 						colorIdMap
 						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/russian/Crash_inside/crash_inside_GMM.dds</Texture>
+					</property>
+					<property>
+						g_useNormalPackDXT1
+						<Bool>true</Bool>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/russian/Crash_inside/crash_inside_NM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/russian/Crash_inside/crash_inside_AO.dds</Texture>
+					</property>
 				</material>
-				<groupOrigin>0.000000 -0.338859 0.026146</groupOrigin>
+				<groupOrigin>-0.001209 0.016376 -0.119818</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -143,6 +175,6 @@
 		<min>-1.750000 -0.826696 -2.949676</min>
 		<max>1.750000 0.522561 3.032926</max>
 	</boundingBox>
-	<geometrySize>168910</geometrySize>
-	<minUVDensity>0.000629</minUVDensity>
+	<geometrySize>176274</geometrySize>
+	<minUVDensity>0.003021</minUVDensity>
 </root>

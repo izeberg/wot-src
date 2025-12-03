@@ -33,7 +33,7 @@ msgid "buttonLabel/buy"
 msgstr "Купіць"
 
 msgid "buttonLabel/buyMore"
-msgstr "Купіць каробкі"
+msgstr "Купіць кантэйнеры"
 
 msgid "buttonLabel/close"
 msgstr "Закрыць"
@@ -66,7 +66,7 @@ msgid "compensationTooltip/vehicle/bottomText"
 msgstr "Узнагарода, якая з'яўляецца кампенсацыяй за машыну."
 
 msgid "compensationTooltip/vehicle/header"
-msgstr "Кампенсацыя за машыну, якая ўжо ёсць у вас у Гаражы."
+msgstr "Кампенсацыя за машыну, якая ўжо ёсць у вашым Гаражы."
 
 msgid "desctiptions/cosmic_2024_silver"
 msgstr ""
@@ -251,6 +251,29 @@ msgstr ""
 "танкапарка прапаноў. Скрыжуйце пальцы – няхай вам трапіцца менавіта тая "
 "машына, пра якую вы марылі!"
 
+msgid "desctiptions/ny_2026_big"
+msgstr ""
+"У кожным кантэйнеры з пэўнай імавернасцю вы можаце знайсці прэміум або акцыйную тэхніку VIII-X узроўняў, аздобкі для Гаража і іншую маёмасць, у тым ліку: 3D-стылі, золата, Танкавы прэміум акаўнт, вольны досвед, срэбра, асабістыя рэзервы і вучэбныя матэрыялы.\n"
+"Таксама можна атрымаць штосьці сапраўды легендарнае."
+
+msgid "desctiptions/ny_2026_small"
+msgstr ""
+"У кантэйнеры вы знойдзеце рыштунак, настаўленні, срэбра, Танкавы прэміум "
+"акаўнт, асабістыя рэзервы, вучэбныя матэрыялы. А таксама, канечне, "
+"мандарыны!"
+
+msgid "desctiptions/ny_2026_surprise"
+msgstr ""
+"Ва ўзнагародах аўтамата вы знойдзеце розныя тэматычныя элементы выгляду, "
+"Танкавы прэміум акаўнт, срэбра, рэзервы, золата, вучэбныя матэрыялы... А "
+"таксама, магчыма, штосьці легендарнае."
+
+msgid "desctiptions/ny_2026_tanks"
+msgstr ""
+"А вось тут ужо ўсё сур’ёзна: вы атрымаеце выпадковую машыну з вялізнага "
+"танкапарка прапаноў. Скрыжуйце пальцы – няхай вам трапіцца менавіта тая "
+"машына, пра якую вы марылі!"
+
 msgid "desctiptions/rp_2024_large"
 msgstr ""
 "Каштоўны кантэйнер, які змяшчае прэміум тэхніку, у тым ліку машыны VIII "
@@ -353,10 +376,10 @@ msgid "entryDesc/buySlot"
 msgstr "Вялікія каробкі можна купіць у Прэміум краме"
 
 msgid "entryDesc/newYear_premium"
-msgstr "Вялікія каробкі"
+msgstr "Вялікія кантэйнеры"
 
 msgid "entryDesc/newYear_usual"
-msgstr "Малыя каробкі"
+msgstr "Скрынкі з мандарынамі"
 
 msgid "entryDesc/questSlot"
 msgstr "Малыя каробкі можна здабыць, выконваючы задачы"
@@ -436,7 +459,7 @@ msgid "multiOpenView/boxesInStorage"
 msgstr "Каробак маецца: {count}"
 
 msgid "multiOpenView/boxesNotAvailable"
-msgstr "Каробкі скончыліся"
+msgstr "Кантэйнеры скончыліся"
 
 msgid "multiOpenView/openBoxesLabel"
 msgstr "Адкрыць наступныя {count} каробак"
@@ -451,6 +474,40 @@ msgid "noBoxes/default"
 msgstr ""
 "Каб атрымаць кантэйнеры, бярыце ўдзел у пэўных падзеях і выконвайце звязаныя"
 " з імі баявыя задачы. Пэўныя кантэйнеры можна дакупіць у гульнявой Краме."
+
+msgid "noBoxes/ny_2025_big"
+msgstr ""
+"Каб атрымаць святочны кантэйнер, павышайце ўзровень святочнасці, бярыце "
+"ўдзел у пэўных падзеях і выконвайце звязаныя з імі баявыя задачы. Пэўныя "
+"кантэйнеры можна дакупіць у гульнявой Краме."
+
+msgid "noBoxes/ny_2025_small"
+msgstr ""
+"Скрынку з мандарынамі можна атрымаць за выкананне задач Дзеда Мароза і за "
+"некаторыя іншыя актыўнасці падзеі «Наш Новы год»"
+
+msgid "noBoxes/ny_2025_tanks"
+msgstr ""
+"Легендарны кантэйнер можна атрымаць з пэўным шанцам з любога спіса змесціва "
+"кантэйнераў, а таксама паводле механікі гарантаванай узнагароды на 3-м этапе"
+" і за жэтоны ў аўтамаце ўдачы."
+
+msgid "noBoxes/ny_2026_big"
+msgstr ""
+"Каб атрымаць святочны кантэйнер, павышайце ўзровень святочнасці, бярыце "
+"ўдзел у пэўных падзеях і выконвайце звязаныя з імі баявыя задачы. Пэўныя "
+"кантэйнеры можна дакупіць у гульнявой Краме."
+
+msgid "noBoxes/ny_2026_small"
+msgstr ""
+"Скрынку з мандарынамі можна атрымаць за выкананне задач Дзеда Мароза і за "
+"некаторыя іншыя актыўнасці падзеі «Наш Новы год»"
+
+msgid "noBoxes/ny_2026_tanks"
+msgstr ""
+"Легендарны кантэйнер можна атрымаць з пэўным шанцам з любога спіса змесціва "
+"кантэйнераў, а таксама паводле механікі гарантаванай узнагароды на 3-м этапе"
+" і за жэтоны ў аўтамаце ўдачы."
 
 msgid "noBoxes/tanks_birthday_2025_large"
 msgstr ""
@@ -499,11 +556,11 @@ msgid "notification/lootBoxesAutoOpen/boxes"
 msgstr "Адкрыта: %(boxes)s"
 
 msgid "notification/lootBoxesAutoOpen/counter"
-msgstr "%(boxName)s (x%(count)d)"
+msgstr "Кантэйнер %(boxName)s (x%(count)d)"
 
 msgid "notification/lootBoxesAutoOpen/rewards"
 msgstr ""
-"Атрымана:\n"
+"Атрымана маёмасць:\n"
 "%(rewards)s"
 
 msgid "notification/lootBoxesAutoOpen/text"
@@ -544,6 +601,20 @@ msgstr "Унікальны танкіст: %(count)s"
 
 msgid "notification/rewards"
 msgstr "Вам надалі наступныя ўзнагароды:"
+
+msgid "notification/statistic/disabled/body"
+msgstr ""
+"Узніклі тэхнічныя складанасці, і статыстыка адкрыцця кантэйнера часова "
+"адключана."
+
+msgid "notification/statistic/disabled/header"
+msgstr "Статыстыка адкрыцця кантэйнераў"
+
+msgid "notification/statistic/enabled/body"
+msgstr "Усе праблемы вырашаны. Статыстыка адкрыцця кантэйнераў зноў працуе."
+
+msgid "notification/statistic/enabled/header"
+msgstr "Статыстыка адкрыцця кантэйнераў"
 
 msgid "restrictedMessage/body"
 msgstr ""
@@ -592,7 +663,7 @@ msgid "rewardView/rerollBtnLabel"
 msgstr "Пераадкрыць"
 
 msgid "rewardView/zeroBoxes"
-msgstr "Каробкі скончыліся"
+msgstr "Кантэйнеры скончыліся"
 
 msgid "specialReward/continueBtn"
 msgstr "Працягнуць"
@@ -607,16 +678,16 @@ msgid "specialReward/vehicle/goToBtn"
 msgstr "Паглядзець у Гаражы"
 
 msgid "tooltip/category/header/Christmas"
-msgstr "Калядныя каробкі"
+msgstr "Калядныя кантэйнеры"
 
 msgid "tooltip/category/header/Fairytale"
-msgstr "Чароўныя каробкі"
+msgstr "Чароўныя кантэйнеры"
 
 msgid "tooltip/category/header/NewYear"
-msgstr "Навагоднія каробкі"
+msgstr "Навагоднія кантэйнеры"
 
 msgid "tooltip/category/header/Oriental"
-msgstr "Чароўныя каробкі"
+msgstr "Чароўныя кантэйнеры"
 
 msgid "tooltip/category/rewards/Christmas"
 msgstr "Каляднай калекцыі"
@@ -706,7 +777,7 @@ msgid "userName/newYear_premium"
 msgstr "ВЯЛІКІЯ КАРОБКІ"
 
 msgid "userName/newYear_usual"
-msgstr "МАЛЫЯ КАРОБКІ"
+msgstr "СКРЫНКІ З МАНДАРЫНАМІ"
 
 msgid "userName/ny_2024_VI"
 msgstr "Ёлачныя цацкі"
@@ -733,6 +804,18 @@ msgid "userName/ny_2025_surprise"
 msgstr "Аўтамат удачы"
 
 msgid "userName/ny_2025_tanks"
+msgstr "Легендарны кантэйнер"
+
+msgid "userName/ny_2026_big"
+msgstr "Навагодні кантэйнер"
+
+msgid "userName/ny_2026_small"
+msgstr "Скрынка з мандарынамі"
+
+msgid "userName/ny_2026_surprise"
+msgstr "Аўтамат удачы"
+
+msgid "userName/ny_2026_tanks"
 msgstr "Легендарны кантэйнер"
 
 msgid "userName/rp_2024_large"

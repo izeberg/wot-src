@@ -487,6 +487,12 @@ class HangarVehicleAppearance(ScriptGameObject):
                     _logger.error('Failed to get base vehicle outfit. VehicleDescriptor is None.')
                     outfit = self.itemsFactory.createOutfit()
                 return outfit
+            if vDesc is not None:
+                currentVehTypeCompDescr = g_currentVehicle.item.descriptor.type.compactDescr
+                if currentVehTypeCompDescr != vDesc.type.compactDescr:
+                    vehicleCD = vDesc.makeCompactDescr()
+                    outfit = self.customizationService.getEmptyOutfitWithNationalEmblems(vehicleCD=vehicleCD)
+                    return outfit
             return self.__getVehicleOutfit(g_currentVehicle.item)
 
     def __assembleModel(self):

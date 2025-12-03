@@ -701,7 +701,7 @@ msgid "bonusType/4"
 msgstr "Адмысловы бой"
 
 msgid "bonusType/42"
-msgstr "Палявыя выпрабаванні"
+msgstr "«%(modeName)s»"
 
 msgid "bonusType/43"
 msgstr "Націск"
@@ -717,9 +717,6 @@ msgstr "Палігон"
 
 msgid "bonusType/6"
 msgstr "Баявое навучанне"
-
-msgid "bonusType/61"
-msgstr "Разлом"
 
 msgid "bonusType/7"
 msgstr "Камандны бой"
@@ -1110,9 +1107,6 @@ msgstr "Стварыць звяз падзеі"
 
 msgid "contextMenu/createMapboxSquad"
 msgstr "Разведка боем: стварыць звяз"
-
-msgid "contextMenu/createPortalSquad"
-msgstr "Звяз падзеі «Разлом»"
 
 msgid "contextMenu/createPrivateChannel"
 msgstr "Адправіць паведамленне"
@@ -2166,6 +2160,16 @@ msgstr ""
 "Сумарны бонус разлічваецца мультыплікатыўна і можа адрознівацца ад "
 "пашпартных значэнняў."
 
+msgid "extraParams/name/abilityCooldownBonus"
+msgstr ""
+"Параметр, які адказвае за памяншэнне часу перанабівання мадыфікацыі пры "
+"паспяховым знішчэнні тэхнікі праціўніка падчас дзеяння мадыфікацыі."
+
+msgid "extraParams/name/abilityDurationBonus"
+msgstr ""
+"Параметр, які адказвае за павелічэнне часу дзеяння мадыфікацыі пры "
+"паспяховым прабіцці тэхнікі праціўніка падчас дзеяння мадыфікацыі."
+
 msgid "extraParams/name/artNotificationDelayFactor"
 msgstr ""
 "Параметр, які адказвае за час, які праходзіць з моманту стрэлу САУ да "
@@ -2227,8 +2231,9 @@ msgstr ""
 msgid "extraParams/name/enemyModulesCrewCritChance"
 msgstr ""
 "Параметр, які адказвае за змену шанцу прычыніць крытычныя пашкоджанні "
-"экіпажу і ўнутраным модулям праціўніка. Толькі для бранябойных, "
-"падкаліберных, бранябойных апераных падкаліберных і кумулятыўных снарадаў."
+"экіпажу і ўнутраным модулям праціўніка. Працуе толькі для бранябойных, "
+"падкаліберных, бранябойных апераных падкаліберных і кумулятыўных снарадаў, а"
+" таксама для бранябойнага і кумулятыўнага НКРСа."
 
 msgid "extraParams/name/equipmentPreparationTime"
 msgstr ""
@@ -2272,7 +2277,7 @@ msgstr "Параметр, які адказвае за шанц пазбегну
 
 msgid "extraParams/name/speedLimitsBonus"
 msgstr ""
-"Параметр, які адказвае за павелічэнне максімальнай хуткасці і хуткасці "
+"Параметр, які адказвае за павелічэнне максімальнай хуткасці / хуткасці "
 "задняга ходу."
 
 msgid "extraParams/name/stunResistanceEffectFactor"
@@ -2298,6 +2303,12 @@ msgid "extraParams/name/temperatureStatesCount"
 msgstr ""
 "Колькасць тэрмічных стадый, якімі валодае гармата. Кожная тэрмічная стадыя "
 "можа валодаць сваімі спецыфічнымі атрыбутамі і мадыфікатарамі."
+
+msgid "extraParams/name/trackRammingDamageFactor"
+msgstr ""
+"Параметр, які адказвае за атрыманыя пашкоджанні шасі ад тарану. Пры "
+"сутыкненні машын улічваецца таўшчыня брані ў пункце ўдару, розніца ў масе, а"
+" таксама хуткасць машын."
 
 msgid "extraParams/name/vehPenaltyForDamageEngineAndCombat"
 msgstr ""
@@ -2367,16 +2378,36 @@ msgstr ""
 "Паліўныя бакі, якія страцілі ўсе ачкі трываласці, гарантавана выклікаюць "
 "пажар."
 
+msgid "extraParams/name/vehicleGunAimSpeed"
+msgstr ""
+"Параметр, які адказвае за павелічэнне хуткасці навядзення падчас дзеяння "
+"мадыфікацыі."
+
 msgid "extraParams/name/vehicleGunAndGunClipCooldown"
 msgstr ""
 "Час паміж поўнай разрадкай магазіна (або гармат) і поўным набіваннем / Час "
 "паміж стрэлам і пераходам да наступнага набітага снарада, гарматы або "
 "касеты."
 
+msgid "extraParams/name/vehicleGunDamage"
+msgstr ""
+"Параметр, які адказвае за павелічэнне пашкоджанняў пры актывацыі мадыфікацыі"
+" / пры прабіцці машыны праціўніка за час дзеяння мадыфікацыі."
+
 msgid "extraParams/name/vehicleGunKillReloadTime"
 msgstr ""
 "Параметр, які адказвае за перанабіванне гарматы пасля знішчэння праціўніка "
-"падчас дзеяння баявога ўмення."
+"падчас дзеяння мадыфікацыі."
+
+msgid "extraParams/name/vehicleGunReloadPenalty"
+msgstr ""
+"Параметр, які адказвае за аднаразовае запавольванне часу набівання перад наступным стрэлам. Чым больш зроблена стрэлаў на працягу дзеяння мадыфікацыі, тым больш часу дадаецца да набівання пасля заканчэння дзеяння мадыфікацыі.\n"
+"Штраф скідваецца пасля стрэлу. Навык «Інтуіцыя» не скідвае накладзены штраф."
+
+msgid "extraParams/name/vehicleGunReloadTime"
+msgstr ""
+"Параметр, які адказвае за памяншэнне часу перанабівання гарматы падчас "
+"дзеяння мадыфікацыі."
 
 msgid "extraParams/name/vehicleGunReloadTimeReceiveShot"
 msgstr ""
@@ -2414,12 +2445,6 @@ msgid "extraParams/name/vehicleOwnSpottingTime"
 msgstr ""
 "Параметр, які адказвае за час бачнасці вашай машыны пасля яе выхаду з зоны "
 "прамой бачнасці праціўніка. Стандартнае значэнне — 10 секунд."
-
-msgid "extraParams/name/vehicleRamChassisDamageResistance"
-msgstr ""
-"Параметр, які адказвае за атрыманыя пашкоджанні шасі ад тарану. Пры "
-"сутыкненні машын улічваецца таўшчыня брані ў пункце ўдару, розніца ў масе, а"
-" таксама хуткасць машын."
 
 msgid "extraParams/name/vehicleRamDamageResistance"
 msgstr ""
@@ -2793,7 +2818,7 @@ msgid "header/account/premium/days"
 msgstr "сут"
 
 msgid "header/account/premium/hours"
-msgstr "гадз"
+msgstr "гадз."
 
 msgid "header/customization/season/desert"
 msgstr "ПУСТЫННЫ"
@@ -2835,7 +2860,7 @@ msgid "header/level/5"
 msgstr "V"
 
 msgid "header/level/6"
-msgstr "VІ"
+msgstr "VI"
 
 msgid "header/level/7"
 msgstr "VII"
@@ -4784,7 +4809,7 @@ msgid "moduleInfo/params/maxSteeringLockAngle"
 msgstr "Максімальны вугал павароту колаў"
 
 msgid "moduleInfo/params/noPiercingDistance/footnote"
-msgstr " Для гэтага тыпу снарадаў не залежыць ад дыстанцыі."
+msgstr "* для гэтага тыпу снарадаў не залежыць ад дыстанцыі."
 
 msgid "moduleInfo/params/noPiercingDistance/footnote/maxDistance"
 msgstr ", максімальная далёкасць палёту 400 м"
@@ -4796,7 +4821,13 @@ msgid "moduleInfo/params/piercingDistance"
 msgstr "%(dist)s м"
 
 msgid "moduleInfo/params/piercingDistance/footnote"
-msgstr " Для гэты снарадаў залежыць ад дыстанцыі (%(minDist)s–%(maxDist)s м)."
+msgstr ""
+"* для гэтых снарадаў залежыць ад дыстанцыі (%(minDist)s–%(maxDist)s м)."
+
+msgid "moduleInfo/params/piercingDistanceFactor/footnote"
+msgstr ""
+"* чым большая адлегласць, якую праляціць снарад, тым вышэйшая хуткасць "
+"снарада, а значыць яго пашкоджанні і бронепрабівальнасць"
 
 msgid "moduleInfo/params/piercingDistanceHeader"
 msgstr "Сярэдняя бронепрабівальнасць (мм) — адлегласць"
@@ -4853,6 +4884,9 @@ msgid "moduleInfo/params/short/crewRolesFactor"
 msgstr "Да спецыяльнасці экіпажа"
 
 msgid "moduleInfo/params/shotSpeed"
+msgstr "Хуткасць палёту"
+
+msgid "moduleInfo/params/shotSpeedAccelerated"
 msgstr "Хуткасць палёту"
 
 msgid "moduleInfo/params/shotsNumberRange"
@@ -6406,6 +6440,15 @@ msgstr "?empty?"
 msgid "tankCarousel/vehicleStates/notpresent"
 msgstr "Няма ў Гаражы"
 
+msgid "tankCarousel/vehicleStates/nyTank"
+msgstr "Навагодняя тэхніка"
+
+msgid "tankCarousel/vehicleStates/nyTankEmptyCount"
+msgstr "Вольных слотаў: %(count)d"
+
+msgid "tankCarousel/vehicleStates/nyTankSlotsFull"
+msgstr "Усе слоты занятыя"
+
 msgid "tankCarousel/vehicleStates/rentable"
 msgstr "Пракат машыны даступны"
 
@@ -6546,13 +6589,19 @@ msgid "tank_params/cnt"
 msgstr "(шт.)"
 
 msgid "tank_params/cooldown"
-msgstr "Час перазарадкі ўмення"
+msgstr "Час перазарадкі мадыфікацыі"
 
 msgid "tank_params/damage"
 msgstr "Пашкоджанні базавым снарадам"
 
 msgid "tank_params/distanceDamage"
 msgstr "Пашкоджанні снарада"
+
+msgid "tank_params/distanceFactorDamage"
+msgstr "Пашкоджанні снарада"
+
+msgid "tank_params/distanceFactorPiercingPower"
+msgstr "Бронепрабівальнасць"
 
 msgid "tank_params/dualAccuracyCoolingDelay"
 msgstr "Час ахаладжэння гарматы"
@@ -6561,7 +6610,7 @@ msgid "tank_params/dualAccuracyCoolingDelay/extendedTitle"
 msgstr "Час ахаладжэння гарматы пасля стрэлу"
 
 msgid "tank_params/duration"
-msgstr "Час дзеяння ўмення"
+msgstr "Час дзеяння мадыфікацыі"
 
 msgid "tank_params/empty"
 msgstr " "
@@ -6717,7 +6766,7 @@ msgid "tank_params/reuseCount"
 msgstr "Выкарыстанняў за бой"
 
 msgid "tank_params/reuseCount/extendedTitle"
-msgstr "Колькасць выкарыстанняў баявога ўмення"
+msgstr "Колькасць выкарыстанняў мадыфікацыі"
 
 msgid "tank_params/rocketAccelerationEnginePower"
 msgstr "Магутнасць рухавіка (з паскаральнікамі)"
@@ -6734,10 +6783,16 @@ msgstr "(с)"
 msgid "tank_params/shortened/avgPiercingPower"
 msgstr "Прабівае:"
 
+msgid "tank_params/shortened/distanceFactorPiercingPower"
+msgstr "Прабівае:"
+
 msgid "tank_params/shotDispersionAngle"
 msgstr "Роскід на 100 м"
 
 msgid "tank_params/shotSpeed"
+msgstr "Хуткасць палёту"
+
+msgid "tank_params/shotSpeedAccelerated"
 msgstr "Хуткасць палёту"
 
 msgid "tank_params/speedLimits"
@@ -7378,6 +7433,9 @@ msgid "vehicleInfo/params/shotDispersionAngle"
 msgstr "Роскід на 100 м (м)"
 
 msgid "vehicleInfo/params/shotSpeed"
+msgstr "Хуткасць палёту"
+
+msgid "vehicleInfo/params/shotSpeedAccelerated"
 msgstr "Хуткасць палёту"
 
 msgid "vehicleInfo/params/speedLimits"

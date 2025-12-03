@@ -494,6 +494,83 @@ msgstr "?empty?"
 msgid "component/background/base/70/title"
 msgstr "Зігзаг"
 
+msgid "component/background/base/701/description"
+msgstr ""
+"Паказвае вашу выніковую пазіцыю ў табліцы лідараў, актыўнай у межах падзеі "
+"«Наш Новы год» у 2026 годзе."
+
+msgid "component/background/base/701/description_locked"
+msgstr "?empty?"
+
+msgid "component/background/base/701/title"
+msgstr "Навагодні Топ-25"
+
+msgid "component/background/base/702/description"
+msgstr ""
+"Паказвае вашу выніковую пазіцыю ў табліцы лідараў, актыўнай у межах падзеі "
+"«Наш Новы год» у 2026 годзе."
+
+msgid "component/background/base/702/description_locked"
+msgstr "?empty?"
+
+msgid "component/background/base/702/title"
+msgstr "Навагодні Топ-100"
+
+msgid "component/background/base/703/description"
+msgstr ""
+"Паказвае вашу выніковую пазіцыю ў табліцы лідараў, актыўнай у межах падзеі "
+"«Наш Новы год» у 2026 годзе."
+
+msgid "component/background/base/703/description_locked"
+msgstr "?empty?"
+
+msgid "component/background/base/703/title"
+msgstr "Навагодні Топ-500"
+
+msgid "component/background/base/704/description"
+msgstr ""
+"Паказвае вашу выніковую пазіцыю ў табліцы лідараў, актыўнай у межах падзеі "
+"«Наш Новы год» у 2026 годзе."
+
+msgid "component/background/base/704/description_locked"
+msgstr "?empty?"
+
+msgid "component/background/base/704/title"
+msgstr "Навагодні Топ-2500"
+
+msgid "component/background/base/705/description"
+msgstr ""
+"Паказвае вашу выніковую пазіцыю ў табліцы лідараў, актыўнай у межах падзеі "
+"«Наш Новы год» у 2026 годзе."
+
+msgid "component/background/base/705/description_locked"
+msgstr "?empty?"
+
+msgid "component/background/base/705/title"
+msgstr "Навагодні Топ-10k"
+
+msgid "component/background/base/706/description"
+msgstr ""
+"Паказвае вашу выніковую пазіцыю ў табліцы лідараў, актыўнай у межах падзеі "
+"«Наш Новы год» у 2026 годзе."
+
+msgid "component/background/base/706/description_locked"
+msgstr "?empty?"
+
+msgid "component/background/base/706/title"
+msgstr "Навагодні Топ-20k"
+
+msgid "component/background/base/707/description"
+msgstr ""
+"Паказвае вашу выніковую пазіцыю ў табліцы лідараў, актыўнай у межах падзеі "
+"«Наш Новы год» у 2026 годзе."
+
+msgid "component/background/base/707/description_locked"
+msgstr "?empty?"
+
+msgid "component/background/base/707/title"
+msgstr "Навагодні Топ-40k"
+
 msgid "component/background/base/71/description"
 msgstr " "
 
@@ -880,6 +957,17 @@ msgstr ""
 msgid "component/engraving/skill/407/title"
 msgstr "MTR"
 
+msgid "component/engraving/static/700/description"
+msgstr ""
+"Паказвае вашу выніковую пазіцыю ў табліцы лідараў, актыўнай у межах падзеі "
+"«Наш Новы год» у 2026 годзе."
+
+msgid "component/engraving/static/700/description_locked"
+msgstr "?empty?"
+
+msgid "component/engraving/static/700/title"
+msgstr "Пазіцыя ў табліцы лідараў"
+
 msgid "component/engraving/triumph/201/description"
 msgstr "Найбольшая колькасць заблакаваных пашкоджанняў у адным баі"
 
@@ -1032,6 +1120,9 @@ msgstr "Упартасць"
 msgid "component/purposeGroup/season"
 msgstr "Майстэрства"
 
+msgid "component/purposeGroup/static"
+msgstr "Унікальнасць"
+
 msgid "component/purposeGroup/triumph"
 msgstr "Трыумф"
 
@@ -1049,6 +1140,12 @@ msgstr ""
 "Пакажыце свой узровень майстэрства, здабыўшы гэтыя каштоўныя кампаненты і "
 "палепшыўшы іх да Х узроўню. Яны паказваюць вашу сезонную статыстыку. "
 "Напрыклад, найлепшы вынік за мінулыя тры месяцы ў Зале славы."
+
+msgid "component/purposeTooltip/static"
+msgstr ""
+"Дэманструйце свае ўнікальныя або рэдкія дасягненні ў гульні. Бярыце ўдзел у "
+"розных спаборніцтвах у межах падзей, здабывайце памятныя і вельмі рэдкія "
+"гравіроўкі і фоны, збярыце ўласны непаўторны жэтон."
 
 msgid "component/purposeTooltip/triumph"
 msgstr ""
@@ -1072,6 +1169,9 @@ msgstr "Упартасць"
 
 msgid "customization/category/skill"
 msgstr "Майстэрства"
+
+msgid "customization/category/static"
+msgstr "Унікальнасць"
 
 msgid "customization/category/triumph"
 msgstr "Трыумф"

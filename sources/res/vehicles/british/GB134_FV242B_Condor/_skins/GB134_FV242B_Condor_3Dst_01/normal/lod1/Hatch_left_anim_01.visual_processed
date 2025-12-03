@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>Root</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>Hatch_L</identifier>
+				<transform>
+					<row0>0.964842 -0.262490 0.013393</row0>
+					<row1>-0.022929 -0.033300 0.999182</row1>
+					<row2>-0.261830 -0.964360 -0.038148</row2>
+					<row3>-1.339054 0.737796 -1.550875</row3>
+				</transform>
+				<node>
+					<identifier>Hatch_L_BlendBone</identifier>
+					<transform>
+						<row0>0.964842 -0.022929 -0.261830</row0>
+						<row1>-0.262490 -0.033300 -0.964360</row1>
+						<row2>-0.013393 -0.999182 0.038148</row2>
+						<row3>1.506411 1.543472 0.301734</row3>
+					</transform>
+				</node>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>Hatch_L_BlendBone</node>
+		<geometry>
+			<vertices>turret_anim_02_Shape.vertices</vertices>
+			<primitive>turret_anim_02_Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_hull_01_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<materialKind>0</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/british/GB134_FV242B_Condor/_skins/GB134_FV242B_Condor_3Dst_01/FV242B_Condor_3Dst_01_hull_01_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/british/GB134_FV242B_Condor/_skins/GB134_FV242B_Condor_3Dst_01/FV242B_Condor_3Dst_01_hull_01_AO.dds</Texture>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>14.028000 7.014000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/british/GB134_FV242B_Condor/_skins/GB134_FV242B_Condor_3Dst_01/FV242B_Condor_3Dst_01_hull_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/british/GB134_FV242B_Condor/_skins/GB134_FV242B_Condor_3Dst_01/FV242B_Condor_3Dst_01_hull_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-1.338321 0.743084 1.667684</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>-1.381447 0.627642 -1.807315</min>
+		<max>-1.295195 0.858525 -1.528053</max>
+	</boundingBox>
+	<geometrySize>3736</geometrySize>
+	<minUVDensity>10000.000000</minUVDensity>
+</root>

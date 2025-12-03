@@ -112,17 +112,24 @@
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
 		<node>G_L_BlendBone</node>
 		<node>G_R_BlendBone</node>
-		<node>Gun_BlendBone</node>
 		<geometry>
 			<vertices>gun_02_Shape.vertices</vertices>
 			<primitive>gun_02_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<materialKind>0</materialKind>
 					<identifier>tank_proxy_skinned</identifier>
 					<collisionFlags>0</collisionFlags>
-					<materialKind>0</materialKind>
-					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<property>
+						diffuseMap
+						<Texture>vehicles/russian/R204_ISU_122_2/ISU_122_2_proxy_AM.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
 					<property>
 						metallicGlossMap
 						<Texture>vehicles/russian/R204_ISU_122_2/ISU_122_2_proxy_GMM.dds</Texture>
@@ -132,28 +139,19 @@
 						<Texture>vehicles/russian/R204_ISU_122_2/ISU_122_2_proxy_ANM.dds</Texture>
 					</property>
 					<property>
-						diffuseMap
-						<Texture>vehicles/russian/R204_ISU_122_2/ISU_122_2_proxy_AM.dds</Texture>
-					</property>
-					<property>
 						excludeMaskAndAOMap
 						<Texture>vehicles/russian/R204_ISU_122_2/ISU_122_2_proxy_AO.dds</Texture>
 					</property>
-					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
-					</property>
-					<sortOrder>0</sortOrder>
 				</material>
-				<groupOrigin>-0.115461 0.013681 -2.528359</groupOrigin>
+				<groupOrigin>0.009850 -0.002123 -2.563410</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<constraints/>
 	<boundingBox>
-		<min>-0.604977 -0.307960 0.202104</min>
-		<max>0.370247 0.354955 4.853082</max>
+		<min>-0.329843 -0.148064 0.285899</min>
+		<max>0.349542 0.143817 4.840921</max>
 	</boundingBox>
-	<geometrySize>2260</geometrySize>
-	<minUVDensity>0.003423</minUVDensity>
+	<geometrySize>1148</geometrySize>
+	<minUVDensity>0.003908</minUVDensity>
 </root>

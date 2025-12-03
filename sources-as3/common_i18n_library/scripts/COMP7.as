@@ -953,6 +953,10 @@ package
       
       public static const WHATSNEWVIEW_SLIDES_DESCRIPTION_REWORK:String = "#comp7:whatsNewView/slides/description/rework";
       
+      public static const WHATSNEWVIEW_SLIDES_TITLE_MODIFIERS:String = "#comp7:whatsNewView/slides/title/modifiers";
+      
+      public static const WHATSNEWVIEW_SLIDES_DESCRIPTION_MODIFIERS:String = "#comp7:whatsNewView/slides/description/modifiers";
+      
       public static const WHATSNEWVIEW_CONFIRMBUTTON:String = "#comp7:whatsNewView/confirmButton";
       
       public static const WHATSNEWVIEW_NEWMAPS:String = "#comp7:whatsNewView/newMaps";

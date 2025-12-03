@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>2.700000</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Lamp_L</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/tank_customization/F135_Schneider_120_AC_Gendarme_02/F135_candle.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>2.700000</duration>
+				<value>Root|Lamp_L</value>
+			</frame>
+		</track>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 -0.196180 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>s_nd0</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 0.800000 0.686275 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 -2.500000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -2.500000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.200000</startTime>
+				<value>1.000000 0.800000 0.686275 0.500000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.249997</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.249997</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.366667</startTime>
+				<value>1.000000 0.800000 0.686275 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 -0.000007</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -0.000007</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.500000</startTime>
+				<value>1.000000 0.800000 0.686275 0.600000</value>
+				<inTangent>0.000000 0.000000 0.000000 -1.100004</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -1.100004</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.000000</startTime>
+				<value>1.000000 0.800000 0.686275 1.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 0.800000</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 0.800000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Lamp_R</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/tank_customization/F135_Schneider_120_AC_Gendarme_02/F135_candle.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>2.700000</duration>
+				<value>Root|Lamp_R</value>
+			</frame>
+		</track>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 -0.196180 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>s_nd0</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.900000</startTime>
+				<value>1.000000 0.800000 0.686275 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 -2.500000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -2.500000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.100000</startTime>
+				<value>1.000000 0.800000 0.686275 0.500000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.249999</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.249999</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.266667</startTime>
+				<value>1.000000 0.800000 0.686275 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 -0.000001</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -0.000001</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.400000</startTime>
+				<value>1.000000 0.800000 0.686275 0.600000</value>
+				<inTangent>0.000000 0.000000 0.000000 -1.100000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -1.100000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.900000</startTime>
+				<value>1.000000 0.800000 0.686275 1.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 0.800000</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 0.800000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Sparks_L</name>
+		<type>particle</type>
+		<resource>particles/Tank/customization/F135_Schneider_120_AC_Gendarme_02/F135_sparks.eff</resource>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Sparks_R</name>
+		<type>particle</type>
+		<resource>particles/Tank/customization/F135_Schneider_120_AC_Gendarme_02/F135_sparks.eff</resource>
+	</sequenceObject>
+	<events/>
+</root>

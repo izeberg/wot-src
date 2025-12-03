@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/russian/R130_KV4_Mikhailov/crash/lod4/Hull</parent>
+	<extent>192.000000</extent>
+	<materialNames/>
+	<visibilityBox>
+		<min>-1.801337 -1.400559 -4.751382</min>
+		<max>1.812071 0.849703 4.357345</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/russian/R130_KV4_Mikhailov/crash/lod3/Hull</nodefullVisual>
+</root>

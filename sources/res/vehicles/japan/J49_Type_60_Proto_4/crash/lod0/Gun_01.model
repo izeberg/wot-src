@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<visibilityBox>
+		<min>-0.365010 -0.077152 -0.949999</min>
+		<max>0.319999 0.313716 2.533999</max>
+	</visibilityBox>
+	<parent>vehicles/japan/J49_Type_60_Proto_4/crash/lod1/Gun_01</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodelessVisual>vehicles/japan/J49_Type_60_Proto_4/crash/lod0/Gun_01</nodelessVisual>
+</root>

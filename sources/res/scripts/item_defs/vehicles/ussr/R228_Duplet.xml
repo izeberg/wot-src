@@ -3430,14 +3430,18 @@
 				<gun>
 					<gunNode>G_L</gunNode>
 					<gunFire>HP_gunFire_L</gunFire>
-					<position>0.000000 0.000000 1.622654</position>
-					<shotOffset>-0.217971 0.408954 0.000003</shotOffset>
+					<position>
+						-0.220127 0.411932 1
+						<!--BW_String-->
+					</position>
 				</gun>
 				<gun>
 					<gunNode>G_R</gunNode>
 					<gunFire>HP_gunFire_R</gunFire>
-					<position>0.000000 0.000000 1.622653</position>
-					<shotOffset>0.217276 0.411651 0.000005</shotOffset>
+					<position>
+						0.22 0.411932 1
+						<!--BW_String-->
+					</position>
 				</gun>
 			</multiGun>
 			<wwturretRotatorSoundManual>tur_mech_trav</wwturretRotatorSoundManual>

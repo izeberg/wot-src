@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<parent>vehicles/british/GB140_Champion/crash/lod1/Hull</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-2.073618 -1.002132 -4.190859</min>
+		<max>2.040435 0.737570 4.029273</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/british/GB140_Champion/crash/lod0/Hull</nodefullVisual>
+</root>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-2.050731 -1.257579 -4.541256</min>
+		<max>2.054542 0.616226 5.042642</max>
+	</visibilityBox>
+	<parent>vehicles/french/F134_ARL_Projet_F/normal/lod4/Hull</parent>
+	<extent>192.000000</extent>
+	<nodefullVisual>vehicles/french/F134_ARL_Projet_F/normal/lod3/Hull</nodefullVisual>
+</root>

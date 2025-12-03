@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.459963 0.016423 -2.628874</min>
+		<max>1.454604 1.448639 1.697494</max>
+	</visibilityBox>
+	<parent>vehicles/french/F134_ARL_Projet_F/crash/lod2/Turret_01</parent>
+	<extent>64.000000</extent>
+	<nodefullVisual>vehicles/french/F134_ARL_Projet_F/crash/lod1/Turret_01</nodefullVisual>
+	<tank>true</tank>
+</root>

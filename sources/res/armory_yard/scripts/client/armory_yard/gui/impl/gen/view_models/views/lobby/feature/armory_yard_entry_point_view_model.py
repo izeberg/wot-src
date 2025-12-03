@@ -4,7 +4,7 @@ from frameworks.wulf import ViewModel
 class State(Enum):
     BEFOREPROGRESSION = 'beforeProgression'
     ACTIVE = 'active'
-    POSTPROGRESSION = 'postProgression'
+    PURCHASESTAGE = 'purchaseStage'
     COMPLETED = 'completed'
     DISABLED = 'disabled'
 

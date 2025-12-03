@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/russian/R236_KV_4_Zeitz/crash/lod2/Hull</nodefullVisual>
+	<parent>vehicles/russian/R236_KV_4_Zeitz/crash/lod3/Hull</parent>
+	<tank>true</tank>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.915429 -1.097342 -4.529637</min>
+		<max>1.898377 1.106723 4.664505</max>
+	</visibilityBox>
+</root>

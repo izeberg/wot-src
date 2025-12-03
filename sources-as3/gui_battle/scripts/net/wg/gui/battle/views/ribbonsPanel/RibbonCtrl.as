@@ -54,11 +54,15 @@ package net.wg.gui.battle.views.ribbonsPanel
       
       public var textsAnim:AnimationSet = null;
       
-      public var bonusAnim:AnimationSet = null;
-      
       public var ribbonType:String;
       
       public var ribbonId:Number = 0;
+      
+      public var bonusesContainer:MovieClip = null;
+      
+      private var _bonusAnim:AnimationSet = null;
+      
+      private var _abilityBonusAnim:AnimationSet = null;
       
       private var _animationState:String = "invisible";
       
@@ -79,6 +83,8 @@ package net.wg.gui.battle.views.ribbonsPanel
       private var _colorMgr:IColorSchemeManager = null;
       
       private var _bonus:EfficiencyBonusAnimation = null;
+      
+      private var _abilityBonus:EfficiencyBonusAnimation = null;
       
       private var _isBonus:Boolean = false;
       
@@ -132,11 +138,18 @@ package net.wg.gui.battle.views.ribbonsPanel
          this._glowAnim = this.iconsAnim.glowAnim;
          this._colorMgr.addEventListener(ColorSchemeEvent.SCHEMAS_UPDATED,this.onColorMgrSchemasUpdateHandler);
          var _loc6_:Class = _loc3_.getClass(Linkages.RIBBONS_ANIMATION_SET);
-         this.bonusAnim = new _loc6_();
-         this.bonusAnim.stop();
-         this.bonusAnim.visible = false;
+         this._bonusAnim = new _loc6_();
+         this._bonusAnim.stop();
+         this._abilityBonusAnim = new _loc6_();
+         this._abilityBonusAnim.stop();
+         this._bonusAnim.visible = this._abilityBonusAnim.visible = false;
          this._bonus = _loc3_.getComponent(Linkages.RIBBONS_BONUS_ANIMATION,EfficiencyBonusAnimation);
-         this.bonusAnim.init(this._bonus);
+         this._abilityBonus = _loc3_.getComponent(Linkages.RIBBONS_ABILITY_BONUS_ANIMATION,EfficiencyAbilityBonusAnimation);
+         this._bonusAnim.init(this._bonus);
+         this._abilityBonusAnim.init(this._abilityBonus);
+         this.bonusesContainer = new MovieClip();
+         this.bonusesContainer.addChild(this._bonusAnim);
+         this.bonusesContainer.addChild(this._abilityBonusAnim);
       }
       
       public final function dispose() : void
@@ -161,10 +174,15 @@ package net.wg.gui.battle.views.ribbonsPanel
          this._colorMgr = null;
          this._glowAnim = null;
          this._animationCompleteCallback = null;
-         this.bonusAnim.dispose();
-         this.bonusAnim = null;
+         this._bonusAnim.dispose();
+         this._bonusAnim = null;
          this._bonus.dispose();
          this._bonus = null;
+         this._abilityBonusAnim.dispose();
+         this._abilityBonusAnim = null;
+         this._abilityBonus.dispose();
+         this._abilityBonus = null;
+         this.bonusesContainer = null;
          this._ribbonSettings = null;
       }
       
@@ -206,6 +224,7 @@ package net.wg.gui.battle.views.ribbonsPanel
          this._texts.setSettings(param1,param2,param3);
          this._icons.setSettings(param2,param3);
          this._bonus.setSettings(param1);
+         this._abilityBonus.setSettings(param1);
          this._isExtendedAnim = param1;
          if(param1)
          {
@@ -237,12 +256,12 @@ package net.wg.gui.battle.views.ribbonsPanel
          this._scheduler.scheduleTask(this.showAnimByScheduler,param1 * ANIM_DELAY_BY_ITEM);
       }
       
-      public function updateData(param1:Number, param2:String, param3:String, param4:String, param5:String, param6:String, param7:String) : void
+      public function updateData(param1:Number, param2:String, param3:String, param4:String, param5:String, param6:String, param7:String, param8:String) : void
       {
          this._scheduler.cancelTask(this.onLifetimeCooldown);
          this._scheduler.scheduleTask(this.onLifetimeCooldown,LIFE_TIME);
          this.ribbonId = param1;
-         this._isBonus = !StringUtils.isEmpty(param6);
+         this._isBonus = StringUtils.isNotEmpty(param6);
          if(this.ribbonType == BATTLE_EFFICIENCY_TYPES.PERK)
          {
             this.updatePerkRibbonProperties(param3,param5);
@@ -254,12 +273,23 @@ package net.wg.gui.battle.views.ribbonsPanel
          }
          this._icons.setDamageSourceIcon(param4);
          this._bonus.update(param6,param7);
+         if(StringUtils.isNotEmpty(param8) && this._ribbonSettings.getRibbonType() == BATTLE_EFFICIENCY_TYPES.DAMAGE)
+         {
+            this._abilityBonus.update(Values.EMPTY_STR,param8);
+            this._bonusAnim.x = -this._bonus.widthFromAtlas;
+         }
+         else
+         {
+            this._abilityBonus.update(Values.EMPTY_STR,Values.EMPTY_STR);
+            this._bonusAnim.x = Values.ZERO;
+         }
          if(this._animationState == RibbonAnimationStates.IS_STATIC_SHOW)
          {
             this.playAnimItems(UPDATE_ANIM,true);
          }
          this._texts.showUpdateAnim();
          this._bonus.show();
+         this._abilityBonus.show();
       }
       
       private function updatePerkRibbonProperties(param1:String, param2:String) : void
@@ -347,12 +377,14 @@ package net.wg.gui.battle.views.ribbonsPanel
          this.iconsAnim.gotoAndStop(DEFAULT_STATE);
          this.iconsAnim.visible = false;
          this.textsAnim.visible = false;
-         this.bonusAnim.visible = false;
+         this._bonusAnim.visible = false;
+         this._abilityBonusAnim.visible = false;
          if(this._idx > 0)
          {
             this.iconsAnim.y = 0;
             this.textsAnim.y = 0;
-            this.bonusAnim.y = 0;
+            this._bonusAnim.y = 0;
+            this._abilityBonusAnim.y = 0;
          }
          this._idx = 0;
          this._isMustBeHided = false;
@@ -369,12 +401,14 @@ package net.wg.gui.battle.views.ribbonsPanel
          this._scheduler.cancelTask(this.showAnimByScheduler);
          this.textsAnim.visible = true;
          this.iconsAnim.visible = true;
-         this.bonusAnim.visible = true;
+         this._bonusAnim.visible = true;
+         this._abilityBonusAnim.visible = true;
          this.playAnimItems(this._showLbl,true);
          if(this._isExtendedAnim)
          {
             this._texts.showUpdateAnim();
             this._bonus.show();
+            this._abilityBonus.show();
          }
       }
       
@@ -388,8 +422,9 @@ package net.wg.gui.battle.views.ribbonsPanel
          }
          if(this._isBonus)
          {
-            this.bonusAnim.gotoAndPlay(param1);
+            this._bonusAnim.gotoAndPlay(param1);
          }
+         this._abilityBonusAnim.gotoAndPlay(param1);
       }
       
       private function onShowAnimCompleteFrameHandler() : void
@@ -412,10 +447,11 @@ package net.wg.gui.battle.views.ribbonsPanel
       {
          this._animationState = RibbonAnimationStates.IS_STATIC_SHOW;
          ++this._idx;
-         this.textsAnim.y = this.iconsAnim.y = this.bonusAnim.y = ITEM_HEIGHT * this._idx;
+         this.textsAnim.y = this.iconsAnim.y = this._bonusAnim.y = this._abilityBonusAnim.y = ITEM_HEIGHT * this._idx;
          this.textsAnim.gotoAndStop(DEFAULT_STATE);
          this.iconsAnim.gotoAndStop(DEFAULT_STATE);
-         this.bonusAnim.gotoAndStop(DEFAULT_STATE);
+         this._bonusAnim.gotoAndStop(DEFAULT_STATE);
+         this._abilityBonusAnim.gotoAndStop(DEFAULT_STATE);
          if(this._isMustBeHided)
          {
             this.onLifetimeCooldown();

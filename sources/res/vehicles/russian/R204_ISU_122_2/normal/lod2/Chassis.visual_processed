@@ -924,9 +924,11 @@
 		<node>Track_R4_BlendBone</node>
 		<node>Track_R0_BlendBone</node>
 		<node>Track_R1_BlendBone</node>
+		<node>Track_VD_R0_BlendBone</node>
 		<node>V_BlendBone</node>
 		<node>Track_R2_BlendBone</node>
 		<node>Track_R3_BlendBone</node>
+		<node>Track_VD_R1_BlendBone</node>
 		<node>Track_VT_R3_BlendBone</node>
 		<node>Track_VT_R0_BlendBone</node>
 		<node>Track_VT_R1_BlendBone</node>
@@ -938,49 +940,78 @@
 			<primitiveGroup>
 				0
 				<material>
+					<fx>shaders/std_effects/PBS_tank_uvtransform_skinned_ao.fx</fx>
+					<materialKind>0</materialKind>
 					<identifier>track_mat_R_skinned</identifier>
 					<collisionFlags>0</collisionFlags>
-					<materialKind>0</materialKind>
-					<fx>shaders/std_effects/PBS_tank_uvtransform_skinned_ao.fx</fx>
-					<property>
-						metallicGlossMap
-						<Texture>vehicles/russian/tracks/KV-1s_track_GMM.dds</Texture>
-					</property>
-					<property>
-						normalMap
-						<Texture>vehicles/russian/tracks/KV-1s_track_ANM.dds</Texture>
-					</property>
 					<property>
 						diffuseMap
 						<Texture>vehicles/russian/tracks/KV-1s_track_AM.dds</Texture>
 					</property>
 					<property>
-						alphaReference
-						<Int>128</Int>
+						metallicGlossMap
+						<Texture>vehicles/russian/tracks/KV-1s_track_GMM.dds</Texture>
+					</property>
+					<property>
+						g_detailPowerGloss
+						<Float>
+							0.35
+							<!--BW_String-->
+						</Float>
 					</property>
 					<property>
 						alphaTestEnable
 						<Bool>true</Bool>
 					</property>
 					<property>
-						doubleSided
-						<Bool>true</Bool>
+						g_maskBias
+						<Float>
+							0.18
+							<!--BW_String-->
+						</Float>
 					</property>
-					<sortOrder>0</sortOrder>
+					<property>
+						g_detailUVTiling
+						<Vector4>3.507000 3.507000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_detailPower
+						<Float>5</Float>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/russian/tracks/KV-1s_track_ANM.dds</Texture>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						alphaReference
+						<Int>64</Int>
+					</property>
+					<property>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
+					</property>
 				</material>
-				<groupOrigin>1.200088 0.574594 -0.035478</groupOrigin>
+				<groupOrigin>1.200088 0.568900 -0.035478</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
 		<node>Track_L5_BlendBone</node>
-		<node>Track_L4_BlendBone</node>
+		<node>V_BlendBone</node>
 		<node>Track_L0_BlendBone</node>
 		<node>Track_L1_BlendBone</node>
-		<node>V_BlendBone</node>
 		<node>Track_L2_BlendBone</node>
 		<node>Track_L3_BlendBone</node>
+		<node>Track_L4_BlendBone</node>
+		<node>Track_VD_L1_BlendBone</node>
 		<node>Track_VT_L0_BlendBone</node>
 		<node>Track_VT_L1_BlendBone</node>
 		<node>Track_VT_L2_BlendBone</node>
@@ -992,44 +1023,70 @@
 			<primitiveGroup>
 				0
 				<material>
+					<fx>shaders/std_effects/PBS_tank_uvtransform_skinned_ao.fx</fx>
+					<materialKind>0</materialKind>
 					<identifier>track_mat_L_skinned</identifier>
 					<collisionFlags>0</collisionFlags>
-					<materialKind>0</materialKind>
-					<fx>shaders/std_effects/PBS_tank_uvtransform_skinned_ao.fx</fx>
-					<property>
-						metallicGlossMap
-						<Texture>vehicles/russian/tracks/KV-1s_track_GMM.dds</Texture>
-					</property>
-					<property>
-						normalMap
-						<Texture>vehicles/russian/tracks/KV-1s_track_ANM.dds</Texture>
-					</property>
 					<property>
 						diffuseMap
 						<Texture>vehicles/russian/tracks/KV-1s_track_AM.dds</Texture>
 					</property>
 					<property>
-						alphaReference
-						<Int>128</Int>
+						metallicGlossMap
+						<Texture>vehicles/russian/tracks/KV-1s_track_GMM.dds</Texture>
+					</property>
+					<property>
+						g_detailPowerGloss
+						<Float>
+							0.35
+							<!--BW_String-->
+						</Float>
 					</property>
 					<property>
 						alphaTestEnable
 						<Bool>true</Bool>
 					</property>
 					<property>
-						doubleSided
-						<Bool>true</Bool>
+						g_maskBias
+						<Float>
+							0.18
+							<!--BW_String-->
+						</Float>
 					</property>
-					<sortOrder>0</sortOrder>
+					<property>
+						g_detailUVTiling
+						<Vector4>3.507000 3.507000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_detailPower
+						<Float>5</Float>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/russian/tracks/KV-1s_track_ANM.dds</Texture>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						alphaReference
+						<Int>64</Int>
+					</property>
+					<property>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
+					</property>
 				</material>
-				<groupOrigin>-1.200096 0.573917 -0.033136</groupOrigin>
+				<groupOrigin>-1.200096 0.568595 -0.033136</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
-		<node>WD_L3_BlendBone</node>
-		<node>WD_L4_BlendBone</node>
 		<node>V_BlendBone</node>
 		<node>Track_L4_BlendBone</node>
 		<node>Track_L0_BlendBone</node>
@@ -1037,54 +1094,92 @@
 		<node>Track_L2_BlendBone</node>
 		<node>Track_L3_BlendBone</node>
 		<node>Track_L5_BlendBone</node>
-		<node>W_L3_BlendBone</node>
-		<node>W_L4_BlendBone</node>
-		<node>WD_L0_BlendBone</node>
 		<node>W_L0_BlendBone</node>
 		<node>W_L1_BlendBone</node>
 		<node>W_L2_BlendBone</node>
+		<node>W_L3_BlendBone</node>
+		<node>W_L4_BlendBone</node>
+		<node>W_L5_BlendBone</node>
+		<node>WD_L0_BlendBone</node>
 		<node>WD_L1_BlendBone</node>
 		<node>WD_L2_BlendBone</node>
-		<node>W_L5_BlendBone</node>
+		<node>WD_L3_BlendBone</node>
+		<node>WD_L4_BlendBone</node>
 		<geometry>
-			<vertices>exportChassL1_Shape.vertices</vertices>
-			<primitive>exportChassL1_Shape.indices</primitive>
+			<vertices>chassis_L_Shape.vertices</vertices>
+			<primitive>chassis_L_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<materialKind>0</materialKind>
 					<identifier>tank_chassis_01_skinned</identifier>
 					<collisionFlags>0</collisionFlags>
-					<materialKind>0</materialKind>
-					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
-					<property>
-						metallicGlossMap
-						<Texture>vehicles/russian/R204_ISU_122_2/ISU_122_2_chassis_01_GMM.dds</Texture>
-					</property>
-					<property>
-						normalMap
-						<Texture>vehicles/russian/R204_ISU_122_2/ISU_122_2_chassis_01_ANM.dds</Texture>
-					</property>
 					<property>
 						diffuseMap
 						<Texture>vehicles/russian/R204_ISU_122_2/ISU_122_2_chassis_01_AM.dds</Texture>
-					</property>
-					<property>
-						excludeMaskAndAOMap
-						<Texture>vehicles/russian/R204_ISU_122_2/ISU_122_2_chassis_01_AO.dds</Texture>
 					</property>
 					<property>
 						colorIdMap
 						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 					<property>
-						alphaReference
-						<Int>128</Int>
+						metallicGlossMap
+						<Texture>vehicles/russian/R204_ISU_122_2/ISU_122_2_chassis_01_GMM.dds</Texture>
+					</property>
+					<property>
+						g_detailPowerGloss
+						<Float>
+							0.35
+							<!--BW_String-->
+						</Float>
 					</property>
 					<property>
 						alphaTestEnable
 						<Bool>true</Bool>
 					</property>
-					<sortOrder>0</sortOrder>
+					<property>
+						g_maskBias
+						<Float>
+							0.18
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>3.507000 3.507000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_detailPower
+						<Float>5</Float>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/russian/R204_ISU_122_2/ISU_122_2_chassis_01_ANM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/russian/R204_ISU_122_2/ISU_122_2_chassis_01_AO.dds</Texture>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						alphaReference
+						<Int>128</Int>
+					</property>
+					<property>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
 				</material>
 				<groupOrigin>-1.174727 0.598405 -0.069639</groupOrigin>
 			</primitiveGroup>
@@ -1092,8 +1187,6 @@
 	</renderSet>
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
-		<node>W_R2_BlendBone</node>
-		<node>W_R3_BlendBone</node>
 		<node>V_BlendBone</node>
 		<node>Track_R4_BlendBone</node>
 		<node>Track_R0_BlendBone</node>
@@ -1101,54 +1194,92 @@
 		<node>Track_R2_BlendBone</node>
 		<node>Track_R3_BlendBone</node>
 		<node>Track_R5_BlendBone</node>
+		<node>W_R0_BlendBone</node>
+		<node>W_R1_BlendBone</node>
+		<node>W_R2_BlendBone</node>
+		<node>W_R3_BlendBone</node>
 		<node>W_R4_BlendBone</node>
 		<node>W_R5_BlendBone</node>
-		<node>WD_R3_BlendBone</node>
-		<node>WD_R4_BlendBone</node>
 		<node>WD_R0_BlendBone</node>
 		<node>WD_R1_BlendBone</node>
 		<node>WD_R2_BlendBone</node>
-		<node>W_R0_BlendBone</node>
-		<node>W_R1_BlendBone</node>
+		<node>WD_R3_BlendBone</node>
+		<node>WD_R4_BlendBone</node>
 		<geometry>
-			<vertices>exportChassR1_Shape.vertices</vertices>
-			<primitive>exportChassR1_Shape.indices</primitive>
+			<vertices>chassis_R_Shape.vertices</vertices>
+			<primitive>chassis_R_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<materialKind>0</materialKind>
 					<identifier>tank_chassis_01_skinned</identifier>
 					<collisionFlags>0</collisionFlags>
-					<materialKind>0</materialKind>
-					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
-					<property>
-						metallicGlossMap
-						<Texture>vehicles/russian/R204_ISU_122_2/ISU_122_2_chassis_01_GMM.dds</Texture>
-					</property>
-					<property>
-						normalMap
-						<Texture>vehicles/russian/R204_ISU_122_2/ISU_122_2_chassis_01_ANM.dds</Texture>
-					</property>
 					<property>
 						diffuseMap
 						<Texture>vehicles/russian/R204_ISU_122_2/ISU_122_2_chassis_01_AM.dds</Texture>
-					</property>
-					<property>
-						excludeMaskAndAOMap
-						<Texture>vehicles/russian/R204_ISU_122_2/ISU_122_2_chassis_01_AO.dds</Texture>
 					</property>
 					<property>
 						colorIdMap
 						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 					<property>
-						alphaReference
-						<Int>128</Int>
+						metallicGlossMap
+						<Texture>vehicles/russian/R204_ISU_122_2/ISU_122_2_chassis_01_GMM.dds</Texture>
+					</property>
+					<property>
+						g_detailPowerGloss
+						<Float>
+							0.35
+							<!--BW_String-->
+						</Float>
 					</property>
 					<property>
 						alphaTestEnable
 						<Bool>true</Bool>
 					</property>
-					<sortOrder>0</sortOrder>
+					<property>
+						g_maskBias
+						<Float>
+							0.18
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>3.507000 3.507000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_detailPower
+						<Float>5</Float>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/russian/R204_ISU_122_2/ISU_122_2_chassis_01_ANM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/russian/R204_ISU_122_2/ISU_122_2_chassis_01_AO.dds</Texture>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						alphaReference
+						<Int>128</Int>
+					</property>
+					<property>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
 				</material>
 				<groupOrigin>1.192111 0.600924 -0.070472</groupOrigin>
 			</primitiveGroup>
@@ -1157,7 +1288,7 @@
 	<constraints/>
 	<boundingBox>
 		<min>-1.533496 0.000002 -3.198730</min>
-		<max>1.571325 1.149187 3.277864</max>
+		<max>1.571325 1.137841 3.277864</max>
 	</boundingBox>
 	<geometrySize>288458</geometrySize>
 	<minUVDensity>0.009614</minUVDensity>

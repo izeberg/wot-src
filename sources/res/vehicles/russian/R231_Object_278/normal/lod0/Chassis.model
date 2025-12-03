@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/russian/R231_Object_278/normal/lod1/Chassis</parent>
+	<tank>true</tank>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.691581 0.000632 -3.565941</min>
+		<max>1.691581 1.063767 3.558588</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/russian/R231_Object_278/normal/lod0/Chassis</nodefullVisual>
+</root>

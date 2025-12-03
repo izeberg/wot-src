@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<Parent>AbilityEquipment</Parent>
+	<Properties>
+		<currentDamageModifier>
+			<Type>FLOAT32</Type>
+			<Flags>ALL_CLIENTS</Flags>
+			<DetailLevel>MY_VEHICLE</DetailLevel>
+		</currentDamageModifier>
+	</Properties>
+</root>

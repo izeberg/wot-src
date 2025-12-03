@@ -1831,7 +1831,7 @@
 					<leftMaterial>track_mat_L_skinned</leftMaterial>
 					<rightMaterial>track_mat_R_skinned</rightMaterial>
 					<textureScale>
-						-2.3
+						-2.8
 						<!--BW_String-->
 					</textureScale>
 					<trackDebris>
@@ -2029,7 +2029,10 @@
 				<group>
 					<isLeft>true</isLeft>
 					<template>W_L</template>
-					<radius>0.280119</radius>
+					<radius>
+						0.29
+						<!--BW_String-->
+					</radius>
 					<startIndex>0</startIndex>
 					<count>7</count>
 				</group>
@@ -2057,7 +2060,10 @@
 				<group>
 					<isLeft>false</isLeft>
 					<template>W_R</template>
-					<radius>0.280119</radius>
+					<radius>
+						0.29
+						<!--BW_String-->
+					</radius>
 					<startIndex>0</startIndex>
 					<count>7</count>
 				</group>
@@ -2083,10 +2089,7 @@
 				6.0
 				<!--BW_String-->
 			</navmeshGirth>
-			<trackThickness>
-				-0.003
-				<!--BW_String-->
-			</trackThickness>
+			<trackThickness>0</trackThickness>
 			<customizationSlots>
 				<slot>
 					<slotType>paint</slotType>
@@ -2351,7 +2354,7 @@
 						<!--BW_String-->
 					</segmentLength>
 					<segmentOffset>
-						0.182
+						0.16
 						<!--BW_String-->
 					</segmentOffset>
 					<atlas>
@@ -2364,8 +2367,14 @@
 			<physicalTracks>
 				<left>
 					<segmentsCount>90</segmentsCount>
-					<segmentsOuterThickness>0.042857</segmentsOuterThickness>
-					<segmentsInnerThickness>-0.004486</segmentsInnerThickness>
+					<segmentsOuterThickness>
+						0.03
+						<!--BW_String-->
+					</segmentsOuterThickness>
+					<segmentsInnerThickness>
+						-0.005
+						<!--BW_String-->
+					</segmentsInnerThickness>
 					<segmentsPlaneOffset>
 						-1.449
 						<!--BW_String-->
@@ -2496,7 +2505,7 @@
 						<sync>
 							<name>WD_L4</name>
 							<startAngle>
-								-2.85291
+								-2.75
 								<!--BW_String-->
 							</startAngle>
 							<teethCount>10</teethCount>
@@ -2844,8 +2853,14 @@
 				</left>
 				<right>
 					<segmentsCount>90</segmentsCount>
-					<segmentsOuterThickness>0.042857</segmentsOuterThickness>
-					<segmentsInnerThickness>-0.004486</segmentsInnerThickness>
+					<segmentsOuterThickness>
+						0.03
+						<!--BW_String-->
+					</segmentsOuterThickness>
+					<segmentsInnerThickness>
+						-0.005
+						<!--BW_String-->
+					</segmentsInnerThickness>
 					<segmentsPlaneOffset>
 						1.449
 						<!--BW_String-->
@@ -2982,7 +2997,7 @@
 						<sync>
 							<name>WD_R4</name>
 							<startAngle>
-								-2.8678
+								-2.75
 								<!--BW_String-->
 							</startAngle>
 							<teethCount>10</teethCount>

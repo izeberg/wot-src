@@ -31,19 +31,23 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<primitive>indices</primitive>
+			<vertices>turret_01_Shape.vertices</vertices>
+			<primitive>turret_01_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>tank_proxy</identifier>
-					<property>
-						selfIllumination
-						<Float>0.000000</Float>
-					</property>
-					<collisionFlags>0</collisionFlags>
-					<materialKind>0</materialKind>
 					<fx>shaders/std_effects/PBS_tank.fx</fx>
+					<materialKind>0</materialKind>
+					<identifier>tank_proxy</identifier>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>vehicles/russian/R204_ISU_122_2/ISU_122_2_proxy_AM.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
 					<property>
 						metallicGlossMap
 						<Texture>vehicles/russian/R204_ISU_122_2/ISU_122_2_proxy_GMM.dds</Texture>
@@ -53,27 +57,18 @@
 						<Texture>vehicles/russian/R204_ISU_122_2/ISU_122_2_proxy_ANM.dds</Texture>
 					</property>
 					<property>
-						diffuseMap
-						<Texture>vehicles/russian/R204_ISU_122_2/ISU_122_2_proxy_AM.dds</Texture>
-					</property>
-					<property>
 						excludeMaskAndAOMap
 						<Texture>vehicles/russian/R204_ISU_122_2/ISU_122_2_proxy_AO.dds</Texture>
 					</property>
-					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
-					</property>
-					<sortOrder>0</sortOrder>
 				</material>
-				<groupOrigin>-0.075118 0.004421 0.352964</groupOrigin>
+				<groupOrigin>-0.068456 -0.018621 0.320419</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-0.821429 -0.441193 -0.076187</min>
-		<max>0.671193 0.450034 0.782114</max>
+		<min>-0.816777 -0.445070 0.032461</min>
+		<max>0.679864 0.407828 0.608377</max>
 	</boundingBox>
-	<geometrySize>9592</geometrySize>
-	<minUVDensity>0.003231</minUVDensity>
+	<geometrySize>560</geometrySize>
+	<minUVDensity>0.005370</minUVDensity>
 </root>

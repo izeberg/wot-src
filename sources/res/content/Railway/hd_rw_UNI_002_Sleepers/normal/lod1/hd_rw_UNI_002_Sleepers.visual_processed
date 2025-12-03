@@ -31,8 +31,8 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<primitive>indices</primitive>
+			<vertices>d0Shape.vertices</vertices>
+			<primitive>d0Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -40,17 +40,18 @@
 					<fx>shaders/std_effects/PBS_ext.fx</fx>
 					<property>
 						diffuseMap
-						<Texture>content/Railway/hd_rw_UNI_002_Sleepers/hd_rw_UNI_002_sleepers_AM.dds</Texture>
+						<Texture>content/Railway/hd_rw_UNI_002_Sleepers/hd_rw_UNI_002_Sleepers_AM.dds</Texture>
 					</property>
 					<materialKind>87</materialKind>
 					<property>
 						metallicGlossMap
-						<Texture>content/Railway/hd_rw_UNI_002_Sleepers/hd_rw_UNI_002_sleepers_GMM.dds</Texture>
+						<Texture>content/Railway/hd_rw_UNI_002_Sleepers/hd_rw_UNI_002_Sleepers_GMM.dds</Texture>
 					</property>
 					<property>
 						normalMap
-						<Texture>content/Railway/hd_rw_UNI_002_Sleepers/hd_rw_UNI_002_sleepers_ANM.dds</Texture>
+						<Texture>content/Railway/hd_rw_UNI_002_Sleepers/hd_rw_UNI_002_Sleepers_ANM.dds</Texture>
 					</property>
+					<collisionFlags>255</collisionFlags>
 				</material>
 				<groupOrigin>0.600251 0.044506 0.362377</groupOrigin>
 			</primitiveGroup>
@@ -61,35 +62,37 @@
 					<fx>shaders/std_effects/PBS_ext.fx</fx>
 					<property>
 						diffuseMap
-						<Texture>content/Railway/hd_rw_UNI_002_Sleepers/hd_rw_UNI_002_sleepers_AM.dds</Texture>
+						<Texture>content/Railway/hd_rw_UNI_002_Sleepers/hd_rw_UNI_002_Sleepers_AM.dds</Texture>
 					</property>
 					<materialKind>73</materialKind>
 					<property>
 						metallicGlossMap
-						<Texture>content/Railway/hd_rw_UNI_002_Sleepers/hd_rw_UNI_002_sleepers_GMM.dds</Texture>
+						<Texture>content/Railway/hd_rw_UNI_002_Sleepers/hd_rw_UNI_002_Sleepers_GMM.dds</Texture>
 					</property>
 					<property>
 						normalMap
-						<Texture>content/Railway/hd_rw_UNI_002_Sleepers/hd_rw_UNI_002_sleepers_ANM.dds</Texture>
+						<Texture>content/Railway/hd_rw_UNI_002_Sleepers/hd_rw_UNI_002_Sleepers_ANM.dds</Texture>
 					</property>
+					<collisionFlags>0</collisionFlags>
 				</material>
-				<groupOrigin>0.006554 0.405268 0.012639</groupOrigin>
+				<groupOrigin>0.044002 0.290085 0.013316</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				2
 				<material>
 					<identifier>s_wall_0</identifier>
 					<materialKind>73</materialKind>
+					<collisionFlags>131</collisionFlags>
 				</material>
-				<groupOrigin>0.440255 0.806123 0.265507</groupOrigin>
+				<groupOrigin>0.064466 0.806123 0.116977</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-2.040421 -0.060691 -1.946945</min>
+		<min>-1.965523 -0.060691 -1.905352</min>
 		<max>2.064560 1.612246 1.933857</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>13032</geometrySize>
-	<minUVDensity>0.012846</minUVDensity>
+	<geometrySize>13312</geometrySize>
+	<minUVDensity>0.010186</minUVDensity>
 </root>

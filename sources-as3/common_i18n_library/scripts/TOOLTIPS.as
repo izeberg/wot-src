@@ -4043,6 +4043,18 @@ package
       
       public static const AWARDITEM_COMPLETIONTOKENS_7_4_BODY:String = "#tooltips:awardItem/completionTokens_7_4/body";
       
+      public static const AWARDITEM_NYRFOOD_HEADER:String = "#tooltips:awardItem/nyrfood/header";
+      
+      public static const AWARDITEM_NYRFOOD_BODY:String = "#tooltips:awardItem/nyrfood/body";
+      
+      public static const AWARDITEM_NYRFUN_HEADER:String = "#tooltips:awardItem/nyrfun/header";
+      
+      public static const AWARDITEM_NYRFUN_BODY:String = "#tooltips:awardItem/nyrfun/body";
+      
+      public static const AWARDITEM_NYRACTIV_HEADER:String = "#tooltips:awardItem/nyractiv/header";
+      
+      public static const AWARDITEM_NYRACTIV_BODY:String = "#tooltips:awardItem/nyractiv/body";
+      
       public static const AWARDITEM_TANKMEN_BODY:String = "#tooltips:awardItem/tankmen/body";
       
       public static const AWARDITEM_TANKWOMEN_HEADER:String = "#tooltips:awardItem/tankwomen/header";
@@ -5005,13 +5017,21 @@ package
       
       public static const ADVANCED_HOLLOW_CHARGE:String = "#tooltips:advanced/HOLLOW_CHARGE";
       
+      public static const ADVANCED_HOLLOW_CHARGE_DF:String = "#tooltips:advanced/HOLLOW_CHARGE_DF";
+      
       public static const ADVANCED_HIGH_EXPLOSIVE:String = "#tooltips:advanced/HIGH_EXPLOSIVE";
+      
+      public static const ADVANCED_HIGH_EXPLOSIVE_DF:String = "#tooltips:advanced/HIGH_EXPLOSIVE_DF";
       
       public static const ADVANCED_HIGH_EXPLOSIVE_STUN:String = "#tooltips:advanced/HIGH_EXPLOSIVE_STUN";
       
       public static const ADVANCED_HIGH_EXPLOSIVE_MODERN:String = "#tooltips:advanced/HIGH_EXPLOSIVE_MODERN";
       
+      public static const ADVANCED_HIGH_EXPLOSIVE_DF_MODERN:String = "#tooltips:advanced/HIGH_EXPLOSIVE_DF_MODERN";
+      
       public static const ADVANCED_ARMOR_PIERCING:String = "#tooltips:advanced/ARMOR_PIERCING";
+      
+      public static const ADVANCED_ARMOR_PIERCING_DF:String = "#tooltips:advanced/ARMOR_PIERCING_DF";
       
       public static const ADVANCED_ARMOR_PIERCING_CR:String = "#tooltips:advanced/ARMOR_PIERCING_CR";
       
@@ -5146,6 +5166,12 @@ package
       public static const ADVANCED_HEADER_SHELLTYPE_ARMOR_PIERCING_FSDS:String = "#tooltips:advanced/header/shellType/ARMOR_PIERCING_FSDS";
       
       public static const ADVANCED_HEADER_SHELLTYPE_FLAME:String = "#tooltips:advanced/header/shellType/FLAME";
+      
+      public static const ADVANCED_HEADER_SHELLTYPE_HIGH_EXPLOSIVE_DF:String = "#tooltips:advanced/header/shellType/HIGH_EXPLOSIVE_DF";
+      
+      public static const ADVANCED_HEADER_SHELLTYPE_ARMOR_PIERCING_DF:String = "#tooltips:advanced/header/shellType/ARMOR_PIERCING_DF";
+      
+      public static const ADVANCED_HEADER_SHELLTYPE_HOLLOW_CHARGE_DF:String = "#tooltips:advanced/header/shellType/HOLLOW_CHARGE_DF";
       
       public static const ADVANCED_DEMOUNTKIT_COMMON:String = "#tooltips:advanced/demountKit/common";
       
@@ -7901,9 +7927,49 @@ package
       
       public static const NOTRECRUITEDTANKMAN_TANKMEN_PORTAL25_4_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_Portal25_4/label";
       
-      public static const AWARDITEM_RAZLOM_COIN_HEADER:String = "#tooltips:awardItem/razlom_coin/header";
+      public static const NOTRECRUITEDTANKMAN_NY26_KRIEGER_LABEL:String = "#tooltips:notrecruitedtankman/ny26_krieger/label";
       
-      public static const AWARDITEM_RAZLOM_COIN_BODY:String = "#tooltips:awardItem/razlom_coin/body";
+      public static const NOTRECRUITEDTANKMAN_NY26_KRIEGER_DESC:String = "#tooltips:notrecruitedtankman/ny26_krieger/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_NY26_TERENTIJ_LABEL:String = "#tooltips:notrecruitedtankman/ny26_terentij/label";
+      
+      public static const NOTRECRUITEDTANKMAN_NY26_TERENTIJ_DESC:String = "#tooltips:notrecruitedtankman/ny26_terentij/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_NY26_CELEB_1_LABEL:String = "#tooltips:notrecruitedtankman/ny26_celeb_1/label";
+      
+      public static const NOTRECRUITEDTANKMAN_NY26_CELEB_1_DESC:String = "#tooltips:notrecruitedtankman/ny26_celeb_1/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_NY26_CELEB_2_LABEL:String = "#tooltips:notrecruitedtankman/ny26_celeb_2/label";
+      
+      public static const NOTRECRUITEDTANKMAN_NY26_CELEB_2_DESC:String = "#tooltips:notrecruitedtankman/ny26_celeb_2/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_NY26_CELEB_3_LABEL:String = "#tooltips:notrecruitedtankman/ny26_celeb_3/label";
+      
+      public static const NOTRECRUITEDTANKMAN_NY26_CELEB_3_DESC:String = "#tooltips:notrecruitedtankman/ny26_celeb_3/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_NY26_CELEB_4_LABEL:String = "#tooltips:notrecruitedtankman/ny26_celeb_4/label";
+      
+      public static const NOTRECRUITEDTANKMAN_NY26_CELEB_4_DESC:String = "#tooltips:notrecruitedtankman/ny26_celeb_4/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_NY26_CELEB_5_LABEL:String = "#tooltips:notrecruitedtankman/ny26_celeb_5/label";
+      
+      public static const NOTRECRUITEDTANKMAN_NY26_CELEB_5_DESC:String = "#tooltips:notrecruitedtankman/ny26_celeb_5/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_NY26_SNOWMAIDEN_1_LABEL:String = "#tooltips:notrecruitedtankman/ny26_snowmaiden_1/label";
+      
+      public static const NOTRECRUITEDTANKMAN_NY26_SNOWMAIDEN_1_DESC:String = "#tooltips:notrecruitedtankman/ny26_snowmaiden_1/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_NY26_SNOWMAIDEN_2_LABEL:String = "#tooltips:notrecruitedtankman/ny26_snowmaiden_2/label";
+      
+      public static const NOTRECRUITEDTANKMAN_NY26_SNOWMAIDEN_2_DESC:String = "#tooltips:notrecruitedtankman/ny26_snowmaiden_2/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_NY26_SNOWMAIDEN_3_LABEL:String = "#tooltips:notrecruitedtankman/ny26_snowmaiden_3/label";
+      
+      public static const NOTRECRUITEDTANKMAN_NY26_SNOWMAIDEN_3_DESC:String = "#tooltips:notrecruitedtankman/ny26_snowmaiden_3/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_NY26_SNOWMAIDEN_4_LABEL:String = "#tooltips:notrecruitedtankman/ny26_snowmaiden_4/label";
+      
+      public static const NOTRECRUITEDTANKMAN_NY26_SNOWMAIDEN_4_DESC:String = "#tooltips:notrecruitedtankman/ny26_snowmaiden_4/desc";
       
       public static const ELEN_SUMMARY_RANK_ENUM:Array = [ELEN_SUMMARY_RANK_1,ELEN_SUMMARY_RANK_2,ELEN_SUMMARY_RANK_3,ELEN_SUMMARY_RANK_4,ELEN_SUMMARY_RANK_NORANK];
       

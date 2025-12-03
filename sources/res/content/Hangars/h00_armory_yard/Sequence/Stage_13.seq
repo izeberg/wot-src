@@ -7,9 +7,9 @@
 		<resource/>
 	</sequenceObject>
 	<sequenceObject>
-		<name>stg_13_air_system</name>
+		<name>stg_13_Fuel_system_xray</name>
 		<type>model</type>
-		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_13_air_system_xray.model</resource>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/R226_Object_757A/normal/lod0/stg_13_Fuel_system_xray.model</resource>
 		<castsShadow>false</castsShadow>
 		<track>
 			<name>position</name>
@@ -49,16 +49,16 @@
 			<frame>
 				<startTime>2.200000</startTime>
 				<value>0.000000</value>
-				<inTangent>-0.000000</inTangent>
-				<outTangent>0.468750</outTangent>
-				<tangentMode>257</tangentMode>
+				<inTangent>-0.002681</inTangent>
+				<outTangent>-0.002681</outTangent>
+				<tangentMode>771</tangentMode>
 			</frame>
 			<frame>
 				<startTime>4.333333</startTime>
 				<value>1.000000</value>
-				<inTangent>0.468750</inTangent>
-				<outTangent>0.000000</outTangent>
-				<tangentMode>257</tangentMode>
+				<inTangent>0.009338</inTangent>
+				<outTangent>0.009338</outTangent>
+				<tangentMode>771</tangentMode>
 			</frame>
 			<frame>
 				<startTime>4.666667</startTime>
@@ -97,9 +97,9 @@
 		</track>
 	</sequenceObject>
 	<sequenceObject>
-		<name>stg_13_driver_system</name>
+		<name>stg_13_item_xray</name>
 		<type>model</type>
-		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_13_driver_system_xray.model</resource>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/R226_Object_757A/normal/lod0/stg_13_item_xray.model</resource>
 		<castsShadow>false</castsShadow>
 		<track>
 			<name>position</name>
@@ -139,16 +139,16 @@
 			<frame>
 				<startTime>2.700000</startTime>
 				<value>0.000000</value>
-				<inTangent>-0.000000</inTangent>
-				<outTangent>0.468750</outTangent>
-				<tangentMode>257</tangentMode>
+				<inTangent>-0.002446</inTangent>
+				<outTangent>-0.002446</outTangent>
+				<tangentMode>771</tangentMode>
 			</frame>
 			<frame>
 				<startTime>4.833333</startTime>
 				<value>1.000000</value>
-				<inTangent>0.468750</inTangent>
-				<outTangent>0.000000</outTangent>
-				<tangentMode>257</tangentMode>
+				<inTangent>0.029153</inTangent>
+				<outTangent>0.029153</outTangent>
+				<tangentMode>771</tangentMode>
 			</frame>
 			<frame>
 				<startTime>5.166667</startTime>
@@ -187,9 +187,9 @@
 		</track>
 	</sequenceObject>
 	<sequenceObject>
-		<name>stg_13_fire_system</name>
+		<name>stg_13_fuel_filter_xray</name>
 		<type>model</type>
-		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_13_fire_system_xray.model</resource>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/R226_Object_757A/normal/lod0/stg_13_fuel_filter_xray.model</resource>
 		<castsShadow>false</castsShadow>
 		<track>
 			<name>position</name>
@@ -229,16 +229,16 @@
 			<frame>
 				<startTime>3.200000</startTime>
 				<value>0.000000</value>
-				<inTangent>-0.000000</inTangent>
-				<outTangent>0.468750</outTangent>
-				<tangentMode>257</tangentMode>
+				<inTangent>0.011073</inTangent>
+				<outTangent>0.011073</outTangent>
+				<tangentMode>771</tangentMode>
 			</frame>
 			<frame>
 				<startTime>5.333333</startTime>
 				<value>1.000000</value>
-				<inTangent>0.468750</inTangent>
-				<outTangent>0.000000</outTangent>
-				<tangentMode>257</tangentMode>
+				<inTangent>0.008112</inTangent>
+				<outTangent>0.008112</outTangent>
+				<tangentMode>771</tangentMode>
 			</frame>
 			<frame>
 				<startTime>5.666667</startTime>
@@ -284,7 +284,7 @@
 			<type>attach</type>
 			<frame>
 				<startTime>1.000000</startTime>
-				<duration>5.800001</duration>
+				<duration>5.766667</duration>
 				<value>Root|</value>
 			</frame>
 		</track>
@@ -293,30 +293,9 @@
 			<type>vector3</type>
 			<frame>
 				<startTime>1.000000</startTime>
-				<value>0.000000 0.831044 2.339415</value>
+				<value>-0.071683 1.102255 -0.206787</value>
 				<inTangent>0.000000 0.000000 0.000000</inTangent>
 				<outTangent>0.000000 0.000000 0.000000</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-			<frame>
-				<startTime>2.033334</startTime>
-				<value>0.000000 0.831044 2.339415</value>
-				<inTangent>0.000000 0.000000 -1.022123</inTangent>
-				<outTangent>0.000000 0.000000 -1.022123</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-			<frame>
-				<startTime>3.533334</startTime>
-				<value>0.000000 0.831044 -0.726955</value>
-				<inTangent>0.000000 0.000000 -0.705706</inTangent>
-				<outTangent>0.000000 0.000000 -0.705706</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-			<frame>
-				<startTime>5.033334</startTime>
-				<value>0.000000 0.831044 0.222296</value>
-				<inTangent>-0.000000 -0.000000 0.632834</inTangent>
-				<outTangent>-0.000000 -0.000000 0.632834</outTangent>
 				<tangentMode>0</tangentMode>
 			</frame>
 		</track>
@@ -325,7 +304,7 @@
 			<type>sound</type>
 			<frame>
 				<startTime>1.000000</startTime>
-				<duration>5.766667</duration>
+				<duration>5.773438</duration>
 				<sequenceSound>ay_ep_07_seq_stage_13</sequenceSound>
 				<type>play_till_end</type>
 				<fade>0.000000</fade>

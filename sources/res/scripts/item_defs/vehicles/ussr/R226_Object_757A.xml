@@ -139,7 +139,7 @@
 				<!--BW_String-->
 			</rollParams>
 			<sensitivityToImpulse>
-				0.94
+				0.14
 				<!--BW_String-->
 			</sensitivityToImpulse>
 		</swinging>
@@ -3326,6 +3326,15 @@
 	<extras>
 		<surprise>
 			NoneExtra : CustomAttributeModifier
+			<vehicleFilter>
+				<include>
+					<componentFilters>
+						<gun>
+							<tags>GLUM</tags>
+						</gun>
+					</componentFilters>
+				</include>
+			</vehicleFilter>
 			<modifiers>
 				<mul>
 					<name>dynAttrs/chassis/shotDispersionFactors/movement</name>

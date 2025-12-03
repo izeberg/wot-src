@@ -103,8 +103,8 @@ class TokensRequester(AbstractSyncDataRequester, ITokensRequester):
         historyName, guaranteedFrequencyName = box.getHistoryName(), box.getGuaranteedFrequencyName()
         if historyName not in boxesHistory:
             return 0
-        _, limits, _ = boxesHistory[historyName]
-        if guaranteedFrequencyName not in limits:
+        _, limits, _, _ = boxesHistory[historyName]
+        if not limits or guaranteedFrequencyName not in limits:
             return 0
         return limits[guaranteedFrequencyName][1]
 
@@ -160,7 +160,7 @@ class TokensRequester(AbstractSyncDataRequester, ITokensRequester):
         self.__clearLootBoxes(tokensCache)
 
     def __getLootBoxRotationStage(self, history, lootBox):
-        return history.get(lootBox.getHistoryName(), (0, None, 0))[2]
+        return history.get(lootBox.getHistoryName(), (0, None, 0, 0))[3]
 
     def __clearLootBoxes(self, data, isRemove=False):
         lootBoxIDs = self.__lootBoxCache.keys()

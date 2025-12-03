@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>n_wood0</identifier>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<collisionFlags>131</collisionFlags>
+					<materialKind>73</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/Environment/hd_env_UNI_414_Pole/hd_env_UNI_414_Pole_AM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Environment/hd_env_UNI_414_Pole/hd_env_UNI_414_Pole_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Environment/hd_env_UNI_414_Pole/hd_env_UNI_414_Pole_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.000000 4.901659 -0.536146</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>n_metal2</identifier>
+					<fx>shaders/std_effects/glow.fx</fx>
+					<materialKind>73</materialKind>
+					<collisionFlags>131</collisionFlags>
+					<property>
+						alphaReference
+						<Int>76</Int>
+					</property>
+					<property>
+						destBlend
+						<Int>2</Int>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Environment/00_Detail_Sets_NY/Detail_Set_025_NightGarland_AM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						selfIllumination
+						<Float>100.000000</Float>
+					</property>
+				</material>
+				<groupOrigin>-0.029453 5.281206 -0.536749</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				2
+				<material>
+					<identifier>n_metal1</identifier>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<collisionFlags>131</collisionFlags>
+					<materialKind>73</materialKind>
+					<property>
+						alphaReference
+						<Int>76</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Environment/00_Detail_Sets_NY/Detail_Set_025_NightGarland_AM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Environment/00_Detail_Sets_NY/Detail_Set_025_NightGarland_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Environment/00_Detail_Sets_NY/Detail_Set_025_NightGarland_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.023256 8.771225 -0.732064</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				3
+				<material>
+					<identifier>n_metal0</identifier>
+					<fx>shaders/std_effects/glow.fx</fx>
+					<collisionFlags>131</collisionFlags>
+					<materialKind>73</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/Environment/hd_env_UNI_0002_PoleGarland/hd_env_UNI_0002_PoleGarland_AM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						selfIllumination
+						<Float>10.000000</Float>
+					</property>
+					<property>
+						g_tintColor
+						<Vector4>0.870588 0.709804 0.568627 1.000000</Vector4>
+					</property>
+					<property>
+						destBlend
+						<Int>2</Int>
+					</property>
+				</material>
+				<groupOrigin>0.136024 4.951829 -0.000000</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-0.990173 -0.085277 -1.395772</min>
+		<max>0.990173 9.934653 0.322273</max>
+	</boundingBox>
+	<customBsp>true</customBsp>
+	<geometrySize>74884</geometrySize>
+	<minUVDensity>0.027028</minUVDensity>
+</root>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A38_T92/_skins/A38_T92_3Dst_01/normal/lod2/Fan_anim_01</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/american/A38_T92/_skins/A38_T92_3Dst_01/normal/lod3/Fan_anim_01</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>1.578864 1.151067 -3.510025</min>
+		<max>1.859967 2.125155 -2.523751</max>
+	</visibilityBox>
+</root>

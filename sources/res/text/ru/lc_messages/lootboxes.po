@@ -33,7 +33,7 @@ msgid "buttonLabel/buy"
 msgstr "Купить"
 
 msgid "buttonLabel/buyMore"
-msgstr "Купить коробки"
+msgstr "Купить контейнеры"
 
 msgid "buttonLabel/close"
 msgstr "Закрыть"
@@ -42,7 +42,7 @@ msgid "buttonLabel/open"
 msgstr "Открыть"
 
 msgid "buttonLabel/openBox"
-msgstr "Открыть коробку"
+msgstr "Открыть контейнер"
 
 msgid "buttonLabel/quest"
 msgstr "К задачам"
@@ -252,6 +252,32 @@ msgstr ""
 "танкопарка предложений. Скрестите пальцы — пусть вам попадётся именно та "
 "машина, о которой вы мечтали!"
 
+msgid "desctiptions/ny_2026_big"
+msgstr ""
+"В каждом контейнере с определённой вероятностью вы можете найти премиум или "
+"акционную технику VIII-X уровней, украшения для праздничных зон в Ангаре и "
+"другое ценное имущество, среди которого: 3D-стили, золото, Танковый премиум "
+"аккаунт, свободный опыт, серебро, личные резервы и учебные материалы. Также "
+"есть вероятность получить кое-что действительно легендарное."
+
+msgid "desctiptions/ny_2026_small"
+msgstr ""
+"В контейнере вы найдёте снаряжение, предбоевые инструкции, серебро, Танковый"
+" премиум аккаунт, личные резервы, учебные материалы. А также, конечно, "
+"мандарины!"
+
+msgid "desctiptions/ny_2026_surprise"
+msgstr ""
+"В наградах автомата вы найдёте разные тематические элементы внешнего вида, "
+"Танковый премиум аккаунт, серебро, резервы, золото, учебные материалы... А "
+"также, возможно, нечто легендарное."
+
+msgid "desctiptions/ny_2026_tanks"
+msgstr ""
+"А вот тут уже всё серьёзно: вы получите случайную машину из огромного "
+"танкопарка предложений. Скрестите пальцы — пусть вам попадётся именно та "
+"машина, о которой вы мечтали!"
+
 msgid "desctiptions/rp_2024_large"
 msgstr ""
 "Ценный контейнер, который содержит премиум технику, включая машины VIII "
@@ -352,16 +378,16 @@ msgid "entryDesc/boxesCount"
 msgstr "x{count}"
 
 msgid "entryDesc/buySlot"
-msgstr "Большие коробки можно купить в Премиум магазине"
+msgstr "Большие контейнеры можно купить в Премиум магазине"
 
 msgid "entryDesc/newYear_premium"
-msgstr "Большие коробки"
+msgstr "Большие контейнеры"
 
 msgid "entryDesc/newYear_usual"
-msgstr "Малые коробки"
+msgstr "Ящики с мандаринами"
 
 msgid "entryDesc/questSlot"
-msgstr "Малые коробки можно заработать, выполняя задачи"
+msgstr "Ящики с мандаринами можно заработать, выполняя задачи"
 
 msgid "entryDesc/restrictedMode"
 msgstr "Функциональность временно недоступна. Попробуйте позже."
@@ -370,14 +396,14 @@ msgid "entryPoint/header"
 msgstr "Коробки"
 
 msgid "entryTooltip/body/h1"
-msgstr "Где купить большие коробки:"
+msgstr "Где купить большие контейнеры:"
 
 msgid "entryTooltip/body/h2"
-msgstr "Как получить малые коробки:"
+msgstr "Как получить ящики с мандаринами:"
 
 msgid "entryTooltip/body/p1"
 msgstr ""
-"Покупайте коробки с новогодними украшениями для себя и своих друзей в "
+"Покупайте контейнеры с новогодними украшениями для себя и своих друзей в "
 "Премиум магазине."
 
 msgid "entryTooltip/body/p2"
@@ -394,12 +420,12 @@ msgstr "ДОКУПИТЬ КОРОБКИ"
 
 msgid "entryView/ended/newYear_premium"
 msgstr ""
-"Большие коробки на Складе закончились,\n"
+"Большие контейнеры на Складе закончились,\n"
 "можете купить их в Премиум магазине"
 
 msgid "entryView/ended/newYear_usual"
 msgstr ""
-"Малые коробки закончились,\n"
+"Ящики с мандаринами закончились,\n"
 "можете заработать их в бою"
 
 msgid "entryView/lootboxesCount"
@@ -435,13 +461,13 @@ msgid "multiOpenView/applyLabel"
 msgstr "Так точно!"
 
 msgid "multiOpenView/boxesInStorage"
-msgstr "Коробок в наличии: {count}"
+msgstr "Контейнеров в наличии: {count}"
 
 msgid "multiOpenView/boxesNotAvailable"
-msgstr "Коробки закончились"
+msgstr "Контейнеры закончились"
 
 msgid "multiOpenView/openBoxesLabel"
-msgstr "Открыть следующие {count} коробок"
+msgstr "Открыть следующие {count} контейнеров"
 
 msgid "multiOpenView/openedCount"
 msgstr "x{count}"
@@ -454,6 +480,40 @@ msgstr ""
 "Чтобы получить контейнеры, участвуйте в определённых событиях и выполняйте "
 "связанные с ними боевые задачи. Некоторые контейнеры можно докупить в "
 "магазине события."
+
+msgid "noBoxes/ny_2025_big"
+msgstr ""
+"Чтобы получить праздничный контейнер, повышайте уровень атмосферы праздника,"
+" участвуйте в определённых событиях и выполняйте связанные с ними боевые "
+"задачи. Некоторые контейнеры можно докупить в игровом Магазине."
+
+msgid "noBoxes/ny_2025_small"
+msgstr ""
+"Ящик с мандаринами можно получить за выполнение задач Деда Мороза и за "
+"некоторые другие активности события «Наш Новый год»."
+
+msgid "noBoxes/ny_2025_tanks"
+msgstr ""
+"Легендарный контейнер можно получить с некоторым шансом из любого списка "
+"содержимого контейнеров, а также по механике гарантированной награды на 3-м "
+"этапе и за жетоны в автомате удачи."
+
+msgid "noBoxes/ny_2026_big"
+msgstr ""
+"Чтобы получить праздничный контейнер, повышайте уровень атмосферы праздника,"
+" участвуйте в определённых событиях и выполняйте связанные с ними боевые "
+"задачи. Некоторые контейнеры можно докупить в игровом Магазине."
+
+msgid "noBoxes/ny_2026_small"
+msgstr ""
+"Ящик с мандаринами можно получить за выполнение задач Деда Мороза и за "
+"некоторые другие активности события «Наш Новый год»."
+
+msgid "noBoxes/ny_2026_tanks"
+msgstr ""
+"Легендарный контейнер можно получить с некоторым шансом из любого списка "
+"содержимого контейнеров, а также по механике гарантированной награды на 3-м "
+"этапе и за жетоны в автомате удачи."
 
 msgid "noBoxes/tanks_birthday_2025_large"
 msgstr ""
@@ -503,11 +563,11 @@ msgid "notification/lootBoxesAutoOpen/boxes"
 msgstr "Открыто: %(boxes)s"
 
 msgid "notification/lootBoxesAutoOpen/counter"
-msgstr "%(boxName)s (x%(count)d)"
+msgstr "Контейнер %(boxName)s (x%(count)d)"
 
 msgid "notification/lootBoxesAutoOpen/rewards"
 msgstr ""
-"Получено:\n"
+"Получено имущество:\n"
 "%(rewards)s"
 
 msgid "notification/lootBoxesAutoOpen/text"
@@ -549,6 +609,20 @@ msgstr "Уникальный член экипажа: %(count)s"
 msgid "notification/rewards"
 msgstr "Вам присвоены следующие награды:"
 
+msgid "notification/statistic/disabled/body"
+msgstr ""
+"Возникли технические сложности, и статистика открытия контейнеров временно "
+"отключена."
+
+msgid "notification/statistic/disabled/header"
+msgstr "Статистика открытия контейнеров"
+
+msgid "notification/statistic/enabled/body"
+msgstr "Все проблемы решены. Статистика открытия контейнеров снова работает."
+
+msgid "notification/statistic/enabled/header"
+msgstr "Статистика открытия контейнеров"
+
 msgid "restrictedMessage/body"
 msgstr "Операции с коробками временно приостановлены. Всё будет хорошо."
 
@@ -556,7 +630,7 @@ msgid "restrictedMessage/header"
 msgstr "Внимание:"
 
 msgid "rewardView/boxesCount"
-msgstr "Коробок в наличии: {count}"
+msgstr "Контейнеров в наличии: {count}"
 
 msgid "rewardView/closeBtnLabel"
 msgstr "Закрыть"
@@ -595,7 +669,7 @@ msgid "rewardView/rerollBtnLabel"
 msgstr "Переоткрыть"
 
 msgid "rewardView/zeroBoxes"
-msgstr "Коробки закончились"
+msgstr "Контейнеры закончились"
 
 msgid "specialReward/continueBtn"
 msgstr "Продолжить"
@@ -610,16 +684,16 @@ msgid "specialReward/vehicle/goToBtn"
 msgstr "Посмотреть в Ангаре"
 
 msgid "tooltip/category/header/Christmas"
-msgstr "Рождественские коробки"
+msgstr "Рождественские контейнеры"
 
 msgid "tooltip/category/header/Fairytale"
-msgstr "Волшебные коробки"
+msgstr "Волшебные контейнеры"
 
 msgid "tooltip/category/header/NewYear"
-msgstr "Новогодние коробки"
+msgstr "Новогодние контейнеры"
 
 msgid "tooltip/category/header/Oriental"
-msgstr "Восточные коробки"
+msgstr "Восточные контейнеры"
 
 msgid "tooltip/category/rewards/Christmas"
 msgstr "Рождественской коллекции"
@@ -640,10 +714,10 @@ msgid "tooltip/category/rewards/header"
 msgstr "Награды:"
 
 msgid "tooltip/entryView/buyBoxes"
-msgstr "Купить дополнительные коробки в Премиум магазине."
+msgstr "Купить дополнительные контейнеры в Премиум магазине."
 
 msgid "tooltip/entryView/openBoxes"
-msgstr "Открывать одновременно по несколько коробок."
+msgstr "Открывать одновременно по несколько контейнеров."
 
 msgid "tooltip/restrictedMode"
 msgstr "Операция временно недоступна. Попробуйте позже."
@@ -706,10 +780,10 @@ msgid "userName/mtl_universal"
 msgstr "Зов сокола"
 
 msgid "userName/newYear_premium"
-msgstr "БОЛЬШИЕ КОРОБКИ"
+msgstr "БОЛЬШИЕ КОНТЕЙНЕРЫ"
 
 msgid "userName/newYear_usual"
-msgstr "МАЛЫЕ КОРОБКИ"
+msgstr "ЯЩИКИ С МАНДАРИНАМИ"
 
 msgid "userName/ny_2024_VI"
 msgstr "Ёлочные игрушки"
@@ -736,6 +810,18 @@ msgid "userName/ny_2025_surprise"
 msgstr "Автомат удачи"
 
 msgid "userName/ny_2025_tanks"
+msgstr "Легендарный контейнер"
+
+msgid "userName/ny_2026_big"
+msgstr "Новогодний контейнер"
+
+msgid "userName/ny_2026_small"
+msgstr "Ящик с мандаринами"
+
+msgid "userName/ny_2026_surprise"
+msgstr "Автомат удачи"
+
+msgid "userName/ny_2026_tanks"
 msgstr "Легендарный контейнер"
 
 msgid "userName/rp_2024_large"

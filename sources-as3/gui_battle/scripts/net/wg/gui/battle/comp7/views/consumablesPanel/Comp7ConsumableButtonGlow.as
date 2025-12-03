@@ -7,8 +7,6 @@ package net.wg.gui.battle.comp7.views.consumablesPanel
    public class Comp7ConsumableButtonGlow extends BattleAbilityEquipmentButtonGlow implements IBattleEquipmentButtonGlow
    {
       
-      private static const SHOW_GLOW_ORANGE_SPECIAL_STATE:String = "orangeSpecial";
-      
       private static const SHOW_GLOW_ORANGE_UPGRADE_STATE:String = "orangeUpgrade";
        
       

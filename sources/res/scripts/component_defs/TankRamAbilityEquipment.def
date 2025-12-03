@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<Parent>AbilityEquipment</Parent>
+	<ClientMethods>
+		<showCollisionEffectWithOtherVehicle>
+			<Arg>VECTOR3</Arg>
+			<Arg>BOOL</Arg>
+		</showCollisionEffectWithOtherVehicle>
+	</ClientMethods>
+</root>

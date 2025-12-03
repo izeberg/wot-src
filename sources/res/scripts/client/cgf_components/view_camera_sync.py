@@ -1,7 +1,7 @@
-import functools, logging, re
+import logging, re
 from collections import defaultdict
 from enum import IntEnum
-import CGF
+import BigWorld, CGF
 from CameraComponents import CameraComponent
 from cgf_components.hangar_camera_manager import CurrentCameraObject, CameraInFlightComponent, HangarCameraManager
 from cgf_components.view_components import ViewComponent
@@ -138,22 +138,23 @@ class ViewCameraSyncManager(CGF.ComponentManager):
     def onViewCreated(self, syncComponent, viewComponent):
         _logger.debug('onViewCreated %s %s', syncComponent.viewLayoutPath, syncComponent.viewState)
         internalState = viewComponent.view.getInternalViewState()
-        viewComponent.view.onInternalViewStateChanged += functools.partial(self.__onInternalViewStateChanged, viewComponent, syncComponent)
+        viewComponent.view.onInternalViewStateChanged += self.__onInternalViewStateChanged
         if internalState == syncComponent.viewState:
             self.__sync(viewComponent.view, syncComponent, skipFlight=viewComponent.view.skipCameraFlightOnInit)
 
     @onRemovedQuery(ViewCameraSyncComponent, ViewComponent)
     def onViewRemoved(self, syncComponent, viewComponent):
         _logger.debug('onViewRemoved %s %s', syncComponent.viewLayoutPath, syncComponent.viewState)
-        viewComponent.view.onInternalViewStateChanged -= functools.partial(self.__onInternalViewStateChanged, viewComponent, syncComponent)
         if (syncComponent.viewLayoutID, syncComponent.viewState) in self.__cameraOwners:
             self.__desync(syncComponent, skipFlight=viewComponent.view.skipCameraFlightOnClose)
+            self.__forceSync(skipFlight=viewComponent.view.skipCameraFlightOnClose)
         viewComponent.view = None
         return
 
     def __sync(self, view, syncComponent, skipFlight=None):
         if self.__currentCameraName == syncComponent.camera.name:
-            view.setCameraState(CameraState.INSTALLED)
+            state = CameraState.IN_TRANSITION if BigWorld.camera().isInTransition() else CameraState.INSTALLED
+            view.setCameraState(state)
         else:
             view.setCameraState(CameraState.NOT_INSTALLED)
             self.__switchCamera(syncComponent.camera.name, skipFlight if skipFlight is not None else syncComponent.skipFlight)
@@ -167,13 +168,17 @@ class ViewCameraSyncManager(CGF.ComponentManager):
             cameraManager = self.__getHangarCameraManager()
             if cameraManager and cameraManager.isActive:
                 cameraManager.switchToTank(skipFlight or syncComponent.skipFlight)
-        elif self.__cameraOwners:
+
+    def __forceSync(self, skipFlight):
+        if not self.__cameraOwners:
+            return
+        else:
             layoutID, viewState = self.__cameraOwners.pop()
             newSyncComponent = self.__components.get((layoutID, viewState), None)
             newViewComponent = newSyncComponent.gameObject.findComponentByType(ViewComponent) if newSyncComponent else None
             if newSyncComponent and newViewComponent:
                 self.__sync(newViewComponent.view, newSyncComponent(), skipFlight)
-        return
+            return
 
     def __getHangarCameraManager(self):
         return CGF.getManager(self.spaceID, HangarCameraManager)
@@ -183,13 +188,26 @@ class ViewCameraSyncManager(CGF.ComponentManager):
         if cameraManager and cameraManager.isActive:
             cameraManager.switchByCameraName(cameraName, instantly)
 
-    def __onInternalViewStateChanged(self, viewComponent, syncComponent, state, skipFlight=None):
-        _logger.debug('__onInternalViewStateChanged %s %s %s', syncComponent.viewLayoutPath, viewComponent.view.layoutID, state)
-        oldKey = (syncComponent.viewLayoutID, syncComponent.viewState)
-        if syncComponent.viewState != state and oldKey in self.__cameraOwners:
-            self.__desync(syncComponent, skipFlight, newState=state)
-        elif syncComponent.viewState == state and oldKey not in self.__cameraOwners:
-            self.__sync(viewComponent.view, syncComponent, skipFlight)
+    def __onInternalViewStateChanged(self, state, skipFlight=None):
+        items = CGF.Query(self.spaceID, (ViewCameraSyncComponent, ViewComponent))
+        if self.__cameraOwners:
+            self._desyncAll(items, state, skipFlight)
+        self._syncAll(items, state, skipFlight)
+
+    def _syncAll(self, items, state, skipFlight):
+        for syncComponent, viewComponent in items:
+            oldKey = (syncComponent.viewLayoutID, syncComponent.viewState)
+            if syncComponent.viewState == state and oldKey not in self.__cameraOwners:
+                _logger.debug('ViewCameraSyncManager.sync %s %s %s', viewComponent.view.layoutID, state, syncComponent.viewLayoutPath)
+                self.__sync(viewComponent.view, syncComponent, skipFlight)
+
+    def _desyncAll(self, items, state, skipFlight):
+        for syncComponent, viewComponent in items:
+            oldKey = (
+             syncComponent.viewLayoutID, syncComponent.viewState)
+            if syncComponent.viewState != state and oldKey in self.__cameraOwners:
+                _logger.debug('ViewCameraSyncManager.desync %s %s %s', viewComponent.view.layoutID, state, syncComponent.viewLayoutPath)
+                self.__desync(syncComponent, skipFlight, newState=state)
 
 
 class ViewCameraLinksManager(CGF.ComponentManager):
@@ -242,6 +260,8 @@ class ViewCameraLinksManager(CGF.ComponentManager):
         elif newState == ViewStatus.DESTROYING:
             view = self.__guiLoader.windowsManager.getView(uniqueID)
             syncComponentLinks = self.__viewGOLinks.get(view.layoutID, {})
+            if syncComponentLinks:
+                view.onInternalViewStateChanged.clear()
             for syncComponentLink in syncComponentLinks.itervalues():
                 go = syncComponentLink.gameObject
                 viewComponent = go.findComponentByType(ViewComponent)

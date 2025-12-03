@@ -103,19 +103,23 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<primitive>indices</primitive>
+			<vertices>hull_Shape.vertices</vertices>
+			<primitive>hull_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>tank_proxy</identifier>
-					<property>
-						selfIllumination
-						<Float>0.000000</Float>
-					</property>
-					<collisionFlags>0</collisionFlags>
-					<materialKind>0</materialKind>
 					<fx>shaders/std_effects/PBS_tank.fx</fx>
+					<materialKind>0</materialKind>
+					<identifier>tank_proxy</identifier>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>vehicles/russian/R204_ISU_122_2/ISU_122_2_proxy_AM.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
 					<property>
 						metallicGlossMap
 						<Texture>vehicles/russian/R204_ISU_122_2/ISU_122_2_proxy_GMM.dds</Texture>
@@ -125,27 +129,22 @@
 						<Texture>vehicles/russian/R204_ISU_122_2/ISU_122_2_proxy_ANM.dds</Texture>
 					</property>
 					<property>
-						diffuseMap
-						<Texture>vehicles/russian/R204_ISU_122_2/ISU_122_2_proxy_AM.dds</Texture>
-					</property>
-					<property>
 						excludeMaskAndAOMap
 						<Texture>vehicles/russian/R204_ISU_122_2/ISU_122_2_proxy_AO.dds</Texture>
 					</property>
 					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
 					</property>
-					<sortOrder>0</sortOrder>
 				</material>
-				<groupOrigin>0.002003 1.091856 -0.180705</groupOrigin>
+				<groupOrigin>0.001013 0.815292 -0.196883</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-1.503461 -0.617864 -3.835008</min>
-		<max>1.507468 2.801575 3.473598</max>
+		<min>-1.502310 -0.518126 -3.826732</min>
+		<max>1.504335 2.148711 3.432967</max>
 	</boundingBox>
-	<geometrySize>5068</geometrySize>
-	<minUVDensity>0.003116</minUVDensity>
+	<geometrySize>6804</geometrySize>
+	<minUVDensity>0.004111</minUVDensity>
 </root>

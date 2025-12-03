@@ -15,19 +15,19 @@ msgstr ""
 "(n%100<10 || n%100>=20) ? 1 : 2);"
 
 msgid "alertMessage/afterSeason"
-msgstr "Падзея «Агністы тыгр» завершана."
+msgstr "Падзея «Ледзяны тыгр» завершана."
 
 msgid "alertMessage/allNotAvailable"
 msgstr "Баі на серверах пачнуцца праз %(primeDelta)s"
 
 msgid "alertMessage/allNotAvailableEnd"
-msgstr "Падзея «Агністы тыгр» завершана."
+msgstr "Падзея «Ледзяны тыгр» завершана."
 
 msgid "alertMessage/allNotSet"
 msgstr "Рэжым недаступны на ўсіх серверах"
 
 msgid "alertMessage/betweenSeasons"
-msgstr "Падзея «Агністы тыгр» завершана."
+msgstr "Падзея «Ледзяны тыгр» завершана."
 
 msgid "alertMessage/button/changeServer"
 msgstr "Змяніць сервер"
@@ -51,7 +51,7 @@ msgid "alertMessage/standaloneNotAvailable"
 msgstr "Баі на серверы пачнуцца праз %(primeDelta)s"
 
 msgid "alertMessage/standaloneNotAvailableEnd"
-msgstr "Падзея «Агністы тыгр» завершана."
+msgstr "Падзея «Ледзяны тыгр» завершана."
 
 msgid "alertMessage/standaloneNotSet"
 msgstr "Рэжым недаступны на серверы %(serverName)s"
@@ -93,7 +93,7 @@ msgid "banner/infoSmall/disabled"
 msgstr "Чакайце прайм-тайму"
 
 msgid "banner/season"
-msgstr "Падзея «Агністы тыгр»"
+msgstr "Падзея «Ледзяны тыгр»"
 
 msgid "banner/seasonDate/seasonLasts"
 msgstr "Да %(day)s %(month)s"
@@ -120,7 +120,7 @@ msgid "battleCarousel/filterButtonTooltip/body"
 msgstr "Налады адлюстравання тэхнікі з улікам тыпу, ролі і дзяржавы."
 
 msgid "battleCarousel/filterButtonTooltip/header"
-msgstr "Фільтр параметраў"
+msgstr "Фільтр паводле параметраў"
 
 msgid "battleCarousel/filterPopover/desc"
 msgstr "Тут паказаныя толькі машыны, што пасуюць да рэжыму."
@@ -307,9 +307,9 @@ msgstr "%(start)s — %(end)s"
 
 msgid "calendarDay/timeLeft"
 msgid_plural "plural/calendarDay/timeLeft"
-msgstr[0] "Падзея «Агністы тыгр» працягнецца %(days)d дзень."
-msgstr[1] "Падзея «Агністы тыгр» працягнецца %(days)d дні."
-msgstr[2] "Падзея «Агністы тыгр» працягнецца %(days)d дзён."
+msgstr[0] "Падзея «Ледзяны тыгр» працягнецца %(days)d дзень."
+msgstr[1] "Падзея «Ледзяны тыгр» працягнецца %(days)d дні."
+msgstr[2] "Падзея «Ледзяны тыгр» працягнецца %(days)d дзён."
 
 msgid "calendarDay/title"
 msgstr "Расклад"
@@ -362,7 +362,7 @@ msgstr ""
 "дзейнічае ў падзеі."
 
 msgid "detailsHelp/rules/title"
-msgstr "Націск: Агністы тыгр"
+msgstr "Націск: Ледзяны тыгр"
 
 msgid "detailsHelp/seasonModifiers"
 msgstr ""
@@ -637,8 +637,8 @@ msgstr ""
 
 msgid "noVehicles/text/vehicleUnavailable"
 msgstr ""
-"Каб удзельнічаць у «Націску», вы мусіце мець прынамсі адну машыну %(levels)s узроўню, прыдатную для гульні ў рэжыме.\n"
-"Неабходную тэхніку можна ўзяць напракат у Краме Націску."
+"Каб удзельнічаць у «Націску», трэба мець прынамсі адну машыну %(levels)s узроўню, прыдатную для гульні ў рэжыме.\n"
+"Неабходную тэхніку можна ўзяць напракат, выканаўшы адмысловую баявую задачу."
 
 msgid "page/heading/leaderboard"
 msgstr "ТАБЛІЦА ЛІДАРАЎ"
@@ -748,7 +748,7 @@ msgid "primeTimeView/status/primeWillBeAvailable"
 msgstr "Баі на серверы %(server)s пачнуцца праз %(time)s"
 
 msgid "primeTimeView/status/seasonDisabled"
-msgstr "Падзея «Агністы тыгр» на серверы %(server)s завяршылася."
+msgstr "Падзея «Ледзяны тыгр» на серверы %(server)s завяршылася."
 
 msgid "primeTimeView/status/untill"
 msgstr "Баі на серверы %(server)s недаступныя да %(startTime)s"
@@ -988,7 +988,7 @@ msgstr ""
 "{whiteSpanish_Open}Для %(vehicleLevel)s узроўню тэхнікі{whiteSpanish_Close}"
 
 msgid "rewards/subtitle/styleProgress"
-msgstr "{whiteSpanish_Open}Для стылю «Агністы тыгр»{whiteSpanish_Close}"
+msgstr "{whiteSpanish_Open}Для стылю «Ледзяны тыгр»{whiteSpanish_Close}"
 
 msgid "rewards/subtitle/vehicles_rent"
 msgstr "%(vehicleLevel)s узровень"
@@ -1006,7 +1006,7 @@ msgid "rewardsScreen/description/qualificationEnded"
 msgstr "НАЦІСК. КВАЛІФІКАЦЫЯ ЗАВЕРШАНА"
 
 msgid "rewardsScreen/description/season"
-msgstr "НАЦІСК. ПАДЗЕЯ «АГНІСТЫ ТЫГР»."
+msgstr "НАЦІСК. ПАДЗЕЯ «ЛЕДЗЯНЫ ТЫГР»."
 
 msgid "rewardsScreen/notice/subTitle"
 msgstr ""
@@ -1080,10 +1080,10 @@ msgid "season/minutesLeft"
 msgstr "Да завяршэння: %(minutes)s хв"
 
 msgid "season/name"
-msgstr "Націск: Агністы тыгр"
+msgstr "Націск: Ледзяны тыгр"
 
 msgid "season/over"
-msgstr "Падзея «Агністы тыгр» завершана."
+msgstr "Падзея «Ледзяны тыгр» завершана."
 
 msgid "season/range"
 msgstr "%(startDate)s – %(endDate)s"
@@ -1092,7 +1092,7 @@ msgid "season/secondsLeft"
 msgstr "Да завяршэння: %(seconds)s с"
 
 msgid "season/shortName"
-msgstr "Агністы тыгр"
+msgstr "Ледзяны тыгр"
 
 msgid "seasonModifier/title"
 msgstr "Мадыфікатар Націску"
@@ -1335,7 +1335,7 @@ msgid "weeklyQuests/tokenProgress/description/normal"
 msgstr "Зарабляйце манеты Націску для атрымання ўзнагарод"
 
 msgid "whatsNewView/banner/title/large"
-msgstr "Падзея «Агністы тыгр»"
+msgstr "Падзея «Ледзяны тыгр»"
 
 msgid "whatsNewView/button/ok"
 msgstr "Я ў справе!"
@@ -1382,6 +1382,11 @@ msgstr ""
 "У падзеі дзейнічае асаблівы мадыфікатар націску, які павышае трываласць усёй"
 " тэхнікі, скарачае час падрыхтоўкі рыштунку і зніжае стандартны агляд."
 
+msgid "whatsNewView/slides/description/modifiers"
+msgstr ""
+"Павялічана трываласць модуляў тэхнікі, скарочаны час выяўлення машын і час "
+"перазараджання іх гармат, а таксама зменшаны радыус мінімальнай бачнасці."
+
 msgid "whatsNewView/slides/description/newSeason"
 msgstr ""
 "Змагайцеся ў асаблівым рэжыме бою «Атака/Абарона». Правілы простыя: ёсць "
@@ -1410,9 +1415,10 @@ msgstr ""
 
 msgid "whatsNewView/slides/description/rework"
 msgstr ""
-"Сустракайце новую падзею ў рэжыме «Націск»: цяпер змененыя мапы будуць "
-"пазначаны паметкай «ЗМЕНЕНА», у рэжыме з'явяцца цяжкія агнямётныя танкі, а "
-"за 2 хвіліны да заканчэння бою на экране з'явіцца адпаведнае паведамленне."
+"У гэтым запуску дададзены дзве новыя мапы: Малінаўка і Эрленбэрг, а Уайдпарк"
+" і Ціхі бераг атрымалі балансныя праўкі. Акрамя таго, у межах «Ледзянога "
+"тыгра» вы зможаце змагацца на зімовых версіях мапаў Малінаўка, Карэлія і "
+"Прохараўка."
 
 msgid "whatsNewView/slides/description/roleSkills"
 msgstr ""
@@ -1453,8 +1459,11 @@ msgstr "Мапы"
 msgid "whatsNewView/slides/title/modificator"
 msgstr "Мадыфікатар падзеі"
 
+msgid "whatsNewView/slides/title/modifiers"
+msgstr "Змены мадыфікатара"
+
 msgid "whatsNewView/slides/title/newSeason"
-msgstr "Націск: Агністы тыгр"
+msgstr "Націск: Ледзяны тыгр"
 
 msgid "whatsNewView/slides/title/newTypes"
 msgstr "Цяпер без САУ"
@@ -1466,7 +1475,7 @@ msgid "whatsNewView/slides/title/ranks"
 msgstr "Сістэма рангаў"
 
 msgid "whatsNewView/slides/title/rework"
-msgstr "Націск: Агністы тыгр"
+msgstr "Націск: Ледзяны тыгр"
 
 msgid "whatsNewView/slides/title/roleSkills"
 msgstr "Ролевыя навыкі"
@@ -1488,7 +1497,7 @@ msgstr "НАЦІСК"
 
 msgid "whatsNewView/vehicleLimitations/description"
 msgstr ""
-"Да ўдзелу ў падзеі «Агністы тыгр» больш не дапускаюцца машыны ролі САУ і "
+"Да ўдзелу ў падзеі «Ледзяны тыгр» больш не дапускаюцца машыны ролі САУ і "
 "цяжкія агнямётныя танкі."
 
 msgid "whatsNewView/vehicleLimitations/heading"

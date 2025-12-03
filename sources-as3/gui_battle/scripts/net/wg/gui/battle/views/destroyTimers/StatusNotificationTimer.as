@@ -193,7 +193,6 @@ package net.wg.gui.battle.views.destroyTimers
          this.destroyTimer = App.utils.classFactory.getComponent(param1,IStatusNotification);
          this._destroyTimerContainer.addChild(this.destroyTimer);
          this.secondaryTimer = App.utils.classFactory.getComponent(param2,IStatusNotification);
-         this.secondaryTimer.useAutoHide = false;
          this._secondaryTimerContainer.addChild(this.secondaryTimer);
       }
       
@@ -259,15 +258,6 @@ package net.wg.gui.battle.views.destroyTimers
          else
          {
             this._destroyTimerContainer.visible = false;
-         }
-      }
-      
-      override public function set visible(param1:Boolean) : void
-      {
-         super.visible = param1;
-         if(!this.destroyTimer.visible)
-         {
-            this.destroyTimer.visible = param1;
          }
       }
       

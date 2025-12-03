@@ -16,9 +16,9 @@ package net.wg.infrastructure.base.meta
       
       function as_reset() : void;
       
-      function as_addBattleEfficiencyEvent(param1:String, param2:Number, param3:String, param4:String, param5:String, param6:String, param7:int, param8:String) : void;
+      function as_addBattleEfficiencyEvent(param1:String, param2:Number, param3:String, param4:String, param5:String, param6:String, param7:int, param8:String, param9:String) : void;
       
-      function as_updateBattleEfficiencyEvent(param1:String, param2:Number, param3:String, param4:String, param5:String, param6:String, param7:int, param8:String) : void;
+      function as_updateBattleEfficiencyEvent(param1:String, param2:Number, param3:String, param4:String, param5:String, param6:String, param7:int, param8:String, param9:String) : void;
       
       function as_setSettings(param1:Boolean, param2:Boolean, param3:Boolean, param4:Boolean) : void;
    }

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/intunion/Un02_Merkava_LP/_skins/Un02_Merkava_LP_3Dst_01/normal/lod4/Gun_01</parent>
+	<tank>true</tank>
+	<extent>192.000000</extent>
+	<nodefullVisual>vehicles/intunion/Un02_Merkava_LP/_skins/Un02_Merkava_LP_3Dst_01/normal/lod3/Gun_01</nodefullVisual>
+	<visibilityBox>
+		<min>-0.436494 -0.439455 -0.279837</min>
+		<max>0.275493 0.664616 4.114427</max>
+	</visibilityBox>
+</root>

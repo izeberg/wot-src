@@ -59,9 +59,10 @@ package net.wg.gui.battle.eventBattle.views.buffsPanel
       
       private function drawLayout() : void
       {
+         var _loc2_:int = 0;
          var _loc3_:EventBuffButton = null;
          var _loc1_:int = this.renderers.length;
-         var _loc2_:int = -ITEM_WIDTH_PADDING * _loc1_ >> 1;
+         _loc2_ = -ITEM_WIDTH_PADDING * _loc1_ >> 1;
          var _loc4_:uint = 0;
          while(_loc4_ < _loc1_)
          {

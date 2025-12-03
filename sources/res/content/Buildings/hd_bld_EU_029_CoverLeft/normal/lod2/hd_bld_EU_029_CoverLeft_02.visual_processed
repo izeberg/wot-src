@@ -13,10 +13,87 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<stream>uv2</stream>
-			<stream>colour</stream>
-			<primitive>indices</primitive>
+			<vertices>s_wall0Shape.vertices</vertices>
+			<primitive>s_wall0Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_wall_0</identifier>
+					<materialKind>0</materialKind>
+					<collisionFlags>144</collisionFlags>
+				</material>
+				<groupOrigin>-0.381548 7.556857 -0.523167</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>s_wall_1</identifier>
+					<materialKind>111</materialKind>
+					<collisionFlags>131</collisionFlags>
+				</material>
+				<groupOrigin>-0.311263 2.506903 0.571045</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>s6Shape.vertices</vertices>
+			<stream>s6Shape.uv2</stream>
+			<stream>s6Shape.colour</stream>
+			<primitive>s6Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd6</identifier>
+					<fx>shaders/std_effects/PBS_ext_dual.fx</fx>
+					<property>
+						diffuseMap
+						<Texture>content/Buildings/00_Detail_Sets/Detail_Set_NewCity_01_AM.dds</Texture>
+					</property>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>108</materialKind>
+					<property>
+						normalMap
+						<Texture>content/Buildings/00_Detail_Sets/Detail_Set_NewCity_01_ANM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Buildings/00_Detail_Sets/Detail_Set_NewCity_01_GMM.dds</Texture>
+					</property>
+					<property>
+						g_vertexColorMode
+						<Int>3</Int>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						diffuseMap2
+						<Texture>content/Buildings/00_Detail_Sets/Detail_Set_NewCity_01_AM2.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_enableTerrainBlending
+						<Bool>true</Bool>
+					</property>
+				</material>
+				<groupOrigin>-0.627796 9.889774 0.104227</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>sShape9.vertices</vertices>
+			<stream>sShape9.uv2</stream>
+			<primitive>sShape9.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -332,48 +409,6 @@
 			<primitiveGroup>
 				4
 				<material>
-					<identifier>s_nd6</identifier>
-					<fx>shaders/std_effects/PBS_ext_dual.fx</fx>
-					<property>
-						diffuseMap
-						<Texture>content/Buildings/00_Detail_Sets/Detail_Set_NewCity_01_AM.dds</Texture>
-					</property>
-					<collisionFlags>0</collisionFlags>
-					<materialKind>108</materialKind>
-					<property>
-						normalMap
-						<Texture>content/Buildings/00_Detail_Sets/Detail_Set_NewCity_01_ANM.dds</Texture>
-					</property>
-					<property>
-						metallicGlossMap
-						<Texture>content/Buildings/00_Detail_Sets/Detail_Set_NewCity_01_GMM.dds</Texture>
-					</property>
-					<property>
-						g_vertexColorMode
-						<Int>3</Int>
-					</property>
-					<property>
-						g_enableAO
-						<Bool>true</Bool>
-					</property>
-					<property>
-						diffuseMap2
-						<Texture>content/Buildings/00_Detail_Sets/Detail_Set_NewCity_01_AM2.dds</Texture>
-					</property>
-					<property>
-						doubleSided
-						<Bool>true</Bool>
-					</property>
-					<property>
-						g_enableTerrainBlending
-						<Bool>true</Bool>
-					</property>
-				</material>
-				<groupOrigin>-0.627796 9.889774 0.104227</groupOrigin>
-			</primitiveGroup>
-			<primitiveGroup>
-				5
-				<material>
 					<identifier>s_nd10</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
 					<collisionFlags>0</collisionFlags>
@@ -450,7 +485,7 @@
 				<groupOrigin>-0.367354 3.441281 0.513853</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				6
+				5
 				<material>
 					<identifier>s_nd0</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
@@ -532,7 +567,7 @@
 				<groupOrigin>-0.367355 8.280172 -0.572466</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				7
+				6
 				<material>
 					<identifier>s_nd8</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
@@ -605,24 +640,6 @@
 				</material>
 				<groupOrigin>-0.360436 2.269691 7.156276</groupOrigin>
 			</primitiveGroup>
-			<primitiveGroup>
-				8
-				<material>
-					<identifier>s_wall_1</identifier>
-					<materialKind>111</materialKind>
-					<collisionFlags>131</collisionFlags>
-				</material>
-				<groupOrigin>-0.311263 2.506903 0.571045</groupOrigin>
-			</primitiveGroup>
-			<primitiveGroup>
-				9
-				<material>
-					<identifier>s_wall_0</identifier>
-					<materialKind>0</materialKind>
-					<collisionFlags>144</collisionFlags>
-				</material>
-				<groupOrigin>-0.381548 7.556857 -0.523167</groupOrigin>
-			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
@@ -630,6 +647,6 @@
 		<max>12.226881 19.552069 10.048098</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>233780</geometrySize>
-	<minUVDensity>0.000269</minUVDensity>
+	<geometrySize>217480</geometrySize>
+	<minUVDensity>0.000257</minUVDensity>
 </root>

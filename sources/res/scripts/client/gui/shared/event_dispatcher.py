@@ -1,7 +1,6 @@
-import logging, typing
+import logging, typing, adisp
 from operator import attrgetter
 from BWUtil import AsyncReturn
-import adisp
 from CurrentVehicle import HeroTankPreviewAppearance
 from constants import GameSeasonType, RentType
 from debug_utils import LOG_WARNING
@@ -615,6 +614,7 @@ def goToHeroTankOnScene(vehTypeCompDescr, previewAlias=VIEW_ALIAS.LOBBY_HANGAR, 
                 else:
                     showHeroTankPreview(vehTypeCompDescr, previewAlias=previewAlias, previewBackCb=previewBackCb, previousBackAlias=previousBackAlias, hangarVehicleCD=hangarVehicleCD)
             ClientSelectableCameraObject.switchCamera(entity, 'HeroTank')
+            entity.onSelect()
             break
 
     return
@@ -2284,6 +2284,11 @@ def getTechTreeLoadEvent(nation, blueprintMode=False):
 def showDailyQuestsIntroWindow():
     from gui.impl.lobby.daily.daily_intro_screen_view import DailyIntroScreenViewWindow
     DailyIntroScreenViewWindow(parent=getParentWindow()).load()
+
+
+def showNyDailyQuestsInfoWindow():
+    from gui.impl.lobby.daily.ny_daily_quests_info_view import NyDailyQuestsInfoViewWindow
+    NyDailyQuestsInfoViewWindow(parent=getParentWindow()).load()
 
 
 @dependency.replace_none_kwargs(guiLoader=IGuiLoader)

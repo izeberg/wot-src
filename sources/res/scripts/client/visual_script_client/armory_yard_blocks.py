@@ -40,14 +40,13 @@ class IsStageSoundValid(Block, AYMeta):
 
     def __init__(self, *args, **kwargs):
         super(IsStageSoundValid, self).__init__(*args, **kwargs)
-        self._stageIndex = self._makeDataInputSlot('stageIndex', SLOT_TYPE.INT)
+        self._sound = self._makeDataInputSlot('sound', SLOT_TYPE.SOUND)
         self._isSoundValid = self._makeDataOutputSlot('isSoundValid', SLOT_TYPE.BOOL, self._execute)
 
     def _execute(self):
         from gui.impl.gen import R
-        stageIndex = self._stageIndex.getValue()
-        eventName = sound_constants.getStageVoTapeRecorderName(stageIndex)
-        if R.sounds.dyn(eventName).isValid():
+        sound = self._sound.getValue().name
+        if R.sounds.dyn(sound).isValid():
             self._isSoundValid.setValue(True)
             return
         self._isSoundValid.setValue(False)
@@ -65,9 +64,8 @@ class GetNextValidSoundStageIndex(Block, AYMeta):
         from gui.impl.gen import R
         stageIndex = self._inStageIndex.getValue()
         progress = self.__ayController.getCurrentProgress()
-        totalStages = self.__ayController.getTotalSteps()
-        if progress > totalStages:
-            progress = totalStages
+        if progress > self.__ayController.maxNumberOfSteps:
+            progress = self.__ayController.maxNumberOfSteps
         for index in range(stageIndex, progress + 1):
             eventName = sound_constants.getStageVoTapeRecorderName(index)
             if R.sounds.dyn(eventName).isValid():
@@ -91,9 +89,8 @@ class GetLastValidSound(Block, AYMeta):
     def _execute(self):
         from gui.impl.gen import R
         progress = self.__ayController.getCurrentProgress()
-        totalStages = self.__ayController.getTotalSteps()
-        if progress > totalStages:
-            progress = totalStages
+        if progress > self.__ayController.maxNumberOfSteps:
+            progress = self.__ayController.maxNumberOfSteps
         for index in range(progress, 0, -1):
             eventName = sound_constants.getStageVoTapeRecorderName(index)
             if R.sounds.dyn(eventName).isValid():
@@ -115,9 +112,8 @@ class NeedToUpdateRecorderLamp(Block, AYMeta):
         from gui.impl.gen import R
         lastListenedMessage = self._inlastListenedMessage.getValue()
         progress = self.__ayController.getCurrentProgress()
-        totalStages = self.__ayController.getTotalSteps()
-        if progress > totalStages:
-            progress = totalStages
+        if progress > self.__ayController.maxNumberOfSteps:
+            progress = self.__ayController.maxNumberOfSteps
         for index in range(progress, lastListenedMessage, -1):
             eventName = sound_constants.getStageVoTapeRecorderName(index)
             if R.sounds.dyn(eventName).isValid():
@@ -135,8 +131,7 @@ class GetTotalCountOfStages(Block, AYMeta):
         self._totalCount = self._makeDataOutputSlot('totalCount', SLOT_TYPE.INT, self._execute)
 
     def _execute(self):
-        totalCount = self.__ayController.getTotalSteps()
-        self._totalCount.setValue(totalCount)
+        self._totalCount.setValue(self.__ayController.maxNumberOfSteps)
 
 
 class GetCurrentProgress(Block, AYMeta):
@@ -148,9 +143,8 @@ class GetCurrentProgress(Block, AYMeta):
 
     def _execute(self):
         progress = self.__ayController.getCurrentProgress()
-        totalStages = self.__ayController.getTotalSteps()
-        if progress > totalStages:
-            progress = totalStages
+        if progress > self.__ayController.maxNumberOfSteps:
+            progress = self.__ayController.maxNumberOfSteps
         self._progress.setValue(progress)
 
 
@@ -240,9 +234,8 @@ class OnStageFinish(Block, AYMeta):
 
     def _execute(self, event):
         index = event.ctx['index']
-        totalStages = self.__ayController.getTotalSteps()
-        if index > totalStages:
-            index = totalStages
+        if index > self.__ayController.maxNumberOfSteps:
+            index = self.__ayController.maxNumberOfSteps
         self._index.setValue(index)
         self._out.call()
 
@@ -259,4 +252,25 @@ class ActivatePOI(Block, AYMeta):
         ctx = {}
         ctx['name'] = self._name.getValue()
         guiShared.g_eventBus.handleEvent(guiShared.events.ArmoryYardEvent(guiShared.events.ArmoryYardEvent.POI_ACTIVATED, ctx=ctx))
+        self._out.call()
+
+
+class OnStageClick(Block, AYMeta):
+    __ayController = dependency.descriptor(aySkeleton.IArmoryYardController)
+
+    def __init__(self, *args, **kwargs):
+        super(OnStageClick, self).__init__(*args, **kwargs)
+        self._out = self._makeEventOutputSlot('out')
+        self._index = self._makeDataOutputSlot('index', SLOT_TYPE.INT, None)
+        return
+
+    def onStartScript(self):
+        guiShared.g_eventBus.addListener(guiShared.events.ArmoryYardEvent.STAGE_CLICKED, self._execute, guiShared.EVENT_BUS_SCOPE.DEFAULT)
+
+    def onFinishScript(self):
+        guiShared.g_eventBus.removeListener(guiShared.events.ArmoryYardEvent.STAGE_CLICKED, self._execute, guiShared.EVENT_BUS_SCOPE.DEFAULT)
+
+    def _execute(self, event):
+        stageIndex = event.ctx['stageId']
+        self._index.setValue(stageIndex)
         self._out.call()

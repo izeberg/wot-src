@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/russian/R236_KV_4_Zeitz/crash/lod1/Turret_01</nodefullVisual>
+	<parent>vehicles/russian/R236_KV_4_Zeitz/crash/lod2/Turret_01</parent>
+	<tank>true</tank>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.626782 -0.000190 -1.883333</min>
+		<max>1.625304 2.110124 1.646129</max>
+	</visibilityBox>
+</root>

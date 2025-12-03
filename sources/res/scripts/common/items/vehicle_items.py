@@ -411,7 +411,7 @@ class Shell(BasicItem):
                  'stun', 'effectsIndex', 'tags', 'secondaryAttackReason', 'useAltDamageRandomization',
                  'dynamicEffectsIndexes', 'hitDeviceChanceMultiplier', 'hitCrewChanceMultiplier',
                  'maxDistanceInsideVehicle', 'damagedDevicesLimit', 'engineFireFactor',
-                 'distanceDmg', 'distanceFactor', 'ammoWeight')
+                 'distanceDmg', 'distanceFactor')
 
     def __init__(self, typeID, componentID, componentName, compactDescr):
         super(Shell, self).__init__(typeID, componentID, componentName, compactDescr)
@@ -437,7 +437,6 @@ class Shell(BasicItem):
         self.engineFireFactor = None
         self.distanceDmg = None
         self.distanceFactor = None
-        self.ammoWeight = component_constants.ZERO_INT
         return
 
     def __repr__(self):
@@ -453,6 +452,17 @@ class Shell(BasicItem):
         if self.distanceDmg is not None:
             return self.distanceDmg.avgDamage
         else:
+            if self.distanceFactor is not None:
+                minFactor = maxFactor = 1.0
+                armorFactors = self.distanceFactor.armorFactor
+                if armorFactors:
+                    minFactor *= armorFactors[0][1]
+                    maxFactor *= armorFactors[(-1)][1]
+                damageFactors = self.distanceFactor.damageFactor
+                if damageFactors:
+                    minFactor *= damageFactors[0][1]
+                    maxFactor *= damageFactors[(-1)][1]
+                return 0.5 * self.damage[0] * (maxFactor + minFactor)
             return self.damage[0]
 
     @property
@@ -462,6 +472,19 @@ class Shell(BasicItem):
             minDamage = dmg.min
             maxDamage = dmg.max
         else:
+            if self.distanceFactor is not None:
+                minFactor = maxFactor = 1.0
+                armorFactors = self.distanceFactor.armorFactor
+                if armorFactors:
+                    minFactor *= armorFactors[0][1]
+                    maxFactor *= armorFactors[(-1)][1]
+                damageFactors = self.distanceFactor.damageFactor
+                if damageFactors:
+                    minFactor *= damageFactors[0][1]
+                    maxFactor *= damageFactors[(-1)][1]
+                damage = self.damage[0]
+                return (
+                 damage * minFactor, damage * maxFactor)
             damage = self.damage[0]
             minDamage = damage
             maxDamage = damage

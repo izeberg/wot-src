@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/russian/R130_KV4_Mikhailov/crash/lod4/Turret_01</parent>
+	<extent>192.000000</extent>
+	<materialNames/>
+	<visibilityBox>
+		<min>-1.639585 -0.098839 -1.613527</min>
+		<max>1.648633 1.357149 1.772514</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/russian/R130_KV4_Mikhailov/crash/lod3/Turret_01</nodefullVisual>
+</root>

@@ -211,6 +211,10 @@
 						selfIllumination
 						<Float>0.500000</Float>
 					</property>
+					<property>
+						depthAccess
+						<Int>3</Int>
+					</property>
 				</material>
 				<groupOrigin>-11.841248 8.092951 -0.143968</groupOrigin>
 			</primitiveGroup>

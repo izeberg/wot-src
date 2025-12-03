@@ -19,7 +19,13 @@ package net.wg.data.constants.generated
       
       public static const ICON_SIZE_SMALL:String = "180x135";
       
+      public static const ICON_SIZE_232:String = "232x174";
+      
+      public static const ICON_SIZE_296:String = "296x222";
+      
       public static const ICON_SIZE_MEDIUM:String = "360x270";
+      
+      public static const ICON_SIZE_400:String = "400x300";
       
       public static const ICON_SIZE_LARGE:String = "600x450";
       

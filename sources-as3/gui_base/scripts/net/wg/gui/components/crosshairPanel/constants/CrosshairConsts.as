@@ -1,7 +1,5 @@
 package net.wg.gui.components.crosshairPanel.constants
 {
-   import flash.filters.ColorMatrixFilter;
-   
    public class CrosshairConsts
    {
       
@@ -24,8 +22,6 @@ package net.wg.gui.components.crosshairPanel.constants
       public static const ANIMATION_UPDATE_TICK:Number = 50;
       
       public static const MAX_HEALTH:Number = 1;
-      
-      public static const GRAYSCALE_FILTER:ColorMatrixFilter = new ColorMatrixFilter([0.2225,0.7169,0.0606,0,0,0.2225,0.7169,0.0606,0,0,0.2225,0.7169,0.0606,0,0,0,0,0,1,0]);
        
       
       public function CrosshairConsts()

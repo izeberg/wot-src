@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/german/G184_EisBaer/crash/lod4/Turret_01</parent>
+	<tank>true</tank>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.458253 -0.008813 -1.818507</min>
+		<max>1.456062 1.093533 1.725445</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/german/G184_EisBaer/crash/lod3/Turret_01</nodefullVisual>
+</root>

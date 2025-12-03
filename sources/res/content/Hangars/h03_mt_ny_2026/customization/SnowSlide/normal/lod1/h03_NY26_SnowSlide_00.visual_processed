@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<stream>uv2</stream>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd1</identifier>
+					<fx>shaders/std_effects/PBS_tiled.fx</fx>
+					<materialKind>108</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						albedoHeightTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wood_09_planks_painted_02_512_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile1
+						<Texture>content/Environment/00_Tiles/Snow_tiles/Blue_Ice_01_AM.png</Texture>
+					</property>
+					<property>
+						albedoHeightTile2
+						<Texture>content/Hangars/h03_mt_ny_2026/environment/buildings/tiles/Snow_01_512_AM.dds</Texture>
+					</property>
+					<property>
+						blendMask
+						<Texture>content/Hangars/h03_mt_ny_2026/customization/SnowSlide/h03_NY26_SnowSlide_00_blend.png</Texture>
+					</property>
+					<property>
+						colorTex
+						<Texture>content/Hangars/h03_mt_ny_2026/customization/SnowSlide/h03_NY26_SnowSlide_00_GCM.png</Texture>
+					</property>
+					<property>
+						dirtMap
+						<Texture>content/Hangars/h03_mt_ny_2026/environment/buildings/tiles/Snow_01_512_AM.dds</Texture>
+					</property>
+					<property>
+						g_dirtColor
+						<Vector4>0.000000 0.430000 0.380000 1.000000</Vector4>
+					</property>
+					<property>
+						g_dirtColorParams
+						<Vector4>0.700000 1.000000 1.000000 1.000000</Vector4>
+					</property>
+					<property>
+						g_tile0Tint
+						<Vector4>0.847059 0.847059 0.847059 1.000000</Vector4>
+					</property>
+					<property>
+						metallicAOTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wood_09_planks_painted_02_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile1
+						<Texture>content/Environment/00_Tiles/Snow_tiles/Blue_Ice_01_MAO.png</Texture>
+					</property>
+					<property>
+						metallicAOTile2
+						<Texture>content/Hangars/h03_mt_ny_2026/environment/buildings/tiles/Snow_01_512_MAO.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wood_09_planks_painted_02_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile1
+						<Texture>content/Environment/00_Tiles/Snow_tiles/Blue_Ice_01_GBMT.png</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile2
+						<Texture>content/Hangars/h03_mt_ny_2026/environment/buildings/tiles/Snow_01_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						g_tile1Tint
+						<Vector4>0.929412 0.976471 1.000000 1.000000</Vector4>
+					</property>
+					<property>
+						g_tile2Tint
+						<Vector4>0.768627 0.768627 0.768627 1.000000</Vector4>
+					</property>
+				</material>
+				<groupOrigin>0.000000 3.683650 -1.495830</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>s_nd0</identifier>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<materialKind>110</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h03_mt_ny_2026/customization/SnowSlide/h03_NY26_SnowSlide_00_AM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/h03_mt_ny_2026/customization/SnowSlide/h03_NY26_SnowSlide_00_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/h03_mt_ny_2026/customization/SnowSlide/h03_NY26_SnowSlide_00_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.000000 4.262341 -3.411428</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-23.929569 -0.347151 -4.291414</min>
+		<max>23.929569 8.558539 1.299755</max>
+	</boundingBox>
+	<customBsp>true</customBsp>
+	<geometrySize>174102</geometrySize>
+	<minUVDensity>0.001365</minUVDensity>
+</root>

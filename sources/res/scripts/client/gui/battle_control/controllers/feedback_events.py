@@ -184,21 +184,6 @@ class _DamageExtra(object):
             return self.isAttackReason(ATTACK_REASON.THUNDER_STRIKE)
         return self.isSecondaryAttackReason(ATTACK_REASON.THUNDER_STRIKE)
 
-    def isGuidedMissile(self, primary=True):
-        if primary:
-            return self.isAttackReason(ATTACK_REASON.GUIDED_MISSILE)
-        return self.isSecondaryAttackReason(ATTACK_REASON.GUIDED_MISSILE)
-
-    def isSuperBossAura(self, primary=True):
-        if primary:
-            return self.isAttackReason(ATTACK_REASON.SUPER_BOSS_AURA)
-        return self.isSecondaryAttackReason(ATTACK_REASON.SUPER_BOSS_AURA)
-
-    def isSentinelAttack(self, primary=True):
-        if primary:
-            return self.isAttackReason(ATTACK_REASON.SENTINEL_ATTACK)
-        return self.isSecondaryAttackReason(ATTACK_REASON.SENTINEL_ATTACK)
-
     def isAttackReason(self, attackReason):
         return ATTACK_REASONS[self.__attackReasonID] == attackReason
 

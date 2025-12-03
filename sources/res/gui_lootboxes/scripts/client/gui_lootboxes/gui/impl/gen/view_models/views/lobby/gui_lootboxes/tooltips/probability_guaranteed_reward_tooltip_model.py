@@ -1,3 +1,4 @@
+from frameworks.wulf import Array
 from frameworks.wulf import ViewModel
 
 class ProbabilityGuaranteedRewardTooltipModel(ViewModel):
@@ -6,12 +7,16 @@ class ProbabilityGuaranteedRewardTooltipModel(ViewModel):
     def __init__(self, properties=1, commands=0):
         super(ProbabilityGuaranteedRewardTooltipModel, self).__init__(properties=properties, commands=commands)
 
-    def getGuaranteedFrequency(self):
-        return self._getNumber(0)
+    def getGuaranteedFrequencies(self):
+        return self._getArray(0)
 
-    def setGuaranteedFrequency(self, value):
-        self._setNumber(0, value)
+    def setGuaranteedFrequencies(self, value):
+        self._setArray(0, value)
+
+    @staticmethod
+    def getGuaranteedFrequenciesType():
+        return int
 
     def _initialize(self):
         super(ProbabilityGuaranteedRewardTooltipModel, self)._initialize()
-        self._addNumberProperty('guaranteedFrequency', 0)
+        self._addArrayProperty('guaranteedFrequencies', Array())

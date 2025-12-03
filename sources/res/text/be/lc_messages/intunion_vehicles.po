@@ -17,6 +17,9 @@ msgstr "AN/VRC-12"
 msgid "AN_VRC_12A"
 msgstr "AN/VRC-12"
 
+msgid "AN_VRC_12M"
+msgstr "AN/VRC-12"
+
 msgid "Chassis_Un01_Cromwell_VII"
 msgstr "A27L"
 
@@ -74,6 +77,9 @@ msgstr "VVSS T62"
 msgid "Chassis_Un11_Sherman_M3_IDF_2"
 msgstr "VVSS T54E2"
 
+msgid "Chassis_Un12_Merkava_M48"
+msgstr "Merkava М48"
+
 msgid "Chassis_Un13_T-54"
 msgstr "Т-54 узору 1946 г."
 
@@ -99,6 +105,14 @@ msgstr ""
 
 msgid "Continental_AVDS_1790_6A"
 msgstr "Continental AVDS-1790-6A"
+
+msgid "Continental_AVDS_1790_6AM"
+msgstr "Continental AVDS-1790-6A"
+
+msgid "Continental_AVDS_1790_6AM_short"
+msgstr ""
+"Continental\n"
+"AVDS-1790-6A"
 
 msgid "Continental_AVDS_1790_6A_short"
 msgstr ""
@@ -248,6 +262,9 @@ msgstr "M3A1"
 
 msgid "Turret_1_Un11_Sherman_M3_IDF"
 msgstr "M3A1"
+
+msgid "Turret_1_Un12_Merkava_M48"
+msgstr "Merkava М48"
 
 msgid "Turret_1_Un13_T-54"
 msgstr "Т-54 узору 1946 г."
@@ -489,6 +506,24 @@ msgstr ""
 msgid "Un11_Sherman_M3_IDF_short"
 msgstr "Sherman IDF"
 
+msgid "Un12_Merkava_M48"
+msgstr "Merkava М48"
+
+msgid "Un12_Merkava_M48_descr"
+msgstr ""
+" \n"
+"\n"
+"Характарыстыкі машыны могуць быць зменены без кампенсацыі."
+
+msgid "Un12_Merkava_M48_long_special"
+msgstr "?empty?"
+
+msgid "Un12_Merkava_M48_short"
+msgstr "Merkava"
+
+msgid "Un12_Merkava_M48_short_special"
+msgstr "?empty?"
+
 msgid "Un13_T-54"
 msgstr "Т-54А"
 
@@ -548,16 +583,16 @@ msgid "_100mm_BR-412D"
 msgstr "УБР-412Д"
 
 msgid "_100mm_D-10T2S"
-msgstr "100-мм Д-10Т2С"
+msgstr "100 мм Д-10Т2С"
 
 msgid "_100mm_D10T_obr_45"
-msgstr "100-мм Д-10Т узору 1945 г."
+msgstr "100 мм Д-10Т узору 1945 г."
 
 msgid "_100mm_D54_obr_45"
-msgstr "100-мм Д-54"
+msgstr "100 мм Д-54"
 
 msgid "_100mm_LB-1"
-msgstr "100-мм ЛБ-1"
+msgstr "100 мм ЛБ-1"
 
 msgid "_100mm_UBR-412"
 msgstr "УБР-412"
@@ -580,6 +615,9 @@ msgstr "APDS L28"
 msgid "_105mm_APDS_L28A3"
 msgstr "APDS L28A3"
 
+msgid "_105mm_APDS_M392"
+msgstr "АРDS M392"
+
 msgid "_105mm_APFSDS_105_G1"
 msgstr "APFSDS 105-G1"
 
@@ -588,6 +626,9 @@ msgstr "APFSDS M111 Hetz-6"
 
 msgid "_105mm_CN_105_G1"
 msgstr "105 mm CN-105-G1"
+
+msgid "_105mm_HC_M456"
+msgstr "HEAT M456"
 
 msgid "_105mm_HEAT_105_57"
 msgstr "НЕАТ 105-57"
@@ -619,6 +660,9 @@ msgstr "HE M1"
 msgid "_105mm_HE_M110"
 msgstr "HE M110"
 
+msgid "_105mm_HE_M393"
+msgstr "HE M393"
+
 msgid "_105mm_Howitzer_M4"
 msgstr "105 mm Howitzer M4"
 
@@ -630,6 +674,9 @@ msgstr "105 mm L7"
 
 msgid "_105mm_L7A3"
 msgstr "105 mm L7A3"
+
+msgid "_105mm_M68"
+msgstr "105 mm M68"
 
 msgid "_120mm_APDS_L15A5"
 msgstr "APDS L15A5"

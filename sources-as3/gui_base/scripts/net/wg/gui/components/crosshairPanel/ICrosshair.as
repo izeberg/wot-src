@@ -43,6 +43,8 @@ package net.wg.gui.components.crosshairPanel
       
       function setReloadingTime(param1:Number) : void;
       
+      function setCoolantAbilityReloadingPenalty(param1:Number) : void;
+      
       function setQuickReloadingTime(param1:Boolean, param2:Number) : void;
       
       function showReloadingTimeField(param1:Boolean) : void;
@@ -57,7 +59,7 @@ package net.wg.gui.components.crosshairPanel
       
       function autoloaderBoostUpdateAsPercent(param1:Number, param2:Number) : void;
       
-      function autoloaderShowShot() : void;
+      function showShot() : void;
       
       function updateCritical(param1:Boolean) : void;
       
@@ -93,6 +95,10 @@ package net.wg.gui.components.crosshairPanel
       
       function setShotDamageIndVisibility(param1:Boolean) : void;
       
-      function setShotDamageIndValue(param1:int, param2:int) : void;
+      function setShotDamageIndValue(param1:int) : void;
+      
+      function animShotHitMarker(param1:String) : void;
+      
+      function setShotHitMarkerVisibility(param1:Boolean) : void;
    }
 }

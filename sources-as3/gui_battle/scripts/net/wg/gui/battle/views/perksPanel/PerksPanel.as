@@ -59,6 +59,10 @@ package net.wg.gui.battle.views.perksPanel
       
       override protected function draw() : void
       {
+         if(isInvalid(InvalidationType.DATA))
+         {
+            this.visible = this._perksList.length > 0;
+         }
          if(isInvalid(InvalidationType.POSITION))
          {
             this.updatePerksPositions();
@@ -127,6 +131,7 @@ package net.wg.gui.battle.views.perksPanel
             _loc1_.dispose();
          }
          this._perksList.splice(0,this._perksList.length);
+         invalidateData();
          invalidatePosition();
       }
       
@@ -199,6 +204,7 @@ package net.wg.gui.battle.views.perksPanel
          _loc5_.update(param2,param3,param4);
          this._perksList.push(_loc5_);
          this.wrapper.addContent(_loc5_);
+         invalidateData();
       }
       
       private function removePerk(param1:PerkItem) : void
@@ -212,6 +218,7 @@ package net.wg.gui.battle.views.perksPanel
          this.wrapper.removeContent(param1);
          param1.dispose();
          param1 = null;
+         invalidateData();
          invalidatePosition();
       }
       

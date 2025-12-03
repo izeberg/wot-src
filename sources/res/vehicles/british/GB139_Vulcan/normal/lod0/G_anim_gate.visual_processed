@@ -9,7 +9,7 @@
 			<row3>0.000000 0.000000 0.000000</row3>
 		</transform>
 		<node>
-			<identifier>Root_Gun_Animt_Gate</identifier>
+			<identifier>Root_Gate</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -17,56 +17,56 @@
 				<row3>0.000000 0.000000 0.000000</row3>
 			</transform>
 			<node>
-				<identifier>Gate</identifier>
+				<identifier>Gate_jnt</identifier>
 				<transform>
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 1.000000 0.000000</row1>
 					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>0.000000 -0.000102 -4.582654</row3>
+					<row3>0.017586 0.000016 -4.589830</row3>
 				</transform>
 				<node>
-					<identifier>Gate_BlendBone</identifier>
+					<identifier>Gate_jnt_BlendBone</identifier>
 					<transform>
 						<row0>1.000000 0.000000 0.000000</row0>
 						<row1>0.000000 1.000000 0.000000</row1>
 						<row2>0.000000 0.000000 -1.000000</row2>
-						<row3>0.000000 0.000102 4.582654</row3>
+						<row3>-0.017586 -0.000016 4.589830</row3>
 					</transform>
 				</node>
 			</node>
 			<node>
-				<identifier>Gate_tonue_jnt</identifier>
+				<identifier>Gate_tongue_jnt</identifier>
 				<transform>
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 1.000000 0.000000</row1>
 					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>-0.000031 -0.204697 -4.263898</row3>
+					<row3>0.206273 -0.000016 -4.255052</row3>
 				</transform>
 				<node>
-					<identifier>Gate_tonue_jnt_BlendBone</identifier>
+					<identifier>Gate_tongue_jnt_BlendBone</identifier>
 					<transform>
 						<row0>1.000000 0.000000 0.000000</row0>
 						<row1>0.000000 1.000000 0.000000</row1>
 						<row2>0.000000 0.000000 -1.000000</row2>
-						<row3>0.000031 0.204697 4.263898</row3>
+						<row3>-0.206273 0.000016 4.255052</row3>
 					</transform>
 				</node>
 			</node>
 			<node>
-				<identifier>Roller_feed_5_jnt</identifier>
+				<identifier>Roller_gate_jnt1</identifier>
 				<transform>
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 1.000000 0.000000</row1>
 					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>0.124375 0.000215 -4.807798</row3>
+					<row3>0.154970 0.000227 -4.914701</row3>
 				</transform>
 				<node>
-					<identifier>Roller_feed_5_jnt_BlendBone</identifier>
+					<identifier>Roller_gate_jnt1_BlendBone</identifier>
 					<transform>
 						<row0>1.000000 0.000000 0.000000</row0>
 						<row1>0.000000 1.000000 0.000000</row1>
 						<row2>0.000000 0.000000 -1.000000</row2>
-						<row3>-0.124375 -0.000215 4.807798</row3>
+						<row3>-0.154970 -0.000227 4.914701</row3>
 					</transform>
 				</node>
 			</node>
@@ -74,19 +74,19 @@
 	</node>
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
-		<node>Gate_BlendBone</node>
-		<node>Gate_tonue_jnt_BlendBone</node>
-		<node>Roller_feed_5_jnt_BlendBone</node>
+		<node>Gate_jnt_BlendBone</node>
+		<node>Gate_tongue_jnt_BlendBone</node>
+		<node>Roller_gate_jnt1_BlendBone</node>
 		<geometry>
-			<vertices>asdf1Shape.vertices</vertices>
-			<primitive>asdf1Shape.indices</primitive>
+			<vertices>gun_02_anim_Shape.vertices</vertices>
+			<primitive>gun_02_anim_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>tank_guns3_skinned</identifier>
+					<identifier>tank_guns4_skinned</identifier>
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
-					<materialKind>0</materialKind>
 					<collisionFlags>255</collisionFlags>
+					<materialKind>0</materialKind>
 					<property>
 						diffuseMap
 						<Texture>vehicles/british/GB139_Vulcan/Vulcan_guns_AM.dds</Texture>
@@ -103,20 +103,16 @@
 						normalMap
 						<Texture>vehicles/british/GB139_Vulcan/Vulcan_guns_ANM.dds</Texture>
 					</property>
-					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
-					</property>
 				</material>
-				<groupOrigin>0.009658 -0.000102 4.544020</groupOrigin>
+				<groupOrigin>0.017586 0.000016 4.589830</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<constraints/>
 	<boundingBox>
-		<min>-0.165000 -0.265102 -4.867739</min>
-		<max>0.184316 0.264898 -4.220300</max>
+		<min>-0.229823 -0.164984 -4.974720</min>
+		<max>0.264994 0.165016 -4.204941</max>
 	</boundingBox>
-	<geometrySize>40248</geometrySize>
-	<minUVDensity>0.020400</minUVDensity>
+	<geometrySize>41040</geometrySize>
+	<minUVDensity>0.019970</minUVDensity>
 </root>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.323653 -0.000015 -3.025617</min>
+		<max>1.323653 1.493746 1.948036</max>
+	</visibilityBox>
+	<parent>vehicles/british/GB140_Champion/normal/lod1/Turret_01</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/british/GB140_Champion/normal/lod0/Turret_01</nodefullVisual>
+</root>

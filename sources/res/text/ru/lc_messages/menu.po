@@ -704,7 +704,7 @@ msgid "bonusType/4"
 msgstr "Специальный бой"
 
 msgid "bonusType/42"
-msgstr "Полевые испытания"
+msgstr "«%(modeName)s»"
 
 msgid "bonusType/43"
 msgstr "Натиск"
@@ -720,9 +720,6 @@ msgstr "Полигон"
 
 msgid "bonusType/6"
 msgstr "Боевое обучение"
-
-msgid "bonusType/61"
-msgstr "Разлом"
 
 msgid "bonusType/7"
 msgstr "Командный бой"
@@ -1115,9 +1112,6 @@ msgstr "Создать взвод события"
 
 msgid "contextMenu/createMapboxSquad"
 msgstr "Разведка боем: создать взвод"
-
-msgid "contextMenu/createPortalSquad"
-msgstr "Взвод события «Разлом»"
 
 msgid "contextMenu/createPrivateChannel"
 msgstr "Отправить сообщение"
@@ -2183,6 +2177,16 @@ msgstr ""
 "Суммарный бонус рассчитывается мультипликативно и может отличаться от "
 "паспортных значений."
 
+msgid "extraParams/name/abilityCooldownBonus"
+msgstr ""
+"Параметр, отвечающий за уменьшение времени перезарядки модификации при "
+"успешном уничтожении техники противника во время действия модификации."
+
+msgid "extraParams/name/abilityDurationBonus"
+msgstr ""
+"Параметр, отвечающий за увеличение времени действия модификации при успешном"
+" пробитии техники противника во время действия модификации."
+
 msgid "extraParams/name/artNotificationDelayFactor"
 msgstr ""
 "Параметр, отвечающий за время, проходящее с момента выстрела САУ до момента "
@@ -2244,7 +2248,8 @@ msgid "extraParams/name/enemyModulesCrewCritChance"
 msgstr ""
 "Параметр, отвечающий за изменение шанса нанести критические повреждения "
 "экипажу и внутренним модулям противника. Работает только для бронебойных, "
-"подкалиберных, бронебойных оперённых подкалиберных и кумулятивных снарядов."
+"подкалиберных, бронебойных оперенных подкалиберных и кумулятивных снарядов, "
+"а также для бронебойного и кумулятивного НУРСа."
 
 msgid "extraParams/name/equipmentPreparationTime"
 msgstr ""
@@ -2287,7 +2292,7 @@ msgstr "Параметр, отвечающий за шанс избежать р
 
 msgid "extraParams/name/speedLimitsBonus"
 msgstr ""
-"Параметр, отвечающий за увеличение максимальной скорости и скорости заднего "
+"Параметр, отвечающий за увеличение максимальной скорости / скорости заднего "
 "хода."
 
 msgid "extraParams/name/stunResistanceEffectFactor"
@@ -2314,6 +2319,12 @@ msgid "extraParams/name/temperatureStatesCount"
 msgstr ""
 "Количество термических стадий, которыми обладает орудие. Каждая термическая "
 "стадия может обладать своими специфическими атрибутами и модификаторами."
+
+msgid "extraParams/name/trackRammingDamageFactor"
+msgstr ""
+"Параметр, отвечающий за получаемый урон ходовой от тарана. При столкновении "
+"машин учитывается толщина брони в точке удара, разница в массе, а также "
+"скорость машин."
 
 msgid "extraParams/name/vehPenaltyForDamageEngineAndCombat"
 msgstr ""
@@ -2382,16 +2393,36 @@ msgstr ""
 "Топливные баки, потерявшие все очки прочности, гарантированно вызывают "
 "пожар."
 
+msgid "extraParams/name/vehicleGunAimSpeed"
+msgstr ""
+"Параметр, отвечающей за увеличение скорости сведения во время действия "
+"модификации."
+
 msgid "extraParams/name/vehicleGunAndGunClipCooldown"
 msgstr ""
 "Время между полной разрядкой магазина (или орудий) и полным заряжанием. / "
 "Время между выстрелом и переходом к следующему заряженному снаряду, орудию "
 "или кассете."
 
+msgid "extraParams/name/vehicleGunDamage"
+msgstr ""
+"Параметр, отвечающей за увеличение урона при активации модификации / при "
+"пробитии машины противника во время действия модификации."
+
 msgid "extraParams/name/vehicleGunKillReloadTime"
 msgstr ""
 "Параметр, отвечающий за перезарядку орудия после уничтожения противника во "
-"время действия боевого умения."
+"время действия модификации."
+
+msgid "extraParams/name/vehicleGunReloadPenalty"
+msgstr ""
+"Параметр, отвечающий за однократное замедление времени заряжания перед следующим выстрелом. Чем больше произведено выстрелов в течение действия модификации, тем больше времени добавляется к заряжанию после окончания действия модификации.\n"
+"Штраф сбрасывается после выстрела. Навык «Интуиция» не сбрасывает наложенный штраф."
+
+msgid "extraParams/name/vehicleGunReloadTime"
+msgstr ""
+"Параметр, отвечающий за уменьшение времени перезарядки орудия в течение "
+"времени действия модификации."
 
 msgid "extraParams/name/vehicleGunReloadTimeReceiveShot"
 msgstr ""
@@ -2429,12 +2460,6 @@ msgid "extraParams/name/vehicleOwnSpottingTime"
 msgstr ""
 "Параметр, отвечающий за время видимости вашей машины после её выхода из зоны"
 " прямой видимости противника. Значение по умолчанию — 10 секунд."
-
-msgid "extraParams/name/vehicleRamChassisDamageResistance"
-msgstr ""
-"Параметр, отвечающий за получаемый урон ходовой от тарана. При столкновении "
-"машин учитывается толщина брони в точке удара, разница в массе, а также "
-"скорость машин."
 
 msgid "extraParams/name/vehicleRamDamageResistance"
 msgstr ""
@@ -2807,7 +2832,7 @@ msgid "header/account/premium/days"
 msgstr "д"
 
 msgid "header/account/premium/hours"
-msgstr "ч"
+msgstr "ч."
 
 msgid "header/customization/season/desert"
 msgstr "ПУСТЫННЫЙ"
@@ -4801,7 +4826,7 @@ msgid "moduleInfo/params/maxSteeringLockAngle"
 msgstr "Максимальный угол поворота колёс"
 
 msgid "moduleInfo/params/noPiercingDistance/footnote"
-msgstr " Для данного типа снарядов не зависит от дистанции."
+msgstr "* для данного типа снарядов не зависит от дистанции."
 
 msgid "moduleInfo/params/noPiercingDistance/footnote/maxDistance"
 msgstr ", максимальная дальность полёта - 400 м"
@@ -4813,7 +4838,12 @@ msgid "moduleInfo/params/piercingDistance"
 msgstr "%(dist)s м"
 
 msgid "moduleInfo/params/piercingDistance/footnote"
-msgstr " Для этих снарядов зависит от дистанции (%(minDist)s–%(maxDist)s м)."
+msgstr "* для этих снарядов зависит от дистанции (%(minDist)s–%(maxDist)s м)."
+
+msgid "moduleInfo/params/piercingDistanceFactor/footnote"
+msgstr ""
+"* чем больше расстояние, которое пролетит снаряд, тем выше скорость снаряда,"
+" а следовательно его урон и бронепробитие"
 
 msgid "moduleInfo/params/piercingDistanceHeader"
 msgstr "Средняя бронепробиваемость (мм) — Расстояние"
@@ -4870,6 +4900,9 @@ msgid "moduleInfo/params/short/crewRolesFactor"
 msgstr "К специальности экипажа"
 
 msgid "moduleInfo/params/shotSpeed"
+msgstr "Скорость полёта"
+
+msgid "moduleInfo/params/shotSpeedAccelerated"
 msgstr "Скорость полёта"
 
 msgid "moduleInfo/params/shotsNumberRange"
@@ -6427,6 +6460,15 @@ msgstr "?empty?"
 msgid "tankCarousel/vehicleStates/notpresent"
 msgstr "Нет в Ангаре"
 
+msgid "tankCarousel/vehicleStates/nyTank"
+msgstr "Новогодняя техника"
+
+msgid "tankCarousel/vehicleStates/nyTankEmptyCount"
+msgstr "Свободных слотов: %(count)d"
+
+msgid "tankCarousel/vehicleStates/nyTankSlotsFull"
+msgstr "Все слоты заняты"
+
 msgid "tankCarousel/vehicleStates/rentable"
 msgstr "Доступна аренда машины"
 
@@ -6567,13 +6609,19 @@ msgid "tank_params/cnt"
 msgstr "(шт.)"
 
 msgid "tank_params/cooldown"
-msgstr "Время перезарядки умения"
+msgstr "Время перезарядки модификации"
 
 msgid "tank_params/damage"
 msgstr "Урон базовым снарядом"
 
 msgid "tank_params/distanceDamage"
 msgstr "Урон снаряда"
+
+msgid "tank_params/distanceFactorDamage"
+msgstr "Урон снаряда"
+
+msgid "tank_params/distanceFactorPiercingPower"
+msgstr "Бронепробиваемость"
 
 msgid "tank_params/dualAccuracyCoolingDelay"
 msgstr "Время охлаждения орудия"
@@ -6582,7 +6630,7 @@ msgid "tank_params/dualAccuracyCoolingDelay/extendedTitle"
 msgstr "Время охлаждения орудия после выстрела"
 
 msgid "tank_params/duration"
-msgstr "Время действия умения"
+msgstr "Время действия модификации"
 
 msgid "tank_params/empty"
 msgstr " "
@@ -6738,7 +6786,7 @@ msgid "tank_params/reuseCount"
 msgstr "Применений за бой"
 
 msgid "tank_params/reuseCount/extendedTitle"
-msgstr "Количество применений боевого умения"
+msgstr "Количество применений модификации"
 
 msgid "tank_params/rocketAccelerationEnginePower"
 msgstr "Мощность двигателя (с ускорителями)"
@@ -6755,10 +6803,16 @@ msgstr "(с)"
 msgid "tank_params/shortened/avgPiercingPower"
 msgstr "Пробивает:"
 
+msgid "tank_params/shortened/distanceFactorPiercingPower"
+msgstr "Пробивает:"
+
 msgid "tank_params/shotDispersionAngle"
 msgstr "Разброс на 100 м"
 
 msgid "tank_params/shotSpeed"
+msgstr "Скорость полёта"
+
+msgid "tank_params/shotSpeedAccelerated"
 msgstr "Скорость полёта"
 
 msgid "tank_params/speedLimits"
@@ -7399,6 +7453,9 @@ msgid "vehicleInfo/params/shotDispersionAngle"
 msgstr "Разброс на 100 м (м)"
 
 msgid "vehicleInfo/params/shotSpeed"
+msgstr "Скорость полёта"
+
+msgid "vehicleInfo/params/shotSpeedAccelerated"
 msgstr "Скорость полёта"
 
 msgid "vehicleInfo/params/speedLimits"

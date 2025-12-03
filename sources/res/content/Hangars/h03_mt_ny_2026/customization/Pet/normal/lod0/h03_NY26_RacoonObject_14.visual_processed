@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>Root</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>Root_massager_jnt</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-2.525918 1.019598 1.831577</row3>
+				</transform>
+				<node>
+					<identifier>twig01_jnt</identifier>
+					<transform>
+						<row0>-0.299495 0.884773 -0.357043</row0>
+						<row1>0.568610 0.466023 0.677868</row1>
+						<row2>0.766150 0.000000 -0.642662</row2>
+						<row3>-0.004871 -0.001074 -0.007086</row3>
+					</transform>
+					<node>
+						<identifier>twig_01_01_jnt</identifier>
+						<transform>
+							<row0>0.391253 -0.920283 0.000001</row0>
+							<row1>0.920283 0.391253 0.000000</row1>
+							<row2>-0.000000 0.000001 1.000000</row2>
+							<row3>-0.157357 -0.160441 -0.000184</row3>
+						</transform>
+						<node>
+							<identifier>twig_01_01_jnt_BlendBone</identifier>
+							<transform>
+								<row0>-0.640460 -0.053150 0.766150</row0>
+								<row1>-0.082702 0.996574 0.000000</row1>
+								<row2>0.763526 0.063363 0.642662</row2>
+								<row3>-0.229673 -0.826356 3.111679</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>twig01_jnt_BlendBone</identifier>
+						<transform>
+							<row0>-0.299495 0.568610 0.766150</row0>
+							<row1>0.884773 0.466023 0.000000</row1>
+							<row2>0.357043 -0.677868 0.642662</row2>
+							<row3>-1.007700 -0.272388 3.111494</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>twig02_jnt</identifier>
+					<transform>
+						<row0>0.332308 0.884773 -0.326722</row0>
+						<row1>-0.630911 0.466021 0.620303</row1>
+						<row2>0.701087 0.000000 0.713076</row2>
+						<row3>0.005637 -0.000627 -0.006392</row3>
+					</transform>
+					<node>
+						<identifier>twig_01_02_jnt</identifier>
+						<transform>
+							<row0>0.391252 -0.920283 -0.000002</row0>
+							<row1>0.920284 0.391252 -0.000000</row1>
+							<row2>0.000001 -0.000001 1.000000</row2>
+							<row3>-0.157357 -0.160441 -0.000184</row3>
+						</transform>
+						<node>
+							<identifier>twig_01_02_jnt_BlendBone</identifier>
+							<transform>
+								<row0>0.710632 0.058973 0.701088</row0>
+								<row1>-0.082702 0.996574 0.000000</row1>
+								<row2>0.698686 0.057982 -0.713075</row2>
+								<row3>3.064411 -0.553439 0.465630</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>twig02_jnt_BlendBone</identifier>
+						<transform>
+							<row0>0.332308 -0.630910 0.701087</row0>
+							<row1>0.884774 0.466021 0.000000</row1>
+							<row2>0.326721 -0.620303 -0.713076</row2>
+							<row3>0.532278 -3.197102 0.465441</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>twig03_jnt</identifier>
+					<transform>
+						<row0>0.001965 0.884773 -0.466018</row0>
+						<row1>-0.003731 0.466022 0.884765</row1>
+						<row2>0.999991 0.000000 0.004217</row2>
+						<row3>-0.000017 -0.000313 -0.008407</row3>
+					</transform>
+					<node>
+						<identifier>twig_01_03_jnt</identifier>
+						<transform>
+							<row0>0.391253 -0.920283 -0.000000</row0>
+							<row1>0.920283 0.391253 -0.000000</row1>
+							<row2>0.000000 -0.000000 1.000000</row2>
+							<row3>-0.157357 -0.160441 -0.000185</row3>
+						</transform>
+						<node>
+							<identifier>twig_01_03_jnt_BlendBone</identifier>
+							<transform>
+								<row0>0.004203 0.000349 0.999991</row0>
+								<row1>-0.082702 0.996574 0.000000</row1>
+								<row2>0.996566 0.082701 -0.004217</row2>
+								<row3>1.825736 -0.656549 2.518409</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>twig03_jnt_BlendBone</identifier>
+						<transform>
+							<row0>0.001965 -0.003731 0.999991</row0>
+							<row1>0.884773 0.466022 -0.000000</row1>
+							<row2>0.466018 -0.884765 -0.004217</row2>
+							<row3>-0.047243 -2.097512 2.518224</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>twig04_jnt</identifier>
+					<transform>
+						<row0>0.501336 0.854762 -0.134330</row0>
+						<row1>-0.825637 0.519020 0.221225</row1>
+						<row2>0.258815 0.000000 0.965927</row2>
+						<row3>0.007726 -0.000588 -0.002984</row3>
+					</transform>
+					<node>
+						<identifier>twig_01_04_jnt</identifier>
+						<transform>
+							<row0>0.389836 -0.920884 -0.000002</row0>
+							<row1>0.920884 0.389836 -0.000000</row1>
+							<row2>0.000001 -0.000002 1.000000</row2>
+							<row3>-0.128490 -0.128019 -0.001266</row3>
+						</transform>
+						<node>
+							<identifier>twig_01_04_jnt_BlendBone</identifier>
+							<transform>
+								<row0>0.955755 0.139809 0.258817</row0>
+								<row1>-0.144741 0.989470 0.000000</row1>
+								<row2>0.256092 0.037462 -0.965926</row2>
+								<row3>2.954754 -0.419481 -1.113269</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>twig04_jnt_BlendBone</identifier>
+						<transform>
+							<row0>0.501336 -0.825637 0.258815</row0>
+							<row1>0.854762 0.519021 0.000000</row1>
+							<row2>0.134330 -0.221225 -0.965927</row2>
+							<row3>0.637084 -3.012532 -1.114541</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>twig05_jnt</identifier>
+					<transform>
+						<row0>0.502292 0.854762 0.130712</row0>
+						<row1>-0.827211 0.519021 -0.215266</row1>
+						<row2>-0.251843 -0.000000 0.967768</row2>
+						<row3>0.008220 -0.000887 0.002437</row3>
+					</transform>
+					<node>
+						<identifier>twig_01_05_jnt</identifier>
+						<transform>
+							<row0>0.389837 -0.920884 -0.000002</row0>
+							<row1>0.920884 0.389837 -0.000000</row1>
+							<row2>0.000001 -0.000001 1.000000</row2>
+							<row3>-0.128489 -0.128019 -0.001266</row3>
+						</transform>
+						<node>
+							<identifier>twig_01_05_jnt_BlendBone</identifier>
+							<transform>
+								<row0>0.957577 0.140075 -0.251842</row0>
+								<row1>-0.144741 0.989470 0.000000</row1>
+								<row2>-0.249190 -0.036452 -0.967768</row2>
+								<row3>2.033522 -0.553939 -2.407697</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>twig05_jnt_BlendBone</identifier>
+						<transform>
+							<row0>0.502292 -0.827211 -0.251843</row0>
+							<row1>0.854761 0.519021 0.000000</row1>
+							<row2>-0.130712 0.215266 -0.967768</row2>
+							<row3>0.154137 -2.216599 -2.408966</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>twig06_jnt</identifier>
+					<transform>
+						<row0>0.295639 0.884773 0.360241</row0>
+						<row1>-0.561291 0.466022 -0.683942</row1>
+						<row2>-0.773014 -0.000000 0.634389</row2>
+						<row3>0.006404 -0.000313 0.006774</row3>
+					</transform>
+					<node>
+						<identifier>twig_01_06_jnt</identifier>
+						<transform>
+							<row0>0.391252 -0.920284 0.000002</row0>
+							<row1>0.920284 0.391252 0.000000</row1>
+							<row2>-0.000001 0.000002 1.000000</row2>
+							<row3>-0.157357 -0.160441 -0.000184</row3>
+						</transform>
+						<node>
+							<identifier>twig_01_06_jnt_BlendBone</identifier>
+							<transform>
+								<row0>0.632215 0.052466 -0.773015</row0>
+								<row1>-0.082703 0.996574 0.000000</row1>
+								<row2>-0.770367 -0.063931 -0.634388</row2>
+								<row3>0.174881 -0.793547 -3.113666</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>twig06_jnt_BlendBone</identifier>
+						<transform>
+							<row0>0.295639 -0.561291 -0.773014</row0>
+							<row1>0.884773 0.466022 -0.000000</row1>
+							<row2>-0.360242 0.683942 -0.634389</row2>
+							<row3>-0.819219 -0.631863 -3.113849</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>twig07_jnt</identifier>
+					<transform>
+						<row0>-0.000000 0.884773 0.466022</row0>
+						<row1>-0.000000 0.466022 -0.884773</row1>
+						<row2>-1.000000 -0.000000 0.000000</row2>
+						<row3>-0.000100 -0.000313 0.008840</row3>
+					</transform>
+					<node>
+						<identifier>twig_01_07_jnt</identifier>
+						<transform>
+							<row0>0.391253 -0.920283 0.000000</row0>
+							<row1>0.920283 0.391253 -0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>-0.157357 -0.160441 -0.000184</row3>
+						</transform>
+						<node>
+							<identifier>twig_01_07_jnt_BlendBone</identifier>
+							<transform>
+								<row0>-0.000000 0.000000 -1.000000</row0>
+								<row1>-0.082702 0.996574 0.000000</row1>
+								<row2>-0.996574 -0.082702 0.000000</row2>
+								<row3>-1.835900 -0.960415 -2.525834</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>twig07_jnt_BlendBone</identifier>
+						<transform>
+							<row0>-0.000000 0.000000 -1.000000</row0>
+							<row1>0.884773 0.466022 -0.000000</row1>
+							<row2>-0.466022 0.884773 0.000000</row2>
+							<row3>-1.759512 1.153342 -2.526018</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>twig08_jnt</identifier>
+					<transform>
+						<row0>-0.294878 0.884775 0.360861</row0>
+						<row1>0.559849 0.466019 -0.685124</row1>
+						<row2>-0.774349 -0.000000 -0.632759</row2>
+						<row3>-0.005887 -0.000313 0.006176</row3>
+					</transform>
+					<node>
+						<identifier>twig_01_08_jnt</identifier>
+						<transform>
+							<row0>0.391250 -0.920284 -0.000012</row0>
+							<row1>0.920284 0.391250 -0.000001</row1>
+							<row2>0.000006 -0.000011 1.000000</row2>
+							<row3>-0.157357 -0.160440 -0.000185</row3>
+						</transform>
+						<node>
+							<identifier>twig_01_08_jnt_BlendBone</identifier>
+							<transform>
+								<row0>-0.630582 -0.052330 -0.774357</row0>
+								<row1>-0.082702 0.996574 -0.000000</row1>
+								<row2>-0.771704 -0.064041 0.632749</row2>
+								<row3>-3.016499 -1.058387 -0.797498</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>twig08_jnt_BlendBone</identifier>
+						<transform>
+							<row0>-0.294878 0.559849 -0.774349</row0>
+							<row1>0.884775 0.466019 -0.000000</row1>
+							<row2>-0.360861 0.685124 0.632759</row2>
+							<row3>-2.311585 2.201511 -0.797645</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>twig09_jnt</identifier>
+					<transform>
+						<row0>-0.501408 0.854761 0.134066</row0>
+						<row1>0.825754 0.519021 -0.220789</row1>
+						<row2>-0.258305 0.000000 -0.966063</row2>
+						<row3>-0.008393 -0.000313 0.001983</row3>
+					</transform>
+					<node>
+						<identifier>twig_01_09_jnt</identifier>
+						<transform>
+							<row0>0.389837 -0.920884 -0.000002</row0>
+							<row1>0.920884 0.389837 -0.000000</row1>
+							<row2>0.000001 -0.000001 1.000000</row2>
+							<row3>-0.128489 -0.128019 -0.001266</row3>
+						</transform>
+						<node>
+							<identifier>twig_01_09_jnt_BlendBone</identifier>
+							<transform>
+								<row0>-0.955890 -0.139829 -0.258306</row0>
+								<row1>-0.144741 0.989470 -0.000000</row1>
+								<row2>-0.255586 -0.037387 0.966063</row2>
+								<row3>-2.811424 -1.263244 1.117973</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>twig09_jnt_BlendBone</identifier>
+						<transform>
+							<row0>-0.501408 0.825754 -0.258305</row0>
+							<row1>0.854761 0.519021 -0.000000</row1>
+							<row2>-0.134066 0.220789 0.966064</row2>
+							<row3>-2.387786 1.968516 1.116712</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>twig10_jnt</identifier>
+					<transform>
+						<row0>-0.495138 0.854761 -0.155633</row0>
+						<row1>0.815428 0.519021 0.256308</row1>
+						<row2>0.299859 -0.000000 -0.953983</row2>
+						<row3>-0.008053 -0.000438 -0.002948</row3>
+					</transform>
+					<node>
+						<identifier>twig_01_10_jnt</identifier>
+						<transform>
+							<row0>0.389837 -0.920884 0.000000</row0>
+							<row1>0.920884 0.389837 -0.000000</row1>
+							<row2>-0.000000 0.000000 1.000000</row2>
+							<row3>-0.128490 -0.128019 -0.001266</row3>
+						</transform>
+						<node>
+							<identifier>twig_01_10_jnt_BlendBone</identifier>
+							<transform>
+								<row0>-0.943937 -0.138081 0.299859</row0>
+								<row1>-0.144741 0.989469 0.000000</row1>
+								<row2>0.296702 0.043402 0.953983</row2>
+								<row3>-1.769639 -1.110724 2.505583</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>twig10_jnt_BlendBone</identifier>
+						<transform>
+							<row0>-0.495138 0.815428 0.299859</row0>
+							<row1>0.854761 0.519021 -0.000000</row1>
+							<row2>0.155633 -0.256308 0.953983</row2>
+							<row3>-1.841208 1.068613 2.504317</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>Root_massager_jnt_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>2.525918 -1.019598 -1.831577</row3>
+					</transform>
+				</node>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>Root_massager_jnt_BlendBone</node>
+		<node>twig07_jnt_BlendBone</node>
+		<node>twig_01_07_jnt_BlendBone</node>
+		<node>twig04_jnt_BlendBone</node>
+		<node>twig_01_04_jnt_BlendBone</node>
+		<node>twig09_jnt_BlendBone</node>
+		<node>twig_01_09_jnt_BlendBone</node>
+		<node>twig06_jnt_BlendBone</node>
+		<node>twig_01_06_jnt_BlendBone</node>
+		<node>twig02_jnt_BlendBone</node>
+		<node>twig_01_02_jnt_BlendBone</node>
+		<node>twig01_jnt_BlendBone</node>
+		<node>twig_01_01_jnt_BlendBone</node>
+		<node>twig08_jnt_BlendBone</node>
+		<node>twig_01_08_jnt_BlendBone</node>
+		<node>twig03_jnt_BlendBone</node>
+		<node>twig_01_03_jnt_BlendBone</node>
+		<node>twig05_jnt_BlendBone</node>
+		<node>twig_01_05_jnt_BlendBone</node>
+		<node>twig10_jnt_BlendBone</node>
+		<node>twig_01_10_jnt_BlendBone</node>
+		<geometry>
+			<vertices>s0Shape.vertices</vertices>
+			<primitive>s0Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd1_skinned</identifier>
+					<fx>shaders/std_effects/PBS_ext_skinned.fx</fx>
+					<materialKind>112</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						alphaReference
+						<Int>56</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h03_mt_ny_2026/customization/Pet/h03_NY26_RacoonObject_AM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/h03_mt_ny_2026/customization/Pet/h03_NY26_RacoonObject_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/h03_mt_ny_2026/customization/Pet/h03_NY26_RacoonObject_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-2.525746 0.963082 -1.831791</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>-2.588025 0.804531 1.751495</min>
+		<max>-2.463467 1.121632 1.912088</max>
+	</boundingBox>
+	<geometrySize>32400</geometrySize>
+	<minUVDensity>12.611628</minUVDensity>
+</root>

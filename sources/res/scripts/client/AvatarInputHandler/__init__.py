@@ -84,9 +84,7 @@ _CTRLS_DESC_MAP = {_CTRL_MODE.ARCADE: (
    _CTRL_MODE.SPG_ONLY_ARTY_MODE: (
                                  control_modes.OnlyArtyControlMode, 'flamethrowerMode', _CTRL_TYPE.USUAL), 
    _CTRL_MODE.ASSAULT_SPG: (
-                          control_modes.AssaultControlMode, 'assaultMode', _CTRL_TYPE.USUAL), 
-   _CTRL_MODE.ATGM: (
-                   control_modes.ATGMCameraControlMode, 'atgmMode', _CTRL_TYPE.USUAL)}
+                          control_modes.AssaultControlMode, 'assaultMode', _CTRL_TYPE.USUAL)}
 OVERWRITE_CTRLS_DESC_MAP = {constants.ARENA_BONUS_TYPE.EPIC_BATTLE: {_CTRL_MODE.POSTMORTEM: (
                                                                   epic_battle_death_mode.DeathTankFollowMode, 'postMortemMode', _CTRL_TYPE.USUAL)}, 
    constants.ARENA_BONUS_TYPE.EPIC_BATTLE_TRAINING: {_CTRL_MODE.POSTMORTEM: (
@@ -933,9 +931,6 @@ class AvatarInputHandler(CallbackDelayer, ScriptGameObject):
 
     def _onArenaStarted(self, period, *args):
         self.__isArenaStarted = period == ARENA_PERIOD.BATTLE
-        self.refreshGunMarkers()
-
-    def refreshGunMarkers(self):
         self.__curCtrl.setGunMarkerFlag(self.__isArenaStarted, _GUN_MARKER_FLAG.CONTROL_ENABLED)
         self.showServerGunMarker(gun_marker_ctrl.useServerGunMarker())
         self.showClientGunMarkers(gun_marker_ctrl.useClientGunMarker())

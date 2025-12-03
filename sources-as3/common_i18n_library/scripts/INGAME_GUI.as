@@ -501,6 +501,16 @@ package
       
       public static const SHELLS_KINDS_FLAME:String = "#ingame_gui:shells_kinds/FLAME";
       
+      public static const SHELLS_KINDS_HOLLOW_CHARGE_DF:String = "#ingame_gui:shells_kinds/HOLLOW_CHARGE_DF";
+      
+      public static const SHELLS_KINDS_HIGH_EXPLOSIVE_DF:String = "#ingame_gui:shells_kinds/HIGH_EXPLOSIVE_DF";
+      
+      public static const SHELLS_KINDS_ARMOR_PIERCING_DF:String = "#ingame_gui:shells_kinds/ARMOR_PIERCING_DF";
+      
+      public static const SHELLS_KINDS_ARMOR_PIERCING_HE_DF:String = "#ingame_gui:shells_kinds/ARMOR_PIERCING_HE_DF";
+      
+      public static const SHELLS_KINDS_ARMOR_PIERCING_CR_DF:String = "#ingame_gui:shells_kinds/ARMOR_PIERCING_CR_DF";
+      
       public static const SHELLS_KINDS_PARAMS_DAMAGE:String = "#ingame_gui:shells_kinds/params/damage";
       
       public static const SHELLS_KINDS_PARAMS_DAMAGERANGE:String = "#ingame_gui:shells_kinds/params/damageRange";
@@ -509,7 +519,11 @@ package
       
       public static const SHELLS_KINDS_PARAMS_PIERCINGPOWER:String = "#ingame_gui:shells_kinds/params/piercingPower";
       
+      public static const SHELLS_KINDS_PARAMS_DISTANCEFACTORPIERCINGPOWER:String = "#ingame_gui:shells_kinds/params/distanceFactorPiercingPower";
+      
       public static const SHELLS_KINDS_PARAMS_SHOTSPEED:String = "#ingame_gui:shells_kinds/params/shotSpeed";
+      
+      public static const SHELLS_KINDS_PARAMS_SHOTSPEEDACCELERATED:String = "#ingame_gui:shells_kinds/params/shotSpeedAccelerated";
       
       public static const SHELLS_KINDS_PARAMS_EXPLOSIONRADIUS:String = "#ingame_gui:shells_kinds/params/explosionRadius";
       
@@ -1307,6 +1321,16 @@ package
       
       public static const DAMAGELOG_SHELLTYPE_HOLLOW_CHARGE:String = "#ingame_gui:damageLog/shellType/HOLLOW_CHARGE";
       
+      public static const DAMAGELOG_SHELLTYPE_HOLLOW_CHARGE_DF:String = "#ingame_gui:damageLog/shellType/HOLLOW_CHARGE_DF";
+      
+      public static const DAMAGELOG_SHELLTYPE_HIGH_EXPLOSIVE_DF:String = "#ingame_gui:damageLog/shellType/HIGH_EXPLOSIVE_DF";
+      
+      public static const DAMAGELOG_SHELLTYPE_ARMOR_PIERCING_DF:String = "#ingame_gui:damageLog/shellType/ARMOR_PIERCING_DF";
+      
+      public static const DAMAGELOG_SHELLTYPE_ARMOR_PIERCING_HE_DF:String = "#ingame_gui:damageLog/shellType/ARMOR_PIERCING_HE_DF";
+      
+      public static const DAMAGELOG_SHELLTYPE_ARMOR_PIERCING_CR_DF:String = "#ingame_gui:damageLog/shellType/ARMOR_PIERCING_CR_DF";
+      
       public static const DAMAGELOG_MULTIPLIER:String = "#ingame_gui:damageLog/multiplier";
       
       public static const HITMARKER_BLOCKED:String = "#ingame_gui:hitMarker/blocked";
@@ -2030,12 +2054,6 @@ package
       public static const PREBATTLEMARKER_PREBATTLEMARKER_50:String = "#ingame_gui:prebattlemarker/prebattlemarker_50";
       
       public static const PREBATTLEMARKER_PREBATTLEMARKER_51:String = "#ingame_gui:prebattlemarker/prebattlemarker_51";
-      
-      public static const PREBATTLEMARKER_PREBATTLEMARKER_52:String = "#ingame_gui:prebattlemarker/prebattlemarker_52";
-      
-      public static const PREBATTLEMARKER_PREBATTLEMARKER_53:String = "#ingame_gui:prebattlemarker/prebattlemarker_53";
-      
-      public static const PREBATTLEMARKER_PREBATTLEMARKER_54:String = "#ingame_gui:prebattlemarker/prebattlemarker_54";
       
       public static const OPTDEVICERESURRECTION_ENGINE:String = "#ingame_gui:optDeviceResurrection/engine";
       

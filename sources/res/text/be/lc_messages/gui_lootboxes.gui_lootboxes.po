@@ -17,6 +17,85 @@ msgstr ""
 msgid "additionalRewardsTooltip/header"
 msgstr "Астатнія ўзнагароды"
 
+msgid "categories/accountCustomizations/subtitle"
+msgstr ""
+"Можа змяшчаць нашыўкі, жэтоны і іх складнікі, медалі і іншыя элементы "
+"ўпрыгожання профілю гульца."
+
+msgid "categories/accountCustomizations/title"
+msgstr "Профіль"
+
+msgid "categories/boosters/subtitle"
+msgstr ""
+"Можа змяшчаць асабістыя рэзервы, чарцяжы, баявыя задачы і іншыя прадметы для"
+" паскарэння развіцця ў гульні."
+
+msgid "categories/boosters/title"
+msgstr "Паскарэнне развіцця"
+
+msgid "categories/crew/subtitle"
+msgstr ""
+"Можа змяшчаць навучальныя дапаможнікі, бланкі перападрыхтоўкі экіпажа, "
+"членаў экіпажа і абліччы для іх."
+
+msgid "categories/crew/title"
+msgstr "Экіпаж"
+
+msgid "categories/currency/subtitle"
+msgstr ""
+"Можа змяшчаць золата, срэбра, боны, вольны досвед і Кампаненты з адкрытых "
+"кантэйнераў."
+
+msgid "categories/currency/title"
+msgstr "Валюты"
+
+msgid "categories/equipments/subtitle"
+msgstr ""
+"Можа змяшчаць рыштунак, абсталяванне, настаўленні, дэмантажныя наборы і "
+"слоты ў Гаражы."
+
+msgid "categories/equipments/title"
+msgstr "Абслугоўванне"
+
+msgid "categories/featureItems/subtitle"
+msgstr ""
+"Можа змяшчаць розныя сезонныя ўзнагароды, якія даступныя або "
+"выкарыстоўваюцца ў межах падзей."
+
+msgid "categories/featureItems/title"
+msgstr "Узнагароды падзеі"
+
+msgid "categories/lootboxes/subtitle"
+msgstr ""
+"Кантэйнеры з маёмасцю, якая заўжды спатрэбіцца як дасведчаным гульцам, так і"
+" навічкам."
+
+msgid "categories/lootboxes/title"
+msgstr "Кантэйнеры"
+
+msgid "categories/premium/subtitle"
+msgstr ""
+"Асаблівы статус акаўнту, які дазваляе здабываць больш досведу і срэбра, а "
+"таксама дае дадатковыя магчымасці."
+
+msgid "categories/premium/title"
+msgstr "Танкавы прэміум"
+
+msgid "categories/vehicle/subtitle"
+msgstr ""
+"Тут паказана ўся прэміум і пракатная тэхніка, атрыманая з адкрытых "
+"кантэйнераў."
+
+msgid "categories/vehicle/title"
+msgstr "Тэхніка"
+
+msgid "categories/vehicleCustomizations/subtitle"
+msgstr ""
+"Можа змяшчаць стылі, камуфляжныя схемы і іншыя элементы выгляду для тэхнікі."
+
+msgid "categories/vehicleCustomizations/title"
+msgstr "Выгляд"
+
 msgid "compensationTooltip/contentDescription"
 msgstr "Кампенсацыя:"
 
@@ -30,16 +109,76 @@ msgid "compensationTooltip/description/vehicles"
 msgstr "Кампенсацыя за машыну"
 
 msgid "compensationTooltip/footerDetails/collectionItem"
-msgstr "Кампенсацыя за ўжо наяўны элемент калекцыі."
+msgstr "Кампенсацыя за ўжо наяўны ў вас элемент калекцыі."
 
 msgid "compensationTooltip/footerDetails/vehicles"
-msgstr "Кампенсацыя за машыну, якая ўжо ёсць у вас у Гаражы."
+msgstr "Кампенсацыя за машыну, якая ўжо ёсць у вашым Гаражы."
 
 msgid "compensationTooltip/title/credits"
 msgstr "Срэбра"
 
 msgid "compensationTooltip/title/gold"
 msgstr "Золата"
+
+msgid "currencies/credits/subtitle"
+msgstr ""
+"Асноўная ўнутрыгульнявая валюта. Іх здабываюць у баях або купляюць за "
+"золата."
+
+msgid "currencies/credits/title"
+msgstr "Срэбра"
+
+msgid "currencies/crystal/subtitle"
+msgstr ""
+"Рэдкая спецыялізаваная валюта, за якую купляюцца ўнікальныя тавары, "
+"недаступныя за іншую валюту."
+
+msgid "currencies/crystal/title"
+msgstr "Боны"
+
+msgid "currencies/equipCoin/subtitle"
+msgstr ""
+"Кампаненты неабходны для наладкі і дэмантажу эксперыментальнага "
+"абсталявання."
+
+msgid "currencies/equipCoin/title"
+msgstr "Кампаненты"
+
+msgid "currencies/freeExp/subtitle"
+msgstr ""
+"Выдаткоўваецца на даследаванне модуляў і тэхнікі, а таксама выкарыстоўваецца"
+" ў пэўных іншых актыўнасцях."
+
+msgid "currencies/freeExp/title"
+msgstr "Вольны досвед"
+
+msgid "currencies/gold/subtitle"
+msgstr ""
+"Каштоўная ўнутрыгульнявая валюта, якую можна выдаткаваць на самыя розныя "
+"мэты: Танкавы прэміум акаўнт, тэхніку, абмен досведу і г.д."
+
+msgid "currencies/gold/title"
+msgstr "Золата"
+
+msgid "currencies/premium_plus_universal/subtitle"
+msgstr ""
+"Асаблівы статус акаўнту, які дазваляе здабываць больш досведу і срэбра, а "
+"таксама дае дадатковыя магчымасці."
+
+msgid "currencies/premium_plus_universal/title"
+msgstr "Танкавы прэміум"
+
+msgid "deadlineTooltip/alert"
+msgstr "Статыстыка знікне пасля заканчэння тэрміну яе захоўвання."
+
+msgid "deadlineTooltip/lootboxStatisticDate"
+msgstr "Да %(date)s"
+
+msgid "deadlineTooltip/noDateText"
+msgstr "Абновіцца за 3 тыдні да аўтаадкрыцця."
+
+msgid "deadlineTooltip/title"
+msgstr "Тэрмін захоўвання статыстыкі"
 
 msgid "entryPointWidget/count"
 msgstr "%(mult)s%(count)s"
@@ -49,8 +188,8 @@ msgstr "%(mult)s%(count)s / %(infin)s"
 
 msgid "entryPointWidget/disabledTooltip/body"
 msgstr ""
-"У сапраўдны момант купля і адкрыццё кантэйнераў недаступныя па тэхнічных "
-"прычынах. Прыносім прабачэнні за часовыя нязручнасці."
+"Зараз купля і адкрыццё кантэйнераў недаступныя з тэхнічных прычын. Выбачайце"
+" за нязручнасці."
 
 msgid "entryPointWidget/disabledTooltip/header"
 msgstr "Купля і адкрыццё часова недаступныя"
@@ -116,6 +255,11 @@ msgstr "Купля недаступная"
 msgid "guaranteedReward/boxesLeft/bonus"
 msgstr "Яшчэ кантэйнераў да гарантаванай узнагароды, калі не выпадзе раней:"
 
+msgid "guaranteedReward/boxesLeft/progressionStage"
+msgstr ""
+"Яшчэ кантэйнераў да гарантаванай узнагароды {cream_Open}%(stage)s "
+"этапа{cream_Close}, калі не выпадзе раней."
+
 msgid "guaranteedReward/boxesLeft/vehicle"
 msgstr ""
 "Яшчэ кантэйнераў да гарантаванай машыны %(level)s узроўню, калі не выпадзе "
@@ -127,11 +271,17 @@ msgstr "Гарантаваная ўзнагарода ў наступным ка
 msgid "guaranteedReward/next/vehicle"
 msgstr "Гарантаваная машына %(level)s узроўню ўжо ў наступным кантэйнеры!"
 
+msgid "guaranteedRewardTooltip/block1/bonus/multiply"
+msgstr "• Этап %(stage)s — %(boxNumber)s кантэйнера;"
+
+msgid "guaranteedRewardTooltip/block1/bonus/single"
+msgstr "%(boxNumber)s-га кантэйнера."
+
 msgid "guaranteedRewardTooltip/block1/bonus/text"
 msgstr ""
 "Гарантаваная ўзнагарода — найбольш каштоўная гульнявая маёмасць са спіса "
 "магчымага змесціва кантэйнераў. Узнагарода гарантавана выпадае не пазней за "
-"%(boxNumber)s-ы кантэйнер. Калі такая выпадзе раней — адлік пачнецца нанова."
+"%(bonus)sКалі выпадзе раней, адлік пачнецца нанова."
 
 msgid "guaranteedRewardTooltip/block1/bonus/title"
 msgstr "Механіка гарантаванай узнагароды"
@@ -139,9 +289,8 @@ msgstr "Механіка гарантаванай узнагароды"
 msgid "guaranteedRewardTooltip/block1/vehicle/text"
 msgstr ""
 "Гарантаваны танк — машына %(level)s узроўню са спіса магчымага змесціва "
-"кантэйнераў. Танк гарантавана выпадзе не пазней за %(boxNumber)s-ы "
-"кантэйнер. Калі вы атрымаеце якую-небудзь машыну раней, адлік пачнецца "
-"нанова."
+"кантэйнераў. Танк гарантавана выпадзе не пазней за %(bonus)sКалі атрымаеце "
+"машыну раней, адлік пачнецца нанова."
 
 msgid "guaranteedRewardTooltip/block1/vehicle/title"
 msgstr "Механіка гарантаванага танка"
@@ -162,7 +311,7 @@ msgstr "Гарантаваная ўзнагарода з этапаў"
 
 msgid "guaranteedRewardTooltip/block4/bonus/text"
 msgstr ""
-"Узнагароду з трэцяга спіса можна атрымліваць неабмежаваную колькасць разоў."
+"Узнагароды з трэцяга спіса можна атрымліваць неабмежаваную колькасць разоў."
 
 msgid "guaranteedRewardTooltip/block4/vehicle/text"
 msgstr ""
@@ -206,12 +355,11 @@ msgid "lootBox/slot/description"
 msgstr "%(idx)s. Імавернасць выпадзення адной з узнагарод: "
 
 msgid "lootboxRotationTooltip/caption"
-msgstr "Вы можаце атрымаць адну з узнагарод бягучага этапу"
+msgstr "Вы можаце атрымаць адну з узнагарод бягучага спіса/этапу."
 
 msgid "lootboxRotationTooltip/description1"
 msgstr ""
-"Збярыце тэхніку з асноўных узнагарод бягучага этапу, каб перайсці да "
-"наступнага."
+"Збярыце асноўныя ўзнагароды бягучага этапу, каб перайсці да наступнага."
 
 msgid "lootboxRotationTooltip/description2"
 msgstr "Кожны этап уключае ўнікальную тэхніку і іншую гульнявую маёмасць."
@@ -225,8 +373,87 @@ msgstr "Этап"
 msgid "lootboxRotationTooltip/title"
 msgstr "Спісы змесціва"
 
+msgid "lootboxesFullStatsView/categories/accountCustomizations"
+msgstr "Профіль"
+
+msgid "lootboxesFullStatsView/categories/boosters"
+msgstr "Паскарэнне развіцця"
+
+msgid "lootboxesFullStatsView/categories/crew"
+msgstr "Экіпаж"
+
+msgid "lootboxesFullStatsView/categories/currency"
+msgstr "Валюты, кампаненты"
+
+msgid "lootboxesFullStatsView/categories/equipments"
+msgstr "Абслугоўванне"
+
+msgid "lootboxesFullStatsView/categories/featureItems"
+msgstr "Узнагароды падзеі"
+
+msgid "lootboxesFullStatsView/categories/lootboxes"
+msgstr "Кантэйнеры"
+
+msgid "lootboxesFullStatsView/categories/premium"
+msgstr "Танкавы прэміум акаўнт"
+
+msgid "lootboxesFullStatsView/categories/vehicle"
+msgstr "Тэхніка"
+
+msgid "lootboxesFullStatsView/categories/vehicleCustomizations"
+msgstr "Выгляд"
+
+msgid "lootboxesFullStatsView/close"
+msgstr "ЗАКРЫЦЬ"
+
+msgid "lootboxesFullStatsView/empty"
+msgstr ""
+"Адкрыйце прынамсі адзін кантэйнер,\n"
+"каб запусціць збор статыстыкі ўзнагарод, якія выпалі."
+
+msgid "lootboxesFullStatsView/error"
+msgstr ""
+"Не ўдалося атрымаць статыстыку атрыманай маёмасці з кантэйнераў.\n"
+"Паспрабуйце яшчэ раз пазней."
+
+msgid "lootboxesFullStatsView/footer/selectAll"
+msgstr "Выбраць усё"
+
+msgid "lootboxesFullStatsView/footer/title"
+msgstr "Фільтр кантэйнераў"
+
+msgid "lootboxesFullStatsView/footer/tooltip/body/all"
+msgstr "Дадаць/прыбраць маёмасць з усіх раней адкрытых кантэйнераў."
+
+msgid "lootboxesFullStatsView/footer/tooltip/body/container"
+msgstr "Дадаць/прыбраць маёмасць з кантэйнера %(container_name)s"
+
+msgid "lootboxesFullStatsView/header/title"
+msgstr "СТАТЫСТЫКА АТРЫМАНАЙ МАЁМАСЦІ"
+
+msgid "lootboxesFullStatsView/sectionQuantity"
+msgstr "Колькасць %(count)s адз."
+
+msgid "lootboxesStatsView/errorAll"
+msgstr ""
+"Статыстыка адсутнічае.\n"
+"{cream_Open}Адкрыйце прынамсі адзін кантэйнер любога тыпу{cream_Close},\n"
+"каб паглядзець статыстыку ўзнагарод, якія выпалі."
+
+msgid "lootboxesStatsView/errorCurrent"
+msgstr ""
+"Для кантэйнера {cream_Open}«%(lootboxName)s»{cream_Close} статыстыка адсутнічае.\n"
+"{cream_Open}Адкрыйце прынамсі адзін такі кантэйнер{cream_Close}, каб\n"
+"убачыць статыстыку ўзнагарод, якія выпалі."
+
 msgid "lootboxesWithKeys/about/default"
 msgstr "Пра кантэйнер"
+
+msgid "lootboxesWithKeys/about/ny_2025_big"
+msgstr "Пра кантэйнеры з этапамі"
+
+msgid "lootboxesWithKeys/about/ny_2026_big"
+msgstr "Пра кантэйнеры з этапамі"
 
 msgid "lootboxesWithKeys/about/tanks_birthday_2025_large"
 msgstr "Пра кантэйнеры падзеі"
@@ -283,8 +510,17 @@ msgstr "У ГАРАЖ"
 msgid "openBoxScreen/backBtn/1"
 msgstr "У КРАМУ"
 
+msgid "openBoxScreen/backBtn/10"
+msgstr "ДА ПІРАТЭХНІКІ"
+
+msgid "openBoxScreen/backBtn/11"
+msgstr "ДА АТРАКЦЫЁНА"
+
+msgid "openBoxScreen/backBtn/12"
+msgstr "ДА ГАДАВАНЦА"
+
 msgid "openBoxScreen/backBtn/2"
-msgstr "НА ПЛОШЧУ"
+msgstr "У МЯСТЭЧКА"
 
 msgid "openBoxScreen/backBtn/3"
 msgstr "ДА АСКЕПКАЎ"
@@ -293,7 +529,19 @@ msgid "openBoxScreen/backBtn/4"
 msgstr "ДА РЭФЕРАЛЬНАЙ ПРАГРАМЫ"
 
 msgid "openBoxScreen/backBtn/5"
-msgstr "ДА СВЯТОЧНАЙ ПОШТЫ"
+msgstr "ДА СВЯТОЧНАЙ ЯЛІНЫ"
+
+msgid "openBoxScreen/backBtn/6"
+msgstr "ДА ХОРАМА"
+
+msgid "openBoxScreen/backBtn/7"
+msgstr "ДА ІНСТАЛЯЦЫІ"
+
+msgid "openBoxScreen/backBtn/8"
+msgstr "ДА СТАЛОЎКІ"
+
+msgid "openBoxScreen/backBtn/9"
+msgstr "ДА ГОРКІ"
 
 msgid "openBoxScreen/backBtnMain"
 msgstr "У Гараж"
@@ -340,11 +588,22 @@ msgstr "%(count) шт."
 msgid "optional/openCount/one"
 msgstr "1 шт."
 
-msgid "optional/openProbabilityOverlay"
+msgid "optional/openProbabilityOverlay/long"
 msgstr "Імавернасць выпадання"
+
+msgid "optional/openProbabilityOverlay/short"
+msgstr "Імавернасць"
 
 msgid "optional/possibleRewardsTitle"
 msgstr "МАГЧЫМЫЯ ЎЗНАГАРОДЫ"
+
+msgid "optional/statistic"
+msgstr "Статыстыка"
+
+msgid "otherRewardsTooltip/instruction"
+msgstr ""
+"Націсніце, каб перайсці на старонку з дэталёвым пералікам атрыманай "
+"маёмасці."
 
 msgid "possibleRewards/accountCustomizations"
 msgstr "Профіль"
@@ -366,6 +625,9 @@ msgstr "Узнагароды падзеі"
 
 msgid "possibleRewards/lootboxStageRotation"
 msgstr "Асноўныя ўзнагароды"
+
+msgid "possibleRewards/lootboxes"
+msgstr "Кантэйнеры"
 
 msgid "possibleRewards/premium"
 msgstr "Танкавы прэміум акаўнт"
@@ -394,8 +656,23 @@ msgstr ""
 msgid "probabilitiesOverlay/boxMainRewards"
 msgstr "Асноўныя ўзнагароды"
 
+msgid "probabilitiesOverlay/guaranteedFrequencies"
+msgstr ""
+"Гарантаваная ўзнагарода з {brown_Open}этапу %(stage)s{brown_Close} кожны "
+"{brown_Open}%(count)s кантэйнер{brown_Close}"
+
 msgid "probabilitiesOverlay/optional/header"
 msgstr "ІМАВЕРНАСЦЬ ВЫПАДАННЯ"
+
+msgid "probabilitiesOverlay/optional/ny_2025_tanks/description"
+msgstr ""
+"З кантэйнера з {cream_Open}імавернасцю{cream_Close} %(percentageIcon)s выпадае толькі {cream_Open}адна адзінка тэхнікі{cream_Close}.\n"
+"Пасля збору ўсёй тэхнікі машыны, якія выпалі паўторна, {cream_Open}кампенсуюцца золатам{cream_Close}."
+
+msgid "probabilitiesOverlay/optional/ny_2026_tanks/description"
+msgstr ""
+"З кантэйнера з {cream_Open}імавернасцю{cream_Close} %(percentageIcon)s выпадае толькі {cream_Open}адна адзінка тэхнікі{cream_Close}.\n"
+"Пасля збору ўсёй тэхнікі машыны, якія выпалі паўторна, {cream_Open}кампенсуюцца золатам{cream_Close}."
 
 msgid "probabilitiesOverlay/optional/procentProbability"
 msgstr "%(probability)s%"
@@ -409,13 +686,19 @@ msgstr "Этап %(stage)"
 msgid "probabilitiesOverlay/tabTooltip"
 msgstr "Узнагароды са %(stage)s спіса маёмасці."
 
+msgid "probabilityGuaranteedRewardTooltip/multiply"
+msgstr "• Этап %(stage)s — %(boxNumber)s кантэйнера;"
+
+msgid "probabilityGuaranteedRewardTooltip/single"
+msgstr "%(boxNumber)s-га кантэйнера."
+
 msgid "probabilityGuaranteedRewardTooltip/text1"
 msgstr "Шанц выпадання прадмета з указанай групы."
 
 msgid "probabilityGuaranteedRewardTooltip/text2"
 msgstr ""
-"Узнагарода з гэтага спіса гарантавана выпадзе не пазней за %(boxNumber)s-ы "
-"кантэйнер. Калі атрымаеце ўзнагароду з групы раней, адлік пачнецца нанова."
+"Узнагарода з гэтага спіса гарантавана выпадзе не пазней за %(bonus)sКалі "
+"атрымаеце ўзнагароду з групы раней, адлік пачнецца нанова."
 
 msgid "probabilityGuaranteedRewardTooltip/title"
 msgstr "Імавернасць і гарантаваныя ўзнагароды"
@@ -468,6 +751,55 @@ msgstr "Выключыць анімацыю"
 msgid "shared/animationControlsText"
 msgstr "Уключыць анімацыю"
 
+msgid "shortStatistic/button/fullstat"
+msgstr "Падрабязная статыстыка"
+
+msgid "shortStatistic/deadline/text"
+msgstr "Тэрмін захоўвання статыстыкі"
+
+msgid "shortStatistic/error/description"
+msgstr "Не ўдалося атрымаць статыстыку. Паспрабуйце яшчэ раз пазней."
+
+msgid "shortStatistic/loading"
+msgstr "Атрымліваем даныя..."
+
+msgid "shortStatistic/noData/description/all"
+msgstr ""
+"Статыстыка адсутнічае. {cream_Open}Адкрыйце прынамсі адзін кантэйнер любога "
+"тыпу, каб запусціць збор статыстыкі ўзнагарод, якія выпалі."
+
+msgid "shortStatistic/noData/description/current"
+msgstr ""
+"Для кантэйнера {cream_Open}%(container_name)s{cream_Close} статыстыка "
+"адсутнічае. {cream_Open}Адкрыйце прынамсі адзін такі кантэйнер{cream_Close},"
+" каб запусціць збор статыстыкі ўзнагарод, якія выпалі."
+
+msgid "shortStatistic/tabs/all"
+msgstr "Усе кантэйнеры"
+
+msgid "shortStatistic/tabs/current"
+msgstr "Цяперашні"
+
+msgid "shortStatistic/title"
+msgstr "Статыстыка"
+
+msgid "shortStatistic/vehicleInfo/commonInfoTooltip/description"
+msgstr ""
+"Тут паказана ўся прэміум і пракатная тэхніка, атрыманая з адкрытых "
+"кантэйнераў."
+
+msgid "shortStatistic/vehicleInfo/commonInfoTooltip/title"
+msgstr "Тэхніка"
+
+msgid "shortStatistic/vehicleInfo/list/title"
+msgstr "Апошнія атрыманыя:"
+
+msgid "shortStatistic/vehicleInfo/title"
+msgstr "Тэхніка"
+
+msgid "shortStatistic/vehicleInfo/value"
+msgstr "%(count)s адз."
+
 msgid "tier/tier_1"
 msgstr "Звычайны кантэйнер"
 
@@ -484,13 +816,13 @@ msgid "time/days"
 msgstr "сут"
 
 msgid "time/hours"
-msgstr "гадз"
+msgstr "гадз."
 
 msgid "time/lessThenMinute"
 msgstr "Хвіліну"
 
 msgid "time/minutes"
-msgstr "хв"
+msgstr "хв."
 
 msgid "time/seconds"
 msgstr "c"
@@ -623,10 +955,23 @@ msgstr ""
 
 msgid "tooltips/probabilityStageButtons/description2"
 msgstr ""
-"Узнагароду з трэцяга спіса можна атрымаць неабмежаваную колькасць разоў."
+"Узнагароды з трэцяга спіса можна атрымліваць неабмежаваную колькасць разоў."
 
 msgid "tooltips/probabilityStageButtons/title"
 msgstr "Спісы змесціва"
+
+msgid "tooltips/statisticButton/description"
+msgstr ""
+"Статыстыка даступная толькі для раней адкрытых кантэйнераў. Для кожнага тыпу"
+" кантэйнераў статыстыка захоўваецца абмежаваны час."
+
+msgid "tooltips/statisticButton/title"
+msgstr "Статыстыка адкрыцця кантэйнераў"
+
+msgid "triggerHint/statistic"
+msgstr ""
+"СТАТЫСТЫКА\n"
+"АДКРЫЦЦЯ КАНТЭЙНЕРАЎ"
 
 msgid "triggerHint/title"
 msgstr "Наяўныя ключы і адмычкі ад кантэйнераў «Дзень нараджэння 2024»."
@@ -639,6 +984,9 @@ msgstr "Гэта выдатна!"
 
 msgid "videoreward/description/commonText"
 msgstr "У Гаражы папаўненне!"
+
+msgid "videoreward/description/rewardText"
+msgstr "Гарантаваная ўзнагарода!"
 
 msgid "videoreward/description/vehicleText"
 msgstr "Прыбыў гарантаваны танк!"
@@ -680,3 +1028,6 @@ msgid "welcomeScreen/header/titleSecond"
 msgstr ""
 "У кожным кантэйнеры знаходзіцца каштоўная гульнявая маёмасць. Азнаёмцеся з "
 "поўным спісам прадметаў і імавернасцю іх выпадання."
+
+msgid "window/lootBoxes/preview"
+msgstr "ДА КАНТЭЙНЕРАЎ"

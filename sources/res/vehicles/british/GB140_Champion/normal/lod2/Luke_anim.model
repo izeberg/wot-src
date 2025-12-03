@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB140_Champion/normal/lod2/Luke_anim</nodefullVisual>
+	<parent>vehicles/british/GB140_Champion/normal/lod3/Luke_anim</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-0.100000 0.852057 -2.960617</min>
+		<max>0.100000 1.040741 -2.944023</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

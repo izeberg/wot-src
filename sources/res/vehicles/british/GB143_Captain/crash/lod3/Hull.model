@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB143_Captain/crash/lod3/Hull</nodefullVisual>
+	<parent>vehicles/british/GB143_Captain/crash/lod4/Hull</parent>
+	<tank>true</tank>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-2.045552 -1.026061 -4.151818</min>
+		<max>2.023378 0.926975 4.128596</max>
+	</visibilityBox>
+</root>

@@ -112,8 +112,6 @@ package net.wg.gui.battle.views.vehicleMarkers
       private static const LEVEL_ICON_ALPHA_DESTROYED:Number = 0.4;
       
       private static const LEVEL_ICON_ALPHA_ALIVE:int = 1;
-      
-      private static const SUPPORTED_HP_COLORS:Vector.<String> = new <String>[VehicleMarkersConstants.COLOR_RED,VehicleMarkersConstants.COLOR_PURPLE,VehicleMarkersConstants.COLOR_WHITE,VehicleMarkersConstants.COLOR_BLUE];
        
       
       public var vehicleIcon:MovieClip = null;
@@ -344,6 +342,29 @@ package net.wg.gui.battle.views.vehicleMarkers
          this._isVehicleHoverVisible = param1;
          this.updateMarkerSettings();
          this.updateVehicleMarkerHoverColor();
+      }
+      
+      private function updateVehicleMarkerHoverColor() : void
+      {
+         if(this._entityType == VehicleMarkersConstants.ENTITY_TYPE_ENEMY)
+         {
+            if(this.vmManager.isColorBlind)
+            {
+               this.vehicleMarkerHoverMC.gotoAndStop(LABEL_COLOR_BLIND_HOVER);
+            }
+            else
+            {
+               this.vehicleMarkerHoverMC.gotoAndStop(LABEL_ENEMY_HOVER);
+            }
+         }
+         else if(this._markerSchemeName == SCHEME_NAME_SQUADMAN)
+         {
+            this.vehicleMarkerHoverMC.gotoAndStop(LABEL_PLATOON_HOVER);
+         }
+         else
+         {
+            this.vehicleMarkerHoverMC.gotoAndStop(LABEL_ALLY_HOVER);
+         }
       }
       
       public function changeObjectiveActionMarker(param1:String) : void
@@ -834,34 +855,6 @@ package net.wg.gui.battle.views.vehicleMarkers
          this.hitLabel.playShowTween();
       }
       
-      protected function isHpColorSupported(param1:String) : Boolean
-      {
-         return SUPPORTED_HP_COLORS.indexOf(param1) != -1;
-      }
-      
-      private function updateVehicleMarkerHoverColor() : void
-      {
-         if(this._entityType == VehicleMarkersConstants.ENTITY_TYPE_ENEMY)
-         {
-            if(this.vmManager.isColorBlind)
-            {
-               this.vehicleMarkerHoverMC.gotoAndStop(LABEL_COLOR_BLIND_HOVER);
-            }
-            else
-            {
-               this.vehicleMarkerHoverMC.gotoAndStop(LABEL_ENEMY_HOVER);
-            }
-         }
-         else if(this._markerSchemeName == SCHEME_NAME_SQUADMAN)
-         {
-            this.vehicleMarkerHoverMC.gotoAndStop(LABEL_PLATOON_HOVER);
-         }
-         else
-         {
-            this.vehicleMarkerHoverMC.gotoAndStop(LABEL_ALLY_HOVER);
-         }
-      }
-      
       private function layoutParts(param1:Vector.<Boolean>) : void
       {
          var _loc4_:VehicleMarkerPart = null;
@@ -957,7 +950,7 @@ package net.wg.gui.battle.views.vehicleMarkers
       private function applyColor() : void
       {
          var _loc1_:ColorTransform = null;
-         this.healthBar.color = !!this.isHpColorSupported(this._markerColor) ? this._markerColor : VehicleMarkersConstants.COLOR_GREEN;
+         this.healthBar.color = this._markerColor;
          if(this.isObserver)
          {
             _loc1_ = this.vmManager.getTransform(this._markerSchemeName);

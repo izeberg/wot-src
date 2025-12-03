@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>HP_HatchSleeve</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>-1.164527 0.552096 -0.001664</row3>
+			</transform>
+		</node>
+		<node>
+			<identifier>Root</identifier>
+			<transform>
+				<row0>-0.924957 0.378154 -0.038139</row0>
+				<row1>0.377833 0.925743 0.015579</row1>
+				<row2>0.041199 -0.000000 -0.999151</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>HatchSleeve_0</identifier>
+				<transform>
+					<row0>-0.924957 0.377833 0.041199</row0>
+					<row1>0.378154 0.925743 -0.000000</row1>
+					<row2>-0.038139 0.015579 -0.999151</row2>
+					<row3>1.366566 0.058578 -0.051252</row3>
+				</transform>
+				<node>
+					<identifier>HatchSleeve_1</identifier>
+					<transform>
+						<row0>-0.637083 0.700999 0.320508</row0>
+						<row1>0.626218 0.713162 -0.315042</row1>
+						<row2>-0.449419 0.000000 -0.893321</row2>
+						<row3>0.109734 -0.120744 -0.055206</row3>
+					</transform>
+					<node>
+						<identifier>HatchSleeve_1_BlendBone</identifier>
+						<transform>
+							<row0>-0.637083 0.626218 -0.449419</row0>
+							<row1>0.700999 0.713162 0.000000</row1>
+							<row2>-0.320508 0.315042 0.893321</row2>
+							<row3>-1.020553 0.371795 -0.559073</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>HatchSleeve_0_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 -0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>1.243993 -0.571001 -0.000001</row3>
+					</transform>
+				</node>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>HatchSleeve_0_BlendBone</node>
+		<node>HatchSleeve_1_BlendBone</node>
+		<geometry>
+			<vertices>turret_anim_ShapeDeformed.vertices</vertices>
+			<primitive>turret_anim_ShapeDeformed.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_turret_01_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<materialKind>0</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/british/GB141_Celestial_2_51/Celestial_2_51_turret_01_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/british/GB141_Celestial_2_51/Celestial_2_51_turret_01_AO.dds</Texture>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>7.014000 7.014000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/british/GB141_Celestial_2_51/Celestial_2_51_turret_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/british/GB141_Celestial_2_51/Celestial_2_51_turret_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-1.163102 0.552685 0.001589</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>-1.253311 0.345008 -0.107112</min>
+		<max>-1.072893 0.760362 0.103934</max>
+	</boundingBox>
+	<geometrySize>8764</geometrySize>
+	<minUVDensity>0.021278</minUVDensity>
+</root>

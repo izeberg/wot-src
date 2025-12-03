@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.461169 -0.032285 3.054340</min>
+		<max>1.465509 0.468844 3.878427</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<parent>vehicles/french/F135_Schneider_120_AC_Gendarme_02/normal/lod1/Lamp_anim_01</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/french/F135_Schneider_120_AC_Gendarme_02/normal/lod0/Lamp_anim_01</nodefullVisual>
+</root>
