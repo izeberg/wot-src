@@ -991,7 +991,7 @@ class StatTrackMarker(object):
     def stop(self):
         self.__markers = None
         self.__invokeMarker = None
-        for callback in self.__callbacks:
+        for callback in self.__callbacks.values():
             BigWorld.cancelCallback(callback)
 
         self.__callbacks = None
@@ -1031,20 +1031,25 @@ class StatTrackMarker(object):
         return
 
     def __showStatTrackMarker(self, marker, vInfo, target, isImmediately=False):
-        ownPosition = avatar_getter.getAvatarPosition()
-        frags = self.__getFormattedVehicleFrags(vInfo)
-        distance = (target.position - ownPosition).length
-        scale = self.__getScale(distance=distance)
-        self.__invokeMarker(marker.getMarkerID(), self.__SHOW_MARKER, self.__MARKER_TYPE, frags, scale, isImmediately)
         markerID = marker.getMarkerID()
-        self.__callbacks[markerID] = BigWorld.callback(self.__getTimeUntilHideMarker(), partial(self.__hideStatTrackMarker, marker, False))
+        self.__clearCMarkerallback(markerID)
+        if target:
+            ownPosition = avatar_getter.getAvatarPosition()
+            frags = self.__getFormattedVehicleFrags(vInfo)
+            distance = (target.position - ownPosition).length
+            scale = self.__getScale(distance=distance)
+            self.__invokeMarker(markerID, self.__SHOW_MARKER, self.__MARKER_TYPE, frags, scale, isImmediately)
+            self.__callbacks[markerID] = BigWorld.callback(self.__getTimeUntilHideMarker(), partial(self.__hideStatTrackMarker, marker, False))
 
     def __hideStatTrackMarker(self, marker, isImmediately):
         markerID = marker.getMarkerID()
-        callback = self.__callbacks.pop(markerID, None)
+        self.__clearCMarkerallback(markerID)
+        self.__invokeMarker(markerID, self.__HIDE_MARKER, isImmediately)
+
+    def __clearCMarkerallback(self, markerId):
+        callback = self.__callbacks.pop(markerId, None)
         if callback is not None:
             BigWorld.cancelCallback(callback)
-        self.__invokeMarker(marker.getMarkerID(), self.__HIDE_MARKER, isImmediately)
         return
 
     def __update(self):
