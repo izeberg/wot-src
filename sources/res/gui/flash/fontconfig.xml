@@ -63,6 +63,27 @@
 				<path>gui/gameface/fonts/DINRoundPro-Bold.ttf</path>
 			</font>
 		</fontfamily>
+		<fontfamily>
+			<name>Jura</name>
+			<font>
+				<style>normal</style>
+				<weight>normal</weight>
+				<path>gui/gameface/fonts/Jura-Regular.ttf</path>
+			</font>
+			<font>
+				<style>normal</style>
+				<weight>bold</weight>
+				<path>gui/gameface/fonts/Jura-Bold.ttf</path>
+			</font>
+		</fontfamily>
+		<fontfamily>
+			<name>Pacifico</name>
+			<font>
+				<style>normal</style>
+				<weight>normal</weight>
+				<path>gui/gameface/fonts/Pacifico-Regular.ttf</path>
+			</font>
+		</fontfamily>
 		<deffontfamily>Warhelios</deffontfamily>
 		<hieroglyphical>true</hieroglyphical>
 		<fontfamilyfallback>DefaultWarhelios</fontfamilyfallback>
