@@ -9,6 +9,7 @@ from frameworks.state_machine.transitions import TransitionType
 from gui.Scaleform.daapi.settings.views import VIEW_ALIAS
 from gui.Scaleform.framework.entities.View import ViewKey
 from gui.hangar_cameras.hangar_camera_common import CameraMovementStates, CameraRelatedEvents
+from gui.impl.lobby.battle_results.states import PostBattleResultsEntryState
 from gui.shared.event_dispatcher import showHOInfoViewWindow, showHOGiftMachineLootListView, showHangar, showHeroTankPreview
 from gui.shared import g_eventBus, EVENT_BUS_SCOPE
 from gui.app_loader import sf_lobby
@@ -169,6 +170,11 @@ class BaseState(HolidayOpsNavigationMixin, LobbyState):
     __hangarSpace = dependency.descriptor(IHangarSpace)
     __settingsCore = dependency.descriptor(ISettingsCore)
     __nyTutorialController = dependency.descriptor(INewYearTutorialController)
+
+    def addNavigationTransition(self, targetViewState, transitionType=TransitionType.INTERNAL, record=True):
+        if isinstance(targetViewState, PostBattleResultsEntryState):
+            record = False
+        super(BaseState, self).addNavigationTransition(targetViewState, transitionType, record)
 
     @classmethod
     def goTo(cls, **params):
