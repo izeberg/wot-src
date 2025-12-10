@@ -222,6 +222,10 @@
 						<value>1</value>
 					</property>
 					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
 						<name>decorType</name>
 						<value>0</value>
 					</property>
@@ -237,7 +241,7 @@
 				<config>
 					<property>
 						<name>Auto Start</name>
-						<value>0</value>
+						<value>1</value>
 					</property>
 					<property>
 						<name>Layers</name>
@@ -247,7 +251,7 @@
 									<property>
 										<name>Path</name>
 										<isAsset>true</isAsset>
-										<value>particles/3D_Customization/Cus_123_Aviation_Radar/cus_123_battleStart.seq</value>
+										<value>particles/3D_Customization/Cus_123_Aviation_Radar/Cus_123_Aviation_Radar_ssm.ssm</value>
 									</property>
 									<property>
 										<name>Properties</name>
@@ -276,7 +280,7 @@
 									</property>
 									<property>
 										<name>LayerName</name>
-										<value>battlestart</value>
+										<value>ssm</value>
 									</property>
 									<property>
 										<name>Weight</name>
@@ -288,61 +292,7 @@
 									</property>
 									<property>
 										<name>Auto Start</name>
-										<value>0</value>
-									</property>
-									<property>
-										<name>Graphics preset</name>
-										<value>2</value>
-									</property>
-								</object>
-							</item>
-							<item>
-								<object>
-									<property>
-										<name>Path</name>
-										<isAsset>true</isAsset>
-										<value>particles/3D_Customization/Cus_123_Aviation_Radar/cus_123_lightUp.seq</value>
-									</property>
-									<property>
-										<name>Properties</name>
-										<object>
-											<property>
-												<name>delay</name>
-												<value>0</value>
-											</property>
-											<property>
-												<name>speed</name>
-												<value>1</value>
-											</property>
-											<property>
-												<name>loop</name>
-												<value>0</value>
-											</property>
-											<property>
-												<name>loopCount</name>
-												<value>-1</value>
-											</property>
-										</object>
-									</property>
-									<property>
-										<name>Clip</name>
-										<value>&lt;Default Clip&gt;</value>
-									</property>
-									<property>
-										<name>LayerName</name>
-										<value>kill</value>
-									</property>
-									<property>
-										<name>Weight</name>
 										<value>1</value>
-									</property>
-									<property>
-										<name>LOD Scale</name>
-										<value>1</value>
-									</property>
-									<property>
-										<name>Auto Start</name>
-										<value>0</value>
 									</property>
 									<property>
 										<name>Graphics preset</name>
@@ -355,7 +305,7 @@
 					<property>
 						<name>Path</name>
 						<isAsset>true</isAsset>
-						<value>particles/3D_Customization/Cus_123_Aviation_Radar/cus_123_battleStart.seq</value>
+						<value>particles/3D_Customization/Cus_123_Aviation_Radar/Cus_123_Aviation_Radar_ssm.ssm</value>
 					</property>
 					<property>
 						<name>Delay</name>

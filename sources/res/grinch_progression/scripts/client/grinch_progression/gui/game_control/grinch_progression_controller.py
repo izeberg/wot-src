@@ -262,11 +262,11 @@ class GrinchProgressionController(IGrinchProgressionController):
         self.__setUpdateTimer()
 
     def __resetCompletedQuests(self):
-        completedQuests = getCompletedQuests()
+        completedQuests = getCompletedQuests() or set()
         resetedSet = set()
         for qID in completedQuests:
             quest = self.__eventsCache.getQuestByID(qID)
-            if quest.isCompleted():
+            if quest and quest.isCompleted():
                 resetedSet.add(qID)
 
         setCompletedQuests(resetedSet)
