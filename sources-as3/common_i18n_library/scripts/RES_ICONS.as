@@ -27747,6 +27747,12 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_NYMANDARINS:String = "../maps/icons/quests/bonuses/s600x450/nyMandarins.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_NYRACTIV:String = "../maps/icons/quests/bonuses/s600x450/nyractiv.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_NYRFOOD:String = "../maps/icons/quests/bonuses/s600x450/nyrfood.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_NYRFUN:String = "../maps/icons/quests/bonuses/s600x450/nyrfun.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_NY_2025_BIG:String = "../maps/icons/quests/bonuses/s600x450/ny_2025_big.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_NY_2025_SMALL:String = "../maps/icons/quests/bonuses/s600x450/ny_2025_small.png";

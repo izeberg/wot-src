@@ -536,7 +536,7 @@ class HangarHeader(HangarHeaderMeta, IGlobalListener, IEventBoardsListener):
                 return {'isVisible': True, 'quests': self.__getRankedQuestsToHeaderVO()}
             if self.__epicController.isEpicPrbActive():
                 return {'isVisible': True, 'quests': self.__getEpicQuestsToHeaderVO()}
-            if self.__comp7Controller.isComp7PrbActive():
+            if self.__funRandomCtrl.isFunRandomPrbActive():
                 return {'isVisible': True, 'quests': []}
             prbState = None if not self.prbDispatcher else self.prbDispatcher.getFunctionalState()
             isTraining = prbState.isInLegacy(constants.PREBATTLE_TYPE.TRAINING) if prbState is not None else False

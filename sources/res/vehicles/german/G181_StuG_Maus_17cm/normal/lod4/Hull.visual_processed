@@ -108,18 +108,18 @@
 			<primitiveGroup>
 				0
 				<material>
+					<fx>shaders/std_effects/PBS_tank.fx</fx>
+					<materialKind>0</materialKind>
 					<identifier>tank_proxy</identifier>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>vehicles/german/G181_StuG_Maus_17cm/StuG_Maus_17cm_proxy_AM.dds</Texture>
+					</property>
 					<property>
 						colorIdMap
 						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
-					<property>
-						metallicDetailMap
-						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
-					</property>
-					<collisionFlags>0</collisionFlags>
-					<materialKind>0</materialKind>
-					<fx>shaders/std_effects/PBS_tank.fx</fx>
 					<property>
 						metallicGlossMap
 						<Texture>vehicles/german/G181_StuG_Maus_17cm/StuG_Maus_17cm_proxy_GMM.dds</Texture>
@@ -129,12 +129,12 @@
 						<Texture>vehicles/german/G181_StuG_Maus_17cm/StuG_Maus_17cm_proxy_ANM.dds</Texture>
 					</property>
 					<property>
-						diffuseMap
-						<Texture>vehicles/german/G181_StuG_Maus_17cm/StuG_Maus_17cm_proxy_AM.dds</Texture>
-					</property>
-					<property>
 						excludeMaskAndAOMap
 						<Texture>vehicles/german/G181_StuG_Maus_17cm/StuG_Maus_17cm_proxy_AO.dds</Texture>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>0.004788 0.946163 -0.094898</groupOrigin>
