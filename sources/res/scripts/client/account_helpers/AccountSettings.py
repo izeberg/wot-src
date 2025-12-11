@@ -351,6 +351,7 @@ PERSONAL_MISSION_3 = 'PERSONAL_MISSION_3'
 HANGAR_VIEW_SETTINGS = 'hangarView'
 HANGAR_KEY_BINDINGS = 'hangarKeyBindings'
 OTG_EVENT_BANNER_ANIMATION_SHOWN = 'OTGEventBannerAnimationShown'
+GRINCH_PROGRESSION = 'grinch_progression_keys'
 
 class BattleMatters(object):
     BATTLE_MATTERS_SETTINGS = 'battleMattersSettings'
@@ -1600,7 +1601,7 @@ def _recursiveStep(defaultDict, savedDict, finalDict):
 
 class AccountSettings(object):
     onSettingsChanging = Event.Event()
-    version = 98
+    version = 99
     settingsCore = dependency.descriptor(ISettingsCore)
     __cache = {'login': None, 'section': None}
     __sessionSettings = {'login': None, 'section': None}
@@ -2541,6 +2542,15 @@ class AccountSettings(object):
                         keyUIFlagsSettings.write(NY_GIFT_MACHINE_HINT_VISIBLE, _pack(True))
                     if NY_NO_FRIENDS_PAGE_RESET_TIME in keyUIFlagsSettings.keys():
                         keyUIFlagsSettings.write(NY_NO_FRIENDS_PAGE_RESET_TIME, _pack(0))
+
+            if currVersion < 99:
+                for _, section in _filterAccountSection(ads):
+                    keyUIFlagsSettings = AccountSettings._readSection(section, KEY_UI_FLAGS)
+                    if GRINCH_PROGRESSION in keyUIFlagsSettings.keys():
+                        keyUIFlagsSettings.write(GRINCH_PROGRESSION, _pack({'grinch_completed_quests': set(), 
+                           'grinch_progression_hint_state': set(), 
+                           'grinch_progression_current_hint_state': None, 
+                           'grinch_current_vehicle': 0}))
 
             ads.writeInt('version', AccountSettings.version)
         return
