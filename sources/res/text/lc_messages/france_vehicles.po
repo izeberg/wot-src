@@ -443,6 +443,9 @@ msgstr "AMX 38原型1号车"
 msgid "Chassis_F13_AMX38_2"
 msgstr "AMX 38量产型"
 
+msgid "Chassis_F140_Fantome"
+msgstr "幻影"
+
 msgid "Chassis_F14_AMX40"
 msgstr "AMX 40"
 
@@ -1349,6 +1352,24 @@ msgstr "?empty?"
 msgid "F13_AMX38_short"
 msgstr "AMX 38"
 
+msgid "F140_Fantome"
+msgstr "幻影"
+
+msgid "F140_Fantome_descr"
+msgstr ""
+"1963年至1964年间，保时捷公司研发了一辆面向20世纪70年代的未来坦克方案，但最终未被采纳。后经克勒索-"
+"卢瓦尔公司改造，提议作为F系、D系乃至西方通用坦克。然而，因该坦克造价过高，计划被终止。"
+
+msgid "F140_Fantome_long_special"
+msgstr ""
+"幻影是一辆F系IX级中型坦克，延续了该系别的标志性特色，如良好的机动性和弹夹炮。但其独特之处在于自动液气悬挂装置，可使坦克获得更大的火炮俯仰角，从而提高在不规则地形上的作战效率。"
+
+msgid "F140_Fantome_short"
+msgstr "幻影"
+
+msgid "F140_Fantome_short_special"
+msgstr "弹夹炮与自动液气悬挂装置"
+
 msgid "F14_AMX40"
 msgstr "AMX 40"
 
@@ -2188,6 +2209,9 @@ msgstr "迈巴赫Mb. IV齐柏林x2"
 msgid "Moteur_EPC_version_S5"
 msgstr "E.P.C. S5型"
 
+msgid "Moteur_EPC_version_S5_Fantome"
+msgstr "E.P.C. S5型(幻影)"
+
 msgid "Moteur_E_P_C_version_4"
 msgstr "E.P.C. 4型"
 
@@ -2545,6 +2569,9 @@ msgstr "TRVP-13-A1"
 msgid "TRVP_13_A_2"
 msgstr "TRVP-13-A2"
 
+msgid "TRVP_13_A_Fantome"
+msgstr "TRVP-13-A(幻影)"
+
 msgid "TRVP_13_SH"
 msgstr "TRVP-13"
 
@@ -2702,6 +2729,9 @@ msgstr "FCM 36"
 
 msgid "Turret_1_F13_AMX38"
 msgstr "AMX 38"
+
+msgid "Turret_1_F140_Fantome"
+msgstr "幻影"
 
 msgid "Turret_1_F14_AMX40"
 msgstr "AMX 40"
@@ -3273,6 +3303,18 @@ msgstr "105mm F1炮"
 
 msgid "_105mm_obusier_mle_1950_105_AM"
 msgstr "105mm mle.50榴弹炮 (105 AM)"
+
+msgid "_110mm_CN_110_F1_Fantome"
+msgstr "110mm CN 110 F1炮(幻影)"
+
+msgid "_110mm_OCC_110_Fantome"
+msgstr "OCC-110(幻影)"
+
+msgid "_110mm_OE_110_Fantome"
+msgstr "OE-110(幻影)"
+
+msgid "_110mm_OPS_110_Fantome"
+msgstr "OPS-110(幻影)"
 
 msgid "_118mm_D_1507AS"
 msgstr "118mm D. 1507AS炮"

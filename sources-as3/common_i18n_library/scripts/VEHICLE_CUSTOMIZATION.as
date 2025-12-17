@@ -4373,6 +4373,8 @@ package
       
       public static const CAMOUFLAGE_CLANS_2D_2025_4_LABEL:String = "#vehicle_customization:camouflage/clans_2d_2025_4/label";
       
+      public static const CAMOUFLAGE_SURPRISE_TANK_LABEL:String = "#vehicle_customization:camouflage/surprise_tank/label";
+      
       public static const CAMOUFLAGE_BLACK_FRIDAY_2025_1_LABEL:String = "#vehicle_customization:camouflage/black_friday_2025_1/label";
       
       public static const CAMOUFLAGE_BLACK_FRIDAY_2025_2_LABEL:String = "#vehicle_customization:camouflage/black_friday_2025_2/label";
@@ -15324,6 +15326,12 @@ package
       public static const SPECIAL_STYLE_CLANS_2D_2025_4_DESC:String = "#vehicle_customization:special_style/clans_2d_2025_4_desc";
       
       public static const SPECIAL_STYLE_CLANS_2D_2025_4_DESC_LONG:String = "#vehicle_customization:special_style/clans_2d_2025_4_desc/long";
+      
+      public static const SPECIAL_STYLE_SURPRISE_TANK:String = "#vehicle_customization:special_style/surprise_tank";
+      
+      public static const SPECIAL_STYLE_SURPRISE_TANK_DESC:String = "#vehicle_customization:special_style/surprise_tank_desc";
+      
+      public static const SPECIAL_STYLE_SURPRISE_TANK_DESC_LONG:String = "#vehicle_customization:special_style/surprise_tank_desc/long";
       
       public static const SPECIAL_STYLE_BLACK_FRIDAY_2025_1:String = "#vehicle_customization:special_style/black_friday_2025_1";
       

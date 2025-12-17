@@ -75,9 +75,8 @@ package net.wg.gui.components.carousels
       
       override protected function updateData() : void
       {
-         var _loc1_:Boolean = false;
          super.updateData();
-         _loc1_ = initData.rolesSectionVisible;
+         var _loc1_:Boolean = initData.rolesSectionVisible;
          this.rolesContainer.visible = _loc1_;
          if(_loc1_)
          {

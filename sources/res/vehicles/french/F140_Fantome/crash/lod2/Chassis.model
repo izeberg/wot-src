@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/french/F140_Fantome/crash/lod2/Chassis</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/french/F140_Fantome/crash/lod3/Chassis</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.768712 -0.001017 -3.724256</min>
+		<max>1.768712 1.195919 3.877518</max>
+	</visibilityBox>
+</root>

@@ -827,6 +827,8 @@ package net.wg.data.constants.generated
       
       public static const FRANCE_F13_AMX38:String = "france-F13_AMX38";
       
+      public static const FRANCE_F140_FANTOME:String = "france-F140_Fantome";
+      
       public static const FRANCE_F14_AMX40:String = "france-F14_AMX40";
       
       public static const FRANCE_F15_AMX_12T:String = "france-F15_AMX_12t";

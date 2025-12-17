@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/french/F140_Fantome/crash/lod0/Hull</nodefullVisual>
+	<parent>vehicles/french/F140_Fantome/crash/lod1/Hull</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.940816 -0.917210 -3.762684</min>
+		<max>1.928886 0.615592 3.912353</max>
+	</visibilityBox>
+</root>
