@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/french/F134_Lorraine_120_Alby/crash/lod3/Gun_02</nodefullVisual>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.345540 -0.385222 -0.909077</min>
+		<max>0.368690 0.406738 7.559654</max>
+	</visibilityBox>
+	<parent>vehicles/french/F134_Lorraine_120_Alby/crash/lod4/Gun_02</parent>
+	<extent>192.000000</extent>
+</root>

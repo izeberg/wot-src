@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
 	<sm_artillery_strike_channel>
-		<DGRemovableDynGroupComponent>
+		<SMRemovableDynGroupComponent>
 			<server>
 				<events>onSMAbilitiesInterrupt onDeath onResurrect</events>
 			</server>
-		</DGRemovableDynGroupComponent>
+		</SMRemovableDynGroupComponent>
 		<SMAbilitiesInterruptComponent>
 			<server>
 				<immediately>false</immediately>
@@ -16,7 +16,7 @@
 				</rechargeDuration>
 			</server>
 		</SMAbilitiesInterruptComponent>
-		<DGSequencesComponent>
+		<SMSequencesComponent>
 			<client>
 				<sequences>
 					<item>
@@ -27,8 +27,8 @@
 					</item>
 				</sequences>
 			</client>
-		</DGSequencesComponent>
-		<DGSound3DComponent>
+		</SMSequencesComponent>
+		<SMSound3DComponent>
 			<client>
 				<soundEvents>
 					<item>
@@ -42,6 +42,6 @@
 					</item>
 				</soundEvents>
 			</client>
-		</DGSound3DComponent>
+		</SMSound3DComponent>
 	</sm_artillery_strike_channel>
 </root>

@@ -36,6 +36,12 @@
 				<!--BW_String-->
 			</invisibilityBonus>
 		</camouflageNet>
+		<deluxeCamouflageNet>
+			<invisibilityBonus>
+				0.125
+				<!--BW_String-->
+			</invisibilityBonus>
+		</deluxeCamouflageNet>
 		<additionalInvisibilityDevice>
 			<invisibilityBonus>
 				0.06 0.08
@@ -3268,28 +3274,6 @@
 							</anchorPosition>
 							<anchorDirection>0 0 1</anchorDirection>
 							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>insigniaOnGun</slotType>
-							<slotId>49000</slotId>
-							<rayStart>
-								0 -0.04 1.58
-								<!--BW_String-->
-							</rayStart>
-							<rayEnd>
-								0 -0.04 1.92
-								<!--BW_String-->
-							</rayEnd>
-							<rayUp>
-								0.06 0 0
-								<!--BW_String-->
-							</rayUp>
-							<applyToFabric>false</applyToFabric>
-							<size>
-								0.34
-								<!--BW_String-->
-							</size>
-							<isUVProportional>false</isUVProportional>
 						</slot>
 					</customizationSlots>
 					<customization>

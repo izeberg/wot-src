@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<extent>64.000000</extent>
+	<tank>true</tank>
+	<parent>content/3D_Customization/gun_slots/A191_gunsleeve_redhot/normal/lod2/attachment</parent>
+	<visibilityBox>
+		<min>-0.358704 -0.452748 -2.366102</min>
+		<max>0.343349 0.251575 1.103997</max>
+	</visibilityBox>
+	<nodefullVisual>content/3D_Customization/gun_slots/A191_gunsleeve_redhot/normal/lod1/attachment</nodefullVisual>
+</root>

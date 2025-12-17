@@ -20,7 +20,7 @@
 		<GameObject>
 			<name>127_bunkerCrash01_downedPlane_zero_01_trasser</name>
 			<UUID>3b5b612d-52ee-4e7e-bb18-a038b33f3dad</UUID>
-			<flags>8</flags>
+			<flags>0</flags>
 		</GameObject>
 		<GameObject>
 			<name>127_bunkerCrash01_downedPlane_bomber_01_sfx_engine</name>
@@ -260,6 +260,14 @@
 				<UUID>82bfaec6-38dc-4372-b678-8cb91f6ec1f0</UUID>
 				<flags>35</flags>
 				<config>
+					<property>
+						<name>activeLayer</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>speed</name>
+						<value>1</value>
+					</property>
 					<property>
 						<name>loop</name>
 						<value>0</value>
@@ -5667,6 +5675,10 @@
 							</item>
 						</collection>
 					</property>
+					<property>
+						<name>layers</name>
+						<collection/>
+					</property>
 				</config>
 			</component>
 		</ComponentPool>
@@ -6032,6 +6044,10 @@
 						<name>Cast Shadows</name>
 						<value>1</value>
 					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
+					</property>
 				</config>
 			</component>
 			<component>
@@ -6046,6 +6062,10 @@
 					<property>
 						<name>Cast Shadows</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
 					</property>
 				</config>
 			</component>

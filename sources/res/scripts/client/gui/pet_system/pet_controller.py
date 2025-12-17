@@ -1,6 +1,7 @@
 from __future__ import absolute_import
 import random, BigWorld, SoundGroups
 from adisp import adisp_process
+from arena_bonus_type_caps import ARENA_BONUS_TYPE_CAPS
 from chat_shared import SYS_MESSAGE_TYPE
 from frameworks.wulf import WindowLayer
 from gui.Scaleform.lobby_entry import getLobbyStateMachine
@@ -10,7 +11,7 @@ from gui.pet_system.pet_animation_helper import PetPrefabProxy, StoragePrefabPro
 from gui.shared import EVENT_BUS_SCOPE, events, g_eventBus
 from gui.pet_system.requester import INVALID_EVENT_ID, INVALID_PET_ID
 from messenger.proto.events import g_messengerEvents
-from skeletons.gui.game_control import IFadingController, IHangarLoadingController
+from skeletons.gui.game_control import IFadingController, IHangarLoadingController, IHangarGuiController
 from skeletons.gui.shared.utils import IHangarSpace
 from gui.pet_system.constants import PS_PDATA_KEYS
 from skeletons.gui.shared import IItemsCache
@@ -31,6 +32,7 @@ class PetSystemController(IGlobalListener, IPetSystemController):
     lobbyContext = dependency.descriptor(ILobbyContext)
     hangarSpace = dependency.descriptor(IHangarSpace)
     __hangarLoadingController = dependency.descriptor(IHangarLoadingController)
+    __hangarGuiCtrl = dependency.descriptor(IHangarGuiController)
     fadeManager = dependency.descriptor(IFadingController)
 
     def __init__(self):
@@ -48,7 +50,7 @@ class PetSystemController(IGlobalListener, IPetSystemController):
         self.lsmObserver = None
         self.__petInHangar = None
         self.__medalReceived = False
-        self.__isPetObjectPresenterOpen = False
+        self.__isPetObjectPresenterOpen = 0
         return
 
     def init(self):
@@ -85,7 +87,7 @@ class PetSystemController(IGlobalListener, IPetSystemController):
 
     @property
     def canInteractInHangar(self):
-        return self.__isPetObjectPresenterOpen
+        return bool(self.__isPetObjectPresenterOpen)
 
     @classmethod
     def getSystemConfig(cls):
@@ -268,6 +270,9 @@ class PetSystemController(IGlobalListener, IPetSystemController):
     def onLobbyInited(self, event):
         self.__addListeners()
 
+    def checkBonusCapsForPetBonus(self):
+        return self.__hangarGuiCtrl.dynamicEconomics.checkCurrentBonusCaps(ARENA_BONUS_TYPE_CAPS.PET_SYSTEM_BONUSES)
+
     def __showMedalAnimation(self, event):
         if not self.isEnabled:
             return
@@ -282,7 +287,7 @@ class PetSystemController(IGlobalListener, IPetSystemController):
 
     def onAccountBecomeNonPlayer(self):
         self.__removeListeners()
-        self.__isPetObjectPresenterOpen = False
+        self.__isPetObjectPresenterOpen = 0
         g_eventBus.removeListener(events.PetSystemEvent.PET_OBJECT_PRESENTER_LOADING, self.__onPetObjectPresenterLoading, scope=EVENT_BUS_SCOPE.LOBBY)
         g_eventBus.removeListener(events.PetSystemEvent.PET_OBJECT_PRESENTER_CLOSING, self.__onPetObjectPresenterClosing, scope=EVENT_BUS_SCOPE.LOBBY)
 
@@ -403,11 +408,11 @@ class PetSystemController(IGlobalListener, IPetSystemController):
             return self.__petInHangar
 
     def __onPetObjectPresenterLoading(self, _):
-        self.__isPetObjectPresenterOpen = True
+        self.__isPetObjectPresenterOpen += 1
         self.onUpdateCanInteractInHangar(self.canInteractInHangar)
 
     def __onPetObjectPresenterClosing(self, _):
-        self.__isPetObjectPresenterOpen = False
+        self.__isPetObjectPresenterOpen -= 1
         self.onUpdateCanInteractInHangar(self.canInteractInHangar)
 
     def __playSound(self, event):

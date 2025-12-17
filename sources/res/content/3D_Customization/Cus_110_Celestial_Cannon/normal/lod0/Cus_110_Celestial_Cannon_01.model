@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-0.510309 -0.010591 -0.688775</min>
+		<max>0.092035 0.347681 0.699067</max>
+	</visibilityBox>
+	<parent>content/3D_Customization/Cus_110_Celestial_Cannon/normal/lod1/Cus_110_Celestial_Cannon_01</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>content/3D_Customization/Cus_110_Celestial_Cannon/normal/lod0/Cus_110_Celestial_Cannon_01</nodefullVisual>
+	<tank>true</tank>
+</root>

@@ -1,5 +1,4 @@
 import BigWorld, CommandMapping
-from AutoShootGunController import getPlayerVehicleAutoShootGunController
 from auto_shoot_guns.auto_shoot_guns_common import BURST_VERIFYING_DELTA, BURST_CONFIRMATION_DELTA
 from debug_utils import LOG_WARNING
 from gui.battle_control.arena_info.interfaces import IAutoShootController
@@ -9,6 +8,8 @@ from helpers.CallbackDelayer import CallbackDelayer
 from math_common import isAlmostEqual
 from math_utils import clamp
 from shared_utils import findFirst
+from vehicles.mechanics.mechanic_constants import VehicleMechanic
+from vehicles.mechanics.mechanic_helpers import getPlayerVehicleMechanicComponent
 
 class AutoShootController(IAutoShootController, CallbackDelayer):
 
@@ -16,9 +17,9 @@ class AutoShootController(IAutoShootController, CallbackDelayer):
         self.clearCallbacks()
 
     def isBurstActive(self):
-        ctrl = getPlayerVehicleAutoShootGunController()
+        ctrl = getPlayerVehicleMechanicComponent(VehicleMechanic.AUTO_SHOOT_GUN)
         isBurstActive = self.hasDelayedCallback(self.__scheduledBurstVerification)
-        return isBurstActive or ctrl is not None and ctrl.isShooting()
+        return isBurstActive or ctrl is not None and ctrl.getComponentState().isShooting()
 
     def getControllerID(self):
         return BATTLE_CTRL_ID.AUTO_SHOOT_CTRL
@@ -32,13 +33,13 @@ class AutoShootController(IAutoShootController, CallbackDelayer):
         return CommandMapping.g_instance.isActive(CommandMapping.CMD_CM_SHOOT)
 
     def _sendBurstCancellation(self):
-        ctrl = getPlayerVehicleAutoShootGunController()
+        ctrl = getPlayerVehicleMechanicComponent(VehicleMechanic.AUTO_SHOOT_GUN)
         if ctrl is not None:
             ctrl.cell.deactivateShooting()
         return
 
     def _sendBurstConfirmation(self):
-        ctrl = getPlayerVehicleAutoShootGunController()
+        ctrl = getPlayerVehicleMechanicComponent(VehicleMechanic.AUTO_SHOOT_GUN)
         if ctrl is not None:
             ctrl.cell.activateShooting()
         return
@@ -108,7 +109,7 @@ class DevAutoShootController(AutoShootController):
         super(DevAutoShootController, self).stopControl()
 
     def processAutoShootDevCmd(self, command):
-        ctrl = getPlayerVehicleAutoShootGunController()
+        ctrl = getPlayerVehicleMechanicComponent(VehicleMechanic.AUTO_SHOOT_GUN)
         if command in self.__commandHandlers and ctrl is not None:
             self.__commandHandlers[command](ctrl)
         return
@@ -160,11 +161,11 @@ class DevAutoShootController(AutoShootController):
         self.__updateServerRate(desiredShootRate)
 
     def __tickRate(self):
-        ctrl = getPlayerVehicleAutoShootGunController()
+        ctrl = getPlayerVehicleMechanicComponent(VehicleMechanic.AUTO_SHOOT_GUN)
         if ctrl is None:
             return
         else:
-            currentRate = int(round(ctrl.getShotRatePerSecond() * 60.0))
+            currentRate = int(round(ctrl.getComponentState().getDefaultShotRatePerSecond() * 60.0))
             if isAlmostEqual(currentRate, self.__desiredRate, epsilon=0.5):
                 self.__desiredRateInited = True
                 return

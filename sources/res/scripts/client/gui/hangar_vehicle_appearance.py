@@ -123,6 +123,7 @@ class HangarVehicleAppearance(ScriptGameObject):
         return
 
     isDestroyed = property(lambda self: self.__isVehicleDestroyed)
+    isCompositionReady = property(lambda self: self.__isCompositionReady)
 
     def __init__(self, spaceId, vEntity):
         ScriptGameObject.__init__(self, vEntity.spaceID, 'HangarVehicleAppearance')
@@ -162,6 +163,7 @@ class HangarVehicleAppearance(ScriptGameObject):
         g_currentVehicle.onChanged += self.__onVehicleChanged
         self.customizationGameObjects = []
         self.onDecalsUpdated = Event.Event()
+        self.__isCompositionReady = False
         return
 
     def recreate(self, vDesc, vState=None, callback=None, outfit=None):
@@ -275,6 +277,9 @@ class HangarVehicleAppearance(ScriptGameObject):
     def computeFullVehicleLength(self):
         hullBB = Math.Matrix(self.__vEntity.model.getBoundsForPart(TankPartIndexes.HULL))
         return hullBB.applyVector(Math.Vector3(0.0, 0.0, 1.0)).length
+
+    def setCompositionReady(self, ready):
+        self.__isCompositionReady = ready
 
     def _getTurretYaw(self):
         return self.turretAndGunAngles.getTurretYaw()

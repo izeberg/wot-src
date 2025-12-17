@@ -1,3 +1,4 @@
+from __future__ import absolute_import, print_function
 import cPickle, zlib, math, os.path, datetime, ResMgr
 from debug_utils import LOG_WARNING, LOG_ERROR, LOG_CODEPOINT_WARNING
 from constants import ENABLE_DEBUG_DYNAMICS_INFO
@@ -124,7 +125,7 @@ class VehicleTelemetry(object):
         for snapshot in snapshots:
             time = snapshot[namesMap['time']] - self.refTime
             if time < 0:
-                print 'Nt:', snapshot[namesMap['time']], self.refTime
+                print('Nt:', snapshot[namesMap['time']], self.refTime)
             dist = snapshot[namesMap['path']] - self.refDist
             velocity = snapshot[namesMap['vel']]
             acceleration = snapshot[namesMap['acc']]

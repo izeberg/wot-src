@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.impl import backport
 from gui.impl.gen import R
 from gui.impl.gen.view_models.common.missions.bonuses.icon_bonus_model import IconBonusModel

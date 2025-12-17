@@ -19,7 +19,6 @@ package net.wg.gui.lobby.hangar
    import net.wg.gui.lobby.hangar.quests.IHeaderEntryPoint;
    import net.wg.gui.lobby.hangar.quests.IHeaderSecondaryWidget;
    import net.wg.gui.lobby.hangar.quests.LiveOpsWebEventsEntryPoint;
-   import net.wg.gui.lobby.hangar.quests.ResourceWellEntryPoint;
    import net.wg.gui.lobby.hangar.quests.SecondaryEntryPoint;
    import net.wg.gui.lobby.rankedBattles19.components.widget.RankedBattlesHangarWidget;
    import net.wg.infrastructure.base.meta.IHangarHeaderMeta;
@@ -341,8 +340,6 @@ package net.wg.gui.lobby.hangar
       {
          switch(param1)
          {
-            case HANGAR_ALIASES.RESOURCE_WELL_ENTRY_POINT:
-               return new ResourceWellEntryPoint();
             case HANGAR_ALIASES.BATTLE_MATTERS_ENTRY_POINT:
                return new BattleMattersEntryPoint();
             case HANGAR_ALIASES.LIVE_OPS_WEB_EVENTS_ENTRY_POINT:

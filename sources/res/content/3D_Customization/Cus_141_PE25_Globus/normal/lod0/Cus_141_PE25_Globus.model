@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.339269 -0.100000 -0.327728</min>
+		<max>0.301820 0.666488 0.367223</max>
+	</visibilityBox>
+	<parent>content/3D_Customization/Cus_141_PE25_Globus/normal/lod1/Cus_141_PE25_Globus</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>content/3D_Customization/Cus_141_PE25_Globus/normal/lod0/Cus_141_PE25_Globus</nodefullVisual>
+</root>

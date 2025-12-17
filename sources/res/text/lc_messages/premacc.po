@@ -231,54 +231,8 @@ msgstr "Родительский контроль"
 msgid "parentControlCard/infoPopover/link"
 msgstr "на портале"
 
-msgid "piggyBank/backBtnAddLabel"
-msgstr "К СТАТУСУ АККАУНТА"
-
-msgid "piggyBank/moreInfoBtn"
-msgstr "Подробнее"
-
-msgid "piggyBank/premAccProlongBtn"
-msgstr "Продлить премиум"
-
-msgid "piggyBank/premAccUnactiveMsg"
-msgstr ""
-"Хранилище кредитов пополняется только при активном Танковом премиум "
-"аккаунте."
-
-msgid "piggyBank/progressBarComplited"
-msgstr "Хранилище кредитов заполнено"
-
-msgid "piggyBank/reserveBank/description"
-msgstr ""
-"Проводите бои, чтобы наполнить хранилище кредитов. Каждые {period} д "
-"хранилище открывается и накопленные кредиты начисляются на ваш счёт. "
-"Хранилище вмещает в себя до {maxAmount}."
-
 msgid "piggyBank/reserveBank/title"
 msgstr "Хранилище кредитов"
-
-msgid "piggyBank/reserveBankPremUnsearched/description"
-msgstr ""
-"Пока активен Танковый премиум аккаунт, в хранилище кредитов накапливаются "
-"дополнительные {percDisc}% от кредитов, заработанных в боях. Максимальный "
-"объём хранилища — {maxAmount}. Каждые {period} д в установленное время "
-"хранилище открывается, и все накопленные кредиты начисляются на ваш аккаунт,"
-" даже если премиум уже закончился."
-
-msgid "piggyBank/reserveBankPremUnsearched/title"
-msgstr "Получайте до {maxAmount} каждые {period} д."
-
-msgid "piggyBank/timeLeft/days"
-msgstr "{day} д {hour} ч"
-
-msgid "piggyBank/timeLeft/hours"
-msgstr "{hour} ч {min} мин"
-
-msgid "piggyBank/timeLeft/lessMin"
-msgstr "1 мин"
-
-msgid "piggyBank/timeToOpenBankMsg/title"
-msgstr "До открытия хранилища кредитов:"
 
 msgid "piggyBankCard/timeLeft/days"
 msgstr "%(day)s д"

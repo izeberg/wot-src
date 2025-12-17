@@ -2568,7 +2568,7 @@ msgid "rentConfirmation/cancel"
 msgstr "Отменить"
 
 msgid "rentConfirmation/event"
-msgstr "для режима «%(eventName)s»"
+msgstr "для режима %(eventName)s"
 
 msgid "rentConfirmation/message"
 msgstr "Арендовать машину %(name)s %(event)s за %(price)s?"

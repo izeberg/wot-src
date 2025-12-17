@@ -17,8 +17,6 @@ _LOW_PRIORITY_WINDOWS = (
 registerLowPriorityWulfWindows([R.views.lobby.offers.OfferBannerWindow()])
 
 class FullscreenManager(IFullscreenManager):
-    __slots__ = ('__gui', '__notificationMgr', '__isEnabled', '__weakref__', '__observer',
-                 '__gameplay')
     __gui = dependency.descriptor(IGuiLoader)
     __gameplay = dependency.descriptor(IGameplayLogic)
     __notificationMgr = dependency.descriptor(INotificationWindowController)
@@ -94,7 +92,6 @@ class FullscreenManager(IFullscreenManager):
 
 
 class _LobbyStateObserver(StateIdsObserver):
-    __slots__ = ('__manager', '__gui')
     __gui = dependency.descriptor(IGuiLoader)
 
     def __init__(self, manager):

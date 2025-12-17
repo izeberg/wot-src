@@ -333,6 +333,10 @@
 				</params>
 			</block>
 			<block>
+				<class>ActivateGameObject</class>
+				<id>ActivateGameObject_25</id>
+			</block>
+			<block>
 				<class>SetVariable</class>
 				<id>SetVariable_7</id>
 				<buddy>Variable_7</buddy>
@@ -373,6 +377,27 @@
 				</params>
 			</block>
 			<block>
+				<class>DeactivateGameObject</class>
+				<id>DeactivateGameObject_3</id>
+			</block>
+			<block>
+				<class>Timer</class>
+				<id>Timer_3</id>
+				<params>
+					<param>
+						1
+						<name>Timer Count</name>
+						<type>IntT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>time0</name>
+						<const>\0.010000\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
 				<class>FindFirstNode</class>
 				<id>FindFirstNode_1</id>
 				<slots>
@@ -411,6 +436,18 @@
 			<block>
 				<class>GetVehicleGameObject</class>
 				<id>GetVehicleGameObject_2</id>
+			</block>
+			<block>
+				<class>GetVariable</class>
+				<id>GetVariable_22</id>
+				<buddy>Variable_9</buddy>
+				<params>
+					<param>
+						GameObjectT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
 			</block>
 		</blocks>
 		<connections>
@@ -523,6 +560,18 @@
 				<output>value</output>
 			</connection>
 			<connection>
+				<from>SetVariable_10</from>
+				<input>in</input>
+				<to>ActivateGameObject_25</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>GetVariable_22</from>
+				<input>gameObject</input>
+				<to>ActivateGameObject_25</to>
+				<output>value</output>
+			</connection>
+			<connection>
 				<from>SetVariable_9</from>
 				<input>input</input>
 				<to>SetVariable_7</to>
@@ -557,6 +606,24 @@
 				<input>value</input>
 				<to>SetVariable_9</to>
 				<output>node</output>
+			</connection>
+			<connection>
+				<from>Timer_3</from>
+				<input>in</input>
+				<to>DeactivateGameObject_3</to>
+				<output>event0</output>
+			</connection>
+			<connection>
+				<from>GetVariable_22</from>
+				<input>gameObject</input>
+				<to>DeactivateGameObject_3</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>ActivateGameObject_25</from>
+				<input>windup</input>
+				<to>Timer_3</to>
+				<output>out</output>
 			</connection>
 			<connection>
 				<from>GetVehicleAppearanceGameObject_1</from>

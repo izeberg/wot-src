@@ -258,6 +258,13 @@ class EventsCache(IEventsCache):
 
         return self._getQuests(userFilterFunc)
 
+    def getUngroupedBasicQuestByID(self, qID):
+        data = self.__getQuestsData()
+        if qID not in data:
+            return None
+        else:
+            return self._makeQuest(qID, data[qID])
+
     def getActiveQuests(self, filterFunc=None):
         filterFunc = filterFunc or (lambda a: True)
         isPremiumQuestsEnable = self.lobbyContext.getServerSettings().getPremQuestsConfig().get('enabled', False)

@@ -39,6 +39,12 @@
 				<!--BW_String-->
 			</invisibilityBonus>
 		</camouflageNet>
+		<deluxeCamouflageNet>
+			<invisibilityBonus>
+				0.075
+				<!--BW_String-->
+			</invisibilityBonus>
+		</deluxeCamouflageNet>
 		<additionalInvisibilityDevice>
 			<invisibilityBonus>
 				0.03 0.04
@@ -126,6 +132,11 @@
 					<destroyed>vehicles/chinese/Ch48_BZ_75/_skins/Ch48_BZ_75_BXI_3DSt/crash/lod0/Hull.model</destroyed>
 					<exploded>vehicles/chinese/Ch48_BZ_75/_skins/Ch48_BZ_75_BXI_3DSt/crash/lod0/Hull.model</exploded>
 				</Ch48_BZ_75_BXI_3DSt>
+				<Ch48_BZ_75_HO26_3Dst>
+					<undamaged>vehicles/chinese/Ch48_BZ_75/_skins/Ch48_BZ_75_HO26_3Dst/normal/lod0/Hull.model</undamaged>
+					<destroyed>vehicles/chinese/Ch48_BZ_75/_skins/Ch48_BZ_75_HO26_3Dst/crash/lod0/Hull.model</destroyed>
+					<exploded>vehicles/chinese/Ch48_BZ_75/_skins/Ch48_BZ_75_HO26_3Dst/crash/lod0/Hull.model</exploded>
+				</Ch48_BZ_75_HO26_3Dst>
 			</sets>
 		</models>
 		<swinging>
@@ -1597,6 +1608,47 @@
 				</anchorShift>
 			</slot>
 			<slot>
+				<slotType>projectionDecal</slotType>
+				<slotId>15070</slotId>
+				<position>
+					-0.643246 1.154 2.79526
+					<!--BW_String-->
+				</position>
+				<rotation>
+					0.486305 -0.74729 3.01383
+					<!--BW_String-->
+				</rotation>
+				<scale>
+					0.392538 0.2 0.392538
+					<!--BW_String-->
+				</scale>
+				<tags>formfactor_square</tags>
+				<compatibleModels>Ch48_BZ_75_HO26_3Dst</compatibleModels>
+				<showOn>16</showOn>
+				<clipAngle>0.875614</clipAngle>
+				<anchorShift>
+					0.11
+					<!--BW_String-->
+				</anchorShift>
+			</slot>
+			<slot>
+				<slotType>projectionDecal</slotType>
+				<slotId>15071</slotId>
+				<position>
+					0.744179 1.47502 -2.80518
+					<!--BW_String-->
+				</position>
+				<rotation>
+					3.13985 -0.000005 -0.001067
+					<!--BW_String-->
+				</rotation>
+				<scale>0.582829 0.174402 0.582836</scale>
+				<tags>formfactor_square</tags>
+				<compatibleModels>Ch48_BZ_75_HO26_3Dst</compatibleModels>
+				<showOn>16</showOn>
+				<anchorShift>0.087114</anchorShift>
+			</slot>
+			<slot>
 				<slotType>attachment</slotType>
 				<slotId>18000</slotId>
 				<position>0 0 0</position>
@@ -1717,6 +1769,11 @@
 						<destroyed>vehicles/chinese/Ch48_BZ_75/_skins/Ch48_BZ_75_BXI_3DSt/crash/lod0/Chassis.model</destroyed>
 						<exploded>vehicles/chinese/Ch48_BZ_75/_skins/Ch48_BZ_75_BXI_3DSt/crash/lod0/Chassis.model</exploded>
 					</Ch48_BZ_75_BXI_3DSt>
+					<Ch48_BZ_75_HO26_3Dst>
+						<undamaged>vehicles/chinese/Ch48_BZ_75/_skins/Ch48_BZ_75_HO26_3Dst/normal/lod0/Chassis.model</undamaged>
+						<destroyed>vehicles/chinese/Ch48_BZ_75/_skins/Ch48_BZ_75_HO26_3Dst/crash/lod0/Chassis.model</destroyed>
+						<exploded>vehicles/chinese/Ch48_BZ_75/_skins/Ch48_BZ_75_HO26_3Dst/crash/lod0/Chassis.model</exploded>
+					</Ch48_BZ_75_HO26_3Dst>
 				</sets>
 			</models>
 			<traces>
@@ -3885,6 +3942,27 @@
 								<!--BW_String-->
 							</size>
 						</slot>
+						<slot>
+							<slotType>insigniaOnGun</slotType>
+							<slotId>49002</slotId>
+							<compatibleModels>Ch48_BZ_75_HO26_3Dst</compatibleModels>
+							<rayStart>
+								0 0 1.69338
+								<!--BW_String-->
+							</rayStart>
+							<rayEnd>
+								0 0 2.15338
+								<!--BW_String-->
+							</rayEnd>
+							<rayUp>
+								0.16 0 0
+								<!--BW_String-->
+							</rayUp>
+							<size>
+								0.75
+								<!--BW_String-->
+							</size>
+						</slot>
 					</customizationSlots>
 					<customization>
 						<customizableVehicleAreas>
@@ -3902,6 +3980,11 @@
 								<destroyed>vehicles/chinese/Ch48_BZ_75/_skins/Ch48_BZ_75_BXI_3DSt/crash/lod0/Gun_02.model</destroyed>
 								<exploded>vehicles/chinese/Ch48_BZ_75/_skins/Ch48_BZ_75_BXI_3DSt/crash/lod0/Gun_02.model</exploded>
 							</Ch48_BZ_75_BXI_3DSt>
+							<Ch48_BZ_75_HO26_3Dst>
+								<undamaged>vehicles/chinese/Ch48_BZ_75/_skins/Ch48_BZ_75_HO26_3Dst/normal/lod0/Gun_02.model</undamaged>
+								<destroyed>vehicles/chinese/Ch48_BZ_75/_skins/Ch48_BZ_75_HO26_3Dst/crash/lod0/Gun_02.model</destroyed>
+								<exploded>vehicles/chinese/Ch48_BZ_75/_skins/Ch48_BZ_75_HO26_3Dst/crash/lod0/Gun_02.model</exploded>
+							</Ch48_BZ_75_HO26_3Dst>
 						</sets>
 					</models>
 					<hitTester>
@@ -3925,6 +4008,11 @@
 						<destroyed>vehicles/chinese/Ch48_BZ_75/_skins/Ch48_BZ_75_BXI_3DSt/crash/lod0/Turret_01.model</destroyed>
 						<exploded>vehicles/chinese/Ch48_BZ_75/_skins/Ch48_BZ_75_BXI_3DSt/crash/lod0/Turret_01.model</exploded>
 					</Ch48_BZ_75_BXI_3DSt>
+					<Ch48_BZ_75_HO26_3Dst>
+						<undamaged>vehicles/chinese/Ch48_BZ_75/_skins/Ch48_BZ_75_HO26_3Dst/normal/lod0/Turret_01.model</undamaged>
+						<destroyed>vehicles/chinese/Ch48_BZ_75/_skins/Ch48_BZ_75_HO26_3Dst/crash/lod0/Turret_01.model</destroyed>
+						<exploded>vehicles/chinese/Ch48_BZ_75/_skins/Ch48_BZ_75_HO26_3Dst/crash/lod0/Turret_01.model</exploded>
+					</Ch48_BZ_75_HO26_3Dst>
 				</sets>
 			</models>
 			<hitTester>
@@ -5019,6 +5107,99 @@
 					</anchorShift>
 				</slot>
 				<slot>
+					<slotType>projectionDecal</slotType>
+					<slotId>35044</slotId>
+					<position>
+						-1.38747 1.76379 1.2056
+						<!--BW_String-->
+					</position>
+					<rotation>
+						1.5878 0.497729 -1.07778
+						<!--BW_String-->
+					</rotation>
+					<scale>
+						0.500787 0.2 0.500788
+						<!--BW_String-->
+					</scale>
+					<tags>formfactor_square</tags>
+					<compatibleModels>Ch48_BZ_75_HO26_3Dst</compatibleModels>
+					<showOn>256</showOn>
+					<clipAngle>0.735322</clipAngle>
+					<anchorShift>
+						-0.01
+						<!--BW_String-->
+					</anchorShift>
+				</slot>
+				<slot>
+					<slotType>projectionDecal</slotType>
+					<slotId>35045</slotId>
+					<position>
+						1.38558 1.77413 1.5852
+						<!--BW_String-->
+					</position>
+					<rotation>
+						1.58779 -0.496709 1.07872
+						<!--BW_String-->
+					</rotation>
+					<scale>0.285044 0.215073 0.285045</scale>
+					<tags>formfactor_square</tags>
+					<compatibleModels>Ch48_BZ_75_HO26_3Dst</compatibleModels>
+					<showOn>256</showOn>
+					<clipAngle>0.735322</clipAngle>
+					<anchorShift>
+						-0.01
+						<!--BW_String-->
+					</anchorShift>
+				</slot>
+				<slot>
+					<slotType>projectionDecal</slotType>
+					<slotId>35046</slotId>
+					<tags>formfactor_square</tags>
+					<compatibleModels>Ch48_BZ_75_HO26_3Dst</compatibleModels>
+					<position>
+						-0.00061 2.24245 0.798115
+						<!--BW_String-->
+					</position>
+					<rotation>
+						0.075549 0.000748 3.1405
+						<!--BW_String-->
+					</rotation>
+					<scale>0.635451 0.190147 0.635451</scale>
+					<showOn>256</showOn>
+					<clipAngle>
+						0.46913
+						<!--BW_String-->
+					</clipAngle>
+					<anchorShift>
+						0.08
+						<!--BW_String-->
+					</anchorShift>
+				</slot>
+				<slot>
+					<slotType>projectionDecal</slotType>
+					<slotId>35047</slotId>
+					<tags>formfactor_square</tags>
+					<compatibleModels>Ch48_BZ_75_HO26_3Dst</compatibleModels>
+					<position>
+						0.475472 2.16945 -0.791755
+						<!--BW_String-->
+					</position>
+					<rotation>
+						3.04227 -0.000003 -0.002635
+						<!--BW_String-->
+					</rotation>
+					<scale>0.670514 0.200638 0.670513</scale>
+					<showOn>256</showOn>
+					<clipAngle>
+						0.46913
+						<!--BW_String-->
+					</clipAngle>
+					<anchorShift>
+						0.04
+						<!--BW_String-->
+					</anchorShift>
+				</slot>
+				<slot>
 					<slotType>attachment</slotType>
 					<slotId>38000</slotId>
 					<position>-0.127085 0.971897 0.416773</position>
@@ -5192,6 +5373,9 @@
 			<Ch48_BZ_75_BXI_3DSt>
 				<mechanicEffects>particles/Tank/customization/Ch48_BZ_75_BXI_3DSt/Ch48_BZ_75_BXI_3DSt_empty.prefab</mechanicEffects>
 			</Ch48_BZ_75_BXI_3DSt>
+			<Ch48_BZ_75_HO26_3Dst>
+				<mechanicEffects>particles/Tank/rocket_accelerator/Ch48_BZ_75_Rocket.prefab</mechanicEffects>
+			</Ch48_BZ_75_HO26_3Dst>
 		</sets>
 	</prefabs>
 	<emblems>

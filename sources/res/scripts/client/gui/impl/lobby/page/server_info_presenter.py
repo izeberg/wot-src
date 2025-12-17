@@ -1,9 +1,11 @@
 from __future__ import absolute_import
-from gui.impl.gen.view_models.views.lobby.page.footer.server_info_model import ServerInfoModel, PingStatus
+from gui.impl.gen.view_models.views.lobby.page.footer.server_info_model import ServerInfoModel, PingStatus, ColorBlindMode
 from gui.impl.pub.view_component import ViewComponent
 from helpers import dependency
 from predefined_hosts import g_preDefinedHosts, PING_STATUSES
 from skeletons.connection_mgr import IConnectionManager
+from skeletons.account_helpers.settings_core import ISettingsCore
+from account_helpers.settings_core import settings_constants
 _GUI_PING_STATUS = {PING_STATUSES.UNDEFINED: PingStatus.REQUESTED, 
    PING_STATUSES.HIGH: PingStatus.HIGH, 
    PING_STATUSES.NORM: PingStatus.NORM, 
@@ -12,6 +14,7 @@ _GUI_PING_STATUS = {PING_STATUSES.UNDEFINED: PingStatus.REQUESTED,
 
 class ServerInfoPresenter(ViewComponent[ServerInfoModel]):
     __connectionMgr = dependency.descriptor(IConnectionManager)
+    __settingsCore = dependency.descriptor(ISettingsCore)
 
     def __init__(self):
         super(ServerInfoPresenter, self).__init__(model=ServerInfoModel)
@@ -25,10 +28,20 @@ class ServerInfoPresenter(ViewComponent[ServerInfoModel]):
         g_preDefinedHosts.requestPing()
         self.__updateModel()
 
+    def _getColorBlindMode(self):
+        if self.__settingsCore.getSetting(settings_constants.GRAPHICS.COLOR_BLIND):
+            return ColorBlindMode.PROTANOPIA
+        return ColorBlindMode.DISABLED
+
+    def _setColorblindSettings(self, *args):
+        self.viewModel.setColorBlind(self._getColorBlindMode())
+
     def _getEvents(self):
         return (
          (
-          g_preDefinedHosts.onPingPerformed, self.__onServersUpdate),)
+          g_preDefinedHosts.onPingPerformed, self.__onServersUpdate),
+         (
+          self.__settingsCore.onSettingsChanged, self._setColorblindSettings))
 
     def __onServersUpdate(self, _):
         self.__updateModel()
@@ -39,3 +52,4 @@ class ServerInfoPresenter(ViewComponent[ServerInfoModel]):
             model.setServerName(self.__connectionMgr.serverUserNameShort)
             pingStatus = _GUI_PING_STATUS[pingData.status]
             model.setStatus(pingStatus)
+            model.setColorBlind(self._getColorBlindMode())

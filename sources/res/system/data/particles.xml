@@ -282,8 +282,6 @@
 		<fn_effect_bin>particles/3D_Customization/Cus_101_WT_Container/Cus_101_WT_Container_idle.eff</fn_effect_bin>
 		<fn_effect_bin>particles/3D_Customization/Cus_99_WT_Machinegun/cus_99_wt_machinegun_shot.eff</fn_effect_bin>
 		<fn_effect_bin>particles/3D_Customization/Cus_97_WT_Electriccontainer/Cus_97_WT_Electriccontainer_Close.eff</fn_effect_bin>
-		<fn_effect_bin>particles/3D_Customization/Cus_138_BP18_Locker/Cus_138_BP18_Locker_dust.eff</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_138_BP18_Locker/Cus_138_BP18_Locker_dust.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/tank/rocket_accelerator/idle_fire_big01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Tank/rocket_accelerator/idle_fire_big01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/destruction/bc_25t_extendedammo_explosion.eff</fn_effect_bin>
@@ -2011,156 +2009,186 @@
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/armorHit_AP_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/armorHit_AP_2_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/armorHit_AP_2_6.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/auto_shoot/hits/armorHit_AP_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/armorHit_AP_CR_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/armorHit_AP_CR_1_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/armorHit_AP_CR_1_6.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/armorHit_AP_CR_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/armorHit_AP_CR_2_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/armorHit_AP_CR_2_6.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/auto_shoot/hits/armorHit_AP_CR_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/blacksandHit_AP_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/blacksandHit_AP_1_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/blacksandHit_AP_1_6.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/blacksandHit_AP_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/blacksandHit_AP_2_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/blacksandHit_AP_2_6.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/auto_shoot/hits/blacksandHit_AP_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/blacksandHit_AP_CR_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/blacksandHit_AP_CR_1_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/blacksandHit_AP_CR_1_6.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/blacksandHit_AP_CR_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/blacksandHit_AP_CR_2_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/blacksandHit_AP_CR_2_6.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/auto_shoot/hits/blacksandHit_AP_CR_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/dirtHit_AP_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/dirtHit_AP_1_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/dirtHit_AP_1_6.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/dirtHit_AP_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/dirtHit_AP_2_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/dirtHit_AP_2_6.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/auto_shoot/hits/dirtHit_AP_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/dirtHit_AP_CR_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/dirtHit_AP_CR_1_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/dirtHit_AP_CR_1_6.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/dirtHit_AP_CR_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/dirtHit_AP_CR_2_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/dirtHit_AP_CR_2_6.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/auto_shoot/hits/dirtHit_AP_CR_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/groundHit_AP_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/groundHit_AP_1_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/groundHit_AP_1_6.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/groundHit_AP_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/groundHit_AP_2_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/groundHit_AP_2_6.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/auto_shoot/hits/groundHit_AP_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/groundHit_AP_CR_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/groundHit_AP_CR_1_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/groundHit_AP_CR_1_6.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/groundHit_AP_CR_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/groundHit_AP_CR_2_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/groundHit_AP_CR_2_6.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/auto_shoot/hits/groundHit_AP_CR_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/oilHit_AP_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/oilHit_AP_1_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/oilHit_AP_1_6.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/oilHit_AP_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/oilHit_AP_2_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/oilHit_AP_2_6.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/auto_shoot/hits/oilHit_AP_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/oilHit_AP_CR_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/oilHit_AP_CR_1_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/oilHit_AP_CR_1_6.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/oilHit_AP_CR_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/oilHit_AP_CR_2_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/oilHit_AP_CR_2_6.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/auto_shoot/hits/oilHit_AP_CR_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/sandHit_AP_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/sandHit_AP_1_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/sandHit_AP_1_6.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/sandHit_AP_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/sandHit_AP_2_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/sandHit_AP_2_6.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/auto_shoot/hits/sandHit_AP_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/sandHit_AP_CR_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/sandHit_AP_CR_1_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/sandHit_AP_CR_1_6.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/sandHit_AP_CR_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/sandHit_AP_CR_2_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/sandHit_AP_CR_2_6.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/auto_shoot/hits/sandHit_AP_CR_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/shellFall_AP_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/shellFall_AP_1_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/shellFall_AP_1_6.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/shellFall_AP_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/shellFall_AP_2_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/shellFall_AP_2_6.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/auto_shoot/hits/ShellFall_AP_3.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/auto_shoot/hits/shellFall_AP_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/shellFall_AP_CR_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/shellFall_AP_CR_1_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/shellFall_AP_CR_1_6.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/shellFall_AP_CR_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/shellFall_AP_CR_2_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/shellFall_AP_CR_2_6.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/auto_shoot/hits/shellFall_AP_CR_3.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/auto_shoot/hits/ShellFall_AP_CR_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/snowHit_AP_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/snowHit_AP_1_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/snowHit_AP_1_6.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/snowHit_AP_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/snowHit_AP_2_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/snowHit_AP_2_6.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/auto_shoot/hits/snowHit_AP_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/snowHit_AP_CR_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/snowHit_AP_CR_1_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/snowHit_AP_CR_1_6.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/snowHit_AP_CR_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/snowHit_AP_CR_2_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/snowHit_AP_CR_2_6.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/auto_shoot/hits/snowHit_AP_CR_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/stoneHit_AP_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/stoneHit_AP_1_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/stoneHit_AP_1_6.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/stoneHit_AP_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/stoneHit_AP_2_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/stoneHit_AP_2_6.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/auto_shoot/hits/stoneHit_AP_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/stoneHit_AP_CR_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/stoneHit_AP_CR_1_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/stoneHit_AP_CR_1_6.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/stoneHit_AP_CR_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/stoneHit_AP_CR_2_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/stoneHit_AP_CR_2_6.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/auto_shoot/hits/stoneHit_AP_CR_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/trace_AP_20.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/trace_AP_20_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/trace_AP_20_6.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/trace_AP_50.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/trace_AP_50_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/trace_AP_50_6.eff</fn_effect_bin>
+		<fn_effect_bin>particles/tank/auto_shoot/hits/trace_ap_90.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/trace_AP_CR_20.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/trace_AP_CR_20_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/trace_AP_CR_20_6.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/trace_AP_CR_50.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/trace_AP_CR_50_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/trace_AP_CR_50_6.eff</fn_effect_bin>
+		<fn_effect_bin>particles/tank/auto_shoot/hits/trace_AP_CR_90.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/waterHit_AP_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/waterHit_AP_1_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/waterHit_AP_1_6.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/waterHit_AP_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/waterHit_AP_2_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/waterHit_AP_2_6.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/auto_shoot/hits/waterHit_AP_3.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/auto_shoot/hits/WaterHit_AP_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/waterHit_AP_CR_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/waterHit_AP_CR_1_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/waterHit_AP_CR_1_6.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/waterHit_AP_CR_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/waterHit_AP_CR_2_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/waterHit_AP_CR_2_6.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/auto_shoot/hits/waterHit_AP_CR_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/waterHit_shallow_AP_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/waterHit_shallow_AP_1_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/waterHit_shallow_AP_1_6.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/waterHit_shallow_AP_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/waterHit_shallow_AP_2_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/waterHit_shallow_AP_2_6.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/auto_shoot/hits/WaterHit_shallow_AP_3.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/auto_shoot/hits/waterHit_shallow_AP_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/waterHit_shallow_AP_CR_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/waterHit_shallow_AP_CR_1_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/waterHit_shallow_AP_CR_1_6.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/waterHit_shallow_AP_CR_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/waterHit_shallow_AP_CR_2_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/waterHit_shallow_AP_CR_2_6.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/auto_shoot/hits/waterHit_shallow_AP_CR_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/woodHit_AP_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/woodHit_AP_1_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/woodHit_AP_1_6.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/woodHit_AP_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/woodHit_AP_2_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/woodHit_AP_2_6.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/auto_shoot/hits/woodHit_AP_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/woodHit_AP_CR_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/woodHit_AP_CR_1_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/woodHit_AP_CR_1_6.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/woodHit_AP_CR_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/woodHit_AP_CR_2_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/woodHit_AP_CR_2_6.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/auto_shoot/hits/woodHit_AP_CR_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/destruction/burnup_domination_large.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/destruction/burnup_large.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/destruction/burnup_medium.eff</fn_effect_bin>
@@ -3144,6 +3172,27 @@
 		<fn_effect_bin>particles/Tank/auto_shoot/shots/shot_50mb.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/shots/shot_50mb_end.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/shots/shot_50mb_start.eff</fn_effect_bin>
+		<fn_effect_bin>particles/tank/rocket_accelerator/idle_rocket_ptz78_merged.eff</fn_effect_bin>
+		<fn_effect_bin>particles/tank/rocket_accelerator/idle_rocket_ptz78.eff</fn_effect_bin>
+		<fn_effect_bin>particles/tank/rocket_accelerator/end_rocket_ptz78.eff</fn_effect_bin>
+		<fn_effect_bin>particles/tank/rocket_accelerator/fail_smoke_ptz78.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/auto_shoot/shots/gw_90_ground_start.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/auto_shoot/shots/gw_90_sand_start.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/auto_shoot/shots/gw_90_snow_start.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/auto_shoot/shots/gw_90_stone_start.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/auto_shoot/shots/gw_90_water_start.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/auto_shoot/shots/gw_50_ground_start.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/auto_shoot/shots/gw_50_sand_start.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/auto_shoot/shots/gw_50_snow_start.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/auto_shoot/shots/gw_50_stone_start.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/auto_shoot/shots/shot_90_start.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/auto_shoot/shots/shot_50_start.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/mechanics/heatmech_ac_sparks_onetime.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/mechanics/heatmech_ac_sparks_continuous.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/mechanics/heatmech_ac_smoke.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/mechanics/heatmech_ac_distortion.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/mechanics/heatmech_ac_smoke_gun.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/mechanics/coolingmech_smoke_gun.eff</fn_effect_bin>
 		<fn_effect_bin>particles/tank/customization/A158_T832_BX_T_3DSt/A158_T832_BX_T_3DSt_eye_glow.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/customization/A83_T110E4_Dl_22_3Dst/A83_T110E4_Dl_22_3Dst_brazier.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/customization/GB133_Charioteer_MkVII_HBP_3DSt/GB133_Charioteer_MkVII_HBP_3DSt_smoke.eff</fn_effect_bin>
@@ -3222,6 +3271,27 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/shots/shot_50mb.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/shots/shot_50mb_end.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/shots/shot_50mb_start.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/rocket_accelerator/idle_rocket_ptz78_merged.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/rocket_accelerator/idle_rocket_ptz78.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/rocket_accelerator/end_rocket_ptz78.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/rocket_accelerator/fail_smoke_ptz78.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/shots/gw_90_ground_start.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/shots/gw_90_sand_start.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/shots/gw_90_snow_start.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/shots/gw_90_stone_start.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/shots/gw_90_water_start.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/shots/gw_50_ground_start.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/shots/gw_50_sand_start.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/shots/gw_50_snow_start.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/shots/gw_50_stone_start.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/shots/shot_90_start.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/shots/shot_50_start.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/mechanics/heatmech_ac_sparks_onetime.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/mechanics/heatmech_ac_sparks_continuous.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/mechanics/heatmech_ac_smoke.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/mechanics/heatmech_ac_distortion.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/mechanics/heatmech_ac_smoke_gun.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/mechanics/coolingmech_smoke_gun.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/customization/Ch62_BZ_75_M/Ch62_hull_hit.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/customization/Ch62_BZ_75_M/Ch62_steam.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/customization/Ch62_BZ_75_M/Ch62_steam_smoke.eff</fn_effect_bin>
@@ -3294,12 +3364,16 @@
 		<fn_effect_bin>particles/3D_Customization/Cus_45_FGM_Brokencontainer/Brokencontainer_idle_loop.eff</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_45_FGM_Brokencontainer/Brokencontainer_event.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_45_FGM_Brokencontainer/Brokencontainer_idle.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/3D_Customization/Cus_56_ArmiesA_Searchlight/sparks.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_56_ArmiesA_Searchlight/sparks.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/3D_Customization/Cus_101_WT_Container/Cus_101_WT_Container_idle.eff</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_101_WT_Container/Cus_101_WT_Container_def.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/3D_Customization/Cus_99_WT_Machinegun/cus_99_wt_machinegun_shot.eff</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_99_WT_Machinegun/cus_99_wt_machinegun_shot.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/3D_Customization/Cus_97_WT_Electriccontainer/Cus_97_WT_Electriccontainer_Close.eff</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_97_WT_Electriccontainer/cus_97_wt_electriccontainer_close.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/3D_Customization/Cus_121_Biker_Bike/cus_121_flame.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_121_Biker_Bike/cus_121_flame.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/3D_Customization/Cus_68_PM3_Goliaph/Cus_68_beginning.eff</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_68_PM3_Goliaph/Cus_68_beginning.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/3D_Customization/Cus_68_PM3_Goliaph/Cus_68_on.eff</fn_effect_bin>
@@ -3310,6 +3384,13 @@
 		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_66_PM3_Jetpack/Cus_66_PM3_Jetpack_engine.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/3D_Customization/Cus_66_PM3_Jetpack/Cus_66_PM3_Jetpack_start.eff</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_66_PM3_Jetpack/Cus_66_PM3_Jetpack_start.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/3D_Customization/Cus_109_Celestial_Bell/cus_109_wave.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_109_Celestial_Bell/Cus_109_wave.vfx</fn_effect_bin>
+		<preloadVisual>particles/mesh_particles/customization/cus_111_oldchina_coin.visual</preloadVisual>
+		<fn_effect_bin>particles/3D_Customization/Cus_111_Celestial_Chest/cus_111_chest_hit.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_111_Celestial_Chest/cus_111_chest_hit.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/3D_Customization/Cus_138_BP18_Locker/Cus_138_BP18_Locker_dust.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_138_BP18_Locker/Cus_138_BP18_Locker_dust.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/tank/rocket_accelerator/idle_fire_big01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/rocket_accelerator/idle_fire_big01.vfx</fn_effect_bin>
 		<preloadVisual>particles/gpu_mesh/mesh/metal_sheet_medium_02.visual</preloadVisual>
@@ -3353,6 +3434,14 @@
 		<fn_effect_bin>particles/Tank/customization/G177_E65_Zwilling_W25_3Dst/steam_exhaust.eff</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/customization/G177_E65_Zwilling_W25_3Dst/mgun_shooting.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/customization/G177_E65_Zwilling_W25_3Dst/steam_exhaust.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/shots/fep_ny_shot_main.eff</fn_effect_bin>
+		<fn_effect_bin>particles/tank/auto_shoot/shots/fep_ny_shot_main_start.eff</fn_effect_bin>
+		<fn_effect_bin>particles/tank/auto_shoot/shots/fep_ny_shot_main_end.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/shots/fep_ny_shot_main.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/shots/fep_ny_shot_main_start.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/shots/fep_ny_shot_main_end.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/shots/shot_main_medium_ForceField.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/shots/shot_ForceField.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Battle_Royal/Afterburning/br_nitro_gearup.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Battle_Royal/Afterburning/br_nitro_idle.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Battle_Royal/Afterburning/br_nitro_load.vfx</fn_effect_bin>
@@ -3795,6 +3884,7 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/armorHit_AP_2_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/armorHit_AP_2_6.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/armorHit_AP_2_add.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/armorHit_AP_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/armorHit_AP_CR_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/armorHit_AP_CR_1_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/armorHit_AP_CR_1_6.vfx</fn_effect_bin>
@@ -3803,6 +3893,7 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/armorHit_AP_CR_2_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/armorHit_AP_CR_2_6.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/armorHit_AP_CR_2_add.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/armorHit_AP_CR_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/armorhit_trace.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/blacksandHit_AP_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/blacksandHit_AP_1_3.vfx</fn_effect_bin>
@@ -3810,12 +3901,14 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/blacksandHit_AP_2.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/blacksandHit_AP_2_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/blacksandHit_AP_2_6.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/blacksandHit_AP_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/blacksandHit_AP_CR_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/blacksandHit_AP_CR_1_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/blacksandHit_AP_CR_1_6.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/blacksandHit_AP_CR_2.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/blacksandHit_AP_CR_2_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/blacksandHit_AP_CR_2_6.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/blacksandHit_AP_CR_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/dirtHit_AP_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/dirtHit_AP_1_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/dirtHit_AP_1_6.vfx</fn_effect_bin>
@@ -3827,6 +3920,7 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/dirtHit_AP_2_trace_P_big.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/dirtHit_AP_2_trace_P_med.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/dirtHit_AP_2_trace_P_small.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/dirtHit_AP_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/dirtHit_AP_CR_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/dirtHit_AP_CR_1_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/dirtHit_AP_CR_1_6.vfx</fn_effect_bin>
@@ -3839,6 +3933,7 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/dirtHit_AP_CR_2_trace_P_big.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/dirtHit_AP_CR_2_trace_P_med.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/dirtHit_AP_CR_2_trace_P_small.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/dirtHit_AP_CR_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/dust_stone_med_1_slave.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/dust_stone_med_1_slave2.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/dust_stone_med_2_slave.vfx</fn_effect_bin>
@@ -3849,6 +3944,7 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/dust_stone_sml_2_slave2.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/forcefieldHit_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/forcefieldHit_2.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/forcefieldHit_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/groundHit_AP_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/groundHit_AP_1_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/groundHit_AP_1_6.vfx</fn_effect_bin>
@@ -3857,6 +3953,7 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/groundHit_AP_2_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/groundHit_AP_2_6.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/groundHit_AP_2_add.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/groundHit_AP_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/groundHit_AP_CR_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/groundHit_AP_CR_1_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/groundHit_AP_CR_1_6.vfx</fn_effect_bin>
@@ -3865,6 +3962,8 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/groundHit_AP_CR_2_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/groundHit_AP_CR_2_6.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/groundHit_AP_CR_2_add.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/groundHit_AP_CR_3.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/hit_flash_AP_3_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/oilHit_AP_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/oilHit_AP_1_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/oilHit_AP_1_6.vfx</fn_effect_bin>
@@ -3873,6 +3972,7 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/oilHit_AP_2_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/oilHit_AP_2_6.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/oilHit_AP_2_add.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/oilHit_AP_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/oilHit_AP_CR_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/oilHit_AP_CR_1_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/oilHit_AP_CR_1_6.vfx</fn_effect_bin>
@@ -3881,8 +3981,10 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/oilHit_AP_CR_2_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/oilHit_AP_CR_2_6.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/oilHit_AP_CR_2_add.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/oilHit_AP_CR_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/sand_dust_1_slave.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/sand_dust_AP_HC_2_slave.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/sand_dust_AP_HC_3_slave.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/sand_dust_APCR_2_slave.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/sandHit_AP_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/sandHit_AP_1_3.vfx</fn_effect_bin>
@@ -3892,6 +3994,7 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/sandHit_AP_2_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/sandHit_AP_2_6.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/sandHit_AP_2_add.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/sandHit_AP_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/sandHit_AP_CR_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/sandHit_AP_CR_1_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/sandHit_AP_CR_1_6.vfx</fn_effect_bin>
@@ -3900,6 +4003,7 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/sandHit_AP_CR_2_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/sandHit_AP_CR_2_6.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/sandHit_AP_CR_2_add.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/sandHit_AP_CR_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/shellFall_AP_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/shellFall_AP_1_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/shellFall_AP_1_6.vfx</fn_effect_bin>
@@ -3908,6 +4012,7 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/shellFall_AP_2_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/shellFall_AP_2_6.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/shellFall_AP_2_add.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/shellFall_AP_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/shellFall_AP_CR_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/shellFall_AP_CR_1_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/shellFall_AP_CR_1_6.vfx</fn_effect_bin>
@@ -3916,8 +4021,10 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/shellFall_AP_CR_2_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/shellFall_AP_CR_2_6.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/shellFall_AP_CR_2_add.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/shellFall_AP_CR_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/snow_dust_1_slave.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/snow_dust_2_slave.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/snow_dust_3_slave.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/snowHit_AP_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/snowHit_AP_1_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/snowHit_AP_1_6.vfx</fn_effect_bin>
@@ -3926,6 +4033,7 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/snowHit_AP_2_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/snowHit_AP_2_6.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/snowHit_AP_2_add.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/snowHit_AP_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/snowHit_AP_CR_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/snowHit_AP_CR_1_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/snowHit_AP_CR_1_6.vfx</fn_effect_bin>
@@ -3934,6 +4042,11 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/snowHit_AP_CR_2_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/snowHit_AP_CR_2_6.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/snowHit_AP_CR_2_add.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/snowHit_AP_CR_3.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/sparks_lrg_2.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/sparks_lrg_2_slave.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/sparks_lrg_3.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/sparks_lrg_3_slave.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/sparks_med_1_slave.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/sparks_med_2_slave.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/sparks_med_3_slave.vfx</fn_effect_bin>
@@ -3948,6 +4061,7 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/stoneHit_AP_2_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/stoneHit_AP_2_6.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/stoneHit_AP_2_add.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/stoneHit_AP_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/stoneHit_AP_CR_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/stoneHit_AP_CR_1_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/stoneHit_AP_CR_1_6.vfx</fn_effect_bin>
@@ -3956,18 +4070,21 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/stoneHit_AP_CR_2_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/stoneHit_AP_CR_2_6.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/stoneHit_AP_CR_2_add.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/stoneHit_AP_CR_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/trace_AP_20.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/trace_AP_20_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/trace_AP_20_6.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/trace_AP_50.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/trace_AP_50_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/trace_AP_50_6.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/trace_AP_90.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/trace_AP_CR_20.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/trace_AP_CR_20_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/trace_AP_CR_20_6.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/trace_AP_CR_50.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/trace_AP_CR_50_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/trace_AP_CR_50_6.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/trace_AP_CR_90.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/waterHit_AP_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/waterHit_AP_1_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/waterHit_AP_1_6.vfx</fn_effect_bin>
@@ -3976,6 +4093,7 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/waterHit_AP_2_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/waterHit_AP_2_6.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/waterHit_AP_2_add.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/waterHit_AP_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/waterHit_AP_CR_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/waterHit_AP_CR_1_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/waterHit_AP_CR_1_6.vfx</fn_effect_bin>
@@ -3984,6 +4102,7 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/waterHit_AP_CR_2_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/waterHit_AP_CR_2_6.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/waterHit_AP_CR_2_add.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/waterHit_AP_CR_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/waterHit_shallow_AP_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/waterHit_shallow_AP_1_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/waterHit_shallow_AP_1_6.vfx</fn_effect_bin>
@@ -3992,6 +4111,7 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/waterHit_shallow_AP_2_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/waterHit_shallow_AP_2_6.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/waterHit_shallow_AP_2_add.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/waterHit_shallow_AP_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/waterHit_shallow_AP_CR_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/waterHit_shallow_AP_CR_1_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/waterHit_shallow_AP_CR_1_6.vfx</fn_effect_bin>
@@ -4000,6 +4120,7 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/waterHit_shallow_AP_CR_2_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/waterHit_shallow_AP_CR_2_6.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/waterHit_shallow_AP_CR_2_add.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/waterHit_shallow_AP_CR_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/woodHit_AP_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/woodHit_AP_1_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/woodHit_AP_1_6.vfx</fn_effect_bin>
@@ -4008,6 +4129,7 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/woodHit_AP_2_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/woodHit_AP_2_6.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/woodHit_AP_2_add.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/woodHit_AP_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/woodHit_AP_CR_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/woodHit_AP_CR_1_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/woodHit_AP_CR_1_6.vfx</fn_effect_bin>
@@ -4016,6 +4138,7 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/woodHit_AP_CR_2_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/woodHit_AP_CR_2_6.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/woodHit_AP_CR_2_add.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/hits/woodHit_AP_CR_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/destruction/burnup_domination_large.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/destruction/burnup_large.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/destruction/burnup_medium.vfx</fn_effect_bin>
@@ -4822,7 +4945,6 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/shots/shot_large_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/shots/shot_main_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/shots/shot_main_02.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Tank/shots/shot_main_medium_ForceField.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/shots/shot_medium_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/shots/shot_medium_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/shots/shot_MTSL.vfx</fn_effect_bin>
@@ -5179,156 +5301,186 @@
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/armorHit_AP_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/armorHit_AP_2_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/armorHit_AP_2_6.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/auto_shoot/hits/armorHit_AP_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/armorHit_AP_CR_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/armorHit_AP_CR_1_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/armorHit_AP_CR_1_6.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/armorHit_AP_CR_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/armorHit_AP_CR_2_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/armorHit_AP_CR_2_6.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/auto_shoot/hits/armorHit_AP_CR_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/blacksandHit_AP_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/blacksandHit_AP_1_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/blacksandHit_AP_1_6.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/blacksandHit_AP_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/blacksandHit_AP_2_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/blacksandHit_AP_2_6.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/auto_shoot/hits/blacksandHit_AP_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/blacksandHit_AP_CR_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/blacksandHit_AP_CR_1_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/blacksandHit_AP_CR_1_6.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/blacksandHit_AP_CR_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/blacksandHit_AP_CR_2_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/blacksandHit_AP_CR_2_6.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/auto_shoot/hits/blacksandHit_AP_CR_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/dirtHit_AP_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/dirtHit_AP_1_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/dirtHit_AP_1_6.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/dirtHit_AP_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/dirtHit_AP_2_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/dirtHit_AP_2_6.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/auto_shoot/hits/dirtHit_AP_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/dirtHit_AP_CR_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/dirtHit_AP_CR_1_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/dirtHit_AP_CR_1_6.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/dirtHit_AP_CR_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/dirtHit_AP_CR_2_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/dirtHit_AP_CR_2_6.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/auto_shoot/hits/dirtHit_AP_CR_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/groundHit_AP_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/groundHit_AP_1_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/groundHit_AP_1_6.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/groundHit_AP_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/groundHit_AP_2_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/groundHit_AP_2_6.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/auto_shoot/hits/groundHit_AP_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/groundHit_AP_CR_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/groundHit_AP_CR_1_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/groundHit_AP_CR_1_6.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/groundHit_AP_CR_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/groundHit_AP_CR_2_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/groundHit_AP_CR_2_6.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/auto_shoot/hits/groundHit_AP_CR_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/oilHit_AP_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/oilHit_AP_1_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/oilHit_AP_1_6.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/oilHit_AP_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/oilHit_AP_2_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/oilHit_AP_2_6.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/auto_shoot/hits/oilHit_AP_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/oilHit_AP_CR_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/oilHit_AP_CR_1_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/oilHit_AP_CR_1_6.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/oilHit_AP_CR_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/oilHit_AP_CR_2_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/oilHit_AP_CR_2_6.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/auto_shoot/hits/oilHit_AP_CR_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/sandHit_AP_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/sandHit_AP_1_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/sandHit_AP_1_6.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/sandHit_AP_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/sandHit_AP_2_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/sandHit_AP_2_6.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/auto_shoot/hits/sandHit_AP_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/sandHit_AP_CR_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/sandHit_AP_CR_1_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/sandHit_AP_CR_1_6.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/sandHit_AP_CR_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/sandHit_AP_CR_2_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/sandHit_AP_CR_2_6.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/auto_shoot/hits/sandHit_AP_CR_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/shellFall_AP_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/shellFall_AP_1_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/shellFall_AP_1_6.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/shellFall_AP_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/shellFall_AP_2_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/shellFall_AP_2_6.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/auto_shoot/hits/ShellFall_AP_3.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/auto_shoot/hits/shellFall_AP_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/shellFall_AP_CR_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/shellFall_AP_CR_1_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/shellFall_AP_CR_1_6.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/shellFall_AP_CR_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/shellFall_AP_CR_2_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/shellFall_AP_CR_2_6.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/auto_shoot/hits/shellFall_AP_CR_3.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/auto_shoot/hits/ShellFall_AP_CR_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/snowHit_AP_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/snowHit_AP_1_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/snowHit_AP_1_6.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/snowHit_AP_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/snowHit_AP_2_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/snowHit_AP_2_6.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/auto_shoot/hits/snowHit_AP_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/snowHit_AP_CR_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/snowHit_AP_CR_1_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/snowHit_AP_CR_1_6.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/snowHit_AP_CR_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/snowHit_AP_CR_2_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/snowHit_AP_CR_2_6.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/auto_shoot/hits/snowHit_AP_CR_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/stoneHit_AP_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/stoneHit_AP_1_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/stoneHit_AP_1_6.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/stoneHit_AP_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/stoneHit_AP_2_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/stoneHit_AP_2_6.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/auto_shoot/hits/stoneHit_AP_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/stoneHit_AP_CR_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/stoneHit_AP_CR_1_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/stoneHit_AP_CR_1_6.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/stoneHit_AP_CR_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/stoneHit_AP_CR_2_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/stoneHit_AP_CR_2_6.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/auto_shoot/hits/stoneHit_AP_CR_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/trace_AP_20.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/trace_AP_20_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/trace_AP_20_6.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/trace_AP_50.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/trace_AP_50_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/trace_AP_50_6.eff</fn_effect_bin>
+		<fn_effect_bin>particles/tank/auto_shoot/hits/trace_ap_90.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/trace_AP_CR_20.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/trace_AP_CR_20_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/trace_AP_CR_20_6.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/trace_AP_CR_50.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/trace_AP_CR_50_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/trace_AP_CR_50_6.eff</fn_effect_bin>
+		<fn_effect_bin>particles/tank/auto_shoot/hits/trace_AP_CR_90.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/waterHit_AP_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/waterHit_AP_1_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/waterHit_AP_1_6.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/waterHit_AP_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/waterHit_AP_2_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/waterHit_AP_2_6.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/auto_shoot/hits/waterHit_AP_3.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/auto_shoot/hits/WaterHit_AP_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/waterHit_AP_CR_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/waterHit_AP_CR_1_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/waterHit_AP_CR_1_6.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/waterHit_AP_CR_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/waterHit_AP_CR_2_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/waterHit_AP_CR_2_6.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/auto_shoot/hits/waterHit_AP_CR_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/waterHit_shallow_AP_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/waterHit_shallow_AP_1_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/waterHit_shallow_AP_1_6.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/waterHit_shallow_AP_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/waterHit_shallow_AP_2_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/waterHit_shallow_AP_2_6.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/auto_shoot/hits/WaterHit_shallow_AP_3.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/auto_shoot/hits/waterHit_shallow_AP_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/waterHit_shallow_AP_CR_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/waterHit_shallow_AP_CR_1_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/waterHit_shallow_AP_CR_1_6.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/waterHit_shallow_AP_CR_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/waterHit_shallow_AP_CR_2_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/waterHit_shallow_AP_CR_2_6.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/auto_shoot/hits/waterHit_shallow_AP_CR_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/woodHit_AP_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/woodHit_AP_1_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/woodHit_AP_1_6.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/woodHit_AP_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/woodHit_AP_2_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/woodHit_AP_2_6.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/auto_shoot/hits/woodHit_AP_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/woodHit_AP_CR_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/woodHit_AP_CR_1_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/woodHit_AP_CR_1_6.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/woodHit_AP_CR_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/woodHit_AP_CR_2_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/auto_shoot/hits/woodHit_AP_CR_2_6.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/auto_shoot/hits/woodHit_AP_CR_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/destruction/burnup_domination_large.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/destruction/burnup_large.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/destruction/burnup_medium.eff</fn_effect_bin>

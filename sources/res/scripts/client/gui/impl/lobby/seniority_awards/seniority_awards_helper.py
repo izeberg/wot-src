@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, BigWorld
 from account_helpers.settings_core.settings_constants import SeniorityAwardsStorageKeys
 from frameworks.wulf import ViewFlags

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-0.418881 -0.198182 -0.290449</min>
+		<max>0.250827 0.641213 1.302087</max>
+	</visibilityBox>
+	<parent>content/3D_Customization/Cus_119_Biker_Machinegun/normal/lod1/Cus_119_Biker_Machinegun_01</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>content/3D_Customization/Cus_119_Biker_Machinegun/normal/lod0/Cus_119_Biker_Machinegun_01</nodefullVisual>
+</root>

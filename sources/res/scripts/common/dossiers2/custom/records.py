@@ -2118,6 +2118,8 @@ RECORDS = (
  (
   'singleAchievements', 'betaTester', 'p', 'B', 1),
  (
+  'singleAchievements', '15YearsOfService', 'p', 'B', 1),
+ (
   'singleAchievements', '14YearsOfService', 'p', 'B', 1),
  (
   'singleAchievements', '13YearsOfService', 'p', 'B', 1),
@@ -3624,7 +3626,13 @@ RECORDS = (
  (
   'singleAchievements', 'twoPointZeroCollectorMedal', 'p', 'B', 1),
  (
-  'singleAchievements', 'hw2025Medal', 'p', 'B', 1))
+  'singleAchievements', 'hw2025Medal', 'p', 'B', 1),
+ (
+  'singleAchievements', 'grinch_medal_2026', 'p', 'B', 1),
+ (
+  'singleAchievements', 'NY26_AtmsphrLevel', 'p', 'B', 1),
+ (
+  'singleAchievements', 'NY26_CelebChallenge', 'p', 'B', 1))
 RECORD_INDICES = dict((rec[:2], idx) for idx, rec in enumerate(RECORDS))
 RECORD_DB_IDS = {('total', 'creationTime'): 68, 
    ('total', 'lastBattleTime'): 7, 
@@ -5438,7 +5446,11 @@ RECORD_DB_IDS = {('total', 'creationTime'): 68,
    ('singleAchievements', 'wt2025progression'): 2093, 
    ('singleAchievements', 'twoPointZeroMedal'): 2094, 
    ('singleAchievements', 'twoPointZeroCollectorMedal'): 2095, 
-   ('singleAchievements', 'hw2025Medal'): 2096}
+   ('singleAchievements', 'hw2025Medal'): 2096, 
+   ('singleAchievements', 'NY26_AtmsphrLevel'): 2097, 
+   ('singleAchievements', 'NY26_CelebChallenge'): 2098, 
+   ('singleAchievements', 'grinch_medal_2026'): 2099, 
+   ('singleAchievements', '15YearsOfService'): 2100}
 DB_ID_TO_RECORD = dict([ (value, key) for key, value in RECORD_DB_IDS.iteritems() ])
 RECORD_DB_IDS.update({('vehTypeFrags', ''): 863, 
    ('a15x15Cut', ''): 864, 

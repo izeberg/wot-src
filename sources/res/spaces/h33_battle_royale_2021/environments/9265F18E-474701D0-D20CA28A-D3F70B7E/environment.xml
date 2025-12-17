@@ -334,4 +334,7 @@
 		<transmissionMult>0.900000</transmissionMult>
 		<waterReflectionAttenuation>0.350000</waterReflectionAttenuation>
 	</SimplifiedDeferred>
+	<VisibilityTunnel>
+		<shouldOverrideSettings>false</shouldOverrideSettings>
+	</VisibilityTunnel>
 </root>

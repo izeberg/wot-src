@@ -59,7 +59,7 @@ msgid "battleResult/navigation/financialReport"
 msgstr "Финансовый отчёт"
 
 msgid "battleResult/navigation/missionsProgress"
-msgstr "Прогресс задачи"
+msgstr "Прогресс задач"
 
 msgid "battleResult/navigation/teamEfficiency"
 msgstr "Командный результат"
@@ -197,6 +197,16 @@ msgstr "Исследование модуля"
 
 msgid "common/mainFinishReasonTitle"
 msgstr "Основной бой:"
+
+msgid "common/missions/noProgress/button"
+msgstr "К задачам"
+
+msgid "common/missions/noProgress/description"
+msgstr "Посмотреть текущий прогресс по задачам"
+
+msgid "common/missions/noProgress/header"
+msgstr ""
+"Нет прогресса по боевым задачам, исследованию техники и обучению экипажа."
 
 msgid "common/newSkillPrediction"
 msgstr "Примерно осталось боёв: %(battles)s"
@@ -676,6 +686,12 @@ msgstr "{{var}} союзник поблагодарил вас в этом бо�
 msgid "comms/likes/pbs/tooltip/header"
 msgstr "Благодарностей получено"
 
+msgid "conditions/type/and"
+msgstr "И"
+
+msgid "conditions/type/or"
+msgstr "ИЛИ"
+
 msgid "customizationProgress/award/newLevel"
 msgstr "Достигнут %(level)s уровень декали «%(name)s»."
 
@@ -1063,6 +1079,64 @@ msgstr "За этот бой вы можете получить:"
 msgid "getPremiumPopover/prem"
 msgstr "Премиум аккаунт"
 
+msgid "missionsProgress/aboutVehicle/button"
+msgstr "К исследованию"
+
+msgid "missionsProgress/aboutVehicle/description"
+msgstr "Доступна для исследования"
+
+msgid "missionsProgress/aboutVehicle/prediction"
+msgstr "Примерно осталось боёв: {{prediction}}"
+
+msgid "missionsProgress/aboutVehicle/title"
+msgstr "О МАШИНЕ"
+
+msgid "missionsProgress/battleMatters/doneInfo"
+msgstr "Задача №{{name}} выполнена."
+
+msgid "missionsProgress/battleMatters/title"
+msgstr "ТАНКОВАЯ АКАДЕМИЯ"
+
+msgid "missionsProgress/notificationsTabs/aboutVehicle/module"
+msgstr "ОТКРЫТ НОВЫЙ МОДУЛЬ!"
+
+msgid "missionsProgress/notificationsTabs/aboutVehicle/vehicle"
+msgstr "ОТКРЫТА НОВАЯ ТЕХНИКА!"
+
+msgid "missionsProgress/notificationsTabs/battleMatters"
+msgstr "ВЫПОЛНЕНА ЗАДАЧА АКАДЕМИИ!"
+
+msgid "missionsProgress/notificationsTabs/battlePass/chapterComplete"
+msgstr "ГЛАВА ЗАВЕРШЕНА!"
+
+msgid "missionsProgress/notificationsTabs/battlePass/stageComplete"
+msgstr "ЭТАП ПРОЙДЕН!"
+
+msgid "missionsProgress/notificationsTabs/common"
+msgstr "ЗАДАЧА ВЫПОЛНЕНА!"
+
+msgid "missionsProgress/notificationsTabs/daily"
+msgstr "ЕЖЕДНЕВНАЯ ЗАДАЧА ВЫПОЛНЕНА!"
+
+msgid "missionsProgress/notificationsTabs/eliteSystem/maxLevel"
+msgstr "МАКСИМАЛЬНЫЙ УРОВЕНЬ ЭЛИТНОСТИ"
+
+msgid "missionsProgress/notificationsTabs/eliteSystem/newLevel"
+msgstr "НОВЫЙ УРОВЕНЬ ЭЛИТНОСТИ"
+
+msgid "missionsProgress/notificationsTabs/epic"
+msgstr "ЭПИЧЕСКАЯ ЗАДАЧА ВЫПОЛНЕНА!"
+
+msgid ""
+"missionsProgress/notificationsTabs/personalMissions/operation_mission_complete"
+msgstr "ЗАДАЧА ОПЕРАЦИИ ВЫПОЛНЕНА!"
+
+msgid "missionsProgress/notificationsTabs/premium"
+msgstr "ПРЕМИУМ ЗАДАЧА ВЫПОЛНЕНА!"
+
+msgid "missionsProgress/notificationsTabs/weekly"
+msgstr "ЕЖЕНЕДЕЛЬНАЯ ЗАДАЧА ВЫПОЛНЕНА!"
+
 msgid "noData"
 msgstr "Извините, подробные результаты боя недоступны."
 
@@ -1094,8 +1168,39 @@ msgstr "Получено очков элитности:"
 msgid "prestige/max/description"
 msgstr "Получен максимальный уровень элитности."
 
+msgid "prestige/maxLevelReached/description"
+msgstr "Получен максимальный уровень элитности"
+
+msgid "prestige/newLevelAchieved/description"
+msgstr "Получен новый уровень элитности"
+
 msgid "prestige/title"
 msgstr "Система элитности"
+
+msgid "progression/completed"
+msgstr "Выполнено"
+
+msgid "progression/completedPointsFrom/withLabel"
+msgstr ""
+"{{@class $labelClass}}Выполнено:{{/}} {{completed}} {{@class "
+"$totalClass}}{{@class $dividerClass}}/ {{/}}{{total}}{{/}}"
+
+msgid "progression/completedPointsFrom/withoutLabel"
+msgstr ""
+"{{completed}} {{@class $totalClass}}{{@class $dividerClass}}/ "
+"{{/}}{{total}}{{/}}"
+
+msgid "progression/linkBtn/info"
+msgstr "Нажмите, чтобы узнать подробности."
+
+msgid "progression/missionsCompleteCounter"
+msgstr "{{@class $labelClass}}Выполнено:{{/}} {{completed}}"
+
+msgid "progression/progressUnavailable"
+msgstr "Система элитности недоступна. Попробуйте позже."
+
+msgid "progression/totalEarned"
+msgstr "Всего заработано: {{value}}"
 
 msgid "progressiveReward/descr"
 msgstr ""
@@ -1416,6 +1521,9 @@ msgstr "?empty?"
 
 msgid "team/stats/ownTeam"
 msgstr "Союзники"
+
+msgid "team/stats/parameter/artilleryFortEquipDamageDealt"
+msgstr "артобстрелом"
 
 msgid "team/stats/parameter/capturePointsVal"
 msgstr "Очки захвата/защиты базы"

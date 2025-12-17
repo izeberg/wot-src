@@ -5,6 +5,7 @@ package net.wg.frontline.gui.battle.views.battleTankCarousel
    import net.wg.data.VO.TankCarouselFilterInitVO;
    import net.wg.data.VO.TankCarouselFilterSelectedVO;
    import net.wg.data.constants.Values;
+   import net.wg.frontline.gui.battle.views.battleTankCarousel.renderers.ResetFilters;
    import net.wg.frontline.infrastructure.base.meta.IBattleTankCarouselMeta;
    import net.wg.frontline.infrastructure.base.meta.impl.BattleTankCarouselMeta;
    import net.wg.gui.components.controls.events.RendererEvent;
@@ -12,6 +13,7 @@ package net.wg.frontline.gui.battle.views.battleTankCarousel
    import net.wg.infrastructure.interfaces.IUIComponentEx;
    import net.wg.utils.helpLayout.HelpLayoutVO;
    import scaleform.clik.constants.InvalidationType;
+   import scaleform.clik.events.ButtonEvent;
    
    public class FrontlineBattleTankCarousel extends BattleTankCarouselMeta implements IBattleTankCarouselMeta, IUIComponentEx
    {
@@ -53,6 +55,8 @@ package net.wg.frontline.gui.battle.views.battleTankCarousel
       
       public var background:MovieClip = null;
       
+      public var resetFilter:ResetFilters = null;
+      
       private var _helper:FrontlineBattleTankCarouselHelper = null;
       
       private var _itemIndexToScroll:int = -1;
@@ -80,6 +84,7 @@ package net.wg.frontline.gui.battle.views.battleTankCarousel
          this.background.width = param1 >> 0;
          var _loc5_:int = _loc4_ + leftArrowOffset - rightArrowOffset >> 0;
          super.updateLayout(_loc4_,(_loc4_ - _loc5_ >> 1) + _loc3_ >> 0);
+         this.resetFilter.x = scrollList.x + scrollList.width >> 1;
          endFadeMask.x = rightArrow.x - rightArrow.width - endFadeMask.width >> 0;
       }
       
@@ -106,6 +111,7 @@ package net.wg.frontline.gui.battle.views.battleTankCarousel
          leftArrow.mouseEnabledOnDisabled = rightArrow.mouseEnabledOnDisabled = true;
          this.vehicleFilters.addEventListener(RendererEvent.ITEM_CLICK,this.onVehicleFiltersItemClickHandler);
          this.vehicleFilters.addEventListener(Event.RESIZE,this.onVehicleFiltersResizeHandler);
+         this.resetFilter.addEventListener(ButtonEvent.CLICK,this.onResetFilterClickHandler);
          this.background.mouseEnabled = false;
          this.background.mouseChildren = false;
          mouseEnabled = false;
@@ -119,6 +125,9 @@ package net.wg.frontline.gui.battle.views.battleTankCarousel
          this.vehicleFilters.removeEventListener(RendererEvent.ITEM_CLICK,this.onVehicleFiltersItemClickHandler);
          this.vehicleFilters.dispose();
          this.vehicleFilters = null;
+         this.resetFilter.removeEventListener(ButtonEvent.CLICK,this.onResetFilterClickHandler);
+         this.resetFilter.dispose();
+         this.resetFilter = null;
          this.background = null;
          this._helper = null;
          super.onDispose();
@@ -157,6 +166,11 @@ package net.wg.frontline.gui.battle.views.battleTankCarousel
          if(_loc2_)
          {
             App.utils.scheduler.scheduleTask(this.scrollToIndex,SCROLL_TO_INDEX_DELAY);
+         }
+         if(isInvalid(InvalidationType.DATA))
+         {
+            this.resetFilter.mouseEnabled = this.resetFilter.visible = dataProvider.length == 0;
+            scrollList.mouseEnabled = scrollList.visible = !this.resetFilter.visible;
          }
       }
       
@@ -220,6 +234,12 @@ package net.wg.frontline.gui.battle.views.battleTankCarousel
          return _loc1_;
       }
       
+      override protected function onDataProviderChangeHandler(param1:Event) : void
+      {
+         super.onDataProviderChangeHandler(param1);
+         invalidateData();
+      }
+      
       private function scrollToIndex() : void
       {
          if(this._itemIndexToScroll != Values.DEFAULT_INT)
@@ -278,6 +298,11 @@ package net.wg.frontline.gui.battle.views.battleTankCarousel
       {
          this.vehicleFilters.y = scrollList.y + (scrollList.height - this.vehicleFilters.height >> 1);
          updateHotFiltersS();
+      }
+      
+      private function onResetFilterClickHandler(param1:ButtonEvent) : void
+      {
+         resetPlaylistAndFiltersS();
       }
    }
 }

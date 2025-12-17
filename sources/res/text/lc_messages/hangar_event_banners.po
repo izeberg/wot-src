@@ -10,6 +10,29 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "event/IntegratedAuctionEntryPont/inProgress/description"
+msgstr "Доступен новый лот!"
+
+msgid "event/IntegratedAuctionEntryPont/intro/description"
+msgstr "Доступен новый лот!"
+
+msgid "event/IntegratedAuctionEntryPont/timer/inactive"
+msgstr "Доступно через"
+
+msgid "event/IntegratedAuctionEntryPont/timer/progress"
+msgstr "Доступно"
+
+msgid "event/IntegratedAuctionEntryPont/title"
+msgstr "СПЕЦИАЛЬНЫЕ ПРЕДЛОЖЕНИЯ"
+
+msgid "event/IntegratedAuctionEntryPont/tooltip/description"
+msgstr ""
+"Участвуйте в аукционе и сражайтесь за эксклюзивные лоты. Каждый день будет "
+"доступен новый лот!"
+
+msgid "event/IntegratedAuctionEntryPont/tooltip/title"
+msgstr "Специальные предложения"
+
 msgid "event/PM3EntryPoint/inProgress/description"
 msgstr "Активная операция"
 

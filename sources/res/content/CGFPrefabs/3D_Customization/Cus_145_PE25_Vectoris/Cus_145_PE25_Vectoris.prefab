@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<version>4</version>
+	<GameObjects>
+		<GameObject>
+			<name>Cus_145_PE25_Vectoris</name>
+			<UUID>db542020-cfb7-4f4f-9acd-8381fefe1986</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>attachment</name>
+			<UUID>52be884b-cf4f-49b0-a337-437446e59259</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>normal</name>
+			<UUID>62ce597a-559e-42b6-aff3-53c32f4e2765</UUID>
+			<flags>8</flags>
+		</GameObject>
+	</GameObjects>
+	<components>
+		<ComponentPool>
+			<type>Hierarchy</type>
+			<version>2</version>
+			<component>
+				<UUID>52be884b-cf4f-49b0-a337-437446e59259</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>62ce597a-559e-42b6-aff3-53c32f4e2765</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>62ce597a-559e-42b6-aff3-53c32f4e2765</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>db542020-cfb7-4f4f-9acd-8381fefe1986</link>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>Transform</type>
+			<version>1</version>
+			<component>
+				<UUID>db542020-cfb7-4f4f-9acd-8381fefe1986</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>52be884b-cf4f-49b0-a337-437446e59259</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>62ce597a-559e-42b6-aff3-53c32f4e2765</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>0 0 0</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>BW::StateSwitcherComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>db542020-cfb7-4f4f-9acd-8381fefe1986</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>normal</name>
+						<link>62ce597a-559e-42b6-aff3-53c32f4e2765</link>
+					</property>
+					<property>
+						<name>damaged</name>
+						<link>00000000-0000-0000-0000-000000000000</link>
+					</property>
+					<property>
+						<name>critical</name>
+						<link>00000000-0000-0000-0000-000000000000</link>
+					</property>
+					<property>
+						<name>previewState</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>ComponentsVisibilityController</type>
+			<version>1</version>
+			<component>
+				<UUID>afb0a1d1-1418-4239-b293-202cce7cdbec</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>castShadows</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in SNIPER MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in STRATEGIC MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in ARTY MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in POSTMORTEM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in RESPAWN_DEATH MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DEATH_FREE_CAM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DUAL_GUN MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in KILL_CAM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in LOOK_AT_KILLER MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in TWIN_GUN MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in SM_STRATEGIC MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in SM_ENTITY_VIEW MODE</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>DynamicModel</type>
+			<version>1</version>
+			<component>
+				<UUID>52be884b-cf4f-49b0-a337-437446e59259</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Model name</name>
+						<isAsset>true</isAsset>
+						<value>content/3D_Customization/Cus_145_PE25_Vectoris/normal/lod0/Cus_145_PE25_Vectoris.model</value>
+					</property>
+					<property>
+						<name>Cast Shadows</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>VehicleHealthObserverComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>db542020-cfb7-4f4f-9acd-8381fefe1986</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>state</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+	</components>
+</root>

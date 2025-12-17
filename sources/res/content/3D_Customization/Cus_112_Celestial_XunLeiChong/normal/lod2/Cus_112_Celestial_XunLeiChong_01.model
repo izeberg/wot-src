@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/3D_Customization/Cus_112_Celestial_XunLeiChong/normal/lod3/Cus_112_Celestial_XunLeiChong_01</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-0.422527 0.000235 -0.770863</min>
+		<max>0.039151 0.496262 0.803486</max>
+	</visibilityBox>
+	<nodefullVisual>content/3D_Customization/Cus_112_Celestial_XunLeiChong/normal/lod2/Cus_112_Celestial_XunLeiChong_01</nodefullVisual>
+	<tank>true</tank>
+</root>

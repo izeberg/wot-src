@@ -87,6 +87,11 @@ package net.wg.gui.components.containers
          this._bitmap.cacheAsBitmap = true;
       }
       
+      override public function getComponentForFocus() : InteractiveObject
+      {
+         return Boolean(this._inputTF.stage) ? this._inputTF : this;
+      }
+      
       override public function inputEnded() : void
       {
          var _loc1_:InteractiveObject = App.utils.focusHandler.getFocus(0);

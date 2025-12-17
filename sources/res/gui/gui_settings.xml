@@ -2118,122 +2118,6 @@
 			</item>
 		</value>
 	</hallOfFame>
-	<personalMissions>
-		<type>macros</type>
-		<macros>AUTH_REALM</macros>
-		<value>
-			<item>
-				<name>EU</name>
-				<type>dict</type>
-				<value>
-					<item>
-						<name>welcomeVideo</name>
-						<type>dict</type>
-						<value>
-							<item>
-								<name>isEnabled</name>
-								<type>bool</type>
-								<value>True</value>
-							</item>
-							<item>
-								https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/lbz20/
-								<name>url</name>
-								<type>url</type>
-							</item>
-						</value>
-					</item>
-				</value>
-			</item>
-			<item>
-				<name>ASIA</name>
-				<type>dict</type>
-				<value>
-					<item>
-						<name>welcomeVideo</name>
-						<type>dict</type>
-						<value>
-							<item>
-								<name>isEnabled</name>
-								<type>bool</type>
-								<value>True</value>
-							</item>
-							<item>
-								https://webbrg.worldoftanks.asia/$LANGUAGE_CODE/promocontent/lbz20/
-								<name>url</name>
-								<type>url</type>
-							</item>
-						</value>
-					</item>
-				</value>
-			</item>
-			<item>
-				<name>NA</name>
-				<type>dict</type>
-				<value>
-					<item>
-						<name>welcomeVideo</name>
-						<type>dict</type>
-						<value>
-							<item>
-								<name>isEnabled</name>
-								<type>bool</type>
-								<value>True</value>
-							</item>
-							<item>
-								https://webbrg.worldoftanks.com/$LANGUAGE_CODE/promocontent/lbz20/
-								<name>url</name>
-								<type>url</type>
-							</item>
-						</value>
-					</item>
-				</value>
-			</item>
-			<item>
-				<name>CN</name>
-				<type>dict</type>
-				<value>
-					<item>
-						<name>welcomeVideo</name>
-						<type>dict</type>
-						<value>
-							<item>
-								<name>isEnabled</name>
-								<type>bool</type>
-								<value>True</value>
-							</item>
-							<item>
-								https://webbrg-cn360.wotgame.cn/$LANGUAGE_CODE/promocontent/personal_missions/
-								<name>url</name>
-								<type>url</type>
-							</item>
-						</value>
-					</item>
-				</value>
-			</item>
-			<item>
-				<name>default</name>
-				<type>dict</type>
-				<value>
-					<item>
-						<name>welcomeVideo</name>
-						<type>dict</type>
-						<value>
-							<item>
-								<name>isEnabled</name>
-								<type>bool</type>
-								<value>True</value>
-							</item>
-							<item>
-								https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/lbz20/
-								<name>url</name>
-								<type>url</type>
-							</item>
-						</value>
-					</item>
-				</value>
-			</item>
-		</value>
-	</personalMissions>
 	<personalMissions3>
 		<type>macros</type>
 		<macros>AUTH_REALM</macros>
@@ -2691,7 +2575,7 @@
 				<type>url</type>
 			</item>
 			<item>
-				$PARAMS(/wdr2024/wdr2024_optional_devices)
+				$PARAMS(/wdr2025/wdr2025_optional_devices)
 				<name>seniorityAwardsProducts</name>
 				<type>url</type>
 			</item>
@@ -3003,7 +2887,7 @@
 						<type>dict</type>
 						<value>
 							<item>
-								$PARAMS(/lootboxes-overlay)
+								$PARAMS(/event_lootboxes)
 								<name>default</name>
 								<type>url</type>
 							</item>
@@ -3504,32 +3388,32 @@
 		<macros>AUTH_REALM</macros>
 		<value>
 			<item>
-				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/onslaught-season-of-dragon-episode-1/
+				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/onslaught-season-of-dragon-episode-2/
 				<name>EU</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://webbrg.worldoftanks.asia/$LANGUAGE_CODE/promocontent/onslaught-season-of-dragon-episode-1/
+				https://webbrg.worldoftanks.asia/$LANGUAGE_CODE/promocontent/onslaught-season-of-dragon-episode-2/
 				<name>ASIA</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://webbrg.worldoftanks.com/$LANGUAGE_CODE/promocontent/onslaught-season-of-dragon-episode-1/
+				https://webbrg.worldoftanks.com/$LANGUAGE_CODE/promocontent/onslaught-season-of-dragon-episode-2/
 				<name>NA</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://webbrg-cn360.wotgame.cn/$LANGUAGE_CODE/promocontent/onslaught-season-of-dragon-episode-1/
+				https://webbrg-cn360.wotgame.cn/$LANGUAGE_CODE/promocontent/onslaught-season-of-dragon-episode-2/
 				<name>CN</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/onslaught-season-of-dragon-episode-1/
+				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/onslaught-season-of-dragon-episode-2/
 				<name>CT</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/onslaught-season-of-dragon-episode-1/
+				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/onslaught-season-of-dragon-episode-2/
 				<name>default</name>
 				<type>url</type>
 			</item>
@@ -3540,32 +3424,32 @@
 		<macros>AUTH_REALM</macros>
 		<value>
 			<item>
-				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/onslaught-season-of-dragon-episode-1-Video/
+				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/onslaught-season-of-dragon-episode-2-Video/
 				<name>EU</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://webbrg.worldoftanks.asia/$LANGUAGE_CODE/promocontent/onslaught-season-of-dragon-episode-1-Video/
+				https://webbrg.worldoftanks.asia/$LANGUAGE_CODE/promocontent/onslaught-season-of-dragon-episode-2-Video/
 				<name>ASIA</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://webbrg.worldoftanks.com/$LANGUAGE_CODE/promocontent/onslaught-season-of-dragon-episode-1-Video/
+				https://webbrg.worldoftanks.com/$LANGUAGE_CODE/promocontent/onslaught-season-of-dragon-episode-2-Video/
 				<name>NA</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://webbrg-cn360.wotgame.cn/$LANGUAGE_CODE/promocontent/onslaught-season-of-dragon-episode-1-Video/
+				https://webbrg-cn360.wotgame.cn/$LANGUAGE_CODE/promocontent/onslaught-season-of-dragon-episode-2-Video/
 				<name>CN</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://webbrg-ct.worldoftanks.eu/$LANGUAGE_CODE/promocontent/onslaught-season-of-dragon-episode-1-Video/
+				https://webbrg-ct.worldoftanks.eu/$LANGUAGE_CODE/promocontent/onslaught-season-of-dragon-episode-2-Video/
 				<name>CT</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/onslaught-season-of-dragon-episode-1-Video/
+				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/onslaught-season-of-dragon-episode-2-Video/
 				<name>default</name>
 				<type>url</type>
 			</item>
@@ -3643,6 +3527,42 @@
 			</item>
 		</value>
 	</infoPageWci>
+	<infoPageOls>
+		<type>macros</type>
+		<macros>AUTH_REALM</macros>
+		<value>
+			<item>
+				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/ols_january_2026/
+				<name>EU</name>
+				<type>url</type>
+			</item>
+			<item>
+				https://webbrg.worldoftanks.asia/$LANGUAGE_CODE/promocontent/ols_january_2026/
+				<name>ASIA</name>
+				<type>url</type>
+			</item>
+			<item>
+				https://webbrg.worldoftanks.com/$LANGUAGE_CODE/promocontent/ols_january_2026/
+				<name>NA</name>
+				<type>url</type>
+			</item>
+			<item>
+				https://webbrg-cn360.wotgame.cn/$LANGUAGE_CODE/promocontent/ols_january_2026/
+				<name>CN</name>
+				<type>url</type>
+			</item>
+			<item>
+				https://webbrg-ct.worldoftanks.eu/$LANGUAGE_CODE/promocontent/ols_january_2026/
+				<name>CT</name>
+				<type>url</type>
+			</item>
+			<item>
+				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/ols_january_2026/
+				<name>default</name>
+				<type>url</type>
+			</item>
+		</value>
+	</infoPageOls>
 	<vehicleDisclaimerURLs>
 		<type>macros</type>
 		<macros>CURRENT_REALM</macros>
@@ -3995,6 +3915,21 @@
 						<name>targetDesignator</name>
 						<type>url</type>
 					</item>
+					<item>
+						https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/A191_Ares_90_C_Video/
+						<name>overheatGun</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/J52_STK_2_Video/
+						<name>heatingZonesGun</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/Ch70_PTZ_78_Video/
+						<name>stagedJetBoosters</name>
+						<type>url</type>
+					</item>
 				</value>
 			</item>
 			<item>
@@ -4079,6 +4014,21 @@
 					<item>
 						https://webbrg.worldoftanks.asia/$LANGUAGE_CODE/promocontent/black_box_G188_Video/
 						<name>targetDesignator</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg.worldoftanks.asia/$LANGUAGE_CODE/promocontent/A191_Ares_90_C_Video/
+						<name>overheatGun</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg.worldoftanks.asia/$LANGUAGE_CODE/promocontent/J52_STK_2_Video/
+						<name>heatingZonesGun</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg.worldoftanks.asia/$LANGUAGE_CODE/promocontent/Ch70_PTZ_78_Video/
+						<name>stagedJetBoosters</name>
 						<type>url</type>
 					</item>
 				</value>
@@ -4167,6 +4117,21 @@
 						<name>targetDesignator</name>
 						<type>url</type>
 					</item>
+					<item>
+						https://webbrg.worldoftanks.com/$LANGUAGE_CODE/promocontent/A191_Ares_90_C_Video/
+						<name>overheatGun</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg.worldoftanks.com/$LANGUAGE_CODE/promocontent/J52_STK_2_Video/
+						<name>heatingZonesGun</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg.worldoftanks.com/$LANGUAGE_CODE/promocontent/Ch70_PTZ_78_Video/
+						<name>stagedJetBoosters</name>
+						<type>url</type>
+					</item>
 				</value>
 			</item>
 			<item>
@@ -4253,6 +4218,21 @@
 						<name>targetDesignator</name>
 						<type>url</type>
 					</item>
+					<item>
+						https://webbrg-cn360.wotgame.cn/$LANGUAGE_CODE/promocontent/A191_Ares_90_C_Video/
+						<name>overheatGun</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg-cn360.wotgame.cn/$LANGUAGE_CODE/promocontent/J52_STK_2_Video/
+						<name>heatingZonesGun</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg-cn360.wotgame.cn/$LANGUAGE_CODE/promocontent/Ch70_PTZ_78_Video/
+						<name>stagedJetBoosters</name>
+						<type>url</type>
+					</item>
 				</value>
 			</item>
 			<item>
@@ -4337,6 +4317,21 @@
 					<item>
 						https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/black_box_G188_Video/
 						<name>targetDesignator</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/A191_Ares_90_C_Video/
+						<name>overheatGun</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/J52_STK_2_Video/
+						<name>heatingZonesGun</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/Ch70_PTZ_78_Video/
+						<name>stagedJetBoosters</name>
 						<type>url</type>
 					</item>
 				</value>

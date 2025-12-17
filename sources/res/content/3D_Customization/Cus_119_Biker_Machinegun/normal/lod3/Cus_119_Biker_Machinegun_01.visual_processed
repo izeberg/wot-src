@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0</identifier>
+					<fx>shaders/std_effects/PBS_tank.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>112</materialKind>
+					<property>
+						alphaReference
+						<Int>130</Int>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/3D_Customization/Cus_119_Biker_Machinegun/Cus_119_Biker_Machinegun_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>content/3D_Customization/Cus_119_Biker_Machinegun/Cus_119_Biker_Machinegun_AO.dds</Texture>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>3.506000 1.753000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/3D_Customization/Cus_119_Biker_Machinegun/Cus_119_Biker_Machinegun_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/3D_Customization/Cus_119_Biker_Machinegun/Cus_119_Biker_Machinegun_ANM.dds</Texture>
+					</property>
+					<property>
+						g_metallicDetailInfluence
+						<Float>0.500000</Float>
+					</property>
+				</material>
+				<groupOrigin>-0.084100 0.220788 0.505210</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-0.419027 -0.198182 -0.290468</min>
+		<max>0.250827 0.639759 1.300887</max>
+	</boundingBox>
+	<customBsp>true</customBsp>
+	<geometrySize>11466</geometrySize>
+</root>

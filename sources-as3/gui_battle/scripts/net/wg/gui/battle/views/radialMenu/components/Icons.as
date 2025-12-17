@@ -30,6 +30,8 @@ package net.wg.gui.battle.views.radialMenu.components
       
       public var reloadIcon:MovieClip = null;
       
+      public var overheatIcon:MovieClip = null;
+      
       public var attackIcon:MovieClip = null;
       
       public var yesIcon:MovieClip = null;
@@ -64,6 +66,7 @@ package net.wg.gui.battle.views.radialMenu.components
          super();
          this.iconsDictionary[RADIAL_MENU_CONSTS.SOS] = this.sosIcon;
          this.iconsDictionary[RADIAL_MENU_CONSTS.RELOAD] = this.reloadIcon;
+         this.iconsDictionary[RADIAL_MENU_CONSTS.OVERHEAT] = this.overheatIcon;
          this.iconsDictionary[RADIAL_MENU_CONSTS.NO] = this.noIcon;
          this.iconsDictionary[RADIAL_MENU_CONSTS.YES] = this.yesIcon;
          this.iconsDictionary[RADIAL_MENU_CONSTS.HELP_ME_EX] = this.helpmeexIcon;
@@ -85,6 +88,45 @@ package net.wg.gui.battle.views.radialMenu.components
          this.iconsDictionary[RADIAL_MENU_CONSTS.DEFENDING_HQ] = this.defendingHQIcon;
       }
       
+      protected function onDispose() : void
+      {
+         App.utils.data.cleanupDynamicObject(this.iconsDictionary);
+         this.iconsDictionary = null;
+         this.supportingAllyIcon = null;
+         this.turnbackIcon = null;
+         this.supportIcon = null;
+         this.spgAreaIcon = null;
+         this.helpmeexIcon = null;
+         this.sosIcon = null;
+         this.defendBaseIcon = null;
+         this.noIcon = null;
+         this.reloadIcon = null;
+         this.overheatIcon = null;
+         this.attackIcon = null;
+         this.yesIcon = null;
+         this.waypointIcon = null;
+         this.attentionIcon = null;
+         this.thankYouIcon = null;
+         this.attackBaseIcon = null;
+         this.defendingBaseIcon = null;
+         this.attackingBaseIcon = null;
+      }
+      
+      public final function dispose() : void
+      {
+         if(this._disposed)
+         {
+            return;
+         }
+         this.onDispose();
+         this._disposed = true;
+      }
+      
+      public final function isDisposed() : Boolean
+      {
+         return this._disposed;
+      }
+      
       public function showIcon(param1:String) : void
       {
          this.hideAll();
@@ -103,35 +145,6 @@ package net.wg.gui.battle.views.radialMenu.components
          this._currentState = param1;
       }
       
-      public final function dispose() : void
-      {
-         this.onDispose();
-         this._disposed = true;
-         App.utils.data.cleanupDynamicObject(this.iconsDictionary);
-         this.iconsDictionary = null;
-         this.supportingAllyIcon = null;
-         this.turnbackIcon = null;
-         this.supportIcon = null;
-         this.spgAreaIcon = null;
-         this.helpmeexIcon = null;
-         this.sosIcon = null;
-         this.defendBaseIcon = null;
-         this.noIcon = null;
-         this.reloadIcon = null;
-         this.attackIcon = null;
-         this.yesIcon = null;
-         this.waypointIcon = null;
-         this.attentionIcon = null;
-         this.thankYouIcon = null;
-         this.attackBaseIcon = null;
-         this.defendingBaseIcon = null;
-         this.attackingBaseIcon = null;
-      }
-      
-      protected function onDispose() : void
-      {
-      }
-      
       protected function hideAll() : void
       {
          this.supportingAllyIcon.visible = false;
@@ -143,6 +156,7 @@ package net.wg.gui.battle.views.radialMenu.components
          this.defendBaseIcon.visible = false;
          this.noIcon.visible = false;
          this.reloadIcon.visible = false;
+         this.overheatIcon.visible = false;
          this.attackIcon.visible = false;
          this.yesIcon.visible = false;
          this.waypointIcon.visible = false;
@@ -155,11 +169,6 @@ package net.wg.gui.battle.views.radialMenu.components
          this.attackingHQIcon.visible = false;
          this.defendHQIcon.visible = false;
          this.defendingHQIcon.visible = false;
-      }
-      
-      public function isDisposed() : Boolean
-      {
-         return this._disposed;
       }
    }
 }

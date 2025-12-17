@@ -2403,6 +2403,18 @@ msgstr "Закрыть"
 msgid "serviceChannelMessages/clan/LEFT_CLAN"
 msgstr "Вы вышли или были исключены из клана:"
 
+msgid "serviceChannelMessages/collector20/badge"
+msgstr "Добавлено: %(element_name)s"
+
+msgid "serviceChannelMessages/collector20/medal"
+msgstr "Добавлена медаль «%(element_name)s»"
+
+msgid "serviceChannelMessages/collector20/stripe"
+msgstr "Добавлена отметка «%(element_name)s»"
+
+msgid "serviceChannelMessages/collector20/title"
+msgstr "Награда получена"
+
 msgid ""
 "serviceChannelMessages/commendations/battleResults/commendationsReceived"
 msgstr "Благодарностей получено"

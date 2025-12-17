@@ -76,7 +76,7 @@ class MapsTrainingView(MapsTrainingBaseView, IGlobalListener):
     hangarSpace = dependency.descriptor(IHangarSpace)
 
     def __init__(self, *args, **kwargs):
-        super(MapsTrainingView, self).__init__(viewResource=R.views.lobby.maps_training.MapsTrainingPage(), viewModel=MapsTrainingViewModel())
+        super(MapsTrainingView, self).__init__(viewResource=R.views.mono.maps_training.maps_training_page(), viewModel=MapsTrainingViewModel())
         self.__selectedMap = None
         self.__selectedScenario = 0
         self.__ctxVehicleType = ''
@@ -98,7 +98,7 @@ class MapsTrainingView(MapsTrainingBaseView, IGlobalListener):
         return
 
     def createToolTipContent(self, event, contentID):
-        if contentID == R.views.lobby.maps_training.ScenarioTooltip():
+        if contentID == R.views.mono.maps_training.scenario_tooltip():
             geometryID = ArenaType.g_geometryNamesToIDs[self.__selectedMap]
             data = self.__account.mapsTraining.getGeometryData(geometryID)
             mapConfig = self.__mapsConfig.getMapConfig(self.__selectedMap)
@@ -121,6 +121,8 @@ class MapsTrainingView(MapsTrainingBaseView, IGlobalListener):
           self.__lsmObserver.onNavigationChanged, self.__onNavigationChanged),
          (
           self.viewModel.onNavigate, navigateTo),
+         (
+          self.viewModel.onClose, self.__onClose),
          (
           self.viewModel.onBack, self.__onBack),
          (
@@ -182,6 +184,9 @@ class MapsTrainingView(MapsTrainingBaseView, IGlobalListener):
         if not selectedMap:
             self.mapsTrainingController.reset()
         g_eventBus.handleEvent(events.FightButtonEvent(events.FightButtonEvent.FIGHT_BUTTON_UPDATE), scope=EVENT_BUS_SCOPE.LOBBY)
+
+    def __onClose(self):
+        self.mapsTrainingController.selectRandomMode()
 
     def __onBack(self):
         state = getLobbyStateMachine().getStateFromView(self)
@@ -323,11 +328,11 @@ class MapsTrainingView(MapsTrainingBaseView, IGlobalListener):
         return config.get('scenarios', {}).get(mapId, {}).get(team, {}).get(vehType, {})
 
     def __filterChangeHandler(self, kwargs):
-        incompleteFilter = kwargs.get('incompleteFilter', False)
+        incompleteFilter = kwargs.get('incomplete', False)
         if incompleteFilter != self.__preferences.incompleteFilter:
             self.__preferences.incompleteFilter = incompleteFilter
             self.__preferences.save()
-        titleFilter = kwargs.get('titleFilter', '')
+        titleFilter = kwargs.get('title', '')
         if titleFilter != self.__preferences.titleFilter:
             self.__preferences.titleFilter = titleFilter
 

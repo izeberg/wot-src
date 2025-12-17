@@ -664,6 +664,100 @@
 				</value>
 			</item>
 			<item>
+				<name>shellLoadingTime</name>
+				<type>dict</type>
+				<value>
+					<item>
+						<name>optionalDevice</name>
+						<type>list</type>
+						<value>
+							<item>improvedVentilation_tier1</item>
+							<item>improvedVentilation_tier2</item>
+							<item>improvedVentilation_tier3</item>
+							<item>deluxImprovedVentilation</item>
+							<item>tankRammer_tier1</item>
+							<item>tankRammer_tier2</item>
+							<item>deluxRammer</item>
+							<item>trophyBasicTankRammer</item>
+							<item>trophyUpgradedTankRammer</item>
+							<item>trophyBasicImprovedVentilation</item>
+							<item>trophyUpgradedImprovedVentilation</item>
+						</value>
+					</item>
+					<item>
+						<name>equipment</name>
+						<type>list</type>
+						<value>
+							<item>cocacola</item>
+							<item>chocolate</item>
+							<item>ration</item>
+							<item>hotCoffee</item>
+							<item>ration_china</item>
+							<item>ration_uk</item>
+							<item>ration_japan</item>
+							<item>ration_czech</item>
+							<item>ration_sweden</item>
+							<item>ration_poland</item>
+							<item>ration_italy</item>
+						</value>
+					</item>
+					<item>
+						<name>skill</name>
+						<type>list</type>
+						<value>
+							<item>brotherhood</item>
+							<item>commander_emergency</item>
+							<item>loader_melee</item>
+							<item>loader_desperado</item>
+							<item>radioman_expert</item>
+							<item>radioman_sideBySide</item>
+						</value>
+					</item>
+					<item>
+						<name>battleBooster</name>
+						<type>list</type>
+						<value>
+							<item>improvedVentilationBattleBooster</item>
+							<item>rammerBattleBooster</item>
+						</value>
+					</item>
+					<item>
+						<name>postProgressionPairModifications</name>
+						<type>list</type>
+						<value>
+							<item>role_HT_support_pair_4_1</item>
+							<item>role_HT_support_pair_4_2</item>
+							<item>role_MT_sniper_pair_4_1</item>
+							<item>role_MT_sniper_pair_4_2</item>
+							<item>role_MT_support_pair_4_1</item>
+							<item>role_MT_support_pair_4_2</item>
+							<item>role_ATSPG_universal_pair_5_1</item>
+							<item>role_ATSPG_universal_pair_5_2</item>
+							<item>role_ATSPG_support_pair_4_1</item>
+							<item>role_ATSPG_support_pair_4_2</item>
+							<item>role_ATSPG_sniper_pair_4_1</item>
+							<item>role_ATSPG_sniper_pair_4_2</item>
+							<item>role_lightTank_pair_2_1</item>
+							<item>role_lightTank_pair_2_2</item>
+							<item>role_LT_wheeled_pair_4_1</item>
+							<item>role_LT_wheeled_pair_4_2</item>
+							<item>role_SPG_pair_4_1</item>
+							<item>role_SPG_pair_4_2</item>
+							<item>role_ATSPG_assault_pair_4_1</item>
+							<item>role_ATSPG_assault_pair_4_2</item>
+						</value>
+					</item>
+					<item>
+						<name>postProgressionBaseModifications</name>
+						<type>list</type>
+						<value>
+							<item>r228_node14</item>
+							<item>gb147_node18</item>
+						</value>
+					</item>
+				</value>
+			</item>
+			<item>
 				<name>enginePower</name>
 				<type>dict</type>
 				<value>
@@ -709,6 +803,7 @@
 							<item>role_MT_universal_base_4</item>
 							<item>role_MT_universal_base_5</item>
 							<item>a183_node17</item>
+							<item>a191_node2</item>
 							<item>g189_node5</item>
 							<item>pl37_node4</item>
 							<item>f135_node2</item>
@@ -724,6 +819,7 @@
 							<item>r228_node22</item>
 							<item>a182_node9</item>
 							<item>a179_node7</item>
+							<item>j52_node4</item>
 						</value>
 					</item>
 					<item>
@@ -905,6 +1001,7 @@
 							<item>stereoscope_tier1</item>
 							<item>stereoscope_tier2</item>
 							<item>stereoscope_tier3</item>
+							<item>deluxeStereoscope</item>
 							<item>trophyBasicImprovedVentilation</item>
 							<item>trophyUpgradedImprovedVentilation</item>
 							<item>trophyBasicCoatedOptics</item>
@@ -970,6 +1067,7 @@
 						<name>postProgressionBaseModifications</name>
 						<type>list</type>
 						<value>
+							<item>a191_node4</item>
 							<item>s36_node23</item>
 							<item>f135_node4</item>
 						</value>
@@ -1063,6 +1161,7 @@
 							<item>role_lightTank_base_3</item>
 							<item>role_LT_wheeled_base_4</item>
 							<item>role_LT_wheeled_base_5</item>
+							<item>a191_node5</item>
 							<item>g185_node5</item>
 							<item>a183_node20</item>
 							<item>f135_node5</item>
@@ -1076,6 +1175,7 @@
 							<item>gb147_node10</item>
 							<item>a182_node5</item>
 							<item>a179_node3</item>
+							<item>j52_node5</item>
 						</value>
 					</item>
 					<item>
@@ -1088,6 +1188,8 @@
 							<item>role_HT_assault_pair_4_2</item>
 							<item>role_mediumTank_pair_1_1</item>
 							<item>role_mediumTank_pair_1_2</item>
+							<item>role_MT_support_temperatureGun_pair_1_1</item>
+							<item>role_MT_support_temperatureGun_pair_1_2</item>
 							<item>role_MT_universal_pair_5_1</item>
 							<item>role_MT_universal_pair_5_2</item>
 							<item>role_ATSPG_pair_1_1</item>
@@ -1169,12 +1271,15 @@
 							<item>role_HT_universal_pair_4_2</item>
 							<item>role_mediumTank_pair_1_1</item>
 							<item>role_mediumTank_pair_1_2</item>
+							<item>role_MT_support_temperatureGun_pair_1_1</item>
+							<item>role_MT_support_temperatureGun_pair_1_2</item>
 						</value>
 					</item>
 					<item>
 						<name>postProgressionBaseModifications</name>
 						<type>list</type>
 						<value>
+							<item>a191_node7</item>
 							<item>r230_node10</item>
 							<item>pl37_node15</item>
 							<item>g188_node8</item>
@@ -1369,6 +1474,7 @@
 						<value>
 							<item>role_HT_universal_base_5</item>
 							<item>role_HT_universal_base_4</item>
+							<item>a191_node17</item>
 							<item>gb147_node19</item>
 							<item>r228_node2</item>
 							<item>a183_node5</item>
@@ -1380,6 +1486,7 @@
 							<item>f135_node17</item>
 							<item>a182_node4</item>
 							<item>a179_node10</item>
+							<item>ch70_node15</item>
 						</value>
 					</item>
 					<item>
@@ -1398,6 +1505,8 @@
 							<item>role_MT_sniper_pair_5_2</item>
 							<item>role_MT_support_pair_4_1</item>
 							<item>role_MT_support_pair_4_2</item>
+							<item>role_MT_support_temperatureGun_pair_4_1</item>
+							<item>role_MT_support_temperatureGun_pair_4_2</item>
 							<item>role_ATSPG_pair_2_1</item>
 							<item>role_ATSPG_pair_2_2</item>
 							<item>role_ATSPG_support_pair_4_1</item>
@@ -1479,6 +1588,7 @@
 							<item>role_SPG_base_4</item>
 							<item>role_SPG_base_5</item>
 							<item>a183_node14</item>
+							<item>a191_node22</item>
 							<item>g185_node1</item>
 							<item>gb147_node7</item>
 							<item>r230_node15</item>
@@ -1492,6 +1602,7 @@
 							<item>pl37_node1</item>
 							<item>a182_node12</item>
 							<item>ch67_node18</item>
+							<item>ch70_node4</item>
 							<item>a179_node15</item>
 						</value>
 					</item>
@@ -1586,6 +1697,8 @@
 							<item>role_MT_sniper_pair_4_2</item>
 							<item>role_MT_support_pair_4_1</item>
 							<item>role_MT_support_pair_4_2</item>
+							<item>role_MT_support_temperatureGun_pair_4_1</item>
+							<item>role_MT_support_temperatureGun_pair_4_2</item>
 							<item>role_ATSPG_universal_pair_5_1</item>
 							<item>role_ATSPG_universal_pair_5_2</item>
 							<item>role_ATSPG_support_pair_4_1</item>
@@ -1606,6 +1719,8 @@
 						<name>postProgressionBaseModifications</name>
 						<type>list</type>
 						<value>
+							<item>a191_node10</item>
+							<item>a191_node24</item>
 							<item>f136_node6</item>
 							<item>r228_node20</item>
 							<item>pl37_node8</item>
@@ -1631,6 +1746,9 @@
 							<item>f135_node10</item>
 							<item>f135_node18</item>
 							<item>f135_node24</item>
+							<item>j52_node1</item>
+							<item>j52_node9</item>
+							<item>ch70_node16</item>
 						</value>
 					</item>
 				</value>
@@ -1681,6 +1799,7 @@
 							<item>role_MT_universal_base_4</item>
 							<item>role_MT_universal_base_5</item>
 							<item>a183_node17</item>
+							<item>a191_node2</item>
 							<item>g189_node5</item>
 							<item>pl37_node4</item>
 							<item>f135_node2</item>
@@ -1696,6 +1815,7 @@
 							<item>r228_node22</item>
 							<item>a182_node9</item>
 							<item>a179_node7</item>
+							<item>j52_node4</item>
 						</value>
 					</item>
 					<item>
@@ -1801,6 +1921,7 @@
 						<value>
 							<item>camouflageNet_tier2</item>
 							<item>camouflageNet_tier3</item>
+							<item>deluxeCamouflageNet</item>
 							<item>additionalInvisibilityDevice_tier1</item>
 							<item>additionalInvisibilityDevice_tier2</item>
 							<item>additionalInvisibilityDevice_tier3</item>
@@ -1940,6 +2061,7 @@
 						<value>
 							<item>camouflageNet_tier2</item>
 							<item>camouflageNet_tier3</item>
+							<item>deluxeCamouflageNet</item>
 							<item>additionalInvisibilityDevice_tier1</item>
 							<item>additionalInvisibilityDevice_tier2</item>
 							<item>additionalInvisibilityDevice_tier3</item>
@@ -2054,6 +2176,7 @@
 							<item>a182_node2</item>
 							<item>a183_node1</item>
 							<item>a183_node3</item>
+							<item>a191_node9</item>
 							<item>ch67_node10</item>
 							<item>ch67_node25</item>
 							<item>ch67_node26</item>
@@ -2069,6 +2192,7 @@
 							<item>gb147_node1</item>
 							<item>gb147_node11</item>
 							<item>gb152_node16</item>
+							<item>j52_node2</item>
 							<item>r228_node1</item>
 							<item>r228_node13</item>
 							<item>r228_node25</item>
@@ -2076,6 +2200,8 @@
 							<item>r228_node7</item>
 							<item>r230_node17</item>
 							<item>s36_node17</item>
+							<item>ch70_node13</item>
+							<item>ch70_node25</item>
 						</value>
 					</item>
 				</value>
@@ -2144,6 +2270,7 @@
 						<name>postProgressionBaseModifications</name>
 						<type>list</type>
 						<value>
+							<item>a191_node13</item>
 							<item>s36_node15</item>
 							<item>s36_node14</item>
 							<item>g187_node16</item>
@@ -2158,6 +2285,8 @@
 							<item>ch67_node21</item>
 							<item>a179_node25</item>
 							<item>a179_node8</item>
+							<item>j52_node11</item>
+							<item>j52_node12</item>
 						</value>
 					</item>
 				</value>
@@ -2861,6 +2990,7 @@
 							<item>pl37_node25</item>
 							<item>pl37_node19</item>
 							<item>g187_node21</item>
+							<item>ch70_node11</item>
 						</value>
 					</item>
 				</value>
@@ -2943,6 +3073,7 @@
 							<item>a182_node3</item>
 							<item>ch67_node22</item>
 							<item>a179_node13</item>
+							<item>j52_node3</item>
 						</value>
 					</item>
 				</value>
@@ -2978,6 +3109,8 @@
 						<value>
 							<item>role_mediumTank_pair_1_1</item>
 							<item>role_mediumTank_pair_1_2</item>
+							<item>role_MT_support_temperatureGun_pair_1_1</item>
+							<item>role_MT_support_temperatureGun_pair_1_2</item>
 						</value>
 					</item>
 					<item>
@@ -2989,6 +3122,7 @@
 							<item>g187_node1</item>
 							<item>gb152_node24</item>
 							<item>ch67_node8</item>
+							<item>ch70_node2</item>
 						</value>
 					</item>
 				</value>
@@ -3028,6 +3162,7 @@
 							<item>r230_node1</item>
 							<item>g187_node1</item>
 							<item>ch67_node4</item>
+							<item>ch70_node3</item>
 						</value>
 					</item>
 				</value>
@@ -3058,6 +3193,7 @@
 						<name>postProgressionBaseModifications</name>
 						<type>list</type>
 						<value>
+							<item>a191_node14</item>
 							<item>gb147_node5</item>
 							<item>f136_node4</item>
 							<item>a183_node2</item>
@@ -3069,6 +3205,7 @@
 							<item>a182_node1</item>
 							<item>ch67_node12</item>
 							<item>a179_node17</item>
+							<item>ch70_node10</item>
 						</value>
 					</item>
 				</value>
@@ -3246,6 +3383,7 @@
 							<item>role_ATSPG_base_3</item>
 							<item>role_ATSPG_support_base_4</item>
 							<item>role_ATSPG_support_base_5</item>
+							<item>a191_node19</item>
 							<item>f135_node11</item>
 							<item>f136_node26</item>
 							<item>gb147_node2</item>
@@ -3257,6 +3395,7 @@
 							<item>a183_node26</item>
 							<item>r228_node26</item>
 							<item>a179_node18</item>
+							<item>j52_node18</item>
 						</value>
 					</item>
 					<item>
@@ -3287,6 +3426,7 @@
 							<item>role_HT_support_base_5</item>
 							<item>role_MT_sniper_base_4</item>
 							<item>role_MT_sniper_base_5</item>
+							<item>a191_node11</item>
 							<item>f135_node11</item>
 							<item>g185_node2</item>
 							<item>f136_node12</item>
@@ -3298,6 +3438,7 @@
 							<item>a183_node15</item>
 							<item>r228_node26</item>
 							<item>a179_node26</item>
+							<item>j52_node26</item>
 						</value>
 					</item>
 					<item>
@@ -3341,6 +3482,7 @@
 							<item>role_SPG_base_1</item>
 							<item>role_SPG_base_2</item>
 							<item>role_SPG_base_3</item>
+							<item>a191_node25</item>
 							<item>gb147_node3</item>
 							<item>f135_node7</item>
 							<item>a183_node6</item>
@@ -3395,6 +3537,8 @@
 							<item>role_HT_support_pair_5_2</item>
 							<item>role_MT_support_pair_4_1</item>
 							<item>role_MT_support_pair_4_2</item>
+							<item>role_MT_support_temperatureGun_pair_4_1</item>
+							<item>role_MT_support_temperatureGun_pair_4_2</item>
 							<item>role_ATSPG_support_pair_4_1</item>
 							<item>role_ATSPG_support_pair_4_2</item>
 						</value>
@@ -3403,6 +3547,8 @@
 						<name>postProgressionBaseModifications</name>
 						<type>list</type>
 						<value>
+							<item>a191_node3</item>
+							<item>a191_node18</item>
 							<item>f136_node8</item>
 						</value>
 					</item>
@@ -3418,12 +3564,15 @@
 						<value>
 							<item>role_mediumTank_pair_1_1</item>
 							<item>role_mediumTank_pair_1_2</item>
+							<item>role_MT_support_temperatureGun_pair_1_1</item>
+							<item>role_MT_support_temperatureGun_pair_1_2</item>
 						</value>
 					</item>
 					<item>
 						<name>postProgressionBaseModifications</name>
 						<type>list</type>
 						<value>
+							<item>a191_node1</item>
 							<item>gb152_node1</item>
 							<item>r230_node3</item>
 							<item>s36_node5</item>
@@ -3434,6 +3583,8 @@
 							<item>f136_node5</item>
 							<item>a182_node23</item>
 							<item>ch67_node1</item>
+							<item>j52_node23</item>
+							<item>ch70_node23</item>
 						</value>
 					</item>
 				</value>

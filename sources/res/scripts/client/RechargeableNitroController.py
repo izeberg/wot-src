@@ -1,18 +1,20 @@
-import logging, typing, BigWorld
+import typing, BigWorld
 from constants import RECHARGEABLE_NITRO_STATE
+from gui.shared.utils.decorators import ReprInjector
 from items.components.shared_components import RechargeableNitroParams
-from vehicles.components.vehicle_component import VehicleMechanicPrefabDynamicComponent
-from vehicles.mechanics.mechanic_commands import createMechanicCommandsEvents
+from vehicles.components.vehicle_component import VehicleDynamicComponent
+from vehicles.components.vehicle_prefabs import createMechanicPrefabSpawner
+from vehicles.mechanics.common import IMechanicComponent
+from vehicles.mechanics.mechanic_commands import IMechanicCommandsComponent, createMechanicCommandsEvents
 from vehicles.mechanics.mechanic_constants import VehicleMechanic, VehicleMechanicCommand
-from vehicles.mechanics.mechanic_commands import IMechanicCommandsComponent
 from vehicles.mechanics.mechanic_states import IMechanicState, IMechanicStatesComponent, createMechanicStatesEvents
-from vehicles.mechanics.mechanic_helpers import getVehicleMechanicParams
+from vehicles.mechanics.mechanic_helpers import getVehicleDescrMechanicParams
 if typing.TYPE_CHECKING:
     from typing import Any, Optional
     from vehicles.mechanics.mechanic_commands import IMechanicCommandsEvents
     from vehicles.mechanics.mechanic_states import IMechanicStatesEvents
-_logger = logging.getLogger(__name__)
 
+@ReprInjector.simple('state', 'endTime', 'remainingTime', 'isCharged', 'isEmpty')
 class RechargeableNitroState(typing.NamedTuple('RechargeableNitroState', (
  (
   'state', RECHARGEABLE_NITRO_STATE),
@@ -62,16 +64,22 @@ class RechargeableNitroState(typing.NamedTuple('RechargeableNitroState', (
         return self.state != other.state
 
 
-class RechargeableNitroController(VehicleMechanicPrefabDynamicComponent, IMechanicCommandsComponent, IMechanicStatesComponent):
+@ReprInjector.withParent()
+class RechargeableNitroController(VehicleDynamicComponent, IMechanicComponent, IMechanicCommandsComponent, IMechanicStatesComponent):
 
     def __init__(self):
         super(RechargeableNitroController, self).__init__()
-        self.__commandsEvents = createMechanicCommandsEvents()
         self.__params = None
         self.__currentState = RechargeableNitroState(RECHARGEABLE_NITRO_STATE.NOT_RUNNING, 0.0, 0.0, False, False, False, None)
+        self.__mechanicPrefabSpawner = createMechanicPrefabSpawner(self.entity, self)
+        self.__commandsEvents = createMechanicCommandsEvents(self)
         self.__statesEvents = createMechanicStatesEvents(self)
         self._initComponent()
         return
+
+    @property
+    def vehicleMechanic(self):
+        return VehicleMechanic.RECHARGEABLE_NITRO
 
     @property
     def commandsEvents(self):
@@ -110,13 +118,15 @@ class RechargeableNitroController(VehicleMechanicPrefabDynamicComponent, IMechan
 
     def _onAppearanceReady(self):
         super(RechargeableNitroController, self)._onAppearanceReady()
+        self.__mechanicPrefabSpawner.loadAppearancePrefab()
         self.__statesEvents.processStatePrepared()
 
-    def _onComponentAppearanceUpdate(self):
+    def _onComponentAppearanceUpdate(self, **kwargs):
+        super(RechargeableNitroController, self)._onComponentAppearanceUpdate(**kwargs)
         if self.stateStatus:
             self.__currentState = RechargeableNitroState.fromComponentStatus(self.stateStatus, self.__params)
         self.__statesEvents.updateMechanicState(self.__currentState)
 
     def _collectComponentParams(self, typeDescriptor):
         super(RechargeableNitroController, self)._collectComponentParams(typeDescriptor)
-        self.__params = getVehicleMechanicParams(VehicleMechanic.RECHARGEABLE_NITRO, typeDescriptor)
+        self.__params = getVehicleDescrMechanicParams(typeDescriptor, self.vehicleMechanic)

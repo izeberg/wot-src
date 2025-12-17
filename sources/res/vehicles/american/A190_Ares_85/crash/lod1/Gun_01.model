@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A190_Ares_85/crash/lod1/Gun_01</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/american/A190_Ares_85/crash/lod2/Gun_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.396179 -0.346570 -1.036000</min>
+		<max>0.261642 0.290729 4.925807</max>
+	</visibilityBox>
+</root>

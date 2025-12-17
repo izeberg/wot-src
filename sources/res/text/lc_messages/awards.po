@@ -10,6 +10,31 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "collector20/awardNameTemplate/badge"
+msgstr "{name}"
+
+msgid "collector20/awardNameTemplate/medal"
+msgstr "Медаль {name}"
+
+msgid "collector20/awardNameTemplate/stripe"
+msgstr "Отметка {name}"
+
+msgid "collector20/button/affirmative"
+msgstr "Так точно!"
+
+msgid "collector20/subTitle"
+msgstr "ПОЗДРАВЛЯЕМ"
+
+msgid "collector20/title"
+msgstr "ВЫ СТАЛИ {gold_Open}ВЫДАЮЩИМСЯ КОЛЛЕКЦИОНЕРОМ{gold_Close}"
+
+msgid "collector20/underTitle"
+msgstr ""
+"Вы собрали превосходную коллекцию исследуемой техники высокого уровня. "
+"Благодарим за вашу преданность и самоотдачу. В знак нашей признательности вы"
+" награждаетесь званием «Выдающийся коллекционер». Носите его с гордостью — "
+"вы это заслужили!"
+
 msgid "multipleAwards/additionalTitle"
 msgstr "Также получено:"
 

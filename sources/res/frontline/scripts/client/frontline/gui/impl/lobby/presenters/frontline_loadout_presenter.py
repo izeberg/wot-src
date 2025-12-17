@@ -1,5 +1,4 @@
 import typing
-from CurrentVehicle import g_currentVehicle
 from gui.Scaleform.genConsts.TOOLTIPS_CONSTANTS import TOOLTIPS_CONSTANTS
 from gui.Scaleform.lobby_entry import getLobbyStateMachine
 from gui.impl.gen import R
@@ -59,15 +58,9 @@ class FrontlineLoadoutPresenter(LoadoutPresenter):
            hangar.Consumables(): lambda : ConsumablesPresenter(self._vehInteractingItem), 
            frontline.loadout.BattleAbilities(): lambda : FrontlineAbilityPresenter(self._vehInteractingItem, self.getSlotSelectionObserver())}
 
-    def __updateAmmunitionGroupsController(self, recreate=False, sectionName=None):
-        if not g_currentVehicle.isPresent():
-            return
-        vehicle = self._vehInteractingItem.getItem()
-        if self.__ammunitionGroupsController:
-            self.__ammunitionGroupsController.updateVehicle(vehicle)
-        else:
-            self.__ammunitionGroupsController = FLHangarAmmunitionGroupsController(vehicle)
-        self.__updateModel(recreate, sectionName)
+    @property
+    def _getGroupControllerCls(self):
+        return FLHangarAmmunitionGroupsController
 
 
 class FrontlineShellsPresenter(ShellsPresenter):

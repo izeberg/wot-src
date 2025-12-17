@@ -111,11 +111,11 @@ package net.wg.gui.battle.views.decorativeCrosshair
       
       public var status:OverheatStatus = null;
       
-      private var _state:uint;
+      private var _overheatState:uint;
       
       public function OverheatDecorativeCrosshair()
       {
-         this._state = STATE_NULL;
+         this._overheatState = STATE_NULL;
          super();
          this.mainProgress.setDependency(this.counter);
       }
@@ -145,20 +145,20 @@ package net.wg.gui.battle.views.decorativeCrosshair
       
       public function as_updateState(param1:int) : void
       {
-         if(param1 == STATE_NULL || param1 == this._state)
+         if(param1 == STATE_NULL || param1 == this._overheatState)
          {
             return;
          }
-         this.heatIcon.setState(this._state,param1);
+         this.heatIcon.setState(this._overheatState,param1);
          if(param1 == STATE_CHARGE_MIN)
          {
             this.mainProgress.setHeatProgress(0);
          }
-         this.overheatDecoration.setState(this._state,param1);
+         this.overheatDecoration.setState(this._overheatState,param1);
          this.status.setState(param1);
          this.mainProgress.setState(param1);
          this.decorationSmall.visible = !(param1 == OverheatDecorativeCrosshair.STATE_DT_GAIN || param1 == OverheatDecorativeCrosshair.STATE_STACK_GAIN || param1 == OverheatDecorativeCrosshair.STATE_CHARGE_MAX);
-         this._state = param1;
+         this._overheatState = param1;
       }
       
       override public function updateScale(param1:int) : void

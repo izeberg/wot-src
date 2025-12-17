@@ -485,7 +485,7 @@ package net.wg.mock
       {
       }
       
-      public function get isOnStage() : Boolean
+      public function get isActive() : Boolean
       {
          return false;
       }

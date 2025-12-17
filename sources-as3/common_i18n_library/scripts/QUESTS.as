@@ -3401,6 +3401,8 @@ package
       
       public static const DAILYQUESTS_POSTBATTLE_GENERICTITLE_EPIC:String = "#quests:dailyQuests/postBattle/genericTitle_epic";
       
+      public static const DAILYQUESTS_POSTBATTLE_EPIC_DESCRIPTION:String = "#quests:dailyQuests/postBattle/epic/description";
+      
       public static const DAILYQUESTS_BONUSQUEST_BONUSMISSIONTITLE:String = "#quests:dailyQuests/bonusQuest/bonusMissionTitle";
       
       public static const DAILYQUESTS_BONUSQUEST_COUNTDOWN_HRS:String = "#quests:dailyQuests/bonusQuest/countDown_hrs";

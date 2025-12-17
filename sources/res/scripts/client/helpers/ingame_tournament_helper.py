@@ -1,5 +1,10 @@
 from enum import Enum
 
+class IngameTournamentType(Enum):
+    WCI = 'wci'
+    OLS = 'ols'
+
+
 class IngameTournamentState(Enum):
     INTRO = 'tournament_intro'
     IN_PROGRESS = 'tournament_in_live'

@@ -91,9 +91,7 @@ class CommonHintModel(SchemaDependentModel, typing.Generic[(HMCPropsType, HMCCon
 HMCType = typing.TypeVar('HMCType', bound=CommonHintModel)
 
 def validateCommonHintPropsModel(model):
-    arenaBonusTypes = {bt.arenaBonusType for bt in model.battleTypes}
-    if len(model.battleTypes) != len(arenaBonusTypes):
-        raise exceptions.ValidationError('Arena bonus types should be unique.')
+    validate.ValidateIterable([validate.IterableOfUnique('arenaBonusType')])(model.battleTypes)
 
 
 class CommonHintPropsSchema(BattleTypesSchema[HMCPropsType]):

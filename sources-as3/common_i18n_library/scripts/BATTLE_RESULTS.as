@@ -207,6 +207,12 @@ package
       
       public static const COMMON_NOPROGRESS:String = "#battle_results:common/noProgress";
       
+      public static const COMMON_MISSIONS_NOPROGRESS_HEADER:String = "#battle_results:common/missions/noProgress/header";
+      
+      public static const COMMON_MISSIONS_NOPROGRESS_DESCRIPTION:String = "#battle_results:common/missions/noProgress/description";
+      
+      public static const COMMON_MISSIONS_NOPROGRESS_BUTTON:String = "#battle_results:common/missions/noProgress/button";
+      
       public static const COMMON_TOOLTIP_DAMAGE_HEADER:String = "#battle_results:common/tooltip/damage/header";
       
       public static const COMMON_TOOLTIP_DAMAGE_DESCRIPTION:String = "#battle_results:common/tooltip/damage/description";
@@ -917,7 +923,25 @@ package
       
       public static const PRESTIGE_COMMON_DESCRIPTION:String = "#battle_results:prestige/common/description";
       
+      public static const PRESTIGE_NEWLEVELACHIEVED_DESCRIPTION:String = "#battle_results:prestige/newLevelAchieved/description";
+      
+      public static const PRESTIGE_MAXLEVELREACHED_DESCRIPTION:String = "#battle_results:prestige/maxLevelReached/description";
+      
       public static const PRESTIGE_MAX_DESCRIPTION:String = "#battle_results:prestige/max/description";
+      
+      public static const PROGRESSION_COMPLETEDPOINTSFROM_WITHOUTLABEL:String = "#battle_results:progression/completedPointsFrom/withoutLabel";
+      
+      public static const PROGRESSION_COMPLETEDPOINTSFROM_WITHLABEL:String = "#battle_results:progression/completedPointsFrom/withLabel";
+      
+      public static const PROGRESSION_MISSIONSCOMPLETECOUNTER:String = "#battle_results:progression/missionsCompleteCounter";
+      
+      public static const PROGRESSION_COMPLETED:String = "#battle_results:progression/completed";
+      
+      public static const PROGRESSION_TOTALEARNED:String = "#battle_results:progression/totalEarned";
+      
+      public static const PROGRESSION_PROGRESSUNAVAILABLE:String = "#battle_results:progression/progressUnavailable";
+      
+      public static const PROGRESSION_LINKBTN_INFO:String = "#battle_results:progression/linkBtn/info";
       
       public static const BATTLERESULT_TEAM_PRESTIGEPOINTS_HEADER:String = "#battle_results:battleResult/team/prestigePoints/header";
       
@@ -936,6 +960,8 @@ package
       public static const TEAM_STATS_PARAMETER_DAMAGEDEALT:String = "#battle_results:team/stats/parameter/damageDealt";
       
       public static const TEAM_STATS_PARAMETER_SNIPERDAMAGEDEALT:String = "#battle_results:team/stats/parameter/sniperDamageDealt";
+      
+      public static const TEAM_STATS_PARAMETER_ARTILLERYFORTEQUIPDAMAGEDEALT:String = "#battle_results:team/stats/parameter/artilleryFortEquipDamageDealt";
       
       public static const TEAM_STATS_PARAMETER_DIRECTHITSRECEIVED:String = "#battle_results:team/stats/parameter/directHitsReceived";
       
@@ -1006,6 +1032,48 @@ package
       public static const BATTLERATING_TOOLTIP_BETTER_HEADER:String = "#battle_results:battleRating/tooltip/better/header";
       
       public static const BATTLERATING_TOOLTIP_BETTER_BODY:String = "#battle_results:battleRating/tooltip/better/body";
+      
+      public static const MISSIONSPROGRESS_ABOUTVEHICLE_TITLE:String = "#battle_results:missionsProgress/aboutVehicle/title";
+      
+      public static const MISSIONSPROGRESS_ABOUTVEHICLE_DESCRIPTION:String = "#battle_results:missionsProgress/aboutVehicle/description";
+      
+      public static const MISSIONSPROGRESS_ABOUTVEHICLE_PREDICTION:String = "#battle_results:missionsProgress/aboutVehicle/prediction";
+      
+      public static const MISSIONSPROGRESS_ABOUTVEHICLE_BUTTON:String = "#battle_results:missionsProgress/aboutVehicle/button";
+      
+      public static const MISSIONSPROGRESS_BATTLEMATTERS_TITLE:String = "#battle_results:missionsProgress/battleMatters/title";
+      
+      public static const MISSIONSPROGRESS_BATTLEMATTERS_DONEINFO:String = "#battle_results:missionsProgress/battleMatters/doneInfo";
+      
+      public static const MISSIONSPROGRESS_NOTIFICATIONSTABS_DAILY:String = "#battle_results:missionsProgress/notificationsTabs/daily";
+      
+      public static const MISSIONSPROGRESS_NOTIFICATIONSTABS_PREMIUM:String = "#battle_results:missionsProgress/notificationsTabs/premium";
+      
+      public static const MISSIONSPROGRESS_NOTIFICATIONSTABS_EPIC:String = "#battle_results:missionsProgress/notificationsTabs/epic";
+      
+      public static const MISSIONSPROGRESS_NOTIFICATIONSTABS_COMMON:String = "#battle_results:missionsProgress/notificationsTabs/common";
+      
+      public static const MISSIONSPROGRESS_NOTIFICATIONSTABS_ABOUTVEHICLE_VEHICLE:String = "#battle_results:missionsProgress/notificationsTabs/aboutVehicle/vehicle";
+      
+      public static const MISSIONSPROGRESS_NOTIFICATIONSTABS_ABOUTVEHICLE_MODULE:String = "#battle_results:missionsProgress/notificationsTabs/aboutVehicle/module";
+      
+      public static const MISSIONSPROGRESS_NOTIFICATIONSTABS_WEEKLY:String = "#battle_results:missionsProgress/notificationsTabs/weekly";
+      
+      public static const MISSIONSPROGRESS_NOTIFICATIONSTABS_BATTLEPASS_CHAPTERCOMPLETE:String = "#battle_results:missionsProgress/notificationsTabs/battlePass/chapterComplete";
+      
+      public static const MISSIONSPROGRESS_NOTIFICATIONSTABS_BATTLEPASS_STAGECOMPLETE:String = "#battle_results:missionsProgress/notificationsTabs/battlePass/stageComplete";
+      
+      public static const MISSIONSPROGRESS_NOTIFICATIONSTABS_ELITESYSTEM_NEWLEVEL:String = "#battle_results:missionsProgress/notificationsTabs/eliteSystem/newLevel";
+      
+      public static const MISSIONSPROGRESS_NOTIFICATIONSTABS_ELITESYSTEM_MAXLEVEL:String = "#battle_results:missionsProgress/notificationsTabs/eliteSystem/maxLevel";
+      
+      public static const MISSIONSPROGRESS_NOTIFICATIONSTABS_BATTLEMATTERS:String = "#battle_results:missionsProgress/notificationsTabs/battleMatters";
+      
+      public static const MISSIONSPROGRESS_NOTIFICATIONSTABS_PERSONALMISSIONS_OPERATION_MISSION_COMPLETE:String = "#battle_results:missionsProgress/notificationsTabs/personalMissions/operation_mission_complete";
+      
+      public static const CONDITIONS_TYPE_OR:String = "#battle_results:conditions/type/or";
+      
+      public static const CONDITIONS_TYPE_AND:String = "#battle_results:conditions/type/and";
        
       
       public function BATTLE_RESULTS()

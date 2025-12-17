@@ -258,7 +258,7 @@ package net.wg.gui.components.crosshairPanel
          removeEventListener(CrosshairPanelEvent.SOUND,this.onCrosshairPanelSoundHandler);
          this.clearReloadingTimer();
          this.clearAutoloaderReloadTimer();
-         this.clearAutoloaderAtimationTimer();
+         this.clearAutoloaderAnimationTimer();
          this.clearExtraShotClipTimer();
          this.clearTweens();
          this._gunMarkersContainer.dispose();
@@ -537,7 +537,7 @@ package net.wg.gui.components.crosshairPanel
       
       public function as_setAutoloaderReloading(param1:Number, param2:Number) : void
       {
-         this.clearAutoloaderAtimationTimer();
+         this.clearAutoloaderAnimationTimer();
          this._autoloaderAnimationBaseTime = param2;
          this._autoloaderAnimationFinishTime = getTimer() + param1 * CrosshairConsts.MS_IN_SECOND;
          if(param1 > 0)
@@ -609,9 +609,20 @@ package net.wg.gui.components.crosshairPanel
          }
       }
       
-      public function as_setDualAccActive(param1:Boolean) : void
+      public function as_setSecondaryGunMarkerActive(param1:Boolean) : void
       {
-         this._gunMarkersContainer.setDualAccActive(param1);
+         if(this._gunMarkersContainer != null)
+         {
+            this._gunMarkersContainer.setSecondaryActive(param1);
+         }
+      }
+      
+      public function as_setDispersionCircleThickness(param1:Boolean) : void
+      {
+         if(this._gunMarkersContainer != null)
+         {
+            this._gunMarkersContainer.setDispersionCircleThickness(param1);
+         }
       }
       
       public function as_setEngineCrushError(param1:String) : void
@@ -1103,7 +1114,7 @@ package net.wg.gui.components.crosshairPanel
       {
          if(getTimer() >= this._autoloaderAnimationFinishTime)
          {
-            this.clearAutoloaderAtimationTimer();
+            this.clearAutoloaderAnimationTimer();
          }
          this.applyAutoloaderAnimationState();
       }
@@ -1136,7 +1147,7 @@ package net.wg.gui.components.crosshairPanel
          this._autoloaderTimer = this.clearTimer(this._autoloaderTimer);
       }
       
-      private function clearAutoloaderAtimationTimer() : void
+      private function clearAutoloaderAnimationTimer() : void
       {
          this._autoloaderAnimationTimer = this.clearTimer(this._autoloaderAnimationTimer);
       }

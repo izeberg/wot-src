@@ -1,5 +1,6 @@
 from __future__ import absolute_import
 from inspect import getmembers
+from past.builtins import long
 import logging, typing
 from account_helpers.AccountSettings import AccountSettings
 from frameworks.wulf import ViewModel
@@ -41,7 +42,7 @@ class SettingsPresenter(ViewComponent[SettingsModel]):
                 valueT = type(value)
                 prop = getter()
                 propT = type(prop)
-                if propT is type(1):
+                if propT is long:
                     propT = int
                 if valueT is not propT:
                     _logger.error('Setting property "%s" type mismatch %s != %s', key, valueT, propT)

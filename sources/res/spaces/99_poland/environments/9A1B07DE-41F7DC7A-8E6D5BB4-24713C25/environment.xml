@@ -84,28 +84,25 @@
 		</bloom>
 		<environment>
 			<sunlightLumMultiplier>20.730000</sunlightLumMultiplier>
-			<ambientLumMultiplier>1.000000</ambientLumMultiplier>
 			<sunLumMultiplier>50.000000</sunLumMultiplier>
 			<skyLumMultiplier>5.000000</skyLumMultiplier>
+			<skyLumMultiplierDeferred>1.000000</skyLumMultiplierDeferred>
 			<LDR2HDRenableLumaMask>false</LDR2HDRenableLumaMask>
 			<LDR2HDRsaturation>1.000000</LDR2HDRsaturation>
 		</environment>
 		<tonemappings>
 			<tonemapping>
 				<name>RexpTM</name>
-				<middleGray>0.400000</middleGray>
 				<whitePoint>1.000000</whitePoint>
 				<blackPoint>1.000000</blackPoint>
 			</tonemapping>
 			<tonemapping>
 				<name>FilmicTM</name>
-				<middleGray>0.310000</middleGray>
 				<whitePoint>12.790000</whitePoint>
 				<blackPoint>3.500000</blackPoint>
 			</tonemapping>
 			<tonemapping>
 				<name>LinearExpTM</name>
-				<middleGray>0.480000</middleGray>
 				<whitePoint>1.750000</whitePoint>
 				<blackPoint>1.090000</blackPoint>
 			</tonemapping>
@@ -231,9 +228,9 @@
 	</dirt>
 	<SkyDome>
 		<worldMatrix>
-			<row0>0.260170 0.000000 -0.965563</row0>
+			<row0>0.992546 0.000000 -0.121869</row0>
 			<row1>0.000000 1.000000 0.000000</row1>
-			<row2>0.965563 0.000000 0.260170</row2>
+			<row2>0.121869 0.000000 0.992546</row2>
 			<row3>0.000000 4216.870117 0.000000</row3>
 		</worldMatrix>
 		<worldMatrixForward>
@@ -290,5 +287,6 @@
 		<bakedAOPower>0.450000</bakedAOPower>
 		<vegetationMetallicMult>0.650000</vegetationMetallicMult>
 		<transmissionMult>0.800000</transmissionMult>
+		<waterReflectionAttenuation>1.000000</waterReflectionAttenuation>
 	</SimplifiedDeferred>
 </root>

@@ -56,6 +56,7 @@
 		<_122mm_D_25TK>60</_122mm_D_25TK>
 		<_100_mm_S_3>61</_100_mm_S_3>
 		<_105mm_dvojkanon_vz_40N>62</_105mm_dvojkanon_vz_40N>
+		<_107mm_vz_63>63</_107mm_vz_63>
 		<_100mm_AK1_50_51>2000</_100mm_AK1_50_51>
 		<_75mm_Skoda_A18_24>2001</_75mm_Skoda_A18_24>
 		<_105mm_vz_40N_1000>2002</_105mm_vz_40N_1000>
@@ -757,10 +758,10 @@
 				<rate>3000</rate>
 			</clip>
 			<autoShoot>
-				<shotDispersionPerSec>
-					1.25
+				<shotDispersionPerShot>
+					0.025
 					<!--BW_String-->
-				</shotDispersionPerSec>
+				</shotDispersionPerShot>
 				<maxShotDispersion>10</maxShotDispersion>
 				<groupSize>1</groupSize>
 			</autoShoot>
@@ -856,10 +857,10 @@
 				<rate>1950</rate>
 			</clip>
 			<autoShoot>
-				<shotDispersionPerSec>
-					1.25
+				<shotDispersionPerShot>
+					0.03846154
 					<!--BW_String-->
-				</shotDispersionPerSec>
+				</shotDispersionPerShot>
 				<maxShotDispersion>10</maxShotDispersion>
 				<groupSize>1</groupSize>
 			</autoShoot>
@@ -1389,10 +1390,10 @@
 				<rate>1650</rate>
 			</clip>
 			<autoShoot>
-				<shotDispersionPerSec>
-					1.25
+				<shotDispersionPerShot>
+					0.04545455
 					<!--BW_String-->
-				</shotDispersionPerSec>
+				</shotDispersionPerShot>
 				<maxShotDispersion>10</maxShotDispersion>
 				<groupSize>1</groupSize>
 			</autoShoot>
@@ -1494,10 +1495,10 @@
 				<rate>1650</rate>
 			</clip>
 			<autoShoot>
-				<shotDispersionPerSec>
-					1.25
+				<shotDispersionPerShot>
+					0.4545455
 					<!--BW_String-->
-				</shotDispersionPerSec>
+				</shotDispersionPerShot>
 				<maxShotDispersion>10</maxShotDispersion>
 				<groupSize>1</groupSize>
 			</autoShoot>
@@ -1597,10 +1598,10 @@
 				<rate>1200</rate>
 			</clip>
 			<autoShoot>
-				<shotDispersionPerSec>
-					1.25
+				<shotDispersionPerShot>
+					0.0625
 					<!--BW_String-->
-				</shotDispersionPerSec>
+				</shotDispersionPerShot>
 				<maxShotDispersion>10</maxShotDispersion>
 				<groupSize>1</groupSize>
 			</autoShoot>
@@ -1699,10 +1700,10 @@
 				<rate>1200</rate>
 			</clip>
 			<autoShoot>
-				<shotDispersionPerSec>
-					1.25
+				<shotDispersionPerShot>
+					0.0625
 					<!--BW_String-->
-				</shotDispersionPerSec>
+				</shotDispersionPerShot>
 				<maxShotDispersion>10</maxShotDispersion>
 				<groupSize>1</groupSize>
 			</autoShoot>
@@ -4746,6 +4747,118 @@
 				</_105mm_Narazovy_14_48_44>
 			</shots>
 		</_105mm_vz_39NP>
+		<_107mm_vz_63>
+			<userString>#czech_vehicles:_107mm_vz_63</userString>
+			<tags/>
+			<level>9</level>
+			<price>200000</price>
+			<notInShop>true</notInShop>
+			<impulse>
+				0.44
+				<!--BW_String-->
+			</impulse>
+			<recoil>
+				<lodDist>MEDIUM</lodDist>
+				<amplitude>
+					0.6
+					<!--BW_String-->
+				</amplitude>
+				<recoilEffect>main</recoilEffect>
+			</recoil>
+			<effects>shot_large_mb</effects>
+			<reloadEffect>reload85_107</reloadEffect>
+			<pitchLimits>
+				<minPitch>
+					0.0 -24.0 1.0 -24.0
+					<!--BW_String-->
+				</minPitch>
+				<maxPitch>
+					0.0 7.0 1.0 7.0
+					<!--BW_String-->
+				</maxPitch>
+			</pitchLimits>
+			<turretYawLimits>-180 180</turretYawLimits>
+			<rotationSpeed>
+				26.25
+				<!--BW_String-->
+			</rotationSpeed>
+			<reloadTime>
+				8.8
+				<!--BW_String-->
+			</reloadTime>
+			<maxAmmo>32</maxAmmo>
+			<aimingTime>
+				2.85
+				<!--BW_String-->
+			</aimingTime>
+			<weight>2840</weight>
+			<maxHealth>200</maxHealth>
+			<maxRegenHealth>100</maxRegenHealth>
+			<repairCost>9</repairCost>
+			<invisibilityFactorAtShot>
+				0.1
+				<!--BW_String-->
+			</invisibilityFactorAtShot>
+			<shotDispersionRadius>
+				0.422857142857143
+				<!--BW_String-->
+			</shotDispersionRadius>
+			<shotDispersionFactors>
+				<turretRotation>
+					0.08
+					<!--BW_String-->
+				</turretRotation>
+				<afterShot>
+					3.0
+					<!--BW_String-->
+				</afterShot>
+				<whileGunDamaged>
+					2.0
+					<!--BW_String-->
+				</whileGunDamaged>
+			</shotDispersionFactors>
+			<shots>
+				<_107mm_Vz_63N_OPG>
+					<defaultPortion>
+						0.95
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>1043</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>242 229</piercingPower>
+				</_107mm_Vz_63N_OPG>
+				<_107mm_Vz_63_prupalny>
+					<defaultPortion>
+						0.0
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>1304</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>290 270</piercingPower>
+				</_107mm_Vz_63_prupalny>
+				<_107mm_Narazovy_vz_63>
+					<defaultPortion>
+						0.05
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>1043</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>54 54</piercingPower>
+				</_107mm_Narazovy_vz_63>
+			</shots>
+		</_107mm_vz_63>
 		<_122mm_vz_44_51>
 			<userString>#czech_vehicles:_122mm_vz_44_51</userString>
 			<tags/>
@@ -5506,7 +5619,7 @@
 			<userString>#czech_vehicles:_130mm_vz_54</userString>
 			<tags/>
 			<level>10</level>
-			<price>310000</price>
+			<price>320000</price>
 			<impulse>
 				0.62
 				<!--BW_String-->

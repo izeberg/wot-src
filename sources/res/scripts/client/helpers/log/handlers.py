@@ -1,3 +1,4 @@
+from __future__ import absolute_import, print_function
 import cStringIO, logging, sys, traceback
 from contextlib import closing
 import BigWorld
@@ -35,19 +36,19 @@ class WotExtendedFormatter(WotFormatter):
             frame = frame.f_back
 
         with closing(cStringIO.StringIO()) as (sio):
-            print >> sio, message
+            print(message, file=sio)
             for frame in reversed(frames):
-                print >> sio
-                print >> sio, ('Frame {} in {} at line {}').format(frame.f_code.co_name, frame.f_code.co_filename, frame.f_lineno)
+                print('', file=sio)
+                print(('Frame {} in {} at line {}').format(frame.f_code.co_name, frame.f_code.co_filename, frame.f_lineno), file=sio)
                 size = self._frameSize
                 for key, value in frame.f_locals.iteritems():
                     if not size:
                         break
                     size -= 1
                     try:
-                        print >> sio, ('\t{:>20} = {}').format(key, repr(value))
+                        print(('\t{:>20} = {}').format(key, repr(value)), file=sio)
                     except Exception:
-                        print >> sio, ('\t{:>20} = <UNDEFINED>').format(key)
+                        print(('\t{:>20} = <UNDEFINED>').format(key), file=sio)
 
             return sio.getvalue()
 

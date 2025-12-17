@@ -282,6 +282,9 @@ msgstr "Участвующая техника:"
 msgid "achievement/params/vehiclesToBuy"
 msgstr "Осталось купить:"
 
+msgid "achievement/params/vehiclesToHaveInGarage"
+msgstr "Есть в Ангаре:"
+
 msgid "achievement/params/vehiclesToKill"
 msgstr "Осталось уничтожить:"
 
@@ -7702,6 +7705,23 @@ msgstr ""
 msgid "notrecruitedtankman/ch_compensation/label"
 msgstr "Уникальный член экипажа"
 
+msgid "notrecruitedtankman/chef_damien/desc"
+msgstr ""
+"Где бы ни оказался Дамьен Тутте, он всегда готов сотворить гастрономическое "
+"чудо. Для этого кулинарного смельчака и танкового виртуоза поле боя, как и "
+"кухня, — это место самовыражения. Щепотка соли здесь, взрыв фугасного "
+"снаряда там — вот те штрихи, иногда тонкие, иногда не очень, из которых "
+"состоят его шедевры. Даже когда ингредиенты ограничены, для тех, кто не "
+"боится экспериментировать, возможности безграничны. Дайте Дамьену походный "
+"примус, и он устроит пир. Дайте ему вражеский танк, и он превратит его в "
+"кучу металлолома. Просто позвольте ему готовить."
+
+msgid "notrecruitedtankman/chef_damien/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/chef_damien/label"
+msgstr "?empty?"
+
 msgid "notrecruitedtankman/commander_baroness/desc"
 msgstr ""
 "Будучи разбалованным ребёнком европейских аристократов, Баронесса была "
@@ -8746,6 +8766,77 @@ msgstr "Достичь указанного уровня атмосферы пр
 msgid "notrecruitedtankman/ny25defaultGirl/label"
 msgstr "Новогоднее наступление 2025"
 
+msgid "notrecruitedtankman/ny26_girl_1/desc"
+msgstr ""
+"Выдавалась в награду за достижение определённого уровня атмосферы праздника "
+"в рамках события «Новогоднее наступление 2026». У девушки-танкиста изучено "
+"«Боевое братство», а также достаточно опыта для изучения дополнительного "
+"навыка на выбор."
+
+msgid "notrecruitedtankman/ny26_girl_1/label"
+msgstr "Новогоднее наступление 2026"
+
+msgid "notrecruitedtankman/ny26_girl_2/desc"
+msgstr ""
+"Выдавалась в награду за достижение определённого уровня атмосферы праздника "
+"в рамках события «Новогоднее наступление 2026». У девушки-танкиста изучено "
+"«Боевое братство», а также достаточно опыта для изучения дополнительного "
+"навыка на выбор."
+
+msgid "notrecruitedtankman/ny26_girl_2/label"
+msgstr "Новогоднее наступление 2026"
+
+msgid "notrecruitedtankman/ny26_girl_3/desc"
+msgstr ""
+"Выдавалась в награду за достижение определённого уровня атмосферы праздника "
+"в рамках события «Новогоднее наступление 2026». У девушки-танкиста изучено "
+"«Боевое братство», а также достаточно опыта для изучения дополнительного "
+"навыка на выбор."
+
+msgid "notrecruitedtankman/ny26_girl_3/label"
+msgstr "Новогоднее наступление 2026"
+
+msgid "notrecruitedtankman/ny26_girl_4/desc"
+msgstr ""
+"Выдавалась в награду за достижение определённого уровня атмосферы праздника "
+"в рамках события «Новогоднее наступление 2026». У девушки-танкиста изучено "
+"«Боевое братство», а также достаточно опыта для изучения дополнительного "
+"навыка на выбор."
+
+msgid "notrecruitedtankman/ny26_girl_4/label"
+msgstr "Новогоднее наступление 2026"
+
+msgid "notrecruitedtankman/ny26_men/desc"
+msgstr ""
+"Бывает ощущение, что вашим сражениям не хватает изюминки? Командир "
+"Камбербэтч к вашим услугам. Его убийственное обаяние и безупречный вкус "
+"привнесут нотку изысканности в любой бой. В портфолио мэтра театра и кино "
+"есть самые разнообразные роли — он настоящий виртуоз и мастер "
+"перевоплощения. Бенедикт будет управлять вашей машиной так же, как и "
+"зрителем: с неизменным шармом, сокрушительным английским юмором и парочкой "
+"хлёстких фраз, которые ранят противника сильнее, чем снаряды."
+
+msgid "notrecruitedtankman/ny26_men/event"
+msgstr "Новогоднее наступление 2026"
+
+msgid "notrecruitedtankman/ny26_men/label"
+msgstr "Новогоднее наступление 2026"
+
+msgid "notrecruitedtankman/ny26defaultGirl/desc"
+msgstr ""
+"Девушка-танкист выдаётся на определённом уровне атмосферы праздника. У неё "
+"изучено «Боевое братство» и достаточно опыта для изучения ещё одного навыка "
+"на выбор."
+
+msgid "notrecruitedtankman/ny26defaultGirl/event"
+msgstr "Новогоднее наступление 2026"
+
+msgid "notrecruitedtankman/ny26defaultGirl/howToGetInfo"
+msgstr "Достичь указанного уровня атмосферы праздника."
+
+msgid "notrecruitedtankman/ny26defaultGirl/label"
+msgstr "Новогоднее наступление 2026"
+
 msgid "notrecruitedtankman/offspring_commander/desc"
 msgstr ""
 "Неутомимый и харизматичный вокалист, талантливый гитарист и просто отличный "
@@ -9211,6 +9302,39 @@ msgstr "?empty?"
 
 msgid "notrecruitedtankman/tankmen_bp1004_5/label"
 msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp1005_1/desc"
+msgstr ""
+"Санта-Клаус в представлении не нуждается. Он нуждается в отдыхе. Список дел "
+"у него длиннее, чем табель сверхурочных у эльфа-помощника. А ведь ещё есть "
+"пара миллиардов подарков, которые нужно доставить в очень сжатые сроки. "
+"Будто этого было мало, судьба подкинула ещё один «сюрприз»: его бывший "
+"соратник Чарльз Крамповски собирается испортить Рождество раз и навсегда. "
+"Разумеется, Санта этого не потерпит. Может, на вид он и жизнерадостный "
+"хохотун, но праздник спасёт во что бы то ни стало — даже если для этого "
+"придётся ступить на тропу войны."
+
+msgid "notrecruitedtankman/tankmen_bp1005_1/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp1005_1/label"
+msgstr "Новогоднее наступление 2026"
+
+msgid "notrecruitedtankman/tankmen_bp1005_2/desc"
+msgstr ""
+"Мотивы Чарльза Крамповски так же таинственны, как и его происхождение. "
+"Когда-то этот талантливый механик работал плечом к плечу с Сантой, создавая "
+"чудеса техники для самых послушных танкистов. Со временем пагубная страсть к"
+" хаосу привела к тому, что Крамповски изгнали из мастерской Санты и занесли "
+"в список непослушных. Теперь он одержим идеей превратить праздники в "
+"полнейший кавардак. Битва за Рождество начинается, и она обещает быть "
+"взрывной. Чью сторону займёте?"
+
+msgid "notrecruitedtankman/tankmen_bp1005_2/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp1005_2/label"
+msgstr "Новогоднее наступление 2026"
 
 msgid "notrecruitedtankman/tankmen_bp10_1/desc"
 msgstr ""
@@ -12211,6 +12335,9 @@ msgstr "дней аренды: %(count)s"
 msgid "quests/awards/vehicleRent/rentLeft/rentWins"
 msgstr "побед в аренду: %(count)s"
 
+msgid "quests/battlePass/linkBtn"
+msgstr "Посмотреть прогресс Боевого пропуска"
+
 msgid "quests/bonuses/token/battle_bonus_x5/body"
 msgstr ""
 "Возможность получать в 5 раз больше опыта за бой, начиная со второй победы в"
@@ -14124,6 +14251,14 @@ msgstr "Время действия стабилизатора после акт
 msgid "tank_params/desc/continuousShotsPerMinute"
 msgstr "Количество выстрелов в минуту без учёта времени перезарядки."
 
+msgid "tank_params/desc/coolingDelay"
+msgstr "Время до начала остывания орудия после выстрела."
+
+msgid "tank_params/desc/coolingTime"
+msgstr ""
+"Время остывания полностью разогретого орудия. В это время орудие можно "
+"использовать."
+
 msgid "tank_params/desc/damage"
 msgstr "Урон, наносимый базовым снарядом за один выстрел при пробитии брони."
 
@@ -14231,6 +14366,9 @@ msgstr ""
 msgid "tank_params/desc/heatTimeToReachLevel"
 msgstr "Время набора уровня нагрева."
 
+msgid "tank_params/desc/heatingPerShot"
+msgstr "Количество тепла, выделяемое за один выстрел."
+
 msgid "tank_params/desc/hullArmor"
 msgstr "Толщина брони корпуса машины: лоб/борт/корма соответственно."
 
@@ -14296,6 +14434,11 @@ msgstr ""
 
 msgid "tank_params/desc/movementTraverseDispersionTurbo"
 msgstr "Штраф к разбросу в движении в турбо-режиме."
+
+msgid "tank_params/desc/overheatDuration"
+msgstr ""
+"Время полного остывания разогретого орудия. Во это время орудие нельзя "
+"использовать."
 
 msgid "tank_params/desc/passiveCoincideceShootingCharge"
 msgstr ""
@@ -14448,6 +14591,9 @@ msgstr ""
 "Количество снарядов, доступных для вспомогательного орудия во время "
 "активации."
 
+msgid "tank_params/desc/shellLoadingTime"
+msgstr "Время подготовки ленты в начале боя и смены типа снарядов."
+
 msgid "tank_params/desc/shotDispersionAngle"
 msgstr ""
 "Показывает, на сколько метров снаряд может отклониться от точки прицеливания"
@@ -14466,6 +14612,31 @@ msgstr ""
 
 msgid "tank_params/desc/speedLimits"
 msgstr "Паспортная скорость машины."
+
+msgid "tank_params/desc/stagedJetBoostersChargeDuration"
+msgstr ""
+"Максимальная продолжительность разгона при включённых ракетных ускорителях."
+
+msgid "tank_params/desc/stagedJetBoostersChargesCount"
+msgstr "Количество доступных активаций ускорителей за бой."
+
+msgid "tank_params/desc/stagedJetBoostersCooldownTime"
+msgstr ""
+"Время подготовки ракетных ускорителей после предыдущего использования."
+
+msgid "tank_params/desc/stagedJetBoostersEnginePower"
+msgstr "Бонус к разгону машины при активированных ракетных ускорителях."
+
+msgid "tank_params/desc/stagedJetBoostersRotationSpeed"
+msgstr ""
+"Бонус к скорости поворота корпуса при активированных ракетных ускорителях."
+
+msgid "tank_params/desc/stagedJetBoostersSpeedLimits"
+msgstr "Паспортная скорость машины."
+
+msgid "tank_params/desc/stagedJetBoostersTopSpeed"
+msgstr ""
+"Бонус к максимальной скорости при активированных ракетных ускорителях."
 
 msgid "tank_params/desc/stationaryReloadSwitchOffTime"
 msgstr ""
@@ -14508,10 +14679,31 @@ msgstr ""
 "время перехода увеличивается. При выведенном из строя двигателе смена режима"
 " невозможна."
 
+msgid "tank_params/desc/temperatureAimingTime"
+msgstr "Время сведения для полностью разогретого и остывшего орудия."
+
+msgid "tank_params/desc/temperatureAvgDamagePerMinute"
+msgstr ""
+"Количество урона, потенциально наносимого противнику за 1 минуту при "
+"постоянном пробитии брони."
+
+msgid "tank_params/desc/temperatureReloadTime"
+msgstr "Количество выстрелов в минуту."
+
+msgid "tank_params/desc/temperatureShotDispersionAngle"
+msgstr ""
+"Диаметр круга сведения на 100 м для полностью разогретого и остывшего "
+"орудия."
+
 msgid "tank_params/desc/timeOfReaching"
 msgstr ""
 "Параметр представляет коэффициент сопротивления грунтов в виде времени, за которое машина из статического состояния преодолевает расстояние в 100 метров по строго горизонтальной поверхности.\n"
 "Показаны значения для твёрдого/среднего/мягкого грунтов."
+
+msgid "tank_params/desc/timeToOverheat"
+msgstr ""
+"Максимальная продолжительность непрерывной стрельбы до того, как орудие "
+"перегреется и не сможет вести огонь."
 
 msgid "tank_params/desc/topSpeedWithBoosters"
 msgstr "Бонус к максимальной скорости машины, обеспечиваемый ускорителями."
@@ -15922,7 +16114,7 @@ msgid "vehicleStatus/undamaged/header"
 msgstr "К бою готов"
 
 msgid "vehicleStatus/unsuitableToQueue/header"
-msgstr "Не подходит"
+msgstr "Неподходящий режим"
 
 msgid "vehicleStatus/unsuitableToUnit/header"
 msgstr "Не подходит для взвода"

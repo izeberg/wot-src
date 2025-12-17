@@ -39,6 +39,12 @@
 				<!--BW_String-->
 			</invisibilityBonus>
 		</camouflageNet>
+		<deluxeCamouflageNet>
+			<invisibilityBonus>
+				0.175
+				<!--BW_String-->
+			</invisibilityBonus>
+		</deluxeCamouflageNet>
 		<additionalInvisibilityDevice>
 			<invisibilityBonus>
 				0.05 0.06
@@ -117,7 +123,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>15963</weight>
-		<maxHealth>920</maxHealth>
+		<maxHealth>1040</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>210</maxHealth>
 			<maxRegenHealth>158</maxRegenHealth>
@@ -1358,12 +1364,12 @@
 			<price>30000</price>
 			<notInShop>true</notInShop>
 			<armor>
-				<leftTrack>20</leftTrack>
-				<rightTrack>20</rightTrack>
+				<leftTrack>10</leftTrack>
+				<rightTrack>10</rightTrack>
 			</armor>
 			<weight>11000</weight>
 			<terrainResistance>
-				0.7 0.8 2
+				1 1.2 2
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>30000</brakeForce>
@@ -3316,14 +3322,14 @@
 			<userString>#germany_vehicles:Turret_1_G178_KanJpz_2</userString>
 			<tags>cannotDetach</tags>
 			<level>8</level>
-			<price>100</price>
+			<price>30000</price>
 			<notInShop>true</notInShop>
 			<armor>
 				<armor_8>0</armor_8>
 			</armor>
 			<primaryArmor>armor_8 armor_8 armor_8</primaryArmor>
 			<weight>100</weight>
-			<maxHealth>230</maxHealth>
+			<maxHealth>260</maxHealth>
 			<rotationSpeed>22</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>155</maxHealth>
@@ -3515,7 +3521,7 @@
 		<detailed>
 			<engines>
 				<MTU_MB_8V837D>
-					<smplEnginePower>550</smplEnginePower>
+					<smplEnginePower>600</smplEnginePower>
 					<smplFwMaxSpeed>60</smplFwMaxSpeed>
 				</MTU_MB_8V837D>
 			</engines>
@@ -3531,13 +3537,13 @@
 						</soft>
 						<medium>
 							<rollingFriction>
-								0.0644
+								0.0966
 								<!--BW_String-->
 							</rollingFriction>
 						</medium>
 						<firm>
 							<rollingFriction>
-								0.05635
+								0.0805
 								<!--BW_String-->
 							</rollingFriction>
 						</firm>

@@ -143,6 +143,9 @@ msgstr "<Имя союзника>, помоги!"
 msgid "chat_example/negative"
 msgstr "Никак нет!"
 
+msgid "chat_example/overheated_gun"
+msgstr "Орудие перегрето! Стрельба невозможна в течение <Reload Time> с"
+
 msgid "chat_example/positive"
 msgstr "Так точно!"
 
@@ -287,6 +290,9 @@ msgstr "Я двигаюсь к цели: %(target)s!"
 
 msgid "chat_shortcuts/negative"
 msgstr "Никак нет!"
+
+msgid "chat_shortcuts/overheated_gun"
+msgstr "Орудие перегрето! Стрельба невозможна в течение %(floatArg1)d с"
 
 msgid "chat_shortcuts/positive"
 msgstr "%(target)s, так точно!"
@@ -999,6 +1005,9 @@ msgstr "Стрельба невозможна: повреждено орудие
 
 msgid "player_errors/cant_shoot/gun_locked"
 msgstr "Стрельба невозможна."
+
+msgid "player_errors/cant_shoot/gun_overheated"
+msgstr "Стрельба невозможна: орудие перегрето."
 
 msgid "player_errors/cant_shoot/gun_reload"
 msgstr "Орудие перезаряжается."
@@ -2874,6 +2883,9 @@ msgstr ", чтобы активировать жидкотопливные ус�
 
 msgid "siegeMode/hint/rocketAcceleration"
 msgstr "для активации реактивных ускорителей"
+
+msgid "siegeMode/hint/stagedJetBoosters"
+msgstr "чтобы активировать последовательные ракетные ускорители"
 
 msgid "siegeMode/hint/targetDesignator"
 msgstr ""

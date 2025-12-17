@@ -1052,6 +1052,7 @@ class CollisionComponent(PyComponentWrapperBase):
 	def getPartTransformProvider(self, *args, **kwargs): pass
 	def hasAttachment(self, *args, **kwargs): pass
 	def id(self, *args, **kwargs): pass
+	def isAttachmentActive(self, *args, **kwargs): pass
 	maxStaticPartIndex = property(lambda self: None)
 	partIndices = property(lambda self: None)
 	def removeAttachment(self, *args, **kwargs): pass
@@ -1560,6 +1561,7 @@ class DynamicScriptComponent(PyDynamicComponent):
 	def __subclasshook__(*args, **kwargs): pass
 	cell = property(lambda self: None)
 	entity = property(lambda self: None)
+	isValid = property(lambda self: None)
 
 
 class Entity(pybind11_object):
@@ -5619,6 +5621,7 @@ class WGVehiclePhysics(pybind11_object):
 	def getRollerPosition(self, *args, **kwargs): pass
 	def getTouchedGround(self, *args, **kwargs): pass
 	def getTouchedMatkind(self, *args, **kwargs): pass
+	gimletCOMOffset = property(lambda self: None)
 	gotCarcassContact = property(lambda self: None)
 	gotTracksContact = property(lambda self: None)
 	gravity = property(lambda self: None)
@@ -5662,6 +5665,7 @@ class WGVehiclePhysics(pybind11_object):
 	def onVehicleStatusChanged(self, *args, **kwargs): pass
 	owner = property(lambda self: None)
 	quietRotationEnabled = property(lambda self: None)
+	railCOMOffset = property(lambda self: None)
 	def removeAllDamperSprings(self, *args, **kwargs): pass
 	def removeAllSubscriptions(self, *args, **kwargs): pass
 	def rollback(self, *args, **kwargs): pass
@@ -5768,6 +5772,7 @@ class WGTankPhysics(WGVehiclePhysics):
 	def getRollerPosition(self, *args, **kwargs): pass
 	def getTouchedGround(self, *args, **kwargs): pass
 	def getTouchedMatkind(self, *args, **kwargs): pass
+	gimletCOMOffset = property(lambda self: None)
 	gotCarcassContact = property(lambda self: None)
 	gotTracksContact = property(lambda self: None)
 	gravity = property(lambda self: None)
@@ -5815,6 +5820,7 @@ class WGTankPhysics(WGVehiclePhysics):
 	def onVehicleStatusChanged(self, *args, **kwargs): pass
 	owner = property(lambda self: None)
 	quietRotationEnabled = property(lambda self: None)
+	railCOMOffset = property(lambda self: None)
 	def removeAllDamperSprings(self, *args, **kwargs): pass
 	def removeAllSubscriptions(self, *args, **kwargs): pass
 	rightTrackBrakeForce = property(lambda self: None)
@@ -6140,6 +6146,7 @@ class WGWheeledPhysics(WGVehiclePhysics):
 	def getRollerPosition(self, *args, **kwargs): pass
 	def getTouchedGround(self, *args, **kwargs): pass
 	def getTouchedMatkind(self, *args, **kwargs): pass
+	gimletCOMOffset = property(lambda self: None)
 	gotCarcassContact = property(lambda self: None)
 	gotTracksContact = property(lambda self: None)
 	gravity = property(lambda self: None)
@@ -6185,6 +6192,7 @@ class WGWheeledPhysics(WGVehiclePhysics):
 	onWheelsScrollChangedCb = property(lambda self: None)
 	owner = property(lambda self: None)
 	quietRotationEnabled = property(lambda self: None)
+	railCOMOffset = property(lambda self: None)
 	def removeAllDamperSprings(self, *args, **kwargs): pass
 	def removeAllSubscriptions(self, *args, **kwargs): pass
 	def rollback(self, *args, **kwargs): pass
@@ -6603,6 +6611,7 @@ def consumerBuild(*args, **kwargs): pass
 def controlEntity(*args, **kwargs): pass
 def controlPointSetHeight(*args, **kwargs): pass
 def createBrowser(*args, **kwargs): pass
+def createDynImpassableZone(*args, **kwargs): pass
 def createEntity(*args, **kwargs): pass
 def createPlayerEntity(*args, **kwargs): pass
 def createSpace(*args, **kwargs): pass
@@ -6791,8 +6800,10 @@ def registerTextureStreamingViewpoint(*args, **kwargs): pass
 def reinitLoggers(*args, **kwargs): pass
 def reinitVideoSound(*args, **kwargs): pass
 def releaseSpace(*args, **kwargs): pass
+def removeAllDynImpassableZones(*args, **kwargs): pass
 def removeAllIdleCallbacks(*args, **kwargs): pass
 def removeCameraCollider(*args, **kwargs): pass
+def removeDynImpassableZone(*args, **kwargs): pass
 def resetEntityManager(*args, **kwargs): pass
 def resetGraphicsSettingsStatus(*args, **kwargs): pass
 def resetPlayerTargetFrom(*args, **kwargs): pass

@@ -430,7 +430,7 @@
 		<GameObject>
 			<name>plane_part_03_destroyed_decals_stages</name>
 			<UUID>8d2f32b3-f9d7-39fc-9617-f406d83c44d0</UUID>
-			<flags>10</flags>
+			<flags>2</flags>
 		</GameObject>
 		<GameObject>
 			<name>plane_part_03_decals_stage_05_projection</name>
@@ -1419,6 +1419,168 @@
 					<property>
 						<name>Parent</name>
 						<link>c123e4ad-cfe0-39ff-81d3-05ec8bb6aab4</link>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>SequenceComponent</type>
+			<version>3</version>
+			<component>
+				<UUID>043627cb-581d-496e-83da-4fac3dc3fdea</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>activeLayer</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>speed</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>loop</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>autoStart</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>pauseOnEnd</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>alwaysEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>duration</name>
+						<value>10</value>
+					</property>
+					<property>
+						<name>tracks</name>
+						<collection>
+							<item>
+								<object>
+									<property>
+										<name>object</name>
+										<link>c123e4ad-cfe0-39ff-81d3-05ec8bb6aab4</link>
+									</property>
+									<property>
+										<name>start</name>
+										<value>
+											0.45
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>end</name>
+										<value>10</value>
+									</property>
+									<property>
+										<name>parameters</name>
+										<collection/>
+									</property>
+								</object>
+							</item>
+							<item>
+								<object>
+									<property>
+										<name>object</name>
+										<link>70e92077-d949-30e5-bd80-e494d792931a</link>
+									</property>
+									<property>
+										<name>start</name>
+										<value>
+											0.65
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>end</name>
+										<value>10</value>
+									</property>
+									<property>
+										<name>parameters</name>
+										<collection/>
+									</property>
+								</object>
+							</item>
+							<item>
+								<object>
+									<property>
+										<name>object</name>
+										<link>77aa0228-b871-30bb-b418-295c46ee1171</link>
+									</property>
+									<property>
+										<name>start</name>
+										<value>
+											0.95
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>end</name>
+										<value>10</value>
+									</property>
+									<property>
+										<name>parameters</name>
+										<collection/>
+									</property>
+								</object>
+							</item>
+							<item>
+								<object>
+									<property>
+										<name>object</name>
+										<link>c0bdee84-a194-31f1-a72a-2a729b695e13</link>
+									</property>
+									<property>
+										<name>start</name>
+										<value>
+											1.5
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>end</name>
+										<value>10</value>
+									</property>
+									<property>
+										<name>parameters</name>
+										<collection/>
+									</property>
+								</object>
+							</item>
+							<item>
+								<object>
+									<property>
+										<name>object</name>
+										<link>361be465-b5a1-423a-bba6-c223c9bc10d9</link>
+									</property>
+									<property>
+										<name>start</name>
+										<value>
+											1.5
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>end</name>
+										<value>10</value>
+									</property>
+									<property>
+										<name>parameters</name>
+										<collection/>
+									</property>
+								</object>
+							</item>
+						</collection>
+					</property>
+					<property>
+						<name>layers</name>
+						<collection/>
 					</property>
 				</config>
 			</component>
@@ -3708,7 +3870,7 @@
 					</property>
 					<property>
 						<name>Rotation</name>
-						<value>0 0 0</value>
+						<value>-0 0 0</value>
 					</property>
 				</config>
 			</component>
@@ -3930,156 +4092,6 @@
 			</component>
 		</ComponentPool>
 		<ComponentPool>
-			<type>SequenceComponent</type>
-			<version>3</version>
-			<component>
-				<UUID>043627cb-581d-496e-83da-4fac3dc3fdea</UUID>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>loop</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>autoStart</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>pauseOnEnd</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>alwaysEnabled</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>duration</name>
-						<value>10</value>
-					</property>
-					<property>
-						<name>tracks</name>
-						<collection>
-							<item>
-								<object>
-									<property>
-										<name>object</name>
-										<link>c123e4ad-cfe0-39ff-81d3-05ec8bb6aab4</link>
-									</property>
-									<property>
-										<name>start</name>
-										<value>
-											0.45
-											<!--BW_String-->
-										</value>
-									</property>
-									<property>
-										<name>end</name>
-										<value>10</value>
-									</property>
-									<property>
-										<name>parameters</name>
-										<collection/>
-									</property>
-								</object>
-							</item>
-							<item>
-								<object>
-									<property>
-										<name>object</name>
-										<link>70e92077-d949-30e5-bd80-e494d792931a</link>
-									</property>
-									<property>
-										<name>start</name>
-										<value>
-											0.65
-											<!--BW_String-->
-										</value>
-									</property>
-									<property>
-										<name>end</name>
-										<value>10</value>
-									</property>
-									<property>
-										<name>parameters</name>
-										<collection/>
-									</property>
-								</object>
-							</item>
-							<item>
-								<object>
-									<property>
-										<name>object</name>
-										<link>77aa0228-b871-30bb-b418-295c46ee1171</link>
-									</property>
-									<property>
-										<name>start</name>
-										<value>
-											0.95
-											<!--BW_String-->
-										</value>
-									</property>
-									<property>
-										<name>end</name>
-										<value>10</value>
-									</property>
-									<property>
-										<name>parameters</name>
-										<collection/>
-									</property>
-								</object>
-							</item>
-							<item>
-								<object>
-									<property>
-										<name>object</name>
-										<link>c0bdee84-a194-31f1-a72a-2a729b695e13</link>
-									</property>
-									<property>
-										<name>start</name>
-										<value>
-											1.5
-											<!--BW_String-->
-										</value>
-									</property>
-									<property>
-										<name>end</name>
-										<value>10</value>
-									</property>
-									<property>
-										<name>parameters</name>
-										<collection/>
-									</property>
-								</object>
-							</item>
-							<item>
-								<object>
-									<property>
-										<name>object</name>
-										<link>361be465-b5a1-423a-bba6-c223c9bc10d9</link>
-									</property>
-									<property>
-										<name>start</name>
-										<value>
-											1.5
-											<!--BW_String-->
-										</value>
-									</property>
-									<property>
-										<name>end</name>
-										<value>10</value>
-									</property>
-									<property>
-										<name>parameters</name>
-										<collection/>
-									</property>
-								</object>
-							</item>
-						</collection>
-					</property>
-				</config>
-			</component>
-		</ComponentPool>
-		<ComponentPool>
 			<type>NetworkEntity</type>
 			<version>1</version>
 			<component>
@@ -4097,14 +4109,6 @@
 					<property>
 						<name>filterType</name>
 						<value>0</value>
-					</property>
-					<property>
-						<name>lagDelay</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>extrapolate</name>
-						<value>1</value>
 					</property>
 					<property>
 						<name>detailed</name>

@@ -101,6 +101,10 @@
 								<optionalDevice>stereoscope_tier3</optionalDevice>
 							</installedModules>
 							<installedModules>
+								<hideInGui/>
+								<optionalDevice>deluxeStereoscope</optionalDevice>
+							</installedModules>
+							<installedModules>
 								<optionalDevice>coatedOptics_tier1</optionalDevice>
 							</installedModules>
 							<installedModules>
@@ -178,6 +182,10 @@
 							<installedModules>
 								<hideInGui/>
 								<optionalDevice>stereoscope_tier3</optionalDevice>
+							</installedModules>
+							<installedModules>
+								<hideInGui/>
+								<optionalDevice>deluxeStereoscope</optionalDevice>
 							</installedModules>
 							<installedModules>
 								<optionalDevice>coatedOptics_tier1</optionalDevice>

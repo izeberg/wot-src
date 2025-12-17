@@ -1658,6 +1658,33 @@
 				<bank>BP18/BP18_en_US_tankmen_14/voiceover.bnk</bank>
 			</wwbanks>
 		</mode>
+		<mode>
+			<name>celebrity2026_en</name>
+			<wwise_language>cel_26_en</wwise_language>
+			<description/>
+			<invisible>True</invisible>
+			<wwbanks>
+				<bank>cel_26_en/voiceover.bnk</bank>
+			</wwbanks>
+		</mode>
+		<mode>
+			<name>tankmen_bp1005_1</name>
+			<wwise_language>BPH5/BPH5_en_US_tankmen_1</wwise_language>
+			<description/>
+			<invisible>True</invisible>
+			<wwbanks>
+				<bank>BPH5/BPH5_en_US_tankmen_1/voiceover.bnk</bank>
+			</wwbanks>
+		</mode>
+		<mode>
+			<name>tankmen_bp1005_2</name>
+			<wwise_language>BPH5/BPH5_en_US_tankmen_2</wwise_language>
+			<description/>
+			<invisible>True</invisible>
+			<wwbanks>
+				<bank>BPH5/BPH5_en_US_tankmen_2/voiceover.bnk</bank>
+			</wwbanks>
+		</mode>
 	</modes>
 	<nationalPresets>
 		<preset>

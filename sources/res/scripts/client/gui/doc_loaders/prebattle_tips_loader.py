@@ -1,4 +1,6 @@
-import sys, resource_helper
+from __future__ import absolute_import
+import resource_helper
+from vehicles.mechanics.mechanic_constants import VehicleMechanic
 _PREBATTLE_TIPS_XML_PATH = 'gui/prebattle_tips.xml'
 _PRECEDING_DEFAULT_SHOW_TIMES = 1
 DEFAULT_STATUS = 'payAttention'
@@ -7,13 +9,13 @@ _OPTIONAL_FILTER_FLAGS = ('isBattlePassActiveSeason', 'isRankedYearRewardEnabled
                           'isRankedLeaderboardEnabled', 'isRankedShopEnabled', 'isPostProgressionEnabled')
 
 def _readPreBattleTips():
-    filters = dict()
-    tips = dict()
+    filters = {}
+    tips = {}
     ctx, root = resource_helper.getRoot(_PREBATTLE_TIPS_XML_PATH)
     for _, filterSection in resource_helper.getIterator(ctx, root['filters']):
         filterId = filterSection.readString('id')
         filters[filterId] = {'minBattles': filterSection.readInt('minBattles', 0), 
-           'maxBattles': filterSection.readInt('maxBattles', sys.maxint), 
+           'maxBattles': filterSection.readInt('maxBattles', 0), 
            'arenaTypes': _readPossibleValues(filterSection, 'arenaTypes'), 
            'nations': _readPossibleValues(filterSection, 'nations'), 
            'levels': _readPossibleValues(filterSection, 'levels'), 
@@ -22,7 +24,8 @@ def _readPreBattleTips():
            'realms': _readPossibleValues(filterSection, 'realms'), 
            'preceding': _readPrecedingData(filterSection), 
            'chassisType': filterSection.readInt('chassisType', -1), 
-           'vehProperty': filterSection.readString('vehProperty', None)}
+           'vehProperty': filterSection.readString('vehProperty', None), 
+           'mechanics': _readMechanicsData(filterSection['mechanics'])}
         for key in _OPTIONAL_FILTER_FLAGS:
             if filterSection.has_key(key):
                 filters[filterId][key] = filterSection.readBool(key)
@@ -50,6 +53,18 @@ def _readPrecedingData(section):
     if section['preceding'] is not None:
         precedingData = {'showTimes': section['preceding'].readInt('showTimes', _PRECEDING_DEFAULT_SHOW_TIMES)}
     return precedingData
+
+
+def _readMechanicsData(section):
+    if section is None:
+        return
+    else:
+        mechanicsData = {}
+        for mechanicsKey in ('include', 'exclude'):
+            rawMechanics = section.readString(mechanicsKey).split()
+            mechanicsData[mechanicsKey] = frozenset(VehicleMechanic(mechanic) for mechanic in rawMechanics)
+
+        return mechanicsData
 
 
 def getPreBattleTipsConfig():

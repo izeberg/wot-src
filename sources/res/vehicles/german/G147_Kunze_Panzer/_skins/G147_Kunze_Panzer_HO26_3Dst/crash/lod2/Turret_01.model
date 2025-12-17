@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/german/G147_Kunze_Panzer/_skins/G147_Kunze_Panzer_HO26_3Dst/crash/lod3/Turret_01</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.287881 -0.097356 -1.864964</min>
+		<max>1.453676 4.007485 1.078698</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/german/G147_Kunze_Panzer/_skins/G147_Kunze_Panzer_HO26_3Dst/crash/lod2/Turret_01</nodefullVisual>
+</root>

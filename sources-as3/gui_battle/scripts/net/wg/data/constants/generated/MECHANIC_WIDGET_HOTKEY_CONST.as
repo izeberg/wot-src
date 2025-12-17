@@ -9,7 +9,9 @@ package net.wg.data.constants.generated
       
       public static const ALERT:String = "alert";
       
-      public static const HOT_KEY_STATES:Array = [NORMAL,WARNING,ALERT];
+      public static const INVALID_KEY:String = "invalidKey";
+      
+      public static const HOT_KEY_STATES:Array = [NORMAL,WARNING,ALERT,INVALID_KEY];
       
       public static const COMMAND_ACTIVATE:String = "activate";
       

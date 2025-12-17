@@ -196,6 +196,10 @@ class AttachmentSlot(BaseCustomizationSlot):
         return self.descriptor.hiddenForUser
 
     @property
+    def enableVisTunnel(self):
+        return self.descriptor.enableVisTunnel
+
+    @property
     def tags(self):
         return self.descriptor.tags
 

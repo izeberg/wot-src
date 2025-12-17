@@ -139,6 +139,12 @@ msgstr "Все узлы исследованы. Вы получили досту
 msgid "research/button/label"
 msgstr "Исследовать"
 
+msgid "research/emergencyModeEnabled/body"
+msgstr "Единый кошелёк временно недоступен. Приносим извинения за неудобства."
+
+msgid "research/emergencyModeEnabled/header"
+msgstr "Недоступно"
+
 msgid "research/inBattle"
 msgstr "Узел недоступен: машина ещё в бою."
 
@@ -286,6 +292,9 @@ msgstr "Увеличивает количество урона, требуемо
 msgid "tooltips/description/ammoRackPenalty"
 msgstr "Уменьшает штраф при повреждении боеукладки."
 
+msgid "tooltips/description/basicShellDamage"
+msgstr "Увеличивает урон базовым снарядом."
+
 msgid "tooltips/description/ch67_mechanic_0"
 msgstr ""
 "Увеличивает скорость поворота корпуса при активных ускорителях на "
@@ -305,6 +314,26 @@ msgid "tooltips/description/ch67_mechanic_3"
 msgstr ""
 "Увеличивает время действия ускорителей на {colorTagOpen}{value} "
 "с{colorTagClose}."
+
+msgid "tooltips/description/ch70_mechanic_0"
+msgstr ""
+"Увеличивает прирост мощности двигателя при активированных ускорителях на "
+"{colorTagOpen}{value}%{colorTagClose}."
+
+msgid "tooltips/description/ch70_mechanic_1"
+msgstr ""
+"Уменьшает время перезарядки ускорителей на {colorTagOpen}{value} "
+"с{colorTagClose}."
+
+msgid "tooltips/description/ch70_mechanic_2"
+msgstr ""
+"Увеличивает прирост мощности двигателя при активированных ускорителях на "
+"{colorTagOpen}{value}%{colorTagClose}."
+
+msgid "tooltips/description/ch70_mechanic_3"
+msgstr ""
+"Увеличивает максимальное количество активаций ускорителей в бою на "
+"{colorTagOpen}{value}{colorTagClose}."
 
 msgid "tooltips/description/crewProtection"
 msgstr "Уменьшает вероятность ранения членов экипажа при попадании по машине."
@@ -502,6 +531,21 @@ msgid "tooltips/description/invisibilityWhenShooting"
 msgstr ""
 "Уменьшает шанс быть обнаруженным машинами противника во время выстрела."
 
+msgid "tooltips/description/j52_mechanic_0"
+msgstr ""
+"Снижает задержку перед началом охлаждения орудия на {colorTagOpen}{value} "
+"с{colorTagClose}."
+
+msgid "tooltips/description/j52_mechanic_1"
+msgstr ""
+"Уменьшает количество тепла, выделяемого орудием за выстрел, на "
+"{colorTagOpen}{value}%{colorTagClose}."
+
+msgid "tooltips/description/j52_mechanic_2"
+msgstr ""
+"Ускоряет охлаждение нагретого орудия на "
+"{colorTagOpen}{value}%{colorTagClose}."
+
 msgid "tooltips/description/nonHEShellDamage"
 msgstr ""
 "Увеличивает урон, наносимый всеми снарядами, кроме осколочно-фугасных."
@@ -510,6 +554,26 @@ msgid "tooltips/description/opt_dev_boosters_switch"
 msgstr ""
 "Позволяет настроить альтернативную конфигурацию оборудования и предбоевых "
 "инструкций."
+
+msgid "tooltips/description/overheat_coolingDelay"
+msgstr ""
+"Снижает задержку перед началом охлаждения орудия на {colorTagOpen}{value} "
+"с{colorTagClose}."
+
+msgid "tooltips/description/overheat_coolingPerSec"
+msgstr ""
+"Ускоряет охлаждение нагретого и перегретого орудия на "
+"{colorTagOpen}{value}%{colorTagClose}."
+
+msgid "tooltips/description/overheat_heatingPerShot"
+msgstr ""
+"Уменьшает количество тепла, выделяемого орудием за выстрел, на "
+"{colorTagOpen}{value}%{colorTagClose}."
+
+msgid "tooltips/description/overheat_overheatedCoolingPerSec"
+msgstr ""
+"Ускоряет охлаждение перегретого орудия на "
+"{colorTagOpen}{value}%{colorTagClose}."
 
 msgid "tooltips/description/pl37_mechanic_0"
 msgstr ""
@@ -617,6 +681,9 @@ msgid "tooltips/description/shells_consumables_switch"
 msgstr ""
 "Позволяет настроить альтернативную конфигурацию боекомплекта и снаряжения."
 
+msgid "tooltips/description/specialShellDamage"
+msgstr "Увеличивает урон специальным снарядом."
+
 msgid "tooltips/description/specialShellPenetration"
 msgstr "Увеличивает бронепробиваемость специальных снарядов."
 
@@ -628,6 +695,9 @@ msgstr "Снижает незаметность техники противни�
 
 msgid "tooltips/description/spottingBonusMovement"
 msgstr "Снижает незаметность техники противника в движении."
+
+msgid "tooltips/description/standardShellDamage"
+msgstr "Увеличивает урон базовым снарядом."
 
 msgid "tooltips/description/standardShellPenetration"
 msgstr "Увеличивает бронепробиваемость базовых снарядов."
@@ -752,6 +822,9 @@ msgstr "Прочность боеукладки"
 msgid "tooltips/title/ammoRackPenalty"
 msgstr "Штраф от повреждённой боеукладки"
 
+msgid "tooltips/title/basicShellDamage"
+msgstr "Урон базовым снарядом"
+
 msgid "tooltips/title/ch67_mechanic_0"
 msgstr "Управление вектором тяги"
 
@@ -763,6 +836,18 @@ msgstr "Испарительное охлаждение"
 
 msgid "tooltips/title/ch67_mechanic_3"
 msgstr "Жиклёры с транспирационным охлаждением"
+
+msgid "tooltips/title/ch70_mechanic_0"
+msgstr "Высокоэнергетическое топливо"
+
+msgid "tooltips/title/ch70_mechanic_1"
+msgstr "Полуавтоматический экстрактор ускорителей"
+
+msgid "tooltips/title/ch70_mechanic_2"
+msgstr "Оптимизация формы сердечника"
+
+msgid "tooltips/title/ch70_mechanic_3"
+msgstr "Увеличение хранилища ускорителей"
 
 msgid "tooltips/title/chassisHP"
 msgstr "Прочность ходовой"
@@ -926,11 +1011,32 @@ msgstr "Скорость смены снаряда внутри магазина
 msgid "tooltips/title/invisibilityWhenShooting"
 msgstr "Незаметность после выстрела"
 
+msgid "tooltips/title/j52_mechanic_0"
+msgstr "Охлаждающая жидкость пониженной температуры"
+
+msgid "tooltips/title/j52_mechanic_1"
+msgstr "Термический кожух высокой теплопроводности"
+
+msgid "tooltips/title/j52_mechanic_2"
+msgstr "Улучшенная тепловая трубка"
+
 msgid "tooltips/title/nonHEShellDamage"
 msgstr "Урон от снарядов (кроме ОФ)"
 
 msgid "tooltips/title/opt_dev_boosters_switch"
 msgstr "Загрузка оборудования и предбоевых инструкций"
+
+msgid "tooltips/title/overheat_coolingDelay"
+msgstr "Хромированное покрытие"
+
+msgid "tooltips/title/overheat_coolingPerSec"
+msgstr "Ствол высокой теплопроводности"
+
+msgid "tooltips/title/overheat_heatingPerShot"
+msgstr "Топливо с низкой температурой горения"
+
+msgid "tooltips/title/overheat_overheatedCoolingPerSec"
+msgstr "Система принудительной вентиляции"
 
 msgid "tooltips/title/pl37_mechanic_0"
 msgstr "Облегчённый турбинный ротор"
@@ -1007,6 +1113,9 @@ msgstr "Увеличенный урон по модулям"
 msgid "tooltips/title/shells_consumables_switch"
 msgstr "Предварительная загрузка боекомплекта и снаряжения"
 
+msgid "tooltips/title/specialShellDamage"
+msgstr "Урон специальным снарядом"
+
 msgid "tooltips/title/specialShellPenetration"
 msgstr "Бронепробиваемость специальным снарядом"
 
@@ -1018,6 +1127,9 @@ msgstr "Бонус к обнаружению замаскированных це
 
 msgid "tooltips/title/spottingBonusMovement"
 msgstr "Бонус к обнаружению движущихся целей"
+
+msgid "tooltips/title/standardShellDamage"
+msgstr "Урон базовым снарядом"
 
 msgid "tooltips/title/standardShellPenetration"
 msgstr "Бронепробиваемость базовым снарядом"

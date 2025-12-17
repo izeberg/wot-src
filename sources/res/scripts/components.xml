@@ -12,6 +12,7 @@
 		<ArenaFairplayKafkaLoggingComponent/>
 		<AccountFairplayComponent/>
 		<ArenaCommendationsMasterComponent/>
+		<ArenaDynObstaclesComponent/>
 	</StaticComponents>
 	<DynamicComponents>
 		<OwnVehicle/>
@@ -35,6 +36,9 @@
 		<TwinGunController/>
 		<SecondaryGunComponent/>
 		<RocketAcceleration/>
+		<TemperatureGunController/>
+		<OverheatGunComponent/>
+		<HeatingZonesGunComponent/>
 		<VisualScriptEquipment/>
 		<VisualScriptCache/>
 		<VisualScriptOverrides/>
@@ -61,28 +65,14 @@
 		<PoiVehicleComponent/>
 		<DynComponentsGroup/>
 		<DynComponentsGroupHelper/>
-		<DGAddDynGroupComponent/>
-		<DGRemovableDynGroupComponent/>
-		<DGSequencesComponent/>
-		<DGSound2DComponent/>
-		<DGSound3DComponent/>
-		<DGSound3DObjectComponent/>
-		<DGVehicleChargedShotComponent/>
-		<DGVehicleShotChargerComponent/>
-		<DGVehicleFactorsComponent/>
-		<DGVehicleGenericRepairComponent/>
-		<DGVehicleRepairComponent/>
-		<DGVehiclePeriodicRepairComponent/>
-		<DGVehicleDamageResistsComponent/>
-		<DGVehicleNitroAccelerationComponent/>
-		<DGVehicleNitroEffectComponent/>
 		<LootableComponent/>
+		<DynObstacleComponent/>
+		<ImpassableZoneComponent/>
 		<SpamProtectionComponent/>
 		<TestReplicableComponent/>
 		<ShotsReceiver/>
 		<DeathComponent/>
 		<HealthComponent/>
-		<BunkerLogicComponent/>
 		<VehicleRespawnComponent/>
 		<VehicleLivesComponent/>
 		<TeamInfoLivesComponent/>
@@ -122,5 +112,7 @@
 		<TargetDesignatorTeamController/>
 		<StanceDanceController/>
 		<ChargeableBurstComponent/>
+		<DebuffController/>
+		<StagedJetBoostersController/>
 	</DynamicComponents>
 </root>

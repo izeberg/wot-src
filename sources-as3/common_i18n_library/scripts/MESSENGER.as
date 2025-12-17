@@ -2525,6 +2525,14 @@ package
       
       public static const SERVICECHANNELMESSAGES_PRESTIGEMILESTONE_TEXT:String = "#messenger:serviceChannelMessages/prestigeMilestone/text";
       
+      public static const SERVICECHANNELMESSAGES_COLLECTOR20_TITLE:String = "#messenger:serviceChannelMessages/collector20/title";
+      
+      public static const SERVICECHANNELMESSAGES_COLLECTOR20_MEDAL:String = "#messenger:serviceChannelMessages/collector20/medal";
+      
+      public static const SERVICECHANNELMESSAGES_COLLECTOR20_BADGE:String = "#messenger:serviceChannelMessages/collector20/badge";
+      
+      public static const SERVICECHANNELMESSAGES_COLLECTOR20_STRIPE:String = "#messenger:serviceChannelMessages/collector20/stripe";
+      
       public static const DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_ENUM:Array = [DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_OFFLINE,DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_NOTREADY,DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_READY,DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_INBATTLE,DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_AFK];
        
       

@@ -6,6 +6,7 @@ import BigWorld, WWISE, typing
 from adisp import adisp_async, adisp_process
 from builtins import object, str
 from past.utils import old_div
+from gui.server_events.pm_constants import IS_REGULAR_QUEST_ENABLED
 from shared_utils import CONST_CONTAINER
 import constants, wg_async as future_async
 from CurrentVehicle import g_currentPreviewVehicle, g_currentVehicle
@@ -226,7 +227,7 @@ class LobbyHeader(LobbyHeaderMeta, ClanEmblemsHelper, IGlobalListener):
      TABS.STORE,)
     DESELECT_TAB_ALIASES = (
      VIEW_ALIAS.WIKI_VIEW,
-     R.views.lobby.maps_training.MapsTrainingPage())
+     R.views.mono.maps_training.maps_training_page())
     _WULF_TO_TAB = {R.views.lobby.crew.BarracksView(): TABS.BARRACKS, 
        R.views.lobby.clan_supply.ClanSupply(): TABS.STRONGHOLD}
     _TAB_ALIAS_TO_RULE_ID = {TABS.STORE: LUI_RULES.store, 
@@ -1370,7 +1371,7 @@ class LobbyHeader(LobbyHeaderMeta, ClanEmblemsHelper, IGlobalListener):
          epicRandomStateChanged,
          commandBattlesStateChanged,
          isTournamentsChanged,
-         'isRegularQuestEnabled' in diff))
+         IS_REGULAR_QUEST_ENABLED in diff))
         updatePrebattleControls = any((
          legacyModelSelectorEnabledChanged,
          strongholdSettingsChanged,

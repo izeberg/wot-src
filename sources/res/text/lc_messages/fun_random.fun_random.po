@@ -359,7 +359,7 @@ msgid "modes/development/progression/questsList/quest/infinityStageProgress"
 msgstr "Dev Получите столько наград, сколько сможете:"
 
 msgid "modes/development/progression/questsList/totalPointsEarned"
-msgstr "?empty?"
+msgstr "Dev Заработано очков: {{progressionSteps}}"
 
 msgid ""
 "modes/development/progression/questsList/totalPointsEarnedStandAloneTitle"
@@ -403,6 +403,204 @@ msgstr "?empty?"
 
 msgid "modes/development/userName"
 msgstr "?empty?"
+
+msgid "modes/fep_new_year_2025/banner/progression/finish"
+msgstr "Все этапы пройдены"
+
+msgid "modes/fep_new_year_2025/banner/progression/resettable"
+msgstr "Обновлённая прогрессия"
+
+msgid "modes/fep_new_year_2025/capsUserName"
+msgstr "АРКАДА"
+
+msgid "modes/fep_new_year_2025/detailedUserName"
+msgstr "%(modeName)s: %(subModeName)s"
+
+msgid "modes/fep_new_year_2025/entryPoint/inProgress/description"
+msgstr "В бой!"
+
+msgid "modes/fep_new_year_2025/entryPoint/intro/description"
+msgstr "Врывайтесь в сражения!"
+
+msgid "modes/fep_new_year_2025/entryPoint/tooltip/description"
+msgstr ""
+"События «Аркады» — это ограниченные по времени активности, которые "
+"переворачивают игровой процесс с ног на голову. Сражайтесь в специальных "
+"режимах, меняющих привычные правила игры, выполняйте задачи и получайте "
+"редкие награды."
+
+msgid ""
+"modes/fep_new_year_2025/entryPoint/tooltip/performance/highRisk/description"
+msgstr ""
+"Режим требователен к компьютеру. Карта может долго загружаться, возможны "
+"проблемы с графикой и перемещением техники в бою. В случае недостаточной "
+"производительности, попробуйте понизить настройки графики."
+
+msgid "modes/fep_new_year_2025/entryPoint/tooltip/performance/highRisk/header"
+msgstr "Возможно снижение производительности"
+
+msgid ""
+"modes/fep_new_year_2025/entryPoint/tooltip/performance/mediumRisk/description"
+msgstr ""
+"Режим требователен к компьютеру. Карта может долго загружаться, возможны "
+"проблемы с графикой и перемещением техники в бою. В случае недостаточной "
+"производительности, попробуйте понизить настройки графики."
+
+msgid ""
+"modes/fep_new_year_2025/entryPoint/tooltip/performance/mediumRisk/header"
+msgstr "Возможно снижение производительности"
+
+msgid "modes/fep_new_year_2025/lootbox/fep_epic"
+msgstr "Случайная эпическая награда"
+
+msgid "modes/fep_new_year_2025/lootbox/fep_legendary"
+msgstr "Случайная легендарная награда"
+
+msgid "modes/fep_new_year_2025/lootbox/fep_ordinary"
+msgstr "Случайная обычная награда"
+
+msgid "modes/fep_new_year_2025/lootbox/fep_rare"
+msgstr "Случайная редкая награда"
+
+msgid "modes/fep_new_year_2025/lootbox/fep_unusual"
+msgstr "Случайная необычная награда"
+
+msgid "modes/fep_new_year_2025/metaProgressionTooltip/header/active"
+msgstr "Задача Аркады. Этап: %(done)s{par_Open}/%(total)s{par_Close}"
+
+msgid "modes/fep_new_year_2025/metaProgressionTooltip/reward/tip"
+msgstr "Прогресс выполнения засчитывается в любом подрежиме Аркады."
+
+msgid "modes/fep_new_year_2025/metaProgressionTooltip/subheader"
+msgstr "Задача Аркады"
+
+msgid "modes/fep_new_year_2025/modeSubSelector/progression/info"
+msgstr "Прогресс выполнения засчитывается в любом подрежиме Аркады."
+
+msgid "modes/fep_new_year_2025/modeSubSelector/progression/timer"
+msgstr "до новой задачи Аркады"
+
+msgid "modes/fep_new_year_2025/mode_selector/description"
+msgstr "Экспериментальные бои по нестандартным правилам."
+
+msgid "modes/fep_new_year_2025/mode_selector/performance/highRisk/description"
+msgstr ""
+"Режим требователен к компьютеру. Карта может долго загружаться, возможны "
+"проблемы с графикой и перемещением техники в бою. В случае недостаточной "
+"производительности, попробуйте понизить настройки графики."
+
+msgid "modes/fep_new_year_2025/mode_selector/performance/highRisk/header"
+msgstr "Возможно снижение производительности"
+
+msgid "modes/fep_new_year_2025/mode_selector/performance/highRisk/headerIcon"
+msgstr "%(icon) Возможно снижение производительности"
+
+msgid ""
+"modes/fep_new_year_2025/mode_selector/performance/mediumRisk/description"
+msgstr ""
+"Режим требователен к компьютеру. Карта может долго загружаться, возможны "
+"проблемы с графикой и перемещением техники в бою. В случае недостаточной "
+"производительности, попробуйте понизить настройки графики."
+
+msgid "modes/fep_new_year_2025/mode_selector/performance/mediumRisk/header"
+msgstr "Возможно снижение производительности"
+
+msgid ""
+"modes/fep_new_year_2025/mode_selector/performance/mediumRisk/headerIcon"
+msgstr "%(icon) Возможно снижение производительности"
+
+msgid "modes/fep_new_year_2025/mode_selector/progression/resettable"
+msgstr "До новой задачи Аркады"
+
+msgid "modes/fep_new_year_2025/notification/finishSubModes/withProgression"
+msgstr "Подрежим %(subModeName)s завершён: прогрессия сброшена."
+
+msgid "modes/fep_new_year_2025/notification/finishSubModes/withoutProgression"
+msgstr "Подрежим %(subModeName)s завершён."
+
+msgid "modes/fep_new_year_2025/notification/newSubModes/withProgression"
+msgstr "Доступны новые награды и подрежим %(subModeName)s."
+
+msgid "modes/fep_new_year_2025/notification/newSubModes/withoutProgression"
+msgstr "Доступен новый подрежим — %(subModeName)s."
+
+msgid "modes/fep_new_year_2025/notification/switchOffSubModes"
+msgstr "Подрежим %(subModeName)s недоступен: ведутся технические работы."
+
+msgid "modes/fep_new_year_2025/notification/switchOnSubModes"
+msgstr "Подрежим %(subModeName)s снова доступен."
+
+msgid "modes/fep_new_year_2025/progression/cardsFan/listOfRandomRewards"
+msgstr "Список наград"
+
+msgid "modes/fep_new_year_2025/progression/complete/congratulations"
+msgstr "Поздравляем!"
+
+msgid "modes/fep_new_year_2025/progression/complete/title"
+msgstr "Вы завершили прогрессию"
+
+msgid "modes/fep_new_year_2025/progression/infinite/congratulations"
+msgstr "Поздравляем!"
+
+msgid "modes/fep_new_year_2025/progression/infinite/infinityStep"
+msgstr "Повторяемый этап"
+
+msgid "modes/fep_new_year_2025/progression/infinite/mainProgressionFinished"
+msgstr "Вы завершили основную прогрессию"
+
+msgid ""
+"modes/fep_new_year_2025/progression/questsList/quest/infinityStageProgress"
+msgstr "Получите столько наград, сколько сможете:"
+
+msgid "modes/fep_new_year_2025/progression/questsList/totalPointsEarned"
+msgstr "Заработано очков: {{progressionSteps}}"
+
+msgid ""
+"modes/fep_new_year_2025/progression/questsList/totalPointsEarnedStandAloneTitle"
+msgstr "Заработано очков:"
+
+msgid "modes/fep_new_year_2025/progression/title"
+msgstr "ЗАДАЧИ «АРКАДЫ»"
+
+msgid "modes/fep_new_year_2025/rewardsView/header"
+msgstr "ПОЛУЧЕНА ЛЕГЕНДАРНАЯ НАГРАДА"
+
+msgid "modes/fep_new_year_2025/scheduler/notification/available"
+msgstr "Бои режима %(subModeName)s снова доступны."
+
+msgid "modes/fep_new_year_2025/scheduler/notification/available/title"
+msgstr "Режим прекращения огня"
+
+msgid "modes/fep_new_year_2025/scheduler/notification/modeEnded"
+msgstr "Бои режима %(subModeName)s завершены."
+
+msgid "modes/fep_new_year_2025/scheduler/notification/modeEnded/title"
+msgstr "Режим прекращения огня"
+
+msgid "modes/fep_new_year_2025/scheduler/notification/primeTime"
+msgstr ""
+"Бои события %(subModeName)s недоступны до окончания режима прекращения огня."
+
+msgid "modes/fep_new_year_2025/scheduler/notification/primeTime/title"
+msgstr "Режим прекращения огня"
+
+msgid "modes/fep_new_year_2025/tierList/description"
+msgstr ""
+"Каждая случайная награда — это один предмет из списка ниже, который вы "
+"можете получить с определённой вероятностью."
+
+msgid "modes/fep_new_year_2025/tierList/title"
+msgstr "Что внутри?"
+
+msgid "modes/fep_new_year_2025/tooltip/filter/body"
+msgstr ""
+"Включить/отключить отображение подходящей техники для режима «Аркада»."
+
+msgid "modes/fep_new_year_2025/tooltip/filter/header"
+msgstr "Аркадная техника"
+
+msgid "modes/fep_new_year_2025/userName"
+msgstr "Аркада"
 
 msgid "modes/undefined/banner/progression/finish"
 msgstr "Все этапы пройдены"
@@ -922,6 +1120,159 @@ msgstr "?empty?"
 
 msgid "sub_modes/development/userName/quoted"
 msgstr "?empty?"
+
+msgid "sub_modes/ice_age_2025/capsUserName"
+msgstr "ЛЕДНИКОВЫЙ ПЕРИОД"
+
+msgid "sub_modes/ice_age_2025/detailsHelp/page1/description"
+msgstr ""
+"Если вы попали на каток на многотонной машине, то у вас два варианта: "
+"почувствовать себя коровой на льду или показать, что такое стильный дрифт. В"
+" качестве компенсации уменьшен разброс, а праздничные эффекты выстрелов "
+"добавят атмосферы событию."
+
+msgid "sub_modes/ice_age_2025/detailsHelp/page1/title"
+msgstr "Ледниковый период"
+
+msgid "sub_modes/ice_age_2025/detailsHelpHint/description"
+msgstr "для знакомства с особенностями режима"
+
+msgid "sub_modes/ice_age_2025/detailsHelpHint/press"
+msgstr "Нажмите"
+
+msgid "sub_modes/ice_age_2025/detailsHelpTitle"
+msgstr "Аркада: Ледниковый период"
+
+msgid "sub_modes/ice_age_2025/subModeCard/battleCondition"
+msgstr "15x15"
+
+msgid "sub_modes/ice_age_2025/subModeCard/description"
+msgstr ""
+"Бои с изменёнными\n"
+"параметрами мобильности"
+
+msgid "sub_modes/ice_age_2025/subModeCard/levelCondition"
+msgstr "{parSecondary_open}I{parSecondary_close}&nbsp;%(levels)s уровни"
+
+msgid "sub_modes/ice_age_2025/subModeCard/performance/highRisk/description"
+msgstr ""
+"Режим требователен к компьютеру. Карта может долго загружаться, возможны "
+"проблемы с графикой и перемещением техники в бою. В случае недостаточной "
+"производительности, попробуйте понизить настройки графики."
+
+msgid "sub_modes/ice_age_2025/subModeCard/performance/highRisk/header"
+msgstr "Возможно снижение производительности"
+
+msgid "sub_modes/ice_age_2025/subModeCard/performance/highRisk/headerIcon"
+msgstr "%(icon) Возможно снижение производительности"
+
+msgid "sub_modes/ice_age_2025/subModeCard/performance/mediumRisk/description"
+msgstr ""
+"Режим требователен к компьютеру. Карта может долго загружаться, возможны "
+"проблемы с графикой и перемещением техники в бою. В случае недостаточной "
+"производительности, попробуйте понизить настройки графики."
+
+msgid "sub_modes/ice_age_2025/subModeCard/performance/mediumRisk/header"
+msgstr "Возможно снижение производительности"
+
+msgid "sub_modes/ice_age_2025/subModeCard/performance/mediumRisk/headerIcon"
+msgstr "%(icon) Возможно снижение производительности"
+
+msgid "sub_modes/ice_age_2025/subModeCard/title"
+msgstr "Ледниковый период"
+
+msgid "sub_modes/ice_age_2025/tips/tip1/description"
+msgstr ""
+"Если вы попали на каток на многотонной машине, то у вас два варианта: "
+"почувствовать себя коровой на льду или показать, что такое стильный дрифт. В"
+" качестве компенсации уменьшен разброс, а праздничные эффекты выстрелов "
+"добавят атмосферы событию."
+
+msgid "sub_modes/ice_age_2025/tips/tip1/title"
+msgstr "Ледниковый период"
+
+msgid "sub_modes/ice_age_2025/userName"
+msgstr "Ледниковый период"
+
+msgid "sub_modes/ice_age_2025/userName/quoted"
+msgstr "«Ледниковый период»"
+
+msgid "sub_modes/snowballs_2025/capsUserName"
+msgstr "ИГРА В СНЕЖКИ"
+
+msgid "sub_modes/snowballs_2025/detailsHelp/page1/description"
+msgstr ""
+"Станьте «фугасным монстром» вне зависимости от того, на чём играете. "
+"Бронепробиваемость основных и специальных снарядов уменьшена, зато повышен "
+"урон осколочно-фугасными снарядами. Вид боеприпасов полностью соответствует "
+"атмосфере праздника."
+
+msgid "sub_modes/snowballs_2025/detailsHelp/page1/title"
+msgstr "Игра в снежки"
+
+msgid "sub_modes/snowballs_2025/detailsHelpHint/description"
+msgstr "для знакомства с особенностями режима"
+
+msgid "sub_modes/snowballs_2025/detailsHelpHint/press"
+msgstr "Нажмите"
+
+msgid "sub_modes/snowballs_2025/detailsHelpTitle"
+msgstr "Аркада: Игра в снежки"
+
+msgid "sub_modes/snowballs_2025/subModeCard/battleCondition"
+msgstr "15x15"
+
+msgid "sub_modes/snowballs_2025/subModeCard/description"
+msgstr ""
+"Бои с изменёнными\n"
+"параметрами снарядов"
+
+msgid "sub_modes/snowballs_2025/subModeCard/levelCondition"
+msgstr "{parSecondary_open}I{parSecondary_close}&nbsp;%(levels)s уровни"
+
+msgid "sub_modes/snowballs_2025/subModeCard/performance/highRisk/description"
+msgstr ""
+"Режим требователен к компьютеру. Карта может долго загружаться, возможны "
+"проблемы с графикой и перемещением техники в бою. В случае недостаточной "
+"производительности, попробуйте понизить настройки графики."
+
+msgid "sub_modes/snowballs_2025/subModeCard/performance/highRisk/header"
+msgstr "Возможно снижение производительности"
+
+msgid "sub_modes/snowballs_2025/subModeCard/performance/highRisk/headerIcon"
+msgstr "%(icon) Возможно снижение производительности"
+
+msgid ""
+"sub_modes/snowballs_2025/subModeCard/performance/mediumRisk/description"
+msgstr ""
+"Режим требователен к компьютеру. Карта может долго загружаться, возможны "
+"проблемы с графикой и перемещением техники в бою. В случае недостаточной "
+"производительности, попробуйте понизить настройки графики."
+
+msgid "sub_modes/snowballs_2025/subModeCard/performance/mediumRisk/header"
+msgstr "Возможно снижение производительности"
+
+msgid "sub_modes/snowballs_2025/subModeCard/performance/mediumRisk/headerIcon"
+msgstr "%(icon) Возможно снижение производительности"
+
+msgid "sub_modes/snowballs_2025/subModeCard/title"
+msgstr "Игра в снежки"
+
+msgid "sub_modes/snowballs_2025/tips/tip1/description"
+msgstr ""
+"Станьте «фугасным монстром» вне зависимости от того, на чём играете. "
+"Бронепробиваемость основных и специальных снарядов уменьшена, зато повышен "
+"урон осколочно-фугасными снарядами. Вид боеприпасов полностью соответствует "
+"атмосфере праздника."
+
+msgid "sub_modes/snowballs_2025/tips/tip1/title"
+msgstr "Игра в снежки"
+
+msgid "sub_modes/snowballs_2025/userName"
+msgstr "Игра в снежки"
+
+msgid "sub_modes/snowballs_2025/userName/quoted"
+msgstr "«Игра в снежки»"
 
 msgid "sub_modes/undefined/capsUserName"
 msgstr "UNKNOWN SUB MODE NAME"

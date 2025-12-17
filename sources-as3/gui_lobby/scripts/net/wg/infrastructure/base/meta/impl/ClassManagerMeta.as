@@ -1146,7 +1146,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.hangar.quests.QuestFlagIconContainer;
    import net.wg.gui.lobby.hangar.quests.QuestInformerButton;
    import net.wg.gui.lobby.hangar.quests.QuestInformerContent;
-   import net.wg.gui.lobby.hangar.quests.ResourceWellEntryPoint;
    import net.wg.gui.lobby.hangar.quests.SecondaryEntryPoint;
    import net.wg.gui.lobby.hangar.quests.SecondaryEntryPointContent;
    import net.wg.gui.lobby.hangar.tcarousel.BaseTankIcon;
@@ -1421,7 +1420,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.personalMissions.components.PersonalMissionExtraAwardAnim;
    import net.wg.gui.lobby.personalMissions.components.PersonalMissionExtraAwardDesc;
    import net.wg.gui.lobby.personalMissions.components.PersonalMissionFirstEntryAwardView;
-   import net.wg.gui.lobby.personalMissions.components.PersonalMissionFirstEntryView;
    import net.wg.gui.lobby.personalMissions.components.PersonalMissionMapBgContainer;
    import net.wg.gui.lobby.personalMissions.components.PersonalMissionOperations;
    import net.wg.gui.lobby.personalMissions.components.PersonalMissionPlansLoaderMgr;
@@ -1446,17 +1444,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.personalMissions.components.chainsPanel.ChainButton;
    import net.wg.gui.lobby.personalMissions.components.chainsPanel.ChainButtonContent;
    import net.wg.gui.lobby.personalMissions.components.chainsPanel.ChainsPanel;
-   import net.wg.gui.lobby.personalMissions.components.firstEntry.InfoAdditionalBlock;
-   import net.wg.gui.lobby.personalMissions.components.firstEntry.InfoAdditionalContent;
-   import net.wg.gui.lobby.personalMissions.components.firstEntry.InfoAdditionalContentPage;
-   import net.wg.gui.lobby.personalMissions.components.firstEntry.InfoAdditionalNotification;
-   import net.wg.gui.lobby.personalMissions.components.firstEntry.InfoContent;
-   import net.wg.gui.lobby.personalMissions.components.firstEntry.InfoItemRenderer;
-   import net.wg.gui.lobby.personalMissions.components.firstEntry.InfoItemRendererBg;
-   import net.wg.gui.lobby.personalMissions.components.firstEntry.MoreTextAnim;
-   import net.wg.gui.lobby.personalMissions.components.firstEntry.PMInfoAdditionalViewSettings;
-   import net.wg.gui.lobby.personalMissions.components.firstEntry.PMInfoVewSettings;
-   import net.wg.gui.lobby.personalMissions.components.firstEntry.PMInfoVewSettingsCore;
    import net.wg.gui.lobby.personalMissions.components.interfaces.IAwardSheetPopup;
    import net.wg.gui.lobby.personalMissions.components.interfaces.IChainButton;
    import net.wg.gui.lobby.personalMissions.components.interfaces.IChainButtonContent;
@@ -1498,9 +1485,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.personalMissions.data.FreeSheetPopoverData;
    import net.wg.gui.lobby.personalMissions.data.FreeSheetPopoverVO;
    import net.wg.gui.lobby.personalMissions.data.IconTextRendererVO;
-   import net.wg.gui.lobby.personalMissions.data.InfoAdditionalBlockDataVO;
-   import net.wg.gui.lobby.personalMissions.data.InfoAdditionalDataVO;
-   import net.wg.gui.lobby.personalMissions.data.InfoItemRendererVO;
    import net.wg.gui.lobby.personalMissions.data.MapSettingsData;
    import net.wg.gui.lobby.personalMissions.data.OperationAwardsVO;
    import net.wg.gui.lobby.personalMissions.data.OperationDataVO;
@@ -1513,7 +1497,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.personalMissions.data.PersonalMissionAwardsScreenVO;
    import net.wg.gui.lobby.personalMissions.data.PersonalMissionDetailedViewVO;
    import net.wg.gui.lobby.personalMissions.data.PersonalMissionDetailsContainerVO;
-   import net.wg.gui.lobby.personalMissions.data.PersonalMissionFirstEntryViewVO;
    import net.wg.gui.lobby.personalMissions.data.PersonalMissionVehicleAwardVO;
    import net.wg.gui.lobby.personalMissions.data.PersonalMissionsAbstractInfoViewVO;
    import net.wg.gui.lobby.personalMissions.data.PersonalMissionsAwardsViewVO;
@@ -1534,7 +1517,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.personalMissions.events.AnimationStateEvent;
    import net.wg.gui.lobby.personalMissions.events.AwardEvent;
    import net.wg.gui.lobby.personalMissions.events.ChainEvent;
-   import net.wg.gui.lobby.personalMissions.events.FirstEntryCardEvent;
    import net.wg.gui.lobby.personalMissions.events.OperationEvent;
    import net.wg.gui.lobby.personalMissions.events.PawnedSheetRendererEvent;
    import net.wg.gui.lobby.personalMissions.events.PersonalMissionDetailedViewEvent;
@@ -2797,8 +2779,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.notification.custom.NotificationBMTaskReminder;
    import net.wg.gui.notification.custom.NotificationCollectionsCustom;
    import net.wg.gui.notification.custom.NotificationPM3Quest;
-   import net.wg.gui.notification.custom.NotificationSeniorityAwardsQuest;
-   import net.wg.gui.notification.custom.NotificationSeniorityAwardsTokens;
    import net.wg.gui.notification.custom.SMAchievements;
    import net.wg.gui.notification.custom.SMAchievementsFirstEntry;
    import net.wg.gui.notification.custom.SMAchievementsFirstEntryWithoutWTR;
@@ -2806,10 +2786,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.notification.custom.SMCollectionsCustom;
    import net.wg.gui.notification.custom.SMFunRandomReward;
    import net.wg.gui.notification.custom.SMPM3Quest;
-   import net.wg.gui.notification.custom.SMSeniorityAwardsQuest;
-   import net.wg.gui.notification.custom.SMSeniorityAwardsTokens;
    import net.wg.gui.notification.custom.SMWotPlusAttendanceBig;
-   import net.wg.gui.notification.custom.SeniorityAwardsVehicleSelection;
    import net.wg.gui.notification.custom.WotPlusAttendanceBig;
    import net.wg.gui.notification.custom.WotPlusAttendanceSmall;
    import net.wg.gui.notification.custom.pm3.PM3DescriptionCompleted;
@@ -5247,8 +5224,6 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_LOBBY_HANGAR_QUESTS_QUESTINFORMERCONTENT:Class = QuestInformerContent;
       
-      public static const NET_WG_GUI_LOBBY_HANGAR_QUESTS_RESOURCEWELLENTRYPOINT:Class = ResourceWellEntryPoint;
-      
       public static const NET_WG_GUI_LOBBY_HANGAR_QUESTS_SECONDARYENTRYPOINT:Class = SecondaryEntryPoint;
       
       public static const NET_WG_GUI_LOBBY_HANGAR_QUESTS_SECONDARYENTRYPOINTCONTENT:Class = SecondaryEntryPointContent;
@@ -5795,8 +5770,6 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_LOBBY_PERSONALMISSIONS_COMPONENTS_PERSONALMISSIONFIRSTENTRYAWARDVIEW:Class = PersonalMissionFirstEntryAwardView;
       
-      public static const NET_WG_GUI_LOBBY_PERSONALMISSIONS_COMPONENTS_PERSONALMISSIONFIRSTENTRYVIEW:Class = PersonalMissionFirstEntryView;
-      
       public static const NET_WG_GUI_LOBBY_PERSONALMISSIONS_COMPONENTS_PERSONALMISSIONMAPBGCONTAINER:Class = PersonalMissionMapBgContainer;
       
       public static const NET_WG_GUI_LOBBY_PERSONALMISSIONS_COMPONENTS_PERSONALMISSIONOPERATIONS:Class = PersonalMissionOperations;
@@ -5846,28 +5819,6 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_LOBBY_PERSONALMISSIONS_COMPONENTS_CHAINSPANEL_CHAINBUTTONCONTENT:Class = ChainButtonContent;
       
       public static const NET_WG_GUI_LOBBY_PERSONALMISSIONS_COMPONENTS_CHAINSPANEL_CHAINSPANEL:Class = ChainsPanel;
-      
-      public static const NET_WG_GUI_LOBBY_PERSONALMISSIONS_COMPONENTS_FIRSTENTRY_INFOADDITIONALBLOCK:Class = InfoAdditionalBlock;
-      
-      public static const NET_WG_GUI_LOBBY_PERSONALMISSIONS_COMPONENTS_FIRSTENTRY_INFOADDITIONALCONTENT:Class = InfoAdditionalContent;
-      
-      public static const NET_WG_GUI_LOBBY_PERSONALMISSIONS_COMPONENTS_FIRSTENTRY_INFOADDITIONALCONTENTPAGE:Class = InfoAdditionalContentPage;
-      
-      public static const NET_WG_GUI_LOBBY_PERSONALMISSIONS_COMPONENTS_FIRSTENTRY_INFOADDITIONALNOTIFICATION:Class = InfoAdditionalNotification;
-      
-      public static const NET_WG_GUI_LOBBY_PERSONALMISSIONS_COMPONENTS_FIRSTENTRY_INFOCONTENT:Class = InfoContent;
-      
-      public static const NET_WG_GUI_LOBBY_PERSONALMISSIONS_COMPONENTS_FIRSTENTRY_INFOITEMRENDERER:Class = InfoItemRenderer;
-      
-      public static const NET_WG_GUI_LOBBY_PERSONALMISSIONS_COMPONENTS_FIRSTENTRY_INFOITEMRENDERERBG:Class = InfoItemRendererBg;
-      
-      public static const NET_WG_GUI_LOBBY_PERSONALMISSIONS_COMPONENTS_FIRSTENTRY_MORETEXTANIM:Class = MoreTextAnim;
-      
-      public static const NET_WG_GUI_LOBBY_PERSONALMISSIONS_COMPONENTS_FIRSTENTRY_PMINFOADDITIONALVIEWSETTINGS:Class = PMInfoAdditionalViewSettings;
-      
-      public static const NET_WG_GUI_LOBBY_PERSONALMISSIONS_COMPONENTS_FIRSTENTRY_PMINFOVEWSETTINGS:Class = PMInfoVewSettings;
-      
-      public static const NET_WG_GUI_LOBBY_PERSONALMISSIONS_COMPONENTS_FIRSTENTRY_PMINFOVEWSETTINGSCORE:Class = PMInfoVewSettingsCore;
       
       public static const NET_WG_GUI_LOBBY_PERSONALMISSIONS_COMPONENTS_INTERFACES_IAWARDSHEETPOPUP:Class = IAwardSheetPopup;
       
@@ -5951,12 +5902,6 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_LOBBY_PERSONALMISSIONS_DATA_ICONTEXTRENDERERVO:Class = IconTextRendererVO;
       
-      public static const NET_WG_GUI_LOBBY_PERSONALMISSIONS_DATA_INFOADDITIONALBLOCKDATAVO:Class = InfoAdditionalBlockDataVO;
-      
-      public static const NET_WG_GUI_LOBBY_PERSONALMISSIONS_DATA_INFOADDITIONALDATAVO:Class = InfoAdditionalDataVO;
-      
-      public static const NET_WG_GUI_LOBBY_PERSONALMISSIONS_DATA_INFOITEMRENDERERVO:Class = InfoItemRendererVO;
-      
       public static const NET_WG_GUI_LOBBY_PERSONALMISSIONS_DATA_MAPSETTINGSDATA:Class = MapSettingsData;
       
       public static const NET_WG_GUI_LOBBY_PERSONALMISSIONS_DATA_OPERATIONAWARDSVO:Class = OperationAwardsVO;
@@ -5978,8 +5923,6 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_LOBBY_PERSONALMISSIONS_DATA_PERSONALMISSIONDETAILEDVIEWVO:Class = PersonalMissionDetailedViewVO;
       
       public static const NET_WG_GUI_LOBBY_PERSONALMISSIONS_DATA_PERSONALMISSIONDETAILSCONTAINERVO:Class = PersonalMissionDetailsContainerVO;
-      
-      public static const NET_WG_GUI_LOBBY_PERSONALMISSIONS_DATA_PERSONALMISSIONFIRSTENTRYVIEWVO:Class = PersonalMissionFirstEntryViewVO;
       
       public static const NET_WG_GUI_LOBBY_PERSONALMISSIONS_DATA_PERSONALMISSIONSABSTRACTINFOVIEWVO:Class = PersonalMissionsAbstractInfoViewVO;
       
@@ -6022,8 +5965,6 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_LOBBY_PERSONALMISSIONS_EVENTS_AWARDEVENT:Class = AwardEvent;
       
       public static const NET_WG_GUI_LOBBY_PERSONALMISSIONS_EVENTS_CHAINEVENT:Class = ChainEvent;
-      
-      public static const NET_WG_GUI_LOBBY_PERSONALMISSIONS_EVENTS_FIRSTENTRYCARDEVENT:Class = FirstEntryCardEvent;
       
       public static const NET_WG_GUI_LOBBY_PERSONALMISSIONS_EVENTS_OPERATIONEVENT:Class = OperationEvent;
       
@@ -8549,12 +8490,6 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_NOTIFICATION_CUSTOM_NOTIFICATIONPM3QUEST:Class = NotificationPM3Quest;
       
-      public static const NET_WG_GUI_NOTIFICATION_CUSTOM_NOTIFICATIONSENIORITYAWARDSQUEST:Class = NotificationSeniorityAwardsQuest;
-      
-      public static const NET_WG_GUI_NOTIFICATION_CUSTOM_NOTIFICATIONSENIORITYAWARDSTOKENS:Class = NotificationSeniorityAwardsTokens;
-      
-      public static const NET_WG_GUI_NOTIFICATION_CUSTOM_SENIORITYAWARDSVEHICLESELECTION:Class = SeniorityAwardsVehicleSelection;
-      
       public static const NET_WG_GUI_NOTIFICATION_CUSTOM_SMACHIEVEMENTS:Class = SMAchievements;
       
       public static const NET_WG_GUI_NOTIFICATION_CUSTOM_SMACHIEVEMENTSFIRSTENTRY:Class = SMAchievementsFirstEntry;
@@ -8568,10 +8503,6 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_NOTIFICATION_CUSTOM_SMFUNRANDOMREWARD:Class = SMFunRandomReward;
       
       public static const NET_WG_GUI_NOTIFICATION_CUSTOM_SMPM3QUEST:Class = SMPM3Quest;
-      
-      public static const NET_WG_GUI_NOTIFICATION_CUSTOM_SMSENIORITYAWARDSQUEST:Class = SMSeniorityAwardsQuest;
-      
-      public static const NET_WG_GUI_NOTIFICATION_CUSTOM_SMSENIORITYAWARDSTOKENS:Class = SMSeniorityAwardsTokens;
       
       public static const NET_WG_GUI_NOTIFICATION_CUSTOM_SMWOTPLUSATTENDANCEBIG:Class = SMWotPlusAttendanceBig;
       

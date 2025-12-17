@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/3D_Customization/Cus_130_Revelry_Sleigh/normal/lod2/Cus_130_Revelry_Sleigh_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.529869 -0.562980 -0.752364</min>
+		<max>0.001485 0.131074 0.736532</max>
+	</visibilityBox>
+	<nodelessVisual>content/3D_Customization/Cus_130_Revelry_Sleigh/normal/lod1/Cus_130_Revelry_Sleigh_01</nodelessVisual>
+	<tank>true</tank>
+</root>

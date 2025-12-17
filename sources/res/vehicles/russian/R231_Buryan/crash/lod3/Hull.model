@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/russian/R231_Buryan/crash/lod3/Hull</nodefullVisual>
+	<visibilityBox>
+		<min>-1.672041 -0.973738 -3.686724</min>
+		<max>
+			1.71593 0.470585 3.652127
+			<!--BW_String-->
+		</max>
+	</visibilityBox>
+	<parent>vehicles/russian/R231_Buryan/crash/lod4/Hull</parent>
+	<extent>192</extent>
+</root>

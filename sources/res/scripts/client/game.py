@@ -1,3 +1,4 @@
+from __future__ import absolute_import, print_function
 import cPickle, functools, locale, sys, zlib, Account, AreaDestructibles, BigWorld, CommandMapping, GUI, MusicControllerWWISE, Settings, SoundGroups, TriggersManager, VOIP, WebBrowser, constants, persistent_data_cache as pdc, services_config
 from MemoryCriticalController import g_critMemHandler
 from debug_utils import LOG_CURRENT_EXCEPTION, LOG_DEBUG, LOG_ERROR, LOG_NOTE
@@ -379,7 +380,7 @@ def requestQuit():
 
 
 def addChatMsg(*msg):
-    print 'Message:', msg
+    print('Message:', msg)
 
 
 def expandMacros(line):

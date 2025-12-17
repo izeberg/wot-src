@@ -32,6 +32,24 @@ class LobbyStateFlags(StateFlags):
     MAX = POST_BATTLE_RESULTS
 
 
+def isInHangarState():
+    from gui.Scaleform.lobby_entry import getLobbyStateMachine
+    lsm = getLobbyStateMachine()
+    if not lsm:
+        return False
+    inHangarState = any(s.getFlags() & LobbyStateFlags.HANGAR for s in lsm.getNonEmptyEnteredStates())
+    return inHangarState
+
+
+def isHangarState(state):
+    from gui.Scaleform.lobby_entry import getLobbyStateMachine
+    lsm = getLobbyStateMachine()
+    if not lsm:
+        return False
+    if state:
+        return state.getFlags() & LobbyStateFlags.HANGAR
+
+
 class LobbyStateDescription(object):
 
     class Info(object):

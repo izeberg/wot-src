@@ -2,6 +2,8 @@ import functools, CGF, Triggers, Vehicular
 from cgf_demo.demo_category import DEMO_CATEGORY
 from cgf_script.component_meta_class import ComponentProperty, CGFMetaTypes, registerComponent
 from cgf_script.managers_registrator import onAddedQuery
+from cgf_events import gun_events
+from constants import UNKNOWN_GUN_INDEX
 
 @registerComponent
 class TestEntranceSingleShot(object):
@@ -9,7 +11,7 @@ class TestEntranceSingleShot(object):
     editorTitle = 'Test Entrance Single Shot'
     domain = CGF.DomainOption.DomainClient
     trigger = ComponentProperty(type=CGFMetaTypes.LINK, editorName='AreaTrigger to subscribe', value=Triggers.AreaTriggerComponent)
-    gunEffectsContoller = ComponentProperty(type=CGFMetaTypes.LINK, editorName='Gun effects controller', value=Vehicular.GunEffectsController)
+    gun = ComponentProperty(type=CGFMetaTypes.LINK, editorName='Gun Installation', value=Vehicular.GunInstallationComponent)
 
 
 class EntranceSingleShotManager(CGF.ComponentManager):
@@ -21,9 +23,12 @@ class EntranceSingleShotManager(CGF.ComponentManager):
             trigger.addEnterReaction(functools.partial(self.__onEnter, entrance))
 
     def __onEnter(self, entrance, who, where):
-        gunEffectsContoller = entrance.gunEffectsContoller()
-        if gunEffectsContoller:
-            gunEffectsContoller.singleShot()
+        gunGO = entrance.gun.gameObject
+        if gunGO is None or not gunGO.isValid():
+            return
+        spaceID = gunGO.spaceID
+        gun_events.postVehicularSingleShotEvent(spaceID, gunGO.index, gunGO.name, UNKNOWN_GUN_INDEX)
+        return
 
 
 @registerComponent
@@ -32,7 +37,7 @@ class TestEntranceContinuousBurst(object):
     editorTitle = 'Test Entrance Continuous Burst'
     domain = CGF.DomainOption.DomainClient
     trigger = ComponentProperty(type=CGFMetaTypes.LINK, editorName='AreaTrigger to subscribe', value=Triggers.AreaTriggerComponent)
-    gunEffectsContoller = ComponentProperty(type=CGFMetaTypes.LINK, editorName='Gun effects controller', value=Vehicular.GunEffectsController)
+    gun = ComponentProperty(type=CGFMetaTypes.LINK, editorName='Gun Installation', value=Vehicular.GunInstallationComponent)
 
 
 class EntranceContinuousBurstManager(CGF.ComponentManager):
@@ -45,11 +50,17 @@ class EntranceContinuousBurstManager(CGF.ComponentManager):
             trigger.addExitReaction(functools.partial(self.__onExit, entrance))
 
     def __onEnter(self, entrance, who, where):
-        controller = entrance.gunEffectsContoller()
-        if controller:
-            controller.startContinuousBurst()
+        gunGO = entrance.gun.gameObject
+        if gunGO is None or not gunGO.isValid():
+            return
+        spaceID = gunGO.spaceID
+        gun_events.postVehicularContinuousBurstEvent(spaceID, gunGO.index, gunGO.name, True)
+        return
 
     def __onExit(self, entrance, who, where):
-        controller = entrance.gunEffectsContoller()
-        if controller:
-            controller.stopContinuousBurst()
+        gunGO = entrance.gun.gameObject
+        if gunGO is None or not gunGO.isValid():
+            return
+        spaceID = gunGO.spaceID
+        gun_events.postVehicularContinuousBurstEvent(spaceID, gunGO.index, gunGO.name, False)
+        return

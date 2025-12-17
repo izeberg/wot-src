@@ -39,6 +39,12 @@
 				<!--BW_String-->
 			</invisibilityBonus>
 		</camouflageNet>
+		<deluxeCamouflageNet>
+			<invisibilityBonus>
+				0.175
+				<!--BW_String-->
+			</invisibilityBonus>
+		</deluxeCamouflageNet>
 		<additionalInvisibilityDevice>
 			<invisibilityBonus>
 				0.05 0.06
@@ -2563,12 +2569,12 @@
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						13.1
+						12.9
 						<!--BW_String-->
 					</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.33
+							0.3
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>4</afterShot>
@@ -2922,7 +2928,7 @@
 			<heatingTime>14</heatingTime>
 			<coolingTime>10</coolingTime>
 			<dmgBonus>
-				1.364
+				1.25
 				<!--BW_String-->
 			</dmgBonus>
 			<aimBonus>1.135185</aimBonus>

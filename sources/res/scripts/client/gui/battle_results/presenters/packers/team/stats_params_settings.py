@@ -1,5 +1,5 @@
 from collections import namedtuple
-from gui.battle_results.pbs_helpers.team_stats_helpers import getStatsParamValue, getMileageValue, isPersonalBattleResult, isNotPersonalBattleResult, hasStunEfficiency
+from gui.battle_results.pbs_helpers.team_stats_helpers import getStatsParamValue, getMileageValue, isPersonalBattleResult, isNotPersonalBattleResult, hasStunEfficiency, hasArtilleryStrike
 from gui.impl.gen import R
 from gui.impl.gen.view_models.views.lobby.battle_results.simple_stats_parameter_model import RegularParamType, ValueType
 _Parameter = namedtuple('_Parameter', ('path', 'stringId', 'fields', 'valueType', 'conditions',
@@ -10,8 +10,10 @@ REGULAR_PARAMETERS = {RegularParamType.SHOTS: _Parameter(path=_STR_PATH.shots, s
    RegularParamType.HITS: _Parameter(path=_STR_PATH.hits, stringId='hits', fields=('directEnemyHits', 'piercingEnemyHits'), valueType=ValueType.INTEGER, conditions=None, extractor=getStatsParamValue, details=()), 
    RegularParamType.EXPLOSIONHITS: _Parameter(path=_STR_PATH.explosionHits, stringId='explosionHits', fields=('explosionHits', ), valueType=ValueType.INTEGER, conditions=None, extractor=getStatsParamValue, details=()), 
    RegularParamType.DAMAGEDEALT: _Parameter(path=_STR_PATH.damageDealt, stringId='damageDealt', fields=('damageDealt', ), valueType=ValueType.INTEGER, conditions=None, extractor=getStatsParamValue, details=(
-                                RegularParamType.SNIPERDAMAGEDEALT,)), 
+                                RegularParamType.SNIPERDAMAGEDEALT, RegularParamType.ARTILLERYSTRIKE)), 
    RegularParamType.SNIPERDAMAGEDEALT: _Parameter(path=_STR_PATH.sniperDamageDealt, stringId='sniperDamageDealt', fields=('sniperDamageDealt', ), valueType=ValueType.INTEGER, conditions=None, extractor=getStatsParamValue, details=()), 
+   RegularParamType.ARTILLERYSTRIKE: _Parameter(path=_STR_PATH.artilleryFortEquipDamageDealt, stringId='artilleryFortEquipDamageDealt', fields=('artilleryFortEquipDamageDealt', ), valueType=ValueType.INTEGER, conditions=(
+                                    hasArtilleryStrike,), extractor=getStatsParamValue, details=()), 
    RegularParamType.DIRECTHITSRECEIVED: _Parameter(path=_STR_PATH.directHitsReceived, stringId='directHitsReceived', fields=('directHitsReceived', ), valueType=ValueType.INTEGER, conditions=None, extractor=getStatsParamValue, details=(
                                        RegularParamType.PIERCINGSRECEIVED, RegularParamType.NODAMAGEDIRECTHITSRECEIVED)), 
    RegularParamType.PIERCINGSRECEIVED: _Parameter(path=_STR_PATH.piercingsReceived, stringId='piercingsReceived', fields=('piercingsReceived', ), valueType=ValueType.INTEGER, conditions=None, extractor=getStatsParamValue, details=()), 

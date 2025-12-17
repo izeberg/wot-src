@@ -74,106 +74,20 @@
 			</component>
 		</ComponentPool>
 		<ComponentPool>
-			<type>Transform</type>
-			<version>1</version>
-			<component>
-				<UUID>fc03df65-dd1c-46bb-8f3c-f824dd1c2002</UUID>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>Position</name>
-						<value>0 0 0</value>
-					</property>
-					<property>
-						<name>Scale</name>
-						<value>1 1 1</value>
-					</property>
-					<property>
-						<name>Rotation</name>
-						<value>-0 0 0</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<UUID>249dba00-b397-4fa2-a721-2e891eb4a772</UUID>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Position</name>
-						<value>0 0 0</value>
-					</property>
-					<property>
-						<name>Scale</name>
-						<value>1 1 1</value>
-					</property>
-					<property>
-						<name>Rotation</name>
-						<value>-0 0 -0</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<UUID>bade6929-5c97-4d3c-ba05-6e1ded68bb2a</UUID>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Position</name>
-						<value>0 0 0</value>
-					</property>
-					<property>
-						<name>Scale</name>
-						<value>1 1 1</value>
-					</property>
-					<property>
-						<name>Rotation</name>
-						<value>-0 0 0</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<UUID>ff23e840-1290-37f6-868c-9d32ad56fdfa</UUID>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Position</name>
-						<value>0 0 0</value>
-					</property>
-					<property>
-						<name>Scale</name>
-						<value>1 1 1</value>
-					</property>
-					<property>
-						<name>Rotation</name>
-						<value>0 0 0</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<UUID>1cfb97f4-79c3-3ecd-bc79-a58219746a5f</UUID>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Position</name>
-						<value>0 0 0</value>
-					</property>
-					<property>
-						<name>Scale</name>
-						<value>1 1 1</value>
-					</property>
-					<property>
-						<name>Rotation</name>
-						<value>-0 0 0</value>
-					</property>
-				</config>
-			</component>
-		</ComponentPool>
-		<ComponentPool>
 			<type>SequenceComponent</type>
 			<version>3</version>
 			<component>
 				<UUID>bade6929-5c97-4d3c-ba05-6e1ded68bb2a</UUID>
 				<flags>35</flags>
 				<config>
+					<property>
+						<name>activeLayer</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>speed</name>
+						<value>1</value>
+					</property>
 					<property>
 						<name>loop</name>
 						<value>0</value>
@@ -515,12 +429,24 @@
 							</item>
 						</collection>
 					</property>
+					<property>
+						<name>layers</name>
+						<collection/>
+					</property>
 				</config>
 			</component>
 			<component>
 				<UUID>ff23e840-1290-37f6-868c-9d32ad56fdfa</UUID>
 				<flags>35</flags>
 				<config>
+					<property>
+						<name>activeLayer</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>speed</name>
+						<value>1</value>
+					</property>
 					<property>
 						<name>loop</name>
 						<value>1</value>
@@ -862,19 +788,169 @@
 							</item>
 						</collection>
 					</property>
+					<property>
+						<name>layers</name>
+						<collection/>
+					</property>
 				</config>
 			</component>
 		</ComponentPool>
 		<ComponentPool>
-			<type>ContinuousBurstSequenceModifier</type>
+			<type>Transform</type>
+			<version>1</version>
+			<component>
+				<UUID>fc03df65-dd1c-46bb-8f3c-f824dd1c2002</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>249dba00-b397-4fa2-a721-2e891eb4a772</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>bade6929-5c97-4d3c-ba05-6e1ded68bb2a</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>ff23e840-1290-37f6-868c-9d32ad56fdfa</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>1cfb97f4-79c3-3ecd-bc79-a58219746a5f</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>BW::variables::PropertyOnChangeCalculatorComponent</type>
 			<version>1</version>
 			<component>
 				<UUID>ff23e840-1290-37f6-868c-9d32ad56fdfa</UUID>
 				<flags>3</flags>
+				<config>
+					<property>
+						<name>calcs</name>
+						<object>
+							<property>
+								<name>calculations</name>
+								<collection>
+									<item>
+										<object>
+											<property>
+												<name>dest</name>
+												<object>
+													<property>
+														<name>compType</name>
+														<value>SequenceComponent</value>
+													</property>
+													<property>
+														<name>propertyPath</name>
+														<value>durationKeepProgress</value>
+													</property>
+												</object>
+											</property>
+											<property>
+												<name>calcExpr</name>
+												<object>
+													<property>
+														<name>expressionType</name>
+														<value>BW::variables::VariableExpression</value>
+													</property>
+													<property>
+														<name>expr</name>
+														<object>
+															<property>
+																<name>variable</name>
+																<object>
+																	<property>
+																		<name>name</name>
+																		<value>vehicle/gun/intervalBetweenShots</value>
+																	</property>
+																</object>
+															</property>
+														</object>
+													</property>
+												</object>
+											</property>
+										</object>
+									</item>
+								</collection>
+							</property>
+						</object>
+					</property>
+				</config>
 			</component>
 		</ComponentPool>
 		<ComponentPool>
-			<type>GunEffect</type>
+			<type>BW::Gun::Effects::EffectComponent</type>
 			<version>1</version>
 			<component>
 				<UUID>bade6929-5c97-4d3c-ba05-6e1ded68bb2a</UUID>
@@ -943,6 +1019,17 @@
 								<value>10</value>
 							</property>
 							<property>
+								<name>Is Volumetric</name>
+								<value>0</value>
+							</property>
+							<property>
+								<name>Volumetric Intensity</name>
+								<value>
+									0.3
+									<!--BW_String-->
+								</value>
+							</property>
+							<property>
 								<name>castShadows</name>
 								<value>0</value>
 							</property>
@@ -960,6 +1047,32 @@
 									0.0001
 									<!--BW_String-->
 								</value>
+							</property>
+							<property>
+								<name>photometricProfile</name>
+								<isAsset>true</isAsset>
+								<value/>
+							</property>
+							<property>
+								<name>cookieTexture</name>
+								<isAsset>true</isAsset>
+								<value/>
+							</property>
+							<property>
+								<name>isScrollingTexture</name>
+								<value>0</value>
+							</property>
+							<property>
+								<name>scrollingSpeed</name>
+								<value>1</value>
+							</property>
+							<property>
+								<name>scrollingDirection</name>
+								<value>1 0</value>
+							</property>
+							<property>
+								<name>tilingFactor</name>
+								<value>1 1</value>
 							</property>
 							<property>
 								<name>decorType</name>
@@ -1016,6 +1129,17 @@
 								<value>10</value>
 							</property>
 							<property>
+								<name>Is Volumetric</name>
+								<value>0</value>
+							</property>
+							<property>
+								<name>Volumetric Intensity</name>
+								<value>
+									0.3
+									<!--BW_String-->
+								</value>
+							</property>
+							<property>
 								<name>castShadows</name>
 								<value>0</value>
 							</property>
@@ -1033,6 +1157,32 @@
 									0.0001
 									<!--BW_String-->
 								</value>
+							</property>
+							<property>
+								<name>photometricProfile</name>
+								<isAsset>true</isAsset>
+								<value/>
+							</property>
+							<property>
+								<name>cookieTexture</name>
+								<isAsset>true</isAsset>
+								<value/>
+							</property>
+							<property>
+								<name>isScrollingTexture</name>
+								<value>0</value>
+							</property>
+							<property>
+								<name>scrollingSpeed</name>
+								<value>1</value>
+							</property>
+							<property>
+								<name>scrollingDirection</name>
+								<value>1 0</value>
+							</property>
+							<property>
+								<name>tilingFactor</name>
+								<value>1 1</value>
 							</property>
 							<property>
 								<name>decorType</name>

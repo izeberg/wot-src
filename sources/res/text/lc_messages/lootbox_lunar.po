@@ -1,0 +1,170 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-01 10:00+0300\n"
+"PO-Revision-Date: 2010-06-01 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+msgid "autoOpenView/boxCount"
+msgid_plural "plural/autoOpenView/boxCount"
+msgstr[0] "%(count) оставшееся Пылающее сокровище"
+msgstr[1] "%(count) оставшихся Пылающих сокровища"
+msgstr[2] "%(count) оставшихся Пылающих сокровищ"
+
+msgid "awardViews/footer/backButton/"
+msgstr "К Пылающим сокровищам"
+
+msgid "common/boxCategory/lowerCase/lunar"
+msgstr "Пылающее сокровище"
+
+msgid "common/boxCategory/upperCase/lunar"
+msgstr "ПЫЛАЮЩЕЕ СОКРОВИЩЕ"
+
+msgid "common/getButton/lowerCase"
+msgstr "Получить сокровища"
+
+msgid "common/getButton/upperCase"
+msgstr "ПОЛУЧИТЬ СОКРОВИЩА"
+
+msgid "common/loader"
+msgstr "Открытие Пылающего сокровища..."
+
+msgid "common/statistics/emptyHeader"
+msgstr "Открывайте Сокровища, чтобы увидеть статистику."
+
+msgid "common/statistics/header"
+msgstr "Открыто Пылающих сокровищ: %(count)"
+
+msgid "common/statistics/tooltip/body"
+msgstr ""
+"Здесь можно посмотреть, какие ценности выпали из Пылающих сокровищ в течение"
+" события. Вы можете сбросить статистику вручную в любое время."
+
+msgid "confirmResetLootBoxStatistics/description"
+msgstr "Вся информация об открытых Пылающих сокровищах будет удалена."
+
+msgid "entryPoint/boxes"
+msgstr "К СОКРОВИЩАМ"
+
+msgid "entryPoint/tooltip/description"
+msgstr ""
+"Это особые коробки, содержащие новые и уникальные предметы, среди которых "
+"премиум техника, 2D-стили и многое другое. Вы можете приобрести их во "
+"внутриигровом Магазине."
+
+msgid "entryPoint/tooltip/title"
+msgstr "Что такое Пылающие сокровища и как их получить?"
+
+msgid "entryPoint/tooltip/warningDescription"
+msgstr ""
+"Сейчас Пылающие сокровища невозможно открыть или купить по техническим "
+"причинам. Приносим извинения за временные неудобства."
+
+msgid "entryPoint/tooltip/warningTitle"
+msgstr "Пылающие сокровища временно недоступны"
+
+msgid "eventName/lowerCase"
+msgstr "Трофеи с Востока"
+
+msgid "eventName/upperCase"
+msgstr "ТРОФЕИ С ВОСТОКА"
+
+msgid "guaranteedTitle/nextBox"
+msgstr "Гарантированная награда в следующем Сокровище"
+
+msgid "guaranteedTitle/text"
+msgstr "Максимум Пылающих сокровищ до гарантированной награды: %(count)"
+
+msgid "infoPage/footer/description/autoOpen"
+msgstr ""
+"Если вы не откроете все Пылающие сокровища до окончания события, они будут "
+"открыты автоматически."
+
+msgid "infoPage/footer/description/compensation"
+msgstr ""
+"Если у вас уже есть вся техника из списка возможных наград, все последующие "
+"машины, которые вы получите из Пылающих сокровищ, будут компенсированы "
+"золотом в размере их полной стоимости."
+
+msgid "infoPage/footer/description/guaranteed"
+msgstr ""
+"Каждое %(guaranteed0)s-е Пылающее сокровище гарантированно содержит машину "
+"VIII–IX уровня. Если при их открытии вам не выпадет такая техника, то в "
+"%(guaranteed0)s&zwnbsp;-м Пылающем сокровище вы обязательно найдёте машину "
+"VIII–IX уровня, которой у вас ещё нет. После выпадения техники счётчик "
+"сбрасывается."
+
+msgid "infoPage/header/description"
+msgstr ""
+"Открывайте Пылающие сокровища с шансом получить ценные внутриигровые "
+"предметы! Узнайте подробности ниже."
+
+msgid "multipleRewardView/header/subTitle/"
+msgstr "Из %(name) (открыто %(boxesCount) Пылающих сокровищ)"
+
+msgid "noBoxesView/description/"
+msgstr ""
+"У вас нет Пылающих сокровищ.\n"
+"Вы можете купить их в Магазине."
+
+msgid "preview/backLabel"
+msgstr "К СОКРОВИЩАМ"
+
+msgid "quantityTitle/boxesAvailable"
+msgstr "Сокровищ в наличии: %(boxesCount)"
+
+msgid "quantityTitle/noBoxes"
+msgstr "Сокровища закончились"
+
+msgid "serviceChannelMessages/finish/text"
+msgstr ""
+"Все оставшиеся Пылающие сокровища будут открыты. Содержимое будет начислено "
+"на ваш аккаунт."
+
+msgid "serviceChannelMessages/lootBoxesAutoOpen/count"
+msgstr "Открыто Пылающих сокровищ: %(boxes)s"
+
+msgid "serviceChannelMessages/lootBoxesAutoOpen/header"
+msgstr "Открыты оставшиеся Пылающие сокровища"
+
+msgid "serviceChannelMessages/lootBoxesAutoOpen/text"
+msgstr ""
+"После завершения события мы открыли за вас Пылающие сокровища и начислили их"
+" содержимое."
+
+msgid "serviceChannelMessages/lootBoxesDisabled/header"
+msgstr "Открытие Пылающих сокровищ приостановлено"
+
+msgid "serviceChannelMessages/lootBoxesDisabled/text"
+msgstr ""
+"Операции с Пылающими сокровищами временно недоступны: ведутся технические "
+"работы."
+
+msgid "serviceChannelMessages/lootBoxesEnabled/header"
+msgstr "Открытие Пылающих сокровищ доступно"
+
+msgid "serviceChannelMessages/lootBoxesEnabled/text"
+msgstr "Операции с Пылающими сокровищами снова доступны. Скорее открывайте!"
+
+msgid "serviceChannelMessages/multipleOpen"
+msgstr "Пылающие сокровища открыты!"
+
+msgid "serviceChannelMessages/server_error"
+msgstr "Пылающие сокровища не открыты"
+
+msgid "singleRewardView/tooltip/description/"
+msgstr ""
+"Если у вас уже есть вся техника из списка возможных наград, все последующие "
+"машины, которые вы получите из Пылающих сокровищ, будут компенсированы "
+"золотом."
+
+msgid "singleRewardView/tooltip/subtitle/"
+msgstr ""
+"Гарантированная награда — машина из списка возможных наград.\n"
+"Если вы откроете %(remainingCount) Пылающих сокровищ и не получите такую технику, она выпадет при открытии %(count)-го Пылающего сокровища. При выпадении такой машины счётчик сбрасывается."

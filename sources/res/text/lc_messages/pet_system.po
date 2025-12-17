@@ -162,6 +162,9 @@ msgstr ""
 msgid "petStorage/petCard/promo"
 msgstr "НОВОЕ"
 
+msgid "petStorage/progressbarBonuses"
+msgstr "Бонусы действуют в Случайных боях."
+
 msgid "petStorage/progressbarDescription"
 msgstr "Увеличивает награду на определённое количество боёв в день."
 
@@ -176,6 +179,9 @@ msgstr ""
 
 msgid "petStorage/progressbarTooltip/title"
 msgstr "Доступные бонусы"
+
+msgid "petStorage/progressbarWarning"
+msgstr "Бонусы не действуют: неподходящий режим."
 
 msgid "petStorage/status/select"
 msgstr "Выбрать"
@@ -198,11 +204,21 @@ msgstr "Осталось боёв"
 msgid "petStorageTooltip/bonus/title"
 msgstr "Бонус"
 
+msgid "petStorageTooltip/warning/unsuitableMode"
+msgstr "Бонус не действует: неподходящий режим."
+
 msgid "petType/dog"
 msgstr "собака"
 
 msgid "plusPercentValue"
 msgstr "+{{value}}%"
+
+msgid "promotion/bonuses/text_1"
+msgstr ""
+"Бонус действует только в Случайных боях и не активен в каждом сражении."
+
+msgid "promotion/bonuses/text_2"
+msgstr "События доступны в Случайных боях."
 
 msgid "promotion/button/challenge"
 msgstr "Задачи"

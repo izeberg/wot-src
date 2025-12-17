@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>nodes_01</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>static</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.000000 0.000000</row3>
+				</transform>
+				<node>
+					<identifier>axisX</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 0.866025 -0.500000</row1>
+						<row2>0.000000 0.500000 0.866025</row2>
+						<row3>0.000000 0.347567 0.000000</row3>
+					</transform>
+					<node>
+						<identifier>AxisY</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>0.000000 -0.000000 0.000000</row3>
+						</transform>
+						<node>
+							<identifier>AxisY_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 0.866025 0.500000</row1>
+								<row2>0.000000 0.500000 -0.866025</row2>
+								<row3>0.000000 -0.301002 -0.173784</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>axisX_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 0.866025 0.500000</row1>
+							<row2>0.000000 0.500000 -0.866025</row2>
+							<row3>0.000000 -0.301002 -0.173784</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>static_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>AxisY_BlendBone</node>
+		<node>axisX_BlendBone</node>
+		<node>static_BlendBone</node>
+		<geometry>
+			<vertices>attachmentShape.vertices</vertices>
+			<stream>attachmentShape.colour</stream>
+			<primitive>attachmentShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>Cus_141_PE25_Globus_mat_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>112</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/3D_Customization/Cus_141_PE25_Globus/Cus_141_PE25_Globus_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>content/3D_Customization/Cus_141_PE25_Globus/Cus_141_PE25_Globus_AO.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/3D_Customization/Cus_141_PE25_Globus/Cus_141_PE25_Globus_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/3D_Customization/Cus_141_PE25_Globus/Cus_141_PE25_Globus_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.018724 0.158244 -0.019748</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>-0.339269 -0.350000 -0.327728</min>
+		<max>0.301820 0.666488 0.367223</max>
+	</boundingBox>
+	<geometrySize>339174</geometrySize>
+</root>

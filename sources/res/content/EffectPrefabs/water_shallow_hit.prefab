@@ -29,6 +29,20 @@
 			</component>
 		</ComponentPool>
 		<ComponentPool>
+			<type>RemoveGoDelayedComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>e219c583-09fd-46df-b297-22be75c50dbc</UUID>
+				<flags>1</flags>
+				<config>
+					<property>
+						<name>Delay</name>
+						<value>2</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
 			<type>Transform</type>
 			<version>1</version>
 			<component>
@@ -64,20 +78,6 @@
 					<property>
 						<name>Rotation</name>
 						<value>-0 0 0</value>
-					</property>
-				</config>
-			</component>
-		</ComponentPool>
-		<ComponentPool>
-			<type>RemoveGoDelayedComponent</type>
-			<version>1</version>
-			<component>
-				<UUID>e219c583-09fd-46df-b297-22be75c50dbc</UUID>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Delay</name>
-						<value>2</value>
 					</property>
 				</config>
 			</component>
@@ -352,6 +352,14 @@
 																	</property>
 																</object>
 															</property>
+															<property>
+																<name>leftBound</name>
+																<value>0</value>
+															</property>
+															<property>
+																<name>rightBound</name>
+																<value>1</value>
+															</property>
 														</object>
 													</property>
 												</object>
@@ -612,200 +620,79 @@
 												<object>
 													<property>
 														<name>expressionType</name>
-														<value>BW::variables::ConstructVector2Expression</value>
+														<value>BW::variables::MultiplyManyExpression</value>
 													</property>
 													<property>
 														<name>expr</name>
 														<object>
 															<property>
-																<name>leftOp</name>
-																<object>
-																	<property>
-																		<name>expressionType</name>
-																		<value>BW::variables::MultiplyExpression</value>
-																	</property>
-																	<property>
-																		<name>expr</name>
+																<name>args</name>
+																<collection>
+																	<item>
 																		<object>
 																			<property>
-																				<name>leftOp</name>
-																				<object>
-																					<property>
-																						<name>expressionType</name>
-																						<value>BW::variables::VariableExpression</value>
-																					</property>
-																					<property>
-																						<name>expr</name>
-																						<object>
-																							<property>
-																								<name>variable</name>
-																								<object>
-																									<property>
-																										<name>name</name>
-																										<value>aux/energy</value>
-																									</property>
-																								</object>
-																							</property>
-																						</object>
-																					</property>
-																				</object>
+																				<name>expressionType</name>
+																				<value>BW::variables::VariableExpression</value>
 																			</property>
 																			<property>
-																				<name>rightOp</name>
+																				<name>expr</name>
 																				<object>
 																					<property>
-																						<name>expressionType</name>
-																						<value>BW::variables::MultiplyExpression</value>
-																					</property>
-																					<property>
-																						<name>expr</name>
+																						<name>variable</name>
 																						<object>
 																							<property>
-																								<name>leftOp</name>
-																								<object>
-																									<property>
-																										<name>expressionType</name>
-																										<value>BW::variables::VariableExpression</value>
-																									</property>
-																									<property>
-																										<name>expr</name>
-																										<object>
-																											<property>
-																												<name>variable</name>
-																												<object>
-																													<property>
-																														<name>name</name>
-																														<value>aux/energyCoef</value>
-																													</property>
-																												</object>
-																											</property>
-																										</object>
-																									</property>
-																								</object>
-																							</property>
-																							<property>
-																								<name>rightOp</name>
-																								<object>
-																									<property>
-																										<name>expressionType</name>
-																										<value>BW::variables::ConstantFloatExpression</value>
-																									</property>
-																									<property>
-																										<name>expr</name>
-																										<object>
-																											<property>
-																												<name>value</name>
-																												<value>
-																													1.5
-																													<!--BW_String-->
-																												</value>
-																											</property>
-																										</object>
-																									</property>
-																								</object>
+																								<name>name</name>
+																								<value>aux/energy</value>
 																							</property>
 																						</object>
 																					</property>
 																				</object>
 																			</property>
 																		</object>
-																	</property>
-																</object>
-															</property>
-															<property>
-																<name>rightOp</name>
-																<object>
-																	<property>
-																		<name>expressionType</name>
-																		<value>BW::variables::MultiplyExpression</value>
-																	</property>
-																	<property>
-																		<name>expr</name>
+																	</item>
+																	<item>
 																		<object>
 																			<property>
-																				<name>leftOp</name>
-																				<object>
-																					<property>
-																						<name>expressionType</name>
-																						<value>BW::variables::VariableExpression</value>
-																					</property>
-																					<property>
-																						<name>expr</name>
-																						<object>
-																							<property>
-																								<name>variable</name>
-																								<object>
-																									<property>
-																										<name>name</name>
-																										<value>aux/energy</value>
-																									</property>
-																								</object>
-																							</property>
-																						</object>
-																					</property>
-																				</object>
+																				<name>expressionType</name>
+																				<value>BW::variables::VariableExpression</value>
 																			</property>
 																			<property>
-																				<name>rightOp</name>
+																				<name>expr</name>
 																				<object>
 																					<property>
-																						<name>expressionType</name>
-																						<value>BW::variables::MultiplyExpression</value>
-																					</property>
-																					<property>
-																						<name>expr</name>
+																						<name>variable</name>
 																						<object>
 																							<property>
-																								<name>leftOp</name>
-																								<object>
-																									<property>
-																										<name>expressionType</name>
-																										<value>BW::variables::VariableExpression</value>
-																									</property>
-																									<property>
-																										<name>expr</name>
-																										<object>
-																											<property>
-																												<name>variable</name>
-																												<object>
-																													<property>
-																														<name>name</name>
-																														<value>aux/energyCoef</value>
-																													</property>
-																												</object>
-																											</property>
-																										</object>
-																									</property>
-																								</object>
-																							</property>
-																							<property>
-																								<name>rightOp</name>
-																								<object>
-																									<property>
-																										<name>expressionType</name>
-																										<value>BW::variables::ConstantFloatExpression</value>
-																									</property>
-																									<property>
-																										<name>expr</name>
-																										<object>
-																											<property>
-																												<name>value</name>
-																												<value>
-																													1.5
-																													<!--BW_String-->
-																												</value>
-																											</property>
-																										</object>
-																									</property>
-																								</object>
+																								<name>name</name>
+																								<value>aux/energyCoef</value>
 																							</property>
 																						</object>
 																					</property>
 																				</object>
 																			</property>
 																		</object>
-																	</property>
-																</object>
+																	</item>
+																	<item>
+																		<object>
+																			<property>
+																				<name>expressionType</name>
+																				<value>BW::variables::ConstantVector2Expression</value>
+																			</property>
+																			<property>
+																				<name>expr</name>
+																				<object>
+																					<property>
+																						<name>value</name>
+																						<value>
+																							1.5 1.5
+																							<!--BW_String-->
+																						</value>
+																					</property>
+																				</object>
+																			</property>
+																		</object>
+																	</item>
+																</collection>
 															</property>
 														</object>
 													</property>
@@ -817,29 +704,11 @@
 							</property>
 						</object>
 					</property>
-					<property>
-						<name>activeExpr</name>
-						<object>
-							<property>
-								<name>expressionType</name>
-								<value>BW::variables::ConstantBoolExpression</value>
-							</property>
-							<property>
-								<name>expr</name>
-								<object>
-									<property>
-										<name>value</name>
-										<value>1</value>
-									</property>
-								</object>
-							</property>
-						</object>
-					</property>
 				</config>
 			</component>
 		</ComponentPool>
 		<ComponentPool>
-			<type>BW::PreviewEffectInitComponent</type>
+			<type>BW::EffectInitMockVariablesComponent</type>
 			<version>1</version>
 			<component>
 				<UUID>e219c583-09fd-46df-b297-22be75c50dbc</UUID>
@@ -948,11 +817,19 @@
 							</property>
 						</object>
 					</property>
-					<property>
-						<name>livePreview</name>
-						<value>1</value>
-					</property>
 				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>BW::EffectInitPreviewComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>e219c583-09fd-46df-b297-22be75c50dbc</UUID>
+				<flags>2</flags>
+			</component>
+			<component>
+				<UUID>21b3b885-a76c-4b34-8cee-a52ce8442689</UUID>
+				<flags>2</flags>
 			</component>
 		</ComponentPool>
 		<ComponentPool>

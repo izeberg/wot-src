@@ -603,6 +603,9 @@ msgstr "Для этой машины рекомендации недоступн
 msgid "easyTankEquipView/alert/unableToMount"
 msgstr "Установка невозможна."
 
+msgid "easyTankEquipView/applied"
+msgstr "На технике"
+
 msgid "easyTankEquipView/consumables/presetNames/advanced"
 msgstr "Продвинутое"
 
@@ -621,7 +624,7 @@ msgstr ""
 "дополнительные койки."
 
 msgid "easyTankEquipView/crew/multiplier"
-msgstr "×%(count)s"
+msgstr "×{{count}}"
 
 msgid "easyTankEquipView/crew/presetNames/experienced"
 msgstr "Опытный экипаж"
@@ -631,24 +634,15 @@ msgstr "Новый экипаж"
 
 msgid "easyTankEquipView/crew/recruit"
 msgid_plural "plural/easyTankEquipView/crew/recruit"
-msgstr[0] ""
-"%(count)s\n"
-"Новый член экипажа будет рекрутирован"
-msgstr[1] ""
-"%(count)s\n"
-"Новых члена экипажа будут рекрутированы"
-msgstr[2] ""
-"%(count)s\n"
-"Новых членов экипажа будут рекрутированы"
+msgstr[0] "{{count}} Будет рекрутирован новый член экипажа"
+msgstr[1] "{{count}} Будут рекрутированы новые члены экипажа"
+msgstr[2] "{{count}} Будут рекрутированы новые члены экипажа"
 
 msgid "easyTankEquipView/crew/title"
 msgstr "ЭКИПАЖ"
 
 msgid "easyTankEquipView/discount"
-msgstr "–%(value)s%"
-
-msgid "easyTankEquipView/installed"
-msgstr "Готов"
+msgstr "–{{value}}"
 
 msgid "easyTankEquipView/optDevices/presetNames/advanced"
 msgstr "Продвинутое"
@@ -672,7 +666,7 @@ msgid "easyTankEquipView/styles/builtInStyle"
 msgstr "На технику уже нанесён стиль"
 
 msgid "easyTankEquipView/styles/rent"
-msgstr "В аренду на %(battlesCount)s боёв за %(price)s"
+msgstr "Боёв за {{price}}: {{battlesCount}}"
 
 msgid "easyTankEquipView/styles/title"
 msgstr "ГОТОВЫЕ СТИЛИ"
@@ -906,15 +900,30 @@ msgstr ""
 msgid "kpi/bonus/longDescr/negative/vehicleStillCamouflage"
 msgstr "от незаметности неподвижной машины через 3 с после остановки"
 
+msgid "kpi/bonus/longDescr/negative/vehicleStillCamouflageDeluxe"
+msgstr ""
+"от незаметности неподвижной машины\n"
+"через 1,5 с после остановки"
+
 msgid "kpi/bonus/longDescr/negative/vehicleStillCamouflageGroup"
 msgstr ""
 "от улучшения незаметности неподвижной машины через 3 с после остановки "
+"(эффективность зависит от типа техники)"
+
+msgid "kpi/bonus/longDescr/negative/vehicleStillCamouflageGroupDeluxe"
+msgstr ""
+"от бонуса к незаметности неподвижной машины через 1,5 с после остановки "
 "(эффективность зависит от типа техники)"
 
 msgid "kpi/bonus/longDescr/negative/vehicleStillCircularVisionRadius"
 msgstr ""
 "от обзора неподвижной машины через 3 с после остановки, но не более 445 "
 "метров. Дальнейшее увеличение показателя облегчает обнаружение противника."
+
+msgid "kpi/bonus/longDescr/negative/vehicleStillCircularVisionRadiusDeluxe"
+msgstr ""
+"от обзора неподвижной машины через 1,5 с после остановки, но не более 445 "
+"метров (увеличение показателя облегчает обнаружение противника)"
 
 msgid "kpi/bonus/longDescr/negative/vehicleStrength"
 msgstr "от запаса прочности машины (округляется в большую сторону)"
@@ -983,15 +992,30 @@ msgstr ""
 msgid "kpi/bonus/longDescr/positive/vehicleStillCamouflage"
 msgstr "к незаметности неподвижной машины через 3 с после остановки"
 
+msgid "kpi/bonus/longDescr/positive/vehicleStillCamouflageDeluxe"
+msgstr ""
+"к незаметности неподвижной машины через\n"
+"1,5 с после остановки"
+
 msgid "kpi/bonus/longDescr/positive/vehicleStillCamouflageGroup"
 msgstr ""
 "к улучшению незаметности неподвижной машины через 3 с после остановки "
+"(эффективность зависит от типа техники)"
+
+msgid "kpi/bonus/longDescr/positive/vehicleStillCamouflageGroupDeluxe"
+msgstr ""
+"к повышению незаметности неподвижной машины через 1,5 с после остановки "
 "(эффективность зависит от типа техники)"
 
 msgid "kpi/bonus/longDescr/positive/vehicleStillCircularVisionRadius"
 msgstr ""
 "к обзору неподвижной машины через 3 с после остановки, но не более 445 "
 "метров. Дальнейшее увеличение показателя облегчает обнаружение противника."
+
+msgid "kpi/bonus/longDescr/positive/vehicleStillCircularVisionRadiusDeluxe"
+msgstr ""
+"к обзору неподвижной машины через 1,5 с после остановки, но не более 445 "
+"метров (увеличение показателя облегчает обнаружение противника)."
 
 msgid "kpi/bonus/longDescr/positive/vehicleStrength"
 msgstr "к запасу прочности машины (округляется в большую сторону)"
@@ -1008,6 +1032,9 @@ msgstr ""
 
 msgid "kpi/bonus/negative/commanderLampDelay"
 msgstr "ко времени задержки предупреждения об обнаружении"
+
+msgid "kpi/bonus/negative/coolingPerSec"
+msgstr "от скорости остывания орудия"
 
 msgid "kpi/bonus/negative/crewHitChance"
 msgstr "от защиты экипажа от ранений"
@@ -1205,10 +1232,19 @@ msgstr ""
 msgid "kpi/bonus/negative/vehicleStillCamouflage"
 msgstr "от незаметности неподвижной машины"
 
+msgid "kpi/bonus/negative/vehicleStillCamouflageDeluxe"
+msgstr "от незаметности неподвижной машины"
+
 msgid "kpi/bonus/negative/vehicleStillCamouflageGroup"
 msgstr "от улучшения незаметности неподвижной машины"
 
+msgid "kpi/bonus/negative/vehicleStillCamouflageGroupDeluxe"
+msgstr "от улучшения незаметности неподвижной машины"
+
 msgid "kpi/bonus/negative/vehicleStillCircularVisionRadius"
+msgstr "от обзора из неподвижной машины"
+
+msgid "kpi/bonus/negative/vehicleStillCircularVisionRadiusDeluxe"
 msgstr "от обзора из неподвижной машины"
 
 msgid "kpi/bonus/negative/vehicleStrength"
@@ -1259,8 +1295,14 @@ msgstr ""
 "задержки срабатывания звуковой\n"
 "разведки"
 
+msgid "kpi/bonus/positive/basicShellDamage"
+msgstr "к урону базовым снарядом"
+
 msgid "kpi/bonus/positive/commanderLampDelay"
 msgstr "от времени задержки предупреждения об обнаружении"
+
+msgid "kpi/bonus/positive/coolingPerSec"
+msgstr "к скорости остывания орудия"
 
 msgid "kpi/bonus/positive/crewHitChance"
 msgstr "к защите экипажа от ранений"
@@ -1374,11 +1416,17 @@ msgstr ""
 "к сохранению набранной скорости\n"
 "при пересечении вязких грунтов"
 
+msgid "kpi/bonus/positive/specialShellDamage"
+msgstr "к урону специальным снарядом"
+
 msgid "kpi/bonus/positive/specialShellPenetration"
 msgstr "к бронепробиваемости специальных снарядов"
 
 msgid "kpi/bonus/positive/specialShellVelocity"
 msgstr "к скорости полёта специальных снарядов"
+
+msgid "kpi/bonus/positive/standardShellDamage"
+msgstr "к урону базовым снарядом"
 
 msgid "kpi/bonus/positive/standardShellPenetration"
 msgstr "к бронепробиваемости базовых снарядов"
@@ -1510,10 +1558,19 @@ msgstr ""
 msgid "kpi/bonus/positive/vehicleStillCamouflage"
 msgstr "к незаметности неподвижной машины"
 
+msgid "kpi/bonus/positive/vehicleStillCamouflageDeluxe"
+msgstr "к незаметности неподвижной машины"
+
 msgid "kpi/bonus/positive/vehicleStillCamouflageGroup"
 msgstr "к улучшению незаметности неподвижной машины"
 
+msgid "kpi/bonus/positive/vehicleStillCamouflageGroupDeluxe"
+msgstr "к улучшению незаметности неподвижной машины"
+
 msgid "kpi/bonus/positive/vehicleStillCircularVisionRadius"
+msgstr "к обзору из неподвижной машины (не более 445 метров)"
+
+msgid "kpi/bonus/positive/vehicleStillCircularVisionRadiusDeluxe"
 msgstr "к обзору из неподвижной машины (не более 445 метров)"
 
 msgid "kpi/bonus/positive/vehicleStrength"
@@ -1687,8 +1744,14 @@ msgstr "от сохранения набранной скорости"
 msgid "kpi/bonus/ttc/negative/vehicleStillCamouflage"
 msgstr "от незаметности неподвижной машины"
 
+msgid "kpi/bonus/ttc/negative/vehicleStillCamouflageDeluxe"
+msgstr "от незаметности неподвижной машины"
+
 msgid "kpi/bonus/ttc/negative/vehicleStillCircularVisionRadius"
 msgstr "от обзора"
+
+msgid "kpi/bonus/ttc/negative/vehicleStillCircularVisionRadiusDeluxe"
+msgstr "от дальности обзора"
 
 msgid "kpi/bonus/ttc/negative/vehicleStrength"
 msgstr "от запаса прочности машины"
@@ -1884,7 +1947,15 @@ msgstr "к сохранению набранной скорости"
 msgid "kpi/bonus/ttc/positive/vehicleStillCamouflage"
 msgstr "к незаметности неподвижной машины"
 
+msgid "kpi/bonus/ttc/positive/vehicleStillCamouflageDeluxe"
+msgstr "к незаметности неподвижной машины"
+
 msgid "kpi/bonus/ttc/positive/vehicleStillCircularVisionRadius"
+msgstr ""
+"к обзору из неподвижной машины\n"
+"(не более 445 метров)"
+
+msgid "kpi/bonus/ttc/positive/vehicleStillCircularVisionRadiusDeluxe"
 msgstr ""
 "к обзору из неподвижной машины\n"
 "(не более 445 метров)"
@@ -2259,6 +2330,26 @@ msgid "tooltips/prebattleSwitchIndicator/desc/2"
 msgstr ""
 "Включить/отключить выбор комплектов оборудования и инструкций во время "
 "предбоевого отсчёта можно в интерфейсе Полевой модернизации."
+
+msgid "tooltips/prebattleSwitchIndicator/desc/c_1/field"
+msgstr ""
+"Включить/отключить выбор комплектов снарядов и снаряжения во время "
+"предбоевого отсчёта можно на экране полевой модернизации."
+
+msgid "tooltips/prebattleSwitchIndicator/desc/c_1/progression"
+msgstr ""
+"Включить/отключить выбор комплектов снарядов и снаряжения во время "
+"предбоевого отсчёта можно на экране «Улучшения»."
+
+msgid "tooltips/prebattleSwitchIndicator/desc/c_2/field"
+msgstr ""
+"Включить/отключить выбор комплектов оборудования и инструкций во время "
+"предбоевого отсчёта можно на экране полевой модернизации."
+
+msgid "tooltips/prebattleSwitchIndicator/desc/c_2/progression"
+msgstr ""
+"Включить/отключить выбор комплектов оборудования и инструкций во время "
+"предбоевого отсчёта можно на экране «Улучшения»."
 
 msgid "tooltips/prebattleSwitchIndicator/title"
 msgstr "Смена комплектов отключена"

@@ -16,94 +16,31 @@ msgstr ""
 "nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && "
 "(n%100<10 || n%100>=20) ? 1 : 2);"
 
-msgid "multiOpenView/applyLabel"
-msgstr "Так точно!"
+msgid "notifications/count"
+msgstr "×{count}"
 
-msgid "multiOpenView/boxesInStorage"
-msgstr "Ящиков в наличии: {count}"
-
-msgid "multiOpenView/boxesNotAvailable"
-msgstr "Ящики закончились"
-
-msgid "multiOpenView/openBoxesLabel"
-msgstr "Открыть {count} шт."
-
-msgid "multiOpenView/skipBtn"
-msgstr "ПРОПУСТИТЬ АНИМАЦИЮ"
-
-msgid "multiOpenView/title"
-msgstr "Поздравляем!"
-
-msgid "notifications/description"
-msgstr ""
-"Ящики с заслуженной наградой — в подарок за выслугу лет! Открывайте и "
-"забирайте содержимое."
-
-msgid "notifications/header"
-msgstr "Заслуженная награда"
-
-msgid "notifications/quest/button"
+msgid "notifications/manualClaim/button"
 msgstr "Забрать награды"
 
-msgid "notifications/quest/title"
-msgstr ""
-"Награды за выслугу лет\n"
-"ждут вас!"
+msgid "notifications/manualClaim/title"
+msgstr "Награды за выслугу лет ждут вас!"
 
 msgid "notifications/selectVehicles/button"
 msgstr "Выбрать"
 
 msgid "notifications/selectVehicles/title"
-msgstr "Доступна машина за выслугу лет"
+msgstr ""
+"Доступна машина за выслугу\n"
+"лет"
 
 msgid "notifications/tokens/button"
 msgstr "В Магазин"
 
-msgid "notifications/tokens/timeLeft/days"
-msgstr "%(day)s д %(hour)s ч"
-
-msgid "notifications/tokens/timeLeft/hours"
-msgstr "%(hour)s ч %(min)s мин"
-
-msgid "notifications/tokens/timeLeft/lessMin"
-msgstr "меньше минуты"
-
-msgid "notifications/tokens/timeLeft/min"
-msgstr "%(min)s мин"
-
-msgid "notifications/tokens/timer"
-msgstr "До списания жетонов: %(timeLeft)s"
-
 msgid "notifications/tokens/title"
-msgstr ""
-"Меняйте жетоны за выслугу\n"
-"лет на награды!"
+msgstr "Меняйте жетоны за выслугу лет на награды!"
 
 msgid "notifications/vehicleSelectionAvailable/title"
 msgstr "Вас ожидает одна из машин на выбор!"
-
-msgid "openBoxView/autoOpenTooltip/body"
-msgstr ""
-"{date} мы откроем за вас ящики с заслуженной наградой и выдадим награды."
-
-msgid "openBoxView/autoOpenTooltip/header"
-msgstr "Автоматическое открытие"
-
-msgid "openBoxView/boxesInStorage"
-msgstr "Ящиков в наличии: {count}"
-
-msgid "openBoxView/description"
-msgstr ""
-"Ящики с заслуженной наградой — в подарок! Открывайте и забирайте содержимое."
-
-msgid "openBoxView/header"
-msgstr "Заслуженная награда"
-
-msgid "openBoxView/openBoxesLabel"
-msgstr "Открыть {count} шт."
-
-msgid "rewardsScreen/showGiftButtonLabel"
-msgstr "К награде"
 
 msgid "rewardsView/applyBtn"
 msgstr "Так точно!"
@@ -120,68 +57,41 @@ msgstr "В Магазин"
 msgid "rewardsView/info"
 msgstr "Подробнее о званиях"
 
-msgid "rewardsView/lootBox/descr"
-msgstr "Откройте и заберите содержимое!"
-
-msgid "rewardsView/lootBox/multiplier"
-msgstr "x"
-
-msgid "rewardsView/lootBox/title"
-msgstr ""
-"ящиков\n"
-"с заслуженной\n"
-"наградой"
-
 msgid "rewardsView/moreRewardsBtn"
 msgstr "Больше наград!"
 
-msgid "rewardsView/nextBtn"
-msgstr "К следующей награде (%(count)s)"
-
-msgid "rewardsView/openBtn"
-msgstr "Открыть"
+msgid "rewardsView/moreRewardsWithCountBtn"
+msgstr "Больше наград! ({count})"
 
 msgid "rewardsView/selection/available"
-msgstr "Доступна %(count)s машина на выбор за выслугу лет"
+msgstr "Доступна {{count}} машина за выслугу лет"
 
 msgid "rewardsView/selection/received"
-msgstr "Награда получена"
-
-msgid "rewardsView/subTitle/at"
-msgstr "СО ЗВАНИЕМ %(gradientStart)«ВЕТЕРАН»%(gradientEnd)"
-
-msgid "rewardsView/subTitle/bt"
-msgstr "СО ЗВАНИЕМ %(gradientStart)«ВЕТЕРАН»%(gradientEnd)"
-
-msgid "rewardsView/subTitle/ctg1"
-msgstr "СО ЗВАНИЕМ %(gradientStart)«РЕКРУТ»%(gradientEnd)"
-
-msgid "rewardsView/subTitle/ctg2"
-msgstr "СО ЗВАНИЕМ %(gradientStart)«БОЕЦ»%(gradientEnd)"
-
-msgid "rewardsView/subTitle/ctg3"
-msgstr "СО ЗВАНИЕМ %(gradientStart)«КОМАНДИР»%(gradientEnd)"
-
-msgid "rewardsView/subTitle/ctg4"
-msgstr "СО ЗВАНИЕМ %(gradientStart)«ОФИЦЕР»%(gradientEnd)"
-
-msgid "rewardsView/subTitle/ctg5"
-msgstr "СО ЗВАНИЕМ %(gradientStart)«ВЕТЕРАН»%(gradientEnd)"
-
-msgid "rewardsView/subTitle/ctg6"
-msgstr "СО ЗВАНИЕМ %(gradientStart)«ЛЕГЕНДА»%(gradientEnd)"
+msgstr "НАГРАДА ПОЛУЧЕНА"
 
 msgid "rewardsView/subTitle/otherRewards"
 msgstr "Также получено:"
 
-msgid "rewardsView/textButton/back"
-msgstr "НАЗАД"
+msgid "rewardsView/subTitle/rank/ctg1"
+msgstr "РЕКРУТ"
 
-msgid "rewardsView/textButton/close"
-msgstr "ЗАКРЫТЬ"
+msgid "rewardsView/subTitle/rank/ctg2"
+msgstr "БОЕЦ"
 
-msgid "rewardsView/textButton/goto"
-msgstr "К ТЕХНИКЕ"
+msgid "rewardsView/subTitle/rank/ctg3"
+msgstr "КОМАНДИР"
+
+msgid "rewardsView/subTitle/rank/ctg4"
+msgstr "ОФИЦЕР"
+
+msgid "rewardsView/subTitle/rank/ctg5"
+msgstr "ВЕТЕРАН"
+
+msgid "rewardsView/subTitle/rank/ctg6"
+msgstr "ЛЕГЕНДА"
+
+msgid "rewardsView/subTitle/text"
+msgstr "ПОЛУЧЕНО ЗВАНИЕ {rank}"
 
 msgid "rewardsView/textButton/select"
 msgstr "Выбрать"
@@ -198,13 +108,7 @@ msgstr ""
 " списаны."
 
 msgid "specialItem/header"
-msgstr "Жетонов за выслугу лет: %(count)s"
-
-msgid "tooltip/congratulation/at"
-msgstr "Поздравляем со званием «Ветеран»"
-
-msgid "tooltip/congratulation/bt"
-msgstr "Поздравляем со званием «Ветеран»"
+msgstr "Жетон за выслугу лет: {count}"
 
 msgid "tooltip/congratulation/ctg1"
 msgstr "Поздравляем со званием «Рекрут»"
@@ -225,7 +129,7 @@ msgid "tooltip/congratulation/ctg6"
 msgstr "Поздравляем со званием «Легенда»"
 
 msgid "tooltip/medalBlock/label/and"
-msgstr " и "
+msgstr "{abLabel} и {yearsLabel}"
 
 msgid "tooltip/medalBlock/label/ca"
 msgstr "За участие в Альфа-тесте"
@@ -233,14 +137,11 @@ msgstr "За участие в Альфа-тесте"
 msgid "tooltip/medalBlock/label/cb"
 msgstr "За участие в Бета-тесте"
 
-msgid "tooltip/medalBlock/label/cbcn"
-msgstr "За участие в Бета-тесте"
-
 msgid "tooltip/medalBlock/label/duration"
 msgid_plural "plural/tooltip/medalBlock/label/duration"
-msgstr[0] "год в строю"
-msgstr[1] "%(years)s года в строю"
-msgstr[2] "%(years)s лет в строю"
+msgstr[0] "{{count}} год в строю"
+msgstr[1] "{{count}} года в строю"
+msgstr[2] "{{count}} лет в строю"
 
 msgid "tooltip/rank/ctg1"
 msgstr "Рекрут"
@@ -260,11 +161,8 @@ msgstr "Ветеран"
 msgid "tooltip/rank/ctg6"
 msgstr "Легенда"
 
-msgid "tooltip/restrictedMode"
-msgstr "Операция временно недоступна. Попробуйте позже."
-
 msgid "tooltip/segment/ctg1"
-msgstr "До года"
+msgstr "Менее одного года"
 
 msgid "tooltip/segment/ctg2"
 msgstr "1–3 года"

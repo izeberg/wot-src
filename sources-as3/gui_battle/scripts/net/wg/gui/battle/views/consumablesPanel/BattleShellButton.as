@@ -37,11 +37,17 @@ package net.wg.gui.battle.views.consumablesPanel
       
       private static const SELECTED_INDICATOR_VISIBILITY:uint = InvalidationType.SYSTEM_FLAGS_BORDER << 4;
       
+      private static const CRITICAL_QUANTITY_VALIDATION:uint = InvalidationType.SYSTEM_FLAGS_BORDER << 5;
+      
       private static const SPG_SHOT_RED_FRAME_LBL:String = "red";
       
       private static const SPG_SHOT_PURPLE_FRAME_LBL:String = "purple";
       
       private static const SPG_SHOT_RESULT_FALSE_STATE:int = 0;
+      
+      private static const CRITICAL_QUANTITY_ANIMATION_RATE:int = 200;
+      
+      private static const CRITICAL_QUANTITY_ICON_ALPHA:Number = 0.5;
        
       
       public var spgShotResultIndicator:MovieClip = null;
@@ -67,6 +73,10 @@ package net.wg.gui.battle.views.consumablesPanel
       private var _bindSfKeyCode:Number;
       
       private var _quantity:int;
+      
+      private var _criticalQuantity:int = -1;
+      
+      private var _quantityAnimationEnabled:Boolean = false;
       
       private var _isEmpty:Boolean = true;
       
@@ -116,17 +126,23 @@ package net.wg.gui.battle.views.consumablesPanel
       override protected function draw() : void
       {
          super.draw();
+         var _loc1_:Boolean = isInvalid(QUANTITY_VALIDATION);
+         var _loc2_:Boolean = isInvalid(SELECTED_INDICATOR_VISIBILITY);
          if(isInvalid(KEY_VALIDATION))
          {
             this.setBindKeyText();
          }
-         if(this.quantityField && isInvalid(QUANTITY_VALIDATION))
+         if(this.quantityField && _loc1_)
          {
             this.quantityField.text = this._quantity.toString();
          }
-         if(isInvalid(SELECTED_INDICATOR_VISIBILITY))
+         if(_loc2_)
          {
             this.selectedIndicator.visible = this._isSelectedIndicatorVisible;
+         }
+         if(_loc1_ || _loc2_ || isInvalid(CRITICAL_QUANTITY_VALIDATION))
+         {
+            this.startCriticalAnimation();
          }
       }
       
@@ -137,6 +153,7 @@ package net.wg.gui.battle.views.consumablesPanel
          addFrameScript(END_RELOADING_FRAME,null);
          this._coolDownTimer.dispose();
          this._coolDownTimer = null;
+         this.stopCriticalAnimation();
          this.iconLoader.dispose();
          this.iconLoader = null;
          this.glow.dispose();
@@ -271,6 +288,15 @@ package net.wg.gui.battle.views.consumablesPanel
          }
       }
       
+      public function setInfinity(param1:Boolean = false) : void
+      {
+         if(this.infinity)
+         {
+            this.infinity.visible = param1;
+            this.quantityField.visible = !param1;
+         }
+      }
+      
       public function setNext(param1:Boolean, param2:Boolean = false) : void
       {
          if(param2 || param1 != this._isNext)
@@ -289,15 +315,6 @@ package net.wg.gui.battle.views.consumablesPanel
                   this.nextIndicator.gotoAndPlay(BATTLE_ITEM_STATES.SHOW);
                }
             }
-         }
-      }
-      
-      public function setInfinity(param1:Boolean = false) : void
-      {
-         if(this.infinity)
-         {
-            this.infinity.visible = param1;
-            this.quantityField.visible = !param1;
          }
       }
       
@@ -363,6 +380,49 @@ package net.wg.gui.battle.views.consumablesPanel
          validateNow();
       }
       
+      protected function getQuantity() : int
+      {
+         return this._quantity;
+      }
+      
+      protected function getCoolDownTimer() : CoolDownTimer
+      {
+         return this._coolDownTimer;
+      }
+      
+      private function startCriticalAnimation() : void
+      {
+         if(this._quantity > 0 && this._quantity <= this._criticalQuantity)
+         {
+            if(this._isCurrent && !this._quantityAnimationEnabled)
+            {
+               this.changeIconAlpha();
+               App.utils.scheduler.scheduleRepeatableTask(this.changeIconAlpha,CRITICAL_QUANTITY_ANIMATION_RATE,int.MAX_VALUE);
+               this._quantityAnimationEnabled = true;
+            }
+            else if(!this._isCurrent && this._quantityAnimationEnabled)
+            {
+               this.stopCriticalAnimation();
+            }
+         }
+         else if(this._quantityAnimationEnabled)
+         {
+            this.stopCriticalAnimation();
+         }
+      }
+      
+      private function changeIconAlpha() : void
+      {
+         this.iconLoader.alpha = this.iconLoader.alpha == 1 ? Number(CRITICAL_QUANTITY_ICON_ALPHA) : Number(1);
+      }
+      
+      private function stopCriticalAnimation() : void
+      {
+         App.utils.scheduler.cancelTask(this.changeIconAlpha);
+         this.iconLoader.alpha = 1;
+         this._quantityAnimationEnabled = false;
+      }
+      
       override public function set state(param1:String) : void
       {
          if(!this._isReloading && !this._isAfterCoolDown)
@@ -405,6 +465,16 @@ package net.wg.gui.battle.views.consumablesPanel
          this.setQuantity(param1);
       }
       
+      public function set criticalQuantity(param1:int) : void
+      {
+         if(this._criticalQuantity == param1)
+         {
+            return;
+         }
+         this._criticalQuantity = param1;
+         invalidate(CRITICAL_QUANTITY_VALIDATION);
+      }
+      
       public function get reloading() : Boolean
       {
          return this._isReloading;
@@ -429,11 +499,6 @@ package net.wg.gui.battle.views.consumablesPanel
       {
       }
       
-      protected function getQuantity() : int
-      {
-         return this._quantity;
-      }
-      
       protected function get isCurrent() : Boolean
       {
          return this._isCurrent;
@@ -442,11 +507,6 @@ package net.wg.gui.battle.views.consumablesPanel
       protected function get isSelectedIndicatorVisible() : Boolean
       {
          return this._isSelectedIndicatorVisible;
-      }
-      
-      protected function getCoolDownTimer() : CoolDownTimer
-      {
-         return this._coolDownTimer;
       }
       
       private function onColorSchemasUpdatedHandler(param1:ColorSchemeEvent) : void

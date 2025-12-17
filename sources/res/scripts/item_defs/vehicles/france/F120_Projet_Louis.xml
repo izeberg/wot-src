@@ -38,6 +38,12 @@
 				<!--BW_String-->
 			</invisibilityBonus>
 		</camouflageNet>
+		<deluxeCamouflageNet>
+			<invisibilityBonus>
+				0.125
+				<!--BW_String-->
+			</invisibilityBonus>
+		</deluxeCamouflageNet>
 		<additionalInvisibilityDevice>
 			<invisibilityBonus>
 				0.06 0.08
@@ -88,7 +94,7 @@
 	<hull>
 		<primaryArmor>armor_2 armor_3 armor_4</primaryArmor>
 		<weight>8175</weight>
-		<maxHealth>1040</maxHealth>
+		<maxHealth>1120</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>230</maxHealth>
 			<maxRegenHealth>173</maxRegenHealth>
@@ -4012,7 +4018,7 @@
 			<price>60000</price>
 			<notInShop>true</notInShop>
 			<weight>4000</weight>
-			<maxHealth>260</maxHealth>
+			<maxHealth>280</maxHealth>
 			<rotationSpeed>46</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>170</maxHealth>
@@ -4083,7 +4089,7 @@
 						0.38
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>21</reloadTime>
+					<reloadTime>18</reloadTime>
 					<aimingTime>
 						1.6
 						<!--BW_String-->

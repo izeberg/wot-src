@@ -186,6 +186,44 @@ class CompositeTrack(PyComponentWrapperBase):
 	def valid(self, *args, **kwargs): pass
 
 
+class IEvent(pybind11_object):
+	def __delattr__(*args, **kwargs): pass
+	__doc__ = None
+	def __format__(*args, **kwargs): pass
+	def __getattribute__(*args, **kwargs): pass
+	def __hash__(*args, **kwargs): pass
+	def __init__(*args, **kwargs): pass
+	__module__ = 'CGF'
+	def __new__(*args, **kwargs): pass
+	__qualname__ = 'IEvent'
+	def __reduce__(*args, **kwargs): pass
+	def __reduce_ex__(*args, **kwargs): pass
+	def __repr__(*args, **kwargs): pass
+	def __setattr__(*args, **kwargs): pass
+	def __sizeof__(*args, **kwargs): pass
+	def __str__(*args, **kwargs): pass
+	def __subclasshook__(*args, **kwargs): pass
+
+
+class ContinuousBurstEvent(IEvent):
+	def __delattr__(*args, **kwargs): pass
+	__doc__ = None
+	def __format__(*args, **kwargs): pass
+	def __getattribute__(*args, **kwargs): pass
+	def __hash__(*args, **kwargs): pass
+	def __init__(self, *args, **kwargs): pass
+	__module__ = 'Vehicular'
+	def __new__(*args, **kwargs): pass
+	__qualname__ = 'ContinuousBurstEvent'
+	def __reduce__(*args, **kwargs): pass
+	def __reduce_ex__(*args, **kwargs): pass
+	def __repr__(*args, **kwargs): pass
+	def __setattr__(*args, **kwargs): pass
+	def __sizeof__(*args, **kwargs): pass
+	def __str__(*args, **kwargs): pass
+	def __subclasshook__(*args, **kwargs): pass
+
+
 class DataLinks__PyDataLink<BW__LodProcessing__LodState>(pybind11_object):
 	def __call__(self, *args, **kwargs): pass
 	def __delattr__(*args, **kwargs): pass
@@ -361,6 +399,25 @@ class DistanceToCannonGetter(PyComponentWrapperBase):
 	def destroy(self, *args, **kwargs): pass
 	def id(self, *args, **kwargs): pass
 	def valid(self, *args, **kwargs): pass
+
+
+class FireRateChangedEvent(IEvent):
+	def __delattr__(*args, **kwargs): pass
+	__doc__ = None
+	def __format__(*args, **kwargs): pass
+	def __getattribute__(*args, **kwargs): pass
+	def __hash__(*args, **kwargs): pass
+	def __init__(self, *args, **kwargs): pass
+	__module__ = 'Vehicular'
+	def __new__(*args, **kwargs): pass
+	__qualname__ = 'FireRateChangedEvent'
+	def __reduce__(*args, **kwargs): pass
+	def __reduce_ex__(*args, **kwargs): pass
+	def __repr__(*args, **kwargs): pass
+	def __setattr__(*args, **kwargs): pass
+	def __sizeof__(*args, **kwargs): pass
+	def __str__(*args, **kwargs): pass
+	def __subclasshook__(*args, **kwargs): pass
 
 
 class FlagComponent(PyComponentWrapperBase):
@@ -576,7 +633,7 @@ class GunAudition(PyComponentWrapperBase):
 	def valid(self, *args, **kwargs): pass
 
 
-class GunEffectsController(PyComponentWrapperBase):
+class GunInstallationComponent(PyComponentWrapperBase):
 	def __cmp__(self, *args, **kwargs): pass
 	def __delattr__(*args, **kwargs): pass
 	__doc__ = None
@@ -586,7 +643,7 @@ class GunEffectsController(PyComponentWrapperBase):
 	def __init__(*args, **kwargs): pass
 	__module__ = 'Vehicular'
 	def __new__(*args, **kwargs): pass
-	__qualname__ = 'GunEffectsController'
+	__qualname__ = 'GunInstallationComponent'
 	def __reduce__(*args, **kwargs): pass
 	def __reduce_ex__(*args, **kwargs): pass
 	def __repr__(*args, **kwargs): pass
@@ -597,39 +654,6 @@ class GunEffectsController(PyComponentWrapperBase):
 	def clear(self, *args, **kwargs): pass
 	def destroy(self, *args, **kwargs): pass
 	def id(self, *args, **kwargs): pass
-	isBurstStarted = property(lambda self: None)
-	def multiShot(self, *args, **kwargs): pass
-	def setShotsPerSec(self, *args, **kwargs): pass
-	shotsPerSec = property(lambda self: None)
-	def singleShot(self, *args, **kwargs): pass
-	def startContinuousBurst(self, *args, **kwargs): pass
-	def stopContinuousBurst(self, *args, **kwargs): pass
-	def valid(self, *args, **kwargs): pass
-
-
-class GunEffectsInfoComponent(PyComponentWrapperBase):
-	def __cmp__(self, *args, **kwargs): pass
-	def __delattr__(*args, **kwargs): pass
-	__doc__ = None
-	def __format__(*args, **kwargs): pass
-	def __getattribute__(self, *args, **kwargs): pass
-	def __hash__(*args, **kwargs): pass
-	def __init__(self, *args, **kwargs): pass
-	__module__ = 'Vehicular'
-	def __new__(*args, **kwargs): pass
-	__qualname__ = 'GunEffectsInfoComponent'
-	def __reduce__(*args, **kwargs): pass
-	def __reduce_ex__(*args, **kwargs): pass
-	def __repr__(*args, **kwargs): pass
-	def __setattr__(*args, **kwargs): pass
-	def __sizeof__(*args, **kwargs): pass
-	def __str__(*args, **kwargs): pass
-	def __subclasshook__(*args, **kwargs): pass
-	def clear(self, *args, **kwargs): pass
-	def destroy(self, *args, **kwargs): pass
-	gunFireSlots = property(lambda self: None)
-	def id(self, *args, **kwargs): pass
-	shotPrefabs = property(lambda self: None)
 	def valid(self, *args, **kwargs): pass
 
 
@@ -683,30 +707,6 @@ class GunRotatorAudition(PyComponentWrapperBase):
 	maxTurretRotationSpeed = property(lambda self: None)
 	def valid(self, *args, **kwargs): pass
 	vehicleMatrixLink = property(lambda self: None)
-
-
-class IntervalBetweenShotsGetter(PyComponentWrapperBase):
-	def __cmp__(self, *args, **kwargs): pass
-	def __delattr__(*args, **kwargs): pass
-	__doc__ = None
-	def __format__(*args, **kwargs): pass
-	def __getattribute__(self, *args, **kwargs): pass
-	def __hash__(*args, **kwargs): pass
-	def __init__(*args, **kwargs): pass
-	__module__ = 'Vehicular'
-	def __new__(*args, **kwargs): pass
-	__qualname__ = 'IntervalBetweenShotsGetter'
-	def __reduce__(*args, **kwargs): pass
-	def __reduce_ex__(*args, **kwargs): pass
-	def __repr__(*args, **kwargs): pass
-	def __setattr__(*args, **kwargs): pass
-	def __sizeof__(*args, **kwargs): pass
-	def __str__(*args, **kwargs): pass
-	def __subclasshook__(*args, **kwargs): pass
-	def clear(self, *args, **kwargs): pass
-	def destroy(self, *args, **kwargs): pass
-	def id(self, *args, **kwargs): pass
-	def valid(self, *args, **kwargs): pass
 
 
 class LeveredSuspension(PyComponentWrapperBase):
@@ -794,6 +794,25 @@ class LodCalculator(PyComponentWrapperBase):
 	def priority_gen(*args, **kwargs): pass
 	def setupPosition(self, *args, **kwargs): pass
 	def valid(self, *args, **kwargs): pass
+
+
+class MultiShotEvent(IEvent):
+	def __delattr__(*args, **kwargs): pass
+	__doc__ = None
+	def __format__(*args, **kwargs): pass
+	def __getattribute__(*args, **kwargs): pass
+	def __hash__(*args, **kwargs): pass
+	def __init__(self, *args, **kwargs): pass
+	__module__ = 'Vehicular'
+	def __new__(*args, **kwargs): pass
+	__qualname__ = 'MultiShotEvent'
+	def __reduce__(*args, **kwargs): pass
+	def __reduce_ex__(*args, **kwargs): pass
+	def __repr__(*args, **kwargs): pass
+	def __setattr__(*args, **kwargs): pass
+	def __sizeof__(*args, **kwargs): pass
+	def __str__(*args, **kwargs): pass
+	def __subclasshook__(*args, **kwargs): pass
 
 
 class OnPlayerInZoneComponent(PyComponentWrapperBase):
@@ -1051,6 +1070,25 @@ class SimpleTrack(PyComponentWrapperBase):
 	def valid(self, *args, **kwargs): pass
 
 
+class SingleShotEvent(IEvent):
+	def __delattr__(*args, **kwargs): pass
+	__doc__ = None
+	def __format__(*args, **kwargs): pass
+	def __getattribute__(*args, **kwargs): pass
+	def __hash__(*args, **kwargs): pass
+	def __init__(self, *args, **kwargs): pass
+	__module__ = 'Vehicular'
+	def __new__(*args, **kwargs): pass
+	__qualname__ = 'SingleShotEvent'
+	def __reduce__(*args, **kwargs): pass
+	def __reduce_ex__(*args, **kwargs): pass
+	def __repr__(*args, **kwargs): pass
+	def __setattr__(*args, **kwargs): pass
+	def __sizeof__(*args, **kwargs): pass
+	def __str__(*args, **kwargs): pass
+	def __subclasshook__(*args, **kwargs): pass
+
+
 class SplineTrack(PyComponentWrapperBase):
 	def __cmp__(self, *args, **kwargs): pass
 	def __delattr__(*args, **kwargs): pass
@@ -1278,6 +1316,25 @@ class TankWheelsAnimator(PyComponentWrapperBase):
 	def stopAnimatingWheels(self, *args, **kwargs): pass
 	def valid(self, *args, **kwargs): pass
 	def wheelIsFlying(self, *args, **kwargs): pass
+
+
+class TemperatureChangedEvent(IEvent):
+	def __delattr__(*args, **kwargs): pass
+	__doc__ = None
+	def __format__(*args, **kwargs): pass
+	def __getattribute__(*args, **kwargs): pass
+	def __hash__(*args, **kwargs): pass
+	def __init__(self, *args, **kwargs): pass
+	__module__ = 'Vehicular'
+	def __new__(*args, **kwargs): pass
+	__qualname__ = 'TemperatureChangedEvent'
+	def __reduce__(*args, **kwargs): pass
+	def __reduce_ex__(*args, **kwargs): pass
+	def __repr__(*args, **kwargs): pass
+	def __setattr__(*args, **kwargs): pass
+	def __sizeof__(*args, **kwargs): pass
+	def __str__(*args, **kwargs): pass
+	def __subclasshook__(*args, **kwargs): pass
 
 
 class TerrainMatKindSensor(PyComponentWrapperBase):

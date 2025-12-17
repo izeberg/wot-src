@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A190_Ares_85/normal/lod2/Hull</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/american/A190_Ares_85/normal/lod3/Hull</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.774649 -0.538210 -3.321216</min>
+		<max>1.793893 0.765984 3.312148</max>
+	</visibilityBox>
+</root>

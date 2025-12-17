@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/poland/Pl21_CS_63/_skins/Pl21_CS_63_HO26_3Dst/crash/lod2/Hull</parent>
+	<extent>64.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.645405 -0.912630 -3.135000</min>
+		<max>1.645761 0.616348 3.169826</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/poland/Pl21_CS_63/_skins/Pl21_CS_63_HO26_3Dst/crash/lod1/Hull</nodefullVisual>
+</root>

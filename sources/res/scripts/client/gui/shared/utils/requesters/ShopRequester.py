@@ -1,6 +1,7 @@
 import logging, weakref
 from abc import ABCMeta, abstractmethod
 from collections import namedtuple
+from future.utils import viewvalues
 import typing, BigWorld
 from constants import WIN_XP_FACTOR_MODE, ARENA_BONUS_TYPE
 from goodies.goodie_constants import GOODIE_VARIETY, GOODIE_TARGET_TYPE, GOODIE_RESOURCE_TYPE
@@ -492,8 +493,7 @@ class ShopRequester(AbstractSyncDataRequester, ShopCommonStats, IShopRequester):
 
     def bestGoody(self, goodies):
         if goodies:
-            _, goody = sorted(goodies.iteritems(), key=lambda (_, goody): goody.resource[1])[(-1)]
-            return goody
+            return sorted(viewvalues(goodies), key=lambda goody: goody.resource[1])[(-1)]
         else:
             return
 

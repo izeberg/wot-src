@@ -8,7 +8,7 @@ package net.wg.infrastructure.base.meta
       
       function onPlaySoundS(param1:String) : void;
       
-      function as_setLevel(param1:String, param2:String, param3:String) : void;
+      function as_setLevel(param1:String, param2:String, param3:int, param4:String) : void;
       
       function as_setExperience(param1:int, param2:String, param3:int, param4:int, param5:Boolean) : void;
       

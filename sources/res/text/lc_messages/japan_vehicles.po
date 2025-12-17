@@ -175,6 +175,9 @@ msgstr "Ho-Ri 1 Kai"
 msgid "Chassis_J35_Ho_Ri_3"
 msgstr "Ho-Ri 3"
 
+msgid "Chassis_J35_Ho_Ri_3_7x7"
+msgstr "Ho-Ri 3"
+
 msgid "Chassis_J36_Type_63_HT"
 msgstr "Type 63"
 
@@ -235,11 +238,17 @@ msgstr "Type Mitsu 108"
 msgid "Chassis_J48_Saryuda"
 msgstr "Saryuda"
 
+msgid "Chassis_J49_Kame"
+msgstr "Kame"
+
 msgid "Chassis_J50_Type_1_Ho_Ni_II"
 msgstr "Type 1 Ho-Ni II"
 
 msgid "Chassis_J51_Ashigaru"
 msgstr "Ashigaru"
+
+msgid "Chassis_J52_STK_2"
+msgstr "STK-2"
 
 msgid "Chassis_Ke_Ho"
 msgstr "Type 5 Ke-Ho"
@@ -758,6 +767,19 @@ msgstr "Ho-Ri 1"
 msgid "J35_Ho_Ri_3"
 msgstr "Ho-Ri 3"
 
+msgid "J35_Ho_Ri_3_7x7"
+msgstr "Ho-Ri 3 7x7"
+
+msgid "J35_Ho_Ri_3_7x7_descr"
+msgstr ""
+"Тяжёлая штурмовая САУ, созданная на основе проекта японского истребителя "
+"танков Ho-Ri 1. Толщина брони увеличилась, также существенно изменилась "
+"лобовая часть корпуса и ходовая. Машина не была реализована в металле. До "
+"конца Второй мировой войны успели изготовить лишь деревянный макет."
+
+msgid "J35_Ho_Ri_3_7x7_short"
+msgstr "Ho-Ri 3 7x7"
+
 msgid "J35_Ho_Ri_3_descr"
 msgstr ""
 "Тяжёлая штурмовая САУ, созданная на основе проекта японского истребителя "
@@ -1024,6 +1046,37 @@ msgstr "Saryuda"
 msgid "J48_Saryuda_short_special"
 msgstr "Спаренная орудийная установка, надёжная лобовая броня"
 
+msgid "J49_Kame"
+msgstr "Kame"
+
+msgid "J49_Kame_descr"
+msgstr ""
+"Проект японского среднего танка, разработанный в 1945 году для "
+"противодействия средним и тяжёлым танкам союзников и СССР. Конструкторы "
+"постарались применить наиболее удачные технические решения разных танковых "
+"школ: машина сочетала в себе торсионную подвеску, хорошее бронирование, "
+"корпус с рациональными углами наклона бронелистов и мощное орудие. За "
+"специфичный вид, напоминающий панцирь черепахи, новый танк получил "
+"собственное имя — «Каме» (с японского — «черепаха»). Отдельной задачей "
+"инженеров стало повышение темпа стрельбы. Для этого на орудие монтировался "
+"специальный внешний радиатор, который должен был значительно снизить нагрев "
+"ствола. У нового танка были хорошие перспективы, но до капитуляции постройку"
+" опытного образца начать не успели."
+
+msgid "J49_Kame_long_special"
+msgstr ""
+"Kame — японский средний танк IX уровня с необычным магазином заряжания. "
+"Очень быстрая смена снаряда компенсируется высоким разбросом, поэтому машина"
+" лучше всего подходит для ближнего боя. Когда температура орудия в норме, "
+"точность стрельбы значительно повышается, однако придётся делать более "
+"длинные паузы между выстрелами."
+
+msgid "J49_Kame_short"
+msgstr "Kame"
+
+msgid "J49_Kame_short_special"
+msgstr "Магазин заряжания, система двойного сведения"
+
 msgid "J50_Type_1_Ho_Ni_II"
 msgstr "Type 1 Ho-Ni II"
 
@@ -1072,6 +1125,31 @@ msgstr "Ashigaru"
 msgid "J51_Ashigaru_short_special"
 msgstr ""
 "Хорошая мобильность, универсальное орудие с механикой двойного сведения"
+
+msgid "J52_STK_2"
+msgstr "STK-2"
+
+msgid "J52_STK_2_descr"
+msgstr ""
+"На стадии проектирования танка Type 71 от разведки США были получены "
+"отрывочные сведения о новых советских танках Т-64. В результате было принято"
+" решение параллельно с разработкой Type 71 заниматься созданием более мощной"
+" машины, получившей условное обозначение STK-2. Корпус и башню переработали "
+"— особенно усилили лобовую часть корпуса, значительно повысив уровень "
+"бронирования. Кроме того, за счёт установки более мощного двигателя "
+"улучшились показатели подвижности и проходимости танка. Впрочем, из-за его "
+"слишком высокой стоимости от серийного производства отказались."
+
+msgid "J52_STK_2_long_special"
+msgstr ""
+"Главные достоинства STK-2 — отличное бронирование башни и углы склонения "
+"орудия, позволяющие играть «от рельефа». Кроме того, благодаря системе "
+"активного охлаждения орудия танк может эффективно сражаться на разных "
+"дистанциях. Сочетание этих характеристик делает STK-2 универсальной боевой "
+"машиной."
+
+msgid "J52_STK_2_short"
+msgstr "STK-2"
 
 msgid "JAN-GRC-3Z"
 msgstr "JAN/GRC-3Z"
@@ -1159,6 +1237,9 @@ msgstr ""
 msgid "Mitsubishi"
 msgstr "Mitsubishi A475VD"
 
+msgid "Mitsubishi_12HM20WTK"
+msgstr "Mitsubishi 12HM20WT"
+
 msgid "Mitsubishi_12HM20WT_61"
 msgstr "Mitsubishi 12HM20WT (61)"
 
@@ -1185,6 +1266,9 @@ msgstr "Mitsubishi MT 1100"
 
 msgid "Mitsubishi_MT_1100_7x7"
 msgstr "Mitsubishi MT 1100"
+
+msgid "Mitsubishi_MT_1200"
+msgstr "Mitsubishi MT 1200"
 
 msgid "Nameless_Engine"
 msgstr "Nameless"
@@ -1329,6 +1413,9 @@ msgstr "Ho-Ri 1"
 msgid "Turret_1_J35_Ho_Ri_3"
 msgstr "Ho-Ri 3"
 
+msgid "Turret_1_J35_Ho_Ri_3_7x7"
+msgstr "Ho-Ri 3"
+
 msgid "Turret_1_J36_Type_63_HT"
 msgstr "Type 63"
 
@@ -1368,11 +1455,17 @@ msgstr "Mitsu 75"
 msgid "Turret_1_J48_Saryuda"
 msgstr "Saryuda"
 
+msgid "Turret_1_J49_Kame"
+msgstr "Kame"
+
 msgid "Turret_1_J50_Type_1_Ho_Ni_II"
 msgstr "Type 1 Ho-Ni II"
 
 msgid "Turret_1_J51_Ashigaru"
 msgstr "Ashigaru"
+
+msgid "Turret_1_J52_STK_2"
+msgstr "STK-2"
 
 msgid "Turret_1_Ke_Ho"
 msgstr "Type 5 Ke-Ho"
@@ -1437,6 +1530,9 @@ msgstr "Mitsu 105"
 msgid "Turret_2_Ke_Ni"
 msgstr "Type 2 Ke-To"
 
+msgid "Type3_Ko_K"
+msgstr "Type 3 Ko"
+
 msgid "Type3_Ko_SAR"
 msgstr "Type 3 Ko"
 
@@ -1452,7 +1548,13 @@ msgstr "Type 100 Kuurei V-12 (Shin)"
 msgid "Type_100_Suirei_V_12_Shin"
 msgstr "Type 100 Suirei V-12 (Shin)"
 
+msgid "Type_67_DK"
+msgstr "Type 67 DK"
+
 msgid "V12_Kawasaki_Type_97"
+msgstr "Kawasaki Type 97 V12 Kai"
+
+msgid "V12_Kawasaki_Type_97_7x7"
 msgstr "Kawasaki Type 97 V12 Kai"
 
 msgid "_105mm_APCR_Common_Type_68_57"
@@ -1515,6 +1617,9 @@ msgstr "Type 92 AP"
 msgid "_105mm_AP_Type_95"
 msgstr "APHE Type 95A"
 
+msgid "_105mm_AP_Type_95K"
+msgstr "APHE Type 95K"
+
 msgid "_105mm_AP_Type_95_SP"
 msgstr "APHE Type 95 SP"
 
@@ -1524,11 +1629,17 @@ msgstr "APHE Type 95 SP Toku Kou"
 msgid "_105mm_AP_Type_95_Toku_Kou"
 msgstr "APHE Type 95A Toku Kou"
 
+msgid "_105mm_AP_Type_95_Toku_Kou_K"
+msgstr "APHE Type 95K Toku Kou"
+
 msgid "_105mm_Cannon_Type92"
 msgstr "10 cm Cannon Type 92"
 
 msgid "_105mm_Cannon_Type92_A"
 msgstr "10 cm Cannon Type 92A"
+
+msgid "_105mm_Cannon_Type92_K"
+msgstr "105 mm Cannon Type 92"
 
 msgid "_105mm_Cannon_Type_14"
 msgstr "10 cm Cannon Type 14"
@@ -1601,6 +1712,9 @@ msgstr "HE Type 92A"
 
 msgid "_105mm_HE_Type_92B"
 msgstr "Type 92 HE"
+
+msgid "_105mm_HE_Type_92K"
+msgstr "HE Type 92K"
 
 msgid "_105mm_HE_Type_92_SP"
 msgstr "HE Type 92 SP"
@@ -1836,6 +1950,18 @@ msgstr "Balle T.P."
 msgid "_13.2mm_Type93"
 msgstr "13 mm Autocannon Type Ho"
 
+msgid "_137_2mm_APDS_TK_DK"
+msgstr "APDS TK DK"
+
+msgid "_137_2mm_AP_TK_DK"
+msgstr "AP TK DK"
+
+msgid "_137_2mm_HE_TK_DK"
+msgstr "HE TK DK"
+
+msgid "_137_2mm_TK_DK"
+msgstr "137.2 mm TK DK"
+
 msgid "_13mm_Autocannon_Type_Ho_NC"
 msgstr "13 mm Autocannon Type Ho (NC)"
 
@@ -1878,7 +2004,13 @@ msgstr "APHE Common Type 96"
 msgid "_149mm_Capped_Semi_AP"
 msgstr "14.9 cm Capped Semi AP"
 
+msgid "_149mm_Capped_Semi_AP_7x7"
+msgstr "14.9 cm Capped Semi AP"
+
 msgid "_149mm_Capped_Semi_AP_Kai"
+msgstr "14.9 cm Capped Semi AP Kai"
+
+msgid "_149mm_Capped_Semi_AP_Kai_7x7"
 msgstr "14.9 cm Capped Semi AP Kai"
 
 msgid "_149mm_Gun_Type_96"
@@ -1887,10 +2019,16 @@ msgstr "14.9 cm Gun Type 96"
 msgid "_149mm_Gun_Type_97"
 msgstr "14.9 cm Gun Type 96 Kai"
 
+msgid "_149mm_Gun_Type_97_7x7"
+msgstr "14.9 cm Gun Type 96 Kai"
+
 msgid "_149mm_HE_Type_1"
 msgstr "HE Common Type 96"
 
 msgid "_149mm_Type_1_HE"
+msgstr "14.9 cm Type 1 HE"
+
+msgid "_149mm_Type_1_HE_7x7"
 msgstr "14.9 cm Type 1 HE"
 
 msgid "_150mm_45_41st_Year_Type"
@@ -2543,6 +2681,9 @@ msgstr "Type 3 Ko-B"
 
 msgid "_Type3_Ko_BP"
 msgstr "Type 3 Ko"
+
+msgid "_Type3_Ko_B_7x7"
+msgstr "Type 3 Ko-B"
 
 msgid "_Type3_Ko_Se"
 msgstr "Type 3 Ko Se"

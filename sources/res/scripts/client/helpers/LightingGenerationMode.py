@@ -1,6 +1,7 @@
+from __future__ import absolute_import, print_function
 import sys, math, BigWorld, GUI, Keys, Math, ResMgr, WWISE
 from debug_utils import LOG_DEBUG, LOG_ERROR
-import game_mode_emulator
+from helpers import game_mode_emulator
 g_lightGenModeEnabled = False
 g_currentMoveRate = 0.5
 g_gui = None
@@ -133,7 +134,7 @@ def _offlineLoadCheck():
 
 def launch(spaceName):
     global g_lightGenModeEnabled
-    print 'Entering offline space', spaceName
+    print('Entering offline space', spaceName)
     BigWorld.clearAllSpaces()
     BigWorld.worldDrawEnabled(False)
     guitext = 'Client Lighting Generation Mode\n  entering: %s' % spaceName

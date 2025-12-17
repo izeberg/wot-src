@@ -9,6 +9,8 @@ package net.wg.frontline.infrastructure.base.meta.impl
       
       public var setFilter:Function;
       
+      public var resetPlaylistAndFilters:Function;
+      
       public function BattleTankCarouselMeta()
       {
          super();
@@ -18,6 +20,12 @@ package net.wg.frontline.infrastructure.base.meta.impl
       {
          App.utils.asserter.assertNotNull(this.setFilter,"setFilter" + Errors.CANT_NULL);
          this.setFilter(param1);
+      }
+      
+      public function resetPlaylistAndFiltersS() : void
+      {
+         App.utils.asserter.assertNotNull(this.resetPlaylistAndFilters,"resetPlaylistAndFilters" + Errors.CANT_NULL);
+         this.resetPlaylistAndFilters();
       }
    }
 }

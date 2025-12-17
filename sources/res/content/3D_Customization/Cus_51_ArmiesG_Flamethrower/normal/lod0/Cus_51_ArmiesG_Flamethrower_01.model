@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-0.429767 -0.000001 -0.787326</min>
+		<max>0.156011 0.399322 0.850455</max>
+	</visibilityBox>
+	<parent>content/3D_Customization/Cus_51_ArmiesG_Flamethrower/normal/lod1/Cus_51_ArmiesG_Flamethrower_01</parent>
+	<extent>32.000000</extent>
+	<havok>
+		<damagedState>true</damagedState>
+	</havok>
+	<nodefullVisual>content/3D_Customization/Cus_51_ArmiesG_Flamethrower/normal/lod0/Cus_51_ArmiesG_Flamethrower_01</nodefullVisual>
+	<tank>true</tank>
+</root>

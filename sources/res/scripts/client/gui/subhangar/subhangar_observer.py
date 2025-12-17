@@ -119,6 +119,7 @@ class SubhangarObserver(BaseStateObserver):
     def clear(self):
         self.__lsm.onVisibleRouteChanged -= self.__navigationsFinished
         self.__lsm = None
+        self.__hangarSpace.onSpaceCreate -= self.__navigationsFinished
         self.__callbackDelayer.destroy()
         self.__activatedSubHangars = []
         self.__subHangarsToActivate = set()
@@ -150,6 +151,8 @@ class SubhangarObserver(BaseStateObserver):
             self.__subHangarsToActivate.clear()
             self.__subHangarsToDeactivate.clear()
             self.__hangarSpace.onSpaceCreate -= self.__navigationsFinished
+        else:
+            self.__hangarSpace.onSpaceCreate += self.__navigationsFinished
 
     def __configureSubHangars(self):
         hangarSpaceId = self.__hangarSpace.spaceID
@@ -188,6 +191,8 @@ class SubhangarObserver(BaseStateObserver):
         hangarSpaceId = self.__hangarSpace.spaceID
         cameraManager = CGF.getManager(hangarSpaceId, HangarCameraManager)
         if not cameraManager or not cameraManager.cameraExists(cameraName):
+            cameraMover.moveCameraFailed()
             return 0
-        cameraMover.moveCamera(cameraManager, cameraName)
-        return
+        else:
+            cameraMover.moveCamera(cameraManager, cameraName)
+            return

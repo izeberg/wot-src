@@ -167,11 +167,6 @@ package net.wg.gui.battle.views.consumablesPanel
          return !!this._isReloading ? BATTLE_ITEM_STATES.COOLDOWN : param1;
       }
       
-      public function get coolDownTimer() : CoolDownTimer
-      {
-         return this._coolDownTimer;
-      }
-      
       public function clearColorTransform() : void
       {
          if(this._isReloading)
@@ -467,6 +462,12 @@ package net.wg.gui.battle.views.consumablesPanel
          buttonMode = false;
       }
       
+      protected function clearCoolDownText() : void
+      {
+         this.cooldownTimerTf.text = Values.EMPTY_STR;
+         this.counterBg.gotoAndStop(COOLDOWN_COUNTER_BG_HIDE);
+      }
+      
       private function intervalRun(param1:Boolean) : void
       {
          this._currentIntervalTime -= 1;
@@ -508,18 +509,17 @@ package net.wg.gui.battle.views.consumablesPanel
          this._coolDownTimer.start(param1,this,Math.round(COOLDOWN_FRAME_COUNT * param2),DEFAULT_TIME_COEF,param3,param4);
       }
       
-      protected function clearCoolDownText() : void
-      {
-         this.cooldownTimerTf.text = Values.EMPTY_STR;
-         this.counterBg.gotoAndStop(COOLDOWN_COUNTER_BG_HIDE);
-      }
-      
       override public function set state(param1:String) : void
       {
          if(!this._isPermanent && !this.isActivated)
          {
             super.state = param1;
          }
+      }
+      
+      public function get coolDownTimer() : CoolDownTimer
+      {
+         return this._coolDownTimer;
       }
       
       public function set activated(param1:Boolean) : void
@@ -550,6 +550,10 @@ package net.wg.gui.battle.views.consumablesPanel
       public function set quantity(param1:int) : void
       {
          this.empty = param1 == 0;
+      }
+      
+      public function set criticalQuantity(param1:int) : void
+      {
       }
       
       public function get bindSfKeyCode() : Number

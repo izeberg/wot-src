@@ -1,0 +1,99 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-01 10:00+0300\n"
+"PO-Revision-Date: 2010-06-01 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "battleInfo/all_from_battle"
+msgstr "Вся техника из предыдущего боя"
+
+msgid "battleInfo/arena"
+msgstr ""
+"{{arenaName}}, Линия фронта, сценарий боя: {{scenario}} – {{finishReason}}"
+
+msgid "battleInfo/finishReason/10lose"
+msgstr "цели не были уничтожены"
+
+msgid "battleInfo/finishReason/10win"
+msgstr "цели уничтожены"
+
+msgid "battleInfo/finishReason/1lose"
+msgstr "вся техника союзников уничтожена"
+
+msgid "battleInfo/finishReason/1tie"
+msgstr "вся техника уничтожена"
+
+msgid "battleInfo/finishReason/1win"
+msgstr "вся техника противника уничтожена"
+
+msgid "battleInfo/finishReason/2"
+msgstr "база захвачена"
+
+msgid "battleInfo/finishReason/3"
+msgstr "время боя истекло"
+
+msgid "battleInfo/finishReason/4"
+msgstr "бой прекращён из-за сбоя"
+
+msgid "battleInfo/finishReason/5"
+msgstr "техническое поражение"
+
+msgid "battleInfo/finishReason/8"
+msgstr "уничтожение союзника"
+
+msgid "battleInfo/finishReason/9"
+msgstr "ваша машина уничтожена"
+
+msgid "battleInfo/labels_objectivesDestroyed"
+msgstr "Цели уничтожены"
+
+msgid "battleInfo/labels_objectivesReached"
+msgstr "Вы подобрались к орудийным башням"
+
+msgid "battleInfo/labels_zoneCaptured"
+msgstr "Зоны захвачены"
+
+msgid "battleInfo/no"
+msgstr "Нет"
+
+msgid "battleInfo/time"
+msgstr "{{date}}, {{time}} (продолжительность боя: {{duration}})"
+
+msgid "battleInfo/timeLeft/minutesAndSeconds"
+msgstr "{{minutes}} мин {{seconds}} с"
+
+msgid "battleInfo/timeLeft/minutesOnly"
+msgstr "{{minutes}} мин"
+
+msgid "battleInfo/timeLeft/secondsOnly"
+msgstr "{{seconds}} с"
+
+msgid "battleInfo/yes"
+msgstr "Да"
+
+msgid "ranks/rank1"
+msgstr "Рядовой"
+
+msgid "ranks/rank2"
+msgstr "Сержант"
+
+msgid "ranks/rank3"
+msgstr "Лейтенант"
+
+msgid "ranks/rank4"
+msgstr "Капитан"
+
+msgid "ranks/rank5"
+msgstr "Майор"
+
+msgid "ranks/rank6"
+msgstr "Генерал"
+
+msgid "state/title"
+msgstr "РЕЗУЛЬТАТЫ БОЯ"

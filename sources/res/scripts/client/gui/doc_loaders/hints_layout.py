@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import resource_helper
 from gui.shared.formatters import text_styles
 

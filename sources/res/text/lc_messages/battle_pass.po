@@ -398,6 +398,12 @@ msgstr ""
 msgid "battlePassBuyView/title"
 msgstr "УЛУЧШЕННЫЙ ПРОПУСК"
 
+msgid "battlePassStatus/activateChapter"
+msgstr "Активировать главу Боевого пропуска"
+
+msgid "battlePassStatus/improve"
+msgstr "Вы по-прежнему можете купить Улучшенный пропуск"
+
 msgid "battlePassVehicleAwardView/button"
 msgstr "Так точно!"
 
@@ -539,6 +545,9 @@ msgstr "ВЫБЕРИТЕ ГЛАВУ"
 
 msgid "chapterChoice/vehicleInHangar/tooltip/text"
 msgstr "В Ангаре"
+
+msgid "chapterStatus/notSelected"
+msgstr "Глава не выбрана"
 
 msgid "chosenBonuses/bonus/battle_booster_gift"
 msgstr "Инструкции на выбор"
@@ -897,6 +906,9 @@ msgstr "%(vehicle): %(bonus) за попадание в %(top) по опыту."
 
 msgid "points/topCount"
 msgstr "топ-%(top)s"
+
+msgid "points/transfer"
+msgstr "Начислено свободных очков:"
 
 msgid "postProgressionView/footer/button/text"
 msgstr "К главам"
@@ -1379,6 +1391,29 @@ msgstr "УНИКАЛЬНЫЕ ЧЛЕНЫ ЭКИПАЖА"
 
 msgid "tankmenVoiceover/unavailable"
 msgstr "Недоступен"
+
+msgid "title/earningPoints"
+msgstr "Как заработать очки"
+
+msgid "title/freePoints"
+msgstr "Свободные очки"
+
+msgid "title/stage"
+msgstr "Этап {{level}}"
+
+msgid "tooltip/cardButton/disabled/body"
+msgstr "Операция временно недоступна. Попробуйте позже."
+
+msgid "tooltip/freePoints/body"
+msgstr ""
+"Свободные очки автоматически накапливаются и начисляются на ваш аккаунт "
+"после активации новой главы Боевого пропуска."
+
+msgid "tooltip/freePoints/header"
+msgstr "Свободные очки"
+
+msgid "tooltip/lock"
+msgstr "Награды недоступны. Купите Улучшенный пропуск для получения."
 
 msgid "tooltips/RandomQuestTooltip/condition"
 msgstr "Условие: %(condition)"

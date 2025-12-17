@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/3D_Customization/Cus_121_Biker_Bike/normal/lod2/Cus_121_Biker_Bike_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.543069 -0.001028 -1.001731</min>
+		<max>0.082469 0.402324 0.993289</max>
+	</visibilityBox>
+	<nodefullVisual>content/3D_Customization/Cus_121_Biker_Bike/normal/lod1/Cus_121_Biker_Bike_01</nodefullVisual>
+	<tank>true</tank>
+</root>

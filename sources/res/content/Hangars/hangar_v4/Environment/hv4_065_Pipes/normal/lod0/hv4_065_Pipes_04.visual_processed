@@ -228,7 +228,7 @@
 						<Texture>content/Buildings/00_Tiles/dds/Metal_01_Painted_512_GBMT.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>80.659821 11.332214 -56.697971</groupOrigin>
+				<groupOrigin>80.659821 11.332214 -56.697975</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -237,5 +237,5 @@
 		<max>208.004608 28.319405 171.553146</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>1390696</geometrySize>
+	<geometrySize>1387276</geometrySize>
 </root>

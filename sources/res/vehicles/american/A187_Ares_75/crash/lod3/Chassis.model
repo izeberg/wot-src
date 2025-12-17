@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/american/A187_Ares_75/crash/lod4/Chassis</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.583627 0.000000 -3.139089</min>
+		<max>1.583604 0.969769 0.489806</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/american/A187_Ares_75/crash/lod3/Chassis</nodefullVisual>
+</root>

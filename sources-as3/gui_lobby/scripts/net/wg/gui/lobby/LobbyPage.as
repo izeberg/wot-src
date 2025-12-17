@@ -128,7 +128,6 @@ package net.wg.gui.lobby
       override protected function onSetModalFocus(param1:InteractiveObject) : void
       {
          this.tryToFocusContent();
-         super.onSetModalFocus(param1);
       }
       
       override protected function onInitModalFocus(param1:InteractiveObject) : void

@@ -1,3 +1,4 @@
+from WeakMethod import WeakMethodProxy
 from debug_utils import LOG_CURRENT_EXCEPTION
 
 class Event(list):
@@ -55,7 +56,7 @@ class LateEvent(SafeEvent):
 
     def __init__(self, lateCallback, manager=None):
         super(LateEvent, self).__init__(manager)
-        self.__lateCallback = lateCallback
+        self.__lateCallback = WeakMethodProxy(lateCallback)
 
     def lateAdd(self, delegate):
         self.__lateCallback(delegate)
@@ -95,6 +96,10 @@ class EventManager(object):
 
     def __init__(self):
         self.__events = []
+
+    @property
+    def hasAnyListener(self):
+        return any(self.__events)
 
     def register(self, event):
         self.__events.append(event)

@@ -4,7 +4,7 @@
 	<grid>
 		grid_1
 		<rows>10</rows>
-		<columns>10</columns>
+		<columns>11</columns>
 	</grid>
 	<nodes>
 		<J01_NC27>
@@ -178,6 +178,9 @@
 		<J40_Type_71>
 			<row>4</row>
 			<column>10</column>
+			<lines>
+				<J52_STK_2/>
+			</lines>
 		</J40_Type_71>
 		<J20_Type_2605>
 			<row>6</row>
@@ -187,5 +190,9 @@
 			<row>8</row>
 			<column>10</column>
 		</J16_ST_B1>
+		<J52_STK_2>
+			<row>4</row>
+			<column>11</column>
+		</J52_STK_2>
 	</nodes>
 </root>

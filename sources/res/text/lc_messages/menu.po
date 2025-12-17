@@ -1288,7 +1288,7 @@ msgid "contextMenu/withdrawInvitationToSquad"
 msgstr "Отозвать приглашение во взвод"
 
 msgid "copy"
-msgstr "© 2009–2025 Wargaming.net. Все права защищены."
+msgstr "© 2009–2026 Wargaming.net. Все права защищены."
 
 msgid "counter/newCounter"
 msgstr "НОВОЕ"
@@ -2902,7 +2902,7 @@ msgid "headerButtons/battle/menu/unit"
 msgstr "Командный бой"
 
 msgid "headerButtons/battle/modeInfo"
-msgstr "Режим: {{mode}}"
+msgstr "{{mode}}"
 
 msgid "headerButtons/battle/types/battleRoyale"
 msgstr "Стальной охотник"
@@ -3144,7 +3144,7 @@ msgid "headerButtons/battle/types/winback"
 msgstr "Случайный бой: Разминка"
 
 msgid "headerButtons/battle/vehicleInfo"
-msgstr "Бой в режиме «{{mode}}» на технике {{level}}{{type}}{{name}}"
+msgstr "Режим: «{{mode}}». Техника: {{level}}{{type}}{{name}}"
 
 msgid "headerButtons/browser"
 msgstr "Браузер"
@@ -4433,19 +4433,16 @@ msgstr "?empty?"
 msgid "moduleInfo/additionalInfo"
 msgstr "Характеристики снаряда могут отличаться в зависимости от орудия."
 
-msgid "moduleInfo/autoReloadGunLabel"
+msgid "moduleInfo/autoLoaderGun"
 msgstr "Система дозарядки магазина"
 
-msgid "moduleInfo/autoReloadGunLabel/boost"
+msgid "moduleInfo/autoLoaderGunBoost"
 msgstr ""
 "Доработанная система дозарядки:\n"
 "Позволяет уменьшить базовое время дозарядки снарядов."
 
-msgid "moduleInfo/autoShootGunLabel"
+msgid "moduleInfo/autoShootGun"
 msgstr "Орудие с системой непрерывного огня"
-
-msgid "moduleInfo/clipGunLabel"
-msgstr "Магазинная система заряжания"
 
 msgid "moduleInfo/closeBtn"
 msgstr "Закрыть"
@@ -4471,32 +4468,41 @@ msgstr "Работает как однозарядное на технике:"
 msgid "moduleInfo/compatible/vehicles"
 msgstr "Устанавливается на технику:"
 
-msgid "moduleInfo/damageMutableGunLabel"
+msgid "moduleInfo/damageMutable"
 msgstr ""
 "Орудие с глубокой нарезкой ствола. Способно стрелять снарядами со звёздчатым"
 " поддоном."
 
-msgid "moduleInfo/dualAccuracyGunLabel"
+msgid "moduleInfo/dualAccuracy"
 msgstr "Система двойного сведения"
 
-msgid "moduleInfo/dualGunLabel"
+msgid "moduleInfo/dualGun"
 msgstr "Спаренная орудийная установка"
 
-msgid "moduleInfo/hydraulicAutoSiegeChassisLabel"
-msgstr "Гидропневматическая подвеска: позволяет изменять угол наклона корпуса"
+msgid "moduleInfo/heatingZonesGun"
+msgstr "Орудие с системой активного охлаждения"
 
-msgid "moduleInfo/hydraulicChassisLabel"
+msgid "moduleInfo/hydraulicChassis"
 msgstr ""
 "Гидропневматическая подвеска: позволяет переходить в осадный / походный "
 "режимы"
 
-msgid "moduleInfo/hydraulicWheeledChassisLabel"
+msgid "moduleInfo/hydraulicWheeledChassis"
 msgstr ""
 "Гидропневматический привод телескопического типа: позволяет изменять "
 "положение дополнительных колёс."
 
+msgid "moduleInfo/hydroAutoSiegeChassis"
+msgstr "Гидропневматическая подвеска: позволяет изменять угол наклона корпуса"
+
+msgid "moduleInfo/magazineGun"
+msgstr "Магазинная система заряжания"
+
 msgid "moduleInfo/nonPiercingDamageLabel"
 msgstr "Способно нанести небольшой урон даже при непробитии"
+
+msgid "moduleInfo/overheatGun"
+msgstr "Автоматическая пушка с системой контроля температуры"
 
 msgid "moduleInfo/parametersClipGunLabel"
 msgstr ""
@@ -4724,6 +4730,9 @@ msgstr "Мощность двигателя (с ускорит.)"
 msgid "moduleInfo/params/rotationSpeed"
 msgstr "Скорость поворота"
 
+msgid "moduleInfo/params/shellLoadingTime"
+msgstr "Время подготовки ленты боеприпасов"
+
 msgid "moduleInfo/params/shellReloadingTime"
 msgstr "Время перезарядки между выстрелами"
 
@@ -4760,13 +4769,17 @@ msgstr "Мощность двигателя (турбо)"
 msgid "moduleInfo/params/weight"
 msgstr "Масса"
 
-msgid "moduleInfo/rocketAccelerationEngine"
+msgid "moduleInfo/rocketAcceleration"
 msgstr "Реактивные ускорители, повышающие мобильность"
+
+msgid "moduleInfo/stagedJetBoosters"
+msgstr ""
+"Твердотопливные ускорители улучшают разгон, мобильность и манёвренность"
 
 msgid "moduleInfo/title"
 msgstr " "
 
-msgid "moduleInfo/trackWithinTrackChassisLabel"
+msgid "moduleInfo/trackWithinTrack"
 msgstr ""
 "Резервная гусеница: позволяет частично сохранить мобильность при выходе из "
 "строя основной гусеничной ленты."
@@ -4776,7 +4789,7 @@ msgstr ""
 "Газотурбинный двигатель:\n"
 "позволяет развивать высокую скорость."
 
-msgid "moduleInfo/twinGunLabel"
+msgid "moduleInfo/twinGun"
 msgstr "Система выбора режима огня"
 
 msgid "nation_tree/blueprint_title/china"
@@ -6423,6 +6436,12 @@ msgstr "Время действия"
 msgid "tank_params/continuousShotsPerMinute"
 msgstr "Темп непрерывного огня"
 
+msgid "tank_params/coolingDelay"
+msgstr "Задержка остывания"
+
+msgid "tank_params/coolingTime"
+msgstr "Остывание полностью разогретого орудия"
+
 msgid "tank_params/damage"
 msgstr "Урон базовым снарядом"
 
@@ -6526,6 +6545,9 @@ msgstr "Время до перегрева заряда"
 msgid "tank_params/heatTimeToReachLevel"
 msgstr "Время получения уровня нагрева"
 
+msgid "tank_params/heatingPerShot"
+msgstr "Нагрев за выстрел"
+
 msgid "tank_params/hullArmor"
 msgstr "Бронирование корпуса"
 
@@ -6600,6 +6622,9 @@ msgstr "мм"
 
 msgid "tank_params/no_brackets/s"
 msgstr "c"
+
+msgid "tank_params/overheatDuration"
+msgstr "Остывание перегретого орудия"
 
 msgid "tank_params/p"
 msgstr "(л.с.)"
@@ -6735,6 +6760,9 @@ msgstr "Перезарядка вспомогательного орудия"
 msgid "tank_params/secondaryTotalBurstSize"
 msgstr "Снарядов во вспомогательном орудии"
 
+msgid "tank_params/shellLoadingTime"
+msgstr "Время подготовки ленты боеприпасов"
+
 msgid "tank_params/shortened/avgPiercingPower"
 msgstr "Пробивает:"
 
@@ -6752,6 +6780,27 @@ msgstr "(выстр/мин)"
 
 msgid "tank_params/sqm"
 msgstr "(м²)"
+
+msgid "tank_params/stagedJetBoostersChargeDuration"
+msgstr "Длительность усиления (с)"
+
+msgid "tank_params/stagedJetBoostersChargesCount"
+msgstr "Усилений доступно"
+
+msgid "tank_params/stagedJetBoostersCooldownTime"
+msgstr "Время перезарядки ускорителя (с)"
+
+msgid "tank_params/stagedJetBoostersEnginePower"
+msgstr "Мощность двигателя (с ускорителями) (л.с.)"
+
+msgid "tank_params/stagedJetBoostersRotationSpeed"
+msgstr "Скорость поворота (с ускорителями) (град/с)"
+
+msgid "tank_params/stagedJetBoostersSpeedLimits"
+msgstr "Скорость заднего хода (с ускорителями) (км/ч)"
+
+msgid "tank_params/stagedJetBoostersTopSpeed"
+msgstr "Максимальная скорость (с ускорителями) (км/ч)"
 
 msgid "tank_params/stationaryReloadSwitchOffTime"
 msgstr "Время прерывания перезарядки"
@@ -6783,8 +6832,17 @@ msgstr "Время перехода в осадный / походный реж�
 msgid "tank_params/t"
 msgstr "(т)"
 
+msgid "tank_params/temperatureAvgDamagePerMinute"
+msgstr "Средний урон в минуту"
+
+msgid "tank_params/temperatureReloadTime"
+msgstr "Скорострельность орудия"
+
 msgid "tank_params/timeOfReaching"
 msgstr "Время преодоления 100 м"
+
+msgid "tank_params/timeToOverheat"
+msgstr "Продолжительность непрерывной стрельбы до перегрева"
 
 msgid "tank_params/topSpeedWithBoosters"
 msgstr "Макс. скорость (с ускорителями)"
@@ -7418,6 +7476,12 @@ msgstr "Время перехода в осадный режим (с)"
 
 msgid "vehicleInfo/params/switchTime"
 msgstr "Время перехода в осадный / походный режим (с)"
+
+msgid "vehicleInfo/params/temperatureAvgDamagePerMinute"
+msgstr "Средний урон в минуту"
+
+msgid "vehicleInfo/params/temperatureReloadTime"
+msgstr "Скорострельность орудия (выстр/мин)"
 
 msgid "vehicleInfo/params/turboshaftBurstFireRate"
 msgstr "Кассета (турбо) (с/шт./шт.)"

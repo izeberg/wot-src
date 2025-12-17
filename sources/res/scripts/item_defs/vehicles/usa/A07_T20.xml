@@ -39,6 +39,12 @@
 				<!--BW_String-->
 			</invisibilityBonus>
 		</camouflageNet>
+		<deluxeCamouflageNet>
+			<invisibilityBonus>
+				0.125
+				<!--BW_String-->
+			</invisibilityBonus>
+		</deluxeCamouflageNet>
 		<additionalInvisibilityDevice>
 			<invisibilityBonus>
 				0.06 0.08
@@ -8765,6 +8771,10 @@
 						<vehicle>
 							A35_Pershing
 							<cost>98100</cost>
+						</vehicle>
+						<vehicle>
+							A187_Ares_75
+							<cost>100000</cost>
 						</vehicle>
 					</unlocks>
 					<pitchLimits>

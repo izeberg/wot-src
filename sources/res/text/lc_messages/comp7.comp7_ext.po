@@ -65,7 +65,7 @@ msgid "alertMessage/qualification"
 msgstr "Ожидание результатов квалификации для присвоения ранга"
 
 msgid "alertMessage/seasonEnd/first"
-msgstr "Сезона Лазурного дракона завершён"
+msgstr "Сезон Лазурного дракона завершён"
 
 msgid "alertMessage/seasonEnd/second"
 msgstr "Сезон Алого дракона завершён"
@@ -282,6 +282,21 @@ msgstr "%(rank)s. %(division)s"
 msgid "battleResult/subTask/title/raise"
 msgstr "Вы повышены до %(division)s. %(rank)s!"
 
+msgid "battlesIndicatorTooltip/day/heading"
+msgstr "Проведённые бои за день: %(battlesCount)s"
+
+msgid "battlesIndicatorTooltip/listHeading"
+msgstr "Из них:"
+
+msgid "battlesIndicatorTooltip/season/heading"
+msgstr "Проведённые бои за сезон: %(battlesCount)s"
+
+msgid "battlesIndicatorTooltip/soloBattlesCount"
+msgstr "В одиночку/Во взводе: %(soloBattlesCount)s"
+
+msgid "battlesIndicatorTooltip/superPlatoonBattlesCount"
+msgstr "Супервзвод: %(superPlatoonBattlesCount)s"
+
 msgid "calendarDay/serverName"
 msgstr "%(server)s"
 
@@ -347,6 +362,25 @@ msgstr "Навыки"
 msgid "crewMembersTooltip/subHeading"
 msgstr "Натиск. Год Дракона"
 
+msgid "damageIndicatorTooltip/damage/day/heading"
+msgstr "Средний урон за день: %(averageDamageDealt)s"
+
+msgid "damageIndicatorTooltip/damage/description"
+msgstr ""
+"Отношение общего количества нанесённого урона к количеству проведённых боёв."
+
+msgid "damageIndicatorTooltip/damage/season/heading"
+msgstr "Средний урон за сезон: %(averageDamageDealt)s"
+
+msgid "damageIndicatorTooltip/damageRecord/day/heading"
+msgstr "Максимальный урон за день: %(recordDamageDealt)s"
+
+msgid "damageIndicatorTooltip/damageRecord/description"
+msgstr "Максимальный урон за бой нанесён на машине %(vehicleName)s"
+
+msgid "damageIndicatorTooltip/damageRecord/season/heading"
+msgstr "Максимальный урон за сезон: %(recordDamageDealt)s"
+
 msgid "dash"
 msgstr "—"
 
@@ -357,6 +391,33 @@ msgstr ""
 
 msgid "dataError/title"
 msgstr "Ошибка загрузки данных"
+
+msgid "dayTooltip/day"
+msgstr "День %(index)s"
+
+msgid "dayTooltip/dayNoBattles"
+msgstr "День %(index)s: нет сражений."
+
+msgid "dayTooltip/noBattles"
+msgstr "Хочешь мира, готовься к войне"
+
+msgid "dayTooltip/rankInactivity"
+msgstr "Ранговая неактивность: %(penalty)s"
+
+msgid "dayTooltip/rankInactivityPenalty"
+msgid_plural "dayTooltip/rankInactivityPenalty"
+msgstr[0] "%(pointsCount)s очко рейтинга"
+msgstr[1] "%(pointsCount)s очка рейтинга"
+msgstr[2] "%(pointsCount)s очков рейтинга"
+
+msgid "dayTooltip/ratingDiff"
+msgstr "Изменение рейтинга: %(diff)s"
+
+msgid "dayTooltip/today"
+msgstr "День %(index)s (сегодня)"
+
+msgid "dayTooltip/todayNoBattles"
+msgstr "День %(index)s: сегодня нет сражений"
 
 msgid "division/A"
 msgstr "A"
@@ -705,6 +766,28 @@ msgstr "Ожидание игроков..."
 msgid "prebattleTimer/wait/selectVehicle"
 msgstr "Выберите машину"
 
+msgid "prestigeIndicatorTooltip/prestige/day/heading"
+msgstr "Среднее количество очков престижа за день: %(averagePrestige)s"
+
+msgid "prestigeIndicatorTooltip/prestige/description"
+msgstr ""
+"Отношение общего количества заработанных очков престижа к количеству "
+"проведённых боёв."
+
+msgid "prestigeIndicatorTooltip/prestige/season/heading"
+msgstr "Среднее количество очков престижа за сезон: %(averagePrestige)s"
+
+msgid "prestigeIndicatorTooltip/prestigeRecord/day/heading"
+msgstr "Максимальное количество очков престижа за день: %(recordPrestige)s"
+
+msgid "prestigeIndicatorTooltip/prestigeRecord/description"
+msgstr ""
+"Максимальное количество очков престижа за бой заработано на машине "
+"%(vehicleName)s"
+
+msgid "prestigeIndicatorTooltip/prestigeRecord/season/heading"
+msgstr "Максимальное количество очков престижа за сезон: %(recordPrestige)s"
+
 msgid "primeTimeView/status/seasonDisabled/first"
 msgstr "Сезон Лазурного дракона на сервере %(server)s завершился."
 
@@ -787,6 +870,209 @@ msgstr "Доступно для восстановления на Складе"
 msgid "products/style3d"
 msgstr "3D-cтиль %(name)s"
 
+msgid "progressionPage/chartHeader/backToGeneral"
+msgstr "НАЗАД К СТАТИСТИКЕ СЕЗОНА"
+
+msgid "progressionPage/chartHeader/general"
+msgstr "СТАТИСТИКА СЕЗОНА"
+
+msgid "progressionPage/chartHeader/statisticDay"
+msgstr "СТАТИСТИКА ЗА ДЕНЬ %(day)s"
+
+msgid "progressionPage/chartHeader/todayStatistic"
+msgstr "СТАТИСТИКА ЗА СЕГОДНЯ"
+
+msgid "progressionPage/chartHeader/tooltip/info"
+msgstr ""
+"В каждом столбце отображаются данные за период с прайм-тайма выбранного дня "
+"до прайм-тайма следующего за ним дня. В некоторых случаях могут учитываться "
+"бои за два календарных дня."
+
+msgid "progressionPage/chartHeader/tooltip/todayInfo"
+msgstr ""
+"В каждом столбце отображаются данные за период с прайм-тайма выбранного дня "
+"до прайм-тайма следующего за ним дня. В некоторых случаях могут учитываться "
+"бои за два календарных дня."
+
+msgid "progressionPage/chartHeader/tooltip/update"
+msgstr ""
+"Этот раздел обновляется только по мере поступления новых данных. Нажмите "
+"кнопку, чтобы запросить обновление."
+
+msgid "progressionPage/chartHeader/update"
+msgstr "Обновлено: %(time)s %(info)s"
+
+msgid "progressionPage/customization/completed"
+msgstr "Поздравляем!"
+
+msgid "progressionPage/customization/completedDescription"
+msgstr "Вы выполнили все задачи 2D-стиля."
+
+msgid "progressionPage/customization/counter"
+msgstr "%(currentProgress)s / %(maxProgress)s"
+
+msgid "progressionPage/customization/headingTooltip"
+msgstr ""
+"Цепочка задач на получение новых элементов для прогрессионного 2D-стиля "
+"текущего сезона."
+
+msgid "progressionPage/customization/tasks"
+msgid_plural "progressionPage/customization/tasks"
+msgstr[0] "%(taskNumber)s ЗАДАЧА 2D-СТИЛЯ"
+msgstr[1] "%(taskNumber)s ЗАДАЧИ 2D-СТИЛЯ"
+msgstr[2] "%(taskNumber)s ЗАДАЧ 2D-СТИЛЯ"
+
+msgid "progressionPage/customization/tasksDone"
+msgstr "ЗАДАЧИ 2D-СТИЛЯ"
+
+msgid "progressionPage/customization/toStyle"
+msgstr "К стилю"
+
+msgid "progressionPage/error/noStylesForVehicle"
+msgstr "Все стили нанесены на недоступную сейчас технику"
+
+msgid "progressionPage/error/noVehiclesForStyle"
+msgstr "У вас нет подходящей техники для нанесения стиля"
+
+msgid "progressionPage/error/refresh"
+msgstr "Обновить"
+
+msgid "progressionPage/error/refreshing"
+msgstr "Обновляется..."
+
+msgid "progressionPage/statistic/averageDamage"
+msgstr "Средний урон"
+
+msgid "progressionPage/statistic/averagePrestigePoints"
+msgstr "Среднее количество очков престижа"
+
+msgid "progressionPage/statistic/dayRecordDescription"
+msgstr "Изменение рейтинга %(diff)s"
+
+msgid "progressionPage/statistic/seasonRecordDescription"
+msgstr "Максимальный рейтинг достигнут на %(seasonRecordDescriptionDay)s"
+
+msgid "progressionPage/statistic/seasonRecordDescriptionDay"
+msgstr "%(day)s-й день"
+
+msgid "progressionPage/toAllStatistic"
+msgstr "К общей статистике"
+
+msgid "progressionPage/tooltips/body/assist"
+msgstr ""
+"Учитываются:\n"
+" • урон по вашим разведданным (в т. ч. с помощью навыков);\n"
+" • урон после вашего попадания, сбившего гусеницу и обездвижившего цель (в т. ч. с помощью навыков);\n"
+" • урон, нанесённый союзниками с помощью ваших навыков;\n"
+" • урон, нанесённый союзниками по оглушённому вами противнику (в т. ч. с помощью навыков)."
+
+msgid "progressionPage/tooltips/body/battles"
+msgstr "Общее количество проведённых боёв"
+
+msgid "progressionPage/tooltips/body/damage"
+msgstr ""
+"Отношение общего количества нанесённого урона к количеству проведённых боёв"
+
+msgid "progressionPage/tooltips/body/destruction"
+msgstr ""
+"Отношение количества уничтоженной техники противника к количеству "
+"уничтожений машины игрока"
+
+msgid "progressionPage/tooltips/body/maxFrags"
+msgstr "Отношение нанесённого урона к полученному"
+
+msgid "progressionPage/tooltips/body/prestigePoints"
+msgstr ""
+"Отношение общего количества заработанных очков престижа к количеству "
+"проведённых боёв"
+
+msgid "progressionPage/tooltips/body/vehicles"
+msgstr "Техника с наибольшим количеством проведённых боёв"
+
+msgid "progressionPage/tooltips/body/winSeries"
+msgstr "Общий процент одержанных побед"
+
+msgid "progressionPage/tooltips/header/assist"
+msgstr "Средний урон, нанесённый с вашей помощью"
+
+msgid "progressionPage/tooltips/header/battles"
+msgstr "Бои"
+
+msgid "progressionPage/tooltips/header/damage"
+msgstr "Средний нанесённый урон"
+
+msgid "progressionPage/tooltips/header/destruction"
+msgstr "Коэффициент уничтожения"
+
+msgid "progressionPage/tooltips/header/maxFrags"
+msgstr "Коэффициент урона"
+
+msgid "progressionPage/tooltips/header/prestigePoints"
+msgstr "Среднее количество очков престижа за бой"
+
+msgid "progressionPage/tooltips/header/vehicles"
+msgstr "Название техники"
+
+msgid "progressionPage/tooltips/header/winSeries"
+msgstr "Победы"
+
+msgid "progressionPage/vehicleStatistic"
+msgstr "СТАТИСТИКА ПО ТЕХНИКЕ"
+
+msgid "progressionTableTooltip/pointsFrom"
+msgstr "%(from)s+"
+
+msgid "progressionTableTooltip/pointsRange"
+msgstr "%(from)s–%(to)s"
+
+msgid "progressionTableTooltip/rankInactivity/daysLeft"
+msgstr ""
+"Дней до снижения рейтинга: "
+"{eeede9e6_Open}%(rankInactivityCount)s{eeede9e6_Close}"
+
+msgid "progressionTableTooltip/rankInactivity/description/active"
+msgid_plural ""
+"plural/progressionTableTooltip/rankInactivity/description/active"
+msgstr[0] ""
+"Без участия в сражениях «Натиска» вы потеряете "
+"{eeede9e6_Open}%(count)s{eeede9e6_Close} очко рейтинга."
+msgstr[1] ""
+"Без участия в сражениях «Натиска» вы потеряете "
+"{eeede9e6_Open}%(count)s{eeede9e6_Close} очка рейтинга."
+msgstr[2] ""
+"Без участия в сражениях «Натиска» вы потеряете "
+"{eeede9e6_Open}%(count)s{eeede9e6_Close} очков рейтинга."
+
+msgid "progressionTableTooltip/rankInactivity/description/formula"
+msgid_plural ""
+"plural/progressionTableTooltip/rankInactivity/description/formula"
+msgstr[0] ""
+"(1&nbsp;бой&nbsp;=&nbsp;{white_Open}%(count)s{white_Close}&nbsp;очко "
+"активности)"
+msgstr[1] ""
+"(1&nbsp;бой&nbsp;=&nbsp;{white_Open}%(count)s{white_Close}&nbsp;очка "
+"активности)"
+msgstr[2] ""
+"(1&nbsp;бой&nbsp;=&nbsp;{white_Open}%(count)s{white_Close}&nbsp;очков "
+"активности)"
+
+msgid "progressionTableTooltip/rankInactivity/description/notActive"
+msgstr ""
+"На текущем ранге вы не потеряете очки рейтинга за неактивность в режиме, но "
+"можете их потерять на следующих рангах: %(rankList)s"
+
+msgid "progressionTableTooltip/rankInactivity/header/active"
+msgstr "Неактивность влияет на ранг"
+
+msgid "progressionTableTooltip/rankInactivity/header/notActive"
+msgstr "Неактивность не влияет на ранг"
+
+msgid "progressionTableTooltip/table/heading/rank"
+msgstr "Ранг"
+
+msgid "progressionTableTooltip/topRank"
+msgstr "Лучшие %(topPercentage)s% игроков по рейтингу"
+
 msgid "progressionTooltip/division"
 msgstr "Дивизион %(divisionName)s"
 
@@ -839,7 +1125,7 @@ msgstr[2] ""
 "{eeede9e6_Open}%(count)s{eeede9e6_Close} очков рейтинга."
 
 msgid "progressionTooltip/rankInactivity/header/active"
-msgstr "Ранговая неактивность влияет на ваш рейтинг."
+msgstr "%(icon)s Ранговая неактивность влияет на ваш рейтинг."
 
 msgid "progressionTooltip/rankInactivity/warning"
 msgstr "Проведите бой до конца дня, чтобы сохранить текущий ранг."
@@ -993,6 +1279,27 @@ msgstr "Ранговая неактивность"
 msgid "rankInactivityTooltip/timeLeft"
 msgstr "Дней до снижения рейтинга: %(count)s"
 
+msgid "rankIndicatorTooltip/day/ratingDescription"
+msgstr "Ежедневный рейтинг"
+
+msgid "rankIndicatorTooltip/day/ratingDiff"
+msgstr "Изменение рейтинга: %(diff)s"
+
+msgid "rankIndicatorTooltip/day/ratingDiffDescription"
+msgstr "Разница в рейтинге между выбранным и предшествующим днём."
+
+msgid "rankIndicatorTooltip/day/ratingRecord"
+msgstr "Максимальный рейтинг за день: %(maxAchievedRatingPoints)s"
+
+msgid "rankIndicatorTooltip/day/ratingRecordDescription"
+msgstr "Максимальный рейтинг за выбранный день."
+
+msgid "rankIndicatorTooltip/season/dayOfRecord"
+msgstr "%(day)s-й день"
+
+msgid "rankIndicatorTooltip/season/ratingDescription"
+msgstr "Максимальный рейтинг в сезоне достигнут на %(dayOfRecord)s"
+
 msgid "rankInfo/current/fifth"
 msgstr ""
 "Ранг «Чемпион» присваивается игрокам, набравшим {eeede9e6_Open}не менее "
@@ -1030,53 +1337,6 @@ msgstr ""
 " по количеству очков рейтинга. Количество очков рейтинга у последнего игрока"
 " в ранге «Легенда»&nbsp;—&nbsp;{eeede9e6_Open}%(pointsCount){eeede9e6_Close}"
 
-msgid "rankItemStatus/future/description/fifth"
-msgstr ""
-"Ранг «Чемпион» присваивается игрокам, набравшим не "
-"менее&nbsp;{eeede9e6_Open}%(fromScore){eeede9e6_Close} очков рейтинга."
-
-msgid "rankItemStatus/future/description/first"
-msgstr ""
-"Ранг «Железо» присваивается игрокам, набравшим "
-"{eeede9e6_Open}от&nbsp;%(fromScore) до&nbsp;%(toScore){eeede9e6_Close} очков"
-" рейтинга."
-
-msgid "rankItemStatus/future/description/fourth"
-msgstr ""
-"Ранг «Золото» присваивается игрокам, набравшим "
-"{eeede9e6_Open}от&nbsp;%(fromScore) до&nbsp;%(toScore){eeede9e6_Close} очков"
-" рейтинга."
-
-msgid "rankItemStatus/future/description/second"
-msgstr ""
-"Ранг «Бронза» присваивается игрокам, набравшим "
-"{eeede9e6_Open}от&nbsp;%(fromScore) до&nbsp;%(toScore){eeede9e6_Close} очков"
-" рейтинга."
-
-msgid "rankItemStatus/future/description/sixth"
-msgstr ""
-"Для получения ранга «Легенда» попадите в "
-"{eeede9e6_Open}топ-%(topPercentage)%{eeede9e6_Close} игроков таблицы лидеров"
-" по количеству очков рейтинга."
-
-msgid "rankItemStatus/future/description/third"
-msgstr ""
-"Ранг «Серебро» присваивается игрокам, набравшим "
-"{eeede9e6_Open}от&nbsp;%(fromScore) до&nbsp;%(toScore){eeede9e6_Close} очков"
-" рейтинга."
-
-msgid "rankItemStatus/future/extendedDescription/sixth"
-msgstr ""
-"Для получения ранга «Легенда» попадите в "
-"{eeede9e6_Open}топ-%(topPercentage)%{eeede9e6_Close} игроков таблицы лидеров"
-" по количеству очков рейтинга. Количество очков рейтинга у последнего игрока"
-" в ранге «Легенда»&nbsp;—&nbsp;{eeede9e6_Open}%(pointsCount){eeede9e6_Close}"
-
-msgid "rankItemStatus/previous/description/fifth"
-msgstr ""
-"Ранг «Чемпион» присваивается игрокам, набравшим не "
-"менее&nbsp;{eeede9e6_Open}%(fromScore){eeede9e6_Close} очков рейтинга."
-
 msgid "rankUpper/fifth"
 msgstr "ЧЕМПИОН"
 
@@ -1097,9 +1357,6 @@ msgstr "РАНГ %(rank)s"
 
 msgid "rankUpper/third"
 msgstr "СЕРЕБРО"
-
-msgid "ratingScore/title"
-msgstr "Очки рейтинга"
 
 msgid "rewardSelection/tooltip/selectableRewardList/deluxe"
 msgstr ""
@@ -1139,7 +1396,7 @@ msgid "rewards/subtitle/customizations"
 msgstr "{b2afab_Open}Для техники %(vehicleLevel)s уровня{b2afab_Close}"
 
 msgid "rewards/subtitle/styleProgress"
-msgstr "{b2afab_Open}Для стиля «Король драконов (лазурный)»{b2afab_Close}"
+msgstr "{b2afab_Open}Для стиля «Король драконов (алый)»{b2afab_Close}"
 
 msgid "rewards/subtitle/vehicles_rent"
 msgstr "%(vehicleLevel)s уровень"
@@ -1669,17 +1926,190 @@ msgstr "О «Натиске»"
 msgid "tooltip/whatsNewButton/header"
 msgstr "Сезонные обновления"
 
+msgid "tournament/LBFinals"
+msgstr "ФИНАЛ НС"
+
+msgid "tournament/LBRound1"
+msgstr "НС РАУНД 1"
+
+msgid "tournament/LBRound2"
+msgstr "НС РАУНД 2"
+
+msgid "tournament/LBSemifinals"
+msgstr "ПОЛУФИНАЛ НС"
+
+msgid "tournament/UBFinals"
+msgstr "ФИНАЛ ВС"
+
+msgid "tournament/UBSemifinals"
+msgstr "ПОЛУФИНАЛ ВС"
+
 msgid "tournament/battleResult/personal/tooltip/descr"
 msgstr "В турнире нельзя получить или потерять очки рейтинга."
 
-msgid "tournamentsEntryPointTooltip/description"
+msgid "tournament/bestOf"
+msgstr "ЛУЧШИЙ ИЗ %(number)s"
+
+msgid "tournament/cny"
+msgstr "%(amount)s CNY"
+
+msgid "tournament/cnySign"
+msgstr "¥%(amount)s"
+
+msgid "tournament/comeBack"
+msgstr "Повторите попытку позже"
+
+msgid "tournament/comingSoon"
+msgstr "СКОРО %(addition)s"
+
+msgid "tournament/comingSoonAddition"
+msgstr "ВРЕМЯ ЗАВИСИТ ОТ ПРОДОЛЖИТЕЛЬНОСТИ МАТЧЕЙ"
+
+msgid "tournament/completed"
+msgstr "ЗАВЕРШЁН"
+
+msgid "tournament/douyin"
+msgstr "Смотреть на Douyin"
+
+msgid "tournament/drops/huya"
+msgstr ""
+"Смотрите на Huya и получайте эксклюзивные\n"
+"Huya Drops!"
+
+msgid "tournament/drops/twitch"
+msgstr ""
+"Смотрите на Twitch и получайте эксклюзивные\n"
+"Twitch Drops!"
+
+msgid "tournament/dropsShort/huya"
+msgstr "И получайте эксклюзивные Huya Drops!"
+
+msgid "tournament/dropsShort/twitch"
+msgstr "И получайте эксклюзивные Twitch Drops!"
+
+msgid "tournament/error"
+msgstr "ОШИБКА ЗАГРУЗКИ ДАННЫХ"
+
+msgid "tournament/eur"
+msgstr "%(amount)s EUR"
+
+msgid "tournament/euroSign"
+msgstr "€%(amount)s"
+
+msgid "tournament/finalResult"
+msgstr "ПОБЕДИТЕЛЬ"
+
+msgid "tournament/fundDistribution"
+msgstr "РАСПРЕДЕЛЕНИЕ ПРИЗОВОГО ФОНДА"
+
+msgid "tournament/grandFinals"
+msgstr "ГРАНД-ФИНАЛ"
+
+msgid "tournament/huya"
+msgstr "Смотреть на Huya"
+
+msgid "tournament/noMatches"
+msgstr "НЕТ МАТЧЕЙ В РАСПИСАНИИ"
+
+msgid "tournament/ols/roundRobin"
+msgstr "ФАЗА %(phase)s РАУНД %(round)s"
+
+msgid "tournament/placement"
+msgstr "%(firstPlace)s – %(secondPlace)s"
+
+msgid "tournament/prize"
+msgstr "ПРИЗОВОЙ ФОНД %(addition)s"
+
+msgid "tournament/prizeAddition"
+msgstr "И ШАНС ЗАСЛУЖИТЬ ВЕЧНУЮ СЛАВУ"
+
+msgid "tournament/refresh"
+msgstr "Обновить"
+
+msgid "tournament/refreshing"
+msgstr "Обновляется..."
+
+msgid "tournament/roundOf"
+msgstr "РАУНД ИЗ %(number)s"
+
+msgid "tournament/separator"
+msgstr "ИЛИ"
+
+msgid "tournament/tab/overview"
+msgstr "ОБЩЕЕ"
+
+msgid "tournament/tab/schedule"
+msgstr "РАСПИСАНИЕ"
+
+msgid "tournament/teamPlaceholder"
+msgstr "TBD"
+
+msgid "tournament/toShop"
+msgstr "Магазин «Натиска»"
+
+msgid "tournament/tokenStore/button/ols"
+msgstr "Магазин жетонов"
+
+msgid "tournament/tokenStore/ols"
+msgstr "МАГАЗИН ЖЕТОНОВ"
+
+msgid "tournament/tooltip/infoPageButton/header"
+msgstr "О турнире"
+
+msgid "tournament/twitch"
+msgstr "Смотреть на Twitch"
+
+msgid "tournament/viewFull"
+msgstr "Полное расписание"
+
+msgid "tournament/visitShop/description/ols"
+msgstr ""
+"Если выбранная команда победит, вы получите особую нашивку зимней Лиги "
+"«Натиска» 2026. Болейте за своих фаворитов!"
+
+msgid "tournament/visitShop/description/wci"
+msgstr ""
+"Продемонстрируйте свой азарт с помощью тематических элементов внешнего вида "
+"и уникальных машин!"
+
+msgid "tournament/visitShop/heading/ols"
+msgstr "НАБОРЫ ОРАКУЛА"
+
+msgid "tournament/visitShop/heading/wci"
+msgstr "НАБОРЫ WCI"
+
+msgid "tournament/vsBestOf"
+msgstr ""
+"VS\n"
+"ЛУЧШИЙ ИЗ %(number)s"
+
+msgid "tournament/wci/roundRobin"
+msgstr "КРУГОВАЯ СИСТЕМА"
+
+msgid "tournament/winner"
+msgstr "Победитель"
+
+msgid "tournament/youtube"
+msgstr "Смотреть на YouTube"
+
+msgid "tournamentsEntryPointTooltip/description/ols"
+msgstr ""
+"Лучшие команды Европы сражаются за звание чемпиона в серии «Легенды "
+"Натиска»! Смотрите трансляции напряжённых матчей в формате 7 на 7, "
+"зарабатывайте награды Twitch Drops и покупайте особые тематические наборы, "
+"чтобы приумножить призовой фонд и поддержать любимые команды."
+
+msgid "tournamentsEntryPointTooltip/description/wci"
 msgstr ""
 "На Международном чемпионате по World of Tanks в китайском Сучжоу состоится "
 "эпичная битва: сильнейшие команды со всей планеты поборются за престижный "
 "титул чемпиона мира. Бои пройдут по правилам режима «Натиск». Наблюдайте за "
 "рождением новых легенд!"
 
-msgid "tournamentsEntryPointTooltip/heading"
+msgid "tournamentsEntryPointTooltip/heading/ols"
+msgstr "Пятый сезон «Легенд Натиска»"
+
+msgid "tournamentsEntryPointTooltip/heading/wci"
 msgstr "WCI 2025"
 
 msgid "tournamentsEntryPointTooltip/live"
@@ -1705,146 +2135,6 @@ msgstr "Войти в голосовой чат"
 
 msgid "waitingSpinner/message"
 msgstr "Загрузка содержимого..."
-
-msgid "wci/LBFinals"
-msgstr "ФИНАЛ НС"
-
-msgid "wci/LBRound1"
-msgstr "НС РАУНД 1"
-
-msgid "wci/LBRound2"
-msgstr "НС РАУНД 2"
-
-msgid "wci/LBSemifinals"
-msgstr "ПОЛУФИНАЛ НС"
-
-msgid "wci/UBFinals"
-msgstr "ФИНАЛ ВС"
-
-msgid "wci/UBSemifinals"
-msgstr "ПОЛУФИНАЛ ВС"
-
-msgid "wci/bestOf"
-msgstr "ЛУЧШИЙ ИЗ %(number)s"
-
-msgid "wci/cny"
-msgstr "%(amount)s CNY"
-
-msgid "wci/cnySign"
-msgstr "¥%(amount)s"
-
-msgid "wci/comeBack"
-msgstr "Повторите попытку позже"
-
-msgid "wci/comingSoon"
-msgstr "СКОРО %(addition)s"
-
-msgid "wci/comingSoonAddition"
-msgstr "ВРЕМЯ ЗАВИСИТ ОТ ПРОДОЛЖИТЕЛЬНОСТИ МАТЧЕЙ"
-
-msgid "wci/completed"
-msgstr "ЗАВЕРШЁН"
-
-msgid "wci/douyin"
-msgstr "Смотреть на Douyin"
-
-msgid "wci/drops/huya"
-msgstr ""
-"Смотрите на Huya и получайте эксклюзивные\n"
-"Huya Drops!"
-
-msgid "wci/drops/twitch"
-msgstr ""
-"Смотрите на Twitch и получайте эксклюзивные\n"
-"Twitch Drops!"
-
-msgid "wci/dropsShort/huya"
-msgstr "И получайте эксклюзивные Huya Drops!"
-
-msgid "wci/dropsShort/twitch"
-msgstr "И получайте эксклюзивные Twitch Drops!"
-
-msgid "wci/error"
-msgstr "ОШИБКА ЗАГРУЗКИ ДАННЫХ"
-
-msgid "wci/finalResult"
-msgstr "ПОБЕДИТЕЛЬ"
-
-msgid "wci/fundDistribution"
-msgstr "РАСПРЕДЕЛЕНИЕ ПРИЗОВОГО ФОНДА"
-
-msgid "wci/grandFinals"
-msgstr "ГРАНД-ФИНАЛ"
-
-msgid "wci/huya"
-msgstr "Смотреть на Huya"
-
-msgid "wci/noMatches"
-msgstr "НЕТ МАТЧЕЙ В РАСПИСАНИИ"
-
-msgid "wci/placement"
-msgstr "%(firstPlace)s – %(secondPlace)s"
-
-msgid "wci/prize"
-msgstr "ПРИЗОВОЙ ФОНД %(addition)s"
-
-msgid "wci/prizeAddition"
-msgstr "И ШАНС ЗАСЛУЖИТЬ ВЕЧНУЮ СЛАВУ"
-
-msgid "wci/refresh"
-msgstr "Обновить"
-
-msgid "wci/refreshing"
-msgstr "Обновляется..."
-
-msgid "wci/roundOf"
-msgstr "РАУНД ИЗ %(number)s"
-
-msgid "wci/roundRobin"
-msgstr "КРУГОВАЯ СИСТЕМА"
-
-msgid "wci/separator"
-msgstr "ИЛИ"
-
-msgid "wci/tab/overview"
-msgstr "ОБЩЕЕ"
-
-msgid "wci/tab/schedule"
-msgstr "РАСПИСАНИЕ"
-
-msgid "wci/teamPlaceholder"
-msgstr "TBD"
-
-msgid "wci/toShop"
-msgstr "В Магазин"
-
-msgid "wci/tooltip/infoPageButton/header"
-msgstr "О турнире"
-
-msgid "wci/twitch"
-msgstr "Смотреть на Twitch"
-
-msgid "wci/viewFull"
-msgstr "Просмотреть всё"
-
-msgid "wci/visitShop/description"
-msgstr ""
-"Продемонстрируйте свой азарт с помощью тематических элементов внешнего вида "
-"и уникальных машин!"
-
-msgid "wci/visitShop/heading"
-msgstr "НАБОРЫ WCI"
-
-msgid "wci/vsBestOf"
-msgstr ""
-"VS\n"
-"ЛУЧШИЙ ИЗ %(number)s"
-
-msgid "wci/winner"
-msgstr "Победитель"
-
-msgid "wci/youtube"
-msgstr "Смотреть на YouTube"
 
 msgid "weeklyQuestWidgetTooltip/completed"
 msgstr "Задачи «Натиска» выполнены"
@@ -1952,37 +2242,70 @@ msgid "whatsNewButtonLabel"
 msgstr "СЕЗОННЫЕ ОБНОВЛЕНИЯ"
 
 msgid "whatsNewView/banner/title/large"
-msgstr "СЕЗОН ЛАЗУРНОГО ДРАКОНА"
+msgstr "СЕЗОН АЛОГО ДРАКОНА"
 
 msgid "whatsNewView/banner/title/small"
 msgstr "НАТИСК. ЧТО НОВОГО?"
 
 msgid "whatsNewView/button/ok"
-msgstr "Зажжём!"
+msgstr "Время вершить историю!"
+
+msgid "whatsNewView/comms/description"
+msgstr ""
+"Повторный захват Узла связи теперь возможен через "
+"{eeede9e6_Open}75{eeede9e6_Close} секунд вместо "
+"{eeede9e6_Open}90{eeede9e6_Close}."
+
+msgid "whatsNewView/comms/heading"
+msgstr "Узел связи"
 
 msgid "whatsNewView/intro/description"
 msgstr ""
-"Участвуйте в каждом из трёх сезонов и получайте ценные годовые награды, "
-"включая эксклюзивный тяжёлый танк X уровня Ashbringer со всеми заработанными"
-" для него 3D-стилями, бесстрашным экипажем, усовершенствованным и "
-"экспериментальным оборудованием на выбор, особым 2D-стилем и многим другим. "
-"Чем лучше вы будете играть в течение года, тем более выдающийся 3D-стиль "
-"получите."
+"Следите за динамикой вашего рейтинга в сезоне, играйте в своём стиле на "
+"любимой технике и заходите на главную страницу, чтобы узнать, какой элемент "
+"внешнего вида вы сможете получить быстрее всего!"
 
 msgid "whatsNewView/intro/heading"
-msgstr "Добро пожаловать в год Дракона!"
+msgstr "Мы добавили подробную статистику! %(tag)s"
 
 msgid "whatsNewView/mapChanges/heading"
 msgstr "Карты"
 
 msgid "whatsNewView/newVehicles"
-msgstr "Новые машины, доступные в «Натиске»"
+msgid_plural "plural/whatsNewView/newVehicles"
+msgstr[0] ""
+"Новая машина доступна в режиме \n"
+"«Натиск»&nbsp;%(tag)s"
+msgstr[1] ""
+"Новая техника доступна в режиме \n"
+"«Натиск»&nbsp;%(tag)s"
+msgstr[2] ""
+"Новая техника доступна в режиме \n"
+"«Натиск»&nbsp;%(tag)s"
+
+msgid "whatsNewView/shopUpdates/description"
+msgstr ""
+"В магазине «Натиска» появился новый лёгкий танк IX уровня {eeede9e6_Open}LTC"
+" II{eeede9e6_Close}, а также две единицы усовершенствованного оборудования: "
+"{eeede9e6_Open}«Телескопическая{eeede9e6_Close} "
+"{eeede9e6_Open}система{eeede9e6_Close} "
+"{eeede9e6_Open}наблюдения»{eeede9e6_Close} и {eeede9e6_Open}«Маскировочная "
+"сеть{eeede9e6_Close} {eeede9e6_Open}{eeede9e6_Open}высокой{eeede9e6_Close} "
+"плотности»{eeede9e6_Close}. Оборудование «Усовершенствованная бортовая "
+"передача» удалено из магазина «Натиска» и будет доступно для покупки во "
+"внутриигровом Магазине после следующего обновления ассортимента."
+
+msgid "whatsNewView/shopUpdates/heading"
+msgstr "Обновление раздела «Товары за боны»"
 
 msgid "whatsNewView/stamp/removed"
 msgstr "УДАЛЕНО"
 
 msgid "whatsNewView/stamp/underDevelopment"
 msgstr "++В ПЕРЕРАБОТКЕ++"
+
+msgid "whatsNewView/tag/attention"
+msgstr "Внимание"
 
 msgid "whatsNewView/tag/changed"
 msgstr "Изменено"
@@ -1999,11 +2322,39 @@ msgstr "Переработано"
 msgid "whatsNewView/tag/seasonUpdate"
 msgstr "Сезонное обновление"
 
+msgid "whatsNewView/unavailable/description"
+msgstr ""
+"Американский средний танк X уровня {eeede9e6_Open}Ares 90{eeede9e6_Close} "
+"временно недоступен для сражений в режиме."
+
+msgid "whatsNewView/unavailable/heading"
+msgstr "Временно недоступен"
+
 msgid "whatsNewView/vehiclesForRent/heading"
 msgstr "Арендная техника"
 
 msgid "whatsNewView/watchVideo"
 msgstr "Смотреть видео"
+
+msgid "winsIndicatorTooltip/day/heading"
+msgstr "Процент побед за день: %(winRate)s"
+
+msgid "winsIndicatorTooltip/defeats"
+msgstr "Поражения: %(count)s"
+
+msgid "winsIndicatorTooltip/draws"
+msgstr "Ничьи: %(count)s"
+
+msgid "winsIndicatorTooltip/season/heading"
+msgstr "Процент побед за сезон: %(winRate)s"
+
+msgid "winsIndicatorTooltip/winRate/description"
+msgstr ""
+"Отношение количества побед к количеству проведённых боёв.\n"
+"Результаты боёв:"
+
+msgid "winsIndicatorTooltip/wins"
+msgstr "Победы: %(count)s"
 
 msgid "yearlyRewards/banner/default"
 msgstr "Награды начисляются в конце третьего сезона."

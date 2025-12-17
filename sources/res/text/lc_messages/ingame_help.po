@@ -318,6 +318,15 @@ msgstr ""
 msgid "detailsHelp/mechanics/autoShootGun/page1/title"
 msgstr "Автоматическое орудие"
 
+msgid "detailsHelp/mechanics/autoShootGun_overheatGun/page1/description"
+msgstr ""
+"Это орудие не требует перезарядки. Каждый выстрел нагревает его, непрерывная"
+" стрельба приводит к перегреву, после чего вести огонь становится невозможно"
+" до остывания."
+
+msgid "detailsHelp/mechanics/autoShootGun_overheatGun/page1/title"
+msgstr "Автоматическая пушка с системой контроля температуры"
+
 msgid "detailsHelp/mechanics/battleFury/page1/description"
 msgstr ""
 "При каждом попадании по противнику вы получаете уровень эффективности перезарядки, временно ускоряющий перезарядку вашего орудия.\n"
@@ -377,6 +386,16 @@ msgstr ""
 
 msgid "detailsHelp/mechanics/extraShotClip/page1/title"
 msgstr "Кассетная система заряжания"
+
+msgid "detailsHelp/mechanics/heatingZonesGun/page1/description"
+msgstr ""
+"Система поддерживает орудие в охлаждённом состоянии, чтобы обеспечить точную"
+" стрельбу. После выстрела орудие нагревается, а уже во время перезарядки "
+"охлаждается, становясь эффективнее. Чем выше температура, тем сильнее "
+"меняются некоторые параметры орудия."
+
+msgid "detailsHelp/mechanics/heatingZonesGun/page1/title"
+msgstr "Система активного охлаждения орудия"
 
 msgid "detailsHelp/mechanics/improvedRamming/page1/description"
 msgstr ""
@@ -448,6 +467,16 @@ msgstr ""
 
 msgid "detailsHelp/mechanics/rocketAcceleration/page2/title"
 msgstr "Преимущества и недостатки"
+
+msgid "detailsHelp/mechanics/stagedJetBoosters/page1/description"
+msgstr ""
+"Твердотопливные ускорители улучшают разгон, мобильность и манёвренность на "
+"несколько секунд. Левый и правый ускорители могут работать независимо друг "
+"от друга, чтобы обеспечить более быстрый поворот корпуса. Их использование "
+"не влияет на скорость заднего хода."
+
+msgid "detailsHelp/mechanics/stagedJetBoosters/page1/title"
+msgstr "Последовательные ракетные ускорители"
 
 msgid "detailsHelp/mechanics/stanceDance/page1/description"
 msgstr ""
@@ -689,6 +718,9 @@ msgstr "Помогите!"
 
 msgid "radialMenu/helpMeEx"
 msgstr "Нужна поддержка!"
+
+msgid "radialMenu/overheated_gun"
+msgstr "Перегрев!"
 
 msgid "radialMenu/positive"
 msgstr "Так точно!"

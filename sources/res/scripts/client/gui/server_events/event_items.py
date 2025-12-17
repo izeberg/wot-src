@@ -611,6 +611,9 @@ class DailyEpicTokenQuest(TokenQuest):
     def getUserName(self):
         return backport.text(R.strings.quests.dailyQuests.postBattle.genericTitle_epic())
 
+    def getDescription(self):
+        return backport.text(R.strings.quests.dailyQuests.postBattle.epic.description())
+
 
 class WeeklyQuest(Quest):
 
@@ -895,8 +898,8 @@ class PMOperation(object):
             return
 
     def getChainByClassifierAttr(self, classifier):
-        return findFirst(lambda (chainID, chain): self.getChainClassifier(chainID).classificationAttr == classifier, self.getQuests().iteritems(), (None,
-                                                                                                                                                    None))
+        return findFirst(lambda it: self.getChainClassifier(it[0]).classificationAttr == classifier, self.getQuests().iteritems(), (None,
+                                                                                                                                    None))
 
     def getIterationChain(self):
         if self.__branch == PM_BRANCH.REGULAR:
@@ -1033,10 +1036,10 @@ class PMOperation(object):
             return self.isActive() or not self.isCompleted() and (bool(self.getCompletedQuests()) or bool(self.getTotalPmPointsCount()))
         return self.isActive()
 
-    def isFullCompleted(self, isRewardReceived=None):
+    def isFullCompleted(self, isQuestRewardReceived=None, isFinalRewardReceived=True):
         if self.__branch == PM_BRANCH.PERSONAL_MISSION_3:
-            return self.__isAwardAchieved and len(self.getCompletedQuests(isRewardReceived)) == self.getQuestsCount()
-        return len(self.getFullCompletedQuests(isRewardReceived)) == self.getQuestsCount()
+            return (self.__isAwardAchieved or not isFinalRewardReceived) and len(self.getCompletedQuests(isQuestRewardReceived)) == self.getQuestsCount()
+        return len(self.getFullCompletedQuests(isQuestRewardReceived)) == self.getQuestsCount()
 
     def isAwardAchieved(self):
         return self.__isAwardAchieved
@@ -1404,7 +1407,7 @@ class PersonalMission(ServerEventAbstract):
 
     def hasAdditionalConditions(self):
         for _, configData in self.__conditionsConfig.iteritems():
-            if not configData['config']['isMain']:
+            if not configData['config'].get('isMain', False):
                 return True
 
         return False
@@ -1488,10 +1491,8 @@ class PersonalMission(ServerEventAbstract):
 
     def updateProgress(self, questsProgress):
         self.__pqProgress = questsProgress.getPersonalMissionProgress(self.__pmType, self._id)
-        if self.getQuestBranch() == PM_BRANCH.PERSONAL_MISSION_3:
-            self.__conditionsProgress = questsProgress.getConditionsProgress(self.__pmType.id, 'pm3_progress')
-        else:
-            self.__conditionsProgress = questsProgress.getConditionsProgress(self.__pmType.generalQuestID)
+        progressName = 'pm3_progress' if self.getQuestBranch() == PM_BRANCH.PERSONAL_MISSION_3 else 'pm2_progress'
+        self.__conditionsProgress = questsProgress.getConditionsProgress(self.__pmType.generalQuestID, progressName)
 
     def updatePqStateInBattle(self, pqState):
         if self.__pqProgress:

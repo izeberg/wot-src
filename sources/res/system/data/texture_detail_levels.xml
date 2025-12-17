@@ -179,6 +179,26 @@
 	<directory>
 		<path>example_ext</path>
 		<directory>
+			<path>gui</path>
+			<directory>
+				<path>flash</path>
+				<directory>
+					<path>atlases</path>
+					<rule>
+						<format>DXT5</format>
+						<lodMode>0</lodMode>
+						<noResize>true</noResize>
+						<mipCount>1</mipCount>
+						<pattern>.*\.png$</pattern>
+					</rule>
+					<rule>
+						<allowSplit>false</allowSplit>
+						<pattern>.*</pattern>
+					</rule>
+				</directory>
+			</directory>
+		</directory>
+		<directory>
 			<path>vehicles</path>
 			<rule>
 				<format>A8R8G8B8</format>
@@ -237,6 +257,26 @@
 	<directory>
 		<path>halloween</path>
 		<directory>
+			<path>gui</path>
+			<directory>
+				<path>flash</path>
+				<directory>
+					<path>atlases</path>
+					<rule>
+						<format>DXT5</format>
+						<lodMode>0</lodMode>
+						<noResize>true</noResize>
+						<mipCount>1</mipCount>
+						<pattern>.*\.png$</pattern>
+					</rule>
+					<rule>
+						<allowSplit>false</allowSplit>
+						<pattern>.*</pattern>
+					</rule>
+				</directory>
+			</directory>
+		</directory>
+		<directory>
 			<path>vehicles</path>
 			<rule>
 				<format>A8R8G8B8</format>
@@ -270,6 +310,26 @@
 	</directory>
 	<directory>
 		<path>last_stand</path>
+		<directory>
+			<path>gui</path>
+			<directory>
+				<path>flash</path>
+				<directory>
+					<path>atlases</path>
+					<rule>
+						<format>DXT5</format>
+						<lodMode>0</lodMode>
+						<noResize>true</noResize>
+						<mipCount>1</mipCount>
+						<pattern>.*\.png$</pattern>
+					</rule>
+					<rule>
+						<allowSplit>false</allowSplit>
+						<pattern>.*</pattern>
+					</rule>
+				</directory>
+			</directory>
+		</directory>
 		<directory>
 			<path>vehicles</path>
 			<rule>

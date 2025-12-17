@@ -77,6 +77,11 @@ package net.wg.gui.battle.views.decorativeCrosshair
                _loc3_ = FuryDecorativeCrosshair;
                _loc4_ = BATTLE_VIEW_ALIASES.FURY_DECORATIVE_CROSSHAIR;
                break;
+            case DECORATIVE_CROSSHAIR_CONSTS.TEMPERATURE_GUN_OVERHEAT:
+               _loc2_ = Linkages.TEMPERATURE_GUN_OVERHEAT_DECOR_CROSSHAIR;
+               _loc3_ = TemperatureGunOverheatDecorativeCrosshair;
+               _loc4_ = BATTLE_VIEW_ALIASES.TEMPERATURE_GUN_OVERHEAT_DECORATIVE_CROSSHAIR;
+               break;
             default:
                return;
          }

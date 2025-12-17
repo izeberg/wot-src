@@ -14,7 +14,7 @@ package net.wg.gui.components.containers
          _manageFocus = false;
       }
       
-      public function allowFocusNextLayer(param1:String) : Boolean
+      public function canFocusNextLayer(param1:String) : Boolean
       {
          return false;
       }

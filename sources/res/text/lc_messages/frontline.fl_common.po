@@ -16,6 +16,14 @@ msgstr ""
 "nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && "
 "(n%100<10 || n%100>=20) ? 1 : 2);"
 
+msgid "battleCarousel/resetFilters/button"
+msgstr "Сбросить фильтры"
+
+msgid "battleCarousel/resetFilters/title"
+msgstr ""
+"Нет машин, подходящих по выбранным параметрам.\n"
+"Сбросьте настройки фильтра, чтобы увидеть подходящую технику."
+
 msgid "battleType/description/fast"
 msgstr ""
 "Сценарий, в котором боевые резервы имеют уменьшенное время подготовки."
@@ -63,6 +71,9 @@ msgid_plural "plural/day"
 msgstr[0] "{duration} день"
 msgstr[1] "{duration} дня"
 msgstr[2] "{duration} дней"
+
+msgid "filterPopover/note"
+msgstr "Здесь отображаются только подходящие для режима машины."
 
 msgid "levelReservesTooltip/desc"
 msgstr ""

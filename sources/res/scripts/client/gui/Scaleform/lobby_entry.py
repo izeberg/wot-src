@@ -46,7 +46,7 @@ _logger = getLogger(__name__)
 def getLobbyStateMachine():
     from skeletons.gui.app_loader import IAppLoader
     appLoader = dependency.instance(IAppLoader)
-    app = appLoader.getApp()
+    app = appLoader.getDefLobbyApp()
     if app:
         return getattr(app, 'stateMachine', None)
     else:
@@ -83,7 +83,7 @@ class _UntrackedStateObserver(BaseStateObserver):
 class LobbyEntry(AppEntry):
 
     def __init__(self, appNS, ctrlModeFlags):
-        super(LobbyEntry, self).__init__(R.entries.lobby(), appNS, ctrlModeFlags)
+        super(LobbyEntry, self).__init__(R.entries.default.lobby(), appNS, ctrlModeFlags)
         self.__stateMachine = LobbyStateMachine()
         self.__untrackedStateObserver = _UntrackedStateObserver()
         self.__subhangarObserver = None

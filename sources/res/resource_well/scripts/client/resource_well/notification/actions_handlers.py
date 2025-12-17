@@ -1,6 +1,7 @@
+from __future__ import absolute_import
 from notification.actions_handlers import NavigationDisabledActionHandler
 from notification.settings import NOTIFICATION_TYPE
-from resource_well.gui.shared.event_dispatcher import showResourceWellProgressionWindow
+from resource_well.gui.shared.event_dispatcher import showMainWindow
 
 class OpenResourceWellProgressionStartWindow(NavigationDisabledActionHandler):
 
@@ -13,7 +14,7 @@ class OpenResourceWellProgressionStartWindow(NavigationDisabledActionHandler):
         return ('openResourceWellProgressionStartWindow', )
 
     def doAction(self, model, entityID, action):
-        showResourceWellProgressionWindow()
+        showMainWindow()
 
 
 class OpenResourceWellProgressionWindow(NavigationDisabledActionHandler):
@@ -27,4 +28,4 @@ class OpenResourceWellProgressionWindow(NavigationDisabledActionHandler):
         return ('OpenResourceWellProgressionWindow', )
 
     def doAction(self, model, entityID, action):
-        showResourceWellProgressionWindow()
+        showMainWindow()

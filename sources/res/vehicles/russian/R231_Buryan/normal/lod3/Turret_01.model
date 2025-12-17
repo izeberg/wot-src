@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>
+			-1.569028 -0.05039 -2.97397
+			<!--BW_String-->
+		</min>
+		<max>
+			1.65343 5.061427 1.421995
+			<!--BW_String-->
+		</max>
+	</visibilityBox>
+	<parent>vehicles/russian/R231_Buryan/normal/lod4/Turret_01</parent>
+	<extent>192</extent>
+	<nodefullVisual>vehicles/russian/R231_Buryan/normal/lod3/Turret_01</nodefullVisual>
+</root>

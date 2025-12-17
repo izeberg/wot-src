@@ -2201,6 +2201,9 @@ msgstr "Лёгкий танк"
 msgid "botVehicleType/mediumTank"
 msgstr "Средний танк"
 
+msgid "countTitle"
+msgstr "({count})"
+
 msgid "descriptionInfo"
 msgstr "Описание карты"
 
@@ -2345,6 +2348,9 @@ msgstr "%(map)s, %(scenario)s: %(vehicleType)s"
 
 msgid "prebattle/targets"
 msgstr "Уничтожьте %(count)s мишеней"
+
+msgid "progress"
+msgstr "{currentProgress} / {maxProgress}"
 
 msgid "queue/delayTime"
 msgstr "*Режим пользуется популярностью, ожидайте"

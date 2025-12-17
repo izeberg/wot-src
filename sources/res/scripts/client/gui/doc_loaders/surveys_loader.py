@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from collections import namedtuple, defaultdict
 import logging
 from gui.mapbox.mapbox_survey_helper import Condition, QuantifierTypes, AlternativeOneManyQuestion, AlternativeQuestion, getQuestionClass, findQuestionById
@@ -32,7 +33,7 @@ def _readConditions(section, isRequired):
 def _readCondition(section, isRequired):
     requiredQuestionId = section['requiredQuestionId'].asString
     requiredOptionId = section.readString('requiredOptionId')
-    requiredAnswers = [ answerId for answerId in section['requiredAnswers'].asString.split(' ') ]
+    requiredAnswers = list(section['requiredAnswers'].asString.split(' '))
     if not requiredAnswers:
         raise SoftException('Unfilled required answers for the condition')
     innerSubsection = section['requiredAnswers']

@@ -20,6 +20,7 @@ from debug_utils import LOG_DEBUG_DEV, LOG_ERROR
 from dog_tags_common.components_config import componentConfigAdapter
 from dog_tags_common.config.common import ComponentPurpose, ComponentViewType
 from dossiers2.custom.records import DB_ID_TO_RECORD
+from dossiers2.custom.collector20 import COLLECTOR20_MEDAL_ID, COLLECTOR20_BADGE_IDS
 from dossiers2.ui.achievements import ACHIEVEMENT_BLOCK, BADGES_BLOCK
 from dossiers2.ui.layouts import IGNORED_BY_BATTLE_RESULTS
 from epic_constants import EPIC_BATTLE_LEVEL_IMAGE_INDEX
@@ -1146,7 +1147,9 @@ class AutoMaintenanceFormatter(WaitItemsSyncFormatter):
 
 
 class AchievementFormatter(ServiceChannelFormatter):
-    _HIDDEN_ACHIEVES = set()
+    _HIDDEN_ACHIEVES = {
+     COLLECTOR20_MEDAL_ID}
+    _HIDDEN_BADGE_IDS = set(COLLECTOR20_BADGE_IDS)
 
     def isNotify(self):
         return True
@@ -1168,6 +1171,8 @@ class AchievementFormatter(ServiceChannelFormatter):
                 if block in ALLOWED_ACHIEVEMENT_TYPES:
                     continue
                 if block == BADGES_BLOCK:
+                    if name in self._HIDDEN_BADGE_IDS:
+                        continue
                     badgesList.append(backport.text(R.strings.badge.dyn((b'badge_{}').format(name))()))
                 elif name not in self._HIDDEN_ACHIEVES:
                     achieve = getAchievementFactory((block, name)).create(value)
@@ -6064,3 +6069,42 @@ class PetSystemPetPurchaseFormatter(ServiceChannelFormatter):
         settings = self._getGuiSettings(message, template)
         return [
          MessageData(formatted, settings)]
+
+
+class Collector20RewardReceivedFormatter(ServiceChannelFormatter):
+    __itemsCache = dependency.descriptor(IItemsCache)
+    __TEMPLATE = b'Collector20RewardReceivedMessage'
+    __LINE_SPACER = b'<br/><font size="6"> </font></br>'
+    __locale = R.strings.messenger.serviceChannelMessages.collector20
+
+    def format(self, message, *args):
+        if not args:
+            return [MessageData(None, None)]
+        else:
+            data = args[0]
+            res = self.__formatAchievements(data)
+            if not res:
+                return [MessageData(None, None)]
+            message = [res]
+            formatted = g_settings.msgTemplates.format(self.__TEMPLATE, ctx={b'message': self.__formatLines(message)})
+            return [MessageData(formatted, self._getGuiSettings(message, self.__TEMPLATE))]
+
+    def __formatAchievements(self, data):
+        achievements = []
+        badges = []
+        badgesCache = self.__itemsCache.items.getBadges()
+        for block, name in data:
+            if block == BADGES_BLOCK:
+                badge = badgesCache[name]
+                badgeName = badge.getUserName()
+                badgeType = self.__locale.stripe() if badge.isSuffixLayout() else self.__locale.badge()
+                badges.append(backport.text(badgeType, element_name=badgeName))
+            else:
+                achieve = getAchievementFactory((block, name)).create()
+                if achieve is not None:
+                    achievements.append(backport.text(self.__locale.medal(), element_name=achieve.getUserName()))
+
+        return self.__formatLines(badges + achievements)
+
+    def __formatLines(self, lines):
+        return self.__LINE_SPACER.join(lines)

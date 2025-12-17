@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/japan/J49_Kame/normal/lod4/Turret_01</parent>
+	<extent>192.000000</extent>
+	<nodefullVisual>vehicles/japan/J49_Kame/normal/lod3/Turret_01</nodefullVisual>
+	<visibilityBox>
+		<min>-1.234188 -0.000001 -2.259999</min>
+		<max>1.234188 3.050725 1.359214</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

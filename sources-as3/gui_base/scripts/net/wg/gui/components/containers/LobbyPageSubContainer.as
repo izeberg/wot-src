@@ -48,13 +48,13 @@ package net.wg.gui.components.containers
          this._framedViews = new Vector.<IManagedContent>();
       }
       
-      override public function allowFocusNextLayer(param1:String) : Boolean
+      override public function canFocusNextLayer(param1:String) : Boolean
       {
          if(param1 == LAYER_NAMES.VIEWS)
          {
             return true;
          }
-         return super.allowFocusNextLayer(param1);
+         return super.canFocusNextLayer(param1);
       }
       
       override public function updateStage(param1:Number, param2:Number, param3:Rectangle = null) : void

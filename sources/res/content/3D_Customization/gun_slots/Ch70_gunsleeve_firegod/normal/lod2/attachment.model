@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/3D_Customization/gun_slots/Ch70_gunsleeve_firegod/normal/lod3/attachment</parent>
+	<extent>96.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.300893 -0.276172 -2.473002</min>
+		<max>0.304757 0.268456 2.161868</max>
+	</visibilityBox>
+	<nodefullVisual>content/3D_Customization/gun_slots/Ch70_gunsleeve_firegod/normal/lod2/attachment</nodefullVisual>
+</root>

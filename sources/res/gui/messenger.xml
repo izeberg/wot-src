@@ -1514,51 +1514,24 @@ _(#messenger:serviceChannelMessages/battleResults/tanks): %(vehicleNames)s%(xp)s
 &lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/battleResults/seniorityRewardBody).&lt;/font&gt;&lt;br/&gt;%(achieves)s
 &lt;font color=&apos;#8C8C7E&apos;&gt;_(#seniority_awards:notifications/vehicleSelectionAvailable/title)&lt;/font&gt;</message>
 		</SeniorityAwardsQuestWithSelection>
-		<seniorityAwardsTokens>
+		<SeniorityAwardsTokens>
+			<groupID>offer</groupID>
 			<priority>medium</priority>
+			<gfViewName>SeniorityAwardsTokens</gfViewName>
+			<linkage>GamefaceNotification</linkage>
+		</SeniorityAwardsTokens>
+		<SeniorityAwardsVehicleSelection>
 			<groupID>offer</groupID>
-			<bgIconSizeAuto>true</bgIconSizeAuto>
-			<linkage>SeniorityAwardsTokens</linkage>
-			<message>&lt;textformat leading=&quot;-1&quot;&gt;&lt;p align=&quot;center&quot;&gt;&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#seniority_awards:notifications/tokens/title)&lt;/font&gt;&lt;/p&gt;&lt;/textformat&gt;</message>
-			<buttonsLayout>
-				<button>
-					<type>submit</type>
-					<label>_(#seniority_awards:notifications/tokens/button)</label>
-					<action>seniorityAwardsTokens</action>
-				</button>
-			</buttonsLayout>
-			<buttonsAlign>center</buttonsAlign>
-		</seniorityAwardsTokens>
-		<seniorityAwardsVehicleSelection>
-			<priority>low</priority>
-			<groupID>offer</groupID>
-			<bgIconSizeAuto>true</bgIconSizeAuto>
-			<linkage>SeniorityAwardsVehicleSelection</linkage>
-			<message>&lt;textformat leading=&quot;-1&quot;&gt;&lt;p align=&quot;center&quot;&gt;&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#seniority_awards:notifications/selectVehicles/title)&lt;/font&gt;&lt;/p&gt;&lt;/textformat&gt;</message>
-			<buttonsLayout>
-				<button>
-					<type>submit</type>
-					<label>_(#seniority_awards:notifications/selectVehicles/button)</label>
-					<action>seniorityAwardsVehicleSelection</action>
-				</button>
-			</buttonsLayout>
-			<buttonsAlign>center</buttonsAlign>
-		</seniorityAwardsVehicleSelection>
-		<seniorityAwardsQuest22>
 			<priority>medium</priority>
+			<gfViewName>SeniorityAwardsVehicleSelection</gfViewName>
+			<linkage>GamefaceNotification</linkage>
+		</SeniorityAwardsVehicleSelection>
+		<SeniorityAwardsManualClaim>
 			<groupID>offer</groupID>
-			<bgIconSizeAuto>true</bgIconSizeAuto>
-			<linkage>SeniorityAwardsQuest</linkage>
-			<message>&lt;textformat leading=&quot;-1&quot;&gt;&lt;p align=&quot;center&quot;&gt;&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#seniority_awards:notifications/quest/title)&lt;/font&gt;&lt;/p&gt;&lt;/textformat&gt;</message>
-			<buttonsLayout>
-				<button>
-					<type>submit</type>
-					<label>_(#seniority_awards:notifications/quest/button)</label>
-					<action>seniorityAwardsQuest</action>
-				</button>
-			</buttonsLayout>
-			<buttonsAlign>center</buttonsAlign>
-		</seniorityAwardsQuest22>
+			<priority>medium</priority>
+			<gfViewName>SeniorityAwardsManualClaim</gfViewName>
+			<linkage>GamefaceNotification</linkage>
+		</SeniorityAwardsManualClaim>
 		<achievementRating>
 			<priority>high</priority>
 			<groupID>offer</groupID>
@@ -3574,5 +3547,11 @@ _(#messenger:serviceChannelMessages/piggyBank/continueAfterSmashed)</message>
 			<icon>petSystem</icon>
 			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;%(header)s&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#8C8C7E&quot;&gt;%(text)s&lt;/font&gt;</message>
 		</PetSystemSynergyMaxLevelMessage>
+		<Collector20RewardReceivedMessage>
+			<priority>low</priority>
+			<type>grey</type>
+			<icon>InformationIcon</icon>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#messenger:serviceChannelMessages/collector20/title)&lt;/font&gt;&lt;br/&gt;&lt;font size=&apos;9&apos;&gt;&lt;/font&gt;&lt;br/&gt;%(message)s</message>
+		</Collector20RewardReceivedMessage>
 	</htmlTemplates>
 </root>

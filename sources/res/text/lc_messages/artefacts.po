@@ -795,6 +795,26 @@ msgstr ""
 "Снижает заметность подвижной и неподвижной машины на "
 "{colorTagOpen}6{colorTagClose}/{colorTagOpen}8{colorTagClose}/{colorTagOpen}10%{colorTagClose}"
 
+msgid "deluxeCamouflageNet/battleDescr"
+msgstr ""
+"Увеличивает незаметность неподвижной машины через 1,5 с после остановки"
+
+msgid "deluxeCamouflageNet/long_special"
+msgstr ""
+"Усовершенствованная версия оборудования «Маскировочная сеть». Эффективность "
+"зависит от типа техники. «Маскировочная сеть высокой плотности» полезна для "
+"малозаметных машин: САУ и засадных ПТ-САУ с низким силуэтом. Она повышает "
+"эффективность навыка «Маскировка», поэтому лучше применять их в связке. "
+"Активируется на неподвижной машине через 1,5 секунды после остановки."
+
+msgid "deluxeCamouflageNet/name"
+msgstr "Маскировочная сеть высокой плотности"
+
+msgid "deluxeCamouflageNet/short_special"
+msgstr ""
+"{colorTagOpen}+17,5{colorTagClose}/{colorTagOpen}12,5{colorTagClose}/{colorTagOpen}7,5%{colorTagClose}"
+" к незаметности неподвижной машины"
+
 msgid "deluxeExtraHealthReserve/additional_descr"
 msgstr "Полностью восстанавливает прочность ходовой после ремонта."
 
@@ -849,6 +869,26 @@ msgstr "Экспериментальный прицел"
 
 msgid "deluxeImprovedSights/short_special"
 msgstr "Уменьшает разброс орудия"
+
+msgid "deluxeStereoscope/battleDescr"
+msgstr ""
+"Увеличивает обзор неподвижной машины через 1,5 с после остановки, но не "
+"более 445 метров"
+
+msgid "deluxeStereoscope/long_special"
+msgstr ""
+"Усовершенствованная версия оборудования «Стереотруба». Хороший обзор — "
+"важное преимущество в игре. Этот вид оборудования полезен для засадных ПТ-"
+"САУ с низкими силуэтами и точными орудиями. Активируется на неподвижной "
+"машине через 1,5 секунды после остановки."
+
+msgid "deluxeStereoscope/name"
+msgstr "Телескопическая система наблюдения"
+
+msgid "deluxeStereoscope/short_special"
+msgstr ""
+"{colorTagOpen}+27,5%{colorTagClose} к обзору из неподвижной машины (не более"
+" 445 метров)"
 
 msgid "deluxeTurbocharger/long_special"
 msgstr ""
@@ -2594,6 +2634,38 @@ msgid "role_MT_support_pair_5_2/splitName"
 msgstr ""
 "Настройка секторов\n"
 "обзора"
+
+msgid "role_MT_support_temperatureGun_pair_1_1/name"
+msgstr "Повышение жизнеспособности модулей"
+
+msgid "role_MT_support_temperatureGun_pair_1_1/splitName"
+msgstr ""
+"Повышение жизнеспособности\n"
+"модулей"
+
+msgid "role_MT_support_temperatureGun_pair_1_2/name"
+msgstr "Легкосплавные узлы крепления"
+
+msgid "role_MT_support_temperatureGun_pair_1_2/splitName"
+msgstr ""
+"Легкосплавные узлы\n"
+"крепления"
+
+msgid "role_MT_support_temperatureGun_pair_4_1/name"
+msgstr "Доработка казённика"
+
+msgid "role_MT_support_temperatureGun_pair_4_1/splitName"
+msgstr ""
+"Доработка\n"
+"казённика"
+
+msgid "role_MT_support_temperatureGun_pair_4_2/name"
+msgstr "Новые шестерни наведения"
+
+msgid "role_MT_support_temperatureGun_pair_4_2/splitName"
+msgstr ""
+"Новые шестерни\n"
+"наведения"
 
 msgid "role_MT_universal_pair_4_1/name"
 msgstr "Жиклёры крупного сечения"

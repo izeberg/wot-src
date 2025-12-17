@@ -1,4 +1,4 @@
-import WWISE
+import typing, WWISE
 from gui.Scaleform.daapi.view.AchievementsUtils import AchievementsUtils
 from gui.Scaleform.daapi.view.lobby.profile.ProfileUtils import ProfileUtils, getProfileCommonInfo
 from gui.Scaleform.daapi.view.meta.ProfileSummaryMeta import ProfileSummaryMeta

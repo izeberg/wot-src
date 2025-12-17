@@ -172,6 +172,8 @@ class Money(object):
         return True
 
     def __eq__(self, other):
+        if not isinstance(other, Money):
+            return False
         for c in self.ALL:
             if self.get(c) != other.get(c):
                 return False

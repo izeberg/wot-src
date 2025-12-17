@@ -127,6 +127,9 @@ msgstr "Не куплен"
 msgid "commonTooltip/descriptionEnded"
 msgstr "Событие завершено."
 
+msgid "commonTooltip/eventStartSoon"
+msgstr "Событие скоро начнётся!"
+
 msgid "infoButton/body"
 msgstr "Нажмите, чтобы узнать подробности."
 
@@ -159,6 +162,14 @@ msgstr ""
 
 msgid "levelReserves/title"
 msgstr "Уровни резервов"
+
+msgid "playlist/warning/body"
+msgstr ""
+"Этот плейлист включает технику, которая не подходит для игры в режиме или "
+"которой нет в вашем Ангаре."
+
+msgid "playlist/warning/header"
+msgstr "Техника недоступна (%(display)s/%(total)s)"
 
 msgid "randomReserve/characteristic/improved"
 msgstr "Характеристики резерва усилены"

@@ -10,6 +10,7 @@ class ResearchAvailability(Enum):
     IN_FORMATION = 'inFormation'
     NEEDS_REPAIR = 'needsRepair'
     AVAILABLE = 'researchAvailable'
+    EMERGENCY_MODE_ENABLED = 'emergencyModeEnabled'
 
 
 class TreeViewModel(ViewModel):

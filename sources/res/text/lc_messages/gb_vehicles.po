@@ -13,6 +13,9 @@ msgstr ""
 msgid "A41"
 msgstr "WS No. A41"
 
+msgid "A41_CFE_J"
+msgstr "WS No. A41"
+
 msgid "AEC"
 msgstr "2x AEC"
 
@@ -119,6 +122,12 @@ msgid "C45A_Gonsalo"
 msgstr "C45AG"
 
 msgid "C45A_SH"
+msgstr "SR C45"
+
+msgid "C45_CFE_A"
+msgstr "SR C45"
+
+msgid "C45_c_7x7"
 msgstr "SR C45"
 
 msgid "Cadillac_75_x_3"
@@ -229,6 +238,9 @@ msgstr "A46"
 
 msgid "Chassis_GB109_GSOR_1008"
 msgstr "GSOR1008 Mk.1"
+
+msgid "Chassis_GB109_GSOR_1008_CFE_J"
+msgstr "Нефритовая спираль"
 
 msgid "Chassis_GB10_Black_Prince"
 msgstr "Black Prince"
@@ -669,6 +681,9 @@ msgstr "Cromwell"
 msgid "Chassis_GB86_Centurion_Action_X"
 msgstr "Centurion Action X"
 
+msgid "Chassis_GB86_Centurion_Action_X_CFE_A"
+msgstr "Triumphant"
+
 msgid "Chassis_GB87_Chieftain_T95_turret"
 msgstr "Chieftain/T95"
 
@@ -676,6 +691,9 @@ msgid "Chassis_GB88_T95_Chieftain_turret"
 msgstr "T95/Chieftain"
 
 msgid "Chassis_GB91_Super_Conqueror"
+msgstr "Super Conqueror"
+
+msgid "Chassis_GB91_Super_Conqueror_7x7"
 msgstr "Super Conqueror"
 
 msgid "Chassis_GB92_FV217"
@@ -1029,6 +1047,32 @@ msgstr "Эффективный разведчик с хорошей подвиж
 
 msgid "GB109_GSOR_1008"
 msgstr "GSOR 1008"
+
+msgid "GB109_GSOR_1008_CFE_J"
+msgstr "Нефритовая спираль"
+
+msgid "GB109_GSOR_1008_CFE_J_descr"
+msgstr ""
+"В зодиаке Деревянная змея известна своей мудростью, гибкостью и стремлением "
+"к знаниям. Её сила — в умении вовремя меняться. Как корни, спрятанные под "
+"землёй, она действует скрытно, незаметно влияя на всё вокруг. Говорят, что "
+"она потомок Питона-Поглотителя-Небес — божественного змея из древних легенд."
+" Но Деревянная змея не реагирует на домыслы: тайна лишь помогает ей. Скользя"
+" между строк, она всегда оказывается там, где ей нужно, в то время как "
+"другие торопятся вперёд, расчищая ей путь."
+
+msgid "GB109_GSOR_1008_CFE_J_long_special"
+msgstr ""
+"В своём классе машину выделяет не только наличие башни полного вращения, но "
+"и магазинная система заряжания. Углы склонения орудия и небольшое время "
+"перезарядки между выстрелами позволяют занимать относительно защищённую "
+"позицию и приступать к реализации огневого потенциала."
+
+msgid "GB109_GSOR_1008_CFE_J_short"
+msgstr "Нефритовая спираль"
+
+msgid "GB109_GSOR_1008_CFE_J_short_special"
+msgstr "Деревянная змея скользит незаметно с терпеливой грацией"
 
 msgid "GB109_GSOR_1008_descr"
 msgstr ""
@@ -2822,6 +2866,37 @@ msgstr "Centurion Action X 7x7"
 msgid "GB86_Centurion_Action_X_7x7_short"
 msgstr "Cent. AX 7x7"
 
+msgid "GB86_Centurion_Action_X_CFE_A"
+msgstr "Triumphant"
+
+msgid "GB86_Centurion_Action_X_CFE_A_descr"
+msgstr ""
+"Высокий и внушительный, Чжао Юнь скакал на белом коне с серебристым копьём в"
+" руке. Образец честности и образцовый генерал, он тщательно выбирал своего "
+"владыку и следовал за ним из Чаншаня, поклявшись восстановить Хань. Он "
+"выходил из окружения и семь раз врывался в ряды врага, чтобы защитить своего"
+" господина. Его доблесть сияла в Ханьчжуне, где он отбросил могучую армию "
+"Цао, и в Долине Цзи, когда он возглавил опасную миссию и вернул своих людей "
+"в столицу. Вне боя его сострадание, проницательность и чувство высшей цели "
+"увековечили его как великого государственного деятеля древних времён."
+
+msgid "GB86_Centurion_Action_X_CFE_A_long_special"
+msgstr ""
+"Triumphant — британский средний танк X уровня. Это одна из самых "
+"универсальных машин на уровне, сочетающая достойную мобильность и "
+"сбалансированное орудие с комфортными углами наведения. Кроме того, "
+"бронирование башни позволяет отражать большинство базовых снарядов "
+"одноклассников."
+
+msgid "GB86_Centurion_Action_X_CFE_A_short"
+msgstr "Triumphant"
+
+msgid "GB86_Centurion_Action_X_CFE_A_short_special"
+msgstr ""
+"На белом коне, с серебряным копьём в руках, на полях Чанбаня.\n"
+"\n"
+"Его героическое имя навсегда вписано в историю."
+
 msgid "GB86_Centurion_Action_X_descr"
 msgstr ""
 "Башню Action X предполагалось использовать на танках Centurion более поздних"
@@ -2882,6 +2957,20 @@ msgstr "Комфортные УВН, отличная стабилизация"
 
 msgid "GB91_Super_Conqueror"
 msgstr "Super Conqueror"
+
+msgid "GB91_Super_Conqueror_7x7"
+msgstr "Super Conqueror 7x7"
+
+msgid "GB91_Super_Conqueror_7x7_descr"
+msgstr ""
+"Вариант танка Conqueror с дополнительным бронированием был изготовлен в "
+"первой половине 50-х годов для испытаний боевых частей противотанковых "
+"управляемых ракет (ПТУР) «Dart» и «Malkara». На испытаниях данная машина "
+"играла роль тяжёлого танка, который мог бы появиться в будущем. Серийно не "
+"производился."
+
+msgid "GB91_Super_Conqueror_7x7_short"
+msgstr "S. Conq. 7x7"
 
 msgid "GB91_Super_Conqueror_descr"
 msgstr ""
@@ -3599,6 +3688,9 @@ msgstr "Rolls-Royce Griffon A"
 msgid "Rolls_Royce_Griffon_SC"
 msgstr "Rolls-Royce Griffon (SC)"
 
+msgid "Rolls_Royce_Griffon_SC_7x7"
+msgstr "Rolls-Royce Griffon (SC)"
+
 msgid "Rolls_Royce_K60"
 msgstr "Rolls-Royce K60"
 
@@ -3668,6 +3760,9 @@ msgstr "Rolls-Royce Meteor Mk. IVC"
 msgid "Rolls_Royce_Meteor_MkIV_B12"
 msgstr "Rolls-Royce Meteor Mk. IVB/12"
 
+msgid "Rolls_Royce_Meteor_MkIV_B12_CFE_J"
+msgstr "Rolls-Royce Meteor Mk. IVB/12"
+
 msgid "Rolls_Royce_Meteor_MkV"
 msgstr "Rolls-Royce Meteor Mk. V"
 
@@ -3717,6 +3812,9 @@ msgid "Rolls_Royce_Meteor_P"
 msgstr "Rolls-Royce Meteor P"
 
 msgid "Rolls_Royce_Meteor_with_twin_turbo_supercharges"
+msgstr "Rolls-Royce Meteor TTSC"
+
+msgid "Rolls_Royce_Meteor_with_twin_turbo_supercharges_CFE_A"
 msgstr "Rolls-Royce Meteor TTSC"
 
 msgid "Rolls_Royce_Meteorite_202"
@@ -3841,6 +3939,9 @@ msgstr "A46"
 
 msgid "Turret_1_GB109_GSOR_1008"
 msgstr "GSOR1008 Mk.1"
+
+msgid "Turret_1_GB109_GSOR_1008_CFE_J"
+msgstr "Нефритовая спираль"
 
 msgid "Turret_1_GB10_Black_Prince"
 msgstr "Black Prince"
@@ -4118,6 +4219,9 @@ msgstr "Cromwell Mk. IV"
 msgid "Turret_1_GB86_Centurion_Action_X"
 msgstr "Centurion Action X"
 
+msgid "Turret_1_GB86_Centurion_Action_X_CFE_A"
+msgstr "Triumphant"
+
 msgid "Turret_1_GB87_Chieftain_T95_turret"
 msgstr "Chieftain/T95"
 
@@ -4125,6 +4229,9 @@ msgid "Turret_1_GB88_T95_Chieftain_turret"
 msgstr "T95/Chieftain"
 
 msgid "Turret_1_GB91_Super_Conqueror"
+msgstr "Conqueror «Unorthodox» ABP"
+
+msgid "Turret_1_GB91_Super_Conqueror_7x7"
 msgstr "Conqueror «Unorthodox» ABP"
 
 msgid "Turret_1_GB92_FV217"
@@ -4411,6 +4518,9 @@ msgstr "APDS HVKE"
 msgid "_105mm_APDS_Kl14"
 msgstr "APDS Kl/14"
 
+msgid "_105mm_APDS_Kl14_CFE_J"
+msgstr "APDS Kl/14"
+
 msgid "_105mm_APDS_L_28P"
 msgstr "APDS L-28P"
 
@@ -4423,6 +4533,9 @@ msgstr "APDS L-28 (4101)"
 msgid "_105mm_APDS_L_28_5321"
 msgstr "APDS L-28 (5321)"
 
+msgid "_105mm_APDS_L_28_5321_CFE_A"
+msgstr "APDS L-28"
+
 msgid "_105mm_AP_EX20"
 msgstr "105 mm AP EX20"
 
@@ -4432,6 +4545,9 @@ msgstr "AP Mk. 5 MBC"
 msgid "_105mm_AP_Mk7"
 msgstr "AP Mk7"
 
+msgid "_105mm_AP_Mk7_CFE_J"
+msgstr "AP Mk7"
+
 msgid "_105mm_AP_T32_MBC"
 msgstr "AP T32 MBC"
 
@@ -4439,6 +4555,9 @@ msgid "_105mm_AT_Gun_L7"
 msgstr "105 mm AT Gun L7"
 
 msgid "_105mm_AT_Gun_L7A1"
+msgstr "105 mm AT Gun L7A1"
+
+msgid "_105mm_AT_Gun_L7A1_CFE_J"
 msgstr "105 mm AT Gun L7A1"
 
 msgid "_105mm_AT_Gun_L7A1_GSOR"
@@ -4453,6 +4572,9 @@ msgstr "105 mm Royal Ordnance L7A1"
 msgid "_105mm_Gun_L7_HEAT"
 msgstr "105 mm Gun L7A2"
 
+msgid "_105mm_Gun_L7_HEAT_CFE_A"
+msgstr "105 mm Gun L7A2"
+
 msgid "_105mm_Gun_L7_HEAT_SH"
 msgstr "105 mm Gun L7A2"
 
@@ -4460,6 +4582,9 @@ msgid "_105mm_HEAT_HVKE"
 msgstr "HEAT HVKE"
 
 msgid "_105mm_HEAT_L7"
+msgstr "US HEAT M456"
+
+msgid "_105mm_HEAT_L7_CFE_A"
 msgstr "US HEAT M456"
 
 msgid "_105mm_HEAT_L7_SH"
@@ -4492,6 +4617,9 @@ msgstr "HESH L-35 (4101)"
 msgid "_105mm_HESH_L_35_5321"
 msgstr "HESH L-35 (5321)"
 
+msgid "_105mm_HESH_L_35_5321_CFE_A"
+msgstr "HESH-T L-35"
+
 msgid "_105mm_HESH_L_37_4015"
 msgstr "HESH L-37 (4015)"
 
@@ -4514,6 +4642,9 @@ msgid "_105mm_HE_L7_MBC"
 msgstr "HE L-33N MBC"
 
 msgid "_105mm_HE_L7_Mk13"
+msgstr "HE L7 Mk. 13"
+
+msgid "_105mm_HE_L7_Mk13_CFE_J"
 msgstr "HE L7 Mk. 13"
 
 msgid "_105mm_HE_L7_N"
@@ -4654,6 +4785,9 @@ msgstr "APDS L1 MBC"
 msgid "_120mm_APDS_L1_SC"
 msgstr "APDS L1 (SC)"
 
+msgid "_120mm_APDS_L1_SC_7x7"
+msgstr "APDS L1 (SC)"
+
 msgid "_120mm_AP_L15A11"
 msgstr "AP L15A11"
 
@@ -4673,6 +4807,9 @@ msgid "_120mm_AP_L1_MBC"
 msgstr "AP L1 MBC"
 
 msgid "_120mm_AP_L1_SC"
+msgstr "AP L1 (SC)"
+
+msgid "_120mm_AP_L1_SC_7x7"
 msgstr "AP L1 (SC)"
 
 msgid "_120mm_AP_Mk_1"
@@ -4702,6 +4839,9 @@ msgstr "120 mm Gun L1A1"
 msgid "_120mm_Gun_L1A1_214"
 msgstr "120 mm Gun L1A1 (214)"
 
+msgid "_120mm_Gun_L1A1_7x7"
+msgstr "120 mm Gun L1A1"
+
 msgid "_120mm_Gun_L1A1_A"
 msgstr "120 mm Gun L1A1 A"
 
@@ -4721,6 +4861,9 @@ msgid "_120mm_HESH_L1_A39"
 msgstr "HESH L1 (A39)"
 
 msgid "_120mm_HESH_L1_SC"
+msgstr "HESH L1 (SC)"
+
+msgid "_120mm_HESH_L1_SC_7x7"
 msgstr "HESH L1 (SC)"
 
 msgid "_120mm_HESH_L30"
@@ -4922,7 +5065,7 @@ msgid "_183mm_AP_Mk_1_4005"
 msgstr "AP Mk. 1 (4005)"
 
 msgid "_183mm_AT_Gun"
-msgstr "183 mm L4"
+msgstr "183 mm L4A1"
 
 msgid "_183mm_HESH"
 msgstr "HESH Mk. 1"

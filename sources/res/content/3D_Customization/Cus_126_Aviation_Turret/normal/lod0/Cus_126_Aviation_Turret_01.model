@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/3D_Customization/Cus_126_Aviation_Turret/normal/lod1/Cus_126_Aviation_Turret_01</parent>
+	<extent>32.000000</extent>
+	<nodelessVisual>content/3D_Customization/Cus_126_Aviation_Turret/normal/lod0/Cus_126_Aviation_Turret_01</nodelessVisual>
+	<havok>
+		<damagedState>true</damagedState>
+	</havok>
+	<tank>true</tank>
+</root>
