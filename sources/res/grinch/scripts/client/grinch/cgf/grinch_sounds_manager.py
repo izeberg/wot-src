@@ -11,9 +11,9 @@ _logger = logging.getLogger(__name__)
 
 @bonusCapsManager(ARENA_BONUS_TYPE_CAPS.GRINCH, CGF.DomainOption.DomainClient)
 class LanguageSwitchManager(CGF.ComponentManager):
-    _NAME = 'SWITCH_ext_GRINCH_vo_language'
-    _VALUE_NON_RU = 'SWITCH_ext_GRINCH_vo_language_EN'
-    _VALUE_CN = 'SWITCH_ext_GRINCH_vo_language_CN'
+    _NAME = 'SWITCH_ext_grinch_vo_language'
+    _VALUE_NON_RU = 'SWITCH_ext_grinch_vo_language_EN'
+    _VALUE_CN = 'SWITCH_ext_grinch_vo_langauge_CN'
 
     def activate(self):
         WWISE.WW_setSwitch(self._NAME, self._getValue())

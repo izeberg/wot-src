@@ -10491,6 +10491,33 @@
 		</paint>
 	</itemGroup>
 	<itemGroup>
+		<name>Surprise Tank</name>
+		<userString>#vehicle_customization:repaint/color_group_04</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>paints 20g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF poland:Pl15_60TP_Lewandowskiego_CFE_A usa:A13_T34_hvy_BF usa:A174_T57_58_Rush_Ep1 ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<paint>
+			<id>592</id>
+			<texture>gui/maps/vehicles/repaints/custom_color_03.png</texture>
+			<color>41 56 97 255</color>
+			<gloss>
+				0.509
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.23
+				<!--BW_String-->
+			</metallic>
+			<userString>#vehicle_customization:special_style/surprise_tank</userString>
+			<tags>hiddenInUI</tags>
+		</paint>
+	</itemGroup>
+	<itemGroup>
 		<name>Black Friday 2025</name>
 		<userString>#vehicle_customization:repaint/color_group_04</userString>
 		<season>ALL</season>

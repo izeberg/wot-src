@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/french/F140_Fantome/normal/lod4/Gun_02</nodefullVisual>
+	<visibilityBox>
+		<min>-1.236201 -0.415007 -2.297882</min>
+		<max>1.226047 0.407065 5.435020</max>
+	</visibilityBox>
+</root>
