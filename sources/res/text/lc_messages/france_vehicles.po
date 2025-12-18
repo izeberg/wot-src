@@ -471,6 +471,9 @@ msgstr "AMX 38 1er prototype"
 msgid "Chassis_F13_AMX38_2"
 msgstr "AMX 38 série"
 
+msgid "Chassis_F140_Fantome"
+msgstr "Fantôme"
+
 msgid "Chassis_F14_AMX40"
 msgstr "AMX 40"
 
@@ -1654,6 +1657,31 @@ msgstr ""
 msgid "F13_AMX38_short"
 msgstr "AMX 38"
 
+msgid "F140_Fantome"
+msgstr "Fantôme"
+
+msgid "F140_Fantome_descr"
+msgstr ""
+"From 1963 through 1964, Porsche developed a prospective tank for the 1970s, "
+"which was ultimately rejected. Later, this project ended up in France, where"
+" the Creusot-Loire company proposed it as a unified tank for France, "
+"Germany, and eventually other countries. However, the vehicle turned out too"
+" expensive, which was a decisive factor in the project's closure."
+
+msgid "F140_Fantome_long_special"
+msgstr ""
+"The Fantôme is a Tier IX French medium tank which has all the familiar "
+"French features, such as good mobility and an autoloading gun. But what "
+"separates it from the rest is automatic hydropneumatic suspension, which "
+"allows the vehicle to reach greater gun depression and elevation angles, "
+"enhancing its efficiency on uneven terrain."
+
+msgid "F140_Fantome_short"
+msgstr "Fantôme"
+
+msgid "F140_Fantome_short_special"
+msgstr "Autoloader, automatic hydropneumatic suspension"
+
 msgid "F14_AMX40"
 msgstr "AMX 40"
 
@@ -2768,6 +2796,9 @@ msgstr "Maybach Mb. IV Zeppelin x2"
 msgid "Moteur_EPC_version_S5"
 msgstr "Moteur E.P.C. version S5"
 
+msgid "Moteur_EPC_version_S5_Fantome"
+msgstr "Moteur E.P.C. version S5 (Fantôme)"
+
 msgid "Moteur_E_P_C_version_4"
 msgstr "Moteur E.P.C. version 4"
 
@@ -3155,6 +3186,9 @@ msgstr "TRVP-13-A1"
 msgid "TRVP_13_A_2"
 msgstr "TRVP-13-A2"
 
+msgid "TRVP_13_A_Fantome"
+msgstr "TRVP-13-A (Fantôme)"
+
 msgid "TRVP_13_SH"
 msgstr "TRVP-13"
 
@@ -3312,6 +3346,9 @@ msgstr "FCM 36"
 
 msgid "Turret_1_F13_AMX38"
 msgstr "AMX 38"
+
+msgid "Turret_1_F140_Fantome"
+msgstr "Fantôme"
 
 msgid "Turret_1_F14_AMX40"
 msgstr "AMX 40"
@@ -3889,6 +3926,18 @@ msgstr "105 mm mle. F1"
 
 msgid "_105mm_obusier_mle_1950_105_AM"
 msgstr "105 mm obusier mle. 1950 (105 AM)"
+
+msgid "_110mm_CN_110_F1_Fantome"
+msgstr "110 mm CN 110 F1 (Fantôme)"
+
+msgid "_110mm_OCC_110_Fantome"
+msgstr "OCC-110 (Fantôme)"
+
+msgid "_110mm_OE_110_Fantome"
+msgstr "OE-110 (Fantôme)"
+
+msgid "_110mm_OPS_110_Fantome"
+msgstr "OPS-110 (Fantôme)"
 
 msgid "_118mm_D_1507AS"
 msgstr "118 mm D. 1507AS"

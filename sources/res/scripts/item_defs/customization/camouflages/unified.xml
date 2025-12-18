@@ -357163,7 +357163,6 @@
 				</palette>
 			</palettes>
 			<glossMetallicMap>vehicles/russian/Camouflage/clans_2d_2025_3_GMM.dds</glossMetallicMap>
-			<tiling/>
 		</camouflage>
 		<camouflage>
 			<id>1034</id>
@@ -357201,7 +357200,53 @@
 				</palette>
 			</palettes>
 			<glossMetallicMap>vehicles/russian/Camouflage/clans_2d_2025_4_GMM.dds</glossMetallicMap>
-			<tiling/>
+		</camouflage>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:camouflage/opaque</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>camouflages 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF poland:Pl15_60TP_Lewandowskiego_CFE_A usa:A13_T34_hvy_BF usa:A174_T57_58_Rush_Ep1 ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<camouflage>
+			<id>1035</id>
+			<texture>vehicles/russian/Camouflage/surprise_tank.dds</texture>
+			<description>#vehicle_customization:camouflage/empty/description</description>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<userString>#vehicle_customization:camouflage/surprise_tank/label</userString>
+			<tags>fullRGB hiddenInUI</tags>
+			<invisibilityFactor>1</invisibilityFactor>
+			<rotation>
+				<HULL>0.840551</HULL>
+				<TURRET>0.840551</TURRET>
+				<GUN>0.840551</GUN>
+			</rotation>
+			<tilingSettings>
+				<type>relativewithfactor</type>
+				<factor>
+					2.83 2.83
+					<!--BW_String-->
+				</factor>
+				<offset>
+					-0.59 0.47
+					<!--BW_String-->
+				</offset>
+			</tilingSettings>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
 		</camouflage>
 	</itemGroup>
 	<itemGroup>
