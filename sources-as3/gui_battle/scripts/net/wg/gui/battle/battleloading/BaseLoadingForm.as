@@ -258,8 +258,7 @@ package net.wg.gui.battle.battleloading
       
       protected function alignHeaderText() : void
       {
-         var _loc1_:Number = NaN;
-         _loc1_ = this.winText.textHeight >> 1;
+         var _loc1_:Number = this.winText.textHeight >> 1;
          this.winText.y = this._winTextPosY - _loc1_;
          this.battleText.y = this._battleTextPosY - _loc1_;
       }

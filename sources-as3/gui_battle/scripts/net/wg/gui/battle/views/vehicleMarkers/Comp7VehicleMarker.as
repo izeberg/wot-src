@@ -168,8 +168,7 @@ package net.wg.gui.battle.views.vehicleMarkers
       
       override protected function updatePartsVisibility() : Vector.<Boolean>
       {
-         var _loc1_:Vector.<Boolean> = null;
-         _loc1_ = super.updatePartsVisibility();
+         var _loc1_:Vector.<Boolean> = super.updatePartsVisibility();
          var _loc2_:Boolean = this.getRoleSkillVisible();
          _loc1_.unshift(_loc2_);
          this.roleSkillLevel.visible = _loc2_;

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/french/F140_Fantome/crash/lod4/Gun_02</parent>
+	<extent>192.000000</extent>
+	<nodefullVisual>vehicles/french/F140_Fantome/crash/lod3/Gun_02</nodefullVisual>
+	<visibilityBox>
+		<min>-1.246000 -0.416696 -2.014424</min>
+		<max>1.246000 0.454655 5.406344</max>
+	</visibilityBox>
+</root>

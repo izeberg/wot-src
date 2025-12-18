@@ -81,16 +81,19 @@ package net.wg.gui.components.tooltips
       
       override protected function redraw() : void
       {
+         var _loc1_:ICommons = null;
          var _loc2_:Number = NaN;
+         var _loc3_:LadderVO = null;
          var _loc4_:Number = NaN;
-         var _loc1_:ICommons = App.utils.commons;
+         var _loc5_:Number = NaN;
+         _loc1_ = App.utils.commons;
          this.whiteBg.visible = false;
          _loc2_ = MIN_WIDTH;
          separators = new Vector.<Separator>();
-         var _loc3_:LadderVO = new LadderVO(_data);
+         _loc3_ = new LadderVO(_data);
          topPosition = bgShadowMargin.top + contentMargin.top | 0;
          _loc4_ = bgShadowMargin.left + contentMargin.left;
-         var _loc5_:Number = bgShadowMargin.horizontal + contentMargin.horizontal;
+         _loc5_ = bgShadowMargin.horizontal + contentMargin.horizontal;
          this.headerTF.autoSize = TextFieldAutoSize.LEFT;
          this.headerTF.htmlText = _loc3_.name;
          _loc1_.updateTextFieldSize(this.headerTF);

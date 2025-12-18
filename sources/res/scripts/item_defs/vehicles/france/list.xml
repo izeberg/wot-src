@@ -1330,4 +1330,19 @@
 		<tags>heavyTank role_HT_support HD heavyTank2 improvedVentilation_class1_user aimingStabilizer_class1_user extraHealthReserve_class1_user antifragmentationLining_heavy_user earn_crystals</tags>
 		<level>11</level>
 	</F136_AMX_67_Imbattable>
+	<F140_Fantome>
+		<id>265</id>
+		<userString>#france_vehicles:F140_Fantome</userString>
+		<description>#france_vehicles:F140_Fantome_descr</description>
+		<shortUserString>#france_vehicles:F140_Fantome_short</shortUserString>
+		<shortDescriptionSpecial>#france_vehicles:F140_Fantome_short_special</shortDescriptionSpecial>
+		<longDescriptionSpecial>#france_vehicles:F140_Fantome_long_special</longDescriptionSpecial>
+		<price>
+			5
+			<gold/>
+		</price>
+		<notInShop>true</notInShop>
+		<tags>mediumTank role_MT_support HD special siegeMode autoSiege mediumTank2 improvedVentilation_class2_user aimingStabilizer_class1_user extraHealthReserve_class2_user antifragmentationLining_medium_user</tags>
+		<level>9</level>
+	</F140_Fantome>
 </root>

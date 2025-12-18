@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.613776 -0.268824 -2.243096</min>
+		<max>1.617356 1.074731 1.538545</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/french/F140_Fantome/crash/lod4/Turret_01</nodefullVisual>
+</root>
