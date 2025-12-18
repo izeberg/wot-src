@@ -12265,7 +12265,7 @@
 			</visualScript>
 			<cooldownSeconds>90</cooldownSeconds>
 			<reuseCount>4</reuseCount>
-			<duration>20</duration>
+			<duration>25</duration>
 			<cooldownAfterRamKill>
 				0.5
 				<!--BW_String-->
@@ -12280,7 +12280,7 @@
 					<!--BW_String-->
 				</ramming>
 				<engine-power>
-					3.5
+					3.0
 					<!--BW_String-->
 				</engine-power>
 				<ammoBayHealthFactor>
@@ -12300,7 +12300,7 @@
 					<!--BW_String-->
 				</chassisHealthFactor>
 				<vehicle-rotationSpeed>
-					0.3
+					0.33
 					<!--BW_String-->
 				</vehicle-rotationSpeed>
 				<trackRammingDamageFactor>
@@ -12336,7 +12336,7 @@
 			</mul>
 			<mul>
 				<name>vehicleEnginePower</name>
-				<value>250</value>
+				<value>200</value>
 			</mul>
 			<add>
 				<name>speedLimitsBonus</name>

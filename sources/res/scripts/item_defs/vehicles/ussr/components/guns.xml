@@ -23855,7 +23855,7 @@
 						<!--BW_String-->
 					</gravity>
 					<maxDistance>720</maxDistance>
-					<piercingPower>308 300</piercingPower>
+					<piercingPower>320 320</piercingPower>
 				</_130mm_PB_46A_T>
 				<_130mm_OF_46_T>
 					<defaultPortion>
@@ -24766,7 +24766,7 @@
 				<recoilEffect>large</recoilEffect>
 			</recoil>
 			<effects>shot_largeext_mb</effects>
-			<reloadEffect>reload115_152</reloadEffect>
+			<reloadEffect>autoloader_reload85_107</reloadEffect>
 			<pitchLimits>
 				<minPitch>
 					0.0 -17.0 1.0 -17.0

@@ -496,7 +496,10 @@
 					</property>
 					<property>
 						<name>DistLimits</name>
-						<value>4 12</value>
+						<value>
+							6.5 12
+							<!--BW_String-->
+						</value>
 					</property>
 					<property>
 						<name>StartYaw</name>
@@ -567,7 +570,10 @@
 					</property>
 					<property>
 						<name>DistLimits</name>
-						<value>4 12</value>
+						<value>
+							6.5 12
+							<!--BW_String-->
+						</value>
 					</property>
 					<property>
 						<name>StartYaw</name>

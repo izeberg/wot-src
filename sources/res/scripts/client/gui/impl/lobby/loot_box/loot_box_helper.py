@@ -1,4 +1,4 @@
-import typing
+import typing, itertools
 from collections import namedtuple
 from constants import LOOTBOX_TOKEN_PREFIX, LOOTBOX_KEY_PREFIX
 from helpers import dependency
@@ -44,7 +44,8 @@ def aggregateSimilarBonuses(bonuses):
 
 @dependency.replace_none_kwargs(itemsCache=IItemsCache)
 def isAllVehiclesObtainedInSlot(slot, itemsCache=None):
-    inventoryVehicles = [ intCD for intCD in itemsCache.items.inventory.getIventoryVehiclesCDs() if not itemsCache.items.getItemByCD(intCD).isRented
+    availableVehicle = itertools.chain(itemsCache.items.recycleBin.getVehiclesIntCDs(), itemsCache.items.inventory.getIventoryVehiclesCDs())
+    inventoryVehicles = [ intCD for intCD in availableVehicle if not itemsCache.items.getItemByCD(intCD).isRented
                         ]
     for bonus in slot['bonuses']:
         if bonus.getName() == 'vehicles':

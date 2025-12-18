@@ -6969,8 +6969,8 @@
 		</projectile>
 		<targetImpulse/>
 		<targetStickers>
-			<armorResisted>flame_ricochet</armorResisted>
-			<armorPierced>flame_hole</armorPierced>
+			<armorResisted/>
+			<armorPierced/>
 		</targetStickers>
 		<groundHit>
 			<timeline>
@@ -8162,8 +8162,8 @@
 		</projectile>
 		<targetImpulse/>
 		<targetStickers>
-			<armorResisted>flame_ricochet</armorResisted>
-			<armorPierced>flame_hole</armorPierced>
+			<armorResisted/>
+			<armorPierced/>
 		</targetStickers>
 		<groundHit>
 			<timeline>

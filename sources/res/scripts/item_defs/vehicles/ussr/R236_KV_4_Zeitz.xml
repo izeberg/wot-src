@@ -81,17 +81,17 @@
 	</camouflage>
 	<hull>
 		<armor>
-			<armor_1>250</armor_1>
-			<armor_2>210</armor_2>
+			<armor_1>230</armor_1>
+			<armor_2>200</armor_2>
 			<armor_3>130</armor_3>
 			<armor_4>125</armor_4>
 			<armor_5>60</armor_5>
-			<armor_6>160</armor_6>
+			<armor_6>155</armor_6>
 			<armor_7>60</armor_7>
 			<armor_8>0</armor_8>
 			<armor_9>50</armor_9>
 			<armor_10>50</armor_10>
-			<armor_11>130</armor_11>
+			<armor_11>115</armor_11>
 			<armor_12>250</armor_12>
 			<armor_13>250</armor_13>
 			<armor_14>250</armor_14>
@@ -99,9 +99,9 @@
 			<armor_16>130</armor_16>
 			<armor_17>130</armor_17>
 			<armor_18>100</armor_18>
-			<armor_19>125</armor_19>
-			<armor_20>200</armor_20>
-			<armor_21>210</armor_21>
+			<armor_19>100</armor_19>
+			<armor_20>220</armor_20>
+			<armor_21>230</armor_21>
 			<armor_22>
 				40
 				<vehicleDamageFactor>0</vehicleDamageFactor>
@@ -2736,22 +2736,16 @@
 						</maxPitch>
 					</pitchLimits>
 					<shotDispersionRadius>
-						0.37
+						0.39
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>
-						12.3
-						<!--BW_String-->
-					</reloadTime>
+					<reloadTime>9</reloadTime>
 					<clip>
-						<count>4</count>
+						<count>3</count>
 						<rate>15</rate>
 					</clip>
 					<autoreload>
-						<reloadTime>
-							13.0 11.5 10.0 9
-							<!--BW_String-->
-						</reloadTime>
+						<reloadTime>9 11 13</reloadTime>
 					</autoreload>
 					<shotDispersionFactors>
 						<turretRotation>
@@ -2768,7 +2762,7 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<aimingTime>
-						2.5
+						2.7
 						<!--BW_String-->
 					</aimingTime>
 					<customizationSlots>
@@ -3778,7 +3772,7 @@
 						</medium>
 						<firm>
 							<rollingFriction>
-								0.1127
+								0.0427
 								<!--BW_String-->
 							</rollingFriction>
 						</firm>

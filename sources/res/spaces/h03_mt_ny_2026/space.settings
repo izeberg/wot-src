@@ -121,8 +121,8 @@
 		<emblems_alpha_undamaged>1.000000</emblems_alpha_undamaged>
 		<emblems_alpha_damaged>0.300000</emblems_alpha_damaged>
 		<cam_min_dist_vehicle_hull_length_k>0.650000</cam_min_dist_vehicle_hull_length_k>
-		<cam_capsule_scale>2.110000 2.110000 2.110000</cam_capsule_scale>
-		<cam_capsule_gun_scale>1.000000 1.000000 1.100000</cam_capsule_gun_scale>
+		<cam_capsule_scale>2.220000 2.220000 2.220000</cam_capsule_scale>
+		<cam_capsule_gun_scale>1.300000 1.300000 1.300000</cam_capsule_gun_scale>
 	</hangarSettings>
 	<isTemporaryOrEventSpace>true</isTemporaryOrEventSpace>
 </root>

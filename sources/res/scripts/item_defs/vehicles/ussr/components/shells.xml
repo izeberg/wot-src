@@ -5933,17 +5933,21 @@
 	<_130mm_PB_46A_T>
 		<id>35002</id>
 		<userString>#ussr_vehicles:_130mm_PB_46A</userString>
-		<icon>ap_premium</icon>
+		<icon>hc_premium</icon>
 		<price>5200</price>
 		<improved>true</improved>
-		<kind>ARMOR_PIERCING</kind>
+		<kind>HOLLOW_CHARGE</kind>
 		<caliber>130</caliber>
 		<isTracer>true</isTracer>
-		<effects>largeArmorPiercing</effects>
+		<effects>largeHollowCharge</effects>
 		<damage>
 			<armor>490</armor>
 			<devices>180</devices>
 		</damage>
+		<piercingPowerLossFactorByDistance>
+			0.05
+			<!--BW_String-->
+		</piercingPowerLossFactorByDistance>
 	</_130mm_PB_46A_T>
 	<_130mm_OF_46_T>
 		<id>35003</id>
@@ -6609,7 +6613,7 @@
 		<isTracer>true</isTracer>
 		<effects>largeArmorPiercing</effects>
 		<damage>
-			<armor>510</armor>
+			<armor>470</armor>
 			<devices>180</devices>
 		</damage>
 	</_130mm_BR482>
@@ -6624,7 +6628,7 @@
 		<isTracer>true</isTracer>
 		<effects>largeAPCR</effects>
 		<damage>
-			<armor>510</armor>
+			<armor>470</armor>
 			<devices>180</devices>
 		</damage>
 	</_130mm_BR482P>
@@ -6643,7 +6647,7 @@
 		<isTracer>true</isTracer>
 		<effects>largeHighExplosive</effects>
 		<damage>
-			<armor>650</armor>
+			<armor>590</armor>
 			<devices>180</devices>
 		</damage>
 		<armorSpalls>
@@ -6653,7 +6657,7 @@
 			</impactRadius>
 			<coneAngle>90</coneAngle>
 			<damage>
-				<armor>325</armor>
+				<armor>295</armor>
 				<devices>90</devices>
 			</damage>
 		</armorSpalls>

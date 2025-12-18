@@ -82,12 +82,12 @@
 			<armor_3>180</armor_3>
 			<armor_4>200</armor_4>
 			<armor_5>50</armor_5>
-			<armor_6>250</armor_6>
-			<armor_7>200</armor_7>
+			<armor_6>200</armor_6>
+			<armor_7>250</armor_7>
 			<armor_8>0</armor_8>
 			<armor_9>40</armor_9>
 			<armor_10>40</armor_10>
-			<armor_11>180</armor_11>
+			<armor_11>250</armor_11>
 			<armor_12>200</armor_12>
 			<armor_13>200</armor_13>
 			<armor_14>200</armor_14>
@@ -2819,8 +2819,8 @@
 				<armor_2>280</armor_2>
 				<armor_3>200</armor_3>
 				<armor_4>200</armor_4>
-				<armor_5>50</armor_5>
-				<armor_6>120</armor_6>
+				<armor_5>60</armor_5>
+				<armor_6>180</armor_6>
 				<armor_7>220</armor_7>
 				<armor_8>0</armor_8>
 				<armor_9>230</armor_9>
@@ -2871,7 +2871,7 @@
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_1>
 						<armor_2>
-							220
+							280
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_2>
 						<armor_3>
@@ -2883,7 +2883,7 @@
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_4>
 						<armor_5>
-							100
+							280
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_5>
 						<armor_6>
@@ -2907,19 +2907,13 @@
 						0.4
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>
-						16.7
-						<!--BW_String-->
-					</reloadTime>
+					<reloadTime>12</reloadTime>
 					<clip>
-						<count>3</count>
+						<count>2</count>
 						<rate>15</rate>
 					</clip>
 					<autoreload>
-						<reloadTime>
-							16.5 14.7 13
-							<!--BW_String-->
-						</reloadTime>
+						<reloadTime>12 18</reloadTime>
 					</autoreload>
 					<aimingTime>
 						2.9
@@ -3802,7 +3796,7 @@
 						</medium>
 						<firm>
 							<rollingFriction>
-								0.10465
+								0.04465
 								<!--BW_String-->
 							</rollingFriction>
 						</firm>
