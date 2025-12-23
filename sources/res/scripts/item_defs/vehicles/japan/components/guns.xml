@@ -6266,19 +6266,6 @@
 				</whileGunDamaged>
 			</shotDispersionFactors>
 			<shots>
-				<_106mm_HEP_M346A1>
-					<defaultPortion>
-						1.0
-						<!--BW_String-->
-					</defaultPortion>
-					<speed>600</speed>
-					<gravity>
-						9.81
-						<!--BW_String-->
-					</gravity>
-					<maxDistance>720</maxDistance>
-					<piercingPower>150 150</piercingPower>
-				</_106mm_HEP_M346A1>
 				<_106mm_HEAT_M344A1>
 					<defaultPortion>
 						0.0
@@ -6290,8 +6277,34 @@
 						<!--BW_String-->
 					</gravity>
 					<maxDistance>720</maxDistance>
-					<piercingPower>230 230</piercingPower>
+					<piercingPower>220 220</piercingPower>
 				</_106mm_HEAT_M344A1>
+				<_106mm_HEP_M346A1>
+					<defaultPortion>
+						1.0
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>600</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>130 130</piercingPower>
+				</_106mm_HEP_M346A1>
+				<_106mm_HEP_M346A2>
+					<defaultPortion>
+						1.0
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>600</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>50 50</piercingPower>
+				</_106mm_HEP_M346A2>
 			</shots>
 		</_106mm_M40_Recoilless_Dual_Gun>
 		<_120mm_Short_Barrel_Gun>

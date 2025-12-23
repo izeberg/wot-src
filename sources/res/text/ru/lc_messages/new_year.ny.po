@@ -1299,7 +1299,7 @@ msgid "leaderboardView/closeBtn"
 msgstr "ЗАКРЫТЬ"
 
 msgid "leaderboardView/dateFormat"
-msgstr "%(fromDate)s — %(toDate)s"
+msgstr "%(fromDate)s МСК — %(toDate)s МСК"
 
 msgid "leaderboardView/position/description/final"
 msgstr ""
@@ -1344,7 +1344,7 @@ msgid "leaderboardView/position/totalPoints"
 msgstr "Всего получено очков:"
 
 msgid "leaderboardView/position/update"
-msgstr "Обновлено сегодня в %(time)s"
+msgstr "Обновлено сегодня в %(time)s МСК"
 
 msgid "leaderboardView/recalc"
 msgstr "ПЕРЕРАСЧЁТ"
@@ -4240,13 +4240,16 @@ msgid "weeklyRewards/secretVehicle/tooltip/header"
 msgstr "Тёмная лошадка"
 
 msgid "weeklyRewards/stage/countdown"
-msgstr "ОКОНЧАНИЕ %(endDate)s %(endTime)s"
+msgstr "ОКОНЧАНИЕ %(endDate)s %(timezone)s"
 
 msgid "weeklyRewards/stage/countdownTime"
 msgstr "%(endTime)s"
 
+msgid "weeklyRewards/stage/countdownTimezone"
+msgstr "МСК"
+
 msgid "weeklyRewards/stage/dateFormat"
-msgstr "%(fromDate)s — %(toDate)s"
+msgstr "%(fromDate)s МСК — %(toDate)s МСК"
 
 msgid "weeklyRewards/stage/index/1"
 msgstr "Первый"

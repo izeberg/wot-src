@@ -2182,7 +2182,7 @@
 		<isTracer>true</isTracer>
 		<effects>mainArmorPiercing</effects>
 		<damage>
-			<armor>250</armor>
+			<armor>320</armor>
 			<devices>135</devices>
 		</damage>
 	</_100mm_BR-412D_T>
@@ -2197,7 +2197,7 @@
 		<isTracer>true</isTracer>
 		<effects>mainHollowCharge</effects>
 		<damage>
-			<armor>250</armor>
+			<armor>320</armor>
 			<devices>135</devices>
 		</damage>
 		<piercingPowerLossFactorByDistance>
@@ -2220,7 +2220,7 @@
 		<isTracer>true</isTracer>
 		<effects>mainHighExplosive</effects>
 		<damage>
-			<armor>320</armor>
+			<armor>440</armor>
 			<devices>135</devices>
 		</damage>
 		<armorSpalls>
@@ -2230,7 +2230,7 @@
 			</impactRadius>
 			<coneAngle>90</coneAngle>
 			<damage>
-				<armor>160</armor>
+				<armor>440</armor>
 				<devices>70</devices>
 			</damage>
 		</armorSpalls>

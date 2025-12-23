@@ -1294,7 +1294,7 @@ msgid "leaderboardView/closeBtn"
 msgstr "ЗАКРЫЦЬ"
 
 msgid "leaderboardView/dateFormat"
-msgstr "%(fromDate)s — %(toDate)s"
+msgstr "%(fromDate)s МСК — %(toDate)s МСК"
 
 msgid "leaderboardView/position/description/final"
 msgstr ""
@@ -1339,7 +1339,7 @@ msgid "leaderboardView/position/totalPoints"
 msgstr "Усяго атрымана ачкоў:"
 
 msgid "leaderboardView/position/update"
-msgstr "Абноўлена сёння ў %(time)s"
+msgstr "Абноўлена сёння ў %(time)s МСК"
 
 msgid "leaderboardView/recalc"
 msgstr "ПЕРАРАЗЛІК"
@@ -4216,13 +4216,16 @@ msgid "weeklyRewards/secretVehicle/tooltip/header"
 msgstr "Цёмны конік"
 
 msgid "weeklyRewards/stage/countdown"
-msgstr "ЗАКАНЧЭННЕ %(endDate)s %(endTime)s"
+msgstr "ЗАКАНЧЭННЕ %(endDate)s %(timezone)s"
 
 msgid "weeklyRewards/stage/countdownTime"
 msgstr "%(endTime)s"
 
+msgid "weeklyRewards/stage/countdownTimezone"
+msgstr "МСК"
+
 msgid "weeklyRewards/stage/dateFormat"
-msgstr "%(fromDate)s — %(toDate)s"
+msgstr "%(fromDate)s МСК — %(toDate)s МСК"
 
 msgid "weeklyRewards/stage/index/1"
 msgstr "Першы"
