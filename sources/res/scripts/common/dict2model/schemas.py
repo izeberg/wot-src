@@ -1,11 +1,12 @@
 from __future__ import absolute_import
-import traceback, typing, logging
+import logging, traceback, typing
 from future.utils import viewitems
-from soft_exception import SoftException
 from dict2model import validate
-from dict2model.models import Model
 from dict2model.exceptions import ValidationError, ValidationErrorMessage
 from dict2model.fields import AccessDeniedField
+from dict2model.models import Model
+from py2to3 import patched_typing
+from soft_exception import SoftException
 if typing.TYPE_CHECKING:
     from dict2model.fields import Field
     from dict2model.types import ValidatorsType, SchemaModelClassesType, TFilter
@@ -14,7 +15,7 @@ _logger = logging.getLogger(__name__)
 SchemaModelType = typing.TypeVar('SchemaModelType', bound=typing.Union[(Model, typing.Dict)])
 accessDeniedField = AccessDeniedField()
 
-class Schema(typing.Generic[SchemaModelType]):
+class Schema(patched_typing.Generic[SchemaModelType]):
     __slots__ = ('_modelClass', '_checkUnknown', '_fields', '_serializedValidators',
                  '_deserializedValidators')
 

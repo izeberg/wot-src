@@ -111,6 +111,8 @@ class NotificationWindowController(INotificationWindowController, IGlobalListene
         if self.isEnabled():
             self.__activeQueue.extend(self.__postponedQueue)
             del self.__postponedQueue[:]
+            self.__destroyCurrentWindow()
+            self.__processNext()
             self.__notifyWithPostponedQueueCount()
         else:
             _logger.info('Notifications queue is currently disabled.')

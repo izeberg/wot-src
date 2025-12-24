@@ -336526,6 +336526,10 @@
 					3.76 3.76 -0.42 0.35
 					<!--BW_String-->
 				</france:F64_AMX_50Fosh_B>
+				<france:F64_AMX_50Fosh_B_7x7>
+					3.76 3.76 -0.42 0.35
+					<!--BW_String-->
+				</france:F64_AMX_50Fosh_B_7x7>
 				<china:Ch01_Type59>
 					1.67 1.67 -1.21 0.64
 					<!--BW_String-->
@@ -361210,42 +361214,6 @@
 					-0.52866
 					<!--BW_String-->
 				</GUN>
-			</rotation>
-		</camouflage>
-		<camouflage>
-			<id>1063</id>
-			<texture>vehicles/russian/Camouflage/ny2026_10.dds</texture>
-			<userString>#vehicle_customization:camouflage/ny2026_10/label</userString>
-			<description>#vehicle_customization:camouflage/empty/description</description>
-			<invisibilityFactor>1</invisibilityFactor>
-			<scales>
-				1.2 1 0.7
-				<!--BW_String-->
-			</scales>
-			<tags>hiddenInUI fullRGB</tags>
-			<palettes>
-				<palette>
-					<c0>255 0 0 255</c0>
-					<c1>0 255 0 255</c1>
-					<c2>0 0 255 255</c2>
-					<c3>0 0 0 255</c3>
-				</palette>
-			</palettes>
-			<tilingSettings>
-				<type>relativewithfactor</type>
-				<factor>
-					2.83 2.83
-					<!--BW_String-->
-				</factor>
-				<offset>
-					-0.59 0.47
-					<!--BW_String-->
-				</offset>
-			</tilingSettings>
-			<rotation>
-				<HULL>0.840551</HULL>
-				<TURRET>0.840551</TURRET>
-				<GUN>0.840551</GUN>
 			</rotation>
 		</camouflage>
 	</itemGroup>

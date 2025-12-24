@@ -34421,21 +34421,13 @@ package
       
       public static const MAPS_ICONS_PERSONAL_MISSIONS_30_REWARDS_S296X222_STYLE_1134:String = "../maps/icons/personal_missions_30/rewards/s296x222/style_1134.png";
       
-      public static const MAPS_ICONS_PERSONAL_MISSIONS_30_REWARDS_S296X222_STYLE_439:String = "../maps/icons/personal_missions_30/rewards/s296x222/style_439.png";
-      
-      public static const MAPS_ICONS_PERSONAL_MISSIONS_30_REWARDS_S296X222_STYLE_810:String = "../maps/icons/personal_missions_30/rewards/s296x222/style_810.png";
-      
-      public static const MAPS_ICONS_PERSONAL_MISSIONS_30_REWARDS_S296X222_STYLE_973:String = "../maps/icons/personal_missions_30/rewards/s296x222/style_973.png";
+      public static const MAPS_ICONS_PERSONAL_MISSIONS_30_REWARDS_S296X222_STYLE_1300:String = "../maps/icons/personal_missions_30/rewards/s296x222/style_1300.png";
       
       public static const MAPS_ICONS_PERSONAL_MISSIONS_30_REWARDS_S400X300_STYLE_1133:String = "../maps/icons/personal_missions_30/rewards/s400x300/style_1133.png";
       
       public static const MAPS_ICONS_PERSONAL_MISSIONS_30_REWARDS_S400X300_STYLE_1134:String = "../maps/icons/personal_missions_30/rewards/s400x300/style_1134.png";
       
-      public static const MAPS_ICONS_PERSONAL_MISSIONS_30_REWARDS_S400X300_STYLE_439:String = "../maps/icons/personal_missions_30/rewards/s400x300/style_439.png";
-      
-      public static const MAPS_ICONS_PERSONAL_MISSIONS_30_REWARDS_S400X300_STYLE_810:String = "../maps/icons/personal_missions_30/rewards/s400x300/style_810.png";
-      
-      public static const MAPS_ICONS_PERSONAL_MISSIONS_30_REWARDS_S400X300_STYLE_973:String = "../maps/icons/personal_missions_30/rewards/s400x300/style_973.png";
+      public static const MAPS_ICONS_PERSONAL_MISSIONS_30_REWARDS_S400X300_STYLE_1300:String = "../maps/icons/personal_missions_30/rewards/s400x300/style_1300.png";
       
       public static const MAPS_ICONS_PERSONAL_MISSIONS_30_TOOLTIPS_COMPONENTS_DIVIDER:String = "../maps/icons/personal_missions_30/tooltips/components/divider.png";
       
@@ -44593,6 +44585,8 @@ package
       
       public static const MAPS_ICONS_SELECTABLEREWARD_REWARD_S180X135_DELUXEADDITIONALINVISIBILITYDEVICE:String = "../maps/icons/selectableReward/reward/s180x135/deluxeAdditionalInvisibilityDevice.png";
       
+      public static const MAPS_ICONS_SELECTABLEREWARD_REWARD_S180X135_DELUXECAMOUFLAGENET:String = "../maps/icons/selectableReward/reward/s180x135/deluxeCamouflageNet.png";
+      
       public static const MAPS_ICONS_SELECTABLEREWARD_REWARD_S180X135_DELUXEEXTRAHEALTHRESERVE:String = "../maps/icons/selectableReward/reward/s180x135/deluxeExtraHealthReserve.png";
       
       public static const MAPS_ICONS_SELECTABLEREWARD_REWARD_S180X135_DELUXEIMPROVEDROTATIONMECHANISM:String = "../maps/icons/selectableReward/reward/s180x135/deluxeImprovedRotationMechanism.png";
@@ -44600,6 +44594,8 @@ package
       public static const MAPS_ICONS_SELECTABLEREWARD_REWARD_S180X135_DELUXEIMPROVEDSIGHTS:String = "../maps/icons/selectableReward/reward/s180x135/deluxeImprovedSights.png";
       
       public static const MAPS_ICONS_SELECTABLEREWARD_REWARD_S180X135_DELUXENHANCEDAIMDRIVES:String = "../maps/icons/selectableReward/reward/s180x135/deluxEnhancedAimDrives.png";
+      
+      public static const MAPS_ICONS_SELECTABLEREWARD_REWARD_S180X135_DELUXESTEREOSCOPE:String = "../maps/icons/selectableReward/reward/s180x135/deluxeStereoscope.png";
       
       public static const MAPS_ICONS_SELECTABLEREWARD_REWARD_S180X135_DELUXETURBOCHARGER:String = "../maps/icons/selectableReward/reward/s180x135/deluxeTurbocharger.png";
       

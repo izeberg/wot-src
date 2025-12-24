@@ -91,7 +91,7 @@ class ProgressionPage(PageSubModelPresenter):
     def initialize(self, **params):
         super(ProgressionPage, self).initialize(**params)
         self.__updateData()
-        self.__c11nProgressCacher = ProgressCacherUI(COMP7_UI_SECTION, COMP7_PROGRESSION_PAGE_C11N_PROGRESS)
+        self.__c11nProgressCacher = ProgressCacherUI(COMP7_UI_SECTION, COMP7_PROGRESSION_PAGE_C11N_PROGRESS, {})
         self.__updateCustomizationTasks()
 
     def finalize(self):

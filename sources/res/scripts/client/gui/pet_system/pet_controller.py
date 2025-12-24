@@ -5,6 +5,7 @@ from arena_bonus_type_caps import ARENA_BONUS_TYPE_CAPS
 from chat_shared import SYS_MESSAGE_TYPE
 from frameworks.wulf import WindowLayer
 from gui.Scaleform.lobby_entry import getLobbyStateMachine
+from gui.hangar_cameras.hangar_camera_common import CameraRelatedEvents
 from gui.impl.lobby.pet_system.states import PetEventFullscreenWindowState, PetStorageObserver
 from gui.pet_system.processor import FirstClickSynergyProcessor, PetEventOpenProcessor, PetPurchaseProcessor
 from gui.pet_system.pet_animation_helper import PetPrefabProxy, StoragePrefabProxy
@@ -74,6 +75,8 @@ class PetSystemController(IGlobalListener, IPetSystemController):
 
     @property
     def isInStorage(self):
+        if not self.lsmObserver:
+            return False
         return self.lsmObserver.currentState
 
     @property
@@ -321,6 +324,7 @@ class PetSystemController(IGlobalListener, IPetSystemController):
         self.lsmObserver = PetStorageObserver()
         g_eventBus.addListener(events.PetSystemEvent.MEDAL_ANIMATION_SHOW, self.__showMedalAnimation, scope=EVENT_BUS_SCOPE.LOBBY)
         g_eventBus.addListener(events.PetObjectHoverEvent.HOVER_IN, self.__playSound, scope=EVENT_BUS_SCOPE.DEFAULT)
+        g_eventBus.addListener(CameraRelatedEvents.IDLE_CAMERA, self.__cameraIdle)
         lsm = getLobbyStateMachine()
         self.__hangarLoadingController.onHangarLoadedAfterLogin += self._onHangarLoadedAfterLogin
         if lsm:
@@ -349,6 +353,7 @@ class PetSystemController(IGlobalListener, IPetSystemController):
         self.__hangarLoadingController.onHangarLoadedAfterLogin -= self._onHangarLoadedAfterLogin
         g_eventBus.removeListener(events.PetSystemEvent.MEDAL_ANIMATION_SHOW, self.__showMedalAnimation, scope=EVENT_BUS_SCOPE.LOBBY)
         g_eventBus.removeListener(events.PetObjectHoverEvent.HOVER_IN, self.__playSound, scope=EVENT_BUS_SCOPE.DEFAULT)
+        g_eventBus.removeListener(CameraRelatedEvents.IDLE_CAMERA, self.__cameraIdle)
         lsm = getLobbyStateMachine()
         if lsm and self.lsmObserver:
             lsm.disconnect(self.lsmObserver)
@@ -429,3 +434,7 @@ class PetSystemController(IGlobalListener, IPetSystemController):
                 SoundGroups.g_instance.playSound2D(PetSounds.PET_EVENT_HIGHLIGHT)
             elif self.isPetInHangarPromoting():
                 SoundGroups.g_instance.playSound2D(PetSounds.HIGHLIGHT)
+
+    def __cameraIdle(self, event):
+        isAFKState = event.ctx['started']
+        self.petProxy.cameraIdle(isAFKState)

@@ -6,7 +6,6 @@ import BigWorld
 from CurrentVehicle import g_currentVehicle
 from adisp import adisp_async, adisp_process
 from gui.SystemMessages import pushMessagesFromResult
-from gui.hangar_cameras.hangar_camera_common import CameraRelatedEvents
 from gui.impl.backport import BackportTooltipWindow, createTooltipData
 from gui.impl.gen import R
 from gui.impl.gen.view_models.views.lobby.easy_tank_equip.common.proposal_model import ProposalType, ProposalModel
@@ -29,7 +28,6 @@ from gui.impl.lobby.easy_tank_equip.easy_tank_equip_vehicle import g_easyTankEqu
 from gui.impl.lobby.hangar.sub_views.vehicle_params_view import EasyTankEquipParamsPresenter
 from gui.impl.pub.view_component import ViewComponent
 from gui.shared import event_dispatcher as shared_events
-from gui.shared import g_eventBus, EVENT_BUS_SCOPE
 from gui.shared.close_confiramtor_helper import CloseConfirmatorsHelper
 from gui.shared.event_dispatcher import showHangar
 from gui.shared.gui_items import GUI_ITEM_TYPE
@@ -157,7 +155,6 @@ class EasyTankEquipPresenter(ViewComponent[EasyTankEquipViewModel]):
 
     def _finalize(self):
         self.__clear()
-        g_eventBus.handleEvent(CameraRelatedEvents(CameraRelatedEvents.FORCE_DISABLE_IDLE_PARALAX_MOVEMENT, ctx={'isDisable': False, 'setIdle': True, 'setParallax': True}), EVENT_BUS_SCOPE.LOBBY)
         super(EasyTankEquipPresenter, self)._finalize()
 
     def _getEvents(self):

@@ -4437,8 +4437,6 @@ package
       
       public static const CAMOUFLAGE_NY2026_9_LABEL:String = "#vehicle_customization:camouflage/ny2026_9/label";
       
-      public static const CAMOUFLAGE_NY2026_10_LABEL:String = "#vehicle_customization:camouflage/ny2026_10/label";
-      
       public static const CAMOUFLAGE_ADVENT_CALENDAR_2025_1_LABEL:String = "#vehicle_customization:camouflage/advent_calendar_2025_1/label";
       
       public static const CAMOUFLAGE_ADVENT_CALENDAR_2025_2_LABEL:String = "#vehicle_customization:camouflage/advent_calendar_2025_2/label";
@@ -15502,12 +15500,6 @@ package
       public static const SPECIAL_STYLE_NY2026_9_DESC:String = "#vehicle_customization:special_style/ny2026_9_desc";
       
       public static const SPECIAL_STYLE_NY2026_9_DESC_LONG:String = "#vehicle_customization:special_style/ny2026_9_desc/long";
-      
-      public static const SPECIAL_STYLE_NY2026_10:String = "#vehicle_customization:special_style/ny2026_10";
-      
-      public static const SPECIAL_STYLE_NY2026_10_DESC:String = "#vehicle_customization:special_style/ny2026_10_desc";
-      
-      public static const SPECIAL_STYLE_NY2026_10_DESC_LONG:String = "#vehicle_customization:special_style/ny2026_10_desc/long";
       
       public static const SPECIAL_STYLE_ADVENT_CALENDAR_2025_1:String = "#vehicle_customization:special_style/advent_calendar_2025_1";
       

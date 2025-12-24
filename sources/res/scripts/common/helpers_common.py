@@ -1,4 +1,4 @@
-import math
+import math, typing
 from constants import VEHICLE_HIT_EFFECT
 from items.components import component_constants
 from soft_exception import SoftException
@@ -6,8 +6,8 @@ from battle_modifiers_common import BattleModifiers
 from Math import Vector3
 from debug_utils import LOG_WARNING, LOG_ERROR
 from items import vehicles
-from wg_typing import *
-if TYPE_CHECKING:
+if typing.TYPE_CHECKING:
+    from typing import Sequence, Optional, Tuple, List, Union, Dict
     from items.vehicle_items import Shell
     from items.readers.prefab_effects_readers import ShotEffectDesc
     from battle_modifiers_common import BATTLE_MODIFIERS_TYPE

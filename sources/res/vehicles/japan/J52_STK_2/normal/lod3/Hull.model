@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
 	<tank>true</tank>
-	<nodefullVisual>vehicles/japan/J52_STK_2/normal/lod3/Hull</nodefullVisual>
 	<parent>vehicles/japan/J52_STK_2/normal/lod4/Hull</parent>
 	<extent>192.000000</extent>
 	<visibilityBox>
 		<min>-1.706342 -0.557547 -4.157489</min>
 		<max>1.703154 0.625361 4.569356</max>
 	</visibilityBox>
+	<nodefullVisual>vehicles/japan/J52_STK_2/normal/lod3/Hull</nodefullVisual>
 </root>

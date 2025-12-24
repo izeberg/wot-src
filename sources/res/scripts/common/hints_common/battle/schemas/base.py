@@ -1,11 +1,8 @@
-import typing, logging
-from dict2model import models
-from dict2model import fields
-from dict2model import validate
-from dict2model import schemas
-from dict2model import exceptions
+import logging, typing
+from dict2model import exceptions, fields, models, schemas, validate
 from dict2model.extensions.battle_type import BattleTypeModel, BattleTypesModel, BattleTypesSchema
 from hints_common.battle.schemas.const import DEFAULT_PRIORITY, DEFAULT_COMPONENT, DEFAULT_SCOPE, RESERVED_SCOPES, MAX_PRIORITY
+from py2to3 import patched_typing
 if typing.TYPE_CHECKING:
     from dict2model.types import ValidatorsType
 _logger = logging.getLogger(__name__)
@@ -65,7 +62,7 @@ class CommonHintContextModel(SchemaDependentModel):
 HMCPropsType = typing.TypeVar('HMCPropsType', bound=CommonHintPropsModel)
 HMCContextType = typing.TypeVar('HMCContextType', bound=CommonHintContextModel)
 
-class CommonHintModel(SchemaDependentModel, typing.Generic[(HMCPropsType, HMCContextType)]):
+class CommonHintModel(SchemaDependentModel, patched_typing.Generic[(HMCPropsType, HMCContextType)]):
     __slots__ = ('props', 'context')
 
     def __init__(self, props, context):

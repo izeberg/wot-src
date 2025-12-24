@@ -5260,18 +5260,12 @@
 			<effects>shot_main</effects>
 			<reloadEffect>reload_autoshoot_reloading_50_75</reloadEffect>
 			<pitchLimits>
-				<minPitch>
-					0.0 -45.0 1.0 -45.0
-					<!--BW_String-->
-				</minPitch>
-				<maxPitch>
-					0.0 7.0 1.0 7.0
-					<!--BW_String-->
-				</maxPitch>
+				<minPitch>0 -45 1 -45</minPitch>
+				<maxPitch>0 7 1 7</maxPitch>
 			</pitchLimits>
 			<turretYawLimits>-180 180</turretYawLimits>
 			<rotationSpeed>35</rotationSpeed>
-			<reloadTime>14</reloadTime>
+			<reloadTime>5</reloadTime>
 			<maxAmmo>400</maxAmmo>
 			<aimingTime>2</aimingTime>
 			<weight>1500</weight>
@@ -5279,22 +5273,19 @@
 			<maxRegenHealth>90</maxRegenHealth>
 			<repairCost>8</repairCost>
 			<invisibilityFactorAtShot>
-				0.225
+				0.112
 				<!--BW_String-->
 			</invisibilityFactorAtShot>
 			<shotDispersionRadius>
-				0.38
+				0.37
 				<!--BW_String-->
 			</shotDispersionRadius>
 			<shotDispersionFactors>
 				<turretRotation>
-					0.1
+					0.11
 					<!--BW_String-->
 				</turretRotation>
-				<afterShot>
-					0.7
-					<!--BW_String-->
-				</afterShot>
+				<afterShot>4</afterShot>
 				<whileGunDamaged>
 					2.0
 					<!--BW_String-->
@@ -5306,7 +5297,7 @@
 			</clip>
 			<autoShoot>
 				<shotDispersionPerShot>
-					0.7
+					0.5
 					<!--BW_String-->
 				</shotDispersionPerShot>
 				<maxShotDispersion>10</maxShotDispersion>
@@ -5332,7 +5323,7 @@
 								<mul>
 									<name>dynAttrs/multShotDispersionFactor</name>
 									<value>
-										2.0
+										1.5
 										<!--BW_String-->
 									</value>
 								</mul>
@@ -5344,7 +5335,7 @@
 								<mul>
 									<name>dynAttrs/multShotDispersionFactor</name>
 									<value>
-										1.5
+										1.25
 										<!--BW_String-->
 									</value>
 								</mul>
@@ -5369,7 +5360,7 @@
 			<shots>
 				<_75mm_AAAC_I_Super>
 					<defaultPortion>
-						0.95
+						0.875
 						<!--BW_String-->
 					</defaultPortion>
 					<speed>1000</speed>
@@ -5378,7 +5369,7 @@
 						<!--BW_String-->
 					</gravity>
 					<maxDistance>720</maxDistance>
-					<piercingPower>180 170</piercingPower>
+					<piercingPower>195 185</piercingPower>
 				</_75mm_AAAC_I_Super>
 				<_75mm_AAAC_II_Super>
 					<defaultPortion>
@@ -5391,11 +5382,11 @@
 						<!--BW_String-->
 					</gravity>
 					<maxDistance>720</maxDistance>
-					<piercingPower>198 188</piercingPower>
+					<piercingPower>212 200</piercingPower>
 				</_75mm_AAAC_II_Super>
 				<_75mm_DARPA_HE_Super>
 					<defaultPortion>
-						0.05
+						0.125
 						<!--BW_String-->
 					</defaultPortion>
 					<speed>800</speed>
@@ -9815,7 +9806,7 @@
 				30.625
 				<!--BW_String-->
 			</rotationSpeed>
-			<reloadTime>12</reloadTime>
+			<reloadTime>6</reloadTime>
 			<maxAmmo>300</maxAmmo>
 			<aimingTime>
 				2.2
@@ -9826,11 +9817,11 @@
 			<maxRegenHealth>100</maxRegenHealth>
 			<repairCost>9</repairCost>
 			<invisibilityFactorAtShot>
-				0.225
+				0.112
 				<!--BW_String-->
 			</invisibilityFactorAtShot>
 			<shotDispersionRadius>
-				0.38
+				0.36
 				<!--BW_String-->
 			</shotDispersionRadius>
 			<shotDispersionFactors>
@@ -9853,7 +9844,7 @@
 			</clip>
 			<autoShoot>
 				<shotDispersionPerShot>
-					0.7
+					0.5
 					<!--BW_String-->
 				</shotDispersionPerShot>
 				<maxShotDispersion>10</maxShotDispersion>
@@ -9879,7 +9870,7 @@
 								<mul>
 									<name>dynAttrs/multShotDispersionFactor</name>
 									<value>
-										2.0
+										1.5
 										<!--BW_String-->
 									</value>
 								</mul>
@@ -9891,7 +9882,7 @@
 								<mul>
 									<name>dynAttrs/multShotDispersionFactor</name>
 									<value>
-										1.5
+										1.25
 										<!--BW_String-->
 									</value>
 								</mul>
@@ -9916,7 +9907,7 @@
 			<shots>
 				<_85mm_AAAC_I_FS>
 					<defaultPortion>
-						0.95
+						0.84
 						<!--BW_String-->
 					</defaultPortion>
 					<speed>1000</speed>
@@ -9925,7 +9916,7 @@
 						<!--BW_String-->
 					</gravity>
 					<maxDistance>720</maxDistance>
-					<piercingPower>195 181</piercingPower>
+					<piercingPower>215 202</piercingPower>
 				</_85mm_AAAC_I_FS>
 				<_85mm_AAAC_II_FS>
 					<defaultPortion>
@@ -9938,11 +9929,11 @@
 						<!--BW_String-->
 					</gravity>
 					<maxDistance>720</maxDistance>
-					<piercingPower>215 204</piercingPower>
+					<piercingPower>233 220</piercingPower>
 				</_85mm_AAAC_II_FS>
 				<_85mm_DARPA_HE_FS>
 					<defaultPortion>
-						0.05
+						0.16
 						<!--BW_String-->
 					</defaultPortion>
 					<speed>800</speed>
@@ -9963,33 +9954,30 @@
 			<effects>shot_main</effects>
 			<reloadEffect>reload_autoshoot_reloading_85_107</reloadEffect>
 			<pitchLimits>
-				<minPitch>
-					0.0 -45.0 1.0 -45.0
-					<!--BW_String-->
-				</minPitch>
-				<maxPitch>
-					0.0 7.0 1.0 7.0
-					<!--BW_String-->
-				</maxPitch>
+				<minPitch>0 -45 1 -45</minPitch>
+				<maxPitch>0 7 1 7</maxPitch>
 			</pitchLimits>
 			<turretYawLimits>-180 180</turretYawLimits>
 			<rotationSpeed>
 				30.625
 				<!--BW_String-->
 			</rotationSpeed>
-			<reloadTime>14</reloadTime>
+			<reloadTime>6</reloadTime>
 			<maxAmmo>300</maxAmmo>
-			<aimingTime>2</aimingTime>
+			<aimingTime>
+				2.1
+				<!--BW_String-->
+			</aimingTime>
 			<weight>1500</weight>
 			<maxHealth>200</maxHealth>
 			<maxRegenHealth>100</maxRegenHealth>
 			<repairCost>9</repairCost>
 			<invisibilityFactorAtShot>
-				0.225
+				0.112
 				<!--BW_String-->
 			</invisibilityFactorAtShot>
 			<shotDispersionRadius>
-				0.38
+				0.36
 				<!--BW_String-->
 			</shotDispersionRadius>
 			<shotDispersionFactors>
@@ -10012,7 +10000,7 @@
 			</clip>
 			<autoShoot>
 				<shotDispersionPerShot>
-					0.7
+					0.5
 					<!--BW_String-->
 				</shotDispersionPerShot>
 				<maxShotDispersion>10</maxShotDispersion>
@@ -10038,7 +10026,7 @@
 								<mul>
 									<name>dynAttrs/multShotDispersionFactor</name>
 									<value>
-										2.0
+										1.5
 										<!--BW_String-->
 									</value>
 								</mul>
@@ -10050,7 +10038,7 @@
 								<mul>
 									<name>dynAttrs/multShotDispersionFactor</name>
 									<value>
-										1.5
+										1.25
 										<!--BW_String-->
 									</value>
 								</mul>
@@ -10075,7 +10063,7 @@
 			<shots>
 				<_85mm_AAAC_I>
 					<defaultPortion>
-						0.95
+						0.84
 						<!--BW_String-->
 					</defaultPortion>
 					<speed>1000</speed>
@@ -10084,7 +10072,7 @@
 						<!--BW_String-->
 					</gravity>
 					<maxDistance>720</maxDistance>
-					<piercingPower>190 180</piercingPower>
+					<piercingPower>210 200</piercingPower>
 				</_85mm_AAAC_I>
 				<_85mm_AAAC_II>
 					<defaultPortion>
@@ -10097,11 +10085,11 @@
 						<!--BW_String-->
 					</gravity>
 					<maxDistance>720</maxDistance>
-					<piercingPower>209 198</piercingPower>
+					<piercingPower>227 215</piercingPower>
 				</_85mm_AAAC_II>
 				<_85mm_DARPA_HE>
 					<defaultPortion>
-						0.05
+						0.16
 						<!--BW_String-->
 					</defaultPortion>
 					<speed>800</speed>
@@ -13995,14 +13983,17 @@
 			<reloadEffect>reload_autoshoot_reloading_85_107</reloadEffect>
 			<pitchLimits>
 				<minPitch>0 -45 1 -45</minPitch>
-				<maxPitch>0 10 1 10</maxPitch>
+				<maxPitch>
+					0 9 0.4 9 0.43 7 0.57 7 0.6 9 1 9
+					<!--BW_String-->
+				</maxPitch>
 			</pitchLimits>
 			<turretYawLimits>-180 180</turretYawLimits>
 			<rotationSpeed>
 				30.625
 				<!--BW_String-->
 			</rotationSpeed>
-			<reloadTime>12</reloadTime>
+			<reloadTime>8</reloadTime>
 			<maxAmmo>250</maxAmmo>
 			<aimingTime>2</aimingTime>
 			<weight>1700</weight>
@@ -14010,7 +14001,7 @@
 			<maxRegenHealth>110</maxRegenHealth>
 			<repairCost>10</repairCost>
 			<invisibilityFactorAtShot>
-				0.238
+				0.119
 				<!--BW_String-->
 			</invisibilityFactorAtShot>
 			<shotDispersionRadius>
@@ -14019,10 +14010,10 @@
 			</shotDispersionRadius>
 			<shotDispersionFactors>
 				<turretRotation>
-					0.05
+					0.08
 					<!--BW_String-->
 				</turretRotation>
-				<afterShot>3</afterShot>
+				<afterShot>4</afterShot>
 				<whileGunDamaged>
 					2.0
 					<!--BW_String-->
@@ -14034,7 +14025,7 @@
 			</clip>
 			<autoShoot>
 				<shotDispersionPerShot>
-					0.6
+					0.45
 					<!--BW_String-->
 				</shotDispersionPerShot>
 				<maxShotDispersion>10</maxShotDispersion>
@@ -14060,7 +14051,7 @@
 								<mul>
 									<name>dynAttrs/multShotDispersionFactor</name>
 									<value>
-										2.0
+										1.5
 										<!--BW_String-->
 									</value>
 								</mul>
@@ -14072,7 +14063,7 @@
 								<mul>
 									<name>dynAttrs/multShotDispersionFactor</name>
 									<value>
-										1.5
+										1.25
 										<!--BW_String-->
 									</value>
 								</mul>
@@ -14097,7 +14088,7 @@
 			<shots>
 				<_90mm_AAAC_I>
 					<defaultPortion>
-						0.95
+						0.8
 						<!--BW_String-->
 					</defaultPortion>
 					<speed>1000</speed>
@@ -14106,7 +14097,7 @@
 						<!--BW_String-->
 					</gravity>
 					<maxDistance>720</maxDistance>
-					<piercingPower>200 190</piercingPower>
+					<piercingPower>220 210</piercingPower>
 				</_90mm_AAAC_I>
 				<_90mm_AAAC_II>
 					<defaultPortion>
@@ -14119,11 +14110,11 @@
 						<!--BW_String-->
 					</gravity>
 					<maxDistance>720</maxDistance>
-					<piercingPower>220 210</piercingPower>
+					<piercingPower>238 226</piercingPower>
 				</_90mm_AAAC_II>
 				<_90mm_DARPA_HE>
 					<defaultPortion>
-						0.05
+						0.2
 						<!--BW_String-->
 					</defaultPortion>
 					<speed>800</speed>
@@ -17062,14 +17053,14 @@
 			<reloadEffect>reload_autoshoot_reloading_50_75</reloadEffect>
 			<pitchLimits>
 				<minPitch>0 -45 1 -45</minPitch>
-				<maxPitch>0 10 1 10</maxPitch>
+				<maxPitch>0 7 1 7</maxPitch>
 			</pitchLimits>
 			<turretYawLimits>-180 180</turretYawLimits>
 			<rotationSpeed>35</rotationSpeed>
-			<reloadTime>16</reloadTime>
+			<reloadTime>5</reloadTime>
 			<maxAmmo>350</maxAmmo>
 			<aimingTime>
-				1.8
+				2.2
 				<!--BW_String-->
 			</aimingTime>
 			<weight>1500</weight>
@@ -17077,22 +17068,19 @@
 			<maxRegenHealth>90</maxRegenHealth>
 			<repairCost>8</repairCost>
 			<invisibilityFactorAtShot>
-				0.247
+				0.123
 				<!--BW_String-->
 			</invisibilityFactorAtShot>
 			<shotDispersionRadius>
-				0.35
+				0.37
 				<!--BW_String-->
 			</shotDispersionRadius>
 			<shotDispersionFactors>
 				<turretRotation>
-					0.1
+					0.11
 					<!--BW_String-->
 				</turretRotation>
-				<afterShot>
-					4.0
-					<!--BW_String-->
-				</afterShot>
+				<afterShot>4</afterShot>
 				<whileGunDamaged>
 					2.0
 					<!--BW_String-->
@@ -17104,7 +17092,7 @@
 			</clip>
 			<autoShoot>
 				<shotDispersionPerShot>
-					0.8
+					0.6
 					<!--BW_String-->
 				</shotDispersionPerShot>
 				<maxShotDispersion>10</maxShotDispersion>
@@ -17130,7 +17118,7 @@
 								<mul>
 									<name>dynAttrs/multShotDispersionFactor</name>
 									<value>
-										2.0
+										1.5
 										<!--BW_String-->
 									</value>
 								</mul>
@@ -17142,7 +17130,7 @@
 								<mul>
 									<name>dynAttrs/multShotDispersionFactor</name>
 									<value>
-										1.5
+										1.25
 										<!--BW_String-->
 									</value>
 								</mul>
@@ -17167,7 +17155,7 @@
 			<shots>
 				<_75mm_AAAC_I_FS>
 					<defaultPortion>
-						0.95
+						0.86
 						<!--BW_String-->
 					</defaultPortion>
 					<speed>1000</speed>
@@ -17176,7 +17164,7 @@
 						<!--BW_String-->
 					</gravity>
 					<maxDistance>720</maxDistance>
-					<piercingPower>180 170</piercingPower>
+					<piercingPower>195 185</piercingPower>
 				</_75mm_AAAC_I_FS>
 				<_75mm_AAAC_II_FS>
 					<defaultPortion>
@@ -17189,11 +17177,11 @@
 						<!--BW_String-->
 					</gravity>
 					<maxDistance>720</maxDistance>
-					<piercingPower>198 188</piercingPower>
+					<piercingPower>212 200</piercingPower>
 				</_75mm_AAAC_II_FS>
 				<_75mm_DARPA_HE_FS>
 					<defaultPortion>
-						0.05
+						0.14
 						<!--BW_String-->
 					</defaultPortion>
 					<speed>800</speed>
@@ -17219,7 +17207,7 @@
 			</pitchLimits>
 			<turretYawLimits>-180 180</turretYawLimits>
 			<rotationSpeed>35</rotationSpeed>
-			<reloadTime>16</reloadTime>
+			<reloadTime>6</reloadTime>
 			<maxAmmo>350</maxAmmo>
 			<aimingTime>
 				1.8
@@ -17254,7 +17242,7 @@
 			</clip>
 			<autoShoot>
 				<shotDispersionPerShot>
-					0.8
+					0.6
 					<!--BW_String-->
 				</shotDispersionPerShot>
 				<maxShotDispersion>10</maxShotDispersion>
@@ -17280,7 +17268,7 @@
 								<mul>
 									<name>dynAttrs/multShotDispersionFactor</name>
 									<value>
-										2.0
+										1.5
 										<!--BW_String-->
 									</value>
 								</mul>
@@ -17292,7 +17280,7 @@
 								<mul>
 									<name>dynAttrs/multShotDispersionFactor</name>
 									<value>
-										1.5
+										1.25
 										<!--BW_String-->
 									</value>
 								</mul>
@@ -17317,7 +17305,7 @@
 			<shots>
 				<_75mm_AAAC_I>
 					<defaultPortion>
-						0.95
+						0.86
 						<!--BW_String-->
 					</defaultPortion>
 					<speed>1000</speed>
@@ -17326,7 +17314,7 @@
 						<!--BW_String-->
 					</gravity>
 					<maxDistance>720</maxDistance>
-					<piercingPower>170 160</piercingPower>
+					<piercingPower>185 175</piercingPower>
 				</_75mm_AAAC_I>
 				<_75mm_AAAC_II>
 					<defaultPortion>
@@ -17339,11 +17327,11 @@
 						<!--BW_String-->
 					</gravity>
 					<maxDistance>720</maxDistance>
-					<piercingPower>187 178</piercingPower>
+					<piercingPower>202 190</piercingPower>
 				</_75mm_AAAC_II>
 				<_75mm_DARPA_HE>
 					<defaultPortion>
-						0.05
+						0.14
 						<!--BW_String-->
 					</defaultPortion>
 					<speed>800</speed>
@@ -18836,10 +18824,10 @@
 			</shotDispersionRadius>
 			<shotDispersionFactors>
 				<turretRotation>
-					0.02
+					0.067
 					<!--BW_String-->
 				</turretRotation>
-				<afterShot>3</afterShot>
+				<afterShot>4</afterShot>
 				<whileGunDamaged>
 					2.0
 					<!--BW_String-->
@@ -18851,7 +18839,7 @@
 			</clip>
 			<autoShoot>
 				<shotDispersionPerShot>
-					0.6
+					0.44
 					<!--BW_String-->
 				</shotDispersionPerShot>
 				<maxShotDispersion>10</maxShotDispersion>
@@ -18905,7 +18893,7 @@
 			<shots>
 				<_90mm_Charlie_3>
 					<defaultPortion>
-						0.95
+						0.8
 						<!--BW_String-->
 					</defaultPortion>
 					<speed>1000</speed>
@@ -18931,7 +18919,7 @@
 				</_90mm_Delta_6>
 				<_90mm_Bravo_1>
 					<defaultPortion>
-						0.05
+						0.2
 						<!--BW_String-->
 					</defaultPortion>
 					<speed>850</speed>

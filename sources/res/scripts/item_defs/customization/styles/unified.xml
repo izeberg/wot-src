@@ -30913,40 +30913,6 @@
 				</projection_decal>
 			</itemFilters>
 		</style>
-		<style>
-			<id>1230</id>
-			<texture>gui/maps/vehicles/styles/ny2026_10.png</texture>
-			<userString>#vehicle_customization:special_style/ny2026_10</userString>
-			<description>#vehicle_customization:special_style/ny2026_10_desc</description>
-			<longDescriptionSpecial>#vehicle_customization:special_style/ny2026_10_desc/long</longDescriptionSpecial>
-			<tags>progression_required c11n2D NY_style</tags>
-			<outfits>
-				<outfit>
-					<season>all</season>
-					<camouflages>
-						<item>
-							<id>1063</id>
-							<patternSize>1</patternSize>
-							<appliedTo>4368</appliedTo>
-							<palette>0</palette>
-						</item>
-					</camouflages>
-					<paints>
-						<item>
-							<id>618</id>
-							<appliedTo>30583</appliedTo>
-						</item>
-					</paints>
-				</outfit>
-			</outfits>
-			<itemFilters>
-				<projection_decal>
-					<include>
-						<itemGroupName>Progression Decals</itemGroupName>
-					</include>
-				</projection_decal>
-			</itemFilters>
-		</style>
 	</itemGroup>
 	<itemGroup>
 		<userString>#vehicle_customization:styles/special_styles</userString>

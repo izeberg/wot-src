@@ -5068,7 +5068,7 @@
 					</clip>
 					<autoShoot>
 						<shotDispersionPerShot>
-							0.6
+							0.44
 							<!--BW_String-->
 						</shotDispersionPerShot>
 						<maxShotDispersion>10</maxShotDispersion>
@@ -5757,20 +5757,26 @@
 				<slot>
 					<slotType>attachment</slotType>
 					<slotId>38000</slotId>
-					<position>0.462688 0.906334 -0.802654</position>
-					<rotation>-0 0 0</rotation>
+					<position>
+						-0 0.906334 -0.868106
+						<!--BW_String-->
+					</position>
+					<rotation>-0 -0 0</rotation>
 					<scale>1 1 1</scale>
 					<applyType>turret</applyType>
-					<size>medium</size>
+					<size>small</size>
 				</slot>
 				<slot>
 					<slotType>attachment</slotType>
 					<slotId>38001</slotId>
-					<position>-0.794969 0.846116 0.094312</position>
-					<rotation>0 -0 0</rotation>
+					<position>
+						-0.7944 0.820187 0.110248
+						<!--BW_String-->
+					</position>
+					<rotation>-0 -0 0</rotation>
 					<scale>1 1 1</scale>
 					<applyType>gunMantlet</applyType>
-					<size>medium</size>
+					<size>small</size>
 				</slot>
 			</customizationSlots>
 			<customization>

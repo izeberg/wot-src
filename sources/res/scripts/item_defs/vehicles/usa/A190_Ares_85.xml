@@ -208,7 +208,7 @@
 		</armor>
 		<primaryArmor>armor_19 armor_3 armor_4</primaryArmor>
 		<weight>22330</weight>
-		<maxHealth>1400</maxHealth>
+		<maxHealth>1440</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>230</maxHealth>
 			<maxRegenHealth>173</maxRegenHealth>
@@ -9287,7 +9287,7 @@
 			</armor>
 			<primaryArmor>armor_2 armor_3 armor_4</primaryArmor>
 			<weight>9200</weight>
-			<maxHealth>300</maxHealth>
+			<maxHealth>360</maxHealth>
 			<rotationSpeed>40</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>170</maxHealth>
@@ -9347,7 +9347,7 @@
 						0.37
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>10</reloadTime>
+					<reloadTime>5</reloadTime>
 					<invisibilityFactorAtShot>
 						0.112
 						<!--BW_String-->
@@ -9378,7 +9378,7 @@
 					</clip>
 					<autoShoot>
 						<shotDispersionPerShot>
-							0.7
+							0.5
 							<!--BW_String-->
 						</shotDispersionPerShot>
 						<maxShotDispersion>10</maxShotDispersion>
@@ -9629,7 +9629,7 @@
 						0.36
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>12</reloadTime>
+					<reloadTime>6</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
 							0.1
@@ -9660,7 +9660,7 @@
 					</clip>
 					<autoShoot>
 						<shotDispersionPerShot>
-							0.7
+							0.5
 							<!--BW_String-->
 						</shotDispersionPerShot>
 						<maxShotDispersion>10</maxShotDispersion>

@@ -103,6 +103,7 @@ class PromoController(IPromoController):
         return
 
     def onLobbyInited(self, event):
+        from gui.lobby_state_machine.states import isInHangarState
         if not isPlayerAccount():
             return
         g_eventBus.addListener(BrowserEvent.BROWSER_CREATED, self.__handleBrowserCreated)
@@ -116,6 +117,7 @@ class PromoController(IPromoController):
             self.__processPromo(self.__notificationsCtrl.getEventsNotifications())
         lsm = getLobbyStateMachine()
         lsm.onVisibleRouteChanged += self.__onVisibleRouteChanged
+        self.__isInHangar = isInHangarState()
 
     @property
     def checkIntervalInBattles(self):

@@ -11433,7 +11433,7 @@
 					<!--BW_String-->
 				</maxPitch>
 			</pitchLimits>
-			<turretYawLimits>-180 180</turretYawLimits>
+			<turretYawLimits>-12 12</turretYawLimits>
 			<rotationSpeed>
 				0.96
 				<!--BW_String-->
@@ -11461,7 +11461,7 @@
 			</shotDispersionRadius>
 			<shotDispersionFactors>
 				<turretRotation>
-					0.08
+					0.06
 					<!--BW_String-->
 				</turretRotation>
 				<afterShot>

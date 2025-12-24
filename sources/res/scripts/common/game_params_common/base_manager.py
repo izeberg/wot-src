@@ -1,6 +1,7 @@
 import logging, typing
 from dict2model.schemas import SchemaModelType
 from game_params_common.schema import GameParamsSchema
+from py2to3 import patched_typing
 from soft_exception import SoftException
 _logger = logging.getLogger(__name__)
 
@@ -13,7 +14,7 @@ class SchemaInfo(object):
 
 TSchemaInfo = typing.TypeVar('TSchemaInfo', bound=SchemaInfo)
 
-class BaseSchemaManager(typing.Generic[TSchemaInfo]):
+class BaseSchemaManager(patched_typing.Generic[TSchemaInfo]):
     __slots__ = ('_schemas', '_usedInReplaySchemaKeys')
 
     def __init__(self):

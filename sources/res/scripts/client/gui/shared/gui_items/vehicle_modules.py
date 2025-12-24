@@ -345,11 +345,17 @@ class VehicleEngine(VehicleModule):
         vehicle.descriptor.installComponent(oldModuleId)
         return conflictEqs
 
-    def hasTurboshaftEngine(self):
-        return g_paramsCache.hasTurboshaftEngine(self.intCD)
+    def hasTurboshaftEngine(self, vehDescr=None):
+        if vehDescr is not None:
+            return vehDescr.hasTurboshaftEngine
+        else:
+            return g_paramsCache.hasTurboshaftEngine(self.intCD)
 
-    def hasRocketAcceleration(self):
-        return g_paramsCache.hasRocketAcceleration(self.intCD)
+    def hasRocketAcceleration(self, vehDescr=None):
+        if vehDescr is not None:
+            return vehDescr.hasRocketAcceleration
+        else:
+            return g_paramsCache.hasRocketAcceleration(self.intCD)
 
     def hasRechargeableNitro(self):
         return g_paramsCache.hasRechargeableNitro(self.intCD)

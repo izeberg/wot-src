@@ -77,10 +77,10 @@ def _hasParticipantToken(comp7Controller=None, itemsCache=None):
 
 class ProgressCacherUI(object):
 
-    def __init__(self, uiSection, subsection):
+    def __init__(self, uiSection, subsection, default):
         self.__uiSection = uiSection
         self.__settings = AccountSettings.getUIFlag(self.__uiSection)
-        self.__progress = self.__settings.get(subsection)
+        self.__progress = self.__settings.setdefault(subsection, default)
 
     def finalize(self):
         self.setUiFlag()

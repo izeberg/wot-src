@@ -10927,21 +10927,6 @@
 			<userString>#vehicle_customization:special_style/ny2026_9</userString>
 			<tags>hiddenInUI</tags>
 		</paint>
-		<paint>
-			<id>618</id>
-			<texture>gui/maps/vehicles/repaints/custom_color_03.png</texture>
-			<color>41 56 97 255</color>
-			<gloss>
-				0.556
-				<!--BW_String-->
-			</gloss>
-			<metallic>
-				0.23
-				<!--BW_String-->
-			</metallic>
-			<userString>#vehicle_customization:special_style/ny2026_10</userString>
-			<tags>hiddenInUI</tags>
-		</paint>
 	</itemGroup>
 	<itemGroup>
 		<name>WCI 2025</name>

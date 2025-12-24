@@ -1,3 +1,4 @@
+import typing
 from enum import IntEnum
 import enum, calendar, time
 from math import cos, radians
@@ -5,9 +6,10 @@ from time import time as timestamp
 from collections import namedtuple
 from itertools import izip, chain
 from Math import Vector3, Vector2
-from wg_typing import *
 from realm import CURRENT_REALM
 from functools import reduce
+if typing.TYPE_CHECKING:
+    from typing import Sequence, Union
 try:
     import BigWorld
 except ImportError:

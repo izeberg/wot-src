@@ -62,7 +62,7 @@ class Comp7TournamentEventBanner(BaseEventBanner):
     def showTimerBeforeEventEnd(self):
         if self.__state == IngameTournamentState.BETWEEN_SHOWMATCHES:
             return self.timerValue + 1000
-        return -1
+        return 0
 
     @property
     def eventStartDate(self):
