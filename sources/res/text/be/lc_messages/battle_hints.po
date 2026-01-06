@@ -8,6 +8,37 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "contextHint/consumablesPanel/medkit"
+msgstr "ВЫЛЕЧИТЬ ЭКИПАЖ"
+
+msgid "contextHint/consumablesPanel/repairkit"
+msgstr "ОТРЕМОНТИРОВАТЬ МОДУЛИ"
+
+msgid "infoBattleContextHint/AmmunitionCrit"
+msgstr ""
+"%(F37A02_Open)sКритическое повреждение боеукладки%(F37A02_Close)s ведёт \n"
+"к моментальному %(F37A02_Open)sуничтожению машины.%(F37A02_Close)s"
+
+msgid "infoBattleContextHint/FueltankCrit"
+msgstr ""
+"Не забудьте%(F37A02_Open)s огнетушитель,%(F37A02_Close)s чтобы\n"
+"%(F37A02_Open)sпредотвратить пожар.%(F37A02_Close)s"
+
+msgid "infoBattleContextHint/InSafetyWhileNotObserved"
+msgstr ""
+"%(F37A02_Open)s«Лампочка» не отображается,%(F37A02_Close)s пока\n"
+"%(F37A02_Open)sвы невидимы%(F37A02_Close)s для противника."
+
+msgid "infoBattleContextHint/KilledWhileObserved"
+msgstr ""
+"Индикатор %(F37A02_Open)s«лампочка» — вы в опасности,%(F37A02_Close)s\n"
+"противник может вас видеть."
+
+msgid "infoBattleContextHint/ModuleDamage"
+msgstr ""
+"Каждый%(F37A02_Open)s повреждённый модуль%(F37A02_Close)s влияет\n"
+"на %(F37A02_Open)sхарактеристики машины.%(F37A02_Close)s"
+
 msgid "penetration/chance/high"
 msgstr "Высокі шанц"
 
@@ -16,3 +47,6 @@ msgstr "Нізкі шанц"
 
 msgid "penetration/chance/medium"
 msgstr "Сярэдні шанец"
+
+msgid "sixthSenseContextHint"
+msgstr "ВАС ОБНАРУЖИЛИ"

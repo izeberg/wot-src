@@ -53,9 +53,9 @@ package net.wg.gui.lobby.vehicleCustomization
    public class CustomizationMainView extends CustomizationMainViewMeta implements ICustomizationMainViewMeta
    {
       
-      private static const BOTTOM_OFFSET:int = 220;
+      private static const BOTTOM_OFFSET:int = 170;
       
-      private static const MIN_RES_BOTTOM_OFFSET:int = 242;
+      private static const MIN_RES_BOTTOM_OFFSET:int = 192;
       
       private static const MIN_RESOLUTION:int = 900;
       

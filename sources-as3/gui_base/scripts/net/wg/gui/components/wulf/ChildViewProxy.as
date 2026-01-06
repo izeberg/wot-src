@@ -123,7 +123,6 @@ package net.wg.gui.components.wulf
       
       public function removeWrapper(param1:IViewWrapper = null, param2:uint = 0) : void
       {
-         dispatchEvent(new Event(Event.REMOVED,true,true));
          App.utils.asserter.assertNotNull(this._wrapper,Errors.CANT_NULL);
          this._wrapper.removeEventListener(Event.RESIZE,this.onWrapperResizeHandler);
          if(!this._disposed && this._wrapper.focused)

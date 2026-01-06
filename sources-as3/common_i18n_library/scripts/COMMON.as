@@ -43,8 +43,6 @@ package
       
       public static const DURATION_MINUTES:String = "#common:duration/minutes";
       
-      public static const DURATION_SHORTMINUTES:String = "#common:duration/shortMinutes";
-      
       public static const DURATION_SECONDS:String = "#common:duration/seconds";
       
       public static const DURATION_UNLIMITED:String = "#common:duration/unlimited";

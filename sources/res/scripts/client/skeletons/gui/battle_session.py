@@ -222,6 +222,10 @@ class IDynamicControllersLocator(object):
     def rankedVOIPController(self):
         raise NotImplementedError
 
+    @property
+    def battleContextHintsCtrl(self):
+        raise NotImplementedError
+
 
 class ISquadInvitationsHandler(object):
     __slots__ = ()
@@ -270,6 +274,9 @@ class IClientArenaVisitor(object):
         raise NotImplementedError
 
     def getComponentSystem(self):
+        raise NotImplementedError
+
+    def getComponent(self, name):
         raise NotImplementedError
 
     def isArenaInWaiting(self):

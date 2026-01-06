@@ -35,6 +35,8 @@ package net.wg.gui.components.controls
       private static const BOTTOM_DASH:String = "_";
        
       
+      public var id:String = "";
+      
       public var subItems:Array;
       
       public var arrowMc:MovieClip;
@@ -46,8 +48,6 @@ package net.wg.gui.components.controls
       public var iconsMc:MovieClip;
       
       public var isNew:Boolean;
-      
-      private var _id:String = "";
       
       private var _type:String = "";
       
@@ -343,16 +343,6 @@ package net.wg.gui.components.controls
       public function set showCheckmark(param1:Boolean) : void
       {
          this._showCheckmark = param1;
-      }
-      
-      public function get id() : String
-      {
-         return this._id;
-      }
-      
-      public function set id(param1:String) : void
-      {
-         this._id = param1;
       }
       
       override protected function callLogEvent(param1:Event) : void

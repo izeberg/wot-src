@@ -1038,12 +1038,66 @@
 			</wwbanks>
 		</mode>
 		<mode>
+			<name>ny26_character01</name>
+			<wwise_language>NY2026/character01</wwise_language>
+			<description/>
+			<invisible>True</invisible>
+			<wwbanks>
+				<bank>NY2026/character01/voiceover.bnk</bank>
+			</wwbanks>
+		</mode>
+		<mode>
+			<name>ny26_character02</name>
+			<wwise_language>NY2026/character02</wwise_language>
+			<description/>
+			<invisible>True</invisible>
+			<wwbanks>
+				<bank>NY2026/character02/voiceover.bnk</bank>
+			</wwbanks>
+		</mode>
+		<mode>
+			<name>ny26_character03</name>
+			<wwise_language>NY2026/character03</wwise_language>
+			<description/>
+			<invisible>True</invisible>
+			<wwbanks>
+				<bank>NY2026/character03/voiceover.bnk</bank>
+			</wwbanks>
+		</mode>
+		<mode>
+			<name>ny26_character04</name>
+			<wwise_language>NY2026/character04</wwise_language>
+			<description/>
+			<invisible>True</invisible>
+			<wwbanks>
+				<bank>NY2026/character04/voiceover.bnk</bank>
+			</wwbanks>
+		</mode>
+		<mode>
+			<name>ny26_character05</name>
+			<wwise_language>NY2026/character05</wwise_language>
+			<description/>
+			<invisible>True</invisible>
+			<wwbanks>
+				<bank>NY2026/character05/voiceover.bnk</bank>
+			</wwbanks>
+		</mode>
+		<mode>
 			<name>ny26_ded_terentiy</name>
 			<wwise_language>NY2026/Ded_Terentiy</wwise_language>
 			<description/>
 			<invisible>True</invisible>
 			<wwbanks>
 				<bank>NY2026/Ded_Terentiy/voiceover.bnk</bank>
+			</wwbanks>
+		</mode>
+		<mode>
+			<name>bp18_5_stalcraft</name>
+			<wwise_language>BP18_5/Stalcraft</wwise_language>
+			<description/>
+			<invisible>True</invisible>
+			<wwbanks>
+				<bank>BP18_5/Stalcraft/voiceover.bnk</bank>
 			</wwbanks>
 		</mode>
 	</modes>

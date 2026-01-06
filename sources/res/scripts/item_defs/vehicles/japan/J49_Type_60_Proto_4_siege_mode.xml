@@ -191,7 +191,7 @@
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>8800</brakeForce>
-			<rotationIsAroundCenter>false</rotationIsAroundCenter>
+			<rotationIsAroundCenter>true</rotationIsAroundCenter>
 			<rotationSpeed>45</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
@@ -1550,7 +1550,7 @@
 					<!--BW_String-->
 				</repairCost>
 			</turretRotatorHealth>
-			<circularVisionRadius>400</circularVisionRadius>
+			<circularVisionRadius>390</circularVisionRadius>
 			<surveyingDeviceHealth>
 				<maxHealth>100</maxHealth>
 				<maxRegenHealth>50</maxRegenHealth>
@@ -1573,7 +1573,7 @@
 						<gun>10</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.44
+						0.48
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
@@ -1581,17 +1581,17 @@
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>
-						1.4
+						1.7
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>
 						0.095
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
-					<multiGunEffects>shot_dualgun_large_L shot_dualgun_large_R</multiGunEffects>
+					<multiGunEffects>shot_dualgun_large_J49_L shot_dualgun_large_J49_R</multiGunEffects>
 					<dualGun>
 						<chargeTime>
-							2.0
+							3.0
 							<!--BW_String-->
 						</chargeTime>
 						<shootImpulse>20</shootImpulse>
@@ -1608,7 +1608,7 @@
 							0.5
 							<!--BW_String-->
 						</chargeThreshold>
-						<afterShotDelay>1</afterShotDelay>
+						<afterShotDelay>3</afterShotDelay>
 						<preChargeIndication>
 							0.25
 							<!--BW_String-->

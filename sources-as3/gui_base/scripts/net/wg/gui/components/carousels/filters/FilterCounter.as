@@ -63,6 +63,8 @@ package net.wg.gui.components.carousels.filters
       
       private var _contentAlign:String = "center";
       
+      private var _closeButtonSimpleTooltip:String = null;
+      
       public function FilterCounter()
       {
          super();
@@ -75,6 +77,7 @@ package net.wg.gui.components.carousels.filters
          this.countTFContainer.alpha = 0;
          this.closeButton.alpha = 0;
          this.closeButton.addEventListener(ButtonEvent.CLICK,this.onCloseButtonClickHandler);
+         this.closeButton.addEventListener(MouseEvent.ROLL_OVER,this.onCloseButtonRollOverHandler);
          if(this.hitMc != null)
          {
             this.hitMc.addEventListener(MouseEvent.MOUSE_OVER,this.onHitMcMouseOverHandler);
@@ -168,20 +171,10 @@ package net.wg.gui.components.carousels.filters
          this.countTFContainer.dispose();
          this.countTFContainer = null;
          this.closeButton.removeEventListener(ButtonEvent.CLICK,this.onCloseButtonClickHandler);
+         this.closeButton.removeEventListener(MouseEvent.ROLL_OVER,this.onCloseButtonRollOverHandler);
          this.closeButton.dispose();
          this.closeButton = null;
          super.onDispose();
-      }
-      
-      private function disposeTweens() : void
-      {
-         var _loc1_:Tween = null;
-         for each(_loc1_ in this._tweens)
-         {
-            _loc1_.paused = true;
-            _loc1_.dispose();
-         }
-         this._tweens.length = 0;
       }
       
       public function blink() : void
@@ -200,6 +193,11 @@ package net.wg.gui.components.carousels.filters
             this.blinkMc.gotoAndStop(GLOW_IDLE_STATE);
             invalidate(SHOW_HIDE_INVALID);
          }
+      }
+      
+      public function setCloseButtonSimpleTooltip(param1:String) : void
+      {
+         this._closeButtonSimpleTooltip = param1;
       }
       
       public function setCloseButtonTooltip(param1:String) : void
@@ -224,6 +222,16 @@ package net.wg.gui.components.carousels.filters
          {
             invalidate(SHOW_HIDE_INVALID);
          }
+      }
+      
+      private function disposeTweens() : void
+      {
+         var _loc1_:Tween = null;
+         for each(_loc1_ in this._tweens)
+         {
+            _loc1_.dispose();
+         }
+         this._tweens.length = 0;
       }
       
       private function updateState() : void
@@ -278,6 +286,14 @@ package net.wg.gui.components.carousels.filters
       {
          this.hide();
          dispatchEvent(new FiltersEvent(FiltersEvent.RESET_ALL_FILTERS,0,true));
+      }
+      
+      private function onCloseButtonRollOverHandler(param1:MouseEvent) : void
+      {
+         if(StringUtils.isNotEmpty(this._closeButtonSimpleTooltip))
+         {
+            App.toolTipMgr.show(this._closeButtonSimpleTooltip);
+         }
       }
       
       private function onHitMcMouseOverHandler(param1:MouseEvent) : void

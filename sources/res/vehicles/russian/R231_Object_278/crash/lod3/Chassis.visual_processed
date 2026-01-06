@@ -69,6 +69,7 @@
 		<node>V_BlendBone</node>
 		<geometry>
 			<vertices>track_R_Shape.vertices</vertices>
+			<stream>track_R_Shape.uv2</stream>
 			<primitive>track_R_Shape.indices</primitive>
 			<primitiveGroup>
 				0
@@ -101,7 +102,10 @@
 					</property>
 					<property>
 						g_detailUVTiling
-						<Vector4>3.507000 3.507000 0.000000 0.000000</Vector4>
+						<Vector4>
+							3.507 3.507 0.0 0.0
+							<!--BW_String-->
+						</Vector4>
 					</property>
 					<property>
 						normalMap
@@ -129,6 +133,7 @@
 		<node>V_BlendBone</node>
 		<geometry>
 			<vertices>track_L_Shape.vertices</vertices>
+			<stream>track_L_Shape.uv2</stream>
 			<primitive>track_L_Shape.indices</primitive>
 			<primitiveGroup>
 				0
@@ -161,7 +166,10 @@
 					</property>
 					<property>
 						g_detailUVTiling
-						<Vector4>3.507000 3.507000 0.000000 0.000000</Vector4>
+						<Vector4>
+							3.507 3.507 0.0 0.0
+							<!--BW_String-->
+						</Vector4>
 					</property>
 					<property>
 						normalMap
@@ -188,6 +196,6 @@
 		<min>-1.691581 0.000563 -3.581563</min>
 		<max>1.691581 1.064762 3.558492</max>
 	</boundingBox>
-	<geometrySize>60552</geometrySize>
+	<geometrySize>70968</geometrySize>
 	<minUVDensity>0.365211</minUVDensity>
 </root>

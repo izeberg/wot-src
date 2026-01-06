@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/russian/R231_Object_278/_skins/R231_Object_278_3Dst_01/normal/lod3/Gun_01</nodefullVisual>
+	<parent>vehicles/russian/R231_Object_278/_skins/R231_Object_278_3Dst_01/normal/lod4/Gun_01</parent>
+	<tank>true</tank>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-0.220512 -0.262930 0.002387</min>
+		<max>0.919617 0.310007 6.066398</max>
+	</visibilityBox>
+</root>

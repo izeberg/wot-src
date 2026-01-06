@@ -1255,15 +1255,6 @@ msgstr "Спісана асабістых ачкоў славы"
 msgid "platformCurrencyMsg/debited/freeXP"
 msgstr "Вольны досвед спісаны"
 
-msgid "platformCurrencyMsg/debited/nyractiv"
-msgstr "Предметы для активности"
-
-msgid "platformCurrencyMsg/debited/nyrfood"
-msgstr "Продукты питания"
-
-msgid "platformCurrencyMsg/debited/nyrfun"
-msgstr "Предметы комфорта"
-
 msgid "platformCurrencyMsg/debited/sacoin"
 msgstr "Спісана жэтонаў за выслугу гадоў"
 
@@ -1281,15 +1272,6 @@ msgstr "Налічана асабістых ачкоў славы"
 
 msgid "platformCurrencyMsg/received/freeXP"
 msgstr "Атрымана вольнага досведу"
-
-msgid "platformCurrencyMsg/received/nyractiv"
-msgstr "Предметы для активности"
-
-msgid "platformCurrencyMsg/received/nyrfood"
-msgstr "Продукты питания"
-
-msgid "platformCurrencyMsg/received/nyrfun"
-msgstr "Предметы комфорта"
 
 msgid "platformCurrencyMsg/received/sacoin"
 msgstr "Дададзена жэтонаў за выслугу гадоў"
@@ -1814,8 +1796,8 @@ msgstr "Атрымана ўзнагарода за пройдзеныя этап
 
 msgid "serviceChannelMessages/battlePassReward/battle/chapterFinal/text"
 msgstr ""
-"Вы завяршылі раздзел %(chapter)s!\n"
-"Атрымана ўзнагарода:"
+"Вы завершили главу %(chapter)s.\n"
+"Получена награда:"
 
 msgid ""
 "serviceChannelMessages/battlePassReward/battle/chapterFinalNotFind/text"
@@ -1828,8 +1810,8 @@ msgstr "Працягвайце гуляць і здабываць ачкі!"
 
 msgid "serviceChannelMessages/battlePassReward/battle/final/text"
 msgstr ""
-"Вы завяршылі ўсе раздзелы Баявога пропуска %(season)s сезона!\n"
-"Атрымана ўзнагарода:"
+"Вы завершили все главы Боевого пропуска %(season)s сезона.\n"
+"Получена награда:"
 
 msgid "serviceChannelMessages/battlePassReward/battle/newLevel/text"
 msgstr ""

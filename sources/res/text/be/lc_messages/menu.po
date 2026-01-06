@@ -1102,6 +1102,9 @@ msgstr "Стварыць звяз для «Націску»"
 msgid "contextMenu/createContactNote"
 msgstr "Стварыць нататку"
 
+msgid "contextMenu/createEpicSquad"
+msgstr "Создать взвод для Линии фронта"
+
 msgid "contextMenu/createEventSquad"
 msgstr "Стварыць звяз падзеі"
 
@@ -1372,9 +1375,9 @@ msgstr "Адклікаць запрашэнне ў звяз"
 
 msgid "copy"
 msgstr ""
-"© Леста Игры, 2022-2025. Гульня «Мир танков» заснавана на інтэлектуальнай "
-"уласнасці трэціх асоб. Усе правы на аб'екты правоў трэціх асоб належаць іх "
-"законным праваўладальнікам."
+"© Леста Игры, 2022-2026. Игра «Мир танков» основана на интеллектуальной "
+"собственности третьих лиц. Все права на объекты прав третьих лиц принадлежат"
+" их законным правообладателям."
 
 msgid "counter/newCounter"
 msgstr "НОВАЕ"
@@ -1589,6 +1592,9 @@ msgstr "Перайсці ў калекцыю"
 msgid "cst_item_ctx_menu/information"
 msgstr "Інфармацыя"
 
+msgid "cst_item_ctx_menu/markAsFavorite"
+msgstr "Добавить в «Избранное»"
+
 msgid "cst_item_ctx_menu/nationChange"
 msgstr "Змяніць дзяржаву"
 
@@ -1654,6 +1660,9 @@ msgstr "Прыбраць са слота"
 
 msgid "cst_item_ctx_menu/unload"
 msgstr "Выгрузіць на Склад"
+
+msgid "cst_item_ctx_menu/unmarkAsFavorite"
+msgstr "Убрать из категории «Избранное»"
 
 msgid "cst_item_ctx_menu/upgrade"
 msgstr "Наладзіць"
@@ -2162,13 +2171,13 @@ msgstr ""
 
 msgid "extraParams/name/abilityCooldownBonus"
 msgstr ""
-"Параметр, отвечающий за уменьшение времени перезарядки модификации при "
-"успешном уничтожении техники противника во время действия модификации."
+"Параметр, які адказвае за памяншэнне часу перанабівання мадыфікацыі пры "
+"паспяховым знішчэнні тэхнікі праціўніка падчас дзеяння мадыфікацыі."
 
 msgid "extraParams/name/abilityDurationBonus"
 msgstr ""
-"Параметр, отвечающий за увеличение времени действия модификации при успешном"
-" пробитии техники противника во время действия модификации."
+"Параметр, які адказвае за павелічэнне часу дзеяння мадыфікацыі пры "
+"паспяховым прабіцці тэхнікі праціўніка падчас дзеяння мадыфікацыі."
 
 msgid "extraParams/name/artNotificationDelayFactor"
 msgstr ""
@@ -2232,7 +2241,7 @@ msgid "extraParams/name/enemyModulesCrewCritChance"
 msgstr ""
 "Параметр, отвечающий за изменение шанса нанести критические повреждения "
 "экипажу и внутренним модулям противника. Работает только для бронебойных, "
-"подкалиберных, бронебойных оперенных подкалиберных и кумулятивных снарядов, "
+"подкалиберных, бронебойных оперённых подкалиберных и кумулятивных снарядов, "
 "а также для бронебойного и кумулятивного НУРСа."
 
 msgid "extraParams/name/equipmentPreparationTime"
@@ -2277,8 +2286,8 @@ msgstr "Параметр, які адказвае за шанц пазбегну
 
 msgid "extraParams/name/speedLimitsBonus"
 msgstr ""
-"Параметр, отвечающий за увеличение максимальной скорости / скорости заднего "
-"хода."
+"Параметр, які адказвае за павелічэнне максімальнай хуткасці / хуткасці "
+"задняга ходу."
 
 msgid "extraParams/name/stunResistanceEffectFactor"
 msgstr ""
@@ -2380,8 +2389,8 @@ msgstr ""
 
 msgid "extraParams/name/vehicleGunAimSpeed"
 msgstr ""
-"Параметр, отвечающей за увеличение скорости сведения во время действия "
-"модификации."
+"Параметр, які адказвае за павелічэнне хуткасці навядзення падчас дзеяння "
+"мадыфікацыі."
 
 msgid "extraParams/name/vehicleGunAndGunClipCooldown"
 msgstr ""
@@ -2392,21 +2401,24 @@ msgstr ""
 msgid "extraParams/name/vehicleGunDamage"
 msgstr ""
 "Параметр, отвечающей за увеличение урона при активации модификации / при "
-"пробитии машины противника во время действия модификации."
+"пробитии машины противника во время действия модификации. Значение прироста "
+"урона при каждом пробитии суммируется с приростом урона при активации. "
+"Бонусный урон прибавляется и применяется только на время действия "
+"модификации."
 
 msgid "extraParams/name/vehicleGunKillReloadTime"
 msgstr ""
-"Параметр, отвечающий за перезарядку орудия после уничтожения противника во "
-"время действия модификации."
+"Параметр, які адказвае за перанабіванне гарматы пасля знішчэння праціўніка "
+"падчас дзеяння мадыфікацыі."
 
 msgid "extraParams/name/vehicleGunReloadPenalty"
 msgstr ""
-"Параметр, отвечающий за однократное замедление времени заряжания перед следующим выстрелом. Чем больше произведено выстрелов в течение действия модификации, тем больше времени добавляется к заряжанию после окончания действия модификации.\n"
-"Штраф сбрасывается после выстрела. Навык «Интуиция» не сбрасывает наложенный штраф."
+"Значение штрафа прибавляется к общему времени заряжания после каждого выстрела и применяется после окончания действия модификации. Чем больше произведено выстрелов в течение действия модификации, тем больше времени добавляется к заряжанию после окончания действия модификации.\n"
+"Штраф сбрасывается после выстрела или смены снаряда."
 
 msgid "extraParams/name/vehicleGunReloadTime"
 msgstr ""
-"Параметр, отвечающий за уменьшение времени перезарядки орудия в течение "
+"Значение, на которое будет уменьшено время перезарядки орудия в течение "
 "времени действия модификации."
 
 msgid "extraParams/name/vehicleGunReloadTimeReceiveShot"
@@ -2437,6 +2449,14 @@ msgid "extraParams/name/vehicleGunShotDispersionWhileGunDamaged"
 msgstr ""
 "Параметр, які адказвае за тое, наколькі памяншаецца дакладнасць гарматы ў "
 "пашкоджаным стане. Чым вышэйшае значэнне, тым меншы штраф."
+
+msgid "extraParams/name/vehicleGunSpecDamage"
+msgstr ""
+"Параметр, отвечающей за увеличение урона при активации модификации / при "
+"пробитии машины противника во время действия модификации. Значение прироста "
+"урона при каждом пробитии суммируется с приростом урона при активации. "
+"Бонусный урон прибавляется и применяется только на время действия "
+"модификации."
 
 msgid "extraParams/name/vehicleInvisibilityAfterShot"
 msgstr "Параметр, які адказвае за скрытасць пасля стрэлу."
@@ -2818,7 +2838,7 @@ msgid "header/account/premium/days"
 msgstr "сут"
 
 msgid "header/account/premium/hours"
-msgstr "гадз"
+msgstr "ч."
 
 msgid "header/customization/season/desert"
 msgstr "ПУСТЫННЫ"
@@ -2860,7 +2880,7 @@ msgid "header/level/5"
 msgstr "V"
 
 msgid "header/level/6"
-msgstr "VІ"
+msgstr "VI"
 
 msgid "header/level/7"
 msgstr "VII"
@@ -4561,6 +4581,9 @@ msgstr ""
 msgid "moduleInfo/autoShootFlameGunLabel"
 msgstr "Агнямётная безмагазінная сістэма"
 
+msgid "moduleInfo/autoShootGunLabel"
+msgstr "Автоматическое орудие"
+
 msgid "moduleInfo/clipDualGunLabel"
 msgstr "Спараная ўстаноўка з сістэмай набівання"
 
@@ -4673,6 +4696,9 @@ msgstr "Час падключэння агнясумесі"
 
 msgid "moduleInfo/params/autoShootFlameOverheatCoolingTime"
 msgstr "Час ахаладжэння гарматы пры перагрэве"
+
+msgid "moduleInfo/params/autoShootShellsCount"
+msgstr "Снарядов в ленте"
 
 msgid "moduleInfo/params/avgDamage"
 msgstr "Сярэднія пашкоджанні"
@@ -4809,7 +4835,7 @@ msgid "moduleInfo/params/maxSteeringLockAngle"
 msgstr "Максімальны вугал павароту колаў"
 
 msgid "moduleInfo/params/noPiercingDistance/footnote"
-msgstr "* для данного типа снарядов не зависит от дистанции."
+msgstr "* для гэтага тыпу снарадаў не залежыць ад дыстанцыі."
 
 msgid "moduleInfo/params/noPiercingDistance/footnote/maxDistance"
 msgstr ", максімальная далёкасць палёту 400 м"
@@ -4821,12 +4847,13 @@ msgid "moduleInfo/params/piercingDistance"
 msgstr "%(dist)s м"
 
 msgid "moduleInfo/params/piercingDistance/footnote"
-msgstr "* для этих снарядов зависит от дистанции (%(minDist)s–%(maxDist)s м)."
+msgstr ""
+"* для гэтых снарадаў залежыць ад дыстанцыі (%(minDist)s–%(maxDist)s м)."
 
 msgid "moduleInfo/params/piercingDistanceFactor/footnote"
 msgstr ""
-"* чем больше расстояние, которое пролетит снаряд, тем выше скорость снаряда,"
-" а следовательно его урон и бронепробитие"
+"* чым большая адлегласць, якую праляціць снарад, тым вышэйшая хуткасць "
+"снарада, а значыць яго пашкоджанні і бронепрабівальнасць"
 
 msgid "moduleInfo/params/piercingDistanceHeader"
 msgstr "Сярэдняя бронепрабівальнасць (мм) — адлегласць"
@@ -6439,15 +6466,6 @@ msgstr "?empty?"
 msgid "tankCarousel/vehicleStates/notpresent"
 msgstr "Няма ў Гаражы"
 
-msgid "tankCarousel/vehicleStates/nyTank"
-msgstr "Новогодняя техника"
-
-msgid "tankCarousel/vehicleStates/nyTankEmptyCount"
-msgstr "Вольных слотаў: %(count)d"
-
-msgid "tankCarousel/vehicleStates/nyTankSlotsFull"
-msgstr "Все слоты заняты"
-
 msgid "tankCarousel/vehicleStates/rentable"
 msgstr "Пракат машыны даступны"
 
@@ -6588,7 +6606,7 @@ msgid "tank_params/cnt"
 msgstr "(шт.)"
 
 msgid "tank_params/cooldown"
-msgstr "Время перезарядки модификации"
+msgstr "Час перазарадкі мадыфікацыі"
 
 msgid "tank_params/damage"
 msgstr "Пашкоджанні базавым снарадам"
@@ -6609,7 +6627,7 @@ msgid "tank_params/dualAccuracyCoolingDelay/extendedTitle"
 msgstr "Час ахаладжэння гарматы пасля стрэлу"
 
 msgid "tank_params/duration"
-msgstr "Время действия модификации"
+msgstr "Час дзеяння мадыфікацыі"
 
 msgid "tank_params/empty"
 msgstr " "
@@ -6765,7 +6783,7 @@ msgid "tank_params/reuseCount"
 msgstr "Выкарыстанняў за бой"
 
 msgid "tank_params/reuseCount/extendedTitle"
-msgstr "Количество применений модификации"
+msgstr "Колькасць выкарыстанняў мадыфікацыі"
 
 msgid "tank_params/rocketAccelerationEnginePower"
 msgstr "Магутнасць рухавіка (з паскаральнікамі)"

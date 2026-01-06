@@ -11,6 +11,7 @@
 			<angleZ>325.000000</angleZ>
 		</deferred>
 		<sunScale>1.400000</sunScale>
+		<sunlightAngularSize>0.000000</sunlightAngularSize>
 		<sunColor>248.624985 168.907349 88.261879</sunColor>
 		<sunTexture>system/maps/sun_small.dds</sunTexture>
 		<sunLightColor>1.000000 0.784314 0.639216</sunLightColor>
@@ -40,6 +41,8 @@
 			<scatterColor>1.000000 0.403922 0.000000 10.355051</scatterColor>
 			<skyLow>0.110000</skyLow>
 			<skyHigh>0.260000</skyHigh>
+			<useCustomCenter>false</useCustomCenter>
+			<centerPosition>0.000000 0.000000 0.000000</centerPosition>
 		</deferred>
 		<forward>
 			<useEdgeFog>true</useEdgeFog>
@@ -50,6 +53,8 @@
 			<startDistance>100.000000</startDistance>
 			<skyLow>0.000000</skyLow>
 			<skyHigh>0.210000</skyHigh>
+			<useCustomCenter>false</useCustomCenter>
+			<centerPosition>0.000000 0.000000 0.000000</centerPosition>
 		</forward>
 	</Fog>
 	<HDR>
@@ -95,6 +100,19 @@
 		<colorCorrection>
 			<map>system/maps/post_processing/cube/P_curve_1ACF-40hssd_210bfepic.dds</map>
 		</colorCorrection>
+		<rainDistortion>
+			<map>system/maps/void_cch.dds</map>
+			<enable>false</enable>
+			<dropsStrength>1.000000</dropsStrength>
+			<dripsStrength>1.000000</dripsStrength>
+			<dropsFrequency>0.250000</dropsFrequency>
+			<tileDrops>10.000000</tileDrops>
+			<textMip>1.000000</textMip>
+			<dripFrequency>2.000000</dripFrequency>
+			<dripTileMove>1.000000 1.000000 1.000000 1.000000</dripTileMove>
+			<dropsSize>0.700000 0.100000</dropsSize>
+			<tileNoise>1.000000 1.000000</tileNoise>
+		</rainDistortion>
 		<filmgrain>
 			<enable>true</enable>
 			<scale>0.120000</scale>
@@ -224,6 +242,7 @@
 		<enable>true</enable>
 		<applyOnVehicles>false</applyOnVehicles>
 		<colorTintMap>spaces/210_bf_epic_desert/overlay_tint_map.dds</colorTintMap>
+		<layerMask/>
 		<layer>
 			<texture>maps/overlay/Sand_gravel_bright.dds</texture>
 			<normalMap>maps/overlay/Sand_gravel_bright_NM.dds</normalMap>
@@ -261,4 +280,36 @@
 		<farDist>20.000000</farDist>
 		<blurRadius>0.006000</blurRadius>
 	</DOF>
+	<VFXLighting>
+		<PsDirLightMultDeferred>1.000000</PsDirLightMultDeferred>
+		<PsIndirLightMultDeferred>1.000000</PsIndirLightMultDeferred>
+		<PsDirLightMultForward>1.000000</PsDirLightMultForward>
+		<PsIndirLightMultForward>1.000000</PsIndirLightMultForward>
+		<PsIllumMultDeferred>1.000000</PsIllumMultDeferred>
+		<PsIllumMultForward>1.000000</PsIllumMultForward>
+		<PsRibbonMultDeferred>1.000000</PsRibbonMultDeferred>
+		<PsRibbonMultForward>1.000000</PsRibbonMultForward>
+	</VFXLighting>
+	<WeatherDependentSettings>
+		<environment_dependent_emission>
+			<enabled>false</enabled>
+		</environment_dependent_emission>
+		<environment_dependent_lights>
+			<enabled>false</enabled>
+		</environment_dependent_lights>
+	</WeatherDependentSettings>
+	<AlbedoScaleSettings>
+		<deferred>
+			<enable>false</enable>
+			<baseColor>0.000000 0.000000 0.000000</baseColor>
+			<lerpCoeff>1.000000</lerpCoeff>
+			<contrast>1.000000</contrast>
+		</deferred>
+		<forward>
+			<enable>false</enable>
+			<baseColor>0.000000 0.000000 0.000000</baseColor>
+			<lerpCoeff>1.000000</lerpCoeff>
+			<contrast>1.000000</contrast>
+		</forward>
+	</AlbedoScaleSettings>
 </root>

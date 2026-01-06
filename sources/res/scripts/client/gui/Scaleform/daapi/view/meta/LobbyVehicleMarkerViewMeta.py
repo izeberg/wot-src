@@ -9,10 +9,6 @@ class LobbyVehicleMarkerViewMeta(View):
         if self._isDAAPIInited():
             return self.flashObject.as_createMarker(id, vType, vName)
 
-    def as_createRaccoonMarkerS(self, id, label):
-        if self._isDAAPIInited():
-            return self.flashObject.as_createRaccoonMarker(id, label)
-
     def as_createPlatoonMarkerS(self, id, vType, pName):
         if self._isDAAPIInited():
             return self.flashObject.as_createPlatoonMarker(id, vType, pName)

@@ -1143,29 +1143,17 @@
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>tank_proxy_skinned</identifier>
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
 					<materialKind>0</materialKind>
-					<collisionFlags>255</collisionFlags>
-					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
-					</property>
+					<identifier>tank_proxy_skinned</identifier>
+					<collisionFlags>0</collisionFlags>
 					<property>
 						diffuseMap
 						<Texture>vehicles/british/GB48_FV215b_183/_skins/GB48_FV215b_183_3Dst_02/FV215b_183_3Dst_02_proxy_AM.dds</Texture>
 					</property>
 					<property>
-						excludeMaskAndAOMap
-						<Texture>vehicles/british/GB48_FV215b_183/_skins/GB48_FV215b_183_3Dst_02/FV215b_183_3Dst_02_proxy_AO.dds</Texture>
-					</property>
-					<property>
-						g_detailUVTiling
-						<Vector4>4.208220 4.208220 0.000000 0.000000</Vector4>
-					</property>
-					<property>
-						metallicDetailMap
-						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 					<property>
 						metallicGlossMap
@@ -1175,8 +1163,16 @@
 						normalMap
 						<Texture>vehicles/british/GB48_FV215b_183/_skins/GB48_FV215b_183_3Dst_02/FV215b_183_3Dst_02_proxy_ANM.dds</Texture>
 					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/british/GB48_FV215b_183/_skins/GB48_FV215b_183_3Dst_02/FV215b_183_3Dst_02_proxy_AO.dds</Texture>
+					</property>
+					<property>
+						alphaReference
+						<Int>0</Int>
+					</property>
 				</material>
-				<groupOrigin>-1.455783 0.678815 -0.133358</groupOrigin>
+				<groupOrigin>-1.455783 0.678815 -0.124058</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -1189,29 +1185,17 @@
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>tank_proxy_skinned</identifier>
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
 					<materialKind>0</materialKind>
-					<collisionFlags>255</collisionFlags>
-					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
-					</property>
+					<identifier>tank_proxy_skinned</identifier>
+					<collisionFlags>0</collisionFlags>
 					<property>
 						diffuseMap
 						<Texture>vehicles/british/GB48_FV215b_183/_skins/GB48_FV215b_183_3Dst_02/FV215b_183_3Dst_02_proxy_AM.dds</Texture>
 					</property>
 					<property>
-						excludeMaskAndAOMap
-						<Texture>vehicles/british/GB48_FV215b_183/_skins/GB48_FV215b_183_3Dst_02/FV215b_183_3Dst_02_proxy_AO.dds</Texture>
-					</property>
-					<property>
-						g_detailUVTiling
-						<Vector4>4.208220 4.208220 0.000000 0.000000</Vector4>
-					</property>
-					<property>
-						metallicDetailMap
-						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 					<property>
 						metallicGlossMap
@@ -1221,15 +1205,23 @@
 						normalMap
 						<Texture>vehicles/british/GB48_FV215b_183/_skins/GB48_FV215b_183_3Dst_02/FV215b_183_3Dst_02_proxy_ANM.dds</Texture>
 					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/british/GB48_FV215b_183/_skins/GB48_FV215b_183_3Dst_02/FV215b_183_3Dst_02_proxy_AO.dds</Texture>
+					</property>
+					<property>
+						alphaReference
+						<Int>0</Int>
+					</property>
 				</material>
-				<groupOrigin>1.455783 0.678815 -0.133358</groupOrigin>
+				<groupOrigin>1.455783 0.678815 -0.124058</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<constraints/>
 	<boundingBox>
-		<min>-1.824528 0.023777 -3.682695</min>
-		<max>1.824528 1.333852 3.949410</max>
+		<min>-1.824528 0.023777 -3.691995</min>
+		<max>1.824528 1.333852 3.940110</max>
 	</boundingBox>
 	<geometrySize>5688</geometrySize>
 	<minUVDensity>0.004552</minUVDensity>

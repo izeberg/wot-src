@@ -8,7 +8,6 @@
 		<fn_effect_bin>particles/content_forward/pfx/environment/interior/01_karelia_butterfly_red.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/interior/01_karelia_butterfly_white.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/interior/128_last_frontier_v_flies.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/pfx/environment/interior/128_last_frontier_v_splash_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/hd_bld_eu_070_castle_crash_11.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/hd_env_am_075_trashcan.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/hd_env_eu_074_sign_02.vfx</fn_effect_bin>
@@ -60,6 +59,7 @@
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_env422_walllamp.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_env603_washingline_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_env612_swing.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_env614_scaffolding_crash.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_env_101_05_beehive_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_env_101_05_beehive_2.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_env_101_10_chickencoop.vfx</fn_effect_bin>
@@ -81,6 +81,8 @@
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_envas_012_recyclebin4.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_enveu_009_townenv_flowerpot_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_enveu_014_streetsigns_01.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_envsu_83_05_scaffold1.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_envsu_83_05_scaffold2.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_fuel_env418_oldgmercedes.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_fuel_mle008_canisters1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_gaf_112_04_bridgefence_01.vfx</fn_effect_bin>
@@ -121,9 +123,6 @@
 		<fn_effect_bin>particles/environment/interior/01_karelia_butterfly_red.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/01_karelia_butterfly_white.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/128_last_frontier_v_flies.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/128_last_frontier_v_splash_01.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/128_last_frontier_v_water_displacement.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/60_asia_miao_river_foam.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_bld_eu_070_castle_crash_11.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_env_am_075_trashcan.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_env_eu_074_sign_02.eff</fn_effect_bin>
@@ -174,6 +173,7 @@
 		<fn_effect_bin>particles/environment/objects/inf_env422_walllamp.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_env603_washingline_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_env612_swing.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_env614_scaffolding_crash.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_env_101_05_beehive_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_env_101_05_beehive_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_env_101_10_chickencoop.eff</fn_effect_bin>
@@ -195,6 +195,8 @@
 		<fn_effect_bin>particles/environment/objects/inf_envas_012_recyclebin4.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_enveu_009_townenv_flowerpot_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_enveu_014_streetsigns_01.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_envsu_83_05_scaffold1.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_envsu_83_05_scaffold2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_fuel_env418_oldgmercedes2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_fuel_mle008_canisters1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_gaf_112_04_bridgefence_01.eff</fn_effect_bin>
@@ -255,9 +257,6 @@
 		<fn_effect_bin>particles/content_deferred/pfx/environment/interior/01_karelia_butterfly_red.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/interior/01_karelia_butterfly_white.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/interior/128_last_frontier_v_flies.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/pfx/environment/interior/128_last_frontier_v_splash_01.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/pfx/environment/interior/128_last_frontier_v_water_displacement.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/pfx/environment/interior/60_asia_miao_river_foam.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/hd_bld_eu_070_castle_crash_11.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/hd_env_am_075_trashcan.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/hd_env_eu_074_sign_02.vfx</fn_effect_bin>
@@ -309,6 +308,7 @@
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_env422_walllamp.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_env603_washingline_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_env612_swing.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_env614_scaffolding_crash.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_env_101_05_beehive_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_env_101_05_beehive_2.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_env_101_10_chickencoop.vfx</fn_effect_bin>
@@ -330,6 +330,8 @@
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_envas_012_recyclebin4.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_enveu_009_townenv_flowerpot_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_enveu_014_streetsigns_01.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_envsu_83_05_scaffold1.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_envsu_83_05_scaffold2.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_fuel_env418_oldgmercedes.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_fuel_mle008_canisters1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_gaf_112_04_bridgefence_01.vfx</fn_effect_bin>
@@ -370,9 +372,6 @@
 		<fn_effect_bin>particles/environment/interior/01_karelia_butterfly_red.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/01_karelia_butterfly_white.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/128_last_frontier_v_flies.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/128_last_frontier_v_splash_01.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/128_last_frontier_v_water_displacement.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/60_asia_miao_river_foam.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_bld_eu_070_castle_crash_11.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_env_am_075_trashcan.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_env_eu_074_sign_02.eff</fn_effect_bin>
@@ -423,6 +422,7 @@
 		<fn_effect_bin>particles/environment/objects/inf_env422_walllamp.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_env603_washingline_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_env612_swing.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_env614_scaffolding_crash.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_env_101_05_beehive_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_env_101_05_beehive_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_env_101_10_chickencoop.eff</fn_effect_bin>
@@ -444,6 +444,8 @@
 		<fn_effect_bin>particles/environment/objects/inf_envas_012_recyclebin4.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_enveu_009_townenv_flowerpot_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_enveu_014_streetsigns_01.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_envsu_83_05_scaffold1.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_envsu_83_05_scaffold2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_fuel_env418_oldgmercedes2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_fuel_mle008_canisters1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_gaf_112_04_bridgefence_01.eff</fn_effect_bin>

@@ -31,30 +31,22 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<primitive>indices</primitive>
+			<vertices>turret_01_Shape.vertices</vertices>
+			<primitive>turret_01_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>tank_proxy</identifier>
 					<fx>shaders/std_effects/PBS_tank.fx</fx>
 					<materialKind>0</materialKind>
+					<identifier>tank_proxy</identifier>
 					<collisionFlags>0</collisionFlags>
 					<property>
 						diffuseMap
 						<Texture>vehicles/sweden/S41_Bofors_Pagod_TK105/Bofors_Pagod_TK105_proxy_AM.dds</Texture>
 					</property>
 					<property>
-						excludeMaskAndAOMap
-						<Texture>vehicles/sweden/S41_Bofors_Pagod_TK105/Bofors_Pagod_TK105_proxy_AO.dds</Texture>
-					</property>
-					<property>
-						g_detailUVTiling
-						<Vector4>1.753430 1.753430 0.000000 0.000000</Vector4>
-					</property>
-					<property>
-						metallicDetailMap
-						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 					<property>
 						metallicGlossMap
@@ -65,18 +57,18 @@
 						<Texture>vehicles/sweden/S41_Bofors_Pagod_TK105/Bofors_Pagod_TK105_proxy_ANM.dds</Texture>
 					</property>
 					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+						excludeMaskAndAOMap
+						<Texture>vehicles/sweden/S41_Bofors_Pagod_TK105/Bofors_Pagod_TK105_proxy_AO.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.000000 1.126292 -0.101534</groupOrigin>
+				<groupOrigin>0.000000 1.321495 -0.101534</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-1.616253 -0.331371 -1.822297</min>
+		<min>-1.616253 0.059036 -1.822297</min>
 		<max>1.616253 2.583954 1.619229</max>
 	</boundingBox>
-	<geometrySize>12008</geometrySize>
-	<minUVDensity>0.002081</minUVDensity>
+	<geometrySize>12508</geometrySize>
+	<minUVDensity>0.002074</minUVDensity>
 </root>

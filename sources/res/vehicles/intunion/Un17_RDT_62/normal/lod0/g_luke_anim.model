@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/intunion/Un17_RDT_62/normal/lod0/g_luke_anim</nodefullVisual>
+	<visibilityBox>
+		<min>-0.225260 0.384860 -0.115101</min>
+		<max>0.225193 0.419551 0.370286</max>
+	</visibilityBox>
+	<parent>vehicles/intunion/Un17_RDT_62/normal/lod1/g_luke_anim</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+</root>

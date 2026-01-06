@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB143_Captain/_skins/GB143_Captain_3Dst_01/crash/lod1/Turret_01</nodefullVisual>
+	<parent>vehicles/british/GB143_Captain/_skins/GB143_Captain_3Dst_01/crash/lod2/Turret_01</parent>
+	<tank>true</tank>
+	<extent>
+		64.0
+		<!--BW_String-->
+	</extent>
+	<visibilityBox>
+		<min>-1.588031 -0.026922 -2.892173</min>
+		<max>1.587678 2.531902 1.699704</max>
+	</visibilityBox>
+</root>

@@ -5,6 +5,9 @@ class CustomizationFiltersPopoverMeta(SmartPopOverView):
     def changeGroup(self, itemId):
         self._printOverrideError('changeGroup')
 
+    def changeDisplayMethod(self, itemId):
+        self._printOverrideError('changeDisplayMethod')
+
     def setDefaultFilter(self):
         self._printOverrideError('setDefaultFilter')
 
@@ -23,7 +26,10 @@ class CustomizationFiltersPopoverMeta(SmartPopOverView):
     def setShowOnlyEditableStyles(self, value):
         self._printOverrideError('setShowOnlyEditableStyles')
 
-    def onFilterChange(self, index, value):
+    def setShowOnlyProgressionStyles(self, value):
+        self._printOverrideError('setShowOnlyProgressionStyles')
+
+    def onFilterChange(self, groupId, index, value):
         self._printOverrideError('onFilterChange')
 
     def onFormChange(self, index, value):
@@ -36,3 +42,7 @@ class CustomizationFiltersPopoverMeta(SmartPopOverView):
     def as_enableDefBtnS(self, value):
         if self._isDAAPIInited():
             return self.flashObject.as_enableDefBtn(value)
+
+    def as_updateCounterS(self, current, total, newHiddenElementsCount):
+        if self._isDAAPIInited():
+            return self.flashObject.as_updateCounter(current, total, newHiddenElementsCount)

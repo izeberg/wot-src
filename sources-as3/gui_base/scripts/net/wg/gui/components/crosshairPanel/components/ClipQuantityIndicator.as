@@ -15,6 +15,11 @@ package net.wg.gui.components.crosshairPanel.components
          super();
       }
       
+      public function setReloadingState(param1:String) : void
+      {
+         throw new AbstractException("setReloadingState" + Errors.ABSTRACT_INVOKE);
+      }
+      
       public function autoloaderBoostUpdate(param1:BoostIndicatorStateParamsVO, param2:Number, param3:Boolean = false) : void
       {
          throw new AbstractException("autoloaderBoostUpdate" + Errors.ABSTRACT_INVOKE);
@@ -40,7 +45,7 @@ package net.wg.gui.components.crosshairPanel.components
          return null;
       }
       
-      public function setClipsParam(param1:Number, param2:Number, param3:Boolean) : void
+      public function setClipsParam(param1:Number, param2:Number, param3:int) : void
       {
          throw new AbstractException("setClipsParam" + Errors.ABSTRACT_INVOKE);
       }

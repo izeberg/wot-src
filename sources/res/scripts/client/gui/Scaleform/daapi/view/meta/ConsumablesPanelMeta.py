@@ -161,3 +161,11 @@ class ConsumablesPanelMeta(BaseDAAPIComponent):
     def as_setRespawnSlotStateS(self, idx, isAvailable):
         if self._isDAAPIInited():
             return self.flashObject.as_setRespawnSlotState(idx, isAvailable)
+
+    def as_showContextHintS(self, idx, label):
+        if self._isDAAPIInited():
+            return self.flashObject.as_showContextHint(idx, label)
+
+    def as_hideContextHintS(self, animID):
+        if self._isDAAPIInited():
+            return self.flashObject.as_hideContextHint(animID)

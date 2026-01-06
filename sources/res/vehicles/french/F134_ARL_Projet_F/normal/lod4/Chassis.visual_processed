@@ -1827,21 +1827,17 @@
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>tank_proxy_skinned</identifier>
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
 					<materialKind>0</materialKind>
+					<identifier>tank_proxy_skinned</identifier>
 					<collisionFlags>0</collisionFlags>
 					<property>
 						diffuseMap
 						<Texture>vehicles/french/F134_ARL_Projet_F/ARL_Projet_F_proxy_AM.dds</Texture>
 					</property>
 					<property>
-						doubleSided
-						<Bool>true</Bool>
-					</property>
-					<property>
-						excludeMaskAndAOMap
-						<Texture>vehicles/french/F134_ARL_Projet_F/ARL_Projet_F_proxy_AO.dds</Texture>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 					<property>
 						metallicGlossMap
@@ -1852,12 +1848,8 @@
 						<Texture>vehicles/french/F134_ARL_Projet_F/ARL_Projet_F_proxy_ANM.dds</Texture>
 					</property>
 					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
-					</property>
-					<property>
-						g_detailUVTiling
-						<Vector4>0.877000 0.877000 0.000000 0.000000</Vector4>
+						excludeMaskAndAOMap
+						<Texture>vehicles/french/F134_ARL_Projet_F/ARL_Projet_F_proxy_AO.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>-1.376334 0.703678 -0.286658</groupOrigin>
@@ -1873,21 +1865,17 @@
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>tank_proxy_skinned</identifier>
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
 					<materialKind>0</materialKind>
+					<identifier>tank_proxy_skinned</identifier>
 					<collisionFlags>0</collisionFlags>
 					<property>
 						diffuseMap
 						<Texture>vehicles/french/F134_ARL_Projet_F/ARL_Projet_F_proxy_AM.dds</Texture>
 					</property>
 					<property>
-						doubleSided
-						<Bool>true</Bool>
-					</property>
-					<property>
-						excludeMaskAndAOMap
-						<Texture>vehicles/french/F134_ARL_Projet_F/ARL_Projet_F_proxy_AO.dds</Texture>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 					<property>
 						metallicGlossMap
@@ -1898,12 +1886,8 @@
 						<Texture>vehicles/french/F134_ARL_Projet_F/ARL_Projet_F_proxy_ANM.dds</Texture>
 					</property>
 					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
-					</property>
-					<property>
-						g_detailUVTiling
-						<Vector4>0.877000 0.877000 0.000000 0.000000</Vector4>
+						excludeMaskAndAOMap
+						<Texture>vehicles/french/F134_ARL_Projet_F/ARL_Projet_F_proxy_AO.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>1.376334 0.703678 -0.286658</groupOrigin>
@@ -1912,8 +1896,8 @@
 	</renderSet>
 	<constraints/>
 	<boundingBox>
-		<min>-1.722910 0.026637 -4.470639</min>
-		<max>1.722910 1.380719 5.043953</max>
+		<min>-1.722910 0.026636 -4.470641</min>
+		<max>1.722910 1.380719 5.043956</max>
 	</boundingBox>
 	<geometrySize>4088</geometrySize>
 	<minUVDensity>0.001109</minUVDensity>

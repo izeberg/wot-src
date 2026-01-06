@@ -1,0 +1,192 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+msgid "#PluralForms"
+msgstr ""
+"nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && "
+"(n%100<10 || n%100>=20) ? 1 : 2);"
+
+msgid "AT_SPG_damage"
+msgstr "Нанести %(goal)s ед. урона"
+
+msgid "AT_SPG_hits"
+msgstr "Нанести урон %(goal)s ед. техники"
+
+msgid "AT_SPG_kills"
+msgstr "Уничтожить %(goal)s ед. техники"
+
+msgid "AT_SPG_piercingSeries_plural"
+msgid_plural "plural/AT_SPG_piercingSeries_plural"
+msgstr[0] "Пробить броню %(goal)s раз подряд"
+msgstr[1] "Пробить броню %(goal)s раза подряд"
+msgstr[2] "Пробить броню %(goal)s раз подряд"
+
+msgid "SPG_damage"
+msgstr "Нанести %(goal)s ед. урона"
+
+msgid "SPG_hits_plural"
+msgid_plural "plural/SPG_hits_plural"
+msgstr[0] "Нанести урон %(goal)s раз"
+msgstr[1] "Нанести урон %(goal)s раза"
+msgstr[2] "Нанести урон %(goal)s раз"
+
+msgid "SPG_kills"
+msgstr "Уничтожить %(goal)s ед. техники"
+
+msgid "heavyTank_damage"
+msgstr "Нанести %(goal)s ед. урона"
+
+msgid "heavyTank_damageDealtReceivedAndBlocked"
+msgstr "Суммарно нанести, получить и заблокировать %(goal)s ед. урона"
+
+msgid "heavyTank_kills"
+msgstr "Уничтожить %(goal)s ед. техники"
+
+msgid "heavyTank_killsDiversity"
+msgstr "Уничтожить технику %(totalGoal)s разных типов"
+
+msgid "lightTank_critsTracks"
+msgstr "Обездвижить %(goal)s ед. техники противника, сбивая гусеницы"
+
+msgid "lightTank_damage"
+msgstr "Нанести %(goal)s ед. урона"
+
+msgid "lightTank_kills"
+msgstr "Уничтожить %(goal)s ед. техники"
+
+msgid "lightTank_shots_plural"
+msgid_plural "plural/lightTank_shots_plural"
+msgstr[0] "Нанести урон выстрелами %(goal)s раз"
+msgstr[1] "Нанести урон выстрелами %(goal)s раза"
+msgstr[2] "Нанести урон выстрелами %(goal)s раз"
+
+msgid "mediumTank_critsTracks"
+msgstr "Обездвижить %(goal)s ед. техники противника, сбивая гусеницы"
+
+msgid "mediumTank_damage"
+msgstr "Нанести %(goal)s ед. урона"
+
+msgid "mediumTank_hits"
+msgstr "Нанести урон %(goal)s ед. техники"
+
+msgid "mediumTank_hitsDiversity"
+msgstr "Нанести урон %(uniqueGoal)s разным типам техники"
+
+msgid "mediumTank_kills"
+msgstr "Уничтожить %(goal)s ед. техники"
+
+msgid "mediumTank_killsDiversity"
+msgstr "Уничтожить технику %(totalGoal)s разных типов"
+
+msgid "mediumTank_shots_plural"
+msgid_plural "plural/mediumTank_shots_plural"
+msgstr[0] "Нанести урон выстрелами %(goal)s раз"
+msgstr[1] "Нанести урон выстрелами %(goal)s раза"
+msgstr[2] "Нанести урон выстрелами %(goal)s раз"
+
+msgid "quest/blocked/description"
+msgstr "Вернитесь на направление:"
+
+msgid "quest/blocked/description/undefined"
+msgstr "Вернитесь в зону целей"
+
+msgid "quest/line/last"
+msgstr "Зона целей"
+
+msgid "quest/line1"
+msgstr "A-D"
+
+msgid "quest/line2"
+msgstr "B-E"
+
+msgid "quest/line3"
+msgstr "C-F"
+
+msgid "quest/progress"
+msgstr "%(progressValue)s/%(progressGoal)s"
+
+msgid "quest/title/blocked"
+msgstr "ЗАДАЧА НЕДОСТУПНА"
+
+msgid "quest/title/completed"
+msgstr "ЗАДАЧА ВЫПОЛНЕНА"
+
+msgid "quest/title/default"
+msgstr "БОЕВАЯ ЗАДАЧА"
+
+msgid "questTab/isObserver"
+msgstr "Боевая задача и прогрессия зоны недоступны в режиме наблюдателя."
+
+msgid "questTab/noStarted"
+msgstr ""
+"Боевая задача и командная прогрессия зоны станут доступны по окончании "
+"предбоевого отсчёта."
+
+msgid "questTab/personal/active"
+msgstr "Выполняется"
+
+msgid "questTab/personal/blocked"
+msgstr "Не выполняется"
+
+msgid "questTab/personal/completed"
+msgstr "Выполнена"
+
+msgid "questTab/personal/completedAll"
+msgstr "Выполнены все доступные задачи в текущей зоне."
+
+msgid "questTab/personal/title"
+msgstr "Персональная боевая задача"
+
+msgid "questTab/progression/active"
+msgstr ""
+"Выполняйте боевые задачи, пополняйте командную прогрессию зоны и получайте "
+"доступ к объектам поддержки:"
+
+msgid "questTab/progression/blocked"
+msgstr ""
+"Вернитесь на своё направление, чтобы продолжить выполнять боевые задачи "
+"и пополнять прогрессию объектов поддержки."
+
+msgid "questTab/progression/completed"
+msgstr ""
+"Получены все объекты поддержки в зоне. Вы можете продолжать выполнять задачи"
+" в зоне для роста в звании."
+
+msgid "questTab/progression/current"
+msgstr "%(current)s%"
+
+msgid "questTab/progression/paused"
+msgstr "Прогрессия станет доступна после открытия следующей зоны направления."
+
+msgid "questTab/progression/questsBlocked"
+msgstr ""
+"Вернитесь на своё направление, чтобы продолжить выполнять боевые задачи."
+
+msgid "questTab/progression/targetZone"
+msgstr "В зоне целей нет объектов поддержки."
+
+msgid "questTab/progression/title"
+msgstr "Командная прогрессия"
+
+msgid "questTab/supply_Airship"
+msgstr "Дирижабль"
+
+msgid "questTab/supply_Flamer"
+msgstr "Огнемёт"
+
+msgid "questTab/supply_Mortar"
+msgstr "РСЗО"
+
+msgid "questTab/supply_Pillbox"
+msgstr "Дот"
+
+msgid "questTab/zone"
+msgstr "Зона %(name)s"

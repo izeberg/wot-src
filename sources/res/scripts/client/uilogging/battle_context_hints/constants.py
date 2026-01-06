@@ -1,0 +1,8 @@
+from enum import Enum
+FEATURE = 'battle_context_hints'
+
+class BattleContextHintsLogActions(Enum):
+    HINT_ACTIVATED = 'hint_activated'
+    HINT_SHOWED = 'hint_showed'
+    HINT_APPLIED = 'hint_applied'
+    HINT_MAX_VIEWS_REACHED = 'hint_max_views_reached'

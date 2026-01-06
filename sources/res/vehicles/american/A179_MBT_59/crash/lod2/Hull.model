@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/american/A179_MBT_59/crash/lod3/Hull</parent>
+	<tank>true</tank>
+	<extent>96.000000</extent>
+	<nodefullVisual>vehicles/american/A179_MBT_59/crash/lod2/Hull</nodefullVisual>
+	<visibilityBox>
+		<min>-1.785960 -0.831850 -3.353004</min>
+		<max>1.728847 1.060942 3.046468</max>
+	</visibilityBox>
+</root>

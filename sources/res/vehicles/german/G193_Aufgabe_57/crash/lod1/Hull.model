@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G193_Aufgabe_57/crash/lod1/Hull</nodefullVisual>
+	<parent>vehicles/german/G193_Aufgabe_57/crash/lod2/Hull</parent>
+	<tank>true</tank>
+	<extent>
+		64.0
+		<!--BW_String-->
+	</extent>
+	<visibilityBox>
+		<min>-1.746920 -0.996890 -4.012178</min>
+		<max>1.732115 0.719569 3.653286</max>
+	</visibilityBox>
+</root>

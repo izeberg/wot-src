@@ -6,6 +6,8 @@ package net.wg.gui.lobby.vehicleCustomization.data.customizationPanel
    {
       
       private static const GROUPS_FIELD:String = "groups";
+      
+      private static const DISPLAY_GROUPS_FIELD:String = "displayGroups";
        
       
       public var purchasedEnabled:Boolean = false;
@@ -18,6 +20,8 @@ package net.wg.gui.lobby.vehicleCustomization.data.customizationPanel
       
       public var appliedEnabled:Boolean = false;
       
+      public var favoriteEnabled:Boolean = false;
+      
       public var hideOnAnotherVehEnabled:Boolean = false;
       
       public var showOnlyProgressionDecalsEnabled:Boolean = false;
@@ -26,11 +30,15 @@ package net.wg.gui.lobby.vehicleCustomization.data.customizationPanel
       
       public var showOnlyNonEditableStylesEnabled:Boolean = false;
       
+      public var showOnlyProgressionStylesEnabled:Boolean = false;
+      
       public var selectedGroup:int = -1;
       
       public var groupCount:int = -1;
       
       public var groups:Vector.<String> = null;
+      
+      public var displayGroups:Vector.<String> = null;
       
       public var formfactorGroups:Array = null;
       
@@ -54,6 +62,17 @@ package net.wg.gui.lobby.vehicleCustomization.data.customizationPanel
             }
             return false;
          }
+         if(DISPLAY_GROUPS_FIELD == param1)
+         {
+            App.utils.asserter.assert(param2 is Array,"Field \'displayGroups\' is expected to be array");
+            _loc3_ = param2 as Array;
+            this.displayGroups = new Vector.<String>(0);
+            for each(_loc4_ in _loc3_)
+            {
+               this.displayGroups.push(_loc4_);
+            }
+            return false;
+         }
          return super.onDataWrite(param1,param2);
       }
       
@@ -63,6 +82,11 @@ package net.wg.gui.lobby.vehicleCustomization.data.customizationPanel
          {
             this.groups.splice(0,this.groups.length);
             this.groups = null;
+         }
+         if(this.displayGroups)
+         {
+            this.displayGroups.splice(0,this.displayGroups.length);
+            this.displayGroups = null;
          }
          if(this.formfactorGroups)
          {

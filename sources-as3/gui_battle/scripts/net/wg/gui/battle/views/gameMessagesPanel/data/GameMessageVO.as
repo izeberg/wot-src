@@ -2,11 +2,11 @@ package net.wg.gui.battle.views.gameMessagesPanel.data
 {
    import net.wg.data.constants.generated.GAME_MESSAGES_CONSTS;
    import net.wg.data.daapi.base.DAAPIDataClass;
+   import net.wg.gui.battle.views.epicMessagesPanel.data.CommonSubElementMessageVO;
    import net.wg.gui.battle.views.epicMessagesPanel.data.FirstGeneralRankReachedMessageVO;
    import net.wg.gui.battle.views.epicMessagesPanel.data.HeadquarterAttackedMessageVO;
    import net.wg.gui.battle.views.epicMessagesPanel.data.HeadquarterDestroyedMessageVO;
    import net.wg.gui.battle.views.epicMessagesPanel.data.OverTimeMessageVO;
-   import net.wg.gui.battle.views.epicMessagesPanel.data.RankUpMessageVO;
    import net.wg.gui.battle.views.epicMessagesPanel.data.SectorBaseContestedMessageVO;
    import net.wg.gui.battle.views.epicMessagesPanel.data.SectorBaseMessageVO;
    
@@ -85,7 +85,8 @@ package net.wg.gui.battle.views.gameMessagesPanel.data
                this.msgData = new SectorBaseContestedMessageVO(this._cachedMsgData);
                break;
             case GAME_MESSAGES_CONSTS.RANK_UP:
-               this.msgData = new RankUpMessageVO(this._cachedMsgData);
+            case GAME_MESSAGES_CONSTS.SUPPLY_UNLOCKED:
+               this.msgData = new CommonSubElementMessageVO(this._cachedMsgData);
                break;
             case GAME_MESSAGES_CONSTS.OBJECTIVE_DESTROYED_POSITIVE:
             case GAME_MESSAGES_CONSTS.OBJECTIVE_DESTROYED:

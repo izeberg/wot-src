@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodelessVisual>vehicles/chinese/Ch62_ZZT_58/crash/lod3/Gun_01</nodelessVisual>
+	<parent>vehicles/chinese/Ch62_ZZT_58/crash/lod4/Gun_01</parent>
+	<tank>true</tank>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-0.409103 -0.457105 -1.713999</min>
+		<max>0.353314 0.244415 5.447464</max>
+	</visibilityBox>
+</root>

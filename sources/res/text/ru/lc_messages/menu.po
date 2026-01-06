@@ -37,10 +37,10 @@ msgid "Time/timeLeftShort/min"
 msgstr "%(min)s мин."
 
 msgid "Time/timeValue/days"
-msgstr "%(day)s д %(hour)s ч %(min)s мин"
+msgstr "%(day)s д. %(hour)s ч. %(min)s мин."
 
 msgid "Time/timeValue/hours"
-msgstr "%(hour)s ч %(min)s мин"
+msgstr "%(hour)s ч. %(min)s мин."
 
 msgid "Time/timeValue/lessMin"
 msgstr "минуту"
@@ -49,22 +49,22 @@ msgid "Time/timeValue/min"
 msgstr "%(min)s мин."
 
 msgid "Time/timeValueShort/days"
-msgstr "%(day)s д %(hour)s ч"
+msgstr "%(day)s д. %(hour)s ч."
 
 msgid "Time/timeValueShort/hours"
-msgstr "%(hour)s ч %(min)s мин"
+msgstr "%(hour)s ч. %(min)s мин."
 
 msgid "Time/timeValueShort/lessMin"
-msgstr "01 мин"
+msgstr "01 мин."
 
 msgid "Time/timeValueShort/min"
 msgstr "%(min)s мин."
 
 msgid "Time/timeValueShort/noLeadingZeroes/days"
-msgstr "%(day)s д %(hour)s ч"
+msgstr "%(day)s д. %(hour)s ч."
 
 msgid "Time/timeValueShort/noLeadingZeroes/hours"
-msgstr "%(hour)s ч %(min)s мин"
+msgstr "%(hour)s ч. %(min)s мин."
 
 msgid "Time/timeValueShort/noLeadingZeroes/lessMin"
 msgstr "1 мин."
@@ -73,16 +73,16 @@ msgid "Time/timeValueShort/noLeadingZeroes/min"
 msgstr "%(min)s мин."
 
 msgid "Time/timeValueWithSecs/days"
-msgstr "%(day)s д %(hour)s ч"
+msgstr "%(day)s д. %(hour)s ч."
 
 msgid "Time/timeValueWithSecs/hours"
-msgstr "%(hour)s ч %(min)s мин"
+msgstr "%(hour)s ч. %(min)s мин."
 
 msgid "Time/timeValueWithSecs/lessMin"
 msgstr "%(sec)s с"
 
 msgid "Time/timeValueWithSecs/min"
-msgstr "%(min)s мин %(sec)s с"
+msgstr "%(min)s мин. %(sec)s с"
 
 msgid "ability/title"
 msgstr "Модификация"
@@ -884,10 +884,10 @@ msgid "boosters/common/name"
 msgstr "Личный резерв"
 
 msgid "boosters/timeLeft/days"
-msgstr "%(day)s д %(hour)s ч"
+msgstr "%(day)s д. %(hour)s ч."
 
 msgid "boosters/timeLeft/hours"
-msgstr "%(hour)s ч %(min)s мин"
+msgstr "%(hour)s ч. %(min)s мин."
 
 msgid "boosters/timeLeft/lessMin"
 msgstr "1 мин."
@@ -1106,6 +1106,9 @@ msgstr "Создать взвод для Натиска"
 
 msgid "contextMenu/createContactNote"
 msgstr "Создать заметку"
+
+msgid "contextMenu/createEpicSquad"
+msgstr "Создать взвод для Линии фронта"
 
 msgid "contextMenu/createEventSquad"
 msgstr "Создать взвод события"
@@ -1378,8 +1381,8 @@ msgstr "Отозвать приглашение во взвод"
 
 msgid "copy"
 msgstr ""
-"© Леста Игры, 2022-2025. Игра «Мир танков» основана на интеллектуальной "
-"собственности третьих лиц. Все права на объекты прав третьих лиц принадлежат"
+"© Леста Игры, 2022–2026. Игра «Мир танков» основана на интеллектуальной "
+"собственности третьих лиц. Все права на объекты прав третьих лиц принадлежат"
 " их законным правообладателям."
 
 msgid "counter/newCounter"
@@ -1392,8 +1395,8 @@ msgstr ""
 
 msgid "crystals/info/tab/earn/events/descriptionContent"
 msgstr ""
-"в рамках определённых игровых событий, за выполнение\n"
-"ежедневных задач, за участие в специальных акциях и т.д."
+"в рамках определённых игровых событий, за выполнение\n"
+"ежедневных задач, за участие в специальных акциях и т. д."
 
 msgid "crystals/info/tab/earn/events/title"
 msgstr "БОНЫ ЗА СОБЫТИЯ"
@@ -1595,6 +1598,9 @@ msgstr "Перейти в коллекцию"
 msgid "cst_item_ctx_menu/information"
 msgstr "Информация"
 
+msgid "cst_item_ctx_menu/markAsFavorite"
+msgstr "Добавить в «Избранное»"
+
 msgid "cst_item_ctx_menu/nationChange"
 msgstr "Сменить нацию"
 
@@ -1660,6 +1666,9 @@ msgstr "Убрать из слота"
 
 msgid "cst_item_ctx_menu/unload"
 msgstr "Выгрузить на Склад"
+
+msgid "cst_item_ctx_menu/unmarkAsFavorite"
+msgstr "Убрать из категории «Избранное»"
 
 msgid "cst_item_ctx_menu/upgrade"
 msgstr "Наладить"
@@ -2002,8 +2011,8 @@ msgstr "Скорость поворота: до %(rotationSpeed)s град/с"
 
 msgid "descriptions/vehicleEngine"
 msgstr ""
-"Мощность: %(enginePower)s л.с.\n"
-"Вероятность пожара при попадании: %(fireStartingChance)s"
+"Мощность: %(enginePower)s л. с.\n"
+"Вероятность пожара при попадании: %(fireStartingChance)s"
 
 msgid "descriptions/vehicleGun"
 msgstr ""
@@ -2246,10 +2255,10 @@ msgstr ""
 
 msgid "extraParams/name/enemyModulesCrewCritChance"
 msgstr ""
-"Параметр, отвечающий за изменение шанса нанести критические повреждения "
-"экипажу и внутренним модулям противника. Работает только для бронебойных, "
-"подкалиберных, бронебойных оперенных подкалиберных и кумулятивных снарядов, "
-"а также для бронебойного и кумулятивного НУРСа."
+"Параметр, отвечающий за изменение шанса нанести критические повреждения "
+"экипажу и внутренним модулям противника. Работает только для бронебойных, "
+"подкалиберных, бронебойных оперённых подкалиберных и кумулятивных снарядов, "
+"а также для бронебойного и кумулятивного НУРСа."
 
 msgid "extraParams/name/equipmentPreparationTime"
 msgstr ""
@@ -2406,8 +2415,11 @@ msgstr ""
 
 msgid "extraParams/name/vehicleGunDamage"
 msgstr ""
-"Параметр, отвечающей за увеличение урона при активации модификации / при "
-"пробитии машины противника во время действия модификации."
+"Параметр, отвечающий за увеличение урона при активации модификации / "
+"при пробитии машины противника во время действия модификации. Значение "
+"прироста урона при каждом пробитии суммируется с приростом урона "
+"при активации. Бонусный урон прибавляется и применяется только на время "
+"действия модификации."
 
 msgid "extraParams/name/vehicleGunKillReloadTime"
 msgstr ""
@@ -2416,12 +2428,12 @@ msgstr ""
 
 msgid "extraParams/name/vehicleGunReloadPenalty"
 msgstr ""
-"Параметр, отвечающий за однократное замедление времени заряжания перед следующим выстрелом. Чем больше произведено выстрелов в течение действия модификации, тем больше времени добавляется к заряжанию после окончания действия модификации.\n"
-"Штраф сбрасывается после выстрела. Навык «Интуиция» не сбрасывает наложенный штраф."
+"Значение штрафа прибавляется к общему времени заряжания после каждого выстрела и применяется после окончания действия модификации. Чем больше произведено выстрелов в течение действия модификации, тем больше времени добавляется к заряжанию после окончания действия модификации.\n"
+"Штраф сбрасывается после выстрела или смены снаряда."
 
 msgid "extraParams/name/vehicleGunReloadTime"
 msgstr ""
-"Параметр, отвечающий за уменьшение времени перезарядки орудия в течение "
+"Значение, на которое будет уменьшено время перезарядки орудия в течение "
 "времени действия модификации."
 
 msgid "extraParams/name/vehicleGunReloadTimeReceiveShot"
@@ -2452,6 +2464,14 @@ msgid "extraParams/name/vehicleGunShotDispersionWhileGunDamaged"
 msgstr ""
 "Параметр, отвечающий за то, насколько уменьшается точность орудия в "
 "повреждённом состоянии. Чем выше значение, тем меньше штраф."
+
+msgid "extraParams/name/vehicleGunSpecDamage"
+msgstr ""
+"Параметр, отвечающий за увеличение урона при активации модификации / "
+"при пробитии машины противника во время действия модификации. Значение "
+"прироста урона при каждом пробитии суммируется с приростом урона "
+"при активации. Бонусный урон прибавляется и применяется только на время "
+"действия модификации."
 
 msgid "extraParams/name/vehicleInvisibilityAfterShot"
 msgstr "Параметр, отвечающий за незаметность после выстрела."
@@ -4578,6 +4598,9 @@ msgstr ""
 msgid "moduleInfo/autoShootFlameGunLabel"
 msgstr "Огнемётная безмагазинная система"
 
+msgid "moduleInfo/autoShootGunLabel"
+msgstr "Автоматическое орудие"
+
 msgid "moduleInfo/clipDualGunLabel"
 msgstr "Спаренная установка с системой заряжания"
 
@@ -4691,6 +4714,9 @@ msgstr "Время подключения огнесмеси"
 msgid "moduleInfo/params/autoShootFlameOverheatCoolingTime"
 msgstr "Время охлаждения орудия при перегреве"
 
+msgid "moduleInfo/params/autoShootShellsCount"
+msgstr "Снарядов в ленте"
+
 msgid "moduleInfo/params/avgDamage"
 msgstr "Средний урон"
 
@@ -4778,7 +4804,7 @@ msgid "moduleInfo/params/enginePower"
 msgstr "Мощность двигателя"
 
 msgid "moduleInfo/params/enginePowerPerTon"
-msgstr "К удельной мощности (л.с./т) "
+msgstr "К удельной мощности (л. с./т) "
 
 msgid "moduleInfo/params/explosionRadius"
 msgstr "Радиус поражения"
@@ -6460,15 +6486,6 @@ msgstr "?empty?"
 msgid "tankCarousel/vehicleStates/notpresent"
 msgstr "Нет в Ангаре"
 
-msgid "tankCarousel/vehicleStates/nyTank"
-msgstr "Новогодняя техника"
-
-msgid "tankCarousel/vehicleStates/nyTankEmptyCount"
-msgstr "Свободных слотов: %(count)d"
-
-msgid "tankCarousel/vehicleStates/nyTankSlotsFull"
-msgstr "Все слоты заняты"
-
 msgid "tankCarousel/vehicleStates/rentable"
 msgstr "Доступна аренда машины"
 
@@ -6726,7 +6743,7 @@ msgid "tank_params/no_brackets/s"
 msgstr "c"
 
 msgid "tank_params/p"
-msgstr "(л.с.)"
+msgstr "(л. с.)"
 
 msgid "tank_params/param12"
 msgstr "Проходимость"
@@ -6741,7 +6758,7 @@ msgid "tank_params/pitchLimits"
 msgstr "Углы вертикальной наводки"
 
 msgid "tank_params/pt"
-msgstr "(л.с./т)"
+msgstr "(л. с./т)"
 
 msgid "tank_params/qpt"
 msgstr "(кол-во/время)"
@@ -6924,10 +6941,10 @@ msgid "tank_params/vehicleWeight"
 msgstr "Масса"
 
 msgid "tank_params/vpm"
-msgstr "(ед./мин)"
+msgstr "(ед/мин)"
 
 msgid "tank_params/vps"
-msgstr "(ед./с)"
+msgstr "(ед/с)"
 
 msgid "tank_params/wheeledSpeedModeSpeed"
 msgstr "Макс. скорость / задний ход (скоростной)"
@@ -7047,28 +7064,28 @@ msgid "techtree/premiumPanel/title"
 msgstr "ПРЕМИУМ ТЕХНИКА"
 
 msgid "timeLeft/full/day"
-msgstr "{day} д {hour} ч"
+msgstr "{day} д. {hour} ч."
 
 msgid "timeLeft/full/hour"
-msgstr "{hour} ч {min} мин"
+msgstr "{hour} ч. {min} мин."
 
 msgid "timeLeft/full/lessMin"
 msgstr "1 мин."
 
 msgid "timeLeft/full/min"
-msgstr "{min} мин"
+msgstr "{min} мин."
 
 msgid "timeLeft/short/day"
-msgstr "{day} д"
+msgstr "{day} д."
 
 msgid "timeLeft/short/hour"
-msgstr "{hour} ч"
+msgstr "{hour} ч."
 
 msgid "timeLeft/short/lessMin"
 msgstr "1 мин."
 
 msgid "timeLeft/short/min"
-msgstr "{min} мин"
+msgstr "{min} мин."
 
 msgid "trade/in"
 msgstr "Доступно для обмена"
@@ -7390,10 +7407,10 @@ msgid "vehicleInfo/params/dualAccuracyCoolingDelay"
 msgstr "Время охлаждения орудия после выстрела (с)"
 
 msgid "vehicleInfo/params/enginePower"
-msgstr "Мощность двигателя (л.с.)"
+msgstr "Мощность двигателя (л. с.)"
 
 msgid "vehicleInfo/params/enginePowerPerTon"
-msgstr "Удельная мощность (л.с./т)"
+msgstr "Удельная мощность (л. с./т)"
 
 msgid "vehicleInfo/params/flameMaxDistance"
 msgstr "Дальность огнеметания (м)"
@@ -7441,7 +7458,7 @@ msgid "vehicleInfo/params/reloadTimeSecs"
 msgstr "Заряжание орудия (с)"
 
 msgid "vehicleInfo/params/rocketAccelerationEnginePower"
-msgstr "Мощность двигателя (с ускорителями) (л.с.)"
+msgstr "Мощность двигателя (с ускорителями) (л. с.)"
 
 msgid "vehicleInfo/params/rocketAccelerationReuseAndDuration"
 msgstr "Реактивные ускорители (кол-во/время)"
@@ -7483,7 +7500,7 @@ msgid "vehicleInfo/params/turboshaftBurstFireRate"
 msgstr "Кассета (турбо) (с/шт./шт.)"
 
 msgid "vehicleInfo/params/turboshaftEnginePower"
-msgstr "Мощность двигателя (турбо) (л.с.)"
+msgstr "Мощность двигателя (турбо) (л. с.)"
 
 msgid "vehicleInfo/params/turboshaftInvisibilityMovingFactor"
 msgstr "Незаметность машины в движении (турбо) (%)"
@@ -7603,7 +7620,7 @@ msgid "vehiclePreview/endTime"
 msgstr "Предложение завершено"
 
 msgid "vehiclePreview/timeLeft/hours"
-msgstr "%(hour)s ч %(min)s мин"
+msgstr "%(hour)s ч. %(min)s мин."
 
 msgid "vehiclePreview/timeLeft/lessMin"
 msgstr "1 мин."
@@ -7615,22 +7632,22 @@ msgid "vehiclePreview/timeLeftShort/hours"
 msgstr "%(hour)s ч."
 
 msgid "vehiclePreview/timeLeftShort/lessMin"
-msgstr "01 мин"
+msgstr "01 мин."
 
 msgid "vehiclePreview/timeLeftShort/min"
 msgstr "%(min)s мин."
 
 msgid "vehicleRestore/timeLeftShort/days"
-msgstr "%(day)sд"
+msgstr "%(day)sд."
 
 msgid "vehicleRestore/timeLeftShort/hours"
-msgstr "%(hour)sч %(min)sмин"
+msgstr "%(hour)sч. %(min)sмин."
 
 msgid "vehicleRestore/timeLeftShort/lessMin"
-msgstr "01мин"
+msgstr "01мин."
 
 msgid "vehicleRestore/timeLeftShort/min"
-msgstr "%(min)sмин"
+msgstr "%(min)sмин."
 
 msgid "vehiclesCarousel/contextMenu/vehicleCheck"
 msgstr "Отметить как «основной»"

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/russian/R00_Baloon/crash/lod4/Chassis</parent>
+	<extent>512.000000</extent>
+	<visibilityBox>
+		<min>-1.020350 -0.012178 -2.035650</min>
+		<max>1.020350 0.802530 2.140210</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/russian/R00_Baloon/crash/lod3/Chassis</nodefullVisual>
+</root>

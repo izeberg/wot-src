@@ -13,6 +13,14 @@ package net.wg.data.constants.generated
       
       public static const ALLY_SPG:String = "ally_SPG";
       
+      public static const ALLY_SUPPLY_AIRSHIP:String = "ally_supply_Airship";
+      
+      public static const ALLY_SUPPLY_FLAMER:String = "ally_supply_Flamer";
+      
+      public static const ALLY_SUPPLY_MORTAR:String = "ally_supply_Mortar";
+      
+      public static const ALLY_SUPPLY_PILLBOX:String = "ally_supply_Pillbox";
+      
       public static const AMMO_CIRCLE:String = "ammoCircle";
       
       public static const ARTILLERY:String = "artillery";
@@ -82,6 +90,14 @@ package net.wg.data.constants.generated
       public static const RELOADER_CIRCLE:String = "reloaderCircle";
       
       public static const SPG:String = "SPG";
+      
+      public static const SUPPLY_AIRSHIP:String = "supply_Airship";
+      
+      public static const SUPPLY_FLAMER:String = "supply_Flamer";
+      
+      public static const SUPPLY_MORTAR:String = "supply_Mortar";
+      
+      public static const SUPPLY_PILLBOX:String = "supply_Pillbox";
       
       public static const TANKS_CIRCLE:String = "tanksCircle";
       

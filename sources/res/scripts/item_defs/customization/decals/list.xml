@@ -7923,6 +7923,27 @@
 		<tags>hiddenInUI styleOnly</tags>
 	</itemGroup>
 	<itemGroup>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>MT emblems 25g notInShop</priceGroup>
+		<type>emblem</type>
+		<userString>#vehicle_customization:emblem/clan_content</userString>
+		<decal>
+			<id>31431</id>
+			<texture>gui/maps/vehicles/decals/player_stickers/clan_content/ClanSeasonProgression_Emblem_01_140.dds</texture>
+			<userString>#vehicle_customization:ClanSeasonProgression_Emblem_01_140/name</userString>
+			<description>#vehicle_customization:ClanSeasonProgression_Emblem_01_140/description</description>
+		</decal>
+		<decal>
+			<id>31432</id>
+			<texture>gui/maps/vehicles/decals/player_stickers/clan_content/ClanSeasonProgression_Emblem_02_140.dds</texture>
+			<userString>#vehicle_customization:ClanSeasonProgression_Emblem_02_140/name</userString>
+			<description>#vehicle_customization:ClanSeasonProgression_Emblem_02_140/description</description>
+		</decal>
+		<name>ClanSeasonProgression_Emblem_140</name>
+		<tags>styleOnly hiddenInUI</tags>
+	</itemGroup>
+	<itemGroup>
 		<userString>#vehicle_customization:emblem/IGR</userString>
 		<season>ALL</season>
 		<historical>1</historical>
@@ -15736,6 +15757,96 @@
 			<userString>#vehicle_customization:NY_Inscription_05_139/name</userString>
 			<description>#vehicle_customization:NY_Inscription_05_139/description</description>
 		</decal>
+	</itemGroup>
+	<itemGroup>
+		<name>NY_Seleb_Inscription_139</name>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>MT inscriptions 25g notInShop</priceGroup>
+		<type>inscription</type>
+		<userString>#vehicle_customization:inscription/special</userString>
+		<decal>
+			<id>31423</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/NY_Seleb_Inscription_01_139.dds</texture>
+			<userString>#vehicle_customization:NY_Seleb_Inscription_01_139/name</userString>
+			<description>#vehicle_customization:NY_Seleb_Inscription_01_139/description</description>
+		</decal>
+		<decal>
+			<id>31424</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/NY_Seleb_Inscription_02_139.dds</texture>
+			<userString>#vehicle_customization:NY_Seleb_Inscription_02_139/name</userString>
+			<description>#vehicle_customization:NY_Seleb_Inscription_02_139/description</description>
+		</decal>
+		<decal>
+			<id>31425</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/NY_Seleb_Inscription_03_139.dds</texture>
+			<userString>#vehicle_customization:NY_Seleb_Inscription_03_139/name</userString>
+			<description>#vehicle_customization:NY_Seleb_Inscription_03_139/description</description>
+		</decal>
+		<decal>
+			<id>31426</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/NY_Seleb_Inscription_04_139.dds</texture>
+			<userString>#vehicle_customization:NY_Seleb_Inscription_04_139/name</userString>
+			<description>#vehicle_customization:NY_Seleb_Inscription_04_139/description</description>
+		</decal>
+	</itemGroup>
+	<itemGroup>
+		<name>ClanSeasonProgression_Inscription_140</name>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>MT inscriptions 25g notInShop</priceGroup>
+		<type>inscription</type>
+		<userString>#vehicle_customization:inscription/clan_content</userString>
+		<decal>
+			<id>31427</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/clan_content/ClanSeasonProgression_Inscription_01_140.dds</texture>
+			<userString>#vehicle_customization:ClanSeasonProgression_Inscription_01_140/name</userString>
+			<description>#vehicle_customization:ClanSeasonProgression_Inscription_01_140/description</description>
+		</decal>
+		<decal>
+			<id>31428</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/clan_content/ClanSeasonProgression_Inscription_02_140.dds</texture>
+			<userString>#vehicle_customization:ClanSeasonProgression_Inscription_02_140/name</userString>
+			<description>#vehicle_customization:ClanSeasonProgression_Inscription_02_140/description</description>
+		</decal>
+		<decal>
+			<id>31429</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/clan_content/ClanSeasonProgression_Inscription_03_140.dds</texture>
+			<userString>#vehicle_customization:ClanSeasonProgression_Inscription_03_140/name</userString>
+			<description>#vehicle_customization:ClanSeasonProgression_Inscription_03_140/description</description>
+		</decal>
+		<decal>
+			<id>31430</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/clan_content/ClanSeasonProgression_Inscription_04_140.dds</texture>
+			<userString>#vehicle_customization:ClanSeasonProgression_Inscription_04_140/name</userString>
+			<description>#vehicle_customization:ClanSeasonProgression_Inscription_04_140/description</description>
+		</decal>
+		<tags>styleOnly hiddenInUI</tags>
+	</itemGroup>
+	<itemGroup>
+		<name>BP18Stalcraft_Inscription_140</name>
+		<season>ALL</season>
+		<historical>1</historical>
+		<decal>
+			<id>31433</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/BP18Stalcraft_Inscription_01_140.dds</texture>
+			<userString>#vehicle_customization:BP18Stalcraft_Inscription_01_140/name</userString>
+			<description>#vehicle_customization:BP18Stalcraft_Inscription_01_140/description</description>
+		</decal>
+		<decal>
+			<id>31434</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/BP18Stalcraft_Inscription_02_140.dds</texture>
+			<userString>#vehicle_customization:BP18Stalcraft_Inscription_02_140/name</userString>
+			<description>#vehicle_customization:BP18Stalcraft_Inscription_02_140/description</description>
+		</decal>
+		<priceGroup>MT inscriptions 25g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF usa:A104_M4A3E8A usa:A126_PzVI_Tiger_II_capt ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<type>inscription</type>
+		<userString>#vehicle_customization:inscription/special</userString>
 	</itemGroup>
 	<itemGroup>
 		<userString>#vehicle_customization:inscription/IGR</userString>

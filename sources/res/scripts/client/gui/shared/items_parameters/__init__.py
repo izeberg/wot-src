@@ -98,9 +98,12 @@ def isBurstGun(gunDescr):
 
 
 def getShotsPerMinute(descriptor, reloadTime, autoReloadGun=False):
+    hasClippedAutoReloadGun = isClipGun(descriptor) and autoReloadGun
     hasClippedDualGun = isClipGun(descriptor) and isDualGun(descriptor)
     if hasClippedDualGun and autoReloadGun:
         return __getShotsPerMinuteForClippedDualgunWithAutorelaod(descriptor, reloadTime)
+    if hasClippedAutoReloadGun:
+        return __getShotsPerMinuteForClippedGunWithAutorelaod(descriptor, reloadTime)
     clip = descriptor.clip
     burst = descriptor.burst
     if autoReloadGun or hasClippedDualGun:
@@ -124,6 +127,10 @@ def __getShotsPerMinuteForClippedDualgunWithAutorelaod(descriptor, reloadTime):
     timeRemaining = time_utils.ONE_MINUTE - value
     counter += timeRemaining / shellLoading
     return counter
+
+
+def __getShotsPerMinuteForClippedGunWithAutorelaod(descriptor, reloadTime):
+    return time_utils.ONE_MINUTE / reloadTime
 
 
 def calcGunParams(gunDescr, descriptors):
@@ -185,12 +192,12 @@ def calcGunParams(gunDescr, descriptors):
         if hasDistanceFactor:
             shellKind = shell.kind + '_DF'
             pierceFactor = computeDistanceFactor(shell, PIERCING_DISTANCES[0], 'pierceFactor')
-            piercingPower = int(shot.piercingPower[0] * pierceFactor)
+            minPiercingPower = int(shot.piercingPower[0] * pierceFactor)
             pierceFactor = computeDistanceFactor(shell, PIERCING_DISTANCES[1], 'pierceFactor')
             maxPiercingPower = int(shot.piercingPower[0] * pierceFactor)
-            piercingPower = int((maxPiercingPower + piercingPower) * 0.5)
+            piercingPower = ceil((maxPiercingPower + minPiercingPower) * 0.5)
             minDmg, maxDmg = shell.randomizationDmgLimits
-            damage = int((maxDmg + minDmg) * 0.5)
+            damage = ceil((maxDmg + minDmg) * 0.5)
         else:
             piercingPower = shot.piercingPower[0]
             damage = shell.damage[0]

@@ -294,10 +294,6 @@
 			<shader>data/shaders/ps.fx</shader>
 			<texture>particles/content_deferred/pfx_textures/eff_tex_long.dds</texture>
 		</preload>
-		<preload>
-			<shader>data/shaders/ps_long.fx</shader>
-			<texture>particles/content_deferred/pfx_textures/eff_tex_38_mannerheim_line.dds</texture>
-		</preload>
 	</deferred>
 	<forward>
 		<fn_effect_bin>particles/content_forward/pfx/environment/buildings/hd_bld_uni_006_kitcrashfactory_01.vfx</fn_effect_bin>
@@ -570,10 +566,6 @@
 		<preloadVisual>particles/mesh_particles/wood_stick_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_stick_02.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_stick_03.visual</preloadVisual>
-		<preload>
-			<shader>data/shaders/ps_long.fx</shader>
-			<texture>particles/content_forward/pfx_textures/eff_tex_38_mannerheim_line.dds</texture>
-		</preload>
 		<preload>
 			<shader>data/shaders/ps.fx</shader>
 			<texture>particles/content_forward/pfx_textures/eff_tex_long.dds</texture>

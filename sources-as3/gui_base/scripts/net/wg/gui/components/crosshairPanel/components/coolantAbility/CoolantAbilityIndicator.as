@@ -68,6 +68,8 @@ package net.wg.gui.components.crosshairPanel.components.coolantAbility
       
       private var _abilityModTween:Tween = null;
       
+      private var _hidden:Boolean = true;
+      
       public function CoolantAbilityIndicator()
       {
          super();
@@ -157,14 +159,22 @@ package net.wg.gui.components.crosshairPanel.components.coolantAbility
       
       public function showAbilityMod() : void
       {
-         this.clearAbilityModTween();
-         this._abilityModTween = new Tween(ABILITY_MOD_TWEEN_TIME,this.abilityModMc,{"alpha":Values.DEFAULT_ALPHA},{"ease":Cubic.easeOut});
+         if(this._hidden)
+         {
+            this._hidden = false;
+            this.clearAbilityModTween();
+            this._abilityModTween = new Tween(ABILITY_MOD_TWEEN_TIME,this.abilityModMc,{"alpha":Values.DEFAULT_ALPHA},{"ease":Cubic.easeOut});
+         }
       }
       
       public function hideAbilityMod() : void
       {
-         this.clearAbilityModTween();
-         this._abilityModTween = new Tween(ABILITY_MOD_TWEEN_TIME,this.abilityModMc,{"alpha":Values.ZERO},{"ease":Cubic.easeOut});
+         if(!this._hidden)
+         {
+            this._hidden = true;
+            this.clearAbilityModTween();
+            this._abilityModTween = new Tween(ABILITY_MOD_TWEEN_TIME,this.abilityModMc,{"alpha":Values.ZERO},{"ease":Cubic.easeOut});
+         }
       }
       
       private function formatValue(param1:Number) : String

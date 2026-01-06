@@ -12,6 +12,7 @@ from comp7_ranks_common import Comp7Division
 from constants import BATTLE_NOTIFIER_CONFIG, ClansConfig, Configs, DAILY_QUESTS_CONFIG, DOG_TAGS_CONFIG, MAGNETIC_AUTO_AIM_CONFIG, MISC_GUI_SETTINGS, PremiumConfigs, RENEWABLE_SUBSCRIPTION_CONFIG, PLAYER_SUBSCRIPTIONS_CONFIG, TOURNAMENT_CONFIG, ARENA_BONUS_TYPE, ACTIVE_TEST_CONFIRMATION_CONFIG, OFFERS_ENABLED_KEY, SwitchState
 from debug_utils import LOG_DEBUG, LOG_NOTE
 from gifts.gifts_common import ClientReqStrategy, GiftEventID, GiftEventState
+from supply_shared import Supply
 from gui import GUI_SETTINGS, SystemMessages
 from gui.Scaleform.locale.SYSTEM_MESSAGES import SYSTEM_MESSAGES
 from gui.SystemMessages import SM_TYPE
@@ -38,6 +39,35 @@ _CLAN_EMBLEMS_SIZE_MAPPING = {16: 'clan_emblems_16',
    64: 'clan_emblems_big', 
    128: 'clan_emblems_128', 
    256: 'clan_emblems_256'}
+
+def settingsBlock(className, fields):
+
+    class SettingsBlock(namedtuple(className, fields)):
+        __slots__ = ()
+
+        def __new__(cls, **kwargs):
+            defaults = cls.defaults()
+            defaults.update(cls._preprocessData(kwargs))
+            return super(SettingsBlock, cls).__new__(cls, **defaults)
+
+        def asDict(self):
+            return self._asdict()
+
+        def replace(self, data):
+            allowedFields = self._fields
+            dataToUpdate = {k:v for k, v in self._preprocessData(data).iteritems() if k in allowedFields}
+            return self._replace(**dataToUpdate)
+
+        @classmethod
+        def defaults(cls):
+            raise NotImplementedError
+
+        @classmethod
+        def _preprocessData(cls, data):
+            return data
+
+    return SettingsBlock
+
 
 @ReprInjector.simple((
  'centerID', 'centerID'), ('dbidMin', 'dbidMin'), (
@@ -405,20 +435,79 @@ class _ProgressiveReward(namedtuple('_ProgressiveReward', (
 _ProgressiveReward.__new__.__defaults__ = (
  True, 'pr:level', 'pr:probability', 0)
 
-class _EpicMetaGameConfig(namedtuple('_EpicMetaGameConfig', ['maxCombatReserveLevel', 'seasonData', 'metaLevel', 'rewards', 'defaultSlots', 'slots',
- 'inBattleReservesByRank', 'skipParamsValidation', 'destructibleTypeId'])):
+class _Milestone(namedtuple('_Milestone', ('points', 'supplyType'))):
 
-    def asDict(self):
-        return self._asdict()
-
-    def replace(self, data):
-        allowedFields = self._fields
-        dataToUpdate = dict((k, v) for k, v in data.iteritems() if k in allowedFields)
-        return self._replace(**dataToUpdate)
+    def getSupplyTag(self):
+        return Supply.SUPPLY_ID_TO_TAG[self.supplyType]
 
 
-_EpicMetaGameConfig.__new__.__defaults__ = (
- 0, (0, False), (0, 0, 0), {}, {}, {}, {}, 0, 0)
+_TeamsProgressionConfig = namedtuple('_TeamsProgression', ('attackersCfg', 'defendersCfg'))
+
+class _TeamConfig(namedtuple('_TeamConfig', ('milestones',))):
+
+    @property
+    def supplyTypes(self):
+        return [ milestone.supplyType for milestone in self.milestones ]
+
+
+class _SectorsProgression(namedtuple('_SectorsProgression', ('config',))):
+
+    def getConfig(self, sectorID):
+        for sectors, teamsCfg in self.config.iteritems():
+            if sectorID in sectors:
+                return teamsCfg
+
+        return
+
+    def attackersSupplyTypes(self):
+        if self.config:
+            return next(self.config.itervalues()).attackersCfg.supplyTypes
+        return []
+
+    def defendersSupplyTypes(self):
+        if self.config:
+            return next(self.config.itervalues()).defendersCfg.supplyTypes
+        return []
+
+
+class _ReplaySectorsProgression(_SectorsProgression):
+
+    def getConfig(self, sectorID):
+        sectorID = str(sectorID)
+        return super(_ReplaySectorsProgression, self).getConfig(sectorID)
+
+
+class _EpicMetaGameConfig(settingsBlock('_EpicMetaGameConfig', (
+ 'maxCombatReserveLevel', 'seasonData', 'metaLevel', 'rewards', 'defaultSlots', 'slots',
+ 'inBattleReservesByRank', 'skipParamsValidation', 'destructibleTypeId', 'sectorsProgression',
+ 'sectorsProgressionConfig', 'supplyParams'))):
+
+    @classmethod
+    def defaults(cls):
+        return dict(maxCombatReserveLevel=0, seasonData=(
+         0, False), metaLevel=(0, 0, 0), rewards={}, defaultSlots={}, slots={}, inBattleReservesByRank={}, skipParamsValidation=0, destructibleTypeId=0, sectorsProgression={}, sectorsProgressionConfig=cls.__getSectorsProgressionConfig({}), supplyParams={})
+
+    @classmethod
+    def _preprocessData(cls, data):
+        sectorsProgressionConfig = data.get('sectorsProgression')
+        if sectorsProgressionConfig is not None:
+            config = {}
+            for sectors, teamsCfg in sectorsProgressionConfig.iteritems():
+                config[sectors] = _TeamsProgressionConfig(*[ _TeamConfig([ _Milestone(*milestone) for milestone in sorted(teamData, key=lambda x: x[0])
+                                                                         ])
+                 for teamData in teamsCfg
+                                                           ])
+
+            data['sectorsProgressionConfig'] = cls.__getSectorsProgressionConfig(config)
+        return data
+
+    @classmethod
+    def __getSectorsProgressionConfig(cls, data):
+        import BattleReplay
+        if not BattleReplay.isPlaying():
+            return _SectorsProgression(data)
+        return _ReplaySectorsProgression(data)
+
 
 class EpicGameConfig(namedtuple('EpicGameConfig', ('isEnabled', 'validVehicleLevels', 'battlePassDataEnabled', 'levelsToUpgrateAllReserves',
  'seasons', 'cycleTimes', 'unlockableInBattleVehLevels', 'inBattleModifiers', 'peripheryIDs',
@@ -628,13 +717,11 @@ class SeniorityAwardsConfig(typing.NamedTuple('SeniorityAwardsConfig', (
  (
   'claimRewardToken', str),
  (
-  'rewardQuestsPrefix', str),
- (
-  'offerCreditsCompensation', int)))):
+  'rewardQuestsPrefix', str)))):
     __slots__ = ()
 
     def __new__(cls, **kwargs):
-        defaults = dict(enabled=False, endTime=0, reminders=[], clockOnNotification=0, showRewardNotification=False, receivedRewardsToken='', rewardEligibilityToken='', claimRewardToken='', rewardQuestsPrefix='', offerCreditsCompensation=0)
+        defaults = dict(enabled=False, endTime=0, reminders=[], clockOnNotification=0, showRewardNotification=False, receivedRewardsToken='', rewardEligibilityToken='', claimRewardToken='', rewardQuestsPrefix='')
         defaults.update(kwargs)
         return super(SeniorityAwardsConfig, cls).__new__(cls, **defaults)
 
@@ -852,7 +939,7 @@ class GiftEventConfig(namedtuple('_GiftEventConfig', (
         return self.giftEventState == GiftEventState.DISABLED
 
 
-class GiftSystemConfig(namedtuple('_GiftSystemConfig', ('events', 'itemToEventID'))):
+class GiftSystemConfig(namedtuple('_GiftSystemConfig', ('events',))):
     __slots__ = ()
 
     def __new__(cls, **kwargs):
@@ -873,16 +960,7 @@ class GiftSystemConfig(namedtuple('_GiftSystemConfig', ('events', 'itemToEventID
 
     @classmethod
     def __packEventConfigs(cls, data):
-        events = {eID:makeTupleByDict(GiftEventConfig, eData) for eID, eData in data['events'].iteritems()}
-        data['events'], data['itemToEventID'] = events, cls.__getItemToEventMap(events)
-
-    @classmethod
-    def __getItemToEventMap(cls, events):
-        result = {}
-        for eventID, eventConfig in events.iteritems():
-            result.update({itemID:eventID for itemID in eventConfig.giftItemIDs})
-
-        return result
+        data['events'] = {eID:makeTupleByDict(GiftEventConfig, eData) for eID, eData in data['events'].iteritems()}
 
 
 class _WellRewardConfig(namedtuple('_WellRewardConfig', ('bonus', 'limit', 'isSerial', 'sequence', 'rewardId'))):
@@ -1094,11 +1172,12 @@ class _CollectiveGoalMarathonsConfig(namedtuple('_CollectiveGoalMarathonsConfig'
  'isEnabled',
  'startTime',
  'finishTime',
- 'url'))):
+ 'url',
+ 'eventName'))):
     __slots__ = ()
 
     def __new__(cls, **kwargs):
-        defaults = dict(isEnabled=False, startTime=None, finishTime=None, url=None)
+        defaults = dict(isEnabled=False, startTime=None, finishTime=None, url=None, eventName=None)
         defaults.update(kwargs)
         return super(_CollectiveGoalMarathonsConfig, cls).__new__(cls, **defaults)
 
@@ -1128,35 +1207,6 @@ class PeripheryRoutingConfig(namedtuple('_PeripheryRoutingConfig', ('isEnabled',
         allowedFields = self._fields
         dataToUpdate = dict((k, v) for k, v in data.iteritems() if k in allowedFields)
         return self._replace(**dataToUpdate)
-
-
-def settingsBlock(className, fields):
-
-    class SettingsBlock(namedtuple(className, fields)):
-        __slots__ = ()
-
-        def __new__(cls, **kwargs):
-            defaults = cls.defaults()
-            defaults.update(cls._preprocessData(kwargs))
-            return super(SettingsBlock, cls).__new__(cls, **defaults)
-
-        def asDict(self):
-            return self._asdict()
-
-        def replace(self, data):
-            allowedFields = self._fields
-            dataToUpdate = {k:v for k, v in self._preprocessData(data).iteritems() if k in allowedFields}
-            return self._replace(**dataToUpdate)
-
-        @classmethod
-        def defaults(cls):
-            raise NotImplementedError
-
-        @classmethod
-        def _preprocessData(cls, data):
-            return data
-
-    return SettingsBlock
 
 
 class _Comp7QualificationConfig(settingsBlock('_Comp7QualificationConfig', ('battlesNumber',))):
@@ -1241,6 +1291,22 @@ class Comp7RewardsConfig(settingsBlock('Comp7RewardsConfig', (
     @classmethod
     def defaults(cls):
         return {'main': [], 'extra': []}
+
+
+class BattleModifiersConfig(settingsBlock('BattleModifiersConfig', (
+ 'isEnabled',
+ 'fortBattle_10',
+ 'sortie_10',
+ 'sortie_9',
+ 'sortie_8',
+ 'sortie_7',
+ 'sortie_6',
+ 'global_map'))):
+    __slots__ = ()
+
+    @classmethod
+    def defaults(cls):
+        return dict(isEnabled=False, fortBattle_10=(), sortie_10=(), sortie_9=(), sortie_8=(), sortie_7=(), sortie_6=(), global_map=())
 
 
 class WinbackConfig(namedtuple('WinbackConfig', (
@@ -1779,6 +1845,50 @@ class _LootBoxStatisticsConfig(namedtuple('_LootBoxStatisticsConfig', ('enabled'
         return cls()
 
 
+class _BattleContextHintsConfig(namedtuple('_BattleContextHintsConfig', ('enabled', 'hints'))):
+    __slots__ = ()
+
+    def __new__(cls, **kwargs):
+        defaults = dict(enabled=False, hints={})
+        defaults.update(kwargs)
+        return super(_BattleContextHintsConfig, cls).__new__(cls, **defaults)
+
+    def asDict(self):
+        return self._asdict()
+
+    def replace(self, data):
+        allowedFields = self._fields
+        dataToUpdate = dict((k, v) for k, v in data.iteritems() if k in allowedFields)
+        return self._replace(**dataToUpdate)
+
+    @classmethod
+    def defaults(cls):
+        return cls()
+
+
+class _SettingsLoggingConfig(namedtuple('_SettingsLoggingConfig', (
+ 'isEnabled',
+ 'logChangesPerSession'))):
+    __slots__ = ()
+
+    def __new__(cls, **kwargs):
+        defaults = dict(isEnabled=False, logChangesPerSession=False)
+        defaults.update(kwargs)
+        return super(_SettingsLoggingConfig, cls).__new__(cls, **defaults)
+
+    def asDict(self):
+        return self._asdict()
+
+    def replace(self, data):
+        allowedFields = self._fields
+        dataToUpdate = dict((k, v) for k, v in data.iteritems() if k in allowedFields)
+        return self._replace(**dataToUpdate)
+
+    @classmethod
+    def defaults(cls):
+        return cls()
+
+
 class ServerSettings(object):
 
     def __init__(self, serverSettings):
@@ -1820,6 +1930,7 @@ class ServerSettings(object):
         self.__collectiveGoalMarathonsConfig = _CollectiveGoalMarathonsConfig()
         self.__peripheryRoutingConfig = PeripheryRoutingConfig()
         self.__comp7Config = Comp7Config()
+        self.__battleModifiersConfig = BattleModifiersConfig()
         self.__comp7RanksConfig = Comp7RanksConfig()
         self.__comp7RewardsConfig = Comp7RewardsConfig()
         self.__personalReservesConfig = PersonalReservesConfig()
@@ -1842,6 +1953,8 @@ class ServerSettings(object):
         self.__blackMarketConfig = _BlackMarketConfig()
         self.__ingameBrowserEventConfig = _IngameBrowserEventConfig()
         self.__lootBoxStatisticsConfig = _LootBoxStatisticsConfig.defaults()
+        self.__battleContextHintsConfig = _BattleContextHintsConfig.defaults()
+        self.__settingsLoggingConfig = _SettingsLoggingConfig()
         self.__schemaManager = getSchemaManager()
         self.set(serverSettings)
 
@@ -1976,6 +2089,11 @@ class ServerSettings(object):
             self.__comp7RewardsConfig = makeTupleByDict(Comp7RewardsConfig, self.__serverSettings[Configs.COMP7_REWARDS_CONFIG.value])
         else:
             self.__comp7RewardsConfig = Comp7RewardsConfig.defaults()
+        if Configs.WGSH_MODIFIER_CONFIG.value in self.__serverSettings:
+            LOG_DEBUG(Configs.WGSH_MODIFIER_CONFIG.value, self.__serverSettings[Configs.WGSH_MODIFIER_CONFIG.value])
+            self.__battleModifiersConfig = makeTupleByDict(BattleModifiersConfig, self.__serverSettings[Configs.WGSH_MODIFIER_CONFIG.value])
+        else:
+            self.__battleModifiersConfig = BattleModifiersConfig.defaults()
         if Configs.PERSONAL_RESERVES_CONFIG.value in self.__serverSettings:
             self.__personalReservesConfig = makeTupleByDict(PersonalReservesConfig, self.__serverSettings[Configs.PERSONAL_RESERVES_CONFIG.value])
         else:
@@ -2023,6 +2141,8 @@ class ServerSettings(object):
             self.__modeSelectorConfig = makeTupleByDict(ModeSelectorConfig, self.__serverSettings[Configs.MODE_SELECTOR_CONFIG.value])
         else:
             self.__modeSelectorConfig = ModeSelectorConfig.defaults()
+        if Configs.BATTLE_CONTEXT_HINTS_CONFIG.value in self.__serverSettings:
+            self.__battleContextHintsConfig = makeTupleByDict(_BattleContextHintsConfig, self.__serverSettings[Configs.BATTLE_CONTEXT_HINTS_CONFIG.value])
         self.__schemaManager.set(self.__serverSettings)
         if Configs.PARAGONS_CONFIG.value in self.__serverSettings:
             LOG_DEBUG(Configs.PARAGONS_CONFIG.value, self.__serverSettings[Configs.PARAGONS_CONFIG.value])
@@ -2031,6 +2151,8 @@ class ServerSettings(object):
             self.__paragonsConfig = ParagonsConfig.defaults()
         if Configs.LOOTBOX_STATISTICS_CONFIG.value in self.__serverSettings:
             self.__lootBoxStatisticsConfig = makeTupleByDict(_LootBoxStatisticsConfig, self.__serverSettings[Configs.LOOTBOX_STATISTICS_CONFIG.value])
+        if Configs.SETTINGS_LOGGING_CONFIG.value in self.__serverSettings:
+            self.__settingsLoggingConfig = makeTupleByDict(_SettingsLoggingConfig, self.__serverSettings[Configs.SETTINGS_LOGGING_CONFIG.value])
         self.onServerSettingsChange(serverSettings)
 
     def update(self, serverSettingsDiff):
@@ -2070,6 +2192,8 @@ class ServerSettings(object):
             self.__updateComp7PrestigeRanks(serverSettingsDiff)
         if Configs.COMP7_REWARDS_CONFIG.value in serverSettingsDiff:
             self.__updateComp7Rewards(serverSettingsDiff)
+        if Configs.WGSH_MODIFIER_CONFIG.value in serverSettingsDiff:
+            self.__updateBattleModifiers(serverSettingsDiff)
         if 'telecom_config' in serverSettingsDiff:
             self.__telecomConfig = _TelecomConfig(self.__serverSettings['telecom_config'])
         if 'disabledPMOperations' in serverSettingsDiff:
@@ -2173,6 +2297,10 @@ class ServerSettings(object):
             self.__updateIngameBrowserEventConfig(serverSettingsDiff)
         if Configs.LOOTBOX_STATISTICS_CONFIG.value in serverSettingsDiff:
             self.__updateLootBoxStatisticsConfig(serverSettingsDiff)
+        if Configs.BATTLE_CONTEXT_HINTS_CONFIG.value in serverSettingsDiff:
+            self.__updateBattleContextHintsConfig(serverSettingsDiff)
+        if Configs.SETTINGS_LOGGING_CONFIG.value in serverSettingsDiff:
+            self.__updateSettingsLogging(serverSettingsDiff)
         self.__schemaManager.update(serverSettingsDiff)
         self.onServerSettingsChange(serverSettingsDiff)
 
@@ -2276,6 +2404,10 @@ class ServerSettings(object):
     @property
     def comp7Config(self):
         return self.__comp7Config
+
+    @property
+    def battleModifiersConfig(self):
+        return self.__battleModifiersConfig
 
     @property
     def comp7RanksConfig(self):
@@ -2401,6 +2533,14 @@ class ServerSettings(object):
     def modeSelectorConfig(self):
         return self.__modeSelectorConfig
 
+    @property
+    def battleContextHintsConfig(self):
+        return self.__battleContextHintsConfig
+
+    @property
+    def settingsLoggingConfig(self):
+        return self.__settingsLoggingConfig
+
     def isEpicBattleEnabled(self):
         return self.epicBattles.isEnabled
 
@@ -2448,9 +2588,6 @@ class ServerSettings(object):
 
     def isLootBoxesEnabled(self):
         return self.__getGlobalSetting('isLootBoxesEnabled')
-
-    def isLootBoxEnabled(self, boxId):
-        return self.__getGlobalSetting('lootBoxes_config', {}).get(boxId, {}).get('enabled', False)
 
     def isAnonymizerEnabled(self):
         return self.__getGlobalSetting('isAnonymizerEnabled', False)
@@ -2786,9 +2923,6 @@ class ServerSettings(object):
     def getLootBoxStatisticsConfig(self):
         return self.__getGlobalSetting(Configs.LOOTBOX_STATISTICS_CONFIG.value, {})
 
-    def getNYConfig(self):
-        return self.__getGlobalSetting('ny_config', {})
-
     def __getGlobalSetting(self, settingsName, default=None):
         return self.__serverSettings.get(settingsName, default)
 
@@ -2836,6 +2970,10 @@ class ServerSettings(object):
     def __updateComp7Rewards(self, targetSettings):
         config = targetSettings[Configs.COMP7_REWARDS_CONFIG.value]
         self.__comp7RewardsConfig = self.__comp7RewardsConfig.replace(config)
+
+    def __updateBattleModifiers(self, targetSettings):
+        config = targetSettings[Configs.WGSH_MODIFIER_CONFIG.value]
+        self.__battleModifiersConfig = self.__battleModifiersConfig.replace(copy.deepcopy(config))
 
     def __updateParagons(self, targetSettings):
         self.__paragonsConfig = self.__paragonsConfig.replace(targetSettings[Configs.PARAGONS_CONFIG.value])
@@ -2979,6 +3117,12 @@ class ServerSettings(object):
 
     def __updateLootBoxStatisticsConfig(self, diff):
         self.__lootBoxStatisticsConfig = self.__lootBoxStatisticsConfig.replace(diff[Configs.LOOTBOX_STATISTICS_CONFIG.value])
+
+    def __updateBattleContextHintsConfig(self, diff):
+        self.__battleContextHintsConfig = self.__battleContextHintsConfig.replace(diff[Configs.BATTLE_CONTEXT_HINTS_CONFIG.value])
+
+    def __updateSettingsLogging(self, diff):
+        self.__settingsLoggingConfig = self.__settingsLoggingConfig.replace(diff[Configs.SETTINGS_LOGGING_CONFIG.value])
 
 
 def serverSettingsChangeListener(*configKeys):

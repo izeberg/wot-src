@@ -131,15 +131,6 @@
 							</transform>
 						</node>
 					</node>
-					<node>
-						<identifier>Track_L1_BlendBone</identifier>
-						<transform>
-							<row0>1.000000 0.000000 0.000000</row0>
-							<row1>0.000000 1.000000 0.000000</row1>
-							<row2>0.000000 0.000000 -1.000000</row2>
-							<row3>1.320879 0.000000 -0.651791</row3>
-						</transform>
-					</node>
 				</node>
 				<node>
 					<identifier>Track_L2</identifier>
@@ -771,11 +762,21 @@
 						</transform>
 					</node>
 				</node>
+				<node>
+					<identifier>Tank_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.000000 -0.500000 0.000000</row3>
+					</transform>
+				</node>
 			</node>
 		</node>
 	</node>
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>Tank_BlendBone</node>
 		<node>V_BlendBone</node>
 		<geometry>
 			<vertices>chassis_R_Shape.vertices</vertices>
@@ -783,25 +784,17 @@
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>tank_proxy_skinned</identifier>
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
 					<materialKind>0</materialKind>
+					<identifier>tank_proxy_skinned</identifier>
 					<collisionFlags>0</collisionFlags>
 					<property>
 						diffuseMap
 						<Texture>vehicles/intunion/Un14_T54D/T54D_proxy_AM.dds</Texture>
 					</property>
 					<property>
-						excludeMaskAndAOMap
-						<Texture>vehicles/intunion/Un14_T54D/T54D_proxy_AO.dds</Texture>
-					</property>
-					<property>
-						g_detailUVTiling
-						<Vector4>3.506850 3.506850 0.000000 0.000000</Vector4>
-					</property>
-					<property>
-						metallicDetailMap
-						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 					<property>
 						metallicGlossMap
@@ -812,8 +805,8 @@
 						<Texture>vehicles/intunion/Un14_T54D/T54D_proxy_ANM.dds</Texture>
 					</property>
 					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+						excludeMaskAndAOMap
+						<Texture>vehicles/intunion/Un14_T54D/T54D_proxy_AO.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>1.321345 0.534804 0.022161</groupOrigin>
@@ -822,6 +815,7 @@
 	</renderSet>
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>Tank_BlendBone</node>
 		<node>V_BlendBone</node>
 		<geometry>
 			<vertices>chassis_L_Shape.vertices</vertices>
@@ -829,25 +823,17 @@
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>tank_proxy_skinned</identifier>
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
 					<materialKind>0</materialKind>
+					<identifier>tank_proxy_skinned</identifier>
 					<collisionFlags>0</collisionFlags>
 					<property>
 						diffuseMap
 						<Texture>vehicles/intunion/Un14_T54D/T54D_proxy_AM.dds</Texture>
 					</property>
 					<property>
-						excludeMaskAndAOMap
-						<Texture>vehicles/intunion/Un14_T54D/T54D_proxy_AO.dds</Texture>
-					</property>
-					<property>
-						g_detailUVTiling
-						<Vector4>3.506850 3.506850 0.000000 0.000000</Vector4>
-					</property>
-					<property>
-						metallicDetailMap
-						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 					<property>
 						metallicGlossMap
@@ -858,8 +844,8 @@
 						<Texture>vehicles/intunion/Un14_T54D/T54D_proxy_ANM.dds</Texture>
 					</property>
 					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+						excludeMaskAndAOMap
+						<Texture>vehicles/intunion/Un14_T54D/T54D_proxy_AO.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>-1.321345 0.534805 0.022161</groupOrigin>

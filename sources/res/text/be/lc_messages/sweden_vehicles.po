@@ -32,6 +32,12 @@ msgstr "Büssing NAG L8V/36 TR"
 msgid "BNAG_L8V_36TR_A"
 msgstr "Büssing NAG L8V/36 TR"
 
+msgid "Boeing_502_10"
+msgstr "Boeing 502–10"
+
+msgid "Boeing_502_10_T"
+msgstr "Boeing 502–10 T"
+
 msgid "Chassis_01_S14_Ikv_103_SH"
 msgstr "іkv 103MB"
 
@@ -88,6 +94,15 @@ msgstr "L-120"
 
 msgid "Chassis_S09_L_120_TD_2"
 msgstr "Pvlvv fm/42"
+
+msgid "Chassis_S1036_VK_155_Projekt_T"
+msgstr "VK 155 T"
+
+msgid "Chassis_S1039_15cm_AKV60_Utkast_1_T"
+msgstr "Strv S1 T"
+
+msgid "Chassis_S1040_Sav_LS_46_T"
+msgstr "LS-46K T"
 
 msgid "Chassis_S10_Strv_103_0_Series"
 msgstr "Strv 103-0"
@@ -200,6 +215,21 @@ msgstr "Latt Stridsfordon 120"
 msgid "Chassis_S34_Lago_M38"
 msgstr "Lago M38"
 
+msgid "Chassis_S36_VK_155_Projekt"
+msgstr "VK 155"
+
+msgid "Chassis_S39_15cm_AKV60_Utkast_1"
+msgstr "Strv S"
+
+msgid "Chassis_S39_15cm_AKV60_Utkast_1_2"
+msgstr "Strv S1"
+
+msgid "Chassis_S40_Sav_LS_46"
+msgstr "LS-46"
+
+msgid "Chassis_S40_Sav_LS_46_2"
+msgstr "LS-46K"
+
 msgid "Chassis_S41_Bofors_Pagod_TK105"
 msgstr "Pagod TK105"
 
@@ -262,11 +292,17 @@ msgstr "Motoraggregat 9"
 msgid "Ra_100"
 msgstr "Ra 100"
 
+msgid "Ra_100_T"
+msgstr "Ra 100 T"
+
 msgid "Ra_105"
 msgstr "Ra 105"
 
 msgid "Ra_146"
 msgstr "Ra 146"
+
+msgid "Ra_146_T"
+msgstr "Ra 146 T"
 
 msgid "Ra_400"
 msgstr "Ra 400"
@@ -291,6 +327,21 @@ msgstr "Ra 421/1"
 
 msgid "Ra_421_P"
 msgstr "Ra 421"
+
+msgid "Ra_421_V"
+msgstr "Ra 421"
+
+msgid "Ra_421_V_T"
+msgstr "Ra 421 T"
+
+msgid "Rolls_Royce_K60"
+msgstr "Rolls-Royce K60"
+
+msgid "Rolls_Royce_K60_M1"
+msgstr "Rolls-Royce K60 M1"
+
+msgid "Rolls_Royce_K60_M1_T"
+msgstr "Rolls-Royce K60 M1 T"
 
 msgid "S01_Strv_74_A2"
 msgstr "Strv m/42-57 Alt A.2"
@@ -432,6 +483,60 @@ msgstr ""
 
 msgid "S09_L_120_TD_short"
 msgstr "Pvlvv fm/42"
+
+msgid "S1036_VK_155_Projekt_T"
+msgstr "VK 155 Projekt Test"
+
+msgid "S1036_VK_155_Projekt_T_descr"
+msgstr ""
+".\n"
+"\n"
+"Характеристики машины могут быть изменены без компенсации."
+
+msgid "S1036_VK_155_Projekt_T_long_special"
+msgstr "?empty?"
+
+msgid "S1036_VK_155_Projekt_T_short"
+msgstr "VK 155 (T)"
+
+msgid "S1036_VK_155_Projekt_T_short_special"
+msgstr "?empty?"
+
+msgid "S1039_15cm_AKV60_Utkast_1_T"
+msgstr "AKV60 Utkast 1 Test"
+
+msgid "S1039_15cm_AKV60_Utkast_1_T_descr"
+msgstr ""
+".\n"
+"\n"
+"Характеристики машины могут быть изменены без компенсации."
+
+msgid "S1039_15cm_AKV60_Utkast_1_T_long_special"
+msgstr "?empty?"
+
+msgid "S1039_15cm_AKV60_Utkast_1_T_short"
+msgstr "AKV60 (T)"
+
+msgid "S1039_15cm_AKV60_Utkast_1_T_short_special"
+msgstr "?empty?"
+
+msgid "S1040_Sav_LS_46_T"
+msgstr "Sav LS-46 Test"
+
+msgid "S1040_Sav_LS_46_T_descr"
+msgstr ""
+".\n"
+"\n"
+"Характеристики машины могут быть изменены без компенсации."
+
+msgid "S1040_Sav_LS_46_T_long_special"
+msgstr "?empty?"
+
+msgid "S1040_Sav_LS_46_T_short"
+msgstr "LS-46 (T)"
+
+msgid "S1040_Sav_LS_46_T_short_special"
+msgstr "?empty?"
 
 msgid "S10_Strv_103_0_Series"
 msgstr "Strv 103-0"
@@ -979,6 +1084,65 @@ msgstr "Lago M38"
 msgid "S34_Lago_M38_short_special"
 msgstr "Неблагая лабавая браня, высокая хуткастрэльнасць"
 
+msgid "S36_VK_155_Projekt"
+msgstr "VK 155 Projekt"
+
+msgid "S36_VK_155_Projekt_descr"
+msgstr ""
+"К началу 60-х гг. окончательно сформировалось видение того, как должна "
+"выглядеть серийная САУ для шведской армии. Один из проектов получил "
+"обозначение VK 155. Базировался он на агрегатах танка Strv S, при этом "
+"боевая масса должна была составить около 46 тонн. Разгоняться машина должна "
+"была до 40 км/ч. Что же касается артиллерийской части, то она была очень "
+"близка к машине AKV 151 (15,5cm artillerikanonvagn), на которой реализовали "
+"систему магазинного питания, что обеспечивало высокую скорострельность. "
+"Проект VK 155 лег в основу серийной САУ Bandkanon 1, продержавшейся на "
+"вооружении несколько десятилетий, и хорошо проявившей себя в ходе службы."
+
+msgid "S36_VK_155_Projekt_short"
+msgstr "VK 155 Pr."
+
+msgid "S39_15cm_AKV60_Utkast_1"
+msgstr "AKV60 Utkast 1"
+
+msgid "S39_15cm_AKV60_Utkast_1_descr"
+msgstr ""
+"Проект шведской 152-мм САУ AKV60 Utkast 1 (Вариант 1 или Образец 1) массой "
+"35 тонн был разработан в 1960 году фирмой Bofors. Проект являлся дальнейшим "
+"развитием работ по созданию 152-мм САУ KV FM/49 и AKV151. С целью снижения "
+"боевой массы AKV60 Utkast 1 была спроектирована на шасси Strv S. "
+"Отличительными чертами этой САУ должны были стать высокая подвижность, а "
+"также высокая скорострельность, достигавшаяся за счет использования нового "
+"механизма заряжания на 14 выстрелов (магазина с обойменным размещением "
+"боекомплекта). По результату решения командования шведской артиллерии, "
+"проект AKV60 Utkast 1 был отправлен на кардинальную переделку, в результате "
+"которой получилась совершенно другая машина. Исходный проект не был воплощен"
+" в металле и оказался одной из ступеней в эволюции к более совершенной "
+"152-мм САУ, известной как Bkan 1."
+
+msgid "S39_15cm_AKV60_Utkast_1_short"
+msgstr "AKV60"
+
+msgid "S40_Sav_LS_46"
+msgstr "Sav LS-46"
+
+msgid "S40_Sav_LS_46_descr"
+msgstr ""
+"С 1943 года шведы пытались создать танк в противовес Т-34. Одним из проектов"
+" был LS-46, танк с боевой массой 30 тонн. Танк так и остался проектным, но "
+"Landsverk и Bofors совместно предлагали различные боевые машины на его "
+"основе. К ним относится САУ, условно обозначаемая как Sav LS-46. Это "
+"необычная машина – попытка совместить три типа в одном: штурм-САУ, "
+"истребитель танков и гаубичную САУ, способную вести огонь по навесной "
+"траектории. Внешне машина напоминает pvkv m/43, но на более крупном шасси. "
+"Вооружение могло состоять из гаубиц калибра 105-149 мм. В отличие от других "
+"шведских САУ того периода, Sav LS-46 имела большой угол возвышения орудия. "
+"Неудача с разработкой LS-46 стала главной причиной, почему Sav LS-46 "
+"осталась эскизным проектом."
+
+msgid "S40_Sav_LS_46_short"
+msgstr "Sav LS-46"
+
 msgid "S41_Bofors_Pagod_TK105"
 msgstr "Bofors Pagod TK105"
 
@@ -1074,6 +1238,15 @@ msgstr "Ikv 65 Alt II"
 msgid "Turret_1_S09_L_120_TD"
 msgstr "Pvlvv fm/42"
 
+msgid "Turret_1_S1036_VK_155_Projekt_T"
+msgstr "VK 155 T"
+
+msgid "Turret_1_S1039_15cm_AKV60_Utkast_1_T"
+msgstr "AKV60 T"
+
+msgid "Turret_1_S1040_Sav_LS_46_T"
+msgstr "LS-46 T"
+
 msgid "Turret_1_S10_Strv_103_0_Series"
 msgstr "Strv 103-0"
 
@@ -1152,6 +1325,15 @@ msgstr "Latt Stridsfordon 120"
 msgid "Turret_1_S34_Lago_M38"
 msgstr "Lago M38"
 
+msgid "Turret_1_S36_VK_155_Projekt"
+msgstr "VK 155"
+
+msgid "Turret_1_S39_15cm_AKV60_Utkast_1"
+msgstr "AKV60"
+
+msgid "Turret_1_S40_Sav_LS_46"
+msgstr "LS-46"
+
 msgid "Turret_1_S41_Bofors_Pagod_TK105"
 msgstr "Pagod TK105"
 
@@ -1185,6 +1367,12 @@ msgstr "Lansen MB"
 msgid "Volvo_A8B"
 msgstr "Volvo A8B"
 
+msgid "Volvo_A8BS"
+msgstr "Volvo A8B M"
+
+msgid "Volvo_A8BS_T"
+msgstr "Volvo A8B M T"
+
 msgid "Volvo_DC"
 msgstr "Volvo DC"
 
@@ -1214,6 +1402,9 @@ msgstr "slpprj D/5"
 
 msgid "_105mm_Bofors_D_G5_SH"
 msgstr "10.5 cm Bofors D/5"
+
+msgid "_105mm_Kanon_M34"
+msgstr "10,5 cm Kanon m/34"
 
 msgid "_105mm_TK_105_9"
 msgstr "10,5 cm TK 105-9"
@@ -1293,6 +1484,9 @@ msgstr "sgr m/40 B"
 msgid "_105mm_sgr_m_52"
 msgstr "sgr m/52"
 
+msgid "_105mm_slpgr_M49"
+msgstr "slsgr m/49"
+
 msgid "_105mm_slpgr_m_42"
 msgstr "slpgr m/42"
 
@@ -1370,6 +1564,9 @@ msgstr "slpsgr m/60"
 
 msgid "_105mm_slpsgr_m_65"
 msgstr "slpsgr m/65"
+
+msgid "_105mm_slsgr_M_34"
+msgstr "slsgr m/34"
 
 msgid "_105mm_slsgr_m_61A"
 msgstr "slsgr m/61A"
@@ -1476,6 +1673,63 @@ msgstr "slpprj m/ny"
 msgid "_120mm_strvkan_L_40"
 msgstr "12 cm strvkan L/40"
 
+msgid "_149mm_Haubits_M39"
+msgstr "15 cm Haubits m/39"
+
+msgid "_149mm_Haubits_M39_T"
+msgstr "15 cm Haubits m/39 T"
+
+msgid "_149mm_Spranggranat_M39_40_Z"
+msgstr "Spränggranat M/39-40 Z"
+
+msgid "_149mm_Spranggranat_M39_40_Z_T"
+msgstr "Spränggranat M/39-40 Z T"
+
+msgid "_149mm_Stalgranat_M39_40"
+msgstr "Stålgranat M/39-40"
+
+msgid "_149mm_Stalgranat_M39_40_T"
+msgstr "Stålgranat M/39-40 T"
+
+msgid "_152mm_Kanon_FM49_L50"
+msgstr "15,2 cm Kanon fm/49 L50"
+
+msgid "_152mm_Kanon_FM49_L50_T"
+msgstr "15,2 cm Kanon fm/49 L50 T"
+
+msgid "_152mm_Kanon_M37"
+msgstr "15,2 cm Kanon m/37"
+
+msgid "_152mm_sprgr_M39"
+msgstr "Spränggranat M/39"
+
+msgid "_152mm_sprgr_M39_T"
+msgstr "Spränggranat M/39 T"
+
+msgid "_152mm_stlgr_M39"
+msgstr "Stålgranat M/39"
+
+msgid "_152mm_stlgr_M39_T"
+msgstr "Stålgranat M/39 T"
+
+msgid "_155mm_Kanon_M60"
+msgstr "15,5 cm Kanon М60"
+
+msgid "_155mm_Kanon_M60_T"
+msgstr "15,5 cm Kanon М60 T"
+
+msgid "_155mm_slpgr_M112"
+msgstr "slpgr m112"
+
+msgid "_155mm_slpgr_M112_T"
+msgstr "slpgr m112 T"
+
+msgid "_155mm_slsgr_M66"
+msgstr "slsgr m/66"
+
+msgid "_155mm_slsgr_M66_T"
+msgstr "slsgr m/66 T"
+
 msgid "_1_W_Sv"
 msgstr "1 W Sv"
 
@@ -1535,6 +1789,9 @@ msgstr "2 st Scania-Vabis 607"
 
 msgid "_2_st_Scania_Vabis_L_603_1"
 msgstr "2 st Scania-Vabis L 603/1"
+
+msgid "_2_st_Scania_Vabis_L_603_1S"
+msgstr "2 st. Scania-Vabis 607"
 
 msgid "_37mm_kan_m_38_49_strv"
 msgstr "37 mm kan m/38-49 strv"

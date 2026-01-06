@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB143_Captain/_skins/GB143_Captain_3Dst_01/normal/lod0/Gaussgun_anim</nodefullVisual>
+	<visibilityBox>
+		<min>-1.425369 0.953040 -0.830445</min>
+		<max>0.523097 1.875042 0.657184</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<parent>vehicles/british/GB143_Captain/_skins/GB143_Captain_3Dst_01/normal/lod1/Gaussgun_anim</parent>
+	<extent>32.000000</extent>
+</root>

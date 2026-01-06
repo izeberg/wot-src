@@ -65,8 +65,8 @@
 	</node>
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
-		<node>Tank_BlendBone</node>
 		<node>V_BlendBone</node>
+		<node>Tank_BlendBone</node>
 		<geometry>
 			<vertices>track_L_Shape.vertices</vertices>
 			<stream>track_L_Shape.uv2</stream>
@@ -74,9 +74,9 @@
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>track_mat_R_skinned</identifier>
 					<fx>shaders/std_effects/PBS_tank_skinned_ao.fx</fx>
 					<materialKind>0</materialKind>
+					<identifier>track_mat_R_skinned</identifier>
 					<collisionFlags>0</collisionFlags>
 					<property>
 						alphaReference
@@ -85,10 +85,6 @@
 					<property>
 						alphaTestEnable
 						<Bool>true</Bool>
-					</property>
-					<property>
-						crash_coefficient
-						<Float>0.300000</Float>
 					</property>
 					<property>
 						diffuseMap
@@ -134,9 +130,9 @@
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>track_mat_L_skinned</identifier>
 					<fx>shaders/std_effects/PBS_tank_skinned_ao.fx</fx>
 					<materialKind>0</materialKind>
+					<identifier>track_mat_L_skinned</identifier>
 					<collisionFlags>0</collisionFlags>
 					<property>
 						alphaReference
@@ -145,10 +141,6 @@
 					<property>
 						alphaTestEnable
 						<Bool>true</Bool>
-					</property>
-					<property>
-						crash_coefficient
-						<Float>0.300000</Float>
 					</property>
 					<property>
 						diffuseMap
@@ -186,7 +178,7 @@
 	<constraints/>
 	<boundingBox>
 		<min>-1.748161 -0.000332 -4.983893</min>
-		<max>1.750000 1.595347 5.856189</max>
+		<max>1.750000 1.595348 5.856189</max>
 	</boundingBox>
 	<geometrySize>37692</geometrySize>
 	<minUVDensity>0.816055</minUVDensity>

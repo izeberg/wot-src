@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/german/G193_Aufgabe_57/normal/lod4/Chassis</parent>
+	<tank>true</tank>
+	<extent>192.000000</extent>
+	<nodefullVisual>vehicles/german/G193_Aufgabe_57/normal/lod3/Chassis</nodefullVisual>
+	<visibilityBox>
+		<min>-1.667079 -0.000472 -3.700707</min>
+		<max>1.667074 1.274675 3.430378</max>
+	</visibilityBox>
+</root>

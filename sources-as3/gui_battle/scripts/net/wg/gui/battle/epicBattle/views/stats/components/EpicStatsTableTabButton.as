@@ -14,11 +14,15 @@ package net.wg.gui.battle.epicBattle.views.stats.components
       
       private static const ALL_LANES_PREFIX:String = "all_";
       
+      private static const QUESTS_PREFIX:String = "quests_";
+      
       private static const ON_STATE_POSTFIX:String = "on";
       
       private static const OFF_STATE_POSTFIX:String = "off";
       
       private static const INVALIDATE_LANE:String = "invalidateLane";
+      
+      private static const WIDTH:int = 204;
        
       
       public var laneIcon:MovieClip = null;
@@ -30,6 +34,12 @@ package net.wg.gui.battle.epicBattle.views.stats.components
       public function EpicStatsTableTabButton()
       {
          super();
+      }
+      
+      override protected function configUI() : void
+      {
+         super.configUI();
+         super.width = WIDTH;
       }
       
       override protected function draw() : void
@@ -52,6 +62,11 @@ package net.wg.gui.battle.epicBattle.views.stats.components
       {
          super.selected = param1;
          invalidate(INVALIDATE_LANE);
+      }
+      
+      public function setQuestsPrefix() : void
+      {
+         this._statePrefix = QUESTS_PREFIX;
       }
       
       public function get playerLane() : int

@@ -1,4 +1,6 @@
 import logging, typing
+from dog_tags_common.components_config import componentConfigAdapter
+from dog_tags_common.config.common import ComponentViewType
 from gui.impl import backport
 from gui.impl.gen import R
 from gui.server_events.recruit_helper import getRecruitInfo
@@ -11,7 +13,7 @@ from helpers import i18n, int2roman
 from items.tankmen import RECRUIT_TMAN_TOKEN_PREFIX
 from shared_utils import first
 if typing.TYPE_CHECKING:
-    from gui.server_events.bonuses import SimpleBonus, VehicleBlueprintBonus, ItemsBonus, CustomizationsBonus, BattlePassSelectTokensBonus, BattlePassStyleProgressTokenBonus
+    from gui.server_events.bonuses import SimpleBonus, VehicleBlueprintBonus, ItemsBonus, CustomizationsBonus, BattlePassSelectTokensBonus, BattlePassStyleProgressTokenBonus, DogTagComponentBonus
 _logger = logging.getLogger(__name__)
 
 class BonusesHelper(object):
@@ -123,10 +125,26 @@ class _RewardSelectSubTypeGetter(_BaseSubTypeGetter):
         return bonus.getType()
 
 
+class _DogTagComponentsSubTypeGetter(_BaseSubTypeGetter):
+
+    @staticmethod
+    def getSubType(bonus):
+        subType = ''
+        dogTags = bonus.getDogTagComponents()
+        dogTagRecord = first(dogTags)
+        dogTagComponent = componentConfigAdapter.getComponentById(dogTagRecord.componentId)
+        if dogTagComponent.viewType == ComponentViewType.BACKGROUND:
+            subType = _HelperConsts.DOG_TAG_BACKGROUND
+        elif dogTagComponent.viewType == ComponentViewType.ENGRAVING:
+            subType = _HelperConsts.DOG_TAG_ENGRAVING
+        return subType
+
+
 _SUB_TYPE_GETTERS_MAP = {'default': _BaseSubTypeGetter, 
    'items': _ItemsSubTypeGetter, 
    'customizations': _CustomizationSubTypeGetter, 
-   'battlePassSelectToken': _RewardSelectSubTypeGetter}
+   'battlePassSelectToken': _RewardSelectSubTypeGetter, 
+   'dogTagComponents': _DogTagComponentsSubTypeGetter}
 
 class _BaseValueGetter(object):
 
@@ -196,6 +214,15 @@ class _VehiclesValueGetter(_BaseValueGetter):
         return value
 
 
+class _TankManValueGetter(_BaseValueGetter):
+
+    @classmethod
+    def getValue(cls, bonus, _):
+        value = bonus.getValue()
+        value = str(first(value.iterkeys()))
+        return value
+
+
 _VALUE_GETTERS_MAP = {'default': _BaseValueGetter, 
    'blueprints': _BlueprintValueGetter, 
    'items': _IntCDValueGetter, 
@@ -203,7 +230,8 @@ _VALUE_GETTERS_MAP = {'default': _BaseValueGetter,
    'crewBooks': _IntCDValueGetter, 
    'customizations': _CustomizationValueGetter, 
    'styleProgressToken': _StyleProgressTokenValueGetter, 
-   'vehicles': _VehiclesValueGetter}
+   'vehicles': _VehiclesValueGetter, 
+   'tmanToken': _TankManValueGetter}
 
 class _BaseTextGetter(object):
 
@@ -371,3 +399,5 @@ class _HelperConsts(object):
     ECONOMIC_BOOSTER_TYPE = 'economicBattleBooster'
     DEVICE_BATTLE_BOOSTER_TYPE = 'deviceBattleBooster'
     STYLE_3D_TYPE = 'style3D'
+    DOG_TAG_BACKGROUND = 'dogTagBackground'
+    DOG_TAG_ENGRAVING = 'dogTagEngraving'

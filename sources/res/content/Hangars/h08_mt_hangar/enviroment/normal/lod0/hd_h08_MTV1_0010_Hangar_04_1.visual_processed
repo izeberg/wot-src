@@ -123,15 +123,6 @@
 						<row3>0.000000 0.000000 0.000000</row3>
 					</transform>
 				</node>
-				<node>
-					<identifier>s9</identifier>
-					<transform>
-						<row0>1.000000 0.000000 0.000000</row0>
-						<row1>0.000000 1.000000 0.000000</row1>
-						<row2>0.000000 0.000000 1.000000</row2>
-						<row3>0.000000 0.000000 0.000000</row3>
-					</transform>
-				</node>
 			</node>
 		</node>
 	</node>
@@ -261,45 +252,6 @@
 					</property>
 				</material>
 				<groupOrigin>19.999990 0.346965 -35.000000</groupOrigin>
-			</primitiveGroup>
-		</geometry>
-	</renderSet>
-	<renderSet>
-		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
-		<node>s9</node>
-		<geometry>
-			<vertices>s9Shape.vertices</vertices>
-			<stream>s9Shape.colour</stream>
-			<primitive>s9Shape.indices</primitive>
-			<primitiveGroup>
-				0
-				<material>
-					<identifier>s_nd9</identifier>
-					<fx>shaders/std_effects/glow.fx</fx>
-					<materialKind>108</materialKind>
-					<collisionFlags>255</collisionFlags>
-					<property>
-						destBlend
-						<Int>5</Int>
-					</property>
-					<property>
-						diffuseMap
-						<Texture>content/Hangars/h08_mt_hangar/enviroment/hd_h08_MTV1_0010_HangarGlass_AM.dds</Texture>
-					</property>
-					<property>
-						g_tintColor
-						<Vector4>0.501961 0.376471 0.247059 1.000000</Vector4>
-					</property>
-					<property>
-						selfIllumination
-						<Float>6.000000</Float>
-					</property>
-					<property>
-						srcBlend
-						<Int>3</Int>
-					</property>
-				</material>
-				<groupOrigin>35.725758 5.233476 -39.999985</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -885,6 +837,6 @@
 		<min>-0.102466 -1.000035 -85.579659</min>
 		<max>41.973377 33.585186 0.400127</max>
 	</boundingBox>
-	<geometrySize>861154</geometrySize>
+	<geometrySize>860142</geometrySize>
 	<minUVDensity>0.001725</minUVDensity>
 </root>

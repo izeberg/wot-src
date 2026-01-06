@@ -35,7 +35,7 @@ package net.wg.gui.battle.components.stats.playersPanel
       
       private static const ATTACK_PURPLE_STATE:String = "attackPurple";
       
-      private static const GREEN_COLOR_ANIMATION_LIST:Array = ["goingTo","thanks","help_me_ex","help_me","supportingAlly","defendBase","defendingBase","defendObjective","defendingObjective"];
+      private static const GREEN_COLOR_ANIMATION_LIST:Array = ["goingTo","thanks","help_me_ex","help_me","supportingAlly","defendBase","defendingBase","defendObjective","defendingObjective","defend"];
       
       private static const RED_COLOR_ANIMATION_LIST:Array = ["attackBase","attack","attackingBase","attackObjective","attackingObjective"];
       
@@ -63,7 +63,8 @@ package net.wg.gui.battle.components.stats.playersPanel
          "defendingObjective":12,
          "attackObjective":13,
          "attackingObjective":13,
-         "attackObjectivePurple":14
+         "attackObjectivePurple":14,
+         "defend":15
       };
       
       private static const TARGET_CHAT_CMD_FLAGS:uint = 1;

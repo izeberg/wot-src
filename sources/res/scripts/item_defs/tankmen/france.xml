@@ -6451,6 +6451,106 @@
 				<_31121>ny26_terentij.png</_31121>
 			</icons>
 		</ny26_terentij>
+		<ny26_celeb_1>
+			<groupID>31122</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>male</sex>
+			<notInShop>true</notInShop>
+			<tags>passportReplacementForbidden ny26_character01_specialVoice commander gunner driver radioman loader</tags>
+			<roles>commander gunner driver radioman loader</roles>
+			<firstNames>
+				<_31122>#france_tankmen:names/ny26_celeb_1_n</_31122>
+			</firstNames>
+			<lastNames>
+				<_31122>#france_tankmen:names/ny26_celeb_1</_31122>
+			</lastNames>
+			<icons>
+				<_31122>ny26_celeb_1.png</_31122>
+			</icons>
+		</ny26_celeb_1>
+		<ny26_celeb_2>
+			<groupID>31123</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>male</sex>
+			<notInShop>true</notInShop>
+			<tags>passportReplacementForbidden ny26_character02_specialVoice commander gunner driver radioman loader</tags>
+			<roles>commander gunner driver radioman loader</roles>
+			<firstNames>
+				<_31123>#france_tankmen:names/ny26_celeb_2_n</_31123>
+			</firstNames>
+			<lastNames>
+				<_31123>#france_tankmen:names/ny26_celeb_2</_31123>
+			</lastNames>
+			<icons>
+				<_31123>ny26_celeb_2.png</_31123>
+			</icons>
+		</ny26_celeb_2>
+		<ny26_celeb_3>
+			<groupID>31124</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>male</sex>
+			<notInShop>true</notInShop>
+			<tags>passportReplacementForbidden ny26_character03_specialVoice commander gunner driver radioman loader</tags>
+			<roles>commander gunner driver radioman loader</roles>
+			<firstNames>
+				<_31124>#france_tankmen:names/ny26_celeb_3_n</_31124>
+			</firstNames>
+			<lastNames>
+				<_31124>#france_tankmen:names/ny26_celeb_3</_31124>
+			</lastNames>
+			<icons>
+				<_31124>ny26_celeb_3.png</_31124>
+			</icons>
+		</ny26_celeb_3>
+		<ny26_celeb_4>
+			<groupID>31125</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>male</sex>
+			<notInShop>true</notInShop>
+			<tags>passportReplacementForbidden ny26_character04_specialVoice commander gunner driver radioman loader</tags>
+			<roles>commander gunner driver radioman loader</roles>
+			<firstNames>
+				<_31125>#france_tankmen:names/ny26_celeb_4_n</_31125>
+			</firstNames>
+			<lastNames>
+				<_31125>#france_tankmen:names/ny26_celeb_4</_31125>
+			</lastNames>
+			<icons>
+				<_31125>ny26_celeb_4.png</_31125>
+			</icons>
+		</ny26_celeb_4>
+		<ny26_celeb_5>
+			<groupID>31126</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>male</sex>
+			<notInShop>true</notInShop>
+			<tags>passportReplacementForbidden ny26_character05_specialVoice commander gunner driver radioman loader</tags>
+			<roles>commander gunner driver radioman loader</roles>
+			<firstNames>
+				<_31126>#france_tankmen:names/ny26_celeb_5_n</_31126>
+			</firstNames>
+			<lastNames>
+				<_31126>#france_tankmen:names/ny26_celeb_5</_31126>
+			</lastNames>
+			<icons>
+				<_31126>ny26_celeb_5.png</_31126>
+			</icons>
+		</ny26_celeb_5>
 		<ny26_snowmaiden_1>
 			<groupID>31127</groupID>
 			<weight>
@@ -6531,5 +6631,85 @@
 				<_31130>ny26_snowmaiden_4.png</_31130>
 			</icons>
 		</ny26_snowmaiden_4>
+		<tankmen_BP18_5_1>
+			<groupID>31131</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>male</sex>
+			<notInShop>true</notInShop>
+			<tags>passportReplacementForbidden commander gunner driver radioman loader bp18_5_stalcraft_specialVoice</tags>
+			<roles>commander gunner driver radioman loader</roles>
+			<firstNames>
+				<_31131>#france_tankmen:names/tankmen_BP18_5_1_n</_31131>
+			</firstNames>
+			<lastNames>
+				<_31131>#france_tankmen:names/tankmen_BP18_5_1</_31131>
+			</lastNames>
+			<icons>
+				<_31131>tankmen_BP18_5_1.png</_31131>
+			</icons>
+		</tankmen_BP18_5_1>
+		<tankmen_BP18_5_2>
+			<groupID>31132</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>male</sex>
+			<notInShop>true</notInShop>
+			<tags>passportReplacementForbidden commander gunner driver radioman loader</tags>
+			<roles>commander gunner driver radioman loader</roles>
+			<firstNames>
+				<_31132>#france_tankmen:names/tankmen_BP18_5_2_n</_31132>
+			</firstNames>
+			<lastNames>
+				<_31132>#france_tankmen:names/tankmen_BP18_5_2</_31132>
+			</lastNames>
+			<icons>
+				<_31132>tankmen_BP18_5_2.png</_31132>
+			</icons>
+		</tankmen_BP18_5_2>
+		<tankmen_BP18_5_3>
+			<groupID>31133</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>male</sex>
+			<notInShop>true</notInShop>
+			<tags>passportReplacementForbidden commander gunner driver radioman loader</tags>
+			<roles>commander gunner driver radioman loader</roles>
+			<firstNames>
+				<_31133>#france_tankmen:names/tankmen_BP18_5_3_n</_31133>
+			</firstNames>
+			<lastNames>
+				<_31133>#france_tankmen:names/tankmen_BP18_5_3</_31133>
+			</lastNames>
+			<icons>
+				<_31133>tankmen_BP18_5_3.png</_31133>
+			</icons>
+		</tankmen_BP18_5_3>
+		<tankmen_BP18_5_4>
+			<groupID>31134</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>male</sex>
+			<notInShop>true</notInShop>
+			<tags>passportReplacementForbidden commander gunner driver radioman loader</tags>
+			<roles>commander gunner driver radioman loader</roles>
+			<firstNames>
+				<_31134>#france_tankmen:names/tankmen_BP18_5_4_n</_31134>
+			</firstNames>
+			<lastNames>
+				<_31134>#france_tankmen:names/tankmen_BP18_5_4</_31134>
+			</lastNames>
+			<icons>
+				<_31134>tankmen_BP18_5_4.png</_31134>
+			</icons>
+		</tankmen_BP18_5_4>
 	</premiumGroups>
 </root>

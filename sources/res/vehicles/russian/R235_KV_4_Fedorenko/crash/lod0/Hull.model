@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<parent>vehicles/russian/R235_KV_4_Fedorenko/crash/lod1/Hull</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-2.028208 -1.264473 -4.159550</min>
+		<max>2.082307 1.083896 3.897256</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/russian/R235_KV_4_Fedorenko/crash/lod0/Hull</nodefullVisual>
+</root>

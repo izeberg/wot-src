@@ -3,6 +3,7 @@ package net.wg.gui.lobby.hangar
    import fl.motion.easing.Quadratic;
    import flash.display.DisplayObject;
    import flash.display.InteractiveObject;
+   import flash.display.MovieClip;
    import flash.display.Sprite;
    import flash.display.Stage;
    import flash.events.Event;
@@ -56,6 +57,8 @@ package net.wg.gui.lobby.hangar
       private static const INVALIDATE_CAROUSEL_EVENT_ENTRY_STATE:String = "invalidateCarouselEventEntryState";
       
       private static const INVALIDATE_COMP7_MODIFIERS_VISIBILITY:String = "invalidComp7Modifiers";
+      
+      private static const INVALIDATE_BATTLE_MODIFIERS_VISIBILITY:String = "invalidComp7Modifiers";
       
       private static const INVALIDATE_FUN_RANDOM_MODIFIERS_VISIBILITY:String = "invalidateFunRandomModifiers";
       
@@ -113,17 +116,15 @@ package net.wg.gui.lobby.hangar
       
       private static const DQ_WIDGET_WIDTH_THRESHOLD:int = 1200;
       
-      private static const DQ_WIDGET_VERTICAL_OFFSET:int = 60;
+      private static const DQ_WIDGET_VERTICAL_OFFSET:int = 15;
       
       private static const DQ_WIDGET_VERTICAL_OFFSET_SINGLE:int = 20;
       
       private static const DQ_WIDGET_VERTICAL_OFFSET_SINGLE_NO_CAROUSEL:int = -7;
       
-      private static const DQ_WIDGET_VERTICAL_OFFSET_MINI:int = 70;
+      private static const DQ_WIDGET_VERTICAL_OFFSET_MINI:int = 37;
       
       private static const DQ_WIDGET_VERTICAL_OFFSET_MICRO:int = 36;
-      
-      private static const NY_WIDGET_VERTICAL_OFFSET_MICRO:int = 63;
       
       private static const DQ_WIDGET_HORIZONTAL_MARGIN:int = 0;
       
@@ -134,6 +135,14 @@ package net.wg.gui.lobby.hangar
       private static const COMP7_MODIFIERS_PANEL_INJECT_OFFSET_Y:int = 2;
       
       private static const COMP7_MODIFIERS_PANEL_INJECT_OFFSET_X:int = 1;
+      
+      private static const BATTLE_MODIFIERS_PANEL_INJECT_WIDTH:int = 354;
+      
+      private static const BATTLE_MODIFIERS_PANEL_INJECT_HEIGHT:int = 58;
+      
+      private static const BATTLE_MODIFIERS_PANEL_INJECT_OFFSET_Y:int = 2;
+      
+      private static const BATTLE_MODIFIERS_PANEL_INJECT_OFFSET_X:int = 1;
       
       private static const FUN_RANDOM_MODIFIERS_PANEL_INJECT_WIDTH:int = 354;
       
@@ -162,18 +171,6 @@ package net.wg.gui.lobby.hangar
       private static const CAROUSEL_EVENT_ENTRY_MARGIN:int = 1;
       
       private static const BOTTOM_BG_ALPHA:Number = 0.8;
-      
-      private static const NY_BTN_ENV_SWITCHER_WIDTH:int = 80;
-      
-      private static const NY_BTN_ENV_SWITCHER_HEIGHT:int = 32;
-      
-      private static const NY_BTN_ENV_SWITCHER_POS_X:int = 118;
-      
-      private static const NY_BTN_ENV_SWITCHER_POS_Y:int = -32;
-      
-      private static const NY_BTN_ENV_SWITCHER_INSTRUCTION_POS_X:int = 182;
-      
-      private static const NY_BTN_ENV_SWITCHER_INSTRUCTION_POS_Y:int = -109;
        
       
       public var vehResearchPanel:ResearchPanel;
@@ -238,13 +235,9 @@ package net.wg.gui.lobby.hangar
       
       private var _comp7ModifiersPanelInject:GFInjectComponent;
       
+      private var _battleModifiersPanelInject:GFInjectComponent;
+      
       private var _funRandomModifiersPanelInject:GFInjectComponent;
-      
-      private var _nyBtnInject:GFInjectComponent;
-      
-      private var _nyBtnTipInject:GFInjectComponent;
-      
-      private var _shouldInjectNyBtnTip:Boolean = false;
       
       private var _appStage:Stage;
       
@@ -318,7 +311,6 @@ package net.wg.gui.lobby.hangar
          if(this.header != null)
          {
             this.header.x = param1 >> 1;
-            this.header.updateStage(param1,param2);
          }
          if(this._alertMessageBlock)
          {
@@ -347,18 +339,13 @@ package net.wg.gui.lobby.hangar
          this._appStage.addEventListener(HangarAmunitionSwitchAnimator.AMMUNITION_VIEW_HIDE_ANIM_COMPLETE,this.onAmmunitionViewHideAnimCompleteHandler);
          this.ammunitionPanelInject.addEventListener(Event.RESIZE,this.onAmmunitionPanelInjectResizeHandler);
          this.ammunitionPanelInject.addEventListener(AmmunitionPanelInjectEvents.HELP_LAYOUT_CHANGED,this.onAmmunitionPanelInjectHelpLayoutChangedHandler);
+         addEventListener(CrewDropDownEvent.SHOW_DROP_DOWN,this.onHangarShowDropDownHandler);
          if(this.vehResearchPanel != null)
          {
             registerFlashComponentS(this.vehResearchPanel,HANGAR_ALIASES.RESEARCH_PANEL);
          }
          this.updateElementsPosition();
          this.updateHeaderMargin();
-      }
-      
-      override protected function onInitModalFocus(param1:InteractiveObject) : void
-      {
-         super.onInitModalFocus(param1);
-         this._gameInputMgr.setKeyHandler(Keyboard.ESCAPE,KeyboardEvent.KEY_DOWN,this.handleEscapeHandler,true);
       }
       
       override protected function onBeforeDispose() : void
@@ -370,6 +357,7 @@ package net.wg.gui.lobby.hangar
          this._gameInputMgr.clearKeyHandler(Keyboard.ESCAPE,KeyboardEvent.KEY_DOWN,this.handleEscapeHandler);
          this._appStage.dispatchEvent(new LobbyEvent(LobbyEvent.UNREGISTER_DRAGGING));
          this._appStage.removeEventListener(HangarAmunitionSwitchAnimator.AMMUNITION_VIEW_HIDE_ANIM_COMPLETE,this.onAmmunitionViewHideAnimCompleteHandler);
+         removeEventListener(CrewDropDownEvent.SHOW_DROP_DOWN,this.onHangarShowDropDownHandler);
          this._gameInputMgr.clearKeyHandler(Keyboard.F1,KeyboardEvent.KEY_DOWN,this.showLayoutHandler);
          this._gameInputMgr.clearKeyHandler(Keyboard.F1,KeyboardEvent.KEY_UP,this.closeLayoutHandler);
          this.ammunitionPanel.removeEventListener(Event.RESIZE,this.onAmmunitionPanelResizeHandler);
@@ -394,7 +382,7 @@ package net.wg.gui.lobby.hangar
          this.tryRemoveBattleRoyaleContainer();
          this.removeBattleRoyaleContainer();
          this.removeComp7ModifiersPanel();
-         this.removeEnvSwitcherBtnContainer();
+         this.removeBattleModifiersPanel();
          this.bottomBg.dispose();
          this.bottomBg = null;
          this.teaser.dispose();
@@ -452,6 +440,7 @@ package net.wg.gui.lobby.hangar
          this.bottomBg.mouseEnabled = false;
          this._gameInputMgr.setKeyHandler(Keyboard.F1,KeyboardEvent.KEY_DOWN,this.showLayoutHandler,true);
          this._gameInputMgr.setKeyHandler(Keyboard.F1,KeyboardEvent.KEY_UP,this.closeLayoutHandler,true);
+         this._gameInputMgr.setKeyHandler(Keyboard.ESCAPE,KeyboardEvent.KEY_DOWN,this.handleEscapeHandler,true);
          this.ammunitionPanel.addEventListener(Event.RESIZE,this.onAmmunitionPanelResizeHandler);
          this.ammunitionPanel.addEventListener(FocusRequestEvent.REQUEST_FOCUS,this.onAmmunitionPanelRequestFocusHandler);
          this.switchModePanel.addEventListener(ComponentEvent.SHOW,this.onSwitchModePanelShowHandler);
@@ -476,7 +465,7 @@ package net.wg.gui.lobby.hangar
          var _loc1_:Boolean = isInvalid(ENTRY_CONT_POSITION_INVALID,INVALIDATE_AMMUNITION_PANEL_SIZE);
          var _loc2_:Boolean = isInvalid(PARAMS_POSITION_INVALID);
          var _loc3_:Boolean = false;
-         if(this.carousel && isInvalid(INVALIDATE_CAROUSEL_SIZE))
+         if(isInvalid(INVALIDATE_CAROUSEL_SIZE))
          {
             this._carousel.visible = this._carouselVisible;
             this.updateCarouselPosition();
@@ -501,6 +490,10 @@ package net.wg.gui.lobby.hangar
             invalidate(INVALIDATE_CAROUSEL_EVENT_ENTRY_STATE);
          }
          if(isInvalid(INVALIDATE_COMP7_MODIFIERS_VISIBILITY))
+         {
+            _loc2_ = true;
+         }
+         if(isInvalid(INVALIDATE_BATTLE_MODIFIERS_VISIBILITY))
          {
             _loc2_ = true;
          }
@@ -634,6 +627,20 @@ package net.wg.gui.lobby.hangar
          }
       }
       
+      public function addBattleModifiers() : void
+      {
+         if(!this._battleModifiersPanelInject)
+         {
+            this._battleModifiersPanelInject = new GFInjectComponent();
+            this._battleModifiersPanelInject.setManageSize(true);
+            this._battleModifiersPanelInject.width = BATTLE_MODIFIERS_PANEL_INJECT_WIDTH;
+            this._battleModifiersPanelInject.height = BATTLE_MODIFIERS_PANEL_INJECT_HEIGHT;
+            addChild(this._battleModifiersPanelInject);
+            registerFlashComponentS(this._battleModifiersPanelInject,HANGAR_ALIASES.BATTLE_MODIFIERS_PANEL);
+            invalidate(INVALIDATE_BATTLE_MODIFIERS_VISIBILITY);
+         }
+      }
+      
       public function addFunRandomModifiers() : void
       {
          if(!this._funRandomModifiersPanelInject)
@@ -701,7 +708,6 @@ package net.wg.gui.lobby.hangar
          registerFlashComponentS(this._carousel,this._carouselAlias);
          this._carousel.validateNow();
          invalidate(INVALIDATE_CAROUSEL_SIZE);
-         this.injectEnvSwitcherBtnContainer(param2);
       }
       
       public function as_setVehicleParams(param1:String, param2:String) : void
@@ -739,6 +745,18 @@ package net.wg.gui.lobby.hangar
          if(!param1 && this._comp7ModifiersPanelInject)
          {
             this.removeComp7Modifiers();
+         }
+      }
+      
+      public function as_setBattleModifiersVisible(param1:Boolean) : void
+      {
+         if(param1 && !this._battleModifiersPanelInject)
+         {
+            this.addBattleModifiers();
+         }
+         if(!param1 && this._battleModifiersPanelInject)
+         {
+            this.removeBattleModifiers();
          }
       }
       
@@ -821,11 +839,6 @@ package net.wg.gui.lobby.hangar
          }
       }
       
-      public function as_shouldInjectNyBtnTip(param1:Boolean) : void
-      {
-         this._shouldInjectNyBtnTip = param1;
-      }
-      
       public function createBattleRoyaleComponents() : void
       {
          var _loc1_:int = 0;
@@ -904,6 +917,12 @@ package net.wg.gui.lobby.hangar
          invalidate(INVALIDATE_COMP7_MODIFIERS_VISIBILITY);
       }
       
+      public function removeBattleModifiers() : void
+      {
+         this.removeBattleModifiersPanel();
+         invalidate(INVALIDATE_BATTLE_MODIFIERS_VISIBILITY);
+      }
+      
       public function removeFunRandomModifiers() : void
       {
          this.removeFunRandomModifiersPanel();
@@ -948,82 +967,6 @@ package net.wg.gui.lobby.hangar
          invalidate(PARAMS_POSITION_INVALID);
       }
       
-      public function injectEnvSwitcherBtnContainer(param1:String) : void
-      {
-         if(param1 != HANGAR_ALIASES.TANK_CAROUSEL)
-         {
-            this.removeEnvSwitcherBtnContainer();
-            return;
-         }
-         if(this._nyBtnInject != null)
-         {
-            return;
-         }
-         this.injectEnvSwitcherBtn();
-         if(this._shouldInjectNyBtnTip)
-         {
-            this.injectEnvSwitcherBtnTip();
-         }
-      }
-      
-      private function injectEnvSwitcherBtn() : void
-      {
-         this._nyBtnInject = new GFInjectComponent();
-         this._nyBtnInject.setManageSize(true);
-         this._nyBtnInject.setSize(NY_BTN_ENV_SWITCHER_WIDTH,NY_BTN_ENV_SWITCHER_HEIGHT);
-         addChildAt(this._nyBtnInject,getChildIndex(this.teaser));
-         this.updateNyBtnPosition();
-         registerFlashComponentS(this._nyBtnInject,HANGAR_ALIASES.NY_TANK_CAROUSEL_BTN_CONTAINER);
-      }
-      
-      private function injectEnvSwitcherBtnTip() : void
-      {
-         this._nyBtnTipInject = new GFInjectComponent();
-         addChildAt(this._nyBtnTipInject,getChildIndex(this.teaser) - 1);
-         this.updateNyBtnTipPosition();
-         registerFlashComponentS(this._nyBtnTipInject,HANGAR_ALIASES.NY_TANK_CAROUSEL_BTN_TIP_CONTAINER);
-      }
-      
-      private function removeEnvSwitcherBtnContainer() : void
-      {
-         if(this._nyBtnInject != null)
-         {
-            this._carousel.removeChild(this._nyBtnInject);
-            if(!_baseDisposed && isFlashComponentRegisteredS(HANGAR_ALIASES.NY_TANK_CAROUSEL_BTN_CONTAINER))
-            {
-               unregisterFlashComponentS(HANGAR_ALIASES.NY_TANK_CAROUSEL_BTN_CONTAINER);
-            }
-            this._nyBtnInject = null;
-         }
-         if(this._nyBtnTipInject != null)
-         {
-            this._carousel.removeChild(this._nyBtnTipInject);
-            if(!_baseDisposed && isFlashComponentRegisteredS(HANGAR_ALIASES.NY_TANK_CAROUSEL_BTN_TIP_CONTAINER))
-            {
-               unregisterFlashComponentS(HANGAR_ALIASES.NY_TANK_CAROUSEL_BTN_TIP_CONTAINER);
-            }
-            this._nyBtnTipInject = null;
-         }
-      }
-      
-      private function updateNyBtnPosition() : void
-      {
-         if(this._nyBtnInject)
-         {
-            this._nyBtnInject.x = this._carousel.x + NY_BTN_ENV_SWITCHER_POS_X | 0;
-            this._nyBtnInject.y = this._carousel.y + NY_BTN_ENV_SWITCHER_POS_Y | 0;
-         }
-      }
-      
-      private function updateNyBtnTipPosition() : void
-      {
-         if(this._nyBtnTipInject)
-         {
-            this._nyBtnTipInject.x = this._carousel.x + NY_BTN_ENV_SWITCHER_INSTRUCTION_POS_X | 0;
-            this._nyBtnTipInject.y = this._carousel.y + NY_BTN_ENV_SWITCHER_INSTRUCTION_POS_Y | 0;
-         }
-      }
-      
       private function removeComp7ModifiersPanel() : void
       {
          if(this._comp7ModifiersPanelInject != null)
@@ -1034,6 +977,19 @@ package net.wg.gui.lobby.hangar
                unregisterFlashComponentS(HANGAR_ALIASES.COMP7_MODIFIERS_PANEL);
             }
             this._comp7ModifiersPanelInject = null;
+         }
+      }
+      
+      private function removeBattleModifiersPanel() : void
+      {
+         if(this._battleModifiersPanelInject != null)
+         {
+            removeChild(this._battleModifiersPanelInject);
+            if(!_baseDisposed && isFlashComponentRegisteredS(HANGAR_ALIASES.BATTLE_MODIFIERS_PANEL))
+            {
+               unregisterFlashComponentS(HANGAR_ALIASES.BATTLE_MODIFIERS_PANEL);
+            }
+            this._battleModifiersPanelInject = null;
          }
       }
       
@@ -1069,7 +1025,7 @@ package net.wg.gui.lobby.hangar
       {
          if(!this._hangarViewSwitchAnimator)
          {
-            this._hangarViewSwitchAnimator = new HangarAmunitionSwitchAnimator(this,Vector.<DisplayObject>([this.vehicleParametersContainer,this.crewPanelInject,this.dqWidget,this.teaser,this._alertMessageBlock,this.vehResearchPanel,this.vehResearchBG,this.header,this.ammunitionPanel,this.bottomBg,this._comp7ModifiersPanelInject,this._funRandomModifiersPanelInject]),Vector.<DisplayObject>([this.carouselContainer,this._carouselEventEntryContainer]),this.ammunitionPanelInject,height);
+            this._hangarViewSwitchAnimator = new HangarAmunitionSwitchAnimator(this,Vector.<DisplayObject>([this.vehicleParametersContainer,this.crewPanelInject,this.dqWidget,this.teaser,this._alertMessageBlock,this.vehResearchPanel,this.vehResearchBG,this.header,this.ammunitionPanel,this.bottomBg,this._comp7ModifiersPanelInject,this._battleModifiersPanelInject,this._funRandomModifiersPanelInject]),Vector.<DisplayObject>([this.carouselContainer,this._carouselEventEntryContainer]),this.ammunitionPanelInject,height);
          }
       }
       
@@ -1078,7 +1034,7 @@ package net.wg.gui.lobby.hangar
          this._widgetSizes = new Dictionary();
          this._widgetSizes[DAILY_QUESTS_WIDGET_CONSTANTS.WIDGET_LAYOUT_NORMAL] = [340,256];
          this._widgetSizes[DAILY_QUESTS_WIDGET_CONSTANTS.WIDGET_LAYOUT_MINI] = [260,69];
-         this._widgetSizes[DAILY_QUESTS_WIDGET_CONSTANTS.WIDGET_LAYOUT_MICRO] = [149,80];
+         this._widgetSizes[DAILY_QUESTS_WIDGET_CONSTANTS.WIDGET_LAYOUT_MICRO] = [215,59];
          this._widgetSizes[DAILY_QUESTS_WIDGET_CONSTANTS.WIDGET_LAYOUT_SINGLE] = [340,62];
       }
       
@@ -1147,7 +1103,7 @@ package net.wg.gui.lobby.hangar
                this.dqWidget.y = this.ammunitionPanel.y + WIDGETS_OFFSET_Y - DQ_WIDGET_MINI_HEIGHT + DQ_WIDGET_VERTICAL_OFFSET_MINI;
                break;
             case DAILY_QUESTS_WIDGET_CONSTANTS.WIDGET_LAYOUT_MICRO:
-               this.dqWidget.y = this.ammunitionPanel.y + WIDGETS_OFFSET_Y - DQ_WIDGET_MICRO_HEIGHT + NY_WIDGET_VERTICAL_OFFSET_MICRO;
+               this.dqWidget.y = this.ammunitionPanel.y + WIDGETS_OFFSET_Y - DQ_WIDGET_MICRO_HEIGHT + DQ_WIDGET_VERTICAL_OFFSET_MICRO;
                break;
             case DAILY_QUESTS_WIDGET_CONSTANTS.WIDGET_LAYOUT_SINGLE:
                this.dqWidget.y = this.ammunitionPanel.y + WIDGETS_OFFSET_Y - DQ_WIDGET_MICRO_HEIGHT + (!!this.carouselContainer.visible ? DQ_WIDGET_VERTICAL_OFFSET_SINGLE : DQ_WIDGET_VERTICAL_OFFSET_SINGLE_NO_CAROUSEL);
@@ -1239,6 +1195,10 @@ package net.wg.gui.lobby.hangar
          {
             _loc2_ -= this._comp7ModifiersPanelInject.height + COMP7_MODIFIERS_PANEL_INJECT_OFFSET_Y * 2;
          }
+         if(this._battleModifiersPanelInject)
+         {
+            _loc2_ -= this._battleModifiersPanelInject.height + BATTLE_MODIFIERS_PANEL_INJECT_OFFSET_Y * 2;
+         }
          if(this._funRandomModifiersPanelInject)
          {
             _loc2_ -= this._funRandomModifiersPanelInject.height + FUN_RANDOM_MODIFIERS_PANEL_INJECT_OFFSET_Y * 2;
@@ -1248,6 +1208,7 @@ package net.wg.gui.lobby.hangar
             this.params.height = _loc2_;
          }
          this.updateComp7ModifiersPosition();
+         this.updateBattleModifiersPosition();
          this.updateFunRandomModifiersPosition();
       }
       
@@ -1261,8 +1222,6 @@ package net.wg.gui.lobby.hangar
          this._carousel.updateCarouselPosition(_height - this._carousel.getBottom() ^ 0);
          this.updateEventLootBoxWidgetPosition();
          this.updateAmmunitionPanelPosition();
-         this.updateNyBtnPosition();
-         this.updateNyBtnTipPosition();
          if(this._hangarViewSwitchAnimator)
          {
             this._hangarViewSwitchAnimator.updateStage(width,height);
@@ -1275,6 +1234,15 @@ package net.wg.gui.lobby.hangar
          {
             this._comp7ModifiersPanelInject.y = this.params.y + (this.params.visible && this.params.actualHeight + COMP7_MODIFIERS_PANEL_INJECT_OFFSET_Y) ^ 0;
             this._comp7ModifiersPanelInject.x = this.params.x + this.params.width - this._comp7ModifiersPanelInject.width + COMP7_MODIFIERS_PANEL_INJECT_OFFSET_X ^ 0;
+         }
+      }
+      
+      private function updateBattleModifiersPosition() : void
+      {
+         if(this._battleModifiersPanelInject)
+         {
+            this._battleModifiersPanelInject.y = this.params.y + (this.params.visible && this.params.actualHeight + BATTLE_MODIFIERS_PANEL_INJECT_OFFSET_Y) ^ 0;
+            this._battleModifiersPanelInject.x = this.params.x + this.params.width - this._battleModifiersPanelInject.width + BATTLE_MODIFIERS_PANEL_INJECT_OFFSET_X ^ 0;
          }
       }
       
@@ -1319,7 +1287,6 @@ package net.wg.gui.lobby.hangar
          {
             this.header.x = _width >> 1;
             this.header.y = _loc1_;
-            this.header.updateStage(_originalWidth,_originalHeight);
          }
          if(this.switchModePanel.visible)
          {
@@ -1428,6 +1395,15 @@ package net.wg.gui.lobby.hangar
          }
       }
       
+      private function onHangarShowDropDownHandler(param1:CrewDropDownEvent) : void
+      {
+         var _loc2_:MovieClip = param1.dropDownref;
+         var _loc3_:Point = globalToLocal(new Point(_loc2_.x,_loc2_.y));
+         addChild(_loc2_);
+         _loc2_.x = _loc3_.x;
+         _loc2_.y = _loc3_.y;
+      }
+      
       private function showLayoutHandler(param1:InputEvent) : void
       {
          var _loc2_:InputDetails = param1.details;
@@ -1461,6 +1437,7 @@ package net.wg.gui.lobby.hangar
       private function onParamsResizeHandler(param1:Event) : void
       {
          this.updateComp7ModifiersPosition();
+         this.updateBattleModifiersPosition();
          this.updateFunRandomModifiersPosition();
       }
       

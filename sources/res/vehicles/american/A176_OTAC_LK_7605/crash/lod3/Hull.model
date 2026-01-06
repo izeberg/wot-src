@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A176_OTAC_LK_7605/crash/lod3/Hull</nodefullVisual>
+	<parent>vehicles/american/A176_OTAC_LK_7605/crash/lod4/Hull</parent>
+	<tank>true</tank>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.601374 -0.853023 -3.465148</min>
+		<max>1.610509 0.658725 3.223304</max>
+	</visibilityBox>
+</root>

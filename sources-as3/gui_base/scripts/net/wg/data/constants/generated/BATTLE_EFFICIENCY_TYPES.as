@@ -77,6 +77,8 @@ package net.wg.data.constants.generated
       
       public static const RECEIVED_BY_DEATH_ZONE:String = "receivedByDeathZone";
       
+      public static const SUPPLY_DESTRUCTION:String = "supplyKill";
+      
       public static const DEATH_ZONE:String = "deathZone";
       
       public static const BERSERKER:String = "berserker";

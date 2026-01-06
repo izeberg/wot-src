@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.173918 -0.986875 -3.133399</min>
+		<max>1.174152 1.390520 6.723690</max>
+	</visibilityBox>
+	<parent>vehicles/sweden/S39_15cm_AKV60_Utkast_1/normal/lod3/Gun_01</parent>
+	<extent>96.000000</extent>
+	<nodefullVisual>vehicles/sweden/S39_15cm_AKV60_Utkast_1/normal/lod2/Gun_01</nodefullVisual>
+</root>

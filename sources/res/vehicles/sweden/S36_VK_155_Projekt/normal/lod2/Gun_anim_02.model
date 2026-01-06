@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/sweden/S36_VK_155_Projekt/normal/lod3/Gun_anim_02</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-0.178456 -0.351275 -3.598238</min>
+		<max>0.180994 0.135056 -3.088293</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/sweden/S36_VK_155_Projekt/normal/lod2/Gun_anim_02</nodefullVisual>
+</root>

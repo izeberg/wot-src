@@ -136,52 +136,13 @@ msgid "battleView/title"
 msgstr "Активация личных резервов"
 
 msgid "booster/useby/timeLeft/days"
-msgstr "%(d)s д"
+msgstr "%(d)s д."
 
 msgid "booster/useby/timeLeft/hours"
-msgstr "%(d)s ч"
+msgstr "%(d)s ч."
 
 msgid "booster/useby/timeLeft/minutes"
-msgstr "%(d)s мин"
-
-msgid "conversionView/battleXPSubtitle"
-msgstr "Конвертация боевого опыта"
-
-msgid "conversionView/battleXPTitle"
-msgstr "Боевой опыт"
-
-msgid "conversionView/boosterDescription"
-msgstr "%(value)s на %(effectTime)s"
-
-msgid "conversionView/creditsSubtitle"
-msgstr "Конвертация серебра"
-
-msgid "conversionView/creditsTitle"
-msgstr "Серебро"
-
-msgid "conversionView/crewAndFreeXPSubtitle"
-msgstr "Конвертация опыта экипажа и свободного опыта"
-
-msgid "conversionView/crewFreeXPTitle"
-msgstr "Комбинированный опыт"
-
-msgid "conversionView/crewXPSubtitle"
-msgstr "Конвертация опыта экипажа"
-
-msgid "conversionView/freeXPSubtitle"
-msgstr "Конвертация свободного опыта"
-
-msgid "conversionView/mainDescription"
-msgstr ""
-"Ваши прежние личные резервы конвертированы в новые. Время действия всех "
-"новых личных резервов составляет 1 час. Здесь вы можете узнать подробности "
-"конвертации."
-
-msgid "conversionView/mainTitle"
-msgstr "КОНВЕРТАЦИЯ"
-
-msgid "conversionView/noConversion"
-msgstr "У вас нет личных резервов для конвертации"
+msgstr "%(d)s мин."
 
 msgid "depot/buyButton"
 msgstr "К покупке"
@@ -195,7 +156,7 @@ msgstr ""
 "бонус по итогам сражения."
 
 msgid "hangarEntry/minute"
-msgstr "%(minutesLeft)мин"
+msgstr "%(minutesLeft)мин."
 
 msgid "hangarEntry/onlyOnceHint"
 msgstr "АКТИВАЦИЯ ЛИЧНЫХ РЕЗЕРВОВ"
@@ -208,9 +169,6 @@ msgstr "Активированные личные резервы недосту�
 
 msgid "intro/buttons/close"
 msgstr "Так точно!"
-
-msgid "intro/buttons/conversionInfo"
-msgstr "О конвертации"
 
 msgid "intro/pages/description1"
 msgstr ""
@@ -253,9 +211,6 @@ msgstr "ЛИЧНЫЕ РЕЗЕРВЫ С ОГРАНИЧЕННЫМ ПЕРИОДОМ
 
 msgid "intro/pages/title4"
 msgstr "АКТИВАЦИЯ ВО ВРЕМЯ БОЯ"
-
-msgid "intro/pages/title5"
-msgstr "КОНВЕРТАЦИЯ"
 
 msgid "intro/title"
 msgstr "ЛИЧНЫЕ РЕЗЕРВЫ 2.0"

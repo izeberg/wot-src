@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/sweden/S40_Sav_LS_46/crash/lod2/Chassis</nodefullVisual>
+	<parent>vehicles/sweden/S40_Sav_LS_46/crash/lod3/Chassis</parent>
+	<extent>96.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.676290 0.010999 -3.576375</min>
+		<max>1.676291 1.263244 3.265409</max>
+	</visibilityBox>
+</root>

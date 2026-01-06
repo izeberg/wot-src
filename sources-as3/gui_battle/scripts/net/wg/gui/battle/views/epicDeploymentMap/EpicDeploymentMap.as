@@ -3,9 +3,11 @@ package net.wg.gui.battle.views.epicDeploymentMap
    import flash.display.Sprite;
    import flash.geom.Rectangle;
    import net.wg.data.constants.InvalidationType;
+   import net.wg.gui.battle.views.epicDeploymentMap.components.EpicCurrentLaneContainer;
    import net.wg.gui.battle.views.epicDeploymentMap.components.EpicDeploymentMapEntriesContainer;
    import net.wg.gui.battle.views.epicDeploymentMap.components.EpicMapContainer;
    import net.wg.gui.battle.views.epicDeploymentMap.constants.DeploymentMapConstants;
+   import net.wg.gui.battle.views.epicDeploymentMap.events.EpicDeploymentLaneEvent;
    import net.wg.gui.battle.views.epicDeploymentMap.events.EpicDeploymentMapEvent;
    import net.wg.gui.components.controls.UILoaderAlt;
    import net.wg.infrastructure.base.meta.IEpicDeploymentMapMeta;
@@ -30,6 +32,8 @@ package net.wg.gui.battle.views.epicDeploymentMap
       
       public var bigBackground:UILoaderAlt = null;
       
+      public var currentLaneContainer:EpicCurrentLaneContainer = null;
+      
       private var _isVehPostProgressionEnabled:Boolean;
       
       private var _inRespawnScreen:Boolean = false;
@@ -51,6 +55,7 @@ package net.wg.gui.battle.views.epicDeploymentMap
          super();
          var _loc1_:EpicDeploymentMapEntriesContainer = this.mapContainer.entriesContainer;
          this._entryContainer = new <Sprite>[_loc1_.personal,_loc1_.hqs,_loc1_.points,_loc1_.aliveVehicles,_loc1_.deadVehicles,_loc1_.equipments,_loc1_.icons,_loc1_.flags,_loc1_.zones,_loc1_.landingZone];
+         this.currentLaneContainer.mouseChildren = this.currentLaneContainer.mouseEnabled = false;
       }
       
       override public function as_setBackground(param1:String) : void
@@ -89,6 +94,8 @@ package net.wg.gui.battle.views.epicDeploymentMap
          this.bigBackground = null;
          this.mapContainer.dispose();
          this.mapContainer = null;
+         this.currentLaneContainer.dispose();
+         this.currentLaneContainer = null;
          super.onDispose();
       }
       
@@ -129,6 +136,12 @@ package net.wg.gui.battle.views.epicDeploymentMap
          this._mapHeight = param2;
       }
       
+      public function as_setDirection(param1:String, param2:String) : void
+      {
+         this.currentLaneContainer.updateLane(param1,param2);
+         dispatchEvent(new EpicDeploymentLaneEvent(EpicDeploymentLaneEvent.CHANGED,param1,param2));
+      }
+      
       public function updateStagePosition(param1:int, param2:int) : void
       {
          this._originalWidth = param1;
@@ -160,14 +173,15 @@ package net.wg.gui.battle.views.epicDeploymentMap
          _loc2_ = _loc1_ / this._mapHeight;
          _loc3_ = _loc2_ * this._mapWidth;
          _loc4_ = _loc2_ * this._mapHeight;
-         this.mapContainer.scaleX = _loc2_;
-         this.mapContainer.scaleY = _loc2_;
+         this.currentLaneContainer.scaleX = this.mapContainer.scaleX = _loc2_;
+         this.currentLaneContainer.scaleY = this.mapContainer.scaleY = _loc2_;
          _loc5_ = _loc3_ * MAP_BACKGROUND_SCALE;
          _loc6_ = _loc4_ * MAP_BACKGROUND_SCALE;
          this.bigBackground.x = -(_loc5_ * DeploymentMapConstants.BORDER_WIDTH_PERCENTAGE) >> 0;
          this.bigBackground.y = -(_loc6_ * DeploymentMapConstants.BORDER_WIDTH_PERCENTAGE) >> 0;
          this.bigBackground.width = _loc5_;
          this.bigBackground.height = _loc6_;
+         this.currentLaneContainer.y = this.bigBackground.y;
          if(this._inRespawnScreen)
          {
             this.y = DeploymentMapConstants.getScorePanelTopOffset(this._isVehPostProgressionEnabled) + ((this._originalHeight - DeploymentMapConstants.RESPAWN_ELEMENTS_SIZE) * (1 - DeploymentMapConstants.RESPAWN_SCALE_FACTOR) >> 1);

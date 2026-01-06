@@ -49,30 +49,31 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<primitive>indices</primitive>
+			<vertices>turret_01_Shape.vertices</vertices>
+			<primitive>turret_01_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>tank_turret_01</identifier>
 					<fx>shaders/std_effects/PBS_tank.fx</fx>
-					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
+					<identifier>tank_turret_01</identifier>
+					<collisionFlags>0</collisionFlags>
 					<property>
-						g_detailUVTiling
-						<Vector4>7.014000 3.507000 0.000000 0.000000</Vector4>
+						diffuseMap
+						<Texture>vehicles/french/F134_ARL_Projet_F/ARL_Projet_F_turret_01_AM.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/french/F134_ARL_Projet_F/ARL_Projet_F_turret_01_GMM.dds</Texture>
 					</property>
 					<property>
 						g_detailPowerGloss
 						<Float>
 							0.35
-							<!--BW_String-->
-						</Float>
-					</property>
-					<property>
-						g_detailPowerAlbedo
-						<Float>
-							0.11
 							<!--BW_String-->
 						</Float>
 					</property>
@@ -84,46 +85,45 @@
 						</Float>
 					</property>
 					<property>
-						g_detailPower
-						<Float>5</Float>
-					</property>
-					<property>
-						metallicDetailMap
-						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
-					</property>
-					<property>
 						g_useDetailMetallic
 						<Bool>true</Bool>
 					</property>
 					<property>
-						metallicGlossMap
-						<Texture>vehicles/french/F134_ARL_Projet_F/ARL_Projet_F_turret_01_GMM.dds</Texture>
+						g_detailUVTiling
+						<Vector4>7.014000 7.014000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_detailPower
+						<Float>5</Float>
 					</property>
 					<property>
 						normalMap
 						<Texture>vehicles/french/F134_ARL_Projet_F/ARL_Projet_F_turret_01_ANM.dds</Texture>
 					</property>
 					<property>
-						diffuseMap
-						<Texture>vehicles/french/F134_ARL_Projet_F/ARL_Projet_F_turret_01_AM.dds</Texture>
-					</property>
-					<property>
 						excludeMaskAndAOMap
 						<Texture>vehicles/french/F134_ARL_Projet_F/ARL_Projet_F_turret_01_AO.dds</Texture>
 					</property>
 					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
 					</property>
 				</material>
-				<groupOrigin>-0.002026 0.734820 -0.412556</groupOrigin>
+				<groupOrigin>-0.002026 0.813160 -0.412556</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
 		<min>-1.529056 0.125413 -2.522605</min>
-		<max>1.525004 1.344226 1.697494</max>
+		<max>1.525004 1.500906 1.697494</max>
 	</boundingBox>
-	<geometrySize>119610</geometrySize>
-	<minUVDensity>0.003631</minUVDensity>
+	<geometrySize>125298</geometrySize>
+	<minUVDensity>0.001815</minUVDensity>
 </root>

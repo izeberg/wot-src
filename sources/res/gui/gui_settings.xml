@@ -1518,7 +1518,34 @@
 				<value>
 					<item>
 						<type>string</type>
-						<value>chapter</value>
+						<value>artifacts</value>
+					</item>
+					<item>
+						<type>string</type>
+						<value>changeLimit</value>
+					</item>
+				</value>
+			</item>
+		</value>
+	</setting>
+	<setting>
+		<name>battlePassShopEntryPointsConfig</name>
+		<type>macros</type>
+		<macros>AUTH_REALM</macros>
+		<value>
+			<item>
+				<name>default</name>
+				<type>dict</type>
+				<value>
+					<item>
+						<name>isBpCoinShopEntryPointActive</name>
+						<type>bool</type>
+						<value>False</value>
+					</item>
+					<item>
+						<name>isBpPointsShopEntryPointActive</name>
+						<type>bool</type>
+						<value>False</value>
 					</item>
 				</value>
 			</item>
@@ -2126,23 +2153,6 @@
 				<type>url</type>
 			</item>
 			<item>
-				<name>CT</name>
-				<type>url</type>
-			</item>
-		</value>
-	</setting>
-	<setting>
-		<name>resourceWellIntroVideoUrl</name>
-		<type>macros</type>
-		<macros>AUTH_REALM</macros>
-		<value>
-			<item>
-				https://webbrg.tanki.su/$LANGUAGE_CODE/promocontent/ResourceWellIntroVideo/
-				<name>default</name>
-				<type>url</type>
-			</item>
-			<item>
-				https://webbrg-rpt.tanki.su/$LANGUAGE_CODE/promocontent/ResourceWellIntroVideo/
 				<name>CT</name>
 				<type>url</type>
 			</item>

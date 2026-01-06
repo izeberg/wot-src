@@ -1,5 +1,5 @@
 import struct, Math
-from chat_commands_consts import BATTLE_CHAT_COMMAND_NAMES
+from chat_commands_consts import BATTLE_CHAT_COMMAND_NAMES, _DEFAULT_ACTIVE_COMMAND_TIME
 from debug_utils import LOG_ERROR
 from gui.Scaleform.locale.INGAME_GUI import INGAME_GUI as I18N_INGAME_GUI
 from helpers import dependency
@@ -17,14 +17,16 @@ AUTOCOMMIT_COMMAND_NAMES = (
  BATTLE_CHAT_COMMAND_NAMES.ATTACKING_ENEMY, BATTLE_CHAT_COMMAND_NAMES.SUPPORTING_ALLY,
  BATTLE_CHAT_COMMAND_NAMES.ATTACKING_ENEMY_WITH_SPG,
  BATTLE_CHAT_COMMAND_NAMES.DEFENDING_BASE, BATTLE_CHAT_COMMAND_NAMES.ATTACKING_BASE,
- BATTLE_CHAT_COMMAND_NAMES.GOING_THERE,
- BATTLE_CHAT_COMMAND_NAMES.DEFENDING_OBJECTIVE,
+ BATTLE_CHAT_COMMAND_NAMES.GOING_THERE, BATTLE_CHAT_COMMAND_NAMES.ATTACKING_SUPPLY,
+ BATTLE_CHAT_COMMAND_NAMES.DEFENDING_OBJECTIVE, BATTLE_CHAT_COMMAND_NAMES.DEFENDING_SUPPLY,
  BATTLE_CHAT_COMMAND_NAMES.ATTACKING_OBJECTIVE)
-LOCATION_CMD_NAMES = (BATTLE_CHAT_COMMAND_NAMES.SPG_AIM_AREA, BATTLE_CHAT_COMMAND_NAMES.GOING_THERE,
+LOCATION_CMD_NAMES = (
+ BATTLE_CHAT_COMMAND_NAMES.SPG_AIM_AREA, BATTLE_CHAT_COMMAND_NAMES.GOING_THERE,
  BATTLE_CHAT_COMMAND_NAMES.ATTENTION_TO_POSITION, BATTLE_CHAT_COMMAND_NAMES.PREBATTLE_WAYPOINT,
  BATTLE_CHAT_COMMAND_NAMES.VEHICLE_SPOTPOINT, BATTLE_CHAT_COMMAND_NAMES.SHOOTING_POINT,
  BATTLE_CHAT_COMMAND_NAMES.NAVIGATION_POINT, BATTLE_CHAT_COMMAND_NAMES.FLAG_POINT)
-EPIC_GLOBAL_CMD_NAMES = (BATTLE_CHAT_COMMAND_NAMES.EPIC_GLOBAL_SAVE_TANKS_ATK,
+EPIC_GLOBAL_CMD_NAMES = (
+ BATTLE_CHAT_COMMAND_NAMES.EPIC_GLOBAL_SAVE_TANKS_ATK,
  BATTLE_CHAT_COMMAND_NAMES.EPIC_GLOBAL_TIME_ATK,
  BATTLE_CHAT_COMMAND_NAMES.EPIC_GLOBAL_HQ_ATK, BATTLE_CHAT_COMMAND_NAMES.EPIC_GLOBAL_TIME_DEF,
  BATTLE_CHAT_COMMAND_NAMES.EPIC_GLOBAL_SAVE_TANKS_DEF,
@@ -33,14 +35,17 @@ EPIC_GLOBAL_CMD_NAMES = (BATTLE_CHAT_COMMAND_NAMES.EPIC_GLOBAL_SAVE_TANKS_ATK,
 TARGETED_VEHICLE_CMD_NAMES = (
  BATTLE_CHAT_COMMAND_NAMES.ATTACKING_ENEMY_WITH_SPG, BATTLE_CHAT_COMMAND_NAMES.TURNBACK,
  BATTLE_CHAT_COMMAND_NAMES.HELPME, BATTLE_CHAT_COMMAND_NAMES.ATTACK_ENEMY,
- BATTLE_CHAT_COMMAND_NAMES.THANKS,
+ BATTLE_CHAT_COMMAND_NAMES.THANKS, BATTLE_CHAT_COMMAND_NAMES.ATTACK_SUPPLY,
  BATTLE_CHAT_COMMAND_NAMES.REPLY, BATTLE_CHAT_COMMAND_NAMES.CANCEL_REPLY,
  BATTLE_CHAT_COMMAND_NAMES.CLEAR_CHAT_COMMANDS, BATTLE_CHAT_COMMAND_NAMES.ATTACKING_ENEMY,
  BATTLE_CHAT_COMMAND_NAMES.SUPPORTING_ALLY, BATTLE_CHAT_COMMAND_NAMES.POSITIVE,
  BATTLE_CHAT_COMMAND_NAMES.EVENT_CHAT_1_EX, BATTLE_CHAT_COMMAND_NAMES.EVENT_CHAT_2_EX,
  BATTLE_CHAT_COMMAND_NAMES.EVENT_CHAT_3_EX, BATTLE_CHAT_COMMAND_NAMES.EVENT_CHAT_4_EX,
  BATTLE_CHAT_COMMAND_NAMES.EVENT_CHAT_5_EX, BATTLE_CHAT_COMMAND_NAMES.EVENT_CHAT_6_EX,
- BATTLE_CHAT_COMMAND_NAMES.EVENT_CHAT_7_EX)
+ BATTLE_CHAT_COMMAND_NAMES.EVENT_CHAT_7_EX, BATTLE_CHAT_COMMAND_NAMES.ATTACKING_SUPPLY,
+ BATTLE_CHAT_COMMAND_NAMES.DEFEND_SUPPLY, BATTLE_CHAT_COMMAND_NAMES.DEFENDING_SUPPLY,
+ BATTLE_CHAT_COMMAND_NAMES.SELF_REPAIR_SUPPLY,
+ BATTLE_CHAT_COMMAND_NAMES.FOCUS_SUPPLY)
 BASE_CMD_NAMES = (
  BATTLE_CHAT_COMMAND_NAMES.DEFENDING_BASE, BATTLE_CHAT_COMMAND_NAMES.ATTACKING_BASE,
  BATTLE_CHAT_COMMAND_NAMES.DEFEND_BASE, BATTLE_CHAT_COMMAND_NAMES.ATTACK_BASE)
@@ -62,31 +67,45 @@ _PUBLIC_CMD_NAMES = (
  BATTLE_CHAT_COMMAND_NAMES.EVENT_CHAT_5, BATTLE_CHAT_COMMAND_NAMES.EVENT_CHAT_6,
  BATTLE_CHAT_COMMAND_NAMES.EVENT_CHAT_7, BATTLE_CHAT_COMMAND_NAMES.VEHICLE_SPOTPOINT,
  BATTLE_CHAT_COMMAND_NAMES.SHOOTING_POINT, BATTLE_CHAT_COMMAND_NAMES.NAVIGATION_POINT,
- BATTLE_CHAT_COMMAND_NAMES.FLAG_POINT)
+ BATTLE_CHAT_COMMAND_NAMES.FLAG_POINT, BATTLE_CHAT_COMMAND_NAMES.ATTACK_SUPPLY,
+ BATTLE_CHAT_COMMAND_NAMES.ATTACKING_SUPPLY, BATTLE_CHAT_COMMAND_NAMES.DEFEND_SUPPLY,
+ BATTLE_CHAT_COMMAND_NAMES.DEFENDING_SUPPLY,
+ BATTLE_CHAT_COMMAND_NAMES.SELF_REPAIR_SUPPLY)
 _PRIVATE_CMD_NAMES = (
  BATTLE_CHAT_COMMAND_NAMES.TURNBACK, BATTLE_CHAT_COMMAND_NAMES.HELPME,
  BATTLE_CHAT_COMMAND_NAMES.THANKS, BATTLE_CHAT_COMMAND_NAMES.POSITIVE,
+ BATTLE_CHAT_COMMAND_NAMES.FOCUS_SUPPLY,
  BATTLE_CHAT_COMMAND_NAMES.EVENT_CHAT_1_EX, BATTLE_CHAT_COMMAND_NAMES.EVENT_CHAT_2_EX,
  BATTLE_CHAT_COMMAND_NAMES.EVENT_CHAT_3_EX, BATTLE_CHAT_COMMAND_NAMES.EVENT_CHAT_4_EX,
  BATTLE_CHAT_COMMAND_NAMES.EVENT_CHAT_5_EX, BATTLE_CHAT_COMMAND_NAMES.EVENT_CHAT_6_EX,
  BATTLE_CHAT_COMMAND_NAMES.EVENT_CHAT_7_EX)
 _SHOW_MARKER_CMD_NAMES = (
  BATTLE_CHAT_COMMAND_NAMES.ATTACKING_ENEMY_WITH_SPG, BATTLE_CHAT_COMMAND_NAMES.ATTACK_ENEMY,
- BATTLE_CHAT_COMMAND_NAMES.ATTACKING_ENEMY, BATTLE_CHAT_COMMAND_NAMES.SUPPORTING_ALLY)
-_ENEMY_TARGET_CMD_NAMES = (BATTLE_CHAT_COMMAND_NAMES.ATTACKING_ENEMY_WITH_SPG, BATTLE_CHAT_COMMAND_NAMES.ATTACK_ENEMY,
- BATTLE_CHAT_COMMAND_NAMES.ATTACKING_ENEMY)
-_MINIMAP_CMD_NAMES = ('ATTENTIONTOCELL',)
-_SPG_AIM_CMD_NAMES = (BATTLE_CHAT_COMMAND_NAMES.SPG_AIM_AREA, BATTLE_CHAT_COMMAND_NAMES.ATTACKING_ENEMY_WITH_SPG)
+ BATTLE_CHAT_COMMAND_NAMES.ATTACKING_ENEMY, BATTLE_CHAT_COMMAND_NAMES.SUPPORTING_ALLY,
+ BATTLE_CHAT_COMMAND_NAMES.ATTACK_SUPPLY, BATTLE_CHAT_COMMAND_NAMES.ATTACKING_SUPPLY,
+ BATTLE_CHAT_COMMAND_NAMES.DEFEND_SUPPLY, BATTLE_CHAT_COMMAND_NAMES.DEFENDING_SUPPLY,
+ BATTLE_CHAT_COMMAND_NAMES.FOCUS_SUPPLY)
+_ENEMY_TARGET_CMD_NAMES = (
+ BATTLE_CHAT_COMMAND_NAMES.ATTACKING_ENEMY_WITH_SPG, BATTLE_CHAT_COMMAND_NAMES.ATTACK_ENEMY,
+ BATTLE_CHAT_COMMAND_NAMES.ATTACKING_ENEMY, BATTLE_CHAT_COMMAND_NAMES.ATTACK_SUPPLY,
+ BATTLE_CHAT_COMMAND_NAMES.ATTACKING_SUPPLY, BATTLE_CHAT_COMMAND_NAMES.FOCUS_SUPPLY)
+_MINIMAP_CMD_NAMES = (
+ 'ATTENTIONTOCELL',)
+_SPG_AIM_CMD_NAMES = (
+ BATTLE_CHAT_COMMAND_NAMES.SPG_AIM_AREA, BATTLE_CHAT_COMMAND_NAMES.ATTACKING_ENEMY_WITH_SPG)
 _VEHICLE_COMMAND_NAMES = (
  BATTLE_CHAT_COMMAND_NAMES.ATTACK_ENEMY, BATTLE_CHAT_COMMAND_NAMES.SOS,
  BATTLE_CHAT_COMMAND_NAMES.HELPME, BATTLE_CHAT_COMMAND_NAMES.ATTACKING_ENEMY_WITH_SPG,
  BATTLE_CHAT_COMMAND_NAMES.ATTACKING_ENEMY, BATTLE_CHAT_COMMAND_NAMES.SUPPORTING_ALLY,
  BATTLE_CHAT_COMMAND_NAMES.RELOADINGGUN, BATTLE_CHAT_COMMAND_NAMES.RELOADING_READY,
  BATTLE_CHAT_COMMAND_NAMES.RELOADING_UNAVAILABLE, BATTLE_CHAT_COMMAND_NAMES.RELOADINGGUN,
- BATTLE_CHAT_COMMAND_NAMES.RELOADING_CASSETE,
+ BATTLE_CHAT_COMMAND_NAMES.RELOADING_CASSETE, BATTLE_CHAT_COMMAND_NAMES.ATTACK_SUPPLY,
  BATTLE_CHAT_COMMAND_NAMES.RELOADING_READY_CASSETE, BATTLE_CHAT_COMMAND_NAMES.TURNBACK,
  BATTLE_CHAT_COMMAND_NAMES.THANKS, BATTLE_CHAT_COMMAND_NAMES.POSITIVE,
- BATTLE_CHAT_COMMAND_NAMES.CONFIRM, BATTLE_CHAT_COMMAND_NAMES.OVERHEAT_CANT_SHOOT)
+ BATTLE_CHAT_COMMAND_NAMES.CONFIRM, BATTLE_CHAT_COMMAND_NAMES.OVERHEAT_CANT_SHOOT,
+ BATTLE_CHAT_COMMAND_NAMES.ATTACKING_SUPPLY, BATTLE_CHAT_COMMAND_NAMES.DEFEND_SUPPLY,
+ BATTLE_CHAT_COMMAND_NAMES.DEFENDING_SUPPLY,
+ BATTLE_CHAT_COMMAND_NAMES.SELF_REPAIR_SUPPLY, BATTLE_CHAT_COMMAND_NAMES.FOCUS_SUPPLY)
 _MUTE_MESSAGE_NAMES = (
  BATTLE_CHAT_COMMAND_NAMES.ATTENTION_TO_POSITION,)
 _TEMPORARY_STICKY_NAMES = (
@@ -98,7 +117,13 @@ _TEMPORARY_STICKY_NAMES = (
  BATTLE_CHAT_COMMAND_NAMES.PREBATTLE_WAYPOINT, BATTLE_CHAT_COMMAND_NAMES.POSITIVE,
  BATTLE_CHAT_COMMAND_NAMES.SOS, BATTLE_CHAT_COMMAND_NAMES.SPG_AIM_AREA,
  BATTLE_CHAT_COMMAND_NAMES.VEHICLE_SPOTPOINT, BATTLE_CHAT_COMMAND_NAMES.SHOOTING_POINT,
- BATTLE_CHAT_COMMAND_NAMES.NAVIGATION_POINT, BATTLE_CHAT_COMMAND_NAMES.FLAG_POINT)
+ BATTLE_CHAT_COMMAND_NAMES.NAVIGATION_POINT, BATTLE_CHAT_COMMAND_NAMES.FLAG_POINT,
+ BATTLE_CHAT_COMMAND_NAMES.ATTACK_SUPPLY, BATTLE_CHAT_COMMAND_NAMES.DEFEND_SUPPLY,
+ BATTLE_CHAT_COMMAND_NAMES.FOCUS_SUPPLY)
+_SHORT_MESSAGE_NAMES = (
+ BATTLE_CHAT_COMMAND_NAMES.ATTACK_SUPPLY, BATTLE_CHAT_COMMAND_NAMES.ATTACKING_SUPPLY,
+ BATTLE_CHAT_COMMAND_NAMES.DEFEND_SUPPLY, BATTLE_CHAT_COMMAND_NAMES.DEFENDING_SUPPLY,
+ BATTLE_CHAT_COMMAND_NAMES.SELF_REPAIR_SUPPLY)
 _TARGETED_CMD_IDS = []
 _PUBLIC_CMD_IDS = []
 _PRIVATE_CMD_IDS = []
@@ -118,6 +143,7 @@ _LOCATION_COMMAND_IDS = []
 _VEHICLE_COMMAND_IDS = []
 _AUTOCOMMIT_COMMAND_IDS = []
 _MUTED_MESSAGE_IDS = []
+_SHORT_MESSAGE_IDS = []
 _TEMPORARY_STICKY_IDS = []
 for cmd in BATTLE_CHAT_COMMANDS:
     cmdID = cmd.id
@@ -162,6 +188,8 @@ for cmd in BATTLE_CHAT_COMMANDS:
         _GLOBAL_MESSAGE_IDS.append(cmdID)
     if cmdName in _TEMPORARY_STICKY_NAMES:
         _TEMPORARY_STICKY_IDS.append(cmdID)
+    if cmdName in _SHORT_MESSAGE_NAMES:
+        _SHORT_MESSAGE_IDS.append(cmdID)
 
 class _OutCmdDecorator(OutChatCommand):
     __slots__ = ('_name', )
@@ -209,53 +237,54 @@ class _ReceivedCmdDecorator(ReceivedBattleChatCommand):
         if not command:
             LOG_ERROR('Command is not found', self._commandID)
             return ''
-        else:
-            i18nKey = I18N_INGAME_GUI.chat_shortcuts(command.msgText)
-            i18nArguments = {}
-            if i18nKey is not None:
-                if self.isOnMinimap():
-                    if self.isSPGAimCommand():
-                        reloadTime = self._protoData['floatArg1']
-                        if reloadTime > 0:
-                            i18nArguments['reloadTime'] = reloadTime
-                            i18nKey += '_reloading'
-                elif self.hasTarget():
-                    i18nArguments['target'] = self._getTarget()
-                    if self.isSPGAimCommand():
-                        reloadTime = self._protoData['floatArg1']
-                        if reloadTime > 0:
-                            i18nArguments['reloadTime'] = reloadTime
-                            i18nKey += '_reloading'
-                        elif reloadTime < 0:
-                            i18nKey += '_empty'
-                elif self.isBaseRelatedCommand():
-                    strArg = self._protoData['strArg1']
-                    if strArg != '':
-                        i18nArguments['strArg1'] = strArg
-                        i18nKey += '_numbered'
-                elif self.isLocationRelatedCommand():
-                    if self.isSPGAimCommand():
-                        reloadTime = self._protoData['floatArg1']
-                        if reloadTime > 0:
-                            i18nArguments['reloadTime'] = reloadTime
-                            i18nKey += '_reloading'
-                        elif reloadTime < 0:
-                            i18nKey += '_empty'
-                    mapsCtrl = self.sessionProvider.dynamic.maps
-                    if mapsCtrl and mapsCtrl.hasMinimapGrid():
-                        cellId = mapsCtrl.getMinimapCellIdByPosition(self.getMarkedPosition())
-                        if cellId is None:
-                            cellId = self.getFirstTargetID()
-                        i18nKey += '_gridInfo'
-                        i18nArguments['gridId'] = mapsCtrl.getMinimapCellNameById(cellId)
-                else:
-                    i18nArguments = self._protoData
-                text = i18n.makeString(i18nKey, **i18nArguments)
+        i18nKey = I18N_INGAME_GUI.chat_shortcuts(command.msgText)
+        i18nArguments = {}
+        if i18nKey is not None:
+            if self.isOnMinimap():
+                if self.isSPGAimCommand():
+                    reloadTime = self._protoData['floatArg1']
+                    if reloadTime > 0:
+                        i18nArguments['reloadTime'] = reloadTime
+                        i18nKey += '_reloading'
+            elif self.hasTarget():
+                i18nArguments['target'] = self._getTarget()
+                if self.isSPGAimCommand():
+                    reloadTime = self._protoData['floatArg1']
+                    if reloadTime > 0:
+                        i18nArguments['reloadTime'] = reloadTime
+                        i18nKey += '_reloading'
+                    elif reloadTime < 0:
+                        i18nKey += '_empty'
+                elif self.isShortTypeMessage():
+                    i18nArguments['target'] = self._getTargetShortName()
+            elif self.isBaseRelatedCommand():
+                strArg = self._protoData['strArg1']
+                if strArg != '':
+                    i18nArguments['strArg1'] = strArg
+                    i18nKey += '_numbered'
+            elif self.isLocationRelatedCommand():
+                if self.isSPGAimCommand():
+                    reloadTime = self._protoData['floatArg1']
+                    if reloadTime > 0:
+                        i18nArguments['reloadTime'] = reloadTime
+                        i18nKey += '_reloading'
+                    elif reloadTime < 0:
+                        i18nKey += '_empty'
+                mapsCtrl = self.sessionProvider.dynamic.maps
+                if mapsCtrl and mapsCtrl.hasMinimapGrid():
+                    cellId = mapsCtrl.getMinimapCellIdByPosition(self.getMarkedPosition())
+                    if cellId is None:
+                        cellId = self.getFirstTargetID()
+                    i18nKey += '_gridInfo'
+                    i18nArguments['gridId'] = mapsCtrl.getMinimapCellNameById(cellId)
             else:
-                text = command.msgText
-                if isinstance(text, str):
-                    text = unicode(text, 'utf-8', errors='ignore')
-            return text
+                i18nArguments = self._protoData
+            text = i18n.makeString(i18nKey, **i18nArguments)
+        else:
+            text = command.msgText
+            if isinstance(text, str):
+                text = unicode(text, 'utf-8', errors='ignore')
+        return text
 
     def getSenderID(self):
         return self.sessionProvider.getArenaDP().getSessionIDByVehID(self._protoData['int64Arg1'])
@@ -367,17 +396,31 @@ class _ReceivedCmdDecorator(ReceivedBattleChatCommand):
     def isTemporarySticky(self):
         return self._commandID in _TEMPORARY_STICKY_IDS
 
+    def isShortTypeMessage(self):
+        return self._commandID in _SHORT_MESSAGE_IDS
+
     def setSilentMode(self, mode):
         self.__isSilentMode = mode
 
     def isInSilentMode(self):
         return self.__isSilentMode
 
+    def getActiveCmdTime(self):
+        result = self._getActiveCmdTime()
+        if result is not None:
+            return result
+        else:
+            return _DEFAULT_ACTIVE_COMMAND_TIME
+
     def _getTarget(self):
         target = self.sessionProvider.getCtx().getPlayerFullName(vID=self.getFirstTargetID())
         if self.isReceiver():
             target = g_settings.battle.targetFormat % {'target': target}
         return target
+
+    def _getTargetShortName(self):
+        vehicleType = self.sessionProvider.getArenaDP().getVehicleInfo(self.getFirstTargetID()).vehicleType
+        return ('({})').format(vehicleType.shortNameWithPrefix)
 
     def _getCommandVehMarker(self):
         command = _ACTIONS.battleChatCommandFromActionID(self._commandID)
@@ -403,6 +446,14 @@ class _ReceivedCmdDecorator(ReceivedBattleChatCommand):
             LOG_ERROR('Command is not found', self._commandID)
             return ''
         return command.soundNotification
+
+    def _getActiveCmdTime(self):
+        command = _ACTIONS.battleChatCommandFromActionID(self._commandID)
+        if not command:
+            LOG_ERROR('Command is not found', self._commandID)
+            return None
+        else:
+            return command.activeCmdTime
 
 
 class BattleCommandFactory(IBattleCommandFactory):

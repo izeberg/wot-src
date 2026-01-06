@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/american/A176_OTAC_LK_7605/normal/lod2/Hull</parent>
+	<tank>true</tank>
+	<extent>64.000000</extent>
+	<nodefullVisual>vehicles/american/A176_OTAC_LK_7605/normal/lod1/Hull</nodefullVisual>
+	<visibilityBox>
+		<min>-1.581129 -0.561175 -3.646015</min>
+		<max>1.581633 0.612232 3.354972</max>
+	</visibilityBox>
+</root>

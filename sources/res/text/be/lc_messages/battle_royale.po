@@ -54,7 +54,7 @@ msgid "banner/timeLeft/hours"
 msgstr "%(hours)s гадз %(minutes)s хв"
 
 msgid "banner/timeLeft/minutes"
-msgstr "%(minutes)s хв"
+msgstr "%(minutes)s мин."
 
 msgid "banner/timer/lessOneMin"
 msgstr "<1"
@@ -119,15 +119,31 @@ msgstr "Адраджэнне хаўрусніка"
 msgid "battle/winnerCongratulationsView/title"
 msgstr "ПЕРАМОГА"
 
+msgid "battleResult/battlePassWidget/achievedPoints"
+msgstr "+"
+
 msgid "battleResult/battlePassWidget/chapterNotChosen"
 msgstr ""
 "Раздзел не выбраны. Неразмеркаваных ачкоў Баявога пропуска: "
 "%(points)s%(icon)s"
 
+msgid "battleResult/battlePassWidget/pointsShopDisabled"
+msgstr "Все главы пройдены. Спасибо за участие!"
+
+msgid "battleResult/battlePassWidget/pointsShopDisabledSingle"
+msgstr "Глава пройдена. Спасибо за участие!"
+
+msgid "battleResult/battlePassWidget/pointsStats"
+msgstr "%(currentLevelPoints)s/%(maxPoints)s"
+
 msgid "battleResult/battlePassWidget/progressionCompleted"
 msgstr ""
 "Усе раздзелы пройдзеныя. Працягвайце гуляць і назапашваць ачкі Баявога "
 "пропуска."
+
+msgid "battleResult/battlePassWidget/progressionCompletedSingle"
+msgstr ""
+"Глава пройдена. Продолжайте играть и накапливать очки Боевого пропуска."
 
 msgid "battleResult/battlePassWidget/submit"
 msgstr "Перайсці да Баявога пропуска"
@@ -718,8 +734,8 @@ msgstr "Танкавы прэміум акаўнт павялічвае заро
 
 msgid "rewardCurrencyTooltip/crystal/body"
 msgstr ""
-"Рэдкая адмысловая валюта, за якую купляюць ўнікальныя тавары, што не "
-"прадаюцца за іншую валюту."
+"Рэдкая спецыялізаваная валюта, за якую купляюцца ўнікальныя тавары, "
+"недаступныя за іншую валюту."
 
 msgid "rewardCurrencyTooltip/crystal/header"
 msgstr "Боны"

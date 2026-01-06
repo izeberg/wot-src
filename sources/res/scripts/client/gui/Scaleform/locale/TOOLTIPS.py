@@ -2033,12 +2033,6 @@ class TOOLTIPS(object):
     AWARDITEM_COMPLETIONTOKENS_7_3_BODY = '#tooltips:awardItem/completionTokens_7_3/body'
     AWARDITEM_COMPLETIONTOKENS_7_4_HEADER = '#tooltips:awardItem/completionTokens_7_4/header'
     AWARDITEM_COMPLETIONTOKENS_7_4_BODY = '#tooltips:awardItem/completionTokens_7_4/body'
-    AWARDITEM_NYRFOOD_HEADER = '#tooltips:awardItem/nyrfood/header'
-    AWARDITEM_NYRFOOD_BODY = '#tooltips:awardItem/nyrfood/body'
-    AWARDITEM_NYRFUN_HEADER = '#tooltips:awardItem/nyrfun/header'
-    AWARDITEM_NYRFUN_BODY = '#tooltips:awardItem/nyrfun/body'
-    AWARDITEM_NYRACTIV_HEADER = '#tooltips:awardItem/nyractiv/header'
-    AWARDITEM_NYRACTIV_BODY = '#tooltips:awardItem/nyractiv/body'
     AWARDITEM_TANKMEN_BODY = '#tooltips:awardItem/tankmen/body'
     AWARDITEM_TANKWOMEN_HEADER = '#tooltips:awardItem/tankwomen/header'
     AWARDITEM_TANKWOMEN_BODY = '#tooltips:awardItem/tankwomen/body'
@@ -2147,6 +2141,8 @@ class TOOLTIPS(object):
     CUSTOMIZATION_TABS_EMBLEM_BODY = '#tooltips:customization/tabs/emblem/body'
     CUSTOMIZATION_TABS_INSCRIPTION_BODY = '#tooltips:customization/tabs/inscription/body'
     CUSTOMIZATION_TABS_MODIFICATION_BODY = '#tooltips:customization/tabs/modification/body'
+    CUSTOMIZATION_TABS_STYLE_2D_BODY = '#tooltips:customization/tabs/style/2d/body'
+    CUSTOMIZATION_TABS_STYLE_3D_BODY = '#tooltips:customization/tabs/style/3d/body'
     CUSTOMIZATION_TABS_PROJECTIONDECAL_BODY = '#tooltips:customization/tabs/projectionDecal/body'
     CUSTOMIZATION_CAROUSEL_FILTER_HEADER = '#tooltips:customization/carousel/filter/header'
     CUSTOMIZATION_CAROUSEL_FILTER_BODY = '#tooltips:customization/carousel/filter/body'
@@ -2397,6 +2393,8 @@ class TOOLTIPS(object):
     SETTINGS_KEYCHARGEFIRE_TITLE = '#tooltips:settings/keyChargeFire/title'
     SETTINGS_KEYCHARGEFIRE_DEFAULTKEY = '#tooltips:settings/keyChargeFire/defaultKey'
     SETTINGS_SWITCHMODE_BODY = '#tooltips:settings/switchMode/body'
+    SETTINGS_KEYSHOWQUESTPROGRESS_TITLE = '#tooltips:settings/keyShowQuestProgress/title'
+    SETTINGS_KEYSHOWQUESTPROGRESS_BODY = '#tooltips:settings/keyShowQuestProgress/body'
     SHELL_BASIC = '#tooltips:shell/basic'
     SHELL_BASIC_DESCRIPTION_BOLD = '#tooltips:shell/basic/description/bold'
     SHELL_BASIC_DESCRIPTION = '#tooltips:shell/basic/description'
@@ -2555,6 +2553,7 @@ class TOOLTIPS(object):
     ADVANCED_VEHICLEGUN = '#tooltips:advanced/vehicleGun'
     ADVANCED_VEHICLEDUALGUN = '#tooltips:advanced/vehicleDualGun'
     ADVANCED_VEHICLEAUTOSHOOTFLAMEGUN = '#tooltips:advanced/vehicleAutoShootFlameGun'
+    ADVANCED_VEHICLEAUTOSHOOTGUN = '#tooltips:advanced/vehicleAutoShootGun'
     ADVANCED_VEHICLERADIO = '#tooltips:advanced/vehicleRadio'
     ADVANCED_VEHICLEENGINE = '#tooltips:advanced/vehicleEngine'
     ADVANCED_VEHICLECHASSIS = '#tooltips:advanced/vehicleChassis'
@@ -3979,6 +3978,16 @@ class TOOLTIPS(object):
     NOTRECRUITEDTANKMAN_NY26_KRIEGER_DESC = '#tooltips:notrecruitedtankman/ny26_krieger/desc'
     NOTRECRUITEDTANKMAN_NY26_TERENTIJ_LABEL = '#tooltips:notrecruitedtankman/ny26_terentij/label'
     NOTRECRUITEDTANKMAN_NY26_TERENTIJ_DESC = '#tooltips:notrecruitedtankman/ny26_terentij/desc'
+    NOTRECRUITEDTANKMAN_NY26_CELEB_1_LABEL = '#tooltips:notrecruitedtankman/ny26_celeb_1/label'
+    NOTRECRUITEDTANKMAN_NY26_CELEB_1_DESC = '#tooltips:notrecruitedtankman/ny26_celeb_1/desc'
+    NOTRECRUITEDTANKMAN_NY26_CELEB_2_LABEL = '#tooltips:notrecruitedtankman/ny26_celeb_2/label'
+    NOTRECRUITEDTANKMAN_NY26_CELEB_2_DESC = '#tooltips:notrecruitedtankman/ny26_celeb_2/desc'
+    NOTRECRUITEDTANKMAN_NY26_CELEB_3_LABEL = '#tooltips:notrecruitedtankman/ny26_celeb_3/label'
+    NOTRECRUITEDTANKMAN_NY26_CELEB_3_DESC = '#tooltips:notrecruitedtankman/ny26_celeb_3/desc'
+    NOTRECRUITEDTANKMAN_NY26_CELEB_4_LABEL = '#tooltips:notrecruitedtankman/ny26_celeb_4/label'
+    NOTRECRUITEDTANKMAN_NY26_CELEB_4_DESC = '#tooltips:notrecruitedtankman/ny26_celeb_4/desc'
+    NOTRECRUITEDTANKMAN_NY26_CELEB_5_LABEL = '#tooltips:notrecruitedtankman/ny26_celeb_5/label'
+    NOTRECRUITEDTANKMAN_NY26_CELEB_5_DESC = '#tooltips:notrecruitedtankman/ny26_celeb_5/desc'
     NOTRECRUITEDTANKMAN_NY26_SNOWMAIDEN_1_LABEL = '#tooltips:notrecruitedtankman/ny26_snowmaiden_1/label'
     NOTRECRUITEDTANKMAN_NY26_SNOWMAIDEN_1_DESC = '#tooltips:notrecruitedtankman/ny26_snowmaiden_1/desc'
     NOTRECRUITEDTANKMAN_NY26_SNOWMAIDEN_2_LABEL = '#tooltips:notrecruitedtankman/ny26_snowmaiden_2/label'
@@ -3987,6 +3996,14 @@ class TOOLTIPS(object):
     NOTRECRUITEDTANKMAN_NY26_SNOWMAIDEN_3_DESC = '#tooltips:notrecruitedtankman/ny26_snowmaiden_3/desc'
     NOTRECRUITEDTANKMAN_NY26_SNOWMAIDEN_4_LABEL = '#tooltips:notrecruitedtankman/ny26_snowmaiden_4/label'
     NOTRECRUITEDTANKMAN_NY26_SNOWMAIDEN_4_DESC = '#tooltips:notrecruitedtankman/ny26_snowmaiden_4/desc'
+    NOTRECRUITEDTANKMAN_TANKMEN_BP18_5_1_DESC = '#tooltips:notrecruitedtankman/tankmen_BP18_5_1/desc'
+    NOTRECRUITEDTANKMAN_TANKMEN_BP18_5_1_LABEL = '#tooltips:notrecruitedtankman/tankmen_BP18_5_1/label'
+    NOTRECRUITEDTANKMAN_TANKMEN_BP18_5_2_DESC = '#tooltips:notrecruitedtankman/tankmen_BP18_5_2/desc'
+    NOTRECRUITEDTANKMAN_TANKMEN_BP18_5_2_LABEL = '#tooltips:notrecruitedtankman/tankmen_BP18_5_2/label'
+    NOTRECRUITEDTANKMAN_TANKMEN_BP18_5_3_DESC = '#tooltips:notrecruitedtankman/tankmen_BP18_5_3/desc'
+    NOTRECRUITEDTANKMAN_TANKMEN_BP18_5_3_LABEL = '#tooltips:notrecruitedtankman/tankmen_BP18_5_3/label'
+    NOTRECRUITEDTANKMAN_TANKMEN_BP18_5_4_DESC = '#tooltips:notrecruitedtankman/tankmen_BP18_5_4/desc'
+    NOTRECRUITEDTANKMAN_TANKMEN_BP18_5_4_LABEL = '#tooltips:notrecruitedtankman/tankmen_BP18_5_4/label'
     ELEN_SUMMARY_RANK_ENUM = (
      ELEN_SUMMARY_RANK_1,
      ELEN_SUMMARY_RANK_2,
@@ -4231,9 +4248,6 @@ class TOOLTIPS(object):
      AWARDITEM_COMPLETIONTOKENS_7_2_HEADER,
      AWARDITEM_COMPLETIONTOKENS_7_3_HEADER,
      AWARDITEM_COMPLETIONTOKENS_7_4_HEADER,
-     AWARDITEM_NYRFOOD_HEADER,
-     AWARDITEM_NYRFUN_HEADER,
-     AWARDITEM_NYRACTIV_HEADER,
      AWARDITEM_TANKWOMEN_HEADER,
      AWARDITEM_TANKMAN_HEADER,
      AWARDITEM_ONEOF_HEADER,
@@ -4314,9 +4328,6 @@ class TOOLTIPS(object):
      AWARDITEM_COMPLETIONTOKENS_7_2_BODY,
      AWARDITEM_COMPLETIONTOKENS_7_3_BODY,
      AWARDITEM_COMPLETIONTOKENS_7_4_BODY,
-     AWARDITEM_NYRFOOD_BODY,
-     AWARDITEM_NYRFUN_BODY,
-     AWARDITEM_NYRACTIV_BODY,
      AWARDITEM_TANKMEN_BODY,
      AWARDITEM_TANKWOMEN_BODY,
      AWARDITEM_TANKMAN_BODY,
@@ -4521,6 +4532,7 @@ class TOOLTIPS(object):
      ADVANCED_VEHICLEGUN,
      ADVANCED_VEHICLEDUALGUN,
      ADVANCED_VEHICLEAUTOSHOOTFLAMEGUN,
+     ADVANCED_VEHICLEAUTOSHOOTGUN,
      ADVANCED_VEHICLERADIO,
      ADVANCED_VEHICLEENGINE,
      ADVANCED_VEHICLECHASSIS,
@@ -4595,6 +4607,8 @@ class TOOLTIPS(object):
      CUSTOMIZATION_TABS_EMBLEM_BODY,
      CUSTOMIZATION_TABS_INSCRIPTION_BODY,
      CUSTOMIZATION_TABS_MODIFICATION_BODY,
+     CUSTOMIZATION_TABS_STYLE_2D_BODY,
+     CUSTOMIZATION_TABS_STYLE_3D_BODY,
      CUSTOMIZATION_TABS_PROJECTIONDECAL_BODY)
     HEADER_BUTTONS_ALL_CLICKDESC_ENUM = (
      HEADER_BUTTONS_CRYSTAL_CLICKDESC,
@@ -4904,10 +4918,19 @@ class TOOLTIPS(object):
      NOTRECRUITEDTANKMAN_TANKMEN_PORTAL25_4_LABEL,
      NOTRECRUITEDTANKMAN_NY26_KRIEGER_LABEL,
      NOTRECRUITEDTANKMAN_NY26_TERENTIJ_LABEL,
+     NOTRECRUITEDTANKMAN_NY26_CELEB_1_LABEL,
+     NOTRECRUITEDTANKMAN_NY26_CELEB_2_LABEL,
+     NOTRECRUITEDTANKMAN_NY26_CELEB_3_LABEL,
+     NOTRECRUITEDTANKMAN_NY26_CELEB_4_LABEL,
+     NOTRECRUITEDTANKMAN_NY26_CELEB_5_LABEL,
      NOTRECRUITEDTANKMAN_NY26_SNOWMAIDEN_1_LABEL,
      NOTRECRUITEDTANKMAN_NY26_SNOWMAIDEN_2_LABEL,
      NOTRECRUITEDTANKMAN_NY26_SNOWMAIDEN_3_LABEL,
-     NOTRECRUITEDTANKMAN_NY26_SNOWMAIDEN_4_LABEL)
+     NOTRECRUITEDTANKMAN_NY26_SNOWMAIDEN_4_LABEL,
+     NOTRECRUITEDTANKMAN_TANKMEN_BP18_5_1_LABEL,
+     NOTRECRUITEDTANKMAN_TANKMEN_BP18_5_2_LABEL,
+     NOTRECRUITEDTANKMAN_TANKMEN_BP18_5_3_LABEL,
+     NOTRECRUITEDTANKMAN_TANKMEN_BP18_5_4_LABEL)
     NOTRECRUITEDTANKMAN_ALL_DESC_ENUM = (
      NOTRECRUITEDTANKMAN_BASE_DESC,
      NOTRECRUITEDTANKMAN_BUFFON_DESC,
@@ -5179,10 +5202,19 @@ class TOOLTIPS(object):
      NOTRECRUITEDTANKMAN_TANKMEN_PORTAL25_4_DESC,
      NOTRECRUITEDTANKMAN_NY26_KRIEGER_DESC,
      NOTRECRUITEDTANKMAN_NY26_TERENTIJ_DESC,
+     NOTRECRUITEDTANKMAN_NY26_CELEB_1_DESC,
+     NOTRECRUITEDTANKMAN_NY26_CELEB_2_DESC,
+     NOTRECRUITEDTANKMAN_NY26_CELEB_3_DESC,
+     NOTRECRUITEDTANKMAN_NY26_CELEB_4_DESC,
+     NOTRECRUITEDTANKMAN_NY26_CELEB_5_DESC,
      NOTRECRUITEDTANKMAN_NY26_SNOWMAIDEN_1_DESC,
      NOTRECRUITEDTANKMAN_NY26_SNOWMAIDEN_2_DESC,
      NOTRECRUITEDTANKMAN_NY26_SNOWMAIDEN_3_DESC,
-     NOTRECRUITEDTANKMAN_NY26_SNOWMAIDEN_4_DESC)
+     NOTRECRUITEDTANKMAN_NY26_SNOWMAIDEN_4_DESC,
+     NOTRECRUITEDTANKMAN_TANKMEN_BP18_5_1_DESC,
+     NOTRECRUITEDTANKMAN_TANKMEN_BP18_5_2_DESC,
+     NOTRECRUITEDTANKMAN_TANKMEN_BP18_5_3_DESC,
+     NOTRECRUITEDTANKMAN_TANKMEN_BP18_5_4_DESC)
     NOTRECRUITEDTANKMAN_ALL_HOWTOGETINFO_ENUM = (
      NOTRECRUITEDTANKMAN_TANKMAN_HOWTOGETINFO,
      NOTRECRUITEDTANKMAN_TANKMEN_HOWTOGETINFO,

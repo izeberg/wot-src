@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/russian/R231_Object_278/_skins/R231_Object_278_3Dst_01/normal/lod3/Hull</parent>
+	<tank>true</tank>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.820352 -0.621411 -3.808759</min>
+		<max>1.916127 0.652205 3.729658</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/russian/R231_Object_278/_skins/R231_Object_278_3Dst_01/normal/lod2/Hull</nodefullVisual>
+</root>

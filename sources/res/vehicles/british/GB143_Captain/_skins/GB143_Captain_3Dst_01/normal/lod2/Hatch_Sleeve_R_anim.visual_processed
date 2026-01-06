@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>HP_Hatch_Sleeve_R</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>1.305908 0.340380 -0.790416</row3>
+			</transform>
+		</node>
+		<node>
+			<identifier>Root</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>Hatch_Sleeve_R</identifier>
+				<transform>
+					<row0>0.956818 0.290688 -0.000000</row0>
+					<row1>0.290688 -0.956818 0.000000</row1>
+					<row2>0.000000 -0.000000 -1.000000</row2>
+					<row3>1.305996 0.340326 -0.616195</row3>
+				</transform>
+				<node>
+					<identifier>Hatch_Sleeve_R_BlendBone</identifier>
+					<transform>
+						<row0>0.956818 0.290688 0.000000</row0>
+						<row1>0.290688 -0.956818 -0.000000</row1>
+						<row2>0.000000 -0.000000 1.000000</row2>
+						<row3>-1.348529 -0.054007 -0.616195</row3>
+					</transform>
+				</node>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>Hatch_Sleeve_R_BlendBone</node>
+		<geometry>
+			<vertices>turret_Hatch_Sleeve_R_Shape.vertices</vertices>
+			<primitive>turret_Hatch_Sleeve_R_Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_turret_01_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<materialKind>0</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/british/GB143_Captain/_skins/GB143_Captain_3Dst_01/Captain_3Dst_01_turret_01_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/british/GB143_Captain/_skins/GB143_Captain_3Dst_01/Captain_3Dst_01_turret_01_AO.dds</Texture>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>7.014000 7.014000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/british/GB143_Captain/_skins/GB143_Captain_3Dst_01/Captain_3Dst_01_turret_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/british/GB143_Captain/_skins/GB143_Captain_3Dst_01/Captain_3Dst_01_turret_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>1.307094 0.336591 0.792392</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>1.247184 0.191811 -0.984639</min>
+		<max>1.367005 0.481371 -0.600146</max>
+	</boundingBox>
+	<geometrySize>2806</geometrySize>
+	<minUVDensity>0.009819</minUVDensity>
+</root>

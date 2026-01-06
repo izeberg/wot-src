@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/russian/R231_Object_278/_skins/R231_Object_278_3Dst_01/normal/lod3/Turret_01</parent>
+	<tank>true</tank>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.516890 -0.018184 -2.181756</min>
+		<max>1.516890 1.851894 1.703747</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/russian/R231_Object_278/_skins/R231_Object_278_3Dst_01/normal/lod2/Turret_01</nodefullVisual>
+</root>

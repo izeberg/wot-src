@@ -634,6 +634,11 @@ package net.wg.gui.battle.views
          return false;
       }
       
+      protected function get messagesContainer() : Sprite
+      {
+         return this._messagesContainer;
+      }
+      
       protected function onMinimapSizeChangedHandler(param1:MinimapEvent) : void
       {
          this.anchorVictimDogTag();

@@ -10,6 +10,26 @@ BATTLE_RESULTS = [
  (
   'metaLevel', tuple, (1, 0), None, 'skip', ENTRY_TYPE.ACCOUNT_ALL),
  (
+  'frontlineXP', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_SELF),
+ (
+  'damageToSupplies', int, 0, None, 'skip', ENTRY_TYPE.VEHICLE_ALL),
+ (
+  'damageFromSupplies', int, 0, None, 'skip', ENTRY_TYPE.VEHICLE_ALL),
+ (
+  'suppliesDestroyed', int, 0, None, 'skip', ENTRY_TYPE.VEHICLE_ALL),
+ (
+  'distributedSupplyDamage', int, 0, None, 'skip', ENTRY_TYPE.ACCOUNT_ALL),
+ (
+  'distributedSupplyCapturePoints', int, 0, None, 'skip', ENTRY_TYPE.ACCOUNT_ALL),
+ (
+  'distributedSupplyDefensePoints', int, 0, None, 'skip', ENTRY_TYPE.ACCOUNT_ALL),
+ (
+  'distributedXP', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_SELF),
+ (
+  'frontlineQuestsCompleted', int, 0, None, 'skip', ENTRY_TYPE.VEHICLE_SELF),
+ (
+  'suppliesKilled', set, set(), None, 'joinSets', ENTRY_TYPE.ACCOUNT_SELF),
+ (
   'flXP', int, 0, None, 'skip', ENTRY_TYPE.ACCOUNT_ALL),
  (
   'originalFlXP', int, 0, None, 'skip', ENTRY_TYPE.ACCOUNT_ALL),

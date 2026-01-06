@@ -214,7 +214,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.components.common.lobbyVehicleMarkers.LobbyVehicleMarkersVO;
    import net.wg.gui.components.common.lobbyVehicleMarkers.PlatoonMarker;
    import net.wg.gui.components.common.lobbyVehicleMarkers.PlatoonMarkerVO;
-   import net.wg.gui.components.common.lobbyVehicleMarkers.RaccoonMarker;
    import net.wg.gui.components.common.markers.AnimateExplosion;
    import net.wg.gui.components.common.markers.DamageLabel;
    import net.wg.gui.components.common.markers.HealthBar;
@@ -447,6 +446,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.components.crosshairPanel.VO.GunMarkerIndicatorVO;
    import net.wg.gui.components.crosshairPanel.VO.ShotFlyTimeVO;
    import net.wg.gui.components.crosshairPanel.components.ClipQuantityIndicator;
+   import net.wg.gui.components.crosshairPanel.components.CrosshairClipAutogunBar;
    import net.wg.gui.components.crosshairPanel.components.CrosshairClipQuantityBar;
    import net.wg.gui.components.crosshairPanel.components.CrosshairClipQuantityBarContainer;
    import net.wg.gui.components.crosshairPanel.components.ShotDamageInd;
@@ -1353,8 +1353,6 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_COMPONENTS_COMMON_LOBBYVEHICLEMARKERS_PLATOONMARKERVO:Class = PlatoonMarkerVO;
       
-      public static const NET_WG_GUI_COMPONENTS_COMMON_LOBBYVEHICLEMARKERS_RACCOONMARKER:Class = RaccoonMarker;
-      
       public static const NET_WG_GUI_COMPONENTS_COMMON_MARKERS_ANIMATEEXPLOSION:Class = AnimateExplosion;
       
       public static const NET_WG_GUI_COMPONENTS_COMMON_MARKERS_DAMAGELABEL:Class = DamageLabel;
@@ -1812,6 +1810,8 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_ICROSSHAIRPANELCONTAINER:Class = ICrosshairPanelContainer;
       
       public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_CLIPQUANTITYINDICATOR:Class = ClipQuantityIndicator;
+      
+      public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_CROSSHAIRCLIPAUTOGUNBAR:Class = CrosshairClipAutogunBar;
       
       public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_CROSSHAIRCLIPQUANTITYBAR:Class = CrosshairClipQuantityBar;
       

@@ -191,8 +191,17 @@ msgstr "Критический урон"
 msgid "battleResults/damage"
 msgstr "Урон"
 
+msgid "battleResults/damageSupplies"
+msgstr "Урон по объектам"
+
 msgid "battleResults/kill"
 msgstr "Уничтожено"
+
+msgid "battleResults/killSupplies"
+msgstr "Уничтожено объектов"
+
+msgid "battleResults/questCompleted"
+msgstr "Выполнено задач"
 
 msgid "battleResults/spotting"
 msgstr "Обнаружено"
@@ -221,6 +230,18 @@ msgstr "Команды"
 msgid "deploymentMap/flamethrowerLimitReached"
 msgstr "Направление заблокировано — достигнут максимум огнемётных танков"
 
+msgid "deploymentMap/lane/center"
+msgstr "Ваше направление: B-E"
+
+msgid "deploymentMap/lane/left"
+msgstr "Ваше направление: A-D"
+
+msgid "deploymentMap/lane/right"
+msgstr "Ваше направление: C-F"
+
+msgid "deploymentMap/lane/top"
+msgstr "Ваше направление: зона целей"
+
 msgid "deploymentMap/lanePlayerLimitReached"
 msgstr "Направление заблокировано — достигнут максимум игроков"
 
@@ -229,6 +250,23 @@ msgstr "Повышенный риск"
 
 msgid "deploymentMap/spgLimitReached"
 msgstr "Направление заблокировано — достигнут максимум САУ"
+
+msgid "deploymentMap/warning/1"
+msgstr ""
+"• При выборе другого направления для высадки вы будете закреплены за новым направлением.\n"
+"• Текущая задача будет заменена на новую.\n"
+"• Вы сможете проходить прогрессию зон для нового направления."
+
+msgid "deploymentMap/warning/2"
+msgstr ""
+"• При выборе другого направления для высадки вы будете закреплены за новым направлением.\n"
+"• Прогресс по текущей задаче будет сброшен."
+
+msgid "deploymentMap/warning/3"
+msgstr ""
+"• При выборе другого направления для высадки вы будете закреплены за новым направлением.\n"
+"• Будет выдана новая задача.\n"
+"• Вы сможете проходить прогрессию зон для нового направления."
 
 msgid "dialogs/quotedName"
 msgstr "«%(name)s»"
@@ -605,7 +643,7 @@ msgid "questsTooltip/epicBattle/header"
 msgstr "Задачи Линии фронта"
 
 msgid "questsTooltip/epicBattle/lessThanDay"
-msgstr "менее 1 д"
+msgstr "менее 1 д."
 
 msgid "questsTooltip/epicBattle/restrict/level"
 msgstr "получите %(level)s уровень"
@@ -876,7 +914,7 @@ msgid "spectator_mode/unfollow_title"
 msgstr "Отставить цель"
 
 msgid "status/timeLeft/days"
-msgstr "%(day)s д"
+msgstr "%(day)s д."
 
 msgid "status/timeLeft/hours"
 msgstr "%(hour)s ч"
@@ -885,7 +923,7 @@ msgid "status/timeLeft/lessMin"
 msgstr "минуту"
 
 msgid "status/timeLeft/min"
-msgstr "%(min)s мин"
+msgstr "%(min)s мин."
 
 msgid "statusNotificationTimers/captureBlock/blocked"
 msgstr "База оспаривается"
@@ -926,6 +964,36 @@ msgstr "Активируется через %(activationDelay)s с после о
 msgid "super_platoon_panel/title"
 msgstr "Взвод"
 
+msgid "supply/airship"
+msgstr "Дирижабль"
+
+msgid "supply/flamer"
+msgstr "Огнемёт"
+
+msgid "supply/marker_need_repair"
+msgstr "Повреждён"
+
+msgid "supply/messages/airshipActive"
+msgstr "В зоне активен дирижабль противника"
+
+msgid "supply/messages/airshipActivePositive"
+msgstr "В зоне активен союзный дирижабль"
+
+msgid "supply/messages/attack"
+msgstr "Активирован союзный объект поддержки атаки."
+
+msgid "supply/messages/defence"
+msgstr "Активирован союзный объект поддержки обороны."
+
+msgid "supply/mortar"
+msgstr "РСЗО"
+
+msgid "supply/pillbox"
+msgstr "Дот"
+
+msgid "supply/timer_is_repairing"
+msgstr "Ремонт объекта"
+
 msgid "tab_screen/generalBonusDescr"
 msgstr ""
 "— суммарный командный бонус к эффективности экипажа за присутствие генерала."
@@ -938,6 +1006,9 @@ msgstr "Все направления"
 
 msgid "tab_screen/show_my_lane"
 msgstr "Моё направление"
+
+msgid "tab_screen/show_quests"
+msgstr "Задачи"
 
 msgid "team1Name"
 msgstr "Атакующие"

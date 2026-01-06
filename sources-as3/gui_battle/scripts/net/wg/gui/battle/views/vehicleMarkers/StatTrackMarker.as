@@ -69,6 +69,8 @@ package net.wg.gui.battle.views.vehicleMarkers
       
       public function hide(param1:Boolean = false) : void
       {
+         this.fadeIn.stop();
+         this.fadeOut.stop();
          this.idle.stop();
          this.fadeIn.visible = this.fadeOut.visible = this.idle.visible = false;
          if(param1)

@@ -8,5 +8,5 @@
 	<parent>vehicles/french/F134_ARL_Projet_F/crash/lod1/Gun_01</parent>
 	<extent>32.000000</extent>
 	<tank>true</tank>
-	<nodelessVisual>vehicles/french/F134_ARL_Projet_F/crash/lod0/Gun_01</nodelessVisual>
+	<nodefullVisual>vehicles/french/F134_ARL_Projet_F/crash/lod0/Gun_01</nodefullVisual>
 </root>

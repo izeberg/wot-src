@@ -31,34 +31,22 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<primitive>indices</primitive>
+			<vertices>turret_01_Shape.vertices</vertices>
+			<primitive>turret_01_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>tank_proxy</identifier>
 					<fx>shaders/std_effects/PBS_tank.fx</fx>
 					<materialKind>0</materialKind>
+					<identifier>tank_proxy</identifier>
 					<collisionFlags>0</collisionFlags>
-					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
-					</property>
 					<property>
 						diffuseMap
 						<Texture>vehicles/british/GB48_FV215b_183/_skins/GB48_FV215b_183_3Dst_02/FV215b_183_3Dst_02_proxy_AM.dds</Texture>
 					</property>
 					<property>
-						excludeMaskAndAOMap
-						<Texture>vehicles/british/GB48_FV215b_183/_skins/GB48_FV215b_183_3Dst_02/FV215b_183_3Dst_02_proxy_AO.dds</Texture>
-					</property>
-					<property>
-						g_detailUVTiling
-						<Vector4>4.208220 4.208220 0.000000 0.000000</Vector4>
-					</property>
-					<property>
-						metallicDetailMap
-						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 					<property>
 						metallicGlossMap
@@ -68,15 +56,23 @@
 						normalMap
 						<Texture>vehicles/british/GB48_FV215b_183/_skins/GB48_FV215b_183_3Dst_02/FV215b_183_3Dst_02_proxy_ANM.dds</Texture>
 					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/british/GB48_FV215b_183/_skins/GB48_FV215b_183_3Dst_02/FV215b_183_3Dst_02_proxy_AO.dds</Texture>
+					</property>
+					<property>
+						alphaReference
+						<Int>0</Int>
+					</property>
 				</material>
-				<groupOrigin>-0.037081 0.738007 0.037813</groupOrigin>
+				<groupOrigin>-0.006269 0.720650 0.067998</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-1.554650 -0.002361 -2.020076</min>
+		<min>-1.493026 -0.037075 -1.959706</min>
 		<max>1.480488 1.478376 2.095701</max>
 	</boundingBox>
 	<geometrySize>2144</geometrySize>
-	<minUVDensity>0.004986</minUVDensity>
+	<minUVDensity>0.003883</minUVDensity>
 </root>

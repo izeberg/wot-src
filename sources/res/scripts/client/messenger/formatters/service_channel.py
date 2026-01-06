@@ -14,6 +14,7 @@ from blueprints.FragmentTypes import getFragmentType
 from cache import cached_property, class_cached_property
 from chat_shared import MapRemovedFromBLReason, SYS_MESSAGE_TYPE, decompressSysMessage
 from constants import ARENA_BONUS_TYPE, ARENA_GUI_TYPE, AUTO_MAINTENANCE_RESULT, AUTO_MAINTENANCE_TYPE, FAIRPLAY_VIOLATIONS, FINISH_REASON, INVOICE_ASSET, KICK_REASON, KICK_REASON_NAMES, NC_MESSAGE_PRIORITY, NC_MESSAGE_TYPE, OFFER_TOKEN_PREFIX, PREBATTLE_TYPE, PREMIUM_ENTITLEMENTS, PREMIUM_TYPE, RESTRICTION_TYPE, SYS_MESSAGE_CLAN_EVENT, SYS_MESSAGE_CLAN_EVENT_NAMES, SYS_MESSAGE_FORT_EVENT_NAMES, SwitchState, SECONDS_IN_DAY, BattleRoyaleResult
+from gui.impl.lobby.stronghold.stronghold_helpers import CLAN_SEASON_PROGRESS_PREFIX
 from play_streak.play_streak_constants import RANDOM_GOODIE_TOKEN, RANDOM_EQUIPMENT_TOKEN
 from debug_utils import LOG_ERROR
 from dog_tags_common.components_config import componentConfigAdapter
@@ -56,7 +57,7 @@ from gui.shared.gui_items.crew_skin import localizedFullName
 from gui.shared.gui_items.dossier.achievements.abstract.class_progress import ClassProgressAchievement
 from gui.shared.gui_items.dossier.factories import getAchievementFactory
 from gui.shared.gui_items.fitting_item import RentalInfoProvider
-from gui.shared.gui_items.loot_box import REFERRAL_PROGRAM_CATEGORY, NewYearLootBoxes
+from gui.shared.gui_items.loot_box import REFERRAL_PROGRAM_CATEGORY
 from gui.shared.money import Currency, MONEY_UNDEFINED, Money, ZERO_MONEY
 from gui.shared.notifications import NotificationGuiSettings, NotificationPriorityLevel
 from gui.shared.system_factory import collectTokenQuestsSubFormatters, collectConvertersSubFormatter, collectServiceChannelSubformatter
@@ -97,7 +98,6 @@ if typing.TYPE_CHECKING:
     from account_helpers.offers.events_data import OfferEventData, OfferGift
     from gui.platform.catalog_service.controller import _PurchaseDescriptor
 _logger = logging.getLogger(__name__)
-EOL = b'\n'
 _TEMPLATE = b'template'
 _RENT_TYPE_NAMES = {RentDurationKeys.DAYS: b'rentDays', 
    RentDurationKeys.BATTLES: b'rentBattles', 
@@ -687,14 +687,13 @@ class BattleResultsFormatter(WaitItemsSyncFormatter):
         ctx = {}
         vehicleNames = {intCD:self._itemsCache.items.getItemByCD(intCD) for intCD in battleResults.get(b'playerVehicles', {}).keys()}
         ctx[b'vehicleNames'] = (b', ').join(map(operator.attrgetter(b'userName'), sorted(vehicleNames.values())))
-        nyBonus = battleResults.get(b'detailedRewards', {}).get(b'nyBattleBonus', {})
         xp = battleResults.get(b'xp')
         if xp:
-            ctx[b'xp'] = backport.getIntegralFormat(xp + nyBonus.get(b'xp', 0))
+            ctx[b'xp'] = backport.getIntegralFormat(xp)
         battleResKey = battleResults.get(b'isWinner', 0)
         ctx[b'xpEx'] = self.__makeXpExString(xp, battleResKey, battleResults.get(b'xpPenalty', 0), battleResults)
         ctx[Currency.GOLD] = self.__makeGoldString(battleResults.get(Currency.GOLD, 0))
-        accCredits = battleResults.get(Currency.CREDITS) + nyBonus.get(b'credits', 0) + battleResults.get(b'teamSubsBonusCredits', 0) - battleResults.get(b'creditsToDraw', 0)
+        accCredits = battleResults.get(Currency.CREDITS) + battleResults.get(b'teamSubsBonusCredits', 0) - battleResults.get(b'creditsToDraw', 0)
         if accCredits:
             ctx[Currency.CREDITS] = self.__makeCurrencyString(Currency.CREDITS, accCredits)
         ctx[b'piggyBank'] = self.__makePiggyBankString(battleResults.get(b'piggyBank'))
@@ -1479,21 +1478,6 @@ class InvoiceReceivedFormatter(WaitItemsSyncFormatter):
             return b''
 
     @classmethod
-    def getGoldVehiclesCompensationTotal(cls, vehicles):
-        total = 0
-        for vehicleDict in vehicles:
-            for vehCompDescr, vehData in vehicleDict.iteritems():
-                vehicleName = cls.__getVehicleName(vehCompDescr)
-                if vehicleName is None:
-                    continue
-                if b'customCompensation' in vehData:
-                    val = Money.makeFromMoneyTuple(vehData[b'customCompensation'])
-                    if val.gold:
-                        total += val.gold
-
-        return total
-
-    @classmethod
     def getCustomizationCompensationString(cls, customizationItem, htmlTplPostfix=b'InvoiceReceived'):
         result = b''
         if b'customCompensation' not in customizationItem:
@@ -1740,14 +1724,11 @@ class InvoiceReceivedFormatter(WaitItemsSyncFormatter):
 
     def _formatPurchase(self, emitterID, assetType, data):
         if b'customFormatting' in data.get(b'tags', ()):
-            for formatter in self.dataSubformatters:
-                formatter.customFormatPurchase(data)
-
-            return None
-        operations = self._composeOperations(data)
-        if not operations:
             return None
         else:
+            operations = self._composeOperations(data)
+            if not operations:
+                return None
             ctx = {b'at': self._getOperationTimeString(data), 
                b'desc': self.__getL10nDescription(data), 
                b'op': (b'<br/>').join(operations)}
@@ -2237,9 +2218,6 @@ class InvoiceReceivedFormatter(WaitItemsSyncFormatter):
 class IInvoiceDataSubFormatter(object):
 
     def format(self, data, operations):
-        raise NotImplementedError
-
-    def customFormatPurchase(self, data):
         raise NotImplementedError
 
 
@@ -2941,10 +2919,6 @@ class QuestAchievesFormatter(object):
                 if questBattlePassPoints:
                     formatter = getBWFormatter(Currency.BATTLE_PASS_POINTS)
                     result.append(cls.__makeQuestsAchieve(b'battleQuestsBattlePassPoints', battleQuestsBattlePassPoints=formatter(questBattlePassPoints)))
-            nyMandarins = data.get(b'tokens', {}).get(b'ny26_mandarin', {}).get(b'count', 0)
-            if nyMandarins:
-                fomatter = getBWFormatter(b'nyMandarins')
-                result.append(cls.__makeQuestsAchieve(b'battleQuestsNYMandarins', nyMandarins=fomatter(nyMandarins)))
             platformCurrencies = data.get(b'currencies', {})
             for currency, countDict in platformCurrencies.iteritems():
                 result.append(cls.__makeQuestsAchieve(b'platformCurrency', msg=backport.text(R.strings.messenger.platformCurrencyMsg.received.dyn(currency)()), count=backport.getIntegralFormat(countDict.get(b'count', 0))))
@@ -3023,9 +2997,7 @@ class QuestAchievesFormatter(object):
                     itemsNames.append(backport.text(R.strings.messenger.serviceChannelMessages.battleResults.quests.items.name(), name=backport.text(R.strings.comp7.system_messages.weeklyReward.tokens()), count=count))
                 elif tokenID.startswith(constants.LOOTBOX_TOKEN_PREFIX) and intCount > 0:
                     lootBox = cls.__itemsCache.items.tokens.getLootBoxByTokenID(tokenID)
-                    if lootBox and lootBox.getType() == NewYearLootBoxes.SURPRISE_COIN:
-                        itemsNames.append(makeHtmlString(b'html_templates:lobby/quests/bonuses', b'lootBoxMachineNotif', {b'count': intCount}))
-                    elif lootBox:
+                    if lootBox:
                         itemsNames.append(makeHtmlString(b'html_templates:lobby/quests/bonuses', b'rawLootBox', {b'name': lootBox.getUserName(), b'count': intCount}))
                 elif tokenID.startswith(EARLY_ACCESS_PREFIX):
                     itemsNames.append(EarlyAccessQuestsTokensFormatter.format(data))
@@ -3034,12 +3006,8 @@ class QuestAchievesFormatter(object):
                     text = backport.text(R.strings.lootboxes.userName.dyn(key.userName)())
                     if key:
                         itemsNames.append(makeHtmlString(b'html_templates:lobby/quests/bonuses', b'lootBoxKey', {b'name': text, b'count': intCount}))
-                elif tokenID == constants.PERSONAL_MISSION_FREE_TOKEN_NAME:
-                    itemsNames.append(backport.text(R.strings.messenger.serviceChannelMessages.battleResults.quests.items.name(), name=backport.text(R.strings.seniority_awards.personalMissions.freeSheet.title(), campaignName=backport.text(R.strings.personal_missions.campaignTitle.dyn(b'c_1')())), count=count))
-                elif tokenID == constants.PERSONAL_MISSION_2_FREE_TOKEN_NAME:
-                    itemsNames.append(backport.text(R.strings.messenger.serviceChannelMessages.battleResults.quests.items.name(), name=backport.text(R.strings.seniority_awards.personalMissions.freeSheet.title(), campaignName=backport.text(R.strings.personal_missions.campaignTitle.dyn(b'c_2')())), count=count))
-                elif tokenID == constants.SENIORITY_AWARDS_VEHICLE_OFFER:
-                    itemsNames.append(backport.text(R.strings.messenger.serviceChannelMessages.battleResults.quests.items.name(), name=backport.text(R.strings.seniority_awards.selectBonus.vehicle_10_gift()), count=count))
+                elif tokenID == CLAN_SEASON_PROGRESS_PREFIX:
+                    itemsNames.append(backport.text(R.strings.messenger.serviceChannelMessages.battleResults.quests.items.name(), name=backport.text(R.strings.quests.bonusName.clan_season_progress()), count=count))
 
         entitlementsList = [ (eID, eData.get(b'count', 0)) for eID, eData in data.get(b'entitlements', {}).iteritems() ]
         entitlementsStr = InvoiceReceivedFormatter.getEntitlementsString(entitlementsList)
@@ -3468,13 +3436,12 @@ class LootBoxAchievesFormatter(QuestAchievesFormatter):
 class BattlePassQuestAchievesFormatter(QuestAchievesFormatter):
     __offersProvider = dependency.descriptor(IOffersDataProvider)
     _BULLET = b'• '
-    _SEPARATOR = b'<br/>'
+    _SEPARATOR = b'<br/>' + _BULLET
 
     @classmethod
-    def formatQuestAchieves(cls, data, asBattleFormatter, processCustomizations=True, processTokens=True, isBulletsNeed=True):
-        cls._SEPARATOR = (isBulletsNeed or cls)._SEPARATOR if 1 else cls._SEPARATOR + cls._BULLET
+    def formatQuestAchieves(cls, data, asBattleFormatter, processCustomizations=True, processTokens=True):
         result = super(BattlePassQuestAchievesFormatter, cls).formatQuestAchieves(data, asBattleFormatter, processCustomizations, processTokens)
-        if result and isBulletsNeed:
+        if result:
             return cls._BULLET + result
         return result
 
@@ -3577,6 +3544,30 @@ class Comp7QualificationRewardsFormatter(QuestAchievesFormatter):
     @classmethod
     def formatQuestAchieves(cls, data, asBattleFormatter, processCustomizations=True, processTokens=True):
         result = super(Comp7QualificationRewardsFormatter, cls).formatQuestAchieves(data, asBattleFormatter, processCustomizations, processTokens)
+        if result:
+            return cls._BULLET + result
+        return result
+
+
+class ClanSeasonProgressRewardsFormatter(QuestAchievesFormatter):
+    _BULLET = b'• '
+    _SEPARATOR = b'<br/>' + _BULLET
+
+    @classmethod
+    def formatQuestAchieves(cls, data, asBattleFormatter, processCustomizations=True, processTokens=True):
+        result = super(ClanSeasonProgressRewardsFormatter, cls).formatQuestAchieves(data, asBattleFormatter, processCustomizations, processTokens=False)
+        if result:
+            return cls._BULLET + result
+        return result
+
+
+class ClanSeasonQuestRewardsFormatter(QuestAchievesFormatter):
+    _BULLET = b'• '
+    _SEPARATOR = b'<br/>' + _BULLET
+
+    @classmethod
+    def formatQuestAchieves(cls, data, asBattleFormatter, processCustomizations=True, processTokens=True):
+        result = super(ClanSeasonQuestRewardsFormatter, cls).formatQuestAchieves(data, asBattleFormatter, processCustomizations, processTokens=False)
         if result:
             return cls._BULLET + result
         return result
@@ -4373,7 +4364,7 @@ class BattlePassRewardFormatter(WaitItemsSyncFormatter):
         additionalText = b''
         chapterID = ctx.get(b'chapter')
         savedData = None
-        if not (self.__battlePass.isCompleted() and self.__battlePass.isResourceCompleted()):
+        if not (self.__battlePass.isCompleted() and self.__battlePass.isResourceCompleted()) or self.__battlePass.isMarathonChapter(chapterID):
             chapterName = backport.text(R.strings.battle_pass.chapter.fullName.quoted.num(chapterID)())
             if not self.__battlePass.isFinalLevel(chapterID, newLevel):
                 description = backport.text(R.strings.messenger.serviceChannelMessages.battlePassReward.battle.newLevel.text(), newLevel=text_styles.credits(newLevel), chapter=text_styles.credits(chapterName))
@@ -4400,7 +4391,7 @@ class BattlePassRewardFormatter(WaitItemsSyncFormatter):
         header = backport.text(R.strings.messenger.serviceChannelMessages.battlePassReward.header.buyProgress())
         levelCount = currentLevel - prevLevel
         if self.__battlePass.isFinalLevel(chapterID, currentLevel):
-            if self.__battlePass.isCompleted() and self.__battlePass.isResourceCompleted():
+            if self.__battlePass.isCompleted() and self.__battlePass.isResourceCompleted() and not self.__battlePass.isSingleChapter():
                 description = backport.text(R.strings.messenger.serviceChannelMessages.battlePassReward.battle.final.text(), season=self.__battlePass.getSeasonNum())
             elif self.__battlePass.isChapterExists(chapterID):
                 description = backport.text(R.strings.messenger.serviceChannelMessages.battlePassReward.battle.chapterFinal.text(), chapter=chapter)
@@ -5668,15 +5659,6 @@ class IntegratedAuctionResultFormatter(ServiceChannelFormatter):
         return self.__CURRENCY_TO_STYLE.get(currencyName, getStyle(currencyName))
 
 
-class PersonalReservesHaveBeenConvertedFormatter(ServiceChannelFormatter):
-    __TEMPLATE = b'PersonalReservesHaveBeenConverted'
-
-    def format(self, message, *args):
-        formatted = g_settings.msgTemplates.format(self.__TEMPLATE)
-        return [
-         MessageData(formatted, self._getGuiSettings(message, self.__TEMPLATE))]
-
-
 class CollectionsItemsFormatter(ServiceChannelFormatter):
     __TEMPLATE = b'CollectionItemsSysMessage'
     __collections = dependency.descriptor(ICollectionsSystemController)
@@ -6117,45 +6099,3 @@ class PlayStreakSysMessageRewardsFormatter(WaitItemsSyncFormatter):
         else:
             callback([MessageData(None, None)])
         return
-
-
-class SeniorityAwardsCompensationExtQuestAchievesSubFormatter(IQuestAchievesSubformatter):
-
-    @classmethod
-    def format(cls, data, asBattleFormatter, result, processCustomizations=True, processTokens=True):
-        if not asBattleFormatter:
-            isHeaderAppended = False
-            compensationBlank1 = data.get(b'meta', {}).get(b'compensation_token:blank_1')
-            if compensationBlank1:
-                if not isHeaderAppended:
-                    result.append(g_settings.htmlTemplates.format(b'SeniorityAwardsCompensationHeader'))
-                    isHeaderAppended = True
-                campaignKey = 1
-                sacoinsCount = compensationBlank1.get(b'bonus', {}).get(b'amount', 1)
-                result.append(cls.__makeQuestsAchieve(b'SeniorityAwardsSacoinCompensation', item=cls.__getFreeSheetTitle(campaignKey), sacoins=str(sacoinsCount)))
-            compensationBlank2 = data.get(b'meta', {}).get(b'compensation_token:blank_2')
-            if compensationBlank2:
-                if not isHeaderAppended:
-                    result.append(g_settings.htmlTemplates.format(b'SeniorityAwardsCompensationHeader'))
-                    isHeaderAppended = True
-                campaignKey = 2
-                sacoinsCount = compensationBlank2.get(b'bonus', {}).get(b'amount', 1)
-                result.append(cls.__makeQuestsAchieve(b'SeniorityAwardsSacoinCompensation', item=cls.__getFreeSheetTitle(campaignKey), sacoins=str(sacoinsCount)))
-            compensationOffer = data.get(b'tokens', {}).get(b'compensation_token:offer')
-            if compensationOffer:
-                if not isHeaderAppended:
-                    result.append(g_settings.htmlTemplates.format(b'SeniorityAwardsCompensationHeader'))
-                    isHeaderAppended = True
-                credits = first(compensationOffer.get(b'extItems', [{}])).get(b'bonus', {}).get(b'amount')
-                count = compensationOffer.get(b'count', 1)
-                if credits:
-                    result.extend([ cls.__makeQuestsAchieve(b'SeniorityAwardsCreditsCompensation', item=backport.text(R.strings.seniority_awards.vehicle_offer.title()), credits=str(credits)) for _ in range(count)
-                                  ])
-
-    @classmethod
-    def __getFreeSheetTitle(cls, campaignID):
-        return backport.text(R.strings.seniority_awards.personalMissions.freeSheet.title(), campaignName=backport.text(R.strings.personal_missions.campaignTitle.dyn((b'c_{}').format(campaignID))()))
-
-    @classmethod
-    def __makeQuestsAchieve(cls, key, **kwargs):
-        return g_settings.htmlTemplates.format(key, kwargs)

@@ -28,6 +28,8 @@ package net.wg.gui.battle.views.vehicleMarkers
          "supportingAlly":VehicleMarkersLinkages.ACTION_SUPPORTING_ALLY,
          "supportingYou":VehicleMarkersLinkages.ACTION_SUPPORTING_YOU,
          "attack":VehicleMarkersLinkages.ACTION_ATTACK,
+         "defend":VehicleMarkersLinkages.ACTION_DEFEND,
+         "defendSender":VehicleMarkersLinkages.ACTION_DEFEND_SENDER,
          "attackAlternative":VehicleMarkersLinkages.ACTION_ATTACK_ALTERNATIVE,
          "supportingAllyAlternative":VehicleMarkersLinkages.ACTION_SUPPORTING_ALLY_ALTERNATIVE,
          "goingToAlternative":VehicleMarkersLinkages.ACTION_GOING_TO,

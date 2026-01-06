@@ -20,6 +20,24 @@ msgstr "Пасада"
 msgid "ClanListWindow/table/weekMining"
 msgstr "За тыдзень"
 
+msgid "battleModifiers/body"
+msgstr ""
+"Изменяет некоторые параметры всей техники, участвующей в сражениях Укрепрайона. Работает в следующих режимах: %(battleModifiersQueue)s.\n"
+"\n"
+"Чтобы увидеть актуальные значения, вступите в соответствующий отряд или создайте его."
+
+msgid "battleModifiers/fortBattle"
+msgstr "Наступления"
+
+msgid "battleModifiers/sortie"
+msgstr "Вылазки %(level)s"
+
+msgid "battleModifiers/title"
+msgstr "Модификатор Укрепрайона"
+
+msgid "battleModifiersGM/title"
+msgstr "Модификатор Глобальной карты"
+
 msgid "battleQueue/clanPosition"
 msgstr "Пазіцыя: %(position)s"
 
@@ -45,6 +63,9 @@ msgid "disconnected/WarningDescriptionRoaming"
 msgstr ""
 "У роўмінгу Умацаваны раён недаступны. Каб даступіцца да Умацаванага раёна, "
 "перайдзіце ў свой рэгіён."
+
+msgid "fortBattleRoom/freezeJournal"
+msgstr "К разморозке техники"
 
 msgid "fortBattleRoom/listHeader/clanPlayers"
 msgstr "Члены клана"
@@ -399,10 +420,10 @@ msgid "strongholdtooltips/fortTitle"
 msgstr "Наступленне з %(direction)s плацдарма"
 
 msgid "strongholdtooltips/hours"
-msgstr "гадз"
+msgstr "ч."
 
 msgid "strongholdtooltips/minuts"
-msgstr "хв"
+msgstr "мин."
 
 msgid "strongholdtooltips/sortieTitle"
 msgstr "Вылазка ў %(level)s дывізіёне"

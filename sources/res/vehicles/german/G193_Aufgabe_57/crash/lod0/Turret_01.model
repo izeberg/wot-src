@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<visibilityBox>
+		<min>-1.438906 0.018986 -2.119292</min>
+		<max>1.470572 1.219447 1.803291</max>
+	</visibilityBox>
+	<parent>vehicles/german/G193_Aufgabe_57/crash/lod1/Turret_01</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/german/G193_Aufgabe_57/crash/lod0/Turret_01</nodefullVisual>
+</root>

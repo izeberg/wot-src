@@ -5,6 +5,7 @@ from gui.shared.utils.requesters import REQ_CRITERIA
 from helpers import dependency
 from skeletons.gui.shared import IItemsCache
 from soft_exception import SoftException
+from shared_utils import first
 if typing.TYPE_CHECKING:
     from typing import Optional, Tuple, Union
     from gui.shared.gui_items.Vehicle import Vehicle
@@ -176,6 +177,14 @@ class VehicleRequirements(ConditionsParser):
 
         self.forEachNodeInTree(handler)
         return False not in results
+
+    def getAvailableVehiclesCD(self):
+        vehicleDescr = self.getConditions().find('vehicleDescr')
+        vehicleTypes = first(vehicleDescr.parseFilters())
+        if vehicleTypes:
+            return map(int, vehicleTypes)
+        else:
+            return
 
     def getSuitableVehicles(self):
         if self._suitableVehicles is None:

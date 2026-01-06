@@ -17,6 +17,9 @@ msgstr "Боеўкладка"
 msgid "autoShootFlameGun/name"
 msgstr "Цяжкія агнямёты"
 
+msgid "autoShootGun/name"
+msgstr "Автоматическое орудие"
+
 msgid "battleAbility/name"
 msgstr "Баявы рэзерв"
 
@@ -100,6 +103,12 @@ msgstr "Дэколі"
 
 msgid "customization/plural/style"
 msgstr "Стылі"
+
+msgid "customization/plural/style/2d"
+msgstr "2D-стили"
+
+msgid "customization/plural/style/3d"
+msgstr "3D-стили"
 
 msgid "customization/projectionDecal"
 msgstr "Дэколь"
@@ -189,10 +198,10 @@ msgid "shell/kinds/ARMOR_PIERCING_CR"
 msgstr "Падкаліберны"
 
 msgid "shell/kinds/ARMOR_PIERCING_CR_DF"
-msgstr "НУРС бронебойный подкалиберный"
+msgstr "НКРС бранябойны падкаліберны"
 
 msgid "shell/kinds/ARMOR_PIERCING_DF"
-msgstr "НУРС бронебойный"
+msgstr "НКРС бранябойны"
 
 msgid "shell/kinds/ARMOR_PIERCING_FSDS"
 msgstr "Бранябойны апераны падкаліберны"
@@ -204,7 +213,7 @@ msgid "shell/kinds/ARMOR_PIERCING_HE"
 msgstr "Бранябойны каморны"
 
 msgid "shell/kinds/ARMOR_PIERCING_HE_DF"
-msgstr "НУРС бронебойный каморный"
+msgstr "НКРС бранябойны каморны"
 
 msgid "shell/kinds/FLAME"
 msgstr "Агнямётная сумесь"
@@ -213,13 +222,13 @@ msgid "shell/kinds/HIGH_EXPLOSIVE"
 msgstr "Асколачна-фугасны"
 
 msgid "shell/kinds/HIGH_EXPLOSIVE_DF"
-msgstr "НУРС осколочно-фугасный"
+msgstr "НКРС асколачна-фугасны"
 
 msgid "shell/kinds/HOLLOW_CHARGE"
 msgstr "Кумулятыўны"
 
 msgid "shell/kinds/HOLLOW_CHARGE_DF"
-msgstr "НУРС кумулятивный"
+msgstr "НКРС кумулятыўны"
 
 msgid "shell/kindsAbbreviation/ARMOR_PIERCING"
 msgstr "ББ"

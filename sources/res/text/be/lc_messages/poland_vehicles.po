@@ -12,7 +12,7 @@ msgid "B_16_x2"
 msgstr "2x B-16"
 
 msgid "Chassis_01_Pl17_DS_PZlnz_SH"
-msgstr "DS PZіnż Huragan"
+msgstr "DS PZInż Huragan"
 
 msgid "Chassis_02_Pl22_CS_59_SH"
 msgstr "CS-59 Huragan"
@@ -712,7 +712,7 @@ msgstr "CS-52 C"
 
 msgid "Pl25_CS_52_C_descr"
 msgstr ""
-"Для замены машин Т-34-85 в Польше велись разработки нового среднего танка с использованием доступных достижений советской школы танкостроения и оригинальных решений. Один из вариантов предусматривал 100-мм пушку в башне от CS-52, однако в 1968 г. в стране развернули производство танков Т-55 и работу над новым проектом свернули. Не было изготовлено ни одного экземпляра.\n"
+"Для замены машин Т-34-85 в Польше велись разработки нового среднего танка с использованием доступных достижений советской школы танкостроения и оригинальных решений. Один из вариантов предусматривал 100-мм пушку в башне от CS-52, однако в 1968 году в стране развернули производство танков Т-55, и работы над новым проектом были остановлены. Не было изготовлено ни одного экземпляра.\n"
 "\n"
 "Характеристики машины могут быть изменены без компенсации."
 
@@ -867,6 +867,18 @@ msgstr "Żubr"
 
 msgid "Pl30_SDP_Wz58T"
 msgstr "Wz.58Т"
+
+msgid "Pl30_SDP_Wz58T_FL"
+msgstr "Wz.58Т ЛФ"
+
+msgid "Pl30_SDP_Wz58T_FL_long_special"
+msgstr "?empty?"
+
+msgid "Pl30_SDP_Wz58T_FL_short"
+msgstr "Wz.58Т ЛФ"
+
+msgid "Pl30_SDP_Wz58T_FL_short_special"
+msgstr "?empty?"
 
 msgid "Pl30_SDP_Wz58T_T"
 msgstr "Wz.58Т Test"
@@ -1167,7 +1179,7 @@ msgid "Turret_1_Pl18_BUGI"
 msgstr "B.U.G.I.-I"
 
 msgid "Turret_1_Pl18_BUGI_SH"
-msgstr "BUGі MH"
+msgstr "BUGI MH"
 
 msgid "Turret_1_Pl19_CS_52_LIS"
 msgstr "CS-52"
@@ -1591,6 +1603,9 @@ msgstr "85-175 mm AP"
 
 msgid "_175mm_APCR"
 msgstr "85-175 mm APCR"
+
+msgid "_175mm_HE"
+msgstr "85 mm PW-365"
 
 msgid "_175mm_armata_wz_65"
 msgstr "85/175мм wz.65"

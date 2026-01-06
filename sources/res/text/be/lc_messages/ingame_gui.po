@@ -197,6 +197,9 @@ msgstr "Боезапас пусты! Запытваю агонь па %(target)s
 msgid "chat_shortcuts/attack_enemy_with_SPG_reloading"
 msgstr "Атакую %(target)s! Перанабіваю яшчэ %(reloadTime)d с!"
 
+msgid "chat_shortcuts/attack_supply"
+msgstr "Поддержите огнём %(target)s!"
+
 msgid "chat_shortcuts/attacking_base"
 msgstr "Я буду захопліваць базу!"
 
@@ -205,6 +208,9 @@ msgstr "Я захопліваю базу %(strArg1)s!"
 
 msgid "chat_shortcuts/attacking_enemy"
 msgstr "Атакую %(target)s!"
+
+msgid "chat_shortcuts/attacking_supply"
+msgstr "Атакую объект %(target)s!"
 
 msgid "chat_shortcuts/attention_to_base_atk"
 msgstr "Захапіце базу!"
@@ -239,11 +245,17 @@ msgstr "Увага на пазіцыю!"
 msgid "chat_shortcuts/attention_to_position_gridInfo"
 msgstr "Увага на %(gridId)s"
 
+msgid "chat_shortcuts/defend_supply"
+msgstr "Защищайте объект %(target)s!"
+
 msgid "chat_shortcuts/defending_base"
 msgstr "Я буду бараніць базу!"
 
 msgid "chat_shortcuts/defending_base_numbered"
 msgstr "Я абараняю базу %(strArg1)s!"
+
+msgid "chat_shortcuts/defending_supply"
+msgstr "Я буду защищать объект %(target)s!"
 
 msgid "chat_shortcuts/global_msg/atk/focus_hq"
 msgstr "Знішчайце цэлі!"
@@ -324,6 +336,9 @@ msgstr "Наводжу на пазіцыю. Перанабіваю яшчэ %(re
 
 msgid "chat_shortcuts/spg_aim_area_reloading_gridInfo"
 msgstr "Наводжу на %(gridId)s. Перанабіваю яшчэ %(reloadTime)d с!"
+
+msgid "chat_shortcuts/supply_self_repair"
+msgstr "Объект %(target)s на ремонте!"
 
 msgid "chat_shortcuts/supporting_ally"
 msgstr "%(target)s, я дапамагу табе!"
@@ -1048,6 +1063,9 @@ msgstr "Пірометр недаступны: танк перакулены."
 msgid "player_messages/ALLY_HIT"
 msgstr "Траплянне ў хаўрусніка %(entity)s!"
 
+msgid "player_messages/ALLY_HIT_SUPPLY"
+msgstr "Попадание в союзный объект %(entity)s!"
+
 msgid "player_messages/COMBAT_BR_EQUIPMENT_READY"
 msgstr "Гатова да выкарыстання: [%(equipment)s]"
 
@@ -1398,6 +1416,9 @@ msgstr "%(attacker)s знішчыў %(target)s (Агнявая падтрымк�
 msgid "player_messages/DEATH_FROM_SHOT_ALLY_ENEMY_POI"
 msgstr "%(attacker)s знішчыў %(target)s (Міннае поле)."
 
+msgid "player_messages/DEATH_FROM_SHOT_ALLY_ENEMY_SUPPLY"
+msgstr "%(attacker)s уничтожил объект %(target)s!"
+
 msgid "player_messages/DEATH_FROM_SHOT_ALLY_SUICIDE"
 msgstr "Хаўруснік %(target)s знішчыў сам сябе."
 
@@ -1421,6 +1442,9 @@ msgstr "%(attacker)s знішчыў %(target)s (Агнявая падтрымк�
 
 msgid "player_messages/DEATH_FROM_SHOT_ENEMY_ALLY_POI"
 msgstr "%(attacker)s знішчыў %(target)s (Міннае поле)."
+
+msgid "player_messages/DEATH_FROM_SHOT_ENEMY_ALLY_SUPPLY"
+msgstr "%(attacker)s уничтожил объект %(target)s!"
 
 msgid "player_messages/DEATH_FROM_SHOT_ENEMY_ENEMY"
 msgstr "Супраціўнік %(attacker)s знішчыў супраціўніка %(target)s."
@@ -1466,6 +1490,21 @@ msgstr "%(target)s знішчаны"
 
 msgid "player_messages/DEATH_FROM_SHOT_SELF_ENEMY_POI"
 msgstr "%(target)s знішчаны"
+
+msgid "player_messages/DEATH_FROM_SHOT_SELF_ENEMY_SUPPLY"
+msgstr "Объект %(target)s уничтожен!"
+
+msgid "player_messages/DEATH_FROM_SHOT_SUPPLY_ALLY_ENEMY"
+msgstr "%(target)s уничтожен объектом %(attacker)s!"
+
+msgid "player_messages/DEATH_FROM_SHOT_SUPPLY_ALLY_ENEMY_SUPPLY"
+msgstr "Объект %(attacker)s уничтожил объект %(target)s!"
+
+msgid "player_messages/DEATH_FROM_SHOT_SUPPLY_ENEMY_ALLY"
+msgstr "%(target)s уничтожен объектом %(attacker)s!"
+
+msgid "player_messages/DEATH_FROM_SHOT_SUPPLY_ENEMY_ALLY_SUPPLY"
+msgstr "Объект %(target)s уничтожен объектом %(attacker)s!"
 
 msgid "player_messages/DEATH_FROM_STATIC_DEATH_ZONE_ALLY_SUICIDE"
 msgstr "Хаўруснік %(target)s знішчаны смяротнай зонай."
@@ -1585,6 +1624,18 @@ msgstr "База%s супраціўніка захоплена!"
 
 msgid "player_messages/enemy_team_name"
 msgstr "Праціўнік"
+
+msgid "player_messages/epic_ally_base_captured_by_notification"
+msgstr "Захват нашей базы%s %s (%d)"
+
+msgid "player_messages/epic_ally_base_captured_notification"
+msgstr "Наша база%s %s захвачена!"
+
+msgid "player_messages/epic_enemy_base_captured_by_notification"
+msgstr "Захват базы%s противника %s (%d)"
+
+msgid "player_messages/epic_enemy_base_captured_notification"
+msgstr "База%s %s противника захвачена!"
 
 msgid "player_messages/poi_equipment_used_by_ally"
 msgstr "Хаўруснік %(name)s прымяніў тактычную звычку «%(equipment)s»"
@@ -1821,6 +1872,9 @@ msgstr "Машына знішчана авіяўдарам"
 
 msgid "postmortem_messages/DEATH_FROM_STATIC_DEATH_ZONE_SELF_SUICIDE"
 msgstr "Машына знішчана смяротнай зонай"
+
+msgid "postmortem_messages/DEATH_FROM_SUPPLY"
+msgstr "Машина уничтожена выстрелом объекта поддержки"
 
 msgid "postmortem_messages/DEATH_FROM_THUNDER_STRIKE"
 msgstr "Машына знішчана Электрычным разрадам."
@@ -2769,10 +2823,10 @@ msgid "shells_kinds/ARMOR_PIERCING_CR"
 msgstr "%(caliber)s-мм бранябойны падкаліберны снарад %(userString)s"
 
 msgid "shells_kinds/ARMOR_PIERCING_CR_DF"
-msgstr "%(caliber)s мм бронебойный НУРС %(userString)s"
+msgstr "%(caliber)s мм бранябойны НКРС %(userString)s"
 
 msgid "shells_kinds/ARMOR_PIERCING_DF"
-msgstr "%(caliber)s мм бронебойный НУРС %(userString)s"
+msgstr "%(caliber)s мм бранябойны НКРС %(userString)s"
 
 msgid "shells_kinds/ARMOR_PIERCING_FSDS"
 msgstr "%(caliber)s мм БАПС %(userString)s"
@@ -2781,7 +2835,7 @@ msgid "shells_kinds/ARMOR_PIERCING_HE"
 msgstr "%(caliber)s-мм бранябойны каморны снарад %(userString)s"
 
 msgid "shells_kinds/ARMOR_PIERCING_HE_DF"
-msgstr "%(caliber)s мм бронебойный НУРС %(userString)s"
+msgstr "%(caliber)s мм бранябойны НКРС %(userString)s"
 
 msgid "shells_kinds/FLAME"
 msgstr "Агнямётная сумесь %(userString)s"
@@ -2790,25 +2844,31 @@ msgid "shells_kinds/HIGH_EXPLOSIVE"
 msgstr "%(caliber)s-мм асколачна-фугасны снарад %(userString)s"
 
 msgid "shells_kinds/HIGH_EXPLOSIVE_DF"
-msgstr "%(caliber)s мм осколочно-фугасный НУРС %(userString)s"
+msgstr "%(caliber)s мм асколачна-фугасны НКРС %(userString)s"
 
 msgid "shells_kinds/HOLLOW_CHARGE"
 msgstr "%(caliber)s-мм кумулятыўны снарад %(userString)s"
 
 msgid "shells_kinds/HOLLOW_CHARGE_DF"
-msgstr "%(caliber)s мм кумулятивный НУРС %(userString)s"
+msgstr "%(caliber)s мм кумулятыўны НКРС %(userString)s"
 
 msgid "shells_kinds/params/damage"
 msgstr "Сярэднія пашкоджанні: %(value)s адз."
 
+msgid "shells_kinds/params/damagePerCassete"
+msgstr "Средний урон за ленту: %(value)s ед."
+
 msgid "shells_kinds/params/damagePerSecond"
 msgstr "Пашкоджанні за секунду: %(value)s адз."
+
+msgid "shells_kinds/params/damagePerShot"
+msgstr "Средний урон снаряда: %(value)s ед."
 
 msgid "shells_kinds/params/damageRange"
 msgstr "Пашкоджанні снарада: %(value)s адз."
 
 msgid "shells_kinds/params/distanceFactorPiercingPower"
-msgstr "Бронепробиваемость: %(value)s мм"
+msgstr "Бронепрабівальнасць: %(value)s мм"
 
 msgid "shells_kinds/params/explosionRadius"
 msgstr "Радыус паражэння: %(value)s м"

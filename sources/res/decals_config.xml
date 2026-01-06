@@ -31,37 +31,37 @@
 			<atlas>
 				<initialWidth>512</initialWidth>
 				<initialHeight>512</initialHeight>
-				<format>DXT5</format>
+				<format>BC3_UNORM</format>
 				<constrains>
 					<minWidth>256</minWidth>
 					<minHeight>256</minHeight>
 					<maxWidth>1024</maxWidth>
 					<maxHeight>1024</maxHeight>
-					<format>DXT5</format>
+					<format>BC3_UNORM</format>
 				</constrains>
 			</atlas>
 			<atlas>
 				<initialWidth>512</initialWidth>
 				<initialHeight>512</initialHeight>
-				<format>DXT5</format>
+				<format>BC3_UNORM</format>
 				<constrains>
 					<minWidth>256</minWidth>
 					<minHeight>256</minHeight>
 					<maxWidth>1024</maxWidth>
 					<maxHeight>1024</maxHeight>
-					<format>DXT5</format>
+					<format>BC3_UNORM</format>
 				</constrains>
 			</atlas>
 			<atlas>
 				<initialWidth>512</initialWidth>
 				<initialHeight>512</initialHeight>
-				<format>DXT5</format>
+				<format>BC3_UNORM</format>
 				<constrains>
 					<minWidth>256</minWidth>
 					<minHeight>256</minHeight>
 					<maxWidth>1024</maxWidth>
 					<maxHeight>1024</maxHeight>
-					<format>DXT5</format>
+					<format>BC3_UNORM</format>
 				</constrains>
 			</atlas>
 		</type>
@@ -70,13 +70,13 @@
 			<atlas>
 				<initialWidth>512</initialWidth>
 				<initialHeight>512</initialHeight>
-				<format>DXT1</format>
+				<format>BC1_UNORM</format>
 				<constrains>
 					<minWidth>128</minWidth>
 					<minHeight>128</minHeight>
 					<maxWidth>512</maxWidth>
 					<maxHeight>512</maxHeight>
-					<format>DXT1</format>
+					<format>BC1_UNORM</format>
 				</constrains>
 			</atlas>
 		</type>
@@ -113,44 +113,44 @@
 			<atlas>
 				<initialWidth>512</initialWidth>
 				<initialHeight>512</initialHeight>
-				<format>DXT5</format>
+				<format>BC3_UNORM</format>
 				<constrains>
 					<minWidth>256</minWidth>
 					<minHeight>256</minHeight>
 					<maxWidth>1024</maxWidth>
 					<maxHeight>1024</maxHeight>
-					<format>DXT5</format>
+					<format>BC3_UNORM</format>
 				</constrains>
 			</atlas>
 			<atlas>
 				<initialWidth>512</initialWidth>
 				<initialHeight>512</initialHeight>
-				<format>DXT5</format>
+				<format>BC3_UNORM</format>
 				<constrains>
 					<minWidth>256</minWidth>
 					<minHeight>256</minHeight>
 					<maxWidth>1024</maxWidth>
 					<maxHeight>1024</maxHeight>
-					<format>DXT5</format>
+					<format>BC3_UNORM</format>
 				</constrains>
 				<constrains>
 					<minWidth>128</minWidth>
 					<minHeight>128</minHeight>
 					<maxWidth>1024</maxWidth>
 					<maxHeight>1024</maxHeight>
-					<format>DXT5</format>
+					<format>BC3_UNORM</format>
 				</constrains>
 			</atlas>
 			<atlas>
 				<initialWidth>512</initialWidth>
 				<initialHeight>512</initialHeight>
-				<format>DXT5</format>
+				<format>BC3_UNORM</format>
 				<constrains>
 					<minWidth>256</minWidth>
 					<minHeight>256</minHeight>
 					<maxWidth>1024</maxWidth>
 					<maxHeight>1024</maxHeight>
-					<format>DXT5</format>
+					<format>BC3_UNORM</format>
 				</constrains>
 			</atlas>
 		</type>
@@ -241,37 +241,37 @@
 			<atlas>
 				<initialWidth>512</initialWidth>
 				<initialHeight>512</initialHeight>
-				<format>DXT5</format>
+				<format>BC3_UNORM</format>
 				<constrains>
 					<minWidth>64</minWidth>
 					<minHeight>64</minHeight>
 					<maxWidth>1024</maxWidth>
 					<maxHeight>1024</maxHeight>
-					<format>DXT5</format>
+					<format>BC3_UNORM</format>
 				</constrains>
 			</atlas>
 			<atlas>
 				<initialWidth>512</initialWidth>
 				<initialHeight>512</initialHeight>
-				<format>DXT5</format>
+				<format>BC3_UNORM</format>
 				<constrains>
 					<minWidth>64</minWidth>
 					<minHeight>64</minHeight>
 					<maxWidth>1024</maxWidth>
 					<maxHeight>1024</maxHeight>
-					<format>DXT5</format>
+					<format>BC3_UNORM</format>
 				</constrains>
 			</atlas>
 			<atlas>
 				<initialWidth>512</initialWidth>
 				<initialHeight>512</initialHeight>
-				<format>DXT5</format>
+				<format>BC3_UNORM</format>
 				<constrains>
 					<minWidth>64</minWidth>
 					<minHeight>64</minHeight>
 					<maxWidth>1024</maxWidth>
 					<maxHeight>1024</maxHeight>
-					<format>DXT5</format>
+					<format>BC3_UNORM</format>
 				</constrains>
 			</atlas>
 		</type>
@@ -313,13 +313,13 @@
 			<atlas>
 				<initialWidth>512</initialWidth>
 				<initialHeight>512</initialHeight>
-				<format>DXT1</format>
+				<format>BC1_UNORM</format>
 				<constrains>
 					<minWidth>128</minWidth>
 					<minHeight>128</minHeight>
 					<maxWidth>512</maxWidth>
 					<maxHeight>512</maxHeight>
-					<format>DXT1</format>
+					<format>BC1_UNORM</format>
 				</constrains>
 			</atlas>
 		</type>

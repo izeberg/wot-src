@@ -8,6 +8,8 @@ package net.wg.infrastructure.base.meta
       
       function changeGroupS(param1:int) : void;
       
+      function changeDisplayMethodS(param1:int) : void;
+      
       function setDefaultFilterS() : void;
       
       function setShowOnlyHistoricS(param1:Boolean) : void;
@@ -20,12 +22,16 @@ package net.wg.infrastructure.base.meta
       
       function setShowOnlyEditableStylesS(param1:Boolean) : void;
       
-      function onFilterChangeS(param1:int, param2:Boolean) : void;
+      function setShowOnlyProgressionStylesS(param1:Boolean) : void;
+      
+      function onFilterChangeS(param1:int, param2:int, param3:Boolean) : void;
       
       function onFormChangeS(param1:int, param2:Boolean) : void;
       
       function as_setData(param1:Object) : void;
       
       function as_enableDefBtn(param1:Boolean) : void;
+      
+      function as_updateCounter(param1:int, param2:int, param3:int) : void;
    }
 }

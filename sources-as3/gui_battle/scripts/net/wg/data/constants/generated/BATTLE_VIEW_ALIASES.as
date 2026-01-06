@@ -107,6 +107,12 @@ package net.wg.data.constants.generated
       
       public static const EPIC_REINFORCEMENT_PANEL:String = "epicReinforcementPanel";
       
+      public static const EPIC_PROGRESSION_CMP:String = "epicProgressionCmp";
+      
+      public static const EPIC_BATTLE_QUESTS:String = "epicBattleQuests";
+      
+      public static const EPIC_BATTLE_QUESTS_TAB:String = "epicBattleQuestsTab";
+      
       public static const RECOVERY_PANEL:String = "recoveryPanel";
       
       public static const EPIC_INGAME_RANK:String = "epicInGameRank";
@@ -188,6 +194,10 @@ package net.wg.data.constants.generated
       public static const PIERCING_DEBUG_PANEL:String = "piercingDebugPanel";
       
       public static const MAP_INFO_TIP:String = "mapInfoTip";
+      
+      public static const INFO_BATTLE_CONTEXT_HINT:String = "infoBattleContextHint";
+      
+      public static const SIXTH_SENSE_CONTEXT_HINT:String = "sixthSenseContextHint";
       
       public static const COMP7_TANK_CAROUSEL:String = "comp7BattleTankCarousel";
       

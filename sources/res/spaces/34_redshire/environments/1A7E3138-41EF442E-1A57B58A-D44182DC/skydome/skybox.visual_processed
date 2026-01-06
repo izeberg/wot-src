@@ -82,10 +82,6 @@
 						g_horizontalFlip
 						<Float>1.000000</Float>
 					</property>
-					<property>
-						g_useUncompressedSkybox
-						<Bool>false</Bool>
-					</property>
 				</material>
 				<groupOrigin>0.007034 0.000000 0.005043</groupOrigin>
 			</primitiveGroup>

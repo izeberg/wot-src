@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/russian/R231_Object_278/_skins/R231_Object_278_3Dst_01/normal/lod3/Chassis</parent>
+	<tank>true</tank>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.691581 0.000633 -3.548795</min>
+		<max>1.691581 1.063767 3.549497</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/russian/R231_Object_278/_skins/R231_Object_278_3Dst_01/normal/lod2/Chassis</nodefullVisual>
+</root>

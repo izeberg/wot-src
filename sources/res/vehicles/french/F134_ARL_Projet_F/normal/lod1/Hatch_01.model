@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<nodefullVisual>vehicles/french/F134_ARL_Projet_F/normal/lod1/Hatch_01</nodefullVisual>
 	<parent>vehicles/french/F134_ARL_Projet_F/normal/lod2/Hatch_01</parent>
 	<extent>64.000000</extent>
 	<visibilityBox>
-		<min>-0.121350 -0.109622 -0.134426</min>
-		<max>0.140809 0.327765 0.095667</max>
+		<min>-0.121350 -0.109622 -0.095667</min>
+		<max>0.140809 0.327765 0.134426</max>
 	</visibilityBox>
 	<tank>true</tank>
+	<nodefullVisual>vehicles/french/F134_ARL_Projet_F/normal/lod1/Hatch_01</nodefullVisual>
 </root>

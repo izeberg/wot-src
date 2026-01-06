@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/german/G00_Startgestell/crash/lod3/Hull</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.236086 -0.091886 -2.100966</min>
+		<max>1.094660 1.428780 0.920447</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/german/G00_Startgestell/crash/lod2/Hull</nodefullVisual>
+</root>

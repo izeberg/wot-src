@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/sweden/S36_VK_155_Projekt/normal/lod3/Hull</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.650000 -0.834488 -2.705616</min>
+		<max>1.650159 0.632688 3.797105</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/sweden/S36_VK_155_Projekt/normal/lod2/Hull</nodefullVisual>
+</root>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodelessVisual>vehicles/russian/R231_Object_278/_skins/R231_Object_278_3Dst_01/normal/lod2/Lamp_5</nodelessVisual>
+	<parent>vehicles/russian/R231_Object_278/_skins/R231_Object_278_3Dst_01/normal/lod3/Lamp_5</parent>
+	<extent>96.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>0.016385 0.783347 -1.088675</min>
+		<max>0.625729 1.039679 -0.957663</max>
+	</visibilityBox>
+</root>

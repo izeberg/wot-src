@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/russian/R235_KV_4_Fedorenko/normal/lod2/Hull</parent>
+	<tank>true</tank>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-2.020687 -0.836310 -4.162469</min>
+		<max>2.023039 1.082361 4.101107</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/russian/R235_KV_4_Fedorenko/normal/lod1/Hull</nodefullVisual>
+</root>

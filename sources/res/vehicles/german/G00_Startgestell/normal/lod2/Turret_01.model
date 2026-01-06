@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/german/G00_Startgestell/normal/lod3/Turret_01</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-0.344856 0.386946 -0.298599</min>
+		<max>0.414746 0.924024 0.231104</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/german/G00_Startgestell/normal/lod2/Turret_01</nodefullVisual>
+	<tank>true</tank>
+</root>

@@ -143,8 +143,6 @@ package
       
       public static const LOADINGDATA:String = "#waiting:loadingData";
       
-      public static const SYNCHRONIZEONBOARDINGREWARDS:String = "#waiting:synchronizeOnboardingRewards";
-      
       public static const TUTORIAL_CHAPTER_LOADING:String = "#waiting:tutorial-chapter-loading";
       
       public static const TUTORIAL_UPDATE_SCENE:String = "#waiting:tutorial-update-scene";
@@ -346,12 +344,6 @@ package
       public static const PARAGONS_LOADSELECTOR:String = "#waiting:paragons/loadSelector";
       
       public static const PARAGONS_SELECTREWARD:String = "#waiting:paragons/selectReward";
-      
-      public static const TAMAGOTCHIGIFT:String = "#waiting:tamagotchiGift";
-      
-      public static const LEADERBOARDREWARDS:String = "#waiting:leaderboardRewards";
-      
-      public static const ONBOARDINGMANDARINREWARD:String = "#waiting:onboardingMandarinReward";
        
       
       public function WAITING()

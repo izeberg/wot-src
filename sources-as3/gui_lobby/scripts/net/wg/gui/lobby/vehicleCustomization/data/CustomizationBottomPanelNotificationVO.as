@@ -6,8 +6,6 @@ package net.wg.gui.lobby.vehicleCustomization.data
    {
        
       
-      public var switchersCounter:int = 0;
-      
       public var tabsCounters:Array = null;
       
       public function CustomizationBottomPanelNotificationVO(param1:Object = null)

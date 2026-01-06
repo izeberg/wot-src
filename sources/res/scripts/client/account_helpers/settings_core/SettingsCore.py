@@ -4,6 +4,7 @@ from PlayerEvents import g_playerEvents
 from account_helpers.AccountSettings import AccountSettings
 from account_helpers.settings_core.ServerSettingsManager import ServerSettingsManager, SETTINGS_SECTIONS
 from account_helpers.settings_core.settings_constants import SPGAim, CONTOUR
+from account_helpers.settings_core.options import SettingType
 from adisp import adisp_process
 from debug_utils import LOG_DEBUG, LOG_ERROR
 from gui.Scaleform.locale.SETTINGS import SETTINGS
@@ -357,9 +358,9 @@ class SettingsCore(ISettingsCore):
          (
           GRAPHICS.GRAPHICS_QUALITY_HD_SD_HIGH, options.GraphicsHigtQualityNote()),
          (
-          GRAPHICS.GAMMA_SETTING, options.ReadOnlySetting(lambda : SETTINGS.GAMMABTN_LABEL)),
+          GRAPHICS.GAMMA_SETTING, options.GlobalReadOnlySetting(lambda : SETTINGS.GAMMABTN_LABEL)),
          (
-          GRAPHICS.NATIVE_RESOLUTION, options.ReadOnlySetting(graphics.getNativeResolutionIndex)),
+          GRAPHICS.NATIVE_RESOLUTION, options.HardwareReadOnlySetting(graphics.getNativeResolutionIndex)),
          (
           GRAPHICS.COLOR_GRADING_TECHNIQUE, options.ColorGradingSetting(GRAPHICS.COLOR_GRADING_TECHNIQUE, True)),
          (
@@ -369,16 +370,18 @@ class SettingsCore(ISettingsCore):
          (
           GRAPHICS.SATURATION_CORRECTON, options.SaturationCorrectionSetting(True)),
          (
+          GRAPHICS.GAMMA, options.GammaSetting()),
+         (
           GRAPHICS.COLOR_FILTER_INTENSITY, options.ColorFilterIntensitySetting(True)),
          (
-          GRAPHICS.COLOR_FILTER_SETTING, options.ReadOnlySetting(lambda : SETTINGS.COLORCORRECTIONBTN_LABEL)),
+          GRAPHICS.COLOR_FILTER_SETTING, options.GlobalReadOnlySetting(lambda : SETTINGS.COLORCORRECTIONBTN_LABEL)),
          (
           GRAPHICS.COLOR_FILTER_IMAGES,
-          options.ReadOnlySetting(lambda : graphics.getGraphicSettingImages('COLOR_GRADING_TECHNIQUE'))),
+          options.GlobalReadOnlySetting(lambda : graphics.getGraphicSettingImages('COLOR_GRADING_TECHNIQUE'))),
          (
           GRAPHICS.FOV, options.FOVSetting(GRAPHICS.FOV, storage=FOV_SETTINGS_STORAGE)),
          (
-          GRAPHICS.GRAPHICS_SETTINGS_LIST, options.ReadOnlySetting(graphics.GRAPHICS_SETTINGS.ALL)),
+          GRAPHICS.GRAPHICS_SETTINGS_LIST, options.HardwareReadOnlySetting(graphics.GRAPHICS_SETTINGS.ALL)),
          (
           GRAPHICS.INTERFACE_SCALE, options.InterfaceScaleSetting(GRAPHICS.INTERFACE_SCALE)),
          (
@@ -390,7 +393,7 @@ class SettingsCore(ISettingsCore):
          (
           GRAPHICS.COLOR_BLIND, options.AccountDumpSetting(GRAPHICS.COLOR_BLIND, GRAPHICS.COLOR_BLIND)),
          (
-          GRAPHICS.TESSELLATION_SUPPORTED, options.ReadOnlySetting(BigWorld.isTesselationSupported)),
+          GRAPHICS.TESSELLATION_SUPPORTED, options.HardwareReadOnlySetting(BigWorld.isTesselationSupported)),
          (
           GRAPHICS.IS_SD_QUALITY, options.GraphicsQuality()),
          (
@@ -398,7 +401,7 @@ class SettingsCore(ISettingsCore):
          (
           SOUND.SOUND_QUALITY, options.SoundQualitySetting()),
          (
-          SOUND.SOUND_QUALITY_VISIBLE, options.ReadOnlySetting(options.SoundQualitySetting.isAvailable)),
+          SOUND.SOUND_QUALITY_VISIBLE, options.HardwareReadOnlySetting(options.SoundQualitySetting.isAvailable)),
          (
           SOUND.SUBTITLES, options.AccountSetting(SOUND.SUBTITLES)),
          (
@@ -486,7 +489,7 @@ class SettingsCore(ISettingsCore):
           CONTROLS.KEYBOARD, options.KeyboardSettings()),
          (
           CONTROLS.KEYBOARD_IMPORTANT_BINDS,
-          options.ReadOnlySetting(options.KeyboardSettings.getKeyboardImportantBinds)),
+          options.GlobalReadOnlySetting(options.KeyboardSettings.getKeyboardImportantBinds)),
          (
           AIM.ARCADE,
           options.AimSetting(AIM.ARCADE, storage=AIM_SETTINGS_STORAGE)),
@@ -786,6 +789,11 @@ class SettingsCore(ISettingsCore):
         for storage in self.__storages.values():
             if storage not in self.__disabledStorages:
                 storage.clear()
+
+    def getSettings(self, excludedNames=None):
+        return (
+         self.__options.fetch(SettingType.GLOBAL, excludedNames),
+         self.__options.fetch(SettingType.LOCAL, excludedNames))
 
     def setOverrideSettings(self, overrideDict, disableStorages):
         if self.__overriddenUserSettings is not None:

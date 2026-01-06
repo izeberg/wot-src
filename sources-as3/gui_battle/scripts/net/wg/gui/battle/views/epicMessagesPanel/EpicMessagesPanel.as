@@ -4,12 +4,14 @@ package net.wg.gui.battle.views.epicMessagesPanel
    import net.wg.data.constants.generated.GAME_MESSAGES_CONSTS;
    import net.wg.gui.battle.views.epicMessagesPanel.components.BaseCaptureMessage;
    import net.wg.gui.battle.views.epicMessagesPanel.components.BaseContestedMessage;
+   import net.wg.gui.battle.views.epicMessagesPanel.components.CommonSubElementMessage;
    import net.wg.gui.battle.views.epicMessagesPanel.components.FirstGeneralRankReachedMessage;
    import net.wg.gui.battle.views.epicMessagesPanel.components.HeadquarterAttackedMessage;
    import net.wg.gui.battle.views.epicMessagesPanel.components.HeadquarterDestroyedMessage;
    import net.wg.gui.battle.views.epicMessagesPanel.components.OverTimeMessage;
-   import net.wg.gui.battle.views.epicMessagesPanel.components.RankUpMessage;
    import net.wg.gui.battle.views.epicMessagesPanel.components.RetreatMessage;
+   import net.wg.gui.battle.views.epicMessagesPanel.components.SupplyActiveMessage;
+   import net.wg.gui.battle.views.epicMessagesPanel.components.SupplyUnlockMessage;
    import net.wg.gui.battle.views.epicMessagesPanel.components.TimeRemainingMessage;
    import net.wg.gui.battle.views.epicMessagesPanel.components.UnlockTankLevelMessage;
    import net.wg.gui.battle.views.gameMessagesPanel.GameMessagesPanel;
@@ -37,6 +39,9 @@ package net.wg.gui.battle.views.epicMessagesPanel
          msgLinkageTypeDict[GAME_MESSAGES_CONSTS.BASE_CONTESTED_POSITIVE] = Linkages.BASE_CONTESTED_POSITIVE_UI_LINKAGE;
          msgLinkageTypeDict[GAME_MESSAGES_CONSTS.BASE_CONTESTED] = Linkages.BASE_CONTESTED_UI_LINKAGE;
          msgLinkageTypeDict[GAME_MESSAGES_CONSTS.RANK_UP] = Linkages.RANK_UP_UI_LINKAGE;
+         msgLinkageTypeDict[GAME_MESSAGES_CONSTS.SUPPLY_UNLOCKED] = Linkages.SUPPLY_UI_LINKAGE;
+         msgLinkageTypeDict[GAME_MESSAGES_CONSTS.SUPPLY_ACTIVE] = Linkages.SUPPLY_ACTIVE_UI_LINKAGE;
+         msgLinkageTypeDict[GAME_MESSAGES_CONSTS.SUPPLY_ACTIVE_POSITIVE] = Linkages.SUPPLY_ACTIVE_POSITIVE_UI_LINKAGE;
          msgLinkageTypeDict[GAME_MESSAGES_CONSTS.OBJECTIVE_DESTROYED_POSITIVE] = Linkages.OBJECTIVE_DESTROYED_POSITIVE_UI_LINKAGE;
          msgLinkageTypeDict[GAME_MESSAGES_CONSTS.OBJECTIVE_DESTROYED] = Linkages.OBJECTIVE_DESTROYED_UI_LINKAGE;
          msgLinkageTypeDict[GAME_MESSAGES_CONSTS.RETREAT] = Linkages.RETREAT_UI_LINKAGE;
@@ -51,7 +56,10 @@ package net.wg.gui.battle.views.epicMessagesPanel
          msgClassTypeDict[GAME_MESSAGES_CONSTS.BASE_CAPTURED] = BaseCaptureMessage;
          msgClassTypeDict[GAME_MESSAGES_CONSTS.BASE_CONTESTED_POSITIVE] = BaseContestedMessage;
          msgClassTypeDict[GAME_MESSAGES_CONSTS.BASE_CONTESTED] = BaseContestedMessage;
-         msgClassTypeDict[GAME_MESSAGES_CONSTS.RANK_UP] = RankUpMessage;
+         msgClassTypeDict[GAME_MESSAGES_CONSTS.RANK_UP] = CommonSubElementMessage;
+         msgClassTypeDict[GAME_MESSAGES_CONSTS.SUPPLY_UNLOCKED] = SupplyUnlockMessage;
+         msgClassTypeDict[GAME_MESSAGES_CONSTS.SUPPLY_ACTIVE] = SupplyActiveMessage;
+         msgClassTypeDict[GAME_MESSAGES_CONSTS.SUPPLY_ACTIVE_POSITIVE] = SupplyActiveMessage;
          msgClassTypeDict[GAME_MESSAGES_CONSTS.OBJECTIVE_DESTROYED_POSITIVE] = HeadquarterDestroyedMessage;
          msgClassTypeDict[GAME_MESSAGES_CONSTS.OBJECTIVE_DESTROYED] = HeadquarterDestroyedMessage;
          msgClassTypeDict[GAME_MESSAGES_CONSTS.RETREAT] = RetreatMessage;

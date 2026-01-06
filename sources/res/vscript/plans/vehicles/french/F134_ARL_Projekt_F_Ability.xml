@@ -476,6 +476,33 @@
 			</block>
 			<block>
 				<class>Variable</class>
+				<id>Variable_16</id>
+				<params>
+					<param>
+						turret_GO
+						<name>Variable Name</name>
+						<type>StringT</type>
+					</param>
+					<param>
+						GameObjectT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+					<param>
+						false
+						<name>External Init</name>
+						<type>BoolT</type>
+					</param>
+					<param>
+						false
+						<name>Is Const</name>
+						<type>BoolT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>Variable</class>
 				<id>Variable_1</id>
 				<params>
 					<param>
@@ -543,12 +570,6 @@
 				</slots>
 			</block>
 			<block>
-				<class>StartScript</class>
-				<id>StartScript_1</id>
-				<params/>
-				<slots/>
-			</block>
-			<block>
 				<class>SetVariable</class>
 				<id>SetVariable_14</id>
 				<buddy>Variable_9</buddy>
@@ -562,35 +583,15 @@
 				<slots/>
 			</block>
 			<block>
-				<class>SetVariable</class>
-				<id>SetVariable_1</id>
-				<buddy>Variable_1</buddy>
-				<params>
-					<param>
-						VehicleT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
+				<class>StartScript</class>
+				<id>StartScript_1</id>
+				<params/>
 				<slots/>
 			</block>
 			<block>
 				<class>SetVariable</class>
-				<id>SetVariable_3</id>
-				<buddy>Variable_2</buddy>
-				<params>
-					<param>
-						GameObjectT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>SetVariable</class>
-				<id>SetVariable_5</id>
-				<buddy>Variable_3</buddy>
+				<id>SetVariable_19</id>
+				<buddy>Variable_16</buddy>
 				<params>
 					<param>
 						GameObjectT
@@ -647,6 +648,45 @@
 						Animator.getDurationByName
 						<name>Component Type</name>
 						<type>StringT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>SetVariable</class>
+				<id>SetVariable_1</id>
+				<buddy>Variable_1</buddy>
+				<params>
+					<param>
+						VehicleT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>SetVariable</class>
+				<id>SetVariable_3</id>
+				<buddy>Variable_2</buddy>
+				<params>
+					<param>
+						GameObjectT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>SetVariable</class>
+				<id>SetVariable_5</id>
+				<buddy>Variable_3</buddy>
+				<params>
+					<param>
+						GameObjectT
+						<name>Variable Type</name>
+						<type>TypeT</type>
 					</param>
 				</params>
 				<slots/>
@@ -777,6 +817,21 @@
 					<slot>
 						<name>name</name>
 						<const>\hull_GO\</const>
+					</slot>
+					<slot>
+						<name>includingInactive</name>
+						<const>\true\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>FindFirstNode</class>
+				<id>FindFirstNode_6</id>
+				<params/>
+				<slots>
+					<slot>
+						<name>name</name>
+						<const>\turret_GO\</const>
 					</slot>
 					<slot>
 						<name>includingInactive</name>
@@ -1034,6 +1089,12 @@
 				<slots/>
 			</block>
 			<block>
+				<class>If</class>
+				<id>If_8</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
 				<class>SetVariable</class>
 				<id>SetVariable_2</id>
 				<buddy>Variable_13</buddy>
@@ -1058,10 +1119,21 @@
 				<slots/>
 			</block>
 			<block>
-				<class>If</class>
-				<id>If_8</id>
-				<params/>
-				<slots/>
+				<class>ComponentMethod</class>
+				<id>ComponentMethod_1</id>
+				<params>
+					<param>
+						Animator.start
+						<name>Component Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>arg#0</name>
+						<const>\0.000000\</const>
+					</slot>
+				</slots>
 			</block>
 			<block>
 				<class>GetVariable</class>
@@ -1092,6 +1164,19 @@
 				<class>GetVariable</class>
 				<id>GetVariable_1</id>
 				<buddy>Variable_2</buddy>
+				<params>
+					<param>
+						GameObjectT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>GetVariable</class>
+				<id>GetVariable_29</id>
+				<buddy>Variable_16</buddy>
 				<params>
 					<param>
 						GameObjectT
@@ -1286,6 +1371,18 @@
 				<slots/>
 			</block>
 			<block>
+				<class>ComponentMethod</class>
+				<id>ComponentMethod_11</id>
+				<params>
+					<param>
+						Animator.stop
+						<name>Component Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
 				<class>CompareIntegers</class>
 				<id>CompareIntegers_3</id>
 				<params/>
@@ -1325,6 +1422,19 @@
 				<class>GetVariable</class>
 				<id>GetVariable_9</id>
 				<buddy>Variable_2</buddy>
+				<params>
+					<param>
+						GameObjectT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>GetVariable</class>
+				<id>GetVariable_30</id>
+				<buddy>Variable_16</buddy>
 				<params>
 					<param>
 						GameObjectT
@@ -1589,6 +1699,12 @@
 				<output>value</output>
 			</connection>
 			<connection>
+				<from>ContextGetSelf_1</from>
+				<input>default</input>
+				<to>Variable_16</to>
+				<output>value</output>
+			</connection>
+			<connection>
 				<from>Choice_2</from>
 				<input>input</input>
 				<to>SetVariable_15</to>
@@ -1613,43 +1729,19 @@
 				<output>return</output>
 			</connection>
 			<connection>
-				<from>StartScript_1</from>
-				<input>input</input>
-				<to>SetVariable_1</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>GameObjectToVehicle_2</from>
-				<input>value</input>
-				<to>SetVariable_1</to>
-				<output>vehicle</output>
-			</connection>
-			<connection>
-				<from>SetVariable_1</from>
-				<input>input</input>
-				<to>SetVariable_3</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>FindFirstNode_1</from>
-				<input>value</input>
-				<to>SetVariable_3</to>
-				<output>node</output>
-			</connection>
-			<connection>
-				<from>SetVariable_3</from>
-				<input>input</input>
-				<to>SetVariable_5</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>FindFirstNode_2</from>
-				<input>value</input>
-				<to>SetVariable_5</to>
-				<output>node</output>
-			</connection>
-			<connection>
 				<from>SetVariable_5</from>
+				<input>input</input>
+				<to>SetVariable_19</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>FindFirstNode_6</from>
+				<input>value</input>
+				<to>SetVariable_19</to>
+				<output>node</output>
+			</connection>
+			<connection>
+				<from>SetVariable_19</from>
 				<input>input</input>
 				<to>SetVariable_4</to>
 				<output>out</output>
@@ -1709,6 +1801,42 @@
 				<output>value</output>
 			</connection>
 			<connection>
+				<from>StartScript_1</from>
+				<input>input</input>
+				<to>SetVariable_1</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>GameObjectToVehicle_2</from>
+				<input>value</input>
+				<to>SetVariable_1</to>
+				<output>vehicle</output>
+			</connection>
+			<connection>
+				<from>SetVariable_1</from>
+				<input>input</input>
+				<to>SetVariable_3</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>FindFirstNode_1</from>
+				<input>value</input>
+				<to>SetVariable_3</to>
+				<output>node</output>
+			</connection>
+			<connection>
+				<from>SetVariable_3</from>
+				<input>input</input>
+				<to>SetVariable_5</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>FindFirstNode_2</from>
+				<input>value</input>
+				<to>SetVariable_5</to>
+				<output>node</output>
+			</connection>
+			<connection>
 				<from>SetVariable_9</from>
 				<input>input</input>
 				<to>Choice_2</to>
@@ -1766,6 +1894,12 @@
 				<from>ContextGetSelf_1</from>
 				<input>gameObject</input>
 				<to>FindFirstNode_2</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>ContextGetSelf_1</from>
+				<input>gameObject</input>
+				<to>FindFirstNode_6</to>
 				<output>value</output>
 			</connection>
 			<connection>
@@ -1889,6 +2023,18 @@
 				<output>object</output>
 			</connection>
 			<connection>
+				<from>ComponentMethod_1</from>
+				<input>input</input>
+				<to>If_8</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>IsUnderwater_1</from>
+				<input>value</input>
+				<to>If_8</to>
+				<output>isUnderwater</output>
+			</connection>
+			<connection>
 				<from>Choice_1</from>
 				<input>input</input>
 				<to>SetVariable_2</to>
@@ -1914,15 +2060,15 @@
 			</connection>
 			<connection>
 				<from>ActivateGameObject_1</from>
-				<input>input</input>
-				<to>If_8</to>
+				<input>in</input>
+				<to>ComponentMethod_1</to>
 				<output>out</output>
 			</connection>
 			<connection>
-				<from>IsUnderwater_1</from>
-				<input>value</input>
-				<to>If_8</to>
-				<output>isUnderwater</output>
+				<from>GetVariable_29</from>
+				<input>gameObject</input>
+				<to>ComponentMethod_1</to>
+				<output>value</output>
 			</connection>
 			<connection>
 				<from>If_4</from>
@@ -2051,6 +2197,18 @@
 				<output>value</output>
 			</connection>
 			<connection>
+				<from>DeactivateGameObject_1</from>
+				<input>in</input>
+				<to>ComponentMethod_11</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>GetVariable_30</from>
+				<input>gameObject</input>
+				<to>ComponentMethod_11</to>
+				<output>value</output>
+			</connection>
+			<connection>
 				<from>GetVariable_12</from>
 				<input>a</input>
 				<to>CompareIntegers_3</to>
@@ -2063,7 +2221,7 @@
 				<output>true</output>
 			</connection>
 			<connection>
-				<from>DeactivateGameObject_1</from>
+				<from>ComponentMethod_11</from>
 				<input>in</input>
 				<to>Macro_4</to>
 				<output>out</output>

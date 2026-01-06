@@ -31,6 +31,8 @@ package net.wg.gui.rally.vo
       
       private var _canInvite:Boolean = false;
       
+      private var _canUnfreeze:Boolean = false;
+      
       public function RallyShortVO(param1:Object)
       {
          super(param1);
@@ -217,6 +219,16 @@ package net.wg.gui.rally.vo
       public function set canInvite(param1:Boolean) : void
       {
          this._canInvite = param1;
+      }
+      
+      public function get canUnfreeze() : Boolean
+      {
+         return this._canUnfreeze;
+      }
+      
+      public function set canUnfreeze(param1:Boolean) : void
+      {
+         this._canUnfreeze = param1;
       }
       
       public function get hasRestrictions() : Boolean

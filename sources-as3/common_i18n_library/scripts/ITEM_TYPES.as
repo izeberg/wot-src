@@ -49,6 +49,8 @@ package
       
       public static const AUTOSHOOTFLAMEGUN_NAME:String = "#item_types:autoShootFlameGun/name";
       
+      public static const AUTOSHOOTGUN_NAME:String = "#item_types:autoShootGun/name";
+      
       public static const GUN_DESC:String = "#item_types:gun/desc";
       
       public static const GUN_TAGS:String = "#item_types:gun/tags";
@@ -300,6 +302,10 @@ package
       public static const CUSTOMIZATION_PLURAL_OUTFIT:String = "#item_types:customization/plural/outfit";
       
       public static const CUSTOMIZATION_PLURAL_STYLE:String = "#item_types:customization/plural/style";
+      
+      public static const CUSTOMIZATION_PLURAL_STYLE_2D:String = "#item_types:customization/plural/style/2d";
+      
+      public static const CUSTOMIZATION_PLURAL_STYLE_3D:String = "#item_types:customization/plural/style/3d";
       
       public static const CUSTOMIZATION_PLURAL_DECAL:String = "#item_types:customization/plural/decal";
       

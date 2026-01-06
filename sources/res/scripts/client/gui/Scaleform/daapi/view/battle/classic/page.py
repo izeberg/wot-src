@@ -60,7 +60,12 @@ class _ClassicComponentsConfig(ComponentsConfig):
          (
           BATTLE_CTRL_ID.AMMO,
           (
-           BATTLE_VIEW_ALIASES.PREBATTLE_AMMUNITION_PANEL, BATTLE_VIEW_ALIASES.CONSUMABLES_PANEL))), viewsConfig=(
+           BATTLE_VIEW_ALIASES.PREBATTLE_AMMUNITION_PANEL, BATTLE_VIEW_ALIASES.CONSUMABLES_PANEL)),
+         (
+          BATTLE_CTRL_ID.BATTLE_CONTEXT_HINTS,
+          (
+           BATTLE_VIEW_ALIASES.INFO_BATTLE_CONTEXT_HINT, BATTLE_VIEW_ALIASES.SIXTH_SENSE_CONTEXT_HINT,
+           BATTLE_VIEW_ALIASES.CONSUMABLES_PANEL))), viewsConfig=(
          (
           DynamicAliases.DRONE_MUSIC_PLAYER, drone_music_player.DroneMusicPlayer),
          (
@@ -222,6 +227,11 @@ class ClassicPage(SharedPage):
         if battleCtx.isPlayerObserver() and periodCtrl.getPeriod() in (ARENA_PERIOD.WAITING, ARENA_PERIOD.PREBATTLE):
             self._setComponentsVisibility(hidden={
              BATTLE_VIEW_ALIASES.DAMAGE_PANEL, BATTLE_VIEW_ALIASES.BATTLE_DAMAGE_LOG_PANEL})
+        hintsCtrl = self.sessionProvider.dynamic.battleContextHintsCtrl
+        if hintsCtrl is not None and hintsCtrl.isStarted():
+            self._setComponentsVisibility(visible={
+             BATTLE_VIEW_ALIASES.INFO_BATTLE_CONTEXT_HINT, BATTLE_VIEW_ALIASES.SIXTH_SENSE_CONTEXT_HINT})
+        return
 
     def _handleGUIToggled(self, event):
         if not self._fullStatsAlias or not self.as_isComponentVisibleS(self._fullStatsAlias):

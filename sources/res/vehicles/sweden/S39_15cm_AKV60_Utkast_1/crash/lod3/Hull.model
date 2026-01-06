@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/sweden/S39_15cm_AKV60_Utkast_1/crash/lod3/Hull</nodefullVisual>
+	<parent>vehicles/sweden/S39_15cm_AKV60_Utkast_1/crash/lod4/Hull</parent>
+	<extent>192.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.672629 -0.996944 -2.705366</min>
+		<max>1.669100 0.778472 3.246312</max>
+	</visibilityBox>
+</root>

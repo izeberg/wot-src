@@ -504,6 +504,9 @@ msgstr "За асаблівыя ўласцівасці машыны"
 msgid "details/calculations/directives"
 msgstr "Бонус ад эканамічнага настаўлення"
 
+msgid "details/calculations/distributedXP"
+msgstr "Надбавка за распределённый урон и очки захвата/защиты от объектов"
+
 msgid "details/calculations/event"
 msgstr "Бонус за баявыя задачы і падзеі"
 
@@ -543,6 +546,9 @@ msgstr "Штраф за прычыненне пашкоджанняў хаўру
 msgid "details/calculations/friendlyFireRankedXpPenalty"
 msgstr "Штраф за дэзарыентаванне або пашкоджанне хаўруснікаў"
 
+msgid "details/calculations/frontlineXP"
+msgstr "Надбавка за выполненные задачи"
+
 msgid "details/calculations/heavyTrucks"
 msgstr "Велікагрузны транспарт"
 
@@ -564,9 +570,6 @@ msgstr "Узнагарода за першую перамогу за дзень"
 
 msgid "details/calculations/multiplierInfo/vehicleSeparator"
 msgstr "• "
-
-msgid "details/calculations/newYear"
-msgstr "Новогодний бонус"
 
 msgid "details/calculations/noPenalty"
 msgstr "За адважны супраціў"
@@ -608,9 +611,6 @@ msgstr "За тактычную падрыхтоўку"
 
 msgid "details/calculations/total"
 msgstr "Агулам:"
-
-msgid "details/calculations/vehicleBranch"
-msgstr "Новогодний бонус"
 
 msgid "details/calculations/xpRecord"
 msgstr "Налічана за бой (%(color_tag_open)sрэкорд%(color_tag_close)s)"
@@ -1028,6 +1028,12 @@ msgstr "\tз выкарыстаннем звычак"
 msgid "team/stats/labels_damageDealtRatio"
 msgstr "\tпашкоджанні, прычыненыя камандзе супраціўніка"
 
+msgid "team/stats/labels_damageFromSupplies"
+msgstr "Получено урона от объектов поддержки"
+
+msgid "team/stats/labels_damageToSupplies"
+msgstr "Нанесено урона по объектам поддержки"
+
 msgid "team/stats/labels_damagedKilled"
 msgstr "Пашкоджаныя/знішчаныя машыны супраціўніка"
 
@@ -1045,6 +1051,12 @@ msgstr "\tпа цэлях"
 
 msgid "team/stats/labels_directHitsReceived"
 msgstr "Атрыманыя траплянні"
+
+msgid "team/stats/labels_distributedSupplyBasePoints"
+msgstr "Распределённые очки захвата/защиты от союзных объектов"
+
+msgid "team/stats/labels_distributedSupplyDamage"
+msgstr "Распределённый урон от союзных объектов поддержки"
 
 msgid "team/stats/labels_equipmentDamageAssisted"
 msgstr "\tпадчас дзеяння баявых рэзерваў"
@@ -1105,6 +1117,9 @@ msgstr "Агульны час дэзарыентавання праціўнік�
 
 msgid "team/stats/labels_stunNum"
 msgstr "Дэзарыентацый выклікана"
+
+msgid "team/stats/labels_suppliesDestroyed"
+msgstr "Уничтожено объектов поддержки"
 
 msgid "team/stats/labels_teamHitsDamage"
 msgstr "Шкода хаўруснікам (знішчыў/пашкоджанняў)"

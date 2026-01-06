@@ -19,6 +19,7 @@ if TYPE_CHECKING:
     from account_helpers import Tokens
     from serializable_types.customizations import CustomizationOutfit
 Item = TypeVar('TypeVar')
+GUI_ITEM_CUSTOMIZATION_TYPE = 12
 
 class BaseCustomizationItem(object):
     __metaclass__ = ReflectionMetaclass
@@ -454,6 +455,10 @@ class StyleItem(BaseCustomizationItem):
     @property
     def hasContaineOutfitPart(self):
         return self.isEditable and self.isQuestsProgression
+
+    @property
+    def is3D(self):
+        return bool(self.modelsSet)
 
     def _iteratePartsOutfit(self, season, intCDs, removeFromOutfit):
         if not self.hasContaineOutfitPart:
@@ -1305,7 +1310,7 @@ def getAvailableDecalRegions(vehDescr):
 
 def splitIntDescr(intDescr):
     itemType, customizationType, id = items.parseIntCompactDescr(intDescr)
-    if itemType != 12 or customizationType not in CustomizationType.RANGE:
+    if itemType != GUI_ITEM_CUSTOMIZATION_TYPE or customizationType not in CustomizationType.RANGE:
         raise SoftException('intDescr is not correct customization item int descriptor', intDescr)
     return (
      customizationType, id)

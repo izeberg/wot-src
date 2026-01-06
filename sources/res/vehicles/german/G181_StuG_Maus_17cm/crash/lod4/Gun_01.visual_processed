@@ -13,8 +13,8 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>gun_01Shape.vertices</vertices>
-			<primitive>gun_01Shape.indices</primitive>
+			<vertices>gun_01_Shape.vertices</vertices>
+			<primitive>gun_01_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -66,13 +66,13 @@
 						<Vector4>4.000000 4.000000 0.000000 0.000000</Vector4>
 					</property>
 				</material>
-				<groupOrigin>0.000000 0.066209 3.735191</groupOrigin>
+				<groupOrigin>0.000000 0.066209 3.727121</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-0.852282 -0.553511 -0.012209</min>
-		<max>0.852282 0.685929 7.482591</max>
+		<min>-0.852282 -0.553511 -0.020279</min>
+		<max>0.852282 0.685929 7.474521</max>
 	</boundingBox>
 	<geometrySize>3080</geometrySize>
 	<minUVDensity>0.004041</minUVDensity>

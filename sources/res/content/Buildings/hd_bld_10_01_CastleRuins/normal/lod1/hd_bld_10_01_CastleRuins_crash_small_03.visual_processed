@@ -13,9 +13,9 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<stream>uv2</stream>
-			<primitive>indices</primitive>
+			<vertices>sShape0.vertices</vertices>
+			<stream>sShape0.uv2</stream>
+			<primitive>sShape0.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>

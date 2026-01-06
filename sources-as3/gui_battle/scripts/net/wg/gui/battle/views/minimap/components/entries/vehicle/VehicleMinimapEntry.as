@@ -7,6 +7,7 @@ package net.wg.gui.battle.views.minimap.components.entries.vehicle
    import net.wg.data.constants.InvalidationType;
    import net.wg.data.constants.Linkages;
    import net.wg.data.constants.Values;
+   import net.wg.data.constants.generated.BATTLE_MINIMAP_CONSTS;
    import net.wg.gui.battle.components.BaseProgressCircle;
    import net.wg.gui.battle.components.BattleUIComponent;
    import net.wg.gui.battle.components.HpProgressCircle;
@@ -59,6 +60,8 @@ package net.wg.gui.battle.views.minimap.components.entries.vehicle
       
       public var deadAnimation:VehicleAnimationMinimapEntry = null;
       
+      public var deadVisibleAnimation:VehicleAnimationMinimapEntry = null;
+      
       public var deadPermanentAnimation:VehicleAnimationMinimapEntry = null;
       
       public var squadmanYellowAnimation:VehicleAnimationMinimapEntry = null;
@@ -95,7 +98,7 @@ package net.wg.gui.battle.views.minimap.components.entries.vehicle
       
       private var _deadState:String = "";
       
-      private var _isDeadPermanent:Boolean = false;
+      private var _deadVisibilityState:String = "";
       
       private var _vehicleAnimationFrameLabel:String = "";
       
@@ -105,15 +108,17 @@ package net.wg.gui.battle.views.minimap.components.entries.vehicle
       
       private var _vehicleAnimations:Object;
       
+      private var _vehicleDeadVisibilities:Object;
+      
       private var _isFlagBearer:Boolean = false;
       
       private var _isColorBlind:Boolean = false;
       
-      private var _atlasItemName:String = "";
-      
       private var _isVehicleLabelVisible:Boolean = false;
       
       private var _isInAoI:Boolean = false;
+      
+      private var _isForcedClassTagIconOutOfAoI:Boolean = false;
       
       private var _percentHP:int = 100;
       
@@ -130,6 +135,7 @@ package net.wg.gui.battle.views.minimap.components.entries.vehicle
       public function VehicleMinimapEntry()
       {
          this._vehicleAnimations = {};
+         this._vehicleDeadVisibilities = {};
          this._hpTypeMap = {};
          super();
          this._vehicleAnimations[VehicleMinimapEntryConst.ALLY_GREEN_ANIMATION] = this.allyGreenAnimation;
@@ -138,11 +144,14 @@ package net.wg.gui.battle.views.minimap.components.entries.vehicle
          this._vehicleAnimations[VehicleMinimapEntryConst.SQUADMAN_YELLOW_ANIMATION] = this.squadmanYellowAnimation;
          this._vehicleAnimations[VehicleMinimapEntryConst.SQUADMAN_GOLD_ANIMATION] = this.squadmanGoldAnimation;
          this._vehicleAnimations[VehicleMinimapEntryConst.TEAMKILLER_BLUE_ANIMATION] = this.teamKillerBlueAnimation;
+         this._vehicleDeadVisibilities[BATTLE_MINIMAP_CONSTS.STATE_DEAD_DEFAULT] = this.deadAnimation;
+         this._vehicleDeadVisibilities[BATTLE_MINIMAP_CONSTS.STATE_DEAD_VISIBLE] = this.deadVisibleAnimation;
+         this._vehicleDeadVisibilities[BATTLE_MINIMAP_CONSTS.STATE_DEAD_PERMANENT] = this.deadPermanentAnimation;
          this._hpTypeMap[VehicleMarkersConstants.ENTITY_NAME_ENEMY] = BaseProgressCircle.ENEMY_STATE;
          this._hpTypeMap[VehicleMarkersConstants.ENTITY_NAME_ALLY] = BaseProgressCircle.ALLY_STATE;
          this._hpTypeMap[LABEL_TEAM_KILLER] = HpProgressCircle.TEAM_KILLER_STATE;
          this._hpTypeMap[LABEL_SQUADMAN] = HpProgressCircle.PLATOON_STATE;
-         this.allyGreenAnimation.visible = this.enemyRedAnimation.visible = this.enemyPurpleAnimation.visible = this.squadmanYellowAnimation.visible = this.squadmanGoldAnimation.visible = this.teamKillerBlueAnimation.visible = this.mcBearerAnimationContainer.visible = this.deadAnimation.visible = this.deadPermanentAnimation.visible = false;
+         this.allyGreenAnimation.visible = this.enemyRedAnimation.visible = this.enemyPurpleAnimation.visible = this.squadmanYellowAnimation.visible = this.squadmanGoldAnimation.visible = this.teamKillerBlueAnimation.visible = this.mcBearerAnimationContainer.visible = this.deadAnimation.visible = this.deadVisibleAnimation.visible = this.deadPermanentAnimation.visible = false;
          this.vehicleNameTextFieldAlt.visible = false;
          this._currentTextField = this.vehicleNameTextFieldClassic;
          TextFieldEx.setNoTranslate(this.vehicleNameTextFieldAlt,true);
@@ -204,25 +213,10 @@ package net.wg.gui.battle.views.minimap.components.entries.vehicle
                this._currVehicleAnimation.stop();
                this._currVehicleAnimation.visible = false;
             }
-            if(this._isInAoI)
-            {
-               this._atlasItemName = this._classTagName + ATLAS_NAME_DELIMITER + this._guiLabel + ATLAS_NAME_DELIMITER + this._deadState + this._aliasColor;
-            }
-            else
-            {
-               this._atlasItemName = VehicleMinimapEntryConst.LAST_LIT_ICON_NAME + ATLAS_NAME_DELIMITER + this._guiLabel + ATLAS_NAME_DELIMITER + this._aliasColor;
-            }
             if(this._deadState == VehicleMinimapEntryConst.DEAD)
             {
-               if(this._isDeadPermanent)
-               {
-                  this._currVehicleAnimation = this.deadPermanentAnimation;
-               }
-               else
-               {
-                  this._currVehicleAnimation = this.deadAnimation;
-               }
-               this._currVehicleAnimation.drawEntry(this._atlasItemName);
+               this._currVehicleAnimation = this._vehicleDeadVisibilities[this._deadVisibilityState];
+               this._currVehicleAnimation.drawEntry(this.getAtlasItemName());
                if(_loc4_ != VehicleMinimapEntryConst.DESTROYED_FRAME_LABEL)
                {
                   this._vehicleAnimationFrameLabel = VehicleMinimapEntryConst.DESTROY_FRAME;
@@ -238,7 +232,7 @@ package net.wg.gui.battle.views.minimap.components.entries.vehicle
             else
             {
                this._currVehicleAnimation = this._vehicleAnimations[this._guiLabel + ATLAS_NAME_DELIMITER + this._deadState + this._aliasColor];
-               this._currVehicleAnimation.drawEntry(this._atlasItemName);
+               this._currVehicleAnimation.drawEntry(this.getAtlasItemName());
                if(_loc4_ == VehicleMinimapEntryConst.HIGHLIGHT_ANIMATION_FRAME || _loc4_ == VehicleMinimapEntryConst.HIGHLIGHTED_FRAME)
                {
                   this._vehicleAnimationFrameLabel = VehicleMinimapEntryConst.HIGHLIGHTED_FRAME;
@@ -285,12 +279,16 @@ package net.wg.gui.battle.views.minimap.components.entries.vehicle
          this.mcTopAnimation = null;
          App.utils.data.cleanupDynamicObject(this._vehicleAnimations);
          this._vehicleAnimations = null;
+         App.utils.data.cleanupDynamicObject(this._vehicleDeadVisibilities);
+         this._vehicleDeadVisibilities = null;
          this.enemyRedAnimation.dispose();
          this.enemyRedAnimation = null;
          this.enemyPurpleAnimation.dispose();
          this.enemyPurpleAnimation = null;
          this.deadAnimation.dispose();
          this.deadAnimation = null;
+         this.deadVisibleAnimation.dispose();
+         this.deadVisibleAnimation = null;
          this.deadPermanentAnimation.dispose();
          this.deadPermanentAnimation = null;
          this.squadmanYellowAnimation.dispose();
@@ -344,11 +342,14 @@ package net.wg.gui.battle.views.minimap.components.entries.vehicle
          invalidate(INVALID_VEHICLE_ACTION_ANIMATION);
       }
       
-      public function setDead(param1:Boolean) : void
+      public function setDead(param1:String) : void
       {
-         this._currentTextField.visible = false;
+         this._deadVisibilityState = param1;
+         if(param1 != BATTLE_MINIMAP_CONSTS.STATE_DEAD_VISIBLE)
+         {
+            this._currentTextField.visible = false;
+         }
          this._deadState = VehicleMinimapEntryConst.DEAD;
-         this._isDeadPermanent = param1;
          invalidate(INVALID_CHANGE_VEHICLE_ANIMATION_TYPE);
       }
       
@@ -382,7 +383,7 @@ package net.wg.gui.battle.views.minimap.components.entries.vehicle
          }
       }
       
-      public function setInAoI(param1:Boolean) : void
+      public function setInAoI(param1:Boolean, param2:Boolean) : void
       {
          this._currentTextField.visible = false;
          if(param1)
@@ -398,6 +399,7 @@ package net.wg.gui.battle.views.minimap.components.entries.vehicle
          }
          this._labelHelper.setCurrentTF(this._currentTextField);
          this._isInAoI = param1;
+         this._isForcedClassTagIconOutOfAoI = param2;
          invalidate(INVALID_VEHICLE_LABEL | INVALID_CHANGE_VEHICLE_ANIMATION_TYPE | INVALID_HP);
       }
       
@@ -489,6 +491,19 @@ package net.wg.gui.battle.views.minimap.components.entries.vehicle
       public function get isVehicleLabelVisible() : Boolean
       {
          return this._isVehicleLabelVisible;
+      }
+      
+      private function getAtlasItemName() : String
+      {
+         if(this._isInAoI)
+         {
+            return this._classTagName + ATLAS_NAME_DELIMITER + this._guiLabel + ATLAS_NAME_DELIMITER + this._deadState + this._aliasColor;
+         }
+         if(this._isForcedClassTagIconOutOfAoI)
+         {
+            return VehicleMinimapEntryConst.LAST_LIT_ICON_NAME + ATLAS_NAME_DELIMITER + this._classTagName + ATLAS_NAME_DELIMITER + this._guiLabel + ATLAS_NAME_DELIMITER + this._aliasColor;
+         }
+         return VehicleMinimapEntryConst.LAST_LIT_ICON_NAME + ATLAS_NAME_DELIMITER + this._guiLabel + ATLAS_NAME_DELIMITER + this._aliasColor;
       }
       
       private function onColorSchemasUpdatedHandler(param1:ColorSchemeEvent) : void

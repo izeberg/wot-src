@@ -46,6 +46,8 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.battle.views.vehicleMarkers.StatTrackMarker;
    import net.wg.gui.battle.views.vehicleMarkers.StaticArtyMarker;
    import net.wg.gui.battle.views.vehicleMarkers.StaticObjectMarker;
+   import net.wg.gui.battle.views.vehicleMarkers.SupplyAirshipVehicleMarker;
+   import net.wg.gui.battle.views.vehicleMarkers.SupplyVehicleMarker;
    import net.wg.gui.battle.views.vehicleMarkers.TargetMarker;
    import net.wg.gui.battle.views.vehicleMarkers.VMAtlasItemName;
    import net.wg.gui.battle.views.vehicleMarkers.VO.CrossOffset;
@@ -65,6 +67,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.battle.views.vehicleMarkers.events.StatusAnimationEvent;
    import net.wg.gui.battle.views.vehicleMarkers.events.TimelineEvent;
    import net.wg.gui.battle.views.vehicleMarkers.events.VehicleMarkersManagerEvent;
+   import net.wg.gui.battle.views.vehicleMarkers.statusMarkers.FLSupplyObjectSelfRepairMarker;
    import net.wg.gui.battle.views.vehicleMarkers.statusMarkers.MarkerAssetContainer;
    import net.wg.gui.battle.views.vehicleMarkers.statusMarkers.MarkerTimer;
    import net.wg.gui.battle.views.vehicleMarkers.statusMarkers.VehicleAnimatedGlowMarker;
@@ -174,6 +177,10 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_BATTLE_VIEWS_VEHICLEMARKERS_STATTRACKMARKER:Class = StatTrackMarker;
       
+      public static const NET_WG_GUI_BATTLE_VIEWS_VEHICLEMARKERS_SUPPLYAIRSHIPVEHICLEMARKER:Class = SupplyAirshipVehicleMarker;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_VEHICLEMARKERS_SUPPLYVEHICLEMARKER:Class = SupplyVehicleMarker;
+      
       public static const NET_WG_GUI_BATTLE_VIEWS_VEHICLEMARKERS_TARGETMARKER:Class = TargetMarker;
       
       public static const NET_WG_GUI_BATTLE_VIEWS_VEHICLEMARKERS_VEHICLEACTIONMARKER:Class = VehicleActionMarker;
@@ -199,6 +206,8 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_BATTLE_VIEWS_VEHICLEMARKERS_EVENTS_TIMELINEEVENT:Class = TimelineEvent;
       
       public static const NET_WG_GUI_BATTLE_VIEWS_VEHICLEMARKERS_EVENTS_VEHICLEMARKERSMANAGEREVENT:Class = VehicleMarkersManagerEvent;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_VEHICLEMARKERS_STATUSMARKERS_FLSUPPLYOBJECTSELFREPAIRMARKER:Class = FLSupplyObjectSelfRepairMarker;
       
       public static const NET_WG_GUI_BATTLE_VIEWS_VEHICLEMARKERS_STATUSMARKERS_MARKERASSETCONTAINER:Class = MarkerAssetContainer;
       

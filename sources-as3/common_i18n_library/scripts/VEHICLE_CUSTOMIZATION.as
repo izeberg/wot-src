@@ -11,6 +11,10 @@ package
       
       public static const CUSTOMIZATION_POPOVERFILTER_PROGRESSIVELOCKED_TOOLTIP:String = "#vehicle_customization:customization/popoverFilter/progressiveLocked/tooltip";
       
+      public static const STYLEPREFIX_2D:String = "#vehicle_customization:styleprefix/2d";
+      
+      public static const STYLEPREFIX_3D:String = "#vehicle_customization:styleprefix/3d";
+      
       public static const CAMOUFLAGE:String = "#vehicle_customization:camouflage";
       
       public static const CAMOUFLAGE_DEFAULT:String = "#vehicle_customization:camouflage/default";
@@ -7333,6 +7337,10 @@ package
       
       public static const CAROUSEL_MESSAGE_DESCRIPTION:String = "#vehicle_customization:carousel/message/description";
       
+      public static const CAROUSEL_RESETFILTERSBTN_LABEL:String = "#vehicle_customization:carousel/resetFiltersBtn/label";
+      
+      public static const CAROUSEL_RESETFILTERSBTN_TOOLTIP:String = "#vehicle_customization:carousel/resetFiltersBtn/tooltip";
+      
       public static const CUSTOMIZATION_TOOLTIP_INVENTORY_TITLE:String = "#vehicle_customization:customization/tooltip/inventory/title";
       
       public static const CUSTOMIZATION_TOOLTIP_INVENTORY_COST_PURCHASE:String = "#vehicle_customization:customization/tooltip/inventory/cost/purchase";
@@ -7737,6 +7745,12 @@ package
       
       public static const FILTER_POPOVER_SHOWONLYFILTERS_TITLE:String = "#vehicle_customization:filter/popover/showonlyfilters/title";
       
+      public static const FILTER_POPOVER_SHOWONLYFILTERS_MAIN_TITLE:String = "#vehicle_customization:filter/popover/showonlyfilters/main/title";
+      
+      public static const FILTER_POPOVER_SHOWONLYFILTERS_HISTORICAL_TITLE:String = "#vehicle_customization:filter/popover/showonlyfilters/historical/title";
+      
+      public static const FILTER_POPOVER_SHOWONLYFILTERS_EDITABLE_TITLE:String = "#vehicle_customization:filter/popover/showonlyfilters/editable/title";
+      
       public static const FILTER_POPOVER_SHOWONLYFILTERS_ADDITIONAL:String = "#vehicle_customization:filter/popover/showonlyfilters/additional";
       
       public static const FILTER_POPOVER_FORMFILTERS_TITLE:String = "#vehicle_customization:filter/popover/formfilters/title";
@@ -7754,6 +7768,12 @@ package
       public static const FILTER_POPOVER_GETDEFAULTSETTINGS:String = "#vehicle_customization:filter/popover/getDefaultSettings";
       
       public static const FILTER_POPOVER_GROUPS_ALL:String = "#vehicle_customization:filter/popover/groups/all";
+      
+      public static const FILTER_POPOVER_DISPLAYBY_TITLE:String = "#vehicle_customization:filter/popover/displayBy/title";
+      
+      public static const FILTER_POPOVER_DISPLAYBY_DATE:String = "#vehicle_customization:filter/popover/displayBy/date";
+      
+      public static const FILTER_POPOVER_DISPLAYBY_GROUP:String = "#vehicle_customization:filter/popover/displayBy/group";
       
       public static const CAROUSEL_ITEMLABEL_PURCHASED:String = "#vehicle_customization:carousel/itemLabel/purchased";
       
@@ -7867,6 +7887,10 @@ package
       
       public static const CAROUSEL_FILTER_EQUIPPEDBTN_BODY:String = "#vehicle_customization:carousel/filter/equippedBtn/body";
       
+      public static const CAROUSEL_FILTER_FAVORITEBTN_HEADER:String = "#vehicle_customization:carousel/filter/favoriteBtn/header";
+      
+      public static const CAROUSEL_FILTER_FAVORITEBTN_BODY:String = "#vehicle_customization:carousel/filter/favoriteBtn/body";
+      
       public static const CAROUSEL_FILTER_FANTASTICALBTN_HEADER:String = "#vehicle_customization:carousel/filter/fantasticalBtn/header";
       
       public static const CAROUSEL_FILTER_FANTASTICALBTN_BODY:String = "#vehicle_customization:carousel/filter/fantasticalBtn/body";
@@ -7895,6 +7919,8 @@ package
       
       public static const CUSTOMIZATION_FILTERPOPOVER_EDITABLESTYLESBTN_BODY:String = "#vehicle_customization:customization/filterPopover/editableStylesBtn/body";
       
+      public static const CUSTOMIZATION_FILTERPOPOVER_COUNTER:String = "#vehicle_customization:customization/filterPopover/counter";
+      
       public static const CUSTOMIZATION_FILTERPOPOVER_NONEDITABLESTYLESBTN_HEADER:String = "#vehicle_customization:customization/filterPopover/nonEditableStylesBtn/header";
       
       public static const CUSTOMIZATION_FILTERPOPOVER_NONEDITABLESTYLESBTN_BODY:String = "#vehicle_customization:customization/filterPopover/nonEditableStylesBtn/body";
@@ -7902,6 +7928,14 @@ package
       public static const CUSTOMIZATION_FILTERPOPOVER_BONUSDESCRIPTION_HEADER:String = "#vehicle_customization:customization/filterPopover/bonusDescription/header";
       
       public static const CUSTOMIZATION_FILTERPOPOVER_BONUSDESCRIPTION_BODY:String = "#vehicle_customization:customization/filterPopover/bonusDescription/body";
+      
+      public static const CUSTOMIZATION_FILTERPOPOVER_PROGRESSIVESTYLEBTN_HEADER:String = "#vehicle_customization:customization/filterPopover/progressiveStyleBtn/header";
+      
+      public static const CUSTOMIZATION_FILTERPOPOVER_PROGRESSIVESTYLEBTN_BODY:String = "#vehicle_customization:customization/filterPopover/progressiveStyleBtn/body";
+      
+      public static const CUSTOMIZATION_FILTERPOPOVER_FAVORITEBTN_HEADER:String = "#vehicle_customization:customization/filterPopover/favoriteBtn/header";
+      
+      public static const CUSTOMIZATION_FILTERPOPOVER_FAVORITEBTN_BODY:String = "#vehicle_customization:customization/filterPopover/favoriteBtn/body";
       
       public static const CUSTOMIZATION_BUYWINDOW_COPY_HEADER:String = "#vehicle_customization:customization/buyWindow/copy/header";
       
@@ -7914,6 +7948,8 @@ package
       public static const CUSTOMIZATION_PROPERTYSHEET_DISABLED_MOVE:String = "#vehicle_customization:customization/propertySheet/disabled/move";
       
       public static const CUSTOMIZATION_PROPERTYSHEET_DISABLED_COLOR:String = "#vehicle_customization:customization/propertySheet/disabled/color";
+      
+      public static const CUSTOMIZATIONTABNAVIGATOR_HINT:String = "#vehicle_customization:customizationTabNavigator/hint";
       
       public static const CUSTOMIZATION_PROPERTYSHEET_DISABLED_STYLEINFO:String = "#vehicle_customization:customization/propertySheet/disabled/styleInfo";
       
@@ -12400,10 +12436,6 @@ package
       public static const CAROUSEL_SWATCH_STYLE_UNIQUE:String = "#vehicle_customization:carousel/swatch/style/unique";
       
       public static const CAROUSEL_SWATCH_STYLE_HISTORICAL:String = "#vehicle_customization:carousel/swatch/style/historical";
-      
-      public static const DEFAULTSTYLE_LABEL:String = "#vehicle_customization:defaultStyle/label";
-      
-      public static const SAVEDSTYLES_LABEL:String = "#vehicle_customization:savedStyles/label";
       
       public static const CUSTOMIZATION_HINT_MAXQTYDECALSAPPLIED:String = "#vehicle_customization:customization/hint/maxQtyDecalsApplied";
       
@@ -17883,6 +17915,20 @@ package
       
       public static const CUSTOMIZATION_TOOLTIP_QUESTS_PLAY_STREAK_4_CONDITION:String = "#vehicle_customization:customization/tooltip/quests/play_streak_4/condition";
       
+      public static const CUSTOMIZATION_TOOLTIP_QUESTS_CLAN_SHOP_PROGRESSION_31357_1_2_CONDITION:String = "#vehicle_customization:customization/tooltip/quests/clan_shop_progression_31357_1_2/condition";
+      
+      public static const CUSTOMIZATION_TOOLTIP_QUESTS_CLAN_SHOP_PROGRESSION_31357_1_3_CONDITION:String = "#vehicle_customization:customization/tooltip/quests/clan_shop_progression_31357_1_3/condition";
+      
+      public static const CUSTOMIZATION_TOOLTIP_QUESTS_CLAN_SHOP_PROGRESSION_31357_1_4_CONDITION:String = "#vehicle_customization:customization/tooltip/quests/clan_shop_progression_31357_1_4/condition";
+      
+      public static const CUSTOMIZATION_TOOLTIP_QUESTS_CLAN_SHOP_PROGRESSION_31357_2_CONDITION:String = "#vehicle_customization:customization/tooltip/quests/clan_shop_progression_31357_2/condition";
+      
+      public static const CUSTOMIZATION_TOOLTIP_QUESTS_CLAN_SHOP_PROGRESSION_31357_3_CONDITION:String = "#vehicle_customization:customization/tooltip/quests/clan_shop_progression_31357_3/condition";
+      
+      public static const CUSTOMIZATION_TOOLTIP_QUESTS_CLAN_SHOP_PROGRESSION_31357_4_CONDITION:String = "#vehicle_customization:customization/tooltip/quests/clan_shop_progression_31357_4/condition";
+      
+      public static const CUSTOMIZATION_TOOLTIP_QUESTS_CLAN_SHOP_PROGRESSION_31357_5_CONDITION:String = "#vehicle_customization:customization/tooltip/quests/clan_shop_progression_31357_5/condition";
+      
       public static const CUSTOMIZATION_TOOLTIP_QUESTS_COMP7_4_3_RANKS_65_CONDITION:String = "#vehicle_customization:customization/tooltip/quests/comp7_4_3_ranks_65/condition";
       
       public static const CUSTOMIZATION_TOOLTIP_QUESTS_COMP7_4_3_RANKS_55_CONDITION:String = "#vehicle_customization:customization/tooltip/quests/comp7_4_3_ranks_55/condition";
@@ -17930,6 +17976,16 @@ package
       public static const CUSTOMIZATION_TOOLTIP_QUESTS_COMP7_5_2_RANKS_21_CONDITION:String = "#vehicle_customization:customization/tooltip/quests/comp7_5_2_ranks_21/condition";
       
       public static const CUSTOMIZATION_TOOLTIP_QUESTS_COMP7_5_2_RANKS_11_CONDITION:String = "#vehicle_customization:customization/tooltip/quests/comp7_5_2_ranks_11/condition";
+      
+      public static const CUSTOMIZATION_TOOLTIP_QUESTS_CLAN_SEASON_1_2_CONDITION:String = "#vehicle_customization:customization/tooltip/quests/clan_season_1_2/condition";
+      
+      public static const CUSTOMIZATION_TOOLTIP_QUESTS_CLAN_SEASON_1_3_CONDITION:String = "#vehicle_customization:customization/tooltip/quests/clan_season_1_3/condition";
+      
+      public static const CUSTOMIZATION_TOOLTIP_QUESTS_CLAN_SEASON_1_4_CONDITION:String = "#vehicle_customization:customization/tooltip/quests/clan_season_1_4/condition";
+      
+      public static const CUSTOMIZATION_TOOLTIP_QUESTS_CLAN_SEASON_1_5_CONDITION:String = "#vehicle_customization:customization/tooltip/quests/clan_season_1_5/condition";
+      
+      public static const CUSTOMIZATION_TOOLTIP_QUESTS_CLAN_SEASON_1_6_CONDITION:String = "#vehicle_customization:customization/tooltip/quests/clan_season_1_6/condition";
       
       public static const MAIN_STYLE_R165_OBJECT_703_II_2_3DST:String = "#vehicle_customization:main_style/R165_Object_703_II_2_3dst";
       
@@ -25135,6 +25191,44 @@ package
       
       public static const DESERVEDAWARD_STYLE_BETA_138_LONGDESCRIPTION:String = "#vehicle_customization:DeservedAward_Style_Beta_138/longDescription";
       
+      public static const CLANSEASON_STYLE_140_NAME:String = "#vehicle_customization:ClanSeason_Style_140/name";
+      
+      public static const CLANSEASON_STYLE_140_DESCRIPTION:String = "#vehicle_customization:ClanSeason_Style_140/description";
+      
+      public static const CLANSEASON_STYLE_140_LONGDESCRIPTION:String = "#vehicle_customization:ClanSeason_Style_140/longDescription";
+      
+      public static const CLANSEASON_PAINT_01_140_NAME:String = "#vehicle_customization:ClanSeason_Paint_01_140/name";
+      
+      public static const CLANSEASON_PAINT_01_140_DESCRIPTION:String = "#vehicle_customization:ClanSeason_Paint_01_140/description";
+      
+      public static const CLANSEASON_PAINT_02_140_NAME:String = "#vehicle_customization:ClanSeason_Paint_02_140/name";
+      
+      public static const CLANSEASON_PAINT_02_140_DESCRIPTION:String = "#vehicle_customization:ClanSeason_Paint_02_140/description";
+      
+      public static const CLANSEASON_PAINT_03_140_NAME:String = "#vehicle_customization:ClanSeason_Paint_03_140/name";
+      
+      public static const CLANSEASON_PAINT_03_140_DESCRIPTION:String = "#vehicle_customization:ClanSeason_Paint_03_140/description";
+      
+      public static const CLANSEASON_DECAL_01_140_NAME:String = "#vehicle_customization:ClanSeason_Decal_01_140/name";
+      
+      public static const CLANSEASON_DECAL_01_140_DESCRIPTION:String = "#vehicle_customization:ClanSeason_Decal_01_140/description";
+      
+      public static const CLANSEASON_DECAL_02_140_NAME:String = "#vehicle_customization:ClanSeason_Decal_02_140/name";
+      
+      public static const CLANSEASON_DECAL_02_140_DESCRIPTION:String = "#vehicle_customization:ClanSeason_Decal_02_140/description";
+      
+      public static const CLANSEASON_CAMO_HULL_140_NAME:String = "#vehicle_customization:ClanSeason_Camo_Hull_140/name";
+      
+      public static const CLANSEASON_CAMO_HULL_140_DESCRIPTION:String = "#vehicle_customization:ClanSeason_Camo_Hull_140/description";
+      
+      public static const CLANSEASON_CAMO_TURRET_140_NAME:String = "#vehicle_customization:ClanSeason_Camo_Turret_140/name";
+      
+      public static const CLANSEASON_CAMO_TURRET_140_DESCRIPTION:String = "#vehicle_customization:ClanSeason_Camo_Turret_140/description";
+      
+      public static const CLANSEASON_CAMO_GUN_140_NAME:String = "#vehicle_customization:ClanSeason_Camo_Gun_140/name";
+      
+      public static const CLANSEASON_CAMO_GUN_140_DESCRIPTION:String = "#vehicle_customization:ClanSeason_Camo_Gun_140/description";
+      
       public static const BLOGGERNYSALE_CAMO_139_NAME:String = "#vehicle_customization:BloggerNYSale_Camo_139/name";
       
       public static const BLOGGERNYSALE_CAMO_139_DESCRIPTION:String = "#vehicle_customization:BloggerNYSale_Camo_139/description";
@@ -25166,6 +25260,428 @@ package
       public static const SPECIAL_STYLE_F135_SCHNEIDER_120_AC_GENDARME_02_LONG:String = "#vehicle_customization:special_style/F135_Schneider_120_AC_Gendarme_02/long";
       
       public static const SPECIAL_STYLE_A38_T92_3DST_01_NAME:String = "#vehicle_customization:special_style/A38_T92_3Dst_01/name";
+      
+      public static const NY_SELEB_PAINT_01_139_NAME:String = "#vehicle_customization:NY_Seleb_Paint_01_139/name";
+      
+      public static const NY_SELEB_PAINT_01_139_DESCRIPTION:String = "#vehicle_customization:NY_Seleb_Paint_01_139/description";
+      
+      public static const NY_SELEB_PAINT_02_139_NAME:String = "#vehicle_customization:NY_Seleb_Paint_02_139/name";
+      
+      public static const NY_SELEB_PAINT_02_139_DESCRIPTION:String = "#vehicle_customization:NY_Seleb_Paint_02_139/description";
+      
+      public static const NY_SELEB_CAMO_139_NAME:String = "#vehicle_customization:NY_Seleb_Camo_139/name";
+      
+      public static const NY_SELEB_CAMO_139_DESCRIPTION:String = "#vehicle_customization:NY_Seleb_Camo_139/description";
+      
+      public static const NY_SELEB_DECAL_FRONT_139_NAME:String = "#vehicle_customization:NY_Seleb_Decal_Front_139/name";
+      
+      public static const NY_SELEB_DECAL_FRONT_139_DESCRIPTION:String = "#vehicle_customization:NY_Seleb_Decal_Front_139/description";
+      
+      public static const NY_SELEB_DECAL_LEFT_139_NAME:String = "#vehicle_customization:NY_Seleb_Decal_Left_139/name";
+      
+      public static const NY_SELEB_DECAL_LEFT_139_DESCRIPTION:String = "#vehicle_customization:NY_Seleb_Decal_Left_139/description";
+      
+      public static const NY_SELEB_DECAL_RIGHT_139_NAME:String = "#vehicle_customization:NY_Seleb_Decal_Right_139/name";
+      
+      public static const NY_SELEB_DECAL_RIGHT_139_DESCRIPTION:String = "#vehicle_customization:NY_Seleb_Decal_Right_139/description";
+      
+      public static const NY_SELEB_STYLE_139_NAME:String = "#vehicle_customization:NY_Seleb_Style_139/name";
+      
+      public static const NY_SELEB_STYLE_139_DESCRIPTION:String = "#vehicle_customization:NY_Seleb_Style_139/description";
+      
+      public static const NY_SELEB_STYLE_139_LONGDESCRIPTION:String = "#vehicle_customization:NY_Seleb_Style_139/longDescription";
+      
+      public static const NY_SELEB_DECAL_01_139_NAME:String = "#vehicle_customization:NY_Seleb_Decal_01_139/name";
+      
+      public static const NY_SELEB_DECAL_01_139_DESCRIPTION:String = "#vehicle_customization:NY_Seleb_Decal_01_139/description";
+      
+      public static const NY_SELEB_DECAL_02_139_NAME:String = "#vehicle_customization:NY_Seleb_Decal_02_139/name";
+      
+      public static const NY_SELEB_DECAL_02_139_DESCRIPTION:String = "#vehicle_customization:NY_Seleb_Decal_02_139/description";
+      
+      public static const NY_SELEB_DECAL_03_139_NAME:String = "#vehicle_customization:NY_Seleb_Decal_03_139/name";
+      
+      public static const NY_SELEB_DECAL_03_139_DESCRIPTION:String = "#vehicle_customization:NY_Seleb_Decal_03_139/description";
+      
+      public static const NY_SELEB_DECAL_04_139_NAME:String = "#vehicle_customization:NY_Seleb_Decal_04_139/name";
+      
+      public static const NY_SELEB_DECAL_04_139_DESCRIPTION:String = "#vehicle_customization:NY_Seleb_Decal_04_139/description";
+      
+      public static const NY_SELEB_INSCRIPTION_01_139_NAME:String = "#vehicle_customization:NY_Seleb_Inscription_01_139/name";
+      
+      public static const NY_SELEB_INSCRIPTION_01_139_DESCRIPTION:String = "#vehicle_customization:NY_Seleb_Inscription_01_139/description";
+      
+      public static const NY_SELEB_INSCRIPTION_02_139_NAME:String = "#vehicle_customization:NY_Seleb_Inscription_02_139/name";
+      
+      public static const NY_SELEB_INSCRIPTION_02_139_DESCRIPTION:String = "#vehicle_customization:NY_Seleb_Inscription_02_139/description";
+      
+      public static const NY_SELEB_INSCRIPTION_03_139_NAME:String = "#vehicle_customization:NY_Seleb_Inscription_03_139/name";
+      
+      public static const NY_SELEB_INSCRIPTION_03_139_DESCRIPTION:String = "#vehicle_customization:NY_Seleb_Inscription_03_139/description";
+      
+      public static const NY_SELEB_INSCRIPTION_04_139_NAME:String = "#vehicle_customization:NY_Seleb_Inscription_04_139/name";
+      
+      public static const NY_SELEB_INSCRIPTION_04_139_DESCRIPTION:String = "#vehicle_customization:NY_Seleb_Inscription_04_139/description";
+      
+      public static const C_23FEBRUARY_PAINT_140_NAME:String = "#vehicle_customization:23February_Paint_140/name";
+      
+      public static const C_23FEBRUARY_PAINT_140_DESCRIPTION:String = "#vehicle_customization:23February_Paint_140/description";
+      
+      public static const C_23FEBRUARY_CAMO_140_NAME:String = "#vehicle_customization:23February_Camo_140/name";
+      
+      public static const C_23FEBRUARY_CAMO_140_DESCRIPTION:String = "#vehicle_customization:23February_Camo_140/description";
+      
+      public static const C_23FEBRUARY_STYLE_140_NAME:String = "#vehicle_customization:23February_Style_140/name";
+      
+      public static const C_23FEBRUARY_STYLE_140_DESCRIPTION:String = "#vehicle_customization:23February_Style_140/description";
+      
+      public static const C_23FEBRUARY_STYLE_140_LONGDESCRIPTION:String = "#vehicle_customization:23February_Style_140/longDescription";
+      
+      public static const C_23FEBRUARY_DECAL_140_NAME:String = "#vehicle_customization:23February_Decal_140/name";
+      
+      public static const C_23FEBRUARY_DECAL_140_DESCRIPTION:String = "#vehicle_customization:23February_Decal_140/description";
+      
+      public static const CELEBRITY_CAMO_TURRET_139_NAME:String = "#vehicle_customization:Celebrity_Camo_Turret_139/name";
+      
+      public static const CELEBRITY_CAMO_TURRET_139_DESCRIPTION:String = "#vehicle_customization:Celebrity_Camo_Turret_139/description";
+      
+      public static const CELEBRITY_PAINT139_NAME:String = "#vehicle_customization:Celebrity_Paint139/name";
+      
+      public static const CELEBRITY_PAINT139_DESCRIPTION:String = "#vehicle_customization:Celebrity_Paint139/description";
+      
+      public static const CELEBRITY_CAMO_HULLGUN_139_NAME:String = "#vehicle_customization:Celebrity_Camo_HullGun_139/name";
+      
+      public static const CELEBRITY_CAMO_HULLGUN_139_DESCRIPTION:String = "#vehicle_customization:Celebrity_Camo_HullGun_139/description";
+      
+      public static const CELEBRITY_STYLE_139_NAME:String = "#vehicle_customization:Celebrity_Style_139/name";
+      
+      public static const CELEBRITY_STYLE_139_DESCRIPTION:String = "#vehicle_customization:Celebrity_Style_139/description";
+      
+      public static const CELEBRITY_STYLE_139_LONGDESCRIPTION:String = "#vehicle_customization:Celebrity_Style_139/longDescription";
+      
+      public static const CELEBRITY_DECAL_COVER_139_NAME:String = "#vehicle_customization:Celebrity_Decal_Cover_139/name";
+      
+      public static const CELEBRITY_DECAL_COVER_139_DESCRIPTION:String = "#vehicle_customization:Celebrity_Decal_Cover_139/description";
+      
+      public static const CELEBRITY_DECAL_02_139_NAME:String = "#vehicle_customization:Celebrity_Decal_02_139/name";
+      
+      public static const CELEBRITY_DECAL_02_139_DESCRIPTION:String = "#vehicle_customization:Celebrity_Decal_02_139/description";
+      
+      public static const CELEBRITY_DECAL_03_139_NAME:String = "#vehicle_customization:Celebrity_Decal_03_139/name";
+      
+      public static const CELEBRITY_DECAL_03_139_DESCRIPTION:String = "#vehicle_customization:Celebrity_Decal_03_139/description";
+      
+      public static const R231_OBJECT_278_3DST_01_CAMO_SUMMER_140_NAME:String = "#vehicle_customization:R231_Object_278_3Dst_01_Camo_Summer_140/name";
+      
+      public static const R231_OBJECT_278_3DST_01_CAMO_SUMMER_140_DESCRIPTION:String = "#vehicle_customization:R231_Object_278_3Dst_01_Camo_Summer_140/description";
+      
+      public static const R231_OBJECT_278_3DST_01_CAMO_WINTER_140_NAME:String = "#vehicle_customization:R231_Object_278_3Dst_01_Camo_Winter_140/name";
+      
+      public static const R231_OBJECT_278_3DST_01_CAMO_WINTER_140_DESCRIPTION:String = "#vehicle_customization:R231_Object_278_3Dst_01_Camo_Winter_140/description";
+      
+      public static const R231_OBJECT_278_3DST_01_CAMO_DESERT_140_NAME:String = "#vehicle_customization:R231_Object_278_3Dst_01_Camo_Desert_140/name";
+      
+      public static const R231_OBJECT_278_3DST_01_CAMO_DESERT_140_DESCRIPTION:String = "#vehicle_customization:R231_Object_278_3Dst_01_Camo_Desert_140/description";
+      
+      public static const R231_OBJECT_278_3DST_01_STYLE_140_NAME:String = "#vehicle_customization:R231_Object_278_3Dst_01_Style_140/name";
+      
+      public static const R231_OBJECT_278_3DST_01_STYLE_140_DESCRIPTION:String = "#vehicle_customization:R231_Object_278_3Dst_01_Style_140/description";
+      
+      public static const R231_OBJECT_278_3DST_01_STYLE_140_LONGDESCRIPTION:String = "#vehicle_customization:R231_Object_278_3Dst_01_Style_140/longDescription";
+      
+      public static const GB143_CAPTAIN_3DST_01_LONGDESCRIPTION:String = "#vehicle_customization:GB143_Captain_3Dst_01/longDescription";
+      
+      public static const MARCHEIGHT_CAMO_140_NAME:String = "#vehicle_customization:MarchEight_Camo_140/name";
+      
+      public static const MARCHEIGHT_CAMO_140_DESCRIPTION:String = "#vehicle_customization:MarchEight_Camo_140/description";
+      
+      public static const MARCHEIGHT_PAINT_140_NAME:String = "#vehicle_customization:MarchEight_Paint_140/name";
+      
+      public static const MARCHEIGHT_PAINT_140_DESCRIPTION:String = "#vehicle_customization:MarchEight_Paint_140/description";
+      
+      public static const MARCHEIGHT_STYLE_140_NAME:String = "#vehicle_customization:MarchEight_Style_140/name";
+      
+      public static const MARCHEIGHT_STYLE_140_DESCRIPTION:String = "#vehicle_customization:MarchEight_Style_140/description";
+      
+      public static const MARCHEIGHT_STYLE_140_LONGDESCRIPTION:String = "#vehicle_customization:MarchEight_Style_140/longDescription";
+      
+      public static const CLANSEASONPROGRESSION_01_CAMO_140_NAME:String = "#vehicle_customization:ClanSeasonProgression_01_Camo_140/name";
+      
+      public static const CLANSEASONPROGRESSION_01_CAMO_140_DESCRIPTION:String = "#vehicle_customization:ClanSeasonProgression_01_Camo_140/description";
+      
+      public static const CLANSEASONPROGRESSION_02_CAMO_140_NAME:String = "#vehicle_customization:ClanSeasonProgression_02_Camo_140/name";
+      
+      public static const CLANSEASONPROGRESSION_02_CAMO_140_DESCRIPTION:String = "#vehicle_customization:ClanSeasonProgression_02_Camo_140/description";
+      
+      public static const CLANSEASONPROGRESSION_03_CAMO_140_NAME:String = "#vehicle_customization:ClanSeasonProgression_03_Camo_140/name";
+      
+      public static const CLANSEASONPROGRESSION_03_CAMO_140_DESCRIPTION:String = "#vehicle_customization:ClanSeasonProgression_03_Camo_140/description";
+      
+      public static const CLANSEASONPROGRESSION_04_CAMO_140_NAME:String = "#vehicle_customization:ClanSeasonProgression_04_Camo_140/name";
+      
+      public static const CLANSEASONPROGRESSION_04_CAMO_140_DESCRIPTION:String = "#vehicle_customization:ClanSeasonProgression_04_Camo_140/description";
+      
+      public static const CLANSEASONPROGRESSION_05_CAMO_140_NAME:String = "#vehicle_customization:ClanSeasonProgression_05_Camo_140/name";
+      
+      public static const CLANSEASONPROGRESSION_05_CAMO_140_DESCRIPTION:String = "#vehicle_customization:ClanSeasonProgression_05_Camo_140/description";
+      
+      public static const CLANSEASONPROGRESSION_06_CAMO_140_NAME:String = "#vehicle_customization:ClanSeasonProgression_06_Camo_140/name";
+      
+      public static const CLANSEASONPROGRESSION_06_CAMO_140_DESCRIPTION:String = "#vehicle_customization:ClanSeasonProgression_06_Camo_140/description";
+      
+      public static const CLANSEASONPROGRESSION_01_PAINT_140_NAME:String = "#vehicle_customization:ClanSeasonProgression_01_Paint_140/name";
+      
+      public static const CLANSEASONPROGRESSION_01_PAINT_140_DESCRIPTION:String = "#vehicle_customization:ClanSeasonProgression_01_Paint_140/description";
+      
+      public static const CLANSEASONPROGRESSION_02_PAINT_140_NAME:String = "#vehicle_customization:ClanSeasonProgression_02_Paint_140/name";
+      
+      public static const CLANSEASONPROGRESSION_02_PAINT_140_DESCRIPTION:String = "#vehicle_customization:ClanSeasonProgression_02_Paint_140/description";
+      
+      public static const CLANSEASONPROGRESSION_03_PAINT_140_NAME:String = "#vehicle_customization:ClanSeasonProgression_03_Paint_140/name";
+      
+      public static const CLANSEASONPROGRESSION_03_PAINT_140_DESCRIPTION:String = "#vehicle_customization:ClanSeasonProgression_03_Paint_140/description";
+      
+      public static const CLANSEASONPROGRESSION_04_PAINT_140_NAME:String = "#vehicle_customization:ClanSeasonProgression_04_Paint_140/name";
+      
+      public static const CLANSEASONPROGRESSION_04_PAINT_140_DESCRIPTION:String = "#vehicle_customization:ClanSeasonProgression_04_Paint_140/description";
+      
+      public static const CLANSEASONPROGRESSION_05_PAINT_140_NAME:String = "#vehicle_customization:ClanSeasonProgression_05_Paint_140/name";
+      
+      public static const CLANSEASONPROGRESSION_05_PAINT_140_DESCRIPTION:String = "#vehicle_customization:ClanSeasonProgression_05_Paint_140/description";
+      
+      public static const CLANSEASONPROGRESSION_06_PAINT_140_NAME:String = "#vehicle_customization:ClanSeasonProgression_06_Paint_140/name";
+      
+      public static const CLANSEASONPROGRESSION_06_PAINT_140_DESCRIPTION:String = "#vehicle_customization:ClanSeasonProgression_06_Paint_140/description";
+      
+      public static const CLANSEASONPROGRESSION_01_DECAL_140_NAME:String = "#vehicle_customization:ClanSeasonProgression_01_Decal_140/name";
+      
+      public static const CLANSEASONPROGRESSION_01_DECAL_140_DESCRIPTION:String = "#vehicle_customization:ClanSeasonProgression_01_Decal_140/description";
+      
+      public static const CLANSEASONPROGRESSION_02_DECAL_140_NAME:String = "#vehicle_customization:ClanSeasonProgression_02_Decal_140/name";
+      
+      public static const CLANSEASONPROGRESSION_02_DECAL_140_DESCRIPTION:String = "#vehicle_customization:ClanSeasonProgression_02_Decal_140/description";
+      
+      public static const CLANSEASONPROGRESSION_03_DECAL_140_NAME:String = "#vehicle_customization:ClanSeasonProgression_03_Decal_140/name";
+      
+      public static const CLANSEASONPROGRESSION_03_DECAL_140_DESCRIPTION:String = "#vehicle_customization:ClanSeasonProgression_03_Decal_140/description";
+      
+      public static const CLANSEASONPROGRESSION_04_DECAL_140_NAME:String = "#vehicle_customization:ClanSeasonProgression_04_Decal_140/name";
+      
+      public static const CLANSEASONPROGRESSION_04_DECAL_140_DESCRIPTION:String = "#vehicle_customization:ClanSeasonProgression_04_Decal_140/description";
+      
+      public static const CLANSEASONPROGRESSION_05_DECAL_140_NAME:String = "#vehicle_customization:ClanSeasonProgression_05_Decal_140/name";
+      
+      public static const CLANSEASONPROGRESSION_05_DECAL_140_DESCRIPTION:String = "#vehicle_customization:ClanSeasonProgression_05_Decal_140/description";
+      
+      public static const CLANSEASONPROGRESSION_06_DECAL_140_NAME:String = "#vehicle_customization:ClanSeasonProgression_06_Decal_140/name";
+      
+      public static const CLANSEASONPROGRESSION_06_DECAL_140_DESCRIPTION:String = "#vehicle_customization:ClanSeasonProgression_06_Decal_140/description";
+      
+      public static const CLANSEASONPROGRESSION_00_STYLE_140_NAME:String = "#vehicle_customization:ClanSeasonProgression_00_Style_140/name";
+      
+      public static const CLANSEASONPROGRESSION_00_STYLE_140_DESCRIPTION:String = "#vehicle_customization:ClanSeasonProgression_00_Style_140/description";
+      
+      public static const CLANSEASONPROGRESSION_00_STYLE_140_LONGDESCRIPTION:String = "#vehicle_customization:ClanSeasonProgression_00_Style_140/longDescription";
+      
+      public static const CLANSEASONPROGRESSION_01_STYLE_140_NAME:String = "#vehicle_customization:ClanSeasonProgression_01_Style_140/name";
+      
+      public static const CLANSEASONPROGRESSION_01_STYLE_140_DESCRIPTION:String = "#vehicle_customization:ClanSeasonProgression_01_Style_140/description";
+      
+      public static const CLANSEASONPROGRESSION_01_STYLE_140_LONGDESCRIPTION:String = "#vehicle_customization:ClanSeasonProgression_01_Style_140/longDescription";
+      
+      public static const CLANSEASONPROGRESSION_02_STYLE_140_NAME:String = "#vehicle_customization:ClanSeasonProgression_02_Style_140/name";
+      
+      public static const CLANSEASONPROGRESSION_02_STYLE_140_DESCRIPTION:String = "#vehicle_customization:ClanSeasonProgression_02_Style_140/description";
+      
+      public static const CLANSEASONPROGRESSION_02_STYLE_140_LONGDESCRIPTION:String = "#vehicle_customization:ClanSeasonProgression_02_Style_140/longDescription";
+      
+      public static const CLANSEASONPROGRESSION_03_STYLE_140_NAME:String = "#vehicle_customization:ClanSeasonProgression_03_Style_140/name";
+      
+      public static const CLANSEASONPROGRESSION_03_STYLE_140_DESCRIPTION:String = "#vehicle_customization:ClanSeasonProgression_03_Style_140/description";
+      
+      public static const CLANSEASONPROGRESSION_03_STYLE_140_LONGDESCRIPTION:String = "#vehicle_customization:ClanSeasonProgression_03_Style_140/longDescription";
+      
+      public static const CLANSEASONPROGRESSION_04_STYLE_140_NAME:String = "#vehicle_customization:ClanSeasonProgression_04_Style_140/name";
+      
+      public static const CLANSEASONPROGRESSION_04_STYLE_140_DESCRIPTION:String = "#vehicle_customization:ClanSeasonProgression_04_Style_140/description";
+      
+      public static const CLANSEASONPROGRESSION_04_STYLE_140_LONGDESCRIPTION:String = "#vehicle_customization:ClanSeasonProgression_04_Style_140/longDescription";
+      
+      public static const CLANSEASONPROGRESSION_05_STYLE_140_NAME:String = "#vehicle_customization:ClanSeasonProgression_05_Style_140/name";
+      
+      public static const CLANSEASONPROGRESSION_05_STYLE_140_DESCRIPTION:String = "#vehicle_customization:ClanSeasonProgression_05_Style_140/description";
+      
+      public static const CLANSEASONPROGRESSION_05_STYLE_140_LONGDESCRIPTION:String = "#vehicle_customization:ClanSeasonProgression_05_Style_140/longDescription";
+      
+      public static const CLANSEASONPROGRESSION_06_STYLE_140_NAME:String = "#vehicle_customization:ClanSeasonProgression_06_Style_140/name";
+      
+      public static const CLANSEASONPROGRESSION_06_STYLE_140_DESCRIPTION:String = "#vehicle_customization:ClanSeasonProgression_06_Style_140/description";
+      
+      public static const CLANSEASONPROGRESSION_06_STYLE_140_LONGDESCRIPTION:String = "#vehicle_customization:ClanSeasonProgression_06_Style_140/longDescription";
+      
+      public static const CLANSEASONPROGRESSION_INSCRIPTION_01_140_NAME:String = "#vehicle_customization:ClanSeasonProgression_Inscription_01_140/name";
+      
+      public static const CLANSEASONPROGRESSION_INSCRIPTION_01_140_DESCRIPTION:String = "#vehicle_customization:ClanSeasonProgression_Inscription_01_140/description";
+      
+      public static const CLANSEASONPROGRESSION_INSCRIPTION_02_140_NAME:String = "#vehicle_customization:ClanSeasonProgression_Inscription_02_140/name";
+      
+      public static const CLANSEASONPROGRESSION_INSCRIPTION_02_140_DESCRIPTION:String = "#vehicle_customization:ClanSeasonProgression_Inscription_02_140/description";
+      
+      public static const CLANSEASONPROGRESSION_INSCRIPTION_03_140_NAME:String = "#vehicle_customization:ClanSeasonProgression_Inscription_03_140/name";
+      
+      public static const CLANSEASONPROGRESSION_INSCRIPTION_03_140_DESCRIPTION:String = "#vehicle_customization:ClanSeasonProgression_Inscription_03_140/description";
+      
+      public static const CLANSEASONPROGRESSION_INSCRIPTION_04_140_NAME:String = "#vehicle_customization:ClanSeasonProgression_Inscription_04_140/name";
+      
+      public static const CLANSEASONPROGRESSION_INSCRIPTION_04_140_DESCRIPTION:String = "#vehicle_customization:ClanSeasonProgression_Inscription_04_140/description";
+      
+      public static const CLANSEASONPROGRESSION_EMBLEM_01_140_NAME:String = "#vehicle_customization:ClanSeasonProgression_Emblem_01_140/name";
+      
+      public static const CLANSEASONPROGRESSION_EMBLEM_01_140_DESCRIPTION:String = "#vehicle_customization:ClanSeasonProgression_Emblem_01_140/description";
+      
+      public static const CLANSEASONPROGRESSION_EMBLEM_02_140_NAME:String = "#vehicle_customization:ClanSeasonProgression_Emblem_02_140/name";
+      
+      public static const CLANSEASONPROGRESSION_EMBLEM_02_140_DESCRIPTION:String = "#vehicle_customization:ClanSeasonProgression_Emblem_02_140/description";
+      
+      public static const GB143_CAPTAIN_3DST_01_NAME:String = "#vehicle_customization:GB143_Captain_3Dst_01/name";
+      
+      public static const GB143_CAPTAIN_3DST_01_DESCRIPTION:String = "#vehicle_customization:GB143_Captain_3Dst_01/description";
+      
+      public static const BP18STALCRAFT_03_PAINT_01_140_NAME:String = "#vehicle_customization:BP18Stalcraft_03_Paint_01_140/name";
+      
+      public static const BP18STALCRAFT_03_PAINT_01_140_DESCRIPTION:String = "#vehicle_customization:BP18Stalcraft_03_Paint_01_140/description";
+      
+      public static const BP18STALCRAFT_03_PAINT_02_140_NAME:String = "#vehicle_customization:BP18Stalcraft_03_Paint_02_140/name";
+      
+      public static const BP18STALCRAFT_03_PAINT_02_140_DESCRIPTION:String = "#vehicle_customization:BP18Stalcraft_03_Paint_02_140/description";
+      
+      public static const BP18STALCRAFT_03_PAINT_03_140_NAME:String = "#vehicle_customization:BP18Stalcraft_03_Paint_03_140/name";
+      
+      public static const BP18STALCRAFT_03_PAINT_03_140_DESCRIPTION:String = "#vehicle_customization:BP18Stalcraft_03_Paint_03_140/description";
+      
+      public static const BP18STALCRAFT_03_CAMO_140_NAME:String = "#vehicle_customization:BP18Stalcraft_03_Camo_140/name";
+      
+      public static const BP18STALCRAFT_03_CAMO_140_DESCRIPTION:String = "#vehicle_customization:BP18Stalcraft_03_Camo_140/description";
+      
+      public static const BP18STALCRAFT_03_STYLE_140_NAME:String = "#vehicle_customization:BP18Stalcraft_03_Style_140/name";
+      
+      public static const BP18STALCRAFT_03_STYLE_140_DESCRIPTION:String = "#vehicle_customization:BP18Stalcraft_03_Style_140/description";
+      
+      public static const BP18STALCRAFT_03_STYLE_140_LONGDESCRIPTION:String = "#vehicle_customization:BP18Stalcraft_03_Style_140/longDescription";
+      
+      public static const BP18STALCRAFT_03_DECAL_01_140_NAME:String = "#vehicle_customization:BP18Stalcraft_03_Decal_01_140/name";
+      
+      public static const BP18STALCRAFT_03_DECAL_01_140_DESCRIPTION:String = "#vehicle_customization:BP18Stalcraft_03_Decal_01_140/description";
+      
+      public static const BP18STALCRAFT_03_DECAL_02_140_NAME:String = "#vehicle_customization:BP18Stalcraft_03_Decal_02_140/name";
+      
+      public static const BP18STALCRAFT_03_DECAL_02_140_DESCRIPTION:String = "#vehicle_customization:BP18Stalcraft_03_Decal_02_140/description";
+      
+      public static const BP18STALCRAFT_03_DECAL_03_140_NAME:String = "#vehicle_customization:BP18Stalcraft_03_Decal_03_140/name";
+      
+      public static const BP18STALCRAFT_03_DECAL_03_140_DESCRIPTION:String = "#vehicle_customization:BP18Stalcraft_03_Decal_03_140/description";
+      
+      public static const BP18STALCRAFT_01_PAINT_140_NAME:String = "#vehicle_customization:BP18Stalcraft_01_Paint_140/name";
+      
+      public static const BP18STALCRAFT_01_PAINT_140_DESCRIPTION:String = "#vehicle_customization:BP18Stalcraft_01_Paint_140/description";
+      
+      public static const BP18STALCRAFT_01_CAMO_140_NAME:String = "#vehicle_customization:BP18Stalcraft_01_Camo_140/name";
+      
+      public static const BP18STALCRAFT_01_CAMO_140_DESCRIPTION:String = "#vehicle_customization:BP18Stalcraft_01_Camo_140/description";
+      
+      public static const BP18STALCRAFT_01_STYLE_140_NAME:String = "#vehicle_customization:BP18Stalcraft_01_Style_140/name";
+      
+      public static const BP18STALCRAFT_01_STYLE_140_DESCRIPTION:String = "#vehicle_customization:BP18Stalcraft_01_Style_140/description";
+      
+      public static const BP18STALCRAFT_01_STYLE_140_LONGDESCRIPTION:String = "#vehicle_customization:BP18Stalcraft_01_Style_140/longDescription";
+      
+      public static const BP18STALCRAFT_01_DECAL_01_140_NAME:String = "#vehicle_customization:BP18Stalcraft_01_Decal_01_140/name";
+      
+      public static const BP18STALCRAFT_01_DECAL_01_140_DESCRIPTION:String = "#vehicle_customization:BP18Stalcraft_01_Decal_01_140/description";
+      
+      public static const BP18STALCRAFT_01_DECAL_02_140_NAME:String = "#vehicle_customization:BP18Stalcraft_01_Decal_02_140/name";
+      
+      public static const BP18STALCRAFT_01_DECAL_02_140_DESCRIPTION:String = "#vehicle_customization:BP18Stalcraft_01_Decal_02_140/description";
+      
+      public static const BP18STALCRAFT_DECAL_01_140_NAME:String = "#vehicle_customization:BP18Stalcraft_Decal_01_140/name";
+      
+      public static const BP18STALCRAFT_DECAL_01_140_DESCRIPTION:String = "#vehicle_customization:BP18Stalcraft_Decal_01_140/description";
+      
+      public static const BP18STALCRAFT_DECAL_02_140_NAME:String = "#vehicle_customization:BP18Stalcraft_Decal_02_140/name";
+      
+      public static const BP18STALCRAFT_DECAL_02_140_DESCRIPTION:String = "#vehicle_customization:BP18Stalcraft_Decal_02_140/description";
+      
+      public static const BP18STALCRAFT_INSCRIPTION_01_140_NAME:String = "#vehicle_customization:BP18Stalcraft_Inscription_01_140/name";
+      
+      public static const BP18STALCRAFT_INSCRIPTION_01_140_DESCRIPTION:String = "#vehicle_customization:BP18Stalcraft_Inscription_01_140/description";
+      
+      public static const BP18STALCRAFT_INSCRIPTION_02_140_NAME:String = "#vehicle_customization:BP18Stalcraft_Inscription_02_140/name";
+      
+      public static const BP18STALCRAFT_INSCRIPTION_02_140_DESCRIPTION:String = "#vehicle_customization:BP18Stalcraft_Inscription_02_140/description";
+      
+      public static const BP18STALCRAFT_02_PAINT_140_NAME:String = "#vehicle_customization:BP18Stalcraft_02_Paint_140/name";
+      
+      public static const BP18STALCRAFT_02_PAINT_140_DESCRIPTION:String = "#vehicle_customization:BP18Stalcraft_02_Paint_140/description";
+      
+      public static const BP18STALCRAFT_02_CAMO_TURRETGAN_140_NAME:String = "#vehicle_customization:BP18Stalcraft_02_Camo_TurretGan_140/name";
+      
+      public static const BP18STALCRAFT_02_CAMO_TURRETGAN_140_DESCRIPTION:String = "#vehicle_customization:BP18Stalcraft_02_Camo_TurretGan_140/description";
+      
+      public static const BP18STALCRAFT_02_CAMO_HULL_140_NAME:String = "#vehicle_customization:BP18Stalcraft_02_Camo_Hull_140/name";
+      
+      public static const BP18STALCRAFT_02_CAMO_HULL_140_DESCRIPTION:String = "#vehicle_customization:BP18Stalcraft_02_Camo_Hull_140/description";
+      
+      public static const BP18STALCRAFT_02_STYLE_140_NAME:String = "#vehicle_customization:BP18Stalcraft_02_Style_140/name";
+      
+      public static const BP18STALCRAFT_02_STYLE_140_DESCRIPTION:String = "#vehicle_customization:BP18Stalcraft_02_Style_140/description";
+      
+      public static const BP18STALCRAFT_02_STYLE_140_LONGDESCRIPTION:String = "#vehicle_customization:BP18Stalcraft_02_Style_140/longDescription";
+      
+      public static const CSKA_03_DECAL_01_140_NAME:String = "#vehicle_customization:CSKA_03_Decal_01_140/name";
+      
+      public static const CSKA_03_DECAL_01_140_DESCRIPTION:String = "#vehicle_customization:CSKA_03_Decal_01_140/description";
+      
+      public static const CSKA_03_DECAL_02_140_NAME:String = "#vehicle_customization:CSKA_03_Decal_02_140/name";
+      
+      public static const CSKA_03_DECAL_02_140_DESCRIPTION:String = "#vehicle_customization:CSKA_03_Decal_02_140/description";
+      
+      public static const CSKA_03_DECAL_03_140_NAME:String = "#vehicle_customization:CSKA_03_Decal_03_140/name";
+      
+      public static const CSKA_03_DECAL_03_140_DESCRIPTION:String = "#vehicle_customization:CSKA_03_Decal_03_140/description";
+      
+      public static const CSKA_03_DECAL_04_140_NAME:String = "#vehicle_customization:CSKA_03_Decal_04_140/name";
+      
+      public static const CSKA_03_DECAL_04_140_DESCRIPTION:String = "#vehicle_customization:CSKA_03_Decal_04_140/description";
+      
+      public static const CSKA_03_DECAL_05_140_NAME:String = "#vehicle_customization:CSKA_03_Decal_05_140/name";
+      
+      public static const CSKA_03_DECAL_05_140_DESCRIPTION:String = "#vehicle_customization:CSKA_03_Decal_05_140/description";
+      
+      public static const CSKA_01_PAINT_140_NAME:String = "#vehicle_customization:CSKA_01_Paint_140/name";
+      
+      public static const CSKA_01_PAINT_140_DESCRIPTION:String = "#vehicle_customization:CSKA_01_Paint_140/description";
+      
+      public static const CSKA_01_DECAL_01_140_NAME:String = "#vehicle_customization:CSKA_01_Decal_01_140/name";
+      
+      public static const CSKA_01_DECAL_01_140_DESCRIPTION:String = "#vehicle_customization:CSKA_01_Decal_01_140/description";
+      
+      public static const CSKA_01_DECAL_02_140_NAME:String = "#vehicle_customization:CSKA_01_Decal_02_140/name";
+      
+      public static const CSKA_01_DECAL_02_140_DESCRIPTION:String = "#vehicle_customization:CSKA_01_Decal_02_140/description";
+      
+      public static const CSKA_01_DECAL_03_140_NAME:String = "#vehicle_customization:CSKA_01_Decal_03_140/name";
+      
+      public static const CSKA_01_DECAL_03_140_DESCRIPTION:String = "#vehicle_customization:CSKA_01_Decal_03_140/description";
+      
+      public static const CSKA_01_CAMO_140_NAME:String = "#vehicle_customization:CSKA_01_Camo_140/name";
+      
+      public static const CSKA_01_CAMO_140_DESCRIPTION:String = "#vehicle_customization:CSKA_01_Camo_140/description";
+      
+      public static const CSKA_01_STYLE_140_NAME:String = "#vehicle_customization:CSKA_01_Style_140/name";
+      
+      public static const CSKA_01_STYLE_140_DESCRIPTION:String = "#vehicle_customization:CSKA_01_Style_140/description";
+      
+      public static const CSKA_01_STYLE_140_LONGDESCRIPTION:String = "#vehicle_customization:CSKA_01_Style_140/longDescription";
        
       
       public function VEHICLE_CUSTOMIZATION()

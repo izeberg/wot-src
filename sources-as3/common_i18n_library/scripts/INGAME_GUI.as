@@ -155,6 +155,8 @@ package
       
       public static const PLAYER_MESSAGES_ALLY_HIT:String = "#ingame_gui:player_messages/ALLY_HIT";
       
+      public static const PLAYER_MESSAGES_ALLY_HIT_SUPPLY:String = "#ingame_gui:player_messages/ALLY_HIT_SUPPLY";
+      
       public static const PLAYER_MESSAGES_ALLY_BASE_CAPTURED_NOTIFICATION:String = "#ingame_gui:player_messages/ally_base_captured_notification";
       
       public static const PLAYER_MESSAGES_ENEMY_BASE_CAPTURED_NOTIFICATION:String = "#ingame_gui:player_messages/enemy_base_captured_notification";
@@ -284,6 +286,16 @@ package
       public static const CHAT_SHORTCUTS_NEGATIVE:String = "#ingame_gui:chat_shortcuts/negative";
       
       public static const CHAT_SHORTCUTS_ATTENTION_TO_CELL:String = "#ingame_gui:chat_shortcuts/attention_to_cell";
+      
+      public static const CHAT_SHORTCUTS_DEFEND_SUPPLY:String = "#ingame_gui:chat_shortcuts/defend_supply";
+      
+      public static const CHAT_SHORTCUTS_DEFENDING_SUPPLY:String = "#ingame_gui:chat_shortcuts/defending_supply";
+      
+      public static const CHAT_SHORTCUTS_SUPPLY_SELF_REPAIR:String = "#ingame_gui:chat_shortcuts/supply_self_repair";
+      
+      public static const CHAT_SHORTCUTS_ATTACK_SUPPLY:String = "#ingame_gui:chat_shortcuts/attack_supply";
+      
+      public static const CHAT_SHORTCUTS_ATTACKING_SUPPLY:String = "#ingame_gui:chat_shortcuts/attacking_supply";
       
       public static const CHAT_SHORTCUTS_GLOBAL_MSG_ATK_SAVE_TANKS:String = "#ingame_gui:chat_shortcuts/global_msg/atk/save_tanks";
       
@@ -517,6 +529,10 @@ package
       
       public static const SHELLS_KINDS_PARAMS_DAMAGEPERSECOND:String = "#ingame_gui:shells_kinds/params/damagePerSecond";
       
+      public static const SHELLS_KINDS_PARAMS_DAMAGEPERSHOT:String = "#ingame_gui:shells_kinds/params/damagePerShot";
+      
+      public static const SHELLS_KINDS_PARAMS_DAMAGEPERCASSETE:String = "#ingame_gui:shells_kinds/params/damagePerCassete";
+      
       public static const SHELLS_KINDS_PARAMS_PIERCINGPOWER:String = "#ingame_gui:shells_kinds/params/piercingPower";
       
       public static const SHELLS_KINDS_PARAMS_DISTANCEFACTORPIERCINGPOWER:String = "#ingame_gui:shells_kinds/params/distanceFactorPiercingPower";
@@ -717,6 +733,14 @@ package
       
       public static const EPIC_PLAYERS_PANEL_STATE_TOGGLE_NOTE:String = "#ingame_gui:epic_players_panel/state/toggle/note";
       
+      public static const PLAYER_MESSAGES_EPIC_ALLY_BASE_CAPTURED_BY_NOTIFICATION:String = "#ingame_gui:player_messages/epic_ally_base_captured_by_notification";
+      
+      public static const PLAYER_MESSAGES_EPIC_ENEMY_BASE_CAPTURED_BY_NOTIFICATION:String = "#ingame_gui:player_messages/epic_enemy_base_captured_by_notification";
+      
+      public static const PLAYER_MESSAGES_EPIC_ALLY_BASE_CAPTURED_NOTIFICATION:String = "#ingame_gui:player_messages/epic_ally_base_captured_notification";
+      
+      public static const PLAYER_MESSAGES_EPIC_ENEMY_BASE_CAPTURED_NOTIFICATION:String = "#ingame_gui:player_messages/epic_enemy_base_captured_notification";
+      
       public static const VEHICLE_MESSAGES_DEVICE_CRITICAL_AT_WORLD_COLLISION_SELF_SUICIDE:String = "#ingame_gui:vehicle_messages/DEVICE_CRITICAL_AT_WORLD_COLLISION_SELF_SUICIDE";
       
       public static const VEHICLE_MESSAGES_DEVICE_CRITICAL_AT_WORLD_COLLISION_ENEMY_SELF:String = "#ingame_gui:vehicle_messages/DEVICE_CRITICAL_AT_WORLD_COLLISION_ENEMY_SELF";
@@ -811,6 +835,8 @@ package
       
       public static const POSTMORTEM_MESSAGES_DEATH_FROM_MINE_EXPLOSION:String = "#ingame_gui:postmortem_messages/DEATH_FROM_MINE_EXPLOSION";
       
+      public static const POSTMORTEM_MESSAGES_DEATH_FROM_SUPPLY:String = "#ingame_gui:postmortem_messages/DEATH_FROM_SUPPLY";
+      
       public static const PLAYER_MESSAGES_DEATH_FROM_SHOT_SELF_ALLY:String = "#ingame_gui:player_messages/DEATH_FROM_SHOT_SELF_ALLY";
       
       public static const PLAYER_MESSAGES_DEATH_FROM_SHOT_SELF_ALLY_ARTILLERY:String = "#ingame_gui:player_messages/DEATH_FROM_SHOT_SELF_ALLY_ARTILLERY";
@@ -822,6 +848,8 @@ package
       public static const PLAYER_MESSAGES_DEATH_FROM_SHOT_SELF_ENEMY_ARTILLERY:String = "#ingame_gui:player_messages/DEATH_FROM_SHOT_SELF_ENEMY_ARTILLERY";
       
       public static const PLAYER_MESSAGES_DEATH_FROM_SHOT_SELF_ENEMY_BOMBER:String = "#ingame_gui:player_messages/DEATH_FROM_SHOT_SELF_ENEMY_BOMBER";
+      
+      public static const PLAYER_MESSAGES_DEATH_FROM_SHOT_SELF_ENEMY_SUPPLY:String = "#ingame_gui:player_messages/DEATH_FROM_SHOT_SELF_ENEMY_SUPPLY";
       
       public static const PLAYER_MESSAGES_DEATH_FROM_MINE_EXPLOSION_SELF_ENEMY_ARCADE:String = "#ingame_gui:player_messages/DEATH_FROM_MINE_EXPLOSION_SELF_ENEMY_ARCADE";
       
@@ -836,6 +864,10 @@ package
       public static const PLAYER_MESSAGES_DEATH_FROM_SHOT_ALLY_ENEMY_ARTILLERY:String = "#ingame_gui:player_messages/DEATH_FROM_SHOT_ALLY_ENEMY_ARTILLERY";
       
       public static const PLAYER_MESSAGES_DEATH_FROM_SHOT_ALLY_ENEMY_BOMBER:String = "#ingame_gui:player_messages/DEATH_FROM_SHOT_ALLY_ENEMY_BOMBER";
+      
+      public static const PLAYER_MESSAGES_DEATH_FROM_SHOT_ALLY_ENEMY_SUPPLY:String = "#ingame_gui:player_messages/DEATH_FROM_SHOT_ALLY_ENEMY_SUPPLY";
+      
+      public static const PLAYER_MESSAGES_DEATH_FROM_SHOT_SUPPLY_ALLY_ENEMY:String = "#ingame_gui:player_messages/DEATH_FROM_SHOT_SUPPLY_ALLY_ENEMY";
       
       public static const PLAYER_MESSAGES_DEATH_FROM_MINE_EXPLOSION_ALLY_ENEMY_ARCADE:String = "#ingame_gui:player_messages/DEATH_FROM_MINE_EXPLOSION_ALLY_ENEMY_ARCADE";
       
@@ -856,6 +888,14 @@ package
       public static const PLAYER_MESSAGES_DEATH_FROM_SHOT_ENEMY_ALLY_ARTILLERY:String = "#ingame_gui:player_messages/DEATH_FROM_SHOT_ENEMY_ALLY_ARTILLERY";
       
       public static const PLAYER_MESSAGES_DEATH_FROM_SHOT_ENEMY_ALLY_BOMBER:String = "#ingame_gui:player_messages/DEATH_FROM_SHOT_ENEMY_ALLY_BOMBER";
+      
+      public static const PLAYER_MESSAGES_DEATH_FROM_SHOT_ENEMY_ALLY_SUPPLY:String = "#ingame_gui:player_messages/DEATH_FROM_SHOT_ENEMY_ALLY_SUPPLY";
+      
+      public static const PLAYER_MESSAGES_DEATH_FROM_SHOT_SUPPLY_ENEMY_ALLY:String = "#ingame_gui:player_messages/DEATH_FROM_SHOT_SUPPLY_ENEMY_ALLY";
+      
+      public static const PLAYER_MESSAGES_DEATH_FROM_SHOT_SUPPLY_ENEMY_ALLY_SUPPLY:String = "#ingame_gui:player_messages/DEATH_FROM_SHOT_SUPPLY_ENEMY_ALLY_SUPPLY";
+      
+      public static const PLAYER_MESSAGES_DEATH_FROM_SHOT_SUPPLY_ALLY_ENEMY_SUPPLY:String = "#ingame_gui:player_messages/DEATH_FROM_SHOT_SUPPLY_ALLY_ENEMY_SUPPLY";
       
       public static const PLAYER_MESSAGES_DEATH_FROM_MINE_EXPLOSION_ENEMY_ALLY_ARCADE:String = "#ingame_gui:player_messages/DEATH_FROM_MINE_EXPLOSION_ENEMY_ALLY_ARCADE";
       

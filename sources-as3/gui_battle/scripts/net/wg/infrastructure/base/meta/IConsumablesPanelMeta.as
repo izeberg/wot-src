@@ -87,5 +87,9 @@ package net.wg.infrastructure.base.meta
       function as_setRespawnSlotQuantity(param1:int, param2:int) : void;
       
       function as_setRespawnSlotState(param1:int, param2:Boolean) : void;
+      
+      function as_showContextHint(param1:int, param2:String) : void;
+      
+      function as_hideContextHint(param1:int) : void;
    }
 }

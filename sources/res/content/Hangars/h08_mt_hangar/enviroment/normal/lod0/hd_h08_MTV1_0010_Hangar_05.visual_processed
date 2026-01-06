@@ -99,24 +99,32 @@
 				0
 				<material>
 					<identifier>s_nd0</identifier>
-					<fx>shaders/std_effects/glow.fx</fx>
+					<fx>shaders/custom/emissive.fx</fx>
 					<materialKind>108</materialKind>
 					<collisionFlags>255</collisionFlags>
 					<property>
-						destBlend
-						<Int>5</Int>
-					</property>
-					<property>
-						diffuseMap
+						emissiveTexture
 						<Texture>content/Hangars/h08_mt_hangar/enviroment/hd_h08_MTV1_0010_HangarGlass_AM.dds</Texture>
 					</property>
 					<property>
-						g_tintColor
-						<Vector4>0.501961 0.376471 0.247059 1.000000</Vector4>
+						g_coldColor
+						<Vector4>0.270588 0.156863 0.070588 1.000000</Vector4>
 					</property>
 					<property>
-						selfIllumination
-						<Float>6.000000</Float>
+						g_hotColor
+						<Vector4>0.329412 0.254902 0.160784 1.000000</Vector4>
+					</property>
+					<property>
+						g_maskFromTex
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_usePulse
+						<Bool>false</Bool>
+					</property>
+					<property>
+						phaseTexture
+						<Texture>content/Hangars/h08_mt_hangar/enviroment/hd_h08_MTV1_0010_HangarGlass_AM.dds</Texture>
 					</property>
 					<property>
 						srcBlend

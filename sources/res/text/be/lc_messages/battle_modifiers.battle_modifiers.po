@@ -31,6 +31,22 @@ msgstr ""
 msgid "domain/battleParams/name"
 msgstr "Параметры бою"
 
+msgid "domain/battleSeasonModifiers/description"
+msgstr ""
+"Изменяет некоторые параметры всей техники, участвующей в сражениях "
+"Укрепрайона."
+
+msgid "domain/battleSeasonModifiers/name"
+msgstr "Модификатор Укрепрайона"
+
+msgid "domain/battleSeasonModifiersGM/description"
+msgstr ""
+"Изменяет некоторые параметры всей техники, участвующей в сражениях на "
+"Глобальной карте."
+
+msgid "domain/battleSeasonModifiersGM/name"
+msgstr "Модификатор Глобальной карты"
+
 msgid "domain/comp7SeasonModifiers/description"
 msgstr ""
 "На ўсю тэхніку ў баях Націску дзейнічае асаблівы мадыфікатар, які змяняе яе "
@@ -162,7 +178,7 @@ msgid "modifier/name/equipmentCooldown"
 msgstr "Перазарадка рыштунку"
 
 msgid "modifier/name/fakeComp7DeviceDamage"
-msgstr "Увеличение прочности модулей техники"
+msgstr "Павелічэнне трываласці модуляў тэхнікі"
 
 msgid "modifier/name/fakeComp7GoldShell"
 msgstr "Прабіццё спецыяльных снарадаў на 100 метраў"
@@ -185,6 +201,12 @@ msgstr "Мінімальны час перанабівання зоны рамо
 
 msgid "modifier/name/fakeModifierRepairSpeed"
 msgstr "Хуткасць аднаўлення ачкоў трываласці машыны."
+
+msgid "modifier/name/fakeSHVisionLightTank"
+msgstr "Радиус обзора (лёгкие гусеничные танки)"
+
+msgid "modifier/name/fakeSHVisionOtherTank"
+msgstr "Радиус обзора (средние и тяжёлые танки, а также ПТ-САУ)"
 
 msgid "modifier/name/fwMaxSpeed"
 msgstr "Максімальная хуткасць руху наперад"

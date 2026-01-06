@@ -56,9 +56,6 @@ msgstr "{minutes} мин."
 msgid "duration/seconds"
 msgstr "{seconds} с"
 
-msgid "duration/shortMinutes"
-msgstr "{minutes} мин."
-
 msgid "duration/unlimited"
 msgstr "Бессрочно"
 
@@ -81,7 +78,7 @@ msgid "relativeDateTime/hour_past"
 msgstr "час назад"
 
 msgid "relativeDateTime/minutes_past"
-msgstr "{minutes} мин назад"
+msgstr "{minutes} мин. назад"
 
 msgid "relativeDateTime/now"
 msgstr "только что"

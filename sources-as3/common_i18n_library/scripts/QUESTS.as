@@ -111,8 +111,6 @@ package
       
       public static const BONUSES_ITEM_LOOTBOXES:String = "#quests:bonuses/item/lootBoxes";
       
-      public static const BONUSES_ITEM_LOOTBOXESMACHINE:String = "#quests:bonuses/item/lootBoxesMachine";
-      
       public static const BONUSES_ITEM_LOCKPICK:String = "#quests:bonuses/item/lockpick";
       
       public static const BONUSES_ITEM_LOOTBOXKEY:String = "#quests:bonuses/item/lootBoxKey";
@@ -174,14 +172,6 @@ package
       public static const BONUSES_ITEM_TANKMEN_WITH_SKILLS:String = "#quests:bonuses/item/tankmen/with_skills";
       
       public static const BONUSES_NOTAVAILABLE:String = "#quests:bonuses/notAvailable";
-      
-      public static const BONUSNAME_NY22FILLERS:String = "#quests:bonusName/ny22Fillers";
-      
-      public static const BONUSNAME_NEWYEARSLOT:String = "#quests:bonusName/newYearSlot";
-      
-      public static const BONUSES_VARIADICDISCOUNT_DISCOUNTAMOUNT:String = "#quests:bonuses/variadicDiscount/discountAmount";
-      
-      public static const BONUSES_VARIADICDISCOUNT_BUTTONLABEL:String = "#quests:bonuses/variadicDiscount/buttonLabel";
       
       public static const QUESTS_TITLE:String = "#quests:quests/title";
       
@@ -2435,8 +2425,6 @@ package
       
       public static const BONUSNAME_BPCOIN:String = "#quests:bonusName/bpcoin";
       
-      public static const BONUSNAME_SACOIN:String = "#quests:bonusName/sacoin";
-      
       public static const BONUSNAME_EQUIPCOIN:String = "#quests:bonusName/equipCoin";
       
       public static const BONUSNAME_XP:String = "#quests:bonusName/xp";
@@ -2563,9 +2551,11 @@ package
       
       public static const BONUSNAME_ENTITLEMENTS_RANKED_202203_ACCESS:String = "#quests:bonusName/entitlements/ranked_202203_access";
       
-      public static const BONUSNAME_ENTITLEMENTS_NY26_MARKETPLACE_UNLOCK:String = "#quests:bonusName/entitlements/ny26_marketplace_unlock";
-      
       public static const BONUSNAME_ENTITLEMENTS_PARAGON_REWARDS_CHOICE_V_11:String = "#quests:bonusName/entitlements/paragon_rewards_choice_v_11";
+      
+      public static const BONUSNAME_ENTITLEMENTS_SHEVENTS_CLAN_COUPON:String = "#quests:bonusName/entitlements/shevents_clan_coupon";
+      
+      public static const BONUSNAME_ENTITLEMENTS_SHEVENTS_CLAN_CHEVRON:String = "#quests:bonusName/entitlements/shevents_clan_chevron";
       
       public static const BONUSNAME_BATTLE_BONUS_X5:String = "#quests:bonusName/battle_bonus_x5";
       
@@ -2593,13 +2583,7 @@ package
       
       public static const BONUSNAME_DAILY_QUESTS_REWARDS:String = "#quests:bonusName/daily_quests_rewards";
       
-      public static const BONUSNAME_QUESTS:String = "#quests:bonusName/quests";
-      
-      public static const BONUSNAME_NYRFOOD:String = "#quests:bonusName/nyrfood";
-      
-      public static const BONUSNAME_NYRFUN:String = "#quests:bonusName/nyrfun";
-      
-      public static const BONUSNAME_NYRACTIV:String = "#quests:bonusName/nyractiv";
+      public static const BONUSNAME_CLAN_SEASON_PROGRESS:String = "#quests:bonusName/clan_season_progress";
       
       public static const ACTION_AUTO_CALENDAR:String = "#quests:action/auto/calendar";
       
@@ -3463,10 +3447,6 @@ package
       
       public static const INFOPAGE_DAILYMISSIONS_DEFAULT:String = "#quests:infoPage/dailyMissions/default";
       
-      public static const DAILYQUESTS_INFO_NYDAILYMISSIONS:String = "#quests:dailyQuests/info/NYDailyMissions";
-      
-      public static const DAILYQUESTS_INFO_DAILYMISSIONTITLE:String = "#quests:dailyQuests/info/dailyMissionTitle";
-      
       public static const INFOPAGE_DAILYMISSIONS_SUBSCRIPTION_DEFAULT:String = "#quests:infoPage/dailyMissions/subscription/default";
       
       public static const INFOPAGE_DAILYMISSIONS_BATTLEPASSDAILYMISSIONS_DEFAULT:String = "#quests:infoPage/dailyMissions/battlePassDailyMissions/default";
@@ -3474,8 +3454,6 @@ package
       public static const INFOPAGE_DAILYMISSIONS_WINBACK:String = "#quests:infoPage/dailyMissions/winback";
       
       public static const INFOPAGE_DAILYMISSIONS_BATTLEPASSDAILYMISSIONS_WINBACK:String = "#quests:infoPage/dailyMissions/battlePassDailyMissions/winback";
-      
-      public static const DAILYQUESTS_INFO_GIFTSYSTEMDISABLEDDAILYMISSIONS:String = "#quests:dailyQuests/info/giftSystemDisabledDailyMissions";
       
       public static const INFOPAGE_PREMIUMMISSIONS_DEFAULT:String = "#quests:infoPage/premiumMissions/default";
       
@@ -3510,12 +3488,6 @@ package
       public static const INFOPAGE_MISSIONSWITCH_MIN:String = "#quests:infoPage/missionSwitch_min";
       
       public static const INFOPAGE_MISSIONSWITCH_WINBACK:String = "#quests:infoPage/missionSwitch/winback";
-      
-      public static const INFOPAGE_LOOTBOXCONDITIONSTITLE:String = "#quests:infoPage/lootboxConditionsTitle";
-      
-      public static const INFOPAGE_LOOTBOXCONDITIONS_DEFAULT:String = "#quests:infoPage/lootboxConditions/default";
-      
-      public static const INFOPAGE_LOOTBOXCONDITIONS_BUTTON:String = "#quests:infoPage/lootboxConditions/button";
       
       public static const DAILYQUESTS_CONDITION_DODAMAGE:String = "#quests:dailyQuests/condition/doDamage";
       
@@ -3684,102 +3656,6 @@ package
       public static const SWITCH_ISWEEKLYENABLED:String = "#quests:switch/isWeeklyEnabled";
       
       public static const SWITCH_ISWEEKLYENABLEDTITLE:String = "#quests:switch/isWeeklyEnabledTitle";
-      
-      public static const LOOTBOX_BOXCOUNT:String = "#quests:lootBox/boxCount";
-      
-      public static const LOOTBOX_BOXESLABEL:String = "#quests:lootBox/boxesLabel";
-      
-      public static const NYTABVIEW_TITLE_DISABLED:String = "#quests:nyTabView/title/disabled";
-      
-      public static const NYTABVIEW_TITLE_DEFAULT:String = "#quests:nyTabView/title/default";
-      
-      public static const NYTABVIEW_TITLE_DONE:String = "#quests:nyTabView/title/done";
-      
-      public static const NYTABVIEW_CATEGORY_LABEL:String = "#quests:nyTabView/category/label";
-      
-      public static const NYTABVIEW_CATEGORY_TOOLTIP_HEADER:String = "#quests:nyTabView/category/tooltip/header";
-      
-      public static const NYTABVIEW_CATEGORY_TOOLTIP_BODY:String = "#quests:nyTabView/category/tooltip/body";
-      
-      public static const NYQUESTSVIEW_SWITCH_DAILY:String = "#quests:nyQuestsView/switch/daily";
-      
-      public static const NYQUESTSVIEW_SWITCH_WEEKLY:String = "#quests:nyQuestsView/switch/weekly";
-      
-      public static const NYQUESTSVIEW_VEHICLELEVEL_EXTRASMALL:String = "#quests:nyQuestsView/vehicleLevel/extraSmall";
-      
-      public static const NYQUESTSVIEW_VEHICLELEVEL_SMALL:String = "#quests:nyQuestsView/vehicleLevel/small";
-      
-      public static const NYQUESTSVIEW_VEHICLELEVEL_MEDIUM:String = "#quests:nyQuestsView/vehicleLevel/medium";
-      
-      public static const NYQUESTSVIEW_VEHICLELEVEL_LARGE:String = "#quests:nyQuestsView/vehicleLevel/large";
-      
-      public static const NYQUESTSVIEW_LEVELS:String = "#quests:nyQuestsView/levels";
-      
-      public static const NYQUESTSVIEW_TIMESPEND_TEXT_SHORT:String = "#quests:nyQuestsView/timeSpend/text/short";
-      
-      public static const NYQUESTSVIEW_TIMESPEND_TEXT_DEFAULT:String = "#quests:nyQuestsView/timeSpend/text/default";
-      
-      public static const NYQUESTSVIEW_TIMESPEND_HOURS:String = "#quests:nyQuestsView/timeSpend/hours";
-      
-      public static const NYQUESTSVIEW_TIMESPEND_HOURSMINUTES:String = "#quests:nyQuestsView/timeSpend/hoursMinutes";
-      
-      public static const NYQUESTSVIEW_TIMESPEND_MINUTES:String = "#quests:nyQuestsView/timeSpend/minutes";
-      
-      public static const NYQUESTSVIEW_REPLYBTN:String = "#quests:nyQuestsView/replyBtn";
-      
-      public static const NYQUESTSVIEW_STOPBTN:String = "#quests:nyQuestsView/stopBtn";
-      
-      public static const NYQUESTSVIEW_FOOTERTEXT_1:String = "#quests:nyQuestsView/footerText/1";
-      
-      public static const NYQUESTSVIEW_FOOTERTEXT_2:String = "#quests:nyQuestsView/footerText/2";
-      
-      public static const NYQUESTSVIEW_FOOTERTEXT_3:String = "#quests:nyQuestsView/footerText/3";
-      
-      public static const NYQUESTSVIEW_FOOTERTEXT_4:String = "#quests:nyQuestsView/footerText/4";
-      
-      public static const NYQUESTSVIEW_FOOTERTEXT_5:String = "#quests:nyQuestsView/footerText/5";
-      
-      public static const NYQUESTSVIEW_FOOTERTEXT_6:String = "#quests:nyQuestsView/footerText/6";
-      
-      public static const NYQUESTSVIEW_FOOTERTEXT_7:String = "#quests:nyQuestsView/footerText/7";
-      
-      public static const NYQUESTSVIEW_FOOTERTEXT_8:String = "#quests:nyQuestsView/footerText/8";
-      
-      public static const NYQUESTSVIEW_VOICEENABLED_TITLE:String = "#quests:nyQuestsView/voiceEnabled/title";
-      
-      public static const NYQUESTSVIEW_VOICEENABLED_TOOLTIP_HEADER:String = "#quests:nyQuestsView/voiceEnabled/tooltip/header";
-      
-      public static const NYQUESTSVIEW_VOICEENABLED_TOOLTIP_BODY:String = "#quests:nyQuestsView/voiceEnabled/tooltip/body";
-      
-      public static const DAILYWIDGET_NYCARD_TITLE:String = "#quests:dailyWidget/nyCard/title";
-      
-      public static const DAILYWIDGET_NYCARD_TOOLTIP_HEADER:String = "#quests:dailyWidget/nyCard/tooltip/header";
-      
-      public static const DAILYWIDGET_NYCARD_TOOLTIP_BODY_DEFAULT:String = "#quests:dailyWidget/nyCard/tooltip/body/default";
-      
-      public static const DAILYWIDGET_NYCARD_TOOLTIP_BODY_DONE:String = "#quests:dailyWidget/nyCard/tooltip/body/done";
-      
-      public static const DAILYWIDGET_NYCARD_TOOLTIP_BODY_DISABLED:String = "#quests:dailyWidget/nyCard/tooltip/body/disabled";
-      
-      public static const NYINFO_TITLE:String = "#quests:nyInfo/title";
-      
-      public static const NYINFO_SUBTITLE:String = "#quests:nyInfo/subtitle";
-      
-      public static const NYINFO_BLOCK_TITLE_FIRST:String = "#quests:nyInfo/block/title/first";
-      
-      public static const NYINFO_BLOCK_SUBTITLE_FIRST:String = "#quests:nyInfo/block/subtitle/first";
-      
-      public static const NYINFO_BLOCK_TITLE_SECOND:String = "#quests:nyInfo/block/title/second";
-      
-      public static const NYINFO_BLOCK_SUBTITLE_SECOND:String = "#quests:nyInfo/block/subtitle/second";
-      
-      public static const NYINFO_BLOCK_TITLE_THIRD:String = "#quests:nyInfo/block/title/third";
-      
-      public static const NYINFO_BLOCK_SUBTITLE_THIRD:String = "#quests:nyInfo/block/subtitle/third";
-      
-      public static const NYINFO_CLOSE:String = "#quests:nyInfo/close";
-      
-      public static const NYINFO_BUTTON_ACCEPT:String = "#quests:nyInfo/button/accept";
       
       public static const BATTLECONDITION_STATE_ENUM:Array = [BATTLECONDITION_STATE_COMPLETED,BATTLECONDITION_STATE_COMPLETED_PERFECTLY,BATTLECONDITION_STATE_IN_PROGRESS,BATTLECONDITION_STATE_FAILED];
       

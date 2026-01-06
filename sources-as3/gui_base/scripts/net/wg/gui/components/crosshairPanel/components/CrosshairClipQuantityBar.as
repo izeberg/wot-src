@@ -23,13 +23,15 @@ package net.wg.gui.components.crosshairPanel.components
       
       public var quantityInClipBar:MovieClip = null;
       
+      protected var _initClipCapacity:Number = -1;
+      
+      protected var _reloadingState:String = "";
+      
       private var _isUseFrameAnimation:Boolean = true;
       
       private var _currentQuantityInClip:Number = -1;
       
       private var _initQuantityBarTotalFrames:int = -1;
-      
-      private var _initClipCapacity:Number = -1;
       
       private var _initBurst:Number = -1;
       
@@ -83,6 +85,11 @@ package net.wg.gui.components.crosshairPanel.components
             gotoAndStop(param2);
          }
          this.quantityInClipBar.gotoAndStop(this.calcCurrentFrame());
+      }
+      
+      public function updateReloadingState(param1:String) : void
+      {
+         this._reloadingState = param1;
       }
       
       private function calcCurrentFrame() : int

@@ -20,6 +20,9 @@ msgstr "НАЗАД"
 msgid "button/close"
 msgstr "ЗАКРЫТЬ"
 
+msgid "button/info"
+msgstr "О СОБЫТИИ"
+
 msgid "day"
 msgid_plural "plural/day"
 msgstr[0] "{duration} день"
@@ -75,3 +78,11 @@ msgstr ""
 
 msgid "tab/skills/name"
 msgstr "Активация резервов"
+
+msgid "tab/supply/description"
+msgstr ""
+"Информация об объектах поддержки, которые могут встретиться вам в боях "
+"режима «Линия фронта»."
+
+msgid "tab/supply/name"
+msgstr "Объекты поддержки"

@@ -84,7 +84,7 @@ class VehicleAnchorsUpdater(object):
         else:
             self.__delAllAnchors()
             modeId = self.__ctx.modeId
-            tabId = self.__ctx.mode.tabId
+            tabId = self.__ctx.tabId
             styleSlot = C11nId(areaId=Area.MISC, slotType=GUI_ITEM_TYPE.STYLE, regionIdx=0)
             styleAnchorParams = self.__ctx.mode.getAnchorParams(styleSlot)
             for displayObject in displayObjects:
@@ -181,9 +181,9 @@ class VehicleAnchorsUpdater(object):
     def __updateAnchorsVisability(self):
         if self.__ctx.mode.isRegion:
             self.__updateRegionsAnchorsVisability()
-        elif self.__ctx.mode.tabId in (CustomizationTabs.EMBLEMS, CustomizationTabs.INSCRIPTIONS):
+        elif self.__ctx.tabId in (CustomizationTabs.EMBLEMS, CustomizationTabs.INSCRIPTIONS):
             self.__updateDecalAnchorsVisability()
-        elif self.__ctx.mode.tabId == CustomizationTabs.PROJECTION_DECALS:
+        elif self.__ctx.tabId == CustomizationTabs.PROJECTION_DECALS:
             self.__updateProjectionDecalAnchorsVisability()
 
     def __updateRegionsAnchorsVisability(self):
@@ -261,11 +261,11 @@ class VehicleAnchorsUpdater(object):
         self.__updateAnchorsVisability()
 
     def __onCarouselItemSelected(self, *_, **__):
-        if self.__ctx.mode.tabId == CustomizationTabs.PROJECTION_DECALS:
+        if self.__ctx.tabId == CustomizationTabs.PROJECTION_DECALS:
             self.__updateAnchorsVisability()
 
     def __onCarouselItemUnselected(self, *_, **__):
-        if self.__ctx.mode.tabId == CustomizationTabs.PROJECTION_DECALS:
+        if self.__ctx.tabId == CustomizationTabs.PROJECTION_DECALS:
             for anchor in self.__processedAnchors.itervalues():
                 anchor.state.onItemUnselected()
 
@@ -298,7 +298,7 @@ class VehicleAnchorsUpdater(object):
         self.__updateAnchorsVisability()
 
     def __onAnchorHovered(self, slotId):
-        if self.__ctx.mode.tabId != CustomizationTabs.PROJECTION_DECALS:
+        if self.__ctx.tabId != CustomizationTabs.PROJECTION_DECALS:
             return
         else:
             if self.__ctx.mode.selectedItem is None:
@@ -313,7 +313,7 @@ class VehicleAnchorsUpdater(object):
             return
 
     def __onAnchorUnhovered(self, slotId):
-        if self.__ctx.mode.tabId != CustomizationTabs.PROJECTION_DECALS:
+        if self.__ctx.tabId != CustomizationTabs.PROJECTION_DECALS:
             return
         else:
             if self.__ctx.mode.selectedItem is None:

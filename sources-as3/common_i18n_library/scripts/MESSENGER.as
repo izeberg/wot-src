@@ -2273,18 +2273,6 @@ package
       
       public static const PLATFORMCURRENCYMSG_DEBITED_FAMECOIN:String = "#messenger:platformCurrencyMsg/debited/famecoin";
       
-      public static const PLATFORMCURRENCYMSG_RECEIVED_NYRFOOD:String = "#messenger:platformCurrencyMsg/received/nyrfood";
-      
-      public static const PLATFORMCURRENCYMSG_DEBITED_NYRFOOD:String = "#messenger:platformCurrencyMsg/debited/nyrfood";
-      
-      public static const PLATFORMCURRENCYMSG_RECEIVED_NYRFUN:String = "#messenger:platformCurrencyMsg/received/nyrfun";
-      
-      public static const PLATFORMCURRENCYMSG_DEBITED_NYRFUN:String = "#messenger:platformCurrencyMsg/debited/nyrfun";
-      
-      public static const PLATFORMCURRENCYMSG_RECEIVED_NYRACTIV:String = "#messenger:platformCurrencyMsg/received/nyractiv";
-      
-      public static const PLATFORMCURRENCYMSG_DEBITED_NYRACTIV:String = "#messenger:platformCurrencyMsg/debited/nyractiv";
-      
       public static const PLATFORMCURRENCYMSG_RECEIVED_FREEXP:String = "#messenger:platformCurrencyMsg/received/freeXP";
       
       public static const PLATFORMCURRENCYMSG_DEBITED_FREEXP:String = "#messenger:platformCurrencyMsg/debited/freeXP";

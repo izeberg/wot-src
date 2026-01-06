@@ -15,19 +15,19 @@ msgstr ""
 "(n%100<10 || n%100>=20) ? 1 : 2);"
 
 msgid "alertMessage/afterSeason"
-msgstr "Событие «Ледяной тигр» завершено."
+msgstr "Падзея «Ледзяны тыгр» завершана."
 
 msgid "alertMessage/allNotAvailable"
 msgstr "Баі на серверах пачнуцца праз %(primeDelta)s"
 
 msgid "alertMessage/allNotAvailableEnd"
-msgstr "Событие «Ледяной тигр» завершено."
+msgstr "Падзея «Ледзяны тыгр» завершана."
 
 msgid "alertMessage/allNotSet"
 msgstr "Рэжым недаступны на ўсіх серверах"
 
 msgid "alertMessage/betweenSeasons"
-msgstr "Событие «Ледяной тигр» завершено."
+msgstr "Падзея «Ледзяны тыгр» завершана."
 
 msgid "alertMessage/button/changeServer"
 msgstr "Змяніць сервер"
@@ -51,7 +51,7 @@ msgid "alertMessage/standaloneNotAvailable"
 msgstr "Баі на серверы пачнуцца праз %(primeDelta)s"
 
 msgid "alertMessage/standaloneNotAvailableEnd"
-msgstr "Событие «Ледяной тигр» завершено."
+msgstr "Падзея «Ледзяны тыгр» завершана."
 
 msgid "alertMessage/standaloneNotSet"
 msgstr "Рэжым недаступны на серверы %(serverName)s"
@@ -93,7 +93,7 @@ msgid "banner/infoSmall/disabled"
 msgstr "Чакайце прайм-тайму"
 
 msgid "banner/season"
-msgstr "Событие «Ледяной тигр»"
+msgstr "Падзея «Ледзяны тыгр»"
 
 msgid "banner/seasonDate/seasonLasts"
 msgstr "Да %(day)s %(month)s"
@@ -120,7 +120,7 @@ msgid "battleCarousel/filterButtonTooltip/body"
 msgstr "Налады адлюстравання тэхнікі з улікам тыпу, ролі і дзяржавы."
 
 msgid "battleCarousel/filterButtonTooltip/header"
-msgstr "Фільтр параметраў"
+msgstr "Фільтр паводле параметраў"
 
 msgid "battleCarousel/filterPopover/desc"
 msgstr "Тут паказаныя толькі машыны, што пасуюць да рэжыму."
@@ -307,9 +307,9 @@ msgstr "%(start)s — %(end)s"
 
 msgid "calendarDay/timeLeft"
 msgid_plural "plural/calendarDay/timeLeft"
-msgstr[0] "Событие «Ледяной тигр» продлится %(days)d день."
-msgstr[1] "Падзея «Агністы тыгр» працягнецца %(days)d дні."
-msgstr[2] "Падзея «Агністы тыгр» працягнецца %(days)d дзён."
+msgstr[0] "Падзея «Ледзяны тыгр» працягнецца %(days)d дзень."
+msgstr[1] "Падзея «Ледзяны тыгр» працягнецца %(days)d дні."
+msgstr[2] "Падзея «Ледзяны тыгр» працягнецца %(days)d дзён."
 
 msgid "calendarDay/title"
 msgstr "Расклад"
@@ -362,7 +362,7 @@ msgstr ""
 "дзейнічае ў падзеі."
 
 msgid "detailsHelp/rules/title"
-msgstr "Натиск: Ледяной тигр"
+msgstr "Націск: Ледзяны тыгр"
 
 msgid "detailsHelp/seasonModifiers"
 msgstr ""
@@ -637,8 +637,8 @@ msgstr ""
 
 msgid "noVehicles/text/vehicleUnavailable"
 msgstr ""
-"Для участия в Натиске у вас должна быть хотя бы одна машина %(levels)s уровня, подходящая для игры в режиме.\n"
-"Необходимую технику можно взять в аренду, выполнив специальную боевую задачу."
+"Каб удзельнічаць у «Націску», трэба мець прынамсі адну машыну %(levels)s узроўню, прыдатную для гульні ў рэжыме.\n"
+"Неабходную тэхніку можна ўзяць напракат, выканаўшы адмысловую баявую задачу."
 
 msgid "page/heading/leaderboard"
 msgstr "ТАБЛІЦА ЛІДАРАЎ"
@@ -748,7 +748,7 @@ msgid "primeTimeView/status/primeWillBeAvailable"
 msgstr "Баі на серверы %(server)s пачнуцца праз %(time)s"
 
 msgid "primeTimeView/status/seasonDisabled"
-msgstr "Событие «Ледяной тигр» на сервере %(server)s завершилось."
+msgstr "Падзея «Ледзяны тыгр» на серверы %(server)s завяршылася."
 
 msgid "primeTimeView/status/untill"
 msgstr "Баі на серверы %(server)s недаступныя да %(startTime)s"
@@ -988,7 +988,7 @@ msgstr ""
 "{whiteSpanish_Open}Для %(vehicleLevel)s узроўню тэхнікі{whiteSpanish_Close}"
 
 msgid "rewards/subtitle/styleProgress"
-msgstr "{whiteSpanish_Open}Для стиля «Ледяной тигр»{whiteSpanish_Close}"
+msgstr "{whiteSpanish_Open}Для стылю «Ледзяны тыгр»{whiteSpanish_Close}"
 
 msgid "rewards/subtitle/vehicles_rent"
 msgstr "%(vehicleLevel)s узровень"
@@ -1006,7 +1006,7 @@ msgid "rewardsScreen/description/qualificationEnded"
 msgstr "НАЦІСК. КВАЛІФІКАЦЫЯ ЗАВЕРШАНА"
 
 msgid "rewardsScreen/description/season"
-msgstr "НАТИСК. СОБЫТИЕ «ЛЕДЯНОЙ ТИГР»."
+msgstr "НАЦІСК. ПАДЗЕЯ «ЛЕДЗЯНЫ ТЫГР»."
 
 msgid "rewardsScreen/notice/subTitle"
 msgstr ""
@@ -1080,10 +1080,10 @@ msgid "season/minutesLeft"
 msgstr "Да завяршэння: %(minutes)s хв"
 
 msgid "season/name"
-msgstr "Натиск: Ледяной тигр"
+msgstr "Націск: Ледзяны тыгр"
 
 msgid "season/over"
-msgstr "Событие «Ледяной тигр» завершено."
+msgstr "Падзея «Ледзяны тыгр» завершана."
 
 msgid "season/range"
 msgstr "%(startDate)s – %(endDate)s"
@@ -1092,7 +1092,7 @@ msgid "season/secondsLeft"
 msgstr "Да завяршэння: %(seconds)s с"
 
 msgid "season/shortName"
-msgstr "Ледяной тигр"
+msgstr "Ледзяны тыгр"
 
 msgid "seasonModifier/title"
 msgstr "Мадыфікатар Націску"
@@ -1335,7 +1335,7 @@ msgid "weeklyQuests/tokenProgress/description/normal"
 msgstr "Зарабляйце манеты Націску для атрымання ўзнагарод"
 
 msgid "whatsNewView/banner/title/large"
-msgstr "Событие «Ледяной тигр»"
+msgstr "Падзея «Ледзяны тыгр»"
 
 msgid "whatsNewView/button/ok"
 msgstr "Я ў справе!"
@@ -1384,7 +1384,7 @@ msgstr ""
 
 msgid "whatsNewView/slides/description/modifiers"
 msgstr ""
-"Увеличена прочность модулей техники, сокращено время «обнаружения» машин и "
+"Увеличена прочность модулей техники, сокращено время обнаружения машин и "
 "время перезарядки их орудий, а также уменьшен радиус минимальной видимости."
 
 msgid "whatsNewView/slides/description/newSeason"
@@ -1460,10 +1460,10 @@ msgid "whatsNewView/slides/title/modificator"
 msgstr "Мадыфікатар падзеі"
 
 msgid "whatsNewView/slides/title/modifiers"
-msgstr "Изменения модификатора"
+msgstr "Змены мадыфікатара"
 
 msgid "whatsNewView/slides/title/newSeason"
-msgstr "Натиск: Ледяной тигр"
+msgstr "Націск: Ледзяны тыгр"
 
 msgid "whatsNewView/slides/title/newTypes"
 msgstr "Цяпер без САУ"
@@ -1475,7 +1475,7 @@ msgid "whatsNewView/slides/title/ranks"
 msgstr "Сістэма рангаў"
 
 msgid "whatsNewView/slides/title/rework"
-msgstr "Натиск: Ледяной тигр"
+msgstr "Націск: Ледзяны тыгр"
 
 msgid "whatsNewView/slides/title/roleSkills"
 msgstr "Ролевыя навыкі"
@@ -1498,7 +1498,7 @@ msgstr "НАЦІСК"
 msgid "whatsNewView/vehicleLimitations/description"
 msgstr ""
 "К участию в событии «Ледяной тигр» больше не допускаются машины роли САУ и "
-"тяжелые огнемётные танки."
+"тяжёлые огнемётные танки."
 
 msgid "whatsNewView/vehicleLimitations/heading"
 msgstr "Абмежаванні паводле тэхнікі"

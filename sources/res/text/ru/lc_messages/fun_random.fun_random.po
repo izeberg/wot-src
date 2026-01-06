@@ -46,16 +46,16 @@ msgid "alertMessage/standaloneNotSet"
 msgstr "Режим недоступен на сервере %(serverName)s"
 
 msgid "alertMessage/timeLeft/days"
-msgstr "%(day)s д"
+msgstr "%(day)s д."
 
 msgid "alertMessage/timeLeft/hours"
-msgstr "%(hour)s ч %(min)s мин"
+msgstr "%(hour)s ч. %(min)s мин."
 
 msgid "alertMessage/timeLeft/lessMin"
-msgstr "<1 мин"
+msgstr "<1 мин."
 
 msgid "alertMessage/timeLeft/min"
-msgstr "%(min)s мин"
+msgstr "%(min)s мин."
 
 msgid "alertMessage/undefined"
 msgstr "?empty?"
@@ -110,7 +110,7 @@ msgid "entryPoint/endDate"
 msgstr "До %(day)s %(month)s"
 
 msgid "entryPoint/lessMinute"
-msgstr "<1 мин"
+msgstr "<1 мин."
 
 msgid "entryPoint/notPrimeTimes/status"
 msgstr "Бои скоро возобновятся"
@@ -212,16 +212,16 @@ msgid "modeSelector/progression/stepsNoProgress"
 msgstr "{bond_Open}%(done)s{bond_Close}/%(total)s"
 
 msgid "modeSelector/status/timeLeft/days"
-msgstr "%(day)s д"
+msgstr "%(day)s д."
 
 msgid "modeSelector/status/timeLeft/hours"
 msgstr "%(hour)s ч"
 
 msgid "modeSelector/status/timeLeft/lessMin"
-msgstr "<1 мин"
+msgstr "<1 мин."
 
 msgid "modeSelector/status/timeLeft/min"
-msgstr "%(min)s мин"
+msgstr "%(min)s мин."
 
 msgid "modeSubSelector/backBtn/label"
 msgstr "К РЕЖИМАМ"
@@ -532,16 +532,16 @@ msgstr ""
 "Бои режима «%(leftDetailedSeasonName)s» завершены."
 
 msgid "primeTimes/serverTooltip/timeLeft/days"
-msgstr "%(day)s д"
+msgstr "%(day)s д."
 
 msgid "primeTimes/serverTooltip/timeLeft/hours"
-msgstr "%(hour)s ч %(min)s мин"
+msgstr "%(hour)s ч. %(min)s мин."
 
 msgid "primeTimes/serverTooltip/timeLeft/lessMin"
-msgstr "<1 мин"
+msgstr "<1 мин."
 
 msgid "primeTimes/serverTooltip/timeLeft/min"
-msgstr "%(min)s мин"
+msgstr "%(min)s мин."
 
 msgid "primeTimes/serverTooltip/undefined"
 msgstr "?empty?"

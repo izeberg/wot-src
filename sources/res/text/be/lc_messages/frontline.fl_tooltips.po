@@ -19,6 +19,15 @@ msgstr "Замала ачкоў"
 msgid "notEnoughPoints/value"
 msgstr "Не стае: %(points)s %(icon)s "
 
+msgid "notification/frontlineDisabled"
+msgstr "Режим недоступен по техническим причинам."
+
+msgid "notification/frontlineEnabled"
+msgstr "Режим снова доступен."
+
+msgid "notification/header"
+msgstr "Линия фронта"
+
 msgid "randomReserve/characteristic/improved"
 msgstr "?empty?"
 

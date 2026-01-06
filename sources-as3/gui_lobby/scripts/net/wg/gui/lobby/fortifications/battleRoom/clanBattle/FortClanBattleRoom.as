@@ -6,6 +6,7 @@ package net.wg.gui.lobby.fortifications.battleRoom.clanBattle
    import flash.text.TextField;
    import flash.text.TextFieldAutoSize;
    import net.wg.data.Aliases;
+   import net.wg.data.constants.UniversalBtnStylesConst;
    import net.wg.data.constants.Values;
    import net.wg.data.constants.generated.FITTING_TYPES;
    import net.wg.data.constants.generated.FORTIFICATION_ALIASES;
@@ -16,6 +17,7 @@ package net.wg.gui.lobby.fortifications.battleRoom.clanBattle
    import net.wg.gui.components.controls.InfoIcon;
    import net.wg.gui.components.controls.NormalSortingBtnVO;
    import net.wg.gui.components.controls.SoundButtonEx;
+   import net.wg.gui.components.controls.universalBtn.UniversalBtn;
    import net.wg.gui.components.minimap.MinimapGrid;
    import net.wg.gui.components.minimap.MinimapPresentation;
    import net.wg.gui.lobby.components.data.ButtonFiltersVO;
@@ -131,6 +133,8 @@ package net.wg.gui.lobby.fortifications.battleRoom.clanBattle
       
       public var btnRoomStatus:SoundButtonEx = null;
       
+      public var btnFreezeJournal:UniversalBtn = null;
+      
       public var btnConfigure:ButtonIconLoader = null;
       
       public var divisionInfo:InfoIcon = null;
@@ -162,6 +166,8 @@ package net.wg.gui.lobby.fortifications.battleRoom.clanBattle
       private var _isCommander:Boolean = false;
       
       private var _canInvite:Boolean = false;
+      
+      private var _canUnfreeze:Boolean = false;
       
       private var _configureButtonData:ActionButtonVO = null;
       
@@ -227,7 +233,6 @@ package net.wg.gui.lobby.fortifications.battleRoom.clanBattle
          this.minimapGrid.visible = param1.isBattleType;
          this.minimapGrid.back.visible = this.minimapGrid.dices.visible = !param1.isMapEnabled;
          this.minimap.visible = param1.isBattleType;
-         this.reserve4.visible = param1.isBattleType;
          if(!param1.isBattleType)
          {
             this.waitForDirections.visible = false;
@@ -275,6 +280,12 @@ package net.wg.gui.lobby.fortifications.battleRoom.clanBattle
             this.btnRoomStatus.addEventListener(ButtonEvent.CLICK,this.onRoomStatusClickHandler);
             this.btnRoomStatus.addEventListener(MouseEvent.ROLL_OVER,this.onControlRollOverHandler);
             this.btnRoomStatus.addEventListener(MouseEvent.ROLL_OUT,this.onControlRollOutHandler);
+         }
+         if(this.btnFreezeJournal)
+         {
+            App.utils.universalBtnStyles.setStyle(this.btnFreezeJournal,UniversalBtnStylesConst.STYLE_SLIM_GREEN);
+            this.btnFreezeJournal.addEventListener(ButtonEvent.CLICK,this.onFreezeJournalClickHandler);
+            this.btnFreezeJournal.label = FORTIFICATIONS.FORTBATTLEROOM_FREEZEJOURNAL;
          }
          this.btnConfigure.addEventListener(ButtonEvent.CLICK,this.onBtnConfigureClickHandler);
          this.btnConfigure.addEventListener(MouseEvent.ROLL_OVER,this.onControlRollOverHandler);
@@ -331,7 +342,9 @@ package net.wg.gui.lobby.fortifications.battleRoom.clanBattle
          super.draw();
          this._isCommander = Boolean(rallyData) ? Boolean(rallyData.isCommander) : Boolean(false);
          this._canInvite = Boolean(rallyData) ? Boolean(rallyData.canInvite) : Boolean(false);
+         this._canUnfreeze = Boolean(rallyData) ? Boolean(rallyData.canUnfreeze) : Boolean(false);
          this.btnConfigure.visible = this.btnRoomStatus.visible = this._isCommander;
+         this.btnFreezeJournal.visible = this._canUnfreeze;
          if(isInvalid(RallyInvalidationType.CONFIGURE_BUTTON_DATA))
          {
             if(this._configureButtonData)
@@ -398,6 +411,11 @@ package net.wg.gui.lobby.fortifications.battleRoom.clanBattle
       private function onRoomStatusClickHandler(param1:ButtonEvent) : void
       {
          toggleRoomStatus();
+      }
+      
+      private function onFreezeJournalClickHandler(param1:ButtonEvent) : void
+      {
+         openFreezeJournalS();
       }
       
       private function onBtnConfigureClickHandler(param1:ButtonEvent) : void
@@ -487,6 +505,12 @@ package net.wg.gui.lobby.fortifications.battleRoom.clanBattle
             this.btnRoomStatus.dispose();
             this.btnRoomStatus = null;
          }
+         if(this.btnFreezeJournal)
+         {
+            this.btnFreezeJournal.removeEventListener(ButtonEvent.CLICK,this.onFreezeJournalClickHandler);
+            this.btnFreezeJournal.dispose();
+            this.btnFreezeJournal = null;
+         }
          if(this.waitingListButtonBar)
          {
             this.waitingListButtonBar.dispose();
@@ -520,22 +544,26 @@ package net.wg.gui.lobby.fortifications.battleRoom.clanBattle
       
       override protected function setReservesEnabled(param1:Array) : void
       {
+         this.resetReserveSlotsVisibility();
          var _loc2_:int = param1.length;
          var _loc3_:int = 0;
          while(_loc3_ < _loc2_)
          {
             this._reserveSlots[_loc3_].enabled = param1[_loc3_];
+            this._reserveSlots[_loc3_].visible = true;
             _loc3_++;
          }
       }
       
       override protected function setReservesData(param1:Vector.<DeviceSlotVO>) : void
       {
+         this.resetReserveSlotsVisibility();
          var _loc2_:int = param1.length;
          var _loc3_:int = 0;
          while(_loc3_ < _loc2_)
          {
             this._reserveSlots[_loc3_].update(param1[_loc3_]);
+            this._reserveSlots[_loc3_].visible = true;
             _loc3_++;
          }
       }
@@ -544,6 +572,17 @@ package net.wg.gui.lobby.fortifications.battleRoom.clanBattle
       {
          var _loc2_:Object = new FittingSelectPopoverParams(param1.type,param1.slotIndex);
          App.popoverMgr.show(param1,FORTIFICATION_ALIASES.FORT_RESERVE_SELECT_POPOVER_ALIAS,_loc2_);
+      }
+      
+      private function resetReserveSlotsVisibility() : void
+      {
+         var _loc1_:int = this._reserveSlots.length;
+         var _loc2_:int = 0;
+         while(_loc2_ < _loc1_)
+         {
+            this._reserveSlots[_loc2_].visible = false;
+            _loc2_++;
+         }
       }
       
       private function onReserveSlotClickHandler(param1:ButtonEvent) : void

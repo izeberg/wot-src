@@ -13,8 +13,8 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<primitive>indices</primitive>
+			<vertices>s_0_wallShape.vertices</vertices>
+			<primitive>s_0_wallShape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -51,15 +51,15 @@
 						<Texture>content/Buildings/bld_19_01_Vhouse/bld_19_01_Vhouse_08_BANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.049589 5.068668 -0.431276</groupOrigin>
+				<groupOrigin>0.049589 5.068668 -0.431275</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
 		<min>-7.711633 -2.317577 -6.255983</min>
-		<max>7.810812 12.167452 5.393432</max>
+		<max>7.810812 12.167452 5.393433</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>14114</geometrySize>
+	<geometrySize>14178</geometrySize>
 	<minUVDensity>0.000198</minUVDensity>
 </root>

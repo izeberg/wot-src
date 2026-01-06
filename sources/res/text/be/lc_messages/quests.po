@@ -1038,6 +1038,9 @@ msgstr "Сталёвыя пячаткі"
 msgid "bonusName/camouflage"
 msgstr "Камуфляж"
 
+msgid "bonusName/clan_season_progress"
+msgstr "Клановая монета"
+
 msgid "bonusName/completionTokens"
 msgstr "Кампаненты"
 
@@ -1161,9 +1164,6 @@ msgstr "Дэколь"
 msgid "bonusName/emblem"
 msgstr "Эмблема"
 
-msgid "bonusName/entitlements/ny26_marketplace_unlock"
-msgstr "Открыт доступ к покупке стилей прошлых лет!"
-
 msgid "bonusName/entitlements/paragon_rewards_choice_v_11"
 msgstr "Тэхніка ХІ узроўню"
 
@@ -1172,6 +1172,12 @@ msgstr "Павелічэнне зніжкі"
 
 msgid "bonusName/entitlements/ranked_202203_access"
 msgstr "Доступ да куплі"
+
+msgid "bonusName/entitlements/shevents_clan_chevron"
+msgstr "Клановый шеврон"
+
+msgid "bonusName/entitlements/shevents_clan_coupon"
+msgstr "Клановый купон"
 
 msgid "bonusName/entitlements/testEntitlement"
 msgstr "Тестовый энтайтлемент"
@@ -1215,21 +1221,6 @@ msgstr "Надпіс"
 msgid "bonusName/modification"
 msgstr "Эфект"
 
-msgid "bonusName/newYearSlot"
-msgstr "Новогодний слот"
-
-msgid "bonusName/ny22Fillers"
-msgstr "Антиповторитель"
-
-msgid "bonusName/nyractiv"
-msgstr "Мячик"
-
-msgid "bonusName/nyrfood"
-msgstr "Яблоко"
-
-msgid "bonusName/nyrfun"
-msgstr "Расчёска"
-
 msgid "bonusName/paint"
 msgstr "Фарба"
 
@@ -1248,17 +1239,11 @@ msgstr "Танкавы прэміум акаўнт"
 msgid "bonusName/projectionDecal"
 msgstr "Дэколь"
 
-msgid "bonusName/quests"
-msgstr "Доступ для асаблівай катэгорыі задач"
-
 msgid "bonusName/rankedBonusBattles"
 msgstr "Стандартны прызавы бой."
 
 msgid "bonusName/rankedDailyBattles"
 msgstr "Штодзённы прызавы бой."
-
-msgid "bonusName/sacoin"
-msgstr "Жетоны заслуженной награды"
 
 msgid "bonusName/slots"
 msgstr "Слоты ў Гаражы"
@@ -1370,9 +1355,6 @@ msgstr "Ключ"
 msgid "bonuses/item/lootBoxes"
 msgstr "Кантэйнер"
 
-msgid "bonuses/item/lootBoxesMachine"
-msgstr "Жетоны для автомата удачи"
-
 msgid "bonuses/item/premium"
 msgstr "Агульны прэміум акаўнт (сут):"
 
@@ -1415,12 +1397,6 @@ msgstr "Дзён Танкавага прэміум акаўнту: %(value)s"
 
 msgid "bonuses/tankmen/description"
 msgstr "%(value)s"
-
-msgid "bonuses/variadicDiscount/buttonLabel"
-msgstr "Выбрать"
-
-msgid "bonuses/variadicDiscount/discountAmount"
-msgstr "-{amount}%"
 
 msgid "bonuses/vehicles/crewLvl"
 msgstr "%d%% экіпаж"
@@ -1493,75 +1469,77 @@ msgid "dailyQuests/completed/title"
 msgstr "Выкананыя задачы"
 
 msgid "dailyQuests/condition/destroyModule_few"
-msgstr "Совершить %(value)s критических попадания в бою"
+msgstr "Зрабіць %(value)s крытычных траплянняў у баі"
 
 msgid "dailyQuests/condition/destroyModule_few_accum"
-msgstr "Совершить %(value)s критических попадания"
+msgstr "Зрабіць %(value)s крытычныя траплянні"
 
 msgid "dailyQuests/condition/destroyModule_plural"
-msgstr "Совершить %(value)s критических попаданий в бою"
+msgstr "Зрабіць %(value)s крытычных траплянняў у баі"
 
 msgid "dailyQuests/condition/destroyModule_plural_accum"
-msgstr "Совершить %(value)s критических попаданий"
+msgstr "Зрабіць %(value)s крытычных траплянняў"
 
 msgid "dailyQuests/condition/destroyVeh_few"
-msgstr "Уничтожить %(value)s ед. техники за бой"
+msgstr "Знішчыць %(value)s адз. тэхнікі за бой"
 
 msgid "dailyQuests/condition/destroyVeh_few_accum"
-msgstr "Уничтожить %(value)s ед. техники"
+msgstr "Знішчыць %(value)s адз. тэхнікі"
 
 msgid "dailyQuests/condition/destroyVeh_plural"
-msgstr "Уничтожить %(value)s ед. техники за бой"
+msgstr "Знішчыць %(value)s адз. тэхнікі за бой"
 
 msgid "dailyQuests/condition/destroyVeh_plural_accum"
-msgstr "Уничтожить %(value)s ед. техники"
+msgstr "Знішчыць %(value)s адз. тэхнікі"
 
 msgid "dailyQuests/condition/destroyVeh_singular"
-msgstr "Уничтожить %(value)s ед. техники за бой"
+msgstr "Знішчыць %(value)s адз. тэхнікі за бой"
 
 msgid "dailyQuests/condition/dmgTop"
 msgstr ""
-"Попасть в топ-%(value)s по урону в своей команде указанное количество раз"
+"Трапіць у топ-%%(value)s паводле пашкоджанняў у сваёй камандзе ўказаную "
+"колькасць разоў"
 
 msgid "dailyQuests/condition/dmgTop_first"
 msgstr "Заняць першае месца ў сваёй камандзе паводле пашкоджанняў\t"
 
 msgid "dailyQuests/condition/doDamage"
-msgstr "Нанести %(value)s ед. урона за бой"
+msgstr "Прычыніць %(value)s адз. пашкоджанняў за бой"
 
 msgid "dailyQuests/condition/doDamageVeh"
-msgstr "Нанести урон %(value)s ед. техники за бой"
+msgstr "Прычыніць пашкоджанні %(value)s адз. тэхнікі за бой"
 
 msgid "dailyQuests/condition/doDamageVeh_accum"
-msgstr "Нанести урон %(value)s ед. техники"
+msgstr "Прычыніць пашкоджанні %(value)s адз. тэхнікі"
 
 msgid "dailyQuests/condition/doDamage_accum"
-msgstr "Нанести %(value)s ед. урона"
+msgstr "Прычыніць %(value)s адз. пашкоджанняў"
 
 msgid "dailyQuests/condition/earnExp"
-msgstr "Заработать %(value)s «чистого» опыта за бой"
+msgstr "Здабыць %(value)s «чыстага» досведу за бой"
 
 msgid "dailyQuests/condition/earnExp_accum"
-msgstr "Заработать %(value)s «чистого» опыта"
+msgstr "Здабыць %(value)s «чыстага» досведу"
 
 msgid "dailyQuests/condition/expTop"
 msgstr ""
-"Попасть в топ-%(value)s по опыту в своей команде указанное количество раз"
+"Трапіць у топ-%(value)s паводле досведу ў сваёй камандзе ўказаную колькасць "
+"разоў"
 
 msgid "dailyQuests/condition/expTop_first"
 msgstr "Заняць першае месца ў сваёй камандзе паводле досведу"
 
 msgid "dailyQuests/condition/spotVeh_few"
-msgstr "Обнаружить %(value)s ед. техники за бой"
+msgstr "Выявіць %(value)s адз. тэхнікі за бой"
 
 msgid "dailyQuests/condition/spotVeh_few_accum"
-msgstr "Обнаружить %(value)s ед. техники за любое количество боёв"
+msgstr "Выявіць %(value)s адз. тэхнікі за любую колькасць баёў"
 
 msgid "dailyQuests/condition/winBattle"
 msgstr "Перамагчы ў баі"
 
 msgid "dailyQuests/condition/winBattle_accum"
-msgstr "Победить в %(value)s боях"
+msgstr "Перамагчы ў %(value)s баях"
 
 msgid "dailyQuests/countDown/remainingText"
 msgstr "Да абнаўлення задач:"
@@ -1590,28 +1568,6 @@ msgstr "ШТОДЗЁННЫЯ ЗАДАЧЫ"
 
 msgid "dailyQuests/header/winback"
 msgstr "ЗНОЎ У СТРОЙ"
-
-msgid "dailyQuests/info/NYDailyMissions"
-msgstr ""
-"Стандартные задачи состоят из случайных условий, а выполнять их можно "
-"ежедневно. Как и в Личных боевых задачах, прогресс выполнения стандартных "
-"задач обновляется после каждого боя. Эти задачи предпочтительно выполнять в "
-"день их выдачи, иначе они перенесутся на следующий день, а следующая задача "
-"не будет выдана до выполнения текущей. В период Новогоднего наступления в "
-"задачу обязательно добавляются малые новогодние коробки и праздничные марки "
-"в дополнение к награде."
-
-msgid "dailyQuests/info/dailyMissionTitle"
-msgstr "Стандартныя задачы"
-
-msgid "dailyQuests/info/giftSystemDisabledDailyMissions"
-msgstr ""
-"Стандартные задачи состоят из случайных условий, а выполнять их можно "
-"ежедневно. Как и в Личных боевых задачах, прогресс выполнения стандартных "
-"задач обновляется после каждого боя. Эти задачи предпочтительно выполнять в "
-"день их выдачи, иначе они перенесутся на следующий день, а следующая задача "
-"не будет выдана до выполнения текущей. На период Новогоднего наступления в "
-"каждую задачу обязательно добавляются малые коробки в дополнение к награде."
 
 msgid "dailyQuests/locked/title"
 msgstr "Выканана задач:"
@@ -1793,25 +1749,6 @@ msgstr "прэміум"
 
 msgid "dailyReroll/tooltip/usual"
 msgstr "стандартных"
-
-msgid "dailyWidget/nyCard/title"
-msgstr "Задачи Деда Мороза"
-
-msgid "dailyWidget/nyCard/tooltip/body/default"
-msgstr ""
-"Заходите к Деду Морозу, чтобы ознакомиться с ежедневными и еженедельными "
-"задачами, выполнение которых будет щедро вознаграждено."
-
-msgid "dailyWidget/nyCard/tooltip/body/disabled"
-msgstr ""
-"Задачи Деда Мороза временно недоступны. Скоро всё встанет на свои места, не "
-"переключайтесь!"
-
-msgid "dailyWidget/nyCard/tooltip/body/done"
-msgstr "В настоящий момент все задачи выполнены. Ждём вас позже!"
-
-msgid "dailyWidget/nyCard/tooltip/header"
-msgstr "Задачи Деда Мороза"
 
 msgid "dailyWidget/progress"
 msgstr "%(currentProgress)s/%(maxProgress)s"
@@ -2082,8 +2019,8 @@ msgstr "Ачкі прэстыжу"
 
 msgid "details/conditions/cumulative/critsCount"
 msgstr ""
-"Сума пашкоджаных або выведзеных са строю ўнутраных і (або) вонкавых модуляў,"
-" а таксама параненых танкістаў экіпажу супраціўніка"
+"Сумма повреждённых или выведенных из строя внутренних и/или внешних модулей,"
+" а также раненых членов экипажа противника"
 
 msgid "details/conditions/cumulative/damageAssisted"
 msgstr "Пашкоджанні, прыч. з вашай дапамогай"
@@ -2203,13 +2140,13 @@ msgstr "Рыкашэты ад супраціўніка"
 
 msgid "details/conditions/cumulative/innerModuleCritCount"
 msgstr ""
-"Сума пашкоджаных або выведзеных са строю ўнутраных модуляў, а таксама "
-"параненых танкістаў экіпажу супраціўніка"
+"Сумма повреждённых или выведенных из строя внутренних модулей, а также "
+"раненых членов экипажа противника"
 
 msgid "details/conditions/cumulative/innerModuleDestrCount"
 msgstr ""
-"Сума выведзеных са строю ўнутраных модуляў і (або) параненых танкістаў "
-"экіпажу супраціўніка"
+"Сумма выведенных из строя внутренних модулей и/или раненых членов экипажа "
+"противника"
 
 msgid "details/conditions/cumulative/isAnyOurCrittedInnerModules"
 msgstr ""
@@ -4894,18 +4831,6 @@ msgstr "Пра штодзённыя задачы"
 msgid "infoPage/infoButtonTooltip/header/winback"
 msgstr "Пра задачы"
 
-msgid "infoPage/lootboxConditions/button"
-msgstr "Так!"
-
-msgid "infoPage/lootboxConditions/default"
-msgstr ""
-"В течение всего праздничного события к наградам за выполнение ежедневных "
-"задач будут дополнительно выданы контейнеры с ёлочными украшениями как за "
-"стандартные задачи, так и за бонусную."
-
-msgid "infoPage/lootboxConditionsTitle"
-msgstr "Контейнеры «Ёлочные украшения» в ежедневных задачах"
-
 msgid "infoPage/missionSwitch/winback"
 msgstr ""
 "Раз на 4 гадзіны любую са стандартных задач можна замяніць на іншую "
@@ -5056,12 +4981,6 @@ msgstr "Стратэгічная задача"
 
 msgid "item/type/specialMission"
 msgstr "Умацаваны раён: асобыя ўказанні"
-
-msgid "lootBox/boxCount"
-msgstr "x%(count)s"
-
-msgid "lootBox/boxesLabel"
-msgstr "Контейнер %(boxName)s %(boxCount)s"
 
 msgid "metrics/state/done"
 msgstr "Завершана"
@@ -5253,13 +5172,13 @@ msgid "missionDetails/vehicle/conditions/level/all"
 msgstr "Усе ўзроўні"
 
 msgid "missionDetails/vehicle/conditions/nations"
-msgstr "Дзяржава:"
+msgstr "Нацыя:"
 
 msgid "missionDetails/vehicle/conditions/nations/all"
 msgstr "Усе дзяржавы"
 
 msgid "missionDetails/vehicle/conditions/nations/tooltip"
-msgstr "Дзяржава: %(nation)s"
+msgstr "Нацыя: %(nation)s"
 
 msgid "missionDetails/vehicle/conditions/type"
 msgstr "Тып:"
@@ -5300,7 +5219,7 @@ msgid "missions/filter/filterButton/header"
 msgstr "Фільтр задач"
 
 msgid "missions/filter/popover/defaultButton/body"
-msgstr "Націсніце, каб скінуць налады фільтра на стандартны стан."
+msgstr "Націсніце, каб вярнуць стандартныя налады фільтра."
 
 msgid "missions/filter/popover/defaultButton/header"
 msgstr "Скінуць фільтр"
@@ -5318,7 +5237,7 @@ msgid "missions/filter/popover/title"
 msgstr "Фільтр задач"
 
 msgid "missions/filterCounter/closeButton/body"
-msgstr "Нажмите, чтобы сбросить настройки фильтра на состояние по умолчанию."
+msgstr "Нажмите, чтобы сбросить настройки фильтра на стандартные."
 
 msgid "missions/filterCounter/closeButton/header"
 msgstr "Паставіць стандартныя налады"
@@ -5538,164 +5457,6 @@ msgstr "...у наступных рэжымах"
 
 msgid "modeSelector/tooltip/title"
 msgstr "Задачы можна выканаць..."
-
-msgid "nyInfo/block/subtitle/first"
-msgstr ""
-"Дед Мороз будет зачитывать письма игроков к нему. Или его письма игрокам. Мы"
-" сами пока не поняли, вы уж лучше сами разберитесь. Но где-то там точно есть"
-" награды."
-
-msgid "nyInfo/block/subtitle/second"
-msgstr ""
-"Здесь находятся задачи, количество которых ограниченно одним днём. Выполнили"
-" все — завтра заходите за новыми."
-
-msgid "nyInfo/block/subtitle/third"
-msgstr ""
-"Здесь находится ваш план действий на неделю. Обратите внимание: список "
-"включает также две долгоиграющие задачи, доступные на протяжении всего "
-"события."
-
-msgid "nyInfo/block/title/first"
-msgstr "Письма игроку от Деда Мороза"
-
-msgid "nyInfo/block/title/second"
-msgstr "Штодзённыя задачы"
-
-msgid "nyInfo/block/title/third"
-msgstr "Еженедельные задачи"
-
-msgid "nyInfo/button/accept"
-msgstr "Так!"
-
-msgid "nyInfo/close"
-msgstr "ЗАКРЫЦЬ"
-
-msgid "nyInfo/subtitle"
-msgstr ""
-"Здесь можно взять задачи лично у Деда Мороза, за выполнение которых он вас "
-"щедро наградит."
-
-msgid "nyInfo/title"
-msgstr "ЗАДАЧИ ДЕДА МОРОЗА"
-
-msgid "nyQuestsView/footerText/1"
-msgstr ""
-"Первое письмо… О чём мечтают простые сибирские парни? И что они пожелают "
-"разработчикам? Ответ — в голосовом от Деда Мороза."
-
-msgid "nyQuestsView/footerText/2"
-msgstr ""
-"Чего жаждет загадочная душа белорусских парней? Кажется, Дед Мороз разгадал "
-"тайну, над которой бились британские учёные!"
-
-msgid "nyQuestsView/footerText/3"
-msgstr ""
-"Слышите шум крыльев горного орла?! Это Дед Мороз читает новое письмо, из "
-"которого вы узнаете заветные мечты горячих кавказских парней."
-
-msgid "nyQuestsView/footerText/4"
-msgstr ""
-"На что способны горячие северо-западные парни? Об этом расскажет очередное "
-"письмо!"
-
-msgid "nyQuestsView/footerText/5"
-msgstr ""
-"Вот это да! Центровые парни не только горячие, но и… Впрочем, сохраним "
-"интригу. Слушайте новое послание от Деда Мороза!"
-
-msgid "nyQuestsView/footerText/6"
-msgstr ""
-"Почтовый марафон продолжается. В этот раз Дед Мороз вытянул из мешка письмо "
-"от горячих поволжских парней. И чего в нём только нет…"
-
-msgid "nyQuestsView/footerText/7"
-msgstr ""
-"Мы не знаем, ходят ли горячие дальневосточные парни в Японию пешком, но "
-"обратно они точно едут на колёсах! Детали — в новом письме!"
-
-msgid "nyQuestsView/footerText/8"
-msgstr ""
-"Дед Мороз горюет, зачитывая последнее письмо от горячих уральских парней. "
-"Позволили себе немного соплей. Извините. И с Новым годом!"
-
-msgid "nyQuestsView/levels"
-msgstr "%(min)s - %(max)s"
-
-msgid "nyQuestsView/replyBtn"
-msgstr ""
-"Прослушать\n"
-"повторно"
-
-msgid "nyQuestsView/stopBtn"
-msgstr ""
-"Остановить\n"
-"сообщение"
-
-msgid "nyQuestsView/switch/daily"
-msgstr "ШТОДЗЁННЫЯ ЗАДАЧЫ"
-
-msgid "nyQuestsView/switch/weekly"
-msgstr "ЕЖЕНЕДЕЛЬНЫЕ ЗАДАЧИ"
-
-msgid "nyQuestsView/timeSpend/hours"
-msgstr "%(hours)s гадз"
-
-msgid "nyQuestsView/timeSpend/hoursMinutes"
-msgstr "%(hours)s ч %(minutes)s мин"
-
-msgid "nyQuestsView/timeSpend/minutes"
-msgstr "%(minutes)s мин"
-
-msgid "nyQuestsView/timeSpend/text/default"
-msgstr "Обновление задач:"
-
-msgid "nyQuestsView/timeSpend/text/short"
-msgstr "Обновление:"
-
-msgid "nyQuestsView/vehicleLevel/extraSmall"
-msgstr "На технике: %(value)s уровня"
-
-msgid "nyQuestsView/vehicleLevel/large"
-msgstr "Выполняются на технике: %(value)s уровня"
-
-msgid "nyQuestsView/vehicleLevel/medium"
-msgstr "На технике: %(value)s уровня"
-
-msgid "nyQuestsView/vehicleLevel/small"
-msgstr "Техника: %(value)s уровня"
-
-msgid "nyQuestsView/voiceEnabled/title"
-msgstr "Озвучка в Ангаре"
-
-msgid "nyQuestsView/voiceEnabled/tooltip/body"
-msgstr ""
-"Тут можно включить или отключить голосовые сообщения, которыми Дед Мороз "
-"будет комментировать ваши действия, пока вы находитесь в Ангаре."
-
-msgid "nyQuestsView/voiceEnabled/tooltip/header"
-msgstr "Озвучка действий игрока"
-
-msgid "nyTabView/category/label"
-msgstr "Задачи Деда Мороза"
-
-msgid "nyTabView/category/tooltip/body"
-msgstr "Нажмите, чтобы подробнее узнать о задачах Деда Мороза."
-
-msgid "nyTabView/category/tooltip/header"
-msgstr "О задачах Деда Мороза"
-
-msgid "nyTabView/title/default"
-msgstr ""
-"Выполняйте специальные задачи Деда Мороза, чтобы получить ценные награды."
-
-msgid "nyTabView/title/disabled"
-msgstr ""
-"Задачи Деда Мороза временно недоступны. Скоро всё встанет на свои места, не "
-"переключайтесь!"
-
-msgid "nyTabView/title/done"
-msgstr "В настоящий момент все задачи выполнены. Ждём вас позже!"
 
 msgid "personal/seasons/awardsButton"
 msgstr "Узнагароды кампаніі"

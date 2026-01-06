@@ -52,6 +52,7 @@
 		</preload>
 		<fn_effect_bin>particles/content_forward/pfx/environment/buildings/hd_bld_uni_712_littlewoodshed.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/buildings/inf_bld_uni_000_base_02.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/buildings/inf_building_fire_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/buildings/inf_building_fire_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/interior/04_himmelsdorf_fire_storm.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/interior/04_himmelsdorf_glow.vfx</fn_effect_bin>
@@ -117,6 +118,7 @@
 		<fn_effect_bin>particles/content_forward/pfx/sparks/sparks_env_med.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/environment/buildings/hd_bld_uni_712_littlewoodshed.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/buildings/inf_bld_uni_000_base_02.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/buildings/inf_building_fire_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/buildings/inf_building_fire_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/04_himmelsdorf_fire_storm.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/04_himmelsdorf_glow.eff</fn_effect_bin>
@@ -268,6 +270,7 @@
 		</preload>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/buildings/hd_bld_uni_712_littlewoodshed.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/buildings/inf_bld_uni_000_base_02.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/buildings/inf_building_fire_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/buildings/inf_building_fire_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/cameraeffects/winter_drift_floor_easy.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/cameraeffects/winter_drift_floor_easy_p.vfx</fn_effect_bin>
@@ -338,6 +341,7 @@
 		<fn_effect_bin>particles/content_deferred/pfx/sparks/sparks_env_med.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/environment/buildings/hd_bld_uni_712_littlewoodshed.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/buildings/inf_bld_uni_000_base_02.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/buildings/inf_building_fire_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/buildings/inf_building_fire_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/04_himmelsdorf_fire_storm.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/04_himmelsdorf_glow.eff</fn_effect_bin>

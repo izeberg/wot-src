@@ -51,6 +51,8 @@ package net.wg.gui.components.crosshairPanel
       
       public var cassetteMC:CrosshairClipQuantityBarContainer = null;
       
+      public var autogunCassetteMC:CrosshairClipQuantityBarContainer = null;
+      
       public var mbCassetteMC:CrosshairClipQuantityBarContainer = null;
       
       public var centerMC:MovieClip = null;
@@ -95,6 +97,8 @@ package net.wg.gui.components.crosshairPanel
       
       private var _coolantAbilityIndicator:CoolantAbilityIndicator = null;
       
+      private var _prevReloadingState:String = "";
+      
       private var _clipsByType:Vector.<ClipQuantityIndicator> = null;
       
       private var _clipType:int = 0;
@@ -129,6 +133,7 @@ package net.wg.gui.components.crosshairPanel
       {
          super();
          this.cassetteMC.isUseFrameAnimation = this._isUseFrameAnimation;
+         this.autogunCassetteMC.isUseFrameAnimation = this._isUseFrameAnimation;
          this.mbCassetteMC.isUseFrameAnimation = this._isUseFrameAnimation;
          this.timerProgressTextField.visible = false;
          this.reloadTimeBlink.visible = false;
@@ -141,6 +146,7 @@ package net.wg.gui.components.crosshairPanel
          this._clipsByType[CROSSHAIR_CASSETTE_TYPES.AUTOLOADER] = this.autoloaderComponent;
          this._clipsByType[CROSSHAIR_CASSETTE_TYPES.MULTIPLE_BARREL_CASSETTE] = this.mbCassetteMC;
          this._clipsByType[CROSSHAIR_CASSETTE_TYPES.MULTIPLE_BARREL_AUTOLOADER] = this.mbAutoloaderComponent;
+         this._clipsByType[CROSSHAIR_CASSETTE_TYPES.AUTO_GUN_CASSETTE] = this.autogunCassetteMC;
       }
       
       public function addOverheat(param1:Vector.<Number>) : void
@@ -201,10 +207,6 @@ package net.wg.gui.components.crosshairPanel
          if(this.isAutoloader)
          {
             this._clipsByType[this._clipType].autoloaderShowShot();
-         }
-         if(this._coolantAbilityIndicator)
-         {
-            this._coolantAbilityIndicator.hideAbilityMod();
          }
       }
       
@@ -291,11 +293,12 @@ package net.wg.gui.components.crosshairPanel
          }
          else if(this._clipType != CROSSHAIR_CASSETTE_TYPES.NO_CASSETTE)
          {
-            this._clipsByType[this._clipType].setClipsParam(param1,param2,CROSSHAIR_CASSETTE_TYPES.MULTIPLE_BARREL_TYPES.indexOf(this._clipType) != -1);
+            this._clipsByType[this._clipType].setClipsParam(param1,param2,this._clipType);
          }
          this.autoloaderComponent.visible = param3 == CROSSHAIR_CASSETTE_TYPES.AUTOLOADER;
          this.mbAutoloaderComponent.visible = param3 == CROSSHAIR_CASSETTE_TYPES.MULTIPLE_BARREL_AUTOLOADER;
          this.cassetteMC.visible = param3 == CROSSHAIR_CASSETTE_TYPES.CASSETTE;
+         this.autogunCassetteMC.visible = param3 == CROSSHAIR_CASSETTE_TYPES.AUTO_GUN_CASSETTE;
          this.mbCassetteMC.visible = param3 == CROSSHAIR_CASSETTE_TYPES.MULTIPLE_BARREL_CASSETTE;
       }
       
@@ -436,7 +439,12 @@ package net.wg.gui.components.crosshairPanel
          {
             this.reloadingState = param1;
             this.updateReloadingState();
+            if(this._clipType != CROSSHAIR_CASSETTE_TYPES.NO_CASSETTE)
+            {
+               this._clipsByType[this._clipType].setReloadingState(param1);
+            }
          }
+         this._prevReloadingState = param1;
       }
       
       public function setReloadingTime(param1:Number) : void
@@ -606,6 +614,8 @@ package net.wg.gui.components.crosshairPanel
          this.distance = null;
          this.cassetteMC.dispose();
          this.cassetteMC = null;
+         this.autogunCassetteMC.dispose();
+         this.autogunCassetteMC = null;
          this.mbCassetteMC.dispose();
          this.mbCassetteMC = null;
          if(this._coolantAbilityIndicator)
@@ -639,7 +649,7 @@ package net.wg.gui.components.crosshairPanel
       
       protected function arrangeReloadTimeBlink() : void
       {
-         if(this.reloadTimeBlink && this._currentTimerTextField)
+         if(this._reloadTimeBlinkYPos && this.reloadTimeBlink && this._currentTimerTextField)
          {
             this.reloadTimeBlink.x = this._currentTimerTextField.x + (this._currentTimerTextField.textWidth >> 1) + TF_LEFT_MARGIN;
             this.reloadTimeBlink.y = this._reloadTimeBlinkYPos[this.netType];
@@ -667,6 +677,10 @@ package net.wg.gui.components.crosshairPanel
          else
          {
             this.reloadingAnimationMC.visible = false;
+         }
+         if(this._coolantAbilityIndicator && this.reloadingState == CrosshairConsts.RELOADING_PROGRESS && this._prevReloadingState == CrosshairConsts.RELOADING_ENDED)
+         {
+            this._coolantAbilityIndicator.hideAbilityMod();
          }
       }
       
@@ -774,6 +788,7 @@ package net.wg.gui.components.crosshairPanel
          this.reloadingBar.alpha = this.reloadingBarAlpha;
          this.reloadingAnimationMC.alpha = this.reloadingBarAlpha;
          this.cassetteMC.alpha = this.cassetteAlpha;
+         this.autogunCassetteMC.alpha = this.cassetteAlpha;
          this.mbCassetteMC.alpha = this.cassetteAlpha;
          this.autoloaderComponent.alpha = this.cassetteAlpha;
          this.mbAutoloaderComponent.alpha = this.cassetteAlpha;

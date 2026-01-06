@@ -96,7 +96,7 @@
 					<collisionFlags>255</collisionFlags>
 					<property>
 						destBlend
-						<Int>5</Int>
+						<Int>7</Int>
 					</property>
 					<property>
 						diffuseMap
@@ -104,11 +104,11 @@
 					</property>
 					<property>
 						g_tintColor
-						<Vector4>0.501961 0.376471 0.247059 1.000000</Vector4>
+						<Vector4>0.501961 0.368627 0.239216 1.000000</Vector4>
 					</property>
 					<property>
 						selfIllumination
-						<Float>6.000000</Float>
+						<Float>8.000000</Float>
 					</property>
 					<property>
 						srcBlend

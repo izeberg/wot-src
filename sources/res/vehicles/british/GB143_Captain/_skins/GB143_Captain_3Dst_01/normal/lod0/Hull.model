@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-2.210411 -0.838444 -4.151816</min>
+		<max>2.216525 0.954941 4.183491</max>
+	</visibilityBox>
+	<parent>vehicles/british/GB143_Captain/_skins/GB143_Captain_3Dst_01/normal/lod1/Hull</parent>
+	<nodefullVisual>vehicles/british/GB143_Captain/_skins/GB143_Captain_3Dst_01/normal/lod0/Hull</nodefullVisual>
+</root>

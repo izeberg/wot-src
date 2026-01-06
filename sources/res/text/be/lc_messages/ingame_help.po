@@ -294,15 +294,15 @@ msgstr ""
 
 msgid "detailsHelp/distanceDamage/description"
 msgstr ""
-"Чем больше расстояние, которое пролетит неуправляемый реактивный снаряд "
-"(НУРС) с момента выстрела до контакта с целью, тем выше скорость снаряда, а "
-"следовательно урон и бронепробитие."
+"Чым большая адлегласць, якую праляціць некіраваны рэактыўны снарад (НКРС) з "
+"моманту стрэлу да кантакту з цэллю, тым вышэйшая хуткасць снарада, а значыць"
+" пашкоджанні і бронепрабівальнасць."
 
 msgid "detailsHelp/distanceDamage/headerTitle"
-msgstr "Неуправляемый реактивный снаряд"
+msgstr "Некіраваны рэактыўны снарад"
 
 msgid "detailsHelp/distanceDamage/title"
-msgstr "Возрастающие характеристики снаряда"
+msgstr "Узрастаючыя характарыстыкі снарада"
 
 msgid "detailsHelp/dualAccuracy/mechanics"
 msgstr ""
@@ -582,11 +582,17 @@ msgstr "Падтрымайце агнём!"
 msgid "radialMenu/attack_enemy_with_SPG"
 msgstr "Атакую цэль!"
 
+msgid "radialMenu/attack_supply"
+msgstr "Падтрымайце агнём!"
+
 msgid "radialMenu/attacking_base"
 msgstr "Я захаплю!"
 
 msgid "radialMenu/attacking_enemy"
 msgstr "Атакую цэль!"
+
+msgid "radialMenu/attacking_supply"
+msgstr "Атакую объект!"
 
 msgid "radialMenu/attention_to_base_atk"
 msgstr "Захапіце!"
@@ -600,8 +606,14 @@ msgstr "Увага сюды!"
 msgid "radialMenu/cancel_reply"
 msgstr "Адмовіць"
 
+msgid "radialMenu/defend_supply"
+msgstr "Защищайте объект!"
+
 msgid "radialMenu/defending_base"
 msgstr "Я абараню!"
+
+msgid "radialMenu/defending_supply"
+msgstr "Защищаю объект!"
 
 msgid "radialMenu/enemy_hq_attack_command"
 msgstr "Атакуйце!"
@@ -626,6 +638,9 @@ msgstr "Перанабіванне!"
 
 msgid "radialMenu/reply_to_player"
 msgstr "Пацвярджаю!"
+
+msgid "radialMenu/supply_self_repair"
+msgstr "Объект на ремонте!"
 
 msgid "radialMenu/supporting_ally"
 msgstr "Я дапамагу табе!"

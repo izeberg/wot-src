@@ -28,6 +28,12 @@ package net.wg.data.constants.generated
       public static const SCENARIO_EVENT_ALERT:String = "scenarioEventAlert";
       
       public static const SET_SCALE:String = "setScale";
+      
+      public static const STATE_DEAD_DEFAULT:String = "default";
+      
+      public static const STATE_DEAD_VISIBLE:String = "visible";
+      
+      public static const STATE_DEAD_PERMANENT:String = "permanent";
        
       
       public function BATTLE_MINIMAP_CONSTS()

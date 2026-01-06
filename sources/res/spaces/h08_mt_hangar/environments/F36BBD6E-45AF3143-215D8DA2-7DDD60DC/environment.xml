@@ -11,7 +11,7 @@
 			<color>0.000000 0.000000 0.000000 1.129107</color>
 			<density>0.136400</density>
 			<height>27.500000</height>
-			<heightFalloff>0.193000</heightFalloff>
+			<heightFalloff>0.150000</heightFalloff>
 			<startDistance>10.000000</startDistance>
 			<scatterStart>1382.900024</scatterStart>
 			<scatterExponent>64.000000</scatterExponent>
@@ -139,7 +139,7 @@
 		<color>0.891720 0.960656 1.000000 1.000000</color>
 	</GodRays>
 	<SSAO>
-		<enable>true</enable>
+		<enableFromPreset>2</enableFromPreset>
 		<radius>0.100000</radius>
 		<amplify>0.400000</amplify>
 		<fadeNear>1.200000</fadeNear>
@@ -215,8 +215,8 @@
 			<angleShadow>77.250000</angleShadow>
 		</forward>
 		<deferred>
-			<angle>33.000000</angle>
-			<angleZ>110.349998</angleZ>
+			<angle>18.000000</angle>
+			<angleZ>317.000000</angleZ>
 		</deferred>
 		<sunScale>0.000000</sunScale>
 		<sunlightAngularSize>0.000000</sunlightAngularSize>
@@ -297,4 +297,5 @@
 			<contrast>1.000000</contrast>
 		</forward>
 	</AlbedoScaleSettings>
+	<visibilityMask>4294967295</visibilityMask>
 </root>

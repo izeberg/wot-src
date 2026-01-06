@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G193_Aufgabe_57/normal/lod1/Gun_01</nodefullVisual>
+	<parent>vehicles/german/G193_Aufgabe_57/normal/lod2/Gun_01</parent>
+	<tank>true</tank>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.500036 -0.336048 -0.130201</min>
+		<max>0.499756 0.368572 6.505794</max>
+	</visibilityBox>
+</root>

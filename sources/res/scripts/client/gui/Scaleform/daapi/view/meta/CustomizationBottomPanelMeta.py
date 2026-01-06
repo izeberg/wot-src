@@ -23,9 +23,6 @@ class CustomizationBottomPanelMeta(BaseDAAPIComponent):
     def onSelectHotFilter(self, index, value):
         self._printOverrideError('onSelectHotFilter')
 
-    def switchMode(self, index):
-        self._printOverrideError('switchMode')
-
     def returnToStyledMode(self):
         self._printOverrideError('returnToStyledMode')
 
@@ -44,10 +41,6 @@ class CustomizationBottomPanelMeta(BaseDAAPIComponent):
         if self._isDAAPIInited():
             return self.flashObject.as_setBottomPanelInitData(data)
 
-    def as_setSwitchersDataS(self, data):
-        if self._isDAAPIInited():
-            return self.flashObject.as_setSwitchersData(data)
-
     def as_setBottomPanelTabsDataS(self, data):
         if self._isDAAPIInited():
             return self.flashObject.as_setBottomPanelTabsData(data)
@@ -59,10 +52,6 @@ class CustomizationBottomPanelMeta(BaseDAAPIComponent):
     def as_setCarouselDataS(self, data):
         if self._isDAAPIInited():
             return self.flashObject.as_setCarouselData(data)
-
-    def as_setCarouselInfoLabelDataS(self, text, tooltip):
-        if self._isDAAPIInited():
-            return self.flashObject.as_setCarouselInfoLabelData(text, tooltip)
 
     def as_setFilterDataS(self, data):
         if self._isDAAPIInited():
@@ -88,9 +77,9 @@ class CustomizationBottomPanelMeta(BaseDAAPIComponent):
         if self._isDAAPIInited():
             return self.flashObject.as_setEditableProgressionRequiredStyleHintVisibility(value)
 
-    def as_showPopoverBtnIconS(self, src, tooltip):
+    def as_updatePopoverBtnS(self, icon, alias, tooltip):
         if self._isDAAPIInited():
-            return self.flashObject.as_showPopoverBtnIcon(src, tooltip)
+            return self.flashObject.as_updatePopoverBtn(icon, alias, tooltip)
 
     def as_getDataProviderS(self):
         if self._isDAAPIInited():

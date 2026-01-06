@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/sweden/S39_15cm_AKV60_Utkast_1/normal/lod1/Turret_01</nodefullVisual>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.682252 0.000000 -1.345057</min>
+		<max>1.682252 3.118025 0.974218</max>
+	</visibilityBox>
+	<parent>vehicles/sweden/S39_15cm_AKV60_Utkast_1/normal/lod2/Turret_01</parent>
+	<extent>64.000000</extent>
+</root>

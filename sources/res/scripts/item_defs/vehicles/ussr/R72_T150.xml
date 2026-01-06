@@ -7776,6 +7776,12 @@
 				</_85mm_S-31>
 				<_107mm_ZiS-6>
 					shared
+					<unlocks>
+						<vehicle>
+							R235_KV_4_Fedorenko
+							<cost>52500</cost>
+						</vehicle>
+					</unlocks>
 					<maxAmmo>54</maxAmmo>
 					<armor>
 						<armor_1>

@@ -6,15 +6,17 @@ package net.wg.gui.battle.views.epicDeploymentMap.events
    {
       
       public static const MAP_CLICKED:String = "mapClicked";
+      
+      public static const VISIBILITY_CHANGED:String = "visibilityChanged";
        
       
-      private var _mouseX:Number = 0;
+      private var _mouseX:Number;
       
-      private var _mouseY:Number = 0;
+      private var _mouseY:Number;
       
-      private var _buttonIdx:Number = 0;
+      private var _buttonIdx:Number;
       
-      public function EpicDeploymentMapEvent(param1:String, param2:Number, param3:Number, param4:Number, param5:Boolean = false, param6:Boolean = false)
+      public function EpicDeploymentMapEvent(param1:String, param2:Number = 0, param3:Number = 0, param4:Number = 0, param5:Boolean = false, param6:Boolean = false)
       {
          super(param1,param5,param6);
          this._mouseX = param2;

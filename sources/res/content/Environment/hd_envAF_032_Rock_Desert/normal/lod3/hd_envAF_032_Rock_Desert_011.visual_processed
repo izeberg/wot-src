@@ -13,9 +13,9 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<stream>uv2</stream>
-			<primitive>indices</primitive>
+			<vertices>s0Shape.vertices</vertices>
+			<stream>s0Shape.uv2</stream>
+			<primitive>s0Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -115,9 +115,10 @@
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-6.469477 -0.411059 -8.536010</min>
-		<max>12.901245 9.617640 12.869862</max>
+		<min>-6.469477 -0.411059 -8.559980</min>
+		<max>12.901245 9.617639 12.869862</max>
 	</boundingBox>
-	<geometrySize>7794</geometrySize>
+	<customBsp>true</customBsp>
+	<geometrySize>7914</geometrySize>
 	<minUVDensity>0.000230</minUVDensity>
 </root>

@@ -491,18 +491,6 @@ msgstr ""
 msgid "bootcampCenterUnavailable/title"
 msgstr "Учебный полигон недоступен"
 
-msgid "breakDecorations/cancel"
-msgstr "Отменить"
-
-msgid "breakDecorations/message"
-msgstr "Разбить украшения и получить %(price)s?"
-
-msgid "breakDecorations/submit"
-msgstr "Подтвердить"
-
-msgid "breakDecorations/title"
-msgstr "Предупреждение операции"
-
 msgid "buyBerths/hangarBerths/header"
 msgstr "Места в Казарме (%(berthsCount)s шт)"
 
@@ -1366,13 +1354,13 @@ msgid "customizationConfirmSell/title"
 msgstr "Подтверждение продажи"
 
 msgid "dailyQuests/dialogConfirmReroll/timeLimitMsgHours"
-msgstr "каждые %(hours)s ч"
+msgstr "каждые %(hours)s ч."
 
 msgid "dailyQuests/dialogConfirmReroll/timeLimitMsgHoursMins"
-msgstr "каждые %(hours)s ч %(mins)s мин"
+msgstr "каждые %(hours)s ч %(mins)s мин."
 
 msgid "dailyQuests/dialogConfirmReroll/timeLimitMsgMins"
-msgstr "каждые %(mins)s мин"
+msgstr "каждые %(mins)s мин."
 
 msgid "dailyQuests/dialogInfoConfirmReroll/message"
 msgstr "Замена задачи доступна {timeLimitMsg}"
@@ -2405,18 +2393,6 @@ msgstr "ОК"
 msgid "moneyTransferRestriction/title"
 msgstr "Перевод золота запрещён."
 
-msgid "newYear/buyToy/cancel"
-msgstr "Отменить"
-
-msgid "newYear/buyToy/message"
-msgstr "Купить украшение за %(price)s?"
-
-msgid "newYear/buyToy/submit"
-msgstr "Купить"
-
-msgid "newYear/buyToy/title"
-msgstr "Подтверждение операции"
-
 msgid "nextBattleOptionConfirmation/cancel"
 msgstr "Нет"
 
@@ -3155,7 +3131,7 @@ msgid "sessionStats/confirmReset/submit"
 msgstr "Сбросить"
 
 msgid "sessionStats/confirmReset/time"
-msgstr ": %(hours)s ч %(minutes)s мин"
+msgstr ": %(hours)s ч. %(minutes)s мин."
 
 msgid "sessionStats/confirmReset/title"
 msgstr "Сбросить сессионную статистику?"

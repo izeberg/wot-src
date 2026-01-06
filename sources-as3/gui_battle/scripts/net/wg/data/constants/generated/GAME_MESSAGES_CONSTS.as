@@ -47,6 +47,12 @@ package net.wg.data.constants.generated
       
       public static const UNLOCK_TANK_LEVEL:String = "unlockTankLevel";
       
+      public static const SUPPLY_UNLOCKED:String = "supplyUnlocked";
+      
+      public static const SUPPLY_ACTIVE:String = "supplyActive";
+      
+      public static const SUPPLY_ACTIVE_POSITIVE:String = "supplyActivePositive";
+      
       public static const HQ_BATTLE_STARTED:String = "hqBattleStarted";
       
       public static const HQ_BATTLE_STARTED_POSITIVE:String = "hqBattleStartedPositive";

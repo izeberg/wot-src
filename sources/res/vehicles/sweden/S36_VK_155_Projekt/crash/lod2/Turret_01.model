@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/sweden/S36_VK_155_Projekt/crash/lod2/Turret_01</nodefullVisual>
+	<parent>vehicles/sweden/S36_VK_155_Projekt/crash/lod3/Turret_01</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.648390 -0.223513 -1.409642</min>
+		<max>1.623160 2.005363 1.009690</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

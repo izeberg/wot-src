@@ -74,17 +74,17 @@
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>track_mat_L_skinned</identifier>
 					<fx>shaders/std_effects/PBS_tank_skinned_ao.fx</fx>
 					<materialKind>0</materialKind>
+					<identifier>track_mat_L_skinned</identifier>
 					<collisionFlags>0</collisionFlags>
 					<property>
 						alphaReference
-						<Int>64</Int>
+						<Int>128</Int>
 					</property>
 					<property>
-						crash_coefficient
-						<Float>0.300000</Float>
+						alphaTestEnable
+						<Bool>true</Bool>
 					</property>
 					<property>
 						diffuseMap
@@ -117,8 +117,8 @@
 	</renderSet>
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
-		<node>Tank_BlendBone</node>
 		<node>V_BlendBone</node>
+		<node>Tank_BlendBone</node>
 		<geometry>
 			<vertices>track_L_Shape.vertices</vertices>
 			<stream>track_L_Shape.uv2</stream>
@@ -126,17 +126,17 @@
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>track_mat_R_skinned</identifier>
 					<fx>shaders/std_effects/PBS_tank_skinned_ao.fx</fx>
 					<materialKind>0</materialKind>
+					<identifier>track_mat_R_skinned</identifier>
 					<collisionFlags>0</collisionFlags>
 					<property>
 						alphaReference
-						<Int>64</Int>
+						<Int>128</Int>
 					</property>
 					<property>
-						crash_coefficient
-						<Float>0.300000</Float>
+						alphaTestEnable
+						<Bool>true</Bool>
 					</property>
 					<property>
 						diffuseMap

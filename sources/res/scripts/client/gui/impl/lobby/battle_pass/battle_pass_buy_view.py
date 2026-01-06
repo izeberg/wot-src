@@ -25,6 +25,7 @@ from gui.sounds.filters import switchHangarOverlaySoundFilter
 from helpers import dependency
 from skeletons.gui.game_control import IBattlePassController, IWalletController
 from skeletons.gui.shared import IItemsCache
+from shared_utils import first
 _logger = logging.getLogger(__name__)
 WINDOW_IS_NOT_OPENED = -1
 _CHAPTER_STATES = {ChapterState.ACTIVE: ChapterStates.ACTIVE, 
@@ -33,7 +34,8 @@ _CHAPTER_STATES = {ChapterState.ACTIVE: ChapterStates.ACTIVE,
    ChapterState.NOT_STARTED: ChapterStates.NOTSTARTED, 
    ChapterState.DISABLED: ChapterStates.DISABLED}
 _CURRENCY_PRIORITY = (
- Currency.GOLD,)
+ Currency.GOLD,
+ Currency.FREE_XP)
 
 class BattlePassBuyViewStates(object):
 
@@ -98,8 +100,12 @@ class BattlePassBuyView(ViewImpl):
         self.__packages = generatePackages(battlePass=self.__battlePass)
         self.__setGeneralFields()
         self.__setPackages()
+        isSinglePackage = self.__battlePass.isSingleChapter()
         if g_BPBuyViewStates.chapterID != WINDOW_IS_NOT_OPENED:
             self.__choosePackage({'packageID': g_BPBuyViewStates.getPackageID()})
+        if isSinglePackage:
+            packageID, _ = first(self.__packages.iteritems())
+            self.__choosePackage({'packageID': packageID})
         g_BPBuyViewStates.reset()
         switchHangarOverlaySoundFilter(on=True)
 
@@ -152,6 +158,7 @@ class BattlePassBuyView(ViewImpl):
             tx.setIsWalletAvailable(self.__wallet.isAvailable)
             tx.setIsShopOfferAvailable(self.__isShopOfferAvailable())
             tx.setShopOfferTimeLeft(self.__shopOfferTimeLeft())
+            tx.setIsSingleChapter(self.__battlePass.isSingleChapter())
 
     def __clearTooltips(self):
         self.__tooltipItems.clear()
@@ -160,8 +167,9 @@ class BattlePassBuyView(ViewImpl):
             self.__tooltipWindow = None
         return
 
-    def __onBackClick(self):
-        if self.viewModel.getState() == self.viewModel.CONFIRM_STATE:
+    def __onBackClick(self, args=None):
+        isClose = args.get('isClose', False)
+        if self.viewModel.getState() == self.viewModel.CONFIRM_STATE and not isClose:
             self.__showBuy()
         elif self.__backCallback is not None:
             self.__backCallback()

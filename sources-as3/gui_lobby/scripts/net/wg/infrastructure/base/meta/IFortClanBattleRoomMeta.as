@@ -10,6 +10,8 @@ package net.wg.infrastructure.base.meta
       
       function openConfigureWindowS() : void;
       
+      function openFreezeJournalS() : void;
+      
       function toggleRoomStatusS() : void;
       
       function onFiltersChangeS(param1:int, param2:int) : void;

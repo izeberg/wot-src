@@ -8,25 +8,14 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "awardView/description"
-msgstr ""
-"Выдатнае папаўненне ў шэрагах цяжкіх савецкіх танкаў. Гэта лагічнае развіццё"
-" канцэпцыі цяжкабраніраванай і магутна ўзброенай машыны прарыву. Яна "
-"здольная ў адзіночку ўтрымліваць вышыні або праціскаць кірунак атакі, сеючы "
-"знішчэнне 152-мм гарматай, а інавацыйны газатурбінны рухавік дае машыне "
-"ўражальную мабільнасць."
-
 msgid "awardView/end"
-msgstr "ПАДЗЕЯ ЗАВЯРШЫЛАСЯ"
+msgstr "ПАДЗЕЯ ЗАВЕРШАНА"
 
 msgid "awardView/inHangar"
 msgstr "У Гаражы"
 
 msgid "awardView/info"
 msgstr "Нумар стылю"
-
-msgid "awardView/role"
-msgstr "Сярэдні танк падтрымкі"
 
 msgid "awardView/toHangar"
 msgstr "Паглядзець у Гаражы"
@@ -207,7 +196,7 @@ msgid "mainView/timer/leftTime"
 msgstr "Засталося"
 
 msgid "mainView/timer/lessThanMinute"
-msgstr "< 1 мин."
+msgstr "< 1 хв."
 
 msgid "resourcesLoadingView/buttons/close"
 msgstr "Закрыць"
@@ -301,11 +290,13 @@ msgstr "Машыны без нумара"
 
 msgid "tooltips/entryPoint/notStartedEvent/text"
 msgstr ""
-"Удзельнічайце ў падзеі, укладвайце рэсурсы і атрымайце %(vehicleName) "
-"%(uniqVehicleText)Колькасць машын абмежаваная."
+"Вкладывайте различные ресурсы и получите %(vehicleName) %(uniqVehicleText)\n"
+"Количество машин ограничено."
 
 msgid "tooltips/entryPoint/notStartedEvent/vehicleString/text"
-msgstr "з нумарным 3D-стылем."
+msgstr ""
+"с номерным\n"
+"3D-стилем."
 
 msgid "tooltips/entryPoint/paused/text"
 msgstr "Падзея часова недаступная"
@@ -406,9 +397,9 @@ msgstr ""
 
 msgid "tooltips/uniq_style/description/secondPart"
 msgstr ""
-"Номер располагается на стволе с двух сторон и на задней части корпуса. "
-"Машина у каждого владельца имеет свой уникальный номер, который не может "
-"повторяться. Количество машин с уникальными номерами ограничено."
+"Нумар знаходзіцца на ствале з двух бакоў і на задняй частцы корпуса. Машына "
+"ў кожнага ўладальніка мае ўнікальны нумар, які не можна паўтарацца. "
+"Колькасць машын з унікальнымі нумарамі абмежаваная."
 
 msgid "tooltips/uniq_style/moreInfo"
 msgstr ""

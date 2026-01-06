@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G00_Startgestell/normal/lod0/Hull</nodefullVisual>
+	<visibilityBox>
+		<min>-1.242905 -0.005028 -2.103786</min>
+		<max>1.242905 0.820383 0.852967</max>
+	</visibilityBox>
+	<parent>vehicles/german/G00_Startgestell/normal/lod1/Hull</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+</root>

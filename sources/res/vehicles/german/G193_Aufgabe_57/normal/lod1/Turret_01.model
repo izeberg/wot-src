@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/german/G193_Aufgabe_57/normal/lod2/Turret_01</parent>
+	<tank>true</tank>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.520224 0.019704 -2.094591</min>
+		<max>1.555162 1.383464 1.819991</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/german/G193_Aufgabe_57/normal/lod1/Turret_01</nodefullVisual>
+</root>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G00_Feuerbunker/normal/lod3/Gun_01</nodefullVisual>
+	<parent>vehicles/german/G00_Feuerbunker/normal/lod4/Gun_01</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-0.417489 0.010868 -0.006954</min>
+		<max>0.417508 0.055985 0.411973</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

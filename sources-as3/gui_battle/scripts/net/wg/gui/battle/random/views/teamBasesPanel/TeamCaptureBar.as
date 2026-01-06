@@ -1,14 +1,15 @@
 package net.wg.gui.battle.random.views.teamBasesPanel
 {
+   import fl.motion.easing.Cubic;
    import flash.display.MovieClip;
    import flash.text.TextField;
    import net.wg.data.constants.Values;
-   import net.wg.infrastructure.interfaces.entity.IDisposable;
+   import net.wg.infrastructure.base.SimpleDisposable;
    import net.wg.infrastructure.managers.IColorSchemeManager;
    import net.wg.utils.IScheduler;
    import scaleform.clik.motion.Tween;
    
-   public class TeamCaptureBar extends MovieClip implements IDisposable
+   public class TeamCaptureBar extends SimpleDisposable
    {
       
       private static const EXIT_STATE:String = "exit";
@@ -25,13 +26,15 @@ package net.wg.gui.battle.random.views.teamBasesPanel
       
       private static const EXIT_TWEEN_DELAY:Number = 4500;
       
-      private static const ZERO_STRING:String = "0";
+      private static const SUPPLY_TWEEN_POSITION_DURATION:Number = 200;
       
       private static const TWEEN_EASE_IN_OUT:Array = [0,0.002,0.006,0.013,0.03,0.049,0.087,0.125,0.167,0.247,0.32,0.44,0.544,0.628,0.823,0.83,0.868,0.907,0.935,0.966,0.981,0.993,0.998,0.999,1];
       
       private static const TWEEN_EASE_NONE:Array = [0.032,0.068,0.116,0.152,0.2,0.232,0.268,0.316,0.352,0.4,0.432,0.468,0.516,0.552,0.6,0.664,0.668,0.716,0.752,0.8,0.832,0.868,0.916,0.952,1];
       
       private static const COLOR_ALIAS_PREFIX:String = "capture_bar_";
+      
+      private static const DASH:String = "-";
        
       
       public var textField:TextField = null;
@@ -45,6 +48,10 @@ package net.wg.gui.battle.random.views.teamBasesPanel
       public var progressBar:TeamCaptureProgress = null;
       
       public var progressBarReset:TeamCaptureProgressReset = null;
+      
+      public var tanksIndicator:MovieClip = null;
+      
+      public var supplyIndicator:MovieClip = null;
       
       private var _getColorType:String = "";
       
@@ -74,20 +81,23 @@ package net.wg.gui.battle.random.views.teamBasesPanel
       
       private var _colorSchemeMgr:IColorSchemeManager;
       
-      private var _disposed:Boolean = false;
-      
       private var _exitTween:Tween = null;
+      
+      private var _supplyIndicatorTween:Tween = null;
+      
+      private var _supplyIndicatorDefaultX:Number = 0;
       
       public function TeamCaptureBar()
       {
          this._scheduler = App.utils.scheduler;
          this._colorSchemeMgr = App.colorSchemeMgr;
          super();
+         this.tfVehiclesCount = this.tanksIndicator.tfVehiclesCount;
+         this._supplyIndicatorDefaultX = this.supplyIndicator.x;
       }
       
-      public final function dispose() : void
+      override protected function onDispose() : void
       {
-         this._disposed = true;
          stop();
          this._scheduler.cancelTask(this.animationStepHandler);
          this.textField = null;
@@ -100,15 +110,19 @@ package net.wg.gui.battle.random.views.teamBasesPanel
             this._exitTween.dispose();
             this._exitTween = null;
          }
+         this.clearSupplyIndicatorTween();
          this.bg.dispose();
          this.bg = null;
          this._getColorType = null;
          this._colorTypeFromVo = null;
          this.tfVehiclesCount = null;
          this.tfTimeLeft = null;
+         this.tanksIndicator = null;
+         this.supplyIndicator = null;
          this._currentEaseArray = null;
          this._scheduler = null;
          this._colorSchemeMgr = null;
+         super.onDispose();
       }
       
       public function setCaptured(param1:String) : void
@@ -125,36 +139,36 @@ package net.wg.gui.battle.random.views.teamBasesPanel
          this.tfTimeLeft.text = Values.EMPTY_STR;
       }
       
-      public function setData(param1:Number, param2:Number, param3:String, param4:String, param5:Number, param6:String, param7:String) : void
+      public function setData(param1:Number, param2:Number, param3:String, param4:String, param5:Number, param6:String, param7:int, param8:Boolean) : void
       {
          this.sortWeight = param2;
-         var _loc8_:Boolean = true;
+         var _loc9_:Boolean = true;
          if(param1 != this._id)
          {
             this._id = param1;
-            _loc8_ = false;
+            _loc9_ = false;
          }
          this._colorTypeFromVo = param3;
          this.updateColors();
          this.updateTitle(param4);
          gotoAndPlay(DISPLAY_STATE);
-         this.updateCaptureData(param5,false,false,1,param6,param7,param4,param3,_loc8_);
+         this.updateCaptureData(param5,false,false,1,param6,param7,param4,param3,param8,_loc9_);
       }
       
       public function stopCapture(param1:Number) : void
       {
-         this.updateCaptureData(param1,false,true,1,Values.EMPTY_STR,ZERO_STRING,Values.EMPTY_STR,this.colorType);
+         this.updateCaptureData(param1,false,true,1,Values.EMPTY_STR,Values.ZERO,Values.EMPTY_STR,this.colorType,false);
       }
       
-      public function updateCaptureData(param1:Number, param2:Boolean, param3:Boolean, param4:Number, param5:String, param6:String, param7:String, param8:String, param9:Boolean = true) : void
+      public function updateCaptureData(param1:Number, param2:Boolean, param3:Boolean, param4:Number, param5:String, param6:int, param7:String, param8:String, param9:Boolean, param10:Boolean = true) : void
       {
          this.progressBar.animate(param3);
-         var _loc10_:Number = this._points > 0 ? Number(param1 - this._points) : Number(0);
-         if(param9)
+         var _loc11_:Number = this._points > 0 ? Number(param1 - this._points) : Number(0);
+         if(param10)
          {
-            if(_loc10_ < 0)
+            if(_loc11_ < 0)
             {
-               this.showReset(param1,_loc10_ * -1);
+               this.showReset(param1,_loc11_ * -1);
                param2 = false;
             }
          }
@@ -165,8 +179,8 @@ package net.wg.gui.battle.random.views.teamBasesPanel
             this._colorTypeFromVo = param8;
             this.updateColors();
          }
-         this.animateProgress(param1,_loc10_,param2,param4);
-         this.tfVehiclesCount.text = param6;
+         this.animateProgress(param1,_loc11_,param2,param4);
+         this.updateIndicators(param9,param6);
          this.tfTimeLeft.text = param5;
       }
       
@@ -178,6 +192,29 @@ package net.wg.gui.battle.random.views.teamBasesPanel
             _loc1_ = this._colorTypeFromVo;
          }
          this.colorType = _loc1_;
+      }
+      
+      private function updateIndicators(param1:Boolean, param2:int) : void
+      {
+         this.tfVehiclesCount.text = param2 > Values.DEFAULT_INT ? param2.toString() : DASH;
+         var _loc3_:Boolean = param1 && param2 == Values.ZERO;
+         this.tanksIndicator.visible = !_loc3_;
+         this.supplyIndicator.visible = param1;
+         var _loc4_:Number = !!_loc3_ ? Number(this.tanksIndicator.x) : Number(this._supplyIndicatorDefaultX);
+         if(this.supplyIndicator.x != _loc4_)
+         {
+            this.clearSupplyIndicatorTween();
+            this._supplyIndicatorTween = new Tween(SUPPLY_TWEEN_POSITION_DURATION,this.supplyIndicator,{"x":_loc4_},{"ease":Cubic.easeOut});
+         }
+      }
+      
+      private function clearSupplyIndicatorTween() : void
+      {
+         if(this._supplyIndicatorTween)
+         {
+            this._supplyIndicatorTween.dispose();
+            this._supplyIndicatorTween = null;
+         }
       }
       
       private function updateTitle(param1:String) : void
@@ -271,11 +308,6 @@ package net.wg.gui.battle.random.views.teamBasesPanel
          this.bg.colorType = param1;
          this.progressBar.colorType = param1;
          this.progressBarReset.colorType = param1;
-      }
-      
-      public function isDisposed() : Boolean
-      {
-         return this._disposed;
       }
    }
 }

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
 	<tank>true</tank>
-	<nodefullVisual>vehicles/german/G181_StuG_Maus_17cm/normal/lod4/Hull</nodefullVisual>
 	<visibilityBox>
 		<min>-1.852033 -0.623847 -4.783540</min>
 		<max>1.861609 2.516173 4.593745</max>
 	</visibilityBox>
+	<nodefullVisual>vehicles/german/G181_StuG_Maus_17cm/normal/lod4/Hull</nodefullVisual>
 </root>

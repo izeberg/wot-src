@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<visibilityBox>
+		<min>-0.417570 -0.462979 -1.264417</min>
+		<max>0.417570 0.471867 5.312442</max>
+	</visibilityBox>
+	<parent>vehicles/russian/R235_KV_4_Fedorenko/crash/lod1/Gun_02</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/russian/R235_KV_4_Fedorenko/crash/lod0/Gun_02</nodefullVisual>
+</root>

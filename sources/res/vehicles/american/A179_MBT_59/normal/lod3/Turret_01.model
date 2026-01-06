@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/american/A179_MBT_59/normal/lod4/Turret_01</parent>
+	<tank>true</tank>
+	<extent>192.000000</extent>
+	<nodefullVisual>vehicles/american/A179_MBT_59/normal/lod3/Turret_01</nodefullVisual>
+	<visibilityBox>
+		<min>-1.517130 -0.006679 -2.409293</min>
+		<max>1.447988 0.722308 1.062642</max>
+	</visibilityBox>
+</root>

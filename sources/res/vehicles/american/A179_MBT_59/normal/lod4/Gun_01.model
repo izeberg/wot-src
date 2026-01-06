@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.307065 -0.223914 -0.344088</min>
+		<max>0.309369 0.399687 3.650936</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/american/A179_MBT_59/normal/lod4/Gun_01</nodefullVisual>
+</root>

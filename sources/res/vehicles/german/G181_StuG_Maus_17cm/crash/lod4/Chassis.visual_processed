@@ -22,7 +22,7 @@
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 0.000000 -1.000000</row1>
 					<row2>0.000000 1.000000 0.000000</row2>
-					<row3>0.000000 4.500000 0.000000</row3>
+					<row3>0.000000 5.055042 -1.355716</row3>
 				</transform>
 			</node>
 			<node>
@@ -66,28 +66,23 @@
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
 		<node>V_BlendBone</node>
-		<node>Tank_BlendBone</node>
 		<geometry>
-			<vertices>chassis_RShape.vertices</vertices>
-			<primitive>chassis_RShape.indices</primitive>
+			<vertices>chassis_R_Shape.vertices</vertices>
+			<primitive>chassis_R_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<materialKind>0</materialKind>
 					<identifier>tank_proxy_skinned</identifier>
 					<collisionFlags>0</collisionFlags>
-					<materialKind>0</materialKind>
-					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
-					</property>
 					<property>
 						diffuseMap
 						<Texture>vehicles/german/G181_StuG_Maus_17cm/StuG_Maus_17cm_proxy_AM.dds</Texture>
 					</property>
 					<property>
-						excludeMaskAndAOMap
-						<Texture>vehicles/german/G181_StuG_Maus_17cm/StuG_Maus_17cm_proxy_AO.dds</Texture>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 					<property>
 						metallicGlossMap
@@ -96,6 +91,14 @@
 					<property>
 						normalMap
 						<Texture>vehicles/german/G181_StuG_Maus_17cm/StuG_Maus_17cm_proxy_ANM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/german/G181_StuG_Maus_17cm/StuG_Maus_17cm_proxy_AO.dds</Texture>
+					</property>
+					<property>
+						alphaReference
+						<Int>0</Int>
 					</property>
 				</material>
 				<groupOrigin>1.179273 0.614592 -0.076397</groupOrigin>
@@ -105,28 +108,23 @@
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
 		<node>V_BlendBone</node>
-		<node>Tank_BlendBone</node>
 		<geometry>
-			<vertices>chassis_LShape.vertices</vertices>
-			<primitive>chassis_LShape.indices</primitive>
+			<vertices>chassis_L_Shape.vertices</vertices>
+			<primitive>chassis_L_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<materialKind>0</materialKind>
 					<identifier>tank_proxy_skinned</identifier>
 					<collisionFlags>0</collisionFlags>
-					<materialKind>0</materialKind>
-					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
-					</property>
 					<property>
 						diffuseMap
 						<Texture>vehicles/german/G181_StuG_Maus_17cm/StuG_Maus_17cm_proxy_AM.dds</Texture>
 					</property>
 					<property>
-						excludeMaskAndAOMap
-						<Texture>vehicles/german/G181_StuG_Maus_17cm/StuG_Maus_17cm_proxy_AO.dds</Texture>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 					<property>
 						metallicGlossMap
@@ -135,6 +133,14 @@
 					<property>
 						normalMap
 						<Texture>vehicles/german/G181_StuG_Maus_17cm/StuG_Maus_17cm_proxy_ANM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/german/G181_StuG_Maus_17cm/StuG_Maus_17cm_proxy_AO.dds</Texture>
+					</property>
+					<property>
+						alphaReference
+						<Int>0</Int>
 					</property>
 				</material>
 				<groupOrigin>-1.179273 0.614592 -0.076397</groupOrigin>

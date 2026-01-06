@@ -1093,7 +1093,7 @@
 		<isTracer>true</isTracer>
 		<effects>mainArmorPiercing</effects>
 		<damage>
-			<armor>250</armor>
+			<armor>320</armor>
 			<devices>135</devices>
 		</damage>
 	</_100mm_slpgr_m_43>
@@ -1108,7 +1108,7 @@
 		<isTracer>true</isTracer>
 		<effects>mainAPCR</effects>
 		<damage>
-			<armor>250</armor>
+			<armor>320</armor>
 			<devices>135</devices>
 		</damage>
 	</_100mm_pocisk_kumulacyjny_w43>
@@ -1127,7 +1127,7 @@
 		<isTracer>true</isTracer>
 		<effects>mainHighExplosive</effects>
 		<damage>
-			<armor>410</armor>
+			<armor>440</armor>
 			<devices>135</devices>
 		</damage>
 		<armorSpalls>
@@ -1137,7 +1137,7 @@
 			</impactRadius>
 			<coneAngle>90</coneAngle>
 			<damage>
-				<armor>205</armor>
+				<armor>440</armor>
 				<devices>70</devices>
 			</damage>
 		</armorSpalls>
@@ -2196,7 +2196,7 @@
 		<kind>ARMOR_PIERCING_CR</kind>
 		<caliber>85</caliber>
 		<isTracer>true</isTracer>
-		<effects>hugeAPCR</effects>
+		<effects>mainAPCR</effects>
 		<damage>
 			<armor>620</armor>
 			<devices>175</devices>
@@ -2211,7 +2211,7 @@
 		<kind>ARMOR_PIERCING_CR</kind>
 		<caliber>85</caliber>
 		<isTracer>true</isTracer>
-		<effects>hugeAPCR</effects>
+		<effects>mainAPCR</effects>
 		<damage>
 			<armor>620</armor>
 			<devices>175</devices>
@@ -2230,7 +2230,7 @@
 			<!--BW_String-->
 		</explosionRadius>
 		<isTracer>true</isTracer>
-		<effects>hugeHighExplosive</effects>
+		<effects>mainHighExplosive</effects>
 		<damage>
 			<armor>780</armor>
 			<devices>175</devices>
@@ -2255,7 +2255,7 @@
 		<kind>ARMOR_PIERCING_CR</kind>
 		<caliber>85</caliber>
 		<isTracer>true</isTracer>
-		<effects>hugeAPCR</effects>
+		<effects>mainAPCR</effects>
 		<damage>
 			<armor>620</armor>
 			<devices>175</devices>
@@ -2270,7 +2270,7 @@
 		<kind>ARMOR_PIERCING_CR</kind>
 		<caliber>85</caliber>
 		<isTracer>true</isTracer>
-		<effects>hugeAPCR</effects>
+		<effects>mainAPCR</effects>
 		<damage>
 			<armor>620</armor>
 			<devices>175</devices>
@@ -2289,7 +2289,7 @@
 			<!--BW_String-->
 		</explosionRadius>
 		<isTracer>true</isTracer>
-		<effects>hugeHighExplosive</effects>
+		<effects>mainHighExplosive</effects>
 		<damage>
 			<armor>780</armor>
 			<devices>175</devices>

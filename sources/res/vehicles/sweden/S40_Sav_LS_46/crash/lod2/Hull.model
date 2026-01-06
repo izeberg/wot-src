@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/sweden/S40_Sav_LS_46/crash/lod3/Hull</parent>
+	<extent>96.000000</extent>
+	<nodefullVisual>vehicles/sweden/S40_Sav_LS_46/crash/lod2/Hull</nodefullVisual>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.677947 -1.043966 -3.467532</min>
+		<max>1.698862 1.812456 3.213159</max>
+	</visibilityBox>
+</root>

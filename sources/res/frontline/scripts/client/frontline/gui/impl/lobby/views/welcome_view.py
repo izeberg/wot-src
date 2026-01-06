@@ -16,11 +16,6 @@ class WelcomeView(ViewImpl):
     def viewModel(self):
         return super(WelcomeView, self).getViewModel()
 
-    def _onLoading(self, *args, **kwargs):
-        super(WelcomeView, self)._onLoading(*args, **kwargs)
-        with self.viewModel.transaction() as (vm):
-            self.__updateVehiclesSlide(vm.vehiclesSlide)
-
     def _getEvents(self):
         return (
          (
@@ -28,12 +23,6 @@ class WelcomeView(ViewImpl):
 
     def __onViewClose(self):
         self.destroyWindow()
-
-    def __updateVehiclesSlide(self, vehicleSlideModel):
-        validVehicleLevels = self.__epicController.getValidVehicleLevels()
-        validVehicleLevels.sort()
-        vehicleSlideModel.setFromLevel(validVehicleLevels[0])
-        vehicleSlideModel.setToLevel(validVehicleLevels[(-1)])
 
 
 class WelcomeViewWindow(WindowImpl):

@@ -961,10 +961,10 @@ msgstr ""
 " нерухомай рубкай"
 
 msgid "kpi/bonus/negative/abilityCooldownBonus"
-msgstr "от времени перезарядки модификации"
+msgstr "ад часу перазарадкі мадыфікацыі"
 
 msgid "kpi/bonus/negative/abilityDurationBonus"
-msgstr "от времени действия модификации"
+msgstr "ад часу дзеяння мадыфікацыі"
 
 msgid "kpi/bonus/negative/artNotificationDelayFactor"
 msgstr ""
@@ -1144,7 +1144,7 @@ msgid "kpi/bonus/negative/vehicleGunKillReloadTime"
 msgstr "ад перанабівання гарматы"
 
 msgid "kpi/bonus/negative/vehicleGunReloadPenalty"
-msgstr "штраф от времени заряжания"
+msgstr "штраф ад часу набівання"
 
 msgid "kpi/bonus/negative/vehicleGunReloadTime"
 msgstr "ад часу набівання"
@@ -1172,6 +1172,9 @@ msgstr "ад штрафу да роскіду пашкоджанай гарма�
 
 msgid "kpi/bonus/negative/vehicleGunShotFullDispersion"
 msgstr "ад памеру круга навядзення"
+
+msgid "kpi/bonus/negative/vehicleGunSpecDamage"
+msgstr "ад сярэдніх пашкоджанняў"
 
 msgid "kpi/bonus/negative/vehicleInvisibilityAfterShot"
 msgstr "ад скрытасці пасля стрэлу"
@@ -1240,10 +1243,10 @@ msgid "kpi/bonus/neutral/radiomanDurationPerLevel"
 msgstr "працягласць перадачы разведданых пасля знішчэння"
 
 msgid "kpi/bonus/positive/abilityCooldownBonus"
-msgstr "ко времени перезарядки модификации"
+msgstr "да часу перазарадкі мадыфікацыі"
 
 msgid "kpi/bonus/positive/abilityDurationBonus"
-msgstr "ко времени действия модификации"
+msgstr "да часу дзеяння мадыфікацыі"
 
 msgid "kpi/bonus/positive/artNotificationDelayFactor"
 msgstr ""
@@ -1433,7 +1436,7 @@ msgid "kpi/bonus/positive/vehicleGunKillReloadTime"
 msgstr "да перанабівання гарматы"
 
 msgid "kpi/bonus/positive/vehicleGunReloadPenalty"
-msgstr "штраф ко времени заряжания"
+msgstr "штраф да часу набівання"
 
 msgid "kpi/bonus/positive/vehicleGunReloadTime"
 msgstr "да часу набівання"
@@ -1461,6 +1464,9 @@ msgstr "да штрафу да роскіду пашкоджанай гарма�
 
 msgid "kpi/bonus/positive/vehicleGunShotFullDispersion"
 msgstr "да памеру круга навядзення"
+
+msgid "kpi/bonus/positive/vehicleGunSpecDamage"
+msgstr "да сярэдніх пашкоджанняў"
 
 msgid "kpi/bonus/positive/vehicleInvisibilityAfterShot"
 msgstr "да скрытасці пасля стрэлу"
@@ -1525,14 +1531,11 @@ msgstr "c"
 msgid "kpi/bonus/specValueTypes/vehicleGunAndGunClipCooldown"
 msgstr " "
 
-msgid "kpi/bonus/specValueTypes/vehicleGunDamage"
-msgstr "%"
-
 msgid "kpi/bonus/ttc/negative/abilityCooldownBonus"
-msgstr "от времени перезарядки модификации"
+msgstr "ад часу перазарадкі мадыфікацыі"
 
 msgid "kpi/bonus/ttc/negative/abilityDurationBonus"
-msgstr "от времени действия модификации"
+msgstr "ад часу дзеяння мадыфікацыі"
 
 msgid "kpi/bonus/ttc/negative/crewHitChance"
 msgstr "ад аховы экіпажа ад раненняў"
@@ -1632,7 +1635,7 @@ msgid "kpi/bonus/ttc/negative/vehicleGunDamage"
 msgstr "ад сярэдніх пашкоджанняў"
 
 msgid "kpi/bonus/ttc/negative/vehicleGunReloadPenalty"
-msgstr "штраф от времени заряжания"
+msgstr "штраф ад часу набівання"
 
 msgid "kpi/bonus/ttc/negative/vehicleGunReloadTime"
 msgstr "ад часу набівання"
@@ -1663,6 +1666,9 @@ msgstr ""
 
 msgid "kpi/bonus/ttc/negative/vehicleGunShotFullDispersion"
 msgstr "ад памеру круга навядзення"
+
+msgid "kpi/bonus/ttc/negative/vehicleGunSpecDamage"
+msgstr "ад сярэдніх пашкоджанняў"
 
 msgid "kpi/bonus/ttc/negative/vehicleInvisibilityAfterShot"
 msgstr "ад скрытасці пасля стрэлу"
@@ -1704,10 +1710,10 @@ msgid "kpi/bonus/ttc/negative/woundedCrewEfficiency"
 msgstr "ад штрафу пры раненні танкіста з экіпажа, акрамя камандзіра"
 
 msgid "kpi/bonus/ttc/positive/abilityCooldownBonus"
-msgstr "к времени перезарядки модификации"
+msgstr "ко времени перезарядки модификации"
 
 msgid "kpi/bonus/ttc/positive/abilityDurationBonus"
-msgstr "ко времени действия модификации"
+msgstr "да часу дзеяння мадыфікацыі"
 
 msgid "kpi/bonus/ttc/positive/commanderHitChance"
 msgstr "да абароны камандзіра ад раненняў"
@@ -1833,7 +1839,7 @@ msgid "kpi/bonus/ttc/positive/vehicleGunDamage"
 msgstr "да сярэдніх пашкоджанняў"
 
 msgid "kpi/bonus/ttc/positive/vehicleGunReloadPenalty"
-msgstr "штраф ко времени заряжания"
+msgstr "штраф да часу набівання"
 
 msgid "kpi/bonus/ttc/positive/vehicleGunReloadTime"
 msgstr "да часу набівання"
@@ -1864,6 +1870,9 @@ msgstr ""
 
 msgid "kpi/bonus/ttc/positive/vehicleGunShotFullDispersion"
 msgstr "да памеру круга навядзення"
+
+msgid "kpi/bonus/ttc/positive/vehicleGunSpecDamage"
+msgstr "да сярэдніх пашкоджанняў"
 
 msgid "kpi/bonus/ttc/positive/vehicleInvisibilityAfterShot"
 msgstr "да скрытасці пасля стрэлу"
@@ -1959,12 +1968,6 @@ msgstr "км/гадз"
 msgid "kpi/bonus/valueTypes/vehicleGunAndGunClipCooldownSpec"
 msgstr " "
 
-msgid "kpi/bonus/valueTypes/vehicleGunDamage"
-msgstr " "
-
-msgid "kpi/bonus/valueTypes/vehicleGunDamageSpec"
-msgstr "%"
-
 msgid "kpi/bonus/valueTypes/vehicleGunReloadPenalty"
 msgstr "c"
 
@@ -1975,7 +1978,7 @@ msgid "kpi/bonus/valueTypes/vehicleOwnSpottingTime"
 msgstr "c"
 
 msgid "kpi/title/abilityDurationBonus"
-msgstr "Бонус ко времени действия модификации (с)"
+msgstr "Бонус да часу дзеяння мадыфікацыі (с)"
 
 msgid "kpi/title/chargeTimeBonus"
 msgstr "Час залпу (с)"
@@ -1990,7 +1993,7 @@ msgid "kpi/title/penaltyAfterShotBonus"
 msgstr "Памяншэнне часу пасля залпа"
 
 msgid "kpi/title/speedLimitsBonus"
-msgstr "Бонус к макс. скорости / заднему ходу (км/ч)"
+msgstr "Бонус да макс. хуткасці / задняга ходу (км/гадз)"
 
 msgid "kpi/title/temperatureCoolingDelay"
 msgstr "Затрымка ахаладжэння (с)"
@@ -2008,25 +2011,28 @@ msgid "kpi/title/temperatureStatesCount"
 msgstr "Тэрмічныя стадыі гарматы"
 
 msgid "kpi/title/trackRammingDamageFactor"
-msgstr "Бонус от полученного урона ходовой при таране"
+msgstr "Бонус ад атрыманых пашкоджанняў шасі пры таране"
 
 msgid "kpi/title/vehicleGunAndGunClipCooldown"
 msgstr "Бонус да перанабівання (поўнае/паміж)"
-
-msgid "kpi/title/vehicleGunDamage"
-msgstr "Бонус к среднему урону (при активации / пробитии)"
 
 msgid "kpi/title/vehicleGunKillReloadTime"
 msgstr "Бонус да перанабівання пры знішчэнні праціўніка"
 
 msgid "kpi/title/vehicleGunReloadPenalty"
-msgstr "Штраф ко времени заряжания (с)"
+msgstr "Штраф да часу набівання (с)"
+
+msgid "kpi/title/vehicleGunReloadTime"
+msgstr "Бонус к скорости перезарядки"
 
 msgid "kpi/title/vehicleGunReloadTimeReceiveShot"
 msgstr "Бонус да перанабівання пры траплянні па вас"
 
+msgid "kpi/title/vehicleGunSpecDamage"
+msgstr "Бонус да сярэдніх пашкоджання (пры актывацыі / прабіцці)"
+
 msgid "kpi/title/vehicleRamDamageResistance"
-msgstr "Бонус от полученного урона при таране"
+msgstr "Бонус ад атрыманых пашкоджанняў пры таране"
 
 msgid "section/battleAbilities"
 msgstr "РЭЗЕРВЫ"
@@ -2202,10 +2208,10 @@ msgid "tooltips/abilitySlot/title"
 msgstr "МАДЫФІКАЦЫЯ"
 
 msgid "tooltips/abilityTooltip/abilityDescription/cooldown"
-msgstr "Время перезарядки модификации"
+msgstr "Час перазарадкі мадыфікацыі"
 
 msgid "tooltips/abilityTooltip/abilityDescription/duration"
-msgstr "Время действия модификации"
+msgstr "Час дзеяння мадыфікацыі"
 
 msgid "tooltips/abilityTooltip/abilityDescription/reuseCount"
 msgstr "Выкарыстанняў за бой"

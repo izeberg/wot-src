@@ -155,8 +155,17 @@ msgstr "E 75 verstärkteketten"
 msgid "Chassis_E50_Ausf_M"
 msgstr "E 50 Ausf. M"
 
+msgid "Chassis_G00_Artilleriebunker"
+msgstr "ДОТ"
+
 msgid "Chassis_G00_Bomber_SH"
 msgstr "?empty?"
+
+msgid "Chassis_G00_Feuerbunker"
+msgstr "Огнемёт"
+
+msgid "Chassis_G00_Startgestell"
+msgstr "Nebelwerfer 41"
 
 msgid "Chassis_G04_PzVI_Tiger_IA"
 msgstr "Pz.Kpfw. Tiger Ausf. E"
@@ -369,6 +378,9 @@ msgstr "Eisbär"
 
 msgid "Chassis_G189_E100_02"
 msgstr "E 100 Feuerbär"
+
+msgid "Chassis_G193_Aufgabe_57"
+msgstr "Aufgabe 57"
 
 msgid "Chassis_G196_E_75_Ausf_B_Doppel"
 msgstr "E 75"
@@ -850,6 +862,9 @@ msgstr "E 50 M"
 msgid "Engine_Auf_Panther"
 msgstr "Maybach HL 295 Ausf. A"
 
+msgid "Engine_Supply"
+msgstr "Engine"
+
 msgid "Engine_VK4502P_G"
 msgstr "Maybach HL 234 W"
 
@@ -879,6 +894,12 @@ msgstr "Elefant"
 
 msgid "Ferdinandvetstaerktketten_short"
 msgstr "Elefant"
+
+msgid "Feuermischung"
+msgstr "Feuermischung 41 Spreng"
+
+msgid "Flammenwerfer"
+msgstr "Flammenwerfer"
 
 msgid "FuG10"
 msgstr "FuG 10"
@@ -967,6 +988,15 @@ msgstr "Fu.Spr.Ger. \"a\""
 msgid "Fu_8_SE_30_M"
 msgstr "Fu 8 SE 30 M"
 
+msgid "G00_Artilleriebunker"
+msgstr "ДОТ"
+
+msgid "G00_Artilleriebunker_descr"
+msgstr "ДОТ"
+
+msgid "G00_Artilleriebunker_short"
+msgstr "ДОТ"
+
 msgid "G00_Bomber_SH"
 msgstr "Брандар"
 
@@ -979,14 +1009,35 @@ msgstr "?empty?"
 msgid "G00_Bomber_SH_Radio"
 msgstr "?empty?"
 
+msgid "G00_Bomber_SH_descr"
+msgstr "?empty?"
+
 msgid "G00_Bomber_SH_short"
 msgstr "Брандар"
+
+msgid "G00_Feuerbunker"
+msgstr "Огнемёт"
+
+msgid "G00_Feuerbunker_descr"
+msgstr "Огнемёт"
+
+msgid "G00_Feuerbunker_short"
+msgstr "Огнемёт"
 
 msgid "G00_K_bomber__HW_21_AI"
 msgstr "Брандар 21"
 
 msgid "G00_K_bomber__HW_21_AI_short"
 msgstr "Брандар 21"
+
+msgid "G00_Startgestell"
+msgstr "РСЗО"
+
+msgid "G00_Startgestell_descr"
+msgstr "РСЗО"
+
+msgid "G00_Startgestell_short"
+msgstr "РСЗО"
 
 msgid "G04"
 msgstr "G04"
@@ -2336,23 +2387,23 @@ msgstr "StuG Maus 17 cm"
 
 msgid "G181_StuG_Maus_17cm_descr"
 msgstr ""
-"Сверхтяжёлый немецкий танк Pz.Kpfw.Maus первоначально не рассматривался как база для САУ. Ситуация изменилась весной 1944-го года, когда сверхтяжёлый истребитель танков стал приоритетным направлением. Тогда же КБ Krupp разработало проект пушки 17cm StuK L/53. Для создания САУ на базе Pz.Kpfw.Maus требовалось минимум изменений: вместо башни устанавливалась рубка с незначительной доработкой корпуса. Одной из особенностей САУ была зенитная башня фирмы Porsche с 30-мм авиационной автоматической пушкой MK 108, которой управлял командир. В июле 1944-го года работы по данному проекту были прекращены. До наших дней сохранились лишь отрывочные сведения о данном проекте.\n"
+"Сверхтяжёлый немецкий танк Pz.Kpfw.Maus первоначально не рассматривался как база для САУ. Ситуация изменилась весной 1944 года, когда сверхтяжёлый истребитель танков стал приоритетным направлением. Тогда же КБ Krupp разработало проект пушки 17cm StuK L/53. Для создания САУ на базе Pz.Kpfw.Maus требовалось минимум изменений: вместо башни устанавливалась рубка с незначительной доработкой корпуса. Одной из особенностей САУ была зенитная башня фирмы Porsche с 30-мм авиационной автоматической пушкой MK 108, которой управлял командир. В июле 1944 года работы по данному проекту были прекращены. До наших дней сохранились лишь отрывочные сведения о данном проекте.\n"
 "\n"
 "Характеристики машины могут быть изменены без компенсации."
 
 msgid "G181_StuG_Maus_17cm_long_special"
 msgstr ""
-"Медленная и прекрасно защищённая штурмовая машина с мощным орудием, которая "
-"создана для прорыва или удерживания направлений. Низкая скорость заставляет "
-"заранее выбирать направление, но по прибытии на огневой рубеж можно "
-"рассчитывать в том числе и на психологический эффект: не каждый противник "
-"отважится подставиться под 170-мм снаряд."
+"Павольная і выдатна абароненая штурмавая машына з магутнай гарматай, якая "
+"створана для прарыву або ўтрымання напрамкаў. Нізкая хуткасць змушае загадзя"
+" выбіраць напрамак, але пасля прыбыцця на баявы рубеж можна разлічваць у тым"
+" ліку і на псіхалагічны эфект: не кожны праціўнік захоча падстаўляцца пад "
+"170-мм снарад."
 
 msgid "G181_StuG_Maus_17cm_short"
 msgstr "StuG Maus"
 
 msgid "G181_StuG_Maus_17cm_short_special"
-msgstr "Отличное орудие, прекрасная защищённость"
+msgstr "Выдатная гармата, надзейная абароненасць"
 
 msgid "G182_Mausekonig"
 msgstr "Mausekönig"
@@ -2422,28 +2473,45 @@ msgstr "Feuerbär"
 msgid "G189_E100_02_short_special"
 msgstr "Усе плюсы і мінусы звыклага Е 100, ракетныя паскаральнікі."
 
+msgid "G193_Aufgabe_57"
+msgstr "Aufgabe 57"
+
+msgid "G193_Aufgabe_57_descr"
+msgstr ""
+" \n"
+"\n"
+"Характарыстыкі машыны могуць быць зменены без кампенсацыі."
+
+msgid "G193_Aufgabe_57_long_special"
+msgstr "?empty?"
+
+msgid "G193_Aufgabe_57_short"
+msgstr "Aufgabe 57"
+
+msgid "G193_Aufgabe_57_short_special"
+msgstr "?empty?"
+
 msgid "G196_E_75_Ausf_B_Doppel"
 msgstr "E 75 Ausf B Doppel"
 
 msgid "G196_E_75_Ausf_B_Doppel_descr"
 msgstr ""
-"В рамках так называемой Е-серии ближе к концу Второй мировой войны немецкими конструкторами высказывалось много идей и предложений по новым образцам бронетехники, порой — очень экзотичных. Один из подобных проектов предлагалось вооружить спаркой орудий в одной башне. По задумке конструкторов такой танк смог бы вести огонь залпом, либо с увеличенной скорострельностью. По одной из версий, впрочем, не имеющей документального подтверждения, башня и корпус разрабатывались разными фирмами, причём башню построили в металле. Для испытания концепции двухпушечного танка был взят корпус танка E-75, находившийся в сборочном цеху, без обвеса и в заводской грунтовке. Из-за характерного облика машина получила от испытателей прозвище «Doppel».\n"
+"В рамках так называемой Е-серии ближе к концу Второй мировой войны немецкими конструкторами высказывалось много идей и предложений по новым образцам бронетехники, порой — очень экзотичных. Один из подобных проектов предлагалось вооружить спаркой орудий в одной башне. По задумке конструкторов такой танк смог бы вести огонь залпом либо с увеличенной скорострельностью. По одной из версий, впрочем, не имеющей документального подтверждения, башня и корпус разрабатывались разными фирмами, причём башню построили в металле. Для испытания концепции двухпушечного танка был взят корпус танка E-75, находившийся в сборочном цехе, без обвеса и в заводской грунтовке. Из-за характерного облика машина получила от испытателей прозвище «Doppel».\n"
 "\n"
 "Характеристики машины могут быть изменены без компенсации."
 
 msgid "G196_E_75_Ausf_B_Doppel_long_special"
 msgstr ""
-"Машина выделяется отличным бронированием корпуса и высоким уроном в минуту, "
-"что позволяет отлично себя чувствовать в ближних боях с противником. "
-"Благодаря комфортному двухствольному орудию можно адаптироваться под "
-"тактическую ситуацию, идя «в размен» с противником, используя залповый огонь"
-" или привычный цикличный."
+"Машына вылучаецца выдатным браніраванне корпуса і высокімі пашкоджаннямі за "
+"хвіліну, што дазваляе выдатна пачувацца ў блізкім баі. Дзякуючы камфортнай "
+"двухствольнай гармаце можна адаптавацца пад тактычную сітуацыю, ідучы «ў "
+"размен» з праціўнікам, выкарыстоўваючы залпавы агонь або звыклы цыклічны."
 
 msgid "G196_E_75_Ausf_B_Doppel_short"
 msgstr "Doppel"
 
 msgid "G196_E_75_Ausf_B_Doppel_short_special"
-msgstr "Отличное бронирование корпуса, высокий урон в минуту"
+msgstr "Выдатнае браніраванне корпуса, высокія пашкоджанні за хвіліну"
 
 msgid "G20_Marder_II"
 msgstr "Marder II"
@@ -3207,6 +3275,9 @@ msgstr "MB 881 P"
 
 msgid "MTU803"
 msgstr "MTU803"
+
+msgid "MT_881"
+msgstr "Daimler Benz MТ 881 Ka-500"
 
 msgid "MarderII"
 msgstr "Marder II"
@@ -4293,19 +4364,21 @@ msgstr "Pz.Kpfw. Tiger Ausf. E"
 
 msgid "PzVI_descr"
 msgstr ""
-"Разработка танка началась в 1937 году компанией Henschel. Выпускался серийно"
-" с 1942 года. Впервые использовался в боевых действиях под Ленинградом. Танк"
-" участвовал в боях в Тунисе, самое массовое применение было в ходе сражения "
-"на Курской дуге. Несмотря на прекращение производства летом 1944 года, «Тигр"
-" I» использовался до конца войны. Всего было выпущено 1354 танка."
+"Распрацоўка танка пачалася ў 1937 годзе кампаніяй Henschel. Выпускаўся "
+"серыйна з 1942 года. Упершыню выкарыстоўваўся ў баявых дзеяннях пад "
+"Ленінградам. Танк удзельнічаў у баях у Тунісе, самае масавае выкарыстанне "
+"было падчас бітвы на Курскай дузе. Нягледзячы на спыненне вытворчасці ўлетку"
+" 1944 года, «Тыгр I» выкарыстоўваўся да канца вайны. Усяго было выпушчана "
+"1354 танкі."
 
 msgid "PzVI_descr_MapsTraining_Player_HT_2"
 msgstr ""
-"Разработка танка началась в 1937 году компанией Henschel. Выпускался серийно"
-" с 1942 года. Впервые использовался в боевых действиях под Ленинградом. Танк"
-" участвовал в боях в Тунисе, самое массовое применение было в ходе сражения "
-"на Курской дуге. Несмотря на прекращение производства летом 1944 года, «Тигр"
-" I» использовался до конца войны. Всего было выпущено 1354 танка."
+"Распрацоўка танка пачалася ў 1937 годзе кампаніяй Henschel. Выпускаўся "
+"серыйна з 1942 года. Упершыню выкарыстоўваўся ў баявых дзеяннях пад "
+"Ленінградам. Танк удзельнічаў у баях у Тунісе, самае масавае выкарыстанне "
+"было падчас бітвы на Курскай дузе. Нягледзячы на спыненне вытворчасці ўлетку"
+" 1944 года, «Тыгр I» выкарыстоўваўся да канца вайны. Усяго было выпушчана "
+"1354 танкі."
 
 msgid "PzV_PzIV"
 msgstr "Pz.Kpfw. V/IV"
@@ -4460,6 +4533,9 @@ msgstr "R/5a"
 msgid "Radio_Auf_Panther"
 msgstr "FuG 12 A-OR"
 
+msgid "Radio_Supply"
+msgstr "Radio"
+
 msgid "Radio_VK4502P_G"
 msgstr "FuG5 W"
 
@@ -4516,6 +4592,9 @@ msgid "SEM25"
 msgstr "SEM 25"
 
 msgid "SEM25_1"
+msgstr "SEM 25A"
+
+msgid "SEM25_A"
 msgstr "SEM 25A"
 
 msgid "SEM_25A"
@@ -4713,8 +4792,17 @@ msgstr "E 75 Ausf. A"
 msgid "Turret_1_E50_Ausf_M"
 msgstr "E 50 Ausf. M"
 
+msgid "Turret_1_G00_Artilleriebunker"
+msgstr "ДОТ"
+
 msgid "Turret_1_G00_Bomber_SH"
 msgstr "?empty?"
+
+msgid "Turret_1_G00_Feuerbunker"
+msgstr "Огнемёт"
+
+msgid "Turret_1_G00_Startgestell"
+msgstr "Nebelwerfer 41"
 
 msgid "Turret_1_G04_PzVI_Tiger_IA"
 msgstr "Pz.Kpfw. Tiger Ausf. E"
@@ -4914,6 +5002,9 @@ msgstr "Mausekönig"
 
 msgid "Turret_1_G184_EisBaer"
 msgstr "Eisbär"
+
+msgid "Turret_1_G193_Aufgabe_57"
+msgstr "Aufgabe 57"
 
 msgid "Turret_1_G196_E_75_Ausf_B_Doppel"
 msgstr "Doppel"
@@ -5564,6 +5655,9 @@ msgstr "Wespe verstärkteketten"
 msgid "Wespeturm"
 msgstr "Wespe"
 
+msgid "Wurfgranate_41_Spreng"
+msgstr "Wurfgranate 41 Spreng"
+
 msgid "_100mm_3UBK4"
 msgstr "3UBK4"
 
@@ -5838,6 +5932,9 @@ msgstr "DM12 MZ"
 msgid "_120mm_HE_DM10"
 msgstr "DM10"
 
+msgid "_120mm_HlGr57"
+msgstr "Pzgr 57 mod."
+
 msgid "_120mm_HlGr59"
 msgstr "Pzgr 61 mod."
 
@@ -5847,11 +5944,17 @@ msgstr "M820 AP-T"
 msgid "_120mm_M820_HEAT"
 msgstr "M820 HEAT"
 
+msgid "_120mm_Pzgr57"
+msgstr "Pzgr 57"
+
 msgid "_120mm_Pzgr59"
 msgstr "Pzgr 59"
 
 msgid "_120mm_RhD"
 msgstr "120 mm RhD"
+
+msgid "_120mm_Rh_E1"
+msgstr "12 cm Rh E1"
 
 msgid "_120mm_SDRN1"
 msgstr "SDRN1 HE"
@@ -5861,6 +5964,9 @@ msgstr "SDRN1V HE"
 
 msgid "_120mm_Sprgr56"
 msgstr "Sprgr 56"
+
+msgid "_120mm_Sprgr57"
+msgstr "Sprgr 57"
 
 msgid "_120mm_VKL65G"
 msgstr "VKL65G"
@@ -6089,6 +6195,9 @@ msgstr "15.1 cm Kw.K. L/38"
 
 msgid "_150mm_KwK44_L38_SH"
 msgstr "15 cm Kw.K. L/38"
+
+msgid "_150mm_Nebelwerfer_41"
+msgstr "15 cm Nebelwerfer 41"
 
 msgid "_150mm_Pak_L63"
 msgstr "15 cm Pak L/63"
@@ -6410,6 +6519,12 @@ msgstr "7,5 cm Škoda A18"
 
 msgid "_75mm_APCBC"
 msgstr "APCBC"
+
+msgid "_75mm_Bunker_Gun"
+msgstr "7,5 cm Kw.K. 42 L/70"
+
+msgid "_75mm_Bunker_Shell"
+msgstr "Pzgr 39 L"
 
 msgid "_75mm_Flak_L60"
 msgstr "7,5 cm Flak L/60"

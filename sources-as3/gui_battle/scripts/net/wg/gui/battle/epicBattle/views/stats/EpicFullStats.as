@@ -12,9 +12,11 @@ package net.wg.gui.battle.epicBattle.views.stats
    import net.wg.data.constants.PersonalStatus;
    import net.wg.gui.battle.epicBattle.VO.daapi.EpicPlayerStatsVO;
    import net.wg.gui.battle.epicBattle.VO.daapi.EpicVehiclesStatsVO;
+   import net.wg.gui.battle.epicBattle.views.stats.components.EpicBattleQuestsTab;
    import net.wg.gui.battle.epicBattle.views.stats.components.EpicFullStatsTable;
    import net.wg.gui.battle.epicBattle.views.stats.components.EpicFullStatsTableCtrl;
    import net.wg.gui.battle.epicBattle.views.stats.components.EpicStatsHeader;
+   import net.wg.gui.battle.epicBattle.views.stats.components.EpicStatsTableFilterGroup;
    import net.wg.gui.battle.epicBattle.views.stats.events.EpicFullStatsEvent;
    import net.wg.infrastructure.base.meta.IEpicFullStatsMeta;
    import net.wg.infrastructure.base.meta.impl.EpicFullStatsMeta;
@@ -29,6 +31,10 @@ package net.wg.gui.battle.epicBattle.views.stats
       
       private static const TOP_TABLE_OFFSET:int = 139;
       
+      private static const TOP_TABS_OFFSET:int = 117;
+      
+      private static const TOP_QUEST_TAB_OFFSET:int = 150;
+      
       private static const MIN_HEIGHT:int = 768;
        
       
@@ -36,7 +42,11 @@ package net.wg.gui.battle.epicBattle.views.stats
       
       public var statsTable:EpicFullStatsTable = null;
       
+      public var tabButtons:EpicStatsTableFilterGroup = null;
+      
       public var modalBgSpr:Sprite = null;
+      
+      public var questsTab:EpicBattleQuestsTab = null;
       
       private var _tableCtrl:EpicFullStatsTableCtrl = null;
       
@@ -47,7 +57,7 @@ package net.wg.gui.battle.epicBattle.views.stats
       public function EpicFullStats()
       {
          super();
-         this._tableCtrl = new EpicFullStatsTableCtrl(this.statsTable,this);
+         this._tableCtrl = new EpicFullStatsTableCtrl(this.statsTable,this.tabButtons,this);
       }
       
       override public function setCompVisible(param1:Boolean) : void
@@ -63,9 +73,10 @@ package net.wg.gui.battle.epicBattle.views.stats
       override protected function configUI() : void
       {
          super.configUI();
+         this.questsTab.visible = false;
          this.statsTable.generalBonus.visible = false;
-         this.statsTable.statsFilters.btnTabPlayerLane.selected = true;
-         this.statsTable.statsFilters.addEventListener(EpicFullStatsEvent.FILTER_CHANGED,this.onFilterChangedHandler);
+         this.tabButtons.btnTabPlayerLane.selected = true;
+         this.tabButtons.addEventListener(EpicFullStatsEvent.FILTER_CHANGED,this.onFilterChangedHandler);
          this._tableCtrl.setupSquadElements();
          App.voiceChatMgr.addEventListener(VoiceChatEvent.START_SPEAKING,this.onStartSpeakingHandler);
          App.voiceChatMgr.addEventListener(VoiceChatEvent.STOP_SPEAKING,this.onStopSpeakingHandler);
@@ -77,11 +88,14 @@ package net.wg.gui.battle.epicBattle.views.stats
          App.voiceChatMgr.removeEventListener(VoiceChatEvent.START_SPEAKING,this.onStartSpeakingHandler);
          App.voiceChatMgr.removeEventListener(VoiceChatEvent.STOP_SPEAKING,this.onStopSpeakingHandler);
          App.colorSchemeMgr.removeEventListener(ColorSchemeEvent.SCHEMAS_UPDATED,this.onColorSchemasUpdatedHandler);
-         this.statsTable.statsFilters.removeEventListener(EpicFullStatsEvent.FILTER_CHANGED,this.onFilterChangedHandler);
+         this.tabButtons.removeEventListener(EpicFullStatsEvent.FILTER_CHANGED,this.onFilterChangedHandler);
          this.header.dispose();
          this.header = null;
          this.statsTable.dispose();
          this.statsTable = null;
+         this.questsTab = null;
+         this.tabButtons.dispose();
+         this.tabButtons = null;
          this.modalBgSpr = null;
          this._tableCtrl.dispose();
          this._tableCtrl = null;
@@ -95,9 +109,9 @@ package net.wg.gui.battle.epicBattle.views.stats
          this._tableCtrl.addVehiclesInfo(true,_loc2_.rightVehicleInfos,_loc2_.rightVehiclesIDs);
       }
       
-      public function as_initializeText(param1:String, param2:String) : void
+      public function as_initializeText(param1:String, param2:String, param3:String) : void
       {
-         this.statsTable.statsFilters.setButtonTexts(param1,param2);
+         this.tabButtons.setButtonTexts(param1,param2,param3);
       }
       
       public function as_setIsInteractive(param1:Boolean) : void
@@ -119,6 +133,13 @@ package net.wg.gui.battle.epicBattle.views.stats
          {
             this.statsTable.generalBonus.bonusValue = param1;
          }
+      }
+      
+      public function as_toggleQuestsTab(param1:Boolean) : void
+      {
+         this.as_setIsInteractive(param1);
+         this.tabButtons.toggleQuestsTab(param1);
+         this.toggleTabsVisibility(!this.tabButtons.btnQuests.selected);
       }
       
       public function setArenaInfo(param1:IDAAPIDataClass) : void
@@ -216,11 +237,18 @@ package net.wg.gui.battle.epicBattle.views.stats
       
       public function updateStageSize(param1:Number, param2:Number) : void
       {
+         var _loc4_:Number = NaN;
+         var _loc5_:int = 0;
          var _loc3_:Number = param1 >> 1;
-         var _loc4_:Number = param2 >> 1;
+         _loc4_ = param2 >> 1;
          this.header.modalBgSpr.width = param1;
          this.header.modalBgSpr.x = -_loc3_;
-         this.statsTable.y = _loc4_ - TOP_TABLE_OFFSET * (param2 / MIN_HEIGHT);
+         _loc5_ = _loc4_ - TOP_TABLE_OFFSET * (param2 / MIN_HEIGHT);
+         this.questsTab.y = _loc5_ - TOP_QUEST_TAB_OFFSET;
+         this.questsTab.x = -_loc3_;
+         this.questsTab.setSize(param1,param2 - this.questsTab.y);
+         this.tabButtons.y = _loc5_ - TOP_TABS_OFFSET;
+         this.statsTable.y = _loc5_;
          this.statsTable.updateHeight(param2);
          this.modalBgSpr.width = param1;
          this.modalBgSpr.height = param2;
@@ -284,7 +312,14 @@ package net.wg.gui.battle.epicBattle.views.stats
       
       private function onFilterChangedHandler(param1:EpicFullStatsEvent) : void
       {
+         this.toggleTabsVisibility(param1.visible);
          this._tableCtrl.filterActive = param1.lane > 0;
+      }
+      
+      private function toggleTabsVisibility(param1:Boolean) : void
+      {
+         this.statsTable.visible = param1;
+         this.questsTab.visible = !param1;
       }
       
       private function onColorSchemasUpdatedHandler(param1:ColorSchemeEvent) : void

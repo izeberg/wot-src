@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.678592 -0.710644 -3.496248</min>
+		<max>1.676303 2.701715 3.218368</max>
+	</visibilityBox>
+	<parent>vehicles/sweden/S40_Sav_LS_46/normal/lod1/Hull</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/sweden/S40_Sav_LS_46/normal/lod0/Hull</nodefullVisual>
+</root>

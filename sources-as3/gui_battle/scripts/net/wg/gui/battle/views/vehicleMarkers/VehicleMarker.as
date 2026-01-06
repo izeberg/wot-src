@@ -21,6 +21,14 @@ package net.wg.gui.battle.views.vehicleMarkers
    public class VehicleMarker extends BattleUIComponent implements IMarkerManagerHandler, IVehicleMarkerInvokable
    {
       
+      protected static const HEALTH_LBL:String = "Hp";
+      
+      protected static const HEALTH_BAR:String = "HpIndicator";
+      
+      protected static const V_NAME_LBL:String = "VehicleName";
+      
+      protected static const HP_FIELD_TO_HP_BAR_OFFSET:int = 2;
+      
       private static const V_TYPE_ICON_Y:int = -7;
       
       private static const SHADOW_POSITIONS:Array = [null,new Point(-94,-59),new Point(-94,-85),new Point(-94,-42),new Point(-94,-72),new Point(-94,-77)];
@@ -29,13 +37,7 @@ package net.wg.gui.battle.views.vehicleMarkers
       
       private static const LEVEL:String = "Level";
       
-      private static const HEALTH_LBL:String = "Hp";
-      
-      private static const HEALTH_BAR:String = "HpIndicator";
-      
       private static const P_NAME_LBL:String = "PlayerName";
-      
-      private static const V_NAME_LBL:String = "VehicleName";
       
       private static const DAMAGE_PANEL:String = "Damage";
       
@@ -86,8 +88,6 @@ package net.wg.gui.battle.views.vehicleMarkers
       private static const PNG_EXT:String = ".png";
       
       private static const START_Y:int = -16;
-      
-      private static const HP_FIELD_TO_HP_BAR_OFFSET:int = 2;
       
       private static const WHITE_COLOR:String = "white";
       
@@ -162,9 +162,11 @@ package net.wg.gui.battle.views.vehicleMarkers
       
       protected var offsets:Array;
       
-      private var _extInfoShow:Boolean = false;
+      protected var canUseCachedVisibility:Boolean = false;
       
-      private var _lastActionState:String = null;
+      protected var lastActionState:String = null;
+      
+      private var _extInfoShow:Boolean = false;
       
       private var _objectiveActionMarker:String = null;
       
@@ -193,8 +195,6 @@ package net.wg.gui.battle.views.vehicleMarkers
       private var _isFlagShown:Boolean = false;
       
       private var _isManagerReady:Boolean = false;
-      
-      private var _canUseCachedVisibility:Boolean = false;
       
       private var _hitIconOffset:int = -1;
       
@@ -253,7 +253,7 @@ package net.wg.gui.battle.views.vehicleMarkers
                this.setVehicleType();
             }
             this.setMarkerState(this._markerState);
-            this._canUseCachedVisibility = false;
+            this.canUseCachedVisibility = false;
             this.updateMarkerSettings();
             this._isPopulated = true;
          }
@@ -579,7 +579,7 @@ package net.wg.gui.battle.views.vehicleMarkers
       public function showActionMarker(param1:String) : void
       {
          this.actionMarker.showAction(param1);
-         this._lastActionState = param1;
+         this.lastActionState = param1;
          if(param1 != Values.EMPTY_STR)
          {
             this.updateMarkerSettings();
@@ -618,7 +618,7 @@ package net.wg.gui.battle.views.vehicleMarkers
       
       public function stopActionMarker() : void
       {
-         this._lastActionState = null;
+         this.lastActionState = null;
          this.actionMarker.stopAction();
          this.setIsStickyAndOutOfScreen(false);
       }
@@ -723,6 +723,16 @@ package net.wg.gui.battle.views.vehicleMarkers
       {
       }
       
+      public function get vehicleDestroyedAlready() : Boolean
+      {
+         return this._vehicleDestroyedAlready;
+      }
+      
+      public function get markerColor() : String
+      {
+         return this._markerColor;
+      }
+      
       protected function initialDrawParts() : void
       {
          var _loc1_:String = VMAtlasItemName.getLevelIconName(this.model.vLevel);
@@ -738,9 +748,32 @@ package net.wg.gui.battle.views.vehicleMarkers
          this.setVehicleType();
       }
       
+      protected function redrawShadow(param1:Boolean, param2:Boolean, param3:Boolean, param4:Boolean) : void
+      {
+         var _loc6_:Point = null;
+         var _loc5_:int = (!!param1 ? 1 : 0) + (!!param2 ? 1 : 0);
+         if(!param3)
+         {
+            _loc5_ += !!param4 ? 1 : 0;
+            if(_loc5_ > 0)
+            {
+               _loc5_ += SHADOW_TYPE_HBAR_OFFSET;
+            }
+         }
+         if(_loc5_ > 0)
+         {
+            _loc6_ = SHADOW_POSITIONS[_loc5_];
+            this.vmManager.drawGraphics(VMAtlasItemName.getShadowName(_loc5_),this.bgShadow.graphics,_loc6_);
+            this.bgShadow.visible = true;
+         }
+         else
+         {
+            this.bgShadow.visible = false;
+         }
+      }
+      
       protected function updatePartsVisibility() : Vector.<Boolean>
       {
-         var _loc10_:Point = null;
          var _loc1_:Boolean = this.getIsPartVisible(ICON);
          var _loc2_:Boolean = this.getIsPartVisible(LEVEL);
          var _loc3_:Boolean = this.getIsPartVisible(P_NAME_LBL);
@@ -788,36 +821,28 @@ package net.wg.gui.battle.views.vehicleMarkers
                _loc9_ += SHADOW_TYPE_HBAR_OFFSET;
             }
          }
-         if(_loc9_ > 0)
-         {
-            _loc10_ = SHADOW_POSITIONS[_loc9_];
-            this.vmManager.drawGraphics(VMAtlasItemName.getShadowName(_loc9_),this.bgShadow.graphics,_loc10_);
-            this.bgShadow.visible = true;
-         }
-         else
-         {
-            this.bgShadow.visible = false;
-         }
+         this.redrawShadow(_loc3_,_loc4_,_loc5_,_loc6_);
          return new <Boolean>[_loc5_ || _loc6_,_loc3_,_loc4_,_loc2_,_loc1_,_loc8_,this.model.squadIndex != 0,this._isFlagShown,this.statusContainer.isVisible(),this.actionMarker.visible && this.actionMarker.isVisible(),this.vehicleMarkerHoverMC.visible,this.statTrack.visible];
       }
       
-      protected function getIsPartVisible(param1:String) : Boolean
+      protected function getIsPartVisible(param1:String, param2:Object = null) : Boolean
       {
-         var _loc2_:Boolean = false;
-         var _loc3_:String = MARKER + (!!this.exInfo ? ALT : BASE) + param1;
+         var _loc3_:Boolean = false;
+         var _loc4_:String = MARKER + (!!this.exInfo ? ALT : BASE) + param1;
+         param2 = param2 || this.markerSettings;
          if(param1 == HEALTH_LBL)
          {
-            _loc2_ = this.markerSettings[_loc3_] != HPDisplayMode.HIDDEN;
+            _loc3_ = param2[_loc4_] != HPDisplayMode.HIDDEN;
          }
          else
          {
-            _loc2_ = this.markerSettings[_loc3_];
+            _loc3_ = param2[_loc4_];
          }
          if(this.isStickyAndOutOfScreen)
          {
-            _loc2_ = param1 == ACTION_MARKER;
+            _loc3_ = param1 == ACTION_MARKER;
          }
-         return _loc2_;
+         return _loc3_;
       }
       
       protected function prepareParts() : Array
@@ -855,14 +880,14 @@ package net.wg.gui.battle.views.vehicleMarkers
          this.hitLabel.playShowTween();
       }
       
-      private function layoutParts(param1:Vector.<Boolean>) : void
+      protected function layoutParts(param1:Vector.<Boolean>) : void
       {
          var _loc4_:VehicleMarkerPart = null;
          var _loc6_:int = 0;
          var _loc2_:int = this.getStartY();
          var _loc3_:int = this.markerParts.length;
          var _loc5_:VehicleMarkerPart = null;
-         var _loc7_:Boolean = this._canUseCachedVisibility;
+         var _loc7_:Boolean = this.canUseCachedVisibility;
          var _loc8_:Boolean = false;
          var _loc9_:int = 0;
          while(_loc9_ < _loc3_)
@@ -889,22 +914,22 @@ package net.wg.gui.battle.views.vehicleMarkers
             _loc9_++;
          }
          this.healthBar.y = this.hpField.y + HP_FIELD_TO_HP_BAR_OFFSET;
-         this._canUseCachedVisibility = true;
+         this.canUseCachedVisibility = true;
       }
       
       private function showAltActionMarker(param1:Boolean) : void
       {
-         if(param1 && this._objectiveActionMarker != null && this._objectiveActionMarker != Values.EMPTY_STR)
+         if(param1 && StringUtils.isNotEmpty(this._objectiveActionMarker))
          {
             this.actionMarker.showAction(this._objectiveActionMarker);
          }
-         else if(this._lastActionState == null)
+         else if(this.lastActionState == null)
          {
             this.actionMarker.stopAction(false);
          }
-         else if(this._lastActionState != null && this._objectiveActionMarker != null && this._objectiveActionMarker != Values.EMPTY_STR)
+         else if(StringUtils.isNotEmpty(this._objectiveActionMarker))
          {
-            this.actionMarker.showAction(this._lastActionState,true);
+            this.actionMarker.showAction(this.lastActionState,true);
          }
       }
       
@@ -924,7 +949,7 @@ package net.wg.gui.battle.views.vehicleMarkers
          this._stunSchemeName = VM_STUN_PREFIX + this._entityName + VM_STUN_POSTFIX;
       }
       
-      private function updateMarkerSettings() : void
+      protected function updateMarkerSettings() : void
       {
          this.layoutParts(this.updatePartsVisibility());
          this.redrawParts();
@@ -994,7 +1019,7 @@ package net.wg.gui.battle.views.vehicleMarkers
             }
             if(!StringUtils.isEmpty(this._markerState))
             {
-               this._canUseCachedVisibility = false;
+               this.canUseCachedVisibility = false;
                if(this.vehicleDestroyed)
                {
                   this.actionMarker.stopAction();
@@ -1049,7 +1074,7 @@ package net.wg.gui.battle.views.vehicleMarkers
          }
       }
       
-      private function setVehicleType() : void
+      protected function setVehicleType() : void
       {
          var _loc1_:String = null;
          if(this.isObserver)
@@ -1095,7 +1120,7 @@ package net.wg.gui.battle.views.vehicleMarkers
          return _loc1_ <= MAX_HEALTH_PERCENT ? int(_loc1_) : int(MAX_HEALTH_PERCENT);
       }
       
-      private function setupVehicleIcon() : void
+      protected function setupVehicleIcon() : void
       {
          var _loc1_:Array = null;
          _loc1_ = this.model.vIconSource.split(SLASH);

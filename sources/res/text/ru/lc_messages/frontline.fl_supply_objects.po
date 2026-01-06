@@ -1,0 +1,185 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "page/footer"
+msgstr ""
+"Выберите любой из объектов поддержки на карте, чтобы изучить подробную "
+"информацию."
+
+msgid "page/infoBtn"
+msgstr "О СОБЫТИИ"
+
+msgid "page/object/damageZones/hullText"
+msgstr "• В оболочку проходит: %(value)s урона."
+
+msgid "page/object/damageZones/percents"
+msgstr "%(number)s%"
+
+msgid "page/object/damageZones/shortTitle"
+msgstr ""
+"Разные элементы конструкции объекта по-разному восприимчивы к урону..."
+
+msgid "page/object/damageZones/title"
+msgstr "Разные элементы конструкции объекта по-разному восприимчивы к урону:"
+
+msgid "page/object/damageZones/turretText"
+msgstr "• В гондолу проходит: %(value)s урона."
+
+msgid "page/object/description/airship"
+msgstr ""
+"Подвижный летающий объект. Имеет орудие и башню неполного вращения, может вести обстрел техники противника.\n"
+"Может участвовать в захвате базы."
+
+msgid "page/object/description/flamer"
+msgstr ""
+"Тяжелобронированная стационарная огневая точка с вращающейся башней. Наносит урон огнём на близкой дистанции.\n"
+"Располагается рядом с базой, роль — помешать захвату базы противником."
+
+msgid "page/object/description/mortar"
+msgstr ""
+"Реактивная система залпового огня выпускает залп из множества снарядов "
+"по противнику. Эффективна при нанесении урона группам техники с большой "
+"дистанции."
+
+msgid "page/object/description/pillbox"
+msgstr ""
+"Долговременная огневая точка с вращающейся башней. Эффективна против легкобронированной техники на короткой и средней дистанциях.\n"
+"Роль дота — помогать отбивать атаку противника на базу."
+
+msgid "page/object/description/subtitle/airship"
+msgstr "(объект поддержки атаки)"
+
+msgid "page/object/description/subtitle/flamer"
+msgstr "(объект поддержки обороны)"
+
+msgid "page/object/description/subtitle/mortar"
+msgstr "(объект поддержки атаки)"
+
+msgid "page/object/description/subtitle/pillbox"
+msgstr "(объект поддержки обороны)"
+
+msgid "page/object/infoText"
+msgstr "Условия получения в бою"
+
+msgid "page/object/paramsTitle"
+msgstr "Ключевые ТТХ"
+
+msgid "page/object/subtitle/airship"
+msgstr "Объект поддержки атаки"
+
+msgid "page/object/subtitle/flamer"
+msgstr "Объект поддержки обороны"
+
+msgid "page/object/subtitle/mortar"
+msgstr "Объект поддержки атаки"
+
+msgid "page/object/subtitle/pillbox"
+msgstr "Объект поддержки обороны"
+
+msgid "page/object/title/airship"
+msgstr "Дирижабль"
+
+msgid "page/object/title/flamer"
+msgstr "Огнемёт"
+
+msgid "page/object/title/mortar"
+msgstr "РСЗО"
+
+msgid "page/object/title/pillbox"
+msgstr "Дот"
+
+msgid "page/object/vehParams/description/captureTime"
+msgstr ""
+"Максимальное количество времени, которое объект может находиться на точке "
+"захвата и самостоятельно производить захват."
+
+msgid "page/object/vehParams/description/circularVisionRadius"
+msgstr "Обзор объекта — дистанция, на которой может быть обнаружен противник."
+
+msgid "page/object/vehParams/description/cooldownTime"
+msgstr ""
+"Время, через которое объект начнёт повторно осуществлять боевые действия."
+
+msgid "page/object/vehParams/description/healTime"
+msgstr ""
+"Время, за которое объект может быть отремонтирован. Указаны следующие "
+"значения: минимальное время при ремонте несколькими игроками / максимальное "
+"время при ремонте одним игроком."
+
+msgid "page/object/vehParams/description/maxHealth"
+msgstr "Количество очков прочности объекта."
+
+msgid "page/object/vehParams/description/resurrectTime"
+msgstr "Время, за которое объект восстановится после уничтожения."
+
+msgid "page/object/vehParams/description/turretArmor"
+msgstr "Толщина брони объекта: лоб/борта/корма соответственно."
+
+msgid "page/object/vehParams/text/captureTime"
+msgstr "Время нахождения на точке захвата"
+
+msgid "page/object/vehParams/text/cooldownTime"
+msgstr "Время между появлением"
+
+msgid "page/object/vehParams/text/healTime"
+msgstr "Время ремонта"
+
+msgid "page/object/vehParams/text/resurrectTime"
+msgstr "Время восстановления"
+
+msgid "page/object/vehParams/text/turretArmor"
+msgstr "Бронирование"
+
+msgid "page/object/vehParams/title/avgDamage"
+msgstr "Средний урон (ед.)"
+
+msgid "page/object/vehParams/title/avgPiercingPower"
+msgstr "Средняя бронепробиваемость (мм)"
+
+msgid "page/object/vehParams/title/captureTime"
+msgstr "Время нахождения на точке захвата (с)"
+
+msgid "page/object/vehParams/title/cooldownTime"
+msgstr "Время между появлениями (с)"
+
+msgid "page/object/vehParams/title/healTime"
+msgstr "Время ремонта объекта (с)"
+
+msgid "page/object/vehParams/title/resurrectTime"
+msgstr "Время восстановления (с)"
+
+msgid "page/object/vehParams/title/turretArmor"
+msgstr "Бронирование (лоб/борта/корма в мм)"
+
+msgid "page/title"
+msgstr "ОБЪЕКТЫ ПОДДЕРЖКИ"
+
+msgid "tooltip/description/airship"
+msgstr ""
+"Объект активируется после заполнения второго этапа командной прогрессии "
+"зоны."
+
+msgid "tooltip/description/flamer"
+msgstr ""
+"Объект активируется после заполнения второго этапа командной прогрессии "
+"зоны."
+
+msgid "tooltip/description/mortar"
+msgstr ""
+"Объект активируется после заполнения первого этапа командной прогрессии "
+"зоны."
+
+msgid "tooltip/description/pillbox"
+msgstr ""
+"Объект активируется после заполнения первого этапа командной прогрессии "
+"зоны."
+
+msgid "tooltip/title"
+msgstr "Активация объекта в бою"

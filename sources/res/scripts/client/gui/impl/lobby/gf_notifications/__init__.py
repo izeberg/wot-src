@@ -1,13 +1,10 @@
 from gui.Scaleform.framework.entities.inject_component_adaptor import InjectComponentAdaptor
-from gui.impl.lobby.seniority_awards.notification.vehicle_notification import VehicleNotification
+from simple_notification import SimpleNotification
 from play_streak_rewards import PlayStreakRewards
 from debug_utils import LOG_ERROR
 from gui.impl.gen import R
 NOTIFICATION_PRESENTERS = {'PlayStreakRewards': (
-                       R.views.lobby.notifications.PlayStreakRewards(), PlayStreakRewards), 
-   'SeniorityVehicleOfferNotification': (
-                                       R.views.lobby.seniority_awards.notification.VehicleNotification(),
-                                       VehicleNotification)}
+                       R.views.lobby.notifications.PlayStreakRewards(), PlayStreakRewards)}
 
 class GFNotificationInject(InjectComponentAdaptor):
 

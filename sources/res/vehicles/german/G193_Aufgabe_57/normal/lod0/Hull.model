@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/german/G193_Aufgabe_57/normal/lod1/Hull</parent>
+	<tank>true</tank>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.721248 -0.705033 -4.044948</min>
+		<max>1.715383 0.718393 3.668335</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/german/G193_Aufgabe_57/normal/lod0/Hull</nodefullVisual>
+</root>

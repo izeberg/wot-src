@@ -49,30 +49,22 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<primitive>indices</primitive>
+			<vertices>turret_01_Shape.vertices</vertices>
+			<primitive>turret_01_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>tank_proxy</identifier>
 					<fx>shaders/std_effects/PBS_tank.fx</fx>
 					<materialKind>0</materialKind>
+					<identifier>tank_proxy</identifier>
 					<collisionFlags>0</collisionFlags>
-					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
-					</property>
 					<property>
 						diffuseMap
 						<Texture>vehicles/french/F134_ARL_Projet_F/ARL_Projet_F_proxy_AM.dds</Texture>
 					</property>
 					<property>
-						excludeMaskAndAOMap
-						<Texture>vehicles/french/F134_ARL_Projet_F/ARL_Projet_F_proxy_AO.dds</Texture>
-					</property>
-					<property>
-						g_detailUVTiling
-						<Vector4>0.877000 0.877000 0.000000 0.000000</Vector4>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 					<property>
 						metallicGlossMap
@@ -83,18 +75,18 @@
 						<Texture>vehicles/french/F134_ARL_Projet_F/ARL_Projet_F_proxy_ANM.dds</Texture>
 					</property>
 					<property>
-						metallicDetailMap
-						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+						excludeMaskAndAOMap
+						<Texture>vehicles/french/F134_ARL_Projet_F/ARL_Projet_F_proxy_AO.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.006834 0.701755 -0.388734</groupOrigin>
+				<groupOrigin>-0.006834 0.825005 -0.388734</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
 		<min>-1.536681 0.125710 -2.535490</min>
-		<max>1.523013 1.277799 1.758021</max>
+		<max>1.523013 1.524301 1.758021</max>
 	</boundingBox>
-	<geometrySize>5468</geometrySize>
+	<geometrySize>6668</geometrySize>
 	<minUVDensity>0.001794</minUVDensity>
 </root>

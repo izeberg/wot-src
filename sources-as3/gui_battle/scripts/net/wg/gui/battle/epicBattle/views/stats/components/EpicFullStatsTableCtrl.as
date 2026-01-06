@@ -23,6 +23,8 @@ package net.wg.gui.battle.epicBattle.views.stats.components
       
       private var _table:EpicFullStatsTable = null;
       
+      private var _tabButtons:EpicStatsTableFilterGroup = null;
+      
       private var _squadHandler:EpicFullStats = null;
       
       private var _currentLane:int = -1;
@@ -41,11 +43,12 @@ package net.wg.gui.battle.epicBattle.views.stats.components
       
       private var _activePlayerData:DAAPIVehicleInfoVO;
       
-      public function EpicFullStatsTableCtrl(param1:EpicFullStatsTable, param2:EpicFullStats)
+      public function EpicFullStatsTableCtrl(param1:EpicFullStatsTable, param2:EpicStatsTableFilterGroup, param3:EpicFullStats)
       {
          super();
          this._table = param1;
-         this._squadHandler = param2;
+         this._tabButtons = param2;
+         this._squadHandler = param3;
       }
       
       override public function addVehiclesInfo(param1:Boolean, param2:Vector.<DAAPIVehicleInfoVO>, param3:Vector.<Number>) : void
@@ -68,9 +71,8 @@ package net.wg.gui.battle.epicBattle.views.stats.components
       
       override public function setVehiclesData(param1:Array, param2:Vector.<Number>, param3:Boolean) : void
       {
-         var _loc5_:PlayerScrollingList = null;
          var _loc4_:EpicVehicleDataProvider = null;
-         _loc5_ = null;
+         var _loc5_:PlayerScrollingList = null;
          if(param3)
          {
             _loc5_ = this._table.team2PlayerList;
@@ -94,6 +96,7 @@ package net.wg.gui.battle.epicBattle.views.stats.components
       {
          this._squadHandler = null;
          this._table = null;
+         this._tabButtons = null;
          this._activePlayerData = null;
          super.onDispose();
       }
@@ -322,7 +325,7 @@ package net.wg.gui.battle.epicBattle.views.stats.components
          this.sortingIfVisible();
          this._table.team1PlayerList.setLaneFilter(!!param1 ? int(this._currentLane) : int(-1));
          this._table.team2PlayerList.setLaneFilter(!!param1 ? int(this._currentLane) : int(-1));
-         this._table.statsFilters.setPlayerLane(this._currentLane);
+         this._tabButtons.setPlayerLane(this._currentLane);
       }
       
       private function updateActivePlayerVO(param1:Vector.<int>) : void

@@ -291,6 +291,37 @@ class BaseVehicleAdvancedParamsTooltipView(BaseVehicleParamsTooltipView):
         return backport.text(R.strings.menu.extraParams.header(), paramName=backport.text(getVehicleParameterText(self._paramName, isPositive=True)))
 
 
+class FrontlineAdvancedParamsTooltipView(BaseVehicleAdvancedParamsTooltipView):
+
+    def _fillModel(self, model):
+        title = self.__getTitleStr(self._paramName)
+        model.setTitle(title)
+        descr = self.__getDescrStr(self._paramName)
+        model.setDescription(descr)
+        paramIcon = self.__getIcon(self._paramName)
+        if paramIcon.isValid():
+            model.setIcon(paramIcon())
+
+    def __getTitleStr(self, titleParamName):
+        strPath = R.strings.fl_supply_objects.page.object.vehParams.title.dyn(titleParamName)
+        if strPath.exists():
+            return backport.text(strPath())
+        return backport.text(R.strings.menu.vehicleInfo.params.dyn(titleParamName)())
+
+    def __getDescrStr(self, descrParamName):
+        strPath = R.strings.fl_supply_objects.page.object.vehParams.description.dyn(descrParamName)
+        if strPath.exists():
+            return backport.text(strPath())
+        return backport.text(R.strings.tooltips.tank_params.desc.dyn(descrParamName)())
+
+    @staticmethod
+    def __getIcon(parameter):
+        img = R.images.frontline.gui.maps.icons.supplyObjects.paramsIcon.dyn(parameter)
+        if img.exists():
+            return img
+        return R.images.gui.maps.icons.vehParams.big.dyn(parameter)
+
+
 class VehicleAdvancedParamsTooltipView(BaseVehicleAdvancedParamsTooltipView):
 
     def _fillModel(self, model):

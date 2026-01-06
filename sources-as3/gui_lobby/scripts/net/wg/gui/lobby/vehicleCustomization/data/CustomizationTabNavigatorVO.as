@@ -13,6 +13,8 @@ package net.wg.gui.lobby.vehicleCustomization.data
       
       public var selectedTab:int = -1;
       
+      public var isEditable:Boolean = false;
+      
       public function CustomizationTabNavigatorVO(param1:Object)
       {
          super(param1);

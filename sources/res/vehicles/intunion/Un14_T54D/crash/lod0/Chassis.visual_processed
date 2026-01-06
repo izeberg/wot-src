@@ -74,36 +74,17 @@
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>track_mat_R_skinned</identifier>
 					<fx>shaders/std_effects/PBS_tank_skinned_ao.fx</fx>
-					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
+					<identifier>track_mat_R_skinned</identifier>
+					<collisionFlags>0</collisionFlags>
 					<property>
-						normalMap
-						<Texture>vehicles/russian/tracks/Object_168N_track_ANM.dds</Texture>
+						diffuseMap
+						<Texture>vehicles/intunion/tracks/T54D_track_AM.dds</Texture>
 					</property>
 					<property>
 						metallicGlossMap
-						<Texture>vehicles/russian/tracks/Object_168N_track_GMM.dds</Texture>
-					</property>
-					<property>
-						metallicDetailMap
-						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
-					</property>
-					<property>
-						g_useDetailMetallic
-						<Bool>true</Bool>
-					</property>
-					<property>
-						g_maskBias
-						<Float>
-							0.22
-							<!--BW_String-->
-						</Float>
-					</property>
-					<property>
-						g_detailUVTiling
-						<Vector4>3.507000 0.876750 0.000000 0.000000</Vector4>
+						<Texture>vehicles/intunion/tracks/T54D_track_GMM.dds</Texture>
 					</property>
 					<property>
 						g_detailPowerGloss
@@ -113,35 +94,46 @@
 						</Float>
 					</property>
 					<property>
-						g_detailPowerAlbedo
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_maskBias
 						<Float>
-							0.16
+							0.18
 							<!--BW_String-->
 						</Float>
 					</property>
 					<property>
-						g_detailPower
-						<Float>5</Float>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>3.507000 0.860000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/intunion/tracks/T54D_track_ANM.dds</Texture>
 					</property>
 					<property>
 						doubleSided
 						<Bool>true</Bool>
 					</property>
 					<property>
-						diffuseMap
-						<Texture>vehicles/russian/tracks/Object_168N_track_AM.dds</Texture>
-					</property>
-					<property>
-						crash_coefficient
-						<Float>0.300000</Float>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
 					</property>
 					<property>
 						alphaReference
 						<Int>128</Int>
+					</property>
+					<property>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
 					</property>
 				</material>
 				<groupOrigin>1.320938 0.534815 -0.098133</groupOrigin>
@@ -159,36 +151,17 @@
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>track_mat_L_skinned</identifier>
 					<fx>shaders/std_effects/PBS_tank_skinned_ao.fx</fx>
-					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
+					<identifier>track_mat_L_skinned</identifier>
+					<collisionFlags>0</collisionFlags>
 					<property>
-						normalMap
-						<Texture>vehicles/russian/tracks/Object_168N_track_ANM.dds</Texture>
+						diffuseMap
+						<Texture>vehicles/intunion/tracks/T54D_track_AM.dds</Texture>
 					</property>
 					<property>
 						metallicGlossMap
-						<Texture>vehicles/russian/tracks/Object_168N_track_GMM.dds</Texture>
-					</property>
-					<property>
-						metallicDetailMap
-						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
-					</property>
-					<property>
-						g_useDetailMetallic
-						<Bool>true</Bool>
-					</property>
-					<property>
-						g_maskBias
-						<Float>
-							0.22
-							<!--BW_String-->
-						</Float>
-					</property>
-					<property>
-						g_detailUVTiling
-						<Vector4>3.507000 0.876750 0.000000 0.000000</Vector4>
+						<Texture>vehicles/intunion/tracks/T54D_track_GMM.dds</Texture>
 					</property>
 					<property>
 						g_detailPowerGloss
@@ -198,35 +171,46 @@
 						</Float>
 					</property>
 					<property>
-						g_detailPowerAlbedo
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_maskBias
 						<Float>
-							0.16
+							0.18
 							<!--BW_String-->
 						</Float>
 					</property>
 					<property>
-						g_detailPower
-						<Float>5</Float>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>3.507000 0.860000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/intunion/tracks/T54D_track_ANM.dds</Texture>
 					</property>
 					<property>
 						doubleSided
 						<Bool>true</Bool>
 					</property>
 					<property>
-						diffuseMap
-						<Texture>vehicles/russian/tracks/Object_168N_track_AM.dds</Texture>
-					</property>
-					<property>
-						crash_coefficient
-						<Float>0.300000</Float>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
 					</property>
 					<property>
 						alphaReference
 						<Int>128</Int>
+					</property>
+					<property>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
 					</property>
 				</material>
 				<groupOrigin>-1.321345 0.529625 0.129704</groupOrigin>
