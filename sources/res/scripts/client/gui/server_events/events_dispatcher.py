@@ -134,7 +134,16 @@ def showPersonalMissionsChain(operationID, chainID, missionCategory=None):
     if PM_BRANCH.PERSONAL_MISSION_3 in [getBranchByOperationId(operationID)]:
         showPersonalMissionChain(operationID, missionCategory)
         return
-    g_eventBus.handleEvent(events.LoadViewEvent(SFViewLoadParams(PERSONAL_MISSIONS_ALIASES.PERSONAL_MISSIONS_PAGE_ALIAS), ctx={'operationID': operationID, 'chainID': chainID}), EVENT_BUS_SCOPE.LOBBY)
+
+    def __personalMissionsPageViewPredicate(window):
+        return window.content is not None and getattr(window.content, 'alias', None) == PERSONAL_MISSIONS_ALIASES.PERSONAL_MISSIONS_PAGE_ALIAS
+
+    guiLoader = dependency.instance(IGuiLoader)
+    personalMissionsPage = guiLoader.windowsManager.findWindows(__personalMissionsPageViewPredicate)
+    if personalMissionsPage:
+        first(personalMissionsPage).content.switchToAnotherOperation(operationID, chainID)
+    else:
+        g_eventBus.handleEvent(events.LoadViewEvent(SFViewLoadParams(PERSONAL_MISSIONS_ALIASES.PERSONAL_MISSIONS_PAGE_ALIAS), ctx={'operationID': operationID, 'chainID': chainID}), EVENT_BUS_SCOPE.LOBBY)
 
 
 def showPersonalMissionOperationsPage(branchID, operationID):

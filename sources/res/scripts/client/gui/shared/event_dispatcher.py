@@ -1007,10 +1007,11 @@ def showBattlePassVehicleAwardWindow(data, notificationMgr=None):
     notificationMgr.append(WindowNotificationCommand(window))
 
 
-def showDedicationRewardWindow(bonuses, data, closeCallback=None):
+@dependency.replace_none_kwargs(notificationMgr=INotificationWindowController)
+def showDedicationRewardWindow(bonuses, data, closeCallback=None, notificationMgr=None):
     from gui.impl.lobby.dedication.dedication_reward_view import DedicationRewardWindow
     window = DedicationRewardWindow(bonuses, data, closeCallback)
-    window.load()
+    notificationMgr.append(WindowNotificationCommand(window))
 
 
 def showStylePreview(vehCD, style, descr='', backCallback=None, *args, **kwargs):

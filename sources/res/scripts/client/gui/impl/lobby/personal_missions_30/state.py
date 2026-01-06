@@ -169,12 +169,12 @@ class PersonalMissions3State(ViewLobbyState, EventsHandler):
         self.addNavigationTransition(progression, record=True)
         self.addNavigationTransition(missions, record=True)
         self.addNavigationTransition(assembling, record=True)
-        missions.addGuardTransition(missions, self.__isAnimationPlayed)
-        assembling.addGuardTransition(assembling, self.__isAnimationPlayed)
-        self.addTransition(HijackTransition(HangarState, self.__isAnimationPlayed, transitionType=TransitionType.INTERNAL), self)
-        missions.addTransition(HijackTransition(HangarState, self.__isAnimationPlayed, transitionType=TransitionType.INTERNAL), missions)
-        assembling.addTransition(HijackTransition(HangarState, self.__isAnimationPlayed, transitionType=TransitionType.INTERNAL), assembling)
-        progression.addTransition(HijackTransition(HangarState, self.__isAnimationPlayed, transitionType=TransitionType.INTERNAL), progression)
+        missions.addGuardTransition(missions, self.isAnimationPlayed)
+        assembling.addGuardTransition(assembling, self.isAnimationPlayed)
+        self.addTransition(HijackTransition(HangarState, self.isAnimationPlayed, transitionType=TransitionType.INTERNAL), self)
+        missions.addTransition(HijackTransition(HangarState, self.isAnimationPlayed, transitionType=TransitionType.INTERNAL), missions)
+        assembling.addTransition(HijackTransition(HangarState, self.isAnimationPlayed, transitionType=TransitionType.INTERNAL), assembling)
+        progression.addTransition(HijackTransition(HangarState, self.isAnimationPlayed, transitionType=TransitionType.INTERNAL), progression)
 
     def getBackNavigationDescription(self, params):
         return backport.text(R.strings.personal_missions.navigation.backButton.dashboard())
@@ -215,7 +215,7 @@ class PersonalMissions3State(ViewLobbyState, EventsHandler):
         self._unsubscribe()
         super(PersonalMissions3State, self)._onExited()
 
-    def __isAnimationPlayed(self, *_):
+    def isAnimationPlayed(self, *_):
         mainView = self.getMachine().getRelatedView(self)
         if mainView is None:
             return False
@@ -288,6 +288,18 @@ class _PersonalMissionsChildState(LobbyState):
         mainView = self.getMachine().getRelatedView(self)
         return mainView and mainView.viewStatus in (ViewStatus.LOADED, ViewStatus.LOADING) and self.assemblingManager.isVehicleGOForOperationReady(self._cachedParams.get('operationID'))
 
+    def getNavigationDescription(self):
+        return LobbyStateDescription(title=self._getNavigationDescriptionTitle(), infos=(
+         LobbyStateDescription.Info(type=LobbyStateDescription.Info.Type.INFO, onMoreInfoRequested=self.__onMoreInfoRequested, tooltipBody=backport.text(R.strings.personal_missions.pages.button.infopage.description())),))
+
+    def _getNavigationDescriptionTitle(self):
+        raise NotImplementedError
+
+    def __onMoreInfoRequested(self):
+        if self.getParent().isAnimationPlayed():
+            return
+        openInfoPageScreen()
+
 
 class _SpecialPM3Transition(NavigationTransition):
 
@@ -304,6 +316,12 @@ class _LoadingState(_PersonalMissionsChildState, EventsHandler):
 
     def __init__(self, flags=StateFlags.UNDEFINED):
         super(_LoadingState, self).__init__(flags=flags)
+
+    def getNavigationDescription(self):
+        return LobbyStateDescription()
+
+    def _getNavigationDescriptionTitle(self):
+        pass
 
     def _getEvents(self):
         eventsTuple = super(_LoadingState, self)._getEvents()
@@ -367,11 +385,10 @@ class ProgressionState(_PersonalMissionsChildState):
         self.addNavigationTransition(lsm.getStateByCls(UserMissionsState), record=True)
         self.addTransition(_SpecialPM3Transition(transitionType=TransitionType.EXTERNAL), self)
 
-    def getNavigationDescription(self):
+    def _getNavigationDescriptionTitle(self):
         operationID = self._cachedParams.get('operationID')
         operation = self.__eventsCache.getPersonalMissions().getAllOperations(PM_BRANCH.V2_BRANCHES).get(operationID)
-        return LobbyStateDescription(title=backport.text(R.strings.pages.titles.operation(), operationName=operation.getUserName()), infos=(
-         LobbyStateDescription.Info(type=LobbyStateDescription.Info.Type.INFO, onMoreInfoRequested=openInfoPageScreen, tooltipBody=backport.text(R.strings.personal_missions.pages.button.infopage.description())),))
+        return backport.text(R.strings.pages.titles.operation(), operationName=operation.getUserName())
 
     def _onEntered(self, event):
         super(ProgressionState, self)._onEntered(event)
@@ -409,9 +426,8 @@ class MissionsState(_PersonalMissionsChildState):
         lsm = self.getMachine()
         self.addNavigationTransition(lsm.getStateByCls(UserMissionsState), record=True)
 
-    def getNavigationDescription(self):
-        return LobbyStateDescription(title=backport.text(R.strings.pages.titles.personal_missions()), infos=(
-         LobbyStateDescription.Info(type=LobbyStateDescription.Info.Type.INFO, onMoreInfoRequested=openInfoPageScreen, tooltipBody=backport.text(R.strings.personal_missions.pages.button.infopage.description())),))
+    def _getNavigationDescriptionTitle(self):
+        return backport.text(R.strings.pages.titles.personal_missions())
 
     def getBackNavigationDescription(self, params):
         return backport.text(R.strings.personal_missions.navigation.backButton.missions())
@@ -434,9 +450,8 @@ class AssemblingState(_PersonalMissionsChildState):
     def goTo(cls, operationID=None, category=MissionCategory.ASSAULT, state=None):
         super(AssemblingState, cls).goTo(operationID=operationID, category=category.value, state=state)
 
-    def getNavigationDescription(self):
-        return LobbyStateDescription(title=backport.text(R.strings.pages.titles.assembling()), infos=(
-         LobbyStateDescription.Info(type=LobbyStateDescription.Info.Type.INFO, onMoreInfoRequested=openInfoPageScreen, tooltipBody=backport.text(R.strings.personal_missions.pages.button.infopage.description())),))
+    def _getNavigationDescriptionTitle(self):
+        return backport.text(R.strings.pages.titles.assembling())
 
     def getBackNavigationDescription(self, params):
         return backport.text(R.strings.personal_missions.navigation.backButton.assembling())

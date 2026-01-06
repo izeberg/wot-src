@@ -1703,7 +1703,7 @@
 		<id>335</id>
 		<userString>#usa_vehicles:_75mm_AAAC_I_Super</userString>
 		<icon>ap</icon>
-		<price>100</price>
+		<price>108</price>
 		<kind>ARMOR_PIERCING</kind>
 		<caliber>75</caliber>
 		<isTracer>true</isTracer>
@@ -1722,7 +1722,7 @@
 	<_75mm_AAAC_II_Super>
 		<id>336</id>
 		<userString>#usa_vehicles:_75mm_AAAC_II_Super</userString>
-		<icon>ap_cr</icon>
+		<icon>ap_cr_premium</icon>
 		<price>800</price>
 		<improved>true</improved>
 		<kind>ARMOR_PIERCING_CR</kind>
@@ -1744,7 +1744,7 @@
 		<id>337</id>
 		<userString>#usa_vehicles:_75mm_DARPA_HE_Super</userString>
 		<icon>he_zero_splash</icon>
-		<price>75</price>
+		<price>216</price>
 		<kind>HIGH_EXPLOSIVE</kind>
 		<mechanics>MODERN</mechanics>
 		<caliber>75</caliber>
@@ -3794,7 +3794,7 @@
 		<id>332</id>
 		<userString>#usa_vehicles:_85mm_AAAC_I_FS</userString>
 		<icon>ap</icon>
-		<price>144</price>
+		<price>159</price>
 		<kind>ARMOR_PIERCING</kind>
 		<caliber>85</caliber>
 		<isTracer>true</isTracer>
@@ -3813,7 +3813,7 @@
 	<_85mm_AAAC_II_FS>
 		<id>333</id>
 		<userString>#usa_vehicles:_85mm_AAAC_II_FS</userString>
-		<icon>ap_cr</icon>
+		<icon>ap_cr_premium</icon>
 		<price>1200</price>
 		<improved>true</improved>
 		<kind>ARMOR_PIERCING_CR</kind>
@@ -3835,7 +3835,7 @@
 		<id>334</id>
 		<userString>#usa_vehicles:_85mm_DARPA_HE_FS</userString>
 		<icon>he_zero_splash</icon>
-		<price>108</price>
+		<price>318</price>
 		<kind>HIGH_EXPLOSIVE</kind>
 		<mechanics>MODERN</mechanics>
 		<caliber>85</caliber>
@@ -3862,7 +3862,7 @@
 		<id>338</id>
 		<userString>#usa_vehicles:_85mm_AAAC_I</userString>
 		<icon>ap</icon>
-		<price>140</price>
+		<price>155</price>
 		<kind>ARMOR_PIERCING</kind>
 		<caliber>85</caliber>
 		<isTracer>true</isTracer>
@@ -3881,7 +3881,7 @@
 	<_85mm_AAAC_II>
 		<id>339</id>
 		<userString>#usa_vehicles:_85mm_AAAC_II</userString>
-		<icon>ap_cr</icon>
+		<icon>ap_cr_premium</icon>
 		<price>1200</price>
 		<improved>true</improved>
 		<kind>ARMOR_PIERCING_CR</kind>
@@ -3903,7 +3903,7 @@
 		<id>340</id>
 		<userString>#usa_vehicles:_85mm_DARPA_HE</userString>
 		<icon>he_zero_splash</icon>
-		<price>105</price>
+		<price>310</price>
 		<kind>HIGH_EXPLOSIVE</kind>
 		<mechanics>MODERN</mechanics>
 		<caliber>85</caliber>
@@ -5491,7 +5491,7 @@
 		<id>312</id>
 		<userString>#usa_vehicles:_75mm_AAAC_I_FS</userString>
 		<icon>ap</icon>
-		<price>92</price>
+		<price>99</price>
 		<kind>ARMOR_PIERCING</kind>
 		<caliber>75</caliber>
 		<isTracer>true</isTracer>
@@ -5532,7 +5532,7 @@
 		<id>314</id>
 		<userString>#usa_vehicles:_75mm_DARPA_HE_FS</userString>
 		<icon>he_zero_splash</icon>
-		<price>69</price>
+		<price>198</price>
 		<kind>HIGH_EXPLOSIVE</kind>
 		<mechanics>MODERN</mechanics>
 		<caliber>75</caliber>
@@ -5559,7 +5559,7 @@
 		<id>341</id>
 		<userString>#usa_vehicles:_75mm_AAAC_I</userString>
 		<icon>ap</icon>
-		<price>86</price>
+		<price>94</price>
 		<kind>ARMOR_PIERCING</kind>
 		<caliber>75</caliber>
 		<isTracer>true</isTracer>
@@ -5600,7 +5600,7 @@
 		<id>343</id>
 		<userString>#usa_vehicles:_75mm_DARPA_HE</userString>
 		<icon>he_zero_splash</icon>
-		<price>65</price>
+		<price>188</price>
 		<kind>HIGH_EXPLOSIVE</kind>
 		<mechanics>MODERN</mechanics>
 		<caliber>75</caliber>
@@ -5627,7 +5627,7 @@
 		<id>303</id>
 		<userString>#usa_vehicles:_90mm_AAAC_I</userString>
 		<icon>ap</icon>
-		<price>230</price>
+		<price>253</price>
 		<kind>ARMOR_PIERCING</kind>
 		<caliber>90</caliber>
 		<isTracer>true</isTracer>
@@ -5668,7 +5668,7 @@
 		<id>305</id>
 		<userString>#usa_vehicles:_90mm_DARPA_HE</userString>
 		<icon>he_zero_splash</icon>
-		<price>173</price>
+		<price>506</price>
 		<kind>HIGH_EXPLOSIVE</kind>
 		<mechanics>MODERN</mechanics>
 		<caliber>90</caliber>
@@ -5695,7 +5695,7 @@
 		<id>306</id>
 		<userString>#usa_vehicles:_90mm_Charlie_3</userString>
 		<icon>ap</icon>
-		<price>274</price>
+		<price>299</price>
 		<kind>ARMOR_PIERCING</kind>
 		<caliber>90</caliber>
 		<isTracer>true</isTracer>
@@ -5715,7 +5715,7 @@
 		<id>307</id>
 		<userString>#usa_vehicles:_90mm_Delta_6</userString>
 		<icon>ap_cr_premium</icon>
-		<price>2000</price>
+		<price>1800</price>
 		<improved>true</improved>
 		<kind>ARMOR_PIERCING_CR</kind>
 		<caliber>90</caliber>
@@ -5736,7 +5736,7 @@
 		<id>308</id>
 		<userString>#usa_vehicles:_90mm_Bravo_1</userString>
 		<icon>he_zero_splash</icon>
-		<price>206</price>
+		<price>598</price>
 		<kind>HIGH_EXPLOSIVE</kind>
 		<mechanics>MODERN</mechanics>
 		<caliber>90</caliber>

@@ -1396,9 +1396,9 @@ class PersonalMission(ServerEventAbstract):
             for conditionKey, configData in self.__conditionsConfig.iteritems():
                 currentConditionState = missionState.get(conditionKey)
                 isInOrGroup = configData['description'].isInOrGroup
-                if currentConditionState and currentConditionState in QUEST_PROGRESS_STATE.COMPLETED_STATES:
+                if currentConditionState in QUEST_PROGRESS_STATE.COMPLETED_STATES:
                     completedConditions += 1
-                if currentConditionState and currentConditionState == QUEST_PROGRESS_STATE.FAILED:
+                elif currentConditionState == QUEST_PROGRESS_STATE.FAILED and not isInOrGroup:
                     return False
 
             if completedConditions >= len(self.__conditionsConfig) or isInOrGroup and completedConditions:
