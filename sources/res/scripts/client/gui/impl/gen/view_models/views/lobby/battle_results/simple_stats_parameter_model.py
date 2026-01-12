@@ -14,6 +14,7 @@ class RegularParamType(Enum):
     EXPLOSIONHITS = 'explosionHits'
     DAMAGEDEALT = 'damageDealt'
     SNIPERDAMAGEDEALT = 'sniperDamageDealt'
+    ARTILLERYSTRIKE = 'artilleryStrike'
     DIRECTHITSRECEIVED = 'directHitsReceived'
     PIERCINGSRECEIVED = 'piercingsReceived'
     NODAMAGEDIRECTHITSRECEIVED = 'noDamageDirectHitsReceived'

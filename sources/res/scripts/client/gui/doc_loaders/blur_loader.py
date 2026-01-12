@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import ResMgr
 from items import _xml
 XML_PATH = 'gui/blur_settings.xml'

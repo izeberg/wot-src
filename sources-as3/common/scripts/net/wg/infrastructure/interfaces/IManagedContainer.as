@@ -16,7 +16,7 @@ package net.wg.infrastructure.interfaces
       
       function getTopmostView(param1:Boolean = false) : IManagedContent;
       
-      function allowFocusNextLayer(param1:String) : Boolean;
+      function canFocusNextLayer(param1:String) : Boolean;
       
       function get paddings() : Rectangle;
    }

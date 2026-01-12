@@ -287,7 +287,7 @@
 						<Vector2>1.000000 0.500000</Vector2>
 					</property>
 				</material>
-				<groupOrigin>-0.026456 0.943294 -0.540128</groupOrigin>
+				<groupOrigin>-0.000001 0.943294 -0.540128</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				1
@@ -458,5 +458,5 @@
 		<min>-1.476290 -0.000081 -2.718107</min>
 		<max>1.429766 1.886669 1.582848</max>
 	</boundingBox>
-	<geometrySize>497980</geometrySize>
+	<geometrySize>600006</geometrySize>
 </root>

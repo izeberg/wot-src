@@ -509,7 +509,7 @@ package net.wg.gui.login.impl
       private function onInputHandler(param1:InputEvent) : void
       {
          var _loc2_:Function = null;
-         if(param1.handled || App.waiting && App.waiting.isOnStage)
+         if(param1.handled || App.waiting && App.waiting.isActive)
          {
             return;
          }

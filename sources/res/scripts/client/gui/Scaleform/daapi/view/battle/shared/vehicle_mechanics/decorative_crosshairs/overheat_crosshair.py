@@ -1,20 +1,23 @@
-import typing, BattleReplay
+from __future__ import absolute_import
+import typing
+from builtins import round
+import BattleReplay
 from ReplayEvents import g_replayEvents
 from constants import OVERHEAT_GAIN_STATE
+from events_containers.common.containers import ContainersListener
 from gui.veh_mechanics.battle.updaters.current_shell_damage_updater import CurrentShellDamageUpdater
 from events_handler import eventHandler
 from gui.Scaleform.daapi.view.meta.OverheatDecorativeCrosshairMeta import OverheatDecorativeCrosshairMeta
-from gui.veh_mechanics.battle.updaters.mechanic_passenger_view_updater import VehicleMechanicPassengerUpdater
-from gui.veh_mechanics.battle.updaters.mechanic_states_view_updater import VehicleMechanicStatesUpdater
+from gui.veh_mechanics.battle.updaters.mechanics.mechanic_passenger_updater import VehicleMechanicPassengerUpdater
+from gui.veh_mechanics.battle.updaters.mechanics.mechanic_states_updater import VehicleMechanicStatesUpdater
 from vehicles.mechanics.mechanic_constants import VehicleMechanic
 from vehicles.mechanics.mechanic_states import IMechanicStatesListenerLogic
-from vehicles.components.component_events.events_listener import ComponentListener
 if typing.TYPE_CHECKING:
     from typing import List, Optional
     from OverheatStacksController import OverheatStacksState
     from gui.veh_mechanics.battle.updaters.updaters_common import IViewUpdater
 
-class OverheatDecorativeCrosshair(OverheatDecorativeCrosshairMeta, ComponentListener, IMechanicStatesListenerLogic):
+class OverheatDecorativeCrosshair(OverheatDecorativeCrosshairMeta, ContainersListener, IMechanicStatesListenerLogic):
 
     def __init__(self):
         super(OverheatDecorativeCrosshair, self).__init__()

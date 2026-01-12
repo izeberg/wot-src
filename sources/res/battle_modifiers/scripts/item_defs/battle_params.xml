@@ -1096,7 +1096,7 @@
 			</min>
 		</restrictions>
 	</forcedReloadTime>
-	<autoShootDispersionPerSec>
+	<autoShootDispersionPerShot>
 		<scope>base cell client</scope>
 		<dataType>float</dataType>
 		<domain>gun</domain>
@@ -1106,7 +1106,7 @@
 				<!--BW_String-->
 			</min>
 		</restrictions>
-	</autoShootDispersionPerSec>
+	</autoShootDispersionPerShot>
 	<autoShootMaxShotDispersionFactor>
 		<scope>base cell client</scope>
 		<dataType>float</dataType>
@@ -1119,7 +1119,7 @@
 		</restrictions>
 	</autoShootMaxShotDispersionFactor>
 	<gunMainPrefab>
-		<scope>client</scope>
+		<scope>client cell</scope>
 		<dataType>string</dataType>
 		<domain>gun</domain>
 	</gunMainPrefab>

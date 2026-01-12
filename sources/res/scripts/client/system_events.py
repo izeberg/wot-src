@@ -1,6 +1,6 @@
-from entity_events import EntityEvents
+from events_container import EventsContainer
 
-class SystemEvents(EntityEvents):
+class SystemEvents(EventsContainer):
 
     def __init__(self):
         super(SystemEvents, self).__init__()

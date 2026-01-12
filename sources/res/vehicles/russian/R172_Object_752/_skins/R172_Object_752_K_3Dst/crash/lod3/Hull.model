@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/russian/R172_Object_752/_skins/R172_Object_752_K_3Dst/crash/lod4/Hull</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.819680 -0.805884 -3.253182</min>
+		<max>1.839240 0.653134 3.087709</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/russian/R172_Object_752/_skins/R172_Object_752_K_3Dst/crash/lod3/Hull</nodefullVisual>
+</root>

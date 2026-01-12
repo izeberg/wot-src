@@ -8,7 +8,7 @@ from gui.impl.lobby.battle_matters.popovers.battle_matters_filter_popover_view i
 from gui.impl.pub import ViewImpl
 from gui.selectable_reward.common import BattleMattersSelectableRewardManager
 from gui.server_events.events_dispatcher import showBattleMatters, showBattleMattersMainView
-from gui.shared.event_dispatcher import showOfferGiftVehiclePreview, showDelayedReward, showBonusDelayedConfirmationDialog
+from gui.shared.event_dispatcher import showOfferGiftVehiclePreview, showDelayedReward, showBonusDelayedConfirmationDialog, showHangar
 from gui.impl.lobby.battle_matters.battle_matters_bonus_packer import BattleMattersVehiclesBonusUIPacker
 from gui.shared.gui_items.Vehicle import VEHICLE_TYPES_ORDER
 from helpers import dependency
@@ -143,7 +143,7 @@ class BattleMattersVehicleSelectionView(ViewImpl):
     def _getEvents(self):
         return (
          (
-          self._battleMattersController.onStateChanged, showBattleMatters),
+          self._battleMattersController.onStateChanged, self.handleOnStateChanged),
          (
           self.viewModel.onGoBack, showBattleMattersMainView),
          (
@@ -152,6 +152,12 @@ class BattleMattersVehicleSelectionView(ViewImpl):
           self.viewModel.onShowVehicle, self.onShowVehicle),
          (
           self.viewModel.onResetFilter, self.onResetFilter))
+
+    def handleOnStateChanged(self):
+        if self._battleMattersController.isFinished() and not self._battleMattersController.hasDelayedRewards():
+            showHangar()
+        else:
+            showBattleMatters()
 
     def __getIdByCD(self, vehCD):
         return self.__vehicles.get(vehCD, {}).get('giftID', -1)

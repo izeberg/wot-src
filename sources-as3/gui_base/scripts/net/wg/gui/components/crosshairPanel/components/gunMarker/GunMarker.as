@@ -54,11 +54,8 @@ package net.wg.gui.components.crosshairPanel.components.gunMarker
          this.radiusMC = null;
          this.gunTag.dispose();
          this.gunTag = null;
-         if(this.aimDamage)
-         {
-            this.aimDamage.dispose();
-            this.aimDamage = null;
-         }
+         this.aimDamage.dispose();
+         this.aimDamage = null;
          if(this._penetrationFx)
          {
             removeChild(this._penetrationFx);
@@ -83,28 +80,32 @@ package net.wg.gui.components.crosshairPanel.components.gunMarker
          this.gunTag.setColor(param1);
       }
       
-      public function setDualAccActive(param1:Boolean) : void
+      public function setIsSecondary(param1:Boolean) : void
+      {
+         this._isSecondary = param1;
+         this.gunTag.visible = this.aimDamage.visible = !param1;
+         if(this._isSecondary)
+         {
+            this.radiusMC.setThickness(GunMarkerDispersionCircle.THIN);
+         }
+         invalidate(GunMarkerConsts.GUN_MIXING_ALPHA_VALIDATION);
+      }
+      
+      public function setSecondaryActive(param1:Boolean) : void
       {
          if(this._isSecondary)
          {
             this.radiusMC.setAlpha(this._mixingAlpha,this._isSecondary);
             this.radiusMC.visible = param1;
          }
-         else
+      }
+      
+      public function setDispersionCircleThickness(param1:Boolean) : void
+      {
+         if(!this._isSecondary)
          {
             this.radiusMC.setThickness(!!param1 ? GunMarkerDispersionCircle.BOLD : GunMarkerDispersionCircle.THIN);
          }
-      }
-      
-      public function setIsSecondary(param1:Boolean) : void
-      {
-         this._isSecondary = param1;
-         this.gunTag.visible = !param1;
-         if(this._isSecondary)
-         {
-            this.radiusMC.setThickness(GunMarkerDispersionCircle.THIN);
-         }
-         invalidate(GunMarkerConsts.GUN_MIXING_ALPHA_VALIDATION);
       }
       
       public function setMixingScale(param1:Number) : void

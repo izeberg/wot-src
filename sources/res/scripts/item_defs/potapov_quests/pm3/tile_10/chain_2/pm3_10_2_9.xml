@@ -9,6 +9,7 @@
 				<postBattle>
 					<or>
 						<vehicleDamage>
+							<attackReason>0</attackReason>
 							<whileEnemyInvisible/>
 							<eventCount/>
 							<greaterOrEqual>4</greaterOrEqual>
@@ -72,6 +73,7 @@
 				<postBattle>
 					<or>
 						<vehicleDamage>
+							<attackReason>0</attackReason>
 							<whileEnemyInvisible/>
 							<eventCount/>
 							<greaterOrEqual>4</greaterOrEqual>

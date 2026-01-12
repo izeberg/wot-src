@@ -5,6 +5,9 @@ class BattleTankCarouselMeta(CarouselEnvironment):
     def setFilter(self, id):
         self._printOverrideError('setFilter')
 
+    def resetPlaylistAndFilters(self):
+        self._printOverrideError('resetPlaylistAndFilters')
+
     def as_useExtendedCarouselS(self, value):
         if self._isDAAPIInited():
             return self.flashObject.as_useExtendedCarousel(value)

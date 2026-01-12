@@ -438,6 +438,10 @@ package net.wg.gui.battle.battleRoyale.views.components
          invalidateData();
       }
       
+      public function set criticalQuantity(param1:int) : void
+      {
+      }
+      
       public function set icon(param1:String) : void
       {
          this.iconLoader.source = param1;

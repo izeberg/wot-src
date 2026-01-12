@@ -120,10 +120,10 @@ package net.wg.infrastructure.managers.impl
          return _loc2_ != null && _loc2_.isAtlasInitialized;
       }
       
-      public function registerAtlas(param1:String, param2:Object = null) : void
+      public function registerAtlas(param1:String, param2:Object = null, param3:String = null) : void
       {
-         var _loc3_:IAtlas = this.getAtlas(param1);
-         if(_loc3_)
+         var _loc4_:IAtlas = this.getAtlas(param1);
+         if(_loc4_)
          {
             if(param2)
             {
@@ -131,17 +131,17 @@ package net.wg.infrastructure.managers.impl
             }
             return;
          }
-         var _loc4_:Class = App.utils.classFactory.getClass(Linkages.ATLAS_CLASS_NAME);
-         _loc3_ = new _loc4_();
-         _loc3_.initResources(param1);
-         _loc3_.addEventListener(AtlasEvent.ATLAS_INITIALIZED,this.onAtlasInitHandler);
-         var _loc5_:AtlasVO = new AtlasVO(_loc3_);
+         var _loc5_:Class = App.utils.classFactory.getClass(Linkages.ATLAS_CLASS_NAME);
+         _loc4_ = new _loc5_();
+         _loc4_.initResources(param1,param3);
+         _loc4_.addEventListener(AtlasEvent.ATLAS_INITIALIZED,this.onAtlasInitHandler);
+         var _loc6_:AtlasVO = new AtlasVO(_loc4_);
          if(param2)
          {
-            _loc5_.locks.push(param2);
+            _loc6_.locks.push(param2);
          }
-         this._atlasesDict[param1] = _loc5_;
-         this._lastAtlas = _loc3_;
+         this._atlasesDict[param1] = _loc6_;
+         this._lastAtlas = _loc4_;
       }
       
       public function unregisterAtlas(param1:String, param2:Object) : void

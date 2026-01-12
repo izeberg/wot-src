@@ -2,11 +2,8 @@ from debug_utils import LOG_CURRENT_EXCEPTION
 from frameworks.wulf import WindowStatus, WindowLayer
 from gui.Scaleform.lobby_entry import getLobbyStateMachine
 from gui.impl.lobby.hangar.states import DefaultHangarState
-from helpers import dependency
-from skeletons.gui.game_control import IOverlayController
 
 class OverlapCtrlMixin(object):
-    __overlayCtrl = dependency.descriptor(IOverlayController)
     __RESTRICTED_LAYERS = (
      WindowLayer.FULLSCREEN_WINDOW,
      WindowLayer.OVERLAY,
@@ -24,6 +21,7 @@ class OverlapCtrlMixin(object):
         self.__isWindowOverlapped = False
         self.__isUpdateQueued = False
         self.__deferredUpdates = []
+        self.__lsmViewAliases = set()
         self.__isFullUpdate = False
         self._isFinalized = False
         self._updateWindowOverlapped()
@@ -42,10 +40,15 @@ class OverlapCtrlMixin(object):
 
     def initOverlapCtrl(self):
         self._lobbyStateMachine = getLobbyStateMachine()
+        for state in self._lobbyStateMachine.getRecursiveChildrenStates():
+            stateViewKey = state.getViewKey()
+            if not stateViewKey:
+                continue
+            self.__lsmViewAliases.add(stateViewKey.alias)
 
     @property
     def hasDeferModelUpdate(self):
-        return not self._isInHangar or self.__isWindowOverlapped or self.__overlayCtrl.isActive
+        return not self._isInHangar or self.__isWindowOverlapped
 
     @property
     def isUpdateQueued(self):
@@ -71,9 +74,7 @@ class OverlapCtrlMixin(object):
          (
           self._lobbyStateMachine.onVisibleRouteChanged, self._onVisibleRouteChanged),
          (
-          self.gui.windowsManager.onWindowStatusChanged, self._onWindowStatusChanged),
-         (
-          self.__overlayCtrl.onStateChanged, self._onOverlayStateChanged))
+          self.gui.windowsManager.onWindowStatusChanged, self._onWindowStatusChanged))
 
     def _onVisibleRouteChanged(self, routeInfo):
         self._isInHangar = routeInfo.state == self._lobbyStateMachine.getStateByCls(DefaultHangarState)
@@ -90,11 +91,8 @@ class OverlapCtrlMixin(object):
             size = window.size
             return size[0] > self._MIN_WINDOW_WIDTH and size[1] > self._MIN_WINDOW_HEIGHT
 
-        windows = self.gui.windowsManager.findWindows(lambda w: w.layer in self.__RESTRICTED_LAYERS and w.windowStatus in self.__ACTIVE_WINDOW_STATUSES and _isValidWindowSize(w))
+        windows = self.gui.windowsManager.findWindows(lambda w: w.layer in self.__RESTRICTED_LAYERS and w.windowStatus in self.__ACTIVE_WINDOW_STATUSES and _isValidWindowSize(w) and getattr(w.content, 'layoutID', None) not in self.__lsmViewAliases)
         self.__isWindowOverlapped = bool(windows)
-
-    def _onOverlayStateChanged(self):
-        self._updateViewModelIfNeeded()
 
     def _rawUpdate(self):
         self.__isFullUpdate = False

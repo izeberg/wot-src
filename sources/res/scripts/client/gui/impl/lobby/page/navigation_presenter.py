@@ -19,8 +19,7 @@ _INFO_ACTION_INDEX_KEY = 'index'
 class NavigationPresenter(ViewComponent[NavigationBarModel], EventsHandler):
     __DESC_TO_BUTTON_TYPE = {LobbyStateDescription.Info.Type.INFO: ButtonType.INFO, 
        LobbyStateDescription.Info.Type.QUESTION: ButtonType.QUESTION, 
-       LobbyStateDescription.Info.Type.VIDEO: ButtonType.VIDEO, 
-       LobbyStateDescription.Info.Type.GIFT_MACHINE: ButtonType.GIFT_MACHINE}
+       LobbyStateDescription.Info.Type.VIDEO: ButtonType.VIDEO}
 
     def __init__(self):
         super(NavigationPresenter, self).__init__(model=NavigationBarModel)

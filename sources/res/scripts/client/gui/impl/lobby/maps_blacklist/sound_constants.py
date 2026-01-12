@@ -1,0 +1,3 @@
+from gui.sounds.filters import States, StatesGroup
+from sound_gui_manager import CommonSoundSpaceSettings
+BLACKLIST_SOUND_SETTINGS = CommonSoundSpaceSettings(name='blacklistHangar', entranceStates={StatesGroup.HANGAR_FILTERED: States.HANGAR_FILTERED_ON}, exitStates={StatesGroup.HANGAR_FILTERED: States.HANGAR_FILTERED_OFF}, persistentSounds=(), stoppableSounds=(), priorities=(), autoStart=True, enterEvent='', exitEvent='')

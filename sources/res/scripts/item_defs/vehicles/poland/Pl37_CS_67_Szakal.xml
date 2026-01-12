@@ -12,7 +12,7 @@
 	<customRoleSlotOptions>3 5</customRoleSlotOptions>
 	<speedLimits>
 		<forward>55</forward>
-		<backward>15</backward>
+		<backward>17</backward>
 	</speedLimits>
 	<invisibility>
 		<moving>
@@ -39,6 +39,12 @@
 				<!--BW_String-->
 			</invisibilityBonus>
 		</camouflageNet>
+		<deluxeCamouflageNet>
+			<invisibilityBonus>
+				0.125
+				<!--BW_String-->
+			</invisibilityBonus>
+		</deluxeCamouflageNet>
 		<additionalInvisibilityDevice>
 			<invisibilityBonus>
 				0.06 0.08
@@ -957,11 +963,11 @@
 			<rotationSpeed>46</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
-					0.12
+					0.1
 					<!--BW_String-->
 				</vehicleMovement>
 				<vehicleRotation>
-					0.12
+					0.1
 					<!--BW_String-->
 				</vehicleRotation>
 			</shotDispersionFactors>
@@ -1897,11 +1903,11 @@
 						</maxPitch>
 					</pitchLimits>
 					<shotDispersionRadius>
-						0.36
+						0.34
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						8.9
+						8.6
 						<!--BW_String-->
 					</reloadTime>
 					<shotDispersionFactors>

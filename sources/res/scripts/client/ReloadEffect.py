@@ -1,4 +1,4 @@
-import typing, logging
+import logging
 from copy import copy
 from math import fabs
 from constants import ExtraShotClipStates, STATIONARY_RELOAD_STATE
@@ -7,8 +7,6 @@ from helpers import gEffectsDisabled, dependency
 from debug_utils import LOG_DEBUG
 import SoundGroups, BigWorld
 from skeletons.gui.battle_session import IBattleSessionProvider
-if typing.TYPE_CHECKING:
-    from ChargeableBurstComponent import ChargeableBurstModeState
 _logger = logging.getLogger(__name__)
 BARREL_DEBUG_ENABLED = False
 GUN_RAMMER_TIME = 1.5
@@ -291,8 +289,11 @@ class _GunReload(CallbackDelayer):
     def getEffectType(self):
         return self._desc.effectType
 
-    def calculateReloadFlags(self, reloadInProgress, timeLeft, baseTime, clipCapacity, mechanicState=None):
-        return self._calculateReloadFlags(reloadInProgress, timeLeft, baseTime, clipCapacity, mechanicState)
+    def onAmmoStatesInfoUpdate(self, ammoStatesInfo):
+        pass
+
+    def calculateReloadFlags(self, reloadInProgress, timeLeft, baseTime, clipCapacity, ammoStatesInfo):
+        return self._calculateReloadFlags(reloadInProgress, timeLeft, baseTime, clipCapacity, ammoStatesInfo)
 
     @classmethod
     def _calculateReloadFlags(cls, reloadInProgress, timeLeft, baseTime, _, __):
@@ -325,7 +326,7 @@ class SimpleReload(_GunReload):
         CallbackDelayer.destroy(self)
         return
 
-    def start(self, shellReloadTime, alert, shellCount, reloadShellCount, shellID, reloadStart, clipCapacity, mechanicState=None):
+    def start(self, shellReloadTime, alert, shellCount, reloadShellCount, shellID, reloadStart, clipCapacity, ammoStatesInfo):
         if gEffectsDisabled():
             return
         else:
@@ -384,7 +385,7 @@ class BarrelReload(SimpleReload):
         self.stop()
         SimpleReload.__del__(self)
 
-    def start(self, shellReloadTime, alert, shellCount, reloadShellCount, shellID, reloadStart, clipCapacity, mechanicState=None):
+    def start(self, shellReloadTime, alert, shellCount, reloadShellCount, shellID, reloadStart, clipCapacity, ammoStatesInfo):
         if gEffectsDisabled():
             return
         else:
@@ -576,7 +577,7 @@ class AutoReload(_GunReload):
         CallbackDelayer.destroy(self)
         return
 
-    def start(self, shellReloadTime, alert, shellCount, reloadShellCount, shellID, reloadStart, clipCapacity):
+    def start(self, shellReloadTime, alert, shellCount, reloadShellCount, shellID, reloadStart, _, __):
         if gEffectsDisabled():
             return
         else:
@@ -792,23 +793,23 @@ class ExtraShotClipReload(SimpleReload):
         self.stop()
         SimpleReload.__del__(self)
 
-    def start(self, shellReloadTime, alert, shellCount, reloadShellCount, shellID, reloadStart, clipCapacity, mechanicState=None):
-        isInnerShell = mechanicState == ExtraShotClipStates.NONE
+    def start(self, shellReloadTime, alert, shellCount, reloadShellCount, shellID, reloadStart, clipCapacity, ammoStatesInfo):
         if gEffectsDisabled():
             return
+        extraShotReloadState = ammoStatesInfo.extraShotReloadState
         SoundGroups.g_instance.setSwitch('SWITCH_ext_rld_automat_caliber', self._desc.caliber)
         currentTime = BigWorld.time()
         if shellCount == 1:
-            if isInnerShell:
+            if extraShotReloadState == ExtraShotClipStates.NONE:
                 playByName(self._desc.lastShellAlert)
                 time = shellReloadTime - self._desc.shellDuration
                 self.delayCallback(time, self.__startOneShoot, currentTime + time)
             else:
                 reloadShellCount = max(reloadShellCount - 1, 0)
-                self.__reloadLongSound(alert, reloadShellCount, reloadStart, shellReloadTime, mechanicState, isClipFull=False)
+                self.__reloadLongSound(alert, reloadShellCount, reloadStart, shellReloadTime, extraShotReloadState, isClipFull=False)
         elif shellCount == 0:
             self.stopCallback(self.__startOneShoot)
-            self.__reloadLongSound(alert, reloadShellCount, reloadStart, shellReloadTime, mechanicState, isClipFull=True)
+            self.__reloadLongSound(alert, reloadShellCount, reloadStart, shellReloadTime, extraShotReloadState, isClipFull=True)
         else:
             time = shellReloadTime - self._desc.shellDuration
             self.delayCallback(time, self.__startOneShoot, currentTime + time)
@@ -825,16 +826,17 @@ class ExtraShotClipReload(SimpleReload):
         self.__reloadSequence.stop()
 
     @classmethod
-    def _calculateReloadFlags(cls, reloadInProgress, _, __, ___, mechanicState):
-        reloadFromStart = not reloadInProgress if mechanicState else False
-        reloadInProgress = mechanicState & ExtraShotClipStates.FULL_RELOAD_WITH_EXTRA_TIME
+    def _calculateReloadFlags(cls, reloadInProgress, _, __, ___, ammoStatesInfo):
+        extraShotReloadState = ammoStatesInfo.extraShotReloadState
+        reloadFromStart = extraShotReloadState and not reloadInProgress
+        reloadInProgress = extraShotReloadState & ExtraShotClipStates.FULL_RELOAD_WITH_EXTRA_TIME
         return (reloadInProgress, reloadFromStart)
 
     def __startOneShoot(self, invokeTime):
         if fabs(invokeTime - BigWorld.time()) < 0.1:
             playByName(self._desc.soundEvent)
 
-    def __reloadLongSound(self, alert, reloadShellCount, reloadStart, shellReloadTime, mechanicState, isClipFull):
+    def __reloadLongSound(self, alert, reloadShellCount, reloadStart, shellReloadTime, extraReloadState, isClipFull):
         if isClipFull:
             self.__reloadSequence.lastShell = self._desc.loopShellLast
             self.__reloadSequence.shellTLast = self._desc.shellDtLast
@@ -845,7 +847,7 @@ class ExtraShotClipReload(SimpleReload):
             self.__reloadSequence.duration = self._desc.extraShellduration
         self.__reloadSequence.schedule(shellReloadTime, reloadShellCount)
         self._checkAndPlayGunRammerEffect(shellReloadTime)
-        if isClipFull and mechanicState == ExtraShotClipStates.FULL_RELOAD_WITH_EXTRA_TIME | ExtraShotClipStates.EXTRA_FULL_RELOAD:
+        if isClipFull and extraReloadState == ExtraShotClipStates.FULL_RELOAD_WITH_EXTRA_TIME | ExtraShotClipStates.EXTRA_FULL_RELOAD:
             playByName(self._desc.extraShellCancel)
         if reloadStart and shellReloadTime > self._desc.duration:
             self.__playStartLongSound(isClipFull=isClipFull)
@@ -882,7 +884,7 @@ class ChargeableBurstReload(SimpleReload):
         self.stop()
         SimpleReload.__del__(self)
 
-    def start(self, shellReloadTime, alert, shellCount, reloadShellCount, shellID, reloadStart, clipCapacity, mechanicState=None):
+    def start(self, shellReloadTime, alert, shellCount, reloadShellCount, shellID, reloadStart, clipCapacity, ammoStatesInfo):
         if gEffectsDisabled():
             return
         self.__reloadShellCount = reloadShellCount
@@ -898,7 +900,7 @@ class ChargeableBurstReload(SimpleReload):
             self.__playDelayedBurstSounds()
             self.__isBurstTriggered = False
         else:
-            SimpleReload.start(self, shellReloadTime, alert, shellCount, reloadShellCount, shellID, reloadStart, clipCapacity, mechanicState)
+            SimpleReload.start(self, shellReloadTime, alert, shellCount, reloadShellCount, shellID, reloadStart, clipCapacity, ammoStatesInfo)
 
     def stop(self):
         SimpleReload.stop(self)
@@ -914,9 +916,13 @@ class ChargeableBurstReload(SimpleReload):
         SimpleReload.reloadEnd(self)
         self.__stopCallbacks()
 
-    def setChargeableBurstState(self, mechanicState):
-        self.__updateBurstActive(mechanicState.isBurstActive)
-        self.__updateBurstShoot(mechanicState.shots, mechanicState.burstCount)
+    def onAmmoStatesInfoUpdate(self, ammoStatesInfo):
+        burstState = ammoStatesInfo.chargeableBurstAmmoState
+        self.__updateBurstActive(burstState is not None and burstState.isBurstActive)
+        shots, count = (burstState.shots, burstState.burstCount) if burstState is not None else (0,
+                                                                                                 0)
+        self.__updateBurstShoot(shots, count)
+        return
 
     def __updateBurstActive(self, isActive):
         if self.__isBurstActive != isActive:
@@ -934,7 +940,7 @@ class ChargeableBurstReload(SimpleReload):
             self.__isBurstTriggered = True
 
     def __updateBurstShoot(self, burstShots, burstCount):
-        isBetweenBurstShots = burstShots > 0 and burstShots < burstCount
+        isBetweenBurstShots = 0 < burstShots < burstCount
         if self.__isBetweenBurstShots != isBetweenBurstShots:
             self.__isBetweenBurstShots = isBetweenBurstShots
         else:
@@ -1005,14 +1011,15 @@ class StationaryReload(SimpleReload):
         self.stop()
         SimpleReload.__del__(self)
 
-    def start(self, shellReloadTime, alert, shellCount, reloadShellCount, shellID, reloadStart, clipCapacity, mechanicState=None):
+    def start(self, shellReloadTime, alert, shellCount, reloadShellCount, shellID, reloadStart, clipCapacity, ammoStatesInfo):
         if gEffectsDisabled():
             return
         else:
+            stationaryReloadState = self._getStationaryReloadState(ammoStatesInfo)
             SoundGroups.g_instance.setSwitch('SWITCH_ext_rld_automat_caliber', self._desc.caliber)
             currentTime = BigWorld.time()
-            reloadShellCount = clipCapacity - shellCount
-            if mechanicState.state == STATIONARY_RELOAD_STATE.RELOADING:
+            if stationaryReloadState == STATIONARY_RELOAD_STATE.RELOADING:
+                reloadShellCount = clipCapacity - shellCount
                 if reloadShellCount:
                     self.stopCallback(self._startOneShoot)
                     self._checkAndPlayGunRammerEffect(shellReloadTime)
@@ -1028,9 +1035,9 @@ class StationaryReload(SimpleReload):
                         self.__playStartLongSound()
                     if alert:
                         playByName(self._desc.ammoLow)
-            elif mechanicState.state == STATIONARY_RELOAD_STATE.FINISHING:
+            elif stationaryReloadState == STATIONARY_RELOAD_STATE.FINISHING:
                 self.stop()
-            elif mechanicState.state == STATIONARY_RELOAD_STATE.IDLE and not reloadStart:
+            elif stationaryReloadState == STATIONARY_RELOAD_STATE.IDLE and not reloadStart:
                 if shellCount == 1 and clipCapacity > 2:
                     playByName(self._desc.lastShellAlert)
                 time = shellReloadTime - self._desc.shellDuration
@@ -1046,12 +1053,20 @@ class StationaryReload(SimpleReload):
         self.stop()
 
     @classmethod
-    def _calculateReloadFlags(cls, reloadInProgress, timeLeft, baseTime, clipCapacity, mechanicState):
+    def _getStationaryReloadState(cls, ammoStatesInfo):
+        ammoState = ammoStatesInfo.stationaryReloadAmmoState
+        if ammoState is not None:
+            return ammoState.stationaryReloadState
+        else:
+            return STATIONARY_RELOAD_STATE.IDLE
+
+    @classmethod
+    def _calculateReloadFlags(cls, reloadInProgress, timeLeft, baseTime, clipCapacity, ammoStatesInfo):
         ammoCtrl = cls.__sessionProvider.shared.ammo
         currentShellCD = ammoCtrl.getCurrentShellCD()
         shellsToLoad = clipCapacity - ammoCtrl.getShells(currentShellCD)[1]
         misAlignment = timeLeft - baseTime / clipCapacity * shellsToLoad
-        inProgress = mechanicState.state == STATIONARY_RELOAD_STATE.RELOADING
+        inProgress = cls._getStationaryReloadState(ammoStatesInfo) == STATIONARY_RELOAD_STATE.RELOADING
         return (inProgress, fabs(misAlignment) < 0.001 and not reloadInProgress)
 
     def _startOneShoot(self, invokeTime):
@@ -1082,9 +1097,9 @@ class ReloadEffectStrategy(object):
         self.__reloadInProgress = False
         return
 
-    def start(self, timeLeft, baseTime, clipCapacity, directTrigger=False, shotsAmount=-1, mechanicState=None):
-        self.__reloadInProgress, reloadFromStart = self.__gunReloadEffect.calculateReloadFlags(self.__reloadInProgress, timeLeft, baseTime, clipCapacity, mechanicState)
-        self.__reloadStartEffect(timeLeft, clipCapacity, reloadFromStart, directTrigger, shotsAmount, mechanicState)
+    def start(self, timeLeft, baseTime, clipCapacity, ammoStatesInfo, directTrigger=False):
+        self.__reloadInProgress, reloadFromStart = self.__gunReloadEffect.calculateReloadFlags(self.__reloadInProgress, timeLeft, baseTime, clipCapacity, ammoStatesInfo)
+        self.__reloadStartEffect(timeLeft, clipCapacity, reloadFromStart, ammoStatesInfo, directTrigger)
 
     def stop(self):
         self.__reloadInProgress = False
@@ -1122,11 +1137,10 @@ class ReloadEffectStrategy(object):
     def getGunReloadType(self):
         return self.__gunReloadEffect.getEffectType()
 
-    def setChargeableBurstState(self, mechanicState):
-        if self.getGunReloadType() == ReloadEffectsType.CHARGEABLEBURST_RELOAD:
-            self.__gunReloadEffect.setChargeableBurstState(mechanicState)
+    def onAmmoStatesInfoUpdate(self, ammoStatesInfo):
+        self.__gunReloadEffect.onAmmoStatesInfoUpdate(ammoStatesInfo)
 
-    def __reloadStartEffect(self, timeLeft, clipCapacity, reloadFromStart, directTrigger=False, shotsAmount=1, mechanicState=None):
+    def __reloadStartEffect(self, timeLeft, clipCapacity, reloadFromStart, ammoStatesInfo, directTrigger=False):
         ammoCtrl = self.__sessionProvider.shared.ammo
         currentShellCD = ammoCtrl.getCurrentShellCD()
         shellCounts = ammoCtrl.getShells(currentShellCD)
@@ -1153,13 +1167,13 @@ class ReloadEffectStrategy(object):
                     ammoLow = True
                 relloadEffect.start(timeLeft, ammoLow, directTrigger)
             elif gunReloadType == ReloadEffectsType.TWINGUN_RELOAD:
-                relloadEffect.start(timeLeft, shotsAmount > 1)
+                relloadEffect.start(timeLeft, ammoStatesInfo.getShotsAmount() > 1)
             elif gunReloadType == ReloadEffectsType.EXTRASHOTCLIP_RELOAD:
-                relloadEffect.start(timeLeft, ammoLow, shellCounts[1], reloadShellCount, currentShellCD, reloadFromStart, clipCapacity, mechanicState=mechanicState)
+                relloadEffect.start(timeLeft, ammoLow, shellCounts[1], reloadShellCount, currentShellCD, reloadFromStart, clipCapacity, ammoStatesInfo)
             elif gunReloadType == ReloadEffectsType.STATIONARY_RELOAD:
-                relloadEffect.start(timeLeft, ammoLow, shellCounts[1], reloadShellCount, currentShellCD, reloadFromStart, clipCapacity, mechanicState=mechanicState)
+                relloadEffect.start(timeLeft, ammoLow, shellCounts[1], reloadShellCount, currentShellCD, reloadFromStart, clipCapacity, ammoStatesInfo)
             else:
-                relloadEffect.start(timeLeft, ammoLow, shellCounts[1], reloadShellCount, currentShellCD, reloadFromStart, clipCapacity)
+                relloadEffect.start(timeLeft, ammoLow, shellCounts[1], reloadShellCount, currentShellCD, reloadFromStart, clipCapacity, ammoStatesInfo)
         return
 
 

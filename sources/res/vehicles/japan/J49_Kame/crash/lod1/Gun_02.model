@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/japan/J49_Kame/crash/lod2/Gun_02</parent>
+	<extent>64.000000</extent>
+	<nodelessVisual>vehicles/japan/J49_Kame/crash/lod1/Gun_02</nodelessVisual>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.383032 -0.334718 -1.892446</min>
+		<max>0.251019 0.323627 4.292596</max>
+	</visibilityBox>
+</root>

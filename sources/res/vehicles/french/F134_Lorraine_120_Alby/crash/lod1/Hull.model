@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/french/F134_Lorraine_120_Alby/crash/lod1/Hull</nodefullVisual>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.733499 -0.869309 -3.421320</min>
+		<max>1.733471 3.130087 3.090580</max>
+	</visibilityBox>
+	<parent>vehicles/french/F134_Lorraine_120_Alby/crash/lod2/Hull</parent>
+	<extent>64.000000</extent>
+</root>

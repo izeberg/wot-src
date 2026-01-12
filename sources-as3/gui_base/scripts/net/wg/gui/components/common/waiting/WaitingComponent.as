@@ -49,6 +49,7 @@ package net.wg.gui.components.common.waiting
       public function WaitingComponent()
       {
          super();
+         mouseChildren = false;
       }
       
       override protected function preInitialize() : void

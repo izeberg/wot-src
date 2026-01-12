@@ -105,6 +105,8 @@ package net.wg.gui.battle.comp7.views.consumablesPanel
          }
          else
          {
+            this.glow.stop();
+            this.glow.visible = false;
             this.complete.visible = false;
             this._hasProgress = param1 > 0;
             this.marker.visible = this.fill.visible = this._hasProgress;

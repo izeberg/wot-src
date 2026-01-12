@@ -4,7 +4,6 @@ from constants import ARENA_PERIOD, VEHICLE_SIEGE_STATE, VEHICLE_SETTING
 import CommandMapping
 from AvatarInputHandler.commands.input_handler_command import InputHandlerCommand
 from AvatarInputHandler.player_notifications.siege_mode.sound_notifications import playUnavailableSound, playTriggerSound
-from debug_utils import LOG_DEBUG
 from helpers import dependency
 from skeletons.gui.battle_session import IBattleSessionProvider
 
@@ -49,7 +48,6 @@ class SiegeModeControl(InputHandlerCommand):
         vehicle = BigWorld.entities.get(vehicleID)
         if vehicle is None or not (vehicle.isPlayerVehicle or vehicleID == avatar.observedVehicleID):
             return
-        LOG_DEBUG(('SiegeMode: new state received: {}').format((newState, timeToNextMode)))
         self.__currentState = newState
         return
 

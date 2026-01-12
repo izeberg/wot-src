@@ -2669,6 +2669,142 @@
 			</component>
 		</ComponentPool>
 		<ComponentPool>
+			<type>SequenceComponent</type>
+			<version>3</version>
+			<component>
+				<UUID>9c35a639-b489-4a7d-af6f-f53a68b08f63</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>activeLayer</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>speed</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>loop</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>autoStart</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>pauseOnEnd</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>alwaysEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>duration</name>
+						<value>8</value>
+					</property>
+					<property>
+						<name>tracks</name>
+						<collection>
+							<item>
+								<object>
+									<property>
+										<name>object</name>
+										<link>c4fd9ee4-f8ae-3e67-afa4-cc065160cd89</link>
+									</property>
+									<property>
+										<name>start</name>
+										<value>5</value>
+									</property>
+									<property>
+										<name>end</name>
+										<value>8</value>
+									</property>
+									<property>
+										<name>parameters</name>
+										<collection/>
+									</property>
+								</object>
+							</item>
+							<item>
+								<object>
+									<property>
+										<name>object</name>
+										<link>27953e90-90b6-3fe4-bd21-64fdb5422f3f</link>
+									</property>
+									<property>
+										<name>start</name>
+										<value>
+											3.5
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>end</name>
+										<value>8</value>
+									</property>
+									<property>
+										<name>parameters</name>
+										<collection/>
+									</property>
+								</object>
+							</item>
+							<item>
+								<object>
+									<property>
+										<name>object</name>
+										<link>abcaf765-1005-3ca4-9157-9ba72dfe6b57</link>
+									</property>
+									<property>
+										<name>start</name>
+										<value>
+											3.8
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>end</name>
+										<value>8</value>
+									</property>
+									<property>
+										<name>parameters</name>
+										<collection/>
+									</property>
+								</object>
+							</item>
+							<item>
+								<object>
+									<property>
+										<name>object</name>
+										<link>a6efa8be-1e5d-3c31-ab82-f82bf462c6f6</link>
+									</property>
+									<property>
+										<name>start</name>
+										<value>
+											3.9
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>end</name>
+										<value>8</value>
+									</property>
+									<property>
+										<name>parameters</name>
+										<collection/>
+									</property>
+								</object>
+							</item>
+						</collection>
+					</property>
+					<property>
+						<name>layers</name>
+						<collection/>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
 			<type>Transform</type>
 			<version>1</version>
 			<component>
@@ -7317,416 +7453,6 @@
 			</component>
 		</ComponentPool>
 		<ComponentPool>
-			<type>SequenceComponent</type>
-			<version>3</version>
-			<component>
-				<UUID>9c35a639-b489-4a7d-af6f-f53a68b08f63</UUID>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>loop</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>autoStart</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>pauseOnEnd</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>alwaysEnabled</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>duration</name>
-						<value>8</value>
-					</property>
-					<property>
-						<name>tracks</name>
-						<collection>
-							<item>
-								<object>
-									<property>
-										<name>object</name>
-										<link>c4fd9ee4-f8ae-3e67-afa4-cc065160cd89</link>
-									</property>
-									<property>
-										<name>start</name>
-										<value>5</value>
-									</property>
-									<property>
-										<name>end</name>
-										<value>8</value>
-									</property>
-									<property>
-										<name>parameters</name>
-										<collection>
-											<item>
-												<object>
-													<property>
-														<name>component</name>
-														<value>ModelPropertyChanger</value>
-													</property>
-													<property>
-														<name>property</name>
-														<value>properties.s_nd2-&gt;g_ditherCoeff</value>
-													</property>
-													<property>
-														<name>keys</name>
-														<collection>
-															<item>
-																<object>
-																	<property>
-																		<name>valueType</name>
-																		<value>real</value>
-																	</property>
-																	<property>
-																		<name>value</name>
-																		<value>0</value>
-																	</property>
-																	<property>
-																		<name>type</name>
-																		<value>1</value>
-																	</property>
-																	<property>
-																		<name>time</name>
-																		<value>0</value>
-																	</property>
-																	<property>
-																		<name>tangents</name>
-																		<object>
-																			<property>
-																				<name>left</name>
-																				<value>
-																					1.5708 1.5708 1.5708
-																					<!--BW_String-->
-																				</value>
-																			</property>
-																			<property>
-																				<name>right</name>
-																				<value>
-																					1.5708 1.5708 1.5708
-																					<!--BW_String-->
-																				</value>
-																			</property>
-																		</object>
-																	</property>
-																</object>
-															</item>
-															<item>
-																<object>
-																	<property>
-																		<name>valueType</name>
-																		<value>real</value>
-																	</property>
-																	<property>
-																		<name>value</name>
-																		<value>100</value>
-																	</property>
-																	<property>
-																		<name>type</name>
-																		<value>1</value>
-																	</property>
-																	<property>
-																		<name>time</name>
-																		<value>2</value>
-																	</property>
-																	<property>
-																		<name>tangents</name>
-																		<object>
-																			<property>
-																				<name>left</name>
-																				<value>
-																					1.5708 1.5708 1.5708
-																					<!--BW_String-->
-																				</value>
-																			</property>
-																			<property>
-																				<name>right</name>
-																				<value>
-																					1.5708 1.5708 1.5708
-																					<!--BW_String-->
-																				</value>
-																			</property>
-																		</object>
-																	</property>
-																</object>
-															</item>
-														</collection>
-													</property>
-												</object>
-											</item>
-											<item>
-												<object>
-													<property>
-														<name>component</name>
-														<value>ModelPropertyChanger</value>
-													</property>
-													<property>
-														<name>property</name>
-														<value>properties.s_nd1-&gt;g_ditherCoeff</value>
-													</property>
-													<property>
-														<name>keys</name>
-														<collection>
-															<item>
-																<object>
-																	<property>
-																		<name>valueType</name>
-																		<value>real</value>
-																	</property>
-																	<property>
-																		<name>value</name>
-																		<value>0</value>
-																	</property>
-																	<property>
-																		<name>type</name>
-																		<value>1</value>
-																	</property>
-																	<property>
-																		<name>time</name>
-																		<value>0</value>
-																	</property>
-																	<property>
-																		<name>tangents</name>
-																		<object>
-																			<property>
-																				<name>left</name>
-																				<value>
-																					1.5708 1.5708 1.5708
-																					<!--BW_String-->
-																				</value>
-																			</property>
-																			<property>
-																				<name>right</name>
-																				<value>
-																					1.5708 1.5708 1.5708
-																					<!--BW_String-->
-																				</value>
-																			</property>
-																		</object>
-																	</property>
-																</object>
-															</item>
-															<item>
-																<object>
-																	<property>
-																		<name>valueType</name>
-																		<value>real</value>
-																	</property>
-																	<property>
-																		<name>value</name>
-																		<value>100</value>
-																	</property>
-																	<property>
-																		<name>type</name>
-																		<value>1</value>
-																	</property>
-																	<property>
-																		<name>time</name>
-																		<value>2</value>
-																	</property>
-																	<property>
-																		<name>tangents</name>
-																		<object>
-																			<property>
-																				<name>left</name>
-																				<value>
-																					1.5708 1.5708 1.5708
-																					<!--BW_String-->
-																				</value>
-																			</property>
-																			<property>
-																				<name>right</name>
-																				<value>
-																					1.5708 1.5708 1.5708
-																					<!--BW_String-->
-																				</value>
-																			</property>
-																		</object>
-																	</property>
-																</object>
-															</item>
-														</collection>
-													</property>
-												</object>
-											</item>
-											<item>
-												<object>
-													<property>
-														<name>component</name>
-														<value>ModelPropertyChanger</value>
-													</property>
-													<property>
-														<name>property</name>
-														<value>properties.s_nd0-&gt;g_ditherCoeff</value>
-													</property>
-													<property>
-														<name>keys</name>
-														<collection>
-															<item>
-																<object>
-																	<property>
-																		<name>valueType</name>
-																		<value>real</value>
-																	</property>
-																	<property>
-																		<name>value</name>
-																		<value>0</value>
-																	</property>
-																	<property>
-																		<name>type</name>
-																		<value>1</value>
-																	</property>
-																	<property>
-																		<name>time</name>
-																		<value>0</value>
-																	</property>
-																	<property>
-																		<name>tangents</name>
-																		<object>
-																			<property>
-																				<name>left</name>
-																				<value>
-																					1.5708 1.5708 1.5708
-																					<!--BW_String-->
-																				</value>
-																			</property>
-																			<property>
-																				<name>right</name>
-																				<value>
-																					1.5708 1.5708 1.5708
-																					<!--BW_String-->
-																				</value>
-																			</property>
-																		</object>
-																	</property>
-																</object>
-															</item>
-															<item>
-																<object>
-																	<property>
-																		<name>valueType</name>
-																		<value>real</value>
-																	</property>
-																	<property>
-																		<name>value</name>
-																		<value>100</value>
-																	</property>
-																	<property>
-																		<name>type</name>
-																		<value>1</value>
-																	</property>
-																	<property>
-																		<name>time</name>
-																		<value>2</value>
-																	</property>
-																	<property>
-																		<name>tangents</name>
-																		<object>
-																			<property>
-																				<name>left</name>
-																				<value>
-																					1.5708 1.5708 1.5708
-																					<!--BW_String-->
-																				</value>
-																			</property>
-																			<property>
-																				<name>right</name>
-																				<value>
-																					1.5708 1.5708 1.5708
-																					<!--BW_String-->
-																				</value>
-																			</property>
-																		</object>
-																	</property>
-																</object>
-															</item>
-														</collection>
-													</property>
-												</object>
-											</item>
-										</collection>
-									</property>
-								</object>
-							</item>
-							<item>
-								<object>
-									<property>
-										<name>object</name>
-										<link>27953e90-90b6-3fe4-bd21-64fdb5422f3f</link>
-									</property>
-									<property>
-										<name>start</name>
-										<value>
-											3.5
-											<!--BW_String-->
-										</value>
-									</property>
-									<property>
-										<name>end</name>
-										<value>8</value>
-									</property>
-									<property>
-										<name>parameters</name>
-										<collection/>
-									</property>
-								</object>
-							</item>
-							<item>
-								<object>
-									<property>
-										<name>object</name>
-										<link>abcaf765-1005-3ca4-9157-9ba72dfe6b57</link>
-									</property>
-									<property>
-										<name>start</name>
-										<value>
-											3.8
-											<!--BW_String-->
-										</value>
-									</property>
-									<property>
-										<name>end</name>
-										<value>8</value>
-									</property>
-									<property>
-										<name>parameters</name>
-										<collection/>
-									</property>
-								</object>
-							</item>
-							<item>
-								<object>
-									<property>
-										<name>object</name>
-										<link>a6efa8be-1e5d-3c31-ab82-f82bf462c6f6</link>
-									</property>
-									<property>
-										<name>start</name>
-										<value>
-											3.9
-											<!--BW_String-->
-										</value>
-									</property>
-									<property>
-										<name>end</name>
-										<value>8</value>
-									</property>
-									<property>
-										<name>parameters</name>
-										<collection/>
-									</property>
-								</object>
-							</item>
-						</collection>
-					</property>
-				</config>
-			</component>
-		</ComponentPool>
-		<ComponentPool>
 			<type>NetworkComponent</type>
 			<version>1</version>
 			<component>
@@ -8041,6 +7767,14 @@
 						<name>Cast Shadows</name>
 						<value>1</value>
 					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
+					</property>
 				</config>
 			</component>
 			<component>
@@ -8055,6 +7789,14 @@
 					<property>
 						<name>Cast Shadows</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
 					</property>
 				</config>
 			</component>
@@ -8071,6 +7813,14 @@
 						<name>Cast Shadows</name>
 						<value>1</value>
 					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
+					</property>
 				</config>
 			</component>
 			<component>
@@ -8084,6 +7834,14 @@
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
 						<value>0</value>
 					</property>
 				</config>
@@ -8101,6 +7859,14 @@
 						<name>Cast Shadows</name>
 						<value>0</value>
 					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
+					</property>
 				</config>
 			</component>
 			<component>
@@ -8116,6 +7882,14 @@
 						<name>Cast Shadows</name>
 						<value>0</value>
 					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
+					</property>
 				</config>
 			</component>
 			<component>
@@ -8125,11 +7899,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/hd_mle_UNI_805_BurnedGerBox/normal/lod0/hd_mle_UNI_805_BurnedGerBox_01.model</value>
+						<value>content/MilitaryEnvironment/hd_mle_UNI_805_BurnedGerBox/normal/lod0/hd_mle_UNI_805_BurnedGerBox_01_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>480</value>
 					</property>
 				</config>
 			</component>
@@ -8140,10 +7922,18 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/hd_mle_UNI_805_BurnedGerBox/normal/lod0/hd_mle_UNI_805_BurnedGerBox_01.model</value>
+						<value>content/MilitaryEnvironment/hd_mle_UNI_805_BurnedGerBox/normal/lod0/hd_mle_UNI_805_BurnedGerBox_01_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
 						<value>0</value>
 					</property>
 				</config>
@@ -8155,10 +7945,18 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/hd_mle_UNI_805_BurnedGerBox/normal/lod0/hd_mle_UNI_805_BurnedGerBox_03.model</value>
+						<value>content/MilitaryEnvironment/hd_mle_UNI_805_BurnedGerBox/normal/lod0/hd_mle_UNI_805_BurnedGerBox_03_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
 						<value>0</value>
 					</property>
 				</config>
@@ -8176,6 +7974,14 @@
 						<name>Cast Shadows</name>
 						<value>0</value>
 					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
+					</property>
 				</config>
 			</component>
 			<component>
@@ -8189,6 +7995,14 @@
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
 						<value>0</value>
 					</property>
 				</config>
@@ -8206,6 +8020,14 @@
 						<name>Cast Shadows</name>
 						<value>0</value>
 					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
+					</property>
 				</config>
 			</component>
 			<component>
@@ -8219,6 +8041,14 @@
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
 						<value>0</value>
 					</property>
 				</config>
@@ -8236,6 +8066,14 @@
 						<name>Cast Shadows</name>
 						<value>0</value>
 					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
+					</property>
 				</config>
 			</component>
 			<component>
@@ -8249,6 +8087,14 @@
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
 						<value>0</value>
 					</property>
 				</config>
@@ -8266,6 +8112,14 @@
 						<name>Cast Shadows</name>
 						<value>0</value>
 					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
+					</property>
 				</config>
 			</component>
 			<component>
@@ -8275,11 +8129,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/hd_mle_UNI_805_BurnedGerBox/normal/lod0/hd_mle_UNI_805_BurnedGerBox_01.model</value>
+						<value>content/MilitaryEnvironment/hd_mle_UNI_805_BurnedGerBox/normal/lod0/hd_mle_UNI_805_BurnedGerBox_01_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
 					</property>
 				</config>
 			</component>
@@ -8290,10 +8152,18 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/hd_mle_UNI_805_BurnedGerBox/normal/lod0/hd_mle_UNI_805_BurnedGerBox_03.model</value>
+						<value>content/MilitaryEnvironment/hd_mle_UNI_805_BurnedGerBox/normal/lod0/hd_mle_UNI_805_BurnedGerBox_03_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
 						<value>0</value>
 					</property>
 				</config>
@@ -8305,11 +8175,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/hd_mle_UNI_805_BurnedGerBox/normal/lod0/hd_mle_UNI_805_BurnedGerBox_03.model</value>
+						<value>content/MilitaryEnvironment/hd_mle_UNI_805_BurnedGerBox/normal/lod0/hd_mle_UNI_805_BurnedGerBox_03_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>480</value>
 					</property>
 				</config>
 			</component>
@@ -8326,6 +8204,14 @@
 						<name>Cast Shadows</name>
 						<value>0</value>
 					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
+					</property>
 				</config>
 			</component>
 			<component>
@@ -8335,11 +8221,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/hd_mle_UNI_805_BurnedGerBox/normal/lod0/hd_mle_UNI_805_BurnedGerBox_03.model</value>
+						<value>content/MilitaryEnvironment/hd_mle_UNI_805_BurnedGerBox/normal/lod0/hd_mle_UNI_805_BurnedGerBox_03_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>480</value>
 					</property>
 				</config>
 			</component>
@@ -8350,10 +8244,18 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/hd_mle_UNI_805_BurnedGerBox/normal/lod0/hd_mle_UNI_805_BurnedGerBox_03.model</value>
+						<value>content/MilitaryEnvironment/hd_mle_UNI_805_BurnedGerBox/normal/lod0/hd_mle_UNI_805_BurnedGerBox_03_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
 						<value>0</value>
 					</property>
 				</config>
@@ -8365,10 +8267,18 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/hd_mle_UNI_805_BurnedGerBox/normal/lod0/hd_mle_UNI_805_BurnedGerBox_03.model</value>
+						<value>content/MilitaryEnvironment/hd_mle_UNI_805_BurnedGerBox/normal/lod0/hd_mle_UNI_805_BurnedGerBox_03_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
 						<value>0</value>
 					</property>
 				</config>
@@ -8386,6 +8296,14 @@
 						<name>Cast Shadows</name>
 						<value>1</value>
 					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
+					</property>
 				</config>
 			</component>
 			<component>
@@ -8400,6 +8318,14 @@
 					<property>
 						<name>Cast Shadows</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
 					</property>
 				</config>
 			</component>
@@ -8416,6 +8342,14 @@
 						<name>Cast Shadows</name>
 						<value>1</value>
 					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
+					</property>
 				</config>
 			</component>
 			<component>
@@ -8430,6 +8364,14 @@
 					<property>
 						<name>Cast Shadows</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
 					</property>
 				</config>
 			</component>
@@ -8446,6 +8388,14 @@
 						<name>Cast Shadows</name>
 						<value>1</value>
 					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
+					</property>
 				</config>
 			</component>
 			<component>
@@ -8455,11 +8405,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Environment/hd_env_UNI_029_SmallStones/normal/lod0/hd_env_UNI_029_SmallStones_03.model</value>
+						<value>content/Environment/hd_env_UNI_029_SmallStones/normal/lod0/hd_env_UNI_029_SmallStones_03_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>480</value>
 					</property>
 				</config>
 			</component>
@@ -8470,11 +8428,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Environment/hd_env_UNI_029_SmallStones/normal/lod0/hd_env_UNI_029_SmallStones_03.model</value>
+						<value>content/Environment/hd_env_UNI_029_SmallStones/normal/lod0/hd_env_UNI_029_SmallStones_03_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>480</value>
 					</property>
 				</config>
 			</component>
@@ -8485,11 +8451,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Environment/hd_env_UNI_029_SmallStones/normal/lod0/hd_env_UNI_029_SmallStones_03.model</value>
+						<value>content/Environment/hd_env_UNI_029_SmallStones/normal/lod0/hd_env_UNI_029_SmallStones_03_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>480</value>
 					</property>
 				</config>
 			</component>
@@ -8500,11 +8474,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Environment/hd_env_UNI_029_SmallStones/normal/lod0/hd_env_UNI_029_SmallStones_03.model</value>
+						<value>content/Environment/hd_env_UNI_029_SmallStones/normal/lod0/hd_env_UNI_029_SmallStones_03_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>480</value>
 					</property>
 				</config>
 			</component>
@@ -8515,11 +8497,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Environment/hd_env_UNI_029_SmallStones/normal/lod0/hd_env_UNI_029_SmallStones_03.model</value>
+						<value>content/Environment/hd_env_UNI_029_SmallStones/normal/lod0/hd_env_UNI_029_SmallStones_03_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>480</value>
 					</property>
 				</config>
 			</component>
@@ -8536,6 +8526,14 @@
 						<name>Cast Shadows</name>
 						<value>0</value>
 					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>480</value>
+					</property>
 				</config>
 			</component>
 			<component>
@@ -8545,11 +8543,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Environment/hd_env_UNI_029_SmallStones/normal/lod0/hd_env_UNI_029_SmallStones_03.model</value>
+						<value>content/Environment/hd_env_UNI_029_SmallStones/normal/lod0/hd_env_UNI_029_SmallStones_03_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>480</value>
 					</property>
 				</config>
 			</component>
@@ -8560,11 +8566,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Environment/hd_env_UNI_029_SmallStones/normal/lod0/hd_env_UNI_029_SmallStones_03.model</value>
+						<value>content/Environment/hd_env_UNI_029_SmallStones/normal/lod0/hd_env_UNI_029_SmallStones_03_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>480</value>
 					</property>
 				</config>
 			</component>
@@ -8575,11 +8589,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Environment/hd_env_UNI_029_SmallStones/normal/lod0/hd_env_UNI_029_SmallStones_03.model</value>
+						<value>content/Environment/hd_env_UNI_029_SmallStones/normal/lod0/hd_env_UNI_029_SmallStones_03_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>480</value>
 					</property>
 				</config>
 			</component>
@@ -8590,11 +8612,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Environment/hd_env_UNI_029_SmallStones/normal/lod0/hd_env_UNI_029_SmallStones_03.model</value>
+						<value>content/Environment/hd_env_UNI_029_SmallStones/normal/lod0/hd_env_UNI_029_SmallStones_03_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>480</value>
 					</property>
 				</config>
 			</component>
@@ -8611,6 +8641,14 @@
 						<name>Cast Shadows</name>
 						<value>0</value>
 					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>480</value>
+					</property>
 				</config>
 			</component>
 			<component>
@@ -8620,11 +8658,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Environment/hd_env_UNI_029_SmallStones/normal/lod0/hd_env_UNI_029_SmallStones_03.model</value>
+						<value>content/Environment/hd_env_UNI_029_SmallStones/normal/lod0/hd_env_UNI_029_SmallStones_03_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>480</value>
 					</property>
 				</config>
 			</component>
@@ -8635,11 +8681,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Environment/hd_env_UNI_029_SmallStones/normal/lod0/hd_env_UNI_029_SmallStones_03.model</value>
+						<value>content/Environment/hd_env_UNI_029_SmallStones/normal/lod0/hd_env_UNI_029_SmallStones_03_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>480</value>
 					</property>
 				</config>
 			</component>
@@ -8650,11 +8704,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Environment/hd_env_UNI_029_SmallStones/normal/lod0/hd_env_UNI_029_SmallStones_03.model</value>
+						<value>content/Environment/hd_env_UNI_029_SmallStones/normal/lod0/hd_env_UNI_029_SmallStones_03_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>480</value>
 					</property>
 				</config>
 			</component>
@@ -8665,11 +8727,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Environment/hd_env_UNI_029_SmallStones/normal/lod0/hd_env_UNI_029_SmallStones_03.model</value>
+						<value>content/Environment/hd_env_UNI_029_SmallStones/normal/lod0/hd_env_UNI_029_SmallStones_03_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>480</value>
 					</property>
 				</config>
 			</component>
@@ -8680,11 +8750,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Environment/hd_env_UNI_029_SmallStones/normal/lod0/hd_env_UNI_029_SmallStones_03.model</value>
+						<value>content/Environment/hd_env_UNI_029_SmallStones/normal/lod0/hd_env_UNI_029_SmallStones_03_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>480</value>
 					</property>
 				</config>
 			</component>
@@ -8701,6 +8779,14 @@
 						<name>Cast Shadows</name>
 						<value>0</value>
 					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>480</value>
+					</property>
 				</config>
 			</component>
 			<component>
@@ -8710,11 +8796,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Environment/hd_env_UNI_029_SmallStones/normal/lod0/hd_env_UNI_029_SmallStones_03.model</value>
+						<value>content/Environment/hd_env_UNI_029_SmallStones/normal/lod0/hd_env_UNI_029_SmallStones_03_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>480</value>
 					</property>
 				</config>
 			</component>
@@ -8731,6 +8825,14 @@
 						<name>Cast Shadows</name>
 						<value>0</value>
 					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>480</value>
+					</property>
 				</config>
 			</component>
 			<component>
@@ -8740,11 +8842,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Environment/hd_env_UNI_029_SmallStones/normal/lod0/hd_env_UNI_029_SmallStones_03.model</value>
+						<value>content/Environment/hd_env_UNI_029_SmallStones/normal/lod0/hd_env_UNI_029_SmallStones_03_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>480</value>
 					</property>
 				</config>
 			</component>
@@ -8755,11 +8865,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Environment/hd_env_UNI_029_SmallStones/normal/lod0/hd_env_UNI_029_SmallStones_03.model</value>
+						<value>content/Environment/hd_env_UNI_029_SmallStones/normal/lod0/hd_env_UNI_029_SmallStones_03_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>480</value>
 					</property>
 				</config>
 			</component>
@@ -8770,11 +8888,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Environment/hd_env_UNI_029_SmallStones/normal/lod0/hd_env_UNI_029_SmallStones_03.model</value>
+						<value>content/Environment/hd_env_UNI_029_SmallStones/normal/lod0/hd_env_UNI_029_SmallStones_03_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>480</value>
 					</property>
 				</config>
 			</component>
@@ -8785,11 +8911,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Environment/hd_env_UNI_029_SmallStones/normal/lod0/hd_env_UNI_029_SmallStones_03.model</value>
+						<value>content/Environment/hd_env_UNI_029_SmallStones/normal/lod0/hd_env_UNI_029_SmallStones_03_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>480</value>
 					</property>
 				</config>
 			</component>
@@ -8800,11 +8934,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Environment/hd_env_UNI_029_SmallStones/normal/lod0/hd_env_UNI_029_SmallStones_03.model</value>
+						<value>content/Environment/hd_env_UNI_029_SmallStones/normal/lod0/hd_env_UNI_029_SmallStones_03_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>480</value>
 					</property>
 				</config>
 			</component>
@@ -8815,11 +8957,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Environment/hd_env_UNI_029_SmallStones/normal/lod0/hd_env_UNI_029_SmallStones_03.model</value>
+						<value>content/Environment/hd_env_UNI_029_SmallStones/normal/lod0/hd_env_UNI_029_SmallStones_03_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>480</value>
 					</property>
 				</config>
 			</component>
@@ -8836,6 +8986,14 @@
 						<name>Cast Shadows</name>
 						<value>0</value>
 					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>480</value>
+					</property>
 				</config>
 			</component>
 			<component>
@@ -8845,11 +9003,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Environment/hd_env_UNI_029_SmallStones/normal/lod0/hd_env_UNI_029_SmallStones_03.model</value>
+						<value>content/Environment/hd_env_UNI_029_SmallStones/normal/lod0/hd_env_UNI_029_SmallStones_03_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>480</value>
 					</property>
 				</config>
 			</component>
@@ -8860,11 +9026,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Environment/hd_env_UNI_029_SmallStones/normal/lod0/hd_env_UNI_029_SmallStones_03.model</value>
+						<value>content/Environment/hd_env_UNI_029_SmallStones/normal/lod0/hd_env_UNI_029_SmallStones_03_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>480</value>
 					</property>
 				</config>
 			</component>
@@ -8875,11 +9049,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Environment/hd_env_UNI_029_SmallStones/normal/lod0/hd_env_UNI_029_SmallStones_03.model</value>
+						<value>content/Environment/hd_env_UNI_029_SmallStones/normal/lod0/hd_env_UNI_029_SmallStones_03_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>480</value>
 					</property>
 				</config>
 			</component>
@@ -8890,11 +9072,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Environment/hd_env_UNI_029_SmallStones/normal/lod0/hd_env_UNI_029_SmallStones_03.model</value>
+						<value>content/Environment/hd_env_UNI_029_SmallStones/normal/lod0/hd_env_UNI_029_SmallStones_03_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>480</value>
 					</property>
 				</config>
 			</component>
@@ -8905,11 +9095,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Environment/hd_env_UNI_029_SmallStones/normal/lod0/hd_env_UNI_029_SmallStones_03.model</value>
+						<value>content/Environment/hd_env_UNI_029_SmallStones/normal/lod0/hd_env_UNI_029_SmallStones_03_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>480</value>
 					</property>
 				</config>
 			</component>
@@ -8920,11 +9118,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Environment/hd_env_UNI_029_SmallStones/normal/lod0/hd_env_UNI_029_SmallStones_03.model</value>
+						<value>content/Environment/hd_env_UNI_029_SmallStones/normal/lod0/hd_env_UNI_029_SmallStones_03_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>480</value>
 					</property>
 				</config>
 			</component>
@@ -8935,11 +9141,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Environment/hd_env_UNI_029_SmallStones/normal/lod0/hd_env_UNI_029_SmallStones_03.model</value>
+						<value>content/Environment/hd_env_UNI_029_SmallStones/normal/lod0/hd_env_UNI_029_SmallStones_03_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>480</value>
 					</property>
 				</config>
 			</component>
@@ -8950,11 +9164,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Environment/hd_env_UNI_029_SmallStones/normal/lod0/hd_env_UNI_029_SmallStones_03.model</value>
+						<value>content/Environment/hd_env_UNI_029_SmallStones/normal/lod0/hd_env_UNI_029_SmallStones_03_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>480</value>
 					</property>
 				</config>
 			</component>
@@ -8965,11 +9187,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Environment/hd_env_UNI_029_SmallStones/normal/lod0/hd_env_UNI_029_SmallStones_03.model</value>
+						<value>content/Environment/hd_env_UNI_029_SmallStones/normal/lod0/hd_env_UNI_029_SmallStones_03_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>480</value>
 					</property>
 				</config>
 			</component>
@@ -8986,6 +9216,14 @@
 						<name>Cast Shadows</name>
 						<value>0</value>
 					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>480</value>
+					</property>
 				</config>
 			</component>
 			<component>
@@ -8999,6 +9237,14 @@
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
 						<value>0</value>
 					</property>
 				</config>
@@ -9016,6 +9262,14 @@
 						<name>Cast Shadows</name>
 						<value>0</value>
 					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
+					</property>
 				</config>
 			</component>
 			<component>
@@ -9029,6 +9283,14 @@
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
 						<value>0</value>
 					</property>
 				</config>

@@ -5,7 +5,6 @@ from frameworks.state_machine import StateFlags, StateIdsObserver
 from frameworks.wulf import WindowLayer
 from gui.Scaleform.daapi.settings.views import VIEW_ALIAS
 from gui.Scaleform.framework.entities.View import ViewKey
-from gui.Scaleform.lobby_entry import getLobbyStateMachine
 from gui.impl import backport
 from gui.impl.gen import R
 from gui.lobby_state_machine.states import LobbyStateDescription, SFViewLobbyState, SubScopeSubLayerState
@@ -59,6 +58,7 @@ class PetStorageObserver(StateIdsObserver):
 class PetStorageState(SFViewLobbyState, EventsHandler, SubhangarStateGroupConfigProvider):
     STATE_ID = VIEW_ALIAS.PET_STORAGE
     VIEW_KEY = ViewKey(VIEW_ALIAS.PET_STORAGE)
+    __petController = dependency.descriptor(IPetSystemController)
     __hangarSpace = dependency.descriptor(IHangarSpace)
 
     def __init__(self, flags=StateFlags.UNDEFINED):
@@ -77,9 +77,7 @@ class PetStorageState(SFViewLobbyState, EventsHandler, SubhangarStateGroupConfig
 
     @classmethod
     def goTo(cls, moveInstantly=True):
-        from gui.impl.lobby.hangar.states import HangarState
-        lsm = getLobbyStateMachine()
-        inHangar = lsm.getStateByCls(HangarState).isEntered()
+        inHangar = cls.__petController.canInteractInHangar
         super(PetStorageState, cls).goTo(inHangar=inHangar)
 
     def _onEntered(self, event):

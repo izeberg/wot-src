@@ -6,7 +6,7 @@ from visual_script.slot_types import SLOT_TYPE
 from visual_script import ASPECT
 from visual_script.block import Block, Meta
 from visual_script.dependency import dependencyImporter
-Event, dependency, game_control, event_dispatcher, lobby_entry, ps_states, state_machine, GenericComponents, guiShared, newYearSkeletons = dependencyImporter('Event', 'helpers.dependency', 'skeletons.gui.game_control', 'gui.shared.event_dispatcher', 'gui.Scaleform.lobby_entry', 'gui.impl.lobby.pet_system.states', 'frameworks.state_machine', 'GenericComponents', 'gui.shared', 'skeletons.new_year')
+Event, dependency, game_control, event_dispatcher, lobby_entry, ps_states, state_machine, GenericComponents, guiShared = dependencyImporter('Event', 'helpers.dependency', 'skeletons.gui.game_control', 'gui.shared.event_dispatcher', 'gui.Scaleform.lobby_entry', 'gui.impl.lobby.pet_system.states', 'frameworks.state_machine', 'GenericComponents', 'gui.shared')
 
 class PetSystemMeta(Meta):
 
@@ -225,7 +225,6 @@ class GetStorageStaticTrigger(Block, PetSystemMeta):
 
 class OnStorageStaticTriggerChanged(Block, PetSystemMeta):
     __petController = dependency.descriptor(skeletons.gui.pet_system.IPetSystemController)
-    __friendService = dependency.descriptor(newYearSkeletons.IFriendServiceController)
 
     def __init__(self, agent):
         super(OnStorageStaticTriggerChanged, self).__init__(agent)
@@ -235,20 +234,13 @@ class OnStorageStaticTriggerChanged(Block, PetSystemMeta):
 
     def onStartScript(self):
         self.__petController.storageProxy.onUpdateStorageStaticTrigger += self._onUpdateStorageStaticTrigger
-        self.__friendService.onFriendHangarEnter += self._onFriendHangarUpdated
-        self.__friendService.onFriendHangarExit += self._onFriendHangarUpdated
 
     def onFinishScript(self):
         self.__petController.storageProxy.onUpdateStorageStaticTrigger -= self._onUpdateStorageStaticTrigger
-        self.__friendService.onFriendHangarEnter -= self._onFriendHangarUpdated
-        self.__friendService.onFriendHangarExit -= self._onFriendHangarUpdated
 
     def _onUpdateStorageStaticTrigger(self, staticTrigger):
         self._staticTrigger.setValue(staticTrigger)
         self._out.call()
-
-    def _onFriendHangarUpdated(self, *_):
-        self._onUpdateStorageStaticTrigger(self.__petController.storageProxy.storageStaticTrigger)
 
 
 class GetPetStaticTrigger(Block, PetSystemMeta):

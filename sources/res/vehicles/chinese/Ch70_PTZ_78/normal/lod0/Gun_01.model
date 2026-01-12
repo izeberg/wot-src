@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/chinese/Ch70_PTZ_78/normal/lod0/Gun_01</nodefullVisual>
+	<parent>vehicles/chinese/Ch70_PTZ_78/normal/lod1/Gun_01</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-0.686245 -0.276790 -0.229092</min>
+		<max>0.275274 0.406028 5.892781</max>
+	</visibilityBox>
+</root>

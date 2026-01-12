@@ -6,11 +6,12 @@ from gui.impl.gen.view_models.common.missions.daily_quest_model import DailyQues
 from gui.impl.gen.view_models.common.missions.weekly_quest_model import WeeklyQuestModel
 from gui.impl.gen.view_models.common.missions.event_model import EventStatus
 from gui.impl.gen.view_models.common.missions.quest_model import QuestModel
+from gui.impl.lobby.missions.missions_helpers import getDailyEpicQuestToken
 from gui.server_events.awards_formatters import AWARDS_SIZES
-from gui.server_events.events_helpers import isPremium, isDailyQuest, isWeeklyQuest
+from gui.server_events.events_helpers import isPremium, isDailyQuest, isWeeklyQuest, isDailyEpicReward
 from gui.server_events.formatters import DECORATION_SIZES
 from gui.shared.missions.packers.bonus import getDefaultBonusPacker, packMissionsBonusModelAndTooltipData
-from gui.shared.missions.packers.conditions import BonusConditionPacker
+from gui.shared.missions.packers.conditions import BonusConditionPacker, CONDITION_GROUP_AND, getDefaultPreformattedConditionModel
 from gui.shared.missions.packers.conditions import PostBattleConditionPacker
 from helpers import dependency
 from skeletons.gui.server_events import IEventsCache
@@ -36,8 +37,8 @@ class EventUIDataPacker(object):
 
     def _packEvent(self, model):
         with model.transaction() as (ts):
-            ts.setId(self._event.getID())
-            ts.setGroupId(self._event.getGroupID())
+            ts.setId(str(self._event.getID()))
+            ts.setGroupId(str(self._event.getGroupID()))
             ts.setType(self._event.getType())
             ts.setTitle(self._event.getUserName())
             ts.setDescription(self._event.getDescription())
@@ -95,11 +96,10 @@ class BattleQuestUIDataPacker(EventUIDataPacker):
         bonusConditionPacker = BonusConditionPacker()
         bonusConditionPacker.packWithPostBattleCondCheck(self._event, model.bonusCondition, bool(model.postBattleCondition.getItems()))
 
-    @staticmethod
-    def _packDefaultConds(model):
+    def _packDefaultConds(self, model):
         if not model.bonusCondition.getItems() and not model.postBattleCondition.getItems():
             postBattleContitionPacker = PostBattleConditionPacker()
-            postBattleContitionPacker.packDefaultCondition(model.postBattleCondition)
+            postBattleContitionPacker.packDefaultCondition(self._event, model.postBattleCondition)
 
 
 class TokenUIDataPacker(EventUIDataPacker):
@@ -120,7 +120,6 @@ class PrivateMissionUIDataPacker(EventUIDataPacker):
 
 class DailyQuestUIDataPacker(BattleQuestUIDataPacker):
     eventsCache = dependency.descriptor(IEventsCache)
-    _NY_BONUSES_ORDER = ('battleToken', 'entitlements')
 
     def pack(self, model=None):
         if model is not None and not isinstance(model, DailyQuestModel):
@@ -131,21 +130,6 @@ class DailyQuestUIDataPacker(BattleQuestUIDataPacker):
             self._packModel(model)
             self.__resolveQuestIcon(model)
             return model
-
-    def _packModel(self, model):
-        super(DailyQuestUIDataPacker, self)._packModel(model)
-        model.setIsLockedForReroll(self._event.getData().get('meta', {}).get('locked', False))
-
-    def _packBonuses(self, model):
-        self._tooltipData = {}
-        packer = getDefaultBonusPacker()
-        bonuses = sorted(self._event.getBonuses(), key=self.__keySortOrder)
-        packQuestBonusModelAndTooltipData(packer, model.getBonuses(), self._event, self._tooltipData, bonuses)
-
-    def __keySortOrder(self, bonus):
-        if bonus.getName() in self._NY_BONUSES_ORDER:
-            return self._NY_BONUSES_ORDER.index(bonus.getName())
-        return len(self._NY_BONUSES_ORDER)
 
     def __resolveQuestIcon(self, model):
         iconId = self._event.getIconID()
@@ -166,6 +150,27 @@ class DailyQuestUIDataPacker(BattleQuestUIDataPacker):
         return
 
 
+class DailyEpicQuestUIDataPacker(TokenUIDataPacker):
+    eventsCache = dependency.descriptor(IEventsCache)
+
+    def _packModel(self, model):
+        self._packEvent(model)
+        self._packBonusConds(model)
+
+    def _packBonusConds(self, model):
+        dqToken = getDailyEpicQuestToken(self._event)
+        if dqToken is None:
+            return
+        else:
+            model.postBattleCondition.setConditionType(CONDITION_GROUP_AND)
+            items = model.postBattleCondition.getItems()
+            conditionModel = getDefaultPreformattedConditionModel()
+            conditionModel.setDescrData(self._event.getDescription())
+            conditionModel.setTitleData(self._event.getUserName())
+            items.addViewModel(conditionModel)
+            return
+
+
 def packQuestBonusModel(quest, packer, array, sort=None):
     bonuses = quest.getBonuses()
     if sort is not None and callable(sort):
@@ -178,6 +183,18 @@ def packQuestBonusModel(quest, packer, array, sort=None):
                 array.addViewModel(item)
 
     return
+
+
+def additionalRewardsBonusPacker(quest, packer, sort=None):
+    filteredBonus = []
+    bonuses = quest.getBonuses()
+    if sort is not None and callable(sort):
+        bonuses = sorted(bonuses, cmp=sort)
+    for bonus in bonuses:
+        if bonus.isShowInGUI():
+            filteredBonus.extend(packer.pack(bonus))
+
+    return filteredBonus
 
 
 def packQuestBonusModelAndTooltipData(packer, array, quest, tooltipData=None, questBonuses=None):
@@ -205,9 +222,11 @@ class WeeklyQuestUIDataPacker(BattleQuestUIDataPacker):
 
 
 def getEventUIDataPacker(event):
-    if event.getType() == constants.EVENT_TYPE.TOKEN_QUEST:
-        return TokenUIDataPacker(event)
+    if isDailyEpicReward(event.getID()):
+        return DailyEpicQuestUIDataPacker(event)
     else:
+        if event.getType() == constants.EVENT_TYPE.TOKEN_QUEST:
+            return TokenUIDataPacker(event)
         if event.getType() == constants.EVENT_TYPE.PERSONAL_QUEST:
             return PrivateMissionUIDataPacker(event)
         if isPremium(event.getID()) or isDailyQuest(event.getID()):

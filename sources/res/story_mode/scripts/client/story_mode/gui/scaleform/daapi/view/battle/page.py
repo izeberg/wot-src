@@ -12,7 +12,6 @@ from helpers import dependency
 from shared_utils import CONST_CONTAINER
 from skeletons.gameplay import PlayerEventID
 from story_mode.gui.scaleform.daapi.view.battle.page_base import StoryModeBattlePageBase, STORY_MODE_EXTERNAL_COMPONENTS
-from story_mode.gui.scaleform.genConsts.STORY_MODE_BATTLE_VIEW_ALIASES import STORY_MODE_BATTLE_VIEW_ALIASES
 from story_mode.skeletons.story_mode_controller import IStoryModeController
 from story_mode_common.story_mode_constants import LOGGER_NAME
 _logger = getLogger(LOGGER_NAME)
@@ -26,8 +25,7 @@ ONBOARDING_CONFIG = ComponentsConfig(config=(
   BATTLE_CTRL_ID.ARENA_PERIOD,
   (
    BATTLE_VIEW_ALIASES.PREBATTLE_TIMER,
-   DynamicAliases.PREBATTLE_TIMER_SOUND_PLAYER,
-   STORY_MODE_BATTLE_VIEW_ALIASES.STORY_MODE_TIMER)),
+   DynamicAliases.PREBATTLE_TIMER_SOUND_PLAYER)),
  (
   BATTLE_CTRL_ID.MAPS, (BATTLE_VIEW_ALIASES.MINIMAP,)),
  (

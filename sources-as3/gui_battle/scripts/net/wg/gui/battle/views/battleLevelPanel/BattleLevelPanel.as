@@ -145,21 +145,24 @@ package net.wg.gui.battle.views.battleLevelPanel
          this.progressDeltaAnimation.reset();
          this.experienceDiffAnimation.reset();
          this.newLvlTextAnimation.reset();
+         this.progressDeltaAnimation.visible = true;
+         this.experienceDiffAnimation.visible = true;
+         this.newLvlTextAnimation.visible = true;
          this.progressBar.value = Values.ZERO;
          this.progressBar.visible = true;
-         this.newLvlTextAnimation.visible = true;
          this.midTF.visible = true;
          this.rightTF.visible = true;
          this.leftTF.visible = true;
-         this.progressBar.visible = true;
-         this.progressDeltaAnimation.visible = true;
-         this.experienceDiffAnimation.visible = true;
          this.maxLvlTF.visible = false;
          this._currentExperience.value = this._currentExperience.target = Values.ZERO;
       }
       
       public function as_setAnimation(param1:Boolean) : void
       {
+         if(this._useAnimatedTransitions == param1)
+         {
+            return;
+         }
          this._useAnimatedTransitions = param1;
          if(!this._useAnimatedTransitions)
          {
@@ -177,6 +180,11 @@ package net.wg.gui.battle.views.battleLevelPanel
                this._soundOnEventInProgress = false;
             }
          }
+      }
+      
+      private function get isAnimInAction() : Boolean
+      {
+         return this.progressDeltaAnimation.isActive || this.experienceDiffAnimation.isActive || this.newLvlTextAnimation.isActive;
       }
       
       public function as_setExperience(param1:int, param2:String, param3:int, param4:int, param5:Boolean) : void
@@ -199,6 +207,8 @@ package net.wg.gui.battle.views.battleLevelPanel
             {
                param4 = 0;
             }
+            this.removeFromData(BattleLevelPanelData.SET_EXPERIENCE_STATE);
+            this._currentExperience.value = param1;
             this.midTF.label = param1 + param2;
             this.midTF.fadeIn(true);
             this.progressBar.visible = true;
@@ -218,25 +228,49 @@ package net.wg.gui.battle.views.battleLevelPanel
          }
       }
       
-      public function as_setLevel(param1:String, param2:String, param3:String) : void
+      public function as_setLevel(param1:String, param2:String, param3:int, param4:String) : void
       {
-         var _loc4_:BattleLevelPanelData = null;
+         var _loc6_:BattleLevelPanelData = null;
+         var _loc5_:String = param3 + param4;
          if(this._isInitiated && this._useAnimatedTransitions)
          {
-            _loc4_ = new BattleLevelPanelData(BattleLevelPanelData.SET_LEVEL_STATE);
-            _loc4_.setLevel(param1,param2,param3);
-            this._data.push(_loc4_);
+            _loc6_ = new BattleLevelPanelData(BattleLevelPanelData.SET_LEVEL_STATE);
+            _loc6_.setLevel(param1,param2,_loc5_);
+            this._data.push(_loc6_);
             this.processData();
          }
          else
          {
+            this.removeFromData(BattleLevelPanelData.SET_LEVEL_STATE);
             this.leftTF.label = param1;
             this.leftTF.fadeIn(true);
             this.rightTF.label = param2;
             this.rightTF.fadeIn(true);
-            this.midTF.label = param3;
+            this._currentExperience.value = param3;
+            this.midTF.label = _loc5_;
             this.midTF.fadeIn(true);
             this._isInitiated = true;
+         }
+      }
+      
+      private function removeFromData(param1:uint) : void
+      {
+         var _loc2_:Boolean = false;
+         var _loc3_:int = 0;
+         var _loc4_:int = 0;
+         if(this._data)
+         {
+            _loc2_ = param1 == BattleLevelPanelData.SET_LEVEL_STATE;
+            _loc3_ = this._data.length;
+            _loc4_ = _loc3_ - 1;
+            while(_loc4_ >= 0)
+            {
+               if(this._data[_loc4_].state == param1 && (!_loc2_ || _loc2_ && StringUtils.isEmpty(this._data[_loc4_].currentLevel)))
+               {
+                  this._data.splice(_loc4_,1);
+               }
+               _loc4_--;
+            }
          }
       }
       
@@ -292,8 +326,7 @@ package net.wg.gui.battle.views.battleLevelPanel
       
       private function processData() : void
       {
-         var _loc1_:Boolean = this.progressDeltaAnimation.isActive || this.experienceDiffAnimation.isActive || this.newLvlTextAnimation.isActive;
-         if(_loc1_)
+         if(this.isAnimInAction)
          {
             return;
          }
@@ -302,8 +335,8 @@ package net.wg.gui.battle.views.battleLevelPanel
          {
             return;
          }
-         var _loc2_:uint = this._currentData.state;
-         if(_loc2_ == BattleLevelPanelData.SET_EXPERIENCE_STATE)
+         var _loc1_:uint = this._currentData.state;
+         if(_loc1_ == BattleLevelPanelData.SET_EXPERIENCE_STATE)
          {
             if(this._currentData.percent > Values.ZERO)
             {
@@ -314,7 +347,7 @@ package net.wg.gui.battle.views.battleLevelPanel
                this.processData();
             }
          }
-         else if(_loc2_ == BattleLevelPanelData.SET_LEVEL_STATE)
+         else if(_loc1_ == BattleLevelPanelData.SET_LEVEL_STATE)
          {
             if(StringUtils.isNotEmpty(this._currentData.currentLevel))
             {
@@ -325,7 +358,7 @@ package net.wg.gui.battle.views.battleLevelPanel
                this.updateLevelText();
             }
          }
-         else if(_loc2_ == BattleLevelPanelData.SET_IS_MAX_LEVEL_STATE)
+         else if(_loc1_ == BattleLevelPanelData.SET_IS_MAX_LEVEL_STATE)
          {
             this.playProgressDeltaFadeOutAnimation();
          }

@@ -1,5 +1,5 @@
 import logging, BigWorld, SoundGroups, WWISE
-from constants import ATTACK_REASON
+from constants import ATTACK_REASON, DIRECT_DETECTION_TYPE
 from gui.Scaleform.daapi.view.common.battle_royale.br_helpers import getEquipmentById, getSmokeDataByPredicate
 from gui.battle_control.battle_constants import PLAYER_GUI_PROPS
 from gui.battle_control.controllers.period_ctrl import IAbstractPeriodView
@@ -23,6 +23,7 @@ from BattleFeedbackCommon import BATTLE_EVENT_TYPE
 from Math import Matrix
 from battle_royale.gui.constants import BattleRoyaleEquipments, BattleRoyaleComponents
 from battle_royale.gui.shared.events import AirDropEvent
+from PlayerEvents import g_playerEvents
 from battle_royale.gui.battle_control.controllers.progression_ctrl import IProgressionListener
 from battle_royale.gui.battle_control.controllers.spawn_ctrl import ISpawnListener
 from battle_royale.gui.battle_control.controllers.radar_ctrl import IRadarListener
@@ -566,6 +567,7 @@ class StatusSoundPlayer(VehicleStateSoundPlayer, CallbackDelayer):
         ctrl.onVehicleFeedbackReceived += self.__onVehicleFeedbackReceived
         ctrl.onMinimapVehicleAdded += self.__onVehicleEnterWorld
         ctrl.onMinimapVehicleRemoved += self.__onVehicleLeaveWorld
+        g_playerEvents.onObservedByEnemy += self.__onObservedByEnemy
         self.__updateStatus()
 
     def destroy(self):
@@ -574,6 +576,7 @@ class StatusSoundPlayer(VehicleStateSoundPlayer, CallbackDelayer):
             ctrl.onVehicleFeedbackReceived -= self.__onVehicleFeedbackReceived
             ctrl.onMinimapVehicleAdded -= self.__onVehicleEnterWorld
             ctrl.onMinimapVehicleRemoved -= self.__onVehicleLeaveWorld
+        g_playerEvents.onObservedByEnemy -= self.__onObservedByEnemy
         self.__seenEnemies.clear()
         VehicleStateSoundPlayer.destroy(self)
         CallbackDelayer.destroy(self)
@@ -588,13 +591,14 @@ class StatusSoundPlayer(VehicleStateSoundPlayer, CallbackDelayer):
         self.__seenEnemies.discard(vId)
         self.__updateStatus()
 
-    def _onVehicleStateUpdated(self, state, value):
-        if state == VEHICLE_VIEW_STATE.OBSERVED_BY_ENEMY:
-            self.__isObservedByEnemy = value.get('isObserved', False)
+    def __onObservedByEnemy(self, detectionType, isObserved):
+        if detectionType == DIRECT_DETECTION_TYPE.UNSPOTTED:
+            return
+        self.__isObservedByEnemy = isObserved
+        if isObserved:
             self.__updateStatus()
-            if self.__isObservedByEnemy:
-                self.stopCallback(self.__onObservationDone)
-                self.delayCallback(self.__ON_OBSERVED_DURATION, self.__onObservationDone)
+            self.stopCallback(self.__onObservationDone)
+            self.delayCallback(self.__ON_OBSERVED_DURATION, self.__onObservationDone)
 
     def __onObservationDone(self):
         self.__isObservedByEnemy = False

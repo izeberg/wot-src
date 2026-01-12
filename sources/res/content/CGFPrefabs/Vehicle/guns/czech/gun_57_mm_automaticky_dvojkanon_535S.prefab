@@ -4,77 +4,82 @@
 	<GameObjects>
 		<GameObject>
 			<name>gun_57_mm_automaticky_dvojkanon_535S</name>
-			<UUID>fc03df65-dd1c-46bb-8f3c-f824dd1c2002</UUID>
+			<UUID>e936894e-cb93-41de-abb4-a3e3b6e61248</UUID>
 			<flags>0</flags>
 		</GameObject>
 		<GameObject>
+			<name>normal</name>
+			<UUID>e1bbfa0e-bc5e-3447-b880-73c25c1ca155</UUID>
+			<flags>8</flags>
+		</GameObject>
+		<GameObject>
 			<name>HP_gunFire_L</name>
-			<UUID>2feac2e9-ab51-4954-88ff-00934c1a1329</UUID>
+			<UUID>e4fb74b6-5ba8-309a-ac12-fecf75ac4cb4</UUID>
 			<flags>0</flags>
 		</GameObject>
 		<GameObject>
 			<name>HP_gunFire_R</name>
-			<UUID>f3eab2c0-dab0-4aad-b404-f3242993d173</UUID>
+			<UUID>e3da1ef4-82e2-3771-b9f9-ca38cc4f26b6</UUID>
 			<flags>0</flags>
 		</GameObject>
 		<GameObject>
 			<name>G_L</name>
-			<UUID>ad11d4fb-8b91-46aa-8dfa-71024c12ff73</UUID>
+			<UUID>7d6f1398-23cb-3cb0-bcf5-78e90d969edc</UUID>
 			<flags>0</flags>
 		</GameObject>
 		<GameObject>
 			<name>G_R</name>
-			<UUID>53131477-605b-3083-b2dc-7a40b11743eb</UUID>
+			<UUID>9e5efbbb-1a3a-3ccc-bb25-4c3eb12356c0</UUID>
 			<flags>0</flags>
 		</GameObject>
 		<GameObject>
 			<name>G</name>
-			<UUID>4e9cfcf1-8f5b-4020-88fd-8842adfd1feb</UUID>
+			<UUID>a6eb8e84-dd39-37da-b457-8f0141ee4d98</UUID>
 			<flags>0</flags>
 		</GameObject>
 		<GameObject>
 			<name>HP_gunFire</name>
-			<UUID>e57dc4b2-cf14-42a4-9cb0-f938d0fba88f</UUID>
+			<UUID>34b60ad3-fecd-3576-951a-602087a1144b</UUID>
 			<flags>0</flags>
 		</GameObject>
 		<GameObject>
 			<name>impulse</name>
-			<UUID>4585d3c8-239d-3a7c-9577-833fa41de525</UUID>
+			<UUID>c4aeec21-ca37-37ef-bb85-7ef96a459b12</UUID>
 			<flags>0</flags>
 		</GameObject>
 		<GameObject>
 			<name>single_shot_impulse</name>
-			<UUID>a4b0aad5-32be-344a-9c8d-b4d788f8b847</UUID>
+			<UUID>54155168-71e0-39e1-936f-a7ec596581c3</UUID>
 			<flags>8</flags>
 		</GameObject>
 		<GameObject>
 			<name>continuous_burst_impulse</name>
-			<UUID>0ff9b461-7669-35e4-8ace-66c3443bb08c</UUID>
+			<UUID>e520a9ac-55ed-3c7e-a5b1-2b56a70bec7d</UUID>
 			<flags>8</flags>
 		</GameObject>
 		<GameObject>
 			<name>sound_medium_ac.prefab</name>
-			<UUID>35d48433-861c-4ed0-ba0e-b8dd7ca4f758</UUID>
+			<UUID>fa2d5515-cb6f-3d79-b339-7f45c6fba0fa</UUID>
 			<flags>0</flags>
 		</GameObject>
 		<GameObject>
 			<name>light_medium_ac.prefab</name>
-			<UUID>23b8b03c-5505-49c9-bd5b-6d553e78d42d</UUID>
+			<UUID>ce62545a-fc61-3bc3-b1a8-39bb238bdd6a</UUID>
 			<flags>0</flags>
 		</GameObject>
 		<GameObject>
 			<name>particle_medium_mb_ac.prefab</name>
-			<UUID>11687a0b-2e88-44bf-8a8d-534f15fb9afd</UUID>
+			<UUID>e4f22916-9087-39be-8706-65f6e871c30d</UUID>
 			<flags>0</flags>
 		</GameObject>
 		<GameObject>
 			<name>particle_medium_mb_ac.prefab</name>
-			<UUID>43d6380c-54f7-4626-a214-e975c5e2bdc5</UUID>
+			<UUID>3994a048-a800-3160-a0fd-3f3ab5303849</UUID>
 			<flags>0</flags>
 		</GameObject>
 		<GameObject>
 			<name>groundwave_medium_mb_ac.prefab</name>
-			<UUID>82e353a7-0007-4f14-81f8-7ad0c8b63fc4</UUID>
+			<UUID>b62efffb-2fdf-3489-916d-bd367cc4b308</UUID>
 			<flags>0</flags>
 		</GameObject>
 	</GameObjects>
@@ -83,142 +88,152 @@
 			<type>Hierarchy</type>
 			<version>2</version>
 			<component>
-				<UUID>2feac2e9-ab51-4954-88ff-00934c1a1329</UUID>
+				<UUID>e1bbfa0e-bc5e-3447-b880-73c25c1ca155</UUID>
 				<flags>35</flags>
 				<config>
 					<property>
 						<name>Parent</name>
-						<link>ad11d4fb-8b91-46aa-8dfa-71024c12ff73</link>
+						<link>e936894e-cb93-41de-abb4-a3e3b6e61248</link>
 					</property>
 				</config>
 			</component>
 			<component>
-				<UUID>f3eab2c0-dab0-4aad-b404-f3242993d173</UUID>
+				<UUID>e4fb74b6-5ba8-309a-ac12-fecf75ac4cb4</UUID>
 				<flags>35</flags>
 				<config>
 					<property>
 						<name>Parent</name>
-						<link>53131477-605b-3083-b2dc-7a40b11743eb</link>
+						<link>7d6f1398-23cb-3cb0-bcf5-78e90d969edc</link>
 					</property>
 				</config>
 			</component>
 			<component>
-				<UUID>ad11d4fb-8b91-46aa-8dfa-71024c12ff73</UUID>
+				<UUID>e3da1ef4-82e2-3771-b9f9-ca38cc4f26b6</UUID>
 				<flags>35</flags>
 				<config>
 					<property>
 						<name>Parent</name>
-						<link>4e9cfcf1-8f5b-4020-88fd-8842adfd1feb</link>
+						<link>9e5efbbb-1a3a-3ccc-bb25-4c3eb12356c0</link>
 					</property>
 				</config>
 			</component>
 			<component>
-				<UUID>53131477-605b-3083-b2dc-7a40b11743eb</UUID>
+				<UUID>7d6f1398-23cb-3cb0-bcf5-78e90d969edc</UUID>
 				<flags>35</flags>
 				<config>
 					<property>
 						<name>Parent</name>
-						<link>4e9cfcf1-8f5b-4020-88fd-8842adfd1feb</link>
+						<link>a6eb8e84-dd39-37da-b457-8f0141ee4d98</link>
 					</property>
 				</config>
 			</component>
 			<component>
-				<UUID>4e9cfcf1-8f5b-4020-88fd-8842adfd1feb</UUID>
+				<UUID>9e5efbbb-1a3a-3ccc-bb25-4c3eb12356c0</UUID>
 				<flags>35</flags>
 				<config>
 					<property>
 						<name>Parent</name>
-						<link>fc03df65-dd1c-46bb-8f3c-f824dd1c2002</link>
+						<link>a6eb8e84-dd39-37da-b457-8f0141ee4d98</link>
 					</property>
 				</config>
 			</component>
 			<component>
-				<UUID>e57dc4b2-cf14-42a4-9cb0-f938d0fba88f</UUID>
+				<UUID>a6eb8e84-dd39-37da-b457-8f0141ee4d98</UUID>
 				<flags>35</flags>
 				<config>
 					<property>
 						<name>Parent</name>
-						<link>4e9cfcf1-8f5b-4020-88fd-8842adfd1feb</link>
+						<link>e1bbfa0e-bc5e-3447-b880-73c25c1ca155</link>
 					</property>
 				</config>
 			</component>
 			<component>
-				<UUID>4585d3c8-239d-3a7c-9577-833fa41de525</UUID>
+				<UUID>34b60ad3-fecd-3576-951a-602087a1144b</UUID>
 				<flags>35</flags>
 				<config>
 					<property>
 						<name>Parent</name>
-						<link>fc03df65-dd1c-46bb-8f3c-f824dd1c2002</link>
+						<link>a6eb8e84-dd39-37da-b457-8f0141ee4d98</link>
 					</property>
 				</config>
 			</component>
 			<component>
-				<UUID>a4b0aad5-32be-344a-9c8d-b4d788f8b847</UUID>
+				<UUID>c4aeec21-ca37-37ef-bb85-7ef96a459b12</UUID>
 				<flags>35</flags>
 				<config>
 					<property>
 						<name>Parent</name>
-						<link>4585d3c8-239d-3a7c-9577-833fa41de525</link>
+						<link>e1bbfa0e-bc5e-3447-b880-73c25c1ca155</link>
 					</property>
 				</config>
 			</component>
 			<component>
-				<UUID>0ff9b461-7669-35e4-8ace-66c3443bb08c</UUID>
+				<UUID>54155168-71e0-39e1-936f-a7ec596581c3</UUID>
 				<flags>35</flags>
 				<config>
 					<property>
 						<name>Parent</name>
-						<link>4585d3c8-239d-3a7c-9577-833fa41de525</link>
+						<link>c4aeec21-ca37-37ef-bb85-7ef96a459b12</link>
 					</property>
 				</config>
 			</component>
 			<component>
-				<UUID>35d48433-861c-4ed0-ba0e-b8dd7ca4f758</UUID>
+				<UUID>e520a9ac-55ed-3c7e-a5b1-2b56a70bec7d</UUID>
 				<flags>35</flags>
 				<config>
 					<property>
 						<name>Parent</name>
-						<link>e57dc4b2-cf14-42a4-9cb0-f938d0fba88f</link>
+						<link>c4aeec21-ca37-37ef-bb85-7ef96a459b12</link>
 					</property>
 				</config>
 			</component>
 			<component>
-				<UUID>23b8b03c-5505-49c9-bd5b-6d553e78d42d</UUID>
+				<UUID>fa2d5515-cb6f-3d79-b339-7f45c6fba0fa</UUID>
 				<flags>35</flags>
 				<config>
 					<property>
 						<name>Parent</name>
-						<link>e57dc4b2-cf14-42a4-9cb0-f938d0fba88f</link>
+						<link>34b60ad3-fecd-3576-951a-602087a1144b</link>
 					</property>
 				</config>
 			</component>
 			<component>
-				<UUID>11687a0b-2e88-44bf-8a8d-534f15fb9afd</UUID>
+				<UUID>ce62545a-fc61-3bc3-b1a8-39bb238bdd6a</UUID>
 				<flags>35</flags>
 				<config>
 					<property>
 						<name>Parent</name>
-						<link>2feac2e9-ab51-4954-88ff-00934c1a1329</link>
+						<link>34b60ad3-fecd-3576-951a-602087a1144b</link>
 					</property>
 				</config>
 			</component>
 			<component>
-				<UUID>43d6380c-54f7-4626-a214-e975c5e2bdc5</UUID>
+				<UUID>e4f22916-9087-39be-8706-65f6e871c30d</UUID>
 				<flags>35</flags>
 				<config>
 					<property>
 						<name>Parent</name>
-						<link>f3eab2c0-dab0-4aad-b404-f3242993d173</link>
+						<link>e4fb74b6-5ba8-309a-ac12-fecf75ac4cb4</link>
 					</property>
 				</config>
 			</component>
 			<component>
-				<UUID>82e353a7-0007-4f14-81f8-7ad0c8b63fc4</UUID>
+				<UUID>3994a048-a800-3160-a0fd-3f3ab5303849</UUID>
 				<flags>35</flags>
 				<config>
 					<property>
 						<name>Parent</name>
-						<link>e57dc4b2-cf14-42a4-9cb0-f938d0fba88f</link>
+						<link>e3da1ef4-82e2-3771-b9f9-ca38cc4f26b6</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>b62efffb-2fdf-3489-916d-bd367cc4b308</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>34b60ad3-fecd-3576-951a-602087a1144b</link>
 					</property>
 				</config>
 			</component>
@@ -227,7 +242,25 @@
 			<type>Transform</type>
 			<version>1</version>
 			<component>
-				<UUID>fc03df65-dd1c-46bb-8f3c-f824dd1c2002</UUID>
+				<UUID>e936894e-cb93-41de-abb4-a3e3b6e61248</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>e1bbfa0e-bc5e-3447-b880-73c25c1ca155</UUID>
 				<flags>3</flags>
 				<config>
 					<property>
@@ -245,7 +278,7 @@
 				</config>
 			</component>
 			<component>
-				<UUID>2feac2e9-ab51-4954-88ff-00934c1a1329</UUID>
+				<UUID>e4fb74b6-5ba8-309a-ac12-fecf75ac4cb4</UUID>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -263,7 +296,7 @@
 				</config>
 			</component>
 			<component>
-				<UUID>f3eab2c0-dab0-4aad-b404-f3242993d173</UUID>
+				<UUID>e3da1ef4-82e2-3771-b9f9-ca38cc4f26b6</UUID>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -281,7 +314,7 @@
 				</config>
 			</component>
 			<component>
-				<UUID>ad11d4fb-8b91-46aa-8dfa-71024c12ff73</UUID>
+				<UUID>7d6f1398-23cb-3cb0-bcf5-78e90d969edc</UUID>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -299,7 +332,7 @@
 				</config>
 			</component>
 			<component>
-				<UUID>53131477-605b-3083-b2dc-7a40b11743eb</UUID>
+				<UUID>9e5efbbb-1a3a-3ccc-bb25-4c3eb12356c0</UUID>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -317,7 +350,7 @@
 				</config>
 			</component>
 			<component>
-				<UUID>4e9cfcf1-8f5b-4020-88fd-8842adfd1feb</UUID>
+				<UUID>a6eb8e84-dd39-37da-b457-8f0141ee4d98</UUID>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -335,7 +368,7 @@
 				</config>
 			</component>
 			<component>
-				<UUID>e57dc4b2-cf14-42a4-9cb0-f938d0fba88f</UUID>
+				<UUID>34b60ad3-fecd-3576-951a-602087a1144b</UUID>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -353,7 +386,7 @@
 				</config>
 			</component>
 			<component>
-				<UUID>4585d3c8-239d-3a7c-9577-833fa41de525</UUID>
+				<UUID>c4aeec21-ca37-37ef-bb85-7ef96a459b12</UUID>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -371,7 +404,7 @@
 				</config>
 			</component>
 			<component>
-				<UUID>a4b0aad5-32be-344a-9c8d-b4d788f8b847</UUID>
+				<UUID>54155168-71e0-39e1-936f-a7ec596581c3</UUID>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -389,7 +422,7 @@
 				</config>
 			</component>
 			<component>
-				<UUID>0ff9b461-7669-35e4-8ace-66c3443bb08c</UUID>
+				<UUID>e520a9ac-55ed-3c7e-a5b1-2b56a70bec7d</UUID>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -407,7 +440,7 @@
 				</config>
 			</component>
 			<component>
-				<UUID>35d48433-861c-4ed0-ba0e-b8dd7ca4f758</UUID>
+				<UUID>fa2d5515-cb6f-3d79-b339-7f45c6fba0fa</UUID>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -425,7 +458,7 @@
 				</config>
 			</component>
 			<component>
-				<UUID>23b8b03c-5505-49c9-bd5b-6d553e78d42d</UUID>
+				<UUID>ce62545a-fc61-3bc3-b1a8-39bb238bdd6a</UUID>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -443,7 +476,7 @@
 				</config>
 			</component>
 			<component>
-				<UUID>11687a0b-2e88-44bf-8a8d-534f15fb9afd</UUID>
+				<UUID>e4f22916-9087-39be-8706-65f6e871c30d</UUID>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -461,7 +494,7 @@
 				</config>
 			</component>
 			<component>
-				<UUID>43d6380c-54f7-4626-a214-e975c5e2bdc5</UUID>
+				<UUID>3994a048-a800-3160-a0fd-3f3ab5303849</UUID>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -479,7 +512,7 @@
 				</config>
 			</component>
 			<component>
-				<UUID>82e353a7-0007-4f14-81f8-7ad0c8b63fc4</UUID>
+				<UUID>b62efffb-2fdf-3489-916d-bd367cc4b308</UUID>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -501,7 +534,7 @@
 			<type>BW::variables::VariableStorageComponent</type>
 			<version>1</version>
 			<component>
-				<UUID>fc03df65-dd1c-46bb-8f3c-f824dd1c2002</UUID>
+				<UUID>e1bbfa0e-bc5e-3447-b880-73c25c1ca155</UUID>
 				<flags>3</flags>
 				<config>
 					<property>
@@ -575,6 +608,224 @@
 											</property>
 										</object>
 									</item>
+									<item>
+										<object>
+											<property>
+												<name>var</name>
+												<object>
+													<property>
+														<name>name</name>
+														<value>vehicle/gun/intervalBetweenShots</value>
+													</property>
+												</object>
+											</property>
+											<property>
+												<name>initValExpr</name>
+												<object>
+													<property>
+														<name>expressionType</name>
+														<value>BW::variables::ConstantFloatExpression</value>
+													</property>
+													<property>
+														<name>expr</name>
+														<object>
+															<property>
+																<name>value</name>
+																<value>1</value>
+															</property>
+														</object>
+													</property>
+												</object>
+											</property>
+										</object>
+									</item>
+									<item>
+										<object>
+											<property>
+												<name>var</name>
+												<object>
+													<property>
+														<name>name</name>
+														<value>vehicle/gun/shotsPerSecond</value>
+													</property>
+												</object>
+											</property>
+											<property>
+												<name>initValExpr</name>
+												<object>
+													<property>
+														<name>expressionType</name>
+														<value>BW::variables::ConstantFloatExpression</value>
+													</property>
+													<property>
+														<name>expr</name>
+														<object>
+															<property>
+																<name>value</name>
+																<value>1</value>
+															</property>
+														</object>
+													</property>
+												</object>
+											</property>
+										</object>
+									</item>
+								</collection>
+							</property>
+						</object>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>7d6f1398-23cb-3cb0-bcf5-78e90d969edc</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>varInitialValues</name>
+						<object>
+							<property>
+								<name>entries</name>
+								<collection>
+									<item>
+										<object>
+											<property>
+												<name>var</name>
+												<object>
+													<property>
+														<name>name</name>
+														<value>vehicle/gun/intervalBetweenShots</value>
+													</property>
+												</object>
+											</property>
+											<property>
+												<name>initValExpr</name>
+												<object>
+													<property>
+														<name>expressionType</name>
+														<value>BW::variables::ConstantFloatExpression</value>
+													</property>
+													<property>
+														<name>expr</name>
+														<object>
+															<property>
+																<name>value</name>
+																<value>1</value>
+															</property>
+														</object>
+													</property>
+												</object>
+											</property>
+										</object>
+									</item>
+									<item>
+										<object>
+											<property>
+												<name>var</name>
+												<object>
+													<property>
+														<name>name</name>
+														<value>vehicle/gun/shotsPerSecond</value>
+													</property>
+												</object>
+											</property>
+											<property>
+												<name>initValExpr</name>
+												<object>
+													<property>
+														<name>expressionType</name>
+														<value>BW::variables::ConstantFloatExpression</value>
+													</property>
+													<property>
+														<name>expr</name>
+														<object>
+															<property>
+																<name>value</name>
+																<value>1</value>
+															</property>
+														</object>
+													</property>
+												</object>
+											</property>
+										</object>
+									</item>
+								</collection>
+							</property>
+						</object>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>9e5efbbb-1a3a-3ccc-bb25-4c3eb12356c0</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>varInitialValues</name>
+						<object>
+							<property>
+								<name>entries</name>
+								<collection>
+									<item>
+										<object>
+											<property>
+												<name>var</name>
+												<object>
+													<property>
+														<name>name</name>
+														<value>vehicle/gun/intervalBetweenShots</value>
+													</property>
+												</object>
+											</property>
+											<property>
+												<name>initValExpr</name>
+												<object>
+													<property>
+														<name>expressionType</name>
+														<value>BW::variables::ConstantFloatExpression</value>
+													</property>
+													<property>
+														<name>expr</name>
+														<object>
+															<property>
+																<name>value</name>
+																<value>1</value>
+															</property>
+														</object>
+													</property>
+												</object>
+											</property>
+										</object>
+									</item>
+									<item>
+										<object>
+											<property>
+												<name>var</name>
+												<object>
+													<property>
+														<name>name</name>
+														<value>vehicle/gun/shotsPerSecond</value>
+													</property>
+												</object>
+											</property>
+											<property>
+												<name>initValExpr</name>
+												<object>
+													<property>
+														<name>expressionType</name>
+														<value>BW::variables::ConstantFloatExpression</value>
+													</property>
+													<property>
+														<name>expr</name>
+														<object>
+															<property>
+																<name>value</name>
+																<value>1</value>
+															</property>
+														</object>
+													</property>
+												</object>
+											</property>
+										</object>
+									</item>
 								</collection>
 							</property>
 						</object>
@@ -583,10 +834,96 @@
 			</component>
 		</ComponentPool>
 		<ComponentPool>
+			<type>BW::variables::PropertyOnChangeCalculatorComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>e520a9ac-55ed-3c7e-a5b1-2b56a70bec7d</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>calcs</name>
+						<object>
+							<property>
+								<name>calculations</name>
+								<collection>
+									<item>
+										<object>
+											<property>
+												<name>dest</name>
+												<object>
+													<property>
+														<name>compType</name>
+														<value>BW::Gun::ShotImpulseContinuousModeComponent</value>
+													</property>
+													<property>
+														<name>propertyPath</name>
+														<value>shotsPerSec</value>
+													</property>
+												</object>
+											</property>
+											<property>
+												<name>calcExpr</name>
+												<object>
+													<property>
+														<name>expressionType</name>
+														<value>BW::variables::VariableExpression</value>
+													</property>
+													<property>
+														<name>expr</name>
+														<object>
+															<property>
+																<name>variable</name>
+																<object>
+																	<property>
+																		<name>name</name>
+																		<value>vehicle/gun/shotsPerSecond</value>
+																	</property>
+																</object>
+															</property>
+														</object>
+													</property>
+												</object>
+											</property>
+										</object>
+									</item>
+								</collection>
+							</property>
+						</object>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>BW::StateSwitcherComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>e936894e-cb93-41de-abb4-a3e3b6e61248</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>normal</name>
+						<link>e1bbfa0e-bc5e-3447-b880-73c25c1ca155</link>
+					</property>
+					<property>
+						<name>damaged</name>
+						<link>00000000-0000-0000-0000-000000000000</link>
+					</property>
+					<property>
+						<name>critical</name>
+						<link>00000000-0000-0000-0000-000000000000</link>
+					</property>
+					<property>
+						<name>previewState</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
 			<type>Prefab</type>
 			<version>2</version>
 			<component>
-				<UUID>35d48433-861c-4ed0-ba0e-b8dd7ca4f758</UUID>
+				<UUID>fa2d5515-cb6f-3d79-b339-7f45c6fba0fa</UUID>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -598,7 +935,7 @@
 				</config>
 			</component>
 			<component>
-				<UUID>23b8b03c-5505-49c9-bd5b-6d553e78d42d</UUID>
+				<UUID>ce62545a-fc61-3bc3-b1a8-39bb238bdd6a</UUID>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -610,7 +947,7 @@
 				</config>
 			</component>
 			<component>
-				<UUID>11687a0b-2e88-44bf-8a8d-534f15fb9afd</UUID>
+				<UUID>e4f22916-9087-39be-8706-65f6e871c30d</UUID>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -622,7 +959,7 @@
 				</config>
 			</component>
 			<component>
-				<UUID>43d6380c-54f7-4626-a214-e975c5e2bdc5</UUID>
+				<UUID>3994a048-a800-3160-a0fd-3f3ab5303849</UUID>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -634,7 +971,7 @@
 				</config>
 			</component>
 			<component>
-				<UUID>82e353a7-0007-4f14-81f8-7ad0c8b63fc4</UUID>
+				<UUID>b62efffb-2fdf-3489-916d-bd367cc4b308</UUID>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -647,78 +984,146 @@
 			</component>
 		</ComponentPool>
 		<ComponentPool>
-			<type>FireRate</type>
+			<type>cgf::network::ReplicableComponent</type>
 			<version>1</version>
 			<component>
-				<UUID>fc03df65-dd1c-46bb-8f3c-f824dd1c2002</UUID>
-				<flags>3</flags>
+				<UUID>e936894e-cb93-41de-abb4-a3e3b6e61248</UUID>
+				<flags>35</flags>
 			</component>
 			<component>
-				<UUID>ad11d4fb-8b91-46aa-8dfa-71024c12ff73</UUID>
-				<flags>3</flags>
+				<UUID>e1bbfa0e-bc5e-3447-b880-73c25c1ca155</UUID>
+				<flags>35</flags>
 			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>BW::Gun::ShotImpulseContinuousModeComponent</type>
+			<version>1</version>
 			<component>
-				<UUID>53131477-605b-3083-b2dc-7a40b11743eb</UUID>
+				<UUID>e520a9ac-55ed-3c7e-a5b1-2b56a70bec7d</UUID>
 				<flags>3</flags>
 			</component>
 		</ComponentPool>
 		<ComponentPool>
-			<type>GunEffect</type>
+			<type>BW::Gun::ShotImpulseComponent</type>
 			<version>1</version>
 			<component>
-				<UUID>a4b0aad5-32be-344a-9c8d-b4d788f8b847</UUID>
+				<UUID>54155168-71e0-39e1-936f-a7ec596581c3</UUID>
 				<flags>3</flags>
 				<config>
 					<property>
-						<name>effectMask</name>
-						<value>3</value>
+						<name>impulse</name>
+						<value>
+							0.1
+							<!--BW_String-->
+						</value>
 					</property>
 				</config>
 			</component>
 			<component>
-				<UUID>0ff9b461-7669-35e4-8ace-66c3443bb08c</UUID>
+				<UUID>e520a9ac-55ed-3c7e-a5b1-2b56a70bec7d</UUID>
 				<flags>3</flags>
 				<config>
 					<property>
-						<name>effectMask</name>
-						<value>8</value>
+						<name>impulse</name>
+						<value>
+							0.1
+							<!--BW_String-->
+						</value>
 					</property>
 				</config>
 			</component>
 		</ComponentPool>
 		<ComponentPool>
-			<type>GunEffectsCollector</type>
+			<type>BW::Gun::RecoilComponent</type>
 			<version>1</version>
 			<component>
-				<UUID>fc03df65-dd1c-46bb-8f3c-f824dd1c2002</UUID>
+				<UUID>7d6f1398-23cb-3cb0-bcf5-78e90d969edc</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>started</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>loop</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>amplitude</name>
+						<value>
+							0.2
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>backoffTime</name>
+						<value>
+							0.05
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>returnTime</name>
+						<value>
+							0.1
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>9e5efbbb-1a3a-3ccc-bb25-4c3eb12356c0</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>started</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>loop</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>amplitude</name>
+						<value>
+							0.2
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>backoffTime</name>
+						<value>
+							0.05
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>returnTime</name>
+						<value>
+							0.1
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>BW::Gun::SingleComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>7d6f1398-23cb-3cb0-bcf5-78e90d969edc</UUID>
 				<flags>3</flags>
 			</component>
 			<component>
-				<UUID>ad11d4fb-8b91-46aa-8dfa-71024c12ff73</UUID>
-				<flags>3</flags>
-			</component>
-			<component>
-				<UUID>53131477-605b-3083-b2dc-7a40b11743eb</UUID>
+				<UUID>9e5efbbb-1a3a-3ccc-bb25-4c3eb12356c0</UUID>
 				<flags>3</flags>
 			</component>
 		</ComponentPool>
 		<ComponentPool>
-			<type>Gun</type>
+			<type>BW::Gun::GroupComponent</type>
 			<version>1</version>
 			<component>
-				<UUID>ad11d4fb-8b91-46aa-8dfa-71024c12ff73</UUID>
-				<flags>3</flags>
-			</component>
-			<component>
-				<UUID>53131477-605b-3083-b2dc-7a40b11743eb</UUID>
-				<flags>3</flags>
-			</component>
-		</ComponentPool>
-		<ComponentPool>
-			<type>GunGroup</type>
-			<version>1</version>
-			<component>
-				<UUID>ad11d4fb-8b91-46aa-8dfa-71024c12ff73</UUID>
+				<UUID>7d6f1398-23cb-3cb0-bcf5-78e90d969edc</UUID>
 				<flags>3</flags>
 				<config>
 					<property>
@@ -728,7 +1133,7 @@
 				</config>
 			</component>
 			<component>
-				<UUID>53131477-605b-3083-b2dc-7a40b11743eb</UUID>
+				<UUID>9e5efbbb-1a3a-3ccc-bb25-4c3eb12356c0</UUID>
 				<flags>3</flags>
 				<config>
 					<property>
@@ -739,10 +1144,10 @@
 			</component>
 		</ComponentPool>
 		<ComponentPool>
-			<type>GunEffectsController</type>
+			<type>BW::Gun::InstallationComponent</type>
 			<version>1</version>
 			<component>
-				<UUID>fc03df65-dd1c-46bb-8f3c-f824dd1c2002</UUID>
+				<UUID>e1bbfa0e-bc5e-3447-b880-73c25c1ca155</UUID>
 				<flags>3</flags>
 				<config>
 					<property>
@@ -753,140 +1158,50 @@
 			</component>
 		</ComponentPool>
 		<ComponentPool>
-			<type>GunRecoil</type>
+			<type>BW::Gun::Effects::EffectComponent</type>
 			<version>1</version>
 			<component>
-				<UUID>ad11d4fb-8b91-46aa-8dfa-71024c12ff73</UUID>
+				<UUID>54155168-71e0-39e1-936f-a7ec596581c3</UUID>
 				<flags>3</flags>
 				<config>
 					<property>
-						<name>started</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>loop</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>amplitude</name>
-						<value>
-							0.2
-							<!--BW_String-->
-						</value>
-					</property>
-					<property>
-						<name>backoffTime</name>
-						<value>
-							0.05
-							<!--BW_String-->
-						</value>
-					</property>
-					<property>
-						<name>returnTime</name>
-						<value>
-							0.1
-							<!--BW_String-->
-						</value>
+						<name>effectMask</name>
+						<value>3</value>
 					</property>
 				</config>
 			</component>
 			<component>
-				<UUID>53131477-605b-3083-b2dc-7a40b11743eb</UUID>
+				<UUID>e520a9ac-55ed-3c7e-a5b1-2b56a70bec7d</UUID>
 				<flags>3</flags>
 				<config>
 					<property>
-						<name>started</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>loop</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>amplitude</name>
-						<value>
-							0.2
-							<!--BW_String-->
-						</value>
-					</property>
-					<property>
-						<name>backoffTime</name>
-						<value>
-							0.05
-							<!--BW_String-->
-						</value>
-					</property>
-					<property>
-						<name>returnTime</name>
-						<value>
-							0.1
-							<!--BW_String-->
-						</value>
+						<name>effectMask</name>
+						<value>8</value>
 					</property>
 				</config>
 			</component>
 		</ComponentPool>
 		<ComponentPool>
-			<type>ShotImpulseContinuousMode</type>
+			<type>BW::Gun::Effects::CollectorComponent</type>
 			<version>1</version>
 			<component>
-				<UUID>0ff9b461-7669-35e4-8ace-66c3443bb08c</UUID>
+				<UUID>e1bbfa0e-bc5e-3447-b880-73c25c1ca155</UUID>
 				<flags>3</flags>
 			</component>
-		</ComponentPool>
-		<ComponentPool>
-			<type>ShotImpulse</type>
-			<version>1</version>
 			<component>
-				<UUID>a4b0aad5-32be-344a-9c8d-b4d788f8b847</UUID>
+				<UUID>7d6f1398-23cb-3cb0-bcf5-78e90d969edc</UUID>
 				<flags>3</flags>
-				<config>
-					<property>
-						<name>impulse</name>
-						<value>
-							0.1
-							<!--BW_String-->
-						</value>
-					</property>
-				</config>
 			</component>
 			<component>
-				<UUID>0ff9b461-7669-35e4-8ace-66c3443bb08c</UUID>
+				<UUID>9e5efbbb-1a3a-3ccc-bb25-4c3eb12356c0</UUID>
 				<flags>3</flags>
-				<config>
-					<property>
-						<name>impulse</name>
-						<value>
-							0.1
-							<!--BW_String-->
-						</value>
-					</property>
-				</config>
-			</component>
-		</ComponentPool>
-		<ComponentPool>
-			<type>NodeFollower</type>
-			<version>1</version>
-			<component>
-				<UUID>fc03df65-dd1c-46bb-8f3c-f824dd1c2002</UUID>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>NodeName</name>
-						<value>Gun</value>
-					</property>
-					<property>
-						<name>modelLink</name>
-						<link>00000000-0000-0000-0000-000000000001</link>
-					</property>
-				</config>
 			</component>
 		</ComponentPool>
 		<ComponentPool>
 			<type>NodeLeader</type>
 			<version>1</version>
 			<component>
-				<UUID>ad11d4fb-8b91-46aa-8dfa-71024c12ff73</UUID>
+				<UUID>7d6f1398-23cb-3cb0-bcf5-78e90d969edc</UUID>
 				<flags>3</flags>
 				<config>
 					<property>
@@ -896,7 +1211,7 @@
 				</config>
 			</component>
 			<component>
-				<UUID>53131477-605b-3083-b2dc-7a40b11743eb</UUID>
+				<UUID>9e5efbbb-1a3a-3ccc-bb25-4c3eb12356c0</UUID>
 				<flags>3</flags>
 				<config>
 					<property>
@@ -910,7 +1225,7 @@
 			<type>StartAtNodeTransform</type>
 			<version>1</version>
 			<component>
-				<UUID>fc03df65-dd1c-46bb-8f3c-f824dd1c2002</UUID>
+				<UUID>e1bbfa0e-bc5e-3447-b880-73c25c1ca155</UUID>
 				<flags>3</flags>
 				<config>
 					<property>
@@ -920,7 +1235,7 @@
 				</config>
 			</component>
 			<component>
-				<UUID>2feac2e9-ab51-4954-88ff-00934c1a1329</UUID>
+				<UUID>e4fb74b6-5ba8-309a-ac12-fecf75ac4cb4</UUID>
 				<flags>3</flags>
 				<config>
 					<property>
@@ -930,7 +1245,7 @@
 				</config>
 			</component>
 			<component>
-				<UUID>f3eab2c0-dab0-4aad-b404-f3242993d173</UUID>
+				<UUID>e3da1ef4-82e2-3771-b9f9-ca38cc4f26b6</UUID>
 				<flags>3</flags>
 				<config>
 					<property>
@@ -940,7 +1255,7 @@
 				</config>
 			</component>
 			<component>
-				<UUID>ad11d4fb-8b91-46aa-8dfa-71024c12ff73</UUID>
+				<UUID>7d6f1398-23cb-3cb0-bcf5-78e90d969edc</UUID>
 				<flags>3</flags>
 				<config>
 					<property>
@@ -950,7 +1265,7 @@
 				</config>
 			</component>
 			<component>
-				<UUID>53131477-605b-3083-b2dc-7a40b11743eb</UUID>
+				<UUID>9e5efbbb-1a3a-3ccc-bb25-4c3eb12356c0</UUID>
 				<flags>3</flags>
 				<config>
 					<property>
@@ -960,7 +1275,7 @@
 				</config>
 			</component>
 			<component>
-				<UUID>4e9cfcf1-8f5b-4020-88fd-8842adfd1feb</UUID>
+				<UUID>a6eb8e84-dd39-37da-b457-8f0141ee4d98</UUID>
 				<flags>3</flags>
 				<config>
 					<property>
@@ -970,12 +1285,40 @@
 				</config>
 			</component>
 			<component>
-				<UUID>e57dc4b2-cf14-42a4-9cb0-f938d0fba88f</UUID>
+				<UUID>34b60ad3-fecd-3576-951a-602087a1144b</UUID>
 				<flags>3</flags>
 				<config>
 					<property>
 						<name>NodeName</name>
 						<value>HP_gunFire</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>BW::LocalTransformNodeFollowerComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>e1bbfa0e-bc5e-3447-b880-73c25c1ca155</UUID>
+				<flags>1</flags>
+				<config>
+					<property>
+						<name>nodeName</name>
+						<value>Gun</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>VehicleHealthObserverComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>e936894e-cb93-41de-abb4-a3e3b6e61248</UUID>
+				<flags>32</flags>
+				<config>
+					<property>
+						<name>state</name>
+						<value>1</value>
 					</property>
 				</config>
 			</component>

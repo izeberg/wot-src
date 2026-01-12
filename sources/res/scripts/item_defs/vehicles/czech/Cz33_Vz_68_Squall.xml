@@ -38,6 +38,12 @@
 				<!--BW_String-->
 			</invisibilityBonus>
 		</camouflageNet>
+		<deluxeCamouflageNet>
+			<invisibilityBonus>
+				0.125
+				<!--BW_String-->
+			</invisibilityBonus>
+		</deluxeCamouflageNet>
 		<additionalInvisibilityDevice>
 			<invisibilityBonus>
 				0.06 0.08
@@ -4013,10 +4019,10 @@
 						<rate>1650</rate>
 					</clip>
 					<autoShoot>
-						<shotDispersionPerSec>
-							1.25
+						<shotDispersionPerShot>
+							0.04545455
 							<!--BW_String-->
-						</shotDispersionPerSec>
+						</shotDispersionPerShot>
 						<maxShotDispersion>10</maxShotDispersion>
 						<groupSize>1</groupSize>
 					</autoShoot>

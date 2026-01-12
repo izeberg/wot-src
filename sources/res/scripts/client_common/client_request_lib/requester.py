@@ -339,6 +339,9 @@ class WGElenAccessor(BaseAccessor):
     def get_player_data(self, callback, fields=None):
         return self._data_source.get_player_data(callback, fields=fields)
 
+    def get_player_progression(self, callback, event_id, leaderboard_id, fields=None):
+        return self._data_source.get_player_progression(callback, event_id, leaderboard_id, fields=fields)
+
 
 class WgrmsAccessor(BaseAccessor):
 
@@ -389,24 +392,6 @@ class GiftSystemAccessor(BaseAccessor):
 
     def post_gift_system_gift(self, callback, entitlementCode, receiverID, metaInfo):
         return self._data_source.post_gift_system_gift(callback, entitlementCode, receiverID, metaInfo)
-
-
-class FriendsAccessor(BaseAccessor):
-
-    def get_friend_balance(self, callback, spaId):
-        return self._data_source.get_friend_balance(callback, spaId)
-
-    def get_friend_list(self, callback):
-        return self._data_source.get_friend_list(callback)
-
-    def put_best_friend(self, callback, spaId):
-        return self._data_source.put_best_friend(callback, spaId)
-
-    def delete_best_friend(self, callback, spaId):
-        return self._data_source.delete_best_friend(callback, spaId)
-
-    def post_gather_friend_ny_resources(self, callback, spaId):
-        return self._data_source.post_gather_friend_ny_resources(callback, spaId)
 
 
 class UILoggingAccessor(BaseAccessor):
@@ -492,7 +477,6 @@ class Requester(object):
     craftmachine = RequestDescriptor(CrafmachineAccessor)
     mapbox = RequestDescriptor(MapboxAccessor)
     gifts = RequestDescriptor(GiftSystemAccessor)
-    friends = RequestDescriptor(FriendsAccessor)
     uilogging = RequestDescriptor(UILoggingAccessor)
     wot_shop = RequestDescriptor(WotShopAccessor)
     clan_supply = RequestDescriptor(ClanSupplyAccessor)

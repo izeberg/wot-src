@@ -5,6 +5,12 @@ package
       
       public static const FRONTLINE_GUI_MAPS_ICONS_ARROW:String = "img://frontline/gui/maps/icons/arrow.png";
       
+      public static const FRONTLINE_GUI_MAPS_ICONS_FAME_POINT_TINY:String = "img://frontline/gui/maps/icons/fame_point_tiny.png";
+      
+      public static const FRONTLINE_GUI_MAPS_ICONS_MODEICON:String = "img://frontline/gui/maps/icons/modeIcon.png";
+      
+      public static const FRONTLINE_GUI_MAPS_ICONS_REWARDS_TO_CHOOSE:String = "img://frontline/gui/maps/icons/rewards_to_choose.png";
+      
       public static const FRONTLINE_GUI_MAPS_ICONS_ABOUT_BATTLEPASS:String = "img://frontline/gui/maps/icons/about/battlepass.png";
       
       public static const FRONTLINE_GUI_MAPS_ICONS_ABOUT_EPIC:String = "img://frontline/gui/maps/icons/about/epic.png";
@@ -98,6 +104,12 @@ package
       public static const FRONTLINE_GUI_MAPS_ICONS_BATTLETYPES_80X80_RANDOM:String = "img://frontline/gui/maps/icons/battleTypes/80x80/random.png";
       
       public static const FRONTLINE_GUI_MAPS_ICONS_BATTLETYPES_80X80_STANDARD:String = "img://frontline/gui/maps/icons/battleTypes/80x80/standard.png";
+      
+      public static const FRONTLINE_GUI_MAPS_ICONS_CATEGORY_SMALL_FIRESUPPORT:String = "img://frontline/gui/maps/icons/category/small/firesupport.png";
+      
+      public static const FRONTLINE_GUI_MAPS_ICONS_CATEGORY_SMALL_RECONNAISSANCE:String = "img://frontline/gui/maps/icons/category/small/reconnaissance.png";
+      
+      public static const FRONTLINE_GUI_MAPS_ICONS_CATEGORY_SMALL_TACTICS:String = "img://frontline/gui/maps/icons/category/small/tactics.png";
       
       public static const FRONTLINE_GUI_MAPS_ICONS_HANGAREVENTBANNERS_TOOLTIPS_HEADER_DISABLED:String = "img://frontline/gui/maps/icons/hangarEventBanners/tooltips/header_disabled.png";
       
@@ -305,6 +317,18 @@ package
       
       public static const FRONTLINE_GUI_MAPS_ICONS_LOADOUT_CATEGORIES_52X52_TACTICS_SELECTED:String = "img://frontline/gui/maps/icons/loadout/categories/52x52/tactics_selected.png";
       
+      public static const FRONTLINE_GUI_MAPS_ICONS_POSTBATTLERESULTS_CORNER_SHADOW:String = "img://frontline/gui/maps/icons/postBattleResults/corner_shadow.png";
+      
+      public static const FRONTLINE_GUI_MAPS_ICONS_POSTBATTLERESULTS_RANK:String = "img://frontline/gui/maps/icons/postBattleResults/rank.png";
+      
+      public static const FRONTLINE_GUI_MAPS_ICONS_POSTBATTLERESULTS_RESPAWNS:String = "img://frontline/gui/maps/icons/postBattleResults/respawns.png";
+      
+      public static const FRONTLINE_GUI_MAPS_ICONS_POSTBATTLERESULTS_BACKGROUNDS_DEFAULT:String = "img://frontline/gui/maps/icons/postBattleResults/backgrounds/default.png";
+      
+      public static const FRONTLINE_GUI_MAPS_ICONS_POSTBATTLERESULTS_BACKGROUNDS_LOSE:String = "img://frontline/gui/maps/icons/postBattleResults/backgrounds/lose.png";
+      
+      public static const FRONTLINE_GUI_MAPS_ICONS_POSTBATTLERESULTS_BACKGROUNDS_WIN:String = "img://frontline/gui/maps/icons/postBattleResults/backgrounds/win.png";
+      
       public static const FRONTLINE_GUI_MAPS_ICONS_POSTBATTLEREWARDS_EXP_ICON:String = "img://frontline/gui/maps/icons/postBattleRewards/exp_icon.png";
       
       public static const FRONTLINE_GUI_MAPS_ICONS_POSTBATTLEREWARDS_GLOW:String = "img://frontline/gui/maps/icons/postBattleRewards/glow.png";
@@ -319,18 +343,6 @@ package
       
       public static const FRONTLINE_GUI_MAPS_ICONS_POSTBATTLEREWARDS_RIBBON_REGULAR_SMALL:String = "img://frontline/gui/maps/icons/postBattleRewards/ribbon_regular_small.png";
       
-      public static const FRONTLINE_GUI_MAPS_ICONS_POSTBATTLEREWARDS_RANKS_256X256_RANK_1:String = "img://frontline/gui/maps/icons/postBattleRewards/ranks/256x256/rank_1.png";
-      
-      public static const FRONTLINE_GUI_MAPS_ICONS_POSTBATTLEREWARDS_RANKS_256X256_RANK_2:String = "img://frontline/gui/maps/icons/postBattleRewards/ranks/256x256/rank_2.png";
-      
-      public static const FRONTLINE_GUI_MAPS_ICONS_POSTBATTLEREWARDS_RANKS_256X256_RANK_3:String = "img://frontline/gui/maps/icons/postBattleRewards/ranks/256x256/rank_3.png";
-      
-      public static const FRONTLINE_GUI_MAPS_ICONS_POSTBATTLEREWARDS_RANKS_256X256_RANK_4:String = "img://frontline/gui/maps/icons/postBattleRewards/ranks/256x256/rank_4.png";
-      
-      public static const FRONTLINE_GUI_MAPS_ICONS_POSTBATTLEREWARDS_RANKS_256X256_RANK_5:String = "img://frontline/gui/maps/icons/postBattleRewards/ranks/256x256/rank_5.png";
-      
-      public static const FRONTLINE_GUI_MAPS_ICONS_POSTBATTLEREWARDS_RANKS_256X256_RANK_6:String = "img://frontline/gui/maps/icons/postBattleRewards/ranks/256x256/rank_6.png";
-      
       public static const FRONTLINE_GUI_MAPS_ICONS_PROGRESSIONSCREEN_DONEICON:String = "img://frontline/gui/maps/icons/progressionScreen/doneIcon.png";
       
       public static const FRONTLINE_GUI_MAPS_ICONS_PROGRESSIONSCREEN_FX_SPARKS_BG_ORANGE:String = "img://frontline/gui/maps/icons/progressionScreen/fx_sparks_bg_orange.png";
@@ -343,13 +355,81 @@ package
       
       public static const FRONTLINE_GUI_MAPS_ICONS_PROGRESSIONSCREEN_UPICON:String = "img://frontline/gui/maps/icons/progressionScreen/upIcon.png";
       
+      public static const FRONTLINE_GUI_MAPS_ICONS_RANKS_24X24_RANK_1:String = "img://frontline/gui/maps/icons/ranks/24x24/rank_1.png";
+      
+      public static const FRONTLINE_GUI_MAPS_ICONS_RANKS_24X24_RANK_2:String = "img://frontline/gui/maps/icons/ranks/24x24/rank_2.png";
+      
+      public static const FRONTLINE_GUI_MAPS_ICONS_RANKS_24X24_RANK_3:String = "img://frontline/gui/maps/icons/ranks/24x24/rank_3.png";
+      
+      public static const FRONTLINE_GUI_MAPS_ICONS_RANKS_24X24_RANK_4:String = "img://frontline/gui/maps/icons/ranks/24x24/rank_4.png";
+      
+      public static const FRONTLINE_GUI_MAPS_ICONS_RANKS_24X24_RANK_5:String = "img://frontline/gui/maps/icons/ranks/24x24/rank_5.png";
+      
+      public static const FRONTLINE_GUI_MAPS_ICONS_RANKS_24X24_RANK_6:String = "img://frontline/gui/maps/icons/ranks/24x24/rank_6.png";
+      
+      public static const FRONTLINE_GUI_MAPS_ICONS_RANKS_256X256_RANK_1:String = "img://frontline/gui/maps/icons/ranks/256x256/rank_1.png";
+      
+      public static const FRONTLINE_GUI_MAPS_ICONS_RANKS_256X256_RANK_2:String = "img://frontline/gui/maps/icons/ranks/256x256/rank_2.png";
+      
+      public static const FRONTLINE_GUI_MAPS_ICONS_RANKS_256X256_RANK_3:String = "img://frontline/gui/maps/icons/ranks/256x256/rank_3.png";
+      
+      public static const FRONTLINE_GUI_MAPS_ICONS_RANKS_256X256_RANK_4:String = "img://frontline/gui/maps/icons/ranks/256x256/rank_4.png";
+      
+      public static const FRONTLINE_GUI_MAPS_ICONS_RANKS_256X256_RANK_5:String = "img://frontline/gui/maps/icons/ranks/256x256/rank_5.png";
+      
+      public static const FRONTLINE_GUI_MAPS_ICONS_RANKS_256X256_RANK_6:String = "img://frontline/gui/maps/icons/ranks/256x256/rank_6.png";
+      
+      public static const FRONTLINE_GUI_MAPS_ICONS_RANKS_64X64_RANK_1:String = "img://frontline/gui/maps/icons/ranks/64x64/rank_1.png";
+      
+      public static const FRONTLINE_GUI_MAPS_ICONS_RANKS_64X64_RANK_2:String = "img://frontline/gui/maps/icons/ranks/64x64/rank_2.png";
+      
+      public static const FRONTLINE_GUI_MAPS_ICONS_RANKS_64X64_RANK_3:String = "img://frontline/gui/maps/icons/ranks/64x64/rank_3.png";
+      
+      public static const FRONTLINE_GUI_MAPS_ICONS_RANKS_64X64_RANK_4:String = "img://frontline/gui/maps/icons/ranks/64x64/rank_4.png";
+      
+      public static const FRONTLINE_GUI_MAPS_ICONS_RANKS_64X64_RANK_5:String = "img://frontline/gui/maps/icons/ranks/64x64/rank_5.png";
+      
+      public static const FRONTLINE_GUI_MAPS_ICONS_RANKS_64X64_RANK_6:String = "img://frontline/gui/maps/icons/ranks/64x64/rank_6.png";
+      
+      public static const FRONTLINE_GUI_MAPS_ICONS_RANKSSILVER_24X24_RANK_1:String = "img://frontline/gui/maps/icons/ranksSilver/24x24/rank_1.png";
+      
+      public static const FRONTLINE_GUI_MAPS_ICONS_RANKSSILVER_24X24_RANK_2:String = "img://frontline/gui/maps/icons/ranksSilver/24x24/rank_2.png";
+      
+      public static const FRONTLINE_GUI_MAPS_ICONS_RANKSSILVER_24X24_RANK_3:String = "img://frontline/gui/maps/icons/ranksSilver/24x24/rank_3.png";
+      
+      public static const FRONTLINE_GUI_MAPS_ICONS_RANKSSILVER_24X24_RANK_4:String = "img://frontline/gui/maps/icons/ranksSilver/24x24/rank_4.png";
+      
+      public static const FRONTLINE_GUI_MAPS_ICONS_RANKSSILVER_24X24_RANK_5:String = "img://frontline/gui/maps/icons/ranksSilver/24x24/rank_5.png";
+      
+      public static const FRONTLINE_GUI_MAPS_ICONS_RANKSSILVER_24X24_RANK_6:String = "img://frontline/gui/maps/icons/ranksSilver/24x24/rank_6.png";
+      
       public static const FRONTLINE_GUI_MAPS_ICONS_REWARDS_SELECT_ANIM_BIG:String = "img://frontline/gui/maps/icons/rewards/select_anim_big.png";
       
       public static const FRONTLINE_GUI_MAPS_ICONS_REWARDS_SELECT_ANIM_REVERSE_BIG:String = "img://frontline/gui/maps/icons/rewards/select_anim_reverse_big.png";
       
+      public static const FRONTLINE_GUI_MAPS_ICONS_TOOLTIPS_BATTLEBOOSTER_GIFT:String = "img://frontline/gui/maps/icons/tooltips/battleBooster_gift.png";
+      
+      public static const FRONTLINE_GUI_MAPS_ICONS_TOOLTIPS_BROCHURE_GIFT:String = "img://frontline/gui/maps/icons/tooltips/brochure_gift.png";
+      
       public static const FRONTLINE_GUI_MAPS_ICONS_TOOLTIPS_DIVIDER_DOTTY:String = "img://frontline/gui/maps/icons/tooltips/divider_dotty.png";
       
+      public static const FRONTLINE_GUI_MAPS_ICONS_TOOLTIPS_EXPEQUIPMENTS_GIFT:String = "img://frontline/gui/maps/icons/tooltips/expequipments_gift.png";
+      
       public static const FRONTLINE_GUI_MAPS_ICONS_TOOLTIPS_FAME_POINT_TINY:String = "img://frontline/gui/maps/icons/tooltips/fame_point_tiny.png";
+      
+      public static const FRONTLINE_GUI_MAPS_ICONS_TOOLTIPS_BATTLEABILITY_AT_SPG:String = "img://frontline/gui/maps/icons/tooltips/battleAbility/AT_SPG.png";
+      
+      public static const FRONTLINE_GUI_MAPS_ICONS_TOOLTIPS_BATTLEABILITY_HEAVYTANK:String = "img://frontline/gui/maps/icons/tooltips/battleAbility/heavyTank.png";
+      
+      public static const FRONTLINE_GUI_MAPS_ICONS_TOOLTIPS_BATTLEABILITY_LIGHTTANK:String = "img://frontline/gui/maps/icons/tooltips/battleAbility/lightTank.png";
+      
+      public static const FRONTLINE_GUI_MAPS_ICONS_TOOLTIPS_BATTLEABILITY_MEDIUMTANK:String = "img://frontline/gui/maps/icons/tooltips/battleAbility/mediumTank.png";
+      
+      public static const FRONTLINE_GUI_MAPS_ICONS_TOOLTIPS_BATTLEABILITY_OPEN:String = "img://frontline/gui/maps/icons/tooltips/battleAbility/open.png";
+      
+      public static const FRONTLINE_GUI_MAPS_ICONS_TOOLTIPS_BATTLEABILITY_SPG:String = "img://frontline/gui/maps/icons/tooltips/battleAbility/SPG.png";
+      
+      public static const FRONTLINE_GUI_MAPS_ICONS_TOOLTIPS_BATTLEABILITY_UPGRADE:String = "img://frontline/gui/maps/icons/tooltips/battleAbility/upgrade.png";
       
       public static const FRONTLINE_GUI_MAPS_ICONS_WIDGET_ABILITY_TOKEN:String = "img://frontline/gui/maps/icons/widget/ability_token.png";
       

@@ -86,7 +86,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.data.constants.generated.MISSIONS_CONSTANTS;
    import net.wg.data.constants.generated.NODE_STATE_FLAGS;
    import net.wg.data.constants.generated.NOTIFICATIONS_CONSTANTS;
-   import net.wg.data.constants.generated.NY_CONSTS;
    import net.wg.data.constants.generated.PERSONAL_EXCHANGE_RATES;
    import net.wg.data.constants.generated.PERSONAL_MISSIONS_ALIASES;
    import net.wg.data.constants.generated.PERSONAL_MISSIONS_BUTTONS;
@@ -1090,7 +1089,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.hangar.HangarHeader;
    import net.wg.gui.lobby.hangar.PrestigeProgressInject;
    import net.wg.gui.lobby.hangar.ResearchPanel;
-   import net.wg.gui.lobby.hangar.RewardKitsEntrancePointWidget;
    import net.wg.gui.lobby.hangar.SwitchModePanel;
    import net.wg.gui.lobby.hangar.VehPostProgressionBtn;
    import net.wg.gui.lobby.hangar.VehicleParameters;
@@ -1135,7 +1133,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.hangar.quests.BattleMattersEntryPoint;
    import net.wg.gui.lobby.hangar.quests.BattlePassEntryPoint;
    import net.wg.gui.lobby.hangar.quests.FlagContainer;
-   import net.wg.gui.lobby.hangar.quests.FunRandomNYHangarWidget;
    import net.wg.gui.lobby.hangar.quests.HEADER_QUESTS_CONSTANTS;
    import net.wg.gui.lobby.hangar.quests.HangarWidgetDAAPI;
    import net.wg.gui.lobby.hangar.quests.HangarWidgetInject;
@@ -1149,7 +1146,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.hangar.quests.QuestFlagIconContainer;
    import net.wg.gui.lobby.hangar.quests.QuestInformerButton;
    import net.wg.gui.lobby.hangar.quests.QuestInformerContent;
-   import net.wg.gui.lobby.hangar.quests.ResourceWellEntryPoint;
    import net.wg.gui.lobby.hangar.quests.SecondaryEntryPoint;
    import net.wg.gui.lobby.hangar.quests.SecondaryEntryPointContent;
    import net.wg.gui.lobby.hangar.tcarousel.BaseTankIcon;
@@ -1405,15 +1401,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.modulesPanel.interfaces.IDeviceSlot;
    import net.wg.gui.lobby.modulesPanel.interfaces.IModuleSlot;
    import net.wg.gui.lobby.modulesPanel.interfaces.IModulesPanel;
-   import net.wg.gui.lobby.new_year.NYMainMenuInject;
-   import net.wg.gui.lobby.new_year.NYMainView;
-   import net.wg.gui.lobby.new_year.NYMainViewGFContentInject;
-   import net.wg.gui.lobby.new_year.NYMainViewSidebarUBInject;
-   import net.wg.gui.lobby.new_year.NYMainViewUBContentInject;
-   import net.wg.gui.lobby.ny2020.NYSelectVehiclePopover;
-   import net.wg.gui.lobby.ny2020.NYSelectVehicleRenderer;
-   import net.wg.gui.lobby.ny2020.NYVehicleSelectorFilter;
-   import net.wg.gui.lobby.ny2020.vo.NYSelectVehiclePopoverVO;
    import net.wg.gui.lobby.personalMissions.CampaignOperationsContainer;
    import net.wg.gui.lobby.personalMissions.PersonalMissionsPage;
    import net.wg.gui.lobby.personalMissions.components.AllOperationsContent;
@@ -1433,7 +1420,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.personalMissions.components.PersonalMissionExtraAwardAnim;
    import net.wg.gui.lobby.personalMissions.components.PersonalMissionExtraAwardDesc;
    import net.wg.gui.lobby.personalMissions.components.PersonalMissionFirstEntryAwardView;
-   import net.wg.gui.lobby.personalMissions.components.PersonalMissionFirstEntryView;
    import net.wg.gui.lobby.personalMissions.components.PersonalMissionMapBgContainer;
    import net.wg.gui.lobby.personalMissions.components.PersonalMissionOperations;
    import net.wg.gui.lobby.personalMissions.components.PersonalMissionPlansLoaderMgr;
@@ -1458,17 +1444,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.personalMissions.components.chainsPanel.ChainButton;
    import net.wg.gui.lobby.personalMissions.components.chainsPanel.ChainButtonContent;
    import net.wg.gui.lobby.personalMissions.components.chainsPanel.ChainsPanel;
-   import net.wg.gui.lobby.personalMissions.components.firstEntry.InfoAdditionalBlock;
-   import net.wg.gui.lobby.personalMissions.components.firstEntry.InfoAdditionalContent;
-   import net.wg.gui.lobby.personalMissions.components.firstEntry.InfoAdditionalContentPage;
-   import net.wg.gui.lobby.personalMissions.components.firstEntry.InfoAdditionalNotification;
-   import net.wg.gui.lobby.personalMissions.components.firstEntry.InfoContent;
-   import net.wg.gui.lobby.personalMissions.components.firstEntry.InfoItemRenderer;
-   import net.wg.gui.lobby.personalMissions.components.firstEntry.InfoItemRendererBg;
-   import net.wg.gui.lobby.personalMissions.components.firstEntry.MoreTextAnim;
-   import net.wg.gui.lobby.personalMissions.components.firstEntry.PMInfoAdditionalViewSettings;
-   import net.wg.gui.lobby.personalMissions.components.firstEntry.PMInfoVewSettings;
-   import net.wg.gui.lobby.personalMissions.components.firstEntry.PMInfoVewSettingsCore;
    import net.wg.gui.lobby.personalMissions.components.interfaces.IAwardSheetPopup;
    import net.wg.gui.lobby.personalMissions.components.interfaces.IChainButton;
    import net.wg.gui.lobby.personalMissions.components.interfaces.IChainButtonContent;
@@ -1510,9 +1485,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.personalMissions.data.FreeSheetPopoverData;
    import net.wg.gui.lobby.personalMissions.data.FreeSheetPopoverVO;
    import net.wg.gui.lobby.personalMissions.data.IconTextRendererVO;
-   import net.wg.gui.lobby.personalMissions.data.InfoAdditionalBlockDataVO;
-   import net.wg.gui.lobby.personalMissions.data.InfoAdditionalDataVO;
-   import net.wg.gui.lobby.personalMissions.data.InfoItemRendererVO;
    import net.wg.gui.lobby.personalMissions.data.MapSettingsData;
    import net.wg.gui.lobby.personalMissions.data.OperationAwardsVO;
    import net.wg.gui.lobby.personalMissions.data.OperationDataVO;
@@ -1525,7 +1497,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.personalMissions.data.PersonalMissionAwardsScreenVO;
    import net.wg.gui.lobby.personalMissions.data.PersonalMissionDetailedViewVO;
    import net.wg.gui.lobby.personalMissions.data.PersonalMissionDetailsContainerVO;
-   import net.wg.gui.lobby.personalMissions.data.PersonalMissionFirstEntryViewVO;
    import net.wg.gui.lobby.personalMissions.data.PersonalMissionVehicleAwardVO;
    import net.wg.gui.lobby.personalMissions.data.PersonalMissionsAbstractInfoViewVO;
    import net.wg.gui.lobby.personalMissions.data.PersonalMissionsAwardsViewVO;
@@ -1546,7 +1517,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.personalMissions.events.AnimationStateEvent;
    import net.wg.gui.lobby.personalMissions.events.AwardEvent;
    import net.wg.gui.lobby.personalMissions.events.ChainEvent;
-   import net.wg.gui.lobby.personalMissions.events.FirstEntryCardEvent;
    import net.wg.gui.lobby.personalMissions.events.OperationEvent;
    import net.wg.gui.lobby.personalMissions.events.PawnedSheetRendererEvent;
    import net.wg.gui.lobby.personalMissions.events.PersonalMissionDetailedViewEvent;
@@ -1768,7 +1738,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.questsWindow.components.QuestBigIconAwardItem;
    import net.wg.gui.lobby.questsWindow.components.QuestIconAwardsBlock;
    import net.wg.gui.lobby.questsWindow.components.QuestIconElement;
-   import net.wg.gui.lobby.questsWindow.components.QuestSingleLineTextAwardBlock;
    import net.wg.gui.lobby.questsWindow.components.QuestStatusComponent;
    import net.wg.gui.lobby.questsWindow.components.QuestTextAwardBlock;
    import net.wg.gui.lobby.questsWindow.components.QuestsCounter;
@@ -3078,8 +3047,6 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_DATA_CONSTANTS_GENERATED_NODE_STATE_FLAGS:Class = NODE_STATE_FLAGS;
       
       public static const NET_WG_DATA_CONSTANTS_GENERATED_NOTIFICATIONS_CONSTANTS:Class = NOTIFICATIONS_CONSTANTS;
-      
-      public static const NET_WG_DATA_CONSTANTS_GENERATED_NY_CONSTS:Class = NY_CONSTS;
       
       public static const NET_WG_DATA_CONSTANTS_GENERATED_PERSONAL_EXCHANGE_RATES:Class = PERSONAL_EXCHANGE_RATES;
       
@@ -5143,8 +5110,6 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_LOBBY_HANGAR_RESEARCHPANEL:Class = ResearchPanel;
       
-      public static const NET_WG_GUI_LOBBY_HANGAR_REWARDKITSENTRANCEPOINTWIDGET:Class = RewardKitsEntrancePointWidget;
-      
       public static const NET_WG_GUI_LOBBY_HANGAR_SWITCHMODEPANEL:Class = SwitchModePanel;
       
       public static const NET_WG_GUI_LOBBY_HANGAR_VEHICLEPARAMETERS:Class = VehicleParameters;
@@ -5233,8 +5198,6 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_LOBBY_HANGAR_QUESTS_FLAGCONTAINER:Class = FlagContainer;
       
-      public static const NET_WG_GUI_LOBBY_HANGAR_QUESTS_FUNRANDOMNYHANGARWIDGET:Class = FunRandomNYHangarWidget;
-      
       public static const NET_WG_GUI_LOBBY_HANGAR_QUESTS_HANGARWIDGETDAAPI:Class = HangarWidgetDAAPI;
       
       public static const NET_WG_GUI_LOBBY_HANGAR_QUESTS_HANGARWIDGETINJECT:Class = HangarWidgetInject;
@@ -5260,8 +5223,6 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_LOBBY_HANGAR_QUESTS_QUESTINFORMERBUTTON:Class = QuestInformerButton;
       
       public static const NET_WG_GUI_LOBBY_HANGAR_QUESTS_QUESTINFORMERCONTENT:Class = QuestInformerContent;
-      
-      public static const NET_WG_GUI_LOBBY_HANGAR_QUESTS_RESOURCEWELLENTRYPOINT:Class = ResourceWellEntryPoint;
       
       public static const NET_WG_GUI_LOBBY_HANGAR_QUESTS_SECONDARYENTRYPOINT:Class = SecondaryEntryPoint;
       
@@ -5773,24 +5734,6 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_LOBBY_MODULESPANEL_INTERFACES_IMODULESPANEL:Class = IModulesPanel;
       
-      public static const NET_WG_GUI_LOBBY_NEW_YEAR_NYMAINMENUINJECT:Class = NYMainMenuInject;
-      
-      public static const NET_WG_GUI_LOBBY_NEW_YEAR_NYMAINVIEW:Class = NYMainView;
-      
-      public static const NET_WG_GUI_LOBBY_NEW_YEAR_NYMAINVIEWGFCONTENTINJECT:Class = NYMainViewGFContentInject;
-      
-      public static const NET_WG_GUI_LOBBY_NEW_YEAR_NYMAINVIEWSIDEBARUBINJECT:Class = NYMainViewSidebarUBInject;
-      
-      public static const NET_WG_GUI_LOBBY_NEW_YEAR_NYMAINVIEWUBCONTENTINJECT:Class = NYMainViewUBContentInject;
-      
-      public static const NET_WG_GUI_LOBBY_NY2020_NYSELECTVEHICLEPOPOVER:Class = NYSelectVehiclePopover;
-      
-      public static const NET_WG_GUI_LOBBY_NY2020_NYSELECTVEHICLERENDERER:Class = NYSelectVehicleRenderer;
-      
-      public static const NET_WG_GUI_LOBBY_NY2020_NYVEHICLESELECTORFILTER:Class = NYVehicleSelectorFilter;
-      
-      public static const NET_WG_GUI_LOBBY_NY2020_VO_NYSELECTVEHICLEPOPOVERVO:Class = NYSelectVehiclePopoverVO;
-      
       public static const NET_WG_GUI_LOBBY_PERSONALMISSIONS_CAMPAIGNOPERATIONSCONTAINER:Class = CampaignOperationsContainer;
       
       public static const NET_WG_GUI_LOBBY_PERSONALMISSIONS_PERSONALMISSIONSPAGE:Class = PersonalMissionsPage;
@@ -5826,8 +5769,6 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_LOBBY_PERSONALMISSIONS_COMPONENTS_PERSONALMISSIONEXTRAAWARDDESC:Class = PersonalMissionExtraAwardDesc;
       
       public static const NET_WG_GUI_LOBBY_PERSONALMISSIONS_COMPONENTS_PERSONALMISSIONFIRSTENTRYAWARDVIEW:Class = PersonalMissionFirstEntryAwardView;
-      
-      public static const NET_WG_GUI_LOBBY_PERSONALMISSIONS_COMPONENTS_PERSONALMISSIONFIRSTENTRYVIEW:Class = PersonalMissionFirstEntryView;
       
       public static const NET_WG_GUI_LOBBY_PERSONALMISSIONS_COMPONENTS_PERSONALMISSIONMAPBGCONTAINER:Class = PersonalMissionMapBgContainer;
       
@@ -5878,28 +5819,6 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_LOBBY_PERSONALMISSIONS_COMPONENTS_CHAINSPANEL_CHAINBUTTONCONTENT:Class = ChainButtonContent;
       
       public static const NET_WG_GUI_LOBBY_PERSONALMISSIONS_COMPONENTS_CHAINSPANEL_CHAINSPANEL:Class = ChainsPanel;
-      
-      public static const NET_WG_GUI_LOBBY_PERSONALMISSIONS_COMPONENTS_FIRSTENTRY_INFOADDITIONALBLOCK:Class = InfoAdditionalBlock;
-      
-      public static const NET_WG_GUI_LOBBY_PERSONALMISSIONS_COMPONENTS_FIRSTENTRY_INFOADDITIONALCONTENT:Class = InfoAdditionalContent;
-      
-      public static const NET_WG_GUI_LOBBY_PERSONALMISSIONS_COMPONENTS_FIRSTENTRY_INFOADDITIONALCONTENTPAGE:Class = InfoAdditionalContentPage;
-      
-      public static const NET_WG_GUI_LOBBY_PERSONALMISSIONS_COMPONENTS_FIRSTENTRY_INFOADDITIONALNOTIFICATION:Class = InfoAdditionalNotification;
-      
-      public static const NET_WG_GUI_LOBBY_PERSONALMISSIONS_COMPONENTS_FIRSTENTRY_INFOCONTENT:Class = InfoContent;
-      
-      public static const NET_WG_GUI_LOBBY_PERSONALMISSIONS_COMPONENTS_FIRSTENTRY_INFOITEMRENDERER:Class = InfoItemRenderer;
-      
-      public static const NET_WG_GUI_LOBBY_PERSONALMISSIONS_COMPONENTS_FIRSTENTRY_INFOITEMRENDERERBG:Class = InfoItemRendererBg;
-      
-      public static const NET_WG_GUI_LOBBY_PERSONALMISSIONS_COMPONENTS_FIRSTENTRY_MORETEXTANIM:Class = MoreTextAnim;
-      
-      public static const NET_WG_GUI_LOBBY_PERSONALMISSIONS_COMPONENTS_FIRSTENTRY_PMINFOADDITIONALVIEWSETTINGS:Class = PMInfoAdditionalViewSettings;
-      
-      public static const NET_WG_GUI_LOBBY_PERSONALMISSIONS_COMPONENTS_FIRSTENTRY_PMINFOVEWSETTINGS:Class = PMInfoVewSettings;
-      
-      public static const NET_WG_GUI_LOBBY_PERSONALMISSIONS_COMPONENTS_FIRSTENTRY_PMINFOVEWSETTINGSCORE:Class = PMInfoVewSettingsCore;
       
       public static const NET_WG_GUI_LOBBY_PERSONALMISSIONS_COMPONENTS_INTERFACES_IAWARDSHEETPOPUP:Class = IAwardSheetPopup;
       
@@ -5983,12 +5902,6 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_LOBBY_PERSONALMISSIONS_DATA_ICONTEXTRENDERERVO:Class = IconTextRendererVO;
       
-      public static const NET_WG_GUI_LOBBY_PERSONALMISSIONS_DATA_INFOADDITIONALBLOCKDATAVO:Class = InfoAdditionalBlockDataVO;
-      
-      public static const NET_WG_GUI_LOBBY_PERSONALMISSIONS_DATA_INFOADDITIONALDATAVO:Class = InfoAdditionalDataVO;
-      
-      public static const NET_WG_GUI_LOBBY_PERSONALMISSIONS_DATA_INFOITEMRENDERERVO:Class = InfoItemRendererVO;
-      
       public static const NET_WG_GUI_LOBBY_PERSONALMISSIONS_DATA_MAPSETTINGSDATA:Class = MapSettingsData;
       
       public static const NET_WG_GUI_LOBBY_PERSONALMISSIONS_DATA_OPERATIONAWARDSVO:Class = OperationAwardsVO;
@@ -6010,8 +5923,6 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_LOBBY_PERSONALMISSIONS_DATA_PERSONALMISSIONDETAILEDVIEWVO:Class = PersonalMissionDetailedViewVO;
       
       public static const NET_WG_GUI_LOBBY_PERSONALMISSIONS_DATA_PERSONALMISSIONDETAILSCONTAINERVO:Class = PersonalMissionDetailsContainerVO;
-      
-      public static const NET_WG_GUI_LOBBY_PERSONALMISSIONS_DATA_PERSONALMISSIONFIRSTENTRYVIEWVO:Class = PersonalMissionFirstEntryViewVO;
       
       public static const NET_WG_GUI_LOBBY_PERSONALMISSIONS_DATA_PERSONALMISSIONSABSTRACTINFOVIEWVO:Class = PersonalMissionsAbstractInfoViewVO;
       
@@ -6054,8 +5965,6 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_LOBBY_PERSONALMISSIONS_EVENTS_AWARDEVENT:Class = AwardEvent;
       
       public static const NET_WG_GUI_LOBBY_PERSONALMISSIONS_EVENTS_CHAINEVENT:Class = ChainEvent;
-      
-      public static const NET_WG_GUI_LOBBY_PERSONALMISSIONS_EVENTS_FIRSTENTRYCARDEVENT:Class = FirstEntryCardEvent;
       
       public static const NET_WG_GUI_LOBBY_PERSONALMISSIONS_EVENTS_OPERATIONEVENT:Class = OperationEvent;
       
@@ -6502,8 +6411,6 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_LOBBY_QUESTSWINDOW_COMPONENTS_QUESTSCOUNTER:Class = QuestsCounter;
       
       public static const NET_WG_GUI_LOBBY_QUESTSWINDOW_COMPONENTS_QUESTSDASHLINEITEM:Class = QuestsDashlineItem;
-      
-      public static const NET_WG_GUI_LOBBY_QUESTSWINDOW_COMPONENTS_QUESTSINGLELINETEXTAWARDBLOCK:Class = QuestSingleLineTextAwardBlock;
       
       public static const NET_WG_GUI_LOBBY_QUESTSWINDOW_COMPONENTS_QUESTSTATUSCOMPONENT:Class = QuestStatusComponent;
       

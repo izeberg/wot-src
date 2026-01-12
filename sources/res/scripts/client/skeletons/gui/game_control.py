@@ -4,6 +4,7 @@ if typing.TYPE_CHECKING:
     from typing import Any, Callable, Dict, Iterable, Iterator, List, Optional, Set, Tuple, Union, Sequence, Generator
     from collections_common import Collection, CollectionItem
     from comp7.helpers.comp7_server_settings import Comp7RewardsConfig, Comp7Config
+    from comp7.gui.game_control.comp7_controller import _LeaderboardDataProvider, _ProgressionDataProvider
     from Event import Event
     from gui.collection.resources.cdn.cache import CollectionsCdnCacheMgr
     from fun_random.gui.feature.models.common import FunSubModesStatus
@@ -58,6 +59,10 @@ if typing.TYPE_CHECKING:
     from renewable_subscription_common.optional_devices_usage_config import VehicleLoadout
     from gui.game_control.wotlda.loadout_model import BaseOptDeviceLoadoutModel
     from gui.shared.view_helpers.blur_manager import ImmediateSceneBlurConfig, SceneBlurConfig, UILayerBlurConfig
+    from gui.game_control.vehicle_playlists_controller import VehiclePlaylist
+    from helpers.ingame_tournament_helper import IngameTournamentState, IngameTournamentType
+    from helpers.server_settings import _IngameTournamentShowmatchConfig
+    from gui.game_control.ingame_tournament_controller import _IngameTournamentData
     BattlePassBonusOpts = Optional[(TokensBonus, BattlePassSelectTokensBonus)]
 
 class IGameController(object):
@@ -462,19 +467,10 @@ class IHeroTankController(IGameController):
     def getCurrentVehicleName(self):
         raise NotImplementedError
 
-    def getCurrentFromBoxes(self):
-        raise NotImplementedError
-
     def getCurrentShopUrl(self):
         raise NotImplementedError
 
     def setDebugTankCD(self, debugTankCD):
-        raise NotImplementedError
-
-    def isEnabled(self):
-        raise NotImplementedError
-
-    def setEnabled(self, isEnabled):
         raise NotImplementedError
 
 
@@ -1613,9 +1609,6 @@ class ICraftmachineController(IGameController):
 
 class ICalendarController(IGameController):
 
-    def mustShow(self):
-        raise NotImplementedError
-
     def updateHeroAdventActionInfo(self):
         raise NotImplementedError
 
@@ -2132,9 +2125,7 @@ class IMapboxController(IGameController, ISeasonProvider):
 
 
 class IOverlayController(IGameController):
-    onStateChanged = None
 
-    @property
     def isActive(self):
         raise NotImplementedError
 
@@ -2163,15 +2154,6 @@ class ISteamCompletionController(IGameController):
         raise NotImplementedError
 
     def setConfirmEmailOverlayAllowed(self, isAllowed):
-        raise NotImplementedError
-
-    def lock(self, key):
-        raise NotImplementedError
-
-    def unlock(self, key):
-        raise NotImplementedError
-
-    def hasLock(self, key):
         raise NotImplementedError
 
 
@@ -2913,6 +2895,10 @@ class IComp7Controller(IGameController, ISeasonProvider):
         raise NotImplementedError
 
     @property
+    def progression(self):
+        raise NotImplementedError
+
+    @property
     def activityPoints(self):
         raise NotImplementedError
 
@@ -3130,10 +3116,6 @@ class IHangarSpaceSwitchController(IGameController):
     def lockHangarOverride(self, sceneName):
         raise NotImplementedError
 
-    @property
-    def currentSceneName(self):
-        raise NotImplementedError
-
 
 class ICollectionsSystemController(IGameController):
     onServerSettingsChanged = None
@@ -3259,15 +3241,6 @@ class IAchievements20EarningController(IGameController):
         raise NotImplementedError
 
     def resume(self):
-        raise NotImplementedError
-
-    def lock(self, key):
-        raise NotImplementedError
-
-    def unlock(self, key):
-        raise NotImplementedError
-
-    def hasLock(self, key):
         raise NotImplementedError
 
 
@@ -3684,13 +3657,6 @@ class IAchievementsController(IGameController):
         raise NotImplementedError
 
 
-class IGFNotificationsController(IGameController):
-    onBattleQueueStateUpdated = None
-
-    def selectRandomBattle(self, callback):
-        raise NotImplementedError
-
-
 class IExchangeRateWithDiscountsOperations(object):
 
     def calculateExchange(self, goldAmount):
@@ -3880,6 +3846,12 @@ class IVehiclePlaylistsController(IGameController):
     def iterPlaylists(self):
         raise NotImplementedError
 
+    def initPlayLists(self):
+        raise NotImplementedError
+
+    def simplePlayListParser(self, pStrData):
+        raise NotImplementedError
+
 
 class IBlurController(IGameController):
 
@@ -3919,20 +3891,38 @@ class ICrewController(IGameController):
 
 
 class IIngameTournamentController(IGameController):
-    onTournamentBannerUpdated = None
+    onTournamentEntryPointUpdated = None
     onTournamentWGCGDataUpdated = None
 
-    def isTournamentBannerAvailable(self):
+    def isTournamentAvailable(self, tournamentType):
         raise NotImplementedError()
 
-    def getActiveBannerData(self):
+    def getTournamentState(self, tournamentType):
         raise NotImplementedError()
 
-    def getTournamentDates(self):
+    def getCurrentShowmatch(self, tournamentType):
+        raise NotImplementedError()
+
+    def getNextShowmatch(self, tournamentType):
+        raise NotImplementedError()
+
+    def getTournamentShowmatchPeriod(self, tournamentType):
+        raise NotImplementedError()
+
+    def getIsIntroSeen(self, tournamentType):
+        raise NotImplementedError()
+
+    def setIsIntroSeen(self, tournamentType):
         raise NotImplementedError()
 
     def requestTournamentWGCGData(self):
         raise NotImplementedError()
 
-    def openShop(self):
+    def openShop(self, tournamentType):
+        raise NotImplementedError()
+
+    def getOfferGiftsToken(self, tournamentType):
+        raise NotImplementedError()
+
+    def openOfferGifts(self, tournamentType, overrideOnBackCallback):
         raise NotImplementedError()

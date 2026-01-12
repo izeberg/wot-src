@@ -47,12 +47,12 @@ package net.wg.gui.components.damageIndicator
       
       private var _disposed:Boolean = false;
       
-      public function DamageIndicator()
+      public function DamageIndicator(param1:String = "")
       {
          super();
          if(!RootSWFAtlasManager.instance.isAtlasInitialized(ATLAS_CONSTANTS.DAMAGE_INDICATOR))
          {
-            RootSWFAtlasManager.instance.initAtlas(ATLAS_CONSTANTS.DAMAGE_INDICATOR);
+            RootSWFAtlasManager.instance.initAtlas(ATLAS_CONSTANTS.DAMAGE_INDICATOR,param1);
          }
          this._items = new <DamageIndicatorItem>[this.hit_0,this.hit_1,this.hit_2,this.hit_3,this.hit_4];
          this.hit_0.init();

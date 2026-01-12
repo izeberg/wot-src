@@ -38,6 +38,12 @@
 				<!--BW_String-->
 			</invisibilityBonus>
 		</camouflageNet>
+		<deluxeCamouflageNet>
+			<invisibilityBonus>
+				0.175
+				<!--BW_String-->
+			</invisibilityBonus>
+		</deluxeCamouflageNet>
 		<additionalInvisibilityDevice>
 			<invisibilityBonus>
 				0.05 0.06
@@ -1010,7 +1016,7 @@
 					2.39749 1.44917 2.3975
 					<!--BW_String-->
 				</scale>
-				<showOn>4112</showOn>
+				<showOn>16</showOn>
 				<clipAngle>0.555167</clipAngle>
 				<anchorShift>-0.057604</anchorShift>
 			</slot>
@@ -1802,7 +1808,7 @@
 					<!--BW_String-->
 				</position>
 				<rotation>
-					2.6055 -1.38582 0.736673
+					2.72804 -1.39357 0.452559
 					<!--BW_String-->
 				</rotation>
 				<scale>
@@ -1868,7 +1874,7 @@
 					<!--BW_String-->
 				</position>
 				<rotation>
-					2.60552 1.38579 -0.736701
+					3.0927 1.42942 -0.334828
 					<!--BW_String-->
 				</rotation>
 				<scale>
@@ -1976,11 +1982,11 @@
 				<slotId>15078</slotId>
 				<tags>formfactor_rect1x3 direction_right_to_left</tags>
 				<position>
-					-0.732596 1.55312 1.95105
+					-0.633289 1.6342 1.87595
 					<!--BW_String-->
 				</position>
 				<rotation>
-					0.349228 -1.43257 2.38726
+					0.042928 -1.42332 2.82147
 					<!--BW_String-->
 				</rotation>
 				<scale>
@@ -1997,11 +2003,11 @@
 				<slotId>15079</slotId>
 				<tags>formfactor_rect1x3 direction_left_to_right</tags>
 				<position>
-					0.732622 1.5531 1.95105
+					0.732622 1.61763 1.89496
 					<!--BW_String-->
 				</position>
 				<rotation>
-					0.349289 1.43263 -2.38728
+					0.297309 1.53248 -2.77437
 					<!--BW_String-->
 				</rotation>
 				<scale>
@@ -2667,11 +2673,11 @@
 				<slotId>15109</slotId>
 				<tags>formfactor_rect1x6 direction_right_to_left</tags>
 				<position>
-					-0.732595 1.55312 1.95105
+					-0.732594 1.55831 1.87919
 					<!--BW_String-->
 				</position>
 				<rotation>
-					0.349265 -1.43257 2.38726
+					0.037911 -1.29939 2.79733
 					<!--BW_String-->
 				</rotation>
 				<scale>
@@ -2753,11 +2759,11 @@
 				<slotId>15113</slotId>
 				<tags>formfactor_rect1x6 direction_left_to_right</tags>
 				<position>
-					0.73262 1.5531 1.95105
+					0.755822 1.56579 1.88835
 					<!--BW_String-->
 				</position>
 				<rotation>
-					0.34929 1.43257 -2.38726
+					0.214304 1.41137 -2.73367
 					<!--BW_String-->
 				</rotation>
 				<scale>

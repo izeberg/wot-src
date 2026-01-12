@@ -1,0 +1,5 @@
+from __future__ import absolute_import
+from account_helpers.AccountSettings import STATS_REGULAR_SORTING
+from constants import ARENA_BONUS_TYPE
+from gui.shared.system_factory import registerBattleResultsStatsSorting
+registerBattleResultsStatsSorting(ARENA_BONUS_TYPE.EPIC_BATTLE, STATS_REGULAR_SORTING)

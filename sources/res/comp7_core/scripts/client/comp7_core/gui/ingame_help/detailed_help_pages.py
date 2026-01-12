@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.impl.gen import R
 from gui.impl import backport
 from gui.ingame_help.detailed_help_pages import DetailedHelpPagesBuilder, addPage

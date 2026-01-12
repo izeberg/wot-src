@@ -38,6 +38,12 @@
 				<!--BW_String-->
 			</invisibilityBonus>
 		</camouflageNet>
+		<deluxeCamouflageNet>
+			<invisibilityBonus>
+				0.175
+				<!--BW_String-->
+			</invisibilityBonus>
+		</deluxeCamouflageNet>
 		<additionalInvisibilityDevice>
 			<invisibilityBonus>
 				0.05 0.06
@@ -2469,13 +2475,19 @@
 					<startNode>Lever_Start_L5</startNode>
 					<jointNode>Lever_Joint_L5</jointNode>
 					<trackNode>Track_L5</trackNode>
-					<limits>-29.100000 75.900002</limits>
+					<limits>
+						-29.1 79.900002
+						<!--BW_String-->
+					</limits>
 				</lever>
 				<lever>
 					<startNode>Lever_Start_R5</startNode>
 					<jointNode>Lever_Joint_R5</jointNode>
 					<trackNode>Track_R5</trackNode>
-					<limits>-29.100000 75.900002</limits>
+					<limits>
+						-29.1 79.5
+						<!--BW_String-->
+					</limits>
 				</lever>
 			</leveredSuspension>
 			<physicalTracks>

@@ -5,8 +5,16 @@
 		<name>01_karelia</name>
 	</map>
 	<map>
+		<id>301</id>
+		<name>01_karelia_fp</name>
+	</map>
+	<map>
 		<id>2</id>
 		<name>02_malinovka</name>
+	</map>
+	<map>
+		<id>302</id>
+		<name>02_malinovka_fp</name>
 	</map>
 	<map>
 		<id>3</id>
@@ -15,6 +23,10 @@
 	<map>
 		<id>4</id>
 		<name>05_prohorovka</name>
+	</map>
+	<map>
+		<id>303</id>
+		<name>05_prohorovka_fp</name>
 	</map>
 	<map>
 		<id>5</id>
@@ -240,21 +252,5 @@
 	<map>
 		<isHangar>true</isHangar>
 		<name>hangar_v4</name>
-	</map>
-	<map>
-		<isHangar>true</isHangar>
-		<name>hangar_v4_advent</name>
-	</map>
-	<map>
-		<isHangar>True</isHangar>
-		<name>h38_newyear_2026</name>
-	</map>
-	<map>
-		<id>2026</id>
-		<name>227_gift_defend</name>
-	</map>
-	<map>
-		<id>2027</id>
-		<name>228_last_gift_standing</name>
 	</map>
 </root>

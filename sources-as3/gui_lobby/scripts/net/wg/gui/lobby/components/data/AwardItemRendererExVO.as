@@ -12,8 +12,6 @@ package net.wg.gui.lobby.components.data
       
       public var label:String = "";
       
-      public var userName:String = "";
-      
       public var align:String = "center";
       
       public var compensationTooltip:String = "";

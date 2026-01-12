@@ -1,4 +1,4 @@
-import logging, operator, time
+import operator, time
 from abc import ABCMeta
 from collections import namedtuple
 import typing, constants, nations
@@ -14,7 +14,7 @@ from gui.ranked_battles.ranked_helpers import getQualificationBattlesCountFromID
 from gui.server_events import events_helpers, finders
 from gui.server_events.events_constants import BATTLE_MATTERS_QUEST_ID, BATTLE_MATTERS_INTERMEDIATE_QUEST_ID, BATTLE_MATTERS_COMPENSATION_QUEST_ID
 from gui.server_events.bonuses import compareBonuses, getBonuses
-from gui.server_events.events_helpers import isDailyQuest, isWeeklyQuest, isPremium, getIdxFromQuestID, WeeklyQuestInfo, isCelebrityQuest
+from gui.server_events.events_helpers import isDailyQuest, isWeeklyQuest, isPremium, getIdxFromQuestID, WeeklyQuestInfo
 from gui.server_events.formatters import getLinkedActionID
 from gui.server_events.modifiers import compareModifiers, getModifierObj
 from gui.server_events.parsers import AccountRequirements, BonusConditions, PostBattleConditions, PreBattleConditions, TokenQuestAccountRequirements, VehicleRequirements, MapsTrainingPostBattleConditions
@@ -38,7 +38,6 @@ if typing.TYPE_CHECKING:
     from typing import Dict, List, Union
     from gui.Scaleform.daapi.view.lobby.server_events.events_helpers import EventPostBattleInfo
     import potapov_quests
-_logger = logging.getLogger()
 
 class DEFAULTS_GROUPS(object):
     FOR_CURRENT_VEHICLE = 'currentlyAvailable'
@@ -265,7 +264,6 @@ class ServerEventAbstract(object):
 
 
 class Group(ServerEventAbstract):
-    __slots__ = ServerEventAbstract.__slots__
 
     def getGroupEvents(self):
         return self._data.get('groupContent', [])
@@ -284,9 +282,6 @@ class Group(ServerEventAbstract):
 
     def isPremium(self):
         return events_helpers.isPremium(self.getID())
-
-    def isCelebrityQuest(self):
-        return events_helpers.isCelebrityQuest(self.getID())
 
     def isRegularQuest(self):
         return events_helpers.isRegularQuest(self.getID())
@@ -616,6 +611,9 @@ class DailyEpicTokenQuest(TokenQuest):
     def getUserName(self):
         return backport.text(R.strings.quests.dailyQuests.postBattle.genericTitle_epic())
 
+    def getDescription(self):
+        return backport.text(R.strings.quests.dailyQuests.postBattle.epic.description())
+
 
 class WeeklyQuest(Quest):
 
@@ -712,14 +710,6 @@ class RankedQuest(Quest):
         return result
 
 
-class CelebrityQuest(Quest):
-    pass
-
-
-class CelebrityTokenQuest(TokenQuest):
-    pass
-
-
 ActionData = namedtuple('ActionData', 'discountObj priority uiDecoration')
 
 class Action(ServerEventAbstract):
@@ -775,7 +765,7 @@ class Action(ServerEventAbstract):
 
             return result
 
-    def getModifiersDict(self):
+    def getModifiers(self):
         result = {}
         for stepData in self._data.get('steps'):
             mName = stepData.get('name')
@@ -787,10 +777,7 @@ class Action(ServerEventAbstract):
             else:
                 result[mName] = m
 
-        return result
-
-    def getModifiers(self):
-        return sorted(self.getModifiersDict().itervalues(), key=operator.methodcaller('getName'), cmp=compareModifiers)
+        return sorted(result.itervalues(), key=operator.methodcaller('getName'), cmp=compareModifiers)
 
 
 class PMCampaign(object):
@@ -911,8 +898,8 @@ class PMOperation(object):
             return
 
     def getChainByClassifierAttr(self, classifier):
-        return findFirst(lambda (chainID, chain): self.getChainClassifier(chainID).classificationAttr == classifier, self.getQuests().iteritems(), (None,
-                                                                                                                                                    None))
+        return findFirst(lambda it: self.getChainClassifier(it[0]).classificationAttr == classifier, self.getQuests().iteritems(), (None,
+                                                                                                                                    None))
 
     def getIterationChain(self):
         if self.__branch == PM_BRANCH.REGULAR:
@@ -1049,10 +1036,10 @@ class PMOperation(object):
             return self.isActive() or not self.isCompleted() and (bool(self.getCompletedQuests()) or bool(self.getTotalPmPointsCount()))
         return self.isActive()
 
-    def isFullCompleted(self, isRewardReceived=None):
+    def isFullCompleted(self, isQuestRewardReceived=None, isFinalRewardReceived=True):
         if self.__branch == PM_BRANCH.PERSONAL_MISSION_3:
-            return self.__isAwardAchieved and len(self.getCompletedQuests(isRewardReceived)) == self.getQuestsCount()
-        return len(self.getFullCompletedQuests(isRewardReceived)) == self.getQuestsCount()
+            return (self.__isAwardAchieved or not isFinalRewardReceived) and len(self.getCompletedQuests(isQuestRewardReceived)) == self.getQuestsCount()
+        return len(self.getFullCompletedQuests(isQuestRewardReceived)) == self.getQuestsCount()
 
     def isAwardAchieved(self):
         return self.__isAwardAchieved
@@ -1409,9 +1396,9 @@ class PersonalMission(ServerEventAbstract):
             for conditionKey, configData in self.__conditionsConfig.iteritems():
                 currentConditionState = missionState.get(conditionKey)
                 isInOrGroup = configData['description'].isInOrGroup
-                if currentConditionState and currentConditionState in QUEST_PROGRESS_STATE.COMPLETED_STATES:
+                if currentConditionState in QUEST_PROGRESS_STATE.COMPLETED_STATES:
                     completedConditions += 1
-                if currentConditionState and currentConditionState == QUEST_PROGRESS_STATE.FAILED:
+                elif currentConditionState == QUEST_PROGRESS_STATE.FAILED and not isInOrGroup:
                     return False
 
             if completedConditions >= len(self.__conditionsConfig) or isInOrGroup and completedConditions:
@@ -1420,7 +1407,7 @@ class PersonalMission(ServerEventAbstract):
 
     def hasAdditionalConditions(self):
         for _, configData in self.__conditionsConfig.iteritems():
-            if not configData['config']['isMain']:
+            if not configData['config'].get('isMain', False):
                 return True
 
         return False
@@ -1504,10 +1491,8 @@ class PersonalMission(ServerEventAbstract):
 
     def updateProgress(self, questsProgress):
         self.__pqProgress = questsProgress.getPersonalMissionProgress(self.__pmType, self._id)
-        if self.getQuestBranch() == PM_BRANCH.PERSONAL_MISSION_3:
-            self.__conditionsProgress = questsProgress.getConditionsProgress(self.__pmType.id, 'pm3_progress')
-        else:
-            self.__conditionsProgress = questsProgress.getConditionsProgress(self.__pmType.generalQuestID)
+        progressName = 'pm3_progress' if self.getQuestBranch() == PM_BRANCH.PERSONAL_MISSION_3 else 'pm2_progress'
+        self.__conditionsProgress = questsProgress.getConditionsProgress(self.__pmType.generalQuestID, progressName)
 
     def updatePqStateInBattle(self, pqState):
         if self.__pqProgress:
@@ -1702,17 +1687,6 @@ class DailyTokenQuestBuilder(IQuestBuilder):
         return DailyEpicTokenQuest(qID, data, progress)
 
 
-class CelebrityTokenQuestBuilder(IQuestBuilder):
-
-    @classmethod
-    def isSuitableQuest(cls, questType, qID):
-        return questType == constants.EVENT_TYPE.TOKEN_QUEST and isCelebrityQuest(qID)
-
-    @classmethod
-    def buildQuest(cls, questType, qID, data, progress=None, expiryTime=None):
-        return CelebrityTokenQuest(qID, data, progress)
-
-
 class TokenQuestBuilder(IQuestBuilder):
 
     @classmethod
@@ -1779,21 +1753,10 @@ class MapsTrainingQuestBuilder(IQuestBuilder):
         return MapsTrainingQuest(qID, data, progress)
 
 
-class CelebrityQuestBuilder(IQuestBuilder):
-
-    @classmethod
-    def isSuitableQuest(cls, questType, qID):
-        return isCelebrityQuest(qID)
-
-    @classmethod
-    def buildQuest(cls, questType, qID, data, progress=None, expiryTime=None):
-        return CelebrityQuest(qID, data, progress)
-
-
 registerQuestBuilders((
  PersonalQuestBuilder, GroupQuestBuilder, MotiveQuestBuilder, RankedQuestBuilder, BattleMattersTokenQuestBuilder,
  DailyTokenQuestBuilder, TokenQuestBuilder, BattleMattersQuestBuilder, PremiumQuestBuilder, DailyQuestBuilder,
- WeeklyQuestBuilder, MapsTrainingQuestBuilder, CelebrityQuestBuilder))
+ WeeklyQuestBuilder, MapsTrainingQuestBuilder))
 
 def createQuest(builders, questType, qID, data, progress=None, expiryTime=None):
     for builder in builders:

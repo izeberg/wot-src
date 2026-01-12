@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/french/F139_Terrifiant/crash/lod1/Hull</nodefullVisual>
+	<visibilityBox>
+		<min>-1.687713 -0.758131 -3.828135</min>
+		<max>1.735923 1.121512 3.704089</max>
+	</visibilityBox>
+	<parent>vehicles/french/F139_Terrifiant/crash/lod2/Hull</parent>
+	<extent>64.000000</extent>
+	<tank>true</tank>
+</root>

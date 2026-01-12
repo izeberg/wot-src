@@ -148,18 +148,6 @@ package net.wg.data.constants.generated
       public static const COMP7_MARCH_ICON:String = "Comp7MarchIconUI";
       
       public static const COMP7_AGGRESSIVE_DETECTION_ICON:String = "Comp7AggressiveDetectionIconUI";
-      
-      public static const GRINCH_WARNING_ICON:String = "grinchWarningTimerUI";
-      
-      public static const GRINCH_DANGER_ICON:String = "grinchDangerTimerDeathZoneUI";
-      
-      public static const GRINCH_FLARE_MARK_ICON:String = "grinchFlareMarkTimerUI";
-      
-      public static const GRINCH_DART_STUN_MARK_ICON:String = "grinchDartStunTimerUI";
-      
-      public static const GRINCH_INTERRUPTED_HEALING_ICON:String = "grinchInterruptedHealingUI";
-      
-      public static const GRINCH_MISSILE_ICON:String = "grinchMissileTimerUI";
        
       
       public function BATTLE_NOTIFICATIONS_TIMER_LINKAGES()

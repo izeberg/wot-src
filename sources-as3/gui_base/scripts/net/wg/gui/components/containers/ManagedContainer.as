@@ -174,7 +174,7 @@ package net.wg.gui.components.containers
          initSize();
       }
       
-      public function allowFocusNextLayer(param1:String) : Boolean
+      public function canFocusNextLayer(param1:String) : Boolean
       {
          if(this._modalBg)
          {
@@ -342,6 +342,11 @@ package net.wg.gui.components.containers
          return super.removeChild(param1);
       }
       
+      protected function exitFocus() : void
+      {
+         this.tryToSetFocus();
+      }
+      
       private function assertNumberChildrenForModalBg() : void
       {
          var _loc1_:String = MODAL_BG_EMPTY_MESSAGE;
@@ -382,8 +387,9 @@ package net.wg.gui.components.containers
             }
             if(App.containerMgr && App.containerMgr.lastFocusedView == param1)
             {
+               App.containerMgr.lastFocusedView.leaveModalFocus();
                App.containerMgr.lastFocusedView = null;
-               this.tryToSetFocus();
+               this.exitFocus();
             }
          }
       }
@@ -529,7 +535,7 @@ package net.wg.gui.components.containers
          this.onViewVisibilityChanged(_loc2_,false);
          if(_loc2_ == App.containerMgr.lastFocusedView)
          {
-            this.tryToSetFocus();
+            this.exitFocus();
          }
       }
       

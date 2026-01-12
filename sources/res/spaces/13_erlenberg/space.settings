@@ -168,4 +168,21 @@
 	<enableClusteredShading>false</enableClusteredShading>
 	<isSHGridQualityOverridden>false</isSHGridQualityOverridden>
 	<overrideSHGridQuality>0</overrideSHGridQuality>
+	<lightsCutOffDistance>500.000000</lightsCutOffDistance>
+	<isSimplifiedSHGridQualityOverridden>false</isSimplifiedSHGridQualityOverridden>
+	<overrideSimplifiedSHGridQuality>2</overrideSimplifiedSHGridQuality>
+	<spaceVisibilityFlags>
+		<type>
+			<tag>ctf</tag>
+			<bitIndex>0</bitIndex>
+		</type>
+		<type>
+			<tag>assault</tag>
+			<bitIndex>2</bitIndex>
+		</type>
+		<type>
+			<tag>comp7</tag>
+			<bitIndex>1</bitIndex>
+		</type>
+	</spaceVisibilityFlags>
 </root>

@@ -49,10 +49,6 @@
 						<Texture>content/Environment/00_Tiles/Dirt_railroad_01_DM.dds</Texture>
 					</property>
 					<property>
-						ditherTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
 						g_dirtColor
 						<Vector4>0.250000 0.430000 0.380000 0.050000</Vector4>
 					</property>
@@ -131,10 +127,6 @@
 						<Texture>content/Environment/00_Tiles/hd_out_EU_008_ItalianMountains_dirt_DM.dds</Texture>
 					</property>
 					<property>
-						ditherTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
 						g_dirtColor
 						<Vector4>0.100000 0.430000 0.380000 0.020000</Vector4>
 					</property>
@@ -211,10 +203,6 @@
 					<property>
 						dirtMap
 						<Texture>content/Environment/hd_env_EU_063_TundraRocks/hd_env_EU_063_TundraRocks_Dirt.dds</Texture>
-					</property>
-					<property>
-						ditherTestEnable
-						<Bool>true</Bool>
 					</property>
 					<property>
 						g_dirtColor

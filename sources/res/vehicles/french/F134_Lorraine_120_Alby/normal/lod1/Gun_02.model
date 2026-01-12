@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/french/F134_Lorraine_120_Alby/normal/lod1/Gun_02</nodefullVisual>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.345754 -0.394174 0.007076</min>
+		<max>0.352816 0.385157 7.549520</max>
+	</visibilityBox>
+	<parent>vehicles/french/F134_Lorraine_120_Alby/normal/lod2/Gun_02</parent>
+	<extent>64.000000</extent>
+</root>

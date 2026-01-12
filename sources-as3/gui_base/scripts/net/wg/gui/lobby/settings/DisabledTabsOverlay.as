@@ -54,7 +54,6 @@ package net.wg.gui.lobby.settings
       private static function drawTabs(param1:ButtonBarEx, param2:Vector.<int>, param3:Vector.<Sprite>) : void
       {
          var _loc4_:Button = null;
-         _loc4_ = null;
          var _loc5_:Rectangle = null;
          var _loc6_:Sprite = null;
          var _loc7_:Graphics = null;

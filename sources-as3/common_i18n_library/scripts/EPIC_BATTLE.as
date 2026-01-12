@@ -565,22 +565,6 @@ package
       
       public static const EPICBATTLEITEM_SUPPLYPOINTS_BODY:String = "#epic_battle:epicBattleItem/supplyPoints/body";
       
-      public static const INTRO_TITLE:String = "#epic_battle:intro/title";
-      
-      public static const INTRO_CONFIRM:String = "#epic_battle:intro/confirm";
-      
-      public static const INTRO_CARD_CATEGORIES_TITLE:String = "#epic_battle:intro/card/categories/title";
-      
-      public static const INTRO_CARD_CATEGORIES_DESC:String = "#epic_battle:intro/card/categories/desc";
-      
-      public static const INTRO_CARD_SLOTS_TITLE:String = "#epic_battle:intro/card/slots/title";
-      
-      public static const INTRO_CARD_SLOTS_DESC:String = "#epic_battle:intro/card/slots/desc";
-      
-      public static const INTRO_CARD_TYPES_TITLE:String = "#epic_battle:intro/card/types/title";
-      
-      public static const INTRO_CARD_TYPES_DESC:String = "#epic_battle:intro/card/types/desc";
-      
       public static const AWARDS_TITLE:String = "#epic_battle:awards/title";
       
       public static const AWARDS_SUBTITLE2:String = "#epic_battle:awards/subTitle2";

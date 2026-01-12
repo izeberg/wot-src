@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.600684 -0.000028 -3.699637</min>
+		<max>1.600684 1.008543 3.771892</max>
+	</visibilityBox>
+	<parent>vehicles/french/F139_Terrifiant/crash/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/french/F139_Terrifiant/crash/lod0/Chassis</nodefullVisual>
+</root>

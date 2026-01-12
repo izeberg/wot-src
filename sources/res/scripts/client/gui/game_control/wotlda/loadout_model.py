@@ -58,10 +58,10 @@ class EquipmentField(NullString):
 
 class EmptyLoadoutField(fields.UniCapList):
 
-    def _convert(self, incoming, onlyPublic, method):
+    def _convert(self, incoming, skipValidation, converter, **kwargs):
         if not incoming:
             return {}
-        return super(EmptyLoadoutField, self)._convert(incoming, onlyPublic, method)
+        return super(EmptyLoadoutField, self)._convert(incoming, skipValidation, converter, **kwargs)
 
 
 class PercentRange(validate.Range):

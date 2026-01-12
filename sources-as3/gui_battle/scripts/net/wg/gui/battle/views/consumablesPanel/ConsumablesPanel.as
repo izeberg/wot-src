@@ -55,6 +55,8 @@ package net.wg.gui.battle.views.consumablesPanel
       
       protected var settings:Vector.<ConsumablesPanelSettings>;
       
+      protected var _settingsId:int = -1;
+      
       private var _stageWidth:int = 0;
       
       private var _stageHeight:int = 0;
@@ -74,8 +76,6 @@ package net.wg.gui.battle.views.consumablesPanel
       private var _groupsGap:int = 0;
       
       private var _customIndexGap:Vector.<uint>;
-      
-      protected var _settingsId:int = -1;
       
       private var _equipmentButtonLinkage:String = "";
       
@@ -109,11 +109,6 @@ package net.wg.gui.battle.views.consumablesPanel
          this.settings[CONSUMABLES_PANEL_SETTINGS.DEFAULT_SETTINGS_ID] = new ConsumablesPanelSettings(CONSUMABLES_PANEL_Y_OFFSET,_loc1_,Linkages.EQUIPMENT_BUTTON,Linkages.SHELL_BUTTON_BATTLE,0,null);
          this.settings[CONSUMABLES_PANEL_SETTINGS.BATTLE_ROYALE_SETTINGS_ID] = new ConsumablesPanelSettings(CONSUMABLES_PANEL_Y_OFFSET,ITEM_WIDTH_PADDING,Linkages.BATTLE_ROYALE_CONSUMABLE_BUTTON,Linkages.SHELL_BUTTON_BATTLE,BATTLE_ROYALE_GROUP_GAP,BATTLE_ROYALE_GROUP_INDEXES);
          this.settings[CONSUMABLES_PANEL_SETTINGS.MAPS_TRAINING_SETTINGS_ID] = new ConsumablesPanelSettings(CONSUMABLES_PANEL_Y_OFFSET,_loc1_,Linkages.EQUIPMENT_BUTTON,Linkages.MAPS_TRAINING_SHELL_BUTTON,0,null);
-      }
-      
-      protected function set equipmentButtonLinkage(param1:String) : void
-      {
-         this._equipmentButtonLinkage = param1;
       }
       
       override protected function onDispose() : void
@@ -313,6 +308,7 @@ package net.wg.gui.battle.views.consumablesPanel
          _loc10_.tooltipStr = param8;
          _loc10_.setInfinity(param9);
          _loc10_.setQuantity(param4,true);
+         _loc10_.criticalQuantity = param5;
          _loc10_.key = param3;
          _loc10_.addClickCallBack(this);
          invalidate(INVALIDATE_DRAW_LAYOUT);
@@ -744,6 +740,11 @@ package net.wg.gui.battle.views.consumablesPanel
       public function get panelWidth() : Number
       {
          return this.x + this._basePanelWidth;
+      }
+      
+      protected function set equipmentButtonLinkage(param1:String) : void
+      {
+         this._equipmentButtonLinkage = param1;
       }
       
       protected function get itemsPadding() : int

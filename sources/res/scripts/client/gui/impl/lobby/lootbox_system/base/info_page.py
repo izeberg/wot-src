@@ -1,19 +1,16 @@
 from enum import Enum
-from collections import defaultdict
 from frameworks.wulf import WindowFlags
 from gui.Scaleform.Waiting import Waiting
 from gui.impl.gen import R
-from gui.impl.new_year.loot_box_helper import parseNyRewards
 from gui.impl.pub.view_component import ViewComponent
 from gui.impl.gen.view_models.views.lobby.lootbox_system.box_model import BoxModel
 from gui.impl.gen.view_models.views.lobby.lootbox_system.info_page_model import InfoPageModel
 from gui.impl.gen.view_models.views.lobby.lootbox_system.slot_model import SlotModel
-from gui.impl.lobby.common.view_wrappers import createBackportTooltipDecorator
 from gui.impl.pub import WindowImpl
 from gui.impl.wrappers.function_helpers import replaceNoneKwargsModel
 from gui.lootbox_system.base.bonuses_packers import packBonusModelAndTooltipData
 from gui.lootbox_system.base.common import ViewID, Views
-from gui.lootbox_system.base.decorators import createTooltipContentDecorator
+from gui.lootbox_system.base.decorators import createBackportTooltipDecorator, createTooltipContentDecorator
 from gui.lootbox_system.base.sound import playInfopageEnterSound, playInfopageExitSound
 from gui.lootbox_system.base.utils import getInfoPageSettings, isCountryForShowingExternalLootList, isShopVisible, openExternalLootList
 from gui.lootbox_system.base.views_loaders import showItemPreview
@@ -134,14 +131,9 @@ class InfoPage(ViewComponent):
         boxModel.setGuaranteedLimit(guaranteed)
         slotsModel = boxModel.getSlots()
         slotsModel.clear()
-        mergedSlots = defaultdict(list)
         for slotID in self.__sortedSlotsIDs(slotsInfo):
             slot = slotsInfo.get(slotID, {})
-            probability = slot.get('probability', [0])[0]
-            mergedSlots[probability].extend(slot.get('bonuses', []))
-
-        for probability, bonuses in sorted(mergedSlots.items(), reverse=True):
-            lbSlot = self.__setLootBoxSlot(probability, bonuses)
+            lbSlot = self.__setLootBoxSlot(slot.get('probability', [0])[0], slot.get('bonuses', []))
             slotsModel.addViewModel(lbSlot)
 
         slotsModel.invalidate()
@@ -149,10 +141,9 @@ class InfoPage(ViewComponent):
 
     def __setLootBoxSlot(self, probability, bonuses):
         slotModel = SlotModel()
-        filteredBonuses = parseNyRewards(bonuses)
         slotModel.setProbability(int(probability * 10000 + 1e-06) / 100.0)
         slotModel.bonuses.clearItems()
-        packBonusModelAndTooltipData(filteredBonuses, slotModel.bonuses, tooltipData=self.__tooltipData, merge=True, eventName=self.__eventName)
+        packBonusModelAndTooltipData(bonuses, slotModel.bonuses, tooltipData=self.__tooltipData, merge=True, eventName=self.__eventName)
         return slotModel
 
     def __showPreview(self, ctx):

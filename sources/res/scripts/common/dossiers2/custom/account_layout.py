@@ -13,7 +13,6 @@ from dossiers2.custom.dependencies import EPIC_BATTLE_STATS_DEPENDENCIES
 from dossiers2.custom.dependencies import STEAM_ACHIEVEMENT_DEPENDENCIES
 from dossiers2.custom.dependencies import VEHICLE_ACHIEVEMENTS_DEPENDENCIES, VEHICLE_ACHIEVEMENTS_POP_UPS
 from dossiers2.custom.dependencies import CUSTOMIZATION_ACHIEVEMENTS_DEPENDENCIES, CUSTOMIZATION_ACHIEVEMENTS_POP_UPS
-from dossiers2.custom.dependencies import PLAYER_BADGES_DEPENDENCIES
 from battle_statistics_layouts import *
 TOTAL_BLOCK_LAYOUT = [
  'creationTime', 'lastBattleTime', 'battleLifeTime', 'treesCut', 'mileage']
@@ -379,7 +378,7 @@ _SINGLE_ACHIEVEMENTS_VALUES = [
  'BattlePassCommonPr_16', 'BattlePassCommonPr_17', 'BattlePassCommonPr_17extra_1',
  'BattlePassCommonPr_17extra_2', 'BattlePassCommonPr_17extra_3', 'BattlePassCommonPr_18',
  'BattlePassCommonPr_18extra_1', 'BattlePassCommonPr_18extra_2',
- 'BPReserveAchievement_8', 'BPReserveAchievement_9', 'BPReserveAchievement_10',
+ 'BattlePassCommonPr_NY26', 'BPReserveAchievement_9', 'BPReserveAchievement_10',
  'vDayHero', 'ls2025Medal', 'wot15thAnniversary', 'wot15thAnniversaryElite',
  'meritPM3', 'comp7_5_1', 'comp7_5_2', 'comp7_5_3',
  'comp7_5_yearly_iron', 'comp7_5_yearly_bronze', 'comp7_5_yearly_silver',
@@ -455,7 +454,7 @@ _singleAchievementsPopUps = [
  '14YearsOfService', 'BattlePassCommonPr_NY25', 'BattlePassCommonPr_16',
  'BattlePassCommonPr_17', 'BattlePassCommonPr_17extra_1', 'BattlePassCommonPr_17extra_2',
  'BattlePassCommonPr_17extra_3', 'BattlePassCommonPr_18', 'BattlePassCommonPr_18extra_1',
- 'BattlePassCommonPr_18extra_2', 'BPReserveAchievement_8', 'BPReserveAchievement_9',
+ 'BattlePassCommonPr_18extra_2', 'BattlePassCommonPr_NY26', 'BPReserveAchievement_9',
  'BPReserveAchievement_10', 'vDayHero', 'ls2025Medal',
  'wot15thAnniversary', 'wot15thAnniversaryElite',
  'meritPM3', 'comp7_5_1', 'comp7_5_2', 'comp7_5_3',
@@ -476,7 +475,7 @@ _clanAchievementsPopUps = ['medalRotmistrov']
 _clanAchievementsBlockBuilder = StaticSizeBlockBuilder('clanAchievements', CLAN_ACHIEVEMENTS_BLOCK_LAYOUT, {}, _clanAchievementsPopUps)
 RANKED_BADGES_BLOCK_LAYOUT = [
  '1', '2', '3', '4', '5', '6', '7', '8', '9']
-_playerBadgesBlockBuilder = DictBlockBuilder('playerBadges', 'I', 'I', PLAYER_BADGES_DEPENDENCIES)
+_playerBadgesBlockBuilder = DictBlockBuilder('playerBadges', 'I', 'I', {})
 _rankedSeasonsBlockBuilder = DictBlockBuilder('rankedSeasons', 'II', 'BHHHH', {})
 _rareAchievementsBlockBuilder = ListBlockBuilder('rareAchievements', 'I', {})
 UNIQUE_ACHIEVEMENT_VALUES = [

@@ -20,7 +20,7 @@ package net.wg.gui.components.crosshairPanel.components.gunMarker
       
       function setIsSecondary(param1:Boolean) : void;
       
-      function setDualAccActive(param1:Boolean) : void;
+      function setSecondaryActive(param1:Boolean) : void;
       
       function setAimDamageStage(param1:String) : void;
       
@@ -29,5 +29,7 @@ package net.wg.gui.components.crosshairPanel.components.gunMarker
       function showPenetrationFx() : void;
       
       function setChargeableBurstMode(param1:Boolean) : void;
+      
+      function setDispersionCircleThickness(param1:Boolean) : void;
    }
 }

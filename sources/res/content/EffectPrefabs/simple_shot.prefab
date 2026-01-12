@@ -5,7 +5,7 @@
 		<GameObject>
 			<name>simple_shot</name>
 			<UUID>6ee8e2cf-f3bc-42ee-9fc2-6b7712aafa72</UUID>
-			<flags>0</flags>
+			<flags>8</flags>
 		</GameObject>
 		<GameObject>
 			<name>Fire (No MB)</name>
@@ -104,11 +104,11 @@
 			</component>
 		</ComponentPool>
 		<ComponentPool>
-			<type>RemoveGoDelayedComponent</type>
+			<type>BW::DeactivateGoDelayedComponent</type>
 			<version>1</version>
 			<component>
 				<UUID>6ee8e2cf-f3bc-42ee-9fc2-6b7712aafa72</UUID>
-				<flags>33</flags>
+				<flags>1</flags>
 				<config>
 					<property>
 						<name>Delay</name>
@@ -125,16 +125,24 @@
 				<flags>35</flags>
 				<config>
 					<property>
+						<name>activeLayer</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>speed</name>
+						<value>1</value>
+					</property>
+					<property>
 						<name>loop</name>
 						<value>0</value>
 					</property>
 					<property>
 						<name>autoStart</name>
-						<value>0</value>
+						<value>1</value>
 					</property>
 					<property>
 						<name>pauseOnEnd</name>
-						<value>1</value>
+						<value>0</value>
 					</property>
 					<property>
 						<name>alwaysEnabled</name>
@@ -304,6 +312,10 @@
 							</item>
 						</collection>
 					</property>
+					<property>
+						<name>layers</name>
+						<collection/>
+					</property>
 				</config>
 			</component>
 		</ComponentPool>
@@ -444,6 +456,26 @@
 			</component>
 		</ComponentPool>
 		<ComponentPool>
+			<type>BW::TransformHistoryComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>1b996eb1-7b72-4cd8-805a-8d82c22ca016</UUID>
+				<flags>35</flags>
+			</component>
+			<component>
+				<UUID>240a3aaa-e0f4-3610-a566-7313625a1f04</UUID>
+				<flags>35</flags>
+			</component>
+			<component>
+				<UUID>2374d1be-567e-3592-a245-e1746dab024e</UUID>
+				<flags>35</flags>
+			</component>
+			<component>
+				<UUID>557fc9da-25ae-30a7-b249-8b070feb04f0</UUID>
+				<flags>35</flags>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
 			<type>BW::variables::VariableStorageComponent</type>
 			<version>1</version>
 			<component>
@@ -495,7 +527,21 @@
 			</component>
 		</ComponentPool>
 		<ComponentPool>
-			<type>SoundObject3D</type>
+			<type>BW::Gun::Effects::EffectComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>6ee8e2cf-f3bc-42ee-9fc2-6b7712aafa72</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>effectMask</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>BW::SoundObject3DComponent</type>
 			<version>1</version>
 			<component>
 				<UUID>c35aac04-11a7-407b-a7fe-803a169a52e0</UUID>
@@ -806,54 +852,17 @@
 																<object>
 																	<property>
 																		<name>expressionType</name>
-																		<value>BW::variables::ConstructVector2Expression</value>
+																		<value>BW::variables::VariableExpression</value>
 																	</property>
 																	<property>
 																		<name>expr</name>
 																		<object>
 																			<property>
-																				<name>leftOp</name>
+																				<name>variable</name>
 																				<object>
 																					<property>
-																						<name>expressionType</name>
-																						<value>BW::variables::VariableExpression</value>
-																					</property>
-																					<property>
-																						<name>expr</name>
-																						<object>
-																							<property>
-																								<name>variable</name>
-																								<object>
-																									<property>
-																										<name>name</name>
-																										<value>aux/energy</value>
-																									</property>
-																								</object>
-																							</property>
-																						</object>
-																					</property>
-																				</object>
-																			</property>
-																			<property>
-																				<name>rightOp</name>
-																				<object>
-																					<property>
-																						<name>expressionType</name>
-																						<value>BW::variables::VariableExpression</value>
-																					</property>
-																					<property>
-																						<name>expr</name>
-																						<object>
-																							<property>
-																								<name>variable</name>
-																								<object>
-																									<property>
-																										<name>name</name>
-																										<value>aux/energy</value>
-																									</property>
-																								</object>
-																							</property>
-																						</object>
+																						<name>name</name>
+																						<value>aux/energy</value>
 																					</property>
 																				</object>
 																			</property>
@@ -915,54 +924,17 @@
 																<object>
 																	<property>
 																		<name>expressionType</name>
-																		<value>BW::variables::ConstructVector2Expression</value>
+																		<value>BW::variables::VariableExpression</value>
 																	</property>
 																	<property>
 																		<name>expr</name>
 																		<object>
 																			<property>
-																				<name>leftOp</name>
+																				<name>variable</name>
 																				<object>
 																					<property>
-																						<name>expressionType</name>
-																						<value>BW::variables::VariableExpression</value>
-																					</property>
-																					<property>
-																						<name>expr</name>
-																						<object>
-																							<property>
-																								<name>variable</name>
-																								<object>
-																									<property>
-																										<name>name</name>
-																										<value>aux/energy</value>
-																									</property>
-																								</object>
-																							</property>
-																						</object>
-																					</property>
-																				</object>
-																			</property>
-																			<property>
-																				<name>rightOp</name>
-																				<object>
-																					<property>
-																						<name>expressionType</name>
-																						<value>BW::variables::VariableExpression</value>
-																					</property>
-																					<property>
-																						<name>expr</name>
-																						<object>
-																							<property>
-																								<name>variable</name>
-																								<object>
-																									<property>
-																										<name>name</name>
-																										<value>aux/energy</value>
-																									</property>
-																								</object>
-																							</property>
-																						</object>
+																						<name>name</name>
+																						<value>aux/energy</value>
 																					</property>
 																				</object>
 																			</property>
@@ -995,65 +967,6 @@
 										</object>
 									</item>
 								</collection>
-							</property>
-						</object>
-					</property>
-					<property>
-						<name>activeExpr</name>
-						<object>
-							<property>
-								<name>expressionType</name>
-								<value>BW::variables::EqualExpression</value>
-							</property>
-							<property>
-								<name>expr</name>
-								<object>
-									<property>
-										<name>leftOp</name>
-										<object>
-											<property>
-												<name>expressionType</name>
-												<value>BW::variables::VariableExpression</value>
-											</property>
-											<property>
-												<name>expr</name>
-												<object>
-													<property>
-														<name>variable</name>
-														<object>
-															<property>
-																<name>name</name>
-																<value>vehicle/gun/muzzleBrake</value>
-															</property>
-														</object>
-													</property>
-												</object>
-											</property>
-										</object>
-									</property>
-									<property>
-										<name>rightOp</name>
-										<object>
-											<property>
-												<name>expressionType</name>
-												<value>BW::variables::EnumExpression</value>
-											</property>
-											<property>
-												<name>expr</name>
-												<object>
-													<property>
-														<name>enumName</name>
-														<value>muzzleBrakeType</value>
-													</property>
-													<property>
-														<name>entryName</name>
-														<value>none</value>
-													</property>
-												</object>
-											</property>
-										</object>
-									</property>
-								</object>
 							</property>
 						</object>
 					</property>
@@ -1099,54 +1012,17 @@
 																<object>
 																	<property>
 																		<name>expressionType</name>
-																		<value>BW::variables::ConstructVector2Expression</value>
+																		<value>BW::variables::VariableExpression</value>
 																	</property>
 																	<property>
 																		<name>expr</name>
 																		<object>
 																			<property>
-																				<name>leftOp</name>
+																				<name>variable</name>
 																				<object>
 																					<property>
-																						<name>expressionType</name>
-																						<value>BW::variables::VariableExpression</value>
-																					</property>
-																					<property>
-																						<name>expr</name>
-																						<object>
-																							<property>
-																								<name>variable</name>
-																								<object>
-																									<property>
-																										<name>name</name>
-																										<value>aux/energy</value>
-																									</property>
-																								</object>
-																							</property>
-																						</object>
-																					</property>
-																				</object>
-																			</property>
-																			<property>
-																				<name>rightOp</name>
-																				<object>
-																					<property>
-																						<name>expressionType</name>
-																						<value>BW::variables::VariableExpression</value>
-																					</property>
-																					<property>
-																						<name>expr</name>
-																						<object>
-																							<property>
-																								<name>variable</name>
-																								<object>
-																									<property>
-																										<name>name</name>
-																										<value>aux/energy</value>
-																									</property>
-																								</object>
-																							</property>
-																						</object>
+																						<name>name</name>
+																						<value>aux/energy</value>
 																					</property>
 																				</object>
 																			</property>
@@ -1211,54 +1087,17 @@
 																<object>
 																	<property>
 																		<name>expressionType</name>
-																		<value>BW::variables::ConstructVector2Expression</value>
+																		<value>BW::variables::VariableExpression</value>
 																	</property>
 																	<property>
 																		<name>expr</name>
 																		<object>
 																			<property>
-																				<name>leftOp</name>
+																				<name>variable</name>
 																				<object>
 																					<property>
-																						<name>expressionType</name>
-																						<value>BW::variables::VariableExpression</value>
-																					</property>
-																					<property>
-																						<name>expr</name>
-																						<object>
-																							<property>
-																								<name>variable</name>
-																								<object>
-																									<property>
-																										<name>name</name>
-																										<value>aux/energy</value>
-																									</property>
-																								</object>
-																							</property>
-																						</object>
-																					</property>
-																				</object>
-																			</property>
-																			<property>
-																				<name>rightOp</name>
-																				<object>
-																					<property>
-																						<name>expressionType</name>
-																						<value>BW::variables::VariableExpression</value>
-																					</property>
-																					<property>
-																						<name>expr</name>
-																						<object>
-																							<property>
-																								<name>variable</name>
-																								<object>
-																									<property>
-																										<name>name</name>
-																										<value>aux/energy</value>
-																									</property>
-																								</object>
-																							</property>
-																						</object>
+																						<name>name</name>
+																						<value>aux/energy</value>
 																					</property>
 																				</object>
 																			</property>
@@ -1294,65 +1133,6 @@
 										</object>
 									</item>
 								</collection>
-							</property>
-						</object>
-					</property>
-					<property>
-						<name>activeExpr</name>
-						<object>
-							<property>
-								<name>expressionType</name>
-								<value>BW::variables::EqualExpression</value>
-							</property>
-							<property>
-								<name>expr</name>
-								<object>
-									<property>
-										<name>leftOp</name>
-										<object>
-											<property>
-												<name>expressionType</name>
-												<value>BW::variables::VariableExpression</value>
-											</property>
-											<property>
-												<name>expr</name>
-												<object>
-													<property>
-														<name>variable</name>
-														<object>
-															<property>
-																<name>name</name>
-																<value>vehicle/gun/muzzleBrake</value>
-															</property>
-														</object>
-													</property>
-												</object>
-											</property>
-										</object>
-									</property>
-									<property>
-										<name>rightOp</name>
-										<object>
-											<property>
-												<name>expressionType</name>
-												<value>BW::variables::EnumExpression</value>
-											</property>
-											<property>
-												<name>expr</name>
-												<object>
-													<property>
-														<name>enumName</name>
-														<value>muzzleBrakeType</value>
-													</property>
-													<property>
-														<name>entryName</name>
-														<value>standard</value>
-													</property>
-												</object>
-											</property>
-										</object>
-									</property>
-								</object>
 							</property>
 						</object>
 					</property>
@@ -1398,54 +1178,17 @@
 																<object>
 																	<property>
 																		<name>expressionType</name>
-																		<value>BW::variables::ConstructVector2Expression</value>
+																		<value>BW::variables::VariableExpression</value>
 																	</property>
 																	<property>
 																		<name>expr</name>
 																		<object>
 																			<property>
-																				<name>leftOp</name>
+																				<name>variable</name>
 																				<object>
 																					<property>
-																						<name>expressionType</name>
-																						<value>BW::variables::VariableExpression</value>
-																					</property>
-																					<property>
-																						<name>expr</name>
-																						<object>
-																							<property>
-																								<name>variable</name>
-																								<object>
-																									<property>
-																										<name>name</name>
-																										<value>aux/energy</value>
-																									</property>
-																								</object>
-																							</property>
-																						</object>
-																					</property>
-																				</object>
-																			</property>
-																			<property>
-																				<name>rightOp</name>
-																				<object>
-																					<property>
-																						<name>expressionType</name>
-																						<value>BW::variables::VariableExpression</value>
-																					</property>
-																					<property>
-																						<name>expr</name>
-																						<object>
-																							<property>
-																								<name>variable</name>
-																								<object>
-																									<property>
-																										<name>name</name>
-																										<value>aux/energy</value>
-																									</property>
-																								</object>
-																							</property>
-																						</object>
+																						<name>name</name>
+																						<value>aux/energy</value>
 																					</property>
 																				</object>
 																			</property>
@@ -1500,7 +1243,7 @@
 												<object>
 													<property>
 														<name>expressionType</name>
-														<value>BW::variables::ConstructVector2Expression</value>
+														<value>BW::variables::MultiplyExpression</value>
 													</property>
 													<property>
 														<name>expr</name>
@@ -1533,19 +1276,14 @@
 																<object>
 																	<property>
 																		<name>expressionType</name>
-																		<value>BW::variables::VariableExpression</value>
+																		<value>BW::variables::ConstantVector2Expression</value>
 																	</property>
 																	<property>
 																		<name>expr</name>
 																		<object>
 																			<property>
-																				<name>variable</name>
-																				<object>
-																					<property>
-																						<name>name</name>
-																						<value>aux/energy</value>
-																					</property>
-																				</object>
+																				<name>value</name>
+																				<value>1 1</value>
 																			</property>
 																		</object>
 																	</property>
@@ -1558,65 +1296,6 @@
 										</object>
 									</item>
 								</collection>
-							</property>
-						</object>
-					</property>
-					<property>
-						<name>activeExpr</name>
-						<object>
-							<property>
-								<name>expressionType</name>
-								<value>BW::variables::EqualExpression</value>
-							</property>
-							<property>
-								<name>expr</name>
-								<object>
-									<property>
-										<name>leftOp</name>
-										<object>
-											<property>
-												<name>expressionType</name>
-												<value>BW::variables::VariableExpression</value>
-											</property>
-											<property>
-												<name>expr</name>
-												<object>
-													<property>
-														<name>variable</name>
-														<object>
-															<property>
-																<name>name</name>
-																<value>vehicle/gun/muzzleBrake</value>
-															</property>
-														</object>
-													</property>
-												</object>
-											</property>
-										</object>
-									</property>
-									<property>
-										<name>rightOp</name>
-										<object>
-											<property>
-												<name>expressionType</name>
-												<value>BW::variables::EnumExpression</value>
-											</property>
-											<property>
-												<name>expr</name>
-												<object>
-													<property>
-														<name>enumName</name>
-														<value>muzzleBrakeType</value>
-													</property>
-													<property>
-														<name>entryName</name>
-														<value>standard</value>
-													</property>
-												</object>
-											</property>
-										</object>
-									</property>
-								</object>
 							</property>
 						</object>
 					</property>
@@ -2210,24 +1889,6 @@
 										</object>
 									</item>
 								</collection>
-							</property>
-						</object>
-					</property>
-					<property>
-						<name>activeExpr</name>
-						<object>
-							<property>
-								<name>expressionType</name>
-								<value>BW::variables::ConstantBoolExpression</value>
-							</property>
-							<property>
-								<name>expr</name>
-								<object>
-									<property>
-										<name>value</name>
-										<value>1</value>
-									</property>
-								</object>
 							</property>
 						</object>
 					</property>
@@ -2861,24 +2522,6 @@
 							</property>
 						</object>
 					</property>
-					<property>
-						<name>activeExpr</name>
-						<object>
-							<property>
-								<name>expressionType</name>
-								<value>BW::variables::ConstantBoolExpression</value>
-							</property>
-							<property>
-								<name>expr</name>
-								<object>
-									<property>
-										<name>value</name>
-										<value>1</value>
-									</property>
-								</object>
-							</property>
-						</object>
-					</property>
 				</config>
 			</component>
 			<component>
@@ -2921,54 +2564,17 @@
 																<object>
 																	<property>
 																		<name>expressionType</name>
-																		<value>BW::variables::ConstructVector2Expression</value>
+																		<value>BW::variables::VariableExpression</value>
 																	</property>
 																	<property>
 																		<name>expr</name>
 																		<object>
 																			<property>
-																				<name>leftOp</name>
+																				<name>variable</name>
 																				<object>
 																					<property>
-																						<name>expressionType</name>
-																						<value>BW::variables::VariableExpression</value>
-																					</property>
-																					<property>
-																						<name>expr</name>
-																						<object>
-																							<property>
-																								<name>variable</name>
-																								<object>
-																									<property>
-																										<name>name</name>
-																										<value>aux/energy</value>
-																									</property>
-																								</object>
-																							</property>
-																						</object>
-																					</property>
-																				</object>
-																			</property>
-																			<property>
-																				<name>rightOp</name>
-																				<object>
-																					<property>
-																						<name>expressionType</name>
-																						<value>BW::variables::VariableExpression</value>
-																					</property>
-																					<property>
-																						<name>expr</name>
-																						<object>
-																							<property>
-																								<name>variable</name>
-																								<object>
-																									<property>
-																										<name>name</name>
-																										<value>aux/energy</value>
-																									</property>
-																								</object>
-																							</property>
-																						</object>
+																						<name>name</name>
+																						<value>aux/energy</value>
 																					</property>
 																				</object>
 																			</property>
@@ -3023,7 +2629,7 @@
 												<object>
 													<property>
 														<name>expressionType</name>
-														<value>BW::variables::ConstructVector2Expression</value>
+														<value>BW::variables::MultiplyExpression</value>
 													</property>
 													<property>
 														<name>expr</name>
@@ -3056,19 +2662,14 @@
 																<object>
 																	<property>
 																		<name>expressionType</name>
-																		<value>BW::variables::VariableExpression</value>
+																		<value>BW::variables::ConstantVector2Expression</value>
 																	</property>
 																	<property>
 																		<name>expr</name>
 																		<object>
 																			<property>
-																				<name>variable</name>
-																				<object>
-																					<property>
-																						<name>name</name>
-																						<value>aux/energy</value>
-																					</property>
-																				</object>
+																				<name>value</name>
+																				<value>1 1</value>
 																			</property>
 																		</object>
 																	</property>
@@ -3084,75 +2685,16 @@
 							</property>
 						</object>
 					</property>
-					<property>
-						<name>activeExpr</name>
-						<object>
-							<property>
-								<name>expressionType</name>
-								<value>BW::variables::EqualExpression</value>
-							</property>
-							<property>
-								<name>expr</name>
-								<object>
-									<property>
-										<name>leftOp</name>
-										<object>
-											<property>
-												<name>expressionType</name>
-												<value>BW::variables::VariableExpression</value>
-											</property>
-											<property>
-												<name>expr</name>
-												<object>
-													<property>
-														<name>variable</name>
-														<object>
-															<property>
-																<name>name</name>
-																<value>vehicle/gun/muzzleBrake</value>
-															</property>
-														</object>
-													</property>
-												</object>
-											</property>
-										</object>
-									</property>
-									<property>
-										<name>rightOp</name>
-										<object>
-											<property>
-												<name>expressionType</name>
-												<value>BW::variables::ConstantIntExpression</value>
-											</property>
-											<property>
-												<name>expr</name>
-												<object>
-													<property>
-														<name>value</name>
-														<value>1</value>
-													</property>
-												</object>
-											</property>
-										</object>
-									</property>
-								</object>
-							</property>
-						</object>
-					</property>
 				</config>
 			</component>
 		</ComponentPool>
 		<ComponentPool>
-			<type>BW::PreviewEffectInitComponent</type>
+			<type>BW::EffectInitMockVariablesComponent</type>
 			<version>1</version>
 			<component>
 				<UUID>6ee8e2cf-f3bc-42ee-9fc2-6b7712aafa72</UUID>
 				<flags>2</flags>
 				<config>
-					<property>
-						<name>livePreview</name>
-						<value>1</value>
-					</property>
 					<property>
 						<name>calcs</name>
 						<object>
@@ -3291,11 +2833,74 @@
 											</property>
 										</object>
 									</item>
+									<item>
+										<object>
+											<property>
+												<name>dest</name>
+												<object>
+													<property>
+														<name>name</name>
+														<value>system/particleQuality</value>
+													</property>
+												</object>
+											</property>
+											<property>
+												<name>calcExpr</name>
+												<object>
+													<property>
+														<name>expressionType</name>
+														<value>BW::variables::EnumExpression</value>
+													</property>
+													<property>
+														<name>expr</name>
+														<object>
+															<property>
+																<name>enumName</name>
+																<value>particleQuality</value>
+															</property>
+															<property>
+																<name>entryName</name>
+																<value/>
+															</property>
+														</object>
+													</property>
+												</object>
+											</property>
+										</object>
+									</item>
 								</collection>
 							</property>
 						</object>
 					</property>
 				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>BW::EffectInitPreviewComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>6ee8e2cf-f3bc-42ee-9fc2-6b7712aafa72</UUID>
+				<flags>2</flags>
+			</component>
+			<component>
+				<UUID>1b996eb1-7b72-4cd8-805a-8d82c22ca016</UUID>
+				<flags>2</flags>
+			</component>
+			<component>
+				<UUID>240a3aaa-e0f4-3610-a566-7313625a1f04</UUID>
+				<flags>2</flags>
+			</component>
+			<component>
+				<UUID>2374d1be-567e-3592-a245-e1746dab024e</UUID>
+				<flags>2</flags>
+			</component>
+			<component>
+				<UUID>c35aac04-11a7-407b-a7fe-803a169a52e0</UUID>
+				<flags>2</flags>
+			</component>
+			<component>
+				<UUID>557fc9da-25ae-30a7-b249-8b070feb04f0</UUID>
+				<flags>2</flags>
 			</component>
 		</ComponentPool>
 		<ComponentPool>
@@ -3341,6 +2946,266 @@
 								<value/>
 							</item>
 						</collection>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>BW::GameObjectActivationRulesComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>1b996eb1-7b72-4cd8-805a-8d82c22ca016</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>activationExpression</name>
+						<object>
+							<property>
+								<name>expressionType</name>
+								<value>BW::variables::EqualExpression</value>
+							</property>
+							<property>
+								<name>expr</name>
+								<object>
+									<property>
+										<name>leftOp</name>
+										<object>
+											<property>
+												<name>expressionType</name>
+												<value>BW::variables::VariableExpression</value>
+											</property>
+											<property>
+												<name>expr</name>
+												<object>
+													<property>
+														<name>variable</name>
+														<object>
+															<property>
+																<name>name</name>
+																<value>vehicle/gun/muzzleBrake</value>
+															</property>
+														</object>
+													</property>
+												</object>
+											</property>
+										</object>
+									</property>
+									<property>
+										<name>rightOp</name>
+										<object>
+											<property>
+												<name>expressionType</name>
+												<value>BW::variables::EnumExpression</value>
+											</property>
+											<property>
+												<name>expr</name>
+												<object>
+													<property>
+														<name>enumName</name>
+														<value>muzzleBrakeType</value>
+													</property>
+													<property>
+														<name>entryName</name>
+														<value>none</value>
+													</property>
+												</object>
+											</property>
+										</object>
+									</property>
+								</object>
+							</property>
+						</object>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>240a3aaa-e0f4-3610-a566-7313625a1f04</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>activationExpression</name>
+						<object>
+							<property>
+								<name>expressionType</name>
+								<value>BW::variables::EqualExpression</value>
+							</property>
+							<property>
+								<name>expr</name>
+								<object>
+									<property>
+										<name>leftOp</name>
+										<object>
+											<property>
+												<name>expressionType</name>
+												<value>BW::variables::VariableExpression</value>
+											</property>
+											<property>
+												<name>expr</name>
+												<object>
+													<property>
+														<name>variable</name>
+														<object>
+															<property>
+																<name>name</name>
+																<value>vehicle/gun/muzzleBrake</value>
+															</property>
+														</object>
+													</property>
+												</object>
+											</property>
+										</object>
+									</property>
+									<property>
+										<name>rightOp</name>
+										<object>
+											<property>
+												<name>expressionType</name>
+												<value>BW::variables::EnumExpression</value>
+											</property>
+											<property>
+												<name>expr</name>
+												<object>
+													<property>
+														<name>enumName</name>
+														<value>muzzleBrakeType</value>
+													</property>
+													<property>
+														<name>entryName</name>
+														<value>standard</value>
+													</property>
+												</object>
+											</property>
+										</object>
+									</property>
+								</object>
+							</property>
+						</object>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>2374d1be-567e-3592-a245-e1746dab024e</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>activationExpression</name>
+						<object>
+							<property>
+								<name>expressionType</name>
+								<value>BW::variables::EqualExpression</value>
+							</property>
+							<property>
+								<name>expr</name>
+								<object>
+									<property>
+										<name>leftOp</name>
+										<object>
+											<property>
+												<name>expressionType</name>
+												<value>BW::variables::VariableExpression</value>
+											</property>
+											<property>
+												<name>expr</name>
+												<object>
+													<property>
+														<name>variable</name>
+														<object>
+															<property>
+																<name>name</name>
+																<value>vehicle/gun/muzzleBrake</value>
+															</property>
+														</object>
+													</property>
+												</object>
+											</property>
+										</object>
+									</property>
+									<property>
+										<name>rightOp</name>
+										<object>
+											<property>
+												<name>expressionType</name>
+												<value>BW::variables::EnumExpression</value>
+											</property>
+											<property>
+												<name>expr</name>
+												<object>
+													<property>
+														<name>enumName</name>
+														<value>muzzleBrakeType</value>
+													</property>
+													<property>
+														<name>entryName</name>
+														<value>standard</value>
+													</property>
+												</object>
+											</property>
+										</object>
+									</property>
+								</object>
+							</property>
+						</object>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>557fc9da-25ae-30a7-b249-8b070feb04f0</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>activationExpression</name>
+						<object>
+							<property>
+								<name>expressionType</name>
+								<value>BW::variables::EqualExpression</value>
+							</property>
+							<property>
+								<name>expr</name>
+								<object>
+									<property>
+										<name>leftOp</name>
+										<object>
+											<property>
+												<name>expressionType</name>
+												<value>BW::variables::VariableExpression</value>
+											</property>
+											<property>
+												<name>expr</name>
+												<object>
+													<property>
+														<name>variable</name>
+														<object>
+															<property>
+																<name>name</name>
+																<value>vehicle/gun/muzzleBrake</value>
+															</property>
+														</object>
+													</property>
+												</object>
+											</property>
+										</object>
+									</property>
+									<property>
+										<name>rightOp</name>
+										<object>
+											<property>
+												<name>expressionType</name>
+												<value>BW::variables::ConstantIntExpression</value>
+											</property>
+											<property>
+												<name>expr</name>
+												<object>
+													<property>
+														<name>value</name>
+														<value>1</value>
+													</property>
+												</object>
+											</property>
+										</object>
+									</property>
+								</object>
+							</property>
+						</object>
 					</property>
 				</config>
 			</component>

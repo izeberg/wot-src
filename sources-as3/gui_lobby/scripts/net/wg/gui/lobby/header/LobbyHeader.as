@@ -414,12 +414,6 @@ package net.wg.gui.lobby.header
          this.mainMenuButtonBar.visible = !param1;
       }
       
-      public function as_hideHeader(param1:Boolean) : void
-      {
-         visible = !param1;
-         dispatchEvent(new HeaderEvents(HeaderEvents.VISIBILITY_CHANGED,0));
-      }
-      
       public function as_initOnlineCounter(param1:Boolean) : void
       {
          this.onlineCounter.initVisible(param1);

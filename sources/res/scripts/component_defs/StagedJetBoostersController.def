@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<Implements>
+		<Interface>ReplicableComponent</Interface>
+	</Implements>
+	<Properties>
+		<vehTypeCD>
+			<Type>UINT32</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</vehTypeCD>
+		<stateStatus>
+			<Type>ROCKET_ACCELERATION_STATE_STATUS</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</stateStatus>
+		<acceleratorStatus>
+			<Type>UINT8</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</acceleratorStatus>
+	</Properties>
+	<CellMethods>
+		<tryActivate>
+			<Exposed>OWN_CLIENT</Exposed>
+		</tryActivate>
+	</CellMethods>
+	<DefaultKeyName>stagedJetBoostersController</DefaultKeyName>
+</root>

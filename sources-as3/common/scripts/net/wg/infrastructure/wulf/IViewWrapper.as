@@ -4,8 +4,9 @@ package net.wg.infrastructure.wulf
    import flash.display.DisplayObject;
    import flash.geom.Rectangle;
    import net.wg.infrastructure.interfaces.ITutorialView;
+   import net.wg.infrastructure.interfaces.entity.IFocusContainer;
    
-   public interface IViewWrapper extends ITutorialView
+   public interface IViewWrapper extends ITutorialView, IFocusContainer
    {
        
       
@@ -58,6 +59,8 @@ package net.wg.infrastructure.wulf
       function set paddings(param1:Rectangle) : void;
       
       function get focused() : Boolean;
+      
+      function set focused(param1:Boolean) : void;
       
       function get debugMode() : uint;
       

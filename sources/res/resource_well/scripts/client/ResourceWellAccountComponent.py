@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import json, typing
 from resource_well_common.resource_well_account_commands import CMD_RESOURCE_WELL_PUT, CMD_RESOURCE_WELL_TAKE
 import AccountCommands

@@ -191,6 +191,8 @@ class SubhangarObserver(BaseStateObserver):
         hangarSpaceId = self.__hangarSpace.spaceID
         cameraManager = CGF.getManager(hangarSpaceId, HangarCameraManager)
         if not cameraManager or not cameraManager.cameraExists(cameraName):
+            cameraMover.moveCameraFailed()
             return 0
-        cameraMover.moveCamera(cameraManager, cameraName)
-        return
+        else:
+            cameraMover.moveCamera(cameraManager, cameraName)
+            return

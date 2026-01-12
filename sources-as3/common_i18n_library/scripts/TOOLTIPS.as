@@ -1383,6 +1383,8 @@ package
       
       public static const ACHIEVEMENT_PARAMS_VEHICLESTOBUY:String = "#tooltips:achievement/params/vehiclesToBuy";
       
+      public static const ACHIEVEMENT_PARAMS_VEHICLESTOHAVEINGARAGE:String = "#tooltips:achievement/params/vehiclesToHaveInGarage";
+      
       public static const ACHIEVEMENT_PARAMS_VEHICLES:String = "#tooltips:achievement/params/vehicles";
       
       public static const ACHIEVEMENT_ACTION_UNAVAILABLE_DESCR:String = "#tooltips:achievement/action/unavailable/descr";
@@ -2352,6 +2354,8 @@ package
       public static const QUESTS_DISABLELINKBTN_TASK:String = "#tooltips:quests/disableLinkBtn/task";
       
       public static const QUESTS_LINKBTN_BATTLEPASS:String = "#tooltips:quests/linkBtn/battlePass";
+      
+      public static const QUESTS_BATTLEPASS_LINKBTN:String = "#tooltips:quests/battlePass/linkBtn";
       
       public static const QUESTS_LINKBTN_BATTLEPASS_SELECT:String = "#tooltips:quests/linkBtn/battlePass/select";
       
@@ -4419,6 +4423,8 @@ package
       
       public static const TANK_PARAMS_DESC_RELOADTIME:String = "#tooltips:tank_params/desc/reloadTime";
       
+      public static const TANK_PARAMS_DESC_TEMPERATURERELOADTIME:String = "#tooltips:tank_params/desc/temperatureReloadTime";
+      
       public static const TANK_PARAMS_DESC_CONTINUOUSSHOTSPERMINUTE:String = "#tooltips:tank_params/desc/continuousShotsPerMinute";
       
       public static const TANK_PARAMS_DESC_AUTORELOADTIME:String = "#tooltips:tank_params/desc/autoReloadTime";
@@ -4438,6 +4444,8 @@ package
       public static const TANK_PARAMS_DESC_TWINGUNTOPSPEED:String = "#tooltips:tank_params/desc/twinGunTopSpeed";
       
       public static const TANK_PARAMS_DESC_SHOTDISPERSIONANGLE_TWINGUN:String = "#tooltips:tank_params/desc/shotDispersionAngle/twinGun";
+      
+      public static const TANK_PARAMS_DESC_SHELLLOADINGTIME:String = "#tooltips:tank_params/desc/shellLoadingTime";
       
       public static const TANK_PARAMS_DESC_PIERCINGPOWER:String = "#tooltips:tank_params/desc/piercingPower";
       
@@ -4466,6 +4474,8 @@ package
       public static const TANK_PARAMS_AVGPARAMCOMMENT_MINPIERCINGPOWER:String = "#tooltips:tank_params/avgParamComment/minPiercingPower";
       
       public static const TANK_PARAMS_DESC_AVGDAMAGEPERMINUTE:String = "#tooltips:tank_params/desc/avgDamagePerMinute";
+      
+      public static const TANK_PARAMS_DESC_TEMPERATUREAVGDAMAGEPERMINUTE:String = "#tooltips:tank_params/desc/temperatureAvgDamagePerMinute";
       
       public static const TANK_PARAMS_DESC_TURRETROTATIONSPEED:String = "#tooltips:tank_params/desc/turretRotationSpeed";
       
@@ -4499,9 +4509,13 @@ package
       
       public static const TANK_PARAMS_DESC_SHOTDISPERSIONANGLE:String = "#tooltips:tank_params/desc/shotDispersionAngle";
       
+      public static const TANK_PARAMS_DESC_TEMPERATURESHOTDISPERSIONANGLE:String = "#tooltips:tank_params/desc/temperatureShotDispersionAngle";
+      
       public static const TANK_PARAMS_DESC_SHOTDISPERSIONANGLE_WITHDUALACCURACY:String = "#tooltips:tank_params/desc/shotDispersionAngle/withDualAccuracy";
       
       public static const TANK_PARAMS_DESC_AIMINGTIME:String = "#tooltips:tank_params/desc/aimingTime";
+      
+      public static const TANK_PARAMS_DESC_TEMPERATUREAIMINGTIME:String = "#tooltips:tank_params/desc/temperatureAimingTime";
       
       public static const TANK_PARAMS_DESC_EXPLOSIONRADIUS:String = "#tooltips:tank_params/desc/explosionRadius";
       
@@ -4588,6 +4602,30 @@ package
       public static const TANK_PARAMS_DESC_STATIONARYRELOADSWITCHONTIME:String = "#tooltips:tank_params/desc/stationaryReloadSwitchOnTime";
       
       public static const TANK_PARAMS_DESC_STATIONARYRELOADSWITCHOFFTIME:String = "#tooltips:tank_params/desc/stationaryReloadSwitchOffTime";
+      
+      public static const TANK_PARAMS_DESC_COOLINGDELAY:String = "#tooltips:tank_params/desc/coolingDelay";
+      
+      public static const TANK_PARAMS_DESC_COOLINGTIME:String = "#tooltips:tank_params/desc/coolingTime";
+      
+      public static const TANK_PARAMS_DESC_HEATINGPERSHOT:String = "#tooltips:tank_params/desc/heatingPerShot";
+      
+      public static const TANK_PARAMS_DESC_OVERHEATDURATION:String = "#tooltips:tank_params/desc/overheatDuration";
+      
+      public static const TANK_PARAMS_DESC_TIMETOOVERHEAT:String = "#tooltips:tank_params/desc/timeToOverheat";
+      
+      public static const TANK_PARAMS_DESC_STAGEDJETBOOSTERSENGINEPOWER:String = "#tooltips:tank_params/desc/stagedJetBoostersEnginePower";
+      
+      public static const TANK_PARAMS_DESC_STAGEDJETBOOSTERSTOPSPEED:String = "#tooltips:tank_params/desc/stagedJetBoostersTopSpeed";
+      
+      public static const TANK_PARAMS_DESC_STAGEDJETBOOSTERSSPEEDLIMITS:String = "#tooltips:tank_params/desc/stagedJetBoostersSpeedLimits";
+      
+      public static const TANK_PARAMS_DESC_STAGEDJETBOOSTERSROTATIONSPEED:String = "#tooltips:tank_params/desc/stagedJetBoostersRotationSpeed";
+      
+      public static const TANK_PARAMS_DESC_STAGEDJETBOOSTERSCHARGESCOUNT:String = "#tooltips:tank_params/desc/stagedJetBoostersChargesCount";
+      
+      public static const TANK_PARAMS_DESC_STAGEDJETBOOSTERSCHARGEDURATION:String = "#tooltips:tank_params/desc/stagedJetBoostersChargeDuration";
+      
+      public static const TANK_PARAMS_DESC_STAGEDJETBOOSTERSCOOLDOWNTIME:String = "#tooltips:tank_params/desc/stagedJetBoostersCooldownTime";
       
       public static const VEHICLEPARAMS_TITLE_VALUETEMPLATE:String = "#tooltips:vehicleParams/title/valueTemplate";
       
@@ -5122,8 +5160,6 @@ package
       public static const HANGAR_HEADER_WGMONEYTOOLTIP_TOTALVALUE:String = "#tooltips:hangar/header/wgmoneyTooltip/totalValue";
       
       public static const QUESTS_AWARDS_ADDITIONAL_HEADER:String = "#tooltips:quests/awards/additional/header";
-      
-      public static const QUESTS_AWARDS_ADDITIONAL_HEADER_COUNT:String = "#tooltips:quests/awards/additional/header/count";
       
       public static const QUESTS_AWARDS_NEAREST_HEADER:String = "#tooltips:quests/awards/nearest/header";
       
@@ -8756,6 +8792,48 @@ package
       public static const NOTRECRUITEDTANKMAN_TANKMEN_BP18_14_DESC:String = "#tooltips:notrecruitedtankman/tankmen_bp18_14/desc";
       
       public static const NOTRECRUITEDTANKMAN_TANKMEN_BP18_14_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/tankmen_bp18_14/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_CHEF_DAMIEN_LABEL:String = "#tooltips:notrecruitedtankman/chef_damien/label";
+      
+      public static const NOTRECRUITEDTANKMAN_CHEF_DAMIEN_DESC:String = "#tooltips:notrecruitedtankman/chef_damien/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_CHEF_DAMIEN_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/chef_damien/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP1006_1_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_bp1006_1/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP1006_1_DESC:String = "#tooltips:notrecruitedtankman/tankmen_bp1006_1/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP1006_1_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/tankmen_bp1006_1/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP1006_2_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_bp1006_2/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP1006_2_DESC:String = "#tooltips:notrecruitedtankman/tankmen_bp1006_2/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP1006_2_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/tankmen_bp1006_2/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP1006_3_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_bp1006_3/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP1006_3_DESC:String = "#tooltips:notrecruitedtankman/tankmen_bp1006_3/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP1006_3_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/tankmen_bp1006_3/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP1006_4_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_bp1006_4/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP1006_4_DESC:String = "#tooltips:notrecruitedtankman/tankmen_bp1006_4/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP1006_4_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/tankmen_bp1006_4/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP1006_5_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_bp1006_5/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP1006_5_DESC:String = "#tooltips:notrecruitedtankman/tankmen_bp1006_5/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP1006_5_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/tankmen_bp1006_5/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP1006_6_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_bp1006_6/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP1006_6_DESC:String = "#tooltips:notrecruitedtankman/tankmen_bp1006_6/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP1006_6_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/tankmen_bp1006_6/howToGetInfo";
       
       public static const ELEN_SUMMARY_RANK_ENUM:Array = [ELEN_SUMMARY_RANK_1,ELEN_SUMMARY_RANK_2,ELEN_SUMMARY_RANK_3,ELEN_SUMMARY_RANK_4,ELEN_SUMMARY_RANK_NORANK];
       

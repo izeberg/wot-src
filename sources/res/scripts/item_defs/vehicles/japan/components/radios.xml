@@ -22,9 +22,12 @@
 		<AN_GRC_3_8>19</AN_GRC_3_8>
 		<_Type3_Ko_Se>21</_Type3_Ko_Se>
 		<_Type96_Bo_Ni>24</_Type96_Bo_Ni>
+		<Type3_Ko_K>25</Type3_Ko_K>
 		<Type3_Ko_SAR>26</Type3_Ko_SAR>
 		<JAN_GRC_3Z_A>27</JAN_GRC_3Z_A>
+		<Type_67_DK>28</Type_67_DK>
 		<_Type67_7x7>502</_Type67_7x7>
+		<_Type3_Ko_B_7x7>503</_Type3_Ko_B_7x7>
 		<JAN-GRC-4Z_IGR>60001</JAN-GRC-4Z_IGR>
 		<_Type3_Ko_IGR>60002</_Type3_Ko_IGR>
 		<_Type67_IGR>60003</_Type67_IGR>
@@ -205,6 +208,18 @@
 				<!--BW_String-->
 			</repairCost>
 		</_Type3_Ko_B>
+		<Type3_Ko_K>
+			<userString>#japan_vehicles:Type3_Ko_K</userString>
+			<tags/>
+			<level>9</level>
+			<price>40000</price>
+			<notInShop>true</notInShop>
+			<weight>560</weight>
+			<distance>670</distance>
+			<maxHealth>210</maxHealth>
+			<maxRegenHealth>105</maxRegenHealth>
+			<repairCost>3</repairCost>
+		</Type3_Ko_K>
 		<Type3_Ko_SAR>
 			<userString>#japan_vehicles:Type3_Ko_SAR</userString>
 			<tags/>
@@ -217,6 +232,21 @@
 			<maxRegenHealth>105</maxRegenHealth>
 			<repairCost>3</repairCost>
 		</Type3_Ko_SAR>
+		<_Type3_Ko_B_7x7>
+			<userString>#japan_vehicles:_Type3_Ko_B_7x7</userString>
+			<tags/>
+			<level>10</level>
+			<price>55000</price>
+			<notInShop>true</notInShop>
+			<weight>560</weight>
+			<distance>750</distance>
+			<maxHealth>180</maxHealth>
+			<maxRegenHealth>108</maxRegenHealth>
+			<repairCost>
+				0.5
+				<!--BW_String-->
+			</repairCost>
+		</_Type3_Ko_B_7x7>
 		<JAN-GRC-3Z>
 			<userString>#japan_vehicles:JAN-GRC-3Z</userString>
 			<tags/>
@@ -372,6 +402,18 @@
 				<!--BW_String-->
 			</repairCost>
 		</Edelweiss_Radio>
+		<Type_67_DK>
+			<userString>#japan_vehicles:Type_67_DK</userString>
+			<tags/>
+			<level>11</level>
+			<price>80000</price>
+			<notInShop>true</notInShop>
+			<weight>100</weight>
+			<distance>800</distance>
+			<maxHealth>250</maxHealth>
+			<maxRegenHealth>125</maxRegenHealth>
+			<repairCost>4</repairCost>
+		</Type_67_DK>
 		<JAN-GRC-4Z_IGR>
 			<userString>#igr_vehicles:JAN-GRC-4Z_IGR</userString>
 			<tags/>

@@ -12,10 +12,6 @@ package net.wg.data.constants.generated
       public static const FUN_PROGRESSION:String = "FunRandomProgression";
       
       public static const FUN_POST_BATTLE_RESULTS:String = "FunRandomPostBattleResults";
-      
-      public static const FUN_RANDOM_HANGAR_WIDGET:String = "FunRandomHangarWidget";
-      
-      public static const FUN_RANDOM_NY_HANGAR_WIDGET:String = "FunRandomNYHangarWidget";
        
       
       public function FUNRANDOM_ALIASES()

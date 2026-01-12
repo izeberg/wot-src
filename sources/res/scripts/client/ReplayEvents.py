@@ -14,6 +14,10 @@ class _ReplayEvents(object):
     def isTimeWarp(self):
         return self.__isTimeWarp
 
+    @property
+    def isLastWarpRewind(self):
+        return self.__isLastWarpRewind
+
     def __init__(self):
         self.onTimeWarpStart = Event.Event()
         self.onTimeWarpFinish = Event.Event()
@@ -25,8 +29,7 @@ class _ReplayEvents(object):
         self.__isPlaying = False
         self.__isRecording = False
         self.__isTimeWarp = False
-        self.onTimeWarpStart += self.__onTimeWarpStart
-        self.onTimeWarpFinish += self.__onTimeWarpFinish
+        self.__isLastWarpRewind = False
 
     def onRecording(self):
         self.__isRecording = True
@@ -34,10 +37,13 @@ class _ReplayEvents(object):
     def onPlaying(self):
         self.__isPlaying = True
 
-    def __onTimeWarpStart(self):
+    def callOnTimeWarpStart(self, isRewind):
         self.__isTimeWarp = True
+        self.__isLastWarpRewind = isRewind
+        self.onTimeWarpStart()
 
-    def __onTimeWarpFinish(self):
+    def callOnTimeWarpFinish(self):
+        self.onTimeWarpFinish()
         self.__isTimeWarp = False
 
 

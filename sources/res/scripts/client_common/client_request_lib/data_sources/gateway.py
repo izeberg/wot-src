@@ -590,6 +590,12 @@ class GatewayDataAccessor(base.BaseDataAccessor):
         url = '/wgelen/wot/v1/get_player_data'
         return self._request_data(callback, url, method='GET')
 
+    def get_player_progression(self, callback, event_id, leaderboard_id, fields=None):
+        url = '/wgelen/wot/v1/get_player_progression'
+        get_data = {'event_id': event_id, 
+           'leaderboard_id': leaderboard_id}
+        return self._request_data(callback, url, get_data, method='GET')
+
     def hof_user_info(self, callback):
         url = '/hof/user/info/'
         return self._request_data(callback, url, method='GET')
@@ -653,30 +659,6 @@ class GatewayDataAccessor(base.BaseDataAccessor):
         post_data = {'entitlement_code': entitlement_code, 'receiver_id': receiver_id}
         post_data.update(meta_info)
         return self._request_data(callback, url, method='POST', post_data=post_data)
-
-    def get_friend_balance(self, callback, spa_id):
-        url = '/friend_service/api/v1/friend_balance/'
-        params = {'friend_spa_id': int(spa_id)}
-        return self._request_data(callback, url, params, method='GET')
-
-    def get_friend_list(self, callback):
-        url = '/friend_service/api/v1/friends/list/'
-        return self._request_data(callback, url, method='GET')
-
-    def put_best_friend(self, callback, spa_id):
-        url = '/friend_service/api/v1/best_friends/set/'
-        data = {'friend_spa_id': int(spa_id)}
-        return self._request_data(callback, url, post_data=data, method='PUT')
-
-    def delete_best_friend(self, callback, spa_id):
-        url = '/friend_service/api/v1/best_friends/delete/'
-        data = {'friend_spa_id': int(spa_id)}
-        return self._request_data(callback, url, post_data=data, method='DELETE')
-
-    def post_gather_friend_ny_resources(self, callback, spa_id):
-        url = '/friend_service/api/v1/best_friends/gather/'
-        data = {'friend_spa_id': int(spa_id)}
-        return self._request_data(callback, url, post_data=data, method='POST')
 
     def get_uilogging_session(self, callback):
         return self._request_data(callback, '/uilogging/session', method='GET')

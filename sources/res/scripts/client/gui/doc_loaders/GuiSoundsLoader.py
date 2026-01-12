@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing, ResMgr
 from debug_utils import LOG_WARNING
 from items import _xml

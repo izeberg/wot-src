@@ -1,7 +1,7 @@
+from __future__ import absolute_import
 from frameworks.wulf import ViewSettings
 from gui.impl.gen import R
 from gui.impl.lobby.dialogs.full_screen_dialog_view import FullScreenDialogView
-from gui.sounds.filters import switchHangarFilteredFilter
 from helpers import dependency
 from resource_well.gui.feature.resource_well_helpers import fillVehicleCounter
 from resource_well.gui.impl.gen.view_models.views.lobby.no_serial_vehicles_confirm_model import NoSerialVehiclesConfirmModel
@@ -13,7 +13,7 @@ class NoSerialVehiclesConfirm(FullScreenDialogView):
     __resourceWell = dependency.descriptor(IResourceWellController)
 
     def __init__(self, rewardID, *args, **kwargs):
-        settings = ViewSettings(R.views.resource_well.lobby.feature.NoSerialVehiclesConfirm(), model=NoSerialVehiclesConfirmModel(), args=args, kwargs=kwargs)
+        settings = ViewSettings(R.views.resource_well.mono.lobby.no_serial_vehicles_confirm(), model=NoSerialVehiclesConfirmModel(), args=args, kwargs=kwargs)
         super(NoSerialVehiclesConfirm, self).__init__(settings)
         self.__rewardID = rewardID
         self.__additionalData = {}
@@ -27,11 +27,6 @@ class NoSerialVehiclesConfirm(FullScreenDialogView):
         with self.viewModel.transaction() as (model):
             fillVehicleCounter(self.__rewardID, vehicleCounterModel=model.vehicleCounter, resourceWell=self.__resourceWell)
             model.setVehicleName(self.__resourceWell.getRewardVehicle(self.__rewardID).shortUserName)
-        switchHangarFilteredFilter(on=True)
-
-    def _finalize(self):
-        switchHangarFilteredFilter(on=False)
-        super(NoSerialVehiclesConfirm, self)._finalize()
 
     def _addListeners(self):
         self.viewModel.confirm += self._onAccept

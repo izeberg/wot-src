@@ -1,11 +1,12 @@
-import typing, CGF
-from vehicles.components.vehicle_component import VehicleGunPrefabDynamicComponent
-from vehicles.parts.guns import IGunComponent, createGunShootingEvents
+import typing
+from gui.shared.utils.decorators import ReprInjector
+from vehicles.components.vehicle_component import VehicleDynamicComponent
+from vehicles.parts.guns.common import IGunComponent, createGunShootingEvents
 if typing.TYPE_CHECKING:
-    from items.vehicles import VehicleDescriptor
-    from vehicles.parts.guns import IGunShootingEvents
+    from vehicles.parts.guns.common import IGunShootingEvents
 
-class SecondaryGunComponent(VehicleGunPrefabDynamicComponent, IGunComponent):
+@ReprInjector.withParent()
+class SecondaryGunComponent(VehicleDynamicComponent, IGunComponent):
 
     def __init__(self):
         super(SecondaryGunComponent, self).__init__()
@@ -19,9 +20,6 @@ class SecondaryGunComponent(VehicleGunPrefabDynamicComponent, IGunComponent):
     def getGunInstallationIndex(self):
         return self.gunInstallationIndex
 
-    def getGunRootGameObject(self):
-        return self._prefabRoot
-
     def onDestroy(self):
         self.__shootingEvents.destroy()
         super(SecondaryGunComponent, self).onDestroy()
@@ -31,9 +29,6 @@ class SecondaryGunComponent(VehicleGunPrefabDynamicComponent, IGunComponent):
 
     def onMultiShot(self, gunIndexes):
         self.__shootingEvents.processMultiShot(gunIndexes)
-
-    def _getComponentPrefabsSets(self, typeDescriptor):
-        return typeDescriptor.gunInstallations[self.getGunInstallationIndex()].gun.prefabs
 
     def _onAppearanceReady(self):
         super(SecondaryGunComponent, self)._onAppearanceReady()

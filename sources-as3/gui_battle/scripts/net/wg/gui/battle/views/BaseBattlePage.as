@@ -61,10 +61,6 @@ package net.wg.gui.battle.views
       
       private static const RIBBONS_MIN_BOTTOM_PADDING_Y:int = 116;
       
-      private static const CALLOUT_CENTER_SCREEN_OFFSET_Y:int = 14;
-      
-      private static const CALLOUT_CENTER_SCREEN_OFFSET_X:int = 136;
-      
       private static const AMMUNITION_PANEL_Y_SHIFT:int = 498;
       
       private static const HIT_TEST_FIX_NAME:String = "HitTest Fix";
@@ -156,12 +152,13 @@ package net.wg.gui.battle.views
       override public function updateStage(param1:Number, param2:Number) : void
       {
          var _loc3_:int = 0;
+         var _loc4_:int = 0;
          var _loc5_:int = 0;
          var _loc6_:Number = NaN;
          var _loc7_:int = 0;
          super.updateStage(param1,param2);
          _loc3_ = param1 >> 1;
-         var _loc4_:int = param2 >> 1;
+         _loc4_ = param2 >> 1;
          _originalWidth = param1;
          _originalHeight = param2;
          setSize(param1,param2);
@@ -170,11 +167,8 @@ package net.wg.gui.battle.views
             this.prebattleTimer.updateStage(param1,param2);
          }
          this.updatePrebattleTimerPosition(_loc3_);
-         if(this.damagePanel)
-         {
-            this.damagePanel.x = 0;
-            this.damagePanel.y = param2 - this.damagePanel.initedHeight;
-         }
+         this.damagePanel.x = 0;
+         this.damagePanel.y = param2 - this.damagePanel.initedHeight;
          if(this.battleTimer)
          {
             this.battleTimer.x = param1 - this.battleTimer.initedWidth;
@@ -206,10 +200,7 @@ package net.wg.gui.battle.views
          this.updateMinimapPosition();
          this.vehicleErrorMessageListPositionUpdate();
          this.playerMessageListPositionUpdate();
-         if(this.vehicleMessageList)
-         {
-            this.vehicleMessageList.updateStage();
-         }
+         this.vehicleMessageList.updateStage();
          this.vehicleMessageListPositionUpdate();
          this.sixthSense.x = _loc3_;
          this.sixthSense.y = param2 >> 2;
@@ -222,8 +213,7 @@ package net.wg.gui.battle.views
          this.gameMessagesPanel.x = _loc3_;
          if(this.calloutPanel)
          {
-            this.calloutPanel.x = _loc3_ - CALLOUT_CENTER_SCREEN_OFFSET_X;
-            this.calloutPanel.y = _loc4_ + CALLOUT_CENTER_SCREEN_OFFSET_Y;
+            this.calloutPanel.updateStage(param1,param2);
          }
          if(this.prebattleAmmunitionPanel)
          {
@@ -282,10 +272,7 @@ package net.wg.gui.battle.views
          {
             this.registerComponent(this.prebattleTimer,BATTLE_VIEW_ALIASES.PREBATTLE_TIMER);
          }
-         if(this.damagePanel)
-         {
-            this.registerComponent(this.damagePanel,BATTLE_VIEW_ALIASES.DAMAGE_PANEL);
-         }
+         this.registerComponent(this.damagePanel,BATTLE_VIEW_ALIASES.DAMAGE_PANEL);
          if(this.battleTimer)
          {
             this.registerComponent(this.battleTimer,BATTLE_VIEW_ALIASES.BATTLE_TIMER);

@@ -514,7 +514,7 @@
 			</component>
 		</ComponentPool>
 		<ComponentPool>
-			<type>GunEffect</type>
+			<type>BW::Gun::Effects::EffectComponent</type>
 			<version>1</version>
 			<component>
 				<UUID>56284f74-a529-3eeb-bb64-10f52c5a1c00</UUID>

@@ -33,6 +33,7 @@
 						<type>BoolT</type>
 					</param>
 				</params>
+				<slots/>
 			</block>
 			<block>
 				<class>Variable</class>
@@ -59,10 +60,13 @@
 						<type>BoolT</type>
 					</param>
 				</params>
+				<slots/>
 			</block>
 			<block>
 				<class>If</class>
 				<id>If_7</id>
+				<params/>
+				<slots/>
 			</block>
 			<block>
 				<class>Sequence</class>
@@ -74,10 +78,13 @@
 						<type>IntT</type>
 					</param>
 				</params>
+				<slots/>
 			</block>
 			<block>
 				<class>If</class>
 				<id>If_8</id>
+				<params/>
+				<slots/>
 			</block>
 			<block>
 				<class>GetComponentProperty</class>
@@ -89,6 +96,7 @@
 						<type>StringT</type>
 					</param>
 				</params>
+				<slots/>
 			</block>
 			<block>
 				<class>IterateArray</class>
@@ -110,6 +118,7 @@
 			<block>
 				<class>CompareString</class>
 				<id>CompareString_2</id>
+				<params/>
 				<slots>
 					<slot>
 						<name>b</name>
@@ -124,6 +133,7 @@
 			<block>
 				<class>CompareString</class>
 				<id>CompareString_1</id>
+				<params/>
 				<slots>
 					<slot>
 						<name>b</name>
@@ -155,6 +165,8 @@
 			<block>
 				<class>GetSpaceId</class>
 				<id>GetSpaceId_1</id>
+				<params/>
+				<slots/>
 			</block>
 			<block>
 				<class>SetVariable</class>
@@ -167,6 +179,7 @@
 						<type>TypeT</type>
 					</param>
 				</params>
+				<slots/>
 			</block>
 			<block>
 				<class>SetVariable</class>
@@ -179,14 +192,19 @@
 						<type>TypeT</type>
 					</param>
 				</params>
+				<slots/>
 			</block>
 			<block>
 				<class>StartScript</class>
 				<id>StartScript_1</id>
+				<params/>
+				<slots/>
 			</block>
 			<block>
 				<class>ActivateGameObject</class>
 				<id>ActivateGameObject_4</id>
+				<params/>
+				<slots/>
 			</block>
 			<block>
 				<class>GetVariable</class>
@@ -199,14 +217,19 @@
 						<type>TypeT</type>
 					</param>
 				</params>
+				<slots/>
 			</block>
 			<block>
 				<class>IsValid</class>
 				<id>IsValid_1</id>
+				<params/>
+				<slots/>
 			</block>
 			<block>
 				<class>If</class>
 				<id>If_9</id>
+				<params/>
+				<slots/>
 			</block>
 			<block>
 				<class>GetVariable</class>
@@ -219,6 +242,7 @@
 						<type>TypeT</type>
 					</param>
 				</params>
+				<slots/>
 			</block>
 			<block>
 				<class>And</class>
@@ -230,10 +254,13 @@
 						<type>IntT</type>
 					</param>
 				</params>
+				<slots/>
 			</block>
 			<block>
 				<class>IsValid</class>
 				<id>IsValid_2</id>
+				<params/>
+				<slots/>
 			</block>
 			<block>
 				<class>GetVariable</class>
@@ -246,18 +273,13 @@
 						<type>TypeT</type>
 					</param>
 				</params>
+				<slots/>
 			</block>
 			<block>
 				<class>DeactivateGameObject</class>
 				<id>DeactivateGameObject_6</id>
-			</block>
-			<block>
-				<class>OnDogTokenReceived</class>
-				<id>OnDogTokenReceived_1</id>
-			</block>
-			<block>
-				<class>If</class>
-				<id>If_10</id>
+				<params/>
+				<slots/>
 			</block>
 			<block>
 				<class>GetVariable</class>
@@ -270,10 +292,13 @@
 						<type>TypeT</type>
 					</param>
 				</params>
+				<slots/>
 			</block>
 			<block>
 				<class>OnStorageStaticTriggerChanged</class>
 				<id>OnStorageStaticTriggerChanged_1</id>
+				<params/>
+				<slots/>
 			</block>
 			<block>
 				<class>SwitchOnEnum</class>
@@ -285,26 +310,37 @@
 						<type>TypeT</type>
 					</param>
 				</params>
+				<slots/>
 			</block>
 			<block>
 				<class>DeactivateGameObject</class>
 				<id>DeactivateGameObject_3</id>
+				<params/>
+				<slots/>
 			</block>
 			<block>
 				<class>ActivateGameObject</class>
 				<id>ActivateGameObject_6</id>
-			</block>
-			<block>
-				<class>DeactivateGameObject</class>
-				<id>DeactivateGameObject_7</id>
-			</block>
-			<block>
-				<class>DeactivateGameObject</class>
-				<id>DeactivateGameObject_4</id>
+				<params/>
+				<slots/>
 			</block>
 			<block>
 				<class>GetStorageStaticTrigger</class>
 				<id>GetStorageStaticTrigger_1</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>DeactivateGameObject</class>
+				<id>DeactivateGameObject_7</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>DeactivateGameObject</class>
+				<id>DeactivateGameObject_4</id>
+				<params/>
+				<slots/>
 			</block>
 			<block>
 				<class>ContextGetSelf</class>
@@ -321,6 +357,7 @@
 						<type>StringT</type>
 					</param>
 				</params>
+				<slots/>
 			</block>
 		</blocks>
 		<connections>
@@ -493,18 +530,6 @@
 				<output>value</output>
 			</connection>
 			<connection>
-				<from>OnDogTokenReceived_1</from>
-				<input>input</input>
-				<to>If_10</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>OnDogTokenReceived_1</from>
-				<input>value</input>
-				<to>If_10</to>
-				<output>isReceived</output>
-			</connection>
-			<connection>
 				<from>If_9</from>
 				<input>in</input>
 				<to>SwitchOnEnum_1</to>
@@ -515,12 +540,6 @@
 				<input>in</input>
 				<to>SwitchOnEnum_1</to>
 				<output>out</output>
-			</connection>
-			<connection>
-				<from>If_10</from>
-				<input>in</input>
-				<to>SwitchOnEnum_1</to>
-				<output>true</output>
 			</connection>
 			<connection>
 				<from>GetStorageStaticTrigger_1</from>

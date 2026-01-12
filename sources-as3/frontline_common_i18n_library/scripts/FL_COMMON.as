@@ -50,6 +50,12 @@ package
       public static const WIDGET_EVENTSTARTSOON:String = "#frontline.fl_common:widget/eventStartSoon";
       
       public static const WIDGET_MAXTIER:String = "#frontline.fl_common:widget/maxTier";
+      
+      public static const BATTLECAROUSEL_RESETFILTERS_TITLE:String = "#frontline.fl_common:battleCarousel/resetFilters/title";
+      
+      public static const BATTLECAROUSEL_RESETFILTERS_BUTTON:String = "#frontline.fl_common:battleCarousel/resetFilters/button";
+      
+      public static const FILTERPOPOVER_NOTE:String = "#frontline.fl_common:filterPopover/note";
        
       
       public function FL_COMMON()

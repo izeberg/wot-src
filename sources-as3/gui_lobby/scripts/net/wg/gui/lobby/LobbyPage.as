@@ -20,8 +20,6 @@ package net.wg.gui.lobby
    import net.wg.gui.components.containers.inject.GFInjectComponent;
    import net.wg.gui.components.vehicleHitArea.VehicleHitAreaComponent;
    import net.wg.gui.events.LobbyEvent;
-   import net.wg.gui.lobby.header.LobbyHeader;
-   import net.wg.gui.lobby.header.events.HeaderEvents;
    import net.wg.gui.lobby.interfaces.ILobbyPage;
    import net.wg.gui.lobby.post.TeaserEvent;
    import net.wg.gui.lobby.settings.config.ControlsFactory;
@@ -56,8 +54,6 @@ package net.wg.gui.lobby
       public var subViewContainer:ILobbyPageSubContainer = null;
       
       public var notificationPopupViewer:NotificationPopUpViewer;
-      
-      public var header:LobbyHeader;
       
       public var waiting:Waiting = null;
       
@@ -122,10 +118,6 @@ package net.wg.gui.lobby
          this.updateStage(App.appWidth,App.appHeight);
          this.vehicleHitArea.addEventListener(MouseEvent.ROLL_OVER,this.onVehicleHitAreaRollOverHandler);
          this.vehicleHitArea.addEventListener(MouseEvent.ROLL_OUT,this.onVehicleHitAreaRollOutHandler);
-         if(this.header)
-         {
-            this.header.addEventListener(HeaderEvents.VISIBILITY_CHANGED,this.onHeaderVisibilityChanged);
-         }
       }
       
       override protected function allowHandleInput() : Boolean
@@ -136,7 +128,6 @@ package net.wg.gui.lobby
       override protected function onSetModalFocus(param1:InteractiveObject) : void
       {
          this.tryToFocusContent();
-         super.onSetModalFocus(param1);
       }
       
       override protected function onInitModalFocus(param1:InteractiveObject) : void
@@ -190,10 +181,6 @@ package net.wg.gui.lobby
          this.vehicleHitArea.hit.removeEventListener(MouseEvent.MOUSE_WHEEL,this.onHitAreaMouseWheelHandler);
          this.vehicleHitArea.removeEventListener(MouseEvent.ROLL_OVER,this.onVehicleHitAreaRollOverHandler);
          this.vehicleHitArea.removeEventListener(MouseEvent.ROLL_OUT,this.onVehicleHitAreaRollOutHandler);
-         if(this.header)
-         {
-            this.header.removeEventListener(HeaderEvents.VISIBILITY_CHANGED,this.onHeaderVisibilityChanged);
-         }
          this.vehicleHitArea.dispose();
          this.vehicleHitArea = null;
          this.removePanels();
@@ -540,11 +527,6 @@ package net.wg.gui.lobby
       {
          this._resetDragParams = true;
          notifyCursorOver3dSceneS(false);
-      }
-      
-      private function onHeaderVisibilityChanged(param1:HeaderEvents) : void
-      {
-         this.updateStage(App.appWidth,App.appHeight);
       }
       
       private function onHitAreaMouseWheelHandler(param1:MouseEvent) : void

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.shared.notifications import NotificationGuiSettings, NotificationPriorityLevel
 from helpers import dependency
 from messenger import g_settings

@@ -1,4 +1,6 @@
+from __future__ import absolute_import
 import logging
+from typing import Optional
 from gui import SystemMessages
 from gui.SystemMessages import SM_TYPE
 from gui.impl import backport
@@ -21,6 +23,7 @@ class ResourceWellListener(_NotificationListener):
 
     def __init__(self):
         self.__prevIsEnabled = None
+        self.__prevIsFinished = None
         super(ResourceWellListener, self).__init__()
         return
 
@@ -42,10 +45,20 @@ class ResourceWellListener(_NotificationListener):
 
     def __tryNotify(self):
         self.__checkPause()
-        if self.__resourceWell.isActive() and not isStartNotificationShown():
+        if not isStartNotificationShown() and self.__resourceWell.isActive():
             self.__pushStarted()
-        elif self.__resourceWell.isFinished() and isStartNotificationShown() and not isFinishNotificationShown():
-            self.__pushFinished()
+            return
+        else:
+            if self.__prevIsFinished is None:
+                self.__prevIsFinished = self.__resourceWell.isFinished()
+                return
+            isFinished = self.__resourceWell.isFinished()
+            if not isFinishNotificationShown() and self.__prevIsFinished != isFinished:
+                self.__prevIsFinished = isFinished
+                if isFinished:
+                    self.__pushFinished()
+                return
+            return
 
     def __checkPause(self):
         if not self.__resourceWell.isStarted() or self.__resourceWell.isFinished():
@@ -87,13 +100,13 @@ class ResourceWellListener(_NotificationListener):
         return
 
     def __getSingleVehicleText(self):
-        rewardID = first(self.__resourceWell.config.rewards.keys())
+        rewardID = first(self.__resourceWell.config.rewards)
         vehicle = self.__resourceWell.getRewardVehicle(rewardID)
         vehicleName = text_styles.crystal(vehicle.shortUserName if vehicle is not None else '')
         return backport.text(R.strings.messenger.serviceChannelMessages.resourceWell.oneVehicleStart.text(), vehicle=vehicleName)
 
     def __getTwoVehiclesText(self):
-        rewardIDs = self.__resourceWell.config.rewards.keys()
+        rewardIDs = list(self.__resourceWell.config.rewards)
         if not len(rewardIDs) == 2:
             _logger.error('At parallel launch must be two vehicles, got %s', rewardIDs)
             return

@@ -1,3 +1,4 @@
+from __future__ import absolute_import, print_function
 import ResMgr, BigWorld, Math, math
 from constants import TREE_TAG, CUSTOM_DESTRUCTIBLE_TAGS
 import string
@@ -348,7 +349,7 @@ def _readDestructiblesEffects(sec):
                     variants.append(_readEffectsTimeLine(varSec))
 
             except Exception:
-                print Exception, groupName, groupSec, effName
+                print(Exception, groupName, groupSec, effName)
                 LOG_CURRENT_EXCEPTION()
 
             groupEffects[effName] = tuple(variants)

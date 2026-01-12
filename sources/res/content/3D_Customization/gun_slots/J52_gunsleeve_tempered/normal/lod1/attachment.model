@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<extent>64.000000</extent>
+	<tank>true</tank>
+	<parent>content/3D_Customization/gun_slots/J52_gunsleeve_tempered/normal/lod2/attachment</parent>
+	<visibilityBox>
+		<min>-0.337475 -0.412766 -1.954885</min>
+		<max>0.312953 0.332865 2.886861</max>
+	</visibilityBox>
+	<nodefullVisual>content/3D_Customization/gun_slots/J52_gunsleeve_tempered/normal/lod1/attachment</nodefullVisual>
+</root>
