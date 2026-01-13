@@ -1,31 +1,32 @@
 import logging
 from itertools import chain
 from adisp import adisp_process
-from frameworks.wulf import WindowFlags, WindowLayer
+from frameworks.wulf import WindowFlags
 from frameworks.wulf.view.array import fillStringsArray
+from gui.game_control.links import URLMacros
 from gui.impl.gen import R
 from gui.impl.gen.view_models.views.lobby.pet_system.pet_card_model import PetCardModel
 from gui.impl.gen.view_models.views.lobby.pet_system.pet_name_model import PetNameModel
 from gui.impl.gen.view_models.views.lobby.pet_system.pet_storage_view_model import PetStorageViewModel, SynergyStateEnum, VisibilityStateEnum
-from gui.impl.lobby.new_year.ny_views_helpers import NyExecuteCtx
-from gui.impl.lobby.new_year.states import TournamentState
+from gui.impl.gen.view_models.views.lobby.pet_system.promotion_model import PromoBonus
 from gui.impl.lobby.pet_system.tooltips.synergy_tooltip import SynergyTooltip
 from gui.impl.pub import WindowImpl
 from gui.impl.pub.view_component import ViewComponent
-from gui.pet_system.bonus_helper import BonusItem
+from gui.pet_system.bonus_helper import BonusItem, BonusNameToPromoStr
 from gui.pet_system.pet_item_helper import PetItem, PromoPetItem
 from gui.pet_system.pet_ui_settings import PetUISettings
 from gui.pet_system.processor import SelectActivePetProcessor, SelectPetActiveBonusProcessor, SelectPetNameProcessor, SelectPetStateProcessor
 from gui.pet_system.synergy_helper import SynergyItem
-from gui.shared import EVENT_BUS_SCOPE, events as events_constants
-from gui.shared.event_dispatcher import showPetInfoPage, showHangar
+from gui.server_events.events_dispatcher import showMissions
+from gui.shared import EVENT_BUS_SCOPE
+from gui.shared import events as events_constants
+from gui.shared import g_eventBus
+from gui.shared.event_dispatcher import showPetInfoPage, showShop, showHangar
 from helpers import dependency
-from new_year.ny_constants import NYObjects
 from pet_system_common import pet_constants
 from pet_system_common.PetPromoConfig import PromoSource
 from pet_system_common.pet_constants import PetStateBehavior
 from shared_utils import first
-from skeletons.gui.app_loader import IAppLoader
 from skeletons.gui.lobby_context import ILobbyContext
 from skeletons.gui.pet_system import IPetSystemController
 _logger = logging.getLogger(__name__)
@@ -35,21 +36,17 @@ STATE_MAPPING = {VisibilityStateEnum.ALWAYS.value: PetStateBehavior.BASIC,
 MODEL_STATE_MAPPING = {PetStateBehavior.BASIC: VisibilityStateEnum.ALWAYS, 
    PetStateBehavior.CALM: VisibilityStateEnum.DISABLEANIMATION, 
    PetStateBehavior.HIDDEN: VisibilityStateEnum.ONLYINTOPETPLACE}
-_CHANGE_LAYERS_VISIBILITY = (
- WindowLayer.MARKER,)
 
 class PetStorageView(ViewComponent):
     LAYOUT_ID = R.views.mono.pet_system.pet_storage()
     __petController = dependency.descriptor(IPetSystemController)
     lobbyContext = dependency.descriptor(ILobbyContext)
-    __appLoader = dependency.descriptor(IAppLoader)
 
     def __init__(self, *args, **kwargs):
         super(PetStorageView, self).__init__(self.LAYOUT_ID, PetStorageViewModel, *args, **kwargs)
 
     def _onLoading(self, *args, **kwargs):
         super(PetStorageView, self)._onLoading(*args, **kwargs)
-        self.__changeLayersVisibility(True, _CHANGE_LAYERS_VISIBILITY)
         self.__update()
 
     def _getEvents(self):
@@ -72,7 +69,7 @@ class PetStorageView(ViewComponent):
          (
           self.viewModel.onInfoPageOpen, self.__openInfoPage),
          (
-          self.viewModel.promotionModel.onChallengeSelect, self.__onChallengeSelect),
+          self.viewModel.promotionModel.onChallengeSelect, self.__onToGameView),
          (
           self.viewModel.promotionModel.onPurchaseSelect, self.__onToPurchase),
          (
@@ -94,10 +91,6 @@ class PetStorageView(ViewComponent):
          (
           events_constants.PetSystemEvent.LAST_SEEN_SYNERGY_LEVEL_UPDATED,
           self.__onUpdateSynergy, EVENT_BUS_SCOPE.LOBBY),)
-
-    def _finalize(self):
-        self.__changeLayersVisibility(False, _CHANGE_LAYERS_VISIBILITY)
-        super(PetStorageView, self)._finalize()
 
     @property
     def viewModel(self):
@@ -142,7 +135,12 @@ class PetStorageView(ViewComponent):
                     promoPetSources = self.__petController.getPetsPromoConfig().getSources(currentPetId)
                     tx.promotionModel.setIsChallengeButtonEnabled(PromoSource.QUEST_PROGRESSION in promoPetSources)
                     tx.promotionModel.setIsPurchaseButtonEnabled(PromoSource.SHOP in promoPetSources)
-                    promoStrList = itemClass.getPetBenefits(currentPetId)
+                    promoStrList = []
+                    petBonusID = first(BonusItem.getPetBonuses(currentPetId))
+                    promoStrList.append(BonusNameToPromoStr.get(BonusItem.getBonusName(petBonusID)))
+                    promoStrList.append(PromoBonus.EVENTS.value)
+                    if self.__petController.getGeneralConfig().showCaseEnabled:
+                        promoStrList.append(PromoBonus.SHOWOFF.value)
                     promoBonuses = tx.promotionModel.getPromotionBonuses()
                     fillStringsArray(promoStrList, promoBonuses)
                     self.__markPromoAsSeen(currentPetId, tx)
@@ -154,6 +152,7 @@ class PetStorageView(ViewComponent):
                 tx.setIsPetSelected(currentPetId == activePetId)
                 tx.setHasUniqueName(itemClass.getIsDefaultNameLocked(currentPetId))
                 tx.setVisibilityState(MODEL_STATE_MAPPING.get(self.__petController.getStateBehavior()))
+                tx.setIsUnsuitableMode(not self.__petController.checkBonusCapsForPetBonus())
             self.__tryToShowEvent()
 
     def __getSynergyState(self, petID):
@@ -320,23 +319,21 @@ class PetStorageView(ViewComponent):
                     return
             self.__update()
 
+    @adisp_process
     def __onToPurchase(self):
-        self.destroyWindow()
-        ctx = NyExecuteCtx('showPetPurchaseDialog', (), {'instantly': True})
-        TournamentState.goTo(objectName=NYObjects.CHALLENGE, instantly=True, executeAfterLoaded=ctx)
+        shopUrl = PromoPetItem.getPromoShopUrl(self.viewModel.getPetID())
+        url = PromoPetItem.getPromoUrl(self.viewModel.getPetID())
+        if not url and not shopUrl:
+            _logger.error('Invalid urls for pet id %s', self.viewModel.getPetID())
+            return
+        if shopUrl:
+            showShop(shopUrl)
+        else:
+            url = yield URLMacros().parse(url)
+            g_eventBus.handleEvent(events_constants.OpenLinkEvent(events_constants.OpenLinkEvent.SPECIFIED, url=url))
 
-    def __onChallengeSelect(self):
-        self.destroyWindow()
-        TournamentState.goTo(objectName=NYObjects.CHALLENGE, instantly=True)
-
-    def __changeLayersVisibility(self, isHide, layers):
-        lobby = self.__appLoader.getDefLobbyApp()
-        if lobby:
-            if isHide:
-                lobby.containerManager.hideContainers(layers, time=0.3)
-            else:
-                lobby.containerManager.showContainers(layers, time=0.3)
-            self.__appLoader.getApp().graphicsOptimizationManager.switchOptimizationEnabled(not isHide)
+    def __onToGameView(self):
+        showMissions()
 
 
 class PetStorageViewWindow(WindowImpl):

@@ -187,6 +187,16 @@
 			<UUID>c71a81e7-d352-3d3b-b379-ca5766f39c03</UUID>
 			<flags>0</flags>
 		</GameObject>
+		<GameObject>
+			<name>camera_free_far</name>
+			<UUID>7a26bb8e-0d12-3251-9467-2b6c87eac6ee</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>camera_free_far</name>
+			<UUID>db1321f5-7d8a-379c-bf7c-1cc0778c4a87</UUID>
+			<flags>0</flags>
+		</GameObject>
 	</GameObjects>
 	<components>
 		<ComponentPool>
@@ -549,6 +559,26 @@
 					<property>
 						<name>Parent</name>
 						<link>465307bc-afdc-3af8-9902-19a9221230d3</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>7a26bb8e-0d12-3251-9467-2b6c87eac6ee</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>9e346ffb-ebd7-40d1-90c0-43342b5e8448</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>db1321f5-7d8a-379c-bf7c-1cc0778c4a87</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>7a26bb8e-0d12-3251-9467-2b6c87eac6ee</link>
 					</property>
 				</config>
 			</component>
@@ -1411,7 +1441,7 @@
 					<property>
 						<name>Rotation</name>
 						<value>
-							0.122173 -1.7366 1.50131e-08
+							0.122173 -1.7366 1.87663e-08
 							<!--BW_String-->
 						</value>
 					</property>
@@ -1463,6 +1493,57 @@
 						<name>Rotation</name>
 						<value>
 							0.392699 3.00197 3.83061e-08
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>7a26bb8e-0d12-3251-9467-2b6c87eac6ee</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							-0.258819 0.47702 -0.965926
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>
+							0.999998 1 0.999998
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>
+							3.26407e-07 0.261799 -5.33683e-08
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>db1321f5-7d8a-379c-bf7c-1cc0778c4a87</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							-1.60724 4.78354 11.4361
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>
+							0.392699 3.00197 4.63706e-08
 							<!--BW_String-->
 						</value>
 					</property>
@@ -2006,6 +2087,37 @@
 					<property>
 						<name>Name</name>
 						<value>operation_8_camera_free</value>
+					</property>
+					<property>
+						<name>Rotation sensitivity</name>
+						<value>
+							0.005
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Zoom sensitivity</name>
+						<value>
+							0.003
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Fluency</name>
+						<value>
+							0.1
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>db1321f5-7d8a-379c-bf7c-1cc0778c4a87</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Name</name>
+						<value>operation_8_camera_free_far</value>
 					</property>
 					<property>
 						<name>Rotation sensitivity</name>
@@ -3127,6 +3239,52 @@
 					</property>
 				</config>
 			</component>
+			<component>
+				<UUID>db1321f5-7d8a-379c-bf7c-1cc0778c4a87</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>_requestRecalc</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>YawLimits</name>
+						<value>-8 -8</value>
+					</property>
+					<property>
+						<name>PitchLimits</name>
+						<value>
+							-22.5 -22.5
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>DistLimits</name>
+						<value>
+							13.5 13.5
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>StartYaw</name>
+						<value>-8</value>
+					</property>
+					<property>
+						<name>StartPitch</name>
+						<value>
+							-22.5
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>StartDist</name>
+						<value>
+							13.5
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
 		</ComponentPool>
 		<ComponentPool>
 			<type>ParallaxComponent</type>
@@ -3488,6 +3646,27 @@
 					</property>
 				</config>
 			</component>
+			<component>
+				<UUID>db1321f5-7d8a-379c-bf7c-1cc0778c4a87</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>DistDelta</name>
+						<value>0 0</value>
+					</property>
+					<property>
+						<name>AngelsDelta</name>
+						<value>
+							0.26 0.15
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Smoothing</name>
+						<value>5</value>
+					</property>
+				</config>
+			</component>
 		</ComponentPool>
 		<ComponentPool>
 			<type>FovComponent</type>
@@ -3664,6 +3843,16 @@
 			</component>
 			<component>
 				<UUID>c71a81e7-d352-3d3b-b379-ca5766f39c03</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Fov</name>
+						<value>90</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>db1321f5-7d8a-379c-bf7c-1cc0778c4a87</UUID>
 				<flags>3</flags>
 				<config>
 					<property>
@@ -3916,6 +4105,20 @@
 			</component>
 			<component>
 				<UUID>c71a81e7-d352-3d3b-b379-ca5766f39c03</UUID>
+				<flags>2</flags>
+				<config>
+					<property>
+						<name>ChangeStartParams</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>DrawFrustrum</name>
+						<value>0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>db1321f5-7d8a-379c-bf7c-1cc0778c4a87</UUID>
 				<flags>2</flags>
 				<config>
 					<property>

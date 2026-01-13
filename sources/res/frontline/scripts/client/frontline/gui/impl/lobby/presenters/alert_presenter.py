@@ -1,5 +1,7 @@
+from frontline.gui.frontline_helpers import isHangarAvailable, getFrontlineState
 from frontline.gui.impl.gen.view_models.views.lobby.components.alert_message_model import AlertMessageModel
 from CurrentVehicle import g_currentVehicle, g_currentPreviewVehicle
+from frontline.gui.impl.gen.view_models.views.lobby.views.frontline_const import FrontlineState
 from gui.impl import backport
 from gui.impl.gen import R
 from gui.impl.pub.view_component import ViewComponent
@@ -54,7 +56,10 @@ class AlertPresenter(ViewComponent[AlertMessageModel]):
     def _updateModel(self):
         with self.viewModel.transaction() as (vm):
             additionalCriteria = ~REQ_CRITERIA.VEHICLE.EXPIRED_RENT
-            if not self.__epicController.isCurrentCycleActive():
+            frontlineState, _, _ = getFrontlineState()
+            if frontlineState is FrontlineState.ANNOUNCE:
+                vm.setMessage('')
+            elif not self.__epicController.isCurrentCycleActive() and not isHangarAvailable():
                 vm.setMessage(backport.text(R.strings.fl_hangar.alert.modeEnded()))
             elif not self.__epicController.hasAvailablePrimeTimeServers():
                 vm.setMessage(backport.text(R.strings.fl_hangar.alert.allServersAreUnavailable()))

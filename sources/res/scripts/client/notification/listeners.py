@@ -3,7 +3,7 @@ from abc import ABCMeta
 from collections import defaultdict
 from functools import partial
 from typing import TYPE_CHECKING
-from account_helpers.AccountSettings import INTEGRATED_AUCTION_NOTIFICATIONS, IS_BATTLE_PASS_EXTRA_START_NOTIFICATION_SEEN, IS_BATTLE_PASS_START_NOTIFICATION_SEEN, LOOT_BOXES_WAS_FINISHED, LOOT_BOXES_WAS_STARTED, PROGRESSIVE_REWARD_VISITED, RECRUITS_NOTIFICATIONS, SENIORITY_AWARDS_COINS_REMINDER_SHOWN_TIMESTAMP, VEH_SKILL_TREE_POPUP_SHOWN, VEH_SKILL_TREE_RECORDED_NOFITICATION_NODE, BattleMatters, LAST_SEEN_COLLECTING_NOTIFY_TIME, NY_RESOURCE_COLLECTING_AVAILABLE, LAST_SEEN_FRIENDS_NOTIFY_TIME, LAST_SEEN_NO_FRIENDS_NOTIFY_TIME, NY_RESOURCE_FRIENDS_COLLECTING_AVAILABLE
+from account_helpers.AccountSettings import INTEGRATED_AUCTION_NOTIFICATIONS, IS_BATTLE_PASS_EXTRA_START_NOTIFICATION_SEEN, IS_BATTLE_PASS_START_NOTIFICATION_SEEN, LOOT_BOXES_WAS_FINISHED, LOOT_BOXES_WAS_STARTED, PROGRESSIVE_REWARD_VISITED, RECRUITS_NOTIFICATIONS, SENIORITY_AWARDS_COINS_REMINDER_SHOWN_TIMESTAMP, VEH_SKILL_TREE_POPUP_SHOWN, VEH_SKILL_TREE_RECORDED_NOFITICATION_NODE, BattleMatters
 from account_helpers.settings_core.settings_constants import SeniorityAwardsStorageKeys
 from gui.Scaleform.locale.SYSTEM_MESSAGES import SYSTEM_MESSAGES
 from gui.server_events.finders import PM_CAMPAIGNS_IDS, PM_SWITCHER_CAMPAIGN
@@ -12,8 +12,7 @@ from gui.Scaleform.framework.entities.View import ViewKey
 from gui.impl.lobby.gf_notifications import GFNotificationTemplates
 from gui.impl.lobby.gf_notifications.cache import getCache
 from gui.impl.lobby.vehicle_hub.sub_presenters.veh_skill_tree.utils import getCheapestAvailablePerk
-from gui.Scaleform.lobby_entry import getLobbyStateMachine
-from gui.impl.lobby.new_year.observers import HolidayOpsObserver
+from gui.server_events.pm_constants import IS_PM3_QUEST_ENABLED, DISABLED_PM_OPERATIONS, DISABLED_PM_MISSIONS, IS_PM2_QUEST_ENABLED, IS_REGULAR_QUEST_ENABLED
 from helpers.events_handler import EventsHandler
 from helpers.time_utils import getTimestampByStrDate
 from PlayerEvents import g_playerEvents
@@ -24,12 +23,6 @@ from collector_vehicle import CollectorVehicleConsts
 from constants import ARENA_BONUS_TYPE, AUTO_MAINTENANCE_RESULT, DAILY_QUESTS_CONFIG, DOG_TAGS_CONFIG, MAPS_TRAINING_ENABLED_KEY, PLAYER_SUBSCRIPTIONS_CONFIG, Configs, PremiumConfigs, SwitchState
 from debug_utils import LOG_DEBUG, LOG_ERROR
 from exchange.personal_discounts_constants import EXCHANGE_RATE_FREE_XP_NAME, EXCHANGE_RATE_GOLD_NAME, ExchangeRateShowFormat
-from gui.impl.gen.view_models.views.lobby.new_year.notifications.ny_resources_reminder_model import reminderType
-from items.components.ny_constants import NY_STATE
-from new_year.ny_constants import NY_MARKETPLACE_UNLOCK, NyWidgetTopMenu
-from new_year.friend_service_controller import BestFriendStatus, BestFriendFields
-from new_year.celebrity.celebrity_quests_helpers import isDogPageVisited
-from new_year.ny_resource_collecting_helper import getAvgResourcesByCollecting, isExtraCollectingAvailable, getNYResourceCollectingConfig, isCollectingAvailable
 from gui import SystemMessages
 from gui.ClientUpdateManager import g_clientUpdateManager
 from gui.Scaleform.genConsts.PERSONAL_EXCHANGE_RATES import PERSONAL_EXCHANGE_RATES
@@ -55,9 +48,8 @@ from gui.prb_control import prbInvitesProperty
 from gui.prb_control.entities.listener import IGlobalListener
 from gui.prestige.prestige_helpers import MAX_GRADE_ID, isFirstEntryNotificationShown, mapGradeIDToUI, setFirstEntryNotificationShown
 from gui.server_events.recruit_helper import getAllRecruitsInfo
-from gui.shared import g_eventBus, events, EVENT_BUS_SCOPE
+from gui.shared import events, g_eventBus
 from gui.shared.formatters import text_styles, time_formatters
-from gui.shared.gui_items.loot_box import NewYearLootBoxes
 from gui.shared.notifications import NotificationPriorityLevel
 from gui.shared.system_factory import collectAllNotificationsListeners, registerNotificationsListeners
 from gui.shared.utils import showInvitationInWindowsBar
@@ -73,11 +65,11 @@ from messenger.m_constants import PROTO_TYPE, SCH_CLIENT_MSG_TYPE, USER_ACTION_I
 from messenger.proto import proto_getter
 from messenger.proto.events import g_messengerEvents
 from messenger.proto.xmpp.xmpp_constants import XMPP_ITEM_TYPE
-from notification.decorators import BattleMattersReminderDecorator, BattlePassLockButtonDecorator, BattlePassSwitchChapterReminderDecorator, C2DProgressionStyleDecorator, C11nMessageDecorator, C11nProgressiveItemDecorator, ClanAppActionDecorator, ClanAppsDecorator, ClanInvitesActionDecorator, ClanInvitesDecorator, ClanSingleAppDecorator, ClanSingleInviteDecorator, CollectionCustomMessageDecorator, CollectionsLockButtonDecorator, EmailConfirmationReminderMessageDecorator, ExchangeRateDiscountDecorator, FriendshipRequestDecorator, IntegratedAuctionStageFinishDecorator, IntegratedAuctionStageStartDecorator, LockButtonMessageDecorator, LootBoxSystemDecorator, LowPriorityDecorator, MapboxButtonDecorator, MessageDecorator, MissingEventsDecorator, PersonalMission3QuestDecorator, PetSystemDecorator, PostProgressionDecorator, PrbInviteDecorator, PrestigeFirstEntryDecorator, PrestigeLvlUpDecorator, ProgressiveRewardDecorator, RecruitReminderMessageDecorator, SeniorityAwardsDecorator, VehSkillTreePerkAvailableDecorator, WGNCPopUpDecorator, WinbackSelectableRewardReminderDecorator, HOMessageButtonDecorator, HODogReminderDecorator, HOMarketplaceAvailableDecorator, HOResourceReminderDecorator, HOFriendResourceReminderDecorator, HONoFriendsReminderDecorator
+from notification.decorators import BattleMattersReminderDecorator, BattlePassLockButtonDecorator, BattlePassSwitchChapterReminderDecorator, C2DProgressionStyleDecorator, C11nMessageDecorator, C11nProgressiveItemDecorator, ClanAppActionDecorator, ClanAppsDecorator, ClanInvitesActionDecorator, ClanInvitesDecorator, ClanSingleAppDecorator, ClanSingleInviteDecorator, CollectionCustomMessageDecorator, CollectionsLockButtonDecorator, EmailConfirmationReminderMessageDecorator, ExchangeRateDiscountDecorator, FriendshipRequestDecorator, IntegratedAuctionStageFinishDecorator, IntegratedAuctionStageStartDecorator, LockButtonMessageDecorator, LootBoxSystemDecorator, LowPriorityDecorator, MapboxButtonDecorator, MessageDecorator, MissingEventsDecorator, PersonalMission3QuestDecorator, PetSystemDecorator, PostProgressionDecorator, PrbInviteDecorator, PrestigeFirstEntryDecorator, PrestigeLvlUpDecorator, ProgressiveRewardDecorator, RecruitReminderMessageDecorator, SeniorityAwardsDecorator, VehSkillTreePerkAvailableDecorator, WGNCPopUpDecorator, WinbackSelectableRewardReminderDecorator
 from notification.settings import NOTIFICATION_TYPE, NotificationData
 from personal_missions import PM_BRANCH
 from shared_utils import first
-from skeletons.account_helpers.settings_core import ISettingsCache, ISettingsCore
+from skeletons.account_helpers.settings_core import ISettingsCache
 from skeletons.gui.app_loader import IAppLoader
 from skeletons.gui.battle_matters import IBattleMattersController
 from skeletons.gui.game_control import IBattlePassController, ICollectionsSystemController, IEasyTankEquipController, IEventsNotificationsController, IExchangeRatesWithDiscountsProvider, IGameSessionController, ILimitedUIController, ILootBoxSystemController, ISeniorityAwardsController, ISteamCompletionController, IWinbackController
@@ -88,7 +80,6 @@ from skeletons.gui.login_manager import ILoginManager
 from skeletons.gui.platform.wgnp_controllers import IWGNPSteamAccRequestController
 from skeletons.gui.server_events import IEventsCache
 from skeletons.gui.shared import IItemsCache
-from skeletons.new_year import INewYearController, IFriendServiceController
 from uilogging.seniority_awards.constants import SeniorityAwardsLogSpaces
 from uilogging.seniority_awards.loggers import CoinsNotificationLogger, RewardNotificationLogger, VehicleSelectionNotificationLogger
 from weekly_quests_common.weekly_quests_schema import weeklyQuestsSchema
@@ -374,8 +365,6 @@ class ServiceChannelListener(_NotificationListener):
                 return PersonalMission3QuestDecorator
             if self.__needToLowerPriority(messageType):
                 return LowPriorityDecorator
-            if messageSubtype == SCH_CLIENT_MSG_TYPE.NY_EVENT_BUTTON_MESSAGE:
-                return HOMessageButtonDecorator
             if messageType == SYS_MESSAGE_TYPE.petAdded.index():
                 return PetSystemDecorator
             return MessageDecorator
@@ -1926,310 +1915,6 @@ class IntegratedAuctionListener(_NotificationListener):
         return eventType == AUCTION_START_EVENT_TYPE and not self.__isFinishNotificationActive() or eventType == AUCTION_FINISH_EVENT_TYPE
 
 
-class HODogReminderListener(BaseReminderListener):
-    __nyController = dependency.descriptor(INewYearController)
-    __eventsCache = dependency.descriptor(IEventsCache)
-    MSG_ID = 0
-
-    def __init__(self):
-        super(HODogReminderListener, self).__init__(NOTIFICATION_TYPE.HO_DOG_REMINDER, self.MSG_ID)
-
-    def start(self, model):
-        result = super(HODogReminderListener, self).start(model)
-        if result:
-            self.__tryNotify()
-            g_eventBus.addListener(events.NyDogEvent.DOG_PAGE_VISITED, self.__tryNotify, EVENT_BUS_SCOPE.LOBBY)
-        return result
-
-    def stop(self):
-        super(HODogReminderListener, self).stop()
-        g_eventBus.removeListener(events.NyDogEvent.DOG_PAGE_VISITED, self.__tryNotify, EVENT_BUS_SCOPE.LOBBY)
-
-    def _createDecorator(self, notificationData):
-        return HODogReminderDecorator(self._getNotificationId(), self._model())
-
-    def __tryNotify(self, *_):
-        state = None
-        for action in self.__eventsCache.getActions().itervalues():
-            if 'EventState' in action.getModifiersDict():
-                state = action.getModifiersDict()['EventState'].getState()
-
-        if not state == NY_STATE.IN_PROGRESS:
-            return
-        else:
-            needToAddOrUpdate = self.__isDogAvailable() and not isDogPageVisited()
-            self._notifyOrRemove(needToAddOrUpdate)
-            return
-
-    def __isDogAvailable(self):
-        return self.__nyController.isDogTokenReceived()
-
-
-class HOResourceReminderListener(BaseReminderListener):
-    __settingsCore = dependency.descriptor(ISettingsCore)
-    __nyController = dependency.descriptor(INewYearController)
-    __friendController = dependency.descriptor(IFriendServiceController)
-    MSG_ID = 0
-
-    def __init__(self):
-        super(HOResourceReminderListener, self).__init__(NOTIFICATION_TYPE.HO_RESOURCE_REMINDER, self.MSG_ID)
-
-    def start(self, model):
-        result = super(HOResourceReminderListener, self).start(model)
-        self.__tryNotify()
-        self.__nyController.resourceCollecting.onSwitchCollectingState += self.__tryNotify
-        self.__friendController.onSwitchFriendCollectingState += self.__tryNotify
-        return result
-
-    def stop(self):
-        super(HOResourceReminderListener, self).stop()
-        self.__nyController.resourceCollecting.onSwitchCollectingState -= self.__tryNotify
-        self.__friendController.onSwitchFriendCollectingState -= self.__tryNotify
-
-    def _createDecorator(self, notificationData):
-        return HOResourceReminderDecorator(self._getNotificationId(), self._model(), data=notificationData)
-
-    def _createNotificationData(self, **ctx):
-        return ctx.get('ctx')
-
-    def __tryNotify(self, isDefaultState=True):
-        if not self.__nyController.isEnabled():
-            return
-        canCollect = isCollectingAvailable(forceFriend=False)
-        lastSeenCollectingNotifyTime = AccountSettings.getSettings(LAST_SEEN_COLLECTING_NOTIFY_TIME)
-        serverUTCTime = time_utils.getServerUTCTime()
-        previousCollectingState = AccountSettings.getUIFlag(NY_RESOURCE_COLLECTING_AVAILABLE)
-        AccountSettings.setUIFlag(NY_RESOURCE_COLLECTING_AVAILABLE, canCollect)
-        if not canCollect:
-            self._notifyOrRemove(False)
-            return
-        notifyTimeout = getNYResourceCollectingConfig().getCollectingNotifyTimeout()
-        if not isDefaultState or canCollect and canCollect != previousCollectingState:
-            notifyTimeout = 0
-        if self.__nyController.isEnabled() and serverUTCTime >= lastSeenCollectingNotifyTime + notifyTimeout:
-            self._notifyOrRemove(False)
-            AccountSettings.setSettings(LAST_SEEN_COLLECTING_NOTIFY_TIME, serverUTCTime)
-            ctx = self.createCtx()
-            self._notifyOrRemove(True, isStateChanged=False, ctx=ctx)
-
-    @staticmethod
-    def createCtx():
-        resourcesCount = getAvgResourcesByCollecting(forceFriend=False)
-        isExtra = isExtraCollectingAvailable()
-        ctx = {'linkageData': {BestFriendFields.resourceCount: resourcesCount, BestFriendFields.isExtra: isExtra, 
-                           BestFriendFields.viewType: reminderType.PERSONAL.value}}
-        return ctx
-
-
-class HOFriendResourceReminderListener(BaseReminderListener):
-    __settingsCore = dependency.descriptor(ISettingsCore)
-    __nyController = dependency.descriptor(INewYearController)
-    __friendController = dependency.descriptor(IFriendServiceController)
-    MSG_ID = 0
-
-    def __init__(self):
-        super(HOFriendResourceReminderListener, self).__init__(NOTIFICATION_TYPE.HO_FRIEND_RESOURCE_REMINDER, self.MSG_ID)
-
-    def start(self, model):
-        result = super(HOFriendResourceReminderListener, self).start(model)
-        self.__tryNotify()
-        self.__nyController.resourceCollecting.onSwitchCollectingState += self.__tryNotify
-        self.__friendController.onSwitchFriendCollectingState += self.__friendStateChanged
-        return result
-
-    def stop(self):
-        super(HOFriendResourceReminderListener, self).stop()
-        self.__nyController.resourceCollecting.onSwitchCollectingState -= self.__tryNotify
-        self.__friendController.onSwitchFriendCollectingState -= self.__friendStateChanged
-
-    def _createDecorator(self, notificationData):
-        return HOFriendResourceReminderDecorator(self._getNotificationId(), self._model(), data=notificationData)
-
-    def _createNotificationData(self, **ctx):
-        return ctx.get('ctx')
-
-    def __friendStateChanged(self, isDefaultState):
-        self._notifyOrRemove(False)
-        self.__tryNotify(isDefaultState)
-
-    @adisp_process
-    def __tryNotify(self, isDefaultState=True):
-        if not self.__nyController.isEnabled() or not self.__friendController.isServiceEnabled:
-            return
-        serverUTCTime = time_utils.getServerUTCTime()
-        lastSeenFriendsNotifyTime = AccountSettings.getSettings(LAST_SEEN_FRIENDS_NOTIFY_TIME)
-        canCollect = isCollectingAvailable(forceFriend=False)
-        previousCollectingState = AccountSettings.getUIFlag(NY_RESOURCE_FRIENDS_COLLECTING_AVAILABLE)
-        AccountSettings.setUIFlag(NY_RESOURCE_FRIENDS_COLLECTING_AVAILABLE, canCollect)
-        if canCollect:
-            return
-        isSuccess = yield self.__friendController.updateFriendList()
-        if not isSuccess:
-            return
-        res = self.__friendController.getBestFriendsResourceData()
-        resState = res.get(BestFriendFields.state, BestFriendStatus.error)
-        friendCollectingAvailable = resState == BestFriendStatus.friend
-        if not friendCollectingAvailable:
-            return
-        notifyTimeout = getNYResourceCollectingConfig().getCollectingNotifyTimeout()
-        if not isDefaultState or previousCollectingState and previousCollectingState != canCollect:
-            notifyTimeout = 0
-        if serverUTCTime >= lastSeenFriendsNotifyTime + notifyTimeout:
-            AccountSettings.setSettings(LAST_SEEN_FRIENDS_NOTIFY_TIME, serverUTCTime)
-            self._notifyOrRemove(False)
-            ctx = self.createCtx(res)
-            self._notifyOrRemove(True, isStateChanged=False, ctx=ctx)
-
-    @staticmethod
-    def createCtx(res):
-        resourcesCount = getAvgResourcesByCollecting(forceFriend=True)
-        ctx = {'linkageData': {BestFriendFields.resourceCount: resourcesCount, BestFriendFields.friendName: res[BestFriendFields.friendName], 
-                           BestFriendFields.friendID: res[BestFriendFields.friendID], 
-                           BestFriendFields.viewType: reminderType.FRIENDS.value}}
-        return ctx
-
-
-class HONoFriendResourceReminderListener(BaseReminderListener):
-    __settingsCore = dependency.descriptor(ISettingsCore)
-    __nyController = dependency.descriptor(INewYearController)
-    __friendController = dependency.descriptor(IFriendServiceController)
-    MSG_ID = 0
-
-    def __init__(self):
-        super(HONoFriendResourceReminderListener, self).__init__(NOTIFICATION_TYPE.HO_NO_FRIENDS_REMINDER, self.MSG_ID)
-        self.__lsmObserver = HolidayOpsObserver()
-
-    def start(self, model):
-        result = super(HONoFriendResourceReminderListener, self).start(model)
-        self.__tryNotify()
-        self.__nyController.resourceCollecting.onSwitchCollectingState += self.__tryNotify
-        self.__friendController.onSwitchFriendCollectingState += self.__tryNotify
-        lsm = getLobbyStateMachine()
-        lsm.connect(self.__lsmObserver)
-        self.__lsmObserver.onNavigationChanged += self.__onSwitchView
-        return result
-
-    def stop(self):
-        super(HONoFriendResourceReminderListener, self).stop()
-        self.__nyController.resourceCollecting.onSwitchCollectingState -= self.__tryNotify
-        self.__friendController.onSwitchFriendCollectingState -= self.__tryNotify
-        self.__lsmObserver.onNavigationChanged -= self.__onSwitchView
-        lsm = getLobbyStateMachine()
-        lsm.disconnect(self.__lsmObserver)
-        self.__lsmObserver.clear()
-        self.__lsmObserver = None
-        return
-
-    def _createDecorator(self, notificationData):
-        return HONoFriendsReminderDecorator(self._getNotificationId(), self._model(), data=notificationData)
-
-    def _createNotificationData(self, **ctx):
-        return ctx.get('ctx')
-
-    def __onSwitchView(self, menuName):
-        if menuName == NyWidgetTopMenu.FRIENDS:
-            self._notifyOrRemove(False)
-
-    @adisp_process
-    def __tryNotify(self, _=None):
-        if not self.__nyController.isEnabled() or not self.__friendController.isServiceEnabled:
-            return
-        if isCollectingAvailable(forceFriend=False):
-            return
-        serverUTCTime = time_utils.getServerUTCTime()
-        lastSeenNoFriendsNotifyTime = AccountSettings.getSettings(LAST_SEEN_NO_FRIENDS_NOTIFY_TIME)
-        notifyNoFriendsTimeout = getNYResourceCollectingConfig().getNoFriendsNotifyTimeout()
-        if serverUTCTime >= lastSeenNoFriendsNotifyTime + notifyNoFriendsTimeout:
-            isSuccess = yield self.__friendController.updateFriendList()
-            if not isSuccess:
-                return
-            res = self.__friendController.getBestFriendsResourceData()
-            resState = res.get(BestFriendFields.state, BestFriendStatus.error)
-            needForFriends = resState == BestFriendStatus.noFriends
-            if not needForFriends:
-                return
-            AccountSettings.setSettings(LAST_SEEN_NO_FRIENDS_NOTIFY_TIME, serverUTCTime)
-            ctx = self.createCtx()
-            self._removeNotification()
-            self._notifyOrRemove(True, isStateChanged=False, ctx=ctx)
-
-    def createCtx(self):
-        resourcesCount = getAvgResourcesByCollecting(forceFriend=True) * (self.__friendController.maxBestFriendsCount - len(self.__friendController.bestFriendList))
-        ctx = {'linkageData': {BestFriendFields.resourceCount: resourcesCount, BestFriendFields.viewType: reminderType.FINDFRIENDS.value}}
-        return ctx
-
-
-class HOMarketplaceAvailableListener(BaseReminderListener):
-    __nyController = dependency.descriptor(INewYearController)
-    MSG_ID = 0
-
-    def __init__(self):
-        super(HOMarketplaceAvailableListener, self).__init__(NOTIFICATION_TYPE.HO_MARKETPLACE_AVAILABLE, self.MSG_ID)
-
-    def start(self, model):
-        result = super(HOMarketplaceAvailableListener, self).start(model)
-        if result:
-            g_clientUpdateManager.addCallbacks({'tokens': self.__onTokensUpdated})
-        return result
-
-    def stop(self):
-        super(HOMarketplaceAvailableListener, self).stop()
-        g_clientUpdateManager.removeObjectCallbacks(self)
-
-    def _createDecorator(self, notificationData):
-        return HOMarketplaceAvailableDecorator(self._getNotificationId(), self._model())
-
-    def __tryNotify(self, *_):
-        needToAddOrUpdate = self.__isMarketplaceAvailable()
-        self._notifyOrRemove(needToAddOrUpdate)
-
-    def __onTokensUpdated(self, diff):
-        if NY_MARKETPLACE_UNLOCK in diff:
-            self.__tryNotify()
-
-    def __isMarketplaceAvailable(self):
-        return self.__nyController.isTokenReceived(NY_MARKETPLACE_UNLOCK)
-
-
-class LootBoxConfigListener(_NotificationListener):
-    __itemsCache = dependency.descriptor(IItemsCache)
-    __lobbyContext = dependency.descriptor(ILobbyContext)
-
-    def __init__(self):
-        super(LootBoxConfigListener, self).__init__()
-        self.__isAnyDisabled = False
-
-    def start(self, model):
-        result = super(LootBoxConfigListener, self).start(model)
-        self.__processSettings()
-        self.__lobbyContext.getServerSettings().onServerSettingsChange += self.__onServerSettingsChange
-        return result
-
-    def stop(self):
-        self.__lobbyContext.getServerSettings().onServerSettingsChange += self.__onServerSettingsChange
-        super(LootBoxConfigListener, self).stop()
-
-    def __onServerSettingsChange(self, _):
-        self.__processSettings(True)
-
-    def __processSettings(self, isNeedNotification=False):
-        isAnyDisabled = not self.__lobbyContext.getServerSettings().isLootBoxesEnabled()
-        hasAny = False
-        for lootBox in self.__itemsCache.items.tokens.getLootBoxes().itervalues():
-            if lootBox.getType() in NewYearLootBoxes.ALL():
-                hasAny = True
-                if not self.__lobbyContext.getServerSettings().isLootBoxEnabled(lootBox.getID()):
-                    isAnyDisabled = True
-                    break
-
-        isAnyDisabled = isAnyDisabled or not hasAny
-        if isAnyDisabled != self.__isAnyDisabled and isNeedNotification:
-            if isAnyDisabled:
-                rKey = R.strings.ny.notification.lootBox.suspend
-                SystemMessages.pushMessage(priority=NotificationPriorityLevel.MEDIUM, text=backport.text(rKey.body()), type=SystemMessages.SM_TYPE.ErrorHeader, messageData={'header': backport.text(rKey.header())})
-        self.__isAnyDisabled = isAnyDisabled
-
-
 class CollectionsListener(_NotificationListener, EventsHandler):
     __collections = dependency.descriptor(ICollectionsSystemController)
     __eventNotifications = dependency.descriptor(IEventsNotificationsController)
@@ -2719,13 +2404,13 @@ class PM3NotificationListener(_NotificationListener):
         self.__currentDisabledMissions = set(self.__lobbyContext.getServerSettings().getDisabledPersonalMissions())
 
     def __onServerSettingsChange(self, diff):
-        if 'isPM3QuestEnabled' in diff and 'isPM2QuestEnabled' in diff and 'isRegularQuestEnabled' in diff:
+        if IS_PM3_QUEST_ENABLED in diff and IS_PM2_QUEST_ENABLED in diff and IS_REGULAR_QUEST_ENABLED in diff:
             self.__allCampaignsSwitcherNotify(diff)
         else:
             self.__campaignSwitcherNotify(diff)
-        if diff.get('disabledPMOperations') is not None:
+        if diff.get(DISABLED_PM_OPERATIONS) is not None:
             self.__operationSwitcherNotify(diff)
-        if diff.get('disabledPersonalMissions') is not None:
+        if diff.get(DISABLED_PM_MISSIONS) is not None:
             self.__missionSwitcherNotify(diff)
         return
 
@@ -2734,13 +2419,13 @@ class PM3NotificationListener(_NotificationListener):
         SystemMessages.pushMessage(text=text, type=messageType, priority=priority, messageData={'title': title})
 
     def __allCampaignsSwitcherNotify(self, diff):
-        if all((diff['isPM3QuestEnabled'],
-         diff['isPM2QuestEnabled'],
-         diff['isRegularQuestEnabled'])):
+        if all((diff[IS_PM3_QUEST_ENABLED],
+         diff[IS_PM2_QUEST_ENABLED],
+         diff[IS_REGULAR_QUEST_ENABLED])):
             SystemMessages.pushI18nMessage(SYSTEM_MESSAGES.PERSONALMISSION_SWITCHERNOTIFICATION_ALLCAMPAIGNSON, type=SystemMessages.SM_TYPE.Information, priority=NotificationPriorityLevel.HIGH)
-        if not any((diff['isPM3QuestEnabled'],
-         diff['isPM2QuestEnabled'],
-         diff['isRegularQuestEnabled'])):
+        if not any((diff[IS_PM3_QUEST_ENABLED],
+         diff[IS_PM2_QUEST_ENABLED],
+         diff[IS_REGULAR_QUEST_ENABLED])):
             SystemMessages.pushI18nMessage(SYSTEM_MESSAGES.PERSONALMISSION_SWITCHERNOTIFICATION_ALLCAMPAIGNSOFF, type=SystemMessages.SM_TYPE.ErrorSimple, priority=NotificationPriorityLevel.HIGH)
 
     def __campaignSwitcherNotify(self, diff):
@@ -2784,7 +2469,7 @@ class PM3NotificationListener(_NotificationListener):
         return
 
     def __missionSwitcherNotify(self, diff):
-        newDisabledMissions = set(diff.get('disabledPersonalMissions', {}))
+        newDisabledMissions = set(diff.get(DISABLED_PM_MISSIONS, {}))
         newDisabledMissionsToNotify = newDisabledMissions - self.__currentDisabledMissions
         newEnabledMissions = self.__currentDisabledMissions - newDisabledMissions
         allMissions = self.__eventsCache.getPersonalMissions().getAllQuests(PM_BRANCH.ALL)
@@ -2903,9 +2588,7 @@ registerNotificationsListeners((
  PrestigeListener, SeniorityAwardsVehicleSelectionListener, NDQSwitcherListener,
  XpTranslationRatesDiscountsListener, GoldExchangeRatesDiscountsListener,
  LootBoxSystemListener, EasyTankEquipStateListener, PM3NotificationListener,
- SkillTreePerkAvailableListener,
- HODogReminderListener, HOMarketplaceAvailableListener, LootBoxConfigListener, HOResourceReminderListener,
- HOFriendResourceReminderListener, HONoFriendResourceReminderListener))
+ SkillTreePerkAvailableListener))
 
 class NotificationsListeners(_NotificationListener):
 

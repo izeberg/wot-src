@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>4.000000</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Hull_Shot_fx</name>
+		<type>model</type>
+		<resource>particles/Tank/customization/GB86_Centurion_Action_X_KS_3Dst/sm_hull_fx.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>material property vector4</name>
+			<type>vector4</type>
+			<identifier>centurion_fx</identifier>
+			<property>lightMultipliers</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 0.000000 0.000000</value>
+				<inTangent>44.999779 7.499963 22.499889 0.000000</inTangent>
+				<outTangent>44.999779 7.499963 22.499889 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.066667</startTime>
+				<value>3.000000 0.500000 1.500000 0.000000</value>
+				<inTangent>22.118534 3.686422 11.059267 0.000000</inTangent>
+				<outTangent>22.118534 3.686422 11.059267 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.000000</startTime>
+				<value>0.000000 0.000000 0.000000 0.000000</value>
+				<inTangent>-0.762712 -0.877373 0.144469 -0.000000</inTangent>
+				<outTangent>-0.762712 -0.877373 0.144469 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

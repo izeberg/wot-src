@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/russian/R231_Buryan/crash/lod2/Gun_02</nodefullVisual>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.326615 -0.272511 -1.607857</min>
+		<max>0.394479 0.301668 5.713341</max>
+	</visibilityBox>
+	<parent>vehicles/russian/R231_Buryan/crash/lod3/Gun_02</parent>
+	<extent>96</extent>
+</root>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/french/F137_LEOX/normal/lod3/Hull</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/french/F137_LEOX/normal/lod4/Hull</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.689399 -0.626682 -3.643044</min>
+		<max>1.689415 0.710597 3.417221</max>
+	</visibilityBox>
+</root>

@@ -170,7 +170,7 @@
 					<property>
 						<name>Position</name>
 						<value>
-							0 1.6 0
+							0 1.8 0
 							<!--BW_String-->
 						</value>
 					</property>
@@ -195,6 +195,10 @@
 					<property>
 						<name>Name</name>
 						<value>Tank</value>
+					</property>
+					<property>
+						<name>Type</name>
+						<value>0</value>
 					</property>
 					<property>
 						<name>Rotation sensitivity</name>
@@ -226,6 +230,10 @@
 					<property>
 						<name>Name</name>
 						<value>Platoon</value>
+					</property>
+					<property>
+						<name>Type</name>
+						<value>0</value>
 					</property>
 					<property>
 						<name>Rotation sensitivity</name>
@@ -305,7 +313,7 @@
 					</property>
 					<property>
 						<name>PitchLimits</name>
-						<value>-70 -34</value>
+						<value>-70 -32</value>
 					</property>
 					<property>
 						<name>DistLimits</name>

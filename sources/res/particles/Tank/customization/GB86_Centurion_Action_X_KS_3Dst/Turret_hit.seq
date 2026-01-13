@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>3.966667</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Turret_Hit</name>
+		<type>model</type>
+		<resource>particles/Tank/customization/GB86_Centurion_Action_X_KS_3Dst/sm_turret_fx.model</resource>
+		<track>
+			<name>material property vector4</name>
+			<type>vector4</type>
+			<identifier>centurion_fx</identifier>
+			<property>lightMultipliers</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 0.000000 0.000000</value>
+				<inTangent>89.999992 44.999996 44.999996 0.000000</inTangent>
+				<outTangent>89.999992 44.999996 44.999996 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.033333</startTime>
+				<value>3.000000 1.500000 1.500000 0.000000</value>
+				<inTangent>21.560484 22.309320 22.309320 0.000000</inTangent>
+				<outTangent>21.560484 22.309320 22.309320 0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.966667</startTime>
+				<value>0.000000 0.000000 0.000000 0.000000</value>
+				<inTangent>-0.762712 -0.381356 -0.381356 -0.000000</inTangent>
+				<outTangent>-0.762712 -0.381356 -0.381356 -0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

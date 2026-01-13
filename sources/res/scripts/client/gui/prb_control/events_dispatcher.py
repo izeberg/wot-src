@@ -28,7 +28,6 @@ from skeletons.gui.app_loader import IAppLoader
 from skeletons.gui.battle_session import IBattleSessionProvider
 from skeletons.gui.game_control import IGameSessionController
 from skeletons.gui.game_control import IPlatoonController
-from skeletons.gui.impl import IGuiLoader
 TOOLTIP_PRB_DATA = namedtuple('TOOLTIP_PRB_DATA', (
  'tooltipId',
  'label'))
@@ -273,12 +272,7 @@ class EventDispatcher(object):
 
     def showStrongholdsWindow(self):
         from gui.Scaleform.genConsts.FORTIFICATION_ALIASES import FORTIFICATION_ALIASES
-        guiLoader = dependency.instance(IGuiLoader)
-        if hasattr(R.views, 'one_time_gift') and guiLoader.windowsManager.getViewByLayoutID(R.views.one_time_gift.mono.lobby.one_time_gift_view()) is not None:
-            return
-        else:
-            self.__fireShowEvent(FORTIFICATION_ALIASES.STRONGHOLD_BATTLE_ROOM_WINDOW_ALIAS)
-            return
+        self.__fireShowEvent(FORTIFICATION_ALIASES.STRONGHOLD_BATTLE_ROOM_WINDOW_ALIAS)
 
     def showTournamentWindow(self):
         pass
@@ -452,10 +446,9 @@ class EventDispatcher(object):
     def __getTooltipPrbData(self, tooltipId, label=''):
         return TOOLTIP_PRB_DATA(tooltipId=tooltipId, label=label)._asdict()
 
-    def __invalidatePrbEntity(self, loadedAlias):
-        hangarViewAliases = (
-         VIEW_ALIAS.LOBBY_HANGAR, VIEW_ALIAS.LEGACY_LOBBY_HANGAR)
-        if loadedAlias in hangarViewAliases and self.__prbDispatcher is not None:
+    def __invalidatePrbEntity(self, _):
+        from gui.lobby_state_machine.states import isInHangarState
+        if isInHangarState() and self.__prbDispatcher is not None:
             entity = self.__prbDispatcher.getEntity()
             if entity:
                 entity.invalidate()

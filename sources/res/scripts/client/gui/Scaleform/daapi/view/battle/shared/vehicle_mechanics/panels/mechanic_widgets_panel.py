@@ -1,12 +1,15 @@
+from __future__ import absolute_import
 import typing
 from gui.Scaleform.daapi.view.meta.WidgetsPanelMeta import WidgetsPanelMeta
-from gui.battle_control.controllers.vehicle_passenger import hasVehiclePassengerCtrl
+from gui.battle_control.controllers.vehicle_passenger import hasVehiclePassengerCtrl, VehiclePassengerInfoWatcher
 from gui.Scaleform.genConsts.BATTLE_WIDGETS_CONSTS import BATTLE_WIDGETS_CONSTS
 from vehicles.mechanics.mechanic_constants import VehicleMechanic
 
-class MechanicWidgetsPanel(WidgetsPanelMeta):
+class MechanicWidgetsPanel(WidgetsPanelMeta, VehiclePassengerInfoWatcher):
     _VEHICLE_MECHANIC_UI_COMPONENTS_MAP = {VehicleMechanic.ROCKET_ACCELERATION: (
                                            BATTLE_WIDGETS_CONSTS.ROCKET_ACCELERATOR,), 
+       VehicleMechanic.STAGED_JET_BOOSTERS: (
+                                           BATTLE_WIDGETS_CONSTS.STAGED_JET_BOOSTERS,), 
        VehicleMechanic.RECHARGEABLE_NITRO: (
                                           BATTLE_WIDGETS_CONSTS.RECHARGEABLE_NITRO,), 
        VehicleMechanic.CONCENTRATION_MODE: (
@@ -26,7 +29,19 @@ class MechanicWidgetsPanel(WidgetsPanelMeta):
        VehicleMechanic.STANCE_DANCE: (
                                     BATTLE_WIDGETS_CONSTS.STANCE_DANCE_FIGHT, BATTLE_WIDGETS_CONSTS.STANCE_DANCE_TURBO), 
        VehicleMechanic.STATIONARY_RELOAD: (
-                                         BATTLE_WIDGETS_CONSTS.STATIONARY_RELOAD,)}
+                                         BATTLE_WIDGETS_CONSTS.STATIONARY_RELOAD,), 
+       VehicleMechanic.OVERHEAT_GUN: (
+                                    BATTLE_WIDGETS_CONSTS.TEMPERATURE_GUN_OVERHEAT,), 
+       VehicleMechanic.HEATING_ZONES_GUN: (
+                                         BATTLE_WIDGETS_CONSTS.TEMPERATURE_GUN_HEAT_ZONES,)}
+
+    def _populate(self):
+        super(MechanicWidgetsPanel, self)._populate()
+        self.startVehiclePassengerLateListening(self.__onVehicleControlling)
+
+    def _dispose(self):
+        self.stopVehiclePassengerListening(self.__onVehicleControlling)
+        super(MechanicWidgetsPanel, self)._dispose()
 
     def _setIsReplay(self, isReplay):
         self.as_isReplayS(isReplay)
@@ -45,6 +60,5 @@ class MechanicWidgetsPanel(WidgetsPanelMeta):
             self.as_addWidgetS(componentName)
 
     @hasVehiclePassengerCtrl()
-    def _onVehicleControlling(self, vehicle, passengerCtrl=None):
+    def __onVehicleControlling(self, _, passengerCtrl=None):
         self.as_isPlayerS(passengerCtrl.isCurrentPlayerVehicle)
-        super(MechanicWidgetsPanel, self)._onVehicleControlling(vehicle)

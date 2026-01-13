@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.129273 -0.550830 -2.150619</min>
+		<max>1.127476 1.308942 4.922570</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/british/GB109_GSOR_1008/_skins/GB109_GSOR_1008_KS_3Dst/normal/lod0/Gun_01</nodefullVisual>
+	<parent>vehicles/british/GB109_GSOR_1008/_skins/GB109_GSOR_1008_KS_3Dst/normal/lod1/Gun_01</parent>
+	<extent>32</extent>
+</root>

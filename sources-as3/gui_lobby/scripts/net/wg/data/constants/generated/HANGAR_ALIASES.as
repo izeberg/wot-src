@@ -67,7 +67,7 @@ package net.wg.data.constants.generated
       
       public static const SECONDARY_ENTRY_POINT:String = "secondaryEntryPoint";
       
-      public static const RESOURCE_WELL_ENTRY_POINT:String = "resourceWellEntryPoint";
+      public static const RESOURCE_WELL_EVENT_BANNER:String = "resourceWellEventBanner";
       
       public static const BATTLE_MATTERS_ENTRY_POINT:String = "battleMattersEntryPoint";
       

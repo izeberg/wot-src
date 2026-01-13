@@ -45,7 +45,6 @@ class IGuiLoader(object):
 
 
 class INotificationWindowController(IGameController):
-    __slots__ = ('onPostponedQueueUpdated', )
     if typing.TYPE_CHECKING:
         onPostponedQueueUpdated = None
 
@@ -64,7 +63,7 @@ class INotificationWindowController(IGameController):
     def postponeActive(self):
         raise NotImplementedError
 
-    def releasePostponed(self, fireReleased=True):
+    def releasePostponed(self):
         raise NotImplementedError
 
     def lock(self, key):
@@ -84,13 +83,6 @@ class INotificationWindowController(IGameController):
 
     @property
     def postponedCount(self):
-        raise NotImplementedError
-
-    @staticmethod
-    def isQueuePausingWindow(window):
-        raise NotImplementedError
-
-    def setFilterPredicate(self, predicate):
         raise NotImplementedError
 
 

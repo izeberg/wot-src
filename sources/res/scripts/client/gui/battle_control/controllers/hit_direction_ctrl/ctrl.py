@@ -1,6 +1,5 @@
 import logging, weakref, typing
 from account_helpers.settings_core import settings_constants
-from constants import VEHICLE_BUNKER_TURRET_TAG
 from gui.battle_control import avatar_getter
 from gui.battle_control.battle_constants import HIT_INDICATOR_MAX_ON_SCREEN, BATTLE_CTRL_ID
 from gui.battle_control.controllers.hit_direction_ctrl.base import HitType
@@ -20,16 +19,14 @@ class HitDirectionController(IViewComponentsController):
     __slots__ = ('__uiHitComponents', '__isVisible', '__callbackIDs', '__damageIndicatorCrits',
                  '__damageIndicatorAllies', '__damageIndicatorExtType', '__arenaDP',
                  '__weakref__')
-    _DAMAGE_PULL_CLASS = HitDamagePull
-    _ARTY_PULL_CLASS = ArtyHitPredictionPull
     settingsCore = dependency.descriptor(ISettingsCore)
     sessionProvider = dependency.descriptor(IBattleSessionProvider)
     lobbyContext = dependency.descriptor(ILobbyContext)
 
     def __init__(self, setup):
         super(HitDirectionController, self).__init__()
-        self.__uiHitComponents = {HitType.HIT_DAMAGE: HitDamageComponent(self._DAMAGE_PULL_CLASS()), 
-           HitType.ARTY_HIT_PREDICTION: BaseHitComponent(self._ARTY_PULL_CLASS())}
+        self.__uiHitComponents = {HitType.HIT_DAMAGE: HitDamageComponent(HitDamagePull()), 
+           HitType.ARTY_HIT_PREDICTION: BaseHitComponent(ArtyHitPredictionPull())}
         self.__isVisible = False
         self.__arenaDP = weakref.proxy(setup.arenaDP)
 
@@ -92,8 +89,6 @@ class HitDirectionController(IViewComponentsController):
         isAlly = self.__arenaDP.isAllyTeam(attackerVehInfo.team)
         playerVehType = self.__arenaDP.getVehicleInfo(damagedID).vehicleType
         classTag = attackerVehInfo.getDisplayedClassTag() if attackerVehInfo.vehicleType.classTag is not None else None
-        if VEHICLE_BUNKER_TURRET_TAG in attackerVehInfo.vehicleType.tags:
-            classTag = VEHICLE_BUNKER_TURRET_TAG
         attackerVehName = attackerVehInfo.getDisplayedName()
         hitData = HitData(yaw=hitDirYaw, attackerID=attackerID, isAlly=isAlly, damage=damage, attackerVehName=attackerVehName, isBlocked=isBlocked, attackerVehClassTag=classTag, critFlags=critFlags, playerVehMaxHP=playerVehType.maxHealth, isHighExplosive=isHighExplosive, attackReasonID=attackReasonID, friendlyFireMode=self.__isFriendlyFireMode())
         return self.__uiHitComponents[HitType.HIT_DAMAGE].pull.addHit(hitData)

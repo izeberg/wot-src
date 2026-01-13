@@ -1,23 +1,21 @@
 from typing import TYPE_CHECKING
-import SoundGroups, Windowing
+import Windowing
 from frameworks.wulf import Array
 from gui.Scaleform.framework.entities.View import ViewKey
 from gui.Scaleform.daapi.settings.views import VIEW_ALIAS
 from gui.Scaleform.lobby_entry import getLobbyStateMachine
 from gui.impl.gen.view_models.views.lobby.lootbox_system.main_view_model import SubViewID
 from gui.impl.gen.view_models.views.lobby.lootbox_system.submodels.multiple_boxes_rewards_view_model import MultipleBoxesRewardsViewModel
-from gui.impl.lobby.common.view_wrappers import createBackportTooltipDecorator
 from gui.impl.lobby.lootbox_system.base.common import SubViewImpl
 from gui.impl.lobby.lootbox_system.base.submodels.common import updateAnimationState
 from gui.impl.wrappers.function_helpers import replaceNoneKwargsModel
 from gui.lootbox_system.base.bonuses_packers import packBonusModelAndTooltipData
 from gui.lootbox_system.base.common import ViewID, Views
-from gui.lootbox_system.base.decorators import createTooltipContentDecorator
+from gui.lootbox_system.base.decorators import createBackportTooltipDecorator, createTooltipContentDecorator
 from gui.lootbox_system.base.sound import enterLootBoxesMultipleRewardState, exitLootBoxesMultipleRewardState, playVideoPauseSound, playVideoResumeSound
 from gui.lootbox_system.base.utils import isShopVisible, openBoxes
 from gui.lootbox_system.base.views_loaders import showItemPreview
 from gui.shared import EVENT_BUS_SCOPE, events
-from gui.sounds.filters import StatesGroup, States
 from helpers import dependency
 from skeletons.gui.game_control import ILootBoxSystemController
 if TYPE_CHECKING:
@@ -48,7 +46,7 @@ class MultipleBoxesRewards(SubViewImpl):
 
     @createTooltipContentDecorator()
     def createToolTipContent(self, event, contentID):
-        return super(MultipleBoxesRewards, self).createToolTip(event)
+        return super(MultipleBoxesRewards, self).createToolTipContent(event, contentID)
 
     def getTooltipData(self, event):
         return self.__tooltipItems.get(event.getArgument('tooltipId', 0))
@@ -103,7 +101,6 @@ class MultipleBoxesRewards(SubViewImpl):
     def __setVideoPlaying(self, ctx=None):
         isPlaying = ctx.get('isPlaying')
         self.__isVideoPlaying = isPlaying
-        SoundGroups.g_instance.setState(StatesGroup.VIDEO_OVERLAY, States.VIDEO_OVERLAY_ON if isPlaying else States.VIDEO_OVERLAY_OFF)
 
     @replaceNoneKwargsModel
     def __setWindowAccessible(self, model=None):

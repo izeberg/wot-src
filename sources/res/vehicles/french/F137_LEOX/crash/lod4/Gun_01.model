@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.721558 -0.263352 -0.509449</min>
+		<max>0.721558 0.391546 4.625049</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/french/F137_LEOX/crash/lod4/Gun_01</nodefullVisual>
+</root>

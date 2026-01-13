@@ -1,4 +1,5 @@
 import constants
+from battle_pass_common import BattlePassConsts
 from gui import SystemMessages
 from gui.Scaleform.daapi.settings.views import VIEW_ALIAS
 from gui.Scaleform.daapi.view.lobby.customization.progression_helpers import parseEventID
@@ -11,20 +12,18 @@ from gui.impl.lobby.reward_window import GiveAwayRewardWindow, PiggyBankRewardWi
 from gui.impl.pub.notification_commands import WindowNotificationCommand, EventNotificationCommand, NotificationEvent
 from gui.prb_control.dispatcher import g_prbLoader
 from gui.server_events import anniversary_helper, awards, events_helpers, recruit_helper
-from gui.server_events.events_helpers import getLootboxesFromBonuses, isC11nQuest, isCelebrityQuest
+from gui.server_events.events_helpers import getLootboxesFromBonuses, isC11nQuest
 from gui.server_events.finders import getBranchByOperationId
 from gui.shared import EVENT_BUS_SCOPE, event_dispatcher as shared_events, events, g_eventBus
 from gui.shared.event_dispatcher import showProgressiveItemsView, hideWebBrowserOverlay, showBrowserOverlayView, showPersonalMissionMainWindow, showPersonalMissionChain
 from gui.shared.events import PersonalMissionsEvent
 from helpers import dependency
-from new_year.ny_navigation_helper import switchNewYearView
+from shared_utils import first
 from skeletons.gui.customization import ICustomizationService
 from skeletons.gui.game_control import IMarathonEventsController
 from skeletons.gui.impl import INotificationWindowController, IGuiLoader
 from skeletons.gui.lobby_context import ILobbyContext
 from skeletons.gui.server_events import IEventsCache
-from shared_utils import first
-from battle_pass_common import BattlePassConsts
 OPERATIONS = {PERSONAL_MISSIONS_ALIASES.PERONAL_MISSIONS_OPERATIONS_SEASON_1_ID: PERSONAL_MISSIONS_ALIASES.PERSONAL_MISSIONS_OPERATIONS_PAGE_ALIAS, 
    PERSONAL_MISSIONS_ALIASES.PERONAL_MISSIONS_OPERATIONS_SEASON_2_ID: PERSONAL_MISSIONS_ALIASES.PERSONAL_MISSIONS2_OPERATIONS_PAGE_ALIAS}
 _EVENTS_REWARD_WINDOW = {recruit_helper.RecruitSourceID.TWITCH_0: TwitchRewardWindow, 
@@ -135,7 +134,16 @@ def showPersonalMissionsChain(operationID, chainID, missionCategory=None):
     if PM_BRANCH.PERSONAL_MISSION_3 in [getBranchByOperationId(operationID)]:
         showPersonalMissionChain(operationID, missionCategory)
         return
-    g_eventBus.handleEvent(events.LoadViewEvent(SFViewLoadParams(PERSONAL_MISSIONS_ALIASES.PERSONAL_MISSIONS_PAGE_ALIAS), ctx={'operationID': operationID, 'chainID': chainID}), EVENT_BUS_SCOPE.LOBBY)
+
+    def __personalMissionsPageViewPredicate(window):
+        return window.content is not None and getattr(window.content, 'alias', None) == PERSONAL_MISSIONS_ALIASES.PERSONAL_MISSIONS_PAGE_ALIAS
+
+    guiLoader = dependency.instance(IGuiLoader)
+    personalMissionsPage = guiLoader.windowsManager.findWindows(__personalMissionsPageViewPredicate)
+    if personalMissionsPage:
+        first(personalMissionsPage).content.switchToAnotherOperation(operationID, chainID)
+    else:
+        g_eventBus.handleEvent(events.LoadViewEvent(SFViewLoadParams(PERSONAL_MISSIONS_ALIASES.PERSONAL_MISSIONS_PAGE_ALIAS), ctx={'operationID': operationID, 'chainID': chainID}), EVENT_BUS_SCOPE.LOBBY)
 
 
 def showPersonalMissionOperationsPage(branchID, operationID):
@@ -252,36 +260,16 @@ def showProgressiveItemsBrowserView(ctx):
 
 def showMission(eventID, eventType=None):
     from gui.impl.lobby.missions.daily_quests_view import DailyTabs
-    if eventType == constants.EVENT_TYPE.C11N_PROGRESSION:
-        itemIntCD, vehicleIntCD = parseEventID(eventID)
-        service = dependency.instance(ICustomizationService)
-        vehicle = service.getItemByCD(vehicleIntCD)
-        service.showCustomization(vehicle.invID, callback=lambda : showProgressiveItemsView(itemIntCD))
+    showCustomizationQuest(eventID, eventType)
+    eventsCache = dependency.instance(IEventsCache)
+    quests = eventsCache.getAllQuests()
+    quest = quests.get(eventID)
+    if eventID == BattlePassConsts.FAKE_QUEST_ID:
+        hideWebBrowserOverlay()
+        shared_events.showBattlePass()
         return
     else:
-        if isC11nQuest(eventID):
-            service = dependency.instance(ICustomizationService)
-            style = service.getStyleItemByQuestID(eventID)
-            from gui.customization.constants import CustomizationModes
-            service.showCustomization(modeId=CustomizationModes.STYLE_3D if style and style.is3D else CustomizationModes.STYLE_2D)
-            return
-        if isCelebrityQuest(eventID):
-            from new_year.ny_constants import NYObjects
-            switchNewYearView(NYObjects.CHALLENGE, instantly=True)
-            return
-        eventsCache = dependency.instance(IEventsCache)
-        quests = eventsCache.getAllQuests()
-        quest = quests.get(eventID)
-        if eventID == BattlePassConsts.FAKE_QUEST_ID:
-            hideWebBrowserOverlay()
-            shared_events.showBattlePass()
-            return
-        if quest is None or quest.isHidden():
-            prefix = events_helpers.getMarathonPrefix(eventID)
-            if prefix is not None:
-                return showMissionsMarathon(marathonPrefix=prefix)
-            if events_helpers.isBattleMattersQuestID(eventID):
-                showBattleMatters()
+        showHiddenQuest(quest, eventID)
         if eventType is not None and eventType == constants.EVENT_TYPE.PERSONAL_MISSION:
             showPersonalMission(eventID)
         elif quest is not None and quest.showMissionAction() is not None:
@@ -303,6 +291,54 @@ def showMission(eventID, eventType=None):
             else:
                 showMissionsCategories(missionID=quest.getID(), groupID=quest.getGroupID(), anchor=quest.getGroupID())
         return
+
+
+def showHiddenQuest(quest, eventID):
+    if quest is None or quest.isHidden():
+        prefix = events_helpers.getMarathonPrefix(eventID)
+        if prefix is not None:
+            return showMissionsMarathon(marathonPrefix=prefix)
+        if events_helpers.isBattleMattersQuestID(eventID):
+            showBattleMatters()
+    return
+
+
+def showCustomizationQuest(eventID, eventType=None):
+    if eventType == constants.EVENT_TYPE.C11N_PROGRESSION:
+        itemIntCD, vehicleIntCD = parseEventID(eventID)
+        service = dependency.instance(ICustomizationService)
+        vehicle = service.getItemByCD(vehicleIntCD)
+        service.showCustomization(vehicle.invID, lambda : showProgressiveItemsView(itemIntCD))
+        return
+    if isC11nQuest(eventID):
+        service = dependency.instance(ICustomizationService)
+        style = service.getStyleItemByQuestID(eventID)
+        from gui.customization.constants import CustomizationModes
+        service.showCustomization(modeId=CustomizationModes.STYLE_3D if style and style.is3D else CustomizationModes.STYLE_2D)
+        return
+
+
+def showBattleQuest(eventID, eventType=None):
+    showCustomizationQuest(eventID, eventType)
+    eventsCache = dependency.instance(IEventsCache)
+    quests = eventsCache.getAllQuests()
+    quest = quests.get(eventID)
+    showHiddenQuest(quest, eventID)
+    if quest is not None and quest.showMissionAction() is not None:
+        quest.showMissionAction()()
+    elif quest is not None and not quest.isHidden():
+        if events_helpers.isMarathon(quest.getGroupID()):
+            groups = eventsCache.getGroups()
+            group = groups.get(quest.getGroupID())
+            groupContent = group.getGroupContent(quests)
+            mainQuest = group.getMainQuest(groupContent)
+            if mainQuest and quest.getID() != mainQuest.getID():
+                showMissionsGrouped(missionID=quest.getID(), groupID=group.getID(), anchor=group.getID())
+            else:
+                showMissionsGrouped(anchor=group.getID())
+        else:
+            showMissions(tab=QUESTS_ALIASES.MISSIONS_CATEGORIES_VIEW_PY_ALIAS, showDetails=True, missionID=quest.getID(), groupID=quest.getGroupID(), questId=quest.getID())
+    return
 
 
 def showAchievementsAward(achievements):
@@ -359,18 +395,10 @@ def showMissionAward(quest, ctx):
         bonuses = getMissionInfoData(quest).getSubstituteBonuses()
         if bonuses:
             lootboxes = getLootboxesFromBonuses(bonuses)
-            if lootboxes:
-                for lootboxId, lootboxInfo in lootboxes.iteritems():
-                    showLootboxesAward(lootboxId=lootboxId, lootboxCount=lootboxInfo['count'], isFree=lootboxInfo['isFree'])
-
-            else:
+            if not lootboxes:
                 missionAward = awards.MissionAward(quest, ctx, handleEvent)
                 if missionAward.getAwards():
                     shared_events.showMissionAwardWindow(missionAward)
-
-
-def showLootboxesAward(lootboxId, lootboxCount, isFree):
-    pass
 
 
 def showPiggyBankRewardWindow(creditsValue, isPremActive):

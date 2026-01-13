@@ -79,6 +79,8 @@ class InjectComponentAdaptor(InjectComponentMeta):
                 _logger.error('View %r is already created in component %s', self.__view, self.getAlias())
                 return
             self.__view = self._makeInjectView(*args)
+            if self.__view is None:
+                return
             if self.__view.viewFlags != ViewFlags.VIEW:
                 _logger.error('View %r with flags %r is not supported to be injected. %r. ViewFlags.VIEW is the only supported.', self.__view, self.__view.viewFlags, self.getAlias())
                 return

@@ -1,4 +1,5 @@
-from base_schema_manager import GameParamsSchema
+import typing
+from game_params_common.schema import GameParamsSchema
 from dict2model import models, fields, validate, schemas, exceptions
 from story_mode_common.story_mode_constants import PRIORITY
 
@@ -9,9 +10,6 @@ class QuotumsModel(models.Model):
         super(QuotumsModel, self).__init__()
         self.quotums = quotums
 
-    def __repr__(self):
-        return ('<QuotumsModel(quotums={})>').format(self.quotums)
-
 
 class QuotumModel(models.Model):
     __slots__ = ('priority', 'quotum')
@@ -20,9 +18,6 @@ class QuotumModel(models.Model):
         super(QuotumModel, self).__init__()
         self.priority = priority
         self.quotum = quotum
-
-    def __repr__(self):
-        return ('<QuotumModel(priority={}, quotum={})>').format(self.priority, self.quotum)
 
 
 def validatePriorityies(model):
@@ -40,4 +35,4 @@ def validatePriorityies(model):
 quotumSchema = schemas.Schema[QuotumModel](fields={'priority': fields.IntEnum(PRIORITY, required=True, deserializedValidators=validate.Range(minValue=0)), 
    'quotum': fields.Integer(required=True, deserializedValidators=validate.Range(minValue=0))}, modelClass=QuotumModel, checkUnknown=True)
 quotumsSchema = GameParamsSchema(gameParamsKey='story_mode_battle_mgr_quotums', fields={'quotums': fields.UniCapList(fieldOrSchema=quotumSchema, required=True, deserializedValidators=validate.Length(minValue=3))}, modelClass=QuotumsModel, checkUnknown=True, deserializedValidators=[
- validatePriorityies])
+ validatePriorityies], usedInReplay=True)

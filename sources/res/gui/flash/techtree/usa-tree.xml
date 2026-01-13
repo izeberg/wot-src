@@ -180,6 +180,7 @@
 			<lines>
 				<A90_T69/>
 				<A35_Pershing/>
+				<A187_Ares_75/>
 			</lines>
 		</A07_T20>
 		<A112_T71E2R>
@@ -238,6 +239,13 @@
 				<A63_M46_Patton/>
 			</lines>
 		</A35_Pershing>
+		<A187_Ares_75>
+			<row>11</row>
+			<column>8</column>
+			<lines>
+				<A190_Ares_85/>
+			</lines>
+		</A187_Ares_75>
 		<A97_M41_Bulldog>
 			<row>11</row>
 			<column>8</column>
@@ -294,6 +302,13 @@
 				<A120_M48A5/>
 			</lines>
 		</A63_M46_Patton>
+		<A190_Ares_85>
+			<row>11</row>
+			<column>9</column>
+			<lines>
+				<A189_Ares_90/>
+			</lines>
+		</A190_Ares_85>
 		<A100_T49>
 			<row>11</row>
 			<column>9</column>
@@ -335,6 +350,13 @@
 				<A183_XM69_Hacker/>
 			</lines>
 		</A120_M48A5>
+		<A189_Ares_90>
+			<row>11</row>
+			<column>10</column>
+			<lines>
+				<A191_Ares_90_C/>
+			</lines>
+		</A189_Ares_90>
 		<A116_XM551>
 			<row>11</row>
 			<column>10</column>
@@ -347,5 +369,9 @@
 			<row>6</row>
 			<column>11</column>
 		</A182_T803>
+		<A191_Ares_90_C>
+			<row>11</row>
+			<column>11</column>
+		</A191_Ares_90_C>
 	</nodes>
 </root>

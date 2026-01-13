@@ -53,6 +53,7 @@
 						excludeMaskAndAOMap
 						<Texture>vehicles/german/G189_Hirschkafer/Hirschkafer_proxy_AO.dds</Texture>
 					</property>
+					<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
 					<fx>shaders/std_effects/PBS_tank_crash.fx</fx>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/american/A144_M_VI_Y_CFE_RC/_skins/A144_M_VI_Y_CFE_R_3Dst/normal/lod4/Gun_08</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.370158 -1.056472 -1.952987</min>
+		<max>1.143248 1.361935 6.927820</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/american/A144_M_VI_Y_CFE_RC/_skins/A144_M_VI_Y_CFE_R_3Dst/normal/lod3/Gun_08</nodefullVisual>
+</root>

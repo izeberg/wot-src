@@ -9,7 +9,7 @@ from gui.battle_control.battle_constants import BATTLE_CTRL_ID
 from gui.battle_control.battle_constants import TabsAliases
 from shared_utils import CONST_CONTAINER
 from vehicles.mechanics.mechanic_constants import VehicleMechanic
-from vehicles.mechanics.mechanic_info import hasVehicleMechanic
+from vehicles.mechanics.mechanic_helpers import hasVehicleDescrMechanic
 
 class DynamicAliases(CONST_CONTAINER):
     PREBATTLE_TIMER_SOUND_PLAYER = 'prebattleTimerSoundPlayer'
@@ -284,7 +284,7 @@ class ClassicPage(SharedPage):
 
         def invalidateSiegeVehicle(vehicleDescriptor):
             vehicleType = vehicleDescriptor.type
-            return (vehicleType.hasSiegeMode or vehicleDescriptor.isTrackWithinTrack) and not vehicleType.isWheeledVehicle and not vehicleDescriptor.isDualgunVehicle and not hasVehicleMechanic(vehicleDescriptor, VehicleMechanic.PILLBOX_SIEGE_MODE)
+            return (vehicleType.hasSiegeMode or vehicleDescriptor.isTrackWithinTrack) and not vehicleType.isWheeledVehicle and not vehicleDescriptor.isDualgunVehicle and not hasVehicleDescrMechanic(vehicleDescriptor, VehicleMechanic.PILLBOX_SIEGE_MODE)
 
         if ctrlMode == CTRL_MODE_NAME.DEATH_FREE_CAM:
             components = {

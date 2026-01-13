@@ -8,7 +8,6 @@ package net.wg.gui.components.crosshairPanel
    import net.wg.gui.components.crosshairPanel.components.gunMarker.AccuracyGunMarker;
    import net.wg.gui.components.crosshairPanel.components.gunMarker.ChargeGunMarker;
    import net.wg.gui.components.crosshairPanel.components.gunMarker.DualGunMarker;
-   import net.wg.gui.components.crosshairPanel.components.gunMarker.GunMarker;
    import net.wg.gui.components.crosshairPanel.components.gunMarker.IGunMarker;
    import net.wg.gui.components.crosshairPanel.components.gunMarker.TwinGunMarker;
    import net.wg.infrastructure.interfaces.entity.IDisposable;
@@ -22,8 +21,6 @@ package net.wg.gui.components.crosshairPanel
       private var _gunMarkers:Object = null;
       
       private var _dualGunMarkers:Vector.<DualGunMarker>;
-      
-      private var _dualAccGunMarkers:Vector.<GunMarker>;
       
       private var _twinGunMarkers:Vector.<TwinGunMarker>;
       
@@ -47,12 +44,13 @@ package net.wg.gui.components.crosshairPanel
       
       private var _chargeGunActive:Boolean = false;
       
+      private var _isDispersionCircleBold:Boolean = false;
+      
       public function GunMarkersManager(param1:DisplayObjectContainer)
       {
          super();
          this._gunMarkers = {};
          this._dualGunMarkers = new Vector.<DualGunMarker>(0);
-         this._dualAccGunMarkers = new Vector.<GunMarker>(0);
          this._twinGunMarkers = new Vector.<TwinGunMarker>(0);
          this._accuracyGunMarkers = new Vector.<AccuracyGunMarker>(0);
          this._chargeGunMarkers = new Vector.<ChargeGunMarker>(0);
@@ -102,10 +100,8 @@ package net.wg.gui.components.crosshairPanel
          {
             this._chargeGunMarkers.push(param1);
          }
-         var _loc3_:Boolean = DUAL_ACC_NAMES.indexOf(param2) > -1;
-         if(_loc3_)
+         if(DUAL_ACC_NAMES.indexOf(param2) >= 0)
          {
-            this._dualAccGunMarkers.push(param1);
             param1.setIsSecondary(true);
          }
          if(this._markerSettings)
@@ -113,6 +109,7 @@ package net.wg.gui.components.crosshairPanel
             param1.setSettings(this._markerSettings.gunTagType,this._markerSettings.mixingType,this._markerSettings.gunTagAlpha,this._markerSettings.mixingAlpha);
          }
          param1.setReloadingParams(this._currReloadingPercent,this._currReloadingState);
+         param1.setDispersionCircleThickness(this._isDispersionCircleBold);
          this.setAccuracyStacks(this._accuracyStacks);
          this.setChargeGunActive(this._chargeGunActive);
          this._container.addChild(DisplayObject(param1));
@@ -174,8 +171,6 @@ package net.wg.gui.components.crosshairPanel
          this._gunMarkers = cleanupObject(this._gunMarkers);
          this._dualGunMarkers.length = 0;
          this._dualGunMarkers = null;
-         this._dualAccGunMarkers.length = 0;
-         this._dualAccGunMarkers = null;
          this._twinGunMarkers.length = 0;
          this._twinGunMarkers = null;
          this._accuracyGunMarkers.length = 0;
@@ -228,12 +223,22 @@ package net.wg.gui.components.crosshairPanel
          }
       }
       
-      public function setDualAccActive(param1:Boolean) : void
+      public function setSecondaryActive(param1:Boolean) : void
       {
          var _loc2_:IGunMarker = null;
          for each(_loc2_ in this._gunMarkers)
          {
-            _loc2_.setDualAccActive(param1);
+            _loc2_.setSecondaryActive(param1);
+         }
+      }
+      
+      public function setDispersionCircleThickness(param1:Boolean) : void
+      {
+         var _loc2_:IGunMarker = null;
+         this._isDispersionCircleBold = param1;
+         for each(_loc2_ in this._gunMarkers)
+         {
+            _loc2_.setDispersionCircleThickness(param1);
          }
       }
       

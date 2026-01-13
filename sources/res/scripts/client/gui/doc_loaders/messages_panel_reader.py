@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from helpers import html
 import resource_helper
 _EXPECTED_STYLES = {'entityStyle': ('fontSize', 'fontFace', 'fontColor')}

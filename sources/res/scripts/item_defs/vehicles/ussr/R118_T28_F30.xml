@@ -39,6 +39,12 @@
 				<!--BW_String-->
 			</invisibilityBonus>
 		</camouflageNet>
+		<deluxeCamouflageNet>
+			<invisibilityBonus>
+				0.125
+				<!--BW_String-->
+			</invisibilityBonus>
+		</deluxeCamouflageNet>
 		<additionalInvisibilityDevice>
 			<invisibilityBonus>
 				0.06 0.08
@@ -5910,10 +5916,7 @@
 		<detailed>
 			<engines>
 				<M-17L_R>
-					<smplEnginePower>
-						528.6406
-						<!--BW_String-->
-					</smplEnginePower>
+					<smplEnginePower>540</smplEnginePower>
 					<smplFwMaxSpeed>35</smplFwMaxSpeed>
 				</M-17L_R>
 			</engines>

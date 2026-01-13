@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.veh_mechanics.battle.updaters.updaters_common import ViewUpdater
 from helpers import dependency
 from skeletons.gui.battle_session import IBattleSessionProvider

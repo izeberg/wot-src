@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.impl.gen import R
 from comp7_core.gui.ingame_help.detailed_help_pages import Comp7CorePagesBuilder
 from comp7_light_constants import ARENA_GUI_TYPE

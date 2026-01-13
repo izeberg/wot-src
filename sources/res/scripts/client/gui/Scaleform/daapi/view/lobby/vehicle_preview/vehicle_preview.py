@@ -16,7 +16,6 @@ from gui.Scaleform.daapi.view.lobby.vehicle_compare.formatters import resolveSta
 from gui.Scaleform.daapi.view.lobby.vehicle_preview.hero_tank_preview_constants import getHeroTankPreviewParams
 from gui.Scaleform.daapi.view.lobby.vehicle_preview.info.crew_tab_view import DOG
 from gui.Scaleform.daapi.view.lobby.vehicle_preview.items_kit_helper import OFFER_CHANGED_EVENT, addBuiltInEquipment, getActiveOffer
-from gui.Scaleform.daapi.view.lobby.vehicle_preview.preview_selectable_logic import PreviewSelectableLogic
 from gui.Scaleform.daapi.view.lobby.vehicle_preview.sound_constants import RESEARCH_PREVIEW_SOUND_SPACE, VEHICLE_PREVIEW_SOUND_SPACE, COMMON_VEHICLE_PREVIEW_SOUND_SPACE
 from gui.Scaleform.daapi.view.meta.VehiclePreviewMeta import VehiclePreviewMeta
 from gui.Scaleform.genConsts.PERSONAL_MISSIONS_ALIASES import PERSONAL_MISSIONS_ALIASES
@@ -40,6 +39,7 @@ from gui.shared.money import MONEY_UNDEFINED
 from gui.shared.tutorial_helper import getTutorialGlobalStorage
 from helpers import dependency
 from helpers.i18n import makeString as _ms
+from preview_selectable_logic import PreviewSelectableLogic
 from skeletons.account_helpers.settings_core import ISettingsCore
 from skeletons.gui.game_control import IHeroTankController, IVehicleComparisonBasket
 from skeletons.gui.impl import IGuiLoader
@@ -210,7 +210,7 @@ class VehiclePreview(LobbySelectableView, VehiclePreviewMeta):
             self._hangarSpace.onSpaceRefresh += self.closeView
             self._hangarSpace.lockVehicleSelectable(self)
             if not g_currentPreviewVehicle.isPresent():
-                self.__showHangar()
+                event_dispatcher.showHangar()
             if not self._heroInteractive:
                 self.__heroTanksControl.setInteractive(False)
             if self._backAlias == VIEW_ALIAS.LOBBY_STORE:
@@ -246,7 +246,7 @@ class VehiclePreview(LobbySelectableView, VehiclePreviewMeta):
         self._hangarSpace.onSpaceRefresh -= self.closeView
         self._hangarSpace.unlockVehicleSelectable(self)
         self.removeListener(CameraRelatedEvents.CAMERA_ENTITY_UPDATED, self.handleSelectedEntityUpdated)
-        isMapsTrainingViewOpened = self.__guiLoader.windowsManager.getViewByLayoutID(R.views.lobby.maps_training.MapsTrainingPage()) is not None
+        isMapsTrainingViewOpened = self.__guiLoader.windowsManager.getViewByLayoutID(R.views.mono.maps_training.maps_training_page()) is not None
         g_eventBus.handleEvent(events.LobbySimpleEvent(events.LobbySimpleEvent.VEHICLE_PREVIEW_HIDDEN), scope=EVENT_BUS_SCOPE.LOBBY)
         if self._backAlias == VIEW_ALIAS.VEHICLE_PREVIEW:
             g_currentVehicle.refreshModel()
@@ -256,9 +256,6 @@ class VehiclePreview(LobbySelectableView, VehiclePreviewMeta):
         super(VehiclePreview, self)._dispose()
         if not self._heroInteractive:
             self.__heroTanksControl.setInteractive(True)
-        if self.__isHeroTank:
-            self.__isHeroTank = False
-            g_currentPreviewVehicle.selectHeroTank(False)
         if self.__vehAppearanceChanged and not isMapsTrainingViewOpened:
             g_currentPreviewVehicle.resetAppearance()
             if self.__isHeroTank:
@@ -275,7 +272,7 @@ class VehiclePreview(LobbySelectableView, VehiclePreviewMeta):
     def closeView(self):
         if self._backAlias == VIEW_ALIAS.LOBBY_STORE:
             self.__uiMetricsLogger.onViewClosed(ShopCloseItemStates.CLOSE_BUTTON.value)
-        self.__showHangar()
+        event_dispatcher.showHangar()
 
     def onBackClick(self):
         if self._backAlias == VIEW_ALIAS.LOBBY_STORE:
@@ -502,17 +499,14 @@ class VehiclePreview(LobbySelectableView, VehiclePreviewMeta):
                 if entity:
                     compactDescr = entity.typeDescriptor.type.compactDescr
                     if self._itemsCache.items.inventory.getItemData(compactDescr) is not None:
-                        self.__showHangar()
+                        event_dispatcher.showHangar()
                     else:
                         event_dispatcher.showVehiclePreview(compactDescr, previewAlias=self._previousBackAlias, outfit=self.__ctx.get('backOutfit'))
                 else:
-                    self.__showHangar()
+                    event_dispatcher.showHangar()
             else:
                 self.destroy()
             return
-
-    def __showHangar(self):
-        event_dispatcher.showHangar()
 
     def _onInventoryChanged(self, *_):
         if not BuyVehicleWindow.getInstances() and not self.__ctx.get('skipInventoryUpdate', False):

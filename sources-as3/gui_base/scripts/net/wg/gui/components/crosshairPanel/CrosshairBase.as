@@ -45,6 +45,10 @@ package net.wg.gui.components.crosshairPanel
       private static const BOOSTED_TEXT_COLOR:uint = 14286645;
       
       private static const BOOSTED_TEXT_COLOR_RELOAD:uint = 15356485;
+      
+      private static const RELOAD_SWITCH_ICON_COMPLETE:String = "green";
+      
+      private static const RELOAD_SWITCH_ICON_PROGRESS:String = "red";
        
       
       public var timerProgressTextField:TextField = null;
@@ -58,6 +62,8 @@ package net.wg.gui.components.crosshairPanel
       public var reloadingBar:MovieClip = null;
       
       public var reloadingAnimationMC:MovieClip = null;
+      
+      public var reloadSwitchIcon:MovieClip = null;
       
       public var healthBarMC:MovieClip = null;
       
@@ -81,8 +87,6 @@ package net.wg.gui.components.crosshairPanel
       
       public var reloadBoostBorder:ReloadBoostBorder = null;
       
-      private var _isOverheat:Boolean = false;
-      
       protected var health:Number = 0;
       
       protected var reloadingTime:Number = 0;
@@ -104,6 +108,8 @@ package net.wg.gui.components.crosshairPanel
       protected var cassetteAlpha:Number = 1.0;
       
       protected var reloadingTimeFieldAlpha:Number = 1.0;
+      
+      private var _isOverheat:Boolean = false;
       
       private var _netSeparatorType:String = "default";
       
@@ -162,6 +168,7 @@ package net.wg.gui.components.crosshairPanel
          super();
          this.cassetteMC.isUseFrameAnimation = this._isUseFrameAnimation;
          this.timerProgressTextField.visible = false;
+         this.reloadSwitchIcon.visibile = false;
          this.reloadTimeBlink.visible = false;
          this.updateQuickReloadingTimer();
          addEventListener(CrosshairPanelEvent.SOUND,this.onCrosshairPanelSoundHandler);
@@ -179,40 +186,6 @@ package net.wg.gui.components.crosshairPanel
          _loc1_.shadowColor = 1461759;
          _loc1_.type = BitmapFilterType.OUTER;
          this._timerBoostedFilter = [_loc1_];
-      }
-      
-      public function set reloadBoost(param1:Boolean) : void
-      {
-         this._isReloadBoost = param1;
-         this.timerProgressTextField.textColor = !!param1 ? uint(BOOSTED_TEXT_COLOR_RELOAD) : uint(this._timerProgressTextFieldColor);
-         this.timerProgressTextField.filters = !!param1 ? this._timerBoostedFilter : this._timerProgressTextFieldFilter;
-         this.timerCompleteTextField.textColor = !!param1 ? uint(BOOSTED_TEXT_COLOR) : uint(this._timerCompleteTextFieldColor);
-         this.timerCompleteTextField.filters = !!param1 ? this._timerBoostedFilter : this._timerCompleteTextFieldFilter;
-      }
-      
-      public function set overheatIndicatorVisible(param1:Boolean) : void
-      {
-         this._isOverheat = param1;
-      }
-      
-      public function setReloadBoostBorderVisible(param1:Boolean, param2:Boolean, param3:Boolean) : void
-      {
-         this._isReloadBoostBorder = param1;
-         this._isReloadBoostBorderActive = param2;
-         if(this.reloadBoostBorder)
-         {
-            this.reloadBoostBorder.visible = this._isReloadBoostBorder;
-            this.reloadBoostBorder.updateState(this._isReloadBoostBorderActive,param3);
-            this.reloadBoostBorder.x = this.timerProgressTextField.x - RELOAD_BORDER_OFFSET;
-         }
-      }
-      
-      public function setReloadBoostBorderBlink() : void
-      {
-         if(this.reloadBoostBorder)
-         {
-            this.reloadBoostBorder.blink();
-         }
       }
       
       public function autoloaderBoostUpdate(param1:BoostIndicatorStateParamsVO, param2:Number, param3:Boolean = false) : void
@@ -340,6 +313,7 @@ package net.wg.gui.components.crosshairPanel
          this.autoloaderComponent.visible = this.isAutoloader;
          this.extraShotClipPanel.visible = this.isExtraShot;
          this.controllableReloadCassette.visible = this.isControllableReload;
+         this.reloadSwitchIcon.visible = this.isUnlimitedClip;
       }
       
       public function setComponentsAlpha(param1:Number, param2:Number, param3:Number, param4:Number, param5:Number, param6:Number, param7:Number) : void
@@ -413,6 +387,12 @@ package net.wg.gui.components.crosshairPanel
          }
       }
       
+      public function setNetSeparatorType(param1:String) : void
+      {
+         this._netSeparatorType = param1;
+         this.updateNetSeparatorType();
+      }
+      
       public function setNetSeparatorVisible(param1:Boolean) : void
       {
          this._netSeparatorVisible = param1;
@@ -437,12 +417,6 @@ package net.wg.gui.components.crosshairPanel
          }
       }
       
-      public function setNetSeparatorType(param1:String) : void
-      {
-         this._netSeparatorType = param1;
-         this.updateNetSeparatorType();
-      }
-      
       public function setQuickReloadingTime(param1:Boolean, param2:Number) : void
       {
          if(this._quickReloadingTimerActive != param1 || this._quickReloadingTime != param2)
@@ -450,6 +424,26 @@ package net.wg.gui.components.crosshairPanel
             this._quickReloadingTimerActive = param1;
             this._quickReloadingTime = param2;
             this.updateQuickReloadingTimer();
+         }
+      }
+      
+      public function setReloadBoostBorderBlink() : void
+      {
+         if(this.reloadBoostBorder)
+         {
+            this.reloadBoostBorder.blink();
+         }
+      }
+      
+      public function setReloadBoostBorderVisible(param1:Boolean, param2:Boolean, param3:Boolean) : void
+      {
+         this._isReloadBoostBorder = param1;
+         this._isReloadBoostBorderActive = param2;
+         if(this.reloadBoostBorder)
+         {
+            this.reloadBoostBorder.visible = this._isReloadBoostBorder;
+            this.reloadBoostBorder.updateState(this._isReloadBoostBorderActive,param3);
+            this.reloadBoostBorder.x = this.timerProgressTextField.x - RELOAD_BORDER_OFFSET;
          }
       }
       
@@ -505,6 +499,7 @@ package net.wg.gui.components.crosshairPanel
          }
          this._currentTimerTextField = !!this._isReloadInProgress ? this.timerProgressTextField : this.timerCompleteTextField;
          this._currentTimerTextField.visible = true;
+         this.reloadSwitchIcon.gotoAndStop(!!this._isReloadInProgress ? RELOAD_SWITCH_ICON_PROGRESS : RELOAD_SWITCH_ICON_COMPLETE);
          this.applyReloadingData();
          this.applyReloadingAlpha();
       }
@@ -596,6 +591,7 @@ package net.wg.gui.components.crosshairPanel
          removeEventListener(CrosshairPanelEvent.SOUND,this.onCrosshairPanelSoundHandler);
          GTweener.removeTweens(this._reloadTimeColorTransform);
          this.reloadTimeBlink = null;
+         this.reloadSwitchIcon = null;
          this.timerProgressTextField = null;
          this.timerCompleteTextField = null;
          this._currentTimerTextField = null;
@@ -794,6 +790,20 @@ package net.wg.gui.components.crosshairPanel
          }
       }
       
+      public function set reloadBoost(param1:Boolean) : void
+      {
+         this._isReloadBoost = param1;
+         this.timerProgressTextField.textColor = !!param1 ? uint(BOOSTED_TEXT_COLOR_RELOAD) : uint(this._timerProgressTextFieldColor);
+         this.timerProgressTextField.filters = !!param1 ? this._timerBoostedFilter : this._timerProgressTextFieldFilter;
+         this.timerCompleteTextField.textColor = !!param1 ? uint(BOOSTED_TEXT_COLOR) : uint(this._timerCompleteTextFieldColor);
+         this.timerCompleteTextField.filters = !!param1 ? this._timerBoostedFilter : this._timerCompleteTextFieldFilter;
+      }
+      
+      public function set overheatIndicatorVisible(param1:Boolean) : void
+      {
+         this._isOverheat = param1;
+      }
+      
       public function get autoloaderBoostParams() : BoostIndicatorStateParamsVO
       {
          return this.autoloaderComponent.autoloaderBoostParams;
@@ -826,6 +836,11 @@ package net.wg.gui.components.crosshairPanel
       protected function get isControllableReload() : Boolean
       {
          return this._clipReloadingType == CLIP_RELOADING_TYPES.CONTROLLABLE_RELOAD;
+      }
+      
+      protected function get isUnlimitedClip() : Boolean
+      {
+         return this._clipReloadingType == CLIP_RELOADING_TYPES.UNLIMITED_CLIP;
       }
       
       private function onCrosshairPanelSoundHandler(param1:CrosshairPanelEvent) : void

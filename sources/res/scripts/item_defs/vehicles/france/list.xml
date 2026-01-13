@@ -568,7 +568,7 @@
 		<shortUserString>#france_vehicles:F108_Panhard_EBR_105_short</shortUserString>
 		<description>#france_vehicles:F108_Panhard_EBR_105_descr</description>
 		<price>6100000</price>
-		<tags>lightTank role_LT_wheeled HD wheeledVehicle magneticAutoAim speedometer siegeMode scout improvedVentilation_class3_user tankRammer_class2_user aimingStabilizer_class1_user extraHealthReserve_class1_user antifragmentationLining_light_user earn_crystals NY_style</tags>
+		<tags>lightTank role_LT_wheeled HD wheeledVehicle magneticAutoAim speedometer siegeMode scout improvedVentilation_class3_user tankRammer_class2_user aimingStabilizer_class1_user extraHealthReserve_class1_user antifragmentationLining_light_user earn_crystals</tags>
 		<level>10</level>
 	</F108_Panhard_EBR_105>
 	<F23_AMX_13F3AM_MapsTraining_Dummy_SPG_2>
@@ -641,6 +641,21 @@
 		<tags>lightTank role_LT_universal HD scout tankRammer_class2_user improvedVentilation_class3_user aimingStabilizer_class1_user extraHealthReserve_class2_user antifragmentationLining_light_user special builtinRepairkit_user</tags>
 		<level>9</level>
 	</F123_ERAC_105_Proto>
+	<F134_Lorraine_120_Alby>
+		<id>262</id>
+		<userString>#france_vehicles:F134_Lorraine_120_Alby</userString>
+		<description>#france_vehicles:F134_Lorraine_120_Alby_descr</description>
+		<shortUserString>#france_vehicles:F134_Lorraine_120_Alby_short</shortUserString>
+		<shortDescriptionSpecial>#france_vehicles:F134_Lorraine_120_Alby_short_special</shortDescriptionSpecial>
+		<longDescriptionSpecial>#france_vehicles:F134_Lorraine_120_Alby_long_special</longDescriptionSpecial>
+		<price>
+			100
+			<gold/>
+		</price>
+		<notInShop>true</notInShop>
+		<tags>AT-SPG role_ATSPG_support HD mediumAT-SPG improvedVentilation_class2_user extraHealthReserve_class2_user antifragmentationLining_medium_user secret testTank</tags>
+		<level>8</level>
+	</F134_Lorraine_120_Alby>
 	<F135_AS_XX_40_t>
 		<id>129</id>
 		<userString>#france_vehicles:F135_AS_XX_40_t</userString>
@@ -1346,4 +1361,34 @@
 		<tags>mediumTank role_MT_support HD special siegeMode autoSiege mediumTank2 improvedVentilation_class2_user aimingStabilizer_class1_user extraHealthReserve_class2_user antifragmentationLining_medium_user</tags>
 		<level>9</level>
 	</F140_Fantome>
+	<F139_Terrifiant>
+		<id>266</id>
+		<userString>#france_vehicles:F139_Terrifiant</userString>
+		<description>#france_vehicles:F139_Terrifiant_descr</description>
+		<shortUserString>#france_vehicles:F139_Terrifiant_short</shortUserString>
+		<shortDescriptionSpecial>#france_vehicles:F139_Terrifiant_short_special</shortDescriptionSpecial>
+		<longDescriptionSpecial>#france_vehicles:F139_Terrifiant_long_special</longDescriptionSpecial>
+		<price>
+			100
+			<gold/>
+		</price>
+		<notInShop>true</notInShop>
+		<tags>heavyTank role_HT_universal HD heavyTank1 improvedVentilation_class1_user tankRammer_class1_user aimingStabilizer_class1_user extraHealthReserve_class1_user antifragmentationLining_heavy_user earn_crystals secret testTank</tags>
+		<level>9</level>
+	</F139_Terrifiant>
+	<F137_LEOX>
+		<id>268</id>
+		<userString>#france_vehicles:F137_LEOX</userString>
+		<shortUserString>#france_vehicles:F137_LEOX_short</shortUserString>
+		<description>#france_vehicles:F137_LEOX_descr</description>
+		<shortDescriptionSpecial>#france_vehicles:F137_LEOX_short_special</shortDescriptionSpecial>
+		<longDescriptionSpecial>#france_vehicles:F137_LEOX_long_special</longDescriptionSpecial>
+		<price>
+			100
+			<gold/>
+		</price>
+		<notInShop>true</notInShop>
+		<tags>mediumTank role_MT_sniper HD improvedVentilation_class2_user tankRammer_class2_user aimingStabilizer_class1_user extraHealthReserve_class2_user antifragmentationLining_medium_user earn_crystals secret testTank</tags>
+		<level>9</level>
+	</F137_LEOX>
 </root>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A191_Ares_90_C/normal/lod2/Gun_01</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/american/A191_Ares_90_C/normal/lod3/Gun_01</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-0.007160 -0.292001 -1.039872</min>
+		<max>0.979368 0.401890 5.268601</max>
+	</visibilityBox>
+</root>

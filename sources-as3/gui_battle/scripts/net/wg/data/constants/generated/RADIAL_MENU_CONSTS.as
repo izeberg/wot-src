@@ -25,6 +25,8 @@ package net.wg.data.constants.generated
       
       public static const RELOAD:String = "Reload";
       
+      public static const OVERHEAT:String = "Overheat";
+      
       public static const NO:String = "No";
       
       public static const YES:String = "Yes";

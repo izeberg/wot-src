@@ -1,5 +1,6 @@
 import logging, re, sys, traceback, types, weakref
 from functools import partial
+from future.utils import raise_
 _logger = logging.getLogger(__name__)
 
 def copy(wrapper, wrapped):
@@ -65,7 +66,7 @@ def execFunction(wrapped, args, kwargs):
                 raise
 
     if cd._exception:
-        raise cd._exception.__class__, cd._exception, tb
+        raise_(cd._exception.__class__, cd._exception, tb)
     return cd._returned
 
 

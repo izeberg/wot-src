@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from gui.Scaleform.daapi.view.meta.DecorativeCrosshairPanelMeta import DecorativeCrosshairPanelMeta
 from gui.Scaleform.genConsts.DECORATIVE_CROSSHAIR_CONSTS import DECORATIVE_CROSSHAIR_CONSTS
@@ -13,7 +14,9 @@ class DecorativeCrosshairPanel(DecorativeCrosshairPanelMeta):
        VehicleMechanic.OVERHEAT_STACKS: (
                                        DECORATIVE_CROSSHAIR_CONSTS.OVERHEAT,), 
        VehicleMechanic.BATTLE_FURY: (
-                                   DECORATIVE_CROSSHAIR_CONSTS.FURY,)}
+                                   DECORATIVE_CROSSHAIR_CONSTS.FURY,), 
+       VehicleMechanic.OVERHEAT_GUN: (
+                                    DECORATIVE_CROSSHAIR_CONSTS.TEMPERATURE_GUN_OVERHEAT,)}
 
     def _setIsReplay(self, isReplay):
         pass

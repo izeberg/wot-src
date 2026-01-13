@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/french/F134_Lorraine_120_Alby/normal/lod0/Turret_01</nodefullVisual>
+	<visibilityBox>
+		<min>-1.483632 -0.464999 -0.628638</min>
+		<max>1.483631 0.790160 1.605957</max>
+	</visibilityBox>
+	<parent>vehicles/french/F134_Lorraine_120_Alby/normal/lod1/Turret_01</parent>
+	<extent>32.000000</extent>
+</root>

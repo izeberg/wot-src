@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.735375 -0.959709 -3.526273</min>
+		<max>1.733979 0.668594 3.076159</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/british/GB109_GSOR_1008/_skins/GB109_GSOR_1008_KS_3Dst/crash/lod3/Hull</nodefullVisual>
+	<parent>vehicles/british/GB109_GSOR_1008/_skins/GB109_GSOR_1008_KS_3Dst/crash/lod4/Hull</parent>
+	<extent>192.000000</extent>
+</root>

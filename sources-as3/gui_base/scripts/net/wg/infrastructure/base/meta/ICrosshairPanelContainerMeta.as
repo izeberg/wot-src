@@ -118,8 +118,6 @@ package net.wg.infrastructure.base.meta
       
       function as_blinkReloadTime(param1:int) : void;
       
-      function as_setDualAccActive(param1:Boolean) : void;
-      
       function as_setAimDamageStage(param1:String) : void;
       
       function as_setOverheatVisible(param1:Boolean) : void;
@@ -139,5 +137,9 @@ package net.wg.infrastructure.base.meta
       function as_setNetSeparatorType(param1:String) : void;
       
       function as_setChargeableBurstMode(param1:Boolean) : void;
+      
+      function as_setSecondaryGunMarkerActive(param1:Boolean) : void;
+      
+      function as_setDispersionCircleThickness(param1:Boolean) : void;
    }
 }

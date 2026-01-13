@@ -5,7 +5,7 @@ from gui.armor_flashlight.battle_controller import ArmorFlashlightBattleControll
 from gui.battle_control.arena_info.interfaces import IArenaController
 from gui.battle_control.battle_constants import BATTLE_CTRL_ID, REUSABLE_BATTLE_CTRL_IDS, getBattleCtrlName
 from gui.battle_control.controllers import aiming_sounds_ctrl
-from gui.battle_control.controllers import arena_border_ctrl, arena_load_ctrl, battle_field_ctrl, avatar_stats_ctrl, chat_cmd_ctrl, consumables, debug_ctrl, drr_scale_ctrl, dyn_squad_functional, feedback_adaptor, game_messages_ctrl, hit_direction_ctrl, interfaces, msgs_ctrl, period_ctrl, personal_efficiency_ctrl, team_bases_ctrl, vehicle_state_ctrl, view_points_ctrl, ingame_help_ctrl, spectator_ctrl, vehicle_passenger, default_maps_ctrl, anonymizer_fakes_ctrl, game_restrictions_msgs_ctrl, callout_ctrl, deathzones_ctrl, dog_tags_ctrl, team_health_bar_ctrl, battle_notifier_ctrl, prebattle_setups_ctrl, perk_ctrl, kill_cam_ctrl, commendations_messages_ctrl
+from gui.battle_control.controllers import arena_border_ctrl, arena_load_ctrl, battle_field_ctrl, avatar_stats_ctrl, chat_cmd_ctrl, spectator_ctrl, consumables, debug_ctrl, drr_scale_ctrl, dyn_squad_functional, feedback_adaptor, game_messages_ctrl, hit_direction_ctrl, interfaces, msgs_ctrl, period_ctrl, personal_efficiency_ctrl, team_bases_ctrl, vehicle_state_ctrl, view_points_ctrl, ingame_help_ctrl, vehicle_passenger, vehicles_tracking, default_maps_ctrl, anonymizer_fakes_ctrl, game_restrictions_msgs_ctrl, callout_ctrl, deathzones_ctrl, dog_tags_ctrl, team_health_bar_ctrl, battle_notifier_ctrl, prebattle_setups_ctrl, perk_ctrl, kill_cam_ctrl, commendations_messages_ctrl, spotting_indicators_ctrl
 from gui.battle_control.controllers import map_zones_ctrl
 from gui.battle_control.controllers import points_of_interest_ctrl
 from gui.battle_control.controllers.appearance_cache_ctrls.default_appearance_cache_ctrl import DefaultAppearanceCacheController
@@ -19,7 +19,6 @@ from gui.battle_control.controllers.sound_ctrls.stronghold_battle_sounds import 
 from gui.battle_control.controllers.spam_protection import battle_spam_ctrl
 from gui.battle_control.controllers.vse_hud_settings_ctrl import vse_hud_settings_ctrl
 from gui.shared.system_factory import registerBattleControllerRepo
-from gui.battle_control.controllers.sound_ctrls.new_year_battle_sounds import NewYearSoundController
 from skeletons.gui.battle_session import ISharedControllersLocator, IDynamicControllersLocator
 _logger = logging.getLogger(__name__)
 
@@ -120,6 +119,10 @@ class SharedControllersLocator(_ControllersLocator, ISharedControllersLocator):
         return self._repository.getController(BATTLE_CTRL_ID.VEHICLE_PASSENGER_CTRL)
 
     @property
+    def vehiclesTracking(self):
+        return self._repository.getController(BATTLE_CTRL_ID.VEHICLES_TRACKING_CTRL)
+
+    @property
     def hitDirection(self):
         return self._repository.getController(BATTLE_CTRL_ID.HIT_DIRECTION)
 
@@ -218,6 +221,10 @@ class SharedControllersLocator(_ControllersLocator, ISharedControllersLocator):
     @property
     def armorFlashlight(self):
         return self._repository.getController(BATTLE_CTRL_ID.ARMOR_FLASHLIGHT)
+
+    @property
+    def spottingIndicatorsCtrl(self):
+        return self._repository.getController(BATTLE_CTRL_ID.SPOTTING_INDICATORS_CTRL)
 
 
 class DynamicControllersLocator(_ControllersLocator, IDynamicControllersLocator):
@@ -423,7 +430,9 @@ class SharedControllersRepository(_ControllersRepository):
         repository.addController(cls.getOptionalDevicesController(setup))
         state = vehicle_state_ctrl.createCtrl(setup)
         repository.addController(state)
-        repository.addController(vehicle_passenger.createVehiclePassengerController(state))
+        passenger = vehicle_passenger.createVehiclePassengerController(state)
+        repository.addController(passenger)
+        repository.addController(vehicles_tracking.createVehiclesTrackingController(passenger))
         repository.addController(avatar_stats_ctrl.AvatarStatsController())
         messages = cls.getMessagesController(setup)
         feedback = feedback_adaptor.createFeedbackAdaptor(setup)
@@ -457,6 +466,7 @@ class SharedControllersRepository(_ControllersRepository):
         repository.addController(battle_spam_ctrl.BattleSpamController())
         repository.addController(aiming_sounds_ctrl.AimingSoundsCtrl())
         repository.addArenaController(ArmorFlashlightBattleController(), setup)
+        repository.addController(spotting_indicators_ctrl.createCtrl(setup, state))
         return repository
 
     @classmethod
@@ -508,17 +518,8 @@ class ClassicControllersRepository(ControllersRepositoryByBonuses):
         repository.addViewController(battle_hints_ctrl.BattleHintsController(), setup)
         repository.addArenaViewController(battle_field_ctrl.BattleFieldCtrl(), setup)
         repository.addArenaController(cls._getAppearanceCacheController(setup), setup)
-        repository.addController(cls._getShotsResultSoundController())
-        repository.addController(cls._getSoundController(setup))
+        repository.addController(ShotsResultSoundController())
         return repository
-
-    @staticmethod
-    def _getShotsResultSoundController():
-        return ShotsResultSoundController()
-
-    @staticmethod
-    def _getSoundController(setup):
-        return NewYearSoundController()
 
     @staticmethod
     def _getAppearanceCacheController(setup):
@@ -563,9 +564,11 @@ class MapsTrainingControllerRepository(ControllersRepositoryByBonuses):
 class StrongholdControllerRepository(ClassicControllersRepository):
     __slots__ = ()
 
-    @staticmethod
-    def _getSoundController(setup):
-        return StrongholdBattleSoundController()
+    @classmethod
+    def create(cls, setup):
+        repository = super(StrongholdControllerRepository, cls).create(setup)
+        repository.addController(StrongholdBattleSoundController())
+        return repository
 
 
 class PVEBaseControllerRepository(ClassicControllersRepository):

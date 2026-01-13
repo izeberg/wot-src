@@ -923,6 +923,14 @@
 						</value>
 					</param>
 					<param>
+						<name>shellLoadingTime</name>
+						<situationalParam>true</situationalParam>
+						<value>
+							-0.0005
+							<!--BW_String-->
+						</value>
+					</param>
+					<param>
 						<name>avgDamagePerMinute</name>
 						<situationalParam>true</situationalParam>
 						<value>
@@ -1044,6 +1052,14 @@
 					</param>
 					<param>
 						<name>reloadTimeSecs</name>
+						<situationalParam>true</situationalParam>
+						<value>
+							-0.00025
+							<!--BW_String-->
+						</value>
+					</param>
+					<param>
+						<name>shellLoadingTime</name>
 						<situationalParam>true</situationalParam>
 						<value>
 							-0.00025

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/american/A188_Ares_MTB/crash/lod3/Turret_01</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.312506 -0.654081 -1.855820</min>
+		<max>1.316785 0.755909 1.599415</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/american/A188_Ares_MTB/crash/lod2/Turret_01</nodefullVisual>
+</root>

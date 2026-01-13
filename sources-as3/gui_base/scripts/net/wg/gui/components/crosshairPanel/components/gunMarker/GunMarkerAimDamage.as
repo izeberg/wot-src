@@ -22,6 +22,7 @@ package net.wg.gui.components.crosshairPanel.components.gunMarker
       {
          super();
          blendMode = BlendMode.SCREEN;
+         gotoAndStop(totalFrames);
       }
       
       public final function dispose() : void

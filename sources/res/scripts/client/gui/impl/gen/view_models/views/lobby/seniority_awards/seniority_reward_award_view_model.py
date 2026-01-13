@@ -11,7 +11,7 @@ class ShopOnOpenState(Enum):
 class SeniorityRewardAwardViewModel(ViewModel):
     __slots__ = ('onOpenBtnClick', 'onShopBtnClick')
 
-    def __init__(self, properties=6, commands=2):
+    def __init__(self, properties=5, commands=2):
         super(SeniorityRewardAwardViewModel, self).__init__(properties=properties, commands=commands)
 
     def getCategory(self):
@@ -48,12 +48,6 @@ class SeniorityRewardAwardViewModel(ViewModel):
     def setShopOnOpenState(self, value):
         self._setString(4, value.value)
 
-    def getIsOTGRewardsAvailable(self):
-        return self._getBool(5)
-
-    def setIsOTGRewardsAvailable(self, value):
-        self._setBool(5, value)
-
     def _initialize(self):
         super(SeniorityRewardAwardViewModel, self)._initialize()
         self._addStringProperty('category', '')
@@ -61,6 +55,5 @@ class SeniorityRewardAwardViewModel(ViewModel):
         self._addArrayProperty('bonuses', Array())
         self._addNumberProperty('specialCurrencyCount', -1)
         self._addStringProperty('shopOnOpenState', ShopOnOpenState.NOT_AVAILABLE.value)
-        self._addBoolProperty('isOTGRewardsAvailable', False)
         self.onOpenBtnClick = self._addCommand('onOpenBtnClick')
         self.onShopBtnClick = self._addCommand('onShopBtnClick')

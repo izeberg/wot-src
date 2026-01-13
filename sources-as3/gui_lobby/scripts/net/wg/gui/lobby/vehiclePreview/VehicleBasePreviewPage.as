@@ -57,6 +57,8 @@ package net.wg.gui.lobby.vehiclePreview
       private static const SHOW_SLOTS_ALPHA:Number = 1;
       
       private static const HIDE_SLOTS_ALPHA:Number = 0;
+      
+      private static const TOP_OFFSET_TOP_PANEL:int = 20;
        
       
       public var leftBackground:MovieClip = null;
@@ -212,7 +214,7 @@ package net.wg.gui.lobby.vehiclePreview
             if(this.topPanel != null)
             {
                this.topPanel.x = width - this.topPanel.width >> 1;
-               this.topPanel.y = this._paddingTop;
+               this.topPanel.y = this._paddingTop - TOP_OFFSET_TOP_PANEL;
             }
             if(this.bottomPanel != null)
             {

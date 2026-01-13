@@ -16,7 +16,7 @@ package net.wg.infrastructure.interfaces
       
       function get atlasBitmapData() : BitmapData;
       
-      function initResources(param1:String) : void;
+      function initResources(param1:String, param2:String = "") : void;
       
       function getAtlasItemVOByName(param1:String) : IAtlasItemVO;
    }

@@ -226,7 +226,7 @@
 		<GameObject>
 			<name>Bomb_03_01_01</name>
 			<UUID>824b45c8-9beb-3a0f-a7fc-823821979081</UUID>
-			<flags>8</flags>
+			<flags>0</flags>
 		</GameObject>
 		<GameObject>
 			<name>Motion_Blur_Bomb_01_02_01</name>
@@ -1109,6 +1109,14 @@
 				<UUID>b09112b2-92c6-4467-a51d-80428517af77</UUID>
 				<flags>35</flags>
 				<config>
+					<property>
+						<name>activeLayer</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>speed</name>
+						<value>1</value>
+					</property>
 					<property>
 						<name>loop</name>
 						<value>0</value>
@@ -2062,12 +2070,24 @@
 							</item>
 						</collection>
 					</property>
+					<property>
+						<name>layers</name>
+						<collection/>
+					</property>
 				</config>
 			</component>
 			<component>
 				<UUID>ec1d0141-3b75-4adf-a70f-221f64f2e767</UUID>
 				<flags>35</flags>
 				<config>
+					<property>
+						<name>activeLayer</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>speed</name>
+						<value>1</value>
+					</property>
 					<property>
 						<name>loop</name>
 						<value>0</value>
@@ -6524,12 +6544,24 @@
 							</item>
 						</collection>
 					</property>
+					<property>
+						<name>layers</name>
+						<collection/>
+					</property>
 				</config>
 			</component>
 			<component>
 				<UUID>7480f275-f751-362f-94a5-98e9842088c4</UUID>
 				<flags>35</flags>
 				<config>
+					<property>
+						<name>activeLayer</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>speed</name>
+						<value>1</value>
+					</property>
 					<property>
 						<name>loop</name>
 						<value>0</value>
@@ -9704,12 +9736,24 @@
 							</item>
 						</collection>
 					</property>
+					<property>
+						<name>layers</name>
+						<collection/>
+					</property>
 				</config>
 			</component>
 			<component>
 				<UUID>d13ae81d-0e60-3f8f-bee9-d536a0bc74c8</UUID>
 				<flags>35</flags>
 				<config>
+					<property>
+						<name>activeLayer</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>speed</name>
+						<value>1</value>
+					</property>
 					<property>
 						<name>loop</name>
 						<value>0</value>
@@ -14169,12 +14213,24 @@
 							</item>
 						</collection>
 					</property>
+					<property>
+						<name>layers</name>
+						<collection/>
+					</property>
 				</config>
 			</component>
 			<component>
 				<UUID>a9b9816d-9f74-3e99-ae2c-9f2901261735</UUID>
 				<flags>35</flags>
 				<config>
+					<property>
+						<name>activeLayer</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>speed</name>
+						<value>1</value>
+					</property>
 					<property>
 						<name>loop</name>
 						<value>0</value>
@@ -17355,12 +17411,24 @@
 							</item>
 						</collection>
 					</property>
+					<property>
+						<name>layers</name>
+						<collection/>
+					</property>
 				</config>
 			</component>
 			<component>
 				<UUID>b3908880-a46b-3d66-ab14-4c88ac846f12</UUID>
 				<flags>35</flags>
 				<config>
+					<property>
+						<name>activeLayer</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>speed</name>
+						<value>1</value>
+					</property>
 					<property>
 						<name>loop</name>
 						<value>0</value>
@@ -23408,12 +23476,24 @@
 							</item>
 						</collection>
 					</property>
+					<property>
+						<name>layers</name>
+						<collection/>
+					</property>
 				</config>
 			</component>
 			<component>
 				<UUID>b97a59c8-6819-372b-9b52-3745c10d07e5</UUID>
 				<flags>35</flags>
 				<config>
+					<property>
+						<name>activeLayer</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>speed</name>
+						<value>1</value>
+					</property>
 					<property>
 						<name>loop</name>
 						<value>0</value>
@@ -26594,12 +26674,24 @@
 							</item>
 						</collection>
 					</property>
+					<property>
+						<name>layers</name>
+						<collection/>
+					</property>
 				</config>
 			</component>
 			<component>
 				<UUID>1be07818-5e6e-3d2c-a7e7-5867891cb392</UUID>
 				<flags>35</flags>
 				<config>
+					<property>
+						<name>activeLayer</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>speed</name>
+						<value>1</value>
+					</property>
 					<property>
 						<name>loop</name>
 						<value>0</value>
@@ -29798,12 +29890,24 @@
 							</item>
 						</collection>
 					</property>
+					<property>
+						<name>layers</name>
+						<collection/>
+					</property>
 				</config>
 			</component>
 			<component>
 				<UUID>bc6b0066-ed3d-3457-bc81-1c0a05505b1f</UUID>
 				<flags>35</flags>
 				<config>
+					<property>
+						<name>activeLayer</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>speed</name>
+						<value>1</value>
+					</property>
 					<property>
 						<name>loop</name>
 						<value>0</value>
@@ -34266,6 +34370,10 @@
 							</item>
 						</collection>
 					</property>
+					<property>
+						<name>layers</name>
+						<collection/>
+					</property>
 				</config>
 			</component>
 		</ComponentPool>
@@ -35901,6 +36009,10 @@
 						<name>Cast Shadows</name>
 						<value>0</value>
 					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
+					</property>
 				</config>
 			</component>
 			<component>
@@ -35914,6 +36026,10 @@
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
 						<value>0</value>
 					</property>
 				</config>
@@ -35931,6 +36047,10 @@
 						<name>Cast Shadows</name>
 						<value>1</value>
 					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
+					</property>
 				</config>
 			</component>
 			<component>
@@ -35944,6 +36064,10 @@
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
 						<value>0</value>
 					</property>
 				</config>
@@ -35961,6 +36085,10 @@
 						<name>Cast Shadows</name>
 						<value>0</value>
 					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
+					</property>
 				</config>
 			</component>
 			<component>
@@ -35974,6 +36102,10 @@
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
 						<value>0</value>
 					</property>
 				</config>
@@ -35991,6 +36123,10 @@
 						<name>Cast Shadows</name>
 						<value>0</value>
 					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
+					</property>
 				</config>
 			</component>
 			<component>
@@ -36006,6 +36142,10 @@
 						<name>Cast Shadows</name>
 						<value>1</value>
 					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
+					</property>
 				</config>
 			</component>
 			<component>
@@ -36019,6 +36159,10 @@
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
 						<value>0</value>
 					</property>
 				</config>
@@ -36036,6 +36180,10 @@
 						<name>Cast Shadows</name>
 						<value>0</value>
 					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
+					</property>
 				</config>
 			</component>
 			<component>
@@ -36049,6 +36197,10 @@
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
 						<value>0</value>
 					</property>
 				</config>
@@ -36066,6 +36218,10 @@
 						<name>Cast Shadows</name>
 						<value>0</value>
 					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
+					</property>
 				</config>
 			</component>
 			<component>
@@ -36080,6 +36236,10 @@
 					<property>
 						<name>Cast Shadows</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
 					</property>
 				</config>
 			</component>
@@ -36096,6 +36256,10 @@
 						<name>Cast Shadows</name>
 						<value>1</value>
 					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
+					</property>
 				</config>
 			</component>
 			<component>
@@ -36109,6 +36273,10 @@
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
 						<value>0</value>
 					</property>
 				</config>
@@ -36126,6 +36294,10 @@
 						<name>Cast Shadows</name>
 						<value>0</value>
 					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
+					</property>
 				</config>
 			</component>
 			<component>
@@ -36139,6 +36311,10 @@
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
 						<value>0</value>
 					</property>
 				</config>
@@ -36156,6 +36332,10 @@
 						<name>Cast Shadows</name>
 						<value>0</value>
 					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
+					</property>
 				</config>
 			</component>
 			<component>
@@ -36169,6 +36349,10 @@
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
 						<value>0</value>
 					</property>
 				</config>
@@ -36186,6 +36370,10 @@
 						<name>Cast Shadows</name>
 						<value>0</value>
 					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
+					</property>
 				</config>
 			</component>
 			<component>
@@ -36200,6 +36388,10 @@
 					<property>
 						<name>Cast Shadows</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
 					</property>
 				</config>
 			</component>

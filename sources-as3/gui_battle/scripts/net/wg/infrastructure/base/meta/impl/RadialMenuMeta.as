@@ -22,6 +22,8 @@ package net.wg.infrastructure.base.meta.impl
       
       private var _array2:Array;
       
+      private var _array3:Array;
+      
       public function RadialMenuMeta()
       {
          super();
@@ -43,6 +45,11 @@ package net.wg.infrastructure.base.meta.impl
          {
             this._array2.splice(0,this._array2.length);
             this._array2 = null;
+         }
+         if(this._array3)
+         {
+            this._array3.splice(0,this._array3.length);
+            this._array3 = null;
          }
          super.onDispose();
       }
@@ -82,20 +89,26 @@ package net.wg.infrastructure.base.meta.impl
          }
       }
       
-      public final function as_show(param1:Number, param2:Number, param3:String, param4:Array, param5:Array) : void
+      public final function as_show(param1:Number, param2:Number, param3:String, param4:Array, param5:Array, param6:Array) : void
       {
-         var _loc6_:Array = this._array1;
+         var _loc7_:Array = this._array1;
          this._array1 = param4;
-         var _loc7_:Array = this._array2;
+         var _loc8_:Array = this._array2;
          this._array2 = param5;
-         this.show(param1,param2,param3,this._array1,this._array2);
-         if(_loc6_)
-         {
-            _loc6_.splice(0,_loc6_.length);
-         }
+         var _loc9_:Array = this._array3;
+         this._array3 = param6;
+         this.show(param1,param2,param3,this._array1,this._array2,this._array3);
          if(_loc7_)
          {
             _loc7_.splice(0,_loc7_.length);
+         }
+         if(_loc8_)
+         {
+            _loc8_.splice(0,_loc8_.length);
+         }
+         if(_loc9_)
+         {
+            _loc9_.splice(0,_loc9_.length);
          }
       }
       
@@ -106,11 +119,11 @@ package net.wg.infrastructure.base.meta.impl
          throw new AbstractException(_loc2_);
       }
       
-      protected function show(param1:Number, param2:Number, param3:String, param4:Array, param5:Array) : void
+      protected function show(param1:Number, param2:Number, param3:String, param4:Array, param5:Array, param6:Array) : void
       {
-         var _loc6_:String = "as_show" + Errors.ABSTRACT_INVOKE;
-         DebugUtils.LOG_ERROR(_loc6_);
-         throw new AbstractException(_loc6_);
+         var _loc7_:String = "as_show" + Errors.ABSTRACT_INVOKE;
+         DebugUtils.LOG_ERROR(_loc7_);
+         throw new AbstractException(_loc7_);
       }
    }
 }

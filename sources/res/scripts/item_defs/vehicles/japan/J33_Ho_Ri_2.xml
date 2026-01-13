@@ -41,6 +41,12 @@
 				<!--BW_String-->
 			</invisibilityBonus>
 		</camouflageNet>
+		<deluxeCamouflageNet>
+			<invisibilityBonus>
+				0.175
+				<!--BW_String-->
+			</invisibilityBonus>
+		</deluxeCamouflageNet>
 		<additionalInvisibilityDevice>
 			<invisibilityBonus>
 				0.05 0.06
@@ -5322,40 +5328,42 @@
 						<armor_1>
 							270
 							<vehicleDamageFactor>0</vehicleDamageFactor>
+							<tags>gunMask</tags>
 						</armor_1>
 						<armor_2>
 							180
 							<vehicleDamageFactor>0</vehicleDamageFactor>
-							<tags>screen</tags>
+							<tags>gunMask</tags>
 						</armor_2>
 						<armor_3>
 							180
 							<vehicleDamageFactor>0</vehicleDamageFactor>
-							<tags>screen</tags>
+							<tags>gunMask</tags>
 						</armor_3>
 						<armor_5>
 							70
 							<vehicleDamageFactor>0</vehicleDamageFactor>
-							<tags>screen</tags>
+							<tags>gunMask</tags>
 						</armor_5>
 						<armor_6>
 							35
 							<vehicleDamageFactor>0</vehicleDamageFactor>
-							<tags>screen</tags>
+							<tags>gunMask</tags>
 						</armor_6>
 						<armor_7>
 							180
 							<vehicleDamageFactor>0</vehicleDamageFactor>
-							<tags>screen</tags>
+							<tags>gunMask</tags>
 						</armor_7>
 						<armor_9>
 							170
 							<vehicleDamageFactor>0</vehicleDamageFactor>
-							<tags>screen</tags>
+							<tags>gunMask</tags>
 						</armor_9>
 						<armor_10>
 							220
 							<vehicleDamageFactor>0</vehicleDamageFactor>
+							<tags>gunMask</tags>
 						</armor_10>
 						<gun>35</gun>
 					</armor>
@@ -5500,18 +5508,22 @@
 						<armor_1>
 							270
 							<vehicleDamageFactor>0</vehicleDamageFactor>
+							<tags>gunMask</tags>
 						</armor_1>
 						<armor_3>
 							180
 							<vehicleDamageFactor>0</vehicleDamageFactor>
+							<tags>gunMask</tags>
 						</armor_3>
 						<armor_5>
 							70
 							<vehicleDamageFactor>0</vehicleDamageFactor>
+							<tags>gunMask</tags>
 						</armor_5>
 						<armor_6>
 							35
 							<vehicleDamageFactor>0</vehicleDamageFactor>
+							<tags>gunMask</tags>
 						</armor_6>
 						<gun>45</gun>
 					</armor>

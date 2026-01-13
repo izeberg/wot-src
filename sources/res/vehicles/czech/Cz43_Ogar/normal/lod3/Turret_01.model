@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/czech/Cz43_Ogar/normal/lod3/Turret_01</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/czech/Cz43_Ogar/normal/lod4/Turret_01</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.244188 -0.010650 -2.395943</min>
+		<max>1.242808 4.673895 1.351934</max>
+	</visibilityBox>
+</root>

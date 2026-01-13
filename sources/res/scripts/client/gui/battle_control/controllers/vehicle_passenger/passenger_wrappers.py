@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import operator, typing
 from functools import wraps
 if typing.TYPE_CHECKING:

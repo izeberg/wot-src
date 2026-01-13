@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import ResMgr
 from helpers import VERSION_FILE_PATH
 from soft_exception import SoftException

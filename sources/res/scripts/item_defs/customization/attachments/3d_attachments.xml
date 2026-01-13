@@ -729,6 +729,73 @@
 		</attachment>
 	</itemGroup>
 	<itemGroup>
+		<name>Night Raid</name>
+		<userString>#vehicle_customization:attachment/night_raid</userString>
+		<season>ALL</season>
+		<historical>0</historical>
+		<attachment>
+			<id>1053</id>
+			<name>Cus_51_ArmiesG_Flamethrower</name>
+			<modelName>content/CGFPrefabs/3D_Customization/Cus_51_ArmiesG_Flamethrower/Cus_51_ArmiesG_Flamethrower.prefab</modelName>
+			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_51_ArmiesG_Flamethrower/Cus_51_ArmiesG_Flamethrower.prefab</hangarModelName>
+			<attachmentLogic>prefab</attachmentLogic>
+			<applyType>universal</applyType>
+			<size>medium</size>
+			<rarity>rare</rarity>
+			<priceGroup>attachments 500g notInShop</priceGroup>
+			<userString>#vehicle_customization:attachment/night_raid/Cus_51_ArmiesG_Flamethrower</userString>
+		</attachment>
+		<attachment>
+			<id>1054</id>
+			<name>Cus_53_ArmiesG_Projector</name>
+			<modelName>content/CGFPrefabs/3D_Customization/Cus_53_ArmiesG_Projector/Cus_53_ArmiesG_Projector.prefab</modelName>
+			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_53_ArmiesG_Projector/Cus_53_ArmiesG_Projector_hangar.prefab</hangarModelName>
+			<attachmentLogic>prefab</attachmentLogic>
+			<applyType>gunMantlet</applyType>
+			<size>medium</size>
+			<rarity>epic</rarity>
+			<priceGroup>attachments 1000g notInShop</priceGroup>
+			<userString>#vehicle_customization:attachment/night_raid/Cus_53_ArmiesG_Projector</userString>
+			<tags>battleEffect</tags>
+		</attachment>
+		<attachment>
+			<id>1055</id>
+			<name>Cus_54_ArmiesG_Opticalgun</name>
+			<modelName>content/CGFPrefabs/3D_Customization/Cus_54_ArmiesG_Opticalgun/Cus_54_ArmiesG_Opticalgun.prefab</modelName>
+			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_54_ArmiesG_Opticalgun/Cus_54_ArmiesG_Opticalgun.prefab</hangarModelName>
+			<attachmentLogic>prefab</attachmentLogic>
+			<applyType>turret</applyType>
+			<size>medium</size>
+			<rarity>rare</rarity>
+			<priceGroup>attachments 500g notInShop</priceGroup>
+			<userString>#vehicle_customization:attachment/night_raid/Cus_54_ArmiesG_Opticalgun</userString>
+		</attachment>
+		<attachment>
+			<id>1056</id>
+			<name>Cus_55_ArmiesG_Gunskit</name>
+			<modelName>content/CGFPrefabs/3D_Customization/Cus_55_ArmiesG_Gunskit/Cus_55_ArmiesG_Gunskit.prefab</modelName>
+			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_55_ArmiesG_Gunskit/Cus_55_ArmiesG_Gunskit.prefab</hangarModelName>
+			<attachmentLogic>prefab</attachmentLogic>
+			<applyType>universal</applyType>
+			<size>medium</size>
+			<rarity>rare</rarity>
+			<priceGroup>attachments 500g notInShop</priceGroup>
+			<userString>#vehicle_customization:attachment/night_raid/Cus_55_ArmiesG_Gunskit</userString>
+		</attachment>
+		<attachment>
+			<id>1062</id>
+			<name>Cus_77_ArmiesG_MG08</name>
+			<modelName>content/CGFPrefabs/3D_Customization/Cus_77_ArmiesG_MG08/Cus_77_ArmiesG_MG08.prefab</modelName>
+			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_77_ArmiesG_MG08/Cus_77_ArmiesG_MG08.prefab</hangarModelName>
+			<attachmentLogic>prefab</attachmentLogic>
+			<applyType>universal</applyType>
+			<size>medium</size>
+			<rarity>rare</rarity>
+			<priceGroup>attachments 500g notInShop</priceGroup>
+			<userString>#vehicle_customization:attachment/night_raid/Cus_77_ArmiesG_MG08</userString>
+		</attachment>
+	</itemGroup>
+	<itemGroup>
 		<name>Field Operations</name>
 		<userString>#vehicle_customization:attachment/field_operations</userString>
 		<season>ALL</season>
@@ -858,6 +925,72 @@
 			<rarity>rare</rarity>
 			<priceGroup>attachments 350g notInShop</priceGroup>
 			<userString>#vehicle_customization:attachment/tactical_supplies/Cus_82_NationsA_Ammogun</userString>
+		</attachment>
+	</itemGroup>
+	<itemGroup>
+		<name>Festive_Firepower</name>
+		<userString>#vehicle_customization:attachment/festive_firepower</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<attachment>
+			<id>1115</id>
+			<name>Cus_128_Revelry_Wreath</name>
+			<modelName>content/CGFPrefabs/3D_Customization/Cus_128_Revelry_Wreath/Cus_128_Revelry_Wreath.prefab</modelName>
+			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_128_Revelry_Wreath/Cus_128_Revelry_Wreath.prefab</hangarModelName>
+			<attachmentLogic>prefab</attachmentLogic>
+			<applyType>gunMantlet</applyType>
+			<size>medium</size>
+			<rarity>rare</rarity>
+			<priceGroup>attachments 650g notInShop</priceGroup>
+			<userString>#vehicle_customization:attachment/festive_firepower/Cus_128_Revelry_Wreath</userString>
+		</attachment>
+		<attachment>
+			<id>1116</id>
+			<name>Cus_129_Revelry_Gnome</name>
+			<modelName>content/CGFPrefabs/3D_Customization/Cus_129_Revelry_Gnome/Cus_129_Revelry_Gnome.prefab</modelName>
+			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_129_Revelry_Gnome/Cus_129_Revelry_Gnome.prefab</hangarModelName>
+			<attachmentLogic>prefab</attachmentLogic>
+			<applyType>turret</applyType>
+			<size>medium</size>
+			<rarity>epic</rarity>
+			<priceGroup>attachments 1300g notInShop</priceGroup>
+			<userString>#vehicle_customization:attachment/festive_firepower/Cus_129_Revelry_Gnome</userString>
+		</attachment>
+		<attachment>
+			<id>1117</id>
+			<name>Cus_130_Revelry_Sleigh</name>
+			<modelName>content/CGFPrefabs/3D_Customization/Cus_130_Revelry_Sleigh/Cus_130_Revelry_Sleigh.prefab</modelName>
+			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_130_Revelry_Sleigh/Cus_130_Revelry_Sleigh.prefab</hangarModelName>
+			<attachmentLogic>prefab</attachmentLogic>
+			<applyType>universal</applyType>
+			<size>medium</size>
+			<rarity>rare</rarity>
+			<priceGroup>attachments 650g notInShop</priceGroup>
+			<userString>#vehicle_customization:attachment/festive_firepower/Cus_130_Revelry_Sleigh</userString>
+		</attachment>
+		<attachment>
+			<id>1118</id>
+			<name>Cus_131_Revelry_Stockings</name>
+			<modelName>content/CGFPrefabs/3D_Customization/Cus_131_Revelry_Stockings/Cus_131_Revelry_Stockings.prefab</modelName>
+			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_131_Revelry_Stockings/Cus_131_Revelry_Stockings.prefab</hangarModelName>
+			<attachmentLogic>prefab</attachmentLogic>
+			<applyType>universal</applyType>
+			<size>medium</size>
+			<rarity>rare</rarity>
+			<priceGroup>attachments 650g notInShop</priceGroup>
+			<userString>#vehicle_customization:attachment/festive_firepower/Cus_131_Revelry_Stockings</userString>
+		</attachment>
+		<attachment>
+			<id>1119</id>
+			<name>Cus_132_Revelry_GingerbreadMen</name>
+			<modelName>content/CGFPrefabs/3D_Customization/Cus_132_Revelry_GingerbreadMen/Cus_132_Revelry_GingerbreadMen.prefab</modelName>
+			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_132_Revelry_GingerbreadMen/Cus_132_Revelry_GingerbreadMen.prefab</hangarModelName>
+			<attachmentLogic>prefab</attachmentLogic>
+			<applyType>universal</applyType>
+			<size>medium</size>
+			<rarity>rare</rarity>
+			<priceGroup>attachments 650g notInShop</priceGroup>
+			<userString>#vehicle_customization:attachment/festive_firepower/Cus_132_Revelry_GingerbreadMen</userString>
 		</attachment>
 	</itemGroup>
 	<itemGroup>
@@ -1225,6 +1358,74 @@
 		</attachment>
 	</itemGroup>
 	<itemGroup>
+		<name>ArmiesA</name>
+		<userString>#vehicle_customization:attachment/ArmiesA</userString>
+		<season>ALL</season>
+		<historical>0</historical>
+		<attachment>
+			<id>1088</id>
+			<name>Cus_57_ArmiesA_Machinegun</name>
+			<modelName>content/CGFPrefabs/3D_Customization/Cus_57_ArmiesA_Machinegun/Cus_57_ArmiesA_Machinegun.prefab</modelName>
+			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_57_ArmiesA_Machinegun/Cus_57_ArmiesA_Machinegun.prefab</hangarModelName>
+			<attachmentLogic>prefab</attachmentLogic>
+			<applyType>turret</applyType>
+			<size>medium</size>
+			<rarity>rare</rarity>
+			<priceGroup>attachments 500g notInShop</priceGroup>
+			<userString>#vehicle_customization:attachment/ArmiesA/Cus_57_ArmiesA_Machinegun</userString>
+		</attachment>
+		<attachment>
+			<id>1089</id>
+			<name>Cus_58_ArmiesA_AmmoCrates</name>
+			<modelName>content/CGFPrefabs/3D_Customization/Cus_58_ArmiesA_AmmoCrates/Cus_58_ArmiesA_AmmoCrates.prefab</modelName>
+			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_58_ArmiesA_AmmoCrates/Cus_58_ArmiesA_AmmoCrates.prefab</hangarModelName>
+			<attachmentLogic>prefab</attachmentLogic>
+			<applyType>universal</applyType>
+			<size>medium</size>
+			<rarity>rare</rarity>
+			<priceGroup>attachments 500g notInShop</priceGroup>
+			<userString>#vehicle_customization:attachment/ArmiesA/Cus_58_ArmiesA_AmmoCrates</userString>
+		</attachment>
+		<attachment>
+			<id>1090</id>
+			<name>Cus_60_ArmiesA_Bazooka</name>
+			<modelName>content/CGFPrefabs/3D_Customization/Cus_60_ArmiesA_Bazooka/Cus_60_ArmiesA_Bazooka.prefab</modelName>
+			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_60_ArmiesA_Bazooka/Cus_60_ArmiesA_Bazooka.prefab</hangarModelName>
+			<attachmentLogic>prefab</attachmentLogic>
+			<applyType>universal</applyType>
+			<size>medium</size>
+			<rarity>rare</rarity>
+			<priceGroup>attachments 500g notInShop</priceGroup>
+			<userString>#vehicle_customization:attachment/ArmiesA/Cus_60_ArmiesA_Bazooka</userString>
+		</attachment>
+		<attachment>
+			<id>1092</id>
+			<name>Cus_135_ArmiesA_Projector</name>
+			<modelName>content/CGFPrefabs/3D_Customization/Cus_135_ArmiesA_Projector/Cus_135_ArmiesA_Projector.prefab</modelName>
+			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_135_ArmiesA_Projector/Cus_135_ArmiesA_Projector.prefab</hangarModelName>
+			<attachmentLogic>prefab</attachmentLogic>
+			<applyType>gunMantlet</applyType>
+			<size>medium</size>
+			<rarity>epic</rarity>
+			<priceGroup>attachments 1000g notInShop</priceGroup>
+			<historical>1</historical>
+			<userString>#vehicle_customization:attachment/ArmiesA/Cus_135_ArmiesA_Projector</userString>
+		</attachment>
+		<attachment>
+			<id>1094</id>
+			<name>Cus_133_ArmiesA_Militarystuff</name>
+			<modelName>content/CGFPrefabs/3D_Customization/Cus_133_ArmiesA_Militarystuff/Cus_133_ArmiesA_Militarystuff.prefab</modelName>
+			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_133_ArmiesA_Militarystuff/Cus_133_ArmiesA_Militarystuff.prefab</hangarModelName>
+			<attachmentLogic>prefab</attachmentLogic>
+			<applyType>universal</applyType>
+			<size>medium</size>
+			<rarity>rare</rarity>
+			<priceGroup>attachments 650g notInShop</priceGroup>
+			<historical>1</historical>
+			<userString>#vehicle_customization:attachment/ArmiesA/Cus_133_ArmiesA_Militarystuff</userString>
+		</attachment>
+	</itemGroup>
+	<itemGroup>
 		<name>Celestial</name>
 		<userString>#vehicle_customization:attachment/Celestial</userString>
 		<season>ALL</season>
@@ -1432,70 +1633,70 @@
 		</attachment>
 	</itemGroup>
 	<itemGroup>
-		<name>Festive_Firepower</name>
-		<userString>#vehicle_customization:attachment/festive_firepower</userString>
+		<name>Winter Raid 26</name>
 		<season>ALL</season>
 		<historical>1</historical>
 		<attachment>
-			<id>1115</id>
-			<name>Cus_128_Revelry_Wreath</name>
-			<modelName>content/CGFPrefabs/3D_Customization/Cus_128_Revelry_Wreath/Cus_128_Revelry_Wreath.prefab</modelName>
-			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_128_Revelry_Wreath/Cus_128_Revelry_Wreath.prefab</hangarModelName>
+			<id>1125</id>
+			<name>Cus_141_PE25_Globus</name>
+			<modelName>content/CGFPrefabs/3D_Customization/Cus_141_PE25_Globus/Cus_141_PE25_Globus.prefab</modelName>
+			<applyType>turret</applyType>
+			<size>medium</size>
+			<rarity>epic</rarity>
+			<priceGroup>attachments 2795g notInShop</priceGroup>
+			<userString>#vehicle_customization:attachment/winter_raid/Cus_141_PE25_Globus</userString>
+			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_141_PE25_Globus/Cus_141_PE25_Globus_hanger.prefab</hangarModelName>
 			<attachmentLogic>prefab</attachmentLogic>
+		</attachment>
+		<attachment>
+			<id>1126</id>
+			<name>Cus_142_PE25_Shipwreck</name>
+			<modelName>content/CGFPrefabs/3D_Customization/Cus_142_PE25_Shipwreck/Cus_142_PE25_Shipwreck.prefab</modelName>
+			<applyType>universal</applyType>
+			<size>medium</size>
+			<rarity>rare</rarity>
+			<priceGroup>attachments 650g notInShop</priceGroup>
+			<userString>#vehicle_customization:attachment/winter_raid/Cus_142_PE25_Shipwreck</userString>
+			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_142_PE25_Shipwreck/Cus_142_PE25_Shipwreck.prefab</hangarModelName>
+			<attachmentLogic>prefab</attachmentLogic>
+		</attachment>
+		<attachment>
+			<id>1127</id>
+			<name>Cus_143_PE25_Adventure_equipment</name>
+			<modelName>content/CGFPrefabs/3D_Customization/Cus_143_PE25_Adventure_equipment/Cus_143_PE25_Adventure_equipment.prefab</modelName>
+			<applyType>universal</applyType>
+			<size>medium</size>
+			<rarity>rare</rarity>
+			<priceGroup>attachments 650g notInShop</priceGroup>
+			<userString>#vehicle_customization:attachment/winter_raid/Cus_143_PE25_Adventure_equipment</userString>
+			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_143_PE25_Adventure_equipment/Cus_143_PE25_Adventure_equipment.prefab</hangarModelName>
+			<attachmentLogic>prefab</attachmentLogic>
+		</attachment>
+		<attachment>
+			<id>1128</id>
+			<name>Cus_144_PE25_Altar</name>
+			<modelName>content/CGFPrefabs/3D_Customization/Cus_144_PE25_Altar/Cus_144_PE25_Altar.prefab</modelName>
+			<applyType>universal</applyType>
+			<size>medium</size>
+			<rarity>rare</rarity>
+			<priceGroup>attachments 650g notInShop</priceGroup>
+			<userString>#vehicle_customization:attachment/winter_raid/Cus_144_PE25_Altar</userString>
+			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_144_PE25_Altar/Cus_144_PE25_Altar.prefab</hangarModelName>
+			<attachmentLogic>prefab</attachmentLogic>
+		</attachment>
+		<attachment>
+			<id>1129</id>
+			<name>Cus_145_PE25_Vectoris</name>
+			<modelName>content/CGFPrefabs/3D_Customization/Cus_145_PE25_Vectoris/Cus_145_PE25_Vectoris.prefab</modelName>
 			<applyType>gunMantlet</applyType>
 			<size>medium</size>
 			<rarity>rare</rarity>
 			<priceGroup>attachments 650g notInShop</priceGroup>
-			<userString>#vehicle_customization:attachment/festive_firepower/Cus_128_Revelry_Wreath</userString>
-		</attachment>
-		<attachment>
-			<id>1116</id>
-			<name>Cus_129_Revelry_Gnome</name>
-			<modelName>content/CGFPrefabs/3D_Customization/Cus_129_Revelry_Gnome/Cus_129_Revelry_Gnome.prefab</modelName>
-			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_129_Revelry_Gnome/Cus_129_Revelry_Gnome.prefab</hangarModelName>
+			<userString>#vehicle_customization:attachment/winter_raid/Cus_145_PE25_Vectoris</userString>
+			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_145_PE25_Vectoris/Cus_145_PE25_Vectoris.prefab</hangarModelName>
 			<attachmentLogic>prefab</attachmentLogic>
-			<applyType>turret</applyType>
-			<size>medium</size>
-			<rarity>epic</rarity>
-			<priceGroup>attachments 1300g notInShop</priceGroup>
-			<userString>#vehicle_customization:attachment/festive_firepower/Cus_129_Revelry_Gnome</userString>
 		</attachment>
-		<attachment>
-			<id>1117</id>
-			<name>Cus_130_Revelry_Sleigh</name>
-			<modelName>content/CGFPrefabs/3D_Customization/Cus_130_Revelry_Sleigh/Cus_130_Revelry_Sleigh.prefab</modelName>
-			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_130_Revelry_Sleigh/Cus_130_Revelry_Sleigh.prefab</hangarModelName>
-			<attachmentLogic>prefab</attachmentLogic>
-			<applyType>universal</applyType>
-			<size>medium</size>
-			<rarity>rare</rarity>
-			<priceGroup>attachments 650g notInShop</priceGroup>
-			<userString>#vehicle_customization:attachment/festive_firepower/Cus_130_Revelry_Sleigh</userString>
-		</attachment>
-		<attachment>
-			<id>1118</id>
-			<name>Cus_131_Revelry_Stockings</name>
-			<modelName>content/CGFPrefabs/3D_Customization/Cus_131_Revelry_Stockings/Cus_131_Revelry_Stockings.prefab</modelName>
-			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_131_Revelry_Stockings/Cus_131_Revelry_Stockings.prefab</hangarModelName>
-			<attachmentLogic>prefab</attachmentLogic>
-			<applyType>universal</applyType>
-			<size>medium</size>
-			<rarity>rare</rarity>
-			<priceGroup>attachments 650g notInShop</priceGroup>
-			<userString>#vehicle_customization:attachment/festive_firepower/Cus_131_Revelry_Stockings</userString>
-		</attachment>
-		<attachment>
-			<id>1119</id>
-			<name>Cus_132_Revelry_GingerbreadMen</name>
-			<modelName>content/CGFPrefabs/3D_Customization/Cus_132_Revelry_GingerbreadMen/Cus_132_Revelry_GingerbreadMen.prefab</modelName>
-			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_132_Revelry_GingerbreadMen/Cus_132_Revelry_GingerbreadMen.prefab</hangarModelName>
-			<attachmentLogic>prefab</attachmentLogic>
-			<applyType>universal</applyType>
-			<size>medium</size>
-			<rarity>rare</rarity>
-			<priceGroup>attachments 650g notInShop</priceGroup>
-			<userString>#vehicle_customization:attachment/festive_firepower/Cus_132_Revelry_GingerbreadMen</userString>
-		</attachment>
+		<userString>#vehicle_customization:attachment/winter_raid</userString>
 	</itemGroup>
 	<itemGroup>
 		<name>benedicts_gadgets</name>
@@ -1564,207 +1765,6 @@
 			<priceGroup>attachments 650g notInShop</priceGroup>
 			<userString>#vehicle_customization:attachment/benedicts_gadgets/Cus_149_CS_TuringMachine</userString>
 		</attachment>
-	</itemGroup>
-	<itemGroup>
-		<name>Night Raid</name>
-		<userString>#vehicle_customization:attachment/night_raid</userString>
-		<season>ALL</season>
-		<historical>0</historical>
-		<attachment>
-			<id>1053</id>
-			<name>Cus_51_ArmiesG_Flamethrower</name>
-			<modelName>content/CGFPrefabs/3D_Customization/Cus_51_ArmiesG_Flamethrower/Cus_51_ArmiesG_Flamethrower.prefab</modelName>
-			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_51_ArmiesG_Flamethrower/Cus_51_ArmiesG_Flamethrower.prefab</hangarModelName>
-			<attachmentLogic>prefab</attachmentLogic>
-			<applyType>universal</applyType>
-			<size>medium</size>
-			<rarity>rare</rarity>
-			<priceGroup>attachments 500g notInShop</priceGroup>
-			<userString>#vehicle_customization:attachment/night_raid/Cus_51_ArmiesG_Flamethrower</userString>
-		</attachment>
-		<attachment>
-			<id>1054</id>
-			<name>Cus_53_ArmiesG_Projector</name>
-			<modelName>content/CGFPrefabs/3D_Customization/Cus_53_ArmiesG_Projector/Cus_53_ArmiesG_Projector.prefab</modelName>
-			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_53_ArmiesG_Projector/Cus_53_ArmiesG_Projector_hangar.prefab</hangarModelName>
-			<attachmentLogic>prefab</attachmentLogic>
-			<applyType>gunMantlet</applyType>
-			<size>medium</size>
-			<rarity>epic</rarity>
-			<priceGroup>attachments 1000g notInShop</priceGroup>
-			<userString>#vehicle_customization:attachment/night_raid/Cus_53_ArmiesG_Projector</userString>
-			<tags>battleEffect</tags>
-		</attachment>
-		<attachment>
-			<id>1055</id>
-			<name>Cus_54_ArmiesG_Opticalgun</name>
-			<modelName>content/CGFPrefabs/3D_Customization/Cus_54_ArmiesG_Opticalgun/Cus_54_ArmiesG_Opticalgun.prefab</modelName>
-			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_54_ArmiesG_Opticalgun/Cus_54_ArmiesG_Opticalgun.prefab</hangarModelName>
-			<attachmentLogic>prefab</attachmentLogic>
-			<applyType>turret</applyType>
-			<size>medium</size>
-			<rarity>rare</rarity>
-			<priceGroup>attachments 500g notInShop</priceGroup>
-			<userString>#vehicle_customization:attachment/night_raid/Cus_54_ArmiesG_Opticalgun</userString>
-		</attachment>
-		<attachment>
-			<id>1056</id>
-			<name>Cus_55_ArmiesG_Gunskit</name>
-			<modelName>content/CGFPrefabs/3D_Customization/Cus_55_ArmiesG_Gunskit/Cus_55_ArmiesG_Gunskit.prefab</modelName>
-			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_55_ArmiesG_Gunskit/Cus_55_ArmiesG_Gunskit.prefab</hangarModelName>
-			<attachmentLogic>prefab</attachmentLogic>
-			<applyType>universal</applyType>
-			<size>medium</size>
-			<rarity>rare</rarity>
-			<priceGroup>attachments 500g notInShop</priceGroup>
-			<userString>#vehicle_customization:attachment/night_raid/Cus_55_ArmiesG_Gunskit</userString>
-		</attachment>
-		<attachment>
-			<id>1062</id>
-			<name>Cus_77_ArmiesG_MG08</name>
-			<modelName>content/CGFPrefabs/3D_Customization/Cus_77_ArmiesG_MG08/Cus_77_ArmiesG_MG08.prefab</modelName>
-			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_77_ArmiesG_MG08/Cus_77_ArmiesG_MG08.prefab</hangarModelName>
-			<attachmentLogic>prefab</attachmentLogic>
-			<applyType>universal</applyType>
-			<size>medium</size>
-			<rarity>rare</rarity>
-			<priceGroup>attachments 500g notInShop</priceGroup>
-			<userString>#vehicle_customization:attachment/night_raid/Cus_77_ArmiesG_MG08</userString>
-		</attachment>
-	</itemGroup>
-	<itemGroup>
-		<name>ArmiesA</name>
-		<userString>#vehicle_customization:attachment/ArmiesA</userString>
-		<season>ALL</season>
-		<historical>0</historical>
-		<attachment>
-			<id>1088</id>
-			<name>Cus_57_ArmiesA_Machinegun</name>
-			<modelName>content/CGFPrefabs/3D_Customization/Cus_57_ArmiesA_Machinegun/Cus_57_ArmiesA_Machinegun.prefab</modelName>
-			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_57_ArmiesA_Machinegun/Cus_57_ArmiesA_Machinegun.prefab</hangarModelName>
-			<attachmentLogic>prefab</attachmentLogic>
-			<applyType>turret</applyType>
-			<size>medium</size>
-			<rarity>rare</rarity>
-			<priceGroup>attachments 500g notInShop</priceGroup>
-			<userString>#vehicle_customization:attachment/ArmiesA/Cus_57_ArmiesA_Machinegun</userString>
-		</attachment>
-		<attachment>
-			<id>1089</id>
-			<name>Cus_58_ArmiesA_AmmoCrates</name>
-			<modelName>content/CGFPrefabs/3D_Customization/Cus_58_ArmiesA_AmmoCrates/Cus_58_ArmiesA_AmmoCrates.prefab</modelName>
-			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_58_ArmiesA_AmmoCrates/Cus_58_ArmiesA_AmmoCrates.prefab</hangarModelName>
-			<attachmentLogic>prefab</attachmentLogic>
-			<applyType>universal</applyType>
-			<size>medium</size>
-			<rarity>rare</rarity>
-			<priceGroup>attachments 500g notInShop</priceGroup>
-			<userString>#vehicle_customization:attachment/ArmiesA/Cus_58_ArmiesA_AmmoCrates</userString>
-		</attachment>
-		<attachment>
-			<id>1090</id>
-			<name>Cus_60_ArmiesA_Bazooka</name>
-			<modelName>content/CGFPrefabs/3D_Customization/Cus_60_ArmiesA_Bazooka/Cus_60_ArmiesA_Bazooka.prefab</modelName>
-			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_60_ArmiesA_Bazooka/Cus_60_ArmiesA_Bazooka.prefab</hangarModelName>
-			<attachmentLogic>prefab</attachmentLogic>
-			<applyType>universal</applyType>
-			<size>medium</size>
-			<rarity>rare</rarity>
-			<priceGroup>attachments 500g notInShop</priceGroup>
-			<userString>#vehicle_customization:attachment/ArmiesA/Cus_60_ArmiesA_Bazooka</userString>
-		</attachment>
-		<attachment>
-			<id>1092</id>
-			<name>Cus_135_ArmiesA_Projector</name>
-			<modelName>content/CGFPrefabs/3D_Customization/Cus_135_ArmiesA_Projector/Cus_135_ArmiesA_Projector.prefab</modelName>
-			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_135_ArmiesA_Projector/Cus_135_ArmiesA_Projector.prefab</hangarModelName>
-			<attachmentLogic>prefab</attachmentLogic>
-			<applyType>gunMantlet</applyType>
-			<size>medium</size>
-			<rarity>epic</rarity>
-			<priceGroup>attachments 1000g notInShop</priceGroup>
-			<historical>1</historical>
-			<userString>#vehicle_customization:attachment/ArmiesA/Cus_135_ArmiesA_Projector</userString>
-		</attachment>
-		<attachment>
-			<id>1094</id>
-			<name>Cus_133_ArmiesA_Militarystuff</name>
-			<modelName>content/CGFPrefabs/3D_Customization/Cus_133_ArmiesA_Militarystuff/Cus_133_ArmiesA_Militarystuff.prefab</modelName>
-			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_133_ArmiesA_Militarystuff/Cus_133_ArmiesA_Militarystuff.prefab</hangarModelName>
-			<attachmentLogic>prefab</attachmentLogic>
-			<applyType>universal</applyType>
-			<size>medium</size>
-			<rarity>rare</rarity>
-			<priceGroup>attachments 650g notInShop</priceGroup>
-			<historical>1</historical>
-			<userString>#vehicle_customization:attachment/ArmiesA/Cus_133_ArmiesA_Militarystuff</userString>
-		</attachment>
-	</itemGroup>
-	<itemGroup>
-		<name>Winter Raid 26</name>
-		<season>ALL</season>
-		<historical>1</historical>
-		<attachment>
-			<id>1125</id>
-			<name>Cus_141_PE25_Globus</name>
-			<modelName>content/CGFPrefabs/3D_Customization/Cus_141_PE25_Globus/Cus_141_PE25_Globus.prefab</modelName>
-			<applyType>turret</applyType>
-			<size>medium</size>
-			<rarity>epic</rarity>
-			<priceGroup>attachments 2795g notInShop</priceGroup>
-			<userString>#vehicle_customization:attachment/winter_raid/Cus_141_PE25_Globus</userString>
-			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_141_PE25_Globus/Cus_141_PE25_Globus_hanger.prefab</hangarModelName>
-			<attachmentLogic>prefab</attachmentLogic>
-		</attachment>
-		<attachment>
-			<id>1126</id>
-			<name>Cus_142_PE25_Shipwreck</name>
-			<modelName>content/CGFPrefabs/3D_Customization/Cus_142_PE25_Shipwreck/Cus_142_PE25_Shipwreck.prefab</modelName>
-			<applyType>universal</applyType>
-			<size>medium</size>
-			<rarity>rare</rarity>
-			<priceGroup>attachments 650g notInShop</priceGroup>
-			<userString>#vehicle_customization:attachment/winter_raid/Cus_142_PE25_Shipwreck</userString>
-			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_142_PE25_Shipwreck/Cus_142_PE25_Shipwreck.prefab</hangarModelName>
-			<attachmentLogic>prefab</attachmentLogic>
-		</attachment>
-		<attachment>
-			<id>1127</id>
-			<name>Cus_143_PE25_Adventure_equipment</name>
-			<modelName>content/CGFPrefabs/3D_Customization/Cus_143_PE25_Adventure_equipment/Cus_143_PE25_Adventure_equipment.prefab</modelName>
-			<applyType>universal</applyType>
-			<size>medium</size>
-			<rarity>rare</rarity>
-			<priceGroup>attachments 650g notInShop</priceGroup>
-			<userString>#vehicle_customization:attachment/winter_raid/Cus_143_PE25_Adventure_equipment</userString>
-			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_143_PE25_Adventure_equipment/Cus_143_PE25_Adventure_equipment.prefab</hangarModelName>
-			<attachmentLogic>prefab</attachmentLogic>
-		</attachment>
-		<attachment>
-			<id>1128</id>
-			<name>Cus_144_PE25_Altar</name>
-			<modelName>content/CGFPrefabs/3D_Customization/Cus_144_PE25_Altar/Cus_144_PE25_Altar.prefab</modelName>
-			<applyType>universal</applyType>
-			<size>medium</size>
-			<rarity>rare</rarity>
-			<priceGroup>attachments 650g notInShop</priceGroup>
-			<userString>#vehicle_customization:attachment/winter_raid/Cus_144_PE25_Altar</userString>
-			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_144_PE25_Altar/Cus_144_PE25_Altar.prefab</hangarModelName>
-			<attachmentLogic>prefab</attachmentLogic>
-		</attachment>
-		<attachment>
-			<id>1129</id>
-			<name>Cus_145_PE25_Vectoris</name>
-			<modelName>content/CGFPrefabs/3D_Customization/Cus_145_PE25_Vectoris/Cus_145_PE25_Vectoris.prefab</modelName>
-			<applyType>gunMantlet</applyType>
-			<size>medium</size>
-			<rarity>rare</rarity>
-			<priceGroup>attachments 650g notInShop</priceGroup>
-			<userString>#vehicle_customization:attachment/winter_raid/Cus_145_PE25_Vectoris</userString>
-			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_145_PE25_Vectoris/Cus_145_PE25_Vectoris.prefab</hangarModelName>
-			<attachmentLogic>prefab</attachmentLogic>
-		</attachment>
-		<userString>#vehicle_customization:attachment/winter_raid</userString>
 	</itemGroup>
 	<itemGroup>
 		<name>GunSlots</name>
@@ -2041,6 +2041,57 @@
 			<vehicleFilter>
 				<include>
 					<vehicles>uk:GB152_AT_FV230_Breaker</vehicles>
+				</include>
+			</vehicleFilter>
+		</attachment>
+		<attachment>
+			<id>2020</id>
+			<name>Ch70_gunsleeve_firegod</name>
+			<modelName>content/CGFPrefabs/3D_Customization/gun_slots/Ch70_gunsleeve_firegod/attachment.prefab</modelName>
+			<attachmentLogic>prefab</attachmentLogic>
+			<applyType>gun</applyType>
+			<rarity>epic</rarity>
+			<priceGroup>attachments 1300g notInShop</priceGroup>
+			<userString>#vehicle_customization:attachment/gunslot/Ch70_gunsleeve_firegod</userString>
+			<shortDescriptionSpecial>#vehicle_customization:attachment/gunslot/shortDescriptionSpecial</shortDescriptionSpecial>
+			<tags>showDisabled</tags>
+			<vehicleFilter>
+				<include>
+					<vehicles>china:Ch70_PTZ_78</vehicles>
+				</include>
+			</vehicleFilter>
+		</attachment>
+		<attachment>
+			<id>2021</id>
+			<name>J52_gunsleeve_tempered</name>
+			<modelName>content/CGFPrefabs/3D_Customization/gun_slots/J52_gunsleeve_tempered/attachment.prefab</modelName>
+			<attachmentLogic>prefab</attachmentLogic>
+			<applyType>gun</applyType>
+			<rarity>epic</rarity>
+			<priceGroup>attachments 1300g notInShop</priceGroup>
+			<userString>#vehicle_customization:attachment/gunslot/J52_gunsleeve_tempered</userString>
+			<shortDescriptionSpecial>#vehicle_customization:attachment/gunslot/shortDescriptionSpecial</shortDescriptionSpecial>
+			<tags>showDisabled</tags>
+			<vehicleFilter>
+				<include>
+					<vehicles>japan:J52_STK_2</vehicles>
+				</include>
+			</vehicleFilter>
+		</attachment>
+		<attachment>
+			<id>2022</id>
+			<name>A191_gunsleeve_redhot</name>
+			<modelName>content/CGFPrefabs/3D_Customization/gun_slots/A191_gunsleeve_redhot/attachment.prefab</modelName>
+			<attachmentLogic>prefab</attachmentLogic>
+			<applyType>gunStatic</applyType>
+			<rarity>epic</rarity>
+			<priceGroup>attachments 1300g notInShop</priceGroup>
+			<userString>#vehicle_customization:attachment/gunslot/A191_gunsleeve_redhot</userString>
+			<shortDescriptionSpecial>#vehicle_customization:attachment/gunslot/shortDescriptionSpecial</shortDescriptionSpecial>
+			<tags>showDisabled</tags>
+			<vehicleFilter>
+				<include>
+					<vehicles>usa:A191_Ares_90_C</vehicles>
 				</include>
 			</vehicleFilter>
 		</attachment>

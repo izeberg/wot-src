@@ -1,7 +1,6 @@
 package net.wg.gui.components.containers
 {
    import flash.display.DisplayObject;
-   import flash.display.DisplayObjectContainer;
    import flash.display.InteractiveObject;
    import flash.display.Loader;
    import flash.geom.Rectangle;
@@ -28,6 +27,8 @@ package net.wg.gui.components.containers
       
       private var _tween:Tween = null;
       
+      private var _hasModalFocus:Boolean = false;
+      
       private var _tweenCompleteFunction:Function = null;
       
       public function BaseContainerWrapper(param1:Boolean)
@@ -44,6 +45,7 @@ package net.wg.gui.components.containers
       override protected function onDispose() : void
       {
          this.clearTween();
+         App.utils.asserter.assert(!this._hasModalFocus,this._wrapper.name + " has modal focus on dispose!");
          App.utils.asserter.assert(!this._wrapper.focused,this._wrapper.name + " has focus on dispose!");
          App.utils.asserter.assert(!hasFocus,this._wrapper.name + " hasFocus on dispose!");
          removeChild(this._wrapper as DisplayObject);
@@ -59,6 +61,7 @@ package net.wg.gui.components.containers
       
       public function as_dispose() : void
       {
+         DebugUtils.LOG_WARNING(name + " Call as_dispose() can cause focus related issues.");
          dispose();
       }
       
@@ -76,10 +79,6 @@ package net.wg.gui.components.containers
          return this._wrapper.isFullScreenModeSupported();
       }
       
-      public function leaveModalFocus() : void
-      {
-      }
-      
       public function playHideTween(param1:DisplayObject, param2:Function = null) : Boolean
       {
          if(this._wrapper.visible)
@@ -91,6 +90,10 @@ package net.wg.gui.components.containers
                "fastTransform":false,
                "onComplete":this.onHidingComplete
             });
+            if(this._hasModalFocus)
+            {
+               App.utils.focusHandler.setFocus(this);
+            }
             return true;
          }
          return false;
@@ -109,6 +112,10 @@ package net.wg.gui.components.containers
                "fastTransform":false,
                "onComplete":this.onShowingComplete
             });
+            if(this._hasModalFocus)
+            {
+               App.utils.focusHandler.setFocus(this._wrapper.getComponentForFocus());
+            }
             return true;
          }
          this.alpha = 1;
@@ -122,14 +129,26 @@ package net.wg.gui.components.containers
       
       public function setModalFocus() : void
       {
-         if(!_baseDisposed && this.focusable)
+         if(this._hasModalFocus)
          {
-            if(!this.isFocused() && !this.trySetFocus(this))
-            {
-               App.utils.focusHandler.setFocus(this);
-            }
+            return;
          }
-         App.utils.focusHandler.setModalFocus(this);
+         this._hasModalFocus = true;
+         var _loc1_:InteractiveObject = this;
+         if(this._wrapper.visible)
+         {
+            _loc1_ = this._wrapper.getComponentForFocus();
+         }
+         App.utils.focusHandler.setFocus(_loc1_);
+      }
+      
+      public function leaveModalFocus() : void
+      {
+         if(!this._hasModalFocus)
+         {
+            DebugUtils.LOG_ERROR(name + " does not have modal focus to loose it.");
+         }
+         this._hasModalFocus = false;
       }
       
       public function setViewSize(param1:Number, param2:Number) : void
@@ -182,58 +201,6 @@ package net.wg.gui.components.containers
             this._tween.dispose();
             this._tween = null;
          }
-      }
-      
-      private function isFocused() : Boolean
-      {
-         var _loc1_:InteractiveObject = stage.focus;
-         var _loc2_:DisplayObject = _loc1_;
-         while(_loc2_ != null && _loc2_ != root)
-         {
-            if(_loc2_ == this)
-            {
-               App.utils.focusHandler.setFocus(_loc1_);
-               return true;
-            }
-            _loc2_ = _loc2_.parent;
-         }
-         return false;
-      }
-      
-      private function trySetFocus(param1:DisplayObjectContainer) : Boolean
-      {
-         var _loc3_:DisplayObject = null;
-         var _loc4_:DisplayObjectContainer = null;
-         var _loc2_:int = 0;
-         while(_loc2_ != param1.numChildren)
-         {
-            _loc3_ = param1.getChildAt(_loc2_);
-            if(_loc3_ is DisplayObjectContainer)
-            {
-               _loc4_ = DisplayObjectContainer(_loc3_);
-               if(_loc4_.tabEnabled)
-               {
-                  App.utils.focusHandler.setFocus(_loc4_);
-                  return true;
-               }
-            }
-            _loc2_++;
-         }
-         _loc2_ = 0;
-         while(_loc2_ != param1.numChildren)
-         {
-            _loc3_ = param1.getChildAt(_loc2_);
-            if(_loc3_ is DisplayObjectContainer)
-            {
-               _loc4_ = DisplayObjectContainer(_loc3_);
-               if(this.trySetFocus(_loc4_))
-               {
-                  return true;
-               }
-            }
-            _loc2_++;
-         }
-         return false;
       }
       
       private function setNewConfig(param1:LoadViewVO) : void

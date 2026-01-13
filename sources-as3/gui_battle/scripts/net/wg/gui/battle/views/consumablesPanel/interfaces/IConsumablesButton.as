@@ -8,14 +8,6 @@ package net.wg.gui.battle.views.consumablesPanel.interfaces
    {
        
       
-      function get consumablesVO() : ConsumablesVO;
-      
-      function set icon(param1:String) : void;
-      
-      function set key(param1:Number) : void;
-      
-      function set quantity(param1:int) : void;
-      
       function setCoolDownTime(param1:Number, param2:Number, param3:Number, param4:int = 1) : void;
       
       function setCoolDownPosAsPercent(param1:Number) : void;
@@ -24,8 +16,6 @@ package net.wg.gui.battle.views.consumablesPanel.interfaces
       
       function clearColorTransform() : void;
       
-      function set activated(param1:Boolean) : void;
-      
       function clearCoolDownTime() : void;
       
       function showGlow(param1:int) : void;
@@ -33,6 +23,18 @@ package net.wg.gui.battle.views.consumablesPanel.interfaces
       function hideGlow() : void;
       
       function setTimerSnapshot(param1:int, param2:Boolean) : void;
+      
+      function get consumablesVO() : ConsumablesVO;
+      
+      function set icon(param1:String) : void;
+      
+      function set key(param1:Number) : void;
+      
+      function set quantity(param1:int) : void;
+      
+      function set criticalQuantity(param1:int) : void;
+      
+      function set activated(param1:Boolean) : void;
       
       function set isReplay(param1:Boolean) : void;
    }

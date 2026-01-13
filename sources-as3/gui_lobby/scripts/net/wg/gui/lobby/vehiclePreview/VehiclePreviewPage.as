@@ -73,6 +73,8 @@ package net.wg.gui.lobby.vehiclePreview
       private static const INFO_PANEL_V_OFFSET:int = -70;
       
       private static const LEFT_OFFSET:int = 8;
+      
+      private static const TOP_OFFSET_TOP_PANEL:int = 20;
        
       
       public var leftBackground:MovieClip;
@@ -290,7 +292,7 @@ package net.wg.gui.lobby.vehiclePreview
             if(this.topPanel != null)
             {
                this.topPanel.x = width - this.topPanel.width >> 1;
-               this.topPanel.y = this._paddingTop;
+               this.topPanel.y = this._paddingTop - TOP_OFFSET_TOP_PANEL;
             }
             if(this.bottomPanel != null)
             {

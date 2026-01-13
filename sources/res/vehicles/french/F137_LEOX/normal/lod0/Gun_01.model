@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-0.745768 -0.260000 -0.492787</min>
+		<max>0.745767 0.411462 4.609998</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<parent>vehicles/french/F137_LEOX/normal/lod1/Gun_01</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/french/F137_LEOX/normal/lod0/Gun_01</nodefullVisual>
+</root>

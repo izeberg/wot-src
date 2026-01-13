@@ -1614,33 +1614,6 @@
 			</wwbanks>
 		</mode>
 		<mode>
-			<name>celebrity2026_en</name>
-			<wwise_language>cel_26_en</wwise_language>
-			<description/>
-			<invisible>True</invisible>
-			<wwbanks>
-				<bank>cel_26_en/voiceover.bnk</bank>
-			</wwbanks>
-		</mode>
-		<mode>
-			<name>tankmen_bp1005_1</name>
-			<wwise_language>BPH5/BPH5_en_US_tankmen_1</wwise_language>
-			<description/>
-			<invisible>True</invisible>
-			<wwbanks>
-				<bank>BPH5/BPH5_en_US_tankmen_1/voiceover.bnk</bank>
-			</wwbanks>
-		</mode>
-		<mode>
-			<name>tankmen_bp1005_2</name>
-			<wwise_language>BPH5/BPH5_en_US_tankmen_2</wwise_language>
-			<description/>
-			<invisible>True</invisible>
-			<wwbanks>
-				<bank>BPH5/BPH5_en_US_tankmen_2/voiceover.bnk</bank>
-			</wwbanks>
-		</mode>
-		<mode>
 			<name>tankmen_bp18_10</name>
 			<wwise_language>BP18/BP18_en_US_tankmen_10</wwise_language>
 			<description/>
@@ -1683,6 +1656,87 @@
 			<invisible>True</invisible>
 			<wwbanks>
 				<bank>BP18/BP18_en_US_tankmen_14/voiceover.bnk</bank>
+			</wwbanks>
+		</mode>
+		<mode>
+			<name>celebrity2026_en</name>
+			<wwise_language>cel_26_en</wwise_language>
+			<description/>
+			<invisible>True</invisible>
+			<wwbanks>
+				<bank>cel_26_en/voiceover.bnk</bank>
+			</wwbanks>
+		</mode>
+		<mode>
+			<name>tankmen_bp1005_1</name>
+			<wwise_language>BPH5/BPH5_en_US_tankmen_1</wwise_language>
+			<description/>
+			<invisible>True</invisible>
+			<wwbanks>
+				<bank>BPH5/BPH5_en_US_tankmen_1/voiceover.bnk</bank>
+			</wwbanks>
+		</mode>
+		<mode>
+			<name>tankmen_bp1005_2</name>
+			<wwise_language>BPH5/BPH5_en_US_tankmen_2</wwise_language>
+			<description/>
+			<invisible>True</invisible>
+			<wwbanks>
+				<bank>BPH5/BPH5_en_US_tankmen_2/voiceover.bnk</bank>
+			</wwbanks>
+		</mode>
+		<mode>
+			<name>tankmen_bp1006_1</name>
+			<wwise_language>BPH6/BPH6_en_US_tankmen_1</wwise_language>
+			<description/>
+			<invisible>True</invisible>
+			<wwbanks>
+				<bank>BPH6/BPH6_en_US_tankmen_1/voiceover.bnk</bank>
+			</wwbanks>
+		</mode>
+		<mode>
+			<name>tankmen_bp1006_2</name>
+			<wwise_language>BPH6/BPH6_en_US_tankmen_2</wwise_language>
+			<description/>
+			<invisible>True</invisible>
+			<wwbanks>
+				<bank>BPH6/BPH6_en_US_tankmen_2/voiceover.bnk</bank>
+			</wwbanks>
+		</mode>
+		<mode>
+			<name>tankmen_bp1006_3</name>
+			<wwise_language>BPH6/BPH6_en_US_tankmen_3</wwise_language>
+			<description/>
+			<invisible>True</invisible>
+			<wwbanks>
+				<bank>BPH6/BPH6_en_US_tankmen_3/voiceover.bnk</bank>
+			</wwbanks>
+		</mode>
+		<mode>
+			<name>tankmen_bp1006_4</name>
+			<wwise_language>BPH6/BPH6_en_US_tankmen_4</wwise_language>
+			<description/>
+			<invisible>True</invisible>
+			<wwbanks>
+				<bank>BPH6/BPH6_en_US_tankmen_4/voiceover.bnk</bank>
+			</wwbanks>
+		</mode>
+		<mode>
+			<name>tankmen_bp1006_5</name>
+			<wwise_language>BPH6/BPH6_en_US_tankmen_5</wwise_language>
+			<description/>
+			<invisible>True</invisible>
+			<wwbanks>
+				<bank>BPH6/BPH6_en_US_tankmen_5/voiceover.bnk</bank>
+			</wwbanks>
+		</mode>
+		<mode>
+			<name>tankmen_bp1006_6</name>
+			<wwise_language>BPH6/BPH6_en_US_tankmen_6</wwise_language>
+			<description/>
+			<invisible>True</invisible>
+			<wwbanks>
+				<bank>BPH6/BPH6_en_US_tankmen_6/voiceover.bnk</bank>
 			</wwbanks>
 		</mode>
 	</modes>

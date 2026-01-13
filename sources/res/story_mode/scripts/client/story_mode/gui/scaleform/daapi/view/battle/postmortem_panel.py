@@ -1,7 +1,7 @@
 import SoundGroups
-from constants import VEHICLE_BUNKER_TURRET_TAG
 from gui.Scaleform.daapi.view.battle.pve_base.postmortem_panel import PvePostmortemPanel, LivesState
 from story_mode.gui.sound_constants import RESPAWN_TIMER_SOUND_EVENT, RESPAWN_TIMER_STATE_GROUP, RESPAWN_TIMER_STATE_OFF, RESPAWN_TIMER_STATE_ON
+from story_mode_common.story_mode_constants import VEHICLE_BUNKER_TURRET_TAG
 BUNKER_CODE = 'DEATH_FROM_BUNKER'
 SHOT_CODES = ('DEATH_FROM_SHOT', 'DEATH_FROM_DEVICE_EXPLOSION_AT_SHOT')
 BOT_CODE = 'DEATH_FROM_BOT'

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.252156 -0.185093 -1.062904</min>
+		<max>1.252141 0.454021 1.133691</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/british/GB109_GSOR_1008/_skins/GB109_GSOR_1008_KS_3Dst/normal/lod1/Turret_01</nodefullVisual>
+	<parent>vehicles/british/GB109_GSOR_1008/_skins/GB109_GSOR_1008_KS_3Dst/normal/lod2/Turret_01</parent>
+	<extent>64.000000</extent>
+</root>

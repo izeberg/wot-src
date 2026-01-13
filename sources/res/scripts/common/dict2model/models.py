@@ -16,7 +16,4 @@ class Model(object):
         return ''
 
     def __repr__(self):
-        _reprArgs = self._reprArgs()
-        if _reprArgs:
-            return ('<{}({})>').format(self.__class__.__name__, _reprArgs)
-        return super(Model, self).__repr__()
+        return ('<{}({})>').format(self.__class__.__name__, self._reprArgs() or str(self.toDict()))

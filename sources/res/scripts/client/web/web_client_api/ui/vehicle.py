@@ -1,3 +1,4 @@
+import random
 from functools import partial
 from itertools import groupby
 from logging import getLogger
@@ -10,7 +11,7 @@ from debug_utils import LOG_ERROR
 from gui import SystemMessages
 from gui.Scaleform.daapi.settings.views import VIEW_ALIAS
 from gui.Scaleform.daapi.view.lobby.vehicle_preview.configurable_vehicle_preview import OptionalBlocks
-from gui.Scaleform.daapi.view.lobby.vehicle_preview.items_kit_helper import canInstallStyle, getCDFromId, getSuitableStyledVehicle
+from gui.Scaleform.daapi.view.lobby.vehicle_preview.items_kit_helper import canInstallStyle, getCDFromId
 from gui.Scaleform.daapi.view.lobby.vehicle_preview.preview_bottom_panel_constants import ObtainingMethods
 from gui.Scaleform.genConsts.VEHPREVIEW_CONSTANTS import VEHPREVIEW_CONSTANTS
 from gui.Scaleform.locale.VEHICLE_PREVIEW import VEHICLE_PREVIEW
@@ -24,6 +25,7 @@ from gui.shared.event_dispatcher import showHangar, showMarathonRewardScreen, sh
 from gui.shared.gui_items import GUI_ITEM_TYPE
 from gui.shared.money import Currency, MONEY_UNDEFINED, Money
 from gui.shared.notifications import NotificationPriorityLevel
+from gui.shared.utils.requesters import REQ_CRITERIA
 from helpers import dependency
 from helpers.i18n import makeString as _ms
 from helpers.time_utils import getCurrentLocalServerTimestamp, getDateTimeInLocal, getDateTimeInUTC, getTimeStructInLocal, getTimestampFromISO, utcToLocalDatetime
@@ -452,7 +454,8 @@ class VehiclePreviewWebApiMixin(object):
     __c11n = dependency.descriptor(ICustomizationService)
 
     @w2c(_VehiclePreviewSchema, 'vehicle_preview')
-    def openVehiclePreview(self, cmd):
+    def openVehiclePreview(self, cmd, ctx):
+        self.__setBackUrl(cmd, ctx)
         if cmd.hidden_blocks is not None:
             showPreviewFunc = partial(event_dispatcher.showConfigurableShopVehiclePreview, hiddenBlocks=cmd.hidden_blocks, itemPack=_parseItemsPack(cmd.items))
         else:
@@ -479,11 +482,12 @@ class VehiclePreviewWebApiMixin(object):
             _pushInvalidPreviewMessage()
 
     @w2c(_VehiclePackPreviewSchema, 'vehicle_pack_preview')
-    def openVehiclePackPreview(self, cmd):
+    def openVehiclePackPreview(self, cmd, ctx):
         items = _parseItemsPack(cmd.items)
         price, oldPrice = _parseBuyPrice(cmd.buy_price)
         vehiclesIDs = self.__getVehiclesIDs(items)
         if vehiclesIDs:
+            self.__setBackUrl(cmd, ctx)
             localEndTime = None
             if cmd.end_date:
                 localEndTime = self.__getLocalEndTime(cmd.end_date)
@@ -493,11 +497,13 @@ class VehiclePreviewWebApiMixin(object):
         return
 
     @w2c(_VehicleStylePreviewSchema, 'vehicle_style_preview')
-    def openVehicleStylePreview(self, cmd):
+    def openVehicleStylePreview(self, cmd, ctx):
+        self.__setBackUrl(cmd, ctx)
         return self._openVehicleStylePreview(cmd)
 
     @w2c(_ShowcaseVehicleStylePreviewSchema, 'showcase_vehicle_style_preview')
-    def openShowcaseVehicleStylePreview(self, cmd):
+    def openShowcaseVehicleStylePreview(self, cmd, ctx):
+        self.__setBackUrl(cmd, ctx)
         return self._openVehicleStylePreview(cmd, event_dispatcher.showShowcaseStyleBuyingPreview, originalPrice=cmd.original_price, discountPercent=cmd.discount_percent, endTime=self.__getLocalEndTime(cmd.end_date) if cmd.end_date else None, obtainingMethod=cmd.obtaining_method)
 
     @w2c(_VehicleMarathonStylePreviewSchema, 'marathon_vehicle_style_preview')
@@ -560,7 +566,8 @@ class VehiclePreviewWebApiMixin(object):
         return self._openVehicleStylePreview(cmd, previewMethod, obtainingMethod=obtainingMethod)
 
     @w2c(_VehicleStylePreviewWithTabsSchema, 'vehicle_style_preview_with_tabs')
-    def openVehicleStylePreviewWithTabs(self, cmd):
+    def openVehicleStylePreviewWithTabs(self, cmd, ctx):
+        self.__setBackUrl(cmd, ctx)
         styleInfo = self.__c11n.getItemByID(GUI_ITEM_TYPE.STYLE, cmd.style_id)
         descrLabelResPath = R.strings.vehicle_preview.header.backBtn.descrLabel
         ClientSelectableCameraObject.switchCamera()
@@ -573,10 +580,15 @@ class VehiclePreviewWebApiMixin(object):
     def _openVehicleStylePreview(self, cmd, showStyleFunc=None, **additionalStyleFuncKwargs):
         if cmd.vehicle_cd:
             return self.__showStylePreview(cmd.vehicle_cd, cmd, showStyleFunc, **additionalStyleFuncKwargs)
-        styledVehicleCD = getSuitableStyledVehicle(cmd.style_id)
+        styledVehicleCD = self.__getStyledVehicleCD(cmd.style_id)
         if not styledVehicleCD:
             return False
         return self.__showStylePreview(styledVehicleCD, cmd, showStyleFunc, **additionalStyleFuncKwargs)
+
+    @staticmethod
+    def __setBackUrl(cmd, ctx):
+        view = ctx.get('browser_view')
+        view.setBackUrl(cmd.back_url)
 
     @staticmethod
     def __getLocalEndTime(date):
@@ -584,6 +596,34 @@ class VehiclePreviewWebApiMixin(object):
         datetimeInUTC = getDateTimeInUTC(timestamp)
         localDatetime = utcToLocalDatetime(datetimeInUTC)
         return (localDatetime - getDateTimeInLocal(0)).total_seconds()
+
+    def __getStyledVehicleCD(self, styleId):
+        styledVehicleCD = None
+        style = self.__c11n.getItemByID(GUI_ITEM_TYPE.STYLE, styleId)
+        vehicle = g_currentVehicle.item if g_currentVehicle.isPresent() else None
+        if vehicle is not None and not vehicle.descriptor.type.isCustomizationLocked and style.mayInstall(vehicle):
+            styledVehicleCD = vehicle.intCD
+        else:
+            accDossier = self.__itemsCache.items.getAccountDossier()
+            vehiclesStats = accDossier.getRandomStats().getVehicles()
+            vehicleGetter = self.__itemsCache.items.getItemByCD
+            vehiclesStats = {vehicleCD:value for vehicleCD, value in vehiclesStats.iteritems() if not vehicleGetter(vehicleCD).descriptor.type.isCustomizationLocked and style.mayInstall(vehicleGetter(vehicleCD))}
+            if vehiclesStats:
+                sortedVehicles = sorted(vehiclesStats.items(), key=lambda vStat: vStat[1].battlesCount, reverse=True)
+                styledVehicleCD = sortedVehicles[0][0] if sortedVehicles else None
+            if not styledVehicleCD:
+                criteria = REQ_CRITERIA.INVENTORY | ~REQ_CRITERIA.VEHICLE.IS_OUTFIT_LOCKED | REQ_CRITERIA.VEHICLE.FOR_ITEM(style)
+                vehicle = first(self.__getVehiclesForStylePreview(criteria=criteria))
+                styledVehicleCD = vehicle.intCD if vehicle else None
+            if not styledVehicleCD:
+                criteria = ~REQ_CRITERIA.INVENTORY | ~REQ_CRITERIA.VEHICLE.IS_OUTFIT_LOCKED | REQ_CRITERIA.VEHICLE.FOR_ITEM(style) | ~REQ_CRITERIA.VEHICLE.EVENT
+                suitableVehicles = self.__getVehiclesForStylePreview(criteria=criteria)
+                styledVehicleCD = random.choice(suitableVehicles).intCD if suitableVehicles else None
+        return styledVehicleCD
+
+    def __getVehiclesForStylePreview(self, criteria=None):
+        vehs = self.__itemsCache.items.getVehicles(criteria=criteria).values()
+        return sorted(vehs, key=lambda item: item.level, reverse=True)
 
     def _getVehicleStylePreviewCallback(self, cmd):
         return showHangar

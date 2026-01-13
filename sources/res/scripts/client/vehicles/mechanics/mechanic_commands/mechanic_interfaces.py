@@ -1,5 +1,6 @@
+from __future__ import absolute_import
 import typing
-from vehicles.components.component_events import IComponentEvents, IComponentListener
+from events_containers.common.containers import IClientEventsContainer, IClientEventsContainerListener
 if typing.TYPE_CHECKING:
     from vehicles.mechanics.mechanic_constants import VehicleMechanicCommand
 
@@ -17,7 +18,7 @@ class IMechanicCommandsEventsLogic(object):
         raise NotImplementedError
 
 
-class IMechanicCommandsEvents(IComponentEvents, IMechanicCommandsEventsLogic):
+class IMechanicCommandsEvents(IClientEventsContainer, IMechanicCommandsEventsLogic):
     pass
 
 
@@ -27,5 +28,5 @@ class IMechanicCommandsListenerLogic(object):
         pass
 
 
-class IMechanicCommandsListener(IComponentListener, IMechanicCommandsListenerLogic):
+class IMechanicCommandsListener(IClientEventsContainerListener, IMechanicCommandsListenerLogic):
     pass

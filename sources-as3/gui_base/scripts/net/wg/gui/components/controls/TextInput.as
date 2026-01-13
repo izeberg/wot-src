@@ -205,7 +205,7 @@ package net.wg.gui.components.controls
       {
          if(App.instance)
          {
-            this._focusOutByWaiting = Boolean(App.waiting) ? Boolean(App.waiting.isOnStage) : Boolean(false);
+            this._focusOutByWaiting = Boolean(App.waiting) ? Boolean(App.waiting.isActive) : Boolean(false);
             if(this._focusOutByWaiting)
             {
                if(this._pastSelectionStart == this._pastSelectionEnd)

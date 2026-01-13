@@ -11,7 +11,8 @@ from gui.Scaleform.framework.entities.View import ViewKey
 from gui.impl import backport
 from gui.impl.gen import R
 from gui.impl.lobby.hangar.base.proto_states import generateBasicLoadoutStateClasses, _LoadoutConfirmStatePrototype
-from gui.impl.lobby.hangar.states import HangarState
+from gui.impl.lobby.hangar.easy_tank_equip_state import generateEasyTankEquipStates
+from gui.impl.lobby.hangar.states import HangarState, EasyTankEquipState
 from gui.lobby_state_machine.states import LobbyState, LobbyStateFlags, SubScopeSubLayerState, SFViewLobbyState, GuiImplViewLobbyState, LobbyStateDescription
 from gui.lobby_state_machine.transitions import HijackTransition
 from helpers import dependency
@@ -41,6 +42,7 @@ class Comp7LightModeState(LobbyState):
         machine.addState(Comp7LightHangarState(StateFlags.INITIAL))
         machine.addState(Comp7LightProgressionState())
         machine.addState(Comp7LightAllVehiclesState())
+        machine.addState(Comp7LightEasyTankEquipState())
         machine.addState(Comp7LightLoadoutState())
         machine.addState(Comp7LightNoVehiclesState())
         machine.addState(Comp7LightIntroState())
@@ -50,14 +52,18 @@ class Comp7LightModeState(LobbyState):
         lsm = self.getMachine()
         parent = self.getParent()
         comp7LightHangar = lsm.getStateByCls(Comp7LightRootHangarState)
+        comp7LightEasyTankEquip = lsm.getStateByCls(Comp7LightEasyTankEquipState)
+        hijackCondition = WeakMethodProxy(self._hijackTransitionCondition)
         parent.addNavigationTransition(comp7LightHangar)
-        parent.addTransition(HijackTransition(HangarState, WeakMethodProxy(self._hijackTransitionCondition)), comp7LightHangar)
+        parent.addTransition(HijackTransition(HangarState, hijackCondition), comp7LightHangar)
+        parent.addTransition(HijackTransition(EasyTankEquipState, hijackCondition), comp7LightEasyTankEquip)
         for cls in (
          Comp7LightProgressionState,
          Comp7LightAllVehiclesState,
          Comp7LightNoVehiclesState,
          Comp7LightIntroState,
-         Comp7LightPrimeTimeState):
+         Comp7LightPrimeTimeState,
+         Comp7LightEasyTankEquipState):
             state = lsm.getStateByCls(cls)
             comp7LightHangar.addNavigationTransition(state)
 
@@ -161,3 +167,4 @@ class _Comp7LightLoadoutConfirmStatePrototype(_LoadoutConfirmStatePrototype):
 
 
 Comp7LightLoadoutState, _, _, Comp7LightShellsLoadoutState, Comp7LightEquipmentLoadoutState, _, _ = generateBasicLoadoutStateClasses(Comp7LightHangarState, R.invalid, confirmStatePrototypeCls=_Comp7LightLoadoutConfirmStatePrototype)
+Comp7LightEasyTankEquipState, = generateEasyTankEquipStates(Comp7LightHangarState)

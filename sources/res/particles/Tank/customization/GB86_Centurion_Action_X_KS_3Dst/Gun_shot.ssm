@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<params>
+		<param>
+			<name>Shot</name>
+			<type>trigger</type>
+		</param>
+	</params>
+	<node>
+		<name>Idle</name>
+		<type>sequence</type>
+		<resource>particles/Tank/customization/empty_sequence.seq</resource>
+		<isLoop>true</isLoop>
+		<loop>-1</loop>
+		<transition>
+			<to>Shot</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>trigger</type>
+					<name>Shot</name>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>-106.000000 6.500000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>Shot</name>
+		<type>sequence</type>
+		<resource>particles/Tank/customization/GB86_Centurion_Action_X_KS_3Dst/Gun_shot.seq</resource>
+		<isLoop>false</isLoop>
+		<loop>1</loop>
+		<transition>
+			<to>Idle</to>
+			<blendDuration>4.000000</blendDuration>
+			<conditions/>
+		</transition>
+		<uiPosition>-103.500000 127.000000 0.000000</uiPosition>
+	</node>
+</root>

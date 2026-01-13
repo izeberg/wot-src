@@ -1,5 +1,7 @@
+from __future__ import absolute_import
 import typing, CommandMapping
 from constants import ARENA_PERIOD
+from events_containers.common.containers import ContainersListener
 from events_handler import eventHandler
 from gui.Scaleform.daapi.view.battle.shared.vehicle_mechanics.mechanic_widgets.vehicle_mechanic_widget import HotKeyData
 from gui.battle_control.battle_constants import VEHICLE_VIEW_STATE
@@ -8,10 +10,9 @@ from gui.Scaleform.genConsts.MECHANICS_WIDGET_CONST import MECHANICS_WIDGET_CONS
 from helpers import dependency
 from gui.veh_mechanics.battle.updaters.crosshair_type_updater import CrosshairTypeUpdater
 from gui.veh_mechanics.battle.updaters.hotkey_updaters import HotKeysViewUpdater
-from gui.veh_mechanics.battle.updaters.mechanic_passenger_view_updater import VehicleMechanicPassengerUpdater
-from gui.veh_mechanics.battle.updaters.mechanic_states_view_updater import VehicleMechanicStatesUpdater
+from gui.veh_mechanics.battle.updaters.mechanics.mechanic_passenger_updater import VehicleMechanicPassengerUpdater
+from gui.veh_mechanics.battle.updaters.mechanics.mechanic_states_updater import VehicleMechanicStatesUpdater
 from gui.veh_mechanics.battle.updaters.vehicle_state_updater import VehicleStateUpdater
-from vehicles.components.component_events import ComponentListener
 from vehicles.mechanics.mechanic_constants import VehicleMechanicCommand, VehicleMechanic
 from vehicles.mechanics.mechanic_states import IMechanicStatesListenerLogic
 from skeletons.gui.battle_session import IBattleSessionProvider
@@ -38,7 +39,7 @@ def _getWidgetState(prev, state):
     return (MECHANICS_WIDGET_CONST.IDLE, False)
 
 
-class StanceDanceTurboMechanicWidget(StanceDanceTurboWidgetMeta, ComponentListener, IMechanicStatesListenerLogic):
+class StanceDanceTurboMechanicWidget(StanceDanceTurboWidgetMeta, ContainersListener, IMechanicStatesListenerLogic):
     _HOT_KEY_MAP = {CommandMapping.CMD_CM_VEHICLE_SWITCH_AUTOROTATION: [
                                                          HotKeyData(VehicleMechanicCommand.ALTERNATIVE_ACTIVATE.value, False)], 
        CommandMapping.CMD_CM_SPECIAL_ABILITY: [
@@ -91,7 +92,7 @@ class StanceDanceTurboMechanicWidget(StanceDanceTurboWidgetMeta, ComponentListen
         return [
          VehicleMechanicStatesUpdater(VehicleMechanic.STANCE_DANCE, self),
          VehicleMechanicPassengerUpdater(VehicleMechanic.STANCE_DANCE, self),
-         HotKeysViewUpdater(self._HOT_KEY_MAP.keys(), self),
+         HotKeysViewUpdater(list(self._HOT_KEY_MAP.keys()), self),
          CrosshairTypeUpdater(self),
          VehicleStateUpdater(self)]
 

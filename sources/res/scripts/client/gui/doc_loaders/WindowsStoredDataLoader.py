@@ -1,4 +1,8 @@
-import base64, cPickle, Settings
+from __future__ import absolute_import
+import base64
+from future.moves import pickle
+from future.utils import lmap
+import Settings
 from debug_utils import LOG_ERROR, LOG_CURRENT_EXCEPTION
 
 class WindowsStoredDataLoader(object):
@@ -26,7 +30,7 @@ class WindowsStoredDataLoader(object):
 
                 def decode(value):
                     try:
-                        return cPickle.loads(base64.b64decode(value))
+                        return pickle.loads(base64.b64decode(value))
                     except TypeError:
                         LOG_CURRENT_EXCEPTION()
                         return
@@ -59,8 +63,8 @@ class WindowsStoredDataLoader(object):
                 records = records[:self.__maxRecordLen]
 
                 def encode(value):
-                    return base64.b64encode(cPickle.dumps(value))
+                    return base64.b64encode(pickle.dumps(value))
 
-                dataSec.writeStrings('record', map(encode, records))
+                dataSec.writeStrings('record', lmap(encode, records))
             Settings.g_instance.save()
             return

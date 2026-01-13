@@ -33,7 +33,7 @@
 		</ageRating>
 	</firstScreen>
 	<splashScreen>
-		<show>false</show>
+		<show>true</show>
 		<module>gui.game_loading.view.splash_screen</module>
 		<factory>createSplashScreen</factory>
 		<canSkip>true</canSkip>

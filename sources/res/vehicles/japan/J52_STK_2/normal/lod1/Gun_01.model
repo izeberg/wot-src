@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/japan/J52_STK_2/normal/lod1/Gun_01</nodefullVisual>
+	<visibilityBox>
+		<min>-1.309630 -0.308225 -0.561920</min>
+		<max>0.485895 0.351492 6.282696</max>
+	</visibilityBox>
+	<parent>vehicles/japan/J52_STK_2/normal/lod2/Gun_01</parent>
+	<extent>64.000000</extent>
+</root>

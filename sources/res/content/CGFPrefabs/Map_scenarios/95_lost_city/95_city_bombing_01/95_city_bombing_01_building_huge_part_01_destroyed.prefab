@@ -1992,7 +1992,7 @@
 					</property>
 					<property>
 						<name>Rotation</name>
-						<value>-0 0 -0</value>
+						<value>-0 0 0</value>
 					</property>
 				</config>
 			</component>
@@ -2016,7 +2016,7 @@
 					</property>
 					<property>
 						<name>Rotation</name>
-						<value>-0 0 -0</value>
+						<value>-0 0 0</value>
 					</property>
 				</config>
 			</component>
@@ -5429,10 +5429,7 @@
 					</property>
 					<property>
 						<name>penetrationLapse</name>
-						<value>
-							0.3
-							<!--BW_String-->
-						</value>
+						<value>1</value>
 					</property>
 				</config>
 			</component>

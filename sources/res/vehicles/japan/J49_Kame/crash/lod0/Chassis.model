@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/japan/J49_Kame/crash/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.496564 0.000361 -3.565431</min>
+		<max>1.493173 1.236817 3.609235</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/japan/J49_Kame/crash/lod0/Chassis</nodefullVisual>
+</root>

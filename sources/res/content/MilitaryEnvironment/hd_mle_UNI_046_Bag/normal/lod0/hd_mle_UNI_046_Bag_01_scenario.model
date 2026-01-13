@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<visibilityBox>
+		<min>-1.930950 -0.228082 -1.168190</min>
+		<max>2.157790 1.761360 1.027320</max>
+	</visibilityBox>
+	<parent>content/MilitaryEnvironment/hd_mle_UNI_046_Bag/normal/lod1/hd_mle_UNI_046_Bag_01_scenario</parent>
+	<extent>50.000000</extent>
+	<nodefullVisual>content/MilitaryEnvironment/hd_mle_UNI_046_Bag/normal/lod0/hd_mle_UNI_046_Bag_01_scenario</nodefullVisual>
+	<havok>
+		<damagedState>false</damagedState>
+	</havok>
+</root>

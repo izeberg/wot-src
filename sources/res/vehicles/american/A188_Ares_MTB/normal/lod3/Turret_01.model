@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A188_Ares_MTB/normal/lod3/Turret_01</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/american/A188_Ares_MTB/normal/lod4/Turret_01</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.329550 -0.608345 -1.808217</min>
+		<max>1.308238 3.008053 1.598934</max>
+	</visibilityBox>
+</root>

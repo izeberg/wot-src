@@ -50,8 +50,7 @@ package net.wg.gui.components.controls
       
       override public function set data(param1:Object) : void
       {
-         var _loc2_:AccordionRendererData = null;
-         _loc2_ = param1 as AccordionRendererData;
+         var _loc2_:AccordionRendererData = param1 as AccordionRendererData;
          if(_loc2_)
          {
             this.enabled = _loc2_.enabled;

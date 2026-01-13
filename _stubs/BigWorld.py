@@ -1052,6 +1052,7 @@ class CollisionComponent(PyComponentWrapperBase):
 	def getPartTransformProvider(self, *args, **kwargs): pass
 	def hasAttachment(self, *args, **kwargs): pass
 	def id(self, *args, **kwargs): pass
+	def isAttachmentActive(self, *args, **kwargs): pass
 	maxStaticPartIndex = property(lambda self: None)
 	partIndices = property(lambda self: None)
 	def removeAttachment(self, *args, **kwargs): pass
@@ -1560,6 +1561,7 @@ class DynamicScriptComponent(PyDynamicComponent):
 	def __subclasshook__(*args, **kwargs): pass
 	cell = property(lambda self: None)
 	entity = property(lambda self: None)
+	isValid = property(lambda self: None)
 
 
 class Entity(pybind11_object):
@@ -4308,7 +4310,6 @@ class Space(pybind11_object):
 	def getEnvironment(self, *args, **kwargs): pass
 	id = property(lambda self: None)
 	def resetEnvironment(self, *args, **kwargs): pass
-	def setDefaultEnvironment(self, *args, **kwargs): pass
 	def setEnvironment(self, *args, **kwargs): pass
 	def setReplicableHash(self, *args, **kwargs): pass
 
@@ -5620,6 +5621,7 @@ class WGVehiclePhysics(pybind11_object):
 	def getRollerPosition(self, *args, **kwargs): pass
 	def getTouchedGround(self, *args, **kwargs): pass
 	def getTouchedMatkind(self, *args, **kwargs): pass
+	gimletCOMOffset = property(lambda self: None)
 	gotCarcassContact = property(lambda self: None)
 	gotTracksContact = property(lambda self: None)
 	gravity = property(lambda self: None)
@@ -5660,10 +5662,10 @@ class WGVehiclePhysics(pybind11_object):
 	def onRammingCb(self, *args, **kwargs): pass
 	def onResurrectVehicle(self, *args, **kwargs): pass
 	def onSideMovementChangedCb(self, *args, **kwargs): pass
-	def onTransparentIntersectionCb(self, *args, **kwargs): pass
 	def onVehicleStatusChanged(self, *args, **kwargs): pass
 	owner = property(lambda self: None)
 	quietRotationEnabled = property(lambda self: None)
+	railCOMOffset = property(lambda self: None)
 	def removeAllDamperSprings(self, *args, **kwargs): pass
 	def removeAllSubscriptions(self, *args, **kwargs): pass
 	def rollback(self, *args, **kwargs): pass
@@ -5686,16 +5688,13 @@ class WGVehiclePhysics(pybind11_object):
 	staticMode = property(lambda self: None)
 	def subscribeAfterSimulation(self, *args, **kwargs): pass
 	def subscribeBeforeSimulation(self, *args, **kwargs): pass
-	def subscribeMandatoryPreSimulation(self, *args, **kwargs): pass
 	ticksFromLastCollision = property(lambda self: None)
 	timeAfterLanding = property(lambda self: None)
 	torqueApplied = property(lambda self: None)
 	torqueModifier = property(lambda self: None)
 	def touchGround(self, *args, **kwargs): pass
-	transparentMode = property(lambda self: None)
 	def unsubscribeAfterSimulation(self, *args, **kwargs): pass
 	def unsubscribeBeforeSimulation(self, *args, **kwargs): pass
-	def unsubscribeMandatoryPreSimulation(self, *args, **kwargs): pass
 	def updateSettings(self, *args, **kwargs): pass
 	vehicleID = property(lambda self: None)
 	velocity = property(lambda self: None)
@@ -5773,6 +5772,7 @@ class WGTankPhysics(WGVehiclePhysics):
 	def getRollerPosition(self, *args, **kwargs): pass
 	def getTouchedGround(self, *args, **kwargs): pass
 	def getTouchedMatkind(self, *args, **kwargs): pass
+	gimletCOMOffset = property(lambda self: None)
 	gotCarcassContact = property(lambda self: None)
 	gotTracksContact = property(lambda self: None)
 	gravity = property(lambda self: None)
@@ -5817,10 +5817,10 @@ class WGTankPhysics(WGVehiclePhysics):
 	def onRammingCb(self, *args, **kwargs): pass
 	def onResurrectVehicle(self, *args, **kwargs): pass
 	def onSideMovementChangedCb(self, *args, **kwargs): pass
-	def onTransparentIntersectionCb(self, *args, **kwargs): pass
 	def onVehicleStatusChanged(self, *args, **kwargs): pass
 	owner = property(lambda self: None)
 	quietRotationEnabled = property(lambda self: None)
+	railCOMOffset = property(lambda self: None)
 	def removeAllDamperSprings(self, *args, **kwargs): pass
 	def removeAllSubscriptions(self, *args, **kwargs): pass
 	rightTrackBrakeForce = property(lambda self: None)
@@ -5845,16 +5845,13 @@ class WGTankPhysics(WGVehiclePhysics):
 	staticMode = property(lambda self: None)
 	def subscribeAfterSimulation(self, *args, **kwargs): pass
 	def subscribeBeforeSimulation(self, *args, **kwargs): pass
-	def subscribeMandatoryPreSimulation(self, *args, **kwargs): pass
 	ticksFromLastCollision = property(lambda self: None)
 	timeAfterLanding = property(lambda self: None)
 	torqueApplied = property(lambda self: None)
 	torqueModifier = property(lambda self: None)
 	def touchGround(self, *args, **kwargs): pass
-	transparentMode = property(lambda self: None)
 	def unsubscribeAfterSimulation(self, *args, **kwargs): pass
 	def unsubscribeBeforeSimulation(self, *args, **kwargs): pass
-	def unsubscribeMandatoryPreSimulation(self, *args, **kwargs): pass
 	def updateSettings(self, *args, **kwargs): pass
 	vehicleID = property(lambda self: None)
 	velocity = property(lambda self: None)
@@ -6149,6 +6146,7 @@ class WGWheeledPhysics(WGVehiclePhysics):
 	def getRollerPosition(self, *args, **kwargs): pass
 	def getTouchedGround(self, *args, **kwargs): pass
 	def getTouchedMatkind(self, *args, **kwargs): pass
+	gimletCOMOffset = property(lambda self: None)
 	gotCarcassContact = property(lambda self: None)
 	gotTracksContact = property(lambda self: None)
 	gravity = property(lambda self: None)
@@ -6190,11 +6188,11 @@ class WGWheeledPhysics(WGVehiclePhysics):
 	def onResurrectVehicle(self, *args, **kwargs): pass
 	def onSideMovementChangedCb(self, *args, **kwargs): pass
 	onSteeringAnglesChangedCb = property(lambda self: None)
-	def onTransparentIntersectionCb(self, *args, **kwargs): pass
 	def onVehicleStatusChanged(self, *args, **kwargs): pass
 	onWheelsScrollChangedCb = property(lambda self: None)
 	owner = property(lambda self: None)
 	quietRotationEnabled = property(lambda self: None)
+	railCOMOffset = property(lambda self: None)
 	def removeAllDamperSprings(self, *args, **kwargs): pass
 	def removeAllSubscriptions(self, *args, **kwargs): pass
 	def rollback(self, *args, **kwargs): pass
@@ -6219,16 +6217,13 @@ class WGWheeledPhysics(WGVehiclePhysics):
 	staticMode = property(lambda self: None)
 	def subscribeAfterSimulation(self, *args, **kwargs): pass
 	def subscribeBeforeSimulation(self, *args, **kwargs): pass
-	def subscribeMandatoryPreSimulation(self, *args, **kwargs): pass
 	ticksFromLastCollision = property(lambda self: None)
 	timeAfterLanding = property(lambda self: None)
 	torqueApplied = property(lambda self: None)
 	torqueModifier = property(lambda self: None)
 	def touchGround(self, *args, **kwargs): pass
-	transparentMode = property(lambda self: None)
 	def unsubscribeAfterSimulation(self, *args, **kwargs): pass
 	def unsubscribeBeforeSimulation(self, *args, **kwargs): pass
-	def unsubscribeMandatoryPreSimulation(self, *args, **kwargs): pass
 	def updateSettings(self, *args, **kwargs): pass
 	vehicleID = property(lambda self: None)
 	velocity = property(lambda self: None)
@@ -6616,6 +6611,7 @@ def consumerBuild(*args, **kwargs): pass
 def controlEntity(*args, **kwargs): pass
 def controlPointSetHeight(*args, **kwargs): pass
 def createBrowser(*args, **kwargs): pass
+def createDynImpassableZone(*args, **kwargs): pass
 def createEntity(*args, **kwargs): pass
 def createPlayerEntity(*args, **kwargs): pass
 def createSpace(*args, **kwargs): pass
@@ -6804,8 +6800,10 @@ def registerTextureStreamingViewpoint(*args, **kwargs): pass
 def reinitLoggers(*args, **kwargs): pass
 def reinitVideoSound(*args, **kwargs): pass
 def releaseSpace(*args, **kwargs): pass
+def removeAllDynImpassableZones(*args, **kwargs): pass
 def removeAllIdleCallbacks(*args, **kwargs): pass
 def removeCameraCollider(*args, **kwargs): pass
+def removeDynImpassableZone(*args, **kwargs): pass
 def resetEntityManager(*args, **kwargs): pass
 def resetGraphicsSettingsStatus(*args, **kwargs): pass
 def resetPlayerTargetFrom(*args, **kwargs): pass
@@ -6940,7 +6938,6 @@ def wg_clearDecals(*args, **kwargs): pass
 def wg_clearTextureReuseList(*args, **kwargs): pass
 def wg_clearTraces(*args, **kwargs): pass
 def wg_collectScaleformTextures(*args, **kwargs): pass
-def wg_collideCustomSphereDynamicStatic(*args, **kwargs): pass
 def wg_collideDynamic(*args, **kwargs): pass
 def wg_collideDynamicStatic(*args, **kwargs): pass
 def wg_collideDynamics(*args, **kwargs): pass
@@ -6953,13 +6950,11 @@ def wg_copyToClipboard(*args, **kwargs): pass
 def wg_cpdata(*args, **kwargs): pass
 def wg_cpsalt(*args, **kwargs): pass
 def wg_crash(*args, **kwargs): pass
-def wg_createCollideSphere(*args, **kwargs): pass
 def wg_createSplineTrack(*args, **kwargs): pass
 def wg_debugLogging(*args, **kwargs): pass
 def wg_decalTextureIndex(*args, **kwargs): pass
 wg_defaultFlagEmblemCoords = (0, 0.1, 0.5, 0.9)
 wg_defaultFlagEmblemPath = u'system/maps/wg_emblem.dds'
-def wg_destroyCollideShape(*args, **kwargs): pass
 def wg_destroyFallAtom(*args, **kwargs): pass
 def wg_destroyFragile(*args, **kwargs): pass
 def wg_destroyModule(*args, **kwargs): pass

@@ -49,7 +49,6 @@ def getViewSettings():
     from gui.impl.lobby.battle_pass.battle_pass_secondary_entry_point import BattlePassSecondaryEntryPointWidget
     from gui.impl.lobby.hangar.random.random_hangar import HangarWindow
     from gui.impl.lobby.vehicle_hub.vehicle_hub_main_view import VehicleHubWindow
-    from gui.impl.lobby.new_year.main_view import MainViewWindow
     from gui.Scaleform.daapi.view.lobby.hangar.entry_points.craftmachine_entry_point import CraftMachineEntryPoint
     from gui.Scaleform.daapi.view.lobby.hangar.entry_points.mapbox_entry_point import MapBoxEntryPoint
     from gui.Scaleform.daapi.view.lobby.hangar.entry_points.marathon_entry_point import MarathonEntryPoint
@@ -63,7 +62,6 @@ def getViewSettings():
     return (
      ViewSettings(VIEW_ALIAS.LOBBY_HANGAR, HangarWindow, '', WindowLayer.SUB_VIEW, VIEW_ALIAS.LOBBY_HANGAR, ScopeTemplates.LOBBY_SUB_SCOPE),
      ViewSettings(VIEW_ALIAS.LEGACY_LOBBY_HANGAR, Hangar, 'hangar.swf', WindowLayer.SUB_VIEW, VIEW_ALIAS.LEGACY_LOBBY_HANGAR, ScopeTemplates.LOBBY_SUB_SCOPE),
-     ViewSettings(VIEW_ALIAS.HOLIDAY_OPS, MainViewWindow, 'hangar.swf', WindowLayer.SUB_VIEW, VIEW_ALIAS.HOLIDAY_OPS, ScopeTemplates.LOBBY_SUB_SCOPE),
      ViewSettings(VIEW_ALIAS.LOBBY_STRONGHOLD, StrongholdView, 'StrongholdView.swf', WindowLayer.SUB_VIEW, VIEW_ALIAS.LOBBY_STRONGHOLD, ScopeTemplates.LOBBY_SUB_SCOPE),
      ViewSettings(VIEW_ALIAS.STRONGHOLD_ADS, StrongholdAdsView, 'browserScreen.swf', WindowLayer.TOP_SUB_VIEW, VIEW_ALIAS.STRONGHOLD_ADS, ScopeTemplates.LOBBY_SUB_SCOPE),
      ViewSettings(VIEW_ALIAS.BROWSER_VIEW, BrowserView, 'browserScreen.swf', WindowLayer.SUB_VIEW, VIEW_ALIAS.BROWSER_VIEW, ScopeTemplates.LOBBY_SUB_SCOPE, True),
@@ -135,7 +133,5 @@ class HangarPackageBusinessHandler(PackageBusinessHandler):
          (
           VIEW_ALIAS.VEHICLES_FILTER_POPOVER, self.loadViewByCtxEvent),
          (
-          VIEW_ALIAS.VEHICLE_HUB, self.loadViewByCtxEvent),
-         (
-          VIEW_ALIAS.HOLIDAY_OPS, self.loadViewByCtxEvent))
+          VIEW_ALIAS.VEHICLE_HUB, self.loadViewByCtxEvent))
         super(HangarPackageBusinessHandler, self).__init__(listeners, app_settings.APP_NAME_SPACE.SF_LOBBY, EVENT_BUS_SCOPE.LOBBY)

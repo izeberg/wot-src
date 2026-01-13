@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.433185 -0.052067 -2.694661</min>
+		<max>1.436981 1.545817 1.193638</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/french/F137_LEOX/crash/lod0/Turret_01</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/french/F137_LEOX/crash/lod1/Turret_01</parent>
+	<extent>32.000000</extent>
+</root>
