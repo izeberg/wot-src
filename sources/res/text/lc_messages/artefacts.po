@@ -802,6 +802,27 @@ msgstr ""
 "Increases the concealment of a stationary or moving vehicle by "
 "{colorTagOpen}6{colorTagClose}/{colorTagOpen}8{colorTagClose}/{colorTagOpen}10%{colorTagClose}"
 
+msgid "deluxeCamouflageNet/battleDescr"
+msgstr ""
+"Increases the concealment of a stationary vehicle 1.5 s after it stops"
+
+msgid "deluxeCamouflageNet/long_special"
+msgstr ""
+"An improved version of Camouflage Net whose effectiveness depends on the "
+"vehicle type. Tactical Concealment Net is mainly beneficial for stealthy "
+"vehicles: SPGs and tank destroyers with a low silhouette. It increases the "
+"effect of the Concealment perk. Combining them will provide a good bonus for"
+" your vehicle. Tactical Concealment Net activates 1.5 seconds after the "
+"vehicle stops moving."
+
+msgid "deluxeCamouflageNet/name"
+msgstr "Tactical Concealment Net"
+
+msgid "deluxeCamouflageNet/short_special"
+msgstr ""
+"{colorTagOpen}+17.5{colorTagClose}/{colorTagOpen}12.5{colorTagClose}/{colorTagOpen}7.5%{colorTagClose}"
+" to concealment of a stationary vehicle"
+
 msgid "deluxeExtraHealthReserve/additional_descr"
 msgstr "Fully restores suspension hit points after repairs."
 
@@ -857,6 +878,26 @@ msgstr "Innovative Targeting"
 
 msgid "deluxeImprovedSights/short_special"
 msgstr "Reduces gun dispersion"
+
+msgid "deluxeStereoscope/battleDescr"
+msgstr ""
+"Increases the view range of a stationary vehicle 1.5 s after it stops (up to"
+" 445 m)"
+
+msgid "deluxeStereoscope/long_special"
+msgstr ""
+"An improved version of Binocular Telescope. A good view range provides a "
+"solid advantage to vehicles in battle. This type of equipment is beneficial "
+"for tank destroyers with low silhouettes and accurate guns. It activates 1.5"
+" seconds after the vehicle stops moving."
+
+msgid "deluxeStereoscope/name"
+msgstr "Telescopic Observation System"
+
+msgid "deluxeStereoscope/short_special"
+msgstr ""
+"{colorTagOpen}+27.5%{colorTagClose} to the view range of a stationary "
+"vehicle (up to 445 m)"
 
 msgid "deluxeTurbocharger/long_special"
 msgstr ""
@@ -2594,6 +2635,38 @@ msgid "role_MT_support_pair_5_2/splitName"
 msgstr ""
 "Field of Vision\n"
 "Tuning"
+
+msgid "role_MT_support_temperatureGun_pair_1_1/name"
+msgstr "Module Durability Increase"
+
+msgid "role_MT_support_temperatureGun_pair_1_1/splitName"
+msgstr ""
+"Module Durability\n"
+"Increase"
+
+msgid "role_MT_support_temperatureGun_pair_1_2/name"
+msgstr "Light-Alloy Mounting Points"
+
+msgid "role_MT_support_temperatureGun_pair_1_2/splitName"
+msgstr ""
+"Light-Alloy\n"
+"Mounting Points"
+
+msgid "role_MT_support_temperatureGun_pair_4_1/name"
+msgstr "Breech Tweaking"
+
+msgid "role_MT_support_temperatureGun_pair_4_1/splitName"
+msgstr ""
+"Breech\n"
+"Tweaking"
+
+msgid "role_MT_support_temperatureGun_pair_4_2/name"
+msgstr "New Aiming Gears"
+
+msgid "role_MT_support_temperatureGun_pair_4_2/splitName"
+msgstr ""
+"New\n"
+"Aiming Gears"
 
 msgid "role_MT_universal_pair_4_1/name"
 msgstr "Heavy-Gauge Nozzles"

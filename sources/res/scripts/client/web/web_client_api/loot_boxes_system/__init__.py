@@ -79,7 +79,7 @@ class LootBoxSystemWebApi(object):
             bonuses = mergeNeededBonuses(slotData.get('bonuses', []), eventName)
             bonuses = processCompensationsWithLootbox(bonuses, eventName, showLootboxCompensation=False)
             result.update({idx: {'probability': int(slotData.get('probability', [0])[0] * 10000 + 1e-06) / 100.0, 
-                     'bonuses': [], 'name': str(slotData.get('name', ''))}})
+                     'bonuses': []}})
             for bonus in bonuses:
                 bonusList = bonus.getWrappedLootBoxesBonusList()
                 for bonusEntry in bonusList:

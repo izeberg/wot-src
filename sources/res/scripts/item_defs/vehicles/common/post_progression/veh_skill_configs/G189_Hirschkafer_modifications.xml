@@ -219,7 +219,7 @@
 			<mul>
 				<name>miscAttrs/overheatStacks/dmgBonusFactor</name>
 				<value>
-					1.09
+					1.083
 					<!--BW_String-->
 				</value>
 			</mul>
@@ -227,7 +227,10 @@
 		<kpi>
 			<add>
 				<name>value</name>
-				<value>9</value>
+				<value>
+					8.3
+					<!--BW_String-->
+				</value>
 			</add>
 		</kpi>
 	</g189_node13>

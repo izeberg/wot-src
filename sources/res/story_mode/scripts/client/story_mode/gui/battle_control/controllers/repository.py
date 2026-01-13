@@ -38,8 +38,3 @@ class StoryModeSharedRepository(SharedControllersRepository):
         if setup.isReplayPlaying:
             return StoryModeBattleMessagesPlayer(setup)
         return StoryModeBattleMessagesController(setup)
-
-    @classmethod
-    def getAreaMarkersController(cls):
-        from story_mode.gui.battle_control.controllers.area_marker_ctrl import StoryModeAreaMarkersController
-        return StoryModeAreaMarkersController()

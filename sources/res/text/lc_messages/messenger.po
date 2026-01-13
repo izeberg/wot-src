@@ -1295,18 +1295,6 @@ msgstr "Personal Fame Points removed"
 msgid "platformCurrencyMsg/debited/freeXP"
 msgstr "Free Experience deducted"
 
-msgid "platformCurrencyMsg/debited/ny_amber"
-msgstr "Warm Amber removed"
-
-msgid "platformCurrencyMsg/debited/ny_crystal"
-msgstr "Rock Crystal removed"
-
-msgid "platformCurrencyMsg/debited/ny_emerald"
-msgstr "Pure Emerald removed"
-
-msgid "platformCurrencyMsg/debited/ny_iron"
-msgstr "Meteoric Iron removed"
-
 msgid "platformCurrencyMsg/debited/tourcoin"
 msgstr "Points of Duty removed"
 
@@ -1333,18 +1321,6 @@ msgstr "Personal Fame Points added"
 
 msgid "platformCurrencyMsg/received/freeXP"
 msgstr "Free Experience received"
-
-msgid "platformCurrencyMsg/received/ny_amber"
-msgstr "Warm Amber added"
-
-msgid "platformCurrencyMsg/received/ny_crystal"
-msgstr "Rock Crystal added"
-
-msgid "platformCurrencyMsg/received/ny_emerald"
-msgstr "Pure Emerald added"
-
-msgid "platformCurrencyMsg/received/ny_iron"
-msgstr "Meteoric Iron added"
 
 msgid "platformCurrencyMsg/received/tourcoin"
 msgstr "Points of Duty added"
@@ -2224,9 +2200,6 @@ msgid ""
 "serviceChannelMessages/battleResults/quests/rankedBonusBattles/persistent"
 msgstr "%(count)s standard"
 
-msgid "serviceChannelMessages/battleResults/quests/variadicDiscount"
-msgstr "%(discount)s%% discount on Tier %(level)s vehicles received"
-
 msgid "serviceChannelMessages/battleResults/quests/vehicleSlots"
 msgstr "Slots added"
 
@@ -2433,6 +2406,18 @@ msgstr "Close"
 msgid "serviceChannelMessages/clan/LEFT_CLAN"
 msgstr "You left or were excluded from the clan:"
 
+msgid "serviceChannelMessages/collector20/badge"
+msgstr "%(element_name)s added"
+
+msgid "serviceChannelMessages/collector20/medal"
+msgstr "\"%(element_name)s\" medal added"
+
+msgid "serviceChannelMessages/collector20/stripe"
+msgstr "\"%(element_name)s\" stripe added"
+
+msgid "serviceChannelMessages/collector20/title"
+msgstr "Reward received"
+
 msgid ""
 "serviceChannelMessages/commendations/battleResults/commendationsReceived"
 msgstr "Commendations received"
@@ -2504,7 +2489,7 @@ msgid "serviceChannelMessages/currencyUpdate/financial_transaction"
 msgstr "Financial Transaction"
 
 msgid "serviceChannelMessages/currencyUpdate/integratedAuction"
-msgstr "Auction"
+msgstr "Benedict's Special Offers"
 
 msgid "serviceChannelMessages/currencyUpdate/received/bpcoin"
 msgstr "Tokens received"
@@ -3075,12 +3060,6 @@ msgstr "Blueprint fragments of %(nationName)s vehicles added"
 msgid "serviceChannelMessages/invoiceReceived/nationalBlueprintsDebited"
 msgstr "Blueprint fragments of %(nationName)s vehicles removed"
 
-msgid "serviceChannelMessages/invoiceReceived/nyToysAccruedInvoiceReceived"
-msgstr "Decorations added: "
-
-msgid "serviceChannelMessages/invoiceReceived/nyToysDebitedInvoiceReceived"
-msgstr "Decorations removed: "
-
 msgid "serviceChannelMessages/invoiceReceived/offersAccrued"
 msgstr "Added"
 
@@ -3155,9 +3134,6 @@ msgstr "Undistributed Free Experience removed from crew members"
 msgid "serviceChannelMessages/invoiceReceived/tankmenToRemove"
 msgstr "Dismissed"
 
-msgid "serviceChannelMessages/invoiceReceived/toyTypeWrapper"
-msgstr "«%(name)s» (x%(count)s)"
-
 msgid "serviceChannelMessages/invoiceReceived/unlockedModules"
 msgstr "all modules researched"
 
@@ -3188,13 +3164,16 @@ msgid "serviceChannelMessages/lootBoxes/footer"
 msgstr "Click the button to view the content."
 
 msgid "serviceChannelMessages/lootBoxes/header"
-msgstr "Parcel Received"
+msgstr "You received a parcel:"
 
 msgid "serviceChannelMessages/lootBoxes/item/name"
-msgstr "%(name)s: %(colorTagOpen)s%(count)s%(colorTagClose)s"
+msgstr "%(name)s %(colorTagOpen)sx%(count)s%(colorTagClose)s"
 
 msgid "serviceChannelMessages/lootBoxesAutoOpen/button"
-msgstr "To Rewards"
+msgstr "View"
+
+msgid "serviceChannelMessages/lootBoxesAutoOpen/counter"
+msgstr "x%(count)s"
 
 msgid "serviceChannelMessages/lootBoxesAutoOpen/event/boxes"
 msgstr "Gates activated: %(boxes)s"
@@ -3215,6 +3194,9 @@ msgstr "We activated all your Gates and added their contents to your account:"
 
 msgid "serviceChannelMessages/lootBoxesAutoOpen/header"
 msgstr "Rewards Received"
+
+msgid "serviceChannelMessages/lootBoxesAutoOpen/text"
+msgstr "We opened all your boxes and added the rewards for Holiday Ops"
 
 msgid "serviceChannelMessages/lunarBoxesAutoOpen/body"
 msgstr "We opened all Lunar New Year Blessings Envelopes for you."
@@ -3272,12 +3254,6 @@ msgstr "You can take a survey on the %(mapName)s map in Recon Mission."
 msgid "serviceChannelMessages/multiplier"
 msgstr " (x%(count)s)"
 
-msgid "serviceChannelMessages/newYear/celebrityChallenge/achievements"
-msgstr "Medal received"
-
-msgid "serviceChannelMessages/newYear/celebrityChallenge/optDevices"
-msgstr "Experimental Equipment added"
-
 msgid "serviceChannelMessages/notrecruitedTankman/button"
 msgstr "Go to Barracks"
 
@@ -3304,9 +3280,6 @@ msgstr "Reserves to expire: "
 
 msgid "serviceChannelMessages/personalReservesSoonExpire/title"
 msgstr "Expirable Reserves about to be lost"
-
-msgid "serviceChannelMessages/personalReservesTitle"
-msgstr "Personal Reserves Conversion"
 
 msgid "serviceChannelMessages/piggyBank/continueAfterSmashed"
 msgstr "New accumulation cycle started."

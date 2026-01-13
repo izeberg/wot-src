@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/japan/J52_STK_2/normal/lod1/Turret_01</nodefullVisual>
+	<parent>vehicles/japan/J52_STK_2/normal/lod2/Turret_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.602577 -0.012132 -3.203060</min>
+		<max>1.602557 2.625050 1.604805</max>
+	</visibilityBox>
+</root>

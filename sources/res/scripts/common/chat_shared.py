@@ -651,6 +651,9 @@ CHAT_COMMANDS = Enumeration('chatCommands', [
   {'battleCmd': 1}),
  (
   BATTLE_CHAT_COMMAND_NAMES.MOVING_TO_TARGET_POINT,
+  {'battleCmd': 1}),
+ (
+  BATTLE_CHAT_COMMAND_NAMES.OVERHEATEDGUN,
   {'battleCmd': 1})], instance=AttributeEnumItem)
 CHAT_MEMBER_STATUSES = Enumeration('chatMemberStatuses', [
  'available',
@@ -1609,7 +1612,6 @@ SYS_MESSAGE_TYPE = Enumeration('systemMessageType', [
  'externalVehicleRentStarted',
  'externalVehicleRentExpired',
  'mentorAssignmentUsed',
- 'nyErrorNotification',
  'battlePassPostProgressionActivated',
  'battlePassPostProgressionPaused',
  'personalMission3Quest',
@@ -1622,8 +1624,6 @@ SYS_MESSAGE_TYPE = Enumeration('systemMessageType', [
 SYS_MESSAGE_IMPORTANCE = Enumeration('systemMessageImportance', [
  'normal',
  'high'])
-NY_ERROR_TYPE = Enumeration('nyErrorType', [
- 'levelUpRewardsError'])
 SM_REQUEST_PERSONAL_MESSAGES_FLAG = 1
 SM_REQUEST_SYSTEM_MESSAGES_FLAG = 2
 SM_REQUEST_INTERNAL_SYS_MESSAGES_FLAG = 4

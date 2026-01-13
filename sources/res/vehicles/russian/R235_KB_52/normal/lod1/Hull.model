@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>
+			-1.791703 -0.58061 -4.129305
+			<!--BW_String-->
+		</min>
+		<max>1.791703 0.517519 3.680623</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/russian/R235_KB_52/normal/lod1/Hull</nodefullVisual>
+	<parent>vehicles/russian/R235_KB_52/normal/lod2/Hull</parent>
+	<extent>64</extent>
+</root>

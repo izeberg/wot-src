@@ -45,7 +45,7 @@
 		<GameObject>
 			<name>Bomb_04_01_03</name>
 			<UUID>cd10c63c-2dbe-3a34-9051-55d4c290fdde</UUID>
-			<flags>8</flags>
+			<flags>0</flags>
 		</GameObject>
 		<GameObject>
 			<name>Explosion_Bomb_01_01_04</name>
@@ -395,6 +395,14 @@
 				<UUID>7f3f6eca-9721-49a7-ace7-ca291c6b09d2</UUID>
 				<flags>35</flags>
 				<config>
+					<property>
+						<name>activeLayer</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>speed</name>
+						<value>1</value>
+					</property>
 					<property>
 						<name>loop</name>
 						<value>0</value>
@@ -5193,6 +5201,10 @@
 							</item>
 						</collection>
 					</property>
+					<property>
+						<name>layers</name>
+						<collection/>
+					</property>
 				</config>
 			</component>
 		</ComponentPool>
@@ -5772,6 +5784,10 @@
 						<name>Cast Shadows</name>
 						<value>0</value>
 					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
+					</property>
 				</config>
 			</component>
 			<component>
@@ -5785,6 +5801,10 @@
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
 						<value>0</value>
 					</property>
 				</config>
@@ -5802,6 +5822,10 @@
 						<name>Cast Shadows</name>
 						<value>0</value>
 					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
+					</property>
 				</config>
 			</component>
 			<component>
@@ -5815,6 +5839,10 @@
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
 						<value>0</value>
 					</property>
 				</config>
@@ -5832,6 +5860,10 @@
 						<name>Cast Shadows</name>
 						<value>0</value>
 					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
+					</property>
 				</config>
 			</component>
 			<component>
@@ -5845,6 +5877,10 @@
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
 						<value>0</value>
 					</property>
 				</config>
@@ -5862,6 +5898,10 @@
 						<name>Cast Shadows</name>
 						<value>0</value>
 					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
+					</property>
 				</config>
 			</component>
 			<component>
@@ -5875,6 +5915,10 @@
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
 						<value>0</value>
 					</property>
 				</config>

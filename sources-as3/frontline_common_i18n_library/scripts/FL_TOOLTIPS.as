@@ -3,6 +3,8 @@ package
    public class FL_TOOLTIPS
    {
       
+      public static const PLAYLIST_WARNING:String = "#frontline.fl_tooltips:playlist/warning";
+      
       public static const INFOBUTTON_HEADER:String = "#frontline.fl_tooltips:infoButton/header";
       
       public static const INFOBUTTON_BODY:String = "#frontline.fl_tooltips:infoButton/body";
@@ -100,6 +102,12 @@ package
       public static const BATTLEABILITYTOOLTIP_CHARACTERISTICSLIST:String = "#frontline.fl_tooltips:battleAbilityTooltip/characteristicsList";
       
       public static const COMMONTOOLTIP_DESCRIPTIONENDED:String = "#frontline.fl_tooltips:commonTooltip/descriptionEnded";
+      
+      public static const COMMONTOOLTIP_EVENTSTARTSOON:String = "#frontline.fl_tooltips:commonTooltip/eventStartSoon";
+      
+      public static const PLAYLIST_WARNING_HEADER:String = "#frontline.fl_tooltips:playlist/warning/header";
+      
+      public static const PLAYLIST_WARNING_BODY:String = "#frontline.fl_tooltips:playlist/warning/body";
        
       
       public function FL_TOOLTIPS()

@@ -19,7 +19,9 @@ package net.wg.data.constants.generated
       
       public static const TRANSITION:String = "transition";
       
-      public static const MECHANICS_WIDGET_STATE:Array = [PREPARING,ACTIVE,PASSIVE_ACTIVE,READY,DISABLE,IDLE,PRIME,TRANSITION];
+      public static const EMPTY:String = "empty";
+      
+      public static const MECHANICS_WIDGET_STATE:Array = [PREPARING,ACTIVE,PASSIVE_ACTIVE,READY,DISABLE,IDLE,PRIME,TRANSITION,EMPTY];
        
       
       public function MECHANICS_WIDGET_CONST()

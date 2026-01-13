@@ -105,6 +105,16 @@ package net.wg.gui.components.carousels
          this.filterCounter.setCount(param1,param2);
       }
       
+      public function get isDAAPIInited() : Boolean
+      {
+         return this._isDAAPIInited;
+      }
+      
+      public function get disposed() : Boolean
+      {
+         return this._disposed;
+      }
+      
       protected function updateSelectedIndex() : void
       {
          selectedIndex = this._dataProvider.getDAAPIselectedIdx();
@@ -127,24 +137,14 @@ package net.wg.gui.components.carousels
          }
       }
       
-      public function get isDAAPIInited() : Boolean
+      protected function onDataProviderChangeHandler(param1:Event) : void
       {
-         return this._isDAAPIInited;
-      }
-      
-      public function get disposed() : Boolean
-      {
-         return this._disposed;
+         this.updateSelectedIndex();
       }
       
       private function onFilterCounterResetAllFiltersHandler(param1:Event) : void
       {
          resetFiltersS();
-      }
-      
-      private function onDataProviderChangeHandler(param1:Event) : void
-      {
-         this.updateSelectedIndex();
       }
       
       private function onSelectItemHandler(param1:TankItemEvent) : void

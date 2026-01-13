@@ -105,7 +105,7 @@ class HangarSpaceSwitchController(IHangarSpaceSwitchController, IGlobalListener)
         self.onCheckSceneChange = Event.Event()
         self.onSpaceUpdated = Event.Event()
         self.hangarSpaceUpdated = False
-        self._currentSceneName = DEFAULT_HANGAR_SCENE
+        self.currentSceneName = DEFAULT_HANGAR_SCENE
         self._defaultHangars = {}
         self._sceneSpaceParams = {}
         self._defaultHangarSpaceConfig = DefaultHangarSpaceConfig()
@@ -132,17 +132,13 @@ class HangarSpaceSwitchController(IHangarSpaceSwitchController, IGlobalListener)
         self.processPossibleSceneChange(force=True)
         g_eventBus.handleEvent(events.HangarSpacesSwitcherEvent(events.HangarSpacesSwitcherEvent.SWITCH_TO_HANGAR_SPACE), scope=EVENT_BUS_SCOPE.LOBBY)
 
-    @property
-    def currentSceneName(self):
-        return self._currentSceneName
-
     def hangarSpaceUpdate(self, sceneName):
         if sceneName not in self._sceneSpaceParams:
             _logger.error('There is no space config for the key %s.', sceneName)
-        if self.hangarSpaceUpdated and self._currentSceneName != sceneName:
+        if self.hangarSpaceUpdated and self.currentSceneName != sceneName:
             _logger.error('There is more than one component that requires space change is active!')
             return
-        self._currentSceneName = sceneName
+        self.currentSceneName = sceneName
         self.hangarSpaceUpdated = True
 
     def lockHangarOverride(self, sceneName):
@@ -173,17 +169,17 @@ class HangarSpaceSwitchController(IHangarSpaceSwitchController, IGlobalListener)
 
     def processPossibleSceneChange(self, force=False):
         self.hangarSpaceUpdated = False
-        prevSceneName = self._currentSceneName
+        prevSceneName = self.currentSceneName
         self.onCheckSceneChange()
         success = None
         err = ErrorFlags.NONE
         if self.hangarSpaceUpdated:
-            currentSceneConfig = self._sceneSpaceParams[self._currentSceneName]
+            currentSceneConfig = self._sceneSpaceParams[self.currentSceneName]
             hangarSpacePath = self.hangarSpaceReloader.buildHangarSpacePath(currentSceneConfig.getHangarSpaceId())
             if hangarSpacePath != self.hangarSpaceReloader.hangarSpacePath:
                 success, err = self.hangarSpaceReloader.changeHangarSpace(currentSceneConfig.getHangarSpaceId(), currentSceneConfig.getVisibilityMask(), currentSceneConfig.waitingMessage, currentSceneConfig.waitingBackground, force=force)
         else:
-            self._currentSceneName = DEFAULT_HANGAR_SCENE
+            self.currentSceneName = DEFAULT_HANGAR_SCENE
             hangarSpacePath = self._defaultHangarSpaceConfig.getHangarSpaceId(self.hangarSpace.isPremium)
             if hangarSpacePath != self.hangarSpaceReloader.hangarSpacePath:
                 success, err = self.hangarSpaceReloader.changeHangarSpace(hangarSpacePath, self._defaultHangarSpaceConfig.getVisibilityMask(self.hangarSpace.isPremium), force=force)
@@ -192,7 +188,7 @@ class HangarSpaceSwitchController(IHangarSpaceSwitchController, IGlobalListener)
         elif err == ErrorFlags.DUPLICATE_REQUEST:
             self.onSpaceUpdated()
         elif err != ErrorFlags.NONE:
-            self._currentSceneName = prevSceneName
+            self.currentSceneName = prevSceneName
             _logger.error('Could not perform space reload, see hangar_space_reloader.py error flag %d.', err)
         return
 
@@ -233,12 +229,12 @@ class HangarSpaceSwitchController(IHangarSpaceSwitchController, IGlobalListener)
                     if 'hangar' in data:
                         sceneConfig.discardSpaceIdOverride()
                         sceneConfig.discardVisibilityMaskOverride()
-                        if name == self._currentSceneName:
+                        if name == self.currentSceneName:
                             currentSceneChanged = True
                         continue
                     if 'visibilityMask' in data:
                         sceneConfig.discardVisibilityMaskOverride()
-                        if name == self._currentSceneName:
+                        if name == self.currentSceneName:
                             currentSceneMaskChanged = True
                 if notification['type'] in (SERVER_CMD_CHANGE_HANGAR, SERVER_CMD_CHANGE_HANGAR_PREM):
                     isPremium = notification['type'] == SERVER_CMD_CHANGE_HANGAR_PREM
@@ -247,17 +243,17 @@ class HangarSpaceSwitchController(IHangarSpaceSwitchController, IGlobalListener)
                         if 'hangar' in data:
                             self._defaultHangarSpaceConfig.discardSpaceIdOverride(isPremium)
                             self._defaultHangarSpaceConfig.discardVisibilityMaskOverride(isPremium)
-                            if DEFAULT_HANGAR_SCENE == self._currentSceneName:
+                            if DEFAULT_HANGAR_SCENE == self.currentSceneName:
                                 currentSceneChanged = True
                             continue
                         if 'visibilityMask' in data:
                             self._defaultHangarSpaceConfig.discardVisibilityMaskOverride(isPremium)
-                            if DEFAULT_HANGAR_SCENE == self._currentSceneName:
+                            if DEFAULT_HANGAR_SCENE == self.currentSceneName:
                                 currentSceneMaskChanged = True
                     except Exception:
                         self._defaultHangarSpaceConfig.discardSpaceIdOverride(isPremium)
                         self._defaultHangarSpaceConfig.discardVisibilityMaskOverride(isPremium)
-                        if DEFAULT_HANGAR_SCENE == self._currentSceneName:
+                        if DEFAULT_HANGAR_SCENE == self.currentSceneName:
                             currentSceneChanged = True
 
             for notification in diff['added']:
@@ -272,11 +268,11 @@ class HangarSpaceSwitchController(IHangarSpaceSwitchController, IGlobalListener)
                         continue
                     if 'hangar' in data:
                         sceneConfig.setSpaceIdOverride(data['hangar'])
-                        if self._currentSceneName == name:
+                        if self.currentSceneName == name:
                             currentSceneChanged = True
                     if 'visibilityMask' in data:
                         sceneConfig.setVisibilityMask(int(data['visibilityMask'], 16))
-                        if self._currentSceneName == name:
+                        if self.currentSceneName == name:
                             currentSceneMaskChanged = True
                 if notification['type'] in (SERVER_CMD_CHANGE_HANGAR, SERVER_CMD_CHANGE_HANGAR_PREM):
                     isPremium = notification['type'] == SERVER_CMD_CHANGE_HANGAR_PREM
@@ -284,19 +280,19 @@ class HangarSpaceSwitchController(IHangarSpaceSwitchController, IGlobalListener)
                         data = json.loads(notification['data'])
                         if 'hangar' in data:
                             self._defaultHangarSpaceConfig.setSpaceIdOverride(isPremium, data['hangar'])
-                            if self._currentSceneName == DEFAULT_HANGAR_SCENE:
+                            if self.currentSceneName == DEFAULT_HANGAR_SCENE:
                                 currentSceneChanged = True
                         if 'visibilityMask' in data:
                             self._defaultHangarSpaceConfig.setVisibilityMask(isPremium, int(data['visibilityMask'], 16))
-                            if self._currentSceneName == DEFAULT_HANGAR_SCENE:
+                            if self.currentSceneName == DEFAULT_HANGAR_SCENE:
                                 currentSceneMaskChanged = True
                     except Exception:
                         self._defaultHangarSpaceConfig.setSpaceIdOverride(isPremium, notification['data'])
-                        if self._currentSceneName == DEFAULT_HANGAR_SCENE:
+                        if self.currentSceneName == DEFAULT_HANGAR_SCENE:
                             currentSceneChanged = True
 
             if currentSceneChanged:
-                if self._currentSceneName == DEFAULT_HANGAR_SCENE:
+                if self.currentSceneName == DEFAULT_HANGAR_SCENE:
                     spaceId = self._defaultHangarSpaceConfig.getHangarSpaceId(self.hangarSpace.isPremium)
                     visibilityMask = self._defaultHangarSpaceConfig.getVisibilityMask(self.hangarSpace.isPremium)
                     self.hangarSpace.inited or g_clientHangarSpaceOverride.setPath(spaceId, visibilityMask, isPremium=self.hangarSpace.isPremium, isReload=False)
@@ -306,7 +302,7 @@ class HangarSpaceSwitchController(IHangarSpaceSwitchController, IGlobalListener)
                     return
                 success, err = self.hangarSpaceReloader.changeHangarSpace(spaceId, visibilityMask)
             else:
-                currentSceneConfig = self._sceneSpaceParams[self._currentSceneName]
+                currentSceneConfig = self._sceneSpaceParams[self.currentSceneName]
                 spaceId = currentSceneConfig.getHangarSpaceId()
                 visibilityMask = currentSceneConfig.getVisibilityMask()
                 if not self.hangarSpace.inited:
@@ -322,9 +318,9 @@ class HangarSpaceSwitchController(IHangarSpaceSwitchController, IGlobalListener)
                     raise SoftException(('Could not perform space reload, see hangar_space_reloader.py error flag {}.').format(err))
                 return
             if currentSceneMaskChanged and self.hangarSpace.inited:
-                if self._currentSceneName == DEFAULT_HANGAR_SCENE:
+                if self.currentSceneName == DEFAULT_HANGAR_SCENE:
                     visibilityMask = self._defaultHangarSpaceConfig.getVisibilityMask(self.hangarSpace.isPremium)
                 else:
-                    visibilityMask = self._sceneSpaceParams[self._currentSceneName].getVisibilityMask()
+                    visibilityMask = self._sceneSpaceParams[self.currentSceneName].getVisibilityMask()
                 BigWorld.wg_setSpaceItemsVisibilityMask(self.hangarSpace.space.spaceId, visibilityMask)
             return

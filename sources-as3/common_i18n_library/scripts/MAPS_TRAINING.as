@@ -1256,6 +1256,10 @@ package
       public static const BOTVEHICLETYPE_SPG:String = "#maps_training:botVehicleType/SPG";
       
       public static const BOTNAME:String = "#maps_training:botName";
+      
+      public static const PROGRESS:String = "#maps_training:progress";
+      
+      public static const COUNTTITLE:String = "#maps_training:countTitle";
        
       
       public function MAPS_TRAINING()

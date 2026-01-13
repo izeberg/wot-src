@@ -494,13 +494,6 @@
 		<historical>1</historical>
 		<priceGroup>paints 20g notInShop</priceGroup>
 		<vehicleFilter>
-			<include>
-				<tags>premium</tags>
-				<levels>8</levels>
-			</include>
-			<include>
-				<levels>10</levels>
-			</include>
 			<exclude>
 				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF usa:A174_T57_58_Rush_Ep1 ussr:R61_Object252_BF</vehicles>
 			</exclude>
@@ -534,13 +527,6 @@
 		<historical>1</historical>
 		<priceGroup>paints 20g notInShop</priceGroup>
 		<vehicleFilter>
-			<include>
-				<tags>premium</tags>
-				<levels>8</levels>
-			</include>
-			<include>
-				<levels>10</levels>
-			</include>
 			<exclude>
 				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF usa:A174_T57_58_Rush_Ep1 ussr:R61_Object252_BF</vehicles>
 			</exclude>
@@ -574,13 +560,6 @@
 		<historical>1</historical>
 		<priceGroup>paints 20g notInShop</priceGroup>
 		<vehicleFilter>
-			<include>
-				<tags>premium</tags>
-				<levels>8</levels>
-			</include>
-			<include>
-				<levels>10</levels>
-			</include>
 			<exclude>
 				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF usa:A174_T57_58_Rush_Ep1 ussr:R61_Object252_BF</vehicles>
 			</exclude>
@@ -803,7 +782,7 @@
 		<priceGroup>paints 20g notInShop</priceGroup>
 		<vehicleFilter>
 			<include>
-				<levels>8 9 10</levels>
+				<levels>8 9 10 11</levels>
 			</include>
 			<exclude>
 				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
@@ -838,7 +817,7 @@
 		<priceGroup>paints 20g notInShop</priceGroup>
 		<vehicleFilter>
 			<include>
-				<levels>8 9 10</levels>
+				<levels>8 9 10 11</levels>
 			</include>
 			<exclude>
 				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
@@ -873,7 +852,7 @@
 		<priceGroup>paints 20g notInShop</priceGroup>
 		<vehicleFilter>
 			<include>
-				<levels>8 9 10</levels>
+				<levels>8 9 10 11</levels>
 			</include>
 			<exclude>
 				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
@@ -908,7 +887,7 @@
 		<priceGroup>paints 20g notInShop</priceGroup>
 		<vehicleFilter>
 			<include>
-				<levels>8 9 10</levels>
+				<levels>8 9 10 11</levels>
 			</include>
 			<exclude>
 				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
@@ -942,9 +921,6 @@
 		<historical>1</historical>
 		<priceGroup>paints 20g notInShop</priceGroup>
 		<vehicleFilter>
-			<include>
-				<levels>8 9 10</levels>
-			</include>
 			<exclude>
 				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
@@ -5811,7 +5787,7 @@
 		<priceGroup>paints 20g notInShop</priceGroup>
 		<vehicleFilter>
 			<include>
-				<levels>8 9 10</levels>
+				<levels>8 9 10 11</levels>
 			</include>
 			<exclude>
 				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
@@ -7437,7 +7413,7 @@
 		<priceGroup>paints 20g notInShop</priceGroup>
 		<vehicleFilter>
 			<include>
-				<levels>8 9 10</levels>
+				<levels>8 9 10 11</levels>
 			</include>
 			<exclude>
 				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
@@ -8313,7 +8289,7 @@
 		<priceGroup>paints 20g notInShop</priceGroup>
 		<vehicleFilter>
 			<include>
-				<levels>8 9 10</levels>
+				<levels>8 9 10 11</levels>
 			</include>
 			<exclude>
 				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
@@ -8628,7 +8604,7 @@
 		<priceGroup>paints 20g notInShop</priceGroup>
 		<vehicleFilter>
 			<include>
-				<levels>8 9 10</levels>
+				<levels>8 9 10 11</levels>
 			</include>
 			<exclude>
 				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF usa:A174_T57_58_Rush_Ep1 ussr:R61_Object252_BF poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
@@ -10068,6 +10044,51 @@
 			<userString>#vehicle_customization:special_style/bp_2025_18_3</userString>
 			<tags>hiddenInUI</tags>
 		</paint>
+		<paint>
+			<id>636</id>
+			<texture>gui/maps/vehicles/repaints/custom_color_03.png</texture>
+			<color>49 50 79 255</color>
+			<gloss>
+				0.346
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.2
+				<!--BW_String-->
+			</metallic>
+			<userString>#vehicle_customization:special_style/bp2025_holiday_4</userString>
+			<tags>hiddenInUI</tags>
+		</paint>
+		<paint>
+			<id>637</id>
+			<texture>gui/maps/vehicles/repaints/custom_color_23.png</texture>
+			<color>17 17 20 255</color>
+			<gloss>
+				0.63
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.235
+				<!--BW_String-->
+			</metallic>
+			<userString>#vehicle_customization:special_style/bp2025_holiday_5</userString>
+			<tags>hiddenInUI</tags>
+		</paint>
+		<paint>
+			<id>638</id>
+			<texture>gui/maps/vehicles/repaints/custom_color_30.png</texture>
+			<color>38 43 51 255</color>
+			<gloss>
+				0.509
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.23
+				<!--BW_String-->
+			</metallic>
+			<userString>#vehicle_customization:special_style/bp2025_holiday_6</userString>
+			<tags>hiddenInUI</tags>
+		</paint>
 	</itemGroup>
 	<itemGroup>
 		<name>BattlePass 2025</name>
@@ -10777,63 +10798,6 @@
 		</paint>
 	</itemGroup>
 	<itemGroup>
-		<name>WCI 2025</name>
-		<userString>#vehicle_customization:repaint/color_group_04</userString>
-		<season>ALL</season>
-		<historical>1</historical>
-		<priceGroup>paints 20g notInShop</priceGroup>
-		<vehicleFilter>
-			<exclude>
-				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF poland:Pl15_60TP_Lewandowskiego_CFE_A usa:A13_T34_hvy_BF usa:A174_T57_58_Rush_Ep1 ussr:R61_Object252_BF</vehicles>
-			</exclude>
-		</vehicleFilter>
-		<paint>
-			<id>619</id>
-			<texture>gui/maps/vehicles/repaints/germany_color_04.png</texture>
-			<color>38 38 38 255</color>
-			<gloss>
-				0.509
-				<!--BW_String-->
-			</gloss>
-			<metallic>
-				0.46
-				<!--BW_String-->
-			</metallic>
-			<userString>#vehicle_customization:special_style/wci2025_1</userString>
-			<tags>hiddenInUI</tags>
-		</paint>
-		<paint>
-			<id>620</id>
-			<texture>gui/maps/vehicles/repaints/italy_base_color.png</texture>
-			<color>125 110 89 255</color>
-			<gloss>
-				0.509
-				<!--BW_String-->
-			</gloss>
-			<metallic>
-				0.23
-				<!--BW_String-->
-			</metallic>
-			<userString>#vehicle_customization:special_style/wci2025_1</userString>
-			<tags>hiddenInUI</tags>
-		</paint>
-		<paint>
-			<id>621</id>
-			<texture>gui/maps/vehicles/repaints/custom_color_23.png</texture>
-			<color>20 18 17 255</color>
-			<gloss>
-				0.7
-				<!--BW_String-->
-			</gloss>
-			<metallic>
-				0.3
-				<!--BW_String-->
-			</metallic>
-			<userString>#vehicle_customization:special_style/wci2025_1</userString>
-			<tags>hiddenInUI</tags>
-		</paint>
-	</itemGroup>
-	<itemGroup>
 		<name>NY 2026</name>
 		<userString>#vehicle_customization:repaint/color_group_04</userString>
 		<season>ALL</season>
@@ -10864,11 +10828,11 @@
 			<texture>gui/maps/vehicles/repaints/france_color_07.png</texture>
 			<color>94 110 128 255</color>
 			<gloss>
-				0.65
+				0.86
 				<!--BW_String-->
 			</gloss>
 			<metallic>
-				0.55
+				0.76
 				<!--BW_String-->
 			</metallic>
 			<userString>#vehicle_customization:special_style/ny2026_1</userString>
@@ -11011,6 +10975,63 @@
 		</paint>
 	</itemGroup>
 	<itemGroup>
+		<name>WCI 2025</name>
+		<userString>#vehicle_customization:repaint/color_group_04</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>paints 20g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF poland:Pl15_60TP_Lewandowskiego_CFE_A usa:A13_T34_hvy_BF usa:A174_T57_58_Rush_Ep1 ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<paint>
+			<id>619</id>
+			<texture>gui/maps/vehicles/repaints/germany_color_04.png</texture>
+			<color>38 38 38 255</color>
+			<gloss>
+				0.509
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.46
+				<!--BW_String-->
+			</metallic>
+			<userString>#vehicle_customization:special_style/wci2025_1</userString>
+			<tags>hiddenInUI</tags>
+		</paint>
+		<paint>
+			<id>620</id>
+			<texture>gui/maps/vehicles/repaints/italy_base_color.png</texture>
+			<color>125 110 89 255</color>
+			<gloss>
+				0.509
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.23
+				<!--BW_String-->
+			</metallic>
+			<userString>#vehicle_customization:special_style/wci2025_1</userString>
+			<tags>hiddenInUI</tags>
+		</paint>
+		<paint>
+			<id>621</id>
+			<texture>gui/maps/vehicles/repaints/custom_color_23.png</texture>
+			<color>20 18 17 255</color>
+			<gloss>
+				0.7
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.3
+				<!--BW_String-->
+			</metallic>
+			<userString>#vehicle_customization:special_style/wci2025_1</userString>
+			<tags>hiddenInUI</tags>
+		</paint>
+	</itemGroup>
+	<itemGroup>
 		<name>Advent Calendar 2025</name>
 		<userString>#vehicle_customization:repaint/color_group_04</userString>
 		<season>ALL</season>
@@ -11049,6 +11070,48 @@
 				<!--BW_String-->
 			</metallic>
 			<userString>#vehicle_customization:special_style/advent_calendar_2025_2</userString>
+			<tags>hiddenInUI</tags>
+		</paint>
+	</itemGroup>
+	<itemGroup>
+		<name>Lootboxes</name>
+		<userString>#vehicle_customization:repaint/color_group_04</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>paints 20g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF poland:Pl15_60TP_Lewandowskiego_CFE_A usa:A13_T34_hvy_BF usa:A174_T57_58_Rush_Ep1 ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<paint>
+			<id>634</id>
+			<texture>gui/maps/vehicles/repaints/custom_color_29.png</texture>
+			<color>31 47 61 255</color>
+			<gloss>
+				0.63
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.235
+				<!--BW_String-->
+			</metallic>
+			<userString>#vehicle_customization:special_style/lootboxes_lunar_1</userString>
+			<tags>hiddenInUI</tags>
+		</paint>
+		<paint>
+			<id>635</id>
+			<texture>gui/maps/vehicles/repaints/custom_color_29.png</texture>
+			<color>107 34 32 255</color>
+			<gloss>
+				0.4
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.23
+				<!--BW_String-->
+			</metallic>
+			<userString>#vehicle_customization:special_style/lootboxes_lunar_2</userString>
 			<tags>hiddenInUI</tags>
 		</paint>
 	</itemGroup>
@@ -11936,6 +11999,21 @@
 				<!--BW_String-->
 			</metallic>
 			<userString>#vehicle_customization:repaint/snowy_climb</userString>
+			<tags>hiddenInUI</tags>
+		</paint>
+		<paint>
+			<id>5604</id>
+			<texture>gui/maps/vehicles/repaints/custom_color_36.png</texture>
+			<color>32 41 43 255</color>
+			<gloss>
+				0.4
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.23
+				<!--BW_String-->
+			</metallic>
+			<userString>#vehicle_customization:repaint/beyond_pines</userString>
 			<tags>hiddenInUI</tags>
 		</paint>
 	</itemGroup>

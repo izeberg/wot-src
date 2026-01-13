@@ -37,6 +37,12 @@
 				<!--BW_String-->
 			</invisibilityBonus>
 		</camouflageNet>
+		<deluxeCamouflageNet>
+			<invisibilityBonus>
+				0.075
+				<!--BW_String-->
+			</invisibilityBonus>
+		</deluxeCamouflageNet>
 		<additionalInvisibilityDevice>
 			<invisibilityBonus>
 				0.03 0.04
@@ -3884,54 +3890,34 @@
 	<mechanics>
 		<improvedRamming>
 			<damageBonusStageSize>5</damageBonusStageSize>
+			<damageBonusBasicFactor>
+				0.4
+				<!--BW_String-->
+			</damageBonusBasicFactor>
+			<damageBonusChangeFactor>
+				0.95
+				<!--BW_String-->
+			</damageBonusChangeFactor>
 			<trackDamageBonusStageSize>5</trackDamageBonusStageSize>
+			<trackDamageBonusBasicFactor>
+				1.4
+				<!--BW_String-->
+			</trackDamageBonusBasicFactor>
+			<trackDamageBonusChangeFactor>
+				0.95
+				<!--BW_String-->
+			</trackDamageBonusChangeFactor>
 			<reductionDamageBonusStageSize>5</reductionDamageBonusStageSize>
+			<reductionDamageBonusBasicFactor>
+				0.4
+				<!--BW_String-->
+			</reductionDamageBonusBasicFactor>
+			<reductionDamageBonusChangeFactor>
+				1.05
+				<!--BW_String-->
+			</reductionDamageBonusChangeFactor>
 			<damageValueToShowAnimation>400</damageValueToShowAnimation>
 			<effectSpeedThreshold>30</effectSpeedThreshold>
-			<modifiers>
-				<add>
-					<name>dynAttrs/improvedRammingDamageBonus/basicFactor</name>
-					<value>
-						0.4
-						<!--BW_String-->
-					</value>
-				</add>
-				<mul>
-					<name>dynAttrs/improvedRammingDamageBonus/changeFactor</name>
-					<value>
-						0.95
-						<!--BW_String-->
-					</value>
-				</mul>
-				<mul>
-					<name>dynAttrs/improvedRammingTrackDamageBonus/basicFactor</name>
-					<value>
-						1.4
-						<!--BW_String-->
-					</value>
-				</mul>
-				<mul>
-					<name>dynAttrs/improvedRammingTrackDamageBonus/changeFactor</name>
-					<value>
-						0.95
-						<!--BW_String-->
-					</value>
-				</mul>
-				<add>
-					<name>dynAttrs/improvedRammingDamageReductionBonus/basicFactor</name>
-					<value>
-						0.4
-						<!--BW_String-->
-					</value>
-				</add>
-				<mul>
-					<name>dynAttrs/improvedRammingDamageReductionBonus/changeFactor</name>
-					<value>
-						1.05
-						<!--BW_String-->
-					</value>
-				</mul>
-			</modifiers>
 		</improvedRamming>
 	</mechanics>
 	<effects>

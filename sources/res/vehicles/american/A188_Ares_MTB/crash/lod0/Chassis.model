@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.617003 -0.000204 -2.071031</min>
+		<max>1.617003 0.761732 0.467649</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<parent>vehicles/american/A188_Ares_MTB/crash/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/american/A188_Ares_MTB/crash/lod0/Chassis</nodefullVisual>
+</root>

@@ -194,6 +194,21 @@ package net.wg.gui.battle.views.widgetsPanel
                _loc4_ = StationaryReloadWidget;
                _loc5_ = BATTLE_VIEW_ALIASES.STATIONARY_RELOAD_WIDGET;
                break;
+            case BATTLE_WIDGETS_CONSTS.TEMPERATURE_GUN_OVERHEAT:
+               _loc3_ = Linkages.TEMPERATURE_GUN_OVERHEAT;
+               _loc4_ = TemperatureGunOverheatWidget;
+               _loc5_ = BATTLE_VIEW_ALIASES.TEMPERATURE_GUN_OVERHEAT_WIDGET;
+               break;
+            case BATTLE_WIDGETS_CONSTS.TEMPERATURE_GUN_HEAT_ZONES:
+               _loc3_ = Linkages.TEMPERATURE_GUN_HEAT_ZONES;
+               _loc4_ = TemperatureGunHeatZonesWidget;
+               _loc5_ = BATTLE_VIEW_ALIASES.TEMPERATURE_GUN_HEAT_ZONES_WIDGET;
+               break;
+            case BATTLE_WIDGETS_CONSTS.STAGED_JET_BOOSTERS:
+               _loc3_ = Linkages.STAGED_JET_BOOSTERS;
+               _loc4_ = StagedJetBoostersWidget;
+               _loc5_ = BATTLE_VIEW_ALIASES.STAGED_JET_BOOSTERS_WIDGET;
+               break;
             default:
                return;
          }

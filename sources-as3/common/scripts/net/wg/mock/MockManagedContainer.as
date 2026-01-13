@@ -41,7 +41,7 @@ package net.wg.mock
       {
       }
       
-      public function allowFocusNextLayer(param1:String) : Boolean
+      public function canFocusNextLayer(param1:String) : Boolean
       {
          return false;
       }

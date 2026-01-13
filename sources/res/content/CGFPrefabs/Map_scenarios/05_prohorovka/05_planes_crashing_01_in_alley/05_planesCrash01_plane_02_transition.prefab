@@ -353,7 +353,7 @@
 				<config>
 					<property>
 						<name>Parent</name>
-						<link>a160c1d2-4f59-365a-b783-d1d92f2a94dc</link>
+						<link>1edf307f-e5fb-4a07-aa99-f50d2bd8e471</link>
 					</property>
 				</config>
 			</component>
@@ -365,6 +365,14 @@
 				<UUID>1edf307f-e5fb-4a07-aa99-f50d2bd8e471</UUID>
 				<flags>35</flags>
 				<config>
+					<property>
+						<name>activeLayer</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>speed</name>
+						<value>1</value>
+					</property>
 					<property>
 						<name>loop</name>
 						<value>0</value>
@@ -1960,14 +1968,14 @@
 																			<property>
 																				<name>left</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					1.95312 15.625 0.854492
 																					<!--BW_String-->
 																				</value>
 																			</property>
 																			<property>
 																				<name>right</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					1.95312 15.625 0.854492
 																					<!--BW_String-->
 																				</value>
 																			</property>
@@ -2005,14 +2013,14 @@
 																			<property>
 																				<name>left</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					4.39453 -31.25 -3.41797
 																					<!--BW_String-->
 																				</value>
 																			</property>
 																			<property>
 																				<name>right</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					4.39453 -31.25 -3.41797
 																					<!--BW_String-->
 																				</value>
 																			</property>
@@ -2050,14 +2058,14 @@
 																			<property>
 																				<name>left</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					0 -46.875 -27.3438
 																					<!--BW_String-->
 																				</value>
 																			</property>
 																			<property>
 																				<name>right</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					0 -46.875 -27.3438
 																					<!--BW_String-->
 																				</value>
 																			</property>
@@ -2095,14 +2103,14 @@
 																			<property>
 																				<name>left</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					22.4609 -15.625 -15.1367
 																					<!--BW_String-->
 																				</value>
 																			</property>
 																			<property>
 																				<name>right</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					22.4609 -15.625 -15.1367
 																					<!--BW_String-->
 																				</value>
 																			</property>
@@ -2140,14 +2148,14 @@
 																			<property>
 																				<name>left</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					-6.83594 -7.8125 2.92969
 																					<!--BW_String-->
 																				</value>
 																			</property>
 																			<property>
 																				<name>right</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					-6.83594 -7.8125 2.92969
 																					<!--BW_String-->
 																				</value>
 																			</property>
@@ -2185,14 +2193,14 @@
 																			<property>
 																				<name>left</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					-52.2461 15.625 59.4482
 																					<!--BW_String-->
 																				</value>
 																			</property>
 																			<property>
 																				<name>right</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					-52.2461 15.625 59.4482
 																					<!--BW_String-->
 																				</value>
 																			</property>
@@ -2230,14 +2238,14 @@
 																			<property>
 																				<name>left</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					1.77002 3.90625 1.89209
 																					<!--BW_String-->
 																				</value>
 																			</property>
 																			<property>
 																				<name>right</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					1.77002 3.90625 1.89209
 																					<!--BW_String-->
 																				</value>
 																			</property>
@@ -2275,14 +2283,14 @@
 																			<property>
 																				<name>left</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					-4.08936 1.95312 0.152588
 																					<!--BW_String-->
 																				</value>
 																			</property>
 																			<property>
 																				<name>right</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					-4.08936 1.95312 0.152588
 																					<!--BW_String-->
 																				</value>
 																			</property>
@@ -2320,14 +2328,14 @@
 																			<property>
 																				<name>left</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					1.17549e-38 1.17549e-38 1.17549e-38
 																					<!--BW_String-->
 																				</value>
 																			</property>
 																			<property>
 																				<name>right</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					1.17549e-38 1.17549e-38 1.17549e-38
 																					<!--BW_String-->
 																				</value>
 																			</property>
@@ -4314,14 +4322,14 @@
 																			<property>
 																				<name>left</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					17.7002 -31.25 -8.78906
 																					<!--BW_String-->
 																				</value>
 																			</property>
 																			<property>
 																				<name>right</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					17.7002 -31.25 -8.78906
 																					<!--BW_String-->
 																				</value>
 																			</property>
@@ -4356,14 +4364,14 @@
 																			<property>
 																				<name>left</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					37.1094 -156.25 -37.1094
 																					<!--BW_String-->
 																				</value>
 																			</property>
 																			<property>
 																				<name>right</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					37.1094 -156.25 -37.1094
 																					<!--BW_String-->
 																				</value>
 																			</property>
@@ -4401,14 +4409,14 @@
 																			<property>
 																				<name>left</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					-4.39453 0 1.15967
 																					<!--BW_String-->
 																				</value>
 																			</property>
 																			<property>
 																				<name>right</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					-4.39453 0 1.15967
 																					<!--BW_String-->
 																				</value>
 																			</property>
@@ -4446,14 +4454,14 @@
 																			<property>
 																				<name>left</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					-17.0898 31.25 16.6016
 																					<!--BW_String-->
 																				</value>
 																			</property>
 																			<property>
 																				<name>right</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					-17.0898 31.25 16.6016
 																					<!--BW_String-->
 																				</value>
 																			</property>
@@ -4491,14 +4499,14 @@
 																			<property>
 																				<name>left</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					-4.27246 -7.8125 1.00708
 																					<!--BW_String-->
 																				</value>
 																			</property>
 																			<property>
 																				<name>right</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					-4.27246 -7.8125 1.00708
 																					<!--BW_String-->
 																				</value>
 																			</property>
@@ -4536,14 +4544,14 @@
 																			<property>
 																				<name>left</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					1.17549e-38 1.17549e-38 1.17549e-38
 																					<!--BW_String-->
 																				</value>
 																			</property>
 																			<property>
 																				<name>right</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					1.17549e-38 1.17549e-38 1.17549e-38
 																					<!--BW_String-->
 																				</value>
 																			</property>
@@ -6254,14 +6262,14 @@
 																			<property>
 																				<name>left</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					-8.78906 0 33.2031
 																					<!--BW_String-->
 																				</value>
 																			</property>
 																			<property>
 																				<name>right</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					-8.78906 0 33.2031
 																					<!--BW_String-->
 																				</value>
 																			</property>
@@ -6296,14 +6304,14 @@
 																			<property>
 																				<name>left</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					-3.35693 15.625 0
 																					<!--BW_String-->
 																				</value>
 																			</property>
 																			<property>
 																				<name>right</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					-3.35693 15.625 0
 																					<!--BW_String-->
 																				</value>
 																			</property>
@@ -6338,14 +6346,14 @@
 																			<property>
 																				<name>left</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					37.3535 -46.875 -28.5645
 																					<!--BW_String-->
 																				</value>
 																			</property>
 																			<property>
 																				<name>right</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					37.3535 -46.875 -28.5645
 																					<!--BW_String-->
 																				</value>
 																			</property>
@@ -6380,14 +6388,14 @@
 																			<property>
 																				<name>left</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					-152.344 -187.5 -76.6602
 																					<!--BW_String-->
 																				</value>
 																			</property>
 																			<property>
 																				<name>right</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					-152.344 -187.5 -76.6602
 																					<!--BW_String-->
 																				</value>
 																			</property>
@@ -6425,14 +6433,14 @@
 																			<property>
 																				<name>left</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					31.7383 -31.25 60.7529
 																					<!--BW_String-->
 																				</value>
 																			</property>
 																			<property>
 																				<name>right</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					31.7383 -31.25 60.7529
 																					<!--BW_String-->
 																				</value>
 																			</property>
@@ -6470,14 +6478,14 @@
 																			<property>
 																				<name>left</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					20.9961 7.8125 -4.88281
 																					<!--BW_String-->
 																				</value>
 																			</property>
 																			<property>
 																				<name>right</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					20.9961 7.8125 -4.88281
 																					<!--BW_String-->
 																				</value>
 																			</property>
@@ -6512,14 +6520,14 @@
 																			<property>
 																				<name>left</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					-39.5508 46.875 -56.6406
 																					<!--BW_String-->
 																				</value>
 																			</property>
 																			<property>
 																				<name>right</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					-39.5508 46.875 -56.6406
 																					<!--BW_String-->
 																				</value>
 																			</property>
@@ -6554,14 +6562,14 @@
 																			<property>
 																				<name>left</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					-78.3691 46.875 14.6484
 																					<!--BW_String-->
 																				</value>
 																			</property>
 																			<property>
 																				<name>right</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					-78.3691 46.875 14.6484
 																					<!--BW_String-->
 																				</value>
 																			</property>
@@ -6599,14 +6607,14 @@
 																			<property>
 																				<name>left</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					11.4746 3.90625 5.24902
 																					<!--BW_String-->
 																				</value>
 																			</property>
 																			<property>
 																				<name>right</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					11.4746 3.90625 5.24902
 																					<!--BW_String-->
 																				</value>
 																			</property>
@@ -6644,14 +6652,14 @@
 																			<property>
 																				<name>left</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					-2.01416 0 6.10352
 																					<!--BW_String-->
 																				</value>
 																			</property>
 																			<property>
 																				<name>right</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					-2.01416 0 6.10352
 																					<!--BW_String-->
 																				</value>
 																			</property>
@@ -6689,14 +6697,14 @@
 																			<property>
 																				<name>left</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					-18.0664 0 1.09863
 																					<!--BW_String-->
 																				</value>
 																			</property>
 																			<property>
 																				<name>right</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					-18.0664 0 1.09863
 																					<!--BW_String-->
 																				</value>
 																			</property>
@@ -6734,14 +6742,14 @@
 																			<property>
 																				<name>left</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					1.95312 0 -0.854492
 																					<!--BW_String-->
 																				</value>
 																			</property>
 																			<property>
 																				<name>right</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					1.95312 0 -0.854492
 																					<!--BW_String-->
 																				</value>
 																			</property>
@@ -6779,14 +6787,14 @@
 																			<property>
 																				<name>left</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					1.17549e-38 1.17549e-38 1.17549e-38
 																					<!--BW_String-->
 																				</value>
 																			</property>
 																			<property>
 																				<name>right</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					1.17549e-38 1.17549e-38 1.17549e-38
 																					<!--BW_String-->
 																				</value>
 																			</property>
@@ -8617,14 +8625,14 @@
 																			<property>
 																				<name>left</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					-34.1797 0 45.8984
 																					<!--BW_String-->
 																				</value>
 																			</property>
 																			<property>
 																				<name>right</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					-34.1797 0 45.8984
 																					<!--BW_String-->
 																				</value>
 																			</property>
@@ -8659,14 +8667,14 @@
 																			<property>
 																				<name>left</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					-140.625 0 160.156
 																					<!--BW_String-->
 																				</value>
 																			</property>
 																			<property>
 																				<name>right</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					-140.625 0 160.156
 																					<!--BW_String-->
 																				</value>
 																			</property>
@@ -8704,14 +8712,14 @@
 																			<property>
 																				<name>left</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					-56.6406 -62.5 -35.1562
 																					<!--BW_String-->
 																				</value>
 																			</property>
 																			<property>
 																				<name>right</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					-56.6406 -62.5 -35.1562
 																					<!--BW_String-->
 																				</value>
 																			</property>
@@ -8746,14 +8754,14 @@
 																			<property>
 																				<name>left</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					15.625 -125 -57.6172
 																					<!--BW_String-->
 																				</value>
 																			</property>
 																			<property>
 																				<name>right</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					15.625 -125 -57.6172
 																					<!--BW_String-->
 																				</value>
 																			</property>
@@ -8791,14 +8799,14 @@
 																			<property>
 																				<name>left</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					-259.766 0 -15.625
 																					<!--BW_String-->
 																				</value>
 																			</property>
 																			<property>
 																				<name>right</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					-259.766 0 -15.625
 																					<!--BW_String-->
 																				</value>
 																			</property>
@@ -8833,14 +8841,14 @@
 																			<property>
 																				<name>left</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					56.6406 -15.625 -32.2266
 																					<!--BW_String-->
 																				</value>
 																			</property>
 																			<property>
 																				<name>right</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					56.6406 -15.625 -32.2266
 																					<!--BW_String-->
 																				</value>
 																			</property>
@@ -8875,14 +8883,14 @@
 																			<property>
 																				<name>left</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					207.031 -78.125 -95.7031
 																					<!--BW_String-->
 																				</value>
 																			</property>
 																			<property>
 																				<name>right</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					207.031 -78.125 -95.7031
 																					<!--BW_String-->
 																				</value>
 																			</property>
@@ -8920,14 +8928,14 @@
 																			<property>
 																				<name>left</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					-45.8984 7.8125 -21.4844
 																					<!--BW_String-->
 																				</value>
 																			</property>
 																			<property>
 																				<name>right</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					-45.8984 7.8125 -21.4844
 																					<!--BW_String-->
 																				</value>
 																			</property>
@@ -8962,14 +8970,14 @@
 																			<property>
 																				<name>left</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					-99.6094 62.5 103.516
 																					<!--BW_String-->
 																				</value>
 																			</property>
 																			<property>
 																				<name>right</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					-99.6094 62.5 103.516
 																					<!--BW_String-->
 																				</value>
 																			</property>
@@ -9004,14 +9012,14 @@
 																			<property>
 																				<name>left</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					13.7939 15.625 19.2261
 																					<!--BW_String-->
 																				</value>
 																			</property>
 																			<property>
 																				<name>right</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					13.7939 15.625 19.2261
 																					<!--BW_String-->
 																				</value>
 																			</property>
@@ -9049,14 +9057,14 @@
 																			<property>
 																				<name>left</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					-11.5967 11.7188 2.56348
 																					<!--BW_String-->
 																				</value>
 																			</property>
 																			<property>
 																				<name>right</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					-11.5967 11.7188 2.56348
 																					<!--BW_String-->
 																				</value>
 																			</property>
@@ -9094,14 +9102,14 @@
 																			<property>
 																				<name>left</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					1.17549e-38 1.17549e-38 1.17549e-38
 																					<!--BW_String-->
 																				</value>
 																			</property>
 																			<property>
 																				<name>right</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					1.17549e-38 1.17549e-38 1.17549e-38
 																					<!--BW_String-->
 																				</value>
 																			</property>
@@ -11580,14 +11588,14 @@
 																			<property>
 																				<name>left</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					-13.6719 31.25 68.3594
 																					<!--BW_String-->
 																				</value>
 																			</property>
 																			<property>
 																				<name>right</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					-13.6719 31.25 68.3594
 																					<!--BW_String-->
 																				</value>
 																			</property>
@@ -11622,14 +11630,14 @@
 																			<property>
 																				<name>left</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					-109.375 -31.25 48.8281
 																					<!--BW_String-->
 																				</value>
 																			</property>
 																			<property>
 																				<name>right</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					-109.375 -31.25 48.8281
 																					<!--BW_String-->
 																				</value>
 																			</property>
@@ -11664,14 +11672,14 @@
 																			<property>
 																				<name>left</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					-95.7031 -93.75 -63.4766
 																					<!--BW_String-->
 																				</value>
 																			</property>
 																			<property>
 																				<name>right</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					-95.7031 -93.75 -63.4766
 																					<!--BW_String-->
 																				</value>
 																			</property>
@@ -11706,14 +11714,14 @@
 																			<property>
 																				<name>left</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					106.873 -31.25 -44.4336
 																					<!--BW_String-->
 																				</value>
 																			</property>
 																			<property>
 																				<name>right</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					106.873 -31.25 -44.4336
 																					<!--BW_String-->
 																				</value>
 																			</property>
@@ -11748,14 +11756,14 @@
 																			<property>
 																				<name>left</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					150.391 -62.5 -123.047
 																					<!--BW_String-->
 																				</value>
 																			</property>
 																			<property>
 																				<name>right</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					150.391 -62.5 -123.047
 																					<!--BW_String-->
 																				</value>
 																			</property>
@@ -11793,14 +11801,14 @@
 																			<property>
 																				<name>left</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					-210.938 -31.25 3.90625
 																					<!--BW_String-->
 																				</value>
 																			</property>
 																			<property>
 																				<name>right</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					-210.938 -31.25 3.90625
 																					<!--BW_String-->
 																				</value>
 																			</property>
@@ -11835,14 +11843,14 @@
 																			<property>
 																				<name>left</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					113.281 171.875 150.146
 																					<!--BW_String-->
 																				</value>
 																			</property>
 																			<property>
 																				<name>right</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					113.281 171.875 150.146
 																					<!--BW_String-->
 																				</value>
 																			</property>
@@ -11877,14 +11885,14 @@
 																			<property>
 																				<name>left</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					625 140.625 7.21854
 																					<!--BW_String-->
 																				</value>
 																			</property>
 																			<property>
 																				<name>right</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					625 140.625 7.21854
 																					<!--BW_String-->
 																				</value>
 																			</property>
@@ -11919,14 +11927,14 @@
 																			<property>
 																				<name>left</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					-125 93.75 3.37267
 																					<!--BW_String-->
 																				</value>
 																			</property>
 																			<property>
 																				<name>right</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					-125 93.75 3.37267
 																					<!--BW_String-->
 																				</value>
 																			</property>
@@ -11964,14 +11972,14 @@
 																			<property>
 																				<name>left</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					312.5 15.625 -1.42579
 																					<!--BW_String-->
 																				</value>
 																			</property>
 																			<property>
 																				<name>right</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					312.5 15.625 -1.42579
 																					<!--BW_String-->
 																				</value>
 																			</property>
@@ -12009,14 +12017,14 @@
 																			<property>
 																				<name>left</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					781.25 7.8125 -2.13623
 																					<!--BW_String-->
 																				</value>
 																			</property>
 																			<property>
 																				<name>right</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					781.25 7.8125 -2.13623
 																					<!--BW_String-->
 																				</value>
 																			</property>
@@ -12054,14 +12062,14 @@
 																			<property>
 																				<name>left</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					62.5 15.625 4.10461
 																					<!--BW_String-->
 																				</value>
 																			</property>
 																			<property>
 																				<name>right</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					62.5 15.625 4.10461
 																					<!--BW_String-->
 																				</value>
 																			</property>
@@ -12099,14 +12107,14 @@
 																			<property>
 																				<name>left</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					-125 7.8125 -0.686646
 																					<!--BW_String-->
 																				</value>
 																			</property>
 																			<property>
 																				<name>right</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					-125 7.8125 -0.686646
 																					<!--BW_String-->
 																				</value>
 																			</property>
@@ -12144,14 +12152,14 @@
 																			<property>
 																				<name>left</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					1.17549e-38 1.17549e-38 1.17549e-38
 																					<!--BW_String-->
 																				</value>
 																			</property>
 																			<property>
 																				<name>right</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					1.17549e-38 1.17549e-38 1.17549e-38
 																					<!--BW_String-->
 																				</value>
 																			</property>
@@ -13415,14 +13423,14 @@
 																			<property>
 																				<name>left</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					0.350952 18.0664 0.274658
 																					<!--BW_String-->
 																				</value>
 																			</property>
 																			<property>
 																				<name>right</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					0.350952 18.0664 0.274658
 																					<!--BW_String-->
 																				</value>
 																			</property>
@@ -13460,14 +13468,14 @@
 																			<property>
 																				<name>left</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					6.5918 -1.46484 0.976562
 																					<!--BW_String-->
 																				</value>
 																			</property>
 																			<property>
 																				<name>right</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					6.5918 -1.46484 0.976562
 																					<!--BW_String-->
 																				</value>
 																			</property>
@@ -13502,14 +13510,14 @@
 																			<property>
 																				<name>left</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					-0.976562 -6.6452 0.133038
 																					<!--BW_String-->
 																				</value>
 																			</property>
 																			<property>
 																				<name>right</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					-0.976562 -6.6452 0.133038
 																					<!--BW_String-->
 																				</value>
 																			</property>
@@ -13544,14 +13552,14 @@
 																			<property>
 																				<name>left</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					1.17549e-38 1.17549e-38 1.17549e-38
 																					<!--BW_String-->
 																				</value>
 																			</property>
 																			<property>
 																				<name>right</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					1.17549e-38 1.17549e-38 1.17549e-38
 																					<!--BW_String-->
 																				</value>
 																			</property>
@@ -16804,6 +16812,10 @@
 							</item>
 						</collection>
 					</property>
+					<property>
+						<name>layers</name>
+						<collection/>
+					</property>
 				</config>
 			</component>
 		</ComponentPool>
@@ -17339,18 +17351,21 @@
 					<property>
 						<name>Position</name>
 						<value>
-							22.6983 2.53312 -15.4042
+							21.474 -0.8358 -15.8885
 							<!--BW_String-->
 						</value>
 					</property>
 					<property>
 						<name>Scale</name>
-						<value>1 1 1</value>
+						<value>
+							1.1 1.1 1.1
+							<!--BW_String-->
+						</value>
 					</property>
 					<property>
 						<name>Rotation</name>
 						<value>
-							0.0920308 0.0803763 0.0524435
+							-0.0343123 -2.65182 0.0252895
 							<!--BW_String-->
 						</value>
 					</property>
@@ -17738,15 +17753,15 @@
 										<object>
 											<property>
 												<name>Offset</name>
-												<value>(( 30.6741,4.76837e-07,-1.29342e-05,       0), (7.7486e-07, 8.86412,-2.38419e-07,       0), (-1.32769e-05,1.54972e-06, 28.5093,       0), (-10.5521,-6.10352e-05,-9.15527e-05,       1))</value>
+												<value>(( 30.6741,4.76837e-07,1.42851e-05,       0), (-1.37795e-07, 8.86412,-4.81839e-07,       0), (-1.32769e-05,1.54972e-06, 28.5093,       0), (       0,-6.10352e-05,-9.15527e-05,       1))</value>
 											</property>
 											<property>
 												<name>Size</name>
-												<value>(( 30.6741,4.76837e-07,-1.29342e-05,       0), (7.7486e-07, 8.86412,-2.38419e-07,       0), (-1.32769e-05,1.54972e-06, 28.5093,       0), (-10.5521,-6.10352e-05,-9.15527e-05,       1))</value>
+												<value>(( 30.6741,4.76837e-07,1.42851e-05,       0), (-1.37795e-07, 8.86412,-4.81839e-07,       0), (-1.32769e-05,1.54972e-06, 28.5093,       0), (       0,-6.10352e-05,-9.15527e-05,       1))</value>
 											</property>
 											<property>
 												<name>Rotation</name>
-												<value>(( 30.6741,4.76837e-07,-1.29342e-05,       0), (7.7486e-07, 8.86412,-2.38419e-07,       0), (-1.32769e-05,1.54972e-06, 28.5093,       0), (-10.5521,-6.10352e-05,-9.15527e-05,       1))</value>
+												<value>(( 30.6741,4.76837e-07,1.42851e-05,       0), (-1.37795e-07, 8.86412,-4.81839e-07,       0), (-1.32769e-05,1.54972e-06, 28.5093,       0), (       0,-6.10352e-05,-9.15527e-05,       1))</value>
 											</property>
 										</object>
 									</property>
@@ -18292,6 +18307,10 @@
 						<name>Cast Shadows</name>
 						<value>1</value>
 					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
+					</property>
 				</config>
 			</component>
 			<component>
@@ -18306,6 +18325,10 @@
 					<property>
 						<name>Cast Shadows</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
 					</property>
 				</config>
 			</component>
@@ -18322,6 +18345,10 @@
 						<name>Cast Shadows</name>
 						<value>1</value>
 					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
+					</property>
 				</config>
 			</component>
 			<component>
@@ -18336,6 +18363,10 @@
 					<property>
 						<name>Cast Shadows</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
 					</property>
 				</config>
 			</component>
@@ -18352,6 +18383,10 @@
 						<name>Cast Shadows</name>
 						<value>1</value>
 					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
+					</property>
 				</config>
 			</component>
 			<component>
@@ -18365,6 +18400,10 @@
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
 						<value>0</value>
 					</property>
 				</config>
@@ -18382,6 +18421,10 @@
 						<name>Cast Shadows</name>
 						<value>0</value>
 					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
+					</property>
 				</config>
 			</component>
 			<component>
@@ -18397,6 +18440,10 @@
 						<name>Cast Shadows</name>
 						<value>0</value>
 					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
+					</property>
 				</config>
 			</component>
 			<component>
@@ -18410,6 +18457,10 @@
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
 						<value>0</value>
 					</property>
 				</config>
@@ -18575,6 +18626,36 @@
 					<property>
 						<name>object</name>
 						<link>91a7dc7f-39bc-48e4-81aa-4ce81c75279a</link>
+					</property>
+					<property>
+						<name>Translation</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Yaw Rotation</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Pitch Rotation</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Roll Rotation</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>1853336c-f439-4c3d-9cd1-d641b4780709</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>object</name>
+						<link>a160c1d2-4f59-365a-b783-d1d92f2a94dc</link>
 					</property>
 					<property>
 						<name>Translation</name>

@@ -138,6 +138,13 @@ msgstr ""
 msgid "research/button/label"
 msgstr "Research"
 
+msgid "research/emergencyModeEnabled/body"
+msgstr ""
+"WG Wallet is temporarily unavailable. We apologize for the inconvenience."
+
+msgid "research/emergencyModeEnabled/header"
+msgstr "Unavailable"
+
 msgid "research/inBattle"
 msgstr "Node unavailable. The vehicle is in battle."
 
@@ -283,6 +290,9 @@ msgstr ""
 msgid "tooltips/description/ammoRackPenalty"
 msgstr "Reduces the penalty when the vehicle's ammo rack is damaged."
 
+msgid "tooltips/description/basicShellDamage"
+msgstr "Increases the damage caused by Standard shells."
+
 msgid "tooltips/description/ch67_mechanic_0"
 msgstr ""
 "Increases traverse speed while the boosters are active by "
@@ -301,6 +311,26 @@ msgstr ""
 msgid "tooltips/description/ch67_mechanic_3"
 msgstr ""
 "Extends maximum booster duration by {colorTagOpen}{value} s{colorTagClose}."
+
+msgid "tooltips/description/ch70_mechanic_0"
+msgstr ""
+"Increases the engine power boost granted by the thrusters by "
+"{colorTagOpen}{value}%{colorTagClose}."
+
+msgid "tooltips/description/ch70_mechanic_1"
+msgstr ""
+"Reduces the cooldown time before thrusters can be used again by "
+"{colorTagOpen}{value}s{colorTagClose}."
+
+msgid "tooltips/description/ch70_mechanic_2"
+msgstr ""
+"Increases the engine power boost granted by the thrusters by "
+"{colorTagOpen}{value}%{colorTagClose}."
+
+msgid "tooltips/description/ch70_mechanic_3"
+msgstr ""
+"Increases the maximum number of times the thrusters can be used in a single "
+"battle by {colorTagOpen}{value}{colorTagClose}."
 
 msgid "tooltips/description/crewProtection"
 msgstr "Reduces the chance of crew member injury when the vehicle is damaged."
@@ -496,12 +526,43 @@ msgstr "Reduces the reload time between shells in your gun's clip."
 msgid "tooltips/description/invisibilityWhenShooting"
 msgstr "Reduces the chance of being spotted by enemy vehicles while firing."
 
+msgid "tooltips/description/j52_mechanic_0"
+msgstr ""
+"Reduces gun cooling delay time by {colorTagOpen}{value} s{colorTagClose}."
+
+msgid "tooltips/description/j52_mechanic_1"
+msgstr ""
+"Reduces the amount of gun heat generated per shot by "
+"{colorTagOpen}{value}%{colorTagClose}."
+
+msgid "tooltips/description/j52_mechanic_2"
+msgstr ""
+"Increases heated gun cooling speed by {colorTagOpen}{value}%{colorTagClose}."
+
 msgid "tooltips/description/nonHEShellDamage"
 msgstr "Increases the damage caused by non-HE shells."
 
 msgid "tooltips/description/opt_dev_boosters_switch"
 msgstr ""
 "Allows you to configure an alternative loadout of equipment and directives."
+
+msgid "tooltips/description/overheat_coolingDelay"
+msgstr "Reduces gun cooling delay by {colorTagOpen}{value} s{colorTagClose}."
+
+msgid "tooltips/description/overheat_coolingPerSec"
+msgstr ""
+"Increases cooling speed of a heated and overheated gun by "
+"{colorTagOpen}{value}%{colorTagClose}."
+
+msgid "tooltips/description/overheat_heatingPerShot"
+msgstr ""
+"Reduces the amount of gun heat generated per shot by "
+"{colorTagOpen}{value}%{colorTagClose}."
+
+msgid "tooltips/description/overheat_overheatedCoolingPerSec"
+msgstr ""
+"Increases cooling speed of an overheated gun by "
+"{colorTagOpen}{value}%{colorTagClose}."
 
 msgid "tooltips/description/pl37_mechanic_0"
 msgstr ""
@@ -610,6 +671,9 @@ msgstr ""
 "Allows you to configure an alternative loadout of ammunition and "
 "consumables."
 
+msgid "tooltips/description/specialShellDamage"
+msgstr "Increases the damage caused by Special shells."
+
 msgid "tooltips/description/specialShellPenetration"
 msgstr "Increases the penetration power of special shells."
 
@@ -621,6 +685,9 @@ msgstr "Reduces the concealment of enemy vehicles hiding behind foliage."
 
 msgid "tooltips/description/spottingBonusMovement"
 msgstr "Reduces the concealment of moving enemy vehicles."
+
+msgid "tooltips/description/standardShellDamage"
+msgstr "Increases the damage caused by Standard shells."
 
 msgid "tooltips/description/standardShellPenetration"
 msgstr "Increases the penetration power of standard shells."
@@ -745,6 +812,9 @@ msgstr "Ammo Rack HP"
 msgid "tooltips/title/ammoRackPenalty"
 msgstr "Ammo Rack Penalty"
 
+msgid "tooltips/title/basicShellDamage"
+msgstr "Standard Shell Damage"
+
 msgid "tooltips/title/ch67_mechanic_0"
 msgstr "Thrust Vectoring"
 
@@ -756,6 +826,18 @@ msgstr "Evaporative Cooling"
 
 msgid "tooltips/title/ch67_mechanic_3"
 msgstr "Transpiration-Cooled Nozzles"
+
+msgid "tooltips/title/ch70_mechanic_0"
+msgstr "High-Energy Propellant"
+
+msgid "tooltips/title/ch70_mechanic_1"
+msgstr "Semi-Automatic Thruster Extractor"
+
+msgid "tooltips/title/ch70_mechanic_2"
+msgstr "Core Shape Optimization"
+
+msgid "tooltips/title/ch70_mechanic_3"
+msgstr "Expanded Booster Storage"
 
 msgid "tooltips/title/chassisHP"
 msgstr "Suspension HP"
@@ -919,11 +1001,32 @@ msgstr "Inner Clip Reload Time"
 msgid "tooltips/title/invisibilityWhenShooting"
 msgstr "Concealment After Firing"
 
+msgid "tooltips/title/j52_mechanic_0"
+msgstr "Low-Temperature Heat Transfer Fluid"
+
+msgid "tooltips/title/j52_mechanic_1"
+msgstr "High-Conductivity Thermal Housing"
+
+msgid "tooltips/title/j52_mechanic_2"
+msgstr "Heat Pipe Optimization"
+
 msgid "tooltips/title/nonHEShellDamage"
 msgstr "Non-HE Shell Damage"
 
 msgid "tooltips/title/opt_dev_boosters_switch"
 msgstr "Equipment and Directives Loadout"
+
+msgid "tooltips/title/overheat_coolingDelay"
+msgstr "Chromium Liner Coating"
+
+msgid "tooltips/title/overheat_coolingPerSec"
+msgstr "High-Conductivity Gun Barrel"
+
+msgid "tooltips/title/overheat_heatingPerShot"
+msgstr "Lower Flame Temperature Propellant"
+
+msgid "tooltips/title/overheat_overheatedCoolingPerSec"
+msgstr "Forced Ventilation System"
 
 msgid "tooltips/title/pl37_mechanic_0"
 msgstr "Lightweight Turbine Rotor"
@@ -1000,6 +1103,9 @@ msgstr "Shell Module Damage"
 msgid "tooltips/title/shells_consumables_switch"
 msgstr "Ammo and Consumables Loadout"
 
+msgid "tooltips/title/specialShellDamage"
+msgstr "Special Shell Damage"
+
 msgid "tooltips/title/specialShellPenetration"
 msgstr "Special Shell Penetration"
 
@@ -1011,6 +1117,9 @@ msgstr "Spotting Bonus: Foliage"
 
 msgid "tooltips/title/spottingBonusMovement"
 msgstr "Spotting Bonus: Movement"
+
+msgid "tooltips/title/standardShellDamage"
+msgstr "Standard Shell Damage"
 
 msgid "tooltips/title/standardShellPenetration"
 msgstr "Standard Shell Penetration"

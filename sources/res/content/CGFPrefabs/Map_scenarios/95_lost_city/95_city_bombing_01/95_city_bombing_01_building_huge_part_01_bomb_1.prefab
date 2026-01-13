@@ -15,7 +15,7 @@
 		<GameObject>
 			<name>miissile_trail_MiG_01_rocket01_left</name>
 			<UUID>556d8bdb-6a64-4c93-8e61-e2dfffe26779</UUID>
-			<flags>8</flags>
+			<flags>0</flags>
 		</GameObject>
 		<GameObject>
 			<name>missile_trail_rocket_left_sfx</name>
@@ -1461,11 +1461,40 @@
 								<object>
 									<property>
 										<name>object</name>
+										<link>363138e8-c766-4965-a706-554bbbffd06c</link>
+									</property>
+									<property>
+										<name>start</name>
+										<value>
+											8.6
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>end</name>
+										<value>
+											11.299
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>parameters</name>
+										<collection/>
+									</property>
+								</object>
+							</item>
+							<item>
+								<object>
+									<property>
+										<name>object</name>
 										<link>556d8bdb-6a64-4c93-8e61-e2dfffe26779</link>
 									</property>
 									<property>
 										<name>start</name>
-										<value>0</value>
+										<value>
+											8.66667
+											<!--BW_String-->
+										</value>
 									</property>
 									<property>
 										<name>end</name>
@@ -1481,11 +1510,11 @@
 												<object>
 													<property>
 														<name>component</name>
-														<value>Transform</value>
+														<value>Particle</value>
 													</property>
 													<property>
 														<name>property</name>
-														<value>local_x_position</value>
+														<value>particleSize</value>
 													</property>
 													<property>
 														<name>keys</name>
@@ -1494,15 +1523,15 @@
 																<object>
 																	<property>
 																		<name>valueType</name>
-																		<value>real</value>
+																		<value>Vector2</value>
 																	</property>
 																	<property>
 																		<name>value</name>
-																		<value>0</value>
+																		<value>2 2</value>
 																	</property>
 																	<property>
 																		<name>type</name>
-																		<value>1</value>
+																		<value>2</value>
 																	</property>
 																	<property>
 																		<name>time</name>
@@ -1541,7 +1570,7 @@
 													</property>
 													<property>
 														<name>property</name>
-														<value>particleSize</value>
+														<value>emissionRate</value>
 													</property>
 													<property>
 														<name>keys</name>
@@ -1550,15 +1579,113 @@
 																<object>
 																	<property>
 																		<name>valueType</name>
-																		<value>Vector2</value>
+																		<value>real</value>
 																	</property>
 																	<property>
 																		<name>value</name>
-																		<value>2 2</value>
+																		<value>1</value>
 																	</property>
 																	<property>
 																		<name>type</name>
-																		<value>2</value>
+																		<value>0</value>
+																	</property>
+																	<property>
+																		<name>time</name>
+																		<value>0</value>
+																	</property>
+																	<property>
+																		<name>tangents</name>
+																		<object>
+																			<property>
+																				<name>left</name>
+																				<value>
+																					1.5708 1.5708 1.5708
+																					<!--BW_String-->
+																				</value>
+																			</property>
+																			<property>
+																				<name>right</name>
+																				<value>
+																					1.5708 1.5708 1.5708
+																					<!--BW_String-->
+																				</value>
+																			</property>
+																		</object>
+																	</property>
+																</object>
+															</item>
+															<item>
+																<object>
+																	<property>
+																		<name>valueType</name>
+																		<value>real</value>
+																	</property>
+																	<property>
+																		<name>value</name>
+																		<value>0</value>
+																	</property>
+																	<property>
+																		<name>type</name>
+																		<value>0</value>
+																	</property>
+																	<property>
+																		<name>time</name>
+																		<value>
+																			2.63333
+																			<!--BW_String-->
+																		</value>
+																	</property>
+																	<property>
+																		<name>tangents</name>
+																		<object>
+																			<property>
+																				<name>left</name>
+																				<value>
+																					1.5708 1.5708 1.5708
+																					<!--BW_String-->
+																				</value>
+																			</property>
+																			<property>
+																				<name>right</name>
+																				<value>
+																					1.5708 1.5708 1.5708
+																					<!--BW_String-->
+																				</value>
+																			</property>
+																		</object>
+																	</property>
+																</object>
+															</item>
+														</collection>
+													</property>
+												</object>
+											</item>
+											<item>
+												<object>
+													<property>
+														<name>component</name>
+														<value>Transform</value>
+													</property>
+													<property>
+														<name>property</name>
+														<value>local_x_position</value>
+													</property>
+													<property>
+														<name>keys</name>
+														<collection>
+															<item>
+																<object>
+																	<property>
+																		<name>valueType</name>
+																		<value>real</value>
+																	</property>
+																	<property>
+																		<name>value</name>
+																		<value>0</value>
+																	</property>
+																	<property>
+																		<name>type</name>
+																		<value>1</value>
 																	</property>
 																	<property>
 																		<name>time</name>
@@ -1757,173 +1884,7 @@
 													</property>
 												</object>
 											</item>
-											<item>
-												<object>
-													<property>
-														<name>component</name>
-														<value>Particle</value>
-													</property>
-													<property>
-														<name>property</name>
-														<value>emissionRate</value>
-													</property>
-													<property>
-														<name>keys</name>
-														<collection>
-															<item>
-																<object>
-																	<property>
-																		<name>valueType</name>
-																		<value>real</value>
-																	</property>
-																	<property>
-																		<name>value</name>
-																		<value>0</value>
-																	</property>
-																	<property>
-																		<name>type</name>
-																		<value>0</value>
-																	</property>
-																	<property>
-																		<name>time</name>
-																		<value>0</value>
-																	</property>
-																	<property>
-																		<name>tangents</name>
-																		<object>
-																			<property>
-																				<name>left</name>
-																				<value>
-																					1.5708 1.5708 1.5708
-																					<!--BW_String-->
-																				</value>
-																			</property>
-																			<property>
-																				<name>right</name>
-																				<value>
-																					1.5708 1.5708 1.5708
-																					<!--BW_String-->
-																				</value>
-																			</property>
-																		</object>
-																	</property>
-																</object>
-															</item>
-															<item>
-																<object>
-																	<property>
-																		<name>valueType</name>
-																		<value>real</value>
-																	</property>
-																	<property>
-																		<name>value</name>
-																		<value>1</value>
-																	</property>
-																	<property>
-																		<name>type</name>
-																		<value>0</value>
-																	</property>
-																	<property>
-																		<name>time</name>
-																		<value>
-																			8.66667
-																			<!--BW_String-->
-																		</value>
-																	</property>
-																	<property>
-																		<name>tangents</name>
-																		<object>
-																			<property>
-																				<name>left</name>
-																				<value>
-																					1.5708 1.5708 1.5708
-																					<!--BW_String-->
-																				</value>
-																			</property>
-																			<property>
-																				<name>right</name>
-																				<value>
-																					1.5708 1.5708 1.5708
-																					<!--BW_String-->
-																				</value>
-																			</property>
-																		</object>
-																	</property>
-																</object>
-															</item>
-															<item>
-																<object>
-																	<property>
-																		<name>valueType</name>
-																		<value>real</value>
-																	</property>
-																	<property>
-																		<name>value</name>
-																		<value>0</value>
-																	</property>
-																	<property>
-																		<name>type</name>
-																		<value>0</value>
-																	</property>
-																	<property>
-																		<name>time</name>
-																		<value>
-																			11.3
-																			<!--BW_String-->
-																		</value>
-																	</property>
-																	<property>
-																		<name>tangents</name>
-																		<object>
-																			<property>
-																				<name>left</name>
-																				<value>
-																					1.17549e-38 1.5708 1.5708
-																					<!--BW_String-->
-																				</value>
-																			</property>
-																			<property>
-																				<name>right</name>
-																				<value>
-																					1.17549e-38 1.5708 1.5708
-																					<!--BW_String-->
-																				</value>
-																			</property>
-																		</object>
-																	</property>
-																</object>
-															</item>
-														</collection>
-													</property>
-												</object>
-											</item>
 										</collection>
-									</property>
-								</object>
-							</item>
-							<item>
-								<object>
-									<property>
-										<name>object</name>
-										<link>363138e8-c766-4965-a706-554bbbffd06c</link>
-									</property>
-									<property>
-										<name>start</name>
-										<value>
-											8.6
-											<!--BW_String-->
-										</value>
-									</property>
-									<property>
-										<name>end</name>
-										<value>
-											11.299
-											<!--BW_String-->
-										</value>
-									</property>
-									<property>
-										<name>parameters</name>
-										<collection/>
 									</property>
 								</object>
 							</item>
@@ -2027,6 +1988,10 @@
 					<property>
 						<name>Cast Shadows</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
 					</property>
 					<property>
 						<name>decorType</name>

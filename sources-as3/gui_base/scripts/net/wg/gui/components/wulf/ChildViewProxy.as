@@ -4,7 +4,6 @@ package net.wg.gui.components.wulf
    import flash.display.InteractiveObject;
    import flash.display.Sprite;
    import flash.events.Event;
-   import flash.events.FocusEvent;
    import flash.geom.Rectangle;
    import net.wg.data.constants.Errors;
    import net.wg.gui.components.containers.UssWrapper;
@@ -135,7 +134,7 @@ package net.wg.gui.components.wulf
             tryMoveFocus(InteractiveObject(this._wrapper),this,true);
             if(this._wrapper.focused)
             {
-               this._wrapper.dispatchEvent(new FocusEvent(FocusEvent.FOCUS_OUT));
+               this._wrapper.focused = false;
             }
          }
          removeChild(this._wrapper as DisplayObject);
@@ -153,6 +152,16 @@ package net.wg.gui.components.wulf
          this.updateWrapperSize();
       }
       
+      public function setPaddings(param1:Rectangle) : void
+      {
+         if(this._paddings == param1 || this._paddings != null && this._paddings.equals(param1))
+         {
+            return;
+         }
+         this._paddings = param1;
+         this.updateWrapperSize();
+      }
+      
       public function setSize(param1:Number, param2:Number) : void
       {
          if(this._containerWidth == param1 && this._containerHeight == param2)
@@ -161,16 +170,6 @@ package net.wg.gui.components.wulf
          }
          this._containerWidth = param1;
          this._containerHeight = param2;
-         this.updateWrapperSize();
-      }
-      
-      public function setPaddings(param1:Rectangle) : void
-      {
-         if(this._paddings == param1)
-         {
-            return;
-         }
-         this._paddings = param1;
          this.updateWrapperSize();
       }
       

@@ -37,7 +37,7 @@
 					</property>
 					<property>
 						diffuseUVSpeedAlphaOffset
-						<Vector4>0.000000 0.000000 0.000000 -3.000000</Vector4>
+						<Vector4>0.000000 0.000000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						doubleSided
@@ -60,12 +60,12 @@
 						<Vector4>0.400000 0.000000 1.100000 0.000000</Vector4>
 					</property>
 					<property>
-						TintlColor
-						<Vector4>1.000000 1.000000 1.000000 0.400000</Vector4>
+						alphaFadeAmountSoft
+						<Vector4>0.000000 8.000000 4.000000 1.000000</Vector4>
 					</property>
 					<property>
-						alphaFadeAmountSoft
-						<Vector4>1.000000 2.000000 1.000000 1.500000</Vector4>
+						TintlColor
+						<Vector4>1.000000 1.000000 1.000000 0.400000</Vector4>
 					</property>
 				</material>
 				<groupOrigin>0.000000 0.000000 0.207679</groupOrigin>

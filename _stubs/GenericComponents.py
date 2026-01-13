@@ -166,6 +166,60 @@ class ControlModeStatus(PyComponentWrapperBase):
 	def valid(self, *args, **kwargs): pass
 
 
+class CyclicActivatorComponent(PyComponentWrapperBase):
+	def __cmp__(self, *args, **kwargs): pass
+	def __delattr__(*args, **kwargs): pass
+	__doc__ = None
+	def __format__(*args, **kwargs): pass
+	def __getattribute__(self, *args, **kwargs): pass
+	def __hash__(*args, **kwargs): pass
+	def __init__(self, *args, **kwargs): pass
+	__module__ = 'GenericComponents'
+	def __new__(*args, **kwargs): pass
+	__qualname__ = 'CyclicActivatorComponent'
+	def __reduce__(*args, **kwargs): pass
+	def __reduce_ex__(*args, **kwargs): pass
+	def __repr__(*args, **kwargs): pass
+	def __setattr__(*args, **kwargs): pass
+	def __sizeof__(*args, **kwargs): pass
+	def __str__(*args, **kwargs): pass
+	def __subclasshook__(*args, **kwargs): pass
+	def clear(self, *args, **kwargs): pass
+	def destroy(self, *args, **kwargs): pass
+	duration = property(lambda self: None)
+	def id(self, *args, **kwargs): pass
+	loopCount = property(lambda self: None)
+	startOffset = property(lambda self: None)
+	def valid(self, *args, **kwargs): pass
+
+
+class DeactivateGoDelayedComponent(PyComponentWrapperBase):
+	def __cmp__(self, *args, **kwargs): pass
+	def __delattr__(*args, **kwargs): pass
+	__doc__ = None
+	def __format__(*args, **kwargs): pass
+	def __getattribute__(self, *args, **kwargs): pass
+	def __hash__(*args, **kwargs): pass
+	def __init__(self, *args, **kwargs): pass
+	__module__ = 'GenericComponents'
+	def __new__(*args, **kwargs): pass
+	__qualname__ = 'DeactivateGoDelayedComponent'
+	def __reduce__(*args, **kwargs): pass
+	def __reduce_ex__(*args, **kwargs): pass
+	def __repr__(*args, **kwargs): pass
+	def __setattr__(*args, **kwargs): pass
+	def __sizeof__(*args, **kwargs): pass
+	def __str__(*args, **kwargs): pass
+	def __subclasshook__(*args, **kwargs): pass
+	def clear(self, *args, **kwargs): pass
+	delay = property(lambda self: None)
+	def destroy(self, *args, **kwargs): pass
+	def getScheduledTime(self, *args, **kwargs): pass
+	def id(self, *args, **kwargs): pass
+	def setScheduledTime(self, *args, **kwargs): pass
+	def valid(self, *args, **kwargs): pass
+
+
 class DecalComponent(PyComponentWrapperBase):
 	def __cmp__(self, *args, **kwargs): pass
 	def __delattr__(*args, **kwargs): pass
@@ -274,6 +328,7 @@ class DynamicModelComponent(PyComponentWrapperBase):
 	def setMaterialParameterVector2(self, *args, **kwargs): pass
 	def setMaterialParameterVector3(self, *args, **kwargs): pass
 	def setMaterialParameterVector4(self, *args, **kwargs): pass
+	def setOverlayEnabled(self, *args, **kwargs): pass
 	def valid(self, *args, **kwargs): pass
 
 
@@ -344,30 +399,6 @@ class FashionComponent(PyComponentWrapperBase):
 	__module__ = 'GenericComponents'
 	def __new__(*args, **kwargs): pass
 	__qualname__ = 'FashionComponent'
-	def __reduce__(*args, **kwargs): pass
-	def __reduce_ex__(*args, **kwargs): pass
-	def __repr__(*args, **kwargs): pass
-	def __setattr__(*args, **kwargs): pass
-	def __sizeof__(*args, **kwargs): pass
-	def __str__(*args, **kwargs): pass
-	def __subclasshook__(*args, **kwargs): pass
-	def clear(self, *args, **kwargs): pass
-	def destroy(self, *args, **kwargs): pass
-	def id(self, *args, **kwargs): pass
-	def valid(self, *args, **kwargs): pass
-
-
-class FollowerComponent(PyComponentWrapperBase):
-	def __cmp__(self, *args, **kwargs): pass
-	def __delattr__(*args, **kwargs): pass
-	__doc__ = None
-	def __format__(*args, **kwargs): pass
-	def __getattribute__(self, *args, **kwargs): pass
-	def __hash__(*args, **kwargs): pass
-	def __init__(self, *args, **kwargs): pass
-	__module__ = 'GenericComponents'
-	def __new__(*args, **kwargs): pass
-	__qualname__ = 'FollowerComponent'
 	def __reduce__(*args, **kwargs): pass
 	def __reduce_ex__(*args, **kwargs): pass
 	def __repr__(*args, **kwargs): pass
@@ -453,34 +484,6 @@ class HierarchyComponent(PyComponentWrapperBase):
 	def destroy(self, *args, **kwargs): pass
 	def id(self, *args, **kwargs): pass
 	parent = property(lambda self: None)
-	def valid(self, *args, **kwargs): pass
-
-
-class HomingMovementComponent(PyComponentWrapperBase):
-	def __cmp__(self, *args, **kwargs): pass
-	def __delattr__(*args, **kwargs): pass
-	__doc__ = None
-	def __format__(*args, **kwargs): pass
-	def __getattribute__(self, *args, **kwargs): pass
-	def __hash__(*args, **kwargs): pass
-	def __init__(self, *args, **kwargs): pass
-	__module__ = 'GenericComponents'
-	def __new__(*args, **kwargs): pass
-	__qualname__ = 'HomingMovementComponent'
-	def __reduce__(*args, **kwargs): pass
-	def __reduce_ex__(*args, **kwargs): pass
-	def __repr__(*args, **kwargs): pass
-	def __setattr__(*args, **kwargs): pass
-	def __sizeof__(*args, **kwargs): pass
-	def __str__(*args, **kwargs): pass
-	def __subclasshook__(*args, **kwargs): pass
-	def clear(self, *args, **kwargs): pass
-	def destroy(self, *args, **kwargs): pass
-	def id(self, *args, **kwargs): pass
-	isTracking = property(lambda self: None)
-	ownerID = property(lambda self: None)
-	prevPosition = property(lambda self: None)
-	target = property(lambda self: None)
 	def valid(self, *args, **kwargs): pass
 
 
@@ -1046,6 +1049,30 @@ class VisibilityController(PyComponentWrapperBase):
 	__module__ = 'GenericComponents'
 	def __new__(*args, **kwargs): pass
 	__qualname__ = 'VisibilityController'
+	def __reduce__(*args, **kwargs): pass
+	def __reduce_ex__(*args, **kwargs): pass
+	def __repr__(*args, **kwargs): pass
+	def __setattr__(*args, **kwargs): pass
+	def __sizeof__(*args, **kwargs): pass
+	def __str__(*args, **kwargs): pass
+	def __subclasshook__(*args, **kwargs): pass
+	def clear(self, *args, **kwargs): pass
+	def destroy(self, *args, **kwargs): pass
+	def id(self, *args, **kwargs): pass
+	def valid(self, *args, **kwargs): pass
+
+
+class VisibilityTunnelVehicleMarkerComponent(PyComponentWrapperBase):
+	def __cmp__(self, *args, **kwargs): pass
+	def __delattr__(*args, **kwargs): pass
+	__doc__ = None
+	def __format__(*args, **kwargs): pass
+	def __getattribute__(self, *args, **kwargs): pass
+	def __hash__(*args, **kwargs): pass
+	def __init__(self, *args, **kwargs): pass
+	__module__ = 'GenericComponents'
+	def __new__(*args, **kwargs): pass
+	__qualname__ = 'VisibilityTunnelVehicleMarkerComponent'
 	def __reduce__(*args, **kwargs): pass
 	def __reduce_ex__(*args, **kwargs): pass
 	def __repr__(*args, **kwargs): pass

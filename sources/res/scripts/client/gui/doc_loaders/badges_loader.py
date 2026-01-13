@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from typing import TYPE_CHECKING
 import resource_helper
 from constants import ITEM_DEFS_PATH

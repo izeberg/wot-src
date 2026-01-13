@@ -1183,7 +1183,7 @@
 			</component>
 		</ComponentPool>
 		<ComponentPool>
-			<type>SoundObject3D</type>
+			<type>BW::SoundObject3DComponent</type>
 			<version>1</version>
 			<component>
 				<UUID>75c2d250-069a-4c1d-8a8c-a7301e9cae1b</UUID>

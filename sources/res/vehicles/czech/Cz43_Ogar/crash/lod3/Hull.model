@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/czech/Cz43_Ogar/crash/lod4/Hull</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.679922 -0.889584 -3.360715</min>
+		<max>1.808751 0.565110 3.288273</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/czech/Cz43_Ogar/crash/lod3/Hull</nodefullVisual>
+</root>

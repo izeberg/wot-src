@@ -190,6 +190,9 @@ msgstr "Vz. 62 Jasan"
 msgid "Chassis_Cz40_DBV_152"
 msgstr "DBV-152"
 
+msgid "Chassis_Cz43_Ogar"
+msgstr "Ogar"
+
 msgid "Cz01_Skoda_T40"
 msgstr "Škoda T 40"
 
@@ -1008,6 +1011,36 @@ msgstr "DBV-152"
 msgid "Cz40_DBV_152_short_special"
 msgstr "Decent damage per shot, good dynamics"
 
+msgid "Cz43_Ogar"
+msgstr "ZŤS Vz.63-1 Ogar"
+
+msgid "Cz43_Ogar_descr"
+msgstr ""
+"By the mid-1960s, the Czechoslovak Army was planning to obtain a license to "
+"produce the Soviet T-55 medium tank. Alongside this they were considering an"
+" alternative option—a homegrown tank with similar technical characteristics."
+" By 1964, they had prepared a concept for a vehicle designated ZŤS Vz.63-1 "
+"Ogar combining the best solutions of the Soviet and Czechoslovakian tank-"
+"building schools. However, analysis of all the benefits and drawbacks made "
+"it clear that producing a licensed copy of the T-55 with Soviet technologies"
+" would be far cheaper than setting up production of a new Czechoslovakian "
+"tank. The military decided against building a prototype, and all the design "
+"documentation was archived."
+
+msgid "Cz43_Ogar_long_special"
+msgstr ""
+"The ZŤS Vz.63-1 Ogar is a Tier IX Czechoslovakian medium tank. The vehicle "
+"has a gas-turbine engine, which enables its good mobility to become "
+"exceptional. The armor is not completely reliable, but it does forgive "
+"mistakes at times. The vehicle also has plenty of firepower, with a well-"
+"balanced gun."
+
+msgid "Cz43_Ogar_short"
+msgstr "Ogar"
+
+msgid "Cz43_Ogar_short_special"
+msgstr "Gas-turbine engine, comfortable gun"
+
 msgid "DG_TK_61"
 msgstr "DG-TK-61"
 
@@ -1061,6 +1094,9 @@ msgstr "Radiostanice 9R"
 
 msgid "Radiostanice_9RM"
 msgstr "Radiostanice 9RM"
+
+msgid "Radiostanice_9RMO"
+msgstr "Radiostanice 9RMO"
 
 msgid "Radiostanice_Fu_12"
 msgstr "Radiostanice Fu 12"
@@ -1133,6 +1169,9 @@ msgstr "Škoda 16 ADH 140"
 
 msgid "Skoda_16_ADH_140A_TVP"
 msgstr "Škoda 16 ADH 140A (TVP)"
+
+msgid "Skoda_16_ADH_140O"
+msgstr "Škoda 16 ADH 140O"
 
 msgid "Skoda_16_ADH_140_A"
 msgstr "Škoda 16 ADH 140A"
@@ -1316,6 +1355,9 @@ msgstr "Vz. 62 Jasan"
 
 msgid "Turret_1_Cz40_DBV_152"
 msgstr "DBV-152"
+
+msgid "Turret_1_Cz43_Ogar"
+msgstr "Ogar"
 
 msgid "Turret_2_Cz02_TVP_T50"
 msgstr "Škoda T 50 (1950)"
@@ -1547,6 +1589,18 @@ msgstr "Vz. 42N OPG"
 
 msgid "_105mm_vz_42N_VM"
 msgstr "Vz. 42N VM"
+
+msgid "_107mm_Narazovy_vz_63"
+msgstr "Nárazový vz. 63"
+
+msgid "_107mm_Vz_63N_OPG"
+msgstr "Vz. 63N OPG"
+
+msgid "_107mm_Vz_63_prupalny"
+msgstr "Vz. 63 průpalný"
+
+msgid "_107mm_vz_63"
+msgstr "107 mm vz. 63"
 
 msgid "_10_RT_26"
 msgstr "10-RT-26"

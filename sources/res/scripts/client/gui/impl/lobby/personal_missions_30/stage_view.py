@@ -1,4 +1,5 @@
 from typing import TYPE_CHECKING
+import SoundGroups
 from frameworks.wulf import ViewFlags, ViewSettings, WindowFlags, WindowLayer
 from gui.impl.gen import R
 from gui.impl.gen.view_models.views.lobby.personal_missions_30.assembling_video_view_model import AssemblingVideoViewModel
@@ -29,6 +30,7 @@ class AssemblingVideoView(ViewImpl):
 
     def _finalize(self):
         self.__startAssembling()
+        SoundGroups.g_instance.playSound2D('vid_pm_stop')
         setVideoOverlayOff()
         super(AssemblingVideoView, self)._finalize()
 

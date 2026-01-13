@@ -9,7 +9,7 @@ package net.wg.infrastructure.managers
    {
        
       
-      function registerAtlas(param1:String, param2:Object = null) : void;
+      function registerAtlas(param1:String, param2:Object = null, param3:String = "") : void;
       
       function unregisterAtlas(param1:String, param2:Object) : void;
       

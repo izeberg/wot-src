@@ -16,7 +16,7 @@ class Fire(BigWorld.DynamicScriptComponent):
         self.__effectListPlayerRef = None
         vehicle = self.entity
         if not self.__tryShowFlameEffect():
-            vehicle.onAppearanceReady += self.__tryShowFlameEffect
+            vehicle.events.onAppearanceReady += self.__tryShowFlameEffect
         return
 
     def __tryShowFlameEffect(self):
@@ -62,7 +62,7 @@ class Fire(BigWorld.DynamicScriptComponent):
             return
         if vehicle.appearance:
             vehicle.appearance.removeComponentByType(Statuses.FireComponent)
-        vehicle.onAppearanceReady -= self.__tryShowFlameEffect
+        vehicle.events.onAppearanceReady -= self.__tryShowFlameEffect
         if vehicle.health > 0:
             self.__fadeEffects()
         else:

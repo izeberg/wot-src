@@ -1,5 +1,4 @@
 from constants import DailyQuestsTokensPrefixes
-from items.components.ny_constants import CelebrityQuestTokenParts
 BATTLE_MATTERS_QUEST_ID = 'battle_matters'
 BATTLE_MATTERS_INTERMEDIATE_QUEST_ID = 'intermediate_battle_matters'
 MARATHON_GROUP_PREFIX = 'marathon:'
@@ -15,7 +14,4 @@ DAILY_QUEST_ID_PREFIX = DailyQuestsTokensPrefixes.QUEST_TOKEN
 DAILY_QUEST_TOKEN_PREFIX = DailyQuestsTokensPrefixes.QUEST_TICKET
 WEEKLY_QUEST_ID_PREFIX = 'wq::'
 TECH_TREE_ACTION_POSTFIX = '_techtree'
-CELEBRITY_QUESTS_PREFIX = CelebrityQuestTokenParts.PREFIX
-CELEBRITY_MARATHON_PREFIX = CelebrityQuestTokenParts.MARATHON_PREFIX
-CELEBRITY_MARATHON_MASTERY_PREFIX = CelebrityQuestTokenParts.MARATHON_MASTERY_PREFIX
-NY_PIGGY_BANK_MARATHON_PREFIX = 'ny_piggy_bank_reward_level'
+EPIC_QUEST_REWARD_ID = 'QUEST_EPIC_REWARD'

@@ -1,4 +1,0 @@
-from FairplayVehicleBattleStatsComponent import FairplayVehicleBattleStatsComponent
-
-class GrinchFairplayVehicleBattleStatsComponent(FairplayVehicleBattleStatsComponent):
-    pass

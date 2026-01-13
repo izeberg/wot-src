@@ -4,7 +4,6 @@ from visual_script.block import Block, Meta
 from visual_script.dependency import dependencyImporter
 from visual_script.misc import errorVScript, EDITOR_TYPE
 from visual_script.slot_types import SLOT_TYPE, arrayOf
-from vehicle_systems.tankStructure import TankSoundObjectsIndexes
 BattleReplay, SoundGroups, MusicControllerWWISE, helpers, Vehicular, tankStructure = dependencyImporter('BattleReplay', 'SoundGroups', 'MusicControllerWWISE', 'helpers', 'Vehicular', 'vehicle_systems.tankStructure')
 _logger = logging.getLogger(__name__)
 
@@ -328,34 +327,5 @@ class TriggerSoundOnEngine(Block, SoundMeta):
                 _logger.debug('Could not find vehicle audition component')
         else:
             _logger.debug('Vehicle game object is None')
-        self._out.call()
-        return
-
-
-class PlaySoundOnVehicleSoundObject(Block, SoundMeta):
-    _TANK_SOUND_OBJ_NAME_TO_INDEX = {'chassis': TankSoundObjectsIndexes.CHASSIS, 
-       'engine': TankSoundObjectsIndexes.ENGINE, 
-       'gun': TankSoundObjectsIndexes.GUN, 
-       'hit': TankSoundObjectsIndexes.HIT, 
-       'count': TankSoundObjectsIndexes.COUNT}
-
-    def __init__(self, *args, **kwargs):
-        super(PlaySoundOnVehicleSoundObject, self).__init__(*args, **kwargs)
-        self._in = self._makeEventInputSlot('in', self._execute)
-        self._vehicle = self._makeDataInputSlot('vehicle', SLOT_TYPE.VEHICLE)
-        self._soundObjId = self._makeDataInputSlot('soundObjID', SLOT_TYPE.STR, EDITOR_TYPE.ENUM_SELECTOR)
-        self._soundObjId.setEditorData(self._TANK_SOUND_OBJ_NAME_TO_INDEX.keys())
-        self._sndName = self._makeDataInputSlot('soundName', SLOT_TYPE.STR)
-        self._out = self._makeEventOutputSlot('out')
-
-    def _execute(self):
-        vehicle = self._vehicle.getValue()
-        if vehicle and vehicle.appearance:
-            soundObjectIndex = self._TANK_SOUND_OBJ_NAME_TO_INDEX.get(self._soundObjId.getValue(), None)
-            if soundObjectIndex is None:
-                soundObjectIndex = TankSoundObjectsIndexes.CHASSIS
-            soundObject = vehicle.appearance.engineAudition.getSoundObject(soundObjectIndex)
-            if soundObject:
-                soundObject.play(self._sndName.getValue())
         self._out.call()
         return

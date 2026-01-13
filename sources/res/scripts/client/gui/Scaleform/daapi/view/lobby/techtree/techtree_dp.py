@@ -1,4 +1,4 @@
-import operator
+import operator, typing
 from collections import defaultdict, namedtuple
 import ResMgr, nations
 from constants import IS_DEVELOPMENT

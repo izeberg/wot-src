@@ -1,4 +1,15 @@
-import BigWorld
+from gui.shared.utils.decorators import ReprInjector
+from vehicles.components.vehicle_component import VehicleDynamicComponent
+from vehicles.mechanics.common import IMechanicComponent
+from vehicles.mechanics.mechanic_constants import VehicleMechanic
 
-class ImprovedRammingController(BigWorld.DynamicScriptComponent):
-    pass
+@ReprInjector.withParent()
+class ImprovedRammingController(VehicleDynamicComponent, IMechanicComponent):
+
+    def __init__(self):
+        super(ImprovedRammingController, self).__init__()
+        self._initComponent()
+
+    @property
+    def vehicleMechanic(self):
+        return VehicleMechanic.IMPROVED_RAMMING

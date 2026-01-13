@@ -14,6 +14,8 @@ package net.wg.frontline.infrastructure.base.meta.impl
    import net.wg.frontline.gui.battle.battleLoading.components.FrontlineBattleStatsTableCtrl;
    import net.wg.frontline.gui.battle.battleLoading.events.FrontlineBattleLoadingEvent;
    import net.wg.frontline.gui.battle.battleLoading.renderers.FrontlineBattleLoadingPlayerItemRenderer;
+   import net.wg.frontline.gui.battle.components.FrontlineFilterDropDown;
+   import net.wg.frontline.gui.battle.components.FrontlineListItemRenderer;
    import net.wg.frontline.gui.battle.components.FrontlineProgressCircle;
    import net.wg.frontline.gui.battle.views.FrontlineBattlePage;
    import net.wg.frontline.gui.battle.views.FrontlineBattleTimer;
@@ -25,12 +27,14 @@ package net.wg.frontline.infrastructure.base.meta.impl
    import net.wg.frontline.gui.battle.views.battleTankCarousel.data.BattleVehicleCarouselVO;
    import net.wg.frontline.gui.battle.views.battleTankCarousel.renderers.BaseBattleTankIcon;
    import net.wg.frontline.gui.battle.views.battleTankCarousel.renderers.BattleTankCarouselItemRenderer;
+   import net.wg.frontline.gui.battle.views.battleTankCarousel.renderers.ResetFilters;
    import net.wg.frontline.gui.battle.views.consumablesPanel.FrontlineBattleConsumableButton;
    import net.wg.frontline.gui.battle.views.consumablesPanel.FrontlineBattleConsumablesPanel;
    import net.wg.frontline.gui.battle.views.consumablesPanel.components.FrontlineBattleEquipmentButtonGlow;
    import net.wg.frontline.gui.battle.views.consumablesPanel.interfaces.IFrontlineBattleConsumableButton;
    import net.wg.frontline.gui.battle.views.data.FrontlineStatsDataProviderBaseCtrl;
    import net.wg.frontline.gui.battle.views.data.FrontlineVehicleDataProvider;
+   import net.wg.frontline.gui.battle.views.data.PlayListsVO;
    import net.wg.frontline.gui.battle.views.frontlineDamagePanel.FrontlineDamagePanel;
    import net.wg.frontline.gui.battle.views.frontlineDamagePanel.components.GeneralBonus;
    import net.wg.frontline.gui.battle.views.frontlineDeploymentMap.FrontlineDeploymentMap;
@@ -155,6 +159,10 @@ package net.wg.frontline.infrastructure.base.meta.impl
       
       public static const NET_WG_FRONTLINE_GUI_BATTLE_BATTLELOADING_RENDERERS_FRONTLINEBATTLELOADINGPLAYERITEMRENDERER:Class = FrontlineBattleLoadingPlayerItemRenderer;
       
+      public static const NET_WG_FRONTLINE_GUI_BATTLE_COMPONENTS_FRONTLINEFILTERDROPDOWN:Class = FrontlineFilterDropDown;
+      
+      public static const NET_WG_FRONTLINE_GUI_BATTLE_COMPONENTS_FRONTLINELISTITEMRENDERER:Class = FrontlineListItemRenderer;
+      
       public static const NET_WG_FRONTLINE_GUI_BATTLE_COMPONENTS_FRONTLINEPROGRESSCIRCLE:Class = FrontlineProgressCircle;
       
       public static const NET_WG_FRONTLINE_GUI_BATTLE_VIEWS_FRONTLINEBATTLEPAGE:Class = FrontlineBattlePage;
@@ -177,6 +185,8 @@ package net.wg.frontline.infrastructure.base.meta.impl
       
       public static const NET_WG_FRONTLINE_GUI_BATTLE_VIEWS_BATTLETANKCAROUSEL_RENDERERS_BATTLETANKCAROUSELITEMRENDERER:Class = BattleTankCarouselItemRenderer;
       
+      public static const NET_WG_FRONTLINE_GUI_BATTLE_VIEWS_BATTLETANKCAROUSEL_RENDERERS_RESETFILTERS:Class = ResetFilters;
+      
       public static const NET_WG_FRONTLINE_GUI_BATTLE_VIEWS_CONSUMABLESPANEL_FRONTLINEBATTLECONSUMABLEBUTTON:Class = FrontlineBattleConsumableButton;
       
       public static const NET_WG_FRONTLINE_GUI_BATTLE_VIEWS_CONSUMABLESPANEL_FRONTLINEBATTLECONSUMABLESPANEL:Class = FrontlineBattleConsumablesPanel;
@@ -188,6 +198,8 @@ package net.wg.frontline.infrastructure.base.meta.impl
       public static const NET_WG_FRONTLINE_GUI_BATTLE_VIEWS_DATA_FRONTLINESTATSDATAPROVIDERBASECTRL:Class = FrontlineStatsDataProviderBaseCtrl;
       
       public static const NET_WG_FRONTLINE_GUI_BATTLE_VIEWS_DATA_FRONTLINEVEHICLEDATAPROVIDER:Class = FrontlineVehicleDataProvider;
+      
+      public static const NET_WG_FRONTLINE_GUI_BATTLE_VIEWS_DATA_PLAYLISTSVO:Class = PlayListsVO;
       
       public static const NET_WG_FRONTLINE_GUI_BATTLE_VIEWS_FRONTLINEDAMAGEPANEL_FRONTLINEDAMAGEPANEL:Class = FrontlineDamagePanel;
       

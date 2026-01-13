@@ -38,7 +38,9 @@ package net.wg.gui.battle.views.vehicleMarkers
       
       private var _markersCallback:Array;
       
-      public function VehicleMarkersManager()
+      private var _extension:String = "";
+      
+      public function VehicleMarkersManager(param1:String = "")
       {
          this._markerSettings = {
             "ally":new VehicleMarkerSettings(),
@@ -49,8 +51,9 @@ package net.wg.gui.battle.views.vehicleMarkers
          this._markersCallback = [];
          super();
          sInstance = this;
+         this._extension = param1;
          this._atlasManager.addEventListener(AtlasEvent.ATLAS_INITIALIZED,this.onAtlasManagerAtlasInitializedHandler);
-         this._atlasManager.initAtlas(ATLAS_CONSTANTS.VEHICLE_MARKER_ATLAS);
+         this._atlasManager.initAtlas(ATLAS_CONSTANTS.VEHICLE_MARKER_ATLAS,this._extension);
       }
       
       public static function getInstance() : VehicleMarkersManager

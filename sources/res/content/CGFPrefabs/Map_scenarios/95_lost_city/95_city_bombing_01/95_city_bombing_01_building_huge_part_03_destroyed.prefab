@@ -949,7 +949,7 @@
 					<property>
 						<name>Rotation</name>
 						<value>
-							0 -0.798488 0
+							-0 -0.798488 0
 							<!--BW_String-->
 						</value>
 					</property>
@@ -2591,10 +2591,7 @@
 					</property>
 					<property>
 						<name>penetrationLapse</name>
-						<value>
-							0.3
-							<!--BW_String-->
-						</value>
+						<value>1</value>
 					</property>
 				</config>
 			</component>

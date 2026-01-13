@@ -49,7 +49,6 @@ package net.wg.gui.battle.views.battleLevelPanel
       
       public final function dispose() : void
       {
-         this._disposed = true;
          stop();
          this.cancelFadeOutTask();
          this.clearTween();
@@ -58,8 +57,7 @@ package net.wg.gui.battle.views.battleLevelPanel
          this.onFadeOutComplete = null;
          this._frameHelper.dispose();
          this._frameHelper = null;
-         this.onFadeInWidthComplete = null;
-         this.onFadeOutComplete = null;
+         this._disposed = true;
       }
       
       public function reset() : void
@@ -120,8 +118,8 @@ package net.wg.gui.battle.views.battleLevelPanel
          }
          else
          {
-            gotoAndStop(FADE_OUT_END_LABEL);
             this.onFadeInWidthCompleteCallback();
+            gotoAndStop(FADE_OUT_START_LABEL);
             this.onFadeOutEnd();
          }
       }

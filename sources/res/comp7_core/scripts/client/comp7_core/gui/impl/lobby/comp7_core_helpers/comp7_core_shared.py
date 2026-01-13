@@ -70,14 +70,14 @@ def getEventBannerState(modeController, seasonStateClazz, selectorBattleType):
         seasonState = getCurrentSeasonState(modeController, seasonStateClazz)
         if seasonState == seasonStateClazz.NOTSTARTED:
             return EventBannerState.ANNOUNCE
-        primeTimeStatus, _, _ = modeController.getPrimeTimeStatus()
-        if primeTimeStatus == PrimeTimeStatus.NOT_AVAILABLE:
-            return EventBannerState.INACTIVE
         if seasonState == seasonStateClazz.DISABLED:
             return EventBannerState.INACTIVE
         if seasonState == seasonStateClazz.END:
             if modeController.getCurrentSeason(includePreannounced=True) is not None:
                 return EventBannerState.ANNOUNCE
+            return EventBannerState.INACTIVE
+        primeTimeStatus, _, _ = modeController.getPrimeTimeStatus()
+        if primeTimeStatus in (PrimeTimeStatus.NOT_AVAILABLE, PrimeTimeStatus.NOT_SET):
             return EventBannerState.INACTIVE
         if isKnownBattleType(selectorBattleType):
             return EventBannerState.IN_PROGRESS

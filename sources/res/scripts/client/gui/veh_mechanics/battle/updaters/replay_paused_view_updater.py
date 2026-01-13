@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BattleReplay
 from ReplayEvents import g_replayEvents
 from gui.veh_mechanics.battle.updaters.updaters_common import ViewUpdater

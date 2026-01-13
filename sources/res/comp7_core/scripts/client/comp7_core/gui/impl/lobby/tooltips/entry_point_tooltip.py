@@ -5,6 +5,10 @@ from helpers.time_utils import getServerUTCTime
 
 class Comp7CoreEntryPointTooltip(ViewImpl):
 
+    def __init__(self, settings, eventBanner):
+        super(Comp7CoreEntryPointTooltip, self).__init__(settings)
+        self._banner = eventBanner
+
     @property
     def _modeController(self):
         raise NotImplementedError
@@ -44,8 +48,7 @@ class Comp7CoreEntryPointTooltip(ViewImpl):
         with self.viewModel.transaction() as (tx):
             season = self._modeController.getCurrentSeason() or self._modeController.getNextSeason() or self._modeController.getPreviousSeason()
             setSeasonInfo(tx.season, self._modeController, self._seasonStateClazz, self._seasonNameClazz, season)
-            periodInfo = self._modeController.getPeriodInfo()
-            tx.setTimeLeftUntilPrimeTime(periodInfo.primeDelta)
+            tx.setTimeLeftUntilPrimeTime(self._banner.timerValue)
             tx.season.setState(getModeSeasonState(self._modeController, self._seasonStateClazz))
             levelsArr = tx.getVehicleLevels()
             levelsArr.clear()

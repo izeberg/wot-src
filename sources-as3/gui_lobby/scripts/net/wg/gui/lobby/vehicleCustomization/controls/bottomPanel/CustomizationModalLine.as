@@ -44,8 +44,7 @@ package net.wg.gui.lobby.vehicleCustomization.controls.bottomPanel
       
       public function update(param1:Object) : void
       {
-         var _loc2_:Point = null;
-         _loc2_ = Point(param1);
+         var _loc2_:Point = Point(param1);
          var _loc3_:int = _loc2_.y - _loc2_.x;
          var _loc4_:int = (_loc3_ - this.value.width) / 2 | 0;
          this.left.x = 0;

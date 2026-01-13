@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging
 from chat_shared import SYS_MESSAGE_TYPE
 from gui.game_control.AwardController import ServiceChannelHandler

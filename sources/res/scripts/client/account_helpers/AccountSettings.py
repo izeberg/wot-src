@@ -93,10 +93,6 @@ BOOSTERS_FILTER = 'boostersFilter'
 LAST_PROMO_PATCH_VERSION = 'lastPromoPatchVersion'
 LAST_CALENDAR_SHOW_TIMESTAMP = 'lastCalendarShowTimestamp'
 LAST_STORAGE_VISITED_TIMESTAMP = 'lastStorageVisitedTimestamp'
-LAST_LOGGED_SERVER_DAY = 'lastLoggedServerDay'
-LAST_SEEN_COLLECTING_NOTIFY_TIME = 'lastSeenCollectingNotifyTime'
-LAST_SEEN_FRIENDS_NOTIFY_TIME = 'lastSeenFriendsNotifyTime'
-LAST_SEEN_NO_FRIENDS_NOTIFY_TIME = 'lastSeenNoFriendsNotifyTime'
 LAST_RESTORE_NOTIFICATION = 'lastRestoreNotification'
 PREVIEW_INFO_PANEL_IDX = 'previewInfoPanelIdx'
 NEW_SETTINGS_COUNTER = 'newSettingsCounter'
@@ -188,6 +184,7 @@ TRAJECTORY_VIEW_HINT_SECTION = 'trajectoryViewHint'
 TURBO_SHAFT_ENGINE_MODE_HINT_SECTION = 'turboShaftEngineModeHint'
 ROCKET_ACCELERATION_MODE_HINT_SECTION = 'rocketAccelerationModeHint'
 RECHARGEABLE_NITRO_MODE_HINT_SECTION = 'rechargeableNitroModeHint'
+STAGED_JET_BOOSTERS_MODE_HINT_SECTION = 'stagedJetBoostersModeHint'
 TARGET_DESIGNATOR_MODE_HINT_SECTION = 'targetDesignatorModeHint'
 DYN_SQUAD_HINT_SECTION = 'dynSquadHint'
 PILLBOX_HINT_SECTION = 'pillboxModeHint'
@@ -252,12 +249,11 @@ BECOME_ELITE_VEHICLES_WATCHED = 'becomeEliteWatched'
 VPP_ENTRY_POINT_LAST_SEEN_STEP = 'vehiclePostProgressionLastSeenStep'
 CLAN_PREBATTLE_SORTING_KEY = 'ClanPrebattleSortingKey'
 SHOW_DEMO_ACC_REGISTRATION = 'showDemoAccRegistration'
-RESOURCE_WELL_START_SHOWN = 'resourceWellStartShown'
-RESOURCE_WELL_END_SHOWN = 'resourceWellEndShown'
-RESOURCE_WELL_NOTIFICATIONS = 'resourceWellNotifications'
 MAPBOX_SURVEYS = 'mapbox_surveys'
 CLAN_NEWS_SEEN = 'clanNewsSeen'
 INTEGRATED_AUCTION_NOTIFICATIONS = 'integratedAuctionNotifications'
+INTEGRATED_AUCTION_FIRST_APPEARANCE_TIMESTAMP = 'integratedAuctionBannerFirstAppearanceTimestamp'
+INTEGRATED_AUCTION_INTRO_CLICK_TIMESTAMP = 'integratedAuctionBannerIntroClickTimestamp'
 MINIMAP_SIZE = 'minimapSize'
 COMP7_UI_SECTION = 'comp7'
 COMP7_WEEKLY_QUESTS_PAGE_TOKENS_COUNT = 'comp7WeeklyQuestsPageTokensCount'
@@ -267,23 +263,21 @@ COMP7_WEEKLY_WIDGET_SHOWN_QUEST = 'comp7WeeklyWidgetShownQuest'
 COMP7_LAST_SEASON_WHERE_STATISTICS_SHOWN = 'comp7LastSeasonWhereStatisticsShown'
 COMP7_UMG_PROGRESSION_POINTS_SEEN = 'comp7UMGProgressionPointsSeen'
 COMP7_UMG_ENTRY_POINT_SEEN = 'comp7UmgEntryPointSeen'
+COMP7_PROGRESSION_PAGE_C11N_PROGRESS = 'comp7ProgressionPageC11nProgress'
 COMP7_LIGHT_UI_SECTION = 'comp7Light'
 COMP7_LIGHT_LAST_SEASON = 'comp7LightLastSeason'
 COMP7_LIGHT_PROGRESSION_POINTS_SEEN = 'comp7LightProgressionPointsSeen'
 COMP7_LIGHT_UMG_PROGRESSION_POINTS_SEEN = 'comp7LightUMGProgressionPointsSeen'
 COMP7_LIGHT_UMG_SEEN_QUESTS = 'comp7LightUmgSeenQuests'
 COMP7_LIGHT_UMG_ENTRY_POINT_SEEN = 'comp7LightUmgEntryPointSeen'
+INGAME_TOURNAMENT_SECTION = 'ingameTournament'
+INGAME_TOURNAMENT_WCI_INTRO_SEEN = 'WCIIntroSeen'
+INGAME_TOURNAMENT_OLS_INTRO_SEEN = 'OLSIntroSeen'
 FUN_RANDOM_NOTIFICATIONS = 'funRandomNotifications'
 FUN_RANDOM_NOTIFICATIONS_FROZEN = 'funRandomNotificationsFrozen'
 FUN_RANDOM_NOTIFICATIONS_PROGRESSIONS = 'funRandomNotificationsProgressions'
 FUN_RANDOM_NOTIFICATIONS_SUB_MODES = 'funRandomNotificationsSubModes'
 LOOTBOX_SYSTEM = 'lootBoxSystem'
-NY_DAILY_QUESTS_VISITED = 'NYDailyQuestsVisited'
-NY_GIFT_MACHINE_BUY_TOKEN_VISITED = 'NYGiftMachineBuyTokenVisited'
-NY_SACK_INFO_VISITED = 'NYSackInfoVisited'
-NY_SACK_INFO_LAST_SELECTED = 'NYSackInfoLastSelected'
-NY_RESOURCE_COLLECTING_AVAILABLE = 'NYResourceCollectingAvailable'
-NY_RESOURCE_FRIENDS_COLLECTING_AVAILABLE = 'NYResourceFriendsCollectingAvailable'
 LOOT_BOXES_WAS_STARTED = 'lootBoxesWasStarted'
 LOOT_BOXES_WAS_FINISHED = 'lootBoxesWasFinished'
 LOOT_BOXES_OPEN_ANIMATION_ENABLED = 'lootBoxesOpenAnimationEnabled'
@@ -350,8 +344,6 @@ VEH_SKILL_TREE_INTRO_SHOWN = 'vehSkillTreeIntroShown'
 PERSONAL_MISSION_3 = 'PERSONAL_MISSION_3'
 HANGAR_VIEW_SETTINGS = 'hangarView'
 HANGAR_KEY_BINDINGS = 'hangarKeyBindings'
-OTG_EVENT_BANNER_ANIMATION_SHOWN = 'OTGEventBannerAnimationShown'
-GRINCH_PROGRESSION = 'grinch_progression_keys'
 
 class BattleMatters(object):
     BATTLE_MATTERS_SETTINGS = 'battleMattersSettings'
@@ -361,9 +353,6 @@ class BattleMatters(object):
     REMINDER_LAST_DISPLAY_TIME = 'reminderLastDisplayTime'
     LAST_BATTLE_TIME = 'lastBattleTime'
 
-
-NY_CELEBRITY_DAY_QUESTS_VISITED_MASK = 'NYCelebrityDayQuestsVisitedMask'
-NY_CELEBRITY_DAY_QUESTS_COMPLETED_MASK = 'NYCelebrityDayQuestsCompletedMask'
 
 class Winback(object):
     WINBACK_SETTINGS = 'winbackSettings'
@@ -387,21 +376,17 @@ class AdventCalendar(object):
     LAST_DAY_POPUP_SEEN = 'adventCalendarLastDayPopupSeen'
 
 
-NY_CELEBRITY_ADV_QUESTS_VISITED_MASK = 'NYCelebrityAdvQuestsVisitedMask'
-NY_CELEBRITY_ADV_QUESTS_COMPLETED_MASK = 'NYCelebrityAdvQuestsCompletedMask'
-NY_GUEST_ACTIVITY_SHOWN = 'NYGuestActivityShown'
-NY_MAX_LEVEL_MESSAGE_CLOSE = 'NYMaxLevelMessageClose'
-NY_DOG_PAGE_VISITED = 'NYDogPageVisited'
-NY_NARKET_PLACE_PAGE_VISITED = 'NYMarketPlaceVisited'
-NY_CAT_PAGE_VISITED = 'NYCatPageVisited'
-NY_FRIENDS_BANNER_SHOWN = 'NYFriendsBannerShown'
-NY_NO_FRIENDS_PAGE_RESET_TIME = 'NYNoFriendsPageResetTime'
-NY_REWARD_KIT_OPEN = 'NYRewardKitOpen'
-NY_GIFT_MACHINE_HINT_VISIBLE = 'NYGiftMachineHintVisible'
-NY_CHALLENGE_LAST_QUEST_COMPLETION_COUNT = 'NYChallengeLastQuestCompletionCount'
-
 class StrongholdEvent(object):
     SETTINGS = 'strongholdEventSettings'
+    IS_BANNER_FIRST_APPEARANCE_SEEN = 'isBannerFirstAppearanceSeen'
+    FIRST_BANNER_ENTERING_MADE = 'firstBannerEnteringMade'
+
+
+class ResourceWell(object):
+    SETTINGS = 'resourceWellSettings'
+    START_SHOWN = 'resourceWellStartShown'
+    END_SHOWN = 'resourceWellEndShown'
+    NOTIFICATIONS = 'resourceWellNotifications'
     IS_BANNER_FIRST_APPEARANCE_SEEN = 'isBannerFirstAppearanceSeen'
     FIRST_BANNER_ENTERING_MADE = 'firstBannerEnteringMade'
 
@@ -681,7 +666,6 @@ DEFAULT_VALUES = {KEY_FILTERS: {STORE_TAB: 0,
                                                 'favorite': False, 
                                                 'bonus': False, 
                                                 'crystals': False, 
-                                                'newYear': False, 
                                                 'role_HT_assault': False, 
                                                 'role_HT_break': False, 
                                                 'role_HT_support': False, 
@@ -744,7 +728,6 @@ DEFAULT_VALUES = {KEY_FILTERS: {STORE_TAB: 0,
                                             'favorite': False, 
                                             'bonus': False, 
                                             'crystals': False, 
-                                            'newYear': False, 
                                             'role_HT_assault': False, 
                                             'role_HT_break': False, 
                                             'role_HT_support': False, 
@@ -1150,7 +1133,6 @@ DEFAULT_VALUES = {KEY_FILTERS: {STORE_TAB: 0,
                   'vehicleCarouselStats': True, 
                   WHEELED_DEATH_DELAY_COUNT: 10, 
                   FREE_CAM_USES_COUNT: 0, 
-                  'lootBoxVideoOff': False, 
                   NEW_SETTINGS_COUNTER: {'GameSettings': {BattleCommStorageKeys.SHOW_LOCATION_MARKERS: True, 
                                                           BattleCommStorageKeys.ENABLE_COMMENDATIONS_FEEDBACK: True, 
                                                           GAME.DISPLAY_PLATOON_MEMBERS: True, 
@@ -1252,6 +1234,9 @@ DEFAULT_VALUES = {KEY_FILTERS: {STORE_TAB: 0,
                   RECHARGEABLE_NITRO_MODE_HINT_SECTION: {HINTS_LEFT: 3, 
                                                          LAST_DISPLAY_DAY: 0, 
                                                          NUM_BATTLES: 0}, 
+                  STAGED_JET_BOOSTERS_MODE_HINT_SECTION: {HINTS_LEFT: 3, 
+                                                          LAST_DISPLAY_DAY: 0, 
+                                                          NUM_BATTLES: 0}, 
                   TARGET_DESIGNATOR_MODE_HINT_SECTION: {HINTS_LEFT: 3, 
                                                         LAST_DISPLAY_DAY: 0, 
                                                         NUM_BATTLES: 0}, 
@@ -1290,6 +1275,8 @@ DEFAULT_VALUES = {KEY_FILTERS: {STORE_TAB: 0,
                   MAPBOX_SURVEYS: {}, UNLOCK_VEHICLES_IN_BATTLE_HINTS: 5, 
                   MODE_SELECTOR_BATTLE_PASS_SHOWN: {}, RANKED_LAST_CYCLE_ID: None, 
                   EPIC_LAST_CYCLE_ID: None, 
+                  INTEGRATED_AUCTION_FIRST_APPEARANCE_TIMESTAMP: 0, 
+                  INTEGRATED_AUCTION_INTRO_CLICK_TIMESTAMP: 0, 
                   FRONTLINE_BANNER_FIRST_APPEARANCE_TIMESTAMP: 0, 
                   FRONTLINE_BANNER_INTRO_CLICK_TIMESTAMP: 0, 
                   COMP7_BANNER_FIRST_APPEARANCE_TIMESTAMP: 0, 
@@ -1314,10 +1301,6 @@ DEFAULT_VALUES = {KEY_FILTERS: {STORE_TAB: 0,
                   LOOTBOX_SYSTEM: {}, CUSTOM_SHOP_SETTINGS: {}, Winback.WINBACK_SETTINGS: {Winback.COMPLETED_STARTING_QUEST_COUNT: 0, 
                                              Winback.INTRO_SHOWN: False, 
                                              Winback.BATTLE_SELECTOR_SETTINGS_BULLET_SHOWN: False}, 
-                  LAST_LOGGED_SERVER_DAY: 0, 
-                  LAST_SEEN_COLLECTING_NOTIFY_TIME: -1, 
-                  LAST_SEEN_FRIENDS_NOTIFY_TIME: -1, 
-                  LAST_SEEN_NO_FRIENDS_NOTIFY_TIME: -1, 
                   ACHIEVEMENTS_INFO: {ACHIEVEMENTS_WTR_RANKS: {}, ACHIEVEMENTS_INITIAL_BATTLE_COUNT: -1, 
                                       ACHIEVEMENTS_MAX_WTR_POINTS: 0, 
                                       ACHIEVEMENTS_FIRST_ENTRY_STATUS: 0, 
@@ -1346,6 +1329,8 @@ DEFAULT_VALUES = {KEY_FILTERS: {STORE_TAB: 0,
                                             AdventCalendar.LAST_HIGHLIGHTED_DOOR: -1, 
                                             AdventCalendar.FIRST_ENTRY_NOTIFICATION_SHOWING_DAY: -1, 
                                             AdventCalendar.LAST_DAY_POPUP_SEEN: 0}, 
+                  ResourceWell.SETTINGS: {ResourceWell.FIRST_BANNER_ENTERING_MADE: set(), 
+                                          ResourceWell.IS_BANNER_FIRST_APPEARANCE_SEEN: set()}, 
                   PERSONAL_MISSION_3: {PersonalMission3.INTRO: False, 
                                        PersonalMission3.INTRO_OP_8: False, 
                                        PersonalMission3.INTRO_OP_9: False, 
@@ -1393,8 +1378,8 @@ DEFAULT_VALUES = {KEY_FILTERS: {STORE_TAB: 0,
                        FUN_RANDOM_NOTIFICATIONS: {FUN_RANDOM_NOTIFICATIONS_FROZEN: set(), 
                                                   FUN_RANDOM_NOTIFICATIONS_PROGRESSIONS: set(), 
                                                   FUN_RANDOM_NOTIFICATIONS_SUB_MODES: set()}, 
-                       RESOURCE_WELL_NOTIFICATIONS: {RESOURCE_WELL_START_SHOWN: set(), 
-                                                     RESOURCE_WELL_END_SHOWN: set()}, 
+                       ResourceWell.NOTIFICATIONS: {ResourceWell.START_SHOWN: set(), 
+                                                    ResourceWell.END_SHOWN: set()}, 
                        COLLECTIONS_NOTIFICATIONS: {COLLECTION_START_SEEN: [], COLLECTION_RENEW_SEEN: {}, COLLECTIONS_UPDATED_ENTRY_SEEN: False}, 
                        COMP7_BOND_EQUIPMENT_REMINDER_SHOWN_TIMESTAMP: None, 
                        COMP7_LAST_SEASON_WITH_SEEN_REWARD: None, 
@@ -1503,11 +1488,14 @@ DEFAULT_VALUES = {KEY_FILTERS: {STORE_TAB: 0,
                                      COMP7_LAST_SEASON: None, 
                                      COMP7_WEEKLY_WIDGET_SHOWN_QUEST: {}, COMP7_LAST_SEASON_WHERE_STATISTICS_SHOWN: None, 
                                      COMP7_UMG_PROGRESSION_POINTS_SEEN: 0, 
-                                     COMP7_UMG_ENTRY_POINT_SEEN: False}, 
+                                     COMP7_UMG_ENTRY_POINT_SEEN: False, 
+                                     COMP7_PROGRESSION_PAGE_C11N_PROGRESS: {}}, 
                   COMP7_LIGHT_UI_SECTION: {COMP7_LIGHT_LAST_SEASON: None, 
                                            COMP7_LIGHT_PROGRESSION_POINTS_SEEN: 0, 
                                            COMP7_LIGHT_UMG_PROGRESSION_POINTS_SEEN: 0, 
                                            COMP7_LIGHT_UMG_SEEN_QUESTS: {}, COMP7_LIGHT_UMG_ENTRY_POINT_SEEN: False}, 
+                  INGAME_TOURNAMENT_SECTION: {INGAME_TOURNAMENT_WCI_INTRO_SEEN: False, 
+                                              INGAME_TOURNAMENT_OLS_INTRO_SEEN: False}, 
                   BR_UI_SECTION: {BR_PROGRESSION_SEEN_QUESTS: {}, BR_PROGRESSION_POINTS_SEEN: 0}, 
                   COLLECTIONS_SECTION: {COLLECTION_SHOWN_NEW_REWARDS: {}, COLLECTION_SHOWN_NEW_ITEMS: {}, COLLECTION_SHOWN_NEW_ITEMS_COUNT: {}, COLLECTION_TUTORIAL_COMPLETED: set(), 
                                         COLLECTION_WAS_ENABLED: True, 
@@ -1539,28 +1527,7 @@ DEFAULT_VALUES = {KEY_FILTERS: {STORE_TAB: 0,
                   EXCHANGE_XP_RATE_DISCOUNT_ANIMATION_SHOWED: set(), 
                   VEH_SKILL_TREE_HINT_SHOWN: {}, VEH_SKILL_TREE_POPUP_SHOWN: set(), 
                   VEH_SKILL_TREE_RECORDED_NOFITICATION_NODE: {}, VEH_SKILL_TREE_PRESTIGE_GLARE_SHOWN: set(), 
-                  VEH_SKILL_TREE_INTRO_SHOWN: False, 
-                  NY_DAILY_QUESTS_VISITED: False, 
-                  NY_CELEBRITY_DAY_QUESTS_VISITED_MASK: 0, 
-                  NY_CELEBRITY_DAY_QUESTS_COMPLETED_MASK: 0, 
-                  NY_CELEBRITY_ADV_QUESTS_VISITED_MASK: 0, 
-                  NY_CELEBRITY_ADV_QUESTS_COMPLETED_MASK: 0, 
-                  NY_GUEST_ACTIVITY_SHOWN: False, 
-                  NY_GIFT_MACHINE_BUY_TOKEN_VISITED: False, 
-                  NY_MAX_LEVEL_MESSAGE_CLOSE: False, 
-                  NY_DOG_PAGE_VISITED: False, 
-                  NY_NARKET_PLACE_PAGE_VISITED: None, 
-                  NY_CAT_PAGE_VISITED: False, 
-                  NY_FRIENDS_BANNER_SHOWN: False, 
-                  NY_NO_FRIENDS_PAGE_RESET_TIME: 0, 
-                  NY_SACK_INFO_VISITED: False, 
-                  NY_SACK_INFO_LAST_SELECTED: 1, 
-                  NY_RESOURCE_COLLECTING_AVAILABLE: False, 
-                  NY_RESOURCE_FRIENDS_COLLECTING_AVAILABLE: False, 
-                  NY_REWARD_KIT_OPEN: False, 
-                  NY_GIFT_MACHINE_HINT_VISIBLE: True, 
-                  NY_CHALLENGE_LAST_QUEST_COMPLETION_COUNT: 0, 
-                  OTG_EVENT_BANNER_ANIMATION_SHOWN: False}, 
+                  VEH_SKILL_TREE_INTRO_SHOWN: False}, 
    KEY_BATTLE_HINTS: {}, KEY_NEWBIE_HINTS: {}}
 
 def _filterAccountSection(dataSec):
@@ -1601,7 +1568,7 @@ def _recursiveStep(defaultDict, savedDict, finalDict):
 
 class AccountSettings(object):
     onSettingsChanging = Event.Event()
-    version = 99
+    version = 100
     settingsCore = dependency.descriptor(ISettingsCore)
     __cache = {'login': None, 'section': None}
     __sessionSettings = {'login': None, 'section': None}
@@ -2180,7 +2147,7 @@ class AccountSettings(object):
             if currVersion < 57:
                 for key, section in _filterAccountSection(ads):
                     obsoleteKeys = (
-                     RESOURCE_WELL_START_SHOWN, RESOURCE_WELL_END_SHOWN)
+                     ResourceWell.START_SHOWN, ResourceWell.END_SHOWN)
                     settings = AccountSettings._readSection(section, KEY_NOTIFICATIONS)
                     for sectionName in obsoleteKeys:
                         if sectionName in settings.keys():
@@ -2487,70 +2454,37 @@ class AccountSettings(object):
 
             if currVersion < 97:
                 for key, section in _filterAccountSection(ads):
+                    uiSettings = AccountSettings._readSection(section, KEY_UI_FLAGS)
+                    ingameTournamentFlags = {INGAME_TOURNAMENT_WCI_INTRO_SEEN: False, 
+                       INGAME_TOURNAMENT_OLS_INTRO_SEEN: False}
+                    uiSettings.write(INGAME_TOURNAMENT_SECTION, _pack(ingameTournamentFlags))
+
+            if currVersion < 97:
+                for key, section in _filterAccountSection(ads):
                     accSettings = AccountSettings._readSection(section, KEY_SETTINGS)
                     obsoleteKey = 'lowQualitySound'
                     if obsoleteKey in accSettings.keys():
                         accSettings.deleteSection(obsoleteKey)
 
             if currVersion < 98:
-                for key, section in _filterAccountSection(ads):
-                    keySettings = AccountSettings._readSection(section, KEY_SETTINGS)
-                    if LAST_LOGGED_SERVER_DAY in keySettings.keys():
-                        keySettings.write(LAST_LOGGED_SERVER_DAY, _pack(0))
-                    if LAST_SEEN_COLLECTING_NOTIFY_TIME in keySettings.keys():
-                        keySettings.write(LAST_SEEN_COLLECTING_NOTIFY_TIME, _pack(-1))
-                    if LAST_SEEN_FRIENDS_NOTIFY_TIME in keySettings.keys():
-                        keySettings.write(LAST_SEEN_FRIENDS_NOTIFY_TIME, _pack(-1))
-                    if LAST_SEEN_NO_FRIENDS_NOTIFY_TIME in keySettings.keys():
-                        keySettings.write(LAST_SEEN_NO_FRIENDS_NOTIFY_TIME, _pack(-1))
-                    keyUIFlagsSettings = AccountSettings._readSection(section, KEY_UI_FLAGS)
-                    if NY_DAILY_QUESTS_VISITED in keyUIFlagsSettings.keys():
-                        keyUIFlagsSettings.write(NY_DAILY_QUESTS_VISITED, _pack(False))
-                    if NY_CELEBRITY_DAY_QUESTS_VISITED_MASK in keyUIFlagsSettings.keys():
-                        keyUIFlagsSettings.write(NY_CELEBRITY_DAY_QUESTS_VISITED_MASK, _pack(0))
-                    if NY_CELEBRITY_DAY_QUESTS_COMPLETED_MASK in keyUIFlagsSettings.keys():
-                        keyUIFlagsSettings.write(NY_CELEBRITY_DAY_QUESTS_COMPLETED_MASK, _pack(0))
-                    if NY_CELEBRITY_ADV_QUESTS_VISITED_MASK in keyUIFlagsSettings.keys():
-                        keyUIFlagsSettings.write(NY_CELEBRITY_ADV_QUESTS_VISITED_MASK, _pack(0))
-                    if NY_CELEBRITY_ADV_QUESTS_COMPLETED_MASK in keyUIFlagsSettings.keys():
-                        keyUIFlagsSettings.write(NY_CELEBRITY_ADV_QUESTS_COMPLETED_MASK, _pack(0))
-                    if NY_GUEST_ACTIVITY_SHOWN in keyUIFlagsSettings.keys():
-                        keyUIFlagsSettings.write(NY_GUEST_ACTIVITY_SHOWN, _pack(False))
-                    if NY_GIFT_MACHINE_BUY_TOKEN_VISITED in keyUIFlagsSettings.keys():
-                        keyUIFlagsSettings.write(NY_GIFT_MACHINE_BUY_TOKEN_VISITED, _pack(False))
-                    if NY_MAX_LEVEL_MESSAGE_CLOSE in keyUIFlagsSettings.keys():
-                        keyUIFlagsSettings.write(NY_MAX_LEVEL_MESSAGE_CLOSE, _pack(False))
-                    if NY_DOG_PAGE_VISITED in keyUIFlagsSettings.keys():
-                        keyUIFlagsSettings.write(NY_DOG_PAGE_VISITED, _pack(False))
-                    if NY_NARKET_PLACE_PAGE_VISITED in keyUIFlagsSettings.keys():
-                        keyUIFlagsSettings.write(NY_NARKET_PLACE_PAGE_VISITED, _pack(None))
-                    if NY_CAT_PAGE_VISITED in keyUIFlagsSettings.keys():
-                        keyUIFlagsSettings.write(NY_CAT_PAGE_VISITED, _pack(False))
-                    if NY_FRIENDS_BANNER_SHOWN in keyUIFlagsSettings.keys():
-                        keyUIFlagsSettings.write(NY_FRIENDS_BANNER_SHOWN, _pack(False))
-                    if NY_SACK_INFO_VISITED in keyUIFlagsSettings.keys():
-                        keyUIFlagsSettings.write(NY_SACK_INFO_VISITED, _pack(False))
-                    if NY_SACK_INFO_LAST_SELECTED in keyUIFlagsSettings.keys():
-                        keyUIFlagsSettings.write(NY_SACK_INFO_LAST_SELECTED, _pack(1))
-                    if NY_RESOURCE_COLLECTING_AVAILABLE in keyUIFlagsSettings.keys():
-                        keyUIFlagsSettings.write(NY_RESOURCE_COLLECTING_AVAILABLE, _pack(False))
-                    if NY_RESOURCE_FRIENDS_COLLECTING_AVAILABLE in keyUIFlagsSettings.keys():
-                        keyUIFlagsSettings.write(NY_RESOURCE_FRIENDS_COLLECTING_AVAILABLE, _pack(False))
-                    if NY_REWARD_KIT_OPEN in keyUIFlagsSettings.keys():
-                        keyUIFlagsSettings.write(NY_REWARD_KIT_OPEN, _pack(False))
-                    if NY_GIFT_MACHINE_HINT_VISIBLE in keyUIFlagsSettings.keys():
-                        keyUIFlagsSettings.write(NY_GIFT_MACHINE_HINT_VISIBLE, _pack(True))
-                    if NY_NO_FRIENDS_PAGE_RESET_TIME in keyUIFlagsSettings.keys():
-                        keyUIFlagsSettings.write(NY_NO_FRIENDS_PAGE_RESET_TIME, _pack(0))
-
+                pass
             if currVersion < 99:
+                pass
+            if currVersion < 100:
+                for key, section in _filterAccountSection(ads):
+                    notifications = AccountSettings._readSection(section, KEY_NOTIFICATIONS)
+                    notifications.deleteSection('story_mode_vday')
+                    notifications.deleteSection('story_mode_scc')
+
                 for _, section in _filterAccountSection(ads):
                     keyUIFlagsSettings = AccountSettings._readSection(section, KEY_UI_FLAGS)
-                    if GRINCH_PROGRESSION in keyUIFlagsSettings.keys():
-                        keyUIFlagsSettings.write(GRINCH_PROGRESSION, _pack({'grinch_completed_quests': set(), 
-                           'grinch_progression_hint_state': set(), 
-                           'grinch_progression_current_hint_state': None, 
-                           'grinch_current_vehicle': 0}))
+                    if keyUIFlagsSettings.has_key('grinch_progression_keys'):
+                        keyUIFlagsSettings.deleteSection('grinch_progression_keys')
+                    accSettings = AccountSettings._readSection(section, KEY_SETTINGS)
+                    if accSettings.has_key('grinch_keys'):
+                        accSettings.deleteSection('grinch_keys')
+                    if accSettings.has_key('grinch_progression_key'):
+                        accSettings.deleteSection('grinch_progression_key')
 
             ads.writeInt('version', AccountSettings.version)
         return
@@ -2698,8 +2632,8 @@ class AccountSettings(object):
         return AccountSettings._getValue(name, KEY_NOTIFICATIONS, default=default)
 
     @staticmethod
-    def setNotifications(name, value):
-        AccountSettings._setValue(name, value, KEY_NOTIFICATIONS)
+    def setNotifications(name, value, force=False):
+        AccountSettings._setValue(name, value, KEY_NOTIFICATIONS, force=force)
 
     @staticmethod
     def getSessionSettings(name):

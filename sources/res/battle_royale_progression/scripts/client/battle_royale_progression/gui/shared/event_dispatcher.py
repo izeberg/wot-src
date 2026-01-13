@@ -1,4 +1,6 @@
-
+from gui.impl.pub.notification_commands import WindowNotificationCommand
+from helpers import dependency
+from skeletons.gui.impl import INotificationWindowController
 
 def showProgressionView(activeTab=None):
     from battle_royale.gui.impl.lobby.views.states import BattleRoyaleProgressionState
@@ -8,6 +10,8 @@ def showProgressionView(activeTab=None):
     BattleRoyaleProgressionState.goTo(ctx={'menuName': activeTab})
 
 
-def showAwardsView(stage):
+@dependency.replace_none_kwargs(notificationMgr=INotificationWindowController)
+def showAwardsView(stage, notificationMgr=None):
     from battle_royale_progression.gui.impl.lobby.views.battle_quest_awards_view import BattleQuestAwardsViewWindow
-    BattleQuestAwardsViewWindow(stage).load()
+    window = BattleQuestAwardsViewWindow(stage)
+    notificationMgr.append(WindowNotificationCommand(window))

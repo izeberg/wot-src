@@ -300,6 +300,10 @@ package net.wg.gui.lobby.menu
       public function as_showManualButton(param1:Boolean) : void
       {
          this.manualBtn.visible = this._showManualButton = param1;
+         if(!param1)
+         {
+            this._counterManager.removeCounter(DisplayObject(this.manualBtn),NEW_COUNTER_CONTAINER_ID);
+         }
          invalidate(INVALIDATE_BUTTONS_VISIBLE);
       }
       

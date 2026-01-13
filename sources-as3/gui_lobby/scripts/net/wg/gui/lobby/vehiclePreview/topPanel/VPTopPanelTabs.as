@@ -6,7 +6,7 @@ package net.wg.gui.lobby.vehiclePreview.topPanel
    public class VPTopPanelTabs extends VehiclePreviewTopPanelTabsMeta implements IVehiclePreviewTopPanelTabsMeta, IVPTopPanel
    {
       
-      private static const WIDTH:uint = 416;
+      private static const WIDTH:uint = 516;
       
       private static const HEIGHT:uint = 120;
        

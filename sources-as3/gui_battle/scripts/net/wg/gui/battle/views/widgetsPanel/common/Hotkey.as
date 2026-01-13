@@ -29,7 +29,7 @@ package net.wg.gui.battle.views.widgetsPanel.common
       
       private static const MIN_BG_W:int = 28;
       
-      private static const INVALID_KAY_NAME:String = "- -";
+      private static const INVALID_KEY_NAME:String = "--";
       
       private static const MIN_FILL_HEIGHT:int = 1;
       
@@ -255,7 +255,7 @@ package net.wg.gui.battle.views.widgetsPanel.common
          {
             return;
          }
-         var _loc1_:String = !!this._isValid ? this._state : MECHANIC_WIDGET_HOTKEY_CONST.ALERT;
+         var _loc1_:String = !!this._isValid ? this._state : MECHANIC_WIDGET_HOTKEY_CONST.INVALID_KEY;
          this.lid.visible = this._isLongKey;
          this.bg.mask = null;
          gotoAndStop(_loc1_);
@@ -268,9 +268,11 @@ package net.wg.gui.battle.views.widgetsPanel.common
       
       private function updateLabel() : void
       {
-         var _loc1_:String = !!this._isValid ? this._label : INVALID_KAY_NAME;
-         this.label.text = _loc1_;
-         this.filledLabel.text = _loc1_;
+         if(this._isValid)
+         {
+            this.label.text = this._label;
+            this.filledLabel.text = this._label;
+         }
       }
       
       private function updateLayout() : void

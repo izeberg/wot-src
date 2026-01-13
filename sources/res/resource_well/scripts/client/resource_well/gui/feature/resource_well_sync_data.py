@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from typing import Dict
 from account_helpers import AccountSyncData
 from resource_well_common.feature_constants import RESOURCE_WELL_PDATA_KEY

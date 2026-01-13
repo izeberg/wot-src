@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.743850 -0.000002 -2.928807</min>
+		<max>1.743850 1.101491 3.154956</max>
+	</visibilityBox>
+	<parent>vehicles/american/A190_Ares_85/normal/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/american/A190_Ares_85/normal/lod0/Chassis</nodefullVisual>
+</root>

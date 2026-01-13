@@ -102,7 +102,7 @@
 			</component>
 		</ComponentPool>
 		<ComponentPool>
-			<type>GunEffect</type>
+			<type>BW::Gun::Effects::EffectComponent</type>
 			<version>1</version>
 			<component>
 				<UUID>ddb79820-6536-453a-bf3e-77a45e1a3877</UUID>

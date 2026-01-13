@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/french/F134_Lorraine_120_Alby/normal/lod2/Chassis</nodefullVisual>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.632538 -0.000206 -3.116545</min>
+		<max>1.632538 1.023978 3.129783</max>
+	</visibilityBox>
+	<parent>vehicles/french/F134_Lorraine_120_Alby/normal/lod3/Chassis</parent>
+	<extent>96.000000</extent>
+</root>

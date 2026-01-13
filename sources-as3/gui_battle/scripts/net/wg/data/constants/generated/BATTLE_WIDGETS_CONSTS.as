@@ -27,15 +27,21 @@ package net.wg.data.constants.generated
       
       public static const STATIONARY_RELOAD:String = "stationaryReloadWidget";
       
+      public static const TEMPERATURE_GUN_OVERHEAT:String = "temperatureGunOverheatWidget";
+      
+      public static const TEMPERATURE_GUN_HEAT_ZONES:String = "temperatureGunHeatZonesWidget";
+      
+      public static const STAGED_JET_BOOSTERS:String = "StagedJetBoostersWidget";
+      
       public static const DUMMY:String = "dummy";
       
-      public static const MECHANICS_WIDGETS_RIGHT:Array = [ROCKET_ACCELERATOR,RECHARGEABLE_NITRO,CONCENTRATION,POWER,CHARGE_SHOT,SUPPORT_WEAPON,PILLBOX_SIEGE,STANCE_DANCE_TURBO,TARGET_DESIGNATOR_WIDGET];
+      public static const MECHANICS_WIDGETS_RIGHT:Array = [ROCKET_ACCELERATOR,RECHARGEABLE_NITRO,CONCENTRATION,POWER,CHARGE_SHOT,SUPPORT_WEAPON,PILLBOX_SIEGE,STANCE_DANCE_TURBO,TARGET_DESIGNATOR_WIDGET,STAGED_JET_BOOSTERS];
       
       public static const MECHANICS_WIDGETS_LEFT:Array = [STANCE_DANCE_FIGHT];
       
       public static const INFO_WIDGETS:Array = [STATIONARY_RELOAD];
       
-      public static const CENTRAL_WIDGETS:Array = [CHARGEABLE_BURST];
+      public static const CENTRAL_WIDGETS:Array = [CHARGEABLE_BURST,TEMPERATURE_GUN_OVERHEAT,TEMPERATURE_GUN_HEAT_ZONES];
        
       
       public function BATTLE_WIDGETS_CONSTS()

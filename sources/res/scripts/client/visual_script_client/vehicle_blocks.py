@@ -511,9 +511,11 @@ class OnVehicleCollided(Block, VehicleMeta):
             BigWorld.player().inputHandler.OnVehicleCollided -= self._onVehicleCollided
 
     def _onVehicleCollided(self, vehicleId, velocity):
-        self._vehicle.setValue(weakref.proxy(BigWorld.entity(vehicleId)))
-        self._velocity.setValue(velocity)
-        self._out.call()
+        vehicle = BigWorld.entity(vehicleId)
+        if vehicle:
+            self._vehicle.setValue(weakref.proxy(vehicle))
+            self._velocity.setValue(velocity)
+            self._out.call()
 
     @classmethod
     def blockAspects(cls):
@@ -540,9 +542,11 @@ class OnVehicleShaked(Block, VehicleMeta):
             BigWorld.player().inputHandler.OnVehicleShaked -= self._onVehicleShaked
 
     def _onVehicleShaked(self, vehicleId, shakeReason):
-        self._vehicle.setValue(weakref.proxy(BigWorld.entity(vehicleId)))
-        self._shakeReason.setValue(shakeReason)
-        self._out.call()
+        vehicle = BigWorld.entity(vehicleId)
+        if vehicle:
+            self._vehicle.setValue(weakref.proxy(vehicle))
+            self._shakeReason.setValue(shakeReason)
+            self._out.call()
 
     @classmethod
     def blockAspects(cls):
@@ -604,7 +608,7 @@ class OnDiscreteShotDone(Block, VehicleMeta):
             errorVScript(self, 'vehicle not found')
             return
         else:
-            vehicle.onDiscreteShotDone += self.__onDiscreteShotDone
+            vehicle.events.onDiscreteShotDone += self.__onDiscreteShotDone
             return
 
     def __unsubscribe(self):
@@ -612,30 +616,12 @@ class OnDiscreteShotDone(Block, VehicleMeta):
         if vehicle is None:
             return
         else:
-            vehicle.onDiscreteShotDone -= self.__onDiscreteShotDone
+            vehicle.events.onDiscreteShotDone -= self.__onDiscreteShotDone
             return
 
     def __onDiscreteShotDone(self, gunInstallationSlot):
         if gunInstallationSlot.isMainInstallation():
             self._onDiscreteShotDoneSlot.call()
-
-    @classmethod
-    def blockAspects(cls):
-        return [ASPECT.CLIENT]
-
-
-class HasDamagedModules(Block, VehicleMeta):
-
-    def __init__(self, *args, **kwargs):
-        super(HasDamagedModules, self).__init__(*args, **kwargs)
-        self._outSlot = self._makeDataOutputSlot('res', SLOT_TYPE.BOOL, self._execute)
-
-    def _execute(self):
-        from gui.battle_control import avatar_getter, vehicle_getter
-        from gui.battle_control.battle_constants import DEVICE_STATE_AS_DAMAGE
-        iterator = vehicle_getter.VehicleDeviceStatesIterator(avatar_getter.getVehicleDeviceStates(), avatar_getter.getVehicleTypeDescriptor())
-        damaged = [ name for name, state in iterator if state in DEVICE_STATE_AS_DAMAGE ]
-        self._outSlot.setValue(bool(damaged))
 
     @classmethod
     def blockAspects(cls):

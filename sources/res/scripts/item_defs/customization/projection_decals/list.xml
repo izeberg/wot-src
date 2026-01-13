@@ -2417,9 +2417,6 @@
 		<historical>1</historical>
 		<priceGroup>projection_decals 110g notInShop</priceGroup>
 		<vehicleFilter>
-			<include>
-				<levels>6 7 8 9 10</levels>
-			</include>
 			<exclude>
 				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF usa:A104_M4A3E8A usa:A126_PzVI_Tiger_II_capt ussr:R61_Object252_BF usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
@@ -3704,7 +3701,7 @@
 		<priceGroup>projection_decals 50g notInShop</priceGroup>
 		<vehicleFilter>
 			<include>
-				<levels>8 9 10</levels>
+				<levels>8 9 10 11</levels>
 			</include>
 			<exclude>
 				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF usa:A104_M4A3E8A usa:A126_PzVI_Tiger_II_capt ussr:R61_Object252_BF usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
@@ -4533,7 +4530,7 @@
 		<priceGroup>projection_decals 50g notInShop</priceGroup>
 		<vehicleFilter>
 			<include>
-				<levels>8 10</levels>
+				<levels>8 10 11</levels>
 			</include>
 			<exclude>
 				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF usa:A104_M4A3E8A usa:A126_PzVI_Tiger_II_capt ussr:R61_Object252_BF usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
@@ -6466,7 +6463,7 @@
 		<priceGroup>projection_decals 50g notInShop</priceGroup>
 		<vehicleFilter>
 			<include>
-				<levels>8 9 10</levels>
+				<levels>8 9 10 11</levels>
 			</include>
 			<exclude>
 				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF usa:A104_M4A3E8A usa:A126_PzVI_Tiger_II_capt ussr:R61_Object252_BF usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
@@ -8503,7 +8500,7 @@
 		<priceGroup>projection_decals 50g notInShop</priceGroup>
 		<vehicleFilter>
 			<include>
-				<levels>8 9 10</levels>
+				<levels>8 9 10 11</levels>
 			</include>
 			<exclude>
 				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF usa:A104_M4A3E8A usa:A126_PzVI_Tiger_II_capt ussr:R61_Object252_BF usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
@@ -10475,6 +10472,48 @@
 			<tags>styleOnly formfactor_square disableVerticalMirror</tags>
 			<mirror>false</mirror>
 		</projection_decal>
+		<projection_decal>
+			<id>1271</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_960.dds</texture>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_534</userString>
+			<tags>styleOnly formfactor_square disableVerticalMirror</tags>
+			<mirror>false</mirror>
+		</projection_decal>
+		<projection_decal>
+			<id>1272</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_961.dds</texture>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_528</userString>
+			<tags>styleOnly formfactor_square disableVerticalMirror</tags>
+			<mirror>false</mirror>
+		</projection_decal>
+		<projection_decal>
+			<id>1273</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_962.dds</texture>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_529</userString>
+			<tags>styleOnly formfactor_square disableVerticalMirror</tags>
+			<mirror>false</mirror>
+		</projection_decal>
+		<projection_decal>
+			<id>1274</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_963.dds</texture>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_530</userString>
+			<tags>styleOnly formfactor_square disableVerticalMirror</tags>
+			<mirror>false</mirror>
+		</projection_decal>
+		<projection_decal>
+			<id>1275</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_964.dds</texture>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_531</userString>
+			<tags>styleOnly formfactor_square disableVerticalMirror</tags>
+			<mirror>false</mirror>
+		</projection_decal>
+		<projection_decal>
+			<id>1276</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_965.dds</texture>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_532</userString>
+			<tags>styleOnly formfactor_square disableVerticalMirror</tags>
+			<mirror>false</mirror>
+		</projection_decal>
 		<name>Onslaught 2025</name>
 	</itemGroup>
 	<itemGroup>
@@ -10624,6 +10663,57 @@
 			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_908.dds</texture>
 			<userString>#vehicle_customization:projection_decals/special/projection_decal_908</userString>
 			<tags>formfactor_square</tags>
+			<mirror>false</mirror>
+		</projection_decal>
+		<projection_decal>
+			<id>1330</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1025.dds</texture>
+			<userString>#vehicle_customization:special_style/bp2025_holiday_5</userString>
+			<tags>styleOnly formfactor_square hiddenInUI</tags>
+			<mirror>false</mirror>
+			<glossTexture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1025_GMM.dds</glossTexture>
+		</projection_decal>
+		<projection_decal>
+			<id>1337</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1026.dds</texture>
+			<userString>#vehicle_customization:special_style/bp2025_holiday_5</userString>
+			<tags>styleOnly formfactor_square hiddenInUI</tags>
+			<mirror>false</mirror>
+			<glossTexture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1026_GMM.dds</glossTexture>
+		</projection_decal>
+		<projection_decal>
+			<id>1342</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1027.dds</texture>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_1027</userString>
+			<tags>formfactor_square disableVerticalMirror</tags>
+			<mirror>false</mirror>
+		</projection_decal>
+		<projection_decal>
+			<id>1343</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1028.dds</texture>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_1028</userString>
+			<tags>formfactor_square disableVerticalMirror</tags>
+			<mirror>false</mirror>
+		</projection_decal>
+		<projection_decal>
+			<id>1344</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1029.dds</texture>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_1029</userString>
+			<tags>formfactor_square</tags>
+			<mirror>false</mirror>
+		</projection_decal>
+		<projection_decal>
+			<id>1345</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1030.dds</texture>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_1030</userString>
+			<tags>formfactor_square</tags>
+			<mirror>false</mirror>
+		</projection_decal>
+		<projection_decal>
+			<id>1346</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1031.dds</texture>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_1031</userString>
+			<tags>formfactor_square disableVerticalMirror</tags>
 			<mirror>false</mirror>
 		</projection_decal>
 		<name>BattlePass 2025</name>
@@ -11218,6 +11308,26 @@
 		<userString>#vehicle_customization:projection_decals/special</userString>
 		<season>ALL</season>
 		<historical>1</historical>
+		<priceGroup>projection_decals 160g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF poland:Pl15_60TP_Lewandowskiego_CFE_A usa:A13_T34_hvy_BF usa:A104_M4A3E8A usa:A126_PzVI_Tiger_II_capt usa:A174_T57_58_Rush_Ep1 ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<projection_decal>
+			<id>1289</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_978.dds</texture>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_978</userString>
+			<tags>formfactor_square onlyVerticalMirror</tags>
+			<maxNumber>3</maxNumber>
+			<mirror>false</mirror>
+		</projection_decal>
+		<name>Well Deserved Reward 2025</name>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:projection_decals/special</userString>
+		<season>ALL</season>
+		<historical>1</historical>
 		<priceGroup>projection_decals 175g notInShop</priceGroup>
 		<vehicleFilter>
 			<exclude>
@@ -11344,10 +11454,10 @@
 		<name>Pub West EBR Racing</name>
 	</itemGroup>
 	<itemGroup>
-		<name>WCI 2025</name>
+		<name>Advent Calendar 2025</name>
 		<userString>#vehicle_customization:projection_decals/special</userString>
 		<season>ALL</season>
-		<historical>1</historical>
+		<historical>2</historical>
 		<priceGroup>projection_decals 160g notInShop</priceGroup>
 		<vehicleFilter>
 			<exclude>
@@ -11355,71 +11465,18 @@
 			</exclude>
 		</vehicleFilter>
 		<projection_decal>
-			<id>1313</id>
-			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_999.dds</texture>
-			<userString>#vehicle_customization:special_style/wci2025_1</userString>
-			<tags>styleOnly formfactor_rect1x2</tags>
-			<mirror>false</mirror>
-			<glossTexture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_999_GMM.dds</glossTexture>
-		</projection_decal>
-		<projection_decal>
-			<id>1314</id>
-			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1000.dds</texture>
-			<userString>#vehicle_customization:projection_decals/special/projection_decal_1000</userString>
-			<tags>formfactor_square</tags>
-			<mirror>false</mirror>
-		</projection_decal>
-		<projection_decal>
-			<id>1315</id>
-			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1001.dds</texture>
-			<userString>#vehicle_customization:projection_decals/special/projection_decal_1001</userString>
-			<tags>formfactor_square disableVerticalMirror</tags>
-			<mirror>false</mirror>
-		</projection_decal>
-		<projection_decal>
-			<id>1316</id>
-			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1002.dds</texture>
-			<userString>#vehicle_customization:projection_decals/special/projection_decal_1002</userString>
-			<tags>formfactor_square disableVerticalMirror</tags>
-			<mirror>false</mirror>
-		</projection_decal>
-	</itemGroup>
-	<itemGroup>
-		<name>Girls und Panzser 2026 Pin-Up</name>
-		<userString>#vehicle_customization:projection_decals/pin_up</userString>
-		<season>ALL</season>
-		<historical>1</historical>
-		<priceGroup>projection_decals 160g notInShop</priceGroup>
-		<vehicleFilter>
-			<exclude>
-				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF poland:Pl15_60TP_Lewandowskiego_CFE_A usa:A13_T34_hvy_BF usa:A104_M4A3E8A usa:A126_PzVI_Tiger_II_capt usa:A174_T57_58_Rush_Ep1 ussr:R61_Object252_BF</vehicles>
-			</exclude>
-		</vehicleFilter>
-		<projection_decal>
-			<id>16061</id>
-			<texture>gui/maps/vehicles/decals/projection_decals/pin_up/projection_decal_71.dds</texture>
-			<userString>#vehicle_customization:projection_decals/pin_up/projection_decal_71</userString>
+			<id>1317</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1003.dds</texture>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_1003</userString>
 			<tags>formfactor_square direction_left_to_right</tags>
-			<mirror>false</mirror>
+			<mirror>true</mirror>
 		</projection_decal>
-	</itemGroup>
-	<itemGroup>
-		<name>Girls und Panzser 2026</name>
-		<userString>#vehicle_customization:projection_decals/special</userString>
-		<season>ALL</season>
-		<historical>1</historical>
-		<priceGroup>projection_decals 160g notInShop</priceGroup>
-		<vehicleFilter>
-			<exclude>
-				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF poland:Pl15_60TP_Lewandowskiego_CFE_A usa:A13_T34_hvy_BF usa:A104_M4A3E8A usa:A126_PzVI_Tiger_II_capt usa:A174_T57_58_Rush_Ep1 ussr:R61_Object252_BF</vehicles>
-			</exclude>
-		</vehicleFilter>
 		<projection_decal>
-			<id>16062</id>
-			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_991.dds</texture>
-			<userString>#vehicle_customization:projection_decals/special/projection_decal_991</userString>
-			<tags>formfactor_square direction_left_to_right</tags>
-			<mirror>false</mirror>
+			<id>1318</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1004.dds</texture>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_1004</userString>
+			<tags>formfactor_square direction_right_to_left</tags>
+			<mirror>true</mirror>
 		</projection_decal>
 	</itemGroup>
 	<itemGroup>
@@ -11546,51 +11603,6 @@
 		</projection_decal>
 	</itemGroup>
 	<itemGroup>
-		<userString>#vehicle_customization:projection_decals/special</userString>
-		<season>ALL</season>
-		<historical>1</historical>
-		<priceGroup>projection_decals 160g notInShop</priceGroup>
-		<vehicleFilter>
-			<exclude>
-				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF poland:Pl15_60TP_Lewandowskiego_CFE_A usa:A13_T34_hvy_BF usa:A104_M4A3E8A usa:A126_PzVI_Tiger_II_capt usa:A174_T57_58_Rush_Ep1 ussr:R61_Object252_BF</vehicles>
-			</exclude>
-		</vehicleFilter>
-		<projection_decal>
-			<id>1289</id>
-			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_978.dds</texture>
-			<userString>#vehicle_customization:projection_decals/special/projection_decal_978</userString>
-			<tags>formfactor_square onlyVerticalMirror</tags>
-			<mirror>false</mirror>
-		</projection_decal>
-		<name>Well Deserved Reward 2025</name>
-	</itemGroup>
-	<itemGroup>
-		<name>Advent Calendar 2025</name>
-		<userString>#vehicle_customization:projection_decals/special</userString>
-		<season>ALL</season>
-		<historical>2</historical>
-		<priceGroup>projection_decals 160g notInShop</priceGroup>
-		<vehicleFilter>
-			<exclude>
-				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF poland:Pl15_60TP_Lewandowskiego_CFE_A usa:A13_T34_hvy_BF usa:A104_M4A3E8A usa:A126_PzVI_Tiger_II_capt usa:A174_T57_58_Rush_Ep1 ussr:R61_Object252_BF</vehicles>
-			</exclude>
-		</vehicleFilter>
-		<projection_decal>
-			<id>1317</id>
-			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1003.dds</texture>
-			<userString>#vehicle_customization:projection_decals/special/projection_decal_1003</userString>
-			<tags>formfactor_square direction_left_to_right</tags>
-			<mirror>true</mirror>
-		</projection_decal>
-		<projection_decal>
-			<id>1318</id>
-			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1004.dds</texture>
-			<userString>#vehicle_customization:projection_decals/special/projection_decal_1004</userString>
-			<tags>formfactor_square direction_right_to_left</tags>
-			<mirror>true</mirror>
-		</projection_decal>
-	</itemGroup>
-	<itemGroup>
 		<name>Winter Raid 26</name>
 		<userString>#vehicle_customization:projection_decals/special</userString>
 		<season>ALL</season>
@@ -11607,6 +11619,85 @@
 			<mirror>true</mirror>
 			<userString>#vehicle_customization:projection_decals/special/projection_decal_990</userString>
 			<tags>direction_right_to_left formfactor_square</tags>
+		</projection_decal>
+	</itemGroup>
+	<itemGroup>
+		<name>WCI 2025</name>
+		<userString>#vehicle_customization:projection_decals/special</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>projection_decals 160g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF poland:Pl15_60TP_Lewandowskiego_CFE_A usa:A13_T34_hvy_BF usa:A104_M4A3E8A usa:A126_PzVI_Tiger_II_capt usa:A174_T57_58_Rush_Ep1 ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<projection_decal>
+			<id>1313</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_999.dds</texture>
+			<userString>#vehicle_customization:special_style/wci2025_1</userString>
+			<tags>styleOnly formfactor_rect1x2</tags>
+			<mirror>false</mirror>
+			<glossTexture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_999_GMM.dds</glossTexture>
+		</projection_decal>
+		<projection_decal>
+			<id>1314</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1000.dds</texture>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_1000</userString>
+			<tags>formfactor_square</tags>
+			<mirror>false</mirror>
+		</projection_decal>
+		<projection_decal>
+			<id>1315</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1001.dds</texture>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_1001</userString>
+			<tags>formfactor_square disableVerticalMirror</tags>
+			<mirror>false</mirror>
+		</projection_decal>
+		<projection_decal>
+			<id>1316</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1002.dds</texture>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_1002</userString>
+			<tags>formfactor_square disableVerticalMirror</tags>
+			<mirror>false</mirror>
+		</projection_decal>
+	</itemGroup>
+	<itemGroup>
+		<name>Girls und Panzser 2026 Pin-Up</name>
+		<userString>#vehicle_customization:projection_decals/pin_up</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>projection_decals 160g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF poland:Pl15_60TP_Lewandowskiego_CFE_A usa:A13_T34_hvy_BF usa:A104_M4A3E8A usa:A126_PzVI_Tiger_II_capt usa:A174_T57_58_Rush_Ep1 ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<projection_decal>
+			<id>16061</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/pin_up/projection_decal_71.dds</texture>
+			<userString>#vehicle_customization:projection_decals/pin_up/projection_decal_71</userString>
+			<tags>formfactor_square direction_left_to_right</tags>
+			<mirror>false</mirror>
+		</projection_decal>
+	</itemGroup>
+	<itemGroup>
+		<name>Girls und Panzser 2026</name>
+		<userString>#vehicle_customization:projection_decals/special</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>projection_decals 160g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF poland:Pl15_60TP_Lewandowskiego_CFE_A usa:A13_T34_hvy_BF usa:A104_M4A3E8A usa:A126_PzVI_Tiger_II_capt usa:A174_T57_58_Rush_Ep1 ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<projection_decal>
+			<id>16062</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_991.dds</texture>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_991</userString>
+			<tags>formfactor_square direction_left_to_right</tags>
+			<mirror>false</mirror>
 		</projection_decal>
 	</itemGroup>
 	<itemGroup>
@@ -13893,6 +13984,20 @@
 			<mirror>true</mirror>
 			<userString>#vehicle_customization:projection_decals/special/projection_decal_1015</userString>
 			<tags>disableVerticalMirror formfactor_square direction_right_to_left</tags>
+		</projection_decal>
+		<projection_decal>
+			<id>16066</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1032.dds</texture>
+			<mirror>true</mirror>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_1032</userString>
+			<tags>disableVerticalMirror direction_right_to_left formfactor_square</tags>
+		</projection_decal>
+		<projection_decal>
+			<id>16067</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_1033.dds</texture>
+			<mirror>true</mirror>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_1033</userString>
+			<tags>direction_right_to_left formfactor_square disableVerticalMirror</tags>
 		</projection_decal>
 	</itemGroup>
 	<itemGroup>

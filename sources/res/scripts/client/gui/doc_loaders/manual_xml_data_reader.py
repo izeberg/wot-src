@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import itertools, logging
 from gui.impl import backport
 from gui.impl.gen import R

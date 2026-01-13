@@ -980,6 +980,33 @@ msgstr "M-VI-Y"
 msgid "A144_M_VI_Y_CFE_R"
 msgstr "M-VI-Y (120)"
 
+msgid "A144_M_VI_Y_CFE_RC"
+msgstr "OCP Peacekeeper"
+
+msgid "A144_M_VI_Y_CFE_RC_desc"
+msgstr ""
+"Omni Consumer Products proudly presents the latest evolution in law "
+"enforcement technology: the OCP Peacekeeper. Building on the resounding "
+"success of our RoboCop unit, the Peacekeeper combines reinforced armor, "
+"advanced weapon systems, and cutting-edge operational efficiency in a single"
+" product. Engineered to deliver maximum performance without the limitations "
+"of biological components, the OCP Peacekeeper sets a new standard for "
+"policing modern urban environments. Witness the future of public "
+"security—brought to you by OCP."
+
+msgid "A144_M_VI_Y_CFE_RC_long_special"
+msgstr ""
+"The OCP Peacekeeper is a Tier IX American heavy tank that excels at holding "
+"down key positions thanks to its impressive turret armor and exceptional gun"
+" depression angles. It is capable of causing significant single-shot damage,"
+" and also boasts the familiar reserve track mechanic."
+
+msgid "A144_M_VI_Y_CFE_RC_short"
+msgstr "Peacekeeper"
+
+msgid "A144_M_VI_Y_CFE_RC_short_special"
+msgstr "Impressive turret armor, exceptional gun depression angles"
+
 msgid "A144_M_VI_Y_CFE_R_desc"
 msgstr ""
 "A project proposed by the H.L. Yoh company as part of a program to develop "
@@ -1861,6 +1888,62 @@ msgstr ""
 msgid "A183_XM69_Hacker_short"
 msgstr "Hacker"
 
+msgid "A187_Ares_75"
+msgstr "Ares 75"
+
+msgid "A187_Ares_75_desc"
+msgstr ""
+"In the late 1970s, the U.S.A. developed a 75 mm smoothbore gun that could "
+"fire at both ground-based and aerial targets. The gun could hit any tank of "
+"the period in the sides or rear. The military planned to mount it on various"
+" armored vehicles, including the Ares 75 medium tank, the prototype of which"
+" was built in 1979. The vehicle stood out with its good armor protection and"
+" special chassis with an additional inner track, which preserved mobility "
+"when the main track was damaged. Following trials, the vehicle did not enter"
+" mass production as more traditional designs were favored."
+
+msgid "A187_Ares_75_short"
+msgstr "Ares 75"
+
+msgid "A188_Ares_MTB"
+msgstr "Ares MTB"
+
+msgid "A188_Ares_MTB_desc"
+msgstr ""
+"In the late 1970s, the Pacific Car and Foundry company developed a project "
+"for a medium tank with a smoothbore gun. The vehicle was supposed to develop"
+" into a main battle tank with a new armament set, as well as enhanced "
+"detection and aiming systems. A 75 mm or 85 mm gun was considered for the "
+"primary weapon. The vehicle was small but fairly heavy. The project was "
+"deemed overly complicated due to its huge two-ton engine, relatively weak "
+"armament, and the inclusion of dual drive for the outer and inner tracks. "
+"The work was stopped before a prototype was built."
+
+msgid "A188_Ares_MTB_long_special"
+msgstr "?empty?"
+
+msgid "A188_Ares_MTB_short"
+msgstr "Ares MTB"
+
+msgid "A188_Ares_MTB_short_special"
+msgstr "?empty?"
+
+msgid "A189_Ares_90"
+msgstr "Ares 90"
+
+msgid "A189_Ares_90_descr"
+msgstr ""
+"Despite failing to promote its own weapons, the Ares company collaborated "
+"with Cadillac Gage to develop another project that was supposed to interest "
+"the U.S. military. It was a simplified version of a light, rapid armored "
+"vehicle with high-tech solutions and low production costs. As armament, 85 "
+"mm and 90 mm Ares guns were proposed, including the Twilight-2000 gun. "
+"However, a \"light\" vehicle that weighed nearly 50 tons impressed neither "
+"the Army nor the Marine Corps."
+
+msgid "A189_Ares_90_short"
+msgstr "Ares 90"
+
 msgid "A18_M41"
 msgstr "M41"
 
@@ -1869,6 +1952,47 @@ msgstr ""
 "Light SPG on the M24 chassis saw service in the U.S. Army until the mid "
 "1950s. Some vehicles were supplied to France. According to various sources, "
 "about 85–250 SPGs were manufactured."
+
+msgid "A190_Ares_85"
+msgstr "Ares 85"
+
+msgid "A190_Ares_85_desc"
+msgstr ""
+"An alternative version of a tank developed as part of the CCVM (Close Combat"
+" Vehicle Medium) project. The engineers proposed mounting an improved gun "
+"and replacing the gas-diesel engine with a gas one. The more powerful motor "
+"made it possible to enhance the armor, which allowed for a new hull and "
+"turret. However, following prototype trials the vehicle did not enter mass "
+"production."
+
+msgid "A190_Ares_85_short"
+msgstr "Ares 85"
+
+msgid "A191_Ares_90_C"
+msgstr "Ares 90 C"
+
+msgid "A191_Ares_90_C_desc"
+msgstr ""
+"One of several projects for a tank equipped with an automatic gun of the "
+"Ares family. All shortcomings identified in previous developments were fixed"
+" in the vehicle. The armament and armor were significantly enhanced, and the"
+" mobility was maximally improved by mounting an augmented version of the "
+"Caterpillar LVMS-1050 VHOTF turbodiesel engine, making it possible to "
+"accelerate to a high top speed. The vehicle did not enter mass production, "
+"as during that period the military was already developing a unified main "
+"battle tank with a classic layout, which was deemed a more reliable and "
+"promising option."
+
+msgid "A191_Ares_90_C_long_special"
+msgstr ""
+"An unconventional design and decent protection make the Ares 90 C excel at "
+"close-range combat. With optimal autocannon heat management, the vehicle is "
+"never caught off-guard and is always ready to unleash its impressive "
+"firepower. Reserve tracks and good mobility help it stay on the move, "
+"looking for new tactical possibilities."
+
+msgid "A191_Ares_90_C_short"
+msgstr "Ares 90 C"
 
 msgid "A192_M4A4_Firefly_CFE_A"
 msgstr "Sherman Firefly Saunders"
@@ -2447,6 +2571,9 @@ msgstr "AN/VRC-7A"
 msgid "AN_ARC_27_RC"
 msgstr "AN/GRC-7 RC"
 
+msgid "AN_ARC_27_RC_C"
+msgstr "AN/GRC-7 RC"
+
 msgid "AN_GRC_6_SPHT"
 msgstr "AN/GRC-6 SPHT"
 
@@ -2497,6 +2624,21 @@ msgstr "AN/VRC-12"
 
 msgid "AN_VRC_12A"
 msgstr "AN/VRC-12"
+
+msgid "AN_VRC_12_10"
+msgstr "AN/VRC-12/10"
+
+msgid "AN_VRC_12_11"
+msgstr "AN/VRC-12/11"
+
+msgid "AN_VRC_12_8"
+msgstr "AN/VRC-12/8"
+
+msgid "AN_VRC_12_9"
+msgstr "AN/VRC-12/9"
+
+msgid "AN_VRC_12_9B"
+msgstr "AN/VRC-12/9B"
 
 msgid "AN_VRC_3B"
 msgstr "AN/VRC-3B"
@@ -2554,6 +2696,28 @@ msgstr "WS No. 19 A Special"
 
 msgid "Buick_series_60"
 msgstr "Buick Series 60"
+
+msgid "Caterpillar_LVMS_1050_EHO"
+msgstr "Caterpillar LVMS-1050 EHO"
+
+msgid "Caterpillar_LVMS_1050_EHO_short"
+msgstr ""
+"Caterpillar\n"
+"LVMS-1050 EHO"
+
+msgid "Caterpillar_LVMS_1050_VHO"
+msgstr "Caterpillar LVMS-1050 VHO"
+
+msgid "Caterpillar_LVMS_1050_VHOTF"
+msgstr "Caterpillar LVMS-1050 VHOTF"
+
+msgid "Caterpillar_LVMS_1050_VHO_short"
+msgstr ""
+"Caterpillar\n"
+"LVMS-1050 VHO"
+
+msgid "Chassis_1_A191_Ares_90_C"
+msgstr "Fighter"
 
 msgid "Chassis_A01_T1_Cunningham"
 msgstr "T1 Cunningham"
@@ -2756,6 +2920,9 @@ msgstr "M-VI-Y B"
 msgid "Chassis_A144_M_VI_Y_CFE_R"
 msgstr "M-VI-Y (120)"
 
+msgid "Chassis_A144_M_VI_Y_CFE_RC"
+msgstr "OCP Peacekeeper"
+
 msgid "Chassis_A145_TS_54"
 msgstr "TS-54"
 
@@ -2858,11 +3025,32 @@ msgstr "T803"
 msgid "Chassis_A183_XM69_Hacker"
 msgstr "XM69 Hacker"
 
+msgid "Chassis_A187_Ares_75"
+msgstr "Ares 75 DARPA"
+
+msgid "Chassis_A187_Ares_75_2"
+msgstr "Ares 75 HIMAG"
+
+msgid "Chassis_A188_Ares_MTB"
+msgstr "Ares MTB"
+
+msgid "Chassis_A189_Ares_90"
+msgstr "Ares 90"
+
 msgid "Chassis_A18_M41"
 msgstr "T72"
 
 msgid "Chassis_A18_M41_2"
 msgstr "T72E1"
+
+msgid "Chassis_A190_Ares_85"
+msgstr "Ares 85 DARPA"
+
+msgid "Chassis_A190_Ares_85_2"
+msgstr "Ares 85 HIMAG"
+
+msgid "Chassis_A191_Ares_90_C"
+msgstr "Ares 2000"
 
 msgid "Chassis_A192_M4A4_Firefly_CFE_A"
 msgstr "Sherman Firefly Saunders"
@@ -3281,6 +3469,14 @@ msgstr ""
 msgid "Continental_AOSI_1195_5_Y_VI_RC"
 msgstr "Continental AOSI-1195-5 Y VI RC"
 
+msgid "Continental_AOSI_1195_5_Y_VI_RC_C"
+msgstr "Continental AOSI-1195-5 Y VI RC"
+
+msgid "Continental_AOSI_1195_5_Y_VI_RC_C_short"
+msgstr ""
+"Continental\n"
+"AOSI-1195-5 Y VI RC"
+
 msgid "Continental_AOSI_1195_5_Y_VI_RC_short"
 msgstr ""
 "Continental\n"
@@ -3605,6 +3801,14 @@ msgstr ""
 msgid "Continental_AV_1790_5B"
 msgstr "Continental AV-1790-5B"
 
+msgid "Continental_AV_1790_5BX"
+msgstr "Continental AV-1790-5BX"
+
+msgid "Continental_AV_1790_5BX_short"
+msgstr ""
+"Continental\n"
+"AV-1790-5BX"
+
 msgid "Continental_AV_1790_5B_3"
 msgstr "Continental AV-1790-5B-3"
 
@@ -3676,6 +3880,9 @@ msgid "Continental_AV_1790_7_short"
 msgstr ""
 "Continental\n"
 "AV-1790-7"
+
+msgid "Continental_AV_1790_8"
+msgstr "Continental AV-1790-8"
 
 msgid "Continental_AX_1770"
 msgstr "Continental AX-1770"
@@ -3790,6 +3997,12 @@ msgstr "Cunningham V8"
 
 msgid "Curtiss_D_12"
 msgstr "Curtiss D-12"
+
+msgid "Curtiss_Wright_RC2_350"
+msgstr "Curtiss Wright RC2-350"
+
+msgid "Curtiss_Wright_RC2_350_T_C"
+msgstr "Curtiss Wright RC2-350 T-C"
 
 msgid "D51080_BPXIV"
 msgstr "D51080"
@@ -4824,6 +5037,9 @@ msgstr "M-VI-Y A"
 msgid "Turret_1_A144_M_VI_Y_CFE_R"
 msgstr "M-VI-Y (120)"
 
+msgid "Turret_1_A144_M_VI_Y_CFE_RC"
+msgstr "OCP Peacekeeper"
+
 msgid "Turret_1_A145_TS_54"
 msgstr "TS-54"
 
@@ -4920,8 +5136,23 @@ msgstr "T803"
 msgid "Turret_1_A183_XM69_Hacker"
 msgstr "XM69 Hacker"
 
+msgid "Turret_1_A187_Ares_75"
+msgstr "Ares 75"
+
+msgid "Turret_1_A188_Ares_MTB"
+msgstr "Ares MTB"
+
+msgid "Turret_1_A189_Ares_90"
+msgstr "Ares 90"
+
 msgid "Turret_1_A18_M41"
 msgstr "M41 HMC"
+
+msgid "Turret_1_A190_Ares_85"
+msgstr "Ares 85"
+
+msgid "Turret_1_A191_Ares_90_C"
+msgstr "Ares 2000"
 
 msgid "Turret_1_A192_M4A4_Firefly_CFE_A"
 msgstr "Sherman Firefly Saunders"
@@ -5848,6 +6079,9 @@ msgstr "APBC M358"
 msgid "_120mm_APCR_M361_M_VI_Y_RC"
 msgstr "APCR M361 (M-VI-Y) RC"
 
+msgid "_120mm_APCR_M361_M_VI_Y_RC_C"
+msgstr "APCR M361 RC"
+
 msgid "_120mm_APCR_T62"
 msgstr "APCR T62"
 
@@ -5950,6 +6184,9 @@ msgstr "120 mm American British Gun"
 msgid "_120mm_American_British_Gun_RC"
 msgstr "120 mm American British Gun RC"
 
+msgid "_120mm_American_British_Gun_RC_C"
+msgstr "120 mm American British Gun RC"
+
 msgid "_120mm_Delta_SPHT"
 msgstr "120 mm Delta SPHT"
 
@@ -6028,6 +6265,9 @@ msgstr "HEAT M469 (M-VI-Y)"
 msgid "_120mm_HEAT_M469_M_VI_Y_RC"
 msgstr "HEAT M469 (M-VI-Y) RC"
 
+msgid "_120mm_HEAT_M469_M_VI_Y_RC_C"
+msgstr "HEAT M469 RC"
+
 msgid "_120mm_HEAT_M469_T122"
 msgstr "HEAT M469 (T122)"
 
@@ -6081,6 +6321,9 @@ msgstr "HE T15E3 (M-VI-Y)"
 
 msgid "_120mm_HE_T15E3_M_VI_Y_RC"
 msgstr "HE T15E3 (M-VI-Y) RC"
+
+msgid "_120mm_HE_T15E3_M_VI_Y_RC_C"
+msgstr "HE T15E3 RC"
 
 msgid "_120mm_HE_T15E3_T122"
 msgstr "HE T15E3 (T122)"
@@ -6657,6 +6900,24 @@ msgstr "APCR Mk. 1T"
 msgid "_6pdr_AP_MKs_4"
 msgstr "AP Mk. 4"
 
+msgid "_75mm_AAAC_I"
+msgstr "AAAC-I"
+
+msgid "_75mm_AAAC_II"
+msgstr "AAAC-II"
+
+msgid "_75mm_AAAC_II_FS"
+msgstr "AAAC-II FS"
+
+msgid "_75mm_AAAC_II_Super"
+msgstr "AAAC-II «Super»"
+
+msgid "_75mm_AAAC_I_FS"
+msgstr "AAAC-I FS"
+
+msgid "_75mm_AAAC_I_Super"
+msgstr "AAAC-I «Super»"
+
 msgid "_75mm_APC_M61_M24_M17"
 msgstr "APC M61 (M24/M17)"
 
@@ -6683,6 +6944,24 @@ msgstr "3-inch AT Gun M7"
 
 msgid "_75mm_AT_Howitzer_M3"
 msgstr "75 mm AT Howitzer M3"
+
+msgid "_75mm_Ares_ADMAG"
+msgstr "75 mm Ares ADMAG"
+
+msgid "_75mm_Ares_MC_AAAC"
+msgstr "75 mm Ares MC-AAAC"
+
+msgid "_75mm_Ares_Super"
+msgstr "75 mm Ares «Super»"
+
+msgid "_75mm_DARPA_HE"
+msgstr "DARPA HE"
+
+msgid "_75mm_DARPA_HE_FS"
+msgstr "DARPA HE FS"
+
+msgid "_75mm_DARPA_HE_Super"
+msgstr "DARPA HE «Super»"
 
 msgid "_75mm_Gun_M17"
 msgstr "75 mm Gun M17"
@@ -7119,6 +7398,30 @@ msgstr "M64"
 msgid "_76mm_M79"
 msgstr "HVAP M93(M7)"
 
+msgid "_85mm_AAAC_I"
+msgstr "AAAC-I"
+
+msgid "_85mm_AAAC_II"
+msgstr "AAAC-II"
+
+msgid "_85mm_AAAC_II_FS"
+msgstr "AAAC-II FS"
+
+msgid "_85mm_AAAC_I_FS"
+msgstr "AAAC-I FS"
+
+msgid "_85mm_Ares_HVAC"
+msgstr "85 mm Ares HVAC"
+
+msgid "_85mm_Ares_MC_AAAC"
+msgstr "85 mm Ares MC-AAAC"
+
+msgid "_85mm_DARPA_HE"
+msgstr "DARPA HE"
+
+msgid "_85mm_DARPA_HE_FS"
+msgstr "DARPA HE FS"
+
 msgid "_88mm_Kw_K_43"
 msgstr "8,8 cm Kw.K. 43"
 
@@ -7130,6 +7433,12 @@ msgstr "Pzgr 40/43"
 
 msgid "_88mm_Sprgr_43"
 msgstr "Sprgr 43"
+
+msgid "_90mm_AAAC_I"
+msgstr "AAAC-I"
+
+msgid "_90mm_AAAC_II"
+msgstr "AAAC-II"
 
 msgid "_90mm_APCR_Experimental"
 msgstr "APCR Experimental"
@@ -7253,6 +7562,24 @@ msgstr "90 mm AT Gun T15E2"
 
 msgid "_90mm_AT_Gun_T15E2_T25_AT"
 msgstr "90 mm AT Gun T15E2 (T25 AT)"
+
+msgid "_90mm_Ares_2000"
+msgstr "90 mm Ares 2000"
+
+msgid "_90mm_Ares_LC_AAAC"
+msgstr "90 mm Ares LC-AAAC"
+
+msgid "_90mm_Bravo_1"
+msgstr "Bravo 1"
+
+msgid "_90mm_Charlie_3"
+msgstr "Charlie 3"
+
+msgid "_90mm_DARPA_HE"
+msgstr "DARPA HE"
+
+msgid "_90mm_Delta_6"
+msgstr "Delta 6"
 
 msgid "_90mm_Gun_M3"
 msgstr "90 mm Gun M3"

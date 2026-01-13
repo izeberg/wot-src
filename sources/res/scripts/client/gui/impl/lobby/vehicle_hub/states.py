@@ -51,12 +51,14 @@ class _VehicleHubChildState(LobbyState, SubhangarStateGroupConfigProvider):
         super(_VehicleHubChildState, self).registerTransitions()
         self.addNavigationTransition(self, transitionType=TransitionType.EXTERNAL)
         from gui.Scaleform.daapi.view.lobby.vehicle_compare.states import VehicleCompareState
+        from gui.Scaleform.daapi.view.lobby.profile.states import ServiceRecordState
+        from gui.Scaleform.daapi.view.lobby.store.browser.states import ShopState
         lsm = self.getMachine()
         self.addNavigationTransition(lsm.getStateByCls(VehicleCompareState), record=True)
         self.addNavigationTransition(lsm.getStateByCls(BlueprintState), record=True)
+        self.addNavigationTransition(lsm.getStateByCls(ShopState), record=True)
         loadingState = lsm.getStateByCls(_LoadingState)
         self.addTransition(loadingState.makeTransition(TransitionType.INTERNAL, True), loadingState)
-        from gui.Scaleform.daapi.view.lobby.profile.states import ServiceRecordState
         self.addNavigationTransition(lsm.getStateByCls(ServiceRecordState), record=True)
 
     def _onEntered(self, event):
@@ -90,12 +92,7 @@ class VehicleHubState(SFViewLobbyState, EventsHandler, SubhangarStateGroupConfig
     def __init__(self, flags=StateFlags.UNDEFINED):
         super(VehicleHubState, self).__init__(flags=flags | LobbyStateFlags.HANGAR)
         self.__cameraMover = None
-        self.__blur = None
         return
-
-    @property
-    def blur(self):
-        return self.__blur
 
     @property
     def cameraMover(self):
@@ -138,7 +135,6 @@ class VehicleHubState(SFViewLobbyState, EventsHandler, SubhangarStateGroupConfig
     def _onEntered(self, event):
         super(VehicleHubState, self)._onEntered(event)
         self._subscribe()
-        self.__blur = CachedBlur(enabled=False)
         self.__soundExtension.initSoundManager()
         self.__soundExtension.startSoundSpace()
         self.__setupTankTransformation()
@@ -160,9 +156,6 @@ class VehicleHubState(SFViewLobbyState, EventsHandler, SubhangarStateGroupConfig
 
     def _onExited(self):
         self._unsubscribe()
-        if self.__blur is not None:
-            self.__blur.fini()
-            self.__blur = None
         self.__cameraMover = None
         self.getMachine().getRelatedView(self).stateExited()
         super(VehicleHubState, self)._onExited()
@@ -336,14 +329,23 @@ class StatsState(_VehicleHubChildState):
 
     def __init__(self, flags=StateFlags.UNDEFINED):
         super(StatsState, self).__init__(flags=flags)
+        self.__blur = None
+        return
 
     def _onEntered(self, event):
         super(StatsState, self)._onEntered(event)
-        self.getParent().blur.enable()
+        if self.__blur is None:
+            self.__blur = CachedBlur(enabled=False)
+        self.__blur.enable()
+        return
 
     def _onExited(self):
-        self.getParent().blur.disable()
+        if self.__blur is not None:
+            self.__blur.disable()
+            self.__blur.fini()
+            self.__blur = None
         super(StatsState, self)._onExited()
+        return
 
 
 @VehicleHubState.parentOf

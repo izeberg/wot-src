@@ -557,6 +557,12 @@ package net.wg.data.constants
       
       public static const STATIONARY_RELOAD:String = "StationaryReloadWidgetUI";
       
+      public static const TEMPERATURE_GUN_OVERHEAT:String = "TemperatureGunOverheatWidgetUI";
+      
+      public static const TEMPERATURE_GUN_HEAT_ZONES:String = "TemperatureGunHeatZonesWidgetUI";
+      
+      public static const STAGED_JET_BOOSTERS:String = "StagedJetBoostersWidgetUI";
+      
       public static const CONCENTRATION_DECOR_CROSSHAIR:String = "ConcentrationCrosshairUI";
       
       public static const ACCURACY_DECOR_CROSSHAIR:String = "AccuracyCrosshairUI";
@@ -566,6 +572,8 @@ package net.wg.data.constants
       public static const OVERHEAT_DECOR_CROSSHAIR:String = "OverheatCrosshairUI";
       
       public static const FURY_DECOR_CROSSHAIR:String = "FuryCrosshairUI";
+      
+      public static const TEMPERATURE_GUN_OVERHEAT_DECOR_CROSSHAIR:String = "TemperatureGunOverheatDecorativeCrosshairUI";
       
       public static const POSTMORTEM_PANEL:String = "PostmortemPanelUI";
       

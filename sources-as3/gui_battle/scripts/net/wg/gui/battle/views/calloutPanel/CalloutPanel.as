@@ -2,6 +2,7 @@ package net.wg.gui.battle.views.calloutPanel
 {
    import flash.display.MovieClip;
    import net.wg.data.constants.InvalidationType;
+   import net.wg.data.constants.generated.CROSSHAIR_VIEW_ID;
    import net.wg.gui.battle.views.calloutPanel.components.InteractionDynamicTextLabel;
    import net.wg.gui.battle.views.calloutPanel.components.VehicleInfoLabel;
    import net.wg.infrastructure.base.meta.ICalloutPanelMeta;
@@ -25,6 +26,22 @@ package net.wg.gui.battle.views.calloutPanel
       private static const TRIGGERED_COMMENDATION_FADEOUT_ANIMATION_ENDFRAME:int = 127;
       
       private static const COMMENDATION_ACTION_NAME:String = "COMMENDATION";
+      
+      private static const STAGE_CENTER_OFFSET_X_DEFAULT:int = -136;
+      
+      private static const STAGE_CENTER_OFFSET_Y_DEFAULT:int = 14;
+      
+      private static const STAGE_CENTER_OFFSET_X_ARCADE:int = -186;
+      
+      private static const STAGE_CENTER_OFFSET_Y_ARCADE:int = 14;
+      
+      private static const STAGE_CENTER_OFFSET_X_SNIPER:int = -266;
+      
+      private static const STAGE_CENTER_OFFSET_Y_SNIPER:int = 94;
+      
+      private static const STAGE_CENTER_OFFSET_X_STRATEGIC:int = -166;
+      
+      private static const STAGE_CENTER_OFFSET_Y_STRATEGIC:int = 94;
        
       
       public var triggeredCalloutActionOverlay:MovieClip = null;
@@ -47,6 +64,12 @@ package net.wg.gui.battle.views.calloutPanel
       
       private var _action:String = "";
       
+      private var _stageWidth:Number = 0;
+      
+      private var _stageHeight:Number = 0;
+      
+      private var _crosshairType:uint = 0;
+      
       public function CalloutPanel()
       {
          super();
@@ -58,11 +81,38 @@ package net.wg.gui.battle.views.calloutPanel
       
       override protected function draw() : void
       {
+         var _loc1_:int = 0;
+         var _loc2_:int = 0;
          super.draw();
          if(isInvalid(InvalidationType.DATA))
          {
             this.tankText.updatePositionOnDraw();
             this.interactionText.updatePositionOnDraw();
+         }
+         if(isInvalid(InvalidationType.POSITION))
+         {
+            _loc1_ = this._stageWidth >> 1;
+            _loc2_ = this._stageHeight >> 1;
+            switch(this._crosshairType)
+            {
+               case CROSSHAIR_VIEW_ID.ARCADE:
+                  _loc1_ += STAGE_CENTER_OFFSET_X_ARCADE;
+                  _loc2_ += STAGE_CENTER_OFFSET_Y_ARCADE;
+                  break;
+               case CROSSHAIR_VIEW_ID.SNIPER:
+                  _loc1_ += STAGE_CENTER_OFFSET_X_SNIPER;
+                  _loc2_ += STAGE_CENTER_OFFSET_Y_SNIPER;
+                  break;
+               case CROSSHAIR_VIEW_ID.STRATEGIC:
+                  _loc1_ += STAGE_CENTER_OFFSET_X_STRATEGIC;
+                  _loc2_ += STAGE_CENTER_OFFSET_Y_STRATEGIC;
+                  break;
+               default:
+                  _loc1_ += STAGE_CENTER_OFFSET_X_DEFAULT;
+                  _loc2_ += STAGE_CENTER_OFFSET_Y_DEFAULT;
+            }
+            this.x = _loc1_;
+            this.y = _loc2_;
          }
       }
       
@@ -81,6 +131,17 @@ package net.wg.gui.battle.views.calloutPanel
          this.interactionText.dispose();
          this.interactionText = null;
          super.onDispose();
+      }
+      
+      public function updateStage(param1:Number, param2:Number) : void
+      {
+         if(param1 == this._stageWidth && param2 == this._stageHeight)
+         {
+            return;
+         }
+         this._stageWidth = param1;
+         this._stageHeight = param2;
+         invalidatePosition();
       }
       
       override public function setCompVisible(param1:Boolean) : void
@@ -124,6 +185,16 @@ package net.wg.gui.battle.views.calloutPanel
                super.setCompVisible(param1);
             }
          }
+      }
+      
+      public function as_setCrosshairType(param1:int) : void
+      {
+         if(param1 == this._crosshairType)
+         {
+            return;
+         }
+         this._crosshairType = param1;
+         invalidatePosition();
       }
       
       public function as_setHideData(param1:Boolean, param2:String) : void

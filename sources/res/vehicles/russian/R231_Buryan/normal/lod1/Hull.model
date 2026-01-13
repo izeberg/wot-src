@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/russian/R231_Buryan/normal/lod1/Hull</nodefullVisual>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.678256 -0.640243 -3.604632</min>
+		<max>1.677747 0.470454 3.653803</max>
+	</visibilityBox>
+	<parent>vehicles/russian/R231_Buryan/normal/lod2/Hull</parent>
+	<extent>64</extent>
+</root>

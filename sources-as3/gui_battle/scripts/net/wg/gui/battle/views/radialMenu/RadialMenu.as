@@ -128,7 +128,7 @@ package net.wg.gui.battle.views.radialMenu
          }
       }
       
-      override protected function show(param1:Number, param2:Number, param3:String, param4:Array, param5:Array) : void
+      override protected function show(param1:Number, param2:Number, param3:String, param4:Array, param5:Array, param6:Array) : void
       {
          this._isAction = false;
          this._state = param3;
@@ -138,10 +138,10 @@ package net.wg.gui.battle.views.radialMenu
          this.circleBackground.gotoAndStop(this.backgroundColor);
          this._scheduler.cancelTask(this.internalHide);
          this._scheduler.cancelTask(this.hideButton);
-         this.updateData(param4);
+         this.updateData(param4,param5);
          this.internalShow(param1,param2);
-         x = param5[0];
-         y = param5[1];
+         x = param6[0];
+         y = param6[1];
       }
       
       protected function updateColor(param1:String) : void
@@ -282,15 +282,10 @@ package net.wg.gui.battle.views.radialMenu
          }
       }
       
-      private function updateData(param1:Array) : void
+      private function updateData(param1:Array, param2:Array) : void
       {
-         this.updateDataForWithShortcutsArray(this._bottomShortcutsMap[this._state],true);
-         var _loc2_:Array = this._regularShortcutsMap[this._state];
-         if(param1.length > 0)
-         {
-            _loc2_ = param1;
-         }
-         this.updateDataForWithShortcutsArray(_loc2_,false);
+         this.updateDataForWithShortcutsArray(param1 && param1.length > 0 ? param1 : this._bottomShortcutsMap[this._state],true);
+         this.updateDataForWithShortcutsArray(param2 && param2.length > 0 ? param2 : this._regularShortcutsMap[this._state],false);
       }
       
       private function selectButton(param1:RadialButton) : void

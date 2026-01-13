@@ -1,5 +1,5 @@
 from account_helpers.AccountSettings import AccountSettings, FRONTLINE_BANNER_FIRST_APPEARANCE_TIMESTAMP, FRONTLINE_BANNER_INTRO_CLICK_TIMESTAMP
-from frontline.gui.frontline_helpers import isHangarAvailable, geFrontlineState
+from frontline.gui.frontline_helpers import isHangarAvailable, getFrontlineState
 from frontline.gui.impl.gen.view_models.views.lobby.views.frontline_const import FrontlineState
 from frontline.gui.impl.lobby.tooltips.banner_tooltip import BannerTooltipView
 from gui.impl.gen.view_models.views.lobby.user_missions.constants.event_banner_state import EventBannerState
@@ -62,13 +62,10 @@ class FrontlineEventBanner(BaseEventBanner):
         return BannerTooltipView()
 
     def onClick(self):
-        from frontline.gui.impl.lobby.states import ProgressionScreenState
         if isHangarAvailable():
             self.__epicController.selectEpicBattle()
         elif self.hasRewards:
             showEpicRewardsSelectionWindow()
-        else:
-            ProgressionScreenState.goTo()
         if self._state == EventBannerState.INTRO:
             currentSeasonStartDate = self.__epicController.getCurrentSeason().getStartDate()
             AccountSettings.setSettings(FRONTLINE_BANNER_INTRO_CLICK_TIMESTAMP, currentSeasonStartDate)
@@ -81,7 +78,7 @@ class FrontlineEventBanner(BaseEventBanner):
         self._eventStartDate = 0
         self._eventEndDate = 0
         self._timerValue = 0
-        frontlineState, _, stateEndTime = geFrontlineState(withPrimeTime=True)
+        frontlineState, _, stateEndTime = getFrontlineState(withPrimeTime=True)
         self._state = STATES_MAP[frontlineState]
         if frontlineState == FrontlineState.ANNOUNCE:
             self._eventStartDate, self._eventEndDate = self.__epicController.getSeasonTimeRange()
@@ -118,7 +115,7 @@ class FrontlineEventBanner(BaseEventBanner):
 
 @dependency.replace_none_kwargs(epicController=IEpicBattleMetaGameController)
 def isEpicBattlesEntryPointAvailable(epicController=None):
-    state, _, _ = geFrontlineState()
+    state, _, _ = getFrontlineState()
     primeTimeStatus, _, _ = epicController.getPrimeTimeStatus()
     hasUnclaimedRewards = epicController.getNotChosenRewardCount()
     return not (not epicController.isEnabled() or not epicController.getCurrentSeasonID() or primeTimeStatus in [PrimeTimeStatus.NOT_SET, PrimeTimeStatus.FROZEN] or state == FrontlineState.FINISHED and not hasUnclaimedRewards)

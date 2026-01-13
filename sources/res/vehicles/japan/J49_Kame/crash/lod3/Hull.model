@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/japan/J49_Kame/crash/lod4/Hull</parent>
+	<extent>192.000000</extent>
+	<nodefullVisual>vehicles/japan/J49_Kame/crash/lod3/Hull</nodefullVisual>
+	<visibilityBox>
+		<min>-1.647706 -0.982766 -3.603697</min>
+		<max>1.723374 0.705675 3.592400</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

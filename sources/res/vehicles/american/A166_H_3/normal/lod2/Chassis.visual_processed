@@ -118,7 +118,7 @@
 						<transform>
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
-							<row2>0.000000 0.000000 1.000000</row2>
+							<row2>-0.000000 0.000000 1.000000</row2>
 							<row3>0.000000 0.418854 0.000000</row3>
 						</transform>
 						<node>
@@ -188,7 +188,7 @@
 					<node>
 						<identifier>W_L3</identifier>
 						<transform>
-							<row0>1.000000 0.000000 -0.000000</row0>
+							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 1.000000</row2>
 							<row3>0.000000 0.418854 0.000000</row3>
@@ -262,7 +262,7 @@
 						<transform>
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
-							<row2>0.000000 0.000000 1.000000</row2>
+							<row2>-0.000000 0.000000 1.000000</row2>
 							<row3>0.000000 0.418854 0.000000</row3>
 						</transform>
 						<node>
@@ -296,7 +296,7 @@
 					<node>
 						<identifier>WD_L3</identifier>
 						<transform>
-							<row0>1.000000 0.000000 -0.000000</row0>
+							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 -0.000000 1.000000</row2>
 							<row3>0.000000 0.398854 0.000000</row3>
@@ -332,10 +332,10 @@
 					<node>
 						<identifier>W_R0</identifier>
 						<transform>
-							<row0>1.000000 0.000000 -0.000000</row0>
+							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>-0.000000 -0.000000 1.000000</row2>
-							<row3>-0.000000 0.418851 0.000000</row3>
+							<row3>0.000000 0.418851 0.000000</row3>
 						</transform>
 						<node>
 							<identifier>W_R0_BlendBone</identifier>
@@ -515,7 +515,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 1.000000</row2>
-							<row3>-0.000000 0.418851 0.000000</row3>
+							<row3>0.000000 0.418851 0.000000</row3>
 						</transform>
 						<node>
 							<identifier>W_R5_BlendBone</identifier>
@@ -551,7 +551,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>-0.000000 -0.000000 1.000000</row2>
-							<row3>-0.000000 0.398851 0.000000</row3>
+							<row3>0.000000 0.398851 0.000000</row3>
 						</transform>
 						<node>
 							<identifier>WD_R3_BlendBone</identifier>
@@ -963,14 +963,14 @@
 		<node>Track_L1_BlendBone</node>
 		<node>Track_L0_BlendBone</node>
 		<node>V_BlendBone</node>
-		<node>Track_VD_L0_BlendBone</node>
-		<node>Track_VT_L0_BlendBone</node>
 		<node>Track_VT_L1_BlendBone</node>
 		<node>Track_VT_L2_BlendBone</node>
 		<node>Track_VT_L3_BlendBone</node>
 		<node>Track_L6_BlendBone</node>
 		<node>Track_VT_L4_BlendBone</node>
 		<node>Track_VT_L5_BlendBone</node>
+		<node>Track_VT_L0_BlendBone</node>
+		<node>Track_VD_L0_BlendBone</node>
 		<geometry>
 			<vertices>track_L_Shape.vertices</vertices>
 			<stream>track_L_Shape.uv2</stream>
@@ -1007,7 +1007,7 @@
 						<Bool>true</Bool>
 					</property>
 				</material>
-				<groupOrigin>-1.438269 0.720849 -0.536757</groupOrigin>
+				<groupOrigin>-1.438269 0.748421 -0.560665</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -1020,14 +1020,14 @@
 		<node>Track_R1_BlendBone</node>
 		<node>Track_R0_BlendBone</node>
 		<node>V_BlendBone</node>
-		<node>Track_VD_R0_BlendBone</node>
-		<node>Track_VT_R0_BlendBone</node>
 		<node>Track_VT_R1_BlendBone</node>
 		<node>Track_VT_R2_BlendBone</node>
 		<node>Track_VT_R3_BlendBone</node>
 		<node>Track_R6_BlendBone</node>
 		<node>Track_VT_R4_BlendBone</node>
 		<node>Track_VT_R5_BlendBone</node>
+		<node>Track_VT_R0_BlendBone</node>
+		<node>Track_VD_R0_BlendBone</node>
 		<geometry>
 			<vertices>track_R_Shape.vertices</vertices>
 			<stream>track_R_Shape.uv2</stream>
@@ -1064,26 +1064,26 @@
 						<Bool>true</Bool>
 					</property>
 				</material>
-				<groupOrigin>1.438269 0.720849 -0.536757</groupOrigin>
+				<groupOrigin>1.438269 0.748421 -0.560665</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
-		<node>WD_L2_BlendBone</node>
-		<node>WD_L1_BlendBone</node>
-		<node>WD_L0_BlendBone</node>
-		<node>WD_L3_BlendBone</node>
-		<node>W_L2_BlendBone</node>
-		<node>W_L1_BlendBone</node>
-		<node>W_L0_BlendBone</node>
-		<node>W_L4_BlendBone</node>
-		<node>W_L3_BlendBone</node>
-		<node>W_L5_BlendBone</node>
 		<node>V_BlendBone</node>
+		<node>W_L0_BlendBone</node>
+		<node>W_L1_BlendBone</node>
+		<node>W_L2_BlendBone</node>
+		<node>W_L3_BlendBone</node>
+		<node>W_L4_BlendBone</node>
+		<node>W_L5_BlendBone</node>
+		<node>WD_L3_BlendBone</node>
+		<node>WD_L0_BlendBone</node>
+		<node>WD_L1_BlendBone</node>
+		<node>WD_L2_BlendBone</node>
 		<geometry>
-			<vertices>exportChassL1_Shape.vertices</vertices>
-			<primitive>exportChassL1_Shape.indices</primitive>
+			<vertices>chassis_LShape.vertices</vertices>
+			<primitive>chassis_LShape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -1126,20 +1126,20 @@
 	</renderSet>
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
-		<node>WD_R2_BlendBone</node>
-		<node>WD_R1_BlendBone</node>
-		<node>WD_R0_BlendBone</node>
-		<node>WD_R3_BlendBone</node>
-		<node>W_R2_BlendBone</node>
-		<node>W_R1_BlendBone</node>
-		<node>W_R0_BlendBone</node>
-		<node>W_R4_BlendBone</node>
-		<node>W_R3_BlendBone</node>
-		<node>W_R5_BlendBone</node>
 		<node>V_BlendBone</node>
+		<node>W_R0_BlendBone</node>
+		<node>W_R1_BlendBone</node>
+		<node>W_R2_BlendBone</node>
+		<node>W_R3_BlendBone</node>
+		<node>W_R4_BlendBone</node>
+		<node>W_R5_BlendBone</node>
+		<node>WD_R3_BlendBone</node>
+		<node>WD_R0_BlendBone</node>
+		<node>WD_R1_BlendBone</node>
+		<node>WD_R2_BlendBone</node>
 		<geometry>
-			<vertices>exportChassR1_Shape.vertices</vertices>
-			<primitive>exportChassR1_Shape.indices</primitive>
+			<vertices>chassis_RShape.vertices</vertices>
+			<primitive>chassis_RShape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -1182,8 +1182,8 @@
 	</renderSet>
 	<constraints/>
 	<boundingBox>
-		<min>-1.738269 0.000000 -2.900019</min>
-		<max>1.738269 1.462995 4.011614</max>
+		<min>-1.738269 -0.000000 -2.900019</min>
+		<max>1.738269 1.496842 4.042258</max>
 	</boundingBox>
 	<geometrySize>288418</geometrySize>
 </root>

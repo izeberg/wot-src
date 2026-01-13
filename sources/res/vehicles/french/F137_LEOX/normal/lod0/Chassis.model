@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.625000 0.000988 -3.138432</min>
+		<max>1.625000 1.210374 3.249528</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/french/F137_LEOX/normal/lod0/Chassis</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/french/F137_LEOX/normal/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+</root>

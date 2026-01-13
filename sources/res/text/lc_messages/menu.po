@@ -1296,7 +1296,7 @@ msgid "contextMenu/withdrawInvitationToSquad"
 msgstr "Withdraw invitation to join Platoon"
 
 msgid "copy"
-msgstr "© 2009–2025 Wargaming.net. All rights reserved."
+msgstr "© 2009–2026 Wargaming.net. All rights reserved."
 
 msgid "counter/newCounter"
 msgstr "NEW"
@@ -1660,9 +1660,6 @@ msgstr "WoT Plus Exclusive Vehicle Unavailable"
 
 msgid "customization/title"
 msgstr "Exterior"
-
-msgid "dateTime/dateMonth"
-msgstr "{day} {monthName}"
 
 msgid "dateTime/fromToWithYear"
 msgstr "from {fromMonth} {fromDay} through {toMonth} {toDay}, {toYear}"
@@ -2904,7 +2901,7 @@ msgid "headerButtons/battle/menu/unit"
 msgstr "Team Battle"
 
 msgid "headerButtons/battle/modeInfo"
-msgstr "Mode: {{mode}}"
+msgstr "{{mode}}"
 
 msgid "headerButtons/battle/types/battleRoyale"
 msgstr "Steel Hunter"
@@ -4425,19 +4422,16 @@ msgstr "?empty?"
 msgid "moduleInfo/additionalInfo"
 msgstr "Characteristics of the shell depend on the gun."
 
-msgid "moduleInfo/autoReloadGunLabel"
+msgid "moduleInfo/autoLoaderGun"
 msgstr "Autoreloader gun"
 
-msgid "moduleInfo/autoReloadGunLabel/boost"
+msgid "moduleInfo/autoLoaderGunBoost"
 msgstr ""
 "Improved autoreloading system:\n"
 "Reduces the standard time for autoreloading shells."
 
-msgid "moduleInfo/autoShootGunLabel"
+msgid "moduleInfo/autoShootGun"
 msgstr "Gun with continuous fire system"
-
-msgid "moduleInfo/clipGunLabel"
-msgstr "Magazine loading system"
 
 msgid "moduleInfo/closeBtn"
 msgstr "Close"
@@ -4463,30 +4457,39 @@ msgstr "Used as single-shot gun on vehicles:"
 msgid "moduleInfo/compatible/vehicles"
 msgstr "Compatible Vehicles:"
 
-msgid "moduleInfo/damageMutableGunLabel"
+msgid "moduleInfo/damageMutable"
 msgstr "A deep-rifled gun. It can fire star tray shells."
 
-msgid "moduleInfo/dualAccuracyGunLabel"
+msgid "moduleInfo/dualAccuracy"
 msgstr "Double Aiming System"
 
-msgid "moduleInfo/dualGunLabel"
+msgid "moduleInfo/dualGun"
 msgstr "Double Gun System"
 
-msgid "moduleInfo/hydraulicAutoSiegeChassisLabel"
-msgstr "Hydropneumatic suspension: allows the vehicle to tilt the hull"
+msgid "moduleInfo/heatingZonesGun"
+msgstr "Gun with active cooling system"
 
-msgid "moduleInfo/hydraulicChassisLabel"
+msgid "moduleInfo/hydraulicChassis"
 msgstr ""
 "Hydropneumatic suspension: allows the vehicle to switch between Siege and "
 "Travel modes"
 
-msgid "moduleInfo/hydraulicWheeledChassisLabel"
+msgid "moduleInfo/hydraulicWheeledChassis"
 msgstr ""
 "Telescopic hydropneumatic drive: allows the vehicle to change the position "
 "of additional wheels."
 
+msgid "moduleInfo/hydroAutoSiegeChassis"
+msgstr "Hydropneumatic suspension: allows the vehicle to tilt the hull"
+
+msgid "moduleInfo/magazineGun"
+msgstr "Magazine loading system"
+
 msgid "moduleInfo/nonPiercingDamageLabel"
 msgstr "Can cause minor damage even without penetrating enemy armor"
+
+msgid "moduleInfo/overheatGun"
+msgstr "Thermal Overheat Control Autocannon"
 
 msgid "moduleInfo/parametersClipGunLabel"
 msgstr "<img src='%s' vspace='-4'/> For guns with magazine loading system:"
@@ -4714,6 +4717,9 @@ msgstr "Engine Power (With Boosters)"
 msgid "moduleInfo/params/rotationSpeed"
 msgstr "Traverse Speed"
 
+msgid "moduleInfo/params/shellLoadingTime"
+msgstr "Ammunition Belt Loading"
+
 msgid "moduleInfo/params/shellReloadingTime"
 msgstr "Time for Loading Between Shots"
 
@@ -4750,13 +4756,17 @@ msgstr "Engine Power (Turbo)"
 msgid "moduleInfo/params/weight"
 msgstr "Weight"
 
-msgid "moduleInfo/rocketAccelerationEngine"
+msgid "moduleInfo/rocketAcceleration"
 msgstr "Jet boosters increasing the vehicle mobility"
+
+msgid "moduleInfo/stagedJetBoosters"
+msgstr ""
+"Solid-fuel thrusters that boost acceleration, mobility, and maneuverability"
 
 msgid "moduleInfo/title"
 msgstr " "
 
-msgid "moduleInfo/trackWithinTrackChassisLabel"
+msgid "moduleInfo/trackWithinTrack"
 msgstr ""
 "Reserve track: Allows for partially maintaining mobility when the main track"
 " is destroyed."
@@ -4766,7 +4776,7 @@ msgstr ""
 "Gas-turbine engine:\n"
 "allows the vehicle to reach a higher speed."
 
-msgid "moduleInfo/twinGunLabel"
+msgid "moduleInfo/twinGun"
 msgstr "Selective Fire Modes System"
 
 msgid "nation_tree/blueprint_title/china"
@@ -6413,6 +6423,12 @@ msgstr "Duration"
 msgid "tank_params/continuousShotsPerMinute"
 msgstr "Rate of Continuous Fire"
 
+msgid "tank_params/coolingDelay"
+msgstr "Cooling Delay Time"
+
+msgid "tank_params/coolingTime"
+msgstr "Fully Heated Gun Cooling Time"
+
 msgid "tank_params/damage"
 msgstr "Standard Shell Damage"
 
@@ -6515,6 +6531,9 @@ msgstr "Time Before Charge Overheating"
 msgid "tank_params/heatTimeToReachLevel"
 msgstr "Time to Reach Heat Level"
 
+msgid "tank_params/heatingPerShot"
+msgstr "Heat per Shot"
+
 msgid "tank_params/hullArmor"
 msgstr "Hull Armor"
 
@@ -6589,6 +6608,9 @@ msgstr "mm"
 
 msgid "tank_params/no_brackets/s"
 msgstr "s"
+
+msgid "tank_params/overheatDuration"
+msgstr "Overheated Gun Cooling Time"
 
 msgid "tank_params/p"
 msgstr "(h.p.)"
@@ -6724,6 +6746,9 @@ msgstr "Auxiliary Weapon Loading"
 msgid "tank_params/secondaryTotalBurstSize"
 msgstr "Auxiliary Weapon Shells"
 
+msgid "tank_params/shellLoadingTime"
+msgstr "Ammunition Belt Loading"
+
 msgid "tank_params/shortened/avgPiercingPower"
 msgstr "Penetration:"
 
@@ -6741,6 +6766,27 @@ msgstr "(rounds/min)"
 
 msgid "tank_params/sqm"
 msgstr "(m²)"
+
+msgid "tank_params/stagedJetBoostersChargeDuration"
+msgstr "Boost Duration (s)"
+
+msgid "tank_params/stagedJetBoostersChargesCount"
+msgstr "Boosts Available"
+
+msgid "tank_params/stagedJetBoostersCooldownTime"
+msgstr "Thruster Cooldown (s)"
+
+msgid "tank_params/stagedJetBoostersEnginePower"
+msgstr "Engine Power (With Thrusters) (h.p.)"
+
+msgid "tank_params/stagedJetBoostersRotationSpeed"
+msgstr "Traverse Speed (With Thrusters) (deg/s)"
+
+msgid "tank_params/stagedJetBoostersSpeedLimits"
+msgstr "Reverse Speed (With Thrusters) (km/h)"
+
+msgid "tank_params/stagedJetBoostersTopSpeed"
+msgstr "Top Speed (With Thrusters) (km/h)"
 
 msgid "tank_params/stationaryReloadSwitchOffTime"
 msgstr "Reload Interruption"
@@ -6772,8 +6818,17 @@ msgstr "Switching to Siege / Travel mode"
 msgid "tank_params/t"
 msgstr "(t)"
 
+msgid "tank_params/temperatureAvgDamagePerMinute"
+msgstr "Average Damage per Minute"
+
+msgid "tank_params/temperatureReloadTime"
+msgstr "Rate of Fire"
+
 msgid "tank_params/timeOfReaching"
 msgstr "Time to Travel 100 m"
+
+msgid "tank_params/timeToOverheat"
+msgstr "Continuous Firing Before Overheat"
 
 msgid "tank_params/topSpeedWithBoosters"
 msgstr "Top Speed (With Boosters)"
@@ -7406,6 +7461,12 @@ msgstr "Switching to Siege mode (s)"
 
 msgid "vehicleInfo/params/switchTime"
 msgstr "Switching to Siege / Travel mode (s)"
+
+msgid "vehicleInfo/params/temperatureAvgDamagePerMinute"
+msgstr "Average Damage per Minute"
+
+msgid "vehicleInfo/params/temperatureReloadTime"
+msgstr "Rate of Fire (rounds/min)"
 
 msgid "vehicleInfo/params/turboshaftBurstFireRate"
 msgstr "Shell Container (Turbo) (s/quantity/quantity)"

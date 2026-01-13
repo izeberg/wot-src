@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.768379 -0.823538 -3.729922</min>
+		<max>1.723705 2.007255 3.721994</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/chinese/Ch70_PTZ_78/crash/lod2/Hull</nodefullVisual>
+	<parent>vehicles/chinese/Ch70_PTZ_78/crash/lod3/Hull</parent>
+	<extent>96.000000</extent>
+</root>

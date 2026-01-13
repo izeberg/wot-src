@@ -3,5 +3,11 @@
 	<ofEntity>
 		<Vehicle/>
 	</ofEntity>
+	<Properties>
+		<vehTypeCD>
+			<Type>UINT32</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</vehTypeCD>
+	</Properties>
 	<DefaultKeyName>improvedRammingController</DefaultKeyName>
 </root>

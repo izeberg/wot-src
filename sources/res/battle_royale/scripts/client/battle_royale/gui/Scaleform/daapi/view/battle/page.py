@@ -340,7 +340,7 @@ class BattleRoyalePage(BattleRoyalePageMeta, ISpawnListener):
          ARENA_PERIOD.IDLE, ARENA_PERIOD.WAITING) or BigWorld.player().observerSeesAll()
         super(BattleRoyalePage, self)._onBattleLoadingFinish()
         if not self.as_isComponentVisibleS(BATTLE_VIEW_ALIASES.BR_SELECT_RESPAWN) and arenaPeriod not in {
-         ARENA_PERIOD.BATTLE, ARENA_PERIOD.AFTERBATTLE}:
+         ARENA_PERIOD.BATTLE, ARENA_PERIOD.AFTERBATTLE} and not BigWorld.player().observerSeesAll():
             self._setComponentsVisibility(visible={BATTLE_VIEW_ALIASES.BATTLE_LOADING})
         if not self.__canShowHUD and not BigWorld.player().observerSeesAll():
             self._setComponentsVisibility(visible={BATTLE_VIEW_ALIASES.BR_SELECT_RESPAWN})

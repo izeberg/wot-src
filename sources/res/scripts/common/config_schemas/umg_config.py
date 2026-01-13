@@ -1,4 +1,4 @@
-from base_schema_manager import GameParamsSchema
+from game_params_common.schema import GameParamsSchema
 from dict2model import fields, models
 
 class ConfigModel(models.Model):

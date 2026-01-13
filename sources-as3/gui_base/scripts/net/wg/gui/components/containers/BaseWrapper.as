@@ -2,9 +2,9 @@ package net.wg.gui.components.containers
 {
    import flash.display.BitmapData;
    import flash.display.DisplayObject;
+   import flash.display.InteractiveObject;
    import flash.display.Sprite;
    import flash.events.Event;
-   import flash.events.FocusEvent;
    import flash.geom.Rectangle;
    import flash.utils.Dictionary;
    import net.wg.gui.tutorial.components.TutorialHintZone;
@@ -28,7 +28,7 @@ package net.wg.gui.components.containers
       
       protected var _tutorialHintZones:Dictionary;
       
-      private var _focused:Boolean = false;
+      private var _hasModalFocus:Boolean = false;
       
       private var _containerWrapper:IBaseContainerWrapper;
       
@@ -44,8 +44,6 @@ package net.wg.gui.components.containers
       {
          this._tutorialHintZones = new Dictionary();
          super();
-         addEventListener(FocusEvent.FOCUS_IN,this.onFocusHandler);
-         addEventListener(FocusEvent.FOCUS_OUT,this.onFocusHandler);
          visible = false;
       }
       
@@ -56,9 +54,7 @@ package net.wg.gui.components.containers
       public function dispose() : void
       {
          var _loc1_:TutorialHintZone = null;
-         App.utils.asserter.assert(!this._focused,name + " is focused on dispose!");
-         removeEventListener(FocusEvent.FOCUS_IN,this.onFocusHandler);
-         removeEventListener(FocusEvent.FOCUS_OUT,this.onFocusHandler);
+         App.utils.asserter.assert(!this._hasModalFocus,name + " has modal focused on dispose!");
          for each(_loc1_ in this._tutorialHintZones)
          {
             removeChild(_loc1_);
@@ -143,13 +139,13 @@ package net.wg.gui.components.containers
          if(this._containerWrapper)
          {
             this._containerWrapper.visible = false;
-            if(this._focused)
+            if(this._hasModalFocus)
             {
-               this._focused = false;
+               this._hasModalFocus = false;
                dispatchEvent(new Event(FOCUS_OUT_EVENT));
             }
          }
-         App.utils.asserter.assert(!this._focused,name + " is focused on hide!");
+         App.utils.asserter.assert(!this._hasModalFocus,name + " has modal focus on hide!");
          dispatchEvent(new Event(HIDDEN_EVENT));
       }
       
@@ -231,24 +227,6 @@ package net.wg.gui.components.containers
       {
       }
       
-      private function testIsFocused() : Boolean
-      {
-         if(!App.instance)
-         {
-            return false;
-         }
-         var _loc1_:DisplayObject = App.instance.stage.focus;
-         while(_loc1_ != null && _loc1_ != stage)
-         {
-            if(_loc1_ == this)
-            {
-               return true;
-            }
-            _loc1_ = _loc1_.parent;
-         }
-         return false;
-      }
-      
       public function get hitRect() : Rectangle
       {
          return new Rectangle();
@@ -294,19 +272,23 @@ package net.wg.gui.components.containers
       
       public function get focused() : Boolean
       {
-         return this._focused;
+         return this._hasModalFocus;
       }
       
-      private function onFocusHandler(param1:FocusEvent) : void
+      public function set focused(param1:Boolean) : void
       {
-         var _loc2_:Boolean = this.testIsFocused();
-         if(this._focused == _loc2_)
+         if(this._hasModalFocus == param1)
          {
             return;
          }
-         this._focused = _loc2_;
-         this.focusChanged(this._focused);
-         dispatchEvent(new Event(!!this._focused ? FOCUS_IN_EVENT : FOCUS_OUT_EVENT));
+         this._hasModalFocus = param1;
+         this.focusChanged(this._hasModalFocus);
+         dispatchEvent(new Event(!!this._hasModalFocus ? FOCUS_IN_EVENT : FOCUS_OUT_EVENT));
+      }
+      
+      public function getComponentForFocus() : InteractiveObject
+      {
+         return this;
       }
    }
 }

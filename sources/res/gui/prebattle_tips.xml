@@ -116,13 +116,6 @@
 			<vehicleClass>AT-SPG</vehicleClass>
 		</filter>
 		<filter>
-			<id>only_dualGun_first_5_times</id>
-			<tags>dualgun</tags>
-			<preceding>
-				<showTimes>5</showTimes>
-			</preceding>
-		</filter>
-		<filter>
 			<id>battlePass_on</id>
 			<isBattlePassActiveSeason>True</isBattlePassActiveSeason>
 		</filter>
@@ -157,6 +150,13 @@
 			<isPostProgressionEnabled>True</isPostProgressionEnabled>
 		</filter>
 		<filter>
+			<id>only_dualGun_first_5_times</id>
+			<tags>dualgun</tags>
+			<preceding>
+				<showTimes>5</showTimes>
+			</preceding>
+		</filter>
+		<filter>
 			<id>only_trackWithinTrack_first_5_times</id>
 			<chassisType>2</chassisType>
 			<preceding>
@@ -165,28 +165,46 @@
 		</filter>
 		<filter>
 			<id>only_rocketAcceleration_first_5_times</id>
-			<tags>rocketAcceleration</tags>
-			<preceding>
-				<showTimes>5</showTimes>
-			</preceding>
-		</filter>
-		<filter>
-			<id>only_autoShootGun_first_5_times</id>
-			<tags>autocannon</tags>
+			<mechanics>
+				<include>rocketAcceleration</include>
+			</mechanics>
 			<preceding>
 				<showTimes>5</showTimes>
 			</preceding>
 		</filter>
 		<filter>
 			<id>only_dualAccuracy_first_5_times</id>
-			<vehProperty>hasDualAccuracy</vehProperty>
+			<mechanics>
+				<include>dualAccuracy</include>
+			</mechanics>
 			<preceding>
 				<showTimes>5</showTimes>
 			</preceding>
 		</filter>
 		<filter>
 			<id>only_twinGun_first_5_times</id>
-			<tags>twinGun</tags>
+			<mechanics>
+				<include>twinGun</include>
+			</mechanics>
+			<preceding>
+				<showTimes>5</showTimes>
+			</preceding>
+		</filter>
+		<filter>
+			<id>only_autoShootGun_first_5_times</id>
+			<mechanics>
+				<include>autoShootGun</include>
+				<exclude>overheatGun</exclude>
+			</mechanics>
+			<preceding>
+				<showTimes>5</showTimes>
+			</preceding>
+		</filter>
+		<filter>
+			<id>only_stagedJetBoosters_first_5_times</id>
+			<mechanics>
+				<include>stagedJetBoosters</include>
+			</mechanics>
 			<preceding>
 				<showTimes>5</showTimes>
 			</preceding>
@@ -1026,6 +1044,11 @@
 			<id>tip210</id>
 			<status>tip210Status</status>
 			<filter>only_twinGun_first_5_times</filter>
+		</tip>
+		<tip>
+			<id>tip211</id>
+			<status>tip211Status</status>
+			<filter>only_stagedJetBoosters_first_5_times</filter>
 		</tip>
 		<tip>
 			<id>epicTip1</id>

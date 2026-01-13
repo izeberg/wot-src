@@ -3480,7 +3480,7 @@ RECORDS = (
  (
   'singleAchievements', 'BattlePassCommonPr_18extra_2', 'p', 'B', 1),
  (
-  'singleAchievements', 'BPReserveAchievement_8', 'p', 'B', 1),
+  'singleAchievements', 'BattlePassCommonPr_NY26', 'p', 'B', 1),
  (
   'singleAchievements', 'BPReserveAchievement_9', 'p', 'B', 1),
  (
@@ -5370,7 +5370,7 @@ RECORD_DB_IDS = {('total', 'creationTime'): 68,
    ('singleAchievements', 'BattlePassCommonPr_18'): 2015, 
    ('singleAchievements', 'BattlePassCommonPr_18extra_1'): 2016, 
    ('singleAchievements', 'BattlePassCommonPr_18extra_2'): 2017, 
-   ('singleAchievements', 'BPReserveAchievement_8'): 2018, 
+   ('singleAchievements', 'BattlePassCommonPr_NY26'): 2018, 
    ('singleAchievements', 'BPReserveAchievement_9'): 2019, 
    ('singleAchievements', 'BPReserveAchievement_10'): 2020, 
    ('singleAchievements', 'vDayHero'): 2021, 

@@ -62,6 +62,65 @@
 					</config>
 				</item>
 			</MINIMAP_MARKER>
+			<FULLSCREEN_MAP_MARKER>
+				<item>
+					<class>story_mode.gui.scaleform.daapi.view.battle.markers_components.PolygonalZoneFullScreenMapMarkerComponent</class>
+					<config>
+						<symbol>CustomDeathZoneMinimapEntryUI</symbol>
+						<container>stretchableDeathZone</container>
+						<color>
+							<default>
+								<fillColor>0xff4646</fillColor>
+								<fillAlpha>
+									0.25
+									<!--BW_String-->
+								</fillAlpha>
+								<fillBlendMode>normal</fillBlendMode>
+								<outlineColor>0xff7267</outlineColor>
+								<outlineAlpha>
+									0.45
+									<!--BW_String-->
+								</outlineAlpha>
+								<outlineBlendMode>normal</outlineBlendMode>
+								<lineThickness>
+									3.0
+									<!--BW_String-->
+								</lineThickness>
+								<useGradient>false</useGradient>
+								<gradientColor>0x3e0f0f</gradientColor>
+								<gradientAlpha>
+									1.0
+									<!--BW_String-->
+								</gradientAlpha>
+							</default>
+							<colorBlind>
+								<fillColor>0x685fff</fillColor>
+								<fillAlpha>
+									0.4
+									<!--BW_String-->
+								</fillAlpha>
+								<fillBlendMode>normal</fillBlendMode>
+								<outlineColor>0xb1acff</outlineColor>
+								<outlineAlpha>
+									0.6
+									<!--BW_String-->
+								</outlineAlpha>
+								<outlineBlendMode>normal</outlineBlendMode>
+								<lineThickness>
+									3.0
+									<!--BW_String-->
+								</lineThickness>
+								<useGradient>false</useGradient>
+								<gradientColor>0x2e2a78</gradientColor>
+								<gradientAlpha>
+									1.0
+									<!--BW_String-->
+								</gradientAlpha>
+							</colorBlind>
+						</color>
+					</config>
+				</item>
+			</FULLSCREEN_MAP_MARKER>
 		</components>
 	</SM_POLYGONAL_ZONE>
 	<SM_LOOT_EQUIPMENT>
@@ -93,6 +152,17 @@
 					</config>
 				</item>
 			</MINIMAP_MARKER>
+			<FULLSCREEN_MAP_MARKER>
+				<item>
+					<class>story_mode.gui.scaleform.daapi.view.battle.markers_components.LootFullScreenMapComponent</class>
+					<config>
+						<symbol>StoryModeLootMinimapUI</symbol>
+						<container>points</container>
+						<onlyTranslation>true</onlyTranslation>
+						<loot_type>equipment</loot_type>
+					</config>
+				</item>
+			</FULLSCREEN_MAP_MARKER>
 		</components>
 	</SM_LOOT_EQUIPMENT>
 	<SM_LOOT_PLAN>
@@ -124,6 +194,17 @@
 					</config>
 				</item>
 			</MINIMAP_MARKER>
+			<FULLSCREEN_MAP_MARKER>
+				<item>
+					<class>story_mode.gui.scaleform.daapi.view.battle.markers_components.LootFullScreenMapComponent</class>
+					<config>
+						<symbol>StoryModeLootMinimapUI</symbol>
+						<container>points</container>
+						<onlyTranslation>true</onlyTranslation>
+						<loot_type>plan</loot_type>
+					</config>
+				</item>
+			</FULLSCREEN_MAP_MARKER>
 		</components>
 	</SM_LOOT_PLAN>
 	<SM_LOOT_TANK>
@@ -155,6 +236,17 @@
 					</config>
 				</item>
 			</MINIMAP_MARKER>
+			<FULLSCREEN_MAP_MARKER>
+				<item>
+					<class>story_mode.gui.scaleform.daapi.view.battle.markers_components.LootFullScreenMapComponent</class>
+					<config>
+						<symbol>StoryModeLootMinimapUI</symbol>
+						<container>points</container>
+						<onlyTranslation>true</onlyTranslation>
+						<loot_type>tank</loot_type>
+					</config>
+				</item>
+			</FULLSCREEN_MAP_MARKER>
 		</components>
 	</SM_LOOT_TANK>
 	<SM_RECON_ABILITY>
@@ -241,6 +333,16 @@
 					</config>
 				</item>
 			</MINIMAP_MARKER>
+			<FULLSCREEN_MAP_MARKER>
+				<item>
+					<class>story_mode.gui.scaleform.daapi.view.battle.markers_components.AbilityFullScreenMapComponent</class>
+					<config>
+						<symbol>DistractionMinimapEntryUI</symbol>
+						<container>flags</container>
+						<onlyTranslation>true</onlyTranslation>
+					</config>
+				</item>
+			</FULLSCREEN_MAP_MARKER>
 			<TERRAIN_MARKER>
 				<item>
 					<class>gui.Scaleform.daapi.view.battle.shared.component_marker.markers_components.TerrainMarkerComponent</class>
@@ -286,4 +388,207 @@
 			</TERRAIN_MARKER>
 		</components>
 	</SM_DISTRACTION_VEHICLE_MARKER>
+	<SM_FOG_1>
+		<visible>true</visible>
+		<components>
+			<MINIMAP_MARKER>
+				<item>
+					<class>story_mode.gui.scaleform.daapi.view.battle.markers_components.SMBitmapComponent</class>
+					<config>
+						<symbol>PveBitmapUI</symbol>
+						<container>arrows</container>
+						<bitmapName>sm_minimap_fog_1</bitmapName>
+					</config>
+				</item>
+			</MINIMAP_MARKER>
+			<FULLSCREEN_MAP_MARKER>
+				<item>
+					<class>story_mode.gui.scaleform.daapi.view.battle.markers_components.SMFullScreenMapBitmapComponent</class>
+					<config>
+						<symbol>PveBitmapUI</symbol>
+						<container>arrows</container>
+						<bitmapName>sm_minimap_fog_1</bitmapName>
+					</config>
+				</item>
+			</FULLSCREEN_MAP_MARKER>
+		</components>
+	</SM_FOG_1>
+	<SM_FOG_2>
+		<visible>true</visible>
+		<components>
+			<MINIMAP_MARKER>
+				<item>
+					<class>story_mode.gui.scaleform.daapi.view.battle.markers_components.SMBitmapComponent</class>
+					<config>
+						<symbol>PveBitmapUI</symbol>
+						<container>arrows</container>
+						<bitmapName>sm_minimap_fog_2</bitmapName>
+					</config>
+				</item>
+			</MINIMAP_MARKER>
+			<FULLSCREEN_MAP_MARKER>
+				<item>
+					<class>story_mode.gui.scaleform.daapi.view.battle.markers_components.SMFullScreenMapBitmapComponent</class>
+					<config>
+						<symbol>PveBitmapUI</symbol>
+						<container>arrows</container>
+						<bitmapName>sm_minimap_fog_2</bitmapName>
+					</config>
+				</item>
+			</FULLSCREEN_MAP_MARKER>
+		</components>
+	</SM_FOG_2>
+	<SM_FOG_3>
+		<visible>true</visible>
+		<components>
+			<MINIMAP_MARKER>
+				<item>
+					<class>story_mode.gui.scaleform.daapi.view.battle.markers_components.SMBitmapComponent</class>
+					<config>
+						<symbol>PveBitmapUI</symbol>
+						<container>arrows</container>
+						<bitmapName>sm_minimap_fog_3</bitmapName>
+					</config>
+				</item>
+			</MINIMAP_MARKER>
+			<FULLSCREEN_MAP_MARKER>
+				<item>
+					<class>story_mode.gui.scaleform.daapi.view.battle.markers_components.SMFullScreenMapBitmapComponent</class>
+					<config>
+						<symbol>PveBitmapUI</symbol>
+						<container>arrows</container>
+						<bitmapName>sm_minimap_fog_3</bitmapName>
+					</config>
+				</item>
+			</FULLSCREEN_MAP_MARKER>
+		</components>
+	</SM_FOG_3>
+	<SM_FOG_4>
+		<visible>true</visible>
+		<components>
+			<MINIMAP_MARKER>
+				<item>
+					<class>story_mode.gui.scaleform.daapi.view.battle.markers_components.SMBitmapComponent</class>
+					<config>
+						<symbol>PveBitmapUI</symbol>
+						<container>arrows</container>
+						<bitmapName>sm_minimap_fog_4</bitmapName>
+					</config>
+				</item>
+			</MINIMAP_MARKER>
+			<FULLSCREEN_MAP_MARKER>
+				<item>
+					<class>story_mode.gui.scaleform.daapi.view.battle.markers_components.SMFullScreenMapBitmapComponent</class>
+					<config>
+						<symbol>PveBitmapUI</symbol>
+						<container>arrows</container>
+						<bitmapName>sm_minimap_fog_4</bitmapName>
+					</config>
+				</item>
+			</FULLSCREEN_MAP_MARKER>
+		</components>
+	</SM_FOG_4>
+	<SM_FOG_5>
+		<visible>true</visible>
+		<components>
+			<MINIMAP_MARKER>
+				<item>
+					<class>story_mode.gui.scaleform.daapi.view.battle.markers_components.SMBitmapComponent</class>
+					<config>
+						<symbol>PveBitmapUI</symbol>
+						<container>arrows</container>
+						<bitmapName>sm_minimap_fog_5</bitmapName>
+					</config>
+				</item>
+			</MINIMAP_MARKER>
+			<FULLSCREEN_MAP_MARKER>
+				<item>
+					<class>story_mode.gui.scaleform.daapi.view.battle.markers_components.SMFullScreenMapBitmapComponent</class>
+					<config>
+						<symbol>PveBitmapUI</symbol>
+						<container>arrows</container>
+						<bitmapName>sm_minimap_fog_5</bitmapName>
+					</config>
+				</item>
+			</FULLSCREEN_MAP_MARKER>
+		</components>
+	</SM_FOG_5>
+	<SM_FOG_6>
+		<visible>true</visible>
+		<components>
+			<MINIMAP_MARKER>
+				<item>
+					<class>story_mode.gui.scaleform.daapi.view.battle.markers_components.SMBitmapComponent</class>
+					<config>
+						<symbol>PveBitmapUI</symbol>
+						<container>arrows</container>
+						<bitmapName>sm_minimap_fog_6</bitmapName>
+					</config>
+				</item>
+			</MINIMAP_MARKER>
+			<FULLSCREEN_MAP_MARKER>
+				<item>
+					<class>story_mode.gui.scaleform.daapi.view.battle.markers_components.SMFullScreenMapBitmapComponent</class>
+					<config>
+						<symbol>PveBitmapUI</symbol>
+						<container>arrows</container>
+						<bitmapName>sm_minimap_fog_6</bitmapName>
+					</config>
+				</item>
+			</FULLSCREEN_MAP_MARKER>
+		</components>
+	</SM_FOG_6>
+	<SM_FOG_7>
+		<visible>true</visible>
+		<components>
+			<MINIMAP_MARKER>
+				<item>
+					<class>story_mode.gui.scaleform.daapi.view.battle.markers_components.SMBitmapComponent</class>
+					<config>
+						<symbol>PveBitmapUI</symbol>
+						<container>arrows</container>
+						<bitmapName>sm_minimap_fog_7</bitmapName>
+					</config>
+				</item>
+			</MINIMAP_MARKER>
+			<FULLSCREEN_MAP_MARKER>
+				<item>
+					<class>story_mode.gui.scaleform.daapi.view.battle.markers_components.SMFullScreenMapBitmapComponent</class>
+					<config>
+						<symbol>PveBitmapUI</symbol>
+						<container>arrows</container>
+						<bitmapName>sm_minimap_fog_7</bitmapName>
+					</config>
+				</item>
+			</FULLSCREEN_MAP_MARKER>
+		</components>
+	</SM_FOG_7>
+	<SM_ONBOARDING_FLAG>
+		<visible>true</visible>
+		<components>
+			<MARKER_2D>
+				<item>
+					<class>gui.Scaleform.daapi.view.battle.pve_base.component_marker.markers_components.PveAnimatedFlagMarkerComponent</class>
+					<config>
+						<symbol>GoalMarkerUI</symbol>
+						<is_sticky>true</is_sticky>
+						<cull_distance>
+							18000.0
+							<!--BW_String-->
+						</cull_distance>
+					</config>
+				</item>
+			</MARKER_2D>
+			<MINIMAP_MARKER>
+				<item>
+					<class>gui.Scaleform.daapi.view.battle.pve_base.component_marker.markers_components.PveFlagMinimapComponent</class>
+					<config>
+						<symbol>PveFlagAnimationUI</symbol>
+						<container>flags</container>
+						<onlyTranslation>true</onlyTranslation>
+					</config>
+				</item>
+			</MINIMAP_MARKER>
+		</components>
+	</SM_ONBOARDING_FLAG>
 </root>

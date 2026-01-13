@@ -985,6 +985,8 @@ class CustomizationCache(object):
                     continue
                 if itemType in CustomizationType.STYLE_ONLY_RANGE and components:
                     raise SoftException(("Outfit can't contain style-only items: {}").format(components))
+                if season == SeasonType.ALL and itemType not in CustomizationType.COMMON_TYPES:
+                    raise SoftException(('Outfit contain non-common items in ALL season: {}').format(components))
                 storage = getattr(self, componentsAttrName)
                 if usedStyle is not None:
                     baseOutfit = usedStyle.outfits.get(season)

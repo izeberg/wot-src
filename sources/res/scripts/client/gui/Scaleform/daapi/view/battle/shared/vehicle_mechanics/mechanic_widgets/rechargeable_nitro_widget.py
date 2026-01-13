@@ -1,20 +1,21 @@
+from __future__ import absolute_import
 import typing, CommandMapping
 from constants import RECHARGEABLE_NITRO_STATE
+from events_containers.common.containers import ContainersListener
 from events_handler import eventHandler
 from gui.Scaleform.daapi.view.battle.shared.vehicle_mechanics.mechanic_widgets.vehicle_mechanic_widget import HotKeyData
 from gui.Scaleform.daapi.view.meta.RocketAcceleratorIndicatorMeta import RocketAcceleratorIndicatorMeta
 from gui.Scaleform.genConsts.MECHANICS_WIDGET_CONST import MECHANICS_WIDGET_CONST
 from gui.veh_mechanics.battle.updaters.hotkey_updaters import HotKeysViewUpdater
-from gui.veh_mechanics.battle.updaters.mechanic_passenger_view_updater import VehicleMechanicPassengerUpdater
-from gui.veh_mechanics.battle.updaters.mechanic_states_view_updater import VehicleMechanicStatesUpdater
-from vehicles.components.component_events import ComponentListener
+from gui.veh_mechanics.battle.updaters.mechanics.mechanic_passenger_updater import VehicleMechanicPassengerUpdater
+from gui.veh_mechanics.battle.updaters.mechanics.mechanic_states_updater import VehicleMechanicStatesUpdater
 from vehicles.mechanics.mechanic_constants import VehicleMechanic, VehicleMechanicCommand
 from vehicles.mechanics.mechanic_states import IMechanicStatesListenerLogic
 if typing.TYPE_CHECKING:
     from RechargeableNitroController import RechargeableNitroState
     from gui.veh_mechanics.battle.updaters.updaters_common import IViewUpdater
 
-class RechargeableNitroMechanicWidget(RocketAcceleratorIndicatorMeta, ComponentListener, IMechanicStatesListenerLogic):
+class RechargeableNitroMechanicWidget(RocketAcceleratorIndicatorMeta, ContainersListener, IMechanicStatesListenerLogic):
     _UI_STATES = {RECHARGEABLE_NITRO_STATE.NOT_RUNNING: MECHANICS_WIDGET_CONST.IDLE, 
        RECHARGEABLE_NITRO_STATE.DEPLOYING: MECHANICS_WIDGET_CONST.PREPARING, 
        RECHARGEABLE_NITRO_STATE.PREPARING: MECHANICS_WIDGET_CONST.PREPARING, 
@@ -47,7 +48,7 @@ class RechargeableNitroMechanicWidget(RocketAcceleratorIndicatorMeta, ComponentL
         return [
          VehicleMechanicPassengerUpdater(VehicleMechanic.RECHARGEABLE_NITRO, self),
          VehicleMechanicStatesUpdater(VehicleMechanic.RECHARGEABLE_NITRO, self),
-         HotKeysViewUpdater(self._HOT_KEY_MAP.keys(), self)]
+         HotKeysViewUpdater(list(self._HOT_KEY_MAP.keys()), self)]
 
     def __invalidateAll(self, state, isInstantly=False):
         self.as_setStateS(self._UI_STATES[state.state], isInstantly)

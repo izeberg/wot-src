@@ -1,5 +1,8 @@
 import typing
 from adisp import adisp_process, adisp_async
+if typing.TYPE_CHECKING:
+    from typing import Any, Callable, Type
+    from gui.event_boards.event_boards_items import IPlayerProgression
 
 class IEventBoardController(object):
 
@@ -55,4 +58,9 @@ class IEventBoardController(object):
     @adisp_async
     @adisp_process
     def getLeaderboard(self, eventID, leaderboardID, pageNumber, callback, leaderBoardClass=None, showNotification=True):
+        raise NotImplementedError
+
+    @adisp_async
+    @adisp_process
+    def getPlayerProgression(self, eventID, leaderboardID, progressionClass, callback=None, showNotification=True):
         raise NotImplementedError

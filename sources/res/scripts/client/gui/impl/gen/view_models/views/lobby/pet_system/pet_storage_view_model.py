@@ -21,7 +21,7 @@ class PetStorageViewModel(ViewModel):
     __slots__ = ('onClose', 'onBonusSelect', 'onPetSelect', 'onCardSelect', 'onInfoPageOpen',
                  'onSaveVisibility', 'onSaveName', 'onCloseNameSelection')
 
-    def __init__(self, properties=17, commands=8):
+    def __init__(self, properties=18, commands=8):
         super(PetStorageViewModel, self).__init__(properties=properties, commands=commands)
 
     @property
@@ -140,6 +140,12 @@ class PetStorageViewModel(ViewModel):
     def setHasNewNames(self, value):
         self._setBool(16, value)
 
+    def getIsUnsuitableMode(self):
+        return self._getBool(17)
+
+    def setIsUnsuitableMode(self, value):
+        self._setBool(17, value)
+
     def _initialize(self):
         super(PetStorageViewModel, self)._initialize()
         self._addViewModelProperty('promotionModel', PromotionModel())
@@ -159,6 +165,7 @@ class PetStorageViewModel(ViewModel):
         self._addNumberProperty('visibilityState')
         self._addBoolProperty('hasUniqueName', False)
         self._addBoolProperty('hasNewNames', False)
+        self._addBoolProperty('isUnsuitableMode', False)
         self.onClose = self._addCommand('onClose')
         self.onBonusSelect = self._addCommand('onBonusSelect')
         self.onPetSelect = self._addCommand('onPetSelect')

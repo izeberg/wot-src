@@ -188,15 +188,6 @@ msgstr "• Awarded for completing the Progression."
 msgid "BPReserveAchievement_10_descr"
 msgstr "Awarded for your achievements during game"
 
-msgid "BPReserveAchievement_8"
-msgstr "BP Reserve Achievement 8"
-
-msgid "BPReserveAchievement_8_condition"
-msgstr "• Awarded for completing the Progression."
-
-msgid "BPReserveAchievement_8_descr"
-msgstr "Awarded for your achievements during game"
-
 msgid "BPReserveAchievement_9"
 msgstr "BP Reserve Achievement 9"
 
@@ -526,6 +517,15 @@ msgid "BattlePassCommonPr_NY25_descr"
 msgstr ""
 "Awarded for your achievements during Rambo.\n"
 "RAMBO™ & © 2025 STUDIOCANAL S.A.S. (R) All Rights Reserved."
+
+msgid "BattlePassCommonPr_NY26"
+msgstr "Prime Directive"
+
+msgid "BattlePassCommonPr_NY26_condition"
+msgstr "• Awarded for completing the Progression."
+
+msgid "BattlePassCommonPr_NY26_descr"
+msgstr "Awarded for your achievements during Battle Pass: RoboCop."
 
 msgid "BigAnniversaryMedal_CN"
 msgstr "Big Anniversary Medal"
@@ -2078,7 +2078,7 @@ msgstr ""
 " Onslaught mode."
 
 msgid "comp7_5_2"
-msgstr "Crimson Dragon"
+msgstr "Trial by Fire"
 
 msgid "comp7_5_2_descr"
 msgstr ""
@@ -5577,14 +5577,14 @@ msgstr "Outstanding Collector"
 
 msgid "twoPointZeroCollectorMedal_condition"
 msgstr ""
-"Awarded to players who researched and purchased every Tier VI–X vehicle in "
-"the Tech Tree, then claimed their reward to celebrate the release of WoT "
-"2.0."
+"• You must have all vehicles from the list in your Garage.\n"
+"• Only vehicle branches that were in the game before the launch of WoT 2.0 count.\n"
+"• You do not need to research all vehicle modules to earn the award."
 
 msgid "twoPointZeroCollectorMedal_descr"
 msgstr ""
-"You amassed an impressive collection of high-tier vehicles by the launch of "
-"WoT 2.0."
+"Awarded for having every Tier VI–X researchable vehicle that was in the game"
+" before the launch of WoT 2.0 in your Garage."
 
 msgid "twoPointZeroMedal"
 msgstr "I Was There for 2.0"

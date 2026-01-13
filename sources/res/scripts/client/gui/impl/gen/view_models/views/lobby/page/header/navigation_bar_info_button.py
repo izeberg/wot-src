@@ -5,7 +5,6 @@ class ButtonType(Enum):
     INFO = 'Info'
     QUESTION = 'Question'
     VIDEO = 'Video'
-    GIFT_MACHINE = 'Gift_Machine'
 
 
 class NavigationBarInfoButton(ViewModel):

@@ -65,6 +65,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.data.constants.generated.QUEST_PROGRESS_BATTLE;
    import net.wg.data.constants.generated.RADIAL_MENU_CONSTS;
    import net.wg.data.constants.generated.SIEGE_MODE_CONSTS;
+   import net.wg.data.constants.generated.STAGED_JET_BOOSTERS_CONSTS;
    import net.wg.data.constants.generated.STATIONARY_RELOAD_WIDGET_CONSTS;
    import net.wg.gui.battle.ClassicFullStats;
    import net.wg.gui.battle.StatsBase;
@@ -141,8 +142,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.battle.battleloading.BattleLoading;
    import net.wg.gui.battle.battleloading.BattleLoadingForm;
    import net.wg.gui.battle.battleloading.BattleLoadingHelper;
-   import net.wg.gui.battle.battleloading.SimpleBattleLoading;
-   import net.wg.gui.battle.battleloading.SimpleBattleLoadingForm;
    import net.wg.gui.battle.battleloading.constants.PlayerStatus;
    import net.wg.gui.battle.battleloading.constants.VehicleStatus;
    import net.wg.gui.battle.battleloading.constants.VehicleStatusSchemes;
@@ -561,6 +560,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.battle.views.decorativeCrosshair.FuryDecorativeCrosshair;
    import net.wg.gui.battle.views.decorativeCrosshair.OverheatDecorativeCrosshair;
    import net.wg.gui.battle.views.decorativeCrosshair.PillboxSiegeDecorativeCrosshair;
+   import net.wg.gui.battle.views.decorativeCrosshair.TemperatureGunOverheatDecorativeCrosshair;
    import net.wg.gui.battle.views.decorativeCrosshair.accuracy.AccuracyProgressbar;
    import net.wg.gui.battle.views.decorativeCrosshair.accuracy.AccuracyStack;
    import net.wg.gui.battle.views.decorativeCrosshair.accuracy.SpeedLimitMark;
@@ -907,6 +907,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.battle.views.widgetsPanel.PowerWidget;
    import net.wg.gui.battle.views.widgetsPanel.RechargeableNitroWidget;
    import net.wg.gui.battle.views.widgetsPanel.RocketAcceleratorWidget;
+   import net.wg.gui.battle.views.widgetsPanel.StagedJetBoostersWidget;
    import net.wg.gui.battle.views.widgetsPanel.StanceDanceButtonsContainer;
    import net.wg.gui.battle.views.widgetsPanel.StanceDanceFightWidget;
    import net.wg.gui.battle.views.widgetsPanel.StanceDanceSpeedWidget;
@@ -914,6 +915,8 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.battle.views.widgetsPanel.StationaryReloadWidget;
    import net.wg.gui.battle.views.widgetsPanel.SupportWeaponWidget;
    import net.wg.gui.battle.views.widgetsPanel.TargetDesignatorWidget;
+   import net.wg.gui.battle.views.widgetsPanel.TemperatureGunHeatZonesWidget;
+   import net.wg.gui.battle.views.widgetsPanel.TemperatureGunOverheatWidget;
    import net.wg.gui.battle.views.widgetsPanel.WidgetsPanel;
    import net.wg.gui.battle.views.widgetsPanel.chargeableBurst.BulletItem;
    import net.wg.gui.battle.views.widgetsPanel.chargeableBurst.Bullets;
@@ -941,6 +944,8 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.battle.views.widgetsPanel.stanceDance.FightWidgetAnimation;
    import net.wg.gui.battle.views.widgetsPanel.stanceDance.StanceDanceProgress;
    import net.wg.gui.battle.views.widgetsPanel.stanceDance.StanceDanceWidget;
+   import net.wg.gui.battle.views.widgetsPanel.temperatureGun.TemperatureGunScaleCursor;
+   import net.wg.gui.battle.views.widgetsPanel.temperatureGun.TemperatureGunScaleSector;
    import net.wg.gui.battle.views.widgetsPanel.vo.DeviceStateInfo;
    import net.wg.gui.battle.views.widgetsPanel.vo.HotKeyVo;
    import net.wg.gui.battle.views.widgetsPanel.vo.StateVO;
@@ -1062,6 +1067,8 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_DATA_CONSTANTS_GENERATED_SIEGE_MODE_CONSTS:Class = SIEGE_MODE_CONSTS;
       
+      public static const NET_WG_DATA_CONSTANTS_GENERATED_STAGED_JET_BOOSTERS_CONSTS:Class = STAGED_JET_BOOSTERS_CONSTS;
+      
       public static const NET_WG_DATA_CONSTANTS_GENERATED_STATIONARY_RELOAD_WIDGET_CONSTS:Class = STATIONARY_RELOAD_WIDGET_CONSTS;
       
       public static const NET_WG_DATA_VO_VEHICLESTATUSLIGHTVO:Class = VehicleStatusLightVO;
@@ -1119,10 +1126,6 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_BATTLE_BATTLELOADING_BATTLELOADINGFORM:Class = BattleLoadingForm;
       
       public static const NET_WG_GUI_BATTLE_BATTLELOADING_BATTLELOADINGHELPER:Class = BattleLoadingHelper;
-      
-      public static const NET_WG_GUI_BATTLE_BATTLELOADING_SIMPLEBATTLELOADING:Class = SimpleBattleLoading;
-      
-      public static const NET_WG_GUI_BATTLE_BATTLELOADING_SIMPLEBATTLELOADINGFORM:Class = SimpleBattleLoadingForm;
       
       public static const NET_WG_GUI_BATTLE_BATTLELOADING_CONSTANTS_PLAYERSTATUS:Class = PlayerStatus;
       
@@ -2094,6 +2097,8 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_BATTLE_VIEWS_DECORATIVECROSSHAIR_PILLBOXSIEGEDECORATIVECROSSHAIR:Class = PillboxSiegeDecorativeCrosshair;
       
+      public static const NET_WG_GUI_BATTLE_VIEWS_DECORATIVECROSSHAIR_TEMPERATUREGUNOVERHEATDECORATIVECROSSHAIR:Class = TemperatureGunOverheatDecorativeCrosshair;
+      
       public static const NET_WG_GUI_BATTLE_VIEWS_DECORATIVECROSSHAIR_ACCURACY_ACCURACYPROGRESSBAR:Class = AccuracyProgressbar;
       
       public static const NET_WG_GUI_BATTLE_VIEWS_DECORATIVECROSSHAIR_ACCURACY_ACCURACYSTACK:Class = AccuracyStack;
@@ -2786,6 +2791,8 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_ROCKETACCELERATORWIDGET:Class = RocketAcceleratorWidget;
       
+      public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_STAGEDJETBOOSTERSWIDGET:Class = StagedJetBoostersWidget;
+      
       public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_STANCEDANCEBUTTONSCONTAINER:Class = StanceDanceButtonsContainer;
       
       public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_STANCEDANCEFIGHTWIDGET:Class = StanceDanceFightWidget;
@@ -2799,6 +2806,10 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_SUPPORTWEAPONWIDGET:Class = SupportWeaponWidget;
       
       public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_TARGETDESIGNATORWIDGET:Class = TargetDesignatorWidget;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_TEMPERATUREGUNHEATZONESWIDGET:Class = TemperatureGunHeatZonesWidget;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_TEMPERATUREGUNOVERHEATWIDGET:Class = TemperatureGunOverheatWidget;
       
       public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_WIDGETSPANEL:Class = WidgetsPanel;
       
@@ -2853,6 +2864,10 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_STANCEDANCE_STANCEDANCEPROGRESS:Class = StanceDanceProgress;
       
       public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_STANCEDANCE_STANCEDANCEWIDGET:Class = StanceDanceWidget;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_TEMPERATUREGUN_TEMPERATUREGUNSCALECURSOR:Class = TemperatureGunScaleCursor;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_TEMPERATUREGUN_TEMPERATUREGUNSCALESECTOR:Class = TemperatureGunScaleSector;
       
       public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_VO_DEVICESTATEINFO:Class = DeviceStateInfo;
       

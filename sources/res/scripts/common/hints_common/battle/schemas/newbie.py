@@ -1,5 +1,5 @@
 from dict2model import models, fields
-from base_schema_manager import GameParamsSchema
+from game_params_common.schema import GameParamsSchema
 
 class NewbieBattleHintsConfigModel(models.Model):
     __slots__ = ('enabled', )

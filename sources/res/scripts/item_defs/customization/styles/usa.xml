@@ -3365,4 +3365,100 @@
 			</outfits>
 		</style>
 	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:styles/special_styles</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>styles 750g notInShop</priceGroup>
+		<vehicleFilter>
+			<include>
+				<vehicles>usa:A191_Ares_90_C</vehicles>
+			</include>
+		</vehicleFilter>
+		<style>
+			<id>1241</id>
+			<texture>gui/maps/vehicles/styles/2_0_progression_a.png</texture>
+			<maxNumber>1</maxNumber>
+			<userString>#vehicle_customization:special_style/2_0_progression_a</userString>
+			<description>#vehicle_customization:special_style/2_0_progression_a_desc</description>
+			<longDescriptionSpecial>#vehicle_customization:special_style/2_0_progression_a_desc/long</longDescriptionSpecial>
+			<tags>progression_required c11n2D</tags>
+			<outfits>
+				<outfit>
+					<season>ALL</season>
+					<camouflages>
+						<item>
+							<id>1262</id>
+							<appliedTo>272</appliedTo>
+							<patternSize>1</patternSize>
+							<palette>0</palette>
+						</item>
+						<item>
+							<id>1263</id>
+							<appliedTo>4096</appliedTo>
+							<patternSize>1</patternSize>
+							<palette>0</palette>
+						</item>
+					</camouflages>
+					<modifications>
+						<item>7</item>
+					</modifications>
+				</outfit>
+			</outfits>
+			<itemFilters>
+				<projection_decal>
+					<include>
+						<itemGroupName>Progression Decals</itemGroupName>
+					</include>
+				</projection_decal>
+			</itemFilters>
+		</style>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:styles/special_styles</userString>
+		<season>ALL</season>
+		<historical>2</historical>
+		<priceGroup>styles 3000g notInShop</priceGroup>
+		<vehicleFilter>
+			<include>
+				<vehicles>usa:A144_M_VI_Y_CFE_RC</vehicles>
+			</include>
+		</vehicleFilter>
+		<style>
+			<id>1269</id>
+			<texture>gui/maps/vehicles/styles/A144_M_VI_Y_CFE_R_3Dst.png</texture>
+			<modelsSet>A144_M_VI_Y_CFE_R_3Dst</modelsSet>
+			<userString>#vehicle_customization:special_style/A144_M_VI_Y_CFE_R_3Dst</userString>
+			<longDescriptionSpecial>#vehicle_customization:special_style/A144_M_VI_Y_CFE_R_3Dst_desc/long</longDescriptionSpecial>
+			<maxNumber>1</maxNumber>
+			<tags>c11n3D lockedOnVehicle</tags>
+			<outfits>
+				<outfit>
+					<season>all</season>
+					<camouflages>
+						<item>
+							<id>1</id>
+							<patternSize>1</patternSize>
+							<appliedTo>4368</appliedTo>
+							<palette>0</palette>
+						</item>
+					</camouflages>
+					<insignias>
+						<item>
+							<id>113</id>
+							<appliedTo>4096</appliedTo>
+						</item>
+					</insignias>
+					<attachments>
+						<item>
+							<slotId>18000</slotId>
+							<id>172</id>
+							<scaleFactorId>0</scaleFactorId>
+							<rotated>0</rotated>
+						</item>
+					</attachments>
+				</outfit>
+			</outfits>
+		</style>
+	</itemGroup>
 </root>
