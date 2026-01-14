@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from gui.battle_control.controllers.vehicle_passenger.passenger_ctrl import VehiclePassengerController
 from gui.battle_control.controllers.vehicle_passenger.passenger_interfaces import IVehiclePassengerController

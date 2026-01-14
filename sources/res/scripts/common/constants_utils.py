@@ -1,6 +1,6 @@
-import types, arena_bonus_type_caps, constants
+import types, typing, arena_bonus_type_caps, constants
 from UnitBase import CMD_NAMES, ROSTER_TYPE, PREBATTLE_TYPE_BY_UNIT_MGR_ROSTER, PREBATTLE_TYPE_BY_UNIT_MGR_ROSTER_EXT, ROSTER_TYPE_TO_CLASS, UNIT_MGR_FLAGS_TO_PREBATTLE_TYPE, UNIT_MGR_FLAGS_TO_UNIT_MGR_ENTITY_NAME, UNIT_MGR_FLAGS_TO_INVITATION_TYPE, QUEUE_TYPE_BY_UNIT_MGR_ROSTER, UNIT_ERROR, VEHICLE_TAGS_GROUP_BY_UNIT_MGR_FLAGS
-from constants import ARENA_GUI_TYPE, ARENA_GUI_TYPE_LABEL, ARENA_BONUS_TYPE, ARENA_BONUS_TYPE_NAMES, ARENA_BONUS_TYPE_IDS, ARENA_BONUS_MASK, QUEUE_TYPE, QUEUE_TYPE_NAMES, PREBATTLE_TYPE, PREBATTLE_TYPE_NAMES, INVITATION_TYPE, BATTLE_MODE_VEHICLE_TAGS, SEASON_TYPE_BY_NAME, SEASON_NAME_BY_TYPE, QUEUE_TYPE_IDS, ARENA_BONUS_TYPE_TO_QUEUE_TYPE, ATTACK_REASONS, ATTACK_REASON_INDICES, BATTLE_FEEDBACK_REASONS_AFTER_DEATH, DAMAGE_INFO_CODES, DAMAGE_INFO_INDICES, DAMAGE_INFO_CODES_PER_ATTACK_REASON, IS_CLIENT
+from constants import ARENA_GUI_TYPE, ARENA_GUI_TYPE_LABEL, ARENA_BONUS_TYPE, ARENA_BONUS_TYPE_NAMES, ARENA_BONUS_TYPE_IDS, ARENA_BONUS_MASK, QUEUE_TYPE, QUEUE_TYPE_NAMES, PREBATTLE_TYPE, PREBATTLE_TYPE_NAMES, INVITATION_TYPE, BATTLE_MODE_VEHICLE_TAGS, SEASON_TYPE_BY_NAME, SEASON_NAME_BY_TYPE, QUEUE_TYPE_IDS, ARENA_BONUS_TYPE_TO_QUEUE_TYPE, ATTACK_REASONS, ATTACK_REASON_INDICES, DAMAGE_INFO_CODES, DAMAGE_INFO_INDICES, DAMAGE_INFO_CODES_PER_ATTACK_REASON, IS_CLIENT, INBATTLE_CONFIGS
 from BattleFeedbackCommon import BATTLE_EVENT_TYPE
 from debug_utils import LOG_DEBUG
 from soft_exception import SoftException
@@ -116,14 +116,12 @@ def addClientUnitCmd(extClientUnitCmd, personality):
     CMD_NAMES.update({value:attr for attr, value in extraAttrs.iteritems()})
 
 
-def addAttackReasonTypesFromExtension(extAttackReasonType, personality, afterDeathBattleFeedbackReasons=None):
+def addAttackReasonTypesFromExtension(extAttackReasonType, personality):
     extraAttrs = extAttackReasonType.getExtraAttrs()
     extraValues = sorted(extraAttrs.itervalues())
     extAttackReasonType.inject(personality)
     ATTACK_REASONS.extend(extraValues)
     ATTACK_REASON_INDICES.update(dict((value, index) for index, value in enumerate(ATTACK_REASONS)))
-    if afterDeathBattleFeedbackReasons:
-        BATTLE_FEEDBACK_REASONS_AFTER_DEATH.update(afterDeathBattleFeedbackReasons)
 
 
 def addDamageResistanceReasonsFromExtension(extDmgResistReasonType, personality):
@@ -245,6 +243,13 @@ def initSquadCommonTypes(extConstants, personality):
     addRosterTypes(extConstants.ROSTER_TYPE, personality)
     addInvitationTypes(extConstants.INVITATION_TYPE, personality)
     addClientUnitCmd(extConstants.CLIENT_UNIT_CMD, personality)
+
+
+def getUsedInReplaysConfigKeys():
+    from schema_manager import getSchemaManager
+    usedInReplayKeys = getSchemaManager().getUsedInReplayKeys().copy()
+    usedInReplayKeys.update(INBATTLE_CONFIGS)
+    return usedInReplayKeys
 
 
 class AbstractBattleMode(object):
@@ -394,6 +399,10 @@ class AbstractBattleMode(object):
         return []
 
     @property
+    def _client_battleEntry(self):
+        return 0
+
+    @property
     def _client_notificationActionHandlers(self):
         return []
 
@@ -415,6 +424,10 @@ class AbstractBattleMode(object):
 
     @property
     def _client_viewsForMonitoring(self):
+        return []
+
+    @property
+    def _client_dynamicViewsForMonitoring(self):
         return []
 
     @property
@@ -532,6 +545,10 @@ class AbstractBattleMode(object):
 
     @property
     def _client_hangarEventBannerType(self):
+        return
+
+    @property
+    def _client_displayedClassTagGetter(self):
         return
 
     @property
@@ -708,6 +725,11 @@ class AbstractBattleMode(object):
             from gui.Scaleform.required_libraries_config import addBattleRequiredLibraries
             addBattleRequiredLibraries(self._client_battleRequiredLibraries, self._ARENA_GUI_TYPE, self._personality)
 
+    def registerBattleEntry(self):
+        if self._client_battleEntry:
+            from gui.shared.system_factory import registerBattleEntry
+            registerBattleEntry(self._ARENA_GUI_TYPE, self._client_battleEntry)
+
     def registerLobbyContextMenuOptions(self):
         from gui.shared.system_factory import registerLobbyContexMenuOptionBuilder, registerLobbyContexMenuHandler
         for optionID, builder, handler in self._client_LobbyContextMenuOptions:
@@ -801,6 +823,10 @@ class AbstractBattleMode(object):
         from gui.shared.system_factory import registerViewsForMonitoring
         registerViewsForMonitoring(self._client_viewsForMonitoring)
 
+    def registerClientDynamicViewsForMonitoring(self):
+        from gui.shared.system_factory import registerDynamicViewsForMonitoring
+        registerDynamicViewsForMonitoring(self._client_dynamicViewsForMonitoring)
+
     def registerClientAwardControllerHandlers(self):
         from gui.shared.system_factory import registerAwardControllerHandlers
         registerAwardControllerHandlers(self._client_awardControllerHandlers)
@@ -884,10 +910,6 @@ class AbstractBattleMode(object):
         from gui.shared.system_factory import registerPrebattleCtrlMode
         registerPrebattleCtrlMode(self._ARENA_BONUS_TYPE, self._client_prebattleCtrlMode)
 
-    def registerDamageHitIndicator(self, hitDirectionType, hitDirectionPlayerType):
-        from gui.shared.system_factory import registerHitDirectionController
-        registerHitDirectionController(self._ARENA_GUI_TYPE, hitDirectionType, hitDirectionPlayerType)
-
-    def registerQueueCtrlMatchmakerStatsName(self, matchmakerStatsSectionName):
-        from battle_modes.QueueController import registerMatchmakerStatsName
-        registerMatchmakerStatsName(self._QUEUE_TYPE, matchmakerStatsSectionName)
+    def registerDisplayedClassTagGetter(self):
+        from gui.shared.system_factory import registerDisplayedClassTagGetter
+        registerDisplayedClassTagGetter(self._ARENA_GUI_TYPE, self._client_displayedClassTagGetter)

@@ -1,3 +1,4 @@
+import typing
 from enum import IntEnum
 import enum, calendar, time
 from math import cos, radians
@@ -5,9 +6,10 @@ from time import time as timestamp
 from collections import namedtuple
 from itertools import izip, chain
 from Math import Vector3, Vector2
-from wg_typing import *
 from realm import CURRENT_REALM
 from functools import reduce
+if typing.TYPE_CHECKING:
+    from typing import Sequence, Union
 try:
     import BigWorld
 except ImportError:
@@ -854,10 +856,10 @@ class Configs(enum.Enum):
     SYSTEM_CHANNELS = 'system_channels'
     REFERRAL_PROGRAM_CONFIG = 'referral_program_config'
     FAIRPLAY_CONFIG = 'fairplay_config'
+    ARENA_DYN_OBSTACLES_CONFIG = 'arena_dyn_obstacles_config'
     POSTMORTEM_SETTINGS_CONFIG = 'postmortem_settings_config'
     LIVE_OPS_EVENTS_CONFIG = 'live_ops_events_config'
     ADVANCED_ACHIEVEMENTS_CONFIG = 'advanced_achievements_config'
-    NY_DOG_CONFIG = 'ny_dog_config'
     LOOTBOXES_TOOLTIP_CONFIG = 'lootboxes_tooltip_config'
     UNIT_ASSEMBLER_CONFIG = 'unit_assembler_config'
     EASY_TANK_EQUIP_CONFIG = 'easy_tank_equip_config'
@@ -876,9 +878,7 @@ INBATTLE_CONFIGS = [
  'ranked_config',
  'battle_royale_config',
  'epic_config',
- 'vehicle_post_progression_config',
- Configs.PLAYER_SATISFACTION_CONFIG.value,
- Configs.COMMENDATIONS_CONFIG.value]
+ 'vehicle_post_progression_config']
 
 class RESTRICTION_TYPE:
     NONE = 0
@@ -1125,7 +1125,6 @@ class EQUIPMENT_STAGES:
      UNAVAILABLE,
      READY,
      PREPARING,
-     WAIT_FOR_CHOICE,
      ACTIVE,
      COOLDOWN,
      SHARED_COOLDOWN,
@@ -1142,9 +1141,7 @@ class EQUIPMENT_STAGES:
            cls.PREPARING: 'preparing', 
            cls.ACTIVE: 'active', 
            cls.COOLDOWN: 'cooldown', 
-           cls.SHARED_COOLDOWN: 'sharedCooldown', 
            cls.STARTUP_COOLDOWN: 'startupCooldown', 
-           cls.WAIT_FOR_CHOICE: 'waitForChoice', 
            cls.INTERRUPTED: 'interrupted', 
            cls.EXHAUSTED: 'exhausted'}.get(value)
 
@@ -1285,10 +1282,10 @@ ATTACK_REASON_INDICES = {value:index for index, value in enumerate(ATTACK_REASON
 BOT_RAM_REASONS = (
  ATTACK_REASON.BRANDER_RAM, ATTACK_REASON.CLING_BRANDER_RAM)
 WORLD_ATTACK_REASONS = (ATTACK_REASON.WORLD_COLLISION, ATTACK_REASON.CGF_WORLD)
-BATTLE_FEEDBACK_REASONS_AFTER_DEATH = {
+BATTLE_FEEDBACK_REASONS_AFTER_DEATH = frozenset((
  ATTACK_REASON.SHOT, ATTACK_REASON.FIRE, ATTACK_REASON.RAM, ATTACK_REASON.WORLD_COLLISION,
  ATTACK_REASON.DROWNING, ATTACK_REASON.OVERTURN, ATTACK_REASON.SPAWNED_BOT_EXPLOSION, ATTACK_REASON.BRANDER_RAM,
- ATTACK_REASON.CLING_BRANDER_RAM}
+ ATTACK_REASON.CLING_BRANDER_RAM))
 DEATH_REASON_ALIVE = -1
 
 class REPAIR_TYPE:
@@ -1307,6 +1304,18 @@ class VEHICLE_HIT_EFFECT:
     MAX_CODE = ARMOR_PIERCED_DEVICE_DAMAGED
     RICOCHETS = (INTERMEDIATE_RICOCHET, FINAL_RICOCHET)
     PIERCED_HITS = (ARMOR_PIERCED_NO_DAMAGE, ARMOR_PIERCED, CRITICAL_HIT, ARMOR_PIERCED_DEVICE_DAMAGED)
+    INVALID = 15
+    _GROUP_MAPPING = {INTERMEDIATE_RICOCHET: 'armorBasicRicochet', 
+       FINAL_RICOCHET: 'armorRicochet', 
+       ARMOR_NOT_PIERCED: 'armorResisted', 
+       ARMOR_PIERCED_NO_DAMAGE: 'armorResisted', 
+       ARMOR_PIERCED: 'armorHit', 
+       CRITICAL_HIT: 'armorCriticalHit', 
+       ARMOR_PIERCED_DEVICE_DAMAGED: 'armorCriticalHit'}
+
+    @classmethod
+    def getEffectGroup(cls, hitEffect):
+        return cls._GROUP_MAPPING[hitEffect]
 
 
 class VEHICLE_HIT_FLAGS(BIN_FLAGS):
@@ -1451,6 +1460,17 @@ class EVENT_TYPE:
     QUEST_WITHOUT_DYNAMIC_UPDATE = (POTAPOV_QUEST, NT_QUEST)
     QUEST_USE_FOR_C11N_PROGRESS = (TOKEN_QUEST, BATTLE_QUEST)
     MISC_DATA_RANGE = (BATTLE_QUEST, TOKEN_QUEST)
+
+
+class BATTLE_PROGRESS_CATEGORY:
+    DAILY_QUESTS = 0
+    WEEKLY_QUESTS = 1
+    BATTLE_MATTERS = 2
+    BATTLE_PASS = 3
+    PERSONAL_MISSONS_3 = 4
+    PRESTIGE = 5
+    RESEARCH_NEW_MODULES_AND_VEHICLES = 6
+    COMMON_QUESTS = 7
 
 
 class QUEST_DATA_IDX:
@@ -1829,7 +1849,7 @@ class REQUEST_COOLDOWN:
     SEND_INVITATION_COOLDOWN = 1.0
     RUN_QUEST = 1.0
     PAWN_FREE_AWARD_LIST = 1.0
-    LOOTBOX = 0.3
+    LOOTBOX = 1.0
     BADGES = 2.0
     CREW_SKINS = 0.3
     BPF_COMMAND = 1.0
@@ -1844,21 +1864,6 @@ class REQUEST_COOLDOWN:
     ANONYMIZER = 1.0
     UPDATE_IN_BATTLE_PLAYER_RELATIONS = 1.0
     FLUSH_RELATIONS = 1.0
-    NEW_YEAR_SLOT_FILL = 0.4
-    NEW_YEAR_SEE_INVENTORY_TOYS = 0.5
-    NEW_YEAR_SEE_COLLECTION_TOYS = 0.5
-    NEW_YEAR_SELECT_DISCOUNT = 1.0
-    NEW_YEAR_BUY_MARKETPLACE_ITEM = 1.0
-    NEW_YEAR_REROLL_CELEBRITY_QUEST = 1.0
-    NEW_YEAR_CHOOSE_XP_BONUS = 0.5
-    NEW_YEAR_CONVERT_RESOURCES = 0.5
-    NEW_YEAR_UPGRADE_OBJECT_LEVEL = 0.5
-    NEW_YEAR_COMPLETE_GUEST_QUEST = 0.5
-    NEW_YEAR_SET_HANGAR_NAME_MASK = 0.5
-    NEW_YEAR_BUY_GIFT_MACHINE_COIN = 0.5
-    NEW_YEAR_MANUAL_RESOURCE_COLLECTING = 0.5
-    NEW_YEAR_GET_NY_PIGGY_BANK_REWARDS = 0.5
-    NEW_YEAR_BUY_DOG_LEVEL = 1.0
     EQUIP_ENHANCEMENT = 1.0
     DISMOUNT_ENHANCEMENT = 1.0
     BUY_BATTLE_PASS = 1.0
@@ -2215,10 +2220,6 @@ INT_USER_SETTINGS_KEYS = {USER_SERVER_SETTINGS.VERSION: 'Settings version',
    USER_SERVER_SETTINGS.BATTLE_MATTERS_QUESTS: 'battle matters quests show reward info', 
    USER_SERVER_SETTINGS.QUESTS_PROGRESS: 'feedback quests progress', 
    91: 'Loot box last viewed count', 
-   92: 'Oriental loot box last viewed count', 
-   93: 'New year loot box last viewed count', 
-   94: 'Fairytale loot box last viewed count', 
-   95: 'Christmas loot box last viewed count', 
    USER_SERVER_SETTINGS.SESSION_STATS: 'sessiong statistics settings', 
    97: 'BattlePass carouse filter 1', 
    98: 'Battle Pass Storage', 
@@ -2228,7 +2229,6 @@ INT_USER_SETTINGS_KEYS = {USER_SERVER_SETTINGS.VERSION: 'Settings version',
    USER_SERVER_SETTINGS.GAME_EXTENDED_2: 'Game extended section settings 2', 
    103: 'Mapbox carousel filter 1', 
    104: 'Mapbox carousel filter 2', 
-   105: 'New Year settings storage', 
    USER_SERVER_SETTINGS.CONTOUR: 'Contour settings', 
    107: 'Fun Random carousel filter 1', 
    108: 'Fun Random carousel filter 2', 
@@ -2239,7 +2239,6 @@ INT_USER_SETTINGS_KEYS = {USER_SERVER_SETTINGS.VERSION: 'Settings version',
    USER_SERVER_SETTINGS.REFERRAL_PROGRAM: 'referral program settings', 
    USER_SERVER_SETTINGS.ADVANCED_ACHIEVEMENTS_STORAGE: 'advanced achievements storage', 
    116: 'Once only hints', 
-   117: 'Common loot box last viewed count', 
    118: 'Ranked carousel filter 3', 
    119: 'Frontline carousel filter 3', 
    120: 'Mapbox carousel filter 3', 
@@ -2908,13 +2907,11 @@ class BotNamingType(object):
     CREW_MEMBER = 1
     VEHICLE_MODEL = 2
     CUSTOM = 3
-    MASTER = 4
     DEFAULT = CREW_MEMBER
     CONFIG_TYPE = ('BotNamingTypeEnumType', 'py::BotNamingTypeEnum')
     _parseDict = {'crew': CREW_MEMBER, 
        'vehicle': VEHICLE_MODEL, 
        'custom': CUSTOM, 
-       'master': MASTER, 
        'default': DEFAULT}
     _descriptions = {}
 
@@ -2931,8 +2928,7 @@ BotNamingConfig = namedtuple('BotNamingConfig', ('prefix', 'argTypes', 'argSepar
 class LocalizableBotName(object):
     CONFIGS = {BotNamingType.CREW_MEMBER: BotNamingConfig('BotCrew_', (int, int, int), '_'), 
        BotNamingType.VEHICLE_MODEL: BotNamingConfig('BotVeh_', (int, int, int), '_'), 
-       BotNamingType.CUSTOM: BotNamingConfig('BotLoc_', (int, str), ' '), 
-       BotNamingType.MASTER: BotNamingConfig('BotMas_', (int, str, str, int), ' ')}
+       BotNamingType.CUSTOM: BotNamingConfig('BotLoc_', (int, str), ' ')}
 
     @staticmethod
     def create(namingType, *args):
@@ -3127,8 +3123,10 @@ class DUAL_GUN:
         COUNT = 4
 
 
-DUPLET_GUN_INDEXES = [
- DUAL_GUN.ACTIVE_GUN.LEFT, DUAL_GUN.ACTIVE_GUN.RIGHT]
+UNKNOWN_VEHICLE_ID = 0
+UNKNOWN_GUN_INDEX = -1
+DEFAULT_GUN_INDEX = 0
+DUPLET_GUN_INDEXES = [DUAL_GUN.ACTIVE_GUN.LEFT, DUAL_GUN.ACTIVE_GUN.RIGHT]
 DUPLET_GUN_INDEXES_TUPLE = tuple(DUPLET_GUN_INDEXES)
 UNKNOWN_GUN_INSTALLATION_INDEX = -1
 DEFAULT_GUN_INSTALLATION_INDEX = 0
@@ -3620,7 +3618,6 @@ class WoTPlusDailyAttendance(object):
 VEHICLE_NO_CREW_TRANSFER_PENALTY_TAG = 'noCrewTransferPenalty'
 VEHICLE_PREMIUM_TAG = 'premium'
 VEHICLE_WOT_PLUS_TAG = 'wotPlus'
-VEHICLE_BUNKER_TURRET_TAG = 'bunkerTurret'
 VEHICLE_SECRET_TAG = 'secret'
 
 class InitialVehsAdditionStrategy(object):
@@ -3755,6 +3752,7 @@ class DIRECT_DETECTION_TYPE:
     FORCED = 2
     STEALTH_RADAR = 3
     SPECIAL_RECON = 4
+    UNSPOTTED = 5
 
 
 class PlayerSatisfactionRatingInterface(IntEnum):
@@ -3887,6 +3885,40 @@ class CONCENTRATION_MODE_STATE:
            cls.IDLE: 'idle', 
            cls.DEPLOYING: 'deploying', 
            cls.DISABLED: 'disabled'}.get(value)
+
+
+class TEMPERATURE_MECHANIC_STATE(object):
+    IDLE = 0
+    HEATING = 1
+    COOLING = 2
+
+
+class TEMPERATURE_GUN_STATE(TEMPERATURE_MECHANIC_STATE):
+    COOLING_DELAY = 3
+    COOLING_STATES = (
+     TEMPERATURE_MECHANIC_STATE.COOLING, COOLING_DELAY)
+    STATIC_STATES = (TEMPERATURE_MECHANIC_STATE.IDLE, COOLING_DELAY)
+
+
+class OVERHEAT_GUN_STATE(object):
+    IDLE = 0
+    WARNING = 1
+    OVERHEATING = 2
+
+
+class HEATING_ZONES_GUN_STATE(object):
+    __slots__ = ('IDLE', 'LOW', 'MEDIUM', 'HIGH')
+    IDLE = 0
+    LOW = 1
+    MEDIUM = 2
+    HIGH = 3
+
+    @classmethod
+    def toString(cls, value):
+        return {cls.IDLE: 'idle', 
+           cls.LOW: 'low', 
+           cls.MEDIUM: 'medium', 
+           cls.HIGH: 'high'}.get(value, value)
 
 
 class POWER_MODE_STATE:
@@ -4042,6 +4074,67 @@ class TARGET_DESIGNATOR_STATE:
     ACTIVE = 1
     COOLDOWN = 2
     PRE_BATTLE = 3
+
+
+VEHICLE_MIN_ABS_INITIAL_SPEED_IN_KM_PER_HOUR = 1
+VEHICLE_MIN_ABS_INITIAL_SPEED_IN_METERS_PER_SECOND = 0.1
+
+class DEBUFFS_TYPES:
+    OVERTURN = 0
+    STUN = 1
+    AMMOBAY = 2
+    FIRE = 3
+    GUNNER1 = 4
+    GUNNER2 = 5
+    LOADER1 = 6
+    LOADER2 = 7
+    RADIOMAN1 = 8
+    RADIOMAN2 = 9
+    COMMANDER = 10
+    DRIVER = 11
+    _NAME_TO_IDX = {'overturn': OVERTURN, 
+       'stun': STUN, 
+       'ammoBay': AMMOBAY, 
+       'fire': FIRE, 
+       'gunner1': GUNNER1, 
+       'gunner2': GUNNER2, 
+       'loader1': LOADER1, 
+       'loader2': LOADER2, 
+       'radioman1': RADIOMAN1, 
+       'radioman2': RADIOMAN2, 
+       'commander': COMMANDER, 
+       'driver': DRIVER}
+
+    @classmethod
+    def getIdx(cls, name):
+        return cls._NAME_TO_IDX.get(name)
+
+
+class PHASED_MECHANIC_STATE:
+    NOT_RUNNING = 0
+    DEPLOYING = 1
+    PREPARING = 2
+    READY = 3
+    ACTIVE = 4
+    DISABLED = 5
+    EMPTY = 6
+
+    @classmethod
+    def toString(cls, value):
+        return {cls.NOT_RUNNING: 'not running', 
+           cls.DEPLOYING: 'deploying', 
+           cls.PREPARING: 'preparing', 
+           cls.READY: 'ready', 
+           cls.ACTIVE: 'active', 
+           cls.DISABLED: 'disabled', 
+           cls.EMPTY: 'empty'}.get(value)
+
+
+class AcceleratorStatus(enum.IntEnum):
+    NONE = 0
+    LEFT = 1
+    RIGHT = 2
+    BOTH = LEFT | RIGHT
 
 
 VEHICLE_MIN_ABS_INITIAL_SPEED = 0.1

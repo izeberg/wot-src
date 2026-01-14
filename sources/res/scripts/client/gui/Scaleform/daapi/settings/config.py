@@ -28,12 +28,12 @@ _LOBBY_RELEASE_PACKAGES = ('gui.Scaleform.daapi.view.lobby', 'gui.Scaleform.daap
                            'gui.impl.lobby.blueprints', 'gui.impl.lobby.currency_reserves',
                            'gui.impl.lobby.crystals_promo', 'gui.impl.lobby.account_dashboard',
                            'gui.impl.lobby.dog_tags', 'gui.impl.lobby.hangar', 'gui.impl.lobby.easy_tank_equip',
-                           'gui.impl.lobby.mode_selector', 'gui.impl.lobby.new_year',
-                           'gui.impl.lobby.maps_training', 'gui.impl.lobby.battle_results',
-                           'gui.impl.lobby.vehicle_hub', 'gui.impl.lobby.maps_blacklist',
-                           'gui.impl.lobby.daily_experience', 'gui.impl.lobby.personal_missions_30',
-                           'gui.impl.lobby.personal_reserves', 'gui.impl.lobby.battle_pass',
-                           'gui.impl.lobby.clan_supply', 'gui.impl.lobby.crew', 'gui.impl.lobby.lootbox_system',
+                           'gui.impl.lobby.mode_selector', 'gui.impl.lobby.maps_training',
+                           'gui.impl.lobby.battle_results', 'gui.impl.lobby.vehicle_hub',
+                           'gui.impl.lobby.maps_blacklist', 'gui.impl.lobby.daily_experience',
+                           'gui.impl.lobby.personal_missions_30', 'gui.impl.lobby.personal_reserves',
+                           'gui.impl.lobby.battle_pass', 'gui.impl.lobby.clan_supply',
+                           'gui.impl.lobby.crew', 'gui.impl.lobby.lootbox_system',
                            'gui.impl.lobby.collection', 'gui.impl.lobby.pet_system')
 _LOBBY_DEBUG_PACKAGES = ('gui.development.ui.messenger.view.lobby', 'gui.development.ui.demo',
                          'gui.development.ui.gf_viewer')
@@ -55,8 +55,6 @@ _LOBBY_TOOLTIPS_BUILDERS_PATHS = [
   'gui.Scaleform.daapi.view.tooltips.cybersport_builders', _TOOLTIPS.CYBER_SPORT_SET),
  (
   'gui.Scaleform.daapi.view.tooltips.elen_builders', _TOOLTIPS.ELEN_SET),
- (
-  'gui.Scaleform.daapi.view.tooltips.epic_battle_builders', _TOOLTIPS.EPIC_BATTLE_SET),
  (
   'gui.Scaleform.daapi.view.tooltips.fortifications_builder', _TOOLTIPS.FORT_SORTIE_SET),
  (
@@ -88,8 +86,6 @@ _LOBBY_TOOLTIPS_BUILDERS_PATHS = [
  (
   'gui.Scaleform.daapi.view.tooltips.marathon_builders', _TOOLTIPS.MARATHON_SET),
  (
-  'gui.Scaleform.daapi.view.tooltips.frontline_builders', _TOOLTIPS.FRONTLINE_SET),
- (
   'gui.Scaleform.daapi.view.tooltips.session_stats_builders', _TOOLTIPS.SESSION_STATS_SET),
  (
   'gui.Scaleform.daapi.view.tooltips.trade_in_builders', _TOOLTIPS.TRADE_IN_SET),
@@ -118,9 +114,7 @@ _BATTLE_TOOLTIPS_BUILDERS_PATHS = (
  (
   'gui.Scaleform.daapi.view.tooltips.settings_builders', _TOOLTIPS.SETTINGS_SET),
  (
-  'gui.Scaleform.daapi.view.tooltips.battle_opt_devices_builder', _TOOLTIPS.BATTLE_BLOCK_TOOLTIPS),
- (
-  'gui.Scaleform.daapi.view.tooltips.epic_in_battle_builders', _TOOLTIPS.EPIC_IN_BATTE_SET))
+  'gui.Scaleform.daapi.view.tooltips.battle_opt_devices_builder', _TOOLTIPS.BATTLE_BLOCK_TOOLTIPS))
 ADVANCED_COMPLEX_TOOLTIPS = {'#tooltips:hangar/ammo_panel/device/empty': 'equipment', 
    '#tooltips:hangar/ammo_panel/equipment/empty': 'service', 
    '#tooltips:equipment/empty': 'service', 

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB86_Centurion_Action_X/_skins/GB86_Centurion_Action_X_KS_3Dst/crash/lod2/Chassis</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/british/GB86_Centurion_Action_X/_skins/GB86_Centurion_Action_X_KS_3Dst/crash/lod3/Chassis</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.647172 -0.000000 -3.409977</min>
+		<max>1.650806 1.364926 4.056519</max>
+	</visibilityBox>
+</root>

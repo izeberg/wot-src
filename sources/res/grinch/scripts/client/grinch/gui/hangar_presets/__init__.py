@@ -1,8 +1,0 @@
-from grinch_common.grinch_constants import QUEUE_TYPE
-from grinch.gui.hangar_presets.grinch_hangar_presets_reader import GrinchPresetsReader
-from grinch.gui.hangar_presets.grinch_hangar_presets_getter import GrinchPresetsGetter
-from gui.shared.system_factory import registerHangarPresetsReader, registerHangarDynamicGuiProvider
-
-def registerGrinchHangarPresets():
-    registerHangarPresetsReader(GrinchPresetsReader)
-    registerHangarDynamicGuiProvider(QUEUE_TYPE.GRINCH, GrinchPresetsGetter)

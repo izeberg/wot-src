@@ -1,9 +1,10 @@
 import collections, logging, sys, typing
+from future.utils import iteritems
 from constants import BonusTypes
 from gui.shared.gui_items import KPI
 from gui.shared.items_parameters import params_cache
 from shared_utils import first
-from gui.shared.utils import WHEELED_SWITCH_ON_TIME, WHEELED_SWITCH_OFF_TIME, DUAL_GUN_CHARGE_TIME, SHOT_DISPERSION_ANGLE, TURBOSHAFT_INVISIBILITY_STILL_FACTOR, TURBOSHAFT_INVISIBILITY_MOVING_FACTOR, DISPERSION_RADIUS, CHASSIS_REPAIR_TIME, TURBOSHAFT_SWITCH_TIME, DUAL_GUN_RATE_TIME, DUAL_ACCURACY_COOLING_DELAY, BURST_FIRE_RATE, BURST_TIME_INTERVAL, AUTO_SHOOT_CLIP_FIRE_RATE, TWIN_GUN_RELOAD_ONE_GUN_TIME, TWIN_GUN_RELOAD_TWO_GUN_TIME
+from gui.shared.utils import WHEELED_SWITCH_ON_TIME, WHEELED_SWITCH_OFF_TIME, DUAL_GUN_CHARGE_TIME, SHOT_DISPERSION_ANGLE, TURBOSHAFT_INVISIBILITY_STILL_FACTOR, TURBOSHAFT_INVISIBILITY_MOVING_FACTOR, DISPERSION_RADIUS, CHASSIS_REPAIR_TIME, TURBOSHAFT_SWITCH_TIME, DUAL_GUN_RATE_TIME, DUAL_ACCURACY_COOLING_DELAY, BURST_FIRE_RATE, BURST_TIME_INTERVAL, AUTO_SHOOT_CLIP_FIRE_RATE, TWIN_GUN_RELOAD_ONE_GUN_TIME, TWIN_GUN_RELOAD_TWO_GUN_TIME, SHELL_LOADING_TIME_PROP_NAME
 if typing.TYPE_CHECKING:
     from gui.shared.items_parameters.params import _PenaltyInfo
 _logger = logging.getLogger(__name__)
@@ -15,6 +16,7 @@ BACKWARD_QUALITY_PARAMS = frozenset([
  'reloadMagazineTime',
  'reloadTimeSecs',
  'shellReloadingTime',
+ SHELL_LOADING_TIME_PROP_NAME,
  SHOT_DISPERSION_ANGLE,
  'weight',
  'turboshaftBurstFireRate',
@@ -69,6 +71,7 @@ PARAMS_WITH_IGNORED_EMPTY_VALUES = {
 CREW_LEVEL_INCREASE_AFFECTING_PARAMS = frozenset([
  'reloadTime',
  'reloadTimeSecs',
+ SHELL_LOADING_TIME_PROP_NAME,
  'clipFireRate',
  'autoReloadTime',
  'dualAccuracyCoolingDelay',
@@ -143,7 +146,7 @@ class ItemsComparator(object):
 
     def getAllDifferentParams(self):
         result = []
-        for paramName in self._currentParams.keys():
+        for paramName in self._currentParams:
             data = self.getExtendedData(paramName)
             if data.state[0] != PARAM_STATE.NORMAL:
                 result.append(data)
@@ -166,7 +169,7 @@ class VehiclesComparator(ItemsComparator):
         super(VehiclesComparator, self).__init__(currentVehicleParams, otherVehicleParams)
         self.__suitableArtefacts = set(suitableArtefacts or set())
         self.__bonuses = bonuses or set()
-        self.__penalties = penalties or dict()
+        self.__penalties = penalties or {}
         self.__paramsThatCountAsSituational = paramsThatCountAsSituational
         self.__situationalKPI = situationalKPI
         self.__highlightedBonuses = highlightedBonuses
@@ -310,32 +313,32 @@ CONDITIONAL_BONUSES = {('invisibilityMovingFactor', 'invisibilityStillFactor', T
                                                                                                   'trophyBasicImprovedConfiguration', BonusTypes.OPTIONAL_DEVICE),
                                                                                                  (
                                                                                                   'trophyUpgradedImprovedConfiguration', BonusTypes.OPTIONAL_DEVICE))}, 
-   ('reloadTime', 'reloadTimeSecs', 'avgDamagePerMinute'): {(('improvedVentilationBattleBooster', BonusTypes.BATTLE_BOOSTER),): (
-                                                                                                                               (
-                                                                                                                                'improvedVentilation_tier1', BonusTypes.OPTIONAL_DEVICE),
-                                                                                                                               (
-                                                                                                                                'improvedVentilation_tier2', BonusTypes.OPTIONAL_DEVICE),
-                                                                                                                               (
-                                                                                                                                'improvedVentilation_tier3', BonusTypes.OPTIONAL_DEVICE),
-                                                                                                                               (
-                                                                                                                                'deluxImprovedVentilation', BonusTypes.OPTIONAL_DEVICE),
-                                                                                                                               (
-                                                                                                                                'trophyBasicImprovedVentilation', BonusTypes.OPTIONAL_DEVICE),
-                                                                                                                               (
-                                                                                                                                'trophyUpgradedImprovedVentilation', BonusTypes.OPTIONAL_DEVICE)), 
-                                                            (('rammerBattleBooster', BonusTypes.BATTLE_BOOSTER),): (
-                                                                                                                  (
-                                                                                                                   'tankRammer_tier1', BonusTypes.OPTIONAL_DEVICE),
-                                                                                                                  (
-                                                                                                                   'tankRammer_tier2', BonusTypes.OPTIONAL_DEVICE),
-                                                                                                                  (
-                                                                                                                   'tankRammer_tier3', BonusTypes.OPTIONAL_DEVICE),
-                                                                                                                  (
-                                                                                                                   'deluxRammer', BonusTypes.OPTIONAL_DEVICE),
-                                                                                                                  (
-                                                                                                                   'trophyBasicTankRammer', BonusTypes.OPTIONAL_DEVICE),
-                                                                                                                  (
-                                                                                                                   'trophyUpgradedTankRammer', BonusTypes.OPTIONAL_DEVICE))}, 
+   ('reloadTime', 'reloadTimeSecs', 'avgDamagePerMinute', SHELL_LOADING_TIME_PROP_NAME): {(('improvedVentilationBattleBooster', BonusTypes.BATTLE_BOOSTER),): (
+                                                                                                                                                             (
+                                                                                                                                                              'improvedVentilation_tier1', BonusTypes.OPTIONAL_DEVICE),
+                                                                                                                                                             (
+                                                                                                                                                              'improvedVentilation_tier2', BonusTypes.OPTIONAL_DEVICE),
+                                                                                                                                                             (
+                                                                                                                                                              'improvedVentilation_tier3', BonusTypes.OPTIONAL_DEVICE),
+                                                                                                                                                             (
+                                                                                                                                                              'deluxImprovedVentilation', BonusTypes.OPTIONAL_DEVICE),
+                                                                                                                                                             (
+                                                                                                                                                              'trophyBasicImprovedVentilation', BonusTypes.OPTIONAL_DEVICE),
+                                                                                                                                                             (
+                                                                                                                                                              'trophyUpgradedImprovedVentilation', BonusTypes.OPTIONAL_DEVICE)), 
+                                                                                          (('rammerBattleBooster', BonusTypes.BATTLE_BOOSTER),): (
+                                                                                                                                                (
+                                                                                                                                                 'tankRammer_tier1', BonusTypes.OPTIONAL_DEVICE),
+                                                                                                                                                (
+                                                                                                                                                 'tankRammer_tier2', BonusTypes.OPTIONAL_DEVICE),
+                                                                                                                                                (
+                                                                                                                                                 'tankRammer_tier3', BonusTypes.OPTIONAL_DEVICE),
+                                                                                                                                                (
+                                                                                                                                                 'deluxRammer', BonusTypes.OPTIONAL_DEVICE),
+                                                                                                                                                (
+                                                                                                                                                 'trophyBasicTankRammer', BonusTypes.OPTIONAL_DEVICE),
+                                                                                                                                                (
+                                                                                                                                                 'trophyUpgradedTankRammer', BonusTypes.OPTIONAL_DEVICE))}, 
    ('clipFireRate', AUTO_SHOOT_CLIP_FIRE_RATE, 'autoReloadTime', 'dualAccuracyCoolingDelay'): {(('improvedVentilationBattleBooster', BonusTypes.BATTLE_BOOSTER),): (
                                                                                                                                                                   (
                                                                                                                                                                    'improvedVentilation_tier1', BonusTypes.OPTIONAL_DEVICE),
@@ -520,7 +523,7 @@ CONDITIONAL_BONUSES = {('invisibilityMovingFactor', 'invisibilityStillFactor', T
    ('equipmentPreparationTime', ): {(('practicalityBattleBooster', BonusTypes.BATTLE_BOOSTER),): (
                                                                                                 (
                                                                                                  'commander_practical', BonusTypes.SKILL),)}}
-CONDITIONAL_BONUSES = {k:{k1:v1 for keys1, v1 in values.iteritems() for k1 in keys1} for keys, values in CONDITIONAL_BONUSES.items() for k in keys}
+CONDITIONAL_BONUSES = {k:{k1:v1 for keys1, v1 in iteritems(values) for k1 in keys1} for keys, values in iteritems(CONDITIONAL_BONUSES) for k in keys}
 NOT_HARD_DEPENDENCY = {
  (
   'driver_virtuoso', BonusTypes.SKILL),

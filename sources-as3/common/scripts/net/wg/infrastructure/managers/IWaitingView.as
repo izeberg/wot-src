@@ -8,7 +8,7 @@ package net.wg.infrastructure.managers
    {
        
       
-      function get isOnStage() : Boolean;
+      function get isActive() : Boolean;
       
       function get isFocusable() : Boolean;
    }

@@ -55,6 +55,9 @@ msgstr "A-220A-DZT"
 msgid "A_220B_1_QL"
 msgstr "A-220B QL"
 
+msgid "A_220B_78"
+msgstr "A-220B/78"
+
 msgid "A_220B_79"
 msgstr "A-220B/79"
 
@@ -1435,6 +1438,31 @@ msgstr ""
 msgid "Ch67_BZ_79_short"
 msgstr "BZ-79"
 
+msgid "Ch70_PTZ_78"
+msgstr "PTZ-78"
+
+msgid "Ch70_PTZ_78_desc"
+msgstr ""
+"After work on the Chinese BZ-79 tank ended, the military decided to use the "
+"existing designs to create a heavy tank destroyer. The project retained the "
+"key technical solutions: an opposed-piston engine and liquid jet boosters. A"
+" cheaper version with a modified V-shaped 12-cylinder diesel engine and "
+"solid-fuel packages from unguided rockets was also developed. By the early "
+"1980s, a blueprint was ready, but the vehicle was never built since second-"
+"generation anti-tank missiles turned out to be a cheaper and more effective "
+"solution."
+
+msgid "Ch70_PTZ_78_long_special"
+msgstr ""
+"Improving on the familiar Chinese TD formula, the PTZ-78 boasts an "
+"impressive gun with high damage per shot, as well as reliable armor. But it "
+"really stands out with its unique boosters, which make this vehicle very "
+"nimble for its weight. Thus, the PTZ-78 is fearsome in narrow streets as "
+"well as on open fields."
+
+msgid "Ch70_PTZ_78_short"
+msgstr "PTZ-78"
+
 msgid "Chassis_01_Ch24_Type64_SH"
 msgstr "Type 64BL"
 
@@ -1443,6 +1471,9 @@ msgstr "WZ-131BL"
 
 msgid "Chassis_03_Ch33_60G_FT_SH"
 msgstr "60G FT-BL"
+
+msgid "Chassis_1_Ch70_PTZ_78"
+msgstr "PTZ-78"
 
 msgid "Chassis_Ch00_ClingeBot_SH"
 msgstr "Clinger"
@@ -2029,6 +2060,9 @@ msgstr "IC4"
 
 msgid "Turret_1_Ch67_BZ_79"
 msgstr "BZ-79"
+
+msgid "Turret_1_Ch70_PTZ_78"
+msgstr "PTZ-78"
 
 msgid "Turret_2_Ch04_T34_1"
 msgstr "T-34-1 model 2"
@@ -2873,6 +2907,9 @@ msgstr "152 mm 64-152DV"
 msgid "_152_mm_ZPL_75"
 msgstr "152 mm ZPL-75"
 
+msgid "_152_mm_ZPL_75_1"
+msgstr "152 mm ZPL-75-1"
+
 msgid "_152mm_59_152JG_FT"
 msgstr "152 mm 59-152JG FT"
 
@@ -2899,6 +2936,9 @@ msgstr "Chuan bei-152T (DV)"
 
 msgid "_152mm_Chuan_bei_152ZPL"
 msgstr "Chuan bei-152ZPL"
+
+msgid "_152mm_Chuan_bei_152ZPL_1"
+msgstr "Chuan bei-152ZPL-1"
 
 msgid "_152mm_Chuan_bei_547"
 msgstr "Chuan bei-547"
@@ -2933,6 +2973,9 @@ msgstr "Po-152T (DV)"
 msgid "_152mm_Po_152ZPL"
 msgstr "Po-152ZPL"
 
+msgid "_152mm_Po_152ZPL_1"
+msgstr "Po-152ZPL-1"
+
 msgid "_152mm_Po_152_111"
 msgstr "Po-152 (111)"
 
@@ -2941,6 +2984,9 @@ msgstr "Sha bao-152T (DV)"
 
 msgid "_152mm_Sha_bao_152ZPL"
 msgstr "Sha bao-152ZPL"
+
+msgid "_152mm_Sha_bao_152ZPL_1"
+msgstr "Sha bao-152ZPL-1"
 
 msgid "_152mm_Sha_bao_547"
 msgstr "Sha bao-547"
@@ -3175,6 +3221,9 @@ msgstr "57 mm ZiS-2 (76G)"
 
 msgid "_5TD_I"
 msgstr "5TD-I"
+
+msgid "_5TD_I_1"
+msgstr "5TD-I-1"
 
 msgid "_71-TK-3"
 msgstr "71-TK-3"

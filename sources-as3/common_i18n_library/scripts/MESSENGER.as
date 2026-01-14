@@ -691,8 +691,6 @@ package
       
       public static const SERVICECHANNELMESSAGES_BATTLERESULTS_SENIORITYREWARDBODY:String = "#messenger:serviceChannelMessages/battleResults/seniorityRewardBody";
       
-      public static const SERVICECHANNELMESSAGES_BATTLERESULTS_QUESTS_VARIADICDISCOUNT:String = "#messenger:serviceChannelMessages/battleResults/quests/variadicDiscount";
-      
       public static const SERVICECHANNELMESSAGES_BATTLERESULTS_PERSONALMISSIONS:String = "#messenger:serviceChannelMessages/battleResults/personalMissions";
       
       public static const SERVICECHANNELMESSAGES_BATTLERESULTS_PERSONALMISSIONS_1:String = "#messenger:serviceChannelMessages/battleResults/personalMissions/1";
@@ -1002,12 +1000,6 @@ package
       public static const SERVICECHANNELMESSAGES_QUOTEDTEXTTEMPLATE:String = "#messenger:serviceChannelMessages/quotedTextTemplate";
       
       public static const SERVICECHANNELMESSAGES_OFFERTOKENBONUS_TITLE:String = "#messenger:serviceChannelMessages/offerTokenBonus/title";
-      
-      public static const SERVICECHANNELMESSAGES_INVOICERECEIVED_NYTOYSACCRUEDINVOICERECEIVED:String = "#messenger:serviceChannelMessages/invoiceReceived/nyToysAccruedInvoiceReceived";
-      
-      public static const SERVICECHANNELMESSAGES_INVOICERECEIVED_NYTOYSDEBITEDINVOICERECEIVED:String = "#messenger:serviceChannelMessages/invoiceReceived/nyToysDebitedInvoiceReceived";
-      
-      public static const SERVICECHANNELMESSAGES_INVOICERECEIVED_TOYTYPEWRAPPER:String = "#messenger:serviceChannelMessages/invoiceReceived/toyTypeWrapper";
       
       public static const SERVICECHANNELMESSAGES_DURATIONOFPREMIUMACCOUNTEXPIRES:String = "#messenger:serviceChannelMessages/durationOfPremiumAccountExpires";
       
@@ -1362,6 +1354,10 @@ package
       public static const SERVICECHANNELMESSAGES_LOOTBOXES_ITEM_NAME:String = "#messenger:serviceChannelMessages/lootBoxes/item/name";
       
       public static const SERVICECHANNELMESSAGES_LOOTBOXESAUTOOPEN_HEADER:String = "#messenger:serviceChannelMessages/lootBoxesAutoOpen/header";
+      
+      public static const SERVICECHANNELMESSAGES_LOOTBOXESAUTOOPEN_TEXT:String = "#messenger:serviceChannelMessages/lootBoxesAutoOpen/text";
+      
+      public static const SERVICECHANNELMESSAGES_LOOTBOXESAUTOOPEN_COUNTER:String = "#messenger:serviceChannelMessages/lootBoxesAutoOpen/counter";
       
       public static const SERVICECHANNELMESSAGES_LOOTBOXESAUTOOPEN_EVENT_HEADER:String = "#messenger:serviceChannelMessages/lootBoxesAutoOpen/event/header";
       
@@ -2331,22 +2327,6 @@ package
       
       public static const PLATFORMCURRENCYMSG_DEBITED_BPTALER:String = "#messenger:platformCurrencyMsg/debited/bptaler";
       
-      public static const PLATFORMCURRENCYMSG_RECEIVED_NY_CRYSTAL:String = "#messenger:platformCurrencyMsg/received/ny_crystal";
-      
-      public static const PLATFORMCURRENCYMSG_DEBITED_NY_CRYSTAL:String = "#messenger:platformCurrencyMsg/debited/ny_crystal";
-      
-      public static const PLATFORMCURRENCYMSG_RECEIVED_NY_AMBER:String = "#messenger:platformCurrencyMsg/received/ny_amber";
-      
-      public static const PLATFORMCURRENCYMSG_DEBITED_NY_AMBER:String = "#messenger:platformCurrencyMsg/debited/ny_amber";
-      
-      public static const PLATFORMCURRENCYMSG_RECEIVED_NY_EMERALD:String = "#messenger:platformCurrencyMsg/received/ny_emerald";
-      
-      public static const PLATFORMCURRENCYMSG_DEBITED_NY_EMERALD:String = "#messenger:platformCurrencyMsg/debited/ny_emerald";
-      
-      public static const PLATFORMCURRENCYMSG_RECEIVED_NY_IRON:String = "#messenger:platformCurrencyMsg/received/ny_iron";
-      
-      public static const PLATFORMCURRENCYMSG_DEBITED_NY_IRON:String = "#messenger:platformCurrencyMsg/debited/ny_iron";
-      
       public static const PLATFORMCURRENCYMSG_RECEIVED_FREEXP:String = "#messenger:platformCurrencyMsg/received/freeXP";
       
       public static const PLATFORMCURRENCYMSG_DEBITED_FREEXP:String = "#messenger:platformCurrencyMsg/debited/freeXP";
@@ -2430,8 +2410,6 @@ package
       public static const SERVICECHANNELMESSAGES_INTEGRATEDAUCTION_LOSTRATE_HEADER:String = "#messenger:serviceChannelMessages/integratedAuction/lostRate/header";
       
       public static const SERVICECHANNELMESSAGES_INTEGRATEDAUCTION_LOSTRATE_TEXT:String = "#messenger:serviceChannelMessages/integratedAuction/lostRate/text";
-      
-      public static const SERVICECHANNELMESSAGES_PERSONALRESERVESTITLE:String = "#messenger:serviceChannelMessages/personalReservesTitle";
       
       public static const SERVICECHANNELMESSAGES_PERSONALRESERVESRELEASE_TITLE:String = "#messenger:serviceChannelMessages/personalReservesRelease/title";
       
@@ -2527,10 +2505,6 @@ package
       
       public static const SERVICECHANNELMESSAGES_EXTERNALVEHICLERENT_EXPIRED_REASON_BOOSTEROID:String = "#messenger:serviceChannelMessages/externalVehicleRent/expired/reason_boosteroid";
       
-      public static const SERVICECHANNELMESSAGES_NEWYEAR_CELEBRITYCHALLENGE_ACHIEVEMENTS:String = "#messenger:serviceChannelMessages/newYear/celebrityChallenge/achievements";
-      
-      public static const SERVICECHANNELMESSAGES_NEWYEAR_CELEBRITYCHALLENGE_OPTDEVICES:String = "#messenger:serviceChannelMessages/newYear/celebrityChallenge/optDevices";
-      
       public static const SERVICECHANNELMESSAGES_COMMENDATIONS_MESSAGES_ENABLE:String = "#messenger:serviceChannelMessages/commendations/messages/enable";
       
       public static const SERVICECHANNELMESSAGES_COMMENDATIONS_MESSAGES_DISABLE:String = "#messenger:serviceChannelMessages/commendations/messages/disable";
@@ -2550,6 +2524,14 @@ package
       public static const SERVICECHANNELMESSAGES_PRESTIGEMILESTONE_TITLE:String = "#messenger:serviceChannelMessages/prestigeMilestone/title";
       
       public static const SERVICECHANNELMESSAGES_PRESTIGEMILESTONE_TEXT:String = "#messenger:serviceChannelMessages/prestigeMilestone/text";
+      
+      public static const SERVICECHANNELMESSAGES_COLLECTOR20_TITLE:String = "#messenger:serviceChannelMessages/collector20/title";
+      
+      public static const SERVICECHANNELMESSAGES_COLLECTOR20_MEDAL:String = "#messenger:serviceChannelMessages/collector20/medal";
+      
+      public static const SERVICECHANNELMESSAGES_COLLECTOR20_BADGE:String = "#messenger:serviceChannelMessages/collector20/badge";
+      
+      public static const SERVICECHANNELMESSAGES_COLLECTOR20_STRIPE:String = "#messenger:serviceChannelMessages/collector20/stripe";
       
       public static const DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_ENUM:Array = [DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_OFFLINE,DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_NOTREADY,DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_READY,DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_INBATTLE,DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_AFK];
        

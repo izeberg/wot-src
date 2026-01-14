@@ -6,18 +6,16 @@ from gui.game_control.links import URLMacros
 from gui.impl.gen.view_models.views.lobby.vehicle_hub.views.sub_models.research_purchase_model import ResearchPurchaseModel
 from gui.impl.gui_decorators import args2params
 from gui.impl.lobby.vehicle_hub.sub_presenters.sub_presenter_base import SubPresenterBase
-from gui.impl.new_year.new_year_helper import getRewardKitsCount
 from gui.shared import events, g_eventBus
 from gui.shared.events import VehicleBuyEvent
 from gui.shared.event_bus import EVENT_BUS_SCOPE
-from gui.shared.event_dispatcher import showBlueprintView, selectVehicleInHangar, showShop, showHolidayOpsLootBoxBuyWindow, showLootBoxEntry
+from gui.shared.event_dispatcher import showBlueprintView, selectVehicleInHangar, showShop
 from gui.shared.gui_items.gui_item_economics import getPriceTypeAndValue, ActualPrice
 from gui.shared.gui_items.items_actions import factory
 from gui.shared.money import Currency
 from helpers import dependency
 from skeletons.gui.game_control import ITradeInController, IHeroTankController, IWalletController, IRestoreController
 from skeletons.gui.server_events import IEventsCache
-from skeletons.new_year import INewYearController
 if typing.TYPE_CHECKING:
     from gui.shared.gui_items.Vehicle import Vehicle
     from gui.server_events.event_items import Action
@@ -28,7 +26,6 @@ class ResearchPurchaseSubPresenter(SubPresenterBase):
     _heroTanks = dependency.descriptor(IHeroTankController)
     _wallet = dependency.descriptor(IWalletController)
     _eventsCache = dependency.descriptor(IEventsCache)
-    _nyController = dependency.descriptor(INewYearController)
 
     @property
     def viewModel(self):
@@ -54,9 +51,7 @@ class ResearchPurchaseSubPresenter(SubPresenterBase):
          (
           self._wallet.onWalletStatusChanged, self.__onWalletStatusChanged),
          (
-          self._restores.onRestoreChangeNotify, self.__onRestoreChanged),
-         (
-          self._nyController.onStateChanged, self.__onHOStateChanged))
+          self._restores.onRestoreChangeNotify, self.__onRestoreChanged))
 
     def _getListeners(self):
         return (
@@ -72,7 +67,6 @@ class ResearchPurchaseSubPresenter(SubPresenterBase):
         stats = self._itemsCache.items.stats
         actionState = ResearchPurchaseModel.ACTION_STATE_ENABLED
         actionStateReason = ''
-        model.setIsControlHidden(False)
         currency = ''
         vehPrice = 0
         oldPrice = 0
@@ -97,14 +91,7 @@ class ResearchPurchaseSubPresenter(SubPresenterBase):
             else:
                 action = ResearchPurchaseModel.ACTION_IN_GARAGE
         elif self.__isHeroTank:
-            if self._heroTanks.getCurrentFromBoxes():
-                if self._nyController.isEnabled():
-                    action = ResearchPurchaseModel.ACTION_TO_LOOTBOX if getRewardKitsCount() else ResearchPurchaseModel.ACTION_PURCHASE_LOOTBOX
-                else:
-                    action = ResearchPurchaseModel.ACTION_IN_GARAGE
-                    model.setIsControlHidden(True)
-            else:
-                action = ResearchPurchaseModel.ACTION_PURCHASE_SHOP
+            action = ResearchPurchaseModel.ACTION_PURCHASE_SHOP
             if not (self._heroTanks.getCurrentShopUrl() or self._heroTanks.getCurrentRelatedURL()):
                 actionState = ResearchPurchaseModel.ACTION_STATE_DISABLED
         elif self.currentVehicle.canTradeIn and tradeInVehicleToSell is not None and tradeInVehicleToSell.canTradeOff:
@@ -239,10 +226,6 @@ class ResearchPurchaseSubPresenter(SubPresenterBase):
             self.__purchaseHeroTank()
         elif action == ResearchPurchaseModel.ACTION_IN_GARAGE:
             selectVehicleInHangar(veh.intCD)
-        elif action == ResearchPurchaseModel.ACTION_PURCHASE_LOOTBOX:
-            showHolidayOpsLootBoxBuyWindow()
-        elif action == ResearchPurchaseModel.ACTION_TO_LOOTBOX:
-            showLootBoxEntry()
 
     @adisp_process
     def __purchaseHeroTank(self):
@@ -269,6 +252,3 @@ class ResearchPurchaseSubPresenter(SubPresenterBase):
     def __onRestoreChanged(self, vehicles):
         if self.currentVehicle.intCD in vehicles:
             self.__fillViewModel()
-
-    def __onHOStateChanged(self):
-        self.__fillViewModel()

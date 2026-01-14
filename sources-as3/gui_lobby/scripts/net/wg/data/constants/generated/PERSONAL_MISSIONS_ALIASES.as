@@ -13,8 +13,6 @@ package net.wg.data.constants.generated
       
       public static const PERSONAL_MISSIONS2_OPERATIONS_PAGE_ALIAS:String = "PersonalMissionSeason2OperationsPage";
       
-      public static const PERSONAL_MISSION_FIRST_ENTRY_VIEW_ALIAS:String = "PersonalMissionFirstEntryView";
-      
       public static const PERSONAL_MISSION_BROWSER_VIEW_ALIAS:String = "PersonalMissionsBrowserView";
       
       public static const PERSONAL_MISSION_FIRST_ENTRY_AWARD_VIEW_ALIAS:String = "PersonalMissionFirstEntryAwardView";

@@ -6,10 +6,10 @@ package net.wg.gui.battle.views.decorativeCrosshair
    public class BaseDecorativeCrosshair extends BaseDecorativeCrosshairMeta implements IBaseDecorativeCrosshairMeta
    {
       
-      private static const INSTANTLY_POSTFIX:String = "_instantly";
+      protected static const INSTANTLY_POSTFIX:String = "_instantly";
        
       
-      private var _state:String = "hide";
+      protected var _state:String = "hide";
       
       public function BaseDecorativeCrosshair()
       {

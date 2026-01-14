@@ -6127,7 +6127,7 @@
 					<name>section</name>
 				</item>
 				<item>
-					1.0
+					2.0
 					<!--BW_String-->
 					<name>weight</name>
 					<type>float</type>
@@ -6151,7 +6151,7 @@
 					<name>section</name>
 				</item>
 				<item>
-					2.0
+					3.0
 					<!--BW_String-->
 					<name>weight</name>
 					<type>float</type>
@@ -6175,7 +6175,7 @@
 					<name>section</name>
 				</item>
 				<item>
-					3.0
+					4.0
 					<!--BW_String-->
 					<name>weight</name>
 					<type>float</type>
@@ -6199,7 +6199,7 @@
 					<name>section</name>
 				</item>
 				<item>
-					4.0
+					5.0
 					<!--BW_String-->
 					<name>weight</name>
 					<type>float</type>
@@ -6223,7 +6223,7 @@
 					<name>section</name>
 				</item>
 				<item>
-					5.0
+					6.0
 					<!--BW_String-->
 					<name>weight</name>
 					<type>float</type>
@@ -6247,7 +6247,7 @@
 					<name>section</name>
 				</item>
 				<item>
-					6.0
+					7.0
 					<!--BW_String-->
 					<name>weight</name>
 					<type>float</type>
@@ -6271,7 +6271,7 @@
 					<name>section</name>
 				</item>
 				<item>
-					7.0
+					8.0
 					<!--BW_String-->
 					<name>weight</name>
 					<type>float</type>
@@ -6295,7 +6295,7 @@
 					<name>section</name>
 				</item>
 				<item>
-					8.0
+					9.0
 					<!--BW_String-->
 					<name>weight</name>
 					<type>float</type>
@@ -6319,7 +6319,7 @@
 					<name>section</name>
 				</item>
 				<item>
-					9.0
+					10.0
 					<!--BW_String-->
 					<name>weight</name>
 					<type>float</type>
@@ -6343,7 +6343,7 @@
 					<name>section</name>
 				</item>
 				<item>
-					10.0
+					11.0
 					<!--BW_String-->
 					<name>weight</name>
 					<type>float</type>
@@ -6367,7 +6367,7 @@
 					<name>section</name>
 				</item>
 				<item>
-					11.0
+					12.0
 					<!--BW_String-->
 					<name>weight</name>
 					<type>float</type>
@@ -6391,7 +6391,7 @@
 					<name>section</name>
 				</item>
 				<item>
-					12.0
+					13.0
 					<!--BW_String-->
 					<name>weight</name>
 					<type>float</type>
@@ -6415,7 +6415,7 @@
 					<name>section</name>
 				</item>
 				<item>
-					13.0
+					14.0
 					<!--BW_String-->
 					<name>weight</name>
 					<type>float</type>
@@ -6439,7 +6439,7 @@
 					<name>section</name>
 				</item>
 				<item>
-					14.0
+					15.0
 					<!--BW_String-->
 					<name>weight</name>
 					<type>float</type>
@@ -8298,7 +8298,7 @@
 			</value>
 		</achievement>
 		<achievement>
-			<name>singleAchievements:BPReserveAchievement_8</name>
+			<name>singleAchievements:BattlePassCommonPr_NY26</name>
 			<type>dict</type>
 			<value>
 				<item>
@@ -12425,30 +12425,6 @@
 			</value>
 		</achievement>
 		<achievement>
-			<name>singleAchievements:grinch_medal_2026</name>
-			<type>dict</type>
-			<value>
-				<item>
-					single
-					<name>type</name>
-				</item>
-				<item>
-					action
-					<name>section</name>
-				</item>
-				<item>
-					1480.1
-					<!--BW_String-->
-					<name>weight</name>
-					<type>float</type>
-				</item>
-				<item>
-					random
-					<name>mode</name>
-				</item>
-			</value>
-		</achievement>
-		<achievement>
 			<name>singleAchievements:NY26_AtmsphrLevel</name>
 			<type>dict</type>
 			<value>
@@ -12486,6 +12462,30 @@
 				</item>
 				<item>
 					1444.3
+					<!--BW_String-->
+					<name>weight</name>
+					<type>float</type>
+				</item>
+				<item>
+					random
+					<name>mode</name>
+				</item>
+			</value>
+		</achievement>
+		<achievement>
+			<name>singleAchievements:grinch_medal_2026</name>
+			<type>dict</type>
+			<value>
+				<item>
+					single
+					<name>type</name>
+				</item>
+				<item>
+					action
+					<name>section</name>
+				</item>
+				<item>
+					1480.1
 					<!--BW_String-->
 					<name>weight</name>
 					<type>float</type>

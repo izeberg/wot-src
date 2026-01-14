@@ -126,7 +126,7 @@ msgid "comp7_light_recon/descr/active"
 msgstr ""
 "A recon aircraft will fly over the selected area within {colorTagOpen}%(delay)s s{colorTagClose}. Enemy vehicles detected within a radius of {colorTagOpen}%(radius_1)s/%(radius_2)s/%(radius_3)s m{colorTagClose} remain spotted for {colorTagOpen}%(duration_1)s/%(duration_2)s/%(duration_3)s&nbsp;s{colorTagClose}. A separate icon will be displayed for a player detected by this skill with a {colorTagOpen}%(lampDelay)s s{colorTagClose} delay.\n"
 "\n"
-"This skill becomes available for use {colorTagOpen}%(startupDelay)s s{colorTagClose} seconds after the battle starts."
+"This skill becomes available for use {colorTagOpen}%(startupDelay)s s{colorTagClose} after the battle starts."
 
 msgid "comp7_light_recon/name"
 msgstr "Recon Flight"

@@ -526,15 +526,12 @@ class SquadMembersView(ViewImpl, CallbackDelayer):
             model.setIsFooterMessageGrey(isEnabled or onlyReadinessText or isInQueue)
 
     def _getActionButtonStateInfo(self):
-        actionButtonStateVO = self._getActionButtonStateVO()
+        actionButtonStateVO = self.__getActionButtonStateVO()
         isEnabled = actionButtonStateVO['isEnabled']
         onlyReadinessText = actionButtonStateVO.isReadinessTooltip()
         simpleState = actionButtonStateVO.getSimpleState()
         toolTipData = i18n.makeString(actionButtonStateVO['toolTipData'] + '/body')
         return (isEnabled, onlyReadinessText, simpleState, toolTipData)
-
-    def _getActionButtonStateVO(self):
-        return SquadActionButtonStateVO(self._platoonCtrl.getPrbEntity())
 
     def _onFindPlayers(self):
         platoonCtrl = self._platoonCtrl
@@ -609,6 +606,9 @@ class SquadMembersView(ViewImpl, CallbackDelayer):
 
     def __getClientID(self):
         return channel_num_gen.getClientID4Prebattle(self.getPrbEntityType())
+
+    def __getActionButtonStateVO(self):
+        return SquadActionButtonStateVO(self._platoonCtrl.getPrbEntity())
 
     def __handleSetPrebattleCoolDown(self, event):
         if event.requestID is REQUEST_TYPE.SET_PLAYER_STATE:

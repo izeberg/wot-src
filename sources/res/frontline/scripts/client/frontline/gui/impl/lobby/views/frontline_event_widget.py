@@ -18,7 +18,7 @@ from helpers import dependency
 from skeletons.gui.game_control import IEpicBattleMetaGameController
 from skeletons.gui.shared import IItemsCache
 from skeletons.gui.shared.utils import IHangarSpace
-from frontline.gui.frontline_helpers import isFinishedCycleState
+from frontline.gui.frontline_helpers import isFinishedCycleState, isAnnouncedCycleState, getFrontlineState
 from PlayerEvents import g_playerEvents
 from wg_async import wg_async, wg_await, delay
 from constants import SERVER_TICK_LENGTH
@@ -56,6 +56,7 @@ class FrontlineEventWidget(TooltipPositionerMixin, FLOverlapCtrlMixin, ViewCompo
 
     def __init__(self):
         super(FrontlineEventWidget, self).__init__(model=EventWidgetModel)
+        self.__gameModeStatus, _, _ = getFrontlineState()
 
     @property
     def viewModel(self):
@@ -75,6 +76,8 @@ class FrontlineEventWidget(TooltipPositionerMixin, FLOverlapCtrlMixin, ViewCompo
           self.gui.windowsManager.onWindowStatusChanged, self._onWindowStatusChanged),
          (
           self.__epicController.onUpdated, self.__onEpicUpdated),
+         (
+          self.__epicController.onGameModeStatusTick, self.__onGameModeStatusChange),
          (
           self.viewModel.goToProgressionScreen, self.__onProgressionClick),
          (
@@ -136,6 +139,12 @@ class FrontlineEventWidget(TooltipPositionerMixin, FLOverlapCtrlMixin, ViewCompo
     def __onEpicUpdated(self, *_):
         self.queueUpdate()
 
+    def __onGameModeStatusChange(self):
+        state, _, _ = getFrontlineState()
+        if self.__gameModeStatus != state:
+            self.__gameModeStatus = state
+            self._rawUpdate()
+
     def __onVehicleRentClick(self):
         setRentBannerClicked()
         showShop(getRentVehicleUrl())
@@ -151,15 +160,15 @@ class FrontlineEventWidget(TooltipPositionerMixin, FLOverlapCtrlMixin, ViewCompo
             vm.setIsRentHighlighted(isRentHightlighted)
 
     def __fillWidgetModel(self, vm):
-        isFinished = isFinishedCycleState()
+        modeStatus = self.__gameModeStatus
         vm.setIsCurrentCycleActive(self.__epicController.isCurrentCycleActive())
-        vm.setIsCycleStateFinished(isFinished)
+        vm.setModeState(modeStatus.value)
         progressTier = self.__epicController.getCurrentLevel()
         vm.setCurrentTier(progressTier)
         vm.setIsMaxLevel(self.__epicController.isMaxLevel())
         vm.setCurrentProgress(self.__epicController.getCurrentProgress())
         vm.setTotalProgress(self.__epicController.getPointsProgressForLevel(progressTier))
-        vm.setCombatReservesPoints((isFinished or self.__epicController.getSkillPoints)() if 1 else 0)
+        vm.setCombatReservesPoints(self.__epicController.getSkillPoints() if not isFinishedCycleState(modeStatus) and not isAnnouncedCycleState(modeStatus) else 0)
         vehicleLevels = self.__epicController.getValidVehicleLevels()
         vehiclesLevel = toRangeString(vehicleLevels) if isRomanNumberForbidden() else toRomanRangeString(vehicleLevels)
         vm.setRentalVehicleLevel(vehiclesLevel)

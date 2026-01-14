@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/russian/R235_KB_52/crash/lod2/Chassis</nodefullVisual>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.695973 -0.000033 -3.781604</min>
+		<max>
+			1.695973 1.085788 3.78611
+			<!--BW_String-->
+		</max>
+	</visibilityBox>
+	<parent>vehicles/russian/R235_KB_52/crash/lod3/Chassis</parent>
+	<extent>96</extent>
+</root>

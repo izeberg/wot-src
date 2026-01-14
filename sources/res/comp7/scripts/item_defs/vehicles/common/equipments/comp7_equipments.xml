@@ -93,7 +93,7 @@
 				</client>
 			</visualScript>
 			<cooldownSeconds>
-				15
+				30
 				<exports>vse</exports>
 			</cooldownSeconds>
 			<duration>
@@ -101,7 +101,7 @@
 				<exports>vse tooltip</exports>
 			</duration>
 			<heal>
-				6 8 12
+				8 14 20
 				<exports>vse tooltip</exports>
 			</heal>
 			<gunReloadTimeBuff>

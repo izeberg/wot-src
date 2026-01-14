@@ -376,8 +376,14 @@ msgstr "Bully"
 msgid "attachment/gunslot/A183_gunsleeve_arrowhead"
 msgstr "Arrowhead"
 
+msgid "attachment/gunslot/A191_gunsleeve_redhot"
+msgstr "Red Hot"
+
 msgid "attachment/gunslot/Ch67_gunsleeve_thunder"
 msgstr "Thunder and Lightning"
+
+msgid "attachment/gunslot/Ch70_gunsleeve_firegod"
+msgstr "Fire God"
 
 msgid "attachment/gunslot/F135_gunsleeve_woodpecker"
 msgstr "Woodpecker"
@@ -402,6 +408,9 @@ msgstr "Concussion"
 
 msgid "attachment/gunslot/GB152_gunsleeve_centipede"
 msgstr "Centipede"
+
+msgid "attachment/gunslot/J52_gunsleeve_tempered"
+msgstr "Tempered"
 
 msgid "attachment/gunslot/PL37_gunsleeve_knight"
 msgstr "Knight"
@@ -3027,6 +3036,12 @@ msgstr "?empty?"
 msgid "camouflage/beast_4/label"
 msgstr "Cyclone"
 
+msgid "camouflage/beyond_pines/description"
+msgstr "?empty?"
+
+msgid "camouflage/beyond_pines/label"
+msgstr "Beyond the Pines"
+
 msgid "camouflage/bicolor"
 msgstr "Two-tone"
 
@@ -3209,6 +3224,15 @@ msgstr "?empty?"
 
 msgid "camouflage/bp2025_holiday_3/label"
 msgstr "Rambo III"
+
+msgid "camouflage/bp2025_holiday_4/label"
+msgstr "Uphold the Law"
+
+msgid "camouflage/bp2025_holiday_5/label"
+msgstr "RoboTank"
+
+msgid "camouflage/bp2025_holiday_6/label"
+msgstr "Delta City"
 
 msgid "camouflage/bp2025_lc_1/description"
 msgstr "?empty?"
@@ -5420,6 +5444,9 @@ msgstr "?empty?"
 msgid "camouflage/jeans/label"
 msgstr "Double Denim"
 
+msgid "camouflage/jpn_volumetric/label"
+msgstr "Nowaki"
+
 msgid "camouflage/kd_camo/description"
 msgstr ""
 "Awarded to players who completed all missions during the Battle of Kursk "
@@ -5598,6 +5625,12 @@ msgstr ""
 
 msgid "camouflage/localpartner2_2018/label"
 msgstr "All-Season Web"
+
+msgid "camouflage/lootboxes_lunar_1/label"
+msgstr "Reign of the Fire Horse"
+
+msgid "camouflage/lootboxes_lunar_2/label"
+msgstr "Red and Gold"
 
 msgid "camouflage/ls20_pve/description"
 msgstr "?empty?"
@@ -9462,12 +9495,6 @@ msgstr "Selling price (all items)"
 msgid "customization/tooltip/inventory/title"
 msgstr "Inventory"
 
-msgid "customization/tooltip/ny/reward/remainsToCollect"
-msgstr "Resource collections left for reward: %(count)s"
-
-msgid "customization/tooltip/ny/reward/rewardReceived"
-msgstr "Reward Received"
-
 msgid "customization/tooltip/oneTaskDescription"
 msgstr "Complete mission: %(name)s"
 
@@ -9551,6 +9578,9 @@ msgstr ""
 
 msgid "customization/tooltip/quests/br_summer_style_900_8/condition"
 msgstr "Block 100,000 HP of damage in Steel Hunter"
+
+msgid "customization/tooltip/quests/break_the_silence_1179/condition"
+msgstr "Be the first to destroy an enemy vehicle in Onslaught 10 times."
 
 msgid "customization/tooltip/quests/comp7_2023_1_ranks_diamond_1/condition"
 msgstr ""
@@ -9746,6 +9776,30 @@ msgid "customization/tooltip/quests/comp7_5_1_ranks_65/condition"
 msgstr ""
 "Achieve the Iron rank in Season of the Azure Dragon in Onslaught mode."
 
+msgid "customization/tooltip/quests/comp7_5_2_ranks_11/condition"
+msgstr ""
+"Achieve the Legend rank in Season of the Crimson Dragon in Onslaught mode."
+
+msgid "customization/tooltip/quests/comp7_5_2_ranks_21/condition"
+msgstr ""
+"Achieve the Champion rank in Season of the Crimson Dragon in Onslaught mode."
+
+msgid "customization/tooltip/quests/comp7_5_2_ranks_35/condition"
+msgstr ""
+"Achieve the Gold rank in Season of the Crimson Dragon in Onslaught mode."
+
+msgid "customization/tooltip/quests/comp7_5_2_ranks_45/condition"
+msgstr ""
+"Achieve the Silver rank in Season of the Crimson Dragon in Onslaught mode."
+
+msgid "customization/tooltip/quests/comp7_5_2_ranks_55/condition"
+msgstr ""
+"Achieve the Bronze rank in Season of the Crimson Dragon in Onslaught mode."
+
+msgid "customization/tooltip/quests/comp7_5_2_ranks_65/condition"
+msgstr ""
+"Achieve the Iron rank in Season of the Crimson Dragon in Onslaught mode."
+
 msgid "customization/tooltip/quests/comp7_ranks_diamond_1/condition"
 msgstr "Achieve the Gold rank in Season of the Griffin in Onslaught mode."
 
@@ -9844,6 +9898,9 @@ msgstr "Cause 225,000 HP of damage in Onslaught."
 
 msgid "customization/tooltip/quests/crushing_damage_965_3/condition"
 msgstr "Cause 550,000 HP of damage in Onslaught."
+
+msgid "customization/tooltip/quests/deaths_embrace_1179/condition"
+msgstr "Spot or destroy 500 enemy vehicles in Onslaught."
 
 msgid ""
 "customization/tooltip/quests/demonstration_performance_1026_1/condition"
@@ -10058,6 +10115,18 @@ msgstr "Destroy 150 enemy vehicles in Onslaught."
 msgid "customization/tooltip/quests/destroyed_vehicles_965_3/condition"
 msgstr "Destroy 350 enemy vehicles in Onslaught."
 
+msgid "customization/tooltip/quests/devastating_damage_1179_1/condition"
+msgstr "Cause 25 000 HP of damage in Onslaught."
+
+msgid "customization/tooltip/quests/devastating_damage_1179_2/condition"
+msgstr "Cause 225 000 HP of damage in Onslaught."
+
+msgid "customization/tooltip/quests/devastating_damage_1179_3/condition"
+msgstr "Cause 550 000 HP of damage in Onslaught."
+
+msgid "customization/tooltip/quests/domino_effect_1179/condition"
+msgstr "Destroy 5 enemy vehicles in one battle in Onslaught."
+
 msgid "customization/tooltip/quests/double_threat_1026/condition"
 msgstr "Win 25 battles in a 2-player Platoon in Onslaught."
 
@@ -10076,8 +10145,26 @@ msgstr "Win 25 battles in a 2-player Platoon in Onslaught."
 msgid "customization/tooltip/quests/double_threat_965/condition"
 msgstr "Win 25 battles in a 2-player Platoon in Onslaught."
 
+msgid "customization/tooltip/quests/dynamic_duo_1179/condition"
+msgstr "Win 25 battles in a 2-player Platoon in Onslaught."
+
 msgid "customization/tooltip/quests/early_bird_1120/condition"
 msgstr "Be the first to destroy an enemy vehicle in Onslaught 10 times."
+
+msgid "customization/tooltip/quests/exhibition_performance_1179_1/condition"
+msgstr ""
+"Fight 10 Onslaught battles in a vehicle with the \"Rex Draconis (Crimson)\" "
+"style."
+
+msgid "customization/tooltip/quests/exhibition_performance_1179_2/condition"
+msgstr ""
+"Fight 25 Onslaught battles in a vehicle with the \"Rex Draconis (Crimson)\" "
+"style."
+
+msgid "customization/tooltip/quests/exhibition_performance_1179_3/condition"
+msgstr ""
+"Fight 50 Onslaught battles in a vehicle with the \"Rex Draconis (Crimson)\" "
+"style."
 
 msgid "customization/tooltip/quests/find_and_destroy_648/condition"
 msgstr "Spot or destroy 750 enemy vehicles in Onslaught."
@@ -10178,6 +10265,15 @@ msgstr "Be the first to destroy an enemy vehicle in Onslaught 10 times."
 msgid "customization/tooltip/quests/initiator_775/condition"
 msgstr "Be the first to destroy an enemy vehicle in Onslaught 10 times."
 
+msgid "customization/tooltip/quests/into_the_cap_circle_1179_1/condition"
+msgstr "Earn a total of 250 base capture/defense points in Onslaught."
+
+msgid "customization/tooltip/quests/into_the_cap_circle_1179_2/condition"
+msgstr "Earn a total of 500 base capture/defense points in Onslaught."
+
+msgid "customization/tooltip/quests/into_the_cap_circle_1179_3/condition"
+msgstr "Earn a total of 750 base capture/defense points in Onslaught."
+
 msgid "customization/tooltip/quests/last_man_1026/condition"
 msgstr "Stand alone against at least 3 enemy vehicles in Onslaught and win."
 
@@ -10221,6 +10317,11 @@ msgstr "Stand alone against at least 3 enemy vehicles in Onslaught and win."
 msgid "customization/tooltip/quests/or"
 msgstr "or"
 
+msgid "customization/tooltip/quests/pacesetter_1179/condition"
+msgstr ""
+"Win an Onslaught battle by destroying all enemy vehicles in under 150 "
+"seconds."
+
 msgid "customization/tooltip/quests/prestige_648/condition"
 msgstr ""
 "Be the top player on your team by Prestige Points earned in Onslaught 50 "
@@ -10242,6 +10343,11 @@ msgstr ""
 "times."
 
 msgid "customization/tooltip/quests/prestige_7v7_1120/condition"
+msgstr ""
+"Be the top player on your team by Prestige Points earned in Onslaught 50 "
+"times."
+
+msgid "customization/tooltip/quests/prestige_7v7_1179/condition"
 msgstr ""
 "Be the top player on your team by Prestige Points earned in Onslaught 50 "
 "times."
@@ -10303,6 +10409,9 @@ msgstr "Destroy 5 enemy vehicles in one battle in Onslaught."
 
 msgid "customization/tooltip/quests/scorched_earth_1120/condition"
 msgstr "Destroy 5 enemy vehicles in one battle in Onslaught."
+
+msgid "customization/tooltip/quests/second_to_none_1179/condition"
+msgstr "Stand alone against at least 3 enemy vehicles in Onslaught and win."
 
 msgid "customization/tooltip/quests/shoulder_to_shoulder_648/condition"
 msgstr "Win 25 battles in a 2-player Platoon in Onslaught."
@@ -10412,6 +10521,21 @@ msgstr ""
 "Capture a total of 375 Points of Interest as a team in Onslaught. This "
 "includes captures by both the player and their teammates."
 
+msgid "customization/tooltip/quests/tactical_advantage_1179_1/condition"
+msgstr ""
+"Capture a total of 15 Points of Interest as a team in Onslaught. This "
+"includes captures by both the player and their teammates."
+
+msgid "customization/tooltip/quests/tactical_advantage_1179_2/condition"
+msgstr ""
+"Capture a total of 150 Points of Interest as a team in Onslaught. This "
+"includes captures by both the player and their teammates."
+
+msgid "customization/tooltip/quests/tactical_advantage_1179_3/condition"
+msgstr ""
+"Capture a total of 375 Points of Interest as a team in Onslaught. This "
+"includes captures by both the player and their teammates."
+
 msgid "customization/tooltip/quests/tactical_advantage_648_1/condition"
 msgstr ""
 "Capture a total of 15 Points of Interest as a team in Onslaught. This "
@@ -10501,6 +10625,15 @@ msgid "customization/tooltip/quests/tactical_advantage_965_3/condition"
 msgstr ""
 "Capture a total of 375 Points of Interest as a team in Onslaught. This "
 "includes captures by both the player and their teammates."
+
+msgid "customization/tooltip/quests/till_we_meet_again_1179_1/condition"
+msgstr "Destroy 15 enemy vehicles in Onslaught."
+
+msgid "customization/tooltip/quests/till_we_meet_again_1179_2/condition"
+msgstr "Destroy 150 enemy vehicles in Onslaught."
+
+msgid "customization/tooltip/quests/till_we_meet_again_1179_3/condition"
+msgstr "Destroy 350 enemy vehicles in Onslaught."
 
 msgid "customization/tooltip/quests/title"
 msgstr "Conditions for Receiving the Element"
@@ -13585,6 +13718,9 @@ msgstr "15 Years on Board"
 msgid "emblem/special/sticker_879"
 msgstr "Snowy Climb"
 
+msgid "emblem/special/sticker_881"
+msgstr "Beyond the Pines"
+
 msgid "filter/popover/bonusType/title"
 msgstr "Bonus Types"
 
@@ -16410,6 +16546,24 @@ msgstr "Mapped Out!"
 msgid "inscription/special/special_828"
 msgstr "Say Cheese!"
 
+msgid "inscription/special/special_829"
+msgstr "Dynamic Duo"
+
+msgid "inscription/special/special_830"
+msgstr "Break the Silence"
+
+msgid "inscription/special/special_831"
+msgstr "Second to None"
+
+msgid "inscription/special/special_832"
+msgstr "Deaths Embrace"
+
+msgid "inscription/special/special_833"
+msgstr "Domino Effect"
+
+msgid "inscription/special/special_834"
+msgstr "Pacesetter"
+
 msgid "inscription/special/special_835"
 msgstr "TERROR-BILLY"
 
@@ -16457,6 +16611,18 @@ msgstr "You Got No Guts"
 
 msgid "inscription/special/special_850"
 msgstr "Eeny, Meeny, Miny, Moe"
+
+msgid "inscription/special/special_857"
+msgstr "Thank You for Your Cooperation"
+
+msgid "inscription/special/special_858"
+msgstr "Physical Force"
+
+msgid "inscription/special/special_859"
+msgstr "Stay Out of Trouble"
+
+msgid "inscription/special/special_860"
+msgstr "Serve, Protect, Uphold"
 
 msgid "inscription/special/special_90"
 msgstr "Grand Finals 2017, Moscow"
@@ -20315,11 +20481,32 @@ msgstr ""
 "Equipping Extra Combat Rations or Strong Coffee may be beneficial, but they "
 "won't save your hit points in case of fire. Use them wisely."
 
+msgid "projection_decals/special/projection_decal_1027"
+msgstr "RoboCop"
+
+msgid "projection_decals/special/projection_decal_1028"
+msgstr "Delta City Poster"
+
+msgid "projection_decals/special/projection_decal_1029"
+msgstr "ED-209"
+
 msgid "projection_decals/special/projection_decal_103"
 msgstr "No More Menace!"
 
 msgid "projection_decals/special/projection_decal_103/description"
 msgstr "It's all over. You can breathe out now. No more need for cover."
+
+msgid "projection_decals/special/projection_decal_1030"
+msgstr "Dead or Alive"
+
+msgid "projection_decals/special/projection_decal_1031"
+msgstr "OCP Live"
+
+msgid "projection_decals/special/projection_decal_1032"
+msgstr "Boiling Frog"
+
+msgid "projection_decals/special/projection_decal_1033"
+msgstr "Grizzly"
 
 msgid "projection_decals/special/projection_decal_104"
 msgstr "SU-76I"
@@ -23856,6 +24043,45 @@ msgstr "Early Bird"
 msgid "questProgress/cust_progress_1120_9"
 msgstr "One-Man Army"
 
+msgid "questProgress/cust_progress_1179_1"
+msgstr "?empty?"
+
+msgid "questProgress/cust_progress_1179_10"
+msgstr "Deaths Embrace"
+
+msgid "questProgress/cust_progress_1179_11"
+msgstr "7v7"
+
+msgid "questProgress/cust_progress_1179_12"
+msgstr "Domino Effect"
+
+msgid "questProgress/cust_progress_1179_13"
+msgstr "Pacesetter"
+
+msgid "questProgress/cust_progress_1179_2"
+msgstr "Devastating Damage"
+
+msgid "questProgress/cust_progress_1179_3"
+msgstr "Exhibition Performance"
+
+msgid "questProgress/cust_progress_1179_4"
+msgstr "Into the Cap Circle"
+
+msgid "questProgress/cust_progress_1179_5"
+msgstr "Tactical Advantage"
+
+msgid "questProgress/cust_progress_1179_6"
+msgstr "Till We Meet Again"
+
+msgid "questProgress/cust_progress_1179_7"
+msgstr "Dynamic Duo"
+
+msgid "questProgress/cust_progress_1179_8"
+msgstr "Break the Silence"
+
+msgid "questProgress/cust_progress_1179_9"
+msgstr "Second to None"
+
 msgid "questProgress/cust_progress_648_1"
 msgstr "?empty?"
 
@@ -24374,6 +24600,9 @@ msgstr "Black Bear"
 
 msgid "repaint/beast_4"
 msgstr "Cyclone"
+
+msgid "repaint/beyond_pines"
+msgstr "Beyond the Pines"
 
 msgid "repaint/blend_in"
 msgstr "Blend In"
@@ -26358,6 +26587,20 @@ msgstr ""
 "\n"
 "Although the only person who would care about that is the undertaker...\""
 
+msgid "special_style/A144_M_VI_Y_CFE_R_3Dst"
+msgstr "OCP Peacekeeper"
+
+msgid "special_style/A144_M_VI_Y_CFE_R_3Dst_desc/long"
+msgstr ""
+"Omni Consumer Products proudly presents the latest evolution in law "
+"enforcement technology: the OCP Peacekeeper. Building on the resounding "
+"success of our RoboCop unit, the Peacekeeper combines reinforced armor, "
+"advanced weapon systems, and cutting-edge operational efficiency in a single"
+" product. Engineered to deliver maximum performance without the limitations "
+"of biological components, the OCP Peacekeeper sets a new standard for "
+"policing modern urban environments. Witness the future of public "
+"security—brought to you by OCP."
+
 msgid "special_style/A155_AAT60_ST_3DSt"
 msgstr "Emissary"
 
@@ -27809,6 +28052,22 @@ msgstr ""
 "\n"
 "Just look at Curtis! He's got too warm dragging barrels, and now he's taken off his jacket. Nothing can keep that man down.\""
 
+msgid "special_style/GB109_GSOR_1008_KS_3Dst"
+msgstr "Jade Coil"
+
+msgid "special_style/GB109_GSOR_1008_KS_3Dst_desc"
+msgstr "With patient grace, the Wood Snake slithers unseen."
+
+msgid "special_style/GB109_GSOR_1008_KS_3Dst_desc/long"
+msgstr ""
+"In the zodiac, the Wood Snake is known for her insight, adaptability, and "
+"pursuit of knowledge. Her strength lies in studied transformation. Like "
+"roots coiled beneath the surface, she moves unseen, subtly shaping her "
+"domain. Some say she's kin to the Heaven-Swallowing Python, a divine serpent"
+" of ancient lore. The Wood Snake offers no answer to such whispers, for "
+"mystique serves her well. Always precisely where she means to be, she slips "
+"between the lines while lesser minds stumble ahead to clear her path."
+
 msgid "special_style/GB114_Vickers_MBT_Mk3_RW5_3Dst"
 msgstr "Ultimate Configuration"
 
@@ -28014,6 +28273,26 @@ msgstr ""
 "All sounds drown in hellish rumble. You wake up curled up on the floor of the vehicle. You take a breath and fill your lungs with purple smoke that got in through a penetration hole. You feel it dissolving you from the inside. You're melting, becoming one with the tank. It hurts. More than the pokes from the shells. Bad memory. Sleep is better.\n"
 "\n"
 "Sleep...sleeping makes you feel that thick, smooth feeling of serenity where there's no pain. No pain at all."
+
+msgid "special_style/GB86_Centurion_Action_X_KS_3Dst"
+msgstr "The Ever-Victorious General"
+
+msgid "special_style/GB86_Centurion_Action_X_KS_3Dst_desc"
+msgstr ""
+"With white steed, silver spear at Changban's field,\n"
+"\n"
+"His name among the heroes, history's scroll revealed."
+
+msgid "special_style/GB86_Centurion_Action_X_KS_3Dst_desc/long"
+msgstr ""
+"Tall and commanding, Zhao Yun rode a white horse, silver spear in hand. A "
+"model of integrity and an exemplary general, he chose his lord with care and"
+" followed him from Changshan, vowing to restore the Han. He braved "
+"encirclement, charging seven times into enemy ranks to protect his master. "
+"His valor shone at Hanzhong, driving back Cao's mighty army, and at At Ji "
+"Valley, where he led a perilous mission and brought his men back to the "
+"capital. Beyond battle, his compassion, shrewdness, and sense of the greater"
+" cause marked him with the character of the great ministers of old."
 
 msgid "special_style/GB86_Centurion_Action_X_NY2025_3Dst"
 msgstr "British Steel"
@@ -28514,6 +28793,27 @@ msgstr ""
 "means they'll be gettin' splatterized twice as fast! Hey, don't point it at "
 "me, get in and drive! Whaddya mean, 'Where's the wheel?'? Try using that pea"
 " brain of yours for once, doofus!\""
+
+msgid "special_style/R172_Object_752_K_3Dst"
+msgstr "The Peerless Lucky General"
+
+msgid "special_style/R172_Object_752_K_3Dst_desc"
+msgstr ""
+"With spear and axe he strikes, the foe's hearts quail,\n"
+"\n"
+"In Lingyan's hall, his lasting fame prevails."
+
+msgid "special_style/R172_Object_752_K_3Dst_desc/long"
+msgstr ""
+"With coiled beard and fierce eyes, Cheng Yaojin was a bold, skilled "
+"spearman. Favored by fortune, he rose to head an army. His humor diffused "
+"crises, and behind his bravado was a sharp mind. He outwitted brute force "
+"and seized the initiative to overwhelm his foes. His \"three axe-blows\" "
+"settled any dispute. Fighting beside Qin Shubao, he shielded Prince Qin, "
+"broke enemy lines, and earned fame above his peers. His deeds won him a "
+"portrait in the Lingyan Pavilion, and in tales and songs he was hailed as "
+"the \"The king of chaotic times, and the greatest of all heroes to rise from"
+" the common folk!\""
 
 msgid "special_style/R178_Object_780_KL_3Dst"
 msgstr "Varanus"
@@ -29983,6 +30283,23 @@ msgstr ""
 " I am the dizzying tempest, the towering cyclone, the whisper that births "
 "storms.\""
 
+msgid "special_style/beyond_pines"
+msgstr "Beyond the Pines"
+
+msgid "special_style/beyond_pines_desc"
+msgstr "?empty?"
+
+msgid "special_style/beyond_pines_desc/long"
+msgstr ""
+"The great northern forest extends as far as the eye can see, and then a "
+"little further. In the shadow of towering pine trees sits a solitary tent: "
+"the warm glow of a nearby fire illuminates the clearing, its wisps of smoke "
+"billowing over the forest canopy into the falling night. As the flames "
+"crackle and pop, the wanderer seated beside it gazes warily into the "
+"darkness beyond. In the vast wilderness, where human feet have had no cause "
+"to tread, roam the beasts who have guarded this land for as long as the "
+"trees have been standing, tall and proud. This is bear country."
+
 msgid "special_style/black_friday_2025_1"
 msgstr "Premier Prix"
 
@@ -30330,6 +30647,44 @@ msgstr ""
 "to save his friend and mentor, he embarks on a one-man mission through war-"
 "torn Afghanistan, forging unlikely alliances as he battles overwhelming odds"
 " and formidable foes."
+
+msgid "special_style/bp2025_holiday_4"
+msgstr "Uphold the Law"
+
+msgid "special_style/bp2025_holiday_4_desc"
+msgstr "Honor Detroit's finest with this explosive all-season style."
+
+msgid "special_style/bp2025_holiday_4_desc/long"
+msgstr ""
+"\"It's a free society—except there ain't nothin' free, because there's no guarantees, y'know? You're on your own. It's the law of the jungle.\"\n"
+"\n"
+"There's no denying it: the city has seen better days. Crime is at a record high, and being a cop is more dangerous than ever... but that won't stop these intrepid officers. When every shift could be your last, there's no room for mistakes. No matter how bleak things look out there, they keep pushing back against the cutthroat gangs of Old Detroit. Because if they don't... there will be trouble."
+
+msgid "special_style/bp2025_holiday_5"
+msgstr "RoboTank"
+
+msgid "special_style/bp2025_holiday_5_desc"
+msgstr ""
+"Somewhere there is a crime happening. Lay down the law in this "
+"cybernetically enhanced all-season style."
+
+msgid "special_style/bp2025_holiday_5_desc/long"
+msgstr ""
+"\"Serve the public trust. Protect the innocent. Uphold the law.\"\n"
+"\n"
+"These are the prime directives hardcoded in the mind of Alex Murphy, a police officer resurrected and reborn as RoboCop, the ultimate law enforcement unit. Encased in titanium and Kevlar, there's little left of the man Murphy once was—at least on the surface. But his drive to bring criminals to justice survived the transformation from man to machine, and breaking the law just got a whole lot more dangerous. You'd better stay out of trouble if you value your freedom... or your life."
+
+msgid "special_style/bp2025_holiday_6"
+msgstr "Delta City"
+
+msgid "special_style/bp2025_holiday_6_desc"
+msgstr "An all-season style brought to you by Omni Consumer Products."
+
+msgid "special_style/bp2025_holiday_6_desc/long"
+msgstr ""
+"\"Old Detroit has a cancer. The cancer is crime, and it must be cut out before we employ the two million workers that will breathe life into this city again.\"\n"
+"\n"
+"The CEO of Omni Consumer Products dreamed of transforming Old Detroit into Delta City: a gleaming utopia meant to replace the grime and lawlessness of the urban hellscape his city had become. It might sound like a noble idea, but cleaning up a mess like that costs more than just truckloads of cash—it means turning a blind eye to corruption and privatizing justice."
 
 msgid "special_style/bp2025_lc_1"
 msgstr "Spirit of Adventure"
@@ -32541,16 +32896,8 @@ msgstr "An all-season style inspired by the Girls und Panzer anime series."
 
 msgid "special_style/girls_und_panzer_desc/long"
 msgstr ""
-"In their battles with other schools, Oarai was often in the minority in "
-"terms of the amount of equipment. To compensate for the lack of firepower, "
-"the commander of the team \"Angler\" Miho Nishizumi resorted to creative "
-"tactics, distracting the enemy's attention and catching him off guard.\\nIn "
-"addition to the \"Angler\", the original Oarai school included the teams "
-"\"Turtle\", \"Hippo\", \"Rabbit\" and \"Duck\". Over time, the number of "
-"tanks and crews only increased. Although the students did not have much "
-"experience in battle, they quickly learned the subtleties of tank science in"
-" the Sensha-do club and became part of the high-profile victories of the "
-"Oarai school."
+"In their battles with other schools, Oarai was often in the minority in terms of the amount of equipment. To compensate for the lack of firepower, the commander of the team \"Angler\" Miho Nishizumi resorted to creative tactics, distracting the enemy's attention and catching him off guard.\n"
+"In addition to the \"Angler\", the original Oarai school included the teams \"Turtle\", \"Hippo\", \"Rabbit\" and \"Duck\". Over time, the number of tanks and crews only increased. Although the students did not have much experience in battle, they quickly learned the subtleties of tank science in the Sensha-do club and became part of the high-profile victories of the Oarai school."
 
 msgid "special_style/girls_und_panzer_saunders"
 msgstr "Saunders University High School"
@@ -32817,6 +33164,25 @@ msgstr ""
 " capture who you are—your own unique style. Most of the time, it ain't even "
 "you that finds that special pair of jeans, or that special tank—it's them "
 "that find you. But when they do, believe me, you'll know about it alright."
+
+msgid "special_style/jpn_volumetric"
+msgstr "Nowaki"
+
+msgid "special_style/jpn_volumetric_desc"
+msgstr ""
+"Time-honored Japanese aesthetics join forces with technical innovation in "
+"this exquisite volumetric style."
+
+msgid "special_style/jpn_volumetric_desc/long"
+msgstr ""
+"Reaching the zenith of armored technology does not mean forsaking the "
+"foundations on which it stands. Nowaki is a motif found in classical "
+"Japanese embroidery that depicts grass bowing under a strong wind, "
+"symbolizing power and volatility. Look closely, and you will see this very "
+"pattern sculpted across the tank's hull, its dynamic lines and asymmetry "
+"drawing inspiration from the ukiyo-e woodblock prints of the late shogunate "
+"period. Venture boldly across new frontiers, hero, as the hand of tradition "
+"guides your artful strikes."
 
 msgid "special_style/kingtiger"
 msgstr "Captured King Tiger"
@@ -33203,6 +33569,41 @@ msgstr ""
 
 msgid "special_style/localpartner2_2018_style_01"
 msgstr "Web"
+
+msgid "special_style/lootboxes_lunar_1"
+msgstr "Reign of the Fire Horse"
+
+msgid "special_style/lootboxes_lunar_1_desc"
+msgstr ""
+"A majestic all-season style imbued with the unbridled energy of the Fire "
+"Horse."
+
+msgid "special_style/lootboxes_lunar_1_desc/long"
+msgstr ""
+"Upon a lightning-scorched plain, the Fire Horse blazes across the cosmos. "
+"His flaming hooves thunder in a deafening salvo, lighter than the wind. He "
+"races, sparks streaking through the dusk, as the cycle of the zodiac heralds"
+" the year of his reign. Free-spirited and charismatic, those born under his "
+"sign bear the embers of his wake, their hearts kindled with the same "
+"unquenchable fire."
+
+msgid "special_style/lootboxes_lunar_2"
+msgstr "Red and Gold"
+
+msgid "special_style/lootboxes_lunar_2_desc"
+msgstr ""
+"Adorn your vehicle in this jubilant all-season style to welcome an "
+"auspicious new year."
+
+msgid "special_style/lootboxes_lunar_2_desc/long"
+msgstr ""
+"Hanging lanterns line the streets, gilded calligraphy shimmering in the "
+"radiant glow. The crackle of fireworks punctuates the night, bright colors "
+"dancing in the eyes of excited children clutching red envelopes. The tangy "
+"aroma of mandarin oranges, exchanged in pairs for good fortune, mingles with"
+" the woody scent of incense drifting from ancestral altars. The town thrums "
+"with the sights and scents of celebration well into the first hours of the "
+"new year."
 
 msgid "special_style/ls20_pve"
 msgstr "Metal of War"
@@ -34457,6 +34858,9 @@ msgstr ""
 "believed it awakened only to reduce cities to ash. Heroes sought it for "
 "glory, kings for power, but only fools dared challenge a being whose wrath "
 "knew no mercy."
+
+msgid "special_style/onslaught_2025_crimson_dragon"
+msgstr "Rex Draconis (Crimson)"
 
 msgid "special_style/onslaught_autumn_2025_blue"
 msgstr "Iron Resolve"

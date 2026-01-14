@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
 	<cameraMode>
-		<mode>Default</mode>
+		<mode>Default Particles</mode>
 		<workingDistance>
 			120.0
 			<!--BW_String-->
@@ -30,10 +30,11 @@
 			1.0
 			<!--BW_String-->
 		</minimumFade>
+		<enabled>true</enabled>
 		<patternTexture>system/maps/PSF_ldr2.dds</patternTexture>
 	</cameraMode>
 	<cameraMode>
-		<mode>Sniper</mode>
+		<mode>Sniper Particles</mode>
 		<workingDistance>
 			120.0
 			<!--BW_String-->
@@ -62,10 +63,11 @@
 			1.0
 			<!--BW_String-->
 		</minimumFade>
+		<enabled>true</enabled>
 		<patternTexture>system/maps/col_white.dds</patternTexture>
 	</cameraMode>
 	<cameraMode>
-		<mode>Cinematic</mode>
+		<mode>Cinematic Particles</mode>
 		<workingDistance>
 			120.0
 			<!--BW_String-->
@@ -94,6 +96,40 @@
 			1.0
 			<!--BW_String-->
 		</minimumFade>
+		<enabled>true</enabled>
 		<patternTexture>system/maps/col_white.dds</patternTexture>
+	</cameraMode>
+	<cameraMode>
+		<mode>Sniper Objects</mode>
+		<workingDistance>
+			120.0
+			<!--BW_String-->
+		</workingDistance>
+		<screenSpaceFactor>
+			2.0
+			<!--BW_String-->
+		</screenSpaceFactor>
+		<nearConeRadius>
+			7.0
+			<!--BW_String-->
+		</nearConeRadius>
+		<farConeRadius>
+			1.0
+			<!--BW_String-->
+		</farConeRadius>
+		<opacityPower>
+			100.0
+			<!--BW_String-->
+		</opacityPower>
+		<maxAspectRatio>
+			1.77
+			<!--BW_String-->
+		</maxAspectRatio>
+		<minimumFade>
+			0.1
+			<!--BW_String-->
+		</minimumFade>
+		<enabled>false</enabled>
+		<patternTexture>system/maps/PSF_ldr2.dds</patternTexture>
 	</cameraMode>
 </root>

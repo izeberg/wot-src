@@ -1,8 +1,8 @@
 from __future__ import absolute_import
 from frameworks.wulf import ViewSettings
-from gui.impl.gen import R
 from gui.impl.gen.view_models.views.lobby.seniority_awards.seniority_awards_tooltip_model import SeniorityAwardsTooltipModel
 from gui.impl.pub import ViewImpl
+from gui.impl.gen import R
 from helpers import dependency
 from skeletons.gui.game_control import ISeniorityAwardsController
 

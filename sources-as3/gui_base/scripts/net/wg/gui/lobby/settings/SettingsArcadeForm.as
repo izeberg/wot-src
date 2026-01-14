@@ -200,9 +200,10 @@ package net.wg.gui.lobby.settings
          var _loc8_:Boolean = false;
          var _loc9_:int = 0;
          var _loc10_:Slider = null;
-         var _loc11_:DropdownMenu = null;
-         var _loc12_:LabelControl = null;
+         var _loc11_:Number = NaN;
+         var _loc12_:DropdownMenu = null;
          var _loc13_:LabelControl = null;
+         var _loc14_:LabelControl = null;
          this._formId = param1;
          if(param2 != null)
          {
@@ -227,27 +228,28 @@ package net.wg.gui.lobby.settings
                {
                   case SettingsConfigHelper.TYPE_SLIDER:
                      _loc10_ = this[_loc6_ + _loc7_.type];
-                     _loc10_.value = Number(_loc7_.current);
+                     _loc11_ = Number(_loc7_.current);
+                     _loc10_.value = _loc11_;
                      _loc10_.addEventListener(SliderEvent.VALUE_CHANGE,this.onSliderValueChangeHandler);
                      _loc10_.enabled = _loc8_;
                      if(_loc7_.hasValue && this[_loc6_ + SettingsConfigHelper.TYPE_VALUE])
                      {
-                        _loc12_ = this[_loc6_ + SettingsConfigHelper.TYPE_VALUE];
-                        _loc12_.text = Boolean(_loc7_.current) ? _loc7_.current.toString() : Values.EMPTY_STR;
+                        _loc13_ = this[_loc6_ + SettingsConfigHelper.TYPE_VALUE];
+                        _loc13_.text = _loc11_.toString();
                      }
                      if(_loc7_.hasLabel && this[_loc6_ + SettingsConfigHelper.TYPE_LABEL])
                      {
-                        _loc13_ = this[_loc6_ + SettingsConfigHelper.TYPE_LABEL];
-                        _loc13_.text = SETTINGS.aim(_loc6_);
+                        _loc14_ = this[_loc6_ + SettingsConfigHelper.TYPE_LABEL];
+                        _loc14_.text = SETTINGS.aim(_loc6_);
                      }
                      break;
                   case SettingsConfigHelper.TYPE_DROPDOWN:
-                     _loc11_ = this[_loc6_ + _loc7_.type];
-                     _loc11_.dataProvider = new DataProvider(_loc7_.options);
-                     _loc11_.menuRowCount = _loc7_.options is Array ? Number(_loc7_.options.length) : Number(0);
-                     _loc11_.selectedIndex = this.getSelectedIndex(_loc7_);
-                     _loc11_.enabled = _loc8_;
-                     _loc11_.addEventListener(ListEvent.INDEX_CHANGE,this.onDropDownIndexChangeHandler);
+                     _loc12_ = this[_loc6_ + _loc7_.type];
+                     _loc12_.dataProvider = new DataProvider(_loc7_.options);
+                     _loc12_.menuRowCount = _loc7_.options is Array ? Number(_loc7_.options.length) : Number(0);
+                     _loc12_.selectedIndex = this.getSelectedIndex(_loc7_);
+                     _loc12_.enabled = _loc8_;
+                     _loc12_.addEventListener(ListEvent.INDEX_CHANGE,this.onDropDownIndexChangeHandler);
                      break;
                }
             }

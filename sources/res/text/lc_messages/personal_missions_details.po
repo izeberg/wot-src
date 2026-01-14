@@ -4325,7 +4325,7 @@ msgstr "Top Player"
 msgid "pm3_10_2_2"
 msgstr "Ambush-2"
 
-msgid "pm3_10_2_2_description_damage"
+msgid "pm3_10_2_2_description_damageWhileUnharmed"
 msgstr ""
 "Cause %(goal)s HP of damage before receiving any damage to your vehicle"
 
@@ -4335,7 +4335,7 @@ msgstr "Destroy %(goal)s enemy medium tanks or tank destroyers"
 msgid "pm3_10_2_2_short"
 msgstr "Ambush-2"
 
-msgid "pm3_10_2_2_title_damage"
+msgid "pm3_10_2_2_title_damageWhileUnharmed"
 msgstr "Damage"
 
 msgid "pm3_10_2_2_title_kills"
@@ -4351,8 +4351,8 @@ msgstr ""
 
 msgid "pm3_10_2_3_description_killWithCausingDamage"
 msgstr ""
-"Destroy an enemy heavy tank, causing at least %(damageDealt)s HP of damage "
-"by shooting it"
+"Destroy an enemy heavy tank by shooting it, causing at least %(damageDealt)s"
+" HP of damage"
 
 msgid "pm3_10_2_3_short"
 msgstr "Ambush-3"

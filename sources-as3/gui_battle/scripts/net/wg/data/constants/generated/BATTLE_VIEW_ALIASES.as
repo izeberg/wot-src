@@ -201,6 +201,12 @@ package net.wg.data.constants.generated
       
       public static const STATIONARY_RELOAD_WIDGET:String = "stationaryReloadWidget";
       
+      public static const TEMPERATURE_GUN_OVERHEAT_WIDGET:String = "temperatureGunOverheatWidget";
+      
+      public static const TEMPERATURE_GUN_HEAT_ZONES_WIDGET:String = "temperatureGunHeatZonesWidget";
+      
+      public static const STAGED_JET_BOOSTERS_WIDGET:String = "stagedJetBoostersWidget";
+      
       public static const DECORATIVE_CROSSHAIR_PANEL:String = "decorativeCrosshairPanel";
       
       public static const CONCENTRATION_DECORATIVE_CROSSHAIR:String = "concentrationDecorativeCrosshair";
@@ -213,11 +219,11 @@ package net.wg.data.constants.generated
       
       public static const FURY_DECORATIVE_CROSSHAIR:String = "furyDecorativeCrosshair";
       
+      public static const TEMPERATURE_GUN_OVERHEAT_DECORATIVE_CROSSHAIR:String = "temperatureGunOverheatDecorativeCrosshair";
+      
       public static const TARGET_DESIGNATOR_UNSPOTTED_MARKER:String = "targetDesignatorUnspottedMarker";
       
       public static const VEHICLE_MECHANICS_PANELS:Array = [WIDGETS_PANEL,DECORATIVE_CROSSHAIR_PANEL];
-      
-      public static const GRINCH_HUD:String = "grinchHud";
        
       
       public function BATTLE_VIEW_ALIASES()

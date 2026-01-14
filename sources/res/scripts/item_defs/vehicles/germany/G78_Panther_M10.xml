@@ -39,6 +39,12 @@
 				<!--BW_String-->
 			</invisibilityBonus>
 		</camouflageNet>
+		<deluxeCamouflageNet>
+			<invisibilityBonus>
+				0.125
+				<!--BW_String-->
+			</invisibilityBonus>
+		</deluxeCamouflageNet>
 		<additionalInvisibilityDevice>
 			<invisibilityBonus>
 				0.06 0.08
@@ -3864,7 +3870,7 @@
 					<reloadTime>4</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.11
+							0.1
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>2</afterShot>
@@ -3901,7 +3907,7 @@
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<aimingTime>
-						2.3
+						2.1
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>

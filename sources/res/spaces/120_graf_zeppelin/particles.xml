@@ -7,12 +7,28 @@
 			<texture>particles/content_forward/PFX_textures/lightning_02.dds</texture>
 		</preload>
 		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_forward/PFX_textures/snow.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_forward/PFX_textures/snow.dds</texture>
+		</preload>
+		<preload>
 			<shader>\data\shaders\ps_solid.fx</shader>
 			<texture>particles/content_forward/PFX_textures/eff_tex.dds</texture>
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps_water.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_tex_water.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_water.fx</shader>
 			<texture>particles/content_forward/PFX_textures/eff_tex.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_water.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_dirt.dds</texture>
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps.fx</shader>
@@ -28,6 +44,14 @@
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_dirt.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_dirt.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
 			<texture>particles/content_forward/PFX_textures/eff_tex.dds</texture>
 		</preload>
 		<preload>
@@ -40,14 +64,6 @@
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps.fx</shader>
-			<texture>particles/content_forward/PFX_textures/snow.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_long.fx</shader>
-			<texture>particles/content_forward/PFX_textures/snow.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps.fx</shader>
 			<texture>particles/content_forward/PFX_textures/eff_rocket_accelerator.dds</texture>
 		</preload>
 		<preload>
@@ -69,6 +85,30 @@
 		<preload>
 			<shader>\data\shaders\ps_long.fx</shader>
 			<texture>particles/content_forward/PFX_textures/eff_customization_2.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_customization_main.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_customization_main.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_forward/PFX_textures/cus_14_sparks.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_forward/PFX_textures/cus_14_sparks.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_forward/PFX_textures/electric_engine.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_fireworks.dds</texture>
 		</preload>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/120_graf_zeppelin_shore_wave_01_s.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/hd_bld_SU_101_Canopy.vfx</fn_effect_bin>
@@ -244,6 +284,22 @@
 			<texture>particles/content_deferred/PFX_textures/lightning_02.dds</texture>
 		</preload>
 		<preload>
+			<shader>\data\shaders\ps_water_displacement.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_tex_water_101_dday_ext.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_water_displacement.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_tex_water_10_hills.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/snow.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/snow.dds</texture>
+		</preload>
+		<preload>
 			<shader>\data\shaders\ps_solid.fx</shader>
 			<texture>particles/content_deferred/PFX_textures/eff_tex.dds</texture>
 		</preload>
@@ -252,16 +308,12 @@
 			<texture>particles/content_deferred/PFX_textures/eff_tex.dds</texture>
 		</preload>
 		<preload>
+			<shader>\data\shaders\ps_water.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_dirt.dds</texture>
+		</preload>
+		<preload>
 			<shader>\data\shaders\ps_water_displacement.fx</shader>
 			<texture>particles/content_deferred/PFX_textures/eff_tex_water.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_water_displacement.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/eff_tex_water_101_dday_ext.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_water_displacement.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/eff_tex_water_10_hills.dds</texture>
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps_foam.fx</shader>
@@ -285,6 +337,14 @@
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_dirt.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_dirt.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
 			<texture>particles/content_deferred/PFX_textures/eff_tex.dds</texture>
 		</preload>
 		<preload>
@@ -305,14 +365,6 @@
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/snow.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_long.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/snow.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps.fx</shader>
 			<texture>particles/content_deferred/PFX_textures/eff_rocket_accelerator.dds</texture>
 		</preload>
 		<preload>
@@ -334,6 +386,42 @@
 		<preload>
 			<shader>\data\shaders\ps_long.fx</shader>
 			<texture>particles/content_deferred/PFX_textures/eff_customization_2.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization_main.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization_main.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/cus_14_sparks.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/cus_14_sparks.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/FireTrunkAtlasLong_03.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/electric_engine.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_fireworks.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_fireworks.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_tex_h34.dds</texture>
 		</preload>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/hd_bld_SU_101_Canopy.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/hd_bld_UNI_008_WorkshopNew_Doors_Big_01_3.vfx</fn_effect_bin>

@@ -1380,10 +1380,6 @@
 				</params>
 			</block>
 			<block>
-				<class>If</class>
-				<id>If_65</id>
-			</block>
-			<block>
 				<class>GetVariable</class>
 				<id>GetVariable_38</id>
 				<buddy>Variable_5</buddy>
@@ -1400,12 +1396,39 @@
 				<id>Not_3</id>
 			</block>
 			<block>
-				<class>If</class>
-				<id>If_52</id>
+				<class>FindInArray</class>
+				<id>FindInArray_4</id>
+				<params>
+					<param>
+						AnimationStateNameArrayT
+						<name>Array Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>array</name>
+						<const>\ZGlzYWJsZWQ= aGlkZGVu\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>CompareIntegers</class>
+				<id>CompareIntegers_6</id>
+				<slots>
+					<slot>
+						<name>b</name>
+						<const>\-1\</const>
+					</slot>
+				</slots>
 			</block>
 			<block>
 				<class>ActivateGameObject</class>
 				<id>ActivateGameObject_6</id>
+			</block>
+			<block>
+				<class>If</class>
+				<id>If_52</id>
 			</block>
 			<block>
 				<class>SetVariable</class>
@@ -1426,84 +1449,16 @@
 				</slots>
 			</block>
 			<block>
-				<class>FindInArray</class>
-				<id>FindInArray_4</id>
-				<params>
-					<param>
-						AnimationStateNameArrayT
-						<name>Array Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots>
-					<slot>
-						<name>array</name>
-						<const>\ZGlzYWJsZWQ= aGlkZGVu\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
 				<class>ActivateGameObject</class>
 				<id>ActivateGameObject_5</id>
-			</block>
-			<block>
-				<class>CompareIntegers</class>
-				<id>CompareIntegers_6</id>
-				<slots>
-					<slot>
-						<name>b</name>
-						<const>\-1\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
-				<class>Sequence</class>
-				<id>Sequence_5</id>
-				<params>
-					<param>
-						2
-						<name>Output Count</name>
-						<type>IntT</type>
-					</param>
-				</params>
 			</block>
 			<block>
 				<class>If</class>
 				<id>If_48</id>
 			</block>
 			<block>
-				<class>CompareString</class>
-				<id>CompareString_34</id>
-				<slots>
-					<slot>
-						<name>b</name>
-						<const>\hangar_v4\</const>
-					</slot>
-					<slot>
-						<name>no_case</name>
-						<const>\true\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
-				<class>GetSpaceName</class>
-				<id>GetSpaceName_1</id>
-			</block>
-			<block>
 				<class>If</class>
 				<id>If_47</id>
-			</block>
-			<block>
-				<class>GetVariable</class>
-				<id>GetVariable_33</id>
-				<buddy>Variable_13</buddy>
-				<params>
-					<param>
-						GameObjectT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
 			</block>
 			<block>
 				<class>If</class>
@@ -1522,12 +1477,24 @@
 				</params>
 			</block>
 			<block>
-				<class>SetVariable</class>
-				<id>SetVariable_24</id>
-				<buddy>Variable_7</buddy>
+				<class>GetVariable</class>
+				<id>GetVariable_32</id>
+				<buddy>Variable_12</buddy>
 				<params>
 					<param>
-						PetStaticTriggerT
+						GameObjectT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+			</block>
+			<block>
+				<class>GetVariable</class>
+				<id>GetVariable_33</id>
+				<buddy>Variable_13</buddy>
+				<params>
+					<param>
+						GameObjectT
 						<name>Variable Type</name>
 						<type>TypeT</type>
 					</param>
@@ -1540,6 +1507,18 @@
 				<params>
 					<param>
 						BoolT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+			</block>
+			<block>
+				<class>SetVariable</class>
+				<id>SetVariable_24</id>
+				<buddy>Variable_7</buddy>
+				<params>
+					<param>
+						PetStaticTriggerT
 						<name>Variable Type</name>
 						<type>TypeT</type>
 					</param>
@@ -1567,39 +1546,34 @@
 				</slots>
 			</block>
 			<block>
-				<class>GetVariable</class>
-				<id>GetVariable_32</id>
-				<buddy>Variable_12</buddy>
-				<params>
-					<param>
-						GameObjectT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-			</block>
-			<block>
 				<class>PetStaticTriggerToInt</class>
 				<id>PetStaticTriggerToInt_5</id>
 			</block>
 			<block>
-				<class>If</class>
-				<id>If_66</id>
+				<class>SetVariable</class>
+				<id>SetVariable_23</id>
+				<buddy>Variable_10</buddy>
+				<params>
+					<param>
+						BoolT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>value</name>
+						<const>\false\</const>
+					</slot>
+				</slots>
 			</block>
 			<block>
 				<class>DeactivateGameObject</class>
 				<id>DeactivateGameObject_5</id>
 			</block>
 			<block>
-				<class>Sequence</class>
-				<id>Sequence_7</id>
-				<params>
-					<param>
-						2
-						<name>Output Count</name>
-						<type>IntT</type>
-					</param>
-				</params>
+				<class>If</class>
+				<id>If_41</id>
 			</block>
 			<block>
 				<class>DeactivateGameObject</class>
@@ -1621,28 +1595,6 @@
 						<const>\AFK\</const>
 					</slot>
 				</slots>
-			</block>
-			<block>
-				<class>SetVariable</class>
-				<id>SetVariable_23</id>
-				<buddy>Variable_10</buddy>
-				<params>
-					<param>
-						BoolT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots>
-					<slot>
-						<name>value</name>
-						<const>\false\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
-				<class>If</class>
-				<id>If_41</id>
 			</block>
 			<block>
 				<class>CompareEnum</class>
@@ -1727,10 +1679,6 @@
 						<const>\t_first_click\</const>
 					</slot>
 				</slots>
-			</block>
-			<block>
-				<class>If</class>
-				<id>If_67</id>
 			</block>
 			<block>
 				<class>ActivateGameObject</class>
@@ -1823,24 +1771,6 @@
 				</params>
 			</block>
 			<block>
-				<class>CompareString</class>
-				<id>CompareString_35</id>
-				<slots>
-					<slot>
-						<name>b</name>
-						<const>\hangar_v4\</const>
-					</slot>
-					<slot>
-						<name>no_case</name>
-						<const>\true\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
-				<class>GetSpaceName</class>
-				<id>GetSpaceName_2</id>
-			</block>
-			<block>
 				<class>If</class>
 				<id>If_45</id>
 			</block>
@@ -1896,6 +1826,18 @@
 			</block>
 			<block>
 				<class>GetVariable</class>
+				<id>GetVariable_22</id>
+				<buddy>Variable_5</buddy>
+				<params>
+					<param>
+						AnimationStateNameT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+			</block>
+			<block>
+				<class>GetVariable</class>
 				<id>GetVariable_31</id>
 				<buddy>Variable_14</buddy>
 				<params>
@@ -1908,11 +1850,11 @@
 			</block>
 			<block>
 				<class>GetVariable</class>
-				<id>GetVariable_22</id>
-				<buddy>Variable_5</buddy>
+				<id>GetVariable_34</id>
+				<buddy>Variable_12</buddy>
 				<params>
 					<param>
-						AnimationStateNameT
+						GameObjectT
 						<name>Variable Type</name>
 						<type>TypeT</type>
 					</param>
@@ -1958,15 +1900,12 @@
 				</params>
 			</block>
 			<block>
-				<class>Sequence</class>
-				<id>Sequence_6</id>
-				<params>
-					<param>
-						2
-						<name>Output Count</name>
-						<type>IntT</type>
-					</param>
-				</params>
+				<class>DeactivateGameObject</class>
+				<id>DeactivateGameObject_6</id>
+			</block>
+			<block>
+				<class>DeactivateGameObject</class>
+				<id>DeactivateGameObject_4</id>
 			</block>
 			<block>
 				<class>ComponentMethod</class>
@@ -1988,30 +1927,6 @@
 						<const>\0.000000\</const>
 					</slot>
 				</slots>
-			</block>
-			<block>
-				<class>DeactivateGameObject</class>
-				<id>DeactivateGameObject_4</id>
-			</block>
-			<block>
-				<class>If</class>
-				<id>If_68</id>
-			</block>
-			<block>
-				<class>DeactivateGameObject</class>
-				<id>DeactivateGameObject_6</id>
-			</block>
-			<block>
-				<class>GetVariable</class>
-				<id>GetVariable_34</id>
-				<buddy>Variable_12</buddy>
-				<params>
-					<param>
-						GameObjectT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
 			</block>
 			<block>
 				<class>If</class>
@@ -3161,37 +3076,25 @@
 				<output>value</output>
 			</connection>
 			<connection>
-				<from>Sequence_5</from>
-				<input>input</input>
-				<to>If_65</to>
-				<output>o0</output>
-			</connection>
-			<connection>
-				<from>CompareString_34</from>
-				<input>value</input>
-				<to>If_65</to>
-				<output>equal</output>
-			</connection>
-			<connection>
 				<from>CompareIntegers_6</from>
 				<input>a</input>
 				<to>Not_3</to>
 				<output>greater</output>
 			</connection>
 			<connection>
-				<from>Sequence_5</from>
-				<input>input</input>
-				<to>If_52</to>
-				<output>o1</output>
-			</connection>
-			<connection>
-				<from>GetVariable_30</from>
+				<from>GetVariable_38</from>
 				<input>value</input>
-				<to>If_52</to>
+				<to>FindInArray_4</to>
 				<output>value</output>
 			</connection>
 			<connection>
-				<from>If_65</from>
+				<from>FindInArray_4</from>
+				<input>a</input>
+				<to>CompareIntegers_6</to>
+				<output>index</output>
+			</connection>
+			<connection>
+				<from>If_39</from>
 				<input>in</input>
 				<to>ActivateGameObject_6</to>
 				<output>true</output>
@@ -3203,16 +3106,22 @@
 				<output>value</output>
 			</connection>
 			<connection>
+				<from>ActivateGameObject_6</from>
+				<input>input</input>
+				<to>If_52</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>GetVariable_30</from>
+				<input>value</input>
+				<to>If_52</to>
+				<output>value</output>
+			</connection>
+			<connection>
 				<from>ActivateGameObject_5</from>
 				<input>input</input>
 				<to>SetVariable_26</to>
 				<output>out</output>
-			</connection>
-			<connection>
-				<from>GetVariable_38</from>
-				<input>value</input>
-				<to>FindInArray_4</to>
-				<output>value</output>
 			</connection>
 			<connection>
 				<from>If_52</from>
@@ -3227,18 +3136,6 @@
 				<output>value</output>
 			</connection>
 			<connection>
-				<from>FindInArray_4</from>
-				<input>a</input>
-				<to>CompareIntegers_6</to>
-				<output>index</output>
-			</connection>
-			<connection>
-				<from>If_39</from>
-				<input>input</input>
-				<to>Sequence_5</to>
-				<output>true</output>
-			</connection>
-			<connection>
 				<from>If_47</from>
 				<input>input</input>
 				<to>If_48</to>
@@ -3249,12 +3146,6 @@
 				<input>value</input>
 				<to>If_48</to>
 				<output>res</output>
-			</connection>
-			<connection>
-				<from>GetSpaceName_1</from>
-				<input>a</input>
-				<to>CompareString_34</to>
-				<output>spaceName</output>
 			</connection>
 			<connection>
 				<from>SetVariable_24</from>
@@ -3329,22 +3220,16 @@
 				<output>trigger</output>
 			</connection>
 			<connection>
-				<from>Sequence_7</from>
+				<from>DeactivateGameObject_1</from>
 				<input>input</input>
-				<to>If_66</to>
-				<output>o1</output>
+				<to>SetVariable_23</to>
+				<output>out</output>
 			</connection>
 			<connection>
-				<from>CompareString_34</from>
-				<input>value</input>
-				<to>If_66</to>
-				<output>equal</output>
-			</connection>
-			<connection>
-				<from>If_66</from>
+				<from>If_39</from>
 				<input>in</input>
 				<to>DeactivateGameObject_5</to>
-				<output>true</output>
+				<output>false</output>
 			</connection>
 			<connection>
 				<from>GetVariable_33</from>
@@ -3353,10 +3238,16 @@
 				<output>value</output>
 			</connection>
 			<connection>
-				<from>If_39</from>
+				<from>DeactivateGameObject_5</from>
 				<input>input</input>
-				<to>Sequence_7</to>
-				<output>false</output>
+				<to>If_41</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>GetVariable_30</from>
+				<input>value</input>
+				<to>If_41</to>
+				<output>value</output>
 			</connection>
 			<connection>
 				<from>If_41</from>
@@ -3375,24 +3266,6 @@
 				<input>b</input>
 				<to>CompareEnum_9</to>
 				<output>trigger</output>
-			</connection>
-			<connection>
-				<from>DeactivateGameObject_1</from>
-				<input>input</input>
-				<to>SetVariable_23</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>Sequence_7</from>
-				<input>input</input>
-				<to>If_41</to>
-				<output>o0</output>
-			</connection>
-			<connection>
-				<from>GetVariable_30</from>
-				<input>value</input>
-				<to>If_41</to>
-				<output>value</output>
 			</connection>
 			<connection>
 				<from>ListenLocalEvent_2</from>
@@ -3426,21 +3299,9 @@
 			</connection>
 			<connection>
 				<from>ComponentMethod_35</from>
-				<input>input</input>
-				<to>If_67</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>CompareString_35</from>
-				<input>value</input>
-				<to>If_67</to>
-				<output>equal</output>
-			</connection>
-			<connection>
-				<from>If_67</from>
 				<input>in</input>
 				<to>ActivateGameObject_4</to>
-				<output>true</output>
+				<output>out</output>
 			</connection>
 			<connection>
 				<from>GetVariable_31</from>
@@ -3495,12 +3356,6 @@
 				<input>select</input>
 				<to>SwitchOnEnum_1</to>
 				<output>trigger</output>
-			</connection>
-			<connection>
-				<from>GetSpaceName_2</from>
-				<input>a</input>
-				<to>CompareString_35</to>
-				<output>spaceName</output>
 			</connection>
 			<connection>
 				<from>SwitchOnEnum_1</from>
@@ -3563,10 +3418,28 @@
 				<output>fromEventScreen</output>
 			</connection>
 			<connection>
-				<from>ComponentMethod_34</from>
-				<input>input</input>
-				<to>Sequence_6</to>
+				<from>DeactivateGameObject_4</from>
+				<input>in</input>
+				<to>DeactivateGameObject_6</to>
 				<output>out</output>
+			</connection>
+			<connection>
+				<from>GetVariable_34</from>
+				<input>gameObject</input>
+				<to>DeactivateGameObject_6</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>ComponentMethod_34</from>
+				<input>in</input>
+				<to>DeactivateGameObject_4</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>GetVariable_31</from>
+				<input>gameObject</input>
+				<to>DeactivateGameObject_4</to>
+				<output>value</output>
 			</connection>
 			<connection>
 				<from>SendLocalEvent_27</from>
@@ -3578,42 +3451,6 @@
 				<from>ContextGetSelf_1</from>
 				<input>gameObject</input>
 				<to>ComponentMethod_34</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>If_68</from>
-				<input>in</input>
-				<to>DeactivateGameObject_4</to>
-				<output>true</output>
-			</connection>
-			<connection>
-				<from>GetVariable_31</from>
-				<input>gameObject</input>
-				<to>DeactivateGameObject_4</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>Sequence_6</from>
-				<input>input</input>
-				<to>If_68</to>
-				<output>o0</output>
-			</connection>
-			<connection>
-				<from>CompareString_35</from>
-				<input>value</input>
-				<to>If_68</to>
-				<output>equal</output>
-			</connection>
-			<connection>
-				<from>Sequence_6</from>
-				<input>in</input>
-				<to>DeactivateGameObject_6</to>
-				<output>o1</output>
-			</connection>
-			<connection>
-				<from>GetVariable_34</from>
-				<input>gameObject</input>
-				<to>DeactivateGameObject_6</to>
 				<output>value</output>
 			</connection>
 			<connection>

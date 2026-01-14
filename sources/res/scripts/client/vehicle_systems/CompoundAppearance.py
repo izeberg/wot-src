@@ -23,6 +23,8 @@ from vehicle_systems import model_assembler
 from VehicleEffects import DamageFromShotDecoder
 from common_tank_appearance import CommonTankAppearance
 import CGF, GenericComponents
+if typing.TYPE_CHECKING:
+    from VehicleStickers import DamageStickerData
 _ROOT_NODE_NAME = 'V'
 _GUN_RECOIL_NODE_NAME = 'G'
 _PERIODIC_TIME_ENGINE = 0.1
@@ -226,12 +228,6 @@ class CompoundAppearance(CommonTankAppearance, CallbackDelayer):
                 self.__setTurbochargerSound(self._vehicle.getOptionalDevices())
             return
 
-    def __cleanupTmpGameObjects(self):
-        while self.__tmpGameObjects:
-            _, go = self.__tmpGameObjects.popitem()
-            self.removeComponent(go)
-            go.deactivate()
-
     def __destroyEngineAudition(self):
         self.engineAudition = None
         if self.detailedEngineState is not None:
@@ -276,7 +272,11 @@ class CompoundAppearance(CommonTankAppearance, CallbackDelayer):
             self.wheelsAnimator = None
         self.gearbox = None
         self.gunRotatorAudition = None
-        self.__cleanupTmpGameObjects()
+        while self.__tmpGameObjects:
+            _, go = self.__tmpGameObjects.popitem()
+            self.removeComponent(go)
+            go.deactivate()
+
         fashions = VehiclePartsTuple(BigWorld.WGVehicleFashion(), None, None, None)
         self._setFashions(fashions, isTurretDetached)
         model_assembler.setupTracksFashion(self.typeDescriptor, self.fashion)
@@ -303,7 +303,6 @@ class CompoundAppearance(CommonTankAppearance, CallbackDelayer):
         return
 
     def destroy(self):
-        self.__cleanupTmpGameObjects()
         if self._vehicle is not None:
             self.deactivate()
         self.__destroyEngineAudition()
@@ -446,9 +445,9 @@ class CompoundAppearance(CommonTankAppearance, CallbackDelayer):
             self.vehicleStickers.delDamageSticker(code)
         return
 
-    def addDamageSticker(self, code, componentIdx, stickerID, segStart, segEnd, segLength=None):
+    def addDamageSticker(self, code, stickerID, data, isActive=False):
         if self.vehicleStickers is not None:
-            self.vehicleStickers.addDamageSticker(code, componentIdx, stickerID, segStart, segEnd, self.collisions, segLength)
+            self.vehicleStickers.addDamageSticker(code, stickerID, data, self.collisions, self.isCompositionReady, isActive)
         return
 
     def receiveShotImpulse(self, direction, impulse):

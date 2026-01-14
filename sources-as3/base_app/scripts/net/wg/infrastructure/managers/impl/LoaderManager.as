@@ -334,9 +334,9 @@ package net.wg.infrastructure.managers.impl
             }
             catch(error:*)
             {
-               DebugUtils.LOG_ERROR("Couldn\'t initialize loaded object for \'" + loader.contentLoaderInfo.url + "\': \n" + error.toString());
+               DebugUtils.LOG_ERROR("Couldn\'t initialize loaded object for " + loader.contentLoaderInfo.url + ": \n" + error.toString());
             }
-            App.utils.asserter.assertNotNull(view,String(loader.content) + " must implement net.wg.infrastructure.interfaces.IView! url=" + info.url);
+            App.utils.asserter.assertNotNull(view,"net.wg.infrastructure.interfaces.IView does not implemented");
          }
          data.cached = App.cacheMgr && App.cacheMgr.add(config.url,loader,App.utils.classFactory.getClass(getQualifiedClassName(view)));
          if(data.cached)

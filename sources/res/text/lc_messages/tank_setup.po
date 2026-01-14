@@ -595,10 +595,13 @@ msgid "easyTankEquipView/alert/demountNotPossible"
 msgstr "Not enough resources for demounting."
 
 msgid "easyTankEquipView/alert/notFormed"
-msgstr "Recommendations unavailable for this vehicle"
+msgstr "Recommendations unavailable for this vehicle"
 
 msgid "easyTankEquipView/alert/unableToMount"
 msgstr "Unable to mount."
+
+msgid "easyTankEquipView/applied"
+msgstr "Applied"
 
 msgid "easyTankEquipView/consumables/presetNames/advanced"
 msgstr "Advanced"
@@ -618,7 +621,7 @@ msgstr ""
 "Barracks."
 
 msgid "easyTankEquipView/crew/multiplier"
-msgstr "x%(count)s"
+msgstr "x{{count}}"
 
 msgid "easyTankEquipView/crew/presetNames/experienced"
 msgstr "Experienced crew"
@@ -629,23 +632,20 @@ msgstr "New crew"
 msgid "easyTankEquipView/crew/recruit"
 msgid_plural "plural/easyTankEquipView/crew/recruit"
 msgstr[0] ""
-"%(count)s\n"
+"{{count}}\n"
 "New crew member will be recruited"
 msgstr[1] ""
-"%(count)s\n"
+"{{count}}\n"
 "New crew members will be recruited"
 msgstr[2] ""
-"%(count)s\n"
+"{{count}}\n"
 "New crew members will be recruited"
 
 msgid "easyTankEquipView/crew/title"
 msgstr "CREW"
 
 msgid "easyTankEquipView/discount"
-msgstr "-%(value)s%"
-
-msgid "easyTankEquipView/installed"
-msgstr "Ready"
+msgstr "-{{value}}"
 
 msgid "easyTankEquipView/optDevices/presetNames/advanced"
 msgstr "Advanced"
@@ -669,7 +669,7 @@ msgid "easyTankEquipView/styles/builtInStyle"
 msgstr "You already have a style applied"
 
 msgid "easyTankEquipView/styles/rent"
-msgstr "%(battlesCount)s battles for %(price)s"
+msgstr "{{battlesCount}} battles for {{price}}"
 
 msgid "easyTankEquipView/styles/title"
 msgstr "PRESET STYLES"
@@ -904,14 +904,30 @@ msgstr ""
 msgid "kpi/bonus/longDescr/negative/vehicleStillCamouflage"
 msgstr "to concealment of a stationary vehicle 3 s after it stops"
 
+msgid "kpi/bonus/longDescr/negative/vehicleStillCamouflageDeluxe"
+msgstr ""
+"to concealment of a stationary vehicle\n"
+"1.5 s after it stops"
+
 msgid "kpi/bonus/longDescr/negative/vehicleStillCamouflageGroup"
 msgstr ""
 "to concealment increase of a stationary vehicle 3 s after it stops "
 "(effectiveness depends on vehicle type)"
 
+msgid "kpi/bonus/longDescr/negative/vehicleStillCamouflageGroupDeluxe"
+msgstr ""
+"to concealment increase of a stationary vehicle 1.5 s after it stops "
+"(effectiveness depends on vehicle type)"
+
 msgid "kpi/bonus/longDescr/negative/vehicleStillCircularVisionRadius"
 msgstr ""
 "to view range of a stationary vehicle 3 s after it stops (up to 445 "
+"m)—increasing the parameter over 445 m allows for more effective spotting of"
+" enemies"
+
+msgid "kpi/bonus/longDescr/negative/vehicleStillCircularVisionRadiusDeluxe"
+msgstr ""
+"to view range of a stationary vehicle 1.5 s after it stops (up to 445 "
 "m)—increasing the parameter over 445 m allows for more effective spotting of"
 " enemies"
 
@@ -982,14 +998,30 @@ msgstr ""
 msgid "kpi/bonus/longDescr/positive/vehicleStillCamouflage"
 msgstr "to concealment of a stationary vehicle 3 s after it stops"
 
+msgid "kpi/bonus/longDescr/positive/vehicleStillCamouflageDeluxe"
+msgstr ""
+"to concealment of a stationary vehicle\n"
+"1.5 s after it stops"
+
 msgid "kpi/bonus/longDescr/positive/vehicleStillCamouflageGroup"
 msgstr ""
 "to concealment of a stationary vehicle 3 s after it stops (effectiveness "
 "depends on vehicle type)"
 
+msgid "kpi/bonus/longDescr/positive/vehicleStillCamouflageGroupDeluxe"
+msgstr ""
+"to concealment of a stationary vehicle 1.5 s after it stops (effectiveness "
+"depends on vehicle type)"
+
 msgid "kpi/bonus/longDescr/positive/vehicleStillCircularVisionRadius"
 msgstr ""
 "to view range of a stationary vehicle 3 s after it stops (up to 445 m). "
+"Increasing the parameter over 445 m allows for more effective spotting of "
+"enemies."
+
+msgid "kpi/bonus/longDescr/positive/vehicleStillCircularVisionRadiusDeluxe"
+msgstr ""
+"to view range of a stationary vehicle 1.5 s after it stops (up to 445 m). "
 "Increasing the parameter over 445 m allows for more effective spotting of "
 "enemies."
 
@@ -1008,6 +1040,9 @@ msgstr ""
 
 msgid "kpi/bonus/negative/commanderLampDelay"
 msgstr "to delay before notification of being spotted"
+
+msgid "kpi/bonus/negative/coolingPerSec"
+msgstr "to gun cooling speed"
 
 msgid "kpi/bonus/negative/crewHitChance"
 msgstr "to crew protection from injuries"
@@ -1209,10 +1244,19 @@ msgstr "to maintaining speed when crossing all terrain types"
 msgid "kpi/bonus/negative/vehicleStillCamouflage"
 msgstr "to concealment of a stationary vehicle"
 
+msgid "kpi/bonus/negative/vehicleStillCamouflageDeluxe"
+msgstr "to concealment of a stationary vehicle"
+
 msgid "kpi/bonus/negative/vehicleStillCamouflageGroup"
 msgstr "to concealment increase of a stationary vehicle"
 
+msgid "kpi/bonus/negative/vehicleStillCamouflageGroupDeluxe"
+msgstr "to concealment increase of a stationary vehicle"
+
 msgid "kpi/bonus/negative/vehicleStillCircularVisionRadius"
+msgstr "to view range of a stationary vehicle"
+
+msgid "kpi/bonus/negative/vehicleStillCircularVisionRadiusDeluxe"
 msgstr "to view range of a stationary vehicle"
 
 msgid "kpi/bonus/negative/vehicleStrength"
@@ -1269,8 +1313,14 @@ msgstr ""
 "delay before Sound Detection\n"
 "activation"
 
+msgid "kpi/bonus/positive/basicShellDamage"
+msgstr "to standard shell damage"
+
 msgid "kpi/bonus/positive/commanderLampDelay"
 msgstr "to delay before notification of being spotted"
+
+msgid "kpi/bonus/positive/coolingPerSec"
+msgstr "to gun cooling speed"
 
 msgid "kpi/bonus/positive/crewHitChance"
 msgstr "to crew protection from injuries"
@@ -1285,9 +1335,7 @@ msgid "kpi/bonus/positive/crewStunDuration"
 msgstr "to stun duration"
 
 msgid "kpi/bonus/positive/damageAndPiercingDistributionLowerBound"
-msgstr ""
-"to minimum potential damage\n"
-"and penetration value"
+msgstr "to minimum potential damage and penetration value"
 
 msgid "kpi/bonus/positive/damageAndPiercingDistributionUpperBound"
 msgstr ""
@@ -1387,11 +1435,17 @@ msgstr ""
 "to maintaining speed\n"
 "on soft terrain"
 
+msgid "kpi/bonus/positive/specialShellDamage"
+msgstr "to special shell damage"
+
 msgid "kpi/bonus/positive/specialShellPenetration"
 msgstr "to special shell penetration"
 
 msgid "kpi/bonus/positive/specialShellVelocity"
 msgstr "to special shell velocity"
+
+msgid "kpi/bonus/positive/standardShellDamage"
+msgstr "to standard shell damage "
 
 msgid "kpi/bonus/positive/standardShellPenetration"
 msgstr "to standard shell penetration"
@@ -1524,10 +1578,19 @@ msgstr "to maintaining speed when crossing all terrain types"
 msgid "kpi/bonus/positive/vehicleStillCamouflage"
 msgstr "to concealment of a stationary vehicle"
 
+msgid "kpi/bonus/positive/vehicleStillCamouflageDeluxe"
+msgstr "to concealment of a stationary vehicle"
+
 msgid "kpi/bonus/positive/vehicleStillCamouflageGroup"
 msgstr "to the concealment increase of a stationary vehicle"
 
+msgid "kpi/bonus/positive/vehicleStillCamouflageGroupDeluxe"
+msgstr "to the concealment increase of a stationary vehicle"
+
 msgid "kpi/bonus/positive/vehicleStillCircularVisionRadius"
+msgstr "to the view range of a stationary vehicle (up to 445 m)"
+
+msgid "kpi/bonus/positive/vehicleStillCircularVisionRadiusDeluxe"
 msgstr "to the view range of a stationary vehicle (up to 445 m)"
 
 msgid "kpi/bonus/positive/vehicleStrength"
@@ -1707,7 +1770,15 @@ msgstr ""
 "to concealment of a stationary\n"
 "vehicle"
 
+msgid "kpi/bonus/ttc/negative/vehicleStillCamouflageDeluxe"
+msgstr ""
+"to concealment of a stationary\n"
+"vehicle"
+
 msgid "kpi/bonus/ttc/negative/vehicleStillCircularVisionRadius"
+msgstr "to view range"
+
+msgid "kpi/bonus/ttc/negative/vehicleStillCircularVisionRadiusDeluxe"
 msgstr "to view range"
 
 msgid "kpi/bonus/ttc/negative/vehicleStrength"
@@ -1906,7 +1977,15 @@ msgstr "to maintaining speed"
 msgid "kpi/bonus/ttc/positive/vehicleStillCamouflage"
 msgstr "to concealment of a stationary vehicle"
 
+msgid "kpi/bonus/ttc/positive/vehicleStillCamouflageDeluxe"
+msgstr "to concealment of a stationary vehicle"
+
 msgid "kpi/bonus/ttc/positive/vehicleStillCircularVisionRadius"
+msgstr ""
+"to view range of a stationary vehicle\n"
+"(up to 445 m)"
+
+msgid "kpi/bonus/ttc/positive/vehicleStillCircularVisionRadiusDeluxe"
 msgstr ""
 "to view range of a stationary vehicle\n"
 "(up to 445 m)"
@@ -2281,6 +2360,26 @@ msgid "tooltips/prebattleSwitchIndicator/desc/2"
 msgstr ""
 "You can enable/disable the option to choose sets of equipment and directives"
 " during the pre-battle countdown in the Field Modification interface."
+
+msgid "tooltips/prebattleSwitchIndicator/desc/c_1/field"
+msgstr ""
+"You can enable/disable the option to choose sets of shells and consumables "
+"during the pre-battle countdown in the Field Modification interface."
+
+msgid "tooltips/prebattleSwitchIndicator/desc/c_1/progression"
+msgstr ""
+"You can enable/disable the option to choose sets of shells and consumables "
+"during the pre-battle countdown in the Upgrades interface."
+
+msgid "tooltips/prebattleSwitchIndicator/desc/c_2/field"
+msgstr ""
+"You can enable/disable the option to choose sets of equipment and directives"
+" during the pre-battle countdown in the Field Modification interface."
+
+msgid "tooltips/prebattleSwitchIndicator/desc/c_2/progression"
+msgstr ""
+"You can enable/disable the option to choose sets of equipment and directives"
+" during the pre-battle countdown in the Upgrades interface."
 
 msgid "tooltips/prebattleSwitchIndicator/title"
 msgstr "Switching Between Sets Disabled"

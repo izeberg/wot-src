@@ -93,11 +93,6 @@
 			<flags>2</flags>
 		</GameObject>
 		<GameObject>
-			<name>hd_mle_UNI_016_BoxesHowitzer</name>
-			<UUID>d4fe965b-c609-37d6-a5e0-fcd4b3ba2732</UUID>
-			<flags>2</flags>
-		</GameObject>
-		<GameObject>
 			<name>hd_mle_SU_001_45mm_04</name>
 			<UUID>41c00ae9-3c84-313d-9c8b-91e98ce43885</UUID>
 			<flags>2</flags>
@@ -475,11 +470,6 @@
 		<GameObject>
 			<name>hd_mle_SU_001_45mm_04</name>
 			<UUID>a3770d13-8e96-3c0e-ad67-5390c52c4ce0</UUID>
-			<flags>2</flags>
-		</GameObject>
-		<GameObject>
-			<name>hd_mle_SU_001_45mm_02</name>
-			<UUID>209e1912-c64f-37ca-9c80-ebf1aa88da85</UUID>
 			<flags>2</flags>
 		</GameObject>
 		<GameObject>
@@ -934,16 +924,6 @@
 			</component>
 			<component>
 				<UUID>754d822b-932b-3ed8-a4c9-98adfb0d028e</UUID>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Parent</name>
-						<link>b45c4a81-55ee-49dc-9646-1c85ea346d26</link>
-					</property>
-				</config>
-			</component>
-			<component>
-				<UUID>d4fe965b-c609-37d6-a5e0-fcd4b3ba2732</UUID>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -1704,16 +1684,6 @@
 			</component>
 			<component>
 				<UUID>a3770d13-8e96-3c0e-ad67-5390c52c4ce0</UUID>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Parent</name>
-						<link>b45c4a81-55ee-49dc-9646-1c85ea346d26</link>
-					</property>
-				</config>
-			</component>
-			<component>
-				<UUID>209e1912-c64f-37ca-9c80-ebf1aa88da85</UUID>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -2747,30 +2717,6 @@
 						<name>Rotation</name>
 						<value>
 							-0 2.7791 0
-							<!--BW_String-->
-						</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<UUID>d4fe965b-c609-37d6-a5e0-fcd4b3ba2732</UUID>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Position</name>
-						<value>
-							-10.2023 -2.67383 2.60999
-							<!--BW_String-->
-						</value>
-					</property>
-					<property>
-						<name>Scale</name>
-						<value>1 1 1</value>
-					</property>
-					<property>
-						<name>Rotation</name>
-						<value>
-							-0 0.781262 0
 							<!--BW_String-->
 						</value>
 					</property>
@@ -4468,7 +4414,7 @@
 					<property>
 						<name>Rotation</name>
 						<value>
-							-0.000328809 -0.781385 -1.57113
+							-0.000328779 -0.781385 -1.57113
 							<!--BW_String-->
 						</value>
 					</property>
@@ -4495,7 +4441,7 @@
 					<property>
 						<name>Rotation</name>
 						<value>
-							-0.000727415 -0.758335 1.58835
+							-0.000727445 -0.758335 1.58835
 							<!--BW_String-->
 						</value>
 					</property>
@@ -4522,7 +4468,7 @@
 					<property>
 						<name>Rotation</name>
 						<value>
-							-0.000727415 -0.758335 1.58835
+							-0.000727445 -0.758335 1.58835
 							<!--BW_String-->
 						</value>
 					</property>
@@ -4603,7 +4549,7 @@
 					<property>
 						<name>Rotation</name>
 						<value>
-							-0.000328809 -0.781385 -1.57113
+							-0.000328779 -0.781385 -1.57113
 							<!--BW_String-->
 						</value>
 					</property>
@@ -4703,30 +4649,6 @@
 						<name>Rotation</name>
 						<value>
 							-0.0225994 -2.96632 0.00501185
-							<!--BW_String-->
-						</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<UUID>209e1912-c64f-37ca-9c80-ebf1aa88da85</UUID>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Position</name>
-						<value>
-							6.69589 0.318306 -3.66348
-							<!--BW_String-->
-						</value>
-					</property>
-					<property>
-						<name>Scale</name>
-						<value>2 2 2</value>
-					</property>
-					<property>
-						<name>Rotation</name>
-						<value>
-							-0 -0.535232 0
 							<!--BW_String-->
 						</value>
 					</property>
@@ -5170,7 +5092,7 @@
 					<property>
 						<name>Rotation</name>
 						<value>
-							3.01026 1.53693 -0.0679801
+							3.01026 1.53693 -0.0679803
 							<!--BW_String-->
 						</value>
 					</property>
@@ -5251,7 +5173,7 @@
 					<property>
 						<name>Rotation</name>
 						<value>
-							3.13194 0.0222569 0.369988
+							3.13194 0.0222573 0.369988
 							<!--BW_String-->
 						</value>
 					</property>
@@ -6076,7 +5998,7 @@
 					<property>
 						<name>Rotation</name>
 						<value>
-							3.13358 0.793558 -0.0540493
+							3.13358 0.793558 -0.0540495
 							<!--BW_String-->
 						</value>
 					</property>
@@ -6207,14 +6129,6 @@
 						<value>0</value>
 					</property>
 					<property>
-						<name>lagDelay</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>extrapolate</name>
-						<value>1</value>
-					</property>
-					<property>
 						<name>detailed</name>
 						<value>0</value>
 					</property>
@@ -6339,6 +6253,14 @@
 						<name>Cast Shadows</name>
 						<value>1</value>
 					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
+					</property>
 				</config>
 			</component>
 			<component>
@@ -6348,10 +6270,18 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/hd_mle_SU_001_45mm/normal/lod0/hd_mle_SU_001_45mm_04.model</value>
+						<value>content/MilitaryEnvironment/hd_mle_SU_001_45mm/normal/lod0/hd_mle_SU_001_45mm_04_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
 						<value>0</value>
 					</property>
 				</config>
@@ -6363,10 +6293,18 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/hd_mle_SU_001_45mm/normal/lod0/hd_mle_SU_001_45mm_04.model</value>
+						<value>content/MilitaryEnvironment/hd_mle_SU_001_45mm/normal/lod0/hd_mle_SU_001_45mm_04_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
 						<value>0</value>
 					</property>
 				</config>
@@ -6378,10 +6316,18 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/hd_mle_SU_001_45mm/normal/lod0/hd_mle_SU_001_45mm_04.model</value>
+						<value>content/MilitaryEnvironment/hd_mle_SU_001_45mm/normal/lod0/hd_mle_SU_001_45mm_04_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
 						<value>0</value>
 					</property>
 				</config>
@@ -6393,10 +6339,18 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/mle_19_03_Gerboxes01-04/normal/lod0/mle_19_03_Gerboxes03.model</value>
+						<value>content/MilitaryEnvironment/mle_19_03_Gerboxes01-04/normal/lod0/mle_19_03_Gerboxes03_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
 						<value>0</value>
 					</property>
 				</config>
@@ -6414,6 +6368,14 @@
 						<name>Cast Shadows</name>
 						<value>0</value>
 					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
+					</property>
 				</config>
 			</component>
 			<component>
@@ -6423,10 +6385,18 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/hd_mle_SU_001_45mm/normal/lod0/hd_mle_SU_001_45mm_04.model</value>
+						<value>content/MilitaryEnvironment/hd_mle_SU_001_45mm/normal/lod0/hd_mle_SU_001_45mm_04_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
 						<value>0</value>
 					</property>
 				</config>
@@ -6438,11 +6408,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Environment/hd_env_UNI_632_DoraEnv/normal/lod0/hd_env_UNI_632_DoraEnv_02.model</value>
+						<value>content/Environment/hd_env_UNI_632_DoraEnv/normal/lod0/hd_env_UNI_632_DoraEnv_02_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
 					</property>
 				</config>
 			</component>
@@ -6453,10 +6431,18 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/hd_mle_SU_001_45mm/normal/lod0/hd_mle_SU_001_45mm_04.model</value>
+						<value>content/MilitaryEnvironment/hd_mle_SU_001_45mm/normal/lod0/hd_mle_SU_001_45mm_04_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
 						<value>0</value>
 					</property>
 				</config>
@@ -6468,10 +6454,18 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/hd_mle_SU_001_45mm/normal/lod0/hd_mle_SU_001_45mm_04.model</value>
+						<value>content/MilitaryEnvironment/hd_mle_SU_001_45mm/normal/lod0/hd_mle_SU_001_45mm_04_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
 						<value>0</value>
 					</property>
 				</config>
@@ -6483,10 +6477,18 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/mle_19_03_Gerboxes01-04/normal/lod0/mle_19_03_Gerboxes04.model</value>
+						<value>content/MilitaryEnvironment/mle_19_03_Gerboxes01-04/normal/lod0/mle_19_03_Gerboxes04_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
 						<value>0</value>
 					</property>
 				</config>
@@ -6498,10 +6500,18 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/mle_19_03_Gerboxes01-04/normal/lod0/mle_19_03_Gerboxes03.model</value>
+						<value>content/MilitaryEnvironment/mle_19_03_Gerboxes01-04/normal/lod0/mle_19_03_Gerboxes03_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
 						<value>0</value>
 					</property>
 				</config>
@@ -6513,11 +6523,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Environment/hd_env_UNI_632_DoraEnv/normal/lod0/hd_env_UNI_632_DoraEnv_02.model</value>
+						<value>content/Environment/hd_env_UNI_632_DoraEnv/normal/lod0/hd_env_UNI_632_DoraEnv_02_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
 					</property>
 				</config>
 			</component>
@@ -6534,6 +6552,14 @@
 						<name>Cast Shadows</name>
 						<value>0</value>
 					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
+					</property>
 				</config>
 			</component>
 			<component>
@@ -6543,11 +6569,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Environment/hd_env_UNI_632_DoraEnv/normal/lod0/hd_env_UNI_632_DoraEnv_02.model</value>
+						<value>content/Environment/hd_env_UNI_632_DoraEnv/normal/lod0/hd_env_UNI_632_DoraEnv_02_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
 					</property>
 				</config>
 			</component>
@@ -6558,11 +6592,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/mle_19_03_Gerboxes01-04/normal/lod0/mle_19_03_Gerboxes03.model</value>
+						<value>content/MilitaryEnvironment/mle_19_03_Gerboxes01-04/normal/lod0/mle_19_03_Gerboxes03_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
 					</property>
 				</config>
 			</component>
@@ -6573,26 +6615,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/hd_mle_SU_001_45mm/normal/lod0/hd_mle_SU_001_45mm_04.model</value>
+						<value>content/MilitaryEnvironment/hd_mle_SU_001_45mm/normal/lod0/hd_mle_SU_001_45mm_04_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>0</value>
 					</property>
-				</config>
-			</component>
-			<component>
-				<UUID>d4fe965b-c609-37d6-a5e0-fcd4b3ba2732</UUID>
-				<flags>3</flags>
-				<config>
 					<property>
-						<name>Model name</name>
-						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/hd_mle_UNI_016_BoxesHowitzer/normal/lod0/hd_mle_UNI_016_BoxesHowitzer.model</value>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
 					</property>
 					<property>
-						<name>Cast Shadows</name>
-						<value>1</value>
+						<name>decorType</name>
+						<value>0</value>
 					</property>
 				</config>
 			</component>
@@ -6603,10 +6638,18 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/hd_mle_SU_001_45mm/normal/lod0/hd_mle_SU_001_45mm_04.model</value>
+						<value>content/MilitaryEnvironment/hd_mle_SU_001_45mm/normal/lod0/hd_mle_SU_001_45mm_04_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
 						<value>0</value>
 					</property>
 				</config>
@@ -6618,11 +6661,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Environment/hd_env_UNI_632_DoraEnv/normal/lod0/hd_env_UNI_632_DoraEnv_02.model</value>
+						<value>content/Environment/hd_env_UNI_632_DoraEnv/normal/lod0/hd_env_UNI_632_DoraEnv_02_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
 					</property>
 				</config>
 			</component>
@@ -6633,10 +6684,18 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/hd_mle_SU_001_45mm/normal/lod0/hd_mle_SU_001_45mm_04.model</value>
+						<value>content/MilitaryEnvironment/hd_mle_SU_001_45mm/normal/lod0/hd_mle_SU_001_45mm_04_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
 						<value>0</value>
 					</property>
 				</config>
@@ -6654,6 +6713,14 @@
 						<name>Cast Shadows</name>
 						<value>0</value>
 					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
+					</property>
 				</config>
 			</component>
 			<component>
@@ -6663,10 +6730,18 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/hd_mle_UNI_046_Bag/normal/lod0/hd_mle_UNI_046_Bag_01.model</value>
+						<value>content/MilitaryEnvironment/hd_mle_UNI_046_Bag/normal/lod0/hd_mle_UNI_046_Bag_01_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
 						<value>0</value>
 					</property>
 				</config>
@@ -6678,11 +6753,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/mle_19_03_Gerboxes01-04/normal/lod0/mle_19_03_Gerboxes04.model</value>
+						<value>content/MilitaryEnvironment/mle_19_03_Gerboxes01-04/normal/lod0/mle_19_03_Gerboxes04_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
 					</property>
 				</config>
 			</component>
@@ -6693,10 +6776,18 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/hd_mle_UNI_046_Bag/normal/lod0/hd_mle_UNI_046_Bag_01.model</value>
+						<value>content/MilitaryEnvironment/hd_mle_UNI_046_Bag/normal/lod0/hd_mle_UNI_046_Bag_01_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
 						<value>0</value>
 					</property>
 				</config>
@@ -6714,6 +6805,14 @@
 						<name>Cast Shadows</name>
 						<value>0</value>
 					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
+					</property>
 				</config>
 			</component>
 			<component>
@@ -6723,10 +6822,18 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/hd_mle_SU_001_45mm/normal/lod0/hd_mle_SU_001_45mm_04.model</value>
+						<value>content/MilitaryEnvironment/hd_mle_SU_001_45mm/normal/lod0/hd_mle_SU_001_45mm_04_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
 						<value>0</value>
 					</property>
 				</config>
@@ -6738,10 +6845,18 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/hd_mle_UNI_046_Bag/normal/lod0/hd_mle_UNI_046_Bag_01.model</value>
+						<value>content/MilitaryEnvironment/hd_mle_UNI_046_Bag/normal/lod0/hd_mle_UNI_046_Bag_01_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
 						<value>0</value>
 					</property>
 				</config>
@@ -6753,11 +6868,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/mle_19_03_Gerboxes01-04/normal/lod0/mle_19_03_Gerboxes03.model</value>
+						<value>content/MilitaryEnvironment/mle_19_03_Gerboxes01-04/normal/lod0/mle_19_03_Gerboxes03_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
 					</property>
 				</config>
 			</component>
@@ -6768,11 +6891,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/hd_mle_UNI_046_Bag/normal/lod0/hd_mle_UNI_046_Bag_01.model</value>
+						<value>content/MilitaryEnvironment/hd_mle_UNI_046_Bag/normal/lod0/hd_mle_UNI_046_Bag_01_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
 					</property>
 				</config>
 			</component>
@@ -6789,6 +6920,14 @@
 						<name>Cast Shadows</name>
 						<value>0</value>
 					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
+					</property>
 				</config>
 			</component>
 			<component>
@@ -6798,11 +6937,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/hd_mle_UNI_046_Bag/normal/lod0/hd_mle_UNI_046_Bag_01.model</value>
+						<value>content/MilitaryEnvironment/hd_mle_UNI_046_Bag/normal/lod0/hd_mle_UNI_046_Bag_01_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
 					</property>
 				</config>
 			</component>
@@ -6813,11 +6960,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/mle_19_03_Gerboxes01-04/normal/lod0/mle_19_03_Gerboxes03.model</value>
+						<value>content/MilitaryEnvironment/mle_19_03_Gerboxes01-04/normal/lod0/mle_19_03_Gerboxes03_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
 					</property>
 				</config>
 			</component>
@@ -6828,11 +6983,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Environment/hd_env_UNI_632_DoraEnv/normal/lod0/hd_env_UNI_632_DoraEnv_02.model</value>
+						<value>content/Environment/hd_env_UNI_632_DoraEnv/normal/lod0/hd_env_UNI_632_DoraEnv_02_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
 					</property>
 				</config>
 			</component>
@@ -6843,11 +7006,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Environment/hd_env_UNI_632_DoraEnv/normal/lod0/hd_env_UNI_632_DoraEnv_02.model</value>
+						<value>content/Environment/hd_env_UNI_632_DoraEnv/normal/lod0/hd_env_UNI_632_DoraEnv_02_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
 					</property>
 				</config>
 			</component>
@@ -6858,10 +7029,18 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/hd_mle_UNI_046_Bag/normal/lod0/hd_mle_UNI_046_Bag_01.model</value>
+						<value>content/MilitaryEnvironment/hd_mle_UNI_046_Bag/normal/lod0/hd_mle_UNI_046_Bag_01_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
 						<value>0</value>
 					</property>
 				</config>
@@ -6879,6 +7058,14 @@
 						<name>Cast Shadows</name>
 						<value>0</value>
 					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
+					</property>
 				</config>
 			</component>
 			<component>
@@ -6888,10 +7075,18 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/hd_mle_SU_001_45mm/normal/lod0/hd_mle_SU_001_45mm_04.model</value>
+						<value>content/MilitaryEnvironment/hd_mle_SU_001_45mm/normal/lod0/hd_mle_SU_001_45mm_04_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
 						<value>0</value>
 					</property>
 				</config>
@@ -6903,10 +7098,18 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/hd_mle_SU_001_45mm/normal/lod0/hd_mle_SU_001_45mm_04.model</value>
+						<value>content/MilitaryEnvironment/hd_mle_SU_001_45mm/normal/lod0/hd_mle_SU_001_45mm_04_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
 						<value>0</value>
 					</property>
 				</config>
@@ -6918,10 +7121,18 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/hd_mle_UNI_046_Bag/normal/lod0/hd_mle_UNI_046_Bag_01.model</value>
+						<value>content/MilitaryEnvironment/hd_mle_UNI_046_Bag/normal/lod0/hd_mle_UNI_046_Bag_01_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
 						<value>0</value>
 					</property>
 				</config>
@@ -6933,10 +7144,18 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/hd_mle_SU_001_45mm/normal/lod0/hd_mle_SU_001_45mm_04.model</value>
+						<value>content/MilitaryEnvironment/hd_mle_SU_001_45mm/normal/lod0/hd_mle_SU_001_45mm_04_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
 						<value>0</value>
 					</property>
 				</config>
@@ -6948,10 +7167,18 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/hd_mle_SU_001_45mm/normal/lod0/hd_mle_SU_001_45mm_04.model</value>
+						<value>content/MilitaryEnvironment/hd_mle_SU_001_45mm/normal/lod0/hd_mle_SU_001_45mm_04_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
 						<value>0</value>
 					</property>
 				</config>
@@ -6963,10 +7190,18 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/hd_mle_SU_001_45mm/normal/lod0/hd_mle_SU_001_45mm_04.model</value>
+						<value>content/MilitaryEnvironment/hd_mle_SU_001_45mm/normal/lod0/hd_mle_SU_001_45mm_04_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
 						<value>0</value>
 					</property>
 				</config>
@@ -6978,10 +7213,18 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/hd_mle_SU_001_45mm/normal/lod0/hd_mle_SU_001_45mm_04.model</value>
+						<value>content/MilitaryEnvironment/hd_mle_SU_001_45mm/normal/lod0/hd_mle_SU_001_45mm_04_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
 						<value>0</value>
 					</property>
 				</config>
@@ -6993,10 +7236,18 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/hd_mle_SU_001_45mm/normal/lod0/hd_mle_SU_001_45mm_04.model</value>
+						<value>content/MilitaryEnvironment/hd_mle_SU_001_45mm/normal/lod0/hd_mle_SU_001_45mm_04_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
 						<value>0</value>
 					</property>
 				</config>
@@ -7008,10 +7259,18 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/mle_19_03_Gerboxes01-04/normal/lod0/mle_19_03_Gerboxes04.model</value>
+						<value>content/MilitaryEnvironment/mle_19_03_Gerboxes01-04/normal/lod0/mle_19_03_Gerboxes04_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
 						<value>0</value>
 					</property>
 				</config>
@@ -7023,10 +7282,18 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/hd_mle_SU_001_45mm/normal/lod0/hd_mle_SU_001_45mm_04.model</value>
+						<value>content/MilitaryEnvironment/hd_mle_SU_001_45mm/normal/lod0/hd_mle_SU_001_45mm_04_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
 						<value>0</value>
 					</property>
 				</config>
@@ -7038,11 +7305,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/hd_mle_UNI_046_Bag/normal/lod0/hd_mle_UNI_046_Bag_02.model</value>
+						<value>content/MilitaryEnvironment/hd_mle_UNI_046_Bag/normal/lod0/hd_mle_UNI_046_Bag_02_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
 					</property>
 				</config>
 			</component>
@@ -7053,10 +7328,18 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/hd_mle_SU_001_45mm/normal/lod0/hd_mle_SU_001_45mm_04.model</value>
+						<value>content/MilitaryEnvironment/hd_mle_SU_001_45mm/normal/lod0/hd_mle_SU_001_45mm_04_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
 						<value>0</value>
 					</property>
 				</config>
@@ -7068,10 +7351,18 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/hd_mle_SU_001_45mm/normal/lod0/hd_mle_SU_001_45mm_04.model</value>
+						<value>content/MilitaryEnvironment/hd_mle_SU_001_45mm/normal/lod0/hd_mle_SU_001_45mm_04_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
 						<value>0</value>
 					</property>
 				</config>
@@ -7083,11 +7374,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/mle_19_03_Gerboxes01-04/normal/lod0/mle_19_03_Gerboxes03.model</value>
+						<value>content/MilitaryEnvironment/mle_19_03_Gerboxes01-04/normal/lod0/mle_19_03_Gerboxes03_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
 					</property>
 				</config>
 			</component>
@@ -7098,10 +7397,18 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/hd_mle_SU_001_45mm/normal/lod0/hd_mle_SU_001_45mm_04.model</value>
+						<value>content/MilitaryEnvironment/hd_mle_SU_001_45mm/normal/lod0/hd_mle_SU_001_45mm_04_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
 						<value>0</value>
 					</property>
 				</config>
@@ -7113,11 +7420,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/mle_19_03_Gerboxes01-04/normal/lod0/mle_19_03_Gerboxes03.model</value>
+						<value>content/MilitaryEnvironment/mle_19_03_Gerboxes01-04/normal/lod0/mle_19_03_Gerboxes03_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
 					</property>
 				</config>
 			</component>
@@ -7128,10 +7443,18 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/hd_mle_SU_001_45mm/normal/lod0/hd_mle_SU_001_45mm_04.model</value>
+						<value>content/MilitaryEnvironment/hd_mle_SU_001_45mm/normal/lod0/hd_mle_SU_001_45mm_04_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
 						<value>0</value>
 					</property>
 				</config>
@@ -7143,11 +7466,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Environment/hd_env_UNI_632_DoraEnv/normal/lod0/hd_env_UNI_632_DoraEnv_02.model</value>
+						<value>content/Environment/hd_env_UNI_632_DoraEnv/normal/lod0/hd_env_UNI_632_DoraEnv_02_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
 					</property>
 				</config>
 			</component>
@@ -7158,11 +7489,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/mle_19_03_Gerboxes01-04/normal/lod0/mle_19_03_Gerboxes03.model</value>
+						<value>content/MilitaryEnvironment/mle_19_03_Gerboxes01-04/normal/lod0/mle_19_03_Gerboxes03_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
 					</property>
 				</config>
 			</component>
@@ -7173,11 +7512,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/mle_19_03_Gerboxes01-04/normal/lod0/mle_19_03_Gerboxes03.model</value>
+						<value>content/MilitaryEnvironment/mle_19_03_Gerboxes01-04/normal/lod0/mle_19_03_Gerboxes03_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
 					</property>
 				</config>
 			</component>
@@ -7194,6 +7541,14 @@
 						<name>Cast Shadows</name>
 						<value>0</value>
 					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
+					</property>
 				</config>
 			</component>
 			<component>
@@ -7203,10 +7558,18 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/hd_mle_SU_001_45mm/normal/lod0/hd_mle_SU_001_45mm_04.model</value>
+						<value>content/MilitaryEnvironment/hd_mle_SU_001_45mm/normal/lod0/hd_mle_SU_001_45mm_04_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
 						<value>0</value>
 					</property>
 				</config>
@@ -7218,11 +7581,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/hd_mle_UNI_046_Bag/normal/lod0/hd_mle_UNI_046_Bag_01.model</value>
+						<value>content/MilitaryEnvironment/hd_mle_UNI_046_Bag/normal/lod0/hd_mle_UNI_046_Bag_01_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
 					</property>
 				</config>
 			</component>
@@ -7233,10 +7604,18 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/hd_mle_UNI_046_Bag/normal/lod0/hd_mle_UNI_046_Bag_01.model</value>
+						<value>content/MilitaryEnvironment/hd_mle_UNI_046_Bag/normal/lod0/hd_mle_UNI_046_Bag_01_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
 						<value>0</value>
 					</property>
 				</config>
@@ -7248,10 +7627,18 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/hd_mle_SU_001_45mm/normal/lod0/hd_mle_SU_001_45mm_04.model</value>
+						<value>content/MilitaryEnvironment/hd_mle_SU_001_45mm/normal/lod0/hd_mle_SU_001_45mm_04_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
 						<value>0</value>
 					</property>
 				</config>
@@ -7263,11 +7650,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Environment/hd_env_UNI_632_DoraEnv/normal/lod0/hd_env_UNI_632_DoraEnv_02.model</value>
+						<value>content/Environment/hd_env_UNI_632_DoraEnv/normal/lod0/hd_env_UNI_632_DoraEnv_02_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
 					</property>
 				</config>
 			</component>
@@ -7278,11 +7673,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Environment/hd_env_UNI_632_DoraEnv/normal/lod0/hd_env_UNI_632_DoraEnv_02.model</value>
+						<value>content/Environment/hd_env_UNI_632_DoraEnv/normal/lod0/hd_env_UNI_632_DoraEnv_02_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
 					</property>
 				</config>
 			</component>
@@ -7293,10 +7696,18 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/hd_mle_SU_001_45mm/normal/lod0/hd_mle_SU_001_45mm_04.model</value>
+						<value>content/MilitaryEnvironment/hd_mle_SU_001_45mm/normal/lod0/hd_mle_SU_001_45mm_04_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
 						<value>0</value>
 					</property>
 				</config>
@@ -7308,11 +7719,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Environment/hd_env_UNI_632_DoraEnv/normal/lod0/hd_env_UNI_632_DoraEnv_02.model</value>
+						<value>content/Environment/hd_env_UNI_632_DoraEnv/normal/lod0/hd_env_UNI_632_DoraEnv_02_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
 					</property>
 				</config>
 			</component>
@@ -7323,10 +7742,18 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/hd_mle_SU_001_45mm/normal/lod0/hd_mle_SU_001_45mm_04.model</value>
+						<value>content/MilitaryEnvironment/hd_mle_SU_001_45mm/normal/lod0/hd_mle_SU_001_45mm_04_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
 						<value>0</value>
 					</property>
 				</config>
@@ -7338,11 +7765,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Environment/hd_env_UNI_632_DoraEnv/normal/lod0/hd_env_UNI_632_DoraEnv_02.model</value>
+						<value>content/Environment/hd_env_UNI_632_DoraEnv/normal/lod0/hd_env_UNI_632_DoraEnv_02_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
 					</property>
 				</config>
 			</component>
@@ -7353,11 +7788,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/mle_19_03_Gerboxes01-04/normal/lod0/mle_19_03_Gerboxes03.model</value>
+						<value>content/MilitaryEnvironment/mle_19_03_Gerboxes01-04/normal/lod0/mle_19_03_Gerboxes03_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
 					</property>
 				</config>
 			</component>
@@ -7368,11 +7811,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/mle_19_03_Gerboxes01-04/normal/lod0/mle_19_03_Gerboxes03.model</value>
+						<value>content/MilitaryEnvironment/mle_19_03_Gerboxes01-04/normal/lod0/mle_19_03_Gerboxes03_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
 					</property>
 				</config>
 			</component>
@@ -7383,10 +7834,18 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/mle_19_03_Gerboxes01-04/normal/lod0/mle_19_03_Gerboxes04.model</value>
+						<value>content/MilitaryEnvironment/mle_19_03_Gerboxes01-04/normal/lod0/mle_19_03_Gerboxes04_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
 						<value>0</value>
 					</property>
 				</config>
@@ -7398,11 +7857,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/mle_19_03_Gerboxes01-04/normal/lod0/mle_19_03_Gerboxes03.model</value>
+						<value>content/MilitaryEnvironment/mle_19_03_Gerboxes01-04/normal/lod0/mle_19_03_Gerboxes03_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
 					</property>
 				</config>
 			</component>
@@ -7413,11 +7880,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Environment/hd_env_UNI_632_DoraEnv/normal/lod0/hd_env_UNI_632_DoraEnv_02.model</value>
+						<value>content/Environment/hd_env_UNI_632_DoraEnv/normal/lod0/hd_env_UNI_632_DoraEnv_02_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
 					</property>
 				</config>
 			</component>
@@ -7428,11 +7903,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/mle_19_03_Gerboxes01-04/normal/lod0/mle_19_03_Gerboxes04.model</value>
+						<value>content/MilitaryEnvironment/mle_19_03_Gerboxes01-04/normal/lod0/mle_19_03_Gerboxes04_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
 					</property>
 				</config>
 			</component>
@@ -7443,10 +7926,18 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/mle_19_03_Gerboxes01-04/normal/lod0/mle_19_03_Gerboxes03.model</value>
+						<value>content/MilitaryEnvironment/mle_19_03_Gerboxes01-04/normal/lod0/mle_19_03_Gerboxes03_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
 						<value>0</value>
 					</property>
 				</config>
@@ -7458,10 +7949,18 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/mle_19_03_Gerboxes01-04/normal/lod0/mle_19_03_Gerboxes04.model</value>
+						<value>content/MilitaryEnvironment/mle_19_03_Gerboxes01-04/normal/lod0/mle_19_03_Gerboxes04_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
 						<value>0</value>
 					</property>
 				</config>
@@ -7473,11 +7972,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Environment/hd_env_UNI_632_DoraEnv/normal/lod0/hd_env_UNI_632_DoraEnv_04.model</value>
+						<value>content/Environment/hd_env_UNI_632_DoraEnv/normal/lod0/hd_env_UNI_632_DoraEnv_04_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
 					</property>
 				</config>
 			</component>
@@ -7488,11 +7995,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/hd_mle_UNI_046_Bag/normal/lod0/hd_mle_UNI_046_Bag_01.model</value>
+						<value>content/MilitaryEnvironment/hd_mle_UNI_046_Bag/normal/lod0/hd_mle_UNI_046_Bag_01_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
 					</property>
 				</config>
 			</component>
@@ -7503,11 +8018,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/hd_mle_UNI_046_Bag/normal/lod0/hd_mle_UNI_046_Bag_01.model</value>
+						<value>content/MilitaryEnvironment/hd_mle_UNI_046_Bag/normal/lod0/hd_mle_UNI_046_Bag_01_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
 					</property>
 				</config>
 			</component>
@@ -7518,10 +8041,18 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/mle_19_03_Gerboxes01-04/normal/lod0/mle_19_03_Gerboxes04.model</value>
+						<value>content/MilitaryEnvironment/mle_19_03_Gerboxes01-04/normal/lod0/mle_19_03_Gerboxes04_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
 						<value>0</value>
 					</property>
 				</config>
@@ -7533,10 +8064,18 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/mle_19_03_Gerboxes01-04/normal/lod0/mle_19_03_Gerboxes04.model</value>
+						<value>content/MilitaryEnvironment/mle_19_03_Gerboxes01-04/normal/lod0/mle_19_03_Gerboxes04_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
 						<value>0</value>
 					</property>
 				</config>
@@ -7548,10 +8087,18 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/hd_mle_UNI_046_Bag/normal/lod0/hd_mle_UNI_046_Bag_01.model</value>
+						<value>content/MilitaryEnvironment/hd_mle_UNI_046_Bag/normal/lod0/hd_mle_UNI_046_Bag_01_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
 						<value>0</value>
 					</property>
 				</config>
@@ -7563,10 +8110,18 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/mle_19_03_Gerboxes01-04/normal/lod0/mle_19_03_Gerboxes03.model</value>
+						<value>content/MilitaryEnvironment/mle_19_03_Gerboxes01-04/normal/lod0/mle_19_03_Gerboxes03_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
 						<value>0</value>
 					</property>
 				</config>
@@ -7578,11 +8133,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/mle_19_03_Gerboxes01-04/normal/lod0/mle_19_03_Gerboxes04.model</value>
+						<value>content/MilitaryEnvironment/mle_19_03_Gerboxes01-04/normal/lod0/mle_19_03_Gerboxes04_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
 					</property>
 				</config>
 			</component>
@@ -7593,11 +8156,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Environment/hd_env_UNI_632_DoraEnv/normal/lod0/hd_env_UNI_632_DoraEnv_02.model</value>
+						<value>content/Environment/hd_env_UNI_632_DoraEnv/normal/lod0/hd_env_UNI_632_DoraEnv_02_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
 					</property>
 				</config>
 			</component>
@@ -7608,11 +8179,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Environment/hd_env_UNI_632_DoraEnv/normal/lod0/hd_env_UNI_632_DoraEnv_02.model</value>
+						<value>content/Environment/hd_env_UNI_632_DoraEnv/normal/lod0/hd_env_UNI_632_DoraEnv_02_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
 					</property>
 				</config>
 			</component>
@@ -7623,11 +8202,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Environment/hd_env_UNI_632_DoraEnv/normal/lod0/hd_env_UNI_632_DoraEnv_02.model</value>
+						<value>content/Environment/hd_env_UNI_632_DoraEnv/normal/lod0/hd_env_UNI_632_DoraEnv_02_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
 					</property>
 				</config>
 			</component>
@@ -7638,11 +8225,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Environment/hd_env_UNI_632_DoraEnv/normal/lod0/hd_env_UNI_632_DoraEnv_02.model</value>
+						<value>content/Environment/hd_env_UNI_632_DoraEnv/normal/lod0/hd_env_UNI_632_DoraEnv_02_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
 					</property>
 				</config>
 			</component>
@@ -7653,11 +8248,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Environment/hd_env_UNI_632_DoraEnv/normal/lod0/hd_env_UNI_632_DoraEnv_02.model</value>
+						<value>content/Environment/hd_env_UNI_632_DoraEnv/normal/lod0/hd_env_UNI_632_DoraEnv_02_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
 					</property>
 				</config>
 			</component>
@@ -7668,11 +8271,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Environment/hd_env_UNI_632_DoraEnv/normal/lod0/hd_env_UNI_632_DoraEnv_02.model</value>
+						<value>content/Environment/hd_env_UNI_632_DoraEnv/normal/lod0/hd_env_UNI_632_DoraEnv_02_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
 					</property>
 				</config>
 			</component>
@@ -7683,11 +8294,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/Environment/hd_env_UNI_632_DoraEnv/normal/lod0/hd_env_UNI_632_DoraEnv_02.model</value>
+						<value>content/Environment/hd_env_UNI_632_DoraEnv/normal/lod0/hd_env_UNI_632_DoraEnv_02_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
 					</property>
 				</config>
 			</component>
@@ -7704,6 +8323,14 @@
 						<name>Cast Shadows</name>
 						<value>0</value>
 					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
+					</property>
 				</config>
 			</component>
 			<component>
@@ -7713,10 +8340,18 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/hd_mle_SU_001_45mm/normal/lod0/hd_mle_SU_001_45mm_04.model</value>
+						<value>content/MilitaryEnvironment/hd_mle_SU_001_45mm/normal/lod0/hd_mle_SU_001_45mm_04_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
 						<value>0</value>
 					</property>
 				</config>
@@ -7728,25 +8363,18 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/hd_mle_SU_001_45mm/normal/lod0/hd_mle_SU_001_45mm_04.model</value>
+						<value>content/MilitaryEnvironment/hd_mle_SU_001_45mm/normal/lod0/hd_mle_SU_001_45mm_04_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>0</value>
 					</property>
-				</config>
-			</component>
-			<component>
-				<UUID>209e1912-c64f-37ca-9c80-ebf1aa88da85</UUID>
-				<flags>3</flags>
-				<config>
 					<property>
-						<name>Model name</name>
-						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/hd_mle_SU_001_45mm/normal/lod0/hd_mle_SU_001_45mm_02.model</value>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
 					</property>
 					<property>
-						<name>Cast Shadows</name>
+						<name>decorType</name>
 						<value>0</value>
 					</property>
 				</config>
@@ -7758,10 +8386,18 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/mle_19_03_Gerboxes01-04/normal/lod0/mle_19_03_Gerboxes03.model</value>
+						<value>content/MilitaryEnvironment/mle_19_03_Gerboxes01-04/normal/lod0/mle_19_03_Gerboxes03_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
 						<value>0</value>
 					</property>
 				</config>
@@ -7773,10 +8409,18 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/mle_19_03_Gerboxes01-04/normal/lod0/mle_19_03_Gerboxes03.model</value>
+						<value>content/MilitaryEnvironment/mle_19_03_Gerboxes01-04/normal/lod0/mle_19_03_Gerboxes03_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
 						<value>0</value>
 					</property>
 				</config>
@@ -7788,11 +8432,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/mle_19_03_Gerboxes01-04/normal/lod0/mle_19_03_Gerboxes03.model</value>
+						<value>content/MilitaryEnvironment/mle_19_03_Gerboxes01-04/normal/lod0/mle_19_03_Gerboxes03_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
 					</property>
 				</config>
 			</component>
@@ -7803,11 +8455,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/mle_19_03_Gerboxes01-04/normal/lod0/mle_19_03_Gerboxes04.model</value>
+						<value>content/MilitaryEnvironment/mle_19_03_Gerboxes01-04/normal/lod0/mle_19_03_Gerboxes04_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
 					</property>
 				</config>
 			</component>
@@ -7818,11 +8478,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/mle_19_03_Gerboxes01-04/normal/lod0/mle_19_03_Gerboxes03.model</value>
+						<value>content/MilitaryEnvironment/mle_19_03_Gerboxes01-04/normal/lod0/mle_19_03_Gerboxes03_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
 					</property>
 				</config>
 			</component>
@@ -7833,11 +8501,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/mle_19_03_Gerboxes01-04/normal/lod0/mle_19_03_Gerboxes03.model</value>
+						<value>content/MilitaryEnvironment/mle_19_03_Gerboxes01-04/normal/lod0/mle_19_03_Gerboxes03_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
 					</property>
 				</config>
 			</component>
@@ -7848,10 +8524,18 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/mle_19_03_Gerboxes01-04/normal/lod0/mle_19_03_Gerboxes03.model</value>
+						<value>content/MilitaryEnvironment/mle_19_03_Gerboxes01-04/normal/lod0/mle_19_03_Gerboxes03_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
 						<value>0</value>
 					</property>
 				</config>
@@ -7863,10 +8547,18 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/mle_19_03_Gerboxes01-04/normal/lod0/mle_19_03_Gerboxes03.model</value>
+						<value>content/MilitaryEnvironment/mle_19_03_Gerboxes01-04/normal/lod0/mle_19_03_Gerboxes03_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
 						<value>0</value>
 					</property>
 				</config>
@@ -7878,10 +8570,18 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/mle_19_03_Gerboxes01-04/normal/lod0/mle_19_03_Gerboxes03.model</value>
+						<value>content/MilitaryEnvironment/mle_19_03_Gerboxes01-04/normal/lod0/mle_19_03_Gerboxes03_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
 						<value>0</value>
 					</property>
 				</config>
@@ -7893,10 +8593,18 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/mle_19_03_Gerboxes01-04/normal/lod0/mle_19_03_Gerboxes04.model</value>
+						<value>content/MilitaryEnvironment/mle_19_03_Gerboxes01-04/normal/lod0/mle_19_03_Gerboxes04_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
 						<value>0</value>
 					</property>
 				</config>
@@ -7908,10 +8616,18 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/mle_19_03_Gerboxes01-04/normal/lod0/mle_19_03_Gerboxes04.model</value>
+						<value>content/MilitaryEnvironment/mle_19_03_Gerboxes01-04/normal/lod0/mle_19_03_Gerboxes04_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
 						<value>0</value>
 					</property>
 				</config>
@@ -7923,10 +8639,18 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/mle_19_03_Gerboxes01-04/normal/lod0/mle_19_03_Gerboxes03.model</value>
+						<value>content/MilitaryEnvironment/mle_19_03_Gerboxes01-04/normal/lod0/mle_19_03_Gerboxes03_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
 						<value>0</value>
 					</property>
 				</config>
@@ -7944,6 +8668,14 @@
 						<name>Cast Shadows</name>
 						<value>1</value>
 					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
+					</property>
 				</config>
 			</component>
 			<component>
@@ -7958,6 +8690,14 @@
 					<property>
 						<name>Cast Shadows</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
 					</property>
 				</config>
 			</component>
@@ -7974,6 +8714,14 @@
 						<name>Cast Shadows</name>
 						<value>1</value>
 					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
+					</property>
 				</config>
 			</component>
 			<component>
@@ -7989,6 +8737,14 @@
 						<name>Cast Shadows</name>
 						<value>1</value>
 					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
+					</property>
 				</config>
 			</component>
 			<component>
@@ -7998,11 +8754,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/hd_mle_ASJP_007_Searchlight/normal/lod0/hd_mle_ASJP_007_Searchlight.model</value>
+						<value>content/MilitaryEnvironment/hd_mle_ASJP_007_Searchlight/normal/lod0/hd_mle_ASJP_007_Searchlight_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
 					</property>
 				</config>
 			</component>
@@ -8013,10 +8777,18 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/mle_19_03_Gerboxes01-04/normal/lod0/mle_19_03_Gerboxes04.model</value>
+						<value>content/MilitaryEnvironment/mle_19_03_Gerboxes01-04/normal/lod0/mle_19_03_Gerboxes04_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
 						<value>0</value>
 					</property>
 				</config>
@@ -8028,11 +8800,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/mle_19_03_Gerboxes01-04/normal/lod0/mle_19_03_Gerboxes03.model</value>
+						<value>content/MilitaryEnvironment/mle_19_03_Gerboxes01-04/normal/lod0/mle_19_03_Gerboxes03_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
 					</property>
 				</config>
 			</component>
@@ -8043,11 +8823,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/mle_19_03_Gerboxes01-04/normal/lod0/mle_19_03_Gerboxes03.model</value>
+						<value>content/MilitaryEnvironment/mle_19_03_Gerboxes01-04/normal/lod0/mle_19_03_Gerboxes03_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
 					</property>
 				</config>
 			</component>
@@ -8058,11 +8846,19 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/MilitaryEnvironment/mle_19_03_Gerboxes01-04/normal/lod0/mle_19_03_Gerboxes03.model</value>
+						<value>content/MilitaryEnvironment/mle_19_03_Gerboxes01-04/normal/lod0/mle_19_03_Gerboxes03_scenario.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
+						<value>0</value>
 					</property>
 				</config>
 			</component>
@@ -8429,10 +9225,6 @@
 						<link>dcdd4785-03ef-411e-a413-1d33f64a4477</link>
 					</property>
 					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
-					</property>
-					<property>
 						<name>receiver</name>
 						<link>7eaaba3f-b2f1-490e-90bb-f4f2db91d0f6</link>
 					</property>
@@ -8445,10 +9237,6 @@
 					<property>
 						<name>colliders</name>
 						<link>dcdd4785-03ef-411e-a413-1d33f64a4477</link>
-					</property>
-					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
 					</property>
 					<property>
 						<name>receiver</name>

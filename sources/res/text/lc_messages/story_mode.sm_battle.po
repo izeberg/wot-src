@@ -362,21 +362,6 @@ msgstr "Capturing enemy vehicle"
 msgid "prebattle/mission/stage/1"
 msgstr "Operation 1"
 
-msgid "prebattle/mission/stage/1002"
-msgstr "Regular"
-
-msgid "prebattle/mission/stage/1003"
-msgstr "Rigorous Covert Op"
-
-msgid "prebattle/mission/stage/1004"
-msgstr "Rigorous Minefield"
-
-msgid "prebattle/mission/stage/1005"
-msgstr "Regular"
-
-msgid "prebattle/mission/stage/1006"
-msgstr "Rigorous"
-
 msgid "prebattle/mission/stage/2"
 msgstr "Operation 2"
 
@@ -396,64 +381,25 @@ msgid "prebattle/mission/stage/7"
 msgstr "Operation 7"
 
 msgid "prebattle/mission/task/1"
-msgstr ""
-"{whiteSpanish_Start}Mission:{whiteSpanish_End} Attack the town and destroy "
-"all enemy vehicles."
-
-msgid "prebattle/mission/task/1002"
-msgstr ""
-"{whiteSpanish_Start}Deliver the ceasefire order to your "
-"allies.{whiteSpanish_End}"
-
-msgid "prebattle/mission/task/1003"
-msgstr ""
-"{whiteSpanish_Start}Check the enemy camps and collect minefield map "
-"pieces.{whiteSpanish_End}"
-
-msgid "prebattle/mission/task/1004"
-msgstr ""
-"{whiteSpanish_Start}Deliver the ceasefire order to your "
-"allies.{whiteSpanish_End}"
-
-msgid "prebattle/mission/task/1005"
-msgstr ""
-"{whiteSpanish_Start}Reach the command center and stop the missile "
-"launch.{whiteSpanish_End}"
-
-msgid "prebattle/mission/task/1006"
-msgstr ""
-"{whiteSpanish_Start}Reach the command center and stop the missile "
-"launch.{whiteSpanish_End}"
+msgstr "Mission: Attack the town and destroy all enemy vehicles."
 
 msgid "prebattle/mission/task/2"
-msgstr ""
-"{whiteSpanish_Start}Mission:{whiteSpanish_End} Attack the town and destroy "
-"all enemy vehicles."
+msgstr "Mission: Attack the town and destroy all enemy vehicles."
 
 msgid "prebattle/mission/task/3"
-msgstr ""
-"{whiteSpanish_Start}Attack the town and destroy all enemy "
-"vehicles.{whiteSpanish_End}"
+msgstr "Attack the town and destroy all enemy vehicles."
 
 msgid "prebattle/mission/task/4"
-msgstr ""
-"{whiteSpanish_Start}Find and destroy the enemy "
-"Wunderwaffe.{whiteSpanish_End} "
+msgstr "Find and destroy the enemy Wunderwaffe."
 
 msgid "prebattle/mission/task/5"
-msgstr ""
-"{whiteSpanish_Start}Break through, destroy the coastal guns, and capture the"
-" bridgehead.{whiteSpanish_End}"
+msgstr "Break through, destroy the coastal guns, and capture the bridgehead."
 
 msgid "prebattle/mission/task/6"
-msgstr ""
-"{whiteSpanish_Start}Deliver the ceasefire order to your "
-"allies.{whiteSpanish_End}"
+msgstr "Deliver the ceasefire order to your allies."
 
 msgid "prebattle/mission/task/7"
-msgstr ""
-"{whiteSpanish_Start}Reach the command center and stop the missile "
-"launch.{whiteSpanish_End}"
+msgstr "Reach the command center and stop the missile launch."
 
 msgid "prebattle/mission/text/1"
 msgstr ""
@@ -462,50 +408,6 @@ msgstr ""
 "Follow us — and avoid the dragon's teeth. They've got a bunch of rows of those concrete fangs in that field. But that's okay. We'll come through. All you gotta do is listen to me and execute my orders quickly and precisely. MacLeod and I will cover you.\n"
 "\n"
 "And don't pay his jokes any mind. Everyone has their own unique coping mechanisms… Forward!\""
-
-msgid "prebattle/mission/text/1002"
-msgstr ""
-"Captain Smith: \"Listen up. Germany signed the surrender papers hours ago. The war ends tomorrow. But our boys in the mountains lost radio contact—they don't know it's over. They're set to attack this bloody fortress at dawn, and the Germans inside don't know about the surrender either. It'll be a pointless slaughter. \n"
-"\n"
-"We're the only ones who can stop it. Our mission: Sneak through enemy lines and deliver the ceasefire order. It's a suicide run, but every life we save is worth it. \n"
-"\n"
-"We've got a captured German radioman with us—he knows the terrain and he's got as much reason as we do to stop this bloodshed. \n"
-"\n"
-"Roll out.\""
-
-msgid "prebattle/mission/text/1003"
-msgstr ""
-"Captain Dubois: \"The entire frontline is mined. We can't get through to our forces.\"\n"
-"\n"
-"Gefreiter Keller: \"These marks also show command posts. They have fragments of the passage map. For our...German scouts. We should look there.\"\n"
-"\n"
-"Captain Smith: \"So we're collecting map pieces. Let's move.\""
-
-msgid "prebattle/mission/text/1004"
-msgstr ""
-"Captain Murphy: \"Man, what a maze! I would call it the MINE-otaur's labyrinth! Haha. Get it? No? Come on, that was gold!\"\n"
-"\n"
-"Captain Dubois: \"Just sneak through the minefield and I can finally get some...peace and quiet.\"\n"
-"\n"
-"Murphy: \"Tired of loading shells, Dubois?\"\n"
-"\n"
-"Dubois: \"That too.\""
-
-msgid "prebattle/mission/text/1005"
-msgstr ""
-"Leni Scharf: \"The situation is critical. We've lost contact with our missile base in the Norwegian Sea. The reconnaissance flight never returned, and the initial tank landing force was wiped out by an unknown enemy.\n"
-"\n"
-"Intelligence suggests they're preparing to launch a ballistic missile. We don't know the target, but in this political climate, a single launch could trigger a global conflict.\n"
-"\n"
-"Feels like the old days, doesn't it? Just another impossible mission behind enemy lines. Roll out!\""
-
-msgid "prebattle/mission/text/1006"
-msgstr ""
-"Leni Scharf: \"The situation is critical. We've lost contact with our missile base in the Norwegian Sea. The reconnaissance flight never returned, and the initial tank landing force was wiped out by an unknown enemy.\n"
-"\n"
-"Intelligence suggests they're preparing to launch a ballistic missile. We don't know the target, but in this political climate, a single launch could trigger a global conflict.\n"
-"\n"
-"Feels like the old days, doesn't it? Just another impossible mission behind enemy lines. Roll out!\""
 
 msgid "prebattle/mission/text/2"
 msgstr ""
@@ -563,21 +465,6 @@ msgstr ""
 
 msgid "prebattle/mission/title/1"
 msgstr "Steel Avalanche"
-
-msgid "prebattle/mission/title/1002"
-msgstr "Operation Postman"
-
-msgid "prebattle/mission/title/1003"
-msgstr "Operation Postman"
-
-msgid "prebattle/mission/title/1004"
-msgstr "Operation Postman"
-
-msgid "prebattle/mission/title/1005"
-msgstr "Operation Boiling Point"
-
-msgid "prebattle/mission/title/1006"
-msgstr "Operation Boiling Point"
 
 msgid "prebattle/mission/title/2"
 msgstr "Trapper"

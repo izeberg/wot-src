@@ -1,18 +1,18 @@
 from __future__ import absolute_import
 import random, BigWorld, SoundGroups
 from adisp import adisp_process
+from arena_bonus_type_caps import ARENA_BONUS_TYPE_CAPS
 from chat_shared import SYS_MESSAGE_TYPE
 from frameworks.wulf import WindowLayer
-from gui.ClientUpdateManager import g_clientUpdateManager
 from gui.Scaleform.lobby_entry import getLobbyStateMachine
+from gui.hangar_cameras.hangar_camera_common import CameraRelatedEvents
 from gui.impl.lobby.pet_system.states import PetEventFullscreenWindowState, PetStorageObserver
 from gui.pet_system.processor import FirstClickSynergyProcessor, PetEventOpenProcessor, PetPurchaseProcessor
 from gui.pet_system.pet_animation_helper import PetPrefabProxy, StoragePrefabProxy
 from gui.shared import EVENT_BUS_SCOPE, events, g_eventBus
 from gui.pet_system.requester import INVALID_EVENT_ID, INVALID_PET_ID
 from messenger.proto.events import g_messengerEvents
-from new_year.ny_constants import GuestsQuestsTokens
-from skeletons.gui.game_control import IFadingController, IHangarLoadingController
+from skeletons.gui.game_control import IFadingController, IHangarLoadingController, IHangarGuiController
 from skeletons.gui.shared.utils import IHangarSpace
 from gui.pet_system.constants import PS_PDATA_KEYS
 from skeletons.gui.shared import IItemsCache
@@ -26,7 +26,6 @@ from helpers import dependency
 from Event import Event, EventManager
 from gui.prb_control.entities.listener import IGlobalListener
 from skeletons.gui.pet_system import IPetSystemController
-from skeletons.new_year import INewYearController, IFriendServiceController
 from wg_async import wg_async
 
 class PetSystemController(IGlobalListener, IPetSystemController):
@@ -34,8 +33,7 @@ class PetSystemController(IGlobalListener, IPetSystemController):
     lobbyContext = dependency.descriptor(ILobbyContext)
     hangarSpace = dependency.descriptor(IHangarSpace)
     __hangarLoadingController = dependency.descriptor(IHangarLoadingController)
-    __nyController = dependency.descriptor(INewYearController)
-    __friendService = dependency.descriptor(IFriendServiceController)
+    __hangarGuiCtrl = dependency.descriptor(IHangarGuiController)
     fadeManager = dependency.descriptor(IFadingController)
 
     def __init__(self):
@@ -53,7 +51,7 @@ class PetSystemController(IGlobalListener, IPetSystemController):
         self.lsmObserver = None
         self.__petInHangar = None
         self.__medalReceived = False
-        self.__isPetObjectPresenterOpen = False
+        self.__isPetObjectPresenterOpen = 0
         return
 
     def init(self):
@@ -77,6 +75,8 @@ class PetSystemController(IGlobalListener, IPetSystemController):
 
     @property
     def isInStorage(self):
+        if not self.lsmObserver:
+            return False
         return self.lsmObserver.currentState
 
     @property
@@ -90,7 +90,7 @@ class PetSystemController(IGlobalListener, IPetSystemController):
 
     @property
     def canInteractInHangar(self):
-        return self.__isPetObjectPresenterOpen
+        return bool(self.__isPetObjectPresenterOpen)
 
     @classmethod
     def getSystemConfig(cls):
@@ -219,7 +219,7 @@ class PetSystemController(IGlobalListener, IPetSystemController):
         return self.getPetsConfig().getAvailableBonuses(unlockedPetIDs)
 
     def getPetIDInHangar(self, reset=False):
-        if not self.isEnabled or self.__friendService.isInFriendHangar:
+        if not self.isEnabled:
             self.__petInHangar = None
             return
         else:
@@ -234,7 +234,7 @@ class PetSystemController(IGlobalListener, IPetSystemController):
         return self.isEnabled and self.__petInHangar not in self.getUnlockedPets()
 
     def haveActivePromotion(self):
-        return self.isEnabled and self.getPetsPromoConfig().isEnabled() and self.__nyController.isDogTokenReceived()
+        return self.isEnabled and self.getPetsPromoConfig().isEnabled()
 
     def getUnlockedAndPromoPets(self):
         if not self.isEnabled:
@@ -273,6 +273,9 @@ class PetSystemController(IGlobalListener, IPetSystemController):
     def onLobbyInited(self, event):
         self.__addListeners()
 
+    def checkBonusCapsForPetBonus(self):
+        return self.__hangarGuiCtrl.dynamicEconomics.checkCurrentBonusCaps(ARENA_BONUS_TYPE_CAPS.PET_SYSTEM_BONUSES)
+
     def __showMedalAnimation(self, event):
         if not self.isEnabled:
             return
@@ -287,7 +290,7 @@ class PetSystemController(IGlobalListener, IPetSystemController):
 
     def onAccountBecomeNonPlayer(self):
         self.__removeListeners()
-        self.__isPetObjectPresenterOpen = False
+        self.__isPetObjectPresenterOpen = 0
         g_eventBus.removeListener(events.PetSystemEvent.PET_OBJECT_PRESENTER_LOADING, self.__onPetObjectPresenterLoading, scope=EVENT_BUS_SCOPE.LOBBY)
         g_eventBus.removeListener(events.PetSystemEvent.PET_OBJECT_PRESENTER_CLOSING, self.__onPetObjectPresenterClosing, scope=EVENT_BUS_SCOPE.LOBBY)
 
@@ -321,11 +324,9 @@ class PetSystemController(IGlobalListener, IPetSystemController):
         self.lsmObserver = PetStorageObserver()
         g_eventBus.addListener(events.PetSystemEvent.MEDAL_ANIMATION_SHOW, self.__showMedalAnimation, scope=EVENT_BUS_SCOPE.LOBBY)
         g_eventBus.addListener(events.PetObjectHoverEvent.HOVER_IN, self.__playSound, scope=EVENT_BUS_SCOPE.DEFAULT)
-        g_clientUpdateManager.addCallbacks({'tokens': self.__onTokensUpdate})
+        g_eventBus.addListener(CameraRelatedEvents.IDLE_CAMERA, self.__cameraIdle)
         lsm = getLobbyStateMachine()
         self.__hangarLoadingController.onHangarLoadedAfterLogin += self._onHangarLoadedAfterLogin
-        self.__friendService.onFriendHangarEnter += self.__onFriendHangarUpdated
-        self.__friendService.onFriendHangarExit += self.__onFriendHangarUpdated
         if lsm:
             lsm.connect(self.lsmObserver)
             self.lsmObserver.onStorageEntered += self.onStorageEntered
@@ -352,9 +353,7 @@ class PetSystemController(IGlobalListener, IPetSystemController):
         self.__hangarLoadingController.onHangarLoadedAfterLogin -= self._onHangarLoadedAfterLogin
         g_eventBus.removeListener(events.PetSystemEvent.MEDAL_ANIMATION_SHOW, self.__showMedalAnimation, scope=EVENT_BUS_SCOPE.LOBBY)
         g_eventBus.removeListener(events.PetObjectHoverEvent.HOVER_IN, self.__playSound, scope=EVENT_BUS_SCOPE.DEFAULT)
-        g_clientUpdateManager.removeObjectCallbacks(self)
-        self.__friendService.onFriendHangarEnter -= self.__onFriendHangarUpdated
-        self.__friendService.onFriendHangarExit -= self.__onFriendHangarUpdated
+        g_eventBus.removeListener(CameraRelatedEvents.IDLE_CAMERA, self.__cameraIdle)
         lsm = getLobbyStateMachine()
         if lsm and self.lsmObserver:
             lsm.disconnect(self.lsmObserver)
@@ -370,7 +369,8 @@ class PetSystemController(IGlobalListener, IPetSystemController):
                 self.__petInHangar = None
                 self.__medalReceived = False
             elif PetPromoConsts.CONFIG_NAME in sysDiff:
-                self.__petInHangar = None
+                if sysDiff[PetPromoConsts.CONFIG_NAME].get(PetPromoConsts.IS_ENABLED, False):
+                    self.__petInHangar = None
             self.storageProxy.onServerSettingsChanged()
             self.petProxy.onServerSettingsChanged()
         return
@@ -413,11 +413,11 @@ class PetSystemController(IGlobalListener, IPetSystemController):
             return self.__petInHangar
 
     def __onPetObjectPresenterLoading(self, _):
-        self.__isPetObjectPresenterOpen = True
+        self.__isPetObjectPresenterOpen += 1
         self.onUpdateCanInteractInHangar(self.canInteractInHangar)
 
     def __onPetObjectPresenterClosing(self, _):
-        self.__isPetObjectPresenterOpen = False
+        self.__isPetObjectPresenterOpen -= 1
         self.onUpdateCanInteractInHangar(self.canInteractInHangar)
 
     def __playSound(self, event):
@@ -435,9 +435,6 @@ class PetSystemController(IGlobalListener, IPetSystemController):
             elif self.isPetInHangarPromoting():
                 SoundGroups.g_instance.playSound2D(PetSounds.HIGHLIGHT)
 
-    def __onTokensUpdate(self, tokens):
-        if GuestsQuestsTokens.TOKEN_DOG in tokens:
-            self.changePet(self.getPetIDInHangar())
-
-    def __onFriendHangarUpdated(self, *_):
-        self.changePet(self.getPetIDInHangar())
+    def __cameraIdle(self, event):
+        isAFKState = event.ctx['started']
+        self.petProxy.cameraIdle(isAFKState)

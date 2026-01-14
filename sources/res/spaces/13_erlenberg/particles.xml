@@ -78,10 +78,12 @@
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_gafF_001_FactoryFence_tile.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_hd_env410_RefuseBin.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle010_LittleBobbin1.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle016_BoxesHowitzer.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle019_GerBoxes4.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle_SU_003_He111_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle_SU_003_He111_03.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle_UNI_820_EightyEight_01.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mleAF_002_Radiolocator.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mleSU_05_02_45mm_2.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mleSU_05_03_Pak40_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mleSU_83_02_OpelBlitz_1.vfx</fn_effect_bin>
@@ -131,22 +133,16 @@
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_04.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_05.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/04_himmelsdorf_firesmoke.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/04_himmelsdorf_FireSmoke.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/04_himmelsdorf_firesmoke_2.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/04_himmelsdorf_firesmoke_2.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/04_himmelsdorf_smoke_big.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/04_himmelsdorf_smoke_big_2.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/04_himmelsdorf_smoke_big.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/04_himmelsdorf_smoke_big_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/101_dday_fire_small.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/101_dday_smoke_light_area.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/101_dday_smoke_very_small.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/13_erlenberg_fire.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/13_erlenberg_fire.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/13_erlenberg_roof_water_drop.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/13_erlenberg_roof_water_drop.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/34_redshire_water_foam_river.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/34_redshire_water_foam_river.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/water_garbage_fastriver.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/water_garbage_fastriver.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env007_SnagHeap3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env_112_11_AdvertisingCloset_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env_112_11_AdvertisingCloset_03.eff</fn_effect_bin>
@@ -203,10 +199,12 @@
 		<fn_effect_bin>particles/Environment/objects/inf_gafF_001_FactoryFence_tile.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_hd_env410_RefuseBin.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle010_LittleBobbin1.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_mle016_BoxesHowitzer.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle019_GerBoxes4.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle_SU_003_He111_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle_SU_003_He111_03.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle_UNI_820_EightyEight_01.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_mleAF_002_Radiolocator.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mleSU_05_02_45mm_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mleSU_05_03_Pak40_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mleSU_83_02_OpelBlitz_1.eff</fn_effect_bin>
@@ -340,10 +338,12 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_gafF_001_FactoryFence_tile.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_hd_env410_RefuseBin.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle010_LittleBobbin1.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle016_BoxesHowitzer.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle019_GerBoxes4.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle_SU_003_He111_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle_SU_003_He111_03.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle_UNI_820_EightyEight_01.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mleAF_002_Radiolocator.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mleSU_05_02_45mm_2.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mleSU_05_03_Pak40_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mleSU_83_02_OpelBlitz_1.vfx</fn_effect_bin>
@@ -393,22 +393,16 @@
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_04.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_05.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/04_himmelsdorf_firesmoke.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/04_himmelsdorf_FireSmoke.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/04_himmelsdorf_firesmoke_2.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/04_himmelsdorf_firesmoke_2.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/04_himmelsdorf_smoke_big.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/04_himmelsdorf_smoke_big_2.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/04_himmelsdorf_smoke_big.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/04_himmelsdorf_smoke_big_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/101_dday_fire_small.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/101_dday_smoke_light_area.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/101_dday_smoke_very_small.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/13_erlenberg_fire.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/13_erlenberg_fire.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/13_erlenberg_roof_water_drop.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/13_erlenberg_roof_water_drop.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/34_redshire_water_foam_river.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/34_redshire_water_foam_river.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/water_garbage_fastriver.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/water_garbage_fastriver.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env007_SnagHeap3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env_112_11_AdvertisingCloset_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env_112_11_AdvertisingCloset_03.eff</fn_effect_bin>
@@ -465,10 +459,12 @@
 		<fn_effect_bin>particles/Environment/objects/inf_gafF_001_FactoryFence_tile.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_hd_env410_RefuseBin.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle010_LittleBobbin1.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_mle016_BoxesHowitzer.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle019_GerBoxes4.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle_SU_003_He111_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle_SU_003_He111_03.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle_UNI_820_EightyEight_01.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_mleAF_002_Radiolocator.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mleSU_05_02_45mm_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mleSU_05_03_Pak40_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mleSU_83_02_OpelBlitz_1.eff</fn_effect_bin>

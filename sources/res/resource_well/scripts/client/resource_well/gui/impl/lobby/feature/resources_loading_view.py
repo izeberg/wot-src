@@ -1,4 +1,7 @@
+from __future__ import absolute_import, division
+from future.builtins import str
 import logging
+from future.utils import iteritems
 from adisp import adisp_process
 from frameworks.wulf import ViewSettings, WindowFlags, ViewStatus
 from gui.impl.auxiliary.vehicle_helper import fillVehicleInfo
@@ -31,10 +34,11 @@ class ResourcesLoadingView(ViewImpl):
     _COMMON_SOUND_SPACE = RESOURCE_WELL_SOUND_SPACE
     __resourceWell = dependency.descriptor(IResourceWellController)
 
-    def __init__(self, rewardID):
-        settings = ViewSettings(R.views.resource_well.lobby.feature.ResourcesLoadingView(), model=ResourcesLoadingViewModel())
+    def __init__(self, rewardID, stopRequesterInDestroy=True):
+        settings = ViewSettings(R.views.resource_well.mono.lobby.resources_loading_view(), model=ResourcesLoadingViewModel())
         super(ResourcesLoadingView, self).__init__(settings)
         self.__rewardID = rewardID
+        self.__stopRequesterInDestroy = stopRequesterInDestroy
         self.__rewardConfig = self.__resourceWell.config.getRewardConfig(rewardID)
         self.__resources = processResourcesConfig(self.__rewardConfig.resources)
         self.__tooltips = []
@@ -44,9 +48,9 @@ class ResourcesLoadingView(ViewImpl):
         return super(ResourcesLoadingView, self).getViewModel()
 
     def createToolTipContent(self, event, contentID):
-        if contentID == R.views.resource_well.lobby.feature.tooltips.ProgressTooltip():
+        if contentID == R.views.resource_well.mono.lobby.tooltips.progress_tooltip():
             return ProgressTooltip(progress=self.viewModel.getProgression(), diff=event.getArgument('progressDiff'))
-        if contentID == R.views.resource_well.lobby.feature.tooltips.MaxProgressTooltip():
+        if contentID == R.views.resource_well.mono.lobby.tooltips.max_progress_tooltip():
             return MaxProgressTooltip(currentValue=event.getArgument('currentValue'), maxValue=event.getArgument('maxValue'), resourceType=event.getArgument('type'))
         return super(ResourcesLoadingView, self).createToolTipContent(event, contentID)
 
@@ -71,7 +75,8 @@ class ResourcesLoadingView(ViewImpl):
         g_eventBus.handleEvent(events.ResourceWellLoadingViewEvent(events.ResourceWellLoadingViewEvent.LOAD), EVENT_BUS_SCOPE.LOBBY)
 
     def _finalize(self):
-        self.__resourceWell.stopNumberRequesters()
+        if self.__stopRequesterInDestroy:
+            self.__resourceWell.stopNumberRequesters()
         self.__rewardConfig = None
         self.__resources = None
         self.__tooltips = None
@@ -131,15 +136,15 @@ class ResourcesLoadingView(ViewImpl):
         else:
             state = ProgressionState.NOPROGRESS
         model.setProgressionState(state)
-        model.setProgression(_FULL_PROGRESS * currentPoints / (maxPoints or _FULL_PROGRESS))
+        model.setProgression(int(_FULL_PROGRESS * currentPoints // (maxPoints or _FULL_PROGRESS)))
 
     @replaceNoneKwargsModel
     def __fillTabs(self, model=None):
         tabModels = model.getResourcesTabs()
         tabModels.clear()
-        for resourceType, resources in self.__resources.iteritems():
+        for resourceType, resources in iteritems(self.__resources):
             tabModel = ResourcesTabModel()
-            tabModel.setType(resourceType)
+            tabModel.setType(resourceType.value)
             self.__fillResources(tabModel.getResources(), resources)
             tabModels.addViewModel(tabModel)
 
@@ -166,14 +171,14 @@ class ResourcesLoadingView(ViewImpl):
         self.__tooltips.append(resource.tooltip)
 
     def __updateCurrencies(self, *_):
-        self.__updateResourceModels(ResourceType.CURRENCY.value)
+        self.__updateResourceModels(ResourceType.CURRENCY)
 
     def __updateBlueprints(self, *_):
-        self.__updateResourceModels(ResourceType.BLUEPRINTS.value)
+        self.__updateResourceModels(ResourceType.BLUEPRINTS)
 
     def __updateResourceModels(self, resourceType):
         with self.viewModel.transaction() as (model):
-            tabModel = findFirst(lambda tab: tab.getType() == resourceType, model.getResourcesTabs())
+            tabModel = findFirst(lambda tab: tab.getType() == resourceType.value, model.getResourcesTabs())
             for resourceModel in tabModel.getResources():
                 resources = self.__resources[resourceType]
                 resource = findFirst(lambda r, m=resourceModel: m.getType() == r.guiName, resources)
@@ -182,7 +187,8 @@ class ResourcesLoadingView(ViewImpl):
     @adisp_process
     def __loadResources(self, args):
         self.__updateLoadingError(isError=False)
-        resources = {resource:int(count) for resource, count in args.iteritems()}
+        self.viewModel.setShowBlur(True)
+        resources = {resource:int(count) for resource, count in iteritems(args)}
         mode = self.__resourceWell.getPurchaseMode()
         processor = PutResourcesProcessor(self.__rewardID, resources)
         result = yield processor.request()
@@ -223,6 +229,7 @@ class ResourcesLoadingView(ViewImpl):
                 self.destroyWindow()
                 return
             self.__updateLoadingError(isError=not result.success and not responseCtx.get('isUserCancelAction', False))
+            self.viewModel.setShowBlur(False)
             if nextRewardID is not None:
                 self.__rewardID = nextRewardID
                 self.__updateModel()
@@ -260,5 +267,5 @@ class ResourcesLoadingView(ViewImpl):
 class ResourcesLoadingWindow(LobbyWindow):
     __slots__ = ()
 
-    def __init__(self, rewardID):
-        super(ResourcesLoadingWindow, self).__init__(wndFlags=WindowFlags.WINDOW | WindowFlags.WINDOW_FULLSCREEN, content=ResourcesLoadingView(rewardID))
+    def __init__(self, rewardID, stopRequesterInDestroy=True):
+        super(ResourcesLoadingWindow, self).__init__(wndFlags=WindowFlags.WINDOW | WindowFlags.WINDOW_FULLSCREEN, content=ResourcesLoadingView(rewardID, stopRequesterInDestroy=stopRequesterInDestroy))

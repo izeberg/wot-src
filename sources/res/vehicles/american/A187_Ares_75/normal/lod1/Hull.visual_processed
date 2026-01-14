@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>nodes_01</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>HP_Fire_1</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 -0.271509 -1.920892</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Fire_2</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-0.585217 -0.196410 1.500000</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_LFront</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.802031 0.597283</row1>
+					<row2>0.000000 -0.597283 0.802031</row2>
+					<row3>-1.378000 0.034751 2.990747</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_LFront_0</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.978208 0.207626</row1>
+					<row2>0.000000 -0.207626 0.978208</row2>
+					<row3>-1.378000 -0.075209 0.282789</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_LRear</identifier>
+				<transform>
+					<row0>-1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.501968 -0.864886</row1>
+					<row2>-0.000000 -0.864886 -0.501968</row2>
+					<row3>-1.378000 0.013685 -2.823734</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_RFront</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.802031 0.597283</row1>
+					<row2>0.000000 -0.597283 0.802031</row2>
+					<row3>1.378000 0.034802 3.000747</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_RFront_0</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.993427 0.114466</row1>
+					<row2>0.000000 -0.114466 0.993427</row2>
+					<row3>1.378000 -0.056905 0.116709</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_RRear</identifier>
+				<transform>
+					<row0>-1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.501968 -0.864886</row1>
+					<row2>-0.000000 -0.864886 -0.501968</row2>
+					<row3>1.378000 0.013685 -2.823734</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Track_Exhaus_1</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 -0.642769 0.766060</row1>
+					<row2>0.000000 -0.766060 -0.642769</row2>
+					<row3>-0.251502 0.408315 -2.821867</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Track_Exhaus_2</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 -0.642769 0.766060</row1>
+					<row2>0.000000 -0.766060 -0.642769</row2>
+					<row3>0.299389 0.408315 -2.821867</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_turretJoint</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.540985 0.071660</row3>
+				</transform>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_hull_01</identifier>
+					<property>
+						g_detailPowerGloss
+						<Float>
+							0.35
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_maskBias
+						<Float>
+							0.18
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailPower
+						<Float>5</Float>
+					</property>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<fx>shaders/std_effects/PBS_tank.fx</fx>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/american/A187_Ares_75/Ares_75_hull_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/american/A187_Ares_75/Ares_75_hull_01_ANM.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/american/A187_Ares_75/Ares_75_hull_01_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/american/A187_Ares_75/Ares_75_hull_01_AO.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>7.013699 7.013699 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_defaultDetail
+						<Bool>false</Bool>
+					</property>
+					<property>
+						g_detailParams
+						<matrix>
+							<element>60381184</element>
+							<element>1020081200</element>
+							<element>134168576</element>
+							<element>986513408</element>
+							<element>192958976</element>
+							<element>1012021940</element>
+							<element>369057792</element>
+							<element>995885056</element>
+							<element>327176192</element>
+							<element>1006632960</element>
+							<element>788484096</element>
+							<element>1006632960</element>
+							<element>822038528</element>
+							<element>1006648904</element>
+							<element>435830784</element>
+							<element>995885056</element>
+						</matrix>
+					</property>
+					<property>
+						g_dirtLevel
+						<Float>0.490000</Float>
+					</property>
+					<property>
+						g_glossMax
+						<Float>0.600000</Float>
+					</property>
+					<property>
+						g_glossMin
+						<Float>0.330000</Float>
+					</property>
+				</material>
+				<groupOrigin>-0.000495 0.120626 0.049165</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-1.753913 -0.504043 -3.137013</min>
+		<max>1.752923 0.745295 3.235344</max>
+	</boundingBox>
+	<geometrySize>547962</geometrySize>
+</root>

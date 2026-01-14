@@ -91,10 +91,5 @@ class AbilityContextClient(VehicleContextClient):
     def deploying(self):
         pass
 
-    @vse_event_out(display_name='OnWaitForChoice', description='Calls when ability becomes waitForChoice', aspects=[
-     ASPECT.CLIENT])
-    def waitForChoice(self):
-        pass
-
     def notrunning(self):
         pass

@@ -160,6 +160,9 @@ msgstr ""
 msgid "petStorage/petCard/promo"
 msgstr "NEW"
 
+msgid "petStorage/progressbarBonuses"
+msgstr "The bonuses apply to Random Battles."
+
 msgid "petStorage/progressbarDescription"
 msgstr "Increases the rewards for a limited number of battles each day."
 
@@ -173,6 +176,9 @@ msgstr ""
 
 msgid "petStorage/progressbarTooltip/title"
 msgstr "Available bonuses"
+
+msgid "petStorage/progressbarWarning"
+msgstr "Unsuitable mode. Bonuses do not apply."
 
 msgid "petStorage/status/select"
 msgstr "Select"
@@ -195,26 +201,33 @@ msgstr "Battles left"
 msgid "petStorageTooltip/bonus/title"
 msgstr "Bonus"
 
+msgid "petStorageTooltip/warning/unsuitableMode"
+msgstr "Unsuitable mode. Bonus does not apply."
+
 msgid "petType/dog"
 msgstr "dog"
 
 msgid "plusPercentValue"
 msgstr "+{{value}}%"
 
+msgid "promotion/bonuses/text_1"
+msgstr ""
+"The bonus applies only to Random Battles and is not active in every battle."
+
+msgid "promotion/bonuses/text_2"
+msgstr "Events are available in Random Battles."
+
 msgid "promotion/button/challenge"
-msgstr "Go to Challenge"
+msgstr "Missions"
 
 msgid "promotion/button/purchase"
-msgstr "To Purchase"
+msgstr "Purchase"
 
 msgid "promotion/challengeInfo/text_1"
-msgstr ""
-"Complete Holiday Ops Challenge missions to earn Chaffee as a permanent "
-"addition to your Garage for free, or purchase him with gold. Chaffee will "
-"remain with you even after the event ends."
+msgstr "Mission information"
 
 msgid "promotion/challengeInfo/title_1"
-msgstr "How to Receive"
+msgstr "Missions"
 
 msgid "synergyTooltip/description/done"
 msgstr ""

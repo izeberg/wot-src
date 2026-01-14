@@ -136,6 +136,9 @@ msgstr ""
 msgid "description/It21_Lion"
 msgstr "Own the&nbsp;Lion (Tier&nbsp;%(level)s)"
 
+msgid "description/J51_Ashigaru"
+msgstr "Own the&nbsp;Ashigaru (Tier&nbsp;%(level)s)"
+
 msgid "description/Pl15_60TP_Lewandowskiego_CFE_A"
 msgstr "Own the&nbsp;Ashbringer (Tier&nbsp;%(level)s)"
 
@@ -214,6 +217,11 @@ msgid "description/branch_china_Ch67_BZ_79"
 msgstr ""
 "Research all vehicles in the Chinese heavy branch that leads to "
 "the&nbsp;BZ-79 (Tier&nbsp;%(level)s)"
+
+msgid "description/branch_china_Ch70_PTZ_78"
+msgstr ""
+"Research all vehicles in the Chinese TD branch that leads to the&nbsp;PTZ-78"
+" (Tier&nbsp;%(level)s)"
 
 msgid "description/branch_czech_Cz04_T50_51"
 msgstr ""
@@ -375,6 +383,11 @@ msgstr ""
 "Research all vehicles in the Japanese heavy branch that leads to the "
 "Type&nbsp;71 (Tier&nbsp;%(level)s)"
 
+msgid "description/branch_japan_J52_STK_2"
+msgstr ""
+"Research all vehicles in the Japanese heavy branch that leads to "
+"the&nbsp;STK-2 (Tier&nbsp;%(level)s)"
+
 msgid "description/branch_poland_Pl15_60TP_Lewandowskiego"
 msgstr ""
 "Research all vehicles in the Polish heavy branch that leads to the&nbsp;60TP"
@@ -489,6 +502,11 @@ msgid "description/branch_usa_A183_XM69_Hacker"
 msgstr ""
 "Research all vehicles in the American medium branch that leads to "
 "the&nbsp;XM69&nbsp;Hacker (Tier&nbsp;%(level)s)"
+
+msgid "description/branch_usa_A191_Ares_90_C"
+msgstr ""
+"Research all vehicles in the American medium branch that leads to "
+"the&nbsp;Ares&nbsp;90&nbsp;C (Tier&nbsp;%(level)s)"
 
 msgid "description/branch_usa_A38_T92"
 msgstr ""
@@ -875,6 +893,18 @@ msgstr "T803"
 msgid "name/A183_XM69_Hacker"
 msgstr "XM69&nbsp;Hacker"
 
+msgid "name/A187_Ares_75"
+msgstr "Ares 75"
+
+msgid "name/A189_Ares_90"
+msgstr "Ares 90"
+
+msgid "name/A190_Ares_85"
+msgstr "Ares 85"
+
+msgid "name/A191_Ares_90_C"
+msgstr "Ares 90 C"
+
 msgid "name/A31_M36_Slagger"
 msgstr "M36 Jackson"
 
@@ -1030,6 +1060,9 @@ msgstr "116-F3"
 
 msgid "name/Ch67_BZ_79"
 msgstr "BZ-79"
+
+msgid "name/Ch70_PTZ_78"
+msgstr "PTZ-78"
 
 msgid "name/Cz02_TVP_T50"
 msgstr "Škoda T&nbsp;50"
@@ -1607,6 +1640,12 @@ msgstr "Type&nbsp;4 Ju-To"
 msgid "name/J44_Type_3_Ju_Nu"
 msgstr "Type&nbsp;3 Ju-Nu"
 
+msgid "name/J51_Ashigaru"
+msgstr "Ashigaru"
+
+msgid "name/J52_STK_2"
+msgstr "STK-2"
+
 msgid "name/Pl05_50TP_Tyszkiewicza"
 msgstr "50TP Tyszkiewicza"
 
@@ -1916,6 +1955,9 @@ msgstr "China: BZ-75"
 msgid "name/branch_china_Ch67_BZ_79"
 msgstr "China: BZ-79"
 
+msgid "name/branch_china_Ch70_PTZ_78"
+msgstr "China: PTZ-78"
+
 msgid "name/branch_czech_Cz04_T50_51"
 msgstr "Czechoslovakia: TVP&nbsp;T&nbsp;50/51"
 
@@ -2012,6 +2054,9 @@ msgstr "Japan: Ho-Ri&nbsp;3"
 msgid "name/branch_japan_J40_Type_71"
 msgstr "Japan: Type&nbsp;71"
 
+msgid "name/branch_japan_J52_STK_2"
+msgstr "Japan: STK-2"
+
 msgid "name/branch_poland_Pl15_60TP_Lewandowskiego"
 msgstr "Poland: 60TP Lewandowskiego"
 
@@ -2080,6 +2125,9 @@ msgstr "U.S.A.: T803"
 
 msgid "name/branch_usa_A183_XM69_Hacker"
 msgstr "U.S.A.: XM69&nbsp;Hacker"
+
+msgid "name/branch_usa_A191_Ares_90_C"
+msgstr "U.S.A.: Ares 90 C"
 
 msgid "name/branch_usa_A38_T92"
 msgstr "U.S.A.: T92&nbsp;HMC"

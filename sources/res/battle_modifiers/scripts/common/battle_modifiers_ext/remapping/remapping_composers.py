@@ -56,6 +56,12 @@ class _BaseComposer(IComposer):
 
 class _DefaultGunEffectsComposer(_BaseComposer):
 
+    def getValue(self, ctx, oldValue):
+        if oldValue is not None:
+            return super(_DefaultGunEffectsComposer, self).getValue(ctx, oldValue)
+        else:
+            return
+
     @classmethod
     def _getItemName(cls, _, oldValue):
         from items import vehicles

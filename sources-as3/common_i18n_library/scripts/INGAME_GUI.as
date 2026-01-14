@@ -85,6 +85,8 @@ package
       
       public static const PLAYER_ERRORS_CANT_SHOOT_GUN_LOCKED:String = "#ingame_gui:player_errors/cant_shoot/gun_locked";
       
+      public static const PLAYER_ERRORS_CANT_SHOOT_GUN_OVERHEATED:String = "#ingame_gui:player_errors/cant_shoot/gun_overheated";
+      
       public static const PLAYER_ERRORS_CANT_SWITCH_ENGINE_DESTROYED:String = "#ingame_gui:player_errors/cant_switch/engine_destroyed";
       
       public static const PLAYER_ERRORS_CANT_SWITCH_GUN_DESTROYED:String = "#ingame_gui:player_errors/cant_switch/gun_destroyed";
@@ -213,6 +215,8 @@ package
       
       public static const CHAT_SHORTCUTS_RELOADING_UNAVAILABLE:String = "#ingame_gui:chat_shortcuts/reloading_unavailable";
       
+      public static const CHAT_SHORTCUTS_OVERHEATED_GUN:String = "#ingame_gui:chat_shortcuts/overheated_gun";
+      
       public static const CHAT_SHORTCUTS_SPG_AIM_AREA_GRIDINFO:String = "#ingame_gui:chat_shortcuts/spg_aim_area_gridInfo";
       
       public static const CHAT_SHORTCUTS_SPG_AIM_AREA:String = "#ingame_gui:chat_shortcuts/spg_aim_area";
@@ -334,6 +338,8 @@ package
       public static const CHAT_EXAMPLE_RELOADING_READY_CASSETTE:String = "#ingame_gui:chat_example/reloading_ready_cassette";
       
       public static const CHAT_EXAMPLE_RELOADING_UNAVAILABLE:String = "#ingame_gui:chat_example/reloading_unavailable";
+      
+      public static const CHAT_EXAMPLE_OVERHEATED_GUN:String = "#ingame_gui:chat_example/overheated_gun";
       
       public static const CHAT_EXAMPLE_HELP_ME:String = "#ingame_gui:chat_example/help_me";
       
@@ -1470,6 +1476,8 @@ package
       public static const SIEGEMODE_HINT_TARGETDESIGNATOR:String = "#ingame_gui:siegeMode/hint/targetDesignator";
       
       public static const SIEGEMODE_HINT_TWINGUN:String = "#ingame_gui:siegeMode/hint/twinGun";
+      
+      public static const SIEGEMODE_HINT_STAGEDJETBOOSTERS:String = "#ingame_gui:siegeMode/hint/stagedJetBoosters";
       
       public static const EFFICIENCYRIBBONS_ENEMYSECTORCAPTURED:String = "#ingame_gui:efficiencyRibbons/enemySectorCaptured";
       

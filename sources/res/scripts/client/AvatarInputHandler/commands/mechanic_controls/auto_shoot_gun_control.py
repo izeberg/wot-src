@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import Keys
 from AvatarInputHandler.commands.input_handler_command import InputHandlerCommand
 from gui.battle_control.controllers.auto_shoot_guns.auto_shoot_helpers import AUTO_SHOOT_DEV_KEYS, AutoShootDevCommand

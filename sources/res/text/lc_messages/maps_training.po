@@ -2219,6 +2219,9 @@ msgstr "Light Tank"
 msgid "botVehicleType/mediumTank"
 msgstr "Medium Tank"
 
+msgid "countTitle"
+msgstr "({count})"
+
 msgid "descriptionInfo"
 msgstr "Map description"
 
@@ -2363,6 +2366,9 @@ msgstr "%(map)s, %(scenario)s: %(vehicleType)s"
 
 msgid "prebattle/targets"
 msgstr "Destroy %(count)s targets"
+
+msgid "progress"
+msgstr "{currentProgress} / {maxProgress}"
 
 msgid "queue/delayTime"
 msgstr "* The mode is rather popular, please wait"

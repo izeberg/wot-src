@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB86_Centurion_Action_X/_skins/GB86_Centurion_Action_X_KS_3Dst/normal/lod1/Hull</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/british/GB86_Centurion_Action_X/_skins/GB86_Centurion_Action_X_KS_3Dst/normal/lod2/Hull</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.778772 -0.745690 -3.728120</min>
+		<max>1.775565 0.814725 3.956064</max>
+	</visibilityBox>
+</root>

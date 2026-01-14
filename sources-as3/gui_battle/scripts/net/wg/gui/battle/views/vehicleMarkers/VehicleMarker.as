@@ -1108,7 +1108,7 @@ package net.wg.gui.battle.views.vehicleMarkers
          this.updateVehicleMarkerHover();
       }
       
-      protected function updateMarkerColor() : void
+      private function updateMarkerColor() : void
       {
          var _loc1_:String = this.vmManager.getAliasColor(this._markerSchemeName);
          if(this._markerColor == _loc1_)
@@ -1230,7 +1230,7 @@ package net.wg.gui.battle.views.vehicleMarkers
          }
       }
       
-      protected function setVehicleType() : void
+      private function setVehicleType() : void
       {
          var _loc1_:String = null;
          if(this.isObserver)
@@ -1310,7 +1310,7 @@ package net.wg.gui.battle.views.vehicleMarkers
          }
       }
       
-      protected function getDamageColor(param1:uint) : String
+      private function getDamageColor(param1:uint) : String
       {
          if(this.isObserver)
          {

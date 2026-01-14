@@ -38,6 +38,12 @@
 				<!--BW_String-->
 			</invisibilityBonus>
 		</camouflageNet>
+		<deluxeCamouflageNet>
+			<invisibilityBonus>
+				0.125
+				<!--BW_String-->
+			</invisibilityBonus>
+		</deluxeCamouflageNet>
 		<additionalInvisibilityDevice>
 			<invisibilityBonus>
 				0.06 0.08
@@ -4796,10 +4802,10 @@
 						<rate>3000</rate>
 					</clip>
 					<autoShoot>
-						<shotDispersionPerSec>
-							1.25
+						<shotDispersionPerShot>
+							0.025
 							<!--BW_String-->
-						</shotDispersionPerSec>
+						</shotDispersionPerShot>
 						<maxShotDispersion>10</maxShotDispersion>
 						<groupSize>1</groupSize>
 					</autoShoot>
@@ -4940,10 +4946,10 @@
 						<rate>1950</rate>
 					</clip>
 					<autoShoot>
-						<shotDispersionPerSec>
-							1.25
+						<shotDispersionPerShot>
+							0.03846154
 							<!--BW_String-->
-						</shotDispersionPerSec>
+						</shotDispersionPerShot>
 						<maxShotDispersion>10</maxShotDispersion>
 						<groupSize>1</groupSize>
 					</autoShoot>
@@ -6325,10 +6331,10 @@
 						<rate>3000</rate>
 					</clip>
 					<autoShoot>
-						<shotDispersionPerSec>
-							1.25
+						<shotDispersionPerShot>
+							0.025
 							<!--BW_String-->
-						</shotDispersionPerSec>
+						</shotDispersionPerShot>
 						<maxShotDispersion>10</maxShotDispersion>
 						<groupSize>1</groupSize>
 					</autoShoot>
@@ -6497,10 +6503,10 @@
 						<rate>1950</rate>
 					</clip>
 					<autoShoot>
-						<shotDispersionPerSec>
-							1.25
+						<shotDispersionPerShot>
+							0.03846154
 							<!--BW_String-->
-						</shotDispersionPerSec>
+						</shotDispersionPerShot>
 						<maxShotDispersion>10</maxShotDispersion>
 						<groupSize>1</groupSize>
 					</autoShoot>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.489839 -0.467355 -0.632211</min>
+		<max>1.494748 0.674010 1.610180</max>
+	</visibilityBox>
+	<parent>vehicles/french/F134_Lorraine_120_Alby/crash/lod3/Turret_01</parent>
+	<extent>96.000000</extent>
+	<nodefullVisual>vehicles/french/F134_Lorraine_120_Alby/crash/lod2/Turret_01</nodefullVisual>
+</root>

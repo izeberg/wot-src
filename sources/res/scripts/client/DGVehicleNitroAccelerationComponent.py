@@ -1,4 +1,0 @@
-from script_component.DynamicScriptComponent import DynamicScriptComponent
-
-class DGVehicleNitroAccelerationComponent(DynamicScriptComponent):
-    pass

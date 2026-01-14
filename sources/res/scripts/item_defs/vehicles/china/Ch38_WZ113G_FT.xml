@@ -39,6 +39,12 @@
 				<!--BW_String-->
 			</invisibilityBonus>
 		</camouflageNet>
+		<deluxeCamouflageNet>
+			<invisibilityBonus>
+				0.175
+				<!--BW_String-->
+			</invisibilityBonus>
+		</deluxeCamouflageNet>
 		<additionalInvisibilityDevice>
 			<invisibilityBonus>
 				0.05 0.06
@@ -3976,6 +3982,12 @@
 				<_152mm_59_152JG_FT>
 					shared
 					<maxAmmo>35</maxAmmo>
+					<unlocks>
+						<vehicle>
+							Ch70_PTZ_78
+							<cost>325000</cost>
+						</vehicle>
+					</unlocks>
 					<armor>
 						<armor_1>
 							310

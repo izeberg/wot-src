@@ -23,15 +23,16 @@
 			<SMDistractionAbilityArenaInfoComponent/>
 			<SMDetectionDelayObserverComponent/>
 			<SMDetectionDelayObservableComponent/>
-			<SMAbilitiesTrackerComponent/>
-			<SMAbilitiesRechargeComponent/>
-			<SMAbilitiesInterruptComponent/>
-			<SMInterruptibleShotComponent/>
-			<SMInterruptibleGroupsComponent/>
-			<SMDisableShotSNComponent/>
-			<SMArtilleryStrikeChannelComponent/>
 			<SMVehicleRespawnComponent/>
-			<SMVehicleRocketAccelerationEffectComponent/>
+			<SMAbilitiesTrackerComponent/>
+			<SMAbilitiesInterruptComponent/>
+			<SMAbilitiesRechargeComponent/>
+			<SMArtilleryStrikeChannelComponent/>
+			<SMRemovableDynGroupComponent/>
+			<SMSequencesComponent/>
+			<SMSound3DComponent/>
+			<SMSound3DObjectComponent/>
+			<BunkerLogicComponent/>
 		</DynamicComponents>
 	</Components>
 	<Entities>
@@ -43,4 +44,11 @@
 		</ClientServerEntities>
 	</Entities>
 	<ExternalComponents/>
+	<cgf>
+		<script>
+			<module>client.story_mode.cgf_components.bunkers</module>
+			<module>common.story_mode_common.cgf_components_common.bunkers</module>
+			<module>cell.story_mode_cell.cgf_components.bunkers</module>
+		</script>
+	</cgf>
 </root>

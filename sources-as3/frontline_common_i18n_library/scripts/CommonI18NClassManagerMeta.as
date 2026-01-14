@@ -13,6 +13,8 @@ package
       
       public static const FL_INFO_PAGE:Class = FL_INFO_PAGE;
       
+      public static const FL_POST_BATTLE_RESULTS:Class = FL_POST_BATTLE_RESULTS;
+      
       public static const FL_POST_BATTLE_REWARDS:Class = FL_POST_BATTLE_REWARDS;
       
       public static const FL_PROGRESSION_SCREEN:Class = FL_PROGRESSION_SCREEN;

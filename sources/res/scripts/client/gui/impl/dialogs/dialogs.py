@@ -16,7 +16,6 @@ from gui.impl.pub.dialog_window import DialogButtons, DialogWindow, SingleDialog
 from helpers import dependency
 from skeletons.gui.impl import IGuiLoader
 from wg_async import wg_async, wg_await
-from gui.impl.pub.wait_view_impl import WaitWindowWrapper
 if typing.TYPE_CHECKING:
     from typing import Any, Optional, Iterable, Union, List
 
@@ -111,6 +110,7 @@ def showCustomBlurSingleDialog(wrappedViewClass, layoutID, parent=None, gui=None
         dialog = FullScreenDialogWindowWrapper(wrappedViewClass(*args, **kwargs), parent, doBlur=False)
     if dialog is not None:
         result = yield wg_await(showSimpleWithResultData(dialog))
+        raise AsyncReturn(SingleDialogResult(busy=False, result=result))
     raise AsyncReturn(SingleDialogResult(busy=True, result=result))
     return
 

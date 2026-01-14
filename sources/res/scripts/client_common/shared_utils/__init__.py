@@ -1,7 +1,8 @@
-import collections, time, itertools, logging, types, weakref
+import collections, time, itertools, logging, types, typing, weakref
 from functools import partial, wraps
-import typing, BigWorld
+import BigWorld
 from adisp import adisp_async
+from constants import IS_EDITOR
 if typing.TYPE_CHECKING:
     from typing import Any, Callable, Dict, Iterable, List, Optional, Sequence, Tuple, Type, TypeVar, Union
     T = TypeVar('T')
@@ -321,3 +322,13 @@ def timeit(method):
 
 def inPercents(fraction, digitsToRound=1):
     return round(fraction * 100, digitsToRound)
+
+
+def skipInEditor(method):
+
+    @wraps(method)
+    def wrapper(*args, **kwargs):
+        if not IS_EDITOR:
+            method(*args, **kwargs)
+
+    return wrapper

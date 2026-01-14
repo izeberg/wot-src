@@ -20,7 +20,6 @@ from gui.impl.lobby.seniority_awards.tooltip.seniority_awards_tooltip import Sen
 from gui.impl.pub import ViewImpl
 from gui.impl.pub.lobby_window import LobbyNotificationWindow
 from gui.shared.event_dispatcher import showShop
-from gui.shared.system_factory import collectSeniorityAwardViewClass
 from helpers import dependency, time_utils
 from skeletons.gui.game_control import ISeniorityAwardsController
 from skeletons.gui.lobby_context import ILobbyContext
@@ -110,17 +109,17 @@ class SeniorityRewardAwardView(ViewImpl):
          (
           self.viewModel.onShopBtnClick, self.__onShopBtnClick),
          (
-          self.__seniorityAwardsCtrl.onUpdated, self._onSettingsChange))
+          self.__seniorityAwardsCtrl.onUpdated, self.__onSettingsChange))
 
     def __getShopOnOpenState(self):
-        if self._needBlockShopTransition:
+        if self.__needBlockShopTransition:
             return ShopOnOpenState.NOT_AVAILABLE
         if not self.__seniorityAwardsCtrl.isAvailable:
             return ShopOnOpenState.DISABLED
         return ShopOnOpenState.AVAILABLE
 
     @property
-    def _needBlockShopTransition(self):
+    def __needBlockShopTransition(self):
         return not self.__specialCurrencies.get(WDR_CURRENCY)
 
     def __setBonuses(self, viewModel):
@@ -170,7 +169,7 @@ class SeniorityRewardAwardView(ViewImpl):
         if self.viewModel.getShopOnOpenState() == ShopOnOpenState.AVAILABLE:
             showShop(getPlayerSeniorityAwardsUrl())
 
-    def _onSettingsChange(self):
+    def __onSettingsChange(self):
         with self.viewModel.transaction() as (vm):
             vm.setShopOnOpenState(self.__getShopOnOpenState())
 
@@ -179,5 +178,4 @@ class SeniorityRewardAwardWindow(LobbyNotificationWindow):
     __slots__ = ()
 
     def __init__(self, data=None, viewID=None):
-        viewCls = collectSeniorityAwardViewClass() or SeniorityRewardAwardView
-        super(SeniorityRewardAwardWindow, self).__init__(content=viewCls(viewID, data=data), layer=WindowLayer.TOP_WINDOW)
+        super(SeniorityRewardAwardWindow, self).__init__(content=SeniorityRewardAwardView(viewID, data=data), layer=WindowLayer.TOP_WINDOW)

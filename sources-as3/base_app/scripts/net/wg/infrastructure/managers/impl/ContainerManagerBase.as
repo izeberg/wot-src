@@ -362,7 +362,7 @@ package net.wg.infrastructure.managers.impl
                {
                   return true;
                }
-               if(!_loc4_.allowFocusNextLayer(_loc2_))
+               if(!_loc4_.canFocusNextLayer(_loc2_))
                {
                   return false;
                }
@@ -381,7 +381,7 @@ package net.wg.infrastructure.managers.impl
             {
                return;
             }
-            _loc3_.setFocusedView(param1.getContainerWrapper());
+            this.tryFocusView(param1.getContainerWrapper());
          }
       }
       
@@ -497,11 +497,50 @@ package net.wg.infrastructure.managers.impl
          _loc4_.scaleY = param3;
       }
       
+      public function tryFocusView(param1:IView) : Boolean
+      {
+         var _loc2_:int = 0;
+         var _loc3_:IManagedContainer = null;
+         var _loc4_:String = null;
+         var _loc5_:IManagedContainer = null;
+         if(!param1.visible)
+         {
+            DebugUtils.LOG_ERROR("Attempt to focus invisible view " + param1.name);
+            return false;
+         }
+         _loc2_ = param1.as_config.configVO.layer;
+         _loc5_ = this.getInteractiveContainer(_loc2_);
+         var _loc6_:String = _loc5_.layerName;
+         var _loc7_:Array = this.getContainersFocusOrder();
+         for each(_loc4_ in _loc7_)
+         {
+            _loc3_ = this.getInteractiveContainer(LAYER_ORDER.indexOf(_loc4_));
+            if(_loc3_)
+            {
+               if(_loc3_.layer == _loc2_)
+               {
+                  if(_loc3_.visible)
+                  {
+                     _loc3_.setFocusedView(param1,false);
+                     return true;
+                  }
+                  return false;
+               }
+               if(!_loc3_.canFocusNextLayer(_loc6_))
+               {
+                  return false;
+               }
+            }
+         }
+         return false;
+      }
+      
       public function updateFocus(param1:Object = null) : void
       {
          var _loc2_:String = null;
          var _loc3_:IManagedContainer = null;
          var _loc6_:IWaitingView = null;
+         var _loc7_:IView = null;
          var _loc4_:Boolean = false;
          var _loc5_:Array = this.getContainersFocusOrder();
          for each(_loc2_ in _loc5_)
@@ -528,6 +567,12 @@ package net.wg.infrastructure.managers.impl
          }
          if(!_loc4_)
          {
+            _loc7_ = App.containerMgr.lastFocusedView;
+            if(_loc7_ != null)
+            {
+               _loc7_.leaveModalFocus();
+               App.containerMgr.lastFocusedView = null;
+            }
             App.utils.focusHandler.setModalFocus(null);
          }
       }
@@ -604,10 +649,11 @@ package net.wg.infrastructure.managers.impl
       {
          var _loc3_:ISimpleManagedContainer = this.getContainer(param2);
          _loc3_.addChild(param1);
-         dispatchEvent(new ContainerManagerEvent(ContainerManagerEvent.VIEW_ADDED,IView(param1),param2));
+         var _loc4_:IView = IView(param1);
+         dispatchEvent(new ContainerManagerEvent(ContainerManagerEvent.VIEW_ADDED,_loc4_,param2));
          if(_loc3_ && _loc3_.manageFocus && param1.visible)
          {
-            IManagedContainer(_loc3_).setFocusedView(IView(param1));
+            this.tryFocusView(_loc4_);
          }
       }
       

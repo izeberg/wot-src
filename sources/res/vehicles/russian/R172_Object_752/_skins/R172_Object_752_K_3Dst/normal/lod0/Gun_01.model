@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/russian/R172_Object_752/_skins/R172_Object_752_K_3Dst/normal/lod0/Gun_01</nodefullVisual>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.950544 -0.512890 -1.728173</min>
+		<max>0.949125 0.507260 5.594627</max>
+	</visibilityBox>
+	<parent>vehicles/russian/R172_Object_752/_skins/R172_Object_752_K_3Dst/normal/lod1/Gun_01</parent>
+	<extent>32.000000</extent>
+</root>

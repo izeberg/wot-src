@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/czech/Cz43_Ogar/normal/lod2/Gun_01</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/czech/Cz43_Ogar/normal/lod3/Gun_01</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-0.243083 -0.238424 -0.037682</min>
+		<max>0.343854 0.311211 4.319725</max>
+	</visibilityBox>
+</root>

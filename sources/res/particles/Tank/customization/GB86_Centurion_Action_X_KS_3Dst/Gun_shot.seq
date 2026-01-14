@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>4.000000</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Gun</name>
+		<type>model</type>
+		<resource>particles/Tank/customization/GB86_Centurion_Action_X_KS_3Dst/sm_gun_fx.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>material property vector4</name>
+			<type>vector4</type>
+			<identifier>centurion_fx</identifier>
+			<property>lightMultipliers</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 0.000000 0.000000</value>
+				<inTangent>30.000299 3.000030 15.000150 0.000000</inTangent>
+				<outTangent>30.000299 3.000030 15.000150 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.033333</startTime>
+				<value>1.000000 0.100000 0.500000 0.000000</value>
+				<inTangent>14.874100 1.487410 7.437050 0.000000</inTangent>
+				<outTangent>14.874100 1.487410 7.437050 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.000000</startTime>
+				<value>0.000000 0.000000 0.000000 0.000000</value>
+				<inTangent>-1.304348 -1.304348 -0.097745 -0.000000</inTangent>
+				<outTangent>-1.304348 -1.304348 -0.097745 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

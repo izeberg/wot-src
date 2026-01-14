@@ -1,6 +1,7 @@
+from __future__ import absolute_import
 import typing, CommandMapping
 from AvatarInputHandler.commands.input_handler_command import InputHandlerCommand
-from vehicles.mechanics.mechanic_helpers import getPlayerVehicleMechanic
+from vehicles.mechanics.mechanic_helpers import getPlayerVehicleMechanicComponent
 from vehicles.mechanics.mechanic_constants import VehicleMechanic
 
 class SimpleActivationControl(InputHandlerCommand):
@@ -15,7 +16,7 @@ class SimpleActivationControl(InputHandlerCommand):
     def handleKeyEvent(self, isDown, key, mods, event=None):
         if not isDown or not CommandMapping.g_instance.isFired(self.__key, key):
             return False
-        mechanicComponent = getPlayerVehicleMechanic(self.__mechanic)
+        mechanicComponent = getPlayerVehicleMechanicComponent(self.__mechanic)
         mechanicResult = mechanicComponent.tryActivate() if mechanicComponent is not None else None
         return mechanicResult is None or mechanicResult
 

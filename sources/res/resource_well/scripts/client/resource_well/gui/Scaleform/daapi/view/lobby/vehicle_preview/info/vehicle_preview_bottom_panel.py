@@ -1,5 +1,8 @@
+from __future__ import absolute_import
+from future.utils import viewvalues
 from frameworks.wulf import ViewFlags, ViewSettings
 from gui.Scaleform.daapi.view.meta.VehiclePreviewBottomPanelWellMeta import VehiclePreviewBottomPanelWellMeta
+from gui.impl.auxiliary.vehicle_helper import fillVehicleInfo
 from gui.impl.gen import R
 from gui.impl.pub import ViewImpl
 from helpers import dependency
@@ -29,9 +32,10 @@ class _BottomPanelView(ViewImpl):
     __resourceWell = dependency.descriptor(IResourceWellController)
 
     def __init__(self):
-        settings = ViewSettings(R.views.resource_well.lobby.feature.WellPanel(), flags=ViewFlags.VIEW, model=WellPanelModel())
+        settings = ViewSettings(R.views.resource_well.mono.lobby.vehicle_preview_bottom_panel(), flags=ViewFlags.VIEW, model=WellPanelModel())
         super(_BottomPanelView, self).__init__(settings)
         self.__rewardID = None
+        self.__vehicle = None
         return
 
     @property
@@ -40,6 +44,7 @@ class _BottomPanelView(ViewImpl):
 
     def setRewardID(self, rewardID):
         self.__rewardID = rewardID
+        self.__vehicle = self.__resourceWell.getRewardVehicle(self.__rewardID)
 
     def _onLoaded(self, *args, **kwargs):
         super(_BottomPanelView, self)._onLoaded(*args, **kwargs)
@@ -77,14 +82,17 @@ class _BottomPanelView(ViewImpl):
             currentRewardID = self.__resourceWell.getCurrentRewardID()
             isVisible &= not currentRewardID or currentRewardID == self.__rewardID
         with self.viewModel.transaction() as (model):
+            if self.__vehicle is not None:
+                fillVehicleInfo(model.vehicleInfo, self.__vehicle)
             model.setIsVisible(isVisible)
             model.setEventMode(convertPurchaseToEventMode(mode))
-            model.setVehicleName(self.__resourceWell.getRewardVehicle(self.__rewardID).shortUserName)
-            for rewardConfig in self.__resourceWell.config.rewards.itervalues():
+            for rewardConfig in viewvalues(self.__resourceWell.config.rewards):
                 if rewardConfig.isSerial:
                     model.setTopRewardsCount(rewardConfig.limit)
                 else:
                     model.setRegularRewardsCount(rewardConfig.limit)
+
+        return
 
     def __onNumberRequesterUpdated(self):
         self.__updateModel()

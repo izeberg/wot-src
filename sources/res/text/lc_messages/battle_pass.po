@@ -400,6 +400,12 @@ msgstr ""
 msgid "battlePassBuyView/title"
 msgstr "IMPROVED PASS"
 
+msgid "battlePassStatus/activateChapter"
+msgstr "Activate the Battle Pass Chapter"
+
+msgid "battlePassStatus/improve"
+msgstr "You can still purchase the Improved Pass"
+
 msgid "battlePassVehicleAwardView/button"
 msgstr "Affirmative!"
 
@@ -418,8 +424,11 @@ msgstr "BATTLE PASS"
 msgid "battlepassTab"
 msgstr "Battle Pass"
 
-msgid "chapter/fullName/10051"
-msgstr "Holiday Havoc"
+msgid "chapter/fullName/10061"
+msgstr "RoboCop"
+
+msgid "chapter/fullName/1114"
+msgstr "Carmen de Bisonte"
 
 msgid "chapter/fullName/181"
 msgstr "On the Hardline"
@@ -430,8 +439,11 @@ msgstr "Project Überpanzer"
 msgid "chapter/fullName/183"
 msgstr "Mechanized Momentum"
 
-msgid "chapter/fullNameUppercased/10051"
-msgstr "HOLIDAY HAVOC"
+msgid "chapter/fullNameUppercased/10061"
+msgstr "ROBOCOP"
+
+msgid "chapter/fullNameUppercased/1114"
+msgstr "CARMEN DE BISONTE"
 
 msgid "chapter/fullNameUppercased/181"
 msgstr "ON THE HARDLINE"
@@ -536,6 +548,9 @@ msgstr "SELECT CHAPTER"
 msgid "chapterChoice/vehicleInHangar/tooltip/text"
 msgstr "In Garage"
 
+msgid "chapterStatus/notSelected"
+msgstr "Chapter not selected"
+
 msgid "chosenBonuses/bonus/battle_booster_gift"
 msgstr "Directives to Select From"
 
@@ -630,8 +645,9 @@ msgstr "Purchase Improved Pass"
 
 msgid "holidayFinalScreen/buyState/description"
 msgstr ""
-"By purchasing the Improved Pass, you will immediately receive a unique "
-"festive crew member and all Improved Pass Rewards."
+"By purchasing the Improved Pass, you will immediately receive the OCP "
+"Peacekeeper Tier IX Premium American heavy tank with a unique look inspired "
+"by the movies, along with all the Improved Pass Rewards."
 
 msgid "holidayFinalScreen/buyState/moreRewards"
 msgstr "Other Rewards: %(count)s"
@@ -840,15 +856,15 @@ msgstr "Affirmative!"
 
 msgid "intro/seasonDescription/text"
 msgstr ""
-"Santa's Christmas preparations are in full swing—but a jealous rival "
-"threatens to derail the whole holiday season. Save the celebrations in this "
-"explosive Battle Pass adventure with exclusive festive rewards!"
+"This is a special Battle Pass event in collaboration with the legendary "
+"RoboCop. A short but explosive adventure, it offers exclusive rewards "
+"inspired by the iconic universe. Are you ready to uphold the law?"
 
 msgid "intro/seasonDescription/title"
-msgstr "FESTIVE BATTLE PASS SPECIAL"
+msgstr "COLLABORATION WITH ROBOCOP"
 
 msgid "intro/title"
-msgstr "HOLIDAY HAVOC"
+msgstr "ROBOCOP"
 
 msgid "lootBoxBonus"
 msgstr "%(boxName)s: %(count)s"
@@ -872,22 +888,25 @@ msgid "navigation/chapterChoice"
 msgstr "BATTLE PASS SEASON %(seasonNum)s"
 
 msgid "navigation/holidayFinal"
-msgstr "BATTLE PASS: HOLIDAY HAVOC"
+msgstr "BATTLE PASS: ROBOCOP"
 
 msgid "navigation/intro"
-msgstr "BATTLE PASS: HOLIDAY HAVOC"
+msgstr "BATTLE PASS: ROBOCOP"
 
 msgid "navigation/postProgression"
 msgstr "BATTLE PASS ELITE CIRCUIT"
 
 msgid "navigation/progression"
-msgstr "BATTLE PASS: HOLIDAY HAVOC"
+msgstr "BATTLE PASS: ROBOCOP"
 
 msgid "points/top"
 msgstr "%(vehicle): %(bonus) for %(top) by XP."
 
 msgid "points/topCount"
 msgstr "top %(top)s"
+
+msgid "points/transfer"
+msgstr "Free Points added:"
 
 msgid "postProgressionView/footer/button/text"
 msgstr "To Chapters"
@@ -1266,14 +1285,14 @@ msgstr "BATTLE PASS: %(chapter)s CHAPTER"
 msgid "rewardChoice/titleChapterLevel"
 msgstr "BATTLE PASS: %(chapter)s CHAPTER, STAGE %(level)s"
 
-msgid "season/fullName/1005"
-msgstr "Holiday Havoc"
+msgid "season/fullName/1006"
+msgstr "RoboCop"
 
 msgid "season/fullName/18"
 msgstr "Path to Perfection"
 
-msgid "season/fullNameUppercased/1005"
-msgstr "HOLIDAY HAVOC"
+msgid "season/fullNameUppercased/1006"
+msgstr "ROBOCOP"
 
 msgid "season/fullNameUppercased/18"
 msgstr "PATH TO PERFECTION"
@@ -1374,6 +1393,29 @@ msgstr "UNIQUE CREW MEMBERS"
 
 msgid "tankmenVoiceover/unavailable"
 msgstr "Unavailable"
+
+msgid "title/earningPoints"
+msgstr "Earning Points"
+
+msgid "title/freePoints"
+msgstr "Free Points"
+
+msgid "title/stage"
+msgstr "Stage {{level}}"
+
+msgid "tooltip/cardButton/disabled/body"
+msgstr "Action is currently unavailable. Try again later."
+
+msgid "tooltip/freePoints/body"
+msgstr ""
+"Free Points accumulate and are automatically credited to your account after "
+"you activate a new Battle Pass Chapter."
+
+msgid "tooltip/freePoints/header"
+msgstr "Free points"
+
+msgid "tooltip/lock"
+msgstr "Rewards unavailable. Purchase the Improved Pass to receive them."
 
 msgid "tooltips/RandomQuestTooltip/condition"
 msgstr "Condition: %(condition)"

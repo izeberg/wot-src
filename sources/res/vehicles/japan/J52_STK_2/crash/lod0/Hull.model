@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.734637 -0.978850 -4.157475</min>
+		<max>1.699156 0.663248 4.593361</max>
+	</visibilityBox>
+	<nodelessVisual>vehicles/japan/J52_STK_2/crash/lod0/Hull</nodelessVisual>
+	<parent>vehicles/japan/J52_STK_2/crash/lod1/Hull</parent>
+	<extent>32.000000</extent>
+</root>

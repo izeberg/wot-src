@@ -5,7 +5,6 @@ from gui.Scaleform.daapi.view.battle.shared.ribbons_aggregator import DAMAGE_SOU
 from gui.Scaleform.daapi.view.meta.RibbonsPanelMeta import RibbonsPanelMeta
 from gui.Scaleform.genConsts.BATTLE_EFFICIENCY_TYPES import BATTLE_EFFICIENCY_TYPES as _BET
 from gui.battle_control import avatar_getter
-from constants import VEHICLE_BUNKER_TURRET_TAG
 from gui.battle_control.arena_info.interfaces import IArenaVehiclesController
 from gui.battle_control.arena_info.settings import ARENA_LISTENER_SCOPE
 from gui.battle_control.battle_constants import BonusRibbonLabel as _BRL, VEHICLE_VIEW_STATE_ID_TO_WEATHER_ZONE_NAME
@@ -95,8 +94,6 @@ def _getVehicleData(arenaDP, vehArenaID):
     vehicleName = vInfo.getDisplayedName()
     if isBattleRoyale(vTypeInfoVO.tags) and isSpawnedBot(vTypeInfoVO.tags):
         vehicleClassTag = ''
-    if VEHICLE_BUNKER_TURRET_TAG in vTypeInfoVO.tags:
-        vehicleClassTag = VEHICLE_BUNKER_TURRET_TAG
     return (vehicleName, vehicleClassTag)
 
 
@@ -280,17 +277,17 @@ class BattleRibbonsPanel(RibbonsPanelMeta, IArenaVehiclesController):
         ribbon = self._ribbonsAggregator.getRibbon(ribbonID)
         if ribbon and ribbon.isRoleBonus():
             sound = _SHOW_RIBBON_EXP_SOUND_NAME
-        self._playSound(sound)
+        self.__playSound(sound)
 
-    def onChange(self, _):
-        self._playSound(_CHANGE_RIBBON_SOUND_NAME)
+    def onChange(self):
+        self.__playSound(_CHANGE_RIBBON_SOUND_NAME)
 
     def onHide(self, ribbonID):
         ribbon = self._ribbonsAggregator.getRibbon(ribbonID)
         _logger.debug('RIBBON PANEL: onHide: ribbonID=%s, ribbon="%s"', ribbonID, ribbon)
         if ribbon is not None:
             self._ribbonsAggregator.resetRibbonData(ribbonID)
-            self._playSound(_HIDE_RIBBON_SOUND_NAME)
+            self.__playSound(_HIDE_RIBBON_SOUND_NAME)
         return
 
     def getCtrlScope(self):
@@ -369,7 +366,7 @@ class BattleRibbonsPanel(RibbonsPanelMeta, IArenaVehiclesController):
                 self.__invalidateRibbon(ribbon, method)
                 self.__delayedRibbons.remove((ribbon.getID(), method))
 
-    def _playSound(self, eventName):
+    def __playSound(self, eventName):
         if not self.__isVisible or not _RIBBON_SOUNDS_ENABLED:
             return
         soundNotifications = avatar_getter.getSoundNotifications()

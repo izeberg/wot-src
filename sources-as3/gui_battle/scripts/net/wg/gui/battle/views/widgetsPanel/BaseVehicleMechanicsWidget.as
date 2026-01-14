@@ -11,6 +11,8 @@ package net.wg.gui.battle.views.widgetsPanel
    import net.wg.gui.battle.views.widgetsPanel.vo.HotKeyVo;
    import net.wg.infrastructure.base.meta.IBaseVehicleMechanicsWidgetMeta;
    import net.wg.infrastructure.base.meta.impl.BaseVehicleMechanicsWidgetMeta;
+   import net.wg.infrastructure.events.ColorSchemeEvent;
+   import net.wg.infrastructure.managers.IColorSchemeManager;
    
    public class BaseVehicleMechanicsWidget extends BaseVehicleMechanicsWidgetMeta implements IBaseVehicleMechanicsWidgetMeta
    {
@@ -42,8 +44,13 @@ package net.wg.gui.battle.views.widgetsPanel
       
       private var _hotKeyMgr:HotkeyManager = null;
       
+      private var _isColorBlind:Boolean = false;
+      
+      private var _colorSchemeMgr:IColorSchemeManager;
+      
       public function BaseVehicleMechanicsWidget()
       {
+         this._colorSchemeMgr = App.colorSchemeMgr;
          super();
          this._state = this.getInitialState();
          var _loc1_:HotkeySettings = this.getHotkeySettings();
@@ -54,10 +61,14 @@ package net.wg.gui.battle.views.widgetsPanel
       {
          super.configUI();
          mouseEnabled = mouseChildren = false;
+         this.onColorSchemeUpdateHandler();
+         this._colorSchemeMgr.addEventListener(ColorSchemeEvent.SCHEMAS_UPDATED,this.onColorSchemeUpdateHandler);
       }
       
       override protected function onDispose() : void
       {
+         this._colorSchemeMgr.removeEventListener(ColorSchemeEvent.SCHEMAS_UPDATED,this.onColorSchemeUpdateHandler);
+         this._colorSchemeMgr = null;
          if(this.timer)
          {
             this.timer.dispose();
@@ -202,18 +213,30 @@ package net.wg.gui.battle.views.widgetsPanel
       
       public function set isPlayer(param1:Boolean) : void
       {
+         if(param1 == this._isPlayer)
+         {
+            return;
+         }
          this._isPlayer = param1;
          invalidateData();
       }
       
       public function set isReplay(param1:Boolean) : void
       {
+         if(param1 == this._isReplay)
+         {
+            return;
+         }
          this._isReplay = param1;
          invalidateData();
       }
       
       public function set crosshairType(param1:int) : void
       {
+         if(param1 == this._crosshairType)
+         {
+            return;
+         }
          this._crosshairType = param1;
          invalidateSize();
       }
@@ -231,6 +254,26 @@ package net.wg.gui.battle.views.widgetsPanel
       protected function get state() : String
       {
          return this._state;
+      }
+      
+      protected function set isColorBlind(param1:Boolean) : void
+      {
+         if(param1 == this._isColorBlind)
+         {
+            return;
+         }
+         this._isColorBlind = param1;
+         invalidateData();
+      }
+      
+      protected function get isColorBlind() : Boolean
+      {
+         return this._isColorBlind;
+      }
+      
+      private function onColorSchemeUpdateHandler(param1:ColorSchemeEvent = null) : void
+      {
+         this.isColorBlind = this._colorSchemeMgr.getIsColorBlindS();
       }
    }
 }

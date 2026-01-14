@@ -5,7 +5,7 @@ from Math import Vector3
 Autoreload = collections.namedtuple('Autoreload', [
  'reloadTime', 'boostStartTime', 'boostResidueTime', 'boostFraction'])
 AutoShoot = collections.namedtuple('AutoShoot', [
- 'shotDispersionPerSec', 'maxShotDispersion', 'groupSize'])
+ 'maxShotDispersion', 'groupSize', 'shotDispersionPerShot', 'aimingDelay'])
 DualGun = reflectedNamedTuple('DualGun', [
  'chargeTime', 'shootImpulse', 'reloadLockTime', 'reloadTimes', 'rateTime', 'chargeThreshold',
  'afterShotDelay', 'preChargeIndication', 'chargeCancelTime'])
@@ -50,7 +50,7 @@ DEFAULT_GUN_CLIP = (1, 0.0)
 DEFAULT_GUN_DUALGUN = DualGun(chargeTime=4.0, shootImpulse=100.0, reloadLockTime=10.0, reloadTimes=(10,
                                                                                                     8), rateTime=5, chargeThreshold=0.5, afterShotDelay=0.5, preChargeIndication=0.25, chargeCancelTime=0.18)
 DEFAULT_GUN_DUAL_ACCURACY = DualAccuracy(afterShotDispersionAngle=1.0, coolingDelay=5.0)
-DEFAULT_GUN_AUTOSHOOT = AutoShoot(shotDispersionPerSec=0.0, maxShotDispersion=0.0, groupSize=1)
+DEFAULT_GUN_AUTOSHOOT = AutoShoot(maxShotDispersion=0.0, shotDispersionPerShot=0.0, aimingDelay=0.0, groupSize=1)
 DEFAULT_GUN_TWINGUN = TwinGun(afterShotDelay=0.5, gunMarkerOffset=0.0, shootImpulse=0, twinGunReloadTime=0.0)
 DEFAULT_FAKE_TURRETS = {'lobby': (), 'battle': ()}
 DEFAULT_HULL_VARIANT_MATCH = (None, None)
@@ -91,7 +91,7 @@ class ObjectSlotType(object):
      ATTACHMENT,)
 
 
-class MuzzleBreakType(enum.IntEnum):
+class MuzzleBrakeType(enum.IntEnum):
     NONE = 0
     STANDARD = 1
 

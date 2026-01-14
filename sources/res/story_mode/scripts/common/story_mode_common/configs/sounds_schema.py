@@ -17,9 +17,6 @@ class SoundModel(models.Model):
         self.group = group
         self.state = state
 
-    def __repr__(self):
-        return ('<SoundModel(start={}, stop={}, group={}, state={})>').format(self.start, self.stop, self.group, self.state)
-
 
 _SoundModelType = typing.TypeVar('_SoundModelType', bound=SoundModel)
 

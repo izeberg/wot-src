@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/french/F139_Terrifiant/crash/lod2/Gun_01</nodefullVisual>
+	<parent>vehicles/french/F139_Terrifiant/crash/lod3/Gun_01</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-0.551574 -0.387637 -1.455448</min>
+		<max>0.788345 0.381043 7.209359</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

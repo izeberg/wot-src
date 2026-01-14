@@ -1,4 +1,6 @@
-import math, logging, sys, BigWorld, GUI, Keys, Math, ResMgr, WWISE, game_mode_emulator
+from __future__ import absolute_import, print_function
+import math, logging, sys, BigWorld, GUI, Keys, Math, ResMgr, WWISE
+from helpers import game_mode_emulator
 _logger = logging.getLogger(__name__)
 g_offlineModeEnabled = False
 g_offlineModeSpaceLoaded = False
@@ -126,7 +128,7 @@ def _offlineLoadCheck():
 
 def launch(spaceName):
     global g_offlineModeEnabled
-    print 'Entering offline space', spaceName
+    print('Entering offline space', spaceName)
     BigWorld.clearAllSpaces()
     BigWorld.worldDrawEnabled(False)
     _displayGUI(spaceName)

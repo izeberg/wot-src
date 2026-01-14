@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<info>
+		<name>NewOnboarding_Mission1_clientHUD</name>
+		<isMacro>false</isMacro>
+		<version>0</version>
+		<aspect>
+			<compatibles>CLIENT</compatibles>
+		</aspect>
+		<blocks>
+			<block>
+				<class>StartScript</class>
+				<id>StartScript_1</id>
+			</block>
+			<block>
+				<class>SetPrimaryObjectiveSettings</class>
+				<id>SetPrimaryObjectiveSettings_21</id>
+				<slots>
+					<slot>
+						<name>id</name>
+						<const>\nom1_obj1\</const>
+					</slot>
+					<slot>
+						<name>remindTimers</name>
+						<const>\MTIw MTA=\</const>
+					</slot>
+				</slots>
+			</block>
+		</blocks>
+		<connections>
+			<connection>
+				<from>StartScript_1</from>
+				<input>in</input>
+				<to>SetPrimaryObjectiveSettings_21</to>
+				<output>out</output>
+			</connection>
+		</connections>
+		<macros/>
+		<curves/>
+	</info>
+</root>

@@ -133,7 +133,7 @@ package net.wg.gui.battle.views.ribbonsPanel
          if(_loc9_ != null)
          {
             _loc9_.updateData(param2,param3,param4,param5,param6,this.getBonusLabel(param7),param8);
-            onChangeS(param2);
+            onChangeS();
          }
          else
          {
@@ -253,7 +253,7 @@ package net.wg.gui.battle.views.ribbonsPanel
                   {
                      _loc3_.updateData(_loc2_,_loc1_.valueStr,_loc1_.vehName,_loc1_.vehType,_loc1_.countVehs,_loc1_.bonusLabel,_loc1_.role);
                   }
-                  onChangeS(_loc2_);
+                  onChangeS();
                }
                if(_loc4_ || _loc3_ == null)
                {

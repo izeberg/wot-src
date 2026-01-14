@@ -14,6 +14,7 @@ from gui.impl.gen.view_models.views.lobby.common.router_model import RouterModel
 from gui.impl.gen.view_models.views.lobby.hangar.hangar_settings_model import HangarSettingsModel
 from gui.impl.gen.view_models.views.lobby.hangar.key_bindings_model import KeyBindingsModel
 from gui.impl.lobby.common.presenters.settings_presenter import SettingsPresenter
+from gui.impl.lobby.easy_tank_equip.easy_tank_equip_presenter import EasyTankEquipPresenter
 from gui.impl.lobby.hangar.base.account_styles import AccountStyles
 from gui.impl.lobby.hangar.base.blur import RandomHangarBlur
 from gui.impl.lobby.hangar.base.vehicles_filter_component import VehiclesFilterComponent
@@ -35,9 +36,7 @@ from gui.impl.lobby.hangar.presenters.vehicle_menu_presenter import VehicleMenuP
 from gui.impl.lobby.hangar.presenters.vehicle_playlists_presenter import VehiclePlaylistsPresenter
 from gui.impl.lobby.hangar.presenters.vehicle_statistics_presenter import VehiclesStatisticsPresenter
 from gui.impl.lobby.common.presenters.vehicles_info_presenter import VehiclesInfoPresenter
-from gui.impl.lobby.hangar.presenters.vignette_presenter import VignettePresenter
 from gui.impl.lobby.hangar.random.sound_manager import RANDOM_HANGAR_SOUND_SPACE
-from gui.impl.lobby.new_year.widgets.ho_main_widget import HOMainWidget
 from gui.impl.pub import WindowImpl
 from gui.impl.pub.view_component import ViewComponent
 from gui.lobby_state_machine.routable_view import IRoutableView
@@ -110,11 +109,10 @@ class RandomHangar(ViewComponent[RouterModel], IRoutableView):
            hangar.OptionalDevicesAssistant(): OptionalDevicesAssistantPresenter, 
            hangar.VehiclePlaylists(): VehiclePlaylistsPresenter, 
            hangar.UserMissions(): UserMissionsPresenter, 
-           hangar.Vignette(): VignettePresenter, 
+           hangar.EasyTankEquip(): EasyTankEquipPresenter, 
            hangar.PetObjectTooltip(): PetObjectTooltipPresenter, 
            hangar.Settings(): lambda : SettingsPresenter(HangarSettingsModel, HANGAR_VIEW_SETTINGS), 
-           hangar.KeyBindings(): lambda : SettingsPresenter(KeyBindingsModel, HANGAR_KEY_BINDINGS, readOnly=True), 
-           hangar.HolidayOpsWidget(): HOMainWidget}
+           hangar.KeyBindings(): lambda : SettingsPresenter(KeyBindingsModel, HANGAR_KEY_BINDINGS, readOnly=True)}
 
     def _subscribe(self):
         super(RandomHangar, self)._subscribe()

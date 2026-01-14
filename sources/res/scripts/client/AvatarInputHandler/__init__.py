@@ -3,7 +3,6 @@ from AvatarInputHandler.AimingSystems import disableShotPointCache
 from AvatarInputHandler.commands.armor_flashlight_control import ArmorFlashlightControl
 from AvatarInputHandler.vehicles_selection_mode import VehiclesSelectionControlMode
 from AvatarInputHandler.commands.fl_random_reserves import FLRandomReserves
-from PlayerEvents import g_playerEvents
 from aih_constants import MAP_CASE_MODES
 from helpers.CallbackDelayer import CallbackDelayer
 import BattleReplay, CommandMapping, DynamicCameras.ArcadeCamera, DynamicCameras.ArtyCamera, DynamicCameras.DualGunCamera, DynamicCameras.SniperCamera, DynamicCameras.StrategicCamera, DynamicCameras.kill_cam_camera, GenericComponents, MapCaseMode, RespawnDeathMode, TriggersManager, aih_constants, cameras, constants, control_modes, kill_cam_modes, DynamicCameras.twin_gun_camera
@@ -35,7 +34,7 @@ from player_notifications.siege_mode.notifier import SiegeModeNotifier
 from skeletons.account_helpers.settings_core import ISettingsCore
 from skeletons.gui.app_loader import IAppLoader
 from cgf_obsolete_script.script_game_object import ScriptGameObject, ComponentDescriptor
-from vehicles.mechanics.mechanic_info import hasVehicleMechanic
+from vehicles.mechanics.mechanic_helpers import hasVehicleDescrMechanic
 from vehicles.mechanics.mechanic_constants import VehicleMechanic
 INPUT_HANDLER_CFG = 'gui/avatar_input_handler.xml'
 _logger = logging.getLogger(__name__)
@@ -93,10 +92,10 @@ def addEmptyIfNotExits(name):
     return
 
 
-AIH_COMMANDS_DESC_MAP = {}
 OVERWRITE_CTRLS_DESC_MAP = {}
 for royaleBonusCap in constants.ARENA_BONUS_TYPE.BATTLE_ROYALE_RANGE:
-    OVERWRITE_CTRLS_DESC_MAP[royaleBonusCap] = {_CTRL_MODE.POSTMORTEM: (steel_hunter_control_modes.SHPostMortemControlMode, 'postMortemMode', _CTRL_TYPE.USUAL)}
+    OVERWRITE_CTRLS_DESC_MAP[royaleBonusCap] = {_CTRL_MODE.POSTMORTEM: (
+                             steel_hunter_control_modes.SHPostMortemControlMode, 'postMortemMode', _CTRL_TYPE.USUAL)}
 
 _DYNAMIC_CAMERAS = (
  DynamicCameras.ArcadeCamera.ArcadeCamera,
@@ -281,38 +280,32 @@ class AvatarInputHandler(CallbackDelayer, ScriptGameObject):
             if typeDescr.hasSiegeMode:
                 self.siegeModeNotifier = SiegeModeNotifier()
                 self.siegeModeNotifier.construct(vehicle)
-                if not hasVehicleMechanic(typeDescr, VehicleMechanic.PILLBOX_SIEGE_MODE):
+                if not hasVehicleDescrMechanic(typeDescr, VehicleMechanic.PILLBOX_SIEGE_MODE):
                     self.siegeModeControl = SiegeModeControl(self.siegeModeNotifier)
                     self.__commands.append(self.siegeModeControl)
             if typeDescr.isDualgunVehicle and not self.dualGunControl:
                 self.dualGunControl = DualGunController(typeDescr)
-            else:
-                if not typeDescr.isDualgunVehicle:
-                    self.dualGunControl = None
-                self.__commands.extend(createMechanicControls(typeDescr))
-                if player.hasBonusCap(ARENA_BONUS_TYPE_CAPS.RADAR):
-                    self.__commands.append(RadarControl())
-                if player.hasBonusCap(ARENA_BONUS_TYPE_CAPS.BATTLEROYALE):
-                    self.__commands.append(VehicleUpdateControl())
-                    self.__commands.append(VehicleUpgradePanelControl())
-                    self.__detachedCommands.append(VehicleUpgradePanelControl())
-                if player.hasBonusCap(ARENA_BONUS_TYPE_CAPS.EPIC):
-                    self.__detachedCommands.append(FLRandomReserves())
-                self.__persistentCommands.append(createDevCommandsControl())
-                if player.hasBonusCap(ARENA_BONUS_TYPE_CAPS.SWITCH_SETUPS):
-                    self.__persistentCommands.append(PrebattleSetupsControl())
-                if vehicle.appearance:
-                    vehicle.appearance.removeComponentByType(GenericComponents.ControlModeStatus)
-                    vehicle.appearance.createComponent(GenericComponents.ControlModeStatus, _CTRL_MODES.index(self.__ctrlModeName))
-                if player.inWorld:
-                    player.entityGameObject.removeComponentByType(GenericComponents.ControlModeStatus)
-                    player.entityGameObject.createComponent(GenericComponents.ControlModeStatus, _CTRL_MODES.index(self.__ctrlModeName))
-                self.__commands.append(ArmorFlashlightControl())
-                for bonusCap, commands in AIH_COMMANDS_DESC_MAP.iteritems():
-                    if player.hasBonusCap(bonusCap):
-                        for command in commands:
-                            self.__commands.append(command())
-
+            elif not typeDescr.isDualgunVehicle:
+                self.dualGunControl = None
+            self.__commands.extend(createMechanicControls(typeDescr))
+            if player.hasBonusCap(ARENA_BONUS_TYPE_CAPS.RADAR):
+                self.__commands.append(RadarControl())
+            if player.hasBonusCap(ARENA_BONUS_TYPE_CAPS.BATTLEROYALE):
+                self.__commands.append(VehicleUpdateControl())
+                self.__commands.append(VehicleUpgradePanelControl())
+                self.__detachedCommands.append(VehicleUpgradePanelControl())
+            if player.hasBonusCap(ARENA_BONUS_TYPE_CAPS.EPIC):
+                self.__detachedCommands.append(FLRandomReserves())
+            self.__persistentCommands.append(createDevCommandsControl())
+            if player.hasBonusCap(ARENA_BONUS_TYPE_CAPS.SWITCH_SETUPS):
+                self.__persistentCommands.append(PrebattleSetupsControl())
+            if vehicle.appearance:
+                vehicle.appearance.removeComponentByType(GenericComponents.ControlModeStatus)
+                vehicle.appearance.createComponent(GenericComponents.ControlModeStatus, _CTRL_MODES.index(self.__ctrlModeName))
+            if player.inWorld:
+                player.entityGameObject.removeComponentByType(GenericComponents.ControlModeStatus)
+                player.entityGameObject.createComponent(GenericComponents.ControlModeStatus, _CTRL_MODES.index(self.__ctrlModeName))
+            self.__commands.append(ArmorFlashlightControl())
             return
 
     def prerequisites(self):
@@ -689,7 +682,6 @@ class AvatarInputHandler(CallbackDelayer, ScriptGameObject):
                 player.entityGameObject.removeComponentByType(GenericComponents.ControlModeStatus)
                 player.entityGameObject.createComponent(GenericComponents.ControlModeStatus, _CTRL_MODES.index(self.__ctrlModeName))
             BigWorld.setEdgeDrawerRenderMode(1 if eMode in aih_constants.MAP_CASE_MODES else 0)
-            g_playerEvents.onAihControlModeChanged(oldEmode=prevCtrlModeName, newEmode=eMode, validPlayer=player, attachedVeh=vehicle)
             return
 
     def onObserverControlModeChanged(self, eMode):

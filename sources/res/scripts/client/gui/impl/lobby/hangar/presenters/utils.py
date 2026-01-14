@@ -8,7 +8,7 @@ from gui.clans.clan_helpers import isStrongholdsEnabled
 from gui.impl.gen.view_models.views.lobby.hangar.main_menu_model import MainMenuModel
 from gui.impl.gen.view_models.views.lobby.hangar.menu_item_model import MenuItemModel
 from gui.server_events.events_dispatcher import showMissions
-from gui.shared.event_dispatcher import showShop, showStorage, showBarracks, showViewByAlias, showTechTree, showModeSelectorWindow, showPersonalMissionCampaignSelectorWindow
+from gui.shared.event_dispatcher import showShop, showStorage, showBarracks, showViewByAlias, showTechTree, showModeSelectorWindow, showPersonalMissionCampaignSelectorWindow, showServiceRecordWindow
 from gui.shared.system_factory import registerMenuItems, collectMenuItems
 from gui.tournament.tournament_helpers import showTournaments, isTournamentEnabled
 from helpers import dependency
@@ -17,6 +17,7 @@ from items.components.c11n_constants import CustomizationType
 from skeletons.gui.customization import ICustomizationService
 from skeletons.gui.lobby_context import ILobbyContext
 from shared_utils import findFirst
+GUINode = namedtuple('GUINode', ('id', 'state', 'unlockProps'))
 MenuItemEntry = namedtuple('MenuItemEntry', ['handler', 'showCondition', 'enabledCondition'])
 SHARED_MENU_ITEMS = OrderedDict([
  (
@@ -46,7 +47,7 @@ PERSONAL_MISSIONS_MENU_ITEM = (
  MenuItemEntry(showPersonalMissionCampaignSelectorWindow, lambda : True, isPersonalMissionsEnabled))
 ACHIEVEMENTS_MENU_ITEM = (
  MainMenuModel.ACHIEVEMENTS,
- MenuItemEntry(partial(showViewByAlias, VIEW_ALIAS.LOBBY_PROFILE), lambda : True, lambda : True))
+ MenuItemEntry(showServiceRecordWindow, lambda : True, lambda : True))
 TECHTREE_MENU_ITEM = (
  MainMenuModel.TECHTREE,
  MenuItemEntry(showTechTree, lambda : True, lambda : True))

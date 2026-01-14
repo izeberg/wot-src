@@ -70,7 +70,7 @@ msgid "battleResult/team/prestigePoints/header"
 msgstr "Prestige Points"
 
 msgid "common/arena/fullName"
-msgstr "{0} – {1}"
+msgstr "{0} – {1}"
 
 msgid "common/arena/nameAndMode"
 msgstr "{{0}}, {{1}}"
@@ -189,6 +189,15 @@ msgstr "Module research"
 
 msgid "common/mainFinishReasonTitle"
 msgstr "Main battle phase:"
+
+msgid "common/missions/noProgress/button"
+msgstr "To Missions"
+
+msgid "common/missions/noProgress/description"
+msgstr "View current mission progress"
+
+msgid "common/missions/noProgress/header"
+msgstr "No progress in missions or vehicle research."
 
 msgid "common/newSkillPrediction"
 msgstr "Battles left (approximately): %(battles)s"
@@ -670,6 +679,12 @@ msgstr "{{var}} ally commended you this battle."
 msgid "comms/likes/pbs/tooltip/header"
 msgstr "Commendations received"
 
+msgid "conditions/type/and"
+msgstr "AND"
+
+msgid "conditions/type/or"
+msgstr "OR"
+
 msgid "customizationProgress/award/newLevel"
 msgstr "Level %(level)s \"%(name)s\" decal reached."
 
@@ -804,9 +819,6 @@ msgstr "Award for the first victory each day"
 msgid "details/calculations/multiplierInfo/vehicleSeparator"
 msgstr "• "
 
-msgid "details/calculations/newYear"
-msgstr "Holiday Ops bonus"
-
 msgid "details/calculations/noPenalty"
 msgstr "For courageous resistance"
 
@@ -860,9 +872,6 @@ msgstr "Total"
 
 msgid "details/calculations/total"
 msgstr "Total:"
-
-msgid "details/calculations/vehicleBranch"
-msgstr "Holiday Ops bonus"
 
 msgid "details/calculations/wotPlus"
 msgstr "WoT Plus Battle Bonus"
@@ -1066,6 +1075,64 @@ msgstr "For this battle you can earn:"
 msgid "getPremiumPopover/prem"
 msgstr "Premium Account"
 
+msgid "missionsProgress/aboutVehicle/button"
+msgstr "To Research"
+
+msgid "missionsProgress/aboutVehicle/description"
+msgstr "Available for research"
+
+msgid "missionsProgress/aboutVehicle/prediction"
+msgstr "Battles left (approximately): {{prediction}}"
+
+msgid "missionsProgress/aboutVehicle/title"
+msgstr "ABOUT VEHICLE"
+
+msgid "missionsProgress/battleMatters/doneInfo"
+msgstr "Mission #{{name}} completed."
+
+msgid "missionsProgress/battleMatters/title"
+msgstr "TANK ACADEMY"
+
+msgid "missionsProgress/notificationsTabs/aboutVehicle/module"
+msgstr "NEW MODULE UNLOCKED!"
+
+msgid "missionsProgress/notificationsTabs/aboutVehicle/vehicle"
+msgstr "NEW VEHICLE UNLOCKED!"
+
+msgid "missionsProgress/notificationsTabs/battleMatters"
+msgstr "ACADEMY MISSION COMPLETED!"
+
+msgid "missionsProgress/notificationsTabs/battlePass/chapterComplete"
+msgstr "CHAPTER COMPLETED!"
+
+msgid "missionsProgress/notificationsTabs/battlePass/stageComplete"
+msgstr "STAGE COMPLETED!"
+
+msgid "missionsProgress/notificationsTabs/common"
+msgstr "MISSION COMPLETED!"
+
+msgid "missionsProgress/notificationsTabs/daily"
+msgstr "DAILY MISSION COMPLETED!"
+
+msgid "missionsProgress/notificationsTabs/eliteSystem/maxLevel"
+msgstr "MAXIMUM ELITE LEVEL"
+
+msgid "missionsProgress/notificationsTabs/eliteSystem/newLevel"
+msgstr "NEW ELITE LEVEL"
+
+msgid "missionsProgress/notificationsTabs/epic"
+msgstr "EPIC MISSION COMPLETED!"
+
+msgid ""
+"missionsProgress/notificationsTabs/personalMissions/operation_mission_complete"
+msgstr "OPERATION MISSION COMPLETED!"
+
+msgid "missionsProgress/notificationsTabs/premium"
+msgstr "PREMIUM MISSION COMPLETED!"
+
+msgid "missionsProgress/notificationsTabs/weekly"
+msgstr "WEEKLY MISSION COMPLETED!"
+
 msgid "noData"
 msgstr "Sorry, detailed battle results unavailable."
 
@@ -1097,8 +1164,39 @@ msgstr "Elite Points earned:"
 msgid "prestige/max/description"
 msgstr "Maximum Elite level reached."
 
+msgid "prestige/maxLevelReached/description"
+msgstr "Maximum Elite Level reached"
+
+msgid "prestige/newLevelAchieved/description"
+msgstr "New Elite Level reached"
+
 msgid "prestige/title"
 msgstr "Elite System"
+
+msgid "progression/completed"
+msgstr "Completed"
+
+msgid "progression/completedPointsFrom/withLabel"
+msgstr ""
+"{{@class $labelClass}}Completed:{{/}} {{completed}} {{@class "
+"$totalClass}}{{@class $dividerClass}}/ {{/}}{{total}}{{/}}"
+
+msgid "progression/completedPointsFrom/withoutLabel"
+msgstr ""
+"{{completed}} {{@class $totalClass}}{{@class $dividerClass}}/ "
+"{{/}}{{total}}{{/}}"
+
+msgid "progression/linkBtn/info"
+msgstr "Click to view detailed information."
+
+msgid "progression/missionsCompleteCounter"
+msgstr "{{@class $labelClass}}Completed:{{/}} {{completed}}"
+
+msgid "progression/progressUnavailable"
+msgstr "It is currently unavailable. Try watching later."
+
+msgid "progression/totalEarned"
+msgstr "Total earned: {{value}}"
 
 msgid "progressiveReward/descr"
 msgstr ""
@@ -1420,6 +1518,9 @@ msgstr "?empty?"
 
 msgid "team/stats/ownTeam"
 msgstr "Our Team"
+
+msgid "team/stats/parameter/artilleryFortEquipDamageDealt"
+msgstr "by Artillery Strike"
 
 msgid "team/stats/parameter/capturePointsVal"
 msgstr "Base capture/defense points"

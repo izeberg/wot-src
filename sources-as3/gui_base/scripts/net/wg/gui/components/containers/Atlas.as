@@ -13,6 +13,7 @@ package net.wg.gui.components.containers
    import flash.utils.Dictionary;
    import net.wg.data.VO.AtlasItemVO;
    import net.wg.data.constants.Errors;
+   import net.wg.data.constants.Values;
    import net.wg.data.constants.generated.ATLAS_CONSTANTS;
    import net.wg.infrastructure.events.AtlasEvent;
    import net.wg.infrastructure.interfaces.IAtlas;
@@ -28,9 +29,17 @@ package net.wg.gui.components.containers
       private static const XML_LOADED_MASK:uint = 2;
       
       private static const INITIALIZED_MASK:uint = 3;
+      
+      private static const CHAR_PIPE:String = "|";
+      
+      private static const DDS_EXTENSION:String = ".dds";
+      
+      private static const XML_EXTENSION:String = ".xml";
        
       
       private var _atlasName:String = "";
+      
+      private var _extension:String = "";
       
       private var _atlasBitmapLoader:Loader = null;
       
@@ -59,11 +68,12 @@ package net.wg.gui.components.containers
          return this._atlasName;
       }
       
-      public function initResources(param1:String) : void
+      public function initResources(param1:String, param2:String = "") : void
       {
          this.assert(!this._isDisposed,"Atlas manager" + Errors.ALREADY_DISPOSED);
          this.assert(!this._atlasName,"Atlas manager already initialized!");
          this.assert(Boolean(param1),"value is null or empty");
+         this._extension = param2;
          this._atlasName = param1;
          this.initializeAtlasBitmapLoading();
          this.initializeAtlasXMLLoading();
@@ -74,10 +84,11 @@ package net.wg.gui.components.containers
          this._atlasBitmapLoader = new Loader();
          this._atlasBitmapLoader.contentLoaderInfo.addEventListener(Event.COMPLETE,this.onAtlasBitmapLoadingCompleteHandler);
          this._atlasBitmapLoader.contentLoaderInfo.addEventListener(IOErrorEvent.IO_ERROR,this.onAtlasBitmapIOErrorHandler);
-         var _loc1_:String = ATLAS_CONSTANTS.ATLAS_RESOURCES_PATH + this.atlasName + ".dds";
-         var _loc2_:URLRequest = new URLRequest(_loc1_);
-         var _loc3_:LoaderContext = new LoaderContext(false,ApplicationDomain.currentDomain);
-         this._atlasBitmapLoader.load(_loc2_,_loc3_);
+         var _loc1_:String = Boolean(this._extension) ? this._extension + CHAR_PIPE : Values.EMPTY_STR;
+         var _loc2_:String = ATLAS_CONSTANTS.ATLAS_RESOURCES_PATH + _loc1_ + this.atlasName + DDS_EXTENSION;
+         var _loc3_:URLRequest = new URLRequest(_loc2_);
+         var _loc4_:LoaderContext = new LoaderContext(false,ApplicationDomain.currentDomain);
+         this._atlasBitmapLoader.load(_loc3_,_loc4_);
       }
       
       private function onAtlasBitmapIOErrorHandler(param1:IOErrorEvent) : void
@@ -97,12 +108,13 @@ package net.wg.gui.components.containers
       
       private function initializeAtlasXMLLoading() : void
       {
-         var _loc1_:String = ATLAS_CONSTANTS.ATLAS_RESOURCES_PATH + this.atlasName + ".xml";
-         var _loc2_:URLRequest = new URLRequest(_loc1_);
+         var _loc1_:String = Boolean(this._extension) ? this._extension + CHAR_PIPE : Values.EMPTY_STR;
+         var _loc2_:String = ATLAS_CONSTANTS.ATLAS_RESOURCES_PATH + _loc1_ + this.atlasName + XML_EXTENSION;
+         var _loc3_:URLRequest = new URLRequest(_loc2_);
          this._atlasXMLURLLoader = new URLLoader();
          this._atlasXMLURLLoader.addEventListener(Event.COMPLETE,this.onAtlasXMLLoadingCompleteHandler);
          this._atlasXMLURLLoader.addEventListener(IOErrorEvent.IO_ERROR,this.onAtlasXMLIOErrorHandler);
-         this._atlasXMLURLLoader.load(_loc2_);
+         this._atlasXMLURLLoader.load(_loc3_);
       }
       
       private function onAtlasXMLLoadingCompleteHandler(param1:Event) : void

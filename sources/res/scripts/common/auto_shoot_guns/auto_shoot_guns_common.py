@@ -9,7 +9,7 @@ COMBAT_ACTIONS_DELAY = 1.0
 
 class PROJECTILE_INTERVAL_SETTINGS:
     PROJECTILE_INTERVAL_LIMITS = [
-     0, 8, 16]
+     8, 16]
     DEFAULT_PROJECTILE_INTERVAL = SERVER_TICK_LENGTH
 
 
@@ -48,9 +48,9 @@ class AutoShootPredictionState(object):
 
 
 def autoShootDynamicAttrFactors():
-    factors = {'rate/multiplier': 1.0, 
+    factors = {'shotIntervalMultFactor': 1.0, 
        'isDelayShooting': False, 
-       'shotDispersionPerSecFactor': 1.0, 
        'maxShotDispersionFactor': 1.0, 
-       'projectileIntervalFactor': 1.0}
+       'projectileIntervalFactor': 1.0, 
+       'shotDispersionPerShotFactor': 1.0}
     return factors

@@ -1,4 +1,4 @@
-import logging, BigWorld, constants
+import BigWorld, constants
 from PlayerEvents import g_playerEvents
 from account_helpers import AccountSettings
 from account_helpers.AccountSettings import SHOW_DEMO_ACC_REGISTRATION
@@ -17,9 +17,7 @@ from skeletons.gui.login_manager import ILoginManager
 from skeletons.gui.platform.wgnp_controllers import IWGNPSteamAccRequestController
 from skeletons.gui.shared import IItemsCache
 from skeletons.gui.shared.utils import IHangarSpace
-from skeletons.new_year import INewYearTutorialController
 from wg_async import wg_async, wg_await
-_logger = logging.getLogger(__name__)
 
 class SteamCompletionController(ISteamCompletionController):
     _loginManager = dependency.descriptor(ILoginManager)
@@ -30,12 +28,10 @@ class SteamCompletionController(ISteamCompletionController):
     _itemsCache = dependency.descriptor(IItemsCache)
     __settingsCore = dependency.descriptor(ISettingsCore)
     __connectionManager = dependency.descriptor(IConnectionManager)
-    __nyTutorialController = dependency.descriptor(INewYearTutorialController)
 
     def __init__(self):
         super(SteamCompletionController, self).__init__()
         self.__isLobbyInited = False
-        self.__locks = set()
 
     @property
     def isSteamAccount(self):
@@ -50,11 +46,6 @@ class SteamCompletionController(ISteamCompletionController):
     def isConfirmEmailOverlayAllowed(self):
         uiStorage = self.__settingsCore.serverSettings.getUIStorage2()
         return uiStorage.get(UI_STORAGE_KEYS.IS_CONFIRM_EMAIL_OVERLAY_ALLOWED)
-
-    def fini(self):
-        self.__locks = None
-        super(SteamCompletionController, self).fini()
-        return
 
     def onLobbyStarted(self, ctx):
         if not self.__isLobbyInited:
@@ -77,16 +68,6 @@ class SteamCompletionController(ISteamCompletionController):
     def onDisconnected(self):
         self.__clear()
 
-    def lock(self, key):
-        self.__locks.add(key)
-
-    def unlock(self, key):
-        if key in self.__locks:
-            self.__locks.remove(key)
-
-    def hasLock(self, key):
-        return key in self.__locks
-
     def __subscribe(self):
         self._hangarSpace.onSpaceCreate += self.__onSpaceCreate
 
@@ -95,13 +76,12 @@ class SteamCompletionController(ISteamCompletionController):
 
     def __clear(self):
         self.__unsubscribe()
-        self.__locks.clear()
         self.__isLobbyInited = False
 
     @wg_async
     def __onSpaceCreate(self):
         self.__unsubscribe()
-        if self._overlayController.isActive or not self.isSteamAccount or not self.__canSteamShadeShow() or self.__nyTutorialController.canStartTutorial():
+        if self._overlayController.isActive or not self.isSteamAccount or not self.__canSteamShadeShow():
             lockNotificationManager(lock=False, releasePostponed=True)
             return
         status = yield wg_await(self._wgnpSteamAccCtrl.getEmailStatus(waitingID=CONTENT_WAITING))
@@ -110,15 +90,12 @@ class SteamCompletionController(ISteamCompletionController):
             return
         if status.typeIs(StatusTypes.ADD_NEEDED) and not self.isAddEmailOverlayShown:
             showSteamAddEmailOverlay()
-            lockNotificationManager(lock=False, releasePostponed=True, fireReleased=False)
+            lockNotificationManager(lock=False, releasePostponed=True)
         elif status.typeIs(StatusTypes.ADDED) and self.isConfirmEmailOverlayAllowed:
             showSteamConfirmEmailOverlay(email=status.email)
         lockNotificationManager(lock=False, releasePostponed=True)
 
     def __canSteamShadeShow(self):
-        if self.__locks:
-            _logger.info('Steam shade is locked, keys: %s', self.__locks)
-            return False
         steamShadeConfig = self._lobbyContext.getServerSettings().steamShadeConfig
         if steamShadeConfig.battlesPlayed < 0 and steamShadeConfig.sessions < 0:
             return False

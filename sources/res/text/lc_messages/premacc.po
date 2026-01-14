@@ -230,52 +230,8 @@ msgstr "Parental Control"
 msgid "parentControlCard/infoPopover/link"
 msgstr "on the game portal"
 
-msgid "piggyBank/backBtnAddLabel"
-msgstr "TO ACCOUNT STATUS"
-
-msgid "piggyBank/moreInfoBtn"
-msgstr "Details"
-
-msgid "piggyBank/premAccProlongBtn"
-msgstr "Extend Premium"
-
-msgid "piggyBank/premAccUnactiveMsg"
-msgstr "Credit Reserve replenishes only with an active WoT Premium Account."
-
-msgid "piggyBank/progressBarComplited"
-msgstr "Credit Reserve full"
-
-msgid "piggyBank/reserveBank/description"
-msgstr ""
-"Fight battles to replenish Credit Reserve. Each {period} d Credit Reserve "
-"opens, and the accumulated credits are sent to your account. Credit Reserve "
-"stores up to {maxAmount}."
-
 msgid "piggyBank/reserveBank/title"
 msgstr "Credit Reserve"
-
-msgid "piggyBank/reserveBankPremUnsearched/description"
-msgstr ""
-"With an active WoT Premium Account, Credit Reserve accumulates an additional"
-" {percDisc}% of the credits earned in battles. Credit Reserve has a capacity"
-" of {maxAmount}. Each {period} d Credit Reserve opens at the scheduled time,"
-" and all accumulated credits are sent to your account, even if your Premium "
-"Account has already expired."
-
-msgid "piggyBank/reserveBankPremUnsearched/title"
-msgstr "Receive up to {maxAmount} every {period} d."
-
-msgid "piggyBank/timeLeft/days"
-msgstr "{day} d {hour} h"
-
-msgid "piggyBank/timeLeft/hours"
-msgstr "{hour} h {min} min"
-
-msgid "piggyBank/timeLeft/lessMin"
-msgstr "1 min"
-
-msgid "piggyBank/timeToOpenBankMsg/title"
-msgstr "Credit Reserve opens in:"
 
 msgid "piggyBankCard/timeLeft/days"
 msgstr "%(day)s d"

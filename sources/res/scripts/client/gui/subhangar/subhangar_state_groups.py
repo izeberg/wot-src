@@ -5,8 +5,11 @@ class CameraMover(object):
     def moveCamera(self, cameraManager, cameraName):
         cameraManager.switchByCameraName(cameraName)
 
+    def moveCameraFailed(self):
+        pass
 
-class SmoothCameraMover(object):
+
+class SmoothCameraMover(CameraMover):
 
     def moveCamera(self, cameraManager, cameraName):
         cameraManager.switchByCameraName(cameraName, False)

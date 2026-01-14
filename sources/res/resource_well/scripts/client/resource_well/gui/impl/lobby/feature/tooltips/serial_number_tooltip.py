@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from frameworks.wulf import ViewSettings
 from gui.impl.gen import R
 from gui.impl.pub import ViewImpl
@@ -7,7 +8,7 @@ class SerialNumberTooltip(ViewImpl):
     __slots__ = ()
 
     def __init__(self, *args, **kwargs):
-        settings = ViewSettings(R.views.resource_well.lobby.feature.tooltips.SerialNumberTooltip())
+        settings = ViewSettings(R.views.resource_well.mono.lobby.tooltips.serial_number_tooltip())
         settings.model = SerialNumberTooltipModel()
         settings.args = args
         settings.kwargs = kwargs

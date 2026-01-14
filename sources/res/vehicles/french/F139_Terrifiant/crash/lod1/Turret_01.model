@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/french/F139_Terrifiant/crash/lod1/Turret_01</nodefullVisual>
+	<visibilityBox>
+		<min>-1.337212 0.009135 -3.124628</min>
+		<max>1.389112 3.450467 1.343140</max>
+	</visibilityBox>
+	<parent>vehicles/french/F139_Terrifiant/crash/lod2/Turret_01</parent>
+	<extent>64.000000</extent>
+	<tank>true</tank>
+</root>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/russian/R172_Object_752/_skins/R172_Object_752_K_3Dst/crash/lod3/Gun_01</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-0.946019 -0.508509 -1.724922</min>
+		<max>0.947539 0.891022 5.594985</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/russian/R172_Object_752/_skins/R172_Object_752_K_3Dst/crash/lod2/Gun_01</nodefullVisual>
+</root>

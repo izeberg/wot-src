@@ -6,7 +6,7 @@ from gui.Scaleform.daapi.view.lobby.customization.context.custom_mode import Cus
 from gui.Scaleform.daapi.view.lobby.customization.context.editable_style_mode import EditableStyleMode
 from gui.Scaleform.daapi.view.lobby.customization.context.styled_diffs_cache import StyleDiffsCache
 from gui.Scaleform.daapi.view.lobby.customization.context.styled_mode import StyledMode
-from gui.Scaleform.daapi.view.lobby.customization.shared import CustomizationTabs, resetC11nItemsNovelty, getCommonPurchaseItems, vehicleHasSlot, remove3DStyleIncompatibleCommonItems
+from gui.Scaleform.daapi.view.lobby.customization.shared import CustomizationTabs, resetC11nItemsNovelty, getCommonPurchaseItems, vehicleHasSlot, remove3DStyleIncompatibleCommonItems, removeUncommonItems
 from gui.Scaleform.daapi.view.lobby.customization.vehicle_anchors_updater import VehicleAnchorsUpdater
 from gui.customization.constants import CustomizationModes
 from gui.hangar_cameras.c11n_hangar_camera_manager import C11nHangarCameraManager
@@ -62,7 +62,6 @@ class _CustomizationEvents(object):
         self.onEditModeEnabled = Event.Event(self._eventsManager)
         self.onPersonalNumberCleared = Event.Event(self._eventsManager)
         self.onProlongStyleRent = Event.Event(self._eventsManager)
-        self.onCloseWindow = Event.Event(self._eventsManager)
         self.onCloseDialogShown = Event.Event(self._eventsManager)
         self.onCloseDialogClosed = Event.Event(self._eventsManager)
 
@@ -99,7 +98,6 @@ class CustomizationContext(object):
         self.updateCommonOutfits()
         self.__carouselItems = None
         self.__initialItemCD = None
-        self.__exitCallback = None
         self.__applyingItems = False
         return
 
@@ -295,14 +293,6 @@ class CustomizationContext(object):
             self.changeMode(CustomizationModes.STYLE_2D_EDITABLE, source=source)
             return
 
-    def getExitCallback(self):
-        return self.__exitCallback
-
-    def previewStyle(self, style, exitCallback=None, source=None):
-        self.__exitCallback = exitCallback
-        self.changeMode(CustomizationModes.STYLE_3D if style.is3D else CustomizationModes.STYLE_2D, source=source)
-        self.events.onShowStyleInfo(style)
-
     def canEditStyle(self, itemCD):
         if self.__modeId in CustomizationModes.STYLES:
             outfit = self.mode.getModifiedOutfit()
@@ -345,6 +335,7 @@ class CustomizationContext(object):
 
     def cancelChanges(self):
         self.__commonModifiedOutfit = self.commonOriginalOutfit.copy()
+        removeUncommonItems(self.__commonModifiedOutfit)
         if self.isInStyleMode(CustomizationModes.STYLE_3D) and self.__commonOutfitDiff:
             for slotType in GUI_ITEM_TYPE.COMMON_C11N_COMPATIBLE_WITH_3D_STYLES:
                 for partIdx in Area.ALL:
@@ -378,6 +369,7 @@ class CustomizationContext(object):
         remove3DStyleIncompatibleCommonItems(self.__commonOriginal3DOutfit, self.styleMode.originalStyle if self.isInStyleMode(CustomizationModes.STYLE_3D) else None)
         self.__commonOriginal3DOutfit.invalidate()
         self.__commonModifiedOutfit = outfit.copy()
+        removeUncommonItems(self.__commonModifiedOutfit)
         self.__commonOutfitStyleId = None
         self.__commonOutfitDiff = None
         return

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.632613 -0.000000 -3.086975</min>
+		<max>1.632613 1.246589 3.077404</max>
+	</visibilityBox>
+	<parent>vehicles/british/GB109_GSOR_1008/_skins/GB109_GSOR_1008_KS_3Dst/normal/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/british/GB109_GSOR_1008/_skins/GB109_GSOR_1008_KS_3Dst/normal/lod0/Chassis</nodefullVisual>
+</root>

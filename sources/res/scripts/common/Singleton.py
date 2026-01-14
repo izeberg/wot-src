@@ -1,4 +1,4 @@
-
+from __future__ import absolute_import, print_function
 
 class Singleton(object):
 
@@ -24,6 +24,6 @@ if __name__ == '__main__':
 
 
     ins1 = MySingleton('instance1')
-    print id(ins1), ins1.instanceName
+    print(id(ins1), ins1.instanceName)
     ins2 = MySingleton('instance2')
-    print id(ins2), ins2.instanceName
+    print(id(ins2), ins2.instanceName)

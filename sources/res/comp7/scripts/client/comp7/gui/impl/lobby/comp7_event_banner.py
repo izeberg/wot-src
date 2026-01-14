@@ -1,3 +1,4 @@
+import weakref
 from account_helpers.AccountSettings import COMP7_BANNER_FIRST_APPEARANCE_TIMESTAMP
 from comp7_core.gui.impl.lobby.event_banner import Comp7CoreEventBanner
 from comp7.gui.impl.lobby.tooltips.entry_point_tooltip import Comp7EntryPointTooltip
@@ -42,4 +43,4 @@ class Comp7EventBanner(Comp7CoreEventBanner):
 
     def createToolTipContent(self, event):
         super(Comp7EventBanner, self).createToolTipContent(event)
-        return Comp7EntryPointTooltip()
+        return Comp7EntryPointTooltip(eventBanner=weakref.proxy(self))

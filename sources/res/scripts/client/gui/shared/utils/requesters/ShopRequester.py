@@ -1,6 +1,7 @@
 import logging, weakref
 from abc import ABCMeta, abstractmethod
 from collections import namedtuple
+from future.utils import viewvalues
 import typing, BigWorld
 from constants import WIN_XP_FACTOR_MODE, ARENA_BONUS_TYPE
 from goodies.goodie_constants import GOODIE_VARIETY, GOODIE_TARGET_TYPE, GOODIE_RESOURCE_TYPE
@@ -401,14 +402,6 @@ class ShopRequester(AbstractSyncDataRequester, ShopCommonStats, IShopRequester):
 
         return False
 
-    def getPetCostWithDiscount(self, petPrice):
-        petGoodies = self.personalPetDiscounts
-        if petGoodies:
-            bestGoody = self.bestGoody(petGoodies)
-            currency = petPrice.getCurrency()
-            return Money.makeFrom(currency, getPriceWithDiscount(petPrice.get(petPrice.getCurrency(), 0), bestGoody.resource))
-        return petPrice
-
     def getVehicleSlotsPrice(self, currentSlotsCount):
         price = super(ShopRequester, self).getVehicleSlotsPrice(currentSlotsCount)
         slotGoodies = self.personalSlotDiscounts
@@ -476,10 +469,6 @@ class ShopRequester(AbstractSyncDataRequester, ShopCommonStats, IShopRequester):
         return self.__personalDiscountsByTarget(GOODIE_TARGET_TYPE.ON_BUY_SLOT)
 
     @property
-    def personalPetDiscounts(self):
-        return self.__personalDiscountsByTarget(GOODIE_TARGET_TYPE.ON_BUY_PET)
-
-    @property
     def personalTankmanDiscounts(self):
         return self.__personalDiscountsByTarget(GOODIE_TARGET_TYPE.ON_BUY_GOLD_TANKMEN)
 
@@ -504,8 +493,7 @@ class ShopRequester(AbstractSyncDataRequester, ShopCommonStats, IShopRequester):
 
     def bestGoody(self, goodies):
         if goodies:
-            _, goody = sorted(goodies.iteritems(), key=lambda (_, goody): goody.resource[1])[(-1)]
-            return goody
+            return sorted(viewvalues(goodies), key=lambda goody: goody.resource[1])[(-1)]
         else:
             return
 

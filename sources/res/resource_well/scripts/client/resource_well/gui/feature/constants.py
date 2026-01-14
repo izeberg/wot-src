@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging
 from enum import Enum
 _logger = logging.getLogger(__name__)

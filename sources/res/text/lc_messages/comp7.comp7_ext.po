@@ -281,6 +281,21 @@ msgstr "%(rank)s. %(division)s"
 msgid "battleResult/subTask/title/raise"
 msgstr "You have been promoted to %(division)s. %(rank)s!"
 
+msgid "battlesIndicatorTooltip/day/heading"
+msgstr "Battles fought (day): %(battlesCount)s"
+
+msgid "battlesIndicatorTooltip/listHeading"
+msgstr "Including:"
+
+msgid "battlesIndicatorTooltip/season/heading"
+msgstr "Battles fought (season): %(battlesCount)s"
+
+msgid "battlesIndicatorTooltip/soloBattlesCount"
+msgstr "Solo/Platoon: %(soloBattlesCount)s"
+
+msgid "battlesIndicatorTooltip/superPlatoonBattlesCount"
+msgstr "Super Platoon: %(superPlatoonBattlesCount)s"
+
 msgid "calendarDay/serverName"
 msgstr "%(server)s"
 
@@ -346,6 +361,24 @@ msgstr "Perks"
 msgid "crewMembersTooltip/subHeading"
 msgstr "Onslaught. Year of the Dragon"
 
+msgid "damageIndicatorTooltip/damage/day/heading"
+msgstr "Average damage (day): %(averageDamageDealt)s"
+
+msgid "damageIndicatorTooltip/damage/description"
+msgstr "Ratio of the total damage caused to the number of battles fought."
+
+msgid "damageIndicatorTooltip/damage/season/heading"
+msgstr "Average damage (season): %(averageDamageDealt)s"
+
+msgid "damageIndicatorTooltip/damageRecord/day/heading"
+msgstr "Daily damage record: %(recordDamageDealt)s"
+
+msgid "damageIndicatorTooltip/damageRecord/description"
+msgstr "Maximum damage caused in battle in the %(vehicleName)s"
+
+msgid "damageIndicatorTooltip/damageRecord/season/heading"
+msgstr "Seasonal damage record: %(recordDamageDealt)s"
+
 msgid "dash"
 msgstr "—"
 
@@ -356,6 +389,33 @@ msgstr ""
 
 msgid "dataError/title"
 msgstr "Error Loading Data"
+
+msgid "dayTooltip/day"
+msgstr "Day %(index)s"
+
+msgid "dayTooltip/dayNoBattles"
+msgstr "Day %(index)s: No battles fought."
+
+msgid "dayTooltip/noBattles"
+msgstr "Si vis pacem, para bellum"
+
+msgid "dayTooltip/rankInactivity"
+msgstr "Rank inactivity: %(penalty)s"
+
+msgid "dayTooltip/rankInactivityPenalty"
+msgid_plural "dayTooltip/rankInactivityPenalty"
+msgstr[0] "%(pointsCount)s Rating Point"
+msgstr[1] "%(pointsCount)s Rating Points"
+msgstr[2] "%(pointsCount)s Rating Points"
+
+msgid "dayTooltip/ratingDiff"
+msgstr "Rating Points change: %(diff)s"
+
+msgid "dayTooltip/today"
+msgstr "Day %(index)s (today)"
+
+msgid "dayTooltip/todayNoBattles"
+msgstr "Day %(index)s: No battles fought today."
 
 msgid "division/A"
 msgstr "A"
@@ -702,6 +762,25 @@ msgstr "Awaiting players..."
 msgid "prebattleTimer/wait/selectVehicle"
 msgstr "Select a vehicle"
 
+msgid "prestigeIndicatorTooltip/prestige/day/heading"
+msgstr "Average Prestige Points (day): %(averagePrestige)s"
+
+msgid "prestigeIndicatorTooltip/prestige/description"
+msgstr ""
+"Ratio of total Prestige Points earned to the number of battles fought."
+
+msgid "prestigeIndicatorTooltip/prestige/season/heading"
+msgstr "Average Prestige Points (season): %(averagePrestige)s"
+
+msgid "prestigeIndicatorTooltip/prestigeRecord/day/heading"
+msgstr "Daily Prestige Points record: %(recordPrestige)s"
+
+msgid "prestigeIndicatorTooltip/prestigeRecord/description"
+msgstr "Maximum Prestige Points earned in battle in the %(vehicleName)s"
+
+msgid "prestigeIndicatorTooltip/prestigeRecord/season/heading"
+msgstr "Seasonal Prestige Points record: %(recordPrestige)s"
+
 msgid "primeTimeView/status/seasonDisabled/first"
 msgstr "Season of the Azure Dragon has ended on the %(server)s server."
 
@@ -783,6 +862,206 @@ msgstr "Available for recovery in the Depot"
 msgid "products/style3d"
 msgstr "%(name)s 3D Style"
 
+msgid "progressionPage/chartHeader/backToGeneral"
+msgstr "BACK TO SEASON STATISTICS"
+
+msgid "progressionPage/chartHeader/general"
+msgstr "SEASON STATISTICS"
+
+msgid "progressionPage/chartHeader/statisticDay"
+msgstr "STATISTICS FOR DAY %(day)s"
+
+msgid "progressionPage/chartHeader/todayStatistic"
+msgstr "STATISTICS FOR TODAY"
+
+msgid "progressionPage/chartHeader/tooltip/info"
+msgstr ""
+"Each column shows data for the period between Prime Time on the selected day"
+" and Prime Time on the following day. In some cases, it may include battles "
+"from two calendar days."
+
+msgid "progressionPage/chartHeader/tooltip/todayInfo"
+msgstr ""
+"Each column shows data for the period between Prime Time on the selected day"
+" and Prime Time on the following day. In some cases, it may include battles "
+"from two calendar days."
+
+msgid "progressionPage/chartHeader/tooltip/update"
+msgstr ""
+"This section only updates when new data is available. You can request an "
+"update by pressing the refresh button."
+
+msgid "progressionPage/chartHeader/update"
+msgstr "Updated: %(time)s %(info)s"
+
+msgid "progressionPage/customization/completed"
+msgstr "Congratulations!"
+
+msgid "progressionPage/customization/completedDescription"
+msgstr "You have completed all 2D style missions."
+
+msgid "progressionPage/customization/counter"
+msgstr "%(currentProgress)s / %(maxProgress)s"
+
+msgid "progressionPage/customization/headingTooltip"
+msgstr ""
+"A series of missions to unlock new elements for the current season's "
+"progressive 2D style."
+
+msgid "progressionPage/customization/tasks"
+msgid_plural "progressionPage/customization/tasks"
+msgstr[0] "2D STYLE MISSION: %(taskNumber)s"
+msgstr[1] "2D STYLE MISSIONS: %(taskNumber)s"
+msgstr[2] "2D STYLE MISSIONS: %(taskNumber)s"
+
+msgid "progressionPage/customization/tasksDone"
+msgstr "2D STYLE MISSIONS"
+
+msgid "progressionPage/customization/toStyle"
+msgstr "To Style"
+
+msgid "progressionPage/error/noStylesForVehicle"
+msgstr "All styles currently applied to unavailable vehicles"
+
+msgid "progressionPage/error/noVehiclesForStyle"
+msgstr "No available vehicles to apply style to"
+
+msgid "progressionPage/error/refresh"
+msgstr "Refresh"
+
+msgid "progressionPage/error/refreshing"
+msgstr "Refreshing..."
+
+msgid "progressionPage/statistic/averageDamage"
+msgstr "Average damage"
+
+msgid "progressionPage/statistic/averagePrestigePoints"
+msgstr "Average Prestige Points"
+
+msgid "progressionPage/statistic/dayRecordDescription"
+msgstr "Rating change %(diff)s"
+
+msgid "progressionPage/statistic/seasonRecordDescription"
+msgstr "Record set on %(seasonRecordDescriptionDay)s"
+
+msgid "progressionPage/statistic/seasonRecordDescriptionDay"
+msgstr "day %(day)s"
+
+msgid "progressionPage/toAllStatistic"
+msgstr "To All Statistics"
+
+msgid "progressionPage/tooltips/body/assist"
+msgstr ""
+"Includes:\n"
+" • Damage upon your spotting (including damage with the help of skills)\n"
+" • Damage upon your destroying a track and immobilizing an enemy vehicle (including damage with the help of skills)\n"
+" • Damage caused by allies with the help of your skills\n"
+" • Damage caused by allies to a stunned enemy (including stuns with the help of your skills)"
+
+msgid "progressionPage/tooltips/body/battles"
+msgstr "Total number of battle fought"
+
+msgid "progressionPage/tooltips/body/damage"
+msgstr "Ratio of total damage caused to number of battles fought"
+
+msgid "progressionPage/tooltips/body/destruction"
+msgstr ""
+"Ratio of enemy vehicles destroyed to number of times the player's vehicle "
+"was destroyed"
+
+msgid "progressionPage/tooltips/body/maxFrags"
+msgstr "Ratio of 'Damage caused' to 'Damage received'"
+
+msgid "progressionPage/tooltips/body/prestigePoints"
+msgstr "Ratio of total Prestige Points earned to the number of battles fought"
+
+msgid "progressionPage/tooltips/body/vehicles"
+msgstr "Vehicles with the most battles fought"
+
+msgid "progressionPage/tooltips/body/winSeries"
+msgstr "Total rate of victories"
+
+msgid "progressionPage/tooltips/header/assist"
+msgstr "Average damage caused with your assistance"
+
+msgid "progressionPage/tooltips/header/battles"
+msgstr "Battles"
+
+msgid "progressionPage/tooltips/header/damage"
+msgstr "Average damage caused"
+
+msgid "progressionPage/tooltips/header/destruction"
+msgstr "Destruction ratio"
+
+msgid "progressionPage/tooltips/header/maxFrags"
+msgstr "Damage ratio"
+
+msgid "progressionPage/tooltips/header/prestigePoints"
+msgstr "Average number of Prestige Points per battle"
+
+msgid "progressionPage/tooltips/header/vehicles"
+msgstr "Vehicle name"
+
+msgid "progressionPage/tooltips/header/winSeries"
+msgstr "Victories"
+
+msgid "progressionPage/vehicleStatistic"
+msgstr "VEHICLE STATISTICS"
+
+msgid "progressionTableTooltip/pointsFrom"
+msgstr "%(from)s+"
+
+msgid "progressionTableTooltip/pointsRange"
+msgstr "%(from)s-%(to)s"
+
+msgid "progressionTableTooltip/rankInactivity/daysLeft"
+msgstr ""
+"Days until rating downgrade: "
+"{eeede9e6_Open}%(rankInactivityCount)s{eeede9e6_Close}"
+
+msgid "progressionTableTooltip/rankInactivity/description/active"
+msgid_plural ""
+"plural/progressionTableTooltip/rankInactivity/description/active"
+msgstr[0] ""
+"Not fighting in Onslaught mode will lose you "
+"{eeede9e6_Open}%(count)s{eeede9e6_Close} Rating Point"
+msgstr[1] ""
+"Not fighting in Onslaught mode will lose you "
+"{eeede9e6_Open}%(count)s{eeede9e6_Close} Rating Points."
+msgstr[2] ""
+"Not fighting in Onslaught mode will lose you "
+"{eeede9e6_Open}%(count)s{eeede9e6_Close} Rating Points."
+
+msgid "progressionTableTooltip/rankInactivity/description/formula"
+msgid_plural ""
+"plural/progressionTableTooltip/rankInactivity/description/formula"
+msgstr[0] ""
+"(1&nbsp;fight&nbsp;=&nbsp;{white_Open}%(count)s{white_Close}&nbsp;activity "
+"point)"
+msgstr[1] ""
+"(1&nbsp;fight&nbsp;=&nbsp;{white_Open}%(count)s{white_Close}&nbsp;activity "
+"points)"
+msgstr[2] ""
+"(1&nbsp;fight&nbsp;=&nbsp;{white_Open}%(count)s{white_Close}&nbsp;activity "
+"points)"
+
+msgid "progressionTableTooltip/rankInactivity/description/notActive"
+msgstr ""
+"You will not lose Rating Points for not playing in the mode at your current "
+"rank, but you may if you reach the following ranks: %(rankList)s"
+
+msgid "progressionTableTooltip/rankInactivity/header/active"
+msgstr "Your rank is affected by inactivity"
+
+msgid "progressionTableTooltip/rankInactivity/header/notActive"
+msgstr "Your rank is not affected by inactivity"
+
+msgid "progressionTableTooltip/table/heading/rank"
+msgstr "Rank"
+
+msgid "progressionTableTooltip/topRank"
+msgstr "Top %(topPercentage)s% of players in the Leaderboard"
+
 msgid "progressionTooltip/division"
 msgstr "Division %(divisionName)s"
 
@@ -834,7 +1113,7 @@ msgstr[2] ""
 "{eeede9e6_Open}%(count)s{eeede9e6_Close} Rating Points."
 
 msgid "progressionTooltip/rankInactivity/header/active"
-msgstr "Your rating is affected by rank inactivity."
+msgstr "%(icon)s Your rating is affected by rank inactivity."
 
 msgid "progressionTooltip/rankInactivity/warning"
 msgstr "Play by the end of the day to maintain your rank."
@@ -990,6 +1269,28 @@ msgstr "Rank Inactivity"
 msgid "rankInactivityTooltip/timeLeft"
 msgstr "Days before your rating drops: %(count)s"
 
+msgid "rankIndicatorTooltip/day/ratingDescription"
+msgstr "Daily rating"
+
+msgid "rankIndicatorTooltip/day/ratingDiff"
+msgstr "Rating Points change: %(diff)s"
+
+msgid "rankIndicatorTooltip/day/ratingDiffDescription"
+msgstr ""
+"Difference in Rating Points between the selected day and the day before it."
+
+msgid "rankIndicatorTooltip/day/ratingRecord"
+msgstr "Daily rating record: %(maxAchievedRatingPoints)s"
+
+msgid "rankIndicatorTooltip/day/ratingRecordDescription"
+msgstr "Maximum rating reached on the selected day."
+
+msgid "rankIndicatorTooltip/season/dayOfRecord"
+msgstr "day %(day)s"
+
+msgid "rankIndicatorTooltip/season/ratingDescription"
+msgstr "Seasonal rating record set on day %(dayOfRecord)s"
+
 msgid "rankInfo/current/fifth"
 msgstr ""
 "The Champion rank is awarded to players who earned at least "
@@ -1026,53 +1327,6 @@ msgstr ""
 "Points. Rating Points earned by the bottom player in "
 "the&nbsp;Legend&nbsp;rank: {eeede9e6_Open}%(pointsCount){eeede9e6_Close}"
 
-msgid "rankItemStatus/future/description/fifth"
-msgstr ""
-"The Champion rank is awarded to players who have earned at "
-"least&nbsp;{eeede9e6_Open}%(fromScore){eeede9e6_Close} Rating Points."
-
-msgid "rankItemStatus/future/description/first"
-msgstr ""
-"The Iron rank is awarded to players who have earned "
-"{eeede9e6_Open}%(fromScore)&nbsp;to&nbsp;%(toScore){eeede9e6_Close} Rating "
-"Points."
-
-msgid "rankItemStatus/future/description/fourth"
-msgstr ""
-"The Gold rank is awarded to players who have earned "
-"{eeede9e6_Open}%(fromScore)&nbsp;to&nbsp;%(toScore){eeede9e6_Close} Rating "
-"Points."
-
-msgid "rankItemStatus/future/description/second"
-msgstr ""
-"The Bronze rank is awarded to players who have earned "
-"{eeede9e6_Open}%(fromScore)&nbsp;to&nbsp;%(toScore){eeede9e6_Close} Rating "
-"Points."
-
-msgid "rankItemStatus/future/description/sixth"
-msgstr ""
-"To reach the Legend rank, be among the {eeede9e6_Open}top "
-"%(topPercentage)%{eeede9e6_Close} of players on the Leaderboard by Rating "
-"Points."
-
-msgid "rankItemStatus/future/description/third"
-msgstr ""
-"The Silver rank is awarded to players who have earned "
-"{eeede9e6_Open}%(fromScore)&nbsp;to&nbsp;%(toScore){eeede9e6_Close} Rating "
-"Points."
-
-msgid "rankItemStatus/future/extendedDescription/sixth"
-msgstr ""
-"To reach the Legend rank, be among the {eeede9e6_Open}top "
-"%(topPercentage)%{eeede9e6_Close} of players on the Leaderboard by Rating "
-"Points. Rating Points earned by the bottom player in "
-"the&nbsp;Legend&nbsp;rank: {eeede9e6_Open}%(pointsCount){eeede9e6_Close}"
-
-msgid "rankItemStatus/previous/description/fifth"
-msgstr ""
-"The Champion rank is awarded to players who have earned at "
-"least&nbsp;{eeede9e6_Open}%(fromScore){eeede9e6_Close} Rating Points."
-
 msgid "rankUpper/fifth"
 msgstr "CHAMPION"
 
@@ -1094,9 +1348,6 @@ msgstr "%(rank)s RANK"
 msgid "rankUpper/third"
 msgstr "SILVER"
 
-msgid "ratingScore/title"
-msgstr "Rating Points"
-
 msgid "rewardSelection/tooltip/selectableRewardList/deluxe"
 msgstr ""
 "You can select one piece of Improved Equipment from the list below:\n"
@@ -1111,7 +1362,9 @@ msgstr ""
 "• Innovative Loading System\n"
 "• Venting System\n"
 "• Wear-Resistant Gun Laying Drive\n"
-"• Stabilizing Equipment System"
+"• Stabilizing Equipment System\n"
+"• Telescopic Observation System\n"
+"• Tactical Concealment Net"
 
 msgid "rewardSelection/tooltip/selectableRewardList/modernized_devices_t3"
 msgstr ""
@@ -1135,7 +1388,7 @@ msgid "rewards/subtitle/customizations"
 msgstr "{b2afab_Open}For Tier %(vehicleLevel)s vehicles{b2afab_Close}"
 
 msgid "rewards/subtitle/styleProgress"
-msgstr "{b2afab_Open}For the Rex Draconis (Azure) style{b2afab_Close}"
+msgstr "{b2afab_Open}For the Rex Draconis (Crimson) style{b2afab_Close}"
 
 msgid "rewards/subtitle/vehicles_rent"
 msgstr "Tier %(vehicleLevel)s"
@@ -1668,10 +1921,180 @@ msgstr "About Onslaught"
 msgid "tooltip/whatsNewButton/header"
 msgstr "Season Updates"
 
+msgid "tournament/LBFinals"
+msgstr "LB FINALS"
+
+msgid "tournament/LBRound1"
+msgstr "LB ROUND 1"
+
+msgid "tournament/LBRound2"
+msgstr "LB ROUND 2"
+
+msgid "tournament/LBSemifinals"
+msgstr "LB SEMI-FINALS"
+
+msgid "tournament/UBFinals"
+msgstr "UB FINALS"
+
+msgid "tournament/UBSemifinals"
+msgstr "UB SEMI-FINALS"
+
 msgid "tournament/battleResult/personal/tooltip/descr"
 msgstr "Rating Points cannot be earned or lost in a Tournament."
 
-msgid "tournamentsEntryPointTooltip/description"
+msgid "tournament/bestOf"
+msgstr "BEST OF %(number)s"
+
+msgid "tournament/cny"
+msgstr "%(amount)s CNY"
+
+msgid "tournament/cnySign"
+msgstr "¥%(amount)s"
+
+msgid "tournament/comeBack"
+msgstr "Please try again later"
+
+msgid "tournament/comingSoon"
+msgstr "COMING SOON %(addition)s"
+
+msgid "tournament/comingSoonAddition"
+msgstr "TIMES MAY VARY DEPENDING ON MATCH LENGTH"
+
+msgid "tournament/completed"
+msgstr "COMPLETED"
+
+msgid "tournament/douyin"
+msgstr "Watch on Douyin"
+
+msgid "tournament/drops/huya"
+msgstr ""
+"Watch on Huya and earn exclusive\n"
+"Huya Drops!"
+
+msgid "tournament/drops/twitch"
+msgstr ""
+"Watch on Twitch and earn exclusive\n"
+"Twitch Drops!"
+
+msgid "tournament/dropsShort/huya"
+msgstr "And earn exclusive Huya Drops!"
+
+msgid "tournament/dropsShort/twitch"
+msgstr "And earn exclusive Twitch Drops!"
+
+msgid "tournament/error"
+msgstr "ERROR LOADING DATA"
+
+msgid "tournament/eur"
+msgstr "%(amount)s EUR"
+
+msgid "tournament/euroSign"
+msgstr "€%(amount)s"
+
+msgid "tournament/finalResult"
+msgstr "WINNER"
+
+msgid "tournament/fundDistribution"
+msgstr "PRIZE POOL DISTRIBUTION"
+
+msgid "tournament/grandFinals"
+msgstr "GRAND FINAL"
+
+msgid "tournament/huya"
+msgstr "Watch on Huya"
+
+msgid "tournament/noMatches"
+msgstr "NO MORE MATCHES SCHEDULED"
+
+msgid "tournament/ols/roundRobin"
+msgstr "PHASE %(phase)s ROUND %(round)s"
+
+msgid "tournament/placement"
+msgstr "%(firstPlace)s - %(secondPlace)s"
+
+msgid "tournament/prize"
+msgstr "PRIZE POOL %(addition)s"
+
+msgid "tournament/prizeAddition"
+msgstr "AND THE CHANCE TO EARN EVERLASTING GLORY"
+
+msgid "tournament/refresh"
+msgstr "Refresh"
+
+msgid "tournament/refreshing"
+msgstr "Refreshing..."
+
+msgid "tournament/roundOf"
+msgstr "ROUND OF %(number)s"
+
+msgid "tournament/separator"
+msgstr "OR"
+
+msgid "tournament/tab/overview"
+msgstr "OVERVIEW"
+
+msgid "tournament/tab/schedule"
+msgstr "SCHEDULE"
+
+msgid "tournament/teamPlaceholder"
+msgstr "TBD"
+
+msgid "tournament/toShop"
+msgstr "Visit Shop"
+
+msgid "tournament/tokenStore/button/ols"
+msgstr "To Store"
+
+msgid "tournament/tokenStore/ols"
+msgstr "OLS TOKEN STORE"
+
+msgid "tournament/tooltip/infoPageButton/header"
+msgstr "About the tournament"
+
+msgid "tournament/twitch"
+msgstr "Watch on Twitch"
+
+msgid "tournament/viewFull"
+msgstr "View All"
+
+msgid "tournament/visitShop/description/ols"
+msgstr ""
+"If your chosen team wins, you'll receive a unique OLS'26 Winter badge. Cheer"
+" for your favorites!"
+
+msgid "tournament/visitShop/description/wci"
+msgstr ""
+"Show your esports spirit with exclusive themed customization elements and "
+"unique tanks!"
+
+msgid "tournament/visitShop/heading/ols"
+msgstr "ORACLE BUNDLES"
+
+msgid "tournament/visitShop/heading/wci"
+msgstr "WCI BUNDLES"
+
+msgid "tournament/vsBestOf"
+msgstr ""
+"VS\n"
+"BEST OF %(number)s"
+
+msgid "tournament/wci/roundRobin"
+msgstr "ROUND ROBIN"
+
+msgid "tournament/winner"
+msgstr "Winner"
+
+msgid "tournament/youtube"
+msgstr "Watch on Youtube"
+
+msgid "tournamentsEntryPointTooltip/description/ols"
+msgstr ""
+"The best European teams are battling for the title of Onslaught Legends "
+"Series champion! Watch thrilling 7v7 Onslaught matches, earn Twitch Drops, "
+"and support your favorite teams by boosting the prize pool through exclusive"
+" customization bundles."
+
+msgid "tournamentsEntryPointTooltip/description/wci"
 msgstr ""
 "An epic clash is set to unfold at the World of Tanks Championship "
 "International in Suzhou, China, where the fiercest teams from around the "
@@ -1679,7 +2102,10 @@ msgstr ""
 "prestigious title of world champion. Experience the thrill as legends are "
 "born on the battlefield!"
 
-msgid "tournamentsEntryPointTooltip/heading"
+msgid "tournamentsEntryPointTooltip/heading/ols"
+msgstr "OLS Season 5"
+
+msgid "tournamentsEntryPointTooltip/heading/wci"
 msgstr "WCI'25"
 
 msgid "tournamentsEntryPointTooltip/live"
@@ -1705,146 +2131,6 @@ msgstr "Join voice chat"
 
 msgid "waitingSpinner/message"
 msgstr "Loading content..."
-
-msgid "wci/LBFinals"
-msgstr "LB FINALS"
-
-msgid "wci/LBRound1"
-msgstr "LB ROUND 1"
-
-msgid "wci/LBRound2"
-msgstr "LB ROUND 2"
-
-msgid "wci/LBSemifinals"
-msgstr "LB SEMI-FINALS"
-
-msgid "wci/UBFinals"
-msgstr "UB FINALS"
-
-msgid "wci/UBSemifinals"
-msgstr "UB SEMI-FINALS"
-
-msgid "wci/bestOf"
-msgstr "BEST OF %(number)s"
-
-msgid "wci/cny"
-msgstr "%(amount)s CNY"
-
-msgid "wci/cnySign"
-msgstr "¥%(amount)s"
-
-msgid "wci/comeBack"
-msgstr "Please try again later"
-
-msgid "wci/comingSoon"
-msgstr "COMING SOON %(addition)s"
-
-msgid "wci/comingSoonAddition"
-msgstr "TIMES MAY VARY DEPENDING ON MATCH LENGTH"
-
-msgid "wci/completed"
-msgstr "COMPLETED"
-
-msgid "wci/douyin"
-msgstr "Watch on Douyin"
-
-msgid "wci/drops/huya"
-msgstr ""
-"Watch on Huya and earn exclusive\n"
-"Huya Drops!"
-
-msgid "wci/drops/twitch"
-msgstr ""
-"Watch on Twitch and earn exclusive\n"
-"Twitch Drops!"
-
-msgid "wci/dropsShort/huya"
-msgstr "And earn exclusive Huya Drops!"
-
-msgid "wci/dropsShort/twitch"
-msgstr "And earn exclusive Twitch Drops!"
-
-msgid "wci/error"
-msgstr "ERROR LOADING DATA"
-
-msgid "wci/finalResult"
-msgstr "WINNER"
-
-msgid "wci/fundDistribution"
-msgstr "PRIZE POOL DISTRIBUTION"
-
-msgid "wci/grandFinals"
-msgstr "GRAND FINALS"
-
-msgid "wci/huya"
-msgstr "Watch on Huya"
-
-msgid "wci/noMatches"
-msgstr "NO MORE MATCHES SCHEDULED"
-
-msgid "wci/placement"
-msgstr "%(firstPlace)s - %(secondPlace)s"
-
-msgid "wci/prize"
-msgstr "PRIZE POOL %(addition)s"
-
-msgid "wci/prizeAddition"
-msgstr "AND THE CHANCE TO EARN EVERLASTING GLORY"
-
-msgid "wci/refresh"
-msgstr "Refresh"
-
-msgid "wci/refreshing"
-msgstr "Refreshing..."
-
-msgid "wci/roundOf"
-msgstr "ROUND OF %(number)s"
-
-msgid "wci/roundRobin"
-msgstr "ROUND ROBIN"
-
-msgid "wci/separator"
-msgstr "OR"
-
-msgid "wci/tab/overview"
-msgstr "OVERVIEW"
-
-msgid "wci/tab/schedule"
-msgstr "SCHEDULE"
-
-msgid "wci/teamPlaceholder"
-msgstr "TBD"
-
-msgid "wci/toShop"
-msgstr "Visit shop"
-
-msgid "wci/tooltip/infoPageButton/header"
-msgstr "About the tournament"
-
-msgid "wci/twitch"
-msgstr "Watch on Twitch"
-
-msgid "wci/viewFull"
-msgstr "View all"
-
-msgid "wci/visitShop/description"
-msgstr ""
-"Show your esports spirit with exclusive themed customization elements and "
-"unique tanks!"
-
-msgid "wci/visitShop/heading"
-msgstr "WCI BUNDLES"
-
-msgid "wci/vsBestOf"
-msgstr ""
-"VS\n"
-"BEST OF %(number)s"
-
-msgid "wci/winner"
-msgstr "Winner"
-
-msgid "wci/youtube"
-msgstr "Watch on Youtube"
 
 msgid "weeklyQuestWidgetTooltip/completed"
 msgstr "Onslaught Missions completed"
@@ -1952,37 +2238,70 @@ msgid "whatsNewButtonLabel"
 msgstr "SEASON UPDATES"
 
 msgid "whatsNewView/banner/title/large"
-msgstr "SEASON OF THE AZURE DRAGON"
+msgstr "SEASON OF THE CRIMSON DRAGON"
 
 msgid "whatsNewView/banner/title/small"
 msgstr "ONSLAUGHT. WHAT'S NEW?"
 
 msgid "whatsNewView/button/ok"
-msgstr "Fire it up!"
+msgstr "Time to Write History!"
+
+msgid "whatsNewView/comms/description"
+msgstr ""
+"Comms Centers can now be recaptured after {eeede9e6_Open}75{eeede9e6_Close} "
+"seconds instead of the previous {eeede9e6_Open}90{eeede9e6_Close}."
+
+msgid "whatsNewView/comms/heading"
+msgstr "Comms Center"
 
 msgid "whatsNewView/intro/description"
 msgstr ""
-"Fight in each of the three Seasons to earn valuable annual rewards, "
-"including the exclusive Ashbringer Tier X heavy tank with all the unique 3D "
-"styles you've earned for it and a fearless crew, plus Improved and "
-"Experimental Equipment to select from, an eye-catching 2D style, and more. "
-"The better your performance throughout the Year, the more exclusive 3D style"
-" you'll receive."
+"Track your rating journey through the season, adjust your playstyle based on"
+" your best vehicles' performance, and see which customization element you're"
+" closest to earning on the updated main page!"
 
 msgid "whatsNewView/intro/heading"
-msgstr "Welcome to the Year of the Dragon!"
+msgstr "Detailed Statistics Are Here! %(tag)s"
 
 msgid "whatsNewView/mapChanges/heading"
 msgstr "Maps"
 
 msgid "whatsNewView/newVehicles"
-msgstr "New Vehicles Available in Onslaught"
+msgid_plural "plural/whatsNewView/newVehicles"
+msgstr[0] ""
+"New Vehicle Available in\n"
+"Onslaught&nbsp;%(tag)s"
+msgstr[1] ""
+"New Vehicles Available in\n"
+"Onslaught&nbsp;%(tag)s"
+msgstr[2] ""
+"New Vehicles Available in\n"
+"Onslaught&nbsp;%(tag)s"
+
+msgid "whatsNewView/shopUpdates/description"
+msgstr ""
+"A brand-new Tier IX light tank, the {eeede9e6_Open}LTC II{eeede9e6_Close}, "
+"is now available in the Onslaught Shop, as well as two new pieces of "
+"improved equipment: {eeede9e6_Open}Telescopic{eeede9e6_Close} "
+"{eeede9e6_Open}Observation{eeede9e6_Close} "
+"{eeede9e6_Open}System{eeede9e6_Close} and "
+"{eeede9e6_Open}Tactical{eeede9e6_Close} "
+"{eeede9e6_Open}Concealment{eeede9e6_Close} "
+"{eeede9e6_Open}Net{eeede9e6_Close}. Improved Final Drive has been removed "
+"from the Onslaught Shop and will become available in the regular in-game "
+"Store after its next update."
+
+msgid "whatsNewView/shopUpdates/heading"
+msgstr "Bond Shop Updates"
 
 msgid "whatsNewView/stamp/removed"
 msgstr "EXCLUDED"
 
 msgid "whatsNewView/stamp/underDevelopment"
 msgstr "++UNDER REDEVELOPMENT++"
+
+msgid "whatsNewView/tag/attention"
+msgstr "Attention"
 
 msgid "whatsNewView/tag/changed"
 msgstr "Changed"
@@ -1999,11 +2318,39 @@ msgstr "Revamped"
 msgid "whatsNewView/tag/seasonUpdate"
 msgstr "Seasonal Update"
 
+msgid "whatsNewView/unavailable/description"
+msgstr ""
+"The {eeede9e6_Open}Ares 90{eeede9e6_Close} Tier X American medium tank is "
+"temporarily unavailable in the mode."
+
+msgid "whatsNewView/unavailable/heading"
+msgstr "Temporarily Unavailable"
+
 msgid "whatsNewView/vehiclesForRent/heading"
 msgstr "Rental Vehicles"
 
 msgid "whatsNewView/watchVideo"
 msgstr "Watch Video"
+
+msgid "winsIndicatorTooltip/day/heading"
+msgstr "Victory rate (day): %(winRate)s"
+
+msgid "winsIndicatorTooltip/defeats"
+msgstr "Defeats: %(count)s"
+
+msgid "winsIndicatorTooltip/draws"
+msgstr "Draws: %(count)s"
+
+msgid "winsIndicatorTooltip/season/heading"
+msgstr "Victory rate (season): %(winRate)s"
+
+msgid "winsIndicatorTooltip/winRate/description"
+msgstr ""
+"Ratio of total victories to the number of battles fought.\n"
+"Battles by result:"
+
+msgid "winsIndicatorTooltip/wins"
+msgstr "Victories: %(count)s"
 
 msgid "yearlyRewards/banner/default"
 msgstr "Rewards are delivered at the end of the third season."

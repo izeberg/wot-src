@@ -60,6 +60,13 @@ msgstr ""
 "full reload. Delivers high burst damage, but leaves the vehicle vulnerable "
 "while reloading. Can only reload the entire magazine at once."
 
+msgid "abilities/common/description/overheatGun"
+msgstr ""
+"The gun can fire continuously without the need for reload. Each shot "
+"generates heat: the higher its temperature, the more some of its parameters "
+"change. Continuous firing will cause the gun to overheat, preventing further"
+" firing until it cools down."
+
 msgid "abilities/common/description/rocketAcceleration"
 msgstr ""
 "Increase engine power and top speed for rapid movement across the "
@@ -120,6 +127,9 @@ msgstr "Rapid Mode"
 msgid "abilities/common/name/magazineGun"
 msgstr "Autoloader"
 
+msgid "abilities/common/name/overheatGun"
+msgstr "Thermal Overheat Control Autocannon"
+
 msgid "abilities/common/name/rocketAcceleration"
 msgstr "Jet Boosters"
 
@@ -173,12 +183,26 @@ msgstr ""
 "the final shell during this process, but doing so adds several seconds to "
 "the remaining reload time."
 
+msgid "abilities/special/description/heatingZonesGun"
+msgstr ""
+"The system keeps the gun cooled, allowing for highly accurate firing. The "
+"gun heats up when fired, but begins cooling down and returns to improved "
+"parameters during reload. The higher its temperature, the more some of its "
+"parameters change."
+
 msgid "abilities/special/description/improvedRamming"
 msgstr ""
 "Drawing on design experience from earlier models, this vehicle is specially "
 "configured for deadly ramming attacks. Structural reinforcements allow it to"
 " deal more damage when ramming enemy vehicles, giving an upper hand in "
 "close-quarters encounters."
+
+msgid "abilities/special/description/overheatGun"
+msgstr ""
+"The gun can fire continuously without the need for reload. Each shot "
+"generates heat: the higher its temperature, the more some of its parameters "
+"change. Continuous firing will cause the gun to overheat, preventing further"
+" firing until it cools down."
 
 msgid "abilities/special/description/overheatStacks"
 msgstr ""
@@ -206,6 +230,12 @@ msgstr ""
 "need it most. The boosters heat up and must cool down before they can be "
 "reused, while exceeding the critical heat level will temporarily disable "
 "them completely."
+
+msgid "abilities/special/description/stagedJetBoosters"
+msgstr ""
+"Solid-fuel thrusters that boost acceleration, mobility, and maneuverability "
+"for several seconds. The left and right thrusters can work independently of "
+"each other for faster hull traverse, and do not restrict reverse capability."
 
 msgid "abilities/special/description/stanceDance"
 msgstr ""
@@ -256,8 +286,14 @@ msgstr "Pneumatic Gyro-Stabilizer"
 msgid "abilities/special/name/extraShotClip"
 msgstr "Cassette Loading System"
 
+msgid "abilities/special/name/heatingZonesGun"
+msgstr "Active Gun Cooling"
+
 msgid "abilities/special/name/improvedRamming"
 msgstr "Ramming Configuration"
+
+msgid "abilities/special/name/overheatGun"
+msgstr "Thermal Overheat Control Autocannon"
 
 msgid "abilities/special/name/overheatStacks"
 msgstr "Propellant Thermal Control System"
@@ -270,6 +306,9 @@ msgstr "Direct Drive"
 
 msgid "abilities/special/name/rechargeableNitro"
 msgstr "Liquid Fuel Boosters"
+
+msgid "abilities/special/name/stagedJetBoosters"
+msgstr "Sequential Rocket Thrusters"
 
 msgid "abilities/special/name/stanceDance"
 msgstr "Tactical Power Pack"
@@ -314,8 +353,16 @@ msgstr ""
 "Automatically starts reloading on the last shell, which can still be fired "
 "during reload."
 
+msgid "abilities/special/shortDescription/heatingZonesGun"
+msgstr "An active gun cooling system that improves accuracy as the gun cools."
+
 msgid "abilities/special/shortDescription/improvedRamming"
 msgstr "Increases ramming damage caused to enemy vehicles."
+
+msgid "abilities/special/shortDescription/overheatGun"
+msgstr ""
+"The system allows for continuous fire without reload and controls how the "
+"gun generates heat when firing."
 
 msgid "abilities/special/shortDescription/overheatStacks"
 msgstr ""
@@ -336,6 +383,10 @@ msgid "abilities/special/shortDescription/rechargeableNitro"
 msgstr ""
 "Boosters that can be activated at any time to provide a sharp burst of "
 "speed."
+
+msgid "abilities/special/shortDescription/stagedJetBoosters"
+msgstr ""
+"Solid-fuel thrusters that boost acceleration, mobility, and maneuverability."
 
 msgid "abilities/special/shortDescription/stanceDance"
 msgstr ""
@@ -390,9 +441,19 @@ msgstr ""
 "The system automatically starts loading a new cassette when one shell remains in the current one. Firing the final shell while the new cassette is being loaded adds several seconds to the remaining reload time. Pressing the Reload Shell Container hotkey discards all remaining shells except the last one. Press the hotkey twice to reset a fully loaded cassette.\n"
 "{{@ class $classSecondary}}All values shown are default for the vehicle with a fully trained crew. Upgrades, equipment, and consumables can change these values, but these changes are not reflected here.{{/}}"
 
+msgid "characteristics/abilities/special/description/heatingZonesGun"
+msgstr ""
+"The system keeps the gun cooled, allowing for highly accurate firing. The gun heats up when fired, but begins cooling down and returns to improved parameters during reload. The higher its temperature, the more some of its parameters change. \n"
+"{{@ class $classSecondary}}All values shown are default for the vehicle with a fully trained crew. Upgrades, equipment, and consumables can change these values, but these changes are not reflected here.{{/}}"
+
 msgid "characteristics/abilities/special/description/improvedRamming"
 msgstr ""
 "This vehicle is specially configured for ramming attacks, with a series of design modifications that help it inflict more damage when ramming enemy vehicles.\n"
+"{{@ class $classSecondary}}All values shown are default for the vehicle with a fully trained crew. Upgrades, equipment, and consumables can change these values, but these changes are not reflected here.{{/}}"
+
+msgid "characteristics/abilities/special/description/overheatGun"
+msgstr ""
+"The gun can fire continuously without the need for reload. Each shot generates heat: the higher its temperature, the more some of its parameters change. Continuous firing will cause the gun to overheat, preventing further firing until it cools down.\n"
 "{{@ class $classSecondary}}All values shown are default for the vehicle with a fully trained crew. Upgrades, equipment, and consumables can change these values, but these changes are not reflected here.{{/}}"
 
 msgid "characteristics/abilities/special/description/overheatStacks"
@@ -413,6 +474,11 @@ msgstr ""
 msgid "characteristics/abilities/special/description/rechargeableNitro"
 msgstr ""
 "The Liquid Fuel Boosters grant a burst of engine power, allowing you to gain a positional advantage on the battlefield—but limiting your vehicle's reverse and traverse speed. They can be toggled on or off at any time, except after reaching the reactivation limit. The boosters heat up while active and become unavailable until cooled down, meaning they cannot be used nonstop—while exceeding the critical heat level will temporarily disable them completely. Plan your moves carefully to avoid being caught off guard.\n"
+"{{@ class $classSecondary}}All values shown are default for the vehicle with a fully trained crew. Upgrades, equipment, and consumables can change these values, but these changes are not reflected here.{{/}}"
+
+msgid "characteristics/abilities/special/description/stagedJetBoosters"
+msgstr ""
+"Solid-fuel thrusters that improve vehicle acceleration, mobility, and maneuverability for several seconds. Unlike regular jet boosters, the left and right thrusters can work independently of each other for faster hull traverse, and do not restrict reverse capability. They can be used multiple times per battle, but require a cooldown before reactivation.\n"
 "{{@ class $classSecondary}}All values shown are default for the vehicle with a fully trained crew. Upgrades, equipment, and consumables can change these values, but these changes are not reflected here.{{/}}"
 
 msgid "characteristics/abilities/special/description/stanceDance"

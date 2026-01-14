@@ -184,10 +184,10 @@ class DeathCamMarkerView(SubModelPresenter, IGlobalListener):
 
     def __updateImpactMarkerParameters(self, projectileData, relativeArmor, shellKind, causeOfDeath):
         impactType = self.__IMPACT_MODES[projectileData['impactType']]
-        effectiveDamage = projectileData['effectiveShellDamage']
+        effectiveShellDamage = projectileData['effectiveShellDamage']
         averageDamageOfShell = projectileData['averageDamageOfShell']
         self.viewModel.setShellDamageBasic(averageDamageOfShell)
-        self.viewModel.setShellDamageEffective(effectiveDamage)
+        self.viewModel.setShellDamageEffective(effectiveShellDamage)
         self.viewModel.setArmorNominal(projectileData['nominalArmor'])
         self.viewModel.setArmorRelative(relativeArmor)
         self.viewModel.setShellArmorAngleGain(projectileData['angleGain'])
@@ -208,7 +208,7 @@ class DeathCamMarkerView(SubModelPresenter, IGlobalListener):
         armorProtectionHE = -abs(int(round(projectileData['armorProtectionHE'])))
         spallLinerProtectionHE = -abs(int(round(projectileData['spallLinerProtectionHE'])))
         distanceLossHE = -abs(int(round(projectileData['distanceLossHE'])))
-        randomization = -(nominalBurst - effectiveDamage + armorProtectionHE + spallLinerProtectionHE)
+        randomization = -(nominalBurst - effectiveShellDamage + armorProtectionHE + spallLinerProtectionHE)
         self.viewModel.setShellDamageBurst(nominalBurst)
         self.viewModel.setShellDamageLossProtectionHe(armorProtectionHE)
         self.viewModel.setShellDamageLossProtectionSpallLiner(spallLinerProtectionHE)

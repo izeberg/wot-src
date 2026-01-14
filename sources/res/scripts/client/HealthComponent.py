@@ -1,18 +1,10 @@
-from Event import Event
+from cgf_client_common.entity_dyn_components import ReplicableDynamicScriptComponent
 from cgf_components_common.state_components import HealthComponentDescriptor
 from cgf_script.component_meta_class import registerReplicableComponent
-from constants import IS_EDITOR
-if IS_EDITOR:
-
-    class DynamicScriptComponent(object):
-        pass
-
-
-else:
-    from BigWorld import DynamicScriptComponent
+from Event import Event
 
 @registerReplicableComponent
-class HealthComponent(DynamicScriptComponent, HealthComponentDescriptor):
+class HealthComponent(ReplicableDynamicScriptComponent, HealthComponentDescriptor):
 
     def __init__(self):
         super(HealthComponent, self).__init__()

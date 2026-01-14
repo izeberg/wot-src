@@ -135,16 +135,16 @@ package net.wg.gui.utils
          return Boolean(_loc3_) ? new Rectangle(_loc3_.x,_loc3_.y,_loc3_.width,_loc3_.height) : null;
       }
       
-      public function initAtlas(param1:String) : void
+      public function initAtlas(param1:String, param2:String = "") : void
       {
          if(App.instance != null && this._atlasMap[param1])
          {
             App.utils.asserter.assert(false,MESSAGE_ATLAS_ALREADY_INITED + param1);
          }
-         var _loc2_:IAtlas = this.getAtlas(param1);
-         this._atlasMap[param1] = _loc2_;
-         _loc2_.addEventListener(AtlasEvent.ATLAS_INITIALIZED,this.onAtlasInitializedHandler);
-         _loc2_.initResources(param1);
+         var _loc3_:IAtlas = this.getAtlas(param1);
+         this._atlasMap[param1] = _loc3_;
+         _loc3_.addEventListener(AtlasEvent.ATLAS_INITIALIZED,this.onAtlasInitializedHandler);
+         _loc3_.initResources(param1,param2);
       }
       
       public function isAtlasInitialized(param1:String) : Boolean

@@ -1,7 +1,7 @@
-import typing
-from typing import TYPE_CHECKING
 from collections import namedtuple
 from itertools import chain
+from typing import TYPE_CHECKING
+from future.utils import iteritems
 from constants import BonusTypes, DAMAGE_INTERPOLATION_DIST_LAST
 from debug_utils import LOG_ERROR
 from gui.Scaleform.genConsts.HANGAR_ALIASES import HANGAR_ALIASES
@@ -15,12 +15,12 @@ from gui.shared.gui_items import KPI, kpiFormatValue, kpiFormatNoSignValue
 from gui.shared.items_parameters import RELATIVE_PARAMS
 from gui.shared.items_parameters.comparator import PARAM_STATE
 from gui.shared.items_parameters.params_helper import hasGroupPenalties, getCommonParam, isValidEmptyValue, PARAMS_GROUPS
-from gui.shared.utils import AUTO_RELOAD_PROP_NAME, MAX_STEERING_LOCK_ANGLE, WHEELED_SWITCH_ON_TIME, WHEELED_SWITCH_OFF_TIME, WHEELED_SWITCH_TIME, WHEELED_SPEED_MODE_SPEED, DUAL_GUN_CHARGE_TIME, DUAL_GUN_RATE_TIME, TURBOSHAFT_SPEED_MODE_SPEED, TURBOSHAFT_ENGINE_POWER, TURBOSHAFT_INVISIBILITY_STILL_FACTOR, TURBOSHAFT_INVISIBILITY_MOVING_FACTOR, TURBOSHAFT_SWITCH_TIME, CHASSIS_REPAIR_TIME, CHASSIS_REPAIR_TIME_YOH, ROCKET_ACCELERATION_ENGINE_POWER, ROCKET_ACCELERATION_SPEED_LIMITS, ROCKET_ACCELERATION_REUSE_AND_DURATION, DUAL_ACCURACY_COOLING_DELAY, SHOT_DISPERSION_ANGLE, DISPERSION_RADIUS, BURST_FIRE_RATE, BURST_TIME_INTERVAL, BURST_SIZE, BURST_COUNT, AVG_DAMAGE_PER_SECOND, AUTO_SHOOT_CLIP_FIRE_RATE, CONTINUOUS_SHOTS_PER_MINUTE, CONTINUOUS_DAMAGE_PER_SECOND, TWIN_GUN_SWITCH_FIRE_MODE_TIME, TWIN_GUN_TOP_SPEED, TWIN_GUN_RELOAD_ONE_GUN_TIME, TWIN_GUN_RELOAD_TWO_GUN_TIME, TWIN_GUN_RELOAD_TIME
+from gui.shared.utils import AUTO_RELOAD_PROP_NAME, MAX_STEERING_LOCK_ANGLE, WHEELED_SWITCH_ON_TIME, WHEELED_SWITCH_OFF_TIME, WHEELED_SWITCH_TIME, WHEELED_SPEED_MODE_SPEED, DUAL_GUN_CHARGE_TIME, DUAL_GUN_RATE_TIME, TURBOSHAFT_SPEED_MODE_SPEED, TURBOSHAFT_ENGINE_POWER, TURBOSHAFT_INVISIBILITY_STILL_FACTOR, TURBOSHAFT_INVISIBILITY_MOVING_FACTOR, TURBOSHAFT_SWITCH_TIME, CHASSIS_REPAIR_TIME, CHASSIS_REPAIR_TIME_YOH, ROCKET_ACCELERATION_ENGINE_POWER, ROCKET_ACCELERATION_SPEED_LIMITS, ROCKET_ACCELERATION_REUSE_AND_DURATION, DUAL_ACCURACY_COOLING_DELAY, SHOT_DISPERSION_ANGLE, DISPERSION_RADIUS, BURST_FIRE_RATE, BURST_TIME_INTERVAL, BURST_SIZE, BURST_COUNT, AVG_DAMAGE_PER_SECOND, AUTO_SHOOT_CLIP_FIRE_RATE, CONTINUOUS_SHOTS_PER_MINUTE, CONTINUOUS_DAMAGE_PER_SECOND, TWIN_GUN_SWITCH_FIRE_MODE_TIME, TWIN_GUN_TOP_SPEED, TWIN_GUN_RELOAD_ONE_GUN_TIME, TWIN_GUN_RELOAD_TWO_GUN_TIME, TWIN_GUN_RELOAD_TIME, SHELL_RELOADING_TIME_PROP_NAME, SHELL_LOADING_TIME_PROP_NAME, RELOAD_TIME_PROP_NAME, TEMPERATURE_RELOAD_TIME, TEMPERATURE_AVG_DAMAGE_PER_MINUTE
 from helpers.i18n import makeString, isValidKey
 from items import vehicles, artefacts, getTypeOfCompactDescr, ITEM_TYPES
 from web_stubs import i18n
 if TYPE_CHECKING:
-    from typing import Tuple, Dict, Optional
+    from typing import Optional
 ChangeCondition = namedtuple('ChangeCondition', ('predicate', 'alternativeParameter'))
 MEASURE_UNITS = {'aimingTime': MENU.TANK_PARAMS_S, 
    'areaRadius': MENU.TANK_PARAMS_M, 
@@ -46,6 +46,7 @@ MEASURE_UNITS = {'aimingTime': MENU.TANK_PARAMS_S,
    'avgDamage': MENU.TANK_PARAMS_VAL, 
    'avgMutableDamage': MENU.TANK_PARAMS_VAL, 
    'avgDamagePerMinute': MENU.TANK_PARAMS_VPM, 
+   TEMPERATURE_AVG_DAMAGE_PER_MINUTE: MENU.TANK_PARAMS_VPM, 
    AVG_DAMAGE_PER_SECOND: MENU.TANK_PARAMS_VPS, 
    CONTINUOUS_DAMAGE_PER_SECOND: MENU.TANK_PARAMS_VPS, 
    'fireStartingChance': MENU.TANK_PARAMS_PERCENT, 
@@ -70,13 +71,15 @@ MEASURE_UNITS = {'aimingTime': MENU.TANK_PARAMS_S,
    'maxHullHealth': MENU.TANK_PARAMS_VAL, 
    'forwardMaxSpeed': MENU.TANK_PARAMS_MPH, 
    'reloadMagazineTime': MENU.TANK_PARAMS_S, 
-   'reloadTime': MENU.TANK_PARAMS_SPM, 
+   RELOAD_TIME_PROP_NAME: MENU.TANK_PARAMS_SPM, 
+   TEMPERATURE_RELOAD_TIME: MENU.TANK_PARAMS_SPM, 
    CONTINUOUS_SHOTS_PER_MINUTE: MENU.TANK_PARAMS_SPM, 
    'reloadTimeSecs': MENU.TANK_PARAMS_S, 
    'rotationSpeed': MENU.TANK_PARAMS_GPS, 
    'chassisModuleRotationSpeed': MENU.TANK_PARAMS_GPS, 
    'turretModuleRotationSpeed': MENU.TANK_PARAMS_GPS, 
-   'shellReloadingTime': MENU.TANK_PARAMS_S, 
+   SHELL_RELOADING_TIME_PROP_NAME: MENU.TANK_PARAMS_S, 
+   SHELL_LOADING_TIME_PROP_NAME: MENU.TANK_PARAMS_S, 
    SHOT_DISPERSION_ANGLE: MENU.TANK_PARAMS_M, 
    'shotsNumberRange': MENU.TANK_PARAMS_CNT, 
    'shellsCount': MENU.TANK_PARAMS_CNT, 
@@ -187,7 +190,12 @@ MEASURE_UNITS = {'aimingTime': MENU.TANK_PARAMS_S,
    'designatorInitialCooldownS': MENU.TANK_PARAMS_S, 
    'designatorCooldownS': MENU.TANK_PARAMS_S, 
    'designatorMarkDurationS': MENU.TANK_PARAMS_S, 
-   'designatorMarkedEnemiesAdditionalDamage': MENU.TANK_PARAMS_FACTOR}
+   'designatorMarkedEnemiesAdditionalDamage': MENU.TANK_PARAMS_FACTOR, 
+   'coolingDelay': MENU.TANK_PARAMS_S, 
+   'heatingPerShot': MENU.TANK_PARAMS_FACTOR, 
+   'coolingTime': MENU.TANK_PARAMS_S, 
+   'overheatDuration': MENU.TANK_PARAMS_S, 
+   'timeToOverheat': MENU.TANK_PARAMS_S}
 MEASURE_UNITS_NO_BRACKETS = {'weight': MENU.TANK_PARAMS_NO_BRACKETS_KG, 
    'cooldownSeconds': MENU.TANK_PARAMS_NO_BRACKETS_S, 
    'reloadCooldownSeconds': MENU.TANK_PARAMS_NO_BRACKETS_S, 
@@ -222,9 +230,9 @@ ITEMS_PARAMS_LIST = {ITEM_TYPES.vehicleRadio: ('radioDistance', 'weight'),
    ITEM_TYPES.vehicleGun: (
                          'caliber', 'avgDamageList', 'maxAvgDamageList', 'minAvgDamageList', CONTINUOUS_DAMAGE_PER_SECOND,
                          'avgPiercingPower', 'shellsCount', 'reloadTimeSecs', 'shellReloadingTime', 'reloadMagazineTime',
-                         AUTO_RELOAD_PROP_NAME, 'reloadTime', 'rateTime', 'chargeTime', TWIN_GUN_SWITCH_FIRE_MODE_TIME,
-                         CONTINUOUS_SHOTS_PER_MINUTE, 'stunMinDurationList', 'stunMaxDurationList', DISPERSION_RADIUS,
-                         DUAL_ACCURACY_COOLING_DELAY, 'maxShotDistance', 'aimingTime', 'weight')}
+                         AUTO_RELOAD_PROP_NAME, RELOAD_TIME_PROP_NAME, SHELL_LOADING_TIME_PROP_NAME, 'rateTime', 'chargeTime',
+                         TWIN_GUN_SWITCH_FIRE_MODE_TIME, CONTINUOUS_SHOTS_PER_MINUTE, 'stunMinDurationList', 'stunMaxDurationList',
+                         DISPERSION_RADIUS, DUAL_ACCURACY_COOLING_DELAY, 'maxShotDistance', 'aimingTime', 'weight')}
 FORMAT_NAME_C_S_VALUE_S_UNITS = '{paramName} {paramValue} {paramUnits}'
 _COUNT_OF_AUTO_RELOAD_SLOTS_TIMES_TO_SHOW_IN_INFO = 5
 _EQUAL_TO_ZERO_LITERAL = '~0'
@@ -253,10 +261,10 @@ def getMeasureUnitsForParameter(vehicleDescr, paramName):
 
 MULTIPLE_TITLES_PARAMS = {CHASSIS_REPAIR_TIME: ChangeCondition(needUseYohChassisRepairTime, CHASSIS_REPAIR_TIME_YOH)}
 
-def getTitleParamName(vehicleDescr, paramName):
+def getTitleParamName(vDescr, paramName):
     if paramName in MULTIPLE_TITLES_PARAMS:
         changeCondition = MULTIPLE_TITLES_PARAMS[paramName]
-        if changeCondition.predicate(vehicleDescr):
+        if changeCondition.predicate(vDescr):
             return changeCondition.alternativeParameter
     return paramName
 
@@ -414,7 +422,8 @@ FORMAT_SETTINGS = {'relativePower': _integralFormat,
    'piercingPower': _niceRangeFormat, 
    'maxPiercingPower': _niceRangeFormat, 
    'minPiercingPower': _niceRangeFormat, 
-   'reloadTime': _niceRangeFormat, 
+   RELOAD_TIME_PROP_NAME: _niceRangeFormat, 
+   TEMPERATURE_RELOAD_TIME: _niceFormat, 
    CONTINUOUS_SHOTS_PER_MINUTE: _niceRangeFormat, 
    'reloadTimeSecs': _niceListFormat, 
    'turretRotationSpeed': _niceListFormat, 
@@ -430,6 +439,7 @@ FORMAT_SETTINGS = {'relativePower': _integralFormat,
    'turboshaftBurstFireRate': _niceListFormat, 
    'aimingTime': _niceListFormat, 
    'avgDamagePerMinute': _niceFormat, 
+   TEMPERATURE_AVG_DAMAGE_PER_MINUTE: _niceFormat, 
    'relativeArmor': _integralFormat, 
    'avgDamage': _niceFormat, 
    'avgMutableDamage': _niceRangeFormat, 
@@ -466,6 +476,7 @@ FORMAT_SETTINGS = {'relativePower': _integralFormat,
    'shellsCount': _niceRangeFormat, 
    'shellReloadingTime': _niceRangeFormat, 
    'reloadMagazineTime': _niceRangeFormat, 
+   SHELL_LOADING_TIME_PROP_NAME: _niceFormat, 
    'avgPiercingPower': _listFormat, 
    'avgDamageList': _listFormat, 
    'maxAvgMutableDamageList': _listFormat, 
@@ -530,7 +541,7 @@ def _deltaWrapper(fn):
 
 def _getDeltaSettings():
     detlaSettings = {}
-    for paramName, setting in FORMAT_SETTINGS.iteritems():
+    for paramName, setting in iteritems(FORMAT_SETTINGS):
         settingCopy = setting.copy()
         rounder = settingCopy['rounder']
         settingCopy['rounder'] = _deltaWrapper(rounder)
@@ -542,7 +553,7 @@ def _getDeltaSettings():
 DELTA_PARAMS_SETTING = _getDeltaSettings()
 SMART_ROUND_PARAMS = {
  'damage', 'piercingPower', 'bombDamage', 'shellsCount', 'shellReloadingTime', 'reloadMagazineTime',
- 'reloadTime', DISPERSION_RADIUS, 'aimingTime', 'weight', DUAL_GUN_RATE_TIME, DUAL_GUN_CHARGE_TIME,
+ RELOAD_TIME_PROP_NAME, DISPERSION_RADIUS, 'aimingTime', 'weight', DUAL_GUN_RATE_TIME, DUAL_GUN_CHARGE_TIME,
  'crewRolesFactor', CONTINUOUS_SHOTS_PER_MINUTE, CONTINUOUS_DAMAGE_PER_SECOND}
 _STATES_INDEX_IN_COLOR_MAP = {PARAM_STATE.WORSE: 0, 
    PARAM_STATE.NORMAL: 1, 

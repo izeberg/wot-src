@@ -14,6 +14,14 @@ msgstr ""
 msgid "#PluralForms"
 msgstr "nplurals=2; plural=(n != 1);"
 
+msgid "battleCarousel/resetFilters/button"
+msgstr "Reset Filters"
+
+msgid "battleCarousel/resetFilters/title"
+msgstr ""
+"No vehicles matching the selected parameters.\n"
+"Need to reset the filter settings to see the appropriate vehicles"
+
 msgid "battleType/description/fast"
 msgstr "A scenario with reduced Combat Reserve cooldown."
 
@@ -60,6 +68,9 @@ msgid_plural "plural/day"
 msgstr[0] "{duration} day"
 msgstr[1] "{duration} days"
 msgstr[2] "{duration} days"
+
+msgid "filterPopover/note"
+msgstr "Only vehicles that can be used in the mode are displayed here."
 
 msgid "levelReservesTooltip/desc"
 msgstr "Combat Reserve Levels are increased upon reaching new ranks."

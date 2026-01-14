@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A188_Ares_MTB/normal/lod1/Hull</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/american/A188_Ares_MTB/normal/lod2/Hull</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.771402 -0.466097 -3.164214</min>
+		<max>1.769718 0.807267 3.368144</max>
+	</visibilityBox>
+</root>

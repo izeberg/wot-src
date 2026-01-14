@@ -1,9 +1,9 @@
 package net.wg.gui.components.common.waiting
 {
+   import flash.display.InteractiveObject;
    import net.wg.data.constants.Values;
    import net.wg.infrastructure.base.meta.impl.WaitingViewMeta;
    import net.wg.infrastructure.events.ChildVisibilityEvent;
-   import net.wg.infrastructure.interfaces.IView;
    import net.wg.infrastructure.managers.IWaitingView;
    import scaleform.clik.events.InputEvent;
    
@@ -47,6 +47,12 @@ package net.wg.gui.components.common.waiting
          super.configUI();
          assertNotNull(this.waitingComponent,WAITING_COMPONENT_NAME);
          this.waitingComponent.setAnimationStatus(true);
+      }
+      
+      override protected function onSetModalFocus(param1:InteractiveObject) : void
+      {
+         super.onSetModalFocus(param1);
+         setFocus(this.waitingComponent);
       }
       
       override protected function nextFrameAfterPopulateHandler() : void
@@ -114,23 +120,14 @@ package net.wg.gui.components.common.waiting
       
       public function setAnimationStatus(param1:Boolean) : void
       {
-         var _loc3_:String = null;
-         if(param1 != this.isOnStage && initialized)
+         var _loc2_:String = null;
+         if(param1 != this.isActive && initialized)
          {
-            _loc3_ = !!param1 ? ChildVisibilityEvent.CHILD_SHOWN : ChildVisibilityEvent.CHILD_HIDDEN;
-            dispatchEvent(new ChildVisibilityEvent(_loc3_));
+            _loc2_ = !!param1 ? ChildVisibilityEvent.CHILD_SHOWN : ChildVisibilityEvent.CHILD_HIDDEN;
+            dispatchEvent(new ChildVisibilityEvent(_loc2_));
             assertNotNull(this.waitingComponent,WAITING_COMPONENT_NAME);
             this.waitingComponent.setAnimationStatus(!param1);
             this.waitingComponent.validateNow();
-         }
-         var _loc2_:IView = App.containerMgr.lastFocusedView;
-         if(_loc2_)
-         {
-            App.utils.focusHandler.setModalFocus(_loc2_);
-         }
-         else
-         {
-            App.containerMgr.updateFocus();
          }
       }
       
@@ -154,9 +151,9 @@ package net.wg.gui.components.common.waiting
          return focusable;
       }
       
-      public function get isOnStage() : Boolean
+      public function get isActive() : Boolean
       {
-         return stage != null;
+         return stage != null && visible;
       }
       
       override public function handleInput(param1:InputEvent) : void

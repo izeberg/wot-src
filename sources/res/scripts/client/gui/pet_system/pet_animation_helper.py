@@ -1,6 +1,4 @@
-from gui.hangar_cameras.hangar_camera_common import CameraRelatedEvents
 from gui.pet_system.synergy_helper import SynergyItem
-from gui.shared import g_eventBus
 from helpers.CallbackDelayer import CallbackDelayer
 from skeletons.gui.shared.utils import IHangarSpace
 from helpers import dependency
@@ -8,7 +6,6 @@ from Event import Event, EventManager
 from gui.pet_system.constants import PetPlaceName
 from pet_system_common.pet_constants import AnimationStateName, PetStateBehavior, PetStaticTrigger, PetTrigger, StorageStaticTrigger
 from skeletons.gui.pet_system import IPetSystemController
-from skeletons.new_year import IFriendServiceController
 PET_MOVE_TO_STORAGE_TIME_DELAY = 1
 PET_LOGIN_TIME_DELAY = 0
 
@@ -25,7 +22,6 @@ class PetPrefabProxy(CallbackDelayer):
         self.onUpdatePetStaticTrigger = Event(self.__em)
         self.onUpdatePetSynergy = Event(self.__em)
         self.__isAFKState = False
-        g_eventBus.addListener(CameraRelatedEvents.IDLE_CAMERA, self._cameraIdle)
 
     def clear(self):
         self.__em.clear()
@@ -59,8 +55,8 @@ class PetPrefabProxy(CallbackDelayer):
     def petSynergyLevel(self):
         return SynergyItem.getSynergyLevel(self._ctrl.getPetIDInHangar())
 
-    def _cameraIdle(self, event):
-        self.__isAFKState = event.ctx['started']
+    def cameraIdle(self, isAFK):
+        self.__isAFKState = isAFK
         self.setPetStaticTrigger(self.petStaticTrigger)
 
     def getPlaceName(self, isInStorage=None):
@@ -148,7 +144,6 @@ class PetPrefabProxy(CallbackDelayer):
 
 
 class StoragePrefabProxy(object):
-    friendService = dependency.descriptor(IFriendServiceController)
 
     def __init__(self, ctrl):
         self._ctrl = ctrl
@@ -160,7 +155,7 @@ class StoragePrefabProxy(object):
 
     @property
     def storageStaticTrigger(self):
-        if not self._ctrl.isEnabled or self.friendService.isInFriendHangar:
+        if not self._ctrl.isEnabled:
             return StorageStaticTrigger.EMPTY
         if not self._ctrl.haveActivePromotion() and not self._ctrl.getActivePet():
             return StorageStaticTrigger.DISABLED

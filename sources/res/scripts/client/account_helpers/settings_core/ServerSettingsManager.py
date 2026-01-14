@@ -3,7 +3,7 @@ from collections import namedtuple
 from itertools import chain
 from account_helpers.settings_core import settings_constants, longToInt32
 from account_helpers.settings_core.migrations import migrateToVersion
-from account_helpers.settings_core.settings_constants import VERSION, GuiSettingsBehavior, OnceOnlyHints, SPGAim, CONTOUR, ReferralProgram, PersonalMission3, NYLootBoxesStorageKeys, NewYearStorageKeys
+from account_helpers.settings_core.settings_constants import VERSION, GuiSettingsBehavior, OnceOnlyHints, SPGAim, CONTOUR, ReferralProgram, PersonalMission3
 from adisp import adisp_process, adisp_async
 from debug_utils import LOG_ERROR, LOG_DEBUG
 from gui.battle_pass.battle_pass_helpers import updateBattlePassSettings
@@ -72,12 +72,6 @@ class SETTINGS_SECTIONS(CONST_CONTAINER):
     BATTLE_PASS_STORAGE = 'BATTLE_PASS_STORAGE'
     BATTLE_COMM = 'BATTLE_COMM'
     DOG_TAGS = 'DOG_TAGS'
-    LOOT_BOX_VIEWED = 'LOOT_BOX_VIEWED'
-    LOOT_BOX_ORIENTAL = 'LOOT_BOX_ORIENTAL'
-    LOOT_BOX_NEW_YEAR = 'LOOT_BOX_NEW_YEAR'
-    LOOT_BOX_FAIRYTALE = 'LOOT_BOX_FAIRYTALE'
-    LOOT_BOX_CHRISTMAS = 'LOOT_BOX_CHRISTMAS'
-    NEW_YEAR = 'NEW_YEAR'
     UNIT_FILTER = 'UNIT_FILTER'
     BATTLE_HUD = 'BATTLE_HUD'
     SPG_AIM = 'SPG_AIM'
@@ -113,7 +107,6 @@ class UI_STORAGE_KEYS(CONST_CONTAINER):
     OPTIONAL_DEVICE_SETUP_INTRO_SHOWN = 'optional_device_setup_intro_shown'
     TURBOSHAFT_HIGHLIGHTS_COUNTER = 'turboshaft_highlights_count'
     ROCKET_ACCELERATION_HIGHLIGHTS_COUNTER = 'rocket_acceleration_highlights_count'
-    EPIC_BATTLE_ABILITIES_INTRO_SHOWN = 'epic_battle_abilities_intro_shown'
     POST_PROGRESSION_INTRO_SHOWN = 'post_progression_intro_shown'
     VEH_PREVIEW_POST_PROGRESSION_BULLET_SHOWN = 'veh_preview_post_progression_bullet_shown'
     ACHIEVEMENT_EDIT_VIEW_VISITED = 'achievement_edit_view_visited'
@@ -128,7 +121,6 @@ class UI_STORAGE_KEYS(CONST_CONTAINER):
     NEW_C11N_SECTION_HINT_ACTION_TAKEN = 'new_c11n_section_hint_action_taken'
     C11N_VEHICLE_LIST_HINT_ACTION_TAKEN = 'c11n_vehicle_list_hint_action_taken'
     VEHICLE_C11N_FILTER_HINT_ACTION_TAKEN = 'vehicle_c11n_filter_hint_action_taken'
-    ONE_TIME_GIFT_INTRO_SHOWN = 'one_time_gift_intro_shown'
 
 
 HINT_STORAGE_KEY_MAPPING = {OnceOnlyHints.NEW_C11N_SECTION_HINT: UI_STORAGE_KEYS.NEW_C11N_SECTION_HINT_ACTION_TAKEN, 
@@ -325,7 +317,6 @@ class ServerSettingsManager(object):
                                              'bonus': 6, 
                                              'event': 7, 
                                              'crystals': 8, 
-                                             'newYear': 10, 
                                              'role_HT_assault': 11, 
                                              'role_HT_break': 12, 
                                              'role_HT_support': 13, 
@@ -433,7 +424,6 @@ class ServerSettingsManager(object):
                                                         'bonus': 6, 
                                                         'event': 7, 
                                                         'crystals': 8, 
-                                                        'newYear': 10, 
                                                         'role_HT_assault': 11, 
                                                         'role_HT_break': 12, 
                                                         'role_HT_support': 13, 
@@ -646,8 +636,7 @@ class ServerSettingsManager(object):
                                              OnceOnlyHints.C11N_VEHICLE_LIST_HINT: 4, 
                                              OnceOnlyHints.VEHICLE_C11N_FILTER_HINT: 5, 
                                              OnceOnlyHints.CREW_BOOKS_MENTORING_LICENSE_HINT: 6, 
-                                             OnceOnlyHints.VDAY_DIFFICULTY_HINT: 7, 
-                                             OnceOnlyHints.GRINCH_PROGRESSION_FIGHT_BUTTON_HINT: 10}, offsets={}), 
+                                             OnceOnlyHints.VDAY_DIFFICULTY_HINT: 7}, offsets={}), 
        SETTINGS_SECTIONS.DAMAGE_INDICATOR: Section(masks={DAMAGE_INDICATOR.TYPE: 0, 
                                             DAMAGE_INDICATOR.PRESET_CRITS: 1, 
                                             DAMAGE_INDICATOR.DAMAGE_VALUE: 2, 
@@ -683,8 +672,7 @@ class ServerSettingsManager(object):
                                          BATTLE_EVENTS.CREW_PERKS: 19}, offsets={}), 
        SETTINGS_SECTIONS.BATTLE_BORDER_MAP: Section(masks={}, offsets={BATTLE_BORDER_MAP.MODE_SHOW_BORDER: Offset(0, 3), 
                                              BATTLE_BORDER_MAP.TYPE_BORDER: Offset(2, 3 << 2)}), 
-       SETTINGS_SECTIONS.UI_STORAGE: Section(masks={PM_TUTOR_FIELDS.GREETING_SCREEN_SHOWN: 0, 
-                                      PM_TUTOR_FIELDS.FIRST_ENTRY_AWARDS_SHOWN: 1, 
+       SETTINGS_SECTIONS.UI_STORAGE: Section(masks={PM_TUTOR_FIELDS.FIRST_ENTRY_AWARDS_SHOWN: 1, 
                                       PM_TUTOR_FIELDS.ONE_FAL_SHOWN: 7, 
                                       PM_TUTOR_FIELDS.MULTIPLE_FAL_SHOWN: 8, 
                                       UI_STORAGE_KEYS.DISABLE_ANIMATED_TOOLTIP: 13, 
@@ -693,7 +681,6 @@ class ServerSettingsManager(object):
                                       PM_TUTOR_FIELDS.PM2_MULTIPLE_FAL_SHOWN: 16, 
                                       UI_STORAGE_KEYS.REFERRAL_BUTTON_CIRCLES_SHOWN: 17, 
                                       UI_STORAGE_KEYS.OPTIONAL_DEVICE_SETUP_INTRO_SHOWN: 27, 
-                                      UI_STORAGE_KEYS.EPIC_BATTLE_ABILITIES_INTRO_SHOWN: 28, 
                                       UI_STORAGE_KEYS.POST_PROGRESSION_INTRO_SHOWN: 29, 
                                       UI_STORAGE_KEYS.VEH_PREVIEW_POST_PROGRESSION_BULLET_SHOWN: 30, 
                                       UI_STORAGE_KEYS.LIMITED_UI_ALL_NOVICE_RULES_COMPLETED: 31}, offsets={PM_TUTOR_FIELDS.INITIAL_FAL_COUNT: Offset(2, 124), 
@@ -707,8 +694,7 @@ class ServerSettingsManager(object):
                                         UI_STORAGE_KEYS.AUTO_SHOT_NPD_SHELLS_MARK_IS_SHOWN: 14, 
                                         UI_STORAGE_KEYS.NEW_C11N_SECTION_HINT_ACTION_TAKEN: 18, 
                                         UI_STORAGE_KEYS.C11N_VEHICLE_LIST_HINT_ACTION_TAKEN: 19, 
-                                        UI_STORAGE_KEYS.VEHICLE_C11N_FILTER_HINT_ACTION_TAKEN: 20, 
-                                        UI_STORAGE_KEYS.ONE_TIME_GIFT_INTRO_SHOWN: 21}, offsets={UI_STORAGE_KEYS.ROCKET_ACCELERATION_HIGHLIGHTS_COUNTER: Offset(1, 14), 
+                                        UI_STORAGE_KEYS.VEHICLE_C11N_FILTER_HINT_ACTION_TAKEN: 20}, offsets={UI_STORAGE_KEYS.ROCKET_ACCELERATION_HIGHLIGHTS_COUNTER: Offset(1, 14), 
                                         UI_STORAGE_KEYS.DUAL_ACCURACY_HIGHLIGHTS_COUNTER: Offset(5, 224), 
                                         UI_STORAGE_KEYS.AUTO_SHOOT_HIGHLIGHTS_COUNTER: Offset(11, 14336), 
                                         UI_STORAGE_KEYS.TWIN_GUN_HIGHLIGHTS_COUNTER: Offset(15, 229376)}), 
@@ -827,7 +813,6 @@ class ServerSettingsManager(object):
                                                     'bonus': 6, 
                                                     'event': 7, 
                                                     'crystals': 8, 
-                                                    'newYear': 10, 
                                                     'role_HT_assault': 11, 
                                                     'role_HT_break': 12, 
                                                     'role_HT_support': 13, 
@@ -900,18 +885,6 @@ class ServerSettingsManager(object):
                                                         'role_SPG': 25}, offsets={}), 
        SETTINGS_SECTIONS.FUN_RANDOM_CAROUSEL_FILTER_3: Section(masks={'own3DStyle': 0, 
                                                         'canInstallAttachments': 1}, offsets={}), 
-       SETTINGS_SECTIONS.LOOT_BOX_VIEWED: Section(masks={}, offsets={'count': Offset(0, 4294967295)}), 
-       SETTINGS_SECTIONS.LOOT_BOX_ORIENTAL: Section(masks={}, offsets={NYLootBoxesStorageKeys.NEW_COUNT: Offset(0, 65535), 
-                                             NYLootBoxesStorageKeys.DELIVERED_COUNT: Offset(16, 4294901760)}), 
-       SETTINGS_SECTIONS.LOOT_BOX_NEW_YEAR: Section(masks={}, offsets={NYLootBoxesStorageKeys.NEW_COUNT: Offset(0, 65535), 
-                                             NYLootBoxesStorageKeys.DELIVERED_COUNT: Offset(16, 4294901760)}), 
-       SETTINGS_SECTIONS.LOOT_BOX_FAIRYTALE: Section(masks={}, offsets={NYLootBoxesStorageKeys.NEW_COUNT: Offset(0, 65535), 
-                                              NYLootBoxesStorageKeys.DELIVERED_COUNT: Offset(16, 4294901760)}), 
-       SETTINGS_SECTIONS.LOOT_BOX_CHRISTMAS: Section(masks={}, offsets={NYLootBoxesStorageKeys.NEW_COUNT: Offset(0, 65535), 
-                                              NYLootBoxesStorageKeys.DELIVERED_COUNT: Offset(16, 4294901760)}), 
-       SETTINGS_SECTIONS.NEW_YEAR: Section(masks={NewYearStorageKeys.NY_STATISTICS_HINT_SHOWN: 0, 
-                                    NewYearStorageKeys.LOOT_BOX_VIDEO_OFF: 2, 
-                                    NewYearStorageKeys.NY_INTRO_SHOWN: 3}, offsets={}), 
        SETTINGS_SECTIONS.LIMITED_UI_1: Section(masks={}, offsets={LIMITED_UI_KEY: Offset(0, 4294967295)}), 
        SETTINGS_SECTIONS.LIMITED_UI_2: Section(masks={}, offsets={LIMITED_UI_KEY: Offset(0, 4294967295)}), 
        SETTINGS_SECTIONS.LIMITED_UI_PERMANENT_1: Section(masks={}, offsets={LIMITED_UI_KEY: Offset(0, 4294967295)}), 
@@ -923,7 +896,8 @@ class ServerSettingsManager(object):
                                               PersonalMission3.INTRO_OP_9: 2, 
                                               PersonalMission3.INTRO_OP_10: 3, 
                                               PersonalMission3.PM_BANNER_ANIMATION_KEY: 25}, offsets={PersonalMission3.PART_NO: Offset(4, 15 << 4), 
-                                              PersonalMission3.CHECKED_PM3_POINTS: Offset(8, 65535 << 8)})}
+                                              PersonalMission3.CHECKED_PM3_POINTS: Offset(8, 65535 << 8), 
+                                              PersonalMission3.LAST_FULL_COMPLETED_OP: Offset(26, 31 << 26)})}
     AIM_MAPPING = {'net': 1, 
        'netType': 1, 
        'centralTag': 1, 
@@ -1043,14 +1017,6 @@ class ServerSettingsManager(object):
         if self.settingsCache.isSynced():
             self.setSectionSettings(SETTINGS_SECTIONS.BATTLE_PASS_STORAGE, settings)
 
-    def getNewYearStorage(self, defaults=None):
-        if self.settingsCache.isSynced():
-            return self.getSection(SETTINGS_SECTIONS.NEW_YEAR, defaults)
-        return {}
-
-    def saveInNewYearStorage(self, settings):
-        return self.setSectionSettings(SETTINGS_SECTIONS.NEW_YEAR, settings)
-
     def checkAutoReloadHighlights(self, increase=False):
         return self.__checkUIHighlights(UI_STORAGE_KEYS.AUTO_RELOAD_HIGHLIGHTS_COUNTER, self._MAX_AUTO_RELOAD_HIGHLIGHTS_COUNT, increase)
 
@@ -1143,6 +1109,9 @@ class ServerSettingsManager(object):
 
     def getPM3InstalledVehDetails(self):
         return self.getSectionSettings(SETTINGS_SECTIONS.PERSONAL_MISSION_3, PersonalMission3.PART_NO, 0)
+
+    def getLastFullCompletedPM3OperationID(self):
+        return self.getSectionSettings(SETTINGS_SECTIONS.PERSONAL_MISSION_3, PersonalMission3.LAST_FULL_COMPLETED_OP, 0)
 
     def setPM3VehDetailInstalled(self, vehDetailNumber=0):
         if not self.settingsCache.isSynced():
@@ -1389,7 +1358,7 @@ class ServerSettingsManager(object):
     @adisp_process
     def _updateToVersion(self, callback=None):
         currentVersion = self.settingsCache.getVersion()
-        data = {'gameData': {}, 'gameExtData': {}, 'gameExtData2': {}, 'gameplayData': {}, 'controlsData': {}, 'aimData': {}, 'markersData': {}, 'graphicsData': {}, 'marksOnGun': {}, 'fallout': {}, 'carousel_filter': {}, 'feedbackDamageIndicator': {}, 'feedbackDamageLog': {}, 'feedbackBattleEvents': {}, 'onceOnlyHints': {}, 'onceOnlyHints2': {}, 'uiStorage': {}, SETTINGS_SECTIONS.UI_STORAGE_2: {}, 'epicCarouselFilter2': {}, 'rankedCarouselFilter1': {}, 'rankedCarouselFilter2': {}, 'comp7CarouselFilter1': {}, 'comp7CarouselFilter2': {}, 'sessionStats': {}, 'battleComm': {}, 'dogTags': {}, 'battleHud': {}, 'spgAim': {}, GUI_START_BEHAVIOR: {}, 'battlePassStorage': {}, SETTINGS_SECTIONS.CONTOUR: {}, SETTINGS_SECTIONS.ROYALE_CAROUSEL_FILTER_1: {}, SETTINGS_SECTIONS.ROYALE_CAROUSEL_FILTER_2: {}, SETTINGS_SECTIONS.SENIORITY_AWARDS_STORAGE: {}, SETTINGS_SECTIONS.NEW_YEAR: {}, 'clear': {}, 'delete': [], SETTINGS_SECTIONS.LIMITED_UI_1: {}, SETTINGS_SECTIONS.LIMITED_UI_2: {}, SETTINGS_SECTIONS.LIMITED_UI_PERMANENT_1: {}, SETTINGS_SECTIONS.LIMITED_UI_PERMANENT_2: {}, SETTINGS_SECTIONS.BATTLE_MATTERS_QUESTS: {}, SETTINGS_SECTIONS.BATTLE_BORDER_MAP: {}, SETTINGS_SECTIONS.ADVANCED_ACHIEVEMENTS_STORAGE: {}, SETTINGS_SECTIONS.CAROUSEL_FILTER_3: {}, SETTINGS_SECTIONS.RANKED_CAROUSEL_FILTER_3: {}, SETTINGS_SECTIONS.EPICBATTLE_CAROUSEL_FILTER_3: {}, SETTINGS_SECTIONS.MAPBOX_CAROUSEL_FILTER_3: {}, SETTINGS_SECTIONS.COMP7_CAROUSEL_FILTER_3: {}, SETTINGS_SECTIONS.COMP7_LIGHT_CAROUSEL_FILTER_3: {}, SETTINGS_SECTIONS.FUN_RANDOM_CAROUSEL_FILTER_3: {}, SETTINGS_SECTIONS.PERSONAL_MISSION_3: {}}
+        data = {'gameData': {}, 'gameExtData': {}, 'gameExtData2': {}, 'gameplayData': {}, 'controlsData': {}, 'aimData': {}, 'markersData': {}, 'graphicsData': {}, 'marksOnGun': {}, 'fallout': {}, 'carousel_filter': {}, 'feedbackDamageIndicator': {}, 'feedbackDamageLog': {}, 'feedbackBattleEvents': {}, 'onceOnlyHints': {}, 'onceOnlyHints2': {}, 'uiStorage': {}, SETTINGS_SECTIONS.UI_STORAGE_2: {}, 'epicCarouselFilter2': {}, 'rankedCarouselFilter1': {}, 'rankedCarouselFilter2': {}, 'comp7CarouselFilter1': {}, 'comp7CarouselFilter2': {}, 'sessionStats': {}, 'battleComm': {}, 'dogTags': {}, 'battleHud': {}, 'spgAim': {}, GUI_START_BEHAVIOR: {}, 'battlePassStorage': {}, SETTINGS_SECTIONS.CONTOUR: {}, SETTINGS_SECTIONS.ROYALE_CAROUSEL_FILTER_1: {}, SETTINGS_SECTIONS.ROYALE_CAROUSEL_FILTER_2: {}, SETTINGS_SECTIONS.SENIORITY_AWARDS_STORAGE: {}, 'clear': {}, 'delete': [], SETTINGS_SECTIONS.LIMITED_UI_1: {}, SETTINGS_SECTIONS.LIMITED_UI_2: {}, SETTINGS_SECTIONS.LIMITED_UI_PERMANENT_1: {}, SETTINGS_SECTIONS.LIMITED_UI_PERMANENT_2: {}, SETTINGS_SECTIONS.BATTLE_MATTERS_QUESTS: {}, SETTINGS_SECTIONS.BATTLE_BORDER_MAP: {}, SETTINGS_SECTIONS.ADVANCED_ACHIEVEMENTS_STORAGE: {}, SETTINGS_SECTIONS.CAROUSEL_FILTER_3: {}, SETTINGS_SECTIONS.RANKED_CAROUSEL_FILTER_3: {}, SETTINGS_SECTIONS.EPICBATTLE_CAROUSEL_FILTER_3: {}, SETTINGS_SECTIONS.MAPBOX_CAROUSEL_FILTER_3: {}, SETTINGS_SECTIONS.COMP7_CAROUSEL_FILTER_3: {}, SETTINGS_SECTIONS.COMP7_LIGHT_CAROUSEL_FILTER_3: {}, SETTINGS_SECTIONS.FUN_RANDOM_CAROUSEL_FILTER_3: {}, SETTINGS_SECTIONS.PERSONAL_MISSION_3: {}}
         yield migrateToVersion(currentVersion, self._core, data)
         self._setSettingsSections(data)
         callback(self)
@@ -1554,10 +1523,6 @@ class ServerSettingsManager(object):
         clearRoyaleFilterCarousel2 = clear.get(SETTINGS_SECTIONS.ROYALE_CAROUSEL_FILTER_2, 0)
         if royaleFilterCarousel2 or clearRoyaleFilterCarousel2:
             settings[SETTINGS_SECTIONS.ROYALE_CAROUSEL_FILTER_2] = self._buildSectionSettings(SETTINGS_SECTIONS.ROYALE_CAROUSEL_FILTER_2, royaleFilterCarousel2) ^ clearRoyaleFilterCarousel2
-        newYearSettings = data.get(SETTINGS_SECTIONS.NEW_YEAR, {})
-        clearNewYearSettings = clear.get(SETTINGS_SECTIONS.NEW_YEAR, 0)
-        if newYearSettings or clearNewYearSettings:
-            settings[SETTINGS_SECTIONS.NEW_YEAR] = self._buildSectionSettings(SETTINGS_SECTIONS.NEW_YEAR, newYearSettings) ^ clearNewYearSettings
         battleMatters = data.get(SETTINGS_SECTIONS.BATTLE_MATTERS_QUESTS, {})
         clearBattleMatters = clear.get(SETTINGS_SECTIONS.BATTLE_MATTERS_QUESTS, 0)
         if battleMatters or clearBattleMatters:

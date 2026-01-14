@@ -13,6 +13,8 @@ package net.wg.infrastructure.managers
       
       function updateStage(param1:Number, param2:Number) : void;
       
+      function tryFocusView(param1:IView) : Boolean;
+      
       function updateFocus(param1:Object = null) : void;
       
       function canFocusLayer(param1:uint) : Boolean;

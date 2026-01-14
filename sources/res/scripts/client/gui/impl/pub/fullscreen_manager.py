@@ -3,7 +3,6 @@ from frameworks.state_machine.observers import StateIdsObserver
 from frameworks.wulf import WindowLayer, WindowStatus
 from gui.impl.gen import R
 from gui.shared.system_factory import collectLowPriorityWindows, registerLowPriorityWulfWindows
-from gui.impl.lobby.platoon.view.platoon_selection_view import SelectionWindow
 from helpers import dependency
 from skeletons.gameplay import GameplayStateID, IGameplayLogic
 from skeletons.gui.impl import IGuiLoader, IFullscreenManager, INotificationWindowController
@@ -18,8 +17,6 @@ _LOW_PRIORITY_WINDOWS = (
 registerLowPriorityWulfWindows([R.views.lobby.offers.OfferBannerWindow()])
 
 class FullscreenManager(IFullscreenManager):
-    __slots__ = ('__gui', '__notificationMgr', '__isEnabled', '__weakref__', '__observer',
-                 '__gameplay')
     __gui = dependency.descriptor(IGuiLoader)
     __gameplay = dependency.descriptor(IGameplayLogic)
     __notificationMgr = dependency.descriptor(INotificationWindowController)
@@ -58,12 +55,9 @@ class FullscreenManager(IFullscreenManager):
         windowsToClose = []
         for window in windows:
             if window != newWindow and (window.layer > layer or window.layer == layer) and not self.__isParent(window, newWindow) and self.__isAllowed(newWindow):
-                if window.canBeClosed():
-                    windowsToClose.append(window)
-                else:
-                    _logger.info("Window %r hasn't been destroyed by opening window %r", window, newWindow)
+                windowsToClose.append(window)
 
-        if (not windows or not self.__isParentPausingQueue(newWindow)) and not self.__notificationMgr.hasWindow(newWindow) and self.__isAllowed(newWindow) and not self.__notificationMgr.isExecuting() and self.__requiresPostpone(newWindow):
+        if (not windows or windowsToClose) and not self.__notificationMgr.hasWindow(newWindow) and self.__isAllowed(newWindow) and not self.__notificationMgr.isExecuting():
             _logger.info('Notification queue postpones by opening window %r', newWindow)
             self.__notificationMgr.postponeActive()
         for window in windowsToClose:
@@ -84,12 +78,6 @@ class FullscreenManager(IFullscreenManager):
         return window.layer == WindowLayer.FULLSCREEN_WINDOW and window.windowStatus in (
          WindowStatus.LOADING, WindowStatus.LOADED)
 
-    @classmethod
-    def __requiresPostpone(cls, window):
-        if not cls.__isAllowed(window):
-            return False
-        return True
-
     @staticmethod
     def __isAllowed(window):
         if isinstance(window, SFWindow):
@@ -100,17 +88,10 @@ class FullscreenManager(IFullscreenManager):
 
         elif window.content is not None:
             return window.content.layoutID not in collectLowPriorityWindows()
-        if isinstance(window, SelectionWindow):
-            return False
-        else:
-            return True
-
-    def __isParentPausingQueue(self, window):
-        return window.parent is not None and self.__notificationMgr.isQueuePausingWindow(window.parent)
+        return True
 
 
 class _LobbyStateObserver(StateIdsObserver):
-    __slots__ = ('__manager', '__gui')
     __gui = dependency.descriptor(IGuiLoader)
 
     def __init__(self, manager):

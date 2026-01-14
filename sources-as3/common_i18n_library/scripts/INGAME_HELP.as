@@ -183,6 +183,16 @@ package
       
       public static const DETAILSHELP_ENGINEMODE_ENGINEMODEPAGE2:String = "#ingame_help:detailsHelp/engineMode/engineModePage2";
       
+      public static const DETAILSHELP_PILLBOXSIEGE_MECHANICS_PAGE1_TITLE:String = "#ingame_help:detailsHelp/pillboxSiege/mechanics/page1/title";
+      
+      public static const DETAILSHELP_PILLBOXSIEGE_MECHANICS_PAGE1:String = "#ingame_help:detailsHelp/pillboxSiege/mechanics/page1";
+      
+      public static const DETAILSHELP_PILLBOXSIEGE_MECHANICS_PAGE1_PRESSANDHOLD:String = "#ingame_help:detailsHelp/pillboxSiege/mechanics/page1/pressAndHold";
+      
+      public static const DETAILSHELP_PILLBOXSIEGE_MECHANICS_PAGE2_TITLE:String = "#ingame_help:detailsHelp/pillboxSiege/mechanics/page2/title";
+      
+      public static const DETAILSHELP_PILLBOXSIEGE_MECHANICS_PAGE2:String = "#ingame_help:detailsHelp/pillboxSiege/mechanics/page2";
+      
       public static const DETAILSHELP_MECHANICS_ROCKETACCELERATION_PAGE1_TITLE:String = "#ingame_help:detailsHelp/mechanics/rocketAcceleration/page1/title";
       
       public static const DETAILSHELP_MECHANICS_ROCKETACCELERATION_PAGE1_DESCRIPTION:String = "#ingame_help:detailsHelp/mechanics/rocketAcceleration/page1/description";
@@ -199,6 +209,10 @@ package
       
       public static const DETAILSHELP_MECHANICS_AUTOSHOOTGUN_PAGE1_DESCRIPTION:String = "#ingame_help:detailsHelp/mechanics/autoShootGun/page1/description";
       
+      public static const DETAILSHELP_MECHANICS_AUTOSHOOTGUN_OVERHEATGUN_PAGE1_TITLE:String = "#ingame_help:detailsHelp/mechanics/autoShootGun_overheatGun/page1/title";
+      
+      public static const DETAILSHELP_MECHANICS_AUTOSHOOTGUN_OVERHEATGUN_PAGE1_DESCRIPTION:String = "#ingame_help:detailsHelp/mechanics/autoShootGun_overheatGun/page1/description";
+      
       public static const DETAILSHELP_MECHANICS_TWINGUN_PAGE1_TITLE:String = "#ingame_help:detailsHelp/mechanics/twinGun/page1/title";
       
       public static const DETAILSHELP_MECHANICS_TWINGUN_PAGE1_DESCRIPTION:String = "#ingame_help:detailsHelp/mechanics/twinGun/page1/description";
@@ -206,16 +220,6 @@ package
       public static const DETAILSHELP_MECHANICS_TWINGUN_PAGE2_TITLE:String = "#ingame_help:detailsHelp/mechanics/twinGun/page2/title";
       
       public static const DETAILSHELP_MECHANICS_TWINGUN_PAGE2_DESCRIPTION:String = "#ingame_help:detailsHelp/mechanics/twinGun/page2/description";
-      
-      public static const DETAILSHELP_PILLBOXSIEGE_MECHANICS_PAGE1_TITLE:String = "#ingame_help:detailsHelp/pillboxSiege/mechanics/page1/title";
-      
-      public static const DETAILSHELP_PILLBOXSIEGE_MECHANICS_PAGE1:String = "#ingame_help:detailsHelp/pillboxSiege/mechanics/page1";
-      
-      public static const DETAILSHELP_PILLBOXSIEGE_MECHANICS_PAGE1_PRESSANDHOLD:String = "#ingame_help:detailsHelp/pillboxSiege/mechanics/page1/pressAndHold";
-      
-      public static const DETAILSHELP_PILLBOXSIEGE_MECHANICS_PAGE2_TITLE:String = "#ingame_help:detailsHelp/pillboxSiege/mechanics/page2/title";
-      
-      public static const DETAILSHELP_PILLBOXSIEGE_MECHANICS_PAGE2:String = "#ingame_help:detailsHelp/pillboxSiege/mechanics/page2";
       
       public static const DETAILSHELP_MECHANICS_CONCENTRATIONMODE_PAGE1_TITLE:String = "#ingame_help:detailsHelp/mechanics/concentrationMode/page1/title";
       
@@ -300,6 +304,14 @@ package
       public static const DETAILSHELP_MECHANICS_STATIONARYRELOAD_PAGE2_TITLE:String = "#ingame_help:detailsHelp/mechanics/stationaryReload/page2/title";
       
       public static const DETAILSHELP_MECHANICS_STATIONARYRELOAD_PAGE2_DESCRIPTION:String = "#ingame_help:detailsHelp/mechanics/stationaryReload/page2/description";
+      
+      public static const DETAILSHELP_MECHANICS_HEATINGZONESGUN_PAGE1_TITLE:String = "#ingame_help:detailsHelp/mechanics/heatingZonesGun/page1/title";
+      
+      public static const DETAILSHELP_MECHANICS_HEATINGZONESGUN_PAGE1_DESCRIPTION:String = "#ingame_help:detailsHelp/mechanics/heatingZonesGun/page1/description";
+      
+      public static const DETAILSHELP_MECHANICS_STAGEDJETBOOSTERS_PAGE1_TITLE:String = "#ingame_help:detailsHelp/mechanics/stagedJetBoosters/page1/title";
+      
+      public static const DETAILSHELP_MECHANICS_STAGEDJETBOOSTERS_PAGE1_DESCRIPTION:String = "#ingame_help:detailsHelp/mechanics/stagedJetBoosters/page1/description";
       
       public static const DETAILSHELP_NOKEYSWARNING:String = "#ingame_help:detailsHelp/noKeysWarning";
       
@@ -394,6 +406,8 @@ package
       public static const RADIALMENU_CANCEL_REPLY:String = "#ingame_help:radialMenu/cancel_reply";
       
       public static const RADIALMENU_POSITIVE:String = "#ingame_help:radialMenu/positive";
+      
+      public static const RADIALMENU_OVERHEATED_GUN:String = "#ingame_help:radialMenu/overheated_gun";
       
       public static const DETAILSHELP_TRACKWITHINTRACK_TITLE:String = "#ingame_help:detailsHelp/trackWithinTrack/title";
       
