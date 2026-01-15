@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/russian/R251_T_55_SP_01/normal/lod1/Turret_01</nodefullVisual>
+	<parent>vehicles/russian/R251_T_55_SP_01/normal/lod2/Turret_01</parent>
+	<tank>true</tank>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.288492 -0.000405 -1.416094</min>
+		<max>1.260965 1.111258 1.370220</max>
+	</visibilityBox>
+</root>

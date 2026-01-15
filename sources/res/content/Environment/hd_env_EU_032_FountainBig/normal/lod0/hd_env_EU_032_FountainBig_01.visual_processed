@@ -13,10 +13,9 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<stream>uv2</stream>
-			<stream>colour</stream>
-			<primitive>indices</primitive>
+			<vertices>s_wall0Shape.vertices</vertices>
+			<stream>s_wall0Shape.colour</stream>
+			<primitive>s_wall0Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -26,8 +25,65 @@
 				</material>
 				<groupOrigin>0.000000 2.609286 0.009097</groupOrigin>
 			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>s4Shape.vertices</vertices>
+			<stream>s4Shape.uv2</stream>
+			<primitive>s4Shape.indices</primitive>
 			<primitiveGroup>
-				1
+				0
+				<material>
+					<identifier>s_nd4</identifier>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>111</materialKind>
+					<property>
+						alphaReference
+						<Int>0</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>false</Bool>
+					</property>
+					<property>
+						doubleSided
+						<Bool>false</Bool>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Environment/hd_env_EU_032_FountainBig/hd_env_EU_032_FountainBig_01_Details_02_AM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Environment/hd_env_EU_032_FountainBig/hd_env_EU_032_FountainBig_01_Details_02_ANM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Environment/hd_env_EU_032_FountainBig/hd_env_EU_032_FountainBig_01_Details_02_GMM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+				</material>
+				<groupOrigin>-1.947419 2.651273 0.056561</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>s2Shape5.vertices</vertices>
+			<stream>s2Shape5.uv2</stream>
+			<stream>s2Shape5.colour</stream>
+			<primitive>s2Shape5.indices</primitive>
+			<primitiveGroup>
+				0
 				<material>
 					<identifier>s_nd5</identifier>
 					<fx>shaders/std_effects/PBS_ext.fx</fx>
@@ -65,45 +121,7 @@
 				<groupOrigin>3.519066 2.574706 0.000415</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				2
-				<material>
-					<identifier>s_nd4</identifier>
-					<fx>shaders/std_effects/PBS_ext.fx</fx>
-					<collisionFlags>0</collisionFlags>
-					<materialKind>111</materialKind>
-					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						diffuseMap
-						<Texture>content/Environment/hd_env_EU_032_FountainBig/hd_env_EU_032_FountainBig_01_Details_02_AM.dds</Texture>
-					</property>
-					<property>
-						normalMap
-						<Texture>content/Environment/hd_env_EU_032_FountainBig/hd_env_EU_032_FountainBig_01_Details_02_ANM.dds</Texture>
-					</property>
-					<property>
-						metallicGlossMap
-						<Texture>content/Environment/hd_env_EU_032_FountainBig/hd_env_EU_032_FountainBig_01_Details_02_GMM.dds</Texture>
-					</property>
-					<property>
-						g_enableAO
-						<Bool>true</Bool>
-					</property>
-				</material>
-				<groupOrigin>-1.947419 2.651273 0.056561</groupOrigin>
-			</primitiveGroup>
-			<primitiveGroup>
-				3
+				1
 				<material>
 					<identifier>s_nd3</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
@@ -209,7 +227,7 @@
 				<groupOrigin>-0.037706 2.386296 -0.182921</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				4
+				2
 				<material>
 					<identifier>s_nd2</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
@@ -322,7 +340,7 @@
 				<groupOrigin>0.000322 0.207897 -0.058915</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				5
+				3
 				<material>
 					<identifier>s_nd1</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
@@ -435,7 +453,7 @@
 				<groupOrigin>0.011705 2.655053 -0.058915</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				6
+				4
 				<material>
 					<identifier>s_nd0</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
@@ -554,6 +572,6 @@
 		<max>14.766455 7.116003 8.187213</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>1047704</geometrySize>
+	<geometrySize>1035100</geometrySize>
 	<minUVDensity>0.005960</minUVDensity>
 </root>

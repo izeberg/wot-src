@@ -13,8 +13,8 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<primitive>indices</primitive>
+			<vertices>gun_01_Shape.vertices</vertices>
+			<primitive>gun_01_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -51,14 +51,14 @@
 						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.339594 0.507324 2.300174</groupOrigin>
+				<groupOrigin>0.003081 0.464185 2.300174</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-1.602741 -0.458248 -3.100509</min>
-		<max>0.923553 1.472897 7.700856</max>
+		<min>-0.917390 -0.458248 -3.100509</min>
+		<max>0.923553 1.386619 7.700856</max>
 	</boundingBox>
-	<geometrySize>5416</geometrySize>
+	<geometrySize>4500</geometrySize>
 	<minUVDensity>0.002922</minUVDensity>
 </root>

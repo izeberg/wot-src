@@ -53,10 +53,6 @@
 						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
 					</property>
 					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
-					</property>
-					<property>
 						g_useDetailMetallic
 						<Bool>true</Bool>
 					</property>
@@ -69,10 +65,7 @@
 					</property>
 					<property>
 						g_detailUVTiling
-						<Vector4>
-							8.41644 8.41644 0.000000 0.000000
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>8.416440 8.416440 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_detailPowerGloss
@@ -97,10 +90,6 @@
 						<Texture>vehicles/british/GB88_T95_Chieftain_turret/T95_Chieftain_turret_01_AO.dds</Texture>
 					</property>
 					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
 						diffuseMap
 						<Texture>vehicles/british/GB88_T95_Chieftain_turret/T95_Chieftain_turret_01_AM.dds</Texture>
 					</property>
@@ -114,7 +103,7 @@
 					</property>
 					<property>
 						alphaReference
-						<Int>64</Int>
+						<Int>128</Int>
 					</property>
 				</material>
 				<groupOrigin>-0.169397 0.996603 -0.545831</groupOrigin>

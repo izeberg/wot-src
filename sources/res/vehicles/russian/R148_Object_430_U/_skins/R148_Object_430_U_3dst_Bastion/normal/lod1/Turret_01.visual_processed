@@ -40,30 +40,31 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<primitive>indices</primitive>
+			<vertices>turret_01Shape.vertices</vertices>
+			<primitive>turret_01Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>tank_turret_01</identifier>
 					<fx>shaders/std_effects/PBS_tank.fx</fx>
-					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
+					<identifier>tank_turret_01</identifier>
+					<collisionFlags>0</collisionFlags>
 					<property>
-						g_detailUVTiling
-						<Vector4>3.506850 1.753425 0.000000 0.000000</Vector4>
+						diffuseMap
+						<Texture>vehicles/russian/R148_Object_430_U/_skins/R148_Object_430_U_3dst_Bastion/Object_430_U_3dst_Bastion_turret_01_AM.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/russian/R148_Object_430_U/_skins/R148_Object_430_U_3dst_Bastion/Object_430_U_3dst_Bastion_turret_GMM.dds</Texture>
 					</property>
 					<property>
 						g_detailPowerGloss
 						<Float>
 							0.35
-							<!--BW_String-->
-						</Float>
-					</property>
-					<property>
-						g_detailPowerAlbedo
-						<Float>
-							0.11
 							<!--BW_String-->
 						</Float>
 					</property>
@@ -75,36 +76,35 @@
 						</Float>
 					</property>
 					<property>
-						g_detailPower
-						<Float>5</Float>
-					</property>
-					<property>
-						metallicDetailMap
-						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
-					</property>
-					<property>
 						g_useDetailMetallic
 						<Bool>true</Bool>
 					</property>
 					<property>
-						metallicGlossMap
-						<Texture>vehicles/russian/R148_Object_430_U/_skins/R148_Object_430_U_3dst_Bastion/Object_430_U_3dst_Bastion_turret_GMM.dds</Texture>
+						g_detailUVTiling
+						<Vector4>3.506850 1.753430 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_detailPower
+						<Float>5</Float>
 					</property>
 					<property>
 						normalMap
 						<Texture>vehicles/russian/R148_Object_430_U/_skins/R148_Object_430_U_3dst_Bastion/Object_430_U_3dst_Bastion_turret_01_ANM.dds</Texture>
 					</property>
 					<property>
-						diffuseMap
-						<Texture>vehicles/russian/R148_Object_430_U/_skins/R148_Object_430_U_3dst_Bastion/Object_430_U_3dst_Bastion_turret_01_AM.dds</Texture>
-					</property>
-					<property>
 						excludeMaskAndAOMap
 						<Texture>vehicles/russian/R148_Object_430_U/_skins/R148_Object_430_U_3dst_Bastion/Object_430_U_3dst_Bastion_turret_01_AO.dds</Texture>
 					</property>
 					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
 					</property>
 				</material>
 				<groupOrigin>-0.001866 0.674933 -0.068322</groupOrigin>
@@ -112,41 +112,66 @@
 			<primitiveGroup>
 				1
 				<material>
-					<identifier>tank_equipment_01</identifier>
 					<fx>shaders/std_effects/PBS_tank.fx</fx>
 					<materialKind>0</materialKind>
+					<identifier>tank_equipment_01</identifier>
 					<collisionFlags>0</collisionFlags>
-					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
-					</property>
 					<property>
 						diffuseMap
 						<Texture>vehicles/russian/R148_Object_430_U/_skins/R148_Object_430_U_3dst_Bastion/Object_430_U_3dst_Bastion_equipment_AM.dds</Texture>
 					</property>
 					<property>
-						excludeMaskAndAOMap
-						<Texture>vehicles/russian/R148_Object_430_U/_skins/R148_Object_430_U_3dst_Bastion/Object_430_U_3dst_Bastion_equipment_AO.dds</Texture>
-					</property>
-					<property>
-						g_detailUVTiling
-						<Vector4>1.753425 1.753425 0.000000 0.000000</Vector4>
-					</property>
-					<property>
-						g_useDetailMetallic
-						<Bool>true</Bool>
-					</property>
-					<property>
-						metallicDetailMap
-						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 					<property>
 						metallicGlossMap
 						<Texture>vehicles/russian/R148_Object_430_U/_skins/R148_Object_430_U_3dst_Bastion/Object_430_U_3dst_Bastion_equipment_GMM.dds</Texture>
 					</property>
 					<property>
+						g_detailPowerGloss
+						<Float>
+							0.35
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_maskBias
+						<Float>
+							0.18
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>1.753430 1.753430 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_detailPower
+						<Float>5</Float>
+					</property>
+					<property>
 						normalMap
 						<Texture>vehicles/russian/R148_Object_430_U/_skins/R148_Object_430_U_3dst_Bastion/Object_430_U_3dst_Bastion_equipment_ANM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/russian/R148_Object_430_U/_skins/R148_Object_430_U_3dst_Bastion/Object_430_U_3dst_Bastion_equipment_AO.dds</Texture>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
 					</property>
 				</material>
 				<groupOrigin>0.000000 0.539787 0.014322</groupOrigin>
@@ -157,6 +182,6 @@
 		<min>-1.476315 -0.039011 -1.555113</min>
 		<max>1.472584 1.388876 1.418469</max>
 	</boundingBox>
-	<geometrySize>200026</geometrySize>
+	<geometrySize>216266</geometrySize>
 	<minUVDensity>0.000798</minUVDensity>
 </root>

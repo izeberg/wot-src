@@ -940,7 +940,18 @@
 			<primitiveGroup>
 				0
 				<material>
+					<fx>shaders/std_effects/PBS_tank_uvtransform_skinned_ao.fx</fx>
+					<materialKind>0</materialKind>
 					<identifier>track_mat_L_skinned</identifier>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>vehicles/british/tracks/Vickers_MBT_Mk3_track_AM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/british/tracks/Vickers_MBT_Mk3_track_GMM.dds</Texture>
+					</property>
 					<property>
 						g_detailPowerGloss
 						<Float>
@@ -949,11 +960,8 @@
 						</Float>
 					</property>
 					<property>
-						g_detailPowerAlbedo
-						<Float>
-							0.11
-							<!--BW_String-->
-						</Float>
+						alphaTestEnable
+						<Bool>true</Bool>
 					</property>
 					<property>
 						g_maskBias
@@ -963,38 +971,23 @@
 						</Float>
 					</property>
 					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>3.507000 3.507000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
 						g_detailPower
 						<Float>5</Float>
-					</property>
-					<collisionFlags>255</collisionFlags>
-					<materialKind>0</materialKind>
-					<fx>shaders/std_effects/PBS_tank_uvtransform_skinned_ao.fx</fx>
-					<property>
-						metallicGlossMap
-						<Texture>vehicles/british/tracks/Vickers_MBT_Mk3_track_GMM.dds</Texture>
 					</property>
 					<property>
 						normalMap
 						<Texture>vehicles/british/tracks/Vickers_MBT_Mk3_track_ANM.dds</Texture>
 					</property>
 					<property>
-						diffuseMap
-						<Texture>vehicles/british/tracks/Vickers_MBT_Mk3_track_AM.dds</Texture>
-					</property>
-					<property>
-						alphaReference
-						<Int>64</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
 						doubleSided
-						<Bool>true</Bool>
-					</property>
-					<property>
-						g_useDetailMetallic
 						<Bool>true</Bool>
 					</property>
 					<property>
@@ -1002,8 +995,15 @@
 						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
 					</property>
 					<property>
-						g_detailUVTiling
-						<Vector4>3.506849 0.876712 0.000000 0.000000</Vector4>
+						alphaReference
+						<Int>128</Int>
+					</property>
+					<property>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
 					</property>
 				</material>
 				<groupOrigin>-1.266114 0.623091 -0.183668</groupOrigin>
@@ -1015,10 +1015,10 @@
 		<node>Track_R5_BlendBone</node>
 		<node>Track_R4_BlendBone</node>
 		<node>Track_R3_BlendBone</node>
+		<node>V_BlendBone</node>
 		<node>Track_R2_BlendBone</node>
 		<node>Track_R1_BlendBone</node>
 		<node>Track_R0_BlendBone</node>
-		<node>V_BlendBone</node>
 		<node>Track_VT_R0_BlendBone</node>
 		<node>Track_VT_R1_BlendBone</node>
 		<node>Track_VT_R2_BlendBone</node>
@@ -1032,7 +1032,18 @@
 			<primitiveGroup>
 				0
 				<material>
+					<fx>shaders/std_effects/PBS_tank_uvtransform_skinned_ao.fx</fx>
+					<materialKind>0</materialKind>
 					<identifier>track_mat_R_skinned</identifier>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>vehicles/british/tracks/Vickers_MBT_Mk3_track_AM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/british/tracks/Vickers_MBT_Mk3_track_GMM.dds</Texture>
+					</property>
 					<property>
 						g_detailPowerGloss
 						<Float>
@@ -1041,11 +1052,8 @@
 						</Float>
 					</property>
 					<property>
-						g_detailPowerAlbedo
-						<Float>
-							0.11
-							<!--BW_String-->
-						</Float>
+						alphaTestEnable
+						<Bool>true</Bool>
 					</property>
 					<property>
 						g_maskBias
@@ -1055,38 +1063,23 @@
 						</Float>
 					</property>
 					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>3.507000 3.507000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
 						g_detailPower
 						<Float>5</Float>
-					</property>
-					<collisionFlags>255</collisionFlags>
-					<materialKind>0</materialKind>
-					<fx>shaders/std_effects/PBS_tank_uvtransform_skinned_ao.fx</fx>
-					<property>
-						metallicGlossMap
-						<Texture>vehicles/british/tracks/Vickers_MBT_Mk3_track_GMM.dds</Texture>
 					</property>
 					<property>
 						normalMap
 						<Texture>vehicles/british/tracks/Vickers_MBT_Mk3_track_ANM.dds</Texture>
 					</property>
 					<property>
-						diffuseMap
-						<Texture>vehicles/british/tracks/Vickers_MBT_Mk3_track_AM.dds</Texture>
-					</property>
-					<property>
-						alphaReference
-						<Int>64</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
 						doubleSided
-						<Bool>true</Bool>
-					</property>
-					<property>
-						g_useDetailMetallic
 						<Bool>true</Bool>
 					</property>
 					<property>
@@ -1094,8 +1087,15 @@
 						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
 					</property>
 					<property>
-						g_detailUVTiling
-						<Vector4>3.506849 0.876712 0.000000 0.000000</Vector4>
+						alphaReference
+						<Int>128</Int>
+					</property>
+					<property>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
 					</property>
 				</material>
 				<groupOrigin>1.266109 0.623091 -0.183668</groupOrigin>
@@ -1104,42 +1104,44 @@
 	</renderSet>
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
-		<node>WD_L4_BlendBone</node>
-		<node>WD_L3_BlendBone</node>
-		<node>WD_L2_BlendBone</node>
-		<node>WD_L1_BlendBone</node>
-		<node>WD_L0_BlendBone</node>
-		<node>W_L5_BlendBone</node>
-		<node>W_L4_BlendBone</node>
-		<node>W_L3_BlendBone</node>
-		<node>W_L2_BlendBone</node>
-		<node>W_L1_BlendBone</node>
-		<node>W_L0_BlendBone</node>
 		<node>V_BlendBone</node>
-		<node>Track_L0_BlendBone</node>
-		<node>Track_L2_BlendBone</node>
-		<node>Track_L1_BlendBone</node>
-		<node>Track_L3_BlendBone</node>
-		<node>Track_L4_BlendBone</node>
-		<node>Track_L5_BlendBone</node>
+		<node>W_L0_BlendBone</node>
+		<node>W_L1_BlendBone</node>
+		<node>W_L2_BlendBone</node>
+		<node>W_L3_BlendBone</node>
+		<node>W_L4_BlendBone</node>
+		<node>W_L5_BlendBone</node>
+		<node>WD_L0_BlendBone</node>
+		<node>WD_L1_BlendBone</node>
+		<node>WD_L2_BlendBone</node>
+		<node>WD_L3_BlendBone</node>
+		<node>WD_L4_BlendBone</node>
 		<geometry>
-			<vertices>exportChassL1_Shape.vertices</vertices>
-			<primitive>exportChassL1_Shape.indices</primitive>
+			<vertices>chassis_L_Shape.vertices</vertices>
+			<primitive>chassis_L_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<materialKind>0</materialKind>
 					<identifier>tank_chassis_01_skinned</identifier>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>vehicles/british/GB114_Vickers_MBT_Mk3/Vickers_MBT_Mk3_chassis_01_AM.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/british/GB114_Vickers_MBT_Mk3/Vickers_MBT_Mk3_chassis_01_GMM.dds</Texture>
+					</property>
 					<property>
 						g_detailPowerGloss
 						<Float>
 							0.35
-							<!--BW_String-->
-						</Float>
-					</property>
-					<property>
-						g_detailPowerAlbedo
-						<Float>
-							0.11
 							<!--BW_String-->
 						</Float>
 					</property>
@@ -1151,51 +1153,39 @@
 						</Float>
 					</property>
 					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>3.507000 1.507000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
 						g_detailPower
 						<Float>5</Float>
-					</property>
-					<collisionFlags>255</collisionFlags>
-					<materialKind>0</materialKind>
-					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
-					<property>
-						metallicGlossMap
-						<Texture>vehicles/british/GB114_Vickers_MBT_Mk3/Vickers_MBT_Mk3_chassis_01_GMM.dds</Texture>
 					</property>
 					<property>
 						normalMap
 						<Texture>vehicles/british/GB114_Vickers_MBT_Mk3/Vickers_MBT_Mk3_chassis_01_ANM.dds</Texture>
 					</property>
 					<property>
-						diffuseMap
-						<Texture>vehicles/british/GB114_Vickers_MBT_Mk3/Vickers_MBT_Mk3_chassis_01_AM.dds</Texture>
-					</property>
-					<property>
 						excludeMaskAndAOMap
 						<Texture>vehicles/british/GB114_Vickers_MBT_Mk3/Vickers_MBT_Mk3_chassis_01_AO.dds</Texture>
-					</property>
-					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
-					</property>
-					<property>
-						g_useDetailMetallic
-						<Bool>true</Bool>
 					</property>
 					<property>
 						metallicDetailMap
 						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
 					</property>
 					<property>
-						g_detailUVTiling
-						<Vector4>3.506849 1.753425 0.000000 0.000000</Vector4>
-					</property>
-					<property>
 						alphaReference
 						<Int>128</Int>
 					</property>
 					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
 					</property>
 				</material>
 				<groupOrigin>-1.066935 0.622620 -0.166832</groupOrigin>
@@ -1204,42 +1194,44 @@
 	</renderSet>
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
-		<node>WD_R4_BlendBone</node>
-		<node>WD_R3_BlendBone</node>
-		<node>WD_R2_BlendBone</node>
-		<node>WD_R1_BlendBone</node>
-		<node>WD_R0_BlendBone</node>
-		<node>W_R5_BlendBone</node>
-		<node>W_R4_BlendBone</node>
-		<node>W_R3_BlendBone</node>
-		<node>W_R2_BlendBone</node>
-		<node>W_R1_BlendBone</node>
-		<node>W_R0_BlendBone</node>
 		<node>V_BlendBone</node>
-		<node>Track_R0_BlendBone</node>
-		<node>Track_R2_BlendBone</node>
-		<node>Track_R1_BlendBone</node>
-		<node>Track_R3_BlendBone</node>
-		<node>Track_R4_BlendBone</node>
-		<node>Track_R5_BlendBone</node>
+		<node>W_R0_BlendBone</node>
+		<node>W_R1_BlendBone</node>
+		<node>W_R2_BlendBone</node>
+		<node>W_R3_BlendBone</node>
+		<node>W_R4_BlendBone</node>
+		<node>W_R5_BlendBone</node>
+		<node>WD_R0_BlendBone</node>
+		<node>WD_R1_BlendBone</node>
+		<node>WD_R2_BlendBone</node>
+		<node>WD_R3_BlendBone</node>
+		<node>WD_R4_BlendBone</node>
 		<geometry>
-			<vertices>exportChassR1_Shape.vertices</vertices>
-			<primitive>exportChassR1_Shape.indices</primitive>
+			<vertices>chassis_R_Shape.vertices</vertices>
+			<primitive>chassis_R_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<materialKind>0</materialKind>
 					<identifier>tank_chassis_01_skinned</identifier>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>vehicles/british/GB114_Vickers_MBT_Mk3/Vickers_MBT_Mk3_chassis_01_AM.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/british/GB114_Vickers_MBT_Mk3/Vickers_MBT_Mk3_chassis_01_GMM.dds</Texture>
+					</property>
 					<property>
 						g_detailPowerGloss
 						<Float>
 							0.35
-							<!--BW_String-->
-						</Float>
-					</property>
-					<property>
-						g_detailPowerAlbedo
-						<Float>
-							0.11
 							<!--BW_String-->
 						</Float>
 					</property>
@@ -1251,51 +1243,39 @@
 						</Float>
 					</property>
 					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>3.507000 1.507000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
 						g_detailPower
 						<Float>5</Float>
-					</property>
-					<collisionFlags>255</collisionFlags>
-					<materialKind>0</materialKind>
-					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
-					<property>
-						metallicGlossMap
-						<Texture>vehicles/british/GB114_Vickers_MBT_Mk3/Vickers_MBT_Mk3_chassis_01_GMM.dds</Texture>
 					</property>
 					<property>
 						normalMap
 						<Texture>vehicles/british/GB114_Vickers_MBT_Mk3/Vickers_MBT_Mk3_chassis_01_ANM.dds</Texture>
 					</property>
 					<property>
-						diffuseMap
-						<Texture>vehicles/british/GB114_Vickers_MBT_Mk3/Vickers_MBT_Mk3_chassis_01_AM.dds</Texture>
-					</property>
-					<property>
 						excludeMaskAndAOMap
 						<Texture>vehicles/british/GB114_Vickers_MBT_Mk3/Vickers_MBT_Mk3_chassis_01_AO.dds</Texture>
-					</property>
-					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
-					</property>
-					<property>
-						g_useDetailMetallic
-						<Bool>true</Bool>
 					</property>
 					<property>
 						metallicDetailMap
 						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
 					</property>
 					<property>
-						g_detailUVTiling
-						<Vector4>3.506849 1.753425 0.000000 0.000000</Vector4>
-					</property>
-					<property>
 						alphaReference
 						<Int>128</Int>
 					</property>
 					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
 					</property>
 				</material>
 				<groupOrigin>1.066930 0.622620 -0.166832</groupOrigin>

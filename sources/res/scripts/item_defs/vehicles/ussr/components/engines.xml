@@ -255,6 +255,7 @@
 		<GTD_1GV8>31069</GTD_1GV8>
 		<M_40_1200_F>31072</M_40_1200_F>
 		<M_40F_1500_F>31073</M_40F_1500_F>
+		<W_55>31075</W_55>
 		<V_11_NC_T>31026</V_11_NC_T>
 		<_2DG_8M_279_T>35003</_2DG_8M_279_T>
 		<_2xV_11_700_T>35004</_2xV_11_700_T>
@@ -5350,6 +5351,26 @@
 			<rpm_min>300</rpm_min>
 			<rpm_max>2300</rpm_max>
 		</M_40F_1500_F>
+		<W_55>
+			<userString>#ussr_vehicles:W_55</userString>
+			<tags>diesel</tags>
+			<level>8</level>
+			<price>60000</price>
+			<notInShop>true</notInShop>
+			<wwsoundPC>eng_V2K_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2K_npc</wwsoundNPC>
+			<power>580</power>
+			<weight>940</weight>
+			<maxHealth>320</maxHealth>
+			<maxRegenHealth>160</maxRegenHealth>
+			<repairCost>9</repairCost>
+			<fireStartingChance>
+				0.12
+				<!--BW_String-->
+			</fireStartingChance>
+			<rpm_min>319</rpm_min>
+			<rpm_max>2261</rpm_max>
+		</W_55>
 		<GTD_1GV8>
 			<userString>#ussr_vehicles:GTD_1GV8</userString>
 			<tags>gasoline</tags>

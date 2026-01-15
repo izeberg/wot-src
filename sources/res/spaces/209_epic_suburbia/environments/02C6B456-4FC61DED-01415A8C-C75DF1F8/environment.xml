@@ -141,12 +141,12 @@
 	<SSAO>
 		<enableFromPreset>2</enableFromPreset>
 		<radius>0.100000</radius>
-		<amplify>0.390000</amplify>
-		<fadeNear>4.000000</fadeNear>
-		<terrainAOGammaCorrection>0.250000</terrainAOGammaCorrection>
+		<amplify>0.750000</amplify>
+		<fadeNear>2.350000</fadeNear>
+		<terrainAOGammaCorrection>0.610000</terrainAOGammaCorrection>
 		<influences>
-			<speedtree>0.500000 0.900000</speedtree>
-			<terrain>0.990000 0.000000</terrain>
+			<speedtree>0.500000 0.850000</speedtree>
+			<terrain>0.620000 0.000000</terrain>
 			<objects>0.950000 0.000000</objects>
 			<localLights>1.000000</localLights>
 		</influences>

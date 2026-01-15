@@ -5981,7 +5981,7 @@
 				<recoilEffect>huge</recoilEffect>
 			</recoil>
 			<effects>shot_huge</effects>
-			<reloadEffect>reload_automat_reloading_115_152</reloadEffect>
+			<reloadEffect>autoloader_reload115_152</reloadEffect>
 			<pitchLimits>
 				<minPitch>
 					0.0 -45.0 1.0 -45.0
@@ -6076,7 +6076,7 @@
 				<recoilEffect>huge</recoilEffect>
 			</recoil>
 			<effects>shot_huge</effects>
-			<reloadEffect>reload_automat_reloading_115_152</reloadEffect>
+			<reloadEffect>autoloader_reload115_152</reloadEffect>
 			<pitchLimits>
 				<minPitch>
 					0.0 -45.0 1.0 -45.0
@@ -6170,8 +6170,8 @@
 				</amplitude>
 				<recoilEffect>S36_VK_155_Projekt</recoilEffect>
 			</recoil>
-			<effects>shot_largeext</effects>
-			<reloadEffect>reload_automat_reloading_155_170</reloadEffect>
+			<effects>shot_huge_mb</effects>
+			<reloadEffect>autoloader_reload115_152</reloadEffect>
 			<turretYawLimits>-180 180</turretYawLimits>
 			<pitchLimits>
 				<minPitch>
@@ -6265,8 +6265,8 @@
 				</amplitude>
 				<recoilEffect>S36_VK_155_Projekt</recoilEffect>
 			</recoil>
-			<effects>shot_largeext</effects>
-			<reloadEffect>reload_automat_reloading_155_170</reloadEffect>
+			<effects>shot_huge_mb</effects>
+			<reloadEffect>autoloader_reload115_152</reloadEffect>
 			<turretYawLimits>-180 180</turretYawLimits>
 			<pitchLimits>
 				<minPitch>

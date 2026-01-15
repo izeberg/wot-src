@@ -13,8 +13,8 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<primitive>indices</primitive>
+			<vertices>gun_01_Shape.vertices</vertices>
+			<primitive>gun_01_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -51,13 +51,13 @@
 						<Texture>vehicles/sweden/S36_VK_155_Projekt/VK_155_Projekt_guns_ID.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.192158 0.298325 2.326779</groupOrigin>
+				<groupOrigin>0.041479 0.280306 2.326779</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-1.620839 -0.875213 -3.105734</min>
-		<max>1.236522 1.471862 7.759291</max>
+		<min>-1.153564 -0.875213 -3.105734</min>
+		<max>1.236522 1.435825 7.759291</max>
 	</boundingBox>
 	<geometrySize>612896</geometrySize>
 	<minUVDensity>0.005203</minUVDensity>

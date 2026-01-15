@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<nodelessVisual>vehicles/sweden/S36_VK_155_Projekt/crash/lod1/Gun_01</nodelessVisual>
 	<parent>vehicles/sweden/S36_VK_155_Projekt/crash/lod2/Gun_01</parent>
 	<extent>64.000000</extent>
 	<visibilityBox>
-		<min>-1.619150 -0.875264 -3.105519</min>
-		<max>1.235835 1.471869 7.759156</max>
+		<min>-1.153564 -0.875264 -3.105519</min>
+		<max>1.235835 1.434186 7.759156</max>
 	</visibilityBox>
 	<tank>true</tank>
+	<nodefullVisual>vehicles/sweden/S36_VK_155_Projekt/crash/lod1/Gun_01</nodefullVisual>
 </root>

@@ -17,42 +17,6 @@
 				<row3>0.000000 0.000000 0.000000</row3>
 			</transform>
 			<node>
-				<identifier>HP_Track_LFront</identifier>
-				<transform>
-					<row0>1.000000 0.000000 0.000000</row0>
-					<row1>0.000000 0.993847 -0.110758</row1>
-					<row2>0.000000 0.110758 0.993847</row2>
-					<row3>-1.466578 -0.000219 2.490775</row3>
-				</transform>
-			</node>
-			<node>
-				<identifier>HP_Track_LRear</identifier>
-				<transform>
-					<row0>-1.000000 0.000000 0.000000</row0>
-					<row1>0.000000 0.994751 0.102324</row1>
-					<row2>-0.000000 0.102324 -0.994751</row2>
-					<row3>-1.466578 -0.000219 -2.490774</row3>
-				</transform>
-			</node>
-			<node>
-				<identifier>HP_Track_RFront</identifier>
-				<transform>
-					<row0>1.000000 0.000000 0.000000</row0>
-					<row1>0.000000 0.993847 -0.110758</row1>
-					<row2>0.000000 0.110758 0.993847</row2>
-					<row3>1.466578 -0.000219 2.490775</row3>
-				</transform>
-			</node>
-			<node>
-				<identifier>HP_Track_RRear</identifier>
-				<transform>
-					<row0>-1.000000 0.000000 0.000000</row0>
-					<row1>0.000000 0.994751 0.102324</row1>
-					<row2>-0.000000 0.102324 -0.994751</row2>
-					<row3>1.466578 -0.000219 -2.490774</row3>
-				</transform>
-			</node>
-			<node>
 				<identifier>HP_gui</identifier>
 				<transform>
 					<row0>1.000000 0.000000 0.000000</row0>
@@ -110,36 +74,50 @@
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>track_mat_R_skinned</identifier>
 					<fx>shaders/std_effects/PBS_tank_skinned_ao.fx</fx>
 					<materialKind>0</materialKind>
-					<collisionFlags>255</collisionFlags>
+					<identifier>track_mat_R_skinned</identifier>
+					<collisionFlags>0</collisionFlags>
 					<property>
-						alphaReference
-						<Int>128</Int>
+						diffuseMap
+						<Texture>vehicles/british/tracks/FV215b_183_3Dst_02_track_AM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/british/tracks/FV215b_183_3Dst_02_track_GMM.dds</Texture>
+					</property>
+					<property>
+						g_detailPowerGloss
+						<Float>
+							0.35
+							<!--BW_String-->
+						</Float>
 					</property>
 					<property>
 						alphaTestEnable
 						<Bool>true</Bool>
 					</property>
 					<property>
-						crash_coefficient
-						<Float>0.300000</Float>
+						g_maskBias
+						<Float>
+							0.18
+							<!--BW_String-->
+						</Float>
 					</property>
 					<property>
-						diffuseMap
-						<Texture>vehicles/british/tracks/FV215b_183_3Dst_02_AM.dds</Texture>
-					</property>
-					<property>
-						doubleSided
+						g_useDetailMetallic
 						<Bool>true</Bool>
 					</property>
 					<property>
 						g_detailUVTiling
-						<Vector4>0.876713 0.219178 0.000000 0.000000</Vector4>
+						<Vector4>3.507000 3.507000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
-						g_useDetailMetallic
+						normalMap
+						<Texture>vehicles/british/tracks/FV215b_183_3Dst_02_track_ANM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
 						<Bool>true</Bool>
 					</property>
 					<property>
@@ -147,12 +125,15 @@
 						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
 					</property>
 					<property>
-						metallicGlossMap
-						<Texture>vehicles/british/tracks/FV215b_183_3Dst_02_GMM.dds</Texture>
+						alphaReference
+						<Int>128</Int>
 					</property>
 					<property>
-						normalMap
-						<Texture>vehicles/british/tracks/FV215b_183_3Dst_02_ANM.dds</Texture>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
 					</property>
 				</material>
 				<groupOrigin>1.466686 0.675728 -0.375995</groupOrigin>
@@ -170,36 +151,50 @@
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>track_mat_L_skinned</identifier>
 					<fx>shaders/std_effects/PBS_tank_skinned_ao.fx</fx>
 					<materialKind>0</materialKind>
-					<collisionFlags>255</collisionFlags>
+					<identifier>track_mat_L_skinned</identifier>
+					<collisionFlags>0</collisionFlags>
 					<property>
-						alphaReference
-						<Int>128</Int>
+						diffuseMap
+						<Texture>vehicles/british/tracks/FV215b_183_3Dst_02_track_AM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/british/tracks/FV215b_183_3Dst_02_track_GMM.dds</Texture>
+					</property>
+					<property>
+						g_detailPowerGloss
+						<Float>
+							0.35
+							<!--BW_String-->
+						</Float>
 					</property>
 					<property>
 						alphaTestEnable
 						<Bool>true</Bool>
 					</property>
 					<property>
-						crash_coefficient
-						<Float>0.300000</Float>
+						g_maskBias
+						<Float>
+							0.18
+							<!--BW_String-->
+						</Float>
 					</property>
 					<property>
-						diffuseMap
-						<Texture>vehicles/british/tracks/FV215b_183_3Dst_02_AM.dds</Texture>
-					</property>
-					<property>
-						doubleSided
+						g_useDetailMetallic
 						<Bool>true</Bool>
 					</property>
 					<property>
 						g_detailUVTiling
-						<Vector4>0.876713 0.219178 0.000000 0.000000</Vector4>
+						<Vector4>3.507000 3.507000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
-						g_useDetailMetallic
+						normalMap
+						<Texture>vehicles/british/tracks/FV215b_183_3Dst_02_track_ANM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
 						<Bool>true</Bool>
 					</property>
 					<property>
@@ -207,12 +202,15 @@
 						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
 					</property>
 					<property>
-						metallicGlossMap
-						<Texture>vehicles/british/tracks/FV215b_183_3Dst_02_GMM.dds</Texture>
+						alphaReference
+						<Int>128</Int>
 					</property>
 					<property>
-						normalMap
-						<Texture>vehicles/british/tracks/FV215b_183_3Dst_02_ANM.dds</Texture>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
 					</property>
 				</material>
 				<groupOrigin>-1.466578 0.631815 0.189291</groupOrigin>

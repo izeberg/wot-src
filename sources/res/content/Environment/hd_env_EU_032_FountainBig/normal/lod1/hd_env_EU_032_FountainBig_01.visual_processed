@@ -13,10 +13,28 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<stream>uv2</stream>
-			<stream>colour</stream>
-			<primitive>indices</primitive>
+			<vertices>s_wall0Shape.vertices</vertices>
+			<stream>s_wall0Shape.colour</stream>
+			<primitive>s_wall0Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_wall_0</identifier>
+					<collisionFlags>131</collisionFlags>
+					<materialKind>111</materialKind>
+				</material>
+				<groupOrigin>0.000000 2.609286 0.009097</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>s5Shape.vertices</vertices>
+			<stream>s5Shape.uv2</stream>
+			<stream>s5Shape.colour</stream>
+			<primitive>s5Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -466,15 +484,6 @@
 				</material>
 				<groupOrigin>0.000000 2.596806 -0.086148</groupOrigin>
 			</primitiveGroup>
-			<primitiveGroup>
-				6
-				<material>
-					<identifier>s_wall_0</identifier>
-					<collisionFlags>131</collisionFlags>
-					<materialKind>111</materialKind>
-				</material>
-				<groupOrigin>0.000000 2.609286 0.009097</groupOrigin>
-			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
@@ -482,6 +491,6 @@
 		<max>14.766455 7.116003 8.187213</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>406568</geometrySize>
+	<geometrySize>406024</geometrySize>
 	<minUVDensity>0.003874</minUVDensity>
 </root>

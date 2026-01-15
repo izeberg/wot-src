@@ -1765,10 +1765,19 @@ msgstr ""
 msgid "serviceChannelMessages/battlePass/newDeviceToken"
 msgstr "Штатнае абсталяванне на выбар"
 
-msgid "serviceChannelMessages/battlePass/reachedCap/header"
+msgid "serviceChannelMessages/battlePass/reachedCapFactor/header"
+msgstr "Достигнут лимит очков Боевого пропуска"
+
+msgid "serviceChannelMessages/battlePass/reachedCapFactor/text"
+msgstr ""
+"На %(vehNameHighlight)s заработано максимально доступное количество очков.\n"
+"Получено очков в награду: %(bonusPoints)s\n"
+"Лимит очков и награда обновились. Продолжайте зарабатывать очки на %(vehName)s."
+
+msgid "serviceChannelMessages/battlePass/reachedCapWeek/header"
 msgstr "Дасягнуты штотыднёвы ліміт ачкоў Баявога пропуска"
 
-msgid "serviceChannelMessages/battlePass/reachedCap/text"
+msgid "serviceChannelMessages/battlePass/reachedCapWeek/text"
 msgstr ""
 "На %(vehNameHighlight)s здабыта максімальная колькасць ачкоў, даступная на тыдзень.\n"
 "Атрымана ачкоў ва ўзнагароду: %(bonusPoints)s\n"

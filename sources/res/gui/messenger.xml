@@ -2382,7 +2382,7 @@ _(#messenger:serviceChannelMessages/piggyBank/continueAfterSmashed)</message>
 			<icon>InformationIcon</icon>
 			<bgIcon>bg_battle_pass</bgIcon>
 			<bgIconSizeAuto>true</bgIconSizeAuto>
-			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#messenger:serviceChannelMessages/battlePass/reachedCap/header)&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;%(text)s&lt;/font&gt;</message>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;%(header)s&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;%(text)s&lt;/font&gt;</message>
 		</BattlePassReachedCapMessage>
 		<BattlePassCapResetMessage>
 			<type>grey</type>

@@ -154,14 +154,17 @@
 			<slot>
 				<slotType>paint</slotType>
 				<slotId>11000</slotId>
-				<anchorPosition>0.000003 0.375706 2.462661</anchorPosition>
+				<anchorPosition>
+					0.000011 0.92609 -2.631094
+					<!--BW_String-->
+				</anchorPosition>
 				<anchorDirection>0 1 0</anchorDirection>
 			</slot>
 			<slot>
 				<slotType>camouflage</slotType>
 				<slotId>12000</slotId>
 				<anchorPosition>
-					0.000003 0.375706 2.46266
+					0.000011 0.92609 -2.63109
 					<!--BW_String-->
 				</anchorPosition>
 				<anchorDirection>0 1 0</anchorDirection>
@@ -1347,21 +1350,9 @@
 						</radius>
 					</geometry>
 					<startIndex>0</startIndex>
-					<count>5</count>
+					<count>6</count>
 					<trackPairIdx>0</trackPairIdx>
 				</group>
-				<wheel>
-					<isLeft>true</isLeft>
-					<name>W_L5</name>
-					<geometry>
-						<radius>
-							0.4193
-							<!--BW_String-->
-						</radius>
-					</geometry>
-					<trackPairIdx>0</trackPairIdx>
-					<syncAngle>27.692308</syncAngle>
-				</wheel>
 				<wheel>
 					<isLeft>false</isLeft>
 					<name>WD_R0</name>
@@ -1402,21 +1393,9 @@
 						</radius>
 					</geometry>
 					<startIndex>0</startIndex>
-					<count>5</count>
+					<count>6</count>
 					<trackPairIdx>0</trackPairIdx>
 				</group>
-				<wheel>
-					<isLeft>false</isLeft>
-					<name>W_R5</name>
-					<geometry>
-						<radius>
-							0.4193
-							<!--BW_String-->
-						</radius>
-					</geometry>
-					<trackPairIdx>0</trackPairIdx>
-					<syncAngle>27.692308</syncAngle>
-				</wheel>
 			</wheels>
 			<drivingWheels>WD_L0 WD_L4</drivingWheels>
 			<effects>
@@ -1431,7 +1410,7 @@
 					<slotType>paint</slotType>
 					<slotId>21000</slotId>
 					<anchorPosition>
-						-1.334786 0.401681 -0
+						-1.334783 0.685268 -0
 						<!--BW_String-->
 					</anchorPosition>
 					<anchorDirection>0 1 0</anchorDirection>
@@ -1440,7 +1419,7 @@
 					<slotType>style</slotType>
 					<slotId>29000</slotId>
 					<anchorPosition>
-						-1.33479 0.401681 -0
+						-1.33478 0.685268 -0
 						<!--BW_String-->
 					</anchorPosition>
 					<anchorDirection>0 1 0</anchorDirection>
@@ -2458,7 +2437,7 @@
 							<slotType>camouflage</slotType>
 							<slotId>42000</slotId>
 							<anchorPosition>
-								0.000004 0.327263 0.01035
+								-0.000001 0.006778 2.81385
 								<!--BW_String-->
 							</anchorPosition>
 							<anchorDirection>0 1 0</anchorDirection>
@@ -2525,7 +2504,7 @@
 					<slotType>paint</slotType>
 					<slotId>31000</slotId>
 					<anchorPosition>
-						0 0.794819 0
+						0.000003 1.059619 -0
 						<!--BW_String-->
 					</anchorPosition>
 					<anchorDirection>0 1 0</anchorDirection>
@@ -2534,7 +2513,7 @@
 					<slotType>camouflage</slotType>
 					<slotId>32000</slotId>
 					<anchorPosition>
-						0 0.794819 0
+						0.000003 1.05962 -0
 						<!--BW_String-->
 					</anchorPosition>
 					<anchorDirection>0 1 0</anchorDirection>

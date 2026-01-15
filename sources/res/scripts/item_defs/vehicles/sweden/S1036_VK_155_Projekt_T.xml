@@ -2288,14 +2288,14 @@
 						0.70
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>32</reloadTime>
+					<reloadTime>35</reloadTime>
 					<aimingTime>
 						5.0
 						<!--BW_String-->
 					</aimingTime>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.20
+							0.30
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
@@ -2309,15 +2309,17 @@
 					</shotDispersionFactors>
 					<clip>
 						<count>2</count>
-						<rate>60</rate>
+						<rate>12</rate>
 					</clip>
-					<burst>
-						<count>2</count>
-						<rate>
-							17.14285714285714
+					<autoreload>
+						<reloadTime>35 45</reloadTime>
+						<boostFraction>
+							0.5
 							<!--BW_String-->
-						</rate>
-					</burst>
+						</boostFraction>
+						<boostStartTime>0</boostStartTime>
+						<boostResidueTime>2</boostResidueTime>
+					</autoreload>
 					<turretYawLimits>-12 12</turretYawLimits>
 					<pitchLimits>
 						<minPitch>0 -35 1 -35</minPitch>
@@ -2801,7 +2803,7 @@
 						</master>
 					</drivenJoints>
 					<edgeByVisualModel>false</edgeByVisualModel>
-					<effects>shot_largeext</effects>
+					<effects>shot_huge_mb</effects>
 					<camouflage>
 						<density>
 							98.36174 98.009239

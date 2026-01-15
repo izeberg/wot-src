@@ -25682,6 +25682,40 @@ package
       public static const CSKA_01_STYLE_140_DESCRIPTION:String = "#vehicle_customization:CSKA_01_Style_140/description";
       
       public static const CSKA_01_STYLE_140_LONGDESCRIPTION:String = "#vehicle_customization:CSKA_01_Style_140/longDescription";
+      
+      public static const R251_T_55_SP_01_CAMO_01_NAME:String = "#vehicle_customization:r251_t_55_sp_01_camo_01/name";
+      
+      public static const R251_T_55_SP_01_CAMO_01_DESCRIPTION:String = "#vehicle_customization:r251_t_55_sp_01_camo_01/description";
+      
+      public static const R251_T_55_SP_01_CAMO_02_NAME:String = "#vehicle_customization:r251_t_55_sp_01_camo_02/name";
+      
+      public static const R251_T_55_SP_01_CAMO_02_DESCRIPTION:String = "#vehicle_customization:r251_t_55_sp_01_camo_02/description";
+      
+      public static const R251_T_55_SP_01_INSCRIPTION_NAME:String = "#vehicle_customization:r251_t_55_sp_01_inscription/name";
+      
+      public static const R251_T_55_SP_01_INSCRIPTION_DESCRIPTION:String = "#vehicle_customization:r251_t_55_sp_01_inscription/description";
+      
+      public static const R251_T_55_SP_01_PROJECTION_DECAL_NAME:String = "#vehicle_customization:r251_t_55_sp_01_projection_decal/name";
+      
+      public static const R251_T_55_SP_01_PROJECTION_DECAL_DESCRIPTION:String = "#vehicle_customization:r251_t_55_sp_01_projection_decal/description";
+      
+      public static const R251_T_55_SP_01_PROJECTION_DECAL_02_NAME:String = "#vehicle_customization:r251_t_55_sp_01_projection_decal_02/name";
+      
+      public static const R251_T_55_SP_01_PROJECTION_DECAL_02_DESCRIPTION:String = "#vehicle_customization:r251_t_55_sp_01_projection_decal_02/description";
+      
+      public static const R251_T_55_SP_01_PROJECTION_DECAL_03_NAME:String = "#vehicle_customization:r251_t_55_sp_01_projection_decal_03/name";
+      
+      public static const R251_T_55_SP_01_PROJECTION_DECAL_03_DESCRIPTION:String = "#vehicle_customization:r251_t_55_sp_01_projection_decal_03/description";
+      
+      public static const R251_T_55_SP_01_PAINT_NAME:String = "#vehicle_customization:r251_t_55_sp_01_paint/name";
+      
+      public static const R251_T_55_SP_01_PAINT_DESCRIPTION:String = "#vehicle_customization:r251_t_55_sp_01_paint/description";
+      
+      public static const R251_T_55_SP_01_STYLE_NAME:String = "#vehicle_customization:r251_t_55_sp_01_style/name";
+      
+      public static const R251_T_55_SP_01_STYLE_DESCRIPTION:String = "#vehicle_customization:r251_t_55_sp_01_style/description";
+      
+      public static const R251_T_55_SP_01_STYLE_LONGDESCRIPTION:String = "#vehicle_customization:r251_t_55_sp_01_style/longDescription";
        
       
       public function VEHICLE_CUSTOMIZATION()

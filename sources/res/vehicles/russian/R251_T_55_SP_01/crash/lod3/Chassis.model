@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.611429 -0.000180 -2.966458</min>
+		<max>1.611022 1.057728 2.903014</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/russian/R251_T_55_SP_01/crash/lod3/Chassis</nodefullVisual>
+	<parent>vehicles/russian/R251_T_55_SP_01/crash/lod4/Chassis</parent>
+</root>

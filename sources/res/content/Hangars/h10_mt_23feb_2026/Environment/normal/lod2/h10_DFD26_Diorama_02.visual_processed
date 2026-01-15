@@ -13,15 +13,15 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<primitive>indices</primitive>
+			<vertices>s0Shape.vertices</vertices>
+			<primitive>s0Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
 					<identifier>s_nd0</identifier>
 					<fx>shaders/std_effects/PBS_ext.fx</fx>
 					<materialKind>111</materialKind>
-					<collisionFlags>255</collisionFlags>
+					<collisionFlags>0</collisionFlags>
 					<property>
 						diffuseMap
 						<Texture>content/Hangars/h10_mt_23feb_2026/Environment/h10_DFD26_Diorama_wood_AM.dds</Texture>
@@ -39,15 +39,14 @@
 						<Texture>content/Hangars/h10_mt_23feb_2026/Environment/h10_DFD26_Diorama_wood_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.333525 0.606908 0.146007</groupOrigin>
+				<groupOrigin>-0.023332 0.853402 -0.264782</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-4.499181 -0.487070 -5.443564</min>
-		<max>5.166232 1.860489 5.735579</max>
+		<min>-5.232041 -0.286738 -6.436121</min>
+		<max>5.185378 1.993543 5.906558</max>
 	</boundingBox>
-	<customBsp>true</customBsp>
 	<geometrySize>102</geometrySize>
-	<minUVDensity>0.000610</minUVDensity>
+	<minUVDensity>0.000543</minUVDensity>
 </root>

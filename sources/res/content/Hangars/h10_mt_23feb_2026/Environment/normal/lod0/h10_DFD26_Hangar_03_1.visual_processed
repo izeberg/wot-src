@@ -306,11 +306,11 @@
 					</property>
 					<property>
 						blendMask
-						<Texture>content/Hangars/h10_mt_23feb_2026/Environment/h10_DFD26_Hangar_03_02_blend.png</Texture>
+						<Texture>content/Hangars/h08_mt_hangar/enviroment/hd_h08_MTV1_0010_Hangar_01_blend.png</Texture>
 					</property>
 					<property>
 						colorTex
-						<Texture>content/Hangars/h10_mt_23feb_2026/Environment/h10_DFD26_Hangar_03_02_GCM.dds</Texture>
+						<Texture>content/Hangars/h08_mt_hangar/enviroment/hd_h08_MTV1_0010_Hangar_01_GCM.dds</Texture>
 					</property>
 					<property>
 						dirtMap
@@ -322,11 +322,11 @@
 					</property>
 					<property>
 						g_dirtColorParams
-						<Vector4>0.100000 0.500000 1.000000 0.500000</Vector4>
+						<Vector4>0.100000 0.850000 1.000000 0.500000</Vector4>
 					</property>
 					<property>
 						g_tile0Tint
-						<Vector4>0.478431 0.462745 0.454902 1.000000</Vector4>
+						<Vector4>0.521569 0.513726 0.505882 1.000000</Vector4>
 					</property>
 					<property>
 						g_tile1Tint
@@ -334,7 +334,7 @@
 					</property>
 					<property>
 						g_tile2Tint
-						<Vector4>0.650980 0.686275 0.729412 1.000000</Vector4>
+						<Vector4>0.600000 0.600000 0.600000 1.000000</Vector4>
 					</property>
 					<property>
 						metallicAOTile0

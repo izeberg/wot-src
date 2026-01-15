@@ -4494,6 +4494,7 @@ class BattlePassGiftByOfferFormatter(WaitItemsSyncFormatter):
 
 
 class BattlePassReachedCapFormatter(WaitItemsSyncFormatter):
+    __battlePass = dependency.descriptor(IBattlePassController)
     __itemsCache = dependency.descriptor(IItemsCache)
     __template = b'BattlePassReachedCapMessage'
 
@@ -4503,17 +4504,36 @@ class BattlePassReachedCapFormatter(WaitItemsSyncFormatter):
         isSynced = yield self._waitForSyncItems()
         resultMessage = MessageData(None, None)
         if message.data and isSynced:
-            data = message.data
-            vehCD = data.get(b'vehTypeCompDescr')
-            limitPoints = data.get(b'vehiclePoints')
-            bonusPoints = data.get(b'bonusPoints')
-            if vehCD and limitPoints and bonusPoints:
-                vehName = self.__itemsCache.items.getItemByCD(vehCD).userName
-                text = backport.text(R.strings.messenger.serviceChannelMessages.battlePass.reachedCap.text(), vehNameHighlight=text_styles.credits(vehName), vehName=vehName, bonusPoints=text_styles.neutral(bonusPoints))
-                formatted = g_settings.msgTemplates.format(self.__template, {b'text': text})
-                resultMessage = MessageData(formatted, self._getGuiSettings(message, self.__template))
+            if self.__battlePass.isFactorCapsFlow():
+                resultMessage = self.__formatCapsFlowFactor(message)
+            else:
+                resultMessage = self.__formatCapsFlowWeek(message)
         callback([resultMessage])
         return
+
+    def __formatCapsFlowWeek(self, message):
+        data = message.data
+        vehCD = data.get(b'vehTypeCompDescr')
+        limitPoints = data.get(b'vehiclePoints')
+        bonusPoints = data.get(b'bonusPoints')
+        if vehCD and limitPoints and bonusPoints:
+            vehName = self.__itemsCache.items.getItemByCD(vehCD).userName
+            text = backport.text(R.strings.messenger.serviceChannelMessages.battlePass.reachedCapWeek.text(), vehNameHighlight=text_styles.credits(vehName), vehName=vehName, bonusPoints=text_styles.neutral(bonusPoints))
+            header = backport.text(R.strings.messenger.serviceChannelMessages.battlePass.reachedCapWeek.header())
+            formatted = g_settings.msgTemplates.format(self.__template, {b'header': header, b'text': text})
+            return MessageData(formatted, self._getGuiSettings(message, self.__template))
+
+    def __formatCapsFlowFactor(self, message):
+        data = message.data
+        vehCD = data.get(b'vehTypeCompDescr')
+        limitPoints = data.get(b'vehiclePoints')
+        bonusPoints = data.get(b'bonusPoints')
+        if vehCD and limitPoints and bonusPoints:
+            vehName = self.__itemsCache.items.getItemByCD(vehCD).userName
+            text = backport.text(R.strings.messenger.serviceChannelMessages.battlePass.reachedCapFactor.text(), vehNameHighlight=text_styles.credits(vehName), vehName=vehName, bonusPoints=text_styles.neutral(bonusPoints))
+            header = backport.text(R.strings.messenger.serviceChannelMessages.battlePass.reachedCapFactor.header())
+            formatted = g_settings.msgTemplates.format(self.__template, {b'header': header, b'text': text})
+            return MessageData(formatted, self._getGuiSettings(message, self.__template))
 
 
 class BattlePassStyleReceivedFormatter(WaitItemsSyncFormatter):

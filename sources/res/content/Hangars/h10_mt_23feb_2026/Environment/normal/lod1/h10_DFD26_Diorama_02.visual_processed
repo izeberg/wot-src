@@ -13,9 +13,8 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<stream>uv2</stream>
-			<primitive>indices</primitive>
+			<vertices>s3Shape.vertices</vertices>
+			<primitive>s3Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -76,8 +75,17 @@
 				</material>
 				<groupOrigin>0.000000 0.326229 -0.286108</groupOrigin>
 			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>sShape1.vertices</vertices>
+			<stream>sShape1.uv2</stream>
+			<primitive>sShape1.indices</primitive>
 			<primitiveGroup>
-				2
+				0
 				<material>
 					<identifier>s_nd1</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
@@ -143,7 +151,7 @@
 				<groupOrigin>0.006719 0.379079 -0.296973</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				3
+				1
 				<material>
 					<identifier>s_nd0</identifier>
 					<fx>shaders/std_effects/PBS_tiled_global.fx</fx>
@@ -226,15 +234,14 @@
 						<Texture>content/Hangars/h10_mt_23feb_2026/Environment/Tiles/Stone_03_1024_GBMT.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.324731 0.705691 -0.450551</groupOrigin>
+				<groupOrigin>0.324731 0.744944 -0.450551</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-5.232157 -0.487070 -6.482272</min>
-		<max>5.232157 1.860489 5.910057</max>
+		<min>-5.232157 -0.322039 -6.482272</min>
+		<max>5.232157 1.811928 5.910057</max>
 	</boundingBox>
-	<customBsp>true</customBsp>
-	<geometrySize>442226</geometrySize>
-	<minUVDensity>0.001841</minUVDensity>
+	<geometrySize>322394</geometrySize>
+	<minUVDensity>0.001773</minUVDensity>
 </root>

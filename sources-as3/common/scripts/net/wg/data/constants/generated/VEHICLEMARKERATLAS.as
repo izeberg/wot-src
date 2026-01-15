@@ -2757,6 +2757,8 @@ package net.wg.data.constants.generated
       
       public static const USSR_R25_GAZ_74B:String = "ussr-R25_GAZ-74b";
       
+      public static const USSR_R251_T_55_SP_01:String = "ussr-R251_T_55_SP_01";
+      
       public static const USSR_R26_SU_8:String = "ussr-R26_SU-8";
       
       public static const USSR_R27_SU_14:String = "ussr-R27_SU-14";

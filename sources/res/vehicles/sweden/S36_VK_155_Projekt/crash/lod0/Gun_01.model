@@ -2,11 +2,11 @@
 <root>
 	<materialNames/>
 	<visibilityBox>
-		<min>-1.620839 -0.875213 -3.105734</min>
-		<max>1.236522 1.471862 7.759291</max>
+		<min>-1.153564 -0.875213 -3.105734</min>
+		<max>1.236522 1.435825 7.759291</max>
 	</visibilityBox>
 	<parent>vehicles/sweden/S36_VK_155_Projekt/crash/lod1/Gun_01</parent>
 	<extent>32.000000</extent>
 	<tank>true</tank>
-	<nodelessVisual>vehicles/sweden/S36_VK_155_Projekt/crash/lod0/Gun_01</nodelessVisual>
+	<nodefullVisual>vehicles/sweden/S36_VK_155_Projekt/crash/lod0/Gun_01</nodefullVisual>
 </root>
