@@ -378,7 +378,7 @@
 			<cooldownSeconds>90</cooldownSeconds>
 			<reuseCount>3</reuseCount>
 			<duration>25</duration>
-			<penaltyReloadTime>7</penaltyReloadTime>
+			<penaltyReloadTime>4</penaltyReloadTime>
 			<additiveFactors/>
 			<multiplicativeFactors>
 				<gun-reloadTime>
@@ -398,7 +398,7 @@
 			</mul>
 			<add>
 				<name>vehicleGunReloadPenalty</name>
-				<value>7</value>
+				<value>4</value>
 			</add>
 			<mul>
 				<name>vehicleGunShotDispersionAfterShot</name>

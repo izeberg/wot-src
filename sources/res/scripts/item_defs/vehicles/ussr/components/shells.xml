@@ -3348,7 +3348,7 @@
 		<isTracer>true</isTracer>
 		<effects>mainArmorPiercing</effects>
 		<damage>
-			<armor>300</armor>
+			<armor>360</armor>
 			<devices>150</devices>
 		</damage>
 	</_107mm_BR-42>
@@ -3363,7 +3363,7 @@
 		<isTracer>true</isTracer>
 		<effects>mainAPCR</effects>
 		<damage>
-			<armor>300</armor>
+			<armor>360</armor>
 			<devices>150</devices>
 		</damage>
 	</_107mm_BR-42P>
@@ -3382,7 +3382,7 @@
 		<isTracer>true</isTracer>
 		<effects>mainHighExplosive</effects>
 		<damage>
-			<armor>400</armor>
+			<armor>460</armor>
 			<devices>150</devices>
 		</damage>
 		<armorSpalls>
@@ -3392,7 +3392,7 @@
 			</impactRadius>
 			<coneAngle>90</coneAngle>
 			<damage>
-				<armor>200</armor>
+				<armor>230</armor>
 				<devices>75</devices>
 			</damage>
 		</armorSpalls>

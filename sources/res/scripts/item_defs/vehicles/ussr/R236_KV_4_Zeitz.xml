@@ -2739,13 +2739,19 @@
 						0.39
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>9</reloadTime>
+					<reloadTime>
+						11.4
+						<!--BW_String-->
+					</reloadTime>
 					<clip>
-						<count>3</count>
+						<count>2</count>
 						<rate>15</rate>
 					</clip>
 					<autoreload>
-						<reloadTime>9 11 13</reloadTime>
+						<reloadTime>
+							11.4 15.2
+							<!--BW_String-->
+						</reloadTime>
 					</autoreload>
 					<shotDispersionFactors>
 						<turretRotation>
@@ -3772,7 +3778,7 @@
 						</medium>
 						<firm>
 							<rollingFriction>
-								0.0427
+								0.0827
 								<!--BW_String-->
 							</rollingFriction>
 						</firm>

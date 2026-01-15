@@ -129,18 +129,20 @@ class NyQuestsSubView(NySubViewBase):
     def __updateQuests(self, questsInModelToUpdate):
         questsInModelToUpdate.clear()
         quests = self.__dailyQuests if self.__subviewTabIdx == 0 else self.__weeklyQuests
-        seenQuests = getNYSetting(NY_SEEN_QUESTS)
+        seenQuests = set(getNYSetting(NY_SEEN_QUESTS))
+        updatedSeenQuests = list()
         for questID, quest in sorted(quests.iteritems(), key=lambda (_, q): not isinstance(q, TokenQuest)):
             questVehDescr = quest.vehicleReqs.getConditions().find('vehicleDescr')
             if questVehDescr is not None:
                 levels = questVehDescr.getData()['levels'][0][1]
-                minLevel = min(levels)
-                maxLevel = max(levels)
-                self.__minLevel = minLevel if self.__minLevel > minLevel else self.__minLevel
-                self.__maxLevel = maxLevel if self.__maxLevel < maxLevel else self.__maxLevel
+                self.__minLevel = min(self.__minLevel, *levels)
+                self.__maxLevel = max(self.__maxLevel, *levels)
             packer = getEventUIDataPacker(quest, bonusPackerGetter=getNewYearBonusPacker)
             questModel = packer.pack()
-            questModel.setIsFirstView(not self.__isQuestsSeen(questID, seenQuests))
+            isQuestSeen = questID in seenQuests
+            if not isQuestSeen:
+                updatedSeenQuests.append(questID)
+            questModel.setIsFirstView(not isQuestSeen)
             self.__tooltipData[questID] = packer.getTooltipData()
             if questVehDescr is None:
                 modifyTokenQuestConditions(quest, questModel)
@@ -153,20 +155,15 @@ class NyQuestsSubView(NySubViewBase):
                 questModel.setStatus(EventStatus.ACTIVE)
             self.eventsCache.questsProgress.markQuestProgressAsViewed(questID)
 
-        setNYSettings(NY_SEEN_QUESTS, seenQuests)
-        self.__updateSeenQuests(seenQuests)
+        self.__updateSeenQuests(updatedSeenQuests)
+        seenQuests.update(updatedSeenQuests)
+        setNYSettings(NY_SEEN_QUESTS, list(seenQuests))
         questsInModelToUpdate.invalidate()
         return
 
     def __updateSeenQuests(self, seenQuests):
         for questID in seenQuests:
             self.__unseenEventsManager.seenEvent(questID, 1)
-
-    def __isQuestsSeen(self, questID, seenQuests):
-        if questID in seenQuests:
-            return True
-        seenQuests.append(questID)
-        return False
 
     def __updateQuestsCountdown(self, model):
         questItems = self.__dailyQuests.items() if self.__subviewTabIdx == 0 else self.__weeklyQuests.items()
