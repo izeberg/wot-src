@@ -283,6 +283,12 @@ msgstr "一种射速极高的自动武器。瞄准圈内的指示器将显示其
 msgid "detailsHelp/mechanics/autoShootGun/page1/title"
 msgstr "自动炮"
 
+msgid "detailsHelp/mechanics/autoShootGun_overheatGun/page1/description"
+msgstr "该火炮可持续射击而无需重新装填。每次开火均会产生热量，连续射击将导致火炮过热，需冷却后才能恢复射击。"
+
+msgid "detailsHelp/mechanics/autoShootGun_overheatGun/page1/title"
+msgstr "速射过热调节自动炮"
+
 msgid "detailsHelp/mechanics/battleFury/page1/description"
 msgstr ""
 "每次击中敌方坦克时，您将获得装填效率加成，短暂提高火炮装填速度。每命中一次累积一个等级。\n"
@@ -333,6 +339,12 @@ msgstr ""
 
 msgid "detailsHelp/mechanics/extraShotClip/page1/title"
 msgstr "短弹夹装填系统"
+
+msgid "detailsHelp/mechanics/heatingZonesGun/page1/description"
+msgstr "该系统保持火炮冷却，从而实现高精度射击。开火时火炮温度升高，但在装填期间开始冷却，并恢复至强化参数。温度越高，部分参数受到的影响越大。"
+
+msgid "detailsHelp/mechanics/heatingZonesGun/page1/title"
+msgstr "主动火炮冷却"
 
 msgid "detailsHelp/mechanics/improvedRamming/page1/description"
 msgstr "该坦克具有用于撞击的特殊配置，通过一系列设计改装，它能对敌方坦克造成更高的撞击损伤。"
@@ -386,6 +398,12 @@ msgstr "激活后，火箭助推器可提高发动机功率和最大速度。不
 
 msgid "detailsHelp/mechanics/rocketAcceleration/page2/title"
 msgstr "优缺点"
+
+msgid "detailsHelp/mechanics/stagedJetBoosters/page1/description"
+msgstr "固体燃料助推器可在数秒内提高加速能力、机动性和操控性。左右两侧的助推器可独立工作，助您更快地旋转车体，同时不限制倒车能力。"
+
+msgid "detailsHelp/mechanics/stagedJetBoosters/page1/title"
+msgstr "顺序火箭助推器"
 
 msgid "detailsHelp/mechanics/stanceDance/page1/description"
 msgstr ""
@@ -592,6 +610,9 @@ msgstr "请求支援！"
 
 msgid "radialMenu/helpMeEx"
 msgstr "我需要帮助！"
+
+msgid "radialMenu/overheated_gun"
+msgstr "火炮过热！"
 
 msgid "radialMenu/positive"
 msgstr "遵命！"

@@ -363,6 +363,12 @@ msgstr "您可以通过高级通行证获得第二奖励轨道的奖励。"
 msgid "battlePassBuyView/title"
 msgstr "高级通行证"
 
+msgid "battlePassStatus/activateChapter"
+msgstr "激活战斗通行证章节"
+
+msgid "battlePassStatus/improve"
+msgstr "您仍可购买高级通行证"
+
 msgid "battlePassVehicleAwardView/button"
 msgstr "收到！"
 
@@ -381,8 +387,11 @@ msgstr "战斗通行证"
 msgid "battlepassTab"
 msgstr "战斗通行证"
 
-msgid "chapter/fullName/10051"
-msgstr "假日风云"
+msgid "chapter/fullName/10061"
+msgstr "机械战警"
+
+msgid "chapter/fullName/1114"
+msgstr "猎牛之歌"
 
 msgid "chapter/fullName/181"
 msgstr "钢铁防线"
@@ -393,8 +402,11 @@ msgstr "无敌装甲"
 msgid "chapter/fullName/183"
 msgstr "机械狂潮"
 
-msgid "chapter/fullNameUppercased/10051"
-msgstr "假日风云"
+msgid "chapter/fullNameUppercased/10061"
+msgstr "机械战警"
+
+msgid "chapter/fullNameUppercased/1114"
+msgstr "猎牛之歌"
 
 msgid "chapter/fullNameUppercased/181"
 msgstr "钢铁防线"
@@ -492,6 +504,9 @@ msgstr "选择章节"
 msgid "chapterChoice/vehicleInHangar/tooltip/text"
 msgstr "在车库中"
 
+msgid "chapterStatus/notSelected"
+msgstr "未选择章节"
+
 msgid "chosenBonuses/bonus/battle_booster_gift"
 msgstr "自选指令"
 
@@ -578,7 +593,8 @@ msgid "holidayFinalScreen/buyState/buyButton"
 msgstr "购买高级通行证"
 
 msgid "holidayFinalScreen/buyState/description"
-msgstr "购买高级通行证后，您将立即获得一名独特节日乘员和全部高级通行证奖励。"
+msgstr ""
+"购买高级通行证后，您将立即获得M系IX级金币重型坦克——OCP 和平卫士(其独特外观的设计灵感源于著名电影系列)，以及高级通行证的所有奖励。"
 
 msgid "holidayFinalScreen/buyState/moreRewards"
 msgstr "其他奖励: %(count)s"
@@ -777,13 +793,14 @@ msgid "intro/button"
 msgstr "收到！"
 
 msgid "intro/seasonDescription/text"
-msgstr "圣诞老人正紧锣密鼓地筹备佳节，妒火中烧的对手却企图破坏整个假日季！踏上这段精彩的战斗通行证冒险之旅，拯救庆典，获取专属节日奖励！"
+msgstr ""
+"本期战斗通行证是与传奇电影系列《机械战警》联动的特殊活动。这将是一场短暂但惊险刺激的旅程，将为您带来灵感源于该标志性宇宙的专属奖励。您准备好维护法律了吗？"
 
 msgid "intro/seasonDescription/title"
-msgstr "节日战斗通行证特殊章节"
+msgstr "联动《机械战警》"
 
 msgid "intro/title"
-msgstr "假日风云"
+msgstr "机械战警"
 
 msgid "lootBoxBonus"
 msgstr "%(boxName)s: %(count)s"
@@ -807,22 +824,25 @@ msgid "navigation/chapterChoice"
 msgstr "战斗通行证赛季%(seasonNum)s"
 
 msgid "navigation/holidayFinal"
-msgstr "战斗通行证:假日风云"
+msgstr "战斗通行证:机械战警"
 
 msgid "navigation/intro"
-msgstr "战斗通行证:假日风云"
+msgstr "战斗通行证:机械战警"
 
 msgid "navigation/postProgression"
 msgstr "战斗通行证精英征程"
 
 msgid "navigation/progression"
-msgstr "战斗通行证:假日风云"
+msgstr "战斗通行证:机械战警"
 
 msgid "points/top"
 msgstr "%(vehicle):所获经验排名%(top)时%(bonus)。"
 
 msgid "points/topCount"
 msgstr "前%(top)s"
+
+msgid "points/transfer"
+msgstr "已添加待分配点数:"
 
 msgid "postProgressionView/footer/button/text"
 msgstr "前往章节"
@@ -1182,14 +1202,14 @@ msgstr "战斗通行证: \"%(chapter)s\"章节"
 msgid "rewardChoice/titleChapterLevel"
 msgstr "战斗通行证: \"%(chapter)s\"章节，阶段%(level)s"
 
-msgid "season/fullName/1005"
-msgstr "假日风云"
+msgid "season/fullName/1006"
+msgstr "机械战警"
 
 msgid "season/fullName/18"
 msgstr "巅峰征途"
 
-msgid "season/fullNameUppercased/1005"
-msgstr "假日风云"
+msgid "season/fullNameUppercased/1006"
+msgstr "机械战警"
 
 msgid "season/fullNameUppercased/18"
 msgstr "巅峰征途"
@@ -1290,6 +1310,27 @@ msgstr "独特乘员"
 
 msgid "tankmenVoiceover/unavailable"
 msgstr "不可用"
+
+msgid "title/earningPoints"
+msgstr "获取点数"
+
+msgid "title/freePoints"
+msgstr "待分配点数"
+
+msgid "title/stage"
+msgstr "阶段{{level}}"
+
+msgid "tooltip/cardButton/disabled/body"
+msgstr "暂时无法操作。请稍后再试。"
+
+msgid "tooltip/freePoints/body"
+msgstr "待分配点数会累积，并在激活新战斗通行证章节后自动发放至您的账号。"
+
+msgid "tooltip/freePoints/header"
+msgstr "待分配点数"
+
+msgid "tooltip/lock"
+msgstr "奖励未解锁。购买高级通行证即可获得这些奖励。"
 
 msgid "tooltips/RandomQuestTooltip/condition"
 msgstr "条件: %(condition)"

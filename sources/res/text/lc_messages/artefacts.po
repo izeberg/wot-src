@@ -703,6 +703,20 @@ msgid "deluxeAdditionalInvisibilityDevice/short_special"
 msgstr ""
 "坦克在静止和移动时的隐蔽系数提高{colorTagOpen}6{colorTagClose}/{colorTagOpen}8{colorTagClose}/{colorTagOpen}10%{colorTagClose}"
 
+msgid "deluxeCamouflageNet/battleDescr"
+msgstr "坦克静止1.5秒后提高其隐蔽性"
+
+msgid "deluxeCamouflageNet/long_special"
+msgstr ""
+"伪装网的改进型版本，其效果取决于坦克类型。战术伪装网对自行火炮和车身低矮的自行反坦克炮等隐蔽型坦克增益最大。它可以提升隐蔽特长的效果。两者结合可以给坦克提供相当高的加成。该配件在坦克静止1.5秒后激活。"
+
+msgid "deluxeCamouflageNet/name"
+msgstr "战术伪装网"
+
+msgid "deluxeCamouflageNet/short_special"
+msgstr ""
+"{colorTagOpen}+17.5{colorTagClose}/{colorTagOpen}12.5{colorTagClose}/{colorTagOpen}7.5%{colorTagClose}坦克静止时的隐蔽系数"
+
 msgid "deluxeExtraHealthReserve/additional_descr"
 msgstr "修理后完全恢复悬挂装置的耐久度。"
 
@@ -743,6 +757,19 @@ msgstr "强化型瞄具"
 
 msgid "deluxeImprovedSights/short_special"
 msgstr "减少火炮的炮弹散布范围"
+
+msgid "deluxeStereoscope/battleDescr"
+msgstr "在坦克静止1.5秒后提高其观察范围(最大445米)"
+
+msgid "deluxeStereoscope/long_special"
+msgstr ""
+"炮队镜的改进型版本。良好的观察范围为坦克提供了坚实的战斗优势。这种配件对车身低矮、火炮精准的自行反坦克炮更有帮助。该配件在坦克静止1.5秒后激活。"
+
+msgid "deluxeStereoscope/name"
+msgstr "伸缩式观测系统"
+
+msgid "deluxeStereoscope/short_special"
+msgstr "{colorTagOpen}+27.5%{colorTagClose}坦克静止时的观察范围(最大445米)"
 
 msgid "deluxeTurbocharger/long_special"
 msgstr ""
@@ -2248,6 +2275,38 @@ msgid "role_MT_support_pair_5_2/splitName"
 msgstr ""
 "视界\n"
 "调整"
+
+msgid "role_MT_support_temperatureGun_pair_1_1/name"
+msgstr "模块耐久度提高"
+
+msgid "role_MT_support_temperatureGun_pair_1_1/splitName"
+msgstr ""
+"模块\n"
+"耐久度提高"
+
+msgid "role_MT_support_temperatureGun_pair_1_2/name"
+msgstr "轻合金挂载点"
+
+msgid "role_MT_support_temperatureGun_pair_1_2/splitName"
+msgstr ""
+"轻合金\n"
+"挂载点"
+
+msgid "role_MT_support_temperatureGun_pair_4_1/name"
+msgstr "后膛调整"
+
+msgid "role_MT_support_temperatureGun_pair_4_1/splitName"
+msgstr ""
+"后膛\n"
+"调整"
+
+msgid "role_MT_support_temperatureGun_pair_4_2/name"
+msgstr "新型瞄准装置"
+
+msgid "role_MT_support_temperatureGun_pair_4_2/splitName"
+msgstr ""
+"新型\n"
+"瞄准装置"
 
 msgid "role_MT_universal_pair_4_1/name"
 msgstr "大口径喷嘴"

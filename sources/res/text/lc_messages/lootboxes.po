@@ -10,17 +10,29 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "autoOpenView/bottomLabel"
+msgstr "我们为您开启了所有的假日行动补给品。"
+
 msgid "autoOpenView/congratsLabel"
 msgstr "恭喜！"
 
 msgid "autoOpenView/okBtnLabel"
 msgstr "收到！"
 
+msgid "buttonLabel/back"
+msgstr "返回车库"
+
 msgid "buttonLabel/buy"
 msgstr "购买"
 
+msgid "buttonLabel/buyMore"
+msgstr "购买补给品礼包"
+
 msgid "buttonLabel/close"
 msgstr "关闭"
+
+msgid "buttonLabel/open"
+msgstr "开启"
 
 msgid "buttonLabel/openBox"
 msgstr "开启补给品"
@@ -34,41 +46,81 @@ msgstr "显示动画"
 msgid "buttonLabel/videoOn"
 msgstr "不显示动画"
 
-msgid "buttonLabel/videoSwitch/lowerCase"
-msgstr "播放动画"
-
-msgid "closeButtonLabel"
-msgstr "关闭"
-
 msgid "compensationTooltip/after/header"
-msgstr "补偿"
+msgstr "补偿:"
 
 msgid "compensationTooltip/before/header"
-msgstr "坦克(x{count}):"
+msgstr "重复 (x{count}):"
 
 msgid "compensationTooltip/crewSkin/header"
 msgstr "补偿您已拥有的乘员皮肤"
 
 msgid "compensationTooltip/vehicle/bottomText"
-msgstr "您车库中已拥有坦克当前价格对应的金币补偿奖励。"
+msgstr "作为对您已拥有坦克的补偿而给予的奖励。"
 
 msgid "compensationTooltip/vehicle/header"
 msgstr "您车库中已拥有坦克的补偿。"
 
+msgid "entryDesc/boxesCount"
+msgstr "x{count}"
+
 msgid "entryDesc/buySlot"
 msgstr "您可以在特惠商城中购买大型补给品"
 
-msgid "entryDesc/newYear_premium/title"
+msgid "entryDesc/newYear_premium"
 msgstr "大型补给品"
+
+msgid "entryDesc/newYear_usual"
+msgstr "小型补给品"
+
+msgid "entryDesc/questSlot"
+msgstr "完成任务获得小型补给品。"
+
+msgid "entryDesc/restrictedMode"
+msgstr "此功能暂不可用。请稍后再试。"
 
 msgid "entryPoint/header"
 msgstr "补给品"
 
+msgid "entryTooltip/body/h1"
+msgstr "购买大型补给品礼包:"
+
+msgid "entryTooltip/body/h2"
+msgstr "获得小型补给品:"
+
+msgid "entryTooltip/body/p1"
+msgstr "您可在特惠商城中为自己和好友购买含有新年装饰物的补给品礼包。"
+
+msgid "entryTooltip/body/p2"
+msgstr "完成假日行动任务的奖励。"
+
+msgid "entryTooltip/header"
+msgstr "补给品"
+
+msgid "entryView/boxesCount"
+msgstr "额外{count}个补给品"
+
 msgid "entryView/buyLabel"
 msgstr "购买补给品礼包"
 
+msgid "entryView/ended/newYear_premium"
+msgstr ""
+"您的仓库中已经没有大型补给品了。\n"
+"前往特惠商城购买更多礼包。"
+
+msgid "entryView/ended/newYear_usual"
+msgstr ""
+"您没有小型补给品了。\n"
+"您可在战斗中获得更多补给品。"
+
 msgid "entryView/lootboxesCount"
 msgstr "x{count}"
+
+msgid "entryView/title"
+msgstr "假日行动{year}"
+
+msgid "entryView/year"
+msgstr "2019"
 
 msgid "multiOpenView/applyLabel"
 msgstr "了解！"
@@ -86,7 +138,7 @@ msgid "multiOpenView/openedCount"
 msgstr "x{count}"
 
 msgid "multiOpenView/title"
-msgstr "补给品内容"
+msgstr "恭喜!"
 
 msgid "notification/eventFinish/text"
 msgstr "系统将开启您所获得的全部补给品。其中包含的物品将添加至您的账号。"
@@ -141,29 +193,110 @@ msgstr "开启补给品"
 msgid "notification/lootBoxesReceived/invoice"
 msgstr "已添加"
 
+msgid "notification/ny19man"
+msgstr "一位新的特殊乘员：%(count)s"
+
+msgid "notification/rewards"
+msgstr "您获得了以下奖励："
+
 msgid "restrictedMessage/body"
-msgstr "补给品的相关操作现已暂停。"
+msgstr "补给品的相关操作现已暂停，不过无需担心。"
 
 msgid "restrictedMessage/header"
 msgstr "注意！"
 
-msgid "rewardGroups/optionalDevices"
-msgstr "配件"
+msgid "rewardView/boxesCount"
+msgstr "可用的补给品数量: {count}"
 
-msgid "rewardGroups/other"
-msgstr "其他"
+msgid "rewardView/closeBtnLabel"
+msgstr "关闭"
 
-msgid "rewardGroups/styles"
-msgstr "个性化元素"
+msgid "rewardView/congratsBtnLabel/style"
+msgstr "预览风格"
 
-msgid "rewardGroups/vehicles"
-msgstr "金币或特种坦克"
+msgid "rewardView/congratsBtnLabel/tankman"
+msgstr "招募"
 
-msgid "rewardView/attachment/rarity"
-msgstr "%(rarity)s3D附件"
+msgid "rewardView/congratsBtnLabel/vehicle"
+msgstr "车库中查看"
 
-msgid "rewardView/attachment/title"
-msgstr "%(groupAttachName)s%(attachUserName)s"
+msgid "rewardView/congratsLabel/style"
+msgstr "适用于以下坦克的独特风格"
+
+msgid "rewardView/congratsLabel/tankman"
+msgstr "一位特殊乘员"
+
+msgid "rewardView/congratsLabel/usual"
+msgstr "恭喜！"
+
+msgid "rewardView/congratsLabel/vehicle"
+msgstr "惊艳的转折！"
+
+msgid "rewardView/nextOpenBtnLabel"
+msgstr "开启下一个"
+
+msgid "rewardView/okOpenBtnLabel"
+msgstr "了解！"
+
+msgid "rewardView/openBtnLabel"
+msgstr "了解！"
+
+msgid "rewardView/rerollBtnLabel"
+msgstr "重开"
+
+msgid "rewardView/zeroBoxes"
+msgstr "没有可用的补给品"
+
+msgid "specialReward/continueBtn"
+msgstr "继续"
+
+msgid "specialReward/style/goToBtn"
+msgstr "预览风格"
+
+msgid "specialReward/style/title"
+msgstr "适用于以下坦克的独特风格"
+
+msgid "specialReward/vehicle/goToBtn"
+msgstr "车库中查看"
+
+msgid "tooltip/category/header/Christmas"
+msgstr "圣诞补给品"
+
+msgid "tooltip/category/header/Fairytale"
+msgstr "魔幻补给品"
+
+msgid "tooltip/category/header/NewYear"
+msgstr "新年补给品"
+
+msgid "tooltip/category/header/Oriental"
+msgstr "春节补给品"
+
+msgid "tooltip/category/rewards/Christmas"
+msgstr "圣诞收藏"
+
+msgid "tooltip/category/rewards/Fairytale"
+msgstr "魔幻收藏"
+
+msgid "tooltip/category/rewards/NewYear"
+msgstr "新年收藏"
+
+msgid "tooltip/category/rewards/Oriental"
+msgstr "春节收藏"
+
+msgid "tooltip/category/rewards/description"
+msgstr "补给品内含{category}装饰物及其他珍贵奖励。"
+
+msgid "tooltip/category/rewards/header"
+msgstr "勋章:"
+
+msgid "tooltip/entryView/buyBoxes"
+msgstr "在特惠商城中购买更多补给品礼包。"
+
+msgid "tooltip/entryView/openBoxes"
+msgstr "同时开启多个补给品。"
+
+msgid "tooltip/restrictedMode"
+msgstr "暂时无法操作。请稍后再试。"
 
 msgid "type/event_premium"
 msgstr "曙光补给品"
@@ -171,11 +304,8 @@ msgstr "曙光补给品"
 msgid "type/newYear_premium"
 msgstr "大型补给品"
 
-msgid "type/nyCoin"
-msgstr "礼物终端令牌"
-
-msgid "type/nySack"
-msgstr "霞飞狗礼袋"
+msgid "type/newYear_usual"
+msgstr "小型补给品"
 
 msgid "type/wt_boss"
 msgstr "工程师放电管"

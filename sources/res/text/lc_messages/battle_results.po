@@ -180,6 +180,15 @@ msgstr "研发模块"
 msgid "common/mainFinishReasonTitle"
 msgstr "主要战斗阶段:"
 
+msgid "common/missions/noProgress/button"
+msgstr "前往任务"
+
+msgid "common/missions/noProgress/description"
+msgstr "查看当前任务进度"
+
+msgid "common/missions/noProgress/header"
+msgstr "没有任务或坦克研发进度。"
+
 msgid "common/newSkillPrediction"
 msgstr "剩余战斗场次(大约):%(battles)s"
 
@@ -644,6 +653,12 @@ msgstr "{{var}}名盟友在本场战斗中为您点了赞。"
 msgid "comms/likes/pbs/tooltip/header"
 msgstr "获得的点赞数量"
 
+msgid "conditions/type/and"
+msgstr "和"
+
+msgid "conditions/type/or"
+msgstr "或"
+
 msgid "customizationProgress/award/newLevel"
 msgstr "“%(name)s”贴花已达到%(level)s级。"
 
@@ -776,9 +791,6 @@ msgstr "每日首胜奖励"
 msgid "details/calculations/multiplierInfo/vehicleSeparator"
 msgstr "• "
 
-msgid "details/calculations/newYear"
-msgstr "假日行动加成"
-
 msgid "details/calculations/noPenalty"
 msgstr "英勇抵抗"
 
@@ -832,9 +844,6 @@ msgstr "总计"
 
 msgid "details/calculations/total"
 msgstr "总计:"
-
-msgid "details/calculations/vehicleBranch"
-msgstr "假日行动加成"
 
 msgid "details/calculations/wotPlus"
 msgstr "坦克世界Plus战斗加成"
@@ -1036,6 +1045,64 @@ msgstr "此次战斗您可以获得："
 msgid "getPremiumPopover/prem"
 msgstr "高级账号"
 
+msgid "missionsProgress/aboutVehicle/button"
+msgstr "研发"
+
+msgid "missionsProgress/aboutVehicle/description"
+msgstr "开放研发"
+
+msgid "missionsProgress/aboutVehicle/prediction"
+msgstr "剩余战斗次数(估算): {{prediction}}"
+
+msgid "missionsProgress/aboutVehicle/title"
+msgstr "关于坦克"
+
+msgid "missionsProgress/battleMatters/doneInfo"
+msgstr "已完成任务#{{name}}。"
+
+msgid "missionsProgress/battleMatters/title"
+msgstr "新兵成长计划"
+
+msgid "missionsProgress/notificationsTabs/aboutVehicle/module"
+msgstr "已解锁全新模块！"
+
+msgid "missionsProgress/notificationsTabs/aboutVehicle/vehicle"
+msgstr "已解锁全新坦克"
+
+msgid "missionsProgress/notificationsTabs/battleMatters"
+msgstr "已完成新兵成长计划任务！"
+
+msgid "missionsProgress/notificationsTabs/battlePass/chapterComplete"
+msgstr "已完成章节！"
+
+msgid "missionsProgress/notificationsTabs/battlePass/stageComplete"
+msgstr "已完成阶段！"
+
+msgid "missionsProgress/notificationsTabs/common"
+msgstr "已完成任务！"
+
+msgid "missionsProgress/notificationsTabs/daily"
+msgstr "已完成日常任务！"
+
+msgid "missionsProgress/notificationsTabs/eliteSystem/maxLevel"
+msgstr "最高精英等级"
+
+msgid "missionsProgress/notificationsTabs/eliteSystem/newLevel"
+msgstr "新精英等级"
+
+msgid "missionsProgress/notificationsTabs/epic"
+msgstr "已完成史诗任务！"
+
+msgid ""
+"missionsProgress/notificationsTabs/personalMissions/operation_mission_complete"
+msgstr "已完成作战行动任务！"
+
+msgid "missionsProgress/notificationsTabs/premium"
+msgstr "已完成高级任务！"
+
+msgid "missionsProgress/notificationsTabs/weekly"
+msgstr "已完成每周任务！"
+
 msgid "noData"
 msgstr "对不起，战斗结果不可用。"
 
@@ -1063,8 +1130,39 @@ msgstr "已获得精英点数:"
 msgid "prestige/max/description"
 msgstr "已达到最高精英等级。"
 
+msgid "prestige/maxLevelReached/description"
+msgstr "已达到最高精英等级"
+
+msgid "prestige/newLevelAchieved/description"
+msgstr "已达到新精英等级"
+
 msgid "prestige/title"
 msgstr "精英系统"
+
+msgid "progression/completed"
+msgstr "已完成"
+
+msgid "progression/completedPointsFrom/withLabel"
+msgstr ""
+"{{@class $labelClass}}已完成:{{/}}{{completed}} {{@class $totalClass}}{{@class "
+"$dividerClass}}/{{/}}{{total}}{{/}}"
+
+msgid "progression/completedPointsFrom/withoutLabel"
+msgstr ""
+"{{completed}}{{@class $totalClass}}{{@class "
+"$dividerClass}}/{{/}}{{total}}{{/}}"
+
+msgid "progression/linkBtn/info"
+msgstr "点击查看详细信息。"
+
+msgid "progression/missionsCompleteCounter"
+msgstr "{{@class $labelClass}}已完成:{{/}}{{completed}}"
+
+msgid "progression/progressUnavailable"
+msgstr "暂不开放。请稍后查看。"
+
+msgid "progression/totalEarned"
+msgstr "总计获得: {{value}}"
 
 msgid "progressiveReward/descr"
 msgstr "通过战斗获得奖励。您战斗越多，获得的奖励就越多。"
@@ -1167,7 +1265,7 @@ msgid "team/medalHeader/header"
 msgstr "奖励"
 
 msgid "team/playerHeader/body"
-msgstr "按玩家昵称排序"
+msgstr "按玩家昵称排序。"
 
 msgid "team/playerHeader/header"
 msgstr "玩家昵称"
@@ -1383,6 +1481,9 @@ msgstr "?empty?"
 msgid "team/stats/ownTeam"
 msgstr "己方队伍"
 
+msgid "team/stats/parameter/artilleryFortEquipDamageDealt"
+msgstr "火炮支援损伤"
+
 msgid "team/stats/parameter/capturePointsVal"
 msgstr "占领/防御基地点数"
 
@@ -1476,7 +1577,7 @@ msgid "team/victoryScoreNoSort/header"
 msgstr "玩家胜利点数"
 
 msgid "team/xpHeader/body"
-msgstr "按经验值排序"
+msgstr "按经验值排序。"
 
 msgid "team/xpHeader/header"
 msgstr "经验"

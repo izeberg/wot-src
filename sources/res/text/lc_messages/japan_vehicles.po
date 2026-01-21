@@ -175,6 +175,9 @@ msgstr "五式1型炮战车改"
 msgid "Chassis_J35_Ho_Ri_3"
 msgstr "五式3型炮战车"
 
+msgid "Chassis_J35_Ho_Ri_3_7x7"
+msgstr "五式3型炮战车"
+
 msgid "Chassis_J36_Type_63_HT"
 msgstr "六三式"
 
@@ -235,11 +238,17 @@ msgstr "三重108式"
 msgid "Chassis_J48_Saryuda"
 msgstr "清道夫"
 
+msgid "Chassis_J49_Kame"
+msgstr "\"石龟\""
+
 msgid "Chassis_J50_Type_1_Ho_Ni_II"
 msgstr "二式炮战车"
 
 msgid "Chassis_J51_Ashigaru"
 msgstr "足轻"
+
+msgid "Chassis_J52_STK_2"
+msgstr "STK-2"
 
 msgid "Chassis_Ke_Ho"
 msgstr "五式轻战"
@@ -610,6 +619,16 @@ msgstr "五式1型炮战车"
 msgid "J35_Ho_Ri_3"
 msgstr "五式3型炮战车"
 
+msgid "J35_Ho_Ri_3_7x7"
+msgstr "五式3型炮战车 7v7"
+
+msgid "J35_Ho_Ri_3_7x7_descr"
+msgstr ""
+"一辆以R系五式1型炮战车为基础设计而成的重型突击自行反坦克炮。增加了装甲厚度，车体正面和悬挂装置均进行了大幅改动。该坦克从未投入生产，战局尾声仅建造了木质样车。"
+
+msgid "J35_Ho_Ri_3_7x7_short"
+msgstr "五式3型炮战车 7v7"
+
 msgid "J35_Ho_Ri_3_descr"
 msgstr ""
 "一辆以R系五式1型炮战车为基础设计而成的重型突击自行反坦克炮。增加了装甲厚度，车体正面和悬挂装置均进行了大幅改动。该坦克从未投入生产，战局尾声仅建造了木质样车。"
@@ -780,6 +799,23 @@ msgstr "清道夫"
 msgid "J48_Saryuda_short_special"
 msgstr "双管火炮系统，可靠的正面装甲"
 
+msgid "J49_Kame"
+msgstr "\"石龟\""
+
+msgid "J49_Kame_descr"
+msgstr ""
+"45年为对抗敌对阵营中型和重型坦克而研发的R系中型坦克计划。设计师力图融合各坦克制造学派最成功的技术创新。该坦克拥有扭杆悬挂、倾斜度良好的车体装甲，并配备一门强劲火炮。因其独特的龟壳状外观，这辆全新坦克被命名为\"石龟\"。工程师特别为提高射速设计了外置散热系统，以大幅抑制炮管升温。虽然这辆全新坦克具备良好潜力，但R系在战局失败前未能完成原型车建造。"
+
+msgid "J49_Kame_long_special"
+msgstr ""
+"\"石龟\"是一辆R系IX级中型坦克，配备一门独特的弹夹炮。它具有出色的短装填时间，但精度较差，因此其连续射击在近战中更高效。火炮冷却完毕后，您可利用更佳的精度清空弹夹，但两发之间需要等待较长时间。"
+
+msgid "J49_Kame_short"
+msgstr "\"石龟\""
+
+msgid "J49_Kame_short_special"
+msgstr "弹夹炮，双重瞄准系统"
+
 msgid "J50_Type_1_Ho_Ni_II"
 msgstr "二式炮战车"
 
@@ -811,6 +847,20 @@ msgstr "足轻"
 
 msgid "J51_Ashigaru_short_special"
 msgstr "良好的机动性，具有双重瞄准系统、性能全面的火炮"
+
+msgid "J52_STK_2"
+msgstr "STK-2"
+
+msgid "J52_STK_2_descr"
+msgstr ""
+"试验型重战车尚处设计阶段时，R系军方从M系获得了S系T-64坦克的部分情报。为此，在推进试验型重战车研发的同时，决定并行研发一辆更强力的坦克，代号为STK-2。车体与炮塔进行了重制，重点强化正面装甲防护。同时换装更大功率的发动机，以提高该坦克的机动性与越野能力。但因制造成本过高，最终未能投入量产。"
+
+msgid "J52_STK_2_long_special"
+msgstr ""
+"凭借可靠的炮塔装甲与优秀的火炮俯角，STK-2在不规则地形上表现突出。得益于先进火炮冷却机制，它可精准地痛击敌人，在各种距离上高效作战。多项优势结合，使STK-2成为一辆实力不俗的全能型坦克。"
+
+msgid "J52_STK_2_short"
+msgstr "STK-2"
 
 msgid "JAN-GRC-3Z"
 msgstr "JAN/GRC-3Z"
@@ -886,6 +936,9 @@ msgstr ""
 msgid "Mitsubishi"
 msgstr "三菱A475VD"
 
+msgid "Mitsubishi_12HM20WTK"
+msgstr "三菱 12HM20WT"
+
 msgid "Mitsubishi_12HM20WT_61"
 msgstr "三菱 12HM20WT (61)"
 
@@ -912,6 +965,9 @@ msgstr "三菱 MT 1100"
 
 msgid "Mitsubishi_MT_1100_7x7"
 msgstr "三菱 MT 1100"
+
+msgid "Mitsubishi_MT_1200"
+msgstr "三菱 MT 1200"
 
 msgid "Nameless_Engine"
 msgstr "无名"
@@ -1042,6 +1098,9 @@ msgstr "五式1型炮战车"
 msgid "Turret_1_J35_Ho_Ri_3"
 msgstr "五式3型炮战车"
 
+msgid "Turret_1_J35_Ho_Ri_3_7x7"
+msgstr "五式3型炮战车"
+
 msgid "Turret_1_J36_Type_63_HT"
 msgstr "六三式"
 
@@ -1081,11 +1140,17 @@ msgstr "三重75"
 msgid "Turret_1_J48_Saryuda"
 msgstr "清道夫"
 
+msgid "Turret_1_J49_Kame"
+msgstr "\"石龟\""
+
 msgid "Turret_1_J50_Type_1_Ho_Ni_II"
 msgstr "二式炮战车"
 
 msgid "Turret_1_J51_Ashigaru"
 msgstr "足轻"
+
+msgid "Turret_1_J52_STK_2"
+msgstr "STK-2"
 
 msgid "Turret_1_Ke_Ho"
 msgstr "五式轻战"
@@ -1150,6 +1215,9 @@ msgstr "三重105"
 msgid "Turret_2_Ke_Ni"
 msgstr "二式轻战"
 
+msgid "Type3_Ko_K"
+msgstr "三式甲型"
+
 msgid "Type3_Ko_SAR"
 msgstr "三式甲型"
 
@@ -1165,7 +1233,13 @@ msgstr "百式 V-12(风冷型) (新)"
 msgid "Type_100_Suirei_V_12_Shin"
 msgstr "百式 V-12(水冷型) (新)"
 
+msgid "Type_67_DK"
+msgstr "六七式 DK"
+
 msgid "V12_Kawasaki_Type_97"
+msgstr "川97 V-12改"
+
+msgid "V12_Kawasaki_Type_97_7x7"
 msgstr "川97 V-12改"
 
 msgid "_105mm_APCR_Common_Type_68_57"
@@ -1228,6 +1302,9 @@ msgstr "九二式 AP"
 msgid "_105mm_AP_Type_95"
 msgstr "APHE 九五式A型"
 
+msgid "_105mm_AP_Type_95K"
+msgstr "APHE 九五式K型"
+
 msgid "_105mm_AP_Type_95_SP"
 msgstr "APHE 九五式 SP"
 
@@ -1237,11 +1314,17 @@ msgstr "APHE 九五式 SP特 甲型"
 msgid "_105mm_AP_Type_95_Toku_Kou"
 msgstr "APHE 九五式A型特(甲)"
 
+msgid "_105mm_AP_Type_95_Toku_Kou_K"
+msgstr "APHE 九五式K型特(甲)"
+
 msgid "_105mm_Cannon_Type92"
 msgstr "10cm 九二式炮"
 
 msgid "_105mm_Cannon_Type92_A"
 msgstr "10cm 九二式A型炮"
+
+msgid "_105mm_Cannon_Type92_K"
+msgstr "105mm 九二式炮"
 
 msgid "_105mm_Cannon_Type_14"
 msgstr "10cm 一四式炮"
@@ -1314,6 +1397,9 @@ msgstr "HE 九二式A型"
 
 msgid "_105mm_HE_Type_92B"
 msgstr "九二式 HE"
+
+msgid "_105mm_HE_Type_92K"
+msgstr "HE 九二式K型"
 
 msgid "_105mm_HE_Type_92_SP"
 msgstr "HE 九二式 SP"
@@ -1549,6 +1635,18 @@ msgstr "曳光穿甲弹T.P."
 msgid "_13.2mm_Type93"
 msgstr "13mm Ho式重机枪"
 
+msgid "_137_2mm_APDS_TK_DK"
+msgstr "APDS TK DK"
+
+msgid "_137_2mm_AP_TK_DK"
+msgstr "AP TK DK"
+
+msgid "_137_2mm_HE_TK_DK"
+msgstr "HE TK DK"
+
+msgid "_137_2mm_TK_DK"
+msgstr "137.2mm TK DK炮"
+
 msgid "_13mm_Autocannon_Type_Ho_NC"
 msgstr "13mm Ho式重机枪 (NC)"
 
@@ -1591,7 +1689,13 @@ msgstr "APHE 九六式通常弹"
 msgid "_149mm_Capped_Semi_AP"
 msgstr "14.9cm AP (被冒半穿甲)"
 
+msgid "_149mm_Capped_Semi_AP_7x7"
+msgstr "14.9cm AP (被冒半穿甲)"
+
 msgid "_149mm_Capped_Semi_AP_Kai"
+msgstr "14.9cm AP改 (被冒半穿甲)"
+
+msgid "_149mm_Capped_Semi_AP_Kai_7x7"
 msgstr "14.9cm AP改 (被冒半穿甲)"
 
 msgid "_149mm_Gun_Type_96"
@@ -1600,10 +1704,16 @@ msgstr "14.9cm 九六式炮"
 msgid "_149mm_Gun_Type_97"
 msgstr "14.9cm 九六式炮改"
 
+msgid "_149mm_Gun_Type_97_7x7"
+msgstr "14.9cm 九六式炮改"
+
 msgid "_149mm_HE_Type_1"
 msgstr "HE 九六式通常弹"
 
 msgid "_149mm_Type_1_HE"
+msgstr "14.9cm 一式HE"
+
+msgid "_149mm_Type_1_HE_7x7"
 msgstr "14.9cm 一式HE"
 
 msgid "_150mm_45_41st_Year_Type"
@@ -2256,6 +2366,9 @@ msgstr "三式甲型B"
 
 msgid "_Type3_Ko_BP"
 msgstr "三式改"
+
+msgid "_Type3_Ko_B_7x7"
+msgstr "三式甲型B"
 
 msgid "_Type3_Ko_Se"
 msgstr "三式重战甲型"

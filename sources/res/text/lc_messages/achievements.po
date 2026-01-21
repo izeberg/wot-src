@@ -158,15 +158,6 @@ msgstr "• 授予完成进度的玩家。"
 msgid "BPReserveAchievement_10_descr"
 msgstr "授予在活动期间达成成就的玩家"
 
-msgid "BPReserveAchievement_8"
-msgstr "战斗通行证储备成就8"
-
-msgid "BPReserveAchievement_8_condition"
-msgstr "• 授予完成进度的玩家。"
-
-msgid "BPReserveAchievement_8_descr"
-msgstr "授予在活动期间达成成就的玩家"
-
 msgid "BPReserveAchievement_9"
 msgstr "战斗通行证储备成就9"
 
@@ -492,6 +483,15 @@ msgid "BattlePassCommonPr_NY25_descr"
 msgstr ""
 "授予在第一滴血特殊章节期间达成成就的玩家。\n"
 "RAMBO™ & © 2025 STUDIOCANAL S.A.S. 保留所有权利。RAMBO™ & © 2025 STUDIOCANAL S.A.S. (R) All Rights Reserved."
+
+msgid "BattlePassCommonPr_NY26"
+msgstr "基础指令"
+
+msgid "BattlePassCommonPr_NY26_condition"
+msgstr "• 授予完成进度的玩家。"
+
+msgid "BattlePassCommonPr_NY26_descr"
+msgstr "授予在战斗通行证:机械战警期间达成成就的玩家。"
 
 msgid "BigAnniversaryMedal_CN"
 msgstr "大号周年纪念勋章"
@@ -1836,7 +1836,7 @@ msgid "comp7_5_1_descr"
 msgstr "授予在天梯战模式苍蓝巨龙赛季中完成一系列任务的玩家。"
 
 msgid "comp7_5_2"
-msgstr "绯红巨龙"
+msgstr "龙息试炼"
 
 msgid "comp7_5_2_descr"
 msgstr "授予在天梯战模式绯红巨龙赛季中完成一系列任务的玩家。"
@@ -4916,10 +4916,13 @@ msgid "twoPointZeroCollectorMedal"
 msgstr "大收藏家"
 
 msgid "twoPointZeroCollectorMedal_condition"
-msgstr "授予已研发并购买了升级路线中所有VI-X级坦克，并且在《坦克世界》2.0版本更新发布后领取了庆祝奖励的玩家。"
+msgstr ""
+"• 您车库内必须拥有列表中的全部坦克。\n"
+"• 仅计入《坦克世界》2.0版本更新发布前已存在于游戏中的坦克线。\n"
+"• 您无需研发所有坦克模块即可获得该奖励。"
 
 msgid "twoPointZeroCollectorMedal_descr"
-msgstr "您在《坦克世界》2.0版本更新发布时，已经收集了一大批高等级坦克。"
+msgstr "授予车库中拥有《坦克世界》2.0版本发布前的全部VI-X级可研发坦克的玩家。"
 
 msgid "twoPointZeroMedal"
 msgstr "我是2.0版本更新的见证者"

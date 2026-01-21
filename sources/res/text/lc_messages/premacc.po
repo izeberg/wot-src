@@ -216,46 +216,8 @@ msgstr "网络游戏防沉迷系统"
 msgid "parentControlCard/infoPopover/link"
 msgstr "官网"
 
-msgid "piggyBank/backBtnAddLabel"
-msgstr "账号状态"
-
-msgid "piggyBank/moreInfoBtn"
-msgstr "详情"
-
-msgid "piggyBank/premAccProlongBtn"
-msgstr "延期高级账号"
-
-msgid "piggyBank/premAccUnactiveMsg"
-msgstr "只有激活《坦克世界》高级账号时，银币储备库才能补充银币。"
-
-msgid "piggyBank/progressBarComplited"
-msgstr "银币储备库已满"
-
-msgid "piggyBank/reserveBank/description"
-msgstr ""
-"参加战斗以补充银币储备库。每{period}天，银币储备库就会开启，累计的银币将发放到您的账号中。银币储备库最多可以储存{maxAmount}。"
-
 msgid "piggyBank/reserveBank/title"
 msgstr "银币储备库"
-
-msgid "piggyBank/reserveBankPremUnsearched/description"
-msgstr ""
-"启用《坦克世界》高级账号后，战斗中将额外获得{percDisc}%银币，并存入银币储备库。银币储备库最大储存量为{maxAmount}。每{period}天，银币储备库就会开启，累积的银币将发放到您的账号中。即使您的高级账号已过期，也会正常发放。"
-
-msgid "piggyBank/reserveBankPremUnsearched/title"
-msgstr "每{period}天最多接收{maxAmount}。"
-
-msgid "piggyBank/timeLeft/days"
-msgstr "{day}天{hour}时"
-
-msgid "piggyBank/timeLeft/hours"
-msgstr "{hour}时{min}分"
-
-msgid "piggyBank/timeLeft/lessMin"
-msgstr "1分"
-
-msgid "piggyBank/timeToOpenBankMsg/title"
-msgstr "距银币储备库开启:"
 
 msgid "piggyBankCard/timeLeft/days"
 msgstr "%(day)s天"

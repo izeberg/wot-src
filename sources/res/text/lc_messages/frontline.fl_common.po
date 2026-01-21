@@ -14,6 +14,14 @@ msgstr ""
 msgid "#PluralForms"
 msgstr "nplurals=1; plural=0;"
 
+msgid "battleCarousel/resetFilters/button"
+msgstr "重置筛选"
+
+msgid "battleCarousel/resetFilters/title"
+msgstr ""
+"没有符合所选参数的坦克。\n"
+"请重置筛选设置以显示适合的坦克"
+
 msgid "battleType/description/fast"
 msgstr "在该场景中，战斗储备的冷却时间会缩短。"
 
@@ -58,6 +66,9 @@ msgid_plural "plural/day"
 msgstr[0] "{duration}天"
 msgstr[1] "{duration}天"
 msgstr[2] "{duration}天"
+
+msgid "filterPopover/note"
+msgstr "仅显示可在此模式中使用的坦克。"
 
 msgid "levelReservesTooltip/desc"
 msgstr "达到新的军阶后，战斗储备等级提高。"

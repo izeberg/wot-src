@@ -1106,30 +1106,6 @@ msgstr "签名"
 msgid "bonusName/modification"
 msgstr "效果"
 
-msgid "bonusName/nyRandomResource"
-msgstr "随机资源"
-
-msgid "bonusName/nyToys"
-msgstr "装饰物"
-
-msgid "bonusName/nyTreeColors"
-msgstr "圣诞树颜色"
-
-msgid "bonusName/ny_amber"
-msgstr "春暖琥珀"
-
-msgid "bonusName/ny_crystal"
-msgstr "新生岩晶"
-
-msgid "bonusName/ny_emerald"
-msgstr "圣洁翡翠"
-
-msgid "bonusName/ny_gp"
-msgstr "礼物硬币"
-
-msgid "bonusName/ny_iron"
-msgstr "天外陨铁"
-
 msgid "bonusName/optional_devices_assistant"
 msgstr "助手"
 
@@ -1261,9 +1237,6 @@ msgstr "乘员皮肤:"
 
 msgid "bonuses/item/freeXPFactor"
 msgstr "全局经验系数"
-
-msgid "bonuses/item/ny23RandomResources"
-msgstr "资源"
 
 msgid "bonuses/item/premium"
 msgstr "高级账号天数:"
@@ -1480,6 +1453,9 @@ msgstr "和"
 
 msgid "dailyQuests/postBattle/conditionTypeOr"
 msgstr "或"
+
+msgid "dailyQuests/postBattle/epic/description"
+msgstr "完成日常任务，获取史诗奖励"
 
 msgid "dailyQuests/postBattle/genericAmpersand"
 msgstr "&"
@@ -4295,10 +4271,6 @@ msgstr ""
 msgid "infoPage/dailyMissions/default"
 msgstr "普通任务的完成条件随机，并且每天都可完成。与个人任务相似，其任务进度仅在每场战斗结束后更新。这些任务没有任何时间限制，随时都可以完成。"
 
-msgid "infoPage/dailyMissions/nyDailyDailyMissions"
-msgstr ""
-"完成任务，推进厉兵秣马进度，并获得珍贵奖励。假日行动2026期间，完成任意任务都可获得数量不等的{fff_Open}随机资源{fff_Close}。每天都会有一个固定的标准任务可供完成。您可参加热身模式和标准模式来完成任务。"
-
 msgid "infoPage/dailyMissions/winback"
 msgstr "普通任务的完成条件随机，并且每天都可完成。其任务进度仅在每场战斗结束后更新。这些任务没有时间限制，可在任意时间完成。"
 
@@ -4435,12 +4407,6 @@ msgstr "战略任务"
 
 msgid "item/type/specialMission"
 msgstr "要塞:特殊任务"
-
-msgid "lockedForRerollTooltip/body"
-msgstr "该任务在活动期间每天都可完成，且不可重置。"
-
-msgid "lockedForRerollTooltip/header"
-msgstr "固定任务"
 
 msgid "metrics/state/done"
 msgstr "已完成"

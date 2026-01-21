@@ -125,6 +125,12 @@ msgstr "已研发全部节点。您现已解锁精英奖励系统。"
 msgid "research/button/label"
 msgstr "研发"
 
+msgid "research/emergencyModeEnabled/body"
+msgstr "WG钱包暂不可用。我们对给您造成的不便深表歉意。"
+
+msgid "research/emergencyModeEnabled/header"
+msgstr "不可用"
+
 msgid "research/inBattle"
 msgstr "节点不可用。该坦克在战斗中。"
 
@@ -245,6 +251,9 @@ msgstr "提高弹药架被击毁前可承受的损伤。"
 msgid "tooltips/description/ammoRackPenalty"
 msgstr "降低坦克弹药架受损时的惩罚。"
 
+msgid "tooltips/description/basicShellDamage"
+msgstr "提高标准炮弹造成的损伤。"
+
 msgid "tooltips/description/ch67_mechanic_0"
 msgstr "使助推器激活时的旋转速度提高{colorTagOpen}{value}%{colorTagClose}。"
 
@@ -256,6 +265,18 @@ msgstr "助推器完全充能前的冷却时间缩短{colorTagOpen}{value}秒{co
 
 msgid "tooltips/description/ch67_mechanic_3"
 msgstr "助推器最大持续时间延长{colorTagOpen}{value}秒{colorTagClose}。"
+
+msgid "tooltips/description/ch70_mechanic_0"
+msgstr "助推器提供的发动机功率加成提高{colorTagOpen}{value}%{colorTagClose}。"
+
+msgid "tooltips/description/ch70_mechanic_1"
+msgstr "助推器可再次使用前的冷却时间缩短{colorTagOpen}{value}秒{colorTagClose}。"
+
+msgid "tooltips/description/ch70_mechanic_2"
+msgstr "助推器提供的发动机功率加成提高{colorTagOpen}{value}%{colorTagClose}。"
+
+msgid "tooltips/description/ch70_mechanic_3"
+msgstr "单场战斗中助推器可使用最大次数提高{colorTagOpen}{value}{colorTagClose}。"
 
 msgid "tooltips/description/crewProtection"
 msgstr "降低坦克受到损伤时乘员受伤的几率。"
@@ -395,11 +416,32 @@ msgstr "缩短火炮弹夹中两次射击之间的装填时间。"
 msgid "tooltips/description/invisibilityWhenShooting"
 msgstr "降低射击时被敌方坦克点亮的几率。"
 
+msgid "tooltips/description/j52_mechanic_0"
+msgstr "火炮冷却延迟时间缩短{colorTagOpen}{value}秒{colorTagClose}。"
+
+msgid "tooltips/description/j52_mechanic_1"
+msgstr "火炮单发射击产生的热量降低{colorTagOpen}{value}%{colorTagClose}。"
+
+msgid "tooltips/description/j52_mechanic_2"
+msgstr "升温火炮的冷却速度提高{colorTagOpen}{value}%{colorTagClose}。"
+
 msgid "tooltips/description/nonHEShellDamage"
 msgstr "提高非HE炮弹造成的损伤。"
 
 msgid "tooltips/description/opt_dev_boosters_switch"
 msgstr "让您可以设置配件和指令的备用武装。"
+
+msgid "tooltips/description/overheat_coolingDelay"
+msgstr "火炮冷却延迟时间缩短{colorTagOpen}{value}秒{colorTagClose}。"
+
+msgid "tooltips/description/overheat_coolingPerSec"
+msgstr "升温和过热火炮的冷却速度提高{colorTagOpen}{value}%{colorTagClose}。"
+
+msgid "tooltips/description/overheat_heatingPerShot"
+msgstr "火炮单发射击产生的热量降低{colorTagOpen}{value}%{colorTagClose}。"
+
+msgid "tooltips/description/overheat_overheatedCoolingPerSec"
+msgstr "过热火炮的冷却速度提高{colorTagOpen}{value}%{colorTagClose}。"
 
 msgid "tooltips/description/pl37_mechanic_0"
 msgstr "切换模式所需的时间缩短{colorTagOpen}{value}秒{colorTagClose}。"
@@ -474,6 +516,9 @@ msgstr "提高炮弹对敌方坦克模块造成的损伤。"
 msgid "tooltips/description/shells_consumables_switch"
 msgstr "让您可以设置弹药和给养的备用武装。"
 
+msgid "tooltips/description/specialShellDamage"
+msgstr "提高特殊炮弹造成的损伤。"
+
 msgid "tooltips/description/specialShellPenetration"
 msgstr "提高特殊炮弹的穿透力。"
 
@@ -485,6 +530,9 @@ msgstr "降低隐藏在植被后的敌方坦克隐蔽系数。"
 
 msgid "tooltips/description/spottingBonusMovement"
 msgstr "降低移动中的敌方坦克隐蔽系数。"
+
+msgid "tooltips/description/standardShellDamage"
+msgstr "提高标准炮弹造成的损伤。"
 
 msgid "tooltips/description/standardShellPenetration"
 msgstr "提高标准炮弹的穿透力。"
@@ -609,6 +657,9 @@ msgstr "弹药架耐久度"
 msgid "tooltips/title/ammoRackPenalty"
 msgstr "弹药架惩罚"
 
+msgid "tooltips/title/basicShellDamage"
+msgstr "标准炮弹损伤"
+
 msgid "tooltips/title/ch67_mechanic_0"
 msgstr "矢量推进系统"
 
@@ -620,6 +671,18 @@ msgstr "蒸发式散热系统"
 
 msgid "tooltips/title/ch67_mechanic_3"
 msgstr "发汗冷却喷管"
+
+msgid "tooltips/title/ch70_mechanic_0"
+msgstr "高能推进剂"
+
+msgid "tooltips/title/ch70_mechanic_1"
+msgstr "半自动助推器脱离装置"
+
+msgid "tooltips/title/ch70_mechanic_2"
+msgstr "核心形状优化"
+
+msgid "tooltips/title/ch70_mechanic_3"
+msgstr "助推器存储扩容"
 
 msgid "tooltips/title/chassisHP"
 msgstr "悬挂装置耐久度"
@@ -783,11 +846,32 @@ msgstr "弹夹短装填时间"
 msgid "tooltips/title/invisibilityWhenShooting"
 msgstr "射击后的隐蔽系数"
 
+msgid "tooltips/title/j52_mechanic_0"
+msgstr "低温传热液"
+
+msgid "tooltips/title/j52_mechanic_1"
+msgstr "高导热性热护套"
+
+msgid "tooltips/title/j52_mechanic_2"
+msgstr "热导管优化"
+
 msgid "tooltips/title/nonHEShellDamage"
 msgstr "非HE炮弹损伤"
 
 msgid "tooltips/title/opt_dev_boosters_switch"
 msgstr "配件与指令武装"
+
+msgid "tooltips/title/overheat_coolingDelay"
+msgstr "铬内衬涂层"
+
+msgid "tooltips/title/overheat_coolingPerSec"
+msgstr "高导热性炮管"
+
+msgid "tooltips/title/overheat_heatingPerShot"
+msgstr "低燃温推进剂"
+
+msgid "tooltips/title/overheat_overheatedCoolingPerSec"
+msgstr "强制通风系统"
 
 msgid "tooltips/title/pl37_mechanic_0"
 msgstr "轻型涡轮转子"
@@ -864,6 +948,9 @@ msgstr "炮弹模块损伤"
 msgid "tooltips/title/shells_consumables_switch"
 msgstr "弹药与给养武装"
 
+msgid "tooltips/title/specialShellDamage"
+msgstr "特殊炮弹损伤"
+
 msgid "tooltips/title/specialShellPenetration"
 msgstr "特殊炮弹穿透力"
 
@@ -875,6 +962,9 @@ msgstr "点亮加成: 植被"
 
 msgid "tooltips/title/spottingBonusMovement"
 msgstr "点亮加成: 移动"
+
+msgid "tooltips/title/standardShellDamage"
+msgstr "标准炮弹损伤"
 
 msgid "tooltips/title/standardShellPenetration"
 msgstr "标准炮弹穿透力"

@@ -112,6 +112,9 @@ msgstr "未购买！"
 msgid "commonTooltip/descriptionEnded"
 msgstr "活动已结束。"
 
+msgid "commonTooltip/eventStartSoon"
+msgstr "活动即将开启！"
+
 msgid "infoButton/body"
 msgstr "点击查看更多信息。"
 
@@ -142,6 +145,12 @@ msgstr ""
 
 msgid "levelReserves/title"
 msgstr "战斗储备等级"
+
+msgid "playlist/warning/body"
+msgstr "该游玩列表包含不适合此游戏模式或不在您车库中的坦克。"
+
+msgid "playlist/warning/header"
+msgstr "不可用的坦克(%(display)s/%(total)s)"
 
 msgid "randomReserve/characteristic/improved"
 msgstr "已提高战斗储备参数"

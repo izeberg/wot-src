@@ -81,6 +81,9 @@ msgstr "AMX 105 AM 47"
 msgid "AM_VRC_7_141"
 msgstr "AM/VRC 7 141"
 
+msgid "AN_GRC_6_Terrifiant"
+msgstr "AN/GRC-6(可怖)"
+
 msgid "AN_VRC-18V"
 msgstr "AN/VRC-18V"
 
@@ -428,14 +431,23 @@ msgstr "布雷努斯"
 msgid "Chassis_F132_Vercingetorix"
 msgstr "\"维钦托利\""
 
+msgid "Chassis_F134_Lorraine_120_Alby"
+msgstr "洛林 120 \"阿尔比\""
+
 msgid "Chassis_F135_AS_XX_40_t"
 msgstr "AS-XX 40t"
 
 msgid "Chassis_F136_AMX_67_Imbattable"
 msgstr "AMX 67 \"无双\""
 
+msgid "Chassis_F137_LEOX"
+msgstr "莱欧克斯"
+
 msgid "Chassis_F138_Renault_R35_FCM_36"
 msgstr "雷诺 R35"
+
+msgid "Chassis_F139_Terrifiant"
+msgstr "可怖"
 
 msgid "Chassis_F13_AMX38"
 msgstr "AMX 38原型1号车"
@@ -694,6 +706,9 @@ msgstr "SARL 42"
 
 msgid "Citroen_105"
 msgstr "雪铁龙 105"
+
+msgid "Continental_AV_1790_8_Terrifiant"
+msgstr "大陆 AV-1790-8(可怖)"
 
 msgid "Continental_R975C"
 msgstr "大陆 R975C"
@@ -1293,6 +1308,25 @@ msgstr "\"维钦托利\""
 msgid "F132_Vercingetorix_short_special"
 msgstr "燃气轮机，可靠的炮塔装甲"
 
+msgid "F134_Lorraine_120_Alby"
+msgstr "洛林 120 \"阿尔比\""
+
+msgid "F134_Lorraine_120_Alby_descr"
+msgstr ""
+"一辆采用战斗室布局的自行反坦克炮，在相当紧凑的尺寸和45吨重量下兼具优秀的防护与火力。该坦克的主要设计目标之一是在无需转动车体的前提下增加射界。这催生了全新的战斗室设计。计划搭载105毫米或120毫米线膛炮，甚至为后者设计了炮口制退器。\n"
+"原型车实测暴露出诸多缺陷: 机动性相当平庸，油耗惊人。大口径火炮安装困难，炮管前伸超过四米，在复杂地形行进时容易造成操作负担；而120毫米火炮的重量和大尺寸也使车体前端过载，加速前部支撑部件的磨损。因此，该计划的相关工作最终被取消。"
+
+msgid "F134_Lorraine_120_Alby_long_special"
+msgstr ""
+"洛林 120 \"阿尔比\"是一辆F系VIII级自行反坦克炮。它延续了F系自行反坦克炮的经典设计: "
+"低矮的车身、良好的机动性、可靠的正面装甲、120毫米弹夹炮。其核心特点在于装有火炮的可移动上层结构，无需转动车体即可实现左右各30度的射界调整。"
+
+msgid "F134_Lorraine_120_Alby_short"
+msgstr "\"阿尔比\""
+
+msgid "F134_Lorraine_120_Alby_short_special"
+msgstr "弹夹炮，良好的正面装甲"
+
 msgid "F135_AS_XX_40_t"
 msgstr "AS-XX 40t"
 
@@ -1324,6 +1358,26 @@ msgstr ""
 msgid "F136_AMX_67_Imbattable_short"
 msgstr "AMX 67 \"无双\""
 
+msgid "F137_LEOX"
+msgstr "莱欧克斯"
+
+msgid "F137_LEOX_descr"
+msgstr ""
+"1970年，X系面临坦克装备老化困境，包括M74在内的M系坦克阵容均已过时。由于各种原因，军方无法从M系、Y系、D系那里采购武器。为此军方转而采购F系AMX"
+" 30坦克，并于1974年开始生产未经现代化改造的授权版本AMX 30E。但由于F系坦克可靠性不足，遂被迫对旧的M47、M48及AMX "
+"30进行现代化改造。1979年AMX 30E结束生产后，启动了现代化改造计划，包括加长车体版的AMX "
+"30——\"厄尔尼诺\"，以及采用\"豹\"I车体搭配AMX 30E炮塔的莱欧克斯。"
+
+msgid "F137_LEOX_long_special"
+msgstr ""
+"莱欧克斯是一辆F系IX级中型坦克。它搭载动力强劲的发动机，速度惊人，可迅速转移至战场的任意位置。此外，该坦克还配备一门精准火炮，能在各种距离对大量敌人造成关键损伤。"
+
+msgid "F137_LEOX_short"
+msgstr "莱欧克斯"
+
+msgid "F137_LEOX_short_special"
+msgstr "出色的最大速度，高额的平均穿透力"
+
 msgid "F138_Renault_R35_FCM_36"
 msgstr "雷诺 R35/FCM 36"
 
@@ -1342,6 +1396,23 @@ msgstr "R35/FCM 36"
 
 msgid "F138_Renault_R35_FCM_36_short_special"
 msgstr "良好的装甲，较高的射速"
+
+msgid "F139_Terrifiant"
+msgstr "可怖"
+
+msgid "F139_Terrifiant_descr"
+msgstr ""
+"20世纪50年代，F系重型坦克研发遭遇瓶颈。数次基于战时技术的研发尝试均未能推出具有竞争力的新型坦克，F系遂向M系寻求帮助。他们购买了从未建造的TS-6重型坦克计划的悬挂装置资料和蓝图。F系设计师为其加装了配备128毫米火炮的炮塔。最终坦克过重，外加安装超过1000马力强劲发动机的尝试失败。该计划被终止。"
+
+msgid "F139_Terrifiant_long_special"
+msgstr ""
+"可怖是一辆F系IX级重型坦克。它沿袭了F系重坦设计传统: 坚固的车体与炮塔正面装甲、拥有高额平均单发损伤和不俗精度的强劲火炮、优秀的机动性。"
+
+msgid "F139_Terrifiant_short"
+msgstr "可怖"
+
+msgid "F139_Terrifiant_short_special"
+msgstr "可靠的正面装甲，高额的平均单发损伤"
 
 msgid "F13_AMX38"
 msgstr "AMX 38"
@@ -2024,6 +2095,9 @@ msgstr "洛林 40t"
 msgid "MATHIS"
 msgstr "马西斯 250"
 
+msgid "MB_838_CaM_500"
+msgstr "MB 838 CaM-500 L"
+
 msgid "MTU_880_10"
 msgstr "MTU 880-10"
 
@@ -2071,6 +2145,9 @@ msgstr ""
 
 msgid "Maybach_HL_230_F"
 msgstr "迈巴赫 HL 230 F"
+
+msgid "Maybach_HL_230_LA"
+msgstr "迈巴赫 HL 230 LA"
 
 msgid "Maybach_HL_230_P45F_50_100"
 msgstr "迈巴赫 HL 230 P45F (50 100)"
@@ -2422,6 +2499,9 @@ msgstr "SCR 508/2"
 msgid "SCR_508_67"
 msgstr "SCR 508/67"
 
+msgid "SCR_508_LA"
+msgstr "SCR 508 LA"
+
 msgid "SCR_508_SH"
 msgstr "SCR 508"
 
@@ -2572,6 +2652,9 @@ msgstr "TRVP-13-A2"
 msgid "TRVP_13_A_Fantome"
 msgstr "TRVP-13-A(幻影)"
 
+msgid "TRVP_13_A_LEOX"
+msgstr "TRVP-13-A L"
+
 msgid "TRVP_13_SH"
 msgstr "TRVP-13"
 
@@ -2718,14 +2801,23 @@ msgstr "布雷努斯"
 msgid "Turret_1_F132_Vercingetorix"
 msgstr "\"维钦托利\""
 
+msgid "Turret_1_F134_Lorraine_120_Alby"
+msgstr "洛林 120 \"阿尔比\""
+
 msgid "Turret_1_F135_AS_XX_40_t"
 msgstr "AS-XX 40t"
 
 msgid "Turret_1_F136_AMX_67_Imbattable"
 msgstr "AMX 67 \"无双\""
 
+msgid "Turret_1_F137_LEOX"
+msgstr "莱欧克斯"
+
 msgid "Turret_1_F138_Renault_R35_FCM_36"
 msgstr "FCM 36"
+
+msgid "Turret_1_F139_Terrifiant"
+msgstr "可怖"
 
 msgid "Turret_1_F13_AMX38"
 msgstr "AMX 38"
@@ -3092,6 +3184,9 @@ msgstr "火炮射速高，射界良好"
 msgid "_105_mm_D_1090"
 msgstr "105mm D.1090炮"
 
+msgid "_105_mm_gun_CN_105_F1_L56"
+msgstr "105mm CN-105-F1 L/56炮"
+
 msgid "_105mmGr39H1A"
 msgstr "Gr.39 Hl/B"
 
@@ -3182,6 +3277,9 @@ msgstr "OCC 105 F1M"
 msgid "_105mm_OCC_105_F1_ERAC"
 msgstr "OCC-105-F1 ERAC"
 
+msgid "_105mm_OCC_105_F1_LEOX"
+msgstr "OCC-105-F1 L"
+
 msgid "_105mm_OCO_mle._1936"
 msgstr "OCO mle.36"
 
@@ -3211,6 +3309,9 @@ msgstr "OE-105-mle.60 D.1504(EXP)"
 
 msgid "_105mm_OE_105_Mle_60_ERAC"
 msgstr "OE-105-Mle.60 ERAC"
+
+msgid "_105mm_OE_105_Mle_60_LEOX"
+msgstr "OE-105 Mle.60 L"
 
 msgid "_105mm_OE_M393S"
 msgstr "105mm OE M393S"
@@ -3259,6 +3360,9 @@ msgstr "OFL 105 F1M"
 
 msgid "_105mm_OFL_105_F1_ERAC"
 msgstr "OFL-105-F1 ERAC"
+
+msgid "_105mm_OFL_105_F1_LEOX"
+msgstr "OFL-105-F1 L"
 
 msgid "_105mm_OFL_M181S"
 msgstr "105mm OFL M181S"
@@ -3340,6 +3444,9 @@ msgstr "120mm D.1203 A炮"
 msgid "_120mm_D_1203_B"
 msgstr "120mm D.1203 B炮"
 
+msgid "_120mm_D_1203_LA"
+msgstr "120mm D.1203 LA炮"
+
 msgid "_120mm_D_1203_P"
 msgstr "120mm D.1203 P炮"
 
@@ -3375,6 +3482,9 @@ msgstr "Frt.Prf. mle.51 (65)"
 
 msgid "_120mm_Frt_Prf_mle_1952"
 msgstr "Frt.Prf. mle.52"
+
+msgid "_120mm_Frt_Prf_mle_1952_LA"
+msgstr "Frt.Prf. mle.1952 LA"
 
 msgid "_120mm_ODR_358"
 msgstr "ODR 358"
@@ -3418,6 +3528,9 @@ msgstr "OE mle.51 (65)"
 msgid "_120mm_OE_mle_1952"
 msgstr "OE mle.52"
 
+msgid "_120mm_OE_mle_1952_LA"
+msgstr "OE mle.1952 LA"
+
 msgid "_120mm_Prf1943"
 msgstr "Prf. mle.43"
 
@@ -3450,6 +3563,9 @@ msgstr "Prf. mle.51 (65)"
 
 msgid "_120mm_Prf_mle_1952"
 msgstr "Prf. mle.52"
+
+msgid "_120mm_Prf_mle_1952_LA"
+msgstr "Prf. mle.1952 LA"
 
 msgid "_120mm_SA46_50_120"
 msgstr "120mm SA46炮 (50 120)"
@@ -3492,6 +3608,18 @@ msgstr "OE-127 D.700"
 
 msgid "_127mm_OE_127_Mle_55_SH"
 msgstr "OE-127 55型"
+
+msgid "_128mm_Kanone_40_Terrifiant"
+msgstr "128mm K.40炮(可怖)"
+
+msgid "_128mm_PzGr_39_Terrifiant"
+msgstr "PzGr.39(可怖)"
+
+msgid "_128mm_PzGr_43_Terrifiant"
+msgstr "PzGr.43(可怖)"
+
+msgid "_128mm_Sprgr_18_Terrifiant"
+msgstr "Sprgr.18(可怖)"
 
 msgid "_13.2mm_Balle_P."
 msgstr "穿甲弹P."

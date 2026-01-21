@@ -277,6 +277,9 @@ msgstr "坦克参战中:"
 msgid "achievement/params/vehiclesToBuy"
 msgstr "购买："
 
+msgid "achievement/params/vehiclesToHaveInGarage"
+msgstr "车库中拥有:"
+
 msgid "achievement/params/vehiclesToKill"
 msgstr "击毁:"
 
@@ -5489,7 +5492,7 @@ msgid "header/buttons/clans/turnedOff/header"
 msgstr "军团"
 
 msgid "header/buttons/credits/body"
-msgstr "检索平衡数据。您的所有银币将很快恢复可用。"
+msgstr "正在检索账号资产数据。您的全部银币将很快恢复可用。"
 
 msgid "header/buttons/credits/clickDesc"
 msgstr "点击将金币兑换为银币。"
@@ -5504,7 +5507,7 @@ msgid "header/buttons/credits/title"
 msgstr "金币兑换银币"
 
 msgid "header/buttons/crystal/body"
-msgstr "检索平衡数据。您的所有战争债券将很快恢复可用。"
+msgstr "正在检索账号资产数据。您的全部战争债券将很快恢复可用。"
 
 msgid "header/buttons/crystal/clickDesc"
 msgstr "点击以获取更多信息。"
@@ -5561,7 +5564,7 @@ msgid "header/buttons/forts/turnedOff/header"
 msgstr "军团"
 
 msgid "header/buttons/freeXP/body"
-msgstr "检索平衡数据。您的所有全局经验将很快恢复可用。"
+msgstr "正在检索账号资产数据。您的全部全局经验将很快恢复可用。"
 
 msgid "header/buttons/freeXP/clickDesc"
 msgstr "点击将战斗经验兑换为全局经验。"
@@ -5584,7 +5587,7 @@ msgid "header/buttons/gold/action/header"
 msgstr "充值"
 
 msgid "header/buttons/gold/body"
-msgstr "检索平衡数据。您的所有金币将很快恢复可用。"
+msgstr "正在检索账号资产数据。您的全部金币将很快恢复可用。"
 
 msgid "header/buttons/gold/clickDesc"
 msgstr "点击进入官网充值。"
@@ -6814,6 +6817,16 @@ msgstr "选择炮弹参数调整相关活动的奖励。此乘员拥有100%熟�
 msgid "notrecruitedtankman/ch_compensation/label"
 msgstr "一位特殊乘员"
 
+msgid "notrecruitedtankman/chef_damien/desc"
+msgstr ""
+"达米恩·图泰所至之处，总能掀起暴风骤雨。在这位烹饪冒险家兼坦克艺术家眼中，战场与厨房同为挥洒创意的舞台。此处撒盐调味，彼处高爆轰击——这些或细腻或豪放的笔触，共同铸就他的传世之作。即便食材有限，无畏探索者总能创造无限可能。给他行军灶，他能烹出盛宴；给他敌方坦克，他可将其变成废铁。任其施展便好。"
+
+msgid "notrecruitedtankman/chef_damien/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/chef_damien/label"
+msgstr "?empty?"
+
 msgid "notrecruitedtankman/commander_baroness/desc"
 msgstr ""
 "作为西方贵族娇生惯养的后代，男爵夫人毕业于学生激进主义流行时期，并最终加入了眼镜蛇的行列。她通过挑起高级眼镜蛇成员的内斗游走于该组织权力结构之中。有传言说，她也是唯一知道迪斯特罗真实身份的人。"
@@ -7973,6 +7986,68 @@ msgstr "?empty?"
 
 msgid "notrecruitedtankman/tankmen_bp1005_2/label"
 msgstr "假日行动2026"
+
+msgid "notrecruitedtankman/tankmen_bp1006_1/desc"
+msgstr ""
+"亚历克斯·墨菲曾是底特律警察局一名尽忠职守的警察，因公身受重伤，经尖端科技改造后重生为代号\"机械战警\"的赛博格强化执法者。由巨头企业欧姆尼消费品公司设计，机械战警配备先进瞄准系统、防弹装甲，并遵守\"服务公众信用，保护无辜，维护法律\"的基础指令。甚至连机械战警自己也不确定人类与机器的界限在哪里。但无论面对人类还是机器，巡逻车还是坦克——皆无分别，其准则始终如一:"
+" 违律者终将伏法。"
+
+msgid "notrecruitedtankman/tankmen_bp1006_1/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp1006_1/label"
+msgstr "战斗通行证:机械战警"
+
+msgid "notrecruitedtankman/tankmen_bp1006_2/desc"
+msgstr ""
+"常年超负荷工作、饱经风霜却始终坚守职责的沃伦·里德警长，对这座城市的奉献令人动容。作为日益衰败的底特律执法体系中的老兵，他用数十年光阴维系着那道脆弱而磨损的蓝色防线。从警多年，他自诩见证过所有黑暗——直到机械战警投入运行。这位名册上的全新成员究竟会成为破局利刃还是沉重负担，唯有时间能给出答案。但无论如何，里德的信念从未动摇:"
+" 一如既往，恪尽职守。"
+
+msgid "notrecruitedtankman/tankmen_bp1006_2/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp1006_2/label"
+msgstr "战斗通行证:机械战警"
+
+msgid "notrecruitedtankman/tankmen_bp1006_3/desc"
+msgstr ""
+"野心勃勃、言辞犀利的鲍勃·莫顿是欧姆尼消费品公司的明日之星，亦是机械战警项目的幕后推手。他或许不像某些阴暗同僚那般明目张胆作恶，但切莫被其精明表象迷惑——这名功利至上的投机分子会不惜一切代价攀爬权力阶梯。无论是暗中操纵事态，还是将底特律警界精英推向险境以筛选赛博格执法者的理想候选人，皆在其算计之中。毕竟，当物欲横流时，道德又值几何？这就是顶级竞技场的生存法则。"
+
+msgid "notrecruitedtankman/tankmen_bp1006_3/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp1006_3/label"
+msgstr "战斗通行证:机械战警"
+
+msgid "notrecruitedtankman/tankmen_bp1006_4/desc"
+msgstr ""
+"只需瞥见埃米尔·安东诺夫斯基的眼神，您便知自己惹上了何等麻烦，而且运气到底有多差。作为混迹于旧底特律罪恶泥潭里的卑劣之徒，他只为混乱与毁灭带来的癫狂快感而活，永远渴望着下一场暴行。对于一名把抢劫加油站和恐吓警员当作爱好的人来说，埃米尔竟能摆出摇滚巨星般的嚣张姿态——倘若真有住在下水道、用机油漱口的摇滚巨星的话。"
+
+msgid "notrecruitedtankman/tankmen_bp1006_4/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp1006_4/label"
+msgstr "战斗通行证:机械战警"
+
+msgid "notrecruitedtankman/tankmen_bp1006_5/desc"
+msgstr ""
+"安妮·刘易斯是底特律警察局一名经验丰富的外勤警员。作为亚历克斯·墨菲的前搭档，她是最早察觉机械战警装甲之下人性未泯的人之一。刘易斯坚韧而理智，恪守着牢固的道德准则，在这座被暴力与腐败侵蚀的城市中始终屹立不倒。对警徽的忠诚，以及对践行正义的不懈追求，使其成为这座绝望之城真正的英雄。纵使面对重重困难，这名警员仍坚守\"服务公众信用\"的誓言。"
+
+msgid "notrecruitedtankman/tankmen_bp1006_5/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp1006_5/label"
+msgstr "战斗通行证:机械战警"
+
+msgid "notrecruitedtankman/tankmen_bp1006_6/desc"
+msgstr ""
+"暴徒莱昂·纳什根本不懂是非对错，即使道理摆在眼前也毫无用处，或许他压根不屑一顾。作为恶名昭彰的克拉伦斯·博迪克犯罪团伙中嗜血成性的成员，他绝对是旧底特律险恶街道上您最不愿遭遇的煞星。比起驾驶坦克，他更擅长劫掠跑车飙驰，但若能操控一辆履带式防弹钢铁巨兽，再配上一门巨炮——对这个肆意妄为的狂徒而言，简直是梦寐以求的狂欢。"
+
+msgid "notrecruitedtankman/tankmen_bp1006_6/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp1006_6/label"
+msgstr "战斗通行证:机械战警"
 
 msgid "notrecruitedtankman/tankmen_bp10_1/desc"
 msgstr ""
@@ -10167,9 +10242,6 @@ msgstr "还有%(count)s个"
 msgid "quests/awards/additional/header"
 msgstr "奖励:"
 
-msgid "quests/awards/additional/header/count"
-msgstr "还有%(count)s个"
-
 msgid "quests/awards/nearest/header"
 msgstr "下组奖励:"
 
@@ -10190,6 +10262,9 @@ msgstr "租用天数: %(count)s"
 
 msgid "quests/awards/vehicleRent/rentLeft/rentWins"
 msgstr "租用期内的胜率:%(count)s"
+
+msgid "quests/battlePass/linkBtn"
+msgstr "查看战斗通行证进度"
 
 msgid "quests/bonuses/token/battle_bonus_x5/body"
 msgstr "驾驶任意已取得当天首胜奖励的坦克，从第2场胜利开始获得5倍经验。"
@@ -11862,6 +11937,12 @@ msgstr "激活后，稳定器保持激活状态的时间。"
 msgid "tank_params/desc/continuousShotsPerMinute"
 msgstr "每分钟可射出的炮弹数量，不包括装填时间。"
 
+msgid "tank_params/desc/coolingDelay"
+msgstr "射击停止后至火炮开始冷却的时间。"
+
+msgid "tank_params/desc/coolingTime"
+msgstr "完全升温火炮冷却所需时间。火炮在此期间仍可射击。"
+
 msgid "tank_params/desc/damage"
 msgstr "标准炮弹击穿敌方装甲造成的损伤。"
 
@@ -11940,6 +12021,9 @@ msgstr "充能过热前，坦克可保持最大热量等级的时间。"
 msgid "tank_params/desc/heatTimeToReachLevel"
 msgstr "达到每个热量等级所需的时间。"
 
+msgid "tank_params/desc/heatingPerShot"
+msgstr "火炮单发射击产生的热量。"
+
 msgid "tank_params/desc/hullArmor"
 msgstr "车体装甲:分别为前/侧/后。"
 
@@ -11984,6 +12068,9 @@ msgstr "车轮可以转动的最大角度。影响坦克的机动性和操控性
 
 msgid "tank_params/desc/movementTraverseDispersionTurbo"
 msgstr "涡轮模式下，坦克移动时的炮弹散布范围惩罚。"
+
+msgid "tank_params/desc/overheatDuration"
+msgstr "过热火炮完全冷却所需时间。火炮在冷却时无法射击。"
 
 msgid "tank_params/desc/passiveCoincideceShootingCharge"
 msgstr "交战模式下，每秒生成的重合式机电瞄准镜充能数量。"
@@ -12091,6 +12178,9 @@ msgstr "射击后的辅助武器装填时间。"
 msgid "tank_params/desc/secondaryTotalBurstSize"
 msgstr "每次激活时，辅助武器可用的炮弹数量。"
 
+msgid "tank_params/desc/shellLoadingTime"
+msgstr "战斗开始时装填炮弹及切换炮弹类型所需时间。"
+
 msgid "tank_params/desc/shotDispersionAngle"
 msgstr "当瞄准圈缩小到最小时火炮在100米距离上的射击精度。"
 
@@ -12102,6 +12192,27 @@ msgstr "显示炮弹每100米可偏离瞄准点多少米。标准数值(第一�
 
 msgid "tank_params/desc/speedLimits"
 msgstr "坦克速度由它的参数决定。"
+
+msgid "tank_params/desc/stagedJetBoostersChargeDuration"
+msgstr "助推器激活后的最大加速持续时间。"
+
+msgid "tank_params/desc/stagedJetBoostersChargesCount"
+msgstr "单场战斗中助推器可使用次数。"
+
+msgid "tank_params/desc/stagedJetBoostersCooldownTime"
+msgstr "使用后至助推器可再次激活的冷却时间。"
+
+msgid "tank_params/desc/stagedJetBoostersEnginePower"
+msgstr "助推器激活时坦克加速能力的加成。"
+
+msgid "tank_params/desc/stagedJetBoostersRotationSpeed"
+msgstr "助推器激活时坦克车体旋转速度的加成。"
+
+msgid "tank_params/desc/stagedJetBoostersSpeedLimits"
+msgstr "坦克速度由其技术参数决定。"
+
+msgid "tank_params/desc/stagedJetBoostersTopSpeed"
+msgstr "助推器激活时坦克最大速度的加成。"
 
 msgid "tank_params/desc/stationaryReloadSwitchOffTime"
 msgstr "中断装填过程后，炮塔解锁，以及坦克可以再次开火前需要等待的时间。"
@@ -12127,10 +12238,25 @@ msgstr "在模式之间切换所需的时间取决于发动机的状况。损坏
 msgid "tank_params/desc/switchTime"
 msgstr "在模式之间切换所需的时间取决于发动机的状况。损坏的发动机增加了切换所需的时间。发动机损坏时切换不可用。"
 
+msgid "tank_params/desc/temperatureAimingTime"
+msgstr "完全升温和冷却火炮的瞄准时间。"
+
+msgid "tank_params/desc/temperatureAvgDamagePerMinute"
+msgstr "如果所有射击都能击穿装甲，于1分钟内可能对敌方坦克造成的损伤量。"
+
+msgid "tank_params/desc/temperatureReloadTime"
+msgstr "每分钟射速。"
+
+msgid "tank_params/desc/temperatureShotDispersionAngle"
+msgstr "完全升温和冷却火炮在100米距离的瞄准圈大小。"
+
 msgid "tank_params/desc/timeOfReaching"
 msgstr ""
 "该参数为地面阻力系数，表示一辆坦克在完全平面上从静止状态开始行驶100米所需的时间。\n"
 "显示硬/普通/软地面的数值。"
+
+msgid "tank_params/desc/timeToOverheat"
+msgstr "火炮在过热并无法继续开火前可持续射击的最长时间。"
 
 msgid "tank_params/desc/topSpeedWithBoosters"
 msgstr "助推器提供的坦克最大速度加成。"
@@ -13449,7 +13575,7 @@ msgid "vehicleStatus/undamaged/header"
 msgstr "准备完毕"
 
 msgid "vehicleStatus/unsuitableToQueue/header"
-msgstr "不匹配"
+msgstr "模式不匹配"
 
 msgid "vehicleStatus/unsuitableToUnit/header"
 msgstr "不适用于组队"
@@ -13459,40 +13585,40 @@ msgstr "在战斗中解锁"
 
 msgid "wallet/not_available_credits/body"
 msgstr ""
-"数据检索中。\n"
-"您所有的银币将很快可以使用。"
+"正在检索账号资产数据。\n"
+"您的全部银币将很快恢复可用。"
 
 msgid "wallet/not_available_credits/header"
-msgstr "检索数据"
+msgstr "正在检索数据"
 
 msgid "wallet/not_available_crystal/body"
 msgstr ""
-"数据检索中。\n"
-"您所有的战争债券将很快可以使用。"
+"正在检索账号资产数据。\n"
+"您的全部战争债券将很快恢复可用。"
 
 msgid "wallet/not_available_crystal/header"
-msgstr "检索数据"
+msgstr "正在检索数据"
 
 msgid "wallet/not_available_equipCoin/body"
 msgstr ""
-"数据检索中。\n"
-"您所有的合金元件将很快可以使用。"
+"正在检索账号资产数据。\n"
+"您的全部合金元件将很快恢复可用。"
 
 msgid "wallet/not_available_equipCoin/header"
 msgstr "数据获取中"
 
 msgid "wallet/not_available_freexp/body"
 msgstr ""
-"数据正在获取中。\n"
-"您的金币和全局经验将会很快恢复。"
+"正在检索账号资产数据。\n"
+"您的全部全局经验将很快恢复可用。"
 
 msgid "wallet/not_available_freexp/header"
 msgstr "数据获取中"
 
 msgid "wallet/not_available_gold/body"
 msgstr ""
-"数据正在获取中。\n"
-"您的金币将会很快恢复。"
+"正在检索账号资产数据。\n"
+"您的全部金币将很快恢复可用。"
 
 msgid "wallet/not_available_gold/header"
 msgstr "数据获取中"

@@ -382,8 +382,7 @@ msgstr ""
 
 msgid "rules/base/textTop"
 msgstr ""
-"{{@ colorLegacy "
-"'FFE4C0'}}进攻方团队{{/}}必须依次占领基地才能到达炮台。占领一个基地，战斗持续时间延长2分钟。占领最后一个基地，战斗持续时间延长4分钟。"
+"{FFE4C0_Start}进攻方团队{FFE4C0_End}必须依次占领基地才能到达炮台。占领一个基地，战斗持续时间延长2分钟。占领最后一个基地，战斗持续时间延长4分钟。"
 
 msgid "rules/sectionHeader"
 msgstr "基本规则"
@@ -392,7 +391,9 @@ msgid "rules/service/header"
 msgstr "补给圈"
 
 msgid "rules/service/text"
-msgstr "补给圈可以恢复坦克的生命值、治疗所有受伤的乘员、补给弹药。补给速度如下:每秒100点生命值/一名乘员/10%弹药"
+msgstr ""
+"补给圈可恢复坦克的生命值、治疗所有受伤的乘员、补给弹药。{FFE4C0_Start}补给速度如下: "
+"每秒100点生命值/一名乘员/10%{FFE4C0_End}弹药。"
 
 msgid "rules/weapons/header"
 msgstr "目标: 5个炮台中的3个"

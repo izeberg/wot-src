@@ -647,6 +647,25 @@ msgstr "M-VI-Y"
 msgid "A144_M_VI_Y_CFE_R"
 msgstr "M-VI-Y (120)"
 
+msgid "A144_M_VI_Y_CFE_RC"
+msgstr "OCP 和平卫士"
+
+msgid "A144_M_VI_Y_CFE_RC_desc"
+msgstr ""
+"欧姆尼消费品公司隆重推出执法科技的全新里程碑: OCP "
+"和平卫士。在机械战警项目的成功基础上，和平卫士集强化型复合装甲、尖端武器系统与前沿作战效能于一体。该产品彻底突破生物组件局限，为现代都市执法树立全新标杆。见证公共安全的未来——OCP倾力呈现。"
+
+msgid "A144_M_VI_Y_CFE_RC_long_special"
+msgstr ""
+"OCP "
+"和平卫士是一辆M系IX级重型坦克，得益于令人印象深刻的炮塔装甲和出色的火炮俯角，它擅长据守关键位置。它能造成可观的平均单发损伤，并拥有玩家熟悉的应急履带机制。"
+
+msgid "A144_M_VI_Y_CFE_RC_short"
+msgstr "OCP 和平卫士"
+
+msgid "A144_M_VI_Y_CFE_RC_short_special"
+msgstr "优异的炮塔装甲，出色的火炮俯角"
+
 msgid "A144_M_VI_Y_CFE_R_desc"
 msgstr ""
 "一项由H.L. "
@@ -1226,12 +1245,76 @@ msgstr ""
 msgid "A183_XM69_Hacker_short"
 msgstr "XM69 \"开拓者\""
 
+msgid "A187_Ares_75"
+msgstr "Ares 75"
+
+msgid "A187_Ares_75_desc"
+msgstr ""
+"20世纪70年代末，M系研发出可兼顾地面与空中目标的75毫米滑膛炮。该火炮能击穿同期所有坦克的侧面和后部装甲。军方计划将其安装在多种装甲车辆上，包括1979年原型车下线的Ares"
+" "
+"75中型坦克。该坦克以良好的装甲防护和带有额外内侧履带的特殊底盘脱颖而出，能在主履带受损时保持机动性。该坦克经过了测试，但因更传统的设计获得青睐，坦克最终未投入量产。"
+
+msgid "A187_Ares_75_short"
+msgstr "Ares 75"
+
+msgid "A188_Ares_MTB"
+msgstr "Ares MTB"
+
+msgid "A188_Ares_MTB_desc"
+msgstr ""
+"20世纪70年代末，太平洋汽车与铸造公司启动了一项搭载滑膛炮的中型坦克计划。该坦克计划发展为配备新型武器系统、改进型侦测与瞄准系统的主战坦克。主武器曾考虑采用75毫米或85毫米火炮。它尺寸较小但重量偏高。由于配备两吨重的大型发动机、火力配置相对不足，加之内外履带双驱动系统过于复杂，该计划在原型车制造前即被终止。"
+
+msgid "A188_Ares_MTB_long_special"
+msgstr "?empty?"
+
+msgid "A188_Ares_MTB_short"
+msgstr "Ares MTB"
+
+msgid "A188_Ares_MTB_short_special"
+msgstr "?empty?"
+
+msgid "A189_Ares_90"
+msgstr "Ares 90"
+
+msgid "A189_Ares_90_descr"
+msgstr ""
+"尽管未能推广自研武器，阿瑞斯公司仍与凯迪拉克·盖奇合作研发了另一项旨在吸引M系军方的计划。这是一辆简化版轻型快速坦克，采用高科技解决方案且生产成本低。武器方面计划安装85毫米和90毫米Ares火炮，包括\"暮光-2000\"火炮。然而，这辆重达近50吨的\"轻型\"坦克未能获得陆军与海军陆战队的青睐。"
+
+msgid "A189_Ares_90_short"
+msgstr "Ares 90"
+
 msgid "A18_M41"
 msgstr "M41"
 
 msgid "A18_M41_descr"
 msgstr ""
 "以M24底盘为基础改装的轻型自行火炮，在M系陆军中一直服役到50年代中期，另有一部分被提供给F系军队。不同的资料显示，该自行火炮的总产量在85至250辆之间。"
+
+msgid "A190_Ares_85"
+msgstr "Ares 85"
+
+msgid "A190_Ares_85_desc"
+msgstr ""
+"作为中型近战坦克计划的一部分而研发的替代版本坦克。工程师提议安装改进型火炮，并用燃气发动机取代燃气柴油发动机。更强劲的发动机使得强化装甲成为可能，由此设计了全新的车体与炮塔。但原型车测试后，该坦克未投入量产。"
+
+msgid "A190_Ares_85_short"
+msgstr "Ares 85"
+
+msgid "A191_Ares_90_C"
+msgstr "Ares 90 C"
+
+msgid "A191_Ares_90_C_desc"
+msgstr ""
+"配备Ares系列自动炮的坦克计划之一。该坦克修正了早期型号的所有缺陷。大幅强化了武器与装甲，并换装强化版卡特彼勒 LVMS-1050 "
+"VHOTF涡轮柴油发动机，机动性得到极大提高，可达成较高的最大速度。然而，由于军方当时正转向研发采用经典布局的通用主战坦克，而且认为此类坦克更稳妥、发展潜力更高。最终，该坦克未投入量产。"
+
+msgid "A191_Ares_90_C_long_special"
+msgstr ""
+"得益于非常规设计和不俗的防护能力，Ares 90 "
+"C非常擅长近战。凭借优化的自动炮热量管理机制，该坦克能始终保持战备状态，随时释放强劲火力。应急履带加良好的机动性可保障其持续移动，寻找新的战术机会。"
+
+msgid "A191_Ares_90_C_short"
+msgstr "Ares 90 C"
 
 msgid "A192_M4A4_Firefly_CFE_A"
 msgstr "\"萤火虫\"桑德斯"
@@ -1631,6 +1714,9 @@ msgstr "AN/VRC-7A"
 msgid "AN_ARC_27_RC"
 msgstr "AN/GRC-7 RC"
 
+msgid "AN_ARC_27_RC_C"
+msgstr "AN/GRC-7 RC"
+
 msgid "AN_GRC_6_SPHT"
 msgstr "AN/GRC-6 SPHT"
 
@@ -1681,6 +1767,21 @@ msgstr "AN/VRC-12"
 
 msgid "AN_VRC_12A"
 msgstr "AN/VRC-12"
+
+msgid "AN_VRC_12_10"
+msgstr "AN/VRC-12/10"
+
+msgid "AN_VRC_12_11"
+msgstr "AN/VRC-12/11"
+
+msgid "AN_VRC_12_8"
+msgstr "AN/VRC-12/8"
+
+msgid "AN_VRC_12_9"
+msgstr "AN/VRC-12/9"
+
+msgid "AN_VRC_12_9B"
+msgstr "AN/VRC-12/9B"
 
 msgid "AN_VRC_3B"
 msgstr "AN/VRC-3B"
@@ -1738,6 +1839,28 @@ msgstr "WS No.19特型A"
 
 msgid "Buick_series_60"
 msgstr "别克60系列"
+
+msgid "Caterpillar_LVMS_1050_EHO"
+msgstr "卡特彼勒 LVMS-1050 EHO"
+
+msgid "Caterpillar_LVMS_1050_EHO_short"
+msgstr ""
+"卡特彼勒\n"
+"LVMS-1050 EHO"
+
+msgid "Caterpillar_LVMS_1050_VHO"
+msgstr "卡特彼勒 LVMS-1050 VHO"
+
+msgid "Caterpillar_LVMS_1050_VHOTF"
+msgstr "卡特彼勒 LVMS-1050 VHOTF"
+
+msgid "Caterpillar_LVMS_1050_VHO_short"
+msgstr ""
+"卡特彼勒\n"
+"LVMS-1050 VHO"
+
+msgid "Chassis_1_A191_Ares_90_C"
+msgstr "\"斗士\""
 
 msgid "Chassis_A01_T1_Cunningham"
 msgstr "T1 “科宁汉姆”"
@@ -1940,6 +2063,9 @@ msgstr "M-VI-Y B型"
 msgid "Chassis_A144_M_VI_Y_CFE_R"
 msgstr "M-VI-Y (120)"
 
+msgid "Chassis_A144_M_VI_Y_CFE_RC"
+msgstr "OCP 和平卫士"
+
 msgid "Chassis_A145_TS_54"
 msgstr "TS-54"
 
@@ -2042,11 +2168,32 @@ msgstr "T803"
 msgid "Chassis_A183_XM69_Hacker"
 msgstr "XM69 \"开拓者\""
 
+msgid "Chassis_A187_Ares_75"
+msgstr "Ares 75 DARPA"
+
+msgid "Chassis_A187_Ares_75_2"
+msgstr "Ares 75 HIMAG"
+
+msgid "Chassis_A188_Ares_MTB"
+msgstr "Ares MTB"
+
+msgid "Chassis_A189_Ares_90"
+msgstr "Ares 90"
+
 msgid "Chassis_A18_M41"
 msgstr "T72"
 
 msgid "Chassis_A18_M41_2"
 msgstr "T72E1"
+
+msgid "Chassis_A190_Ares_85"
+msgstr "Ares 85 DARPA"
+
+msgid "Chassis_A190_Ares_85_2"
+msgstr "Ares 85 HIMAG"
+
+msgid "Chassis_A191_Ares_90_C"
+msgstr "Ares 2000"
 
 msgid "Chassis_A192_M4A4_Firefly_CFE_A"
 msgstr "\"萤火虫\"桑德斯"
@@ -2465,6 +2612,14 @@ msgstr ""
 msgid "Continental_AOSI_1195_5_Y_VI_RC"
 msgstr "大陆 AOSI-1195-5 Y VI RC"
 
+msgid "Continental_AOSI_1195_5_Y_VI_RC_C"
+msgstr "大陆 AOSI-1195-5 Y VI RC"
+
+msgid "Continental_AOSI_1195_5_Y_VI_RC_C_short"
+msgstr ""
+"大陆\n"
+"AOSI-1195-5 Y VI RC"
+
 msgid "Continental_AOSI_1195_5_Y_VI_RC_short"
 msgstr ""
 "大陆\n"
@@ -2789,6 +2944,14 @@ msgstr ""
 msgid "Continental_AV_1790_5B"
 msgstr "大陆 AV-1790-5B"
 
+msgid "Continental_AV_1790_5BX"
+msgstr "大陆 AV-1790-5BX"
+
+msgid "Continental_AV_1790_5BX_short"
+msgstr ""
+"大陆\n"
+"AV-1790-5BX"
+
 msgid "Continental_AV_1790_5B_3"
 msgstr "大陆 AV-1790-5B-3"
 
@@ -2860,6 +3023,9 @@ msgid "Continental_AV_1790_7_short"
 msgstr ""
 "大陆\n"
 "AV-1790-7"
+
+msgid "Continental_AV_1790_8"
+msgstr "大陆 AV-1790-8"
 
 msgid "Continental_AX_1770"
 msgstr "大陆AX-1770"
@@ -2974,6 +3140,12 @@ msgstr "“科宁汉姆” V8"
 
 msgid "Curtiss_D_12"
 msgstr "柯蒂斯 D-12"
+
+msgid "Curtiss_Wright_RC2_350"
+msgstr "柯蒂斯-莱特 RC2-350"
+
+msgid "Curtiss_Wright_RC2_350_T_C"
+msgstr "柯蒂斯-莱特 RC2-350 T-C"
 
 msgid "D51080_BPXIV"
 msgstr "D51080"
@@ -3845,6 +4017,9 @@ msgstr "M-VI-Y A型"
 msgid "Turret_1_A144_M_VI_Y_CFE_R"
 msgstr "M-VI-Y (120)"
 
+msgid "Turret_1_A144_M_VI_Y_CFE_RC"
+msgstr "OCP 和平卫士"
+
 msgid "Turret_1_A145_TS_54"
 msgstr "TS-54"
 
@@ -3941,8 +4116,23 @@ msgstr "T803"
 msgid "Turret_1_A183_XM69_Hacker"
 msgstr "XM69 \"开拓者\""
 
+msgid "Turret_1_A187_Ares_75"
+msgstr "Ares 75"
+
+msgid "Turret_1_A188_Ares_MTB"
+msgstr "Ares MTB"
+
+msgid "Turret_1_A189_Ares_90"
+msgstr "Ares 90"
+
 msgid "Turret_1_A18_M41"
 msgstr "M41"
+
+msgid "Turret_1_A190_Ares_85"
+msgstr "Ares 85"
+
+msgid "Turret_1_A191_Ares_90_C"
+msgstr "Ares 2000"
 
 msgid "Turret_1_A192_M4A4_Firefly_CFE_A"
 msgstr "\"萤火虫\"桑德斯"
@@ -4871,6 +5061,9 @@ msgstr "APBC M358"
 msgid "_120mm_APCR_M361_M_VI_Y_RC"
 msgstr "APCR M361 (M-VI-Y) RC"
 
+msgid "_120mm_APCR_M361_M_VI_Y_RC_C"
+msgstr "APCR M361 RC"
+
 msgid "_120mm_APCR_T62"
 msgstr "APCR T62"
 
@@ -4973,6 +5166,9 @@ msgstr "120mm US-GBR炮"
 msgid "_120mm_American_British_Gun_RC"
 msgstr "120mm US-GBR炮 RC"
 
+msgid "_120mm_American_British_Gun_RC_C"
+msgstr "120mm US-GBR炮 RC"
+
 msgid "_120mm_Delta_SPHT"
 msgstr "120mm 德尔塔 SPHT"
 
@@ -5051,6 +5247,9 @@ msgstr "HEAT M469 (M-VI-Y)"
 msgid "_120mm_HEAT_M469_M_VI_Y_RC"
 msgstr "HEAT M469 (M-VI-Y) RC"
 
+msgid "_120mm_HEAT_M469_M_VI_Y_RC_C"
+msgstr "HEAT M469 RC"
+
 msgid "_120mm_HEAT_M469_T122"
 msgstr "HEAT M469 (T122)"
 
@@ -5104,6 +5303,9 @@ msgstr "HE T15E3 (M-VI-Y)"
 
 msgid "_120mm_HE_T15E3_M_VI_Y_RC"
 msgstr "HE T15E3 (M-VI-Y) RC"
+
+msgid "_120mm_HE_T15E3_M_VI_Y_RC_C"
+msgstr "HE T15E3 RC"
 
 msgid "_120mm_HE_T15E3_T122"
 msgstr "HE T15E3 (T122)"
@@ -5688,6 +5890,24 @@ msgstr "APCR Mk.1T"
 msgid "_6pdr_AP_MKs_4"
 msgstr "AP Mk.4"
 
+msgid "_75mm_AAAC_I"
+msgstr "AAAC-I"
+
+msgid "_75mm_AAAC_II"
+msgstr "AAAC-II"
+
+msgid "_75mm_AAAC_II_FS"
+msgstr "AAAC-II FS"
+
+msgid "_75mm_AAAC_II_Super"
+msgstr "AAAC-II \"超级\""
+
+msgid "_75mm_AAAC_I_FS"
+msgstr "AAAC-I FS"
+
+msgid "_75mm_AAAC_I_Super"
+msgstr "AAAC-I \"超级\""
+
 msgid "_75mm_APC_M61_M24_M17"
 msgstr "APC M61 (M24/M17)"
 
@@ -5714,6 +5934,24 @@ msgstr "3英寸 M7 AT炮"
 
 msgid "_75mm_AT_Howitzer_M3"
 msgstr "75mm M7 AT榴弹炮"
+
+msgid "_75mm_Ares_ADMAG"
+msgstr "75mm Ares ADMAG炮"
+
+msgid "_75mm_Ares_MC_AAAC"
+msgstr "75mm Ares MC-AAAC炮"
+
+msgid "_75mm_Ares_Super"
+msgstr "75mm Ares \"超级\"炮"
+
+msgid "_75mm_DARPA_HE"
+msgstr "DARPA HE"
+
+msgid "_75mm_DARPA_HE_FS"
+msgstr "DARPA HE FS"
+
+msgid "_75mm_DARPA_HE_Super"
+msgstr "DARPA HE \"超级\""
 
 msgid "_75mm_Gun_M17"
 msgstr "75mm M17炮"
@@ -6152,6 +6390,30 @@ msgstr "M64"
 msgid "_76mm_M79"
 msgstr "HVAP M93(M7)"
 
+msgid "_85mm_AAAC_I"
+msgstr "AAAC-I"
+
+msgid "_85mm_AAAC_II"
+msgstr "AAAC-II"
+
+msgid "_85mm_AAAC_II_FS"
+msgstr "AAAC-II FS"
+
+msgid "_85mm_AAAC_I_FS"
+msgstr "AAAC-I FS"
+
+msgid "_85mm_Ares_HVAC"
+msgstr "85mm Ares HVAC炮"
+
+msgid "_85mm_Ares_MC_AAAC"
+msgstr "85mm Ares MC-AAAC炮"
+
+msgid "_85mm_DARPA_HE"
+msgstr "DARPA HE"
+
+msgid "_85mm_DARPA_HE_FS"
+msgstr "DARPA HE FS"
+
 msgid "_88mm_Kw_K_43"
 msgstr "8.8cm KwK 43炮"
 
@@ -6163,6 +6425,12 @@ msgstr "Pzgr 40/43"
 
 msgid "_88mm_Sprgr_43"
 msgstr "Sprgr 43"
+
+msgid "_90mm_AAAC_I"
+msgstr "AAAC-I"
+
+msgid "_90mm_AAAC_II"
+msgstr "AAAC-II"
 
 msgid "_90mm_APCR_Experimental"
 msgstr "试验型APCR"
@@ -6286,6 +6554,24 @@ msgstr "90mm T15E2 AT炮"
 
 msgid "_90mm_AT_Gun_T15E2_T25_AT"
 msgstr "90mm T15E2 AT炮 (T25 AT)"
+
+msgid "_90mm_Ares_2000"
+msgstr "90mm Ares 2000炮"
+
+msgid "_90mm_Ares_LC_AAAC"
+msgstr "90mm Ares LC-AAAC炮"
+
+msgid "_90mm_Bravo_1"
+msgstr "B 1"
+
+msgid "_90mm_Charlie_3"
+msgstr "C 3"
+
+msgid "_90mm_DARPA_HE"
+msgstr "DARPA HE"
+
+msgid "_90mm_Delta_6"
+msgstr "D 6"
 
 msgid "_90mm_Gun_M3"
 msgstr "90mm M3炮"

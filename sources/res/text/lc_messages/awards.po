@@ -10,6 +10,27 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "collector20/awardNameTemplate/badge"
+msgstr "{name}"
+
+msgid "collector20/awardNameTemplate/medal"
+msgstr "勋章: {name}"
+
+msgid "collector20/awardNameTemplate/stripe"
+msgstr "条纹: {name}"
+
+msgid "collector20/button/affirmative"
+msgstr "收到！"
+
+msgid "collector20/subTitle"
+msgstr "恭喜"
+
+msgid "collector20/title"
+msgstr "您是名副其实的{gold_Open}大收藏家！{gold_Close}"
+
+msgid "collector20/underTitle"
+msgstr "您已收集数量惊人的高等级可研发坦克。您的热爱与坚持令人敬佩。我们为您准备了\"大收藏家\"称号以示感谢。请自豪地佩戴它——您当之无愧！"
+
 msgid "multipleAwards/additionalTitle"
 msgstr "您同时获得:"
 

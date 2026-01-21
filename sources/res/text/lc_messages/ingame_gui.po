@@ -141,6 +141,9 @@ msgstr "<盟友 名称>，请求支援!"
 msgid "chat_example/negative"
 msgstr "拒绝！"
 
+msgid "chat_example/overheated_gun"
+msgstr "火炮过热！<Reload Time>秒内无法射击"
+
 msgid "chat_example/positive"
 msgstr "遵命！"
 
@@ -281,6 +284,9 @@ msgstr "我正向目标移动: %(target)s！"
 
 msgid "chat_shortcuts/negative"
 msgstr "拒绝！"
+
+msgid "chat_shortcuts/overheated_gun"
+msgstr "火炮过热！%(floatArg1)d秒内无法射击"
 
 msgid "chat_shortcuts/positive"
 msgstr "%(target)s，遵命！"
@@ -983,6 +989,9 @@ msgstr "无法开炮:火炮损坏。"
 
 msgid "player_errors/cant_shoot/gun_locked"
 msgstr "无法开火。"
+
+msgid "player_errors/cant_shoot/gun_overheated"
+msgstr "无法射击: 火炮过热。"
 
 msgid "player_errors/cant_shoot/gun_reload"
 msgstr "正在装填。"
@@ -2770,6 +2779,9 @@ msgstr "激活液体燃料助推器"
 
 msgid "siegeMode/hint/rocketAcceleration"
 msgstr "可激活火箭助推器"
+
+msgid "siegeMode/hint/stagedJetBoosters"
+msgstr "激活顺序火箭助推器"
 
 msgid "siegeMode/hint/targetDesignator"
 msgstr "击中敌方坦克，即可获得激光目标指示器的额外效果"

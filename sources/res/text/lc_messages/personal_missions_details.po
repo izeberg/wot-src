@@ -4069,7 +4069,7 @@ msgstr "第1"
 msgid "pm3_10_2_2"
 msgstr "伏击-2"
 
-msgid "pm3_10_2_2_description_damage"
+msgid "pm3_10_2_2_description_damageWhileUnharmed"
 msgstr "在自身坦克受到任何损伤前，对敌方坦克造成%(goal)s点损伤"
 
 msgid "pm3_10_2_2_description_kills"
@@ -4078,7 +4078,7 @@ msgstr "击毁%(goal)s辆敌方中型坦克或自行反坦克炮"
 msgid "pm3_10_2_2_short"
 msgstr "伏击-2"
 
-msgid "pm3_10_2_2_title_damage"
+msgid "pm3_10_2_2_title_damageWhileUnharmed"
 msgstr "损伤"
 
 msgid "pm3_10_2_2_title_kills"
@@ -4091,7 +4091,7 @@ msgid "pm3_10_2_3_description_damage"
 msgstr "对敌方坦克造成%(goal)s点损伤，且在造成损伤时保持不被点亮"
 
 msgid "pm3_10_2_3_description_killWithCausingDamage"
-msgstr "击毁1辆敌方重型坦克，且通过射击对其造成至少%(damageDealt)s点损伤"
+msgstr "通过射击击毁1辆敌方重型坦克，且对其造成至少%(damageDealt)s点损伤"
 
 msgid "pm3_10_2_3_short"
 msgstr "伏击-3"

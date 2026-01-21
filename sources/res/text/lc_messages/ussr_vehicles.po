@@ -322,6 +322,9 @@ msgstr "T-29"
 msgid "Chassis_R144_K_91"
 msgstr "K-91"
 
+msgid "Chassis_R144_K_91_7x7"
+msgstr "K-91"
+
 msgid "Chassis_R145_Object_705_A"
 msgstr "705工程A"
 
@@ -417,6 +420,9 @@ msgstr "IS-3-II 后期型"
 
 msgid "Chassis_R172_Object_752"
 msgstr "752工程"
+
+msgid "Chassis_R172_Object_752_CFE_T"
+msgstr "无双福将"
 
 msgid "Chassis_R173_K_91_2"
 msgstr "K-91-2 加强型"
@@ -549,6 +555,12 @@ msgstr "KR-1"
 
 msgid "Chassis_R230_Object_432U"
 msgstr "432工程U"
+
+msgid "Chassis_R231_Buryan"
+msgstr "布雷扬"
+
+msgid "Chassis_R235_KB_52"
+msgstr "KB-52"
 
 msgid "Chassis_R23_T-43"
 msgstr "T-43"
@@ -1410,6 +1422,9 @@ msgstr "R-113"
 msgid "R113M_DR"
 msgstr "R-113D"
 
+msgid "R113M_c_7x7"
+msgstr "R-113"
+
 msgid "R113T"
 msgstr "R113T"
 
@@ -1916,6 +1931,15 @@ msgstr "强大的火炮，良好的机动性"
 msgid "R144_K_91"
 msgstr "K-91"
 
+msgid "R144_K_91_7x7"
+msgstr "K-91 7v7"
+
+msgid "R144_K_91_7x7_descr"
+msgstr "?empty?"
+
+msgid "R144_K_91_7x7_short"
+msgstr "K-91 7v7"
+
 msgid "R144_K_91_descr"
 msgstr "?empty?"
 
@@ -2250,6 +2274,27 @@ msgstr "IS-3-II"
 
 msgid "R172_Object_752"
 msgstr "752工程"
+
+msgid "R172_Object_752_CFE_T"
+msgstr "无双福将"
+
+msgid "R172_Object_752_CFE_T_descr"
+msgstr ""
+"虬髯戟张，豹目圆睁，自少骁勇，善于骑槊，福相天成，护佑三军。笑谈能解危局，勇武更藏谋略。以巧破力，先声夺人，三板斧无人可敌。观人之明，抉择之智，更显名将风骨。偕叔宝翼秦王，悬甲军摧锋陷阵冠诸将；先世南次公谨，凌烟阁图功画像照千秋。后世话本争传颂:"
+" 混世魔王啸乱世，草莽豪杰第一流！"
+
+msgid "R172_Object_752_CFE_T_long_special"
+msgstr ""
+"这辆IX级重型坦克拥有摇摆式炮塔和弹夹装填系统，是一辆与众不同的S系坦克。除此之外，该坦克装甲防护良好。凭借U型的正面装甲、V型的车体、低矮的外形，无双福将能在阵地战中生存较长的时间。"
+
+msgid "R172_Object_752_CFE_T_short"
+msgstr "无双福将"
+
+msgid "R172_Object_752_CFE_T_short_special"
+msgstr ""
+"骑槊板斧慑敌胆，\n"
+"\n"
+"凌烟列像留威名。"
 
 msgid "R172_Object_752_descr"
 msgstr ""
@@ -2867,6 +2912,41 @@ msgstr ""
 msgid "R230_Object_432U_short"
 msgstr "432工程U"
 
+msgid "R231_Buryan"
+msgstr "布雷扬"
+
+msgid "R231_Buryan_descr"
+msgstr ""
+"战后的研究领域之一是乘员人体工学和最佳乘员数量。基于所获数据研发的\"NIR 1476\"计划，非正式名称为布雷扬，旨在将人体测量学研究成果转化为坦克设计。\n"
+"该坦克采用常规布局、宽敞炮塔，配备两名装填手，可实现高射速；但55吨的重量、过大的炮塔侧投影面积，以及缺失驾驶员舱盖等问题，导致其操控性不佳。强化具有倾斜度的车体前部进一步增加了重量，而唯一适配的6TD发动机在当时仅停留于设计方案。\n"
+"由于工程师难以平衡重量、尺寸、装甲防护与人体工学等多重要求，坦克研发最终未能成功。同时，至20世纪50年代末，配备弹夹炮的坦克布局已经出现，使得减少乘员数量、降低重量、缩小正面投影面积，以及提高射速成为可能。"
+
+msgid "R231_Buryan_long_special"
+msgstr ""
+"布雷扬是一辆S系IX级重型坦克，兼具高额平均单发损伤与平均每分钟损伤，在一对一较量中表现不俗；不过其火炮手感较为平庸。其机动性足以支持短距离转场，但较低的最大速度限制了侧翼突袭的能力。坚固的炮塔可有效抵御多数来袭炮弹。"
+
+msgid "R231_Buryan_short"
+msgstr "布雷扬"
+
+msgid "R231_Buryan_short_special"
+msgstr "高额的平均单发损伤和平均每分钟损伤。"
+
+msgid "R235_KB_52"
+msgstr "KB-52"
+
+msgid "R235_KB_52_desc"
+msgstr "该计划基于777工程的车体研发，采用摇摆式炮塔与改进型107毫米火炮，旨在满足同期作战需求，但在设计阶段即被终止。"
+
+msgid "R235_KB_52_long_special"
+msgstr ""
+"KB-52是一辆S系IX级中型坦克。该坦克拥有相对于同级中坦来说极为可靠的装甲，适合采用非常激进的玩法。同时，它也具有转场能力，可相当快速地转移到地图上的其他位置。"
+
+msgid "R235_KB_52_short"
+msgstr "KB-52"
+
+msgid "R235_KB_52_short_special"
+msgstr "可靠的车体和炮塔装甲，弹夹炮"
+
 msgid "R23_T-43"
 msgstr "T-43"
 
@@ -3186,6 +3266,12 @@ msgstr "优秀的单发损伤，良好的机动性和隐蔽性"
 msgid "RTY_RCEHb"
 msgstr "RTU(\"亚森\")"
 
+msgid "RTY_RCEHb_A"
+msgstr "RTU(\"亚森\") A"
+
+msgid "RTY_RCEHb_CFE_T"
+msgstr "RTU(\"亚森\")"
+
 msgid "R_123B"
 msgstr "R-123B"
 
@@ -3194,6 +3280,9 @@ msgstr "R-123C"
 
 msgid "R_123KR"
 msgstr "R-123KR"
+
+msgid "R_123_1476"
+msgstr "R-123 (1476)"
 
 msgid "SCR_209"
 msgstr "SCR 209"
@@ -3672,6 +3761,9 @@ msgstr "T-29"
 msgid "Turret_1_R144_K_91"
 msgstr "K-91"
 
+msgid "Turret_1_R144_K_91_7x7"
+msgstr "K-91"
+
 msgid "Turret_1_R145_Object_705_A"
 msgstr "705工程A"
 
@@ -3752,6 +3844,9 @@ msgstr "IS-3-II试验型"
 
 msgid "Turret_1_R172_Object_752"
 msgstr "752工程 (o)"
+
+msgid "Turret_1_R172_Object_752_CFE_T"
+msgstr "无双福将"
 
 msgid "Turret_1_R173_K_91_2"
 msgstr "K91-2"
@@ -3869,6 +3964,12 @@ msgstr "KR-1"
 
 msgid "Turret_1_R230_Object_432U"
 msgstr "432工程U"
+
+msgid "Turret_1_R231_Buryan"
+msgstr "布雷扬"
+
+msgid "Turret_1_R235_KB_52"
+msgstr "KB-52"
 
 msgid "Turret_1_R23_T-43"
 msgstr "T-43(42型)"
@@ -4338,6 +4439,9 @@ msgstr "V-12P"
 msgid "V_12_5"
 msgstr "V-12-5"
 
+msgid "V_12_5B"
+msgstr "V-12-5B"
+
 msgid "V_12_5F"
 msgstr "V-12-5F"
 
@@ -4352,6 +4456,9 @@ msgstr "V-12-5M1"
 
 msgid "V_12_6"
 msgstr "V-12-6"
+
+msgid "V_12_6B_CFE_T"
+msgstr "V-12-6B"
 
 msgid "V_12_6M"
 msgstr "V-12-6M"
@@ -4563,6 +4670,9 @@ msgstr "V-54R"
 msgid "V_64S"
 msgstr "V-64S"
 
+msgid "V_64_7x7"
+msgstr "V-64"
+
 msgid "ValentineMK_I"
 msgstr "“瓦伦丁” Mk.I"
 
@@ -4620,6 +4730,9 @@ msgstr "3UBK(LM)"
 msgid "_100mm_3UBK_LMK"
 msgstr "3UBK (LK)"
 
+msgid "_100mm_3UBK_LM_7x7"
+msgstr "3UBK(LM)"
+
 msgid "_100mm_3UOF10"
 msgstr "3UOF10"
 
@@ -4634,6 +4747,9 @@ msgstr "3UOF(LM)"
 
 msgid "_100mm_3UOF_LMK"
 msgstr "3UOF (LK)"
+
+msgid "_100mm_3UOF_LM_7x7"
+msgstr "3UOF(LM)"
 
 msgid "_100mm_3VBB"
 msgstr "3VBB"
@@ -4709,6 +4825,9 @@ msgstr "100mm D-46T炮"
 
 msgid "_100mm_D_46TK"
 msgstr "100mm D-46TK炮"
+
+msgid "_100mm_D_46T_7x7"
+msgstr "100mm D-46T炮"
 
 msgid "_100mm_D_46T_P"
 msgstr "100mm D-46TP炮"
@@ -4887,6 +5006,9 @@ msgstr "UBR(LM)"
 msgid "_100mm_UBR_LMK"
 msgstr "UBR (LK)"
 
+msgid "_100mm_UBR_LM_7x7"
+msgstr "UBR(LM)"
+
 msgid "_100mm_UOF-412"
 msgstr "UOF-412"
 
@@ -4986,8 +5108,14 @@ msgstr "BP-450M"
 msgid "_107mm_BR_420LP"
 msgstr "BR-420LP"
 
+msgid "_107mm_BR_420LPA"
+msgstr "BR-420LPA"
+
 msgid "_107mm_LP_21"
 msgstr "107mm LP-21炮"
+
+msgid "_107mm_LP_21A"
+msgstr "107mm LP-21A炮"
 
 msgid "_107mm_UBR-420"
 msgstr "UBR-420"
@@ -5018,6 +5146,9 @@ msgstr "UBR-420T"
 
 msgid "_107mm_UBR_420LP"
 msgstr "UBR-420LP"
+
+msgid "_107mm_UBR_420LPA"
+msgstr "UBR-420LPA"
 
 msgid "_107mm_UBR_420M_KV_4"
 msgstr "UBR-420M (KV-4)"
@@ -5069,6 +5200,9 @@ msgstr "UOF-420T"
 
 msgid "_107mm_UOF_420LP"
 msgstr "UOF-420LP"
+
+msgid "_107mm_UOF_420LPA"
+msgstr "UOF-420LPA"
 
 msgid "_107mm_UOF_420M_KV_4"
 msgstr "UOF-420M (KV-4)"
@@ -5220,6 +5354,9 @@ msgstr "3BM11"
 msgid "_122mm_3BM11P"
 msgstr "3BM11P"
 
+msgid "_122mm_3BM11_CFE_T"
+msgstr "3BM11"
+
 msgid "_122mm_3BM14"
 msgstr "ZBM14"
 
@@ -5265,11 +5402,17 @@ msgstr "53-OF-472"
 msgid "_122mm_53_OF_472US"
 msgstr "53-OF-472US"
 
+msgid "_122mm_53_OF_472_CFE_T"
+msgstr "53-OF-472"
+
 msgid "_122mm_53_VBR_472"
 msgstr "53-BR-472"
 
 msgid "_122mm_53_VBR_472U"
 msgstr "53-BR-472U"
+
+msgid "_122mm_53_VBR_472_CFE_T"
+msgstr "53-BR-472"
 
 msgid "_122mm_A-19"
 msgstr "122mm A-19炮(37型）"
@@ -5495,6 +5638,9 @@ msgstr "122mm M62-T2炮"
 
 msgid "_122mm_M62-T2_SH"
 msgstr "122mm M62-T3ST炮"
+
+msgid "_122mm_M62_CFE_T"
+msgstr "122mm M-62T2炮"
 
 msgid "_122mm_M62_S2"
 msgstr "122mm M62-S2炮"
@@ -5841,6 +5987,9 @@ msgstr "130mm 2A50炮"
 msgid "_130mm_3UBK"
 msgstr "3UBK"
 
+msgid "_130mm_3UBK_1476"
+msgstr "3UBK (1476)"
+
 msgid "_130mm_3VBKB"
 msgstr "3VBKB"
 
@@ -5871,8 +6020,14 @@ msgstr "53-OF-482M"
 msgid "_130mm_53_UBR_482"
 msgstr "53-UBR-482"
 
+msgid "_130mm_53_UBR_482_1476"
+msgstr "53-UBR-482 (1476)"
+
 msgid "_130mm_53_UOF_482V"
 msgstr "53-UOF-482V"
+
+msgid "_130mm_53_UOF_482V_1476"
+msgstr "53-UOF-482V (1476)"
 
 msgid "_130mm_53_VBR_482B"
 msgstr "53-VBR-482B"
@@ -5906,6 +6061,9 @@ msgstr "130mm M-65S炮"
 
 msgid "_130mm_M_65S_DR"
 msgstr "130 mm M-65D炮"
+
+msgid "_130mm_M_65_1476"
+msgstr "130mm M-65 (1476)炮"
 
 msgid "_130mm_M_65_7x7"
 msgstr "130mm M-65炮"
@@ -6788,6 +6946,9 @@ msgstr "5TD-2"
 
 msgid "_6TD"
 msgstr "6TD"
+
+msgid "_6TD_1476"
+msgstr "6TD (1476)"
 
 msgid "_6TD_K"
 msgstr "6TD-K"

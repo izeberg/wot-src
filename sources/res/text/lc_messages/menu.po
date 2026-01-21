@@ -1257,7 +1257,7 @@ msgid "contextMenu/withdrawInvitationToSquad"
 msgstr "撤回加入小队的邀请"
 
 msgid "copy"
-msgstr "©2009–2025 Wargaming.net. 保留所有权利。"
+msgstr "©2009–2026 Wargaming.net. 保留所有权利。"
 
 msgid "counter/newCounter"
 msgstr "新的"
@@ -1614,9 +1614,6 @@ msgstr "坦克世界Plus专属坦克暂时无法使用"
 
 msgid "customization/title"
 msgstr "个性化"
-
-msgid "dateTime/dateMonth"
-msgstr "{monthName}{day}日"
 
 msgid "dateTime/fromToWithYear"
 msgstr "从{fromMonth}月{fromDay}日到{toMonth}月{toDay}日，{toYear}"
@@ -2752,7 +2749,7 @@ msgid "headerButtons/battle/menu/unit"
 msgstr "团队战模式"
 
 msgid "headerButtons/battle/modeInfo"
-msgstr "模式: {{mode}}"
+msgstr "{{mode}}"
 
 msgid "headerButtons/battle/types/battleRoyale"
 msgstr "钢铁猎手"
@@ -4238,19 +4235,16 @@ msgstr "?empty?"
 msgid "moduleInfo/additionalInfo"
 msgstr "火炮决定了炮弹的参数。"
 
-msgid "moduleInfo/autoReloadGunLabel"
+msgid "moduleInfo/autoLoaderGun"
 msgstr "自动装填炮"
 
-msgid "moduleInfo/autoReloadGunLabel/boost"
+msgid "moduleInfo/autoLoaderGunBoost"
 msgstr ""
 "改进型自动装填系统: \n"
 "缩短自动装填炮弹的标准时长。"
 
-msgid "moduleInfo/autoShootGunLabel"
+msgid "moduleInfo/autoShootGun"
 msgstr "具有连射系统的火炮"
-
-msgid "moduleInfo/clipGunLabel"
-msgstr "弹夹装填系统"
 
 msgid "moduleInfo/closeBtn"
 msgstr "关闭"
@@ -4276,26 +4270,35 @@ msgstr "坦克火炮适应单发炮弹:"
 msgid "moduleInfo/compatible/vehicles"
 msgstr "适用的坦克型号:"
 
-msgid "moduleInfo/damageMutableGunLabel"
+msgid "moduleInfo/damageMutable"
 msgstr "一门深膛线火炮，可射击星形弹托炮弹。"
 
-msgid "moduleInfo/dualAccuracyGunLabel"
+msgid "moduleInfo/dualAccuracy"
 msgstr "双重瞄准系统"
 
-msgid "moduleInfo/dualGunLabel"
+msgid "moduleInfo/dualGun"
 msgstr "双火炮系统"
 
-msgid "moduleInfo/hydraulicAutoSiegeChassisLabel"
-msgstr "液气悬挂装置: 坦克可以倾斜车体"
+msgid "moduleInfo/heatingZonesGun"
+msgstr "配备主动冷却系统的火炮"
 
-msgid "moduleInfo/hydraulicChassisLabel"
+msgid "moduleInfo/hydraulicChassis"
 msgstr "液气悬挂装置: 坦克可以在攻城和行驶模式之间切换"
 
-msgid "moduleInfo/hydraulicWheeledChassisLabel"
+msgid "moduleInfo/hydraulicWheeledChassis"
 msgstr "伸缩式液压传动装置: 坦克可以调整附加车轮的位置。"
+
+msgid "moduleInfo/hydroAutoSiegeChassis"
+msgstr "液气悬挂装置: 坦克可以倾斜车体"
+
+msgid "moduleInfo/magazineGun"
+msgstr "弹夹装填系统"
 
 msgid "moduleInfo/nonPiercingDamageLabel"
 msgstr "即使未击穿装甲也能造成些许损伤。"
+
+msgid "moduleInfo/overheatGun"
+msgstr "速射过热调节自动炮"
 
 msgid "moduleInfo/parametersClipGunLabel"
 msgstr "<img src='%s' vspace='-4'/> 火炮弹夹装填系统:"
@@ -4522,6 +4525,9 @@ msgstr "发动机功率(激活火箭助推器后)"
 msgid "moduleInfo/params/rotationSpeed"
 msgstr "旋转速度"
 
+msgid "moduleInfo/params/shellLoadingTime"
+msgstr "弹链装填时间"
+
 msgid "moduleInfo/params/shellReloadingTime"
 msgstr "短装填时间"
 
@@ -4558,21 +4564,24 @@ msgstr "发动机功率(涡轮)"
 msgid "moduleInfo/params/weight"
 msgstr "重量"
 
-msgid "moduleInfo/rocketAccelerationEngine"
+msgid "moduleInfo/rocketAcceleration"
 msgstr "火箭助推器可提升坦克的机动性"
+
+msgid "moduleInfo/stagedJetBoosters"
+msgstr "固体燃料助推器，可提高加速能力、机动性和操控性"
 
 msgid "moduleInfo/title"
 msgstr " "
 
-msgid "moduleInfo/trackWithinTrackChassisLabel"
-msgstr "应急履带：在主履带被击毁时，可以维持部分移动力。"
+msgid "moduleInfo/trackWithinTrack"
+msgstr "应急履带: 在主履带被击毁时，可以维持部分移动力。"
 
 msgid "moduleInfo/turboshaftEngine"
 msgstr ""
 "燃气涡轮发动机:\n"
 "允许坦克达到更高的速度。"
 
-msgid "moduleInfo/twinGunLabel"
+msgid "moduleInfo/twinGun"
 msgstr "可选射击模式系统"
 
 msgid "nation_tree/blueprint_title/china"
@@ -6175,6 +6184,12 @@ msgstr "持续时间"
 msgid "tank_params/continuousShotsPerMinute"
 msgstr "连射射速"
 
+msgid "tank_params/coolingDelay"
+msgstr "冷却延迟时间"
+
+msgid "tank_params/coolingTime"
+msgstr "完全升温火炮冷却时间"
+
 msgid "tank_params/damage"
 msgstr "标准炮弹损伤"
 
@@ -6277,6 +6292,9 @@ msgstr "充能过热前的时间"
 msgid "tank_params/heatTimeToReachLevel"
 msgstr "达到热量等级所需时间"
 
+msgid "tank_params/heatingPerShot"
+msgstr "单发射击产生的热量"
+
 msgid "tank_params/hullArmor"
 msgstr "车体装甲"
 
@@ -6351,6 +6369,9 @@ msgstr "毫米"
 
 msgid "tank_params/no_brackets/s"
 msgstr "秒"
+
+msgid "tank_params/overheatDuration"
+msgstr "过热火炮冷却时间"
 
 msgid "tank_params/p"
 msgstr "(马力)"
@@ -6484,6 +6505,9 @@ msgstr "辅助武器装填时间"
 msgid "tank_params/secondaryTotalBurstSize"
 msgstr "辅助武器炮弹"
 
+msgid "tank_params/shellLoadingTime"
+msgstr "弹链装填时间"
+
 msgid "tank_params/shortened/avgPiercingPower"
 msgstr "穿透力:"
 
@@ -6501,6 +6525,27 @@ msgstr "(发/分钟)"
 
 msgid "tank_params/sqm"
 msgstr "(m²)"
+
+msgid "tank_params/stagedJetBoostersChargeDuration"
+msgstr "助推器持续时间(秒)"
+
+msgid "tank_params/stagedJetBoostersChargesCount"
+msgstr "助推器可用次数"
+
+msgid "tank_params/stagedJetBoostersCooldownTime"
+msgstr "助推器冷却时间(秒)"
+
+msgid "tank_params/stagedJetBoostersEnginePower"
+msgstr "发动机功率(激活火箭助推器后)(马力)"
+
+msgid "tank_params/stagedJetBoostersRotationSpeed"
+msgstr "旋转速度(激活火箭助推器后)(度/秒)"
+
+msgid "tank_params/stagedJetBoostersSpeedLimits"
+msgstr "倒车速度(激活火箭助推器后)(千米/小时)"
+
+msgid "tank_params/stagedJetBoostersTopSpeed"
+msgstr "最大速度(激活火箭助推器后)(千米/小时)"
 
 msgid "tank_params/stationaryReloadSwitchOffTime"
 msgstr "中断装填"
@@ -6532,8 +6577,17 @@ msgstr "切换到攻城/行驶模式"
 msgid "tank_params/t"
 msgstr "(吨)"
 
+msgid "tank_params/temperatureAvgDamagePerMinute"
+msgstr "平均每分钟损伤"
+
+msgid "tank_params/temperatureReloadTime"
+msgstr "射速"
+
 msgid "tank_params/timeOfReaching"
 msgstr "行驶100米的时间"
+
+msgid "tank_params/timeToOverheat"
+msgstr "过热前的持续射击时间"
 
 msgid "tank_params/topSpeedWithBoosters"
 msgstr "最大速度(激活火箭助推器后)"
@@ -7161,6 +7215,12 @@ msgstr "切换到攻城模式(秒)"
 
 msgid "vehicleInfo/params/switchTime"
 msgstr "切换到攻城/行驶模式(秒)"
+
+msgid "vehicleInfo/params/temperatureAvgDamagePerMinute"
+msgstr "平均每分钟损伤"
+
+msgid "vehicleInfo/params/temperatureReloadTime"
+msgstr "射速(发/分钟)"
 
 msgid "vehicleInfo/params/turboshaftBurstFireRate"
 msgstr "短弹夹(涡轮)(秒/个/发)"

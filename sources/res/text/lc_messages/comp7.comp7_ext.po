@@ -267,6 +267,21 @@ msgstr "%(rank)s. %(division)s"
 msgid "battleResult/subTask/title/raise"
 msgstr "您已晋升至%(rank)s. %(division)s！"
 
+msgid "battlesIndicatorTooltip/day/heading"
+msgstr "参战场次(单日): %(battlesCount)s"
+
+msgid "battlesIndicatorTooltip/listHeading"
+msgstr "包括:"
+
+msgid "battlesIndicatorTooltip/season/heading"
+msgstr "参战场次(赛季): %(battlesCount)s"
+
+msgid "battlesIndicatorTooltip/soloBattlesCount"
+msgstr "单人/组队: %(soloBattlesCount)s"
+
+msgid "battlesIndicatorTooltip/superPlatoonBattlesCount"
+msgstr "超级小队: %(superPlatoonBattlesCount)s"
+
 msgid "calendarDay/serverName"
 msgstr "%(server)s"
 
@@ -327,6 +342,24 @@ msgstr "特长"
 msgid "crewMembersTooltip/subHeading"
 msgstr "天梯战: 巨龙赛年"
 
+msgid "damageIndicatorTooltip/damage/day/heading"
+msgstr "平均损伤(单日): %(averageDamageDealt)s"
+
+msgid "damageIndicatorTooltip/damage/description"
+msgstr "造成的总损伤与参战场次的比率。"
+
+msgid "damageIndicatorTooltip/damage/season/heading"
+msgstr "平均损伤(赛季): %(averageDamageDealt)s"
+
+msgid "damageIndicatorTooltip/damageRecord/day/heading"
+msgstr "每日损伤纪录: %(recordDamageDealt)s"
+
+msgid "damageIndicatorTooltip/damageRecord/description"
+msgstr "造成的最大损伤是在驾驶%(vehicleName)s的战斗中达成的"
+
+msgid "damageIndicatorTooltip/damageRecord/season/heading"
+msgstr "赛季损伤纪录: %(recordDamageDealt)s"
+
 msgid "dash"
 msgstr "—"
 
@@ -335,6 +368,33 @@ msgstr "我们对暂时的不便表示歉意。请稍后尝试更新该页面。
 
 msgid "dataError/title"
 msgstr "加载数据时出错"
+
+msgid "dayTooltip/day"
+msgstr "第%(index)s日"
+
+msgid "dayTooltip/dayNoBattles"
+msgstr "第%(index)s日: 未参加战斗。"
+
+msgid "dayTooltip/noBattles"
+msgstr "汝欲和平，必先备战"
+
+msgid "dayTooltip/rankInactivity"
+msgstr "评级不活跃: %(penalty)s"
+
+msgid "dayTooltip/rankInactivityPenalty"
+msgid_plural "dayTooltip/rankInactivityPenalty"
+msgstr[0] "%(pointsCount)s评级点数"
+msgstr[1] "%(pointsCount)s评级点数"
+msgstr[2] "%(pointsCount)s评级点数"
+
+msgid "dayTooltip/ratingDiff"
+msgstr "评级点数变化: %(diff)s"
+
+msgid "dayTooltip/today"
+msgstr "第%(index)s日(今日)"
+
+msgid "dayTooltip/todayNoBattles"
+msgstr "第%(index)s日: 今日未参加战斗。"
 
 msgid "division/A"
 msgstr "A"
@@ -648,6 +708,24 @@ msgstr "等待玩家..."
 msgid "prebattleTimer/wait/selectVehicle"
 msgstr "选择坦克"
 
+msgid "prestigeIndicatorTooltip/prestige/day/heading"
+msgstr "平均声望点数(单日): %(averagePrestige)s"
+
+msgid "prestigeIndicatorTooltip/prestige/description"
+msgstr "总声望点数与参战场次的比率。"
+
+msgid "prestigeIndicatorTooltip/prestige/season/heading"
+msgstr "平均声望点数(赛季): %(averagePrestige)s"
+
+msgid "prestigeIndicatorTooltip/prestigeRecord/day/heading"
+msgstr "每日声望点数纪录: %(recordPrestige)s"
+
+msgid "prestigeIndicatorTooltip/prestigeRecord/description"
+msgstr "获得的最大声望点数是在驾驶%(vehicleName)s的战斗中达成的"
+
+msgid "prestigeIndicatorTooltip/prestigeRecord/season/heading"
+msgstr "赛季声望点数纪录: %(recordPrestige)s"
+
 msgid "primeTimeView/status/seasonDisabled/first"
 msgstr "%(server)s服务器上的苍蓝巨龙赛季已结束。"
 
@@ -725,6 +803,178 @@ msgstr "可在仓库中进行恢复"
 msgid "products/style3d"
 msgstr "%(name)s3D风格"
 
+msgid "progressionPage/chartHeader/backToGeneral"
+msgstr "返回赛季战绩统计"
+
+msgid "progressionPage/chartHeader/general"
+msgstr "赛季战绩统计"
+
+msgid "progressionPage/chartHeader/statisticDay"
+msgstr "第%(day)s日战绩统计"
+
+msgid "progressionPage/chartHeader/todayStatistic"
+msgstr "今日战绩统计"
+
+msgid "progressionPage/chartHeader/tooltip/info"
+msgstr "每列显示所选日期黄金时间至次日黄金时间期间的数据。某些情况下可能包含两个自然日的战斗数据。"
+
+msgid "progressionPage/chartHeader/tooltip/todayInfo"
+msgstr "每列显示所选日期黄金时间至次日黄金时间期间的数据。某些情况下可能包含两个自然日的战斗数据。"
+
+msgid "progressionPage/chartHeader/tooltip/update"
+msgstr "该版块仅在有新数据时更新。您可通过点击\"刷新\"按钮来请求更新。"
+
+msgid "progressionPage/chartHeader/update"
+msgstr "已更新: %(time)s%(info)s"
+
+msgid "progressionPage/customization/completed"
+msgstr "恭喜!"
+
+msgid "progressionPage/customization/completedDescription"
+msgstr "您已完成所有2D风格任务。"
+
+msgid "progressionPage/customization/counter"
+msgstr "%(currentProgress)s/%(maxProgress)s"
+
+msgid "progressionPage/customization/headingTooltip"
+msgstr "一系列任务，完成即可解锁当前赛季渐变2D风格的全新元素。"
+
+msgid "progressionPage/customization/tasks"
+msgid_plural "progressionPage/customization/tasks"
+msgstr[0] "2D风格任务: %(taskNumber)s"
+msgstr[1] "2D风格任务: %(taskNumber)s"
+msgstr[2] "2D风格任务: %(taskNumber)s"
+
+msgid "progressionPage/customization/tasksDone"
+msgstr "2D风格任务"
+
+msgid "progressionPage/customization/toStyle"
+msgstr "前往风格"
+
+msgid "progressionPage/error/noStylesForVehicle"
+msgstr "所有风格当前已应用于不可使用的坦克"
+
+msgid "progressionPage/error/noVehiclesForStyle"
+msgstr "无可应用风格的坦克"
+
+msgid "progressionPage/error/refresh"
+msgstr "刷新"
+
+msgid "progressionPage/error/refreshing"
+msgstr "正在刷新..."
+
+msgid "progressionPage/statistic/averageDamage"
+msgstr "平均损伤"
+
+msgid "progressionPage/statistic/averagePrestigePoints"
+msgstr "平均声望点数"
+
+msgid "progressionPage/statistic/dayRecordDescription"
+msgstr "评级变化: %(diff)s"
+
+msgid "progressionPage/statistic/seasonRecordDescription"
+msgstr "纪录创立于%(seasonRecordDescriptionDay)s"
+
+msgid "progressionPage/statistic/seasonRecordDescriptionDay"
+msgstr "第%(day)s日"
+
+msgid "progressionPage/toAllStatistic"
+msgstr "前往全部战绩统计"
+
+msgid "progressionPage/tooltips/body/assist"
+msgstr ""
+"包含:\n"
+" • 由您点亮造成的损伤(包括在能力帮助下造成的损伤)\n"
+" • 由您击毁敌方坦克履带使其无法移动造成的损伤(包括在能力帮助下造成的损伤)\n"
+" • 盟友在您使用的能力帮助下造成的损伤\n"
+" • 盟友对受到弹震的敌方坦克造成的损伤(包括在您使用的能力帮助下造成的弹震)"
+
+msgid "progressionPage/tooltips/body/battles"
+msgstr "总战斗场次"
+
+msgid "progressionPage/tooltips/body/damage"
+msgstr "造成的总损伤与战斗场次的比率"
+
+msgid "progressionPage/tooltips/body/destruction"
+msgstr "击毁的敌方坦克数量与玩家坦克被击毁次数的比率"
+
+msgid "progressionPage/tooltips/body/maxFrags"
+msgstr "造成的损伤与受到的损伤的比率"
+
+msgid "progressionPage/tooltips/body/prestigePoints"
+msgstr "总声望点数与参战场次的比率"
+
+msgid "progressionPage/tooltips/body/vehicles"
+msgstr "参战场次最多的坦克"
+
+msgid "progressionPage/tooltips/body/winSeries"
+msgstr "总胜率"
+
+msgid "progressionPage/tooltips/header/assist"
+msgstr "由您协助造成的平均损伤"
+
+msgid "progressionPage/tooltips/header/battles"
+msgstr "战斗场次"
+
+msgid "progressionPage/tooltips/header/damage"
+msgstr "造成的平均损伤"
+
+msgid "progressionPage/tooltips/header/destruction"
+msgstr "战损比"
+
+msgid "progressionPage/tooltips/header/maxFrags"
+msgstr "损伤率"
+
+msgid "progressionPage/tooltips/header/prestigePoints"
+msgstr "每场战斗获得的平均声望点数"
+
+msgid "progressionPage/tooltips/header/vehicles"
+msgstr "坦克名称"
+
+msgid "progressionPage/tooltips/header/winSeries"
+msgstr "胜率"
+
+msgid "progressionPage/vehicleStatistic"
+msgstr "坦克战绩统计"
+
+msgid "progressionTableTooltip/pointsFrom"
+msgstr "%(from)s+"
+
+msgid "progressionTableTooltip/pointsRange"
+msgstr "%(from)s-%(to)s"
+
+msgid "progressionTableTooltip/rankInactivity/daysLeft"
+msgstr "距离评级下降的天数: {eeede9e6_Open}%(rankInactivityCount)s{eeede9e6_Close}"
+
+msgid "progressionTableTooltip/rankInactivity/description/active"
+msgid_plural ""
+"plural/progressionTableTooltip/rankInactivity/description/active"
+msgstr[0] "在天梯战模式中不参加战斗会失去{eeede9e6_Open}%(count)s{eeede9e6_Close}评级点数。"
+msgstr[1] "在天梯战模式中不参加战斗会失去{eeede9e6_Open}%(count)s{eeede9e6_Close}评级点数。"
+msgstr[2] "在天梯战模式中不参加战斗会失去{eeede9e6_Open}%(count)s{eeede9e6_Close}评级点数。"
+
+msgid "progressionTableTooltip/rankInactivity/description/formula"
+msgid_plural ""
+"plural/progressionTableTooltip/rankInactivity/description/formula"
+msgstr[0] "(1场战斗={white_Open}%(count)s{white_Close}活跃点数)"
+msgstr[1] "(1场战斗={white_Open}%(count)s{white_Close}活跃点数)"
+msgstr[2] "(1场战斗={white_Open}%(count)s{white_Close}活跃点数)"
+
+msgid "progressionTableTooltip/rankInactivity/description/notActive"
+msgstr "处于当前段位时，不参加该模式的战斗，不会失去评级点数，但达到以下段位后可能会失去点数: %(rankList)s"
+
+msgid "progressionTableTooltip/rankInactivity/header/active"
+msgstr "您的段位会受到不活跃的影响"
+
+msgid "progressionTableTooltip/rankInactivity/header/notActive"
+msgstr "您的段位不会受到不活跃的影响"
+
+msgid "progressionTableTooltip/table/heading/rank"
+msgstr "段位"
+
+msgid "progressionTableTooltip/topRank"
+msgstr "名列排行榜前%(topPercentage)s%的玩家"
+
 msgid "progressionTooltip/division"
 msgstr "梯队%(divisionName)s"
 
@@ -756,7 +1006,7 @@ msgstr[1] "在天梯战模式中不参加战斗会失去{eeede9e6_Open}%(count)s
 msgstr[2] "在天梯战模式中不参加战斗会失去{eeede9e6_Open}%(count)s{eeede9e6_Close}评级点数。"
 
 msgid "progressionTooltip/rankInactivity/header/active"
-msgstr "您的评级会受到评级不活跃的影响。"
+msgstr "%(icon)s您的评级会受到评级不活跃的影响。"
 
 msgid "progressionTooltip/rankInactivity/warning"
 msgstr "在今天结束前参加战斗以保持您的段位。"
@@ -900,6 +1150,27 @@ msgstr "评级不活跃"
 msgid "rankInactivityTooltip/timeLeft"
 msgstr "距您的评级下降的天数：%(count)s"
 
+msgid "rankIndicatorTooltip/day/ratingDescription"
+msgstr "每日评级"
+
+msgid "rankIndicatorTooltip/day/ratingDiff"
+msgstr "评级点数变化: %(diff)s"
+
+msgid "rankIndicatorTooltip/day/ratingDiffDescription"
+msgstr "所选日期与前一日之间的评级点数差异。"
+
+msgid "rankIndicatorTooltip/day/ratingRecord"
+msgstr "每日评级纪录: %(maxAchievedRatingPoints)s"
+
+msgid "rankIndicatorTooltip/day/ratingRecordDescription"
+msgstr "在所选日期达到最高评级。"
+
+msgid "rankIndicatorTooltip/season/dayOfRecord"
+msgstr "第%(day)s日"
+
+msgid "rankIndicatorTooltip/season/ratingDescription"
+msgstr "赛季评级纪录创立于%(dayOfRecord)s"
+
 msgid "rankInfo/current/fifth"
 msgstr "拥有至少{eeede9e6_Open}%(fromScore){eeede9e6_Close}评级点数的玩家将被授予勇士段位。"
 
@@ -924,37 +1195,6 @@ msgstr ""
 "您需要在评级点数排行榜上排名{eeede9e6_Open}前%(topPercentage)%{eeede9e6_Close}才能保持传说段位。传说段位末位玩家的评级点数:"
 " {eeede9e6_Open}%(pointsCount){eeede9e6_Close}"
 
-msgid "rankItemStatus/future/description/fifth"
-msgstr "拥有至少{eeede9e6_Open}%(fromScore){eeede9e6_Close}评级点数的玩家将被授予勇士段位。"
-
-msgid "rankItemStatus/future/description/first"
-msgstr ""
-"拥有{eeede9e6_Open}%(fromScore)至%(toScore){eeede9e6_Close}评级点数的玩家将被授予黑铁段位。"
-
-msgid "rankItemStatus/future/description/fourth"
-msgstr ""
-"拥有{eeede9e6_Open}%(fromScore)至%(toScore){eeede9e6_Close}评级点数的玩家将被授予黄金段位。"
-
-msgid "rankItemStatus/future/description/second"
-msgstr ""
-"拥有{eeede9e6_Open}%(fromScore)至%(toScore){eeede9e6_Close}评级点数的玩家将被授予青铜段位。"
-
-msgid "rankItemStatus/future/description/sixth"
-msgstr ""
-"您需要在评级点数排行榜上排名{eeede9e6_Open}前%(topPercentage)%{eeede9e6_Close}才能达到传说段位。"
-
-msgid "rankItemStatus/future/description/third"
-msgstr ""
-"拥有{eeede9e6_Open}%(fromScore)至%(toScore){eeede9e6_Close}评级点数的玩家将被授予白银段位。"
-
-msgid "rankItemStatus/future/extendedDescription/sixth"
-msgstr ""
-"您需要在评级点数排行榜上排名{eeede9e6_Open}前%(topPercentage)%{eeede9e6_Close}才能达到传说段位。传说段位末位玩家所获的评级点数:"
-" {eeede9e6_Open}%(pointsCount){eeede9e6_Close}"
-
-msgid "rankItemStatus/previous/description/fifth"
-msgstr "拥有至少{eeede9e6_Open}%(fromScore){eeede9e6_Close}评级点数的玩家将被授予勇士段位。"
-
 msgid "rankUpper/fifth"
 msgstr "勇士"
 
@@ -976,9 +1216,6 @@ msgstr "%(rank)s段位"
 msgid "rankUpper/third"
 msgstr "白银"
 
-msgid "ratingScore/title"
-msgstr "评级点数"
-
 msgid "rewardSelection/tooltip/selectableRewardList/deluxe"
 msgstr ""
 "您可从下方列表中的改进型配件中选择其一:\n"
@@ -993,7 +1230,9 @@ msgstr ""
 "• 改进型装填系统\n"
 "• 通风系统\n"
 "• 耐磨型炮控系统\n"
-"• 稳定设备系统"
+"• 稳定设备系统\n"
+"• 伸缩式观测系统\n"
+"• 战术伪装网"
 
 msgid "rewardSelection/tooltip/selectableRewardList/modernized_devices_t3"
 msgstr ""
@@ -1017,7 +1256,7 @@ msgid "rewards/subtitle/customizations"
 msgstr "{b2afab_Open}适用于%(vehicleLevel)s级坦克{b2afab_Close}"
 
 msgid "rewards/subtitle/styleProgress"
-msgstr "{b2afab_Open}适用于\"威龙称霸(苍蓝)\"风格{b2afab_Close}"
+msgstr "{b2afab_Open}适用于\"威龙称霸(绯红)\"风格{b2afab_Close}"
 
 msgid "rewards/subtitle/vehicles_rent"
 msgstr "%(vehicleLevel)s级"
@@ -1501,14 +1740,180 @@ msgstr "关于天梯战"
 msgid "tooltip/whatsNewButton/header"
 msgstr "赛季更新"
 
+msgid "tournament/LBFinals"
+msgstr "败者组决赛"
+
+msgid "tournament/LBRound1"
+msgstr "败者组第1轮"
+
+msgid "tournament/LBRound2"
+msgstr "败者组第2轮"
+
+msgid "tournament/LBSemifinals"
+msgstr "败者组半决赛"
+
+msgid "tournament/UBFinals"
+msgstr "胜者组决赛"
+
+msgid "tournament/UBSemifinals"
+msgstr "胜者组半决赛"
+
 msgid "tournament/battleResult/personal/tooltip/descr"
 msgstr "在赛事中不会获取或失去评级点数。"
 
-msgid "tournamentsEntryPointTooltip/description"
+msgid "tournament/bestOf"
+msgstr "%(number)s局决胜制"
+
+msgid "tournament/cny"
+msgstr "%(amount)sCNY"
+
+msgid "tournament/cnySign"
+msgstr "%(amount)sCNY"
+
+msgid "tournament/comeBack"
+msgstr "请稍后再试"
+
+msgid "tournament/comingSoon"
+msgstr "近期赛程 %(addition)s"
+
+msgid "tournament/comingSoonAddition"
+msgstr "具体时间以实际比赛进程为准"
+
+msgid "tournament/completed"
+msgstr "已结束"
+
+msgid "tournament/douyin"
+msgstr "在抖音上观看"
+
+msgid "tournament/drops/huya"
+msgstr ""
+"在虎牙上观看，同时获取专属\n"
+"虎牙掉宝奖励！"
+
+msgid "tournament/drops/twitch"
+msgstr ""
+"在Twitch上观看，同时获取专属\n"
+"Twitch掉宝奖励！"
+
+msgid "tournament/dropsShort/huya"
+msgstr "同时获取专属虎牙掉宝奖励！"
+
+msgid "tournament/dropsShort/twitch"
+msgstr "同时获取专属Twitch掉宝奖励！"
+
+msgid "tournament/error"
+msgstr "加载数据时出错"
+
+msgid "tournament/eur"
+msgstr "%(amount)sEUR"
+
+msgid "tournament/euroSign"
+msgstr "%(amount)sEUR"
+
+msgid "tournament/finalResult"
+msgstr "胜者"
+
+msgid "tournament/fundDistribution"
+msgstr "奖金池分配"
+
+msgid "tournament/grandFinals"
+msgstr "总决赛"
+
+msgid "tournament/huya"
+msgstr "在虎牙上观看"
+
+msgid "tournament/noMatches"
+msgstr "暂无赛程安排"
+
+msgid "tournament/ols/roundRobin"
+msgstr "%(phase)s阶段第%(round)s轮"
+
+msgid "tournament/placement"
+msgstr "%(firstPlace)s - %(secondPlace)s"
+
+msgid "tournament/prize"
+msgstr "奖金池%(addition)s"
+
+msgid "tournament/prizeAddition"
+msgstr "及赢得永恒荣耀的机会"
+
+msgid "tournament/refresh"
+msgstr "刷新"
+
+msgid "tournament/refreshing"
+msgstr "正在刷新..."
+
+msgid "tournament/roundOf"
+msgstr "第%(number)s轮"
+
+msgid "tournament/separator"
+msgstr "或"
+
+msgid "tournament/tab/overview"
+msgstr "概览"
+
+msgid "tournament/tab/schedule"
+msgstr "赛程"
+
+msgid "tournament/teamPlaceholder"
+msgstr "TBD"
+
+msgid "tournament/toShop"
+msgstr "前往购买"
+
+msgid "tournament/tokenStore/button/ols"
+msgstr "前往军械库"
+
+msgid "tournament/tokenStore/ols"
+msgstr "OLS令牌商店"
+
+msgid "tournament/tooltip/infoPageButton/header"
+msgstr "关于赛事"
+
+msgid "tournament/twitch"
+msgstr "在Twitch上观看"
+
+msgid "tournament/viewFull"
+msgstr "查看全部"
+
+msgid "tournament/visitShop/description/ols"
+msgstr "如果所选战队成功夺冠，您将获得独特的\"2026冬季OLS\"奖章。为心仪的战队加油助威！"
+
+msgid "tournament/visitShop/description/wci"
+msgstr "入手专属主题个性化元素与独特坦克，展现您的电竞精神！"
+
+msgid "tournament/visitShop/heading/ols"
+msgstr "预言大师礼包"
+
+msgid "tournament/visitShop/heading/wci"
+msgstr "WCI礼包"
+
+msgid "tournament/vsBestOf"
+msgstr ""
+"VS\n"
+"%(number)s局决胜制"
+
+msgid "tournament/wci/roundRobin"
+msgstr "小组赛"
+
+msgid "tournament/winner"
+msgstr "胜者"
+
+msgid "tournament/youtube"
+msgstr "在Youtube上观看"
+
+msgid "tournamentsEntryPointTooltip/description/ols"
+msgstr ""
+"欧洲顶尖战队正为天梯传奇联赛冠军头衔激战！观看激动人心的7对7天梯战赛事，获取Twitch掉宝奖励，并通过购买专属个性化礼包来增加奖金池，支持您最喜爱的战队。"
+
+msgid "tournamentsEntryPointTooltip/description/wci"
 msgstr ""
 "坦克世界国际冠军赛(WCI)将在中国苏州举行，一场史诗般的对决即将展开。届时，来自全球各地的顶尖战队将在此一决高下，争夺国际冠军的荣誉称号。见证传奇在战场上诞生的荣耀时刻！"
 
-msgid "tournamentsEntryPointTooltip/heading"
+msgid "tournamentsEntryPointTooltip/heading/ols"
+msgstr "OLS赛季5"
+
+msgid "tournamentsEntryPointTooltip/heading/wci"
 msgstr "2025WCI"
 
 msgid "tournamentsEntryPointTooltip/live"
@@ -1534,144 +1939,6 @@ msgstr "加入语音聊天"
 
 msgid "waitingSpinner/message"
 msgstr "加载内容中..."
-
-msgid "wci/LBFinals"
-msgstr "败者组决赛"
-
-msgid "wci/LBRound1"
-msgstr "败者组第1轮"
-
-msgid "wci/LBRound2"
-msgstr "败者组第2轮"
-
-msgid "wci/LBSemifinals"
-msgstr "败者组半决赛"
-
-msgid "wci/UBFinals"
-msgstr "胜者组决赛"
-
-msgid "wci/UBSemifinals"
-msgstr "胜者组半决赛"
-
-msgid "wci/bestOf"
-msgstr "%(number)s局决胜制"
-
-msgid "wci/cny"
-msgstr "%(amount)sCNY"
-
-msgid "wci/cnySign"
-msgstr "%(amount)sCNY"
-
-msgid "wci/comeBack"
-msgstr "请稍后再试"
-
-msgid "wci/comingSoon"
-msgstr "近期赛程 %(addition)s"
-
-msgid "wci/comingSoonAddition"
-msgstr "具体时间以实际比赛进程为准"
-
-msgid "wci/completed"
-msgstr "已结束"
-
-msgid "wci/douyin"
-msgstr "在抖音上观看"
-
-msgid "wci/drops/huya"
-msgstr ""
-"在虎牙上观看，同时获取专属\n"
-"虎牙掉宝奖励！"
-
-msgid "wci/drops/twitch"
-msgstr ""
-"在Twitch上观看，同时获取专属\n"
-"Twitch掉宝奖励！"
-
-msgid "wci/dropsShort/huya"
-msgstr "同时获取专属虎牙掉宝奖励！"
-
-msgid "wci/dropsShort/twitch"
-msgstr "同时获取专属Twitch掉宝奖励！"
-
-msgid "wci/error"
-msgstr "加载数据时出错"
-
-msgid "wci/finalResult"
-msgstr "胜者"
-
-msgid "wci/fundDistribution"
-msgstr "奖金池分配"
-
-msgid "wci/grandFinals"
-msgstr "总决赛"
-
-msgid "wci/huya"
-msgstr "在虎牙上观看"
-
-msgid "wci/noMatches"
-msgstr "暂无赛程安排"
-
-msgid "wci/placement"
-msgstr "%(firstPlace)s - %(secondPlace)s"
-
-msgid "wci/prize"
-msgstr "奖金池%(addition)s"
-
-msgid "wci/prizeAddition"
-msgstr "及赢得永恒荣耀的机会"
-
-msgid "wci/refresh"
-msgstr "刷新"
-
-msgid "wci/refreshing"
-msgstr "正在刷新..."
-
-msgid "wci/roundOf"
-msgstr "第%(number)s轮"
-
-msgid "wci/roundRobin"
-msgstr "小组赛"
-
-msgid "wci/separator"
-msgstr "或"
-
-msgid "wci/tab/overview"
-msgstr "概览"
-
-msgid "wci/tab/schedule"
-msgstr "赛程"
-
-msgid "wci/teamPlaceholder"
-msgstr "TBD"
-
-msgid "wci/toShop"
-msgstr "前往购买"
-
-msgid "wci/tooltip/infoPageButton/header"
-msgstr "关于赛事"
-
-msgid "wci/twitch"
-msgstr "在Twitch上观看"
-
-msgid "wci/viewFull"
-msgstr "查看全部"
-
-msgid "wci/visitShop/description"
-msgstr "入手专属主题个性化元素与独特坦克，展现您的电竞精神！"
-
-msgid "wci/visitShop/heading"
-msgstr "WCI礼包"
-
-msgid "wci/vsBestOf"
-msgstr ""
-"VS\n"
-"%(number)s局决胜制"
-
-msgid "wci/winner"
-msgstr "胜者"
-
-msgid "wci/youtube"
-msgstr "在Youtube上观看"
 
 msgid "weeklyQuestWidgetTooltip/completed"
 msgstr "已完成天梯战任务"
@@ -1768,33 +2035,58 @@ msgid "whatsNewButtonLabel"
 msgstr "赛季更新"
 
 msgid "whatsNewView/banner/title/large"
-msgstr "苍蓝巨龙赛季"
+msgstr "绯红巨龙赛季"
 
 msgid "whatsNewView/banner/title/small"
 msgstr "天梯战有什么新内容？"
 
 msgid "whatsNewView/button/ok"
-msgstr "龙焰喷射！"
+msgstr "历史由您铸就！"
+
+msgid "whatsNewView/comms/description"
+msgstr ""
+"通讯中心重新占领等待时间由{eeede9e6_Open}90{eeede9e6_Close}秒缩短至{eeede9e6_Open}75{eeede9e6_Close}秒。"
+
+msgid "whatsNewView/comms/heading"
+msgstr "通讯中心"
 
 msgid "whatsNewView/intro/description"
-msgstr ""
-"参与全部3个赛季的征战，即可获取珍贵年度奖励，包括: "
-"专属的X级重型坦克灰烬使者，它附带已解锁的全部独特3D风格和无畏乘员，同时还有自选改进型和试验型配件、引人注目的2D风格等好物。在整个赛年中表现越好，获得的专属3D风格就越独特。"
+msgstr "追踪您整个赛季的评级历程，根据最佳坦克的表现调整玩法风格，同时访问经过更新的主页，查看您即将获得的个性化元素！"
 
 msgid "whatsNewView/intro/heading"
-msgstr "欢迎来到巨龙赛年！"
+msgstr "详细战绩统计现已推出！%(tag)s"
 
 msgid "whatsNewView/mapChanges/heading"
 msgstr "地图"
 
 msgid "whatsNewView/newVehicles"
-msgstr "天梯战中开放的新坦克"
+msgid_plural "plural/whatsNewView/newVehicles"
+msgstr[0] ""
+"现在可通过天梯战获取\n"
+"新坦克&nbsp;%(tag)s"
+msgstr[1] ""
+"现在可通过天梯战获取\n"
+"新坦克&nbsp;%(tag)s"
+msgstr[2] ""
+"现在可通过天梯战获取\n"
+"新坦克&nbsp;%(tag)s"
+
+msgid "whatsNewView/shopUpdates/description"
+msgstr ""
+"全新IX级轻型坦克{eeede9e6_Open}LTC II{eeede9e6_Close}现已上架天梯战商店，同时还有2种改进型配件: "
+"{eeede9e6_Open}伸缩式{eeede9e6_Close}{eeede9e6_Open}观测{eeede9e6_Close}{eeede9e6_Open}系统{eeede9e6_Close}和{eeede9e6_Open}战术{eeede9e6_Close}{eeede9e6_Open}伪装{eeede9e6_Close}{eeede9e6_Open}网{eeede9e6_Close}。改进型旋转驱动已从天梯战商店中移除，将在下次更新后上架军械库。"
+
+msgid "whatsNewView/shopUpdates/heading"
+msgstr "战争债券商品更新"
 
 msgid "whatsNewView/stamp/removed"
 msgstr "已排除"
 
 msgid "whatsNewView/stamp/underDevelopment"
 msgstr "++正在重新开发中++"
+
+msgid "whatsNewView/tag/attention"
+msgstr "注意"
 
 msgid "whatsNewView/tag/changed"
 msgstr "已更改"
@@ -1811,11 +2103,37 @@ msgstr "已重制"
 msgid "whatsNewView/tag/seasonUpdate"
 msgstr "赛季更新"
 
+msgid "whatsNewView/unavailable/description"
+msgstr "M系X级中型坦克{eeede9e6_Open}Ares 90{eeede9e6_Close}在该模式中暂不可用。"
+
+msgid "whatsNewView/unavailable/heading"
+msgstr "暂不可用"
+
 msgid "whatsNewView/vehiclesForRent/heading"
 msgstr "租用坦克"
 
 msgid "whatsNewView/watchVideo"
 msgstr "观看视频"
+
+msgid "winsIndicatorTooltip/day/heading"
+msgstr "胜率(单日): %(winRate)s"
+
+msgid "winsIndicatorTooltip/defeats"
+msgstr "失败: %(count)s"
+
+msgid "winsIndicatorTooltip/draws"
+msgstr "平局: %(count)s"
+
+msgid "winsIndicatorTooltip/season/heading"
+msgstr "胜率(赛季): %(winRate)s"
+
+msgid "winsIndicatorTooltip/winRate/description"
+msgstr ""
+"总胜场与参战场次的比率。\n"
+"战斗结果统计:"
+
+msgid "winsIndicatorTooltip/wins"
+msgstr "胜利: %(count)s"
 
 msgid "yearlyRewards/banner/default"
 msgstr "奖励在第3赛季结束时发放。"

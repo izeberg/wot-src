@@ -125,6 +125,9 @@ msgstr "拥有45吨主战坦克(%(level)s级)"
 msgid "description/It21_Lion"
 msgstr "拥有CC&nbsp;\"狮\"(%(level)s级)"
 
+msgid "description/J51_Ashigaru"
+msgstr "拥有足轻(%(level)s级)"
+
 msgid "description/Pl15_60TP_Lewandowskiego_CFE_A"
 msgstr "拥有灰烬使者(%(level)s级)"
 
@@ -187,6 +190,9 @@ msgstr "研发C系BZ-75(%(level)s级)重型坦克研发分支中的所有坦克"
 
 msgid "description/branch_china_Ch67_BZ_79"
 msgstr "研发C系BZ-79(%(level)s级)重型坦克研发分支中的所有坦克"
+
+msgid "description/branch_china_Ch70_PTZ_78"
+msgstr "研发C系PTZ-78(%(level)s级)自行反坦克炮研发分支中的所有坦克"
 
 msgid "description/branch_czech_Cz04_T50_51"
 msgstr "研发J系TVP&nbsp;T50(%(level)s级)中型坦克研发分支中的所有坦克"
@@ -284,6 +290,9 @@ msgstr "研发R系五式3型炮战车(%(level)s级)自行反坦克炮研发分�
 msgid "description/branch_japan_J40_Type_71"
 msgstr "研发R系试验型重战车(%(level)s级)重型坦克研发分支中的所有坦克"
 
+msgid "description/branch_japan_J52_STK_2"
+msgstr "研发R系STK-2(%(level)s级)重型坦克研发分支中的所有坦克"
+
 msgid "description/branch_poland_Pl15_60TP_Lewandowskiego"
 msgstr "研发B系60TP&nbsp;L(%(level)s级)重型坦克研发分支中的所有坦克"
 
@@ -352,6 +361,9 @@ msgstr "研发M系T803(%(level)s级)重型坦克研发分支中的所有坦克"
 
 msgid "description/branch_usa_A183_XM69_Hacker"
 msgstr "研发M系XM69&nbsp;\"开拓者\"(%(level)s级)中型坦克研发分支中的所有坦克"
+
+msgid "description/branch_usa_A191_Ares_90_C"
+msgstr "研发M系Ares 90 C(%(level)s级)中型坦克研发分支中的所有坦克"
 
 msgid "description/branch_usa_A38_T92"
 msgstr "研发M系T92(%(level)s级)自行火炮研发分支中的所有坦克"
@@ -668,6 +680,18 @@ msgstr "T803"
 msgid "name/A183_XM69_Hacker"
 msgstr "XM69&nbsp;\"开拓者\""
 
+msgid "name/A187_Ares_75"
+msgstr "Ares 75"
+
+msgid "name/A189_Ares_90"
+msgstr "Ares 90"
+
+msgid "name/A190_Ares_85"
+msgstr "Ares 85"
+
+msgid "name/A191_Ares_90_C"
+msgstr "Ares 90 C"
+
 msgid "name/A31_M36_Slagger"
 msgstr "M36 \"杰克逊\""
 
@@ -823,6 +847,9 @@ msgstr "116-F3"
 
 msgid "name/Ch67_BZ_79"
 msgstr "BZ-79"
+
+msgid "name/Ch70_PTZ_78"
+msgstr "PTZ-78"
 
 msgid "name/Cz02_TVP_T50"
 msgstr "斯柯达&nbsp;T50"
@@ -1400,6 +1427,12 @@ msgstr "七式重战"
 msgid "name/J44_Type_3_Ju_Nu"
 msgstr "十式重战"
 
+msgid "name/J51_Ashigaru"
+msgstr "足轻"
+
+msgid "name/J52_STK_2"
+msgstr "STK-2"
+
 msgid "name/Pl05_50TP_Tyszkiewicza"
 msgstr "50TP T"
 
@@ -1709,6 +1742,9 @@ msgstr "C系: BZ-75"
 msgid "name/branch_china_Ch67_BZ_79"
 msgstr "C系: BZ-79"
 
+msgid "name/branch_china_Ch70_PTZ_78"
+msgstr "C系: PTZ-78"
+
 msgid "name/branch_czech_Cz04_T50_51"
 msgstr "J系:&nbsp;TVP&nbsp;T50"
 
@@ -1805,6 +1841,9 @@ msgstr "R系:&nbsp;五式3型炮战车"
 msgid "name/branch_japan_J40_Type_71"
 msgstr "R系:&nbsp;试验型重战车"
 
+msgid "name/branch_japan_J52_STK_2"
+msgstr "R系: STK-2"
+
 msgid "name/branch_poland_Pl15_60TP_Lewandowskiego"
 msgstr "B系: 60TP L"
 
@@ -1873,6 +1912,9 @@ msgstr "M系: T803"
 
 msgid "name/branch_usa_A183_XM69_Hacker"
 msgstr "M系: XM69&nbsp;\"开拓者\""
+
+msgid "name/branch_usa_A191_Ares_90_C"
+msgstr "M系: Ares 90 C"
 
 msgid "name/branch_usa_A38_T92"
 msgstr "M系:&nbsp;T92"

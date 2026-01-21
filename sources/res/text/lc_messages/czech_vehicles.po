@@ -190,6 +190,9 @@ msgstr "Vz.62 J"
 msgid "Chassis_Cz40_DBV_152"
 msgstr "DBV-152"
 
+msgid "Chassis_Cz43_Ogar"
+msgstr "\"猎犬\""
+
 msgid "Cz01_Skoda_T40"
 msgstr "斯柯达 T40"
 
@@ -735,6 +738,26 @@ msgstr "DBV-152"
 msgid "Cz40_DBV_152_short_special"
 msgstr "不俗的平均单发损伤，良好的机动性"
 
+msgid "Cz43_Ogar"
+msgstr "ZTS Vz.63-1 \"猎犬\""
+
+msgid "Cz43_Ogar_descr"
+msgstr ""
+"20世纪60年代中期，J系陆军计划获取S系T-55中型坦克的生产许可。与此同时，他们也在考虑另一个方案——具有类似技术参数的自主开发坦克。至1964年，他们已完成代号为ZTS"
+" Vz.63-1 "
+"\"猎犬\"的坦克概念设计，融合了S系和J系坦克制造学派的最佳解决方案。但综合评估表明，沿用S系技术授权生产T-55的成本远低于新建本土坦克生产线。军方最终放弃原型车制造计划，所有设计资料均被封存归档。"
+
+msgid "Cz43_Ogar_long_special"
+msgstr ""
+"ZTS Vz.63-1 "
+"\"猎犬\"是一辆J系IX级中型坦克。它配备燃气轮机，使本已良好的机动性变得卓越。其装甲算不上非常可靠，但有时也给予玩家一定的容错率。该坦克还配备一门性能均衡的火炮，火力相当强劲。"
+
+msgid "Cz43_Ogar_short"
+msgstr "\"猎犬\""
+
+msgid "Cz43_Ogar_short_special"
+msgstr "燃气轮机，优秀的火炮手感"
+
 msgid "DG_TK_61"
 msgstr "DG-TK-61"
 
@@ -788,6 +811,9 @@ msgstr "9R"
 
 msgid "Radiostanice_9RM"
 msgstr "9RM"
+
+msgid "Radiostanice_9RMO"
+msgstr "9RMO"
 
 msgid "Radiostanice_Fu_12"
 msgstr "Fu 12"
@@ -860,6 +886,9 @@ msgstr "斯柯达 16 ADH 140"
 
 msgid "Skoda_16_ADH_140A_TVP"
 msgstr "斯柯达 16 ADH 140A (TVP)"
+
+msgid "Skoda_16_ADH_140O"
+msgstr "斯柯达 16 ADH 140O"
 
 msgid "Skoda_16_ADH_140_A"
 msgstr "斯柯达 16 ADH 140A"
@@ -1043,6 +1072,9 @@ msgstr "Vz.62 J"
 
 msgid "Turret_1_Cz40_DBV_152"
 msgstr "DBV-152"
+
+msgid "Turret_1_Cz43_Ogar"
+msgstr "\"猎犬\""
 
 msgid "Turret_2_Cz02_TVP_T50"
 msgstr "斯柯达 T50(50型)"
@@ -1276,6 +1308,18 @@ msgstr "Vz.42N OPG"
 
 msgid "_105mm_vz_42N_VM"
 msgstr "Vz.42N VM"
+
+msgid "_107mm_Narazovy_vz_63"
+msgstr "HE vz.63"
+
+msgid "_107mm_Vz_63N_OPG"
+msgstr "Vz.63N OPG"
+
+msgid "_107mm_Vz_63_prupalny"
+msgstr "HEAT vz.63"
+
+msgid "_107mm_vz_63"
+msgstr "107mm vz.63炮"
 
 msgid "_10_RT_26"
 msgstr "10-RT-26"

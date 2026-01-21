@@ -11,7 +11,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "bonus/credits/description"
-msgstr "获取银币加成，在战斗中获得更多收益！"
+msgstr "获取银币加成，提高战斗收益！"
 
 msgid "bonus/credits/title"
 msgstr "银币"
@@ -32,7 +32,7 @@ msgid "bonus/events/description"
 msgstr "在此过程中解锁带有奖励的独特故事！"
 
 msgid "bonus/events/title"
-msgstr "事件"
+msgstr "轶事"
 
 msgid "bonus/freeXP/title"
 msgstr "全局经验"
@@ -155,6 +155,9 @@ msgstr "无论战斗结果如何，加成都会应用于收益。达到上限后
 msgid "petStorage/petCard/promo"
 msgstr "新"
 
+msgid "petStorage/progressbarBonuses"
+msgstr "该加成适用于标准模式。"
+
 msgid "petStorage/progressbarDescription"
 msgstr "每天可在有限场次的战斗中获得更多收益。"
 
@@ -166,6 +169,9 @@ msgstr "可用战斗收益加成数量将于明天重置。每场战斗消耗一
 
 msgid "petStorage/progressbarTooltip/title"
 msgstr "可用加成"
+
+msgid "petStorage/progressbarWarning"
+msgstr "模式不匹配。加成无法生效。"
 
 msgid "petStorage/status/select"
 msgstr "选择"
@@ -188,23 +194,32 @@ msgstr "剩余战斗场次"
 msgid "petStorageTooltip/bonus/title"
 msgstr "加成"
 
+msgid "petStorageTooltip/warning/unsuitableMode"
+msgstr "模式不匹配。加成无法生效。"
+
 msgid "petType/dog"
 msgstr "犬种"
 
 msgid "plusPercentValue"
 msgstr "+{{value}}%"
 
+msgid "promotion/bonuses/text_1"
+msgstr "该加成仅适用于标准模式，而且并非每场战斗都生效。"
+
+msgid "promotion/bonuses/text_2"
+msgstr "轶事仅会在您参加标准模式时触发。"
+
 msgid "promotion/button/challenge"
-msgstr "前往挑战"
+msgstr "任务"
 
 msgid "promotion/button/purchase"
 msgstr "购买"
 
 msgid "promotion/challengeInfo/text_1"
-msgstr "完成假日行动挑战任务，就有机会免费获得或使用金币购买霞飞狗，并将其添加至车库。即使活动结束后，霞飞狗也会伴您左右。"
+msgstr "任务信息"
 
 msgid "promotion/challengeInfo/title_1"
-msgstr "如何获取"
+msgstr "任务"
 
 msgid "synergyTooltip/description/done"
 msgstr "宠物的亲密度每提高一级，你们的关系就会更牢固。这位与您并肩作战的忠实战友是您最可靠的盟友。如果长期不活跃，该等级将会下降。"

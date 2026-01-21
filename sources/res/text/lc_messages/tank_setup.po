@@ -558,6 +558,9 @@ msgstr "没有适用于该坦克的建议"
 msgid "easyTankEquipView/alert/unableToMount"
 msgstr "无法安装。"
 
+msgid "easyTankEquipView/applied"
+msgstr "已应用"
+
 msgid "easyTankEquipView/consumables/presetNames/advanced"
 msgstr "高级"
 
@@ -574,7 +577,7 @@ msgid "easyTankEquipView/crew/bunksAlert"
 msgstr "床位不足，无法进行乘员转移和替换。请为兵营添加床位。"
 
 msgid "easyTankEquipView/crew/multiplier"
-msgstr "x%(count)s"
+msgstr "x{{count}}"
 
 msgid "easyTankEquipView/crew/presetNames/experienced"
 msgstr "经验丰富的乘员"
@@ -585,23 +588,20 @@ msgstr "新乘员"
 msgid "easyTankEquipView/crew/recruit"
 msgid_plural "plural/easyTankEquipView/crew/recruit"
 msgstr[0] ""
-"%(count)s\n"
+"{{count}}\n"
 "将招募的新乘员"
 msgstr[1] ""
-"%(count)s\n"
+"{{count}}\n"
 "将招募的新乘员"
 msgstr[2] ""
-"%(count)s\n"
+"{{count}}\n"
 "将招募的新乘员"
 
 msgid "easyTankEquipView/crew/title"
 msgstr "乘员"
 
 msgid "easyTankEquipView/discount"
-msgstr "-%(value)s%"
-
-msgid "easyTankEquipView/installed"
-msgstr "准备就绪"
+msgstr "-{{value}}"
 
 msgid "easyTankEquipView/optDevices/presetNames/advanced"
 msgstr "高级"
@@ -625,7 +625,7 @@ msgid "easyTankEquipView/styles/builtInStyle"
 msgstr "您已应用风格"
 
 msgid "easyTankEquipView/styles/rent"
-msgstr "%(battlesCount)s场战斗%(price)s"
+msgstr "{{battlesCount}}场战斗{{price}}"
 
 msgid "easyTankEquipView/styles/title"
 msgstr "预设风格"
@@ -827,11 +827,22 @@ msgstr ""
 msgid "kpi/bonus/longDescr/negative/vehicleStillCamouflage"
 msgstr "坦克静止3秒后的隐蔽值"
 
+msgid "kpi/bonus/longDescr/negative/vehicleStillCamouflageDeluxe"
+msgstr ""
+"坦克静止1.5秒后的\n"
+"隐蔽系数"
+
 msgid "kpi/bonus/longDescr/negative/vehicleStillCamouflageGroup"
 msgstr "坦克静止3秒后增加的隐蔽值(效果取决于坦克类型)"
 
+msgid "kpi/bonus/longDescr/negative/vehicleStillCamouflageGroupDeluxe"
+msgstr "坦克静止1.5秒后增加的隐蔽系数(效果取决于坦克类型)"
+
 msgid "kpi/bonus/longDescr/negative/vehicleStillCircularVisionRadius"
 msgstr "坦克静止3秒后的观察范围(最高445米)。445米以上的观察范围有助于更有效地发现敌方坦克。"
+
+msgid "kpi/bonus/longDescr/negative/vehicleStillCircularVisionRadiusDeluxe"
+msgstr "坦克静止1.5秒后的观察范围(最高445米)。445米以上的观察范围有助于更有效地发现敌方坦克"
 
 msgid "kpi/bonus/longDescr/negative/vehicleStrength"
 msgstr "坦克生命值(向上取整)"
@@ -889,11 +900,22 @@ msgstr ""
 msgid "kpi/bonus/longDescr/positive/vehicleStillCamouflage"
 msgstr "坦克静止3秒后的隐蔽系数"
 
+msgid "kpi/bonus/longDescr/positive/vehicleStillCamouflageDeluxe"
+msgstr ""
+"坦克静止1.5秒后的\n"
+"隐蔽系数"
+
 msgid "kpi/bonus/longDescr/positive/vehicleStillCamouflageGroup"
 msgstr "坦克静止3秒后增加的隐蔽值(效果取决于坦克类型)"
 
+msgid "kpi/bonus/longDescr/positive/vehicleStillCamouflageGroupDeluxe"
+msgstr "坦克静止1.5秒后增加的隐蔽系数(效果取决于坦克类型)"
+
 msgid "kpi/bonus/longDescr/positive/vehicleStillCircularVisionRadius"
 msgstr "坦克静止3秒后的观察范围(最高445米)。445米以上的观察范围有助于更有效地发现敌方坦克。"
+
+msgid "kpi/bonus/longDescr/positive/vehicleStillCircularVisionRadiusDeluxe"
+msgstr "坦克静止1.5秒后的观察范围(最高445米)。445米以上的观察范围有助于更有效地发现敌方坦克。"
 
 msgid "kpi/bonus/longDescr/positive/vehicleStrength"
 msgstr "坦克生命值(向上取整)"
@@ -908,6 +930,9 @@ msgstr ""
 
 msgid "kpi/bonus/negative/commanderLampDelay"
 msgstr "收到被点亮通知前的延迟"
+
+msgid "kpi/bonus/negative/coolingPerSec"
+msgstr "火炮冷却速度"
 
 msgid "kpi/bonus/negative/crewHitChance"
 msgstr "保护乘员免于受伤"
@@ -1109,10 +1134,19 @@ msgstr "在驶过各类地形时维持速度的能力"
 msgid "kpi/bonus/negative/vehicleStillCamouflage"
 msgstr "坦克静止时的隐蔽值"
 
+msgid "kpi/bonus/negative/vehicleStillCamouflageDeluxe"
+msgstr "坦克静止时的隐蔽系数"
+
 msgid "kpi/bonus/negative/vehicleStillCamouflageGroup"
 msgstr "坦克静止时的隐蔽值提升"
 
+msgid "kpi/bonus/negative/vehicleStillCamouflageGroupDeluxe"
+msgstr "坦克静止时的隐蔽系数提高"
+
 msgid "kpi/bonus/negative/vehicleStillCircularVisionRadius"
+msgstr "坦克静止时的观察范围"
+
+msgid "kpi/bonus/negative/vehicleStillCircularVisionRadiusDeluxe"
 msgstr "坦克静止时的观察范围"
 
 msgid "kpi/bonus/negative/vehicleStrength"
@@ -1167,8 +1201,14 @@ msgstr ""
 "声波探测激活的\n"
 "延迟时间"
 
+msgid "kpi/bonus/positive/basicShellDamage"
+msgstr "标准炮弹损伤"
+
 msgid "kpi/bonus/positive/commanderLampDelay"
 msgstr "收到被点亮通知前的延迟"
+
+msgid "kpi/bonus/positive/coolingPerSec"
+msgstr "火炮冷却速度"
 
 msgid "kpi/bonus/positive/crewHitChance"
 msgstr "保护乘员免于受伤"
@@ -1183,9 +1223,7 @@ msgid "kpi/bonus/positive/crewStunDuration"
 msgstr "弹震时长"
 
 msgid "kpi/bonus/positive/damageAndPiercingDistributionLowerBound"
-msgstr ""
-"潜在损伤和\n"
-"穿透力的下限"
+msgstr "潜在损伤和穿透力的下限"
 
 msgid "kpi/bonus/positive/damageAndPiercingDistributionUpperBound"
 msgstr ""
@@ -1285,11 +1323,17 @@ msgstr ""
 "在松软地形上\n"
 "维持速度的能力"
 
+msgid "kpi/bonus/positive/specialShellDamage"
+msgstr "特殊炮弹损伤"
+
 msgid "kpi/bonus/positive/specialShellPenetration"
 msgstr "特殊炮弹穿透力"
 
 msgid "kpi/bonus/positive/specialShellVelocity"
 msgstr "特殊炮弹飞行速度"
+
+msgid "kpi/bonus/positive/standardShellDamage"
+msgstr "标准炮弹损伤"
 
 msgid "kpi/bonus/positive/standardShellPenetration"
 msgstr "标准炮弹穿透力"
@@ -1422,10 +1466,19 @@ msgstr "在驶过各类地形时维持速度的能力"
 msgid "kpi/bonus/positive/vehicleStillCamouflage"
 msgstr "坦克静止时的隐蔽系数"
 
+msgid "kpi/bonus/positive/vehicleStillCamouflageDeluxe"
+msgstr "坦克静止时的隐蔽系数"
+
 msgid "kpi/bonus/positive/vehicleStillCamouflageGroup"
 msgstr "坦克静止时的隐蔽值提升"
 
+msgid "kpi/bonus/positive/vehicleStillCamouflageGroupDeluxe"
+msgstr "坦克静止时的隐蔽系数提高"
+
 msgid "kpi/bonus/positive/vehicleStillCircularVisionRadius"
+msgstr "坦克静止时的观察范围(最大445米)"
+
+msgid "kpi/bonus/positive/vehicleStillCircularVisionRadiusDeluxe"
 msgstr "坦克静止时的观察范围(最大445米)"
 
 msgid "kpi/bonus/positive/vehicleStrength"
@@ -1601,7 +1654,15 @@ msgstr ""
 "坦克静止时的\n"
 "隐蔽值"
 
+msgid "kpi/bonus/ttc/negative/vehicleStillCamouflageDeluxe"
+msgstr ""
+"坦克静止时的\n"
+"隐蔽系数"
+
 msgid "kpi/bonus/ttc/negative/vehicleStillCircularVisionRadius"
+msgstr "观察范围"
+
+msgid "kpi/bonus/ttc/negative/vehicleStillCircularVisionRadiusDeluxe"
 msgstr "观察范围"
 
 msgid "kpi/bonus/ttc/negative/vehicleStrength"
@@ -1800,7 +1861,15 @@ msgstr "速度维持能力"
 msgid "kpi/bonus/ttc/positive/vehicleStillCamouflage"
 msgstr "坦克静止时的隐蔽系数"
 
+msgid "kpi/bonus/ttc/positive/vehicleStillCamouflageDeluxe"
+msgstr "坦克静止时的隐蔽系数"
+
 msgid "kpi/bonus/ttc/positive/vehicleStillCircularVisionRadius"
+msgstr ""
+"坦克静止时的观察范围\n"
+"(最大445米)"
+
+msgid "kpi/bonus/ttc/positive/vehicleStillCircularVisionRadiusDeluxe"
 msgstr ""
 "坦克静止时的观察范围\n"
 "(最大445米)"
@@ -2136,6 +2205,18 @@ msgstr "您可以在战地升级界面中选择是否启用在战前倒计时期
 
 msgid "tooltips/prebattleSwitchIndicator/desc/2"
 msgstr "您可以在战地升级界面中选择是否启用在战前倒计时期间选择配件和指令的功能。"
+
+msgid "tooltips/prebattleSwitchIndicator/desc/c_1/field"
+msgstr "您可以在战地升级界面中选择是否启用在战前倒计时期间选择炮弹和给养的功能。"
+
+msgid "tooltips/prebattleSwitchIndicator/desc/c_1/progression"
+msgstr "您可以在升级界面中选择是否启用在战前倒计时期间选择炮弹和给养的功能。"
+
+msgid "tooltips/prebattleSwitchIndicator/desc/c_2/field"
+msgstr "您可以在战地升级界面中选择是否启用在战前倒计时期间选择配件和指令的功能。"
+
+msgid "tooltips/prebattleSwitchIndicator/desc/c_2/progression"
+msgstr "您可以在升级界面中选择是否启用在战前倒计时期间选择配件和指令的功能。"
 
 msgid "tooltips/prebattleSwitchIndicator/title"
 msgstr "切换组合的功能已禁用"

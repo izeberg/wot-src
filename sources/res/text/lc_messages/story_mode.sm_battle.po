@@ -361,21 +361,6 @@ msgstr "缴获敌方坦克"
 msgid "prebattle/mission/stage/1"
 msgstr "行动1"
 
-msgid "prebattle/mission/stage/1002"
-msgstr "普通"
-
-msgid "prebattle/mission/stage/1003"
-msgstr "严酷秘密行动"
-
-msgid "prebattle/mission/stage/1004"
-msgstr "严酷雷区"
-
-msgid "prebattle/mission/stage/1005"
-msgstr "普通"
-
-msgid "prebattle/mission/stage/1006"
-msgstr "严酷"
-
 msgid "prebattle/mission/stage/2"
 msgstr "行动2"
 
@@ -395,40 +380,25 @@ msgid "prebattle/mission/stage/7"
 msgstr "行动7"
 
 msgid "prebattle/mission/task/1"
-msgstr "{whiteSpanish_Start}任务: {whiteSpanish_End}攻击城镇并击毁所有敌方坦克。"
-
-msgid "prebattle/mission/task/1002"
-msgstr "{whiteSpanish_Start}将停火命令传达给盟军部队。{whiteSpanish_End}"
-
-msgid "prebattle/mission/task/1003"
-msgstr "{whiteSpanish_Start}检查敌方营地，收集雷区地图碎片。{whiteSpanish_End}"
-
-msgid "prebattle/mission/task/1004"
-msgstr "{whiteSpanish_Start}将停火命令传达给盟军部队。{whiteSpanish_End}"
-
-msgid "prebattle/mission/task/1005"
-msgstr "{whiteSpanish_Start}抵达指挥中心，阻止导弹发射。{whiteSpanish_End}"
-
-msgid "prebattle/mission/task/1006"
-msgstr "{whiteSpanish_Start}抵达指挥中心，阻止导弹发射。{whiteSpanish_End}"
+msgstr "任务: 攻击城镇并击毁所有敌方坦克。"
 
 msgid "prebattle/mission/task/2"
-msgstr "{whiteSpanish_Start}任务: {whiteSpanish_End}攻击城镇并击毁所有敌方坦克。"
+msgstr "任务: 攻击城镇并击毁所有敌方坦克。"
 
 msgid "prebattle/mission/task/3"
-msgstr "{whiteSpanish_Start}攻击城镇并击毁所有敌方坦克。{whiteSpanish_End}"
+msgstr "攻击城镇并击毁所有敌方坦克。"
 
 msgid "prebattle/mission/task/4"
-msgstr "{whiteSpanish_Start}找到并击毁敌方神秘武器。{whiteSpanish_End}"
+msgstr "找到并击毁敌方神秘武器。"
 
 msgid "prebattle/mission/task/5"
-msgstr "{whiteSpanish_Start}突破防线，摧毁岸防炮，占领滩头。{whiteSpanish_End}"
+msgstr "突破防线，摧毁岸防炮，占领滩头。"
 
 msgid "prebattle/mission/task/6"
-msgstr "{whiteSpanish_Start}将停火命令传达给盟军部队。{whiteSpanish_End}"
+msgstr "将停火命令传达给盟军部队。"
 
 msgid "prebattle/mission/task/7"
-msgstr "{whiteSpanish_Start}抵达指挥中心，阻止导弹发射。{whiteSpanish_End}"
+msgstr "抵达指挥中心，阻止导弹发射。"
 
 msgid "prebattle/mission/text/1"
 msgstr ""
@@ -437,50 +407,6 @@ msgstr ""
 "跟着我们避开\"龙牙\"。虽然田野里布满了那些混凝土反坦克锥，但它们不足为惧。只要你认真听从我的指示并准确无误地执行，我们就能顺利通过。麦克劳德和我会掩护你。\n"
 "\n"
 "不要在意他的玩笑。每个人都有属于自己的应对方法…前进！\""
-
-msgid "prebattle/mission/text/1002"
-msgstr ""
-"史密斯上尉: \"听好了，几个小时前，D系签署了投降书。战事明天就会结束。但我们在山里的弟兄失去了无线电联系。他们不知道一切都已经结束了，而且还准备在黎明时进攻这个可恶的要塞。里面的D系部队也不知道投降的事，这将是一场毫无意义的冲突。\n"
-"\n"
-"只有我们能阻止这一切，我们的任务: 潜入敌方阵地，传达停火命令。这次行动如同羊入虎口，但我们将拯救的每一条生命都是值得的。\n"
-"\n"
-"我们俘获了一名D系通信兵，他熟悉地形，和我们一样，他也希望阻止这场冲突。\n"
-"\n"
-"出发。\""
-
-msgid "prebattle/mission/text/1003"
-msgstr ""
-"杜布瓦上尉: \"整个前线都布满了地雷。我们根本无法与友方部队会合。\"\n"
-"\n"
-"三等兵凯勒: \"这些标记还标出了指挥所。这些指挥所都有通行地图的碎片。全都是为我们的…D系侦察员准备的。我们应该去看看。\"\n"
-"\n"
-"史密斯上尉: \"看样子我们必须收集地图碎片了。出发。\""
-
-msgid "prebattle/mission/text/1004"
-msgstr ""
-"墨菲上尉: \"天哪，真是个迷宫！我想把它叫作‘超牛地雷迷宫’！哈哈，听得懂吗？不懂？不是吧，这可是金句啊！\"\n"
-"\n"
-"杜布瓦上尉: \"悄悄穿过雷区吧，这样我就终于能清静点了。\"\n"
-"\n"
-"墨菲: \"杜布瓦，装炮弹装腻了吗？\"\n"
-"\n"
-"杜布瓦: \"也有这方面的原因。\""
-
-msgid "prebattle/mission/text/1005"
-msgstr ""
-"莱妮·沙夫: \"当前事态非常严峻。西海岸的导弹基地已完全失联。侦察机一去不回，先遣坦克登陆部队也遭未知敌军消灭。\n"
-"\n"
-"情报显示敌人正在准备发射弹道导弹。我们不知道他们的目标，但在当前的政治局势下，一枚导弹就足以引爆全球冲突。\n"
-"\n"
-"似曾相识的情形，对吧？又一个成功率几乎于零的任务，但我们必须潜入敌后化不可能为可能。出击！\""
-
-msgid "prebattle/mission/text/1006"
-msgstr ""
-"莱妮·沙夫: \"当前事态非常严峻。西海岸的导弹基地已完全失联。侦察机一去不回，先遣坦克登陆部队也遭未知敌军消灭。\n"
-"\n"
-"情报显示敌人正在准备发射弹道导弹。我们不知道他们的目标，但在当前的政治局势下，一枚导弹就足以引爆全球冲突。\n"
-"\n"
-"似曾相识的情形，对吧？又一个成功率几乎于零的任务，但我们必须潜入敌后化不可能为可能。出击！\""
 
 msgid "prebattle/mission/text/2"
 msgstr ""
@@ -534,21 +460,6 @@ msgstr ""
 
 msgid "prebattle/mission/title/1"
 msgstr "破甲"
-
-msgid "prebattle/mission/title/1002"
-msgstr "邮差行动"
-
-msgid "prebattle/mission/title/1003"
-msgstr "邮差行动"
-
-msgid "prebattle/mission/title/1004"
-msgstr "邮差行动"
-
-msgid "prebattle/mission/title/1005"
-msgstr "沸点行动"
-
-msgid "prebattle/mission/title/1006"
-msgstr "沸点行动"
 
 msgid "prebattle/mission/title/2"
 msgstr "诱捕"

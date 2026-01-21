@@ -36,6 +36,9 @@ msgstr "通过调整附加车轮的位置来显著提高速度，但会牺牲操
 msgid "abilities/common/description/magazineGun"
 msgstr "从弹夹中连续射击数发炮弹，之后需要完整装填。可造成高额爆发损伤，但坦克在装填时将无法进行反击。只能一次性装填整个弹夹。"
 
+msgid "abilities/common/description/overheatGun"
+msgstr "这门火炮可持续射击而无需重新装填。每次开火均会产生热量: 温度越高，部分参数受到的影响越大。连续射击将导致火炮过热，需冷却后才能恢复射击。"
+
 msgid "abilities/common/description/rocketAcceleration"
 msgstr "提高发动机功率和最大速度，从而实现在战场上快速移动。激活后，火箭助推器会降低操控性，并且无法手动关闭。"
 
@@ -82,6 +85,9 @@ msgstr "快速模式"
 msgid "abilities/common/name/magazineGun"
 msgstr "弹夹炮"
 
+msgid "abilities/common/name/overheatGun"
+msgstr "速射过热调节自动炮"
+
 msgid "abilities/common/name/rocketAcceleration"
 msgstr "火箭助推器"
 
@@ -125,9 +131,15 @@ msgid "abilities/special/description/extraShotClip"
 msgstr ""
 "当前短弹夹中剩下1发炮弹时，系统会自动开始装填新短弹夹，确保您可随时接敌。装填过程中，您仍可射击最后一发炮弹，但这样会导致剩余的装填时间延长数秒。"
 
+msgid "abilities/special/description/heatingZonesGun"
+msgstr "该系统保持火炮冷却，从而实现高精度射击。开火时火炮温度升高，但在装填期间开始冷却，并恢复至强化参数。温度越高，部分参数受到的影响越大。"
+
 msgid "abilities/special/description/improvedRamming"
 msgstr ""
 "该坦克借鉴早期型号的设计经验，并经过特殊配置，专为威胁性十足的撞击攻击而生。结构加固后，它能在撞击敌方坦克时能造成更高损伤，从而在近身缠斗中获得优势。"
+
+msgid "abilities/special/description/overheatGun"
+msgstr "这门火炮可持续射击而无需重新装填。每次开火均会产生热量: 温度越高，部分参数受到的影响越大。连续射击将导致火炮过热，需冷却后才能恢复射击。"
 
 msgid "abilities/special/description/overheatStacks"
 msgstr ""
@@ -142,6 +154,9 @@ msgstr "直接驱动模式可大幅提高发动机功率和最大前进速度。
 
 msgid "abilities/special/description/rechargeableNitro"
 msgstr "紧急时刻，随时激活液体燃料助推器，瞬间提高速度。助推器会升温，必须冷却后才能再次使用。超过临界热量等级将会暂时完全关闭助推器。"
+
+msgid "abilities/special/description/stagedJetBoosters"
+msgstr "固体燃料助推器可在数秒内提高加速能力、机动性和操控性。左右两侧的助推器可独立工作，助您更快地旋转车体，同时不限制倒车能力。"
 
 msgid "abilities/special/description/stanceDance"
 msgstr ""
@@ -180,8 +195,14 @@ msgstr "气动陀螺稳定器"
 msgid "abilities/special/name/extraShotClip"
 msgstr "短弹夹装填系统"
 
+msgid "abilities/special/name/heatingZonesGun"
+msgstr "主动火炮冷却"
+
 msgid "abilities/special/name/improvedRamming"
 msgstr "撞击专用配置"
+
+msgid "abilities/special/name/overheatGun"
+msgstr "速射过热调节自动炮"
 
 msgid "abilities/special/name/overheatStacks"
 msgstr "推进剂温控系统"
@@ -194,6 +215,9 @@ msgstr "直接驱动"
 
 msgid "abilities/special/name/rechargeableNitro"
 msgstr "液体燃料助推器"
+
+msgid "abilities/special/name/stagedJetBoosters"
+msgstr "顺序火箭助推器"
 
 msgid "abilities/special/name/stanceDance"
 msgstr "战术动力包"
@@ -228,8 +252,14 @@ msgstr "最大限度地提高移动和旋转时的稳定性，使射击更加精
 msgid "abilities/special/shortDescription/extraShotClip"
 msgstr "剩下最后一发炮弹时，自动开始装填，装填过程中仍可射击这一发炮弹。"
 
+msgid "abilities/special/shortDescription/heatingZonesGun"
+msgstr "主动火炮冷却系统，可在火炮冷却时强化精度。"
+
 msgid "abilities/special/shortDescription/improvedRamming"
 msgstr "提高对敌方坦克造成的撞击损伤。"
+
+msgid "abilities/special/shortDescription/overheatGun"
+msgstr "该系统支持连续射击而无需重新装填，并控制火炮射击时产生的热量。"
 
 msgid "abilities/special/shortDescription/overheatStacks"
 msgstr "静止不动或缓慢移动可强化下一次射击的损伤和精度。"
@@ -242,6 +272,9 @@ msgstr "提高发动机功率，坦克持续行驶时间越长，最大速度越
 
 msgid "abilities/special/shortDescription/rechargeableNitro"
 msgstr "助推器可随时激活，能提供强劲的速度爆发。"
+
+msgid "abilities/special/shortDescription/stagedJetBoosters"
+msgstr "固体燃料助推器，可提高加速能力、机动性和操控性。"
 
 msgid "abilities/special/shortDescription/stanceDance"
 msgstr "为2种独特能力之一充能，提高速度或强化火炮精度。"
@@ -288,9 +321,19 @@ msgstr ""
 "当前短弹夹中剩下1发炮弹时，系统会自动开始装填新短弹夹。在新短弹夹装填过程中射击最后一发炮弹，将使剩余装填时间额外增加数秒。按下装填短弹夹热键，将丢弃除最后一发外的所有剩余炮弹。双击热键即可重置已装填完毕的短弹夹。\n"
 "{{@ class $classSecondary}}显示的所有数值均为该坦克配备训练完毕的乘员的默认状态。升级、配件和给养可能会影响这些数值，但此处未反映相关变化。{{/}}"
 
+msgid "characteristics/abilities/special/description/heatingZonesGun"
+msgstr ""
+"该系统保持火炮冷却，从而实现高精度射击。开火时火炮温度升高，但在装填期间开始冷却，并恢复至强化参数。温度越高，部分参数受到的影响越大。\n"
+"{{@ class $classSecondary}}显示的所有数值均为该坦克配备训练完毕的乘员的默认状态。升级、装备与消耗品可能会影响这些数值，但此处未反映相关变化。{{/}}"
+
 msgid "characteristics/abilities/special/description/improvedRamming"
 msgstr ""
 "该坦克具有用于撞击的特殊配置，通过一系列设计改装，它能对敌方坦克造成更高的撞击损伤。\n"
+"{{@ class $classSecondary}}显示的所有数值均为该坦克配备训练完毕的乘员的默认状态。升级、配件和给养可能会影响这些数值，但此处未反映相关变化。{{/}}"
+
+msgid "characteristics/abilities/special/description/overheatGun"
+msgstr ""
+"这门火炮可持续射击而无需重新装填。每次开火均会产生热量: 温度越高，部分参数受到的影响越大。连续射击将导致火炮过热，需冷却后才能恢复射击。\n"
 "{{@ class $classSecondary}}显示的所有数值均为该坦克配备训练完毕的乘员的默认状态。升级、配件和给养可能会影响这些数值，但此处未反映相关变化。{{/}}"
 
 msgid "characteristics/abilities/special/description/overheatStacks"
@@ -311,6 +354,11 @@ msgstr ""
 msgid "characteristics/abilities/special/description/rechargeableNitro"
 msgstr ""
 "液体燃料助推器可瞬间提高发动机功率，让您可以快速占据有利点位，取得优势——但会降低坦克的倒车和旋转速度。助推器可随时开关，但达到再激活限制后除外。激活时会升温，需冷却后才能再次使用，意味着它们无法持续开启——超过临界热量等级将会暂时完全关闭助推器。谨慎规划行动，避免陷入被动。\n"
+"{{@ class $classSecondary}}显示的所有数值均为该坦克配备训练完毕的乘员的默认状态。升级、配件和给养可能会影响这些数值，但此处未反映相关变化。{{/}}"
+
+msgid "characteristics/abilities/special/description/stagedJetBoosters"
+msgstr ""
+"固体燃料助推器可在数秒内提高坦克的加速能力、机动性和操控性。与常规火箭推进器不同，左右两侧的助推器可独立工作，助您更快地旋转车体，同时不限制倒车能力。每场战斗中可多次使用，但重新激活前需要冷却。\n"
 "{{@ class $classSecondary}}显示的所有数值均为该坦克配备训练完毕的乘员的默认状态。升级、配件和给养可能会影响这些数值，但此处未反映相关变化。{{/}}"
 
 msgid "characteristics/abilities/special/description/stanceDance"

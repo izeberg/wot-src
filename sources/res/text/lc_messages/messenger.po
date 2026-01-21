@@ -1241,18 +1241,6 @@ msgstr "已移除个人声望点数"
 msgid "platformCurrencyMsg/debited/freeXP"
 msgstr "扣除全局经验"
 
-msgid "platformCurrencyMsg/debited/ny_amber"
-msgstr "已移除春暖琥珀"
-
-msgid "platformCurrencyMsg/debited/ny_crystal"
-msgstr "已移除新生岩晶"
-
-msgid "platformCurrencyMsg/debited/ny_emerald"
-msgstr "已移除圣洁翡翠"
-
-msgid "platformCurrencyMsg/debited/ny_iron"
-msgstr "已移除天外陨铁"
-
 msgid "platformCurrencyMsg/debited/tourcoin"
 msgstr "已移除军旅积分"
 
@@ -1279,18 +1267,6 @@ msgstr "已添加个人声望点数"
 
 msgid "platformCurrencyMsg/received/freeXP"
 msgstr "收到全局经验"
-
-msgid "platformCurrencyMsg/received/ny_amber"
-msgstr "已添加春暖琥珀"
-
-msgid "platformCurrencyMsg/received/ny_crystal"
-msgstr "已添加新生岩晶"
-
-msgid "platformCurrencyMsg/received/ny_emerald"
-msgstr "已添加圣洁翡翠"
-
-msgid "platformCurrencyMsg/received/ny_iron"
-msgstr "已添加天外陨铁"
 
 msgid "platformCurrencyMsg/received/tourcoin"
 msgstr "已添加军旅积分"
@@ -2120,9 +2096,6 @@ msgid ""
 "serviceChannelMessages/battleResults/quests/rankedBonusBattles/persistent"
 msgstr "%(count)s场标准"
 
-msgid "serviceChannelMessages/battleResults/quests/variadicDiscount"
-msgstr "已获得%(level)s级坦克的%(discount)s%%折扣"
-
 msgid "serviceChannelMessages/battleResults/quests/vehicleSlots"
 msgstr "收到车位"
 
@@ -2321,6 +2294,18 @@ msgstr "关闭"
 msgid "serviceChannelMessages/clan/LEFT_CLAN"
 msgstr "您退出或被踢出军团:"
 
+msgid "serviceChannelMessages/collector20/badge"
+msgstr "已添加\"%(element_name)s\""
+
+msgid "serviceChannelMessages/collector20/medal"
+msgstr "已添加\"%(element_name)s\"勋章"
+
+msgid "serviceChannelMessages/collector20/stripe"
+msgstr "已添加\"%(element_name)s\"条纹"
+
+msgid "serviceChannelMessages/collector20/title"
+msgstr "已获得奖励"
+
 msgid ""
 "serviceChannelMessages/commendations/battleResults/commendationsReceived"
 msgstr "获得的点赞数量"
@@ -2392,7 +2377,7 @@ msgid "serviceChannelMessages/currencyUpdate/financial_transaction"
 msgstr "交易"
 
 msgid "serviceChannelMessages/currencyUpdate/integratedAuction"
-msgstr "竞拍"
+msgstr "本尼迪克特的特别竞拍"
 
 msgid "serviceChannelMessages/currencyUpdate/received/bpcoin"
 msgstr "已获得令牌"
@@ -2934,12 +2919,6 @@ msgstr "收到%(nationName)s坦克蓝图碎片"
 msgid "serviceChannelMessages/invoiceReceived/nationalBlueprintsDebited"
 msgstr "移除%(nationName)s坦克蓝图碎片"
 
-msgid "serviceChannelMessages/invoiceReceived/nyToysAccruedInvoiceReceived"
-msgstr "已添加装饰物:"
-
-msgid "serviceChannelMessages/invoiceReceived/nyToysDebitedInvoiceReceived"
-msgstr "已移除装饰物:"
-
 msgid "serviceChannelMessages/invoiceReceived/offersAccrued"
 msgstr "已添加"
 
@@ -3012,9 +2991,6 @@ msgstr "已移除乘员未分配的经验"
 msgid "serviceChannelMessages/invoiceReceived/tankmenToRemove"
 msgstr "已解雇"
 
-msgid "serviceChannelMessages/invoiceReceived/toyTypeWrapper"
-msgstr "\"%(name)s\"(x%(count)s)"
-
 msgid "serviceChannelMessages/invoiceReceived/unlockedModules"
 msgstr "已研发所有模块"
 
@@ -3043,13 +3019,16 @@ msgid "serviceChannelMessages/lootBoxes/footer"
 msgstr "点击按钮查看内容。"
 
 msgid "serviceChannelMessages/lootBoxes/header"
-msgstr "已收到包裹"
+msgstr "您收到了一个包裹:"
 
 msgid "serviceChannelMessages/lootBoxes/item/name"
-msgstr "%(name)s: %(colorTagOpen)s%(count)s%(colorTagClose)s"
+msgstr "%(name)s %(colorTagOpen)sx%(count)s%(colorTagClose)s"
 
 msgid "serviceChannelMessages/lootBoxesAutoOpen/button"
-msgstr "前往奖励"
+msgstr "查看"
+
+msgid "serviceChannelMessages/lootBoxesAutoOpen/counter"
+msgstr "x%(count)s"
 
 msgid "serviceChannelMessages/lootBoxesAutoOpen/event/boxes"
 msgstr "已激活次元之门:%(boxes)s"
@@ -3070,6 +3049,9 @@ msgstr "我们激活了您的所有次元之门，并将所有物品发送到了
 
 msgid "serviceChannelMessages/lootBoxesAutoOpen/header"
 msgstr "已获得奖励"
+
+msgid "serviceChannelMessages/lootBoxesAutoOpen/text"
+msgstr "我们开启了您全部的补给品，并把假日行动的奖励添加至您的账号"
 
 msgid "serviceChannelMessages/lunarBoxesAutoOpen/body"
 msgstr "我们为您开启了春节寄福活动中的所有红包。"
@@ -3125,12 +3107,6 @@ msgstr "您可以在侦察任务中参与关于%(mapName)s地图的问卷调查�
 msgid "serviceChannelMessages/multiplier"
 msgstr " (x%(count)s)"
 
-msgid "serviceChannelMessages/newYear/celebrityChallenge/achievements"
-msgstr "已获得勋章"
-
-msgid "serviceChannelMessages/newYear/celebrityChallenge/optDevices"
-msgstr "已添加试验型配件"
-
 msgid "serviceChannelMessages/notrecruitedTankman/button"
 msgstr "前往兵营"
 
@@ -3157,9 +3133,6 @@ msgstr "将过期的储备:"
 
 msgid "serviceChannelMessages/personalReservesSoonExpire/title"
 msgstr "即将损失的限时储备"
-
-msgid "serviceChannelMessages/personalReservesTitle"
-msgstr "个人储备转换"
 
 msgid "serviceChannelMessages/piggyBank/continueAfterSmashed"
 msgstr "新的积累周期开始了。"

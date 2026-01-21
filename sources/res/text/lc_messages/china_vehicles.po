@@ -55,6 +55,9 @@ msgstr "A-220A-DZT"
 msgid "A_220B_1_QL"
 msgstr "A-220B(QL)"
 
+msgid "A_220B_78"
+msgstr "A-220B/78"
+
 msgid "A_220B_79"
 msgstr "A-220B/79"
 
@@ -962,6 +965,21 @@ msgstr ""
 msgid "Ch67_BZ_79_short"
 msgstr "BZ-79"
 
+msgid "Ch70_PTZ_78"
+msgstr "PTZ-78"
+
+msgid "Ch70_PTZ_78_desc"
+msgstr ""
+"BZ-79坦克计划结束后，C系军方决定利用现有设计方案研发一辆重型自行反坦克炮。该计划保留了关键技术方案: "
+"对置活塞发动机与液体火箭助推器。同时研发了一辆采用改进型V型12缸柴油发动机和无制导火箭固体燃料包的经济型坦克。到20世纪80年代初，蓝图最终定型，但由于第二代反坦克导弹更加经济高效，该坦克最终未投入生产。"
+
+msgid "Ch70_PTZ_78_long_special"
+msgstr ""
+"在经典C系自行反坦克炮设计基础上，PTZ-78进一步改进，配备一门威力惊人的火炮，可造成高额的平均单发损伤，同时还拥有可靠的装甲。但真正使其脱颖而出的是独特的助推器，赋予该坦克相对于其重量来说优秀的机动性。无论身处狭窄街道还是开阔平原，PTZ-78都能展现强大威慑力。"
+
+msgid "Ch70_PTZ_78_short"
+msgstr "PTZ-78"
+
 msgid "Chassis_01_Ch24_Type64_SH"
 msgstr "64式BL"
 
@@ -970,6 +988,9 @@ msgstr "WZ131BL"
 
 msgid "Chassis_03_Ch33_60G_FT_SH"
 msgstr "60G FT-BL"
+
+msgid "Chassis_1_Ch70_PTZ_78"
+msgstr "PTZ-78"
 
 msgid "Chassis_Ch00_ClingeBot_SH"
 msgstr "智械模块"
@@ -1556,6 +1577,9 @@ msgstr "IC4"
 
 msgid "Turret_1_Ch67_BZ_79"
 msgstr "BZ-79"
+
+msgid "Turret_1_Ch70_PTZ_78"
+msgstr "PTZ-78"
 
 msgid "Turret_2_Ch04_T34_1"
 msgstr "T-34-1 II"
@@ -2404,6 +2428,9 @@ msgstr "152mm 64-152DV炮"
 msgid "_152_mm_ZPL_75"
 msgstr "152mm ZPL-75炮"
 
+msgid "_152_mm_ZPL_75_1"
+msgstr "152mm ZPL-75-1炮"
+
 msgid "_152mm_59_152JG_FT"
 msgstr "152mm 59-152JG炮"
 
@@ -2430,6 +2457,9 @@ msgstr "穿被-152T (DV)"
 
 msgid "_152mm_Chuan_bei_152ZPL"
 msgstr "穿被-152ZPL"
+
+msgid "_152mm_Chuan_bei_152ZPL_1"
+msgstr "穿被-152ZPL-1"
 
 msgid "_152mm_Chuan_bei_547"
 msgstr "穿被-547"
@@ -2464,6 +2494,9 @@ msgstr "破-152T (DV)"
 msgid "_152mm_Po_152ZPL"
 msgstr "破-152ZPL"
 
+msgid "_152mm_Po_152ZPL_1"
+msgstr "破-152ZPL-1"
+
 msgid "_152mm_Po_152_111"
 msgstr "破-152 (111)"
 
@@ -2472,6 +2505,9 @@ msgstr "高爆-152T (DV)"
 
 msgid "_152mm_Sha_bao_152ZPL"
 msgstr "高爆-152ZPL"
+
+msgid "_152mm_Sha_bao_152ZPL_1"
+msgstr "高爆-152ZPL-1"
 
 msgid "_152mm_Sha_bao_547"
 msgstr "高爆-547"
@@ -2708,6 +2744,9 @@ msgstr "57mm ZiS-2炮 (76G)"
 
 msgid "_5TD_I"
 msgstr "5TD-I"
+
+msgid "_5TD_I_1"
+msgstr "5TD-I-1"
 
 msgid "_71-TK-3"
 msgstr "71-TK-3"

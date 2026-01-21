@@ -1649,6 +1649,9 @@ msgstr "轻型坦克"
 msgid "botVehicleType/mediumTank"
 msgstr "中型坦克"
 
+msgid "countTitle"
+msgstr "({count})"
+
 msgid "descriptionInfo"
 msgstr "地图描述"
 
@@ -1786,6 +1789,9 @@ msgstr "%(map)s，%(scenario)s: %(vehicleType)s"
 
 msgid "prebattle/targets"
 msgstr "击毁%(count)s个目标"
+
+msgid "progress"
+msgstr "{currentProgress}/{maxProgress}"
 
 msgid "queue/delayTime"
 msgstr "* 该模式人气很高，请稍等"
