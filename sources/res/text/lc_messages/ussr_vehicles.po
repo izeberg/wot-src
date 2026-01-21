@@ -338,6 +338,9 @@ msgstr "T-29"
 msgid "Chassis_R144_K_91"
 msgstr "K-91"
 
+msgid "Chassis_R144_K_91_7x7"
+msgstr "K-91"
+
 msgid "Chassis_R145_Object_705_A"
 msgstr "Object 705A"
 
@@ -433,6 +436,9 @@ msgstr "IS-3-II late"
 
 msgid "Chassis_R172_Object_752"
 msgstr "Object 752"
+
+msgid "Chassis_R172_Object_752_CFE_T"
+msgstr "Peerless"
 
 msgid "Chassis_R173_K_91_2"
 msgstr "K-91-2 enhanced"
@@ -565,6 +571,12 @@ msgstr "KR-1"
 
 msgid "Chassis_R230_Object_432U"
 msgstr "Object 432U"
+
+msgid "Chassis_R231_Buryan"
+msgstr "Buryan"
+
+msgid "Chassis_R235_KB_52"
+msgstr "KB-52"
 
 msgid "Chassis_R23_T-43"
 msgstr "T-43"
@@ -1635,6 +1647,9 @@ msgstr "R-113"
 msgid "R113M_DR"
 msgstr "R-113D"
 
+msgid "R113M_c_7x7"
+msgstr "R-113"
+
 msgid "R113T"
 msgstr "R113T"
 
@@ -2391,6 +2406,23 @@ msgstr "A powerful gun and good mobility"
 msgid "R144_K_91"
 msgstr "K-91"
 
+msgid "R144_K_91_7x7"
+msgstr "K-91 7x7"
+
+msgid "R144_K_91_7x7_descr"
+msgstr ""
+"The vehicle was developed by the Design Bureau of the Army Engineering "
+"Committee under the supervision of A. F. Kravtsev from March through August "
+"1949. The tank was supposed to position a driver in the fighting "
+"compartment, as well as feature a 100 mm gun with an automatic loading "
+"system, and coaxial large-caliber machinegun. The plan was to mount the "
+"12-cylinder opposed-piston turbo-diesel engine. The mounting brackets with "
+"ski-shaped supports were used as support rollers. Development of the project"
+" was discontinued at the blueprints stage in December 1949."
+
+msgid "R144_K_91_7x7_short"
+msgstr "K-91 7x7"
+
 msgid "R144_K_91_descr"
 msgstr ""
 "The vehicle was developed by the Design Bureau of the Army Engineering "
@@ -2919,6 +2951,37 @@ msgstr "IS-3-II"
 
 msgid "R172_Object_752"
 msgstr "Object 752"
+
+msgid "R172_Object_752_CFE_T"
+msgstr "Peerless"
+
+msgid "R172_Object_752_CFE_T_descr"
+msgstr ""
+"With coiled beard and fierce eyes, Cheng Yaojin was a bold, skilled "
+"spearman. Favored by fortune, he rose to head an army. His humor diffused "
+"crises, and behind his bravado was a sharp mind. He outwitted brute force "
+"and seized the initiative to overwhelm his foes. His \"three axe-blows\" "
+"settled any dispute. Fighting beside Qin Shubao, he shielded Prince Qin, "
+"broke enemy lines, and earned fame above his peers. His deeds won him a "
+"portrait in the Lingyan Pavilion, and in tales and songs he was hailed as "
+"the \"The king of chaotic times, and the greatest of all heroes to rise from"
+" the common folk!\""
+
+msgid "R172_Object_752_CFE_T_long_special"
+msgstr ""
+"This Tier IX heavy tank features an oscillating turret and magazine loading "
+"system that stands out from other Soviet vehicles. In addition, the vehicle "
+"is well-armored. Its U-shaped glacis plate, V-shaped hull, and low "
+"silhouette allow Peerless to survive prolonged positional battles."
+
+msgid "R172_Object_752_CFE_T_short"
+msgstr "Peerless"
+
+msgid "R172_Object_752_CFE_T_short_special"
+msgstr ""
+"With spear and axe he strikes, the foe's hearts quail,\n"
+"\n"
+"In Lingyan's hall, his lasting fame prevails."
 
 msgid "R172_Object_752_descr"
 msgstr ""
@@ -3890,6 +3953,52 @@ msgstr ""
 msgid "R230_Object_432U_short"
 msgstr "Obj. 432U"
 
+msgid "R231_Buryan"
+msgstr "Buryan"
+
+msgid "R231_Buryan_descr"
+msgstr ""
+"One area of post-war research was studying crew ergonomics and the optimal crew size. The \"NIR 1476\" project (unofficially named \"Buryan\") was developed based on the obtained data. It aimed to translate the results of the anthropometric research into tank design.\n"
+"With a conventional layout, a spacious turret, and two loaders, the vehicle offered a high rate of fire; however, a weight of 55 tons, the turret's increased side projection, and the absence of a driver's hatch made it unwieldy. Reinforcement of the sloped hull front further increased the weight, and the only suitable engine for the tank (the 6TD) only existed as a design project at the time.\n"
+"The development was not successful as the engineers were unable to combine the weight and dimensions, armor, and anthropometrics. In addition, by the late 1950s, layouts with autoloaders had come into existence, making it possible to reduce the crew size and decrease the weight and frontal projection as well as increase the fire rate."
+
+msgid "R231_Buryan_long_special"
+msgstr ""
+"The Buryan is a Tier IX Soviet heavy tank that combines high damage per shot"
+" with high DPM, making it very effective in one-on-one fights; however, its "
+"gun handling is mediocre. Its mobility lets it move comfortably over short "
+"distances, but its low top speed limits flanking options. The sturdy turret "
+"often blocks incoming enemy hits."
+
+msgid "R231_Buryan_short"
+msgstr "Buryan"
+
+msgid "R231_Buryan_short_special"
+msgstr "High single damage, high DPM"
+
+msgid "R235_KB_52"
+msgstr "KB-52"
+
+msgid "R235_KB_52_desc"
+msgstr ""
+"A project for a vehicle based on the Object 777 hull with an oscillating "
+"turret and an improved 107 mm gun. It was developed in response to "
+"contemporary battle requirements; however, the work was terminated during "
+"the design phase."
+
+msgid "R235_KB_52_long_special"
+msgstr ""
+"The KB-52 is a Tier IX Soviet medium tank. This vehicle has exceptionally "
+"reliable armor for its class and tier, which allows it to be played very "
+"aggressively. At the same time, it is not incapable of changing positions "
+"and can move around the map fairly quickly."
+
+msgid "R235_KB_52_short"
+msgstr "KB-52"
+
+msgid "R235_KB_52_short_special"
+msgstr "Reliable hull and turret armor, autoloader"
+
 msgid "R23_T-43"
 msgstr "T-43"
 
@@ -4390,6 +4499,12 @@ msgstr "Great damage per shot, and good mobility and concealment"
 msgid "RTY_RCEHb"
 msgstr "RTU (\"Yasen\")"
 
+msgid "RTY_RCEHb_A"
+msgstr "RTU (\"Yasen\") A"
+
+msgid "RTY_RCEHb_CFE_T"
+msgstr "RTU (\"Yasen\")"
+
 msgid "R_123B"
 msgstr "R-123B"
 
@@ -4398,6 +4513,9 @@ msgstr "R-123C"
 
 msgid "R_123KR"
 msgstr "R-123KR"
+
+msgid "R_123_1476"
+msgstr "R-123 (1476)"
 
 msgid "SCR_209"
 msgstr "SCR 209"
@@ -5001,6 +5119,9 @@ msgstr "T-29"
 msgid "Turret_1_R144_K_91"
 msgstr "K-91"
 
+msgid "Turret_1_R144_K_91_7x7"
+msgstr "K-91"
+
 msgid "Turret_1_R145_Object_705_A"
 msgstr "Object 705A"
 
@@ -5081,6 +5202,9 @@ msgstr "IS-3-II experimental"
 
 msgid "Turret_1_R172_Object_752"
 msgstr "Object 752 (o)"
+
+msgid "Turret_1_R172_Object_752_CFE_T"
+msgstr "Peerless"
 
 msgid "Turret_1_R173_K_91_2"
 msgstr "K91-2"
@@ -5198,6 +5322,12 @@ msgstr "KR-1"
 
 msgid "Turret_1_R230_Object_432U"
 msgstr "Object 432U"
+
+msgid "Turret_1_R231_Buryan"
+msgstr "Buryan"
+
+msgid "Turret_1_R235_KB_52"
+msgstr "KB-52"
 
 msgid "Turret_1_R23_T-43"
 msgstr "T-43 mod. 1942"
@@ -5667,6 +5797,9 @@ msgstr "V-12P"
 msgid "V_12_5"
 msgstr "V-12-5"
 
+msgid "V_12_5B"
+msgstr "V-12-5B"
+
 msgid "V_12_5F"
 msgstr "V-12-5F"
 
@@ -5681,6 +5814,9 @@ msgstr "V-12-5M1"
 
 msgid "V_12_6"
 msgstr "V-12-6"
+
+msgid "V_12_6B_CFE_T"
+msgstr "V-12-6B"
 
 msgid "V_12_6M"
 msgstr "V-12-6M"
@@ -5892,6 +6028,9 @@ msgstr "V-54R"
 msgid "V_64S"
 msgstr "V-64S"
 
+msgid "V_64_7x7"
+msgstr "V-64"
+
 msgid "ValentineMK_I"
 msgstr "Valentine"
 
@@ -5956,6 +6095,9 @@ msgstr "3UBK (LM)"
 msgid "_100mm_3UBK_LMK"
 msgstr "3UBK (LK)"
 
+msgid "_100mm_3UBK_LM_7x7"
+msgstr "3UBK (LM)"
+
 msgid "_100mm_3UOF10"
 msgstr "3UOF10"
 
@@ -5970,6 +6112,9 @@ msgstr "3UOF (LM)"
 
 msgid "_100mm_3UOF_LMK"
 msgstr "3UOF (LK)"
+
+msgid "_100mm_3UOF_LM_7x7"
+msgstr "3UOF (LM)"
 
 msgid "_100mm_3VBB"
 msgstr "3VBB"
@@ -6045,6 +6190,9 @@ msgstr "100 mm D-46T"
 
 msgid "_100mm_D_46TK"
 msgstr "100 mm D-46TK"
+
+msgid "_100mm_D_46T_7x7"
+msgstr "100 mm D-46T"
 
 msgid "_100mm_D_46T_P"
 msgstr "100 mm D-46TP"
@@ -6223,6 +6371,9 @@ msgstr "UBR (LM)"
 msgid "_100mm_UBR_LMK"
 msgstr "UBR (LK)"
 
+msgid "_100mm_UBR_LM_7x7"
+msgstr "UBR (LM)"
+
 msgid "_100mm_UOF-412"
 msgstr "UOF-412"
 
@@ -6322,8 +6473,14 @@ msgstr "BP-450M"
 msgid "_107mm_BR_420LP"
 msgstr "BR-420LP"
 
+msgid "_107mm_BR_420LPA"
+msgstr "BR-420LPA"
+
 msgid "_107mm_LP_21"
 msgstr "107 mm LP-21"
+
+msgid "_107mm_LP_21A"
+msgstr "107 mm LP-21A"
 
 msgid "_107mm_UBR-420"
 msgstr "UBR-420"
@@ -6354,6 +6511,9 @@ msgstr "UBR-420T"
 
 msgid "_107mm_UBR_420LP"
 msgstr "UBR-420LP"
+
+msgid "_107mm_UBR_420LPA"
+msgstr "UBR-420LPA"
 
 msgid "_107mm_UBR_420M_KV_4"
 msgstr "UBR-420M (KV-4)"
@@ -6405,6 +6565,9 @@ msgstr "UOF-420T"
 
 msgid "_107mm_UOF_420LP"
 msgstr "UOF-420LP"
+
+msgid "_107mm_UOF_420LPA"
+msgstr "UOF-420LPA"
 
 msgid "_107mm_UOF_420M_KV_4"
 msgstr "UOF-420M (KV-4)"
@@ -6556,6 +6719,9 @@ msgstr "3BM11"
 msgid "_122mm_3BM11P"
 msgstr "3BM11P"
 
+msgid "_122mm_3BM11_CFE_T"
+msgstr "3BM11"
+
 msgid "_122mm_3BM14"
 msgstr "3BM14"
 
@@ -6601,11 +6767,17 @@ msgstr "53-OF-472"
 msgid "_122mm_53_OF_472US"
 msgstr "53-OF-472US"
 
+msgid "_122mm_53_OF_472_CFE_T"
+msgstr "53-OF-472"
+
 msgid "_122mm_53_VBR_472"
 msgstr "53-BR-472"
 
 msgid "_122mm_53_VBR_472U"
 msgstr "53-BR-472U"
+
+msgid "_122mm_53_VBR_472_CFE_T"
+msgstr "53-BR-472"
 
 msgid "_122mm_A-19"
 msgstr "122 mm A-19 mod. 1937"
@@ -6831,6 +7003,9 @@ msgstr "122 mm M62-T2"
 
 msgid "_122mm_M62-T2_SH"
 msgstr "122 mm M62-T3ST"
+
+msgid "_122mm_M62_CFE_T"
+msgstr "122 mm M-62T2"
 
 msgid "_122mm_M62_S2"
 msgstr "122 mm M62-S2"
@@ -7177,6 +7352,9 @@ msgstr "130 mm 2A50"
 msgid "_130mm_3UBK"
 msgstr "3UBK"
 
+msgid "_130mm_3UBK_1476"
+msgstr "3UBK (1476)"
+
 msgid "_130mm_3VBKB"
 msgstr "3VBKB"
 
@@ -7207,8 +7385,14 @@ msgstr "53-OF-482M"
 msgid "_130mm_53_UBR_482"
 msgstr "53-UBR-482"
 
+msgid "_130mm_53_UBR_482_1476"
+msgstr "53-UBR-482 (1476)"
+
 msgid "_130mm_53_UOF_482V"
 msgstr "53-UOF-482V"
+
+msgid "_130mm_53_UOF_482V_1476"
+msgstr "53-UOF-482V (1476)"
 
 msgid "_130mm_53_VBR_482B"
 msgstr "53-VBR-482B"
@@ -7242,6 +7426,9 @@ msgstr "130 mm M-65S"
 
 msgid "_130mm_M_65S_DR"
 msgstr "130 mm M-65D"
+
+msgid "_130mm_M_65_1476"
+msgstr "130 mm M-65 (1476)"
 
 msgid "_130mm_M_65_7x7"
 msgstr "130 mm M-65"
@@ -8124,6 +8311,9 @@ msgstr "5TD-2"
 
 msgid "_6TD"
 msgstr "6TD"
+
+msgid "_6TD_1476"
+msgstr "6TD (1476)"
 
 msgid "_6TD_K"
 msgstr "6TD-K"

@@ -321,6 +321,15 @@ msgstr ""
 msgid "detailsHelp/mechanics/autoShootGun/page1/title"
 msgstr "Autogun"
 
+msgid "detailsHelp/mechanics/autoShootGun_overheatGun/page1/description"
+msgstr ""
+"This gun can fire continuously without the need for reload. Each shot "
+"generates heat, and continuous firing will cause the gun to overheat, "
+"preventing further firing until it cools down."
+
+msgid "detailsHelp/mechanics/autoShootGun_overheatGun/page1/title"
+msgstr "Thermal Overheat Control Autocannon"
+
 msgid "detailsHelp/mechanics/battleFury/page1/description"
 msgstr ""
 "Every time you hit an enemy with a shell, you gain a reload efficiency level, temporarily boosting your gun's reload speed. Levels accumulate with each hit.\n"
@@ -380,6 +389,16 @@ msgstr ""
 
 msgid "detailsHelp/mechanics/extraShotClip/page1/title"
 msgstr "Cassette Loading System"
+
+msgid "detailsHelp/mechanics/heatingZonesGun/page1/description"
+msgstr ""
+"The system keeps the gun cooled, allowing for highly accurate firing. The "
+"gun heats up when fired, but begins cooling down and returns to improved "
+"parameters during reload. The higher its temperature, the more some of its "
+"parameters change."
+
+msgid "detailsHelp/mechanics/heatingZonesGun/page1/title"
+msgstr "Active Gun Cooling"
 
 msgid "detailsHelp/mechanics/improvedRamming/page1/description"
 msgstr ""
@@ -450,6 +469,15 @@ msgstr ""
 
 msgid "detailsHelp/mechanics/rocketAcceleration/page2/title"
 msgstr "Advantages and Disadvantages"
+
+msgid "detailsHelp/mechanics/stagedJetBoosters/page1/description"
+msgstr ""
+"Solid-fuel thrusters that boost acceleration, mobility, and maneuverability "
+"for several seconds. The left and right thrusters can work independently of "
+"each other for faster hull traverse, and do not restrict reverse capability."
+
+msgid "detailsHelp/mechanics/stagedJetBoosters/page1/title"
+msgstr "Sequential Rocket Thrusters"
 
 msgid "detailsHelp/mechanics/stanceDance/page1/description"
 msgstr ""
@@ -689,6 +717,9 @@ msgstr "Help!"
 
 msgid "radialMenu/helpMeEx"
 msgstr "I need help!"
+
+msgid "radialMenu/overheated_gun"
+msgstr "Overheated!"
 
 msgid "radialMenu/positive"
 msgstr "Affirmative!"

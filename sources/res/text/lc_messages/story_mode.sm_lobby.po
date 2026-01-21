@@ -60,21 +60,6 @@ msgstr "THE BATTLE IS OVER"
 msgid "battleResult/missionName/1"
 msgstr "TIGER HUNTER: Operation Steel Avalanche"
 
-msgid "battleResult/missionName/1002"
-msgstr "OPERATION POSTMAN"
-
-msgid "battleResult/missionName/1003"
-msgstr "OPERATION POSTMAN"
-
-msgid "battleResult/missionName/1004"
-msgstr "OPERATION POSTMAN"
-
-msgid "battleResult/missionName/1005"
-msgstr "OPERATION BOILING POINT"
-
-msgid "battleResult/missionName/1006"
-msgstr "OPERATION BOILING POINT"
-
 msgid "battleResult/missionName/2"
 msgstr "TIGER HUNTER: Operation Trapper"
 
@@ -195,9 +180,6 @@ msgstr "%(startDate)s – %(endDate)"
 msgid "headerButtons/battle/types/story_mode"
 msgstr "Stories"
 
-msgid "missionSelection/about"
-msgstr "ABOUT STORIES"
-
 msgid "missionSelection/difficulty/hard"
 msgstr "Rigorous"
 
@@ -253,52 +235,6 @@ msgstr ""
 "Follow us—and avoid the dragon's teeth. They've got a bunch of rows of those concrete fangs in that field. But that's okay. We'll come through. All you gotta do is listen to me and execute my orders quickly and precisely. MacLeod and I will cover you.\n"
 "And don't pay his jokes any mind. Everyone has their own unique coping mechanisms… Forward!\""
 
-msgid "missionSelection/missionDescription/1002"
-msgstr ""
-"Captain Smith: \"Listen up. Germany signed the surrender papers hours ago. The war ends tomorrow. But our boys in the mountains lost radio contact—they don't know it's over. They're set to attack this bloody fortress at dawn, and the Germans inside don't know about the surrender either. It'll be a pointless slaughter. \n"
-"\n"
-"We're the only ones who can stop it. Our mission: Sneak through enemy lines and deliver the ceasefire order. It's a suicide run, but every life we save is worth it. \n"
-"\n"
-"We've got a captured German radioman with us—he knows the terrain and he's got as much reason as we do to stop this bloodshed. \n"
-"\n"
-"Roll out.\""
-
-msgid "missionSelection/missionDescription/1003"
-msgstr ""
-"Captain Smith: \"Listen up. Germany signed the surrender papers hours ago. The war ends tomorrow. But our boys in the mountains lost radio contact—they don't know it's over. They're set to attack this bloody fortress at dawn, and the Germans inside don't know about the surrender either. It'll be a pointless slaughter. \n"
-"\n"
-"We're the only ones who can stop it. Our mission: Sneak through enemy lines and deliver the ceasefire order. It's a suicide run, but every life we save is worth it. \n"
-"\n"
-"We've got a captured German radioman with us—he knows the terrain and he's got as much reason as we do to stop this bloodshed. \n"
-"\n"
-"Roll out.\""
-
-msgid "missionSelection/missionDescription/1004"
-msgstr ""
-"Captain Smith: \"Listen up. Germany signed the surrender papers hours ago. The war ends tomorrow. But our boys in the mountains lost radio contact—they don't know it's over. They're set to attack this bloody fortress at dawn, and the Germans inside don't know about the surrender either. It'll be a pointless slaughter. \n"
-"\n"
-"We're the only ones who can stop it. Our mission: Sneak through enemy lines and deliver the ceasefire order. It's a suicide run, but every life we save is worth it. \n"
-"\n"
-"We've got a captured German radioman with us—he knows the terrain and he's got as much reason as we do to stop this bloodshed. \n"
-"\n"
-"Roll out.\""
-
-msgid "missionSelection/missionDescription/1005"
-msgstr ""
-"Leni Scharf: \"The situation is critical. We've lost contact with our missile base in the Norwegian Sea. The reconnaissance flight never returned, and the initial tank landing force was wiped out by an unknown enemy.\n"
-"\n"
-"Intelligence suggests they're preparing to launch a ballistic missile. We don't know the target, but in this political climate, a single launch could trigger a global conflict.\n"
-"\n"
-"Feels like the old days, doesn't it? Just another impossible mission behind enemy lines. Roll out!\""
-
-msgid "missionSelection/missionDescription/1006"
-msgstr ""
-"Leni Scharf: \"The situation is critical. We've lost contact with our missile base in the Norwegian Sea. The reconnaissance flight never returned, and the initial tank landing force was wiped out by an unknown enemy.\n"
-"\n"
-"Intelligence suggests they're preparing to launch a ballistic missile. We don't know the target, but in this political climate, a single launch could trigger a global conflict.\n"
-"\n"
-"Feels like the old days, doesn't it? Just another impossible mission behind enemy lines. Roll out!\""
-
 msgid "missionSelection/missionDescription/2"
 msgstr ""
 "MacLeod: \"Ah, Tigers—those are the worst ye can face on the battlefield. And if the command says they have a problem, they probably mean Tigers. We cannot contact the first assault squad, the second's just departed, and here we are—sent to follow them.\n"
@@ -352,21 +288,6 @@ msgstr ""
 msgid "missionSelection/missionName/1"
 msgstr "OPERATION STEEL AVALANCHE"
 
-msgid "missionSelection/missionName/1002"
-msgstr "OPERATION POSTMAN"
-
-msgid "missionSelection/missionName/1003"
-msgstr "OPERATION POSTMAN"
-
-msgid "missionSelection/missionName/1004"
-msgstr "OPERATION POSTMAN"
-
-msgid "missionSelection/missionName/1005"
-msgstr "OPERATION BOILING POINT"
-
-msgid "missionSelection/missionName/1006"
-msgstr "OPERATION BOILING POINT"
-
 msgid "missionSelection/missionName/2"
 msgstr "OPERATION TRAPPER"
 
@@ -396,55 +317,6 @@ msgstr "TUTORIAL STORIES"
 
 msgid "missionSelection/taskDescription/1/1"
 msgstr "Attack the town and destroy enemy vehicles."
-
-msgid "missionSelection/taskDescription/1002/1"
-msgstr "Deliver the ceasefire order to your allies."
-
-msgid "missionSelection/taskDescription/1002/2"
-msgstr "?empty?"
-
-msgid "missionSelection/taskDescription/1002/3"
-msgstr "?empty?"
-
-msgid "missionSelection/taskDescription/1003/1"
-msgstr "Check the enemy camps and collect all the minefield map pieces."
-
-msgid "missionSelection/taskDescription/1003/2"
-msgstr ""
-"Complete the main mission objectives without destroying enemy vehicles."
-
-msgid "missionSelection/taskDescription/1003/3"
-msgstr "Complete the main mission objectives without losing a single vehicle."
-
-msgid "missionSelection/taskDescription/1004/1"
-msgstr ""
-"Pass through the minefields and deliver the ceasefire order to your allies."
-
-msgid "missionSelection/taskDescription/1004/2"
-msgstr "Complete the main mission objectives in under %(win_timer)s."
-
-msgid "missionSelection/taskDescription/1004/3"
-msgstr ""
-"Complete the main mission objectives without taking damage from enemy mines "
-"and artillery."
-
-msgid "missionSelection/taskDescription/1005/1"
-msgstr "Reach the command center and stop the missile launch."
-
-msgid "missionSelection/taskDescription/1005/2"
-msgstr "Complete the main mission objectives in under %(win_timer)s."
-
-msgid "missionSelection/taskDescription/1005/3"
-msgstr "Complete the main mission objectives without losing a single vehicle."
-
-msgid "missionSelection/taskDescription/1006/1"
-msgstr "Reach the command center and stop the missile launch."
-
-msgid "missionSelection/taskDescription/1006/2"
-msgstr "Complete the main mission objectives in under %(win_timer)s."
-
-msgid "missionSelection/taskDescription/1006/3"
-msgstr "Complete the main mission objectives without losing a single vehicle."
 
 msgid "missionSelection/taskDescription/2/1"
 msgstr "Attack the town and destroy enemy vehicles."
@@ -586,22 +458,31 @@ msgstr "Damage blocked by armor {parSecondary_Start}(units){parSecondary_End}"
 msgid "tooltips/battleResultStat/armorUse/header"
 msgstr "Damage blocked"
 
-msgid "tooltips/battleResultStat/armorUse/info"
-msgstr ""
-"Counted:\n"
-"• Ricochet of enemy shots\n"
-"• Non-penetrating hits\n"
-"\n"
-"Hits by HE and HESH shells are not counted."
+msgid "tooltips/battleResultStat/armorUse/info/heHits"
+msgstr "Hits by HE and HESH shells are not counted."
+
+msgid "tooltips/battleResultStat/armorUse/info/header"
+msgstr "Counted:"
+
+msgid "tooltips/battleResultStat/armorUse/info/list/1"
+msgstr "Ricochet of enemy shots"
+
+msgid "tooltips/battleResultStat/armorUse/info/list/2"
+msgstr "Non-penetrating hits"
 
 msgid "tooltips/battleResultStat/assist/header"
 msgstr "Damage assisted"
 
-msgid "tooltips/battleResultStat/assist/info"
+msgid "tooltips/battleResultStat/assist/info/header"
 msgstr ""
-"The following damage caused by allies with your assistance is counted:\n"
-"• Damage upon your spotting\n"
-"• Damage upon your destroying a track and immobilizing the enemy vehicle"
+"The following damage caused by allies with your assistance is counted:"
+
+msgid "tooltips/battleResultStat/assist/info/list/1"
+msgstr "Damage upon your spotting"
+
+msgid "tooltips/battleResultStat/assist/info/list/2"
+msgstr ""
+"Damage upon your destroying a track and immobilizing the enemy vehicle"
 
 msgid "tooltips/battleResultStat/assist/total"
 msgstr ""
@@ -611,13 +492,20 @@ msgstr ""
 msgid "tooltips/battleResultStat/damage/header"
 msgstr "Damage caused"
 
-msgid "tooltips/battleResultStat/damage/info"
-msgstr ""
-"Counted:\n"
-"• Damage by a shot\n"
-"• Damage by ramming\n"
-"• Damage by fire\n"
-"• Damage by pushing the enemy vehicle off an obstacle."
+msgid "tooltips/battleResultStat/damage/info/header"
+msgstr "Counted:"
+
+msgid "tooltips/battleResultStat/damage/info/list/1"
+msgstr "Damage by a shot"
+
+msgid "tooltips/battleResultStat/damage/info/list/2"
+msgstr "Damage by ramming"
+
+msgid "tooltips/battleResultStat/damage/info/list/3"
+msgstr "Damage by fire"
+
+msgid "tooltips/battleResultStat/damage/info/list/4"
+msgstr "Damage by pushing the enemy vehicle off an obstacle."
 
 msgid "tooltips/battleResultStat/damage/total"
 msgstr "Total damage {parSecondary_Start}(units){parSecondary_End}"
@@ -625,20 +513,31 @@ msgstr "Total damage {parSecondary_Start}(units){parSecondary_End}"
 msgid "tooltips/battleResultStat/kills/header"
 msgstr "Enemies destroyed"
 
-msgid "tooltips/battleResultStat/kills/info"
-msgstr ""
-"Counted:\n"
-"• Destruction by a shot\n"
-"• Destruction by fire\n"
-"• Destruction by ramming\n"
-"• Destruction by drowning\n"
-"• Destruction by pushing the enemy vehicle off an obstacle\n"
-"• Destruction by overturning."
+msgid "tooltips/battleResultStat/kills/info/header"
+msgstr "Counted:"
+
+msgid "tooltips/battleResultStat/kills/info/list/1"
+msgstr "Destruction by a shot"
+
+msgid "tooltips/battleResultStat/kills/info/list/2"
+msgstr "Destruction by fire"
+
+msgid "tooltips/battleResultStat/kills/info/list/3"
+msgstr "Destruction by ramming"
+
+msgid "tooltips/battleResultStat/kills/info/list/4"
+msgstr "Destruction by drowning"
+
+msgid "tooltips/battleResultStat/kills/info/list/5"
+msgstr "Destruction by pushing the enemy vehicle off an obstacle"
+
+msgid "tooltips/battleResultStat/kills/info/list/6"
+msgstr "Destruction by overturning."
 
 msgid "tooltips/battleResultStat/missions/header"
 msgstr "Completed missions"
 
-msgid "tooltips/battleResultStat/missions/info"
+msgid "tooltips/battleResultStat/missions/info/header"
 msgstr ""
 "The number of completed missions and\n"
 "all currently available missions.\n"

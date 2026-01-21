@@ -23,7 +23,7 @@ msgid "awardView/toHangar"
 msgstr "View in Garage"
 
 msgid "awardView/vehicleNumberTitle"
-msgstr "%(vehicleInfo) WITH A NUMBERED STYLE"
+msgstr "%(vehicleInfo) with a numbered style"
 
 msgid "awardView/vehicleNumberedTitle"
 msgstr "VEHICLE RECEIVED"
@@ -39,6 +39,9 @@ msgstr "CLOSE"
 
 msgid "commonTexts/eventTitle"
 msgstr "ASSEMBLY SHOP"
+
+msgid "commonTexts/percent"
+msgstr "%(percent)d%"
 
 msgid "confirm/NoSerialVehicles/buttonCancel/title"
 msgstr "Cancel"
@@ -109,8 +112,9 @@ msgstr ""
 
 msgid "eventInfo/description/sequentialEventMode"
 msgstr ""
-"The first %(styleTanksCount) players will receive a vehicle with a numbered 3D style,\n"
-"then %(withoutStyleTanksCount) vehicles will be delivered without the numbered 3D style."
+"The first %(styleTanksCount) players will receive a vehicle with a numbered "
+"3D style,{{@ class $br}}{{/}}then %(withoutStyleTanksCount) vehicles will be"
+" delivered without the numbered 3D style."
 
 msgid "eventInfo/header/subTitle/eventOver"
 msgstr "EVENT FINISHED"
@@ -193,10 +197,16 @@ msgstr ""
 "Hurry to spend resources required for assembling and get the %(vehicleName)!"
 
 msgid "mainView/footer/noVehicles/subTitle"
-msgstr "The spent resources will be returned to your account."
+msgstr "All spent resources will be returned to your account soon."
 
 msgid "mainView/footer/noVehicles/title"
 msgstr "Alas, No Vehicles Remaining"
+
+msgid "mainView/navbar/backBtn"
+msgstr "TO ASSEMBLY SHOP"
+
+msgid "mainView/navbar/title"
+msgstr "ASSEMBLY SHOP"
 
 msgid "mainView/preview/label"
 msgstr "Preview"
@@ -213,20 +223,14 @@ msgstr "Close"
 msgid "resourcesLoadingView/buttons/load"
 msgstr "Spend Resources"
 
-msgid "resourcesLoadingView/counter/current"
-msgstr "%(current)d%"
-
 msgid "resourcesLoadingView/counter/currentWithDelta"
 msgstr "%(current)d %(delta)d"
 
 msgid "resourcesLoadingView/counter/delta"
 msgstr "+%(delta)d%"
 
-msgid "resourcesLoadingView/footer/noVehicles/subTitle"
-msgstr "All spent resources will be returned to your account soon."
-
 msgid "resourcesLoadingView/noVehicleData"
-msgstr "Data temporarily unavailable %(icon)s"
+msgstr "%(icon)s Data temporarily unavailable"
 
 msgid "resourcesLoadingView/noVehiclesRemains"
 msgstr "No vehicles remaining"
@@ -245,9 +249,6 @@ msgstr "Maximum resources %(iconMax)"
 
 msgid "resourcesLoadingView/resourceRate/maxText"
 msgstr "Maximum %(maxValue)d %(iconInfo)"
-
-msgid "resourcesLoadingView/resourceRate/minValue"
-msgstr "%(minValue)d%"
 
 msgid "resourcesLoadingView/resourceRate/resourceLoadedText"
 msgstr "Resources collected %(iconLoaded)"
@@ -283,7 +284,7 @@ msgstr "You can purchase both vehicles during the event."
 msgid "tankPreview/title"
 msgstr ""
 "Collect and spend 100% of the required resources and receive the "
-"%(vehicleName)!"
+"%(vehicleInfo)!"
 
 msgid "tooltips/button/returnResources/description/text"
 msgstr ""
@@ -303,69 +304,33 @@ msgstr ""
 "The number is displayed with a delay and may differ from the actual number "
 "of vehicles."
 
-msgid "tooltips/entryPoint/forbidden/text"
-msgstr "This account type cannot participate in the event."
+msgid "tooltips/eventBanner/description/severalVehicles"
+msgstr ""
+"Spend resources and receive the %(vehicleName1) and %(vehicleName2). The "
+"number of vehicles is limited."
 
-msgid "tooltips/entryPoint/mainTitle/text"
+msgid "tooltips/eventBanner/description/singleVehicle"
+msgstr ""
+"Spend resources and receive the %(vehicleName) with a numbered 3D style. The"
+" number of vehicles is limited."
+
+msgid "tooltips/eventBanner/status/announce"
+msgstr "Will be available: %(dateRange)"
+
+msgid "tooltips/eventBanner/status/dateRange"
+msgstr "%(startDate)s - %(endDate)s"
+
+msgid "tooltips/eventBanner/status/inProgress"
+msgstr "Available for %(timer)s"
+
+msgid "tooltips/eventBanner/status/inactive"
+msgstr "Available in:%(timer)s"
+
+msgid "tooltips/eventBanner/title"
 msgstr "Assembly Shop"
 
-msgid "tooltips/entryPoint/notStartedEvent/parallelRewards/text"
-msgstr ""
-"Participate in the event, spend resources, and receive the %(rewardName1) "
-"and %(rewardName2). The number of vehicles is limited."
-
-msgid "tooltips/entryPoint/notStartedEvent/text"
-msgstr ""
-"Participate in the event, spend resources, and receive the %(vehicleName) "
-"%(uniqVehicleText). The number of vehicles is limited."
-
-msgid "tooltips/entryPoint/notStartedEvent/vehicleString/text"
-msgstr "with a numbered 3D style"
-
-msgid "tooltips/entryPoint/paused/text"
-msgstr "The event is temporarily unavailable"
-
-msgid "tooltips/entryPoint/regularAvailable/text"
-msgstr "Vehicles remaining"
-
-msgid "tooltips/entryPoint/regularReceived/text"
-msgstr "Vehicle received!"
-
-msgid "tooltips/entryPoint/rewardAvailableCount/text"
-msgstr "Vehicles remaining: "
-
-msgid "tooltips/entryPoint/rewardInGarage/text"
-msgstr "This vehicle is already in your Garage"
-
-msgid "tooltips/entryPoint/rewardReceived/text"
-msgstr "Vehicle received"
-
-msgid "tooltips/entryPoint/rewardSoldOut/text"
-msgstr "No vehicles remaining"
-
-msgid "tooltips/entryPoint/rewardsReceived/text"
-msgstr "Both vehicles have been received"
-
-msgid "tooltips/entryPoint/rewardsSoldOut/accentText/text"
-msgstr "NO MORE REMAINING"
-
-msgid "tooltips/entryPoint/rewardsSoldOut/text"
-msgstr "All vehicles %(accentText)s"
-
-msgid "tooltips/entryPoint/timer/lastUntil"
-msgstr "Lasts until:"
-
-msgid "tooltips/entryPoint/timer/leftTime"
-msgstr "Time remaining:"
-
-msgid "tooltips/entryPoint/timer/timeToStart"
-msgstr "Event starts on"
-
-msgid "tooltips/entryPoint/topAvailable/text"
-msgstr "Vehicles with numbers remaining"
-
-msgid "tooltips/entryPoint/topReceived/text"
-msgstr "Vehicle with a number received!"
+msgid "tooltips/mainView/info_tip/body"
+msgstr "Click to learn more about the event"
 
 msgid "tooltips/mainView/selectVehicle/button"
 msgstr ""
@@ -405,7 +370,7 @@ msgstr "Blueprint Fragments"
 
 msgid "tooltips/resourcesLoadingView/header/currency_description"
 msgstr ""
-"Awarded for active actions in battle. Can be also purchased for real money."
+"Awarded for active actions in battle. Can also be purchased for real money."
 
 msgid "tooltips/resourcesLoadingView/header/currency_title"
 msgstr "Currencies"
@@ -440,7 +405,7 @@ msgstr ""
 msgid "tooltips/uniq_style/moreInfo"
 msgstr ""
 "The distinguishing features of your vehicle can be hidden. Remove its "
-"numbered 3D style on the Exterior screen."
+"numbered 3D style on the Customization screen."
 
 msgid "tooltips/uniq_style/title"
 msgstr "Vehicle With a Number"

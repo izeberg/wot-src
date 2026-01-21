@@ -127,6 +127,9 @@ msgstr "Not purchased!"
 msgid "commonTooltip/descriptionEnded"
 msgstr "The event has ended."
 
+msgid "commonTooltip/eventStartSoon"
+msgstr "The event will start soon!"
+
 msgid "infoButton/body"
 msgstr "Click for more information."
 
@@ -161,6 +164,14 @@ msgstr ""
 
 msgid "levelReserves/title"
 msgstr "Combat Reserve Levels"
+
+msgid "playlist/warning/body"
+msgstr ""
+"This playlist contains vehicles that are not suitable for this game mode or "
+"not in your Garage."
+
+msgid "playlist/warning/header"
+msgstr "Vehicles unavailable (%(display)s/%(total)s)"
 
 msgid "randomReserve/characteristic/improved"
 msgstr "Combat Reserve characteristics improved"

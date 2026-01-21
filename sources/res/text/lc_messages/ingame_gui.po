@@ -142,6 +142,9 @@ msgstr "<Ally Name>, help!"
 msgid "chat_example/negative"
 msgstr "Negative!"
 
+msgid "chat_example/overheated_gun"
+msgstr "Gun overheated! Can't fire for <Reload Time> s"
+
 msgid "chat_example/positive"
 msgstr "Affirmative!"
 
@@ -284,6 +287,9 @@ msgstr "I'm moving to target: %(target)s!"
 
 msgid "chat_shortcuts/negative"
 msgstr "Negative!"
+
+msgid "chat_shortcuts/overheated_gun"
+msgstr "Gun overheated! Can't fire for %(floatArg1)d s"
 
 msgid "chat_shortcuts/positive"
 msgstr "%(target)s, affirmative!"
@@ -992,6 +998,9 @@ msgstr "Unable to fire: gun damaged."
 
 msgid "player_errors/cant_shoot/gun_locked"
 msgstr "Unable to Fire."
+
+msgid "player_errors/cant_shoot/gun_overheated"
+msgstr "Unable to fire: gun overheated."
 
 msgid "player_errors/cant_shoot/gun_reload"
 msgstr "Loading gun."
@@ -2864,6 +2873,9 @@ msgstr "to activate Liquid Fuel Boosters"
 
 msgid "siegeMode/hint/rocketAcceleration"
 msgstr "to activate jet boosters"
+
+msgid "siegeMode/hint/stagedJetBoosters"
+msgstr "to activate Sequential Rocket Thrusters"
 
 msgid "siegeMode/hint/targetDesignator"
 msgstr ""

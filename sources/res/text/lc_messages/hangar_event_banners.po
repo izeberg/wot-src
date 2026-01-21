@@ -10,6 +10,29 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "event/IntegratedAuctionEntryPont/inProgress/description"
+msgstr "A new lot is available!"
+
+msgid "event/IntegratedAuctionEntryPont/intro/description"
+msgstr "A new lot is available!"
+
+msgid "event/IntegratedAuctionEntryPont/timer/inactive"
+msgstr "Available in"
+
+msgid "event/IntegratedAuctionEntryPont/timer/progress"
+msgstr "Available for"
+
+msgid "event/IntegratedAuctionEntryPont/title"
+msgstr "BENEDICT'S SPECIAL OFFERS"
+
+msgid "event/IntegratedAuctionEntryPont/tooltip/description"
+msgstr ""
+"Check out the event and place your bids on exclusive lots! Each day brings a"
+" new lot!"
+
+msgid "event/IntegratedAuctionEntryPont/tooltip/title"
+msgstr "Benedict's Special Offers"
+
 msgid "event/PM3EntryPoint/inProgress/description"
 msgstr "Active operation"
 
@@ -48,9 +71,6 @@ msgstr "Join clan battles"
 
 msgid "event/StrongholdEventBanner/title"
 msgstr "Maneuvers"
-
-msgid "event/SurpriseEntryPoint/title"
-msgstr "Claim Gift"
 
 msgid "modeLabel"
 msgstr "MODE"
