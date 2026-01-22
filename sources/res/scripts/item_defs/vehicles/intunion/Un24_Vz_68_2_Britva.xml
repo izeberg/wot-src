@@ -3617,19 +3617,19 @@
 					<gunNode>G_L</gunNode>
 					<gunFire>HP_gunFire_L</gunFire>
 					<position>
-						-0.22 0.328 1.451
+						-0.116857 0.287748 1.451
 						<!--BW_String-->
 					</position>
-					<shotOffset>-0.159906 0.667417 -1.325155</shotOffset>
+					<shotOffset>
+						-0.00626 -0.00028 -1.325155
+						<!--BW_String-->
+					</shotOffset>
 				</gun>
 				<gun>
 					<gunNode>G_R</gunNode>
 					<gunFire>HP_gunFire_R</gunFire>
-					<position>
-						0.22 0.327733 1.451391
-						<!--BW_String-->
-					</position>
-					<shotOffset>-0.159906 0.667417 -1.325155</shotOffset>
+					<position>0.121888 0.284967 1.451391</position>
+					<shotOffset>-0.001422 0.001016 -1.325155</shotOffset>
 				</gun>
 			</multiGun>
 			<customizationSlots>

@@ -77,18 +77,18 @@
 	<hull>
 		<armor>
 			<armor_1>140</armor_1>
-			<armor_2>140</armor_2>
+			<armor_2>120</armor_2>
 			<armor_3>120</armor_3>
 			<armor_4>140</armor_4>
 			<armor_5>50</armor_5>
 			<armor_6>40</armor_6>
 			<armor_7>140</armor_7>
 			<armor_8>0</armor_8>
-			<armor_9>180</armor_9>
+			<armor_9>210</armor_9>
 			<armor_10>140</armor_10>
 			<armor_11>140</armor_11>
 			<armor_12>50</armor_12>
-			<armor_13>140</armor_13>
+			<armor_13>200</armor_13>
 			<armor_14>140</armor_14>
 			<armor_15>50</armor_15>
 			<armor_16>40</armor_16>
@@ -3780,7 +3780,7 @@
 				<armor_4>140</armor_4>
 				<armor_5>50</armor_5>
 				<armor_6>50</armor_6>
-				<armor_7>140</armor_7>
+				<armor_7>170</armor_7>
 				<armor_8>0</armor_8>
 				<armor_9>180</armor_9>
 				<armor_10>160</armor_10>
@@ -3793,7 +3793,7 @@
 					50
 					<vehicleDamageFactor>0</vehicleDamageFactor>
 				</armor_16>
-				<armor_17>140</armor_17>
+				<armor_17>160</armor_17>
 				<armor_18>50</armor_18>
 				<armor_19>80</armor_19>
 				<armor_20>40</armor_20>
@@ -3815,7 +3815,7 @@
 					<!--BW_String-->
 				</repairCost>
 			</turretRotatorHealth>
-			<circularVisionRadius>340</circularVisionRadius>
+			<circularVisionRadius>350</circularVisionRadius>
 			<surveyingDeviceHealth>
 				<maxHealth>90</maxHealth>
 				<maxRegenHealth>45</maxRegenHealth>
@@ -3859,12 +3859,12 @@
 					</shotDispersionRadius>
 					<reloadTime>8</reloadTime>
 					<clip>
-						<count>3</count>
+						<count>2</count>
 						<rate>15</rate>
 					</clip>
 					<autoreload>
 						<reloadTime>
-							11.5 9.8 8
+							8 11.5
 							<!--BW_String-->
 						</reloadTime>
 					</autoreload>
@@ -4002,12 +4002,12 @@
 					</shotDispersionRadius>
 					<reloadTime>12</reloadTime>
 					<clip>
-						<count>3</count>
+						<count>2</count>
 						<rate>15</rate>
 					</clip>
 					<autoreload>
 						<reloadTime>
-							14.5 13.7 12
+							9.4 12.6
 							<!--BW_String-->
 						</reloadTime>
 					</autoreload>

@@ -5377,8 +5377,8 @@
 			<level>9</level>
 			<notInShop>true</notInShop>
 			<price>90000</price>
-			<wwsoundPC>eng_ContinentalR_pc</wwsoundPC>
-			<wwsoundNPC>eng_ContinentalR_npc</wwsoundNPC>
+			<wwsoundPC>eng_Continental_R975_C1_pc</wwsoundPC>
+			<wwsoundNPC>eng_Continental_R975_C1_npc</wwsoundNPC>
 			<power>640</power>
 			<weight>1200</weight>
 			<maxHealth>360</maxHealth>
@@ -5388,8 +5388,8 @@
 				0.2
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>470</rpm_min>
-			<rpm_max>2094</rpm_max>
+			<rpm_min>359</rpm_min>
+			<rpm_max>2692</rpm_max>
 		</GTD_1GV8>
 	</shared>
 </root>

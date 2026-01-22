@@ -1097,8 +1097,8 @@
 			<tags>diesel</tags>
 			<level>8</level>
 			<price>40000</price>
-			<wwsoundPC>eng_V2K_pc</wwsoundPC>
-			<wwsoundNPC>eng_V2K_npc</wwsoundNPC>
+			<wwsoundPC>eng_cadillac_series_42_pc</wwsoundPC>
+			<wwsoundNPC>eng_cadillac_series_42_npc</wwsoundNPC>
 			<power>490</power>
 			<weight>910</weight>
 			<maxHealth>320</maxHealth>
@@ -1109,7 +1109,7 @@
 				<!--BW_String-->
 			</fireStartingChance>
 			<rpm_min>400</rpm_min>
-			<rpm_max>2100</rpm_max>
+			<rpm_max>3200</rpm_max>
 		</Rolls_Royce_K60>
 		<Rolls_Royce_K60_M1>
 			<userString>#sweden_vehicles:Rolls_Royce_K60_M1</userString>
@@ -1127,8 +1127,8 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>400</rpm_min>
-			<rpm_max>2100</rpm_max>
+			<rpm_min>339</rpm_min>
+			<rpm_max>2221</rpm_max>
 		</Rolls_Royce_K60_M1>
 		<Rolls_Royce_K60_M1_T>
 			<userString>#sweden_vehicles:Rolls_Royce_K60_M1_T</userString>
@@ -1147,8 +1147,8 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>400</rpm_min>
-			<rpm_max>2100</rpm_max>
+			<rpm_min>339</rpm_min>
+			<rpm_max>2221</rpm_max>
 		</Rolls_Royce_K60_M1_T>
 		<Boeing_502_10>
 			<userString>#sweden_vehicles:Boeing_502_10</userString>

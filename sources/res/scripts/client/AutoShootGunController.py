@@ -249,24 +249,24 @@ class AutoShootGunController(BigWorld.DynamicScriptComponent):
         self.__updateAutoShootingAvatar()
 
     def __onAppearanceReady(self):
-        if self.__appearanceInited:
+        forceReload = self.entity.respawnCompactDescr is not None
+        if forceReload or self.__appearanceInited:
             return
-        else:
-            params = self.entity.typeDescriptor.gun
-            shotInterval = params.autoShoot.shotInterval
-            self.__defaultShootRate = 1.0 / shotInterval
-            _, effects, _ = params.effects
-            autoShootEffect = effects.relatedEffects.get('autoShoot', None)
-            if autoShootEffect is not None:
-                autoShootEffectDescr = autoShootEffect.effectsList.descriptors()[0]
-                self.__shootingPrefab = autoShootEffectDescr.effectsPrefab
-                self.__shootingAnimator.initSoundParams(self.entity.isPlayerVehicle, autoShootEffectDescr.activationSound, autoShootEffectDescr.deactivationSound)
-                appearance = self.entity.appearance
-                loadAppearancePrefab(self.__shootingPrefab, appearance, self.__onShootingPrefabLoaded)
-                _logger.debug('QFG: loadAppearancePrefab for %s', self.entity.id)
-            self.__updateAutoShootingAppearance()
-            self.__appearanceInited = True
-            return
+        params = self.entity.typeDescriptor.gun
+        shotInterval = params.autoShoot.shotInterval
+        self.__defaultShootRate = 1.0 / shotInterval
+        _, effects, _ = params.effects
+        autoShootEffect = effects.relatedEffects.get('autoShoot', None)
+        if autoShootEffect is not None:
+            autoShootEffectDescr = autoShootEffect.effectsList.descriptors()[0]
+            self.__shootingPrefab = autoShootEffectDescr.effectsPrefab
+            self.__shootingAnimator.initSoundParams(self.entity.isPlayerVehicle, autoShootEffectDescr.activationSound, autoShootEffectDescr.deactivationSound)
+            appearance = self.entity.appearance
+            loadAppearancePrefab(self.__shootingPrefab, appearance, self.__onShootingPrefabLoaded)
+            _logger.debug('QFG: loadAppearancePrefab for %s', self.entity.id)
+        self.__updateAutoShootingAppearance()
+        self.__appearanceInited = True
+        return
 
     def __onShootingPrefabLoaded(self, root):
         if not root.isValid:

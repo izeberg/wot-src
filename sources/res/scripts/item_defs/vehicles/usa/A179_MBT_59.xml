@@ -2164,10 +2164,10 @@
 						<gun>60</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.39
+						0.36
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>18</reloadTime>
+					<reloadTime>20</reloadTime>
 					<aimingTime>
 						2.7
 						<!--BW_String-->
@@ -2197,6 +2197,13 @@
 							<!--BW_String-->
 						</whileGunDamaged>
 					</shotDispersionFactors>
+					<dualAccuracy>
+						<afterShotDispersionRadius>
+							0.46
+							<!--BW_String-->
+						</afterShotDispersionRadius>
+						<coolingDelay>25</coolingDelay>
+					</dualAccuracy>
 					<customizationSlots>
 						<slot>
 							<slotType>paint</slotType>

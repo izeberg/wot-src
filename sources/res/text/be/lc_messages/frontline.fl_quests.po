@@ -18,7 +18,7 @@ msgid "AT_SPG_damage"
 msgstr "Нанести %(goal)s ед. урона"
 
 msgid "AT_SPG_hits"
-msgstr "Нанести урон %(goal)s ед. техники"
+msgstr "Нанести урон %(goal)s разным машинам или объектам противника"
 
 msgid "AT_SPG_kills"
 msgstr "Уничтожить %(goal)s ед. техники"
@@ -54,7 +54,7 @@ msgid "heavyTank_killsDiversity"
 msgstr "Уничтожить технику %(totalGoal)s разных типов"
 
 msgid "lightTank_critsTracks"
-msgstr "Обездвижить %(goal)s ед. техники противника, сбивая гусеницы"
+msgstr "Сбить гусеницу %(goal)s ед. техники противника"
 
 msgid "lightTank_damage"
 msgstr "Нанести %(goal)s ед. урона"
@@ -69,13 +69,13 @@ msgstr[1] "Нанести урон выстрелами %(goal)s раза"
 msgstr[2] "Нанести урон выстрелами %(goal)s раз"
 
 msgid "mediumTank_critsTracks"
-msgstr "Обездвижить %(goal)s ед. техники противника, сбивая гусеницы"
+msgstr "Сбить гусеницу %(goal)s ед. техники противника"
 
 msgid "mediumTank_damage"
 msgstr "Нанести %(goal)s ед. урона"
 
 msgid "mediumTank_hits"
-msgstr "Нанести урон %(goal)s ед. техники"
+msgstr "Нанести урон %(goal)s разным машинам или объектам противника"
 
 msgid "mediumTank_hitsDiversity"
 msgstr "Нанести урон %(uniqueGoal)s разным типам техники"
