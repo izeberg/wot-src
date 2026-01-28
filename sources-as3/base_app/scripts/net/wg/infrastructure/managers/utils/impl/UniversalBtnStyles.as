@@ -68,17 +68,13 @@ package net.wg.infrastructure.managers.utils.impl
       
       private static const TF_COLOR:uint = 16711404;
       
-      private static const TF_COLOR_NY:uint = 13434879;
-      
       private static const STATES_ORANGE_SHADOW_FILTER:DropShadowFilter = new DropShadowFilter(1,270,6684672,1,1,1,1,0,false,false,false);
       
       private static const STATES_BASIC_SHADOW_FILTER:DropShadowFilter = new DropShadowFilter(1,270,0,1,1,1,1,0,false,false,false);
       
-      private static const TF_SIZE_SLIM:uint = 12;
+      private static const TF_SIZE_SLIM:uint = 13;
       
       private static const TF_SIZE_HEAVY:uint = 15;
-      
-      private static const TF_SIZE_NY_HEAVY:uint = 14;
        
       
       private var _styles:Dictionary = null;

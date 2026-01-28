@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G00_Startgestell/crash/lod2/Chassis</nodefullVisual>
+	<parent>vehicles/german/G00_Startgestell/crash/lod3/Chassis</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-0.870354 0.591884 -0.091886</min>
+		<max>0.870000 0.775656 0.091886</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

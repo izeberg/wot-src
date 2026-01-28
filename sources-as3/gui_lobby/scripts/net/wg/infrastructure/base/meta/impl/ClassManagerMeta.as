@@ -989,8 +989,10 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.epicBattles.components.BackgroundComponent;
    import net.wg.gui.lobby.epicBattles.components.EpicBattlesLevelUpSkillButton;
    import net.wg.gui.lobby.epicBattles.components.EpicBattlesWidget;
+   import net.wg.gui.lobby.epicBattles.components.EpicBattlesWidgetBaseButton;
    import net.wg.gui.lobby.epicBattles.components.EpicBattlesWidgetButton;
    import net.wg.gui.lobby.epicBattles.components.EpicBattlesWidgetComponent;
+   import net.wg.gui.lobby.epicBattles.components.EpicBattlesWidgetIntroButton;
    import net.wg.gui.lobby.epicBattles.components.EpicReservesPointsPanel;
    import net.wg.gui.lobby.epicBattles.components.afterBattle.EpicBattlesAfterBattleFameProgressBar;
    import net.wg.gui.lobby.epicBattles.components.afterBattle.EpicBattlesAfterBattleMaxLevelInfo;
@@ -1242,6 +1244,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.hangar.quests.ResourceWellEntryPoint;
    import net.wg.gui.lobby.hangar.quests.SecondaryEntryPoint;
    import net.wg.gui.lobby.hangar.quests.SecondaryEntryPointContent;
+   import net.wg.gui.lobby.hangar.quests.StrongholdWidget;
    import net.wg.gui.lobby.hangar.quests.UniversalFlagEntryPoint;
    import net.wg.gui.lobby.hangar.quests.WinbackWidget;
    import net.wg.gui.lobby.hangar.tcarousel.BaseTankIcon;
@@ -1270,7 +1273,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.hangar.vehicleParameters.components.VehParamRendererWithHighlight;
    import net.wg.gui.lobby.header.BadgeSlot;
    import net.wg.gui.lobby.header.LobbyHeader;
-   import net.wg.gui.lobby.header.NYWidgetUI;
    import net.wg.gui.lobby.header.OnlineCounter;
    import net.wg.gui.lobby.header.TankPanel;
    import net.wg.gui.lobby.header.events.BattleTypeSelectorEvent;
@@ -1385,7 +1387,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.missions.MissionDetailsContainerView;
    import net.wg.gui.lobby.missions.MissionsBattleMattersView;
    import net.wg.gui.lobby.missions.MissionsBattlePassView;
-   import net.wg.gui.lobby.missions.MissionsCategoriesView;
    import net.wg.gui.lobby.missions.MissionsFilterPopoverView;
    import net.wg.gui.lobby.missions.MissionsGFContainerView;
    import net.wg.gui.lobby.missions.MissionsGroupedView;
@@ -1517,10 +1518,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.modulesPanel.interfaces.IDeviceSlot;
    import net.wg.gui.lobby.modulesPanel.interfaces.IModuleSlot;
    import net.wg.gui.lobby.modulesPanel.interfaces.IModulesPanel;
-   import net.wg.gui.lobby.newYear.NYSelectVehiclePopover;
-   import net.wg.gui.lobby.newYear.NYSelectVehicleRenderer;
-   import net.wg.gui.lobby.newYear.NYVehicleSelectorFilter;
-   import net.wg.gui.lobby.newYear.vo.NYSelectVehiclePopoverVO;
    import net.wg.gui.lobby.notify_center.NotifyCenterDialog;
    import net.wg.gui.lobby.personalMissions.CampaignOperationsContainer;
    import net.wg.gui.lobby.personalMissions.PersonalMissionsPage;
@@ -1874,7 +1871,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.questsWindow.components.QuestBigIconAwardItem;
    import net.wg.gui.lobby.questsWindow.components.QuestIconAwardsBlock;
    import net.wg.gui.lobby.questsWindow.components.QuestIconElement;
-   import net.wg.gui.lobby.questsWindow.components.QuestSingleLineTextAwardBlock;
    import net.wg.gui.lobby.questsWindow.components.QuestStatusComponent;
    import net.wg.gui.lobby.questsWindow.components.QuestTextAwardBlock;
    import net.wg.gui.lobby.questsWindow.components.QuestsCounter;
@@ -2497,8 +2493,9 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.vehicleCustomization.controls.ShopEntryPoint;
    import net.wg.gui.lobby.vehicleCustomization.controls.bottomPanel.CustomizationBottomPanelTabBar;
    import net.wg.gui.lobby.vehicleCustomization.controls.bottomPanel.CustomizationBottomPanelTabButton;
-   import net.wg.gui.lobby.vehicleCustomization.controls.bottomPanel.CustomizationCarouselInfoLabel;
+   import net.wg.gui.lobby.vehicleCustomization.controls.bottomPanel.CustomizationCarouselFilters;
    import net.wg.gui.lobby.vehicleCustomization.controls.bottomPanel.CustomizationCarouselOverlay;
+   import net.wg.gui.lobby.vehicleCustomization.controls.bottomPanel.CustomizationTabLayout;
    import net.wg.gui.lobby.vehicleCustomization.controls.magneticTool.MagneticToolController;
    import net.wg.gui.lobby.vehicleCustomization.controls.propertiesSheet.CustomizationPropertiesSheet;
    import net.wg.gui.lobby.vehicleCustomization.controls.propertiesSheet.CustomizationSheetBaseBtnRenderer;
@@ -2532,6 +2529,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.vehicleCustomization.data.CustomizationBillLineVO;
    import net.wg.gui.lobby.vehicleCustomization.data.CustomizationBottomPanelInitVO;
    import net.wg.gui.lobby.vehicleCustomization.data.CustomizationBottomPanelNotificationVO;
+   import net.wg.gui.lobby.vehicleCustomization.data.CustomizationCarouselFilterSelectedVO;
    import net.wg.gui.lobby.vehicleCustomization.data.CustomizationEditedKitPopoverListVO;
    import net.wg.gui.lobby.vehicleCustomization.data.CustomizationHeaderVO;
    import net.wg.gui.lobby.vehicleCustomization.data.CustomizationItemIconRendererVO;
@@ -5031,9 +5029,13 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_LOBBY_EPICBATTLES_COMPONENTS_EPICBATTLESWIDGET:Class = EpicBattlesWidget;
       
+      public static const NET_WG_GUI_LOBBY_EPICBATTLES_COMPONENTS_EPICBATTLESWIDGETBASEBUTTON:Class = EpicBattlesWidgetBaseButton;
+      
       public static const NET_WG_GUI_LOBBY_EPICBATTLES_COMPONENTS_EPICBATTLESWIDGETBUTTON:Class = EpicBattlesWidgetButton;
       
       public static const NET_WG_GUI_LOBBY_EPICBATTLES_COMPONENTS_EPICBATTLESWIDGETCOMPONENT:Class = EpicBattlesWidgetComponent;
+      
+      public static const NET_WG_GUI_LOBBY_EPICBATTLES_COMPONENTS_EPICBATTLESWIDGETINTROBUTTON:Class = EpicBattlesWidgetIntroButton;
       
       public static const NET_WG_GUI_LOBBY_EPICBATTLES_COMPONENTS_EPICRESERVESPOINTSPANEL:Class = EpicReservesPointsPanel;
       
@@ -5537,6 +5539,8 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_LOBBY_HANGAR_QUESTS_SECONDARYENTRYPOINTCONTENT:Class = SecondaryEntryPointContent;
       
+      public static const NET_WG_GUI_LOBBY_HANGAR_QUESTS_STRONGHOLDWIDGET:Class = StrongholdWidget;
+      
       public static const NET_WG_GUI_LOBBY_HANGAR_QUESTS_UNIVERSALFLAGENTRYPOINT:Class = UniversalFlagEntryPoint;
       
       public static const NET_WG_GUI_LOBBY_HANGAR_QUESTS_WINBACKWIDGET:Class = WinbackWidget;
@@ -5592,8 +5596,6 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_LOBBY_HEADER_BADGESLOT:Class = BadgeSlot;
       
       public static const NET_WG_GUI_LOBBY_HEADER_LOBBYHEADER:Class = LobbyHeader;
-      
-      public static const NET_WG_GUI_LOBBY_HEADER_NYWIDGETUI:Class = NYWidgetUI;
       
       public static const NET_WG_GUI_LOBBY_HEADER_ONLINECOUNTER:Class = OnlineCounter;
       
@@ -5822,8 +5824,6 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_LOBBY_MISSIONS_MISSIONSBATTLEMATTERSVIEW:Class = MissionsBattleMattersView;
       
       public static const NET_WG_GUI_LOBBY_MISSIONS_MISSIONSBATTLEPASSVIEW:Class = MissionsBattlePassView;
-      
-      public static const NET_WG_GUI_LOBBY_MISSIONS_MISSIONSCATEGORIESVIEW:Class = MissionsCategoriesView;
       
       public static const NET_WG_GUI_LOBBY_MISSIONS_MISSIONSFILTERPOPOVERVIEW:Class = MissionsFilterPopoverView;
       
@@ -6086,14 +6086,6 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_LOBBY_MODULESPANEL_INTERFACES_IMODULESLOT:Class = IModuleSlot;
       
       public static const NET_WG_GUI_LOBBY_MODULESPANEL_INTERFACES_IMODULESPANEL:Class = IModulesPanel;
-      
-      public static const NET_WG_GUI_LOBBY_NEWYEAR_NYSELECTVEHICLEPOPOVER:Class = NYSelectVehiclePopover;
-      
-      public static const NET_WG_GUI_LOBBY_NEWYEAR_NYSELECTVEHICLERENDERER:Class = NYSelectVehicleRenderer;
-      
-      public static const NET_WG_GUI_LOBBY_NEWYEAR_NYVEHICLESELECTORFILTER:Class = NYVehicleSelectorFilter;
-      
-      public static const NET_WG_GUI_LOBBY_NEWYEAR_VO_NYSELECTVEHICLEPOPOVERVO:Class = NYSelectVehiclePopoverVO;
       
       public static const NET_WG_GUI_LOBBY_NOTIFY_CENTER_NOTIFYCENTERDIALOG:Class = NotifyCenterDialog;
       
@@ -6804,8 +6796,6 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_LOBBY_QUESTSWINDOW_COMPONENTS_QUESTSCOUNTER:Class = QuestsCounter;
       
       public static const NET_WG_GUI_LOBBY_QUESTSWINDOW_COMPONENTS_QUESTSDASHLINEITEM:Class = QuestsDashlineItem;
-      
-      public static const NET_WG_GUI_LOBBY_QUESTSWINDOW_COMPONENTS_QUESTSINGLELINETEXTAWARDBLOCK:Class = QuestSingleLineTextAwardBlock;
       
       public static const NET_WG_GUI_LOBBY_QUESTSWINDOW_COMPONENTS_QUESTSTATUSCOMPONENT:Class = QuestStatusComponent;
       
@@ -8023,9 +8013,11 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CONTROLS_BOTTOMPANEL_CUSTOMIZATIONBOTTOMPANELTABBUTTON:Class = CustomizationBottomPanelTabButton;
       
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CONTROLS_BOTTOMPANEL_CUSTOMIZATIONCAROUSELINFOLABEL:Class = CustomizationCarouselInfoLabel;
+      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CONTROLS_BOTTOMPANEL_CUSTOMIZATIONCAROUSELFILTERS:Class = CustomizationCarouselFilters;
       
       public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CONTROLS_BOTTOMPANEL_CUSTOMIZATIONCAROUSELOVERLAY:Class = CustomizationCarouselOverlay;
+      
+      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CONTROLS_BOTTOMPANEL_CUSTOMIZATIONTABLAYOUT:Class = CustomizationTabLayout;
       
       public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CONTROLS_MAGNETICTOOL_MAGNETICTOOLCONTROLLER:Class = MagneticToolController;
       
@@ -8092,6 +8084,8 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_DATA_CUSTOMIZATIONBOTTOMPANELINITVO:Class = CustomizationBottomPanelInitVO;
       
       public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_DATA_CUSTOMIZATIONBOTTOMPANELNOTIFICATIONVO:Class = CustomizationBottomPanelNotificationVO;
+      
+      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_DATA_CUSTOMIZATIONCAROUSELFILTERSELECTEDVO:Class = CustomizationCarouselFilterSelectedVO;
       
       public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_DATA_CUSTOMIZATIONEDITEDKITPOPOVERLISTVO:Class = CustomizationEditedKitPopoverListVO;
       

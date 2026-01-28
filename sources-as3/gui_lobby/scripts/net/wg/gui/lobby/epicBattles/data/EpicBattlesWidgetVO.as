@@ -15,6 +15,8 @@ package net.wg.gui.lobby.epicBattles.data
       
       public var counterValue:int = -1;
       
+      public var isSupplyHint:Boolean = false;
+      
       public function EpicBattlesWidgetVO(param1:Object)
       {
          super(param1);

@@ -10,6 +10,7 @@ package net.wg.gui.battle.views.postmortemPanel
    import net.wg.gui.components.controls.Image;
    import net.wg.gui.components.controls.UILoaderAlt;
    import net.wg.infrastructure.interfaces.entity.IDisposable;
+   import org.idmedia.as3commons.util.StringUtils;
    
    public class VehiclePanel extends Sprite implements IDisposable
    {
@@ -63,7 +64,14 @@ package net.wg.gui.battle.views.postmortemPanel
       
       public function setVehicleData(param1:String, param2:String, param3:String, param4:String) : void
       {
-         this.typeMC.source = param2;
+         if(StringUtils.isNotEmpty(param2))
+         {
+            this.typeMC.source = param2;
+         }
+         else
+         {
+            this.typeMC.visible = false;
+         }
          this.nameTF.text = param3;
          this.levelTF.text = param1;
          if(param4 == Values.EMPTY_STR)

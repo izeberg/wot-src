@@ -34,6 +34,10 @@ package net.wg.gui.components.crosshairPanel.components.autoloader
          super();
       }
       
+      override public function setReloadingState(param1:String) : void
+      {
+      }
+      
       override public function autoloaderBoostUpdate(param1:BoostIndicatorStateParamsVO, param2:Number, param3:Boolean = false) : void
       {
          this.boostndicator.autoloaderBoostUpdate(param1,param2,param3);

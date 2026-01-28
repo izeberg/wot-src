@@ -1,6 +1,4 @@
-import logging, typing
-from new_year_account_settings import getNYSetting, setNYSettings
-from new_year.ny_constants import NY_IS_CELEB_VOICEOVERS_ENABLED, NY_WEEK_IN_QUESTS_VISITED
+import logging
 from Event import Event, EventManager
 from frameworks.wulf import ViewFlags, ViewSettings
 from gui.Scaleform.daapi.settings.views import VIEW_ALIAS
@@ -9,9 +7,8 @@ from gui.Scaleform.genConsts.QUESTS_ALIASES import QUESTS_ALIASES
 from gui.impl.gen import R
 from gui.impl.gen.view_models.views.lobby.daily.daily_quests_view_model import DailyQuestsViewModel
 from gui.impl.gui_decorators import args2params
-from gui.impl.lobby.daily import DailyTabs, NYTabs
+from gui.impl.lobby.daily import DailyTabs
 from gui.impl.lobby.daily.daily_quests_facade import DailyQuestsFacade
-from gui.impl.lobby.daily.ny_quests_facade import NYQuestsFacade
 from gui.impl.lobby.daily.daily_quests_info_page import showDailyQuestsInfoPage
 from gui.impl.lobby.play_streak.play_streak_facade import PlayStreakFacade
 from gui.impl.lobby.play_streak.play_streak_info_page import showPlayStreakInfoPage
@@ -20,17 +17,11 @@ from gui.server_events import settings
 from gui.server_events.events_helpers import isPremiumQuestsEnable, isDailyQuestsEnable, isPlayStreakEnable, isDailyRegularQuestsEnabled
 from gui.shared import events
 from gui.shared import g_eventBus, EVENT_BUS_SCOPE
-from gui.shared.event_dispatcher import showDailyQuestsIntroWindow, showNyDailyQuestsInfoWindow
-from SoundGroups import g_instance as SoundGroupsManager
+from gui.shared.event_dispatcher import showDailyQuestsIntroWindow
 from helpers import dependency
 from skeletons.gui.server_events import IEventsCache
 from skeletons.gui.shared import IItemsCache
 from skeletons.gui.lobby_context import ILobbyContext
-from new_year.skeletons.new_year import INewYearController
-from new_year.gui.impl.lobby.new_year.quests.ny_quest_helper import getCurrentWeek
-from new_year.gui.impl.new_year.sounds import NewYearCelebVoiceOvers
-if typing.TYPE_CHECKING:
-    from SoundGroups import SoundGroups
 _logger = logging.getLogger(__name__)
 DEFAULT_DAILY_TAB = DailyTabs.QUESTS
 DAILY_VIEW = (
@@ -41,10 +32,9 @@ class DailyQuestsView(ViewImpl):
     eventsCache = dependency.descriptor(IEventsCache)
     itemsCache = dependency.descriptor(IItemsCache)
     lobbyContext = dependency.descriptor(ILobbyContext)
-    nyController = dependency.descriptor(INewYearController)
     __slots__ = ('__proxyMissionsPage', '__viewActive', '__tabs', '__tabsToSubview',
                  '__subviews', '__currentTabID', '__dailyQuests', '__em', 'onIsCurrentMissionTab',
-                 'onPlayStreakTab', '__playStreak', '__nyQuests', '__celebSound')
+                 'onPlayStreakTab', '__playStreak', '__battleTypes', '__tooltipData')
 
     def __init__(self, layoutID=R.views.lobby.daily.DailyQuestsView()):
         viewSettings = ViewSettings(layoutID, ViewFlags.VIEW, DailyQuestsViewModel())
@@ -52,21 +42,18 @@ class DailyQuestsView(ViewImpl):
         self.__tabs = {}
         self.__tabsToSubview = {}
         self.__subviews = []
-        self.__proxyMissionsPage = None
         self.__dailyQuests = DailyQuestsFacade(self)
         self.__tabs.update(self.__dailyQuests.getTabs())
         self.__tabsToSubview.update(self.__dailyQuests.getSubviews())
         self.__playStreak = PlayStreakFacade(self)
         self.__tabs.update(self.__playStreak.getTabs())
         self.__tabsToSubview.update(self.__playStreak.getSubviews())
-        self.__nyQuests = NYQuestsFacade(self)
-        self.__tabsToSubview.update(self.__nyQuests.getSubviews())
         self.__currentTabID = None
         self.__viewActive = False
         self.__em = EventManager()
         self.onIsCurrentMissionTab = Event(self.__em)
         self.onPlayStreakTab = Event(self.__em)
-        self.__celebSound = None
+        self.__tooltipData = {}
         return
 
     @property
@@ -134,14 +121,8 @@ class DailyQuestsView(ViewImpl):
         else:
             with self.viewModel.transaction() as (tx):
                 tx.setIntroSeen(True)
-        if getNYSetting(NY_WEEK_IN_QUESTS_VISITED) != getCurrentWeek():
-            self.__toggleCelebVoiceover()
-            setNYSettings(NY_WEEK_IN_QUESTS_VISITED, getCurrentWeek())
 
     def _finalize(self):
-        if self.__celebSound is not None:
-            self.__stopVoiceover()
-            self.__celebSound = None
         self.__dailyQuests.finalize()
         self.__playStreak.finalize()
         self.__tabs.clear()
@@ -156,12 +137,8 @@ class DailyQuestsView(ViewImpl):
         model.setIsDailyRegularEnabled(isDailyRegularQuestsEnabled())
         model.setIsDailyPremEnabled(isPremiumQuestsEnable())
         model.setIsSerialEnterEnabled(isPlayStreakEnable())
-        model.setIsPersonVoicesNowPlaying(False)
-        model.setIsPersonVoicesEnabled(self.nyController.isCelebVoiceoverEnabled())
         battleTypes = model.getDailyBattleTypes()
-        nyBattleTypes = model.getNyBattleTypes()
         self.__dailyQuests.updateBattleModes(battleTypes)
-        self.__dailyQuests.updateNyBattleModes(nyBattleTypes)
 
     def _getEvents(self):
         return (
@@ -172,13 +149,7 @@ class DailyQuestsView(ViewImpl):
          (
           self.viewModel.onInfoClick, self.__showInfoPage),
          (
-          self.viewModel.onShowInfo, self.__showPlayStreakInfoPage),
-         (
-          self.viewModel.onNyInfoClick, self.__showNyDailyInfoPage),
-         (
-          self.viewModel.onStartStopPersonVoice, self.__toggleCelebVoiceover),
-         (
-          self.viewModel.changePersonVoicesEnabled, self.__updateCelebVoicesEnabled))
+          self.viewModel.onShowInfo, self.__showPlayStreakInfoPage))
 
     def _getListeners(self):
         return (
@@ -196,8 +167,6 @@ class DailyQuestsView(ViewImpl):
 
     def __setCurrentTab(self, tabIdx, model):
         if tabIdx == self.__currentTabID:
-            return
-        if tabIdx == NYTabs.DAILY and not self.nyController.isEnabled():
             return
         for subview in self.__subviews:
             subview.deactivate()
@@ -234,38 +203,3 @@ class DailyQuestsView(ViewImpl):
 
     def __showPlayStreakInfoPage(self):
         showPlayStreakInfoPage()
-
-    def __showNyDailyInfoPage(self):
-        showNyDailyQuestsInfoWindow()
-
-    def __toggleCelebVoiceover(self):
-        if not self.nyController.isCelebVoiceoverEnabled():
-            return
-        else:
-            with self.viewModel.transaction() as (ts):
-                soundMessage = NewYearCelebVoiceOvers.NY_QUESTS_CELEB_MESSAGES_PREFIX.format(getCurrentWeek())
-                if self.__celebSound is None:
-                    self.__celebSound = SoundGroupsManager.WWgetSoundCallback(soundMessage, None, None, self.__setStopPlayback)
-                isPLaying = self.__celebSound.isPlaying
-                ts.setIsPersonVoicesNowPlaying(not isPLaying)
-                if isPLaying:
-                    self.__stopVoiceover()
-                else:
-                    self.__celebSound.play()
-            return
-
-    def __setStopPlayback(self, _):
-        with self.viewModel.transaction() as (ts):
-            ts.setIsPersonVoicesNowPlaying(False)
-
-    def __stopVoiceover(self):
-        SoundGroupsManager.playSound2D(NewYearCelebVoiceOvers.NY_QUESTS_CELEB_STOP_VOICEOVER)
-
-    def __updateCelebVoicesEnabled(self):
-        with self.viewModel.transaction() as (ts):
-            isEnabled = self.nyController.isCelebVoiceoverEnabled()
-            if isEnabled and self.__celebSound and self.__celebSound.isPlaying:
-                ts.setIsPersonVoicesNowPlaying(False)
-                self.__stopVoiceover()
-            ts.setIsPersonVoicesEnabled(not isEnabled)
-            setNYSettings(NY_IS_CELEB_VOICEOVERS_ENABLED, not isEnabled)

@@ -35,10 +35,6 @@ package
       
       public static const MAPS_ICONS_CUSTOMIZATION_PROGRESSION_STYLES_STAGE_SWITCHER_BG:String = "../maps/icons/customization/progression_styles/stage_switcher/bg.png";
       
-      public static const MAPS_ICONS_DAILY_NEWYEAR_BG:String = "../maps/icons/daily/newYear/bg.png";
-      
-      public static const MAPS_ICONS_DAILY_NEWYEAR_INFO_BG:String = "../maps/icons/daily/newYear/info/bg.png";
-      
       public static const MAPS_ICONS_DEDICATION_BG:String = "../maps/icons/dedication/bg.png";
       
       public static const MAPS_ICONS_DEMOUNTKIT_BG:String = "../maps/icons/demountKit/bg.png";

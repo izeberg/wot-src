@@ -119,6 +119,7 @@ package net.wg.gui.components.advanced.collapsingBar
       private function expand(param1:ResizableButton) : void
       {
          param1.label = param1.data.label;
+         param1.validateNow();
          var _loc2_:Point = !!this._bar.isBarCollapsed ? this._maxExpandedSize : param1.getOriginSize();
          param1.setSize(_loc2_.x + this._sizeOffset.x,_loc2_.y + this._sizeOffset.y);
       }

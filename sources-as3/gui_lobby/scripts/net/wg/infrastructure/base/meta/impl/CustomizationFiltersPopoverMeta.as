@@ -11,6 +11,8 @@ package net.wg.infrastructure.base.meta.impl
       
       public var changeGroup:Function;
       
+      public var changeDisplayMethod:Function;
+      
       public var setDefaultFilter:Function;
       
       public var setShowOnlyHistoric:Function;
@@ -22,6 +24,8 @@ package net.wg.infrastructure.base.meta.impl
       public var setShowOnlyProgressionDecals:Function;
       
       public var setShowOnlyEditableStyles:Function;
+      
+      public var setShowOnlyProgressionStyles:Function;
       
       public var onFilterChange:Function;
       
@@ -48,6 +52,12 @@ package net.wg.infrastructure.base.meta.impl
       {
          App.utils.asserter.assertNotNull(this.changeGroup,"changeGroup" + Errors.CANT_NULL);
          this.changeGroup(param1);
+      }
+      
+      public function changeDisplayMethodS(param1:int) : void
+      {
+         App.utils.asserter.assertNotNull(this.changeDisplayMethod,"changeDisplayMethod" + Errors.CANT_NULL);
+         this.changeDisplayMethod(param1);
       }
       
       public function setDefaultFilterS() : void
@@ -86,10 +96,16 @@ package net.wg.infrastructure.base.meta.impl
          this.setShowOnlyEditableStyles(param1);
       }
       
-      public function onFilterChangeS(param1:int, param2:Boolean) : void
+      public function setShowOnlyProgressionStylesS(param1:Boolean) : void
+      {
+         App.utils.asserter.assertNotNull(this.setShowOnlyProgressionStyles,"setShowOnlyProgressionStyles" + Errors.CANT_NULL);
+         this.setShowOnlyProgressionStyles(param1);
+      }
+      
+      public function onFilterChangeS(param1:int, param2:int, param3:Boolean) : void
       {
          App.utils.asserter.assertNotNull(this.onFilterChange,"onFilterChange" + Errors.CANT_NULL);
-         this.onFilterChange(param1,param2);
+         this.onFilterChange(param1,param2,param3);
       }
       
       public function onFormChangeS(param1:int, param2:Boolean) : void

@@ -25,6 +25,8 @@ package net.wg.data.constants.generated
       
       public static const VERSUS_AI_TANK_CAROUSEL:String = "versusAITankCarousel";
       
+      public static const STRONGHOLD_TANK_CAROUSEL:String = "strongholdTankCarousel";
+      
       public static const AMMUNITION_PANEL:String = "ammunitionPanel";
       
       public static const RESEARCH_PANEL:String = "researchPanel";
@@ -66,12 +68,6 @@ package net.wg.data.constants.generated
       public static const ARMORY_YARD_VEH_POST_PROGRESSION:String = "armoryYardVehPostProgression";
       
       public static const EARLY_ACCESS_SECONDARY_ENTRY_POINT:String = "EarlyAccessSecondaryEntryPoint";
-      
-      public static const NY_TANK_CAROUSEL_BTN_CONTAINER:String = "NYBtnEnvSwitcherContainer";
-      
-      public static const NY_TANK_CAROUSEL_BTN_TIP_CONTAINER:String = "NYBtnEnvSwitcherTipContainer";
-      
-      public static const NY_MAIN_WIDGET_UI:String = "NYMainWidgetUI";
       
       public static const VEH_PARAM_RENDERER_STATE_SIMPLE_TOP:String = "simpleTop";
       
@@ -122,6 +118,12 @@ package net.wg.data.constants.generated
       public static const COMP7_MODIFIERS_PANEL:String = "comp7ModifiersPanel";
       
       public static const COMP7_VEHICLE_PARAMETERS:String = "comp7VehicleParameters";
+      
+      public static const MODIFIED_VEHICLE_PARAMETERS:String = "modifiedVehicleParameters";
+      
+      public static const STRONGHOLD_WIDGET:String = "strongholdWidget";
+      
+      public static const BATTLE_MODIFIERS_PANEL:String = "battleModifiersPanel";
       
       public static const AMMUNITION_SETUP_VIEW_VEHICLE_PARAMS:String = "ammunitionSetupViewVehicleParams";
       

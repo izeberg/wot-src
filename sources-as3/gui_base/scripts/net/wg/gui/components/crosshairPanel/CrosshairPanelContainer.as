@@ -1176,14 +1176,15 @@ package net.wg.gui.components.crosshairPanel
       
       private function updateCurrentCrosshairReloadingParams() : void
       {
-         if(this._currentCrosshair != null)
+         var _loc1_:ICrosshair = null;
+         for each(_loc1_ in this._crosshairs)
          {
             if(this._isReloadingTimeFieldShown)
             {
-               this._currentCrosshair.setReloadingTime(this._remainingTimeInSec);
+               _loc1_.setReloadingTime(this._remainingTimeInSec);
             }
-            this._currentCrosshair.setReloadingAsPercent(this._currReloadingPercent);
-            this._currentCrosshair.setReloadingState(this._currReloadingState);
+            _loc1_.setReloadingAsPercent(this._currReloadingPercent);
+            _loc1_.setReloadingState(this._currReloadingState);
          }
          this._gunMarkersContainer.updateReloadingParams(this._currReloadingPercent,this._currReloadingState);
       }

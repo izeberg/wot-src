@@ -1255,15 +1255,6 @@ msgstr "Спісана асабістых ачкоў славы"
 msgid "platformCurrencyMsg/debited/freeXP"
 msgstr "Вольны досвед спісаны"
 
-msgid "platformCurrencyMsg/debited/nyractiv"
-msgstr "Прадметы для актыўнасці"
-
-msgid "platformCurrencyMsg/debited/nyrfood"
-msgstr "Прадукты харчавання"
-
-msgid "platformCurrencyMsg/debited/nyrfun"
-msgstr "Прадметы камфорту"
-
 msgid "platformCurrencyMsg/debited/sacoin"
 msgstr "Спісана жэтонаў за выслугу гадоў"
 
@@ -1281,15 +1272,6 @@ msgstr "Налічана асабістых ачкоў славы"
 
 msgid "platformCurrencyMsg/received/freeXP"
 msgstr "Атрымана вольнага досведу"
-
-msgid "platformCurrencyMsg/received/nyractiv"
-msgstr "Прадметы для актыўнасці"
-
-msgid "platformCurrencyMsg/received/nyrfood"
-msgstr "Прадукты харчавання"
-
-msgid "platformCurrencyMsg/received/nyrfun"
-msgstr "Прадметы камфорту"
 
 msgid "platformCurrencyMsg/received/sacoin"
 msgstr "Дададзена жэтонаў за выслугу гадоў"
@@ -1783,10 +1765,19 @@ msgstr ""
 msgid "serviceChannelMessages/battlePass/newDeviceToken"
 msgstr "Штатнае абсталяванне на выбар"
 
-msgid "serviceChannelMessages/battlePass/reachedCap/header"
+msgid "serviceChannelMessages/battlePass/reachedCapFactor/header"
+msgstr "Дасягнуты ліміт ачкоў Баявога пропуска"
+
+msgid "serviceChannelMessages/battlePass/reachedCapFactor/text"
+msgstr ""
+"На %(vehNameHighlight)s здабыта максімальна даступная колькасць ачкоў.\n"
+"Атрымана ачкоў ва ўзнагароду: %(bonusPoints)s\n"
+"Ліміт ачкоў і ўзнагарода абнавіліся. Працягвайце здабываць ачкі на %(vehName)s."
+
+msgid "serviceChannelMessages/battlePass/reachedCapWeek/header"
 msgstr "Дасягнуты штотыднёвы ліміт ачкоў Баявога пропуска"
 
-msgid "serviceChannelMessages/battlePass/reachedCap/text"
+msgid "serviceChannelMessages/battlePass/reachedCapWeek/text"
 msgstr ""
 "На %(vehNameHighlight)s здабыта максімальная колькасць ачкоў, даступная на тыдзень.\n"
 "Атрымана ачкоў ва ўзнагароду: %(bonusPoints)s\n"
@@ -1814,7 +1805,7 @@ msgstr "Атрымана ўзнагарода за пройдзеныя этап
 
 msgid "serviceChannelMessages/battlePassReward/battle/chapterFinal/text"
 msgstr ""
-"Вы завяршылі раздзел %(chapter)s!\n"
+"Вы завяршылі раздзел %(chapter)s.\n"
 "Атрымана ўзнагарода:"
 
 msgid ""
@@ -1828,7 +1819,7 @@ msgstr "Працягвайце гуляць і здабываць ачкі!"
 
 msgid "serviceChannelMessages/battlePassReward/battle/final/text"
 msgstr ""
-"Вы завяршылі ўсе раздзелы Баявога пропуска %(season)s сезона!\n"
+"Вы завяршылі ўсе раздзелы Баявога пропуска %(season)s сезона.\n"
 "Атрымана ўзнагарода:"
 
 msgid "serviceChannelMessages/battlePassReward/battle/newLevel/text"

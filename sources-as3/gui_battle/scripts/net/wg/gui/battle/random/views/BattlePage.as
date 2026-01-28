@@ -1,16 +1,22 @@
 package net.wg.gui.battle.random.views
 {
+   import fl.motion.easing.Linear;
    import flash.display.DisplayObject;
    import flash.events.Event;
    import flash.events.MouseEvent;
    import flash.geom.Rectangle;
    import net.wg.data.constants.generated.ATLAS_CONSTANTS;
    import net.wg.data.constants.generated.BATTLE_VIEW_ALIASES;
+   import net.wg.data.constants.generated.CONTEXT_HINT_TYPES;
    import net.wg.data.constants.generated.DAMAGE_INFO_PANEL_CONSTS;
    import net.wg.data.constants.generated.PLAYERS_PANEL_STATE;
    import net.wg.gui.battle.components.TimersPanel;
    import net.wg.gui.battle.interfaces.IFullStats;
    import net.wg.gui.battle.interfaces.IReservesStats;
+   import net.wg.gui.battle.random.constants.CONTEXT_HINT_CONSTS;
+   import net.wg.gui.battle.random.views.contextHint.InfoBattleContextHint;
+   import net.wg.gui.battle.random.views.contextHint.SixthSenseContextHint;
+   import net.wg.gui.battle.random.views.events.ContextHintEvent;
    import net.wg.gui.battle.random.views.fragCorrelationBar.FragCorrelationBar;
    import net.wg.gui.battle.random.views.stats.components.playersPanel.PlayersPanel;
    import net.wg.gui.battle.random.views.stats.components.playersPanel.events.PlayersPanelEvent;
@@ -37,6 +43,8 @@ package net.wg.gui.battle.random.views
    import net.wg.infrastructure.events.FocusRequestEvent;
    import net.wg.infrastructure.helpers.statisticsDataController.BattleStatisticDataController;
    import net.wg.infrastructure.interfaces.IDAAPIModule;
+   import net.wg.utils.StageSizeBoundaries;
+   import scaleform.clik.motion.Tween;
    
    public class BattlePage extends BattlePageQuestsProgress
    {
@@ -104,6 +112,12 @@ package net.wg.gui.battle.random.views
       
       private var _isPlayersPanelIsEmpty:Boolean = true;
       
+      private var _infoBattleContextHint:InfoBattleContextHint = null;
+      
+      private var _contextHintTweens:Vector.<Tween> = null;
+      
+      private var _sixthSenseContextHint:SixthSenseContextHint = null;
+      
       public function BattlePage()
       {
          super();
@@ -111,8 +125,9 @@ package net.wg.gui.battle.random.views
       
       override public function updateStage(param1:Number, param2:Number) : void
       {
+         var _loc3_:int = 0;
          super.updateStage(param1,param2);
-         var _loc3_:int = param1 >> 1;
+         _loc3_ = param1 >> 1;
          this.teamBasesPanelUI.x = _loc3_;
          this.sixthSense.updateStage(param1,param2);
          var _loc4_:Number = stage.scaleY;
@@ -141,6 +156,7 @@ package net.wg.gui.battle.random.views
          this.updateBattleMessengerSwapArea();
          this.updateHintPanelPosition();
          this.updateMapInfoHintLayout();
+         this._infoBattleContextHint.updateStage(param1,param2);
       }
       
       override protected function initialize() : void
@@ -150,6 +166,14 @@ package net.wg.gui.battle.random.views
          this.playersPanel.addEventListener(Event.CHANGE,this.onPlayersPanelChangeHandler);
          this.teamBasesPanelUI.addEventListener(Event.CHANGE,this.onTeamBasesPanelUIChangeHandler);
          this.endWarningPanel.addEventListener(EndWarningPanelEvent.VISIBILITY_CHANGED,this.onEndWarningPanelVisibilityChangedHandler);
+         this._infoBattleContextHint = new InfoBattleContextHint();
+         this._infoBattleContextHint.name = BATTLE_VIEW_ALIASES.INFO_BATTLE_CONTEXT_HINT;
+         this._infoBattleContextHint.visible = false;
+         addChild(this._infoBattleContextHint);
+         this._sixthSenseContextHint = new SixthSenseContextHint();
+         this._sixthSenseContextHint.name = BATTLE_VIEW_ALIASES.SIXTH_SENSE_CONTEXT_HINT;
+         this._sixthSenseContextHint.visible = false;
+         addChildAt(this._sixthSenseContextHint,getChildIndex(this.sixthSense));
       }
       
       override protected function createStatisticsController() : BattleStatisticDataController
@@ -173,6 +197,7 @@ package net.wg.gui.battle.random.views
          this.consumablesPanel.addEventListener(ConsumablesPanelEvent.SWITCH_POPUP,this.onConsumablesPanelSwitchPopupHandler);
          this.consumablesPanel.addEventListener(ConsumablesPanelEvent.UPDATE_POSITION,this.onConsumablesPanelUpdatePositionHandler);
          this.consumablesPanel.addEventListener(ConsumablesPanelEvent.SWITCH_POPUP,this.onConsumablesPanelSwitchPopupHandler);
+         this.consumablesPanel.addEventListener(ContextHintEvent.VISIBILITY_CHANGE,this.onContextHintVisibilityChangeHandler);
          this.battleMessenger.addEventListener(FocusRequestEvent.REQUEST_FOCUS,this.onBattleMessengerRequestFocusHandler);
          this.battleMessenger.addEventListener(BattleMessenger.REMOVE_FOCUS,this.onBattleMessengerRemoveFocusHandler);
          this.playersPanel.addEventListener(PlayersPanelEvent.ON_ITEMS_COUNT_CHANGE,this.onPlayersPanelOnItemsCountChangeHandler);
@@ -180,6 +205,7 @@ package net.wg.gui.battle.random.views
          this.hintPanel.addEventListener(Event.RESIZE,this.onHintPanelResizeHandler);
          this.sixthSense.addEventListener(SixthSense.EVENT_CHANGE_VISIBILITY,this.onSixthSenseChangeVisibility);
          this.sixthSense.addEventListener(SixthSense.EVENT_POSITION_CHANGED,this.onSixthSensePositionChanged);
+         this._infoBattleContextHint.addEventListener(ContextHintEvent.VISIBILITY_CHANGE,this.onContextHintVisibilityChangeHandler);
          super.configUI();
       }
       
@@ -230,6 +256,8 @@ package net.wg.gui.battle.random.views
                registerComponent(_loc2_,BATTLE_VIEW_ALIASES.PERSONAL_RESERVES_TAB);
             }
          }
+         registerComponent(this._infoBattleContextHint,BATTLE_VIEW_ALIASES.INFO_BATTLE_CONTEXT_HINT);
+         registerComponent(this._sixthSenseContextHint,BATTLE_VIEW_ALIASES.SIXTH_SENSE_CONTEXT_HINT);
          super.onPopulate();
       }
       
@@ -247,6 +275,7 @@ package net.wg.gui.battle.random.views
          this.teamBasesPanelUI.removeEventListener(Event.CHANGE,this.onTeamBasesPanelUIChangeHandler);
          this.consumablesPanel.removeEventListener(ConsumablesPanelEvent.UPDATE_POSITION,this.onConsumablesPanelUpdatePositionHandler);
          this.consumablesPanel.removeEventListener(ConsumablesPanelEvent.SWITCH_POPUP,this.onConsumablesPanelSwitchPopupHandler);
+         this.consumablesPanel.removeEventListener(ContextHintEvent.VISIBILITY_CHANGE,this.onContextHintVisibilityChangeHandler);
          this.battleMessenger.removeEventListener(FocusRequestEvent.REQUEST_FOCUS,this.onBattleMessengerRequestFocusHandler);
          this.battleMessenger.removeEventListener(BattleMessenger.REMOVE_FOCUS,this.onBattleMessengerRemoveFocusHandler);
          this.battleMessenger = null;
@@ -255,6 +284,7 @@ package net.wg.gui.battle.random.views
          this.playersPanel.removeEventListener(PlayersPanelEvent.ON_ITEMS_COUNT_CHANGE,this.onPlayersPanelOnItemsCountChangeHandler);
          this.sixthSense.removeEventListener(SixthSense.EVENT_CHANGE_VISIBILITY,this.onSixthSenseChangeVisibility);
          this.sixthSense.removeEventListener(SixthSense.EVENT_POSITION_CHANGED,this.onSixthSensePositionChanged);
+         this._infoBattleContextHint.removeEventListener(ContextHintEvent.VISIBILITY_CHANGE,this.onContextHintVisibilityChangeHandler);
          super.onBeforeDispose();
       }
       
@@ -276,6 +306,10 @@ package net.wg.gui.battle.random.views
          this.siegeModePanel = null;
          this.battleNotifier = null;
          this.mapInfoTip = null;
+         this._infoBattleContextHint = null;
+         this.clearContextHintTweens();
+         this._contextHintTweens = null;
+         this._sixthSenseContextHint = null;
          super.onDispose();
       }
       
@@ -450,6 +484,20 @@ package net.wg.gui.battle.random.views
          }
       }
       
+      private function clearContextHintTweens() : void
+      {
+         var _loc1_:Tween = null;
+         if(this._contextHintTweens != null && this._contextHintTweens.length > 0)
+         {
+            for each(_loc1_ in this._contextHintTweens)
+            {
+               _loc1_.dispose();
+               _loc1_ = null;
+            }
+            this._contextHintTweens.length = 0;
+         }
+      }
+      
       override protected function get prebattleAmmunitionPanelAvailable() : Boolean
       {
          return true;
@@ -458,6 +506,7 @@ package net.wg.gui.battle.random.views
       private function onSixthSensePositionChanged(param1:Event) : void
       {
          updateQuestTopViewAlpha();
+         this._sixthSenseContextHint.updatePosition(this.sixthSense.x,this.sixthSense.y);
       }
       
       private function onSixthSenseChangeVisibility(param1:Event) : void
@@ -558,6 +607,50 @@ package net.wg.gui.battle.random.views
          {
             _loc2_ = !!this.consumablesPanel.isExpand ? int(CONSUMABLES_POPUP_OFFSET) : int(0);
             vehicleMessageList.setLocation(_originalWidth - VEHICLE_MESSAGES_LIST_OFFSET.x >> 1,_originalHeight - VEHICLE_MESSAGES_LIST_OFFSET.y - _loc2_ | 0);
+         }
+      }
+      
+      private function onContextHintVisibilityChangeHandler(param1:ContextHintEvent) : void
+      {
+         this.clearContextHintTweens();
+         if(this._contextHintTweens == null)
+         {
+            this._contextHintTweens = new Vector.<Tween>();
+         }
+         var _loc2_:uint = !!param1.isVisible ? uint(0) : uint(1);
+         var _loc3_:Object = {"alpha":_loc2_};
+         var _loc4_:Object = {"ease":(!!param1.isVisible ? Linear.easeOut : Linear.easeIn)};
+         if(ribbonsPanel.visible)
+         {
+            this._contextHintTweens.push(new Tween(CONTEXT_HINT_CONSTS.INTERFERING_TWEEN_DURATION,ribbonsPanel,_loc3_,_loc4_));
+         }
+         else
+         {
+            ribbonsPanel.alpha = _loc2_;
+         }
+         if(messagesContainer.visible)
+         {
+            this._contextHintTweens.push(new Tween(CONTEXT_HINT_CONSTS.INTERFERING_TWEEN_DURATION,messagesContainer,_loc3_,_loc4_));
+         }
+         else
+         {
+            messagesContainer.alpha = _loc2_;
+         }
+         var _loc5_:Boolean = App.appWidth < StageSizeBoundaries.WIDTH_1600;
+         if(_loc5_ && param1.hintType == CONTEXT_HINT_TYPES.IN_BATTLE_HINT)
+         {
+            if(this.battleDamageLogPanel.visible)
+            {
+               this._contextHintTweens.push(new Tween(CONTEXT_HINT_CONSTS.INTERFERING_TWEEN_DURATION,this.battleDamageLogPanel,_loc3_,_loc4_));
+            }
+            else
+            {
+               this.battleDamageLogPanel.alpha = _loc2_;
+            }
+         }
+         else
+         {
+            this.battleDamageLogPanel.alpha = 1;
          }
       }
    }

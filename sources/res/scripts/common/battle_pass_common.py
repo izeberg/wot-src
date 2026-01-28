@@ -54,16 +54,24 @@ NON_VEH_CD = 0
 MAX_NON_CHAPTER_POINTS = 1000000
 BATTLE_PASS_TOKEN_LIFETIME = 4320
 BATTLE_PASS_COST_CURRENCIES = {
- 'gold'}
-BATTLE_PASS_MARATHON_COST_CURRENCIES = {'gold'}
+ 'gold', 'freeXP'}
+BATTLE_PASS_MARATHON_COST_CURRENCIES = {'gold', 'freeXP'}
 VEHICLE_POINTS_INDEX = 0
 VEHICLE_WEEK_CAP_SHIFT_INDEX = 1
+
+class _Enum(Enum):
+
+    @classmethod
+    def hasValue(cls, value):
+        return value in cls._value2member_map_
+
 
 @unique
 class FinalReward(Enum):
     STYLE = 'style'
     TANKMAN = 'tankman'
     VEHICLE = 'vehicle'
+    MIXED = 'mixed'
 
 
 @unique
@@ -72,10 +80,16 @@ class CurrencyBP(Enum):
 
 
 @unique
-class BattlePassChapterType(Enum):
+class BattlePassChapterType(_Enum):
     DEFAULT = 'default'
     MARATHON = 'marathon'
     RESOURCE = 'resource'
+
+
+@unique
+class BattlePassCapsFlow(_Enum):
+    WEEK = 'week'
+    FACTOR = 'factor'
 
 
 class BattlePassRewardReason(object):
@@ -321,6 +335,10 @@ class BattlePassConfig(object):
         return self._season.get('chapters', {})
 
     @property
+    def isSingleChapter(self):
+        return len(self.chapters) == 1
+
+    @property
     def minVehLevelToEarnPoints(self):
         return self._season.get('minVehLevelToEarnPoints', MIN_VEHICLE_LEVEL)
 
@@ -328,11 +346,26 @@ class BattlePassConfig(object):
     def vehWeekCaps(self):
         return self._season.get('vehWeekCaps', ())
 
+    @property
+    def vehCapFactor(self):
+        return self._season.get('vehCapFactor', 0)
+
+    @property
+    def capsFlow(self):
+        return self._season.get('capsFlow', BattlePassCapsFlow.WEEK.value)
+
+    @property
+    def vehCapBase(self):
+        return self._season.get('vehCapBase', 0)
+
     def vehWeekCapByShift(self, index):
         if len(self.vehWeekCaps) <= index:
             LOG_ERROR(('BattlePass cannot get vehWeekCaps list item by its index, len(vehWeekCaps)={}, index={}').format(len(self.vehWeekCaps), index))
             return 0
         return self.vehWeekCaps[index]
+
+    def vehFactorCapByShift(self, index):
+        return self.vehCapBase + self.vehCapFactor * index
 
     @property
     def vehOverrides(self):
@@ -363,6 +396,13 @@ class BattlePassConfig(object):
 
     def getResourceChapterIds(self):
         return self._chaptersType.get(BattlePassChapterType.RESOURCE.value, set())
+
+    def iterBySpecialChapterIds(self):
+        for chapterID in self._chaptersType.get(BattlePassChapterType.MARATHON.value, set()):
+            yield chapterID
+
+        for chapterID in self._chaptersType.get(BattlePassChapterType.RESOURCE.value, set()):
+            yield chapterID
 
     def getbattlePassCost(self, chapterID):
         return self.chapters.get(chapterID, {}).get('battlePassCost', {'gold': 0})
@@ -408,6 +448,9 @@ class BattlePassConfig(object):
     def getChapterExpireTimestamp(self, chapterID):
         return self.getChapter(chapterID).get('expires', 0)
 
+    def getChapterStartTimestamp(self, chapterID):
+        return self.getChapter(chapterID).get('startDate', 0)
+
     def getGroupChapterByType(self):
         return self._chaptersType
 
@@ -421,7 +464,7 @@ class BattlePassConfig(object):
     def capBonusList(self):
         return self._season.get('capBonuses', (0, ) * MAX_VEHICLE_LEVEL)
 
-    def getVehWeekCapBonus(self, index):
+    def getVehCapBonus(self, index):
         if len(self.capBonusList) <= index:
             LOG_ERROR(('BattlePass cannot get capBonuses list item by its index, len(capBonuses)={}, index={}').format(len(self.capBonusList), index))
             return 0
@@ -431,7 +474,7 @@ class BattlePassConfig(object):
         vehCapBonus = self.vehOverrides.get(vehTypeCompDescr, {}).get('capBonus')
         if vehCapBonus:
             return vehCapBonus
-        return self.getVehWeekCapBonus(getVehicleLevel(vehTypeCompDescr) - 1)
+        return self.getVehCapBonus(getVehicleLevel(vehTypeCompDescr) - 1)
 
     def bonusPointsList(self, vehTypeCompDescr=None, isWinner=True, gameMode=ARENA_BONUS_TYPE.REGULAR):
         teamKey = 'win' if isWinner else 'lose'

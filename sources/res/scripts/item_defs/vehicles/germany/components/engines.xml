@@ -178,6 +178,7 @@
 		<MB509_StGM>31010</MB509_StGM>
 		<Maybach_HL_295>31012</Maybach_HL_295>
 		<W-55_T>35001</W-55_T>
+		<MT_881>31013</MT_881>
 		<Maybach_HL_210P30_Ausf_A_IGR>60001</Maybach_HL_210P30_Ausf_A_IGR>
 		<Maybach_HL_230_TRM_P30_IGR>60002</Maybach_HL_230_TRM_P30_IGR>
 		<Maybach_HL_230_TRM_P45_IGR>60003</Maybach_HL_230_TRM_P45_IGR>
@@ -185,6 +186,7 @@
 		<Maybach_HL_230_TRM_P30_A_IGR>60005</Maybach_HL_230_TRM_P30_A_IGR>
 		<Porsche_Deutz_Typ180_2_IGR>60006</Porsche_Deutz_Typ180_2_IGR>
 		<MB507_IGR>60007</MB507_IGR>
+		<Engine_Supply>60008</Engine_Supply>
 		<Maybach_HL_120_TR_bootcamp>64005</Maybach_HL_120_TR_bootcamp>
 		<Development_Engine>65535</Development_Engine>
 		<Maybach_HL_116_MapsTraining_Dummy_HT_1>45</Maybach_HL_116_MapsTraining_Dummy_HT_1>
@@ -2600,8 +2602,8 @@
 			<level>8</level>
 			<price>60000</price>
 			<notInShop>true</notInShop>
-			<wwsoundPC>eng_ContinentalR_pc</wwsoundPC>
-			<wwsoundNPC>eng_ContinentalR_npc</wwsoundNPC>
+			<wwsoundPC>eng_Ford_GAA_pc</wwsoundPC>
+			<wwsoundNPC>eng_Ford_GAA_npc</wwsoundNPC>
 			<power>850</power>
 			<weight>1200</weight>
 			<maxHealth>260</maxHealth>
@@ -2611,8 +2613,8 @@
 				0.2
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>470</rpm_min>
-			<rpm_max>2094</rpm_max>
+			<rpm_min>436</rpm_min>
+			<rpm_max>2803</rpm_max>
 		</Maybach_HL_295>
 		<Maybach_HL_230>
 			<userString>#germany_vehicles:Maybach_HL_230</userString>
@@ -3352,7 +3354,7 @@
 			<wwsoundNPC>eng_V2_34_npc</wwsoundNPC>
 			<power>900</power>
 			<weight>940</weight>
-			<maxHealth>360</maxHealth>
+			<maxHealth>400</maxHealth>
 			<maxRegenHealth>170</maxRegenHealth>
 			<repairCost>9</repairCost>
 			<fireStartingChance>
@@ -3362,6 +3364,26 @@
 			<rpm_min>450</rpm_min>
 			<rpm_max>2000</rpm_max>
 		</MB_881_P>
+		<MT_881>
+			<userString>#germany_vehicles:MT_881</userString>
+			<tags>diesel</tags>
+			<level>9</level>
+			<price>90000</price>
+			<notInShop>true</notInShop>
+			<wwsoundPC>eng_V2_34_pc</wwsoundPC>
+			<wwsoundNPC>eng_V2_34_npc</wwsoundNPC>
+			<power>850</power>
+			<weight>1400</weight>
+			<maxHealth>360</maxHealth>
+			<maxRegenHealth>170</maxRegenHealth>
+			<repairCost>9</repairCost>
+			<fireStartingChance>
+				0.12
+				<!--BW_String-->
+			</fireStartingChance>
+			<rpm_min>475</rpm_min>
+			<rpm_max>1950</rpm_max>
+		</MT_881>
 		<Chrysler_361B>
 			<userString>#germany_vehicles:Chrysler_361B</userString>
 			<tags>gasoline</tags>
@@ -4105,5 +4127,25 @@
 			<rpm_max>2200</rpm_max>
 			<notInShop>True</notInShop>
 		</Maybach_HL_230_TRM_P30_NewOnBoarding>
+		<Engine_Supply>
+			<userString>#germany_vehicles:Engine_Supply</userString>
+			<tags>diesel</tags>
+			<level>9</level>
+			<price>87500</price>
+			<notInShop>true</notInShop>
+			<wwsoundPC>eng_Hetzer_pc</wwsoundPC>
+			<wwsoundNPC>eng_Hetzer_npc</wwsoundNPC>
+			<power>1</power>
+			<weight>1</weight>
+			<maxHealth>1000</maxHealth>
+			<maxRegenHealth>180</maxRegenHealth>
+			<repairCost>10</repairCost>
+			<fireStartingChance>
+				0.001
+				<!--BW_String-->
+			</fireStartingChance>
+			<rpm_min>399</rpm_min>
+			<rpm_max>1901</rpm_max>
+		</Engine_Supply>
 	</shared>
 </root>

@@ -155,8 +155,17 @@ msgstr "E 75 verstärkteketten"
 msgid "Chassis_E50_Ausf_M"
 msgstr "E 50 Ausf. M"
 
+msgid "Chassis_G00_Artilleriebunker"
+msgstr "Дот"
+
 msgid "Chassis_G00_Bomber_SH"
 msgstr "?empty?"
+
+msgid "Chassis_G00_Feuerbunker"
+msgstr "Агнямёт"
+
+msgid "Chassis_G00_Startgestell"
+msgstr "Nebelwerfer 41"
 
 msgid "Chassis_G04_PzVI_Tiger_IA"
 msgstr "Pz.Kpfw. Tiger Ausf. E"
@@ -369,6 +378,9 @@ msgstr "Eisbär"
 
 msgid "Chassis_G189_E100_02"
 msgstr "E 100 Feuerbär"
+
+msgid "Chassis_G193_Aufgabe_57"
+msgstr "Aufgabe 57"
 
 msgid "Chassis_G196_E_75_Ausf_B_Doppel"
 msgstr "E 75"
@@ -850,6 +862,9 @@ msgstr "E 50 M"
 msgid "Engine_Auf_Panther"
 msgstr "Maybach HL 295 Ausf. A"
 
+msgid "Engine_Supply"
+msgstr "Engine"
+
 msgid "Engine_VK4502P_G"
 msgstr "Maybach HL 234 W"
 
@@ -879,6 +894,12 @@ msgstr "Elefant"
 
 msgid "Ferdinandvetstaerktketten_short"
 msgstr "Elefant"
+
+msgid "Feuermischung"
+msgstr "Feuermischung 41 Spreng"
+
+msgid "Flammenwerfer"
+msgstr "Flammenwerfer"
 
 msgid "FuG10"
 msgstr "FuG 10"
@@ -967,6 +988,15 @@ msgstr "Fu.Spr.Ger. \"a\""
 msgid "Fu_8_SE_30_M"
 msgstr "Fu 8 SE 30 M"
 
+msgid "G00_Artilleriebunker"
+msgstr "Дот"
+
+msgid "G00_Artilleriebunker_descr"
+msgstr "Дот"
+
+msgid "G00_Artilleriebunker_short"
+msgstr "Дот"
+
 msgid "G00_Bomber_SH"
 msgstr "Брандар"
 
@@ -979,14 +1009,35 @@ msgstr "?empty?"
 msgid "G00_Bomber_SH_Radio"
 msgstr "?empty?"
 
+msgid "G00_Bomber_SH_descr"
+msgstr "?empty?"
+
 msgid "G00_Bomber_SH_short"
 msgstr "Брандар"
+
+msgid "G00_Feuerbunker"
+msgstr "Агнямёт"
+
+msgid "G00_Feuerbunker_descr"
+msgstr "Агнямёт"
+
+msgid "G00_Feuerbunker_short"
+msgstr "Агнямёт"
 
 msgid "G00_K_bomber__HW_21_AI"
 msgstr "Брандар 21"
 
 msgid "G00_K_bomber__HW_21_AI_short"
 msgstr "Брандар 21"
+
+msgid "G00_Startgestell"
+msgstr "РСЗА"
+
+msgid "G00_Startgestell_descr"
+msgstr "РСЗА"
+
+msgid "G00_Startgestell_short"
+msgstr "РСЗА"
 
 msgid "G04"
 msgstr "G04"
@@ -1222,7 +1273,7 @@ msgid "G1105_T-55_NVA_DDR_T_descr"
 msgstr ""
 " \n"
 "\n"
-"Характарыстыкі машыны могуць быць зменены без кампенсацыі."
+"Характарыстыкі машыны могуць быць зменены без кампенсацыі."
 
 msgid "G1105_T-55_NVA_DDR_T_long_special"
 msgstr "?empty?"
@@ -2336,9 +2387,9 @@ msgstr "StuG Maus 17 cm"
 
 msgid "G181_StuG_Maus_17cm_descr"
 msgstr ""
-"Звышцяжкі нямецкі танк Pz.Kpfw.Maus першапачаткова не разглядаўся як база для САУ. Сітуацыя змянілася вясной 1944-га года, калі звышцяжкі знішчальнік танкаў стаў прыярытэтным напрамкам. Тады ж КБ Krupp распрацавала праект гарматы 17cm StuK L/53. Для стварэння САУ на базе Pz.Kpfw.Maus патрабавалася мінімум змен: замест вежы ўсталёўвалася рубка з нязначнай дапрацоўкай корпуса. Адной з асаблівасцяў САУ была зенітная вежа фірмы Porsche з 30-мм авіяцыйнай аўтаматычнай гарматай MK 108, якой кіраваў камандзір. У ліпені 1944-га года праца над гэтым праектам была спынена. Да нашых дзён захаваліся толькі ўрыўкавыя звесткі пра гэты праект.\n"
+"Звышцяжкі нямецкі танк Pz.Kpfw.Maus першапачаткова не разглядаўся як база для САУ. Сітуацыя змянілася вясной 1944 года, калі звышцяжкі знішчальнік танкаў стаў прыярытэтным напрамкам. Тады ж КБ Krupp распрацавала праект гарматы 17cm StuK L/53. Для стварэння САУ на базе Pz.Kpfw.Maus патрабавалася мінімум змен: замест вежы ўсталёўвалася рубка з нязначнай дапрацоўкай корпуса. Адной з асаблівасцяў САУ была зенітная вежа фірмы Porsche з 30-мм авіяцыйнай аўтаматычнай гарматай MK 108, якой кіраваў камандзір. У ліпені 1944 года праца над гэтым праектам была спынена. Да нашых дзён захаваліся толькі ўрыўкавыя звесткі пра гэты праект.\n"
 "\n"
-"Характарыстыкі машыны могуць быць зменены без кампенсацыі."
+"Характарыстыкі машыны могуць быць зменены без кампенсацыі."
 
 msgid "G181_StuG_Maus_17cm_long_special"
 msgstr ""
@@ -2384,7 +2435,7 @@ msgid "G184_EisBaer_descr"
 msgstr ""
 " \n"
 "\n"
-"Характарыстыкі машыны могуць быць зменены без кампенсацыі."
+"Характарыстыкі машыны могуць быць зменены без кампенсацыі."
 
 msgid "G184_EisBaer_long_special"
 msgstr "?empty?"
@@ -2422,14 +2473,32 @@ msgstr "Feuerbär"
 msgid "G189_E100_02_short_special"
 msgstr "Усе плюсы і мінусы звыклага Е 100, ракетныя паскаральнікі."
 
+msgid "G193_Aufgabe_57"
+msgstr "Aufgabe 57"
+
+msgid "G193_Aufgabe_57_descr"
+msgstr ""
+" \n"
+"\n"
+"Характарыстыкі машыны могуць быць зменены без кампенсацыі."
+
+msgid "G193_Aufgabe_57_long_special"
+msgstr "?empty?"
+
+msgid "G193_Aufgabe_57_short"
+msgstr "Aufgabe 57"
+
+msgid "G193_Aufgabe_57_short_special"
+msgstr "?empty?"
+
 msgid "G196_E_75_Ausf_B_Doppel"
 msgstr "E 75 Ausf B Doppel"
 
 msgid "G196_E_75_Ausf_B_Doppel_descr"
 msgstr ""
-"У межах так званай Е-серыі бліжэй да канца Другой сусветнай вайны нямецкія канструктары выказвалі шмат ідэй і прапаноў наконт новых узораў бранятэхнікі, часам — вельмі экзатычных. Адзін з падобных праектаў прапаноўвалася ўзброіць спаранымі гарматамі ў адной вежы. Паводле задумы канструктараў такі танк змог бы весці агонь залпам, або з павялічанай хуткастрэльнасцю. Паводле адной з версій, зрэшты, не пацверджанай дакументальна, вежа і корпус распрацоўваліся рознымі фірмамі, прычым вежу пабудавалі ў метале. Для выпрабавання канцэпцыі двухгарматнага танка быў узяты корпус танка E-75, які знаходзіўся ў зборачным цэху, без абвесу і ў заводскай грунтоўцы. З прычыны характэрнага аблічча выпрабавальнікі называлі машыну «Doppel».\n"
+"У межах так званай Е-серыі бліжэй да канца Другой сусветнай вайны нямецкія канструктары выказвалі шмат ідэй і прапаноў наконт новых узораў бранятэхнікі, часам — вельмі экзатычных. Адзін з падобных праектаў прапаноўвалася ўзброіць спаранымі гарматамі ў адной вежы. Паводле задумы канструктараў такі танк змог бы весці агонь залпам або з павялічанай хуткастрэльнасцю. Паводле адной з версій, зрэшты, не пацверджанай дакументальна, вежа і корпус распрацоўваліся рознымі фірмамі, прычым вежу пабудавалі ў метале. Для выпрабавання канцэпцыі двухгарматнага танка быў узяты корпус танка E-75, які знаходзіўся ў зборачным цэху, без абвесу і ў заводскай грунтоўцы. З прычыны характэрнага аблічча выпрабавальнікі называлі машыну «Doppel».\n"
 "\n"
-"Характарыстыкі машыны могуць быць зменены без кампенсацыі."
+"Характарыстыкі машыны могуць быць зменены без кампенсацыі."
 
 msgid "G196_E_75_Ausf_B_Doppel_long_special"
 msgstr ""
@@ -3206,6 +3275,9 @@ msgstr "MB 881 P"
 
 msgid "MTU803"
 msgstr "MTU803"
+
+msgid "MT_881"
+msgstr "Daimler Benz MТ 881 Ka-500"
 
 msgid "MarderII"
 msgstr "Marder II"
@@ -4461,6 +4533,9 @@ msgstr "R/5a"
 msgid "Radio_Auf_Panther"
 msgstr "FuG 12 A-OR"
 
+msgid "Radio_Supply"
+msgstr "Radio"
+
 msgid "Radio_VK4502P_G"
 msgstr "FuG5 W"
 
@@ -4517,6 +4592,9 @@ msgid "SEM25"
 msgstr "SEM 25"
 
 msgid "SEM25_1"
+msgstr "SEM 25A"
+
+msgid "SEM25_A"
 msgstr "SEM 25A"
 
 msgid "SEM_25A"
@@ -4714,8 +4792,17 @@ msgstr "E 75 Ausf. A"
 msgid "Turret_1_E50_Ausf_M"
 msgstr "E 50 Ausf. M"
 
+msgid "Turret_1_G00_Artilleriebunker"
+msgstr "Дот"
+
 msgid "Turret_1_G00_Bomber_SH"
 msgstr "?empty?"
+
+msgid "Turret_1_G00_Feuerbunker"
+msgstr "Агнямёт"
+
+msgid "Turret_1_G00_Startgestell"
+msgstr "Nebelwerfer 41"
 
 msgid "Turret_1_G04_PzVI_Tiger_IA"
 msgstr "Pz.Kpfw. Tiger Ausf. E"
@@ -4915,6 +5002,9 @@ msgstr "Mausekönig"
 
 msgid "Turret_1_G184_EisBaer"
 msgstr "Eisbär"
+
+msgid "Turret_1_G193_Aufgabe_57"
+msgstr "Aufgabe 57"
 
 msgid "Turret_1_G196_E_75_Ausf_B_Doppel"
 msgstr "Doppel"
@@ -5565,6 +5655,9 @@ msgstr "Wespe verstärkteketten"
 msgid "Wespeturm"
 msgstr "Wespe"
 
+msgid "Wurfgranate_41_Spreng"
+msgstr "Wurfgranate 41 Spreng"
+
 msgid "_100mm_3UBK4"
 msgstr "3UBK4"
 
@@ -5839,6 +5932,9 @@ msgstr "DM12 MZ"
 msgid "_120mm_HE_DM10"
 msgstr "DM10"
 
+msgid "_120mm_HlGr57"
+msgstr "Pzgr 57 mod."
+
 msgid "_120mm_HlGr59"
 msgstr "Pzgr 61 mod."
 
@@ -5848,11 +5944,17 @@ msgstr "M820 AP-T"
 msgid "_120mm_M820_HEAT"
 msgstr "M820 HEAT"
 
+msgid "_120mm_Pzgr57"
+msgstr "Pzgr 57"
+
 msgid "_120mm_Pzgr59"
 msgstr "Pzgr 59"
 
 msgid "_120mm_RhD"
 msgstr "120 mm RhD"
+
+msgid "_120mm_Rh_E1"
+msgstr "12 cm Rh E1"
 
 msgid "_120mm_SDRN1"
 msgstr "SDRN1 HE"
@@ -5862,6 +5964,9 @@ msgstr "SDRN1V HE"
 
 msgid "_120mm_Sprgr56"
 msgstr "Sprgr 56"
+
+msgid "_120mm_Sprgr57"
+msgstr "Sprgr 57"
 
 msgid "_120mm_VKL65G"
 msgstr "VKL65G"
@@ -6090,6 +6195,9 @@ msgstr "15.1 cm Kw.K. L/38"
 
 msgid "_150mm_KwK44_L38_SH"
 msgstr "15 cm Kw.K. L/38"
+
+msgid "_150mm_Nebelwerfer_41"
+msgstr "15 cm Nebelwerfer 41"
 
 msgid "_150mm_Pak_L63"
 msgstr "15 cm Pak L/63"
@@ -6411,6 +6519,12 @@ msgstr "7,5 cm Škoda A18"
 
 msgid "_75mm_APCBC"
 msgstr "APCBC"
+
+msgid "_75mm_Bunker_Gun"
+msgstr "7,5 cm Kw.K. 42 L/70"
+
+msgid "_75mm_Bunker_Shell"
+msgstr "Pzgr 39 L"
 
 msgid "_75mm_Flak_L60"
 msgstr "7,5 cm Flak L/60"

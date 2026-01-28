@@ -11,6 +11,10 @@ package net.wg.gui.battle.views.epicInGameRank
       private static const PROGRESS_ANIMATION_END_FRAME:Number = 180;
       
       private static const END_FRAME_SCRIPT_OFFSET:int = 2;
+      
+      private static const ORANGE_PROGRESS_LABEL:String = "orange";
+      
+      private static const GREEN_PROGRESS_LABEL:String = "green";
        
       
       public var rankXPSlow:MovieClip = null;
@@ -61,6 +65,7 @@ package net.wg.gui.battle.views.epicInGameRank
          if(this.rankXPSlow.currentFrame == this.rankXPFast.currentFrame || this.rankXPSlow.currentFrame > this.rankXPFast.currentFrame)
          {
             this.rankXPSlow.stop();
+            this.rankXPSlow.progress.gotoAndStop(this.rankXPSlow.currentFrame == PROGRESS_ANIMATION_END_FRAME ? GREEN_PROGRESS_LABEL : ORANGE_PROGRESS_LABEL);
             removeEventListener(Event.ENTER_FRAME,this.onProgressAnimationEnterFrameHandler);
          }
       }

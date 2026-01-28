@@ -1091,6 +1091,15 @@
 				<bank>NY2026/Ded_Terentiy/voiceover.bnk</bank>
 			</wwbanks>
 		</mode>
+		<mode>
+			<name>bp18_5_stalcraft</name>
+			<wwise_language>BP18_5/Stalcraft</wwise_language>
+			<description/>
+			<invisible>True</invisible>
+			<wwbanks>
+				<bank>BP18_5/Stalcraft/voiceover.bnk</bank>
+			</wwbanks>
+		</mode>
 	</modes>
 	<nationalPresets>
 		<preset>

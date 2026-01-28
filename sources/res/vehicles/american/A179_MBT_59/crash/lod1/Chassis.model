@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/american/A179_MBT_59/crash/lod2/Chassis</parent>
+	<tank>true</tank>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.725003 -0.000407 -3.003796</min>
+		<max>1.725003 1.058270 3.079104</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/american/A179_MBT_59/crash/lod1/Chassis</nodefullVisual>
+</root>

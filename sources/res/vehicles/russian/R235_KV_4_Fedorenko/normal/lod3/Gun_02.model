@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/russian/R235_KV_4_Fedorenko/normal/lod4/Gun_02</parent>
+	<tank>true</tank>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-0.428437 -0.258536 0.234579</min>
+		<max>0.428937 0.360342 5.331949</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/russian/R235_KV_4_Fedorenko/normal/lod3/Gun_02</nodefullVisual>
+</root>

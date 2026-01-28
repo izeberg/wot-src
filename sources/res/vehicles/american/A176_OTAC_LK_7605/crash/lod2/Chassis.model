@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A176_OTAC_LK_7605/crash/lod2/Chassis</nodefullVisual>
+	<parent>vehicles/american/A176_OTAC_LK_7605/crash/lod3/Chassis</parent>
+	<tank>true</tank>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.569227 -0.000002 -3.353230</min>
+		<max>1.569194 1.122665 3.399263</max>
+	</visibilityBox>
+</root>

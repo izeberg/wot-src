@@ -70,6 +70,15 @@
 			<crashed>
 				<Type>UINT64</Type>
 			</crashed>
+			<prevHasMods>
+				<Type>UINT64</Type>
+			</prevHasMods>
+			<prevCrashAddr>
+				<Type>UINT64</Type>
+			</prevCrashAddr>
+			<prevClientVersion>
+				<Type>STRING</Type>
+			</prevClientVersion>
 			<contentType>
 				<Type>UINT8</Type>
 			</contentType>
@@ -1119,6 +1128,9 @@
 			<attackerType>
 				<Type>UINT8</Type>
 			</attackerType>
+			<attackerEventBotKind>
+				<Type>UINT8</Type>
+			</attackerEventBotKind>
 			<attackerSiegeState>
 				<Type>INT8</Type>
 			</attackerSiegeState>
@@ -2246,20 +2258,6 @@
 			</isRespawnActive>
 		</Properties>
 	</VEHICLE_HEALTH_INFO>
-	<CAMERA_FLIGHT_POINT>
-		FIXED_DICT
-		<Properties>
-			<point>
-				<Type>VECTOR3</Type>
-			</point>
-			<anchorName>
-				<Type>STRING</Type>
-			</anchorName>
-			<flightSpeed>
-				<Type>FLOAT</Type>
-			</flightSpeed>
-		</Properties>
-	</CAMERA_FLIGHT_POINT>
 	<GUN_MARKER>
 		FIXED_DICT
 		<AllowNone>true</AllowNone>

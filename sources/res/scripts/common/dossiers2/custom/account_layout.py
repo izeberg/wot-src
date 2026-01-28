@@ -370,7 +370,8 @@ _SINGLE_ACHIEVEMENTS_VALUES = [
  'comp7_5_1', 'comp7_5_1_champion', 'comp7_5_1_legend', 'BattlePassCommonPr_18',
  'portal2025Medal_1', 'portal2025Medal_2', '15YearsOfService',
  'comp7_5_2', 'comp7_5_2_champion', 'comp7_5_2_legend', 'NY26_AtmsphrLevel',
- 'NY26_CelebTaskCompleted']
+ 'NY26_CelebTaskCompleted', 'clan_season_25_first', 'clan_season_25_last',
+ 'BattlePassCommonPr_18_5_Marathon']
 _singleAchievementsPopUps = [
  'titleSniper', 'invincible', 'diehard', 'handOfDeath',
  'armorPiercer', 'battleCitizen', 'WFC2014', 'tacticalBreakthrough', 'aimer',
@@ -441,7 +442,8 @@ _singleAchievementsPopUps = [
  'BirthdayPr_2025', 'wt2025', 'comp7_5_1', 'comp7_5_1_champion', 'comp7_5_1_legend',
  'BattlePassCommonPr_18', 'portal2025Medal_1', 'portal2025Medal_2', '15YearsOfService',
  'comp7_5_2', 'comp7_5_2_champion', 'comp7_5_2_legend', 'NY26_AtmsphrLevel',
- 'NY26_CelebTaskCompleted']
+ 'NY26_CelebTaskCompleted', 'clan_season_25_first', 'clan_season_25_last',
+ 'BattlePassCommonPr_18_5_Marathon']
 _singleAchievementsBlockBuilder = BinarySetDossierBlockBuilder('singleAchievements', _SINGLE_ACHIEVEMENTS_VALUES, SINGLE_ACHIEVEMENTS_DEPENDENCIES, _singleAchievementsPopUps)
 FORT_ACHIEVEMENTS_BLOCK_LAYOUT = [
  'conqueror', 'fireAndSword', 'crusher', 'counterblow', 'kampfer', 'soldierOfFortune']
@@ -481,8 +483,8 @@ _falloutAchievementsPopUps = ['shoulderToShoulder', 'aloneInTheField', 'fallenFl
 _falloutAchievementsBlockBuilder = StaticSizeBlockBuilder('falloutAchievements', FALLOUT_ACHIEVEMENTS_BLOCK_LAYOUT, {}, _falloutAchievementsPopUps)
 EPIC_BATTLE_ACHIEVEMENTS_BLOCK_LAYOUT = [
  'occupyingForce', 'ironShield', 'generalOfTheArmy', 'supremeGun',
- 'smallArmy', 'frontlineMedal']
-_epicBattleAchievementsPopUps = ['frontlineMedal']
+ 'smallArmy', 'frontlineMedal', 'saboteur', 'saboteurProgress']
+_epicBattleAchievementsPopUps = ['frontlineMedal', 'saboteur']
 _epicBattleAchievementsBlockBuilder = StaticSizeBlockBuilder('epicBattleAchievements', EPIC_BATTLE_ACHIEVEMENTS_BLOCK_LAYOUT, EPIC_BATTLE_STATS_DEPENDENCIES, _epicBattleAchievementsPopUps)
 _epicBattleSeasonsBlockBuilder = DictBlockBuilder('epicSeasons', 'II', 'HHBHH', {})
 _battleRoyaleSeasonsBlockBuilder = DictBlockBuilder('battleRoyaleSeasons', 'II', 'HHH', {})

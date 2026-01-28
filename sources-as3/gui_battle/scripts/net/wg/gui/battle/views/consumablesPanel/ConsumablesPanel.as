@@ -4,13 +4,17 @@ package net.wg.gui.battle.views.consumablesPanel
    import flash.display.DisplayObject;
    import flash.events.MouseEvent;
    import flash.geom.ColorTransform;
+   import net.wg.data.constants.Errors;
    import net.wg.data.constants.InvalidationType;
    import net.wg.data.constants.Linkages;
    import net.wg.data.constants.Values;
    import net.wg.data.constants.generated.CONSUMABLES_PANEL_SETTINGS;
+   import net.wg.data.constants.generated.CONTEXT_HINT_TYPES;
    import net.wg.gui.battle.battleRoyale.views.components.RespawnButton.BattleRoyaleRespawnButton;
    import net.wg.gui.battle.comp7.views.consumablesPanel.Comp7ConsumableButton;
    import net.wg.gui.battle.components.buttons.BattleButton;
+   import net.wg.gui.battle.random.constants.CONTEXT_HINT_CONSTS;
+   import net.wg.gui.battle.random.views.events.ContextHintEvent;
    import net.wg.gui.battle.views.consumablesPanel.VO.ConsumablesVO;
    import net.wg.gui.battle.views.consumablesPanel.constants.COLOR_STATES;
    import net.wg.gui.battle.views.consumablesPanel.events.ConsumablesPanelEvent;
@@ -20,8 +24,10 @@ package net.wg.gui.battle.views.consumablesPanel
    import net.wg.gui.battle.views.consumablesPanel.interfaces.IConsumablesPanel;
    import net.wg.infrastructure.base.meta.impl.ConsumablesPanelMeta;
    import net.wg.utils.IClassFactory;
+   import net.wg.utils.IScheduler;
    import net.wg.utils.IStageSizeDependComponent;
    import net.wg.utils.StageSizeBoundaries;
+   import scaleform.clik.events.ComponentEvent;
    import scaleform.clik.motion.Tween;
    import scaleform.gfx.MouseEventEx;
    
@@ -63,6 +69,10 @@ package net.wg.gui.battle.views.consumablesPanel
       protected static const INVALIDATE_POSITION:uint = InvalidationType.SYSTEM_FLAGS_BORDER << 2;
       
       private static const OPTIONAL_DEVICE_BUTTON_EMPTY_MSG:String = "BattleOptionalDeviceButton empty at idx: ";
+      
+      private static const CONTEXT_HINT_LINKAGE:String = "ContextHintUI";
+      
+      private static const CONTEXT_HINT_KEYS:Vector.<String> = new <String>["4","5","6"];
        
       
       private var _stageWidth:int = 0;
@@ -113,12 +123,23 @@ package net.wg.gui.battle.views.consumablesPanel
       
       private var _shellSlots:uint = 0;
       
+      private var _contextHint:ContextHint = null;
+      
+      private var _keyName:String = null;
+      
+      private var _isKeyVisible:Boolean = true;
+      
+      private var _eqButtonHintTarget:BattleEquipmentButton = null;
+      
+      private var _scheduler:IScheduler;
+      
       public function ConsumablesPanel()
       {
          this._renderers = new <IConsumablesButton>[null,null,null,null,null,null,null,null,null,null,null,null];
          this._settings = new Vector.<ConsumablesPanelSettings>();
          this._customIndexGap = new Vector.<uint>(0);
          this._classFactory = App.utils.classFactory;
+         this._scheduler = App.utils.scheduler;
          super();
          App.stageSizeMgr.register(this);
          var _loc1_:int = getItemWidthPadding(App.appWidth);
@@ -174,6 +195,14 @@ package net.wg.gui.battle.views.consumablesPanel
          this._customIndexGap = null;
          this._classFactory = null;
          this.clearTween();
+         if(this._contextHint != null)
+         {
+            this._contextHint.removeEventListener(ComponentEvent.HIDE,this.onContextHintHideHandler);
+            this._contextHint.dispose();
+            this._contextHint = null;
+         }
+         this._scheduler.cancelTask(this.showContextHint);
+         this._scheduler = null;
          super.onDispose();
       }
       
@@ -677,6 +706,44 @@ package net.wg.gui.battle.views.consumablesPanel
          }
       }
       
+      public function as_showContextHint(param1:int, param2:String) : void
+      {
+         var _loc3_:Number = NaN;
+         this._eqButtonHintTarget = this.getRendererBySlotIdx(param1) as BattleEquipmentButton;
+         if(this._eqButtonHintTarget)
+         {
+            _loc3_ = this._eqButtonHintTarget.bindSfKeyCode;
+            this._keyName = App.utils.commons.keyToString(_loc3_).keyName;
+            this._isKeyVisible = CONTEXT_HINT_KEYS.indexOf(this._keyName) != -1;
+         }
+         else
+         {
+            App.utils.asserter.assert(false,Errors.INVALID_TYPE + BattleEquipmentButton);
+         }
+         if(this._contextHint == null)
+         {
+            this._contextHint = this._classFactory.getComponent(CONTEXT_HINT_LINKAGE,ContextHint);
+            this._contextHint.addEventListener(ComponentEvent.HIDE,this.onContextHintHideHandler);
+            addChildAt(this._contextHint,Values.ZERO);
+            this._contextHint.y = CONSUMABLES_PANEL_Y_OFFSET;
+         }
+         this._contextHint.x = this._eqButtonHintTarget.x + (CONSUMABLES_PANEL_Y_OFFSET >> 1);
+         this._contextHint.setLabel(param2);
+         this._contextHint.setKeyParams(this._isKeyVisible,this._keyName);
+         this._eqButtonHintTarget.setBindKeyTextVisibility(!this._isKeyVisible);
+         if(this._isKeyVisible)
+         {
+            this._eqButtonHintTarget.showGlowWithHotkey(CONSUMABLES_PANEL_SETTINGS.GLOW_ID_ORANGE,false);
+         }
+         dispatchEvent(new ContextHintEvent(ContextHintEvent.VISIBILITY_CHANGE,CONTEXT_HINT_TYPES.CONSUMABLES_HINT,true));
+         this._scheduler.scheduleTask(this.showContextHint,CONTEXT_HINT_CONSTS.INTERFERING_TWEEN_DURATION);
+      }
+      
+      public function as_hideContextHint(param1:int) : void
+      {
+         this._contextHint.hide(param1);
+      }
+      
       public function getRendererBySlotIdx(param1:int) : IConsumablesButton
       {
          return this._renderers[param1];
@@ -838,6 +905,11 @@ package net.wg.gui.battle.views.consumablesPanel
          }
       }
       
+      private function showContextHint() : void
+      {
+         this._contextHint.show();
+      }
+      
       private function onShowTweenCompleted(param1:Tween = null) : void
       {
          this.clearTween();
@@ -976,6 +1048,16 @@ package net.wg.gui.battle.views.consumablesPanel
          if(this._isExpand && !(param1.target is EntityStateButton))
          {
             this.collapsePopup();
+         }
+      }
+      
+      private function onContextHintHideHandler(param1:ComponentEvent) : void
+      {
+         dispatchEvent(new ContextHintEvent(ContextHintEvent.VISIBILITY_CHANGE,CONTEXT_HINT_TYPES.CONSUMABLES_HINT,false));
+         if(this._isKeyVisible)
+         {
+            this._eqButtonHintTarget.setBindKeyTextVisibility(true);
+            this._eqButtonHintTarget.hideGlow();
          }
       }
    }

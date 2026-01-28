@@ -26,6 +26,10 @@ package net.wg.data.constants.generated
       public static const GLOW_ID_ORANGE_SPECIAL:int = 5;
       
       public static const GLOW_ID_ORANGE_UPGRADE:int = 6;
+      
+      public static const CONTEXT_HINT_ANIM_ID_NONE:int = 0;
+      
+      public static const CONTEXT_HINT_ANIM_ID_GREEN:int = 1;
        
       
       public function CONSUMABLES_PANEL_SETTINGS()

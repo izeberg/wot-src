@@ -20,8 +20,6 @@ package net.wg.infrastructure.base.meta
       
       function onSelectHotFilterS(param1:int, param2:Boolean) : void;
       
-      function switchModeS(param1:int) : void;
-      
       function returnToStyledModeS() : void;
       
       function onItemIsNewAnimationShownS(param1:int) : void;
@@ -32,15 +30,11 @@ package net.wg.infrastructure.base.meta
       
       function as_setBottomPanelInitData(param1:Object) : void;
       
-      function as_setSwitchersData(param1:Object) : void;
-      
       function as_setBottomPanelTabsData(param1:Object) : void;
       
       function as_setBottomPanelTabsPluses(param1:Array) : void;
       
       function as_setCarouselData(param1:Object) : void;
-      
-      function as_setCarouselInfoLabelData(param1:String, param2:String) : void;
       
       function as_setFilterData(param1:Object) : void;
       
@@ -54,7 +48,7 @@ package net.wg.infrastructure.base.meta
       
       function as_setEditableProgressionRequiredStyleHintVisibility(param1:Boolean) : void;
       
-      function as_showPopoverBtnIcon(param1:String, param2:String) : void;
+      function as_updatePopoverBtn(param1:String, param2:String, param3:String) : void;
       
       function as_getDataProvider() : Object;
       

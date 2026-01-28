@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/russian/R00_Baloon/normal/lod3/Propeller</parent>
+	<extent>512.000000</extent>
+	<visibilityBox>
+		<min>-8.981524 -26.957008 -2.086063</min>
+		<max>8.981913 -20.619568 -1.711914</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/russian/R00_Baloon/normal/lod2/Propeller</nodefullVisual>
+</root>

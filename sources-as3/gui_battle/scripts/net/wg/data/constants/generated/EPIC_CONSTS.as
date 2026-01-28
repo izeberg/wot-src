@@ -23,11 +23,13 @@ package net.wg.data.constants.generated
       
       public static const SECTOR_BOMBING:int = 4;
       
-      public static const LANE_1:int = 1;
+      public static const LANE_LEFT:String = "LEFT";
       
-      public static const LANE_2:int = 2;
+      public static const LANE_CENTER:String = "CENTER";
       
-      public static const LANE_3:int = 3;
+      public static const LANE_RIGHT:String = "RIGHT";
+      
+      public static const LANE_TOP:String = "TOP";
       
       public static const ZONE_TRANSITION_ATK:int = 0;
       

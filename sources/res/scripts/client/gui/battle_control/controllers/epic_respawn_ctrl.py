@@ -1,4 +1,4 @@
-import BigWorld
+import BigWorld, Event
 from debug_utils import LOG_ERROR, LOG_DEBUG
 from gui.battle_control import avatar_getter
 from gui.battle_control.controllers.respawn_ctrl import RespawnsController, IRespawnView
@@ -30,6 +30,10 @@ class IEpicRespawnView(IRespawnView):
 
 class EpicRespawnsController(RespawnsController):
     sessionProvider = dependency.descriptor(IBattleSessionProvider)
+
+    def __init__(self, setup):
+        super(EpicRespawnsController, self).__init__(setup)
+        self.onRequestPointForRespawn = Event.Event(self._eManager)
 
     def startControl(self):
         super(EpicRespawnsController, self).startControl()
@@ -64,8 +68,8 @@ class EpicRespawnsController(RespawnsController):
     def requestLaneForRespawn(laneID):
         BigWorld.player().base.respawnController_requestRespawnGroupChange(laneID)
 
-    @staticmethod
-    def requestPointForRespawn(respawnZone):
+    def requestPointForRespawn(self, respawnZone):
+        self.onRequestPointForRespawn(respawnZone)
         BigWorld.player().base.respawnController_chooseRespawnZone(respawnZone)
 
     def _show(self):

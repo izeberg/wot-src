@@ -20,6 +20,24 @@ msgstr "Пасада"
 msgid "ClanListWindow/table/weekMining"
 msgstr "За тыдзень"
 
+msgid "battleModifiers/body"
+msgstr ""
+"Змяняе пэўныя параметры ўсёй тэхнікі, якая ўдзельнічае ў бітвах Умацаванага раёна. Працуе ў наступных рэжымах: %(battleModifiersQueue)s.\n"
+"\n"
+"Каб убачыць актуальныя значэнні, уступіце ў адпаведны атрад або стварыце яго."
+
+msgid "battleModifiers/fortBattle"
+msgstr "Наступленні"
+
+msgid "battleModifiers/sortie"
+msgstr "Вылазкі %(level)s"
+
+msgid "battleModifiers/title"
+msgstr "Мадыфікатар Умацаванага раёна"
+
+msgid "battleModifiersGM/title"
+msgstr "Мадыфікатар Глабальнай карты"
+
 msgid "battleQueue/clanPosition"
 msgstr "Пазіцыя: %(position)s"
 
@@ -45,6 +63,9 @@ msgid "disconnected/WarningDescriptionRoaming"
 msgstr ""
 "У роўмінгу Умацаваны раён недаступны. Каб даступіцца да Умацаванага раёна, "
 "перайдзіце ў свой рэгіён."
+
+msgid "fortBattleRoom/freezeJournal"
+msgstr "Да размарозкі тэхнікі"
 
 msgid "fortBattleRoom/listHeader/clanPlayers"
 msgstr "Члены клана"

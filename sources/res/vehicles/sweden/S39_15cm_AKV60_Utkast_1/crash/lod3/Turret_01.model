@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/sweden/S39_15cm_AKV60_Utkast_1/crash/lod3/Turret_01</nodefullVisual>
+	<parent>vehicles/sweden/S39_15cm_AKV60_Utkast_1/crash/lod4/Turret_01</parent>
+	<extent>192</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.539086 0.012496 -1.317583</min>
+		<max>1.539238 1.627270 1.451595</max>
+	</visibilityBox>
+</root>

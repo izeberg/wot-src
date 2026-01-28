@@ -180,12 +180,12 @@ msgstr "Штурмовой прицел"
 
 msgid "detailsHelp/assaultTank/prosCons"
 msgstr ""
-"Ключевые особенности — акцент на нанесение урона за счёт отсутствия "
-"оглушения от снарядов, сравнительно высокие показатели лобового бронирования"
-" и живучести в своём классе. Используйте эти особенности против целей, "
-"находящихся в укрытиях, но помните, что на близких дистанциях вы крайне "
-"уязвимы, а низкая манёвренность не позволит быстро среагировать на атаку с "
-"фланга."
+"Ключевые особенности — акцент на нанесение урона за счёт высоких значений "
+"бронепробиваемости и скорости заряжания орудия, сравнительно высокие "
+"показатели лобового бронирования и живучести в своём классе. Используйте эти"
+" особенности против целей, находящихся в укрытиях, но помните, что "
+"на близких дистанциях вы крайне уязвимы, а низкая манёвренность не позволит "
+"быстро среагировать на атаку с фланга."
 
 msgid "detailsHelp/assaultTank/prosCons/title"
 msgstr "Преимущества и недостатки"
@@ -231,10 +231,10 @@ msgstr "Поиск добычи"
 
 msgid "detailsHelp/battleRoyale/coneVisibility/description"
 msgstr ""
-"Вы можете обнаружить только ту технику, которая попала в ваш сектор "
-"видимости — «конус» перед башней. Для удобства он отображается на мини-"
-"карте. Машина противника, находящаяся в непосредственной близости от вас, "
-"видима всегда (т.н. «рентген»)."
+"Вы можете обнаружить только ту технику, которая попала в ваш сектор "
+"видимости — «конус» перед башней. Для удобства он отображается на мини-"
+"карте. Машина противника, находящаяся в непосредственной близости от вас, "
+"видима всегда (т. н. «рентген»)."
 
 msgid "detailsHelp/battleRoyale/coneVisibility/title"
 msgstr "Система обзора"
@@ -582,11 +582,17 @@ msgstr "Поддержите огнём!"
 msgid "radialMenu/attack_enemy_with_SPG"
 msgstr "Атакую цель!"
 
+msgid "radialMenu/attack_supply"
+msgstr "Поддержите огнём!"
+
 msgid "radialMenu/attacking_base"
 msgstr "Я захвачу!"
 
 msgid "radialMenu/attacking_enemy"
 msgstr "Атакую цель!"
+
+msgid "radialMenu/attacking_supply"
+msgstr "Атакую объект!"
 
 msgid "radialMenu/attention_to_base_atk"
 msgstr "Захватите!"
@@ -600,8 +606,14 @@ msgstr "Внимание сюда!"
 msgid "radialMenu/cancel_reply"
 msgstr "Отказать"
 
+msgid "radialMenu/defend_supply"
+msgstr "Защищайте объект!"
+
 msgid "radialMenu/defending_base"
 msgstr "Я защищу!"
+
+msgid "radialMenu/defending_supply"
+msgstr "Защищаю объект!"
 
 msgid "radialMenu/enemy_hq_attack_command"
 msgstr "Атакуйте!"
@@ -626,6 +638,9 @@ msgstr "Перезарядка!"
 
 msgid "radialMenu/reply_to_player"
 msgstr "Подтверждаю!"
+
+msgid "radialMenu/supply_self_repair"
+msgstr "Объект на ремонте!"
 
 msgid "radialMenu/supporting_ally"
 msgstr "Я помогу тебе!"

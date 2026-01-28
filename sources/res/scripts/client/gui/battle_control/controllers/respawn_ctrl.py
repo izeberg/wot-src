@@ -46,7 +46,7 @@ _SWITCH_SETUPS_ACTION = 0
 
 class RespawnsController(ViewComponentsController):
     __slots__ = ('__weakref__', '__isUIInited', '__vehicles', '__cooldowns', '__respawnInfo',
-                 '__timerCallback', '__eManager', 'onRespawnVisibilityChanged', 'onVehicleDeployed',
+                 '__timerCallback', '_eManager', 'onRespawnVisibilityChanged', 'onVehicleDeployed',
                  'onRespawnInfoUpdated', 'onPlayerRespawnLivesUpdated', 'onTeamRespawnLivesRestored',
                  'onRespawnVehiclesUpdated', '__isUiShown', '__isShowUiAllowed',
                  '__limits', '__playerRespawnLives', '__battleCtx', '__setupsIndexes',
@@ -72,13 +72,13 @@ class RespawnsController(ViewComponentsController):
         self.__battleCtx = setup.battleCtx
         self.__setupsIndexes = defaultdict(dict)
         self.__cooldownsManager = BattleCooldownManager()
-        self.__eManager = Event.EventManager()
-        self.onRespawnVisibilityChanged = Event.Event(self.__eManager)
-        self.onVehicleDeployed = Event.Event(self.__eManager)
-        self.onRespawnInfoUpdated = Event.Event(self.__eManager)
-        self.onPlayerRespawnLivesUpdated = Event.Event(self.__eManager)
-        self.onTeamRespawnLivesRestored = Event.Event(self.__eManager)
-        self.onRespawnVehiclesUpdated = Event.Event(self.__eManager)
+        self._eManager = Event.EventManager()
+        self.onRespawnVisibilityChanged = Event.Event(self._eManager)
+        self.onVehicleDeployed = Event.Event(self._eManager)
+        self.onRespawnInfoUpdated = Event.Event(self._eManager)
+        self.onPlayerRespawnLivesUpdated = Event.Event(self._eManager)
+        self.onTeamRespawnLivesRestored = Event.Event(self._eManager)
+        self.onRespawnVehiclesUpdated = Event.Event(self._eManager)
         return
 
     def getControllerID(self):

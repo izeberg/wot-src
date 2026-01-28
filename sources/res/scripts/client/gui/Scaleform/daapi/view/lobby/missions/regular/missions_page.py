@@ -4,9 +4,7 @@ import BigWorld, Windowing
 from CurrentVehicle import g_currentVehicle
 from account_helpers import AccountSettings
 from account_helpers.AccountSettings import MISSIONS_PAGE
-from new_year.ny_constants import NY_DAILY_QUESTS_VISITED
 from adisp import adisp_async as adispasync, adisp_process
-from gui.impl.lobby.daily.unseen_quests_component import getAvailableDailyQuests
 from gui.limited_ui.lui_rules_storage import LuiRules
 from gui.marathon.collective_goal_marathon import COLLECTIVE_GOAL_MARATHON_PREFIX
 from th_async import th_async, th_await
@@ -23,7 +21,6 @@ from gui.Scaleform.daapi.view.meta.MissionsPageMeta import MissionsPageMeta
 from gui.Scaleform.framework.entities.DAAPIDataProvider import ListDAAPIDataProvider
 from gui.Scaleform.framework.managers.loaders import SFViewLoadParams
 from gui.Scaleform.genConsts.QUESTS_ALIASES import QUESTS_ALIASES
-from gui.Scaleform.locale.BATTLE_PASS import BATTLE_PASS
 from gui.Scaleform.locale.QUESTS import QUESTS
 from gui.Scaleform.locale.RES_ICONS import RES_ICONS
 from gui.impl import backport
@@ -48,14 +45,13 @@ from skeletons.gui.app_loader import IAppLoader, GuiGlobalSpaceID
 from skeletons.gui.battle_matters import IBattleMattersController
 from skeletons.gui.lobby_context import ILobbyContext
 from skeletons.gui.server_events import IEventsCache
-from new_year_account_settings import getNYSetting
 TabData = namedtuple('TabData', ('alias', 'linkage', 'tooltip', 'tooltipDisabled', 'label', 'prefix'))
 TABS_DATA_ORDERED = [
  TabData(QUESTS_ALIASES.MISSIONS_EVENT_BOARDS_VIEW_PY_ALIAS, QUESTS_ALIASES.MISSIONS_EVENT_BOARDS_VIEW_LINKAGE, QUESTS.MISSIONS_TAB_EVENTBOARDS, QUESTS.MISSIONS_TAB_EVENTBOARDS_DISABLED, _ms(QUESTS.MISSIONS_TAB_LABEL_EVENTBOARDS), None),
  TabData(QUESTS_ALIASES.MISSIONS_GROUPED_VIEW_PY_ALIAS, QUESTS_ALIASES.MISSIONS_GROUPED_VIEW_LINKAGE, QUESTS.MISSIONS_TAB_MARATHONS, QUESTS.MISSIONS_TAB_MARATHONS, _ms(QUESTS.MISSIONS_TAB_LABEL_MARATHON), None),
  TabData(QUESTS_ALIASES.BATTLE_MATTERS_VIEW_PY_ALIAS, QUESTS_ALIASES.BATTLE_MATTERS_VIEW_LINKAGE, QUESTS.MISSIONS_TAB_BATTLEMATTERS, QUESTS.MISSIONS_TAB_BATTLEMATTERS, backport.text(R.strings.battle_matters.battleMattersTab()), None),
  TabData(QUESTS_ALIASES.MAPBOX_VIEW_PY_ALIAS, QUESTS_ALIASES.MAPBOX_VIEW_LINKAGE, QUESTS.MISSIONS_TAB_MAPBOX, QUESTS.MISSIONS_TAB_MAPBOX, backport.text(R.strings.mapbox.mapboxTab()), None),
- TabData(QUESTS_ALIASES.BATTLE_PASS_MISSIONS_VIEW_PY_ALIAS, QUESTS_ALIASES.BATTLE_PASS_MISSIONS_VIEW_LINKAGE, QUESTS.MISSIONS_TAB_BATTLE_PASS, QUESTS.MISSIONS_TAB_BATTLE_PASS, _ms(BATTLE_PASS.BATTLEPASSTAB), None),
+ TabData(QUESTS_ALIASES.BATTLE_PASS_MISSIONS_VIEW_PY_ALIAS, QUESTS_ALIASES.BATTLE_PASS_MISSIONS_VIEW_LINKAGE, QUESTS.MISSIONS_TAB_BATTLE_PASS, QUESTS.MISSIONS_TAB_BATTLE_PASS, backport.text(R.strings.battle_pass.battlepassTab()), None),
  TabData(QUESTS_ALIASES.MISSIONS_CATEGORIES_VIEW_PY_ALIAS, QUESTS_ALIASES.MISSIONS_CATEGORIES_VIEW_LINKAGE, QUESTS.MISSIONS_TAB_CATEGORIES, QUESTS.MISSIONS_TAB_CATEGORIES, _ms(QUESTS.MISSIONS_TAB_LABEL_CATEGORIES), None),
  TabData(QUESTS_ALIASES.MISSIONS_PREMIUM_VIEW_PY_ALIAS, QUESTS_ALIASES.MISSIONS_PREMIUM_VIEW_LINKAGE, QUESTS.MISSIONS_TAB_DAILY, QUESTS.MISSIONS_TAB_DAILY, _ms(QUESTS.MISSIONS_TAB_LABEL_DAILY), None)]
 MARATHONS_START_TAB_INDEX = 1
@@ -78,6 +74,12 @@ class MissionsPage(LobbySubView, MissionsPageMeta):
        QUESTS_ALIASES.BATTLE_MATTERS_VIEW_PY_ALIAS: (
                                                    backport.sound(R.sounds.bm_enter()),
                                                    backport.sound(R.sounds.bm_exit()))}
+    __MISSIONS_MARATHON_DYNAMIC_SOUND = {'black_market': (
+                      backport.sound(R.sounds.black_market_enter()),
+                      backport.sound(R.sounds.black_market_exit())), 
+       'silver_hunt': (
+                     backport.sound(R.sounds.silver_hunt_enter()),
+                     backport.sound(R.sounds.silver_hunt_exit()))}
     eventsCache = dependency.descriptor(IEventsCache)
     lobbyContext = dependency.descriptor(ILobbyContext)
     eventsController = dependency.descriptor(IEventBoardController)
@@ -291,12 +293,13 @@ class MissionsPage(LobbySubView, MissionsPageMeta):
         return
 
     def _updateVoicedTabs(self):
-        collectiveGoalMarathon = self.marathonsCtrl.getMarathon(COLLECTIVE_GOAL_MARATHON_PREFIX)
-        if collectiveGoalMarathon is not None and collectiveGoalMarathon.isEnabled():
-            self.__VOICED_TABS.update({QUESTS_ALIASES.MISSIONS_MARATHON_VIEW_PY_ALIAS: (
-                                                              backport.sound(R.sounds.black_market_enter()),
-                                                              backport.sound(R.sounds.black_market_exit()))})
-        return
+        if not self.marathonsCtrl.getMarathon(COLLECTIVE_GOAL_MARATHON_PREFIX).isEnabled():
+            return
+        collectiveGoalEventName = self.__collectiveGoalMarathonsController.getEventName()
+        if collectiveGoalEventName:
+            tabsSounds = self.__MISSIONS_MARATHON_DYNAMIC_SOUND.get(collectiveGoalEventName)
+            if tabsSounds:
+                self.__VOICED_TABS.update({QUESTS_ALIASES.MISSIONS_MARATHON_VIEW_PY_ALIAS: tabsSounds})
 
     def __onCollectiveGoalMarathonUpdated(self):
         self.__eventStatusUpdated(self.__currentTabAlias == QUESTS_ALIASES.MISSIONS_MARATHON_VIEW_PY_ALIAS and self.__marathonPrefix == COLLECTIVE_GOAL_MARATHON_PREFIX)
@@ -440,35 +443,8 @@ class MissionsPage(LobbySubView, MissionsPageMeta):
             vehicle = g_currentVehicle.item
             vehName = vehicle.shortUserName if vehicle else ''
             tab['label'] = tabData.label % {'vehName': vehName}
-        if alias in (QUESTS_ALIASES.MISSIONS_MARATHON_VIEW_PY_ALIAS,
-         QUESTS_ALIASES.MISSIONS_CATEGORIES_VIEW_PY_ALIAS,
-         QUESTS_ALIASES.MISSIONS_PREMIUM_VIEW_PY_ALIAS,
-         QUESTS_ALIASES.MISSIONS_GROUPED_VIEW_PY_ALIAS,
-         QUESTS_ALIASES.MAPBOX_VIEW_PY_ALIAS):
-            newEventsCount = 0
-            if alias == QUESTS_ALIASES.MISSIONS_PREMIUM_VIEW_PY_ALIAS:
-                suitableEvents = getAvailableDailyQuests(self.eventsCache)
-                for q in self.eventsCache.getNyCelebQuests():
-                    suitableEvents.append(q)
-
-            elif alias == QUESTS_ALIASES.MAPBOX_VIEW_PY_ALIAS:
-                suitableEvents = tuple()
-                newEventsCount = self.__mapboxCtrl.getUnseenItemsCount()
-                if not getNYSetting(NY_DAILY_QUESTS_VISITED):
-                    newEventsCount += 1
-            elif self.currentTab is not None and self.__currentTabAlias == alias:
-                suitableEvents = self.__getSuitableEvents(self.currentTab)
-            else:
-                if alias == QUESTS_ALIASES.MISSIONS_CATEGORIES_VIEW_PY_ALIAS:
-                    from gui.Scaleform.daapi.view.lobby.missions.regular.missions_views import MissionsCategoriesView
-                    advisableQuests = self.eventsCache.getAdvisableQuests(MissionsCategoriesView.getViewQuestFilter())
-                    advisableQuests.update({q.getID():q for q in self.__getSuitableEvents(self.getComponent(alias))})
-                else:
-                    advisableQuests = self.eventsCache.getAdvisableQuests()
-                advisableEvents = self.__builders[alias].getBlocksAdvisableEvents(advisableQuests)
-                suitableEvents = {q.getID() for q in advisableEvents}
-            tab['value'] = self.__unseenEventsManager.getUnseenEventsCount(suitableEvents) + newEventsCount
-        return (headerTab, tab)
+        return (
+         headerTab, tab)
 
     def __battleMattersTabIsEnabled(self):
         bm = self.__battleMattersController

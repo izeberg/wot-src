@@ -95,6 +95,10 @@ package
       
       public static const PROGRESS_TIMERS_RESUPPLY:String = "#epic_battle:progress_timers/resupply";
       
+      public static const SUPPLY_MARKER_NEED_REPAIR:String = "#epic_battle:supply/marker_need_repair";
+      
+      public static const SUPPLY_TIMER_IS_REPAIRING:String = "#epic_battle:supply/timer_is_repairing";
+      
       public static const PROGRESS_TIMERS_ACTIVE:String = "#epic_battle:progress_timers/active";
       
       public static const PROGRESS_TIMERS_UNAVAILABLE:String = "#epic_battle:progress_timers/unavailable";
@@ -136,6 +140,22 @@ package
       public static const RANK_SLOT_2:String = "#epic_battle:rank/slot_2";
       
       public static const RANK_SLOT_3:String = "#epic_battle:rank/slot_3";
+      
+      public static const SUPPLY_PILLBOX:String = "#epic_battle:supply/pillbox";
+      
+      public static const SUPPLY_FLAMER:String = "#epic_battle:supply/flamer";
+      
+      public static const SUPPLY_MORTAR:String = "#epic_battle:supply/mortar";
+      
+      public static const SUPPLY_AIRSHIP:String = "#epic_battle:supply/airship";
+      
+      public static const SUPPLY_MESSAGES_DEFENCE:String = "#epic_battle:supply/messages/defence";
+      
+      public static const SUPPLY_MESSAGES_ATTACK:String = "#epic_battle:supply/messages/attack";
+      
+      public static const SUPPLY_MESSAGES_AIRSHIPACTIVE:String = "#epic_battle:supply/messages/airshipActive";
+      
+      public static const SUPPLY_MESSAGES_AIRSHIPACTIVEPOSITIVE:String = "#epic_battle:supply/messages/airshipActivePositive";
       
       public static const MISSION_PRIMARY_TITLE:String = "#epic_battle:mission/primary/title";
       
@@ -268,6 +288,8 @@ package
       public static const TAB_SCREEN_SHOW_MY_LANE:String = "#epic_battle:tab_screen/show_my_lane";
       
       public static const TAB_SCREEN_SHOW_ALL_LANES:String = "#epic_battle:tab_screen/show_all_lanes";
+      
+      public static const TAB_SCREEN_SHOW_QUESTS:String = "#epic_battle:tab_screen/show_quests";
       
       public static const TAB_SCREEN_GENERALBONUSVALUE:String = "#epic_battle:tab_screen/generalBonusValue";
       
@@ -409,6 +431,20 @@ package
       
       public static const DEPLOYMENTMAP_RESPAWNWARNING:String = "#epic_battle:deploymentMap/respawnWarning";
       
+      public static const DEPLOYMENTMAP_LANE_LEFT:String = "#epic_battle:deploymentMap/lane/left";
+      
+      public static const DEPLOYMENTMAP_LANE_CENTER:String = "#epic_battle:deploymentMap/lane/center";
+      
+      public static const DEPLOYMENTMAP_LANE_RIGHT:String = "#epic_battle:deploymentMap/lane/right";
+      
+      public static const DEPLOYMENTMAP_LANE_TOP:String = "#epic_battle:deploymentMap/lane/top";
+      
+      public static const DEPLOYMENTMAP_WARNING_1:String = "#epic_battle:deploymentMap/warning/1";
+      
+      public static const DEPLOYMENTMAP_WARNING_2:String = "#epic_battle:deploymentMap/warning/2";
+      
+      public static const DEPLOYMENTMAP_WARNING_3:String = "#epic_battle:deploymentMap/warning/3";
+      
       public static const EPIC_BATTLES_AFTER_BATTLE_TITLE:String = "#epic_battle:epic_battles_after_battle/Title";
       
       public static const EPIC_BATTLES_AFTER_BATTLE_ACHIEVED_RANK:String = "#epic_battle:epic_battles_after_battle/Achieved_Rank";
@@ -502,6 +538,12 @@ package
       public static const BATTLERESULTS_KILL:String = "#epic_battle:battleResults/kill";
       
       public static const BATTLERESULTS_DAMAGE:String = "#epic_battle:battleResults/damage";
+      
+      public static const BATTLERESULTS_DAMAGESUPPLIES:String = "#epic_battle:battleResults/damageSupplies";
+      
+      public static const BATTLERESULTS_QUESTCOMPLETED:String = "#epic_battle:battleResults/questCompleted";
+      
+      public static const BATTLERESULTS_KILLSUPPLIES:String = "#epic_battle:battleResults/killSupplies";
       
       public static const METAABILITYSCREEN_ABILITY_MAX_LEVEL:String = "#epic_battle:metaAbilityScreen/Ability_max_level";
       

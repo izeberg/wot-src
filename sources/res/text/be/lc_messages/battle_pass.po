@@ -297,8 +297,8 @@ msgstr "Завяршыўшы ўсе этапы Палепшанага пропу
 
 msgid "battlePassBuyView/confirm/shopOfferWarning"
 msgstr ""
-"Пасля набыцця Палепшанага пропуска за золата, прапанова з наборам раздзелаў "
-"за рэальныя грошы стане недаступнай."
+"Пасля набыцця Палепшанага пропуска для гэтага раздзела, прапанова з наборам "
+"раздзелаў за рэальныя грошы стане недаступнай."
 
 msgid "battlePassBuyView/confirm/shopOfferWarningDisabledChapter"
 msgstr "Увага! Вы купляеце Палепшаны пропуск для недаступнага раздзела."
@@ -430,6 +430,9 @@ msgstr "Попел на ветры"
 msgid "chapter/fullName/184"
 msgstr "Праменьчык надзеі"
 
+msgid "chapter/fullName/185"
+msgstr "Артэфакты мінулага"
+
 msgid "chapter/fullName/2"
 msgstr "У пекла і назад"
 
@@ -440,7 +443,7 @@ msgid "chapter/fullName/4"
 msgstr "Праменьчык надзеі"
 
 msgid "chapter/fullName/5"
-msgstr "Паляванне на мышэй"
+msgstr "Артэфакты мінулага"
 
 msgid "chapter/fullName/quoted/181"
 msgstr "Задача без рашэння"
@@ -454,6 +457,9 @@ msgstr "Попел на ветры"
 msgid "chapter/fullName/quoted/184"
 msgstr "Праменьчык надзеі"
 
+msgid "chapter/fullName/quoted/185"
+msgstr "Артэфакты мінулага"
+
 msgid "chapter/fullNameUppercased/181"
 msgstr "ЗАДАЧА БЕЗ РАШЭННЯ"
 
@@ -466,6 +472,9 @@ msgstr "ПОПЕЛ НА ВЕТРЫ"
 msgid "chapter/fullNameUppercased/184"
 msgstr "ПРАМЕНЬЧЫК НАДЗЕІ"
 
+msgid "chapter/fullNameUppercased/185"
+msgstr "АРТЭФАКТЫ МІНУЛАГА"
+
 msgid "chapter/fullNameUppercased/quoted/181"
 msgstr "ЗАДАЧА БЕЗ РАШЭННЯ"
 
@@ -477,6 +486,9 @@ msgstr "ПОПЕЛ НА ВЕТРЫ"
 
 msgid "chapter/fullNameUppercased/quoted/184"
 msgstr "ПРАМЕНЬЧЫК НАДЗЕІ"
+
+msgid "chapter/fullNameUppercased/quoted/185"
+msgstr "АРТЭФАКТЫ МІНУЛАГА"
 
 msgid "chapter/title"
 msgstr "РАЗДЗЕЛ %(chapter)s"
@@ -491,6 +503,9 @@ msgstr ""
 
 msgid "chapterChoice/allChaptersCompleted/title"
 msgstr "УСЕ РАЗДЗЕЛЫ ПРОЙДЗЕНЫЯ"
+
+msgid "chapterChoice/allChaptersCompleted/titleSingle"
+msgstr "РАЗДЗЕЛ ПРОЙДЗЕНЫ"
 
 msgid "chapterChoice/buy"
 msgstr "Купіць"
@@ -741,7 +756,7 @@ msgstr "Узнагарода за ўзроўні фронту"
 
 msgid "howToEarnPoints/card/limitPoints/text"
 msgstr ""
-"Пры дасягненні ліміту ачкоў на тэхніцы вы будзеце атрымліваць ва ўзнагароду "
+"Пры дасягненні ліміту ачкоў на тэхніцы вы будзеце атрымліваць ва ўзнагароду "
 "дадатковыя ачкі."
 
 msgid "howToEarnPoints/card/limitPoints/title"
@@ -749,7 +764,7 @@ msgstr "Узнагарода за ліміт ачкоў"
 
 msgid "howToEarnPoints/card/specialVehicle/text"
 msgstr ""
-"Пры штотыднёвым дасягненні ліміту ачкоў на ключавой тэхніцы вы будзеце "
+"Пры кожным дасягненні ліміту ачкоў на ключавой тэхніцы вы будзеце "
 "атрымліваць больш бонусных ачкоў: %(textBind)s"
 
 msgid "howToEarnPoints/card/specialVehicle/title"
@@ -758,9 +773,9 @@ msgstr "Ключавая тэхніка сезона"
 msgid "howToEarnPoints/description"
 msgstr ""
 "Ачкі Баявога пропуска патрэбны для паслядоўнага праходжання этапаў. Іх можна"
-" заслужыць у Выпадковых баях і большасці іншых рэжымаў, якія актыўныя падчас"
-" Баявога пропуска, за выкананне баявых і штодзённых задач, а таксама "
-"аднаразова за дасягненне штотыднёвага ліміту ачкоў на канкрэтнай машыне."
+" заслужыць у Выпадковых баях і большасці іншых рэжымаў, якія актыўныя падчас"
+" Баявога пропуска, за выкананне баявых і штодзённых задач, а таксама "
+"за дасягненне ліміту ачкоў на канкрэтнай машыне."
 
 msgid "howToEarnPoints/lose/1"
 msgstr "Паражэнне / нічыя"
@@ -870,6 +885,15 @@ msgstr "Перамога"
 msgid "intro/aboutButton"
 msgstr "ПРА БАЯВЫ ПРОПУСК"
 
+msgid "intro/artifacts/text"
+msgstr ""
+"Адмысловы раздзел Баявога пропуска прысвечаны супрацоўніцтву з гульнёй "
+"STALCRAFT: X і будзе даступны для праходжання да 11.02.2026. Галоўная "
+"ўзнагарода — танк Captain і стыль для яго."
+
+msgid "intro/artifacts/title"
+msgstr "Раздзел «Артэфакты мінулага»"
+
 msgid "intro/bonus/text"
 msgstr ""
 "Пры дасягненні ліміту ачкоў на пэўнай машыне вам будуць налічаны бонусныя "
@@ -881,6 +905,16 @@ msgstr "Бонус за дасягненне ліміту"
 
 msgid "intro/button"
 msgstr "Так!"
+
+msgid "intro/changeLimit/text"
+msgstr ""
+"На ўсёй тэхніцы VI–XI узроўняў усталёўваюцца аднолькавыя ліміты ачкоў, якія "
+"абнаўляюцца адразу пры іх дасягненні. Кожны наступны ліміт будзе "
+"павялічвацца. Пры дасягенні ліміту ачкоў на тэхніцы вам будуць налічаны "
+"бонусныя ачкі ва ўзнагароду."
+
+msgid "intro/changeLimit/title"
+msgstr "Змена ліміту ачкоў"
 
 msgid "intro/chapter/text"
 msgstr ""
@@ -901,19 +935,22 @@ msgid "intro/limit/title"
 msgstr "Штотыднёвыя ліміты ачкоў"
 
 msgid "intro/marathonSubTitle"
-msgstr "Раздзел будзе даступны з 29.05.2025 па 11.06.2025"
+msgstr ""
+"Гэты адмысловы раздзел Баявога пропуска прысвечаны супрацоўніцтву "
+"з папулярнай гульнёй STALCRAFT: X. Вас чакаюць унікальныя члены экіпажа, "
+"тэматычныя элементы выгляду і мноства каштоўных узнагарод."
 
 msgid "intro/marathonTitle"
 msgstr "ДАСТУПНЫ АДМЫСЛОВЫ РАЗДЗЕЛ"
 
 msgid "intro/subTitle"
 msgstr ""
-"Самая авантурная, няўдзячная і небяспечная аперацыя Альянсу, якая павярнула "
-"не туды ўжо на этапе планавання. Напамін усім, што ў кожнага дзеяння ёсць "
-"наступствы, а некаторыя веды могуць абысціся надзвычай дорага."
+"Гэты адмысловы раздзел Баявога пропуска прысвечаны супрацоўніцтву "
+"з папулярнай гульнёй STALCRAFT: X. Вас чакаюць унікальныя члены экіпажа, "
+"тэматычныя элементы выгляду і мноства каштоўных узнагарод."
 
 msgid "intro/title"
-msgstr "БАЯВЫ ПРОПУСК: АДВАРОТНЫ БОК"
+msgstr "БАЯВЫ ПРОПУСК: У ПАГОНЮ ЗА АРТЭФАКТАМІ!"
 
 msgid "intro/vehicles/text"
 msgstr ""
@@ -1030,6 +1067,9 @@ msgstr "Завяршыце папярэдні раздзел, каб дакуп�
 msgid "progression/btnAllChapters"
 msgstr "УСЕ РАЗДЗЕЛЫ"
 
+msgid "progression/btnBack"
+msgstr "НАЗАД"
+
 msgid "progression/btnExtras"
 msgstr ""
 "ДАДАТКОВЫЯ\n"
@@ -1115,26 +1155,29 @@ msgstr ""
 msgid "progression/errorBtn"
 msgstr "У Гараж"
 
+msgid "progression/extraChapterWidget/character"
+msgstr "Член экіпажа"
+
+msgid "progression/extraChapterWidget/characterVoice"
+msgstr "Член экіпажа з агучкай"
+
 msgid "progression/extraChapterWidget/crewTitle"
 msgstr "і %(name)s"
 
-msgid "progression/extraChapterWidget/styleCaption"
-msgstr "Член экіпажа"
-
 msgid "progression/extraChapterWidget/styleRemark"
-msgstr "З Палепшаным пропускам"
+msgstr "З Палепшаным пропускам"
 
 msgid "progression/extraChapterWidget/styleSubTitle"
-msgstr "і баявая задача для %(vehicleName)s"
+msgstr "+ баявая задача"
 
 msgid "progression/extraChapterWidget/styleTitle"
-msgstr "Стыль «%(styleName)s»"
+msgstr "+ 3D-стыль «%(styleName)s»"
 
 msgid "progression/extraChapterWidget/vehicleCaption"
 msgstr "Прэміум тэхніка"
 
 msgid "progression/extraChapterWidget/voiceOverTooltip"
-msgstr "Націсніце, каб праслухаць прыклад голасу танкіста."
+msgstr "Націсніце, каб праслухаць голас танкіста."
 
 msgid "progression/footer/freePointsDescr"
 msgstr "Неразмеркаваных ачкоў Баявога пропуска: "
@@ -1475,9 +1518,6 @@ msgstr "Адзін з двух танкістаў"
 msgid "tooltips/completed/claimRewards"
 msgstr "Усе ўзнагароды атрыманы"
 
-msgid "tooltips/completed/finalLevel"
-msgstr "Пройдзены ўсе раздзелы і этапы прагрэсіі"
-
 msgid "tooltips/completed/got"
 msgstr "Узнагарода атрымана"
 
@@ -1491,6 +1531,9 @@ msgstr "Асноўныя ўзнагароды атрыманы"
 
 msgid "tooltips/completed/subTitle"
 msgstr "УСЕ РАЗДЗЕЛЫ ПРОЙДЗЕНЫЯ"
+
+msgid "tooltips/completed/subTitleSingle"
+msgstr "РАЗДЗЕЛ ПРОЙДЗЕНЫ"
 
 msgid "tooltips/completed/title"
 msgstr "Баявы пропуск"
@@ -1611,8 +1654,8 @@ msgstr ""
 
 msgid "tooltips/inProgress/playGame/stronghold_units"
 msgstr ""
-"Правілы налічэння ачкоў у Вылазках і Наступленнях на тэхніцы VI, VII і X "
-"узроўняў."
+"Правілы налічэння ачкоў у Вылазках і Наступленнях на тэхніцы VI, VIIІ "
+"і X узроўняў."
 
 msgid "tooltips/inProgress/playGame/versus_ai"
 msgstr "Правілы налічэння ачкоў у Палігоне на тэхніцы VI-XІ узроўняў."
@@ -1683,7 +1726,7 @@ msgid "tooltips/points/title"
 msgstr "Ачкі Баявога пропуска"
 
 msgid "tooltips/pointsTable/lose"
-msgstr "За паражэнне/нічыю"
+msgstr "За паражэнне/нічыю"
 
 msgid "tooltips/pointsTable/loseWithoutDraw"
 msgstr "За паражэнне"
@@ -1835,7 +1878,7 @@ msgstr ""
 msgid "tooltips/vehiclePoints/limitDescription"
 msgstr ""
 "Назбірайце дастатковую колькасць ачкоў, каб атрымаць\n"
-"узнагароду за дасягненне штотыднёвага ліміту ачкоў."
+"узнагароду за дасягненне ліміту."
 
 msgid "tooltips/vehiclePoints/limitDescriptionCompleted"
 msgstr ""

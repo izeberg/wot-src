@@ -179,6 +179,14 @@
 						<!--BW_String-->
 					</spottingDuration>
 				</entity>
+				<entity>
+					<name>FLBasicMine</name>
+					<radius>150</radius>
+					<spottingDuration>
+						80.0
+						<!--BW_String-->
+					</spottingDuration>
+				</entity>
 			</entitiesToSearch>
 			<scanPointsAmount>4</scanPointsAmount>
 			<antepositions>0</antepositions>
@@ -248,6 +256,14 @@
 				</entity>
 				<entity>
 					<name>BasicMine</name>
+					<radius>150</radius>
+					<spottingDuration>
+						80.0
+						<!--BW_String-->
+					</spottingDuration>
+				</entity>
+				<entity>
+					<name>FLBasicMine</name>
 					<radius>150</radius>
 					<spottingDuration>
 						80.0
@@ -330,6 +346,14 @@
 						<!--BW_String-->
 					</spottingDuration>
 				</entity>
+				<entity>
+					<name>FLBasicMine</name>
+					<radius>150</radius>
+					<spottingDuration>
+						80.0
+						<!--BW_String-->
+					</spottingDuration>
+				</entity>
 			</entitiesToSearch>
 			<scanPointsAmount>4</scanPointsAmount>
 			<antepositions>0</antepositions>
@@ -400,6 +424,14 @@
 				</entity>
 				<entity>
 					<name>BasicMine</name>
+					<radius>150</radius>
+					<spottingDuration>
+						80.0
+						<!--BW_String-->
+					</spottingDuration>
+				</entity>
+				<entity>
+					<name>FLBasicMine</name>
 					<radius>150</radius>
 					<spottingDuration>
 						80.0
@@ -482,6 +514,14 @@
 						<!--BW_String-->
 					</spottingDuration>
 				</entity>
+				<entity>
+					<name>FLBasicMine</name>
+					<radius>150</radius>
+					<spottingDuration>
+						80.0
+						<!--BW_String-->
+					</spottingDuration>
+				</entity>
 			</entitiesToSearch>
 			<scanPointsAmount>4</scanPointsAmount>
 			<antepositions>0</antepositions>
@@ -558,6 +598,14 @@
 						<!--BW_String-->
 					</spottingDuration>
 				</entity>
+				<entity>
+					<name>FLBasicMine</name>
+					<radius>150</radius>
+					<spottingDuration>
+						80.0
+						<!--BW_String-->
+					</spottingDuration>
+				</entity>
 			</entitiesToSearch>
 			<scanPointsAmount>4</scanPointsAmount>
 			<antepositions>0</antepositions>
@@ -628,6 +676,14 @@
 				</entity>
 				<entity>
 					<name>BasicMine</name>
+					<radius>150</radius>
+					<spottingDuration>
+						80.0
+						<!--BW_String-->
+					</spottingDuration>
+				</entity>
+				<entity>
+					<name>FLBasicMine</name>
 					<radius>150</radius>
 					<spottingDuration>
 						80.0

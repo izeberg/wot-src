@@ -43,7 +43,7 @@ msgstr "Экіпаж"
 
 msgid "categories/currency/subtitle"
 msgstr ""
-"Можа змяшчаць золата, срэбра, боны, вольны досвед і Кампаненты з адкрытых "
+"Можа змяшчаць золата, срэбра, боны, вольны досвед і кампаненты з адкрытых "
 "кантэйнераў."
 
 msgid "categories/currency/title"
@@ -91,7 +91,7 @@ msgstr "Тэхніка"
 
 msgid "categories/vehicleCustomizations/subtitle"
 msgstr ""
-"Можа змяшчаць стылі, камуфляжныя схемы і іншыя элементы выгляду для тэхнікі."
+"Можа змяшчаць стылі, камуфляжныя схемы і іншыя элементы выгляду для тэхнікі."
 
 msgid "categories/vehicleCustomizations/title"
 msgstr "Выгляд"
@@ -311,7 +311,7 @@ msgstr "Гарантаваная ўзнагарода з этапаў"
 
 msgid "guaranteedRewardTooltip/block4/bonus/text"
 msgstr ""
-"Узнагароды з трэцяга спіса можна атрымліваць неабмежаваную колькасць разоў."
+"Узнагароды з трэцяга спіса можна атрымліваць неабмежаваную колькасць разоў."
 
 msgid "guaranteedRewardTooltip/block4/vehicle/text"
 msgstr ""
@@ -355,11 +355,12 @@ msgid "lootBox/slot/description"
 msgstr "%(idx)s. Імавернасць выпадзення адной з узнагарод: "
 
 msgid "lootboxRotationTooltip/caption"
-msgstr "Вы можаце атрымаць адну з узнагарод бягучага спіса/этапу."
+msgstr "Вы можаце атрымаць адну з узнагарод бягучага этапу."
 
 msgid "lootboxRotationTooltip/description1"
 msgstr ""
-"Збярыце асноўныя ўзнагароды бягучага этапу, каб перайсці да наступнага."
+"Збярыце тэхніку з асноўных узнагарод бягучага спіса, каб перайсці "
+"да наступнага."
 
 msgid "lootboxRotationTooltip/description2"
 msgstr "Кожны этап уключае ўнікальную тэхніку і іншую гульнявую маёмасць."
@@ -449,12 +450,6 @@ msgstr ""
 msgid "lootboxesWithKeys/about/default"
 msgstr "Пра кантэйнер"
 
-msgid "lootboxesWithKeys/about/ny_2025_big"
-msgstr "Пра кантэйнеры з этапамі"
-
-msgid "lootboxesWithKeys/about/ny_2026_big"
-msgstr "Пра кантэйнеры з этапамі"
-
 msgid "lootboxesWithKeys/about/tanks_birthday_2025_large"
 msgstr "Пра кантэйнеры падзеі"
 
@@ -510,17 +505,8 @@ msgstr "У ГАРАЖ"
 msgid "openBoxScreen/backBtn/1"
 msgstr "У КРАМУ"
 
-msgid "openBoxScreen/backBtn/10"
-msgstr "ДА ПІРАТЭХНІКІ"
-
-msgid "openBoxScreen/backBtn/11"
-msgstr "ДА АТРАКЦЫЁНА"
-
-msgid "openBoxScreen/backBtn/12"
-msgstr "ДА ГАДАВАНЦА"
-
 msgid "openBoxScreen/backBtn/2"
-msgstr "У МЯСТЭЧКА"
+msgstr "НА ПЛОШЧУ"
 
 msgid "openBoxScreen/backBtn/3"
 msgstr "ДА АСКЕПКАЎ"
@@ -529,19 +515,7 @@ msgid "openBoxScreen/backBtn/4"
 msgstr "ДА РЭФЕРАЛЬНАЙ ПРАГРАМЫ"
 
 msgid "openBoxScreen/backBtn/5"
-msgstr "ДА СВЯТОЧНАЙ ЯЛІНЫ"
-
-msgid "openBoxScreen/backBtn/6"
-msgstr "ДА ХОРАМА"
-
-msgid "openBoxScreen/backBtn/7"
-msgstr "ДА ІНСТАЛЯЦЫІ"
-
-msgid "openBoxScreen/backBtn/8"
-msgstr "ДА СТАЛОЎКІ"
-
-msgid "openBoxScreen/backBtn/9"
-msgstr "ДА ГОРКІ"
+msgstr "ДА СВЯТОЧНАЙ ПОШТЫ"
 
 msgid "openBoxScreen/backBtnMain"
 msgstr "У Гараж"
@@ -663,16 +637,6 @@ msgstr ""
 
 msgid "probabilitiesOverlay/optional/header"
 msgstr "ІМАВЕРНАСЦЬ ВЫПАДАННЯ"
-
-msgid "probabilitiesOverlay/optional/ny_2025_tanks/description"
-msgstr ""
-"З кантэйнера з {cream_Open}імавернасцю{cream_Close} %(percentageIcon)s выпадае толькі {cream_Open}адна адзінка тэхнікі{cream_Close}.\n"
-"Пасля збору ўсёй тэхнікі машыны, якія выпалі паўторна, {cream_Open}кампенсуюцца золатам{cream_Close}."
-
-msgid "probabilitiesOverlay/optional/ny_2026_tanks/description"
-msgstr ""
-"З кантэйнера з {cream_Open}імавернасцю{cream_Close} %(percentageIcon)s выпадае толькі {cream_Open}адна адзінка тэхнікі{cream_Close}.\n"
-"Пасля збору ўсёй тэхнікі машыны, якія выпалі паўторна, {cream_Open}кампенсуюцца золатам{cream_Close}."
 
 msgid "probabilitiesOverlay/optional/procentProbability"
 msgstr "%(probability)s%"
@@ -955,7 +919,7 @@ msgstr ""
 
 msgid "tooltips/probabilityStageButtons/description2"
 msgstr ""
-"Узнагароды з трэцяга спіса можна атрымліваць неабмежаваную колькасць разоў."
+"Узнагароду з трэцяга спіса можна атрымаць неабмежаваную колькасць разоў."
 
 msgid "tooltips/probabilityStageButtons/title"
 msgstr "Спісы змесціва"

@@ -9,6 +9,8 @@ package net.wg.gui.battle.epicBattle.views
    import net.wg.gui.battle.components.StatusNotificationsPanel;
    import net.wg.gui.battle.epicBattle.battleloading.EpicBattleLoading;
    import net.wg.gui.battle.epicBattle.battleloading.events.EpicBattleLoadingEvent;
+   import net.wg.gui.battle.epicBattle.views.components.EpicBattleQuests;
+   import net.wg.gui.battle.epicBattle.views.components.FLProgressionCmp;
    import net.wg.gui.battle.epicBattle.views.stats.EpicFullStats;
    import net.wg.gui.battle.random.views.teamBasesPanel.TeamBasesPanel;
    import net.wg.gui.battle.views.battleEndWarning.BattleEndWarningPanel;
@@ -18,6 +20,8 @@ package net.wg.gui.battle.epicBattle.views
    import net.wg.gui.battle.views.damageInfoPanel.DamageInfoPanel;
    import net.wg.gui.battle.views.debugPanel.DebugPanel;
    import net.wg.gui.battle.views.epicDeploymentMap.EpicDeploymentMap;
+   import net.wg.gui.battle.views.epicDeploymentMap.EpicDeploymentWarning;
+   import net.wg.gui.battle.views.epicDeploymentMap.events.EpicDeploymentLaneEvent;
    import net.wg.gui.battle.views.epicInGameRank.EpicInGameRankPanel;
    import net.wg.gui.battle.views.epicMissionsPanel.EpicMissionsPanel;
    import net.wg.gui.battle.views.epicOverviewMapScreen.EpicOverviewMapScreen;
@@ -94,6 +98,16 @@ package net.wg.gui.battle.epicBattle.views
       private static const HINT_PANEL_AMMUNITION_OFFSET_Y:int = -160;
       
       private static const AMMUNITION_PANEL_Y_SHIFT:int = 587;
+      
+      private static const EPIC_BATTLE_QUESTS_POSITION_Y:int = 126;
+      
+      private static const EPIC_BATTLE_QUESTS_OFFSET_Y:int = -42;
+      
+      private static const EPIC_DEPLOYMENT_WARNING_OFFSET_Y:int = 10;
+      
+      private static const PROGRESSION_CMP_OFFSET_Y:int = 10;
+      
+      private static const PLAYER_MESSAGES_LIST_Y_OFFSET:int = 10;
        
       
       public var fullStats:EpicFullStats = null;
@@ -126,6 +140,8 @@ package net.wg.gui.battle.epicBattle.views
       
       public var epicDeploymentMap:EpicDeploymentMap = null;
       
+      public var epicDeploymentWarning:EpicDeploymentWarning = null;
+      
       public var epicOverviewMapScreen:EpicOverviewMapScreen = null;
       
       public var endWarningPanel:BattleEndWarningPanel = null;
@@ -143,6 +159,10 @@ package net.wg.gui.battle.epicBattle.views
       public var prebattleTimerBackground:PrebattleTimerBg = null;
       
       public var statusNotificationsPanel:StatusNotificationsPanel = null;
+      
+      private var _progressionCmp:FLProgressionCmp = null;
+      
+      private var _epicBattleQuests:EpicBattleQuests = null;
       
       private var _scorePanelState:int = 0;
       
@@ -166,9 +186,8 @@ package net.wg.gui.battle.epicBattle.views
       
       override public function updateStage(param1:Number, param2:Number) : void
       {
-         var _loc3_:int = 0;
          super.updateStage(param1,param2);
-         _loc3_ = param1 >> 1;
+         var _loc3_:int = param1 >> 1;
          _originalWidth = param1;
          _originalHeight = param2;
          if(this.prebattleTimerBackground)
@@ -211,15 +230,9 @@ package net.wg.gui.battle.epicBattle.views
          this.battleDamageLogPanel.y = damagePanel.y + BATTLE_DAMAGE_LOG_Y_PADDING;
          this.battleDamageLogPanel.updateSize(param1,param2);
          this.updateBattleDamageLogPanelPosition();
-         if(this._messagePlaying)
-         {
-            this.epicScorePanelUI.x = _loc3_;
-            this.epicScorePanelUI.y = SCORE_PANEL_HIDDEN_OFFSET;
-         }
-         else
-         {
-            this.epicScorePanelUI.updateStage(param1,param2);
-         }
+         this.epicScorePanelUI.x = _loc3_;
+         this.epicScorePanelUI.y = !!this._messagePlaying ? Number(SCORE_PANEL_HIDDEN_OFFSET) : Number(0);
+         this.epicScorePanelUI.updateStage(param1,param2);
          this.epicSpectatorViewUI.updateStage(param1,param2);
          this.epicRespawnView.updateStage(param1,param2);
          this.epicRespawnView.isVehPostProgressionEnabled = this._isVehPostProgressionEnabled;
@@ -234,6 +247,8 @@ package net.wg.gui.battle.epicBattle.views
          this.recoveryPanel.updateStage(param1,param2);
          this.statusNotificationsPanel.updateStage(param1,param2);
          this.updateHintPanelPosition();
+         this.updateBattleQuestAndWarningPosition();
+         this.updateProgressionCmpPosition();
       }
       
       override protected function updatePrebattleTimerPosition(param1:int) : void
@@ -270,6 +285,30 @@ package net.wg.gui.battle.epicBattle.views
          prebattleTimer.addEventListener(PrebattleTimerEvent.START_HIDING,this.onPrebattleTimerStartHidingHandler);
          this.epicRespawnView.mouseEnabled = false;
          this.hintPanel.addEventListener(Event.RESIZE,this.onHintPanelResizeHandler);
+         this.createProgressionCmp();
+         this.epicDeploymentWarning.visible = false;
+         this.epicDeploymentMap.addEventListener(EpicDeploymentLaneEvent.CHANGED,this.onDeploymentLaneChangedHandler);
+      }
+      
+      private function createProgressionCmp() : void
+      {
+         this._progressionCmp = new FLProgressionCmp();
+         addChild(this._progressionCmp);
+         this.updateProgressionCmpPosition();
+         registerComponent(this._progressionCmp,BATTLE_VIEW_ALIASES.EPIC_PROGRESSION_CMP);
+         this._progressionCmp.addEventListener(Event.RESIZE,this.onProgressionCmpResizeHandler);
+         this._progressionCmp.addEventListener(FLProgressionCmp.EVENT_VISIBILITY_CHANGED,this.onProgressionCmpVisibleHandler);
+      }
+      
+      private function updateProgressionCmpPosition() : void
+      {
+         var _loc1_:int = 0;
+         if(this._progressionCmp)
+         {
+            this._progressionCmp.x = App.appWidth - this._progressionCmp.width;
+            _loc1_ = PROGRESSION_CMP_OFFSET_Y + minimap.currentSizeIndex;
+            this._progressionCmp.y = minimap.y - this._progressionCmp.height - _loc1_;
+         }
       }
       
       override protected function onPopulate() : void
@@ -296,6 +335,8 @@ package net.wg.gui.battle.epicBattle.views
          registerComponent(this.epicInGameRank,BATTLE_VIEW_ALIASES.EPIC_INGAME_RANK);
          registerComponent(this.hintPanel,BATTLE_VIEW_ALIASES.HINT_PANEL);
          registerComponent(this.statusNotificationsPanel,BATTLE_VIEW_ALIASES.STATUS_NOTIFICATIONS_PANEL);
+         registerComponent(this._epicBattleQuests,BATTLE_VIEW_ALIASES.EPIC_BATTLE_QUESTS);
+         registerComponent(this.fullStats.questsTab,BATTLE_VIEW_ALIASES.EPIC_BATTLE_QUESTS_TAB);
          super.onPopulate();
          this.endWarningPanel.alpha = 0;
       }
@@ -326,7 +367,13 @@ package net.wg.gui.battle.epicBattle.views
          this.epicRespawnView.removeEventListener(EpicRespawnEvent.VIEW_CHANGED,this.onRespawnViewChangedHandler);
          this.epicScorePanelUI.removeEventListener(EpicScorePanelEvent.STATE_CHANGED,this.onScorePanelStateChangedHandler);
          battleLoading.removeEventListener(EpicBattleLoadingEvent.VISIBILITY_CHANGED,this.onBattleLoadingVisibilityChangedHandler);
+         this.epicDeploymentMap.removeEventListener(EpicDeploymentLaneEvent.CHANGED,this.onDeploymentLaneChangedHandler);
          this.hintPanel.removeEventListener(Event.RESIZE,this.onHintPanelResizeHandler);
+         if(this._progressionCmp)
+         {
+            this._progressionCmp.removeEventListener(Event.RESIZE,this.onProgressionCmpResizeHandler);
+            this._progressionCmp.removeEventListener(FLProgressionCmp.EVENT_VISIBILITY_CHANGED,this.onProgressionCmpVisibleHandler);
+         }
          super.onBeforeDispose();
       }
       
@@ -342,10 +389,14 @@ package net.wg.gui.battle.epicBattle.views
          this.teamBasesPanelUI = null;
          this.consumablesPanel = null;
          this.battleDamageLogPanel = null;
+         this._progressionCmp = null;
+         this._epicBattleQuests = null;
          this.epicRespawnView = null;
          this.epicScorePanelUI = null;
          this.epicSpectatorViewUI = null;
          this.epicDeploymentMap = null;
+         this.epicDeploymentWarning.dispose();
+         this.epicDeploymentWarning = null;
          this.epicOverviewMapScreen = null;
          this.recoveryPanel = null;
          this.endWarningPanel = null;
@@ -362,18 +413,33 @@ package net.wg.gui.battle.epicBattle.views
       
       override protected function getAllowedMinimapSizeIndex(param1:Number) : Number
       {
-         var _loc2_:Number = App.appWidth - this.consumablesPanel.panelWidth;
          var _loc3_:Rectangle = null;
+         var _loc4_:Rectangle = null;
+         var _loc2_:Number = App.appWidth - this.consumablesPanel.panelWidth;
          while(param1 > MinimapSizeConst.MIN_SIZE_INDEX)
          {
             _loc3_ = minimap.getMinimapRectBySizeIndex(param1);
-            if(_loc2_ - _loc3_.width >= 0)
+            if(_loc2_ >= _loc3_.width)
             {
-               break;
+               _loc4_ = new Rectangle(App.appWidth - _loc3_.width,App.appHeight - _loc3_.height,_loc3_.width,_loc3_.height);
+               if(this._epicBattleQuests && !this._epicBattleQuests.getBounds(stage).intersects(_loc4_))
+               {
+                  break;
+               }
             }
             param1--;
          }
          return param1;
+      }
+      
+      override protected function playerMessageListPositionUpdate() : void
+      {
+         var _loc1_:int = PLAYER_MESSAGES_LIST_Y_OFFSET;
+         if(this._progressionCmp && this._progressionCmp.isCompVisible())
+         {
+            _loc1_ = PLAYER_MESSAGES_LIST_OFFSET.y;
+         }
+         playerMessageList.setLocation(_originalWidth - PLAYER_MESSAGES_LIST_OFFSET.x | 0,_originalHeight - minimap.getMessageCoordinate() + _loc1_);
       }
       
       override protected function initialize() : void
@@ -382,6 +448,8 @@ package net.wg.gui.battle.epicBattle.views
          this.epicRespawnView.addEventListener(EpicRespawnEvent.VIEW_CHANGED,this.onRespawnViewChangedHandler);
          this.epicScorePanelUI.addEventListener(EpicScorePanelEvent.STATE_CHANGED,this.onScorePanelStateChangedHandler);
          battleLoading.addEventListener(EpicBattleLoadingEvent.VISIBILITY_CHANGED,this.onBattleLoadingVisibilityChangedHandler);
+         this._epicBattleQuests = new EpicBattleQuests();
+         addChild(this._epicBattleQuests);
       }
       
       override protected function createStatisticsController() : BattleStatisticDataController
@@ -500,6 +568,26 @@ package net.wg.gui.battle.epicBattle.views
          }
       }
       
+      private function updateBattleQuestAndWarningPosition() : void
+      {
+         this.epicDeploymentWarning.visible = this.epicRespawnView.visible && this.epicDeploymentWarning.hasText;
+         this.epicDeploymentWarning.x = _originalWidth - this.epicDeploymentWarning.width;
+         if(this._epicBattleQuests)
+         {
+            this._epicBattleQuests.x = _originalWidth - this._epicBattleQuests.width;
+            this._epicBattleQuests.y = EPIC_BATTLE_QUESTS_POSITION_Y;
+            if(_originalWidth <= StageSizeBoundaries.WIDTH_1366 && this.epicDeploymentWarning.visible)
+            {
+               this._epicBattleQuests.y += EPIC_BATTLE_QUESTS_OFFSET_Y;
+            }
+            this.epicDeploymentWarning.y = this._epicBattleQuests.y + this._epicBattleQuests.height + EPIC_DEPLOYMENT_WARNING_OFFSET_Y;
+         }
+         else
+         {
+            this.epicDeploymentWarning.y = EPIC_BATTLE_QUESTS_POSITION_Y;
+         }
+      }
+      
       override protected function get prebattleAmmunitionPanelAvailable() : Boolean
       {
          return true;
@@ -514,6 +602,7 @@ package net.wg.gui.battle.epicBattle.views
       {
          super.onMinimapSizeChangedHandler(param1);
          super.updateStage(App.appWidth,App.appHeight);
+         this.updateProgressionCmpPosition();
       }
       
       private function onHintPanelResizeHandler(param1:Event) : void
@@ -553,6 +642,7 @@ package net.wg.gui.battle.epicBattle.views
       {
          this.epicDeploymentMap.activeInRespawn(this.epicRespawnView.visible,_originalWidth,_originalHeight);
          this.updateChatAndReinforcementPosition();
+         this.updateBattleQuestAndWarningPosition();
       }
       
       private function onBattleLoadingVisibilityChangedHandler(param1:EpicBattleLoadingEvent) : void
@@ -574,6 +664,22 @@ package net.wg.gui.battle.epicBattle.views
             }
             this.epicInGameRank.isActive = true;
          }
+      }
+      
+      private function onDeploymentLaneChangedHandler(param1:EpicDeploymentLaneEvent) : void
+      {
+         this.epicDeploymentWarning.updateLane(param1.currentLane,param1.selectedLane);
+         this.updateBattleQuestAndWarningPosition();
+      }
+      
+      private function onProgressionCmpResizeHandler(param1:Event) : void
+      {
+         this.updateProgressionCmpPosition();
+      }
+      
+      private function onProgressionCmpVisibleHandler(param1:Event) : void
+      {
+         this.playerMessageListPositionUpdate();
       }
       
       private function onScorePanelStateChangedHandler(param1:EpicScorePanelEvent) : void

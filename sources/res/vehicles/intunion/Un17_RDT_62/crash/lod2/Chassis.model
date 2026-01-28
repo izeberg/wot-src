@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/intunion/Un17_RDT_62/crash/lod3/Chassis</parent>
+	<tank>true</tank>
+	<extent>96.000000</extent>
+	<nodefullVisual>vehicles/intunion/Un17_RDT_62/crash/lod2/Chassis</nodefullVisual>
+	<visibilityBox>
+		<min>-1.600027 0.000101 -3.092070</min>
+		<max>1.600044 1.157439 3.147110</max>
+	</visibilityBox>
+</root>

@@ -15,7 +15,7 @@ msgid "A1001_OTAC_MT_58_T_descr"
 msgstr ""
 " \n"
 "\n"
-"Характарыстыкі машыны могуць быць зменены без кампенсацыі."
+"Характарыстыкі машыны могуць быць зменены без кампенсацыі."
 
 msgid "A1001_OTAC_MT_58_T_long_special"
 msgstr "?empty?"
@@ -1574,9 +1574,9 @@ msgstr "НКРС, добрае браніраванне, альтэрнатыў�
 
 msgid "A175_OTAC_MT_58_descr"
 msgstr ""
-"У другой палове 50-х гадоў развіццё амерыканскага танкабудавання ішло да стварэння канцэпцыі Main Battle Tank. Адным з такіх праектаў, датаваным 1958-м годам, стала машына баявой масай 30 тон. Распрацаваў яе канцэпцыю інжынер O.T.A.C. Брэдлі. Невялікая баявая маса дасягалася за кошт кароткага шасі: гэтага ўдалося дасягнуць шляхам пераносу месца механіка-кіроўцы ў вежу. Танк абсталявалі радным 6-цыліндравым дызельным рухавіком вадзянога ахалоджвання, які ляжаў на баку. Унутры прасторнай вежы размяшчалася 152-мм гармата XM81 і спараныя кулямёты, таксама прапрацоўваўся варыянт узбраення 105-мм гарматай T254. Меркавалася выкарыстоўваць механізм набівання, боезапас якога размяшчаўся ўнутры кармавой нішы. У такім выглядзе OTAC MT-58 праіснаваў нядоўга: падчас дапрацовак ён стаў прыкметна даўжэйшым, а баявая маса вырасла да 35 тон.\n"
+"У другой палове 50-х гадоў развіццё амерыканскага танкабудавання ішло да стварэння канцэпцыі Main Battle Tank. Адным з такіх праектаў, датаваным 1958 годам, стала машына баявой масай 30 тон. Распрацаваў яе канцэпцыю інжынер O.T.A.C. Брэдлі. Невялікая баявая маса дасягалася за кошт кароткага шасі: гэтага ўдалося дасягнуць шляхам пераносу месца механіка-кіроўцы ў вежу. Танк абсталявалі радным 6-цыліндравым дызельным рухавіком вадзянога ахалоджвання, які ляжаў на баку. Унутры прасторнай вежы размяшчалася 152-мм гармата XM81 і спараныя кулямёты. Таксама прапрацоўваўся варыянт узбраення 105-мм гарматай T254. Меркавалася выкарыстоўваць механізм набівання, боезапас якога размяшчаўся ўнутры кармавой нішы. У такім выглядзе OTAC MT-58 праіснаваў нядоўга: падчас дапрацовак ён стаў прыкметна даўжэйшым, а баявая маса вырасла да 35 тон.\n"
 "\n"
-"Характарыстыкі машыны могуць быць зменены без кампенсацыі."
+"Характарыстыкі машыны могуць быць зменены без кампенсацыі."
 
 msgid "A175_OTAC_MT_58_long_special"
 msgstr ""
@@ -1593,6 +1593,42 @@ msgstr "MT-58"
 
 msgid "A175_OTAC_MT_58_short_special"
 msgstr "НКРС, добрае браніраванне, альтэрнатыўная гармата"
+
+msgid "A176_OTAC_LK_7605"
+msgstr "OTAC LK-7605"
+
+msgid "A176_OTAC_LK_7605_descr"
+msgstr ""
+" \n"
+"\n"
+"Характарыстыкі машыны могуць быць зменены без кампенсацыі."
+
+msgid "A176_OTAC_LK_7605_long_special"
+msgstr "?empty?"
+
+msgid "A176_OTAC_LK_7605_short"
+msgstr "LK-7605"
+
+msgid "A176_OTAC_LK_7605_short_special"
+msgstr "?empty?"
+
+msgid "A179_MBT_59"
+msgstr "MBT-59"
+
+msgid "A179_MBT_59_descr"
+msgstr ""
+" \n"
+"\n"
+"Характарыстыкі машыны могуць быць зменены без кампенсацыі."
+
+msgid "A179_MBT_59_long_special"
+msgstr "?empty?"
+
+msgid "A179_MBT_59_short"
+msgstr "MBT-59"
+
+msgid "A179_MBT_59_short_special"
+msgstr "?empty?"
 
 msgid "A21_T14_long_special"
 msgstr ""
@@ -1816,6 +1852,9 @@ msgstr "AN/GRC-7"
 msgid "AN_GRC_7A"
 msgstr "AN/GRC-7A"
 
+msgid "AN_GRC_7_O"
+msgstr "AN/GRC-7"
+
 msgid "AN_GRC_7_RMT"
 msgstr "AN/GRC-7 RMT"
 
@@ -1836,6 +1875,9 @@ msgstr "AN/GRC-8M"
 
 msgid "AN_GRC_8_4"
 msgstr "AN/GRC-8F"
+
+msgid "AN_GRC_8_59"
+msgstr "AN/GRC-8"
 
 msgid "AN_PRC_10"
 msgstr "AN/PRC-10"
@@ -1902,6 +1944,9 @@ msgstr "Wireless Set No. 19"
 
 msgid "Buick_series_60"
 msgstr "Buick Series 60"
+
+msgid "Cat_LDS_750"
+msgstr "Caterpillar LDS-750"
 
 msgid "Chassis_A1001_OTAC_MT_58_T"
 msgstr "MT-58"
@@ -2154,6 +2199,12 @@ msgstr "MT-58"
 
 msgid "Chassis_A175_OTAC_MT_58_02"
 msgstr "Firebird"
+
+msgid "Chassis_A176_OTAC_LK_7605"
+msgstr "LK-7605"
+
+msgid "Chassis_A179_MBT_59"
+msgstr "MBT-59"
 
 msgid "Chassis_A27_T82"
 msgstr "T82 Pilot No. 1"
@@ -2611,6 +2662,14 @@ msgid "Continental_AOSI_1195_6_4"
 msgstr "Continental AOSI-1195-6"
 
 msgid "Continental_AOSI_1195_6_4_short"
+msgstr ""
+"Continental\n"
+"AOSI-1195-6"
+
+msgid "Continental_AOSI_1195_6_O"
+msgstr "Continental AOSI-1195-6"
+
+msgid "Continental_AOSI_1195_6_O_short"
 msgstr ""
 "Continental\n"
 "AOSI-1195-6"
@@ -4617,6 +4676,12 @@ msgstr "MT-58"
 msgid "Turret_1_A175_OTAC_MT_58_02"
 msgstr "Firebird"
 
+msgid "Turret_1_A176_OTAC_LK_7605"
+msgstr "LK-7605"
+
+msgid "Turret_1_A179_MBT_59"
+msgstr "MBT-59"
+
 msgid "Turret_1_A27_T82"
 msgstr "T82 HMC"
 
@@ -5450,11 +5515,23 @@ msgstr "XM31"
 msgid "_152mm_APFSDS_XM578E1"
 msgstr "XM578E1"
 
+msgid "_152mm_APFSDS_XM578E1_59"
+msgstr "APFSDS XM578E1"
+
+msgid "_152mm_APFSDS_XM578E1_O"
+msgstr "M409-1"
+
 msgid "_152mm_Gun_Launcher_M81"
 msgstr "152 mm Gun-Launcher XM81 (conventional)"
 
 msgid "_152mm_HEAT_M409"
 msgstr "T13E1"
+
+msgid "_152mm_HEAT_M409_59"
+msgstr "HEAT M409"
+
+msgid "_152mm_HEAT_M409_O"
+msgstr "M409"
 
 msgid "_152mm_HEAT_XM409"
 msgstr "HEAT XM409"
@@ -5465,11 +5542,23 @@ msgstr "HE XM657E2"
 msgid "_152mm_HE_XM657E2_2"
 msgstr "T13E2"
 
+msgid "_152mm_HE_XM657E2_59"
+msgstr "HE XM657E2"
+
+msgid "_152mm_HE_XM657E2_O"
+msgstr "XM657E2"
+
 msgid "_152mm_HE_XM657E3"
 msgstr "HE XM657E3"
 
+msgid "_152mm_Pentomic_Gun"
+msgstr "152mm Pentomic Gun"
+
 msgid "_152mm_XM81E1"
 msgstr "152mm XM81E1"
+
+msgid "_152mm_XM81_59"
+msgstr "152 mm XM81"
 
 msgid "_155mm_AP_M111"
 msgstr "AP M111"

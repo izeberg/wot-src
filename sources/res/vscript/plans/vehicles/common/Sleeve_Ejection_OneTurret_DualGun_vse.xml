@@ -694,14 +694,21 @@
 				<slots/>
 			</block>
 			<block>
-				<class>GameObjectToVehicle</class>
-				<id>GameObjectToVehicle_3</id>
-				<params/>
+				<class>SetVariable</class>
+				<id>SetVariable_3</id>
+				<buddy>Variable_1</buddy>
+				<params>
+					<param>
+						GameObjectT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
 				<slots/>
 			</block>
 			<block>
-				<class>GetVehicleAppearanceGameObject</class>
-				<id>GetVehicleAppearanceGameObject_2</id>
+				<class>GameObjectToVehicle</class>
+				<id>GameObjectToVehicle_3</id>
 				<params/>
 				<slots/>
 			</block>
@@ -718,15 +725,10 @@
 				<slots/>
 			</block>
 			<block>
-				<class>CompareIntegers</class>
-				<id>CompareIntegers_1</id>
+				<class>GetVehicleAppearanceGameObject</class>
+				<id>GetVehicleAppearanceGameObject_2</id>
 				<params/>
-				<slots>
-					<slot>
-						<name>b</name>
-						<const>\1\</const>
-					</slot>
-				</slots>
+				<slots/>
 			</block>
 			<block>
 				<class>SetVariable</class>
@@ -742,18 +744,23 @@
 				<slots/>
 			</block>
 			<block>
-				<class>If</class>
-				<id>If_6</id>
+				<class>CompareIntegers</class>
+				<id>CompareIntegers_1</id>
 				<params/>
-				<slots/>
+				<slots>
+					<slot>
+						<name>b</name>
+						<const>\1\</const>
+					</slot>
+				</slots>
 			</block>
 			<block>
-				<class>SetVariable</class>
-				<id>SetVariable_3</id>
-				<buddy>Variable_1</buddy>
+				<class>GetVariable</class>
+				<id>GetVariable_9</id>
+				<buddy>Variable_4</buddy>
 				<params>
 					<param>
-						GameObjectT
+						StringT
 						<name>Variable Type</name>
 						<type>TypeT</type>
 					</param>
@@ -765,55 +772,6 @@
 				<id>GetVehicleGameObject_1</id>
 				<params/>
 				<slots/>
-			</block>
-			<block>
-				<class>IsPlayerVehicle</class>
-				<id>IsPlayerVehicle_1</id>
-				<params/>
-				<slots/>
-			</block>
-			<block>
-				<class>GetVariable</class>
-				<id>GetVariable_5</id>
-				<buddy>Variable_10</buddy>
-				<params>
-					<param>
-						VehicleT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>SetVariable</class>
-				<id>SetVariable_4</id>
-				<buddy>Variable_6</buddy>
-				<params>
-					<param>
-						GameObjectT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>GetGameSetting</class>
-				<id>GetGameSetting_1</id>
-				<params>
-					<param>
-						int
-						<name>Game Setting Type</name>
-						<type>StringT</type>
-					</param>
-				</params>
-				<slots>
-					<slot>
-						<name>settingName</name>
-						<const>\HAVOK_ENABLED\</const>
-					</slot>
-				</slots>
 			</block>
 			<block>
 				<class>SpawnComponent</class>
@@ -859,6 +817,36 @@
 				</slots>
 			</block>
 			<block>
+				<class>GetGameSetting</class>
+				<id>GetGameSetting_1</id>
+				<params>
+					<param>
+						int
+						<name>Game Setting Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>settingName</name>
+						<const>\HAVOK_ENABLED\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>SetVariable</class>
+				<id>SetVariable_4</id>
+				<buddy>Variable_6</buddy>
+				<params>
+					<param>
+						GameObjectT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
 				<class>FindFirstNode</class>
 				<id>FindFirstNode_4</id>
 				<params/>
@@ -900,19 +888,6 @@
 						<const>\true\</const>
 					</slot>
 				</slots>
-			</block>
-			<block>
-				<class>GetVariable</class>
-				<id>GetVariable_9</id>
-				<buddy>Variable_4</buddy>
-				<params>
-					<param>
-						StringT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>FindFirstNode</class>
@@ -1315,16 +1290,22 @@
 				<output>getDebrisSpawner</output>
 			</connection>
 			<connection>
+				<from>SpawnComponent_1</from>
+				<input>input</input>
+				<to>SetVariable_3</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>SpawnComponent_1</from>
+				<input>value</input>
+				<to>SetVariable_3</to>
+				<output>object</output>
+			</connection>
+			<connection>
 				<from>GetVehicleGameObject_1</from>
 				<input>gameObject</input>
 				<to>GameObjectToVehicle_3</to>
 				<output>vehicleObject</output>
-			</connection>
-			<connection>
-				<from>ContextGetSelf_1</from>
-				<input>gameObject</input>
-				<to>GetVehicleAppearanceGameObject_2</to>
-				<output>value</output>
 			</connection>
 			<connection>
 				<from>SetVariable_13</from>
@@ -1339,9 +1320,9 @@
 				<output>node</output>
 			</connection>
 			<connection>
-				<from>GetGameSetting_1</from>
-				<input>a</input>
-				<to>CompareIntegers_1</to>
+				<from>ContextGetSelf_1</from>
+				<input>gameObject</input>
+				<to>GetVehicleAppearanceGameObject_2</to>
 				<output>value</output>
 			</connection>
 			<connection>
@@ -1357,28 +1338,10 @@
 				<output>getSpawnSound</output>
 			</connection>
 			<connection>
-				<from>SetVariable_10</from>
-				<input>input</input>
-				<to>If_6</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>IsPlayerVehicle_1</from>
-				<input>value</input>
-				<to>If_6</to>
-				<output>res</output>
-			</connection>
-			<connection>
-				<from>SpawnComponent_1</from>
-				<input>input</input>
-				<to>SetVariable_3</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>SpawnComponent_1</from>
-				<input>value</input>
-				<to>SetVariable_3</to>
-				<output>object</output>
+				<from>GetGameSetting_1</from>
+				<input>a</input>
+				<to>CompareIntegers_1</to>
+				<output>value</output>
 			</connection>
 			<connection>
 				<from>ContextGetSelf_1</from>
@@ -1387,28 +1350,10 @@
 				<output>value</output>
 			</connection>
 			<connection>
-				<from>GetVariable_5</from>
-				<input>vehicle</input>
-				<to>IsPlayerVehicle_1</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>SetVariable_2</from>
-				<input>input</input>
-				<to>SetVariable_4</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>GetComponentProperties_3</from>
-				<input>value</input>
-				<to>SetVariable_4</to>
-				<output>getDebrisSpawner</output>
-			</connection>
-			<connection>
-				<from>If_6</from>
+				<from>SetVariable_10</from>
 				<input>in</input>
 				<to>SpawnComponent_1</to>
-				<output>true</output>
+				<output>out</output>
 			</connection>
 			<connection>
 				<from>ContextGetSelf_1</from>
@@ -1427,6 +1372,18 @@
 				<input>Event name</input>
 				<to>SpawnComponent_1</to>
 				<output>value</output>
+			</connection>
+			<connection>
+				<from>SetVariable_2</from>
+				<input>input</input>
+				<to>SetVariable_4</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>GetComponentProperties_3</from>
+				<input>value</input>
+				<to>SetVariable_4</to>
+				<output>getDebrisSpawner</output>
 			</connection>
 			<connection>
 				<from>FindFirstNode_5</from>
@@ -1979,18 +1936,6 @@
 						<slots/>
 					</block>
 					<block>
-						<class>Macro</class>
-						<id>Macro_4</id>
-						<params>
-							<param>
-								getVehicleVelocity
-								<name>Macro Name</name>
-								<type>StringT</type>
-							</param>
-						</params>
-						<slots/>
-					</block>
-					<block>
 						<class>MacroInput</class>
 						<id>MacroInput_8</id>
 						<params>
@@ -2016,6 +1961,18 @@
 								<const>\true\</const>
 							</slot>
 						</slots>
+					</block>
+					<block>
+						<class>Macro</class>
+						<id>Macro_4</id>
+						<params>
+							<param>
+								getVehicleVelocity
+								<name>Macro Name</name>
+								<type>StringT</type>
+							</param>
+						</params>
+						<slots/>
 					</block>
 					<block>
 						<class>Delay</class>

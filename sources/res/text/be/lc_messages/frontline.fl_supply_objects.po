@@ -1,0 +1,182 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "page/footer"
+msgstr ""
+"Выберыце любы з аб'ектаў падтрымкі на мапе, каб вывучыць падрабязную "
+"інфармацыю."
+
+msgid "page/infoBtn"
+msgstr "ПРА ПАДЗЕЮ"
+
+msgid "page/object/damageZones/hullText"
+msgstr "• У абалонку праходзіць: %(value)s пашкоджанняў."
+
+msgid "page/object/damageZones/percents"
+msgstr "%(number)s%"
+
+msgid "page/object/damageZones/shortTitle"
+msgstr ""
+"Розныя элементы канструкцыі аб'екта па-рознаму ўспрымальныя "
+"да пашкоджанняў..."
+
+msgid "page/object/damageZones/title"
+msgstr ""
+"Розныя элементы канструкцыі аб'екта па-рознаму ўспрымальныя да пашкоджанняў:"
+
+msgid "page/object/damageZones/turretText"
+msgstr "• У гандолу праходзіць: %(value)s пашкоджанняў."
+
+msgid "page/object/description/airship"
+msgstr ""
+"Рухомы лятальны аб'ект. Мае гармату і вежу няпоўнага вярчэння, можа весці абстрэл тэхнікі праціўніка.\n"
+"Можа ўдзельнічаць у захопе базы."
+
+msgid "page/object/description/flamer"
+msgstr ""
+"Цяжкабраніраваны стацыянарны агнявы пункт з вярчальнай вежай. Прычыняе пашкоджанні агнём на блізкай дыстанцыі.\n"
+"Размяшчаецца побач з базай, роля — перашкодзіць захопу базы праціўнікам."
+
+msgid "page/object/description/mortar"
+msgstr ""
+"Рэактыўная сістэма залпавага агню выпускае залп з мноства снарадаў "
+"па праціўніку. Эфектыўная пры прычыненні пашкоджанняў групам тэхнікі "
+"з вялікай дыстанцыі."
+
+msgid "page/object/description/pillbox"
+msgstr ""
+"Доўгачасовы агнявы пункт з вярчальнай вежай. Эфектыўны супраць лёгкабраніраванай тэхнікі на кароткай і сярэдняй дыстанцыях.\n"
+"Роля дота — дапамагаць адбіваць атаку праціўніка на базу."
+
+msgid "page/object/description/subtitle/airship"
+msgstr "(аб'ект падтрымкі атакі)"
+
+msgid "page/object/description/subtitle/flamer"
+msgstr "(аб'ект падтрымкі абароны)"
+
+msgid "page/object/description/subtitle/mortar"
+msgstr "(аб'ект падтрымкі атакі)"
+
+msgid "page/object/description/subtitle/pillbox"
+msgstr "(аб'ект падтрымкі абароны)"
+
+msgid "page/object/infoText"
+msgstr "Умовы атрымання ў баі"
+
+msgid "page/object/paramsTitle"
+msgstr "Ключавыя ТТХ"
+
+msgid "page/object/subtitle/airship"
+msgstr "Аб'ект падтрымкі атакі"
+
+msgid "page/object/subtitle/flamer"
+msgstr "Аб'ект падтрымкі абароны"
+
+msgid "page/object/subtitle/mortar"
+msgstr "Аб'ект падтрымкі атакі"
+
+msgid "page/object/subtitle/pillbox"
+msgstr "Аб'ект падтрымкі абароны"
+
+msgid "page/object/title/airship"
+msgstr "Дырыжабль"
+
+msgid "page/object/title/flamer"
+msgstr "Агнямёт"
+
+msgid "page/object/title/mortar"
+msgstr "РСЗА"
+
+msgid "page/object/title/pillbox"
+msgstr "Дот"
+
+msgid "page/object/vehParams/description/captureTime"
+msgstr ""
+"Максімальны час, які аб'ект можа знаходзіцца на пункце захопу і самастойна "
+"здзяйсняць захоп."
+
+msgid "page/object/vehParams/description/circularVisionRadius"
+msgstr "Агляд аб'екта — дыстанцыя, на якой можа быць выяўлены праціўнік."
+
+msgid "page/object/vehParams/description/cooldownTime"
+msgstr "Час, праз які аб'ект пачне паўторна ажыццяўляць баявыя дзеянні."
+
+msgid "page/object/vehParams/description/healTime"
+msgstr ""
+"Час, за які аб'ект можа быць адрамантаваны. Указаны наступныя значэнні: "
+"мінімальны час пры рамонце некалькімі гульцамі / максімальны час пры рамонце"
+" адным гульцом."
+
+msgid "page/object/vehParams/description/maxHealth"
+msgstr "Колькасць ачкоў трываласці аб'екта."
+
+msgid "page/object/vehParams/description/resurrectTime"
+msgstr "Час, за які аб'екта адновіцца пасля знішчэння."
+
+msgid "page/object/vehParams/description/turretArmor"
+msgstr "Таўшчыня брані аб'екта: лоб/барты/ карма адпаведна."
+
+msgid "page/object/vehParams/text/captureTime"
+msgstr "Час знаходжання на пункце захопу"
+
+msgid "page/object/vehParams/text/cooldownTime"
+msgstr "Час паміж з'яўленнем"
+
+msgid "page/object/vehParams/text/healTime"
+msgstr "Час рамонту"
+
+msgid "page/object/vehParams/text/resurrectTime"
+msgstr "Час аднаўлення"
+
+msgid "page/object/vehParams/text/turretArmor"
+msgstr "Браніраванне"
+
+msgid "page/object/vehParams/title/avgDamage"
+msgstr "Сярэднія пашкоджанні (адз.)"
+
+msgid "page/object/vehParams/title/avgPiercingPower"
+msgstr "Сярэдняя бронепрабівальнасць (мм)"
+
+msgid "page/object/vehParams/title/captureTime"
+msgstr "Час знаходжання на пункце захопу (с)"
+
+msgid "page/object/vehParams/title/cooldownTime"
+msgstr "Час паміж з'яўленнямі (с)"
+
+msgid "page/object/vehParams/title/healTime"
+msgstr "Час рамонту аб'екта (с)"
+
+msgid "page/object/vehParams/title/resurrectTime"
+msgstr "Час аднаўлення (с)"
+
+msgid "page/object/vehParams/title/turretArmor"
+msgstr "Браніраванне (лоб/барты/карма ў мм)"
+
+msgid "page/title"
+msgstr "АБ'ЕКТЫ ПАДТРЫМКІ"
+
+msgid "tooltip/description/airship"
+msgstr ""
+"Аб'ект актывуецца пасля запаўнення другога этапу каманднай прагрэсіі зоны."
+
+msgid "tooltip/description/flamer"
+msgstr ""
+"Аб'ект актывуецца пасля запаўнення другога этапу каманднай прагрэсіі зоны."
+
+msgid "tooltip/description/mortar"
+msgstr ""
+"Аб'ект актывуецца пасля запаўнення першага этапу каманднай прагрэсіі зоны."
+
+msgid "tooltip/description/pillbox"
+msgstr ""
+"Аб'ект актывуецца пасля запаўнення першага этапу каманднай прагрэсіі зоны."
+
+msgid "tooltip/title"
+msgstr "Актывацыя аб'екта ў баі"

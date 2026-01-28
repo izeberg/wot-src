@@ -5,6 +5,7 @@ class TabType(Enum):
     PROGRESS = 'progress'
     REWARDS = 'rewards'
     INFO = 'info'
+    SUPPLY = 'supply'
 
 
 class FrontlineContainerTabModel(ViewModel):

@@ -33,6 +33,10 @@ class HangarMeta(View):
         if self._isDAAPIInited():
             return self.flashObject.as_setComp7ModifiersVisible(value)
 
+    def as_setBattleModifiersVisibleS(self, value):
+        if self._isDAAPIInited():
+            return self.flashObject.as_setBattleModifiersVisible(value)
+
     def as_setFunRandomModifiersVisibleS(self, value):
         if self._isDAAPIInited():
             return self.flashObject.as_setFunRandomModifiersVisible(value)
@@ -108,7 +112,3 @@ class HangarMeta(View):
     def as_updateUiEffectsStateS(self, isEnabled):
         if self._isDAAPIInited():
             return self.flashObject.as_updateUiEffectsState(isEnabled)
-
-    def as_shouldInjectNyBtnTipS(self, isEnabled):
-        if self._isDAAPIInited():
-            return self.flashObject.as_shouldInjectNyBtnTip(isEnabled)

@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>Root</identifier>
+			<transform>
+				<row0>0.000000 1.000000 0.000000</row0>
+				<row1>-1.000000 0.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>joint3</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.391165 0.000000 -0.998515</row3>
+				</transform>
+				<node>
+					<identifier>joint4</identifier>
+					<transform>
+						<row0>0.999954 0.000000 0.009587</row0>
+						<row1>-0.000000 1.000000 0.000000</row1>
+						<row2>-0.009587 -0.000000 0.999954</row2>
+						<row3>0.167807 0.000000 -0.766356</row3>
+					</transform>
+					<node>
+						<identifier>joint4_BlendBone</identifier>
+						<transform>
+							<row0>-0.000000 -1.000000 0.000000</row0>
+							<row1>0.999954 -0.000000 -0.009587</row1>
+							<row2>-0.009587 -0.000000 -0.999954</row2>
+							<row3>-0.542027 0.000000 1.770149</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>joint8</identifier>
+					<transform>
+						<row0>0.000000 -1.000000 0.000000</row0>
+						<row1>1.000000 0.000000 0.000000</row1>
+						<row2>-0.000000 0.000000 1.000000</row2>
+						<row3>0.166034 0.000000 -0.613701</row3>
+					</transform>
+					<node>
+						<identifier>joint10</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000133</row1>
+							<row2>-0.000000 -0.000133 1.000000</row2>
+							<row3>0.000000 0.160670 -0.161408</row3>
+						</transform>
+						<node>
+							<identifier>joint10_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 -0.000133</row1>
+								<row2>0.000000 -0.000133 -1.000000</row2>
+								<row3>-0.000000 -0.717633 1.773719</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>joint6</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>-0.000000 -0.000000 1.000000</row2>
+							<row3>0.000000 -0.139586 -0.477508</row3>
+						</transform>
+						<node>
+							<identifier>joint6_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>-0.000000 -0.417614 2.089724</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>joint8_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>-0.000000 -0.557200 1.612216</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>joint9</identifier>
+					<transform>
+						<row0>0.999997 0.000000 0.002247</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>-0.002247 0.000000 0.999997</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+					<node>
+						<identifier>joint5</identifier>
+						<transform>
+							<row0>1.000000 -0.000000 -0.000753</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000753 -0.000000 1.000000</row2>
+							<row3>-0.067727 0.000000 -0.204253</row3>
+						</transform>
+						<node>
+							<identifier>joint5_BlendBone</identifier>
+							<transform>
+								<row0>0.000000 -1.000000 0.000000</row0>
+								<row1>0.999999 0.000000 -0.001494</row1>
+								<row2>-0.001494 -0.000000 -0.999999</row2>
+								<row3>-0.322100 0.000000 1.203402</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>joint9_BlendBone</identifier>
+						<transform>
+							<row0>0.000000 -1.000000 -0.000000</row0>
+							<row1>0.999997 0.000000 -0.002247</row1>
+							<row2>-0.002247 0.000000 -0.999997</row2>
+							<row3>-0.388921 0.000000 0.999392</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>joint3_BlendBone</identifier>
+					<transform>
+						<row0>0.000000 -1.000000 0.000000</row0>
+						<row1>1.000000 0.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-0.391165 0.000000 0.998515</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>joint7</identifier>
+				<transform>
+					<row0>0.000000 -1.000000 0.000000</row0>
+					<row1>1.000000 0.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.415595 -0.000000 -1.938126</row3>
+				</transform>
+				<node>
+					<identifier>joint7_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-0.000000 -0.415595 1.938126</row3>
+					</transform>
+				</node>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>joint7_BlendBone</node>
+		<node>joint5_BlendBone</node>
+		<node>joint8_BlendBone</node>
+		<node>joint6_BlendBone</node>
+		<node>joint3_BlendBone</node>
+		<node>joint4_BlendBone</node>
+		<node>joint9_BlendBone</node>
+		<node>joint10_BlendBone</node>
+		<geometry>
+			<vertices>gun_01_animShape.vertices</vertices>
+			<primitive>gun_01_animShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_guns1_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<materialKind>0</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						colorIdMap
+						<Texture>vehicles/sweden/S36_VK_155_Projekt/VK_155_Projekt_guns_ID.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/sweden/S36_VK_155_Projekt/VK_155_Projekt_guns_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/sweden/S36_VK_155_Projekt/VK_155_Projekt_guns_AO.dds</Texture>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>7.014000 3.500000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/sweden/S36_VK_155_Projekt/VK_155_Projekt_guns_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/sweden/S36_VK_155_Projekt/VK_155_Projekt_guns_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.000297 0.529091 1.637020</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>n_metal_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<materialKind>0</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>vehicles/sweden/S36_VK_155_Projekt/S36_VK_155_Projekt_shell_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/sweden/S36_VK_155_Projekt/S36_VK_155_Projekt_shell_AO.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/sweden/S36_VK_155_Projekt/S36_VK_155_Projekt_shell_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/sweden/S36_VK_155_Projekt/S36_VK_155_Projekt_shell_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.001826 0.718591 1.741593</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints>
+		<aimConstraint>
+			<identifier>joint4_aimConstraint1</identifier>
+			<target>pairBlend1</target>
+			<offset>-7.853981 6.283185 1.688434</offset>
+			<aimVector>1.000000 0.000000 -0.000000</aimVector>
+			<upVector>0.000000 1.000000 -0.000000</upVector>
+			<worldUpVector>0.000000 1.000000 -0.000000</worldUpVector>
+			<source>
+				<identifier>locator2</identifier>
+				<weight>1.000000</weight>
+			</source>
+		</aimConstraint>
+		<aimConstraint>
+			<identifier>joint4_aimConstraint1</identifier>
+			<target>pairBlend1</target>
+			<offset>-7.853981 6.283185 1.688434</offset>
+			<aimVector>1.000000 0.000000 -0.000000</aimVector>
+			<upVector>0.000000 1.000000 -0.000000</upVector>
+			<worldUpVector>0.000000 1.000000 -0.000000</worldUpVector>
+			<source>
+				<identifier>locator2</identifier>
+				<weight>1.000000</weight>
+			</source>
+		</aimConstraint>
+		<aimConstraint>
+			<identifier>joint5_aimConstraint1</identifier>
+			<target>pairBlend2</target>
+			<offset>-1.570796 -0.000000 1.585057</offset>
+			<aimVector>1.000000 0.000000 -0.000000</aimVector>
+			<upVector>0.000000 1.000000 -0.000000</upVector>
+			<worldUpVector>0.000000 1.000000 -0.000000</worldUpVector>
+			<source>
+				<identifier>locator1</identifier>
+				<weight>1.000000</weight>
+			</source>
+		</aimConstraint>
+		<aimConstraint>
+			<identifier>joint5_aimConstraint1</identifier>
+			<target>pairBlend2</target>
+			<offset>-1.570796 -0.000000 1.585057</offset>
+			<aimVector>1.000000 0.000000 -0.000000</aimVector>
+			<upVector>0.000000 1.000000 -0.000000</upVector>
+			<worldUpVector>0.000000 1.000000 -0.000000</worldUpVector>
+			<source>
+				<identifier>locator1</identifier>
+				<weight>1.000000</weight>
+			</source>
+		</aimConstraint>
+	</constraints>
+	<boundingBox>
+		<min>-0.281871 0.244144 -2.592824</min>
+		<max>0.281278 0.821063 -0.681217</max>
+	</boundingBox>
+	<geometrySize>94796</geometrySize>
+	<minUVDensity>0.015960</minUVDensity>
+</root>

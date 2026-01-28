@@ -51,13 +51,13 @@ msgid "bundles/countdown/days"
 msgstr "%(day)s д."
 
 msgid "bundles/countdown/daysWithHours"
-msgstr "%(day)s д  %(hour)s ч"
+msgstr "%(day)s д.  %(hour)s ч."
 
 msgid "bundles/countdown/hours"
 msgstr "%(hour)s ч."
 
 msgid "bundles/countdown/hoursWithMinutes"
-msgstr "%(hour)s ч %(min)s мин"
+msgstr "%(hour)s ч. %(min)s мин."
 
 msgid "bundles/countdown/min"
 msgstr "%(min)s мин."
@@ -233,13 +233,13 @@ msgid "entryPoint/tooltips/active/header"
 msgstr "Задачи Сборочного цеха"
 
 msgid "entryPoint/tooltips/active/justBeforeStart/hours"
-msgstr "Станет доступна через %(hour)s ч %(min)s мин"
+msgstr "Станет доступна через %(hour)s ч. %(min)s мин."
 
 msgid "entryPoint/tooltips/active/justBeforeStart/min"
-msgstr "Станет доступна через %(min)s мин"
+msgstr "Станет доступна через %(min)s мин."
 
 msgid "entryPoint/tooltips/active/justBeforeStart/sec"
-msgstr "Станет доступна через < 1 мин"
+msgstr "Станет доступна через < 1 мин."
 
 msgid "entryPoint/tooltips/active/locked"
 msgid_plural "plural/entryPoint/tooltips/active/locked"
@@ -600,7 +600,7 @@ msgid "mainView/title/step/24"
 msgstr "Покраска"
 
 msgid "mainView/title/step/25"
-msgstr "Установка надгусенечных полок и навесного оборудования"
+msgstr "Установка надгусеничных полок и навесного оборудования"
 
 msgid "mainView/title/step/26"
 msgstr "Выкатка машины"
@@ -1253,7 +1253,7 @@ msgstr[1] "%(value)s дня"
 msgstr[2] "%(value)s дней"
 
 msgid "widget/countdown/hours"
-msgstr "%(hour)s ч %(min)s мин"
+msgstr "%(hour)s ч. %(min)s мин."
 
 msgid "widget/countdown/min"
 msgstr "%(min)s мин."

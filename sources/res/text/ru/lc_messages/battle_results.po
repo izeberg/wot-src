@@ -505,6 +505,9 @@ msgstr "За особые свойства машины"
 msgid "details/calculations/directives"
 msgstr "Бонус от экономической инструкции"
 
+msgid "details/calculations/distributedXP"
+msgstr "Надбавка за распределённый урон и очки захвата/защиты от объектов"
+
 msgid "details/calculations/event"
 msgstr "Бонус за боевые задачи и события"
 
@@ -544,6 +547,9 @@ msgstr "Штраф за урон союзникам"
 msgid "details/calculations/friendlyFireRankedXpPenalty"
 msgstr "Штраф за дезориентирование и урон союзникам"
 
+msgid "details/calculations/frontlineXP"
+msgstr "Надбавка за выполненные задачи"
+
 msgid "details/calculations/heavyTrucks"
 msgstr "Большегрузный транспорт"
 
@@ -565,9 +571,6 @@ msgstr "Награда за первую победу в день"
 
 msgid "details/calculations/multiplierInfo/vehicleSeparator"
 msgstr "• "
-
-msgid "details/calculations/newYear"
-msgstr "Новогодний бонус"
 
 msgid "details/calculations/noPenalty"
 msgstr "За достойное сопротивление"
@@ -610,9 +613,6 @@ msgstr "За тактическую подготовку"
 
 msgid "details/calculations/total"
 msgstr "Итого:"
-
-msgid "details/calculations/vehicleBranch"
-msgstr "Новогодний бонус"
 
 msgid "details/calculations/xpRecord"
 msgstr "Начислено за бой (%(color_tag_open)sрекорд%(color_tag_close)s)"
@@ -666,7 +666,7 @@ msgid "details/time/val_yes"
 msgstr "Да"
 
 msgid "details/time/value"
-msgstr "%(min)s мин %(sec)s с"
+msgstr "%(min)s мин. %(sec)s с"
 
 msgid "details/time_epic"
 msgstr "Бой"
@@ -1030,6 +1030,12 @@ msgstr "\tс применением навыков"
 msgid "team/stats/labels_damageDealtRatio"
 msgstr "\tснято очков прочности с команды противника"
 
+msgid "team/stats/labels_damageFromSupplies"
+msgstr "Получено урона от объектов поддержки"
+
+msgid "team/stats/labels_damageToSupplies"
+msgstr "Нанесено урона по объектам поддержки"
+
 msgid "team/stats/labels_damagedKilled"
 msgstr "Повреждено/уничтожено машин противника"
 
@@ -1047,6 +1053,12 @@ msgstr "\tпо целям"
 
 msgid "team/stats/labels_directHitsReceived"
 msgstr "Получено попаданий"
+
+msgid "team/stats/labels_distributedSupplyBasePoints"
+msgstr "Распределённые очки захвата/защиты от союзных объектов"
+
+msgid "team/stats/labels_distributedSupplyDamage"
+msgstr "Распределённый урон от союзных объектов поддержки"
 
 msgid "team/stats/labels_equipmentDamageAssisted"
 msgstr "\tво время действия боевых резервов"
@@ -1107,6 +1119,9 @@ msgstr "Общее время дезориентирования противн�
 
 msgid "team/stats/labels_stunNum"
 msgstr "Дезориентаций вызвано"
+
+msgid "team/stats/labels_suppliesDestroyed"
+msgstr "Уничтожено объектов поддержки"
 
 msgid "team/stats/labels_teamHitsDamage"
 msgstr "Урон союзникам (уничтожено/повреждений)"

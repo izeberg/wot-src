@@ -28,8 +28,6 @@ package net.wg.gui.lobby.vehicleCustomization.data.customizationPanel
       
       public var styleName:String = "";
       
-      public var styleNameSmall:String = "";
-      
       public var locked:Boolean = false;
       
       public var showDetailItems:Boolean = false;
@@ -105,6 +103,8 @@ package net.wg.gui.lobby.vehicleCustomization.data.customizationPanel
       public var isLinked:Boolean = false;
       
       public var isNew:Boolean = false;
+      
+      public var isMainType:Boolean = false;
       
       public function CustomizationCarouselRendererVO(param1:Object)
       {

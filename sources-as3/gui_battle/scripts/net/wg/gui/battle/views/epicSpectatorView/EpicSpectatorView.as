@@ -10,6 +10,7 @@ package net.wg.gui.battle.views.epicSpectatorView
    import net.wg.infrastructure.base.meta.IEpicSpectatorViewMeta;
    import net.wg.infrastructure.base.meta.IPostmortemPanelMeta;
    import net.wg.infrastructure.base.meta.impl.EpicSpectatorViewMeta;
+   import org.idmedia.as3commons.util.StringUtils;
    import scaleform.gfx.TextFieldEx;
    
    public class EpicSpectatorView extends EpicSpectatorViewMeta implements IEpicSpectatorViewMeta, IPostmortemPanelMeta
@@ -26,6 +27,8 @@ package net.wg.gui.battle.views.epicSpectatorView
       private static const DAMAGE_PANEL_OVERLAY_START_FRAME:int = 2;
       
       private static const WHITE_TEXT_COLOR:uint = 16777215;
+      
+      private static const DEAD_REASON_SUPPLY_GAP:int = 10;
        
       
       public var damagePanelOverlay:MovieClip = null;
@@ -79,17 +82,24 @@ package net.wg.gui.battle.views.epicSpectatorView
          playerInfoTF.y = (this._stageHeight >> 1) - PLAYER_INFO_DELTA_Y;
          vehiclePanel.x = this._stageWidth - vehiclePanel.width >> 1;
          vehiclePanel.y = (this._stageHeight >> 1) + VEHICLE_PANEL_OFFSET_Y;
-         deadReasonTF.y = vehiclePanel.y - GAP_VEHICLE_PANEL_DEAD_REASON - deadReasonTF.height;
+         if(_userVO == null || StringUtils.isEmpty(_userVO.userName))
+         {
+            deadReasonTF.y = vehiclePanel.y - DEAD_REASON_SUPPLY_GAP - deadReasonTF.height | 0;
+         }
+         else
+         {
+            deadReasonTF.y = vehiclePanel.y - GAP_VEHICLE_PANEL_DEAD_REASON - deadReasonTF.height | 0;
+         }
          deadReasonTF.x = this._stageWidth - deadReasonTF.width >> 1;
          if(_userName != null)
          {
-            _userName.y = deadReasonTF.y + deadReasonTF.textHeight + GAP_USER_NAME_DEAD_REASON;
+            _userName.y = deadReasonTF.y + deadReasonTF.textHeight + GAP_USER_NAME_DEAD_REASON | 0;
             _userName.x = this._stageWidth - _userName.textWidth >> 1;
             _userName.verticalAlign = VerticalAlign.MIDDLE;
             _userName.textColor = WHITE_TEXT_COLOR;
          }
          deadReasonBG.x = this._stageWidth - deadReasonBG.width >> 1;
-         deadReasonBG.y = deadReasonTF.y - (deadReasonBG.height - deadReasonTF.textHeight >> 1);
+         deadReasonBG.y = deadReasonTF.y - (deadReasonBG.height - deadReasonTF.textHeight >> 1) | 0;
       }
       
       override protected function draw() : void

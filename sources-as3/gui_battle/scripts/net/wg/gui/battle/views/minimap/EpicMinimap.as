@@ -5,6 +5,7 @@ package net.wg.gui.battle.views.minimap
    import flash.events.MouseEvent;
    import flash.geom.Point;
    import flash.geom.Rectangle;
+   import flash.text.TextFieldAutoSize;
    import net.wg.gui.battle.epicBattle.VO.daapi.EpicPlayerStatsVO;
    import net.wg.gui.battle.epicBattle.VO.daapi.EpicVehiclesStatsVO;
    import net.wg.gui.battle.views.minimap.containers.EpicMinimapEntriesContainer;
@@ -21,6 +22,8 @@ package net.wg.gui.battle.views.minimap
       
       private static const BORDER_OFFSET:int = -14;
       
+      private static const SHORTCUT_LABEL_OFFSET:int = 8;
+      
       private static const TOPLEFT_OFFSET:Point = new Point(0,-60);
       
       private static const FRAME_WIDTH_MULTIPLIER:int = 2;
@@ -28,6 +31,8 @@ package net.wg.gui.battle.views.minimap
       private static const FRAME_BORDER_WIDTH:int = 24;
       
       private static const MMAP_BASE_SIZE:int = 210;
+      
+      private static const MAP_ZOOM_MODE_POSITION:Point = new Point(6,16);
       
       private static const SECTORS_FIELD:String = "sectors";
       
@@ -98,7 +103,10 @@ package net.wg.gui.battle.views.minimap
          this.mapHit.visible = true;
          this._clickAreaSpr.hitArea = this.mapHit;
          this.mapZoomMode.visible = true;
+         this.mapZoomMode.x = MAP_ZOOM_MODE_POSITION.x;
+         this.mapZoomMode.y = MAP_ZOOM_MODE_POSITION.y;
          this.mapShortcutLabel.sectorOverview.mmapAreaHighlight.visible = false;
+         this.mapShortcutLabel.mapBtnTF.autoSize = TextFieldAutoSize.RIGHT;
          if(TAB_MODE_502_IDX < 0 || TAB_MODE_700_IDX < 0)
          {
             App.utils.asserter.assert(false,"You must update constants TAB_MODE because MINIMAP_SIZEs were changed");
@@ -188,7 +196,6 @@ package net.wg.gui.battle.views.minimap
          this.updateSizeIndex(true);
          this._clickAreaSpr.addEventListener(MouseEvent.CLICK,this.onAreaMouseClickHandler);
          this._clickAreaSpr.addEventListener(MouseEvent.MOUSE_WHEEL,this.onAreaMouseWheelHandler);
-         this.mapShortcutLabel.mapBtnTF.text = READABLE_KEY_NAMES.KEY_M;
          this._sectors = new <MovieClip>[this.mapShortcutLabel.sectorOverview.sector1,this.mapShortcutLabel.sectorOverview.sector2,this.mapShortcutLabel.sectorOverview.sector3,this.mapShortcutLabel.sectorOverview.sector4,this.mapShortcutLabel.sectorOverview.sector5,this.mapShortcutLabel.sectorOverview.sector6,this.mapShortcutLabel.sectorOverview.sectorHQ];
          this.updateSectorOverview();
       }
@@ -306,6 +313,13 @@ package net.wg.gui.battle.views.minimap
       {
       }
       
+      public function as_setMinimapKeyButton(param1:String) : void
+      {
+         this.mapShortcutLabel.mapBtnTF.text = param1;
+         this.mapShortcutLabel.mapBtn.x = Math.round(this.mapShortcutLabel.mapBtnTF.x) - SHORTCUT_LABEL_OFFSET;
+         this.mapShortcutLabel.mapBtn.width = Math.round(this.mapShortcutLabel.mapBtnTF.width) + SHORTCUT_LABEL_OFFSET * 2;
+      }
+      
       private function updateAlpha() : void
       {
          alpha = this._isTabMode && this._isTabModeCustomAlpha ? Number(this._tabModeCustomAlpha) : Number(this._settingsAlpha);
@@ -348,7 +362,7 @@ package net.wg.gui.battle.views.minimap
          this.bgFrame.x = this.bgFrame.y = this.fgFrame.x - _loc5_;
          this.mapHit.scaleX = this.mapHit.scaleY = _loc2_;
          this.mapShortcutLabel.x = BORDER_OFFSET - _loc5_;
-         this.mapZoomMode.y = -FRAME_BORDER_WIDTH - _loc5_;
+         this.mapZoomMode.y = MAP_ZOOM_MODE_POSITION.y - _loc5_ | 0;
       }
       
       private function checkNewSize(param1:int) : void

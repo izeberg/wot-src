@@ -191,8 +191,17 @@ msgstr "Крытычныя пашкоджанні"
 msgid "battleResults/damage"
 msgstr "Пашкоджанні"
 
+msgid "battleResults/damageSupplies"
+msgstr "Пашкоджанні па аб'ектах"
+
 msgid "battleResults/kill"
 msgstr "Знішчана"
+
+msgid "battleResults/killSupplies"
+msgstr "Знішчана аб'ектаў"
+
+msgid "battleResults/questCompleted"
+msgstr "Выканана задач"
 
 msgid "battleResults/spotting"
 msgstr "Выявіў"
@@ -222,6 +231,18 @@ msgstr "Загады"
 msgid "deploymentMap/flamethrowerLimitReached"
 msgstr "Напрамак заблакаваны — дасягнуты максімум агнямётных танкаў"
 
+msgid "deploymentMap/lane/center"
+msgstr "Ваш кірунак: B-E"
+
+msgid "deploymentMap/lane/left"
+msgstr "Ваш кірунак: A-D"
+
+msgid "deploymentMap/lane/right"
+msgstr "Ваш кірунак: C-F"
+
+msgid "deploymentMap/lane/top"
+msgstr "Ваш кірунак: зона цэляў"
+
 msgid "deploymentMap/lanePlayerLimitReached"
 msgstr "Напрамак заблакіраваны — дасягнуты максімум гульцоў"
 
@@ -230,6 +251,23 @@ msgstr "Павышаная рызыка"
 
 msgid "deploymentMap/spgLimitReached"
 msgstr "Напрамак заблакаваны — дасягнуты максімум САУ"
+
+msgid "deploymentMap/warning/1"
+msgstr ""
+"• Пры выбары іншага кірунку для высадкі вы будзеце замацаваны за новым кірункам.\n"
+"• Бягучая задача будзе заменена на новую.\n"
+"• Вы зможаце праходзіць прагрэсію зон для новага кірунку."
+
+msgid "deploymentMap/warning/2"
+msgstr ""
+"• Пры выбары іншага кірунку для высадкі вы будзеце замацаваны за новым кірункам.\n"
+"• Прагрэс бягучай задачы будзе скінуты."
+
+msgid "deploymentMap/warning/3"
+msgstr ""
+"• Пры выбары іншага кірунку для высадкі вы будзеце замацаваны за новым кірункам.\n"
+"• Будзе выдадзена новая задача.\n"
+"• Вы зможаце праходзіць прагрэсію зон для новага кірунку."
 
 msgid "dialogs/quotedName"
 msgstr "«%(name)s»"
@@ -926,6 +964,36 @@ msgstr "Будзе задзейнічана праз %(activationDelay)s с па
 msgid "super_platoon_panel/title"
 msgstr "Звяз"
 
+msgid "supply/airship"
+msgstr "Дырыжабль"
+
+msgid "supply/flamer"
+msgstr "Агнямёт"
+
+msgid "supply/marker_need_repair"
+msgstr "Пашкоджаны"
+
+msgid "supply/messages/airshipActive"
+msgstr "У зоне актыўны дырыжабль праціўніка"
+
+msgid "supply/messages/airshipActivePositive"
+msgstr "У зоне актыўны хаўрусны дырыжабль"
+
+msgid "supply/messages/attack"
+msgstr "Актываваны хаўрусны аб'ект падтрымкі атакі."
+
+msgid "supply/messages/defence"
+msgstr "Актываваны хаўрусны аб'ект падтрымкі абароны."
+
+msgid "supply/mortar"
+msgstr "РСЗА"
+
+msgid "supply/pillbox"
+msgstr "Дот"
+
+msgid "supply/timer_is_repairing"
+msgstr "Рамонт аб'екта"
+
 msgid "tab_screen/generalBonusDescr"
 msgstr ""
 "— сумарны камандны бонус да эфектыўнасці экіпажа за прысутнасць генерала."
@@ -938,6 +1006,9 @@ msgstr "Усе напрамкі"
 
 msgid "tab_screen/show_my_lane"
 msgstr "Мой напрамак"
+
+msgid "tab_screen/show_quests"
+msgstr "Задачы"
 
 msgid "team1Name"
 msgstr "Атакоўцы"

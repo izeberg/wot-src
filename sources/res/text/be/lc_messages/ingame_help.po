@@ -180,12 +180,13 @@ msgstr "Штурмавы прыцэл"
 
 msgid "detailsHelp/assaultTank/prosCons"
 msgstr ""
-"Ключавыя асаблівасці — акцэнт на прычыненне пашкоджанняў за кошт адсутнасці "
-"аглушэння ад снарадаў, параўнальна высокія паказчыкі лабавога браніравання і"
-" жывучасці ў сваім класе. Выкарыстоўвайце гэтыя асаблівасці супраць цэляў, "
-"якія знаходзяцца ва ўкрыццях, але памятайце, што на блізкіх дыстанцыях вы "
-"надзвычай уразлівы, а нізкая манеўранасць не дазволіць хутка зрэагаваць на "
-"атаку з флангу."
+"Ключавыя асаблівасці — акцэнт на прычыненне пашкоджанняў за кошт высокіх "
+"значэнняў бронепрабівальнасці і хуткасці набівання гарматы, параўнальна "
+"высокія паказчыкі лабавога браніравання і жывучасці ў сваім класе. "
+"Выкарыстоўвайце гэтыя асаблівасці супраць цэляў, якія знаходзяцца "
+"ва ўкрыццях, але памятайце, што на блізкіх дыстанцыях вы надзвычай "
+"уразлівыя, а нізкая манеўранасць не дазволіць хутка зрэагаваць на атаку "
+"з флангу."
 
 msgid "detailsHelp/assaultTank/prosCons/title"
 msgstr "Перавагі і недахопы"
@@ -582,11 +583,17 @@ msgstr "Падтрымайце агнём!"
 msgid "radialMenu/attack_enemy_with_SPG"
 msgstr "Атакую цэль!"
 
+msgid "radialMenu/attack_supply"
+msgstr "Падтрымайце агнём!"
+
 msgid "radialMenu/attacking_base"
 msgstr "Я захаплю!"
 
 msgid "radialMenu/attacking_enemy"
 msgstr "Атакую цэль!"
+
+msgid "radialMenu/attacking_supply"
+msgstr "Атакую аб'ект!"
 
 msgid "radialMenu/attention_to_base_atk"
 msgstr "Захапіце!"
@@ -600,8 +607,14 @@ msgstr "Увага сюды!"
 msgid "radialMenu/cancel_reply"
 msgstr "Адмовіць"
 
+msgid "radialMenu/defend_supply"
+msgstr "Абараняйце аб'ект!"
+
 msgid "radialMenu/defending_base"
 msgstr "Я абараню!"
+
+msgid "radialMenu/defending_supply"
+msgstr "Абараняю аб'ект!"
 
 msgid "radialMenu/enemy_hq_attack_command"
 msgstr "Атакуйце!"
@@ -626,6 +639,9 @@ msgstr "Перанабіванне!"
 
 msgid "radialMenu/reply_to_player"
 msgstr "Пацвярджаю!"
+
+msgid "radialMenu/supply_self_repair"
+msgstr "Аб'ект на рамонце!"
 
 msgid "radialMenu/supporting_ally"
 msgstr "Я дапамагу табе!"

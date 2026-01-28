@@ -1,7 +1,6 @@
 from Event import Event
 
 class IBattleResultsService(object):
-    __slots__ = ()
     onResultPosted = None
 
     def init(self):

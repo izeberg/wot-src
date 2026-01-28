@@ -84,33 +84,6 @@
 			</block>
 			<block>
 				<class>Variable</class>
-				<id>Variable_8</id>
-				<params>
-					<param>
-						debrisContainer
-						<name>Variable Name</name>
-						<type>StringT</type>
-					</param>
-					<param>
-						GameObjectT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-					<param>
-						false
-						<name>External Init</name>
-						<type>BoolT</type>
-					</param>
-					<param>
-						false
-						<name>Is Const</name>
-						<type>BoolT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>Variable</class>
 				<id>Variable_11</id>
 				<params>
 					<param>
@@ -1116,12 +1089,6 @@
 			</block>
 		</blocks>
 		<connections>
-			<connection>
-				<from>ContextGetSelf_1</from>
-				<input>default</input>
-				<to>Variable_8</to>
-				<output>value</output>
-			</connection>
 			<connection>
 				<from>ContextGetSelf_1</from>
 				<input>default</input>

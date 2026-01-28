@@ -77,8 +77,6 @@ package net.wg.gui.lobby.vehicleCustomization
          var _loc10_:Boolean = false;
          var _loc11_:Boolean = false;
          var _loc12_:CustomizationCarouselArrowVO = null;
-         var _loc13_:Number = NaN;
-         var _loc14_:int = 0;
          this._itemLayouts.splice(0,this._itemLayouts.length);
          this._bookmarkLayouts.splice(0,this._bookmarkLayouts.length);
          this._separatorsLayouts.splice(0,this._separatorsLayouts.length);
@@ -123,34 +121,6 @@ package net.wg.gui.lobby.vehicleCustomization
             _loc8_++;
          }
          _loc2_ -= _loc3_;
-         if(this._itemLayouts.length > 0)
-         {
-            _loc13_ = _loc2_ - this._itemLayouts[0].x;
-            if(_loc13_ < this._scrollList.width)
-            {
-               _loc14_ = (this._scrollList.width - _loc13_ >> 1) - this._itemLayouts[0].x;
-               if(_loc14_ > FILTER_OFFSET_X)
-               {
-                  _loc14_ -= FILTER_OFFSET_X;
-               }
-               for each(_loc4_ in this._itemLayouts)
-               {
-                  _loc4_.offset(_loc14_,0);
-               }
-               for each(_loc5_ in this._bookmarkLayouts)
-               {
-                  _loc5_.offset(_loc14_,0);
-               }
-               for each(_loc6_ in this._separatorsLayouts)
-               {
-                  _loc6_.offset(_loc14_,0);
-               }
-               for each(_loc12_ in this._arrowsData)
-               {
-                  _loc12_.position.offset(_loc14_,0);
-               }
-            }
-         }
          this._layoutValid = true;
       }
       

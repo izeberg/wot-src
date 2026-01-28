@@ -4043,18 +4043,6 @@ package
       
       public static const AWARDITEM_COMPLETIONTOKENS_7_4_BODY:String = "#tooltips:awardItem/completionTokens_7_4/body";
       
-      public static const AWARDITEM_NYRFOOD_HEADER:String = "#tooltips:awardItem/nyrfood/header";
-      
-      public static const AWARDITEM_NYRFOOD_BODY:String = "#tooltips:awardItem/nyrfood/body";
-      
-      public static const AWARDITEM_NYRFUN_HEADER:String = "#tooltips:awardItem/nyrfun/header";
-      
-      public static const AWARDITEM_NYRFUN_BODY:String = "#tooltips:awardItem/nyrfun/body";
-      
-      public static const AWARDITEM_NYRACTIV_HEADER:String = "#tooltips:awardItem/nyractiv/header";
-      
-      public static const AWARDITEM_NYRACTIV_BODY:String = "#tooltips:awardItem/nyractiv/body";
-      
       public static const AWARDITEM_TANKMEN_BODY:String = "#tooltips:awardItem/tankmen/body";
       
       public static const AWARDITEM_TANKWOMEN_HEADER:String = "#tooltips:awardItem/tankwomen/header";
@@ -4270,6 +4258,10 @@ package
       public static const CUSTOMIZATION_TABS_INSCRIPTION_BODY:String = "#tooltips:customization/tabs/inscription/body";
       
       public static const CUSTOMIZATION_TABS_MODIFICATION_BODY:String = "#tooltips:customization/tabs/modification/body";
+      
+      public static const CUSTOMIZATION_TABS_STYLE_2D_BODY:String = "#tooltips:customization/tabs/style/2d/body";
+      
+      public static const CUSTOMIZATION_TABS_STYLE_3D_BODY:String = "#tooltips:customization/tabs/style/3d/body";
       
       public static const CUSTOMIZATION_TABS_PROJECTIONDECAL_BODY:String = "#tooltips:customization/tabs/projectionDecal/body";
       
@@ -4771,6 +4763,10 @@ package
       
       public static const SETTINGS_SWITCHMODE_BODY:String = "#tooltips:settings/switchMode/body";
       
+      public static const SETTINGS_KEYSHOWQUESTPROGRESS_TITLE:String = "#tooltips:settings/keyShowQuestProgress/title";
+      
+      public static const SETTINGS_KEYSHOWQUESTPROGRESS_BODY:String = "#tooltips:settings/keyShowQuestProgress/body";
+      
       public static const SHELL_BASIC:String = "#tooltips:shell/basic";
       
       public static const SHELL_BASIC_DESCRIPTION_BOLD:String = "#tooltips:shell/basic/description/bold";
@@ -5086,6 +5082,8 @@ package
       public static const ADVANCED_VEHICLEDUALGUN:String = "#tooltips:advanced/vehicleDualGun";
       
       public static const ADVANCED_VEHICLEAUTOSHOOTFLAMEGUN:String = "#tooltips:advanced/vehicleAutoShootFlameGun";
+      
+      public static const ADVANCED_VEHICLEAUTOSHOOTGUN:String = "#tooltips:advanced/vehicleAutoShootGun";
       
       public static const ADVANCED_VEHICLERADIO:String = "#tooltips:advanced/vehicleRadio";
       
@@ -7970,6 +7968,22 @@ package
       public static const NOTRECRUITEDTANKMAN_NY26_SNOWMAIDEN_4_LABEL:String = "#tooltips:notrecruitedtankman/ny26_snowmaiden_4/label";
       
       public static const NOTRECRUITEDTANKMAN_NY26_SNOWMAIDEN_4_DESC:String = "#tooltips:notrecruitedtankman/ny26_snowmaiden_4/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP18_5_1_DESC:String = "#tooltips:notrecruitedtankman/tankmen_BP18_5_1/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP18_5_1_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_BP18_5_1/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP18_5_2_DESC:String = "#tooltips:notrecruitedtankman/tankmen_BP18_5_2/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP18_5_2_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_BP18_5_2/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP18_5_3_DESC:String = "#tooltips:notrecruitedtankman/tankmen_BP18_5_3/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP18_5_3_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_BP18_5_3/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP18_5_4_DESC:String = "#tooltips:notrecruitedtankman/tankmen_BP18_5_4/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP18_5_4_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_BP18_5_4/label";
       
       public static const ELEN_SUMMARY_RANK_ENUM:Array = [ELEN_SUMMARY_RANK_1,ELEN_SUMMARY_RANK_2,ELEN_SUMMARY_RANK_3,ELEN_SUMMARY_RANK_4,ELEN_SUMMARY_RANK_NORANK];
       

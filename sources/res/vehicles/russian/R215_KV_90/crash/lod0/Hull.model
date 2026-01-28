@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-2.020708 -0.996735 -4.015037</min>
+		<max>2.017036 0.802390 3.887346</max>
+	</visibilityBox>
+	<parent>vehicles/russian/R215_KV_90/crash/lod1/Hull</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/russian/R215_KV_90/crash/lod0/Hull</nodefullVisual>
+</root>

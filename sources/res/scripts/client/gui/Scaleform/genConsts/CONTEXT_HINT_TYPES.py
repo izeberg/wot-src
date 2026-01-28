@@ -1,0 +1,6 @@
+
+
+class CONTEXT_HINT_TYPES(object):
+    UNDEFINED = 0
+    IN_BATTLE_HINT = 1
+    CONSUMABLES_HINT = 2

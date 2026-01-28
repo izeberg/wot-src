@@ -45,6 +45,10 @@
 					<visible>False</visible>
 				</component>
 				<component>
+					<name>battleModifiers</name>
+					<visible>False</visible>
+				</component>
+				<component>
 					<name>battleRoyalePanels</name>
 					<visible>False</visible>
 				</component>
@@ -90,6 +94,50 @@
 				</component>
 			</components>
 		</preset>
+		<preset>
+			<name>wgsh</name>
+			<basePreset>default</basePreset>
+			<components>
+				<component>
+					<name>carousel</name>
+					<visible>True</visible>
+					<type>strongholdTankCarousel</type>
+					<layout>TankCarouselUI</layout>
+				</component>
+				<component>
+					<name>battleModifiers</name>
+					<visible>True</visible>
+				</component>
+				<component>
+					<name>vehicleParameters</name>
+					<visible>True</visible>
+					<type>modifiedVehicleParameters</type>
+					<layout>VehicleParametersUI</layout>
+				</component>
+			</components>
+		</preset>
+		<preset>
+			<name>global_map</name>
+			<basePreset>default</basePreset>
+			<components>
+				<component>
+					<name>carousel</name>
+					<visible>True</visible>
+					<type>strongholdTankCarousel</type>
+					<layout>TankCarouselUI</layout>
+				</component>
+				<component>
+					<name>battleModifiers</name>
+					<visible>True</visible>
+				</component>
+				<component>
+					<name>vehicleParameters</name>
+					<visible>True</visible>
+					<type>modifiedVehicleParameters</type>
+					<layout>VehicleParametersUI</layout>
+				</component>
+			</components>
+		</preset>
 	</presets>
 	<queueTypePresets>
 		<item>
@@ -103,6 +151,10 @@
 		<item>
 			<queueType>23</queueType>
 			<presetName>mapbox</presetName>
+		</item>
+		<item>
+			<queueType>16</queueType>
+			<presetName>wgsh</presetName>
 		</item>
 	</queueTypePresets>
 </root>

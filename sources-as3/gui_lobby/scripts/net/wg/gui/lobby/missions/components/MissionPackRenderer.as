@@ -60,7 +60,6 @@ package net.wg.gui.lobby.missions.components
          super.configUI();
          mouseEnabled = false;
          mouseChildren = true;
-         stage.addEventListener(Event.RESIZE,this.onStageResizeHandler);
       }
       
       override protected function draw() : void
@@ -106,10 +105,6 @@ package net.wg.gui.lobby.missions.components
       
       override protected function onDispose() : void
       {
-         if(stage)
-         {
-            stage.removeEventListener(Event.RESIZE,this.onStageResizeHandler);
-         }
          this._bg = null;
          if(this._header)
          {
@@ -133,28 +128,19 @@ package net.wg.gui.lobby.missions.components
          var _loc1_:int = _width;
          setActualScale(1,1);
          _width = _loc1_;
-         if(this._header)
+         this._header.width = _width;
+         this._body.width = _width;
+         this._body.validateNow();
+         this._header.validateNow();
+         if(this._body.visible)
          {
-            this._header.width = _width;
-            this._header.validateNow();
+            height = this._header.height + this._body.height | 0;
+            this._body.y = this._header.height | 0;
          }
-         if(this._body)
+         else
          {
-            this._body.width = _width;
-            this._body.validateNow();
-         }
-         if(this._header && this._body)
-         {
-            if(this._body.visible)
-            {
-               height = this._header.height + this._body.height | 0;
-               this._body.y = this._header.height | 0;
-            }
-            else
-            {
-               height = this._header.height;
-               this._body.y = 0;
-            }
+            height = this._header.height;
+            this._body.y = 0;
          }
          if(this._bg != null)
          {
@@ -240,12 +226,6 @@ package net.wg.gui.lobby.missions.components
          this._missionPackVO.isCollapsed = param1.isCollapsed;
          this._body.setCollapsed(this._missionPackVO.isCollapsed,true);
          this._header.setCollapsed(this._missionPackVO.isCollapsed,true);
-      }
-      
-      private function onStageResizeHandler(param1:Event) : void
-      {
-         param1.stopImmediatePropagation();
-         this.updateSize();
       }
    }
 }

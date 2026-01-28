@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/sweden/S36_VK_155_Projekt/crash/lod3/Chassis</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.637177 -0.002095 -2.742043</min>
+		<max>1.626135 1.285379 3.780962</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/sweden/S36_VK_155_Projekt/crash/lod2/Chassis</nodefullVisual>
+	<tank>true</tank>
+</root>

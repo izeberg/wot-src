@@ -881,6 +881,8 @@ package
       
       public static const BANNER_INFO_BATTLESTOMORROW:String = "#clans:banner/info/battlesTomorrow";
       
+      public static const BANNER_INFO_BATTLESNOW:String = "#clans:banner/info/battlesNow";
+      
       public static const BANNER_CHOOSETIME:String = "#clans:banner/chooseTime";
       
       public static const BANNER_SEASONDATE_SEASONNOTSTARTED:String = "#clans:banner/seasonDate/seasonNotStarted";

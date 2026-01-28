@@ -118,6 +118,13 @@
 			<undamaged>vehicles/british/GB143_Captain/normal/lod0/Hull.model</undamaged>
 			<destroyed>vehicles/british/GB143_Captain/crash/lod0/Hull.model</destroyed>
 			<exploded>vehicles/british/GB143_Captain/crash/lod0/Hull.model</exploded>
+			<sets>
+				<GB143_Captain_3Dst_01>
+					<undamaged>vehicles/british/GB143_Captain/_skins/GB143_Captain_3Dst_01/normal/lod0/Hull.model</undamaged>
+					<destroyed>vehicles/british/GB143_Captain/_skins/GB143_Captain_3Dst_01/crash/lod0/Hull.model</destroyed>
+					<exploded>vehicles/british/GB143_Captain/_skins/GB143_Captain_3Dst_01/crash/lod0/Hull.model</exploded>
+				</GB143_Captain_3Dst_01>
+			</sets>
 		</models>
 		<swinging>
 			<lodDist>FAR</lodDist>
@@ -1278,6 +1285,12 @@
 				<scale>4.281439 4.281438 4.281438</scale>
 				<showOn>16</showOn>
 			</slot>
+			<slot>
+				<slotType>attachment</slotType>
+				<slotId>18000</slotId>
+				<position>0 0 0</position>
+				<rotation>0 0 0</rotation>
+			</slot>
 		</customizationSlots>
 		<customization>
 			<customizableVehicleAreas>
@@ -1334,6 +1347,13 @@
 				<undamaged>vehicles/british/GB143_Captain/normal/lod0/Chassis.model</undamaged>
 				<destroyed>vehicles/british/GB143_Captain/crash/lod0/Chassis.model</destroyed>
 				<exploded>vehicles/british/GB143_Captain/crash/lod0/Chassis.model</exploded>
+				<sets>
+					<GB143_Captain_3Dst_01>
+						<undamaged>vehicles/british/GB143_Captain/_skins/GB143_Captain_3Dst_01/normal/lod0/Chassis.model</undamaged>
+						<destroyed>vehicles/british/GB143_Captain/_skins/GB143_Captain_3Dst_01/crash/lod0/Chassis.model</destroyed>
+						<exploded>vehicles/british/GB143_Captain/_skins/GB143_Captain_3Dst_01/crash/lod0/Chassis.model</exploded>
+					</GB143_Captain_3Dst_01>
+				</sets>
 			</models>
 			<traces>
 				<lodDist>FAR</lodDist>
@@ -3061,6 +3081,13 @@
 						<undamaged>vehicles/british/GB143_Captain/normal/lod0/Gun_01.model</undamaged>
 						<destroyed>vehicles/british/GB143_Captain/crash/lod0/Gun_01.model</destroyed>
 						<exploded>vehicles/british/GB143_Captain/crash/lod0/Gun_01.model</exploded>
+						<sets>
+							<GB143_Captain_3Dst_01>
+								<undamaged>vehicles/british/GB143_Captain/_skins/GB143_Captain_3Dst_01/normal/lod0/Gun_01.model</undamaged>
+								<destroyed>vehicles/british/GB143_Captain/_skins/GB143_Captain_3Dst_01/crash/lod0/Gun_01.model</destroyed>
+								<exploded>vehicles/british/GB143_Captain/_skins/GB143_Captain_3Dst_01/crash/lod0/Gun_01.model</exploded>
+							</GB143_Captain_3Dst_01>
+						</sets>
 					</models>
 					<hitTester>
 						<collisionModelServer>vehicles/british/GB143_Captain/collision/Gun_01.model</collisionModelServer>
@@ -3077,6 +3104,13 @@
 				<undamaged>vehicles/british/GB143_Captain/normal/lod0/Turret_01.model</undamaged>
 				<destroyed>vehicles/british/GB143_Captain/crash/lod0/Turret_01.model</destroyed>
 				<exploded>vehicles/british/GB143_Captain/crash/lod0/Turret_01.model</exploded>
+				<sets>
+					<GB143_Captain_3Dst_01>
+						<undamaged>vehicles/british/GB143_Captain/_skins/GB143_Captain_3Dst_01/normal/lod0/Turret_01.model</undamaged>
+						<destroyed>vehicles/british/GB143_Captain/_skins/GB143_Captain_3Dst_01/crash/lod0/Turret_01.model</destroyed>
+						<exploded>vehicles/british/GB143_Captain/_skins/GB143_Captain_3Dst_01/crash/lod0/Turret_01.model</exploded>
+					</GB143_Captain_3Dst_01>
+				</sets>
 			</models>
 			<hitTester>
 				<collisionModelServer>vehicles/british/GB143_Captain/collision/Turret_01.model</collisionModelServer>
@@ -3605,6 +3639,12 @@
 					</rotation>
 					<scale>1.649454 0.824722 1.649441</scale>
 					<showOn>256</showOn>
+				</slot>
+				<slot>
+					<slotType>attachment</slotType>
+					<slotId>38000</slotId>
+					<position>0 0 0</position>
+					<rotation>0 0 0</rotation>
 				</slot>
 			</customizationSlots>
 			<customization>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/sweden/S39_15cm_AKV60_Utkast_1/crash/lod3/Chassis</nodefullVisual>
+	<parent>vehicles/sweden/S39_15cm_AKV60_Utkast_1/crash/lod4/Chassis</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.637170 -0.004319 -2.942054</min>
+		<max>1.645637 1.223747 2.892259</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

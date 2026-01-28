@@ -8,69 +8,6 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "buttons/applyButton"
-msgstr "Так точно!"
-
-msgid "buttons/claim"
-msgstr "Забрать"
-
-msgid "buttons/claimLater"
-msgstr "Выбрать позже"
-
-msgid "buttons/clearFilter"
-msgstr "Сбросить фильтр"
-
-msgid "buttons/selectReward"
-msgstr "Выбрать"
-
-msgid "compensationToken/offer"
-msgstr "Компенсация за технику X уровня"
-
-msgid "compensationTooltip/content/compensationCount"
-msgstr "x%(count)s"
-
-msgid "compensationTooltip/content/compensationCountCurrency"
-msgstr "%(count)s"
-
-msgid "compensationTooltip/content/label"
-msgstr "%(label)s (x%(count)s)"
-
-msgid "compensationTooltip/content/vehicleBonusToken"
-msgstr "Техника X уровня"
-
-msgid "compensationTooltip/description/collectionItem"
-msgstr "Компенсация за элемент коллекции"
-
-msgid "compensationTooltip/description/freeTokens"
-msgstr "Компенсация за бланки приказа кампании %(missionName)s"
-
-msgid "compensationTooltip/description/selectableBonus"
-msgstr "Компенсация за машину"
-
-msgid "compensationTooltip/description/vehicles"
-msgstr "Компенсация за машину"
-
-msgid "compensationTooltip/footerDetails/collectionItem"
-msgstr "Компенсация за элемент коллекции, который уже есть в наличии."
-
-msgid "compensationTooltip/footerDetails/freeTokens"
-msgstr "Награда, которая выдаётся как компенсация."
-
-msgid "compensationTooltip/footerDetails/selectableBonus"
-msgstr "Компенсация за машину, которая уже есть в Ангаре."
-
-msgid "compensationTooltip/footerDetails/vehicles"
-msgstr "Компенсация за машину, которая уже есть в Ангаре."
-
-msgid "compensationTooltip/title/credits"
-msgstr "Серебро"
-
-msgid "compensationTooltip/title/gold"
-msgstr "Золото"
-
-msgid "compensationTooltip/title/sacoin"
-msgstr "Жетоны заслуженной награды"
-
 msgid "multiOpenView/applyLabel"
 msgstr "Так точно!"
 
@@ -97,14 +34,6 @@ msgstr ""
 msgid "notifications/header"
 msgstr "Заслуженная награда"
 
-msgid "notifications/offer/button"
-msgstr "Выбрать машину"
-
-msgid "notifications/offer/title"
-msgstr ""
-"Не забудьте забрать подарок.\n"
-"Машина Х уровня ждёт вас!"
-
 msgid "notifications/quest/button"
 msgstr "Забрать награды"
 
@@ -120,13 +49,13 @@ msgid "notifications/tokens/timeLeft/days"
 msgstr "%(day)s д %(hour)s ч"
 
 msgid "notifications/tokens/timeLeft/hours"
-msgstr "%(hour)s ч %(min)s мин"
+msgstr "%(hour)s ч. %(min)s мин."
 
 msgid "notifications/tokens/timeLeft/lessMin"
 msgstr "меньше минуты"
 
 msgid "notifications/tokens/timeLeft/min"
-msgstr "%(min)s мин"
+msgstr "%(min)s мин."
 
 msgid "notifications/tokens/timer"
 msgstr "До списания жетонов: %(timeLeft)s"
@@ -135,14 +64,6 @@ msgid "notifications/tokens/title"
 msgstr ""
 "Меняйте жетоны за выслугу\n"
 "лет на желаемую награду!"
-
-msgid "offer/tooltip/description/vehicle_10_gift"
-msgstr ""
-"Вы можете выбрать исследуемую технику Х уровня, которой у вас нет в наличии "
-"(кроме штурмовых САУ)"
-
-msgid "offer/tooltip/title/vehicle_10_gift"
-msgstr "Техника X уровня на выбор"
 
 msgid "openBoxView/autoOpenTooltip/body"
 msgstr ""
@@ -164,11 +85,11 @@ msgstr "Заслуженная награда"
 msgid "openBoxView/openBoxesLabel"
 msgstr "Открыть {count} шт."
 
-msgid "personalMissions/freeSheet/title"
-msgstr "Бланк приказа кампании «%(campaignName)s»"
-
 msgid "rewardsScreen/showGiftButtonLabel"
 msgstr "К награде"
+
+msgid "rewardsView/applyBtn"
+msgstr "Так точно!"
 
 msgid "rewardsView/exchangeCoins"
 msgstr "Обменяйте жетоны на награды в Магазине."
@@ -334,18 +255,6 @@ msgstr "К ТЕХНИКЕ"
 msgid "rewardsView/title"
 msgstr "ПОЗДРАВЛЯЕМ!"
 
-msgid "selectBonus/vehicle_10_gift"
-msgstr "Техника X уровня на выбор"
-
-msgid "serviceChannelMessages/compensation/credits"
-msgstr "серебром:"
-
-msgid "serviceChannelMessages/compensation/header"
-msgstr "Компенсация:"
-
-msgid "serviceChannelMessages/compensation/sacoins"
-msgstr "жетонами заслуженной награды:"
-
 msgid "specialItem/body"
 msgstr ""
 "Выдаются за боевые заслуги. После завершения события оставшиеся жетоны будут"
@@ -356,91 +265,3 @@ msgstr "%(count)s шт. жетонов за выслугу лет"
 
 msgid "tooltip/restrictedMode"
 msgstr "Операция временно недоступна. Попробуйте позже."
-
-msgid "vehicleSelector/errorScreen/subTitle"
-msgstr ""
-"Информация временно недоступна. Приносим извинения за неудобства, попробуйте"
-" обновить экран позже."
-
-msgid "vehicleSelector/errorScreen/title"
-msgstr "Не удалось открыть выбор техники"
-
-msgid "vehicleSelector/selectScreen/filter/shownCount"
-msgstr "Показано:"
-
-msgid "vehicleSelector/selectScreen/filter/shownCountDivider"
-msgstr "/ %(count)s"
-
-msgid "vehicleSelector/selectScreen/filter/tooltip/clearFilter/body"
-msgstr "Нажмите, чтобы сбросить настройки фильтра на стандартные."
-
-msgid "vehicleSelector/selectScreen/filter/tooltip/clearFilter/header"
-msgstr "Установить по умолчанию"
-
-msgid "vehicleSelector/selectScreen/filter/vehicleNameSearch"
-msgstr "Поиск по названию"
-
-msgid "vehicleSelector/selectScreen/footer/actionText/active"
-msgstr "Выбрано машин: %(amountRewards)s %(infoIcon)s"
-
-msgid "vehicleSelector/selectScreen/footer/selectExpirationTime"
-msgstr "Выбор техники будет доступен до %(selectExexpirationTime)s"
-
-msgid "vehicleSelector/selectScreen/footer/vehicleCount"
-msgstr "%(selectedCount)s / %(allCount)s"
-
-msgid "vehicleSelector/selectScreen/noVehicles/clearFilter"
-msgstr "Ничего не найдено. Измените настройки или сбросьте фильтр."
-
-msgid "vehicleSelector/selectScreen/noVehicles/hasAllVehicles"
-msgstr ""
-"У вас уже есть вся исследуемая техника {brown_Open}X уровня{brown_Close}."
-
-msgid "vehicleSelector/selectScreen/popover/nationTitle"
-msgstr "Нация"
-
-msgid "vehicleSelector/selectScreen/popover/title"
-msgstr "Фильтр по технике"
-
-msgid "vehicleSelector/selectScreen/popover/tooltip/body"
-msgstr "Настройка отображения техники с учётом нации, типа"
-
-msgid "vehicleSelector/selectScreen/popover/tooltip/header"
-msgstr "Фильтр по параметрам"
-
-msgid "vehicleSelector/selectScreen/popover/vehicleTitle"
-msgstr "Тип техники"
-
-msgid "vehicleSelector/selectScreen/subTitleMultiple"
-msgstr ""
-"Выберите машины {brown_Open}X уровня{brown_Close}, которые хотите оставить "
-"себе (кроме штурмовых САУ)"
-
-msgid "vehicleSelector/selectScreen/subTitleSingle"
-msgstr ""
-"Выберите машину {brown_Open}X уровня{brown_Close}, которую хотите оставить "
-"себе (кроме штурмовых САУ)"
-
-msgid "vehicleSelector/selectScreen/title"
-msgstr "ВЫБЕРИТЕ ТЕХНИКУ"
-
-msgid "vehicleSelector/selectScreen/tooltip/rewardDiscount/subtitle"
-msgstr "Нажмите «Забрать» и получите выбранную технику."
-
-msgid "vehicleSelector/selectScreen/tooltip/rewardDiscount/subtitleEmpty"
-msgstr "Выберите понравившуюся технику, чтобы забрать её."
-
-msgid "vehicleSelector/selectScreen/tooltip/rewardDiscount/title"
-msgstr "Выбрано техники: %(amountRewards)s"
-
-msgid "vehicleSelector/selectScreen/tooltip/rewardDiscountVehicle/subtitle"
-msgstr "{white_Open}%(name)s{white_Close}"
-
-msgid "vehicleSelector/selectScreen/tooltip/rewardDiscountVehicle/title"
-msgstr "Техника %(level)s уровня"
-
-msgid "vehicleSelector/selectScreen/vehicleCard/vehicleName"
-msgstr "%(type)s {cream_Open}%(level)s{cream_Close} %(name)s"
-
-msgid "vehicle_offer/title"
-msgstr "Техника X уровня"

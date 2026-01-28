@@ -249,7 +249,6 @@ class REQ_CRITERIA(object):
         ACTIVE_OR_MAIN_IN_NATION_GROUP = RequestCriteria(PredicateCondition(lambda item: item.activeInNationGroup if item.isInInventory else isMainInNationGroupSafe(item.intCD)))
         FAVORITE = RequestCriteria(PredicateCondition(lambda item: item.isFavorite))
         PREMIUM = RequestCriteria(PredicateCondition(lambda item: item.isPremium))
-        SPECIAL = RequestCriteria(PredicateCondition(lambda item: item.isSpecial))
         READY = RequestCriteria(PredicateCondition(lambda item: item.isReadyToFight))
         OBSERVER = RequestCriteria(PredicateCondition(lambda item: item.isObserver))
         EARN_CRYSTALS = RequestCriteria(PredicateCondition(lambda item: item.isEarnCrystals))
@@ -298,7 +297,6 @@ class REQ_CRITERIA(object):
         CAN_SELL = RequestCriteria(PredicateCondition(lambda item: item.canSell))
         CAN_NOT_BE_SOLD = RequestCriteria(PredicateCondition(lambda item: item.canNotBeSold))
         IS_IN_BATTLE = RequestCriteria(PredicateCondition(lambda item: item.isInBattle))
-        IS_IN_UNIT = RequestCriteria(PredicateCondition(lambda item: item.isInUnit))
         SECRET = RequestCriteria(PredicateCondition(lambda item: item.isSecret))
         NAME_VEHICLE = staticmethod(lambda nameVehicle: RequestCriteria(PredicateCondition(lambda item: nameVehicle in item.searchableUserName)))
         NAME_VEHICLE_WITH_SHORT = staticmethod(lambda nameVehicle: RequestCriteria(PredicateCondition(lambda item: nameVehicle in item.searchableShortUserName or nameVehicle in item.searchableUserName)))
@@ -348,7 +346,7 @@ class REQ_CRITERIA(object):
     class RECRUIT(object):
         ROLES = staticmethod(lambda roles=tankmen.ROLES: RequestCriteria(PredicateCondition(--- This code section failed: ---
 
- L. 586         0  LOAD_FAST             0  'item'
+ L. 582         0  LOAD_FAST             0  'item'
                 3  LOAD_ATTR             0  'getRoles'
                 6  CALL_FUNCTION_0       0  None
                 9  POP_JUMP_IF_FALSE    53  'to 53'
@@ -720,7 +718,7 @@ class ItemsRequester(IItemsRequester):
 
     def isSynced--- This code section failed: ---
 
- L.1190         0  LOAD_FAST             0  'self'
+ L.1186         0  LOAD_FAST             0  'self'
                 3  LOAD_ATTR             0  '__blueprints'
                 6  LOAD_CONST               None
                 9  COMPARE_OP            9  is-not
@@ -984,7 +982,7 @@ Parse error at or near `None' instruction at offset -1
 
                     storageKeys = (CustomizationInvData.ITEMS, CustomizationInvData.NOVELTY_DATA,
                      CustomizationInvData.DRESSED, CustomizationInvData.PROGRESSION,
-                     CustomizationInvData.SERIAL_NUMBERS)
+                     CustomizationInvData.SERIAL_NUMBERS, CustomizationInvData.TAG_MASK)
                     for storageKey in storageKeys:
                         for cType, items in itemsDiff.get(storageKey, {}).iteritems():
                             for idx in items.iterkeys():
@@ -1119,13 +1117,15 @@ Parse error at or near `None' instruction at offset -1
 
         def asyncGetItems():
             for typeID in itemTypeID:
+                if BigWorld.player() is None:
+                    break
                 itemGetter = self.getItemByCD
                 protector = criteria.getIntCDProtector()
                 if protector is not None and protector.isUnlinked():
                     callback(result)
                 for intCD in vehicle_items_getter.getItemsIterator(self.__shop.getItemsData(), nationID, typeID, onlyWithPrices):
                     if BigWorld.player() is None:
-                        return
+                        break
                     if protector is not None and protector.isTriggered(intCD):
                         continue
                     item = itemGetter(intCD)
@@ -1135,8 +1135,14 @@ Parse error at or near `None' instruction at offset -1
 
             return
 
-        yield future_async.th_await(future_async.distributeLoopOverTicks(asyncGetItems(), minPerTick=minPerTick, maxPerTick=maxPerTick, logID='getItemsAsync', tickLength=0.0))
-        callback(result)
+        try:
+            try:
+                yield future_async.distributeLoopOverTicks(asyncGetItems(), minPerTick=minPerTick, maxPerTick=maxPerTick, logID='getItemsAsync', tickLength=0.0)
+            except future_async.BrokenPromiseError:
+                LOG_DEBUG('getItemsAsync has been destroyed without user decision')
+
+        finally:
+            callback(result)
 
     def getTankmen(self, criteria=REQ_CRITERIA.TANKMAN.ACTIVE):
         result = self.getInventoryTankmen(criteria)

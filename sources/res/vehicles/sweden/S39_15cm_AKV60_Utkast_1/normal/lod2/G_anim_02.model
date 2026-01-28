@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/sweden/S39_15cm_AKV60_Utkast_1/normal/lod3/G_anim_02</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-0.183041 -0.142207 -3.754026</min>
+		<max>0.165717 0.291878 -3.546458</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/sweden/S39_15cm_AKV60_Utkast_1/normal/lod2/G_anim_02</nodefullVisual>
+</root>

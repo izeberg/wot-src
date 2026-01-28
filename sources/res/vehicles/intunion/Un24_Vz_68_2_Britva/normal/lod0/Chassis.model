@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.596065 -0.000002 -3.024849</min>
+		<max>1.596065 1.072181 3.208277</max>
+	</visibilityBox>
+	<parent>vehicles/intunion/Un24_Vz_68_2_Britva/normal/lod1/Chassis</parent>
+	<tank>true</tank>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/intunion/Un24_Vz_68_2_Britva/normal/lod0/Chassis</nodefullVisual>
+</root>

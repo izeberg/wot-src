@@ -178,6 +178,7 @@
 		<_170mm_StuK_L53>31012</_170mm_StuK_L53>
 		<_88mm_KwK_43_L71_Dual>31014</_88mm_KwK_43_L71_Dual>
 		<_100mm_Typ_D-10T2S_T>35001</_100mm_Typ_D-10T2S_T>
+		<_120mm_Rh_E1>31013</_120mm_Rh_E1>
 		<_88mm_KwK_43_L71A_IGR>60001</_88mm_KwK_43_L71A_IGR>
 		<_88mm_KwK_43_L71_IGR>60002</_88mm_KwK_43_L71_IGR>
 		<_105mm_KwK46_L68_IGR>60003</_105mm_KwK46_L68_IGR>
@@ -186,6 +187,9 @@
 		<_75mm_KwK45_L100_IGR>60006</_75mm_KwK45_L100_IGR>
 		<_128mm_PaK44_L55_IGR>60007</_128mm_PaK44_L55_IGR>
 		<_128mm_KwK44_L55_IGR>60008</_128mm_KwK44_L55_IGR>
+		<_150mm_Nebelwerfer_41>60009</_150mm_Nebelwerfer_41>
+		<Flammenwerfer>60010</Flammenwerfer>
+		<_75mm_Bunker_Gun>60011</_75mm_Bunker_Gun>
 		<_50mm_KwK_38_L42_bootcamp>64005</_50mm_KwK_38_L42_bootcamp>
 		<_50mm_KwK_39_L60_MapsTraining_Dummy_HT_1>32</_50mm_KwK_39_L60_MapsTraining_Dummy_HT_1>
 		<_75mm_PaK_39_L48_MapsTraining_Dummy_ATSPG_1>56</_75mm_PaK_39_L48_MapsTraining_Dummy_ATSPG_1>
@@ -13889,6 +13893,109 @@
 				</_120mm_SDRN1>
 			</shots>
 		</_120mm_RhD>
+		<_120mm_Rh_E1>
+			<userString>#germany_vehicles:_120mm_Rh_E1</userString>
+			<tags/>
+			<level>9</level>
+			<price>220000</price>
+			<notInShop>true</notInShop>
+			<impulse>
+				0.68
+				<!--BW_String-->
+			</impulse>
+			<recoil>
+				<lodDist>MEDIUM</lodDist>
+				<amplitude>
+					0.24
+					<!--BW_String-->
+				</amplitude>
+				<recoilEffect>large</recoilEffect>
+			</recoil>
+			<effects>shot_large_mb</effects>
+			<reloadEffect>reload_automat_reloading_115_152</reloadEffect>
+			<pitchLimits>
+				<minPitch>
+					0.0 -15.0 1.0 -15.0
+					<!--BW_String-->
+				</minPitch>
+				<maxPitch>
+					0.0 11.0 1.0 11.0
+					<!--BW_String-->
+				</maxPitch>
+			</pitchLimits>
+			<turretYawLimits>-180 180</turretYawLimits>
+			<rotationSpeed>18</rotationSpeed>
+			<reloadTime>8</reloadTime>
+			<maxAmmo>45</maxAmmo>
+			<aimingTime>2</aimingTime>
+			<weight>3340</weight>
+			<maxHealth>220</maxHealth>
+			<maxRegenHealth>110</maxRegenHealth>
+			<repairCost>8</repairCost>
+			<invisibilityFactorAtShot>
+				0.1
+				<!--BW_String-->
+			</invisibilityFactorAtShot>
+			<shotDispersionRadius>
+				0.34
+				<!--BW_String-->
+			</shotDispersionRadius>
+			<shotDispersionFactors>
+				<turretRotation>
+					0.10
+					<!--BW_String-->
+				</turretRotation>
+				<afterShot>
+					4.0
+					<!--BW_String-->
+				</afterShot>
+				<whileGunDamaged>
+					2.0
+					<!--BW_String-->
+				</whileGunDamaged>
+			</shotDispersionFactors>
+			<shots>
+				<_120mm_Pzgr57>
+					<defaultPortion>
+						0.87
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>1150</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>264 245</piercingPower>
+				</_120mm_Pzgr57>
+				<_120mm_HlGr57>
+					<defaultPortion>
+						0.0
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>950</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>310 310</piercingPower>
+				</_120mm_HlGr57>
+				<_120mm_Sprgr57>
+					<defaultPortion>
+						0.13
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>950</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>60 60</piercingPower>
+				</_120mm_Sprgr57>
+			</shots>
+		</_120mm_Rh_E1>
 		<_120mm_Versuchskanone_L65>
 			<userString>#germany_vehicles:_120mm_Versuchskanone_L65</userString>
 			<tags/>
@@ -13908,7 +14015,7 @@
 				<recoilEffect>large</recoilEffect>
 			</recoil>
 			<effects>shot_large</effects>
-			<reloadEffect>autoloader_reload85_107</reloadEffect>
+			<reloadEffect>autoloader_reload115_152</reloadEffect>
 			<pitchLimits>
 				<minPitch>
 					0.0 -15.0 1.0 -15.0
@@ -21303,5 +21410,258 @@
 				</_150mm_Erich_Konzept_I_Sprgr>
 			</shots>
 		</_150mm_Erich_Konzept_I>
+		<_150mm_Nebelwerfer_41>
+			<userString>#germany_vehicles:_150mm_Nebelwerfer_41</userString>
+			<tags/>
+			<level>10</level>
+			<price>2750</price>
+			<notInShop>true</notInShop>
+			<impulse>
+				0.2
+				<!--BW_String-->
+			</impulse>
+			<recoil>
+				<lodDist>MEDIUM</lodDist>
+				<amplitude>
+					0.48
+					<!--BW_String-->
+				</amplitude>
+				<recoilEffect>huge</recoilEffect>
+			</recoil>
+			<effects>shot_huge_mb</effects>
+			<reloadEffect>reload115_152</reloadEffect>
+			<turretYawLimits>-180 180</turretYawLimits>
+			<pitchLimits>
+				<minPitch>
+					0.0 -50.0 1.0 -50.0
+					<!--BW_String-->
+				</minPitch>
+				<maxPitch>
+					0.0 -9.0 1.0 -9.0
+					<!--BW_String-->
+				</maxPitch>
+			</pitchLimits>
+			<rotationSpeed>
+				20.0
+				<!--BW_String-->
+			</rotationSpeed>
+			<reloadTime>30</reloadTime>
+			<maxAmmo>10000</maxAmmo>
+			<aimingTime>
+				1.0
+				<!--BW_String-->
+			</aimingTime>
+			<weight>10</weight>
+			<maxHealth>30</maxHealth>
+			<maxRegenHealth>14</maxRegenHealth>
+			<repairCost>1</repairCost>
+			<invisibilityFactorAtShot>
+				0.1
+				<!--BW_String-->
+			</invisibilityFactorAtShot>
+			<shotDispersionRadius>
+				5.0
+				<!--BW_String-->
+			</shotDispersionRadius>
+			<shotDispersionFactors>
+				<turretRotation>
+					0.08
+					<!--BW_String-->
+				</turretRotation>
+				<afterShot>
+					0.5
+					<!--BW_String-->
+				</afterShot>
+				<whileGunDamaged>
+					2.0
+					<!--BW_String-->
+				</whileGunDamaged>
+			</shotDispersionFactors>
+			<shots>
+				<Wurfgranate_41_Spreng>
+					<defaultPortion>
+						1.0
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>180</speed>
+					<gravity>
+						22.5
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>10000</maxDistance>
+					<piercingPower>49 49</piercingPower>
+					<maxHeight>450</maxHeight>
+				</Wurfgranate_41_Spreng>
+			</shots>
+		</_150mm_Nebelwerfer_41>
+		<_75mm_Bunker_Gun>
+			<userString>#germany_vehicles:_75mm_Bunker_Gun</userString>
+			<tags/>
+			<level>10</level>
+			<price>2750</price>
+			<notInShop>true</notInShop>
+			<impulse>0.000000</impulse>
+			<recoil>
+				<lodDist>MEDIUM</lodDist>
+				<amplitude>0.015000</amplitude>
+				<backoffTime>0.090000</backoffTime>
+				<returnTime>0.100000</returnTime>
+			</recoil>
+			<effects>shot_auto</effects>
+			<reloadEffect>reload50_75</reloadEffect>
+			<groundWave/>
+			<pitchLimits>
+				<minPitch>
+					0.0 -20.0 1.0 -20.0
+					<!--BW_String-->
+				</minPitch>
+				<maxPitch>
+					0.0 15.0 1.0 15.0
+					<!--BW_String-->
+				</maxPitch>
+			</pitchLimits>
+			<turretYawLimits>-180 180</turretYawLimits>
+			<rotationSpeed>
+				70.0
+				<!--BW_String-->
+			</rotationSpeed>
+			<reloadTime>
+				2.0
+				<!--BW_String-->
+			</reloadTime>
+			<maxAmmo>10000</maxAmmo>
+			<aimingTime>
+				1.2
+				<!--BW_String-->
+			</aimingTime>
+			<weight>1</weight>
+			<maxHealth>1000</maxHealth>
+			<maxRegenHealth>14</maxRegenHealth>
+			<repairCost>2</repairCost>
+			<invisibilityFactorAtShot>
+				0.2
+				<!--BW_String-->
+			</invisibilityFactorAtShot>
+			<shotDispersionRadius>
+				1.0
+				<!--BW_String-->
+			</shotDispersionRadius>
+			<shotDispersionFactors>
+				<turretRotation>
+					0.05
+					<!--BW_String-->
+				</turretRotation>
+				<afterShot>
+					0.01
+					<!--BW_String-->
+				</afterShot>
+				<whileGunDamaged>
+					0.1
+					<!--BW_String-->
+				</whileGunDamaged>
+			</shotDispersionFactors>
+			<shots>
+				<_75mm_Bunker_Shell>
+					<defaultPortion>
+						1.0
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>700</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>220 220</piercingPower>
+				</_75mm_Bunker_Shell>
+			</shots>
+		</_75mm_Bunker_Gun>
+		<Flammenwerfer>
+			<userString>#germany_vehicles:Flammenwerfer</userString>
+			<tags/>
+			<level>10</level>
+			<price>2750</price>
+			<notInShop>true</notInShop>
+			<impulse>
+				0.01
+				<!--BW_String-->
+			</impulse>
+			<recoil>
+				<lodDist>MEDIUM</lodDist>
+				<amplitude>
+					0.6
+					<!--BW_String-->
+				</amplitude>
+				<recoilEffect>main</recoilEffect>
+			</recoil>
+			<effects>shot_flamethrower</effects>
+			<reloadEffect>reload20_45_flameHeavyAutoshoot</reloadEffect>
+			<groundWave/>
+			<pitchLimits>
+				<minPitch>
+					0.0 -22.0 1.0 -22.0
+					<!--BW_String-->
+				</minPitch>
+				<maxPitch>
+					0.0 15.0 1.0 15.0
+					<!--BW_String-->
+				</maxPitch>
+			</pitchLimits>
+			<turretYawLimits>-180 180</turretYawLimits>
+			<rotationSpeed>
+				40.0
+				<!--BW_String-->
+			</rotationSpeed>
+			<reloadTime>
+				10.0
+				<!--BW_String-->
+			</reloadTime>
+			<maxAmmo>1000</maxAmmo>
+			<aimingTime>
+				1.2
+				<!--BW_String-->
+			</aimingTime>
+			<weight>1</weight>
+			<maxHealth>30</maxHealth>
+			<maxRegenHealth>14</maxRegenHealth>
+			<repairCost>2</repairCost>
+			<invisibilityFactorAtShot>
+				0.1
+				<!--BW_String-->
+			</invisibilityFactorAtShot>
+			<shotDispersionRadius>
+				0.7
+				<!--BW_String-->
+			</shotDispersionRadius>
+			<shotDispersionFactors>
+				<turretRotation>
+					0.08
+					<!--BW_String-->
+				</turretRotation>
+				<afterShot>
+					0.016
+					<!--BW_String-->
+				</afterShot>
+				<whileGunDamaged>
+					2.0
+					<!--BW_String-->
+				</whileGunDamaged>
+			</shotDispersionFactors>
+			<shots>
+				<Feuermischung>
+					<defaultPortion>
+						1.0
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>75</speed>
+					<gravity>
+						4.0
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>150</maxDistance>
+					<piercingPower>100 100</piercingPower>
+				</Feuermischung>
+			</shots>
+		</Flammenwerfer>
 	</shared>
 </root>

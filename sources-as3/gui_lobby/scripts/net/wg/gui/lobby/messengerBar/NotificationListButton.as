@@ -12,6 +12,7 @@ package net.wg.gui.lobby.messengerBar
    import net.wg.utils.ICounterManager;
    import net.wg.utils.ICounterProps;
    import org.idmedia.as3commons.util.StringUtils;
+   import scaleform.clik.constants.InvalidationType;
    import scaleform.clik.events.ButtonEvent;
    
    public class NotificationListButton extends NotificationListButtonMeta implements INotificationListButton, IDisplayObject
@@ -23,6 +24,8 @@ package net.wg.gui.lobby.messengerBar
       public var button:BlinkingButton;
       
       private var _counterManager:ICounterManager = null;
+      
+      private var _counterValue:String = "";
       
       public function NotificationListButton()
       {
@@ -48,20 +51,27 @@ package net.wg.gui.lobby.messengerBar
          super.onDispose();
       }
       
+      override protected function draw() : void
+      {
+         super.draw();
+         if(isInvalid(InvalidationType.DATA))
+         {
+            this._counterManager.removeCounter(this);
+            if(StringUtils.isNotEmpty(this._counterValue))
+            {
+               this._counterManager.setCounter(this,this._counterValue,null,COUNTER_PROPS);
+            }
+         }
+      }
+      
       public function as_setState(param1:Boolean, param2:String) : void
       {
          if(this.button.blinking != param1)
          {
             this.button.blinking = param1;
          }
-         if(StringUtils.isNotEmpty(param2))
-         {
-            this._counterManager.setCounter(this,param2,null,COUNTER_PROPS);
-         }
-         else
-         {
-            this._counterManager.removeCounter(this);
-         }
+         this._counterValue = param2;
+         invalidateData();
       }
       
       public function getHitArea() : DisplayObject

@@ -119,15 +119,31 @@ msgstr "Адраджэнне хаўрусніка"
 msgid "battle/winnerCongratulationsView/title"
 msgstr "ПЕРАМОГА"
 
+msgid "battleResult/battlePassWidget/achievedPoints"
+msgstr "+"
+
 msgid "battleResult/battlePassWidget/chapterNotChosen"
 msgstr ""
 "Раздзел не выбраны. Неразмеркаваных ачкоў Баявога пропуска: "
 "%(points)s%(icon)s"
 
+msgid "battleResult/battlePassWidget/pointsShopDisabled"
+msgstr "Усе раздзелы пройдзены. Дзякуй за ўдзел!"
+
+msgid "battleResult/battlePassWidget/pointsShopDisabledSingle"
+msgstr "Раздзел пройдзены. Дзякуй за ўдзел!"
+
+msgid "battleResult/battlePassWidget/pointsStats"
+msgstr "%(currentLevelPoints)s/%(maxPoints)s"
+
 msgid "battleResult/battlePassWidget/progressionCompleted"
 msgstr ""
 "Усе раздзелы пройдзеныя. Працягвайце гуляць і назапашваць ачкі Баявога "
 "пропуска."
+
+msgid "battleResult/battlePassWidget/progressionCompletedSingle"
+msgstr ""
+"Раздзел пройдзены. Працягвайце гуляць і назапашваць ачкі Бавяога пропуска."
 
 msgid "battleResult/battlePassWidget/submit"
 msgstr "Перайсці да Баявога пропуска"

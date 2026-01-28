@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/sweden/S40_Sav_LS_46/normal/lod1/Gun_02</nodefullVisual>
+	<parent>vehicles/sweden/S40_Sav_LS_46/normal/lod2/Gun_02</parent>
+	<extent>64.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.547867 -0.526793 -1.852536</min>
+		<max>0.547867 0.552204 4.009385</max>
+	</visibilityBox>
+</root>

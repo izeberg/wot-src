@@ -161,6 +161,17 @@ msgstr "?empty?"
 msgid "component/background/base/31019/title"
 msgstr "Круг прысвечаных"
 
+msgid "component/background/base/31020/description"
+msgstr ""
+"Выдаецца за поспехі ў праходжанні адмысловага раздзела Баявога пропуска "
+"«Артэфакты мінулага», прысвечанага супрацы з гульнёй STALCRAFT: Х."
+
+msgid "component/background/base/31020/description_locked"
+msgstr "?empty?"
+
+msgid "component/background/base/31020/title"
+msgstr "Тая сама лічба"
+
 msgid "component/background/base/500/description"
 msgstr "За дасягненне 6-га ўзроўню каманднай прагрэсіі ў Бітве блогераў 2021"
 
@@ -957,6 +968,17 @@ msgstr ""
 msgid "component/engraving/skill/407/title"
 msgstr "MTR"
 
+msgid "component/engraving/static/31021/description"
+msgstr ""
+"Выдаецца за поспехі ў праходжанні адмысловага раздзела Баявога пропуска "
+"«Артэфакты мінулага», прысвечанага супрацы з гульнёй STALCRAFT: Х."
+
+msgid "component/engraving/static/31021/description_locked"
+msgstr "?empty?"
+
+msgid "component/engraving/static/31021/title"
+msgstr "Тая сама лічба"
+
 msgid "component/engraving/static/700/description"
 msgstr ""
 "Паказвае вашу выніковую пазіцыю ў табліцы лідараў, актыўнай у межах падзеі "
@@ -1143,9 +1165,10 @@ msgstr ""
 
 msgid "component/purposeTooltip/static"
 msgstr ""
-"Дэманструйце свае ўнікальныя або рэдкія дасягненні ў гульні. Бярыце ўдзел у "
-"розных спаборніцтвах у межах падзей, здабывайце памятныя і вельмі рэдкія "
-"гравіроўкі і фоны, збярыце ўласны непаўторны жэтон."
+"Дэманструйце свае ўнікальныя або рэдкія дасягненні ў гульні. Бярыце ўдзел "
+"у розных спаборніцтвах у межах падзей, здабывайце памятныя і вельмі рэдкія "
+"гравіроўкі і фоны, збярыце ўласны непаўторны жэтон. Кампаненты можна "
+"заслужыць за поспехі падчас асаблівых унутрыгульнявых падзей."
 
 msgid "component/purposeTooltip/triumph"
 msgstr ""
@@ -1196,6 +1219,9 @@ msgstr "Націсніце, каб даведацца больш пра асаб
 
 msgid "customization/mainTitle"
 msgstr "Асабісты жэтон"
+
+msgid "customization/mergedTab"
+msgstr "Фон і гравіроўка"
 
 msgid "customization/navigation/backToCustomization"
 msgstr "ДА НАЛАДКІ ЖЭТОНА"

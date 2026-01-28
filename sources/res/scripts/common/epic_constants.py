@@ -19,6 +19,7 @@ class EPIC_BATTLE_TEAM_ID(object):
 FRONTLINE_BONUSES_ORDER = (
  'battlePassPoints',
  EPIC_SKILL_TOKEN_NAME,
+ 'lootBoxToken',
  'crystal',
  'epicSelectToken',
  'goodies',
@@ -34,6 +35,17 @@ CATEGORIES_ORDER = [
  SlotCategories.FIRESUPPORT,
  SlotCategories.RECONNAISSANCE,
  SlotCategories.TACTICS]
+
+class Direction(object):
+    TOP = 'TOP'
+    LEFT = 'LEFT'
+    CENTER = 'CENTER'
+    RIGHT = 'RIGHT'
+    LANE_TO_DIRECTION = (
+     None, LEFT, CENTER, RIGHT, TOP)
+
+
+SECTORS = ('A', 'B', 'C', 'D', 'E', 'F')
 if IS_CLIENT or IS_WEB:
     from shared_utils import CONST_CONTAINER
 

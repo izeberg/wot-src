@@ -12,6 +12,8 @@ package net.wg.gui.components.carousels.interfaces
       
       function setCloseButtonTooltip(param1:String) : void;
       
+      function setCloseButtonSimpleTooltip(param1:String) : void;
+      
       function setCount(param1:String, param2:Boolean = false, param3:Boolean = false) : void;
       
       function get hasCounter() : Boolean;

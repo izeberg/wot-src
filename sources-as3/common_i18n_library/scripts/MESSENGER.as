@@ -1987,13 +1987,17 @@ package
       
       public static const SERVICECHANNELMESSAGES_BATTLEPASSMARATHONWILLENDSOON_BUTTON:String = "#messenger:serviceChannelMessages/battlePassMarathonWillEndSoon/button";
       
-      public static const SERVICECHANNELMESSAGES_BATTLEPASS_REACHEDCAP_HEADER:String = "#messenger:serviceChannelMessages/battlePass/reachedCap/header";
+      public static const SERVICECHANNELMESSAGES_BATTLEPASS_REACHEDCAPWEEK_HEADER:String = "#messenger:serviceChannelMessages/battlePass/reachedCapWeek/header";
       
-      public static const SERVICECHANNELMESSAGES_BATTLEPASS_REACHEDCAP_TEXT:String = "#messenger:serviceChannelMessages/battlePass/reachedCap/text";
+      public static const SERVICECHANNELMESSAGES_BATTLEPASS_REACHEDCAPWEEK_TEXT:String = "#messenger:serviceChannelMessages/battlePass/reachedCapWeek/text";
       
       public static const SERVICECHANNELMESSAGES_BATTLEPASS_CAPRESET_HEADER:String = "#messenger:serviceChannelMessages/battlePass/capReset/header";
       
       public static const SERVICECHANNELMESSAGES_BATTLEPASS_CAPRESET_TEXT:String = "#messenger:serviceChannelMessages/battlePass/capReset/text";
+      
+      public static const SERVICECHANNELMESSAGES_BATTLEPASS_REACHEDCAPFACTOR_HEADER:String = "#messenger:serviceChannelMessages/battlePass/reachedCapFactor/header";
+      
+      public static const SERVICECHANNELMESSAGES_BATTLEPASS_REACHEDCAPFACTOR_TEXT:String = "#messenger:serviceChannelMessages/battlePass/reachedCapFactor/text";
       
       public static const SERVICECHANNELMESSAGES_BATTLEPASS_TROPHYSELECTTOKEN:String = "#messenger:serviceChannelMessages/battlePass/trophySelectToken";
       
@@ -2272,18 +2276,6 @@ package
       public static const PLATFORMCURRENCYMSG_RECEIVED_FAMECOIN:String = "#messenger:platformCurrencyMsg/received/famecoin";
       
       public static const PLATFORMCURRENCYMSG_DEBITED_FAMECOIN:String = "#messenger:platformCurrencyMsg/debited/famecoin";
-      
-      public static const PLATFORMCURRENCYMSG_RECEIVED_NYRFOOD:String = "#messenger:platformCurrencyMsg/received/nyrfood";
-      
-      public static const PLATFORMCURRENCYMSG_DEBITED_NYRFOOD:String = "#messenger:platformCurrencyMsg/debited/nyrfood";
-      
-      public static const PLATFORMCURRENCYMSG_RECEIVED_NYRFUN:String = "#messenger:platformCurrencyMsg/received/nyrfun";
-      
-      public static const PLATFORMCURRENCYMSG_DEBITED_NYRFUN:String = "#messenger:platformCurrencyMsg/debited/nyrfun";
-      
-      public static const PLATFORMCURRENCYMSG_RECEIVED_NYRACTIV:String = "#messenger:platformCurrencyMsg/received/nyractiv";
-      
-      public static const PLATFORMCURRENCYMSG_DEBITED_NYRACTIV:String = "#messenger:platformCurrencyMsg/debited/nyractiv";
       
       public static const PLATFORMCURRENCYMSG_RECEIVED_FREEXP:String = "#messenger:platformCurrencyMsg/received/freeXP";
       

@@ -1548,8 +1548,8 @@
 				0.2
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>441</rpm_min>
-			<rpm_max>2188</rpm_max>
+			<rpm_min>302</rpm_min>
+			<rpm_max>2630</rpm_max>
 		</Unit_2983F>
 		<Rolls_Royce_Griffon_180C>
 			<userString>#gb_vehicles:Rolls_Royce_Griffon_180C</userString>
@@ -2168,9 +2168,9 @@
 			<level>10</level>
 			<price>100000</price>
 			<notInShop>true</notInShop>
-			<wwsoundPC>eng_Continental_R975_C1_pc</wwsoundPC>
-			<wwsoundNPC>eng_Continental_R975_C1_npc</wwsoundNPC>
-			<power>560</power>
+			<wwsoundPC>eng_ContinentalR_pc</wwsoundPC>
+			<wwsoundNPC>eng_ContinentalR_npc</wwsoundNPC>
+			<power>1000</power>
 			<weight>998</weight>
 			<maxHealth>285</maxHealth>
 			<maxRegenHealth>142</maxRegenHealth>
@@ -2179,8 +2179,8 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>439</rpm_min>
-			<rpm_max>2411</rpm_max>
+			<rpm_min>470</rpm_min>
+			<rpm_max>2094</rpm_max>
 		</Continental_AOI-1195-5>
 		<Continental_AOI_1195_5A>
 			<userString>#gb_vehicles:Continental_AOI_1195_5A</userString>

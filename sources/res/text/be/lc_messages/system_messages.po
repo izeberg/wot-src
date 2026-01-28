@@ -3564,9 +3564,6 @@ msgstr "Машына заблакавана, таму нельга прадац�
 msgid "seniority_awards/claim_reward_failed"
 msgstr "Памылка выдачы ўзнагароды: часова немагчыма атрымаць."
 
-msgid "seniority_awards/rewardChoice/error"
-msgstr "Памылка пры выбары ўзнагарод. Калі ласка, паспрабуйце яшчэ раз."
-
 msgid "serverInstallError"
 msgstr ""
 "Памылка сервера падчас усталявання модуля %s «%s». Паспрабуйце пазней."
@@ -3751,6 +3748,16 @@ msgstr ""
 "Вы не можаце выкарыстоўваць гэты дадатак для гульні: ваш акаўнт Steam ужо "
 "прывязаны да акаўнту Леста. Дадатковую інфармацыю можна даведацца ў Цэнтры "
 "падтрымкі карыстальнікаў."
+
+msgid "stronghold/clanSeason/progression/title"
+msgstr ""
+"Вы дасягнулі %(level)s-га ўзроўню асабістай прагрэсіі ў Кланавым сезоне, "
+"і вам налічана ўзнагарода."
+
+msgid "stronghold/clanSeason/quest/title"
+msgstr ""
+"За выкананне адной з задач асабістай прагрэсіі Кланавага сезона вам налічана"
+" ўзнагарода."
 
 msgid "techtree/action/expireTime"
 msgstr "%(days)s сут"

@@ -1102,6 +1102,9 @@ msgstr "Стварыць звяз для «Націску»"
 msgid "contextMenu/createContactNote"
 msgstr "Стварыць нататку"
 
+msgid "contextMenu/createEpicSquad"
+msgstr "Стварыць звяза для Лініі фронту"
+
 msgid "contextMenu/createEventSquad"
 msgstr "Стварыць звяз падзеі"
 
@@ -1372,8 +1375,8 @@ msgstr "Адклікаць запрашэнне ў звяз"
 
 msgid "copy"
 msgstr ""
-"© Леста Игры, 2022–2026. Гульня «Мир танков» заснавана на інтэлектуальнай "
-"уласнасці трэціх асоб. Усе правы на аб'екты правоў трэціх асоб належаць іх "
+"© Леста Игры, 2022-2025. Гульня «Мир танков» заснавана на інтэлектуальнай "
+"уласнасці трэціх асоб. Усе правы на аб'екты правоў трэціх асоб належаць іх "
 "законным праваўладальнікам."
 
 msgid "counter/newCounter"
@@ -1589,6 +1592,9 @@ msgstr "Перайсці ў калекцыю"
 msgid "cst_item_ctx_menu/information"
 msgstr "Інфармацыя"
 
+msgid "cst_item_ctx_menu/markAsFavorite"
+msgstr "Дадаць у «Выбранае»"
+
 msgid "cst_item_ctx_menu/nationChange"
 msgstr "Змяніць дзяржаву"
 
@@ -1654,6 +1660,9 @@ msgstr "Прыбраць са слота"
 
 msgid "cst_item_ctx_menu/unload"
 msgstr "Выгрузіць на Склад"
+
+msgid "cst_item_ctx_menu/unmarkAsFavorite"
+msgstr "Прыбраць з катэгорыі «Выбранае»"
 
 msgid "cst_item_ctx_menu/upgrade"
 msgstr "Наладзіць"
@@ -2230,10 +2239,10 @@ msgstr ""
 
 msgid "extraParams/name/enemyModulesCrewCritChance"
 msgstr ""
-"Параметр, які адказвае за змену шанцу прычыніць крытычныя пашкоджанні "
-"экіпажу і ўнутраным модулям праціўніка. Працуе толькі для бранябойных, "
-"падкаліберных, бранябойных апераных падкаліберных і кумулятыўных снарадаў, а"
-" таксама для бранябойнага і кумулятыўнага НКРСа."
+"Параметр, які адказвае за змену шанцу прычыніць крытычныя пашкоджанні "
+"экіпажу і ўнутраным модулям праціўніка. Працуе толькі для бранябойных, "
+"падкаліберных, бранябойных апераных падкаліберных і кумулятыўных снарадаў, "
+"а таксама для бранябойнага і кумулятыўнага НКРСа."
 
 msgid "extraParams/name/equipmentPreparationTime"
 msgstr ""
@@ -2391,8 +2400,11 @@ msgstr ""
 
 msgid "extraParams/name/vehicleGunDamage"
 msgstr ""
-"Параметр, які адказвае за павелічэнне пашкоджанняў пры актывацыі мадыфікацыі"
-" / пры прабіцці машыны праціўніка за час дзеяння мадыфікацыі."
+"Параметр, які адказвае за павелічэнне пашкоджанняў пры актывацыі мадыфікацыі"
+" / пры прабіцці машыны праціўніка за час дзеяння мадыфікацыі. Значэнне "
+"прыросту пашкоджанняў пры кожным прабіцці сумуецца з прыростам пашкоджанняў "
+"пры актывацыі. Бонусныя пашкоджання дадаюцца і прымяняюцца толькі на час "
+"дзеяння мадыфікацыі."
 
 msgid "extraParams/name/vehicleGunKillReloadTime"
 msgstr ""
@@ -2401,12 +2413,12 @@ msgstr ""
 
 msgid "extraParams/name/vehicleGunReloadPenalty"
 msgstr ""
-"Параметр, які адказвае за аднаразовае запавольванне часу набівання перад наступным стрэлам. Чым больш зроблена стрэлаў на працягу дзеяння мадыфікацыі, тым больш часу дадаецца да набівання пасля заканчэння дзеяння мадыфікацыі.\n"
-"Штраф скідваецца пасля стрэлу. Навык «Інтуіцыя» не скідвае накладзены штраф."
+"Значэнне штрафу дадаецца да агульнага часу набівання пасля кожнага стрэлу і прымяняецца пасля заканчэння дзеяння мадыфікацыі. Чым больш зроблена стрэлаў на працягу дзеяння мадыфікацыі, тым больш часу дадаецца да набівання пасля заканчэння дзеяння мадыфікацыі.\n"
+"Штраф скідваецца пасля стрэлу або змены снарада."
 
 msgid "extraParams/name/vehicleGunReloadTime"
 msgstr ""
-"Параметр, які адказвае за памяншэнне часу перанабівання гарматы падчас "
+"Значэнне, на якое будзе зменшаны час перанабівання гарматы на працягу "
 "дзеяння мадыфікацыі."
 
 msgid "extraParams/name/vehicleGunReloadTimeReceiveShot"
@@ -2437,6 +2449,14 @@ msgid "extraParams/name/vehicleGunShotDispersionWhileGunDamaged"
 msgstr ""
 "Параметр, які адказвае за тое, наколькі памяншаецца дакладнасць гарматы ў "
 "пашкоджаным стане. Чым вышэйшае значэнне, тым меншы штраф."
+
+msgid "extraParams/name/vehicleGunSpecDamage"
+msgstr ""
+"Параметр, які адказвае за павелічэнне пашкоджанняў пры актывацыі мадыфікацыі"
+" / пры прабіцці машыны праціўніка за час дзеяння мадыфікацыі. Значэнне "
+"прыросту пашкоджанняў пры кожным прабіцці сумуецца з прыростам пашкоджанняў "
+"пры актывацыі. Бонусныя пашкоджання дадаюцца і прымяняюцца толькі на час "
+"дзеяння мадыфікацыі."
 
 msgid "extraParams/name/vehicleInvisibilityAfterShot"
 msgstr "Параметр, які адказвае за скрытасць пасля стрэлу."
@@ -4561,6 +4581,9 @@ msgstr ""
 msgid "moduleInfo/autoShootFlameGunLabel"
 msgstr "Агнямётная безмагазінная сістэма"
 
+msgid "moduleInfo/autoShootGunLabel"
+msgstr "Аўтаматычная гармата"
+
 msgid "moduleInfo/clipDualGunLabel"
 msgstr "Спараная ўстаноўка з сістэмай набівання"
 
@@ -4673,6 +4696,9 @@ msgstr "Час падключэння агнясумесі"
 
 msgid "moduleInfo/params/autoShootFlameOverheatCoolingTime"
 msgstr "Час ахаладжэння гарматы пры перагрэве"
+
+msgid "moduleInfo/params/autoShootShellsCount"
+msgstr "Снарадаў у стужцы"
 
 msgid "moduleInfo/params/avgDamage"
 msgstr "Сярэднія пашкоджанні"
@@ -6439,15 +6465,6 @@ msgstr "?empty?"
 
 msgid "tankCarousel/vehicleStates/notpresent"
 msgstr "Няма ў Гаражы"
-
-msgid "tankCarousel/vehicleStates/nyTank"
-msgstr "Навагодняя тэхніка"
-
-msgid "tankCarousel/vehicleStates/nyTankEmptyCount"
-msgstr "Вольных слотаў: %(count)d"
-
-msgid "tankCarousel/vehicleStates/nyTankSlotsFull"
-msgstr "Усе слоты занятыя"
 
 msgid "tankCarousel/vehicleStates/rentable"
 msgstr "Пракат машыны даступны"

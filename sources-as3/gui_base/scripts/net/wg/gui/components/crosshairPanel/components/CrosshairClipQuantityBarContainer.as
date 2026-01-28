@@ -1,6 +1,7 @@
 package net.wg.gui.components.crosshairPanel.components
 {
    import flash.utils.getDefinitionByName;
+   import net.wg.data.constants.generated.CROSSHAIR_CASSETTE_TYPES;
    
    public class CrosshairClipQuantityBarContainer extends ClipQuantityIndicator
    {
@@ -27,16 +28,22 @@ package net.wg.gui.components.crosshairPanel.components
       
       public static const TYPE_HEAVY_MB:String = "ClipQuantityBarHeavyMbUI";
       
+      public static const TYPE_AUTO_GUN:String = "ClipQuantityBarAutogunUI";
+      
       private static const CLIP_CAPACITY_VALIDATION:String = "clipCapacityInvalid";
       
       private static const CLIP_INFO_VALIDATION:String = "clipInfoInvalid";
+      
+      private static const CLIP_RELOADING_VALIDATION:String = "clipReloadingInvalid";
        
       
       public var isUseFrameAnimation:Boolean = true;
       
       private var _clipCapacity:Number = -1;
       
-      private var _multipleBarrel:Boolean = false;
+      private var _hasMultipleBarrel:Boolean = false;
+      
+      private var _hasAutogun:Boolean = false;
       
       private var _burst:Number = -1;
       
@@ -48,18 +55,27 @@ package net.wg.gui.components.crosshairPanel.components
       
       private var _isReloaded:Boolean = false;
       
+      private var _reloadingState:String = "";
+      
       public function CrosshairClipQuantityBarContainer()
       {
          super();
       }
       
-      override public function setClipsParam(param1:Number, param2:Number, param3:Boolean) : void
+      override public function setReloadingState(param1:String) : void
+      {
+         this._reloadingState = param1;
+         invalidate(CLIP_RELOADING_VALIDATION);
+      }
+      
+      override public function setClipsParam(param1:Number, param2:Number, param3:int) : void
       {
          if(this._clipCapacity != param1 || this._burst != param2)
          {
             this._clipCapacity = param1;
             this._burst = param2;
-            this._multipleBarrel = param3;
+            this._hasMultipleBarrel = CROSSHAIR_CASSETTE_TYPES.MULTIPLE_BARREL_TYPES.indexOf(param3) != -1;
+            this._hasAutogun = param3 == CROSSHAIR_CASSETTE_TYPES.AUTO_GUN_CASSETTE;
             invalidate(CLIP_CAPACITY_VALIDATION);
          }
       }
@@ -109,10 +125,14 @@ package net.wg.gui.components.crosshairPanel.components
                {
                   metric = Math.ceil(this._clipCapacity / this._burst);
                }
-               if(metric < this._multipleBarrel ? Boolean(HEAVY_MB_LIMIT) : Boolean(HEAVY_LIMIT))
+               if(this._hasAutogun)
                {
-                  viewType = !!this._multipleBarrel ? TYPE_HEAVY_MB : TYPE_HEAVY;
-                  heavyClipQuantityBarTotalFrames = !!this._multipleBarrel ? int(HEAVY_CLIP_QUANTITY_BAR_MB_TOTAL_FRAMES) : int(HEAVY_CLIP_QUANTITY_BAR_TOTAL_FRAMES);
+                  viewType = TYPE_AUTO_GUN;
+               }
+               else if(metric < this._hasMultipleBarrel ? Boolean(HEAVY_MB_LIMIT) : Boolean(HEAVY_LIMIT))
+               {
+                  viewType = !!this._hasMultipleBarrel ? TYPE_HEAVY_MB : TYPE_HEAVY;
+                  heavyClipQuantityBarTotalFrames = !!this._hasMultipleBarrel ? int(HEAVY_CLIP_QUANTITY_BAR_MB_TOTAL_FRAMES) : int(HEAVY_CLIP_QUANTITY_BAR_TOTAL_FRAMES);
                   if(this._burst > 1)
                   {
                      mode = CrosshairClipQuantityBar.MODE_QUEUE;
@@ -152,9 +172,16 @@ package net.wg.gui.components.crosshairPanel.components
                }
             }
          }
-         if(isInvalid(CLIP_INFO_VALIDATION) && this._currBar)
+         if(this._currBar)
          {
-            this._currBar.updateInfo(this._quantityInClip,this._clipState,this._isReloaded);
+            if(isInvalid(CLIP_INFO_VALIDATION))
+            {
+               this._currBar.updateInfo(this._quantityInClip,this._clipState,this._isReloaded);
+            }
+            if(isInvalid(CLIP_RELOADING_VALIDATION))
+            {
+               this._currBar.updateReloadingState(this._reloadingState);
+            }
          }
       }
    }

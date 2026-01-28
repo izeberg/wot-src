@@ -14,33 +14,17 @@ msgstr "Так!"
 msgid "page/closeBtn"
 msgstr "ЗАКРЫЦЬ"
 
-msgid "slide/map/description"
-msgstr "У рэжым дадалася новая мапа, выкананая ў пустыннай стылістыцы."
-
-msgid "slide/map/headerUpper"
-msgstr "НОВАЯ МАПА"
-
-msgid "slide/map/title"
-msgstr "Фата-маргана"
-
-msgid "slide/progression/bonus/description"
+msgid "slide/progression/description"
 msgstr ""
-"Як толькі «генерал» уступае ў бой, гэты гулец і хаўруснікі атрымліваюць "
-"прэмію да характарыстык тэхнікі."
-
-msgid "slide/progression/bonus/title"
-msgstr "Бонус генерала"
+"Акрамя рэгулярных дзеянняў у баі, з'яўляецца новы спосаб заробку досведу — "
+"выкананне індывідуальных задач у сваіх зонах. Заслужаны досвед ідзе "
+"і ў званне, і ў прагрэсію зоны."
 
 msgid "slide/progression/headerUpper"
-msgstr "АБНОЎЛЕНАЯ СІСТЭМА ПРАГРЭСІІ"
+msgstr "НОВАЯ СІСТЭМА ПРАГРЭСІІ"
 
-msgid "slide/progression/reserves/description"
-msgstr ""
-"З атрыманнем званняў «капітан» і «маёр» рэзервы павышаюць свой узровень, "
-"павышаючы сваю эфектыўнасць."
-
-msgid "slide/progression/reserves/title"
-msgstr "Узроўні рэзерваў"
+msgid "slide/progression/title"
+msgstr "Змена сістэмы званняў і новая прагрэсія зон"
 
 msgid "slide/randomReserves/description"
 msgstr "?empty?"
@@ -51,14 +35,27 @@ msgstr "?empty?"
 msgid "slide/randomReserves/title"
 msgstr "?empty?"
 
-msgid "slide/vehicles/description"
+msgid "slide/supplies/description"
 msgstr ""
-"Увайсці ў бой па-ранейшаму можна толькі на машынах %(vehiclesLevelFrom)s узроўню. Пры захопе любога пункта\n"
-"2-га квадрата (D, E, F) будзе адкрывацца тэхніка %(vehiclesLevelTo)s узроўню сінхронна для абедзвюх камандаў.\n"
-"Не забудзьцеся падрыхтаваць у Гаражы машыны і %(vehiclesLevelTo)s узроўню."
+"Будзьце эфектыўнымі ў баі: прычыняйце пашкоджанні, аказвайце падмогу "
+"і рабіце ўсе магчымыя крокі для перамогі. Кожнае карыснае дзеянне папоўніць "
+"агульнакамандную прагрэсію і адкрые аб'екты падтрымкі —баявыя адзінкі, якія "
+"дазваляюць пераламіць вынік бітвы."
 
-msgid "slide/vehicles/headerUpper"
-msgstr "ЗМЕНА ПРАВІЛАЎ БОЮ"
+msgid "slide/supplies/headerUpper"
+msgstr "НОВЫЯ ТАКТЫЧНЫЯ ПРЫЁМЫ"
 
-msgid "slide/vehicles/title"
-msgstr "Узроўні тэхнікі ў баі"
+msgid "slide/supplies/title"
+msgstr "Аб'екты падтрымкі каманды"
+
+msgid "slide/zones/description"
+msgstr ""
+"Каб найбольш эфектыўна рэалізаваць усе перавагі ў баі, змагайцеся "
+"на замацаваным за вамі кірунку. У выпадку неабходнасці у вас заўжды будзе "
+"магчымасць перадыслакавацца на іншы кірунак."
+
+msgid "slide/zones/headerUpper"
+msgstr "РАЗМЕРКАВАННЕ ПА ЗОНАХ"
+
+msgid "slide/zones/title"
+msgstr "Прывязка да кірунку"

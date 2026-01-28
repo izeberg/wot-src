@@ -2,9 +2,9 @@ from gui.Scaleform.framework.entities.BaseDAAPIComponent import BaseDAAPICompone
 
 class TeamBasesPanelMeta(BaseDAAPIComponent):
 
-    def as_addS(self, barId, sortWeight, colorType, title, points, captureTime, vehiclesCount):
+    def as_addS(self, barId, sortWeight, colorType, title, points, captureTime, vehiclesCount, hasSupply):
         if self._isDAAPIInited():
-            return self.flashObject.as_add(barId, sortWeight, colorType, title, points, captureTime, vehiclesCount)
+            return self.flashObject.as_add(barId, sortWeight, colorType, title, points, captureTime, vehiclesCount, hasSupply)
 
     def as_removeS(self, id):
         if self._isDAAPIInited():
@@ -14,9 +14,9 @@ class TeamBasesPanelMeta(BaseDAAPIComponent):
         if self._isDAAPIInited():
             return self.flashObject.as_stopCapture(id, points)
 
-    def as_updateCaptureDataS(self, id, points, rate, captureTime, vehiclesCount, captureString, colorType):
+    def as_updateCaptureDataS(self, id, points, rate, captureTime, vehiclesCount, captureString, hasSupply, colorType):
         if self._isDAAPIInited():
-            return self.flashObject.as_updateCaptureData(id, points, rate, captureTime, vehiclesCount, captureString, colorType)
+            return self.flashObject.as_updateCaptureData(id, points, rate, captureTime, vehiclesCount, captureString, hasSupply, colorType)
 
     def as_setCapturedS(self, id, title):
         if self._isDAAPIInited():

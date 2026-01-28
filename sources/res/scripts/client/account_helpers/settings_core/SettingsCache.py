@@ -67,8 +67,7 @@ class SettingsCache(ISettingsCache):
 
         def cbWrapper(*args):
             self.__waitForSync = False
-            if self.isSynced():
-                self.onSyncCompleted()
+            self.onSyncCompleted()
             callback(*args)
 
         self.__waitForSync = True

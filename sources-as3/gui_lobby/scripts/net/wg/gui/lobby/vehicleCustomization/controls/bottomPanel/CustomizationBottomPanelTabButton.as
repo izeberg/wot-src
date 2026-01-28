@@ -19,13 +19,21 @@ package net.wg.gui.lobby.vehicleCustomization.controls.bottomPanel
    public class CustomizationBottomPanelTabButton extends ResizableButton
    {
       
+      public static const BORDER_NONE:int = 0;
+      
+      public static const BORDER_INNER:int = 1;
+      
+      public static const BORDER_OUTER:int = 2;
+      
+      public static const BORDER_NEXT_GROUP:int = 3;
+      
       private static const ACTIVE_PLUS_ALPHA:Number = 0.8;
       
       private static const INACTIVE_PLUS_ALPHA:Number = 0.4;
       
       private static const HOVER_PLUS_ALPHA:Number = 0.7;
       
-      private static const INACTIVE_ICON_ALPHA:Number = 0.5;
+      private static const INACTIVE_ICON_ALPHA:Number = 0.6;
       
       private static const HOVER_ICON_ALPHA:int = 1;
       
@@ -37,11 +45,17 @@ package net.wg.gui.lobby.vehicleCustomization.controls.bottomPanel
       
       private static const ACTIVE_POSTFIX:String = "_active";
       
-      private static const LAST_PREFIX:String = "last_";
+      private static const ACCENT_POSTFIX:String = "_accent";
+      
+      private static const STATE_ACCENT_PREFIXES:Vector.<String> = Vector.<String>(["accent_"]);
       
       private static const COUNTER_Y_OFFSET:int = -7;
       
-      private static const OUT:String = "out";
+      private static const NEXT_GROUP_MARGIN_LEFT:int = 17;
+      
+      private static const LEFT_BORDER_NAME:String = "left";
+      
+      private static const RIGHT_BORDER_NAME:String = "right";
        
       
       public var states:MovieClip = null;
@@ -52,7 +66,13 @@ package net.wg.gui.lobby.vehicleCustomization.controls.bottomPanel
       
       public var iconActive:Image = null;
       
+      public var iconAccent:Image = null;
+      
       public var counter:CounterView = null;
+      
+      public var borders:MovieClip = null;
+      
+      public var groupHighlight:MovieClip = null;
       
       private var _iconSource:String = "";
       
@@ -60,7 +80,17 @@ package net.wg.gui.lobby.vehicleCustomization.controls.bottomPanel
       
       private var _iconSize:Point;
       
-      private var _last:Boolean = false;
+      private var _leftBorder:int = -1;
+      
+      private var _rightBorder:int = -1;
+      
+      private var _isGroupSelected:Boolean = false;
+      
+      private var _isPlusShowed:Boolean = false;
+      
+      private var _leftBorderMc:MovieClip = null;
+      
+      private var _rightBorderMc:MovieClip = null;
       
       public function CustomizationBottomPanelTabButton()
       {
@@ -71,9 +101,11 @@ package net.wg.gui.lobby.vehicleCustomization.controls.bottomPanel
       override protected function initialize() : void
       {
          super.initialize();
+         this._leftBorderMc = MovieClip(this.borders.getChildByName(LEFT_BORDER_NAME));
+         this._rightBorderMc = MovieClip(this.borders.getChildByName(RIGHT_BORDER_NAME));
          if(this.states != null)
          {
-            _labelHash = UIComponent.generateLabelHash(this.states);
+            _labelHash = UIComponent.generateLabelHash(this);
          }
       }
       
@@ -85,6 +117,9 @@ package net.wg.gui.lobby.vehicleCustomization.controls.bottomPanel
          soundEnabled = false;
          this.icon.cacheType = ImageCacheTypes.NOT_USE_CACHE;
          this.counter.y = COUNTER_Y_OFFSET;
+         this.borders.mouseEnabled = this.groupHighlight.mouseEnabled = false;
+         this.borders.mouseChildren = this.groupHighlight.mouseChildren = false;
+         this.groupHighlight.visible = false;
          focusable = false;
       }
       
@@ -107,6 +142,11 @@ package net.wg.gui.lobby.vehicleCustomization.controls.bottomPanel
                   return;
                }
             }
+            this.icon.visible = !selected && !this._isGroupSelected;
+            this.iconAccent.visible = !selected && this._isGroupSelected;
+            this.iconActive.visible = selected;
+            this.groupHighlight.visible = this._isGroupSelected && !this.selected;
+            this.updatePlus();
          }
          super.draw();
          if(isInvalid(ICON_SOURCE_INVALID))
@@ -115,6 +155,7 @@ package net.wg.gui.lobby.vehicleCustomization.controls.bottomPanel
             {
                this.icon.source = this._iconSource;
                this.iconActive.source = this._iconSource.replace(HOVER_POSTFIX,ACTIVE_POSTFIX);
+               this.iconAccent.source = this._iconSource.replace(HOVER_POSTFIX,ACCENT_POSTFIX);
             }
          }
       }
@@ -124,14 +165,20 @@ package net.wg.gui.lobby.vehicleCustomization.controls.bottomPanel
          this.icon.removeEventListener(Event.CHANGE,this.onIconChangeHandler);
          this.icon.dispose();
          this.iconActive.dispose();
+         this.iconAccent.dispose();
          this.counter.dispose();
+         this._leftBorderMc = null;
+         this._rightBorderMc = null;
          this.states = null;
          this.icon = null;
          this.iconActive = null;
+         this.iconAccent = null;
          this.plus = null;
          this._iconSource = null;
          this._iconSize = null;
          this.counter = null;
+         this.borders = null;
+         this.groupHighlight = null;
          super.onDispose();
       }
       
@@ -142,8 +189,8 @@ package net.wg.gui.lobby.vehicleCustomization.controls.bottomPanel
       
       override protected function updateScale(param1:Number, param2:Number) : void
       {
-         this.icon.scaleX = this.iconActive.scaleX = this.plus.scaleX = this.counter.scaleX = param1;
-         this.icon.scaleY = this.iconActive.scaleY = this.plus.scaleY = this.counter.scaleY = param2;
+         this.icon.scaleX = this.iconActive.scaleX = this.iconAccent.scaleX = this.plus.scaleX = this.counter.scaleX = param1;
+         this.icon.scaleY = this.iconActive.scaleY = this.iconAccent.scaleY = this.plus.scaleY = this.counter.scaleY = param2;
          super.updateScale(param1,param2);
       }
       
@@ -161,17 +208,8 @@ package net.wg.gui.lobby.vehicleCustomization.controls.bottomPanel
          else
          {
             this.plus.alpha = param1 == ComponentState.OVER ? Number(HOVER_PLUS_ALPHA) : Number(INACTIVE_PLUS_ALPHA);
-            this.icon.alpha = param1 == ComponentState.OVER ? Number(HOVER_ICON_ALPHA) : Number(INACTIVE_ICON_ALPHA);
+            this.icon.alpha = this.iconAccent.alpha = param1 == ComponentState.OVER ? Number(HOVER_ICON_ALPHA) : Number(INACTIVE_ICON_ALPHA);
          }
-      }
-      
-      override protected function getStatePrefixes() : Vector.<String>
-      {
-         if(this._last && !selected)
-         {
-            return Vector.<String>([LAST_PREFIX]);
-         }
-         return super.getStatePrefixes();
       }
       
       override protected function updateChildPositions() : void
@@ -194,8 +232,8 @@ package net.wg.gui.lobby.vehicleCustomization.controls.bottomPanel
          }
          if(_loc4_)
          {
-            this.icon.x = this.iconActive.x = _loc2_;
-            this.icon.y = this.iconActive.y = hitMc.height - this.icon.height >> 1;
+            this.icon.x = this.iconActive.x = this.iconAccent.x = _loc2_;
+            this.icon.y = this.iconActive.y = this.iconAccent.y = hitMc.height - this.icon.height >> 1;
             this.plus.x = this.icon.x + this.icon.width + (this._offsetFromIcon - this.plus.width >> 1);
             this.plus.y = this.icon.y + this.icon.height - (this.plus.height >> 1);
             if(_loc3_)
@@ -227,6 +265,15 @@ package net.wg.gui.lobby.vehicleCustomization.controls.bottomPanel
          }
       }
       
+      override protected function getStatePrefixes() : Vector.<String>
+      {
+         if(this._isGroupSelected && !selected)
+         {
+            return STATE_ACCENT_PREFIXES;
+         }
+         return super.getStatePrefixes();
+      }
+      
       public function setCounter(param1:int) : void
       {
          this.counter.visible = param1 > 0;
@@ -248,22 +295,33 @@ package net.wg.gui.lobby.vehicleCustomization.controls.bottomPanel
       
       public function showPlus(param1:Boolean) : void
       {
-         this.plus.visible = param1;
+         if(param1 != this._isPlusShowed)
+         {
+            this._isPlusShowed = param1;
+            this.updatePlus();
+            invalidateState();
+         }
+      }
+      
+      public function set isGroupSelected(param1:Boolean) : void
+      {
+         if(param1 != this._isGroupSelected)
+         {
+            this._isGroupSelected = param1;
+            this.setState(_state);
+         }
+      }
+      
+      override public function set data(param1:Object) : void
+      {
+         invlidateOriginSize();
+         super.data = param1;
       }
       
       override public function set label(param1:String) : void
       {
+         invlidateOriginSize();
          super.label = App.utils.toUpperOrLowerCase(param1,true);
-      }
-      
-      override public function set selected(param1:Boolean) : void
-      {
-         if(selected != param1)
-         {
-            this.icon.visible = !param1;
-            this.iconActive.visible = param1;
-            super.selected = param1;
-         }
       }
       
       public function set iconSource(param1:String) : void
@@ -290,15 +348,26 @@ package net.wg.gui.lobby.vehicleCustomization.controls.bottomPanel
          invalidate(LAYOUT_INVALID);
       }
       
-      public function get last() : Boolean
+      public function setBorderLeft(param1:int) : void
       {
-         return this._last;
+         this._leftBorder = param1;
+         this._leftBorderMc.gotoAndStop(this._leftBorder + 1);
       }
       
-      public function set last(param1:Boolean) : void
+      public function setBorderRight(param1:int) : void
       {
-         this._last = param1;
-         this.setState(OUT);
+         this._rightBorder = param1;
+         this._rightBorderMc.gotoAndStop(this._rightBorder + 1);
+      }
+      
+      public function get marginLeft() : int
+      {
+         return this._leftBorder == BORDER_NEXT_GROUP ? int(NEXT_GROUP_MARGIN_LEFT) : int(0);
+      }
+      
+      private function updatePlus() : void
+      {
+         this.plus.visible = this._isPlusShowed && this._isGroupSelected;
       }
       
       private function onIconChangeHandler(param1:Event) : void

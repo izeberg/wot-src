@@ -504,6 +504,10 @@ msgstr "За асаблівыя ўласцівасці машыны"
 msgid "details/calculations/directives"
 msgstr "Бонус ад эканамічнага настаўлення"
 
+msgid "details/calculations/distributedXP"
+msgstr ""
+"Надбаўка за размеркаваныя пашкоджанні і ачкі захопу/абароны ад аб'ектаў"
+
 msgid "details/calculations/event"
 msgstr "Бонус за баявыя задачы і падзеі"
 
@@ -543,6 +547,9 @@ msgstr "Штраф за прычыненне пашкоджанняў хаўру
 msgid "details/calculations/friendlyFireRankedXpPenalty"
 msgstr "Штраф за дэзарыентаванне або пашкоджанне хаўруснікаў"
 
+msgid "details/calculations/frontlineXP"
+msgstr "Надбаўка за выкананыя задачы"
+
 msgid "details/calculations/heavyTrucks"
 msgstr "Велікагрузны транспарт"
 
@@ -564,9 +571,6 @@ msgstr "Узнагарода за першую перамогу за дзень"
 
 msgid "details/calculations/multiplierInfo/vehicleSeparator"
 msgstr "• "
-
-msgid "details/calculations/newYear"
-msgstr "Навагодні бонус"
 
 msgid "details/calculations/noPenalty"
 msgstr "За адважны супраціў"
@@ -608,9 +612,6 @@ msgstr "За тактычную падрыхтоўку"
 
 msgid "details/calculations/total"
 msgstr "Агулам:"
-
-msgid "details/calculations/vehicleBranch"
-msgstr "Навагодні бонус"
 
 msgid "details/calculations/xpRecord"
 msgstr "Налічана за бой (%(color_tag_open)sрэкорд%(color_tag_close)s)"
@@ -1028,6 +1029,12 @@ msgstr "\tз выкарыстаннем звычак"
 msgid "team/stats/labels_damageDealtRatio"
 msgstr "\tпашкоджанні, прычыненыя камандзе супраціўніка"
 
+msgid "team/stats/labels_damageFromSupplies"
+msgstr "Атрымана пашкожанняў ад аб'ектаў падтрымкі"
+
+msgid "team/stats/labels_damageToSupplies"
+msgstr "Прычынена пашкоджанняў па аб'ектах падтрымкі"
+
 msgid "team/stats/labels_damagedKilled"
 msgstr "Пашкоджаныя/знішчаныя машыны супраціўніка"
 
@@ -1045,6 +1052,12 @@ msgstr "\tпа цэлях"
 
 msgid "team/stats/labels_directHitsReceived"
 msgstr "Атрыманыя траплянні"
+
+msgid "team/stats/labels_distributedSupplyBasePoints"
+msgstr "Размеркаваныя ачкі захопу/абароны ад хаўрусных аб'ектаў"
+
+msgid "team/stats/labels_distributedSupplyDamage"
+msgstr "Размеркаваныя пашкоджанні ад хаўрусных аб'ектаў падтрымкі"
 
 msgid "team/stats/labels_equipmentDamageAssisted"
 msgstr "\tпадчас дзеяння баявых рэзерваў"
@@ -1105,6 +1118,9 @@ msgstr "Агульны час дэзарыентавання праціўнік�
 
 msgid "team/stats/labels_stunNum"
 msgstr "Дэзарыентацый выклікана"
+
+msgid "team/stats/labels_suppliesDestroyed"
+msgstr "Знішчана аб'ектаў падтрымкі"
 
 msgid "team/stats/labels_teamHitsDamage"
 msgstr "Шкода хаўруснікам (знішчыў/пашкоджанняў)"

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.020350 -0.012179 -2.042470</min>
+		<max>1.020350 0.744916 2.146780</max>
+	</visibilityBox>
+	<parent>vehicles/russian/R00_Baloon/normal/lod1/Chassis</parent>
+	<extent>64.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/russian/R00_Baloon/normal/lod0/Chassis</nodefullVisual>
+</root>

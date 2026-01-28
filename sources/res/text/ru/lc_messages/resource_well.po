@@ -8,14 +8,6 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "awardView/description"
-msgstr ""
-"Отличное пополнение в рядах тяжёлых советских танков, логичное развитие "
-"концепции тяжелобронированной и прекрасно вооружённой машины прорыва, "
-"способной в одиночку удерживать высоты или продавливать направления, больно "
-"кусая снарядами 152-мм орудия и реализуя неукротимый потенциал "
-"инновационного газотурбинного двигателя."
-
 msgid "awardView/end"
 msgstr "СОБЫТИЕ ЗАВЕРШЕНО"
 
@@ -24,9 +16,6 @@ msgstr "В Ангаре"
 
 msgid "awardView/info"
 msgstr "Номер стиля"
-
-msgid "awardView/role"
-msgstr "Средний танк поддержки"
 
 msgid "awardView/toHangar"
 msgstr "Посмотреть в Ангаре"
@@ -302,11 +291,13 @@ msgstr "Машины без номера"
 
 msgid "tooltips/entryPoint/notStartedEvent/text"
 msgstr ""
-"Участвуйте в событии, вкладывайте ресурсы и получите %(vehicleName) "
-"%(uniqVehicleText)Количество машин ограничено."
+"Вкладывайте различные ресурсы и получите %(vehicleName) %(uniqVehicleText)\n"
+"Количество машин ограничено."
 
 msgid "tooltips/entryPoint/notStartedEvent/vehicleString/text"
-msgstr "с номерным 3D-стилем."
+msgstr ""
+"с номерным\n"
+"3D-стилем."
 
 msgid "tooltips/entryPoint/paused/text"
 msgstr "Событие временно недоступно"

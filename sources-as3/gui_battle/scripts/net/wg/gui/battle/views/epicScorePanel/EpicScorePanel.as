@@ -347,8 +347,6 @@ package net.wg.gui.battle.views.epicScorePanel
       
       public function updateStage(param1:int, param2:int) : void
       {
-         x = param1 >> 1;
-         y = 0;
          this.shadowStretch.width = param1;
          this.shadowStretch.x = 0;
       }

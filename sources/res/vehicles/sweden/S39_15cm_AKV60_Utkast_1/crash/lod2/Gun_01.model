@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodelessVisual>vehicles/sweden/S39_15cm_AKV60_Utkast_1/crash/lod2/Gun_01</nodelessVisual>
+	<parent>vehicles/sweden/S39_15cm_AKV60_Utkast_1/crash/lod3/Gun_01</parent>
+	<extent>96</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.175382 -0.989589 -3.052728</min>
+		<max>1.176075 1.390521 6.721637</max>
+	</visibilityBox>
+</root>

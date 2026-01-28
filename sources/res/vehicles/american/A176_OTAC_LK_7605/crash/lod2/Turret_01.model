@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A176_OTAC_LK_7605/crash/lod2/Turret_01</nodefullVisual>
+	<parent>vehicles/american/A176_OTAC_LK_7605/crash/lod3/Turret_01</parent>
+	<tank>true</tank>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.370775 -0.059831 -2.566217</min>
+		<max>1.360988 1.654355 1.392005</max>
+	</visibilityBox>
+</root>

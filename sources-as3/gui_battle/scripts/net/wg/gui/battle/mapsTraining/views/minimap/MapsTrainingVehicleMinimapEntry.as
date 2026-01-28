@@ -58,7 +58,7 @@ package net.wg.gui.battle.mapsTraining.views.minimap
          invalidate(VehicleMinimapEntry.INVALID_MT_STATE);
       }
       
-      override public function setDead(param1:Boolean) : void
+      override public function setDead(param1:String) : void
       {
          this._isDead = true;
          this._isDeadDirty = true;

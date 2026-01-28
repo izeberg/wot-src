@@ -131,15 +131,6 @@
 							</transform>
 						</node>
 					</node>
-					<node>
-						<identifier>Track_L1_BlendBone</identifier>
-						<transform>
-							<row0>1.000000 0.000000 0.000000</row0>
-							<row1>0.000000 1.000000 0.000000</row1>
-							<row2>0.000000 0.000000 -1.000000</row2>
-							<row3>1.320879 0.000000 -0.651791</row3>
-						</transform>
-					</node>
 				</node>
 				<node>
 					<identifier>Track_L2</identifier>
@@ -771,6 +762,15 @@
 						</transform>
 					</node>
 				</node>
+				<node>
+					<identifier>Tank_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.000000 -0.500000 0.000000</row3>
+					</transform>
+				</node>
 			</node>
 		</node>
 	</node>
@@ -796,32 +796,54 @@
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>track_mat_R_skinned</identifier>
 					<fx>shaders/std_effects/PBS_tank_uvtransform_skinned_ao.fx</fx>
 					<materialKind>0</materialKind>
+					<identifier>track_mat_R_skinned</identifier>
 					<collisionFlags>0</collisionFlags>
 					<property>
-						alphaReference
-						<Int>128</Int>
+						diffuseMap
+						<Texture>vehicles/intunion/tracks/T54D_track_AM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/intunion/tracks/T54D_track_GMM.dds</Texture>
+					</property>
+					<property>
+						g_detailPowerGloss
+						<Float>
+							0.35
+							<!--BW_String-->
+						</Float>
 					</property>
 					<property>
 						alphaTestEnable
 						<Bool>true</Bool>
 					</property>
 					<property>
-						diffuseMap
-						<Texture>vehicles/intunion/tracks/T54D_track_AM.dds</Texture>
+						g_maskBias
+						<Float>
+							0.18
+							<!--BW_String-->
+						</Float>
 					</property>
 					<property>
-						doubleSided
+						g_useDetailMetallic
 						<Bool>true</Bool>
 					</property>
 					<property>
 						g_detailUVTiling
-						<Vector4>3.507000 0.876750 0.000000 0.000000</Vector4>
+						<Vector4>3.507000 0.860000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
-						g_useDetailMetallic
+						g_detailPower
+						<Float>5</Float>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/intunion/tracks/T54D_track_ANM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
 						<Bool>true</Bool>
 					</property>
 					<property>
@@ -829,12 +851,15 @@
 						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
 					</property>
 					<property>
-						metallicGlossMap
-						<Texture>vehicles/intunion/tracks/T54D_track_GMM.dds</Texture>
+						alphaReference
+						<Int>128</Int>
 					</property>
 					<property>
-						normalMap
-						<Texture>vehicles/intunion/tracks/T54D_track_ANM.dds</Texture>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
 					</property>
 				</material>
 				<groupOrigin>1.320938 0.534904 0.022161</groupOrigin>
@@ -847,10 +872,9 @@
 		<node>Track_VD_L1_BlendBone</node>
 		<node>Track_L3_BlendBone</node>
 		<node>Track_L2_BlendBone</node>
-		<node>Track_L1_BlendBone</node>
+		<node>V_BlendBone</node>
 		<node>Track_L0_BlendBone</node>
 		<node>Track_VD_L0_BlendBone</node>
-		<node>V_BlendBone</node>
 		<node>Track_VT_L0_BlendBone</node>
 		<node>Track_VT_L1_BlendBone</node>
 		<node>Track_VT_L2_BlendBone</node>
@@ -863,32 +887,54 @@
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>track_mat_L_skinned</identifier>
 					<fx>shaders/std_effects/PBS_tank_uvtransform_skinned_ao.fx</fx>
 					<materialKind>0</materialKind>
+					<identifier>track_mat_L_skinned</identifier>
 					<collisionFlags>0</collisionFlags>
 					<property>
-						alphaReference
-						<Int>128</Int>
+						diffuseMap
+						<Texture>vehicles/intunion/tracks/T54D_track_AM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/intunion/tracks/T54D_track_GMM.dds</Texture>
+					</property>
+					<property>
+						g_detailPowerGloss
+						<Float>
+							0.35
+							<!--BW_String-->
+						</Float>
 					</property>
 					<property>
 						alphaTestEnable
 						<Bool>true</Bool>
 					</property>
 					<property>
-						diffuseMap
-						<Texture>vehicles/intunion/tracks/T54D_track_AM.dds</Texture>
+						g_maskBias
+						<Float>
+							0.18
+							<!--BW_String-->
+						</Float>
 					</property>
 					<property>
-						doubleSided
+						g_useDetailMetallic
 						<Bool>true</Bool>
 					</property>
 					<property>
 						g_detailUVTiling
-						<Vector4>3.507000 0.876750 0.000000 0.000000</Vector4>
+						<Vector4>3.507000 0.860000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
-						g_useDetailMetallic
+						g_detailPower
+						<Float>5</Float>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/intunion/tracks/T54D_track_ANM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
 						<Bool>true</Bool>
 					</property>
 					<property>
@@ -896,12 +942,15 @@
 						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
 					</property>
 					<property>
-						metallicGlossMap
-						<Texture>vehicles/intunion/tracks/T54D_track_GMM.dds</Texture>
+						alphaReference
+						<Int>128</Int>
 					</property>
 					<property>
-						normalMap
-						<Texture>vehicles/intunion/tracks/T54D_track_ANM.dds</Texture>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
 					</property>
 				</material>
 				<groupOrigin>-1.321345 0.534814 0.022156</groupOrigin>
@@ -910,7 +959,6 @@
 	</renderSet>
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
-		<node>Track_L1_BlendBone</node>
 		<node>V_BlendBone</node>
 		<node>Track_L2_BlendBone</node>
 		<node>Track_L3_BlendBone</node>
@@ -929,13 +977,21 @@
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>tank_chassis_01_skinned</identifier>
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
-					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
+					<identifier>tank_chassis_01_skinned</identifier>
+					<collisionFlags>0</collisionFlags>
 					<property>
-						g_detailUVTiling
-						<Vector4>3.506850 1.714000 0.000000 0.000000</Vector4>
+						diffuseMap
+						<Texture>vehicles/intunion/Un14_T54D/T54D_chassis_01_AM.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/intunion/Un14_T54D/T54D_chassis_01_GMM.dds</Texture>
 					</property>
 					<property>
 						g_detailPowerGloss
@@ -945,11 +1001,8 @@
 						</Float>
 					</property>
 					<property>
-						g_detailPowerAlbedo
-						<Float>
-							0.11
-							<!--BW_String-->
-						</Float>
+						alphaTestEnable
+						<Bool>true</Bool>
 					</property>
 					<property>
 						g_maskBias
@@ -959,44 +1012,43 @@
 						</Float>
 					</property>
 					<property>
-						g_detailPower
-						<Float>5</Float>
-					</property>
-					<property>
-						metallicDetailMap
-						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
-					</property>
-					<property>
 						g_useDetailMetallic
 						<Bool>true</Bool>
 					</property>
 					<property>
-						metallicGlossMap
-						<Texture>vehicles/intunion/Un14_T54D/T54D_chassis_01_GMM.dds</Texture>
+						g_detailUVTiling
+						<Vector4>3.507000 1.507000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_detailPower
+						<Float>5</Float>
 					</property>
 					<property>
 						normalMap
 						<Texture>vehicles/intunion/Un14_T54D/T54D_chassis_01_ANM.dds</Texture>
 					</property>
 					<property>
-						diffuseMap
-						<Texture>vehicles/intunion/Un14_T54D/T54D_chassis_01_AM.dds</Texture>
+						doubleSided
+						<Bool>true</Bool>
 					</property>
 					<property>
 						excludeMaskAndAOMap
 						<Texture>vehicles/intunion/Un14_T54D/T54D_chassis_01_AO.dds</Texture>
 					</property>
 					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
 					</property>
 					<property>
 						alphaReference
 						<Int>128</Int>
 					</property>
 					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
 					</property>
 				</material>
 				<groupOrigin>-1.285088 0.566016 0.061871</groupOrigin>
@@ -1024,13 +1076,21 @@
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>tank_chassis_01_skinned</identifier>
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
-					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
+					<identifier>tank_chassis_01_skinned</identifier>
+					<collisionFlags>0</collisionFlags>
 					<property>
-						g_detailUVTiling
-						<Vector4>3.506850 1.714000 0.000000 0.000000</Vector4>
+						diffuseMap
+						<Texture>vehicles/intunion/Un14_T54D/T54D_chassis_01_AM.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/intunion/Un14_T54D/T54D_chassis_01_GMM.dds</Texture>
 					</property>
 					<property>
 						g_detailPowerGloss
@@ -1040,11 +1100,8 @@
 						</Float>
 					</property>
 					<property>
-						g_detailPowerAlbedo
-						<Float>
-							0.11
-							<!--BW_String-->
-						</Float>
+						alphaTestEnable
+						<Bool>true</Bool>
 					</property>
 					<property>
 						g_maskBias
@@ -1054,44 +1111,43 @@
 						</Float>
 					</property>
 					<property>
-						g_detailPower
-						<Float>5</Float>
-					</property>
-					<property>
-						metallicDetailMap
-						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
-					</property>
-					<property>
 						g_useDetailMetallic
 						<Bool>true</Bool>
 					</property>
 					<property>
-						metallicGlossMap
-						<Texture>vehicles/intunion/Un14_T54D/T54D_chassis_01_GMM.dds</Texture>
+						g_detailUVTiling
+						<Vector4>3.507000 1.507000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_detailPower
+						<Float>5</Float>
 					</property>
 					<property>
 						normalMap
 						<Texture>vehicles/intunion/Un14_T54D/T54D_chassis_01_ANM.dds</Texture>
 					</property>
 					<property>
-						diffuseMap
-						<Texture>vehicles/intunion/Un14_T54D/T54D_chassis_01_AM.dds</Texture>
+						doubleSided
+						<Bool>true</Bool>
 					</property>
 					<property>
 						excludeMaskAndAOMap
 						<Texture>vehicles/intunion/Un14_T54D/T54D_chassis_01_AO.dds</Texture>
 					</property>
 					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
 					</property>
 					<property>
 						alphaReference
 						<Int>128</Int>
 					</property>
 					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
 					</property>
 				</material>
 				<groupOrigin>1.289085 0.566019 0.061970</groupOrigin>

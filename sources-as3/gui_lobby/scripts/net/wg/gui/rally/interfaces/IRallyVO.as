@@ -29,6 +29,10 @@ package net.wg.gui.rally.interfaces
       
       function set canInvite(param1:Boolean) : void;
       
+      function get canUnfreeze() : Boolean;
+      
+      function set canUnfreeze(param1:Boolean) : void;
+      
       function get statusValue() : Boolean;
       
       function set statusValue(param1:Boolean) : void;

@@ -90,6 +90,8 @@ class EPIC_NOTIFICATION(CONST_CONTAINER):
     GENERAL_APPEARED = 12
     HQ_BATTLE_START = 13
     RETREAT_SUCCESSFUL = 14
+    SUPPLY_UNLOCKED = 15
+    PROMOTION_RECEIVED = 16
 
 
 OVERTIME_DURATION_WARNINGS = [
@@ -122,6 +124,7 @@ class EpicGameNotificationsController(GameNotificationsController):
         self._notificationMap[GAME_MESSAGES_CONSTS.OBJECTIVE_UNDER_ATTACK_POSITIVE] = EPIC_NOTIFICATION.HQ_UNDER_ATTACK
         self._notificationMap[GAME_MESSAGES_CONSTS.OBJECTIVE_UNDER_ATTACK] = EPIC_NOTIFICATION.HQ_UNDER_ATTACK
         self._notificationMap[GAME_MESSAGES_CONSTS.GENERAL_RANK_REACHED] = EPIC_NOTIFICATION.GENERAL_APPEARED
+        self._notificationMap[GAME_MESSAGES_CONSTS.PROMOTION_RECEIVED] = EPIC_NOTIFICATION.PROMOTION_RECEIVED
         self._notificationMap[GAME_MESSAGES_CONSTS.HQ_BATTLE_STARTED] = EPIC_NOTIFICATION.HQ_BATTLE_START
         self._notificationMap[GAME_MESSAGES_CONSTS.HQ_BATTLE_STARTED_POSITIVE] = EPIC_NOTIFICATION.HQ_BATTLE_START
         self._notificationMap[GAME_MESSAGES_CONSTS.RETREAT_SUCCESSFUL] = EPIC_NOTIFICATION.RETREAT_SUCCESSFUL
@@ -129,6 +132,7 @@ class EpicGameNotificationsController(GameNotificationsController):
         self._notificationMap[GAME_MESSAGES_CONSTS.DEFEND_OBJECTIVE] = EPIC_NOTIFICATION.HQ_ACTIVE
         self._notificationMap[GAME_MESSAGES_CONSTS.CAPTURE_BASE] = EPIC_NOTIFICATION.BASE_ACTIVE
         self._notificationMap[GAME_MESSAGES_CONSTS.DEFEND_BASE] = EPIC_NOTIFICATION.BASE_ACTIVE
+        self._notificationMap[GAME_MESSAGES_CONSTS.SUPPLY_UNLOCKED] = EPIC_NOTIFICATION.SUPPLY_UNLOCKED
 
     def startControl(self):
         super(EpicGameNotificationsController, self).startControl()
@@ -184,18 +188,7 @@ class EpicGameNotificationsController(GameNotificationsController):
         notificationID = self._notificationMap[messageID]
         isAttacker = avatar_getter.getPlayerTeam() == EPIC_BATTLE_TEAM_ID.TEAM_ATTACKER
         if notificationID == EPIC_NOTIFICATION.HQ_DESTROYED:
-            SoundGroups.g_instance.playSound2D(EPIC_SOUND.EB_UI_CANNON_DESTRUCTION_EMERGENCE)
-            bfVoMessage = self.__selectSoundNotifObjDestroy(componentSystem, messageID, data['id'])
-            adType = EPIC_SOUND.BF_EB_HQ_DESTROYED_ATK_OR_DEF.get(messageID, None)
-            if adType is None:
-                return
-            if self.__soundNotificationOnlyOneLeft:
-                objectiveId = '_' + str(data['id'])
-                soundNotification = BF_EB_MAIN_OBJECTIVES_SOUND_NOTIFICATIONS.ONE_DESTROYED + objectiveId + adType
-                if soundNotification is not None:
-                    self.__playSound(soundNotification)
-            bfVoMessage += adType
-            self.__playSound(bfVoMessage)
+            self.__onMessageHQDestroyedPlaybackStarted(messageID, data, componentSystem)
             return
         else:
             bfVoMessage = EPIC_SOUND.BF_EB_VO_MESSAGES.get(messageID, None)
@@ -223,6 +216,9 @@ class EpicGameNotificationsController(GameNotificationsController):
                 bfVoMessage = bfVoMessage.get(isAttacker, None)
             elif notificationID == EPIC_NOTIFICATION.RANK_CHANGE:
                 bfVoMessage = bfVoMessage.get('show', None)
+            elif notificationID == EPIC_NOTIFICATION.SUPPLY_UNLOCKED:
+                SoundGroups.g_instance.playSound2D(EPIC_SOUND.EB_SUPPLY_UNLOCKED)
+                bfVoMessage = bfVoMessage.get(data['id'], None)
             if messageID == GAME_MESSAGES_CONSTS.OVERTIME:
                 if data['id'] in OVERTIME_DURATION_WARNINGS:
                     return
@@ -274,6 +270,22 @@ class EpicGameNotificationsController(GameNotificationsController):
             else:
                 LOG_ERROR('Expected DestructibleEntityComponent not present!')
         return bfVoMessage
+
+    def __onMessageHQDestroyedPlaybackStarted(self, messageID, data, componentSystem):
+        SoundGroups.g_instance.playSound2D(EPIC_SOUND.EB_UI_CANNON_DESTRUCTION_EMERGENCE)
+        bfVoMessage = self.__selectSoundNotifObjDestroy(componentSystem, messageID, data['id'])
+        adType = EPIC_SOUND.BF_EB_HQ_DESTROYED_ATK_OR_DEF.get(messageID, None)
+        if adType is None:
+            return
+        else:
+            if self.__soundNotificationOnlyOneLeft:
+                objectiveId = '_' + str(data['id'])
+                soundNotification = BF_EB_MAIN_OBJECTIVES_SOUND_NOTIFICATIONS.ONE_DESTROYED + objectiveId + adType
+                if soundNotification is not None:
+                    self.__playSound(soundNotification)
+            bfVoMessage += adType
+            self.__playSound(bfVoMessage)
+            return
 
     def __playSound(self, eventName):
         if not EPIC_SOUND.EPIC_MSG_SOUNDS_ENABLED or eventName is None:

@@ -4284,15 +4284,12 @@
 	<_120mm_APDS_L15A4>
 		<id>116</id>
 		<userString>#gb_vehicles:_120mm_APDS_L15A4</userString>
-		<icon>ap_cr</icon>
-		<price>1050</price>
-		<kind>ARMOR_PIERCING_CR</kind>
-		<caliber>
-			119.38
-			<!--BW_String-->
-		</caliber>
+		<icon>ap</icon>
+		<price>1060</price>
+		<kind>ARMOR_PIERCING</kind>
+		<caliber>120</caliber>
 		<isTracer>true</isTracer>
-		<effects>largeAPCR</effects>
+		<effects>largeArmorPiercing</effects>
 		<damage>
 			<armor>400</armor>
 			<devices>165</devices>
@@ -4301,20 +4298,21 @@
 	<_120mm_APDS_L15A4_DU>
 		<id>117</id>
 		<userString>#gb_vehicles:_120mm_APDS_L15A4_DU</userString>
-		<icon>ap_cr_premium</icon>
+		<icon>hc_premium</icon>
 		<price>4800</price>
 		<improved>true</improved>
-		<kind>ARMOR_PIERCING_CR</kind>
-		<caliber>
-			119.38
-			<!--BW_String-->
-		</caliber>
+		<kind>HOLLOW_CHARGE</kind>
+		<caliber>120</caliber>
 		<isTracer>true</isTracer>
-		<effects>largeAPCR</effects>
+		<effects>largeHollowCharge</effects>
 		<damage>
 			<armor>400</armor>
 			<devices>165</devices>
 		</damage>
+		<piercingPowerLossFactorByDistance>
+			0.05
+			<!--BW_String-->
+		</piercingPowerLossFactorByDistance>
 	</_120mm_APDS_L15A4_DU>
 	<_120mm_HESH_L31>
 		<id>118</id>
@@ -4323,10 +4321,7 @@
 		<price>950</price>
 		<kind>HIGH_EXPLOSIVE</kind>
 		<mechanics>MODERN</mechanics>
-		<caliber>
-			119.38
-			<!--BW_String-->
-		</caliber>
+		<caliber>120</caliber>
 		<explosionRadius>
 			2.42
 			<!--BW_String-->
@@ -4334,7 +4329,7 @@
 		<isTracer>true</isTracer>
 		<effects>largeHighExplosive</effects>
 		<damage>
-			<armor>515</armor>
+			<armor>530</armor>
 			<devices>165</devices>
 		</damage>
 		<armorSpalls>
@@ -4344,7 +4339,7 @@
 			</impactRadius>
 			<coneAngle>90</coneAngle>
 			<damage>
-				<armor>260</armor>
+				<armor>265</armor>
 				<devices>85</devices>
 			</damage>
 		</armorSpalls>

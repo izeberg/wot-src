@@ -31,6 +31,22 @@ msgstr ""
 msgid "domain/battleParams/name"
 msgstr "Параметры бою"
 
+msgid "domain/battleSeasonModifiers/description"
+msgstr ""
+"Змяняе пэўныя параметры ўсёй тэхнікі, якая бярэ удзел у баях Умацаванага "
+"раёна."
+
+msgid "domain/battleSeasonModifiers/name"
+msgstr "Мадыфікатар Умацаванага раёна"
+
+msgid "domain/battleSeasonModifiersGM/description"
+msgstr ""
+"Змяняе пэўныя параметры ўсёй тэхнікі, якая бярэ удзел у баях на Глабальнай "
+"карце."
+
+msgid "domain/battleSeasonModifiersGM/name"
+msgstr "Мадыфікатар Глабальнай карты"
+
 msgid "domain/comp7SeasonModifiers/description"
 msgstr ""
 "На ўсю тэхніку ў баях Націску дзейнічае асаблівы мадыфікатар, які змяняе яе "
@@ -185,6 +201,12 @@ msgstr "Мінімальны час перанабівання зоны рамо
 
 msgid "modifier/name/fakeModifierRepairSpeed"
 msgstr "Хуткасць аднаўлення ачкоў трываласці машыны."
+
+msgid "modifier/name/fakeSHVisionLightTank"
+msgstr "Радыус агляду (лёгкія гусенічныя танкі)"
+
+msgid "modifier/name/fakeSHVisionOtherTank"
+msgstr "Радыус агляду (сярэднія і цяжкія танкі, а таксама СТ-САУ)"
 
 msgid "modifier/name/fwMaxSpeed"
 msgstr "Максімальная хуткасць руху наперад"

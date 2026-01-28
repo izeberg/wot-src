@@ -1173,6 +1173,9 @@ msgstr "ад штрафу да роскіду пашкоджанай гарма�
 msgid "kpi/bonus/negative/vehicleGunShotFullDispersion"
 msgstr "ад памеру круга навядзення"
 
+msgid "kpi/bonus/negative/vehicleGunSpecDamage"
+msgstr "ад сярэдніх пашкоджанняў"
+
 msgid "kpi/bonus/negative/vehicleInvisibilityAfterShot"
 msgstr "ад скрытасці пасля стрэлу"
 
@@ -1240,7 +1243,7 @@ msgid "kpi/bonus/neutral/radiomanDurationPerLevel"
 msgstr "працягласць перадачы разведданых пасля знішчэння"
 
 msgid "kpi/bonus/positive/abilityCooldownBonus"
-msgstr "да часу перазарадкі мадыфікацыі"
+msgstr "да часу перазарадкі мадыфікацыі"
 
 msgid "kpi/bonus/positive/abilityDurationBonus"
 msgstr "да часу дзеяння мадыфікацыі"
@@ -1462,6 +1465,9 @@ msgstr "да штрафу да роскіду пашкоджанай гарма�
 msgid "kpi/bonus/positive/vehicleGunShotFullDispersion"
 msgstr "да памеру круга навядзення"
 
+msgid "kpi/bonus/positive/vehicleGunSpecDamage"
+msgstr "да сярэдніх пашкоджанняў"
+
 msgid "kpi/bonus/positive/vehicleInvisibilityAfterShot"
 msgstr "да скрытасці пасля стрэлу"
 
@@ -1524,9 +1530,6 @@ msgstr "c"
 
 msgid "kpi/bonus/specValueTypes/vehicleGunAndGunClipCooldown"
 msgstr " "
-
-msgid "kpi/bonus/specValueTypes/vehicleGunDamage"
-msgstr "%"
 
 msgid "kpi/bonus/ttc/negative/abilityCooldownBonus"
 msgstr "ад часу перазарадкі мадыфікацыі"
@@ -1664,6 +1667,9 @@ msgstr ""
 msgid "kpi/bonus/ttc/negative/vehicleGunShotFullDispersion"
 msgstr "ад памеру круга навядзення"
 
+msgid "kpi/bonus/ttc/negative/vehicleGunSpecDamage"
+msgstr "ад сярэдніх пашкоджанняў"
+
 msgid "kpi/bonus/ttc/negative/vehicleInvisibilityAfterShot"
 msgstr "ад скрытасці пасля стрэлу"
 
@@ -1704,7 +1710,7 @@ msgid "kpi/bonus/ttc/negative/woundedCrewEfficiency"
 msgstr "ад штрафу пры раненні танкіста з экіпажа, акрамя камандзіра"
 
 msgid "kpi/bonus/ttc/positive/abilityCooldownBonus"
-msgstr "да часу перазарадкі мадыфікацыі"
+msgstr "да часу перазарадкі мадыфікацыі"
 
 msgid "kpi/bonus/ttc/positive/abilityDurationBonus"
 msgstr "да часу дзеяння мадыфікацыі"
@@ -1865,6 +1871,9 @@ msgstr ""
 msgid "kpi/bonus/ttc/positive/vehicleGunShotFullDispersion"
 msgstr "да памеру круга навядзення"
 
+msgid "kpi/bonus/ttc/positive/vehicleGunSpecDamage"
+msgstr "да сярэдніх пашкоджанняў"
+
 msgid "kpi/bonus/ttc/positive/vehicleInvisibilityAfterShot"
 msgstr "да скрытасці пасля стрэлу"
 
@@ -1959,12 +1968,6 @@ msgstr "км/гадз"
 msgid "kpi/bonus/valueTypes/vehicleGunAndGunClipCooldownSpec"
 msgstr " "
 
-msgid "kpi/bonus/valueTypes/vehicleGunDamage"
-msgstr " "
-
-msgid "kpi/bonus/valueTypes/vehicleGunDamageSpec"
-msgstr "%"
-
 msgid "kpi/bonus/valueTypes/vehicleGunReloadPenalty"
 msgstr "c"
 
@@ -2013,17 +2016,20 @@ msgstr "Бонус ад атрыманых пашкоджанняў шасі п�
 msgid "kpi/title/vehicleGunAndGunClipCooldown"
 msgstr "Бонус да перанабівання (поўнае/паміж)"
 
-msgid "kpi/title/vehicleGunDamage"
-msgstr "Бонус да сярэдніх пашкоджання (пры актывацыі / прабіцці)"
-
 msgid "kpi/title/vehicleGunKillReloadTime"
 msgstr "Бонус да перанабівання пры знішчэнні праціўніка"
 
 msgid "kpi/title/vehicleGunReloadPenalty"
 msgstr "Штраф да часу набівання (с)"
 
+msgid "kpi/title/vehicleGunReloadTime"
+msgstr "Бонус да хуткасці перанабівання"
+
 msgid "kpi/title/vehicleGunReloadTimeReceiveShot"
 msgstr "Бонус да перанабівання пры траплянні па вас"
+
+msgid "kpi/title/vehicleGunSpecDamage"
+msgstr "Бонус да сярэдніх пашкоджанняў (пры актывацыі / прабіцці)"
 
 msgid "kpi/title/vehicleRamDamageResistance"
 msgstr "Бонус ад атрыманых пашкоджанняў пры таране"

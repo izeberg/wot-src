@@ -1,11 +1,10 @@
 package net.wg.infrastructure.base.meta.impl
 {
-   import net.wg.data.VO.TankCarouselFilterSelectedVO;
    import net.wg.data.constants.Errors;
    import net.wg.gui.lobby.vehicleCustomization.data.BottomPanelVO;
    import net.wg.gui.lobby.vehicleCustomization.data.CustomizationBottomPanelInitVO;
    import net.wg.gui.lobby.vehicleCustomization.data.CustomizationBottomPanelNotificationVO;
-   import net.wg.gui.lobby.vehicleCustomization.data.CustomizationSwitcherVO;
+   import net.wg.gui.lobby.vehicleCustomization.data.CustomizationCarouselFilterSelectedVO;
    import net.wg.gui.lobby.vehicleCustomization.data.CustomizationTabNavigatorVO;
    import net.wg.gui.lobby.vehicleCustomization.data.customizationPanel.CustomizationCarouselDataVO;
    import net.wg.gui.lobby.vehicleCustomization.data.customizationPanel.CustomizationCarouselFilterVO;
@@ -30,15 +29,11 @@ package net.wg.infrastructure.base.meta.impl
       
       public var onSelectHotFilter:Function;
       
-      public var switchMode:Function;
-      
       public var returnToStyledMode:Function;
       
       public var onItemIsNewAnimationShown:Function;
       
       private var _customizationBottomPanelInitVO:CustomizationBottomPanelInitVO;
-      
-      private var _customizationSwitcherVO:CustomizationSwitcherVO;
       
       private var _customizationTabNavigatorVO:CustomizationTabNavigatorVO;
       
@@ -50,7 +45,7 @@ package net.wg.infrastructure.base.meta.impl
       
       private var _bottomPanelVO:BottomPanelVO;
       
-      private var _tankCarouselFilterSelectedVO:TankCarouselFilterSelectedVO;
+      private var _customizationCarouselFilterSelectedVO:CustomizationCarouselFilterSelectedVO;
       
       private var _customizationBottomPanelNotificationVO:CustomizationBottomPanelNotificationVO;
       
@@ -65,11 +60,6 @@ package net.wg.infrastructure.base.meta.impl
          {
             this._customizationBottomPanelInitVO.dispose();
             this._customizationBottomPanelInitVO = null;
-         }
-         if(this._customizationSwitcherVO)
-         {
-            this._customizationSwitcherVO.dispose();
-            this._customizationSwitcherVO = null;
          }
          if(this._customizationTabNavigatorVO)
          {
@@ -96,10 +86,10 @@ package net.wg.infrastructure.base.meta.impl
             this._bottomPanelVO.dispose();
             this._bottomPanelVO = null;
          }
-         if(this._tankCarouselFilterSelectedVO)
+         if(this._customizationCarouselFilterSelectedVO)
          {
-            this._tankCarouselFilterSelectedVO.dispose();
-            this._tankCarouselFilterSelectedVO = null;
+            this._customizationCarouselFilterSelectedVO.dispose();
+            this._customizationCarouselFilterSelectedVO = null;
          }
          if(this._customizationBottomPanelNotificationVO)
          {
@@ -151,12 +141,6 @@ package net.wg.infrastructure.base.meta.impl
          this.onSelectHotFilter(param1,param2);
       }
       
-      public function switchModeS(param1:int) : void
-      {
-         App.utils.asserter.assertNotNull(this.switchMode,"switchMode" + Errors.CANT_NULL);
-         this.switchMode(param1);
-      }
-      
       public function returnToStyledModeS() : void
       {
          App.utils.asserter.assertNotNull(this.returnToStyledMode,"returnToStyledMode" + Errors.CANT_NULL);
@@ -174,17 +158,6 @@ package net.wg.infrastructure.base.meta.impl
          var _loc2_:CustomizationBottomPanelInitVO = this._customizationBottomPanelInitVO;
          this._customizationBottomPanelInitVO = new CustomizationBottomPanelInitVO(param1);
          this.setBottomPanelInitData(this._customizationBottomPanelInitVO);
-         if(_loc2_)
-         {
-            _loc2_.dispose();
-         }
-      }
-      
-      public final function as_setSwitchersData(param1:Object) : void
-      {
-         var _loc2_:CustomizationSwitcherVO = this._customizationSwitcherVO;
-         this._customizationSwitcherVO = new CustomizationSwitcherVO(param1);
-         this.setSwitchersData(this._customizationSwitcherVO);
          if(_loc2_)
          {
             _loc2_.dispose();
@@ -248,9 +221,9 @@ package net.wg.infrastructure.base.meta.impl
       
       public final function as_setCarouselFiltersData(param1:Object) : void
       {
-         var _loc2_:TankCarouselFilterSelectedVO = this._tankCarouselFilterSelectedVO;
-         this._tankCarouselFilterSelectedVO = new TankCarouselFilterSelectedVO(param1);
-         this.setCarouselFiltersData(this._tankCarouselFilterSelectedVO);
+         var _loc2_:CustomizationCarouselFilterSelectedVO = this._customizationCarouselFilterSelectedVO;
+         this._customizationCarouselFilterSelectedVO = new CustomizationCarouselFilterSelectedVO(param1);
+         this.setCarouselFiltersData(this._customizationCarouselFilterSelectedVO);
          if(_loc2_)
          {
             _loc2_.dispose();
@@ -271,13 +244,6 @@ package net.wg.infrastructure.base.meta.impl
       protected function setBottomPanelInitData(param1:CustomizationBottomPanelInitVO) : void
       {
          var _loc2_:String = "as_setBottomPanelInitData" + Errors.ABSTRACT_INVOKE;
-         DebugUtils.LOG_ERROR(_loc2_);
-         throw new AbstractException(_loc2_);
-      }
-      
-      protected function setSwitchersData(param1:CustomizationSwitcherVO) : void
-      {
-         var _loc2_:String = "as_setSwitchersData" + Errors.ABSTRACT_INVOKE;
          DebugUtils.LOG_ERROR(_loc2_);
          throw new AbstractException(_loc2_);
       }
@@ -317,7 +283,7 @@ package net.wg.infrastructure.base.meta.impl
          throw new AbstractException(_loc2_);
       }
       
-      protected function setCarouselFiltersData(param1:TankCarouselFilterSelectedVO) : void
+      protected function setCarouselFiltersData(param1:CustomizationCarouselFilterSelectedVO) : void
       {
          var _loc2_:String = "as_setCarouselFiltersData" + Errors.ABSTRACT_INVOKE;
          DebugUtils.LOG_ERROR(_loc2_);

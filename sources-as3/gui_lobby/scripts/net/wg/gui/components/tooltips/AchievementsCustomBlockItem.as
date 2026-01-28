@@ -68,9 +68,14 @@ package net.wg.gui.components.tooltips
                this.vehicleIco.source = this._ico;
                this.vehicleIco.sourceAlt = "../maps/icons/vehicle/small/noImage.png";
             }
-            if(this._level)
+            if(!isNaN(this._level) && this._level > 0)
             {
+               this.levelMc.visible = true;
                this.levelMc.gotoAndStop(this._level);
+            }
+            else
+            {
+               this.levelMc.visible = false;
             }
             this.dataDirty = false;
          }

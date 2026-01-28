@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.714515 -0.000001 -3.080308</min>
+		<max>1.714515 0.881746 3.195560</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/russian/R239_ST_Molot/normal/lod4/Chassis</nodefullVisual>
+</root>

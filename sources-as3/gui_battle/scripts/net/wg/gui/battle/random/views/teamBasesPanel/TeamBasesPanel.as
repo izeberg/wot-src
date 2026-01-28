@@ -76,15 +76,15 @@ package net.wg.gui.battle.random.views.teamBasesPanel
          super.onDispose();
       }
       
-      public function as_add(param1:Number, param2:Number, param3:String, param4:String, param5:Number, param6:String, param7:String) : void
+      public function as_add(param1:Number, param2:Number, param3:String, param4:String, param5:Number, param6:String, param7:int, param8:Boolean) : void
       {
-         var _loc8_:TeamCaptureBar = null;
          var _loc9_:TeamCaptureBar = null;
+         var _loc10_:TeamCaptureBar = null;
          if(this._fadeOutTweens[param1])
          {
             this.removeFadeOutTween(param1);
-            _loc9_ = this.getCaptureBarById(param1);
-            _loc9_.alpha = FULL_ALPHA;
+            _loc10_ = this.getCaptureBarById(param1);
+            _loc10_.alpha = FULL_ALPHA;
             return;
          }
          if(this._capturedBarsIndexesById && this._capturedBarsIndexesById[param1])
@@ -95,15 +95,15 @@ package net.wg.gui.battle.random.views.teamBasesPanel
          {
             this.createBar();
          }
-         _loc8_ = this._cachedBars.pop();
-         addChild(_loc8_);
-         _loc8_.setData(param1,param2,param3,param4,param5,param6,param7);
-         this._captureBars.push(_loc8_);
+         _loc9_ = this._cachedBars.pop();
+         addChild(_loc9_);
+         _loc9_.setData(param1,param2,param3,param4,param5,param6,param7,param8);
+         this._captureBars.push(_loc9_);
          this._captureBars.sort(sortBarsFn);
          this.updateBuildIndexByIDCache();
          this.updatePositions();
-         _loc8_.visible = true;
-         _loc8_.alpha = 1;
+         _loc9_.visible = true;
+         _loc9_.alpha = 1;
       }
       
       public function as_clear() : void
@@ -153,11 +153,11 @@ package net.wg.gui.battle.random.views.teamBasesPanel
          }
       }
       
-      public function as_updateCaptureData(param1:Number, param2:Number, param3:Number, param4:String, param5:String, param6:String, param7:String) : void
+      public function as_updateCaptureData(param1:Number, param2:Number, param3:Number, param4:String, param5:int, param6:String, param7:Boolean, param8:String) : void
       {
          if(!this._dataIsCleared)
          {
-            this.getCaptureBarById(param1).updateCaptureData(param2,true,false,param3,param4,param5,param6,param7);
+            this.getCaptureBarById(param1).updateCaptureData(param2,true,false,param3,param4,param5,param6,param8,param7);
          }
       }
       

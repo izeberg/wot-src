@@ -1174,6 +1174,9 @@ msgstr "от штрафа к разбросу повреждённого ору�
 msgid "kpi/bonus/negative/vehicleGunShotFullDispersion"
 msgstr "от размера круга сведения"
 
+msgid "kpi/bonus/negative/vehicleGunSpecDamage"
+msgstr "от среднего урона"
+
 msgid "kpi/bonus/negative/vehicleInvisibilityAfterShot"
 msgstr "от незаметности после выстрела"
 
@@ -1241,7 +1244,7 @@ msgid "kpi/bonus/neutral/radiomanDurationPerLevel"
 msgstr "продолжительность передачи разведданных после уничтожения"
 
 msgid "kpi/bonus/positive/abilityCooldownBonus"
-msgstr "ко времени перезарядки модификации"
+msgstr "ко времени перезарядки модификации"
 
 msgid "kpi/bonus/positive/abilityDurationBonus"
 msgstr "ко времени действия модификации"
@@ -1463,6 +1466,9 @@ msgstr "к штрафу к разбросу повреждённого оруд�
 msgid "kpi/bonus/positive/vehicleGunShotFullDispersion"
 msgstr "к размеру круга сведения"
 
+msgid "kpi/bonus/positive/vehicleGunSpecDamage"
+msgstr "к среднему урону"
+
 msgid "kpi/bonus/positive/vehicleInvisibilityAfterShot"
 msgstr "к незаметности после выстрела"
 
@@ -1525,9 +1531,6 @@ msgstr "c"
 
 msgid "kpi/bonus/specValueTypes/vehicleGunAndGunClipCooldown"
 msgstr " "
-
-msgid "kpi/bonus/specValueTypes/vehicleGunDamage"
-msgstr "%"
 
 msgid "kpi/bonus/ttc/negative/abilityCooldownBonus"
 msgstr "от времени перезарядки модификации"
@@ -1665,6 +1668,9 @@ msgstr ""
 msgid "kpi/bonus/ttc/negative/vehicleGunShotFullDispersion"
 msgstr "от размера круга сведения"
 
+msgid "kpi/bonus/ttc/negative/vehicleGunSpecDamage"
+msgstr "от среднего урона"
+
 msgid "kpi/bonus/ttc/negative/vehicleInvisibilityAfterShot"
 msgstr "от незаметности после выстрела"
 
@@ -1705,7 +1711,7 @@ msgid "kpi/bonus/ttc/negative/woundedCrewEfficiency"
 msgstr "от штрафа при ранении члена экипажа, кроме командира"
 
 msgid "kpi/bonus/ttc/positive/abilityCooldownBonus"
-msgstr "ко времени перезарядки модификации"
+msgstr "ко времени перезарядки модификации"
 
 msgid "kpi/bonus/ttc/positive/abilityDurationBonus"
 msgstr "ко времени действия модификации"
@@ -1866,6 +1872,9 @@ msgstr ""
 msgid "kpi/bonus/ttc/positive/vehicleGunShotFullDispersion"
 msgstr "к размеру круга сведения"
 
+msgid "kpi/bonus/ttc/positive/vehicleGunSpecDamage"
+msgstr "к среднему урону"
+
 msgid "kpi/bonus/ttc/positive/vehicleInvisibilityAfterShot"
 msgstr "к незаметности после выстрела"
 
@@ -1960,12 +1969,6 @@ msgstr "км/ч"
 msgid "kpi/bonus/valueTypes/vehicleGunAndGunClipCooldownSpec"
 msgstr " "
 
-msgid "kpi/bonus/valueTypes/vehicleGunDamage"
-msgstr " "
-
-msgid "kpi/bonus/valueTypes/vehicleGunDamageSpec"
-msgstr "%"
-
 msgid "kpi/bonus/valueTypes/vehicleGunReloadPenalty"
 msgstr "с"
 
@@ -2014,17 +2017,20 @@ msgstr "Бонус от полученного урона ходовой при 
 msgid "kpi/title/vehicleGunAndGunClipCooldown"
 msgstr "Бонус к перезарядке (полная/между)"
 
-msgid "kpi/title/vehicleGunDamage"
-msgstr "Бонус к среднему урону (при активации / пробитии)"
-
 msgid "kpi/title/vehicleGunKillReloadTime"
 msgstr "Бонус к перезарядке при уничтожении противника"
 
 msgid "kpi/title/vehicleGunReloadPenalty"
 msgstr "Штраф ко времени заряжания (с)"
 
+msgid "kpi/title/vehicleGunReloadTime"
+msgstr "Бонус к скорости перезарядки"
+
 msgid "kpi/title/vehicleGunReloadTimeReceiveShot"
 msgstr "Бонус к перезарядке при попадании по вам"
+
+msgid "kpi/title/vehicleGunSpecDamage"
+msgstr "Бонус к среднему урону (при активации / пробитии)"
 
 msgid "kpi/title/vehicleRamDamageResistance"
 msgstr "Бонус от полученного урона при таране"

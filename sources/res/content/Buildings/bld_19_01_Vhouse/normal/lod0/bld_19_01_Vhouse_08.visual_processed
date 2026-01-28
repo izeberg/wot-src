@@ -13,9 +13,9 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<stream>uv2</stream>
-			<primitive>indices</primitive>
+			<vertices>s_0_wallShape.vertices</vertices>
+			<stream>s_0_wallShape.uv2</stream>
+			<primitive>s_0_wallShape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -94,8 +94,18 @@
 				</material>
 				<groupOrigin>0.140821 4.574004 -0.643516</groupOrigin>
 			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>s_1_roofShape.vertices</vertices>
+			<stream>s_1_roofShape.uv2</stream>
+			<stream>s_1_roofShape.uv3</stream>
+			<primitive>s_1_roofShape.indices</primitive>
 			<primitiveGroup>
-				1
+				0
 				<material>
 					<identifier>s_nd_1_roof</identifier>
 					<collisionFlags>255</collisionFlags>
@@ -162,10 +172,18 @@
 						<Texture>content/Buildings/00_Tiles/dds/Roof_26_Tile_01_1024_GBMT.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.135134 8.459061 -0.235299</groupOrigin>
+				<groupOrigin>-0.135134 8.459061 -0.235298</groupOrigin>
 			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>s_2_detailsShape.vertices</vertices>
+			<primitive>s_2_detailsShape.indices</primitive>
 			<primitiveGroup>
-				2
+				0
 				<material>
 					<identifier>s_nd_2_details</identifier>
 					<collisionFlags>255</collisionFlags>
@@ -203,7 +221,7 @@
 				<groupOrigin>-0.006106 5.850823 -1.520202</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				3
+				1
 				<material>
 					<identifier>s_nd_3_railing</identifier>
 					<collisionFlags>255</collisionFlags>
@@ -242,10 +260,10 @@
 						<Texture>content/Buildings/bld_19_02_Monastery/bld_19_01_Vhouse_01-06_railing_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-7.284741 3.376333 1.581255</groupOrigin>
+				<groupOrigin>-7.284741 3.376333 1.581256</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				4
+				2
 				<material>
 					<identifier>s_nd_4_wood</identifier>
 					<collisionFlags>255</collisionFlags>
@@ -285,6 +303,6 @@
 		<max>7.873047 12.167452 5.393432</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>1203034</geometrySize>
+	<geometrySize>1125282</geometrySize>
 	<minUVDensity>0.002324</minUVDensity>
 </root>

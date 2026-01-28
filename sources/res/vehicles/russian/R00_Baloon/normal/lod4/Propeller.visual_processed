@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>Root</identifier>
+			<transform>
+				<row0>-0.473478 0.000000 -0.880806</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.880806 0.000000 -0.473478</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>engine_L</identifier>
+				<transform>
+					<row0>-0.473478 0.000000 0.880806</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>-0.880806 0.000000 -0.473478</row2>
+					<row3>4.404601 -23.788399 -4.231715</row3>
+				</transform>
+				<node>
+					<identifier>engine_L_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>5.812800 23.788399 1.875973</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>engine_R</identifier>
+				<transform>
+					<row0>0.236739 0.866025 -0.440403</row0>
+					<row1>0.410044 -0.500000 -0.762800</row1>
+					<row2>-0.880806 0.000000 -0.473478</row2>
+					<row3>-1.100055 -23.788399 6.008531</row3>
+				</transform>
+				<node>
+					<identifier>engine_R_BlendBone</identifier>
+					<transform>
+						<row0>-0.500000 -0.866025 0.000000</row0>
+						<row1>0.866025 -0.500000 0.000000</row1>
+						<row2>-0.000000 -0.000000 -1.000000</row2>
+						<row3>23.507956 -6.859820 1.875973</row3>
+					</transform>
+				</node>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>engine_R_BlendBone</node>
+		<node>engine_L_BlendBone</node>
+		<geometry>
+			<vertices>propeller_Shape.vertices</vertices>
+			<primitive>propeller_Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_proxy_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<materialKind>0</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>vehicles/russian/R00_Baloon/Baloon_proxy_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/russian/R00_Baloon/Baloon_proxy_AO.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/russian/R00_Baloon/Baloon_proxy_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/russian/R00_Baloon/Baloon_proxy_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.785466 -23.788908 1.852402</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>-8.923584 -26.491606 -2.013721</min>
+		<max>7.352642 -21.086195 -1.691085</max>
+	</boundingBox>
+	<geometrySize>2776</geometrySize>
+	<minUVDensity>10000.000000</minUVDensity>
+</root>

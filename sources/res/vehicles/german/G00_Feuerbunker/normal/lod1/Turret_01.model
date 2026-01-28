@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G00_Feuerbunker/normal/lod1/Turret_01</nodefullVisual>
+	<parent>vehicles/german/G00_Feuerbunker/normal/lod2/Turret_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.455957 -0.076652 -1.455894</min>
+		<max>1.455969 1.266330 1.456031</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

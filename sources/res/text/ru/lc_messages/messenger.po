@@ -1260,15 +1260,6 @@ msgstr "Списано личных очков славы"
 msgid "platformCurrencyMsg/debited/freeXP"
 msgstr "Списано свободного опыта"
 
-msgid "platformCurrencyMsg/debited/nyractiv"
-msgstr "Предметы для активности"
-
-msgid "platformCurrencyMsg/debited/nyrfood"
-msgstr "Продукты питания"
-
-msgid "platformCurrencyMsg/debited/nyrfun"
-msgstr "Предметы комфорта"
-
 msgid "platformCurrencyMsg/debited/sacoin"
 msgstr "Списано жетонов за выслугу лет"
 
@@ -1286,15 +1277,6 @@ msgstr "Начислено личных очков славы"
 
 msgid "platformCurrencyMsg/received/freeXP"
 msgstr "Получено свободного опыта"
-
-msgid "platformCurrencyMsg/received/nyractiv"
-msgstr "Предметы для активности"
-
-msgid "platformCurrencyMsg/received/nyrfood"
-msgstr "Продукты питания"
-
-msgid "platformCurrencyMsg/received/nyrfun"
-msgstr "Предметы комфорта"
 
 msgid "platformCurrencyMsg/received/sacoin"
 msgstr "Добавлено жетонов за выслугу лет"
@@ -1793,10 +1775,19 @@ msgstr ""
 msgid "serviceChannelMessages/battlePass/newDeviceToken"
 msgstr "Штатное оборудование на выбор"
 
-msgid "serviceChannelMessages/battlePass/reachedCap/header"
+msgid "serviceChannelMessages/battlePass/reachedCapFactor/header"
+msgstr "Достигнут лимит очков Боевого пропуска"
+
+msgid "serviceChannelMessages/battlePass/reachedCapFactor/text"
+msgstr ""
+"На %(vehNameHighlight)s заработано максимально доступное количество очков.\n"
+"Получено очков в награду: %(bonusPoints)s\n"
+"Лимит очков и награда обновились. Продолжайте зарабатывать очки на %(vehName)s."
+
+msgid "serviceChannelMessages/battlePass/reachedCapWeek/header"
 msgstr "Достигнут еженедельный лимит очков Боевого пропуска"
 
-msgid "serviceChannelMessages/battlePass/reachedCap/text"
+msgid "serviceChannelMessages/battlePass/reachedCapWeek/text"
 msgstr ""
 "На %(vehNameHighlight)s заработано максимальное количество очков, доступное в неделю.\n"
 "Получено очков в награду: %(bonusPoints)s\n"
@@ -1824,7 +1815,7 @@ msgstr "Получена награда за пройденные этапы з�
 
 msgid "serviceChannelMessages/battlePassReward/battle/chapterFinal/text"
 msgstr ""
-"Вы завершили главу «%(chapter)s»!\n"
+"Вы завершили главу %(chapter)s.\n"
 "Получена награда:"
 
 msgid ""
@@ -1838,7 +1829,7 @@ msgstr "Продолжайте играть и зарабатывать очки
 
 msgid "serviceChannelMessages/battlePassReward/battle/final/text"
 msgstr ""
-"Вы завершили все главы Боевого пропуска %(season)s сезона!\n"
+"Вы завершили все главы Боевого пропуска %(season)s сезона.\n"
 "Получена награда:"
 
 msgid "serviceChannelMessages/battlePassReward/battle/newLevel/text"

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G193_Aufgabe_57/crash/lod2/Gun_01</nodefullVisual>
+	<parent>vehicles/german/G193_Aufgabe_57/crash/lod3/Gun_01</parent>
+	<tank>true</tank>
+	<extent>
+		96.0
+		<!--BW_String-->
+	</extent>
+	<visibilityBox>
+		<min>-0.504682 -0.335040 -1.612954</min>
+		<max>0.499727 0.271368 6.505794</max>
+	</visibilityBox>
+</root>

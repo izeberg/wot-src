@@ -20,6 +20,24 @@ msgstr "Должность"
 msgid "ClanListWindow/table/weekMining"
 msgstr "За неделю"
 
+msgid "battleModifiers/body"
+msgstr ""
+"Изменяет некоторые параметры всей техники, участвующей в сражениях Укрепрайона. Работает в следующих режимах: %(battleModifiersQueue)s.\n"
+"\n"
+"Чтобы увидеть актуальные значения, вступите в соответствующий отряд или создайте его."
+
+msgid "battleModifiers/fortBattle"
+msgstr "Наступления"
+
+msgid "battleModifiers/sortie"
+msgstr "Вылазки %(level)s"
+
+msgid "battleModifiers/title"
+msgstr "Модификатор Укрепрайона"
+
+msgid "battleModifiersGM/title"
+msgstr "Модификатор Глобальной карты"
+
 msgid "battleQueue/clanPosition"
 msgstr "Позиция: %(position)s"
 
@@ -45,6 +63,9 @@ msgid "disconnected/WarningDescriptionRoaming"
 msgstr ""
 "В роуминге Укрепрайон недоступен. Чтобы получить доступ к Укрепрайону, "
 "перейдите в свой регион."
+
+msgid "fortBattleRoom/freezeJournal"
+msgstr "К разморозке техники"
 
 msgid "fortBattleRoom/listHeader/clanPlayers"
 msgstr "Соклановцы"

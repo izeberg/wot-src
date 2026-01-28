@@ -65,6 +65,9 @@ msgstr "VVST78"
 msgid "Chassis_Un09_Locust_2"
 msgstr "VVST78-M1"
 
+msgid "Chassis_Un1017_RDT_62_T"
+msgstr "RDT-62 T"
+
 msgid "Chassis_Un10_Sherman_Krupp_IDF"
 msgstr "VVSS T41"
 
@@ -88,6 +91,12 @@ msgstr "Т-54 обр. 1949 г."
 
 msgid "Chassis_Un14_T54D"
 msgstr "T-54"
+
+msgid "Chassis_Un17_RDT_62"
+msgstr "RDT-62"
+
+msgid "Chassis_Un24_Vz_68_2_Britva"
+msgstr "Vz. 68-2"
 
 msgid "Chrysler_A57"
 msgstr "Chrysler A57"
@@ -203,6 +212,15 @@ msgstr "Р-113"
 msgid "R_113"
 msgstr "R-113"
 
+msgid "R_113_68"
+msgstr "R-113"
+
+msgid "R_123"
+msgstr "R-123"
+
+msgid "R_123_T"
+msgstr "R-123 T"
+
 msgid "Renault_22_CV"
 msgstr "Renault 22 CV"
 
@@ -257,6 +275,9 @@ msgstr "APX-R"
 msgid "Turret_1_Un09_Locust"
 msgstr "M22D1"
 
+msgid "Turret_1_Un1017_RDT_62_T"
+msgstr "RDT-62 T"
+
 msgid "Turret_1_Un10_Sherman_Krupp_IDF"
 msgstr "M3A1"
 
@@ -271,6 +292,12 @@ msgstr "Т-54 обр. 1946 г."
 
 msgid "Turret_1_Un14_T54D"
 msgstr "T-54D"
+
+msgid "Turret_1_Un17_RDT_62"
+msgstr "RDT-62"
+
+msgid "Turret_1_Un24_Vz_68_2_Britva"
+msgstr "Vz. 68-2"
 
 msgid "Turret_2_Un01_Cromwell_VII"
 msgstr "Mk VII"
@@ -364,6 +391,18 @@ msgstr "Degem Yud"
 
 msgid "Un04_Vickers_MBT_EXP"
 msgstr "Vickers MBT EXP"
+
+msgid "Un04_Vickers_MBT_EXP_FL"
+msgstr "Vickers MBT EXP ЛФ"
+
+msgid "Un04_Vickers_MBT_EXP_FL_long_special"
+msgstr "?empty?"
+
+msgid "Un04_Vickers_MBT_EXP_FL_short"
+msgstr "Vickers ЛФ"
+
+msgid "Un04_Vickers_MBT_EXP_FL_short_special"
+msgstr "?empty?"
 
 msgid "Un04_Vickers_MBT_EXP_descr"
 msgstr ""
@@ -473,6 +512,24 @@ msgstr ""
 msgid "Un09_Locust_short"
 msgstr "Locust"
 
+msgid "Un1017_RDT_62_T"
+msgstr "RDT-62 Řezačka Test"
+
+msgid "Un1017_RDT_62_T_descr"
+msgstr ""
+".\n"
+"\n"
+"Характеристики машины могут быть изменены без компенсации."
+
+msgid "Un1017_RDT_62_T_long_special"
+msgstr "?empty?"
+
+msgid "Un1017_RDT_62_T_short"
+msgstr "Řezačka (T)"
+
+msgid "Un1017_RDT_62_T_short_special"
+msgstr "?empty?"
+
 msgid "Un10_Sherman_Krupp_IDF"
 msgstr "Sherman Krupp IDF"
 
@@ -515,7 +572,7 @@ msgid "Un12_Merkava_M48_descr"
 msgstr ""
 ".\n"
 "\n"
-"Характеристики машины могут быть изменены без компенсации."
+"Характеристики машины могут быть изменены без компенсации."
 
 msgid "Un12_Merkava_M48_long_special"
 msgstr "?empty?"
@@ -531,18 +588,18 @@ msgstr "Т-54А"
 
 msgid "Un13_T-54_descr"
 msgstr ""
-"Внешнеполитические интересы на Ближнем Востоке для СССР были важны уже с "
-"начала 1950-х годов. Арабским странам, и прежде всего Египту и Сирии, "
-"Советский Союз помогал оружием и военной техникой, в этих странах работали "
-"наши командированные специалисты. С 1957 года в эти страны было поставлено "
-"несколько сотен танков типа Т-54 различных модификаций. Все эти боевые "
-"машины на момент поставки практически ничем не отличались от танков "
-"Советской Армии. Были среди них и Т-54 образца 1949 года, созданные согласно"
-" постановлению Совета Министров СССР № 2620-1039 от 18 июня 1949 года, "
-"которые от предыдущей модификации отличались рядом усовершенствований. "
+"Внешнеполитические интересы на Ближнем Востоке для СССР были важны уже "
+"с начала 1950-х годов. Арабским странам, и прежде всего Египту и Сирии, "
+"Советский Союз помогал оружием и военной техникой, в этих странах работали "
+"наши командированные специалисты. С 1957 года в эти страны было поставлено "
+"несколько сотен танков типа Т-54 различных модификаций. Все эти боевые "
+"машины на момент поставки практически ничем не отличались от танков "
+"Советской армии. Были среди них и Т-54 образца 1949 года, созданные согласно"
+" постановлению Совета Министров СССР № 2620-1039 от 18 июня 1949 года, "
+"которые от предыдущей модификации отличались рядом усовершенствований. "
 "Главным внешним их отличием стала башня новой конструкции, исключавшая "
-"рикошет снарядов в верхний лист крыши корпуса, но по-прежнему имевшая "
-"«заман» в кормовой части."
+"рикошет снарядов в верхний лист крыши корпуса, но по-прежнему имевшая "
+"«заман» в кормовой части."
 
 msgid "Un13_T-54_short"
 msgstr "Т-54А"
@@ -570,6 +627,45 @@ msgstr ""
 msgid "Un14_T54D_short"
 msgstr "T-54D"
 
+msgid "Un17_RDT_62"
+msgstr "RDT-62 Řezačka"
+
+msgid "Un17_RDT_62_descr"
+msgstr ""
+"В послевоенные годы чехословацкими конструкторами был предложен вариант "
+"машины огневой поддержки и разведки, способной выдержать и боестолкновение с"
+" тяжёлой техникой противника: с установкой 57-мм скорострельных пушек в "
+"низкопрофильной башне на базе шасси советского среднего танка Т-62А. При "
+"стрельбе в лобовую проекцию высокая плотность огня позволяла гарантировать "
+"попадание нескольких снарядов в ослабленные зоны даже самых защищённых "
+"танков противника. Однако советский вариант машины-скаута перестал "
+"интересовать военных после начала работ в СССР над ракетными танками, "
+"ставшими приоритетным направлением. Рассчитывать на поставки РДТ-62 «Резак» "
+"в страны блока ОВД тоже не приходилось, а для одной Чехословакии проект "
+"оказался чересчур дорогостоящим, поэтому был свёрнут на стадии работ "
+"по изготовлению макета боевого модуля."
+
+msgid "Un17_RDT_62_short"
+msgstr "Řezačka"
+
+msgid "Un24_Vz_68_2_Britva"
+msgstr "Vz. 68-2 Britva"
+
+msgid "Un24_Vz_68_2_Britva_descr"
+msgstr ""
+".\n"
+"\n"
+"Характеристики машины могут быть изменены без компенсации."
+
+msgid "Un24_Vz_68_2_Britva_long_special"
+msgstr "?empty?"
+
+msgid "Un24_Vz_68_2_Britva_short"
+msgstr "Britva"
+
+msgid "Un24_Vz_68_2_Britva_short_special"
+msgstr "?empty?"
+
 msgid "V-2-54"
 msgstr "В-2-54"
 
@@ -578,6 +674,12 @@ msgstr "В-14"
 
 msgid "V_54B"
 msgstr "V-54B"
+
+msgid "V_55"
+msgstr "V-55"
+
+msgid "V_55_T"
+msgstr "V-55 T"
 
 msgid "_100mm_3UBK4"
 msgstr "3УБК4"
@@ -758,6 +860,36 @@ msgstr "OP mle. 1938"
 
 msgid "_3_7inch_QF_Heavy_Gun"
 msgstr "QF 3.7in Heavy Gun Long"
+
+msgid "_50mm_JOSv"
+msgstr "50-JOSv"
+
+msgid "_50mm_JOSvP"
+msgstr "50-JOSvP"
+
+msgid "_50mm_ZK_500"
+msgstr "50 mm ZK 500"
+
+msgid "_57mm_53_BR_279"
+msgstr "53-BR-279"
+
+msgid "_57mm_53_BR_279P"
+msgstr "53-BR-279P"
+
+msgid "_57mm_53_BR_279P_T"
+msgstr "53-BR-279P T"
+
+msgid "_57mm_53_BR_279_T"
+msgstr "53-BR-279 T"
+
+msgid "_57mm_RShR_57"
+msgstr "57 mm RShR-57"
+
+msgid "_57mm_RShR_57_T"
+msgstr "57 mm RShR-57 T"
+
+msgid "_5TD"
+msgstr "5TD"
 
 msgid "_6pdr_APCR_MK_1T"
 msgstr "APDS Mk.I BT"

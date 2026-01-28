@@ -327,6 +327,16 @@ package
       
       public static const RADIALMENU_POSITIVE:String = "#ingame_help:radialMenu/positive";
       
+      public static const RADIALMENU_DEFEND_SUPPLY:String = "#ingame_help:radialMenu/defend_supply";
+      
+      public static const RADIALMENU_DEFENDING_SUPPLY:String = "#ingame_help:radialMenu/defending_supply";
+      
+      public static const RADIALMENU_SUPPLY_SELF_REPAIR:String = "#ingame_help:radialMenu/supply_self_repair";
+      
+      public static const RADIALMENU_ATTACK_SUPPLY:String = "#ingame_help:radialMenu/attack_supply";
+      
+      public static const RADIALMENU_ATTACKING_SUPPLY:String = "#ingame_help:radialMenu/attacking_supply";
+      
       public static const DETAILSHELP_TRACKWITHINTRACK_TITLE:String = "#ingame_help:detailsHelp/trackWithinTrack/title";
       
       public static const DETAILSHELP_TRACKWITHINTRACK_DESCRIPTION:String = "#ingame_help:detailsHelp/trackWithinTrack/description";

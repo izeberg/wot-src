@@ -5,9 +5,20 @@
 		<fn_effect_bin>particles/Environment/scenarios/208_LRG_explosion.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/208_smokescreen_lev4.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/208_smokescreen_lev5.eff</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/Scenarios/208_LRG_explosion.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/208_smokescreen_lev4.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/208_smokescreen_lev5.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/environment/battle_royal/lighting/lighting_arc_sparks.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/battle_royal/lighting/lighting_center_sparks.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/208_smoke_big_1.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/208_fire_area_1.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/208_smoke_area_1.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/208_fire_small_1.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/208_fire_big_01.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/208_fire_length_1.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/208_fire_dot_1.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/208_firesmoke_hard.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/208_smoke_light_med.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/208_smoke_light_area.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/battle_royal/lighting/lighting_arc_sparks.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/battle_royal/lighting/lighting_center_sparks.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/buildings/hd_bld_uni_006_kitcrashfactory_roof_03.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/buildings/hd_bld_uni_712_littlewoodshed.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/buildings/inf_bld_101_03_vhouse03_01.vfx</fn_effect_bin>
@@ -26,6 +37,8 @@
 		<fn_effect_bin>particles/content_forward/pfx/environment/interior/208_smoke_big_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/interior/208_smoke_light_area.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/interior/208_smoke_light_med.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/interior/208_smokescreen_lev4.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/interior/208_smokescreen_lev5.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/hd_env007_snagheap3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/hd_env_am_055_dryroots_2.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/hd_env_eu_443_columneagle.vfx</fn_effect_bin>
@@ -100,6 +113,7 @@
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_envaf_007_aircraftrefueller.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_envaf_008_truck.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_envam_002_barrels_01.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_envam_002_barrels_04.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_envam_011_truck_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_envam_011_truck_03.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_envam_024_handcar01.vfx</fn_effect_bin>
@@ -183,6 +197,7 @@
 		<fn_effect_bin>particles/content_forward/pfx/environment/scenarios/208_aircraft_damaged_east_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/scenarios/208_aircraft_damaged_west_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/scenarios/208_aircraft_damaged_west_02.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/scenarios/208_lrg_explosion.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/scenarios/208_smoke_east_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/scenarios/plane_engine_sc_all.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/trees/broadleaves/inf_tree_bush_dry_fall.vfx</fn_effect_bin>
@@ -222,16 +237,6 @@
 		<fn_effect_bin>particles/environment/buildings/inf_bldam_008_workbarrack_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/buildings/inf_mle002_kpp_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/buildings/inf_mle002_kpp_02.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/208_fire_area_1.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/208_fire_big_01.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/208_fire_dot_1.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/208_fire_length_1.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/208_fire_small_1.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/208_firesmoke_hard.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/208_smoke_area_1.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/208_smoke_big_1.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/208_smoke_light_area.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/208_smoke_light_med.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_env007_snagheap3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_env_am_055_dryroots_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_env_eu_443_columneagle.eff</fn_effect_bin>
@@ -305,6 +310,7 @@
 		<fn_effect_bin>particles/environment/objects/inf_envaf_007_aircraftrefueller.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_envaf_008_truck.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_envam_002_barrels_01.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_envam_002_barrels_04.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_envam_011_truck_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_envam_011_truck_03.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_envam_024_handcar01.eff</fn_effect_bin>
@@ -441,9 +447,21 @@
 		<fn_effect_bin>particles/Environment/scenarios/208_LRG_explosion.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/208_smokescreen_lev4.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/208_smokescreen_lev5.eff</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/Scenarios/208_LRG_explosion.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/208_smokescreen_lev4.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/208_smokescreen_lev5.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/environment/battle_royal/lighting/lighting_arc_sparks.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/battle_royal/lighting/lighting_center_sparks.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/208_smoke_big_1.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/208_fire_area_1.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/208_smoke_area_1.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/208_fire_small_1.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/208_fire_big_01.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/208_fire_length_1.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/208_fire_dot_1.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/208_firesmoke_hard.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/208_smoke_light_med.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/208_smoke_light_area.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/scenarios/front_line_cloak.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/battle_royal/lighting/lighting_arc_sparks.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/battle_royal/lighting/lighting_center_sparks.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/buildings/hd_bld_uni_006_kitcrashfactory_roof_03.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/buildings/hd_bld_uni_712_littlewoodshed.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/buildings/inf_bld_101_03_vhouse03_01.vfx</fn_effect_bin>
@@ -462,6 +480,8 @@
 		<fn_effect_bin>particles/content_deferred/pfx/environment/interior/208_smoke_big_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/interior/208_smoke_light_area.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/interior/208_smoke_light_med.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/interior/208_smokescreen_lev4.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/interior/208_smokescreen_lev5.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/hd_env007_snagheap3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/hd_env_am_055_dryroots_2.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/hd_env_eu_443_columneagle.vfx</fn_effect_bin>
@@ -536,6 +556,7 @@
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_envaf_007_aircraftrefueller.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_envaf_008_truck.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_envam_002_barrels_01.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_envam_002_barrels_04.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_envam_011_truck_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_envam_011_truck_03.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_envam_024_handcar01.vfx</fn_effect_bin>
@@ -619,7 +640,9 @@
 		<fn_effect_bin>particles/content_deferred/pfx/environment/scenarios/208_aircraft_damaged_east_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/scenarios/208_aircraft_damaged_west_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/scenarios/208_aircraft_damaged_west_02.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/scenarios/208_lrg_explosion.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/scenarios/208_smoke_east_01.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/scenarios/front_line_cloak.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/scenarios/plane_engine_sc_all.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/trees/broadleaves/inf_tree_bush_dry_fall.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/trees/broadleaves/inf_tree_bush_dry_fall_big.vfx</fn_effect_bin>
@@ -658,16 +681,6 @@
 		<fn_effect_bin>particles/environment/buildings/inf_bldam_008_workbarrack_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/buildings/inf_mle002_kpp_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/buildings/inf_mle002_kpp_02.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/208_fire_area_1.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/208_fire_big_01.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/208_fire_dot_1.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/208_fire_length_1.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/208_fire_small_1.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/208_firesmoke_hard.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/208_smoke_area_1.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/208_smoke_big_1.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/208_smoke_light_area.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/208_smoke_light_med.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_env007_snagheap3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_env_am_055_dryroots_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_env_eu_443_columneagle.eff</fn_effect_bin>
@@ -741,6 +754,7 @@
 		<fn_effect_bin>particles/environment/objects/inf_envaf_007_aircraftrefueller.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_envaf_008_truck.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_envam_002_barrels_01.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_envam_002_barrels_04.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_envam_011_truck_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_envam_011_truck_03.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_envam_024_handcar01.eff</fn_effect_bin>

@@ -642,6 +642,24 @@ CHAT_COMMANDS = Enumeration('chatCommands', [
   {'battleCmd': 1}),
  (
   BATTLE_CHAT_COMMAND_NAMES.OVERHEAT_CANT_SHOOT,
+  {'battleCmd': 1}),
+ (
+  BATTLE_CHAT_COMMAND_NAMES.ATTACK_SUPPLY,
+  {'battleCmd': 1}),
+ (
+  BATTLE_CHAT_COMMAND_NAMES.ATTACKING_SUPPLY,
+  {'battleCmd': 1}),
+ (
+  BATTLE_CHAT_COMMAND_NAMES.DEFEND_SUPPLY,
+  {'battleCmd': 1}),
+ (
+  BATTLE_CHAT_COMMAND_NAMES.DEFENDING_SUPPLY,
+  {'battleCmd': 1}),
+ (
+  BATTLE_CHAT_COMMAND_NAMES.SELF_REPAIR_SUPPLY,
+  {'battleCmd': 1}),
+ (
+  BATTLE_CHAT_COMMAND_NAMES.FOCUS_SUPPLY,
   {'battleCmd': 1})], instance=AttributeEnumItem)
 CHAT_MEMBER_STATUSES = Enumeration('chatMemberStatuses', [
  'available',

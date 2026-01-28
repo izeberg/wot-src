@@ -13351,33 +13351,33 @@
 						0.7
 						<!--BW_String-->
 					</defaultPortion>
-					<speed>1372</speed>
+					<speed>1250</speed>
 					<gravity>
 						9.81
 						<!--BW_String-->
 					</gravity>
 					<maxDistance>720</maxDistance>
-					<piercingPower>270 245</piercingPower>
+					<piercingPower>260 245</piercingPower>
 				</_120mm_APDS_L15A4>
 				<_120mm_APDS_L15A4_DU>
 					<defaultPortion>
 						0.0
 						<!--BW_String-->
 					</defaultPortion>
-					<speed>1350</speed>
+					<speed>1100</speed>
 					<gravity>
 						9.81
 						<!--BW_String-->
 					</gravity>
 					<maxDistance>720</maxDistance>
-					<piercingPower>310 270</piercingPower>
+					<piercingPower>340 340</piercingPower>
 				</_120mm_APDS_L15A4_DU>
 				<_120mm_HESH_L31>
 					<defaultPortion>
 						0.3
 						<!--BW_String-->
 					</defaultPortion>
-					<speed>671</speed>
+					<speed>1100</speed>
 					<gravity>
 						9.81
 						<!--BW_String-->
@@ -14456,7 +14456,7 @@
 				<recoilEffect>huge</recoilEffect>
 			</recoil>
 			<effects>shot_huge</effects>
-			<reloadEffect>autoloader_reload85_107</reloadEffect>
+			<reloadEffect>autoloader_reload115_152</reloadEffect>
 			<pitchLimits>
 				<minPitch>
 					0.0 -45.0 1.0 -45.0
@@ -14555,7 +14555,7 @@
 				<recoilEffect>huge</recoilEffect>
 			</recoil>
 			<effects>shot_huge</effects>
-			<reloadEffect>autoloader_reload85_107</reloadEffect>
+			<reloadEffect>autoloader_reload115_152</reloadEffect>
 			<pitchLimits>
 				<minPitch>
 					0.0 -45.0 1.0 -45.0

@@ -54,8 +54,12 @@
 						<Texture>content/Hangars/h08_mt_hangar/personalization_objects/decoration/hd_h08_MTV1_Shadow_AM.dds</Texture>
 					</property>
 					<property>
-						srcBlend
-						<Int>1</Int>
+						selfIllumination
+						<Float>-1.000000</Float>
+					</property>
+					<property>
+						g_tintColor
+						<Vector4>0.000000 0.000000 0.000000 1.000000</Vector4>
 					</property>
 				</material>
 				<groupOrigin>0.000000 0.002576 0.256274</groupOrigin>

@@ -43,8 +43,8 @@ msgstr "Экипаж"
 
 msgid "categories/currency/subtitle"
 msgstr ""
-"Может содержать золото, серебро, боны, свободный опыт и Компоненты из "
-"открытых контейнеров."
+"Может содержать золото, серебро, боны, свободный опыт и компоненты "
+"из открытых контейнеров."
 
 msgid "categories/currency/title"
 msgstr "Валюты"
@@ -91,8 +91,8 @@ msgstr "Техника"
 
 msgid "categories/vehicleCustomizations/subtitle"
 msgstr ""
-"Может содержать стили, камуфляжные схемы и другие элементы внешнего вида для"
-" техники."
+"Может содержать стили, камуфляжные схемы и другие элементы внешнего вида "
+"для техники."
 
 msgid "categories/vehicleCustomizations/title"
 msgstr "Внешний вид"
@@ -154,8 +154,8 @@ msgstr "Свободный опыт"
 
 msgid "currencies/gold/subtitle"
 msgstr ""
-"Ценная игровая валюта, которую можно потратить на широкий спектр целей: "
-"Танковый премиум аккаунт, технику, перевод опыта и т.д."
+"Ценная игровая валюта, которую можно потратить на широкий спектр целей: "
+"Танковый премиум аккаунт, технику, перевод опыта и т. д."
 
 msgid "currencies/gold/title"
 msgstr "Золото"
@@ -312,7 +312,7 @@ msgstr "Гарантированная награда из этапов"
 
 msgid "guaranteedRewardTooltip/block4/bonus/text"
 msgstr ""
-"Награды из третьего списка можно получать неограниченное количество раз."
+"Награду из третьего списка можно получать неограниченное количество раз."
 
 msgid "guaranteedRewardTooltip/block4/vehicle/text"
 msgstr ""
@@ -357,10 +357,12 @@ msgid "lootBox/slot/description"
 msgstr "%(idx)s. Вероятность выпадения одной из наград: "
 
 msgid "lootboxRotationTooltip/caption"
-msgstr "Вы можете получить одну из наград текущего списка/этапа."
+msgstr "Вы можете получить одну из наград текущего этапа"
 
 msgid "lootboxRotationTooltip/description1"
-msgstr "Соберите основные награды текущего этапа, чтобы перейти к следующему."
+msgstr ""
+"Соберите технику из основных наград текущего этапа, чтобы перейти "
+"к следующему."
 
 msgid "lootboxRotationTooltip/description2"
 msgstr "Каждый этап включает уникальную технику и другое игровое имущество."
@@ -439,7 +441,7 @@ msgstr "Количество %(count)s ед."
 msgid "lootboxesStatsView/errorAll"
 msgstr ""
 "Статистика отсутствует.\n"
-"{cream_Open}Откройте хотябы один контейнер любого типа{cream_Close},\n"
+"{cream_Open}Откройте хотя бы один контейнер любого типа{cream_Close},\n"
 "чтобы просмотреть статистику выпавших наград."
 
 msgid "lootboxesStatsView/errorCurrent"
@@ -450,12 +452,6 @@ msgstr ""
 
 msgid "lootboxesWithKeys/about/default"
 msgstr "О контейнере"
-
-msgid "lootboxesWithKeys/about/ny_2025_big"
-msgstr "О контейнерах с этапами"
-
-msgid "lootboxesWithKeys/about/ny_2026_big"
-msgstr "О контейнерах с этапами"
 
 msgid "lootboxesWithKeys/about/tanks_birthday_2025_large"
 msgstr "О контейнерах события"
@@ -512,17 +508,8 @@ msgstr "В АНГАР"
 msgid "openBoxScreen/backBtn/1"
 msgstr "В МАГАЗИН"
 
-msgid "openBoxScreen/backBtn/10"
-msgstr "К ПИРОТЕХНИКЕ"
-
-msgid "openBoxScreen/backBtn/11"
-msgstr "К АТТРАКЦИОНУ"
-
-msgid "openBoxScreen/backBtn/12"
-msgstr "К ПИТОМЦУ"
-
 msgid "openBoxScreen/backBtn/2"
-msgstr "В ГОРОДОК"
+msgstr "НА ПЛОЩАДЬ"
 
 msgid "openBoxScreen/backBtn/3"
 msgstr "К ОСКОЛКАМ"
@@ -531,19 +518,7 @@ msgid "openBoxScreen/backBtn/4"
 msgstr "К РЕФЕРАЛЬНОЙ ПРОГРАММЕ"
 
 msgid "openBoxScreen/backBtn/5"
-msgstr "К ПРАЗДНИЧНОЙ ЕЛИ"
-
-msgid "openBoxScreen/backBtn/6"
-msgstr "К ТЕРЕМУ"
-
-msgid "openBoxScreen/backBtn/7"
-msgstr "К ИНСТАЛЛЯЦИИ"
-
-msgid "openBoxScreen/backBtn/8"
-msgstr "К СТОЛОВОЙ"
-
-msgid "openBoxScreen/backBtn/9"
-msgstr "К ГОРКЕ"
+msgstr "К ПРАЗДНИЧНОЙ ПОЧТЕ"
 
 msgid "openBoxScreen/backBtnMain"
 msgstr "В Ангар"
@@ -666,16 +641,6 @@ msgstr ""
 
 msgid "probabilitiesOverlay/optional/header"
 msgstr "ВЕРОЯТНОСТЬ ВЫПАДЕНИЯ"
-
-msgid "probabilitiesOverlay/optional/ny_2025_tanks/description"
-msgstr ""
-"Из контейнера с {cream_Open}вероятностью{cream_Close} %(percentageIcon)s выпадает только {cream_Open}одна единица техники{cream_Close}.\n"
-"После сбора всей техники повторно выпавшие машины {cream_Open}компенсируются золотом{cream_Close}."
-
-msgid "probabilitiesOverlay/optional/ny_2026_tanks/description"
-msgstr ""
-"Из контейнера с {cream_Open}вероятностью{cream_Close} %(percentageIcon)s выпадает только {cream_Open}одна единица техники{cream_Close}.\n"
-"После сбора всей техники повторно выпавшие машины {cream_Open}компенсируются золотом{cream_Close}."
 
 msgid "probabilitiesOverlay/optional/procentProbability"
 msgstr "%(probability)s%"
@@ -958,7 +923,7 @@ msgstr ""
 
 msgid "tooltips/probabilityStageButtons/description2"
 msgstr ""
-"Награды из третьего списка можно получить неограниченное количество раз."
+"Награду из третьего списка можно получить неограниченное количество раз."
 
 msgid "tooltips/probabilityStageButtons/title"
 msgstr "Списки содержимого"

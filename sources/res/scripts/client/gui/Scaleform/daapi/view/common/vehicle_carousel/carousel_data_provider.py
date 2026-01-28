@@ -10,6 +10,7 @@ from gui.Scaleform.locale.MENU import MENU
 from gui.Scaleform.locale.RES_ICONS import RES_ICONS
 from gui.impl import backport
 from gui.impl.gen import R
+from gui.impl.lobby.stronghold.stronghold_helpers import canHaveBattleModifiers
 from gui.shared.formatters import icons, text_styles
 from gui.shared.formatters.time_formatters import RentLeftFormatter
 from gui.shared.gui_items.Vehicle import Vehicle, VEHICLE_TYPES_ORDER_INDICES, getVehicleStateIcon, getVehicleStateAddIcon, getBattlesLeft, getSmallIconPath, getIconPath
@@ -72,6 +73,8 @@ def getVehicleDataVO(vehicle, bootcampCtrl=None, debutBoxCtrl=None, earlyAccessC
 def _getTooltipConstant(comp7Ctrl=None):
     if comp7Ctrl.isBattleModifiersAvailable():
         return TOOLTIPS_CONSTANTS.COMP7_CAROUSEL_VEHICLE
+    if canHaveBattleModifiers():
+        return TOOLTIPS_CONSTANTS.MODIFIED_CAROUSEL_VEHICLE
     return TOOLTIPS_CONSTANTS.CAROUSEL_VEHICLE
 
 
@@ -239,12 +242,6 @@ class CarouselDataProvider(SortableDAAPIDataProvider):
             self._currentVehicleInvID = vehicle.invID
         return self._currentVehicleInvID
 
-    def selectFilteredVehicle(self, vehicle):
-        if vehicle is not None and vehicle.isInInventory:
-            self._selectedIdx = -1
-            self._currentVehicleInvID = vehicle.invID
-        return
-
     def updateVehicles(self, vehiclesCDs=None, filterCriteria=None, forceUpdate=False):
         if self._itemsCache is None:
             return
@@ -288,7 +285,6 @@ class CarouselDataProvider(SortableDAAPIDataProvider):
         self._selectedIdx = -1
         visibleVehiclesIntCDs = [ vehicle.intCD for vehicle in self._getCurrentVehicles() ]
         sortedVehicleIndices = self._getSortedIndices()
-        self._filteredIndices += self._getBeforeAdditionalItemsIndexes()
         for idx in sortedVehicleIndices:
             vehicle = self._vehicles[idx]
             if vehicle.intCD in visibleVehiclesIntCDs:
@@ -333,9 +329,6 @@ class CarouselDataProvider(SortableDAAPIDataProvider):
         return []
 
     def _getAdditionalItemsIndexes(self):
-        return []
-
-    def _getBeforeAdditionalItemsIndexes(self):
         return []
 
     def _syncRandomStats(self):

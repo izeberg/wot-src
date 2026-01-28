@@ -79,16 +79,16 @@ msgid "intro/taskInfoTitle"
 msgstr "?empty?"
 
 msgid "intro/time/period/day"
-msgstr "{day} д"
+msgstr "{day} д."
 
 msgid "intro/time/period/dayHour"
-msgstr "{day} д {hours} ч"
+msgstr "{day} д. {hours} ч."
 
 msgid "intro/time/period/hourMinute"
-msgstr "{hours} ч {min} мин"
+msgstr "{hours} ч. {min} мин."
 
 msgid "intro/time/period/minute"
-msgstr "{min} мин"
+msgstr "{min} мин."
 
 msgid "intro/title"
 msgstr "РАЗВЕДКА БОЕМ"
@@ -237,16 +237,16 @@ msgid "progression/takeButton"
 msgstr "Забрать"
 
 msgid "progression/timeLeft/days"
-msgstr "%(day)s д"
+msgstr "%(day)s д."
 
 msgid "progression/timeLeft/hours"
-msgstr "%(hour)s ч %(min)s мин"
+msgstr "%(hour)s ч. %(min)s мин."
 
 msgid "progression/timeLeft/lessMin"
-msgstr "1 мин"
+msgstr "1 мин."
 
 msgid "progression/timeLeft/min"
-msgstr "%(min)s мин"
+msgstr "%(min)s мин."
 
 msgid "progression/title"
 msgstr "РАЗВЕДКА БОЕМ"

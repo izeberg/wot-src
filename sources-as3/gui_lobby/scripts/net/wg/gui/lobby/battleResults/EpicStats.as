@@ -87,6 +87,8 @@ package net.wg.gui.lobby.battleResults
       private static const PREMIUM_BUTTON_OFFSET:int = 4;
       
       private static const PREMIUM_BONUS_SEPARATOR:String = "  ";
+      
+      private static const STATS_NUMBER_IN_ROW:int = 6;
        
       
       public var premiumBonusLabel:TextField;
@@ -169,31 +171,43 @@ package net.wg.gui.lobby.battleResults
       private static function getEfficiencyStats(param1:EfficiencyHeaderVO) : Array
       {
          var _loc2_:Array = [];
-         if(param1.spotted && param1.spotted != DASH_ELEMENT_STRING)
-         {
-            _loc2_.push(new EpicEfficiencyData(EPIC_BATTLE.BATTLERESULTS_SPOTTING,param1.spotted,RES_ICONS.MAPS_ICONS_LIBRARY_EPICEFFICIENCY_RIBBONSSPOTTED));
-         }
-         if(param1.armor && param1.armor != DASH_ELEMENT_STRING)
-         {
-            _loc2_.push(new EpicEfficiencyData(EPIC_BATTLE.BATTLERESULTS_ARMOR,param1.armor,RES_ICONS.MAPS_ICONS_LIBRARY_EPICEFFICIENCY_RIBBONSARMOUR));
-         }
-         if(param1.assist && param1.assist != DASH_ELEMENT_STRING)
-         {
-            _loc2_.push(new EpicEfficiencyData(EPIC_BATTLE.BATTLERESULTS_ASSISTANCE,param1.assist,RES_ICONS.MAPS_ICONS_LIBRARY_EPICEFFICIENCY_RIBBONSASSISTSPOT));
-         }
-         if(param1.crits && param1.crits != DASH_ELEMENT_STRING)
-         {
-            _loc2_.push(new EpicEfficiencyData(EPIC_BATTLE.BATTLERESULTS_CRITS,param1.crits,RES_ICONS.MAPS_ICONS_LIBRARY_EPICEFFICIENCY_RIBBONSCRITS));
-         }
          if(param1.damage && param1.damage != DASH_ELEMENT_STRING)
          {
             _loc2_.push(new EpicEfficiencyData(EPIC_BATTLE.BATTLERESULTS_DAMAGE,param1.damage,RES_ICONS.MAPS_ICONS_LIBRARY_EPICEFFICIENCY_RIBBONSDAMAGE));
+         }
+         if(param1.damageToSupplies && param1.damageToSupplies != DASH_ELEMENT_STRING)
+         {
+            _loc2_.push(new EpicEfficiencyData(EPIC_BATTLE.BATTLERESULTS_DAMAGESUPPLIES,param1.damageToSupplies,RES_ICONS.MAPS_ICONS_LIBRARY_EPICEFFICIENCY_RIBBONSDAMAGESUPPLIES));
+         }
+         if(param1.questsCompleted && param1.questsCompleted != DASH_ELEMENT_STRING)
+         {
+            _loc2_.push(new EpicEfficiencyData(EPIC_BATTLE.BATTLERESULTS_QUESTCOMPLETED,param1.questsCompleted,RES_ICONS.MAPS_ICONS_LIBRARY_EPICEFFICIENCY_RIBBONSQUESTCOMPLETED));
          }
          if(param1.kill && param1.kill != DASH_ELEMENT_STRING)
          {
             _loc2_.push(new EpicEfficiencyData(EPIC_BATTLE.BATTLERESULTS_KILL,param1.kill,RES_ICONS.MAPS_ICONS_LIBRARY_EPICEFFICIENCY_RIBBONSKILL));
          }
-         return _loc2_;
+         if(param1.suppliesDestroyed && param1.suppliesDestroyed != DASH_ELEMENT_STRING)
+         {
+            _loc2_.push(new EpicEfficiencyData(EPIC_BATTLE.BATTLERESULTS_KILLSUPPLIES,param1.suppliesDestroyed,RES_ICONS.MAPS_ICONS_LIBRARY_EPICEFFICIENCY_RIBBONSKILLSUPPLIES));
+         }
+         if(param1.assist && param1.assist != DASH_ELEMENT_STRING)
+         {
+            _loc2_.push(new EpicEfficiencyData(EPIC_BATTLE.BATTLERESULTS_ASSISTANCE,param1.assist,RES_ICONS.MAPS_ICONS_LIBRARY_EPICEFFICIENCY_RIBBONSASSISTSPOT));
+         }
+         if(param1.armor && param1.armor != DASH_ELEMENT_STRING)
+         {
+            _loc2_.push(new EpicEfficiencyData(EPIC_BATTLE.BATTLERESULTS_ARMOR,param1.armor,RES_ICONS.MAPS_ICONS_LIBRARY_EPICEFFICIENCY_RIBBONSARMOUR));
+         }
+         if(param1.spotted && param1.spotted != DASH_ELEMENT_STRING)
+         {
+            _loc2_.push(new EpicEfficiencyData(EPIC_BATTLE.BATTLERESULTS_SPOTTING,param1.spotted,RES_ICONS.MAPS_ICONS_LIBRARY_EPICEFFICIENCY_RIBBONSSPOTTED));
+         }
+         if(param1.crits && param1.crits != DASH_ELEMENT_STRING)
+         {
+            _loc2_.push(new EpicEfficiencyData(EPIC_BATTLE.BATTLERESULTS_CRITS,param1.crits,RES_ICONS.MAPS_ICONS_LIBRARY_EPICEFFICIENCY_RIBBONSCRITS));
+         }
+         return _loc2_.slice(0,STATS_NUMBER_IN_ROW);
       }
       
       override protected function onDispose() : void
@@ -409,6 +423,7 @@ package net.wg.gui.lobby.battleResults
       {
          var _loc4_:IFormattedInt = null;
          var _loc5_:Boolean = false;
+         var _loc8_:Number = NaN;
          _loc4_ = this._locale.parseFormattedInteger(param3);
          _loc5_ = _loc4_.value > 0;
          var _loc6_:IFormattedInt = this._locale.parseFormattedInteger(param1);
@@ -417,7 +432,7 @@ package net.wg.gui.lobby.battleResults
          var _loc7_:IFormattedInt = this._locale.parseFormattedInteger(param2);
          this.xpCounter.init(_loc7_.value,this._locale.cutCharsBeforeNumber(param2),_loc7_.delimiter,this._xpCounterNumber != _loc7_.value);
          this._xpCounterNumber = _loc7_.value;
-         var _loc8_:Number = !!_loc5_ ? Number(COUNTERS_SCALE) : Number(COUNTERS_SCALE_NO_CRYSTALS);
+         _loc8_ = !!_loc5_ ? Number(COUNTERS_SCALE) : Number(COUNTERS_SCALE_NO_CRYSTALS);
          var _loc9_:int = !!_loc5_ ? int(COUNTER_LEFT_OFFSET) : int(COUNTER_LEFT_OFFSET_NO_CRYSTALS);
          if(_loc5_)
          {

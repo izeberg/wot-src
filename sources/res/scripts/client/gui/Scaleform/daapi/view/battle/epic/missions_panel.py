@@ -1,11 +1,10 @@
-import math
+import math, BigWorld
 from gui.Scaleform.daapi.view.meta.EpicMissionsPanelMeta import EpicMissionsPanelMeta
 from helpers import dependency
 from skeletons.gui.battle_session import IBattleSessionProvider
 from helpers import time_utils
 from gui.battle_control.controllers.epic_missions_ctrl import PlayerMission
 from helpers.CallbackDelayer import CallbackDelayer
-import BigWorld
 
 class EpicMissionsPanel(EpicMissionsPanelMeta, CallbackDelayer):
     sessionProvider = dependency.descriptor(IBattleSessionProvider)
@@ -14,8 +13,8 @@ class EpicMissionsPanel(EpicMissionsPanelMeta, CallbackDelayer):
         EpicMissionsPanelMeta.__init__(self)
         CallbackDelayer.__init__(self)
         self.__nearestHQ = None
-        self.__timeCB = None
         self.__currentEndTime = 0
+        self.__currentMission = None
         return
 
     def start(self):
@@ -37,6 +36,7 @@ class EpicMissionsPanel(EpicMissionsPanelMeta, CallbackDelayer):
             ctrl.onPlayerMissionReset -= self.__onPlayerMissionReset
             ctrl.onPlayerMissionTimerSet -= self.__onPlayerMissionTimerSet
             ctrl.onNearestObjectiveChanged -= self.__onNearestObjectiveChanged
+        self.__killTimeCallback()
         EpicMissionsPanelMeta._dispose(self)
         CallbackDelayer.destroy(self)
 
@@ -62,13 +62,18 @@ class EpicMissionsPanel(EpicMissionsPanelMeta, CallbackDelayer):
         return -1
 
     def __onPlayerMissionUpdated(self, mission, additionalDescription=None):
-        self.as_setPrimaryMissionS(mission.generateData())
+        self.__updatePrimaryMission(mission.generateData())
         if additionalDescription is not None:
             self.as_setMissionDescriptionValueS(additionalDescription)
         return
 
     def __onPlayerMissionReset(self):
-        self.as_setPrimaryMissionS(PlayerMission().generateData())
+        self.__updatePrimaryMission(PlayerMission().generateData())
+
+    def __updatePrimaryMission(self, newMission):
+        if self.__currentMission != newMission:
+            self.__currentMission = newMission
+            self.as_setPrimaryMissionS(newMission)
 
     def __onPlayerMissionTimerSet(self, timeStamp):
         if timeStamp > 0:

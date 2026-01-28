@@ -690,14 +690,14 @@ class VehicleParams(_ParameterBase):
 
     @property
     def avgDamagePerMinute(self):
-        if self.__hasAutoShoot():
+        if self._itemDescr.isAutoShootFlamethrower:
             return None
         else:
             return round(max(self.__calcReloadTime()) * self.avgDamage)
 
     @property
     def avgDamagePerSecond(self):
-        if self.__hasAutoShoot():
+        if self._itemDescr.isAutoShootFlamethrower:
             return round(self.reloadTimePerSecond * self.avgDamage)
         else:
             return
@@ -734,20 +734,20 @@ class VehicleParams(_ParameterBase):
 
     @property
     def reloadTime(self):
-        if self.__hasAutoReload() or self.__hasDualGun() or self.__hasAutoShoot():
+        if self.__hasAutoReload() or self.__hasDualGun() or self._itemDescr.isAutoShootFlamethrower:
             return None
         return min(self.__calcReloadTime())
 
     @property
     def reloadTimePerSecond(self):
-        if self.__hasAutoShoot():
+        if self._itemDescr.isAutoShootFlamethrower:
             return 1 / self._itemDescr.gun.autoShoot.shotInterval
         else:
             return
 
     @property
     def reloadTimeSituational(self):
-        if self.__hasAutoReload() or self.__hasDualGun() or self.__hasAutoShoot():
+        if self.__hasAutoReload() or self.__hasDualGun() or self._itemDescr.isAutoShootFlamethrower:
             return None
         return min(self.__calcReloadTime(isSituational=True))
 
@@ -1695,7 +1695,7 @@ class GunParams(WeightedParam):
     @property
     def reloadTimePerSecond(self):
         gun = self.__getSelectedVehicleGun()
-        if isAutoShootFlameGun(gun):
+        if isAutoShootGun(gun):
             return 1 / gun.autoShoot.shotInterval
         else:
             return
@@ -1815,7 +1815,7 @@ class ShellParams(CompatibleParams):
 
     @property
     def damagePerSecond(self):
-        if self._vehicleDescr and self._vehicleDescr.isAutoShootGunVehicle:
+        if self._vehicleDescr and self._vehicleDescr.isAutoShootFlamethrower:
             gun = self._vehicleDescr.gun
             return self.avgDamage / gun.autoShoot.shotInterval
         else:

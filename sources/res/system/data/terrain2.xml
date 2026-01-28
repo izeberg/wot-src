@@ -31,7 +31,7 @@
 		<!--BW_String-->
 	</blendMacroInfluence>
 	<blendGlobalThreshold>
-		0.5
+		1.0
 		<!--BW_String-->
 	</blendGlobalThreshold>
 	<blendHeight>
@@ -46,6 +46,10 @@
 		16.0 0.25 0.5 1.0
 		<!--BW_String-->
 	</VTLodParams>
+	<VTLodParams2>
+		0.0 0.0 1.0 0.0
+		<!--BW_String-->
+	</VTLodParams2>
 	<lodInfo>
 		<enabled>true</enabled>
 		<startBias>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G193_Aufgabe_57/normal/lod0/Turret_luke_anim</nodefullVisual>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.602482 0.298933 1.986000</min>
+		<max>-0.302617 0.534567 2.074560</max>
+	</visibilityBox>
+	<parent>vehicles/german/G193_Aufgabe_57/normal/lod1/Turret_luke_anim</parent>
+	<extent>32.000000</extent>
+</root>

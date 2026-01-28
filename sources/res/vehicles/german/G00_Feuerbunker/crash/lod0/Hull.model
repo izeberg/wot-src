@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G00_Feuerbunker/crash/lod0/Hull</nodefullVisual>
+	<visibilityBox>
+		<min>-3.014423 -1.051196 -3.021466</min>
+		<max>3.014424 0.270830 3.021466</max>
+	</visibilityBox>
+	<parent>vehicles/german/G00_Feuerbunker/crash/lod1/Hull</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+</root>

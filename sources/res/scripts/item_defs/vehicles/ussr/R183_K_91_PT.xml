@@ -4900,7 +4900,7 @@
 			<guns>
 				<_122mm_S_34_49>
 					shared
-					<maxAmmo>30</maxAmmo>
+					<maxAmmo>40</maxAmmo>
 					<armor>
 						<armor_1>
 							280
@@ -4933,7 +4933,7 @@
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>
-						2.6
+						2.3
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>

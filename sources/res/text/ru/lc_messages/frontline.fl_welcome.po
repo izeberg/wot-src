@@ -14,33 +14,17 @@ msgstr "Так точно!"
 msgid "page/closeBtn"
 msgstr "ЗАКРЫТЬ"
 
-msgid "slide/map/description"
-msgstr "В режим добавилась новая карта, выполненная в пустынной стилистике."
-
-msgid "slide/map/headerUpper"
-msgstr "НОВАЯ КАРТА"
-
-msgid "slide/map/title"
-msgstr "Фата-моргана"
-
-msgid "slide/progression/bonus/description"
+msgid "slide/progression/description"
 msgstr ""
-"Как только «генерал» вступает в бой, этот игрок и союзники получают бонус к "
-"характеристикам техники."
-
-msgid "slide/progression/bonus/title"
-msgstr "Бонус генерала"
+"Помимо регулярных действий в бою, появляется новый способ заработка опыта — "
+"выполнение индивидуальных задач в своих зонах. Заработанный опыт идёт "
+"и в звание, и в прогрессию зоны."
 
 msgid "slide/progression/headerUpper"
-msgstr "ОБНОВЛЕННАЯ СИСТЕМА ПРОГРЕССИИ"
+msgstr "НОВАЯ СИСТЕМА ПРОГРЕСИИ"
 
-msgid "slide/progression/reserves/description"
-msgstr ""
-"С получением званий «капитан» и «майор» резервы повышают свой уровень, "
-"становясь эффективнее."
-
-msgid "slide/progression/reserves/title"
-msgstr "Уровни резервов"
+msgid "slide/progression/title"
+msgstr "Изменение системы званий и новая прогрессия зон"
 
 msgid "slide/randomReserves/description"
 msgstr "?empty?"
@@ -51,14 +35,27 @@ msgstr "?empty?"
 msgid "slide/randomReserves/title"
 msgstr "?empty?"
 
-msgid "slide/vehicles/description"
+msgid "slide/supplies/description"
 msgstr ""
-"Выйти в бой по-прежнему возможно только на машинах %(vehiclesLevelFrom)s уровня. При захвате любой точки\n"
-"2-го квадрата (D, E, F) будет открываться техника %(vehiclesLevelTo)s уровня синхронно для обеих команд.\n"
-"Не забудьте подготовить в Ангаре машины и %(vehiclesLevelTo)s уровня."
+"Будьте эффективны в бою: наносите урон, оказывайте содействие "
+"и предпринимайте все возможные меры для победы. Каждое полезное действие "
+"пополнит общекомандную прогрессию и откроет объекты поддержки — боевые "
+"единицы, позволяющие переломить исход сражения."
 
-msgid "slide/vehicles/headerUpper"
-msgstr "ИЗМЕНЕНИЕ ПРАВИЛ БОЯ"
+msgid "slide/supplies/headerUpper"
+msgstr "НОВЫЕ ТАКТИЧЕСКИЕ ПРИЁМЫ"
 
-msgid "slide/vehicles/title"
-msgstr "Уровни техники в бою"
+msgid "slide/supplies/title"
+msgstr "Объекты поддержки команды"
+
+msgid "slide/zones/description"
+msgstr ""
+"Чтобы наиболее эффективно реализовать все преимущества в бою, сражайтесь "
+"на закреплённом за вами направлении. В случае необходимости у вас всегда "
+"будет возможность передислоцироваться на другое направление."
+
+msgid "slide/zones/headerUpper"
+msgstr "РАСПРЕДЕЛЕНИЕ ПО ЗОНАМ"
+
+msgid "slide/zones/title"
+msgstr "Привязка к направлению"

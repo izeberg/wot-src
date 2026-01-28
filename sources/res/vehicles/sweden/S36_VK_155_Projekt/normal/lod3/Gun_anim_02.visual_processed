@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>Root</identifier>
+			<transform>
+				<row0>0.000000 1.000000 0.000000</row0>
+				<row1>-1.000000 0.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>Richag</identifier>
+				<transform>
+					<row0>0.681277 0.000000 -0.732026</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.732026 0.000000 0.681277</row2>
+					<row3>-0.188018 -0.000564 -3.963872</row3>
+				</transform>
+				<node>
+					<identifier>Richag_BlendBone</identifier>
+					<transform>
+						<row0>0.000000 -1.000000 0.000000</row0>
+						<row1>0.681277 0.000000 0.732026</row1>
+						<row2>0.732026 0.000000 -0.681277</row2>
+						<row3>-2.773566 0.000564 2.838127</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>Zatvor</identifier>
+				<transform>
+					<row0>0.000000 -1.000000 0.000000</row0>
+					<row1>1.000000 0.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-0.004705 -0.000564 -3.581872</row3>
+				</transform>
+				<node>
+					<identifier>Zatvor_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-0.000564 0.004705 3.581872</row3>
+					</transform>
+				</node>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>Zatvor_BlendBone</node>
+		<geometry>
+			<vertices>gun_02_anim_Shape.vertices</vertices>
+			<primitive>gun_02_anim_Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_guns1_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<materialKind>0</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						colorIdMap
+						<Texture>vehicles/sweden/S36_VK_155_Projekt/VK_155_Projekt_guns_ID.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/sweden/S36_VK_155_Projekt/VK_155_Projekt_guns_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/sweden/S36_VK_155_Projekt/VK_155_Projekt_guns_AO.dds</Texture>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>3.506850 3.506850 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/sweden/S36_VK_155_Projekt/VK_155_Projekt_guns_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/sweden/S36_VK_155_Projekt/VK_155_Projekt_guns_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.001833 0.072032 3.583765</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>-0.177891 -0.145154 -3.687471</min>
+		<max>0.181558 0.289219 -3.480058</max>
+	</boundingBox>
+	<geometrySize>1836</geometrySize>
+	<minUVDensity>0.008204</minUVDensity>
+</root>

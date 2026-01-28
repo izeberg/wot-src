@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/russian/R215_KV_90/normal/lod3/Turret_02</parent>
+	<extent>96.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.584619 0.027794 -2.674744</min>
+		<max>1.584622 1.807273 1.603652</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/russian/R215_KV_90/normal/lod2/Turret_02</nodefullVisual>
+</root>

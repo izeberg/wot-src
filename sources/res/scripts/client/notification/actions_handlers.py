@@ -28,7 +28,7 @@ from gui.prb_control import prbDispatcherProperty, prbInvitesProperty
 from gui.ranked_battles import ranked_helpers
 from gui.server_events.events_dispatcher import showMissionsBattlePass, showMissionsMapboxProgression, showPersonalMission, showBattleMattersMainView
 from gui.shared import EVENT_BUS_SCOPE, actions, event_dispatcher as shared_events, events, g_eventBus
-from gui.shared.event_dispatcher import hideWebBrowserOverlay, showBlueprintsSalePage, showCollectionAwardsWindow, showCollectionWindow, showDelayedReward, showEpicBattlesAfterBattleWindow, showPersonalReservesConversion, showProgressiveRewardWindow, showRankedYearAwardWindow, showResourceWellProgressionWindow, showShop, showSteamConfirmEmailOverlay, showWotPlusIntroView, showBarracks
+from gui.shared.event_dispatcher import hideWebBrowserOverlay, showBlueprintsSalePage, showCollectionAwardsWindow, showCollectionWindow, showDelayedReward, showEpicBattlesAfterBattleWindow, showProgressiveRewardWindow, showRankedYearAwardWindow, showResourceWellProgressionWindow, showShop, showSteamConfirmEmailOverlay, showWotPlusIntroView, showBarracks
 from gui.shared.notifications import NotificationPriorityLevel
 from gui.shared.system_factory import collectAllNotificationsActionsHandlers, registerNotificationsActionsHandlers
 from gui.shared.utils import decorators
@@ -687,7 +687,7 @@ class OpenCustomizationHandler(ActionHandler):
                     ctx.editStyle(style.intCD, source=CustomizationModeSource.NOTIFICATION)
                 else:
                     ctx.changeMode(CustomizationModes.CUSTOM, source=CustomizationModeSource.NOTIFICATION)
-                ctx.mode.changeTab(tabId=CustomizationTabs.PROJECTION_DECALS, itemCD=itemCD)
+                ctx.changeTab(tabId=CustomizationTabs.PROJECTION_DECALS, itemCD=itemCD)
             return
 
         if vehicle.invID != -1:
@@ -894,6 +894,7 @@ class _OpenBattlePassProgressionView(NavigationDisabledActionHandler):
 
 
 class _OpenBattlePassChapterChoiceView(NavigationDisabledActionHandler):
+    __battlePassController = dependency.descriptor(IBattlePassController)
 
     @classmethod
     def getNotType(cls):
@@ -904,7 +905,9 @@ class _OpenBattlePassChapterChoiceView(NavigationDisabledActionHandler):
         return ('openBattlePassChapterChoiceView', )
 
     def doAction(self, model, entityID, action):
-        showMissionsBattlePass(R.views.lobby.battle_pass.ChapterChoiceView())
+        if self.__battlePassController.isSingleChapter():
+            return showMissionsBattlePass(R.views.lobby.battle_pass.BattlePassProgressionsView(), self.__battlePassController.getCurrentChapterID())
+        return showMissionsBattlePass(R.views.lobby.battle_pass.ChapterChoiceView())
 
 
 class _OpenBPExtraWillEndSoon(NavigationDisabledActionHandler):
@@ -1080,7 +1083,7 @@ class _OpenCustomizationStylesSection(NavigationDisabledActionHandler):
 
     @classmethod
     def __onCustomizationLoaded(cls):
-        cls.__customizationService.getCtx().changeMode(CustomizationModes.STYLED, CustomizationTabs.STYLES)
+        cls.__customizationService.getCtx().changeMode(CustomizationModes.STYLED, CustomizationTabs.STYLES_3D)
 
 
 class _OpenIntegratedAuction(NavigationDisabledActionHandler):
@@ -1153,20 +1156,6 @@ class _OpenBlackMarketFinish(_OpenBlackMarket):
     @classmethod
     def getActions(cls):
         return ('showBlackMarketFinishShop', )
-
-
-class _OpenPersonalReservesConversion(NavigationDisabledActionHandler):
-
-    @classmethod
-    def getNotType(cls):
-        return NOTIFICATION_TYPE.MESSAGE
-
-    @classmethod
-    def getActions(cls):
-        return ('openPersonalReservesConversion', )
-
-    def doAction(self, model, entityID, action):
-        showPersonalReservesConversion()
 
 
 class _OpenPersonalReservesHandler(NavigationDisabledActionHandler):
@@ -1647,7 +1636,6 @@ _AVAILABLE_HANDLERS = (
  _OpenBlackMarket,
  _OpenBlackMarketStart,
  _OpenBlackMarketFinish,
- _OpenPersonalReservesConversion,
  _OpenPersonalReservesHandler,
  _SeniorityAwardsTokensHandler,
  _OpenSeniorityAwards,

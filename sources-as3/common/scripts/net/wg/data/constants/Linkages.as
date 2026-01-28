@@ -851,8 +851,6 @@ package net.wg.data.constants
       
       public static const PLATOON_VEH_MARKER:String = "PlatoonMarkerUI";
       
-      public static const RACCOON_MARKER:String = "RaccoonMarkerUI";
-      
       public static const CUSTOM_MARKER:String = "CustomMarkerUI";
       
       public static const ITEM_SLOT_80X80_RENDERER:String = "ItemSlot80x80_UI";
@@ -883,6 +881,8 @@ package net.wg.data.constants
       
       public static const CUSTOMIZATION_IMAGE_WRAPPER:String = "CustomizationImageWrapperUI";
       
+      public static const CUSTOMIZATION_TAB_GROUP_DELIMITER:String = "CustomizationTabGroupDelimiterUI";
+      
       public static const BATTLE_ATLAS_SPRITE:String = "BattleAtlasSpriteUI";
       
       public static const QP_ATLAS_SPRITE:String = "QPAtlasSpriteUI";
@@ -908,6 +908,12 @@ package net.wg.data.constants
       public static const BASE_CONTESTED_UI_LINKAGE:String = "msgBaseContestedUI";
       
       public static const RANK_UP_UI_LINKAGE:String = "msgRankUpUI";
+      
+      public static const SUPPLY_UI_LINKAGE:String = "msgSupplyUI";
+      
+      public static const SUPPLY_ACTIVE_UI_LINKAGE:String = "msgSupplyActiveUI";
+      
+      public static const SUPPLY_ACTIVE_POSITIVE_UI_LINKAGE:String = "msgSupplyActivePositiveUI";
       
       public static const OBJECTIVE_DESTROYED_POSITIVE_UI_LINKAGE:String = "msgHQDestroyedPositiveUI";
       

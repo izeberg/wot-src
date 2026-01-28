@@ -20,6 +20,12 @@ package net.wg.gui.lobby.battleResults.data
       
       public var assistStun:String = "";
       
+      public var damageToSupplies:String = "";
+      
+      public var suppliesDestroyed:String = "";
+      
+      public var questsCompleted:String = "";
+      
       public var killTooltip:String = "";
       
       public var damageTooltip:String = "";

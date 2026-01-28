@@ -239,6 +239,8 @@ package net.wg.data.constants.generated
       
       public static const RIBBONS_STUN:String = "ribbonsStun";
       
+      public static const RIBBONS_SUPPLY_KILL:String = "ribbonsSupplyKill";
+      
       public static const TURRET_ARMOR:String = "turret_armor";
       
       public static const TURRET_HEALTH:String = "turret_health";
@@ -255,13 +257,21 @@ package net.wg.data.constants.generated
       
       public static const WHITE_EDGE:String = "whiteEdge";
       
+      public static const WHITE_ICON_AIRSHIP16X16:String = "whiteIconAirship16x16";
+      
       public static const WHITE_ICON_AT_SPG16X16:String = "whiteIconAt-SPG16x16";
+      
+      public static const WHITE_ICON_FLAMER16X16:String = "whiteIconFlamer16x16";
       
       public static const WHITE_ICON_HEAVY_TANK16X16:String = "whiteIconHeavyTank16x16";
       
       public static const WHITE_ICON_LIGHT_TANK16X16:String = "whiteIconLightTank16x16";
       
       public static const WHITE_ICON_MEDIUM_TANK16X16:String = "whiteIconMediumTank16x16";
+      
+      public static const WHITE_ICON_MORTAR16X16:String = "whiteIconMortar16x16";
+      
+      public static const WHITE_ICON_PILLBOX16X16:String = "whiteIconPillbox16x16";
       
       public static const WHITE_ICON_SPG16X16:String = "whiteIconSPG16x16";
        

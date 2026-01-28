@@ -10,6 +10,7 @@ package net.wg.gui.battle.views.vehicleMarkers
    import net.wg.data.constants.generated.BATTLE_MARKER_STATES;
    import net.wg.gui.battle.components.BattleUIComponent;
    import net.wg.gui.battle.views.vehicleMarkers.events.StatusAnimationEvent;
+   import net.wg.gui.battle.views.vehicleMarkers.statusMarkers.FLSupplyObjectSelfRepairMarker;
    import net.wg.gui.battle.views.vehicleMarkers.statusMarkers.VehicleAnimatedStatusBaseMarker;
    import net.wg.gui.battle.views.vehicleMarkers.statusMarkers.VehicleBerserkerMarker;
    import net.wg.gui.battle.views.vehicleMarkers.statusMarkers.VehicleEngineerEffectMarker;
@@ -41,6 +42,8 @@ package net.wg.gui.battle.views.vehicleMarkers
       public var flRegenerationKitMarker:VehicleFLBasicMarker = null;
       
       public var baseEngineerMarker:VehicleEngineerEffectMarker = null;
+      
+      public var supplySelfRepairMarker:FLSupplyObjectSelfRepairMarker = null;
       
       public var inspireMarker:VehicleInspireMarker = null;
       
@@ -118,6 +121,7 @@ package net.wg.gui.battle.views.vehicleMarkers
          this.setupMarker(BATTLE_MARKER_STATES.COMP7_AGGRESSIVE_DETECTION_STATE,this.statusMarker);
          this.setupMarker(BATTLE_MARKER_STATES.COMP7_POINT_RECON_STATE,this.statusMarker);
          this.setupMarker(BATTLE_MARKER_STATES.CONFIRMED_STATE,this.statusMarker);
+         this.setupMarker(BATTLE_MARKER_STATES.EPIC_SUPPLY_REPAIR_SELF_STATE,this.supplySelfRepairMarker);
          this._separateMarkers = new Dictionary();
       }
       
@@ -126,6 +130,7 @@ package net.wg.gui.battle.views.vehicleMarkers
          super.configUI();
          this.stunMarker.addEventListener(StatusAnimationEvent.EVENT_HIDDEN,this.onStatusAnimationEventHiddenHandler);
          this.baseEngineerMarker.addEventListener(StatusAnimationEvent.EVENT_HIDDEN,this.onStatusAnimationEventHiddenHandler);
+         this.supplySelfRepairMarker.addEventListener(StatusAnimationEvent.EVENT_HIDDEN,this.onStatusAnimationEventHiddenHandler);
          this.inspireMarker.addEventListener(StatusAnimationEvent.EVENT_HIDDEN,this.onStatusAnimationEventHiddenHandler);
          this.inspireTargetMarker.addEventListener(StatusAnimationEvent.EVENT_HIDDEN,this.onStatusAnimationEventHiddenHandler);
          this.healMarker.addEventListener(StatusAnimationEvent.EVENT_HIDDEN,this.onStatusAnimationEventHiddenHandler);
@@ -140,6 +145,7 @@ package net.wg.gui.battle.views.vehicleMarkers
          this.statusMarker.addEventListener(StatusAnimationEvent.EVENT_HIDDEN,this.onStatusAnimationEventHiddenHandler);
          this.stunMarker.setupFrameEvents();
          this.baseEngineerMarker.setupFrameEvents();
+         this.supplySelfRepairMarker.setupFrameEvents();
          this.inspireMarker.setupFrameEvents();
          this.inspireTargetMarker.setupFrameEvents();
          this.healMarker.setupFrameEvents();
@@ -160,6 +166,7 @@ package net.wg.gui.battle.views.vehicleMarkers
          var _loc2_:VehicleSpecialAbilityMarker = null;
          this.stunMarker.removeEventListener(StatusAnimationEvent.EVENT_HIDDEN,this.onStatusAnimationEventHiddenHandler);
          this.baseEngineerMarker.removeEventListener(StatusAnimationEvent.EVENT_HIDDEN,this.onStatusAnimationEventHiddenHandler);
+         this.supplySelfRepairMarker.removeEventListener(StatusAnimationEvent.EVENT_HIDDEN,this.onStatusAnimationEventHiddenHandler);
          this.inspireMarker.removeEventListener(StatusAnimationEvent.EVENT_HIDDEN,this.onStatusAnimationEventHiddenHandler);
          this.inspireTargetMarker.removeEventListener(StatusAnimationEvent.EVENT_HIDDEN,this.onStatusAnimationEventHiddenHandler);
          this.healMarker.removeEventListener(StatusAnimationEvent.EVENT_HIDDEN,this.onStatusAnimationEventHiddenHandler);
@@ -176,6 +183,8 @@ package net.wg.gui.battle.views.vehicleMarkers
          this._markerTweens = null;
          this.baseEngineerMarker.dispose();
          this.baseEngineerMarker = null;
+         this.supplySelfRepairMarker.dispose();
+         this.supplySelfRepairMarker = null;
          this.inspireMarker.dispose();
          this.inspireMarker = null;
          this.stunMarker.dispose();

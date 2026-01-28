@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodelessVisual>vehicles/british/GB143_Captain/_skins/GB143_Captain_3Dst_01/crash/lod2/Gun_01</nodelessVisual>
+	<parent>vehicles/british/GB143_Captain/_skins/GB143_Captain_3Dst_01/crash/lod3/Gun_01</parent>
+	<tank>true</tank>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.064948 -0.346706 -1.436838</min>
+		<max>1.063490 0.507357 4.191418</max>
+	</visibilityBox>
+</root>

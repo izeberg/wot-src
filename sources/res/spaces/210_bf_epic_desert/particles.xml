@@ -47,6 +47,7 @@
 		<fn_effect_bin>particles/content_forward/pfx/environment/buildings/inf_bldaf_module_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/buildings/inf_mle002_kpp_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/buildings/inf_mle002_kpp_02.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/interior/04_himmelsdorf_fire_big.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/interior/210_bf_epic_desert_dust_blow_ground.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/interior/210_bf_epic_desert_dust_blow_ground_s.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/interior/210_bf_epic_dot_light_01.vfx</fn_effect_bin>
@@ -75,6 +76,8 @@
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/hd_env_am_071_roadlighting_fall.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/hd_env_am_071_roadlighting_touchdown.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/hd_env_am_075_trashcan.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/objects/hd_env_eu_085_bike_bmwr75_01.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/objects/hd_env_eu_085_bike_bmwr75_01_hit.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/hd_env_uni_628_ventilationsys_04.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/hd_env_uni_628_ventilationsys_corner.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/hd_env_uni_628_ventilationsys_tile.vfx</fn_effect_bin>
@@ -83,6 +86,7 @@
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/hd_gaf_uni_016_rabitz_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/hd_gaf_uni_016_rabitz_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/hd_gaf_uni_016_rabitz_03.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/objects/hd_mle_asjp_003_twinaagun.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/hd_mle_uni_811_camouflagetent_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_env005_tun.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_env012_chairs.vfx</fn_effect_bin>
@@ -93,6 +97,7 @@
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_env418_oldgmercedes.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_env418_oldgmercedes3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_env613_stand.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_env614_scaffolding_crash.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_env_af_028_well.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_env_af_030_commodityshelf.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_env_eu_461_umbrella.vfx</fn_effect_bin>
@@ -103,6 +108,9 @@
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_envaf_007_aircraftrefueller.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_envaf_012_shed_2.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_envaf_013_cart.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_envam_002_barrels_01.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_envam_002_barrels_02_03.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_envam_002_barrels_04.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_envam_003_dustbin_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_envja_011_smallpolefracture.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_fuel_env418_oldgmercedes.vfx</fn_effect_bin>
@@ -124,11 +132,14 @@
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_mle001_fuel.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_mle019_gerboxes1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_mle046_bag1.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_mle053_czech_hedgehog.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_mleaf_003_westlandlysander.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_mlesu_05_03_pak40_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_mlesu_83_10_gazmm_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_mlesu_83_10_gazmm_2.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_rw004_carriage2.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_rw007_tupik.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_shells_detonation_small.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_streetlamp_fracture.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/objects/inf_streetlamp_touchdown.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/scenarios/105_air_smoke_trail_dense.vfx</fn_effect_bin>
@@ -159,6 +170,7 @@
 		<fn_effect_bin>particles/environment/buildings/inf_bldaf_module_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/buildings/inf_mle002_kpp_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/buildings/inf_mle002_kpp_02.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/04_himmelsdorf_fire_big.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/210_bf_epic_desert_dust_blow_ground.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/210_bf_epic_desert_roof_sand.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/210_bf_epic_desert_sand_floor_ee.eff</fn_effect_bin>
@@ -192,6 +204,8 @@
 		<fn_effect_bin>particles/environment/objects/hd_env_am_071_roadlighting_fall.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_env_am_071_roadlighting_touchdown.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_env_am_075_trashcan.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/hd_env_eu_085_bike_bmwr75_01.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/hd_env_eu_085_bike_bmwr75_01_hit.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_env_uni_628_ventilationsys_04.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_env_uni_628_ventilationsys_corner.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_env_uni_628_ventilationsys_tile.eff</fn_effect_bin>
@@ -200,6 +214,7 @@
 		<fn_effect_bin>particles/environment/objects/hd_gaf_uni_016_rabitz_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_gaf_uni_016_rabitz_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_gaf_uni_016_rabitz_03.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/hd_mle_asjp_003_twinaagun.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_mle_uni_811_camouflagetent_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_env005_tun.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_env012_chairs.eff</fn_effect_bin>
@@ -209,6 +224,7 @@
 		<fn_effect_bin>particles/environment/objects/inf_env417_bicycle.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_env418_oldgmercedes3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_env613_stand.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_env614_scaffolding_crash.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_env_af_028_well.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_env_af_030_commodityshelf.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_env_eu_461_umbrella.eff</fn_effect_bin>
@@ -219,6 +235,9 @@
 		<fn_effect_bin>particles/environment/objects/inf_envaf_007_aircraftrefueller.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_envaf_012_shed_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_envaf_013_cart.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_envam_002_barrels_01.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_envam_002_barrels_02_03.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_envam_002_barrels_04.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_envam_003_dustbin_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_envja_011_smallpolefracture.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_fuel_env418_oldgmercedes2.eff</fn_effect_bin>
@@ -240,11 +259,14 @@
 		<fn_effect_bin>particles/environment/objects/inf_mle001_fuel.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_mle019_gerboxes1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_mle046_bag1.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_mle053_czech_hedgehog.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_mleaf_003_westlandlysander.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_mlesu_05_03_pak40_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_mlesu_83_10_gazmm_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_mlesu_83_10_gazmm_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_rw004_carriage2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_rw007_tupik.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_shells_detonation_small.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_streetlamp_fracture.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_streetlamp_touchdown.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/scenarios/105_air_smoke_trail_dense.eff</fn_effect_bin>
@@ -269,6 +291,7 @@
 		<fn_effect_bin>particles/environment/trees/conifers/tree_pheonixpalm_big01_fall.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/trees/conifers/tree_pheonixpalm_big01_touchdown.eff</fn_effect_bin>
 		<preloadVisual>particles/mesh_particles/metal_stick.visual</preloadVisual>
+		<preloadVisual>particles/mesh_particles/metal_tube_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/metal_tube_02.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/stone_concrete_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/stone_concrete_02.visual</preloadVisual>
@@ -409,6 +432,7 @@
 		<fn_effect_bin>particles/content_deferred/pfx/environment/buildings/inf_mle002_kpp_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/cameraeffects/210_bf_epic_desert_sand_drift.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/cameraeffects/210_bf_epic_desert_sand_drift_floor_heavy_p.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/interior/04_himmelsdorf_fire_big.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/interior/210_bf_epic_desert_roof_sand.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/interior/210_bf_epic_desert_sand_single_spot.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/interior/210_bf_epic_desert_shimmer_distant.vfx</fn_effect_bin>
@@ -437,6 +461,8 @@
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/hd_env_am_071_roadlighting_fall.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/hd_env_am_071_roadlighting_touchdown.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/hd_env_am_075_trashcan.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/hd_env_eu_085_bike_bmwr75_01.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/hd_env_eu_085_bike_bmwr75_01_hit.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/hd_env_uni_628_ventilationsys_04.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/hd_env_uni_628_ventilationsys_corner.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/hd_env_uni_628_ventilationsys_tile.vfx</fn_effect_bin>
@@ -445,6 +471,7 @@
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/hd_gaf_uni_016_rabitz_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/hd_gaf_uni_016_rabitz_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/hd_gaf_uni_016_rabitz_03.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/hd_mle_asjp_003_twinaagun.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/hd_mle_uni_811_camouflagetent_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_env005_tun.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_env012_chairs.vfx</fn_effect_bin>
@@ -455,6 +482,7 @@
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_env418_oldgmercedes.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_env418_oldgmercedes3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_env613_stand.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_env614_scaffolding_crash.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_env_af_028_well.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_env_af_030_commodityshelf.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_env_eu_461_umbrella.vfx</fn_effect_bin>
@@ -465,6 +493,9 @@
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_envaf_007_aircraftrefueller.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_envaf_012_shed_2.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_envaf_013_cart.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_envam_002_barrels_01.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_envam_002_barrels_02_03.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_envam_002_barrels_04.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_envam_003_dustbin_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_envja_011_smallpolefracture.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_fuel_env418_oldgmercedes.vfx</fn_effect_bin>
@@ -486,11 +517,14 @@
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_mle001_fuel.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_mle019_gerboxes1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_mle046_bag1.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_mle053_czech_hedgehog.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_mleaf_003_westlandlysander.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_mlesu_05_03_pak40_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_mlesu_83_10_gazmm_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_mlesu_83_10_gazmm_2.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_rw004_carriage2.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_rw007_tupik.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_shells_detonation_small.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_streetlamp_fracture.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/objects/inf_streetlamp_touchdown.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/scenarios/105_air_smoke_trail_dense.vfx</fn_effect_bin>
@@ -521,6 +555,7 @@
 		<fn_effect_bin>particles/environment/buildings/inf_bldaf_module_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/buildings/inf_mle002_kpp_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/buildings/inf_mle002_kpp_02.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/04_himmelsdorf_fire_big.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/210_bf_epic_desert_roof_sand.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/210_bf_epic_desert_sand_single_spot.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/210_bf_epic_desert_shimmer_distant.eff</fn_effect_bin>
@@ -548,6 +583,8 @@
 		<fn_effect_bin>particles/environment/objects/hd_env_am_071_roadlighting_fall.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_env_am_071_roadlighting_touchdown.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_env_am_075_trashcan.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/hd_env_eu_085_bike_bmwr75_01.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/hd_env_eu_085_bike_bmwr75_01_hit.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_env_uni_628_ventilationsys_04.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_env_uni_628_ventilationsys_corner.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_env_uni_628_ventilationsys_tile.eff</fn_effect_bin>
@@ -556,6 +593,7 @@
 		<fn_effect_bin>particles/environment/objects/hd_gaf_uni_016_rabitz_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_gaf_uni_016_rabitz_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_gaf_uni_016_rabitz_03.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/hd_mle_asjp_003_twinaagun.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_mle_uni_811_camouflagetent_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_env005_tun.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_env012_chairs.eff</fn_effect_bin>
@@ -565,6 +603,7 @@
 		<fn_effect_bin>particles/environment/objects/inf_env417_bicycle.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_env418_oldgmercedes3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_env613_stand.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_env614_scaffolding_crash.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_env_af_028_well.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_env_af_030_commodityshelf.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_env_eu_461_umbrella.eff</fn_effect_bin>
@@ -575,6 +614,9 @@
 		<fn_effect_bin>particles/environment/objects/inf_envaf_007_aircraftrefueller.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_envaf_012_shed_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_envaf_013_cart.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_envam_002_barrels_01.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_envam_002_barrels_02_03.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_envam_002_barrels_04.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_envam_003_dustbin_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_envja_011_smallpolefracture.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_fuel_env418_oldgmercedes2.eff</fn_effect_bin>
@@ -596,11 +638,14 @@
 		<fn_effect_bin>particles/environment/objects/inf_mle001_fuel.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_mle019_gerboxes1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_mle046_bag1.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_mle053_czech_hedgehog.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_mleaf_003_westlandlysander.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_mlesu_05_03_pak40_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_mlesu_83_10_gazmm_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_mlesu_83_10_gazmm_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_rw004_carriage2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_rw007_tupik.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/objects/inf_shells_detonation_small.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_streetlamp_fracture.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/inf_streetlamp_touchdown.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/scenarios/105_air_smoke_trail_dense.eff</fn_effect_bin>
@@ -626,6 +671,7 @@
 		<fn_effect_bin>particles/environment/trees/conifers/tree_pheonixpalm_big01_touchdown.eff</fn_effect_bin>
 		<preloadVisual>particles/mesh_particles/glass_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/metal_stick.visual</preloadVisual>
+		<preloadVisual>particles/mesh_particles/metal_tube_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/metal_tube_02.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/stone_concrete_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/stone_concrete_02.visual</preloadVisual>

@@ -2196,7 +2196,7 @@
 		<kind>ARMOR_PIERCING_CR</kind>
 		<caliber>85</caliber>
 		<isTracer>true</isTracer>
-		<effects>hugeAPCR</effects>
+		<effects>mainAPCR</effects>
 		<damage>
 			<armor>620</armor>
 			<devices>175</devices>
@@ -2211,7 +2211,7 @@
 		<kind>ARMOR_PIERCING_CR</kind>
 		<caliber>85</caliber>
 		<isTracer>true</isTracer>
-		<effects>hugeAPCR</effects>
+		<effects>mainAPCR</effects>
 		<damage>
 			<armor>620</armor>
 			<devices>175</devices>
@@ -2230,7 +2230,7 @@
 			<!--BW_String-->
 		</explosionRadius>
 		<isTracer>true</isTracer>
-		<effects>hugeHighExplosive</effects>
+		<effects>mainHighExplosive</effects>
 		<damage>
 			<armor>780</armor>
 			<devices>175</devices>
@@ -2255,7 +2255,7 @@
 		<kind>ARMOR_PIERCING_CR</kind>
 		<caliber>85</caliber>
 		<isTracer>true</isTracer>
-		<effects>hugeAPCR</effects>
+		<effects>mainAPCR</effects>
 		<damage>
 			<armor>620</armor>
 			<devices>175</devices>
@@ -2270,7 +2270,7 @@
 		<kind>ARMOR_PIERCING_CR</kind>
 		<caliber>85</caliber>
 		<isTracer>true</isTracer>
-		<effects>hugeAPCR</effects>
+		<effects>mainAPCR</effects>
 		<damage>
 			<armor>620</armor>
 			<devices>175</devices>
@@ -2289,7 +2289,7 @@
 			<!--BW_String-->
 		</explosionRadius>
 		<isTracer>true</isTracer>
-		<effects>hugeHighExplosive</effects>
+		<effects>mainHighExplosive</effects>
 		<damage>
 			<armor>780</armor>
 			<devices>175</devices>

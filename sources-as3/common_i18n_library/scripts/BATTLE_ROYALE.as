@@ -295,6 +295,12 @@ package
       
       public static const BATTLERESULT_BATTLEPASSWIDGET_PROGRESSIONCOMPLETED:String = "#battle_royale:battleResult/battlePassWidget/progressionCompleted";
       
+      public static const BATTLERESULT_BATTLEPASSWIDGET_PROGRESSIONCOMPLETEDSINGLE:String = "#battle_royale:battleResult/battlePassWidget/progressionCompletedSingle";
+      
+      public static const BATTLERESULT_BATTLEPASSWIDGET_POINTSSHOPDISABLEDSINGLE:String = "#battle_royale:battleResult/battlePassWidget/pointsShopDisabledSingle";
+      
+      public static const BATTLERESULT_BATTLEPASSWIDGET_POINTSSHOPDISABLED:String = "#battle_royale:battleResult/battlePassWidget/pointsShopDisabled";
+      
       public static const BATTLERESULT_BATTLEPASSWIDGET_CHAPTERNOTCHOSEN:String = "#battle_royale:battleResult/battlePassWidget/chapterNotChosen";
       
       public static const BATTLERESULT_BATTLEPASSWIDGET_TOOLTIPS_CHAPTERNOTCHOSEN:String = "#battle_royale:battleResult/battlePassWidget/tooltips/chapterNotChosen";
@@ -302,6 +308,10 @@ package
       public static const BATTLERESULT_BATTLEPASSWIDGET_TOOLTIPS_INPROGRESS:String = "#battle_royale:battleResult/battlePassWidget/tooltips/inProgress";
       
       public static const BATTLERESULT_BATTLEPASSWIDGET_TOOLTIPS_PROGRESSIONCOMPLETED:String = "#battle_royale:battleResult/battlePassWidget/tooltips/progressionCompleted";
+      
+      public static const BATTLERESULT_BATTLEPASSWIDGET_ACHIEVEDPOINTS:String = "#battle_royale:battleResult/battlePassWidget/achievedPoints";
+      
+      public static const BATTLERESULT_BATTLEPASSWIDGET_POINTSSTATS:String = "#battle_royale:battleResult/battlePassWidget/pointsStats";
       
       public static const BATTLERESULT_BATTLEQUESTSWIDGET_QUESTSCOMPLETE:String = "#battle_royale:battleResult/battleQuestsWidget/questsComplete";
       

@@ -1038,6 +1038,9 @@ msgstr "Сталёвыя пячаткі"
 msgid "bonusName/camouflage"
 msgstr "Камуфляж"
 
+msgid "bonusName/clan_season_progress"
+msgstr "Кланавая манета"
+
 msgid "bonusName/completionTokens"
 msgstr "Кампаненты"
 
@@ -1161,9 +1164,6 @@ msgstr "Дэколь"
 msgid "bonusName/emblem"
 msgstr "Эмблема"
 
-msgid "bonusName/entitlements/ny26_marketplace_unlock"
-msgstr "Адкрыты доступ да куплі стыляў мінулых гадоў!"
-
 msgid "bonusName/entitlements/paragon_rewards_choice_v_11"
 msgstr "Тэхніка ХІ узроўню"
 
@@ -1172,6 +1172,12 @@ msgstr "Павелічэнне зніжкі"
 
 msgid "bonusName/entitlements/ranked_202203_access"
 msgstr "Доступ да куплі"
+
+msgid "bonusName/entitlements/shevents_clan_chevron"
+msgstr "Кланавы шаўрон"
+
+msgid "bonusName/entitlements/shevents_clan_coupon"
+msgstr "Кланавы купон"
 
 msgid "bonusName/entitlements/testEntitlement"
 msgstr "Тестовый энтайтлемент"
@@ -1215,21 +1221,6 @@ msgstr "Надпіс"
 msgid "bonusName/modification"
 msgstr "Эфект"
 
-msgid "bonusName/newYearSlot"
-msgstr "Навагодні слот"
-
-msgid "bonusName/ny22Fillers"
-msgstr "Антыпаўтаральнік"
-
-msgid "bonusName/nyractiv"
-msgstr "Мячык"
-
-msgid "bonusName/nyrfood"
-msgstr "Яблык"
-
-msgid "bonusName/nyrfun"
-msgstr "Расчоска"
-
 msgid "bonusName/paint"
 msgstr "Фарба"
 
@@ -1248,17 +1239,11 @@ msgstr "Танкавы прэміум акаўнт"
 msgid "bonusName/projectionDecal"
 msgstr "Дэколь"
 
-msgid "bonusName/quests"
-msgstr "Доступ для асаблівай катэгорыі задач"
-
 msgid "bonusName/rankedBonusBattles"
 msgstr "Стандартны прызавы бой."
 
 msgid "bonusName/rankedDailyBattles"
 msgstr "Штодзённы прызавы бой."
-
-msgid "bonusName/sacoin"
-msgstr "Жэтоны заслужанай узнагароды"
 
 msgid "bonusName/slots"
 msgstr "Слоты ў Гаражы"
@@ -1370,9 +1355,6 @@ msgstr "Ключ"
 msgid "bonuses/item/lootBoxes"
 msgstr "Кантэйнер"
 
-msgid "bonuses/item/lootBoxesMachine"
-msgstr "Жэтоны для аўтамата ўдачы"
-
 msgid "bonuses/item/premium"
 msgstr "Агульны прэміум акаўнт (сут):"
 
@@ -1415,12 +1397,6 @@ msgstr "Дзён Танкавага прэміум акаўнту: %(value)s"
 
 msgid "bonuses/tankmen/description"
 msgstr "%(value)s"
-
-msgid "bonuses/variadicDiscount/buttonLabel"
-msgstr "Выбраць"
-
-msgid "bonuses/variadicDiscount/discountAmount"
-msgstr "-{amount}%"
 
 msgid "bonuses/vehicles/crewLvl"
 msgstr "%d%% экіпаж"
@@ -1573,7 +1549,7 @@ msgstr "Усе стандартныя штодзённыя задачы выка
 
 msgid "dailyQuests/countDown/tooltip/body"
 msgstr ""
-"Штодзённыя задачы даступныя на працягу сутак і абнаўляюцца ў 03.00 (МСК). "
+"Штодзённыя задачы даступныя на працягу сутак і абнаўляюцца ў 03.00 (Мінск). "
 "Пасля абнаўлення будуць заменены ўсе стандартныя, бонусныя і прэміум задачы."
 
 msgid "dailyQuests/countDown/tooltip/header"
@@ -1592,27 +1568,6 @@ msgstr "ШТОДЗЁННЫЯ ЗАДАЧЫ"
 
 msgid "dailyQuests/header/winback"
 msgstr "ЗНОЎ У СТРОЙ"
-
-msgid "dailyQuests/info/NYDailyMissions"
-msgstr ""
-"Стандартныя задачы складаюцца з выпадковых умоў, а выконваць іх можна "
-"штодзённа. Як і ў Асабістых баявых задачах, прагрэс выканання стандартных "
-"задач абнаўляецца пасля кожнага бою. Гэтыя задачы лепш выконваць у дзень іх "
-"выдачы, інакш яны перанясуцца на наступны дзень, а наступная задача не будзе"
-" выдадзена да выканання бягучай. Падчас падзеі ў задачу абавязкова дадаюцца "
-"малыя кантэйнеры і святочныя маркі ў дадатак да ўзнагароды."
-
-msgid "dailyQuests/info/dailyMissionTitle"
-msgstr "Стандартныя задачы"
-
-msgid "dailyQuests/info/giftSystemDisabledDailyMissions"
-msgstr ""
-"Стандартныя задачы складаюцца з выпадковых умоў, а выконваць іх можна "
-"штодзённа. Як і ў Асабістых баявых задачах, прагрэс выканання стандартных "
-"задач абнаўляецца пасля кожнага бою. Гэтыя задачы лепш выконваць у дзень іх "
-"выдачы, інакш яны перанясуцца на наступны дзень, а наступная задача не будзе"
-" выдадзена да выканання бягучай. Падчас падзеі ў задачу абавязкова дадаюцца "
-"малыя кантэйнеры і святочныя маркі ў дадатак да ўзнагароды."
 
 msgid "dailyQuests/locked/title"
 msgstr "Выканана задач:"
@@ -1794,25 +1749,6 @@ msgstr "прэміум"
 
 msgid "dailyReroll/tooltip/usual"
 msgstr "стандартных"
-
-msgid "dailyWidget/nyCard/title"
-msgstr "Задачы Дзеда Мароза"
-
-msgid "dailyWidget/nyCard/tooltip/body/default"
-msgstr ""
-"Завітайце да Дзеда Мароза, каб пазнаёміцца са штодзённымі і штотыднёвымі "
-"задачамі, выкананне якіх будзе шчодра ўзнагароджвацца."
-
-msgid "dailyWidget/nyCard/tooltip/body/disabled"
-msgstr ""
-"Задачы Дзеда Мароза часова недаступныя. Хутка ўсё ўстане на свае месцы, не "
-"пераключайцеся!"
-
-msgid "dailyWidget/nyCard/tooltip/body/done"
-msgstr "Зараз усе задачы выкананы. Чакаем вас пазней!"
-
-msgid "dailyWidget/nyCard/tooltip/header"
-msgstr "Задачы Дзеда Мароза"
 
 msgid "dailyWidget/progress"
 msgstr "%(currentProgress)s/%(maxProgress)s"
@@ -2083,8 +2019,8 @@ msgstr "Ачкі прэстыжу"
 
 msgid "details/conditions/cumulative/critsCount"
 msgstr ""
-"Сума пашкоджаных або выведзеных са строю ўнутраных і (або) вонкавых модуляў,"
-" а таксама параненых танкістаў экіпажу супраціўніка"
+"Сума пашкоджаных або выведзеных са строю ўнутраных і/або вонкавых модуляў, "
+"а таксама параненых членаў экіпажа праціўніка"
 
 msgid "details/conditions/cumulative/damageAssisted"
 msgstr "Пашкоджанні, прыч. з вашай дапамогай"
@@ -2204,13 +2140,13 @@ msgstr "Рыкашэты ад супраціўніка"
 
 msgid "details/conditions/cumulative/innerModuleCritCount"
 msgstr ""
-"Сума пашкоджаных або выведзеных са строю ўнутраных модуляў, а таксама "
+"Сума пашкоджаных або выведзеных са строю ўнутраных модуляў, а таксама "
 "параненых танкістаў экіпажу супраціўніка"
 
 msgid "details/conditions/cumulative/innerModuleDestrCount"
 msgstr ""
-"Сума выведзеных са строю ўнутраных модуляў і (або) параненых танкістаў "
-"экіпажу супраціўніка"
+"Сума выведзеных са строю ўнутраных модуляў і/або параненых членаў экіпажа "
+"праціўніка"
 
 msgid "details/conditions/cumulative/isAnyOurCrittedInnerModules"
 msgstr ""
@@ -3868,7 +3804,7 @@ msgid "details/dossier/medalBrothersInArms"
 msgstr "«Таварышы па зброі»"
 
 msgid "details/dossier/medalBrunoPietro"
-msgstr "Медаль Бруна"
+msgstr "Медаль Фокіна"
 
 msgid "details/dossier/medalBurda"
 msgstr "Медаль Бурды"
@@ -3925,7 +3861,7 @@ msgid "details/dossier/medalOskin"
 msgstr "Медаль Оськіна"
 
 msgid "details/dossier/medalPascucci"
-msgstr "Медаль Паскýччы"
+msgstr "Медаль Слюняева"
 
 msgid "details/dossier/medalPoppel"
 msgstr "Ступень медаля Попеля"
@@ -4895,18 +4831,6 @@ msgstr "Пра штодзённыя задачы"
 msgid "infoPage/infoButtonTooltip/header/winback"
 msgstr "Пра задачы"
 
-msgid "infoPage/lootboxConditions/button"
-msgstr "Так!"
-
-msgid "infoPage/lootboxConditions/default"
-msgstr ""
-"Падчас усёй святочнай падзеі да ўзнагарод за выкананне штодзённых задач "
-"будуць дадаткова выдавацца кантэйнеры з ёлачнымі аздобкамі як за стандартныя"
-" задачы, так і за бонусную."
-
-msgid "infoPage/lootboxConditionsTitle"
-msgstr "Скрынкі за мандарынамі ў штодзённых задачах"
-
 msgid "infoPage/missionSwitch/winback"
 msgstr ""
 "Раз на 4 гадзіны любую са стандартных задач можна замяніць на іншую "
@@ -5057,12 +4981,6 @@ msgstr "Стратэгічная задача"
 
 msgid "item/type/specialMission"
 msgstr "Умацаваны раён: асобыя ўказанні"
-
-msgid "lootBox/boxCount"
-msgstr "x%(count)s"
-
-msgid "lootBox/boxesLabel"
-msgstr "Кантэйнер %(boxName)s %(boxCount)s"
 
 msgid "metrics/state/done"
 msgstr "Завершана"
@@ -5539,164 +5457,6 @@ msgstr "...у наступных рэжымах"
 
 msgid "modeSelector/tooltip/title"
 msgstr "Задачы можна выканаць..."
-
-msgid "nyInfo/block/subtitle/first"
-msgstr ""
-"Дзед Мароз будзе зачытваць лісты гульцоў да яго. Або яго лісты да гульцоў. "
-"Мы пакуль самі не зразумелі, вы ўжо лепш самі разбярыцеся. Але дзесьці там "
-"дакладна ёсць узнагароды."
-
-msgid "nyInfo/block/subtitle/second"
-msgstr ""
-"Тут знаходзяцца задачы, колькасць якіх абмежавана адным днём. Выканалі ўсе —"
-" заўтра заходзьце па новыя."
-
-msgid "nyInfo/block/subtitle/third"
-msgstr ""
-"Тут знаходзіцца ваш план дзеянняў на тыдзень. Звярніце ўвагу: спіс уключае "
-"таксама дзве працяглыя задачы, даступныя падчас усёй падзеі."
-
-msgid "nyInfo/block/title/first"
-msgstr "Лісты гульцу ад Дзеда Мароза"
-
-msgid "nyInfo/block/title/second"
-msgstr "Штодзённыя задачы"
-
-msgid "nyInfo/block/title/third"
-msgstr "Штодзённыя задачы"
-
-msgid "nyInfo/button/accept"
-msgstr "Так!"
-
-msgid "nyInfo/close"
-msgstr "ЗАКРЫЦЬ"
-
-msgid "nyInfo/subtitle"
-msgstr ""
-"Тут можна ўзяць задачы асабіста ў Дзеда Мароза, за выкананне якіх ён шчодра "
-"ўзнагародзіць вас."
-
-msgid "nyInfo/title"
-msgstr "ЗАДАЧЫ ДЗЕДА МАРОЗА"
-
-msgid "nyQuestsView/footerText/1"
-msgstr ""
-"Першы ліст. Пра што мараць простыя сібірскія хлопцы? І што яны пажадаюць "
-"распрацоўшчыкам? Адказ — у галасавым ад Дзеда Мароза."
-
-msgid "nyQuestsView/footerText/2"
-msgstr ""
-"Чаго прагне загадкавая душа беларускіх хлопцаў? Здаецца, Дзед Мароз разгадаў"
-" таямніцу, над якой біліся брытанскія вучоныя!"
-
-msgid "nyQuestsView/footerText/3"
-msgstr ""
-"Чуеце шум крылаў горнага арла?! Гэта Дзел Мароз чытае новы ліст, з якога вы "
-"даведаецеся запаветныя мары гарачых каўказскіх хлопцаў."
-
-msgid "nyQuestsView/footerText/4"
-msgstr ""
-"На што здольныя гарачыя паўночна-заходнія хлопцы? Пра гэта раскажа чарговы "
-"ліст!"
-
-msgid "nyQuestsView/footerText/5"
-msgstr ""
-"Ого! Цэнтравыя хлопцы не толькі гарачыя, але і... Зрэшты, захаваем інтрыгу. "
-"Слухайце новае пасланне ад Дзеда Мароза!"
-
-msgid "nyQuestsView/footerText/6"
-msgstr ""
-"Паштовы марафон працягваецца. Гэтым разам Дзед Мароз выцягнуў з мяшка ліст "
-"ад гарачых паволжскіх хлопцаў. І чаго ў ім толькі няма..."
-
-msgid "nyQuestsView/footerText/7"
-msgstr ""
-"Мы не ведаем, ці ходзяць далёкаўсходнія хлопцы ў Японію пешкі, але назад яны"
-" дакладна едуць на колах! Дэталі — у новым лісце!"
-
-msgid "nyQuestsView/footerText/8"
-msgstr ""
-"Дзед Мароз з тугою зачытвае апошні ліст ад гарачых уральскіх хлопцаў. "
-"Дазволілі сабе крыху сантыментаў. Прабачце. І з Новым годам!"
-
-msgid "nyQuestsView/levels"
-msgstr "%(min)s - %(max)s"
-
-msgid "nyQuestsView/replyBtn"
-msgstr ""
-"Праслухаць\n"
-"паўторна"
-
-msgid "nyQuestsView/stopBtn"
-msgstr ""
-"Спыніць\n"
-"паведамленне"
-
-msgid "nyQuestsView/switch/daily"
-msgstr "ШТОДЗЁННЫЯ ЗАДАЧЫ"
-
-msgid "nyQuestsView/switch/weekly"
-msgstr "ШТОТЫДНЁВЫЯ ЗАДАЧА"
-
-msgid "nyQuestsView/timeSpend/hours"
-msgstr "%(hours)s гадз"
-
-msgid "nyQuestsView/timeSpend/hoursMinutes"
-msgstr "%(hours)s гадз %(minutes)s хв"
-
-msgid "nyQuestsView/timeSpend/minutes"
-msgstr "%(minutes)s хв."
-
-msgid "nyQuestsView/timeSpend/text/default"
-msgstr "Абнаўленне задач:"
-
-msgid "nyQuestsView/timeSpend/text/short"
-msgstr "Абнаўленне:"
-
-msgid "nyQuestsView/vehicleLevel/extraSmall"
-msgstr "На тэхніцы: %(value)s узроўню"
-
-msgid "nyQuestsView/vehicleLevel/large"
-msgstr "Выконваюцца на тэхніцы: %(value)s узроўню"
-
-msgid "nyQuestsView/vehicleLevel/medium"
-msgstr "На тэхніцы: %(value)s узроўню"
-
-msgid "nyQuestsView/vehicleLevel/small"
-msgstr "Тэхніка: %(value)s узроўню"
-
-msgid "nyQuestsView/voiceEnabled/title"
-msgstr "Агучка ў Гаражы"
-
-msgid "nyQuestsView/voiceEnabled/tooltip/body"
-msgstr ""
-"Тут можна ўключыць або адключыць галасавыя паведамленні, якімі Дзед Мароз "
-"будзе каментаваць вашы дзеянні, пакуль вы знаходзіцеся ў Гаражы."
-
-msgid "nyQuestsView/voiceEnabled/tooltip/header"
-msgstr "Агучка дзеянняў гульца"
-
-msgid "nyTabView/category/label"
-msgstr "Задачы Дзеда Мароза"
-
-msgid "nyTabView/category/tooltip/body"
-msgstr "Націсніце, каб падрабязней даведацца пра задачы Дзеда Мароза."
-
-msgid "nyTabView/category/tooltip/header"
-msgstr "Пра задачы Дзеда Мароза"
-
-msgid "nyTabView/title/default"
-msgstr ""
-"Выконвайце адмысловыя задачы Дзеда Мароза, каб атрымаць каштоўныя "
-"ўзнагароды."
-
-msgid "nyTabView/title/disabled"
-msgstr ""
-"Задачы Дзеда Мароза часова недаступныя. Хутка ўсё ўстане на свае месцы, не "
-"пераключайцеся!"
-
-msgid "nyTabView/title/done"
-msgstr "Зараз усе задачы выкананы. Чакаем вас пазней!"
 
 msgid "personal/seasons/awardsButton"
 msgstr "Узнагароды кампаніі"

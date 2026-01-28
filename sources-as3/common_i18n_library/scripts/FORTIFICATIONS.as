@@ -79,6 +79,8 @@ package
       
       public static const FORTBATTLEROOM_LISTHEADER_LEGIONARIESPLAYERS:String = "#fortifications:fortBattleRoom/listHeader/legionariesPlayers";
       
+      public static const FORTBATTLEROOM_FREEZEJOURNAL:String = "#fortifications:fortBattleRoom/freezeJournal";
+      
       public static const STRONGHOLDMAP_RANDOMMAP:String = "#fortifications:strongholdmap/randomMap";
       
       public static const STRONGHOLDBUILDS_POINT1:String = "#fortifications:strongholdbuilds/point1";
@@ -255,9 +257,19 @@ package
       
       public static const TOOLTIP_VEHICLETYPES_BODY:String = "#fortifications:tooltip/vehicleTypes/body";
       
+      public static const BATTLEMODIFIERS_TITLE:String = "#fortifications:battleModifiers/title";
+      
+      public static const BATTLEMODIFIERS_BODY:String = "#fortifications:battleModifiers/body";
+      
+      public static const BATTLEMODIFIERS_SORTIE:String = "#fortifications:battleModifiers/sortie";
+      
+      public static const BATTLEMODIFIERS_FORTBATTLE:String = "#fortifications:battleModifiers/fortBattle";
+      
       public static const INSPIRE_INSPIRING:String = "#fortifications:inspire/inspiring";
       
       public static const INSPIRE_INSPIRED:String = "#fortifications:inspire/inspired";
+      
+      public static const BATTLEMODIFIERSGM_TITLE:String = "#fortifications:battleModifiersGM/title";
        
       
       public function FORTIFICATIONS()

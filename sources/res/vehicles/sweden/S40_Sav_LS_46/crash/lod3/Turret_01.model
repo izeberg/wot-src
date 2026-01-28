@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/sweden/S40_Sav_LS_46/crash/lod3/Turret_01</nodefullVisual>
+	<parent>vehicles/sweden/S40_Sav_LS_46/crash/lod4/Turret_01</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-0.360000 -0.159728 -0.925394</min>
+		<max>0.892394 1.016254 0.202999</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

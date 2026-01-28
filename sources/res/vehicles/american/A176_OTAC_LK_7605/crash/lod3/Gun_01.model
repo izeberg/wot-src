@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodelessVisual>vehicles/american/A176_OTAC_LK_7605/crash/lod3/Gun_01</nodelessVisual>
+	<parent>vehicles/american/A176_OTAC_LK_7605/crash/lod4/Gun_01</parent>
+	<tank>true</tank>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-0.660150 -0.346136 -1.204463</min>
+		<max>0.795123 0.514934 2.833546</max>
+	</visibilityBox>
+</root>

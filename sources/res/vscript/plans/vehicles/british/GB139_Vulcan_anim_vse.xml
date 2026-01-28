@@ -105,7 +105,7 @@
 						<type>BoolT</type>
 					</param>
 					<param>
-						0.000000
+						2.846000
 						<name>Initial Value</name>
 						<type>FloatT</type>
 					</param>
@@ -113,7 +113,7 @@
 				<slots>
 					<slot>
 						<name>default</name>
-						<const>\0.000000\</const>
+						<const>\2.846000\</const>
 					</slot>
 				</slots>
 			</block>
@@ -526,19 +526,6 @@
 			</block>
 			<block>
 				<class>SetVariable</class>
-				<id>SetVariable_19</id>
-				<buddy>Variable_19</buddy>
-				<params>
-					<param>
-						GameObjectArrayT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>SetVariable</class>
 				<id>SetVariable_8</id>
 				<buddy>Variable_8</buddy>
 				<params>
@@ -594,6 +581,60 @@
 					</param>
 				</params>
 				<slots/>
+			</block>
+			<block>
+				<class>ArrayVariableAdd</class>
+				<id>ArrayVariableAdd_1</id>
+				<buddy>Variable_19</buddy>
+				<params>
+					<param>
+						GameObjectArrayT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>unique</name>
+						<const>\false\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>ArrayVariableAdd</class>
+				<id>ArrayVariableAdd_2</id>
+				<buddy>Variable_19</buddy>
+				<params>
+					<param>
+						GameObjectArrayT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>unique</name>
+						<const>\false\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>ArrayVariableAdd</class>
+				<id>ArrayVariableAdd_3</id>
+				<buddy>Variable_19</buddy>
+				<params>
+					<param>
+						GameObjectArrayT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>unique</name>
+						<const>\false\</const>
+					</slot>
+				</slots>
 			</block>
 			<block>
 				<class>Macro</class>
@@ -767,18 +808,6 @@
 				<slots/>
 			</block>
 			<block>
-				<class>FindNodeByType</class>
-				<id>FindNodeByType_2</id>
-				<params>
-					<param>
-						Animator
-						<name>Component Type</name>
-						<type>StringT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
 				<class>DivideFloat</class>
 				<id>DivideFloat_1</id>
 				<params/>
@@ -852,6 +881,51 @@
 					</param>
 				</params>
 				<slots/>
+			</block>
+			<block>
+				<class>FindFirstNode</class>
+				<id>FindFirstNode_4</id>
+				<params/>
+				<slots>
+					<slot>
+						<name>name</name>
+						<const>\gunGate_GO\</const>
+					</slot>
+					<slot>
+						<name>includingInactive</name>
+						<const>\true\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>FindFirstNode</class>
+				<id>FindFirstNode_2</id>
+				<params/>
+				<slots>
+					<slot>
+						<name>name</name>
+						<const>\turretAnim_GO\</const>
+					</slot>
+					<slot>
+						<name>includingInactive</name>
+						<const>\true\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>FindFirstNode</class>
+				<id>FindFirstNode_3</id>
+				<params/>
+				<slots>
+					<slot>
+						<name>name</name>
+						<const>\shell_GO\</const>
+					</slot>
+					<slot>
+						<name>includingInactive</name>
+						<const>\true\</const>
+					</slot>
+				</slots>
 			</block>
 			<block>
 				<class>GetVehicleGameObject</class>
@@ -1247,12 +1321,12 @@
 				</params>
 				<slots>
 					<slot>
-						<name>modelName</name>
-						<const>\content/Sleeves/GB139_Vulcan_ammo/normal/lod0/container.model\</const>
-					</slot>
-					<slot>
 						<name>baseAnimTime</name>
 						<const>\7.400000\</const>
+					</slot>
+					<slot>
+						<name>modelName</name>
+						<const>\content/Sleeves/GB139_Vulcan_ammo/normal/lod0/container.model\</const>
 					</slot>
 				</slots>
 			</block>
@@ -1268,12 +1342,12 @@
 				</params>
 				<slots>
 					<slot>
-						<name>modelName</name>
-						<const>\content/Sleeves/GB139_Vulcan_ammo/normal/lod0/engine.model\</const>
-					</slot>
-					<slot>
 						<name>baseAnimTime</name>
 						<const>\8.500000\</const>
+					</slot>
+					<slot>
+						<name>modelName</name>
+						<const>\content/Sleeves/GB139_Vulcan_ammo/normal/lod0/engine.model\</const>
 					</slot>
 				</slots>
 			</block>
@@ -1289,12 +1363,12 @@
 				</params>
 				<slots>
 					<slot>
-						<name>modelName</name>
-						<const>\content/Sleeves/GB139_Vulcan_ammo/normal/lod0/cover.model\</const>
-					</slot>
-					<slot>
 						<name>baseAnimTime</name>
 						<const>\4.900000\</const>
+					</slot>
+					<slot>
+						<name>modelName</name>
+						<const>\content/Sleeves/GB139_Vulcan_ammo/normal/lod0/cover.model\</const>
 					</slot>
 				</slots>
 			</block>
@@ -1672,19 +1746,7 @@
 				<output>object</output>
 			</connection>
 			<connection>
-				<from>SetVariable_6</from>
-				<input>input</input>
-				<to>SetVariable_19</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>FindNodeByType_2</from>
-				<input>value</input>
-				<to>SetVariable_19</to>
-				<output>nodes</output>
-			</connection>
-			<connection>
-				<from>SetVariable_19</from>
+				<from>ArrayVariableAdd_3</from>
 				<input>input</input>
 				<to>SetVariable_8</to>
 				<output>out</output>
@@ -1742,6 +1804,42 @@
 				<input>value</input>
 				<to>SetVariable_18</to>
 				<output>res</output>
+			</connection>
+			<connection>
+				<from>SetVariable_6</from>
+				<input>input</input>
+				<to>ArrayVariableAdd_1</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>FindFirstNode_4</from>
+				<input>value</input>
+				<to>ArrayVariableAdd_1</to>
+				<output>node</output>
+			</connection>
+			<connection>
+				<from>ArrayVariableAdd_1</from>
+				<input>input</input>
+				<to>ArrayVariableAdd_2</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>FindFirstNode_2</from>
+				<input>value</input>
+				<to>ArrayVariableAdd_2</to>
+				<output>node</output>
+			</connection>
+			<connection>
+				<from>ArrayVariableAdd_2</from>
+				<input>input</input>
+				<to>ArrayVariableAdd_3</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>FindFirstNode_3</from>
+				<input>value</input>
+				<to>ArrayVariableAdd_3</to>
+				<output>node</output>
 			</connection>
 			<connection>
 				<from>ArrayVariableIterate_1</from>
@@ -1846,12 +1944,6 @@
 				<output>value</output>
 			</connection>
 			<connection>
-				<from>ContextGetSelf_1</from>
-				<input>gameObject</input>
-				<to>FindNodeByType_2</to>
-				<output>value</output>
-			</connection>
-			<connection>
 				<from>GetVariable_14</from>
 				<input>b</input>
 				<to>DivideFloat_1</to>
@@ -1867,6 +1959,24 @@
 				<from>GetGameSetting_2</from>
 				<input>b</input>
 				<to>CompareIntegers_3</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>ContextGetSelf_1</from>
+				<input>gameObject</input>
+				<to>FindFirstNode_4</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>ContextGetSelf_1</from>
+				<input>gameObject</input>
+				<to>FindFirstNode_2</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>ContextGetSelf_1</from>
+				<input>gameObject</input>
+				<to>FindFirstNode_3</to>
 				<output>value</output>
 			</connection>
 			<connection>
@@ -1930,16 +2040,16 @@
 				<output>value</output>
 			</connection>
 			<connection>
-				<from>Sequence_2</from>
-				<input>input</input>
-				<to>SendLocalEvent_1</to>
-				<output>o0</output>
-			</connection>
-			<connection>
 				<from>ArenaPeriodStartEvent_1</from>
 				<input>input</input>
 				<to>SendLocalEvent_1</to>
 				<output>start</output>
+			</connection>
+			<connection>
+				<from>Sequence_2</from>
+				<input>input</input>
+				<to>SendLocalEvent_1</to>
+				<output>o0</output>
 			</connection>
 			<connection>
 				<from>OnAnyVehicleShoot_2</from>
@@ -2814,6 +2924,33 @@
 						</slots>
 					</block>
 					<block>
+						<class>MacroInput</class>
+						<id>MacroInput_3</id>
+						<params>
+							<param>
+								baseAnimTime
+								<name>Input Name</name>
+								<type>StringT</type>
+							</param>
+							<param>
+								FloatT
+								<name>Input Type</name>
+								<type>TypeT</type>
+							</param>
+							<param>
+								Default
+								<name>Input Editor</name>
+								<type>StringT</type>
+							</param>
+						</params>
+						<slots>
+							<slot>
+								<name>required</name>
+								<const>\true\</const>
+							</slot>
+						</slots>
+					</block>
+					<block>
 						<class>SubtractFloat</class>
 						<id>SubtractFloat_3</id>
 						<params/>
@@ -2836,6 +2973,17 @@
 							</param>
 						</params>
 						<slots/>
+					</block>
+					<block>
+						<class>DivideFloatIfNotZero</class>
+						<id>DivideFloatIfNotZero_1</id>
+						<params/>
+						<slots>
+							<slot>
+								<name>default</name>
+								<const>\1.000000\</const>
+							</slot>
+						</slots>
 					</block>
 					<block>
 						<class>MacroInput</class>
@@ -2882,36 +3030,16 @@
 						<slots/>
 					</block>
 					<block>
-						<class>MacroInput</class>
-						<id>MacroInput_3</id>
+						<class>GetVariable</class>
+						<id>GetVariable_16</id>
+						<buddy>Variable_18</buddy>
 						<params>
 							<param>
-								baseAnimTime
-								<name>Input Name</name>
-								<type>StringT</type>
-							</param>
-							<param>
 								FloatT
-								<name>Input Type</name>
+								<name>Variable Type</name>
 								<type>TypeT</type>
 							</param>
-							<param>
-								Default
-								<name>Input Editor</name>
-								<type>StringT</type>
-							</param>
 						</params>
-						<slots>
-							<slot>
-								<name>required</name>
-								<const>\true\</const>
-							</slot>
-						</slots>
-					</block>
-					<block>
-						<class>DivideFloat</class>
-						<id>DivideFloat_5</id>
-						<params/>
 						<slots/>
 					</block>
 					<block>
@@ -2940,19 +3068,6 @@
 								<const>\true\</const>
 							</slot>
 						</slots>
-					</block>
-					<block>
-						<class>GetVariable</class>
-						<id>GetVariable_16</id>
-						<buddy>Variable_18</buddy>
-						<params>
-							<param>
-								FloatT
-								<name>Variable Type</name>
-								<type>TypeT</type>
-							</param>
-						</params>
-						<slots/>
 					</block>
 				</blocks>
 				<connections>
@@ -3029,7 +3144,7 @@
 						<output>res</output>
 					</connection>
 					<connection>
-						<from>DivideFloat_5</from>
+						<from>DivideFloatIfNotZero_1</from>
 						<input>a</input>
 						<to>SubtractFloat_3</to>
 						<output>res</output>
@@ -3037,13 +3152,13 @@
 					<connection>
 						<from>MacroInput_3</from>
 						<input>a</input>
-						<to>DivideFloat_5</to>
+						<to>DivideFloatIfNotZero_1</to>
 						<output>baseAnimTime</output>
 					</connection>
 					<connection>
 						<from>GetVariable_16</from>
 						<input>b</input>
-						<to>DivideFloat_5</to>
+						<to>DivideFloatIfNotZero_1</to>
 						<output>value</output>
 					</connection>
 				</connections>

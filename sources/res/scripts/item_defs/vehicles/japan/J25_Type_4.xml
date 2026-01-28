@@ -80,7 +80,7 @@
 	</camouflage>
 	<hull>
 		<armor>
-			<armor_1>250</armor_1>
+			<armor_1>290</armor_1>
 			<armor_2>250</armor_2>
 			<armor_3>140</armor_3>
 			<armor_4>150</armor_4>
@@ -6207,8 +6207,8 @@
 			<price>50000</price>
 			<notInShop>true</notInShop>
 			<armor>
-				<armor_1>250</armor_1>
-				<armor_2>270</armor_2>
+				<armor_1>290</armor_1>
+				<armor_2>310</armor_2>
 				<armor_3>200</armor_3>
 				<armor_4>200</armor_4>
 				<armor_5>75</armor_5>
@@ -6224,7 +6224,7 @@
 				<armor_12>270</armor_12>
 				<armor_13>200</armor_13>
 				<armor_14>250</armor_14>
-				<armor_15>270</armor_15>
+				<armor_15>310</armor_15>
 				<armor_16>125</armor_16>
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
@@ -6254,7 +6254,7 @@
 					<maxAmmo>80</maxAmmo>
 					<unlocks>
 						<gun>
-							_150mm_45_41st_Year_Type
+							_140mm_50_3rd_Year_Type
 							<cost>64500</cost>
 						</gun>
 					</unlocks>
@@ -6419,13 +6419,9 @@
 					shared
 					<maxAmmo>50</maxAmmo>
 					<unlocks>
-						<gun>
-							_140mm_50_3rd_Year_Type
-							<cost>64600</cost>
-						</gun>
 						<vehicle>
 							J20_Type_2605
-							<cost>257560</cost>
+							<cost>192960</cost>
 						</vehicle>
 					</unlocks>
 					<armor>
@@ -6582,6 +6578,12 @@
 				<_140mm_50_3rd_Year_Type>
 					shared
 					<maxAmmo>60</maxAmmo>
+					<unlocks>
+						<gun>
+							_150mm_45_41st_Year_Type
+							<cost>64500</cost>
+						</gun>
+					</unlocks>
 					<armor>
 						<gun>60</gun>
 					</armor>

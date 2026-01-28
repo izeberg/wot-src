@@ -549,6 +549,16 @@ package
       
       public static const TEAM_STATS_LABELS_TIMESDESTROYED:String = "#battle_results:team/stats/labels_timesDestroyed";
       
+      public static const TEAM_STATS_LABELS_DAMAGETOSUPPLIES:String = "#battle_results:team/stats/labels_damageToSupplies";
+      
+      public static const TEAM_STATS_LABELS_DAMAGEFROMSUPPLIES:String = "#battle_results:team/stats/labels_damageFromSupplies";
+      
+      public static const TEAM_STATS_LABELS_SUPPLIESDESTROYED:String = "#battle_results:team/stats/labels_suppliesDestroyed";
+      
+      public static const TEAM_STATS_LABELS_DISTRIBUTEDSUPPLYDAMAGE:String = "#battle_results:team/stats/labels_distributedSupplyDamage";
+      
+      public static const TEAM_STATS_LABELS_DISTRIBUTEDSUPPLYBASEPOINTS:String = "#battle_results:team/stats/labels_distributedSupplyBasePoints";
+      
       public static const TEAM_STATS_LABELS_FLAGS:String = "#battle_results:team/stats/labels_flags";
       
       public static const TEAM_STATS_LABELS_DEATHS:String = "#battle_results:team/stats/labels_deaths";
@@ -633,10 +643,6 @@ package
       
       public static const DETAILS_CALCULATIONS_SQUADBONUS:String = "#battle_results:details/calculations/squadBonus";
       
-      public static const DETAILS_CALCULATIONS_NEWYEAR:String = "#battle_results:details/calculations/newYear";
-      
-      public static const DETAILS_CALCULATIONS_VEHICLEBRANCH:String = "#battle_results:details/calculations/vehicleBranch";
-      
       public static const DETAILS_CALCULATIONS_NOPENALTY:String = "#battle_results:details/calculations/noPenalty";
       
       public static const DETAILS_CALCULATIONS_EVENT:String = "#battle_results:details/calculations/event";
@@ -664,6 +670,10 @@ package
       public static const DETAILS_CALCULATIONS_FRIENDLYFIRECOMPENSATION:String = "#battle_results:details/calculations/friendlyFireCompensation";
       
       public static const DETAILS_CALCULATIONS_PLAYERRANKXP:String = "#battle_results:details/calculations/playerRankXP";
+      
+      public static const DETAILS_CALCULATIONS_FRONTLINEXP:String = "#battle_results:details/calculations/frontlineXP";
+      
+      public static const DETAILS_CALCULATIONS_DISTRIBUTEDXP:String = "#battle_results:details/calculations/distributedXP";
       
       public static const DETAILS_CALCULATIONS_AUTOREPAIR:String = "#battle_results:details/calculations/autoRepair";
       

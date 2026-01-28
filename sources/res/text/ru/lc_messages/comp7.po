@@ -60,16 +60,16 @@ msgid "alertMessage/temporaryBan"
 msgstr "Участие в режиме невозможно. Разблокировка через: %(expiryTime)s"
 
 msgid "alertMessage/timeLeft/days"
-msgstr "%(day)s д"
+msgstr "%(day)s д."
 
 msgid "alertMessage/timeLeft/hours"
-msgstr "%(hour)s ч %(min)s мин"
+msgstr "%(hour)s ч. %(min)s мин."
 
 msgid "alertMessage/timeLeft/lessMin"
-msgstr "1 мин"
+msgstr "1 мин."
 
 msgid "alertMessage/timeLeft/min"
-msgstr "%(min)s мин"
+msgstr "%(min)s мин."
 
 msgid "alertMessage/undefined"
 msgstr "?empty?"
@@ -108,10 +108,10 @@ msgid "banner/seasonDateSmall/seasonNotStarted"
 msgstr "С %(day)s %(month)s"
 
 msgid "banner/timeLeft/hours"
-msgstr "%(hour)s ч %(min)s мин"
+msgstr "%(hour)s ч. %(min)s мин."
 
 msgid "banner/timeLeft/min"
-msgstr "%(min)s мин"
+msgstr "%(min)s мин."
 
 msgid "banner/title"
 msgstr "НАТИСК"
@@ -1078,13 +1078,13 @@ msgid "scoreTooltip/header"
 msgstr "Очки рейтинга"
 
 msgid "season/daysLeft"
-msgstr "До завершения: %(totalDays)s д"
+msgstr "До завершения: %(totalDays)s д."
 
 msgid "season/hoursLeft"
-msgstr "До завершения: %(hours)s ч"
+msgstr "До завершения: %(hours)s ч."
 
 msgid "season/minutesLeft"
-msgstr "До завершения: %(minutes)s мин"
+msgstr "До завершения: %(minutes)s мин."
 
 msgid "season/name"
 msgstr "Натиск: Ледяной тигр"
@@ -1391,8 +1391,9 @@ msgstr ""
 
 msgid "whatsNewView/slides/description/modifiers"
 msgstr ""
-"Увеличена прочность модулей техники, сокращено время «обнаружения» машин и "
-"время перезарядки их орудий, а также уменьшен радиус минимальной видимости."
+"Увеличена прочность модулей техники, сокращено время обнаружения машин "
+"и время перезарядки их орудий, а также уменьшен радиус минимальной "
+"видимости."
 
 msgid "whatsNewView/slides/description/newSeason"
 msgstr ""
@@ -1422,10 +1423,10 @@ msgstr ""
 
 msgid "whatsNewView/slides/description/rework"
 msgstr ""
-"В этом запуске добавлены две новые карты: Малиновка и Эрленберг, а Уайдпарк "
-"и Тихий берег получили балансные правки. Кроме того, в рамках «Ледяного "
-"тигра» вы сможете сражаться на зимних версиях карт Малиновка, Карелия и "
-"Прохоровка."
+"В этом запуске добавлены две новые карты: «Малиновка» и «Эрленберг», "
+"а «Уайдпарк» и «Тихий берег» получили балансные правки. Кроме того, в рамках"
+" «Ледяного тигра» вы сможете сражаться на зимних версиях карт «Малиновка», "
+"«Карелия» и «Прохоровка»."
 
 msgid "whatsNewView/slides/description/roleSkills"
 msgstr ""
@@ -1504,8 +1505,8 @@ msgstr "НАТИСК"
 
 msgid "whatsNewView/vehicleLimitations/description"
 msgstr ""
-"К участию в событии «Ледяной тигр» больше не допускаются машины роли САУ и "
-"тяжёлые огнемётные танки."
+"К участию в событии «Ледяной тигр» больше не допускаются машины роли САУ "
+"и тяжёлые огнемётные танки."
 
 msgid "whatsNewView/vehicleLimitations/heading"
 msgstr "Ограничения по технике"

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<params>
+		<param>
+			<name>open</name>
+			<type>trigger</type>
+		</param>
+		<param>
+			<name>close</name>
+			<type>trigger</type>
+		</param>
+	</params>
+	<node>
+		<name>Sleep Node</name>
+		<type>sleep</type>
+		<time>1.000000 1.000000</time>
+		<transition>
+			<to>open</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>trigger</type>
+					<name>open</name>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>-140.000000 -223.000000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>open</name>
+		<type>sequence</type>
+		<resource>vehicles/intunion/Un17_RDT_62/Sequence/Luke_open.seq</resource>
+		<isLoop>false</isLoop>
+		<loop>1</loop>
+		<transition>
+			<to>close</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>1.000000</exitOffset>
+				</condition>
+				<condition>
+					<type>trigger</type>
+					<name>close</name>
+				</condition>
+			</conditions>
+		</transition>
+		<transition>
+			<to>Sleep Node</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>trigger</type>
+					<name>open</name>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>-273.000000 -32.500000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>close</name>
+		<type>sequence</type>
+		<resource>vehicles/intunion/Un17_RDT_62/Sequence/Luke_close.seq</resource>
+		<isLoop>false</isLoop>
+		<loop>1</loop>
+		<transition>
+			<to>Sleep Node</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>1.000000</exitOffset>
+				</condition>
+			</conditions>
+		</transition>
+		<transition>
+			<to>open</to>
+			<blendDuration>1.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>1.000000</exitOffset>
+				</condition>
+				<condition>
+					<type>trigger</type>
+					<name>open</name>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>19.500000 -34.000000 0.000000</uiPosition>
+	</node>
+</root>

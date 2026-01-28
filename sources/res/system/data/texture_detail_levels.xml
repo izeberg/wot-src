@@ -2,7 +2,7 @@
 <root>
 	<rule>
 		<lodMode>1</lodMode>
-		<format>DXT1</format>
+		<format>BC1_UNORM</format>
 		<paddingMode>NONE</paddingMode>
 		<paddingForcePixels>0</paddingForcePixels>
 		<paddingAnisotropicLevel>4</paddingAnisotropicLevel>
@@ -12,7 +12,7 @@
 	</rule>
 	<rule>
 		<lodMode>1</lodMode>
-		<format>DXT5</format>
+		<format>BC3_UNORM</format>
 		<paddingMode>NONE</paddingMode>
 		<paddingForcePixels>0</paddingForcePixels>
 		<paddingAnisotropicLevel>4</paddingAnisotropicLevel>
@@ -37,7 +37,7 @@
 			<pattern>.*</pattern>
 		</rule>
 		<rule>
-			<format>DXT5</format>
+			<format>BC3_UNORM</format>
 			<allowSplit>false</allowSplit>
 			<noResize>true</noResize>
 			<editableTags>ME;UE</editableTags>
@@ -89,17 +89,17 @@
 					<pattern>.*</pattern>
 				</rule>
 				<rule>
-					<format>DXT5</format>
+					<format>BC3_UNORM</format>
 					<paddingMode>DOWNSCALED_CENTERED_TILED</paddingMode>
 					<pattern>.*\_AM.png$</pattern>
 				</rule>
 				<rule>
-					<format>DXT5</format>
+					<format>BC3_UNORM</format>
 					<paddingMode>DOWNSCALED_CENTERED_TILED</paddingMode>
 					<pattern>.*\_GBMT.png$</pattern>
 				</rule>
 				<rule>
-					<format>DXT1</format>
+					<format>BC1_UNORM</format>
 					<paddingMode>DOWNSCALED_CENTERED_TILED</paddingMode>
 					<pattern>.*\_MAO.png$</pattern>
 				</rule>
@@ -135,43 +135,20 @@
 			<directory>
 				<path>00_Tiles</path>
 				<rule>
-					<format>DXT5</format>
+					<format>BC3_UNORM</format>
 					<paddingMode>DOWNSCALED_CENTERED_TILED</paddingMode>
 					<pattern>.*\_AM.png$</pattern>
 				</rule>
 				<rule>
-					<format>DXT5</format>
+					<format>BC3_UNORM</format>
 					<paddingMode>DOWNSCALED_CENTERED_TILED</paddingMode>
 					<pattern>.*\_GBMT.png$</pattern>
 				</rule>
 				<rule>
-					<format>DXT1</format>
+					<format>BC1_UNORM</format>
 					<paddingMode>DOWNSCALED_CENTERED_TILED</paddingMode>
 					<pattern>.*\_MAO.png$</pattern>
 				</rule>
-			</directory>
-		</directory>
-		<directory>
-			<path>Hangars</path>
-			<directory>
-				<path>h03_mt_ny_2025</path>
-				<directory>
-					<path>environment</path>
-					<rule>
-						<allowSplit>false</allowSplit>
-						<pattern>.*hd_h03_NY25_0015_Robot_1_AM\.dds</pattern>
-					</rule>
-				</directory>
-			</directory>
-			<directory>
-				<path>h03_mt_ny_2026</path>
-				<directory>
-					<path>environment</path>
-					<rule>
-						<allowSplit>false</allowSplit>
-						<pattern>.*h03_NY26_Object_10_1_AM\.dds</pattern>
-					</rule>
-				</directory>
 			</directory>
 		</directory>
 		<directory>
@@ -179,17 +156,17 @@
 			<directory>
 				<path>00_Tiles</path>
 				<rule>
-					<format>DXT5</format>
+					<format>BC3_UNORM</format>
 					<paddingMode>DOWNSCALED_CENTERED_TILED</paddingMode>
 					<pattern>.*\_AM.png$</pattern>
 				</rule>
 				<rule>
-					<format>DXT5</format>
+					<format>BC3_UNORM</format>
 					<paddingMode>DOWNSCALED_CENTERED_TILED</paddingMode>
 					<pattern>.*\_GBMT.png$</pattern>
 				</rule>
 				<rule>
-					<format>DXT1</format>
+					<format>BC1_UNORM</format>
 					<paddingMode>DOWNSCALED_CENTERED_TILED</paddingMode>
 					<pattern>.*\_MAO.png$</pattern>
 				</rule>
@@ -200,17 +177,17 @@
 			<directory>
 				<path>00_Tiles</path>
 				<rule>
-					<format>DXT5</format>
+					<format>BC3_UNORM</format>
 					<paddingMode>DOWNSCALED_CENTERED_TILED</paddingMode>
 					<pattern>.*\_AM.png$</pattern>
 				</rule>
 				<rule>
-					<format>DXT5</format>
+					<format>BC3_UNORM</format>
 					<paddingMode>DOWNSCALED_CENTERED_TILED</paddingMode>
 					<pattern>.*\_GBMT.png$</pattern>
 				</rule>
 				<rule>
-					<format>DXT1</format>
+					<format>BC1_UNORM</format>
 					<paddingMode>DOWNSCALED_CENTERED_TILED</paddingMode>
 					<pattern>.*\_MAO.png$</pattern>
 				</rule>
@@ -224,7 +201,7 @@
 			<pattern>.*</pattern>
 		</rule>
 		<rule>
-			<format>DXT5</format>
+			<format>BC3_UNORM</format>
 			<lodMode>0</lodMode>
 			<noResize>true</noResize>
 			<mipCount>1</mipCount>
@@ -236,7 +213,7 @@
 				<path>vehicles</path>
 				<rule>
 					<lodMode>0</lodMode>
-					<format>DXT3</format>
+					<format>BC3_UNORM</format>
 					<category>tanks</category>
 					<pattern>.*(decal|sticker|font_maps).*</pattern>
 				</rule>
@@ -253,7 +230,7 @@
 			<path>fx</path>
 			<rule>
 				<lodMode>0</lodMode>
-				<format>DXT3</format>
+				<format>BC3_UNORM</format>
 				<pattern>.*(sticker).*</pattern>
 			</rule>
 		</directory>
@@ -269,7 +246,7 @@
 			<rule>
 				<compressHDR>true</compressHDR>
 				<lodMode>0</lodMode>
-				<formatCompressed>DXT5</formatCompressed>
+				<formatCompressed>BC3_UNORM</formatCompressed>
 				<pattern>.*(_hdr\.dds)$</pattern>
 			</rule>
 		</directory>
@@ -311,24 +288,24 @@
 		</rule>
 		<rule>
 			<compressDDS>true</compressDDS>
-			<format>DXT5</format>
+			<format>BC3_UNORM</format>
 			<pattern>.*/global_AM.dds</pattern>
 		</rule>
 		<rule>
 			<compressDDS>true</compressDDS>
-			<format>DXT1</format>
+			<format>BC1_UNORM</format>
 			<mipCount>1</mipCount>
 			<pattern>.*/flora_tint_map.dds</pattern>
 		</rule>
 		<rule>
 			<compressDDS>true</compressDDS>
-			<format>DXT1</format>
+			<format>BC1_UNORM</format>
 			<mipCount>1</mipCount>
 			<pattern>.*/overlay_tint_map.dds</pattern>
 		</rule>
 		<rule>
 			<compressDDS>true</compressDDS>
-			<format>DXT5</format>
+			<format>BC3_UNORM</format>
 			<mipCount>1</mipCount>
 			<pattern>.*/overlay_layer_mask.dds</pattern>
 		</rule>

@@ -6,6 +6,6 @@
 	</visibilityBox>
 	<parent>vehicles/french/F134_ARL_Projet_F/crash/lod3/Gun_01</parent>
 	<extent>96.000000</extent>
-	<nodelessVisual>vehicles/french/F134_ARL_Projet_F/crash/lod2/Gun_01</nodelessVisual>
 	<tank>true</tank>
+	<nodefullVisual>vehicles/french/F134_ARL_Projet_F/crash/lod2/Gun_01</nodefullVisual>
 </root>

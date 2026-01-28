@@ -62,6 +62,11 @@ package net.wg.gui.components.advanced.collapsingBar
          return this._originSize;
       }
       
+      protected function invlidateOriginSize() : void
+      {
+         this._originSize = null;
+      }
+      
       protected function get tabBar() : CollapsingBar
       {
          return CollapsingBar(owner);

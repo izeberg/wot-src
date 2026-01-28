@@ -58,9 +58,7 @@ package net.wg.gui.lobby.vehicleCustomization.controls
       
       private static const ICON_PADDING_RIGHT:int = 5;
       
-      private static const ACTION_ICON_PADDING_RIGHT:int = 6;
-      
-      private static const ACTION_MIN_RES_OFFSET:int = -4;
+      private static const ACTION_ICON_PADDING_LEFT:int = 7;
       
       private static const SELECTED_WIDTH_OFFSET:int = 20;
       
@@ -79,6 +77,10 @@ package net.wg.gui.lobby.vehicleCustomization.controls
       private static const SELECTED_MIN_RES_Y:int = -1;
       
       private static const NON_HISTORIC_OFFSET:int = 1;
+      
+      private static const MAIN_TYPE_OFFSET:Point = new Point(2,2);
+      
+      private static const MAIN_TYPE_OFFSET_MIN:Point = new Point(0,-2);
       
       private static const PRICE_ICON_OFFSET:Point = new Point(-2,1);
       
@@ -102,13 +104,11 @@ package net.wg.gui.lobby.vehicleCustomization.controls
       
       private static const STORAGE_OFFSET:int = 3;
       
-      private static const STYLE_NAME_TF_V_POS:int = 23;
+      private static const STYLE_NAME_TF_V_POS:int = 24;
       
-      private static const STYLE_NAME_TF_V_OFFSET:int = -10;
+      private static const STYLE_NAME_TF_V_OFFSET:int = -18;
       
-      private static const RENTAL_TF_PADDING_RIGHT:int = 8;
-      
-      private static const RENTAL_ICON_OFFSET_X:int = 10;
+      private static const RENTAL_TF_PADDING_RIGHT:int = 30;
       
       private static const RENTAL_ICON_OFFSET_Y:int = 8;
       
@@ -122,9 +122,11 @@ package net.wg.gui.lobby.vehicleCustomization.controls
       
       private static const EDIT_BTN_COUNTER_OFFSET_Y:int = -18;
       
-      private static const FORM_ICON_OFFSET_Y:int = 88;
+      private static const FORM_ICON_OFFSET_X:int = 5;
       
-      private static const FORM_ICON_OFFSET_SMALL_Y:int = 66;
+      private static const FORM_ICON_OFFSET_Y:int = 6;
+      
+      private static const FORM_ICON_OFFSET_SMALL_Y:int = 6;
       
       private static const PROGRESSION_LEVEL_GAP_SMALL:int = -2;
       
@@ -169,6 +171,14 @@ package net.wg.gui.lobby.vehicleCustomization.controls
       private static const NEW_MC_MIN_SCALE:Number = 0.79;
       
       private static const NEW_MC_NORMAL_SCALE:Number = 1;
+      
+      private static const SHADING_Y:uint = 24;
+      
+      private static const SHADING_MINI_Y:uint = 18;
+      
+      private static const BOTTOM_OFFSET_Y:uint = 4;
+      
+      private static const BOTTOM_OFFSET_MINI_Y:uint = 1;
        
       
       public var imgIcon:Image = null;
@@ -178,6 +188,8 @@ package net.wg.gui.lobby.vehicleCustomization.controls
       public var rareIcon:Image = null;
       
       public var rareBg:Sprite = null;
+      
+      public var shading:Image = null;
       
       public var iconInProgress:Sprite = null;
       
@@ -200,6 +212,8 @@ package net.wg.gui.lobby.vehicleCustomization.controls
       public var shadow:MovieClip = null;
       
       public var nonHistoricImg:Image = null;
+      
+      public var mainTypeImg:Image = null;
       
       public var editableImg:Image = null;
       
@@ -269,8 +283,6 @@ package net.wg.gui.lobby.vehicleCustomization.controls
       
       private var _buyOperationAllowed:Boolean = true;
       
-      private var _styleTfFiltersPreset:Array;
-      
       private var _customWidth:int = 0;
       
       private var _customHeight:int = 0;
@@ -285,13 +297,14 @@ package net.wg.gui.lobby.vehicleCustomization.controls
       
       private var _originalImgHeight:int = 0;
       
+      private var _bottomOffset:uint = 4;
+      
       private var _scheduler:IScheduler;
       
       private var _soundMgr:ISoundManager;
       
       public function CarouselItemRenderer()
       {
-         this._styleTfFiltersPreset = [];
          this._tweens = new Vector.<Tween>();
          this._scheduler = App.utils.scheduler;
          this._soundMgr = App.soundMgr;
@@ -316,6 +329,15 @@ package net.wg.gui.lobby.vehicleCustomization.controls
          this.nonHistoricImg.addEventListener(MouseEvent.ROLL_OVER,this.onNonHistoricImgRollOverHandler);
          this.nonHistoricImg.addEventListener(MouseEvent.ROLL_OUT,this.onNonHistoricImgRollOutHandler);
          this.nonHistoricImg.visible = false;
+         this.mainTypeImg.addEventListener(Event.CHANGE,this.onMainTypeImgChangeHandler);
+         this.mainTypeImg.source = RES_ICONS.MAPS_ICONS_CUSTOMIZATION_MAINTYPE;
+         this.mainTypeImg.mouseChildren = this.mainTypeImg.mouseEnabled = false;
+         this.mainTypeImg.buttonMode = false;
+         this.mainTypeImg.visible = false;
+         this.shading.addEventListener(Event.CHANGE,this.onShadingChangeHandler);
+         this.shading.source = RES_ICONS.MAPS_ICONS_CUSTOMIZATION_SHADING;
+         this.shading.mouseChildren = this.mainTypeImg.mouseEnabled = false;
+         this.shading.buttonMode = false;
          this.editableImg.buttonMode = true;
          this.editableImg.visible = false;
          this.editBtn.addEventListener(MouseEvent.ROLL_OVER,this.onEditBtnRollOverHandler);
@@ -351,7 +373,7 @@ package net.wg.gui.lobby.vehicleCustomization.controls
          this.equippedImg.mouseEnabled = this.equippedImg.mouseChildren = false;
          this.equippedImg.image.addEventListener(Event.CHANGE,this.onEquippedImgChangeHandler);
          this.rentalIcon.source = RES_ICONS.MAPS_ICONS_LIBRARY_CLOCKICON_1;
-         TextFieldEx.setVerticalAlign(this.styleNameTF,TextFieldEx.VALIGN_CENTER);
+         TextFieldEx.setVerticalAlign(this.styleNameTF,TextFieldEx.VALIGN_BOTTOM);
          this.storageTF.autoSize = TextFieldAutoSize.LEFT;
          TextFieldEx.setVerticalAlign(this.limitedText,TextFieldEx.VALIGN_CENTER);
          this.limitedText.autoSize = TextFieldAutoSize.LEFT;
@@ -362,7 +384,6 @@ package net.wg.gui.lobby.vehicleCustomization.controls
          this.rareIcon.mouseEnabled = this.rareIcon.mouseChildren = false;
          this.rareBg.mouseEnabled = this.rareBg.mouseChildren = false;
          this.formIcon.mouseEnabled = this.formIcon.mouseChildren = false;
-         this._styleTfFiltersPreset = this.styleNameTF.filters;
          this.serialNumberIcon.mouseEnabled = false;
          this.serialNumberIcon.visible = false;
          this.serialNumberIcon.source = RES_ICONS.MAPS_ICONS_CUSTOMIZATION_SERIAL_NUMBER;
@@ -375,6 +396,8 @@ package net.wg.gui.lobby.vehicleCustomization.controls
          this.nonHistoricImg.removeEventListener(MouseEvent.ROLL_OVER,this.onNonHistoricImgRollOverHandler);
          this.nonHistoricImg.removeEventListener(MouseEvent.ROLL_OUT,this.onNonHistoricImgRollOutHandler);
          this.nonHistoricImg.removeEventListener(Event.CHANGE,this.onNonHistoricImgChangeHandler);
+         this.mainTypeImg.removeEventListener(Event.CHANGE,this.onMainTypeImgChangeHandler);
+         this.shading.removeEventListener(Event.CHANGE,this.onShadingChangeHandler);
          this.imgIcon.removeEventListener(Event.CHANGE,this.onImageChangeHandler);
          this.equippedImg.removeEventListener(MouseEvent.ROLL_OVER,this.onEquippedImgRollOverHandler);
          this.equippedImg.removeEventListener(MouseEvent.ROLL_OUT,this.onEquippedImgRollOutHandler);
@@ -418,6 +441,8 @@ package net.wg.gui.lobby.vehicleCustomization.controls
          this.selectedMC = null;
          this.nonHistoricImg.dispose();
          this.nonHistoricImg = null;
+         this.mainTypeImg.dispose();
+         this.mainTypeImg = null;
          this.editableImg.dispose();
          this.editableImg = null;
          this.editBtn.dispose();
@@ -465,8 +490,8 @@ package net.wg.gui.lobby.vehicleCustomization.controls
          this.progressionRewindIcon = null;
          this.serialNumberIcon.dispose();
          this.serialNumberIcon = null;
-         this._styleTfFiltersPreset.length = 0;
-         this._styleTfFiltersPreset = null;
+         this.shading.dispose();
+         this.shading = null;
          this._scheduler = null;
          this._soundMgr = null;
          super.onDispose();
@@ -504,14 +529,10 @@ package net.wg.gui.lobby.vehicleCustomization.controls
       
       private function applyData() : void
       {
-         var _loc5_:Boolean = false;
-         var _loc11_:Boolean = false;
-         var _loc12_:int = 0;
-         var _loc13_:int = 0;
-         var _loc14_:int = 0;
-         var _loc15_:int = 0;
+         var _loc6_:Boolean = false;
          var _loc1_:Boolean = this._data != null && this._data.intCD;
          var _loc2_:Boolean = this.isResponsive && App.appHeight < MIN_HEIGHT_RESOLUTION;
+         this._bottomOffset = !!_loc2_ ? uint(BOTTOM_OFFSET_MINI_Y) : uint(BOTTOM_OFFSET_Y);
          if(this.considerWidth && !_loc2_)
          {
             _loc2_ = this.isResponsive && App.appWidth <= MIN_WIDTH_RESOLUTION;
@@ -539,6 +560,7 @@ package net.wg.gui.lobby.vehicleCustomization.controls
             this.editBtnSmall.visible = false;
             this.btnBackground.visible = false;
             this.editableSlotHint.visible = false;
+            this.editableSlotHint.stop();
             this.editBtnCounter.visible = false;
             this.editBtnHint.visible = false;
             return;
@@ -567,6 +589,10 @@ package net.wg.gui.lobby.vehicleCustomization.controls
          {
             this.nonHistoricImg.source = !!_loc2_ ? RES_ICONS.MAPS_ICONS_CUSTOMIZATION_NON_HISTORICAL_MINI : RES_ICONS.MAPS_ICONS_CUSTOMIZATION_NON_HISTORICAL;
          }
+         if(this._data.isMainType)
+         {
+            this.mainTypeImg.source = !!_loc2_ ? RES_ICONS.MAPS_ICONS_CUSTOMIZATION_MAINTYPE_MINI : RES_ICONS.MAPS_ICONS_CUSTOMIZATION_MAINTYPE;
+         }
          else if(this._data.customizationDisplayType == CUSTOMIZATION_CONSTS.FANTASTICAL_TYPE)
          {
             this.nonHistoricImg.source = !!_loc2_ ? RES_ICONS.MAPS_ICONS_CUSTOMIZATION_FANTASTICAL_MINI : RES_ICONS.MAPS_ICONS_CUSTOMIZATION_FANTASTICAL;
@@ -583,7 +609,16 @@ package net.wg.gui.lobby.vehicleCustomization.controls
          {
             this.frontground.visible = false;
          }
-         this.editableSlotHint.visible = this._data.showEditableHint;
+         var _loc4_:Boolean = this._data.showEditableHint;
+         this.editableSlotHint.visible = _loc4_;
+         if(_loc4_)
+         {
+            this.editableSlotHint.play();
+         }
+         else
+         {
+            this.editableSlotHint.stop();
+         }
          this.editBtnHint.visible = this.btnBackground.visible && this._data.showEditBtnHint;
          if(this.editBtnHint.visible)
          {
@@ -639,9 +674,6 @@ package net.wg.gui.lobby.vehicleCustomization.controls
          this.nonHistoricImgPosition();
          this.imgIcon.alpha = !!this._data.locked ? Number(LOCKED_IMG_ALPHA) : Number(this._data.defaultIconAlpha);
          this.alertIcon.visible = this._data.showAlert;
-         this.formIcon.y = !!_loc2_ ? Number(FORM_ICON_OFFSET_SMALL_Y) : Number(FORM_ICON_OFFSET_Y);
-         this.formIcon.visible = StringUtils.isNotEmpty(this._data.formIconSource);
-         this.formIcon.source = this._data.formIconSource;
          if(this._data.isNew)
          {
             if(!this.newMC || this._isWideNewMC != this._data.isWide)
@@ -665,54 +697,62 @@ package net.wg.gui.lobby.vehicleCustomization.controls
          {
             this.newMC.scaleX = this.newMC.scaleY = !!_loc2_ ? Number(NEW_MC_MIN_SCALE) : Number(NEW_MC_NORMAL_SCALE);
          }
-         var _loc4_:Boolean = this._data.isProgressionRewindEnabled;
-         _loc5_ = this._data.typeId == GUI_ITEM_TYPES.STYLE;
-         var _loc6_:Boolean = _loc5_ || this._data.isLinked;
-         this.progressionStylesLevelIcon.visible = _loc6_;
-         this.progressionLevelIcon.visible = !_loc6_;
-         var _loc7_:MovieClip = !!_loc6_ ? this.progressionStylesLevelIcon : this.progressionLevelIcon;
-         var _loc8_:String = this._data.progressionLevel.toString().concat(!!_loc2_ ? PROGRESSION_ICON_SMALL_LABEL_POSTFIX : PROGRESSION_ICON_BIG_LABEL_POSTFIX);
-         _loc7_.gotoAndStop(_loc8_);
-         _loc7_.visible = this._data.progressionLevel >= 0 && (this._data.isLinked || !_loc4_);
+         var _loc5_:Boolean = this._data.isProgressionRewindEnabled;
+         _loc6_ = this._data.typeId == GUI_ITEM_TYPES.STYLE;
+         var _loc7_:Boolean = _loc6_ || this._data.isLinked;
+         this.progressionStylesLevelIcon.visible = _loc7_;
+         this.progressionLevelIcon.visible = !_loc7_;
+         var _loc8_:MovieClip = !!_loc7_ ? this.progressionStylesLevelIcon : this.progressionLevelIcon;
+         var _loc9_:String = this._data.progressionLevel.toString().concat(!!_loc2_ ? PROGRESSION_ICON_SMALL_LABEL_POSTFIX : PROGRESSION_ICON_BIG_LABEL_POSTFIX);
+         _loc8_.gotoAndStop(_loc9_);
+         _loc8_.visible = this._data.progressionLevel >= 0 && (this._data.isLinked || !_loc5_);
          this.serialNumberIcon.visible = this._data.isWithSerialNumber;
-         var _loc9_:int = 0;
-         var _loc10_:int = !!_loc2_ ? int(PROGRESSION_LEVEL_GAP_SMALL) : int(PROGRESSION_LEVEL_GAP);
+         var _loc10_:int = 0;
+         var _loc11_:int = !!_loc2_ ? int(PROGRESSION_LEVEL_GAP_SMALL) : int(PROGRESSION_LEVEL_GAP);
          if(this.serialNumberIcon.visible)
          {
-            _loc9_ = this.serialNumberIcon.x + this.serialNumberIcon.width + SERIAL_NUMBER_GAP;
+            _loc10_ = this.serialNumberIcon.x + this.serialNumberIcon.width + SERIAL_NUMBER_GAP;
          }
-         if(_loc7_.visible)
+         if(_loc8_.visible)
          {
-            _loc9_ = _loc7_.x + _loc7_.width + _loc10_;
-            _loc7_.alpha = !!this._data.locked ? Number(LOCKED_IMG_ALPHA) : Number(1);
+            _loc10_ = _loc8_.x + _loc8_.width + _loc11_;
+            _loc8_.alpha = !!this._data.locked ? Number(LOCKED_IMG_ALPHA) : Number(1);
             if(this._data.locked)
             {
-               addChildAt(_loc7_,getChildIndex(this.disabledFill) + 1);
+               addChildAt(_loc8_,getChildIndex(this.disabledFill) + 1);
             }
          }
-         this.progressionRewindIcon.visible = _loc4_;
-         if(_loc4_)
+         this.progressionRewindIcon.visible = _loc5_;
+         if(_loc5_)
          {
             this.progressionRewindIcon.gotoAndStop(!!_loc2_ ? PROGRESSION_REWIND_SMALL_LABEL : PROGRESSION_REWIND_BIG_LABEL);
-            _loc9_ = this.progressionRewindIcon.x + this.progressionRewindIcon.width + _loc10_;
+            _loc10_ = this.progressionRewindIcon.x + this.progressionRewindIcon.width + _loc11_;
          }
          if(this.editableSlotHint.visible)
          {
-            this.editableSlotHint.x = _loc9_ + EDITABLE_BG_X;
+            this.editableSlotHint.x = _loc10_ + EDITABLE_BG_X;
          }
          if(this.editableImg.visible)
          {
-            this.editableImg.x = _loc9_ + EDITABLE_IMG_X;
-            _loc9_ = this.editableImg.x + EDITABLE_IMG_WIDTH + EDITABLE_IMG_GAP;
+            this.editableImg.x = _loc10_ + EDITABLE_IMG_X;
+            _loc10_ = this.editableImg.x + EDITABLE_IMG_WIDTH + EDITABLE_IMG_GAP;
          }
          if(this.limitedIcon.visible)
          {
-            this.limitedIcon.x = _loc9_;
-            _loc9_ = this.limitedIcon.x + this.limitedIcon.width + LIMITED_ICON_GAP;
+            this.limitedIcon.x = _loc10_;
+            _loc10_ = this.limitedIcon.x + this.limitedIcon.width + LIMITED_ICON_GAP;
          }
          if(this.alertIcon.visible)
          {
-            this.alertIcon.x = _loc9_ + ALERT_ICON_X;
+            this.alertIcon.x = _loc10_ + ALERT_ICON_X;
+            _loc10_ = this.alertIcon.x + this.alertIcon.width;
+         }
+         this.formIcon.visible = StringUtils.isNotEmpty(this._data.formIconSource);
+         this.formIcon.source = this._data.formIconSource;
+         if(this.formIcon.visible)
+         {
+            this.formIcon.x = _loc10_ + FORM_ICON_OFFSET_X;
+            this.formIcon.y = !!_loc2_ ? Number(FORM_ICON_OFFSET_SMALL_Y) : Number(FORM_ICON_OFFSET_Y);
          }
          if(this._data.isEquipped)
          {
@@ -740,8 +780,7 @@ package net.wg.gui.lobby.vehicleCustomization.controls
          if(this.styleNameTF.visible)
          {
             this.styleNameTF.alpha = Values.DEFAULT_ALPHA;
-            this.styleNameTF.htmlText = !!_loc2_ ? this._data.styleNameSmall : this._data.styleName;
-            this.styleNameTF.filters = !!_loc2_ ? [] : this._styleTfFiltersPreset;
+            this.styleNameTF.htmlText = this._data.styleName;
          }
          this.styleNameTF.y = STYLE_NAME_TF_V_POS + int(_loc2_) * STYLE_NAME_TF_V_OFFSET;
          this.styleNameTF.width = !!_loc2_ ? Number(STYLE_NAME_TF_WIDE_SMALL_WIDTH) : Number(STYLE_NAME_TF_WIDE_WIDTH);
@@ -765,7 +804,7 @@ package net.wg.gui.lobby.vehicleCustomization.controls
          {
             this.imgIcon.alpha = LOCKED_IMG_ALPHA;
             this.styleNameTF.alpha = ALREADY_USED_STYLE_NAME_ALPHA;
-            _loc7_.alpha = LOCKED_IMG_ALPHA;
+            _loc8_.alpha = LOCKED_IMG_ALPHA;
             this.nonHistoricImg.alpha = LOCKED_IMG_ALPHA;
             this.lockedIcon.visible = false;
             this.disabledFill.visible = true;
@@ -782,14 +821,11 @@ package net.wg.gui.lobby.vehicleCustomization.controls
             this.compoundPrice.visible = StringUtils.isEmpty(this._data.quantity);
             if(this.compoundPrice.visible)
             {
-               _loc11_ = this._data.buyPrice.action != null;
-               _loc12_ = !!_loc2_ ? int(0) : int(-ICON_PADDING_RIGHT);
-               _loc13_ = !!_loc11_ ? int(ACTION_ICON_PADDING_RIGHT) : int(0);
-               _loc14_ = _loc11_ && _loc2_ ? int(ACTION_MIN_RES_OFFSET) : int(0);
-               this.compoundPrice.x = this._customWidth + _loc12_ + _loc13_ + _loc14_;
-               this.compoundPrice.y = this._customHeight;
+               this.compoundPrice.x = this.compoundPrice.contentWidth + ACTION_ICON_PADDING_LEFT;
+               this.compoundPrice.y = this._customHeight - this._bottomOffset;
             }
          }
+         this.storageTF.x = this.styleNameTF.x;
          if(this._data.isRental)
          {
             if(StringUtils.isNotEmpty(this._data.quantity))
@@ -797,11 +833,9 @@ package net.wg.gui.lobby.vehicleCustomization.controls
                this.rentalTF.visible = this.rentalIcon.visible = true;
                this.storageIcon.visible = this.storageTF.visible = false;
                this.rentalTF.text = this._data.quantity.toString();
-               _loc15_ = this._customWidth - this.rentalTF.textWidth - RENTAL_TF_PADDING_RIGHT;
-               this.rentalTF.x = _loc15_;
-               this.rentalTF.y = this._customHeight - this.rentalTF.height ^ 0;
-               this.rentalIcon.x = _loc15_ - RENTAL_ICON_SIZE + RENTAL_ICON_OFFSET_X;
-               this.rentalIcon.y = this._customHeight - RENTAL_ICON_SIZE + RENTAL_ICON_OFFSET_Y;
+               this.rentalIcon.y = this._customHeight - RENTAL_ICON_SIZE + RENTAL_ICON_OFFSET_Y - this._bottomOffset;
+               this.rentalTF.x = this.rentalIcon.x + RENTAL_TF_PADDING_RIGHT;
+               this.rentalTF.y = this._customHeight - this.rentalTF.height - this._bottomOffset ^ 0;
                this.rentalIcon.source = !!this._data.autoRentEnabled ? RES_ICONS.MAPS_ICONS_CUSTOMIZATION_ICON_RENT : RES_ICONS.MAPS_ICONS_LIBRARY_CLOCKICON_1;
             }
             else
@@ -812,9 +846,9 @@ package net.wg.gui.lobby.vehicleCustomization.controls
                this.storageTF.visible = true;
                this.compoundPrice.validateNow();
                this.storageTF.htmlText = this._data.rentalInfoText;
-               this.storageTF.x = this.compoundPrice.x - this.compoundPrice.contentWidth - this.storageTF.width ^ 0;
-               this.storageTF.y = this._customHeight - this.storageTF.height ^ 0;
-               this.storageIcon.y = this._customHeight - this.storageIcon.height ^ 0;
+               this.storageTF.y = this._customHeight - this.storageTF.height - this._bottomOffset ^ 0;
+               this.storageIcon.y = this._customHeight - this.storageIcon.height - this._bottomOffset ^ 0;
+               this.compoundPrice.x = this.storageTF.x + this.storageTF.width + this.compoundPrice.contentWidth ^ 0;
             }
          }
          else if(StringUtils.isNotEmpty(this._data.quantity))
@@ -838,6 +872,11 @@ package net.wg.gui.lobby.vehicleCustomization.controls
          {
             alpha = PLACEHOLDER_ALPHA;
          }
+         this.mainTypeImg.visible = this._data.isMainType;
+         this.mainTypeImgPosition();
+         this.shading.source = !!_loc2_ ? RES_ICONS.MAPS_ICONS_CUSTOMIZATION_SHADING_MINI : RES_ICONS.MAPS_ICONS_CUSTOMIZATION_SHADING;
+         this.shading.visible = this._data.isWide;
+         this.shadingPosition();
       }
       
       private function newMCframeScriptFunction() : void
@@ -936,11 +975,13 @@ package net.wg.gui.lobby.vehicleCustomization.controls
       {
          if(this._data && !this._data.isRental)
          {
-            this.storageTF.x = this._customWidth - this.storageTF.width - STORAGE_OFFSET ^ 0;
-            this.storageIcon.x = this.storageTF.x - this.storageIcon.width + ICON_PADDING_RIGHT ^ 0;
+            if(this.storageIcon.visible)
+            {
+               this.storageTF.x = this.storageIcon.width + STORAGE_OFFSET ^ 0;
+            }
          }
-         this.storageTF.y = this._customHeight - this.storageTF.height ^ 0;
-         this.storageIcon.y = this._customHeight - this.storageIcon.height ^ 0;
+         this.storageTF.y = this._customHeight - this.storageTF.height - this._bottomOffset ^ 0;
+         this.storageIcon.y = this._customHeight - this.storageIcon.height - this._bottomOffset ^ 0;
       }
       
       private function resetCounter() : void
@@ -990,6 +1031,21 @@ package net.wg.gui.lobby.vehicleCustomization.controls
       private function nonHistoricImgPosition() : void
       {
          this.nonHistoricImg.x = this.shadow.width - this.nonHistoricImg.width + NON_HISTORIC_OFFSET >> 0;
+      }
+      
+      private function mainTypeImgPosition() : void
+      {
+         var _loc1_:Boolean = false;
+         _loc1_ = this.isResponsive && App.appHeight < MIN_HEIGHT_RESOLUTION;
+         var _loc2_:Point = !!_loc1_ ? MAIN_TYPE_OFFSET_MIN : MAIN_TYPE_OFFSET;
+         this.mainTypeImg.x = this.shadow.width - this.mainTypeImg.width + _loc2_.x >> 0;
+         this.mainTypeImg.y = height - this.mainTypeImg.height + _loc2_.y >> 0;
+      }
+      
+      private function shadingPosition() : void
+      {
+         var _loc1_:Boolean = this.isResponsive && App.appHeight < MIN_HEIGHT_RESOLUTION;
+         this.shading.y = !!_loc1_ ? Number(SHADING_MINI_Y) : Number(SHADING_Y);
       }
       
       public function set buyOperationAllowed(param1:Boolean) : void
@@ -1100,6 +1156,16 @@ package net.wg.gui.lobby.vehicleCustomization.controls
       private function onNonHistoricImgChangeHandler(param1:Event = null) : void
       {
          this.nonHistoricImgPosition();
+      }
+      
+      private function onMainTypeImgChangeHandler(param1:Event = null) : void
+      {
+         this.mainTypeImgPosition();
+      }
+      
+      private function onShadingChangeHandler(param1:Event = null) : void
+      {
+         this.shadingPosition();
       }
       
       private function onNonHistoricImgRollOutHandler(param1:MouseEvent) : void

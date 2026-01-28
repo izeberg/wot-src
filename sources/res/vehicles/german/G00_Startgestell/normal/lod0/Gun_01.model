@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G00_Startgestell/normal/lod0/Gun_01</nodefullVisual>
+	<visibilityBox>
+		<min>-0.411168 -0.352217 -0.531280</min>
+		<max>0.411168 0.624370 0.900151</max>
+	</visibilityBox>
+	<parent>vehicles/german/G00_Startgestell/normal/lod1/Gun_01</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+</root>

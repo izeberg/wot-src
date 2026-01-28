@@ -13,7 +13,9 @@ package net.wg.data.constants.generated
       
       public static const MULTIPLE_BARREL_AUTOLOADER:int = 4;
       
-      public static const CASSETTE_TYPES:Array = [NO_CASSETTE,CASSETTE,AUTOLOADER,MULTIPLE_BARREL_CASSETTE,MULTIPLE_BARREL_AUTOLOADER];
+      public static const AUTO_GUN_CASSETTE:int = 5;
+      
+      public static const CASSETTE_TYPES:Array = [NO_CASSETTE,CASSETTE,AUTOLOADER,MULTIPLE_BARREL_CASSETTE,MULTIPLE_BARREL_AUTOLOADER,AUTO_GUN_CASSETTE];
       
       public static const MULTIPLE_BARREL_TYPES:Array = [MULTIPLE_BARREL_CASSETTE,MULTIPLE_BARREL_AUTOLOADER];
        

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB143_Captain/_skins/GB143_Captain_3Dst_01/normal/lod0/Hatch_Sleeve_R_anim</nodefullVisual>
+	<visibilityBox>
+		<min>1.244810 0.191810 -0.984639</min>
+		<max>1.672495 0.563533 -0.412212</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<parent>vehicles/british/GB143_Captain/_skins/GB143_Captain_3Dst_01/normal/lod1/Hatch_Sleeve_R_anim</parent>
+	<extent>32.000000</extent>
+</root>

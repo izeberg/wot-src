@@ -29,6 +29,22 @@ msgstr "Комплекс параметров, влияющих на корне�
 msgid "domain/battleParams/name"
 msgstr "Параметры боя"
 
+msgid "domain/battleSeasonModifiers/description"
+msgstr ""
+"Изменяет некоторые параметры всей техники, участвующей в сражениях "
+"Укрепрайона."
+
+msgid "domain/battleSeasonModifiers/name"
+msgstr "Модификатор Укрепрайона"
+
+msgid "domain/battleSeasonModifiersGM/description"
+msgstr ""
+"Изменяет некоторые параметры всей техники, участвующей в сражениях "
+"на Глобальной карте."
+
+msgid "domain/battleSeasonModifiersGM/name"
+msgstr "Модификатор Глобальной карты"
+
 msgid "domain/comp7SeasonModifiers/description"
 msgstr ""
 "На всю технику в боях Натиска действует особый модификатор, изменяющий её "
@@ -178,6 +194,12 @@ msgstr "Минимальное время перезарядки зоны рем
 
 msgid "modifier/name/fakeModifierRepairSpeed"
 msgstr "Скорость восстановления очков прочности машины."
+
+msgid "modifier/name/fakeSHVisionLightTank"
+msgstr "Радиус обзора (лёгкие гусеничные танки)"
+
+msgid "modifier/name/fakeSHVisionOtherTank"
+msgstr "Радиус обзора (средние и тяжёлые танки, а также ПТ-САУ)"
 
 msgid "modifier/name/fwMaxSpeed"
 msgstr "Максимальная скорость движения вперёд"

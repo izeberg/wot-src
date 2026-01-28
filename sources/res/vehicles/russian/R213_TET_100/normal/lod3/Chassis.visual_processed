@@ -1388,6 +1388,10 @@
 						alphaReference
 						<Int>64</Int>
 					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
 				</material>
 				<groupOrigin>-1.529723 0.859964 0.149183</groupOrigin>
 			</primitiveGroup>
@@ -1477,6 +1481,10 @@
 					<property>
 						alphaReference
 						<Int>64</Int>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>1.529759 0.862912 0.149183</groupOrigin>

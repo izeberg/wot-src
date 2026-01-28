@@ -18,6 +18,8 @@ package net.wg.infrastructure.base.meta.impl
       
       public var openConfigureWindow:Function;
       
+      public var openFreezeJournal:Function;
+      
       public var toggleRoomStatus:Function;
       
       public var onFiltersChange:Function;
@@ -103,6 +105,12 @@ package net.wg.infrastructure.base.meta.impl
       {
          App.utils.asserter.assertNotNull(this.openConfigureWindow,"openConfigureWindow" + Errors.CANT_NULL);
          this.openConfigureWindow();
+      }
+      
+      public function openFreezeJournalS() : void
+      {
+         App.utils.asserter.assertNotNull(this.openFreezeJournal,"openFreezeJournal" + Errors.CANT_NULL);
+         this.openFreezeJournal();
       }
       
       public function toggleRoomStatusS() : void
