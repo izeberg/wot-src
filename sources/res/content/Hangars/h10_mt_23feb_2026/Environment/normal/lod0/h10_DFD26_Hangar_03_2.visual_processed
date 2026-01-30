@@ -322,11 +322,11 @@
 					</property>
 					<property>
 						g_dirtColorParams
-						<Vector4>0.100000 0.850000 1.000000 0.500000</Vector4>
+						<Vector4>0.100000 0.500000 1.000000 0.500000</Vector4>
 					</property>
 					<property>
 						g_tile0Tint
-						<Vector4>0.521569 0.513726 0.505882 1.000000</Vector4>
+						<Vector4>0.600000 0.580392 0.568627 1.000000</Vector4>
 					</property>
 					<property>
 						g_tile1Tint
@@ -334,7 +334,7 @@
 					</property>
 					<property>
 						g_tile2Tint
-						<Vector4>0.600000 0.600000 0.600000 1.000000</Vector4>
+						<Vector4>0.650980 0.686275 0.729412 1.000000</Vector4>
 					</property>
 					<property>
 						metallicAOTile0

@@ -3340,7 +3340,7 @@
 				<amplitude>0</amplitude>
 				<recoilEffect>main</recoilEffect>
 			</recoil>
-			<effects>shot_mainext</effects>
+			<effects>shot_large</effects>
 			<reloadEffect>reload85_107</reloadEffect>
 			<pitchLimits>
 				<minPitch>
@@ -5503,8 +5503,8 @@
 				<amplitude>0</amplitude>
 				<recoilEffect>huge</recoilEffect>
 			</recoil>
-			<effects>shot_main</effects>
-			<reloadEffect>reload85_107</reloadEffect>
+			<effects>shot_largeext</effects>
+			<reloadEffect>reload115_152</reloadEffect>
 			<pitchLimits>
 				<minPitch>
 					0.0 -15.0 1.0 -15.0
