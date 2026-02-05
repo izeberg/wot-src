@@ -2164,12 +2164,12 @@
 						<gun>60</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.36
+						0.3
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>20</reloadTime>
 					<aimingTime>
-						2.7
+						2.5
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>
@@ -2199,10 +2199,10 @@
 					</shotDispersionFactors>
 					<dualAccuracy>
 						<afterShotDispersionRadius>
-							0.46
+							0.44
 							<!--BW_String-->
 						</afterShotDispersionRadius>
-						<coolingDelay>25</coolingDelay>
+						<coolingDelay>23</coolingDelay>
 					</dualAccuracy>
 					<customizationSlots>
 						<slot>
@@ -2483,7 +2483,7 @@
 		<detailed>
 			<engines>
 				<Cat_LDS_750>
-					<smplEnginePower>500</smplEnginePower>
+					<smplEnginePower>600</smplEnginePower>
 					<smplFwMaxSpeed>55</smplFwMaxSpeed>
 				</Cat_LDS_750>
 			</engines>

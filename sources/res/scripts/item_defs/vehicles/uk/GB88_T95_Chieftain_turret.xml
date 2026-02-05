@@ -132,7 +132,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>20414</weight>
-		<maxHealth>2000</maxHealth>
+		<maxHealth>1850</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>300</maxHealth>
 			<maxRegenHealth>160</maxRegenHealth>
@@ -1241,11 +1241,11 @@
 			<rotationSpeed>32</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
-					0.12
+					0.14
 					<!--BW_String-->
 				</vehicleMovement>
 				<vehicleRotation>
-					0.12
+					0.14
 					<!--BW_String-->
 				</vehicleRotation>
 			</shotDispersionFactors>
@@ -3590,7 +3590,7 @@
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						8.9
+						9.2
 						<!--BW_String-->
 					</reloadTime>
 					<shotDispersionFactors>
@@ -3608,7 +3608,7 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<aimingTime>
-						1.9
+						2.1
 						<!--BW_String-->
 					</aimingTime>
 					<models>
@@ -4668,7 +4668,7 @@
 		<detailed>
 			<engines>
 				<Continental_AOI-1195-5>
-					<smplEnginePower>1000</smplEnginePower>
+					<smplEnginePower>900</smplEnginePower>
 					<smplFwMaxSpeed>50</smplFwMaxSpeed>
 				</Continental_AOI-1195-5>
 			</engines>

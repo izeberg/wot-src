@@ -6375,7 +6375,7 @@
 			<shots>
 				<_106mm_HEAT_M344A1>
 					<defaultPortion>
-						0.0
+						0.9
 						<!--BW_String-->
 					</defaultPortion>
 					<speed>800</speed>
@@ -6388,7 +6388,7 @@
 				</_106mm_HEAT_M344A1>
 				<_106mm_HEP_M346A1>
 					<defaultPortion>
-						1.0
+						0.0
 						<!--BW_String-->
 					</defaultPortion>
 					<speed>600</speed>
@@ -6401,7 +6401,7 @@
 				</_106mm_HEP_M346A1>
 				<_106mm_HEP_M346A2>
 					<defaultPortion>
-						1.0
+						0.1
 						<!--BW_String-->
 					</defaultPortion>
 					<speed>600</speed>

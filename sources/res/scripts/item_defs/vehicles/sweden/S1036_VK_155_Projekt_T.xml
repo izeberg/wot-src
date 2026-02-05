@@ -2285,10 +2285,10 @@
 						<gun>25</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.70
+						0.65
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>35</reloadTime>
+					<reloadTime>30</reloadTime>
 					<aimingTime>
 						5.0
 						<!--BW_String-->
@@ -2299,7 +2299,7 @@
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
-							1.0
+							2.5
 							<!--BW_String-->
 						</afterShot>
 						<whileGunDamaged>
@@ -2308,18 +2308,16 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<clip>
-						<count>2</count>
-						<rate>12</rate>
+						<count>3</count>
+						<rate>60</rate>
 					</clip>
 					<autoreload>
-						<reloadTime>35 45</reloadTime>
-						<boostFraction>
-							0.5
-							<!--BW_String-->
-						</boostFraction>
-						<boostStartTime>0</boostStartTime>
-						<boostResidueTime>2</boostResidueTime>
+						<reloadTime>16 16 30</reloadTime>
 					</autoreload>
+					<burst>
+						<count>3</count>
+						<rate>60</rate>
+					</burst>
 					<turretYawLimits>-12 12</turretYawLimits>
 					<pitchLimits>
 						<minPitch>0 -35 1 -35</minPitch>
@@ -3175,9 +3173,4 @@
 			<!--BW_String-->
 		</alpha>
 	</emblems>
-	<prefabAttachments>
-		<newAttachment0>
-			<attachmentId>31080</attachmentId>
-		</newAttachment0>
-	</prefabAttachments>
 </root>

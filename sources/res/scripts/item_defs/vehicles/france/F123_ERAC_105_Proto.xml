@@ -968,14 +968,14 @@
 			</terrainResistance>
 			<brakeForce>12000</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>39</rotationSpeed>
+			<rotationSpeed>46</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
-					0.14
+					0.10
 					<!--BW_String-->
 				</vehicleMovement>
 				<vehicleRotation>
-					0.14
+					0.10
 					<!--BW_String-->
 				</vehicleRotation>
 			</shotDispersionFactors>
@@ -2294,7 +2294,7 @@
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>1200</weight>
 			<maxHealth>230</maxHealth>
-			<rotationSpeed>40</rotationSpeed>
+			<rotationSpeed>47</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>150</maxHealth>
 				<maxRegenHealth>75</maxRegenHealth>
@@ -2303,7 +2303,7 @@
 					<!--BW_String-->
 				</repairCost>
 			</turretRotatorHealth>
-			<circularVisionRadius>390</circularVisionRadius>
+			<circularVisionRadius>410</circularVisionRadius>
 			<surveyingDeviceHealth>
 				<maxHealth>110</maxHealth>
 				<maxRegenHealth>55</maxRegenHealth>
@@ -2315,7 +2315,7 @@
 			<guns>
 				<_105mm_D1090>
 					shared
-					<maxAmmo>40</maxAmmo>
+					<maxAmmo>42</maxAmmo>
 					<armor>
 						<armor_1>
 							25
@@ -2348,12 +2348,12 @@
 						<gun>40</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.4
+						0.44
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>30</reloadTime>
 					<aimingTime>
-						2.3
+						1.8
 						<!--BW_String-->
 					</aimingTime>
 					<shotDispersionFactors>

@@ -2042,13 +2042,16 @@
 		<price>1330</price>
 		<kind>HIGH_EXPLOSIVE</kind>
 		<caliber>155</caliber>
-		<explosionRadius>6</explosionRadius>
+		<explosionRadius>8</explosionRadius>
 		<isTracer>true</isTracer>
 		<effects>hugeSF</effects>
 		<damage>
-			<armor>920</armor>
+			<armor>1050</armor>
 			<devices>105</devices>
 		</damage>
+		<deviceDamagePossibility>
+			<protectFromIndirectHits>internal tankmen</protectFromIndirectHits>
+		</deviceDamagePossibility>
 	</_155mm_slsgr_M66_T>
 	<_155mm_slpgr_M112_T>
 		<id>35002</id>

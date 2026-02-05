@@ -479,9 +479,6 @@
 				<bank>
 					<name>inbattle_communication_pc.bnk</name>
 				</bank>
-				<bank>
-					<name>vo_context_hints.bnk</name>
-				</bank>
 			</voice_soundbanks>
 			<SFX_soundbanks_loadonce>
 				<bank>
@@ -612,6 +609,9 @@
 				</bank>
 				<bank>
 					<name>field_modernization.bnk</name>
+				</bank>
+				<bank>
+					<name>vo_context_hints.bnk</name>
 				</bank>
 			</SFX_soundbanks_loadonce>
 			<SFX_soundbanks_hangar>
