@@ -2,6 +2,7 @@ from __future__ import absolute_import
 import logging, typing
 from adisp import adisp_async, adisp_process
 from fun_random_common.fun_constants import UNKNOWN_EVENT_ID
+from fun_random.gui.fun_account_settings import FunSubModeAccountSettings
 from fun_random.gui.fun_gui_constants import SELECTOR_BATTLE_TYPES
 from fun_random.gui.feature.util.fun_helpers import notifyCaller
 from fun_random.gui.feature.util.fun_wrappers import hasActiveProgression, hasAnySubMode, hasSingleSubMode, hasSpecifiedSubMode
@@ -108,12 +109,14 @@ class FunSubModesWatcher(object):
     @hasSpecifiedSubMode()
     def showSubModeInfoPage(self, subModeID):
         selectorUtils.setBattleTypeAsKnown(SELECTOR_BATTLE_TYPES.FUN_RANDOM)
-        showFunRandomInfoPage(self.getSubMode(subModeID).getSettings().client.infoPageUrl)
+        subModeSettings = self.getSubMode(subModeID).getSettings().client
+        showFunRandomInfoPage(subModeSettings.infoPageUrl)
+        FunSubModeAccountSettings(subModeSettings.settingsKey).setInfoPageViewed(True)
 
     @hasSingleSubMode(abortAction='showCommonInfoPage')
     def showSubModesInfoPage(self):
         selectorUtils.setBattleTypeAsKnown(SELECTOR_BATTLE_TYPES.FUN_RANDOM)
-        showFunRandomInfoPage(first(self.getSubModes()).getSettings().client.infoPageUrl)
+        self.showSubModeInfoPage(first(self.getSubModes()).getSubModeID())
 
     def startSubSelectionListening(self, method):
         self._funRandomCtrl.subscription.addListener(FunEventType.SUB_SELECTION, method)

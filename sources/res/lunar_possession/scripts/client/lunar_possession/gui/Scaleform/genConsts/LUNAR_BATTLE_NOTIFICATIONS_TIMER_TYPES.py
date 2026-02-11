@@ -1,0 +1,4 @@
+
+
+class LUNAR_BATTLE_NOTIFICATIONS_TIMER_TYPES(object):
+    LUNAR_SPIRIT_INDICATOR = 'lunarSpiritIndicator'

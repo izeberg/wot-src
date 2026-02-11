@@ -2,6 +2,7 @@ from __future__ import absolute_import
 import typing
 from battle_modifiers.gui.feature.modifiers_data_provider import ModifiersDataProvider
 from Event import Event, EventManager
+from fun_random.gui.fun_account_settings import setSubModeDefaultSettings
 from fun_random_common.fun_constants import BATTLE_MODE_VEH_TAGS_EXCEPT_FUN
 from fun_random.gui.feature.fun_constants import FunTimersShifts
 from fun_random.gui.feature.models.common import FunRandomSeason, FunPeriodInfo
@@ -10,6 +11,7 @@ from fun_random.gui.shared.events import FunEventType
 from fun_random.helpers.server_settings import FunSubModeConfig
 from gui.game_control.season_provider import SeasonProvider
 from gui.impl.gen import R
+from gui.prb_control.entities.base import vehicleAmmoCheck
 from gui.prb_control.items import ValidationResult
 from gui.prb_control.settings import PRE_QUEUE_RESTRICTION, UNIT_RESTRICTION
 from gui.shared.gui_items.Vehicle import Vehicle
@@ -98,6 +100,9 @@ class IFunSubMode(ISeasonProvider, Notifiable):
     def updateSettings(self, subModeSettings):
         raise NotImplementedError
 
+    def canEnqueueVehicle(self, callback=None):
+        raise NotImplementedError
+
 
 class FunBaseSubMode(IFunSubMode, SeasonProvider):
     __slots__ = ('_em', '_settings', '_modifiersDataProvider', '_performanceAlertInfo')
@@ -116,6 +121,7 @@ class FunBaseSubMode(IFunSubMode, SeasonProvider):
 
     def init(self):
         self.startNotification()
+        self._addSubModeDefaultAccountSettings()
 
     def destroy(self):
         self.clearNotification()
@@ -134,7 +140,7 @@ class FunBaseSubMode(IFunSubMode, SeasonProvider):
         return self._settings.isEnabled
 
     def isEntryPointAvailable(self):
-        return self.hasSuitableVehicles() or self.isSuitableVehicleAvailable()
+        return True
 
     def isLastActiveCycleEnded(self):
         now = time_utils.getCurrentLocalServerTimestamp()
@@ -240,6 +246,10 @@ class FunBaseSubMode(IFunSubMode, SeasonProvider):
             return False
         return self._updateSettings(subModeSettings)
 
+    @vehicleAmmoCheck
+    def canEnqueueVehicle(self, callback=None):
+        pass
+
     def _createSeason(self, cycleInfo, seasonData):
         return FunRandomSeason(cycleInfo, seasonData, self._settings.client.assetsPointer)
 
@@ -254,6 +264,10 @@ class FunBaseSubMode(IFunSubMode, SeasonProvider):
 
     def _subModeStatusUpdate(self):
         self.onSubModeEvent(FunEventType.SUB_STATUS_UPDATE, self.getSubModeID())
+
+    def _addSubModeDefaultAccountSettings(self):
+        settingsKey = self.getSettings().client.settingsKey
+        setSubModeDefaultSettings(settingsKey)
 
     def __getAllowedVehiclesCriteria(self, settings):
         criteria = REQ_CRITERIA.VEHICLE.LEVELS(settings.levels)

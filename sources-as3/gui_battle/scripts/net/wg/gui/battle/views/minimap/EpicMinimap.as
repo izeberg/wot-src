@@ -239,9 +239,8 @@ package net.wg.gui.battle.views.minimap
       
       public function as_updateSectorStateStats(param1:Object) : void
       {
-         var _loc3_:MovieClip = null;
          var _loc2_:int = this._sectorState.length;
-         _loc3_ = this.mapShortcutLabel.sectorOverview.changeOwnerAnim;
+         var _loc3_:MovieClip = this.mapShortcutLabel.sectorOverview.changeOwnerAnim;
          var _loc4_:int = 0;
          while(_loc4_ < _loc2_)
          {

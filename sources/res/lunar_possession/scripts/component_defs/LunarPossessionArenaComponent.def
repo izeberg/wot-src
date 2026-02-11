@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<BaseMethods>
+		<receiveBattleStatistics>
+			<Arg>SPIRIT_STATISTICS_LIST</Arg>
+		</receiveBattleStatistics>
+	</BaseMethods>
+	<CellMethods>
+		<setupArena>
+			<Args>
+				<config>PYTHON</config>
+			</Args>
+		</setupArena>
+	</CellMethods>
+	<ofEntity>
+		<Arena/>
+	</ofEntity>
+</root>

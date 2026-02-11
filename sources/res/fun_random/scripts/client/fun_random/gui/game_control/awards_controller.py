@@ -20,7 +20,7 @@ class FunProgressionQuestsHandler(ServiceChannelHandler, FunProgressionWatcher):
     _CLIENT_MSG_TYPE = SCH_CLIENT_MSG_TYPE.FUN_RANDOM_PROGRESSION
 
     def __init__(self, awardCtrl):
-        super(FunProgressionQuestsHandler, self).__init__(SYS_MESSAGE_TYPE.battleResults.index(), awardCtrl)
+        super(FunProgressionQuestsHandler, self).__init__(SYS_MESSAGE_TYPE.funRandomBattleResults.index(), awardCtrl)
 
     def _showAward(self, ctx):
         self.__systemMessages.proto.serviceChannel.pushClientMessage(_getMessage(ctx), self._CLIENT_MSG_TYPE)

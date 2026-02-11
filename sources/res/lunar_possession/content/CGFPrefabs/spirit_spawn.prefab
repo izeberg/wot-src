@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<version>4</version>
+	<GameObjects>
+		<GameObject>
+			<name>spiritSpawn</name>
+			<UUID>a2ee668f-084c-4dee-837b-49c78585a0d4</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>Debug</name>
+			<UUID>07cab73e-9365-4fc8-bb1f-cb3d5455a453</UUID>
+			<flags>0</flags>
+		</GameObject>
+	</GameObjects>
+	<components>
+		<ComponentPool>
+			<type>Hierarchy</type>
+			<version>2</version>
+			<component>
+				<UUID>07cab73e-9365-4fc8-bb1f-cb3d5455a453</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>a2ee668f-084c-4dee-837b-49c78585a0d4</link>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>Transform</type>
+			<version>1</version>
+			<component>
+				<UUID>a2ee668f-084c-4dee-837b-49c78585a0d4</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>07cab73e-9365-4fc8-bb1f-cb3d5455a453</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							1.14441e-05 0 0
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>
+							-7.45058e-09 3.72529e-09 0
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>CylinderArea</type>
+			<version>1</version>
+			<component>
+				<UUID>07cab73e-9365-4fc8-bb1f-cb3d5455a453</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Height</name>
+						<value>10</value>
+					</property>
+					<property>
+						<name>Radius</name>
+						<value>4</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>DebugTextComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>07cab73e-9365-4fc8-bb1f-cb3d5455a453</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Text</name>
+						<value>Spirit can spawn here</value>
+					</property>
+					<property>
+						<name>Text Color</name>
+						<value>1 0 0 1</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>BW::DebugAreaColorComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>07cab73e-9365-4fc8-bb1f-cb3d5455a453</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>wireframeColour</name>
+						<value>1 1 0 1</value>
+					</property>
+					<property>
+						<name>zoneTriggeredColor</name>
+						<value>
+							0 0 1 0.4
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>SpiritSpawn</type>
+			<version>1</version>
+			<component>
+				<UUID>a2ee668f-084c-4dee-837b-49c78585a0d4</UUID>
+				<flags>34</flags>
+			</component>
+		</ComponentPool>
+	</components>
+</root>

@@ -77,7 +77,7 @@ BATTLE_RESULT_PROGRESS_PRESENTER = 75
 BATTLE_ENTRY = 76
 DYNAMIC_VIEWS_FOR_MONITORING = 77
 
-class _CollectEventsManager(object):
+class CollectEventsManager(object):
 
     def __init__(self):
         self.__handlers = defaultdict(list)
@@ -96,7 +96,7 @@ class _CollectEventsManager(object):
         return self.__handlers
 
 
-__collectEM = _CollectEventsManager()
+__collectEM = CollectEventsManager()
 
 def registerScaleformBattlePackages(guiType, packages):
 

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<htmlTemplates>
+		<LunarPossessionBattleResult>
+			<icon>BattleResultIcon</icon>
+			<buttonsLayout>
+				<button>
+					<type>submit</type>
+					<label>_(#lunar_possession.lunar_messenger:notifications/battleResults/buttonLabel)</label>
+					<action>showBattleResults</action>
+				</button>
+			</buttonsLayout>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;%(mainResult)s&lt;/font&gt;
+&lt;font color=&apos;#8C8C7E&apos;&gt;_(#lunar_possession.lunar_messenger:notifications/battleResults/event) %(eventName)s&lt;/font&gt;
+&lt;font color=&apos;#8C8C7E&apos;&gt;_(#lunar_possession.lunar_messenger:notifications/battleResults/battle) %(arenaName)s&lt;/font&gt;
+&lt;font color=&apos;#8C8C7E&apos;&gt;_(#lunar_possession.lunar_messenger:notifications/battleResults/vehicle) %(vehicleNames)s&lt;/font&gt;%(missionsCountStr)s%(lunarProgressionTokenStr)s</message>
+		</LunarPossessionBattleResult>
+	</htmlTemplates>
+</root>

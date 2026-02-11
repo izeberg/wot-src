@@ -4869,6 +4869,16 @@ package net.wg.data.constants.generated
       
       public static const COMP7_POINT_RECON_MINIMAP_ENTRY_UI:String = "Comp7PointReconMinimapEntryUI";
       
+      public static const LUNAR_DAMAGE_INDICATOR:String = "lunarDamageIndicator";
+      
+      public static const PICKUP:String = "pickup";
+      
+      public static const POSSESSED_ALLY_GREEN:String = "possessed_ally_green";
+      
+      public static const POSSESSED_ENEMY_RED:String = "possessed_enemy_red";
+      
+      public static const RIBBONS_SPIRIT_CARRIER_DOT:String = "ribbonsSpiritCarrierDot";
+      
       public static const SM_MINIMAP_FOG_1:String = "sm_minimap_fog_1";
       
       public static const SM_MINIMAP_FOG_2:String = "sm_minimap_fog_2";

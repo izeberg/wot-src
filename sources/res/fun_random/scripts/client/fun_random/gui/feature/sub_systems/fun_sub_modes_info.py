@@ -31,6 +31,9 @@ class FunSubModesInfo(IFunRandomController.IFunSubModesInfo):
         isAvailable = self.getSubModesStatus().state not in FunSubModesState.HIDDEN_ENTRY_STATES
         return isAvailable and any(subMode.isEntryPointAvailable() for subMode in self.__subModes.getSubModes())
 
+    def hasSuitableVehicles(self):
+        return any(sm.hasSuitableVehicles() or sm.isSuitableVehicleAvailable() for sm in self.__subModes.getSubModes())
+
     def getEventEndDate(self, now=None, subModesIDs=None):
         now = now or time_utils.getCurrentTimestamp()
         subModes = self.__subModes.getSubModes(subModesIDs)

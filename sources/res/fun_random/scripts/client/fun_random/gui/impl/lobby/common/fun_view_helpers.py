@@ -5,7 +5,8 @@ import math_utils
 from fun_random.gui.impl.gen.view_models.views.lobby.common.fun_random_progression_stage import FunRandomProgressionStage, Rarity
 from fun_random.gui.impl.gen.view_models.views.lobby.common.fun_random_progression_state import FunRandomProgressionStatus
 from fun_random.gui.impl.gen.view_models.views.lobby.common.fun_random_quest_card_model import FunRandomQuestCardModel, CardState
-from fun_random.gui.impl.lobby.common.lootboxes import FunRandomLootBoxTokenBonusPacker, FunRandomRewardLootBoxTokenBonusPacker, FunRandomLootBoxVehiclesBonusUIPacker, FEP_CATEGORY
+from fun_random.gui.impl.lobby.common.bonuses import FunRandomGoodiesBonusUIPacker
+from fun_random.gui.impl.lobby.common.lootboxes import FunRandomLootBoxTokenBonusPacker, FunRandomRewardLootBoxTokenBonusPacker, FunRandomLootBoxVehiclesBonusUIPacker, FunRandomRewardsViewLootBoxTokenBonusPacker, FEP_CATEGORY
 from fun_random.gui.feature.fun_constants import FunSubModesState
 from fun_random.gui.feature.sub_systems.fun_performance_analyzers import PerformanceGroup
 from gui.impl import backport
@@ -15,10 +16,11 @@ from gui.impl.gen import R
 from gui.impl.gen.view_models.views.lobby.common.mode_performance_model import PerformanceRiskEnum
 from gui.impl.gen.view_models.views.lobby.user_missions.constants.event_banner_state import EventBannerState
 from gui.impl.lobby.common.view_helpers import packBonusModelAndTooltipData
-from gui.server_events.bonuses import LootBoxTokensBonus, mergeBonuses
+from gui.server_events.bonuses import GoodiesBonus, LootBoxTokensBonus, mergeBonuses
 from gui.shared.formatters import time_formatters
 from gui.shared.formatters.ranges import toRomanRangeString
 from gui.shared.missions.packers.bonus import BonusUIPacker, ExtendedBlueprintBonusUIPacker, getDefaultBonusPackersMap, Customization3Dand2DbonusUIPacker, VehiclesBonusUIPacker
+from gui.shared.money import Currency
 from helpers import dependency
 from shared_utils import first, findFirst
 from skeletons.gui.shared import IItemsCache
@@ -55,6 +57,7 @@ FUN_RANDOM_MAPPING = {'tokens': FunRandomLootBoxTokenBonusPacker,
    'tmanToken': TmanTemplateBonusPacker, 
    'vehicles': VehiclesBonusUIPacker, 
    'customizations': Customization3Dand2DbonusUIPacker, 
+   'goodies': FunRandomGoodiesBonusUIPacker, 
    BlueprintBonusTypes.BLUEPRINTS: ExtendedBlueprintBonusUIPacker, 
    BlueprintBonusTypes.BLUEPRINTS_ANY: ExtendedBlueprintBonusUIPacker, 
    BlueprintBonusTypes.FINAL_BLUEPRINTS: ExtendedBlueprintBonusUIPacker}
@@ -66,6 +69,21 @@ RARITY_ORDER = (
  Rarity.LEGENDARY)
 LOOTBOX_TYPE = 'fep_{0}'
 RARITY_VALUES = tuple(LOOTBOX_TYPE.format(v.value) for v in RARITY_ORDER)
+DEFAULT_FEP_LB_RARITY = Rarity.ORDINARY
+DEFAULT_NON_FEP_LB_RARITY = Rarity.LEGENDARY
+DEFAULT_FEP_PROGRESSION_STAGE_RARITY = Rarity.RARE
+_FUN_PROGRESSION_BONUS_ORDER = [
+ 'lootBox',
+ 'customizations',
+ 'tmanToken',
+ Currency.CRYSTAL,
+ Currency.EQUIP_COIN,
+ Currency.FREE_XP,
+ 'crewBooks',
+ 'mentoring_license',
+ 'premium_plus',
+ Currency.CREDITS,
+ 'goodies']
 
 def getFormattedTimeLeft(seconds):
     return time_formatters.getTillTimeByResource(seconds, R.strings.fun_random.modeSelector.status.timeLeft, removeLeadingZeros=True)
@@ -97,6 +115,14 @@ def getCompensatedFunRandomBonusPacker():
     mapping = getDefaultBonusPackersMap()
     mapping.update(FUN_RANDOM_MAPPING)
     mapping.update({'vehicles': FunRandomLootBoxVehiclesBonusUIPacker})
+    return BonusUIPacker(mapping)
+
+
+def getFunRandomRewardsViewBonusPacker():
+    mapping = getDefaultBonusPackersMap()
+    mapping.update(FUN_RANDOM_MAPPING)
+    mapping.update({'vehicles': FunRandomLootBoxVehiclesBonusUIPacker, 
+       'lootBox': FunRandomRewardsViewLootBoxTokenBonusPacker})
     return BonusUIPacker(mapping)
 
 
@@ -136,7 +162,7 @@ def packBonuses(bonuses, showCount, isSpecial):
 
 def packProgressionActiveStage(progression, stageModel, isSpecial=False, tooltips=None):
     maximumPoints = progression.conditions.maximumCounter
-    _packStage(progression.activeStage.bonuses, math_utils.clamp(0, maximumPoints, progression.conditions.counter), progression.activeStage.requiredCounter, maximumPoints, progression.conditions.counter >= progression.conditions.maximumCounter, stageModel, isSpecial, tooltips)
+    _packStage(progression.activeStage.bonuses, math_utils.clamp(0, maximumPoints, progression.conditions.counter), progression.activeStage.requiredCounter, maximumPoints, progression.conditions.counter >= progression.conditions.maximumCounter, stageModel, isSpecial, tooltips, DEFAULT_FEP_PROGRESSION_STAGE_RARITY)
 
 
 def packInfiniteProgressionStage(progression, stageModel, isSpecial=False, tooltips=None):
@@ -190,7 +216,7 @@ def packProgressionStages(progression, stagesModel, tooltips=None):
     maximumPoints = progression.conditions.maximumCounter
     for stage in progression.stages:
         stageModel = FunRandomProgressionStage()
-        _packStage(stage.bonuses, progression.conditions.counter, stage.requiredCounter, maximumPoints, progression.conditions.counter >= stage.requiredCounter, stageModel, tooltips=tooltips)
+        _packStage(stage.bonuses, progression.conditions.counter, stage.requiredCounter, maximumPoints, progression.conditions.counter >= stage.requiredCounter, stageModel, tooltips=tooltips, defaultRarity=DEFAULT_FEP_PROGRESSION_STAGE_RARITY)
         stagesModel.addViewModel(stageModel)
 
     stagesModel.invalidate()
@@ -223,15 +249,20 @@ def packPerformanceAlertInfo(performanceModel, performanceGroup, default=Perform
     performanceModel.setShowPerfRisk(performanceGroup != default)
 
 
-def sortFunProgressionBonuses(bonuses):
-    lootboxes, other = [], []
-    for bonus in bonuses:
-        if isinstance(bonus, LootBoxTokensBonus):
-            lootboxes.append(bonus)
-        else:
-            other.append(bonus)
+def _getFunProgressionBonusOrder(bonus):
+    bonusName = bonus.getName()
+    if isinstance(bonus, GoodiesBonus) and bonus.getMentoringLicenses():
+        bonusName = 'mentoring_license'
+    try:
+        idx = _FUN_PROGRESSION_BONUS_ORDER.index(bonusName)
+    except ValueError:
+        idx = len(_FUN_PROGRESSION_BONUS_ORDER) + 1
 
-    return sorted(lootboxes) + sorted(other)
+    return idx
+
+
+def sortFunProgressionBonuses(bonuses):
+    return sorted(bonuses, key=_getFunProgressionBonusOrder)
 
 
 def _packConditions(conditionModel, statusTimer, text, triggers):
@@ -262,22 +293,26 @@ def _packTrigger(cardModel, trigger):
     cardModel.setAltBonusCount(altQuest.getBonusCounterNumber() if altQuest else 0)
 
 
-def _packStage(bonuses, currentPoints, requiredPoints, maximumPoints, isCompleted, stageModel, isSpecial=False, tooltips=None):
+def _packStage(bonuses, currentPoints, requiredPoints, maximumPoints, isCompleted, stageModel, isSpecial=False, tooltips=None, defaultRarity=DEFAULT_FEP_LB_RARITY):
     stageModel.setCurrentPoints(currentPoints)
     stageModel.setRequiredPoints(requiredPoints)
     stageModel.setMaximumPoints(maximumPoints)
-    stageModel.setRarity(_getStageRarity(bonuses))
+    stageModel.setRarity(getStageRarity(bonuses, defaultRarity))
     stageModel.setIsCompleted(isCompleted)
     packStageRewards(bonuses, stageModel.getRewards(), isSpecial, tooltips)
 
 
 @dependency.replace_none_kwargs(itemsCache=IItemsCache)
-def _getStageRarity(bonuses, itemsCache=None):
-    rarityIdx = RARITY_ORDER.index(Rarity.ORDINARY)
+def getStageRarity(bonuses, defaultRarity=DEFAULT_FEP_LB_RARITY, itemsCache=None):
+    rarityIdx = RARITY_ORDER.index(defaultRarity)
     for bonus in (b for b in bonuses if isinstance(b, LootBoxTokensBonus)):
         for tID in bonus.getTokens():
             lb = itemsCache.items.tokens.getLootBoxByTokenID(tID)
-            if lb and lb.getCategory() == FEP_CATEGORY and lb.getType() in RARITY_VALUES:
+            if lb is None:
+                continue
+            if lb.getCategory() != FEP_CATEGORY:
+                return DEFAULT_NON_FEP_LB_RARITY
+            if lb.getType() in RARITY_VALUES:
                 lbRarityIdx = RARITY_VALUES.index(lb.getType())
                 if lbRarityIdx > rarityIdx:
                     rarityIdx = lbRarityIdx

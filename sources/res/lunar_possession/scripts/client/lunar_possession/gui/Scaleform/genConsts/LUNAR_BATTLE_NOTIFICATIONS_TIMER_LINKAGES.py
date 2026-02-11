@@ -1,0 +1,4 @@
+
+
+class LUNAR_BATTLE_NOTIFICATIONS_TIMER_LINKAGES(object):
+    LUNAR_SPIRIT_INDICATOR_ICON = 'lunarSpiritIndicatorUI'

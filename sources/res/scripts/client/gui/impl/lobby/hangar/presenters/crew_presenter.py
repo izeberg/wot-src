@@ -178,7 +178,7 @@ class CrewPresenter(ViewComponent[CrewModel]):
           'idleCrewXP', self.__idleCrewXPUpdated),)
 
     def __idleCrewXPUpdated(self, diff):
-        self.__updateIntensiveTraining()
+        self._updateIntensiveTraining()
 
     def _getEvents(self):
         return (
@@ -220,7 +220,7 @@ class CrewPresenter(ViewComponent[CrewModel]):
             layoutID = R.views.dialogs.DefaultDialog()
             if uiLoader.windowsManager.getViewByLayoutID(layoutID) is None:
                 yield wg_await(showIdleCrewBonusDialog(dialogMessage, toggleCallback))
-            self.__updateIntensiveTraining()
+            self._updateIntensiveTraining()
         return
 
     def __buildConfirmationMessage(self):
@@ -241,7 +241,7 @@ class CrewPresenter(ViewComponent[CrewModel]):
         return message
 
     def __onWotPlusStatusChanged(self, _):
-        self.__updateIntensiveTraining()
+        self._updateIntensiveTraining()
 
     @wg_async
     def __onToggleAcceleratedTraining(self):
@@ -300,7 +300,7 @@ class CrewPresenter(ViewComponent[CrewModel]):
 
     def __onServerSettingsChange(self, diff):
         if RENEWABLE_SUBSCRIPTION_CONFIG in diff:
-            self.__updateIntensiveTraining()
+            self._updateIntensiveTraining()
 
     def __onVehicleChanged(self):
         self.__updateModel()
@@ -319,8 +319,8 @@ class CrewPresenter(ViewComponent[CrewModel]):
             self.viewModel.setIntensiveTraining(CrewModel.DISABLED_TRAINING_STATE)
         else:
             self.__updateCrewModel()
-            self.__updateAcceleratedTraining()
-            self.__updateIntensiveTraining()
+            self._updateAcceleratedTraining()
+            self._updateIntensiveTraining()
         return
 
     def __findLessMasteredTman(self):
@@ -551,7 +551,7 @@ class CrewPresenter(ViewComponent[CrewModel]):
             return PerkModel.LEARNED_STATE
         return PerkModel.LEARNING_STATE
 
-    def __updateAcceleratedTraining(self):
+    def _updateAcceleratedTraining(self):
         isXPToTman = g_currentVehicle.item.isXPToTman if g_currentVehicle.item else False
         acceleratedTrainingState = CrewModel.DISABLED_TRAINING_STATE
         if isXPToTman:
@@ -560,7 +560,7 @@ class CrewPresenter(ViewComponent[CrewModel]):
             acceleratedTrainingState = CrewModel.OFF_TRAINING_STATE
         self.viewModel.setAcceleratedTraining(acceleratedTrainingState)
 
-    def __updateIntensiveTraining(self):
+    def _updateIntensiveTraining(self):
         with self.viewModel.transaction() as (vm):
             wotPlusState = CrewModel.DISABLED_TRAINING_STATE
             vehicle = g_currentVehicle.item

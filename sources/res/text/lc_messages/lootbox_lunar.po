@@ -20,6 +20,16 @@ msgstr[2] "%(count) remaining Blazing Treasures"
 msgid "awardViews/footer/backButton/"
 msgstr "Back to Treasures"
 
+msgid "boxTooltip/description/text/lunar"
+msgstr ""
+"When opened, these Treasures may grant you Premium vehicles, in-game "
+"currencies, and other valuable rewards."
+
+msgid "boxTooltip/howGet/text/lunar"
+msgstr ""
+"Blazing Treasures can be purchased in the in-game Store, as well as received"
+" for completing Progression Stages."
+
 msgid "common/boxCategory/lowerCase/lunar"
 msgstr "Blazing Treasure"
 
@@ -163,7 +173,13 @@ msgstr ""
 "contents, then all subsequent vehicles you receive from Blazing Treasures "
 "will be compensated in gold."
 
+msgid "singleRewardView/tooltip/remainingCount"
+msgid_plural "plural/singleRewardView/tooltip/remainingCount"
+msgstr[0] "%(remainingCount) Blazing Treasure"
+msgstr[1] "%(remainingCount) Blazing Treasures"
+msgstr[2] "%(remainingCount) Blazing Treasures"
+
 msgid "singleRewardView/tooltip/subtitle/"
 msgstr ""
 "The Guaranteed Reward is a vehicle from the list of possible Blazing Treasure contents.\n"
-"If you open %(remainingCount) Blazing Treasures without one dropping such a vehicle, it will drop when you open the %(count) Blazing Treasure. When it does, the counter is reset."
+"If you open %(remainingCount) without one dropping such a vehicle, it will drop when you open the %(count) Blazing Treasure. When it does, the counter is reset."

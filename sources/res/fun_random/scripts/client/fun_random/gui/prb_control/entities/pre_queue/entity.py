@@ -11,9 +11,7 @@ from fun_random.gui.prb_control.entities.pre_queue.ctx import FunRandomQueueCtx,
 from fun_random.gui.prb_control.entities.pre_queue.permissions import FunRandomPermissions
 from fun_random.gui.prb_control.entities.pre_queue.scheduler import FunRandomScheduler
 from fun_random.gui.prb_control.entities.pre_queue.vehicles_watcher import FunRandomVehiclesWatcher
-from fun_random.gui.prb_control.entities.squad.entity import FunRandomSquadEntryPoint
 from gui.prb_control.ctrl_events import g_prbCtrlEvents
-from gui.prb_control.entities.base import vehicleAmmoCheck
 from gui.prb_control.entities.base.pre_queue.entity import PreQueueEntryPoint, PreQueueSubscriber, PreQueueEntity
 from gui.prb_control.events_dispatcher import g_eventDispatcher
 from gui.prb_control.items import SelectResult
@@ -83,15 +81,11 @@ class FunRandomEntity(PreQueueEntity, FunAssetPacksMixin):
         return FunRandomPermissions(self.isInQueue())
 
     def doSelectAction(self, action):
-        if action.actionName in (PREBATTLE_ACTION_NAME.FUN_RANDOM_SQUAD, PREBATTLE_ACTION_NAME.SQUAD):
-            squadEntryPoint = FunRandomSquadEntryPoint(action.accountsToInvite)
-            squadEntryPoint.setExtData({FUN_EVENT_ID_KEY: self._funRandomCtrl.subModesHolder.getDesiredSubModeID()})
-            return SelectResult(True, squadEntryPoint)
+        if action.actionName == PREBATTLE_ACTION_NAME.FUN_RANDOM:
+            self._funRandomCtrl.setDesiredSubModeID(action.extData.get(FUN_EVENT_ID_KEY, UNKNOWN_EVENT_ID))
+            g_eventDispatcher.loadHangar()
+            return SelectResult(True, None)
         else:
-            if action.actionName == PREBATTLE_ACTION_NAME.FUN_RANDOM:
-                self._funRandomCtrl.setDesiredSubModeID(action.extData.get(FUN_EVENT_ID_KEY, UNKNOWN_EVENT_ID))
-                g_eventDispatcher.loadHangar()
-                return SelectResult(True, None)
             return super(FunRandomEntity, self).doSelectAction(action)
 
     def leave(self, ctx, callback=None):
@@ -99,8 +93,9 @@ class FunRandomEntity(PreQueueEntity, FunAssetPacksMixin):
             self._funRandomCtrl.setDesiredSubModeID(UNKNOWN_EVENT_ID)
         super(FunRandomEntity, self).leave(ctx, callback)
 
-    @vehicleAmmoCheck
     def queue(self, ctx, callback=None):
+        subMode = self._funRandomCtrl.subModesHolder.getDesiredSubMode()
+        subMode.canEnqueueVehicle(callback=callback)
         super(FunRandomEntity, self).queue(ctx, callback=callback)
 
     def _createActionsValidator(self):

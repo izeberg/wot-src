@@ -6,6 +6,7 @@ from fun_random_common.fun_constants import FunSubModeImpl
 from fun_random.gui.battle_results.fun_battle_results_sub_presenter import FunBattleResultsSubPresenter
 from fun_random.gui.feature.util.fun_mixins import FunSubModesWatcher, FunAssetPacksMixin
 from fun_random.gui.impl.lobby.feature.fun_random_tier_list_view import FunRandomTierListView
+from gui.battle_results.presenters.battle_results_sub_presenter import BattleResultsSubPresenter
 from gui.battle_results.service import PostBattleResultsStateMixin
 from gui.impl import backport
 from gui.impl.gen import R
@@ -15,6 +16,9 @@ from gui.Scaleform.framework import ScopeTemplates
 from gui.Scaleform.framework.entities.View import ViewKey
 from gui.Scaleform.framework.managers.loaders import GuiImplViewLoadParams
 from gui.shared.utils.functions import getViewName
+from fun_random.gui.shared.fun_system_factory import collectFunBattleResultsPresenter
+if typing.TYPE_CHECKING:
+    BattleResultsSubPresenterType = typing.TypeVar('BattleResultsSubPresenterType', bound=BattleResultsSubPresenter)
 
 def registerStates(machine):
     machine.addState(FunRandomProgressionState())
@@ -88,9 +92,16 @@ class FunPostBattleResultsState(ViewLobbyState, PostBattleResultsStateMixin):
         machine.addNavigationTransitionFromParent(self)
         self.addNavigationTransition(self, transitionType=TransitionType.EXTERNAL)
 
+    def _getLayoutIDsAndSubPresenter(self, subModeImpl):
+        subPresenterCls, layoutId = collectFunBattleResultsPresenter(subModeImpl)
+        if subPresenterCls is None:
+            subPresenterCls, layoutId = self.__layoutIDsAndSubPresenters[subModeImpl]
+        return (
+         subPresenterCls, layoutId if layoutId is not None else R.views.fun_random.mono.lobby.battle_results())
+
     def _getViewLoadCtx(self, event):
         ctx = dict(event.params)
-        subPresenterCls, layoutId = self.__layoutIDsAndSubPresenters.get(ctx['subModeImpl'], self.__layoutIDsAndSubPresenters[FunSubModeImpl.DEFAULT])
+        subPresenterCls, layoutId = self._getLayoutIDsAndSubPresenter(ctx['subModeImpl'])
         ctx['subPresenterCls'] = subPresenterCls
         ctx['layoutID'] = layoutId
         return ctx

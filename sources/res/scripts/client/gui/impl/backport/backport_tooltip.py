@@ -28,8 +28,8 @@ def createAndLoadBackportTooltipWindow(parentWindow, tooltip=None, isSpecial=Fal
     return window
 
 
-def createBackportTooltipContent(specialAlias=None, specialArgs=None, isSpecial=True, tooltip=None, tooltipData=None, isWulfTooltip=False):
-    return _BackportTooltipContent(tooltipData or createTooltipData(tooltip, isSpecial, specialAlias, specialArgs or [], isWulfTooltip))
+def createBackportTooltipContent(specialAlias=None, specialArgs=None, isSpecial=True, tooltip=None, tooltipData=None, isWulfTooltip=False, event=None):
+    return _BackportTooltipContent(tooltipData or createTooltipData(tooltip, isSpecial, specialAlias, specialArgs or [], isWulfTooltip), event)
 
 
 class _BackportTooltipContent(ViewImpl):
