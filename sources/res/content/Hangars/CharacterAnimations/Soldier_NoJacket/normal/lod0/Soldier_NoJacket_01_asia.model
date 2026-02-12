@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>content/Hangars/CharacterAnimations/Soldier_NoJacket/normal/lod0/Soldier_NoJacket_01_asia</nodefullVisual>
+	<visibilityBox>
+		<min>
+			-2.664895 0.012170 -2.9
+			<!--BW_String-->
+		</min>
+		<max>
+			2.664896 1.810681 2.9
+			<!--BW_String-->
+		</max>
+	</visibilityBox>
+	<parent>content/Hangars/CharacterAnimations/Soldier_NoJacket/normal/lod1/Soldier_NoJacket_01_asia</parent>
+	<extent>10.000000</extent>
+</root>

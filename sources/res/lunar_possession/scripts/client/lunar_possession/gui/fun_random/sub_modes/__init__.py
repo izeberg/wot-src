@@ -1,0 +1,6 @@
+from fun_random.gui.shared.fun_system_factory import registerFunRandomSubMode
+from lunar_possession.gui.fun_random.sub_modes.lunar_possession_sub_mode import LunarPossessionSubMode
+from lunar_constants import FunSubModeImpl
+
+def registerLunarPossessionSubModes():
+    registerFunRandomSubMode(FunSubModeImpl.LUNAR_POSSESSION, LunarPossessionSubMode)

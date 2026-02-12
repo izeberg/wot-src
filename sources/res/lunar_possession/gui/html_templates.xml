@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<battleHints>
+		<lunarSpiritPickedUpPlayerTemplate>&lt;font color=&quot;#FFFFFF&quot; size=&apos;36&apos;&gt;_(#lunar_possession.lunar_battle:hints/spiritPickedUp/PlayerHeader)&lt;/font&gt;&amp;#10;&lt;font color=&quot;#FFFFFF&quot; size=&apos;16&apos;&gt;_(#lunar_possession.lunar_battle:hints/spiritPickedUp/PlayerSubheader1)&lt;/font&gt;&lt;font color=&quot;#78C60D&quot; size=&apos;20&apos;&gt; _(#lunar_possession.lunar_battle:hints/spiritPickedUp/PlayerSubheader2)&lt;/font&gt;</lunarSpiritPickedUpPlayerTemplate>
+		<lunarSpiritPickedUpTeammateTemplate>&lt;font color=&quot;#FFFFFF&quot; size=&apos;36&apos;&gt;_(#lunar_possession.lunar_battle:hints/spiritPickedUp/TeammateHeader)&lt;/font&gt;&amp;#10;&lt;font color=&quot;#FFFFFF&quot; size=&apos;16&apos;&gt;_(#lunar_possession.lunar_battle:hints/spiritPickedUp/TeammateSubheader)&lt;/font&gt;</lunarSpiritPickedUpTeammateTemplate>
+		<lunarSpiritPickedUpEnemyTemplate>&lt;font color=&quot;#FFFFFF&quot; size=&apos;36&apos;&gt;_(#lunar_possession.lunar_battle:hints/spiritPickedUp/EnemyHeader)&lt;/font&gt;&amp;#10;&lt;font color=&quot;#FFFFFF&quot; size=&apos;16&apos;&gt;_(#lunar_possession.lunar_battle:hints/spiritPickedUp/EnemySubheader)&lt;/font&gt;</lunarSpiritPickedUpEnemyTemplate>
+		<lunarSpiritDroppedTemplate>&lt;font color=&quot;#FFFFFF&quot; size=&apos;36&apos;&gt;_(#lunar_possession.lunar_battle:hints/spiritCarrierKilledHeader)&lt;/font&gt;</lunarSpiritDroppedTemplate>
+		<lunarWinningTemplate>&lt;font color=&quot;#FFFFFF&quot; size=&apos;20&apos;&gt;_(#lunar_possession.lunar_battle:hints/lowTime/winning)&lt;/font&gt;</lunarWinningTemplate>
+		<lunarLosingTemplate>&lt;font color=&quot;#FFFFFF&quot; size=&apos;20&apos;&gt;_(#lunar_possession.lunar_battle:hints/lowTime/losing)&lt;/font&gt;</lunarLosingTemplate>
+		<lunarTimeWarningTemplate>&lt;font color=&quot;#FFFFFF&quot; size=&apos;20&apos;&gt;_(#lunar_possession.lunar_battle:hints/lowTime/timeWarning)&lt;/font&gt;</lunarTimeWarningTemplate>
+	</battleHints>
+</root>

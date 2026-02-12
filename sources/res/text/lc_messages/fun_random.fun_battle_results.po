@@ -61,6 +61,9 @@ msgstr "—"
 msgid "efficiency/kills"
 msgstr "Destroyed"
 
+msgid "efficiency/spiritPoints"
+msgstr "Spirit Points"
+
 msgid "efficiency/spotted"
 msgstr "Spotting"
 
@@ -88,8 +91,17 @@ msgstr "Base Defense"
 msgid "efficiencyTooltip/header/kills"
 msgstr "Enemy destroyed"
 
+msgid "efficiencyTooltip/header/spiritPoints"
+msgstr "Spirit Points"
+
 msgid "efficiencyTooltip/header/spotted"
 msgstr "Spotting"
+
+msgid "efficiencyTooltip/spiritPoints/description"
+msgstr ""
+"Counted:\n"
+"• Delivering the Spirit\n"
+"• Destroying enemy vehicles"
 
 msgid "finish"
 msgstr "Battle ended"

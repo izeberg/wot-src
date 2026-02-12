@@ -10,6 +10,7 @@ class EfficiencyParamConstants(ViewModel):
     DAMAGE_BLOCKED_BY_ARMOR = 'damageBlockedByArmor'
     CAPTURE_POINTS = 'capturePoints'
     DROPPED_CAPTURE_POINTS = 'droppedCapturePoints'
+    SPIRIT_POINTS = 'spiritPoints'
 
     def __init__(self, properties=0, commands=0):
         super(EfficiencyParamConstants, self).__init__(properties=properties, commands=commands)

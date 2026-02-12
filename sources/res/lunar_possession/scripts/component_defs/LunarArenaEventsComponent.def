@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<Properties/>
+	<CellMethods/>
+	<ofEntity>
+		<ArenaInfo/>
+	</ofEntity>
+	<ClientMethods>
+		<onSpiritDelivered>
+			<Arg>OBJECT_ID</Arg>
+		</onSpiritDelivered>
+		<onSpiritCarrierDestroyed>
+			<Arg>OBJECT_ID</Arg>
+			<Arg>OBJECT_ID</Arg>
+		</onSpiritCarrierDestroyed>
+		<onRoundEnd>
+			<Arg>INT32</Arg>
+			<Arg>INT8</Arg>
+		</onRoundEnd>
+		<onRoundStart>
+			<Arg>INT32</Arg>
+		</onRoundStart>
+		<onSpiritSpawned/>
+	</ClientMethods>
+	<DefaultKeyName>LunarArenaEventsComponent</DefaultKeyName>
+</root>

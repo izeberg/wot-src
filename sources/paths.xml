@@ -1,7 +1,7 @@
 <root>
   <Paths>
-    <Path cacheSubdirs="true">./res_mods/2.1.1.0</Path>
-    <Path mask="*.wotmod" mode="recursive" root="res">./mods/2.1.1.0</Path>
+    <Path cacheSubdirs="true">./res_mods/2.1.1.1</Path>
+    <Path mask="*.wotmod" mode="recursive" root="res">./mods/2.1.1.1</Path>
     <Packages>
       <Package type="sd,hd">./res/packages/shared_content-part3.pkg</Package>
       <Package type="sd,hd">./res/packages/shared_content-part2.pkg</Package>
@@ -51,6 +51,8 @@
       <Package type="hd">./res/packages/108_normandy_nom_hd.pkg</Package>
       <Package type="sandbox,sd,hd">./res/packages/10_hills.pkg</Package>
       <Package type="hd">./res/packages/10_hills_hd.pkg</Package>
+      <Package type="sd,hd">./res/packages/10_hills_lunar_26.pkg</Package>
+      <Package type="hd">./res/packages/10_hills_lunar_26_hd.pkg</Package>
       <Package type="sd,hd">./res/packages/112_eiffel_tower_ctf.pkg</Package>
       <Package type="hd">./res/packages/112_eiffel_tower_ctf_hd.pkg</Package>
       <Package type="sd,hd">./res/packages/114_czech.pkg</Package>
@@ -101,6 +103,7 @@
       <Package type="hd">./res/packages/252_br_battle_city4_hd.pkg</Package>
       <Package type="sd,hd">./res/packages/28_desert.pkg</Package>
       <Package type="hd">./res/packages/28_desert_hd.pkg</Package>
+      <Package type="sd,hd">./res/packages/28_desert_lunar_26.pkg</Package>
       <Package type="sd,hd">./res/packages/29_el_hallouf.pkg</Package>
       <Package type="hd">./res/packages/29_el_hallouf_hd.pkg</Package>
       <Package type="sandbox,sd,hd">./res/packages/31_airfield.pkg</Package>
@@ -111,6 +114,7 @@
       <Package type="hd">./res/packages/34_redshire_hd.pkg</Package>
       <Package type="sd,hd">./res/packages/35_steppes.pkg</Package>
       <Package type="hd">./res/packages/35_steppes_hd.pkg</Package>
+      <Package type="sd,hd">./res/packages/35_steppes_lunar_26.pkg</Package>
       <Package type="sd,hd">./res/packages/36_fishing_bay.pkg</Package>
       <Package type="hd">./res/packages/36_fishing_bay_hd.pkg</Package>
       <Package type="sd,hd">./res/packages/37_caucasus.pkg</Package>
@@ -125,6 +129,8 @@
       <Package type="hd">./res/packages/47_canada_a_hd.pkg</Package>
       <Package type="sd,hd">./res/packages/59_asia_great_wall.pkg</Package>
       <Package type="hd">./res/packages/59_asia_great_wall_hd.pkg</Package>
+      <Package type="sd,hd">./res/packages/59_asia_great_wall_lunar_26.pkg</Package>
+      <Package type="hd">./res/packages/59_asia_great_wall_lunar_26_hd.pkg</Package>
       <Package type="sd,hd">./res/packages/60_asia_miao.pkg</Package>
       <Package type="hd">./res/packages/60_asia_miao_hd.pkg</Package>
       <Package type="sd,hd">./res/packages/63_tundra.pkg</Package>
@@ -137,6 +143,8 @@
       <Package type="hd">./res/packages/h33_battle_royale_2021_hd.pkg</Package>
       <Package type="sd,hd">./res/packages/h33_comp7.pkg</Package>
       <Package type="hd">./res/packages/h33_comp7_hd.pkg</Package>
+      <Package type="sd,hd">./res/packages/h34_lunar_ny_2026.pkg</Package>
+      <Package type="hd">./res/packages/h34_lunar_ny_2026_hd.pkg</Package>
       <Package type="sd,hd">./res/packages/hangar_v4.pkg</Package>
       <Package type="hd">./res/packages/hangar_v4_hd.pkg</Package>
       <Package type="sandbox,sd,hd">./res/packages/audioww-part2.pkg</Package>
@@ -158,6 +166,8 @@
       <Package type="sandbox,sd,hd">./res/packages/gui-part1.pkg</Package>
       <Package type="sandbox,sd,hd">./res/packages/in_battle_achievements.pkg</Package>
       <Package type="sandbox,sd,hd">./res/packages/la_pinger.pkg</Package>
+      <Package type="sandbox,sd,hd">./res/packages/lunar_possession.pkg</Package>
+      <Package type="hd">./res/packages/lunar_possession_hd.pkg</Package>
       <Package type="sandbox,sd,hd">./res/packages/misc.pkg</Package>
       <Package type="hd">./res/packages/misc_hd.pkg</Package>
       <Package type="sandbox,sd,hd">./res/packages/particles.pkg</Package>

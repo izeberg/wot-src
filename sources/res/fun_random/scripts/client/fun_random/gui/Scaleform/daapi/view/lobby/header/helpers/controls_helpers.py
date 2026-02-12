@@ -13,5 +13,4 @@ class FunRandomLobbyHeaderHelper(DefaultLobbyHeaderHelper, FunAssetPacksMixin):
 
     @classmethod
     def _getOutSquadTooltipData(cls, _):
-        squad = R.strings.fun_random.headerButtons.tooltips.funRandomSquad
-        return (squad.header(), squad.body(), {'modeName': cls.getModeUserName()})
+        return (R.strings.platoon.members.card.disabledVertical(), R.invalid(), {})
