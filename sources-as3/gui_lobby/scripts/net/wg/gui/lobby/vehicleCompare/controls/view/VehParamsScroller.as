@@ -125,11 +125,6 @@ package net.wg.gui.lobby.vehicleCompare.controls.view
          }
       }
       
-      public function get dataProvider() : IDataProvider
-      {
-         return this._dataProvider;
-      }
-      
       public function set dataProvider(param1:IDataProvider) : void
       {
          if(param1 != this._dataProvider)

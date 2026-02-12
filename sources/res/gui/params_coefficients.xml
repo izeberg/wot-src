@@ -228,9 +228,14 @@
 							<item>brotherhood</item>
 							<item>loader_melee</item>
 							<item>radioman_expert</item>
+							<item>driver_bulletproof</item>
 							<item>loader_desperado</item>
 							<item>commander_emergency</item>
 							<item>radioman_sideBySide</item>
+							<item>commander_staySharp</item>
+							<item>commander_holdLine</item>
+							<item>loader_secondChance</item>
+							<item>loader_magMastery</item>
 						</value>
 					</item>
 					<item>
@@ -331,10 +336,14 @@
 						<value>
 							<item>brotherhood</item>
 							<item>radioman_expert</item>
+							<item>driver_bulletproof</item>
 							<item>radioman_sideBySide</item>
 							<item>commander_emergency</item>
 							<item>loader_melee</item>
 							<item>loader_desperado</item>
+							<item>commander_staySharp</item>
+							<item>commander_holdLine</item>
+							<item>loader_secondChance</item>
 						</value>
 					</item>
 					<item>
@@ -426,9 +435,13 @@
 							<item>brotherhood</item>
 							<item>loader_melee</item>
 							<item>radioman_expert</item>
+							<item>driver_bulletproof</item>
 							<item>loader_desperado</item>
 							<item>radioman_sideBySide</item>
 							<item>commander_emergency</item>
+							<item>commander_staySharp</item>
+							<item>commander_holdLine</item>
+							<item>loader_secondChance</item>
 						</value>
 					</item>
 					<item>
@@ -519,10 +532,15 @@
 						<value>
 							<item>brotherhood</item>
 							<item>radioman_expert</item>
+							<item>driver_bulletproof</item>
 							<item>radioman_sideBySide</item>
 							<item>commander_emergency</item>
 							<item>loader_melee</item>
 							<item>loader_desperado</item>
+							<item>commander_staySharp</item>
+							<item>commander_holdLine</item>
+							<item>loader_secondChance</item>
+							<item>loader_magMastery</item>
 						</value>
 					</item>
 					<item>
@@ -621,10 +639,14 @@
 						<value>
 							<item>brotherhood</item>
 							<item>radioman_expert</item>
+							<item>driver_bulletproof</item>
 							<item>radioman_sideBySide</item>
 							<item>commander_emergency</item>
 							<item>loader_melee</item>
 							<item>loader_desperado</item>
+							<item>commander_staySharp</item>
+							<item>commander_holdLine</item>
+							<item>loader_secondChance</item>
 						</value>
 					</item>
 					<item>
@@ -707,6 +729,9 @@
 						<value>
 							<item>brotherhood</item>
 							<item>commander_emergency</item>
+							<item>commander_holdLine</item>
+							<item>commander_staySharp</item>
+							<item>driver_bulletproof</item>
 							<item>loader_melee</item>
 							<item>loader_desperado</item>
 							<item>radioman_expert</item>
@@ -1029,12 +1054,16 @@
 						<name>skill</name>
 						<type>list</type>
 						<value>
-							<item>commander_eagleEye</item>
 							<item>brotherhood</item>
-							<item>radioman_finder</item>
-							<item>radioman_expert</item>
-							<item>radioman_sideBySide</item>
+							<item>commander_eagleEye</item>
 							<item>commander_emergency</item>
+							<item>commander_holdLine</item>
+							<item>commander_staySharp</item>
+							<item>driver_bulletproof</item>
+							<item>radioman_expert</item>
+							<item>radioman_finder</item>
+							<item>radioman_sideBySide</item>
+							<item>radioman_threatSearch</item>
 						</value>
 					</item>
 					<item>
@@ -1138,8 +1167,11 @@
 							<item>driver_virtuoso</item>
 							<item>brotherhood</item>
 							<item>radioman_expert</item>
+							<item>driver_bulletproof</item>
 							<item>radioman_sideBySide</item>
 							<item>commander_emergency</item>
+							<item>commander_staySharp</item>
+							<item>commander_holdLine</item>
 						</value>
 					</item>
 					<item>
@@ -1247,9 +1279,12 @@
 						<value>
 							<item>brotherhood</item>
 							<item>radioman_expert</item>
+							<item>driver_bulletproof</item>
 							<item>radioman_sideBySide</item>
 							<item>commander_emergency</item>
 							<item>gunner_quickAiming</item>
+							<item>commander_staySharp</item>
+							<item>commander_holdLine</item>
 						</value>
 					</item>
 					<item>
@@ -1338,8 +1373,11 @@
 						<value>
 							<item>brotherhood</item>
 							<item>radioman_expert</item>
+							<item>driver_bulletproof</item>
 							<item>radioman_sideBySide</item>
 							<item>commander_emergency</item>
+							<item>commander_staySharp</item>
+							<item>commander_holdLine</item>
 						</value>
 					</item>
 					<item>
@@ -1390,8 +1428,11 @@
 						<value>
 							<item>brotherhood</item>
 							<item>radioman_expert</item>
+							<item>driver_bulletproof</item>
 							<item>radioman_sideBySide</item>
 							<item>commander_emergency</item>
+							<item>commander_staySharp</item>
+							<item>commander_holdLine</item>
 						</value>
 					</item>
 					<item>
@@ -1454,10 +1495,14 @@
 						<value>
 							<item>brotherhood</item>
 							<item>gunner_quickAiming</item>
+							<item>gunner_loneWolf</item>
 							<item>radioman_expert</item>
+							<item>driver_bulletproof</item>
 							<item>radioman_sideBySide</item>
 							<item>commander_coordination</item>
 							<item>commander_emergency</item>
+							<item>commander_staySharp</item>
+							<item>commander_holdLine</item>
 						</value>
 					</item>
 					<item>
@@ -1568,9 +1613,13 @@
 							<item>brotherhood</item>
 							<item>gunner_focus</item>
 							<item>radioman_expert</item>
+							<item>driver_bulletproof</item>
 							<item>radioman_sideBySide</item>
 							<item>commander_emergency</item>
+							<item>commander_staySharp</item>
+							<item>commander_holdLine</item>
 							<item>gunner_armorer</item>
+							<item>gunner_loneWolf</item>
 						</value>
 					</item>
 					<item>
@@ -1673,10 +1722,15 @@
 							<item>brotherhood</item>
 							<item>loader_melee</item>
 							<item>radioman_expert</item>
+							<item>driver_bulletproof</item>
 							<item>loader_desperado</item>
 							<item>commander_emergency</item>
 							<item>radioman_sideBySide</item>
+							<item>commander_staySharp</item>
+							<item>commander_holdLine</item>
 							<item>loader_ammunitionImprove</item>
+							<item>loader_secondChance</item>
+							<item>loader_magMastery</item>
 						</value>
 					</item>
 					<item>
@@ -2848,6 +2902,7 @@
 						<type>list</type>
 						<value>
 							<item>commander_enemyShotPredictor</item>
+							<item>radioman_battleTempered</item>
 						</value>
 					</item>
 					<item>
@@ -3206,6 +3261,13 @@
 							<item>ch67_node12</item>
 							<item>a179_node17</item>
 							<item>ch70_node10</item>
+						</value>
+					</item>
+					<item>
+						<name>skill</name>
+						<type>list</type>
+						<value>
+							<item>driver_reliablePlacement</item>
 						</value>
 					</item>
 				</value>
@@ -3617,6 +3679,19 @@
 				</value>
 			</item>
 			<item>
+				<name>piercingHEShellsDistributionUpperBound</name>
+				<type>dict</type>
+				<value>
+					<item>
+						<name>skill</name>
+						<type>list</type>
+						<value>
+							<item>gunner_pointBlast</item>
+						</value>
+					</item>
+				</value>
+			</item>
+			<item>
 				<name>vehicleRamChassisDamageResistance</name>
 				<type>dict</type>
 				<value>
@@ -3773,6 +3848,7 @@
 						<type>list</type>
 						<value>
 							<item>repair</item>
+							<item>driver_suspensionRepair</item>
 						</value>
 					</item>
 					<item>
@@ -3902,6 +3978,32 @@
 						<type>list</type>
 						<value>
 							<item>radioman_signalInterception</item>
+						</value>
+					</item>
+				</value>
+			</item>
+			<item>
+				<name>suspensionDamageReduction</name>
+				<type>dict</type>
+				<value>
+					<item>
+						<name>skill</name>
+						<type>list</type>
+						<value>
+							<item>driver_reliablePlacement</item>
+						</value>
+					</item>
+				</value>
+			</item>
+			<item>
+				<name>hpRecover</name>
+				<type>dict</type>
+				<value>
+					<item>
+						<name>skill</name>
+						<type>list</type>
+						<value>
+							<item>armorPatching</item>
 						</value>
 					</item>
 				</value>

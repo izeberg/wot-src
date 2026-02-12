@@ -183,6 +183,10 @@ class _VehicleRespawnEffects(_PrefabsReader):
     _SECTION_NAME = 'VehicleRespawn'
 
 
+class _StPatrickLootEffect(_PrefabsReader):
+    _SECTION_NAME = 'StPatrickLootEffect'
+
+
 class _FireCircleEffects(_PrefabsReader):
     _SECTION_NAME = 'FireCircleEffect'
 
@@ -330,6 +334,7 @@ class _BattleRoyaleDynObjects(_CommonForBattleRoyaleAndEpicBattleDynObjects):
         self.__botDeliveryEffect = None
         self.__botClingDeliveryEffect = None
         self.__vehicleRespawnEffects = None
+        self.__stPatrickLootEffect = None
         self.__botDeliveryMarker = None
         self.__dropPlane = None
         self.__airDrop = None
@@ -353,9 +358,11 @@ class _BattleRoyaleDynObjects(_CommonForBattleRoyaleAndEpicBattleDynObjects):
             self.__berserkerEffects = _BerserkerEffects(turretEffect=_BerserkerTurretEffect(dataSection), hullEffect=_BerserkerHullEffect(dataSection), transformPath=dataSection.readString('berserkerTransformPath'))
             self.__fireCircleEffects = _FireCircleEffects(dataSection)
             self.__vehicleRespawnEffects = _VehicleRespawnEffects(dataSection)
+            self.__stPatrickLootEffect = _StPatrickLootEffect(dataSection)
             precacheCandidates = set()
             precacheCandidates.update(self.__fireCircleEffects.prefabs)
             precacheCandidates.update(self.__vehicleRespawnEffects.prefabs)
+            precacheCandidates.update(self.__stPatrickLootEffect.prefabs)
             CGF.cacheGameObjects(list(precacheCandidates), False)
             prerequisites = set()
             self.__dropPlane = _createDropPlane(dataSection['dropPlane'], prerequisites)
@@ -406,6 +413,9 @@ class _BattleRoyaleDynObjects(_CommonForBattleRoyaleAndEpicBattleDynObjects):
         if not paths:
             return str()
         return paths[0]
+
+    def getStPatrickLootEffect(self):
+        return self.__stPatrickLootEffect
 
     def clear(self):
         pass

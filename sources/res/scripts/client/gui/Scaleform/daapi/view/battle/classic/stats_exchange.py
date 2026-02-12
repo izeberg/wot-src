@@ -1,4 +1,6 @@
+from __future__ import absolute_import
 from collections import defaultdict
+from future.utils import viewitems
 from gui.Scaleform.daapi.view.battle.shared.stats_exchange import BattleStatisticsDataController
 from gui.Scaleform.daapi.view.battle.shared.stats_exchange import createExchangeBroker
 from gui.Scaleform.daapi.view.battle.shared.stats_exchange import broker
@@ -30,7 +32,7 @@ class FragsCollectableStats(broker.CollectableStats):
         arenaDP = sessionProvider.getArenaDP()
         isEnemyTeam = arenaDP.isEnemyTeam
         allyScope, enemyScope = (0, 0)
-        for teamIdx, vehicleIDs in self.__teamsDeaths.iteritems():
+        for teamIdx, vehicleIDs in viewitems(self.__teamsDeaths):
             score = len(vehicleIDs)
             if isEnemyTeam(teamIdx):
                 allyScope += score

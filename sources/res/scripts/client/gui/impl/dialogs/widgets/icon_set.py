@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from gui.impl.dialogs.sub_views.common import IconSetData
 from gui.impl.dialogs.sub_views.icon.multiple_icons_set import MultipleIconsSet

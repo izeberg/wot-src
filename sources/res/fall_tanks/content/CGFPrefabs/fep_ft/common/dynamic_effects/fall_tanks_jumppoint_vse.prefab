@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<version>4</version>
+	<GameObjects>
+		<GameObject>
+			<name>fall_tanks_jumppoint_vse</name>
+			<UUID>c35d4217-4374-4a2a-8a78-9266df56f858</UUID>
+			<flags>0</flags>
+		</GameObject>
+	</GameObjects>
+	<components>
+		<ComponentPool>
+			<type>RemoveGoDelayedComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>c35d4217-4374-4a2a-8a78-9266df56f858</UUID>
+				<flags>34</flags>
+				<config>
+					<property>
+						<name>Delay</name>
+						<value>6</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>Transform</type>
+			<version>1</version>
+			<component>
+				<UUID>c35d4217-4374-4a2a-8a78-9266df56f858</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>cgf::network::ReplicableComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>c35d4217-4374-4a2a-8a78-9266df56f858</UUID>
+				<flags>35</flags>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>VSEComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>c35d4217-4374-4a2a-8a78-9266df56f858</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Path</name>
+						<isAsset>true</isAsset>
+						<value>fall_tanks/vscript/plans/fall_tanks/common/fall_tanks_jumppoint_vfx_client.xml</value>
+					</property>
+					<property>
+						<name>AutoStart</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+	</components>
+</root>

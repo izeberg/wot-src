@@ -264,7 +264,7 @@ package net.wg.gui.lobby.settings
          var _loc8_:VehicleMarker = null;
          var _loc9_:VehicleMarker = null;
          var _loc10_:Boolean = false;
-         var _loc11_:Number = 0;
+         var _loc11_:int = 0;
          while(_loc11_ < _loc1_)
          {
             _loc2_ = this._markerTabsDataProvider[_loc11_];

@@ -25,13 +25,13 @@ class PointsOfInterestListener(object):
         else:
             return
 
-    def onPoiAdded(self, state):
+    def onPoiAdded(self, poiState):
         pass
 
-    def onPoiRemoved(self, state):
+    def onPoiRemoved(self, poiState):
         pass
 
-    def onProcessPoi(self, state):
+    def onProcessPoi(self, poiState):
         pass
 
     def onPoiEntered(self, poiID):

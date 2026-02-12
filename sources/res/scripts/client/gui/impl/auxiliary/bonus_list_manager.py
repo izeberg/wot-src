@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.impl.auxiliary.rewards_helper import getRewardRendererModelPresenter
 from gui.impl.backport import createTooltipData, BackportTooltipWindow, TooltipData
 from gui.impl.gen import R

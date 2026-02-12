@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<info>
+		<name>fall_tanks/common/fall_tanks_hud_client</name>
+		<isMacro>false</isMacro>
+		<version>0</version>
+		<aspect>
+			<compatibles>CLIENT</compatibles>
+		</aspect>
+		<blocks>
+			<block>
+				<class>StartScript</class>
+				<id>StartScript_1</id>
+			</block>
+			<block>
+				<class>SetBattleCommunicationsSettings</class>
+				<id>SetBattleCommunicationsSettings_1</id>
+				<slots>
+					<slot>
+						<name>hide</name>
+						<const>\true\</const>
+					</slot>
+				</slots>
+			</block>
+		</blocks>
+		<connections>
+			<connection>
+				<from>StartScript_1</from>
+				<input>in</input>
+				<to>SetBattleCommunicationsSettings_1</to>
+				<output>out</output>
+			</connection>
+		</connections>
+		<macros/>
+		<curves/>
+	</info>
+</root>

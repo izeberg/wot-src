@@ -9,7 +9,7 @@ package net.wg.gui.lobby.profile.pages.statistics
    {
        
       
-      private var stepW:int;
+      private var _stepW:int;
       
       public function StatisticsLayoutManager(param1:Number, param2:Number)
       {
@@ -20,7 +20,7 @@ package net.wg.gui.lobby.profile.pages.statistics
       {
          super.setDimension(param1,param2);
          var _loc3_:uint = store.length;
-         this.stepW = ProfileConstants.WINDOW_CENTER_OFFSET / _loc3_ / (_loc3_ + 1);
+         this._stepW = ProfileConstants.WINDOW_CENTER_OFFSET / _loc3_ / (_loc3_ + 1);
       }
       
       override protected function applyDimensionToItem(param1:int) : void
@@ -32,7 +32,7 @@ package net.wg.gui.lobby.profile.pages.statistics
             _loc2_ = store[param1].item;
             if(_loc2_ is LineDescrIconText)
             {
-               _loc2_.x = this.stepW + param1 * (_loc2_.width + this.stepW);
+               _loc2_.x = this._stepW + param1 * (_loc2_.width + this._stepW);
             }
          }
       }

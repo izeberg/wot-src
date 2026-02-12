@@ -21,7 +21,7 @@ class ITwinShootingEventsLogic(object):
     onActiveGunsUpdate = None
     onAnimatedGunsUpdate = None
 
-    def processNextGunsUpdate(self, gunIndexes):
+    def processNextGunsUpdate(self, nextGunIndexes):
         raise NotImplementedError
 
 

@@ -31,41 +31,6 @@ msgstr "%(start)s–%(end)s"
 msgid "calendarDay/title"
 msgstr "Расписание"
 
-msgid "entryPoint/activeStatus"
-msgstr "До %(endDate)s"
-
-msgid "entryPoint/dateRange"
-msgstr "%(day1)s %(month1)s – %(day2)s %(month2)s"
-
-msgid "entryPoint/endDate"
-msgstr "До %(day)s %(month)s"
-
-msgid "entryPoint/lessMinute"
-msgstr "<1 мин"
-
-msgid "entryPoint/notPrimeTimes/status"
-msgstr "Бои скоро возобновятся"
-
-msgid "entryPoint/seasonFinished/status"
-msgstr "Бои завершены"
-
-msgid "entryPoint/title"
-msgstr "РАЗВЕДКА БОЕМ"
-
-msgid "entryPoint/tooltip/alert/body"
-msgstr ""
-"Качество погодных визуальных эффектов зависит от ваших настроек графики. При"
-" низких настройках могут появляться графические артефакты и другие проблемы."
-" Для лучшего качества рекомендуется выбрать высокие настройки, если ваш "
-"компьютер соответствует требованиям. Режим требователен к компьютеру. "
-"Возможно снижение FPS при интенсивных боевых действиях."
-
-msgid "entryPoint/tooltip/alert/header"
-msgstr "Рекомендуется использовать высокие настройки графики"
-
-msgid "entryPoint/undefined/status"
-msgstr "Бои скоро возобновятся"
-
 msgid "headerButtons/fightBtn/tooltip/battlesEnded/header"
 msgstr "Выход в бой невозможен"
 

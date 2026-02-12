@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, typing
 from gui.battle_control.controllers.battle_hints.component import BattleHintComponent
 from gui.Scaleform.daapi.view.meta.BattleHintMeta import BattleHintMeta

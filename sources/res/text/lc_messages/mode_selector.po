@@ -46,27 +46,6 @@ msgstr "Сезон %(seasonNum)s"
 msgid "hint/showProgression"
 msgstr "ПРОСМОТР В РЕЖИМЕ ПРОГРЕССИИ"
 
-msgid "mode/battleRoyale/progression/currentStage"
-msgstr "Текущий этап:"
-
-msgid "mode/battleRoyale/progression/steps"
-msgstr "{whiteSpanish_Open}%(done)s{whiteSpanish_Close} / %(total)s"
-
-msgid "mode/battleRoyaleQueue/battlePassTooltip/body"
-msgstr ""
-"Играя в режиме {whiteSpanish_open}«Стальной охотник»{whiteSpanish_close}, вы"
-" будете зарабатывать очки. Они нужны для продвижения по прогрессии Боевого "
-"пропуска."
-
-msgid "mode/battleRoyaleQueue/battlePassTooltip/header"
-msgstr "Очки Боевого пропуска"
-
-msgid "mode/battleRoyaleQueue/description"
-msgstr "Королевская битва"
-
-msgid "mode/battleRoyaleQueue/title"
-msgstr "Стальной охотник"
-
 msgid "mode/epicBattle/condition"
 msgstr "30x30&nbsp;{par_open}I{par_close}&nbsp;%(levels)s&nbsp;уровни"
 

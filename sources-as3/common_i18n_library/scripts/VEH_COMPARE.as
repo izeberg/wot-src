@@ -187,8 +187,6 @@ package
       
       public static const VEHPREVIEW_COMPAREVEHICLEBTN_TOOLTIPS_CANNOTADDTOCOMPARE_BODY:String = "#veh_compare:vehPreview/compareVehicleBtn/tooltips/canNotAddToCompare/body";
       
-      public static const COMPAREVEHICLEBTN_TOOLTIPS_MINICLIENT_ATTENTION:String = "#veh_compare:compareVehicleBtn/tooltips/miniclient/attention";
-      
       public static const COMPAREVEHICLEBTN_TOOLTIPS_DISABLEDONSERVER_ATTENTION:String = "#veh_compare:compareVehicleBtn/tooltips/disabledOnServer/attention";
       
       public static const STORE_COMPAREVEHICLEBTN_TOOLTIPS_ADDTOCOMPARE_HEADER:String = "#veh_compare:store/compareVehicleBtn/tooltips/addToCompare/header";

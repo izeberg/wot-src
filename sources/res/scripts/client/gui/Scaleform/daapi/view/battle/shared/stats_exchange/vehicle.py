@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.Scaleform.daapi.view.battle.shared.stats_exchange import broker
 from gui.Scaleform.settings import ICONS_SIZES
 from gui.battle_control.arena_info import vos_collections

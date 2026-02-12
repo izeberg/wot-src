@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import WWISE
 from gui.Scaleform.daapi.view.lobby.shared.web_view import WebView
 from gui.Scaleform.daapi.view.lobby.wot_plus.sound_constants import VEHICLE_RENTAL_SOUND_SPACE, WOT_PLUS_INFO_SOUND_SPACE

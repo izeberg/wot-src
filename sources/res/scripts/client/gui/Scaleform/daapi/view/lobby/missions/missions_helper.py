@@ -1,5 +1,6 @@
 import operator, time
 from collections import namedtuple
+from future.utils import viewitems
 import typing, constants
 from debug_utils import LOG_WARNING
 from gui import SystemMessages
@@ -32,6 +33,7 @@ from gui.server_events.personal_progress import formatters
 from gui.server_events.pm_constants import PAUSABLE_OPERATIONS_IDS, DISCARDABLE_OPERATIONS_IDS
 from gui.shared.formatters import text_styles, icons, time_formatters
 from gui.shared.gui_items.processors.quests import PMActivateSeason, PM3OperationSelect, PMQuestSelect
+from gui.shared.system_factory import collectModeHiddenVehiclesCriteria
 from gui.shared.utils.functions import makeTooltip
 from gui.shared.utils.requesters.ItemsRequester import REQ_CRITERIA
 from helpers import dependency, int2roman, time_utils, i18n
@@ -669,14 +671,16 @@ class _DetailedMissionInfo(_MissionInfo):
             if bonusTypes:
                 arenaTypes = bonusTypes.getValue()
                 if arenaTypes:
+                    if constants.ARENA_BONUS_TYPE.BATTLE_ROYALE_SQUAD in arenaTypes or constants.ARENA_BONUS_TYPE.BATTLE_ROYALE_SOLO in arenaTypes:
+                        isQuestForBattleRoyale = True
                     if constants.ARENA_BONUS_TYPE.EVENT_BATTLES not in arenaTypes or constants.ARENA_BONUS_TYPE.EVENT_BATTLES_2 not in arenaTypes:
                         criteria = criteria | ~REQ_CRITERIA.VEHICLE.EVENT_BATTLE
                     if constants.ARENA_BONUS_TYPE.EPIC_BATTLE not in arenaTypes:
                         criteria = criteria | ~REQ_CRITERIA.VEHICLE.EPIC_BATTLE
-                    if constants.ARENA_BONUS_TYPE.FUN_RANDOM not in arenaTypes:
-                        criteria = criteria | ~REQ_CRITERIA.VEHICLE.FUN_RANDOM
-                    if constants.ARENA_BONUS_TYPE.BATTLE_ROYALE_SQUAD in arenaTypes or constants.ARENA_BONUS_TYPE.BATTLE_ROYALE_SOLO in arenaTypes:
-                        isQuestForBattleRoyale = True
+                    for bonusType, modeHiddenCriteria in viewitems(collectModeHiddenVehiclesCriteria()):
+                        if bonusType not in arenaTypes:
+                            criteria |= ~modeHiddenCriteria
+
         xpMultCond = conds.find('hasReceivedMultipliedXP')
         if xpMultCond:
             extraConditions.append(xpMultCond)

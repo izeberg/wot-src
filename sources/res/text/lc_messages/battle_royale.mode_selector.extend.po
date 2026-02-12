@@ -1,0 +1,41 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-01 10:00+0300\n"
+"PO-Revision-Date: 2010-06-01 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+msgid "#PluralForms"
+msgstr ""
+"nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && "
+"(n%100<10 || n%100>=20) ? 1 : 2);"
+
+msgid "mode/battleRoyale/progression/currentStage"
+msgstr "Текущий этап:"
+
+msgid "mode/battleRoyale/progression/steps"
+msgstr "{whiteSpanish_Open}%(done)s{whiteSpanish_Close} / %(total)s"
+
+msgid "mode/battleRoyaleQueue/battlePassTooltip/body"
+msgstr ""
+"Играя в режиме {whiteSpanish_open}«Стальной охотник»{whiteSpanish_close}, вы"
+" будете зарабатывать очки. Они нужны для продвижения по прогрессии Боевого "
+"пропуска."
+
+msgid "mode/battleRoyaleQueue/battlePassTooltip/header"
+msgstr "Очки Боевого пропуска"
+
+msgid "mode/battleRoyaleQueue/description"
+msgstr "Королевская битва"
+
+msgid "mode/battleRoyaleQueue/stPatrickDescription"
+msgstr "Битва за трилистник"
+
+msgid "mode/battleRoyaleQueue/title"
+msgstr "Стальной охотник"

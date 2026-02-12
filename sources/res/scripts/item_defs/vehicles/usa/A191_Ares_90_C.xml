@@ -10,24 +10,24 @@
 	<postProgressionTree>A191_Ares_90_C</postProgressionTree>
 	<customRoleSlotOptions>3 5</customRoleSlotOptions>
 	<speedLimits>
-		<forward>10</forward>
-		<backward>10</backward>
+		<forward>55</forward>
+		<backward>19</backward>
 	</speedLimits>
 	<invisibility>
 		<moving>
-			0.01
+			0.212
 			<!--BW_String-->
 		</moving>
 		<still>
-			0.01
+			0.283
 			<!--BW_String-->
 		</still>
 		<camouflageBonus>
-			0.0
+			0.03
 			<!--BW_String-->
 		</camouflageBonus>
 		<firePenalty>
-			0.1
+			0.425
 			<!--BW_String-->
 		</firePenalty>
 	</invisibility>
@@ -86,19 +86,40 @@
 	</camouflage>
 	<hull>
 		<armor>
-			<armor_1>10</armor_1>
-			<armor_2>10</armor_2>
-			<armor_3>10</armor_3>
-			<armor_4>10</armor_4>
-			<armor_5>10</armor_5>
-			<armor_6>10</armor_6>
-			<armor_7>10</armor_7>
+			<armor_1>
+				120.7
+				<!--BW_String-->
+			</armor_1>
+			<armor_2>127</armor_2>
+			<armor_3>
+				69.9
+				<!--BW_String-->
+			</armor_3>
+			<armor_4>
+				50.8
+				<!--BW_String-->
+			</armor_4>
+			<armor_5>
+				25.4
+				<!--BW_String-->
+			</armor_5>
+			<armor_6>
+				25.4
+				<!--BW_String-->
+			</armor_6>
+			<armor_7>
+				50.8
+				<!--BW_String-->
+			</armor_7>
 			<armor_8>0</armor_8>
-			<armor_9>10</armor_9>
+			<armor_9>
+				25.4
+				<!--BW_String-->
+			</armor_9>
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
-		<weight>9400</weight>
-		<maxHealth>10</maxHealth>
+		<weight>22305</weight>
+		<maxHealth>1640</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>270</maxHealth>
 			<maxRegenHealth>203</maxRegenHealth>
@@ -1831,14 +1852,14 @@
 			<level>11</level>
 			<price>100000</price>
 			<notInShop>true</notInShop>
-			<weight>100</weight>
+			<weight>14000</weight>
 			<terrainResistance>
 				1 1.2 2
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>50000</brakeForce>
 			<rotationIsAroundCenter>True</rotationIsAroundCenter>
-			<rotationSpeed>10</rotationSpeed>
+			<rotationSpeed>43</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.167
@@ -1856,8 +1877,8 @@
 			<trackPairParams>
 				<trackPairIdx>0</trackPairIdx>
 				<armor>
-					<leftTrack>10</leftTrack>
-					<rightTrack>10</rightTrack>
+					<leftTrack>20</leftTrack>
+					<rightTrack>20</rightTrack>
 				</armor>
 				<maxHealth>130</maxHealth>
 				<maxRegenHealth>97</maxRegenHealth>
@@ -1866,15 +1887,15 @@
 					<!--BW_String-->
 				</repairCost>
 				<repairTime>
-					0.649999976
+					5.32258081
 					<!--BW_String-->
 				</repairTime>
 			</trackPairParams>
 			<trackPairParams>
 				<trackPairIdx>1</trackPairIdx>
 				<armor>
-					<leftTrack>10</leftTrack>
-					<rightTrack>10</rightTrack>
+					<leftTrack>20</leftTrack>
+					<rightTrack>20</rightTrack>
 				</armor>
 				<maxHealth>260</maxHealth>
 				<maxRegenHealth>195</maxRegenHealth>
@@ -1892,7 +1913,7 @@
 				</repairSpeedLimiter>
 				<breakMode>SLOW</breakMode>
 				<repairTime>
-					0.649999976
+					6.66666651
 					<!--BW_String-->
 				</repairTime>
 			</trackPairParams>
@@ -4969,37 +4990,82 @@
 			<price>100000</price>
 			<notInShop>true</notInShop>
 			<armor>
-				<armor_1>10</armor_1>
-				<armor_2>10</armor_2>
-				<armor_3>10</armor_3>
-				<armor_4>10</armor_4>
-				<armor_5>10</armor_5>
-				<armor_6>10</armor_6>
-				<armor_7>10</armor_7>
+				<armor_1>
+					273.1
+					<!--BW_String-->
+				</armor_1>
+				<armor_2>
+					241.3
+					<!--BW_String-->
+				</armor_2>
+				<armor_3>
+					101.6
+					<!--BW_String-->
+				</armor_3>
+				<armor_4>
+					50.8
+					<!--BW_String-->
+				</armor_4>
+				<armor_5>
+					25.4
+					<!--BW_String-->
+				</armor_5>
+				<armor_6>
+					25.4
+					<!--BW_String-->
+				</armor_6>
+				<armor_7>
+					228.6
+					<!--BW_String-->
+				</armor_7>
 				<armor_8>0</armor_8>
-				<armor_9>10</armor_9>
-				<armor_10>10</armor_10>
-				<armor_11>10</armor_11>
-				<armor_12>10</armor_12>
-				<armor_13>10</armor_13>
-				<armor_14>10</armor_14>
-				<armor_15>10</armor_15>
-				<armor_16>10</armor_16>
-				<armor_17>10</armor_17>
+				<armor_9>
+					196.9
+					<!--BW_String-->
+				</armor_9>
+				<armor_10>
+					241.3
+					<!--BW_String-->
+				</armor_10>
+				<armor_11>
+					69.9
+					<!--BW_String-->
+				</armor_11>
+				<armor_12>
+					50.8
+					<!--BW_String-->
+				</armor_12>
+				<armor_13>
+					19.1
+					<!--BW_String-->
+				</armor_13>
+				<armor_14>
+					69.9
+					<!--BW_String-->
+				</armor_14>
+				<armor_15>
+					25.4
+					<!--BW_String-->
+				</armor_15>
+				<armor_16>
+					25.4
+					<!--BW_String-->
+				</armor_16>
+				<armor_17>
+					241.3
+					<!--BW_String-->
+				</armor_17>
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
-			<weight>100</weight>
-			<maxHealth>10</maxHealth>
-			<rotationSpeed>
-				0.96
-				<!--BW_String-->
-			</rotationSpeed>
+			<weight>5350</weight>
+			<maxHealth>410</maxHealth>
+			<rotationSpeed>48</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>200</maxHealth>
 				<maxRegenHealth>100</maxRegenHealth>
 				<repairCost>11</repairCost>
 			</turretRotatorHealth>
-			<circularVisionRadius>100</circularVisionRadius>
+			<circularVisionRadius>390</circularVisionRadius>
 			<surveyingDeviceHealth>
 				<maxHealth>130</maxHealth>
 				<maxRegenHealth>65</maxRegenHealth>
@@ -5011,38 +5077,50 @@
 					<maxAmmo>250</maxAmmo>
 					<armor>
 						<armor_1>
-							10
+							279.4
+							<!--BW_String-->
 							<tags>gunMask</tags>
 						</armor_1>
-						<armor_2>10</armor_2>
-						<armor_3>10</armor_3>
-						<armor_4>10</armor_4>
+						<armor_2>
+							228.6
+							<!--BW_String-->
+						</armor_2>
+						<armor_3>
+							76.2
+							<!--BW_String-->
+						</armor_3>
+						<armor_4>
+							25.4
+							<!--BW_String-->
+						</armor_4>
 						<armor_5>
-							10
+							25.4
+							<!--BW_String-->
 							<tags>gun</tags>
 						</armor_5>
 						<armor_6>
-							10
+							101.6
+							<!--BW_String-->
 							<tags>gun</tags>
 						</armor_6>
-						<armor_7>10</armor_7>
-						<gun>10</gun>
+						<armor_7>
+							266.7
+							<!--BW_String-->
+						</armor_7>
+						<gun>30</gun>
 					</armor>
 					<pitchLimits>
-						<minPitch>0 -10 1 -10</minPitch>
+						<minPitch>0 -45 1 -45</minPitch>
 						<maxPitch>
-							0 10 0.39722 10 0.41667 10 0.58333 10 0.60278 10 1 10
+							0 9 0.39722 9 0.41667 8 0.58333 8 0.60278 9 1 9
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
 					<shotDispersionRadius>
-						1.04
+						0.36
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>
-						62.58
-						<!--BW_String-->
-					</reloadTime>
+					<reloadTime>7</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
 							0.067
@@ -5055,16 +5133,16 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<invisibilityFactorAtShot>
-						0.1
+						0.112
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
 					<aimingTime>
-						10.43
+						1.9
 						<!--BW_String-->
 					</aimingTime>
 					<clip>
 						<count>250</count>
-						<rate>1</rate>
+						<rate>200</rate>
 					</clip>
 					<autoShoot>
 						<shotDispersionPerShot>
@@ -5809,8 +5887,8 @@
 		<detailed>
 			<engines>
 				<Caterpillar_LVMS_1050_VHOTF>
-					<smplEnginePower>10</smplEnginePower>
-					<smplFwMaxSpeed>10</smplFwMaxSpeed>
+					<smplEnginePower>930</smplEnginePower>
+					<smplFwMaxSpeed>55</smplFwMaxSpeed>
 				</Caterpillar_LVMS_1050_VHOTF>
 			</engines>
 			<chassis>
@@ -5845,31 +5923,46 @@
 			<stun>
 				<mul>
 					<name>autoShootAttrs/shotIntervalMultFactor</name>
-					<value>1</value>
+					<value>
+						1.25
+						<!--BW_String-->
+					</value>
 				</mul>
 			</stun>
 			<fire>
 				<mul>
 					<name>autoShootAttrs/shotIntervalMultFactor</name>
-					<value>1</value>
+					<value>
+						1.25
+						<!--BW_String-->
+					</value>
 				</mul>
 			</fire>
 			<overturn>
 				<mul>
 					<name>autoShootAttrs/shotIntervalMultFactor</name>
-					<value>1</value>
+					<value>
+						1.25
+						<!--BW_String-->
+					</value>
 				</mul>
 			</overturn>
 			<ammoBay>
 				<mul>
 					<name>autoShootAttrs/shotIntervalMultFactor</name>
-					<value>1</value>
+					<value>
+						1.25
+						<!--BW_String-->
+					</value>
 				</mul>
 			</ammoBay>
 			<loader1>
 				<mul>
 					<name>autoShootAttrs/shotIntervalMultFactor</name>
-					<value>1</value>
+					<value>
+						1.25
+						<!--BW_String-->
+					</value>
 				</mul>
 			</loader1>
 		</reactiveDebuffs>

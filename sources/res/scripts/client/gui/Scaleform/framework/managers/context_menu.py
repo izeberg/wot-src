@@ -1,6 +1,5 @@
-import inspect, weakref
-from abc import ABCMeta, abstractmethod
-import Keys
+from __future__ import absolute_import
+import inspect, weakref, Keys
 from Event import EventManager, Event
 from debug_utils import LOG_WARNING
 from gui import InputHandler
@@ -107,7 +106,6 @@ class ContextMenuManager(ContextMenuManagerMeta):
 
 
 class AbstractContextMenuHandler(object):
-    __metaclass__ = ABCMeta
 
     def __init__(self, cmProxy, ctx=None, handlers=None):
         self._eManager = EventManager()
@@ -164,7 +162,6 @@ class AbstractContextMenuHandler(object):
     def _makeSeparator(self):
         return self._makeItem(_SEPARATOR_ID)
 
-    @abstractmethod
     def _generateOptions(self, ctx=None):
         raise NotImplementedError
 
@@ -185,7 +182,6 @@ class AbstractContextMenuHandler(object):
 
 
 class AbstractContextMenuCollectEventsHandler(AbstractContextMenuHandler):
-    __metaclass__ = ABCMeta
 
     def onOptionSelect(self, optionId):
         handler = self._getContexMenuHandler()(optionId)
@@ -193,6 +189,5 @@ class AbstractContextMenuCollectEventsHandler(AbstractContextMenuHandler):
             return handler(self)
         LOG_WARNING('AbstractContextMenuCollectEventsHandler: unknown context menu option', self, self.cmProxy, optionId)
 
-    @abstractmethod
     def _getContexMenuHandler(self):
         raise NotImplementedError

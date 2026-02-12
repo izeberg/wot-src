@@ -9,6 +9,9 @@
 			<include>
 				<nations>czech</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<style>
 			<id>2</id>
@@ -66,6 +69,9 @@
 			<include>
 				<nations>czech</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<style>
 			<id>35</id>
@@ -210,6 +216,9 @@
 			<include>
 				<nations>czech</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<style>
 			<id>148</id>
@@ -267,6 +276,9 @@
 			<include>
 				<nations>czech</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<style>
 			<id>217</id>
@@ -306,31 +318,19 @@
 							<showOn>HULL TURRET GUN</showOn>
 							<doubleSided>1</doubleSided>
 							<position>
-								<p0>0</p0>
-								<p1>
-									-0.379
-									<!--BW_String-->
-								</p1>
-								<p2>
-									-0.062
-									<!--BW_String-->
-								</p2>
+								<p0>0.000000</p0>
+								<p1>-0.379000</p1>
+								<p2>-0.062000</p2>
 							</position>
 							<rotation>
 								<r0>0.000022</r0>
-								<r1>
-									-1.5708
-									<!--BW_String-->
-								</r1>
-								<r2>
-									3.14157
-									<!--BW_String-->
-								</r2>
+								<r1>-1.570800</r1>
+								<r2>3.141570</r2>
 							</rotation>
 							<scale>
-								<s0>8</s0>
-								<s1>8</s1>
-								<s2>8</s2>
+								<s0>8.000000</s0>
+								<s1>8.000000</s1>
+								<s2>8.000000</s2>
 							</scale>
 						</item>
 					</projection_decals>
@@ -347,6 +347,9 @@
 			<include>
 				<nations>czech</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<style>
 			<id>245</id>
@@ -469,6 +472,9 @@
 			<include>
 				<nations>czech</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<style>
 			<id>70</id>
@@ -867,6 +873,8 @@
 						<item>
 							<slotId>18000</slotId>
 							<id>73</id>
+							<scaleFactorId>0</scaleFactorId>
+							<rotated>0</rotated>
 						</item>
 					</attachments>
 					<insignias>
@@ -914,6 +922,8 @@
 								<item>
 									<slotId>18000</slotId>
 									<id>80</id>
+									<scaleFactorId>0</scaleFactorId>
+									<rotated>0</rotated>
 								</item>
 							</attachments>
 						</outfit>
@@ -928,6 +938,8 @@
 								<item>
 									<slotId>18000</slotId>
 									<id>80</id>
+									<scaleFactorId>0</scaleFactorId>
+									<rotated>0</rotated>
 								</item>
 							</attachments>
 						</outfit>
@@ -942,6 +954,8 @@
 								<item>
 									<slotId>18000</slotId>
 									<id>80</id>
+									<scaleFactorId>0</scaleFactorId>
+									<rotated>0</rotated>
 								</item>
 							</attachments>
 						</outfit>
@@ -956,6 +970,8 @@
 								<item>
 									<slotId>18000</slotId>
 									<id>85</id>
+									<scaleFactorId>0</scaleFactorId>
+									<rotated>0</rotated>
 								</item>
 							</attachments>
 						</outfit>
@@ -1022,6 +1038,8 @@
 						<item>
 							<slotId>18000</slotId>
 							<id>93</id>
+							<scaleFactorId>0</scaleFactorId>
+							<rotated>0</rotated>
 						</item>
 					</attachments>
 				</outfit>
@@ -1061,10 +1079,14 @@
 						<item>
 							<id>113</id>
 							<slotId>38000</slotId>
+							<scaleFactorId>0</scaleFactorId>
+							<rotated>0</rotated>
 						</item>
 						<item>
 							<id>114</id>
 							<slotId>18000</slotId>
+							<scaleFactorId>0</scaleFactorId>
+							<rotated>0</rotated>
 						</item>
 					</attachments>
 				</outfit>
@@ -1143,6 +1165,8 @@
 						<item>
 							<id>128</id>
 							<slotId>18000</slotId>
+							<scaleFactorId>0</scaleFactorId>
+							<rotated>0</rotated>
 						</item>
 					</attachments>
 				</outfit>
@@ -1451,6 +1475,54 @@
 					</projection_decals>
 				</outfit>
 			</outfits>
+		</style>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:styles/special_styles</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>styles 3000g notInShop</priceGroup>
+		<vehicleFilter>
+			<include>
+				<vehicles>czech:Cz34_Vz_71_Tesak</vehicles>
+			</include>
+		</vehicleFilter>
+		<style>
+			<id>1235</id>
+			<texture>gui/maps/vehicles/styles/Cz34_Vz_71_Tesak_BPXIX_3Dst.png</texture>
+			<modelsSet>Cz34_Vz_71_Tesak_BPXIX_3Dst</modelsSet>
+			<maxNumber>1</maxNumber>
+			<userString>#vehicle_customization:special_style/Cz34_Vz_71_Tesak_BPXIX_3Dst</userString>
+			<longDescriptionSpecial>#vehicle_customization:special_style/Cz34_Vz_71_Tesak_BPXIX_3Dst_desc/long</longDescriptionSpecial>
+			<tags>progression_required  c11n3D</tags>
+			<outfits>
+				<outfit>
+					<season>ALL</season>
+					<camouflages>
+						<item>
+							<id>1</id>
+							<appliedTo>4368</appliedTo>
+							<patternSize>1</patternSize>
+							<palette>0</palette>
+						</item>
+					</camouflages>
+					<attachments>
+						<item>
+							<slotId>18000</slotId>
+							<id>166</id>
+							<scaleFactorId>0</scaleFactorId>
+							<rotated>0</rotated>
+						</item>
+					</attachments>
+				</outfit>
+			</outfits>
+			<itemFilters>
+				<projection_decal>
+					<include>
+						<itemGroupName>Progression Decals</itemGroupName>
+					</include>
+				</projection_decal>
+			</itemFilters>
 		</style>
 	</itemGroup>
 </root>

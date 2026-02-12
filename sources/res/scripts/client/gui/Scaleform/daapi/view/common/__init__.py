@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from frameworks.wulf import WindowLayer
 from gui.Scaleform.daapi.view.dialogs.button_dialog import ButtonDialog
 from gui.shared import EVENT_BUS_SCOPE

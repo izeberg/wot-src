@@ -259,8 +259,19 @@ msgstr "Serpente"
 msgid "Chassis_It39_Coccodrillo"
 msgstr "Coccodrillo"
 
+msgid "Chassis_It40_Predatore"
+msgstr "Predatore"
+
 msgid "Continental_AOI_1490_italy"
 msgstr "Continental AOI-1490-I"
+
+msgid "Continental_AV_1790_5B"
+msgstr "Continental AV-1790-5B"
+
+msgid "Continental_AV_1790_5B_short"
+msgstr ""
+"Continental\n"
+"AV-1790-5B"
 
 msgid "Daimler_Benz_Typ_MB_837_A"
 msgstr "Daimler–Benz Typ MB 837 A"
@@ -987,6 +998,34 @@ msgstr "Coccodrillo"
 msgid "It39_Coccodrillo_short_special"
 msgstr "Достойная броня и мобильность, система дозарядки"
 
+msgid "It40_Predatore"
+msgstr "Predatore"
+
+msgid "It40_Predatore_descr"
+msgstr ""
+"В конце 1950-х годов Италия начала разработку среднего танка Predatore, "
+"призванного заменить устаревший M47 Patton. Машина должна была сочетать "
+"усиленную броню, мощное вооружение, высокую подвижность и низкий расход "
+"топлива. Вместо зарекомендовавшей себя торсионной подвески предлагалась "
+"зависимая опорная система с резиновыми амортизаторами, снижавшая массу "
+"ходовой части. К середине 1960-х проект свернули: армия закупила импортную "
+"серийную технику, а Predatore остался на стадии конструкторской "
+"документации."
+
+msgid "It40_Predatore_long_special"
+msgstr ""
+"Predatore — итальянский средний танк IX уровня. Как и другие средние танки "
+"Италии, он обладает точным орудием с системой дозарядки, высоким уроном в "
+"минуту на первом снаряде и очень хорошей мобильностью. Отличная максимальная"
+" скорость позволяет машине доставить свою приличную огневую мощь в любую "
+"точку поля боя, а также компенсирует относительно слабую броню."
+
+msgid "It40_Predatore_short"
+msgstr "Predatore"
+
+msgid "It40_Predatore_short_special"
+msgstr "Система дозарядки, хорошая мобильность"
+
 msgid "MB_822_Ka_500"
 msgstr "MB 822 Ka-500"
 
@@ -1055,6 +1094,9 @@ msgstr "R528M"
 
 msgid "RV_4"
 msgstr "RV 4"
+
+msgid "RV_4B"
+msgstr "RV 4B"
 
 msgid "RV_4F"
 msgstr "RV 4F"
@@ -1269,6 +1311,9 @@ msgstr "Serpente"
 msgid "Turret_1_It39_Coccodrillo"
 msgstr "Coccodrillo"
 
+msgid "Turret_1_It40_Predatore"
+msgstr "Predatore"
+
 msgid "Turret_2_It03_M15_42"
 msgstr "M15/42 modificata"
 
@@ -1335,8 +1380,14 @@ msgstr "c.g. 105/58 HE-T"
 msgid "_105mm_58_HVAP_T"
 msgstr "c.p. 105/58 HVAP-T"
 
+msgid "_105mm_APDS304"
+msgstr "c.p. 105/57 304"
+
 msgid "_105mm_APDS305"
 msgstr "c.p. 105/51 305"
+
+msgid "_105mm_APP304"
+msgstr "c.p. 105/57"
 
 msgid "_105mm_APP305"
 msgstr "c.p. 105/51"
@@ -1389,8 +1440,14 @@ msgstr "c.p. 105/51 HVAPDS-T M279"
 msgid "_105mm_HVHE_105_51"
 msgstr "a.e. 105/51"
 
+msgid "_105mm_HVHE_105_mod_57"
+msgstr "a.e. 105/57"
+
 msgid "_105mm_OTO_M_105_51"
 msgstr "105 mm OTO-M-105-51"
+
+msgid "_105mm_OTO_Melara_105_mod_57"
+msgstr "105 mm OTO Melara 105 mod. 57"
 
 msgid "_105mm_c_g_105_51_HEAT_M456"
 msgstr "c.g. 105/51 HEAT M456"

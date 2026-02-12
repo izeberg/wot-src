@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.impl.backport.backport_r import text, ntext, msgid, sound, image, layout
 from gui.impl.backport.backport_time_utils import getTillTimeStringByRClass
 from gui.impl.backport.backport_tooltip import BackportTooltipWindow, TooltipData, createTooltipData

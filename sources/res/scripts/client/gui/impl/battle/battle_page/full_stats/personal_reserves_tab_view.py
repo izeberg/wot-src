@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, typing, BigWorld
 from frameworks.wulf import ViewFlags, ViewSettings
 from gui.impl.common.personal_reserves.personal_reserves_shared_constants import PERSONAL_RESOURCE_ORDER

@@ -6,21 +6,19 @@ package net.wg.infrastructure.managers.utils.impl
    
    public class TweenManagerHelper implements ITweenManagerHelper
    {
-      
-      private static const NOT_INIT:String = "Initialize TweenManagerHelper before using.";
        
       
-      private var data:TweenConstraintsVO;
+      private var _data:TweenConstraintsVO;
       
-      private var durationByType:Vector.<Object>;
+      private var _durationByType:Vector.<Object>;
       
       private var _disposed:Boolean = false;
       
       public function TweenManagerHelper(param1:TweenConstraintsVO)
       {
          super();
-         this.data = param1;
-         this.durationByType = new <Object>[{
+         this._data = param1;
+         this._durationByType = new <Object>[{
             "types":TweenTypes.FADE_TYPES,
             "duration":param1.fadeDuration
          },{
@@ -43,106 +41,107 @@ package net.wg.infrastructure.managers.utils.impl
       
       public function getFadeDuration() : int
       {
-         return this.data.fadeDuration;
+         return this._data.fadeDuration;
       }
       
       public function getFadeDurationSlow() : int
       {
-         return this.data.fadeDuration << 1;
+         return this._data.fadeDuration << 1;
       }
       
       public function getFadeDurationFast() : int
       {
-         return this.data.fadeDuration >> 1;
+         return this._data.fadeDuration >> 1;
       }
       
       public function getMoveDuration() : int
       {
-         return this.data.moveDuration;
+         return this._data.moveDuration;
       }
       
       public function getMoveDurationSlow() : int
       {
-         return this.data.moveDuration << 1;
+         return this._data.moveDuration << 1;
       }
       
       public function getMoveDurationFast() : int
       {
-         return this.data.moveDuration >> 1;
+         return this._data.moveDuration >> 1;
       }
       
       public function getGlowDuration() : int
       {
-         return this.data.glowDuration;
+         return this._data.glowDuration;
       }
       
       public function getGlowDurationSlow() : int
       {
-         return this.data.glowDuration << 1;
+         return this._data.glowDuration << 1;
       }
       
       public function getGlowDurationFast() : int
       {
-         return this.data.glowDuration >> 1;
+         return this._data.glowDuration >> 1;
       }
       
       public function getShadowDuration() : int
       {
-         return this.data.shadowDuration;
+         return this._data.shadowDuration;
       }
       
       public function getShadowDurationFast() : int
       {
-         return this.data.shadowDuration << 1;
+         return this._data.shadowDuration << 1;
       }
       
       public function getShadowDurationSlow() : int
       {
-         return this.data.shadowDuration >> 1;
+         return this._data.shadowDuration >> 1;
       }
       
       public function getBlinkingDuration() : int
       {
-         return this.data.blinkingDuration;
+         return this._data.blinkingDuration;
       }
       
       public function getTranslationLength() : int
       {
-         return this.data.translationLength;
+         return this._data.translationLength;
       }
       
       public function getFadeAlphaMax() : int
       {
-         return this.data.fadeAlphaMax;
+         return this._data.fadeAlphaMax;
       }
       
       public function getFadeAlphaMin() : int
       {
-         return this.data.fadeAlphaMin;
+         return this._data.fadeAlphaMin;
       }
       
       public function getHalfTurnDuration() : int
       {
-         return this.data.halfTurnDuration;
+         return this._data.halfTurnDuration;
       }
       
       public function getHalfTurnDelay() : int
       {
-         return this.data.halfTurnDelay;
+         return this._data.halfTurnDelay;
       }
       
       public function getSimilarTypes(param1:String) : Vector.<String>
       {
-         var _loc3_:Vector.<String> = null;
-         var _loc2_:int = 0;
-         while(_loc2_ < this.durationByType.length)
+         var _loc4_:Vector.<String> = null;
+         var _loc2_:uint = this._durationByType.length;
+         var _loc3_:int = 0;
+         while(_loc3_ < _loc2_)
          {
-            _loc3_ = this.durationByType[_loc2_].types;
-            if(_loc3_.indexOf(param1) >= 0)
+            _loc4_ = this._durationByType[_loc3_].types;
+            if(_loc4_.indexOf(param1) >= 0)
             {
-               return _loc3_;
+               return _loc4_;
             }
-            _loc2_++;
+            _loc3_++;
          }
          return new Vector.<String>(0);
       }
@@ -150,9 +149,9 @@ package net.wg.infrastructure.managers.utils.impl
       public final function dispose() : void
       {
          this._disposed = true;
-         this.data = null;
-         this.durationByType.splice(0,this.durationByType.length);
-         this.durationByType = null;
+         this._data = null;
+         this._durationByType.splice(0,this._durationByType.length);
+         this._durationByType = null;
       }
       
       public function isDisposed() : Boolean

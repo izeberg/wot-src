@@ -129,6 +129,35 @@ msgstr "НИЧЬЯ"
 msgid "result/win"
 msgstr "ПОБЕДА"
 
+msgid "resultRace/battleStatus/finished"
+msgstr "ТРАССА ПРОЙДЕНА"
+
+msgid "resultRace/battleStatus/inTop"
+msgstr "МЕСТО"
+
+msgid "resultRace/battleStatus/notFinished"
+msgstr ""
+"ТРАССА\n"
+"НЕ ПРОЙДЕНА"
+
+msgid "resultRace/finishReason/finished"
+msgstr "Финишная черта достигнута"
+
+msgid "resultRace/finishReason/notFinished"
+msgstr "Финишная черта не достигнута"
+
+msgid "resultRace/footerSubtitle/battleEnded"
+msgstr "Бой окончен: {{time}}"
+
+msgid "resultRace/footerSubtitle/finished"
+msgstr "Неплохо!"
+
+msgid "resultRace/footerSubtitle/inTop"
+msgstr "Топ-3!"
+
+msgid "resultRace/footerSubtitle/notFinished"
+msgstr "В следующий раз повезёт!"
+
 msgid "ribbon/applied"
 msgstr "Бонус успешно применён"
 
@@ -153,20 +182,92 @@ msgstr "Dev КОМАНДНЫЙ СЧЁТ"
 msgid "sub_modes/development/team/singleTeam"
 msgstr "Игроки"
 
+msgid "sub_modes/fall_tanks/efficiency/checkpointsPassed"
+msgstr "Контрольные точки"
+
+msgid "sub_modes/fall_tanks/efficiency/deathCount"
+msgstr "Возрождения"
+
+msgid "sub_modes/fall_tanks/efficiency/finishPosition"
+msgstr "Место"
+
+msgid "sub_modes/fall_tanks/efficiency/finishTime"
+msgstr "Время"
+
+msgid "sub_modes/fall_tanks/efficiency/kills"
+msgstr "Разрушен"
+
+msgid "sub_modes/fall_tanks/efficiencyTooltip/description/checkpointsPassed"
+msgstr "Пройденные контрольные точки"
+
+msgid "sub_modes/fall_tanks/efficiencyTooltip/description/deathCount"
+msgstr "Количество возрождений после разрушения вашей машины"
+
+msgid "sub_modes/fall_tanks/efficiencyTooltip/description/destroyed"
+msgstr "Количество разрушенной вами техники"
+
+msgid "sub_modes/fall_tanks/efficiencyTooltip/description/finishPosition"
+msgstr "Ваша итоговая позиция в гонке"
+
+msgid "sub_modes/fall_tanks/efficiencyTooltip/description/finishTime"
+msgstr "Время, за которое вы достигли финишной черты"
+
+msgid "sub_modes/fall_tanks/efficiencyTooltip/header/checkpointsPassed"
+msgstr "Контрольные точки"
+
+msgid "sub_modes/fall_tanks/efficiencyTooltip/header/deathCount"
+msgstr "Возрождения"
+
+msgid "sub_modes/fall_tanks/efficiencyTooltip/header/destroyed"
+msgstr "Разрушен"
+
+msgid "sub_modes/fall_tanks/efficiencyTooltip/header/finishPosition"
+msgstr "Место"
+
+msgid "sub_modes/fall_tanks/efficiencyTooltip/header/finishTime"
+msgstr "Время"
+
+msgid "sub_modes/fall_tanks/navigation/battleResults"
+msgstr "ЛИЧНЫЙ РЕЗУЛЬТАТ"
+
+msgid "sub_modes/fall_tanks/navigation/teamEfficiency"
+msgstr "РЕЗУЛЬТАТЫ УЧАСТНИКОВ"
+
+msgid "sub_modes/fall_tanks/team/finishPositionHeader/body"
+msgstr "Сортировать по месту"
+
+msgid "sub_modes/fall_tanks/team/finishPositionHeader/header"
+msgstr "Место"
+
+msgid "sub_modes/fall_tanks/team/finishTimeHeader/body"
+msgstr "Сортировать по времени"
+
+msgid "sub_modes/fall_tanks/team/finishTimeHeader/header"
+msgstr "Время"
+
+msgid "sub_modes/fall_tanks/team/singleTeam"
+msgstr "Игроки"
+
+msgid "sub_modes/fall_tanks/team/tankHeader/body"
+msgstr "Сортировать по технике"
+
+msgid "sub_modes/fall_tanks/team/tankHeader/header"
+msgstr "Техника"
+
 msgid "sub_modes/undefined/navigation/battleResults"
 msgstr "ОБЗОР"
 
 msgid "sub_modes/undefined/navigation/teamEfficiency"
 msgstr "КОМАНДНЫЙ СЧЁТ"
 
-msgid "sub_modes/undefined/team/empty/finishTime"
-msgstr "-- : -- . --"
-
-msgid "sub_modes/undefined/team/format/finishTime"
-msgstr "{minutes}:{seconds}.{milliseconds}"
-
 msgid "sub_modes/undefined/team/singleTeam"
 msgstr "Игроки"
+
+msgid "team/empty/finishTime"
+msgstr "-- : -- . --"
+
+msgid "team/format/finishTime"
+msgstr "{minutes}:{seconds}.{milliseconds}"
 
 msgid "title"
 msgstr "РЕЗУЛЬТАТЫ БОЯ"

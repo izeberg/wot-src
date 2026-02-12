@@ -183,8 +183,6 @@ package net.wg.gui.battle.views.vehicleMarkers
       
       protected var vehicleDestroyed:Boolean = false;
       
-      protected var offsets:Array;
-      
       private var _extInfoShow:Boolean = false;
       
       private var _lastActionState:String = null;
@@ -231,7 +229,6 @@ package net.wg.gui.battle.views.vehicleMarkers
       
       public function VehicleMarker()
       {
-         this.offsets = [-2,-2,1,1,1,1,1,0,0,-66];
          this._insertedPart = new Dictionary();
          this._insertedPartsSorted = new Vector.<VehicleMarkerPart>(0);
          super();
@@ -313,17 +310,25 @@ package net.wg.gui.battle.views.vehicleMarkers
          }
       }
       
-      override protected function onDispose() : void
+      override protected function onBeforeDispose() : void
       {
-         var _loc1_:VehicleMarkerPart = null;
-         var _loc2_:VehicleMarkerPart = null;
-         this.fxContainer.dispose();
-         this.fxContainer = null;
          this.statusContainer.removeEventListener(Event.COMPLETE,this.onStatusAnimationHiddenCompleteHandler);
          this.healthBar.hitSplash.removeEventListener(HealthBarAnimatedPart.HIDE,this.onSplashHideHandler);
          this.vmManager.removeEventListener(VehicleMarkersManagerEvent.SHOW_EX_INFO,this.onShowExInfoHandler);
          this.vmManager.removeEventListener(VehicleMarkersManagerEvent.UPDATE_SETTINGS,this.onUpdateSettingsHandler);
          this.vmManager.removeEventListener(VehicleMarkersManagerEvent.UPDATE_COLORS,this.onUpdateColorsHandler);
+         super.onBeforeDispose();
+      }
+      
+      override protected function onDispose() : void
+      {
+         var _loc1_:VehicleMarkerPart = null;
+         var _loc2_:VehicleMarkerPart = null;
+         if(this.fxContainer)
+         {
+            this.fxContainer.dispose();
+            this.fxContainer = null;
+         }
          this.vehicleIcon = null;
          this.hpField = null;
          if(this.actionMarker != null)
@@ -393,8 +398,6 @@ package net.wg.gui.battle.views.vehicleMarkers
             this.markerParts.splice(0,this.markerParts.length);
             this.markerParts = null;
          }
-         this.offsets.splice(0,this.offsets.length);
-         this.offsets = null;
          this.cleanupDynamicObject(this._insertedPart);
          this._insertedPart = null;
          for each(_loc1_ in this._insertedPartsSorted)
@@ -908,8 +911,9 @@ package net.wg.gui.battle.views.vehicleMarkers
          return START_Y;
       }
       
-      protected function prepareOffsets() : void
+      protected function prepareOffsets() : Array
       {
+         return [-2,-2,1,1,1,1,1,0,0,-66];
       }
       
       protected function isEnemy() : Boolean
@@ -1139,21 +1143,28 @@ package net.wg.gui.battle.views.vehicleMarkers
          }
       }
       
+      protected function updateIconColor() : void
+      {
+         this.vehicleIcon.transform.colorTransform = this.vmManager.getTransform(this._markerSchemeName);
+         this.levelIcon.alpha = !!this.vehicleDestroyed ? Number(LEVEL_ICON_ALPHA_DESTROYED) : Number(LEVEL_ICON_ALPHA_ALIVE);
+      }
+      
       private function prepareLayout() : void
       {
          var _loc1_:Array = null;
-         var _loc3_:VehicleMarkerPart = null;
+         var _loc4_:VehicleMarkerPart = null;
          this.prepareOffsets();
          this.markerParts = new Vector.<VehicleMarkerPart>();
          _loc1_ = this.prepareParts();
-         var _loc2_:Vector.<CrossOffset> = this.prepareCrossOffsets();
-         var _loc4_:int = _loc1_.length;
-         var _loc5_:int = 0;
-         while(_loc5_ < _loc4_)
+         var _loc2_:Array = this.prepareOffsets();
+         var _loc3_:Vector.<CrossOffset> = this.prepareCrossOffsets();
+         var _loc5_:int = _loc1_.length;
+         var _loc6_:int = 0;
+         while(_loc6_ < _loc5_)
          {
-            _loc3_ = new VehicleMarkerPart(_loc1_[_loc5_],this.offsets[_loc5_],_loc2_[_loc5_]);
-            this.markerParts.push(_loc3_);
-            _loc5_++;
+            _loc4_ = new VehicleMarkerPart(_loc1_[_loc6_],_loc2_[_loc6_],_loc3_[_loc6_]);
+            this.markerParts.push(_loc4_);
+            _loc6_++;
          }
          this.updateExplosionLayout();
       }
@@ -1250,12 +1261,6 @@ package net.wg.gui.battle.views.vehicleMarkers
             _loc1_ = VMAtlasItemName.getVehicleTypeIconName(this._markerColor,this.model.vClass,this.model.hunt);
          }
          this.vmManager.drawWithCenterAlign(_loc1_,this.marker.vehicleTypeIcon.graphics,true,false,0,V_TYPE_ICON_Y);
-      }
-      
-      private function updateIconColor() : void
-      {
-         this.vehicleIcon.transform.colorTransform = this.vmManager.getTransform(this._markerSchemeName);
-         this.levelIcon.alpha = !!this.vehicleDestroyed ? Number(LEVEL_ICON_ALPHA_DESTROYED) : Number(LEVEL_ICON_ALPHA_ALIVE);
       }
       
       private function setupSquadIcon() : void

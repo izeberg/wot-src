@@ -1283,9 +1283,6 @@ msgstr "Списано очков Боевого пропуска"
 msgid "platformCurrencyMsg/debited/bptaler"
 msgstr "Списано монет"
 
-msgid "platformCurrencyMsg/debited/brcoin"
-msgstr "Списано стальных печатей"
-
 msgid "platformCurrencyMsg/debited/clanvehiclecoin"
 msgstr "Списано жетонов Манёвров"
 
@@ -1309,9 +1306,6 @@ msgstr "Начислено очков Боевого пропуска"
 
 msgid "platformCurrencyMsg/received/bptaler"
 msgstr "Начислено монет"
-
-msgid "platformCurrencyMsg/received/brcoin"
-msgstr "Начислено стальных печатей"
 
 msgid "platformCurrencyMsg/received/clanvehiclecoin"
 msgstr "Начислено жетонов Манёвров"
@@ -1569,15 +1563,6 @@ msgid "serviceChannelMessages/BRVehiclesInvoice/descr"
 msgstr ""
 "Это специальная техника для режима «Стальной охотник». Перейдите в режим, "
 "чтобы узнать, на что она способна."
-
-msgid "serviceChannelMessages/BRbattleResults/BRProgressionTitle"
-msgstr "Получено очков прогрессии: %(value)s"
-
-msgid "serviceChannelMessages/BRbattleResults/battlePass"
-msgstr "Получено очков Боевого пропуска: %(pointsDiff)s"
-
-msgid "serviceChannelMessages/BRbattleResults/battleRoyaleBrCoin"
-msgstr "Получено стальных печатей: %(value)s"
 
 msgid "serviceChannelMessages/BRbattleResults/ended"
 msgstr "Машина уничтожена"
@@ -1901,6 +1886,9 @@ msgstr ""
 "Вы завершили %(newLevel)s-й этап прогрессии %(chapter)s.\n"
 "Получена награда:"
 
+msgid "serviceChannelMessages/battlePassReward/breakLine"
+msgstr "<br/>"
+
 msgid "serviceChannelMessages/battlePassReward/button"
 msgstr "Подробнее"
 
@@ -1914,6 +1902,9 @@ msgid "serviceChannelMessages/battlePassReward/buyBPWithLevels/text"
 msgstr ""
 "Куплен Улучшенный пропуск и все этапы для главы «%(chapter)s».\n"
 "Получены награды за все этапы главы:"
+
+msgid "serviceChannelMessages/battlePassReward/buyMultiple/starterPack"
+msgstr "Вы получили бонус за покупку Улучшенных пропусков:"
 
 msgid "serviceChannelMessages/battlePassReward/buyMultiple/text"
 msgstr ""
@@ -1929,6 +1920,9 @@ msgstr ""
 "Вы достигли %(currentLevel)s-го этапа.\n"
 "Получены награды:"
 
+msgid "serviceChannelMessages/battlePassReward/buySingle/starterPack"
+msgstr "Вы получили бонус за покупку Улучшенного пропуска:"
+
 msgid "serviceChannelMessages/battlePassReward/buyWithRewards/additionalText"
 msgstr "Данный Улучшенный пропуск действует только для главы «%(chapter)s»."
 
@@ -1936,10 +1930,14 @@ msgid "serviceChannelMessages/battlePassReward/buyWithRewards/text"
 msgstr ""
 "Получены улучшенные награды за ранее пройденные этапы Боевого пропуска:"
 
+msgid ""
+"serviceChannelMessages/battlePassReward/buyWithoutRewards/additionalText"
+msgstr "Этот Улучшенный пропуск действует только для главы %(chapter)s."
+
 msgid "serviceChannelMessages/battlePassReward/buyWithoutRewards/text"
 msgstr ""
-"Теперь вы будете получать награды из базовой и улучшенной линеек одновременно в рамках главы «%(chapter)s».\n"
-"Данный Улучшенный пропуск действует только для главы «%(chapter)s»."
+"Теперь вы будете получать награды из базовой и улучшенной линеек "
+"одновременно в главе %(chapter)s."
 
 msgid "serviceChannelMessages/battlePassReward/header/autoSelectReward"
 msgstr "Начислена награда по умолчанию:"
@@ -3277,6 +3275,21 @@ msgstr "Срок действия резервов истекает:"
 msgid "serviceChannelMessages/personalReservesSoonExpire/title"
 msgstr "Резервы с истекающим сроком действия"
 
+msgid "serviceChannelMessages/petSystem/events/creditsReceived"
+msgstr "Начислено кредитов: %(credits)s"
+
+msgid "serviceChannelMessages/petSystem/events/date"
+msgstr "Дата: %(date)s"
+
+msgid "serviceChannelMessages/petSystem/events/financial_transaction"
+msgstr "Финансовая операция:"
+
+msgid "serviceChannelMessages/petSystem/events/itemsReceived"
+msgstr "Начислено на Склад: %(item)s"
+
+msgid "serviceChannelMessages/petSystem/events/receipt"
+msgstr "Квитанция"
+
 msgid "serviceChannelMessages/piggyBank/continueAfterSmashed"
 msgstr "Начался новый цикл накопления."
 
@@ -3620,6 +3633,15 @@ msgstr "Игровой сервер будет отключён %(date)s."
 msgid "serviceChannelMessages/serverRebootCancelled"
 msgstr "Отключение игрового сервера, запланированное %(date)s, отменено."
 
+msgid "serviceChannelMessages/serviceRecordCustomization/available/title"
+msgstr "Настройка экрана достижений недоступна"
+
+msgid "serviceChannelMessages/serviceRecordCustomization/unavailable/text"
+msgstr "Эта функциональность приостановлена."
+
+msgid "serviceChannelMessages/serviceRecordCustomization/unavailable/title"
+msgstr "Настройка экрана достижений сейчас недоступна"
+
 msgid "serviceChannelMessages/specialReward/intelligenceBlueprints"
 msgstr "Универсальный фрагмент (x%(fragmentsCount)s)"
 
@@ -3958,6 +3980,15 @@ msgstr "Выбрать"
 msgid "serviceChannelMessages/winbackSelectableRewardEntry/header"
 msgstr "Получены награды!"
 
+msgid "serviceChannelMessages/wotPlus/battlePass/isDisabled/text"
+msgstr "Бонусы Боевого пропуска «Плюс» приостановлены."
+
+msgid "serviceChannelMessages/wotPlus/battlePass/isDisabled/title"
+msgstr "Боевой пропуск «Плюс» сейчас недоступен"
+
+msgid "serviceChannelMessages/wotPlus/battlePass/isEnabled/title"
+msgstr "Боевой пропуск «Плюс» доступен"
+
 msgid ""
 "serviceChannelMessages/wotPlus/dailyAttendanceRewarded/big/cycleEnded/endText"
 msgstr "Продолжайте заходить в игру, чтобы получить ещё больше наград!"
@@ -4006,16 +4037,21 @@ msgstr ""
 "Эксклюзивный %(vehicleType)s <font color='#E9E2BF'>%(vehicleName)s</font> "
 "подписки WoT Plus временно недоступен."
 
+msgid "serviceChannelMessages/wotPlus/expireCoreMessage/title"
+msgstr "Подписка WoT Plus Core закончилась: %(time)s"
+
 msgid "serviceChannelMessages/wotPlus/expireFreeDemount/title"
 msgstr "Бесплатный демонтаж оборудования недоступен"
 
 msgid "serviceChannelMessages/wotPlus/expireMessage/text"
 msgstr ""
-"Продлите подписку WoT Plus, чтобы продолжить пользоваться всеми "
-"преимуществами."
+"Продлите подписку WoT Plus, чтобы снова пользоваться всеми преимуществами."
 
 msgid "serviceChannelMessages/wotPlus/expireMessage/title"
 msgstr "Подписка WoT Plus закончилась: %(time)s"
+
+msgid "serviceChannelMessages/wotPlus/expireProMessage/title"
+msgstr "Подписка WoT Plus Pro закончилась: %(time)s"
 
 msgid "serviceChannelMessages/wotPlus/goldReserve/isDisabled/text"
 msgstr "Накопление золота приостановлено."
@@ -4034,8 +4070,27 @@ msgstr "Хранилище золота открыто!"
 
 msgid "serviceChannelMessages/wotPlus/nextDateOfRenewal"
 msgstr ""
-"Теперь все бонусы доступны.\n"
-"Следующее продление: <font color='#E9E2BF'>%(time)s</font>"
+"Все бонусы доступны.\n"
+"Продление подписки: <font color='#E9E2BF'>%(time)s</font>"
+
+msgid "serviceChannelMessages/wotPlus/nextDateOfRenewalChange"
+msgstr "Продление подписки: <font color='#E9E2BF'>%(time)s</font>"
+
+msgid "serviceChannelMessages/wotPlus/nextDateOfRenewalPro"
+msgstr "Ваша 180-дневная подписка активна. Пользуйтесь с удовольствием!"
+
+msgid "serviceChannelMessages/wotPlus/nextDateOfRenewalProYearly"
+msgstr "Ваша 360-дневная подписка активна. Пользуйтесь с удовольствием!"
+
+msgid "serviceChannelMessages/wotPlus/nextDateOfUnlockPro"
+msgstr ""
+"Ваша 180-дневная подписка активна. Пользуйтесь с удовольствием!\n"
+"Продление подписки: <font color='#E9E2BF'>%(time)s</font>"
+
+msgid "serviceChannelMessages/wotPlus/nextDateOfUnlockProYearly"
+msgstr ""
+"Ваша 360-дневная подписка активна. Пользуйтесь с удовольствием!\n"
+"Продление подписки: <font color='#E9E2BF'>%(time)s</font>"
 
 msgid "serviceChannelMessages/wotPlus/passiveXP/allCrewAreVeterans/text"
 msgstr ""
@@ -4089,8 +4144,37 @@ msgstr "Один или более членов экипажа не могут �
 msgid "serviceChannelMessages/wotPlus/passiveXP/wasting/title"
 msgstr "Получайте дополнительный опыт экипажа!"
 
+msgid "serviceChannelMessages/wotPlus/proBoost/isActivated/text"
+msgstr "Вы сможете изменить свой выбор снова через %(cooldown)s ч."
+
+msgid "serviceChannelMessages/wotPlus/proBoost/isActivated/title"
+msgstr "Pro Boost привязан к %(vehicleName)s"
+
+msgid "serviceChannelMessages/wotPlus/proBoost/isDeactivated/text"
+msgstr "Вы можете привязать бонус к другой машине."
+
+msgid "serviceChannelMessages/wotPlus/proBoost/isDeactivated/title"
+msgstr "Pro Boost отвязан от %(vehicleName)s"
+
+msgid "serviceChannelMessages/wotPlus/proBoost/isDisabled/text"
+msgstr "Бонусы Pro Boost приостановлены."
+
+msgid "serviceChannelMessages/wotPlus/proBoost/isDisabled/title"
+msgstr "Pro Boost сейчас недоступен"
+
+msgid "serviceChannelMessages/wotPlus/proBoost/isEnabled/title"
+msgstr "Pro Boost доступен"
+
+msgid "serviceChannelMessages/wotPlus/proBoost/switch/text"
+msgstr ""
+"Pro Boost больше не привязан к %(vehicleNameFrom)s. Вы можете изменить свой "
+"выбор через %(cooldown)s ч."
+
+msgid "serviceChannelMessages/wotPlus/proBoost/switch/title"
+msgstr "Pro Boost переключён на %(vehicleNameTo)s"
+
 msgid "serviceChannelMessages/wotPlus/renewMessage/title"
-msgstr "Подписка WoT Plus успешно продлена: %(time)s"
+msgstr "Смена даты продления WoT Plus"
 
 msgid "serviceChannelMessages/wotPlus/rental/noTank/text"
 msgstr "Выберите машину из списка для аренды."
@@ -4105,16 +4189,28 @@ msgid "serviceChannelMessages/wotPlus/tankRental/isPending/title"
 msgstr "Получено в аренду!"
 
 msgid "serviceChannelMessages/wotPlus/unavailableMessage/text"
-msgstr "Бонусы подписки WoT Plus недоступны."
+msgstr "Эти бонусы отключены."
 
 msgid "serviceChannelMessages/wotPlus/unavailableMessage/title"
 msgstr "Подписка WoT Plus недоступна"
+
+msgid "serviceChannelMessages/wotPlus/unlockCoreMessage/title"
+msgstr "WoT Plus Core активирована"
 
 msgid "serviceChannelMessages/wotPlus/unlockFreeDemount/title"
 msgstr "Бесплатный демонтаж оборудования доступен"
 
 msgid "serviceChannelMessages/wotPlus/unlockMessage/title"
-msgstr "Подписка WoT Plus активирована"
+msgstr "WoT Plus активирована"
+
+msgid "serviceChannelMessages/wotPlus/unlockProMessage/title"
+msgstr "WoT Plus Pro"
+
+msgid "serviceChannelMessages/wotPlus/upgradeMessage/title"
+msgstr "WoT Plus улучшена до Pro!"
+
+msgid "serviceChannelMessages/wotPlusExtend/button"
+msgstr "Продлить"
 
 msgid "serviceChannelMessages/xpReceivedAsGift"
 msgstr "От администрации получен свободный опыт: %(freeXP)s."

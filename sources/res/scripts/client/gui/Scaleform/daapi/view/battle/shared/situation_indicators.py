@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+from future.utils import viewitems
 import BigWorld, WWISE
 from gui.Scaleform.daapi.view.meta.SituationIndicatorsMeta import SituationIndicatorsMeta
 from gui.battle_control.battle_constants import VEHICLE_VIEW_STATE, VEHICLE_VIEW_STATE_ID_TO_WEATHER_ZONE_NAME
@@ -45,7 +47,7 @@ class SituationIndicators(SituationIndicatorsMeta):
         self.as_setPerksS(perksData)
 
     def updatePerks(self, changedPerks, prevPerks):
-        for perkID, perkData in changedPerks.iteritems():
+        for perkID, perkData in viewitems(changedPerks):
             lifeTime = self._getLifeTime(perkData)
             state = perkData['state']
             skillName = tankmen.getSkillsConfig().vsePerkToSkill.get(perkID)

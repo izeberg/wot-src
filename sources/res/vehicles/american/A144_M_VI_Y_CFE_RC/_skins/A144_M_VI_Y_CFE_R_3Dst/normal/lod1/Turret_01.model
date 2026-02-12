@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/american/A144_M_VI_Y_CFE_RC/_skins/A144_M_VI_Y_CFE_R_3Dst/normal/lod2/Turret_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.127387 -0.062812 -0.894571</min>
+		<max>1.127669 0.852341 0.892428</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/american/A144_M_VI_Y_CFE_RC/_skins/A144_M_VI_Y_CFE_R_3Dst/normal/lod1/Turret_01</nodefullVisual>
+	<tank>true</tank>
+</root>

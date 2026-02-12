@@ -9,7 +9,7 @@ gEffectLists = dict()
 
 def getEffectList(name):
     global gEffectLists
-    return gEffectLists.get(name, None)
+    return gEffectLists.get(name)
 
 
 def setEffectList(data):
@@ -266,9 +266,7 @@ class UnionSelectorDesc(SelectorDesc):
     def getActiveEffects(self, effects, args):
         isPc = args['isPC']
         for selector in self._selectors:
-            if selector._isPC is None:
-                selector.getActiveEffects(effects, args)
-            elif selector._isPC == isPc:
+            if selector._isPC is None or selector._isPC == isPc:
                 selector.getActiveEffects(effects, args)
 
         return
@@ -447,6 +445,10 @@ class ExhaustEffectDescriptor(EffectDescriptorBase):
     @property
     def descriptors(self):
         return self.__descriptors
+
+    @descriptors.setter
+    def descriptors(self, value):
+        self.__descriptors = value
 
     def create(self, args):
         effectDescriptor = self.__descriptors['default']

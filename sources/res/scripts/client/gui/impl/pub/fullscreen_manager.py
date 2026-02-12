@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, weakref, typing
 from frameworks.state_machine.observers import StateIdsObserver
 from frameworks.wulf import WindowLayer, WindowStatus
@@ -12,7 +13,8 @@ if typing.TYPE_CHECKING:
     from frameworks.wulf import Window
 _logger = logging.getLogger(__name__)
 _LOW_PRIORITY_WINDOWS = (
- VIEW_ALIAS.AWARD_WINDOW, VIEW_ALIAS.AWARD_WINDOW_MODAL, VIEW_ALIAS.ADVENT_CALENDAR,
+ VIEW_ALIAS.AWARD_WINDOW,
+ VIEW_ALIAS.AWARD_WINDOW_MODAL,
  VIEW_ALIAS.MISSION_AWARD_WINDOW)
 registerLowPriorityWulfWindows([R.views.lobby.offers.OfferBannerWindow()])
 

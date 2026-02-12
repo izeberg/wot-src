@@ -6,7 +6,6 @@ from gui.impl.backport.backport_tooltip import createTooltipData
 from gui.impl.gen import R
 from gui.impl.pub import ViewImpl
 from gui.prb_control.entities.listener import IGlobalListener
-from gui.shared import EVENT_BUS_SCOPE, g_eventBus, events
 from gui.shared import event_dispatcher
 from helpers import dependency
 from skeletons.account_helpers.settings_core import ISettingsCore
@@ -88,14 +87,12 @@ class IntroScreen(ViewImpl, IGlobalListener):
         self.viewModel.scheduleInfo.season.pollServerTime += self.__onPollServerTime
         self._modeController.onStatusUpdated += self.__onStatusUpdated
         self.startGlobalListening()
-        g_eventBus.addListener(events.LobbyHeaderMenuEvent.MENU_CLICK, self.__onHeaderMenuClick, scope=EVENT_BUS_SCOPE.LOBBY)
 
     def __removeListeners(self):
         self.viewModel.onClose -= self.__onClose
         self.viewModel.scheduleInfo.season.pollServerTime -= self.__onPollServerTime
         self._modeController.onStatusUpdated -= self.__onStatusUpdated
         self.stopGlobalListening()
-        g_eventBus.removeListener(events.LobbyHeaderMenuEvent.MENU_CLICK, self.__onHeaderMenuClick, scope=EVENT_BUS_SCOPE.LOBBY)
 
     def __onStatusUpdated(self, status):
         if comp7_core_model_helpers.isModeForcedDisabled(status, self._modeController):
@@ -109,6 +106,3 @@ class IntroScreen(ViewImpl, IGlobalListener):
 
     def __onPollServerTime(self):
         self._updateData()
-
-    def __onHeaderMenuClick(self, *_):
-        self.destroyWindow()

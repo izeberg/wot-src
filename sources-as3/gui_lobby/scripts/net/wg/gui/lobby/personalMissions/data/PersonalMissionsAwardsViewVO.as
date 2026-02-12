@@ -18,10 +18,6 @@ package net.wg.gui.lobby.personalMissions.data
       
       public var additionalAwards:AdditionalAwardsVO = null;
       
-      public var backBtnLabel:String = "";
-      
-      public var backBtnDescrLabel:String = "";
-      
       public var bgIconSource:String = "";
       
       public function PersonalMissionsAwardsViewVO(param1:Object)

@@ -1,5 +1,6 @@
 from __future__ import absolute_import
-from constants import PREBATTLE_TYPE, QUEUE_TYPE, ARENA_BONUS_TYPE
+from constants import PREBATTLE_TYPE, QUEUE_TYPE
+from fun_random_common.fun_constants import ARENA_BONUS_TYPE
 from fun_random.gui.battle_results.fun_stats_controller import FunBattleResultStatsCtrl
 from fun_random.gui.feature.util.fun_mixins import FunAssetPacksMixin
 from fun_random.gui.impl.lobby.tooltips.fun_random_progression_tooltip_view import FunRandomProgressionTooltipView

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from frameworks.wulf import ViewSettings
 from gui.impl.gen.view_models.views.param_tooltip_model import ParamTooltipModel
 from gui.impl.pub import ViewImpl

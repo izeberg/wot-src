@@ -30,8 +30,6 @@ package net.wg.gui.lobby.settings.feedback.ribbons
       
       public var battleEventsEnemyBurningCheckbox:CheckBox = null;
       
-      public var battleEventsCrewPerksCheckbox:CheckBox = null;
-      
       public function BattleEfficiencyControlsGroupContent()
       {
          super();
@@ -52,7 +50,6 @@ package net.wg.gui.lobby.settings.feedback.ribbons
          this.battleEventsEnemyTrackDamageCheckbox.label = SETTINGS.FEEDBACK_TAB_BATTLEEVENTS_CHECKBOX_ENEMYTRACKDAMAGE;
          this.battleEventsEnemyWorldCollisionCheckbox.label = SETTINGS.FEEDBACK_TAB_BATTLEEVENTS_CHECKBOX_WORLDCOLLISION;
          this.battleEventsEnemyAssistStunCheckbox.label = SETTINGS.FEEDBACK_TAB_BATTLEEVENTS_CHECKBOX_ASSISTSTUN;
-         this.battleEventsCrewPerksCheckbox.label = SETTINGS.FEEDBACK_TAB_BATTLEEVENTS_CHECKBOX_CREWPERKS;
       }
       
       override protected function onDispose() : void
@@ -81,8 +78,6 @@ package net.wg.gui.lobby.settings.feedback.ribbons
          this.battleEventsEnemyWorldCollisionCheckbox = null;
          this.battleEventsEnemyAssistStunCheckbox.dispose();
          this.battleEventsEnemyAssistStunCheckbox = null;
-         this.battleEventsCrewPerksCheckbox.dispose();
-         this.battleEventsCrewPerksCheckbox = null;
          super.onDispose();
       }
    }

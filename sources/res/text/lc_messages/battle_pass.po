@@ -105,7 +105,7 @@ msgid "battlePassAwardsView/footer/bpDescriptionGotStyle"
 msgstr ""
 "В начале каждой главы вы получаете стиль, который сможете улучшать по мере "
 "прохождения главы. Незавершённые стили можно будет улучшить и после "
-"завершения текущего сезона Боевого пропуска."
+"окончания текущего сезона Боевого пропуска."
 
 msgid "battlePassAwardsView/footer/bpInProgressTitle"
 msgstr ""
@@ -225,13 +225,15 @@ msgid "battlePassBuyView/btnCancel"
 msgstr "Назад"
 
 msgid "battlePassBuyView/btnRewards"
-msgstr "Ещё наград: {count}"
+msgstr ""
+"Просмотреть все награды\n"
+"(%(count)s шт.)"
 
 msgid "battlePassBuyView/card/activeChapter/text"
 msgstr "Активная глава"
 
 msgid "battlePassBuyView/card/competePreviousChapter"
-msgstr "Завершите главу {chapter}"
+msgstr "Завершите главу %(chapter)"
 
 msgid "battlePassBuyView/card/currentLevel/text"
 msgstr "Текущий этап"
@@ -272,7 +274,7 @@ msgid "battlePassBuyView/card/timer/time"
 msgstr "Осталось: %(time)s"
 
 msgid "battlePassBuyView/card/title/chapter"
-msgstr "ГЛАВА {chapter}"
+msgstr "ГЛАВА %(chapter)"
 
 msgid "battlePassBuyView/card/title/shopOffer"
 msgstr "ТРИ В ОДНОМ"
@@ -293,8 +295,7 @@ msgstr[1] "Вместе с %(stagesNumber)s этапами"
 msgstr[2] "Вместе с %(stagesNumber)s этапами"
 
 msgid "battlePassBuyView/confirm/description"
-msgstr ""
-"После прохождения всех этапов вы получите награды Улучшенного пропуска:"
+msgstr "Улучшенный пропуск открывает:"
 
 msgid "battlePassBuyView/confirm/descriptionCheckboxChecked"
 msgstr "Вы сразу же получите все награды главы:"
@@ -305,6 +306,25 @@ msgstr "Стоимость Улучшенного пропуска:"
 msgid "battlePassBuyView/confirm/priceWithLevels"
 msgstr "Стоимость Улучшенного пропуска и этапов:"
 
+msgid "battlePassBuyView/confirm/shopOfferBlock/buy"
+msgstr "Просмотреть предложения"
+
+msgid "battlePassBuyView/confirm/shopOfferBlock/description"
+msgstr ""
+"Предложение доступно, пока Улучшенный пропуск\n"
+"не куплен ни для одной главы."
+
+msgid "battlePassBuyView/confirm/shopOfferBlock/headline"
+msgstr "%(count)s в 1"
+
+msgid "battlePassBuyView/confirm/shopOfferBlock/packsAmount"
+msgstr "x%(amount)s"
+
+msgid "battlePassBuyView/confirm/shopOfferBlock/title"
+msgstr ""
+"Улучшенный пропуск\n"
+"для всех глав сезона"
+
 msgid "battlePassBuyView/confirm/shopOfferLinkText"
 msgstr "предложением"
 
@@ -313,20 +333,26 @@ msgstr ""
 "При покупке Улучшенного пропуска для определённой главы вы не сможете "
 "воспользоваться %(link)s."
 
+msgid "battlePassBuyView/confirm/starterPack/description"
+msgstr "Бонус %(purchaseText)s"
+
+msgid "battlePassBuyView/confirm/starterPack/purchaseText"
+msgstr "при покупке:"
+
 msgid "battlePassBuyView/confirm/subTitle/finished"
 msgstr ""
 "Даёт возможность получить улучшенные награды за пройденные этапы Боевого "
-"пропуска в главе {chapter}."
+"пропуска в главе %(chapter)."
 
 msgid "battlePassBuyView/confirm/subTitle/inProgress"
 msgstr ""
-"Даёт возможность получить улучшенные награды за каждый пройденный и "
-"последующие этапы Боевого пропуска в главе {chapter}."
+"Даёт возможность получить улучшенные награды за все пройденные и последующие"
+" этапы Боевого пропуска в главе %(chapter)."
 
 msgid "battlePassBuyView/confirm/subTitle/notStarted"
 msgstr ""
 "Даёт возможность получить улучшенные награды за каждый пройденный этап "
-"Боевого пропуска в главе {chapter}."
+"Боевого пропуска в главе %(chapter)."
 
 msgid "battlePassBuyView/confirm/title"
 msgstr "КУПИТЬ УЛУЧШЕННЫЙ ПРОПУСК"
@@ -347,9 +373,6 @@ msgstr "Открывает доступ к улучшенным наградам
 
 msgid "battlePassBuyView/levelsSelected"
 msgstr "Выбранные этапы:"
-
-msgid "battlePassBuyView/multicurrencyPrice"
-msgstr "Стоимость покупки:"
 
 msgid "battlePassBuyView/price"
 msgstr "Стоимость покупки:"
@@ -396,7 +419,7 @@ msgstr ""
 "прогрессии."
 
 msgid "battlePassBuyView/title"
-msgstr "УЛУЧШЕННЫЙ ПРОПУСК"
+msgstr "ПОКУПКА УЛУЧШЕННОГО ПРОПУСКА"
 
 msgid "battlePassStatus/activateChapter"
 msgstr "Активировать главу Боевого пропуска"
@@ -428,14 +451,17 @@ msgstr "Песнь о зубре"
 msgid "chapter/fullName/1114"
 msgstr "Песнь о зубре"
 
-msgid "chapter/fullName/181"
-msgstr "В активной зоне"
+msgid "chapter/fullName/190"
+msgstr "Тропа престижа"
 
-msgid "chapter/fullName/182"
-msgstr "Проект Überpanzer"
+msgid "chapter/fullName/191"
+msgstr "Наследник"
 
-msgid "chapter/fullName/183"
-msgstr "Механический импульс"
+msgid "chapter/fullName/192"
+msgstr "Специалист"
+
+msgid "chapter/fullName/193"
+msgstr "Разведчик"
 
 msgid "chapter/fullNameUppercased/10021"
 msgstr "ПЕСНЬ О ЗУБРЕ"
@@ -443,26 +469,44 @@ msgstr "ПЕСНЬ О ЗУБРЕ"
 msgid "chapter/fullNameUppercased/1114"
 msgstr "ПЕСНЬ О ЗУБРЕ"
 
-msgid "chapter/fullNameUppercased/181"
-msgstr "В АКТИВНОЙ ЗОНЕ"
+msgid "chapter/fullNameUppercased/191"
+msgstr "НАСЛЕДНИК"
 
-msgid "chapter/fullNameUppercased/182"
-msgstr "ПРОЕКТ ÜBERPANZER"
+msgid "chapter/fullNameUppercased/192"
+msgstr "СПЕЦИАЛИСТ"
 
-msgid "chapter/fullNameUppercased/183"
-msgstr "МЕХАНИЧЕСКИЙ ИМПУЛЬС"
+msgid "chapter/fullNameUppercased/193"
+msgstr "РАЗВЕДЧИК"
 
 msgid "chapter/title"
 msgstr "ГЛАВА «%(chapter)s»"
 
-msgid "chapterChoice/activeTitle"
-msgstr "ГЛАВЫ СЕЗОНА"
+msgid "chapterChoice/about"
+msgstr "О БОЕВОМ ПРОПУСКЕ"
+
+msgid "chapterChoice/activeChapter/postprogression/text"
+msgstr "Активно"
+
+msgid "chapterChoice/activeChapter/text"
+msgstr "Активная глава"
 
 msgid "chapterChoice/chapterCompleted"
 msgstr "Глава пройдена"
 
-msgid "chapterChoice/completed"
-msgstr "Пройдено"
+msgid "chapterChoice/chapterInfo/buttons/toChapter"
+msgstr "К главе"
+
+msgid "chapterChoice/chapterInfo/buttons/toCrewMembers"
+msgstr "Просмотреть членов экипажа"
+
+msgid "chapterChoice/chapterInfo/buttons/toPostProgression"
+msgstr "К прогрессии"
+
+msgid "chapterChoice/chapterInfo/deadline/date"
+msgstr "Продлится до %(endDate)s"
+
+msgid "chapterChoice/chapterInfo/deadline/time"
+msgstr "Завершится %(endTime)s"
 
 msgid "chapterChoice/confirmation/button/cancel"
 msgstr "Отменить"
@@ -497,54 +541,70 @@ msgstr "Переключиться на главу «%(chName)s»?"
 msgid "chapterChoice/crewMember/reward"
 msgstr "Члены экипажа"
 
+msgid "chapterChoice/crewMember/reward/subTitle"
+msgstr "и другие члены экипажа"
+
+msgid "chapterChoice/eliteCircuit/reward/subTitle"
+msgstr "в циклической прогрессии"
+
+msgid "chapterChoice/eliteCircuit/reward/title"
+msgstr "Боны, монеты и ваучеры"
+
 msgid "chapterChoice/extraChapter/reward"
 msgstr "Премиум техника"
 
-msgid "chapterChoice/freePoints/description"
-msgstr "Нераспределённые очки Боевого пропуска: "
+msgid "chapterChoice/freePoints/text"
+msgstr "Нераспределённые очки"
 
-msgid "chapterChoice/freePoints/tooltip/description"
+msgid "chapterChoice/freePoints/tooltip/body"
 msgstr ""
-"Очки накапливаются по мере прохождения Боевого пропуска, даже если глава не "
-"выбрана. Выберите главу, и накопленные очки будут зачислены в её прогрессию."
+"Очки накапливаются при прохождении Боевого пропуска, даже если не "
+"активирована ни одна глава. При активации главы все очки будут начислены в "
+"её прогрессию."
 
-msgid "chapterChoice/freePoints/tooltip/title"
+msgid "chapterChoice/freePoints/tooltip/header"
 msgstr "Нераспределённые очки Боевого пропуска"
 
-msgid "chapterChoice/postProgression/button/text"
-msgstr "ТРОПА ПРЕСТИЖА"
-
-msgid "chapterChoice/postProgression/text"
+msgid "chapterChoice/postprogression/locked"
 msgstr ""
-"Становится доступна после завершения всех глав. Глав завершено: "
-"%(completedChaptersCount)/%(chaptersCount)"
+"Чтобы открыть, завершите\n"
+"все {{count}} главы сезона"
+
+msgid "chapterChoice/postprogression/name"
+msgstr "Тропа престижа"
+
+msgid "chapterChoice/postprogression/unlocked/cycle"
+msgstr "Цикл %(cycle)s"
 
 msgid "chapterChoice/premiumVehicle/reward"
 msgstr "Премиум машина"
 
-msgid "chapterChoice/stylePreview/backLabel"
-msgstr "К ГЛАВАМ"
+msgid "chapterChoice/stages/additional"
+msgstr " / %(level)s Этапов"
 
-msgid "chapterChoice/stylePreview/extraLabel"
+msgid "chapterChoice/stages/complete/improved"
+msgstr "Улучшена и завершена"
+
+msgid "chapterChoice/stages/complete/unimproved"
+msgstr "И ещё %(count)s наград внутри"
+
+msgid "chapterChoice/stylePreview/reward/subTitle"
+msgstr "для %(vehicleName)s"
+
+msgid "chapterChoice/stylePreview/reward/title"
+msgstr "3D-стиль «%(styleName)s»"
+
+msgid "chapterChoice/vehicle/reward/subTitle"
 msgstr "%(vehicleName)s"
 
-msgid "chapterChoice/stylePreview/forLabel"
-msgstr "Для %(vehicleName)s"
+msgid "chapterChoice/vehicle/reward/title"
+msgstr "Премиум машина"
 
-msgid "chapterChoice/stylePreview/label"
-msgstr "Предпросмотр"
+msgid "chapterChoice/vehicleStyle/reward/subTitle"
+msgstr "и 3D-стиль «%(styleName)s»"
 
-msgid "chapterChoice/stylePreview/name"
-msgstr "Стиль «%(styleName)s»"
-
-msgid "chapterChoice/tankman/description"
-msgstr "Все члены экипажа соответствуют определённым главам."
-
-msgid "chapterChoice/title"
-msgstr "ВЫБЕРИТЕ ГЛАВУ"
-
-msgid "chapterChoice/vehicleInHangar/tooltip/text"
-msgstr "В Ангаре"
+msgid "chapterChoice/vehicleStyle/reward/title"
+msgstr "%(vehicleName)s"
 
 msgid "chapterStatus/notSelected"
 msgstr "Глава не выбрана"
@@ -763,6 +823,9 @@ msgstr "На ключевой технике сезона вы зарабаты�
 msgid "howToEarnPoints/card/specialVehicle/title"
 msgstr "Ключевая техника сезона"
 
+msgid "howToEarnPoints/conditions"
+msgstr "{{icon}}Условия получения"
+
 msgid "howToEarnPoints/description"
 msgstr ""
 "Очки Боевого пропуска нужны для последовательного прохождения этапов. Их "
@@ -770,20 +833,33 @@ msgstr ""
 "активны во время Боевого пропуска, за выполнение боевых и ежедневных задач, "
 "а также единоразово за достижение лимита очков на конкретной машине."
 
+msgid "howToEarnPoints/earned"
+msgstr "{{icon}}"
+
 msgid "howToEarnPoints/lose/1"
-msgstr "Поражение/Ничья"
+msgstr "Ничья или поражение"
 
 msgid "howToEarnPoints/lose/22"
-msgstr "Поражение/Ничья"
+msgstr "Ничья или поражение"
 
 msgid "howToEarnPoints/lose/27"
 msgstr "Поражение"
 
 msgid "howToEarnPoints/lose/43"
-msgstr "Поражение/Ничья"
+msgstr "Ничья или поражение"
 
 msgid "howToEarnPoints/lose/49"
-msgstr "Поражение/Ничья"
+msgstr "Ничья или поражение"
+
+msgid "howToEarnPoints/plusBanner/line1"
+msgstr ""
+"{{@ style (color $color)}}Боевой пропуск «Плюс»:{{/}} Доступно с {{link}}"
+
+msgid "howToEarnPoints/plusBanner/line2"
+msgstr "Получайте очки Боевого пропуска (кроме специальных глав)."
+
+msgid "howToEarnPoints/plusBanner/link"
+msgstr "WoT Plus Pro"
 
 msgid "howToEarnPoints/rangeLevels/29"
 msgstr "Места %(startLevel)d–%(endLevel)d"
@@ -878,7 +954,7 @@ msgid "navigation/buyLevelsRewards"
 msgstr "ЭТАПНЫЕ НАГРАДЫ"
 
 msgid "navigation/buyPass"
-msgstr "УЛУЧШЕННЫЙ ПРОПУСК"
+msgstr "ПОКУПКА УЛУЧШЕННОГО ПРОПУСКА"
 
 msgid "navigation/buyPassConfirm"
 msgstr "ПОКУПКА УЛУЧШЕННОГО ПРОПУСКА"
@@ -931,7 +1007,8 @@ msgid "postProgressionView/footer/purchaseIP/button/text"
 msgstr "Приобрести"
 
 msgid "postProgressionView/header/description/active"
-msgstr "Зарабатывайте очки в боях и получайте ещё больше наград"
+msgstr ""
+"Зарабатывайте очки в бою, чтобы получить боны и ваучеры в качестве награды."
 
 msgid "postProgressionView/header/description/onPause/highlight"
 msgstr "ПАУЗА."
@@ -1006,6 +1083,11 @@ msgid "progression/battlePassBuyDescr"
 msgstr ""
 "Улучшенный пропуск разблокирует линейку улучшенных наград для текущей главы."
 
+msgid "progression/battlePassBuyDescrStarterPack"
+msgstr ""
+"Открывайте улучшенные награды\n"
+"и получите бонус"
+
 msgid "progression/battlePassBuyHolidayDescr"
 msgstr "Улучшенный пропуск разблокирует линейку улучшенных наград."
 
@@ -1024,7 +1106,7 @@ msgstr ""
 msgid "progression/btnExtrasTooltip"
 msgstr ""
 "Завершайте этапы, и со временем вам откроются новые материалы. Открыто "
-"материалов: {opened} / {total}."
+"материалов: %(opened) / %(total)."
 
 msgid "progression/btnNoExtrasTooltip"
 msgstr "Завершайте этапы и открывайте новые материалы."
@@ -1051,7 +1133,7 @@ msgstr ""
 msgid "progression/btnTokensStoreTooltip"
 msgstr ""
 "Нажмите, чтобы посмотреть ценные товары за жетоны Боевого пропуска.\n"
-"Жетонов в наличии: {bpcoinCount}."
+"Жетонов в наличии: %(bpcoinCount)."
 
 msgid "progression/chapterText"
 msgstr "ГЛАВА %(chapter)s: «%(chapterName)s»"
@@ -1132,17 +1214,17 @@ msgstr "и 3D-стиль «%(styleName)s»"
 msgid "progression/extraChapterWidget/voiceoverTooltip"
 msgstr "Нажмите, чтобы прослушать голос члена экипажа."
 
-msgid "progression/footer/freePointsDescr"
-msgstr "Нераспределённых очков Боевого пропуска: "
-
-msgid "progression/footer/multicurrencyTooltip"
-msgstr "Можно купить за золото или свободный опыт."
+msgid "progression/footer/starter_pack/equal"
+msgstr "="
 
 msgid "progression/footer/status/inactive"
 msgstr "Глава неактивна"
 
 msgid "progression/footer/status/paused"
 msgstr "Глава на паузе."
+
+msgid "progression/freePointsDescr"
+msgstr "Нераспределённых очков Боевого пропуска: "
 
 msgid "progression/header/chapter/status"
 msgstr "Глава «%(chapterName)s»"
@@ -1168,13 +1250,13 @@ msgstr ""
 "ВСЕ ЭТАПЫ"
 
 msgid "progression/progressionChapterArrow"
-msgstr "ГЛАВЕ {chapter}"
+msgstr "ГЛАВА %(chapter)"
 
 msgid "progression/progressionChapterGoTo"
 msgstr "ПЕРЕЙТИ К"
 
 msgid "progression/season/end/normal"
-msgstr "%(seasonNum)s сезон: «%(seasonName)s» продлится до %(endDate)s"
+msgstr "Cезон %(seasonNum)s: «%(seasonName)s» продлится до %(endDate)s"
 
 msgid "progression/season/end/special"
 msgstr "Продлится до: %(endTime)s"
@@ -1192,7 +1274,7 @@ msgid "progression/universalCommander"
 msgstr "Универсальный член экипажа"
 
 msgid "progression/widget3dStyle/currentStyle"
-msgstr "Стиль «{name}»"
+msgstr "Стиль «%(name)»"
 
 msgid "progression/widget3dStyle/forVehicle"
 msgstr "Для "
@@ -1285,14 +1367,14 @@ msgstr "БОЕВОЙ ПРОПУСК. ГЛАВА «%(chapter)s», ЭТАП %(leve
 msgid "season/fullName/1002"
 msgstr "Песнь о зубре"
 
-msgid "season/fullName/18"
-msgstr "Путь к совершенству"
+msgid "season/fullName/19"
+msgstr "Операция «Борей»"
 
 msgid "season/fullNameUppercased/1002"
 msgstr "ПЕСНЬ О ЗУБРЕ"
 
-msgid "season/fullNameUppercased/18"
-msgstr "ПУТЬ К СОВЕРШЕНСТВУ"
+msgid "season/fullNameUppercased/19"
+msgstr "ОПЕРАЦИЯ «БОРЕЙ»"
 
 msgid "selectBonus/battle_booster_gift"
 msgstr "Инструкции на выбор"
@@ -1358,7 +1440,7 @@ msgstr ""
 msgid "tankmenVoiceover/free"
 msgstr ""
 "В базовых наградах\n"
-"на этапе %(progressNumber)s"
+" на этапе %(progressNumber)s"
 
 msgid "tankmenVoiceover/inShop"
 msgstr "В составе набора"
@@ -1369,7 +1451,7 @@ msgstr "Доступно ещё %(availableCount)s из %(count)s"
 msgid "tankmenVoiceover/paid"
 msgstr ""
 "В улучшенных наградах\n"
-"на этапе %(progressNumber)s"
+" на этапе %(progressNumber)s"
 
 msgid "tankmenVoiceover/questChain"
 msgstr "В цепочке боевых задач"
@@ -1648,7 +1730,7 @@ msgid "tooltips/inProgress/battleRoyale"
 msgstr "«Стальной охотник»"
 
 msgid "tooltips/inProgress/chapter"
-msgstr "Глава «{name}»"
+msgstr "Глава «%(name)»"
 
 msgid "tooltips/inProgress/epic"
 msgstr "«Линия фронта»"
@@ -1690,11 +1772,19 @@ msgstr ""
 msgid "tooltips/inProgress/playGame/ranked"
 msgstr "Правила начисления очков в Ранговых боях на технике X уровня."
 
+msgid "tooltips/inProgress/playGame/winback"
+msgstr ""
+"Правила начисления очков в режиме %(bond_Open)s«Случайный бой: "
+"Разминка»%(bond_Close)s на технике IV–XI уровней."
+
 msgid "tooltips/inProgress/postProgression/header"
 msgstr "Тропа престижа"
 
 msgid "tooltips/inProgress/timeLeft"
-msgstr "Осталось:"
+msgstr "До конца Боевого пропуска"
+
+msgid "tooltips/inProgress/wotPlusProFooter"
+msgstr "С подпиской WoT Plus Pro"
 
 msgid "tooltips/notChosen/description"
 msgstr ""
@@ -1712,6 +1802,12 @@ msgstr "Боевой пропуск"
 
 msgid "tooltips/notStarted/date"
 msgstr "%(day)s %(month)s"
+
+msgid "tooltips/plusBanner/text"
+msgstr ""
+"{{@ style (color $color1)}}Боевой пропуск «Плюс»:{{/}} Доступно с {{@ style "
+"(color $color2)}}WoT Plus Pro{{/}}. Получайте больше очков Боевого пропуска "
+"(кроме специальных глав)."
 
 msgid "tooltips/points/footer"
 msgstr ""
@@ -1734,17 +1830,20 @@ msgstr ""
 msgid "tooltips/points/title"
 msgstr "Очки Боевого пропуска"
 
+msgid "tooltips/pointsTable/header"
+msgstr "Условия получения"
+
 msgid "tooltips/pointsTable/lose"
-msgstr "За поражение/ничью"
+msgstr "Ничья или поражение"
 
 msgid "tooltips/pointsTable/loseWithoutDraw"
-msgstr "За поражение"
+msgstr "Поражение"
 
 msgid "tooltips/pointsTable/place"
-msgstr "{place} место"
+msgstr "%(place) место"
 
 msgid "tooltips/pointsTable/places"
-msgstr "{place} места"
+msgstr "%(place) места"
 
 msgid "tooltips/pointsTable/solo"
 msgstr "Соло"
@@ -1753,17 +1852,17 @@ msgid "tooltips/pointsTable/squad"
 msgstr "Взвод"
 
 msgid "tooltips/pointsTable/topPlace"
-msgstr "Топ-{place} по опыту"
+msgstr "Топ-%(place) по опыту"
 
 msgid "tooltips/pointsTable/win"
-msgstr "За победу"
+msgstr "Победа"
 
 msgid "tooltips/postProgress/body"
 msgstr ""
-"Элитная часть прогрессии начинается после завершения {maxLevelBase}-го этапа"
-" основной части и даёт возможность регулярно зарабатывать ценную игровую "
-"валюту. Продвижение по этапам элитной части прогрессии не требует наличия "
-"улучшенного пропуска."
+"Элитная часть прогрессии начинается после прохождения %(maxLevelBase)-го "
+"этапа основной части и даёт возможность регулярно зарабатывать ценную "
+"игровую валюту. Для продвижение по этапам элитной части прогрессии "
+"Улучшенный пропуск не нужен."
 
 msgid "tooltips/postProgress/header"
 msgstr "Элитная часть прогрессии"
@@ -1775,7 +1874,7 @@ msgid "tooltips/prestigePoints/loseWithoutDraw"
 msgstr "Поражение"
 
 msgid "tooltips/prestigePoints/topPlace"
-msgstr "Топ-{place} по очкам престижа"
+msgstr "Топ-%(place) по очкам престижа"
 
 msgid "tooltips/prestigePoints/win"
 msgstr "Победа"
@@ -1812,7 +1911,7 @@ msgid "tooltips/styleUpgrade/chosen/text"
 msgstr "Улучшает стиль главы до %(level) %(levelWord)"
 
 msgid "tooltips/styleUpgrade/chosen/title"
-msgstr "Улучшение стиля «{styleName}»"
+msgstr "Улучшение стиля «%(styleName)»"
 
 msgid "tooltips/styleUpgrade/notChosen/text"
 msgstr ""

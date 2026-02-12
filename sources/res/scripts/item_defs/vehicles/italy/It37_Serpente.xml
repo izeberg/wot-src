@@ -3478,9 +3478,12 @@
 					</aimingTime>
 					<multiGunEffects>shot_dualgun1_large_mb_L shot_dualgun1_large_mb_R</multiGunEffects>
 					<dualGun>
-						<chargeTime>2</chargeTime>
+						<chargeTime>
+							2.5
+							<!--BW_String-->
+						</chargeTime>
 						<shootImpulse>200</shootImpulse>
-						<reloadLockTime>2</reloadLockTime>
+						<reloadLockTime>3</reloadLockTime>
 						<reloadTimes>13 13</reloadTimes>
 						<rateTime>8</rateTime>
 						<chargeThreshold>

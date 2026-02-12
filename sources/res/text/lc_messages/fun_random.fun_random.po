@@ -404,203 +404,203 @@ msgstr "?empty?"
 msgid "modes/development/userName"
 msgstr "?empty?"
 
-msgid "modes/fep_new_year_2025/banner/progression/finish"
+msgid "modes/fall_tanks/banner/progression/finish"
 msgstr "Все этапы пройдены"
 
-msgid "modes/fep_new_year_2025/banner/progression/resettable"
+msgid "modes/fall_tanks/banner/progression/resettable"
 msgstr "Обновлённая прогрессия"
 
-msgid "modes/fep_new_year_2025/capsUserName"
-msgstr "АРКАДА"
+msgid "modes/fall_tanks/capsUserName"
+msgstr "СИЯНИЕ НЕОНА"
 
-msgid "modes/fep_new_year_2025/detailedUserName"
-msgstr "%(modeName)s: %(subModeName)s"
+msgid "modes/fall_tanks/detailedUserName"
+msgstr "%(modeName)s"
 
-msgid "modes/fep_new_year_2025/entryPoint/inProgress/description"
-msgstr "В бой!"
+msgid "modes/fall_tanks/entryPoint/inProgress/description"
+msgstr "Финишная черта ждёт!"
 
-msgid "modes/fep_new_year_2025/entryPoint/intro/description"
-msgstr "Врывайтесь в сражения!"
+msgid "modes/fall_tanks/entryPoint/intro/description"
+msgstr "Готовы к гонкам?"
 
-msgid "modes/fep_new_year_2025/entryPoint/tooltip/description"
+msgid "modes/fall_tanks/entryPoint/tooltip/description"
 msgstr ""
-"События «Аркады» — это ограниченные по времени активности, которые "
-"переворачивают игровой процесс с ног на голову. Сражайтесь в специальных "
-"режимах, меняющих привычные правила игры, выполняйте задачи и получайте "
-"редкие награды."
+"«Сияние неона» — уникальное временное событие, которое предлагает совершенно"
+" новый опыт! Участвуйте в гонках на опасных трассах, выполняйте задачи и "
+"получайте награды."
 
-msgid ""
-"modes/fep_new_year_2025/entryPoint/tooltip/performance/highRisk/description"
+msgid "modes/fall_tanks/entryPoint/tooltip/performance/highRisk/description"
 msgstr ""
 "Режим требователен к компьютеру. Карта может долго загружаться, возможны "
 "проблемы с графикой и перемещением техники в бою. В случае недостаточной "
-"производительности, попробуйте понизить настройки графики."
+"производительности попробуйте понизить настройки графики."
 
-msgid "modes/fep_new_year_2025/entryPoint/tooltip/performance/highRisk/header"
+msgid "modes/fall_tanks/entryPoint/tooltip/performance/highRisk/header"
 msgstr "Возможно снижение производительности"
 
-msgid ""
-"modes/fep_new_year_2025/entryPoint/tooltip/performance/mediumRisk/description"
+msgid "modes/fall_tanks/entryPoint/tooltip/performance/mediumRisk/description"
 msgstr ""
 "Режим требователен к компьютеру. Карта может долго загружаться, возможны "
 "проблемы с графикой и перемещением техники в бою. В случае недостаточной "
-"производительности, попробуйте понизить настройки графики."
+"производительности попробуйте понизить настройки графики."
 
-msgid ""
-"modes/fep_new_year_2025/entryPoint/tooltip/performance/mediumRisk/header"
+msgid "modes/fall_tanks/entryPoint/tooltip/performance/mediumRisk/header"
 msgstr "Возможно снижение производительности"
 
-msgid "modes/fep_new_year_2025/lootbox/fep_epic"
+msgid "modes/fall_tanks/lootbox/fep_epic"
 msgstr "Случайная эпическая награда"
 
-msgid "modes/fep_new_year_2025/lootbox/fep_legendary"
+msgid "modes/fall_tanks/lootbox/fep_legendary"
 msgstr "Случайная легендарная награда"
 
-msgid "modes/fep_new_year_2025/lootbox/fep_ordinary"
+msgid "modes/fall_tanks/lootbox/fep_ordinary"
 msgstr "Случайная обычная награда"
 
-msgid "modes/fep_new_year_2025/lootbox/fep_rare"
+msgid "modes/fall_tanks/lootbox/fep_rare"
 msgstr "Случайная редкая награда"
 
-msgid "modes/fep_new_year_2025/lootbox/fep_unusual"
+msgid "modes/fall_tanks/lootbox/fep_unusual"
 msgstr "Случайная необычная награда"
 
-msgid "modes/fep_new_year_2025/metaProgressionTooltip/header/active"
-msgstr "Задача Аркады. Этап: %(done)s{par_Open}/%(total)s{par_Close}"
+msgid "modes/fall_tanks/metaProgressionTooltip/header/active"
+msgstr ""
+"Задача режима «Сияние неона». Этап: %(done)s{par_Open}/%(total)s{par_Close}"
 
-msgid "modes/fep_new_year_2025/metaProgressionTooltip/reward/tip"
+msgid "modes/fall_tanks/metaProgressionTooltip/reward/tip"
+msgstr "Прогресс засчитывается в любой гонке режима «Сияние неона»."
+
+msgid "modes/fall_tanks/metaProgressionTooltip/subheader"
+msgstr "Задача режима «Сияние неона»"
+
+msgid "modes/fall_tanks/modeSubSelector/progression/info"
 msgstr "Прогресс выполнения засчитывается в любом подрежиме Аркады."
 
-msgid "modes/fep_new_year_2025/metaProgressionTooltip/subheader"
-msgstr "Задача Аркады"
-
-msgid "modes/fep_new_year_2025/modeSubSelector/progression/info"
-msgstr "Прогресс выполнения засчитывается в любом подрежиме Аркады."
-
-msgid "modes/fep_new_year_2025/modeSubSelector/progression/timer"
+msgid "modes/fall_tanks/modeSubSelector/progression/timer"
 msgstr "до новой задачи Аркады"
 
-msgid "modes/fep_new_year_2025/mode_selector/description"
-msgstr "Экспериментальные бои по нестандартным правилам."
+msgid "modes/fall_tanks/mode_selector/battleCondition"
+msgstr "15–30"
 
-msgid "modes/fep_new_year_2025/mode_selector/performance/highRisk/description"
+msgid "modes/fall_tanks/mode_selector/description"
+msgstr "Пробейтесь к финишу в гоночной королевской битве."
+
+msgid "modes/fall_tanks/mode_selector/levelCondition"
+msgstr "{parSecondary_open}I{parSecondary_close} Все уровни"
+
+msgid "modes/fall_tanks/mode_selector/performance/highRisk/description"
 msgstr ""
-"Режим требователен к компьютеру. Карта может долго загружаться, возможны "
-"проблемы с графикой и перемещением техники в бою. В случае недостаточной "
-"производительности, попробуйте понизить настройки графики."
+"При низких настройках могут появляться графические артефакты и другие "
+"проблемы. Для лучшего качества рекомендуется выбрать высокие настройки, если"
+" ваш компьютер соответствует требованиям. Режим требователен к компьютеру. "
+"Возможно снижение FPS при интенсивных боевых действиях."
 
-msgid "modes/fep_new_year_2025/mode_selector/performance/highRisk/header"
-msgstr "Возможно снижение производительности"
+msgid "modes/fall_tanks/mode_selector/performance/highRisk/header"
+msgstr "Рекомендуется использовать высокие настройки графики"
 
-msgid "modes/fep_new_year_2025/mode_selector/performance/highRisk/headerIcon"
-msgstr "%(icon) Возможно снижение производительности"
+msgid "modes/fall_tanks/mode_selector/performance/highRisk/headerIcon"
+msgstr "%(icon) Рекомендуется использовать высокие настройки графики"
 
-msgid ""
-"modes/fep_new_year_2025/mode_selector/performance/mediumRisk/description"
+msgid "modes/fall_tanks/mode_selector/performance/mediumRisk/description"
 msgstr ""
-"Режим требователен к компьютеру. Карта может долго загружаться, возможны "
-"проблемы с графикой и перемещением техники в бою. В случае недостаточной "
-"производительности, попробуйте понизить настройки графики."
+"При низких настройках могут появляться графические артефакты и другие "
+"проблемы. Для лучшего качества рекомендуется выбрать высокие настройки, если"
+" ваш компьютер соответствует требованиям. Режим требователен к компьютеру. "
+"Возможно снижение FPS при интенсивных боевых действиях."
 
-msgid "modes/fep_new_year_2025/mode_selector/performance/mediumRisk/header"
-msgstr "Возможно снижение производительности"
+msgid "modes/fall_tanks/mode_selector/performance/mediumRisk/header"
+msgstr "Рекомендуется использовать высокие настройки графики"
 
-msgid ""
-"modes/fep_new_year_2025/mode_selector/performance/mediumRisk/headerIcon"
-msgstr "%(icon) Возможно снижение производительности"
+msgid "modes/fall_tanks/mode_selector/performance/mediumRisk/headerIcon"
+msgstr "%(icon) Рекомендуется использовать высокие настройки графики"
 
-msgid "modes/fep_new_year_2025/mode_selector/progression/resettable"
-msgstr "До новой задачи Аркады"
+msgid "modes/fall_tanks/mode_selector/progression/resettable"
+msgstr "До новой задачи режима «Сияние неона»"
 
-msgid "modes/fep_new_year_2025/notification/finishSubModes/withProgression"
+msgid "modes/fall_tanks/notification/finishSubModes/withProgression"
 msgstr "Подрежим %(subModeName)s завершён: прогрессия сброшена."
 
-msgid "modes/fep_new_year_2025/notification/finishSubModes/withoutProgression"
+msgid "modes/fall_tanks/notification/finishSubModes/withoutProgression"
 msgstr "Подрежим %(subModeName)s завершён."
 
-msgid "modes/fep_new_year_2025/notification/newSubModes/withProgression"
+msgid "modes/fall_tanks/notification/newSubModes/withProgression"
 msgstr "Доступны новые награды и подрежим %(subModeName)s."
 
-msgid "modes/fep_new_year_2025/notification/newSubModes/withoutProgression"
+msgid "modes/fall_tanks/notification/newSubModes/withoutProgression"
 msgstr "Доступен новый подрежим — %(subModeName)s."
 
-msgid "modes/fep_new_year_2025/notification/switchOffSubModes"
+msgid "modes/fall_tanks/notification/switchOffSubModes"
 msgstr "Подрежим %(subModeName)s недоступен: ведутся технические работы."
 
-msgid "modes/fep_new_year_2025/notification/switchOnSubModes"
+msgid "modes/fall_tanks/notification/switchOnSubModes"
 msgstr "Подрежим %(subModeName)s снова доступен."
 
-msgid "modes/fep_new_year_2025/progression/cardsFan/listOfRandomRewards"
+msgid "modes/fall_tanks/progression/cardsFan/listOfRandomRewards"
 msgstr "Список наград"
 
-msgid "modes/fep_new_year_2025/progression/complete/congratulations"
+msgid "modes/fall_tanks/progression/complete/congratulations"
 msgstr "Поздравляем!"
 
-msgid "modes/fep_new_year_2025/progression/complete/title"
+msgid "modes/fall_tanks/progression/complete/title"
 msgstr "Вы завершили прогрессию"
 
-msgid "modes/fep_new_year_2025/progression/infinite/congratulations"
+msgid "modes/fall_tanks/progression/infinite/congratulations"
 msgstr "Поздравляем!"
 
-msgid "modes/fep_new_year_2025/progression/infinite/infinityStep"
-msgstr "Повторяемый этап"
+msgid "modes/fall_tanks/progression/infinite/infinityStep"
+msgstr "Бесконечная постпрогрессия"
 
-msgid "modes/fep_new_year_2025/progression/infinite/mainProgressionFinished"
+msgid "modes/fall_tanks/progression/infinite/mainProgressionFinished"
 msgstr "Вы завершили основную прогрессию"
 
-msgid ""
-"modes/fep_new_year_2025/progression/questsList/quest/infinityStageProgress"
-msgstr "Получите столько наград, сколько сможете:"
+msgid "modes/fall_tanks/progression/questsList/quest/infinityStageProgress"
+msgstr "Выполняйте этот этап без ограничений."
 
-msgid "modes/fep_new_year_2025/progression/questsList/totalPointsEarned"
+msgid "modes/fall_tanks/progression/questsList/totalPointsEarned"
 msgstr "Заработано очков: {{progressionSteps}}"
 
 msgid ""
-"modes/fep_new_year_2025/progression/questsList/totalPointsEarnedStandAloneTitle"
+"modes/fall_tanks/progression/questsList/totalPointsEarnedStandAloneTitle"
 msgstr "Заработано очков:"
 
-msgid "modes/fep_new_year_2025/progression/title"
-msgstr "ЗАДАЧИ «АРКАДЫ»"
+msgid "modes/fall_tanks/progression/title"
+msgstr "ЗАДАЧИ РЕЖИМА «СИЯНИЕ НЕОНА»"
 
-msgid "modes/fep_new_year_2025/rewardsView/header"
+msgid "modes/fall_tanks/rewardsView/header"
 msgstr "ПОЛУЧЕНА ЛЕГЕНДАРНАЯ НАГРАДА"
 
-msgid "modes/fep_new_year_2025/scheduler/notification/available"
-msgstr "Бои режима %(subModeName)s снова доступны."
+msgid "modes/fall_tanks/scheduler/notification/available"
+msgstr "%(subModeName)s снова доступно."
 
-msgid "modes/fep_new_year_2025/scheduler/notification/available/title"
-msgstr "Режим прекращения огня"
+msgid "modes/fall_tanks/scheduler/notification/available/title"
+msgstr "Пит-стоп"
 
-msgid "modes/fep_new_year_2025/scheduler/notification/modeEnded"
-msgstr "Бои режима %(subModeName)s завершены."
+msgid "modes/fall_tanks/scheduler/notification/modeEnded"
+msgstr "%(subModeName)s завершено."
 
-msgid "modes/fep_new_year_2025/scheduler/notification/modeEnded/title"
-msgstr "Режим прекращения огня"
+msgid "modes/fall_tanks/scheduler/notification/modeEnded/title"
+msgstr "Пит-стоп"
 
-msgid "modes/fep_new_year_2025/scheduler/notification/primeTime"
-msgstr ""
-"Бои события %(subModeName)s недоступны до окончания режима прекращения огня."
+msgid "modes/fall_tanks/scheduler/notification/primeTime"
+msgstr "Время пит-стопа! Гонки в режиме %(subModeName)s временно недоступны."
 
-msgid "modes/fep_new_year_2025/scheduler/notification/primeTime/title"
-msgstr "Режим прекращения огня"
+msgid "modes/fall_tanks/scheduler/notification/primeTime/title"
+msgstr "Пит-стоп"
 
-msgid "modes/fep_new_year_2025/tierList/description"
+msgid "modes/fall_tanks/tierList/description"
 msgstr ""
 "Каждая случайная награда — это один предмет из списка ниже, который вы "
 "можете получить с определённой вероятностью."
 
-msgid "modes/fep_new_year_2025/tierList/title"
+msgid "modes/fall_tanks/tierList/title"
 msgstr "Что внутри?"
 
-msgid "modes/fep_new_year_2025/tooltip/filter/body"
-msgstr ""
-"Включить/отключить отображение подходящей техники для режима «Аркада»."
+msgid "modes/fall_tanks/tooltip/filter/body"
+msgstr "В режиме «Сияние неона» доступны все машины."
 
-msgid "modes/fep_new_year_2025/tooltip/filter/header"
-msgstr "Аркадная техника"
+msgid "modes/fall_tanks/tooltip/filter/header"
+msgstr "Техника режима «Сияние неона»"
 
-msgid "modes/fep_new_year_2025/userName"
-msgstr "Аркада"
+msgid "modes/fall_tanks/userName"
+msgstr "Сияние неона"
 
 msgid "modes/undefined/banner/progression/finish"
 msgstr "Все этапы пройдены"
@@ -1121,158 +1121,83 @@ msgstr "?empty?"
 msgid "sub_modes/development/userName/quoted"
 msgstr "?empty?"
 
-msgid "sub_modes/ice_age_2025/capsUserName"
-msgstr "ЛЕДНИКОВЫЙ ПЕРИОД"
+msgid "sub_modes/fall_tanks/capsUserName"
+msgstr "СИЯНИЕ НЕОНА"
 
-msgid "sub_modes/ice_age_2025/detailsHelp/page1/description"
+msgid "sub_modes/fall_tanks/detailsHelp/page1/description"
 msgstr ""
-"Если вы попали на каток на многотонной машине, то у вас два варианта: "
-"почувствовать себя коровой на льду или показать, что такое стильный дрифт. В"
-" качестве компенсации уменьшен разброс, а праздничные эффекты выстрелов "
-"добавят атмосферы событию."
+"Вперёд к финишной черте, и пусть соперники останутся далеко позади! "
+"Используйте способности «Рывок» и «Щит», чтобы сеять хаос на поле боя."
 
-msgid "sub_modes/ice_age_2025/detailsHelp/page1/title"
-msgstr "Ледниковый период"
+msgid "sub_modes/fall_tanks/detailsHelp/page1/title"
+msgstr "Осторожно: подвижные платформы"
 
-msgid "sub_modes/ice_age_2025/detailsHelpHint/description"
-msgstr "для знакомства с особенностями режима"
+msgid "sub_modes/fall_tanks/detailsHelp/page2/description"
+msgstr "Избегайте лазеров и рассчитывайте прыжки, чтобы добраться до финиша!"
 
-msgid "sub_modes/ice_age_2025/detailsHelpHint/press"
+msgid "sub_modes/fall_tanks/detailsHelp/page2/title"
+msgstr "Осторожно: лазеры и прыжки"
+
+msgid "sub_modes/fall_tanks/detailsHelpHint/description"
+msgstr ", чтобы узнать подробности режима"
+
+msgid "sub_modes/fall_tanks/detailsHelpHint/press"
 msgstr "Нажмите"
 
-msgid "sub_modes/ice_age_2025/detailsHelpTitle"
-msgstr "Аркада: Ледниковый период"
+msgid "sub_modes/fall_tanks/detailsHelpTitle"
+msgstr "Сияние неона"
 
-msgid "sub_modes/ice_age_2025/subModeCard/battleCondition"
-msgstr "15x15"
+msgid "sub_modes/fall_tanks/subModeCard/battleCondition"
+msgstr "15–30"
 
-msgid "sub_modes/ice_age_2025/subModeCard/description"
+msgid "sub_modes/fall_tanks/subModeCard/description"
 msgstr ""
-"Бои с изменёнными\n"
-"параметрами мобильности"
+"Пробейтесь\n"
+"к финишной черте"
 
-msgid "sub_modes/ice_age_2025/subModeCard/levelCondition"
-msgstr "{parSecondary_open}I{parSecondary_close}&nbsp;%(levels)s уровни"
+msgid "sub_modes/fall_tanks/subModeCard/levelCondition"
+msgstr "{parSecondary_open}I{parSecondary_close} Все уровни"
 
-msgid "sub_modes/ice_age_2025/subModeCard/performance/highRisk/description"
+msgid "sub_modes/fall_tanks/subModeCard/performance/highRisk/description"
 msgstr ""
-"Режим требователен к компьютеру. Карта может долго загружаться, возможны "
-"проблемы с графикой и перемещением техники в бою. В случае недостаточной "
-"производительности, попробуйте понизить настройки графики."
+"При низких настройках могут появляться графические артефакты и другие "
+"проблемы. Для лучшего качества рекомендуется выбрать высокие настройки, если"
+" ваш компьютер соответствует требованиям. Режим требователен к компьютеру. "
+"Возможно снижение FPS при интенсивных боевых действиях."
 
-msgid "sub_modes/ice_age_2025/subModeCard/performance/highRisk/header"
-msgstr "Возможно снижение производительности"
+msgid "sub_modes/fall_tanks/subModeCard/performance/highRisk/header"
+msgstr "Рекомендуется использовать высокие настройки графики"
 
-msgid "sub_modes/ice_age_2025/subModeCard/performance/highRisk/headerIcon"
-msgstr "%(icon) Возможно снижение производительности"
+msgid "sub_modes/fall_tanks/subModeCard/performance/highRisk/headerIcon"
+msgstr "%(icon) Рекомендуется использовать высокие настройки графики"
 
-msgid "sub_modes/ice_age_2025/subModeCard/performance/mediumRisk/description"
+msgid "sub_modes/fall_tanks/subModeCard/performance/mediumRisk/description"
 msgstr ""
-"Режим требователен к компьютеру. Карта может долго загружаться, возможны "
-"проблемы с графикой и перемещением техники в бою. В случае недостаточной "
-"производительности, попробуйте понизить настройки графики."
+"При низких настройках могут появляться графические артефакты и другие "
+"проблемы. Для лучшего качества рекомендуется выбрать высокие настройки, если"
+" ваш компьютер соответствует требованиям. Режим требователен к компьютеру. "
+"Возможно снижение FPS при интенсивных боевых действиях."
 
-msgid "sub_modes/ice_age_2025/subModeCard/performance/mediumRisk/header"
-msgstr "Возможно снижение производительности"
+msgid "sub_modes/fall_tanks/subModeCard/performance/mediumRisk/header"
+msgstr "Рекомендуется использовать высокие настройки графики"
 
-msgid "sub_modes/ice_age_2025/subModeCard/performance/mediumRisk/headerIcon"
-msgstr "%(icon) Возможно снижение производительности"
+msgid "sub_modes/fall_tanks/subModeCard/performance/mediumRisk/headerIcon"
+msgstr "%(icon) Рекомендуется использовать высокие настройки графики"
 
-msgid "sub_modes/ice_age_2025/subModeCard/title"
-msgstr "Ледниковый период"
+msgid "sub_modes/fall_tanks/subModeCard/title"
+msgstr "Сияние неона"
 
-msgid "sub_modes/ice_age_2025/tips/tip1/description"
-msgstr ""
-"Если вы попали на каток на многотонной машине, то у вас два варианта: "
-"почувствовать себя коровой на льду или показать, что такое стильный дрифт. В"
-" качестве компенсации уменьшен разброс, а праздничные эффекты выстрелов "
-"добавят атмосферы событию."
+msgid "sub_modes/fall_tanks/tips/tip1/description"
+msgstr "?empty?"
 
-msgid "sub_modes/ice_age_2025/tips/tip1/title"
-msgstr "Ледниковый период"
+msgid "sub_modes/fall_tanks/tips/tip1/title"
+msgstr "?empty?"
 
-msgid "sub_modes/ice_age_2025/userName"
-msgstr "Ледниковый период"
+msgid "sub_modes/fall_tanks/userName"
+msgstr "Сияние неона"
 
-msgid "sub_modes/ice_age_2025/userName/quoted"
-msgstr "«Ледниковый период»"
-
-msgid "sub_modes/snowballs_2025/capsUserName"
-msgstr "ИГРА В СНЕЖКИ"
-
-msgid "sub_modes/snowballs_2025/detailsHelp/page1/description"
-msgstr ""
-"Станьте «фугасным монстром» вне зависимости от того, на чём играете. "
-"Бронепробиваемость основных и специальных снарядов уменьшена, зато повышен "
-"урон осколочно-фугасными снарядами. Вид боеприпасов полностью соответствует "
-"атмосфере праздника."
-
-msgid "sub_modes/snowballs_2025/detailsHelp/page1/title"
-msgstr "Игра в снежки"
-
-msgid "sub_modes/snowballs_2025/detailsHelpHint/description"
-msgstr "для знакомства с особенностями режима"
-
-msgid "sub_modes/snowballs_2025/detailsHelpHint/press"
-msgstr "Нажмите"
-
-msgid "sub_modes/snowballs_2025/detailsHelpTitle"
-msgstr "Аркада: Игра в снежки"
-
-msgid "sub_modes/snowballs_2025/subModeCard/battleCondition"
-msgstr "15x15"
-
-msgid "sub_modes/snowballs_2025/subModeCard/description"
-msgstr ""
-"Бои с изменёнными\n"
-"параметрами снарядов"
-
-msgid "sub_modes/snowballs_2025/subModeCard/levelCondition"
-msgstr "{parSecondary_open}I{parSecondary_close}&nbsp;%(levels)s уровни"
-
-msgid "sub_modes/snowballs_2025/subModeCard/performance/highRisk/description"
-msgstr ""
-"Режим требователен к компьютеру. Карта может долго загружаться, возможны "
-"проблемы с графикой и перемещением техники в бою. В случае недостаточной "
-"производительности, попробуйте понизить настройки графики."
-
-msgid "sub_modes/snowballs_2025/subModeCard/performance/highRisk/header"
-msgstr "Возможно снижение производительности"
-
-msgid "sub_modes/snowballs_2025/subModeCard/performance/highRisk/headerIcon"
-msgstr "%(icon) Возможно снижение производительности"
-
-msgid ""
-"sub_modes/snowballs_2025/subModeCard/performance/mediumRisk/description"
-msgstr ""
-"Режим требователен к компьютеру. Карта может долго загружаться, возможны "
-"проблемы с графикой и перемещением техники в бою. В случае недостаточной "
-"производительности, попробуйте понизить настройки графики."
-
-msgid "sub_modes/snowballs_2025/subModeCard/performance/mediumRisk/header"
-msgstr "Возможно снижение производительности"
-
-msgid "sub_modes/snowballs_2025/subModeCard/performance/mediumRisk/headerIcon"
-msgstr "%(icon) Возможно снижение производительности"
-
-msgid "sub_modes/snowballs_2025/subModeCard/title"
-msgstr "Игра в снежки"
-
-msgid "sub_modes/snowballs_2025/tips/tip1/description"
-msgstr ""
-"Станьте «фугасным монстром» вне зависимости от того, на чём играете. "
-"Бронепробиваемость основных и специальных снарядов уменьшена, зато повышен "
-"урон осколочно-фугасными снарядами. Вид боеприпасов полностью соответствует "
-"атмосфере праздника."
-
-msgid "sub_modes/snowballs_2025/tips/tip1/title"
-msgstr "Игра в снежки"
-
-msgid "sub_modes/snowballs_2025/userName"
-msgstr "Игра в снежки"
-
-msgid "sub_modes/snowballs_2025/userName/quoted"
-msgstr "«Игра в снежки»"
+msgid "sub_modes/fall_tanks/userName/quoted"
+msgstr "«Сияние неона»"
 
 msgid "sub_modes/undefined/capsUserName"
 msgstr "UNKNOWN SUB MODE NAME"

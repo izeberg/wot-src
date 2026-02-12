@@ -1,9 +1,9 @@
 package net.wg.infrastructure.base.meta.impl
 {
    import net.wg.data.constants.Errors;
-   import net.wg.gui.lobby.messengerBar.PrebattleChannelCarouselItem;
+   import net.wg.infrastructure.base.AbstractWindowView;
    
-   public class AbstractRallyWindowMeta extends PrebattleChannelCarouselItem
+   public class AbstractRallyWindowMeta extends AbstractWindowView
    {
        
       

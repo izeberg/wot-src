@@ -211,6 +211,12 @@ msgstr "ПОЛЕВАЯ МОДЕРНИЗАЦИЯ"
 msgid "vehicleMenu/menuItem/nationChange/title"
 msgstr "СМЕНИТЬ НАЦИЮ"
 
+msgid "vehicleMenu/menuItem/proBoost/active"
+msgstr "АКТИВЕН"
+
+msgid "vehicleMenu/menuItem/proBoost/title"
+msgstr "PRO BOOST {{activeOrCountdown}}"
+
 msgid "vehicleMenu/menuItem/quickTraining/title"
 msgstr "УСКОРЕННОЕ ОБУЧЕНИЕ"
 
@@ -222,3 +228,39 @@ msgstr "ИССЛЕДОВАНИЕ"
 
 msgid "vehicleMenu/menuItem/vehSkillTree/title"
 msgstr "УЛУЧШЕНИЯ"
+
+msgid "vehicleMenu/proBoostTooltips/active/body"
+msgstr "Вы можете изменить выбор в любое время."
+
+msgid "vehicleMenu/proBoostTooltips/active/header"
+msgstr "Pro Boost привязан к этой машине"
+
+msgid "vehicleMenu/proBoostTooltips/incompatibleMode/body"
+msgstr ""
+"Вы можете получать бонус только в Случайных боях, «Натиске», Укрепрайоне, на"
+" Глобальной карте и в турнирах."
+
+msgid "vehicleMenu/proBoostTooltips/incompatibleMode/header"
+msgstr "Неподходящий режим для Pro Boost"
+
+msgid "vehicleMenu/proBoostTooltips/incompatibleVehicle/body"
+msgstr ""
+"Бонус можно применить только к исследуемым и коллекционным машинам с I по X "
+"уровень."
+
+msgid "vehicleMenu/proBoostTooltips/incompatibleVehicle/header"
+msgstr "Неподходящая машина для Pro Boost"
+
+msgid "vehicleMenu/proBoostTooltips/locked/body"
+msgstr ""
+"Pro Boost сейчас привязан к {{vehicle}}. Вы можете изменить выбор через "
+"{{time}}."
+
+msgid "vehicleMenu/proBoostTooltips/locked/header"
+msgstr "Вернитесь позже!"
+
+msgid "vehicleMenu/proBoostTooltips/lockedActive/body"
+msgstr "Вы можете изменить выбор через {{time}}."
+
+msgid "vehicleMenu/proBoostTooltips/lockedActive/header"
+msgstr "Pro Boost привязан к этой машине"

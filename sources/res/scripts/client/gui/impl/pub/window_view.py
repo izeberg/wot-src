@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from frameworks.wulf import View, ViewFlags, ViewSettings
 from gui.impl.gen.view_models.windows.window_model import WindowModel
 from gui.impl.gen import R

@@ -42,3 +42,15 @@ def getParentGameObjectByComponent(gameObject, componentType):
         return findResult[0]
     else:
         return
+
+
+def tryActivateGameObject(gameObject):
+    if not gameObject or not gameObject.isValid():
+        return
+    gameObject.activate()
+
+
+def tryDeactivateGameObject(gameObject):
+    if not gameObject or not gameObject.isValid():
+        return
+    gameObject.deactivate()

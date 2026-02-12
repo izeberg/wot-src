@@ -73,6 +73,5 @@ __doc__ = None
 __name__ = 'vehicle_hierarchy'
 __package__ = None
 def createClientVehicleHierarchy(*args, **kwargs): pass
-def onClientVehicleRespawn(*args, **kwargs): pass
 def removeClientVehicleHierarchy(*args, **kwargs): pass
 def updateClientVehicleHierarchy(*args, **kwargs): pass

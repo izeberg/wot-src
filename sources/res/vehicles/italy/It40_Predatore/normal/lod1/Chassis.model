@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/italy/It40_Predatore/normal/lod1/Chassis</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/italy/It40_Predatore/normal/lod2/Chassis</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.605000 0.000276 -3.625326</min>
+		<max>1.605000 1.346690 3.492014</max>
+	</visibilityBox>
+</root>

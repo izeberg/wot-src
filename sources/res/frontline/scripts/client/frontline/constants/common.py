@@ -19,4 +19,3 @@ SKILL_PARAM_SIGN = {'increaseFactors/crewRolesFactor': PLUS_SIGN,
    'resupplyHealthPointsFactor': PLUS_SIGN, 
    'captureSpeedFactor': PLUS_SIGN, 
    'captureBlockBonusTime': PLUS_SIGN}
-BATTLE_ABILITY_GROUP_INDEX = 2

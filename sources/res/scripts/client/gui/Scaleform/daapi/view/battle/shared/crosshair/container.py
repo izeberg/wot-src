@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, BattleReplay, GUI, WWISE
 from PlayerEvents import g_playerEvents
 from debug_utils import LOG_WARNING, LOG_DEBUG, LOG_ERROR

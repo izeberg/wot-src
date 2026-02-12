@@ -1402,7 +1402,7 @@ def _createEffectDesc(eType, dataSection):
     if not dataSection.values():
         return
     else:
-        factoryMethod = _effectDescFactory.get(eType, None)
+        factoryMethod = _effectDescFactory.get(eType)
         if factoryMethod is not None:
             return factoryMethod(dataSection)
         raise SoftException('EffectsList factory has no class associated with type %s.' % eType)

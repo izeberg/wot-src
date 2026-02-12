@@ -6,6 +6,7 @@ if typing.TYPE_CHECKING:
     from frameworks.wulf import ViewModel
     from frameworks.wulf.resource_manager import ResourceManager
     from frameworks.wulf.system_locale import SystemLocale
+    from frameworks.wulf.formatters import Formatters
     from frameworks.wulf.tutorial import Tutorial
     from frameworks.wulf.ui_logger import UILogger
     from frameworks.wulf.windows_system.windows_manager import WindowsManager
@@ -23,6 +24,10 @@ class IGuiLoader(object):
 
     @property
     def systemLocale(self):
+        raise NotImplementedError
+
+    @property
+    def formatters(self):
         raise NotImplementedError
 
     @property
@@ -48,7 +53,7 @@ class INotificationWindowController(IGameController):
     if typing.TYPE_CHECKING:
         onPostponedQueueUpdated = None
 
-    def append(self, window):
+    def append(self, command):
         raise NotImplementedError
 
     def hasWindow(self, window):
@@ -75,6 +80,7 @@ class INotificationWindowController(IGameController):
     def hasLock(self, key):
         raise NotImplementedError
 
+    @property
     def activeQueueLength(self):
         raise NotImplementedError
 

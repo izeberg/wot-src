@@ -398,13 +398,13 @@ package net.wg.gui.battle.views.dualGunPanel
       
       private function updatePanelTimer() : void
       {
+         var _loc6_:String = null;
          var _loc7_:Number = NaN;
          var _loc1_:RunningTimerData = this._timers[TIMER_ID_ACTIVE_GUN_CHANGE];
          var _loc2_:RunningTimerData = this._timers[TIMER_ID_LOADING_LEFT];
          var _loc3_:RunningTimerData = this._timers[TIMER_ID_LOADING_RIGHT];
          var _loc4_:RunningTimerData = this._timers[TIMER_ID_CHARGE_PROGRESS];
          var _loc5_:RunningTimerData = this._timers[TIMER_ID_COOLDOWN];
-         var _loc6_:String = DualGunPanelTimer.STYLE_IDLE;
          if(_loc5_.isRunning)
          {
             _loc6_ = DualGunPanelTimer.STYLE_DEBUFF;

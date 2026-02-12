@@ -13,6 +13,9 @@ msgstr ""
 msgid "barracks/action/enlarge"
 msgstr "Расширить"
 
+msgid "barracks/action/retireUndertrained"
+msgstr "Демобилизовать необученных"
+
 msgid "barracks/bunks/title"
 msgstr "Койки:"
 
@@ -32,6 +35,23 @@ msgstr "Предыдущая стоимость: %(currency)s за %(bunksCount)
 
 msgid "barracks/enlarge/header"
 msgstr "Расширить Казарму?"
+
+msgid "barracks/retireUndertrainedTooltip/description"
+msgstr ""
+"В Казарме вы можете демобилизовать необученных членов экипажа, у которых нет"
+" {whiteSpanish_Open}210 060{whiteSpanish_Close}{icon}, необходимых для "
+"изучения первого навыка на {whiteSpanish_Open}100%{whiteSpanish_Close}."
+
+msgid "barracks/retireUndertrainedTooltip/header"
+msgstr "Необученные члены экипажа"
+
+msgid "barracks/retireUndertrainedTooltip/noUndertrainedMembers"
+msgstr "У вас нет необученных членов экипажа"
+
+msgid "barracks/retireUndertrainedTooltip/warning"
+msgstr ""
+"Вы не получите компенсации за демобилизацию необученных членов экипажа. Вы "
+"не сможете восстановить таких членов экипажа, а весь их опыт будет списан."
 
 msgid "barracks/title"
 msgstr "КАЗАРМА"
@@ -90,30 +110,19 @@ msgstr "На ваш аккаунт добавлены следующие пре�
 msgid "conversionConfirm/button/cancel/label"
 msgstr "Отменить"
 
-msgid "conversionConfirm/button/convert/label"
-msgstr "Обменять"
+msgid "conversionConfirm/button/retire/label"
+msgstr "Демобилизовать"
 
 msgid "conversionConfirm/button/showTankmen/label"
-msgstr "Членов экипажа к обмену: {amount}"
-
-msgid "conversionConfirm/description"
-msgstr ""
-"Наведите курсор на иконку учебных материалов, чтобы подробнее узнать о материалах, которые вы получите.\n"
-"Нажмите на кнопку ниже, чтобы узнать больше о членах экипажа, которых можно обменять."
-
-msgid "conversionConfirm/empty"
-msgstr ""
-"{alertIcon} У вас нет опыта\n"
-"для компенсации."
-
-msgid "conversionConfirm/subTitle"
-msgstr ""
-"Вы можете получить эти учебные материалы, обменяв необученных членов экипажа в Казарме.\n"
-"Необученными считаются танкисты, у которых первый навык изучен менее чем на 100%,\n"
-"у которых нет «нулевых» навыков, а также не являющиеся уникальными или наградными."
+msgstr "Будут демобилизованы: {amount}"
 
 msgid "conversionConfirm/title"
-msgstr "Обмен членов экипажа"
+msgstr "Демобилизовать необученных членов экипажа?"
+
+msgid "conversionConfirm/warning"
+msgstr ""
+"Вы не получите компенсации за демобилизацию необученных членов экипажа. Вы "
+"не сможете восстановить таких членов экипажа, а весь их опыт будет списан."
 
 msgid "crewBanner/button/fill/label"
 msgstr "Распределить навыки"
@@ -399,12 +408,11 @@ msgstr "Так точно!"
 
 msgid "junkTankmen/description"
 msgstr ""
-"Список членов экипажа в Казарме, у которых недостаточно опыта для изучения первого навыка на 100%,\n"
-"нет «нулевого» навыка и которые не являются уникальными или наградными.\n"
-"Эти члены экипажа будут обменяны."
+"У этих членов экипажа менее {bond_Open}210 060{bond_Close}{icon}, необходимых для изучения первого навыка на {whiteSpanish_Open}100%{whiteSpanish_Close}.\n"
+"Они будут удалены с вашего аккаунта."
 
 msgid "junkTankmen/title"
-msgstr "Обмен членов экипажа"
+msgstr "Демобилизовать необученных членов экипажа?"
 
 msgid "matrix/bonusTooltip/description"
 msgstr ""
@@ -997,3 +1005,27 @@ msgid "vehicleParamsDecorator/perkTip"
 msgstr ""
 "*Наведите курсор на навык, чтобы увидеть, как он влияет на соответствующие "
 "характеристики при изучении на 100% с текущим уровнем эффективности навыков."
+
+msgid "welcomeScreen/button/affirmative"
+msgstr "Так точно!"
+
+msgid "welcomeScreen/item1/description"
+msgstr ""
+"Добавлены по два новых навыка для каждой специальности, переработан навык "
+"«Практичность», а также добавлена возможность скрывать свои навыки в боевом "
+"интерфейсе."
+
+msgid "welcomeScreen/item2/description"
+msgstr ""
+"Добавлена новая удобная механика, позволяющая демобилизовать всех "
+"необученных членов экипажа за один клик."
+
+msgid "welcomeScreen/item3/description"
+msgstr "Теперь навыки можно сбрасывать только за кредиты без потери опыта."
+
+msgid "welcomeScreen/subTitle"
+msgstr ""
+"Добавлены новые навыки и механики, а также переработан один существующий."
+
+msgid "welcomeScreen/title"
+msgstr "ОБНОВЛЕНИЯ СИСТЕМЫ ЭКИПАЖА"

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from constants import PREBATTLE_TYPE, QUEUE_TYPE
 from debug_utils import LOG_DEBUG
 from gui.Scaleform.daapi.view.dialogs import I18nDialogMeta, I18nInfoDialogMeta, I18nConfirmDialogMeta, I18nConfirmDialogButtons, I18nInfoDialogButtons, DIALOG_BUTTON_ID

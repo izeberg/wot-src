@@ -1,7 +1,8 @@
 import typing
 from WeakMethod import WeakMethodProxy
-from battle_royale_progression.skeletons.game_controller import IBRProgressionOnTokensController
+from battle_royale.skeletons.game_controller import IBRProgressionOnTokensController
 from frameworks.state_machine import StateFlags
+from frameworks.state_machine.transitions import TransitionType
 from gui.Scaleform.genConsts.BATTLEROYALE_ALIASES import BATTLEROYALE_ALIASES
 from gui.battle_results.service import PostBattleResultsStateMixin
 from helpers import dependency
@@ -46,6 +47,8 @@ class BattleRoyaleModeState(LobbyState):
         parent.addNavigationTransition(hangar, record=True)
         parent.addTransition(HijackTransition(HangarState, WeakMethodProxy(self._isBattleRoyaleMode)), hangar)
         battleResultsState = lsm.getStateByCls(BattleRoyaleBattleResultsState)
+        tournamentQueue = lsm.getStateByCls(BattleRoyaleTournamentQueueState)
+        battleResultsState.addNavigationTransition(tournamentQueue, TransitionType.EXTERNAL)
         parent.addNavigationTransition(battleResultsState)
         progressionState = lsm.getStateByCls(BattleRoyaleProgressionState)
         parent.addNavigationTransition(progressionState)
@@ -81,6 +84,7 @@ class BattleRoyaleTournamentQueueState(ViewLobbyState):
 
 @BattleRoyaleModeState.parentOf
 class BattleRoyaleProgressionState(ViewLobbyState):
+    battleRoyaleController = dependency.descriptor(IBattleRoyaleController)
     STATE_ID = 'battleRoyaleProgression'
     VIEW_KEY = ViewKey(BATTLEROYALE_ALIASES.BR_PROGRESSION)
     NAVIGATION_BUTTONS = (
@@ -92,7 +96,11 @@ class BattleRoyaleProgressionState(ViewLobbyState):
         super(BattleRoyaleProgressionState, self)._onExited()
 
     def getNavigationDescription(self):
-        return LobbyStateDescription(title=backport.text(R.strings.pages.titles.battleRoyale.progression()), infos=self.NAVIGATION_BUTTONS)
+        if self.battleRoyaleController.isStPatrick():
+            text = R.strings.pages.titles.battleRoyale.stPatrick.progression()
+        else:
+            text = R.strings.pages.titles.battleRoyale.progression()
+        return LobbyStateDescription(title=backport.text(text), infos=self.NAVIGATION_BUTTONS)
 
 
 @BattleRoyaleModeState.parentOf

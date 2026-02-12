@@ -18,11 +18,9 @@ def getContextMenuHandlers():
 
 
 def getViewSettings():
-    from gui.Scaleform.daapi.view.lobby.techtree.research_page import Research
     from gui.impl.lobby.tech_tree.tech_tree_view import TechTreeWindow
     return (
-     ViewSettings(VIEW_ALIAS.LOBBY_TECHTREE, TechTreeWindow, '', WindowLayer.SUB_VIEW, VIEW_ALIAS.LOBBY_TECHTREE, ScopeTemplates.LOBBY_SUB_SCOPE, True),
-     ViewSettings(VIEW_ALIAS.LOBBY_RESEARCH, Research, 'research.swf', WindowLayer.SUB_VIEW, VIEW_ALIAS.LOBBY_RESEARCH, ScopeTemplates.LOBBY_SUB_SCOPE, True))
+     ViewSettings(VIEW_ALIAS.LOBBY_TECHTREE, TechTreeWindow, '', WindowLayer.SUB_VIEW, VIEW_ALIAS.LOBBY_TECHTREE, ScopeTemplates.LOBBY_SUB_SCOPE, True),)
 
 
 def getBusinessHandlers():
@@ -41,7 +39,5 @@ class _TechTreePackageBusinessHandler(PackageBusinessHandler):
     def __init__(self):
         listeners = (
          (
-          VIEW_ALIAS.LOBBY_TECHTREE, self.loadViewByCtxEvent),
-         (
-          VIEW_ALIAS.LOBBY_RESEARCH, self.loadViewByCtxEvent))
+          VIEW_ALIAS.LOBBY_TECHTREE, self.loadViewByCtxEvent),)
         super(_TechTreePackageBusinessHandler, self).__init__(listeners, app_settings.APP_NAME_SPACE.SF_LOBBY, EVENT_BUS_SCOPE.LOBBY)

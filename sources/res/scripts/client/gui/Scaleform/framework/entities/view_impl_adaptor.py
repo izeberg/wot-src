@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, typing, BigWorld
 from frameworks.wulf import WindowStatus, WindowSettings, Window, ViewFlags
 from gui.Scaleform.framework import ScopeTemplates

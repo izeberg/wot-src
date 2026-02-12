@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from constants import DOSSIER_TYPE
 from frameworks.wulf import ViewSettings, WindowFlags
 from gui.impl.gen import R

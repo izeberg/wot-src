@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.impl.gen.view_models.common.format_string_arg_model import FormatStringArgModel
 
 class UserFormatStringArgModel(FormatStringArgModel):

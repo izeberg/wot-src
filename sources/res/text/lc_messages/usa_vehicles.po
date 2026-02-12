@@ -979,6 +979,34 @@ msgstr "M-VI-Y"
 msgid "A144_M_VI_Y_CFE_R"
 msgstr "M-VI-Y (120)"
 
+msgid "A144_M_VI_Y_CFE_RC"
+msgstr "OCP Peacekeeper"
+
+msgid "A144_M_VI_Y_CFE_RC_desc"
+msgstr ""
+"Omni Consumer Products с гордостью представляет последнее слово в области "
+"технологий для правоохранительной системы — OCP Peacekeeper. Успех программы"
+" RoboCop позволил объединить усиленную броню, продвинутое вооружение и "
+"передовую боевую эффективность в одном продукте. Проект разработан для "
+"обеспечения максимальной эффективности без ограничений, связанных с "
+"биологическими компонентами. OCP Peacekeeper задаёт новый стандарт охраны "
+"правопорядка в городских условиях. Узрите будущее общественной безопасности,"
+" которое обеспечит OCP."
+
+msgid "A144_M_VI_Y_CFE_RC_long_special"
+msgstr ""
+"OCP Peacekeeper — американский тяжёлый танк IX уровня с надёжным "
+"бронированием башни и большими углами вертикального наведения, благодаря "
+"чему он успешно удерживает ключевые позиции. Машина способна наносить "
+"значительный урон за выстрел, а также обладает знакомой механикой резервной "
+"гусеницы."
+
+msgid "A144_M_VI_Y_CFE_RC_short"
+msgstr "Peacekeeper"
+
+msgid "A144_M_VI_Y_CFE_RC_short_special"
+msgstr "Впечатляющая броня башни, большие УВН"
+
 msgid "A144_M_VI_Y_CFE_R_desc"
 msgstr ""
 "Один из проектов, предложенных компанией H.L. Yoh Company в рамках программы"
@@ -1595,6 +1623,33 @@ msgstr "Patton Tank"
 msgid "A169_PattonIII_120_short_special"
 msgstr "Мощное орудие, хорошие УВН"
 
+msgid "A170_M_VII_Y"
+msgstr "M-VII-Y"
+
+msgid "A170_M_VII_Y_descr"
+msgstr ""
+"В 1953 году в США начался новый этап разработки перспективных танков. Одним "
+"из направлений стало семейство машин, предложенных в июне 1953 года "
+"компанией H.L. Yoh Company и отличавшихся крайне нестандартными техническими"
+" решениями. Отличительной особенностью этих танков была так называемая "
+"«аварийная» гусеница, а самым необычным проектом стал M-VII-Y. Для "
+"сокращения длины корпуса силовую установку (двигатель и топливный бак) "
+"перенесли в башню, разместив её в развитой кормовой нише. Проект в металле "
+"реализован не был."
+
+msgid "A170_M_VII_Y_long_special"
+msgstr ""
+"M-VII-Y — новый американский тяжёлый танк IX уровня ветки Yoh. Его резервная"
+" гусеница работает очень эффективно, что позволяет не слишком терять в "
+"скорости при сбитии основной гусеницы. В других аспектах машина довольно "
+"универсальна: хорошая мобильность, прочная башня и комфортное орудие."
+
+msgid "A170_M_VII_Y_short"
+msgstr "M-VII-Y"
+
+msgid "A170_M_VII_Y_short_special"
+msgstr "Резервная гусеница, хорошие значения брони башни и УВН"
+
 msgid "A171_IMT"
 msgstr "IMT"
 
@@ -1909,13 +1964,18 @@ msgstr ""
 " переусложнённым. Работы были прекращены ещё до постройки опытного образца."
 
 msgid "A188_Ares_MTB_long_special"
-msgstr "?empty?"
+msgstr ""
+"Ares MTB — американский средний танк IX уровня, основная особенность "
+"которого — автоматическая пушка с системой контроля температуры. Эта "
+"механика отлично подходит для неожиданных атак и позволяет машине наносить "
+"огромный урон за короткое время. Дополняют орудие комфортный разброс и "
+"хорошая мобильность."
 
 msgid "A188_Ares_MTB_short"
 msgstr "Ares MTB"
 
 msgid "A188_Ares_MTB_short_special"
-msgstr "?empty?"
+msgstr "Автопушка с системой контроля температуры, резервная гусеница"
 
 msgid "A189_Ares_90"
 msgstr "Ares 90"
@@ -2002,6 +2062,33 @@ msgstr "Firefly Saunders"
 
 msgid "A192_M4A4_Firefly_CFE_A_short_special"
 msgstr "Точное, пробивное и скорострельное орудие"
+
+msgid "A194_AHT_7"
+msgstr "AHT-7"
+
+msgid "A194_AHT_7_descr"
+msgstr ""
+"Концепт штурмового танка конца 1960-х годов. Размещение двигателя в кормовой"
+" нише башни позволило значительно сократить длину корпуса и использовать "
+"высвободившийся запас массы для усиления бронирования. Танк предполагалось "
+"вооружать 165-мм английским короткоствольным орудием L9A1, в связи с чем "
+"планировалась покупка лицензии и организация производства в США. Однако из-"
+"за сложностей с унификацией с уже состоявшими на вооружении танками М48 и "
+"М60 армия США отказалась от дальнейших работ над машиной."
+
+msgid "A194_AHT_7_long_special"
+msgstr ""
+"AHT-7 — американская ПТ-САУ X уровня. Её 165,1-мм орудие наносит огромный "
+"урон, усиливаемый специальными фугасными снарядами с отличным "
+"бронепробитием. Хорошие УВН дают возможность использовать особенности "
+"рельефа и удерживать неожиданные позиции, а механика резервной гусеницы "
+"позволяет машине всегда оставаться на ходу."
+
+msgid "A194_AHT_7_short"
+msgstr "AHT-7"
+
+msgid "A194_AHT_7_short_special"
+msgstr "Огромный урон за выстрел, резервная гусеница"
 
 msgid "A21_T14_long_special"
 msgstr ""
@@ -2567,6 +2654,9 @@ msgstr "AN/VRC-7A"
 msgid "AN_ARC_27_RC"
 msgstr "AN/GRC-7 RC"
 
+msgid "AN_ARC_27_RC_C"
+msgstr "AN/GRC-7 RC"
+
 msgid "AN_GRC_6_SPHT"
 msgstr "AN/GRC-6 SPHT"
 
@@ -2588,11 +2678,17 @@ msgstr "AN/GRC-7 LTC"
 msgid "AN_GRC_8"
 msgstr "AN/GRC-8"
 
+msgid "AN_GRC_8A"
+msgstr "AN/GRC-8A"
+
 msgid "AN_GRC_8D"
 msgstr "AN/GRC-8D"
 
 msgid "AN_GRC_8E"
 msgstr "AN GRC 8E"
+
+msgid "AN_GRC_8F"
+msgstr "AN/GRC-8F"
 
 msgid "AN_PRC_10"
 msgstr "AN/PRC-10"
@@ -2913,6 +3009,9 @@ msgstr "M-VI-Y B"
 msgid "Chassis_A144_M_VI_Y_CFE_R"
 msgstr "M-VI-Y (120)"
 
+msgid "Chassis_A144_M_VI_Y_CFE_RC"
+msgstr "OCP Peacekeeper"
+
 msgid "Chassis_A145_TS_54"
 msgstr "TS-54"
 
@@ -2985,6 +3084,9 @@ msgstr "XM57"
 msgid "Chassis_A169_PattonIII_120"
 msgstr "Patton the Tank"
 
+msgid "Chassis_A170_M_VII_Y"
+msgstr "M-VII-Y"
+
 msgid "Chassis_A171_IMT"
 msgstr "IMT"
 
@@ -3044,6 +3146,9 @@ msgstr "Ares 2000"
 
 msgid "Chassis_A192_M4A4_Firefly_CFE_A"
 msgstr "Sherman Firefly Saunders"
+
+msgid "Chassis_A194_AHT_7"
+msgstr "AHT-7"
 
 msgid "Chassis_A22_M5_Stuart"
 msgstr "M5 Stuart"
@@ -3397,6 +3502,14 @@ msgstr "Continental AOSI-895-5C"
 msgid "Continental_AOSI_1195_5"
 msgstr "Continental AOSI-1195-5"
 
+msgid "Continental_AOSI_1195_5F"
+msgstr "Continental AOSI-1195-5F"
+
+msgid "Continental_AOSI_1195_5F_short"
+msgstr ""
+"Continental\n"
+"AOSI-1195-5F"
+
 msgid "Continental_AOSI_1195_5_Y_III_A"
 msgstr "Continental AOSI-1195-5 Y III A"
 
@@ -3440,6 +3553,14 @@ msgstr ""
 msgid "Continental_AOSI_1195_5_Y_V"
 msgstr "Continental AOSI-1195-5 Y V"
 
+msgid "Continental_AOSI_1195_5_Y_VII"
+msgstr "Continental AOSI-1195-5 Y VII"
+
+msgid "Continental_AOSI_1195_5_Y_VII_short"
+msgstr ""
+"Continental\n"
+"AOSI-1195-5 Y VII"
+
 msgid "Continental_AOSI_1195_5_Y_VI_A"
 msgstr "Continental AOSI-1195-5 Y VI A"
 
@@ -3458,6 +3579,14 @@ msgstr ""
 
 msgid "Continental_AOSI_1195_5_Y_VI_RC"
 msgstr "Continental AOSI-1195-5 Y VI RC"
+
+msgid "Continental_AOSI_1195_5_Y_VI_RC_C"
+msgstr "Continental AOSI-1195-5 Y VI RC"
+
+msgid "Continental_AOSI_1195_5_Y_VI_RC_C_short"
+msgstr ""
+"Continental\n"
+"AOSI-1195-5 Y VI RC"
 
 msgid "Continental_AOSI_1195_5_Y_VI_RC_short"
 msgstr ""
@@ -5027,6 +5156,9 @@ msgstr "M-VI-Y A"
 msgid "Turret_1_A144_M_VI_Y_CFE_R"
 msgstr "M-VI-Y (120)"
 
+msgid "Turret_1_A144_M_VI_Y_CFE_RC"
+msgstr "OCP Peacekeeper"
+
 msgid "Turret_1_A145_TS_54"
 msgstr "TS-54"
 
@@ -5093,6 +5225,9 @@ msgstr "XM57"
 msgid "Turret_1_A169_PattonIII_120"
 msgstr "Patton the Tank"
 
+msgid "Turret_1_A170_M_VII_Y"
+msgstr "M-VII-Y"
+
 msgid "Turret_1_A171_IMT"
 msgstr "IMT"
 
@@ -5143,6 +5278,9 @@ msgstr "Ares 2000"
 
 msgid "Turret_1_A192_M4A4_Firefly_CFE_A"
 msgstr "Sherman Firefly Saunders"
+
+msgid "Turret_1_A194_AHT_7"
+msgstr "AHT-7"
 
 msgid "Turret_1_A22_M5_Stuart"
 msgstr "M5 Stuart"
@@ -6066,6 +6204,9 @@ msgstr "APBC M358"
 msgid "_120mm_APCR_M361_M_VI_Y_RC"
 msgstr "APCR M361 (M-VI-Y) RC"
 
+msgid "_120mm_APCR_M361_M_VI_Y_RC_C"
+msgstr "APCR M361 RC"
+
 msgid "_120mm_APCR_T62"
 msgstr "APCR T62"
 
@@ -6132,6 +6273,9 @@ msgstr "AP T42 (T28)"
 msgid "_120mm_AP_T42_T95"
 msgstr "AP T42 (T95)"
 
+msgid "_120mm_AP_T_M358"
+msgstr "M358"
+
 msgid "_120mm_AP_T_M358E1"
 msgstr "AP-T M358E1"
 
@@ -6166,6 +6310,9 @@ msgid "_120mm_American_British_Gun"
 msgstr "120 mm American British Gun"
 
 msgid "_120mm_American_British_Gun_RC"
+msgstr "120 mm American British Gun RC"
+
+msgid "_120mm_American_British_Gun_RC_C"
 msgstr "120 mm American British Gun RC"
 
 msgid "_120mm_Delta_SPHT"
@@ -6246,6 +6393,9 @@ msgstr "HEAT M469 (M-VI-Y)"
 msgid "_120mm_HEAT_M469_M_VI_Y_RC"
 msgstr "HEAT M469 (M-VI-Y) RC"
 
+msgid "_120mm_HEAT_M469_M_VI_Y_RC_C"
+msgstr "HEAT M469 RC"
+
 msgid "_120mm_HEAT_M469_T122"
 msgstr "HEAT M469 (T122)"
 
@@ -6260,6 +6410,9 @@ msgstr "HEAT M835"
 
 msgid "_120mm_HEAT_T153E18"
 msgstr "HEAT T153E18"
+
+msgid "_120mm_HEAT_T_M469"
+msgstr "M469"
 
 msgid "_120mm_HEAT_T_M469E1"
 msgstr "HEAT-T M469E1"
@@ -6300,6 +6453,9 @@ msgstr "HE T15E3 (M-VI-Y)"
 msgid "_120mm_HE_T15E3_M_VI_Y_RC"
 msgstr "HE T15E3 (M-VI-Y) RC"
 
+msgid "_120mm_HE_T15E3_M_VI_Y_RC_C"
+msgstr "HE T15E3 RC"
+
 msgid "_120mm_HE_T15E3_T122"
 msgstr "HE T15E3 (T122)"
 
@@ -6324,6 +6480,9 @@ msgstr "HE T67 (T28)"
 msgid "_120mm_HE_T67_T95"
 msgstr "HE T67 (T95)"
 
+msgid "_120mm_HE_T_M356"
+msgstr "M356"
+
 msgid "_120mm_HE_T_M356E1"
 msgstr "HE-T M356E1"
 
@@ -6338,6 +6497,9 @@ msgstr "T102 SPHT"
 
 msgid "_120mm_MPP_Gun_RHD"
 msgstr "120 mm MPP Gun RHD"
+
+msgid "_120mm_T123E1"
+msgstr "120 mm T123E1"
 
 msgid "_120mm_T123E2_SPG"
 msgstr "120 mm T123E2 SPG"
@@ -6551,6 +6713,18 @@ msgstr "155 mm Howitzer M1 (M41)"
 
 msgid "_155mm_Howitzer_M45"
 msgstr "155 mm Howitzer M45"
+
+msgid "_165_1mm_HEAT_M623E1"
+msgstr "HEAT M623E1"
+
+msgid "_165_1mm_HESH_M123E2"
+msgstr "HESH M123E2"
+
+msgid "_165_1mm_HE_M123E1"
+msgstr "HE M123E1"
+
+msgid "_165_1mm_M135E1"
+msgstr "165.1 mm M135E1"
 
 msgid "_17pdr_APC_Mk4TA"
 msgstr "APDS 17-Pr. Mk. 1TA"

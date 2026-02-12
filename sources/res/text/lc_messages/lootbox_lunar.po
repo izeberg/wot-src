@@ -164,6 +164,12 @@ msgstr ""
 "машины, которые вы получите из Пылающих сокровищ, будут компенсированы "
 "золотом."
 
+msgid "singleRewardView/tooltip/remainingCount"
+msgid_plural "plural/singleRewardView/tooltip/remainingCount"
+msgstr[0] "%(remainingCount) Пылающее сокровище"
+msgstr[1] "%(remainingCount) Пылающих сокровища"
+msgstr[2] "%(remainingCount) Пылающих сокровищ"
+
 msgid "singleRewardView/tooltip/subtitle/"
 msgstr ""
 "Гарантированная награда — машина из списка возможных наград.\n"

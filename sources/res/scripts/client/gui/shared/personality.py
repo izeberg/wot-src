@@ -8,7 +8,7 @@ from adisp import adisp_process
 import wg_async as future_async
 from constants import HAS_DEV_RESOURCES
 from debug_utils import LOG_CURRENT_EXCEPTION, LOG_ERROR, LOG_DEBUG
-from gui import SystemMessages, g_guiResetters, miniclient
+from gui import SystemMessages, g_guiResetters
 from gui.ClientUpdateManager import g_clientUpdateManager
 from gui.Scaleform.Waiting import Waiting
 from gui.Scaleform.daapi.view.login.EULADispatcher import EULADispatcher
@@ -209,6 +209,14 @@ def onIGRTypeChanged(roomType, xpFactor):
                    'igrXPFactor': xpFactor}})
 
 
+def onKickedFromServer(reason, kickReasonType, expiryTime):
+    ServicesLocator.gameplay.goToLoginByKick(reason, kickReasonType, expiryTime)
+
+
+def onScreenShotMade(path):
+    g_eventBus.handleEvent(events.GameEvent(events.GameEvent.SCREEN_SHOT_MADE, {'path': path}), scope=EVENT_BUS_SCOPE.GLOBAL)
+
+
 def init():
     global onAccountBecomeNonPlayer
     global onAccountBecomePlayer
@@ -223,7 +231,6 @@ def init():
     global onServerReplayExiting
     global onShopResync
     global onShopResyncStarted
-    miniclient.configure_state()
     ServicesLocator.connectionMgr.onKickedFromServer += onKickedFromServer
     g_playerEvents.onAccountShowGUI += onAccountShowGUI
     g_playerEvents.onAccountBecomeNonPlayer += onAccountBecomeNonPlayer
@@ -318,14 +325,6 @@ def onDisconnected():
     if ServicesLocator.lobbyContext.getServerSettings().isElenEnabled():
         ServicesLocator.eventsController.cleanEventsData()
     BigWorld.purgeUrlRequestCache()
-
-
-def onKickedFromServer(reason, kickReasonType, expiryTime):
-    ServicesLocator.gameplay.goToLoginByKick(reason, kickReasonType, expiryTime)
-
-
-def onScreenShotMade(path):
-    g_eventBus.handleEvent(events.GameEvent(events.GameEvent.SCREEN_SHOT_MADE, {'path': path}), scope=EVENT_BUS_SCOPE.GLOBAL)
 
 
 def disableLobbyGUI():

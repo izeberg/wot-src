@@ -1924,11 +1924,11 @@
 		<shortDescriptionSpecial>#usa_vehicles:A178_SPHT_short_special</shortDescriptionSpecial>
 		<longDescriptionSpecial>#usa_vehicles:A178_SPHT_long_special</longDescriptionSpecial>
 		<price>
-			100
+			11050
 			<gold/>
 		</price>
 		<notInShop>true</notInShop>
-		<tags>heavyTank role_HT_universal HD improvedVentilation_class1_user tankRammer_class1_user aimingStabilizer_class1_user extraHealthReserve_class1_user antifragmentationLining_heavy_user earn_crystals secret testTank</tags>
+		<tags>heavyTank role_HT_universal HD improvedVentilation_class1_user tankRammer_class1_user aimingStabilizer_class1_user extraHealthReserve_class1_user antifragmentationLining_heavy_user earn_crystals</tags>
 		<level>9</level>
 	</A178_SPHT>
 	<A189_Ares_90>
@@ -1948,13 +1948,43 @@
 		<shortDescriptionSpecial>#usa_vehicles:A144_M_VI_Y_CFE_R_short_special</shortDescriptionSpecial>
 		<longDescriptionSpecial>#usa_vehicles:A144_M_VI_Y_CFE_R_long_special</longDescriptionSpecial>
 		<price>
+			11000
+			<gold/>
+		</price>
+		<notInShop>true</notInShop>
+		<tags>heavyTank role_HT_universal HD improvedVentilation_class1_user tankRammer_class1_user aimingStabilizer_class1_user extraHealthReserve_class1_user antifragmentationLining_heavy_user earn_crystals</tags>
+		<level>9</level>
+	</A144_M_VI_Y_CFE_R>
+	<A144_M_VI_Y_CFE_RC>
+		<id>267</id>
+		<userString>#usa_vehicles:A144_M_VI_Y_CFE_RC</userString>
+		<shortUserString>#usa_vehicles:A144_M_VI_Y_CFE_RC_short</shortUserString>
+		<description>#usa_vehicles:A144_M_VI_Y_CFE_RC_desc</description>
+		<shortDescriptionSpecial>#usa_vehicles:A144_M_VI_Y_CFE_RC_short_special</shortDescriptionSpecial>
+		<longDescriptionSpecial>#usa_vehicles:A144_M_VI_Y_CFE_RC_long_special</longDescriptionSpecial>
+		<price>
+			11000
+			<gold/>
+		</price>
+		<notInShop>true</notInShop>
+		<tags>heavyTank role_HT_universal HD improvedVentilation_class1_user tankRammer_class1_user aimingStabilizer_class1_user extraHealthReserve_class1_user antifragmentationLining_heavy_user earn_crystals lockOutfit restoreWithStyle</tags>
+		<level>9</level>
+	</A144_M_VI_Y_CFE_RC>
+	<A194_AHT_7>
+		<id>268</id>
+		<userString>#usa_vehicles:A194_AHT_7</userString>
+		<shortUserString>#usa_vehicles:A194_AHT_7_short</shortUserString>
+		<description>#usa_vehicles:A194_AHT_7_descr</description>
+		<shortDescriptionSpecial>#usa_vehicles:A194_AHT_7_short_special</shortDescriptionSpecial>
+		<longDescriptionSpecial>#usa_vehicles:A194_AHT_7_long_special</longDescriptionSpecial>
+		<price>
 			100
 			<gold/>
 		</price>
 		<notInShop>true</notInShop>
-		<tags>heavyTank role_HT_universal HD improvedVentilation_class1_user tankRammer_class1_user aimingStabilizer_class1_user extraHealthReserve_class1_user antifragmentationLining_heavy_user earn_crystals secret testTank</tags>
-		<level>9</level>
-	</A144_M_VI_Y_CFE_R>
+		<tags>AT-SPG role_ATSPG_support HD heavyAT-SPG AT-SPG2 improvedVentilation_class1_user tankRammer_class1_user extraHealthReserve_class1_user antifragmentationLining_heavy_user earn_crystals secret testTank</tags>
+		<level>10</level>
+	</A194_AHT_7>
 	<A97_M41_Bulldog_FL>
 		<id>250</id>
 		<userString>#usa_vehicles:M41_Bulldog_FL</userString>
@@ -1994,7 +2024,7 @@
 			22500
 			<gold/>
 		</price>
-		<tags>heavyTank special role_HT_support HD heavyTank2 improvedVentilation_class1_user aimingStabilizer_class1_user extraHealthReserve_class1_user antifragmentationLining_heavy_user earn_crystals</tags>
+		<tags>heavyTank special role_HT_support HD heavyTank2 improvedVentilation_class1_user aimingStabilizer_class1_user extraHealthReserve_class1_user antifragmentationLining_heavy_user earn_crystals excluded_from_customization</tags>
 		<level>10</level>
 		<notInShop>True</notInShop>
 	</A174_T57_58_Rush_Ep1>
@@ -2040,6 +2070,21 @@
 		<tags>mediumTank HD improvedVentilation_class2_user tankRammer_class2_user extraHealthReserve_class2_user antifragmentationLining_medium_user secret private event_battles</tags>
 		<level>5</level>
 	</A173_Sherman_Crab>
+	<A170_M_VII_Y>
+		<id>264</id>
+		<userString>#usa_vehicles:A170_M_VII_Y</userString>
+		<description>#usa_vehicles:A170_M_VII_Y_descr</description>
+		<shortUserString>#usa_vehicles:A170_M_VII_Y_short</shortUserString>
+		<shortDescriptionSpecial>#usa_vehicles:A170_M_VII_Y_short_special</shortDescriptionSpecial>
+		<longDescriptionSpecial>#usa_vehicles:A170_M_VII_Y_long_special</longDescriptionSpecial>
+		<price>
+			100
+			<gold/>
+		</price>
+		<notInShop>true</notInShop>
+		<tags>heavyTank role_HT_universal HD improvedVentilation_class1_user tankRammer_class1_user aimingStabilizer_class1_user extraHealthReserve_class1_user antifragmentationLining_heavy_user secret testTank earn_crystals</tags>
+		<level>9</level>
+	</A170_M_VII_Y>
 	<A1006_M4A3E8_Sherman_StoryMode>
 		<id>403</id>
 		<userString>#usa_vehicles:A06_M4A3E8_Sherman</userString>
@@ -2123,11 +2168,11 @@
 		<shortDescriptionSpecial>#usa_vehicles:A175_LTC_II_short_special</shortDescriptionSpecial>
 		<longDescriptionSpecial>#usa_vehicles:A175_LTC_II_long_special</longDescriptionSpecial>
 		<price>
-			100
+			8800
 			<gold/>
 		</price>
 		<notInShop>true</notInShop>
-		<tags>lightTank role_LT_universal HD scout improvedVentilation_class3_user aimingStabilizer_class1_user extraHealthReserve_class2_user antifragmentationLining_light_user special secret testTank</tags>
+		<tags>lightTank role_LT_universal HD scout improvedVentilation_class3_user aimingStabilizer_class1_user extraHealthReserve_class2_user antifragmentationLining_light_user special</tags>
 		<level>9</level>
 	</A175_LTC_II>
 	<A187_Ares_75>

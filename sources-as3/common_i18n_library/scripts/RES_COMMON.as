@@ -25,11 +25,7 @@ package
       
       public static const MAPS_ICONS_BATTLEPASS_POST_PROGRESSION_FOOTER_PURCHASEIP_BG:String = "../maps/icons/battlePass/post_progression/footer/purchaseIP/bg.png";
       
-      public static const MAPS_ICONS_BATTLEPASS_PROGRESSION_BG:String = "../maps/icons/battlePass/progression/bg.png";
-      
       public static const MAPS_ICONS_BATTLEPASS_WIDGET_BACKGROUND_DEFAULT_BG:String = "../maps/icons/battlePass/widget/background/default/bg.png";
-      
-      public static const MAPS_ICONS_BATTLEROYALE_BATTLERESULT_BG:String = "../maps/icons/battleRoyale/battleResult/bg.png";
       
       public static const MAPS_ICONS_BLUEPRINTS_FRAGMENT_CONVERSION_BG:String = "../maps/icons/blueprints/fragment/conversion/bg.png";
       

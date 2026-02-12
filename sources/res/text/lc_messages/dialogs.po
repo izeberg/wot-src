@@ -2091,13 +2091,21 @@ msgstr "от общего количества опыта"
 msgid "perksReset/priceCard/free/title"
 msgstr "Ускоренные курсы"
 
-msgid "perksReset/priceCard/gold/description"
+msgid "perksReset/priceCard/freeGold/description"
 msgstr ""
 "Сбросить навыки\n"
 "без потери опыта"
 
+msgid "perksReset/priceCard/gold/description"
+msgstr "Используйте кредиты для сброса навыков без потери опыта"
+
 msgid "perksReset/priceCard/gold/title"
 msgstr "Танковая академия"
+
+msgid "perksReset/priceCard/recertification/description"
+msgstr ""
+"Сбросить навыки\n"
+"без потери опыта"
 
 msgid "perksReset/priceCard/xpLoose"
 msgstr "{percentAmount}&nbsp;({xpAmount})"
@@ -2820,6 +2828,15 @@ msgstr "Так точно!"
 msgid "rudyInfo/title"
 msgstr "Четыре танкиста и собака"
 
+msgid "selectVehicle/counter"
+msgstr "Показано машин:"
+
+msgid "selectVehicle/selectAttackerTitle"
+msgstr "Выберите атакующую машину"
+
+msgid "selectVehicle/selectVehicle"
+msgstr "Выбрать эту машину"
+
 msgid "sellConfirmation/cancel"
 msgstr "Отменить"
 
@@ -3524,6 +3541,110 @@ msgstr "Вернуть в строй"
 msgid "wgshEventUnfreezeVehicle/title"
 msgstr "Вернуть в строй?"
 
+msgid "wotPlusActivationDialog/benefits/assistant"
+msgstr "Знаток"
+
+msgid "wotPlusActivationDialog/benefits/attendanceRewards"
+msgstr "Награды за посещение"
+
+msgid "wotPlusActivationDialog/benefits/battleBonus"
+msgstr "Боевой бонус"
+
+msgid "wotPlusActivationDialog/benefits/battlePassPlus"
+msgstr "Боевой пропуск «Плюс»"
+
+msgid "wotPlusActivationDialog/benefits/excludedMap"
+msgstr "Исключённая карта"
+
+msgid "wotPlusActivationDialog/benefits/exclusiveVehicles"
+msgstr "Эксклюзивная техника"
+
+msgid "wotPlusActivationDialog/benefits/freeEquipmentDemounting"
+msgstr "Бесплатный демонтаж оборудования"
+
+msgid "wotPlusActivationDialog/benefits/goldReserve"
+msgstr "Хранилище золота"
+
+msgid "wotPlusActivationDialog/benefits/intensiveCrewRegimen"
+msgstr "Курс подготовки экипажа"
+
+msgid "wotPlusActivationDialog/benefits/manageableXpMultiplier"
+msgstr "Управляемый бонус к опыту"
+
+msgid "wotPlusActivationDialog/benefits/proBoost"
+msgstr "Pro Boost"
+
+msgid "wotPlusActivationDialog/benefits/serviceRecordCustomization"
+msgstr "Настраиваемое окно достижений"
+
+msgid "wotPlusActivationDialog/benefits/tankerBanner"
+msgstr "Нашивка танкиста"
+
+msgid "wotPlusActivationDialog/cn/heading"
+msgstr "WOT PLUS АКТИВИРОВАНА"
+
+msgid "wotPlusActivationDialog/confirmation"
+msgstr "Готово!"
+
+msgid "wotPlusActivationDialog/core/description"
+msgstr "Продление подписки: {{date}}"
+
+msgid "wotPlusActivationDialog/core/heading"
+msgstr "WOT PLUS CORE АКТИВИРОВАНА"
+
+msgid "wotPlusActivationDialog/details"
+msgstr "Подробнее"
+
+msgid "wotPlusActivationDialog/planInterval12"
+msgstr "360 дней"
+
+msgid "wotPlusActivationDialog/planInterval6"
+msgstr "180 дней"
+
+msgid "wotPlusActivationDialog/pro/description"
+msgstr "{{planInterval}}, продление подписки {{date}}"
+
+msgid "wotPlusActivationDialog/pro/heading"
+msgstr "WOT PLUS PRO АКТИВИРОВАНА"
+
+msgid "wotPlusProBoostActivationDialog/confirm"
+msgstr "Активировать"
+
+msgid "wotPlusProBoostActivationDialog/description"
+msgstr ""
+"{{@ split}}Вы не сможете привязать бонус к другой машине ещё {{@ style "
+"(color #fff)}}{{boostInterval}} ч{{/}}.{{/}}"
+
+msgid "wotPlusProBoostActivationDialog/footer"
+msgstr ""
+"Активация Pro Boost позволяет этой технике получать на {{@ style (color "
+"#fff)}}{{bonusPercent}} больше кредитов и опыта{{/}}. Применяется только к "
+"одной машине."
+
+msgid "wotPlusProBoostActivationDialog/title"
+msgstr "Привязать Pro Boost к {{vehicle}}?"
+
+msgid "wotPlusProBoostSwitchDialog/confirm"
+msgstr "Переключить"
+
+msgid "wotPlusProBoostSwitchDialog/description"
+msgstr ""
+"{{@ split}}Только одна машина может получать бонус. Вы не сможете привязать "
+"бонус к другой технике ещё {{@ style (color #fff)}}{{boostInterval}} "
+"ч{{/}}.{{/}}"
+
+msgid "wotPlusProBoostSwitchDialog/footer"
+msgstr ""
+"Активация Pro Boost позволяет этой технике получать на {{@ style (color "
+"#fff)}}{{bonusPercent}} больше кредитов и опыта{{/}}. Применяется только к "
+"одной машине."
+
+msgid "wotPlusProBoostSwitchDialog/title"
+msgstr "Переключить Pro Boost на {{vehicle}}?"
+
+msgid "wotPlusProBoostSwitchDialog/vehicle"
+msgstr "{{tier}} {{type_image}} {{name}}"
+
 msgid "wotPlusRental/cancel"
 msgstr "Отменить"
 
@@ -3535,6 +3656,12 @@ msgstr "Арендовать"
 
 msgid "wotPlusRental/title"
 msgstr "Арендовать {cream_Open}%s{cream_Close}?"
+
+msgid "wotPlusServiceRecordCustomizationDialog/save"
+msgstr "Сохранить"
+
+msgid "wotPlusServiceRecordCustomizationDialog/title"
+msgstr "Вы хотите сохранить настройки вашего раздела «Достижения»?"
 
 msgid "xpToTmenCheckbox/cancel"
 msgstr "Отменить"

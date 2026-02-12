@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/italy/It40_Predatore/normal/lod1/Turret_01</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/italy/It40_Predatore/normal/lod2/Turret_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.480084 -0.003380 -2.942972</min>
+		<max>1.479510 3.065759 1.414213</max>
+	</visibilityBox>
+</root>

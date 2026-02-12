@@ -192,28 +192,26 @@ msgid "battlePage/statusNotificationTimers/sureShot"
 msgstr "ТТХ машины улучшены"
 
 msgid "battleResult/header/deserter"
-msgstr "К вам было применено дисциплинарное взыскание: штраф к очкам рейтинга"
+msgstr "Вы получили штраф к очкам рейтинга"
 
 msgid "battleResult/header/deserterQualification"
-msgstr ""
-"К вам было применено дисциплинарное взыскание — после прохождения "
-"квалификации рейтинг будет снижен"
+msgstr "Вы оштрафованы — после прохождения квалификации рейтинг будет снижен."
 
 msgid "battleResult/label/deserter"
 msgstr "Дезертирство"
 
 msgid "battleResult/message/deserter"
 msgstr ""
-"Вы получили дисциплинарное взыскание.\n"
+"Вы оштрафованы.\n"
 "Потеряно очков рейтинга: %(penalty)s"
 
 msgid "battleResult/message/deserterQualification"
 msgstr ""
-"Вы сбежали с поля боя и получили дисциплинарное взыскание.\n"
-"Рейтинг после прохождения квалификации будет снижен."
+"Вы бежали с поля боя.\n"
+"После прохождения квалификации рейтинг будет снижен."
 
 msgid "battleResult/message/header/deserter"
-msgstr "Дисциплинарное взыскание"
+msgstr "Неспортивное поведение"
 
 msgid "battleResult/personal/label"
 msgstr "Очки рейтинга"
@@ -226,7 +224,7 @@ msgstr ""
 msgid "battleResult/personal/tooltip/loseDescr"
 msgstr ""
 "• поражения/ничьи в боях режима;\n"
-"• получение дисциплинарного взыскания;\n"
+"• получение штрафа;\n"
 "• ранговую неактивность."
 
 msgid "battleResult/personal/tooltip/loseTitle"
@@ -2066,8 +2064,7 @@ msgstr "Полное расписание"
 
 msgid "tournament/visitShop/description/ols"
 msgstr ""
-"Если выбранная команда победит, вы получите особую нашивку зимней Лиги "
-"«Легенд Натиска» 2026. Болейте за своих фаворитов!"
+"Поддержите серию «Легенды Натиска» с помощью специальных турнирных наборов!"
 
 msgid "tournament/visitShop/description/wci"
 msgstr ""
@@ -2075,7 +2072,7 @@ msgstr ""
 "и уникальных машин!"
 
 msgid "tournament/visitShop/heading/ols"
-msgstr "НАБОРЫ ОРАКУЛА"
+msgstr "ПОПОЛНИТЕ ПРИЗОВОЙ ФОНД"
 
 msgid "tournament/visitShop/heading/wci"
 msgstr "НАБОРЫ WCI"

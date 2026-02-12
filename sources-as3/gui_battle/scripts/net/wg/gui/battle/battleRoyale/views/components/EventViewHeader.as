@@ -41,6 +41,10 @@ package net.wg.gui.battle.battleRoyale.views.components
       
       private var _battleType:String = "";
       
+      private var _battleTypeIconPathSmall:String = "";
+      
+      private var _battleTypeIconPathBig:String = "";
+      
       private var _disposed:Boolean = false;
       
       public function EventViewHeader()
@@ -72,15 +76,10 @@ package net.wg.gui.battle.battleRoyale.views.components
          this.subTitleTF.text = param1.subTitle;
          this.descriptionTF.text = param1.description;
          App.utils.commons.updateTextFieldSize(this.descriptionTF,false,true);
-         if(this._isSmallScreenSize)
-         {
-            this.battleIcon.source = RES_ICONS.maps_icons_battletypes_64x64_all_png(param1.battleType);
-         }
-         else
-         {
-            this.battleIcon.source = RES_ICONS.maps_icons_battletypes_136x136_all_png(param1.battleType);
-         }
          this._battleType = param1.battleType;
+         this._battleTypeIconPathSmall = param1.battleTypeIconPathSmall;
+         this._battleTypeIconPathBig = param1.battleTypeIconPathBig;
+         this.updateBattleIcon();
       }
       
       public function updateStage(param1:Number, param2:Number) : void
@@ -88,13 +87,18 @@ package net.wg.gui.battle.battleRoyale.views.components
          this.headerBG.width = param1;
          this.headerBG.x = -param1 >> 1;
          this._isSmallScreenSize = BattleRoyalePage.isSmallScreenSize(param1,param2);
+         this.updateBattleIcon();
+      }
+      
+      private function updateBattleIcon() : void
+      {
          if(this._isSmallScreenSize)
          {
-            this.battleIcon.source = RES_ICONS.maps_icons_battletypes_64x64_all_png(this._battleType);
+            this.battleIcon.source = this._battleTypeIconPathSmall;
          }
          else
          {
-            this.battleIcon.source = RES_ICONS.maps_icons_battletypes_136x136_all_png(this._battleType);
+            this.battleIcon.source = this._battleTypeIconPathBig;
          }
       }
       
@@ -108,12 +112,13 @@ package net.wg.gui.battle.battleRoyale.views.components
       {
          var _loc2_:Number = NaN;
          var _loc3_:Number = NaN;
+         var _loc4_:int = 0;
          var _loc5_:int = 0;
          _loc2_ = !!this._isSmallScreenSize ? Number(HEADER_BG_SMALL_HEIGHT) : Number(HEADER_BG_BIG_HEIGHT);
          _loc3_ = -this.battleIcon.width >> 1;
          this.battleIcon.x = _loc3_;
          this.battleIcon.y = _loc2_ - this.battleIcon.height >> 1;
-         var _loc4_:int = this.titleTF.textHeight;
+         _loc4_ = this.titleTF.textHeight;
          _loc5_ = !!this._isSmallScreenSize ? int(ICON_SMALL_MARGIN_X) : int(ICON_BIG_MARGIN_X);
          this.titleTF.x = _loc3_ - _loc5_ - this.titleTF.width;
          this.subTitleTF.x = _loc3_ - _loc5_ - this.subTitleTF.width;

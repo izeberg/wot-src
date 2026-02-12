@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging
 from gui.Scaleform.framework.entities.inject_component_adaptor import InjectComponentAdaptor
 from gui.impl.battle.death_cam.death_cam_hud_view import DeathCamHudView

@@ -1,8 +1,10 @@
+from __future__ import absolute_import
 import typing
-from frameworks.wulf import ViewModel, Array
 from gui.impl.gen.resources import R
 from gui.impl.gen.view_models.constants.dialog_presets import DialogPresets
 from gui.impl.pub.dialog_window import DialogWindow, DialogFlags
+if typing.TYPE_CHECKING:
+    from frameworks.wulf import ViewModel, Array
 
 class PureDialogWindow(DialogWindow):
 

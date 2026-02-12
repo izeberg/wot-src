@@ -25,6 +25,7 @@ def getCountNewSettings():
 def getNewSettings():
     settings = _getSettingsFromStorage()
     result = []
+    grouping = set()
     for tabID, tabsSettings in settings.iteritems():
         tabData = _getTabData(result, tabID)
         for subTabID, controlSettings in tabsSettings.iteritems():
@@ -34,6 +35,9 @@ def getNewSettings():
                 _packCounter(tabData, controlSettings, subTabID, controlID)
             else:
                 for controlID, state in controlSettings.iteritems():
+                    controlID = _tryGrouping(controlID, grouping)
+                    if not controlID:
+                        continue
                     _packCounter(tabData, state, subTabID, controlID)
 
     return result
@@ -49,7 +53,13 @@ def invalidateSettings(tabName, subTabName, controlIDs):
         else:
             subContainer = tabSettings
         for controlID in controlIDs:
-            if controlID in subContainer and subContainer[controlID]:
+            if controlID in settings_constants.GROUPS_NOVELTY_SETTINGS:
+                for controlName in settings_constants.GROUPS_NOVELTY_SETTINGS[controlID]:
+                    if controlName in subContainer and subContainer[controlName]:
+                        subContainer[controlName] = False
+                        isChanged = True
+
+            elif controlID in subContainer and subContainer[controlID]:
                 subContainer[controlID] = False
                 isChanged = True
 
@@ -118,3 +128,14 @@ def _setSettingsToStorage(value):
 
 def _filterSettings(value):
     return {category:{settingKey:settingValue for settingKey, settingValue in settings.iteritems() if isNewSettingCounterVisible(settingKey) if isNewSettingCounterVisible(settingKey)} for category, settings in value.iteritems()}
+
+
+def _tryGrouping(controlID, grouping):
+    for group, controls in settings_constants.GROUPS_NOVELTY_SETTINGS.iteritems():
+        if controlID in controls:
+            if group not in grouping:
+                grouping.add(group)
+                return group
+            return
+
+    return controlID

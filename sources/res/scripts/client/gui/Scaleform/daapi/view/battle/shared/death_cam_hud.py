@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.Scaleform.daapi.view.meta.DeathCamHudMeta import DeathCamHudMeta
 from gui.shared import EVENT_BUS_SCOPE
 from gui.shared.events import GameEvent, DeathCamEvent

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import Keys
 from account_helpers.settings_core.settings_constants import CONTROLS
 from gui.Scaleform.daapi.view.meta.IngameDetailsHelpWindowMeta import IngameDetailsHelpWindowMeta

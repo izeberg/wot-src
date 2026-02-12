@@ -1,3 +1,4 @@
+from __future__ import absolute_import, division
 import GUI
 from gui.Scaleform.daapi.view.battle.classic.minimap import GlobalSettingsPlugin
 from gui.Scaleform.daapi.view.battle.pve_base.minimap import PveMinimapComponent

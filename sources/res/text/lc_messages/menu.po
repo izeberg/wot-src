@@ -130,9 +130,6 @@ msgstr "Общий"
 msgid "accountTypes/subscription"
 msgstr "Премиум подписка"
 
-msgid "adventCalendar/window/title"
-msgstr "Загрузка..."
-
 msgid "ammoReload/additionBuy"
 msgstr "Докупить"
 
@@ -1038,6 +1035,9 @@ msgstr "Создать ивентный взвод"
 msgid "contextMenu/createMapboxSquad"
 msgstr "Разведка боем: создать взвод"
 
+msgid "contextMenu/createPlaylist"
+msgstr "Создать плейлист"
+
 msgid "contextMenu/createPrivateChannel"
 msgstr "Отправить сообщение"
 
@@ -1130,6 +1130,9 @@ msgstr "Покинуть взвод"
 
 msgid "contextMenu/lockSlot"
 msgstr "Заблокировать слот"
+
+msgid "contextMenu/managePlaylists"
+msgstr "Плейлисты"
 
 msgid "contextMenu/mentorAssignment"
 msgstr "Наставничество"
@@ -2204,6 +2207,12 @@ msgstr ""
 msgid "extraParams/name/foliageMaskingFactor"
 msgstr "Параметр, отвечающий за силу эффекта маскировки от растительности."
 
+msgid "extraParams/name/hpRecover"
+msgstr ""
+"Параметр, отвечающий за эффективность восстановления прочности при "
+"использовании ремкомплекта. Чем выше значение, тем больше очков прочности "
+"будет восстановлено."
+
 msgid "extraParams/name/mediumGroundFactor"
 msgstr ""
 "Параметр, отвечающий за качество сцепления ходовой с поверхностью при "
@@ -2214,6 +2223,11 @@ msgid "extraParams/name/penaltyToDamagedSurveyingDevice"
 msgstr ""
 "Параметр, отвечающий за снижение штрафа к максимальной дальности обзора при "
 "повреждении приборов наблюдения. Чем ниже это значение, тем лучше обзор."
+
+msgid "extraParams/name/piercingHEShellsDistributionUpperBound"
+msgstr ""
+"Параметр, отвечающий за увеличение максимального бронепробития снарядов на "
+"расстоянии до 50 м. Чем выше значение, тем лучше бронепробитие."
 
 msgid "extraParams/name/radiomanActivityTimeAfterVehicleDestroy"
 msgstr ""
@@ -2237,6 +2251,11 @@ msgstr ""
 msgid "extraParams/name/stunResistanceEffectFactor"
 msgstr ""
 "Параметр, отвечающий за силу негативного эффекта при оглушении экипажа."
+
+msgid "extraParams/name/suspensionDamageReduction"
+msgstr ""
+"Параметр, отвечающий за уменьшение урона по вашей ходовой. Чем выше "
+"значение, тем меньше урона будет получено."
 
 msgid "extraParams/name/vehPenaltyForDamagedAmmorack"
 msgstr ""
@@ -2437,27 +2456,6 @@ msgstr "Открыть карточку клана"
 
 msgid "fortificationCtx/prepareOrder"
 msgstr "Подготовить резерв"
-
-msgid "goldFish/buttonClose"
-msgstr "Закрыть"
-
-msgid "goldFish/eventLink"
-msgstr "Перейти в магазин"
-
-msgid "goldFish/eventText"
-msgstr ""
-"Только один раз! Совершая покупку в Премиум магазине, вы получаете в подарок дополнительное игровое золото.\n"
-"\n"
-"Чтобы ознакомиться с акционным предложением, нажмите «Перейти в магазин». Будет открыт браузер по умолчанию."
-
-msgid "goldFish/eventTitle"
-msgstr "ВЫГОДНОЕ ПРЕДЛОЖЕНИЕ НА ПОКУПКУ ИГРОВОГО ЗОЛОТА"
-
-msgid "goldFish/header"
-msgstr "Единовременная акция в Премиум магазине"
-
-msgid "goldFish/windowHeader"
-msgstr "Информационный листок"
 
 msgid "hangar/ammunitionPanel/easyTankEquipBtn"
 msgstr "Быстрое обслуживание"
@@ -3175,9 +3173,6 @@ msgstr "Кланы"
 
 msgid "headerButtons/defaultCounter"
 msgstr "!"
-
-msgid "headerButtons/doLabel/premium"
-msgstr "Продлить"
 
 msgid "headerButtons/fightBtn/tooltip/battleRoyaleDisabled/body"
 msgstr "На этом сервере режим прекращения огня."
@@ -4012,6 +4007,9 @@ msgstr " "
 msgid "loading/battleTypes/desc/9"
 msgstr " "
 
+msgid "loading/battleTypes/subTitle/23"
+msgstr "Битва за трилистник"
+
 msgid "loading/helpTip"
 msgstr "Для вызова экрана помощи в бою нажмите клавишу F1."
 
@@ -4635,7 +4633,7 @@ msgid "moduleInfo/params/forwardMaxSpeed"
 msgstr "Максимальная скорость"
 
 msgid "moduleInfo/params/guaranteedDamage/footnote"
-msgstr "Снаряд наносит небольшую часть урона при непробитии."
+msgstr "Всегда наносит урон при попадании в основную броню"
 
 msgid "moduleInfo/params/hullAndChassisWeight"
 msgstr "Масса"
@@ -4682,6 +4680,17 @@ msgstr " для данного типа снарядов не зависит о�
 msgid "moduleInfo/params/noPiercingDistance/footnote/maxDistance"
 msgstr ", максимальная дальность полёта - 400 м"
 
+msgid "moduleInfo/params/normalisation"
+msgstr "Угол нормализации"
+
+msgid "moduleInfo/params/penetrationLoss"
+msgstr "Потеря бронепробития"
+
+msgid "moduleInfo/params/penetrationLoss/footnote"
+msgstr ""
+" этот тип снаряда начинает терять бронепробитие с расстоянием после "
+"прохождения через первый экран"
+
 msgid "moduleInfo/params/piercingDistance"
 msgstr "%(dist)s м"
 
@@ -4724,11 +4733,25 @@ msgstr "Перезарядка орудия в одиночном режиме"
 msgid "moduleInfo/params/reloadTimeTwinGun"
 msgstr "Перезарядка орудия в залповом режиме"
 
+msgid "moduleInfo/params/ricochetAngle"
+msgstr "Угол рикошета"
+
 msgid "moduleInfo/params/rocketAccelerationEnginePower"
 msgstr "Мощность двигателя (с ускорит.)"
 
 msgid "moduleInfo/params/rotationSpeed"
 msgstr "Скорость поворота"
+
+msgid "moduleInfo/params/screensArmorMultiplier"
+msgstr "Множитель разнесённой брони"
+
+msgid "moduleInfo/params/screensArmorMultiplier/footnote"
+msgstr ""
+" этот тип снаряда пробивает экраны как обычно, но затем теряет бронепробитие"
+" в количестве, равном трёхкратной толщине экрана"
+
+msgid "moduleInfo/params/screensArmorMultiplier/value"
+msgstr "x%(multiplier)s"
 
 msgid "moduleInfo/params/shellLoadingTime"
 msgstr "Время подготовки ленты боеприпасов"
@@ -5365,12 +5388,6 @@ msgstr ""
 msgid "progressiveReward/widget/title"
 msgstr "Довольствие"
 
-msgid "promo/patch/message"
-msgstr "Текущая версия:"
-
-msgid "promo/patch/title"
-msgstr "Информационный листок"
-
 msgid "promo/teaser/title"
 msgstr "Полевая почта"
 
@@ -5385,9 +5402,6 @@ msgstr "%(hour)s:%(min)s:%(sec)s"
 
 msgid "promo/teaserTimeFormat/min"
 msgstr "%(hour)s:%(min)s:%(sec)s"
-
-msgid "promo/toArchive"
-msgstr "Информационный листок"
 
 msgid "quote"
 msgstr "«%(string)s»"
@@ -6637,6 +6651,9 @@ msgstr ""
 "Заряд параллаксного электромеханического прицела (%/с) (боевой режим, "
 "пассивно)"
 
+msgid "tank_params/penetrationLoss"
+msgstr "(%/100 мм)"
+
 msgid "tank_params/perActivation"
 msgstr "(за активацию)"
 
@@ -7038,18 +7055,6 @@ msgstr "(Ожидает бой)"
 
 msgid "tankmen/mediumTank"
 msgstr "средний танк"
-
-msgid "techtree/Announcement"
-msgstr "Скоро"
-
-msgid "techtree/premiumPanel/btnLabel"
-msgstr "Ещё %(count)s в Магазине"
-
-msgid "techtree/premiumPanel/btnLabel/count"
-msgstr "%(count)s"
-
-msgid "techtree/premiumPanel/title"
-msgstr "ПРЕМИУМ ТЕХНИКА"
 
 msgid "timeLeft/full/day"
 msgstr "{day} д {hour} ч"
@@ -7681,68 +7686,35 @@ msgstr "К ДЕРЕВУ ИССЛЕДОВАНИЙ"
 msgid "viewHeader/backBtn/descrLabel/techtree/china"
 msgstr "К ТЕХНИКЕ КИТАЯ"
 
-msgid "viewHeader/backBtn/descrLabel/techtree/china/blueprints"
-msgstr "К ЧЕРТЕЖАМ КИТАЯ"
-
 msgid "viewHeader/backBtn/descrLabel/techtree/czech"
 msgstr "К ТЕХНИКЕ ЧЕХОСЛОВАКИИ"
-
-msgid "viewHeader/backBtn/descrLabel/techtree/czech/blueprints"
-msgstr "К ЧЕРТЕЖАМ ЧЕХОСЛОВАКИИ"
 
 msgid "viewHeader/backBtn/descrLabel/techtree/france"
 msgstr "К ТЕХНИКЕ ФРАНЦИИ"
 
-msgid "viewHeader/backBtn/descrLabel/techtree/france/blueprints"
-msgstr "К ЧЕРТЕЖАМ ФРАНЦИИ"
-
 msgid "viewHeader/backBtn/descrLabel/techtree/germany"
 msgstr "К ТЕХНИКЕ ГЕРМАНИИ"
-
-msgid "viewHeader/backBtn/descrLabel/techtree/germany/blueprints"
-msgstr "К ЧЕРТЕЖАМ ГЕРМАНИИ"
 
 msgid "viewHeader/backBtn/descrLabel/techtree/italy"
 msgstr "К ТЕХНИКЕ ИТАЛИИ"
 
-msgid "viewHeader/backBtn/descrLabel/techtree/italy/blueprints"
-msgstr "К ЧЕРТЕЖАМ ИТАЛИИ"
-
 msgid "viewHeader/backBtn/descrLabel/techtree/japan"
 msgstr "К ТЕХНИКЕ ЯПОНИИ"
-
-msgid "viewHeader/backBtn/descrLabel/techtree/japan/blueprints"
-msgstr "К ЧЕРТЕЖАМ ЯПОНИИ"
 
 msgid "viewHeader/backBtn/descrLabel/techtree/poland"
 msgstr "К ТЕХНИКЕ ПОЛЬШИ"
 
-msgid "viewHeader/backBtn/descrLabel/techtree/poland/blueprints"
-msgstr "К ЧЕРТЕЖАМ ПОЛЬШИ"
-
 msgid "viewHeader/backBtn/descrLabel/techtree/sweden"
 msgstr "К ТЕХНИКЕ ШВЕЦИИ"
-
-msgid "viewHeader/backBtn/descrLabel/techtree/sweden/blueprints"
-msgstr "К ЧЕРТЕЖАМ ШВЕЦИИ"
 
 msgid "viewHeader/backBtn/descrLabel/techtree/uk"
 msgstr "К ТЕХНИКЕ ВЕЛИКОБРИТАНИИ"
 
-msgid "viewHeader/backBtn/descrLabel/techtree/uk/blueprints"
-msgstr "К ЧЕРТЕЖАМ ВЕЛИКОБРИТАНИИ"
-
 msgid "viewHeader/backBtn/descrLabel/techtree/usa"
 msgstr "К ТЕХНИКЕ США"
 
-msgid "viewHeader/backBtn/descrLabel/techtree/usa/blueprints"
-msgstr "К ЧЕРТЕЖАМ США"
-
 msgid "viewHeader/backBtn/descrLabel/techtree/ussr"
 msgstr "К ТЕХНИКЕ СССР"
-
-msgid "viewHeader/backBtn/descrLabel/techtree/ussr/blueprints"
-msgstr "К ЧЕРТЕЖАМ СССР"
 
 msgid "viewHeader/backBtn/label"
 msgstr "НАЗАД"

@@ -28,19 +28,14 @@ package net.wg.gui.lobby.profile.pages.statistics
       
       private var _tooltip:String = null;
       
-      private var animationClient:StatisticsChartItemAnimClient;
+      private var _animationClient:StatisticsChartItemAnimClient;
       
       public function StatisticBarChartItem()
       {
          this.tweenManager = new ExcludeTweenManager();
          super();
-         this.animationClient = new StatisticsChartItemAnimClient(this);
+         this._animationClient = new StatisticsChartItemAnimClient(this);
          stop();
-      }
-      
-      private static function hideToolTip() : void
-      {
-         App.toolTipMgr.hide();
       }
       
       override protected function configUI() : void
@@ -54,7 +49,7 @@ package net.wg.gui.lobby.profile.pages.statistics
          var _loc1_:Object = {};
          _loc1_[StatisticsChartItemAnimClient.FRAME_NUMBER_PROPERTY] = value + 1;
          _loc1_[StatisticsChartItemAnimClient.VALUE_PROPERTY] = _data.yField >= 0 ? _data.yField : 0;
-         this.tweenManager.registerAndLaunch(tweeSpeed,this.animationClient,_loc1_,this.getQuickSet());
+         this.tweenManager.registerAndLaunch(tweeSpeed,this._animationClient,_loc1_,this.getQuickSet());
          super.applyValueChange();
       }
       
@@ -64,7 +59,9 @@ package net.wg.gui.lobby.profile.pages.statistics
          this.textField = null;
          this.background = null;
          this.tweenManager.dispose();
-         this.animationClient.dispose();
+         this.tweenManager = null;
+         this._animationClient.dispose();
+         this._animationClient = null;
          this.disposeHandlers();
          super.onDispose();
       }
@@ -123,12 +120,12 @@ package net.wg.gui.lobby.profile.pages.statistics
          }
       }
       
-      protected function mouseRollOutHandler(param1:MouseEvent) : void
+      private function mouseRollOutHandler(param1:MouseEvent) : void
       {
-         hideToolTip();
+         App.toolTipMgr.hide();
       }
       
-      protected function mouseRollOverHandler(param1:MouseEvent) : void
+      private function mouseRollOverHandler(param1:MouseEvent) : void
       {
          this.showToolTip();
       }

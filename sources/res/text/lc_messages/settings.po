@@ -839,9 +839,6 @@ msgstr "Очки защиты базы"
 msgid "feedback/tab/battleEvents/checkbox/BlockedDamage"
 msgstr "Удар сдержан"
 
-msgid "feedback/tab/battleEvents/checkbox/CrewPerks"
-msgstr "Навыки экипажа"
-
 msgid "feedback/tab/battleEvents/checkbox/EnemyBurning"
 msgstr "Поджог противника"
 
@@ -884,6 +881,9 @@ msgstr "Информация о машине"
 msgid "feedback/tab/battleEvents/checkbox/WorldCollision"
 msgstr "Урон от падения"
 
+msgid "feedback/tab/battleEvents/checkbox/allSituationalPerks"
+msgstr "Все ситуативные эффекты"
+
 msgid "feedback/tab/battleEvents/info"
 msgstr ""
 "В бою отображаются\n"
@@ -897,6 +897,9 @@ msgstr "Информирование"
 
 msgid "feedback/tab/battleEvents/label/VisibleEvents"
 msgstr "События"
+
+msgid "feedback/tab/battleEvents/label/crewPerks"
+msgstr "Навыки экипажа"
 
 msgid "feedback/tab/battleEvents/label/negative"
 msgstr "Получение урона"

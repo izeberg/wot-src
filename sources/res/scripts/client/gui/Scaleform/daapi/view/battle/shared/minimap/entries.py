@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld
 from gui.Scaleform.daapi.view.battle.shared.minimap import settings
 from gui.battle_control.battle_constants import VEHICLE_LOCATION

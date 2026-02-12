@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import WWISE
 from constants import ARENA_PERIOD
 from gui.Scaleform.daapi.view.meta.BattleEndWarningPanelMeta import BattleEndWarningPanelMeta

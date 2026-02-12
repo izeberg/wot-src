@@ -81,17 +81,6 @@ msgstr "Доступные карты:"
 msgid "modeInfoTooltip/title"
 msgstr "Разминка"
 
-msgid "progression/counter"
-msgstr "%(completed)s / %(total)s"
-
-msgid "progression/description"
-msgstr ""
-"Каждая выполненная стандартная, премиум или бонусная задача приближает вас к"
-" награде."
-
-msgid "progression/title"
-msgstr "Выполненных задач: %(counter)s"
-
 msgid "selectableRewardTooltip/basic/description"
 msgstr ""
 "Для выбора доступна любая исследуемая техника %(level)s уровня. Машина идёт "
@@ -115,9 +104,6 @@ msgstr ""
 
 msgid "selectableRewardTooltip/discount/title"
 msgstr "Скидка на машину %(level)s уровня"
-
-msgid "takeReward/buttonText"
-msgstr "Забрать награду"
 
 msgid "vehicleDiscountRewardTooltip/description"
 msgstr ""

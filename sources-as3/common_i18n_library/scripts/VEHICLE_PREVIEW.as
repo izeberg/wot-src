@@ -13,8 +13,6 @@ package
       
       public static const HEADER_BACKBTN_DESCRLABEL_STORAGE:String = "#vehicle_preview:header/backBtn/descrLabel/storage";
       
-      public static const HEADER_BACKBTN_DESCRLABEL_ADVENTCALENDAR:String = "#vehicle_preview:header/backBtn/descrLabel/adventCalendar";
-      
       public static const HEADER_BACKBTN_DESCRLABEL_HANGAR:String = "#vehicle_preview:header/backBtn/descrLabel/hangar";
       
       public static const HEADER_BACKBTN_DESCRLABEL_VEHICLECOMPARE:String = "#vehicle_preview:header/backBtn/descrLabel/vehicleCompare";
@@ -138,8 +136,6 @@ package
       public static const BUYINGPANEL_BUYBTN_LABEL_RESEARCH:String = "#vehicle_preview:buyingPanel/buyBtn/label/research";
       
       public static const BUYINGPANEL_BUYBTN_LABEL_OBTAIN:String = "#vehicle_preview:buyingPanel/buyBtn/label/obtain";
-      
-      public static const BUYINGPANEL_BUYBTN_LABEL_SHOWADVENTCALENDAR:String = "#vehicle_preview:buyingPanel/buyBtn/label/showAdventCalendar";
       
       public static const BUYINGPANEL_BUYBTN_LABEL_OFFSPRING:String = "#vehicle_preview:buyingPanel/buyBtn/label/offspring";
       

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<xmlns:xmlref>http://bwt/xmlref</xmlns:xmlref>
 	<ids>
 		<_75mm_Type5_1>0</_75mm_Type5_1>
 		<_13.2mm_Type93>1</_13.2mm_Type93>
@@ -9375,35 +9374,38 @@
 			<reloadEffect>reload115_152</reloadEffect>
 			<pitchLimits>
 				<minPitch>
-					0.0 -5 1.0 -5
+					0.0 -15.0 1.0 -15.0
 					<!--BW_String-->
 				</minPitch>
 				<maxPitch>
-					0.0 5 1.0 5
+					0.0 9.0 1.0 9.0
 					<!--BW_String-->
 				</maxPitch>
 			</pitchLimits>
 			<turretYawLimits>-180 180</turretYawLimits>
 			<rotationSpeed>
-				0.96
+				23.625
 				<!--BW_String-->
 			</rotationSpeed>
-			<reloadTime>60</reloadTime>
+			<reloadTime>
+				9.7
+				<!--BW_String-->
+			</reloadTime>
 			<maxAmmo>55</maxAmmo>
 			<aimingTime>
-				10.43
+				2.0
 				<!--BW_String-->
 			</aimingTime>
-			<weight>100</weight>
+			<weight>4200</weight>
 			<maxHealth>240</maxHealth>
 			<maxRegenHealth>120</maxRegenHealth>
 			<repairCost>11</repairCost>
 			<invisibilityFactorAtShot>
-				0.1
+				0.162
 				<!--BW_String-->
 			</invisibilityFactorAtShot>
 			<shotDispersionRadius>
-				1.04
+				0.22
 				<!--BW_String-->
 			</shotDispersionRadius>
 			<shotDispersionFactors>
@@ -9422,9 +9424,12 @@
 			</shotDispersionFactors>
 			<mechanics>
 				<temperatureGun>
-					<heatingPerShot>100</heatingPerShot>
-					<coolingDelay>1000</coolingDelay>
-					<coolingPerSec>1000</coolingPerSec>
+					<heatingPerShot>60</heatingPerShot>
+					<coolingDelay>1</coolingDelay>
+					<coolingPerSec>
+						2.5
+						<!--BW_String-->
+					</coolingPerSec>
 					<thermalStateHysteresis>1</thermalStateHysteresis>
 					<thermalStates>
 						<state>
@@ -9433,7 +9438,10 @@
 							<modifiers>
 								<mul>
 									<name>dynAttrs/multShotDispersionFactor</name>
-									<value>1</value>
+									<value>
+										2.136
+										<!--BW_String-->
+									</value>
 								</mul>
 							</modifiers>
 						</state>
@@ -9442,7 +9450,10 @@
 							<modifiers>
 								<mul>
 									<name>dynAttrs/multShotDispersionFactor</name>
-									<value>1</value>
+									<value>
+										1.909
+										<!--BW_String-->
+									</value>
 								</mul>
 							</modifiers>
 						</state>
@@ -9451,7 +9462,10 @@
 							<modifiers>
 								<mul>
 									<name>dynAttrs/multShotDispersionFactor</name>
-									<value>1</value>
+									<value>
+										1.682
+										<!--BW_String-->
+									</value>
 								</mul>
 							</modifiers>
 						</state>
@@ -9460,7 +9474,10 @@
 							<modifiers>
 								<mul>
 									<name>dynAttrs/multShotDispersionFactor</name>
-									<value>1</value>
+									<value>
+										1.455
+										<!--BW_String-->
+									</value>
 								</mul>
 							</modifiers>
 						</state>
@@ -9469,7 +9486,10 @@
 							<modifiers>
 								<mul>
 									<name>dynAttrs/multShotDispersionFactor</name>
-									<value>1</value>
+									<value>
+										1.227
+										<!--BW_String-->
+									</value>
 								</mul>
 							</modifiers>
 						</state>
@@ -9491,7 +9511,7 @@
 						<!--BW_String-->
 					</gravity>
 					<maxDistance>720</maxDistance>
-					<piercingPower>100</piercingPower>
+					<piercingPower>265 245</piercingPower>
 				</_137_2mm_AP_TK_DK>
 				<_137_2mm_APDS_TK_DK>
 					<defaultPortion>
@@ -9504,7 +9524,7 @@
 						<!--BW_String-->
 					</gravity>
 					<maxDistance>720</maxDistance>
-					<piercingPower>100</piercingPower>
+					<piercingPower>325 305</piercingPower>
 				</_137_2mm_APDS_TK_DK>
 				<_137_2mm_HE_TK_DK>
 					<defaultPortion>
@@ -9517,7 +9537,7 @@
 						<!--BW_String-->
 					</gravity>
 					<maxDistance>720</maxDistance>
-					<piercingPower>100</piercingPower>
+					<piercingPower>64 64</piercingPower>
 				</_137_2mm_HE_TK_DK>
 			</shots>
 		</_137_2mm_TK_DK>

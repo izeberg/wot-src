@@ -381,10 +381,6 @@ class IStatsRequester(IRequester):
         raise NotImplementedError
 
     @property
-    def isGoldFishBonusApplied(self):
-        raise NotImplementedError
-
-    @property
     def isAnonymousRestricted(self):
         raise NotImplementedError
 
@@ -850,6 +846,10 @@ class IBattleRoyaleRequester(IRequester):
 
     @property
     def topCount(self):
+        raise NotImplementedError
+
+    @property
+    def dailyBonusUsedVehicles(self):
         raise NotImplementedError
 
     def getStats(self, arenaBonusType, playerDatabaseID=None):

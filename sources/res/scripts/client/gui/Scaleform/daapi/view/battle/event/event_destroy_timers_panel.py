@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.battle_control.battle_constants import VEHICLE_VIEW_STATE
 from gui.Scaleform.daapi.view.meta.EventDestroyTimersPanelMeta import EventDestroyTimersPanelMeta
 from gui.Scaleform.genConsts.BATTLE_NOTIFICATIONS_TIMER_TYPES import BATTLE_NOTIFICATIONS_TIMER_TYPES

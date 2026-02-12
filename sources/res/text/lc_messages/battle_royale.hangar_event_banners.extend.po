@@ -1,5 +1,15 @@
 msgid ""
 msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-01 10:00+0300\n"
+"PO-Revision-Date: 2010-06-01 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
 
 msgid "event/BattleRoyaleEntryPoint/inProgress/description"
 msgstr "Останьтесь последним в бою!"
@@ -8,4 +18,13 @@ msgid "event/BattleRoyaleEntryPoint/intro/description"
 msgstr "Королевская битва"
 
 msgid "event/BattleRoyaleEntryPoint/title"
+msgstr "СТАЛЬНОЙ ОХОТНИК"
+
+msgid "event/StPatrickEntryPoint/inProgress/description"
+msgstr "Окрасьте поле боя в зелёный!"
+
+msgid "event/StPatrickEntryPoint/intro/description"
+msgstr "Битва за трилистник"
+
+msgid "event/StPatrickEntryPoint/title"
 msgstr "СТАЛЬНОЙ ОХОТНИК"

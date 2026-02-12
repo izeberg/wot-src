@@ -14,7 +14,7 @@ package net.wg.gui.lobby.profile.pages.statistics
    {
        
       
-      protected var _data:StatisticChartInfo;
+      private var _data:StatisticChartInfo;
       
       private var _tooltip:String = null;
       
@@ -258,7 +258,7 @@ package net.wg.gui.lobby.profile.pages.statistics
       {
       }
       
-      protected function mouseRollOverHandler(param1:MouseEvent) : void
+      private function mouseRollOverHandler(param1:MouseEvent) : void
       {
          this.showToolTip();
       }

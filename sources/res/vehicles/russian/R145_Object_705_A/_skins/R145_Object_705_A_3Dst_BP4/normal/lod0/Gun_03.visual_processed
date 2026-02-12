@@ -103,8 +103,8 @@
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
 		<node>G_BlendBone</node>
 		<node>Gun_BlendBone</node>
-		<node>static_joint_BlendBone</node>
 		<node>joint1_BlendBone</node>
+		<node>static_joint_BlendBone</node>
 		<geometry>
 			<vertices>gun_03_Shape.vertices</vertices>
 			<primitive>gun_03_Shape.indices</primitive>
@@ -113,15 +113,44 @@
 				<material>
 					<identifier>tank_guns_skinned</identifier>
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
-					<materialKind>0</materialKind>
 					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
 					<property>
-						diffuseMap
-						<Texture>vehicles/russian/R145_Object_705_A/_skins/R145_Object_705_A_3Dst_BP4/Object_705_A_3Dst_BP4_guns_AM.dds</Texture>
+						g_detailUVTiling
+						<Vector4>4.208220 4.208220 0.000000 0.000000</Vector4>
 					</property>
 					<property>
-						excludeMaskAndAOMap
-						<Texture>vehicles/russian/R145_Object_705_A/_skins/R145_Object_705_A_3Dst_BP4/Object_705_A_3Dst_BP4_guns_AO.dds</Texture>
+						g_detailPowerGloss
+						<Float>
+							0.35
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_maskBias
+						<Float>
+							0.18
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailPower
+						<Float>5</Float>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
 					</property>
 					<property>
 						metallicGlossMap
@@ -132,16 +161,12 @@
 						<Texture>vehicles/russian/R145_Object_705_A/_skins/R145_Object_705_A_3Dst_BP4/Object_705_A_3Dst_BP4_guns_ANM.dds</Texture>
 					</property>
 					<property>
-						g_detailUVTiling
-						<Vector4>4.208220 4.208220 0.000000 0.000000</Vector4>
+						diffuseMap
+						<Texture>vehicles/russian/R145_Object_705_A/_skins/R145_Object_705_A_3Dst_BP4/Object_705_A_3Dst_BP4_guns_AM.dds</Texture>
 					</property>
 					<property>
-						metallicDetailMap
-						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
-					</property>
-					<property>
-						g_useDetailMetallic
-						<Bool>true</Bool>
+						excludeMaskAndAOMap
+						<Texture>vehicles/russian/R145_Object_705_A/_skins/R145_Object_705_A_3Dst_BP4/Object_705_A_3Dst_BP4_guns_AO.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>0.001235 0.102836 -3.278313</groupOrigin>
@@ -149,17 +174,46 @@
 			<primitiveGroup>
 				1
 				<material>
-					<identifier>tank_upgrade_02_skinned</identifier>
+					<identifier>tank_upgrade_03_skinned</identifier>
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
-					<materialKind>0</materialKind>
 					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
 					<property>
-						diffuseMap
-						<Texture>vehicles/russian/R145_Object_705_A/_skins/R145_Object_705_A_3Dst_BP4/Object_705_A_3Dst_BP4_guns_AM.dds</Texture>
+						g_detailUVTiling
+						<Vector4>4.208220 4.208220 0.000000 0.000000</Vector4>
 					</property>
 					<property>
-						excludeMaskAndAOMap
-						<Texture>vehicles/russian/R145_Object_705_A/_skins/R145_Object_705_A_3Dst_BP4/Object_705_A_3Dst_BP4_guns_AO.dds</Texture>
+						g_detailPowerGloss
+						<Float>
+							0.35
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_maskBias
+						<Float>
+							0.18
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailPower
+						<Float>5</Float>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
 					</property>
 					<property>
 						metallicGlossMap
@@ -170,16 +224,12 @@
 						<Texture>vehicles/russian/R145_Object_705_A/_skins/R145_Object_705_A_3Dst_BP4/Object_705_A_3Dst_BP4_guns_ANM.dds</Texture>
 					</property>
 					<property>
-						g_detailUVTiling
-						<Vector4>4.208220 4.208220 0.000000 0.000000</Vector4>
+						diffuseMap
+						<Texture>vehicles/russian/R145_Object_705_A/_skins/R145_Object_705_A_3Dst_BP4/Object_705_A_3Dst_BP4_guns_AM.dds</Texture>
 					</property>
 					<property>
-						metallicDetailMap
-						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
-					</property>
-					<property>
-						g_useDetailMetallic
-						<Bool>true</Bool>
+						excludeMaskAndAOMap
+						<Texture>vehicles/russian/R145_Object_705_A/_skins/R145_Object_705_A_3Dst_BP4/Object_705_A_3Dst_BP4_guns_AO.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>-1.310103 -0.002473 0.013774</groupOrigin>
@@ -189,15 +239,44 @@
 				<material>
 					<identifier>tank_upgrade_04_skinned</identifier>
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
-					<materialKind>0</materialKind>
 					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
 					<property>
-						diffuseMap
-						<Texture>vehicles/russian/R145_Object_705_A/_skins/R145_Object_705_A_3Dst_BP4/Object_705_A_3Dst_BP4_guns_AM.dds</Texture>
+						g_detailUVTiling
+						<Vector4>4.208220 4.208220 0.000000 0.000000</Vector4>
 					</property>
 					<property>
-						excludeMaskAndAOMap
-						<Texture>vehicles/russian/R145_Object_705_A/_skins/R145_Object_705_A_3Dst_BP4/Object_705_A_3Dst_BP4_guns_AO.dds</Texture>
+						g_detailPowerGloss
+						<Float>
+							0.35
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_maskBias
+						<Float>
+							0.18
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailPower
+						<Float>5</Float>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
 					</property>
 					<property>
 						metallicGlossMap
@@ -208,19 +287,15 @@
 						<Texture>vehicles/russian/R145_Object_705_A/_skins/R145_Object_705_A_3Dst_BP4/Object_705_A_3Dst_BP4_guns_ANM.dds</Texture>
 					</property>
 					<property>
-						g_detailUVTiling
-						<Vector4>4.208220 4.208220 0.000000 0.000000</Vector4>
+						diffuseMap
+						<Texture>vehicles/russian/R145_Object_705_A/_skins/R145_Object_705_A_3Dst_BP4/Object_705_A_3Dst_BP4_guns_AM.dds</Texture>
 					</property>
 					<property>
-						metallicDetailMap
-						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
-					</property>
-					<property>
-						g_useDetailMetallic
-						<Bool>true</Bool>
+						excludeMaskAndAOMap
+						<Texture>vehicles/russian/R145_Object_705_A/_skins/R145_Object_705_A_3Dst_BP4/Object_705_A_3Dst_BP4_guns_AO.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.004902 0.126728 -2.203890</groupOrigin>
+				<groupOrigin>0.004902 0.116030 -3.242556</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -229,5 +304,5 @@
 		<min>-1.653690 -0.298749 -0.251186</min>
 		<max>0.513414 0.511075 6.713292</max>
 	</boundingBox>
-	<geometrySize>309690</geometrySize>
+	<geometrySize>494502</geometrySize>
 </root>

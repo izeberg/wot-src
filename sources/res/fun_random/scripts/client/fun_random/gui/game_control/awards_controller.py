@@ -27,7 +27,7 @@ class FunProgressionQuestsHandler(ServiceChannelHandler, FunProgressionWatcher):
 
     def _needToShowAward(self, ctx):
         if super(FunProgressionQuestsHandler, self)._needToShowAward(ctx):
-            return bool([ qID for qID in _getMessage(ctx).data.get('completedQuestIDs', set()) if self._funRandomCtrl.progressions.isProgressionExecutor(qID) ])
+            return any(self._funRandomCtrl.progressions.isProgressionExecutor(qID) for qID in _getMessage(ctx).data.get('completedQuestIDs', set()))
         return False
 
 

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.Scaleform.daapi.view.battle.shared.markers2d.vehicle_plugins import RespawnableVehicleMarkerPlugin
 from gui.battle_control.battle_constants import FEEDBACK_EVENT_ID as _EVENT_ID
 

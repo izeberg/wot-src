@@ -112,6 +112,15 @@ msgstr "Не вступайте в бой."
 msgid "battle/respawnMessagePanel/squad/stayInCover/title"
 msgstr "Возрождение союзника"
 
+msgid "battle/winnerCongratulationsView/bonusActivated"
+msgstr "Бонус активирован!"
+
+msgid "battle/winnerCongratulationsView/bonusForFirstPlace"
+msgstr "Награда за первое место"
+
+msgid "battle/winnerCongratulationsView/colected"
+msgstr "Собрано за бой"
+
 msgid "battle/winnerCongratulationsView/title"
 msgstr "ПОБЕДА"
 
@@ -198,49 +207,49 @@ msgstr "Настоящее имя игрока: {name}"
 msgid "battleResult/stats/anonymizer/header"
 msgstr "Имя игрока изменено на {name}"
 
-msgid "battleResult/stats/damageBlockedByArmor/body"
+msgid "battleResult/stats/body/damageBlockedByArmor"
 msgstr "Количество единиц урона, заблокированного бронёй вашей машины."
 
-msgid "battleResult/stats/damageBlockedByArmor/header"
-msgstr "Заблокировано урона"
-
-msgid "battleResult/stats/damageBlockedByArmor/title"
-msgstr "Заблокировано урона"
-
-msgid "battleResult/stats/damageDealt/body"
+msgid "battleResult/stats/body/damageDealt"
 msgstr "Количество нанесённого вами урона."
 
-msgid "battleResult/stats/damageDealt/header"
-msgstr "Нанесено урона"
-
-msgid "battleResult/stats/damageDealt/title"
-msgstr "Нанесено урона"
-
-msgid "battleResult/stats/kills/body"
+msgid "battleResult/stats/body/kills"
 msgstr "Количество уничтоженных вами машин противника."
 
-msgid "battleResult/stats/kills/header"
-msgstr "Уничтожено лично"
-
-msgid "battleResult/stats/kills/title"
-msgstr "Уничтожено лично"
-
-msgid "battleResult/stats/place/body"
+msgid "battleResult/stats/body/place"
 msgstr "Ваша позиция по результатам боя."
 
-msgid "battleResult/stats/place/header"
-msgstr "Позиция"
-
-msgid "battleResult/stats/place/title"
-msgstr "Позиция"
-
-msgid "battleResult/stats/squadKills/body"
+msgid "battleResult/stats/body/squadKills"
 msgstr "Суммарное количество машин противника, уничтоженных вашим взводом."
 
-msgid "battleResult/stats/squadKills/header"
+msgid "battleResult/stats/header/damageBlockedByArmor"
+msgstr "Заблокировано урона"
+
+msgid "battleResult/stats/header/damageDealt"
+msgstr "Нанесено урона"
+
+msgid "battleResult/stats/header/kills"
+msgstr "Уничтожено лично"
+
+msgid "battleResult/stats/header/place"
+msgstr "Позиция"
+
+msgid "battleResult/stats/header/squadKills"
 msgstr "Уничтожено взводом"
 
-msgid "battleResult/stats/squadKills/title"
+msgid "battleResult/stats/title/damageBlockedByArmor"
+msgstr "Заблокировано урона"
+
+msgid "battleResult/stats/title/damageDealt"
+msgstr "Нанесено урона"
+
+msgid "battleResult/stats/title/kills"
+msgstr "Уничтожено лично"
+
+msgid "battleResult/stats/title/place"
+msgstr "Позиция"
+
+msgid "battleResult/stats/title/squadKills"
 msgstr "Уничтожено взводом"
 
 msgid "battleResult/tab/leaderboard"
@@ -362,48 +371,6 @@ msgstr ""
 
 msgid "fragPanel/squadsCount"
 msgstr "Взводов: %(squadsCount)s"
-
-msgid "fullStats/alive"
-msgstr "Всего в живых"
-
-msgid "fullStats/deathZone/closed/description"
-msgstr "Зона закрыта"
-
-msgid "fullStats/deathZone/warning/description"
-msgstr "Зона закрывается"
-
-msgid "fullStats/description"
-msgstr ""
-"Основная задача — остаться последним выжившим игроком (или взводом). "
-"Собирайте ресурсы, улучшайте машину, выживайте!"
-
-msgid "fullStats/destroyed"
-msgstr "Лично уничтожено"
-
-msgid "fullStats/icons/airDrop/description"
-msgstr ""
-"Воздушный груз: опыт, восстановление прочности, ремонт модулей, заряды всех "
-"боевых умений, снаряды."
-
-msgid "fullStats/icons/corpseLoot/description"
-msgstr ""
-"Трофеи: опыт, восстановление прочности, ремонт модулей, заряды некоторых "
-"боевых умений, снаряды."
-
-msgid "fullStats/icons/defaultLoot/description"
-msgstr ""
-"Припасы: опыт, снаряды, с некоторой вероятностью заряд боевого умения."
-
-msgid "fullStats/icons/extendedLoot/description"
-msgstr ""
-"Снаряжение: опыт, восстановление прочности, ремонт модулей, заряд "
-"«Восстановления», снаряды."
-
-msgid "fullStats/subTitle"
-msgstr "Битва за ценные ресурсы по правилам «один против всех»."
-
-msgid "fullStats/title"
-msgstr "Стальной охотник"
 
 msgid "hangarResults/btns/score"
 msgstr "Таблица лидеров"
@@ -626,61 +593,6 @@ msgstr "Нажмите"
 msgid "radar/hint/text"
 msgstr "для активации радара"
 
-msgid "rewardCurrencyTooltip/battlePassPoints/body"
-msgstr ""
-"Очки можно зарабатывать в боях, а также выполняя боевые задачи. Они "
-"автоматически добавляются к прогрессии Боевого пропуска."
-
-msgid "rewardCurrencyTooltip/battlePassPoints/header"
-msgstr "Очки Боевого пропуска"
-
-msgid "rewardCurrencyTooltip/brProgressionToken/body"
-msgstr ""
-"Выдаются за выполнение задач режима «Стальной охотник» и за занятые в боях "
-"места. Необходимы для продвижения по прогрессии."
-
-msgid "rewardCurrencyTooltip/brProgressionToken/header"
-msgstr "Очки прогрессии Стального охотника"
-
-msgid "rewardCurrencyTooltip/brcoin/body"
-msgstr ""
-"Печати можно получить за эффективные действия в бою, высокие позиции в "
-"послебоевой статистике и за выполнение боевых задач."
-
-msgid "rewardCurrencyTooltip/brcoin/header"
-msgstr "Стальные печати"
-
-msgid "rewardCurrencyTooltip/brcoin/premFactor"
-msgstr "Танковый премиум аккаунт увеличивает заработок этой валюты на 50%."
-
-msgid "rewardCurrencyTooltip/credits/body"
-msgstr ""
-"Основная игровая валюта. Зарабатывается в боях или приобретается за золото."
-
-msgid "rewardCurrencyTooltip/credits/header"
-msgstr "Кредиты"
-
-msgid "rewardCurrencyTooltip/credits/premFactor"
-msgstr "Танковый премиум аккаунт увеличивает заработок этой валюты на 50%."
-
-msgid "rewardCurrencyTooltip/crystal/body"
-msgstr ""
-"Редкая специализированная валюта, за которую покупаются уникальные товары, "
-"недоступные за другую валюту."
-
-msgid "rewardCurrencyTooltip/crystal/header"
-msgstr "Боны"
-
-msgid "rewardCurrencyTooltip/xp/body"
-msgstr ""
-"Накопленный на специальной технике опыт вы можете перевести в свободный."
-
-msgid "rewardCurrencyTooltip/xp/header"
-msgstr "Боевой опыт"
-
-msgid "rewardCurrencyTooltip/xp/premFactor"
-msgstr "Танковый премиум аккаунт увеличивает заработок боевого опыта на 50%."
-
 msgid "season/202206/name"
 msgstr "2022"
 
@@ -783,15 +695,6 @@ msgstr "Броню съедает коррозия!"
 
 msgid "statusNotificationTimers/thunderStrike"
 msgstr "Подвижность снижена!"
-
-msgid "tab/lable/platoon"
-msgstr "ВЗВОД"
-
-msgid "tab/lable/solo"
-msgstr "В ОДИНОЧКУ"
-
-msgid "tab/lable/team"
-msgstr "С ДРУГОМ"
 
 msgid "techParams/type/damage"
 msgstr "Урон"

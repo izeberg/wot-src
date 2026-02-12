@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing, BattleReplay, BigWorld
 from aih_constants import CTRL_MODE_NAME
 from gui.Scaleform.daapi.settings.views import VIEW_ALIAS

@@ -11,14 +11,224 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: \n"
 
+msgid "battleQuestAwards/button"
+msgstr "Так точно!"
+
+msgid "battleQuestAwards/stPatrick/subTitle"
+msgstr "СТАЛЬНОЙ ОХОТНИК: БИТВА ЗА ТРИЛИСТНИК"
+
+msgid "battleQuestAwards/subTitle"
+msgstr "СТАЛЬНОЙ ОХОТНИК"
+
+msgid "battleQuestAwards/title/completed"
+msgstr "ФИНАЛЬНЫЙ ЭТАП ПРОЙДЕН!"
+
+msgid "battleQuestAwards/title/inProgress"
+msgstr "ЭТАП %(level)s ПРОЙДЕН!"
+
+msgid "dailyBonus/description"
+msgstr ""
+"%(dailyBonus)s Бонус к печатям удачи за попадание в топ-%(soloTopPlaces)s в "
+"одиночном бою или в топ-%(squadTopPlaces)s во взводном. Бонус может быть "
+"активирован раз в сутки на каждой машине режима."
+
 msgid "eventShop"
 msgstr "Магазин события"
+
+msgid "leaveBattleView/confirmation/cancel"
+msgstr "Остаться"
+
+msgid "leaveBattleView/confirmation/submit"
+msgstr "Бежать"
+
+msgid "leaveBattleView/description"
+msgstr ""
+"Ваша техника ещё может сражаться. Если выйдете из боя сейчас, то не получите"
+" награды за участие в нём. Вы уверены, что хотите покинуть сражение?"
+
+msgid "leaveBattleView/title"
+msgstr "Бегство с поля боя"
+
+msgid "leaveBattleView/warning"
+msgstr "Вы не получите наград!"
 
 msgid "progress/counter"
 msgstr "{{current}}{{divider}}{{total}}"
 
 msgid "progressionComplete"
 msgstr "Основная прогрессия пройдена!"
+
+msgid "progressionView/battleQuests/multiConditions"
+msgstr "%(firstCondition)s или %(secondCondition)s"
+
+msgid "progressionView/battleQuests/oneCondition"
+msgstr "%(firstCondition)s"
+
+msgid "progressionView/battleQuests/questsTotal/text"
+msgstr "Выполненных задач: "
+
+msgid "progressionView/battleQuests/timer/eventResetTime/text"
+msgstr "До завершения события:"
+
+msgid "progressionView/battleQuests/timer/inProgress/text"
+msgstr "Задачи обновятся через"
+
+msgid "progressionView/card/points"
+msgstr "%(current)s/%(total)s"
+
+msgid "progressionView/seasonRange"
+msgstr "%(startDate)s – %(endDate)s"
+
+msgid "progressionView/subTitle/completed"
+msgstr ""
+"Прогрессия завершена. Продолжайте играть в режиме «Стальной охотник», чтобы "
+"заработать ещё больше наград."
+
+msgid "progressionView/subTitle/endEvent"
+msgstr "Событие завершено. Задачи и прогрессия недоступны."
+
+msgid "progressionView/subTitle/inProgress"
+msgstr ""
+"За выполнение боевых задач вы получаете очки прогрессии.\n"
+"На количество получаемых очков также влияет ваша позиция по итогам боя. %(infotip)s"
+
+msgid "proxy_currency_tooltip/earn/description/brcoin"
+msgstr ""
+"Получайте печати за эффективные действия в бою, высокие позиции в "
+"послебоевой статистике, а также за выполнение боевых задач режима."
+
+msgid "proxy_currency_tooltip/earn/description/stpcoin"
+msgstr ""
+"Получайте печати удачи из добычи в сражениях, за прохождение этапов "
+"прогрессии и за первые места в боях режима «Стальной охотник»."
+
+msgid "proxy_currency_tooltip/earn/title/brcoin"
+msgstr "Как заработать"
+
+msgid "proxy_currency_tooltip/earn/title/stpcoin"
+msgstr "Как заработать"
+
+msgid "proxy_currency_tooltip/spend/description/brcoin"
+msgstr ""
+"Используйте заработанные печати для покупки стилей «Стального охотника»."
+
+msgid "proxy_currency_tooltip/spend/description/stpcoin"
+msgstr ""
+"Обменивайте заработанные печати на ценные награды в Лавке трилистника."
+
+msgid "proxy_currency_tooltip/spend/title/brcoin"
+msgstr "На что потратить"
+
+msgid "proxy_currency_tooltip/spend/title/stpcoin"
+msgstr "На что потратить"
+
+msgid "proxy_currency_tooltip/title/brcoin"
+msgstr "Стальные печати"
+
+msgid "proxy_currency_tooltip/title/stpcoin"
+msgstr "Печати удачи"
+
+msgid "quests/bonuses/progressionToken/body"
+msgstr ""
+"Выдаются за выполнение задач режима «Стальной охотник». Необходимы для "
+"продвижения по прогрессии."
+
+msgid "quests/bonuses/progressionToken/header"
+msgstr "Очки прогрессии «Стального охотника»"
+
+msgid "rewardCurrencyTooltip/body/battlePassPoints"
+msgstr ""
+"Очки можно зарабатывать в боях, а также выполняя боевые задачи. Они "
+"автоматически добавляются к прогрессии Боевого пропуска."
+
+msgid "rewardCurrencyTooltip/body/brProgressionToken"
+msgstr ""
+"Выдаются за выполнение задач режима «Стальной охотник» и за занятые в боях "
+"места. Необходимы для продвижения по прогрессии."
+
+msgid "rewardCurrencyTooltip/body/brcoin"
+msgstr ""
+"Печати можно получить за эффективные действия в бою, высокие позиции в "
+"послебоевой статистике и за выполнение боевых задач."
+
+msgid "rewardCurrencyTooltip/body/credits"
+msgstr ""
+"Основная игровая валюта. Зарабатывается в боях или приобретается за золото."
+
+msgid "rewardCurrencyTooltip/body/crystal"
+msgstr ""
+"Редкая специализированная валюта, за которую покупаются уникальные товары, "
+"недоступные за другую валюту."
+
+msgid "rewardCurrencyTooltip/body/stpcoin"
+msgstr ""
+"Валюта, зарабатываемая в сражениях режима «Стальной охотник». Печати можно "
+"обменять на уникальные награды в Лавке трилистника. При игре во взводе "
+"печати делятся поровну между совзводными. Указанная сумма — ваша часть "
+"общего банка."
+
+msgid "rewardCurrencyTooltip/body/xp"
+msgstr ""
+"Накопленный на специальной технике опыт вы можете перевести в свободный."
+
+msgid "rewardCurrencyTooltip/dailyBonus/stpcoin"
+msgstr ""
+"Бонус применён! Количество печатей, полученных в бою, увеличено в %(count)s "
+"раза."
+
+msgid "rewardCurrencyTooltip/header/battlePassPoints"
+msgstr "Очки Боевого пропуска"
+
+msgid "rewardCurrencyTooltip/header/brProgressionToken"
+msgstr "Очки прогрессии «Стального охотника»"
+
+msgid "rewardCurrencyTooltip/header/brcoin"
+msgstr "Стальные печати"
+
+msgid "rewardCurrencyTooltip/header/credits"
+msgstr "Кредиты"
+
+msgid "rewardCurrencyTooltip/header/crystal"
+msgstr "Боны"
+
+msgid "rewardCurrencyTooltip/header/stpcoin"
+msgstr "Печати удачи"
+
+msgid "rewardCurrencyTooltip/header/xp"
+msgstr "Боевой опыт"
+
+msgid "rewardCurrencyTooltip/premiumBonus/brcoin"
+msgstr "Танковый премиум аккаунт увеличивает заработок этой валюты на 50%."
+
+msgid "rewardCurrencyTooltip/premiumBonus/credits"
+msgstr "Танковый премиум аккаунт увеличивает заработок этой валюты на 50%."
+
+msgid "rewardCurrencyTooltip/premiumBonus/xp"
+msgstr "Танковый премиум аккаунт увеличивает заработок боевого опыта на 50%."
+
+msgid "serviceChannelMessages/awards"
+msgstr "Получена награда:"
+
+msgid "serviceChannelMessages/body"
+msgstr "Вы прошли %(stage)s-й этап прогрессии режима «%(progressionName)s»."
+
+msgid "serviceChannelMessages/header"
+msgstr "Поздравляем!"
+
+msgid "serviceChannelMessages/progressionButton"
+msgstr "Подробнее"
+
+msgid "serviceChannelMessages/progressionName"
+msgstr "Стальной охотник"
+
+msgid "tab/label/platoon"
+msgstr "ВЗВОД"
+
+msgid "tab/label/solo"
+msgstr "В ОДИНОЧКУ"
+
+msgid "tab/label/team"
+msgstr "С ДРУГОМ"
 
 msgid "tooltip/banner/description"
 msgstr ""
@@ -50,11 +260,21 @@ msgstr "Низкая производительность"
 msgid "tooltip/banner/performanceRisk/title/medium"
 msgstr "Возможно снижение производительности"
 
+msgid "tooltip/banner/stPatrickDescription"
+msgstr ""
+"Динамические сражения в жанре «королевской битвы» с оттенком зелёной "
+"мистики. Сражайтесь на восьми уникальных машинах, улучшая их по ходу боя и "
+"становясь мощнее с каждым уровнем. Эксклюзивные награды и множество других "
+"сюрпризов уже ждут вас!"
+
+msgid "tooltip/banner/stPatrickTitle"
+msgstr "Битва за трилистник"
+
 msgid "tooltip/banner/timer/text/accent"
-msgstr "Событие доступно {{timer}}"
+msgstr "Событие доступно %(timer)s"
 
 msgid "tooltip/banner/timer/text/cooldown"
-msgstr "Прекращение огня {{timer}}"
+msgstr "Прекращение огня %(timer)s"
 
 msgid "tooltip/banner/title"
 msgstr "Стальной охотник"
@@ -94,9 +314,21 @@ msgstr "Стальной охотник"
 msgid "tooltip/quest/header"
 msgstr "Задача режима «Стальной охотник»"
 
+msgid "tooltip/shop/stPatrick/subtitle"
+msgstr ""
+"Обменивайте {ede6d9_Open}печати удачи{ede6d9_Close} на специальные награды."
+
+msgid "tooltip/shop/stPatrick/text"
+msgstr ""
+"Получайте печати удачи за подбор добычи в бою, прохождение этапов прогрессии"
+" и первые места в королевской битве."
+
+msgid "tooltip/shop/stPatrick/title"
+msgstr "Лавка трилистника"
+
 msgid "tooltip/shop/subtitle"
 msgstr ""
-"Обменивайте {{@ colorLegacy 'ede6d9'}}стальные печати{{/}} на особые "
+"Обменивайте {ede6d9_Open}стальные печати{ede6d9_Close} на специальные "
 "награды."
 
 msgid "tooltip/shop/text"

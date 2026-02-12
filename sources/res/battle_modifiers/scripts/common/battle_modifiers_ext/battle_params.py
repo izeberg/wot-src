@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+from future.utils import listvalues, viewitems
 from typing import Any, Optional, Set, Tuple, Union, TYPE_CHECKING
 from battle_modifiers_common.battle_modifiers import BattleParams, ModifierScope
 from battle_modifiers_ext.battle_modifier.modifier_appliers import registerParamAppliers
@@ -118,9 +120,7 @@ class FakeClientParamData(ClientParamData):
         self.__descr = descr
 
     @classmethod
-    def __getUseTypes(cls, physicalType):
-        if physicalType == PhysicalType.UNDEFINED:
-            return UseType.NON_DIMENSIONAL_TYPES
+    def __getUseTypes(cls, _):
         return UseType.ALL_WITH_UNDEFINED
 
     def __makeDescr(self):
@@ -263,7 +263,7 @@ class BattleParamsCache(object):
         self.__initFromConfig()
 
     def __iter__(self):
-        return self.__params.iteritems()
+        return iter(viewitems(self.__params))
 
     def __getitem__(self, id):
         return self.__params[id]
@@ -275,7 +275,7 @@ class BattleParamsCache(object):
         return id in self.__params
 
     def __repr__(self):
-        return ('BattleParams({})').format(self.__params.values())
+        return ('BattleParams({})').format(listvalues(self.__params))
 
     def get(self, id):
         return self.__params.get(id)

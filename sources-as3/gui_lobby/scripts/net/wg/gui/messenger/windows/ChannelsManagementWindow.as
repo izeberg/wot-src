@@ -6,14 +6,13 @@ package net.wg.gui.messenger.windows
    import net.wg.data.daapi.base.DAAPIDataProvider;
    import net.wg.gui.components.advanced.ButtonBarEx;
    import net.wg.gui.components.advanced.ViewStack;
-   import net.wg.gui.events.MessengerBarEvent;
    import net.wg.gui.events.ViewStackEvent;
-   import net.wg.gui.lobby.messengerBar.WindowGeometryInBar;
    import net.wg.gui.messenger.evnts.ChannelsFormEvent;
    import net.wg.gui.messenger.forms.ChannelsCreateForm;
    import net.wg.gui.messenger.forms.ChannelsSearchForm;
    import net.wg.gui.messenger.meta.IChannelsManagementWindowMeta;
    import net.wg.gui.messenger.meta.impl.ChannelsManagementWindowMeta;
+   import net.wg.infrastructure.base.DefaultWindowGeometry;
    import net.wg.infrastructure.interfaces.IViewStackContent;
    import scaleform.clik.constants.ConstrainMode;
    import scaleform.clik.constants.InvalidationType;
@@ -115,7 +114,7 @@ package net.wg.gui.messenger.windows
          window.setMaxWidth(WND_MAX_WIDTH);
          window.setMaxHeight(WND_MAX_HEIGHT);
          updateStage(App.appWidth,App.appHeight);
-         geometry = new WindowGeometryInBar(MessengerBarEvent.PIN_CHANNELS_WINDOW);
+         geometry = new DefaultWindowGeometry();
       }
       
       override protected function onDispose() : void

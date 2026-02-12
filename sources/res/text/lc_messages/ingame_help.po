@@ -169,61 +169,6 @@ msgstr "Модель техники / Имя игрока"
 msgid "crosshairControls/title"
 msgstr "Прицел и маркер орудия"
 
-msgid "detailsHelp/battleRoyale/airDrop/description"
-msgstr ""
-"Ищите добычу, обозначенную дымами. В зелёных содержатся снаряды и заряд "
-"второго умения. В жёлтых дымах — заряды первого, третьего и четвёртого "
-"умений. В синих — восстановление прочности и модулей, снаряды и заряды для "
-"всех умений. Подробный состав добычи можно узнать, нажав клавишу Tab в бою."
-
-msgid "detailsHelp/battleRoyale/airDrop/title"
-msgstr "Поиск добычи"
-
-msgid "detailsHelp/battleRoyale/radar/description"
-msgstr ""
-"Активированный радар отображает местоположение противника и ценных предметов"
-" на мини-карте. Игрок, активировавший радар, автоматически становится "
-"видимым на мини-карте для всех остальных игроков в зоне покрытия радара."
-
-msgid "detailsHelp/battleRoyale/radar/title"
-msgstr "Радар"
-
-msgid "detailsHelp/battleRoyale/sectorVision/description"
-msgstr ""
-"Вы можете обнаружить только ту технику, которая попала в ваш сектор "
-"видимости — «конус» перед башней. Для удобства он отображается на мини-"
-"карте. Машина противника, находящаяся в непосредственной близости от вас, "
-"видима всегда (т.н. «рентген»)."
-
-msgid "detailsHelp/battleRoyale/sectorVision/title"
-msgstr "Система обзора"
-
-msgid "detailsHelp/battleRoyale/uniqueAbilities/description"
-msgstr ""
-"У каждой из восьми машин есть два общих и два уникальных боевых умения. Одно"
-" из них особенно мощное и может решить исход поединка."
-
-msgid "detailsHelp/battleRoyale/uniqueAbilities/title"
-msgstr "У каждой машины свои способности"
-
-msgid "detailsHelp/battleRoyale/upgrade/description"
-msgstr ""
-"Выйти в бой можно только на специальной машине, которая может улучшаться "
-"прямо во время сражения. Вы можете выбирать, что именно улучшить в данный "
-"момент."
-
-msgid "detailsHelp/battleRoyale/upgrade/title"
-msgstr "Техника улучшается прямо в бою"
-
-msgid "detailsHelp/battleRoyale/zone/description"
-msgstr ""
-"Жёлтый цвет сигнализирует о скором закрытии зоны. Если же вы попали в "
-"красную зону, покиньте её как можно скорее, иначе ваша машина будет "
-"уничтожена."
-
-msgid "detailsHelp/battleRoyale/zone/title"
-msgstr "Уменьшение игровой зоны"
-
 msgid "detailsHelp/default/title"
 msgstr "Помощь"
 
@@ -552,9 +497,6 @@ msgstr ""
 
 msgid "detailsHelp/mechanics/twinGun/page2/title"
 msgstr "Преимущества и недостатки"
-
-msgid "detailsHelp/noKey"
-msgstr "НЕ НАЗНАЧЕНО"
 
 msgid "detailsHelp/noKeysWarning"
 msgstr "Ключевые клавиши не назначены. Назначьте их в настройках игры."

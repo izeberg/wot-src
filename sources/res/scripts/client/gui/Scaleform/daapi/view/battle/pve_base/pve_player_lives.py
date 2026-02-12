@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.Scaleform.daapi.view.meta.PvePlayerLivesMeta import PvePlayerLivesMeta
 from gui.battle_control import avatar_getter
 from TeamInfoLivesComponent import TeamInfoLivesComponent

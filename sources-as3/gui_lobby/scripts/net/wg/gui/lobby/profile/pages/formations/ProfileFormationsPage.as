@@ -21,8 +21,6 @@ package net.wg.gui.lobby.profile.pages.formations
       
       private static const TEAM_WIDTH:int = 135;
       
-      private static const HISTORY_POS_Y:int = 374;
-      
       private static const HISTORY_NO_TEAM_POS_Y:int = 262;
       
       private static const HISTORY_BOTTOM_OFFSET_Y:int = 10;

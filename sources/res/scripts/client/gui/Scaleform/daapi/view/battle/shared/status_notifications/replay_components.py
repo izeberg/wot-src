@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, BattleReplay
 from ReplayEvents import g_replayEvents
 from gui.Scaleform.daapi.view.battle.shared.status_notifications.components import StatusNotificationContainer, StatusNotificationsGroup

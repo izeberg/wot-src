@@ -144,7 +144,7 @@
 						<Int>64</Int>
 					</property>
 				</material>
-				<groupOrigin>-0.004188 0.152761 -0.263307</groupOrigin>
+				<groupOrigin>-0.001733 0.152761 -0.263307</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				2
@@ -197,7 +197,7 @@
 						<Int>64</Int>
 					</property>
 				</material>
-				<groupOrigin>-0.024430 -0.428340 -0.098158</groupOrigin>
+				<groupOrigin>0.000000 -0.428340 -0.098158</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -205,5 +205,5 @@
 		<min>-2.070410 -0.991264 -3.759496</min>
 		<max>2.062034 0.934138 3.232881</max>
 	</boundingBox>
-	<geometrySize>1269826</geometrySize>
+	<geometrySize>1325466</geometrySize>
 </root>

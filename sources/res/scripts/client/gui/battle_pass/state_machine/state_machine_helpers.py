@@ -54,7 +54,7 @@ def separateRewards(rewards):
 
 
 @dependency.replace_none_kwargs(battlePass=IBattlePassController)
-def packStartEvent(rewards, data, packageRewards, eventMethod, battlePass=None):
+def packStartEvent(rewards, data, packageRewards, starterPack, eventMethod, battlePass=None):
     if rewards is None or data is None:
         return
     reason = data['reason']
@@ -85,24 +85,25 @@ def packStartEvent(rewards, data, packageRewards, eventMethod, battlePass=None):
                 rewards.pop('entitlements')
         if not isPremiumPurchase and not isRareLevel and not isFinalLevel or not rewards:
             return
-        return EventNotificationCommand(NotificationEvent(method=eventMethod, rewards=[rewards], data=data, packageRewards=packageRewards))
+        return EventNotificationCommand(NotificationEvent(method=eventMethod, rewards=[
+         rewards], data=data, packageRewards=packageRewards, starterPack=starterPack))
 
 
 @dependency.replace_none_kwargs(battlePass=IBattlePassController)
-def multipleBattlePassPurchasedEventMethod(rewards, data, packageRewards, battlePass=None):
+def multipleBattlePassPurchasedEventMethod(rewards, data, packageRewards, starterPack, battlePass=None):
     if battlePass.isDisabled():
         return
     else:
         currentChapterID = battlePass.getCurrentChapterID()
         chapterID = currentChapterID if not isPostProgressionChapter(currentChapterID) else None
         showBattlePass(R.aliases.battle_pass.Progression() if chapterID else None, chapterID)
-        battlePass.getRewardLogic().startRewardFlow(rewards, data, packageRewards)
+        battlePass.getRewardLogic().startRewardFlow(rewards, data, packageRewards, starterPack)
         return
 
 
 @dependency.replace_none_kwargs(battlePass=IBattlePassController)
-def defaultEventMethod(rewards, data, packageRewards, battlePass=None):
-    battlePass.getRewardLogic().startRewardFlow(rewards, data, packageRewards)
+def defaultEventMethod(rewards, data, packageRewards, starterPack, battlePass=None):
+    battlePass.getRewardLogic().startRewardFlow(rewards, data, packageRewards, starterPack)
 
 
 def packToken(tokenID):

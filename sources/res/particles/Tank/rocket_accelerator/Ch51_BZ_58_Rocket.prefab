@@ -288,7 +288,7 @@
 					</property>
 					<property>
 						<name>Rotation</name>
-						<value>0 0 0</value>
+						<value>-0 0 0</value>
 					</property>
 				</config>
 			</component>
@@ -306,7 +306,7 @@
 					</property>
 					<property>
 						<name>Rotation</name>
-						<value>0 0 0</value>
+						<value>-0 0 0</value>
 					</property>
 				</config>
 			</component>
@@ -342,7 +342,7 @@
 					</property>
 					<property>
 						<name>Rotation</name>
-						<value>0 0 0</value>
+						<value>-0 0 0</value>
 					</property>
 				</config>
 			</component>
@@ -706,6 +706,30 @@
 			</component>
 		</ComponentPool>
 		<ComponentPool>
+			<type>DistToTerrainComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>bfc94a68-2b35-4146-9ba6-d79ad3afd1b9</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>transfromLink</name>
+						<link>bfc94a68-2b35-4146-9ba6-d79ad3afd1b9</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>4c4926e8-8a2d-4665-8fef-5cd5d179ca26</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>transfromLink</name>
+						<link>4c4926e8-8a2d-4665-8fef-5cd5d179ca26</link>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
 			<type>VSEComponent</type>
 			<version>1</version>
 			<component>
@@ -729,7 +753,7 @@
 			<version>1</version>
 			<component>
 				<UUID>40ef0c1d-aa0d-45e8-98a5-4640aac4e177</UUID>
-				<flags>3</flags>
+				<flags>1</flags>
 				<config>
 					<property>
 						<name>vseComponent</name>

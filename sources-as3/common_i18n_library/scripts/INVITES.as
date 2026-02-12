@@ -91,8 +91,6 @@ package
       
       public static const CLAN_APPLICATIONS_COMMENT:String = "#invites:clan/applications/comment";
       
-      public static const CLAN_APPLICATIONS_COMMENT_MINIMAP:String = "#invites:clan/applications/comment/minimap";
-      
       public static const CLAN_APPLICATIONS_BUTTONS_DETAILS:String = "#invites:clan/applications/buttons/details";
       
       public static const CLAN_PERSONAL_INVITES_TITLE:String = "#invites:clan/personal/invites/title";

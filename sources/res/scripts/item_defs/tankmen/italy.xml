@@ -17068,5 +17068,225 @@
 				<_8319>chef_damien.png</_8319>
 			</icons>
 		</chef_damien>
+		<tankmen_bp1006_1>
+			<groupID>334</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>male</sex>
+			<notInShop>true</notInShop>
+			<tags>passportReplacementForbidden tankmen_bp1006_1</tags>
+			<roles>commander radioman loader driver gunner</roles>
+			<firstNames>
+				<_8320>#italy_crew:names/tankmen_bp1006_1_n</_8320>
+			</firstNames>
+			<lastNames>
+				<_8320>#italy_crew:names/tankmen_bp1006_1</_8320>
+			</lastNames>
+			<icons>
+				<_8320>tankmen_bp1006_1.png</_8320>
+			</icons>
+		</tankmen_bp1006_1>
+		<tankmen_bp1006_2>
+			<groupID>335</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>male</sex>
+			<notInShop>true</notInShop>
+			<tags>passportReplacementForbidden tankmen_bp1006_2</tags>
+			<roles>commander radioman loader driver gunner</roles>
+			<firstNames>
+				<_8321>#italy_crew:names/tankmen_bp1006_2_n</_8321>
+			</firstNames>
+			<lastNames>
+				<_8321>#italy_crew:names/tankmen_bp1006_2</_8321>
+			</lastNames>
+			<icons>
+				<_8321>tankmen_bp1006_2.png</_8321>
+			</icons>
+		</tankmen_bp1006_2>
+		<tankmen_bp1006_3>
+			<groupID>336</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>male</sex>
+			<notInShop>true</notInShop>
+			<tags>passportReplacementForbidden tankmen_bp1006_3</tags>
+			<roles>commander radioman loader driver gunner</roles>
+			<firstNames>
+				<_8322>#italy_crew:names/tankmen_bp1006_3_n</_8322>
+			</firstNames>
+			<lastNames>
+				<_8322>#italy_crew:names/tankmen_bp1006_3</_8322>
+			</lastNames>
+			<icons>
+				<_8322>tankmen_bp1006_3.png</_8322>
+			</icons>
+		</tankmen_bp1006_3>
+		<tankmen_bp1006_4>
+			<groupID>337</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>male</sex>
+			<notInShop>true</notInShop>
+			<tags>passportReplacementForbidden tankmen_bp1006_4</tags>
+			<roles>commander radioman loader driver gunner</roles>
+			<firstNames>
+				<_8323>#italy_crew:names/tankmen_bp1006_4_n</_8323>
+			</firstNames>
+			<lastNames>
+				<_8323>#italy_crew:names/tankmen_bp1006_4</_8323>
+			</lastNames>
+			<icons>
+				<_8323>tankmen_bp1006_4.png</_8323>
+			</icons>
+		</tankmen_bp1006_4>
+		<tankmen_bp1006_5>
+			<groupID>338</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>female</sex>
+			<notInShop>true</notInShop>
+			<tags>passportReplacementForbidden tankmen_bp1006_5</tags>
+			<roles>commander radioman loader driver gunner</roles>
+			<firstNames>
+				<_8324>#italy_crew:names/tankmen_bp1006_5_n</_8324>
+			</firstNames>
+			<lastNames>
+				<_8324>#italy_crew:names/tankmen_bp1006_5</_8324>
+			</lastNames>
+			<icons>
+				<_8324>tankmen_bp1006_5.png</_8324>
+			</icons>
+		</tankmen_bp1006_5>
+		<tankmen_bp1006_6>
+			<groupID>339</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>male</sex>
+			<notInShop>true</notInShop>
+			<tags>passportReplacementForbidden tankmen_bp1006_6</tags>
+			<roles>commander radioman loader driver gunner</roles>
+			<firstNames>
+				<_8325>#italy_crew:names/tankmen_bp1006_6_n</_8325>
+			</firstNames>
+			<lastNames>
+				<_8325>#italy_crew:names/tankmen_bp1006_6</_8325>
+			</lastNames>
+			<icons>
+				<_8325>tankmen_bp1006_6.png</_8325>
+			</icons>
+		</tankmen_bp1006_6>
+		<lunar26_commander>
+			<groupID>340</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>female</sex>
+			<notInShop>true</notInShop>
+			<tags>passportReplacementForbidden</tags>
+			<roles>commander driver gunner loader radioman</roles>
+			<firstNames>
+				<_8326>#italy_crew:names/lunar26_commander_n</_8326>
+			</firstNames>
+			<lastNames>
+				<_8326>#italy_crew:names/lunar26_commander</_8326>
+			</lastNames>
+			<icons>
+				<_8326>lunar26_commander.png</_8326>
+			</icons>
+		</lunar26_commander>
+		<tankmen_bp19_1>
+			<groupID>341</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>male</sex>
+			<notInShop>true</notInShop>
+			<tags>passportReplacementForbidden</tags>
+			<roles>commander radioman loader driver gunner</roles>
+			<firstNames>
+				<_8327>#italy_crew:names/tankmen_bp19_1_n</_8327>
+			</firstNames>
+			<lastNames>
+				<_8327>#italy_crew:names/tankmen_bp19_1</_8327>
+			</lastNames>
+			<icons>
+				<_8327>tankmen_bp19_1.png</_8327>
+			</icons>
+		</tankmen_bp19_1>
+		<tankmen_bp19_2>
+			<groupID>342</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>male</sex>
+			<notInShop>true</notInShop>
+			<tags>passportReplacementForbidden</tags>
+			<roles>commander radioman loader driver gunner</roles>
+			<firstNames>
+				<_8328>#italy_crew:names/tankmen_bp19_2_n</_8328>
+			</firstNames>
+			<lastNames>
+				<_8328>#italy_crew:names/tankmen_bp19_2</_8328>
+			</lastNames>
+			<icons>
+				<_8328>tankmen_bp19_2.png</_8328>
+			</icons>
+		</tankmen_bp19_2>
+		<tankmen_bp19_3>
+			<groupID>343</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>male</sex>
+			<notInShop>true</notInShop>
+			<tags>passportReplacementForbidden</tags>
+			<roles>commander radioman loader driver gunner</roles>
+			<firstNames>
+				<_8329>#italy_crew:names/tankmen_bp19_3_n</_8329>
+			</firstNames>
+			<lastNames>
+				<_8329>#italy_crew:names/tankmen_bp19_3</_8329>
+			</lastNames>
+			<icons>
+				<_8329>tankmen_bp19_3.png</_8329>
+			</icons>
+		</tankmen_bp19_3>
+		<tankmen_bp19_4>
+			<groupID>344</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>female</sex>
+			<notInShop>true</notInShop>
+			<tags>passportReplacementForbidden</tags>
+			<roles>commander radioman loader driver gunner</roles>
+			<firstNames>
+				<_8330>#italy_crew:names/tankmen_bp19_4_n</_8330>
+			</firstNames>
+			<lastNames>
+				<_8330>#italy_crew:names/tankmen_bp19_4</_8330>
+			</lastNames>
+			<icons>
+				<_8330>tankmen_bp19_4.png</_8330>
+			</icons>
+		</tankmen_bp19_4>
 	</premiumGroups>
 </root>

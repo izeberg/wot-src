@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld
 from gui.Scaleform.daapi.view.dialogs import DIALOG_BUTTON_ID
 from gui.Scaleform.daapi.view.meta.SimpleDialogMeta import SimpleDialogMeta
@@ -54,8 +55,8 @@ class SimpleDialog(SimpleDialogMeta):
         super(SimpleDialog, self)._dispose()
         return
 
-    def onButtonClick(self, buttonID):
-        self._callHandler(buttonID)
+    def onButtonClick(self, buttonId):
+        self._callHandler(buttonId)
         self.destroy()
 
     def onWindowClose(self):

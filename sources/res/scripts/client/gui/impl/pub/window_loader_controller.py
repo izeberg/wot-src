@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging
 from frameworks.wulf import WindowStatus, WindowFlags
 from gui.Scaleform.Waiting import Waiting
@@ -23,7 +24,7 @@ class WindowLoaderController(IWindowLoaderController):
     def __windowStatusChanged(self, uniqueID, newStatus):
         from gui.Scaleform.framework.entities.sf_window import SFWindow
         window = self.__gui.windowsManager.getWindow(uniqueID)
-        if window is None or WindowFlags.WINDOW_MODAL != window.modalityFlag:
+        if window is None or window.modalityFlag != WindowFlags.WINDOW_MODAL:
             return
         isSFWindow = isinstance(window, SFWindow)
         if newStatus == WindowStatus.LOADING:

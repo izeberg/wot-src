@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing, Keys, CommandMapping
 from Event import Event
 from debug_utils import LOG_DEBUG
@@ -25,7 +26,7 @@ class GameInputMgr(GameInputManagerMeta):
     def handleGlobalKeyEvent(self, keyCode, eventType):
         LOG_DEBUG('GameInputMgr.handleGlobalKeyEvent', keyCode, eventType)
         if keyCode == self.__voiceChatKey:
-            self.bwProto.voipController.setMicrophoneMute(True if eventType == _KEY_UP else False)
+            self.bwProto.voipController.setMicrophoneMute(eventType == _KEY_UP)
         if keyCode == _KEY_ESCAPE:
             self.onEscape()
 

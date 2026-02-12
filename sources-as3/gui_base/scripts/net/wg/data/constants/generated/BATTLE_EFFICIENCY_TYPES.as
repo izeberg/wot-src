@@ -57,6 +57,42 @@ package net.wg.data.constants.generated
       
       public static const FIRE_DAMAGE_ZONE:String = "fireDamageZone";
       
+      public static const COMMANDER_EAGLE_EYE:String = "commander_eagleEye";
+      
+      public static const COMMANDER_EMERGENCY:String = "commander_emergency";
+      
+      public static const COMMANDER_TUTOR:String = "commander_tutor";
+      
+      public static const COMMANDER_COORDINATION:String = "commander_coordination";
+      
+      public static const COMMANDER_HOLD_LINE:String = "commander_holdLine";
+      
+      public static const COMMANDER_STAY_SHARP:String = "commander_staySharp";
+      
+      public static const GUNNER_FOCUS:String = "gunner_focus";
+      
+      public static const GUNNER_LONE_WOLF:String = "gunner_loneWolf";
+      
+      public static const DRIVER_MOTOR_EXPERT:String = "driver_motorExpert";
+      
+      public static const DRIVER_SUSPENSION_REPAIR:String = "driver_suspensionRepair";
+      
+      public static const DRIVER_BULLETPROOF:String = "driver_bulletproof";
+      
+      public static const LOADER_DESPERADO:String = "loader_desperado";
+      
+      public static const LOADER_INTUITION:String = "loader_intuition";
+      
+      public static const LOADER_MELEE:String = "loader_melee";
+      
+      public static const LOADER_SECOND_CHANCE:String = "loader_secondChance";
+      
+      public static const RADIOMAN_SIDE_BY_SIDE:String = "radioman_sideBySide";
+      
+      public static const RADIOMAN_EXPERT:String = "radioman_expert";
+      
+      public static const RADIOMAN_THREAT_SEARCH:String = "radioman_threatSearch";
+      
       public static const VEHICLE_RECOVERY:String = "vehicleRecovery";
       
       public static const ENEMY_SECTOR_CAPTURED:String = "enemySectorCaptured";

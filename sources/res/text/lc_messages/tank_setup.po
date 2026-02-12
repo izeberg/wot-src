@@ -1090,6 +1090,9 @@ msgstr "от скорости тушения пожара"
 msgid "kpi/bonus/negative/foliageMaskingFactor"
 msgstr "от эффекта маскировки от растительности"
 
+msgid "kpi/bonus/negative/hpRecover"
+msgstr "от прочности, восстанавливаемой ремкомплектом"
+
 msgid "kpi/bonus/negative/mediumGroundFactor"
 msgstr ""
 "от сохранения набранной скорости\n"
@@ -1099,6 +1102,9 @@ msgid "kpi/bonus/negative/penaltyToDamagedSurveyingDevice"
 msgstr ""
 "к штрафу к обзору при повреждённых\n"
 "приборах наблюдения"
+
+msgid "kpi/bonus/negative/piercingHEShellsDistributionUpperBound"
+msgstr "от максимального потенциального бронепробития"
 
 msgid "kpi/bonus/negative/radiomanActivityTimeAfterVehicleDestroy"
 msgstr ""
@@ -1118,8 +1124,14 @@ msgstr ""
 
 msgid "kpi/bonus/negative/stunResistanceEffectFactor"
 msgstr ""
-"от негативного эффекта оглушения\n"
-"экипажа"
+"от негативных эффектов\n"
+"оглушения экипажа"
+
+msgid "kpi/bonus/negative/suspensionDamageReduction"
+msgstr "от урона, получаемого ходовой"
+
+msgid "kpi/bonus/negative/suspensionRepairSpeed"
+msgstr "от скорости ремонта ходовой"
 
 msgid "kpi/bonus/negative/vehPenaltyForDamagedAmmorack"
 msgstr "к штрафу к скорости заряжания"
@@ -1374,6 +1386,9 @@ msgstr "к стабилизации орудия"
 msgid "kpi/bonus/positive/gunTraverse"
 msgstr "к углам горизонтального наведения орудия"
 
+msgid "kpi/bonus/positive/hpRecover"
+msgstr "к прочности, восстанавливаемой ремкомплектом"
+
 msgid "kpi/bonus/positive/hullElevationSpeed"
 msgstr "к скорости подъёма корпуса"
 
@@ -1389,6 +1404,9 @@ msgid "kpi/bonus/positive/penaltyToDamagedSurveyingDevice"
 msgstr ""
 "от штрафа к обзору при повреждённых\n"
 "приборах наблюдения"
+
+msgid "kpi/bonus/positive/piercingHEShellsDistributionUpperBound"
+msgstr "к максимальному потенциальному бронепробитию"
 
 msgid "kpi/bonus/positive/radiomanActivityTimeAfterVehicleDestroy"
 msgstr ""
@@ -1437,7 +1455,13 @@ msgid "kpi/bonus/positive/standardShellVelocity"
 msgstr "к скорости полёта базовых снарядов"
 
 msgid "kpi/bonus/positive/stunResistanceEffectFactor"
-msgstr "к негативному эффекту оглушения"
+msgstr "к негативным эффектам оглушения экипажа"
+
+msgid "kpi/bonus/positive/suspensionDamageReduction"
+msgstr "к урону, получаемому ходовой"
+
+msgid "kpi/bonus/positive/suspensionRepairSpeed"
+msgstr "к скорости ремонта ходовой"
 
 msgid "kpi/bonus/positive/turretTraverse"
 msgstr "к углам горизонтального наведения"
@@ -1625,6 +1649,15 @@ msgstr ""
 "от незаметности противника,\n"
 "находящегося в движении"
 
+msgid "kpi/bonus/ttc/negative/hpRecover"
+msgstr "от прочности, восстанавливаемой ремкомплектом"
+
+msgid "kpi/bonus/ttc/negative/magazineGunReloadSpeed"
+msgstr "от времени заряжания магазина"
+
+msgid "kpi/bonus/ttc/negative/piercingHEShellsDistributionUpperBound"
+msgstr "от максимального потенциального бронепробития"
+
 msgid "kpi/bonus/ttc/negative/radiomanChanceToHitPerLevel"
 msgstr "от защиты радиста от ранений"
 
@@ -1633,6 +1666,9 @@ msgstr "от скорости полёта снарядов всех типов"
 
 msgid "kpi/bonus/ttc/negative/shotDispersionAngle"
 msgstr "к разбросу орудия"
+
+msgid "kpi/bonus/ttc/negative/suspensionRepairSpeed"
+msgstr "от скорости ремонта ходовой"
 
 msgid "kpi/bonus/ttc/negative/turretAimingDispersion"
 msgstr "от разброса при горизонтальном наведении"
@@ -1813,6 +1849,12 @@ msgstr ""
 msgid "kpi/bonus/ttc/positive/fireExtinguishingRate"
 msgstr "к скорости тушения пожара"
 
+msgid "kpi/bonus/ttc/positive/hpRecover"
+msgstr "к прочности, восстанавливаемой ремкомплектом"
+
+msgid "kpi/bonus/ttc/positive/magazineGunReloadSpeed"
+msgstr "ко времени заряжания магазина"
+
 msgid "kpi/bonus/ttc/positive/maskingFactor"
 msgstr "к незаметности машины"
 
@@ -1820,6 +1862,9 @@ msgid "kpi/bonus/ttc/positive/mediumGroundFactor"
 msgstr ""
 "к сохранению набранной скорости\n"
 "при пересечении средних грунтов"
+
+msgid "kpi/bonus/ttc/positive/piercingHEShellsDistributionUpperBound"
+msgstr "к максимальному потенциальному бронепробитию"
 
 msgid "kpi/bonus/ttc/positive/radioDistance"
 msgstr "к дальности связи радиостанции"
@@ -1834,6 +1879,9 @@ msgid "kpi/bonus/ttc/positive/softGroundFactor"
 msgstr ""
 "к сохранению набранной скорости\n"
 "при пересечении вязких грунтов"
+
+msgid "kpi/bonus/ttc/positive/suspensionRepairSpeed"
+msgstr "к скорости ремонта ходовой"
 
 msgid "kpi/bonus/ttc/positive/teamRadioBonusFactor"
 msgstr "к дальности связи союзных машин в зоне покрытия радиостанции"

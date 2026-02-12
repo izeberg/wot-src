@@ -63,7 +63,8 @@ BACKWARD_QUALITY_PARAMS = frozenset([
  KPI.Name.VEHICLE_FALLING_DAMAGE_RESISTANCE,
  KPI.Name.VEHICLE_PENALTY_FOR_DAMAGED_ENGINE,
  KPI.Name.VEHICLE_PENALTY_FOR_DAMAGED_AMMORACK,
- KPI.Name.COMMANDER_LAMP_DELAY])
+ KPI.Name.COMMANDER_LAMP_DELAY,
+ KPI.Name.SUSPENSION_DAMAGE_REDUCTION])
 NEGATIVE_PARAMS = [
  'switchOnTime', 'switchOffTime']
 PARAMS_WITH_IGNORED_EMPTY_VALUES = {
@@ -82,7 +83,8 @@ CREW_LEVEL_INCREASE_AFFECTING_PARAMS = frozenset([
  'chassisRotationSpeed',
  'circularVisionRadius',
  'radioDistance',
- 'dualAccuracyAfterShotDispersionAngle'])
+ 'dualAccuracyAfterShotDispersionAngle',
+ 'autoShootClipFireRate'])
 
 def normalizeShotDispersionValue(value):
     if len(value) == 1:

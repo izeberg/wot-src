@@ -616,7 +616,8 @@ msgid "blueprints/conversion/disable"
 msgstr "Недостаточно фрагментов для конвертации."
 
 msgid "blueprints/conversion/error"
-msgstr "В данный момент операция невозможна. Попробуйте позже."
+msgstr ""
+"Не удалось демобилизовать: сервер недоступен. Повторите попытку позже."
 
 msgid "blueprints/switch_off"
 msgstr ""
@@ -1110,8 +1111,7 @@ msgstr ""
 
 msgid "conversion/error"
 msgstr ""
-"Не удалось обменять членов экипажа.\n"
-"Попробуйте позже."
+"Не удалось демобилизовать: сервер недоступен. Повторите попытку позже."
 
 msgid "conversion/header"
 msgstr ""
@@ -1119,9 +1119,7 @@ msgstr ""
 "Начислено:"
 
 msgid "conversion/success"
-msgstr ""
-"Получилось!\n"
-"Казарма освобождена."
+msgstr "Демобилизовано необученных членов экипажа: %(number)s"
 
 msgid "conversion/title"
 msgstr "Квитанция"

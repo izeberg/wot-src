@@ -170,6 +170,18 @@ msgstr "%Y"
 msgid "dateRange/year/stringDivider"
 msgstr "С {start} по {end}"
 
+msgid "number/decimal"
+msgstr ","
+
+msgid "number/minLenToSplit"
+msgstr "5"
+
+msgid "number/negativeSign"
+msgstr "-"
+
+msgid "number/separator"
+msgstr " "
+
 msgid "regionalDate/dayMonthAbbreviated"
 msgstr "%#d %bd"
 

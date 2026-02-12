@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.Scaleform.daapi.view.meta.StatsBaseMeta import StatsBaseMeta
 from gui.shared import events, EVENT_BUS_SCOPE
 from helpers import dependency

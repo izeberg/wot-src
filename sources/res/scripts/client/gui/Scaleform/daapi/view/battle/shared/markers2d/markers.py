@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from enum import Enum
 import Event, GUI, Math
 from chat_commands_consts import INVALID_TARGET_ID, MarkerType

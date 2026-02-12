@@ -138,6 +138,7 @@ package net.wg.gui.components.containers
          if(this._wrapper.visible)
          {
             _loc1_ = this._wrapper.getComponentForFocus();
+            this._wrapper.focused = true;
          }
          App.utils.focusHandler.setFocus(_loc1_);
       }
@@ -148,7 +149,7 @@ package net.wg.gui.components.containers
          {
             DebugUtils.LOG_ERROR(name + " does not have modal focus to loose it.");
          }
-         this._hasModalFocus = false;
+         this._wrapper.focused = this._hasModalFocus = false;
       }
       
       public function setViewSize(param1:Number, param2:Number) : void

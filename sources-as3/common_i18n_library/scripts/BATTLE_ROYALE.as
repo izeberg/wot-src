@@ -55,28 +55,6 @@ package
       
       public static const RADAR_HINT_NOBINDING:String = "#battle_royale:radar/hint/noBinding";
       
-      public static const FULLSTATS_TITLE:String = "#battle_royale:fullStats/title";
-      
-      public static const FULLSTATS_SUBTITLE:String = "#battle_royale:fullStats/subTitle";
-      
-      public static const FULLSTATS_DESCRIPTION:String = "#battle_royale:fullStats/description";
-      
-      public static const FULLSTATS_ALIVE:String = "#battle_royale:fullStats/alive";
-      
-      public static const FULLSTATS_DESTROYED:String = "#battle_royale:fullStats/destroyed";
-      
-      public static const FULLSTATS_ICONS_CORPSELOOT_DESCRIPTION:String = "#battle_royale:fullStats/icons/corpseLoot/description";
-      
-      public static const FULLSTATS_ICONS_DEFAULTLOOT_DESCRIPTION:String = "#battle_royale:fullStats/icons/defaultLoot/description";
-      
-      public static const FULLSTATS_ICONS_EXTENDEDLOOT_DESCRIPTION:String = "#battle_royale:fullStats/icons/extendedLoot/description";
-      
-      public static const FULLSTATS_ICONS_AIRDROP_DESCRIPTION:String = "#battle_royale:fullStats/icons/airDrop/description";
-      
-      public static const FULLSTATS_DEATHZONE_WARNING_DESCRIPTION:String = "#battle_royale:fullStats/deathZone/warning/description";
-      
-      public static const FULLSTATS_DEATHZONE_CLOSED_DESCRIPTION:String = "#battle_royale:fullStats/deathZone/closed/description";
-      
       public static const TECHTREE_RADAR_COOLDOWN:String = "#battle_royale:techtree/radar_cooldown";
       
       public static const TECHTREE_RADAR_DISTANCE:String = "#battle_royale:techtree/radar_distance";
@@ -195,12 +173,6 @@ package
       
       public static const TOOLTIP_PROGRESSION_LEADERBOARDREWARD_BATTLETYPESHEADER_29:String = "#battle_royale:tooltip/progression/leaderboardReward/battleTypesHeader/29";
       
-      public static const TAB_LABLE_SOLO:String = "#battle_royale:tab/lable/solo";
-      
-      public static const TAB_LABLE_PLATOON:String = "#battle_royale:tab/lable/platoon";
-      
-      public static const TAB_LABLE_TEAM:String = "#battle_royale:tab/lable/team";
-      
       public static const TOOLTIP_BATTLETYPESELECTOR_HEADER_SOLO:String = "#battle_royale:tooltip/battleTypeSelector/header/solo";
       
       public static const TOOLTIP_BATTLETYPESELECTOR_DESCRIPTION_SOLO:String = "#battle_royale:tooltip/battleTypeSelector/description/solo";
@@ -309,35 +281,35 @@ package
       
       public static const BATTLERESULT_BATTLEQUESTSWIDGET_TITLE:String = "#battle_royale:battleResult/battleQuestsWidget/title";
       
-      public static const BATTLERESULT_STATS_PLACE_TITLE:String = "#battle_royale:battleResult/stats/place/title";
+      public static const BATTLERESULT_STATS_TITLE_PLACE:String = "#battle_royale:battleResult/stats/title/place";
       
-      public static const BATTLERESULT_STATS_PLACE_HEADER:String = "#battle_royale:battleResult/stats/place/header";
+      public static const BATTLERESULT_STATS_HEADER_PLACE:String = "#battle_royale:battleResult/stats/header/place";
       
-      public static const BATTLERESULT_STATS_PLACE_BODY:String = "#battle_royale:battleResult/stats/place/body";
+      public static const BATTLERESULT_STATS_BODY_PLACE:String = "#battle_royale:battleResult/stats/body/place";
       
-      public static const BATTLERESULT_STATS_KILLS_TITLE:String = "#battle_royale:battleResult/stats/kills/title";
+      public static const BATTLERESULT_STATS_TITLE_KILLS:String = "#battle_royale:battleResult/stats/title/kills";
       
-      public static const BATTLERESULT_STATS_KILLS_HEADER:String = "#battle_royale:battleResult/stats/kills/header";
+      public static const BATTLERESULT_STATS_HEADER_KILLS:String = "#battle_royale:battleResult/stats/header/kills";
       
-      public static const BATTLERESULT_STATS_KILLS_BODY:String = "#battle_royale:battleResult/stats/kills/body";
+      public static const BATTLERESULT_STATS_BODY_KILLS:String = "#battle_royale:battleResult/stats/body/kills";
       
-      public static const BATTLERESULT_STATS_SQUADKILLS_TITLE:String = "#battle_royale:battleResult/stats/squadKills/title";
+      public static const BATTLERESULT_STATS_TITLE_SQUADKILLS:String = "#battle_royale:battleResult/stats/title/squadKills";
       
-      public static const BATTLERESULT_STATS_SQUADKILLS_HEADER:String = "#battle_royale:battleResult/stats/squadKills/header";
+      public static const BATTLERESULT_STATS_HEADER_SQUADKILLS:String = "#battle_royale:battleResult/stats/header/squadKills";
       
-      public static const BATTLERESULT_STATS_SQUADKILLS_BODY:String = "#battle_royale:battleResult/stats/squadKills/body";
+      public static const BATTLERESULT_STATS_BODY_SQUADKILLS:String = "#battle_royale:battleResult/stats/body/squadKills";
       
-      public static const BATTLERESULT_STATS_DAMAGEDEALT_TITLE:String = "#battle_royale:battleResult/stats/damageDealt/title";
+      public static const BATTLERESULT_STATS_TITLE_DAMAGEDEALT:String = "#battle_royale:battleResult/stats/title/damageDealt";
       
-      public static const BATTLERESULT_STATS_DAMAGEDEALT_HEADER:String = "#battle_royale:battleResult/stats/damageDealt/header";
+      public static const BATTLERESULT_STATS_HEADER_DAMAGEDEALT:String = "#battle_royale:battleResult/stats/header/damageDealt";
       
-      public static const BATTLERESULT_STATS_DAMAGEDEALT_BODY:String = "#battle_royale:battleResult/stats/damageDealt/body";
+      public static const BATTLERESULT_STATS_BODY_DAMAGEDEALT:String = "#battle_royale:battleResult/stats/body/damageDealt";
       
-      public static const BATTLERESULT_STATS_DAMAGEBLOCKEDBYARMOR_TITLE:String = "#battle_royale:battleResult/stats/damageBlockedByArmor/title";
+      public static const BATTLERESULT_STATS_TITLE_DAMAGEBLOCKEDBYARMOR:String = "#battle_royale:battleResult/stats/title/damageBlockedByArmor";
       
-      public static const BATTLERESULT_STATS_DAMAGEBLOCKEDBYARMOR_HEADER:String = "#battle_royale:battleResult/stats/damageBlockedByArmor/header";
+      public static const BATTLERESULT_STATS_HEADER_DAMAGEBLOCKEDBYARMOR:String = "#battle_royale:battleResult/stats/header/damageBlockedByArmor";
       
-      public static const BATTLERESULT_STATS_DAMAGEBLOCKEDBYARMOR_BODY:String = "#battle_royale:battleResult/stats/damageBlockedByArmor/body";
+      public static const BATTLERESULT_STATS_BODY_DAMAGEBLOCKEDBYARMOR:String = "#battle_royale:battleResult/stats/body/damageBlockedByArmor";
       
       public static const BATTLERESULT_STATS_ANONYMIZER_HEADER:String = "#battle_royale:battleResult/stats/anonymizer/header";
       
@@ -354,36 +326,6 @@ package
       public static const LEVEL_UP_MAX_LEVEL_INFO_TITLE:String = "#battle_royale:level_up/max_level_info/title";
       
       public static const LEVEL_UP_MAX_LEVEL_INFO_DESCRIPTION:String = "#battle_royale:level_up/max_level_info/description";
-      
-      public static const REWARDCURRENCYTOOLTIP_XP_HEADER:String = "#battle_royale:rewardCurrencyTooltip/xp/header";
-      
-      public static const REWARDCURRENCYTOOLTIP_XP_BODY:String = "#battle_royale:rewardCurrencyTooltip/xp/body";
-      
-      public static const REWARDCURRENCYTOOLTIP_XP_PREMFACTOR:String = "#battle_royale:rewardCurrencyTooltip/xp/premFactor";
-      
-      public static const REWARDCURRENCYTOOLTIP_CREDITS_HEADER:String = "#battle_royale:rewardCurrencyTooltip/credits/header";
-      
-      public static const REWARDCURRENCYTOOLTIP_CREDITS_BODY:String = "#battle_royale:rewardCurrencyTooltip/credits/body";
-      
-      public static const REWARDCURRENCYTOOLTIP_CREDITS_PREMFACTOR:String = "#battle_royale:rewardCurrencyTooltip/credits/premFactor";
-      
-      public static const REWARDCURRENCYTOOLTIP_BRCOIN_HEADER:String = "#battle_royale:rewardCurrencyTooltip/brcoin/header";
-      
-      public static const REWARDCURRENCYTOOLTIP_BRCOIN_BODY:String = "#battle_royale:rewardCurrencyTooltip/brcoin/body";
-      
-      public static const REWARDCURRENCYTOOLTIP_BRCOIN_PREMFACTOR:String = "#battle_royale:rewardCurrencyTooltip/brcoin/premFactor";
-      
-      public static const REWARDCURRENCYTOOLTIP_CRYSTAL_HEADER:String = "#battle_royale:rewardCurrencyTooltip/crystal/header";
-      
-      public static const REWARDCURRENCYTOOLTIP_CRYSTAL_BODY:String = "#battle_royale:rewardCurrencyTooltip/crystal/body";
-      
-      public static const REWARDCURRENCYTOOLTIP_BATTLEPASSPOINTS_HEADER:String = "#battle_royale:rewardCurrencyTooltip/battlePassPoints/header";
-      
-      public static const REWARDCURRENCYTOOLTIP_BATTLEPASSPOINTS_BODY:String = "#battle_royale:rewardCurrencyTooltip/battlePassPoints/body";
-      
-      public static const REWARDCURRENCYTOOLTIP_BRPROGRESSIONTOKEN_HEADER:String = "#battle_royale:rewardCurrencyTooltip/brProgressionToken/header";
-      
-      public static const REWARDCURRENCYTOOLTIP_BRPROGRESSIONTOKEN_BODY:String = "#battle_royale:rewardCurrencyTooltip/brProgressionToken/body";
       
       public static const COMMANDERINFO_COMMONRANK:String = "#battle_royale:commanderInfo/commonRank";
       
@@ -668,6 +610,12 @@ package
       public static const BATTLE_RESPAWNMESSAGEPANEL_SQUAD_RESPAWNING_TITLE:String = "#battle_royale:battle/respawnMessagePanel/squad/respawning/title";
       
       public static const BATTLE_WINNERCONGRATULATIONSVIEW_TITLE:String = "#battle_royale:battle/winnerCongratulationsView/title";
+      
+      public static const BATTLE_WINNERCONGRATULATIONSVIEW_COLECTED:String = "#battle_royale:battle/winnerCongratulationsView/colected";
+      
+      public static const BATTLE_WINNERCONGRATULATIONSVIEW_BONUSACTIVATED:String = "#battle_royale:battle/winnerCongratulationsView/bonusActivated";
+      
+      public static const BATTLE_WINNERCONGRATULATIONSVIEW_BONUSFORFIRSTPLACE:String = "#battle_royale:battle/winnerCongratulationsView/bonusForFirstPlace";
        
       
       public function BATTLE_ROYALE()

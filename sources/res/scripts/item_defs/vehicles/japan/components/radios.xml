@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<xmlns:xmlref>http://bwt/xmlref</xmlns:xmlref>
 	<ids>
 		<_Type94_Hei_1>0</_Type94_Hei_1>
 		<_Type94_Otsu>2</_Type94_Otsu>
@@ -410,7 +409,7 @@
 			<price>80000</price>
 			<notInShop>true</notInShop>
 			<weight>100</weight>
-			<distance>100</distance>
+			<distance>800</distance>
 			<maxHealth>250</maxHealth>
 			<maxRegenHealth>125</maxRegenHealth>
 			<repairCost>4</repairCost>

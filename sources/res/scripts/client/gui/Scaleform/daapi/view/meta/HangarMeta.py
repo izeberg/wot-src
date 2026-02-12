@@ -49,10 +49,6 @@ class HangarMeta(View):
         if self._isDAAPIInited():
             return self.flashObject.as_closeHelpLayout()
 
-    def as_showMiniClientInfoS(self, description, hyperlink):
-        if self._isDAAPIInited():
-            return self.flashObject.as_showMiniClientInfo(description, hyperlink)
-
     def as_show3DSceneTooltipS(self, id, args):
         if self._isDAAPIInited():
             return self.flashObject.as_show3DSceneTooltip(id, args)
@@ -81,10 +77,6 @@ class HangarMeta(View):
         if self._isDAAPIInited():
             return self.flashObject.as_animateHangarViews(isShow)
 
-    def as_setDQWidgetLayoutS(self, layout):
-        if self._isDAAPIInited():
-            return self.flashObject.as_setDQWidgetLayout(layout)
-
     def as_updateCarouselEventEntryStateS(self, isVisible):
         if self._isDAAPIInited():
             return self.flashObject.as_updateCarouselEventEntryState(isVisible)
@@ -92,7 +84,3 @@ class HangarMeta(View):
     def as_updateHangarComponentsS(self, showComponents=None, hideComponents=None):
         if self._isDAAPIInited():
             return self.flashObject.as_updateHangarComponents(showComponents, hideComponents)
-
-    def as_setComp7SpaceLoadedS(self, isLoaded):
-        if self._isDAAPIInited():
-            return self.flashObject.as_setComp7SpaceLoaded(isLoaded)

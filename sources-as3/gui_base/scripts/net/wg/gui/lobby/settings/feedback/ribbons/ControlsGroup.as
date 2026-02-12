@@ -25,17 +25,16 @@ package net.wg.gui.lobby.settings.feedback.ribbons
       
       public var titleTF:TextField;
       
-      public var content:UIComponent;
+      public var content:GroupContent;
       
-      private var _prefix:String;
+      private var _prefix:String = "close_";
       
       private var _state:String;
-      
-      private var _defaultContentVisibilityState:Boolean = false;
       
       public function ControlsGroup()
       {
          super();
+         this.content.visible = false;
       }
       
       public function getControlByName(param1:String) : IDisplayObject
@@ -48,24 +47,14 @@ package net.wg.gui.lobby.settings.feedback.ribbons
          this.titleTF.text = param1;
       }
       
-      public function set isOpen(param1:Boolean) : void
+      public function get isOpen() : Boolean
       {
-         if(initialized)
-         {
-            this.content.visible = param1;
-            this.updateState();
-         }
-         else
-         {
-            this._defaultContentVisibilityState = param1;
-         }
+         return this._prefix == PREFIX_OPEN;
       }
       
       override protected function configUI() : void
       {
          super.configUI();
-         this.content.visible = this._defaultContentVisibilityState;
-         this._prefix = !!this._defaultContentVisibilityState ? PREFIX_OPEN : PREFIX_CLOSE;
          this._state = STATE_UP;
          this.hitMC.buttonMode = true;
          this.hitMC.addEventListener(MouseEvent.CLICK,this.clickHandler);

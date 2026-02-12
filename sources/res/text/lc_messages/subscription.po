@@ -107,8 +107,47 @@ msgstr "Управлять"
 msgid "headerButton/state/available"
 msgstr "Активировать"
 
-msgid "headerButton/state/cancelled"
-msgstr "Управлять"
+msgid "headerButton/tooltip/Active"
+msgstr "Активна"
+
+msgid "headerButton/tooltip/Cancelled"
+msgstr "Отменена"
+
+msgid "headerButton/tooltip/expiresOn"
+msgstr "Подписка истекает: %(date)"
+
+msgid "headerButton/tooltip/extendsOn"
+msgstr "Продление подписки: %(date)"
+
+msgid "headerButton/tooltip/getSubscriptionHint"
+msgstr "Узнать больше"
+
+msgid "headerButton/tooltip/nonSubscriberTitle"
+msgstr "Подписка"
+
+msgid "headerButton/tooltip/periodicity"
+msgstr "%(number) д"
+
+msgid "headerButton/tooltip/title"
+msgstr "WoT Plus"
+
+msgid "headerButton/tooltip/titleCore"
+msgstr "WoT Plus Core"
+
+msgid "headerButton/tooltip/titlePro"
+msgstr "WoT Plus Pro"
+
+msgid "headerButton/tooltip/unavailable"
+msgstr "WoT Plus временно недоступна"
+
+msgid "headerButton/tooltip/unlockPro"
+msgstr "Разблокировать с WoT Plus Pro"
+
+msgid "headerButton/tooltip/unlockSteamAndCn"
+msgstr "Разблокировать с WoT Plus"
+
+msgid "headerButton/tooltip/unlockSubscription"
+msgstr "Разблокировать с WoT Plus Core или Pro"
 
 msgid "rentButton/label"
 msgstr "Арендовать"

@@ -14,7 +14,7 @@ from gui.impl.pub import ViewImpl
 from gui.shared.gui_items import KPI
 from gui.shared.items_parameters import isTemperatureGun
 from gui.shared.items_parameters import formatters as param_formatter
-from gui.shared.items_parameters.bonus_helper import isSituationalBonus
+from gui.shared.items_parameters.bonus_helper import isSituationalBonus, isAppropriateVehicle
 from gui.shared.items_parameters.comparator import addParameterValuesOfTheSameType
 from gui.shared.items_parameters.formatters import isRelativeParameter
 from gui.shared.items_parameters.param_name_helper import getVehicleParameterText
@@ -322,11 +322,11 @@ class VehicleAdvancedParamsTooltipView(BaseVehicleAdvancedParamsTooltipView):
         vehicle = self.vehicle
         situationalScheme = (
          partial(self._formatValueText, ValueStyleEnum.RED),
-         partial(self._formatValueText, ValueStyleEnum.YELLOW),
+         partial(self._formatValueText, ValueStyleEnum.WHITESPANISH),
          partial(self._formatValueText, ValueStyleEnum.YELLOW))
         extractedBonusScheme = (
          partial(self._formatValueText, ValueStyleEnum.RED),
-         partial(self._formatValueText, ValueStyleEnum.GREENBRIGHT),
+         partial(self._formatValueText, ValueStyleEnum.WHITESPANISH),
          partial(self._formatValueText, ValueStyleEnum.GREENBRIGHT))
         vehPostProgressionBonusLevels = {step.action.getTechName():step.getLevel() for step in vehicle.postProgression.iterUnorderedSteps() if step.action.actionType == ACTION_TYPES.MODIFICATION if step.action.actionType == ACTION_TYPES.MODIFICATION}
         bonuses = sorted(self._extendedData.bonuses, cmp=_bonusCmp)
@@ -344,6 +344,8 @@ class VehicleAdvancedParamsTooltipView(BaseVehicleAdvancedParamsTooltipView):
                 installedArchetypes.add(archetype)
             formattedBnsID = _getBonusID(bnsType, bnsId)
             isSituational = isSituationalBonus(formattedBnsID, bnsType, pInfo.name)
+            if not isAppropriateVehicle(formattedBnsID, vehicle):
+                continue
             scheme = situationalScheme if isSituational else extractedBonusScheme
             valueStr = param_formatter.formatParameterDelta(pInfo, scheme)
             if valueStr is not None:
@@ -397,6 +399,8 @@ class VehicleAdvancedParamsTooltipView(BaseVehicleAdvancedParamsTooltipView):
             if (bnsId, bnsType) in self._extendedData.inactiveBonuses.keys():
                 isInactive = True
             formattedBnsID = _getBonusID(bnsType, bnsId)
+            if not isAppropriateVehicle(formattedBnsID, vehicle):
+                continue
             isEnabled = (formattedBnsID, bnsType) in bonuses if bnsType in _CREW_TYPES else False
             itemModel = VehicleParamsItem()
             if isInactive and bnsType != constants.BonusTypes.BATTLE_BOOSTER:

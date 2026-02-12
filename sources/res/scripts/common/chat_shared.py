@@ -1620,7 +1620,15 @@ SYS_MESSAGE_TYPE = Enumeration('systemMessageType', [
  'petBuy',
  'petAdded',
  'petSynergyUp',
- 'petSynergyMax'])
+ 'petSynergyMax',
+ 'wotPlusProBoostEnabled',
+ 'wotPlusProBoostDisabled',
+ 'wotPlusProBoostActivated',
+ 'wotPlusProBoostDeactivated',
+ 'wotPlusProBoostSwitch',
+ 'wotPlusCoreUnlocked',
+ 'wotPlusProUnlocked',
+ 'wotPlusUpgrade'])
 SYS_MESSAGE_IMPORTANCE = Enumeration('systemMessageImportance', [
  'normal',
  'high'])

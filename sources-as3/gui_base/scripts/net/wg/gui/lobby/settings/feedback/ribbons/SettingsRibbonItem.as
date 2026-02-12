@@ -64,6 +64,11 @@ package net.wg.gui.lobby.settings.feedback.ribbons
          this._icons.setSettings(param1,param2);
       }
       
+      public function isDisposed() : Boolean
+      {
+         return this._disposed;
+      }
+      
       protected function onDispose() : void
       {
          this._disposed = true;
@@ -73,11 +78,6 @@ package net.wg.gui.lobby.settings.feedback.ribbons
          this._texts.dispose();
          removeChild(this._texts);
          this._texts = null;
-      }
-      
-      public function isDisposed() : Boolean
-      {
-         return this._disposed;
       }
    }
 }

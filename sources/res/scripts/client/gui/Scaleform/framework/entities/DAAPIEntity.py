@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.Scaleform.framework.entities.EventSystemEntity import EventSystemEntity
 
 class DAAPIEntity(EventSystemEntity):

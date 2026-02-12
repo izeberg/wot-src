@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.Scaleform.daapi import LobbySubView
 from hangar_selectable_objects import ISelectableLogicCallback, HangarSelectableLogic
 

@@ -151,6 +151,9 @@ msgstr "Выдаётся игрокам за их неоценимый вкла�
 msgid "15YearsOfService_descr"
 msgstr "Вы в игре с %(regDate)s"
 
+msgid "BPReserveAchievement_1"
+msgstr "Резервное достижение БП 1"
+
 msgid "BPReserveAchievement_10"
 msgstr "Резервное достижение БП 10"
 
@@ -160,13 +163,64 @@ msgstr "• Выдавалась за прохождение прогресси�
 msgid "BPReserveAchievement_10_descr"
 msgstr "За определённые успехи в игре."
 
-msgid "BPReserveAchievement_8"
-msgstr "Резервное достижение БП 8"
-
-msgid "BPReserveAchievement_8_condition"
+msgid "BPReserveAchievement_1_condition"
 msgstr "• Выдавалась за прохождение прогрессии."
 
-msgid "BPReserveAchievement_8_descr"
+msgid "BPReserveAchievement_1_descr"
+msgstr "За определённые успехи в игре."
+
+msgid "BPReserveAchievement_2"
+msgstr "Резервное достижение БП 2"
+
+msgid "BPReserveAchievement_2_condition"
+msgstr "• Выдавалась за прохождение прогрессии."
+
+msgid "BPReserveAchievement_2_descr"
+msgstr "За определённые успехи в игре."
+
+msgid "BPReserveAchievement_3"
+msgstr "Резервное достижение БП 3"
+
+msgid "BPReserveAchievement_3_condition"
+msgstr "• Выдавалась за прохождение прогрессии."
+
+msgid "BPReserveAchievement_3_descr"
+msgstr "За определённые успехи в игре."
+
+msgid "BPReserveAchievement_4"
+msgstr "Резервное достижение БП 4"
+
+msgid "BPReserveAchievement_4_condition"
+msgstr "• Выдавалась за прохождение прогрессии."
+
+msgid "BPReserveAchievement_4_descr"
+msgstr "За определённые успехи в игре."
+
+msgid "BPReserveAchievement_5"
+msgstr "Резервное достижение БП 5"
+
+msgid "BPReserveAchievement_5_condition"
+msgstr "• Выдавалась за прохождение прогрессии."
+
+msgid "BPReserveAchievement_5_descr"
+msgstr "За определённые успехи в игре."
+
+msgid "BPReserveAchievement_6"
+msgstr "Резервное достижение БП 6"
+
+msgid "BPReserveAchievement_6_condition"
+msgstr "• Выдавалась за прохождение прогрессии."
+
+msgid "BPReserveAchievement_6_descr"
+msgstr "За определённые успехи в игре."
+
+msgid "BPReserveAchievement_7"
+msgstr "Резервное достижение БП 7"
+
+msgid "BPReserveAchievement_7_condition"
+msgstr "• Выдавалась за прохождение прогрессии."
+
+msgid "BPReserveAchievement_7_descr"
 msgstr "За определённые успехи в игре."
 
 msgid "BPReserveAchievement_9"
@@ -385,6 +439,16 @@ msgid "BattlePassCommonPr_18extra_2_descr"
 msgstr ""
 "За определённые успехи в рамках главы Боевого пропуска «The Walking Dead»."
 
+msgid "BattlePassCommonPr_19"
+msgstr "Полярное радио"
+
+msgid "BattlePassCommonPr_19_condition"
+msgstr "• Выдавалась за прохождение всех трёх глав."
+
+msgid "BattlePassCommonPr_19_descr"
+msgstr ""
+"За определённые успехи в рамках девятнадцатого сезона Боевого пропуска."
+
 msgid "BattlePassCommonPr_1_condition"
 msgstr "• Основная часть прогрессии состоит из 45 этапов."
 
@@ -519,6 +583,15 @@ msgid "BattlePassCommonPr_NY25_descr"
 msgstr ""
 "За определённые успехи в событии «Рэмбо».\n"
 "RAMBO™ & © 2025 STUDIOCANAL S.A.S. (R) All Rights Reserved."
+
+msgid "BattlePassCommonPr_NY26"
+msgstr "Главная директива"
+
+msgid "BattlePassCommonPr_NY26_condition"
+msgstr "• Выдавалась за прохождение прогрессии."
+
+msgid "BattlePassCommonPr_NY26_descr"
+msgstr "За определённые успехи в рамках главы Боевого пропуска «RoboCop»."
 
 msgid "BigAnniversaryMedal_CN"
 msgstr "Большая юбилейная медаль"
@@ -968,6 +1041,17 @@ msgstr ""
 
 msgid "HE17A3_notification"
 msgstr "Все задачи события «Вторжение Левиафана» 2017 года завершены!"
+
+msgid "LunarNY2026CN"
+msgstr "Счастливая монетка"
+
+msgid "LunarNY2026CN_condition"
+msgstr "Пройти прогрессию события «Состязание Нефритового императора»."
+
+msgid "LunarNY2026CN_descr"
+msgstr ""
+"Выдавалась за прохождение прогрессии события «Состязание Нефритового "
+"императора»."
 
 msgid "NY18A1"
 msgstr "«Боевое бррр... III степени»"

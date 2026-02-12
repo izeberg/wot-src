@@ -20,7 +20,7 @@ package net.wg.gui.components.crosshairPanel.components.autoloader
       
       public var cassette:AutoloaderShellsCassette = null;
       
-      public var boostndicator:BoostIndicator = null;
+      public var boostIndicator:BoostIndicator = null;
       
       public var fireMc:MovieClip = null;
       
@@ -47,8 +47,8 @@ package net.wg.gui.components.crosshairPanel.components.autoloader
                {
                   _loc1_ = SHELL_RELOAD_INDICATOR_OFFSETS_X.length - 1;
                }
-               this.boostndicator.x = this.cassette.x + SHELL_RELOAD_INDICATOR_OFFSETS_X[_loc1_];
-               this.boostndicator.y = this.cassette.y - SHELL_RELOAD_INDICATOR_OFFSETS_Y[_loc1_];
+               this.boostIndicator.x = this.cassette.x + SHELL_RELOAD_INDICATOR_OFFSETS_X[_loc1_];
+               this.boostIndicator.y = this.cassette.y - SHELL_RELOAD_INDICATOR_OFFSETS_Y[_loc1_];
             }
          }
          if(isInvalid(CURRENT_AMMO))
@@ -61,20 +61,20 @@ package net.wg.gui.components.crosshairPanel.components.autoloader
       {
          this.cassette.dispose();
          this.cassette = null;
-         this.boostndicator.dispose();
-         this.boostndicator = null;
+         this.boostIndicator.dispose();
+         this.boostIndicator = null;
          this.fireMc = null;
          super.onDispose();
       }
       
       public function autoloaderBoostUpdate(param1:BoostIndicatorStateParamsVO, param2:Number, param3:Boolean = false) : void
       {
-         this.boostndicator.autoloaderBoostUpdate(param1,param2,param3);
+         this.boostIndicator.autoloaderBoostUpdate(param1,param2,param3);
       }
       
       public function autoloaderBoostUpdateAsPercent(param1:Number, param2:Number) : void
       {
-         this.boostndicator.autoloaderBoostUpdateAsPercent(param1,param2);
+         this.boostIndicator.autoloaderBoostUpdateAsPercent(param1,param2);
       }
       
       public function autoloaderShowShot() : void
@@ -128,7 +128,7 @@ package net.wg.gui.components.crosshairPanel.components.autoloader
       
       public function get autoloaderBoostParams() : BoostIndicatorStateParamsVO
       {
-         return this.boostndicator.stateParams;
+         return this.boostIndicator.stateParams;
       }
    }
 }

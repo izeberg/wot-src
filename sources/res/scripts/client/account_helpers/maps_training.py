@@ -55,7 +55,7 @@ class MapsTraining(object):
 
     def __getResult(self, progress, vehType, team):
         bestResult = extractScenarioProgress(progress, team, vehType)
-        scenarioCompleted = MAX_SCENARIO_PROGRESS == bestResult
+        scenarioCompleted = bestResult == MAX_SCENARIO_PROGRESS
         return (
          scenarioCompleted, bestResult)
 

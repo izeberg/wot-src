@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from constants import ROLE_TYPE_TO_LABEL, ACTION_TYPE_TO_LABEL, ARENA_PERIOD
 from items.vehicles import getActionsByRole

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import constants, UnitBase
 from constants_utils import ConstInjector
 DEFAULT_ASSETS_PACK = 'undefined'
@@ -11,9 +12,11 @@ FUN_GAME_PARAMS_KEY = 'fun_random_config'
 BATTLE_MODE_VEH_TAGS_EXCEPT_FUN = constants.BATTLE_MODE_VEHICLE_TAGS - {'fun_random'}
 
 class FunSubModeImpl(object):
-    DEV_TEST = 0
+    UNDEFINED = 0
     DEFAULT = 1
-    ALL = (DEFAULT,) + ((DEV_TEST,) if constants.IS_DEVELOPMENT else ())
+    DEV_TEST = 2
+    ALL = (
+     DEFAULT,) + ((DEV_TEST,) if constants.IS_DEVELOPMENT else ())
 
 
 class FunProgressionCondition(object):
@@ -53,6 +56,12 @@ class FunEfficiencyParameterCount(object):
 
 class ARENA_GUI_TYPE(constants.ARENA_GUI_TYPE, ConstInjector):
     FUN_RANDOM = 29
+    FUN_RANDOM_RANGE = (
+     FUN_RANDOM,)
+
+
+class ARENA_BONUS_TYPE(constants.ARENA_BONUS_TYPE, ConstInjector):
+    FUN_RANDOM = 42
 
 
 class UNIT_MGR_FLAGS(UnitBase.UNIT_MGR_FLAGS, ConstInjector):

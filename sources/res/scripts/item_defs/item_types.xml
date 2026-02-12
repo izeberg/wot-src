@@ -156,6 +156,7 @@
 			<noCrewTransferPenalty/>
 			<wotPlus/>
 			<bot_hunter/>
+			<excluded_from_customization/>
 		</tags>
 	</vehicle>
 	<vehicleChassis>
@@ -303,6 +304,7 @@
 			<stopOutsideBattle/>
 			<notForRegularSlot/>
 			<pointAbility/>
+			<perk_affected/>
 		</tags>
 	</equipment>
 	<customizationItem>

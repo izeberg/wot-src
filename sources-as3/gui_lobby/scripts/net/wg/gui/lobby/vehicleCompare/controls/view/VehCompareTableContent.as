@@ -12,6 +12,7 @@ package net.wg.gui.lobby.vehicleCompare.controls.view
    import net.wg.infrastructure.base.UIComponentEx;
    import scaleform.clik.constants.InvalidationType;
    import scaleform.clik.interfaces.IDataProvider;
+   import scaleform.gfx.MouseEventEx;
    
    public class VehCompareTableContent extends UIComponentEx
    {
@@ -107,20 +108,17 @@ package net.wg.gui.lobby.vehicleCompare.controls.view
             }
             this.scrollList.setParamsDelta(this._paramsDeltaData);
          }
-         if(isInvalid(InvalidationType.SIZE))
+         if(this._vehParamsInfoDataProvider && isInvalid(InvalidationType.SIZE))
          {
-            if(this._vehParamsInfoDataProvider)
-            {
-               _loc4_ = VehCompareVehParamRenderer.LINE_HEIGHT * this._vehParamsInfoDataProvider.originalLength + VehCompareVehParamRenderer.BOTTOM_LINE_HEIGHT;
-               this.paramsList.height = _loc4_;
-               this.separator.height = _loc4_;
-               this.tableGrid.width = width;
-               height = VehCompareVehParamRenderer.LINE_HEIGHT * this._vehParamsInfoDataProvider.length + VehCompareVehParamRenderer.BOTTOM_LINE_HEIGHT;
-               this.scrollList.width = width - this.scrollList.x;
-               this.scrollList.height = height;
-               this.scrollList.validateNow();
-               dispatchEvent(new Event(Event.RESIZE));
-            }
+            _loc4_ = VehCompareVehParamRenderer.LINE_HEIGHT * this._vehParamsInfoDataProvider.originalLength + VehCompareVehParamRenderer.BOTTOM_LINE_HEIGHT;
+            this.paramsList.height = _loc4_;
+            this.separator.height = _loc4_;
+            this.tableGrid.width = width;
+            height = VehCompareVehParamRenderer.LINE_HEIGHT * this._vehParamsInfoDataProvider.length + VehCompareVehParamRenderer.BOTTOM_LINE_HEIGHT;
+            this.scrollList.width = width - this.scrollList.x;
+            this.scrollList.height = height;
+            this.scrollList.validateNow();
+            dispatchEvent(new Event(Event.RESIZE));
          }
          if(isInvalid(VEH_PARAMS_SCROLL_INV))
          {
@@ -133,24 +131,29 @@ package net.wg.gui.lobby.vehicleCompare.controls.view
          }
       }
       
-      override protected function onDispose() : void
+      override protected function onBeforeDispose() : void
       {
          removeEventListener(MouseEvent.MOUSE_OVER,this.onComponentMouseHandler);
          removeEventListener(MouseEvent.MOUSE_OUT,this.onComponentMouseHandler);
          removeEventListener(VehCompareVehParamRendererEvent.PARAM_CLICK,this.onVehParamClickHandler);
          removeEventListener(VehCompareVehParamRendererEvent.PARAM_MOUSE_OUT,this.onVehParamMouseOutHandler);
          this.scrollList.removeEventListener(Event.SCROLL,this.onScrollListScrollHandler);
+         this.paramsList.removeEventListener(VehCompareParamsListEvent.RENDER_CLICK,this.onParamsListRenderClickHandler);
+         this.tableGrid.removeEventListener(MouseEvent.MOUSE_DOWN,this.onTableGridMouseDownHandler);
+         super.onBeforeDispose();
+      }
+      
+      override protected function onDispose() : void
+      {
+         this.clearCarouselDataProvider();
          this.scrollList.dispose();
          this.scrollList = null;
-         this.paramsList.removeEventListener(VehCompareParamsListEvent.RENDER_CLICK,this.onParamsListRenderClickHandler);
          this.paramsList.dispose();
          this.paramsList = null;
-         this.tableGrid.removeEventListener(MouseEvent.MOUSE_DOWN,this.onTableGridMouseDownHandler);
          this.tableGrid.dispose();
          this.tableGrid = null;
          this.separator = null;
          this._paramsDeltaData = null;
-         this.clearCarouselDataProvider();
          this._vehParamsInfoDataProvider = null;
          super.onDispose();
       }
@@ -214,7 +217,11 @@ package net.wg.gui.lobby.vehicleCompare.controls.view
       
       private function onTableGridMouseDownHandler(param1:MouseEvent) : void
       {
-         this.scrollList.startDragging(param1.stageX,param1.stageY);
+         var _loc2_:MouseEventEx = param1 as MouseEventEx;
+         if(_loc2_ && _loc2_.buttonIdx == MouseEventEx.LEFT_BUTTON)
+         {
+            this.scrollList.startDragging(param1.stageX,param1.stageY);
+         }
       }
       
       private function onCarouselDataProviderChangeHandler(param1:Event) : void

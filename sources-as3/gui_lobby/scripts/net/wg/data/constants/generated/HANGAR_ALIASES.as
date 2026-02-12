@@ -7,8 +7,6 @@ package net.wg.data.constants.generated
       
       public static const RANKED_TANK_CAROUSEL:String = "rankedTankCarousel";
       
-      public static const ENTRIES_CONTAINER:String = "entriesContainer";
-      
       public static const EPICBATTLE_TANK_CAROUSEL:String = "epicBattleTankCarousel";
       
       public static const BATTLEPASS_TANK_CAROUSEL:String = "battlePassTankCarousel";
@@ -59,8 +57,6 @@ package net.wg.data.constants.generated
       
       public static const PRESTIGE_PROGRESS_WIDGET:String = "prestigeProgressWidget";
       
-      public static const DAILY_QUEST_WIDGET:String = "dqWidget";
-      
       public static const BATTLE_PASSS_ENTRY_POINT:String = "battlePassEntryPoint";
       
       public static const BATTLE_ROYALE_TOURNAMENT:String = "battleRoyaleTournament";
@@ -81,13 +77,7 @@ package net.wg.data.constants.generated
       
       public static const CREW_PANEL_INJECT:String = "crewPanelInject";
       
-      public static const CRAFT_MACHINE_ENTRY_POINT:String = "CraftMachineEntryPoint";
-      
       public static const STRONGHOLD_EVENT_BANNER:String = "StrongholdEventBanner";
-      
-      public static const MAPBOX_ENTRY_POINT:String = "MapBoxEntryPoint";
-      
-      public static const MARATHON_ENTRY_POINT:String = "MarathonEntryPoint";
       
       public static const POST_PROGRESSION_INJECT:String = "PostProgressionInject";
       

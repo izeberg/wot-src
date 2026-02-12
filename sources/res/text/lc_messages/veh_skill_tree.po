@@ -58,6 +58,66 @@ msgstr[0] "%(perks)s"
 msgstr[1] "%(perks)s узла"
 msgstr[2] "%(perks)s узлов"
 
+msgid "footer/button/label"
+msgstr "Исследовать"
+
+msgid "footer/description/text/allResearched"
+msgstr "Все узлы исследованы. Вы получили доступ к элитным наградам."
+
+msgid "footer/description/text/emergencyModeEnabled"
+msgstr "Единый кошелёк временно недоступен. Приносим извинения за неудобства."
+
+msgid "footer/description/text/inBattle"
+msgstr "Узел недоступен: машина ещё в бою."
+
+msgid "footer/description/text/inFormation"
+msgstr "Узел недоступен: машина в составе формирования."
+
+msgid "footer/description/text/needsRepair"
+msgstr "Узел недоступен: машине требуется ремонт."
+
+msgid "footer/description/text/notInInventory"
+msgstr "Чтобы исследовать узлы, эта машина должна быть в Ангаре"
+
+msgid "footer/description/text/researchAvailable"
+msgstr "Выберите узел или ветку узлов для исследования"
+
+msgid "footer/text/amountItems"
+msgstr "Узлов: {{amount}}"
+
+msgid "footer/text/selectedItem"
+msgstr "Выбрано: {{selectedItem}}"
+
+msgid "footer/tooltip/body/emergencyModeEnabled"
+msgstr "Единый кошелёк временно недоступен. Приносим извинения за неудобства."
+
+msgid "footer/tooltip/body/inBattle"
+msgstr "Узел недоступен: машина ещё в бою."
+
+msgid "footer/tooltip/body/inFormation"
+msgstr "Узел недоступен: машина в составе формирования."
+
+msgid "footer/tooltip/body/needsRepair"
+msgstr "Узел недоступен: машине требуется ремонт."
+
+msgid "footer/tooltip/body/notEnoughExp"
+msgstr "Недостаточно опыта для изучения выбранных узлов"
+
+msgid "footer/tooltip/body/researchInProgress"
+msgstr "Исследование в процессе, пожалуйста, подождите..."
+
+msgid "footer/tooltip/header/emergencyModeEnabled"
+msgstr "Недоступно"
+
+msgid "footer/tooltip/header/info"
+msgstr "Выбранные узлы"
+
+msgid "footer/tooltip/listSelectedPerks"
+msgid_plural "plural/footer/tooltip/listSelectedPerks"
+msgstr[0] "• {{selectedPerks}},"
+msgstr[1] "• {{selectedPerks}}."
+msgstr[2] "• {{selectedPerks}}."
+
 msgid "intro/button"
 msgstr "Так точно!"
 
@@ -132,51 +192,6 @@ msgstr "К улучшениям"
 
 msgid "notifications/perkAvailable/title"
 msgstr "У вас достаточно опыта для улучшения машины!"
-
-msgid "research/allResearched"
-msgstr "Все узлы исследованы. Вы получили доступ к элитным наградам."
-
-msgid "research/button/label"
-msgstr "Исследовать"
-
-msgid "research/emergencyModeEnabled/body"
-msgstr "Единый кошелёк временно недоступен. Приносим извинения за неудобства."
-
-msgid "research/emergencyModeEnabled/header"
-msgstr "Недоступно"
-
-msgid "research/inBattle"
-msgstr "Узел недоступен: машина ещё в бою."
-
-msgid "research/inFormation"
-msgstr "Узел недоступен: машина в составе формирования."
-
-msgid "research/infoTooltipTitle"
-msgstr "Выбранные узлы"
-
-msgid "research/needsRepair"
-msgstr "Узел недоступен: машине требуется ремонт."
-
-msgid "research/noSelected"
-msgstr "Выберите узел или ветку узлов для исследования"
-
-msgid "research/notEnoughExp"
-msgstr "Недостаточно опыта для изучения выбранных узлов"
-
-msgid "research/notInInventory"
-msgstr "Чтобы исследовать узлы, эта машина должна быть в Ангаре"
-
-msgid "research/perks"
-msgstr "Узлов: {{amount}}"
-
-msgid "research/selected"
-msgstr "Выбрано: {{selectedItem}}"
-
-msgid "research/tooltip/description"
-msgid_plural "plural/research/tooltip/description"
-msgstr[0] "• {{selectedPerks}},"
-msgstr[1] "• {{selectedPerks}}."
-msgstr[2] "• {{selectedPerks}}."
 
 msgid "rewardScreen/button/accept"
 msgstr "Так точно!"

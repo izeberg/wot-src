@@ -783,9 +783,6 @@ msgstr "машин"
 msgid "action/short/berthsPrices"
 msgstr "Выгодная цена %(discount)s на расширение Казармы"
 
-msgid "action/short/calendar"
-msgstr "КАЛЕНДАРЬ РАСПРОДАЖИ"
-
 msgid "action/short/changeRoleCost"
 msgstr "Скидка %(discount)s на смену специальности членов экипажей"
 
@@ -942,26 +939,11 @@ msgstr "X%(discount)s бонус к боевому опыту за каждую 
 msgid "action/short/winXPFactorMode/daily"
 msgstr "X%(discount)s бонус к боевому опыту за первую победу"
 
-msgid "action/subheader/calendar"
-msgstr "ЖАРКИЕ ПРЕДЛОЖЕНИЯ!"
-
 msgid "action/time/finish"
 msgstr "Завершение:"
 
 msgid "action/time/left"
 msgstr "Осталось:"
-
-msgid "battleCondition/state/completed"
-msgstr "Завершено"
-
-msgid "battleCondition/state/completed_perfectly"
-msgstr "Выполнено с отличием"
-
-msgid "battleCondition/state/failed"
-msgstr "Провалено"
-
-msgid "battleCondition/state/in_progress"
-msgstr "Выполняется"
 
 msgid "battleCondition/task/status/done"
 msgstr "Выполнено!"
@@ -1019,6 +1001,9 @@ msgstr "Задача на x5 опыта за бой"
 
 msgid "bonusName/battle_bonuses"
 msgstr "Боевой бонус"
+
+msgid "bonusName/battle_pass_plus"
+msgstr "Боевой пропуск «Плюс»"
 
 msgid "bonusName/berths"
 msgstr "Мест в Казарме"
@@ -1245,6 +1230,9 @@ msgstr "Дни Общего премиум аккаунта"
 msgid "bonusName/premium_plus"
 msgstr "Дни Танкового премиум аккаунта"
 
+msgid "bonusName/pro_boost"
+msgstr "Pro Boost"
+
 msgid "bonusName/projectionDecal"
 msgstr "Декаль"
 
@@ -1254,11 +1242,17 @@ msgstr "Стандартный призовой бой."
 msgid "bonusName/rankedDailyBattles"
 msgstr "Ежедневный призовой бой."
 
+msgid "bonusName/service_record_customization"
+msgstr "Настраиваемое окно достижений"
+
 msgid "bonusName/slots"
 msgstr "Слотов в Ангаре"
 
 msgid "bonusName/statTracker"
 msgstr "Счётчик статистики"
+
+msgid "bonusName/stpcoin"
+msgstr "Печати удачи"
 
 msgid "bonusName/style"
 msgstr "Стиль"
@@ -1444,23 +1438,11 @@ msgstr "ЛТ"
 msgid "classes/small/mediumTank"
 msgstr "СТ"
 
-msgid "dailyQuests/body/reroll"
-msgstr "Замена задачи"
-
 msgid "dailyQuests/bonus/tooltipDescription"
 msgstr "Выполните 3 стандартные задачи, чтобы получить бонусную."
 
 msgid "dailyQuests/bonus/tooltipTitle"
 msgstr "Бонусная задача"
-
-msgid "dailyQuests/bonusQuest/bonusMissionTitle"
-msgstr "Бонусная задача"
-
-msgid "dailyQuests/bonusQuest/countDown_hrs"
-msgstr "Истекает через %H ч %M мин"
-
-msgid "dailyQuests/bonusQuest/countDown_minSec"
-msgstr "Истекает через %MM:%SS"
 
 msgid "dailyQuests/condition/battle_singular"
 msgstr "Провести бой"
@@ -1534,46 +1516,6 @@ msgstr "победить в бою"
 msgid "dailyQuests/condition/winBattle_accum"
 msgstr "победить в боях"
 
-msgid "dailyQuests/countDown/remainingText"
-msgstr "до следующих доступных стандартных задач"
-
-msgid "dailyQuests/countDown/title"
-msgstr "Вы выполнили все стандартные задачи на сегодня"
-
-msgid "dailyQuests/footer/paragraph"
-msgstr ""
-"Каждая выполненная стандартная, премиум или бонусная задача приближает вас к"
-" награде."
-
-msgid "dailyQuests/footer/title"
-msgstr "Выполненных задач:"
-
-msgid "dailyQuests/header/default"
-msgstr "ЕЖЕДНЕВНЫЕ ЗАДАЧИ"
-
-msgid "dailyQuests/header/winback"
-msgstr "СНОВА В СТРОЙ"
-
-msgid "dailyQuests/missionSwitch/tooltip/body/available"
-msgstr "Доступно через:"
-
-msgid "dailyQuests/missionSwitch/tooltip/body/desc"
-msgstr ""
-"у вас появляется возможность заменить нежелательную задачу на другую "
-"случайную."
-
-msgid "dailyQuests/missionSwitch/tooltip/body/desc_hrs"
-msgstr "Каждые %H ч"
-
-msgid "dailyQuests/missionSwitch/tooltip/body/desc_hrs_min"
-msgstr "Каждые %H ч и %M мин"
-
-msgid "dailyQuests/missionSwitch/tooltip/body/desc_min_only"
-msgstr "Каждые %M мин"
-
-msgid "dailyQuests/missionSwitch/tooltip/header"
-msgstr "Замена задачи недоступна"
-
 msgid "dailyQuests/postBattle/conditionTypeAnd"
 msgstr "и"
 
@@ -1582,9 +1524,6 @@ msgstr "или"
 
 msgid "dailyQuests/postBattle/epic/description"
 msgstr "Выполняйте ежедневные задачи, чтобы получить особую награду"
-
-msgid "dailyQuests/postBattle/genericAmpersand"
-msgstr "и"
 
 msgid "dailyQuests/postBattle/genericTitle_bonus"
 msgstr "Бонусная задача"
@@ -1600,21 +1539,6 @@ msgstr "Третья ежедневная задача"
 
 msgid "dailyQuests/postBattle/genericTitle_medium"
 msgstr "Вторая ежедневная задача"
-
-msgid "dailyQuests/tab/label"
-msgstr "Стандартные"
-
-msgid "dailyQuests/takeRewardsButton/countdown"
-msgstr "Доступны: {cream_Open}%(leftTime)s{cream_Close}"
-
-msgid "dailyQuests/takeRewardsButton/text"
-msgstr "ЗАБРАТЬ НАГРАДЫ"
-
-msgid "dailyQuests/takeRewardsButton/tooltip"
-msgstr "Нажмите, чтобы выбрать и забрать награды."
-
-msgid "dailyQuests/takeRewardsButton/tooltipDisable"
-msgstr "Награды временно недоступны, приносим извинения за неудобства."
 
 msgid "details/conditions/achievements"
 msgstr "Получить одну из наград:"
@@ -4576,201 +4500,14 @@ msgstr "Боевая задача"
 msgid "general/countdown/text/timer_hrs"
 msgstr "Замена доступна через %H ч %M мин"
 
-msgid "general/countdown/text/timer_hrs_only"
-msgstr "Замена доступна через %H ч"
-
-msgid "general/countdown/text/timer_min"
-msgstr "Замена доступна через %MM:%SS"
-
-msgid "general/countdown/text/timer_min_only"
-msgstr "Замена доступна через %M мин"
-
-msgid "general/countdown/text/timer_sec"
-msgstr "Замена доступна через %S с"
-
-msgid "general/countdown/timer_hrs"
-msgstr "%H ч %M мин"
-
-msgid "general/countdown/timer_hrs_only"
-msgstr "%H ч"
-
 msgid "general/countdown/timer_min"
 msgstr "%MM:%SS"
-
-msgid "general/countdown/timer_min_only"
-msgstr "%M мин"
-
-msgid "general/countdown/timer_sec"
-msgstr "%S с"
 
 msgid "igr/tooltip/battlesLabel"
 msgstr "Боёв"
 
 msgid "igr/tooltip/winsLabel"
 msgstr "Побед"
-
-msgid "infoPage/bonusMission/default"
-msgstr ""
-"Выполнение трёх стандартных задач открывает доступ к бонусной, за выполнение"
-" которой вы получите ещё более ценные награды. Вы должны успеть выполнить "
-"бонусную задачу до конца дня, иначе она пропадёт."
-
-msgid "infoPage/bonusMission/winback"
-msgstr ""
-"Выполнение трёх стандартных задач открывает доступ к бонусной задаче, за "
-"выполнение которой вы получите более ценные награды. Бонусную задачу "
-"необходимо выполнить до конца дня, иначе она пропадёт."
-
-msgid "infoPage/bonusMissionTitle"
-msgstr "Бонусная задача"
-
-msgid "infoPage/conditions/default"
-msgstr ""
-"Некоторые задачи необходимо выполнить за один бой, для других подобных "
-"ограничений нет. Для накопительных задач предусмотрена шкала прогресса. "
-"Задачи доступны для выполнения в Случайных боях и «Натиске». Прогресс "
-"выполнения сохраняется при смене режима."
-
-msgid "infoPage/conditions/winback"
-msgstr ""
-"Некоторые задачи необходимо выполнить за один бой, для других подобных "
-"ограничений нет. Для накопительных задач предусмотрена шкала прогресса. "
-"Задачи доступны для выполнения в «Разминке» и Случайных боях."
-
-msgid "infoPage/conditions/winback_comp7Active"
-msgstr ""
-"Некоторые задачи необходимо выполнить за один бой, для других подобных "
-"ограничений нет. Для накопительных задач предусмотрена шкала прогресса. "
-"Задачи доступны для выполнения в «Разминке», Случайных боях и «Натиске». "
-"Прогресс выполнения сохраняется при смене режима."
-
-msgid "infoPage/conditionsTitle"
-msgstr "Условия"
-
-msgid "infoPage/dailyMissionTitle"
-msgstr "Стандартные задачи"
-
-msgid "infoPage/dailyMissions/battlePassDailyMissions/default"
-msgstr ""
-"Стандартные задачи состоят из случайных условий, а выполнять их можно "
-"ежедневно. Как и в Личных боевых задачах, прогресс выполнения стандартных "
-"задач обновляется после каждого боя. Эти задачи предпочтительно выполнять в "
-"день их выдачи, иначе они перенесутся на следующий день, а следующая задача "
-"выдана не будет до выполнения текущей. Во время действия Боевого пропуска к "
-"награде за каждую задачу добавляются очки Боевого пропуска."
-
-msgid "infoPage/dailyMissions/battlePassDailyMissions/winback"
-msgstr ""
-"Стандартные задачи со случайными условиями можно выполнять ежедневно. "
-"Прогресс обновляется после каждого боя, однако предпочтительно выполнять их "
-"в день получения. В противном случае они перенесутся на другой день, а "
-"следующая задача не будет выдана до выполнения текущей. Во время действия "
-"Боевого пропуска к награде за каждую задачу добавляются очки Боевого "
-"пропуска."
-
-msgid "infoPage/dailyMissions/default"
-msgstr ""
-"Стандартные задачи состоят из случайных условий, которые можно выполнять "
-"ежедневно. Как и в личных боевых задачах, прогресс выполнения стандартных "
-"задач обновляется после каждого боя. Эти задачи не имеют ограничений по "
-"времени и могут быть выполнены в любой момент."
-
-msgid "infoPage/dailyMissions/winback"
-msgstr ""
-"Стандартные задачи со случайными условиями можно выполнять ежедневно. "
-"Прогресс обновляется после каждого боя. У этих задач нет ограничений по "
-"времени, и они могут быть выполнены в любой момент."
-
-msgid "infoPage/epicRewards/default"
-msgstr ""
-"Для получения особой награды необходимо выполнить цепочку задач, выстроенную"
-" по принципу марафона: в зачёт идёт каждая выполненная стандартная, премиум "
-"и бонусная задача. По завершении последней задачи цикл начинается заново. "
-"Цикл не имеет ограничений по времени и может быть завершён в любой момент."
-
-msgid "infoPage/epicRewards/winback"
-msgstr ""
-"Для получения главной награды необходимо завершить всю прогрессию задач "
-"«Снова в строй». В зачёт идёт каждая выполненная стандартная, премиум и "
-"бонусная задача. Завершив последнюю задачу, вы получите награду. Прогрессия "
-"при этом обнулится и будет снова доступна для прохождения."
-
-msgid "infoPage/epicRewardsTitle"
-msgstr "Особая награда"
-
-msgid "infoPage/header/default"
-msgstr "О ЕЖЕДНЕВНЫХ ЗАДАЧАХ"
-
-msgid "infoPage/header/winback"
-msgstr "СНОВА В СТРОЙ"
-
-msgid "infoPage/infoButton/back/goto"
-msgstr "К ЗАДАЧАМ"
-
-msgid "infoPage/infoButton/back/title"
-msgstr "НАЗАД"
-
-msgid "infoPage/infoButton/default"
-msgstr "О ЕЖЕДНЕВНЫХ ЗАДАЧАХ"
-
-msgid "infoPage/infoButton/winback"
-msgstr "О ЗАДАЧАХ"
-
-msgid "infoPage/infoButtonTooltip/body"
-msgstr "Перейдите по ссылке, чтобы получить дополнительную информацию."
-
-msgid "infoPage/infoButtonTooltip/header/default"
-msgstr "О ежедневных задачах"
-
-msgid "infoPage/infoButtonTooltip/header/winback"
-msgstr "О задачах"
-
-msgid "infoPage/missionSwitch/winback"
-msgstr ""
-"Раз в 4 часа любую из стандартных задач можно заменить на другую случайную. "
-"Если в этот момент одна или несколько ваших машин находятся в бою, прогресс "
-"выполнения будет потерян."
-
-msgid "infoPage/missionSwitchTitle"
-msgstr "Замена задачи"
-
-msgid "infoPage/missionSwitch_hrs"
-msgstr ""
-"Нежелательная стандартная задача может быть заменена на другую случайную. "
-"После замены данная опция станет недоступна на %H ч. Замена задачи приведёт "
-"к потере прогресса, если в этот момент одна или несколько ваших машин "
-"находятся в бою."
-
-msgid "infoPage/missionSwitch_min"
-msgstr ""
-"Нежелательная стандартная задача может быть заменена на другую случайную. "
-"После замены данная опция станет недоступна на %H ч и %MM мин. Замена задачи"
-" приведёт к потере прогресса, если в этот момент одна или несколько ваших "
-"машин находятся в бою."
-
-msgid "infoPage/premiumMissions/default"
-msgstr ""
-"Танковый премиум аккаунт открывает доступ к цепочке из трёх премиум задач, "
-"которые выполняются последовательно. Все задачи доступны для выполнения в "
-"Случайных боях, а также в режиме «Натиск». Прогресс выполнения обновляется "
-"после каждого боя."
-
-msgid "infoPage/premiumMissions/winback"
-msgstr ""
-"Танковый премиум аккаунт открывает доступ к цепочке из трёх премиум задач, "
-"которые выполняются последовательно. Все задачи доступны для выполнения в "
-"Разминке и Случайных боях. Прогресс выполнения обновляется после каждого "
-"боя."
-
-msgid "infoPage/premiumMissions/winback_comp7Active"
-msgstr ""
-"Танковый премиум аккаунт открывает доступ к цепочке из трёх премиум задач, "
-"которые выполняются последовательно. Все задачи доступны для выполнения в "
-"Разминке, Случайных боях и Натиске. Прогресс выполнения обновляется после "
-"каждого боя."
-
-msgid "infoPage/premiumMissionsTitle"
-msgstr "Премиум задачи"
 
 msgid "item/timer/tillFinish"
 msgstr "До окончания"
@@ -5458,12 +5195,6 @@ msgstr "попасть в топ-5 игроков по урону в своей 
 msgid "premiumQuests/condition/win/winLong"
 msgstr "победить в бою"
 
-msgid "premiumQuests/countDown/remainingText"
-msgstr "до следующих доступных премиум задач"
-
-msgid "premiumQuests/countDown/title"
-msgstr "Вы выполнили все премиум задачи на сегодня"
-
 msgid "premiumQuests/detailedQuests/requirements/premiumAccount"
 msgstr "Необходим Танковый премиум аккаунт"
 
@@ -5472,23 +5203,6 @@ msgstr "Предыдущая задача ещё не выполнена"
 
 msgid "premiumQuests/header/default"
 msgstr "ПРЕМИУМ ЗАДАЧИ"
-
-msgid "premiumQuests/header/winback"
-msgstr "СНОВА В СТРОЙ"
-
-msgid "premiumQuests/notPremiumAccount/button"
-msgstr "Купить премиум"
-
-msgid "premiumQuests/notPremiumAccount/paragraph"
-msgstr ""
-"Танковый премиум аккаунт открывает доступ к цепочке из трёх премиум задач, а"
-" также даёт другие преимущества: +50% к заработку опыта и кредитов, "
-"хранилище кредитов, дополнительный слот для исключения карт и управляемый "
-"бонус к опыту."
-
-msgid "premiumQuests/notPremiumAccount/title"
-msgstr ""
-"Чтобы получить доступ к премиум задачам, необходим Танковый премиум аккаунт."
 
 msgid "premiumQuests/postBattle/genericTitle_easy"
 msgstr "Первая премиум задача"
@@ -5507,15 +5221,6 @@ msgstr "Вторая премиум задача"
 
 msgid "premiumQuests/quests/prem_acc_q03/title"
 msgstr "Третья премиум задача"
-
-msgid "premiumQuests/tab/label"
-msgstr "Премиум"
-
-msgid "premiumQuests/tooltips/locked/body"
-msgstr "Выполните предыдущую премиум задачу для доступа к текущей."
-
-msgid "premiumQuests/tooltips/locked/header"
-msgstr "Задача недоступна"
 
 msgid "quest/chain/hint/holdAwardSheet"
 msgstr "ВЫПОЛНИТЬ ЗАДАЧУ ЗА БЛАНК ПРИКАЗА"

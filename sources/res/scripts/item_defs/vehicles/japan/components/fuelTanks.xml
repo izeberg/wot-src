@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<xmlns:xmlref>http://bwt/xmlref</xmlns:xmlref>
 	<ids>
 		<Small>201</Small>
 		<Medium>202</Medium>
@@ -68,7 +67,7 @@
 		<fuelTank_tier_11>
 			<tags/>
 			<price>100</price>
-			<weight>100</weight>
+			<weight>300</weight>
 			<maxHealth>225</maxHealth>
 			<maxRegenHealth>90</maxRegenHealth>
 			<repairCost>

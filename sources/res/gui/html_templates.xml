@@ -218,11 +218,6 @@
 			<attention_info_end>&lt;/font&gt;</attention_info_end>
 			<attention_warning_start>&lt;IMG SRC=&apos;img://gui/maps/icons/library/alertIcon.png&apos; width=&apos;16&apos; height=&apos;16&apos; vspace=&apos;-3&apos; hspace=&apos;0&apos; align=&apos;left&apos;/&gt; &lt;font size=&apos;14&apos; face=&apos;$FieldFont&apos; color=&apos;#EE7000&apos;&gt;</attention_warning_start>
 			<attention_warning_end>&lt;/font&gt;</attention_warning_end>
-			<fort_calendar_event>
-				<win>&lt;FONT COLOR=&quot;#595950&quot;&gt;_(#tooltips:fortification/calendarEvent/battleResultTooltip/robbed): &lt;/FONT&gt;&lt;FONT color=&apos;#A29B70&apos;&gt;%(robbed)s&lt;/FONT&gt; &lt;IMG SRC=&quot;img://gui/maps/icons/library/fortification/nut.png&quot; width=&quot;16&quot; height=&quot;16&quot; vspace=&quot;-4&quot; hspace=&quot;0&quot; /&gt;&lt;BR/&gt;&lt;FONT SIZE=&apos;14&apos; COLOR=&apos;#595950&apos;&gt;_(#tooltips:fortification/calendarEvent/battleResultTooltip/battlesCount):&lt;/FONT&gt; &lt;FONT COLOR=&apos;#E9E2BF&apos;&gt;%(battlesCount)s&lt;/FONT&gt;&lt;BR/&gt;&lt;FONT COLOR=&apos;#595950&apos;&gt;_(#tooltips:fortification/calendarEvent/battleResultTooltip/buildingsSeized):&lt;/FONT&gt; &lt;FONT COLOR=&apos;#E9E2BF&apos;&gt;%(buildings)s&lt;/FONT&gt;</win>
-				<lose>&lt;FONT COLOR=&quot;#595950&quot;&gt;_(#tooltips:fortification/calendarEvent/battleResultTooltip/plundered): &lt;/FONT&gt;&lt;FONT color=&apos;#A29B70&apos;&gt;%(robbed)s&lt;/FONT&gt; &lt;IMG SRC=&quot;img://gui/maps/icons/library/fortification/nut.png&quot; width=&quot;16&quot; height=&quot;16&quot; vspace=&quot;-4&quot; hspace=&quot;0&quot; /&gt;&lt;BR/&gt;&lt;FONT SIZE=&apos;14&apos; COLOR=&apos;#595950&apos;&gt;_(#tooltips:fortification/calendarEvent/battleResultTooltip/battlesCount):&lt;/FONT&gt; &lt;FONT COLOR=&apos;#E9E2BF&apos;&gt;%(battlesCount)s&lt;/FONT&gt;&lt;BR/&gt;&lt;FONT COLOR=&apos;#595950&apos;&gt;_(#tooltips:fortification/calendarEvent/battleResultTooltip/buildingsLost):&lt;/FONT&gt; &lt;FONT COLOR=&apos;#E9E2BF&apos;&gt;%(buildings)s&lt;/FONT&gt;</lose>
-				<tie>&lt;FONT COLOR=&quot;#595950&quot;&gt;_(#tooltips:fortification/calendarEvent/battleResultTooltip/plundered): &lt;/FONT&gt;&lt;FONT color=&apos;#A29B70&apos;&gt;%(robbed)s&lt;/FONT&gt; &lt;IMG SRC=&quot;img://gui/maps/icons/library/fortification/nut.png&quot; width=&quot;16&quot; height=&quot;16&quot; vspace=&quot;-4&quot; hspace=&quot;0&quot; /&gt;&lt;BR/&gt;&lt;FONT SIZE=&apos;14&apos; COLOR=&apos;#595950&apos;&gt;_(#tooltips:fortification/calendarEvent/battleResultTooltip/battlesCount):&lt;/FONT&gt; &lt;FONT COLOR=&apos;#E9E2BF&apos;&gt;%(battlesCount)s&lt;/FONT&gt;&lt;BR/&gt;&lt;FONT COLOR=&apos;#595950&apos;&gt;_(#tooltips:fortification/calendarEvent/battleResultTooltip/buildingsSeized):&lt;/FONT&gt; &lt;FONT COLOR=&apos;#E9E2BF&apos;&gt;%(buildings)s&lt;/FONT&gt;</tie>
-			</fort_calendar_event>
 			<advanced_text>&lt;img src=&apos;img://gui/maps/icons/lobby/iconBtnAlt.png&apos; width=&apos;28&apos; height=&apos;25&apos; vspace=&apos;-10&apos; hspace=&apos;0&apos; align=&apos;left&apos;/&gt;  &lt;font size=&apos;14&apos; color=&apos;#8C8C7E&apos; face=&apos;$FieldFont&apos;&gt;%(message)s &lt;/font&gt;</advanced_text>
 		</tooltips_complex>
 		<tooltips>
@@ -545,9 +540,6 @@ _(#invites:invites/text/fort/defence) &lt;font color=&quot;#c9c9b6&quot;&gt;%(cl
 				</context>
 				<text>&lt;br/&gt;&lt;br/&gt;&lt;font color=&quot;#969687&quot;&gt;_(#invites:clan/application/comment)&lt;/font&gt;</text>
 			</appComment>
-			<appCommentMiniclient>
-				<text>&lt;br/&gt;&lt;br/&gt;&lt;font color=&quot;#B70000&quot;&gt;_(#invites:clan/applications/comment/minimap)&lt;/font&gt;</text>
-			</appCommentMiniclient>
 			<inviteTitle>
 				<context>
 					<titleStartTag>&lt;font color=&quot;#e9e2bf&quot; face=&quot;$TitleFont&quot; size=&quot;15&quot;&gt;</titleStartTag>
@@ -1204,13 +1196,6 @@ _(#invites:invites/text/fort/defence) &lt;font color=&quot;#c9c9b6&quot;&gt;%(cl
 				</NOT_CONNECTED>
 			</note>
 		</friendshipRequest>
-		<messengerBar>
-			<iconTemplate>&lt;img src=&apos;img://gui/maps/icons/messenger/%(iconName)s.png&apos; width=&apos;%(width)s&apos; height=&apos;%(height)s&apos; vspace=&apos;-11&apos;/&gt;</iconTemplate>
-		</messengerBar>
-		<referralButton>
-			<iconTemplate>&lt;img src=&apos;img://gui/maps/icons/messenger/%(iconName)s.png&apos; width=&apos;%(width)s&apos; height=&apos;%(height)s&apos; vspace=&apos;-31&apos;/&gt;</iconTemplate>
-		</referralButton>
-		<onlineCounter>&lt;b&gt;&lt;font face=&quot;$FieldFont&quot; size=&quot;12&quot; color=&quot;#CBAC77&quot;&gt;%(key)s%(delimiter)s &lt;/font&gt;&lt;font face=&quot;$FieldFont&quot; size=&quot;12&quot; color=&quot;#8C8C7C&quot;&gt;%(value)s&lt;/font&gt;&lt;/b&gt;</onlineCounter>
 		<tank_carousel>
 			<statistic>
 				<wins>&lt;img src=&apos;img://gui/maps/icons/statistic/wins24_gray.png&apos; width=&apos;18&apos; height=&apos;24&apos; vspace=&apos;-7&apos;/&gt;%(wins)s</wins>

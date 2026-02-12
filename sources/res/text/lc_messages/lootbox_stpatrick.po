@@ -1,0 +1,172 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-01 10:00+0300\n"
+"PO-Revision-Date: 2010-06-01 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+msgid "autoOpenView/boxCount"
+msgid_plural "plural/autoOpenView/boxCount"
+msgstr[0] "%(count) оставшуюся коробку"
+msgstr[1] "%(count) оставшихся коробки"
+msgstr[2] "%(count) оставшихся коробок"
+
+msgid "awardViews/footer/backButton/"
+msgstr "Назад к коробкам"
+
+msgid "common/boxCategory/lowerCase/stPatrick"
+msgstr "Изумрудная коробка"
+
+msgid "common/boxCategory/upperCase/stPatrick"
+msgstr "ИЗУМРУДНАЯ КОРОБКА"
+
+msgid "common/getButton/lowerCase"
+msgstr "Получить коробки"
+
+msgid "common/getButton/upperCase"
+msgstr "ПОЛУЧИТЬ КОРОБКИ"
+
+msgid "common/loader"
+msgstr "Открываем коробку..."
+
+msgid "common/statistics/emptyHeader"
+msgstr "Открывайте коробки, чтобы просмотреть статистику."
+
+msgid "common/statistics/header"
+msgstr "Открыто коробок: %(count)"
+
+msgid "common/statistics/tooltip/body"
+msgstr ""
+"Здесь можно посмотреть, какие ценности выпали из коробок в течение события. "
+"Вы можете сбросить статистику вручную в любое время."
+
+msgid "confirmResetLootBoxStatistics/description"
+msgstr "Вся информация об открытых коробках будет удалена."
+
+msgid "entryPoint/boxes"
+msgstr "К КОРОБКАМ"
+
+msgid "entryPoint/tooltip/description"
+msgstr ""
+"Это особые коробки, в которых вы можете найти премиум технику, 3D-объекты, кредиты и другие ценности.\n"
+"Вы можете купить их во внутриигровом Магазине."
+
+msgid "entryPoint/tooltip/title"
+msgstr "Что такое Изумрудные коробки и как их получить?"
+
+msgid "entryPoint/tooltip/warningDescription"
+msgstr ""
+"В данный момент коробки невозможно открыть или купить по техническим "
+"причинам. Приносим извинения за временные неудобства."
+
+msgid "entryPoint/tooltip/warningTitle"
+msgstr "Коробки временно недоступны"
+
+msgid "eventName/lowerCase"
+msgstr "Зелёная роскошь"
+
+msgid "eventName/upperCase"
+msgstr "ЗЕЛЁНАЯ РОСКОШЬ"
+
+msgid "guaranteedTitle/nextBox"
+msgstr "Гарантированная награда в следующей коробке!"
+
+msgid "guaranteedTitle/text"
+msgstr "Максимум коробок до гарантированной награды: %(count)"
+
+msgid "infoPage/footer/description/autoOpen"
+msgstr ""
+"Если вы не откроете коробки до окончания события, они будут открыты "
+"автоматически."
+
+msgid "infoPage/footer/description/compensation"
+msgstr ""
+"Если у вас уже есть вся техника из списка возможных наград, каждая "
+"последующая машина, которую вы получите из коробок, будет компенсирована "
+"золотом в размере своей полной стоимости."
+
+msgid "infoPage/footer/description/guaranteed"
+msgstr ""
+"Каждая %(guaranteed0)s-я коробка гарантированно содержит машину VIII–IX "
+"уровня. Если при их открытии вам не выпадет такая техника, то в "
+"%(guaranteed0)s&zwnbsp;-й коробке вы обязательно найдёте машину VIII–IX "
+"уровня, которой у вас ещё нет. После выпадения техники счётчик сбрасывается."
+
+msgid "infoPage/header/description"
+msgstr ""
+"Откройте коробку, в которой могут быть ценные внутриигровые предметы! "
+"Узнайте подробности ниже."
+
+msgid "multipleRewardView/header/subTitle/"
+msgstr "Из %(name) (открыто %(boxesCount) коробок)"
+
+msgid "noBoxesView/description/"
+msgstr ""
+"У вас нет коробок.\n"
+"Вы можете купить их в Магазине."
+
+msgid "preview/backLabel"
+msgstr "К КОРОБКАМ"
+
+msgid "quantityTitle/boxesAvailable"
+msgstr "Коробок в наличии: %(boxesCount)"
+
+msgid "quantityTitle/noBoxes"
+msgstr "Коробки закончились"
+
+msgid "serviceChannelMessages/finish/text"
+msgstr ""
+"Все оставшиеся коробки будут открыты. Содержимое будет начислено на ваш "
+"аккаунт."
+
+msgid "serviceChannelMessages/lootBoxesAutoOpen/count"
+msgstr "Открыто коробок: %(boxes)s"
+
+msgid "serviceChannelMessages/lootBoxesAutoOpen/header"
+msgstr "Оставшиеся коробки открыты"
+
+msgid "serviceChannelMessages/lootBoxesAutoOpen/text"
+msgstr ""
+"После завершения события мы открыли за вас коробки и начислили их "
+"содержимое."
+
+msgid "serviceChannelMessages/lootBoxesDisabled/header"
+msgstr "Открытие коробок приостановлено"
+
+msgid "serviceChannelMessages/lootBoxesDisabled/text"
+msgstr "Операции с коробками временно недоступны: ведутся технические работы."
+
+msgid "serviceChannelMessages/lootBoxesEnabled/header"
+msgstr "Открытие коробок доступно"
+
+msgid "serviceChannelMessages/lootBoxesEnabled/text"
+msgstr "Операции с коробками снова доступны."
+
+msgid "serviceChannelMessages/multipleOpen"
+msgstr "Коробки открыты!"
+
+msgid "serviceChannelMessages/server_error"
+msgstr "Коробки не открыты"
+
+msgid "singleRewardView/tooltip/description/"
+msgstr ""
+"Если у вас уже есть вся техника из списка возможных наград, каждая "
+"последующая машина, которую вы получите из коробок, будет компенсирована "
+"золотом."
+
+msgid "singleRewardView/tooltip/remainingCount"
+msgid_plural "plural/singleRewardView/tooltip/remainingCount"
+msgstr[0] "%(remainingCount) коробку"
+msgstr[1] "%(remainingCount) коробки"
+msgstr[2] "%(remainingCount) коробок"
+
+msgid "singleRewardView/tooltip/subtitle/"
+msgstr ""
+"Гарантированная награда — машина из списка возможных наград.\n"
+"Если вы откроете %(remainingCount) и не получите такую технику, она выпадет при открытии %(count)-й коробки. При выпадении такой машины счётчик сбрасывается."

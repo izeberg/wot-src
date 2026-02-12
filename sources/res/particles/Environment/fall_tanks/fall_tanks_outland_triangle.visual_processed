@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>standardSurface1</identifier>
+					<fx>shaders/custom/emissive_playground.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						emissionMap
+						<Texture>particles/content_deferred/GFX_models/GFX_textures/br_repairarea_2_wave.dds</Texture>
+					</property>
+					<property>
+						g_deferredMult
+						<Float>20.469999</Float>
+					</property>
+					<property>
+						g_offsetBlack
+						<Float>0.610000</Float>
+					</property>
+					<property>
+						g_tint
+						<Vector4>0.588235 0.086275 0.000000 1.000000</Vector4>
+					</property>
+					<property>
+						speed
+						<Float>0.100000</Float>
+					</property>
+					<property>
+						pattern
+						<Texture>particles/content_deferred/GFX_models/GFX_textures/Masks/wt_mask_07.dds</Texture>
+					</property>
+					<property>
+						phaseMap
+						<Texture>particles/content_deferred/GFX_models/GFX_textures/Cz04_T50_51_BXI_3DSt_rays.dds</Texture>
+					</property>
+					<property>
+						animationMode
+						<Int>1</Int>
+					</property>
+				</material>
+				<groupOrigin>0.180317 0.004665 -0.014532</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-4.872649 0.000000 -5.827505</min>
+		<max>5.233283 0.009329 5.798441</max>
+	</boundingBox>
+	<geometrySize>300</geometrySize>
+</root>

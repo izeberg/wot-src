@@ -8298,7 +8298,7 @@
 			</value>
 		</achievement>
 		<achievement>
-			<name>singleAchievements:BPReserveAchievement_8</name>
+			<name>singleAchievements:BattlePassCommonPr_NY26</name>
 			<type>dict</type>
 			<value>
 				<item>
@@ -8322,7 +8322,7 @@
 			</value>
 		</achievement>
 		<achievement>
-			<name>singleAchievements:BPReserveAchievement_9</name>
+			<name>singleAchievements:BattlePassCommonPr_19</name>
 			<type>dict</type>
 			<value>
 				<item>
@@ -8359,6 +8359,198 @@
 				</item>
 				<item>
 					1442.032
+					<!--BW_String-->
+					<name>weight</name>
+					<type>float</type>
+				</item>
+				<item>
+					random
+					<name>mode</name>
+				</item>
+			</value>
+		</achievement>
+		<achievement>
+			<name>singleAchievements:BPReserveAchievement_1</name>
+			<type>dict</type>
+			<value>
+				<item>
+					single
+					<name>type</name>
+				</item>
+				<item>
+					action
+					<name>section</name>
+				</item>
+				<item>
+					1442.033
+					<!--BW_String-->
+					<name>weight</name>
+					<type>float</type>
+				</item>
+				<item>
+					random
+					<name>mode</name>
+				</item>
+			</value>
+		</achievement>
+		<achievement>
+			<name>singleAchievements:BPReserveAchievement_2</name>
+			<type>dict</type>
+			<value>
+				<item>
+					single
+					<name>type</name>
+				</item>
+				<item>
+					action
+					<name>section</name>
+				</item>
+				<item>
+					1442.034
+					<!--BW_String-->
+					<name>weight</name>
+					<type>float</type>
+				</item>
+				<item>
+					random
+					<name>mode</name>
+				</item>
+			</value>
+		</achievement>
+		<achievement>
+			<name>singleAchievements:BPReserveAchievement_3</name>
+			<type>dict</type>
+			<value>
+				<item>
+					single
+					<name>type</name>
+				</item>
+				<item>
+					action
+					<name>section</name>
+				</item>
+				<item>
+					1442.035
+					<!--BW_String-->
+					<name>weight</name>
+					<type>float</type>
+				</item>
+				<item>
+					random
+					<name>mode</name>
+				</item>
+			</value>
+		</achievement>
+		<achievement>
+			<name>singleAchievements:BPReserveAchievement_4</name>
+			<type>dict</type>
+			<value>
+				<item>
+					single
+					<name>type</name>
+				</item>
+				<item>
+					action
+					<name>section</name>
+				</item>
+				<item>
+					1442.036
+					<!--BW_String-->
+					<name>weight</name>
+					<type>float</type>
+				</item>
+				<item>
+					random
+					<name>mode</name>
+				</item>
+			</value>
+		</achievement>
+		<achievement>
+			<name>singleAchievements:BPReserveAchievement_5</name>
+			<type>dict</type>
+			<value>
+				<item>
+					single
+					<name>type</name>
+				</item>
+				<item>
+					action
+					<name>section</name>
+				</item>
+				<item>
+					1442.037
+					<!--BW_String-->
+					<name>weight</name>
+					<type>float</type>
+				</item>
+				<item>
+					random
+					<name>mode</name>
+				</item>
+			</value>
+		</achievement>
+		<achievement>
+			<name>singleAchievements:BPReserveAchievement_6</name>
+			<type>dict</type>
+			<value>
+				<item>
+					single
+					<name>type</name>
+				</item>
+				<item>
+					action
+					<name>section</name>
+				</item>
+				<item>
+					1442.038
+					<!--BW_String-->
+					<name>weight</name>
+					<type>float</type>
+				</item>
+				<item>
+					random
+					<name>mode</name>
+				</item>
+			</value>
+		</achievement>
+		<achievement>
+			<name>singleAchievements:BPReserveAchievement_7</name>
+			<type>dict</type>
+			<value>
+				<item>
+					single
+					<name>type</name>
+				</item>
+				<item>
+					action
+					<name>section</name>
+				</item>
+				<item>
+					1442.039
+					<!--BW_String-->
+					<name>weight</name>
+					<type>float</type>
+				</item>
+				<item>
+					random
+					<name>mode</name>
+				</item>
+			</value>
+		</achievement>
+		<achievement>
+			<name>singleAchievements:BPReserveAchievement_9</name>
+			<type>dict</type>
+			<value>
+				<item>
+					single
+					<name>type</name>
+				</item>
+				<item>
+					action
+					<name>section</name>
+				</item>
+				<item>
+					1442.040
 					<!--BW_String-->
 					<name>weight</name>
 					<type>float</type>
@@ -11741,7 +11933,7 @@
 					<name>section</name>
 				</item>
 				<item>
-					1468.1
+					1447.6
 					<!--BW_String-->
 					<name>weight</name>
 					<type>float</type>
@@ -11765,7 +11957,7 @@
 					<name>section</name>
 				</item>
 				<item>
-					1468.2
+					1447.7
 					<!--BW_String-->
 					<name>weight</name>
 					<type>float</type>
@@ -11789,7 +11981,7 @@
 					<name>section</name>
 				</item>
 				<item>
-					1468.3
+					1447.8
 					<!--BW_String-->
 					<name>weight</name>
 					<type>float</type>
@@ -12486,6 +12678,30 @@
 				</item>
 				<item>
 					1480.1
+					<!--BW_String-->
+					<name>weight</name>
+					<type>float</type>
+				</item>
+				<item>
+					random
+					<name>mode</name>
+				</item>
+			</value>
+		</achievement>
+		<achievement>
+			<name>singleAchievements:LunarNY2026CN</name>
+			<type>dict</type>
+			<value>
+				<item>
+					single
+					<name>type</name>
+				</item>
+				<item>
+					action
+					<name>section</name>
+				</item>
+				<item>
+					1443.72
 					<!--BW_String-->
 					<name>weight</name>
 					<type>float</type>

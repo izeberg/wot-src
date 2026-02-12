@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, typing
 from frameworks.wulf import Window, WindowSettings, WindowFlags, WindowLayer, WindowStatus
 from gui.Scaleform.daapi.settings.views import VIEW_ALIAS
@@ -65,4 +66,3 @@ class LobbyNotificationWindow(LobbyWindow):
 
     def _getParent(self, parent, content):
         self.__initialParent = super(LobbyNotificationWindow, self)._getParent(parent, content)
-        return

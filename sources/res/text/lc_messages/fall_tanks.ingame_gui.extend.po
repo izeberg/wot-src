@@ -1,0 +1,29 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-03-24 10:00+0300\n"
+"PO-Revision-Date: 2023-03-24 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "player_messages/DEATH_FROM_FALL_TANKS_FALLING"
+msgstr "Игрок %(attacker)s разрушил игрока %(target)s."
+
+msgid "player_messages/DEATH_FROM_FALL_TANKS_FINISH"
+msgstr "Игрок %(target)s финишировал."
+
+msgid "player_messages/DEATH_FROM_FALL_TANKS_LEAVER"
+msgstr "Игрок %(target)s покинул бой."
+
+msgid "player_messages/DEATH_FROM_FALL_TANKS_SUICIDE"
+msgstr "Игрок %(target)s разрушил себя."
+
+msgid "postmortem_messages/DEATH_FROM_FALL_TANKS_FALLING_ENEMY_SELF"
+msgstr "Машина разрушена противником"
+
+msgid "postmortem_messages/DEATH_FROM_FALL_TANKS_FALLING_SELF_SUICIDE"
+msgstr "Машина разрушена"

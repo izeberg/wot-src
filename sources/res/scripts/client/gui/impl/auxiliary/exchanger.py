@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, typing
 from adisp import adisp_async, adisp_process
 from gui.shared.gui_items.processors.common import GoldToCreditsExchanger
@@ -9,8 +10,7 @@ _logger = logging.getLogger(__name__)
 
 class ExchangeSubmitterBase(object):
 
-    @adisp_async
-    def submit(self, fromItemCount, toItemCount, callback=None):
+    def submit(self, fromItemCount, withConfirm=False, callback=None):
         pass
 
     def getCurrentRate(self):
@@ -32,8 +32,8 @@ class ExchangeCreditsSubmitter(ExchangeSubmitterBase):
 
     @adisp_async
     @adisp_process
-    def submit(self, goldToExchange, withConfirm=True, callback=None):
-        result = yield GoldToCreditsExchanger(goldToExchange, withConfirm=withConfirm).request()
+    def submit(self, fromItemCount, withConfirm=True, callback=None):
+        result = yield GoldToCreditsExchanger(fromItemCount, withConfirm=withConfirm).request()
         if callback is not None:
             callback(result)
         return

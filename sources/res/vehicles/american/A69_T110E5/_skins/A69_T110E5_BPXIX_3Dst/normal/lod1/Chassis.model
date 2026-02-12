@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-2.334634 0.014046 -3.107921</min>
+		<max>2.334634 1.325304 3.066676</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<parent>vehicles/american/A69_T110E5/_skins/A69_T110E5_BPXIX_3Dst/normal/lod2/Chassis</parent>
+	<extent>64.000000</extent>
+	<nodefullVisual>vehicles/american/A69_T110E5/_skins/A69_T110E5_BPXIX_3Dst/normal/lod1/Chassis</nodefullVisual>
+</root>

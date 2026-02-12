@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+from future.utils import listvalues, viewitems
 import SoundGroups
 from constants import VEHICLE_MISC_STATUS, DEATH_ZONES
 from debug_utils import LOG_ERROR
@@ -57,10 +59,10 @@ class FrontendMapping(object):
             return
 
     def getDestroyTimersTypesIDs(self):
-        return self.__miscStatuses.values()
+        return listvalues(self.__miscStatuses)
 
     def getDeathZoneTimersTypesIDs(self):
-        return self.__deathZonesCodes.values()
+        return listvalues(self.__deathZonesCodes)
 
     def getSoundByDeathZone(self, code, level):
         sound = None
@@ -72,7 +74,7 @@ class FrontendMapping(object):
     @staticmethod
     def __loadDeathZoneSounds(soundsIDs):
         sounds = {}
-        for key, soundID in soundsIDs.iteritems():
+        for key, soundID in viewitems(soundsIDs):
             sounds[key] = SoundGroups.g_instance.getSound2D(soundID)
 
         return sounds

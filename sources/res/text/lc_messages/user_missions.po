@@ -326,8 +326,8 @@ msgstr "Награды:"
 
 msgid "tooltip/daily_reroll/description"
 msgstr ""
-"Вы можете заменять ежедневные задачи\n"
-"каждые {time}."
+"Вы можете заменять нежелательную задачу\n"
+"на другую каждые {time} ч."
 
 msgid "tooltip/daily_reroll/header"
 msgstr "Замена задачи"
@@ -345,9 +345,7 @@ msgid "tooltip/weekly_mission"
 msgstr "Еженедельная задача"
 
 msgid "tooltip/weekly_reroll/description"
-msgstr ""
-"Вы можете заменять эту еженедельную\n"
-"задачу каждые {{time}}."
+msgstr "Вы можете заменять эту еженедельную задачу каждые {{time}}."
 
 msgid "welcome/button"
 msgstr "Так точно!"

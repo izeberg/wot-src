@@ -1,6 +1,6 @@
 import typing
 from .py_object_wrappers import PyGuiApplication
-from .system_locale import SystemLocale
+from .formatters import Formatters
 from .resource_manager import ResourceManager
 from .windows_system.windows_manager import WindowsManager
 from .tutorial import Tutorial
@@ -10,7 +10,7 @@ if typing.TYPE_CHECKING:
     from frameworks.wulf import ViewModel
 
 class GuiApplication(object):
-    __slots__ = ('__impl', '__windowsManager', '__resourceManager', '__systemLocale',
+    __slots__ = ('__impl', '__windowsManager', '__resourceManager', '__formatters',
                  '__tutorial', '__uiLogger')
 
     def __init__(self):
@@ -18,7 +18,7 @@ class GuiApplication(object):
         self.__impl = PyGuiApplication()
         self.__windowsManager = None
         self.__resourceManager = None
-        self.__systemLocale = None
+        self.__formatters = None
         self.__tutorial = None
         self.__uiLogger = None
         return
@@ -33,7 +33,11 @@ class GuiApplication(object):
 
     @property
     def systemLocale(self):
-        return self.__systemLocale
+        return self.__formatters
+
+    @property
+    def formatters(self):
+        return self.__formatters
 
     @property
     def tutorial(self):
@@ -51,7 +55,7 @@ class GuiApplication(object):
         self.__impl.initialize()
         self.__resourceManager = ResourceManager.create(self.__impl.resourceManager)
         self.__windowsManager = WindowsManager.create(self.__impl.windowsManager)
-        self.__systemLocale = SystemLocale.create(self.__impl.systemLocale)
+        self.__formatters = Formatters.create(self.__impl.formatters)
         self.__tutorial = Tutorial.create(self.__impl.tutorial, tutorialModel)
         self.__uiLogger = UILogger.create(self.__impl.uiLogger, uiLoggerModel)
         self._setServerTimeCallback(serverTimeCallback)
@@ -63,9 +67,9 @@ class GuiApplication(object):
         if self.__windowsManager is not None:
             self.__windowsManager.destroy()
             self.__windowsManager = None
-        if self.__systemLocale is not None:
-            self.__systemLocale.destroy()
-            self.__systemLocale = None
+        if self.__formatters is not None:
+            self.__formatters.destroy()
+            self.__formatters = None
         if self.__tutorial is not None:
             self.__tutorial.destroy()
             self.__tutorial = None

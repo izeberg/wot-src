@@ -123,6 +123,10 @@ def neutralBig(text):
     return _formatText('neutralTextBig', text)
 
 
+def stPatrick(text):
+    return _formatText('stPatrickText', text)
+
+
 def goodPing(text):
     return _formatText('goodPingText', text)
 
@@ -320,6 +324,10 @@ def bpcoin(text):
 
 
 def brcoin(text):
+    return _formatText('creditsText', text)
+
+
+def stpcoin(text):
     return _formatText('creditsText', text)
 
 

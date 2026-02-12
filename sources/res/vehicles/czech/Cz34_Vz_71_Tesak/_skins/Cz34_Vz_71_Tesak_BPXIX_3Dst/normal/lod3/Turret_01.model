@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.193649 0.001613 -1.200986</min>
+		<max>1.202925 1.015008 1.192072</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/czech/Cz34_Vz_71_Tesak/_skins/Cz34_Vz_71_Tesak_BPXIX_3Dst/normal/lod3/Turret_01</nodefullVisual>
+	<parent>vehicles/czech/Cz34_Vz_71_Tesak/_skins/Cz34_Vz_71_Tesak_BPXIX_3Dst/normal/lod4/Turret_01</parent>
+	<extent>192.000000</extent>
+</root>

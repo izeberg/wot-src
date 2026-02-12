@@ -15,5 +15,5 @@ if not typing.TYPE_CHECKING and PY2:
 
 
 else:
-    from typing import Generic
+    Generic = typing.Generic
 __all__ = ('Generic', )

@@ -1,5 +1,5 @@
 from __future__ import absolute_import
-import BigWorld, math_utils
+import json, BigWorld, math_utils
 from account_helpers.AccountSettings import AccountSettings, FUN_RANDOM_PROGRESSION_OPENED, FUN_RANDOM_PROGRESSION, FUN_RANDOM_PROGR_PREV_COUNTER, FUN_RANDOM_INF_PROGR_PREV_COUNTER, FUN_RANDOM_INF_PROGR_PREV_COMPLETE_COUNT
 from frameworks.wulf import ViewSettings, WindowFlags
 from fun_random.gui.feature.fun_sounds import FUN_PROGRESSION_SOUND_SPACE
@@ -111,6 +111,7 @@ class FunRandomProgressionView(ViewImpl, FunAssetPacksMixin, FunProgressionWatch
             wasOpened = AccountSettings.getSettings(settingsKey)
             model.setAssetsPointer(self.getModeAssetsPointer())
             model.setIsFirstOpen(not wasOpened)
+            model.setModeViewSettings(json.dumps(self.getModeAssetsConfiguration().progressionView.toDict()))
             modeName = self.getModeUserName()
             packProgressionState(progression, model.state)
             packProgressionStages(progression, model.getStages(), self.__tooltips)

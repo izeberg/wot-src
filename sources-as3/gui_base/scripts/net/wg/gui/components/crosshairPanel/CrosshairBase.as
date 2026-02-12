@@ -468,9 +468,10 @@ package net.wg.gui.components.crosshairPanel
       
       public function setReloadingTime(param1:Number) : void
       {
+         param1 = param1 < 0 ? Number(0) : Number(param1);
          if(this._currentReloadingTime != param1)
          {
-            this._currentReloadingTime = param1 < 0 ? Number(0) : Number(param1);
+            this._currentReloadingTime = param1;
             this.applyReloadingData();
          }
       }

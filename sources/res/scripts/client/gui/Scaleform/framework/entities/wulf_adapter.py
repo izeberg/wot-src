@@ -1,9 +1,10 @@
+from __future__ import absolute_import
 import logging, typing, BigWorld
 from Event import Event, EventManager
 from frameworks.wulf import WindowStatus, WindowLayer
 from frameworks.wulf.gui_constants import ShowingStatus
 from gui.impl.pub import WindowImpl
-from .View import ViewKey
+from gui.Scaleform.framework.entities.View import ViewKey
 _logger = logging.getLogger(__name__)
 
 class WulfPackageLayoutAdapter(object):

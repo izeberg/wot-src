@@ -74,11 +74,6 @@ package net.wg.gui.rally
          return null;
       }
       
-      override public function getClientItemID() : Number
-      {
-         return getClientIDS();
-      }
-      
       override public function setWindow(param1:IWindow) : void
       {
          if(window)

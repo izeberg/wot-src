@@ -27,13 +27,13 @@ package net.wg.gui.lobby.storage.categories.cards
       override protected function draw() : void
       {
          super.draw();
-         if(_data && isInvalid(InvalidationType.DATA))
+         if(_data)
          {
-            this._commons.truncateHtmlTextMultiline(titleTF,_data.title,2,DOTS);
-         }
-         if(_data && isInvalid(InvalidationType.SIZE))
-         {
-            if(!_isOver)
+            if(isInvalid(InvalidationType.DATA))
+            {
+               this._commons.truncateHtmlTextMultiline(titleTF,_data.title,2,DOTS);
+            }
+            if(!_isOver && isInvalid(InvalidationType.SIZE))
             {
                _container.y = getContainerYRolloutPosition();
             }

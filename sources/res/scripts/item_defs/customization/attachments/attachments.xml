@@ -736,6 +736,13 @@
 			<attachmentLogic>prefab</attachmentLogic>
 		</attachment>
 		<attachment>
+			<id>166</id>
+			<name>Cz34_Vz_71_Tesak_BPXIX_3Dst</name>
+			<modelName>particles/Tank/customization/Cz34_Vz_71_Tesak_BPXIX_3Dst/Cz34_Vz_71_Tesak_BPXIX_3Dst.prefab</modelName>
+			<hangarModelName/>
+			<attachmentLogic>prefab</attachmentLogic>
+		</attachment>
+		<attachment>
 			<id>167</id>
 			<name>Ch48_BZ_75_HO26_3Dst</name>
 			<modelName>particles/Tank/customization/Ch48_BZ_75_HO26_3Dst/Ch48_BZ_75_HO26_3Dst.prefab</modelName>
@@ -747,6 +754,27 @@
 			<name>GB86_Centurion_Action_X_KS_3Dst</name>
 			<modelName>particles/Tank/customization/GB86_Centurion_Action_X_KS_3Dst/GB86_Centurion_Action_X_KS_3Dst.prefab</modelName>
 			<hangarModelName>particles/Tank/customization/GB86_Centurion_Action_X_KS_3Dst/GB86_Centurion_Action_X_KS_3Dst_hangar.prefab</hangarModelName>
+			<attachmentLogic>prefab</attachmentLogic>
+		</attachment>
+		<attachment>
+			<id>172</id>
+			<name>A144_M_VI_Y_CFE_R_3Dst</name>
+			<modelName>particles/Tank/customization/A144_M_VI_Y_CFE_R_3Dst/A144_M_VI_Y_CFE_R_3Dst.prefab</modelName>
+			<hangarModelName>particles/Tank/customization/A144_M_VI_Y_CFE_R_3Dst/A144_M_VI_Y_CFE_R_3Dst_hangar.prefab</hangarModelName>
+			<attachmentLogic>prefab</attachmentLogic>
+		</attachment>
+		<attachment>
+			<id>173</id>
+			<name>G121_Grille_15_L63_BPXIX_3Dst</name>
+			<modelName>particles/Tank/customization/G121_Grille_15_L63_BPXIX_3Dst/G121_Grille_15_L63_BPXIX_3Dst.prefab</modelName>
+			<hangarModelName/>
+			<attachmentLogic>prefab</attachmentLogic>
+		</attachment>
+		<attachment>
+			<id>174</id>
+			<name>A69_T110E5_BPXIX_3Dst</name>
+			<modelName>particles/Tank/customization/A69_T110E5_BPXIX_3Dst/A69_T110E5_BPXIX_3Dst.prefab</modelName>
+			<hangarModelName/>
 			<attachmentLogic>prefab</attachmentLogic>
 		</attachment>
 	</itemGroup>
