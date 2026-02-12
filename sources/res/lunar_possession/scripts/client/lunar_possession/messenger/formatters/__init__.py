@@ -1,0 +1,6 @@
+from fun_random.gui.shared.fun_system_factory import registerBattleResultsMessageSubFormatter
+from lunar_possession.messenger.formatters.battle_results_formatter import LunarPossessionBattleResultsFormatter
+from lunar_constants import ARENA_GUI_TYPE
+
+def registerLunarPossessionFormatters():
+    registerBattleResultsMessageSubFormatter(ARENA_GUI_TYPE.LUNAR_POSSESSION, LunarPossessionBattleResultsFormatter)

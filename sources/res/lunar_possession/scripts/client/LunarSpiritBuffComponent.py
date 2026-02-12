@@ -1,0 +1,11 @@
+from cgf_script.component_meta_class import registerReplicableComponent
+from script_component.DynamicScriptComponent import DynamicScriptComponent
+from lunar_possession_common.cgf.spirit_buff import LunarSpiritBuffComponentDescr as SpiritBuffComponentDescr
+
+class LunarSpiritBuffComponentDescr(SpiritBuffComponentDescr):
+    pass
+
+
+@registerReplicableComponent
+class LunarSpiritBuffComponent(DynamicScriptComponent, LunarSpiritBuffComponentDescr):
+    pass

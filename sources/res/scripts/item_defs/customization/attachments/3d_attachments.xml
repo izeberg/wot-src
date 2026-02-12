@@ -1063,6 +1063,75 @@
 		</attachment>
 	</itemGroup>
 	<itemGroup>
+		<name>celestial_flame</name>
+		<userString>#vehicle_customization:attachment/celestial_flame</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<attachment>
+			<id>1150</id>
+			<name>Cus_170_Lunar_Horse</name>
+			<modelName>content/CGFPrefabs/3D_Customization/Cus_170_Lunar_Horse/Cus_170_Lunar_Horse.prefab</modelName>
+			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_170_Lunar_Horse/Cus_170_Lunar_Horse_hangar.prefab</hangarModelName>
+			<attachmentLogic>prefab</attachmentLogic>
+			<applyType>gunMantlet</applyType>
+			<size>medium</size>
+			<rarity>epic</rarity>
+			<priceGroup>attachments 1000g notInShop</priceGroup>
+			<userString>#vehicle_customization:attachment/celestial_flame/Cus_170_Lunar_Horse</userString>
+			<tags>battleEffect</tags>
+		</attachment>
+		<attachment>
+			<id>1151</id>
+			<name>Cus_171_Lunar_Fireworks</name>
+			<modelName>content/CGFPrefabs/3D_Customization/Cus_171_Lunar_Fireworks/Cus_171_Lunar_Fireworks.prefab</modelName>
+			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_171_Lunar_Fireworks/Cus_171_Lunar_Fireworks_hangar.prefab</hangarModelName>
+			<attachmentLogic>prefab</attachmentLogic>
+			<applyType>turret</applyType>
+			<size>medium</size>
+			<rarity>legendary</rarity>
+			<priceGroup>attachments 2150g notInShop</priceGroup>
+			<userString>#vehicle_customization:attachment/celestial_flame/Cus_171_Lunar_Fireworks</userString>
+			<description>#vehicle_customization:attachment/celestial_flame/Cus_171_Lunar_Fireworks/description</description>
+			<tags>battleEffect</tags>
+		</attachment>
+		<attachment>
+			<id>1152</id>
+			<name>Cus_172_Lunar_Drums</name>
+			<modelName>content/CGFPrefabs/3D_Customization/Cus_172_Lunar_Drums/Cus_172_Lunar_Drums.prefab</modelName>
+			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_172_Lunar_Drums/Cus_172_Lunar_Drums.prefab</hangarModelName>
+			<attachmentLogic>prefab</attachmentLogic>
+			<applyType>universal</applyType>
+			<size>medium</size>
+			<rarity>rare</rarity>
+			<priceGroup>attachments 500g notInShop</priceGroup>
+			<userString>#vehicle_customization:attachment/celestial_flame/Cus_172_Lunar_Drums</userString>
+		</attachment>
+		<attachment>
+			<id>1153</id>
+			<name>Cus_173_Lunar_Dragon</name>
+			<modelName>content/CGFPrefabs/3D_Customization/Cus_173_Lunar_Dragon/Cus_173_Lunar_Dragon.prefab</modelName>
+			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_173_Lunar_Dragon/Cus_173_Lunar_Dragon.prefab</hangarModelName>
+			<attachmentLogic>prefab</attachmentLogic>
+			<applyType>universal</applyType>
+			<size>medium</size>
+			<rarity>rare</rarity>
+			<priceGroup>attachments 500g notInShop</priceGroup>
+			<userString>#vehicle_customization:attachment/celestial_flame/Cus_173_Lunar_Dragon</userString>
+		</attachment>
+		<attachment>
+			<id>1154</id>
+			<name>Cus_174_Lunar_Tree</name>
+			<modelName>content/CGFPrefabs/3D_Customization/Cus_174_Lunar_Tree/Cus_174_Lunar_Tree.prefab</modelName>
+			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_174_Lunar_Tree/Cus_174_Lunar_Tree.prefab</hangarModelName>
+			<attachmentLogic>prefab</attachmentLogic>
+			<applyType>universal</applyType>
+			<size>medium</size>
+			<rarity>rare</rarity>
+			<priceGroup>attachments 500g notInShop</priceGroup>
+			<userString>#vehicle_customization:attachment/celestial_flame/Cus_174_Lunar_Tree</userString>
+		</attachment>
+	</itemGroup>
+	<itemGroup>
 		<name>Spy Series</name>
 		<season>ALL</season>
 		<historical>1</historical>

@@ -8948,5 +8948,25 @@
 				<_3325>tankmen_bp1006_6.png</_3325>
 			</icons>
 		</tankmen_bp1006_6>
+		<lunar26_commander>
+			<groupID>340</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>female</sex>
+			<notInShop>true</notInShop>
+			<tags>passportReplacementForbidden</tags>
+			<roles>commander driver gunner loader radioman</roles>
+			<firstNames>
+				<_3326>#usa_crew:names/lunar26_commander_n</_3326>
+			</firstNames>
+			<lastNames>
+				<_3326>#usa_crew:names/lunar26_commander</_3326>
+			</lastNames>
+			<icons>
+				<_3326>lunar26_commander.png</_3326>
+			</icons>
+		</lunar26_commander>
 	</premiumGroups>
 </root>

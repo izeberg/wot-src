@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>57.666672</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+		<track>
+			<name>animation</name>
+			<type>animation</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>57.666672</duration>
+				<resourceID>content/Hangars/CharacterAnimations/animation/FoodCort_Shot/FC_ShaurmaMan01.fbx</resourceID>
+				<clipName/>
+				<speed>0.900000</speed>
+				<layer>0</layer>
+				<blendIn>constant</blendIn>
+				<blendOut>constant</blendOut>
+				<blendInTime>0.000000</blendInTime>
+				<blendOutTime>0.000000</blendOutTime>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Model Object 0</name>
+		<type>model</type>
+		<resource>content/Hangars/CharacterAnimations/Civil_Objects/normal/lod0/hd_h20_102_Shaverma.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>animation</name>
+			<type>animation</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>57.666672</duration>
+				<resourceID>content/Hangars/CharacterAnimations/animation/FoodCort_Shot/FC_Shaurma01.fbx</resourceID>
+				<clipName/>
+				<speed>0.900000</speed>
+				<layer>0</layer>
+				<blendIn>constant</blendIn>
+				<blendOut>constant</blendOut>
+				<blendInTime>0.000000</blendInTime>
+				<blendOutTime>0.000000</blendOutTime>
+			</frame>
+		</track>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>57.666672</duration>
+				<value>Root|Root</value>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

@@ -89,9 +89,10 @@ package net.wg.gui.lobby.vehPostProgression.components
       private function updateLayouts() : void
       {
          var _loc1_:int = 0;
+         var _loc2_:int = 0;
          this._vehicleButton.x = -this.contentWidth * OFFSET_X_RATE;
          _loc1_ = this._vehicleButton.contentHeight >> 1;
-         var _loc2_:int = _loc1_ + (Boolean(VehicleButton.SMALL_SIZE) ? SMALL_VEHICLE_BOTTOM_Y_GAP : BIG_VEHICLE_BOTTOM_Y_GAP);
+         _loc2_ = _loc1_ + (Boolean(VehicleButton.SMALL_SIZE) ? SMALL_VEHICLE_BOTTOM_Y_GAP : BIG_VEHICLE_BOTTOM_Y_GAP);
          this._experienceBlock.validateNow();
          this._experienceBlock.x = -this._experienceBlock.actualWidth >> 1;
          this._experienceBlock.y = _loc2_;

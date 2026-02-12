@@ -15,6 +15,7 @@ from gui.impl.gen.view_models.views.loot_box_compensation_tooltip_types import L
 from gui.impl.gen.view_models.views.loot_box_vehicle_compensation_tooltip_model import LootBoxVehicleCompensationTooltipModel
 from gui.impl.lobby.common.view_wrappers import createBackportTooltipDecorator
 from gui.impl.lobby.tooltips.additional_rewards_tooltip import AdditionalRewardsTooltip
+from gui.impl.lobby.lootbox_system.base.tooltips.box_tooltip import BoxTooltip
 from gui.impl.pub import ViewImpl, WindowImpl
 from gui.shared.event_dispatcher import showHangar
 _DESTROY_ACTION_NAME = 'showHangar'
@@ -56,20 +57,26 @@ class FunRandomProgressionView(ViewImpl, FunAssetPacksMixin, FunProgressionWatch
             if lootboxID:
                 return FunRandomLootBoxTooltipView(lootboxID)
             return
-        tooltipId = event.getArgument('tooltipId')
-        tc = R.views.lobby.awards.tooltips.RewardCompensationTooltip()
-        if event.contentID == tc:
-            if tooltipId in self.__tooltips:
-                tooltipData = {'iconBefore': event.getArgument('iconBefore', ''), 'labelBefore': event.getArgument('labelBefore', ''), 
-                   'iconAfter': event.getArgument('iconAfter', ''), 
-                   'labelAfter': event.getArgument('labelAfter', ''), 
-                   'bonusName': event.getArgument('bonusName', ''), 
-                   'countBefore': event.getArgument('countBefore', 1), 
-                   'tooltipType': LootBoxCompensationTooltipTypes.VEHICLE}
-                tooltipData.update(self.__tooltips[tooltipId].specialArgs)
-                settings = ViewSettings(tc, model=LootBoxVehicleCompensationTooltipModel(), kwargs=tooltipData)
-                return VehicleCompensationTooltipContent(settings)
-        return super(FunRandomProgressionView, self).createToolTipContent(event, contentID)
+        if contentID == R.views.mono.lootbox.tooltips.box_tooltip():
+            tooltipData = self.getTooltipData(event)
+            if tooltipData is None:
+                return
+            return BoxTooltip(*tooltipData.specialArgs)
+        else:
+            tooltipId = event.getArgument('tooltipId')
+            tc = R.views.lobby.awards.tooltips.RewardCompensationTooltip()
+            if event.contentID == tc:
+                if tooltipId in self.__tooltips:
+                    tooltipData = {'iconBefore': event.getArgument('iconBefore', ''), 'labelBefore': event.getArgument('labelBefore', ''), 
+                       'iconAfter': event.getArgument('iconAfter', ''), 
+                       'labelAfter': event.getArgument('labelAfter', ''), 
+                       'bonusName': event.getArgument('bonusName', ''), 
+                       'countBefore': event.getArgument('countBefore', 1), 
+                       'tooltipType': LootBoxCompensationTooltipTypes.VEHICLE}
+                    tooltipData.update(self.__tooltips[tooltipId].specialArgs)
+                    settings = ViewSettings(tc, model=LootBoxVehicleCompensationTooltipModel(), kwargs=tooltipData)
+                    return VehicleCompensationTooltipContent(settings)
+            return super(FunRandomProgressionView, self).createToolTipContent(event, contentID)
 
     def getTooltipData(self, event):
         tooltipId = event.getArgument('tooltipId')

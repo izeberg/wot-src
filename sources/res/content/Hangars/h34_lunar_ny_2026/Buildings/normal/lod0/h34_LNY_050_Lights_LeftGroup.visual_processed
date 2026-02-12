@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<stream>uv2</stream>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0</identifier>
+					<fx>shaders/std_effects/glow.fx</fx>
+					<materialKind>112</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h34_lunar_ny_2026/Buildings/h34_LNY_010_Out_Building_Concrete_Light_AM.dds</Texture>
+					</property>
+					<property>
+						selfIllumination
+						<Float>3.000000</Float>
+					</property>
+				</material>
+				<groupOrigin>-17.840256 -14.213896 -144.004730</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-165.302887 -77.333504 -350.085724</min>
+		<max>129.622375 48.905712 62.076267</max>
+	</boundingBox>
+	<customBsp>true</customBsp>
+	<primitivesName>content/Hangars/h34_Lunar_NY_2022/Buildings/normal/lod0/h34_LNY_050_Lights_LeftGroup</primitivesName>
+	<geometrySize>9116</geometrySize>
+</root>

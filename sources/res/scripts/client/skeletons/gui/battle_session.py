@@ -582,6 +582,9 @@ class IArenaDataProvider(object):
     def getWinStatus(self, team):
         raise NotImplementedError
 
+    def getVehicleInfoByID(self, vehicleID):
+        raise NotImplementedError
+
 
 class IBattleContext(object):
 

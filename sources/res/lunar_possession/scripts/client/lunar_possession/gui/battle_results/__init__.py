@@ -1,0 +1,7 @@
+from fun_random.gui.shared.fun_system_factory import registerFunBattleResultsPresenter
+from lunar_possession.gui.battle_results.lunar_possession_pbs_squad_finder import LunarPossessionPostbattleSquadFinder
+from lunar_possession.gui.battle_results.lunar_possession_presenter import LunarPossessionBattleResultsPresenter
+from lunar_constants import FunSubModeImpl, ARENA_GUI_TYPE
+
+def registerLunarPossessionBattleResults():
+    registerFunBattleResultsPresenter(FunSubModeImpl.LUNAR_POSSESSION, LunarPossessionBattleResultsPresenter)

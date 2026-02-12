@@ -8,7 +8,6 @@ from fun_random.gui.impl.gen.view_models.views.lobby.common.fun_random_lootbox i
 from gui.impl import backport
 from gui.impl.backport import TooltipData
 from gui.impl.gen import R
-from gui.impl.gen.view_models.common.missions.bonuses.bonus_model import BonusModel
 from gui.impl.gen.view_models.common.missions.bonuses.token_bonus_model import TokenBonusModel
 from gui.impl.lobby.awards.packers import MultiAwardVehiclesBonusUIPacker
 from gui.server_events.awards_formatters import AWARDS_SIZES
@@ -18,7 +17,9 @@ from gui.shared.money import Money, Currency
 from helpers import dependency
 from skeletons.gui.shared import IItemsCache
 if typing.TYPE_CHECKING:
+    from gui.impl.gen.view_models.common.missions.bonuses.bonus_model import BonusModel
     from gui.server_events.bonuses import TokensBonus
+    from gui.shared.gui_items.loot_box import LootBox
 FEP_CATEGORY = 'FEPLootBoxes'
 
 class FunRandomLootBoxTypes(object):
@@ -43,16 +44,20 @@ def sortTokenFunc(token, itemsCache=IItemsCache):
 
 class FunRandomLootBoxTokenBonusPacker(TokenBonusUIPacker, FunAssetPacksMixin):
     itemsCache = dependency.descriptor(IItemsCache)
+    awardSmallSize = AWARDS_SIZES.SMALL
+    awardBigSize = AWARDS_SIZES.BIG
 
     @classmethod
     def _pack(cls, bonus):
         result = super(FunRandomLootBoxTokenBonusPacker, cls)._pack(bonus)
         for token in sorted(viewvalues(bonus.getTokens()), key=sortTokenFunc):
-            if cls.__isSuitable(token.id, token):
-                model = TokenBonusModel()
-                cls._packCommon(bonus, model)
-                cls.__packLootBox(token.id, model, bonus)
-                result.append(model)
+            lootBox = cls.__getLootBox(token)
+            if lootBox is None:
+                continue
+            model = TokenBonusModel()
+            cls._packCommon(bonus, model)
+            cls.__packLootBox(lootBox, token.id, model, bonus)
+            result.append(model)
 
         return result
 
@@ -60,9 +65,16 @@ class FunRandomLootBoxTokenBonusPacker(TokenBonusUIPacker, FunAssetPacksMixin):
     def _getToolTip(cls, bonus):
         result = super(FunRandomLootBoxTokenBonusPacker, cls)._getToolTip(bonus)
         for token in sorted(viewvalues(bonus.getTokens()), key=sortTokenFunc):
-            if cls.__isSuitable(token.id, token):
+            lootBox = cls.__getLootBox(token)
+            if lootBox is None:
+                continue
+            if cls.__isFepLootBox(lootBox):
                 result.append(TooltipData(tooltip=None, isSpecial=True, specialAlias=None, specialArgs=[
                  token.id]))
+            else:
+                box = bonus.getBox()
+                result.append(TooltipData(tooltip=None, isSpecial=True, specialAlias=None, specialArgs=[
+                 box.getCategory(), box.getType()]))
 
         return result
 
@@ -70,8 +82,13 @@ class FunRandomLootBoxTokenBonusPacker(TokenBonusUIPacker, FunAssetPacksMixin):
     def _getContentId(cls, bonus):
         result = super(FunRandomLootBoxTokenBonusPacker, cls)._getContentId(bonus)
         for token in sorted(viewvalues(bonus.getTokens()), key=sortTokenFunc):
-            if cls.__isSuitable(token.id, token):
+            lootBox = cls.__getLootBox(token)
+            if lootBox is None:
+                continue
+            if cls.__isFepLootBox(lootBox):
                 result.append(R.views.fun_random.mono.lobby.tooltips.loot_box_tooltip())
+            else:
+                result.append(R.views.mono.lootbox.tooltips.box_tooltip())
 
         return result
 
@@ -80,25 +97,37 @@ class FunRandomLootBoxTokenBonusPacker(TokenBonusUIPacker, FunAssetPacksMixin):
         return cls.getModeIconsResRoot().progression.bonuses.dyn(iconSize).dyn(rarity)()
 
     @classmethod
-    def __packLootBox(cls, tokenID, model, bonus):
-        lootBox = cls.itemsCache.items.tokens.getLootBoxByTokenID(tokenID)
-        rarity = lootBox.getType().split('_')[(-1)]
-        model.setIconSmall(backport.image(cls._getIconPath(AWARDS_SIZES.SMALL, rarity)))
-        model.setIconBig(backport.image(cls._getIconPath(AWARDS_SIZES.BIG, rarity)))
-        model.setLabel(backport.text(cls.getModeLocalsResRoot().lootbox.dyn(lootBox.getType())()))
+    def __packLootBox(cls, lootBox, tokenID, model, bonus):
+        if cls.__isFepLootBox(lootBox):
+            rarity = lootBox.getType().split('_')[(-1)]
+            model.setIconSmall(backport.image(cls._getIconPath(cls.awardSmallSize, rarity)))
+            model.setIconBig(backport.image(cls._getIconPath(cls.awardBigSize, rarity)))
+            model.setLabel(backport.text(cls.getModeLocalsResRoot().lootbox.dyn(lootBox.getType())()))
+        else:
+            model.setIconSmall(bonus.getIconBySize(cls.awardSmallSize))
+            model.setIconBig(bonus.getIconBySize(cls.awardBigSize))
+            model.setLabel(lootBox.getUserName())
         model.setValue(str(bonus.getValue().get(tokenID, {}).get('count', 0)))
         return model
 
     @classmethod
-    def __isSuitable(cls, tokenID, token):
-        return tokenID.startswith(LOOTBOX_TOKEN_PREFIX) and token.count >= 0 and cls.__isBoxAvailable(tokenID)
+    def __getLootBox(cls, token):
+        if token.id.startswith(LOOTBOX_TOKEN_PREFIX) and token.count >= 0:
+            return cls.itemsCache.items.tokens.getLootBoxByTokenID(token.id)
+        else:
+            return
 
     @classmethod
-    def __isBoxAvailable(cls, tokenID):
-        lootBox = cls.itemsCache.items.tokens.getLootBoxByTokenID(tokenID)
-        if lootBox:
+    def __isFepLootBox(cls, lootBox):
+        if lootBox is not None:
             return lootBox.getCategory() == FEP_CATEGORY
-        return False
+        else:
+            return False
+
+
+class FunRandomRewardsViewLootBoxTokenBonusPacker(FunRandomLootBoxTokenBonusPacker):
+    awardSmallSize = 's600x450'
+    awardBigSize = 's600x450'
 
 
 class FunRandomRewardLootBoxTokenBonusPacker(FunRandomLootBoxTokenBonusPacker):

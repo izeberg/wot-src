@@ -1,23 +1,28 @@
 from __future__ import absolute_import
 from future.utils import viewitems
+from helpers import dependency
 from frameworks.wulf import ViewSettings
 from frameworks.wulf import WindowLayer
 from fun_random.gui.feature.fun_sounds import FUN_REWARD_SCREEN_SOUND_SPACE
 from fun_random.gui.feature.util.fun_mixins import FunAssetPacksMixin
 from fun_random.gui.impl.gen.view_models.views.lobby.feature.fun_random_rewards_view_model import FunRandomRewardsViewModel
-from fun_random.gui.impl.lobby.common.fun_view_helpers import getCompensatedFunRandomBonusPacker
+from fun_random.gui.impl.lobby.common.fun_view_helpers import getFunRandomRewardsViewBonusPacker, sortFunProgressionBonuses
+from fun_random.gui.impl.lobby.common.lootboxes import FEP_CATEGORY
 from gui.impl.auxiliary.tooltips.compensation_tooltip import VehicleCompensationTooltipContent
 from gui.impl.gen import R
 from gui.impl.gen.view_models.views.loot_box_compensation_tooltip_types import LootBoxCompensationTooltipTypes
 from gui.impl.gen.view_models.views.loot_box_vehicle_compensation_tooltip_model import LootBoxVehicleCompensationTooltipModel
+from gui.impl.lobby.lootbox_system.base.tooltips.box_tooltip import BoxTooltip
 from gui.impl.lobby.common.view_helpers import packBonusModelAndTooltipData
 from gui.impl.lobby.common.view_wrappers import createBackportTooltipDecorator
 from gui.impl.pub import ViewImpl
 from gui.impl.pub.lobby_window import LobbyNotificationWindow
 from gui.server_events.bonuses import getNonQuestBonuses, LootBoxTokensBonus
+from skeletons.gui.shared import IItemsCache
 
 class FunRandomLootBoxAwardView(ViewImpl, FunAssetPacksMixin):
     __slots__ = ('__tooltipData', )
+    __itemsCache = dependency.descriptor(IItemsCache)
     _COMMON_SOUND_SPACE = FUN_REWARD_SCREEN_SOUND_SPACE
 
     def __init__(self, *args, **kwargs):
@@ -47,7 +52,13 @@ class FunRandomLootBoxAwardView(ViewImpl, FunAssetPacksMixin):
                 tooltipData.update(self.__tooltips[tooltipId].specialArgs)
                 settings = ViewSettings(tc, model=LootBoxVehicleCompensationTooltipModel(), kwargs=tooltipData)
                 return VehicleCompensationTooltipContent(settings)
-        return
+        if contentID == R.views.mono.lootbox.tooltips.box_tooltip():
+            tooltipData = self.getTooltipData(event)
+            if tooltipData is None:
+                return
+            return BoxTooltip(*tooltipData.specialArgs)
+        else:
+            return
 
     def getTooltipData(self, event):
         tooltipId = event.getArgument('tooltipId')
@@ -60,7 +71,7 @@ class FunRandomLootBoxAwardView(ViewImpl, FunAssetPacksMixin):
         super(FunRandomLootBoxAwardView, self)._onLoading(*args, **kwargs)
         with self.viewModel.transaction() as (vm):
             vm.setAssetsPointer(self.getModeAssetsPointer())
-            packer = getCompensatedFunRandomBonusPacker()
+            packer = getFunRandomRewardsViewBonusPacker()
             self.__tooltips = {}
             self.__packRewards(vm.getMainRewards(), data['mainRewards'], packer)
             self.__packRewards(vm.getAdditionalRewards(), data['addRewards'], packer)
@@ -83,7 +94,20 @@ class FunRandomLootBoxAwardView(ViewImpl, FunAssetPacksMixin):
         for k, v in viewitems(rewards):
             rawDataBonuses.extend(getNonQuestBonuses(k, v))
 
-        packBonusModelAndTooltipData([ b for b in rawDataBonuses if not isinstance(b, LootBoxTokensBonus) ], rewardsModel, tooltipData=self.__tooltips, packer=packer)
+        def filterOutFepLootBoxes(item):
+            if not isinstance(item, LootBoxTokensBonus):
+                return True
+            else:
+                for tID in item.getTokens():
+                    lb = self.__itemsCache.items.tokens.getLootBoxByTokenID(tID)
+                    if lb is None:
+                        continue
+                    return lb.getCategory() != FEP_CATEGORY
+
+                return True
+
+        bonuses = sortFunProgressionBonuses(filter(filterOutFepLootBoxes, rawDataBonuses))
+        packBonusModelAndTooltipData(bonuses, rewardsModel, tooltipData=self.__tooltips, packer=packer)
         rewardsModel.invalidate()
 
 

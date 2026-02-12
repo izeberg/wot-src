@@ -608,17 +608,21 @@ class DamageLogPanel(BattleDamageLogPanelMeta):
         self._bottomLog.updateLog(bottomLogContentMask, self._logViewMode, bottomLogRecStyle)
 
     def _invalidateTotalDamages(self):
+        contentMask = self._invalidateTotalDamageContentMask()
+        if contentMask != self.__totalDamageContentMask:
+            self.__totalDamageContentMask = contentMask
+            getter = self.__efficiencyCtrl.getTotalEfficiency
+            args = [ self._setTotalValue(e, getter(e))[1] for e, _ in self._totalEvents ]
+            self.as_summaryStatsS(*args)
+
+    def _invalidateTotalDamageContentMask(self):
         contentMask = 0
         isDamageSettingEnabled = self.__isDamageSettingEnabled
         for settingName, bit in _TOTAL_DAMAGE_SETTINGS_TO_CONTENT_MASK.iteritems():
             if isDamageSettingEnabled(settingName):
                 contentMask |= bit
 
-        if contentMask != self.__totalDamageContentMask:
-            self.__totalDamageContentMask = contentMask
-            getter = self.__efficiencyCtrl.getTotalEfficiency
-            args = [ self._setTotalValue(e, getter(e))[1] for e, _ in self._totalEvents ]
-            self.as_summaryStatsS(*args)
+        return contentMask
 
     def _onTotalEfficiencyUpdated(self, diff):
         if self.isSwitchToVehicle() or BattleReplay.isServerSideReplay():

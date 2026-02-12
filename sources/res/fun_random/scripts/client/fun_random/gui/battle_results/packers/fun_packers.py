@@ -1,4 +1,5 @@
 from __future__ import absolute_import
+from fun_random.gui.impl.gen.view_models.views.lobby.feature.battle_results.fun_team_stats_column_types import FunTeamStatsColumnTypes
 from fun_random_common.fun_constants import FunEfficiencyParameterCount
 from fun_random.gui.battle_results.pbs_helpers import getTotalTMenXPToShow, getTotalGoldToShow, getEventID, isCreditsShown, isGoldShown, isXpShown, isFreeXpShown, isTmenXpShown, isCrystalShown, isFunAddXpBonusStatusAcceptable
 from fun_random.gui.feature.util.fun_mixins import FunAssetPacksMixin, FunSubModesWatcher
@@ -13,7 +14,6 @@ from gui.battle_results.presenters.packers.manageable_xp_multiplier import Manag
 from gui.battle_results.presenters.packers.team.team_stats_packer import TeamStats
 from gui.impl.gen.view_models.views.lobby.battle_results.efficiency_param_constants import EfficiencyParamConstants
 from gui.impl.gen.view_models.views.lobby.battle_results.team_stats_model import SortingOrder
-from gui.impl.gen.view_models.views.lobby.battle_results.team_stats_column_types import TeamStatsColumnTypes
 from gui.shared.gui_items.Vehicle import VEHICLE_CLASS_NAME
 from helpers import time_utils
 
@@ -49,11 +49,11 @@ class FunRandomTeamStats(TeamStats):
     _PLAYER_MODEL_CLS = FunPlayerModel
     _SORTING_PRIORITIES = (
      (
-      TeamStatsColumnTypes.XP, SortingOrder.DESC),
+      FunTeamStatsColumnTypes.XP, SortingOrder.DESC),
      (
-      TeamStatsColumnTypes.DAMAGE, SortingOrder.DESC),
+      FunTeamStatsColumnTypes.DAMAGE, SortingOrder.DESC),
      (
-      TeamStatsColumnTypes.PLAYER, SortingOrder.ASC))
+      FunTeamStatsColumnTypes.PLAYER, SortingOrder.ASC))
 
 
 class FunRandomPersonalRewards(PersonalRewards):
