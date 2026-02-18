@@ -45,6 +45,7 @@ package net.wg.gui.components.tooltips
       {
          var _loc1_:ToolTipTankClassVO = null;
          var _loc2_:Number = NaN;
+         var _loc5_:ILocale = null;
          var _loc13_:String = null;
          var _loc14_:String = null;
          var _loc15_:String = null;
@@ -70,7 +71,7 @@ package net.wg.gui.components.tooltips
          separators.push(this.separator);
          this.whiteBg.y = topPosition;
          topPosition += this.utils.MARGIN_AFTER_BLOCK;
-         var _loc5_:ILocale = App.utils.locale;
+         _loc5_ = App.utils.locale;
          var _loc6_:String = _loc5_.makeString(ACHIEVEMENTS.MARKOFMASTERYCONTENT + "/" + _loc1_.localizedValue) + "%";
          _loc6_ = Utils.instance.htmlWrapper(_loc6_,Utils.instance.COLOR_NUMBER,12,"$TextFont");
          var _loc7_:String = _loc5_.makeString(ACHIEVEMENTS.MARKOFMASTERYCONTENT,{"val":_loc6_});

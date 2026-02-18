@@ -267,11 +267,12 @@ package net.wg.gui.lobby.rankedBattles19.view.rewards.ranks
       
       private function updateBonusesPosition(param1:int) : void
       {
+         var _loc2_:int = 0;
          if(!this._bonuses)
          {
             return;
          }
-         var _loc2_:int = this._bonusSize + this._bonusGap;
+         _loc2_ = this._bonusSize + this._bonusGap;
          var _loc3_:int = this._bonuses.length;
          var _loc4_:int = 0;
          while(_loc4_ < _loc3_)
