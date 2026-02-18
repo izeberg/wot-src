@@ -19,9 +19,16 @@ class FunSubModeImpl(object):
 class FunProgressionCondition(object):
     BATTLES = 'battles'
     DAMAGE = 'damage'
+    ASSIST = 'assist'
+    KILL_VEHICLES = 'kill_vehicles'
     TOP = 'top'
     WIN = 'win'
-    ALL = (BATTLES, DAMAGE, TOP, WIN)
+    MODULE_CRIT = 'module_crit'
+    HURT_VEHICLES = 'hurt_vehicles'
+    HIT = 'hit'
+    RAM = 'ram'
+    LUNAR_SPECIAL = 'lunar_special'
+    ALL = (BATTLES, DAMAGE, ASSIST, KILL_VEHICLES, TOP, WIN, MODULE_CRIT, HURT_VEHICLES, HIT, RAM, LUNAR_SPECIAL)
 
 
 class FunEfficiencyParameter(object):
@@ -53,6 +60,8 @@ class FunEfficiencyParameterCount(object):
 
 class ARENA_GUI_TYPE(constants.ARENA_GUI_TYPE, ConstInjector):
     FUN_RANDOM = 29
+    FUN_RANDOM_RANGE = (
+     FUN_RANDOM,)
 
 
 class UNIT_MGR_FLAGS(UnitBase.UNIT_MGR_FLAGS, ConstInjector):

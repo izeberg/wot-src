@@ -1,0 +1,4 @@
+
+
+class LunarPossessionVehicleInfo(object):
+    pass

@@ -33,5 +33,14 @@ class SCH_CLIENT_MSG_TYPE(m_constants.SCH_CLIENT_MSG_TYPE, ConstInjector):
     FUN_RANDOM_PROGRESSION = 101
 
 
+class AccountSettingsKeys(object):
+    FUN_KEY = 'fun_keys'
+    IS_NEW = 'is_new'
+    INFO_PAGE_VIEWED = 'info_page_viewed'
+
+
+ACCOUNT_DEFAULT_SETTINGS = {AccountSettingsKeys.IS_NEW: True, 
+   AccountSettingsKeys.INFO_PAGE_VIEWED: False}
+
 def initFunRandomLimitedUIIds():
     LUI_RULES.inject(_LUI_RULES)

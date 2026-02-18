@@ -12,6 +12,7 @@ from gui.override_scaleform_views_manager import g_overrideScaleFormViewsConfig
 from gui.prb_control.prb_utils import initGuiTypes, initRequestType
 from gui.Scaleform.daapi.settings.views import VIEW_ALIAS
 from gui.Scaleform.genConsts.FUNRANDOM_ALIASES import FUNRANDOM_ALIASES
+from fun_random.gui.feature.sub_modes import registerFunRandomSubModes
 _LOBBY_EXT_PACKAGES = [
  'fun_random.gui.impl.lobby.feature',
  'fun_random.gui.impl.lobby.hangar',
@@ -162,6 +163,12 @@ class ClientFunRandomBattleMode(FunRandomBattleMode):
         from fun_random.gui.hangar_presets.fun_hangar_dynamic_gui_provider import FunRandomHangarDynamicGuiProvider
         return FunRandomHangarDynamicGuiProvider
 
+    @property
+    def _client_messengerServerFormatters(self):
+        from fun_random.messenger.formatters.battle_results_formatter import FunBattleResultsFormatter
+        from chat_shared import SYS_MESSAGE_TYPE
+        return {SYS_MESSAGE_TYPE.funRandomBattleResults.index(): FunBattleResultsFormatter()}
+
 
 def preInit():
     injectConsts(__name__)
@@ -176,6 +183,7 @@ def preInit():
     battleMode.registerClientHangarPresets()
     battleMode.registerHangarEventBanner()
     battleMode.registerBannerEntryPointValidatorMethod()
+    battleMode.registerSystemMessagesTypes()
     battleMode.registerBannerEntryPointLUIRule()
     battleMode.registerProviderBattleQueue()
     battleMode.registerBattleResultsConfig()
@@ -190,11 +198,14 @@ def preInit():
     battleMode.registerClientTokenQuestsSubFormatters()
     battleMode.registerClientLootBoxAutoOpenSubFormatters()
     battleMode.registerVehicleViewStates()
+    battleMode.registerMessengerServerFormatters()
+    battleMode.registerBattleResultSysMsgType()
     registerFunRandomOthersPrbParams()
     registerFunRandomAwardControllers()
     registerFunRandomScaleform()
     registerFunRandomBattle()
     registerFunRandomQuests()
+    registerFunRandomSubModes()
 
 
 def init():

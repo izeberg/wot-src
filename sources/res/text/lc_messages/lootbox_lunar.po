@@ -20,6 +20,12 @@ msgstr[2] "剩余%(count)个骏马补给品"
 msgid "awardViews/footer/backButton/"
 msgstr "返回补给品"
 
+msgid "boxTooltip/description/text/lunar"
+msgstr "开启后，您将有机会从这些补给品中获得金币坦克、游戏内货币，以及其他珍贵奖励。"
+
+msgid "boxTooltip/howGet/text/lunar"
+msgstr "玩家可在军械库中购买骏马补给品礼包，完成进度阶段也可获得补给品。"
+
 msgid "common/boxCategory/lowerCase/lunar"
 msgstr "骏马补给品"
 
@@ -137,7 +143,13 @@ msgstr "未开启骏马补给品"
 msgid "singleRewardView/tooltip/description/"
 msgstr "如果您车库中已拥有骏马补给品内容列表中的全部坦克，对于之后从骏马补给品中获得的每辆坦克，您都将获得坦克当前价格所对应的金币补偿。"
 
+msgid "singleRewardView/tooltip/remainingCount"
+msgid_plural "plural/singleRewardView/tooltip/remainingCount"
+msgstr[0] "%(remainingCount)个骏马补给品"
+msgstr[1] "%(remainingCount)个骏马补给品"
+msgstr[2] "%(remainingCount)个骏马补给品"
+
 msgid "singleRewardView/tooltip/subtitle/"
 msgstr ""
 "保底奖励是骏马补给品内容列表中的坦克。\n"
-"如果开启%(remainingCount)后仍未掉落保底坦克，那么开启第%(count)个骏马补给品时必定掉落您车库中尚未拥有的坦克。补给品掉落坦克后，计数器将重置。"
+"如果开启%(remainingCount)后仍未掉落保底坦克，那么开启第%(count)个补给品时必定掉落您车库中尚未拥有的坦克。补给品掉落坦克后，计数器将重置。"

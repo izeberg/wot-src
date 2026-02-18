@@ -143,7 +143,7 @@ msgid "headerButtons/tooltips/funRandomSquad/body"
 msgstr "创建一个2人或3人小队，在%(modeName)s中协同作战。"
 
 msgid "headerButtons/tooltips/funRandomSquad/header"
-msgstr "小队"
+msgstr "2026春节小队"
 
 msgid "invite/text/detailedTitle"
 msgstr "邀请加入\"%(detailedModeName)s\"小队"
@@ -166,13 +166,13 @@ msgstr ""
 "所有阶段"
 
 msgid "metaProgressionTooltip/reward/header/common"
-msgstr "下个阶段的奖励——获得%(stagePoints)s点数解锁"
+msgstr "下个阶段的奖励——获得%(stagePoints)s玉石解锁"
 
 msgid "metaProgressionTooltip/reward/header/infinite"
 msgstr "下个阶段奖励"
 
 msgid "metaProgressionTooltip/timer/untilFinish"
-msgstr "距激活的阶段结束还有%(time)s"
+msgstr "距结束还有%(time)s"
 
 msgid "metaProgressionTooltip/timer/untilRelaunch"
 msgstr "距下次开启还有%(time)s"
@@ -345,6 +345,12 @@ msgstr "?empty?"
 
 msgid "modes/development/progression/infinite/mainProgressionFinished"
 msgstr "?empty?"
+
+msgid "modes/development/progression/pointsTooltipBody"
+msgstr "完成任务即可获得点数，从而推动活动进度并解锁奖励。"
+
+msgid "modes/development/progression/pointsTooltipTitle"
+msgstr "点数"
 
 msgid "modes/development/progression/questsList/quest/infinityStageProgress"
 msgstr "Dev 尽可能获取更多奖励:"
@@ -573,6 +579,195 @@ msgstr "街机模式坦克"
 msgid "modes/fep_new_year_2025/userName"
 msgstr "街机模式"
 
+msgid "modes/lunar_possession/banner/progression/finish"
+msgstr "已完成全部阶段"
+
+msgid "modes/lunar_possession/banner/progression/resettable"
+msgstr "进度更新"
+
+msgid "modes/lunar_possession/capsUserName"
+msgstr "春节祈福"
+
+msgid "modes/lunar_possession/detailedUserName"
+msgstr "%(modeName)s"
+
+msgid "modes/lunar_possession/entryPoint/inProgress/description"
+msgstr "夺取并运送火马灵币。"
+
+msgid "modes/lunar_possession/entryPoint/intro/description"
+msgstr "参加春节庆典！"
+
+msgid "modes/lunar_possession/entryPoint/tooltip/description"
+msgstr "参加特殊春节活动，两个团队将争夺火马灵币，然后护送其穿过敌方阵地。完成祈福仪式并获取珍贵奖励。"
+
+msgid ""
+"modes/lunar_possession/entryPoint/tooltip/performance/highRisk/description"
+msgstr "您的计算机性能不足以运行此模式。您可能会遇到图形和坦克移动方面的问题。游戏客户端也有可能崩溃。"
+
+msgid "modes/lunar_possession/entryPoint/tooltip/performance/highRisk/header"
+msgstr "低性能"
+
+msgid ""
+"modes/lunar_possession/entryPoint/tooltip/performance/mediumRisk/description"
+msgstr "该模式需要较高的计算机性能。您可能会遇到地图加载、图形和坦克移动方面的问题。如果性能不足，请在设置中尝试较低的图形质量。"
+
+msgid ""
+"modes/lunar_possession/entryPoint/tooltip/performance/mediumRisk/header"
+msgstr "可能会降低性能"
+
+msgid "modes/lunar_possession/lootbox/fep_epic"
+msgstr "随机史诗奖励"
+
+msgid "modes/lunar_possession/lootbox/fep_legendary"
+msgstr "随机传说奖励"
+
+msgid "modes/lunar_possession/lootbox/fep_ordinary"
+msgstr "随机普通奖励"
+
+msgid "modes/lunar_possession/lootbox/fep_rare"
+msgstr "随机稀有奖励"
+
+msgid "modes/lunar_possession/lootbox/fep_unusual"
+msgstr "随机罕见奖励"
+
+msgid "modes/lunar_possession/metaProgressionTooltip/header/active"
+msgstr "主要进度阶段%(done)s{par_Open}/%(total)s{par_Close}"
+
+msgid "modes/lunar_possession/metaProgressionTooltip/header/infinite"
+msgstr "可重复完成阶段的进度%(done)s{par_Open}/%(total)s{par_Close}"
+
+msgid "modes/lunar_possession/metaProgressionTooltip/reward/tip"
+msgstr "您在所有街机模式子模式中的进度都将纳入计算。"
+
+msgid "modes/lunar_possession/metaProgressionTooltip/subheader"
+msgstr "春节祈福"
+
+msgid "modes/lunar_possession/modeSubSelector/progression/info"
+msgstr "您在所有街机模式子模式中的进度都将纳入计算。"
+
+msgid "modes/lunar_possession/modeSubSelector/progression/timer"
+msgstr "后新的\"春节祈福\"任务可用"
+
+msgid "modes/lunar_possession/mode_selector/battleCondition"
+msgstr "7对7"
+
+msgid "modes/lunar_possession/mode_selector/description"
+msgstr "夺取并运送火马灵币"
+
+msgid "modes/lunar_possession/mode_selector/levelCondition"
+msgstr "{parSecondary_open}I{parSecondary_close}&nbsp;%(levels)s级"
+
+msgid "modes/lunar_possession/mode_selector/performance/highRisk/description"
+msgstr "您的计算机性能不足以运行此模式。您可能会遇到图形和坦克移动方面的问题。游戏客户端也有可能崩溃。"
+
+msgid "modes/lunar_possession/mode_selector/performance/highRisk/header"
+msgstr "低性能"
+
+msgid "modes/lunar_possession/mode_selector/performance/highRisk/headerIcon"
+msgstr "%(icon)低性能"
+
+msgid ""
+"modes/lunar_possession/mode_selector/performance/mediumRisk/description"
+msgstr "该模式需要较高的计算机性能。您可能会遇到地图加载、图形和坦克移动方面的问题。如果性能不足，请在设置中尝试较低的图形质量。"
+
+msgid "modes/lunar_possession/mode_selector/performance/mediumRisk/header"
+msgstr "可能会降低性能"
+
+msgid "modes/lunar_possession/mode_selector/performance/mediumRisk/headerIcon"
+msgstr "%(icon)可能会降低性能"
+
+msgid "modes/lunar_possession/mode_selector/progression/resettable"
+msgstr "距下个\"春节祈福\"任务开放的时间"
+
+msgid "modes/lunar_possession/notification/finishSubModes/withProgression"
+msgstr "%(subModeName)s已结束"
+
+msgid "modes/lunar_possession/notification/finishSubModes/withoutProgression"
+msgstr "%(subModeName)s已结束"
+
+msgid "modes/lunar_possession/notification/newSubModes/withProgression"
+msgstr "%(subModeName)s已开启"
+
+msgid "modes/lunar_possession/notification/newSubModes/withoutProgression"
+msgstr "%(subModeName)s已开启"
+
+msgid "modes/lunar_possession/notification/switchOffSubModes"
+msgstr "由于系统维护，%(subModeName)s活动暂不开放。"
+
+msgid "modes/lunar_possession/notification/switchOnSubModes"
+msgstr "%(subModeName)s活动已再次开放。"
+
+msgid "modes/lunar_possession/progression/complete/congratulations"
+msgstr "恭喜!"
+
+msgid "modes/lunar_possession/progression/complete/title"
+msgstr "您已完成进度"
+
+msgid "modes/lunar_possession/progression/infinite/congratulations"
+msgstr "恭喜!"
+
+msgid "modes/lunar_possession/progression/infinite/infinityStep"
+msgstr "可重复完成的阶段"
+
+msgid "modes/lunar_possession/progression/infinite/mainProgressionFinished"
+msgstr "您已完成进度"
+
+msgid "modes/lunar_possession/progression/pointsTooltipBody"
+msgstr "完成任务即可获得玉石，从而推动活动进度并解锁节日奖励。"
+
+msgid "modes/lunar_possession/progression/pointsTooltipTitle"
+msgstr "玉石"
+
+msgid ""
+"modes/lunar_possession/progression/questsList/quest/infinityStageProgress"
+msgstr "尽可能获取更多奖励:"
+
+msgid "modes/lunar_possession/progression/questsList/totalPointsEarned"
+msgstr "已获得玉石: {{progressionSteps}}"
+
+msgid ""
+"modes/lunar_possession/progression/questsList/totalPointsEarnedStandAloneTitle"
+msgstr "已获得玉石:"
+
+msgid "modes/lunar_possession/progression/title"
+msgstr "春节祈福"
+
+msgid "modes/lunar_possession/rewardsView/header"
+msgstr "已获得骏马补给品"
+
+msgid "modes/lunar_possession/scheduler/notification/available"
+msgstr "%(subModeName)s战斗已再次开放。"
+
+msgid "modes/lunar_possession/scheduler/notification/available/title"
+msgstr "休战"
+
+msgid "modes/lunar_possession/scheduler/notification/modeEnded"
+msgstr "%(subModeName)s战斗已结束"
+
+msgid "modes/lunar_possession/scheduler/notification/modeEnded/title"
+msgstr "休战"
+
+msgid "modes/lunar_possession/scheduler/notification/primeTime"
+msgstr "目前处于休战期。%(subModeName)s战斗暂不开放。"
+
+msgid "modes/lunar_possession/scheduler/notification/primeTime/title"
+msgstr "休战"
+
+msgid "modes/lunar_possession/tierList/description"
+msgstr "下方列表展示了您有机会获得的随机奖励，每个物品都具有特定的掉落率。"
+
+msgid "modes/lunar_possession/tierList/title"
+msgstr "奖励列表"
+
+msgid "modes/lunar_possession/tooltip/filter/body"
+msgstr "显示/隐藏符合\"春节祈福\"模式条件的坦克。"
+
+msgid "modes/lunar_possession/tooltip/filter/header"
+msgstr "\"春节祈福\"坦克"
+
+msgid "modes/lunar_possession/userName"
+msgstr "春节祈福"
+
 msgid "modes/undefined/banner/progression/finish"
 msgstr "已完成全部阶段"
 
@@ -704,6 +899,12 @@ msgstr "可重复完成的阶段"
 msgid "modes/undefined/progression/infinite/mainProgressionFinished"
 msgstr "您已完成主要进度"
 
+msgid "modes/undefined/progression/pointsTooltipBody"
+msgstr "完成任务即可获得点数，从而推动活动进度并解锁奖励。"
+
+msgid "modes/undefined/progression/pointsTooltipTitle"
+msgstr "点数"
+
 msgid "modes/undefined/progression/questsList/quest/infinityStageProgress"
 msgstr "尽可能获取更多奖励:"
 
@@ -789,8 +990,17 @@ msgstr "进度将在1天内重置。在那之后您将可以再次尝试完成�
 msgid "notification/progressionComplete/resetTimeLeft"
 msgstr "进度将在%(days)d天后重置。在那之后您将可以再次尝试完成任务。"
 
+msgid "notification/progressionInfiniteStageComplete"
+msgstr "您已完成了活动进度中可重复完成的阶段。已获得奖励:"
+
 msgid "notification/progressionStageComplete"
 msgstr "您已完成的\"%(modeName)s\"阶段数量: %(stage)s。已获得奖励:"
+
+msgid "notification/progressionStageComplete/rewardReceived"
+msgstr "已完成阶段%(stageIndex)s/%(maximumStage)s。已获得奖励:"
+
+msgid "notification/progressionStageComplete/rewardReceivedLastStage"
+msgstr "已完成主要进度。可重复完成的阶段已开放。已获得奖励:"
 
 msgid "notification/subModesSeparator"
 msgstr "、"
@@ -919,16 +1129,16 @@ msgid "primeTimes/timeText/undefined"
 msgstr "?empty?"
 
 msgid "progression/cards/points"
-msgstr "点数"
+msgstr "玉石"
 
 msgid "progression/complete/affirmative"
 msgstr "收到！"
 
 msgid "progression/defaultCondition/text"
-msgstr "获取点数即可推进活动进度。"
+msgstr "已获得玉石"
 
 msgid "progression/infinite/pointsEarned"
-msgstr "获得点数:"
+msgstr "已获得玉石:"
 
 msgid "progression/questsList/quest/completed"
 msgstr "已完成:"
@@ -957,11 +1167,17 @@ msgstr "{{reason}}{{value}}"
 msgid "progression/questsList/quest/progressTitle"
 msgstr "{{completed}}{{currentPoints}}{{delimeter}}{{totalPoints}}"
 
+msgid "progression/questsList/questsFinishTimerInfiniteOnelineTitle"
+msgstr "距活动结束还有: {{time}}"
+
+msgid "progression/questsList/questsFinishTimerInfiniteTitle"
+msgstr "距活动结束还有:"
+
 msgid "progression/questsList/questsFinishTimerOnelineTitle"
-msgstr "距激活的阶段结束还有: {{time}}"
+msgstr "任务每天重置。距活动结束还有: {{time}}"
 
 msgid "progression/questsList/questsFinishTimerTitle"
-msgstr "距激活的阶段结束还有:"
+msgstr "任务每天重置。距活动结束还有:"
 
 msgid "progression/questsList/questsRenewTimerTitle"
 msgstr "距下次发布还有:"
@@ -976,7 +1192,7 @@ msgid "progression/stepsNoProgress"
 msgstr "{bond_Open}%(done)s{bond_Close}/%(total)s"
 
 msgid "quests/limitedProgression/awards/nearest/header"
-msgstr "下个阶段的奖励——获得%(count)d点数解锁"
+msgstr "下个阶段的奖励——%(count)d玉石解锁"
 
 msgid "rewardsView/additionalRewards/title"
 msgstr "您同时获得:"
@@ -1123,6 +1339,81 @@ msgstr "冰河世纪"
 
 msgid "sub_modes/ice_age_2025/userName/quoted"
 msgstr "\"冰河世纪\""
+
+msgid "sub_modes/lunar_possession/capsUserName"
+msgstr "春节祈福"
+
+msgid "sub_modes/lunar_possession/detailsHelp/page1/description"
+msgstr "夺取火马灵币，为您的团队获取点数"
+
+msgid "sub_modes/lunar_possession/detailsHelp/page1/title"
+msgstr "获取火马灵币"
+
+msgid "sub_modes/lunar_possession/detailsHelp/page2/description"
+msgstr "护送携带火马灵币的盟友"
+
+msgid "sub_modes/lunar_possession/detailsHelp/page2/title"
+msgstr "守护盟友"
+
+msgid "sub_modes/lunar_possession/detailsHelp/page3/description"
+msgstr "击毁敌方坦克，夺取它们携带的火马灵币"
+
+msgid "sub_modes/lunar_possession/detailsHelp/page3/title"
+msgstr "夺走敌方的火马灵币"
+
+msgid "sub_modes/lunar_possession/detailsHelpHint/description"
+msgstr "查看模式特点"
+
+msgid "sub_modes/lunar_possession/detailsHelpHint/press"
+msgstr "按下"
+
+msgid "sub_modes/lunar_possession/detailsHelpTitle"
+msgstr "目标:"
+
+msgid "sub_modes/lunar_possession/subModeCard/battleCondition"
+msgstr "7对7"
+
+msgid "sub_modes/lunar_possession/subModeCard/description"
+msgstr "和盟友协作获取火马灵币，然后将其运送至位于敌方防线后方的祈福区域"
+
+msgid "sub_modes/lunar_possession/subModeCard/levelCondition"
+msgstr "{parSecondary_open}I{parSecondary_close}&nbsp;%(levels)s级"
+
+msgid ""
+"sub_modes/lunar_possession/subModeCard/performance/highRisk/description"
+msgstr "您的计算机性能不足以运行此模式。您可能会遇到图形和坦克移动方面的问题。游戏客户端也有可能崩溃。"
+
+msgid "sub_modes/lunar_possession/subModeCard/performance/highRisk/header"
+msgstr "低性能"
+
+msgid "sub_modes/lunar_possession/subModeCard/performance/highRisk/headerIcon"
+msgstr "%(icon)低性能"
+
+msgid ""
+"sub_modes/lunar_possession/subModeCard/performance/mediumRisk/description"
+msgstr "该模式需要较高的计算机性能。您可能会遇到地图加载、图形和坦克移动方面的问题。如果性能不足，请在设置中尝试较低的图形质量。"
+
+msgid "sub_modes/lunar_possession/subModeCard/performance/mediumRisk/header"
+msgstr "可能会降低性能"
+
+msgid ""
+"sub_modes/lunar_possession/subModeCard/performance/mediumRisk/headerIcon"
+msgstr "%(icon)可能会降低性能"
+
+msgid "sub_modes/lunar_possession/subModeCard/title"
+msgstr "春节祈福"
+
+msgid "sub_modes/lunar_possession/tips/tip1/description"
+msgstr "Unknown sub mode first tip description"
+
+msgid "sub_modes/lunar_possession/tips/tip1/title"
+msgstr "Unknown sub mode first tip title"
+
+msgid "sub_modes/lunar_possession/userName"
+msgstr "春节祈福"
+
+msgid "sub_modes/lunar_possession/userName/quoted"
+msgstr "\"春节祈福\""
 
 msgid "sub_modes/snowballs_2025/capsUserName"
 msgstr "雪球大战"

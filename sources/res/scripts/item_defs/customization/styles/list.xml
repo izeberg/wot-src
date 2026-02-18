@@ -31498,6 +31498,50 @@
 		<userString>#vehicle_customization:styles/special_styles</userString>
 		<season>ALL</season>
 		<historical>1</historical>
+		<priceGroup>styles 1500g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF poland:Pl15_60TP_Lewandowskiego_CFE_A usa:A13_T34_hvy_BF usa:A104_M4A3E8A usa:A126_PzVI_Tiger_II_capt usa:A174_T57_58_Rush_Ep1 ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<style>
+			<id>1287</id>
+			<tags>c11n2D</tags>
+			<texture>gui/maps/vehicles/styles/lunar26.png</texture>
+			<userString>#vehicle_customization:special_style/lunar26</userString>
+			<description>#vehicle_customization:special_style/lunar26_desc</description>
+			<longDescriptionSpecial>#vehicle_customization:special_style/lunar26_desc/long</longDescriptionSpecial>
+			<outfits>
+				<outfit>
+					<season>all</season>
+					<paints>
+						<item>
+							<id>641</id>
+							<appliedTo>30583</appliedTo>
+						</item>
+					</paints>
+					<camouflages>
+						<item>
+							<id>1098</id>
+							<patternSize>1</patternSize>
+							<appliedTo>4368</appliedTo>
+							<palette>0</palette>
+						</item>
+					</camouflages>
+					<projection_decals>
+						<item>
+							<id>1341</id>
+							<tags>formfactor_square safe front</tags>
+						</item>
+					</projection_decals>
+				</outfit>
+			</outfits>
+		</style>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:styles/special_styles</userString>
+		<season>ALL</season>
+		<historical>1</historical>
 		<priceGroup>styles 750g notInShop</priceGroup>
 		<vehicleFilter>
 			<include>
@@ -41250,6 +41294,124 @@
 							<rotated>0</rotated>
 						</item>
 					</attachments>
+				</outfit>
+			</outfits>
+		</style>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:styles/special_styles</userString>
+		<season>ALL</season>
+		<historical>0</historical>
+		<priceGroup>styles 3000g notInShop</priceGroup>
+		<vehicleFilter>
+			<include>
+				<vehicles>japan:J51_Ashigaru</vehicles>
+			</include>
+		</vehicleFilter>
+		<style>
+			<id>1207</id>
+			<texture>gui/maps/vehicles/styles/J51_Ashigaru_RW10_3Dst.png</texture>
+			<modelsSet>J51_Ashigaru_RW10_3Dst</modelsSet>
+			<maxNumber>1</maxNumber>
+			<userString>#vehicle_customization:special_style/J51_Ashigaru_RW10_3Dst</userString>
+			<longDescriptionSpecial>#vehicle_customization:special_style/J51_Ashigaru_RW10_3Dst_desc/long</longDescriptionSpecial>
+			<tags>styleSerialNumber c11n3D</tags>
+			<outfits>
+				<outfit>
+					<season>summer</season>
+					<camouflages>
+						<item>
+							<id>1075</id>
+							<appliedTo>4368</appliedTo>
+							<patternSize>1</patternSize>
+							<palette>0</palette>
+						</item>
+					</camouflages>
+					<paints>
+						<item>
+							<id>627</id>
+							<appliedTo>30583</appliedTo>
+						</item>
+					</paints>
+					<attachments>
+						<item>
+							<slotId>18003</slotId>
+							<id>169</id>
+							<scaleFactorId>0</scaleFactorId>
+							<rotated>0</rotated>
+						</item>
+						<item>
+							<slotId>18004</slotId>
+							<id>170</id>
+							<scaleFactorId>0</scaleFactorId>
+							<rotated>0</rotated>
+						</item>
+					</attachments>
+				</outfit>
+				<outfit>
+					<season>desert</season>
+					<camouflages>
+						<item>
+							<id>1076</id>
+							<appliedTo>4368</appliedTo>
+							<patternSize>1</patternSize>
+							<palette>0</palette>
+						</item>
+					</camouflages>
+					<paints>
+						<item>
+							<id>628</id>
+							<appliedTo>30583</appliedTo>
+						</item>
+					</paints>
+					<attachments>
+						<item>
+							<slotId>18003</slotId>
+							<id>169</id>
+							<scaleFactorId>0</scaleFactorId>
+							<rotated>0</rotated>
+						</item>
+						<item>
+							<slotId>18004</slotId>
+							<id>170</id>
+							<scaleFactorId>0</scaleFactorId>
+							<rotated>0</rotated>
+						</item>
+					</attachments>
+				</outfit>
+				<outfit>
+					<season>winter</season>
+					<camouflages>
+						<item>
+							<id>1077</id>
+							<appliedTo>4368</appliedTo>
+							<patternSize>1</patternSize>
+							<palette>0</palette>
+						</item>
+					</camouflages>
+					<paints>
+						<item>
+							<id>629</id>
+							<appliedTo>30583</appliedTo>
+						</item>
+					</paints>
+					<attachments>
+						<item>
+							<slotId>18003</slotId>
+							<id>169</id>
+							<scaleFactorId>0</scaleFactorId>
+							<rotated>0</rotated>
+						</item>
+						<item>
+							<slotId>18004</slotId>
+							<id>170</id>
+							<scaleFactorId>0</scaleFactorId>
+							<rotated>0</rotated>
+						</item>
+					</attachments>
+				</outfit>
+				<outfit>
+					<season>event</season>
 				</outfit>
 			</outfits>
 		</style>

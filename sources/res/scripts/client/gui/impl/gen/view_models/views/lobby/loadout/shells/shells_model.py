@@ -5,7 +5,7 @@ from gui.impl.gen.view_models.views.lobby.loadout.shells.shell_model import Shel
 class ShellsModel(BaseLoadoutModel):
     __slots__ = ('onShellUpdate', )
 
-    def __init__(self, properties=7, commands=2):
+    def __init__(self, properties=8, commands=2):
         super(ShellsModel, self).__init__(properties=properties, commands=commands)
 
     def getHasChanges(self):
@@ -48,6 +48,12 @@ class ShellsModel(BaseLoadoutModel):
     def getShellsType():
         return ShellModel
 
+    def getIsInfinityShells(self):
+        return self._getBool(7)
+
+    def setIsInfinityShells(self, value):
+        self._setBool(7, value)
+
     def _initialize(self):
         super(ShellsModel, self)._initialize()
         self._addBoolProperty('hasChanges', False)
@@ -56,4 +62,5 @@ class ShellsModel(BaseLoadoutModel):
         self._addNumberProperty('clip', 0)
         self._addBoolProperty('autoloadEnabled', False)
         self._addArrayProperty('shells', Array())
+        self._addBoolProperty('isInfinityShells', False)
         self.onShellUpdate = self._addCommand('onShellUpdate')

@@ -316,6 +316,8 @@
 		<fn_effect_bin>particles/Tank/customization/G177_E65_Zwilling_W25_3Dst/steam_exhaust.eff</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Tank/customization/G177_E65_Zwilling_W25_3Dst/mgun_shooting.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Tank/customization/G177_E65_Zwilling_W25_3Dst/steam_exhaust.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/3D_Customization/Cus_170_Lunar_Horse/cus_170_fire_kill.eff</fn_effect_bin>
+		<fn_effect_bin>particles/3D_Customization/Cus_170_Lunar_Horse/cus_170_fire_small.eff</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Battle_Royal/Afterburning/br_nitro_gearup.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Battle_Royal/Afterburning/br_nitro_idle.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Battle_Royal/Afterburning/br_nitro_load.vfx</fn_effect_bin>
@@ -3444,6 +3446,37 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/shots/fep_ny_shot_main_end.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/shots/shot_main_medium_ForceField.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/auto_shoot/shots/shot_ForceField.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/LNY_26/Ability/fire_rear.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/LNY_26/Ability/fire_rear.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/LNY_26/Ability/implosion.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/LNY_26/Ability/implosion.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/LNY_26/Ability/invulnerability_confetti.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/LNY_26/Ability/invulnerability_confetti.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/LNY_26/Ability/muscle_flash.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/LNY_26/Ability/muscle_flash.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/LNY_26/Ability/pickup_confetti_baseglow.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/LNY_26/Ability/pickup_confetti_baseglow.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/LNY_26/Ability/pickup_confetti_spiral.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/LNY_26/Ability/pickup_confetti_spiral.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/LNY_26/Ability/tracks_fire.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/LNY_26/Ability/tracks_fire.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/LNY_26/Ability/invulnerability_confetti.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/LNY_26/Ability/invulnerability_confetti.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/LNY_26/Ability/invulnerability_confetti_02.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/LNY_26/Ability/invulnerability_confetti_02.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/3D_Customization/Cus_170_Lunar_Horse/cus_170_fire_kill.eff</fn_effect_bin>
+		<fn_effect_bin>particles/3D_Customization/Cus_170_Lunar_Horse/cus_170_fire_small.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_170_Lunar_Horse/cus_170_fire_kill.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_170_Lunar_Horse/cus_170_fire_small.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/3D_Customization/Cus_171_Lunar_Fireworks/cus_171_rockets.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_171_Lunar_Fireworks/cus_171_rockets.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/3D_Customization/Cus_171_Lunar_Fireworks/cus_171_fireworks_secondary.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_171_Lunar_Fireworks/cus_171_fireworks_secondary.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/3D_Customization/Cus_171_Lunar_Fireworks/cus_171_fireworks_big.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_171_Lunar_Fireworks/cus_171_fireworks_big.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/3D_Customization/Cus_171_Lunar_Fireworks/cus_171_fireworks_trail_big.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_171_Lunar_Fireworks/cus_171_fireworks_trail_big.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_171_Lunar_Fireworks/cus_171_fireworks_secondary_s.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Battle_Royal/Afterburning/br_nitro_gearup.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Battle_Royal/Afterburning/br_nitro_idle.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Battle_Royal/Afterburning/br_nitro_load.vfx</fn_effect_bin>

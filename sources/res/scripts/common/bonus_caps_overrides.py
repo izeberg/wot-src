@@ -1,6 +1,5 @@
 from typing import TYPE_CHECKING, Optional, Dict, Set
 from BonusCaps import BonusCapsConst
-from arena_bonus_type_caps import ALLOWED_ARENA_BONUS_TYPE_CAPS
 from constants import ARENA_BONUS_TYPE_NAMES
 from soft_exception import SoftException
 if TYPE_CHECKING:
@@ -24,6 +23,7 @@ def readBonusCapsOverrides(section):
 
 
 def _readOperations(section):
+    from arena_bonus_type_caps import ALLOWED_ARENA_BONUS_TYPE_CAPS
     operations = dict()
     if section is None:
         return operations

@@ -41,9 +41,8 @@ package net.wg.gui.lobby.vehicleCustomization
       
       private function disableHitArea(param1:InteractiveObject) : void
       {
-         var _loc2_:Sprite = null;
          var _loc3_:Sprite = null;
-         _loc2_ = param1 as Sprite;
+         var _loc2_:Sprite = param1 as Sprite;
          param1.mouseEnabled = false;
          if(_loc2_ != null)
          {

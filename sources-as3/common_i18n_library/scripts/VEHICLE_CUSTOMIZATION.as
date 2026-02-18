@@ -4457,6 +4457,8 @@ package
       
       public static const CAMOUFLAGE_JPN_VOLUMETRIC_LABEL:String = "#vehicle_customization:camouflage/jpn_volumetric/label";
       
+      public static const CAMOUFLAGE_J51_ASHIGARU_RW10_3DST_LABEL:String = "#vehicle_customization:camouflage/J51_Ashigaru_RW10_3Dst/label";
+      
       public static const CAMOUFLAGE_LOOTBOXES_LUNAR_1_LABEL:String = "#vehicle_customization:camouflage/lootboxes_lunar_1/label";
       
       public static const CAMOUFLAGE_LOOTBOXES_LUNAR_2_LABEL:String = "#vehicle_customization:camouflage/lootboxes_lunar_2/label";
@@ -8658,6 +8660,10 @@ package
       public static const INSCRIPTION_SPECIAL_SPECIAL_859:String = "#vehicle_customization:inscription/special/special_859";
       
       public static const INSCRIPTION_SPECIAL_SPECIAL_860:String = "#vehicle_customization:inscription/special/special_860";
+      
+      public static const INSCRIPTION_SPECIAL_SPECIAL_861:String = "#vehicle_customization:inscription/special/special_861";
+      
+      public static const INSCRIPTION_SPECIAL_SPECIAL_862:String = "#vehicle_customization:inscription/special/special_862";
       
       public static const ITEM_EMBLEM1:String = "#vehicle_customization:item/emblem1";
       
@@ -14729,6 +14735,18 @@ package
       
       public static const REPAINT_BEYOND_PINES:String = "#vehicle_customization:repaint/beyond_pines";
       
+      public static const SPECIAL_STYLE_LUNAR26:String = "#vehicle_customization:special_style/lunar26";
+      
+      public static const SPECIAL_STYLE_LUNAR26_DESC:String = "#vehicle_customization:special_style/lunar26_desc";
+      
+      public static const SPECIAL_STYLE_LUNAR26_DESC_LONG:String = "#vehicle_customization:special_style/lunar26_desc/long";
+      
+      public static const CAMOUFLAGE_LUNAR26_LABEL:String = "#vehicle_customization:camouflage/lunar26/label";
+      
+      public static const CAMOUFLAGE_LUNAR26_DESCRIPTION:String = "#vehicle_customization:camouflage/lunar26/description";
+      
+      public static const REPAINT_LUNAR26:String = "#vehicle_customization:repaint/lunar26";
+      
       public static const SPECIAL_STYLE_WOT_BIRTHDAY_2025:String = "#vehicle_customization:special_style/wot_birthday_2025";
       
       public static const SPECIAL_STYLE_WOT_BIRTHDAY_2025_DESC:String = "#vehicle_customization:special_style/wot_birthday_2025_desc";
@@ -15442,6 +15460,10 @@ package
       public static const SPECIAL_STYLE_WELL_DESERVED_REWARD_2025_DESC:String = "#vehicle_customization:special_style/well_deserved_reward_2025_desc";
       
       public static const SPECIAL_STYLE_WELL_DESERVED_REWARD_2025_DESC_LONG:String = "#vehicle_customization:special_style/well_deserved_reward_2025_desc/long";
+      
+      public static const SPECIAL_STYLE_J51_ASHIGARU_RW10_3DST:String = "#vehicle_customization:special_style/J51_Ashigaru_RW10_3Dst";
+      
+      public static const SPECIAL_STYLE_J51_ASHIGARU_RW10_3DST_DESC_LONG:String = "#vehicle_customization:special_style/J51_Ashigaru_RW10_3Dst_desc/long";
       
       public static const SPECIAL_STYLE_R172_OBJECT_752_K_3DST:String = "#vehicle_customization:special_style/R172_Object_752_K_3Dst";
       
@@ -18905,6 +18927,14 @@ package
       
       public static const PROJECTION_DECALS_SPECIAL_PROJECTION_DECAL_1033:String = "#vehicle_customization:projection_decals/special/projection_decal_1033";
       
+      public static const PROJECTION_DECALS_SPECIAL_PROJECTION_DECAL_1034:String = "#vehicle_customization:projection_decals/special/projection_decal_1034";
+      
+      public static const PROJECTION_DECALS_SPECIAL_PROJECTION_DECAL_1035:String = "#vehicle_customization:projection_decals/special/projection_decal_1035";
+      
+      public static const PROJECTION_DECALS_SPECIAL_PROJECTION_DECAL_1036:String = "#vehicle_customization:projection_decals/special/projection_decal_1036";
+      
+      public static const PROJECTION_DECALS_SPECIAL_PROJECTION_DECAL_1037:String = "#vehicle_customization:projection_decals/special/projection_decal_1037";
+      
       public static const ATTACHMENT_GENERAL:String = "#vehicle_customization:attachment/general";
       
       public static const ATTACHMENT_TEST:String = "#vehicle_customization:attachment/test";
@@ -19322,6 +19352,20 @@ package
       public static const ATTACHMENT_NIGHT_RAID_CUS_55_ARMIESG_GUNSKIT:String = "#vehicle_customization:attachment/night_raid/Cus_55_ArmiesG_Gunskit";
       
       public static const ATTACHMENT_NIGHT_RAID_CUS_77_ARMIESG_MG08:String = "#vehicle_customization:attachment/night_raid/Cus_77_ArmiesG_MG08";
+      
+      public static const ATTACHMENT_CELESTIAL_FLAME:String = "#vehicle_customization:attachment/celestial_flame";
+      
+      public static const ATTACHMENT_CELESTIAL_FLAME_CUS_170_LUNAR_HORSE:String = "#vehicle_customization:attachment/celestial_flame/Cus_170_Lunar_Horse";
+      
+      public static const ATTACHMENT_CELESTIAL_FLAME_CUS_171_LUNAR_FIREWORKS:String = "#vehicle_customization:attachment/celestial_flame/Cus_171_Lunar_Fireworks";
+      
+      public static const ATTACHMENT_CELESTIAL_FLAME_CUS_171_LUNAR_FIREWORKS_DESCRIPTION:String = "#vehicle_customization:attachment/celestial_flame/Cus_171_Lunar_Fireworks/description";
+      
+      public static const ATTACHMENT_CELESTIAL_FLAME_CUS_172_LUNAR_DRUMS:String = "#vehicle_customization:attachment/celestial_flame/Cus_172_Lunar_Drums";
+      
+      public static const ATTACHMENT_CELESTIAL_FLAME_CUS_173_LUNAR_DRAGON:String = "#vehicle_customization:attachment/celestial_flame/Cus_173_Lunar_Dragon";
+      
+      public static const ATTACHMENT_CELESTIAL_FLAME_CUS_174_LUNAR_TREE:String = "#vehicle_customization:attachment/celestial_flame/Cus_174_Lunar_Tree";
       
       public static const SPECIAL_STYLE_HIGH_VOLTAGE_EQUIPMENT:String = "#vehicle_customization:special_style/High_Voltage_Equipment";
       

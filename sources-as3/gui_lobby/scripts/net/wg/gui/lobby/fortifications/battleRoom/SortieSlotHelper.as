@@ -161,10 +161,9 @@ package net.wg.gui.lobby.fortifications.battleRoom
       
       private static function updateVehBtn(param1:CSVehicleButton, param2:Boolean, param3:UnitSlotProperties, param4:String) : void
       {
-         var _loc5_:TextField = null;
          param1.showVehicleIcon = param2;
          param1.vCountMsg.x = param3.x;
-         _loc5_ = param1.defaultMsg;
+         var _loc5_:TextField = param1.defaultMsg;
          _loc5_.x = param3.x - _loc5_.width;
          _loc5_.text = param4;
          var _loc6_:Number = _loc5_.width;

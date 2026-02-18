@@ -174,6 +174,10 @@ class ARENAS(object):
     C_120_GRAF_ZEPPELIN_SCC_DESCRIPTION = '#arenas:120_graf_zeppelin_scc/description'
     C_120_GRAF_ZEPPELIN_NAME = '#arenas:120_graf_zeppelin/name'
     C_120_GRAF_ZEPPELIN_DESCRIPTION = '#arenas:120_graf_zeppelin/description'
+    C_35_STEPPES_LUNAR_26_NAME = '#arenas:35_steppes_lunar_26/name'
+    C_59_ASIA_GREAT_WALL_LUNAR_26_NAME = '#arenas:59_asia_great_wall_lunar_26/name'
+    C_10_HILLS_LUNAR_26_NAME = '#arenas:10_hills_lunar_26/name'
+    C_28_DESERT_LUNAR_26_NAME = '#arenas:28_desert_lunar_26/name'
     ALL_ENUM = (
      TYPE_CTF_NAME,
      TYPE_CTF_DESCRIPTION,
@@ -347,7 +351,11 @@ class ARENAS(object):
      C_120_GRAF_ZEPPELIN_SCC_NAME,
      C_120_GRAF_ZEPPELIN_SCC_DESCRIPTION,
      C_120_GRAF_ZEPPELIN_NAME,
-     C_120_GRAF_ZEPPELIN_DESCRIPTION)
+     C_120_GRAF_ZEPPELIN_DESCRIPTION,
+     C_35_STEPPES_LUNAR_26_NAME,
+     C_59_ASIA_GREAT_WALL_LUNAR_26_NAME,
+     C_10_HILLS_LUNAR_26_NAME,
+     C_28_DESERT_LUNAR_26_NAME)
 
     @classmethod
     def all(cls, key0):

@@ -385,7 +385,7 @@ _SINGLE_ACHIEVEMENTS_VALUES = [
  'comp7_5_yearly_gold', 'comp7_5_yearly_champion', 'comp7_5_yearly_legend',
  'ls2_0Medal', 'sccHero', 'wt2025progression', 'twoPointZeroMedal',
  'twoPointZeroCollectorMedal', 'hw2025Medal', 'NY26_AtmsphrLevel',
- 'NY26_CelebChallenge', 'grinch_medal_2026', '15YearsOfService']
+ 'NY26_CelebChallenge', 'grinch_medal_2026', '15YearsOfService', 'LunarNY2026CN']
 _singleAchievementsPopUps = [
  'titleSniper', 'invincible', 'diehard', 'handOfDeath',
  'armorPiercer', 'battleCitizen', 'WFC2014', 'tacticalBreakthrough', 'aimer',
@@ -462,7 +462,7 @@ _singleAchievementsPopUps = [
  'comp7_5_yearly_gold', 'comp7_5_yearly_champion', 'comp7_5_yearly_legend',
  'ls2_0Medal', 'sccHero', 'wt2025progression', 'twoPointZeroMedal',
  'twoPointZeroCollectorMedal', 'hw2025Medal', 'NY26_AtmsphrLevel',
- 'NY26_CelebChallenge', 'grinch_medal_2026', '15YearsOfService']
+ 'NY26_CelebChallenge', 'grinch_medal_2026', '15YearsOfService', 'LunarNY2026CN']
 _singleAchievementsBlockBuilder = BinarySetDossierBlockBuilder('singleAchievements', _SINGLE_ACHIEVEMENTS_VALUES, SINGLE_ACHIEVEMENTS_DEPENDENCIES, _singleAchievementsPopUps)
 FORT_ACHIEVEMENTS_BLOCK_LAYOUT = [
  'conqueror', 'fireAndSword', 'crusher', 'counterblow', 'kampfer', 'soldierOfFortune']

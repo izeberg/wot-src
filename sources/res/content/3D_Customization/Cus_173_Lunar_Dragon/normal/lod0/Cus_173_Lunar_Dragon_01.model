@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-0.465687 -0.010986 -0.824182</min>
+		<max>0.128851 0.455424 0.574588</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<parent>content/3D_Customization/Cus_173_Lunar_Dragon/normal/lod1/Cus_173_Lunar_Dragon_01</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>content/3D_Customization/Cus_173_Lunar_Dragon/normal/lod0/Cus_173_Lunar_Dragon_01</nodefullVisual>
+</root>

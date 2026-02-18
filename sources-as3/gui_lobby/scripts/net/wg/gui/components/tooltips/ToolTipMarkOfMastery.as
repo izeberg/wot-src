@@ -43,6 +43,9 @@ package net.wg.gui.components.tooltips
       
       override protected function redraw() : void
       {
+         var _loc1_:ToolTipTankClassVO = null;
+         var _loc2_:Number = NaN;
+         var _loc5_:ILocale = null;
          var _loc13_:String = null;
          var _loc14_:String = null;
          var _loc15_:String = null;
@@ -51,8 +54,8 @@ package net.wg.gui.components.tooltips
          topPosition = bgShadowMargin.top + contentMargin.top;
          blockResults = new Vector.<ToolTipBlockResultVO>();
          separators = new Vector.<Separator>();
-         var _loc1_:ToolTipTankClassVO = new ToolTipTankClassVO(_data);
-         var _loc2_:Number = bgShadowMargin.left + contentMargin.left;
+         _loc1_ = new ToolTipTankClassVO(_data);
+         _loc2_ = bgShadowMargin.left + contentMargin.left;
          var _loc3_:TextFormat = new TextFormat();
          _loc3_.leading = -2;
          _loc3_.align = TextFormatAlign.LEFT;
@@ -68,7 +71,7 @@ package net.wg.gui.components.tooltips
          separators.push(this.separator);
          this.whiteBg.y = topPosition;
          topPosition += this.utils.MARGIN_AFTER_BLOCK;
-         var _loc5_:ILocale = App.utils.locale;
+         _loc5_ = App.utils.locale;
          var _loc6_:String = _loc5_.makeString(ACHIEVEMENTS.MARKOFMASTERYCONTENT + "/" + _loc1_.localizedValue) + "%";
          _loc6_ = Utils.instance.htmlWrapper(_loc6_,Utils.instance.COLOR_NUMBER,12,"$TextFont");
          var _loc7_:String = _loc5_.makeString(ACHIEVEMENTS.MARKOFMASTERYCONTENT,{"val":_loc6_});

@@ -55,6 +55,9 @@ msgstr "—"
 msgid "efficiency/kills"
 msgstr "击毁"
 
+msgid "efficiency/spiritPoints"
+msgstr "祈福点数"
+
 msgid "efficiency/spotted"
 msgstr "点亮"
 
@@ -82,8 +85,17 @@ msgstr "防御基地"
 msgid "efficiencyTooltip/header/kills"
 msgstr "击毁敌方坦克"
 
+msgid "efficiencyTooltip/header/spiritPoints"
+msgstr "祈福点数"
+
 msgid "efficiencyTooltip/header/spotted"
 msgstr "点亮"
+
+msgid "efficiencyTooltip/spiritPoints/description"
+msgstr ""
+"计入: \n"
+"• 运送火马灵币\n"
+"• 击毁敌方坦克"
 
 msgid "finish"
 msgstr "战斗结束"

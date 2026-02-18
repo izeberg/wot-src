@@ -95,13 +95,15 @@ package net.wg.gui.lobby.rankedBattles19.rankedBattlesBattleResults
       
       public function setData(param1:RankedListsVO, param2:Boolean = false) : void
       {
+         var _loc3_:int = 0;
          var _loc8_:RankedListWithBackground = null;
          var _loc9_:RankedListVO = null;
          var _loc10_:RankedListWithBackground = null;
          var _loc11_:int = 0;
+         var _loc12_:Boolean = false;
          this.titleTF.htmlText = param1.title;
          this.titleTF.alpha = param1.titleAlpha;
-         var _loc3_:int = this._startY;
+         _loc3_ = this._startY;
          var _loc4_:Vector.<RankedListVO> = param1.tops;
          var _loc5_:int = _loc4_.length;
          var _loc6_:int = _loc5_ - this._lists.length;
@@ -115,7 +117,7 @@ package net.wg.gui.lobby.rankedBattles19.rankedBattlesBattleResults
             _loc6_--;
          }
          _loc11_ = this._lists[0].rendererHeight;
-         var _loc12_:Boolean = false;
+         _loc12_ = false;
          var _loc13_:int = 0;
          while(_loc13_ < _loc5_)
          {

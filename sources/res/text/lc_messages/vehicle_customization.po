@@ -210,6 +210,27 @@ msgstr "复古放映机"
 msgid "attachment/birthday_bash/Cus_107_A15_Tank_builder_set"
 msgstr "必备物资"
 
+msgid "attachment/celestial_flame"
+msgstr "热火朝天"
+
+msgid "attachment/celestial_flame/Cus_170_Lunar_Horse"
+msgstr "腾跃火马"
+
+msgid "attachment/celestial_flame/Cus_171_Lunar_Fireworks"
+msgstr "烟花发射器"
+
+msgid "attachment/celestial_flame/Cus_171_Lunar_Fireworks/description"
+msgstr "这款华丽的烟花发射器已装填完毕，即将向空中射出迎接春节到来的礼炮。"
+
+msgid "attachment/celestial_flame/Cus_172_Lunar_Drums"
+msgstr "节日锣鼓"
+
+msgid "attachment/celestial_flame/Cus_173_Lunar_Dragon"
+msgstr "游街舞龙"
+
+msgid "attachment/celestial_flame/Cus_174_Lunar_Tree"
+msgstr "橘子树盆栽"
+
 msgid "attachment/dragon_vanguard"
 msgstr "神龙先锋"
 
@@ -1599,6 +1620,9 @@ msgstr "?empty?"
 
 msgid "camouflage/J40_Type_71_BPXVI_3Dst/label"
 msgstr "原始森林"
+
+msgid "camouflage/J51_Ashigaru_RW10_3Dst/label"
+msgstr "森赛"
 
 msgid "camouflage/Klingfleet/description"
 msgstr ""
@@ -5207,6 +5231,12 @@ msgstr "?empty?"
 
 msgid "camouflage/ls25_2d/label"
 msgstr "异象标记"
+
+msgid "camouflage/lunar26/description"
+msgstr "?empty?"
+
+msgid "camouflage/lunar26/label"
+msgstr "烈焰骏马"
 
 msgid "camouflage/lunar_NY_fire/description"
 msgstr "纪念春节庆典的全地形迷彩图案，代表着五行元素。"
@@ -15752,6 +15782,12 @@ msgstr "请勿滋事"
 msgid "inscription/special/special_860"
 msgstr "服务公众，保护无辜，维护法律"
 
+msgid "inscription/special/special_861"
+msgstr "驰马迎春"
+
+msgid "inscription/special/special_862"
+msgstr "马到成功"
+
 msgid "inscription/special/special_90"
 msgstr "2017年总决赛，莫斯科"
 
@@ -19265,6 +19301,18 @@ msgstr "温水煮青蛙"
 
 msgid "projection_decals/special/projection_decal_1033"
 msgstr "暴怒灰熊"
+
+msgid "projection_decals/special/projection_decal_1034"
+msgstr "马"
+
+msgid "projection_decals/special/projection_decal_1035"
+msgstr "幸运钱袋"
+
+msgid "projection_decals/special/projection_decal_1036"
+msgstr "金马送福"
+
+msgid "projection_decals/special/projection_decal_1037"
+msgstr "幸运马蹄铁"
 
 msgid "projection_decals/special/projection_decal_104"
 msgstr "SU-76I"
@@ -23787,6 +23835,9 @@ msgstr "水元素"
 msgid "repaint/lava_ocean"
 msgstr "熔岩海"
 
+msgid "repaint/lunar26"
+msgstr "烈焰骏马"
+
 msgid "repaint/lunar_marathon"
 msgstr "金牛贺岁"
 
@@ -26112,6 +26163,13 @@ msgstr ""
 "...此刻，外面聚集着一群怪影——全都戴着防毒面具，低声念叨着诡异的咒语，竭力想把我们从钢铁壳里赶出去。人类？出现在銤元素区域？这绝不是好兆头。我们只能牢牢封闭所有舱口\n"
 "\n"
 "...我越来越感到不安。甚至说不清缘由。也许是外面那阵阵低沉的吟唱；也许是那台巨大的装置，铁链与钩爪紧紧锁住了我们的坦克；也许只是那不知从何而来的黑色黏液，从四面八方缓缓滴落...\""
+
+msgid "special_style/J51_Ashigaru_RW10_3Dst"
+msgstr "森赛"
+
+msgid "special_style/J51_Ashigaru_RW10_3Dst_desc/long"
+msgstr ""
+"RSFT坦克搭载遥控机枪提供稳定压制火力，配备全套工兵装备，并装有可穿透夜幕的红外探照灯。旋转式天线确保战场通讯不断链，附加油箱进一步延长行驶距离。"
 
 msgid "special_style/KanonenPanter_105"
 msgstr "黑豹"
@@ -29742,6 +29800,16 @@ msgstr ""
 "它们意味着什么？是警告？是护符？还是异象留下的印记？\n"
 "\n"
 "无人知晓。"
+
+msgid "special_style/lunar26"
+msgstr "烈焰骏马"
+
+msgid "special_style/lunar26_desc"
+msgstr "为您的坦克换上火马主题的威风全地形风格。"
+
+msgid "special_style/lunar26_desc/long"
+msgstr ""
+"吉兆降临，指挥官！火马新年已至，这对各位指挥官而言自然是个好兆头。虽然您的坦克没有四条腿，但烈焰同样是其动力必不可少的一环。每隔六十年，火元素才会点燃午马的生机与激情，预示着大胆行动与澎湃力量的时刻到来。握紧缰绳，潇洒出击，您的坐骑已迫不及待了。"
 
 msgid "special_style/lunar_marathon"
 msgstr "金牛贺岁"

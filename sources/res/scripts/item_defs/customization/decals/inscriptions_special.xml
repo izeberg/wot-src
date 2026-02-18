@@ -6095,4 +6095,29 @@
 		<name>BattlePass 2025</name>
 		<type>INSCRIPTION</type>
 	</itemGroup>
+	<itemGroup>
+		<name>Lunar 26</name>
+		<userString>#vehicle_customization:inscription/special</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>inscriptions 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>poland:Pl15_60TP_Lewandowskiego_CFE_A usa:A174_T57_58_Rush_Ep1</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<decal>
+			<id>16030</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_861.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_861</userString>
+			<mirror>false</mirror>
+		</decal>
+		<decal>
+			<id>16031</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_862.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_862</userString>
+			<mirror>false</mirror>
+		</decal>
+		<type>INSCRIPTION</type>
+	</itemGroup>
 </root>

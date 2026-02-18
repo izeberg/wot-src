@@ -3432,10 +3432,34 @@
 			</commendationsSent>
 		</Properties>
 	</COMMENDATIONS_BATTLE_STATISTICS>
+	<SPIRIT_STATISTICS>
+		FIXED_DICT
+		<Properties>
+			<vehID>
+				<Type>OBJECT_ID</Type>
+			</vehID>
+			<lunarSpiritScore>
+				<Type>UINT16</Type>
+			</lunarSpiritScore>
+			<lunarSpiritDeliveries>
+				<Type>UINT8</Type>
+			</lunarSpiritDeliveries>
+			<lunarSpiritCarriersDestroyed>
+				<Type>UINT8</Type>
+			</lunarSpiritCarriersDestroyed>
+			<lunarSpiritCarriersDamaged>
+				<Type>INT32</Type>
+			</lunarSpiritCarriersDamaged>
+		</Properties>
+	</SPIRIT_STATISTICS>
 	<COMMENDATIONS_BATTLE_STATISTICS_LIST>
 		ARRAY
 		<of>COMMENDATIONS_BATTLE_STATISTICS</of>
 	</COMMENDATIONS_BATTLE_STATISTICS_LIST>
+	<SPIRIT_STATISTICS_LIST>
+		ARRAY
+		<of>SPIRIT_STATISTICS</of>
+	</SPIRIT_STATISTICS_LIST>
 	<GAME_OBJECT_STATE_INFO>
 		FIXED_DICT
 		<Properties>
