@@ -91,9 +91,9 @@ package net.wg.gui.components.crosshairPanel
       
       protected var reloadingTime:Number = 0;
       
-      protected var netType:Number = 0;
+      protected var netType:int = 0;
       
-      protected var centerType:Number = 0;
+      protected var centerType:int = 0;
       
       protected var reloadingState:String = "";
       
@@ -133,8 +133,6 @@ package net.wg.gui.components.crosshairPanel
       
       private var _isReloadInProgress:Boolean = false;
       
-      private var _isUseFrameAnimation:Boolean = true;
-      
       private var _netSeparatorVisible:Boolean = true;
       
       private var _visibleNetMask:int = 3;
@@ -153,8 +151,6 @@ package net.wg.gui.components.crosshairPanel
       
       private var _height:Number = 0;
       
-      private var _isReloadBoost:Boolean = false;
-      
       private var _isReloadBoostBorder:Boolean = false;
       
       private var _isReloadBoostBorderActive:Boolean = false;
@@ -166,7 +162,6 @@ package net.wg.gui.components.crosshairPanel
          this._timerBoostedFilter = [];
          this._reloadTimeColorTransform = new ColorTransform();
          super();
-         this.cassetteMC.isUseFrameAnimation = this._isUseFrameAnimation;
          this.timerProgressTextField.visible = false;
          this.reloadSwitchIcon.visibile = false;
          this.reloadTimeBlink.visible = false;
@@ -793,7 +788,6 @@ package net.wg.gui.components.crosshairPanel
       
       public function set reloadBoost(param1:Boolean) : void
       {
-         this._isReloadBoost = param1;
          this.timerProgressTextField.textColor = !!param1 ? uint(BOOSTED_TEXT_COLOR_RELOAD) : uint(this._timerProgressTextFieldColor);
          this.timerProgressTextField.filters = !!param1 ? this._timerBoostedFilter : this._timerProgressTextFieldFilter;
          this.timerCompleteTextField.textColor = !!param1 ? uint(BOOSTED_TEXT_COLOR) : uint(this._timerCompleteTextFieldColor);
@@ -812,7 +806,7 @@ package net.wg.gui.components.crosshairPanel
       
       public function set isUseFrameAnimation(param1:Boolean) : void
       {
-         this._isUseFrameAnimation = param1;
+         this.cassetteMC.isUseFrameAnimation = param1;
       }
       
       public function set scaleWidgetEnabled(param1:Boolean) : void

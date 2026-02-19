@@ -1,10 +1,14 @@
 package net.wg.gui.battle.battleloading
 {
+   import flash.display.MovieClip;
    import flash.text.TextField;
+   import flash.text.TextFieldAutoSize;
    import net.wg.data.VO.daapi.DAAPIVehicleInfoVO;
    import net.wg.data.VO.daapi.DAAPIVehicleUserTagsVO;
+   import net.wg.data.constants.generated.BATTLEATLAS;
    import net.wg.data.constants.generated.BATTLE_TYPES;
    import net.wg.gui.battle.battleloading.vo.VisualTipInfoVO;
+   import net.wg.gui.battle.components.BattleAtlasSprite;
    import net.wg.gui.components.controls.UILoaderAlt;
    import net.wg.gui.components.minimap.MinimapPresentation;
    import net.wg.infrastructure.base.UIComponentEx;
@@ -16,6 +20,10 @@ package net.wg.gui.battle.battleloading
    
    public class BaseLoadingForm extends UIComponentEx
    {
+      
+      protected static const MAP_SIZE:int = 360;
+      
+      protected static const TIPS_OFFSET:int = 5;
       
       private static const PROGRESS:String = "progress";
       
@@ -39,6 +47,16 @@ package net.wg.gui.battle.battleloading
       public var helpTip:TextField;
       
       public var tipText:TextField;
+      
+      public var tipBackground:BattleAtlasSprite;
+      
+      public var mapBackground:BattleAtlasSprite;
+      
+      public var mapBorder:MovieClip;
+      
+      public var map:MinimapPresentation;
+      
+      public var tipImage:UILoaderAlt;
       
       protected var progress:Number = 0;
       
@@ -64,6 +82,15 @@ package net.wg.gui.battle.battleloading
       {
          this._commons = App.utils.commons;
          super();
+      }
+      
+      override protected function configUI() : void
+      {
+         super.configUI();
+         if(this.helpTip)
+         {
+            this.helpTip.autoSize = TextFieldAutoSize.CENTER;
+         }
       }
       
       override protected function draw() : void
@@ -102,6 +129,15 @@ package net.wg.gui.battle.battleloading
          this.mapText = null;
          this.battleText = null;
          this.winText = null;
+         this.tipBackground = null;
+         this.mapBackground = null;
+         this.mapBorder = null;
+         this.map = null;
+         if(this.tipImage)
+         {
+            this.tipImage.dispose();
+            this.tipImage = null;
+         }
          if(this.loadingBar)
          {
             this.loadingBar.dispose();
@@ -232,7 +268,10 @@ package net.wg.gui.battle.battleloading
       
       public function updateTipVisibility(param1:Boolean) : void
       {
-         this.helpTip.visible = param1;
+         if(this.helpTip)
+         {
+            this.helpTip.visible = param1;
+         }
          this.tipText.visible = param1;
       }
       
@@ -271,6 +310,30 @@ package net.wg.gui.battle.battleloading
       protected function getBattleTypeName() : String
       {
          return BATTLE_TYPES.RANDOM;
+      }
+      
+      protected function showMap(param1:int, param2:int) : void
+      {
+         this.mapBackground.visible = true;
+         this.mapBackground.imageName = BATTLEATLAS.BATTLE_LOADING_FORM_MAP_BACKGROUND;
+         this.mapBorder.visible = true;
+         this.map.setMinimapDataS(param1,param2,MAP_SIZE);
+         this.map.border.visible = false;
+         this.map.grid.visible = true;
+         this.map.visible = true;
+      }
+      
+      protected function configureTip(param1:int, param2:int, param3:String = null) : void
+      {
+         var _loc4_:Boolean = StringUtils.isNotEmpty(param3);
+         this.tipBackground.visible = this.tipImage.visible = _loc4_;
+         if(_loc4_)
+         {
+            this.helpTip.y = param1;
+            this.tipBackground.imageName = BATTLEATLAS.BATTLE_LOADING_FORM_TIP_BACKGROUND;
+            this.tipImage.source = param3;
+         }
+         this.tipText.y = this.helpTip.y + this.helpTip.height + TIPS_OFFSET;
       }
       
       private function throwAbstractException() : void

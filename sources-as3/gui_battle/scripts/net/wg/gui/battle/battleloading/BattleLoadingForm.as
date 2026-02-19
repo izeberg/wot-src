@@ -1,6 +1,5 @@
 package net.wg.gui.battle.battleloading
 {
-   import flash.display.MovieClip;
    import flash.text.TextField;
    import net.wg.data.VO.daapi.DAAPIVehicleInfoVO;
    import net.wg.data.VO.daapi.DAAPIVehicleUserTagsVO;
@@ -15,21 +14,17 @@ package net.wg.gui.battle.battleloading
    import net.wg.gui.battle.battleloading.renderers.TipPlayerItemRenderer;
    import net.wg.gui.battle.battleloading.vo.VisualTipInfoVO;
    import net.wg.gui.battle.components.BattleAtlasSprite;
-   import net.wg.gui.components.controls.UILoaderAlt;
    import net.wg.gui.components.minimap.MinimapPresentation;
    import net.wg.infrastructure.events.ListDataProviderEvent;
    import net.wg.utils.IClassFactory;
    import net.wg.utils.IStageSizeDependComponent;
    import net.wg.utils.StageSizeBoundaries;
-   import org.idmedia.as3commons.util.StringUtils;
    import scaleform.clik.constants.InvalidationType;
    
    public class BattleLoadingForm extends BaseLoadingForm implements IStageSizeDependComponent
    {
       
       private static const RENDERERS_COUNT:uint = 15;
-      
-      private static const MAP_SIZE:int = 360;
       
       private static const LOADING_BAR_MIN:int = 0;
       
@@ -53,16 +48,6 @@ package net.wg.gui.battle.battleloading
       public var team1Text:TextField;
       
       public var team2Text:TextField;
-      
-      public var tipImage:UILoaderAlt;
-      
-      public var map:MinimapPresentation;
-      
-      public var mapBorder:MovieClip;
-      
-      public var tipBackground:BattleAtlasSprite;
-      
-      public var mapBackground:BattleAtlasSprite;
       
       public var formBackgroundTable:BattleAtlasSprite;
       
@@ -100,6 +85,8 @@ package net.wg.gui.battle.battleloading
       
       private var _renderersContainer:BaseRendererContainer;
       
+      private var _data:VisualTipInfoVO;
+      
       public function BattleLoadingForm()
       {
          super();
@@ -116,12 +103,13 @@ package net.wg.gui.battle.battleloading
       
       override public function getMapComponent() : MinimapPresentation
       {
-         return this.map;
+         return map;
       }
       
       override public function setFormDisplayData(param1:VisualTipInfoVO) : void
       {
          var _loc2_:IBattleLoadingRenderer = null;
+         this._data = param1;
          if(param1.showTableBackground)
          {
             this.formBackgroundTable.imageName = BATTLEATLAS.BATTLE_LOADING_FORM_BG_TABLE;
@@ -136,9 +124,8 @@ package net.wg.gui.battle.battleloading
          }
          if(param1.showMinimap)
          {
-            this.showMap(param1.arenaTypeID,param1.minimapTeam);
+            showMap(param1.arenaTypeID,param1.minimapTeam);
          }
-         this.configureTip(param1.tipTitleTop,param1.tipBodyTop,param1.tipIcon);
          for each(_loc2_ in this._allyRenderers)
          {
             _loc2_.dispose();
@@ -174,6 +161,7 @@ package net.wg.gui.battle.battleloading
          {
             App.stageSizeMgr.register(this);
          }
+         invalidateLayout();
       }
       
       override public function setPlayerStatus(param1:Boolean, param2:Number, param3:uint) : void
@@ -246,10 +234,7 @@ package net.wg.gui.battle.battleloading
          this.rightSquad = null;
          this.team1Text = null;
          this.team2Text = null;
-         this.tipBackground = null;
-         this.mapBackground = null;
          this.formBackgroundTable = null;
-         this.mapBorder = null;
          if(this._teamDP)
          {
             this._teamDP.removeEventListener(ListDataProviderEvent.VALIDATE_ITEMS,this.onAllyDataProviderUpdateItemHandler);
@@ -262,12 +247,7 @@ package net.wg.gui.battle.battleloading
             this._enemyDP.cleanUp();
             this._enemyDP = null;
          }
-         if(this.tipImage)
-         {
-            this.tipImage.dispose();
-            this.tipImage = null;
-         }
-         this.map = null;
+         this._data = null;
          if(this._renderersContainer)
          {
             this._renderersContainer.dispose();
@@ -302,6 +282,10 @@ package net.wg.gui.battle.battleloading
             this.team1Text.text = this._leftTeamName;
             this.team2Text.text = this._rightTeamName;
          }
+         if(this._data && isInvalid(InvalidationType.LAYOUT))
+         {
+            configureTip(this._data.tipTitleTop,this._data.tipBodyTop,this._data.tipIcon);
+         }
       }
       
       override protected function initialize() : void
@@ -325,7 +309,7 @@ package net.wg.gui.battle.battleloading
             this._rightTankInitX = this.rightTank.x;
          }
          this.hideMap();
-         this.map.size = MAP_SIZE;
+         map.size = MAP_SIZE;
          this._teamDP = new VehiclesDataProvider();
          this._teamDP.addEventListener(ListDataProviderEvent.VALIDATE_ITEMS,this.onAllyDataProviderUpdateItemHandler);
          this._enemyDP = new VehiclesDataProvider();
@@ -403,33 +387,9 @@ package net.wg.gui.battle.battleloading
       
       private function hideMap() : void
       {
-         this.map.visible = false;
-         this.mapBackground.visible = false;
-         this.mapBorder.visible = false;
-      }
-      
-      private function showMap(param1:int, param2:int) : void
-      {
-         this.mapBackground.visible = true;
-         this.mapBackground.imageName = BATTLEATLAS.BATTLE_LOADING_FORM_MAP_BACKGROUND;
-         this.mapBorder.visible = true;
-         this.map.setMinimapDataS(param1,param2,MAP_SIZE);
-         this.map.border.visible = false;
-         this.map.grid.visible = true;
-         this.map.visible = true;
-      }
-      
-      private function configureTip(param1:int, param2:int, param3:String = null) : void
-      {
-         var _loc4_:Boolean = StringUtils.isNotEmpty(param3);
-         this.tipBackground.visible = this.tipImage.visible = _loc4_;
-         if(_loc4_)
-         {
-            helpTip.y = param1;
-            tipText.y = param2;
-            this.tipBackground.imageName = BATTLEATLAS.BATTLE_LOADING_FORM_TIP_BACKGROUND;
-            this.tipImage.source = param3;
-         }
+         map.visible = false;
+         mapBackground.visible = false;
+         mapBorder.visible = false;
       }
       
       private function onAllyDataProviderUpdateItemHandler(param1:ListDataProviderEvent) : void

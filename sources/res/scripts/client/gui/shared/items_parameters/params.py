@@ -406,12 +406,11 @@ class VehicleParams(ParameterBase):
         skillName = 'radioman_finder'
         argName = 'vehicleCircularVisionRadius'
         additionalFactor = self.__getFactorValueFromSkill(skillName, argName)
-        baseCircularVisionRadius *= additionalFactor
-        result = round(baseCircularVisionRadius)
+        result = baseCircularVisionRadius * additionalFactor
         if self.__hasUnsupportedSwitchMode():
             visRadiusSiegeVal = items_utils.getCircularVisionRadius(self._itemDescr.siegeVehicleDescr, self.__factors)
             return (
-             result, round(visRadiusSiegeVal * additionalFactor))
+             result, visRadiusSiegeVal * additionalFactor)
         return (
          result,)
 
@@ -424,7 +423,7 @@ class VehicleParams(ParameterBase):
     @property
     def radioDistance(self):
         baseDistance = items_utils.getRadioDistance(self._itemDescr, self.__factors)
-        return int(baseDistance)
+        return baseDistance
 
     @property
     def turretArmor(self):
@@ -1071,12 +1070,11 @@ class VehicleParams(ParameterBase):
     def __calculateCircularVisionRadius(self, skillName, argName):
         baseCircularVisionRadius = items_utils.getCircularVisionRadius(self._itemDescr, self.__factors)
         additionalFactor = self.__getFactorValueFromSkill(skillName, argName)
-        baseCircularVisionRadius *= additionalFactor
-        result = round(baseCircularVisionRadius)
+        result = baseCircularVisionRadius * additionalFactor
         if self.__hasUnsupportedSwitchMode():
             visRadiusSiegeVal = items_utils.getCircularVisionRadius(self._itemDescr.siegeVehicleDescr, self.__factors)
             return (
-             result, round(visRadiusSiegeVal * additionalFactor))
+             result, visRadiusSiegeVal * additionalFactor)
         return (
          result,)
 

@@ -88,15 +88,15 @@ class BattleRoyaleEventBanner(BaseEventBanner):
         if self._isVisible:
             return
         super(BattleRoyaleEventBanner, self).onAppear()
-        self.__battleRoyaleController.onEntryPointUpdated += self.__onUpdate
+        self.__battleRoyaleController.onEntryPointUpdated += self._onUpdate
 
     def onDisappear(self):
         if not self._isVisible:
             return
         super(BattleRoyaleEventBanner, self).onDisappear()
-        self.__battleRoyaleController.onEntryPointUpdated -= self.__onUpdate
+        self.__battleRoyaleController.onEntryPointUpdated -= self._onUpdate
 
-    def __onUpdate(self, *_):
+    def _onUpdate(self, *_):
         if isBattleRoyaleEntryPointAvailable():
             EventBannersContainer().onBannerUpdate(self)
         else:

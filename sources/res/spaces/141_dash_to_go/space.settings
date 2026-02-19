@@ -134,6 +134,7 @@
 	</havok>
 	<enableClusteredShading>false</enableClusteredShading>
 	<isSHGridQualityOverridden>true</isSHGridQualityOverridden>
+	<borderMask>borderMask.dds</borderMask>
 	<overrideSHGridQuality>0</overrideSHGridQuality>
 	<lightsCutOffDistance>1000.000000</lightsCutOffDistance>
 	<flora/>

@@ -67,6 +67,8 @@ BACKWARD_QUALITY_PARAMS = frozenset([
  KPI.Name.SUSPENSION_DAMAGE_REDUCTION])
 NEGATIVE_PARAMS = [
  'switchOnTime', 'switchOffTime']
+ROUND_PARAMS = [
+ 'circularVisionRadius', 'radioDistance']
 PARAMS_WITH_IGNORED_EMPTY_VALUES = {
  'clipFireRate', SHOT_DISPERSION_ANGLE, DISPERSION_RADIUS}
 CREW_LEVEL_INCREASE_AFFECTING_PARAMS = frozenset([
@@ -136,6 +138,15 @@ def getParamExtendedData(paramName, value, otherValue, penalties=None, customQua
     mustHighlight = False
     if highlightedBonuses:
         mustHighlight = any(bnsId in highlightedBonuses for bnsId, _ in bonuses)
+    if paramName in ROUND_PARAMS:
+        if isinstance(value, (tuple, list)):
+            roundedValues = []
+            for val in value:
+                roundedValues.append(float(round(val)))
+
+            value = roundedValues
+        else:
+            value = float(round(value))
     return _ParameterInfo(paramName, value, state, possibleBonuses, inactive, bonuses, penalties, isSituational, mustHighlight)
 
 

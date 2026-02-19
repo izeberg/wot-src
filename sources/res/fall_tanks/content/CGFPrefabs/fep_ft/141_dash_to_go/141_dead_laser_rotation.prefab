@@ -880,7 +880,7 @@
 			<version>1</version>
 			<component>
 				<UUID>f275a5ca-a89e-434e-9088-2b3883ef35a7</UUID>
-				<flags>35</flags>
+				<flags>34</flags>
 				<config>
 					<property>
 						<name>Colliders</name>
@@ -1415,14 +1415,6 @@
 						<value>-1</value>
 					</property>
 				</config>
-			</component>
-		</ComponentPool>
-		<ComponentPool>
-			<type>ShotsReceiver</type>
-			<version>1</version>
-			<component>
-				<UUID>f275a5ca-a89e-434e-9088-2b3883ef35a7</UUID>
-				<flags>35</flags>
 			</component>
 		</ComponentPool>
 	</components>

@@ -15,33 +15,33 @@ package net.wg.gui.login.impl.components
    
    public class RssNewsFeed extends RssNewsFeedMeta implements IRssNewsFeedMeta
    {
+      
+      private static const MARGIN_BETWEEN_ITEMS:Number = 13;
+      
+      private static const RENDERER_CLASS_REFERENCE:String = "RssNewsFeedRendererUI";
        
       
       public var container:Sprite = null;
       
       public var bg:Sprite = null;
       
-      private var rssItems:Vector.<RssNewsFeedRenderer> = null;
+      private var _rssItems:Vector.<RssNewsFeedRenderer> = null;
       
-      private var rssItemsVo:Vector.<RssItemVo> = null;
-      
-      private const MARGIN_BETWEEN_ITEMS:Number = 13;
-      
-      private const RENDERER_CLASS_REFERENCE:String = "RssNewsFeedRendererUI";
+      private var _rssItemsVo:Vector.<RssItemVo> = null;
       
       private var _padding:Padding;
       
-      private var moveTween:Tween = null;
+      private var _moveTween:Tween = null;
       
-      private var tweenManager:ExcludeTweenManager;
+      private var _tweenManager:ExcludeTweenManager;
       
       public function RssNewsFeed()
       {
          this._padding = new Padding(10,20,40,7);
-         this.tweenManager = new ExcludeTweenManager();
+         this._tweenManager = new ExcludeTweenManager();
          super();
-         this.rssItems = new Vector.<RssNewsFeedRenderer>();
-         this.rssItemsVo = new Vector.<RssItemVo>();
+         this._rssItems = new Vector.<RssNewsFeedRenderer>();
+         this._rssItemsVo = new Vector.<RssItemVo>();
       }
       
       override protected function configUI() : void
@@ -57,50 +57,51 @@ package net.wg.gui.login.impl.components
          var _loc3_:IRssNewsFeedRenderer = null;
          var _loc4_:Number = NaN;
          var _loc5_:Boolean = false;
-         var _loc6_:String = null;
+         var _loc6_:int = 0;
+         var _loc7_:String = null;
          super.draw();
          if(isInvalid(InvalidationType.DATA))
          {
-            _loc1_ = 0;
             _loc2_ = 0;
             _loc3_ = null;
-            _loc4_ = this.rssItemsVo.length;
+            _loc4_ = this._rssItemsVo.length;
             _loc5_ = false;
             _loc1_ = 0;
             while(_loc1_ < _loc4_)
             {
                _loc5_ = false;
+               _loc6_ = this._rssItems.length;
                _loc2_ = 0;
-               while(_loc2_ < this.rssItems.length)
+               while(_loc2_ < _loc6_)
                {
-                  _loc3_ = this.rssItems[_loc2_];
-                  if(this.rssItemsVo[_loc1_].id == _loc3_.itemId)
+                  _loc3_ = this._rssItems[_loc2_];
+                  if(this._rssItemsVo[_loc1_].id == _loc3_.itemId)
                   {
                      _loc5_ = true;
-                     _loc3_.setData(this.rssItemsVo[_loc1_]);
+                     _loc3_.setData(this._rssItemsVo[_loc1_]);
                      break;
                   }
                   _loc2_++;
                }
                if(!_loc5_)
                {
-                  _loc3_ = this.addRenderer(this.rssItemsVo[_loc1_]);
-                  this.rssItems.push(_loc3_);
+                  _loc3_ = this.addRenderer(this._rssItemsVo[_loc1_]);
+                  this._rssItems.push(_loc3_);
                }
                _loc1_++;
             }
-            if(this.rssItems.length > 0)
+            if(this._rssItems.length > 0)
             {
                _loc1_ = 0;
-               while(_loc1_ < this.rssItems.length)
+               while(_loc1_ < this._rssItems.length)
                {
-                  _loc3_ = this.rssItems[_loc1_];
-                  _loc6_ = _loc3_.itemId;
+                  _loc3_ = this._rssItems[_loc1_];
+                  _loc7_ = _loc3_.itemId;
                   _loc5_ = false;
                   _loc2_ = 0;
-                  while(_loc2_ < this.rssItemsVo.length)
+                  while(_loc2_ < this._rssItemsVo.length)
                   {
-                     if(this.rssItemsVo[_loc2_].id == _loc6_)
+                     if(this._rssItemsVo[_loc2_].id == _loc7_)
                      {
                         _loc5_ = true;
                         break;
@@ -109,7 +110,7 @@ package net.wg.gui.login.impl.components
                   }
                   if(!_loc5_)
                   {
-                     this.rssItems.splice(_loc1_,1);
+                     this._rssItems.splice(_loc1_,1);
                      this.preRemoveRenderer(_loc3_);
                   }
                   else
@@ -125,9 +126,9 @@ package net.wg.gui.login.impl.components
       
       private function updateRenderersPositions() : void
       {
-         var _loc1_:Number = this.rssItems.length;
-         var _loc2_:Number = 0;
-         var _loc3_:Number = 0;
+         var _loc2_:int = 0;
+         var _loc3_:int = 0;
+         var _loc1_:int = this._rssItems.length;
          var _loc4_:IRssNewsFeedRenderer = null;
          var _loc5_:DisplayObject = null;
          var _loc6_:Number = this._padding.bottom;
@@ -135,7 +136,7 @@ package net.wg.gui.login.impl.components
          _loc3_ = 0;
          while(_loc2_ < _loc1_)
          {
-            _loc4_ = this.rssItems[_loc2_];
+            _loc4_ = this._rssItems[_loc2_];
             if(_loc4_.isUsed)
             {
                _loc5_ = _loc4_ as DisplayObject;
@@ -144,7 +145,7 @@ package net.wg.gui.login.impl.components
                _loc6_ += _loc4_.itemHeight;
                _loc4_.moveToY(-_loc6_);
                _loc4_.x = 0;
-               _loc6_ += this.MARGIN_BETWEEN_ITEMS;
+               _loc6_ += MARGIN_BETWEEN_ITEMS;
                _loc3_++;
             }
             _loc2_++;
@@ -157,9 +158,9 @@ package net.wg.gui.login.impl.components
          var _loc1_:Boolean = false;
          var _loc2_:Number = NaN;
          var _loc3_:Number = NaN;
-         var _loc4_:Number = NaN;
-         var _loc5_:Number = NaN;
-         var _loc6_:Number = NaN;
+         var _loc4_:int = 0;
+         var _loc5_:int = 0;
+         var _loc6_:int = 0;
          var _loc7_:IRssNewsFeedRenderer = null;
          if(this.container && this.container.numChildren)
          {
@@ -167,8 +168,6 @@ package net.wg.gui.login.impl.components
             _loc2_ = 0;
             _loc3_ = 0;
             _loc4_ = this.container.numChildren;
-            _loc5_ = 0;
-            _loc6_ = 0;
             _loc7_ = null;
             _loc5_ = 0;
             _loc6_ = 0;
@@ -179,24 +178,24 @@ package net.wg.gui.login.impl.components
                if(_loc7_.isUsed)
                {
                   _loc1_ = true;
-                  _loc2_ += _loc7_.itemHeight + this.MARGIN_BETWEEN_ITEMS;
+                  _loc2_ += _loc7_.itemHeight + MARGIN_BETWEEN_ITEMS;
                }
                _loc3_ = Math.max(_loc3_,_loc7_.itemWidth);
                _loc5_++;
             }
             if(_loc1_)
             {
-               _loc2_ = Math.round(_loc2_ + this._padding.vertical - this.MARGIN_BETWEEN_ITEMS);
+               _loc2_ = Math.round(_loc2_ + this._padding.vertical - MARGIN_BETWEEN_ITEMS);
             }
             else
             {
                _loc2_ = 0;
             }
-            this.moveTween = this.tweenManager.registerAndLaunch(RssNewsFeedRenderer.MOOVING_ANIMATION_SPEED,this.bg,{"height":_loc2_},{
+            this._moveTween = this._tweenManager.registerAndLaunch(RssNewsFeedRenderer.MOOVING_ANIMATION_SPEED,this.bg,{"height":_loc2_},{
                "ease":Strong.easeInOut,
                "onComplete":this.onMoveTweenComplete
             });
-            this.moveTween.fastTransform = false;
+            this._moveTween.fastTransform = false;
             this.bg.width = this.container.x + _loc3_ + this._padding.right;
          }
          if(this.bg.height == 0)
@@ -208,12 +207,12 @@ package net.wg.gui.login.impl.components
       
       private function onMoveTweenComplete(param1:Tween) : void
       {
-         this.tweenManager.unregister(param1);
+         this._tweenManager.unregister(param1);
       }
       
       private function addRenderer(param1:RssItemVo) : IRssNewsFeedRenderer
       {
-         var _loc2_:Class = App.utils.classFactory.getClass(this.RENDERER_CLASS_REFERENCE);
+         var _loc2_:Class = App.utils.classFactory.getClass(RENDERER_CLASS_REFERENCE);
          var _loc3_:IRssNewsFeedRenderer = new _loc2_() as IRssNewsFeedRenderer;
          App.utils.asserter.assertNotNull(_loc3_,"renderer" + Errors.CANT_NULL);
          var _loc4_:DisplayObject = _loc3_ as DisplayObject;
@@ -272,28 +271,32 @@ package net.wg.gui.login.impl.components
       
       override protected function onDispose() : void
       {
-         if(this.tweenManager)
+         if(this._tweenManager)
          {
-            this.tweenManager.dispose();
-            this.tweenManager = null;
+            this._tweenManager.dispose();
+            this._tweenManager = null;
          }
-         if(this.moveTween)
+         if(this._moveTween)
          {
-            this.moveTween = null;
+            this._moveTween = null;
          }
-         this.rssItemsVo = null;
+         this._rssItemsVo = null;
+         this.container = null;
+         this.bg = null;
          var _loc1_:RssNewsFeedRenderer = null;
-         while(this.rssItems.length > 0)
+         while(this._rssItems.length > 0)
          {
-            _loc1_ = this.rssItems.pop();
+            _loc1_ = this._rssItems.pop();
             this.removeRenderer(_loc1_);
          }
+         this._rssItems = null;
+         this._padding = null;
          super.onDispose();
       }
       
       override protected function updateFeed(param1:Vector.<RssItemVo>) : void
       {
-         this.rssItemsVo = param1;
+         this._rssItemsVo = param1;
          invalidateData();
       }
    }

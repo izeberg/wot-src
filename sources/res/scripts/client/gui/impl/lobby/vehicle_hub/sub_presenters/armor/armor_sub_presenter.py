@@ -252,6 +252,7 @@ class ArmorSubPresenter(SubPresenterBase):
         if not self.isClosing:
             self._fillArmorData()
             self._modulesSetup.updateSelectedModules(self.viewModel)
+            self._modulesSetup.tryRestoreOutfit()
             self._currentMode.exit()
             self.vehicleEntity.appearance.loadState.subscribe(self._onVehicleLoadFinished, self._onVehicleLoadStarted)
 
@@ -472,8 +473,10 @@ class _ModulesMover(object):
 
 
 class _ModulesSetup(object):
-    __slots__ = ('_vehicleEntity', '_initialVehicleCD', '_initialTurretCD', '_initialGunCD')
+    __slots__ = ('_vehicleEntity', '_initialVehicleCD', '_initialTurretCD', '_initialGunCD',
+                 '_initialOutfit')
     _itemsCache = dependency.descriptor(IItemsCache)
+    _hangarSpace = dependency.descriptor(IHangarSpace)
 
     def __init__(self, vehicleEntity, viewModel):
         super(_ModulesSetup, self).__init__()
@@ -482,18 +485,35 @@ class _ModulesSetup(object):
         self._initialVehicleCD = typeDescriptor.type.compactDescr
         self._initialTurretCD = typeDescriptor.turret.compactDescr
         self._initialGunCD = typeDescriptor.gun.compactDescr
+        self._initialOutfit = vehicleEntity.appearance.outfit if vehicleEntity.appearance else None
         viewModel.onTurretItemClick += self._onTurretItemClick
         viewModel.onGunItemClick += self._onGunItemClick
         self._initModulesData(viewModel)
+        return
 
     def finalize(self, viewModel):
         viewModel.onTurretItemClick -= self._onTurretItemClick
         viewModel.onGunItemClick -= self._onGunItemClick
         if self._initialVehicleCD is not None and g_currentPreviewVehicle.intCD == self._initialVehicleCD:
-            g_currentPreviewVehicle.installComponent(self._initialTurretCD)
-            g_currentPreviewVehicle.installComponent(self._initialGunCD)
+            turretChanged = self._vehicleEntity.typeDescriptor.turret.compactDescr != self._initialTurretCD
+            gunChanged = self._vehicleEntity.typeDescriptor.gun.compactDescr != self._initialGunCD
+            if turretChanged:
+                g_currentPreviewVehicle.installComponent(self._initialTurretCD)
+                g_currentPreviewVehicle.installComponent(self._initialGunCD)
+            elif gunChanged:
+                g_currentPreviewVehicle.installComponent(self._initialGunCD)
+            if (turretChanged or gunChanged) and self._initialOutfit is not None:
+                self._hangarSpace.updatePreviewVehicle(g_currentPreviewVehicle.item, self._initialOutfit)
         self._initialVehicleCD = None
+        self._initialOutfit = None
         return
+
+    def tryRestoreOutfit(self):
+        if self._initialOutfit is None:
+            return
+        else:
+            self._vehicleEntity.updateVehicleCustomization(self._initialOutfit)
+            return
 
     def updateSelectedModules(self, viewModel):
         typeDescriptor = self._vehicleEntity.typeDescriptor

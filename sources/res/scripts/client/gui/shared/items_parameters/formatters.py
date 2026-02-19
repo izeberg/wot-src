@@ -536,7 +536,7 @@ def _deltaWrapper(fn):
 
     def wrapped(paramValue):
         formattedValue = fn(paramValue)
-        if formattedValue == '0':
+        if formattedValue == '0' or formattedValue == '-0':
             return _EQUAL_TO_ZERO_LITERAL
         if isinstance(paramValue, (int, float)) and paramValue > 0:
             return '+%s' % formattedValue

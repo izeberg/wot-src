@@ -1,5 +1,6 @@
 from __future__ import absolute_import
 import typing
+from gui.shared.utils.functions import deepMergeDicts
 from fun_random.gui.feature.configs.modes.mode import funModeCompositeConfigurationSchema
 from fun_random.gui.feature.configs.providers.base_configuration import FunBaseConfigurationProvider
 from fun_random.gui.shared.fun_system_factory import collectModeAssetsPackConfigPath
@@ -21,4 +22,6 @@ class FunModeConfigurationProvider(FunBaseConfigurationProvider):
     def _getRuntimeConfiguration(self, settings, *args):
         assetsPackConfigOverridePath = collectModeAssetsPackConfigPath(settings.assetsPointer)
         assetsPackConfig = self.getConfigurationByPath(self._UNDEFINED_ASSETS_PACK_PATH, assetsPackConfigOverridePath)
-        return {'mode': {'assetsPack': assetsPackConfig}}
+        configuration = {'mode': {'assetsPack': {'assetsPointer': settings.assetsPointer}}}
+        deepMergeDicts(configuration, {'mode': {'assetsPack': assetsPackConfig}})
+        return configuration

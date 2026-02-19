@@ -1,17 +1,18 @@
 import typing
 from WeakMethod import WeakMethodProxy
+from battle_royale.gui.shared.event_dispatcher import showInfoPage
 from battle_royale.skeletons.game_controller import IBRProgressionOnTokensController
 from frameworks.state_machine import StateFlags
 from frameworks.state_machine.transitions import TransitionType
+from gui.Scaleform.framework.entities.View import ViewKey
 from gui.Scaleform.genConsts.BATTLEROYALE_ALIASES import BATTLEROYALE_ALIASES
 from gui.battle_results.service import PostBattleResultsStateMixin
-from helpers import dependency
-from battle_royale.gui.shared.event_dispatcher import showInfoPage
-from gui.Scaleform.framework.entities.View import ViewKey
 from gui.impl import backport
 from gui.impl.gen import R
 from gui.lobby_state_machine.states import SubScopeSubLayerState, LobbyStateFlags, SFViewLobbyState, LobbyState, LobbyStateDescription, ViewLobbyState
 from gui.lobby_state_machine.transitions import HijackTransition
+from gui.shared.utils.functions import getViewName
+from helpers import dependency
 from skeletons.gui.game_control import IBattleRoyaleController
 if typing.TYPE_CHECKING:
     from typing import Optional
@@ -110,9 +111,31 @@ class BattleRoyaleBattleResultsState(ViewLobbyState, PostBattleResultsStateMixin
 
     def __init__(self, flags=StateFlags.UNDEFINED):
         super(BattleRoyaleBattleResultsState, self).__init__(flags=flags | LobbyStateFlags.POST_BATTLE_RESULTS)
+        self.__cachedParams = {}
+
+    def getViewKey(self, params=None):
+        arenaUniqueID = self.__cachedParams.get('arenaUniqueID', '')
+        alias = super(BattleRoyaleBattleResultsState, self).getViewKey().alias
+        return ViewKey(alias, getViewName(alias, arenaUniqueID))
 
     def getNavigationDescription(self):
         return LobbyStateDescription(title=backport.text(R.strings.pages.titles.battleRoyale.battle_results()))
+
+    def registerTransitions(self):
+        machine = self.getMachine()
+        machine.addNavigationTransitionFromParent(self)
+        self.addNavigationTransition(self, transitionType=TransitionType.EXTERNAL)
+
+    def serializeParams(self):
+        return self.__cachedParams
+
+    def _onEntered(self, event):
+        self.__cachedParams = dict(event.params)
+        super(BattleRoyaleBattleResultsState, self)._onEntered(event)
+
+    def _onExited(self):
+        super(BattleRoyaleBattleResultsState, self)._onExited()
+        self.__cachedParams = {}
 
 
 @BattleRoyaleModeState.parentOf

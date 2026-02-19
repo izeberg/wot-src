@@ -91,9 +91,10 @@ class PostBattleResultsEntryState(LobbyState, SubhangarStateGroupConfigProvider)
         self.addNavigationTransition(lsm.getStateByCls(OverviewState), record=True)
         myDescendants = set(self.getRecursiveChildrenStates())
         for state in self.getParent().getRecursiveChildrenStates():
-            if state in myDescendants or state == self or isinstance(state, UntrackedState):
+            stateFlags = state.getFlags()
+            if state in myDescendants or state == self or stateFlags & LobbyStateFlags.POST_BATTLE_RESULTS or isinstance(state, UntrackedState):
                 continue
-            if not state.getChildrenStates() and not state.getFlags() & LobbyStateFlags.HANGAR:
+            if not state.getChildrenStates() and not stateFlags & LobbyStateFlags.HANGAR:
                 state.addNavigationTransition(self, record=True)
 
     def registerStates(self):

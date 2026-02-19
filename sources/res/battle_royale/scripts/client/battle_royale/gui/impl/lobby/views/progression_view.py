@@ -118,15 +118,8 @@ class ProgressionView(SubModelPresenter):
         if not self.brProgression.isEnabled:
             return
         self.__restartNotifier(self._UPDATE_TIMER_DELAY)
-        data = self.brProgression.getProgressionData()
-        battleQuests = data['battleQuests']
-        isNeedToUpdate = needToUpdateQuestsInModel(battleQuests.values(), self.viewModel.battleQuests.getTasksBattle())
-        if not isNeedToUpdate:
-            return
         with self.viewModel.transaction() as (model):
-            self.__updateBattleQuestsCards(model.battleQuests, data)
-            self.__updateMissionVisitedArray(model.battleQuests.getMissionsCompletedVisited(), battleQuests.keys())
-            self.__markAsVisited(data)
+            self.__updateBattleQuestsIfNeeded(model.battleQuests)
 
     def __updateProgressionPoints(self):
         if not self.brProgression.isEnabled:
@@ -136,6 +129,7 @@ class ProgressionView(SubModelPresenter):
             state = ProgressionState.COMPLETED if self.brProgression.isFinished else ProgressionState.INPROGRESS
             model.setState(state)
             model.setCurProgressPoints(curPoints)
+            self.__updateBattleQuestsIfNeeded(model.battleQuests)
 
     def __updateModel(self):
         if not self.brProgression.isEnabled:
@@ -211,3 +205,13 @@ class ProgressionView(SubModelPresenter):
     def __markAsVisited(self, data):
         for seenQuestID in data['battleQuests'].keys():
             self.eventsCache.questsProgress.markQuestProgressAsViewed(seenQuestID)
+
+    def __updateBattleQuestsIfNeeded(self, battleQuestsModel):
+        data = self.brProgression.getProgressionData()
+        battleQuests = data['battleQuests']
+        isNeedToUpdate = needToUpdateQuestsInModel(battleQuests.values(), self.viewModel.battleQuests.getTasksBattle())
+        if not isNeedToUpdate:
+            return
+        self.__updateBattleQuestsCards(battleQuestsModel, data)
+        self.__updateMissionVisitedArray(battleQuestsModel.getMissionsCompletedVisited(), battleQuests.keys())
+        self.__markAsVisited(data)

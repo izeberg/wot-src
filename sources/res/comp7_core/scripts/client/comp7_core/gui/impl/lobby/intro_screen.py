@@ -77,7 +77,10 @@ class IntroScreen(ViewImpl, IGlobalListener):
             comp7_core_model_helpers.setScheduleInfo(vm.scheduleInfo, self._modeController, self._calendarDayTooltipID, self._seasonStateClazz, self._yearStateClazz, self._seasonNameClazz)
             levelsArr = vm.getVehicleLevels()
             levelsArr.clear()
-            for level in self._modeController.getModeSettings().levels:
+            modeSettings = self._modeController.getModeSettings()
+            if not modeSettings:
+                return
+            for level in modeSettings.levels:
                 levelsArr.addNumber(level)
 
             levelsArr.invalidate()

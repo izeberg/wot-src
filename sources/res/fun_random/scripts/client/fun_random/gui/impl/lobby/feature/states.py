@@ -86,6 +86,9 @@ class FunPostBattleResultsState(ViewLobbyState, PostBattleResultsStateMixin):
         machine.addNavigationTransitionFromParent(self)
         self.addNavigationTransition(self, transitionType=TransitionType.EXTERNAL)
 
+    def serializeParams(self):
+        return self.__cachedParams
+
     def _getViewLoadCtx(self, event):
         ctx = dict(event.params)
         result = collectBattleResultsSubPresenters()
