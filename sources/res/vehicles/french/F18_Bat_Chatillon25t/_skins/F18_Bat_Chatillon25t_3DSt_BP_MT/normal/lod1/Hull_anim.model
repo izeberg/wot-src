@@ -4,8 +4,8 @@
 	<parent>vehicles/french/F18_Bat_Chatillon25t/_skins/F18_Bat_Chatillon25t_3DSt_BP_MT/normal/lod2/Hull_anim</parent>
 	<extent>64.000000</extent>
 	<visibilityBox>
-		<min>0.162658 0.938819 2.355139</min>
-		<max>0.526082 1.295668 2.567268</max>
+		<min>0.162658 0.043944 2.355139</min>
+		<max>0.526082 0.400792 2.567268</max>
 	</visibilityBox>
 	<tank>true</tank>
 </root>

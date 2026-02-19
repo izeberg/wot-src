@@ -3,7 +3,7 @@ from adisp import adisp_process
 from gui.prb_control.entities.base.ctx import PrbAction
 from gui.shared.utils import SelectorBattleTypesUtils as selectorUtils
 from cosmic_event.gui.prb_control.prb_config import PREBATTLE_ACTION_NAME, SELECTOR_BATTLE_TYPES
-from cosmic_event.skeletons.battle_controller import ICosmicEventBattleController
+from skeletons.gui.game_control import ICosmicEventBattleController
 from cosmic_event_common.cosmic_constants import QUEUE_TYPE
 from gui.impl import backport
 from gui.impl.gen import R
@@ -58,6 +58,11 @@ class _CosmicEventBattlesItem(_SelectorItem):
         else:
             return ''
         return makeTooltip(header, body)
+
+    def getFightButtonLabel(self, state, playerInfo):
+        if self.__cosmicEventBattleCtrl.isCosmicMode():
+            return backport.text(R.strings.cosmicEvent.headerButton.main.title())
+        return super(_CosmicEventBattlesItem, self).getFightButtonLabel(state, playerInfo)
 
     @adisp_process
     def _doSelect(self, dispatcher):

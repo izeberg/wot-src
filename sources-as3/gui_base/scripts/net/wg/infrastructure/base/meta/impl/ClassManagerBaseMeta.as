@@ -445,6 +445,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.components.crosshairPanel.VO.CrosshairSettingsVO;
    import net.wg.gui.components.crosshairPanel.VO.GunMarkerIndicatorVO;
    import net.wg.gui.components.crosshairPanel.VO.ShotFlyTimeVO;
+   import net.wg.gui.components.crosshairPanel.components.AbilityModifierIndicator;
    import net.wg.gui.components.crosshairPanel.components.ClipQuantityIndicator;
    import net.wg.gui.components.crosshairPanel.components.CrosshairClipAutogunBar;
    import net.wg.gui.components.crosshairPanel.components.CrosshairClipQuantityBar;
@@ -1808,6 +1809,8 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_ICROSSHAIR:Class = ICrosshair;
       
       public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_ICROSSHAIRPANELCONTAINER:Class = ICrosshairPanelContainer;
+      
+      public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_ABILITYMODIFIERINDICATOR:Class = AbilityModifierIndicator;
       
       public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_CLIPQUANTITYINDICATOR:Class = ClipQuantityIndicator;
       

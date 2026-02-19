@@ -3693,14 +3693,14 @@ _(#lootboxes:notification/lootBoxesAutoOpen/boxes)&lt;br/&gt;%(rewards)s</messag
 			<type>grey</type>
 			<icon>ParagonsIcon</icon>
 			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#paragons:project/name)&lt;/font&gt;&lt;br/&gt;
-&lt;font color=&apos;#8C8C7E&apos;&gt;_(#paragons:battle/reward/coins)&lt;/font&gt;&lt;img src=&apos;img://gui/maps/icons/library/ParagonsCoinsIcons-1.png&apos; width=&apos;26&apos; height=&apos;20&apos; align=&apos;baseline&apos; vspace=&apos;-4&apos;/&gt;
+&lt;font color=&apos;#8C8C7E&apos;&gt;_(#paragons:notifications/grant/coins)&lt;/font&gt;&lt;img src=&apos;img://gui/maps/icons/library/ParagonsCoinsIcons-1.png&apos; width=&apos;26&apos; height=&apos;20&apos; align=&apos;baseline&apos; vspace=&apos;-4&apos;/&gt;
 </message>
 		</paragonsBattleReward>
 		<paragonsLevelReward>
 			<type>grey</type>
 			<icon>ParagonsIcon</icon>
 			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#paragons:project/name)&lt;/font&gt;&lt;br/&gt;
-&lt;font color=&apos;#8C8C7E&apos;&gt;_(#paragons:battle/reward/coins)&lt;/font&gt;&lt;img src=&apos;img://gui/maps/icons/library/ParagonsCoinsIcons-1.png&apos; width=&apos;26&apos; height=&apos;20&apos; align=&apos;baseline&apos; vspace=&apos;-4&apos;/&gt;&lt;br/&gt;
+&lt;font color=&apos;#8C8C7E&apos;&gt;_(#paragons:notifications/grant/coins)&lt;/font&gt;&lt;img src=&apos;img://gui/maps/icons/library/ParagonsCoinsIcons-1.png&apos; width=&apos;26&apos; height=&apos;20&apos; align=&apos;baseline&apos; vspace=&apos;-4&apos;/&gt;&lt;br/&gt;
 &lt;font color=&apos;#8C8C7E&apos;&gt;_(#paragons:level/reward/header)&lt;/font&gt;
 &lt;font color=&apos;#CED9D9&apos;&gt;%(rewards)s&lt;/font&gt;
 </message>
@@ -3709,7 +3709,7 @@ _(#lootboxes:notification/lootBoxesAutoOpen/boxes)&lt;br/&gt;%(rewards)s</messag
 			<type>grey</type>
 			<icon>ParagonsIcon</icon>
 			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#paragons:project/name)&lt;/font&gt;&lt;br/&gt;
-&lt;font color=&apos;#8C8C7E&apos;&gt;_(#paragons:battle/reward/coins)&lt;/font&gt;&lt;img src=&apos;img://gui/maps/icons/library/ParagonsCoinsIcons-1.png&apos; width=&apos;26&apos; height=&apos;20&apos; align=&apos;baseline&apos; vspace=&apos;-4&apos;/&gt;&amp;nbsp;&lt;/img&gt;&lt;br/&gt;
+&lt;font color=&apos;#8C8C7E&apos;&gt;_(#paragons:notifications/grant/coins)&lt;/font&gt;&lt;img src=&apos;img://gui/maps/icons/library/ParagonsCoinsIcons-1.png&apos; width=&apos;26&apos; height=&apos;20&apos; align=&apos;baseline&apos; vspace=&apos;-4&apos;/&gt;&amp;nbsp;&lt;/img&gt;&lt;br/&gt;
 &lt;font color=&apos;#8C8C7E&apos;&gt;_(#paragons:chapter/reward/header)&lt;/font&gt;
 &lt;font color=&apos;#CED9D9&apos;&gt;%(rewards)s&lt;/font&gt;&lt;br/&gt;
 &lt;font color=&apos;#8C8C7E&apos;&gt;_(#paragons:chapter/reward/selector/text)&lt;/font&gt;
@@ -3854,5 +3854,11 @@ _(#lootboxes:notification/lootBoxesAutoOpen/boxes)&lt;br/&gt;%(rewards)s</messag
 			<icon>InformationIcon</icon>
 			<message>&lt;font face=&quot;$TitleFont&quot; color=&quot;#8C8C7E&quot;&gt;%(title)s&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#8C8C7E&quot;&gt;%(body)s&lt;/font&gt;</message>
 		</ClanSeasonQuestReward>
+		<LimitedUIContentUnlocked>
+			<priority>medium</priority>
+			<type>grey</type>
+			<icon>LockOpen</icon>
+			<message>&lt;font face=&quot;$TitleFont&quot; color=&quot;#E9E2BF&quot;&gt;_(#messenger:serviceChannelMessages/limitedUIContentUnlocked/title)&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#FEFEEC&quot;&gt;%(text)s&lt;/font&gt;</message>
+		</LimitedUIContentUnlocked>
 	</htmlTemplates>
 </root>

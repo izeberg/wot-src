@@ -2300,9 +2300,7 @@ msgid "limitedUI/switchOff"
 msgstr "Поэтапное появление скрытых элементов интерфейса временно отключено."
 
 msgid "limitedUI/switchOn"
-msgstr ""
-"Постепенное появление скрытых интерфейсов снова включено. Отключить можно в "
-"настройках игры."
+msgstr "Постепенное появление скрытых интерфейсов снова включено."
 
 msgid "lootboxes/open/server_error"
 msgstr "Ошибка открытия контейнера: серверный сбой."
@@ -3073,7 +3071,7 @@ msgstr "Премиум аккаунт продлён на %(period)d д. Пот�
 
 msgid "premium/not_enough_gold"
 msgstr ""
-"Недостаточно золота для покупки премиум аккаунта на срок %(period)d д."
+"Недостаточно золота для покупки Премиум аккаунта на срок %(period)d д."
 
 msgid "premium/post_battle_premium"
 msgstr ""
@@ -3082,7 +3080,7 @@ msgstr ""
 
 msgid "premium/server_error"
 msgstr ""
-"Ошибка покупки премиум аккаунта на срок %(period)d д. Попробуйте позже."
+"Ошибка покупки Премиум аккаунта на срок %(period)d д. Попробуйте позже."
 
 msgid "premium/wallet_not_available"
 msgstr ""
@@ -3719,7 +3717,7 @@ msgstr ""
 "%(date)s в %(time)s произошли серверные изменения, интерфейс обновлен."
 
 msgid "squad/createError"
-msgstr "Создание взводов доступно только игрокам с премиум аккаунтом."
+msgstr "Создание взводов доступно только игрокам с Премиум аккаунтом."
 
 msgid "squad/kickedFromQueue"
 msgstr ""
@@ -3810,8 +3808,8 @@ msgstr ""
 
 msgid "stronghold/clanSeason/quest/title"
 msgstr ""
-"За выполнение одной из задач личной прогрессии Кланового сезона вам "
-"начислена награда."
+"За выполнение одной или нескольких задач личной прогрессии Кланового сезона "
+"вам начислена награда."
 
 msgid "techtree/action/expireTime"
 msgstr "%(days)s д"

@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>Root_H</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>SPL_1</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-1.659000 0.311113 -2.589870</row3>
+				</transform>
+				<node>
+					<identifier>SPL_2</identifier>
+					<transform>
+						<row0>1.000000 -0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>-0.009000 0.234242 0.000000</row3>
+					</transform>
+					<node>
+						<identifier>SPL_3</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>-0.000000 -0.000000 1.000000</row2>
+							<row3>0.307577 -0.003361 0.000000</row3>
+						</transform>
+						<node>
+							<identifier>SPL_4</identifier>
+							<transform>
+								<row0>1.000000 0.000000 -0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 -0.000000 1.000000</row2>
+								<row3>0.307506 0.011288 0.000000</row3>
+							</transform>
+							<node>
+								<identifier>SPL_5</identifier>
+								<transform>
+									<row0>1.000000 0.000000 0.000000</row0>
+									<row1>0.000000 1.000000 0.000000</row1>
+									<row2>0.000000 0.000000 1.000000</row2>
+									<row3>0.307474 -0.015488 0.000000</row3>
+								</transform>
+								<node>
+									<identifier>SPL_5_BlendBone</identifier>
+									<transform>
+										<row0>1.000000 0.000000 0.000000</row0>
+										<row1>0.000000 1.000000 0.000000</row1>
+										<row2>0.000000 0.000000 -1.000000</row2>
+										<row3>0.745443 -0.537793 2.589870</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>SPL_4_BlendBone</identifier>
+								<transform>
+									<row0>1.000000 0.000000 0.000000</row0>
+									<row1>0.000000 1.000000 0.000000</row1>
+									<row2>0.000000 0.000000 -1.000000</row2>
+									<row3>1.052917 -0.553281 2.589870</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>SPL_3_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>1.360423 -0.541993 2.589870</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>SPL_2_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>1.668000 -0.545354 2.589870</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>SPL_1_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>1.659000 -0.311113 2.589870</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>SPR_1</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>1.659184 0.310092 -2.589870</row3>
+				</transform>
+				<node>
+					<identifier>SPR_2</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>-0.000000 -0.000000 1.000000</row2>
+						<row3>0.008572 0.235482 0.000000</row3>
+					</transform>
+					<node>
+						<identifier>SPR_3</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>-0.000000 -0.000000 1.000000</row2>
+							<row3>-0.307333 -0.003644 0.000000</row3>
+						</transform>
+						<node>
+							<identifier>SPR_4</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>-0.000000 -0.000000 1.000000</row2>
+								<row3>-0.307506 0.011031 0.000000</row3>
+							</transform>
+							<node>
+								<identifier>SPR_5</identifier>
+								<transform>
+									<row0>1.000000 0.000000 0.000000</row0>
+									<row1>0.000000 1.000000 0.000000</row1>
+									<row2>-0.000000 0.000000 1.000000</row2>
+									<row3>-0.307596 -0.014752 0.000000</row3>
+								</transform>
+								<node>
+									<identifier>SPR_5_BlendBone</identifier>
+									<transform>
+										<row0>1.000000 0.000000 0.000000</row0>
+										<row1>0.000000 1.000000 0.000000</row1>
+										<row2>0.000000 0.000000 -1.000000</row2>
+										<row3>-0.745321 -0.538209 2.589870</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>SPR_4_BlendBone</identifier>
+								<transform>
+									<row0>1.000000 0.000000 0.000000</row0>
+									<row1>0.000000 1.000000 0.000000</row1>
+									<row2>0.000000 0.000000 -1.000000</row2>
+									<row3>-1.052917 -0.552961 2.589870</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>SPR_3_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>-1.360423 -0.541930 2.589870</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>SPR_2_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>-1.667756 -0.545574 2.589870</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>SPR_1_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-1.659184 -0.310092 2.589870</row3>
+					</transform>
+				</node>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>SPL_5_BlendBone</node>
+		<node>SPR_3_BlendBone</node>
+		<node>SPR_2_BlendBone</node>
+		<node>SPR_5_BlendBone</node>
+		<node>SPR_4_BlendBone</node>
+		<node>SPL_3_BlendBone</node>
+		<node>SPL_2_BlendBone</node>
+		<node>SPL_4_BlendBone</node>
+		<node>SPL_1_BlendBone</node>
+		<node>SPR_1_BlendBone</node>
+		<geometry>
+			<vertices>panelShape.vertices</vertices>
+			<primitive>panelShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_equipment_01_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/intunion/Un14_T54D/_skins/T54D_3Dst_Stellar/T54D_3Dst_Stellar_equipment_01_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/intunion/Un14_T54D/_skins/T54D_3Dst_Stellar/T54D_3Dst_Stellar_equipment_01_AO.dds</Texture>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>7.014000 7.014000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/intunion/Un14_T54D/_skins/T54D_3Dst_Stellar/T54D_3Dst_Stellar_equipment_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/intunion/Un14_T54D/_skins/T54D_3Dst_Stellar/T54D_3Dst_Stellar_equipment_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.000000 0.425113 2.595065</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>-1.691785 0.279646 -2.977078</min>
+		<max>1.691785 0.570580 -2.213052</max>
+	</boundingBox>
+	<geometrySize>37248</geometrySize>
+	<minUVDensity>0.008100</minUVDensity>
+</root>

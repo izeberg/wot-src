@@ -28,11 +28,11 @@
 					</property>
 					<property>
 						g_tintColor
-						<Vector4>0.780392 0.443137 0.200000 1.000000</Vector4>
+						<Vector4>0.945098 0.756863 0.552941 1.000000</Vector4>
 					</property>
 					<property>
 						selfIllumination
-						<Float>100.000000</Float>
+						<Float>30.000000</Float>
 					</property>
 					<property>
 						doubleSided

@@ -29,11 +29,11 @@
 				<exports>vse tooltip</exports>
 			</radius>
 			<heal>
-				20 40 60
+				60 120 180
 				<exports>vse</exports>
 			</heal>
 			<secondaryHealDebuff>
-				25
+				75
 				<exports>vse tooltip</exports>
 			</secondaryHealDebuff>
 			<tickInterval>
@@ -101,11 +101,11 @@
 				<exports>vse tooltip</exports>
 			</duration>
 			<heal>
-				10 15 20
+				7 11 15
 				<exports>vse</exports>
 			</heal>
 			<gunReloadTimeBuff>
-				4
+				5
 				<exports>vse tooltip</exports>
 			</gunReloadTimeBuff>
 			<tickInterval>
@@ -140,17 +140,17 @@
 				<exports>vse tooltip</exports>
 			</duration>
 			<aimingTimeBuff>
-				0.5 0.35 0.15
+				0.8 0.7 0.6
 				<!--BW_String-->
 				<exports>vse</exports>
 			</aimingTimeBuff>
 			<shotDispersionFactors>
-				0.5 0.35 0.25
+				0.7 0.6 0.5
 				<!--BW_String-->
 				<exports>vse</exports>
 			</shotDispersionFactors>
 			<clipReloadTimeBoost>
-				0.65 0.8 1.15
+				0.5 0.7 0.9
 				<!--BW_String-->
 				<exports>vse tooltip</exports>
 			</clipReloadTimeBoost>
@@ -244,11 +244,11 @@
 				</server>
 			</visualScript>
 			<cooldownSeconds>
-				20
+				30
 				<exports>vse</exports>
 			</cooldownSeconds>
 			<delay>
-				3
+				4
 				<exports>vse tooltip</exports>
 			</delay>
 			<radius>
@@ -256,7 +256,7 @@
 				<exports>vse tooltip</exports>
 			</radius>
 			<damage>
-				100 250 500
+				150 250 450
 				<exports>vse tooltip</exports>
 			</damage>
 			<stunDuration>
@@ -515,7 +515,7 @@
 				<exports>vse</exports>
 			</cooldownSeconds>
 			<duration>
-				10 15 25
+				5 10 15
 				<exports>vse tooltip</exports>
 			</duration>
 			<delay>

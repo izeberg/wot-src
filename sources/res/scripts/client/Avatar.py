@@ -249,6 +249,7 @@ class PlayerAvatar(BigWorld.Entity, ClientChat, CombatEquipmentManager, AvatarOb
         self.isStaticWeatherSwitchEnabled = False
         self.arena = None
         self._thermalWarningTime = (0, 0)
+        self.__thermalWarningPlaying = False
         return
 
     @property
@@ -1475,8 +1476,10 @@ class PlayerAvatar(BigWorld.Entity, ClientChat, CombatEquipmentManager, AvatarOb
         self.guiSessionProvider.invalidateVehicleState(VEHICLE_VIEW_STATE.THERMAL_VISION_WARNING, value)
         if startTime > 0:
             RTPC_EVENT_WARNING.play(duration, startTime)
-        else:
+            self.__thermalWarningPlaying = True
+        elif self.__thermalWarningPlaying:
             RTPC_EVENT_WARNING.stop()
+            self.__thermalWarningPlaying = False
 
     def updateVehicleDeathZoneTimer(self, time, zoneID, entered=True, finishTime=None, isCausingDamage=False, state=TIMER_VIEW_STATE.CRITICAL):
         timer = VEHICLE_VIEW_STATE.DEATHZONE_TIMER

@@ -248,7 +248,7 @@ class VehicleTypeInfoVO(object):
                  'guiName', 'shortNameWithPrefix', 'classTag', 'nationID', 'turretYawLimits',
                  'maxHealth', 'strCompactDescr', 'isOnlyForBattleRoyaleBattles',
                  'tags', 'chassisType', 'role', 'isMultiTrack', 'hasThermalVision',
-                 'hasDistanceFactorShells')
+                 'hasDistanceFactorShells', 'isAutoShootGunVehicle')
 
     def __init__(self, vehicleType=None, maxHealth=None, **kwargs):
         super(VehicleTypeInfoVO, self).__init__()
@@ -291,6 +291,7 @@ class VehicleTypeInfoVO(object):
             self.turretYawLimits = vehicle_getter.getYawLimits(vehicleDescr)
             self.isDualGunVehicle = vehicleDescr.isDualgunVehicle
             self.isFlamethrowerVehicle = vehicleDescr.isFlamethrower
+            self.isAutoShootGunVehicle = vehicleDescr.isAutoShootGunVehicle and not vehicleDescr.isAutoShootFlamethrower
             self.isAutoShootFlamethrowerVehicle = vehicleDescr.isAutoShootFlamethrower
             self.isAssaultVehicle = vehicleDescr.isAssaultSPG
             self.hasDualAccuracy = vehicleDescr.hasDualAccuracy
@@ -323,6 +324,7 @@ class VehicleTypeInfoVO(object):
             self.isDualGunVehicle = False
             self.isFlamethrowerVehicle = False
             self.isAutoShootFlamethrowerVehicle = False
+            self.isAutoShootGunVehicle = False
             self.isAssaultVehicle = False
             self.hasDualAccuracy = False
             self.hasThermalVision = False

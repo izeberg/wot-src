@@ -3297,7 +3297,7 @@
 					<!--BW_String-->
 				</repairCost>
 			</turretRotatorHealth>
-			<circularVisionRadius>360</circularVisionRadius>
+			<circularVisionRadius>380</circularVisionRadius>
 			<surveyingDeviceHealth>
 				<maxHealth>120</maxHealth>
 				<maxRegenHealth>60</maxRegenHealth>
@@ -3346,7 +3346,7 @@
 						</maxPitch>
 					</pitchLimits>
 					<shotDispersionRadius>
-						0.36
+						0.32
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
@@ -3355,7 +3355,7 @@
 					</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.16
+							0.10
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
@@ -3368,7 +3368,7 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<aimingTime>
-						2.6
+						2.1
 						<!--BW_String-->
 					</aimingTime>
 					<models>

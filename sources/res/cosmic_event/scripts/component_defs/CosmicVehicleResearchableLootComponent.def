@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<Properties>
+		<isActive>
+			<Type>BOOL</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</isActive>
+		<lifeTimeRemained>
+			<Type>INT32</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</lifeTimeRemained>
+		<lootObtainedFromID>
+			<Type>OBJECT_ID</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</lootObtainedFromID>
+		<lootTransferTime>
+			<Type>INT32</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</lootTransferTime>
+		<researchDoneTime>
+			<Type>INT32</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</researchDoneTime>
+	</Properties>
+	<ofEntity>
+		<Vehicle/>
+	</ofEntity>
+	<DefaultKeyName>researchableLootComponent</DefaultKeyName>
+</root>

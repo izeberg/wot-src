@@ -274,7 +274,7 @@ class Turret(InstallableItem):
                  'showEmblemsOnGun', 'guns', 'turretRotatorSoundManual', 'turretRotatorSoundGear',
                  'AODecals', 'turretDetachmentEffects', 'physicsShape', 'circularVisionRadius',
                  'customizableVehicleAreas', 'multiGun', 'prefabs', 'multiGunState',
-                 'thermalVision')
+                 'thermalVision', 'distanceBetweenMultiGuns')
 
     def __init__(self, typeID, componentID, componentName, compactDescr, level=1):
         super(Turret, self).__init__(typeID, componentID, componentName, compactDescr, level)
@@ -287,6 +287,7 @@ class Turret(InstallableItem):
         self.guns = None
         self.circularVisionRadius = None
         self.multiGun = None
+        self.distanceBetweenMultiGuns = component_constants.ZERO_FLOAT
         self.primaryArmor = component_constants.EMPTY_TUPLE
         self.physicsShape = None
         self.ceilless = False

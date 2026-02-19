@@ -10,176 +10,171 @@ msgstr ""
 
 msgid "page/footer"
 msgstr ""
-"Выберите любой из объектов поддержки на карте, чтобы изучить подробную "
+"Выберите любой из объектов поддержки на карте, чтобы изучить подробную "
 "информацию."
 
 msgid "page/infoBtn"
-msgstr "О СОБЫТИИ"
+msgstr "ПРА ПАДЗЕЮ"
 
 msgid "page/object/damageZones/hullText"
-msgstr "• В оболочку проходит: %(value)s урона."
+msgstr "• В оболочку проходит: %(value)s урона."
 
 msgid "page/object/damageZones/percents"
 msgstr "%(number)s%"
 
 msgid "page/object/damageZones/shortTitle"
 msgstr ""
-"Разные элементы конструкции объекта по разному восприимчивы к урону..."
+"Разные элементы конструкции объекта по-разному восприимчивы к урону..."
 
 msgid "page/object/damageZones/title"
-msgstr "Разные элементы конструкции объекта по разному восприимчивы к урону:"
+msgstr "Разные элементы конструкции объекта по-разному восприимчивы к урону:"
 
 msgid "page/object/damageZones/turretText"
-msgstr "• В гондолу проходит: %(value)s урона."
+msgstr "• В гондолу проходит: %(value)s урона."
 
 msgid "page/object/description/airship"
 msgstr ""
-"Подвижный летающий объект. Имеет орудие и башню неполного вращения, может вести обстрел техники противника.\n"
-"Может участвовать в захвате базы."
+"Подвижный летающий объект. Имеет орудие и башню неполного вращения, может вести обстрел техники противника.\n"
+"Может участвовать в захвате базы."
 
 msgid "page/object/description/flamer"
 msgstr ""
-"Тяжелобронированная стационарная огневая точка с вращающейся башней. Наносит урон огнём на близкой дистанции.\n"
-"Располагается рядом с базой, роль — помешать захвату базы противником."
+"Тяжелобронированная стационарная огневая точка с вращающейся башней. Наносит урон огнём на близкой дистанции.\n"
+"Располагается рядом с базой, роль — помешать захвату базы противником."
 
 msgid "page/object/description/mortar"
 msgstr ""
-"Реактивная система залпового огня выпускает залп из множества снарядов по "
-"противнику. Эффективна при нанесении урона группам техники с большой "
+"Реактивная система залпового огня выпускает залп из множества снарядов "
+"по противнику. Эффективна при нанесении урона группам техники с большой "
 "дистанции."
 
 msgid "page/object/description/pillbox"
 msgstr ""
-"Долговременная огневая точка с вращающейся башней. Эффективна против легкобронированной техники на короткой и средней дистанциях.\n"
-"Роль ДОТа — помогать отбивать атаку противника на базу."
+"Долговременная огневая точка с вращающейся башней. Эффективна против легкобронированной техники на короткой и средней дистанциях.\n"
+"Роль дота — помогать отбивать атаку противника на базу."
 
 msgid "page/object/description/subtitle/airship"
-msgstr "(объект поддержки атаки)"
+msgstr "(аб'ект падтрымкі атакі)"
 
 msgid "page/object/description/subtitle/flamer"
-msgstr "(объект поддержки обороны)"
+msgstr "(аб'ект падтрымкі абароны)"
 
 msgid "page/object/description/subtitle/mortar"
-msgstr "(объект поддержки атаки)"
+msgstr "(аб'ект падтрымкі атакі)"
 
 msgid "page/object/description/subtitle/pillbox"
-msgstr "(объект поддержки обороны)"
+msgstr "(аб'ект падтрымкі абароны)"
 
 msgid "page/object/infoText"
-msgstr "Условия получения в бою"
+msgstr "Условия получения в бою"
 
 msgid "page/object/paramsTitle"
-msgstr "Ключевые ТТХ"
+msgstr "Ключавыя ТТХ"
 
 msgid "page/object/subtitle/airship"
-msgstr "Объект поддержки атаки"
+msgstr "Аб'ект падтрымкі атакі"
 
 msgid "page/object/subtitle/flamer"
-msgstr "Объект поддержки обороны"
+msgstr "Аб'ект падтрымкі абароны"
 
 msgid "page/object/subtitle/mortar"
-msgstr "Объект поддержки атаки"
+msgstr "Аб'ект падтрымкі атакі"
 
 msgid "page/object/subtitle/pillbox"
-msgstr "Объект поддержки обороны"
+msgstr "Аб'ект падтрымкі абароны"
 
 msgid "page/object/title/airship"
-msgstr "Дирижабль"
+msgstr "Дырыжабль"
 
 msgid "page/object/title/flamer"
-msgstr "Огнемёт"
+msgstr "Агнямёт"
 
 msgid "page/object/title/mortar"
-msgstr "РСЗО"
+msgstr "РСЗА"
 
 msgid "page/object/title/pillbox"
-msgstr "ДОТ"
+msgstr "Дот"
 
 msgid "page/object/vehParams/description/captureTime"
 msgstr ""
-"Максимальное количество времени, которое объект может находится на точке "
-"захвата и самостоятельно производить захват."
+"Максимальное количество времени, которое объект может находиться на точке "
+"захвата и самостоятельно производить захват."
 
 msgid "page/object/vehParams/description/circularVisionRadius"
-msgstr "Обзор объекта — дистанция, на которой может быть обнаружен противник."
+msgstr "Обзор объекта — дистанция, на которой может быть обнаружен противник."
 
 msgid "page/object/vehParams/description/cooldownTime"
-msgstr ""
-"Время, через которое объект начнёт повторно осуществлять боевые действия."
+msgstr "Час, праз які аб'ект пачне паўторна ажыццяўляць баявыя дзеянні."
 
 msgid "page/object/vehParams/description/healTime"
 msgstr ""
-"Время, за которое объект может быть отремонтирован. Указаны следующие "
-"значения: минимальное время при ремонте несколькими игроками / максимальное "
-"время при ремонте одним игроком."
+"Время, за которое объект может быть отремонтирован. Указаны следующие "
+"значения: минимальное время при ремонте несколькими игроками / максимальное "
+"время при ремонте одним игроком."
 
 msgid "page/object/vehParams/description/maxHealth"
-msgstr "Количество очков прочности объекта."
+msgstr "Колькасць ачкоў трываласці аб'екта."
 
 msgid "page/object/vehParams/description/resurrectTime"
-msgstr "Время, за которое объект восстановится после уничтожения."
+msgstr "Время, за которое объект восстановится после уничтожения."
 
 msgid "page/object/vehParams/description/turretArmor"
-msgstr "Толщина брони объекта: лоб/борта/корма соответственно."
+msgstr "Таўшчыня брані аб'екта: лоб/барты/ карма адпаведна."
 
 msgid "page/object/vehParams/text/captureTime"
-msgstr "Время нахождения на точке захвата"
+msgstr "Время нахождения на точке захвата"
 
 msgid "page/object/vehParams/text/cooldownTime"
-msgstr "Время между появлением"
+msgstr "Час паміж з'яўленнем"
 
 msgid "page/object/vehParams/text/healTime"
-msgstr "Время ремонта"
+msgstr "Час рамонту"
 
 msgid "page/object/vehParams/text/resurrectTime"
-msgstr "Время восстановления"
+msgstr "Час аднаўлення"
 
 msgid "page/object/vehParams/text/turretArmor"
-msgstr "Бронирование"
+msgstr "Браніраванне"
 
 msgid "page/object/vehParams/title/avgDamage"
-msgstr "Средний урон (ед.)"
+msgstr "Сярэднія пашкоджанні (адз.)"
 
 msgid "page/object/vehParams/title/avgPiercingPower"
-msgstr "Средняя бронепробиваемость (мм)"
+msgstr "Сярэдняя бронепрабівальнасць (мм)"
 
 msgid "page/object/vehParams/title/captureTime"
-msgstr "Время нахождения на точке захвата (с)"
+msgstr "Время нахождения на точке захвата (с)"
 
 msgid "page/object/vehParams/title/cooldownTime"
-msgstr "Время между появлениями (с)"
+msgstr "Час паміж з'яўленнямі (с)"
 
 msgid "page/object/vehParams/title/healTime"
-msgstr "Время ремонта объекта (с)"
+msgstr "Час рамонту аб'екта (с)"
 
 msgid "page/object/vehParams/title/resurrectTime"
-msgstr "Время восстановления (с)"
+msgstr "Час аднаўлення (с)"
 
 msgid "page/object/vehParams/title/turretArmor"
-msgstr "Бронирование (лоб/борта/корма в мм)"
+msgstr "Бронирование (лоб/борта/корма в мм)"
 
 msgid "page/title"
-msgstr "ОБЪЕКТЫ ПОДДЕРЖКИ"
+msgstr "АБ'ЕКТЫ ПАДТРЫМКІ"
 
 msgid "tooltip/description/airship"
 msgstr ""
-"Объект активируется после заполнения второго этапа командной прогрессии "
-"зоны."
+"Аб'ект актывуецца пасля запаўнення другога этапу каманднай прагрэсіі зоны."
 
 msgid "tooltip/description/flamer"
 msgstr ""
-"Объект активируется после заполнения второго этапа командной прогрессии "
-"зоны."
+"Аб'ект актывуецца пасля запаўнення другога этапу каманднай прагрэсіі зоны."
 
 msgid "tooltip/description/mortar"
 msgstr ""
-"Объект активируется после заполнения первого этапа командной прогрессии "
-"зоны."
+"Аб'ект актывуецца пасля запаўнення першага этапу каманднай прагрэсіі зоны."
 
 msgid "tooltip/description/pillbox"
 msgstr ""
-"Объект активируется после заполнения первого этапа командной прогрессии "
-"зоны."
+"Аб'ект актывуецца пасля запаўнення першага этапу каманднай прагрэсіі зоны."
 
 msgid "tooltip/title"
-msgstr "Активация объекта в бою"
+msgstr "Активация объекта в бою"

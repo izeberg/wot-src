@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/intunion/Un14_T54D/_skins/T54D_3Dst_Stellar/normal/lod0/Antennas</nodefullVisual>
+	<visibilityBox>
+		<min>-1.636256 0.623858 -1.552845</min>
+		<max>1.421774 1.987715 0.082340</max>
+	</visibilityBox>
+	<parent>vehicles/intunion/Un14_T54D/_skins/T54D_3Dst_Stellar/normal/lod1/Antennas</parent>
+	<extent>32.000000</extent>
+</root>

@@ -143,9 +143,9 @@ _ACHIEVEMENTS15X15_BLOCK_LAYOUT = [
  'medalEkins',
  'medalUshakov', 'medalOrlik', 'medalOskin', 'medalKrysov', 'medalBurda',
  'medalBillotte',
- 'medalKolobanov', 'medalFadin', 'medalRadleyWalters', 'medalBrunoPietro',
+ 'medalKolobanov', 'medalFadin', 'medalRadleyWalters', 'medalFokin',
  'medalLyubushkin',
- 'medalPascucci', 'medalDumitru', 'medalKhazov', 'medalNikolas',
+ 'medalSlyunyayev', 'medalDumitru', 'medalKhazov', 'medalNikolas',
  'medalLafayettePool',
  'sinai', 'heroesOfRassenay', 'beasthunter', 'mousebane', 'tankExpertStrg',
  'raider', 'kamikaze', 'lumberjack',
@@ -177,7 +177,8 @@ _ACHIEVEMENTS15X15_BLOCK_LAYOUT = [
  'oowTankmanWins', 'oowStrategistWins', 'oowCompetetiveWin',
  'mapboxUniversal', 'wclTournamentParticipant', 'wclParticipant',
  'wt2022HunterWins', 'wt2022BossWins', 'wt2022SpecBossDefeat',
- 'wt2024HunterWins', 'wt2024BossWins', 'wt2024MaxPlasma']
+ 'wt2024HunterWins', 'wt2024BossWins', 'wt2024MaxPlasma',
+ 'medalFomin', 'medalKrockenberger', 'medalGavryushov']
 _achievements15x15PopUps = [
  'warrior', 'invader', 'sniper', 'defender', 'steelwall', 'supporter',
  'scout', 'medalKay', 'medalSamokhin', 'medalGudz', 'medalPoppel', 'medalAbrams',
@@ -187,7 +188,7 @@ _achievements15x15PopUps = [
  'medalBurda', 'medalBillotte', 'medalKolobanov', 'medalFadin', 'beasthunter', 'mousebane',
  'tankExpert', 'raider',
  'kamikaze', 'lumberjack', 'evileye', 'medalRadleyWalters', 'medalLafayettePool',
- 'medalBrunoPietro', 'medalLyubushkin', 'medalPascucci', 'medalDumitru', 'medalKhazov',
+ 'medalFokin', 'medalLyubushkin', 'medalSlyunyayev', 'medalDumitru', 'medalKhazov',
  'medalNikolas', 'sinai', 'pattonValley', 'heroesOfRassenay', 'mechanicEngineer',
  'tankExpert0',
  'tankExpert1', 'tankExpert2', 'tankExpert3', 'tankExpert4', 'tankExpert5', 'tankExpert6',
@@ -223,7 +224,8 @@ _achievements15x15PopUps = [
  'oowTankmanWins', 'oowStrategistWins', 'oowCompetetiveWin', 'mapboxUniversal',
  'wclTournamentParticipant', 'wclParticipant',
  'wt2022HunterWins', 'wt2022BossWins', 'wt2022SpecBossDefeat',
- 'wt2024HunterWins', 'wt2024BossWins', 'wt2024MaxPlasma']
+ 'wt2024HunterWins', 'wt2024BossWins', 'wt2024MaxPlasma',
+ 'medalFomin', 'medalKrockenberger', 'medalGavryushov']
 _achievements15x15BlockBuilder = StaticSizeBlockBuilder('achievements', _ACHIEVEMENTS15X15_BLOCK_LAYOUT, ACHIEVEMENT15X15_DEPENDENCIES, _achievements15x15PopUps, aliases=MEDAL_ALIASES)
 _STEAM_BLOCK_LAYOUT = [
  'steamBattleCredits', 'steamLittleSavingsMedal', 'steamMintedCoinMedal', 'steamKingMidasMedal',
@@ -371,7 +373,9 @@ _SINGLE_ACHIEVEMENTS_VALUES = [
  'portal2025Medal_1', 'portal2025Medal_2', '15YearsOfService',
  'comp7_5_2', 'comp7_5_2_champion', 'comp7_5_2_legend', 'NY26_AtmsphrLevel',
  'NY26_CelebTaskCompleted', 'clan_season_25_first', 'clan_season_25_last',
- 'BattlePassCommonPr_18_5_Marathon']
+ 'BattlePassCommonPr_18_5_Marathon', 'cosm2026_medal_1', 'cosm2026_medal_2',
+ 'BattlePassCommonPr_19', 'comp7_5_3', 'comp7_5_3_champion', 'comp7_5_3_legend',
+ 'Paragons_S2']
 _singleAchievementsPopUps = [
  'titleSniper', 'invincible', 'diehard', 'handOfDeath',
  'armorPiercer', 'battleCitizen', 'WFC2014', 'tacticalBreakthrough', 'aimer',
@@ -443,7 +447,9 @@ _singleAchievementsPopUps = [
  'BattlePassCommonPr_18', 'portal2025Medal_1', 'portal2025Medal_2', '15YearsOfService',
  'comp7_5_2', 'comp7_5_2_champion', 'comp7_5_2_legend', 'NY26_AtmsphrLevel',
  'NY26_CelebTaskCompleted', 'clan_season_25_first', 'clan_season_25_last',
- 'BattlePassCommonPr_18_5_Marathon']
+ 'BattlePassCommonPr_18_5_Marathon', 'cosm2026_medal_1', 'cosm2026_medal_2',
+ 'BattlePassCommonPr_19', 'comp7_5_3', 'comp7_5_3_champion', 'comp7_5_3_legend',
+ 'Paragons_S2']
 _singleAchievementsBlockBuilder = BinarySetDossierBlockBuilder('singleAchievements', _SINGLE_ACHIEVEMENTS_VALUES, SINGLE_ACHIEVEMENTS_DEPENDENCIES, _singleAchievementsPopUps)
 FORT_ACHIEVEMENTS_BLOCK_LAYOUT = [
  'conqueror', 'fireAndSword', 'crusher', 'counterblow', 'kampfer', 'soldierOfFortune']

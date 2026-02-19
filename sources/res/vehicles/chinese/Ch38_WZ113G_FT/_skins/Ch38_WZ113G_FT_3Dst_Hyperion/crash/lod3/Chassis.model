@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/chinese/Ch38_WZ113G_FT/_skins/Ch38_WZ113G_FT_3Dst_Hyperion/crash/lod4/Chassis</parent>
+	<tank>true</tank>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.619871 -0.000002 -3.666769</min>
+		<max>1.619872 1.071716 3.511962</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/chinese/Ch38_WZ113G_FT/_skins/Ch38_WZ113G_FT_3Dst_Hyperion/crash/lod3/Chassis</nodefullVisual>
+</root>

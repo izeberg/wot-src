@@ -2946,6 +2946,33 @@ msgstr ""
 "От администрации получено снаряжение: %(typeName)s «%(itemName)s» — "
 "%(amount)d шт."
 
+msgid "serviceChannelMessages/limitedUIContentUnlocked/battleMode"
+msgstr "Доступен режим боя:"
+
+msgid "serviceChannelMessages/limitedUIContentUnlocked/battleModes"
+msgstr "Доступны режимы боя:"
+
+msgid "serviceChannelMessages/limitedUIContentUnlocked/content"
+msgstr "Доступен раздел:"
+
+msgid "serviceChannelMessages/limitedUIContentUnlocked/contents"
+msgstr "Доступны разделы:"
+
+msgid "serviceChannelMessages/limitedUIContentUnlocked/personalMissions"
+msgstr "Кампании"
+
+msgid "serviceChannelMessages/limitedUIContentUnlocked/stronghold"
+msgstr "Укрепрайон"
+
+msgid "serviceChannelMessages/limitedUIContentUnlocked/title"
+msgstr "Разблокированы игровые возможности!"
+
+msgid "serviceChannelMessages/limitedUIContentUnlocked/tournaments"
+msgstr "Турниры"
+
+msgid "serviceChannelMessages/limitedUIContentUnlocked/versusAI"
+msgstr "Полигон"
+
 msgid "serviceChannelMessages/lootBoxes/button"
 msgstr "К контейнерам"
 

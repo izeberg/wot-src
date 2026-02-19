@@ -1,6 +1,6 @@
 from typing import TYPE_CHECKING
 from account_helpers import AccountSettings
-from cosmic_event_common.cosmic_constants import COSMIC_KEY, ACCOUNT_DEFAULT_SETTINGS, EVENT_STARTED_NOTIFICATION_VIEWED, LAST_PROGRESSION_VISITED_LEVEL, SELECTED_VEHICLE_ID
+from cosmic_event_common.cosmic_constants import COSMIC_KEY, ACCOUNT_DEFAULT_SETTINGS, EVENT_STARTED_NOTIFICATION_VIEWED, LAST_PROGRESSION_VISITED_LEVEL, COSMIC_MODE_SELECTOR_BATTLE_PASS_SHOWN, SELECTED_VEHICLE_ID, COSMIC_LOBBY_FIRST_ENTER_SOUND_PLAYED, COSMIC_INTRO_VIDEO_VIEWED
 if TYPE_CHECKING:
     from typing import Any
 
@@ -37,3 +37,27 @@ def setLastSelectedVehicleID(id):
 
 def getLastSelectedVehicleID():
     return getSettings(SELECTED_VEHICLE_ID)
+
+
+def isCosmicBattlePassShown():
+    return getSettings(COSMIC_MODE_SELECTOR_BATTLE_PASS_SHOWN)
+
+
+def setCosmicBattlePassShown(status):
+    return setSettings(COSMIC_MODE_SELECTOR_BATTLE_PASS_SHOWN, status)
+
+
+def isLobbyFirstEnterSoundPlayed():
+    return getSettings(COSMIC_LOBBY_FIRST_ENTER_SOUND_PLAYED)
+
+
+def setLobbyFirstEnterSoundPlayed(status):
+    return setSettings(COSMIC_LOBBY_FIRST_ENTER_SOUND_PLAYED, status)
+
+
+def isIntroVideoViewed():
+    return getSettings(COSMIC_INTRO_VIDEO_VIEWED)
+
+
+def setIntroVideoViewed(status):
+    return setSettings(COSMIC_INTRO_VIDEO_VIEWED, status)

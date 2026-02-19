@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>nodes_01</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>Root</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 -1.000000</row2>
+					<row3>0.000150 0.000000 0.000000</row3>
+				</transform>
+				<node>
+					<identifier>joint1</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.437140 -1.568107</row3>
+					</transform>
+					<node>
+						<identifier>joint2</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 -0.000000</row1>
+							<row2>-0.000000 -0.000000 1.000000</row2>
+							<row3>0.094517 -0.124374 -0.069655</row3>
+						</transform>
+						<node>
+							<identifier>joint2_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>-0.094667 -0.312766 1.637762</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>joint1_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>-0.000150 -0.437140 1.568107</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>joint3</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.199934 -1.744957</row3>
+					</transform>
+					<node>
+						<identifier>joint4</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>-0.000000 1.000000 0.000001</row1>
+							<row2>0.000000 -0.000000 1.000000</row2>
+							<row3>0.103964 0.011333 0.033998</row3>
+						</transform>
+						<node>
+							<identifier>joint4_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>-0.104114 -0.211267 1.710959</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>joint3_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>-0.000150 -0.199934 1.744957</row3>
+						</transform>
+					</node>
+				</node>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>joint3_BlendBone</node>
+		<node>joint1_BlendBone</node>
+		<node>joint4_BlendBone</node>
+		<node>joint2_BlendBone</node>
+		<geometry>
+			<vertices>gun_01_anim_luke_Shape.vertices</vertices>
+			<primitive>gun_01_anim_luke_Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_guns_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<materialKind>0</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						alphaReference
+						<Int>64</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/french/F137_Tornade/F137_Tornade_guns_ID.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/french/F137_Tornade/F137_Tornade_guns_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/french/F137_Tornade/F137_Tornade_guns_AO.dds</Texture>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>3.507000 3.507000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/french/F137_Tornade/F137_Tornade_guns_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/french/F137_Tornade/F137_Tornade_guns_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.005093 0.170200 1.560728</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>-0.129140 -0.092268 -1.727041</min>
+		<max>0.139327 0.432668 -1.394415</max>
+	</boundingBox>
+	<geometrySize>4172</geometrySize>
+	<minUVDensity>0.019096</minUVDensity>
+</root>

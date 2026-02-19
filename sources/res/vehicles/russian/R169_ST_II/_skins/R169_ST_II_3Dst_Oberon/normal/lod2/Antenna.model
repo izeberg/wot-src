@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/russian/R169_ST_II/_skins/R169_ST_II_3Dst_Oberon/normal/lod2/Antenna</nodefullVisual>
+	<parent>vehicles/russian/R169_ST_II/_skins/R169_ST_II_3Dst_Oberon/normal/lod3/Antenna</parent>
+	<extent>96.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.460060 1.005092 -2.152892</min>
+		<max>-0.040944 1.857823 -1.482269</max>
+	</visibilityBox>
+</root>

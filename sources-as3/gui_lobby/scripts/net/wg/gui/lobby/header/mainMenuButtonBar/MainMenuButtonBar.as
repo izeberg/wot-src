@@ -141,6 +141,8 @@ package net.wg.gui.lobby.header.mainMenuButtonBar
             _loc4_.tooltip = _loc3_.tooltip;
          }
          _loc4_.isTooltipSpecial = _loc3_.isTooltipSpecial;
+         _loc4_.isWulfTooltip = _loc3_.isWulfTooltip;
+         _loc4_.tooltipArgs = _loc3_.tooltipArgs;
          _loc4_.actionIconStr = _loc3_.actionIcon;
       }
       

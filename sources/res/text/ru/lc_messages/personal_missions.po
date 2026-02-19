@@ -661,7 +661,7 @@ msgid "operationTitle/label/excellentDone"
 msgstr "Все задачи выполнены с отличием"
 
 msgid "operationTitle/label/inProgress/pm2"
-msgstr "Выполняется на технике  %(vehData)s"
+msgstr "Выполняется на %(vehData)s"
 
 msgid "operationTitle/label/inProgress/regular"
 msgstr "Выполняется на технике ветки %(vehData)s"
@@ -679,7 +679,7 @@ msgid "operationTitle/label/toMaster"
 msgstr "Задач с отличием: %(count)s/%(total)s  %(infoIcon)s"
 
 msgid "operationTitle/label/unlocked/pm2"
-msgstr "Выберите задачу для выполнения на технике  %(vehData)s"
+msgstr "Выберите задачу для выполнения на %(vehData)s"
 
 msgid "operationTitle/label/unlocked/regular"
 msgstr "Выберите задачу для выполнения на технике ветки %(vehData)s"
@@ -789,7 +789,7 @@ msgid "questAwardScreen/recruitBtn/label"
 msgstr "Рекрутировать"
 
 msgid "questProgressTracking/status/onPause"
-msgstr "На паузе"
+msgstr "На паузе"
 
 msgid "questProgressTracking/trackingStatus"
 msgstr "Сейчас выполняется несколько задач"

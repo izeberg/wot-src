@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/french/F137_Tornade/normal/lod1/Hull</parent>
+	<tank>true</tank>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.611850 -0.578407 -3.952242</min>
+		<max>1.613557 0.960120 3.574929</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/french/F137_Tornade/normal/lod0/Hull</nodefullVisual>
+</root>

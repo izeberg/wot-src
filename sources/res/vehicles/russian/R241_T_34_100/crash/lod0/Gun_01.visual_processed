@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>gun_01_Shape.vertices</vertices>
+			<primitive>gun_01_Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<fx>shaders/std_effects/PBS_tank_crash.fx</fx>
+					<materialKind>0</materialKind>
+					<identifier>tank_guns</identifier>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>vehicles/russian/R241_T_34_100/T_34_100_guns_AM.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/R241_T_34_100/T_34_100_guns_ID.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/russian/R241_T_34_100/T_34_100_guns_GMM.dds</Texture>
+					</property>
+					<property>
+						g_crashUVTiling
+						<Vector4>2.000000 1.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						crashTileMap
+						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/russian/R241_T_34_100/T_34_100_guns_ANM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/russian/R241_T_34_100/T_34_100_guns_AO.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.000197 -0.027563 1.845277</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-0.397595 -0.349600 -1.031424</min>
+		<max>0.397989 0.294475 4.721979</max>
+	</boundingBox>
+	<geometrySize>165572</geometrySize>
+	<minUVDensity>0.004164</minUVDensity>
+</root>

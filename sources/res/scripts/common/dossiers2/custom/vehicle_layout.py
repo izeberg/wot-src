@@ -100,9 +100,9 @@ _ACHIEVEMENTS15X15_BLOCK_LAYOUT = [
  'medalKolobanov',
  'medalFadin',
  'medalRadleyWalters',
- 'medalBrunoPietro',
+ 'medalFokin',
  'medalLyubushkin',
- 'medalPascucci',
+ 'medalSlyunyayev',
  'medalDumitru',
  'medalKhazov',
  'medalNikolas',
@@ -151,7 +151,10 @@ _ACHIEVEMENTS15X15_BLOCK_LAYOUT = [
  'marksOfMasteryCount1',
  'marksOfMasteryCount2',
  'marksOfMasteryCount3',
- 'marksOfMasteryCount4']
+ 'marksOfMasteryCount4',
+ 'medalFomin',
+ 'medalKrockenberger',
+ 'medalGavryushov']
 _achievements15x15PopUps = [
  'tankExpert',
  'tankExpert0',

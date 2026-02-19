@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<visibilityBox>
+		<min>-0.357412 -0.408947 -1.205604</min>
+		<max>0.525865 0.297088 4.456279</max>
+	</visibilityBox>
+	<parent>vehicles/russian/R225_Vasiliev_project/crash/lod1/Gun_01</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/russian/R225_Vasiliev_project/crash/lod0/Gun_01</nodefullVisual>
+</root>

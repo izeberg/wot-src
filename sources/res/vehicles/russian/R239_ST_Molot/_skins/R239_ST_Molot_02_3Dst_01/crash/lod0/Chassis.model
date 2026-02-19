@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<visibilityBox>
+		<min>-1.714515 -0.000098 -3.080308</min>
+		<max>1.714515 0.893438 3.195746</max>
+	</visibilityBox>
+	<parent>vehicles/russian/R239_ST_Molot/_skins/R239_ST_Molot_02_3Dst_01/crash/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/russian/R239_ST_Molot/_skins/R239_ST_Molot_02_3Dst_01/crash/lod0/Chassis</nodefullVisual>
+</root>

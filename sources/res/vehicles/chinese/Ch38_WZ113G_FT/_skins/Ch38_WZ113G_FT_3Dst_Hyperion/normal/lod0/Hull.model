@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.887989 -0.589220 -3.901646</min>
+		<max>1.831288 4.774383 3.686074</max>
+	</visibilityBox>
+	<parent>vehicles/chinese/Ch38_WZ113G_FT/_skins/Ch38_WZ113G_FT_3Dst_Hyperion/normal/lod1/Hull</parent>
+	<nodefullVisual>vehicles/chinese/Ch38_WZ113G_FT/_skins/Ch38_WZ113G_FT_3Dst_Hyperion/normal/lod0/Hull</nodefullVisual>
+</root>

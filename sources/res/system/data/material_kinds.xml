@@ -557,6 +557,7 @@
 		<terrain>maps/landscape/00_AllTerrain3_tiles/SandDesert_04_00344_yellow_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Sulfur_01_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Sand_Footprint_01_AM</terrain>
+		<terrain>maps/landscape/00_AllTerrain3_tiles/SandDesert_Cosmic_red_02_AM</terrain>
 	</kind>
 	<kind>
 		<id>104</id>
@@ -708,6 +709,9 @@
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Snow_04_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Snow_Wavy_01_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Snow_Mud_02_AM</terrain>
+		<terrain>maps/landscape/00_AllTerrain3_tiles/Snow_Wavy_02_AM</terrain>
+		<terrain>maps/landscape/00_AllTerrain3_tiles/ice5_AM</terrain>
+		<terrain>maps/landscape/00_AllTerrain3_tiles/ice4_AM</terrain>
 	</kind>
 	<kind>
 		<id>111</id>
@@ -833,7 +837,6 @@
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Sand_Dunes_Cosmic_02_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Sand_Dunes_Cosmic_01_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/SandDesert_Cosmic_01_AM</terrain>
-		<terrain>maps/landscape/00_AllTerrain3_tiles/SandDesert_Cosmic_02_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/SandDesert_Cosmic_red_01_AM</terrain>
 	</kind>
 	<kind>

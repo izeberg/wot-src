@@ -1354,13 +1354,13 @@ msgid "customizationConfirmSell/title"
 msgstr "Подтверждение продажи"
 
 msgid "dailyQuests/dialogConfirmReroll/timeLimitMsgHours"
-msgstr "каждые %(hours)s ч."
+msgstr "каждые %(hours)s ч."
 
 msgid "dailyQuests/dialogConfirmReroll/timeLimitMsgHoursMins"
-msgstr "каждые %(hours)s ч %(mins)s мин."
+msgstr "каждые %(hours)s ч %(mins)s мин."
 
 msgid "dailyQuests/dialogConfirmReroll/timeLimitMsgMins"
-msgstr "каждые %(mins)s мин."
+msgstr "каждые %(mins)s мин."
 
 msgid "dailyQuests/dialogInfoConfirmReroll/message"
 msgstr "Замена задачи доступна {timeLimitMsg}"
@@ -2465,7 +2465,7 @@ msgid "premiumBuyConfirmation/cancel"
 msgstr "Отменить"
 
 msgid "premiumBuyConfirmation/message"
-msgstr "Купить премиум аккаунт на %(days)s д за %(gold)s золота?"
+msgstr "Купить Премиум аккаунт на %(days)s д. за %(gold)s золота?"
 
 msgid "premiumBuyConfirmation/submit"
 msgstr "Купить"
@@ -2477,7 +2477,7 @@ msgid "premiumContinueConfirmation/cancel"
 msgstr "Отменить"
 
 msgid "premiumContinueConfirmation/message"
-msgstr "Продлить премиум аккаунт на %(days)s д за %(gold)s?"
+msgstr "Продлить Премиум аккаунт на %(days)s д. за %(gold)s?"
 
 msgid "premiumContinueConfirmation/submit"
 msgstr "Продлить"
@@ -3131,7 +3131,7 @@ msgid "sessionStats/confirmReset/submit"
 msgstr "Сбросить"
 
 msgid "sessionStats/confirmReset/time"
-msgstr ": %(hours)s ч. %(minutes)s мин."
+msgstr ": %(hours)s ч. %(minutes)s мин."
 
 msgid "sessionStats/confirmReset/title"
 msgstr "Сбросить сессионную статистику?"
@@ -3371,11 +3371,11 @@ msgstr "ОК"
 
 msgid "squadPremiumNeeded/message"
 msgstr ""
-"Создание взводов доступно только игрокам с премиум аккаунтом.\n"
-"Игрок, создавший взвод, может пригласить любого игрока независимо от типа его аккаунта."
+"Создание взводов доступно только игрокам с Премиум аккаунтом.\n"
+"Игрок, создавший взвод, может пригласить любого игрока независимо от типа его аккаунта."
 
 msgid "squadPremiumNeeded/title"
-msgstr "Только для премиум аккаунта"
+msgstr "Только для Премиум аккаунта"
 
 msgid "steamStartNeeded/cancel"
 msgstr "Закрыть игру"

@@ -12,7 +12,7 @@ class VehicleType(Enum):
 class ParagonsVehicleModel(ItemBonusModel):
     __slots__ = ()
 
-    def __init__(self, properties=23, commands=0):
+    def __init__(self, properties=24, commands=0):
         super(ParagonsVehicleModel, self).__init__(properties=properties, commands=commands)
 
     def getVehicleName(self):
@@ -99,6 +99,12 @@ class ParagonsVehicleModel(ItemBonusModel):
     def setRole(self, value):
         self._setString(22, value)
 
+    def getSeasonID(self):
+        return self._getNumber(23)
+
+    def setSeasonID(self, value):
+        self._setNumber(23, value)
+
     def _initialize(self):
         super(ParagonsVehicleModel, self)._initialize()
         self._addStringProperty('vehicleName', '')
@@ -115,3 +121,4 @@ class ParagonsVehicleModel(ItemBonusModel):
         self._addStringProperty('compensatedBonus', '')
         self._addBoolProperty('wasSold', False)
         self._addStringProperty('role', '')
+        self._addNumberProperty('seasonID', 0)

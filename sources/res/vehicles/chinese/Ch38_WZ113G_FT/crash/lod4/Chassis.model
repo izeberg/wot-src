@@ -3,14 +3,8 @@
 	<tank>true</tank>
 	<materialNames/>
 	<visibilityBox>
-		<min>
-			-1.66142 -0.0296025 -3.88857
-			<!--BW_String-->
-		</min>
-		<max>
-			1.69984 1.12621 3.98606
-			<!--BW_String-->
-		</max>
+		<min>-1.661417 -0.029602 -3.888569</min>
+		<max>1.699839 1.126210 3.986057</max>
 	</visibilityBox>
 	<nodefullVisual>vehicles/chinese/Ch38_WZ113G_FT/crash/lod4/Chassis</nodefullVisual>
 </root>

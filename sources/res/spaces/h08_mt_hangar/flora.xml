@@ -38,9 +38,9 @@
 				<!--BW_String-->
 			</sizeLimit>
 			<enableSizeLimit>true</enableSizeLimit>
-			<tileType>maps/landscape/00_All_Outland_Tiles/Snow_flat_02_AM.dds</tileType>
+			<tileType>maps/landscape/00_All_Outland_Tiles/Grass_Lawn_Green_21_02.dds</tileType>
 			<grassType>
-				<name>bb_tree_83_kharkiv_Spruce_Oak_dry_claster</name>
+				<name>bb_tree_conifers_spruce_claster_C</name>
 				<tintWeight>
 					0.00 0.00
 					<!--BW_String-->
@@ -74,9 +74,9 @@
 				</oscillation>
 				<unique_random_seed>true</unique_random_seed>
 				<layer>
-					<name>bb_tree_83_kharkiv_Spruce_Oak_dry_claster_A</name>
+					<name>bb_tree_conifers_spruce_claster_C_lod0</name>
 					<comment>comment</comment>
-					<model>vegetation/Outland/bb_tree_83_kharkiv/bb_tree_83_kharkiv_Spruce_Oak_dry_claster_A.srt</model>
+					<model>vegetation/Outland/bb_tree_conifers/bb_tree_conifers_spruce_claster_C_lod0.srt</model>
 					<castShadow>false</castShadow>
 					<densityMin>
 						0.0010
@@ -146,7 +146,7 @@
 			<enableSizeLimit>true</enableSizeLimit>
 			<tileType>maps/landscape/00_All_Outland_Tiles/AsphaltNew_01_AM.dds</tileType>
 			<grassType>
-				<name>hd_out_SU_002_Houses_Snow</name>
+				<name>hd_out_SU_004_01</name>
 				<tintWeight>
 					0.00 0.00
 					<!--BW_String-->
@@ -180,9 +180,9 @@
 				</oscillation>
 				<unique_random_seed>true</unique_random_seed>
 				<layer>
-					<name>hd_out_SU_002_Houses_Snow_02.srt</name>
+					<name>hd_out_SU_004_01.srt</name>
 					<comment>comment</comment>
-					<model>vegetation/Outland/hd_out_SU_002_Houses_Snow/hd_out_SU_002_Houses_Snow_02.srt</model>
+					<model>vegetation/Outland/hd_out_SU_004/hd_out_SU_004_01.srt</model>
 					<castShadow>false</castShadow>
 					<densityMin>
 						0.0003
@@ -205,7 +205,7 @@
 						<!--BW_String-->
 					</fadeout>
 					<range>
-						1000.00
+						900.00
 						<!--BW_String-->
 					</range>
 					<startat>
@@ -238,7 +238,7 @@
 				</layer>
 			</grassType>
 			<grassType>
-				<name>hd_out_SU_002_Houses_Snow</name>
+				<name>hd_out_SU_004_02</name>
 				<tintWeight>
 					0.00 0.00
 					<!--BW_String-->
@@ -272,9 +272,9 @@
 				</oscillation>
 				<unique_random_seed>true</unique_random_seed>
 				<layer>
-					<name>hd_out_SU_002_Houses_Snow_01.srt</name>
+					<name>hd_out_SU_004_02</name>
 					<comment>comment</comment>
-					<model>vegetation/Outland/hd_out_SU_002_Houses_Snow/hd_out_SU_002_Houses_Snow_01.srt</model>
+					<model>vegetation/Outland/hd_out_SU_004/hd_out_SU_004_02.srt</model>
 					<castShadow>false</castShadow>
 					<densityMin>
 						0.0002
@@ -297,7 +297,7 @@
 						<!--BW_String-->
 					</fadeout>
 					<range>
-						1000.00
+						900.00
 						<!--BW_String-->
 					</range>
 					<startat>
@@ -331,6 +331,6 @@
 			</grassType>
 		</population>
 	</speedgrass>
-	<tintMap/>
+	<tintMap>trees_tint_map.dds</tintMap>
 	<scaleMap/>
 </root>

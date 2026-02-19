@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/intunion/Un15_SBM_44/crash/lod2/Hull</parent>
+	<tank>true</tank>
+	<extent>
+		64.0
+		<!--BW_String-->
+	</extent>
+	<nodefullVisual>vehicles/intunion/Un15_SBM_44/crash/lod1/Hull</nodefullVisual>
+	<visibilityBox>
+		<min>-1.643000 -0.850377 -3.455703</min>
+		<max>1.693576 0.606068 3.051823</max>
+	</visibilityBox>
+</root>

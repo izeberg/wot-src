@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<parent>vehicles/russian/R239_ST_Molot/_skins/R239_ST_Molot_02_3Dst_01/crash/lod1/Hull</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.780868 -0.719072 -3.267573</min>
+		<max>1.889579 0.620953 3.387400</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/russian/R239_ST_Molot/_skins/R239_ST_Molot_02_3Dst_01/crash/lod0/Hull</nodefullVisual>
+</root>

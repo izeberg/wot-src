@@ -43,8 +43,8 @@ msgstr "Экіпаж"
 
 msgid "categories/currency/subtitle"
 msgstr ""
-"Может содержать золото, серебро, боны, свободный опыт и Компоненты из "
-"открытых контейнеров."
+"Может содержать золото, серебро, боны, свободный опыт и компоненты "
+"из открытых контейнеров."
 
 msgid "categories/currency/title"
 msgstr "Валюты"
@@ -91,8 +91,8 @@ msgstr "Тэхніка"
 
 msgid "categories/vehicleCustomizations/subtitle"
 msgstr ""
-"Может содержать стили, камуфляжные схемы и другие элементы внешнего вида для"
-" техники."
+"Может содержать стили, камуфляжные схемы и другие элементы внешнего вида "
+"для техники."
 
 msgid "categories/vehicleCustomizations/title"
 msgstr "Выгляд"
@@ -155,8 +155,8 @@ msgstr "Вольны досвед"
 
 msgid "currencies/gold/subtitle"
 msgstr ""
-"Каштоўная ўнутрыгульнявая валюта, якую можна выдаткаваць на самыя розныя "
-"мэты: Танкавы прэміум акаўнт, тэхніку, абмен досведу і г.д."
+"Ценная игровая валюта, которую можно потратить на широкий спектр целей: "
+"Танковый премиум аккаунт, технику, перевод опыта и т. д."
 
 msgid "currencies/gold/title"
 msgstr "Золата"
@@ -276,7 +276,7 @@ msgid "guaranteedRewardTooltip/block1/bonus/multiply"
 msgstr "• Этап %(stage)s — %(boxNumber)s кантэйнера;"
 
 msgid "guaranteedRewardTooltip/block1/bonus/single"
-msgstr "%(boxNumber)s-го контейнера."
+msgstr "%(boxNumber)s-га кантэйнера."
 
 msgid "guaranteedRewardTooltip/block1/bonus/text"
 msgstr ""
@@ -312,7 +312,7 @@ msgstr "Гарантаваная ўзнагарода з этапаў"
 
 msgid "guaranteedRewardTooltip/block4/bonus/text"
 msgstr ""
-"Награду из третьего списка можно получать неограниченное количество раз."
+"Награду из третьего списка можно получать неограниченное количество раз."
 
 msgid "guaranteedRewardTooltip/block4/vehicle/text"
 msgstr ""
@@ -353,15 +353,15 @@ msgid "keyWelcomeScreen/header/titleMain"
 msgstr "Кантэйнер «Дзень нараджэння 2024»"
 
 msgid "lootBox/slot/description"
-msgstr "%(idx)s. Імавернасць выпадзення адной з узнагарод: "
+msgstr "%(idx)s. Одна из наград с вероятностью выпадения: "
 
 msgid "lootboxRotationTooltip/caption"
-msgstr "Вы можете получить одну из наград текущего этапа"
+msgstr "Вы можете получить одну из наград текущего этапа"
 
 msgid "lootboxRotationTooltip/description1"
 msgstr ""
-"Соберите технику из основных наград текущего этапа, чтобы перейти к "
-"следующему."
+"Соберите технику из основных наград текущего этапа, чтобы перейти "
+"к следующему."
 
 msgid "lootboxRotationTooltip/description2"
 msgstr "Кожны этап уключае ўнікальную тэхніку і іншую гульнявую маёмасць."
@@ -439,7 +439,7 @@ msgstr "Колькасць %(count)s адз."
 msgid "lootboxesStatsView/errorAll"
 msgstr ""
 "Статистика отсутствует.\n"
-"{cream_Open}Откройте хотя бы один контейнер любого типа{cream_Close},\n"
+"{cream_Open}Откройте хотя бы один контейнер любого типа{cream_Close},\n"
 "чтобы просмотреть статистику выпавших наград."
 
 msgid "lootboxesStatsView/errorCurrent"
@@ -507,7 +507,7 @@ msgid "openBoxScreen/backBtn/1"
 msgstr "У КРАМУ"
 
 msgid "openBoxScreen/backBtn/2"
-msgstr "НА ПЛОЩАДЬ"
+msgstr "НА ПЛОШЧУ"
 
 msgid "openBoxScreen/backBtn/3"
 msgstr "ДА АСКЕПКАЎ"
@@ -516,7 +516,7 @@ msgid "openBoxScreen/backBtn/4"
 msgstr "ДА РЭФЕРАЛЬНАЙ ПРАГРАМЫ"
 
 msgid "openBoxScreen/backBtn/5"
-msgstr "К ПРАЗДНИЧНОЙ ПОЧТЕ"
+msgstr "ДА СВЯТОЧНАЙ ПОШТЫ"
 
 msgid "openBoxScreen/backBtnMain"
 msgstr "У Гараж"
@@ -655,7 +655,7 @@ msgid "probabilityGuaranteedRewardTooltip/multiply"
 msgstr "• Этап %(stage)s — %(boxNumber)s кантэйнера;"
 
 msgid "probabilityGuaranteedRewardTooltip/single"
-msgstr "%(boxNumber)s-го контейнера."
+msgstr "%(boxNumber)s-га кантэйнера."
 
 msgid "probabilityGuaranteedRewardTooltip/text1"
 msgstr "Шанц выпадання прадмета з указанай групы."
@@ -781,13 +781,13 @@ msgid "time/days"
 msgstr "сут"
 
 msgid "time/hours"
-msgstr "ч."
+msgstr "гадз."
 
 msgid "time/lessThenMinute"
 msgstr "Хвіліну"
 
 msgid "time/minutes"
-msgstr "мин."
+msgstr "хв."
 
 msgid "time/seconds"
 msgstr "c"
@@ -920,7 +920,7 @@ msgstr ""
 
 msgid "tooltips/probabilityStageButtons/description2"
 msgstr ""
-"Награду из третьего списка можно получить неограниченное количество раз."
+"Награду из третьего списка можно получить неограниченное количество раз."
 
 msgid "tooltips/probabilityStageButtons/title"
 msgstr "Спісы змесціва"

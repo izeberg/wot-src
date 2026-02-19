@@ -13,17 +13,26 @@ msgstr "Достижение «%(achievement)s»"
 
 msgid "serviceChannelMessages/cosmicAchievementsMessage/body"
 msgstr ""
-"За выполнение личных заданий вы заслужили:\n"
+"За особые успехи в экспедиции вам полагается:\n"
 "%(achievements)s"
 
 msgid "serviceChannelMessages/cosmicAchievementsMessage/header"
-msgstr "Поздравляем!"
+msgstr "Отличная работа!"
+
+msgid "serviceChannelMessages/cosmicBattleResults/battle"
+msgstr "Заезд"
+
+msgid "serviceChannelMessages/cosmicBattleResults/ended"
+msgstr "Заезд окончен"
 
 msgid "serviceChannelMessages/cosmicBattleResults/modeName"
-msgstr "Режим: «На Марс: хаос»"
+msgstr "Режим: «В космос!»"
 
 msgid "serviceChannelMessages/cosmicBattleResults/points"
 msgstr "Очки события"
+
+msgid "serviceChannelMessages/cosmicBattleResults/tanks"
+msgstr "Машина"
 
 msgid "serviceChannelMessages/cosmicBattleResults/totalScore"
 msgstr "Получено очков"
@@ -37,23 +46,23 @@ msgid "serviceChannelMessages/cosmicDailyMessage/header"
 msgstr "Личное задание выполнено"
 
 msgid "serviceChannelMessages/cosmicEventEndedMessage/body"
-msgstr "Экспедиция «На Марс: хаос» завершена."
+msgstr "Экспедиция «В космос!» завершена. Но то ли ещё будет!"
 
 msgid "serviceChannelMessages/cosmicEventResumedMessage/body"
-msgstr "Экспедиция «На Марс: хаос» снова доступна."
+msgstr "Экспедиция «В космос!» снова доступна."
 
 msgid "serviceChannelMessages/cosmicEventStartedMessage/body"
-msgstr "Экспедиция «На Марс: хаос» стартовала. Вас ждут!"
+msgstr "Экспедиция «В космос!» стартовала. Но без вас ей не обойтись!"
 
 msgid "serviceChannelMessages/cosmicEventStartedMessage/button"
 msgstr "К событию"
 
 msgid "serviceChannelMessages/cosmicEventSuspendedMessage/body"
-msgstr "Экспедиция «На Марс: хаос» недоступна по техническим причинам."
+msgstr "Экспедиция «В космос!» недоступна по техническим причинам."
 
 msgid "serviceChannelMessages/cosmicProgressionMessage/body"
 msgstr ""
-"Вы перешли на следующий этап прогрессии!\n"
+"Вы завершили ещё один этап прогрессии!\n"
 "Полученные награды: \n"
 "%(rewards)s."
 
@@ -61,10 +70,10 @@ msgid "serviceChannelMessages/cosmicProgressionMessage/button"
 msgstr "К прогрессии"
 
 msgid "serviceChannelMessages/cosmicProgressionMessage/header"
-msgstr "Поздравляем!"
+msgstr "Дело движется!"
 
 msgid "serviceChannelMessages/cosmicTankmanBonus"
-msgstr "Добавлен член экипажа"
+msgstr "Добавлен универсальный член экипажа"
 
 msgid "serviceChannelMessages/eventName"
-msgstr "На Марс: хаос"
+msgstr "В космос!"

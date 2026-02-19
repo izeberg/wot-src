@@ -3,14 +3,8 @@
 	<tank>true</tank>
 	<materialNames/>
 	<visibilityBox>
-		<min>
-			-0.493398 -0.46642 0.0610962
-			<!--BW_String-->
-		</min>
-		<max>
-			0.493398 0.383454 3.96927
-			<!--BW_String-->
-		</max>
+		<min>-0.493398 -0.466420 0.061096</min>
+		<max>0.493398 0.383454 3.969270</max>
 	</visibilityBox>
 	<nodefullVisual>vehicles/chinese/Ch38_WZ113G_FT/normal/lod0/Gun_05</nodefullVisual>
 	<parent>vehicles/chinese/Ch38_WZ113G_FT/normal/lod1/Gun_05</parent>

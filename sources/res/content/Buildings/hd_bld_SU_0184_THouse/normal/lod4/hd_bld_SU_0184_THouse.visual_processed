@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<customBsp>true</customBsp>
+	<renderSet>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>s_wall_0.vertices</vertices>
+			<primitive>s_wall_0.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_wall_0</identifier>
+					<materialKind>111</materialKind>
+					<collisionFlags>128</collisionFlags>
+				</material>
+				<groupOrigin>-1.499403 4.303354 6.804646</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>s_nd1.vertices</vertices>
+			<primitive>s_nd1.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd1</identifier>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>108</materialKind>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<property>
+						diffuseMap
+						<Texture>content/Buildings/hd_bld_SU_0184_THouse/hd_bld_SU_0184_THouse_BAM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Buildings/hd_bld_SU_0184_THouse/hd_bld_SU_0184_THouse_BGMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Buildings/hd_bld_SU_0184_THouse/hd_bld_SU_0184_THouse_BANM.dds</Texture>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_enableTerrainBlending
+						<Bool>true</Bool>
+					</property>
+					<property>
+						alphaReference
+						<Int>153</Int>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+				</material>
+				<groupOrigin>-1.435149 4.836298 1.325140</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>s_wall_1.vertices</vertices>
+			<primitive>s_wall_1.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_wall_1</identifier>
+					<materialKind>111</materialKind>
+					<collisionFlags>1</collisionFlags>
+				</material>
+				<groupOrigin>-1.484563 1.474297 6.437869</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-19.752823 -0.596521 -4.834160</min>
+		<max>16.882524 10.269118 7.484440</max>
+	</boundingBox>
+	<geometrySize>11188</geometrySize>
+	<minUVDensity>0.000221</minUVDensity>
+</root>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<visibilityBox>
+		<min>-0.577462 -0.969313 -2.476141</min>
+		<max>0.749857 0.474907 4.389843</max>
+	</visibilityBox>
+	<parent>vehicles/sweden/S42_Kanonvagn_fm_49/crash/lod1/Gun_01</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/sweden/S42_Kanonvagn_fm_49/crash/lod0/Gun_01</nodefullVisual>
+</root>

@@ -51,13 +51,13 @@ msgid "bundles/countdown/days"
 msgstr "%(day)s сут."
 
 msgid "bundles/countdown/daysWithHours"
-msgstr "%(day)s сут %(hour)s гадз"
+msgstr "%(day)s д.  %(hour)s ч."
 
 msgid "bundles/countdown/hours"
 msgstr "%(hour)s гадз."
 
 msgid "bundles/countdown/hoursWithMinutes"
-msgstr "%(hour)s гадз %(min)s хв"
+msgstr "%(hour)s ч. %(min)s мин."
 
 msgid "bundles/countdown/min"
 msgstr "%(min)s хв."
@@ -222,25 +222,25 @@ msgid "entryPoint/tooltips/active/description"
 msgstr "Выконваецца задач: %(questsInProgress)s"
 
 msgid "entryPoint/tooltips/active/endOfEventTime/hours"
-msgstr "До конца заданий: %(hour)s ч. %(min)s мин."
+msgstr "Да канца заданняў: %(hour)s гадз. %(min)s хв."
 
 msgid "entryPoint/tooltips/active/endOfEventTime/min"
-msgstr "До конца заданий: %(min)s мин."
+msgstr "Да канца заданняў: %(min)s хв."
 
 msgid "entryPoint/tooltips/active/endOfEventTime/sec"
-msgstr "До конца заданий: < 1 мин."
+msgstr "Да канца заданняў: < 1 хв."
 
 msgid "entryPoint/tooltips/active/header"
 msgstr "Задачы Зборачнага цэха"
 
 msgid "entryPoint/tooltips/active/justBeforeStart/hours"
-msgstr "Будзе даступная праз %(hour)s гадз %(min)s хв"
+msgstr "Станет доступна через %(hour)s ч. %(min)s мин."
 
 msgid "entryPoint/tooltips/active/justBeforeStart/min"
-msgstr "Будзе даступная праз %(min)s хв"
+msgstr "Станет доступна через %(min)s мин."
 
 msgid "entryPoint/tooltips/active/justBeforeStart/sec"
-msgstr "Будзе даступная праз < 1 хв"
+msgstr "Станет доступна через < 1 мин."
 
 msgid "entryPoint/tooltips/active/locked"
 msgid_plural "plural/entryPoint/tooltips/active/locked"
@@ -574,7 +574,7 @@ msgid "mainView/title/step/16"
 msgstr "Усталяванне акумулятараў і паветранага фільтра"
 
 msgid "mainView/title/step/17"
-msgstr "Установка корзины башни с механизмом заряжания"
+msgstr "Усталяванне кошыка вежы з механізмам набівання"
 
 msgid "mainView/title/step/18"
 msgstr "Усталяванне ўнутранага абсталявання вежы"
@@ -601,7 +601,7 @@ msgid "mainView/title/step/24"
 msgstr "Пафарбоўка"
 
 msgid "mainView/title/step/25"
-msgstr "Установка надгусеничных полок и навесного оборудования"
+msgstr "Установка надгусеничных полок и навесного оборудования"
 
 msgid "mainView/title/step/26"
 msgstr "Выкатка машыны"
@@ -748,7 +748,7 @@ msgid "notifications/postPayed/multiple"
 msgstr "Этапы палігонных выпрабаванняў (%(count)d шт.) набыты."
 
 msgid "notifications/postPayed/single"
-msgstr "Этап полигонных испытаний (%(count)d шт.) успешно приобретён."
+msgstr "Этап палігонных выпрабаванняў (%(count)d шт.) набыты."
 
 msgid "notifications/purchaseStage"
 msgstr ""
@@ -910,9 +910,9 @@ msgstr "ЗАМЕНА ЗАДАЧЫ"
 
 msgid "rerollView/intro/tips/tip_1/description"
 msgstr ""
-"Теперь вам доступна новая механика замены задач! Если не понравилась задача,"
-" просто замените её на новую. Заменять задачи можно как бесплатно, так и за "
-"внутриигровую валюту."
+"Цяпер вам даступная новая механіка замены задач! Калі не спадабалася задача,"
+" проста замяніце яе на новую. Замяняць задачы можна як бясплатна, так і за "
+"ўнутрыгульнявую валюту."
 
 msgid "rerollView/intro/tips/tip_1/title"
 msgstr "Магчымасць замены задачы"
@@ -997,7 +997,7 @@ msgid "tabs/label/0"
 msgstr "Цэх"
 
 msgid "tabs/label/1"
-msgstr "Задачи"
+msgstr "Задачы"
 
 msgid "tabs/label/2"
 msgstr "Крама"
@@ -1205,10 +1205,10 @@ msgid "tooltip/tab/progression/header"
 msgstr "Ангар будаўніцтва"
 
 msgid "tooltip/tab/quests/body"
-msgstr "Задачи события «Сборочной цех»."
+msgstr "Задачы падзеі «Зборачны цэх»."
 
 msgid "tooltip/tab/quests/header"
-msgstr "Задачи"
+msgstr "Задачы"
 
 msgid "tooltip/tab/quests/note"
 msgstr "Даступныя: %(periodText)s"
@@ -1259,7 +1259,7 @@ msgstr[1] "%(value)s дні"
 msgstr[2] "%(value)s дзён"
 
 msgid "widget/countdown/hours"
-msgstr "%(hour)s гадз %(min)s хв"
+msgstr "%(hour)s ч. %(min)s мин."
 
 msgid "widget/countdown/min"
 msgstr "%(min)s хв."

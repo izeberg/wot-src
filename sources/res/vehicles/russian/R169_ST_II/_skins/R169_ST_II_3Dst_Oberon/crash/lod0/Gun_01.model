@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/russian/R169_ST_II/_skins/R169_ST_II_3Dst_Oberon/crash/lod1/Gun_01</parent>
+	<extent>32.000000</extent>
+	<nodelessVisual>vehicles/russian/R169_ST_II/_skins/R169_ST_II_3Dst_Oberon/crash/lod0/Gun_01</nodelessVisual>
+	<visibilityBox>
+		<min>-0.610516 -0.358683 -1.931862</min>
+		<max>0.537534 0.394546 4.883614</max>
+	</visibilityBox>
+</root>

@@ -1,6 +1,6 @@
 import enum
 ROLE_EQUIPMENT_TAG = 'roleEquipment'
-COMP7_CURRENT_SEASON = 2
+COMP7_CURRENT_SEASON = 3
 COMP7_MASKOT_ID = '5'
 SEASONS_IN_YEAR = 4
 COMP7_QUEST_PREFIX = ('comp7_{maskot}_{season}').format(maskot=COMP7_MASKOT_ID, season=COMP7_CURRENT_SEASON)

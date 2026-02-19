@@ -70,6 +70,8 @@ package net.wg.gui.components.crosshairPanel.components.coolantAbility
       
       private var _hidden:Boolean = true;
       
+      private var _isDiffAnimPlay:Boolean = false;
+      
       public function CoolantAbilityIndicator()
       {
          super();
@@ -109,28 +111,25 @@ package net.wg.gui.components.crosshairPanel.components.coolantAbility
          super.draw();
          if(isInvalid(InvalidationType.DATA))
          {
-            this._penaltyTf.text = this.formatValue(this._penaltyTweenValue);
-            this._penaltyActiveTf.text = this._penaltyTf.text;
+            this.setPenaltyValue(this._penaltyTweenValue);
          }
       }
       
-      public function updateReloadingPenalty(param1:Number) : void
+      public function updateReloadingPenalty(param1:Number, param2:Number) : void
       {
-         var diff:Number = NaN;
-         var value:Number = param1;
-         if(this._penalty == value)
+         if(this._penalty == param2)
          {
             return;
          }
          if(this._penalty == Values.ZERO)
          {
             dispatchEvent(new Event(ACTIVATED));
-            this._baseReloadingTime = value;
+            this._baseReloadingTime = param1;
             this.abilityModMc.alpha = Values.ZERO;
-            this._penaltyTf.text = this.formatValue(value);
+            this.penaltyTweenValue = param2;
             this.showPenalty();
          }
-         else if(value == Values.ZERO)
+         else if(param2 == Values.ZERO)
          {
             dispatchEvent(new Event(DEACTIVATED));
             this.hidePenalty();
@@ -140,21 +139,27 @@ package net.wg.gui.components.crosshairPanel.components.coolantAbility
             }
             this._baseReloadingTime = Values.ZERO;
          }
-         else
+         else if(!this._isDiffAnimPlay)
          {
-            diff = value - this._penalty;
-            if(diff > Values.ZERO)
-            {
-               this.clearActivePenaltyTimeoutTween();
-               this._activePenaltyTimeoutTween = new Tween(DIFF_TEXT_TWEEN_TIME + DIFF_TEXT_TWEEN_DELAY,this,{},{"onComplete":function():void
-               {
-                  activatePenalty(value);
-               }});
-               this._diffTf.text = Values.PLUS + this.formatValue(diff);
-               this.showDiffText();
-            }
+            this.setPenaltyValue(param2);
          }
-         this._penalty = value;
+         this._penalty = param2;
+      }
+      
+      public function addReloadingPenalty(param1:Number) : void
+      {
+         var value:Number = param1;
+         if(value > Values.ZERO)
+         {
+            this.clearActivePenaltyTimeoutTween();
+            this._isDiffAnimPlay = true;
+            this._activePenaltyTimeoutTween = new Tween(DIFF_TEXT_TWEEN_TIME + DIFF_TEXT_TWEEN_DELAY,this,{},{"onComplete":function():void
+            {
+               activatePenalty(_penalty);
+            }});
+            this._diffTf.text = Values.PLUS + this.formatValue(value);
+            this.showDiffText();
+         }
       }
       
       public function showAbilityMod() : void
@@ -175,6 +180,13 @@ package net.wg.gui.components.crosshairPanel.components.coolantAbility
             this.clearAbilityModTween();
             this._abilityModTween = new Tween(ABILITY_MOD_TWEEN_TIME,this.abilityModMc,{"alpha":Values.ZERO},{"ease":Cubic.easeOut});
          }
+      }
+      
+      private function setPenaltyValue(param1:Number) : void
+      {
+         this._penaltyTf.text = this.formatValue(param1);
+         this._penaltyActiveTf.text = this._penaltyTf.text;
+         this.penaltyTweenValue = param1;
       }
       
       private function formatValue(param1:Number) : String
@@ -198,6 +210,7 @@ package net.wg.gui.components.crosshairPanel.components.coolantAbility
       private function hideActiveBg() : void
       {
          this.clearActiveBgTween();
+         this._isDiffAnimPlay = false;
          this._activeBgTween = new Tween(BG_TWEEN_TIME,this._activeBg,{"alpha":Values.ZERO},{
             "ease":Cubic.easeOut,
             "delay":BG_TWEEN_DELAY

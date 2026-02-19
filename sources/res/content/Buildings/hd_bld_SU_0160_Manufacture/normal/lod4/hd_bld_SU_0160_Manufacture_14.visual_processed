@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>s_wall0.vertices</vertices>
+			<primitive>s_wall0.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_wall0</identifier>
+					<collisionFlags>144</collisionFlags>
+					<materialKind>0</materialKind>
+				</material>
+				<groupOrigin>-1.635502 6.111236 2.331269</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>s_nd0.vertices</vertices>
+			<stream>s_nd0.colour</stream>
+			<primitive>s_nd0.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0</identifier>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>111</materialKind>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<property>
+						diffuseMap
+						<Texture>content/Buildings/hd_bld_SU_0160_Manufacture/hd_bld_SU_0160_Manufacture_14_BAM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Buildings/hd_bld_SU_0160_Manufacture/hd_bld_SU_0160_Manufacture_14_BGMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Buildings/hd_bld_SU_0160_Manufacture/hd_bld_SU_0160_Manufacture_14_BANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.058582 3.780388 0.799678</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>s_nd1.vertices</vertices>
+			<stream>s_nd1.colour</stream>
+			<primitive>s_nd1.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd1</identifier>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>112</materialKind>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<property>
+						diffuseMap
+						<Texture>content/Buildings/hd_bld_SU_0160_Manufacture/hd_bld_SU_0160_Manufacture_14_BAM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Buildings/hd_bld_SU_0160_Manufacture/hd_bld_SU_0160_Manufacture_14_BGMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Buildings/hd_bld_SU_0160_Manufacture/hd_bld_SU_0160_Manufacture_14_BANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.004416 7.309639 0.052670</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-3.482777 -0.738415 -3.847726</min>
+		<max>3.491608 8.355379 5.348948</max>
+	</boundingBox>
+	<geometrySize>16726</geometrySize>
+	<minUVDensity>0.001605</minUVDensity>
+</root>

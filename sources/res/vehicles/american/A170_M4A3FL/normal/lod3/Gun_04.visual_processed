@@ -73,37 +73,62 @@
 			<primitiveGroup>
 				0
 				<material>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<materialKind>0</materialKind>
 					<identifier>tank_guns_skinned</identifier>
+					<collisionFlags>0</collisionFlags>
 					<property>
 						diffuseMap
 						<Texture>vehicles/american/A170_M4A3FL/M4A3FL_guns_01_AM.dds</Texture>
 					</property>
-					<collisionFlags>0</collisionFlags>
-					<materialKind>0</materialKind>
-					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
 					<property>
 						colorIdMap
 						<Texture>vehicles/american/A170_M4A3FL/M4A3FL_guns_01_ID.dds</Texture>
-					</property>
-					<property>
-						excludeMaskAndAOMap
-						<Texture>vehicles/american/A170_M4A3FL/M4A3FL_guns_01_AO.dds</Texture>
-					</property>
-					<property>
-						g_detailUVTiling
-						<Vector4>3.506850 1.753430 0.000000 0.000000</Vector4>
-					</property>
-					<property>
-						metallicDetailMap
-						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
 					</property>
 					<property>
 						metallicGlossMap
 						<Texture>vehicles/american/A170_M4A3FL/M4A3FL_guns_01_GMM.dds</Texture>
 					</property>
 					<property>
+						g_detailPowerGloss
+						<Float>
+							0.35
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_maskBias
+						<Float>
+							0.18
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>3.506850 1.753430 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_detailPower
+						<Float>5</Float>
+					</property>
+					<property>
 						normalMap
 						<Texture>vehicles/american/A170_M4A3FL/M4A3FL_guns_01_ANM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/american/A170_M4A3FL/M4A3FL_guns_01_AO.dds</Texture>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
 					</property>
 				</material>
 				<groupOrigin>-0.100036 0.050248 -0.968725</groupOrigin>
@@ -115,6 +140,6 @@
 		<min>-0.654346 -0.251387 -0.153921</min>
 		<max>0.454274 0.351884 2.091371</max>
 	</boundingBox>
-	<geometrySize>9696</geometrySize>
+	<geometrySize>8716</geometrySize>
 	<minUVDensity>0.009788</minUVDensity>
 </root>

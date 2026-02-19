@@ -365,6 +365,12 @@ package
       
       public static const DETAILSHELP_DUALGUNWITHCLIP_DESCRIPTION:String = "#ingame_help:detailsHelp/dualgunWithClip/description";
       
+      public static const DETAILSHELP_AUTOSHOOT_HEADERTITLE:String = "#ingame_help:detailsHelp/autoShoot/headerTitle";
+      
+      public static const DETAILSHELP_AUTOSHOOT_TITLE:String = "#ingame_help:detailsHelp/autoShoot/title";
+      
+      public static const DETAILSHELP_AUTOSHOOT_DESCRIPTION:String = "#ingame_help:detailsHelp/autoShoot/description";
+      
       public static const DETAILSHELP_DISTANCEDAMAGE_HEADERTITLE:String = "#ingame_help:detailsHelp/distanceDamage/headerTitle";
       
       public static const DETAILSHELP_DISTANCEDAMAGE_TITLE:String = "#ingame_help:detailsHelp/distanceDamage/title";

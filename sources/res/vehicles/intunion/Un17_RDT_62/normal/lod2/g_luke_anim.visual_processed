@@ -84,6 +84,10 @@
 						normalMap
 						<Texture>vehicles/intunion/Un17_RDT_62/RDT_62_guns_ANM.dds</Texture>
 					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/intunion/Un17_RDT_62/RDT_62_guns_ID.dds</Texture>
+					</property>
 				</material>
 				<groupOrigin>-0.000033 0.402205 -0.127593</groupOrigin>
 			</primitiveGroup>

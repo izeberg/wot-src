@@ -1766,13 +1766,13 @@ msgid "serviceChannelMessages/battlePass/newDeviceToken"
 msgstr "Штатнае абсталяванне на выбар"
 
 msgid "serviceChannelMessages/battlePass/reachedCapFactor/header"
-msgstr "Достигнут лимит очков Боевого пропуска"
+msgstr "Дасягнуты ліміт ачкоў Баявога пропуска"
 
 msgid "serviceChannelMessages/battlePass/reachedCapFactor/text"
 msgstr ""
-"На %(vehNameHighlight)s заработано максимально доступное количество очков.\n"
-"Получено очков в награду: %(bonusPoints)s\n"
-"Лимит очков и награда обновились. Продолжайте зарабатывать очки на %(vehName)s."
+"На %(vehNameHighlight)s заработано максимально доступное количество очков.\n"
+"Получено очков в награду: %(bonusPoints)s\n"
+"Лимит очков и награда обновились. Продолжайте зарабатывать очки на %(vehName)s."
 
 msgid "serviceChannelMessages/battlePass/reachedCapWeek/header"
 msgstr "Дасягнуты штотыднёвы ліміт ачкоў Баявога пропуска"
@@ -1805,8 +1805,8 @@ msgstr "Атрымана ўзнагарода за пройдзеныя этап
 
 msgid "serviceChannelMessages/battlePassReward/battle/chapterFinal/text"
 msgstr ""
-"Вы завершили главу %(chapter)s.\n"
-"Получена награда:"
+"Вы завяршылі раздзел %(chapter)s.\n"
+"Атрымана ўзнагарода:"
 
 msgid ""
 "serviceChannelMessages/battlePassReward/battle/chapterFinalNotFind/text"
@@ -1819,8 +1819,8 @@ msgstr "Працягвайце гуляць і здабываць ачкі!"
 
 msgid "serviceChannelMessages/battlePassReward/battle/final/text"
 msgstr ""
-"Вы завершили все главы Боевого пропуска %(season)s сезона.\n"
-"Получена награда:"
+"Вы завяршылі ўсе раздзелы Баявога пропуска %(season)s сезона.\n"
+"Атрымана ўзнагарода:"
 
 msgid "serviceChannelMessages/battlePassReward/battle/newLevel/text"
 msgstr ""
@@ -2934,6 +2934,33 @@ msgid "serviceChannelMessages/itemReceivedAsGift"
 msgstr ""
 "Ад адміністрацыі атрыманы рыштунак: %(typeName)s «%(itemName)s» — %(amount)d"
 " шт."
+
+msgid "serviceChannelMessages/limitedUIContentUnlocked/battleMode"
+msgstr "Доступен режим боя:"
+
+msgid "serviceChannelMessages/limitedUIContentUnlocked/battleModes"
+msgstr "Доступны режимы боя:"
+
+msgid "serviceChannelMessages/limitedUIContentUnlocked/content"
+msgstr "Доступен раздел:"
+
+msgid "serviceChannelMessages/limitedUIContentUnlocked/contents"
+msgstr "Доступны разделы:"
+
+msgid "serviceChannelMessages/limitedUIContentUnlocked/personalMissions"
+msgstr "Кампании"
+
+msgid "serviceChannelMessages/limitedUIContentUnlocked/stronghold"
+msgstr "Укрепрайон"
+
+msgid "serviceChannelMessages/limitedUIContentUnlocked/title"
+msgstr "Разблокированы игровые возможности!"
+
+msgid "serviceChannelMessages/limitedUIContentUnlocked/tournaments"
+msgstr "Турниры"
+
+msgid "serviceChannelMessages/limitedUIContentUnlocked/versusAI"
+msgstr "Полигон"
 
 msgid "serviceChannelMessages/lootBoxes/button"
 msgstr "Да кантэйнераў"

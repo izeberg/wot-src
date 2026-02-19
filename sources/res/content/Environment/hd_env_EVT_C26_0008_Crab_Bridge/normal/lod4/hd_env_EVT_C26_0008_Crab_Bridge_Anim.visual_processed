@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>hd_env_EVT_C26_0008_Crab_Bridge2</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>Root</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.000000 0.000000</row3>
+				</transform>
+				<node>
+					<identifier>Down</identifier>
+					<transform>
+						<row0>0.805476 0.592628 0.000000</row0>
+						<row1>-0.592628 0.805476 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>7.470812 -2.158925 0.000000</row3>
+					</transform>
+					<node>
+						<identifier>Down_BlendBone</identifier>
+						<transform>
+							<row0>0.805476 -0.592628 0.000000</row0>
+							<row1>0.592628 0.805476 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>-4.738120 6.166377 -0.000000</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>Main</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>-0.773212 1.823246 -0.000000</row3>
+					</transform>
+					<node>
+						<identifier>Up</identifier>
+						<transform>
+							<row0>0.805476 0.592628 0.000000</row0>
+							<row1>-0.592628 0.805476 -0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>15.391032 1.276234 0.000000</row3>
+						</transform>
+						<node>
+							<identifier>Up_BlendBone</identifier>
+							<transform>
+								<row0>0.805476 -0.592628 0.000000</row0>
+								<row1>0.592628 0.805476 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>-13.611145 6.166378 0.000000</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>Main_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>0.773212 -1.823246 0.000000</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>Root_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>Root_BlendBone</node>
+		<node>Main_BlendBone</node>
+		<node>Up_BlendBone</node>
+		<node>Down_BlendBone</node>
+		<geometry>
+			<vertices>s0Shape.vertices</vertices>
+			<primitive>s0Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0_skinned</identifier>
+					<fx>shaders/std_effects/PBS_ext_skinned.fx</fx>
+					<materialKind>108</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Environment/hd_env_EVT_C26_0008_Crab_Bridge/hd_env_EVT_C26_0008_Crab_Bridge_BAM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Environment/hd_env_EVT_C26_0008_Crab_Bridge/hd_env_EVT_C26_0008_Crab_Bridge_BGMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Environment/hd_env_EVT_C26_0008_Crab_Bridge/hd_env_EVT_C26_0008_Crab_Bridge_BANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>10.482194 2.604676 0.000000</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>-4.686480 -3.795236 -9.818607</min>
+		<max>25.989355 25.736233 9.818607</max>
+	</boundingBox>
+	<geometrySize>29232</geometrySize>
+	<minUVDensity>0.000153</minUVDensity>
+</root>

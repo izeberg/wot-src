@@ -1354,13 +1354,13 @@ msgid "customizationConfirmSell/title"
 msgstr "Пацвярджэнне продажу"
 
 msgid "dailyQuests/dialogConfirmReroll/timeLimitMsgHours"
-msgstr "кожныя %(hours)s гадз"
+msgstr "каждые %(hours)s ч."
 
 msgid "dailyQuests/dialogConfirmReroll/timeLimitMsgHoursMins"
-msgstr "кожныя %(hours)s гадз %(mins)s хв"
+msgstr "каждые %(hours)s ч %(mins)s мин."
 
 msgid "dailyQuests/dialogConfirmReroll/timeLimitMsgMins"
-msgstr "кожныя %(mins)s хв"
+msgstr "каждые %(mins)s мин."
 
 msgid "dailyQuests/dialogInfoConfirmReroll/message"
 msgstr "Замена задачы даступная {timeLimitMsg}"
@@ -1396,9 +1396,9 @@ msgstr "Змяніць акаўнт"
 
 msgid "demoAccountBootcampFailure/message"
 msgstr ""
-"Гэты акаўнт часова не можа ўвайсці ў гульню. Паспрабуйце змяніць акаўнт у LGC.\n"
+"Этот аккаунт временно не может войти в игру. Попробуйте сменить аккаунт в LGC.\n"
 "\n"
-"<font color=\"#FF7009\"><u><A HREF='event:hyperLink'>Або дапоўніце свой акаўнт.</A></u></font>"
+"<font color=\"#FF7009\"><u><A HREF='event:hyperLink'>Или дополните свой аккаунт.</A></u></font>"
 
 msgid "demoAccountBootcampFailure/title"
 msgstr "Памылка"
@@ -3122,7 +3122,7 @@ msgid "sessionStats/confirmReset/submit"
 msgstr "Скінуць"
 
 msgid "sessionStats/confirmReset/time"
-msgstr ": %(hours)s гадз %(minutes)s хв"
+msgstr ": %(hours)s ч. %(minutes)s мин."
 
 msgid "sessionStats/confirmReset/title"
 msgstr "Скінуць статыстыку сеанса?"

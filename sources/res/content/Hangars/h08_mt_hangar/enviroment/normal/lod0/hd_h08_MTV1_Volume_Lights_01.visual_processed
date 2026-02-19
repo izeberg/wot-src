@@ -32,11 +32,11 @@
 					</property>
 					<property>
 						g_tintColor
-						<Vector4>1.000000 0.886275 0.580392 1.000000</Vector4>
+						<Vector4>0.858824 0.784314 0.686275 1.000000</Vector4>
 					</property>
 					<property>
 						selfIllumination
-						<Float>40.000000</Float>
+						<Float>25.000000</Float>
 					</property>
 				</material>
 				<groupOrigin>0.196781 -1.192108 0.003437</groupOrigin>

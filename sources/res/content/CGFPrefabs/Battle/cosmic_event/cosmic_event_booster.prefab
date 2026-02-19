@@ -3,43 +3,43 @@
 	<version>3</version>
 	<GameObjects>
 		<GameObject>
-			<name>cosmic_event_booster</name>
+			<name>cosmic_event_boards</name>
 			<UUID>8e09350c-973e-487c-9a7d-ec837b53ab1a</UUID>
 			<flags>0</flags>
 		</GameObject>
 		<GameObject>
-			<name>Booster_1</name>
+			<name>board_1</name>
 			<UUID>879f7467-981f-405d-8e65-88e710de3bb5</UUID>
 			<flags>0</flags>
 		</GameObject>
 		<GameObject>
-			<name>Booster_2</name>
+			<name>board_2</name>
 			<UUID>ae9bf01f-bdba-3a06-a168-005d667abaa1</UUID>
 			<flags>0</flags>
 		</GameObject>
 		<GameObject>
-			<name>Booster_3</name>
+			<name>board_3</name>
 			<UUID>75bea480-687f-3e6d-89eb-d283ab306565</UUID>
 			<flags>0</flags>
 		</GameObject>
 		<GameObject>
-			<name>Booster_4</name>
+			<name>board_4</name>
 			<UUID>4e5ce287-80d8-300c-b73a-2cc426b75644</UUID>
 			<flags>0</flags>
 		</GameObject>
 		<GameObject>
-			<name>Booster_5</name>
+			<name>board_5</name>
 			<UUID>9a3bce52-3bf9-3366-b348-a62e4714290d</UUID>
 			<flags>0</flags>
 		</GameObject>
 		<GameObject>
-			<name>Booster_6</name>
+			<name>board_6</name>
 			<UUID>31d0f36c-6942-3a24-9233-f21a6066d0b5</UUID>
 			<flags>0</flags>
 		</GameObject>
 		<GameObject>
-			<name>Booster_7</name>
-			<UUID>b6500a41-dbc8-34f9-b7ff-42e022f14f79</UUID>
+			<name>board_7</name>
+			<UUID>40436259-4d9b-34b2-a18d-7698fd6f5618</UUID>
 			<flags>0</flags>
 		</GameObject>
 	</GameObjects>
@@ -146,7 +146,7 @@
 					<property>
 						<name>Position</name>
 						<value>
-							158.135 47.7106 -153.961
+							150.914 -14.6143 -194.578
 							<!--BW_String-->
 						</value>
 					</property>
@@ -157,7 +157,7 @@
 					<property>
 						<name>Rotation</name>
 						<value>
-							-0.261941 0.607315 0.0258612
+							-0.34526 -0.690554 0.000970695
 							<!--BW_String-->
 						</value>
 					</property>
@@ -170,7 +170,7 @@
 					<property>
 						<name>Position</name>
 						<value>
-							181.623 47.6325 -118.384
+							127.502 -41.2737 17.2235
 							<!--BW_String-->
 						</value>
 					</property>
@@ -181,7 +181,7 @@
 					<property>
 						<name>Rotation</name>
 						<value>
-							-0.248866 -2.55694 -0.0391287
+							-0.270072 -1.61725 0.00848255
 							<!--BW_String-->
 						</value>
 					</property>
@@ -194,7 +194,7 @@
 					<property>
 						<name>Position</name>
 						<value>
-							-14.367 46.3252 180.728
+							-49.1606 -25.4999 207.442
 							<!--BW_String-->
 						</value>
 					</property>
@@ -208,7 +208,7 @@
 					<property>
 						<name>Rotation</name>
 						<value>
-							0.00666551 2.04776 -0.0386627
+							-0.334419 -2.77614 -0.00765541
 							<!--BW_String-->
 						</value>
 					</property>
@@ -221,7 +221,7 @@
 					<property>
 						<name>Position</name>
 						<value>
-							-160.415 41.5334 108.442
+							-4.85404 -52.1923 -93.1468
 							<!--BW_String-->
 						</value>
 					</property>
@@ -232,7 +232,7 @@
 					<property>
 						<name>Rotation</name>
 						<value>
-							-0.0595317 -2.45128 0.145671
+							-0.215167 2.75524 -0.000176376
 							<!--BW_String-->
 						</value>
 					</property>
@@ -245,7 +245,7 @@
 					<property>
 						<name>Position</name>
 						<value>
-							-205.462 43.9813 54.7677
+							-168.562 -29.7635 -161.181
 							<!--BW_String-->
 						</value>
 					</property>
@@ -256,7 +256,7 @@
 					<property>
 						<name>Rotation</name>
 						<value>
-							-0.0715585 0.642715 -0.0649263
+							-0.320699 1.80521 0.0676693
 							<!--BW_String-->
 						</value>
 					</property>
@@ -269,7 +269,7 @@
 					<property>
 						<name>Position</name>
 						<value>
-							-84.8431 37.0181 -85.2842
+							-131.699 -27.8867 -184.81
 							<!--BW_String-->
 						</value>
 					</property>
@@ -283,7 +283,7 @@
 					<property>
 						<name>Rotation</name>
 						<value>
-							-0.192161 -1.28282 0.00296705
+							-0.249002 -0.815032 -0.0905657
 							<!--BW_String-->
 						</value>
 					</property>
@@ -296,7 +296,7 @@
 					<property>
 						<name>Position</name>
 						<value>
-							-112.811 38.2095 -76.809
+							-165.433 -30.3929 1.09496
 							<!--BW_String-->
 						</value>
 					</property>
@@ -310,9 +310,261 @@
 					<property>
 						<name>Rotation</name>
 						<value>
-							-0.192161 1.8126 0.00296707
+							-0.242351 1.54296 -0.0050993
 							<!--BW_String-->
 						</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>NetworkComponent</type>
+			<version>1</version>
+			<component>
+				<objectIndex>0</objectIndex>
+				<flags>33</flags>
+			</component>
+			<component>
+				<objectIndex>1</objectIndex>
+				<flags>33</flags>
+			</component>
+			<component>
+				<objectIndex>2</objectIndex>
+				<flags>33</flags>
+			</component>
+			<component>
+				<objectIndex>3</objectIndex>
+				<flags>33</flags>
+			</component>
+			<component>
+				<objectIndex>4</objectIndex>
+				<flags>33</flags>
+			</component>
+			<component>
+				<objectIndex>5</objectIndex>
+				<flags>33</flags>
+			</component>
+			<component>
+				<objectIndex>6</objectIndex>
+				<flags>33</flags>
+			</component>
+			<component>
+				<objectIndex>7</objectIndex>
+				<flags>33</flags>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>NetworkEntity</type>
+			<version>1</version>
+			<component>
+				<objectIndex>0</objectIndex>
+				<flags>33</flags>
+			</component>
+			<component>
+				<objectIndex>1</objectIndex>
+				<flags>33</flags>
+			</component>
+			<component>
+				<objectIndex>2</objectIndex>
+				<flags>33</flags>
+			</component>
+			<component>
+				<objectIndex>3</objectIndex>
+				<flags>33</flags>
+			</component>
+			<component>
+				<objectIndex>4</objectIndex>
+				<flags>33</flags>
+			</component>
+			<component>
+				<objectIndex>5</objectIndex>
+				<flags>33</flags>
+			</component>
+			<component>
+				<objectIndex>6</objectIndex>
+				<flags>33</flags>
+			</component>
+			<component>
+				<objectIndex>7</objectIndex>
+				<flags>33</flags>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>NetworkTransformComponent</type>
+			<version>1</version>
+			<component>
+				<objectIndex>0</objectIndex>
+				<flags>33</flags>
+				<config>
+					<property>
+						<name>filterType</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>lagDelay</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>extrapolate</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>detailed</name>
+						<value>0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>1</objectIndex>
+				<flags>33</flags>
+				<config>
+					<property>
+						<name>filterType</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>lagDelay</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>extrapolate</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>detailed</name>
+						<value>0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>2</objectIndex>
+				<flags>33</flags>
+				<config>
+					<property>
+						<name>filterType</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>lagDelay</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>extrapolate</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>detailed</name>
+						<value>0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>3</objectIndex>
+				<flags>33</flags>
+				<config>
+					<property>
+						<name>filterType</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>lagDelay</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>extrapolate</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>detailed</name>
+						<value>0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>4</objectIndex>
+				<flags>33</flags>
+				<config>
+					<property>
+						<name>filterType</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>lagDelay</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>extrapolate</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>detailed</name>
+						<value>0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>5</objectIndex>
+				<flags>33</flags>
+				<config>
+					<property>
+						<name>filterType</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>lagDelay</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>extrapolate</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>detailed</name>
+						<value>0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>6</objectIndex>
+				<flags>33</flags>
+				<config>
+					<property>
+						<name>filterType</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>lagDelay</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>extrapolate</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>detailed</name>
+						<value>0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>7</objectIndex>
+				<flags>33</flags>
+				<config>
+					<property>
+						<name>filterType</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>lagDelay</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>extrapolate</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>detailed</name>
+						<value>0</value>
 					</property>
 				</config>
 			</component>
@@ -326,11 +578,11 @@
 				<config>
 					<property>
 						<name>Height</name>
-						<value>3</value>
+						<value>7</value>
 					</property>
 					<property>
 						<name>Radius</name>
-						<value>5</value>
+						<value>6</value>
 					</property>
 				</config>
 			</component>
@@ -340,11 +592,11 @@
 				<config>
 					<property>
 						<name>Height</name>
-						<value>3</value>
+						<value>7</value>
 					</property>
 					<property>
 						<name>Radius</name>
-						<value>5</value>
+						<value>6</value>
 					</property>
 				</config>
 			</component>
@@ -358,7 +610,7 @@
 					</property>
 					<property>
 						<name>Radius</name>
-						<value>5</value>
+						<value>6</value>
 					</property>
 				</config>
 			</component>
@@ -372,7 +624,7 @@
 					</property>
 					<property>
 						<name>Radius</name>
-						<value>5</value>
+						<value>6</value>
 					</property>
 				</config>
 			</component>
@@ -386,7 +638,7 @@
 					</property>
 					<property>
 						<name>Radius</name>
-						<value>5</value>
+						<value>6</value>
 					</property>
 				</config>
 			</component>
@@ -396,11 +648,11 @@
 				<config>
 					<property>
 						<name>Height</name>
-						<value>3</value>
+						<value>7</value>
 					</property>
 					<property>
 						<name>Radius</name>
-						<value>5</value>
+						<value>6</value>
 					</property>
 				</config>
 			</component>
@@ -410,11 +662,11 @@
 				<config>
 					<property>
 						<name>Height</name>
-						<value>3</value>
+						<value>7</value>
 					</property>
 					<property>
 						<name>Radius</name>
-						<value>5</value>
+						<value>6</value>
 					</property>
 				</config>
 			</component>
@@ -452,116 +704,109 @@
 			</component>
 		</ComponentPool>
 		<ComponentPool>
-			<type>DynamicModel</type>
+			<type>BoosterActivationComponent</type>
 			<version>1</version>
 			<component>
 				<objectIndex>1</objectIndex>
-				<flags>2</flags>
+				<flags>34</flags>
 				<config>
 					<property>
-						<name>Model name</name>
-						<isAsset>true</isAsset>
-						<value>content/Environment/hd_env_UNI_673_CosmicDebris/normal/lod0/hd_env_UNI_673_CosmicDebris_06.model</value>
+						<name>turnOnTime</name>
+						<value>0</value>
 					</property>
 					<property>
-						<name>Cast Shadows</name>
-						<value>1</value>
+						<name>turnOffTime</name>
+						<value>360</value>
 					</property>
 				</config>
 			</component>
 			<component>
 				<objectIndex>2</objectIndex>
-				<flags>2</flags>
+				<flags>34</flags>
 				<config>
 					<property>
-						<name>Model name</name>
-						<isAsset>true</isAsset>
-						<value>content/Environment/hd_env_UNI_673_CosmicDebris/normal/lod0/hd_env_UNI_673_CosmicDebris_06.model</value>
+						<name>turnOnTime</name>
+						<value>0</value>
 					</property>
 					<property>
-						<name>Cast Shadows</name>
-						<value>1</value>
+						<name>turnOffTime</name>
+						<value>360</value>
 					</property>
 				</config>
 			</component>
 			<component>
 				<objectIndex>3</objectIndex>
-				<flags>2</flags>
+				<flags>34</flags>
 				<config>
 					<property>
-						<name>Model name</name>
-						<isAsset>true</isAsset>
-						<value>content/Environment/hd_env_UNI_673_CosmicDebris/normal/lod0/hd_env_UNI_673_CosmicDebris_06.model</value>
+						<name>turnOnTime</name>
+						<value>0</value>
 					</property>
 					<property>
-						<name>Cast Shadows</name>
-						<value>1</value>
+						<name>turnOffTime</name>
+						<value>360</value>
 					</property>
 				</config>
 			</component>
 			<component>
 				<objectIndex>4</objectIndex>
-				<flags>2</flags>
+				<flags>34</flags>
 				<config>
 					<property>
-						<name>Model name</name>
-						<isAsset>true</isAsset>
-						<value>content/Environment/hd_env_UNI_673_CosmicDebris/normal/lod0/hd_env_UNI_673_CosmicDebris_06.model</value>
+						<name>turnOnTime</name>
+						<value>0</value>
 					</property>
 					<property>
-						<name>Cast Shadows</name>
-						<value>1</value>
+						<name>turnOffTime</name>
+						<value>360</value>
 					</property>
 				</config>
 			</component>
 			<component>
 				<objectIndex>5</objectIndex>
-				<flags>2</flags>
+				<flags>34</flags>
 				<config>
 					<property>
-						<name>Model name</name>
-						<isAsset>true</isAsset>
-						<value>content/Environment/hd_env_UNI_673_CosmicDebris/normal/lod0/hd_env_UNI_673_CosmicDebris_06.model</value>
+						<name>turnOnTime</name>
+						<value>0</value>
 					</property>
 					<property>
-						<name>Cast Shadows</name>
-						<value>1</value>
+						<name>turnOffTime</name>
+						<value>360</value>
 					</property>
 				</config>
 			</component>
 			<component>
 				<objectIndex>6</objectIndex>
-				<flags>2</flags>
+				<flags>34</flags>
 				<config>
 					<property>
-						<name>Model name</name>
-						<isAsset>true</isAsset>
-						<value>content/Environment/hd_env_UNI_673_CosmicDebris/normal/lod0/hd_env_UNI_673_CosmicDebris_06.model</value>
+						<name>turnOnTime</name>
+						<value>0</value>
 					</property>
 					<property>
-						<name>Cast Shadows</name>
-						<value>1</value>
+						<name>turnOffTime</name>
+						<value>360</value>
 					</property>
 				</config>
 			</component>
 			<component>
 				<objectIndex>7</objectIndex>
-				<flags>2</flags>
+				<flags>34</flags>
 				<config>
 					<property>
-						<name>Model name</name>
-						<isAsset>true</isAsset>
-						<value>content/Environment/hd_env_UNI_673_CosmicDebris/normal/lod0/hd_env_UNI_673_CosmicDebris_06.model</value>
+						<name>turnOnTime</name>
+						<value>0</value>
 					</property>
 					<property>
-						<name>Cast Shadows</name>
-						<value>1</value>
+						<name>turnOffTime</name>
+						<value>360</value>
 					</property>
 				</config>
 			</component>
 		</ComponentPool>
 		<ComponentPool>
-			<type>CosmicEventImpulseComponent</type>
+			<type>ImpulseComponent</type>
 			<version>1</version>
 			<component>
 				<objectIndex>1</objectIndex>
@@ -570,13 +815,17 @@
 					<property>
 						<name>impulseDirection</name>
 						<value>
-							0.3 0 0.3
+							-0.3 0 0.3
 							<!--BW_String-->
 						</value>
 					</property>
 					<property>
 						<name>massCoef</name>
-						<value>30</value>
+						<value>20</value>
+					</property>
+					<property>
+						<name>velocityLimit</name>
+						<value>500</value>
 					</property>
 					<property>
 						<name>trigger</name>
@@ -591,13 +840,17 @@
 					<property>
 						<name>impulseDirection</name>
 						<value>
-							-0.3 0 -0.3
+							-0.5 0 0
 							<!--BW_String-->
 						</value>
 					</property>
 					<property>
 						<name>massCoef</name>
-						<value>30</value>
+						<value>23</value>
+					</property>
+					<property>
+						<name>velocityLimit</name>
+						<value>500</value>
 					</property>
 					<property>
 						<name>trigger</name>
@@ -612,13 +865,17 @@
 					<property>
 						<name>impulseDirection</name>
 						<value>
-							0.3 0.3 -0.3
+							-0.2 0 -0.4
 							<!--BW_String-->
 						</value>
 					</property>
 					<property>
 						<name>massCoef</name>
-						<value>30</value>
+						<value>22</value>
+					</property>
+					<property>
+						<name>velocityLimit</name>
+						<value>500</value>
 					</property>
 					<property>
 						<name>trigger</name>
@@ -633,13 +890,17 @@
 					<property>
 						<name>impulseDirection</name>
 						<value>
-							-0.45 0.45 -0.3
+							0.1 0.3 -0.3
 							<!--BW_String-->
 						</value>
 					</property>
 					<property>
 						<name>massCoef</name>
-						<value>35</value>
+						<value>20</value>
+					</property>
+					<property>
+						<name>velocityLimit</name>
+						<value>500</value>
 					</property>
 					<property>
 						<name>trigger</name>
@@ -654,13 +915,17 @@
 					<property>
 						<name>impulseDirection</name>
 						<value>
-							0.35 0.3 0.3
+							0.3 0 -0.2
 							<!--BW_String-->
 						</value>
 					</property>
 					<property>
 						<name>massCoef</name>
-						<value>35</value>
+						<value>22</value>
+					</property>
+					<property>
+						<name>velocityLimit</name>
+						<value>500</value>
 					</property>
 					<property>
 						<name>trigger</name>
@@ -675,13 +940,17 @@
 					<property>
 						<name>impulseDirection</name>
 						<value>
-							-0.4 0 0.1
+							-0.3 0 0.3
 							<!--BW_String-->
 						</value>
 					</property>
 					<property>
 						<name>massCoef</name>
-						<value>30</value>
+						<value>18</value>
+					</property>
+					<property>
+						<name>velocityLimit</name>
+						<value>500</value>
 					</property>
 					<property>
 						<name>trigger</name>
@@ -696,125 +965,69 @@
 					<property>
 						<name>impulseDirection</name>
 						<value>
-							0.4 0 -0.1
+							0.45 0 0.1
 							<!--BW_String-->
 						</value>
 					</property>
 					<property>
 						<name>massCoef</name>
-						<value>30</value>
+						<value>22</value>
+					</property>
+					<property>
+						<name>velocityLimit</name>
+						<value>500</value>
 					</property>
 					<property>
 						<name>trigger</name>
-						<link>b6500a41-dbc8-34f9-b7ff-42e022f14f79</link>
+						<link>40436259-4d9b-34b2-a18d-7698fd6f5618</link>
 					</property>
 				</config>
 			</component>
 		</ComponentPool>
 		<ComponentPool>
-			<type>CosmicEventNameComponent</type>
+			<type>BoosterTypeComponent</type>
 			<version>1</version>
 			<component>
-				<objectIndex>1</objectIndex>
+				<objectIndex>0</objectIndex>
 				<flags>34</flags>
 				<config>
 					<property>
-						<name>name</name>
-						<value>board_1</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>2</objectIndex>
-				<flags>34</flags>
-				<config>
-					<property>
-						<name>name</name>
-						<value>board_2</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>3</objectIndex>
-				<flags>34</flags>
-				<config>
-					<property>
-						<name>name</name>
-						<value>board_3</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>4</objectIndex>
-				<flags>34</flags>
-				<config>
-					<property>
-						<name>name</name>
-						<value>board_4</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>5</objectIndex>
-				<flags>34</flags>
-				<config>
-					<property>
-						<name>name</name>
-						<value>board_5</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>6</objectIndex>
-				<flags>34</flags>
-				<config>
-					<property>
-						<name>name</name>
-						<value>board_6</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>7</objectIndex>
-				<flags>34</flags>
-				<config>
-					<property>
-						<name>name</name>
-						<value>board_7</value>
+						<name>type</name>
+						<value>board</value>
 					</property>
 				</config>
 			</component>
 		</ComponentPool>
 		<ComponentPool>
-			<type>VehicleInCGFRule</type>
+			<type>BoosterComponent</type>
 			<version>1</version>
 			<component>
 				<objectIndex>1</objectIndex>
-				<flags>34</flags>
+				<flags>35</flags>
 			</component>
 			<component>
 				<objectIndex>2</objectIndex>
-				<flags>34</flags>
+				<flags>35</flags>
 			</component>
 			<component>
 				<objectIndex>3</objectIndex>
-				<flags>34</flags>
+				<flags>35</flags>
 			</component>
 			<component>
 				<objectIndex>4</objectIndex>
-				<flags>34</flags>
+				<flags>35</flags>
 			</component>
 			<component>
 				<objectIndex>5</objectIndex>
-				<flags>34</flags>
+				<flags>35</flags>
 			</component>
 			<component>
 				<objectIndex>6</objectIndex>
-				<flags>34</flags>
+				<flags>35</flags>
 			</component>
 			<component>
 				<objectIndex>7</objectIndex>
-				<flags>34</flags>
+				<flags>35</flags>
 			</component>
 		</ComponentPool>
 	</components>

@@ -1,7 +1,7 @@
 import Event, logging, re, time, typing
 from collections import OrderedDict
 from PlayerEvents import g_playerEvents
-from cosmic_event.skeletons.battle_controller import ICosmicEventBattleController
+from skeletons.gui.game_control import ICosmicEventBattleController
 from cosmic_event.skeletons.progression_controller import ICosmicEventProgressionController
 from helpers import dependency
 from skeletons.gui.lobby_context import ILobbyContext

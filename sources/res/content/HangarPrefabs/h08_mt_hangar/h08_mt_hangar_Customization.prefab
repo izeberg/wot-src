@@ -172,7 +172,10 @@
 					</property>
 					<property>
 						<name>DistLimits</name>
-						<value>1 15</value>
+						<value>
+							1 13.2
+							<!--BW_String-->
+						</value>
 					</property>
 					<property>
 						<name>StartYaw</name>

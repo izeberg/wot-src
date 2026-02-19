@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/intunion/Un14_T54D/_skins/T54D_3Dst_Stellar/normal/lod1/Turret_01</nodefullVisual>
+	<parent>vehicles/intunion/Un14_T54D/_skins/T54D_3Dst_Stellar/normal/lod2/Turret_01</parent>
+	<tank>true</tank>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.551130 -0.000015 -1.640374</min>
+		<max>1.549673 0.897506 1.645530</max>
+	</visibilityBox>
+</root>

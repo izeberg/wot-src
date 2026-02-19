@@ -544,13 +544,11 @@ package net.wg.gui.lobby.fortifications.battleRoom.clanBattle
       
       override protected function setReservesEnabled(param1:Array) : void
       {
-         this.resetReserveSlotsVisibility();
          var _loc2_:int = param1.length;
          var _loc3_:int = 0;
          while(_loc3_ < _loc2_)
          {
             this._reserveSlots[_loc3_].enabled = param1[_loc3_];
-            this._reserveSlots[_loc3_].visible = true;
             _loc3_++;
          }
       }

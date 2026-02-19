@@ -311,7 +311,7 @@ package net.wg.gui.battle.views.consumablesPanel
          invalidate(INVALIDATE_DRAW_LAYOUT);
       }
       
-      public function as_showAbilityModifier(param1:int, param2:Boolean) : void
+      public function as_setAbilityModifier(param1:int, param2:Boolean) : void
       {
          if(this._abilityModifier == null)
          {
@@ -322,14 +322,13 @@ package net.wg.gui.battle.views.consumablesPanel
             this._abilityModifier.isSmall = this._itemsPadding == ITEM_WIDTH_SHORT_PADDING;
             this._abilityModifier.updateAnimationsSettings(this._isExtendedAnim);
          }
-         this._abilityModifier.show(param1,param2);
-      }
-      
-      public function as_hideAbilityModifier(param1:Boolean) : void
-      {
-         if(this._abilityModifier)
+         if(param1 <= Values.ZERO)
          {
-            this._abilityModifier.hide(param1);
+            this._abilityModifier.hide(param2);
+         }
+         else
+         {
+            this._abilityModifier.show(param1,param2);
          }
       }
       

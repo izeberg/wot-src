@@ -112,7 +112,7 @@
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 1.000000 0.000000</row1>
 					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>-0.000000 0.000000 0.000000</row3>
+					<row3>-0.000000 0.000000 0.001000</row3>
 				</transform>
 				<node>
 					<identifier>static_joint_BlendBone</identifier>
@@ -120,7 +120,7 @@
 						<row0>1.000000 0.000000 0.000000</row0>
 						<row1>0.000000 1.000000 0.000000</row1>
 						<row2>0.000000 0.000000 -1.000000</row2>
-						<row3>0.000000 -0.000000 -0.000000</row3>
+						<row3>0.000000 -0.000000 -0.001000</row3>
 					</transform>
 				</node>
 			</node>
@@ -149,7 +149,7 @@
 					</property>
 					<property>
 						colorIdMap
-						<Texture>vehicles/british/GB136_FV245/FV245_guns_ID.dds</Texture>
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 					<property>
 						diffuseMap
@@ -180,15 +180,15 @@
 						<Texture>vehicles/british/GB143_Captain/_skins/GB143_Captain_3Dst_01/Captain_3Dst_01_turret_01_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.004081 0.098216 -1.735292</groupOrigin>
+				<groupOrigin>0.004081 0.098216 -1.735792</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<constraints/>
 	<boundingBox>
-		<min>-1.060139 -0.344209 -0.721283</min>
+		<min>-1.060139 -0.344209 -0.720283</min>
 		<max>1.068300 0.540640 4.191867</max>
 	</boundingBox>
-	<geometrySize>205640</geometrySize>
+	<geometrySize>205840</geometrySize>
 	<minUVDensity>0.002404</minUVDensity>
 </root>

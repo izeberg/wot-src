@@ -1248,13 +1248,13 @@
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
 		<node>V_BlendBone</node>
 		<node>Track_L0_BlendBone</node>
-		<node>Track_L1_BlendBone</node>
 		<node>Track_L5_BlendBone</node>
+		<node>Track_L3_BlendBone</node>
+		<node>Track_L2_BlendBone</node>
+		<node>Track_L4_BlendBone</node>
 		<node>Track_L6_BlendBone</node>
 		<node>Track_L7_BlendBone</node>
-		<node>Track_L2_BlendBone</node>
-		<node>Track_L3_BlendBone</node>
-		<node>Track_L4_BlendBone</node>
+		<node>Track_L1_BlendBone</node>
 		<node>W_L0_BlendBone</node>
 		<node>W_L1_BlendBone</node>
 		<node>W_L2_BlendBone</node>
@@ -1340,14 +1340,14 @@
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
 		<node>V_BlendBone</node>
-		<node>Track_R0_BlendBone</node>
-		<node>Track_R1_BlendBone</node>
+		<node>Track_R5_BlendBone</node>
+		<node>Track_R3_BlendBone</node>
+		<node>Track_R2_BlendBone</node>
+		<node>Track_R4_BlendBone</node>
 		<node>Track_R6_BlendBone</node>
 		<node>Track_R7_BlendBone</node>
-		<node>Track_R2_BlendBone</node>
-		<node>Track_R3_BlendBone</node>
-		<node>Track_R4_BlendBone</node>
-		<node>Track_R5_BlendBone</node>
+		<node>Track_R0_BlendBone</node>
+		<node>Track_R1_BlendBone</node>
 		<node>W_R0_BlendBone</node>
 		<node>W_R1_BlendBone</node>
 		<node>W_R2_BlendBone</node>
@@ -1433,8 +1433,8 @@
 	<constraints/>
 	<boundingBox>
 		<min>-1.676291 -0.000298 -3.303271</min>
-		<max>1.676291 1.277537 3.240923</max>
+		<max>1.676291 1.277536 3.240923</max>
 	</boundingBox>
-	<geometrySize>916584</geometrySize>
+	<geometrySize>920904</geometrySize>
 	<minUVDensity>0.039992</minUVDensity>
 </root>

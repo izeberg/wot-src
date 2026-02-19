@@ -46,7 +46,7 @@ msgid "alertMessage/timeLeft/days"
 msgstr "%(day)s сут."
 
 msgid "alertMessage/timeLeft/hours"
-msgstr "%(hour)s гадз %(min)s хв"
+msgstr "%(hour)s ч. %(min)s мин."
 
 msgid "alertMessage/timeLeft/lessMin"
 msgstr "1 хв."
@@ -500,10 +500,10 @@ msgstr ""
 "узнагароды."
 
 msgid "introPage/timeLeft/days"
-msgstr "%(day)s сут %(hour)s гадз"
+msgstr "%(day)s д. %(hour)s ч."
 
 msgid "introPage/timeLeft/hours"
-msgstr "%(hour)s гадз %(min)s хв"
+msgstr "%(hour)s ч. %(min)s мин."
 
 msgid "introPage/timeLeft/lessMin"
 msgstr "1 хв."
@@ -727,19 +727,19 @@ msgid "quests/detailed/notInLeagues"
 msgstr "Спачатку дайдзіце да ліг"
 
 msgid "quests/detailed/seasonEnd/days"
-msgstr "да канца сезона %(day)s сут"
+msgstr "до конца сезона %(day)s д."
 
 msgid "quests/detailed/seasonEnd/default"
 msgstr "сезон хутка скончыцца"
 
 msgid "quests/detailed/seasonEnd/hours"
-msgstr "да канца сезона %(hour)s гадз"
+msgstr "до конца сезона %(hour)s ч."
 
 msgid "quests/detailed/seasonEnd/lessMin"
 msgstr "да канца сезона менш за хвіліну"
 
 msgid "quests/detailed/seasonEnd/min"
-msgstr "да канца сезона %(min)s хв"
+msgstr "до конца сезона %(min)s мин."
 
 msgid "quests/detailed/unavailableLabel"
 msgstr "Недаступна:"
@@ -753,19 +753,19 @@ msgid "quests/tooltip/unavailable/body/notInLeagues"
 msgstr "Спачатку дайдзіце да ліг"
 
 msgid "quests/tooltip/unavailable/body/seasonEnd/days"
-msgstr "Да канца сезона %(day)s сут"
+msgstr "До конца сезона %(day)s д."
 
 msgid "quests/tooltip/unavailable/body/seasonEnd/default"
 msgstr "Сезон хутка скончыцца"
 
 msgid "quests/tooltip/unavailable/body/seasonEnd/hours"
-msgstr "Да канца сезона %(hour)s гадз"
+msgstr "До конца сезона %(hour)s ч."
 
 msgid "quests/tooltip/unavailable/body/seasonEnd/lessMin"
 msgstr "Да канца сезона менш за хвіліну"
 
 msgid "quests/tooltip/unavailable/body/seasonEnd/min"
-msgstr "Да канца сезона %(min)s хв"
+msgstr "До конца сезона %(min)s мин."
 
 msgid "quests/tooltip/unavailable/bottom"
 msgstr "Выкананне недаступнае"
@@ -798,16 +798,16 @@ msgid "questsTooltip/bottom"
 msgstr "Яшчэ задач: %(number)d"
 
 msgid "questsTooltip/cooldown/days"
-msgstr "Новыя задачы з'явяцца праз %(day)s сут"
+msgstr "Новые задачи появятся через %(day)s д."
 
 msgid "questsTooltip/cooldown/hours"
-msgstr "Новыя задачы з'явяцца праз %(hour)s гадз"
+msgstr "Новые задачи появятся через %(hour)s ч."
 
 msgid "questsTooltip/cooldown/lessMin"
 msgstr "Новыя задачы з'явяцца праз хвіліну"
 
 msgid "questsTooltip/cooldown/min"
-msgstr "Новыя задачы з'явяцца праз %(min)s хв"
+msgstr "Новые задачи появятся через %(min)s мин."
 
 msgid "questsTooltip/header"
 msgstr "Задачы Рангавых баёў"
@@ -819,16 +819,16 @@ msgid "questsTooltip/unavailable/notInLeagues"
 msgstr "Недаступна: спярша дайдзіце да ліг"
 
 msgid "questsTooltip/unavailable/seasonEnd/days"
-msgstr "Недаступна: до канца сезона %(day)s сут"
+msgstr "Недоступно: до конца сезона %(day)s д."
 
 msgid "questsTooltip/unavailable/seasonEnd/hours"
-msgstr "Недаступна: до канца сезона %(hour)s гадз"
+msgstr "Недоступно: до конца сезона %(hour)s ч."
 
 msgid "questsTooltip/unavailable/seasonEnd/lessMin"
 msgstr "Недаступна: до канца сезона менш за хвіліну"
 
 msgid "questsTooltip/unavailable/seasonEnd/min"
-msgstr "Недаступна: до канца сезона %(min)s хв"
+msgstr "Недоступно: до конца сезона %(min)s мин."
 
 msgid "rankTooltip/body"
 msgstr "Бягучы ранг гульца."

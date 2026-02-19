@@ -229,9 +229,17 @@ class CrosshairPanelContainerMeta(DAAPISimpleContainerMeta):
         if self._isDAAPIInited():
             return self.flashObject.as_setOverheatState(state)
 
-    def as_setCoolantAbilityReloadingPenaltyS(self, seconds):
+    def as_setCoolantAbilityReloadingPenaltyS(self, baseValue, seconds):
         if self._isDAAPIInited():
-            return self.flashObject.as_setCoolantAbilityReloadingPenalty(seconds)
+            return self.flashObject.as_setCoolantAbilityReloadingPenalty(baseValue, seconds)
+
+    def as_addCoolantAbilityReloadingPenaltyS(self, seconds):
+        if self._isDAAPIInited():
+            return self.flashObject.as_addCoolantAbilityReloadingPenalty(seconds)
+
+    def as_setAbilityModifierS(self, value, immediately=False):
+        if self._isDAAPIInited():
+            return self.flashObject.as_setAbilityModifier(value, immediately)
 
     def as_setShotFlyTimeIndVisibilityS(self, isVisible):
         if self._isDAAPIInited():

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/czech/Cz00_COSM_Gravizapa_02/normal/lod4/Chassis</parent>
+	<tank>true</tank>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.681076 -0.003965 -2.805327</min>
+		<max>1.681076 1.395141 2.372272</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/czech/Cz00_COSM_Gravizapa_02/normal/lod3/Chassis</nodefullVisual>
+</root>

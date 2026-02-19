@@ -113,6 +113,9 @@ msgstr "Strv 103A"
 msgid "Chassis_S11_Strv_103B"
 msgstr "Strv 103B"
 
+msgid "Chassis_S11_Strv_103B_ISP"
+msgstr "Strv 103B"
+
 msgid "Chassis_S12_Strv_M40"
 msgstr "Strv m/40L"
 
@@ -218,6 +221,12 @@ msgstr "Lago M38"
 msgid "Chassis_S36_VK_155_Projekt"
 msgstr "VK 155"
 
+msgid "Chassis_S37_AKV_151"
+msgstr "AKV 151 Alt 1"
+
+msgid "Chassis_S37_AKV_151_2"
+msgstr "AKV 151 Alt 2"
+
 msgid "Chassis_S39_15cm_AKV60_Utkast_1"
 msgstr "Strv S"
 
@@ -233,6 +242,15 @@ msgstr "LS-46K"
 msgid "Chassis_S41_Bofors_Pagod_TK105"
 msgstr "Pagod TK105"
 
+msgid "Chassis_S42_Kanonvagn_fm_49"
+msgstr "Kanonvagn fm/49 Alt 1"
+
+msgid "Chassis_S42_Kanonvagn_fm_49_2"
+msgstr "Kanonvagn fm/49 Alt 2"
+
+msgid "Continental_AV_1790"
+msgstr "Continental AV-1790"
+
 msgid "Continental_AV_1790_5B"
 msgstr "Continental AV-1790-5B"
 
@@ -240,6 +258,11 @@ msgid "Continental_AV_1790_5B_short"
 msgstr ""
 "Continental\n"
 "AV-1790-5B"
+
+msgid "Continental_AV_1790_short"
+msgstr ""
+"Continental\n"
+"AV-1790"
 
 msgid "DB_605"
 msgstr "DB 605"
@@ -289,6 +312,9 @@ msgstr "Motoraggregat 5"
 msgid "Motoraggregat_9"
 msgstr "Motoraggregat 9"
 
+msgid "Motoraggregat_9_ISP"
+msgstr "Motoraggregat 9"
+
 msgid "Ra_100"
 msgstr "Ra 100"
 
@@ -320,6 +346,9 @@ msgid "Ra_421"
 msgstr "Ra 421"
 
 msgid "Ra_421_1"
+msgstr "Ra 421"
+
+msgid "Ra_421_1_ISP"
 msgstr "Ra 421"
 
 msgid "Ra_421_1_SH"
@@ -374,9 +403,9 @@ msgstr ""
 "22,5 тонны устанавливалось короткоствольное 75-мм орудие «Бофорс». Всего "
 "было выпущено 282 машины различных модификаций, отличавшихся силовой "
 "установкой и трансмиссией. В модификациях ТМ, ТН и TV устанавливались "
-"спаренные двигатели Scania-Vabis L-603 мощностью 160 л. с., в то время как "
-"танки Strv m/42 ЕН приводились в движение одним двигателем Volvo A8B "
-"мощностью 370 л. с."
+"спаренные двигатели Scania-Vabis L-603 мощностью 160 л.с., в то время как "
+"танки Strv m/42 ЕН приводились в движение одним двигателем Volvo A8B "
+"мощностью 370 л.с."
 
 msgid "S02_Strv_M42_short"
 msgstr "Strv m/42"
@@ -558,6 +587,29 @@ msgstr "Strv 103-0"
 
 msgid "S11_Strv_103B"
 msgstr "Strv 103B"
+
+msgid "S11_Strv_103B_ISP"
+msgstr "Strv 103B Испытательный"
+
+msgid "S11_Strv_103B_ISP_descr"
+msgstr ""
+"Разрабатывался в 1969–1971 гг. в рамках модернизации Strv 103. По сравнению "
+"с предыдущей модификацией Strv 103A, Strv 103B получила более мощный "
+"газотурбинный двигатель, лазерный дальномер и инфракрасные приборы. Также "
+"была предусмотрена возможность установки оборудования для преодоления водных"
+" преград. В 1970 году на вооружение было принято 220 машин. В то же время "
+"машины ранней модификации Strv 103A были переоборудованы до версии Strv "
+"103B, в результате чего по состоянию на 1971 год их общее количество "
+"составило 290 единиц."
+
+msgid "S11_Strv_103B_ISP_long_special"
+msgstr "?empty?"
+
+msgid "S11_Strv_103B_ISP_short"
+msgstr "Strv 103B (И)"
+
+msgid "S11_Strv_103B_ISP_short_special"
+msgstr "?empty?"
 
 msgid "S11_Strv_103B_descr"
 msgstr ""
@@ -1103,6 +1155,27 @@ msgstr ""
 msgid "S36_VK_155_Projekt_short"
 msgstr "VK 155 Pr."
 
+msgid "S37_AKV_151"
+msgstr "AKV 151"
+
+msgid "S37_AKV_151_descr"
+msgstr ""
+"В середине 1950-х гг. была начата разработка перспективного танка EMIL, "
+"который в дальнейшем переименовали в Krv (Kranvagn). На его базе было решено"
+" делать САУ, позже получившую обозначение AKV-151, которую проектировали "
+"совместно Landsverk (шасси) и Bofors (орудийная часть). По причине того, что"
+" Bofors долго разрабатывала артиллерийскую часть, опытный образец AKV-151 "
+"появился лишь в 1960 году, на 4 года позже Krv. При его создании шасси Krv "
+"повернули задом наперёд, переместив место механика-водителя. Шасси получило "
+"модернизированную ходовую часть и вынесенные назад ленивцы, что дало "
+"возможность установить башню в кормовой части машины. Питание орудия "
+"магазинного типа позволило увеличить скорострельность. Поскольку к 1960 году"
+" программу Krv закрыли, то у шасси AKV-151 не было будущего и, как "
+"следствие, дальнейшего развития разработка не получила."
+
+msgid "S37_AKV_151_short"
+msgstr "AKV 151"
+
 msgid "S39_15cm_AKV60_Utkast_1"
 msgstr "AKV60 Utkast 1"
 
@@ -1166,6 +1239,27 @@ msgstr "Pagod TK105"
 
 msgid "S41_Bofors_Pagod_TK105_short_special"
 msgstr "Хорошее бронепробитие, отличные УВН"
+
+msgid "S42_Kanonvagn_fm_49"
+msgstr "Kanonvagn fm/49"
+
+msgid "S42_Kanonvagn_fm_49_descr"
+msgstr ""
+"В июне 1948 года Bofors представила первые наброски по принципиально новой "
+"самоходной артиллерийской установке. Концептуальным прообразом машины "
+"являлась американская САУ GMC M12. В 1949 году САУ получила обозначение "
+"Kanonvagn fm/49. Она получила принципиально новое шасси, в котором "
+"использовались как шведские, так и зарубежные агрегаты. В качестве силовой "
+"установки использовалась спарка моторов Scania-Vabis. Главной особенностью "
+"САУ стало наличие механизма заряжания. Благодаря этому скорострельность "
+"достигала 10 выстрелов в минуту. Концепция Kanonvagn fm/49 командованию "
+"шведской артиллерии понравилась, но разработку шасси доверили Landsverk. "
+"Случилось это на фоне разработки танка EMIL, САУ решили унифицировать "
+"по шасси. В результате вместо Kanonvagn fm/49 была разработана совершенно "
+"другая САУ, известная как AKV 151."
+
+msgid "S42_Kanonvagn_fm_49_short"
+msgstr "Kanonvagn"
 
 msgid "SFA_8_cyl_boxer"
 msgstr "SFA 8 cyl boxer"
@@ -1254,6 +1348,9 @@ msgstr "Strv 103-0"
 msgid "Turret_1_S11_Strv_103B"
 msgstr "Strv 103B"
 
+msgid "Turret_1_S11_Strv_103B_ISP"
+msgstr "Strv 103B"
+
 msgid "Turret_1_S12_Strv_M40"
 msgstr "Strv m/40L"
 
@@ -1329,6 +1426,9 @@ msgstr "Lago M38"
 msgid "Turret_1_S36_VK_155_Projekt"
 msgstr "VK 155"
 
+msgid "Turret_1_S37_AKV_151"
+msgstr "AKV 151"
+
 msgid "Turret_1_S39_15cm_AKV60_Utkast_1"
 msgstr "AKV60"
 
@@ -1337,6 +1437,9 @@ msgstr "LS-46"
 
 msgid "Turret_1_S41_Bofors_Pagod_TK105"
 msgstr "Pagod TK105"
+
+msgid "Turret_1_S42_Kanonvagn_fm_49"
+msgstr "Kanonvagn fm/49"
 
 msgid "Turret_2_S02_Strv_M42"
 msgstr "Strv m/42"
@@ -1380,6 +1483,9 @@ msgstr "Volvo DC"
 msgid "Volvo_FE"
 msgstr "Volvo FE"
 
+msgid "Volvo_SFA_12"
+msgstr "Volvo SFA-12"
+
 msgid "Volvo_TD_100_A"
 msgstr "Volvo TD 100 A"
 
@@ -1402,7 +1508,7 @@ msgid "_105mm_Bofors_D_G5_HEAT_SH"
 msgstr "slpprj D/5"
 
 msgid "_105mm_Bofors_D_G5_SH"
-msgstr "10.5 cm Bofors D/5"
+msgstr "10,5 cm Bofors D/5"
 
 msgid "_105mm_Kanon_M34"
 msgstr "10,5 cm Kanon m/34"
@@ -1426,7 +1532,7 @@ msgid "_105mm_kan_ikv_103D_G2_HEAT_SH"
 msgstr "slpprj 103D"
 
 msgid "_105mm_kan_ikv_103D_G2_SH"
-msgstr "10.5 cm kan 103D"
+msgstr "10,5 cm kan 103D"
 
 msgid "_105mm_kan_m_34"
 msgstr "10 cm kan m/34"
@@ -1438,7 +1544,7 @@ msgid "_105mm_kan_m_41_strv_G1_HEAT_SH"
 msgstr "slpprj m/41"
 
 msgid "_105mm_kan_m_41_strv_G1_SH"
-msgstr "10.5 cm kan m/41"
+msgstr "10,5 cm kan m/41"
 
 msgid "_105mm_kan_m_44_sav"
 msgstr "10,5 cm kan m/44 sav"
@@ -1455,6 +1561,9 @@ msgstr "10,5 cm kan strv 103 L/62"
 msgid "_105mm_kan_strv_103_L_62_1"
 msgstr "10,5 cm kan strv 103 L/62"
 
+msgid "_105mm_kan_strv_103_L_62_ISP"
+msgstr "10,5 cm kan strv 103 L/62"
+
 msgid "_105mm_kan_strv_K_L_52"
 msgstr "10,5 cm kan strv K L/52"
 
@@ -1462,7 +1571,7 @@ msgid "_105mm_lt_sgr_m_34"
 msgstr "lt sgr m/34"
 
 msgid "_105mm_lvkan_L_53"
-msgstr "10.5 cm K L/53"
+msgstr "10,5 cm K L/53"
 
 msgid "_105mm_lvkan_L_67"
 msgstr "10,5 cm lvkan L/67"
@@ -1539,6 +1648,9 @@ msgstr "slpprj m/61D"
 msgid "_105mm_slpprj_m_61P"
 msgstr "slpprj m/61P"
 
+msgid "_105mm_slpprj_m_61_ISP"
+msgstr "slpprj m/61"
+
 msgid "_105mm_slpprj_m_62"
 msgstr "slpprj m/62"
 
@@ -1553,6 +1665,9 @@ msgstr "slpprj m/66D"
 
 msgid "_105mm_slpprj_m_66P"
 msgstr "slpprj m/66P"
+
+msgid "_105mm_slpprj_m_66_ISP"
+msgstr "slpprj m/66"
 
 msgid "_105mm_slpprj_m_ny"
 msgstr "slpprj m/ny"
@@ -1570,6 +1685,9 @@ msgid "_105mm_slsgr_M_34"
 msgstr "slsgr m/34"
 
 msgid "_105mm_slsgr_m_61A"
+msgstr "slsgr m/61A"
+
+msgid "_105mm_slsgr_m_61A_ISP"
 msgstr "slsgr m/61A"
 
 msgid "_105mm_slsgr_m_61B"
@@ -1597,7 +1715,7 @@ msgid "_105mm_strvkan_L_45_G4_HEAT_SH"
 msgstr "slpprj L/45"
 
 msgid "_105mm_strvkan_L_45_G4_SH"
-msgstr "10.5 cm strvkan L/45"
+msgstr "10,5 cm strvkan L/45"
 
 msgid "_105mm_strvkan_L_51"
 msgstr "10,5 cm strvkan L/51"
@@ -1695,13 +1813,22 @@ msgstr "Stålgranat M/39-40 T"
 msgid "_152mm_Kanon_FM49_L50"
 msgstr "15,2 cm Kanon fm/49 L50"
 
+msgid "_152mm_Kanon_FM49_L50_1"
+msgstr "15,2 cm Kanon fm/49 L50 prot."
+
 msgid "_152mm_Kanon_FM49_L50_T"
 msgstr "15,2 cm Kanon fm/49 L50 T"
 
 msgid "_152mm_Kanon_M37"
 msgstr "15,2 cm Kanon m/37"
 
+msgid "_152mm_sprgr_M36_1"
+msgstr "Spränggranat M/36"
+
 msgid "_152mm_sprgr_M39"
+msgstr "Spränggranat M/39"
+
+msgid "_152mm_sprgr_M39_1"
 msgstr "Spränggranat M/39"
 
 msgid "_152mm_sprgr_M39_T"
@@ -1710,8 +1837,14 @@ msgstr "Spränggranat M/39 T"
 msgid "_152mm_stlgr_M39"
 msgstr "Stålgranat M/39"
 
+msgid "_152mm_stlgr_M39_1"
+msgstr "Stålgranat M/39"
+
 msgid "_152mm_stlgr_M39_T"
 msgstr "Stålgranat M/39 T"
+
+msgid "_155mm_Kanon_L50"
+msgstr "15,5 cm Kanon L50"
 
 msgid "_155mm_Kanon_M60"
 msgstr "15,5 cm Kanon М60"
@@ -1722,8 +1855,14 @@ msgstr "15,5 cm Kanon М60 T"
 msgid "_155mm_slpgr_M112"
 msgstr "slpgr m112"
 
+msgid "_155mm_slpgr_M112_50"
+msgstr "slpgr m112"
+
 msgid "_155mm_slpgr_M112_T"
 msgstr "slpgr m112 T"
+
+msgid "_155mm_slsgr_M60_50"
+msgstr "slsgr m/60"
 
 msgid "_155mm_slsgr_M66"
 msgstr "slsgr m/66"
@@ -1793,6 +1932,22 @@ msgstr "2 st Scania-Vabis L 603/1"
 
 msgid "_2_st_Scania_Vabis_L_603_1S"
 msgstr "2 st. Scania-Vabis 607"
+
+msgid "_2_st_Scania_Vabis_L_603_fm49"
+msgstr "2 st Scania-Vabis L-603"
+
+msgid "_2_st_Scania_Vabis_L_603_fm49_short"
+msgstr ""
+"2 st Scania-Vabis\n"
+"L-603"
+
+msgid "_2_st_Scania_Vabis_L_607_fm49"
+msgstr "2 st Scania-Vabis L-607"
+
+msgid "_2_st_Scania_Vabis_L_607_fm49_short"
+msgstr ""
+"2 st Scania-Vabis\n"
+"L-607"
 
 msgid "_37mm_kan_m_38_49_strv"
 msgstr "37 mm kan m/38-49 strv"

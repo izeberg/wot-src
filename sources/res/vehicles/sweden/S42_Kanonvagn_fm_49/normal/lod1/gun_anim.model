@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/sweden/S42_Kanonvagn_fm_49/normal/lod1/gun_anim</nodefullVisual>
+	<parent>vehicles/sweden/S42_Kanonvagn_fm_49/normal/lod2/gun_anim</parent>
+	<extent>64.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.202819 -0.452624 -2.476612</min>
+		<max>0.796937 0.594647 0.838422</max>
+	</visibilityBox>
+</root>

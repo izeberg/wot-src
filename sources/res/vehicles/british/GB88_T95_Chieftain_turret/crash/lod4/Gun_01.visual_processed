@@ -39,7 +39,7 @@
 					</property>
 					<property>
 						colorIdMap
-						<Texture>vehicles/british/GB88_T95_Chieftain_turret/T95_Chieftain_guns_ID.dds</Texture>
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 					<property>
 						crashTileMap
@@ -47,18 +47,7 @@
 					</property>
 					<property>
 						g_crashUVTiling
-						<Vector4>
-							2 2 0.000000 0.000000
-							<!--BW_String-->
-						</Vector4>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
+						<Vector4>2.000000 2.000000 0.000000 0.000000</Vector4>
 					</property>
 					<fx>shaders/std_effects/PBS_tank_crash.fx</fx>
 					<property>

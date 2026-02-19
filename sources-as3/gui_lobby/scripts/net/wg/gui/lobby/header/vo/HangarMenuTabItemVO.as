@@ -22,9 +22,13 @@ package net.wg.gui.lobby.header.vo
       
       public var isTooltipSpecial:Boolean = false;
       
+      public var isWulfTooltip:Boolean = false;
+      
       public var enabled:Boolean = true;
       
       public var actionIcon:String = "";
+      
+      public var tooltipArgs:Array = null;
       
       public function HangarMenuTabItemVO(param1:Object)
       {
@@ -36,6 +40,11 @@ package net.wg.gui.lobby.header.vo
       {
          this.subValues.splice(0,this.subValues.length);
          this.subValues = null;
+         if(this.tooltipArgs)
+         {
+            this.tooltipArgs.splice(0,this.tooltipArgs.length);
+            this.tooltipArgs = null;
+         }
          super.onDispose();
       }
    }

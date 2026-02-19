@@ -1380,7 +1380,7 @@
 				<type>url</type>
 			</item>
 			<item>
-				$PARAMS(/cosmic_category/cosmic_category)
+				$PARAMS(/cosmic_category/cosmic_category/?origin=lobby_cosmic2026)
 				<name>cosm24Shop</name>
 				<type>url</type>
 			</item>
@@ -1540,12 +1540,12 @@
 					<item>
 						<name>isBpCoinShopEntryPointActive</name>
 						<type>bool</type>
-						<value>False</value>
+						<value>True</value>
 					</item>
 					<item>
 						<name>isBpPointsShopEntryPointActive</name>
 						<type>bool</type>
-						<value>False</value>
+						<value>True</value>
 					</item>
 				</value>
 			</item>
@@ -1920,29 +1920,13 @@
 						<type>list</type>
 						<value>
 							<item>
-								<name>newTypes</name>
+								<name>rework</name>
 								<type>list</type>
 								<value>
 									<item>
 										<name>name</name>
 										<type>string</type>
 										<value>rework</value>
-									</item>
-									<item>
-										<name>type</name>
-										<type>string</type>
-										<value>page</value>
-									</item>
-								</value>
-							</item>
-							<item>
-								<name>modifiers</name>
-								<type>list</type>
-								<value>
-									<item>
-										<name>name</name>
-										<type>string</type>
-										<value>modifiers</value>
 									</item>
 									<item>
 										<name>type</name>
@@ -2198,7 +2182,7 @@
 		<macros>AUTH_REALM</macros>
 		<value>
 			<item>
-				https://webbrg.tanki.su/$LANGUAGE_CODE/promocontent/Cosm25/
+				https://webbrg.tanki.su/$LANGUAGE_CODE/promocontent/Cosm26/
 				<name>default</name>
 				<type>url</type>
 			</item>

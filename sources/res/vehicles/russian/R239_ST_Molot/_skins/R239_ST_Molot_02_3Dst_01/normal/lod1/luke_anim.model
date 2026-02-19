@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/russian/R239_ST_Molot/_skins/R239_ST_Molot_02_3Dst_01/normal/lod1/luke_anim</nodefullVisual>
+	<parent>vehicles/russian/R239_ST_Molot/_skins/R239_ST_Molot_02_3Dst_01/normal/lod2/luke_anim</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.237619 0.273591 -1.740122</min>
+		<max>0.146590 0.699523 -1.466415</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

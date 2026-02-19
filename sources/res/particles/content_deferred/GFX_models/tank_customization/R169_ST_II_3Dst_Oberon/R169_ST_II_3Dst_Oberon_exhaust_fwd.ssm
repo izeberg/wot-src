@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<params/>
+	<node>
+		<name>Sleep Node0</name>
+		<type>sleep</type>
+		<time>2.000000 2.000000</time>
+		<transition>
+			<to>Exhaust</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>1.000000</exitOffset>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>-160.000000 -136.000000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>Exhaust</name>
+		<type>sequence</type>
+		<resource>particles/content_deferred/GFX_models/tank_customization/R169_ST_II_3Dst_Oberon/R169_exhaust_steam_hangar_fwd.seq</resource>
+		<isLoop>false</isLoop>
+		<loop>0</loop>
+		<transition>
+			<to>Sleep Node</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>1.000000</exitOffset>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>-157.500000 -58.000000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>Sleep Node</name>
+		<type>sleep</type>
+		<time>10.000000 10.000000</time>
+		<transition>
+			<to>Exhaust</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>1.000000</exitOffset>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>-157.000000 23.000000 0.000000</uiPosition>
+	</node>
+</root>

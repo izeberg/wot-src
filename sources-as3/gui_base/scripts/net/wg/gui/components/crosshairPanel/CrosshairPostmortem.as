@@ -141,7 +141,15 @@ package net.wg.gui.components.crosshairPanel
       {
       }
       
-      public function setCoolantAbilityReloadingPenalty(param1:Number) : void
+      public function setCoolantAbilityReloadingPenalty(param1:Number, param2:Number) : void
+      {
+      }
+      
+      public function addCoolantAbilityReloadingPenalty(param1:Number) : void
+      {
+      }
+      
+      public function setAbilityModifier(param1:int, param2:Boolean) : void
       {
       }
       

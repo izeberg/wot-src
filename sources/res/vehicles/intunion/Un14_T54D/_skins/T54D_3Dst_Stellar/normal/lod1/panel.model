@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/intunion/Un14_T54D/_skins/T54D_3Dst_Stellar/normal/lod2/panel</parent>
+	<extent>64.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.690596 0.279644 -2.977078</min>
+		<max>1.690596 0.571013 -2.211676</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/intunion/Un14_T54D/_skins/T54D_3Dst_Stellar/normal/lod1/panel</nodefullVisual>
+</root>

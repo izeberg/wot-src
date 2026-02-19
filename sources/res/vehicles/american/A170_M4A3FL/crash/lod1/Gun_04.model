@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<nodelessVisual>vehicles/american/A170_M4A3FL/crash/lod1/Gun_04</nodelessVisual>
 	<parent>vehicles/american/A170_M4A3FL/crash/lod2/Gun_04</parent>
 	<extent>64.000000</extent>
 	<tank>true</tank>
@@ -8,4 +7,5 @@
 		<min>-0.654975 -0.328985 -0.888895</min>
 		<max>0.454959 0.350156 2.091360</max>
 	</visibilityBox>
+	<nodelessVisual>vehicles/american/A170_M4A3FL/crash/lod1/Gun_04</nodelessVisual>
 </root>

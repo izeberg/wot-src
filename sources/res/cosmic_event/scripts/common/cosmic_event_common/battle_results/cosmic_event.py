@@ -8,6 +8,8 @@ BATTLE_RESULTS = [
  (
   'deaths', list, [], None, 'extend', ENTRY_TYPE.VEHICLE_ALL),
  (
+  'afk_teleports', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_ALL),
+ (
   'cosmicScore/SHOT', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_ALL),
  (
   'cosmicScore/RAMMING', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_ALL),
@@ -26,11 +28,11 @@ BATTLE_RESULTS = [
  (
   'cosmicScore/KILL_STREAK', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_ALL),
  (
-  'cosmicScore/PICKUP_MASTER', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_ALL),
+  'cosmicScore/LOOT_RESEARCHING', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_ALL),
  (
-  'cosmicScore/REVENGE', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_ALL),
+  'cosmicScore/LOOT_RESEARCHING_DONE', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_ALL),
  (
-  'cosmicScore/BOOST_ME', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_ALL),
+  'cosmicScore/LOOT_RESEARCHABLE_PICK_UP', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_ALL),
  (
   'cosmicScore/MAX_KILL_SERIES', int, 0, None, 'skip', ENTRY_TYPE.VEHICLE_ALL),
  (
@@ -52,11 +54,11 @@ BATTLE_RESULTS = [
  (
   'cosmicBattleEvent/KILL_STREAK', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_ALL),
  (
-  'cosmicBattleEvent/PICKUP_MASTER', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_ALL),
+  'cosmicBattleEvent/LOOT_RESEARCHING', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_ALL),
  (
-  'cosmicBattleEvent/REVENGE', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_ALL),
+  'cosmicBattleEvent/LOOT_RESEARCHING_DONE', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_ALL),
  (
-  'cosmicBattleEvent/BOOST_ME', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_ALL),
+  'cosmicBattleEvent/LOOT_RESEARCHABLE_PICK_UP', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_ALL),
  (
   'cosmicBattleEvent/MAX_KILL_SERIES', int, 0, None, 'skip', ENTRY_TYPE.VEHICLE_ALL),
  (
@@ -72,7 +74,9 @@ BATTLE_RESULTS = [
  (
   'cosmicEquipment/cosmic_event_wave', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_SELF),
  (
-  'cosmicEquipment/cosmic_event_stun_shot', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_SELF),
+  'cosmicEquipment/cosmic_event_mine', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_SELF),
+ (
+  'cosmicEquipment/cosmic_event_teleport', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_SELF),
  (
   'cosmicAbilitiesImpacts/BLACK_HOLE', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_SELF),
  (
@@ -80,7 +84,9 @@ BATTLE_RESULTS = [
  (
   'cosmicAbilitiesImpacts/SNIPER_SHOT', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_SELF),
  (
-  'cosmicAbilitiesImpacts/POWER_SHOT', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_SELF)]
+  'cosmicAbilitiesImpacts/POWER_SHOT', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_SELF),
+ (
+  'cosmicAbilitiesImpacts/TELEPORT', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_SELF)]
 BATTLE_RESULTS_NAMES = set([ i[0] for i in BATTLE_RESULTS ])
 SCORE_EVENT_NAMES = set([ 'cosmicScore/' + i.name for i in ScoreEvents ])
 BATTLE_EVENT_NAMES = set([ 'cosmicBattleEvent/' + i.name for i in ScoreEvents ])

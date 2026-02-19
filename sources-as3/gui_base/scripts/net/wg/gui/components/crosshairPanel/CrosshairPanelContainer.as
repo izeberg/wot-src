@@ -714,12 +714,30 @@ package net.wg.gui.components.crosshairPanel
          }
       }
       
-      public function as_setCoolantAbilityReloadingPenalty(param1:Number) : void
+      public function as_setCoolantAbilityReloadingPenalty(param1:Number, param2:Number) : void
+      {
+         var _loc3_:ICrosshair = null;
+         for each(_loc3_ in this._crosshairs)
+         {
+            _loc3_.setCoolantAbilityReloadingPenalty(param1,param2);
+         }
+      }
+      
+      public function as_addCoolantAbilityReloadingPenalty(param1:Number) : void
       {
          var _loc2_:ICrosshair = null;
          for each(_loc2_ in this._crosshairs)
          {
-            _loc2_.setCoolantAbilityReloadingPenalty(param1);
+            _loc2_.addCoolantAbilityReloadingPenalty(param1);
+         }
+      }
+      
+      public function as_setAbilityModifier(param1:int, param2:Boolean) : void
+      {
+         var _loc3_:ICrosshair = null;
+         for each(_loc3_ in this._crosshairs)
+         {
+            _loc3_.setAbilityModifier(param1,param2);
          }
       }
       

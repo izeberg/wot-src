@@ -50,8 +50,8 @@
 			<ambientLumMultiplier>1.000000</ambientLumMultiplier>
 			<sunLumMultiplier>100.000000</sunLumMultiplier>
 			<skyLumMultiplier>9.000000</skyLumMultiplier>
-			<LDR2HDRenableLumaMask>false</LDR2HDRenableLumaMask>
 			<LDR2HDRsaturation>1.000000</LDR2HDRsaturation>
+			<LDR2HDRenableLumaMask>false</LDR2HDRenableLumaMask>
 		</environment>
 		<tonemappings>
 			<tonemapping>
@@ -190,11 +190,12 @@
 	</cloudsShadow>
 	<PBS>
 		<ForwardSHMultiplier>1.750000</ForwardSHMultiplier>
-		<flakesEnabled>false</flakesEnabled>
 		<flakesDensityThreshold>0.800000</flakesDensityThreshold>
 		<flakesUvScale>0.890000</flakesUvScale>
 		<flakesGloss>0.770000</flakesGloss>
 		<flakesSurfNormalNoiseWeight>0.100000</flakesSurfNormalNoiseWeight>
+		<flakesEnabled>false</flakesEnabled>
+		<useBC6PackingFormat>false</useBC6PackingFormat>
 	</PBS>
 	<Weather>
 		<wind>
@@ -312,4 +313,5 @@
 			<contrast>1.000000</contrast>
 		</forward>
 	</AlbedoScaleSettings>
+	<visibilityMask>4294967295</visibilityMask>
 </root>

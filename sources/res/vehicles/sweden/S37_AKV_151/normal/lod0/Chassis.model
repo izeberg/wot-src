@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/sweden/S37_AKV_151/normal/lod1/Chassis</parent>
+	<tank>true</tank>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.631670 -0.000000 -3.479899</min>
+		<max>1.631670 1.178323 3.588867</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/sweden/S37_AKV_151/normal/lod0/Chassis</nodefullVisual>
+</root>

@@ -102,7 +102,7 @@ msgid "abilityInfo/params/recon/revealedArea"
 msgstr "Пакрыццё"
 
 msgid "abilityInfo/params/recon/revealedArea/value"
-msgstr "300×750 м"
+msgstr "300 x 750 м"
 
 msgid "abilityInfo/params/recon/spottingDuration"
 msgstr "Працягласць палёту"
@@ -192,16 +192,16 @@ msgid "battleResults/damage"
 msgstr "Пашкоджанні"
 
 msgid "battleResults/damageSupplies"
-msgstr "Урон по объектам"
+msgstr "Урон по объектам"
 
 msgid "battleResults/kill"
 msgstr "Знішчана"
 
 msgid "battleResults/killSupplies"
-msgstr "Уничтожено объектов"
+msgstr "Знішчана аб'ектаў"
 
 msgid "battleResults/questCompleted"
-msgstr "Выполнено задач"
+msgstr "Выканана задач"
 
 msgid "battleResults/spotting"
 msgstr "Выявіў"
@@ -232,16 +232,16 @@ msgid "deploymentMap/flamethrowerLimitReached"
 msgstr "Напрамак заблакаваны — дасягнуты максімум агнямётных танкаў"
 
 msgid "deploymentMap/lane/center"
-msgstr "Ваше направление: B-E"
+msgstr "Ваш кірунак: B-E"
 
 msgid "deploymentMap/lane/left"
-msgstr "Ваше направление: A-D"
+msgstr "Ваш кірунак: A-D"
 
 msgid "deploymentMap/lane/right"
-msgstr "Ваше направление: C-F"
+msgstr "Ваш кірунак: C-F"
 
 msgid "deploymentMap/lane/top"
-msgstr "Ваше направление: зона целей"
+msgstr "Ваш кірунак: зона цэляў"
 
 msgid "deploymentMap/lanePlayerLimitReached"
 msgstr "Напрамак заблакіраваны — дасягнуты максімум гульцоў"
@@ -254,20 +254,20 @@ msgstr "Напрамак заблакаваны — дасягнуты макс
 
 msgid "deploymentMap/warning/1"
 msgstr ""
-"• При выборе другого направления для высадки вы будете закреплены за новым направлением.\n"
-"• Текущая задача будет заменена на новую.\n"
-"• Вы сможете проходить прогрессию зон для нового направления."
+"• При выборе другого направления для высадки вы будете закреплены за новым направлением.\n"
+"• Текущая задача будет заменена на новую.\n"
+"• Вы сможете проходить прогрессию зон для нового направления."
 
 msgid "deploymentMap/warning/2"
 msgstr ""
-"• При выборе другого направления для высадки вы будете закреплены за новым направлением.\n"
-"• Прогресс по текущей задаче будет сброшен."
+"• При выборе другого направления для высадки вы будете закреплены за новым направлением.\n"
+"• Прогресс по текущей задаче будет сброшен."
 
 msgid "deploymentMap/warning/3"
 msgstr ""
-"• При выборе другого направления для высадки вы будете закреплены за новым направлением.\n"
+"• При выборе другого направления для высадки вы будете закреплены за новым направлением.\n"
 "• Будет выдана новая задача.\n"
-"• Вы сможете проходить прогрессию зон для нового направления."
+"• Вы сможете проходить прогрессию зон для нового направления."
 
 msgid "dialogs/quotedName"
 msgstr "«%(name)s»"
@@ -644,7 +644,7 @@ msgid "questsTooltip/epicBattle/header"
 msgstr "Задачы Лініі фронту"
 
 msgid "questsTooltip/epicBattle/lessThanDay"
-msgstr "менш за 1 сут"
+msgstr "менее 1 д."
 
 msgid "questsTooltip/epicBattle/restrict/level"
 msgstr "атрымайце %(level)s узровень"
@@ -914,7 +914,7 @@ msgid "spectator_mode/unfollow_title"
 msgstr "Перастаць рухацца следам"
 
 msgid "status/timeLeft/days"
-msgstr "%(day)s сут"
+msgstr "%(day)s д."
 
 msgid "status/timeLeft/hours"
 msgstr "%(hour)s гадз"
@@ -923,7 +923,7 @@ msgid "status/timeLeft/lessMin"
 msgstr "хвіліну"
 
 msgid "status/timeLeft/min"
-msgstr "%(min)s хв"
+msgstr "%(min)s мин."
 
 msgid "statusNotificationTimers/captureBlock/blocked"
 msgstr "Ідзе змаганне за базу"
@@ -965,34 +965,34 @@ msgid "super_platoon_panel/title"
 msgstr "Звяз"
 
 msgid "supply/airship"
-msgstr "Дирижабль"
+msgstr "Дырыжабль"
 
 msgid "supply/flamer"
-msgstr "Огнемёт"
+msgstr "Агнямёт"
 
 msgid "supply/marker_need_repair"
-msgstr "Повреждён"
+msgstr "Пашкоджаны"
 
 msgid "supply/messages/airshipActive"
-msgstr "В зоне активен дирижабль противника"
+msgstr "В зоне активен дирижабль противника"
 
 msgid "supply/messages/airshipActivePositive"
-msgstr "В зоне активен союзный дирижабль"
+msgstr "В зоне активен союзный дирижабль"
 
 msgid "supply/messages/attack"
-msgstr "Активирован союзный объект поддержки атаки."
+msgstr "Актываваны хаўрусны аб'ект падтрымкі атакі."
 
 msgid "supply/messages/defence"
-msgstr "Активирован союзный объект поддержки обороны."
+msgstr "Актываваны хаўрусны аб'ект падтрымкі абароны."
 
 msgid "supply/mortar"
-msgstr "РСЗО"
+msgstr "РСЗА"
 
 msgid "supply/pillbox"
-msgstr "ДОТ"
+msgstr "Дот"
 
 msgid "supply/timer_is_repairing"
-msgstr "Ремонт объекта"
+msgstr "Рамонт аб'екта"
 
 msgid "tab_screen/generalBonusDescr"
 msgstr ""
@@ -1008,7 +1008,7 @@ msgid "tab_screen/show_my_lane"
 msgstr "Мой напрамак"
 
 msgid "tab_screen/show_quests"
-msgstr "Задачи"
+msgstr "Задачы"
 
 msgid "team1Name"
 msgstr "Атакоўцы"

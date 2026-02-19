@@ -7,6 +7,7 @@ package net.wg.gui.lobby.vehiclePreview.bottomPanel
    import flash.text.TextFieldAutoSize;
    import net.wg.data.constants.IconsTypes;
    import net.wg.data.constants.UniversalBtnStylesConst;
+   import net.wg.data.constants.generated.CURRENCIES_CONSTANTS;
    import net.wg.gui.components.controls.ActionPrice;
    import net.wg.gui.components.controls.InfoIcon;
    import net.wg.gui.components.controls.SoundButtonEx;
@@ -50,6 +51,8 @@ package net.wg.gui.lobby.vehiclePreview.bottomPanel
       private static const TIME_REMAINING_PADDING_LEFT:int = -7;
       
       private static const SMALL_SCREEN_OFFSET_Y:int = 13;
+      
+      public static const COLOR_ERROR:uint = 11993088;
        
       
       public var infoIcon:InfoIcon = null;
@@ -115,6 +118,10 @@ package net.wg.gui.lobby.vehiclePreview.bottomPanel
                break;
             case IconsTypes.CRYSTAL:
                _loc2_ = IconsTypes.CRYSTAL_COLOR;
+               break;
+            case IconsTypes.FREE_XP:
+            case CURRENCIES_CONSTANTS.FREE_XP:
+               _loc2_ = IconsTypes.XP_COLOR;
          }
          return _loc2_;
       }
@@ -191,7 +198,7 @@ package net.wg.gui.lobby.vehiclePreview.bottomPanel
                      this.strikeline.visible = this.oldPriceTf.visible = this.actionPrice.visible = false;
                      this.priceIcon.visible = true;
                   }
-                  this.currentPriceTf.textColor = getCurrentPriceTextColor(this._data.priceType);
+                  this.currentPriceTf.textColor = !!this._data.isMoneyEnough ? uint(getCurrentPriceTextColor(this._data.priceType)) : uint(COLOR_ERROR);
                   this.currentPriceTf.text = App.utils.commons.formatNumberToStringWithSpaces(this._data.price);
                   this.actionButton.enabled = this._data.actionBtnEnabled;
                   this.divider.visible = this.timeRemainingDescTf.visible = this.timeIcon.visible = this.timeRemainingTf.visible = _loc2_;

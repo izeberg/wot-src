@@ -1615,11 +1615,11 @@ package
       
       public static const DETAILS_DOSSIER_MEDALLAFAYETTEPOOL:String = "#quests:details/dossier/medalLafayettePool";
       
-      public static const DETAILS_DOSSIER_MEDALBRUNOPIETRO:String = "#quests:details/dossier/medalBrunoPietro";
+      public static const DETAILS_DOSSIER_MEDALFOKIN:String = "#quests:details/dossier/medalFokin";
       
       public static const DETAILS_DOSSIER_MEDALLYUBUSHKIN:String = "#quests:details/dossier/medalLyubushkin";
       
-      public static const DETAILS_DOSSIER_MEDALPASCUCCI:String = "#quests:details/dossier/medalPascucci";
+      public static const DETAILS_DOSSIER_MEDALSLYUNYAYEV:String = "#quests:details/dossier/medalSlyunyayev";
       
       public static const DETAILS_DOSSIER_MEDALDUMITRU:String = "#quests:details/dossier/medalDumitru";
       
@@ -1640,6 +1640,12 @@ package
       public static const DETAILS_DOSSIER_MEDALDELANGLADE:String = "#quests:details/dossier/medalDeLanglade";
       
       public static const DETAILS_DOSSIER_MEDALTRUBIN:String = "#quests:details/dossier/medalTrubin";
+      
+      public static const DETAILS_DOSSIER_MEDALFOMIN:String = "#quests:details/dossier/medalFomin";
+      
+      public static const DETAILS_DOSSIER_MEDALKROCKENBERGER:String = "#quests:details/dossier/medalKrockenberger";
+      
+      public static const DETAILS_DOSSIER_MEDALGAVRYUSHOV:String = "#quests:details/dossier/medalGavryushov";
       
       public static const DETAILS_DOSSIER_BOMBARDIER:String = "#quests:details/dossier/bombardier";
       

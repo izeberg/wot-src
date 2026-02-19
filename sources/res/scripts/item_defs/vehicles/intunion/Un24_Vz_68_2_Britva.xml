@@ -2,8 +2,7 @@
 <root>
 	<xmlns:xmlref>http://bwt/xmlref</xmlns:xmlref>
 	<crew>
-		<commander>radioman
-			loader</commander>
+		<commander>radioman</commander>
 		<gunner>loader</gunner>
 		<driver/>
 	</crew>
@@ -11,8 +10,8 @@
 	<postProgressionTree>role_MT_support</postProgressionTree>
 	<customRoleSlotOptions>3 5</customRoleSlotOptions>
 	<speedLimits>
-		<forward>70</forward>
-		<backward>28</backward>
+		<forward>62</forward>
+		<backward>18</backward>
 	</speedLimits>
 	<invisibility>
 		<moving>
@@ -3490,7 +3489,7 @@
 					</clip>
 					<autoShoot>
 						<shotDispersionPerSec>
-							1.2
+							0.8
 							<!--BW_String-->
 						</shotDispersionPerSec>
 						<maxShotDispersion>9</maxShotDispersion>
@@ -4215,7 +4214,7 @@
 			<engines>
 				<_5TD>
 					<smplEnginePower>550</smplEnginePower>
-					<smplFwMaxSpeed>57</smplFwMaxSpeed>
+					<smplFwMaxSpeed>62</smplFwMaxSpeed>
 				</_5TD>
 			</engines>
 			<chassis>

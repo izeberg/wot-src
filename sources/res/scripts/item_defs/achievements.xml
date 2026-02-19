@@ -13,15 +13,18 @@
 			<item>medalLafayettePool</item>
 			<item>medalKhazov</item>
 			<item>medalNikolas</item>
-			<item>medalPascucci</item>
+			<item>medalSlyunyayev</item>
 			<item>medalDumitru</item>
-			<item>medalBrunoPietro</item>
+			<item>medalFokin</item>
 			<item>medalLyubushkin</item>
 			<item>heroesOfRassenay</item>
 			<item>medalDeLanglade</item>
 			<item>medalTrubin</item>
 			<item>medalUshakov</item>
 			<item>forTacticalOperations</item>
+			<item>medalFomin</item>
+			<item>medalKrockenberger</item>
+			<item>medalGavryushov</item>
 		</value>
 	</battleAchievesWithRibbon>
 	<battleResultsRight>
@@ -48,9 +51,9 @@
 			<item>medalLafayettePool</item>
 			<item>medalKhazov</item>
 			<item>medalNikolas</item>
-			<item>medalPascucci</item>
+			<item>medalSlyunyayev</item>
 			<item>medalDumitru</item>
-			<item>medalBrunoPietro</item>
+			<item>medalFokin</item>
 			<item>medalLyubushkin</item>
 			<item>heroesOfRassenay</item>
 			<item>medalDeLanglade</item>
@@ -69,6 +72,9 @@
 			<item>medalGore</item>
 			<item>medalCoolBlood</item>
 			<item>medalStark</item>
+			<item>medalFomin</item>
+			<item>medalKrockenberger</item>
+			<item>medalGavryushov</item>
 			<item>medalBrothersInArms</item>
 			<item>medalCrucialContribution</item>
 			<item>tacticalAdvantage</item>
@@ -1157,30 +1163,6 @@
 			</value>
 		</achievement>
 		<achievement>
-			<name>achievements:huntsman</name>
-			<type>dict</type>
-			<value>
-				<item>
-					repeatable
-					<name>type</name>
-				</item>
-				<item>
-					epic
-					<name>section</name>
-				</item>
-				<item>
-					300.0
-					<!--BW_String-->
-					<name>weight</name>
-					<type>float</type>
-				</item>
-				<item>
-					random
-					<name>mode</name>
-				</item>
-			</value>
-		</achievement>
-		<achievement>
 			<name>achievements:medalKolobanov</name>
 			<type>dict</type>
 			<value>
@@ -1373,55 +1355,7 @@
 			</value>
 		</achievement>
 		<achievement>
-			<name>achievements:medalBurda</name>
-			<type>dict</type>
-			<value>
-				<item>
-					repeatable
-					<name>type</name>
-				</item>
-				<item>
-					epic
-					<name>section</name>
-				</item>
-				<item>
-					608.0
-					<!--BW_String-->
-					<name>weight</name>
-					<type>float</type>
-				</item>
-				<item>
-					random
-					<name>mode</name>
-				</item>
-			</value>
-		</achievement>
-		<achievement>
-			<name>achievements:medalDumitru</name>
-			<type>dict</type>
-			<value>
-				<item>
-					repeatable
-					<name>type</name>
-				</item>
-				<item>
-					epic
-					<name>section</name>
-				</item>
-				<item>
-					609.0
-					<!--BW_String-->
-					<name>weight</name>
-					<type>float</type>
-				</item>
-				<item>
-					random
-					<name>mode</name>
-				</item>
-			</value>
-		</achievement>
-		<achievement>
-			<name>achievements:medalPascucci</name>
+			<name>achievements:medalSlyunyayev</name>
 			<type>dict</type>
 			<value>
 				<item>
@@ -1493,7 +1427,7 @@
 			</value>
 		</achievement>
 		<achievement>
-			<name>achievements:medalBrunoPietro</name>
+			<name>achievements:medalFokin</name>
 			<type>dict</type>
 			<value>
 				<item>
@@ -1728,6 +1662,78 @@
 				</item>
 				<item>
 					historical
+					<name>mode</name>
+				</item>
+			</value>
+		</achievement>
+		<achievement>
+			<name>achievements:medalFomin</name>
+			<type>dict</type>
+			<value>
+				<item>
+					repeatable
+					<name>type</name>
+				</item>
+				<item>
+					epic
+					<name>section</name>
+				</item>
+				<item>
+					844.0
+					<!--BW_String-->
+					<name>weight</name>
+					<type>float</type>
+				</item>
+				<item>
+					random
+					<name>mode</name>
+				</item>
+			</value>
+		</achievement>
+		<achievement>
+			<name>achievements:medalKrockenberger</name>
+			<type>dict</type>
+			<value>
+				<item>
+					repeatable
+					<name>type</name>
+				</item>
+				<item>
+					epic
+					<name>section</name>
+				</item>
+				<item>
+					845.0
+					<!--BW_String-->
+					<name>weight</name>
+					<type>float</type>
+				</item>
+				<item>
+					random
+					<name>mode</name>
+				</item>
+			</value>
+		</achievement>
+		<achievement>
+			<name>achievements:medalGavryushov</name>
+			<type>dict</type>
+			<value>
+				<item>
+					repeatable
+					<name>type</name>
+				</item>
+				<item>
+					epic
+					<name>section</name>
+				</item>
+				<item>
+					846.0
+					<!--BW_String-->
+					<name>weight</name>
+					<type>float</type>
+				</item>
+				<item>
+					random
 					<name>mode</name>
 				</item>
 			</value>
@@ -4094,6 +4100,78 @@
 				</item>
 				<item>
 					1408.5
+					<!--BW_String-->
+					<name>weight</name>
+					<type>float</type>
+				</item>
+				<item>
+					random
+					<name>mode</name>
+				</item>
+			</value>
+		</achievement>
+		<achievement>
+			<name>achievements:medalDumitru</name>
+			<type>dict</type>
+			<value>
+				<item>
+					repeatable
+					<name>type</name>
+				</item>
+				<item>
+					action
+					<name>section</name>
+				</item>
+				<item>
+					609.0
+					<!--BW_String-->
+					<name>weight</name>
+					<type>float</type>
+				</item>
+				<item>
+					random
+					<name>mode</name>
+				</item>
+			</value>
+		</achievement>
+		<achievement>
+			<name>achievements:medalBurda</name>
+			<type>dict</type>
+			<value>
+				<item>
+					repeatable
+					<name>type</name>
+				</item>
+				<item>
+					action
+					<name>section</name>
+				</item>
+				<item>
+					608.0
+					<!--BW_String-->
+					<name>weight</name>
+					<type>float</type>
+				</item>
+				<item>
+					random
+					<name>mode</name>
+				</item>
+			</value>
+		</achievement>
+		<achievement>
+			<name>achievements:huntsman</name>
+			<type>dict</type>
+			<value>
+				<item>
+					repeatable
+					<name>type</name>
+				</item>
+				<item>
+					action
+					<name>section</name>
+				</item>
+				<item>
+					300.0
 					<!--BW_String-->
 					<name>weight</name>
 					<type>float</type>
@@ -7964,6 +8042,30 @@
 			</value>
 		</achievement>
 		<achievement>
+			<name>singleAchievements:BattlePassCommonPr_19</name>
+			<type>dict</type>
+			<value>
+				<item>
+					single
+					<name>type</name>
+				</item>
+				<item>
+					action
+					<name>section</name>
+				</item>
+				<item>
+					1442.024
+					<!--BW_String-->
+					<name>weight</name>
+					<type>float</type>
+				</item>
+				<item>
+					random
+					<name>mode</name>
+				</item>
+			</value>
+		</achievement>
+		<achievement>
 			<name>achievements:collectorVehicle</name>
 			<type>dict</type>
 			<value>
@@ -11227,6 +11329,30 @@
 			</value>
 		</achievement>
 		<achievement>
+			<name>singleAchievements:Paragons_S2</name>
+			<type>dict</type>
+			<value>
+				<item>
+					single
+					<name>type</name>
+				</item>
+				<item>
+					action
+					<name>section</name>
+				</item>
+				<item>
+					1442.02
+					<!--BW_String-->
+					<name>weight</name>
+					<type>float</type>
+				</item>
+				<item>
+					random
+					<name>mode</name>
+				</item>
+			</value>
+		</achievement>
+		<achievement>
 			<name>singleAchievements:cosm2025_medal_1</name>
 			<type>dict</type>
 			<value>
@@ -11816,6 +11942,126 @@
 				</item>
 				<item>
 					1443.93
+					<!--BW_String-->
+					<name>weight</name>
+					<type>float</type>
+				</item>
+				<item>
+					random
+					<name>mode</name>
+				</item>
+			</value>
+		</achievement>
+		<achievement>
+			<name>singleAchievements:cosm2026_medal_1</name>
+			<type>dict</type>
+			<value>
+				<item>
+					single
+					<name>type</name>
+				</item>
+				<item>
+					action
+					<name>section</name>
+				</item>
+				<item>
+					1455.13
+					<!--BW_String-->
+					<name>weight</name>
+					<type>float</type>
+				</item>
+				<item>
+					random
+					<name>mode</name>
+				</item>
+			</value>
+		</achievement>
+		<achievement>
+			<name>singleAchievements:cosm2026_medal_2</name>
+			<type>dict</type>
+			<value>
+				<item>
+					single
+					<name>type</name>
+				</item>
+				<item>
+					action
+					<name>section</name>
+				</item>
+				<item>
+					1455.14
+					<!--BW_String-->
+					<name>weight</name>
+					<type>float</type>
+				</item>
+				<item>
+					random
+					<name>mode</name>
+				</item>
+			</value>
+		</achievement>
+		<achievement>
+			<name>singleAchievements:comp7_5_3</name>
+			<type>dict</type>
+			<value>
+				<item>
+					single
+					<name>type</name>
+				</item>
+				<item>
+					memorial
+					<name>section</name>
+				</item>
+				<item>
+					1010.94
+					<!--BW_String-->
+					<name>weight</name>
+					<type>float</type>
+				</item>
+				<item>
+					random
+					<name>mode</name>
+				</item>
+			</value>
+		</achievement>
+		<achievement>
+			<name>singleAchievements:comp7_5_3_champion</name>
+			<type>dict</type>
+			<value>
+				<item>
+					single
+					<name>type</name>
+				</item>
+				<item>
+					action
+					<name>section</name>
+				</item>
+				<item>
+					1444.95
+					<!--BW_String-->
+					<name>weight</name>
+					<type>float</type>
+				</item>
+				<item>
+					random
+					<name>mode</name>
+				</item>
+			</value>
+		</achievement>
+		<achievement>
+			<name>singleAchievements:comp7_5_3_legend</name>
+			<type>dict</type>
+			<value>
+				<item>
+					single
+					<name>type</name>
+				</item>
+				<item>
+					action
+					<name>section</name>
+				</item>
+				<item>
+					1444.96
 					<!--BW_String-->
 					<name>weight</name>
 					<type>float</type>

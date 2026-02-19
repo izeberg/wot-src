@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<visibilityBox>
+		<min>-1.653488 -0.002792 -2.717146</min>
+		<max>1.653488 0.927280 2.901771</max>
+	</visibilityBox>
+	<parent>vehicles/russian/R225_Vasiliev_project/crash/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/russian/R225_Vasiliev_project/crash/lod0/Chassis</nodefullVisual>
+</root>

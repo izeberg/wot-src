@@ -86,6 +86,9 @@ msgstr "4TP"
 msgid "Chassis_Pl15_60TP_Lewandowskiego"
 msgstr "60TP Lewandowskiego"
 
+msgid "Chassis_Pl15_60TP_Lewandowskiego_ISP"
+msgstr "60TP Lewandowskiego"
+
 msgid "Chassis_Pl16_T34_85_Rudy"
 msgstr "T-34-85-60"
 
@@ -114,6 +117,9 @@ msgid "Chassis_Pl20_CS_44_2"
 msgstr "CS-49"
 
 msgid "Chassis_Pl21_CS_63"
+msgstr "CS 63"
+
+msgid "Chassis_Pl21_CS_63_ISP"
 msgstr "CS 63"
 
 msgid "Chassis_Pl22_CS_59"
@@ -219,6 +225,9 @@ msgid "MT_50_T"
 msgstr "MT-50T"
 
 msgid "MT_50_TM"
+msgstr "MT-50TM"
+
+msgid "MT_50_TM_ISP"
 msgstr "MT-50TM"
 
 msgid "Maybach_HL_108"
@@ -492,6 +501,25 @@ msgstr "4TP"
 msgid "Pl15_60TP_Lewandowskiego"
 msgstr "60TP Lewandowskiego"
 
+msgid "Pl15_60TP_Lewandowskiego_ISP"
+msgstr "60TP Испытательный"
+
+msgid "Pl15_60TP_Lewandowskiego_ISP_descr"
+msgstr ""
+"Проект тяжёлого танка, разработанный курсантом Военно-Технической академии в"
+" Варшаве Ричердом Левандовским в 1956 г. Проект предусматривал создание "
+"танка массой до 60 тонн и толщиной бронирования до 200 мм. Работы были "
+"остановлены на стадии компоновочного чертежа."
+
+msgid "Pl15_60TP_Lewandowskiego_ISP_long_special"
+msgstr "?empty?"
+
+msgid "Pl15_60TP_Lewandowskiego_ISP_short"
+msgstr "60TP (И)"
+
+msgid "Pl15_60TP_Lewandowskiego_ISP_short_special"
+msgstr "?empty?"
+
 msgid "Pl15_60TP_Lewandowskiego_descr"
 msgstr ""
 "Проект тяжёлого танка, разработанный курсантом Военно-Технической академии в"
@@ -643,6 +671,26 @@ msgid "Pl21_CS_63_7x7_short"
 msgstr "CS-63 7x7"
 
 msgid "Pl21_CS_63_7x7_short_special"
+msgstr "?empty?"
+
+msgid "Pl21_CS_63_ISP"
+msgstr "CS-63 Испытательный"
+
+msgid "Pl21_CS_63_ISP_descr"
+msgstr ""
+"С целью замены танков Т-34-85 в Польше велись разработки нового среднего "
+"танка с использованием доступных достижений советской школы танкостроения и "
+"оригинальных разработок. Однако в 1968 году в стране развернули производство"
+" танков Т-55, и работы по собственному образцу были свёрнуты. Не было "
+"изготовлено ни одного экземпляра."
+
+msgid "Pl21_CS_63_ISP_long_special"
+msgstr "?empty?"
+
+msgid "Pl21_CS_63_ISP_short"
+msgstr "CS-63 (И)"
+
+msgid "Pl21_CS_63_ISP_short_special"
 msgstr "?empty?"
 
 msgid "Pl21_CS_63_descr"
@@ -842,19 +890,20 @@ msgstr "?empty?"
 
 msgid "Pl29_NC_Wz_70T_descr"
 msgstr ""
-"Самоходная установка NC wz.70T предполагалась как для борьбы с танками и "
-"САУ, так и для разрушения ДОТ и ДЗОТ, подавления и уничтожения артиллерии и "
-"живой силы противника. Её планировалось проектировать на основе новых "
-"разработок артиллерийского комплекса со сверхвысокими давлениями, способного"
-" обеспечить начальную скорость снаряда около 2000 м/c. Жёсткое закрепление "
-"ствола орудия в рубке без противооткатных устройств упростило бы конструкцию"
-" самоходки и удешевило производство орудия, заодно увеличив свободный объём "
-"боевого отделения. Рубочная схема компоновки позволила бы сократить высоту "
-"машины на 150-200 мм по сравнению с башенной ПТ-САУ. Предполагалось, что "
-"силовая установка в проекте будет включать два ГТД «GTD-2T6», разработанных "
-"на основе серийно выпускаемых вертолётных двигателей на предприятии WSK PZL-"
-"Rzeszów. Машина осталась на уровне общих концептуальных наметок ввиду "
-"большого количества дорогих инноваций в конструкции."
+"Самоходная установка NC wz.70T предполагалась как для борьбы с танками "
+"и САУ, так и для разрушения дотов и дзотов, подавления и уничтожения "
+"артиллерии и живой силы противника. Её планировалось проектировать на основе"
+" новых разработок артиллерийского комплекса со сверхвысокими давлениями, "
+"способного обеспечить начальную скорость снаряда около 2000 м/c. Жёсткое "
+"закрепление ствола орудия в рубке без противооткатных устройств упростило бы"
+" конструкцию самоходки и удешевило производство орудия, заодно увеличив "
+"свободный объём боевого отделения. Рубочная схема компоновки позволила бы "
+"сократить высоту машины на 150–200 мм по сравнению с башенной ПТ-САУ. "
+"Предполагалось, что силовая установка в проекте будет включать два ГТД "
+"GTD-2T6, разработанных на основе серийно выпускаемых вертолётных двигателей "
+"на предприятии WSK PZL-Rzeszów. Машина осталась на уровне общих "
+"концептуальных наметок ввиду большого количества дорогих инноваций "
+"в конструкции."
 
 msgid "Pl29_NC_Wz_70T_early_access"
 msgstr ""
@@ -918,18 +967,18 @@ msgstr "Wz.57D"
 
 msgid "Pl31_SDP_Wz_57D_descr"
 msgstr ""
-"Wz.57D разрабатывалась группой конструкторов под руководством майора Яна "
-"Ведмецкого при КБ механического завода «Labędy» совместно с Министерством "
-"народной обороны ПНР на смену устаревшим к концу 1950-х гг. САУ СУ-100 и "
-"ИСУ-122. Конструкцию машины должно было отличать сочетание катаных броневых "
-"листов лба и бортов с литыми угловыми элементами и внушительными толщинами "
-"бронирования. В рубке, составлявшей 2/3 длины корпуса, планировалось "
-"установить новейшее польское длинноствольное орудие P-DAP калибром от 85 до "
-"122-мм. Форсированный дизель В-2 обеспечил бы самоходке подвижность; для "
-"отвода тепла из МТО сокращённого объёма была разработана компактная, но "
-"производительная эжекционная система охлаждения. Проект сочли удачным, но "
-"отказались от его дальнейшей разработки и воплощения в пользу более "
-"перспективной конструкции."
+"Wz.57D разрабатывалась группой конструкторов под руководством майора Яна "
+"Ведмецкого при КБ механического завода Labędy совместно с Министерством "
+"народной обороны ПНР на смену устаревшим к концу 1950-х гг. САУ СУ-100 "
+"и ИСУ-122. Конструкцию машины должно было отличать сочетание катаных "
+"броневых листов лба и бортов с литыми угловыми элементами и внушительными "
+"толщинами бронирования. В рубке, составлявшей 2/3 длины корпуса, "
+"планировалось установить новейшее польское длинноствольное орудие P-DAP "
+"калибра от 85 до 122 мм. Форсированный дизель В-2 обеспечил бы самоходке "
+"подвижность; для отвода тепла из МТО сокращённого объёма была разработана "
+"компактная, но производительная эжекционная система охлаждения. Проект сочли"
+" удачным, но отказались от его дальнейшей разработки и воплощения в пользу "
+"более перспективной конструкции."
 
 msgid "Pl31_SDP_Wz_57D_early_access"
 msgstr ""
@@ -1065,15 +1114,18 @@ msgid "RT10_26P_A"
 msgstr "10RT-26PA"
 
 msgid "RTU_Jesion"
-msgstr "RTU «Jesion»"
+msgstr "RTU Jesion"
 
 msgid "RTU_Jesion_M"
-msgstr "RTU «Jesion-M»"
+msgstr "RTU Jesion-M"
 
 msgid "RT_10"
 msgstr "10RT-C46"
 
 msgid "R_113"
+msgstr "R-113"
+
+msgid "R_113_ISP"
 msgstr "R-113"
 
 msgid "R_113_P"
@@ -1103,6 +1155,9 @@ msgstr "R-123P MH"
 msgid "R_123P_T"
 msgstr "R-123P"
 
+msgid "R_123_ISP"
+msgstr "R-123"
+
 msgid "Rytla_Wernera"
 msgstr "Rytla Wernera"
 
@@ -1122,6 +1177,9 @@ msgid "SGT_3CzP"
 msgstr "SGT-3CzP"
 
 msgid "SGT_3Cz_M"
+msgstr "SGT-3CzM"
+
+msgid "SGT_3Cz_M_ISP"
 msgstr "SGT-3CzM"
 
 msgid "SGT_3Cz_SH"
@@ -1169,6 +1227,9 @@ msgstr "4TP"
 msgid "Turret_1_Pl15_60TP_Lewandowskiego"
 msgstr "60TP Lewandowskiego"
 
+msgid "Turret_1_Pl15_60TP_Lewandowskiego_ISP"
+msgstr "60TP Lewandowskiego"
+
 msgid "Turret_1_Pl16_T34_85_Rudy"
 msgstr "T-34-85"
 
@@ -1191,6 +1252,9 @@ msgid "Turret_1_Pl20_CS_44"
 msgstr "CS-44"
 
 msgid "Turret_1_Pl21_CS_63"
+msgstr "CS 63"
+
+msgid "Turret_1_Pl21_CS_63_ISP"
 msgstr "CS 63"
 
 msgid "Turret_1_Pl22_CS_59"
@@ -1427,13 +1491,22 @@ msgstr "slpgr m/53"
 msgid "_105mm_3PPod_21"
 msgstr "3PPod-21"
 
+msgid "_105mm_3PPod_21_ISP"
+msgstr "3PPod-21"
+
 msgid "_105mm_Bofors_wz_34"
-msgstr "105mm Bofors wz. 34"
+msgstr "105 mm Bofors wz. 34"
 
 msgid "_105mm_POB_6M"
 msgstr "3PK-6M"
 
+msgid "_105mm_POB_6M_ISP"
+msgstr "3PK-6M"
+
 msgid "_105mm_PP_15"
+msgstr "PP-15"
+
+msgid "_105mm_PP_15_ISP"
 msgstr "PP-15"
 
 msgid "_105mm_armata_wz_59"
@@ -1444,6 +1517,9 @@ msgstr "105 mm armata wz. 64"
 
 msgid "_105mm_armata_wz_64_02"
 msgstr "105 mm armata wz. 64M2"
+
+msgid "_105mm_armata_wz_64_ISP"
+msgstr "105 mm armata wz. 64"
 
 msgid "_105mm_sgr_m_50_B"
 msgstr "sgr m/50 B"
@@ -1491,7 +1567,7 @@ msgid "_122mm_BR-471_M"
 msgstr "BR-471M"
 
 msgid "_122mm_D_25T_P"
-msgstr "122mm D-25T"
+msgstr "122 mm D-25T"
 
 msgid "_122mm_OF-471"
 msgstr "OF-471"
@@ -1545,10 +1621,10 @@ msgid "_122mm_wz_43_50_G6_SH"
 msgstr "122 mm armata wz.43/50"
 
 msgid "_122mm_wz_49_48_dualgun"
-msgstr "122mm wz.49/48 x2"
+msgstr "122 mm wz.49/48 x2"
 
 msgid "_122mm_wz_53"
-msgstr "122mm wz.53"
+msgstr "122 mm wz.53"
 
 msgid "_130mm_AZ_OF_46"
 msgstr "AZ-OF-46"
@@ -1589,13 +1665,25 @@ msgstr "130 mm wz.62"
 msgid "_152mm_J_2"
 msgstr "152 mm J 2"
 
+msgid "_152mm_J_2_ISP"
+msgstr "152 mm J 2"
+
 msgid "_152mm_pocisk_kumulacyjny"
+msgstr "Pocisk kumulacyjny"
+
+msgid "_152mm_pocisk_kumulacyjny_ISP"
 msgstr "Pocisk kumulacyjny"
 
 msgid "_152mm_pocisk_przeciwpancerny"
 msgstr "Pocisk przeciwpancerny"
 
+msgid "_152mm_pocisk_przeciwpancerny_ISP"
+msgstr "Pocisk przeciwpancerny"
+
 msgid "_152mm_pocisk_wybuchowy"
+msgstr "Pocisk wybuchowy"
+
+msgid "_152mm_pocisk_wybuchowy_ISP"
 msgstr "Pocisk wybuchowy"
 
 msgid "_175mm_AP"
@@ -1650,13 +1738,13 @@ msgid "_40mm_APCR"
 msgstr "40 mm APCR"
 
 msgid "_40mm_DL55"
-msgstr "40mm Działko czołgowe Dł.55"
+msgstr "40 mm Działko czołgowe Dł.55"
 
 msgid "_40mm_HE"
 msgstr "40 mm HE"
 
 msgid "_40mm_auto_Boforsa"
-msgstr "40mm auto. Boforsa"
+msgstr "40 mm auto. Boforsa"
 
 msgid "_40mm_pocisk_podkalibrowy"
 msgstr "Pocisk podkalibrowy"
@@ -1680,7 +1768,7 @@ msgid "_47mm_QFSA"
 msgstr "47 mm QFSA"
 
 msgid "_47mm_armata_wz_39"
-msgstr "47mm armata wz. 39"
+msgstr "47 mm armata wz. 39"
 
 msgid "_47mm_kan_m_38_strv"
 msgstr "47 mm kan m/38 strv"
@@ -1749,16 +1837,16 @@ msgid "_75mm_Sprg.18_K2_wz40"
 msgstr "PW25"
 
 msgid "_75mm_wz_1897"
-msgstr "75mm wz. 1897"
+msgstr "75 mm wz. 1897"
 
 msgid "_75mm_wz_22_24"
-msgstr "75mm wz 22/24"
+msgstr "75 mm wz 22/24"
 
 msgid "_75mm_wz_24_38"
 msgstr "75 mm wz.24/38W"
 
 msgid "_75mm_wz_36_37"
-msgstr "75mm wz.36/37"
+msgstr "75 mm wz.36/37"
 
 msgid "_75mm_wz_36_37_G2_APCR_SH"
 msgstr "APCR wz.36/37"

@@ -23,10 +23,10 @@ msgstr "ČKD AXL"
 msgid "CKD_AXL_CN"
 msgstr "ČKD AXL GW"
 
-msgid "Chassis_Cz00_COSM_Gravizapa"
+msgid "Chassis_Cz00_COSM_Gravizapa_02"
 msgstr "Марсаход"
 
-msgid "Chassis_Cz00_COSM_Pepelac"
+msgid "Chassis_Cz00_COSM_Pepelac_02"
 msgstr "Метэор"
 
 msgid "Chassis_Cz01_Skoda_T40"
@@ -45,6 +45,9 @@ msgid "Chassis_Cz03_LT_vz35_2"
 msgstr "T-11"
 
 msgid "Chassis_Cz04_T50_51"
+msgstr "TVP T 50/51"
+
+msgid "Chassis_Cz04_T50_51_ISP"
 msgstr "TVP T 50/51"
 
 msgid "Chassis_Cz05_T34_100"
@@ -152,10 +155,10 @@ msgstr "Projekt SAT"
 msgid "Chassis_Cz39_SD_122_49_Sekera"
 msgstr "SD-122/49"
 
-msgid "Cz00_COSM_Gravizapa"
+msgid "Cz00_COSM_Gravizapa_02"
 msgstr "Спадарожнік"
 
-msgid "Cz00_COSM_Gravizapa_descr"
+msgid "Cz00_COSM_Gravizapa_02_descr"
 msgstr ""
 "Эксперыментальная распрацоўка НПВА «Перспектыва», задзейнічаная ў місіі «На "
 "Марс!». Была тэхнічна ўдасканалена для мэтаў новай экспедыцыі «На Марс: "
@@ -163,35 +166,26 @@ msgstr ""
 "прызначаны для выканання як даследчыцкіх, так і баявых задач. Пры гэтым "
 "дадзеныя машыны больш устойлівыя і страляюць больш магутнымі імпульсамі."
 
+msgid "Cz00_COSM_Gravizapa_02_short"
+msgstr "Спадарожнік"
+
 msgid "Cz00_COSM_Gravizapa_long_special"
 msgstr "?empty?"
-
-msgid "Cz00_COSM_Gravizapa_short"
-msgstr "Спадарожнік"
 
 msgid "Cz00_COSM_Gravizapa_short_special"
 msgstr "?empty?"
 
-msgid "Cz00_COSM_Pepelac"
+msgid "Cz00_COSM_Pepelac_02"
 msgstr "Метэор"
 
-msgid "Cz00_COSM_Pepelac_descr"
-msgstr ""
-"Рэвалюцыйная распрацоўка НПВА «Перспектыва». «Метэор» спраектаваны на аснове"
-" марсахода «Спадарожнік», які ўдзельнічаў у экспедыцыі «На Марс!». Пры гэтым"
-" новая мадэль мае шэраг адрозненняў ад свайго прататыпа. У прыватнасці, яна "
-"хутчэйшая і больш манеўраная. Як і «Спадарожнік», «Метэор» абсталяваны "
-"перадавымі навуковымі прыборамі і разлічаны на экстрэмальныя ўмовы "
-"эксплуатацыі падчас новай экспедыцыі пад кодавай назвай «На Марс: хаос». У "
-"першую чаргу, дадзеныя марсаходы прызначаны для выканання даследчых задач. "
-"Але пры неабходнасці могуць страляць імпульсамі і актываваць асаблівыя "
-"баявыя здольнасці і ўзмацненні."
+msgid "Cz00_COSM_Pepelac_02_descr"
+msgstr "?empty?"
 
 msgid "Cz00_COSM_Pepelac_long_special"
 msgstr "?empty?"
 
 msgid "Cz00_COSM_Pepelac_short"
-msgstr "Метэор"
+msgstr "?empty?"
 
 msgid "Cz00_COSM_Pepelac_short_special"
 msgstr "?empty?"
@@ -260,6 +254,25 @@ msgstr "LT vz. 35"
 
 msgid "Cz04_T50_51"
 msgstr "TVP T 50/51"
+
+msgid "Cz04_T50_51_ISP"
+msgstr "TVP T 51 Испытательный"
+
+msgid "Cz04_T50_51_ISP_descr"
+msgstr ""
+"Сумесны праект кампаній Škoda і ČKD. 14 студзеня 1950 г. пачалося "
+"абмеркаванне спецыфікацый будучага танка, аднак ужо 4 сакавіка 1950 г. "
+"Міністэрства абароны Чэхаславакіі абвясціла пра спыненне работы над "
+"праектам. Першаўзор пабудаваны не быў. Існаваў толькі ў чарцяжах."
+
+msgid "Cz04_T50_51_ISP_long_special"
+msgstr "?empty?"
+
+msgid "Cz04_T50_51_ISP_short"
+msgstr "TVP T 51 (И)"
+
+msgid "Cz04_T50_51_ISP_short_special"
+msgstr "?empty?"
 
 msgid "Cz04_T50_51_descr"
 msgstr ""
@@ -744,9 +757,9 @@ msgstr "SD-122/49 Sekera"
 
 msgid "Cz39_SD_122_49_Sekera_descr"
 msgstr ""
-"Проработка проекта тяжёлой самоходки была начата ČKD в 1948 году с кодовым наименованием темы работ «Sekera». Проект получил обозначение SD-122/49. Чехословацкие конструкторы пытались совместить в нём советские компоновочные решения с немецкой ходовой частью с шахматным расположением катков, призванным обеспечить хорошую плавность хода. Предполагалось использовать лицензионное советское орудие Д-25С. Для ускорения заряжания предусматривался досылатель. Размещение боекомплекта в нише позади рубки в быстросъёмном модуле должно было ускорить пополнение боекомплекта и повысить защищённость. На командирскую башенку предполагалось установить оптический дальномер. Однако эскизный проект SD-122/49, несмотря на его прогрессивность, имел и ряд объективных недостатков. Машина получалась не только слишком тяжёлой для дорожной инфраструктуры послевоенной Чехословакии, но и чересчур дорогостоящей. Решение же о приобретении лицензии на производство СУ-100, принятое в 1951-м году, окончательно поставило крест на этом проекте.\n"
+"Проработка проекта тяжёлой самоходки была начата ČKD в 1948 году с кодовым наименованием темы работ Sekera. Проект получил обозначение SD-122/49. Чехословацкие конструкторы пытались совместить в нём советские компоновочные решения с немецкой ходовой частью с шахматным расположением катков, призванным обеспечить хорошую плавность хода. Предполагалось использовать лицензионное советское орудие Д-25С. Для ускорения заряжания предусматривался досылатель. Размещение боекомплекта в нише позади рубки в быстросъёмном модуле должно было ускорить пополнение боекомплекта и повысить защищённость. На командирскую башенку предполагалось установить оптический дальномер. Однако эскизный проект SD-122/49, несмотря на его прогрессивность, имел и ряд объективных недостатков. Машина получалась не только слишком тяжёлой для дорожной инфраструктуры послевоенной Чехословакии, но и чересчур дорогостоящей. Решение же о приобретении лицензии на производство СУ-100, принятое в 1951 году, окончательно поставило крест на этом проекте.\n"
 "\n"
-"Характеристики машины могут быть изменены без компенсации."
+"Характеристики машины могут быть изменены без компенсации."
 
 msgid "Cz39_SD_122_49_Sekera_long_special"
 msgstr ""
@@ -768,10 +781,10 @@ msgstr "DTN-10"
 msgid "Fu7A"
 msgstr "Radiostanice Fu 7 upravená"
 
-msgid "GravEngine"
+msgid "GravEngine_02"
 msgstr "Марсаход"
 
-msgid "GravRadio"
+msgid "GravRadio_02"
 msgstr "Марсаход"
 
 msgid "Hanomag_WD_50PS"
@@ -780,13 +793,16 @@ msgstr "Hanomag WD-50PS"
 msgid "Lorenz_vz_38"
 msgstr "Lorenz"
 
-msgid "PepelacEngine"
+msgid "PepelacEngine_02"
 msgstr "Метэор"
 
-msgid "PepelacRadio"
+msgid "PepelacRadio_02"
 msgstr "Метэор"
 
 msgid "Praga_AXK"
+msgstr "Praga AXK"
+
+msgid "Praga_AXK_ISP"
 msgstr "Praga AXK"
 
 msgid "Praga_AXK_X16"
@@ -833,6 +849,9 @@ msgstr "Radiostanice RM-31T"
 
 msgid "Radiostanice_RM_31T_A_CN"
 msgstr "Radiostanice RM-31T GW"
+
+msgid "Radiostanice_RM_31T_A_ISP"
+msgstr "Radiostanice RM-31T"
 
 msgid "Radiostanice_RM_31T_K"
 msgstr "Radiostanice RM-31T"
@@ -933,10 +952,10 @@ msgstr "Škoda 16 cylinder diesel (A660)"
 msgid "Tatra_T-78"
 msgstr "Tatra T-78"
 
-msgid "Turret_1_Cz00_COSM_Gravizapa"
+msgid "Turret_1_Cz00_COSM_Gravizapa_02"
 msgstr "Марсаход"
 
-msgid "Turret_1_Cz00_COSM_Pepelac"
+msgid "Turret_1_Cz00_COSM_Pepelac_02"
 msgstr "Метэор"
 
 msgid "Turret_1_Cz01_Skoda_T40"
@@ -949,6 +968,9 @@ msgid "Turret_1_Cz03_LT_vz35"
 msgstr "LT vz. 35"
 
 msgid "Turret_1_Cz04_T50_51"
+msgstr "TVP T 50/51"
+
+msgid "Turret_1_Cz04_T50_51_ISP"
 msgstr "TVP T 50/51"
 
 msgid "Turret_1_Cz05_T34_100"
@@ -1089,6 +1111,9 @@ msgstr "100 mm A20"
 msgid "_100mm_AK1"
 msgstr "100 mm AK1"
 
+msgid "_100mm_AK1_ISP"
+msgstr "100 mm AK1"
+
 msgid "_100mm_BS_3"
 msgstr "100 mm BS-3"
 
@@ -1113,10 +1138,16 @@ msgstr "Nárazový vz. 49"
 msgid "_100mm_Narazovy_vz_50"
 msgstr "Nárazový vz. 50"
 
+msgid "_100mm_Narazovy_vz_50_ISP"
+msgstr "Nárazový vz. 50"
+
 msgid "_100mm_Prupalny_s_53"
 msgstr "Průpalný S 53"
 
 msgid "_100mm_Prupalny_vz_50"
+msgstr "Průpalný vz. 50"
+
+msgid "_100mm_Prupalny_vz_50_ISP"
 msgstr "Průpalný vz. 50"
 
 msgid "_100mm_Prupalny_vz_PP5"
@@ -1138,6 +1169,9 @@ msgid "_100mm_Prurazny_vz_49_s_oc_jadrem"
 msgstr "Průrazný vz. 49 (s jádrem)"
 
 msgid "_100mm_Prurazny_vz_50"
+msgstr "Průrazný vz. 50"
+
+msgid "_100mm_Prurazny_vz_50_ISP"
 msgstr "Průrazný vz. 50"
 
 msgid "_100mm_Prurazny_vz_PJ8_Dravec"
@@ -1305,19 +1339,16 @@ msgstr "130 mm vz. 54 2 GW"
 msgid "_130mm_vz_57"
 msgstr "130 mm vz. 57"
 
-msgid "_150mm_COSM"
+msgid "_150mm_COSM_02"
 msgstr "Марсаход"
 
-msgid "_150mm_Pepelac"
+msgid "_150mm_Pepelac_02"
 msgstr "Метэор"
 
-msgid "_150mm_PepelacShell"
+msgid "_150mm_Pepelac_02Shell"
 msgstr "Метэор"
 
-msgid "_150mm_PlasmaBall"
-msgstr "Марсаход"
-
-msgid "_150mm_Railgun"
+msgid "_150mm_PlasmaBall_02"
 msgstr "Марсаход"
 
 msgid "_152mm_AT"

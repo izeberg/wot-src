@@ -15,91 +15,91 @@ msgstr ""
 "(n%100<10 || n%100>=20) ? 1 : 2);"
 
 msgid "AT_SPG_damage"
-msgstr "Нанести %(goal)s ед. урона"
+msgstr "Прычыніць %(goal)s адз. пашкоджанняў"
 
 msgid "AT_SPG_hits"
-msgstr "Нанести урон %(goal)s разным машинам или объектам противника"
+msgstr "Прычыніць %(goal)s розным машынам або аб'ектам праціўніка"
 
 msgid "AT_SPG_kills"
-msgstr "Уничтожить %(goal)s ед. техники"
+msgstr "Знічшыць %(goal)s адз. тэхнікі"
 
 msgid "AT_SPG_piercingSeries_plural"
 msgid_plural "plural/AT_SPG_piercingSeries_plural"
-msgstr[0] "Пробить броню %(goal)s раз подряд"
-msgstr[1] "Пробить броню %(goal)s раза подряд"
-msgstr[2] "Пробить броню %(goal)s раз подряд"
+msgstr[0] "Пробить броню %(goal)s раз"
+msgstr[1] "Прабіць браню %(goal)s разы запар"
+msgstr[2] "Прабіць браню %(goal)s разоў запар"
 
 msgid "SPG_damage"
-msgstr "Нанести %(goal)s ед. урона"
+msgstr "Прычыніць %(goal)s адз. пашкоджанняў"
 
 msgid "SPG_hits_plural"
 msgid_plural "plural/SPG_hits_plural"
-msgstr[0] "Нанести урон %(goal)s раз"
-msgstr[1] "Нанести урон %(goal)s раза"
-msgstr[2] "Нанести урон %(goal)s раз"
+msgstr[0] "Прычыніць пашкоджанні %(goal)s раз"
+msgstr[1] "Прычыніць пашкоджанні %(goal)s разы"
+msgstr[2] "Прычыніць пашкоджанні %(goal)s разоў"
 
 msgid "SPG_kills"
-msgstr "Уничтожить %(goal)s ед. техники"
+msgstr "Знічшыць %(goal)s адз. тэхнікі"
 
 msgid "heavyTank_damage"
-msgstr "Нанести %(goal)s ед. урона"
+msgstr "Прычыніць %(goal)s адз. пашкоджанняў"
 
 msgid "heavyTank_damageDealtReceivedAndBlocked"
-msgstr "Суммарно нанести, получить и заблокировать %(goal)s ед. урона"
+msgstr "Суммарно нанести, получить и заблокировать %(goal)s ед. урона"
 
 msgid "heavyTank_kills"
-msgstr "Уничтожить %(goal)s ед. техники"
+msgstr "Знічшыць %(goal)s адз. тэхнікі"
 
 msgid "heavyTank_killsDiversity"
-msgstr "Уничтожить технику %(totalGoal)s разных типов"
+msgstr "Знішчыць тэхніку %(totalGoal)s розных тыпаў"
 
 msgid "lightTank_critsTracks"
-msgstr "Сбить гусеницу %(goal)s ед. техники противника"
+msgstr "Сбить гусеницу %(goal)s ед. техники противника"
 
 msgid "lightTank_damage"
-msgstr "Нанести %(goal)s ед. урона"
+msgstr "Прычыніць %(goal)s адз. пашкоджанняў"
 
 msgid "lightTank_kills"
-msgstr "Уничтожить %(goal)s ед. техники"
+msgstr "Знічшыць %(goal)s адз. тэхнікі"
 
 msgid "lightTank_shots_plural"
 msgid_plural "plural/lightTank_shots_plural"
-msgstr[0] "Нанести урон выстрелами %(goal)s раз"
-msgstr[1] "Нанести урон выстрелами %(goal)s раза"
-msgstr[2] "Нанести урон выстрелами %(goal)s раз"
+msgstr[0] "Прычыніць пашкоджанні стрэламі %(goal)s  разоў"
+msgstr[1] "Прычыніць пашкоджанні стрэламі %(goal)s  разы"
+msgstr[2] "Прычыніць пашкоджанні стрэламі %(goal)s  разоў"
 
 msgid "mediumTank_critsTracks"
-msgstr "Сбить гусеницу %(goal)s ед. техники противника"
+msgstr "Сбить гусеницу %(goal)s ед. техники противника"
 
 msgid "mediumTank_damage"
-msgstr "Нанести %(goal)s ед. урона"
+msgstr "Прычыніць %(goal)s адз. пашкоджанняў"
 
 msgid "mediumTank_hits"
-msgstr "Нанести урон %(goal)s разным машинам или объектам противника"
+msgstr "Прычыніць %(goal)s розным машынам або аб'ектам праціўніка"
 
 msgid "mediumTank_hitsDiversity"
-msgstr "Нанести урон %(uniqueGoal)s разным типам техники"
+msgstr "Прычыніць пашкоджанні %(uniqueGoal)s розным тыпам тэхнікі"
 
 msgid "mediumTank_kills"
-msgstr "Уничтожить %(goal)s ед. техники"
+msgstr "Знічшыць %(goal)s адз. тэхнікі"
 
 msgid "mediumTank_killsDiversity"
-msgstr "Уничтожить технику %(totalGoal)s разных типов"
+msgstr "Знішчыць тэхніку %(totalGoal)s розных тыпаў"
 
 msgid "mediumTank_shots_plural"
 msgid_plural "plural/mediumTank_shots_plural"
-msgstr[0] "Нанести урон выстрелами %(goal)s раз"
-msgstr[1] "Нанести урон выстрелами %(goal)s раза"
-msgstr[2] "Нанести урон выстрелами %(goal)s раз"
+msgstr[0] "Прычыніць пашкоджанні стрэламі %(goal)s  разоў"
+msgstr[1] "Прычыніць пашкоджанні стрэламі %(goal)s  разы"
+msgstr[2] "Прычыніць пашкоджанні стрэламі %(goal)s  разоў"
 
 msgid "quest/blocked/description"
-msgstr "Вернитесь на направление:"
+msgstr "Вернитесь на направление:"
 
 msgid "quest/blocked/description/undefined"
-msgstr "Вернитесь в зону целей"
+msgstr "Вернитесь в зону целей"
 
 msgid "quest/line/last"
-msgstr "Зона целей"
+msgstr "Зона цэляў"
 
 msgid "quest/line1"
 msgstr "A-D"
@@ -114,79 +114,79 @@ msgid "quest/progress"
 msgstr "%(progressValue)s/%(progressGoal)s"
 
 msgid "quest/title/blocked"
-msgstr "ЗАДАЧА НЕДОСТУПНА"
+msgstr "ЗАДАЧА НЕДАСТУПНАЯ"
 
 msgid "quest/title/completed"
-msgstr "ЗАДАЧА ВЫПОЛНЕНА"
+msgstr "ЗАДАЧА ВЫКАНАНА"
 
 msgid "quest/title/default"
-msgstr "БОЕВАЯ ЗАДАЧА"
+msgstr "БАЯВАЯ ЗАДАЧА"
 
 msgid "questTab/isObserver"
-msgstr "Боевая задача и прогрессия зоны недоступны в режиме наблюдателя."
+msgstr "Боевая задача и прогрессия зоны недоступны в режиме наблюдателя."
 
 msgid "questTab/noStarted"
 msgstr ""
-"Боевая задача и командная прогрессия зоны станут доступны по окончании "
+"Боевая задача и командная прогрессия зоны станут доступны по окончании "
 "предбоевого отсчёта."
 
 msgid "questTab/personal/active"
-msgstr "Выполняется"
+msgstr "Выконваецца"
 
 msgid "questTab/personal/blocked"
-msgstr "Не выполняется"
+msgstr "Не выполняется"
 
 msgid "questTab/personal/completed"
-msgstr "Выполнена"
+msgstr "Выканана"
 
 msgid "questTab/personal/completedAll"
-msgstr "Выполнены все доступные задачи в текущей зоне."
+msgstr "Выполнены все доступные задачи в текущей зоне."
 
 msgid "questTab/personal/title"
-msgstr "Персональная боевая задача"
+msgstr "Персанальная баявая задача"
 
 msgid "questTab/progression/active"
 msgstr ""
-"Выполняйте боевые задачи, пополняйте командную прогрессию зоны и получайте "
-"доступ к объектам поддержки:"
+"Выполняйте боевые задачи, пополняйте командную прогрессию зоны и получайте "
+"доступ к объектам поддержки:"
 
 msgid "questTab/progression/blocked"
 msgstr ""
-"Вернитесь на своё направление, чтобы продолжить выполнять боевые задачи и "
-"пополнять прогрессию объектов поддержки."
+"Вернитесь на своё направление, чтобы продолжить выполнять боевые задачи "
+"и пополнять прогрессию объектов поддержки."
 
 msgid "questTab/progression/completed"
 msgstr ""
-"Получены все объекты поддержки в зоне. Вы можете продолжать выполнять задачи"
-" в зоне для роста в звании."
+"Получены все объекты поддержки в зоне. Вы можете продолжать выполнять задачи"
+" в зоне для роста в звании."
 
 msgid "questTab/progression/current"
 msgstr "%(current)s%"
 
 msgid "questTab/progression/paused"
-msgstr "Прогрессия станет доступна после открытия следующей зоны направления."
+msgstr "Прагрэсія будзе даступная пасля адкрыцця наступнай зоны кірунку."
 
 msgid "questTab/progression/questsBlocked"
 msgstr ""
-"Вернитесь на своё направление, чтобы продолжить выполнять боевые задачи."
+"Вернитесь на своё направление, чтобы продолжить выполнять боевые задачи."
 
 msgid "questTab/progression/targetZone"
-msgstr "В зоне целей нет объектов поддержки."
+msgstr "В зоне целей нет объектов поддержки."
 
 msgid "questTab/progression/title"
-msgstr "Командная прогрессия"
+msgstr "Камандная прагрэсія"
 
 msgid "questTab/supply_Airship"
-msgstr "Дирижабль"
+msgstr "Дырыжабль"
 
 msgid "questTab/supply_Flamer"
-msgstr "Огнемёт"
+msgstr "Агнямёт"
 
 msgid "questTab/supply_Mortar"
-msgstr "РСЗО"
+msgstr "РСЗА"
 
 msgid "questTab/supply_Pillbox"
-msgstr "ДОТ"
+msgstr "Дот"
 
 msgid "questTab/zone"
 msgstr "Зона %(name)s"

@@ -180,18 +180,30 @@ msgstr "Штурмавы прыцэл"
 
 msgid "detailsHelp/assaultTank/prosCons"
 msgstr ""
-"Ключевые особенности — акцент на нанесение урона за счёт высоких значений "
-"бронепробиваемости и скорости заряжания орудия, сравнительно высокие "
-"показатели лобового бронирования и живучести в своём классе. Используйте эти"
-" особенности против целей, находящихся в укрытиях, но помните, что на "
-"близких дистанциях вы крайне уязвимы, а низкая манёвренность не позволит "
-"быстро среагировать на атаку с фланга."
+"Ключевые особенности — акцент на нанесение урона за счёт высоких значений "
+"бронепробиваемости и скорости заряжания орудия, сравнительно высокие "
+"показатели лобового бронирования и живучести в своём классе. Используйте эти"
+" особенности против целей, находящихся в укрытиях, но помните, что "
+"на близких дистанциях вы крайне уязвимы, а низкая манёвренность не позволит "
+"быстро среагировать на атаку с фланга."
 
 msgid "detailsHelp/assaultTank/prosCons/title"
 msgstr "Перавагі і недахопы"
 
 msgid "detailsHelp/assaultTank/title"
 msgstr "Штурмавая артылерыя"
+
+msgid "detailsHelp/autoShoot/description"
+msgstr ""
+"Механика непрерывного режима стрельбы позволяет отстрелять в противника всю "
+"ленту снарядов за короткий промежуток времени. Огонь может вестись как "
+"одиночными выстрелами, так и непрерывно при удержании кнопки выстрела."
+
+msgid "detailsHelp/autoShoot/headerTitle"
+msgstr "Техника с автоматическим орудием"
+
+msgid "detailsHelp/autoShoot/title"
+msgstr "Особенности стрельбы"
 
 msgid "detailsHelp/autoShootFlameTank/description"
 msgstr ""
@@ -231,10 +243,10 @@ msgstr "Пошук здабычы"
 
 msgid "detailsHelp/battleRoyale/coneVisibility/description"
 msgstr ""
-"Вы можаце выявіць толькі тую тэхніку, якая патрапіла ў ваш сектар бачнасці —"
-" «конус» перад вежай. Для зручнасці ён паказваецца на міні-карце. Машына "
-"праціўніка, якая знаходзіцца ў непасрэднай блізкасці ад вас, бачная заўсёды "
-"(т. зв. «рэнтген»)."
+"Вы можете обнаружить только ту технику, которая попала в ваш сектор "
+"видимости — «конус» перед башней. Для удобства он отображается на мини-"
+"карте. Машина противника, находящаяся в непосредственной близости от вас, "
+"видима всегда (т. н. «рентген»)."
 
 msgid "detailsHelp/battleRoyale/coneVisibility/title"
 msgstr "Сістэма агляду"
@@ -592,7 +604,7 @@ msgid "radialMenu/attacking_enemy"
 msgstr "Атакую цэль!"
 
 msgid "radialMenu/attacking_supply"
-msgstr "Атакую объект!"
+msgstr "Атакую аб'ект!"
 
 msgid "radialMenu/attention_to_base_atk"
 msgstr "Захапіце!"
@@ -607,13 +619,13 @@ msgid "radialMenu/cancel_reply"
 msgstr "Адмовіць"
 
 msgid "radialMenu/defend_supply"
-msgstr "Защищайте объект!"
+msgstr "Абараняйце аб'ект!"
 
 msgid "radialMenu/defending_base"
 msgstr "Я абараню!"
 
 msgid "radialMenu/defending_supply"
-msgstr "Защищаю объект!"
+msgstr "Абараняю аб'ект!"
 
 msgid "radialMenu/enemy_hq_attack_command"
 msgstr "Атакуйце!"
@@ -640,7 +652,7 @@ msgid "radialMenu/reply_to_player"
 msgstr "Пацвярджаю!"
 
 msgid "radialMenu/supply_self_repair"
-msgstr "Объект на ремонте!"
+msgstr "Аб'ект на рамонце!"
 
 msgid "radialMenu/supporting_ally"
 msgstr "Я дапамагу табе!"

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<Properties>
+		<teleportPosition>
+			<Type>VECTOR3</Type>
+			<Flags>ALL_CLIENTS</Flags>
+			<DetailLevel>MY_VEHICLE</DetailLevel>
+		</teleportPosition>
+		<teleportGlimpseTo>
+			<Type>VECTOR3</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</teleportGlimpseTo>
+		<teleportGlimpseFrom>
+			<Type>VECTOR3</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</teleportGlimpseFrom>
+	</Properties>
+	<ofEntity>
+		<Vehicle/>
+	</ofEntity>
+</root>

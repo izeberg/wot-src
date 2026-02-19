@@ -729,11 +729,11 @@
 				<config>
 					<property>
 						<name>Object name</name>
-						<value/>
+						<value>startSound</value>
 					</property>
 					<property>
 						<name>Event name</name>
-						<value/>
+						<value>ability_arl_projet_f_start</value>
 					</property>
 					<property>
 						<name>AutoStart</name>
@@ -747,11 +747,11 @@
 				<config>
 					<property>
 						<name>Object name</name>
-						<value/>
+						<value>stopSound</value>
 					</property>
 					<property>
 						<name>Event name</name>
-						<value/>
+						<value>ability_arl_projet_f_stop</value>
 					</property>
 					<property>
 						<name>AutoStart</name>

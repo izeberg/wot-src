@@ -1593,6 +1593,8 @@ class GunParams(WeightedParam):
     def dispertionRadius(self):
         disp = self._getRawParams()[DISPERSION_RADIUS_PROP_NAME][0]
         gun = self.__getSelectedVehicleGun()
+        if self._vehicleDescr is not None and self._vehicleDescr.isMultiGunVehicle and self._vehicleDescr.isAutoShootGunVehicle:
+            disp += self._vehicleDescr.turret.distanceBetweenMultiGuns / 2.0
         if isDualAccuracy(gun):
             return (math.tan(gun.dualAccuracy.afterShotDispersionAngle) * 100, disp)
         else:

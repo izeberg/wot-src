@@ -14,6 +14,7 @@ package net.wg.gui.lobby.vehiclePreview.data
          CURRENCY_TO_ICON_TYPES_MAP[CURRENCIES_CONSTANTS.GOLD] = IconsTypes.GOLD_BIG;
          CURRENCY_TO_ICON_TYPES_MAP[CURRENCIES_CONSTANTS.CREDITS] = IconsTypes.CREDITS_BIG;
          CURRENCY_TO_ICON_TYPES_MAP[CURRENCIES_CONSTANTS.CRYSTAL] = IconsTypes.CRYSTAL;
+         CURRENCY_TO_ICON_TYPES_MAP[CURRENCIES_CONSTANTS.FREE_XP] = CURRENCIES_CONSTANTS.FREE_XP;
       }
       
       public var originalPrice:int = 0;
@@ -33,6 +34,8 @@ package net.wg.gui.lobby.vehiclePreview.data
       public var actionBtnTooltip:String = "";
       
       public var actionPrice:ActionPriceVO = null;
+      
+      public var isMoneyEnough:Boolean = false;
       
       private var _priceType:String = "goldBig";
       

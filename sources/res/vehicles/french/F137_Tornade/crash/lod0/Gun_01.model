@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<visibilityBox>
+		<min>-1.381240 -0.681852 -1.862455</min>
+		<max>1.422681 0.835865 4.999177</max>
+	</visibilityBox>
+	<parent>vehicles/french/F137_Tornade/crash/lod1/Gun_01</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodelessVisual>vehicles/french/F137_Tornade/crash/lod0/Gun_01</nodelessVisual>
+</root>

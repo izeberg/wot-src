@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<parent>vehicles/russian/R225_Vasiliev_project/crash/lod1/Hull</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.720969 -0.747565 -2.843836</min>
+		<max>1.721585 0.469164 3.099767</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/russian/R225_Vasiliev_project/crash/lod0/Hull</nodefullVisual>
+</root>

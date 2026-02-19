@@ -4,14 +4,8 @@
 	<nodelessVisual>vehicles/chinese/Ch38_WZ113G_FT/crash/lod0/Gun_05</nodelessVisual>
 	<materialNames/>
 	<visibilityBox>
-		<min>
-			-0.493398 -0.46642 -1.05927
-			<!--BW_String-->
-		</min>
-		<max>
-			0.493398 0.383454 3.96927
-			<!--BW_String-->
-		</max>
+		<min>-0.493398 -0.466420 -1.059272</min>
+		<max>0.493398 0.383454 3.969270</max>
 	</visibilityBox>
 	<parent>vehicles/chinese/Ch38_WZ113G_FT/crash/lod1/Gun_05</parent>
 	<extent>32</extent>

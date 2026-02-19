@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/chinese/Ch38_WZ113G_FT/_skins/Ch38_WZ113G_FT_3Dst_Hyperion/normal/lod2/Gun_05</parent>
+	<tank>true</tank>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.507642 -0.466422 0.061411</min>
+		<max>0.827180 0.593498 3.969346</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/chinese/Ch38_WZ113G_FT/_skins/Ch38_WZ113G_FT_3Dst_Hyperion/normal/lod1/Gun_05</nodefullVisual>
+</root>

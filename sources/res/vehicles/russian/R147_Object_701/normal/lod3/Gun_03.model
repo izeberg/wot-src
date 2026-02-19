@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>
+			-0.336928 -0.286135 -0.09205
+			<!--BW_String-->
+		</min>
+		<max>
+			0.296828 0.347951 4.5233
+			<!--BW_String-->
+		</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/russian/R147_Object_701/normal/lod3/Gun_03</nodefullVisual>
+	<parent>vehicles/russian/R147_Object_701/normal/lod4/Gun_03</parent>
+	<extent>192</extent>
+</root>

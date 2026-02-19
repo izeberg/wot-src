@@ -3,10 +3,10 @@
 	<tank>true</tank>
 	<materialNames/>
 	<visibilityBox>
-		<min>-0.415488 -0.485677 -0.123815</min>
-		<max>0.454059 0.451855 5.351761</max>
+		<min>-0.396723 -0.485677 0.218116</min>
+		<max>0.438318 0.394909 5.351762</max>
 	</visibilityBox>
 	<parent>vehicles/russian/R47_ISU-152/normal/lod2/Gun_02</parent>
-	<extent>64</extent>
+	<extent>64.000000</extent>
 	<nodefullVisual>vehicles/russian/R47_ISU-152/normal/lod1/Gun_02</nodefullVisual>
 </root>

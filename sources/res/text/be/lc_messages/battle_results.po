@@ -505,7 +505,7 @@ msgid "details/calculations/directives"
 msgstr "Бонус ад эканамічнага настаўлення"
 
 msgid "details/calculations/distributedXP"
-msgstr "Надбавка за распределённый урон и очки захвата/защиты от объектов"
+msgstr "Надбавка за распределённый урон и очки захвата/защиты от объектов"
 
 msgid "details/calculations/event"
 msgstr "Бонус за баявыя задачы і падзеі"
@@ -547,7 +547,7 @@ msgid "details/calculations/friendlyFireRankedXpPenalty"
 msgstr "Штраф за дэзарыентаванне або пашкоджанне хаўруснікаў"
 
 msgid "details/calculations/frontlineXP"
-msgstr "Надбавка за выполненные задачи"
+msgstr "Надбавка за выполненные задачи"
 
 msgid "details/calculations/heavyTrucks"
 msgstr "Велікагрузны транспарт"
@@ -664,7 +664,7 @@ msgid "details/time/val_yes"
 msgstr "Так"
 
 msgid "details/time/value"
-msgstr "%(min)s хв %(sec)s с"
+msgstr "%(min)s мин. %(sec)s с"
 
 msgid "details/time_epic"
 msgstr "Бой"
@@ -1029,10 +1029,10 @@ msgid "team/stats/labels_damageDealtRatio"
 msgstr "\tпашкоджанні, прычыненыя камандзе супраціўніка"
 
 msgid "team/stats/labels_damageFromSupplies"
-msgstr "Получено урона от объектов поддержки"
+msgstr "Получено урона от объектов поддержки"
 
 msgid "team/stats/labels_damageToSupplies"
-msgstr "Нанесено урона по объектам поддержки"
+msgstr "Нанесено урона по объектам поддержки"
 
 msgid "team/stats/labels_damagedKilled"
 msgstr "Пашкоджаныя/знішчаныя машыны супраціўніка"
@@ -1053,10 +1053,10 @@ msgid "team/stats/labels_directHitsReceived"
 msgstr "Атрыманыя траплянні"
 
 msgid "team/stats/labels_distributedSupplyBasePoints"
-msgstr "Распределённые очки захвата/защиты от союзных объектов"
+msgstr "Распределённые очки захвата/защиты от союзных объектов"
 
 msgid "team/stats/labels_distributedSupplyDamage"
-msgstr "Распределённый урон от союзных объектов поддержки"
+msgstr "Распределённый урон от союзных объектов поддержки"
 
 msgid "team/stats/labels_equipmentDamageAssisted"
 msgstr "\tпадчас дзеяння баявых рэзерваў"
@@ -1119,7 +1119,7 @@ msgid "team/stats/labels_stunNum"
 msgstr "Дэзарыентацый выклікана"
 
 msgid "team/stats/labels_suppliesDestroyed"
-msgstr "Уничтожено объектов поддержки"
+msgstr "Знішчана аб'ектаў падтрымкі"
 
 msgid "team/stats/labels_teamHitsDamage"
 msgstr "Шкода хаўруснікам (знішчыў/пашкоджанняў)"

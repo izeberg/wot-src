@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>s_nd0.vertices</vertices>
+			<stream>s_nd0.colour</stream>
+			<primitive>s_nd0.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0</identifier>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>111</materialKind>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<property>
+						alphaReference
+						<Int>145</Int>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Buildings/hd_bld_SU_0176_DamagedMill/hd_bld_SU_0176_DamagedMill_07_BAM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Buildings/hd_bld_SU_0176_DamagedMill/hd_bld_SU_0176_DamagedMill_07_BGMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Buildings/hd_bld_SU_0176_DamagedMill/hd_bld_SU_0176_DamagedMill_07_BANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.910251 9.237505 -3.439624</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>s_nd1.vertices</vertices>
+			<stream>s_nd1.colour</stream>
+			<primitive>s_nd1.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd1</identifier>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>112</materialKind>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<property>
+						alphaReference
+						<Int>145</Int>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Buildings/hd_bld_SU_0176_DamagedMill/hd_bld_SU_0176_DamagedMill_07_BAM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Buildings/hd_bld_SU_0176_DamagedMill/hd_bld_SU_0176_DamagedMill_07_BGMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Buildings/hd_bld_SU_0176_DamagedMill/hd_bld_SU_0176_DamagedMill_07_BANM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+				</material>
+				<groupOrigin>-0.917175 12.647566 -2.887910</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-15.014996 -1.004517 -15.889170</min>
+		<max>13.180645 19.545856 9.009923</max>
+	</boundingBox>
+	<geometrySize>139974</geometrySize>
+	<minUVDensity>0.000015</minUVDensity>
+</root>

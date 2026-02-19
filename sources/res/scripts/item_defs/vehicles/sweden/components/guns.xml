@@ -58,12 +58,15 @@
 		<_105mm_Bofors_D_G5_SH>1004</_105mm_Bofors_D_G5_SH>
 		<_120mm_akan_L_40_G6_SH>1005</_120mm_akan_L_40_G6_SH>
 		<_105mm_strvkan_L_55>31001</_105mm_strvkan_L_55>
+		<_152mm_Kanon_FM49_L50_1>31009</_152mm_Kanon_FM49_L50_1>
 		<_155mm_Kanon_M60>31003</_155mm_Kanon_M60>
 		<_152mm_Kanon_M37>31004</_152mm_Kanon_M37>
 		<_152mm_Kanon_FM49_L50>31005</_152mm_Kanon_FM49_L50>
 		<_105mm_Kanon_M34>31007</_105mm_Kanon_M34>
 		<_149mm_Haubits_M39>31008</_149mm_Haubits_M39>
 		<_120mm_akan_L_40_Kranvagn>31010</_120mm_akan_L_40_Kranvagn>
+		<_155mm_Kanon_L50>31011</_155mm_Kanon_L50>
+		<_105mm_kan_strv_103_L_62_ISP>37000</_105mm_kan_strv_103_L_62_ISP>
 		<_155mm_Kanon_M60_T>35001</_155mm_Kanon_M60_T>
 		<_152mm_Kanon_FM49_L50_T>35002</_152mm_Kanon_FM49_L50_T>
 		<_149mm_Haubits_M39_T>35003</_149mm_Haubits_M39_T>
@@ -4531,6 +4534,118 @@
 				</_105mm_slsgr_m_61A>
 			</shots>
 		</_105mm_kan_strv_103_L_62>
+		<_105mm_kan_strv_103_L_62_ISP>
+			<userString>#sweden_vehicles:_105mm_kan_strv_103_L_62_ISP</userString>
+			<tags/>
+			<level>10</level>
+			<price>330000</price>
+			<notInShop>true</notInShop>
+			<impulse>
+				0.48
+				<!--BW_String-->
+			</impulse>
+			<recoil>
+				<lodDist>MEDIUM</lodDist>
+				<amplitude>
+					0.24
+					<!--BW_String-->
+				</amplitude>
+				<recoilEffect>main</recoilEffect>
+			</recoil>
+			<effects>shot_large</effects>
+			<reloadEffect>reload85_107</reloadEffect>
+			<pitchLimits>
+				<minPitch>
+					0.0 -11.0 1.0 -11.0
+					<!--BW_String-->
+				</minPitch>
+				<maxPitch>
+					0.0 11.0 1.0 11.0
+					<!--BW_String-->
+				</maxPitch>
+			</pitchLimits>
+			<turretYawLimits>-180 180</turretYawLimits>
+			<rotationSpeed>
+				5.0
+				<!--BW_String-->
+			</rotationSpeed>
+			<reloadTime>
+				7.5
+				<!--BW_String-->
+			</reloadTime>
+			<maxAmmo>50</maxAmmo>
+			<aimingTime>
+				4.04
+				<!--BW_String-->
+			</aimingTime>
+			<weight>1645</weight>
+			<maxHealth>208</maxHealth>
+			<maxRegenHealth>104</maxRegenHealth>
+			<repairCost>8</repairCost>
+			<invisibilityFactorAtShot>
+				0.1
+				<!--BW_String-->
+			</invisibilityFactorAtShot>
+			<shotDispersionRadius>
+				0.4
+				<!--BW_String-->
+			</shotDispersionRadius>
+			<shotDispersionFactors>
+				<turretRotation>
+					0.05
+					<!--BW_String-->
+				</turretRotation>
+				<afterShot>
+					4.0
+					<!--BW_String-->
+				</afterShot>
+				<whileGunDamaged>
+					2.0
+					<!--BW_String-->
+				</whileGunDamaged>
+			</shotDispersionFactors>
+			<shots>
+				<_105mm_slpprj_m_61_ISP>
+					<defaultPortion>
+						0.95
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>1500</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>308 298</piercingPower>
+				</_105mm_slpprj_m_61_ISP>
+				<_105mm_slpprj_m_66_ISP>
+					<defaultPortion>
+						0.0
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>1450</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>350 340</piercingPower>
+				</_105mm_slpprj_m_66_ISP>
+				<_105mm_slsgr_m_61A_ISP>
+					<defaultPortion>
+						0.05
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>680</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>53 53</piercingPower>
+				</_105mm_slsgr_m_61A_ISP>
+			</shots>
+		</_105mm_kan_strv_103_L_62_ISP>
 		<_105mm_kan_strv_103_L_62_FL>
 			<userString>#sweden_vehicles:_105mm_kan_strv_103_L_62</userString>
 			<tags/>
@@ -4865,7 +4980,7 @@
 			<userString>#sweden_vehicles:_105mm_Kanon_M34</userString>
 			<tags/>
 			<level>5</level>
-			<price>55000</price>
+			<price>50000</price>
 			<impulse>
 				0.46
 				<!--BW_String-->
@@ -4936,22 +5051,22 @@
 						0.8
 						<!--BW_String-->
 					</defaultPortion>
-					<speed>460</speed>
-					<gravity>130</gravity>
+					<speed>480</speed>
+					<gravity>120</gravity>
 					<maxDistance>10000</maxDistance>
 					<piercingPower>32 32</piercingPower>
-					<maxHeight>450</maxHeight>
+					<maxHeight>554</maxHeight>
 				</_105mm_slsgr_M_34>
 				<_105mm_slpgr_M49>
 					<defaultPortion>
 						0.2
 						<!--BW_String-->
 					</defaultPortion>
-					<speed>500</speed>
-					<gravity>130</gravity>
+					<speed>560</speed>
+					<gravity>120</gravity>
 					<maxDistance>10000</maxDistance>
 					<piercingPower>180 145</piercingPower>
-					<maxHeight>450</maxHeight>
+					<maxHeight>754</maxHeight>
 				</_105mm_slpgr_M49>
 			</shots>
 		</_105mm_Kanon_M34>
@@ -5684,7 +5799,7 @@
 			<userString>#sweden_vehicles:_149mm_Haubits_M39</userString>
 			<tags/>
 			<level>6</level>
-			<price>65000</price>
+			<price>62000</price>
 			<impulse>
 				0.64
 				<!--BW_String-->
@@ -5755,25 +5870,119 @@
 						0.8
 						<!--BW_String-->
 					</defaultPortion>
-					<speed>460</speed>
-					<gravity>130</gravity>
+					<speed>480</speed>
+					<gravity>120</gravity>
 					<maxDistance>10000</maxDistance>
 					<piercingPower>39 39</piercingPower>
-					<maxHeight>450</maxHeight>
+					<maxHeight>554</maxHeight>
 				</_149mm_Spranggranat_M39_40_Z>
 				<_149mm_Stalgranat_M39_40>
 					<defaultPortion>
 						0.2
 						<!--BW_String-->
 					</defaultPortion>
-					<speed>500</speed>
-					<gravity>130</gravity>
+					<speed>560</speed>
+					<gravity>120</gravity>
 					<maxDistance>10000</maxDistance>
 					<piercingPower>195 165</piercingPower>
-					<maxHeight>450</maxHeight>
+					<maxHeight>754</maxHeight>
 				</_149mm_Stalgranat_M39_40>
 			</shots>
 		</_149mm_Haubits_M39>
+		<_152mm_Kanon_FM49_L50_1>
+			<userString>#sweden_vehicles:_152mm_Kanon_FM49_L50_1</userString>
+			<tags/>
+			<level>7</level>
+			<price>115000</price>
+			<impulse>
+				0.64
+				<!--BW_String-->
+			</impulse>
+			<recoil>
+				<lodDist>MEDIUM</lodDist>
+				<amplitude>
+					0.4
+					<!--BW_String-->
+				</amplitude>
+				<recoilEffect>huge</recoilEffect>
+			</recoil>
+			<effects>shot_huge</effects>
+			<reloadEffect>reload115_152</reloadEffect>
+			<pitchLimits>
+				<minPitch>
+					0.0 -45.0 1.0 -45.0
+					<!--BW_String-->
+				</minPitch>
+				<maxPitch>
+					0.0 4.0 1.0 4.0
+					<!--BW_String-->
+				</maxPitch>
+			</pitchLimits>
+			<turretYawLimits>-180 180</turretYawLimits>
+			<rotationSpeed>
+				22.75
+				<!--BW_String-->
+			</rotationSpeed>
+			<reloadTime>
+				16.0
+				<!--BW_String-->
+			</reloadTime>
+			<maxAmmo>18</maxAmmo>
+			<aimingTime>
+				6.85714285714286
+				<!--BW_String-->
+			</aimingTime>
+			<weight>4800</weight>
+			<maxHealth>188</maxHealth>
+			<maxRegenHealth>94</maxRegenHealth>
+			<repairCost>10</repairCost>
+			<invisibilityFactorAtShot>
+				0.1
+				<!--BW_String-->
+			</invisibilityFactorAtShot>
+			<shotDispersionRadius>
+				0.457142857142857
+				<!--BW_String-->
+			</shotDispersionRadius>
+			<shotDispersionFactors>
+				<turretRotation>
+					0.36
+					<!--BW_String-->
+				</turretRotation>
+				<afterShot>
+					6.0
+					<!--BW_String-->
+				</afterShot>
+				<whileGunDamaged>
+					2.0
+					<!--BW_String-->
+				</whileGunDamaged>
+			</shotDispersionFactors>
+			<shots>
+				<_152mm_sprgr_M39_1>
+					<defaultPortion>
+						0.8
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>480</speed>
+					<gravity>120</gravity>
+					<maxDistance>10000</maxDistance>
+					<piercingPower>39 39</piercingPower>
+					<maxHeight>554</maxHeight>
+				</_152mm_sprgr_M39_1>
+				<_152mm_stlgr_M39_1>
+					<defaultPortion>
+						0.2
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>560</speed>
+					<gravity>120</gravity>
+					<maxDistance>10000</maxDistance>
+					<piercingPower>233 223</piercingPower>
+					<maxHeight>754</maxHeight>
+				</_152mm_stlgr_M39_1>
+			</shots>
+		</_152mm_Kanon_FM49_L50_1>
 		<_149mm_Haubits_M39_T>
 			<userString>#sweden_vehicles:_149mm_Haubits_M39_T</userString>
 			<tags/>
@@ -5850,22 +6059,22 @@
 						0.8
 						<!--BW_String-->
 					</defaultPortion>
-					<speed>460</speed>
-					<gravity>130</gravity>
+					<speed>480</speed>
+					<gravity>120</gravity>
 					<maxDistance>10000</maxDistance>
 					<piercingPower>39 39</piercingPower>
-					<maxHeight>450</maxHeight>
+					<maxHeight>554</maxHeight>
 				</_149mm_Spranggranat_M39_40_Z_T>
 				<_149mm_Stalgranat_M39_40_T>
 					<defaultPortion>
 						0.2
 						<!--BW_String-->
 					</defaultPortion>
-					<speed>500</speed>
-					<gravity>130</gravity>
+					<speed>560</speed>
+					<gravity>120</gravity>
 					<maxDistance>10000</maxDistance>
 					<piercingPower>195 165</piercingPower>
-					<maxHeight>450</maxHeight>
+					<maxHeight>754</maxHeight>
 				</_149mm_Stalgranat_M39_40_T>
 			</shots>
 		</_149mm_Haubits_M39_T>
@@ -5873,7 +6082,7 @@
 			<userString>#sweden_vehicles:_152mm_Kanon_M37</userString>
 			<tags/>
 			<level>7</level>
-			<price>100000</price>
+			<price>91000</price>
 			<impulse>
 				0.64
 				<!--BW_String-->
@@ -5944,22 +6153,22 @@
 						0.8
 						<!--BW_String-->
 					</defaultPortion>
-					<speed>460</speed>
-					<gravity>130</gravity>
+					<speed>480</speed>
+					<gravity>120</gravity>
 					<maxDistance>10000</maxDistance>
 					<piercingPower>39 39</piercingPower>
-					<maxHeight>422</maxHeight>
+					<maxHeight>554</maxHeight>
 				</_152mm_sprgr_M39>
 				<_152mm_stlgr_M39>
 					<defaultPortion>
 						0.2
 						<!--BW_String-->
 					</defaultPortion>
-					<speed>500</speed>
-					<gravity>130</gravity>
+					<speed>560</speed>
+					<gravity>120</gravity>
 					<maxDistance>10000</maxDistance>
 					<piercingPower>252 234</piercingPower>
-					<maxHeight>422</maxHeight>
+					<maxHeight>754</maxHeight>
 				</_152mm_stlgr_M39>
 			</shots>
 		</_152mm_Kanon_M37>
@@ -5967,7 +6176,7 @@
 			<userString>#sweden_vehicles:_152mm_Kanon_FM49_L50</userString>
 			<tags/>
 			<level>8</level>
-			<price>130000</price>
+			<price>145000</price>
 			<impulse>
 				0.64
 				<!--BW_String-->
@@ -6038,25 +6247,119 @@
 						0.8
 						<!--BW_String-->
 					</defaultPortion>
-					<speed>460</speed>
-					<gravity>130</gravity>
+					<speed>480</speed>
+					<gravity>120</gravity>
 					<maxDistance>10000</maxDistance>
 					<piercingPower>39 39</piercingPower>
-					<maxHeight>422</maxHeight>
+					<maxHeight>554</maxHeight>
 				</_152mm_sprgr_M39>
 				<_152mm_stlgr_M39>
 					<defaultPortion>
 						0.2
 						<!--BW_String-->
 					</defaultPortion>
-					<speed>500</speed>
-					<gravity>130</gravity>
+					<speed>560</speed>
+					<gravity>120</gravity>
 					<maxDistance>10000</maxDistance>
 					<piercingPower>268 248</piercingPower>
-					<maxHeight>422</maxHeight>
+					<maxHeight>754</maxHeight>
 				</_152mm_stlgr_M39>
 			</shots>
 		</_152mm_Kanon_FM49_L50>
+		<_155mm_Kanon_L50>
+			<userString>#sweden_vehicles:_155mm_Kanon_L50</userString>
+			<tags/>
+			<level>9</level>
+			<price>240000</price>
+			<impulse>
+				0.68
+				<!--BW_String-->
+			</impulse>
+			<recoil>
+				<lodDist>MEDIUM</lodDist>
+				<amplitude>
+					0.6
+					<!--BW_String-->
+				</amplitude>
+				<recoilEffect>huge</recoilEffect>
+			</recoil>
+			<effects>shot_huge</effects>
+			<reloadEffect>autoloader_reload155_170</reloadEffect>
+			<turretYawLimits>-180 180</turretYawLimits>
+			<pitchLimits>
+				<minPitch>
+					0.0 -45.0 1.0 -45.0
+					<!--BW_String-->
+				</minPitch>
+				<maxPitch>
+					0.0 4.0 1.0 4.0
+					<!--BW_String-->
+				</maxPitch>
+			</pitchLimits>
+			<rotationSpeed>
+				22.75
+				<!--BW_String-->
+			</rotationSpeed>
+			<reloadTime>
+				17.8285714285714
+				<!--BW_String-->
+			</reloadTime>
+			<maxAmmo>20</maxAmmo>
+			<aimingTime>
+				5.71428571428571
+				<!--BW_String-->
+			</aimingTime>
+			<weight>4800</weight>
+			<maxHealth>194</maxHealth>
+			<maxRegenHealth>97</maxRegenHealth>
+			<repairCost>8</repairCost>
+			<invisibilityFactorAtShot>
+				0.1
+				<!--BW_String-->
+			</invisibilityFactorAtShot>
+			<shotDispersionRadius>
+				0.468571428571429
+				<!--BW_String-->
+			</shotDispersionRadius>
+			<shotDispersionFactors>
+				<turretRotation>
+					0.44
+					<!--BW_String-->
+				</turretRotation>
+				<afterShot>
+					6.0
+					<!--BW_String-->
+				</afterShot>
+				<whileGunDamaged>
+					2.0
+					<!--BW_String-->
+				</whileGunDamaged>
+			</shotDispersionFactors>
+			<shots>
+				<_155mm_slsgr_M60_50>
+					<defaultPortion>
+						0.8
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>480</speed>
+					<gravity>120</gravity>
+					<maxDistance>10000</maxDistance>
+					<piercingPower>42 42</piercingPower>
+					<maxHeight>554</maxHeight>
+				</_155mm_slsgr_M60_50>
+				<_155mm_slpgr_M112_50>
+					<defaultPortion>
+						0.2
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>560</speed>
+					<gravity>120</gravity>
+					<maxDistance>10000</maxDistance>
+					<piercingPower>315 286</piercingPower>
+					<maxHeight>754</maxHeight>
+				</_155mm_slpgr_M112_50>
+			</shots>
+		</_155mm_Kanon_L50>
 		<_152mm_Kanon_FM49_L50_T>
 			<userString>#sweden_vehicles:_152mm_Kanon_FM49_L50_T</userString>
 			<tags/>
@@ -6133,22 +6436,22 @@
 						0.8
 						<!--BW_String-->
 					</defaultPortion>
-					<speed>460</speed>
-					<gravity>130</gravity>
+					<speed>480</speed>
+					<gravity>120</gravity>
 					<maxDistance>10000</maxDistance>
 					<piercingPower>39 39</piercingPower>
-					<maxHeight>422</maxHeight>
+					<maxHeight>554</maxHeight>
 				</_152mm_sprgr_M39_T>
 				<_152mm_stlgr_M39_T>
 					<defaultPortion>
 						0.2
 						<!--BW_String-->
 					</defaultPortion>
-					<speed>500</speed>
-					<gravity>130</gravity>
+					<speed>560</speed>
+					<gravity>120</gravity>
 					<maxDistance>10000</maxDistance>
 					<piercingPower>268 248</piercingPower>
-					<maxHeight>422</maxHeight>
+					<maxHeight>754</maxHeight>
 				</_152mm_stlgr_M39_T>
 			</shots>
 		</_152mm_Kanon_FM49_L50_T>
@@ -6228,22 +6531,22 @@
 						0.8
 						<!--BW_String-->
 					</defaultPortion>
-					<speed>460</speed>
-					<gravity>130</gravity>
+					<speed>480</speed>
+					<gravity>120</gravity>
 					<maxDistance>10000</maxDistance>
 					<piercingPower>42 42</piercingPower>
-					<maxHeight>422</maxHeight>
+					<maxHeight>554</maxHeight>
 				</_155mm_slsgr_M66>
 				<_155mm_slpgr_M112>
 					<defaultPortion>
 						0.2
 						<!--BW_String-->
 					</defaultPortion>
-					<speed>500</speed>
-					<gravity>130</gravity>
+					<speed>560</speed>
+					<gravity>120</gravity>
 					<maxDistance>10000</maxDistance>
 					<piercingPower>330 306</piercingPower>
-					<maxHeight>422</maxHeight>
+					<maxHeight>754</maxHeight>
 				</_155mm_slpgr_M112>
 			</shots>
 		</_155mm_Kanon_M60>
@@ -6323,22 +6626,22 @@
 						0.8
 						<!--BW_String-->
 					</defaultPortion>
-					<speed>460</speed>
-					<gravity>130</gravity>
+					<speed>480</speed>
+					<gravity>120</gravity>
 					<maxDistance>10000</maxDistance>
 					<piercingPower>42 42</piercingPower>
-					<maxHeight>422</maxHeight>
+					<maxHeight>554</maxHeight>
 				</_155mm_slsgr_M66_T>
 				<_155mm_slpgr_M112_T>
 					<defaultPortion>
 						0.2
 						<!--BW_String-->
 					</defaultPortion>
-					<speed>500</speed>
-					<gravity>130</gravity>
+					<speed>560</speed>
+					<gravity>120</gravity>
 					<maxDistance>10000</maxDistance>
 					<piercingPower>330 306</piercingPower>
-					<maxHeight>422</maxHeight>
+					<maxHeight>754</maxHeight>
 				</_155mm_slpgr_M112_T>
 			</shots>
 		</_155mm_Kanon_M60_T>

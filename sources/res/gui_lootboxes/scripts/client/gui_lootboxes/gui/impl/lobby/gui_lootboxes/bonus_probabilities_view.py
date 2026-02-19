@@ -25,7 +25,7 @@ from gui_lootboxes.gui.impl.gen.view_models.views.lobby.gui_lootboxes.slot_view_
 from gui_lootboxes.gui.impl.lobby.gui_lootboxes.sound import LOOT_BOXES_OVERLAY_SOUND_SPACE
 from gui_lootboxes.gui.impl.lobby.gui_lootboxes.gui_helpers import detectBonusType
 from gui_lootboxes.gui.impl.lobby.gui_lootboxes.tooltips.compensation_tooltip import LootBoxesCompensationTooltip
-from gui_lootboxes.gui.impl.lobby.gui_lootboxes.tooltips.lootbox_tooltip import LootboxTooltip
+from gui_lootboxes.gui.impl.lobby.gui_lootboxes.tooltips.lootbox_tooltip import LootboxTooltip, ExtendedLootboxTooltip
 from gui_lootboxes.gui.impl.lobby.gui_lootboxes.tooltips.lootbox_key_tooltip import LootboxKeyTooltip
 from gui_lootboxes.gui.impl.lobby.gui_lootboxes.tooltips.probability_guaranteed_reward_tooltip import ProbabilityGuaranteedRewardTooltip
 from gui_lootboxes.gui.impl.lobby.gui_lootboxes.tooltips.probability_stage_buttons_tooltip import ProbabilityStageButtonsTooltip
@@ -52,6 +52,9 @@ class LootBoxSlot(object):
 
     def getBonusType(self):
         return self.__bonusType
+
+    def getId(self):
+        return self.__id
 
     def getViewData(self, tooltipData):
         slotModel = SlotViewModel()
@@ -110,6 +113,8 @@ class BonusProbabilitiesView(ViewImpl):
                 tooltipData = self.getTooltipData(event)
                 lootBoxID = tooltipData.get('lootBoxID')
                 lootBox = self.__itemsCache.items.tokens.getLootBoxByID(int(lootBoxID))
+                if lootBox.isExtendedTooltip():
+                    return ExtendedLootboxTooltip(lootBox)
                 return LootboxTooltip(lootBox)
             if contentID == R.views.gui_lootboxes.lobby.gui_lootboxes.tooltips.LootboxKeyTooltip():
                 tooltipData = self.getTooltipData(event)
@@ -211,7 +216,7 @@ class BonusProbabilitiesView(ViewImpl):
             lbSlot = LootBoxSlot(id=idx, probabilities=slot.get('probability', [0]), bonuses=slot.get('bonuses', []), bonusesSortTags=bonusesSortTags)
             lbSlots.append(lbSlot)
 
-        lbSlots = sorted(lbSlots, key=lambda x: (x.getBonusType().value, -x.getProbabilities()[0]))
+        lbSlots = sorted(lbSlots, key=lambda x: (x.getBonusType().value, -x.getProbabilities()[0], x.getId()))
         for slot in lbSlots:
             slotViewModel = slot.getViewData(self.__tooltipData)
             slotsArrayModel.addViewModel(slotViewModel)

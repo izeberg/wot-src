@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>s0Shape4.vertices</vertices>
+			<stream>s0Shape4.uv2</stream>
+			<primitive>s0Shape4.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0</identifier>
+					<fx>shaders/std_effects/PBS_tiled_global.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>108</materialKind>
+					<property>
+						albedoHeightTile0
+						<Texture>content/Environment/00_Tiles/dds/Mucus_01_512_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile1
+						<Texture>content/Environment/00_Tiles/dds/Roots_01_512_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile2
+						<Texture>content/Environment/00_Tiles/dds/Coral_03_512_AM.dds</Texture>
+					</property>
+					<property>
+						blendMask
+						<Texture>content/Environment/hd_env_EVT_C26_0004_Plants/hd_env_EVT_C26_0004_Plants_blend.png</Texture>
+					</property>
+					<property>
+						colorTex
+						<Texture>content/Environment/hd_env_EVT_C26_0004_Plants/hd_env_EVT_C26_0004_Plants_GCM.dds</Texture>
+					</property>
+					<property>
+						dirtMap
+						<Texture>content/Environment/00_Tiles/dds/Coral_02_512_AM.dds</Texture>
+					</property>
+					<property>
+						g_dirtColorParams
+						<Vector4>0.150000 0.900000 0.650000 1.000000</Vector4>
+					</property>
+					<property>
+						g_tileUVScale
+						<Vector4>16.000000 16.000000 1.000000 1.000000</Vector4>
+					</property>
+					<property>
+						g_tintParams
+						<Vector4>0.000000 1.000000 1.000000 1.000000</Vector4>
+					</property>
+					<property>
+						globalTex
+						<Texture>content/Environment/hd_env_EVT_C26_0004_Plants/hd_env_EVT_C26_0004_Plants_GNM.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile0
+						<Texture>content/Environment/00_Tiles/dds/Mucus_01_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile1
+						<Texture>content/Environment/00_Tiles/dds/Roots_01_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile2
+						<Texture>content/Environment/00_Tiles/dds/Coral_03_512_MAO.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile0
+						<Texture>content/Environment/00_Tiles/dds/Mucus_01_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile1
+						<Texture>content/Environment/00_Tiles/dds/Roots_01_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile2
+						<Texture>content/Environment/00_Tiles/dds/Coral_03_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						g_dirtColor
+						<Vector4>0.750000 0.430000 0.380000 1.000000</Vector4>
+					</property>
+				</material>
+				<groupOrigin>-0.016218 12.129854 0.073665</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>s1Shape.vertices</vertices>
+			<primitive>s1Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd1</identifier>
+					<fx>shaders/std_effects/glow.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>108</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/Environment/hd_env_EVT_C26_0004_Plants/hd_env_EVT_C26_0004_Plants_GCM.dds</Texture>
+					</property>
+					<property>
+						selfIllumination
+						<Float>10.000000</Float>
+					</property>
+					<property>
+						selfIlluminationEnvDependent
+						<Float>-1.000000</Float>
+					</property>
+					<property>
+						destBlend
+						<Int>2</Int>
+					</property>
+				</material>
+				<groupOrigin>0.153413 14.386604 0.289930</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-13.345230 -0.946425 -13.373899</min>
+		<max>13.296200 25.206135 13.521229</max>
+	</boundingBox>
+	<customBsp>true</customBsp>
+	<geometrySize>49956</geometrySize>
+	<minUVDensity>0.000039</minUVDensity>
+</root>

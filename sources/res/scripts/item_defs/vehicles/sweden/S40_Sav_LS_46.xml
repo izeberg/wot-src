@@ -1155,11 +1155,11 @@
 			<userString>#sweden_vehicles:Chassis_S40_Sav_LS_46</userString>
 			<tags/>
 			<level>5</level>
-			<price>8600</price>
+			<price>8800</price>
 			<unlocks>
 				<chassis>
 					Chassis_S40_Sav_LS_46_2
-					<cost>4400</cost>
+					<cost>4700</cost>
 				</chassis>
 			</unlocks>
 			<armor>
@@ -1228,17 +1228,22 @@
 						<isLeft>true</isLeft>
 						<destructionEffect/>
 						<physicalParams>
-							<renderModelOffset>-0.006311</renderModelOffset>
+							<renderModelOffset>
+								-0.02
+								<!--BW_String-->
+							</renderModelOffset>
 							<interpolationsCount>1</interpolationsCount>
-							<lengthwiseSpringLength>0.098829</lengthwiseSpringLength>
-							<widthwiseSpringLength>0.509939</widthwiseSpringLength>
-							<hingeJointStiffness>690.398376</hingeJointStiffness>
+							<lengthwiseSpringLength>0.088889</lengthwiseSpringLength>
+							<widthwiseSpringLength>
+								0.51
+								<!--BW_String-->
+							</widthwiseSpringLength>
+							<hingeJointStiffness>1137.336792</hingeJointStiffness>
 							<torsionStiffnessStep>6</torsionStiffnessStep>
 							<wheelGroups>
 								<wheelGroup>
 									<wheelName>WD_L1</wheelName>
-									<wheelName>WD_L0</wheelName>
-									<groupRadius>0.303149</groupRadius>
+									<groupRadius>0.322194</groupRadius>
 									<groupInnerOffset>
 										0.375
 										<!--BW_String-->
@@ -1270,25 +1275,37 @@
 										<!--BW_String-->
 									</groupOuterOffset>
 								</wheelGroup>
+								<wheelGroup>
+									<wheelName>WD_L0</wheelName>
+									<groupRadius>0.329838</groupRadius>
+									<groupInnerOffset>
+										0.375
+										<!--BW_String-->
+									</groupInnerOffset>
+									<groupOuterOffset>
+										-0.275
+										<!--BW_String-->
+									</groupOuterOffset>
+								</wheelGroup>
 							</wheelGroups>
 							<hullCollider>
 								<boxCollider>
 									<row0>2.150000 0.000000 0.000000</row0>
-									<row1>0.000000 1.336831 0.000000</row1>
+									<row1>0.000000 1.336830 0.000000</row1>
 									<row2>0.000000 0.000000 6.472500</row2>
-									<row3>0.000000 1.141425 -0.165910</row3>
+									<row3>0.000000 1.141430 -0.165910</row3>
 								</boxCollider>
 								<boxCollider>
 									<row0>1.000000 -0.000000 -0.000000</row0>
 									<row1>0.000000 0.299799 -0.010992</row1>
-									<row2>0.000000 0.230822 6.295772</row2>
-									<row3>-1.230307 1.342040 -0.284321</row3>
+									<row2>0.000000 0.230822 6.295770</row2>
+									<row3>-1.230310 1.342040 -0.284321</row3>
 								</boxCollider>
 								<boxCollider>
 									<row0>1.000000 -0.000000 -0.000000</row0>
 									<row1>0.000000 0.283656 0.097671</row1>
 									<row2>0.000000 -0.325569 0.945518</row2>
-									<row3>-1.230310 1.475329 2.797653</row3>
+									<row3>-1.230310 1.475330 2.797650</row3>
 								</boxCollider>
 							</hullCollider>
 						</physicalParams>
@@ -1297,17 +1314,25 @@
 						<isLeft>false</isLeft>
 						<destructionEffect/>
 						<physicalParams>
-							<renderModelOffset>-0.006597</renderModelOffset>
+							<renderModelOffset>
+								-0.02
+								<!--BW_String-->
+							</renderModelOffset>
 							<interpolationsCount>1</interpolationsCount>
-							<lengthwiseSpringLength>0.098962</lengthwiseSpringLength>
-							<widthwiseSpringLength>0.509939</widthwiseSpringLength>
-							<hingeJointStiffness>685.611938</hingeJointStiffness>
+							<lengthwiseSpringLength>0.089003</lengthwiseSpringLength>
+							<widthwiseSpringLength>
+								0.51
+								<!--BW_String-->
+							</widthwiseSpringLength>
+							<hingeJointStiffness>1131.248169</hingeJointStiffness>
 							<torsionStiffnessStep>6</torsionStiffnessStep>
 							<wheelGroups>
 								<wheelGroup>
 									<wheelName>WD_R1</wheelName>
-									<wheelName>WD_R0</wheelName>
-									<groupRadius>0.303558</groupRadius>
+									<groupRadius>
+										0.32218
+										<!--BW_String-->
+									</groupRadius>
 									<groupInnerOffset>
 										-0.375
 										<!--BW_String-->
@@ -1339,6 +1364,18 @@
 										<!--BW_String-->
 									</groupOuterOffset>
 								</wheelGroup>
+								<wheelGroup>
+									<wheelName>WD_R0</wheelName>
+									<groupRadius>0.330005</groupRadius>
+									<groupInnerOffset>
+										-0.375
+										<!--BW_String-->
+									</groupInnerOffset>
+									<groupOuterOffset>
+										0.275
+										<!--BW_String-->
+									</groupOuterOffset>
+								</wheelGroup>
 							</wheelGroups>
 							<hullCollider>
 								<boxCollider>
@@ -1348,13 +1385,13 @@
 									<row3>0.000000 1.141430 -0.165910</row3>
 								</boxCollider>
 								<boxCollider>
-									<row0>1.000000 -0.000000 -0.000000</row0>
+									<row0>1.000000 0.000000 0.000000</row0>
 									<row1>0.000000 0.299799 -0.010992</row1>
 									<row2>0.000000 0.230822 6.295771</row2>
 									<row3>1.230000 1.342040 -0.284321</row3>
 								</boxCollider>
 								<boxCollider>
-									<row0>1.000000 -0.000000 -0.000000</row0>
+									<row0>1.000000 0.000000 0.000000</row0>
 									<row1>0.000000 0.283656 0.097671</row1>
 									<row2>0.000000 -0.325569 0.945518</row2>
 									<row3>1.230000 1.475330 2.797650</row3>
@@ -1398,7 +1435,6 @@
 							<!--BW_String-->
 						</radius>
 					</geometry>
-					<isLeading>true</isLeading>
 					<trackPairIdx>0</trackPairIdx>
 					<syncAngle>15.652174</syncAngle>
 				</wheel>
@@ -1437,7 +1473,6 @@
 							<!--BW_String-->
 						</radius>
 					</geometry>
-					<isLeading>true</isLeading>
 					<trackPairIdx>0</trackPairIdx>
 					<syncAngle>15.652174</syncAngle>
 				</wheel>
@@ -1467,7 +1502,7 @@
 				<slot>
 					<slotType>paint</slotType>
 					<slotId>21000</slotId>
-					<anchorPosition>0 0 0</anchorPosition>
+					<anchorPosition>-1.684324 0.671287 0.237544</anchorPosition>
 					<anchorDirection>0 1 0</anchorDirection>
 				</slot>
 				<slot>
@@ -1518,7 +1553,7 @@
 						<isLeft>true</isLeft>
 						<name>Track_VD_L0</name>
 						<forwardElastK>
-							0.9
+							0.6
 							<!--BW_String-->
 						</forwardElastK>
 						<backwardElastK>
@@ -1552,7 +1587,7 @@
 						<isLeft>false</isLeft>
 						<name>Track_VD_R0</name>
 						<forwardElastK>
-							0.8
+							0.6
 							<!--BW_String-->
 						</forwardElastK>
 						<backwardElastK>
@@ -1586,15 +1621,15 @@
 						<isLeft>true</isLeft>
 						<name>Track_VT_L0</name>
 						<forwardElastK>
-							0.3
+							0.6
 							<!--BW_String-->
 						</forwardElastK>
 						<backwardElastK>
-							0.3
+							0.5
 							<!--BW_String-->
 						</backwardElastK>
 						<offset>
-							-0.27
+							-0.23
 							<!--BW_String-->
 						</offset>
 						<trackPairIdx>0</trackPairIdx>
@@ -1603,16 +1638,10 @@
 					<node>
 						<isLeft>true</isLeft>
 						<name>Track_VT_L1</name>
-						<forwardElastK>
-							0.3
-							<!--BW_String-->
-						</forwardElastK>
-						<backwardElastK>
-							0.3
-							<!--BW_String-->
-						</backwardElastK>
+						<forwardElastK>3</forwardElastK>
+						<backwardElastK>2</backwardElastK>
 						<offset>
-							-0.27
+							-0.24
 							<!--BW_String-->
 						</offset>
 						<trackPairIdx>0</trackPairIdx>
@@ -1623,15 +1652,11 @@
 						<isLeft>true</isLeft>
 						<name>Track_VT_L2</name>
 						<forwardElastK>
-							0.3
+							2.9
 							<!--BW_String-->
 						</forwardElastK>
-						<backwardElastK>
-							0.3
-							<!--BW_String-->
-						</backwardElastK>
 						<offset>
-							-0.26
+							-0.25
 							<!--BW_String-->
 						</offset>
 						<trackPairIdx>0</trackPairIdx>
@@ -1650,7 +1675,7 @@
 							<!--BW_String-->
 						</backwardElastK>
 						<offset>
-							-0.25
+							-0.24
 							<!--BW_String-->
 						</offset>
 						<trackPairIdx>0</trackPairIdx>
@@ -1718,7 +1743,7 @@
 						<isLeft>true</isLeft>
 						<name>Track_VT_L7</name>
 						<forwardElastK>
-							0.3
+							0.5
 							<!--BW_String-->
 						</forwardElastK>
 						<backwardElastK>
@@ -1737,15 +1762,15 @@
 						<isLeft>false</isLeft>
 						<name>Track_VT_R0</name>
 						<forwardElastK>
-							0.3
+							0.6
 							<!--BW_String-->
 						</forwardElastK>
 						<backwardElastK>
-							0.3
+							0.5
 							<!--BW_String-->
 						</backwardElastK>
 						<offset>
-							-0.27
+							-0.23
 							<!--BW_String-->
 						</offset>
 						<trackPairIdx>0</trackPairIdx>
@@ -1754,16 +1779,10 @@
 					<node>
 						<isLeft>false</isLeft>
 						<name>Track_VT_R1</name>
-						<forwardElastK>
-							0.3
-							<!--BW_String-->
-						</forwardElastK>
-						<backwardElastK>
-							0.3
-							<!--BW_String-->
-						</backwardElastK>
+						<forwardElastK>3</forwardElastK>
+						<backwardElastK>2</backwardElastK>
 						<offset>
-							-0.27
+							-0.24
 							<!--BW_String-->
 						</offset>
 						<trackPairIdx>0</trackPairIdx>
@@ -1774,15 +1793,11 @@
 						<isLeft>false</isLeft>
 						<name>Track_VT_R2</name>
 						<forwardElastK>
-							0.3
+							2.9
 							<!--BW_String-->
 						</forwardElastK>
-						<backwardElastK>
-							0.3
-							<!--BW_String-->
-						</backwardElastK>
 						<offset>
-							-0.26
+							-0.25
 							<!--BW_String-->
 						</offset>
 						<trackPairIdx>0</trackPairIdx>
@@ -1869,7 +1884,7 @@
 						<isLeft>false</isLeft>
 						<name>Track_VT_R7</name>
 						<forwardElastK>
-							0.3
+							0.5
 							<!--BW_String-->
 						</forwardElastK>
 						<backwardElastK>
@@ -2142,8 +2157,11 @@
 				<left>
 					<trackPairIdx>0</trackPairIdx>
 					<segmentsCount>156</segmentsCount>
-					<segmentsOuterThickness>0.023849</segmentsOuterThickness>
-					<segmentsInnerThickness>0.016212</segmentsInnerThickness>
+					<segmentsOuterThickness>
+						0.04
+						<!--BW_String-->
+					</segmentsOuterThickness>
+					<segmentsInnerThickness>0</segmentsInnerThickness>
 					<segmentsPlaneOffset>
 						-1.401
 						<!--BW_String-->
@@ -2159,7 +2177,7 @@
 								<!--BW_String-->
 							</back>
 							<top>
-								0.08
+								0.09
 								<!--BW_String-->
 							</top>
 							<front>
@@ -2177,7 +2195,7 @@
 								<!--BW_String-->
 							</back>
 							<top>
-								0.09
+								0.08
 								<!--BW_String-->
 							</top>
 							<front>0.089647</front>
@@ -2495,8 +2513,11 @@
 				<right>
 					<trackPairIdx>0</trackPairIdx>
 					<segmentsCount>156</segmentsCount>
-					<segmentsOuterThickness>0.024457</segmentsOuterThickness>
-					<segmentsInnerThickness>0.015604</segmentsInnerThickness>
+					<segmentsOuterThickness>
+						0.04
+						<!--BW_String-->
+					</segmentsOuterThickness>
+					<segmentsInnerThickness>0</segmentsInnerThickness>
 					<segmentsPlaneOffset>
 						1.401
 						<!--BW_String-->
@@ -2512,7 +2533,7 @@
 								<!--BW_String-->
 							</back>
 							<top>
-								0.08
+								0.09
 								<!--BW_String-->
 							</top>
 							<front>
@@ -2530,13 +2551,10 @@
 								<!--BW_String-->
 							</back>
 							<top>
-								0.09
+								0.08
 								<!--BW_String-->
 							</top>
-							<front>
-								0.09
-								<!--BW_String-->
-							</front>
+							<front>0.089647</front>
 							<bottom>
 								0.06
 								<!--BW_String-->
@@ -2887,7 +2905,7 @@
 			<userString>#sweden_vehicles:Chassis_S40_Sav_LS_46_2</userString>
 			<tags/>
 			<level>6</level>
-			<price>13300</price>
+			<price>15300</price>
 			<armor>
 				<leftTrack>15</leftTrack>
 				<rightTrack>15</rightTrack>
@@ -2954,17 +2972,22 @@
 						<isLeft>true</isLeft>
 						<destructionEffect/>
 						<physicalParams>
-							<renderModelOffset>-0.006311</renderModelOffset>
+							<renderModelOffset>
+								-0.02
+								<!--BW_String-->
+							</renderModelOffset>
 							<interpolationsCount>1</interpolationsCount>
-							<lengthwiseSpringLength>0.098829</lengthwiseSpringLength>
-							<widthwiseSpringLength>0.509939</widthwiseSpringLength>
-							<hingeJointStiffness>690.398376</hingeJointStiffness>
+							<lengthwiseSpringLength>0.088889</lengthwiseSpringLength>
+							<widthwiseSpringLength>
+								0.51
+								<!--BW_String-->
+							</widthwiseSpringLength>
+							<hingeJointStiffness>1137.336792</hingeJointStiffness>
 							<torsionStiffnessStep>6</torsionStiffnessStep>
 							<wheelGroups>
 								<wheelGroup>
 									<wheelName>WD_L1</wheelName>
-									<wheelName>WD_L0</wheelName>
-									<groupRadius>0.303149</groupRadius>
+									<groupRadius>0.322194</groupRadius>
 									<groupInnerOffset>
 										0.375
 										<!--BW_String-->
@@ -2996,25 +3019,37 @@
 										<!--BW_String-->
 									</groupOuterOffset>
 								</wheelGroup>
+								<wheelGroup>
+									<wheelName>WD_L0</wheelName>
+									<groupRadius>0.329838</groupRadius>
+									<groupInnerOffset>
+										0.375
+										<!--BW_String-->
+									</groupInnerOffset>
+									<groupOuterOffset>
+										-0.275
+										<!--BW_String-->
+									</groupOuterOffset>
+								</wheelGroup>
 							</wheelGroups>
 							<hullCollider>
 								<boxCollider>
 									<row0>2.150000 0.000000 0.000000</row0>
-									<row1>0.000000 1.336831 0.000000</row1>
+									<row1>0.000000 1.336830 0.000000</row1>
 									<row2>0.000000 0.000000 6.472500</row2>
-									<row3>0.000000 1.141425 -0.165910</row3>
+									<row3>0.000000 1.141430 -0.165910</row3>
 								</boxCollider>
 								<boxCollider>
 									<row0>1.000000 -0.000000 -0.000000</row0>
 									<row1>0.000000 0.299799 -0.010992</row1>
-									<row2>0.000000 0.230822 6.295772</row2>
-									<row3>-1.230307 1.342040 -0.284321</row3>
+									<row2>0.000000 0.230822 6.295770</row2>
+									<row3>-1.230310 1.342040 -0.284321</row3>
 								</boxCollider>
 								<boxCollider>
 									<row0>1.000000 -0.000000 -0.000000</row0>
 									<row1>0.000000 0.283656 0.097671</row1>
 									<row2>0.000000 -0.325569 0.945518</row2>
-									<row3>-1.230310 1.475329 2.797653</row3>
+									<row3>-1.230310 1.475330 2.797650</row3>
 								</boxCollider>
 							</hullCollider>
 						</physicalParams>
@@ -3023,17 +3058,25 @@
 						<isLeft>false</isLeft>
 						<destructionEffect/>
 						<physicalParams>
-							<renderModelOffset>-0.006597</renderModelOffset>
+							<renderModelOffset>
+								-0.02
+								<!--BW_String-->
+							</renderModelOffset>
 							<interpolationsCount>1</interpolationsCount>
-							<lengthwiseSpringLength>0.098962</lengthwiseSpringLength>
-							<widthwiseSpringLength>0.509939</widthwiseSpringLength>
-							<hingeJointStiffness>685.611938</hingeJointStiffness>
+							<lengthwiseSpringLength>0.089003</lengthwiseSpringLength>
+							<widthwiseSpringLength>
+								0.51
+								<!--BW_String-->
+							</widthwiseSpringLength>
+							<hingeJointStiffness>1131.248169</hingeJointStiffness>
 							<torsionStiffnessStep>6</torsionStiffnessStep>
 							<wheelGroups>
 								<wheelGroup>
 									<wheelName>WD_R1</wheelName>
-									<wheelName>WD_R0</wheelName>
-									<groupRadius>0.303558</groupRadius>
+									<groupRadius>
+										0.32218
+										<!--BW_String-->
+									</groupRadius>
 									<groupInnerOffset>
 										-0.375
 										<!--BW_String-->
@@ -3065,6 +3108,18 @@
 										<!--BW_String-->
 									</groupOuterOffset>
 								</wheelGroup>
+								<wheelGroup>
+									<wheelName>WD_R0</wheelName>
+									<groupRadius>0.330005</groupRadius>
+									<groupInnerOffset>
+										-0.375
+										<!--BW_String-->
+									</groupInnerOffset>
+									<groupOuterOffset>
+										0.275
+										<!--BW_String-->
+									</groupOuterOffset>
+								</wheelGroup>
 							</wheelGroups>
 							<hullCollider>
 								<boxCollider>
@@ -3074,13 +3129,13 @@
 									<row3>0.000000 1.141430 -0.165910</row3>
 								</boxCollider>
 								<boxCollider>
-									<row0>1.000000 -0.000000 -0.000000</row0>
+									<row0>1.000000 0.000000 0.000000</row0>
 									<row1>0.000000 0.299799 -0.010992</row1>
 									<row2>0.000000 0.230822 6.295771</row2>
 									<row3>1.230000 1.342040 -0.284321</row3>
 								</boxCollider>
 								<boxCollider>
-									<row0>1.000000 -0.000000 -0.000000</row0>
+									<row0>1.000000 0.000000 0.000000</row0>
 									<row1>0.000000 0.283656 0.097671</row1>
 									<row2>0.000000 -0.325569 0.945518</row2>
 									<row3>1.230000 1.475330 2.797650</row3>
@@ -3124,7 +3179,6 @@
 							<!--BW_String-->
 						</radius>
 					</geometry>
-					<isLeading>true</isLeading>
 					<trackPairIdx>0</trackPairIdx>
 					<syncAngle>15.652174</syncAngle>
 				</wheel>
@@ -3163,7 +3217,6 @@
 							<!--BW_String-->
 						</radius>
 					</geometry>
-					<isLeading>true</isLeading>
 					<trackPairIdx>0</trackPairIdx>
 					<syncAngle>15.652174</syncAngle>
 				</wheel>
@@ -3193,7 +3246,10 @@
 				<slot>
 					<slotType>paint</slotType>
 					<slotId>21000</slotId>
-					<anchorPosition>0 0 0</anchorPosition>
+					<anchorPosition>
+						-1.68432 0.671287 0.237544
+						<!--BW_String-->
+					</anchorPosition>
 					<anchorDirection>0 1 0</anchorDirection>
 				</slot>
 				<slot>
@@ -3244,7 +3300,7 @@
 						<isLeft>true</isLeft>
 						<name>Track_VD_L0</name>
 						<forwardElastK>
-							0.9
+							0.6
 							<!--BW_String-->
 						</forwardElastK>
 						<backwardElastK>
@@ -3278,7 +3334,7 @@
 						<isLeft>false</isLeft>
 						<name>Track_VD_R0</name>
 						<forwardElastK>
-							0.8
+							0.6
 							<!--BW_String-->
 						</forwardElastK>
 						<backwardElastK>
@@ -3312,15 +3368,15 @@
 						<isLeft>true</isLeft>
 						<name>Track_VT_L0</name>
 						<forwardElastK>
-							0.3
+							0.6
 							<!--BW_String-->
 						</forwardElastK>
 						<backwardElastK>
-							0.3
+							0.5
 							<!--BW_String-->
 						</backwardElastK>
 						<offset>
-							-0.27
+							-0.23
 							<!--BW_String-->
 						</offset>
 						<trackPairIdx>0</trackPairIdx>
@@ -3329,16 +3385,10 @@
 					<node>
 						<isLeft>true</isLeft>
 						<name>Track_VT_L1</name>
-						<forwardElastK>
-							0.3
-							<!--BW_String-->
-						</forwardElastK>
-						<backwardElastK>
-							0.3
-							<!--BW_String-->
-						</backwardElastK>
+						<forwardElastK>3</forwardElastK>
+						<backwardElastK>2</backwardElastK>
 						<offset>
-							-0.27
+							-0.24
 							<!--BW_String-->
 						</offset>
 						<trackPairIdx>0</trackPairIdx>
@@ -3349,15 +3399,11 @@
 						<isLeft>true</isLeft>
 						<name>Track_VT_L2</name>
 						<forwardElastK>
-							0.3
+							2.9
 							<!--BW_String-->
 						</forwardElastK>
-						<backwardElastK>
-							0.3
-							<!--BW_String-->
-						</backwardElastK>
 						<offset>
-							-0.26
+							-0.25
 							<!--BW_String-->
 						</offset>
 						<trackPairIdx>0</trackPairIdx>
@@ -3376,7 +3422,7 @@
 							<!--BW_String-->
 						</backwardElastK>
 						<offset>
-							-0.25
+							-0.24
 							<!--BW_String-->
 						</offset>
 						<trackPairIdx>0</trackPairIdx>
@@ -3444,7 +3490,7 @@
 						<isLeft>true</isLeft>
 						<name>Track_VT_L7</name>
 						<forwardElastK>
-							0.3
+							0.5
 							<!--BW_String-->
 						</forwardElastK>
 						<backwardElastK>
@@ -3463,15 +3509,15 @@
 						<isLeft>false</isLeft>
 						<name>Track_VT_R0</name>
 						<forwardElastK>
-							0.3
+							0.6
 							<!--BW_String-->
 						</forwardElastK>
 						<backwardElastK>
-							0.3
+							0.5
 							<!--BW_String-->
 						</backwardElastK>
 						<offset>
-							-0.27
+							-0.23
 							<!--BW_String-->
 						</offset>
 						<trackPairIdx>0</trackPairIdx>
@@ -3480,16 +3526,10 @@
 					<node>
 						<isLeft>false</isLeft>
 						<name>Track_VT_R1</name>
-						<forwardElastK>
-							0.3
-							<!--BW_String-->
-						</forwardElastK>
-						<backwardElastK>
-							0.3
-							<!--BW_String-->
-						</backwardElastK>
+						<forwardElastK>3</forwardElastK>
+						<backwardElastK>2</backwardElastK>
 						<offset>
-							-0.27
+							-0.24
 							<!--BW_String-->
 						</offset>
 						<trackPairIdx>0</trackPairIdx>
@@ -3500,15 +3540,11 @@
 						<isLeft>false</isLeft>
 						<name>Track_VT_R2</name>
 						<forwardElastK>
-							0.3
+							2.9
 							<!--BW_String-->
 						</forwardElastK>
-						<backwardElastK>
-							0.3
-							<!--BW_String-->
-						</backwardElastK>
 						<offset>
-							-0.26
+							-0.25
 							<!--BW_String-->
 						</offset>
 						<trackPairIdx>0</trackPairIdx>
@@ -3595,7 +3631,7 @@
 						<isLeft>false</isLeft>
 						<name>Track_VT_R7</name>
 						<forwardElastK>
-							0.3
+							0.5
 							<!--BW_String-->
 						</forwardElastK>
 						<backwardElastK>
@@ -3868,8 +3904,11 @@
 				<left>
 					<trackPairIdx>0</trackPairIdx>
 					<segmentsCount>156</segmentsCount>
-					<segmentsOuterThickness>0.023849</segmentsOuterThickness>
-					<segmentsInnerThickness>0.016212</segmentsInnerThickness>
+					<segmentsOuterThickness>
+						0.04
+						<!--BW_String-->
+					</segmentsOuterThickness>
+					<segmentsInnerThickness>0</segmentsInnerThickness>
 					<segmentsPlaneOffset>
 						-1.401
 						<!--BW_String-->
@@ -3885,7 +3924,7 @@
 								<!--BW_String-->
 							</back>
 							<top>
-								0.08
+								0.09
 								<!--BW_String-->
 							</top>
 							<front>
@@ -3903,7 +3942,7 @@
 								<!--BW_String-->
 							</back>
 							<top>
-								0.09
+								0.08
 								<!--BW_String-->
 							</top>
 							<front>0.089647</front>
@@ -4218,8 +4257,11 @@
 				<right>
 					<trackPairIdx>0</trackPairIdx>
 					<segmentsCount>156</segmentsCount>
-					<segmentsOuterThickness>0.024457</segmentsOuterThickness>
-					<segmentsInnerThickness>0.015604</segmentsInnerThickness>
+					<segmentsOuterThickness>
+						0.04
+						<!--BW_String-->
+					</segmentsOuterThickness>
+					<segmentsInnerThickness>0</segmentsInnerThickness>
 					<segmentsPlaneOffset>
 						1.401
 						<!--BW_String-->
@@ -4235,7 +4277,7 @@
 								<!--BW_String-->
 							</back>
 							<top>
-								0.08
+								0.09
 								<!--BW_String-->
 							</top>
 							<front>
@@ -4253,13 +4295,10 @@
 								<!--BW_String-->
 							</back>
 							<top>
-								0.09
+								0.08
 								<!--BW_String-->
 							</top>
-							<front>
-								0.09
-								<!--BW_String-->
-							</front>
+							<front>0.089647</front>
 							<bottom>
 								0.06
 								<!--BW_String-->
@@ -4643,7 +4682,7 @@
 					<unlocks>
 						<gun>
 							_149mm_Haubits_M39
-							<cost>6600</cost>
+							<cost>6400</cost>
 						</gun>
 					</unlocks>
 					<armor>
@@ -4766,6 +4805,12 @@
 				<_149mm_Haubits_M39>
 					shared
 					<maxAmmo>24</maxAmmo>
+					<unlocks>
+						<vehicle>
+							S42_Kanonvagn_fm_49
+							<cost>62600</cost>
+						</vehicle>
+					</unlocks>
 					<armor>
 						<armor_1>35</armor_1>
 						<armor_4>0</armor_4>
@@ -4776,7 +4821,7 @@
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>29</reloadTime>
-					<aimingTime>6</aimingTime>
+					<aimingTime>5</aimingTime>
 					<pitchLimits>
 						<minPitch>0 -40 1 -40</minPitch>
 						<maxPitch>0 10 1 10</maxPitch>
@@ -4895,7 +4940,7 @@
 				<slot>
 					<slotType>paint</slotType>
 					<slotId>31000</slotId>
-					<anchorPosition>0 0 0</anchorPosition>
+					<anchorPosition>0.000024 2.009069 -0.736366</anchorPosition>
 					<anchorDirection>0 1 0</anchorDirection>
 				</slot>
 			</customizationSlots>
@@ -4926,7 +4971,7 @@
 			<unlocks>
 				<engine>
 					Volvo_A8BS
-					<cost>1500</cost>
+					<cost>5800</cost>
 				</engine>
 			</unlocks>
 		</_2_st_Scania_Vabis_L_603_1S>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/sweden/S37_AKV_151/crash/lod2/Chassis</nodefullVisual>
+	<parent>vehicles/sweden/S37_AKV_151/crash/lod3/Chassis</parent>
+	<tank>true</tank>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.631670 -0.000000 -3.478698</min>
+		<max>1.631670 1.171799 3.588859</max>
+	</visibilityBox>
+</root>

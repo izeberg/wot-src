@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<introVideo>
+		<phrases>
+			<phrase>
+				<text>phrase_1</text>
+				<startTime>
+					19.0
+					<!--BW_String-->
+				</startTime>
+				<endTime>
+					25.0
+					<!--BW_String-->
+				</endTime>
+			</phrase>
+			<phrase>
+				<text>phrase_2</text>
+				<startTime>
+					30.0
+					<!--BW_String-->
+				</startTime>
+				<endTime>
+					32.0
+					<!--BW_String-->
+				</endTime>
+			</phrase>
+		</phrases>
+	</introVideo>
+</root>

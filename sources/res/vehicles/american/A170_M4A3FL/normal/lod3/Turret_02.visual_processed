@@ -31,12 +31,12 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<primitive>indices</primitive>
+			<vertices>turret_02_Shape.vertices</vertices>
+			<primitive>turret_02_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>tank_turret_01</identifier>
+					<identifier>tank_turret_02</identifier>
 					<fx>shaders/std_effects/PBS_tank.fx</fx>
 					<materialKind>0</materialKind>
 					<collisionFlags>0</collisionFlags>
@@ -77,6 +77,6 @@
 		<min>-1.141134 -0.000001 -1.879212</min>
 		<max>1.143951 1.483159 1.059634</max>
 	</boundingBox>
-	<geometrySize>74650</geometrySize>
+	<geometrySize>49914</geometrySize>
 	<minUVDensity>0.010436</minUVDensity>
 </root>

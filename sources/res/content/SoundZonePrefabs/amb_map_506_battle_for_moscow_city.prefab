@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<version>3</version>
+	<GameObjects>
+		<GameObject>
+			<name>amb_map_506_battle_for_moscow_city</name>
+			<UUID>6b58dfeb-be72-48cd-b919-f50272b41e00</UUID>
+			<flags>0</flags>
+		</GameObject>
+	</GameObjects>
+	<components>
+		<ComponentPool>
+			<type>Transform</type>
+			<version>1</version>
+			<component>
+				<objectIndex>0</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>PrismArea</type>
+			<version>1</version>
+			<component>
+				<objectIndex>0</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Curvature</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Tesselation Step</name>
+						<value>20</value>
+					</property>
+					<property>
+						<name>Height</name>
+						<value>100</value>
+					</property>
+					<property>
+						<name>pointsHint</name>
+						<value>Ctrl + Left click to create new point
+Middle click to remove point</value>
+					</property>
+					<property>
+						<name>Points</name>
+						<collection>
+							<item>
+								<value>
+									16.7188 14.0736
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									-6.99136 57.681
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									-5.65286 135.017
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									-0.343292 200.064
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									56.96 202.535
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									157.265 199.22
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									232.499 212.887
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									283.93 213.555
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									352.525 217.238
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									347.678 63.6678
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									310.861 -19.7238
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									208.926 -18.7404
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									127.602 -8.22208
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>100 0</value>
+							</item>
+						</collection>
+					</property>
+					<property>
+						<name>Douglas-Peucker Epsilon</name>
+						<value>
+							0.2
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>SoundZone</type>
+			<version>1</version>
+			<component>
+				<objectIndex>0</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Zone Enter Event</name>
+						<value>amb_map_506_city_rocks_enter</value>
+					</property>
+					<property>
+						<name>Zone Exit Event</name>
+						<value>amb_map_506_city_rocks_exit</value>
+					</property>
+					<property>
+						<name>Emitter Event</name>
+						<value/>
+					</property>
+					<property>
+						<name>Reverb</name>
+						<value/>
+					</property>
+					<property>
+						<name>Reverb Level</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Volume Deviation</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Color</name>
+						<value>
+							0 0 1 0.5
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+	</components>
+</root>

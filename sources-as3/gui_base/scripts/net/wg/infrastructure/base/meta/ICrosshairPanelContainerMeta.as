@@ -120,7 +120,11 @@ package net.wg.infrastructure.base.meta
       
       function as_setOverheatState(param1:Number) : void;
       
-      function as_setCoolantAbilityReloadingPenalty(param1:Number) : void;
+      function as_setCoolantAbilityReloadingPenalty(param1:Number, param2:Number) : void;
+      
+      function as_addCoolantAbilityReloadingPenalty(param1:Number) : void;
+      
+      function as_setAbilityModifier(param1:int, param2:Boolean) : void;
       
       function as_setShotFlyTimeIndVisibility(param1:Boolean) : void;
       

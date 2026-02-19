@@ -238,6 +238,7 @@ class StrongholdEntity(UnitEntity):
             self.requestUpdateStronghold()
             self.requestSlotVehicleFilters()
         self.__checkStrongholdEvent()
+        self.__initForbiddenVehiclesRequester()
         unitMgr = prb_getters.getClientUnitMgr()
         if unitMgr:
             unitMgr.onUnitResponseReceived += self.onUnitResponseReceived
@@ -896,6 +897,13 @@ class StrongholdEntity(UnitEntity):
             return
         self.__forbiddenVehiclesRequester.setInitialDataAndStart(rawData)
 
+    def __initForbiddenVehiclesRequester(self):
+        if self.__forbiddenVehiclesRequester is None:
+            self.__forbiddenVehiclesRequester = ForbiddenVehiclesRequester()
+        if self.__forbiddenVehiclesRequester.isCacheEmpty():
+            self.__getForbiddenVehicles()
+        return
+
     def __frozenVehiclesUpdated(self, updatedSpaIDs):
         self._invokeListeners('onEventFrozenVehiclesChanged', updatedSpaIDs)
 
@@ -911,11 +919,6 @@ class StrongholdEntity(UnitEntity):
         return True
 
     def __checkStrongholdEvent(self):
-        if self.__forbiddenVehiclesRequester is not None:
-            self.__forbiddenVehiclesRequester.stop()
-        else:
-            self.__forbiddenVehiclesRequester = ForbiddenVehiclesRequester()
-        self.__getForbiddenVehicles()
         if not g_clanCache.strongholdEventProvider.isRunning() or not self.__isStrongholdEventEnabled():
             return False
         if self.__eventFrozenVehiclesRequester is not None:

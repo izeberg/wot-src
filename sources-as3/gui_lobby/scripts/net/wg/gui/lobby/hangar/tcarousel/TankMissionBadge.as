@@ -237,7 +237,7 @@ package net.wg.gui.lobby.hangar.tcarousel
       
       private function onParagonsMouseOverHandler(param1:MouseEvent) : void
       {
-         this._toolTipMgr.showComplex(TOOLTIPS.PARAGONS_TANKCAROUSEL_CARD);
+         this._toolTipMgr.showWulfTooltip(this._dataVO.paragonsPointsTooltip,this._dataVO.intCD);
       }
       
       private function onParagonsMouseOutHandler(param1:MouseEvent) : void

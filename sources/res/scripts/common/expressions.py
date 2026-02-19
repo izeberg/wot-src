@@ -70,6 +70,7 @@ class ExpressionParser(object):
     def _parseOperator(self, tokenizer, operators):
         toknum, tokval = tokenizer.peek()
         if toknum == token.OP and tokval in operators:
+            self._processToken(tokval)
             tokenizer.match(toknum)
             return operators[tokval]
         else:
@@ -83,6 +84,7 @@ class ExpressionParser(object):
         left = self._parseAndExpression(tokenizer)
         toknum, tokval = tokenizer.peek()
         if toknum == token.NAME and tokval == 'or':
+            self._processToken(tokval)
             tokenizer.match(token.NAME)
             right = self._parseOrExpression(tokenizer)
             return lambda context: left(context) or right(context)
@@ -99,6 +101,7 @@ class ExpressionParser(object):
         left = self._parseCondition(tokenizer)
         toknum, tokval = tokenizer.peek()
         if toknum == token.NAME and tokval == 'and':
+            self._processToken(tokval)
             tokenizer.match(token.NAME)
             right = self._parseAndExpression(tokenizer)
             return lambda context: left(context) and right(context)
@@ -141,9 +144,11 @@ class ExpressionParser(object):
         toknum, tokval = tokenizer.peek()
         if toknum == token.NAME:
             self.tokens.add(tokval)
+            self._processToken(tokval)
             tokenizer.match(token.NAME)
             return lambda context: context[tokval]
         if toknum == token.NUMBER:
+            self._processToken(tokval)
             tokenizer.match(token.NUMBER)
             try:
                 tokval = int(tokval)
@@ -152,6 +157,7 @@ class ExpressionParser(object):
 
             return lambda context: tokval
         if toknum == token.STRING:
+            self._processToken(tokval)
             tokenizer.match(token.STRING)
             if tokval.startswith('"') and tokval.endswith('"') or tokval.startswith("'") and tokval.endswith("'"):
                 tokval = tokval[1:-1].decode('string_escape')
@@ -159,6 +165,9 @@ class ExpressionParser(object):
                 raise ParserException('unsupported string literal')
             return lambda context: tokval
         raise ParserException('expected term, but found %s (%s)' % (token.tok_name[toknum], tokval))
+
+    def _processToken(self, tokval):
+        pass
 
 
 def parseExpression(condition):

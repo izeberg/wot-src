@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>
+			-1.19694 0.0308049 -1.71651
+			<!--BW_String-->
+		</min>
+		<max>
+			1.33059 1.98585 1.55308
+			<!--BW_String-->
+		</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/russian/R147_Object_701/crash/lod4/Turret_01</nodefullVisual>
+</root>

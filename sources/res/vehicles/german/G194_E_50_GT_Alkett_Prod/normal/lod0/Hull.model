@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/german/G194_E_50_GT_Alkett_Prod/normal/lod1/Hull</parent>
+	<tank>true</tank>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.952862 -0.718810 -3.919749</min>
+		<max>1.953174 0.801368 3.465339</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/german/G194_E_50_GT_Alkett_Prod/normal/lod0/Hull</nodefullVisual>
+</root>

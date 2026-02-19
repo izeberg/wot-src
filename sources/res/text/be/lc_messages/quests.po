@@ -439,9 +439,9 @@ msgstr ""
 
 msgid "action/full/exchangeRate"
 msgstr ""
-"Абмяняйце золата на срэбра па выгадным курсе %(discount)s. Такім чынам вы "
-"зэканоміце час на заробак срэбра і хутчэй купіце жаданую машыну, дарагое "
-"абсталяванне і г.д."
+"Переведите золото в серебро по выгодному курсу: %(discount)s. Тем самым вы "
+"сэкономите время на заработок серебра и быстрее купите понравившуюся машину,"
+" дорогостоящее оборудование и т. д."
 
 msgid "action/full/femalePassportChangeCost"
 msgstr ""
@@ -1039,7 +1039,7 @@ msgid "bonusName/camouflage"
 msgstr "Камуфляж"
 
 msgid "bonusName/clan_season_progress"
-msgstr "Клановая монета"
+msgstr "Кланавая манета"
 
 msgid "bonusName/completionTokens"
 msgstr "Кампаненты"
@@ -1174,10 +1174,10 @@ msgid "bonusName/entitlements/ranked_202203_access"
 msgstr "Доступ да куплі"
 
 msgid "bonusName/entitlements/shevents_clan_chevron"
-msgstr "Клановый шеврон"
+msgstr "Кланавы шаўрон"
 
 msgid "bonusName/entitlements/shevents_clan_coupon"
-msgstr "Клановый купон"
+msgstr "Кланавы купон"
 
 msgid "bonusName/entitlements/testEntitlement"
 msgstr "Тестовый энтайтлемент"
@@ -1460,7 +1460,7 @@ msgid "dailyQuests/bonusQuest/bonusMissionTitle"
 msgstr "Бонусная задача"
 
 msgid "dailyQuests/bonusQuest/countDown_hrs"
-msgstr "Заканчваецца праз %H гадз %M хв"
+msgstr "Истекает через %H ч. %M мин."
 
 msgid "dailyQuests/bonusQuest/countDown_minSec"
 msgstr "Заканчваецца праз %MM:%SS"
@@ -1497,7 +1497,7 @@ msgstr "Знішчыць %(value)s адз. тэхнікі за бой"
 
 msgid "dailyQuests/condition/dmgTop"
 msgstr ""
-"Трапіць у топ-%%(value)s паводле пашкоджанняў у сваёй камандзе ўказаную "
+"Трапіць у топ-%(value)s паводле пашкоджанняў у сваёй камандзе ўказаную "
 "колькасць разоў"
 
 msgid "dailyQuests/condition/dmgTop_first"
@@ -1580,13 +1580,13 @@ msgstr ""
 "у вас з'яўляецца магчымасць замяніць нежаданую задачу на іншую выпадковую."
 
 msgid "dailyQuests/missionSwitch/tooltip/body/desc_hrs"
-msgstr "Кожныя %H гадз"
+msgstr "Каждые %H ч."
 
 msgid "dailyQuests/missionSwitch/tooltip/body/desc_hrs_min"
-msgstr "Кожныя %H гадз і %M хв"
+msgstr "Каждые %H ч. и %M мин."
 
 msgid "dailyQuests/missionSwitch/tooltip/body/desc_min_only"
-msgstr "Кожныя %M хв"
+msgstr "Каждые %M мин."
 
 msgid "dailyQuests/missionSwitch/tooltip/header"
 msgstr "Замена задачы недаступная"
@@ -2019,8 +2019,8 @@ msgstr "Ачкі прэстыжу"
 
 msgid "details/conditions/cumulative/critsCount"
 msgstr ""
-"Сумма повреждённых или выведенных из строя внутренних и/или внешних модулей,"
-" а также раненых членов экипажа противника"
+"Сумма повреждённых или выведенных из строя внутренних и/или внешних модулей,"
+" а также раненых членов экипажа противника"
 
 msgid "details/conditions/cumulative/damageAssisted"
 msgstr "Пашкоджанні, прыч. з вашай дапамогай"
@@ -2140,12 +2140,12 @@ msgstr "Рыкашэты ад супраціўніка"
 
 msgid "details/conditions/cumulative/innerModuleCritCount"
 msgstr ""
-"Сумма повреждённых или выведенных из строя внутренних модулей, а также "
+"Сумма повреждённых или выведенных из строя внутренних модулей, а также "
 "раненых членов экипажа противника"
 
 msgid "details/conditions/cumulative/innerModuleDestrCount"
 msgstr ""
-"Сумма выведенных из строя внутренних модулей и/или раненых членов экипажа "
+"Сумма выведенных из строя внутренних модулей и/или раненых членов экипажа "
 "противника"
 
 msgid "details/conditions/cumulative/isAnyOurCrittedInnerModules"
@@ -2658,7 +2658,7 @@ msgid "details/conditions/postBattle/dailyReset/timeFmt"
 msgstr "%H:%M"
 
 msgid "details/conditions/postBattle/deltaDailyReset/timeFmt"
-msgstr "%H гадз %M хв"
+msgstr "%H ч. %M мин."
 
 msgid "details/conditions/postBattle/separator"
 msgstr "У кожным баі:"
@@ -3803,9 +3803,6 @@ msgstr "Медаль Біёта"
 msgid "details/dossier/medalBrothersInArms"
 msgstr "«Таварышы па зброі»"
 
-msgid "details/dossier/medalBrunoPietro"
-msgstr "Медаль Фокина"
-
 msgid "details/dossier/medalBurda"
 msgstr "Медаль Бурды"
 
@@ -3824,6 +3821,15 @@ msgstr "Ступень медаля Ікінза"
 msgid "details/dossier/medalFadin"
 msgstr "Медаль Фадзіна"
 
+msgid "details/dossier/medalFokin"
+msgstr "Медаль Фокіна"
+
+msgid "details/dossier/medalFomin"
+msgstr "Медаль Фомина"
+
+msgid "details/dossier/medalGavryushov"
+msgstr "Медаль Гаврюшова"
+
 msgid "details/dossier/medalGudz"
 msgstr "Ступень медаля Гудзя"
 
@@ -3835,6 +3841,9 @@ msgstr "Медаль Хазава"
 
 msgid "details/dossier/medalKolobanov"
 msgstr "Медаль Калабанава"
+
+msgid "details/dossier/medalKrockenberger"
+msgstr "Медаль Крокенбергера"
 
 msgid "details/dossier/medalKrysov"
 msgstr "Медаль Крысава"
@@ -3860,9 +3869,6 @@ msgstr "Медаль Орліка"
 msgid "details/dossier/medalOskin"
 msgstr "Медаль Оськіна"
 
-msgid "details/dossier/medalPascucci"
-msgstr "Медаль Слюняева"
-
 msgid "details/dossier/medalPoppel"
 msgstr "Ступень медаля Попеля"
 
@@ -3871,6 +3877,9 @@ msgstr "Медаль Рэдлі-Уолтэрза"
 
 msgid "details/dossier/medalSamokhin"
 msgstr "Ступень медаля Самохіна"
+
+msgid "details/dossier/medalSlyunyayev"
+msgstr "Медаль Слюняева"
 
 msgid "details/dossier/medalTrubin"
 msgstr "Медаль Трубіна"
@@ -4113,8 +4122,8 @@ msgstr "Да сканчэння менш за %(minutes)d хв"
 
 msgid "details/header/comeToEndInMinutes/separated"
 msgstr ""
-"Да сканчэння менш за\n"
-"%(minutes)d хв"
+"До окончания менее\n"
+"%(minutes)d мин."
 
 msgid "details/header/completion/daily"
 msgstr "Колькасць даступных выкананняў за суткі: %(count)d."
@@ -4672,31 +4681,31 @@ msgid "epicQuest/countDown/remainingText"
 msgstr "Да скідвання прагрэсу:"
 
 msgid "general/countdown/text/timer_hrs"
-msgstr "Замена даступная праз %H ч %M хв"
+msgstr "Замена доступна через %H ч. %M мин."
 
 msgid "general/countdown/text/timer_hrs_only"
-msgstr "Замена даступная праз %H гадз"
+msgstr "Замена доступна через %H ч."
 
 msgid "general/countdown/text/timer_min"
 msgstr "Замена даступная праз %MM:%SS"
 
 msgid "general/countdown/text/timer_min_only"
-msgstr "Замена даступная праз %M хв"
+msgstr "Замена доступна через %M мин."
 
 msgid "general/countdown/text/timer_sec"
 msgstr "Замена даступная праз %S с"
 
 msgid "general/countdown/timer_hrs"
-msgstr "%H гадз %M хв"
+msgstr "%H ч. %M мин."
 
 msgid "general/countdown/timer_hrs_only"
-msgstr "%H гадз"
+msgstr "%H ч."
 
 msgid "general/countdown/timer_min"
 msgstr "%MM:%SS"
 
 msgid "general/countdown/timer_min_only"
-msgstr "%M хв"
+msgstr "%M мин."
 
 msgid "general/countdown/timer_sec"
 msgstr "%S с"
@@ -4926,22 +4935,22 @@ msgid "item/timer/tillFinish/hours"
 msgstr "Да сканчэння"
 
 msgid "item/timer/tillFinish/lessThanDay"
-msgstr "менш за 1 сут"
+msgstr "менее 1 д."
 
 msgid "item/timer/tillFinish/lessThanHour"
 msgstr "менш за гадзіну"
 
 msgid "item/timer/tillFinish/longFormat"
-msgstr "%(hours)s гадз %(min)s хв"
+msgstr "%(hours)s ч. %(min)s мин."
 
 msgid "item/timer/tillFinish/longFullFormat"
-msgstr "Да сканчэння %(hours)s гадз"
+msgstr "До окончания %(hours)s ч."
 
 msgid "item/timer/tillFinish/longFullFormatMin"
 msgstr "Да сканчэння %(minutes)s хв."
 
 msgid "item/timer/tillFinish/onlyHours"
-msgstr "%(hours)s гадз"
+msgstr "%(hours)s ч."
 
 msgid "item/timer/tillFinish/shortFormat"
 msgstr "%(min)s хв."
@@ -4953,13 +4962,13 @@ msgid "item/timer/tillStart"
 msgstr "Будзе даступная"
 
 msgid "item/timer/tillStart/days"
-msgstr "праз %(day)s сут %(hour)s"
+msgstr "через %(day)s д. %(hour)s"
 
 msgid "item/timer/tillStart/hours"
-msgstr "праз %(hour)s гадз %(min)s хв"
+msgstr "через %(hour)s ч. %(min)s мин."
 
 msgid "item/timer/tillStart/min"
-msgstr "праз %(min)s хв"
+msgstr "через %(min)s мин."
 
 msgid "item/type/action"
 msgstr "Акцыя"
@@ -5219,7 +5228,7 @@ msgid "missions/filter/filterButton/header"
 msgstr "Фільтр задач"
 
 msgid "missions/filter/popover/defaultButton/body"
-msgstr "Націсніце, каб вярнуць стандартныя налады фільтра."
+msgstr "Нажмите, чтобы сбросить настройки фильтра на состояние по умолчанию."
 
 msgid "missions/filter/popover/defaultButton/header"
 msgstr "Скінуць фільтр"
@@ -5237,7 +5246,7 @@ msgid "missions/filter/popover/title"
 msgstr "Фільтр задач"
 
 msgid "missions/filterCounter/closeButton/body"
-msgstr "Нажмите, чтобы сбросить настройки фильтра на стандартные."
+msgstr "Нажмите, чтобы сбросить настройки фильтра на стандартные."
 
 msgid "missions/filterCounter/closeButton/header"
 msgstr "Паставіць стандартныя налады"
@@ -5646,8 +5655,9 @@ msgstr ""
 
 msgid "premiumQuests/notPremiumAccount/paragraphSmall"
 msgstr ""
-"Прэміум акаўнт адкрывае доступ да трох штодзённых прэміум задач, а таксама "
-"дае іншыя перавагі: +50% да заробку досведу і срэбра, сховішча срэбра і г.д."
+"Премиум аккаунт открывает доступ к трём ежедневным премиум задачам, а также "
+"даёт другие преимущества: +50% к заработку опыта и серебра, хранилище "
+"серебра и т. д."
 
 msgid "premiumQuests/notPremiumAccount/title"
 msgstr "Для доступу да задач неабходны прэміум акаўнт."

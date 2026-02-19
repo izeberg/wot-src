@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/sweden/S42_Kanonvagn_fm_49/crash/lod3/Chassis</nodefullVisual>
+	<parent>vehicles/sweden/S42_Kanonvagn_fm_49/crash/lod4/Chassis</parent>
+	<tank>true</tank>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.602443 0.012130 -3.416575</min>
+		<max>1.602443 1.082176 3.094396</max>
+	</visibilityBox>
+</root>

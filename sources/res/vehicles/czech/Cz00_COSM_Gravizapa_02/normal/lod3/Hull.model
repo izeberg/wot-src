@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/czech/Cz00_COSM_Gravizapa_02/normal/lod4/Hull</parent>
+	<tank>true</tank>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.396985 -0.692230 -2.494655</min>
+		<max>1.392307 1.185812 2.885946</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/czech/Cz00_COSM_Gravizapa_02/normal/lod3/Hull</nodefullVisual>
+</root>

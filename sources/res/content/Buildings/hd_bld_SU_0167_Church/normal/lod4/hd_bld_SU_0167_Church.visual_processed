@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>s_wall0Shape.vertices</vertices>
+			<primitive>s_wall0Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_wall_0</identifier>
+					<materialKind>0</materialKind>
+					<collisionFlags>128</collisionFlags>
+				</material>
+				<groupOrigin>-7.674250 5.284827 0.000000</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>s_nd0</identifier>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<materialKind>111</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Buildings/hd_bld_SU_0167_Church/hd_bld_SU_0167_Church_BAM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_enableTerrainBlending
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Buildings/hd_bld_SU_0167_Church/hd_bld_SU_0167_Church_BGMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Buildings/hd_bld_SU_0167_Church/hd_bld_SU_0167_Church_BANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-1.349707 9.092175 0.000000</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-25.054146 -1.001263 -19.186785</min>
+		<max>22.354733 19.184351 19.186785</max>
+	</boundingBox>
+	<customBsp>true</customBsp>
+	<missingBspMaterial>
+		<material>
+			<identifier>s_nd2</identifier>
+		</material>
+	</missingBspMaterial>
+	<geometrySize>40704</geometrySize>
+	<minUVDensity>0.000011</minUVDensity>
+</root>

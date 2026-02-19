@@ -1,6 +1,8 @@
 from abc import ABCMeta, abstractmethod
 from enum import Enum
-import logging, th_async
+import logging
+from typing import Dict
+import th_async
 from Event import Event
 from helpers import dependency
 from paragons_common import ParagonsEntitlements, getParagonsEntitlement
@@ -72,6 +74,9 @@ class ParagonsEntitlementsAgate(ParagonsEntitlementState):
             self.update(force=True)
         return self.__cache.get(entitlementID, 0)
 
+    def isCached(self):
+        return self.__entitlementsController.isCacheInited()
+
     @th_async.th_async
     def update(self, force=False):
         if not self.__entitlementsController.isCacheInited():
@@ -87,10 +92,12 @@ class ParagonsEntitlementsAgate(ParagonsEntitlementState):
 
         return
 
-    def storeGranted(self, entitlementID, amount=1):
+    def storeGranted(self, entitlements):
         if not self.__cache:
             return
-        self.__cache[entitlementID] += amount
+        for entitlementID, amount in entitlements.iteritems():
+            self.__cache[entitlementID] += amount
+
         self.__onCacheUpdated()
 
     def consumeGranted(self, entitlementID):

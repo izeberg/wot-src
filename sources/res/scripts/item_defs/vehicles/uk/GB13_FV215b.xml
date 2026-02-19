@@ -86,7 +86,7 @@
 	<hull>
 		<armor>
 			<armor_1>
-				152.4
+				177.8
 				<!--BW_String-->
 			</armor_1>
 			<armor_2>
@@ -115,7 +115,7 @@
 			</armor_7>
 			<armor_8>0</armor_8>
 			<armor_9>
-				76.2
+				101.6
 				<!--BW_String-->
 			</armor_9>
 			<armor_10>
@@ -127,6 +127,10 @@
 				6
 				<vehicleDamageFactor>0</vehicleDamageFactor>
 			</armor_12>
+			<armor_13>
+				304.8
+				<!--BW_String-->
+			</armor_13>
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>37358</weight>
@@ -4472,7 +4476,7 @@
 			<guns>
 				<_120mm_Gun_L1A1_A>
 					shared
-					<maxAmmo>35</maxAmmo>
+					<maxAmmo>45</maxAmmo>
 					<pitchLimits>
 						<minPitch>0 -15 1 -15</minPitch>
 						<maxPitch>0 7 1 7</maxPitch>

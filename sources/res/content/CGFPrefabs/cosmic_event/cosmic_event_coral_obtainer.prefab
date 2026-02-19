@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<version>3</version>
+	<GameObjects>
+		<GameObject>
+			<name>cosmic_event_coral_obtainer</name>
+			<UUID>3832957f-9b61-4fd9-abf6-f20b6255e258</UUID>
+			<flags>0</flags>
+		</GameObject>
+	</GameObjects>
+	<components>
+		<ComponentPool>
+			<type>Transform</type>
+			<version>1</version>
+			<component>
+				<objectIndex>0</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>Particle</type>
+			<version>1</version>
+			<component>
+				<objectIndex>0</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>effect</name>
+						<isAsset>true</isAsset>
+						<value>particles/Environment/interior/280_cosm_coral_ray_in.eff</value>
+					</property>
+					<property>
+						<name>Rate</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>autoStart</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>oneTimeEffect</name>
+						<value>0</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+	</components>
+</root>

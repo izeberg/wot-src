@@ -2164,12 +2164,12 @@
 						<gun>60</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.36
+						0.3
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>20</reloadTime>
 					<aimingTime>
-						2.7
+						2.5
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>
@@ -2199,10 +2199,10 @@
 					</shotDispersionFactors>
 					<dualAccuracy>
 						<afterShotDispersionRadius>
-							0.46
+							0.44
 							<!--BW_String-->
 						</afterShotDispersionRadius>
-						<coolingDelay>25</coolingDelay>
+						<coolingDelay>23</coolingDelay>
 					</dualAccuracy>
 					<customizationSlots>
 						<slot>
@@ -2453,7 +2453,7 @@
 			</customization>
 			<wwturretRotatorSoundManual>tur_mech_trav</wwturretRotatorSoundManual>
 			<physicsShape>
-				0.991 -0.017 1.043 0 0.312 0.593 0.538 0 0.427 0.5 0 0.5 0 0.1 0
+				0.991 -0.017 1.043 0 0.316 0.595 0.538 0 0.427 0.5 0 0.5 0 0.1 0
 				<!--BW_String-->
 			</physicsShape>
 			<camouflage>
@@ -2483,7 +2483,7 @@
 		<detailed>
 			<engines>
 				<Cat_LDS_750>
-					<smplEnginePower>500</smplEnginePower>
+					<smplEnginePower>600</smplEnginePower>
 					<smplFwMaxSpeed>55</smplFwMaxSpeed>
 				</Cat_LDS_750>
 			</engines>

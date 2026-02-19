@@ -14,7 +14,7 @@
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
 				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 1.141986 0.649039</row3>
+				<row3>0.000000 0.000000 0.000000</row3>
 			</transform>
 			<node>
 				<identifier>Turbina_jt</identifier>
@@ -22,7 +22,7 @@
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 1.000000 0.000000</row1>
 					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>0.346151 -0.025955 1.729635</row3>
+					<row3>0.346151 0.221155 2.378674</row3>
 				</transform>
 				<node>
 					<identifier>Turbina_jt_BlendBone</identifier>
@@ -30,7 +30,7 @@
 						<row0>1.000000 0.000000 0.000000</row0>
 						<row1>0.000000 1.000000 0.000000</row1>
 						<row2>0.000000 0.000000 -1.000000</row2>
-						<row3>-0.346151 -1.116031 -2.378674</row3>
+						<row3>-0.346151 -0.221155 -2.378674</row3>
 					</transform>
 				</node>
 			</node>
@@ -82,14 +82,14 @@
 						<Texture>vehicles/french/F18_Bat_Chatillon25t/_skins/F18_Bat_Chatillon25t_3DSt_BP_MT/Bat_Chatillon25t_3DSt_BP_MT_hull_01_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.350739 1.114837 -2.461013</groupOrigin>
+				<groupOrigin>0.350739 0.219961 -2.461013</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<constraints/>
 	<boundingBox>
-		<min>0.158779 0.930505 2.354759</min>
-		<max>0.542699 1.299168 2.567268</max>
+		<min>0.158779 0.035629 2.354759</min>
+		<max>0.542699 0.404293 2.567268</max>
 	</boundingBox>
 	<geometrySize>850</geometrySize>
 	<minUVDensity>0.013331</minUVDensity>

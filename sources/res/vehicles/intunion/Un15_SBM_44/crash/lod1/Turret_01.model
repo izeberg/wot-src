@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/intunion/Un15_SBM_44/crash/lod2/Turret_01</parent>
+	<tank>true</tank>
+	<extent>
+		64.0
+		<!--BW_String-->
+	</extent>
+	<nodefullVisual>vehicles/intunion/Un15_SBM_44/crash/lod1/Turret_01</nodefullVisual>
+	<visibilityBox>
+		<min>-1.200241 0.003713 -1.800000</min>
+		<max>1.203818 1.080210 1.291755</max>
+	</visibilityBox>
+</root>

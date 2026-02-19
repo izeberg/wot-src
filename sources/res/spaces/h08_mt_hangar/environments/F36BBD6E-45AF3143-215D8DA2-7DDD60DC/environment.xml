@@ -11,7 +11,7 @@
 			<color>0.000000 0.000000 0.000000 1.129107</color>
 			<density>0.136400</density>
 			<height>27.500000</height>
-			<heightFalloff>0.150000</heightFalloff>
+			<heightFalloff>0.210000</heightFalloff>
 			<startDistance>10.000000</startDistance>
 			<scatterStart>1382.900024</scatterStart>
 			<scatterExponent>64.000000</scatterExponent>
@@ -50,8 +50,8 @@
 			<ambientLumMultiplier>0.200000</ambientLumMultiplier>
 			<sunLumMultiplier>0.000000</sunLumMultiplier>
 			<skyLumMultiplier>25.000000</skyLumMultiplier>
-			<LDR2HDRenableLumaMask>false</LDR2HDRenableLumaMask>
 			<LDR2HDRsaturation>1.000000</LDR2HDRsaturation>
+			<LDR2HDRenableLumaMask>false</LDR2HDRenableLumaMask>
 		</environment>
 		<tonemappings>
 			<tonemapping>
@@ -190,11 +190,12 @@
 	</cloudsShadow>
 	<PBS>
 		<ForwardSHMultiplier>1.000000</ForwardSHMultiplier>
-		<flakesEnabled>false</flakesEnabled>
 		<flakesDensityThreshold>0.800000</flakesDensityThreshold>
 		<flakesUvScale>0.800000</flakesUvScale>
 		<flakesGloss>0.890000</flakesGloss>
 		<flakesSurfNormalNoiseWeight>0.100000</flakesSurfNormalNoiseWeight>
+		<flakesEnabled>false</flakesEnabled>
+		<useBC6PackingFormat>false</useBC6PackingFormat>
 	</PBS>
 	<Weather>
 		<wind>
@@ -215,8 +216,8 @@
 			<angleShadow>77.250000</angleShadow>
 		</forward>
 		<deferred>
-			<angle>18.000000</angle>
-			<angleZ>317.000000</angleZ>
+			<angle>24.000000</angle>
+			<angleZ>232.000000</angleZ>
 		</deferred>
 		<sunScale>0.000000</sunScale>
 		<sunlightAngularSize>0.000000</sunlightAngularSize>

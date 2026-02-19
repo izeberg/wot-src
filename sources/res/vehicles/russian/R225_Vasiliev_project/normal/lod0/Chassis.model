@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/russian/R225_Vasiliev_project/normal/lod1/Chassis</parent>
+	<tank>true</tank>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.653488 -0.000904 -2.725996</min>
+		<max>1.653488 0.927280 2.895934</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/russian/R225_Vasiliev_project/normal/lod0/Chassis</nodefullVisual>
+</root>

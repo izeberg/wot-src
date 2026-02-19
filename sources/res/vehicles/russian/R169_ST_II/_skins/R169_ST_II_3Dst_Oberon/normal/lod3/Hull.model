@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/russian/R169_ST_II/_skins/R169_ST_II_3Dst_Oberon/normal/lod3/Hull</nodefullVisual>
+	<parent>vehicles/russian/R169_ST_II/_skins/R169_ST_II_3Dst_Oberon/normal/lod4/Hull</parent>
+	<tank>true</tank>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.739924 -0.578667 -3.893890</min>
+		<max>1.670080 0.636662 3.441628</max>
+	</visibilityBox>
+</root>

@@ -98,7 +98,7 @@
 						<Int>0</Int>
 					</property>
 				</material>
-				<groupOrigin>-0.003624 0.024589 -0.056749</groupOrigin>
+				<groupOrigin>-0.003624 0.024589 -0.123690</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				1
@@ -194,9 +194,9 @@
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-1.639246 -0.851818 -3.056420</min>
+		<min>-1.639246 -0.851818 -3.190301</min>
 		<max>1.631999 0.598321 2.942922</max>
 	</boundingBox>
-	<geometrySize>615086</geometrySize>
+	<geometrySize>630554</geometrySize>
 	<minUVDensity>0.002519</minUVDensity>
 </root>

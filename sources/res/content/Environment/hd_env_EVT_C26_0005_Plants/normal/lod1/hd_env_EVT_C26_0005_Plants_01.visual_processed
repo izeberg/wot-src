@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>hd_env_EVT_C26_0005_Plants_01</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>HP_module0</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 1.318000 0.000000</row3>
+				</transform>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<stream>uv2</stream>
+			<stream>colour</stream>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>d_wood0</identifier>
+					<fx>shaders/std_effects/PBS_tiled_global.fx</fx>
+					<materialKind>87</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						albedoHeightTile0
+						<Texture>content/Environment/00_Tiles/dds/Mushroom_02_512_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile1
+						<Texture>content/Environment/00_Tiles/dds/Coral_01_512_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile2
+						<Texture>content/Environment/00_Tiles/dds/Mushroom_01_512_AM.dds</Texture>
+					</property>
+					<property>
+						blendMask
+						<Texture>content/Environment/hd_env_EVT_C26_0005_Plants/hd_env_EVT_C26_0005_Plants_01_blend.png</Texture>
+					</property>
+					<property>
+						colorTex
+						<Texture>content/Environment/hd_env_EVT_C26_0005_Plants/hd_env_EVT_C26_0005_Plants_01_AM.dds</Texture>
+					</property>
+					<property>
+						dirtMap
+						<Texture>content/Buildings/00_Tiles/dds/Dirt_Moss_Roof_04_DM.dds</Texture>
+					</property>
+					<property>
+						g_dirtColor
+						<Vector4>0.000000 0.430000 0.380000 1.000000</Vector4>
+					</property>
+					<property>
+						g_dirtColorParams
+						<Vector4>0.000000 1.000000 0.850000 1.000000</Vector4>
+					</property>
+					<property>
+						g_fakeShadowsAndDetailParams
+						<Vector4>0.500000 0.500000 1.000000 0.000600</Vector4>
+					</property>
+					<property>
+						g_tintParams
+						<Vector4>0.000000 1.000000 1.000000 1.000000</Vector4>
+					</property>
+					<property>
+						globalTex
+						<Texture>content/Environment/hd_env_EVT_C26_0005_Plants/hd_env_EVT_C26_0005_Plants_01_GNM.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile0
+						<Texture>content/Environment/00_Tiles/dds/Mushroom_02_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile1
+						<Texture>content/Environment/00_Tiles/dds/Coral_01_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile2
+						<Texture>content/Environment/00_Tiles/dds/Mushroom_01_512_MAO.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile0
+						<Texture>content/Environment/00_Tiles/dds/Mushroom_02_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile1
+						<Texture>content/Environment/00_Tiles/dds/Coral_01_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile2
+						<Texture>content/Environment/00_Tiles/dds/Mushroom_01_512_GBMT.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.271482 -0.083080 0.266817</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>n_wood0</identifier>
+					<fx>shaders/std_effects/PBS_tiled_global.fx</fx>
+					<materialKind>73</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						albedoHeightTile0
+						<Texture>content/Environment/00_Tiles/dds/Mushroom_02_512_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile1
+						<Texture>content/Environment/00_Tiles/dds/Coral_01_512_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile2
+						<Texture>content/Environment/00_Tiles/dds/Mushroom_01_512_AM.dds</Texture>
+					</property>
+					<property>
+						blendMask
+						<Texture>content/Environment/hd_env_EVT_C26_0005_Plants/hd_env_EVT_C26_0005_Plants_01_blend.png</Texture>
+					</property>
+					<property>
+						colorTex
+						<Texture>content/Environment/hd_env_EVT_C26_0005_Plants/hd_env_EVT_C26_0005_Plants_01_AM.dds</Texture>
+					</property>
+					<property>
+						dirtMap
+						<Texture>content/Buildings/00_Tiles/dds/Dirt_Moss_Roof_04_DM.dds</Texture>
+					</property>
+					<property>
+						g_dirtColor
+						<Vector4>0.000000 0.430000 0.380000 1.000000</Vector4>
+					</property>
+					<property>
+						g_dirtColorParams
+						<Vector4>0.000000 1.000000 0.850000 1.000000</Vector4>
+					</property>
+					<property>
+						g_enableTerrainBlending
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_fakeShadowsAndDetailParams
+						<Vector4>0.500000 0.500000 1.000000 0.000600</Vector4>
+					</property>
+					<property>
+						g_tintParams
+						<Vector4>0.000000 1.000000 1.000000 1.000000</Vector4>
+					</property>
+					<property>
+						globalTex
+						<Texture>content/Environment/hd_env_EVT_C26_0005_Plants/hd_env_EVT_C26_0005_Plants_01_GNM.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile0
+						<Texture>content/Environment/00_Tiles/dds/Mushroom_02_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile1
+						<Texture>content/Environment/00_Tiles/dds/Coral_01_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile2
+						<Texture>content/Environment/00_Tiles/dds/Mushroom_01_512_MAO.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile0
+						<Texture>content/Environment/00_Tiles/dds/Mushroom_02_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile1
+						<Texture>content/Environment/00_Tiles/dds/Coral_01_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile2
+						<Texture>content/Environment/00_Tiles/dds/Mushroom_01_512_GBMT.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.466286 1.452092 0.090376</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				2
+				<material>
+					<identifier>n_wood1</identifier>
+					<fx>shaders/std_effects/glow.fx</fx>
+					<materialKind>73</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						alphaReference
+						<Int>123</Int>
+					</property>
+					<property>
+						depthAccess
+						<Int>3</Int>
+					</property>
+					<property>
+						destBlend
+						<Int>2</Int>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Environment/hd_env_EVT_C26_0005_Plants/hd_env_EVT_C26_0005_Plants_01_AM.dds</Texture>
+					</property>
+					<property>
+						g_tintColor
+						<Vector4>1.000000 0.952941 0.890196 1.000000</Vector4>
+					</property>
+					<property>
+						selfIllumination
+						<Float>30.000000</Float>
+					</property>
+					<property>
+						selfIlluminationEnvDependent
+						<Float>100.000000</Float>
+					</property>
+				</material>
+				<groupOrigin>-0.456600 1.891891 0.085137</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-3.097290 -0.459076 -1.995061</min>
+		<max>2.168643 3.339644 2.165334</max>
+	</boundingBox>
+	<customBsp>true</customBsp>
+	<geometrySize>123278</geometrySize>
+	<minUVDensity>0.003220</minUVDensity>
+</root>

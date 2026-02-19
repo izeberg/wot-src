@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/french/F137_Tornade/normal/lod1/Turret_01</parent>
+	<tank>true</tank>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.224184 -0.002822 -1.224184</min>
+		<max>1.224184 0.404433 1.224184</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/french/F137_Tornade/normal/lod0/Turret_01</nodefullVisual>
+</root>

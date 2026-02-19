@@ -817,7 +817,7 @@ class _TracerSoundEffectDesc(_NodeSoundEffectDesc):
 class _TracerStopEventSound(object):
     _TracerSounds = namedtuple('TracerSounds', 'stopPC stopNPC stopFlyOut')
     _EXPLOSION_REASON = 1
-    __slots__ = ('_soundsName', '_isPlayer')
+    __slots__ = ('_soundsName', '_isPlayer', '_isInited')
 
     def __init__(self, dataSection):
         defaultSounds = self._TracerSounds(stopPC='psb_pc_stop', stopNPC='psb_npc_stop', stopFlyOut=None)
@@ -825,16 +825,20 @@ class _TracerStopEventSound(object):
         if dataSection:
             self._soundsName = self._TracerSounds(stopPC=dataSection.readString('wwstopSoundPC', defaultSounds.stopPC), stopNPC=dataSection.readString('wwstopSoundNPC', defaultSounds.stopNPC), stopFlyOut=dataSection.readString('wwstopSoundFlyOut', defaultSounds.stopFlyOut))
         self._isPlayer = False
+        self._isInited = False
         return
 
     def setSound(self, isPlayer):
         self._isPlayer = isPlayer
+        self._isInited = True
 
     def getSound(self, reason):
-        stopFlyOut = self._soundsName.stopFlyOut
-        if reason != self._EXPLOSION_REASON and stopFlyOut is not None:
-            return stopFlyOut
+        if not self._isInited:
+            return
         else:
+            stopFlyOut = self._soundsName.stopFlyOut
+            if reason != self._EXPLOSION_REASON and stopFlyOut is not None:
+                return stopFlyOut
             if self._isPlayer:
                 return self._soundsName.stopPC
             return self._soundsName.stopNPC

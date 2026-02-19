@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<nodefullVisual>vehicles/chinese/Ch62_ZZT_58/crash/lod2/Chassis</nodefullVisual>
 	<parent>vehicles/chinese/Ch62_ZZT_58/crash/lod3/Chassis</parent>
 	<tank>true</tank>
 	<extent>96.000000</extent>
@@ -8,4 +7,5 @@
 		<min>-1.620193 0.000015 -3.518501</min>
 		<max>1.620194 1.102027 3.500720</max>
 	</visibilityBox>
+	<nodefullVisual>vehicles/chinese/Ch62_ZZT_58/crash/lod2/Chassis</nodefullVisual>
 </root>

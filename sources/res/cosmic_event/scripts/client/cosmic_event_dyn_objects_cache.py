@@ -7,7 +7,6 @@ class CosmicEventDynObjects(DynObjectsBase):
     def __init__(self):
         super(CosmicEventDynObjects, self).__init__()
         self.__pointsOfInterestConfig = None
-        self.__cosmicShields = None
         self.__cachedPrefabs = set()
         self.__resourcesCache = None
         self.lootPrefabs = {}
@@ -18,11 +17,14 @@ class CosmicEventDynObjects(DynObjectsBase):
         self.__pointsOfInterestConfig = _PointsOfInterestConfig({(10, 13): cosmic_prefabs.Artifact.SMALL_HINT, 
            (17, 22): cosmic_prefabs.Artifact.BIG_HINT})
         self.__cachedPrefabs.update(set(self.__pointsOfInterestConfig.getPrefabs()))
-        self._collectLootPrefabs()
-        self._collectVehiclePrefabs()
-        self._collectArtifactPrefabs()
-        self._collectDebufPrefabs()
-        self._collectOtherPrefabs()
+        self.__collectLootPrefabs()
+        self.__collectVehiclePrefabs()
+        self.__collectArtifactPrefabs()
+        self.__collectDebufPrefabs()
+        self.__collectMeteoriteZonePrefabs()
+        self.__collectMinePrefabs()
+        self.__collectMarkerPrefabs()
+        self.__collectOtherPrefabs()
         BigWorld.loadResourceListBG(list(self.__cachedPrefabs), makeCallbackWeak(self.__onResourcesLoaded))
         CGF.cacheGameObjects(list(self.__cachedPrefabs), False)
 
@@ -45,26 +47,36 @@ class CosmicEventDynObjects(DynObjectsBase):
     def __onResourcesLoaded(self, resourceRefs):
         self.__resourcesCache = resourceRefs
 
-    def _collectLootPrefabs(self):
+    def __collectLootPrefabs(self):
         prefabs = cosmic_prefabs.Loot.RANGE_LOOT
         self.__cachedPrefabs.update(prefabs)
 
-    def _collectVehiclePrefabs(self):
+    def __collectVehiclePrefabs(self):
         prefabs = cosmic_prefabs.Vehicle.RANGE
         self.__cachedPrefabs.update(prefabs)
 
-    def _collectArtifactPrefabs(self):
+    def __collectArtifactPrefabs(self):
         prefabs = cosmic_prefabs.Artifact.RANGE
         self.__cachedPrefabs.update(prefabs)
 
-    def _collectDebufPrefabs(self):
+    def __collectDebufPrefabs(self):
         prefabs = cosmic_prefabs.Debuf.RANGE
         self.__cachedPrefabs.update(prefabs)
 
-    def _collectOtherPrefabs(self):
-        prefabs = ('content/CGFPrefabs/cosmic_event/cosmic_event_ability_pickup_end.prefab',
-                   'content/CGFPrefabs/cosmic_event/cosmic_event_ability_pickup_start.prefab',
-                   'content/CGFPrefabs/cosmic_event/cosmic_event_artifact_gathering.prefab',
+    def __collectMeteoriteZonePrefabs(self):
+        prefabs = cosmic_prefabs.MeteoriteZone.RANGE
+        self.__cachedPrefabs.update(prefabs)
+
+    def __collectMinePrefabs(self):
+        prefabs = cosmic_prefabs.Mine.RANGE
+        self.__cachedPrefabs.update(prefabs)
+
+    def __collectMarkerPrefabs(self):
+        prefabs = cosmic_prefabs.Marker.RANGE
+        self.__cachedPrefabs.update(prefabs)
+
+    def __collectOtherPrefabs(self):
+        prefabs = ('content/CGFPrefabs/cosmic_event/cosmic_event_artifact_gathering.prefab',
                    'content/CGFPrefabs/cosmic_event/cosmic_event_artifact_idle.prefab',
                    'content/CGFPrefabs/cosmic_event/cosmic_event_artifact_spawn_abilities.prefab',
                    'content/CGFPrefabs/cosmic_event/cosmic_event_artifact_spawn_s_zone_01.prefab',
@@ -80,6 +92,5 @@ class CosmicEventDynObjects(DynObjectsBase):
                    'content/CGFPrefabs/cosmic_event/cosmic_event_teleport_in.prefab',
                    'content/CGFPrefabs/cosmic_event/cosmic_event_teleport_out.prefab',
                    'content/CGFPrefabs/cosmic_event/cosmic_event_zone_s.prefab',
-                   'content/CGFPrefabs/cosmic_event/cosmic_vehicle_emissive.prefab',
-                   'content/CGFPrefabs/cosmic_event/cosmic_vehicle_shot_anim.prefab')
+                   'content/CGFPrefabs/cosmic_event/cosmic_vehicle_emissive.prefab')
         self.__cachedPrefabs.update(prefabs)

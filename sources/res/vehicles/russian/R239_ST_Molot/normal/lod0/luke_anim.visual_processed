@@ -84,6 +84,10 @@
 						normalMap
 						<Texture>vehicles/russian/R239_ST_Molot/ST_Molot_turret_01_ANM.dds</Texture>
 					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
 				</material>
 				<groupOrigin>-0.045143 0.486752 1.601363</groupOrigin>
 			</primitiveGroup>

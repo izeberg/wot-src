@@ -322,6 +322,175 @@ msgstr "?empty?"
 msgid "modes/development/userName"
 msgstr "?empty?"
 
+msgid "modes/fep141/capsUserName"
+msgstr "АРКАДА"
+
+msgid "modes/fep141/detailedUserName"
+msgstr "%(modeName)s"
+
+msgid "modes/fep141/metaProgressionTooltip/header/active"
+msgstr "Задача Аркады. Этап: %(done)s{par_Open}/%(total)s{par_Close}"
+
+msgid "modes/fep141/metaProgressionTooltip/reward/tip"
+msgstr "Прогресс выполнения засчитывается в любом подрежиме Аркады."
+
+msgid "modes/fep141/metaProgressionTooltip/subheader"
+msgstr "Задача Аркады"
+
+msgid "modes/fep141/metaProgressionTooltip/timer/completedResettable"
+msgstr "до новой задачи Аркады"
+
+msgid "modes/fep141/modeSubSelector/progression/info"
+msgstr "Прогресс выполнения засчитывается в любом подрежиме Аркады."
+
+msgid "modes/fep141/modeSubSelector/progression/timer"
+msgstr "до новой задачи Аркады"
+
+msgid "modes/fep141/mode_selector/battleCondition"
+msgstr "15x15"
+
+msgid "modes/fep141/mode_selector/description"
+msgstr "Классические бои без модификаторов"
+
+msgid "modes/fep141/mode_selector/levelCondition"
+msgstr "{parSecondary_open}I{parSecondary_close} %(levels)s&nbsp;уровни"
+
+msgid "modes/fep141/mode_selector/progression/resettable"
+msgstr "До новой задачи Аркады"
+
+msgid "modes/fep141/notification/finishSubModes/withProgression"
+msgstr "Подрежим %(subModeName)s завершён: прогрессия сброшена."
+
+msgid "modes/fep141/notification/finishSubModes/withoutProgression"
+msgstr "Подрежим %(subModeName)s завершён."
+
+msgid "modes/fep141/notification/newSubModes/withProgression"
+msgstr "Доступны новые награды и подрежим %(subModeName)s."
+
+msgid "modes/fep141/notification/newSubModes/withoutProgression"
+msgstr "Доступен новый подрежим — %(subModeName)s."
+
+msgid "modes/fep141/notification/switchOffSubModes"
+msgstr "Подрежим %(subModeName)s недоступен: ведутся технические работы."
+
+msgid "modes/fep141/notification/switchOnSubModes"
+msgstr "Подрежим %(subModeName)s снова доступен."
+
+msgid "modes/fep141/progression/congratulation/descr"
+msgstr "Вы выполнили все задачи Аркады"
+
+msgid "modes/fep141/progression/info"
+msgstr "Задачу можно выполнять в любом подрежиме Аркады."
+
+msgid "modes/fep141/progression/title"
+msgstr "ЗАДАЧА АРКАДЫ"
+
+msgid "modes/fep141/scheduler/notification/available"
+msgstr "Бои подрежима %(subModeName)s снова доступны."
+
+msgid "modes/fep141/scheduler/notification/available/title"
+msgstr "Режим прекращения огня"
+
+msgid "modes/fep141/scheduler/notification/primeTime"
+msgstr ""
+"Бои подрежима %(subModeName)s недоступны до окончания режима прекращения "
+"огня."
+
+msgid "modes/fep141/scheduler/notification/primeTime/title"
+msgstr "Режим прекращения огня"
+
+msgid "modes/fep141/tooltip/filter/body"
+msgstr ""
+"Включить/отключить отображение подходящей техники для режима «Аркада»."
+
+msgid "modes/fep141/tooltip/filter/header"
+msgstr "Аркадная техника"
+
+msgid "modes/fep141/userName"
+msgstr "Аркада"
+
+msgid "modes/goldnerf141/capsUserName"
+msgstr "ПОЛЕВЫЕ ИСПЫТАНИЯ"
+
+msgid "modes/goldnerf141/detailedUserName"
+msgstr "%(modeName)s"
+
+msgid "modes/goldnerf141/metaProgressionTooltip/header/active"
+msgstr ""
+"Задача полевых испытаний. Этап: %(done)s{par_Open}/%(total)s{par_Close}"
+
+msgid "modes/goldnerf141/metaProgressionTooltip/subheader"
+msgstr "Задача полевых испытаний."
+
+msgid "modes/goldnerf141/metaProgressionTooltip/timer/completedResettable"
+msgstr "до новой задачи Полевых испытаний"
+
+msgid "modes/goldnerf141/modeSubSelector/progression/info"
+msgstr "?empty?"
+
+msgid "modes/goldnerf141/modeSubSelector/progression/timer"
+msgstr "до новой задачи Полевых испытаний"
+
+msgid "modes/goldnerf141/mode_selector/battleCondition"
+msgstr "15x15"
+
+msgid "modes/goldnerf141/mode_selector/description"
+msgstr "Снижение урона специальных снарядов."
+
+msgid "modes/goldnerf141/mode_selector/levelCondition"
+msgstr "{parSecondary_open}I{parSecondary_close} %(levels)s&nbsp;уровни"
+
+msgid "modes/goldnerf141/mode_selector/progression/resettable"
+msgstr "До новой задачи Полевых испытаний"
+
+msgid "modes/goldnerf141/notification/finishSubModes/withProgression"
+msgstr "Режим %(subModeName)s завершён: прогрессия сброшена."
+
+msgid "modes/goldnerf141/notification/finishSubModes/withoutProgression"
+msgstr "Режим %(subModeName)s завершён."
+
+msgid "modes/goldnerf141/notification/newSubModes/withProgression"
+msgstr "Доступны новые награды и режим %(subModeName)s."
+
+msgid "modes/goldnerf141/notification/newSubModes/withoutProgression"
+msgstr "Доступен новый режим — %(subModeName)s."
+
+msgid "modes/goldnerf141/notification/switchOffSubModes"
+msgstr "Режим %(subModeName)s недоступен: ведутся технические работы."
+
+msgid "modes/goldnerf141/notification/switchOnSubModes"
+msgstr "Режим %(subModeName)s снова доступен."
+
+msgid "modes/goldnerf141/progression/congratulation/descr"
+msgstr "Вы выполнили все задачи Полевых испытаний"
+
+msgid "modes/goldnerf141/progression/title"
+msgstr "ЗАДАЧА ПОЛЕВЫХ ИСПЫТАНИЙ"
+
+msgid "modes/goldnerf141/scheduler/notification/available"
+msgstr "Бои режима %(subModeName)s снова доступны."
+
+msgid "modes/goldnerf141/scheduler/notification/available/title"
+msgstr "Режим прекращения огня"
+
+msgid "modes/goldnerf141/scheduler/notification/primeTime"
+msgstr ""
+"Бои режима %(subModeName)s недоступны до окончания режима прекращения огня."
+
+msgid "modes/goldnerf141/scheduler/notification/primeTime/title"
+msgstr "Режим прекращения огня"
+
+msgid "modes/goldnerf141/tooltip/filter/body"
+msgstr ""
+"Включить/отключить отображение подходящей техники для режима «Полевые "
+"испытания»."
+
+msgid "modes/goldnerf141/tooltip/filter/header"
+msgstr "Техника режима «Полевые испытания»"
+
+msgid "modes/goldnerf141/userName"
+msgstr "Полевые испытания"
+
 msgid "modes/undefined/capsUserName"
 msgstr "АРКАДА"
 
@@ -683,6 +852,102 @@ msgstr "?empty?"
 
 msgid "sub_modes/development/userName/quoted"
 msgstr "?empty?"
+
+msgid "sub_modes/fep141/capsUserName"
+msgstr "Аркада: Битва за Москву"
+
+msgid "sub_modes/fep141/detailsHelp/page1/description"
+msgstr ""
+"Аркада — знакомый многим игровой режим. В этот раз бои без модификаторов "
+"и прочих хитростей проходят на новой карте «Битва за Москву»."
+
+msgid "sub_modes/fep141/detailsHelp/page1/title"
+msgstr "Карта «Битва за Москву»"
+
+msgid "sub_modes/fep141/detailsHelpHint/description"
+msgstr "для знакомства с особенностями режима"
+
+msgid "sub_modes/fep141/detailsHelpHint/press"
+msgstr "Нажмите"
+
+msgid "sub_modes/fep141/detailsHelpTitle"
+msgstr "Аркада: Битва за Москву"
+
+msgid "sub_modes/fep141/subModeCard/battleCondition"
+msgstr "?empty?"
+
+msgid "sub_modes/fep141/subModeCard/description"
+msgstr "Аркада: Битва за Москву"
+
+msgid "sub_modes/fep141/subModeCard/levelCondition"
+msgstr "?empty?"
+
+msgid "sub_modes/fep141/subModeCard/title"
+msgstr "Аркада: Битва за Москву"
+
+msgid "sub_modes/fep141/tips/tip1/description"
+msgstr ""
+"Аркада — знакомый многим игровой режим. В этот раз бои без модификаторов "
+"и прочих хитростей проходят на новой карте «Битва за Москву»."
+
+msgid "sub_modes/fep141/tips/tip1/title"
+msgstr "Карта «Битва за Москву»"
+
+msgid "sub_modes/fep141/userName"
+msgstr "Битва за Москву"
+
+msgid "sub_modes/fep141/userName/quoted"
+msgstr "«Битва за Москву»"
+
+msgid "sub_modes/goldnerf141/capsUserName"
+msgstr "ПОЛЕВЫЕ ИСПЫТАНИЯ"
+
+msgid "sub_modes/goldnerf141/detailsHelp/page1/description"
+msgstr ""
+"Полевые испытания — специальный режим, где вы тестируете предлагаемые "
+"изменения снарядов. В этом запуске урон, наносимый специальными снарядами, "
+"снижен отдельно для каждой машины."
+
+msgid "sub_modes/goldnerf141/detailsHelp/page1/title"
+msgstr "Снижение урона специальных снарядов"
+
+msgid "sub_modes/goldnerf141/detailsHelpHint/description"
+msgstr "для знакомства с особенностями режима"
+
+msgid "sub_modes/goldnerf141/detailsHelpHint/press"
+msgstr "Нажмите"
+
+msgid "sub_modes/goldnerf141/detailsHelpTitle"
+msgstr "ПОЛЕВЫЕ ИСПЫТАНИЯ"
+
+msgid "sub_modes/goldnerf141/subModeCard/battleCondition"
+msgstr "15x15"
+
+msgid "sub_modes/goldnerf141/subModeCard/description"
+msgstr ""
+"Стандартные бои без модификаторов\n"
+"и учёта в статистику"
+
+msgid "sub_modes/goldnerf141/subModeCard/levelCondition"
+msgstr "{parSecondary_open}I{parSecondary_close} %(levels)s&nbsp;уровни"
+
+msgid "sub_modes/goldnerf141/subModeCard/title"
+msgstr "Полевые испытания"
+
+msgid "sub_modes/goldnerf141/tips/tip1/description"
+msgstr ""
+"Полевые испытания — специальный режим, где вы тестируете предлагаемые "
+"изменения снарядов. В этом запуске урон, наносимый специальными снарядами, "
+"снижен отдельно для каждой машины."
+
+msgid "sub_modes/goldnerf141/tips/tip1/title"
+msgstr "ПОЛЕВЫЕ ИСПЫТАНИЯ"
+
+msgid "sub_modes/goldnerf141/userName"
+msgstr "Полевые испытания"
+
+msgid "sub_modes/goldnerf141/userName/quoted"
+msgstr "Полевые испытания"
 
 msgid "sub_modes/undefined/capsUserName"
 msgstr "UNKNOWN SUB MODE NAME"

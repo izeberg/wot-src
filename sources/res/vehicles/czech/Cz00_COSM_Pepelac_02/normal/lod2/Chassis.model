@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/czech/Cz00_COSM_Pepelac_02/normal/lod2/Chassis</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/czech/Cz00_COSM_Pepelac_02/normal/lod3/Chassis</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.577404 0.029498 -2.325522</min>
+		<max>1.577404 1.397433 2.235979</max>
+	</visibilityBox>
+</root>

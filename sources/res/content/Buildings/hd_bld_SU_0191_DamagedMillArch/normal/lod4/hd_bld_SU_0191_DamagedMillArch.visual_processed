@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<customBsp>true</customBsp>
+	<renderSet>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>s_nd0.vertices</vertices>
+			<stream>s_nd0.uv2</stream>
+			<stream>s_nd0.colour</stream>
+			<primitive>s_nd0.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0</identifier>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>111</materialKind>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<property>
+						alphaReference
+						<Int>77</Int>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Buildings/hd_bld_SU_0191_DamagedMillArch/hd_bld_SU_0191_DamagedMillArch_BAM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_enableTerrainBlending
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Buildings/hd_bld_SU_0191_DamagedMillArch/hd_bld_SU_0191_DamagedMillArch_BGMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Buildings/hd_bld_SU_0191_DamagedMillArch/hd_bld_SU_0191_DamagedMillArch_BANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.666632 6.569883 -0.329368</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-10.332098 -0.546143 -9.479344</min>
+		<max>11.665362 13.685908 8.820609</max>
+	</boundingBox>
+	<geometrySize>43042</geometrySize>
+	<minUVDensity>0.000155</minUVDensity>
+</root>

@@ -309,6 +309,10 @@
 			<mipCount>1</mipCount>
 			<pattern>.*/overlay_layer_mask.dds</pattern>
 		</rule>
+		<rule>
+			<lodMode>0</lodMode>
+			<pattern>.*em_forward.dds</pattern>
+		</rule>
 	</directory>
 	<directory>
 		<path>system</path>

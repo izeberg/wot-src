@@ -1,7 +1,7 @@
 import logging, typing, weakref, BigWorld
 from auto_shoot_guns.auto_shoot_guns_common import SpinGunState
-from gui.battle_control.controllers.auto_shoot_guns.auto_shoot_helpers import getGunSoundObject
 from gui.battle_control.controllers.auto_shoot_guns.auto_shoot_wrappers import checkStateStatus
+from gui.battle_control.controllers.sound_ctrls.common import getGunSoundObject
 _logger = logging.getLogger(__name__)
 _MAX_SPIN_VALUE = 1.0
 

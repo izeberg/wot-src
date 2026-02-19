@@ -152,7 +152,7 @@ msgid "antifragmentationLining/name"
 msgstr "Противоосколочный подбой"
 
 msgid "antifragmentationLining/short_special"
-msgstr "Защищает от ОФ снарядов, тарана, ранений и дезориентации"
+msgstr "Защищает от ОФ-снарядов, тарана, ранений и дезориентации"
 
 msgid "antifragmentationLining_tier1/name"
 msgstr "Сверхтяжёлый противоосколочный подбой"
@@ -943,6 +943,11 @@ msgstr "Даёт"
 
 msgid "crewBattleBooster/descr/skill"
 msgstr "навык"
+
+msgid "custom/shot_passion/ability/descr/usage"
+msgstr ""
+"%(defaultText)s\n"
+"Макс. увеличение урона: %(increaseDamage)d %%"
 
 msgid "deluxAimingStabilizer/long_special"
 msgstr ""
@@ -3035,20 +3040,20 @@ msgstr ""
 "двигателя"
 
 msgid "role_SPG_pair_2_1/name"
-msgstr "Комплекс „Охотник-С“"
+msgstr "Комплекс «Охотник-С»"
 
 msgid "role_SPG_pair_2_1/splitName"
 msgstr ""
 "Комплекс\n"
-"„Охотник-С“"
+"«Охотник-С»"
 
 msgid "role_SPG_pair_2_2/name"
-msgstr "Комплекс „Охотник-М“"
+msgstr "Комплекс «Охотник-М»"
 
 msgid "role_SPG_pair_2_2/splitName"
 msgstr ""
 "Комплекс\n"
-"„Охотник-М“"
+"«Охотник-М»"
 
 msgid "role_SPG_pair_3_1/name"
 msgstr "Настройка гидравлики (Схема 1)"
@@ -3421,11 +3426,11 @@ msgstr ""
 "подвески"
 
 msgid "role_mediumTank_pair_2_2/name"
-msgstr "„Плавающий“ прицел"
+msgstr "«Плавающий» прицел"
 
 msgid "role_mediumTank_pair_2_2/splitName"
 msgstr ""
-"„Плавающий“\n"
+"«Плавающий»\n"
 "прицел"
 
 msgid "role_mediumTank_pair_3_1/name"

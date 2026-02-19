@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/russian/R147_Object_701/normal/lod1/Hull</nodefullVisual>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>
+			-1.80251 -0.58847 -3.56217
+			<!--BW_String-->
+		</min>
+		<max>
+			1.80225 0.871093 3.47968
+			<!--BW_String-->
+		</max>
+	</visibilityBox>
+	<parent>vehicles/russian/R147_Object_701/normal/lod2/Hull</parent>
+	<extent>64</extent>
+</root>

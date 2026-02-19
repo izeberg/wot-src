@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>hd_env_EVT_C26_0005_Plants_02</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>HP_module0</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-0.294000 2.277000 -0.301000</row3>
+				</transform>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>n2Shape.vertices</vertices>
+			<primitive>n2Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>n_wood2</identifier>
+					<fx>shaders/std_effects/glow.fx</fx>
+					<materialKind>73</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						alphaReference
+						<Int>51</Int>
+					</property>
+					<property>
+						depthAccess
+						<Int>3</Int>
+					</property>
+					<property>
+						destBlend
+						<Int>2</Int>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Environment/hd_env_EVT_C26_0005_Plants/hd_env_EVT_C26_0005_Plants_02_AM.dds</Texture>
+					</property>
+					<property>
+						g_tintColor
+						<Vector4>0.756863 0.874510 0.886275 1.000000</Vector4>
+					</property>
+					<property>
+						selfIllumination
+						<Float>24.000000</Float>
+					</property>
+					<property>
+						selfIlluminationEnvDependent
+						<Float>100.000000</Float>
+					</property>
+				</material>
+				<groupOrigin>-0.460801 4.194257 -0.016664</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>n_wood1</identifier>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<materialKind>73</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						alphaReference
+						<Int>155</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Environment/hd_env_EVT_C26_0014_Plants/hd_env_EVT_C26_0014_Plants_02_AM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_enableTerrainBlending
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_enableTransmission
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_vertexAnimationParams
+						<Vector4>0.020000 0.005000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Environment/hd_env_EVT_C26_0014_Plants/hd_env_EVT_C26_0014_Plants_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Environment/hd_env_EVT_C26_0014_Plants/hd_env_EVT_C26_0014_Plants_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.275376 4.179835 -0.622531</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>n0Shape.vertices</vertices>
+			<stream>n0Shape.uv2</stream>
+			<primitive>n0Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>n_wood0</identifier>
+					<fx>shaders/std_effects/PBS_tiled_global.fx</fx>
+					<materialKind>73</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						albedoHeightTile0
+						<Texture>content/Environment/00_Tiles/dds/Alien_01_02_512_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile1
+						<Texture>content/Environment/00_Tiles/dds/Mucus_01_512_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile2
+						<Texture>content/Environment/00_Tiles/dds/Alien_01_512_AM.dds</Texture>
+					</property>
+					<property>
+						blendMask
+						<Texture>content/Environment/hd_env_EVT_C26_0005_Plants/hd_env_EVT_C26_0005_Plants_02_blend.png</Texture>
+					</property>
+					<property>
+						colorTex
+						<Texture>content/Environment/hd_env_EVT_C26_0005_Plants/hd_env_EVT_C26_0005_Plants_02_AM.dds</Texture>
+					</property>
+					<property>
+						dirtMap
+						<Texture>content/Buildings/00_Tiles/dds/Dirt_Moss_Roof_04_DM.dds</Texture>
+					</property>
+					<property>
+						g_dirtColor
+						<Vector4>0.000000 0.430000 0.380000 0.250000</Vector4>
+					</property>
+					<property>
+						g_dirtColorParams
+						<Vector4>0.200000 1.000000 1.000000 1.000000</Vector4>
+					</property>
+					<property>
+						g_enableTerrainBlending
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_fakeShadowsAndDetailParams
+						<Vector4>0.500000 0.500000 1.000000 0.010000</Vector4>
+					</property>
+					<property>
+						g_tintParams
+						<Vector4>0.000000 1.000000 1.000000 1.000000</Vector4>
+					</property>
+					<property>
+						globalTex
+						<Texture>content/Environment/hd_env_EVT_C26_0005_Plants/hd_env_EVT_C26_0005_Plants_02_GNM.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile0
+						<Texture>content/Environment/00_Tiles/dds/Alien_01_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile1
+						<Texture>content/Environment/00_Tiles/dds/Mucus_01_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile2
+						<Texture>content/Environment/00_Tiles/dds/Alien_01_512_MAO.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile0
+						<Texture>content/Environment/00_Tiles/dds/Alien_01_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile1
+						<Texture>content/Environment/00_Tiles/dds/Mucus_01_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile2
+						<Texture>content/Environment/00_Tiles/dds/Alien_01_512_GBMT.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.464914 3.383178 -0.018736</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>d_wood0</identifier>
+					<fx>shaders/std_effects/PBS_tiled_global.fx</fx>
+					<materialKind>87</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						albedoHeightTile0
+						<Texture>content/Environment/00_Tiles/dds/Alien_01_02_512_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile1
+						<Texture>content/Environment/00_Tiles/dds/Mucus_01_512_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile2
+						<Texture>content/Environment/00_Tiles/dds/Alien_01_512_AM.dds</Texture>
+					</property>
+					<property>
+						blendMask
+						<Texture>content/Environment/hd_env_EVT_C26_0005_Plants/hd_env_EVT_C26_0005_Plants_02_blend.png</Texture>
+					</property>
+					<property>
+						colorTex
+						<Texture>content/Environment/hd_env_EVT_C26_0005_Plants/hd_env_EVT_C26_0005_Plants_02_AM.dds</Texture>
+					</property>
+					<property>
+						dirtMap
+						<Texture>content/Buildings/00_Tiles/dds/Dirt_Moss_Roof_04_DM.dds</Texture>
+					</property>
+					<property>
+						g_dirtColor
+						<Vector4>0.000000 0.430000 0.380000 0.250000</Vector4>
+					</property>
+					<property>
+						g_dirtColorParams
+						<Vector4>0.200000 1.000000 1.000000 1.000000</Vector4>
+					</property>
+					<property>
+						g_fakeShadowsAndDetailParams
+						<Vector4>0.500000 0.500000 1.000000 0.010000</Vector4>
+					</property>
+					<property>
+						g_tintParams
+						<Vector4>0.000000 1.000000 1.000000 1.000000</Vector4>
+					</property>
+					<property>
+						globalTex
+						<Texture>content/Environment/hd_env_EVT_C26_0005_Plants/hd_env_EVT_C26_0005_Plants_02_GNM.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile0
+						<Texture>content/Environment/00_Tiles/dds/Alien_01_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile1
+						<Texture>content/Environment/00_Tiles/dds/Mucus_01_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile2
+						<Texture>content/Environment/00_Tiles/dds/Alien_01_512_MAO.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile0
+						<Texture>content/Environment/00_Tiles/dds/Alien_01_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile1
+						<Texture>content/Environment/00_Tiles/dds/Mucus_01_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile2
+						<Texture>content/Environment/00_Tiles/dds/Alien_01_512_GBMT.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.374046 0.099534 0.219504</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-5.033568 -0.147754 -2.749449</min>
+		<max>4.115936 6.914110 2.716122</max>
+	</boundingBox>
+	<customBsp>true</customBsp>
+	<geometrySize>60384</geometrySize>
+	<minUVDensity>0.001874</minUVDensity>
+</root>

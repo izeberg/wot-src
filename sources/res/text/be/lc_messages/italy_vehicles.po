@@ -173,6 +173,9 @@ msgstr "Lion"
 msgid "Chassis_It23_CC_3"
 msgstr "CC 3"
 
+msgid "Chassis_It23_CC_3_ISP"
+msgstr "CC 3"
+
 msgid "Chassis_It24_Controcarro_1_Mk2"
 msgstr "Controcarro 1 Mk. 2 tipo A"
 
@@ -596,6 +599,27 @@ msgstr "Камфортная гармата, сістэма данабіванн
 msgid "It23_CC_3"
 msgstr "Controcarro 3 Minotauro"
 
+msgid "It23_CC_3_ISP"
+msgstr "Minotauro Испытательный"
+
+msgid "It23_CC_3_ISP_descr"
+msgstr ""
+"Машына распрацоўвалася ў 1960-х гадах кампаніяй OTO Melara з ужыткам "
+"канструктыўных элементаў тэхнікі ЗША і Германіі. Планавалася выкарыстаць "
+"нямецкую сілавую ўстаноўку і ўласныя напрацоўкі па марскіх прыладах і "
+"сістэмах іх набівання. Характэрнай рысай праекту стала размяшчэнне механіка-"
+"кіроўцы ў вежы з абмежаванымі вугламі гарызантальнага навядзення, а таксама "
+"механізаваная сістэма набівання."
+
+msgid "It23_CC_3_ISP_long_special"
+msgstr "?empty?"
+
+msgid "It23_CC_3_ISP_short"
+msgstr "Minotauro (И)"
+
+msgid "It23_CC_3_ISP_short_special"
+msgstr "?empty?"
+
 msgid "It23_CC_3_bob"
 msgstr "Minotauro BB"
 
@@ -696,15 +720,15 @@ msgstr "M16/43 Sahariano"
 
 msgid "It29_Carro_Celere_Sahariano_descr"
 msgstr ""
-"У канцы 1940 г. італьянскае войска ўпершыню сутыкнулася з брытанскім Cruiser"
-" Tank Mk.IV, і канструктары краіны зацікавіліся канцэпцыяй хуткаснага танка."
-" Першапачаткова планавалі стварыць нізкую баявую машыну з максімальнай "
-"таўшчынёй брані 30 мм, масай 13 тон і тыповым для італьянскай тэхнікі "
-"ўзбраеннем. Рухавік магутнасцю 250 к. с. павінен быў забяспечыць "
-"максімальную хуткасць да 55 км/гадз. Паступова раслі маса і даўжыня танка. У"
-" выніку атрымалася дастаткова прысадзістая машына вышынёй 2 метры. Да "
-"паўнавартасных выпрабаванняў не дайшло: да сярэдзіны 1942 г. 30 мм брані "
-"было ўжо недастаткова. Ад далейшай працы над праектам адмовіліся."
+"В конце 1940 года итальянская армия впервые столкнулась с британским Cruiser"
+" Tank Mk.IV и конструкторы страны заинтересовались концепцией быстроходного "
+"танка. Изначально предполагалось создать низкую боевую машину с максимальной"
+" толщиной брони 30 мм, массой 13 тонн и типовым для итальянской техники "
+"вооружением. Мотор мощностью 250 л. с. должен был обеспечить максимальную "
+"скорость до 55 км/ч. Постепенно росла масса и длина танка. В итоге "
+"получилась достаточно приземистая машина высотой 2 метра. До полноценных "
+"испытаний не дошло: к середине 1942 года 30-мм брони было уже недостаточно. "
+"От дальнейших работ над проектом отказались."
 
 msgid "It29_Carro_Celere_Sahariano_long_special"
 msgstr ""
@@ -860,6 +884,9 @@ msgstr "MTU 873"
 msgid "MTU_MB_837_Ba_500A"
 msgstr "MTU MB Ba 500A"
 
+msgid "MTU_MB_837_Ba_500A_ISP"
+msgstr "MTU MB Ba 500A"
+
 msgid "MTU_MB_838_Ca_M_500"
 msgstr "MTU MB 838 CaM 500"
 
@@ -900,6 +927,9 @@ msgid "RV_4G"
 msgstr "RV 4"
 
 msgid "RV_4_213_V"
+msgstr "RV-4/213/V"
+
+msgid "RV_4_213_V_ISP"
 msgstr "RV-4/213/V"
 
 msgid "R_19"
@@ -1047,6 +1077,9 @@ msgid "Turret_1_It21_Lion"
 msgstr "Lion"
 
 msgid "Turret_1_It23_CC_3"
+msgstr "CC 3"
+
+msgid "Turret_1_It23_CC_3_ISP"
 msgstr "CC 3"
 
 msgid "Turret_1_It24_Controcarro_1_Mk2"
@@ -1304,13 +1337,25 @@ msgstr "127 mm OTO Melara"
 msgid "_130mm_AP_Mark_46"
 msgstr "c.p. 130/45 Mk. 46"
 
+msgid "_130mm_AP_Mark_46_ISP"
+msgstr "c.p. 130/45 Mk. 46"
+
 msgid "_130mm_Cannone_da_130_45"
+msgstr "Cannone da 130/45"
+
+msgid "_130mm_Cannone_da_130_45_ISP"
 msgstr "Cannone da 130/45"
 
 msgid "_130mm_HEAT_Mark_71"
 msgstr "c.c. 130/45 Mk. 71"
 
+msgid "_130mm_HEAT_Mark_71_ISP"
+msgstr "c.c. 130/45 Mk. 71"
+
 msgid "_130mm_HE_Mark_80"
+msgstr "a.e. 130/45 Mk. 80"
+
+msgid "_130mm_HE_Mark_80_ISP"
 msgstr "a.e. 130/45 Mk. 80"
 
 msgid "_20mm_c_p_20_138_B"

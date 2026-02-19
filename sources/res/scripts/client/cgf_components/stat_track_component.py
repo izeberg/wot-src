@@ -22,6 +22,7 @@ class StatTrackNumberComponent(object):
 @autoregister(presentInAllWorlds=True)
 class StatTrackComponentManager(CGF.ComponentManager):
     _MAX_DIGIT = '9'
+    _DARK_ZERO = '*'
 
     def __init__(self, *args):
         super(StatTrackComponentManager, self).__init__(*args)
@@ -120,8 +121,14 @@ class StatTrackComponentManager(CGF.ComponentManager):
     def __updateComponentCounter(component, counterValue):
         if component.decalComponent is None or component.decalComponent() is None:
             return
+        mainKillDigits = False
         for i in xrange(0, len(counterValue)):
-            component.decalComponent().setCounterStickerValue(i, counterValue[i])
+            mainKillDigits = mainKillDigits or int(counterValue[i]) > 0
+            if mainKillDigits:
+                value = counterValue[i]
+            else:
+                value = StatTrackComponentManager._DARK_ZERO
+            component.decalComponent().setCounterStickerValue(i, value)
 
         return
 

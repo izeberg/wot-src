@@ -15,7 +15,7 @@ msgid "banner/info/battlesEnd"
 msgstr "Баі завершаны"
 
 msgid "banner/info/battlesNow"
-msgstr "Бои сейчас"
+msgstr "Баі зараз"
 
 msgid "banner/info/battlesToday"
 msgstr "Баі сёння"
@@ -33,19 +33,19 @@ msgid "banner/seasonDate/seasonNotStarted"
 msgstr "З %(day)s %(month)s"
 
 msgid "banner/timeLeft/hours"
-msgstr "%(hour)s гадз %(min)s хв"
+msgstr "%(hour)s ч. %(min)s мин."
 
 msgid "banner/timeLeft/min"
-msgstr "%(min)s хв"
+msgstr "%(min)s мин."
 
 msgid "banner/title"
 msgstr "КЛАНАВЫ СЕЗОН"
 
 msgid "banner/type/gm"
-msgstr "Этап {stage}. Глобальная карта"
+msgstr "Этап {stage}: Глабальная карта"
 
 msgid "banner/type/maneuvers"
-msgstr "Этап {stage}. Спринт"
+msgstr "Этап {stage}: Спрынт"
 
 msgid "clan/header/chatChannelBtn"
 msgstr "Чат клана"
@@ -192,7 +192,7 @@ msgid "clanInvitesWindow/status/accepted"
 msgstr "Прынята"
 
 msgid "clanInvitesWindow/status/daysLeft"
-msgstr "%(days)d сут на разгляд"
+msgstr "%(days)d д. на ответ"
 
 msgid "clanInvitesWindow/status/declined"
 msgstr "Адхілена"
@@ -204,10 +204,10 @@ msgid "clanInvitesWindow/status/expired"
 msgstr "Пратэрмінавана"
 
 msgid "clanInvitesWindow/status/hoursLeft"
-msgstr "%(hours)d гадз на разгляд"
+msgstr "%(hours)d ч. на ответ"
 
 msgid "clanInvitesWindow/status/minutesLeft"
-msgstr "%(min)d хв на разгляд"
+msgstr "%(min)d мин. на ответ"
 
 msgid "clanInvitesWindow/status/sent"
 msgstr "Адпраўлена"

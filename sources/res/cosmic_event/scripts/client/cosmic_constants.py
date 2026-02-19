@@ -1,6 +1,6 @@
 from enum import Enum
 COSMIC_BANNER_ENTRY_POINT = 'CosmicBannerEntryPoint'
-COSMIC_LOOTBOX_CATEGORY_25 = 'cosmic_2025'
+COSMIC_LOOTBOX_CATEGORY = 'cosmic_2026'
 
 class EVENT_STATES(Enum):
     START = 0

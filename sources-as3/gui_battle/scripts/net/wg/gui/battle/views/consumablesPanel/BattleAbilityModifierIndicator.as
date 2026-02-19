@@ -15,8 +15,6 @@ package net.wg.gui.battle.views.consumablesPanel
    public class BattleAbilityModifierIndicator extends BattleUIComponent
    {
       
-      private static const SLOT_VALUE_OFFSET_WITHOUT_TYPE:int = -11;
-      
       private static const SLOT_FRAME_LABEL:String = "slot_";
       
       private static const SLOT_FRAME_SMALL_RESOLUTION_POSTFIX:String = "_small";
@@ -54,8 +52,6 @@ package net.wg.gui.battle.views.consumablesPanel
       
       private var _slotsGlows:Vector.<MovieClip>;
       
-      private var _slotsModifierValueIcon:MovieClip = null;
-      
       private var _slotsModifierValueTf:TextField = null;
       
       private var _modifierValue:int = 0;
@@ -74,27 +70,26 @@ package net.wg.gui.battle.views.consumablesPanel
       
       private var _thisInitialY:int = 0;
       
-      private var _slotsModifierTypeInitialY:int = 0;
+      private var _slotsModifierValueInitialY:int = 0;
       
       private var _thisTween:Tween = null;
       
       private var _slotsGlowTween:Tween = null;
       
-      private var _slotsModifierTypeTween:Tween = null;
+      private var _slotsModifierValuePositionTween:Tween = null;
       
-      private var _modifierValueTween:Tween = null;
+      private var _modifierValueCounterTween:Tween = null;
       
       public function BattleAbilityModifierIndicator()
       {
          this._scheduler = App.utils.scheduler;
          super();
          this._thisInitialY = this.y;
-         this._slotsModifierTypeInitialY = this.slotsModifierType.y;
-         this.slotsModifierType.y = this._slotsModifierTypeInitialY + HIDE_TWEEN_Y_OFFSET;
+         this._slotsModifierValueInitialY = this.slotsModifierValue.y;
+         this.slotsModifierValue.y = this._slotsModifierValueInitialY + HIDE_TWEEN_Y_OFFSET;
          this.slotsModifierType.tf.autoSize = TextFieldAutoSize.LEFT;
-         this._slotsModifierValueIcon = this.slotsModifierValue.icon;
          this._slotsModifierValueTf = this.slotsModifierValue.tf;
-         this.slotsGlowContainer.alpha = this.slotsModifierType.alpha = Values.ZERO;
+         this.slotsGlowContainer.alpha = this.slotsModifierValue.alpha = Values.ZERO;
          this.hideThis();
       }
       
@@ -121,18 +116,17 @@ package net.wg.gui.battle.views.consumablesPanel
          this.hitMc.removeEventListener(MouseEvent.MOUSE_OUT,this.onMouseOutHandler);
          this.hitMc = null;
          this._scheduler.cancelTask(this.hideSlotsGlow);
-         this._scheduler.cancelTask(this.hideSlotsModifierType);
+         this._scheduler.cancelTask(this.hideSlotsModifierValue);
          this._scheduler = null;
          this.clearThisTween();
-         this.clearSlotsModifierTypeTween();
+         this.clearSlotsModifierValuePositionTween();
+         this.clearModifierValueCounterTween();
          this.clearSlotsGlowTween();
-         this.clearModifierValueTween();
          if(this._slotsGlows)
          {
             this._slotsGlows.splice(0,this._slotsGlows.length);
             this._slotsGlows = null;
          }
-         this._slotsModifierValueIcon = null;
          this._slotsModifierValueTf = null;
          this.slotsModifierType = null;
          this.slotsModifierValue = null;
@@ -164,11 +158,6 @@ package net.wg.gui.battle.views.consumablesPanel
          this.bg.x = this.shellPadding * this.shellSlots - this.bg.width >> 1;
          this.slotsModifierType.x = this.shellPadding * this.shellSlots - this.slotsModifierType.width >> 1;
          this.slotsModifierValue.x = this.shellPadding * this.shellSlots - this.slotsModifierValue.width >> 1;
-         this._slotsModifierValueIcon.visible = this.shellSlots > 1;
-         if(!this._slotsModifierValueIcon.visible)
-         {
-            this.slotsModifierValue.x += SLOT_VALUE_OFFSET_WITHOUT_TYPE;
-         }
          if(!this._slotsGlows)
          {
             this._slotsGlows = new Vector.<MovieClip>();
@@ -208,21 +197,21 @@ package net.wg.gui.battle.views.consumablesPanel
          }
       }
       
-      private function clearSlotsModifierTypeTween() : void
+      private function clearSlotsModifierValuePositionTween() : void
       {
-         if(this._slotsModifierTypeTween)
+         if(this._slotsModifierValuePositionTween)
          {
-            this._slotsModifierTypeTween.dispose();
-            this._slotsModifierTypeTween = null;
+            this._slotsModifierValuePositionTween.dispose();
+            this._slotsModifierValuePositionTween = null;
          }
       }
       
-      private function clearModifierValueTween() : void
+      private function clearModifierValueCounterTween() : void
       {
-         if(this._modifierValueTween)
+         if(this._modifierValueCounterTween)
          {
-            this._modifierValueTween.dispose();
-            this._modifierValueTween = null;
+            this._modifierValueCounterTween.dispose();
+            this._modifierValueCounterTween = null;
          }
       }
       
@@ -259,12 +248,12 @@ package net.wg.gui.battle.views.consumablesPanel
          }
          else
          {
-            this._scheduler.cancelTask(this.hideSlotsModifierType);
+            this._scheduler.cancelTask(this.hideSlotsModifierValue);
             this.slotsGlowContainer.alpha = Values.ZERO;
          }
          if(!this.hasHover)
          {
-            this.hideSlotsModifierType(param1);
+            this.hideSlotsModifierValue(param1);
          }
       }
       
@@ -272,7 +261,6 @@ package net.wg.gui.battle.views.consumablesPanel
       {
          this.clearThisTween();
          this.alpha = Values.ZERO;
-         this.visible = false;
       }
       
       private function updateSlotsModifierValueText() : void
@@ -282,11 +270,10 @@ package net.wg.gui.battle.views.consumablesPanel
       
       public function show(param1:int, param2:Boolean = false) : void
       {
-         if(!this.visible)
+         this.clearThisTween();
+         if(this.alpha < Values.DEFAULT_ALPHA)
          {
             this.y = this._thisInitialY;
-            this.visible = true;
-            this.clearThisTween();
             if(param2 || !this._isExtendedAnim)
             {
                this.alpha = Values.DEFAULT_ALPHA;
@@ -296,18 +283,17 @@ package net.wg.gui.battle.views.consumablesPanel
                this._thisTween = new Tween(THIS_TWEEN_TIME,this,{"alpha":Values.DEFAULT_ALPHA},{"ease":Cubic.easeOut});
             }
          }
-         this.clearModifierValueTween();
+         this.clearModifierValueCounterTween();
          if(param2 || !this._isExtendedAnim)
          {
             this.modifierValue = param1;
          }
          else
          {
-            this._modifierValueTween = new Tween(MODIFIER_VALUE_TWEEN_TIME,this,{"modifierValue":param1});
+            this._modifierValueCounterTween = new Tween(MODIFIER_VALUE_TWEEN_TIME,this,{"modifierValue":param1});
          }
          validateNow();
          this.showSlotsGlow();
-         this.showSlotsModifierType();
       }
       
       public function hide(param1:Boolean = false) : void
@@ -329,31 +315,31 @@ package net.wg.gui.battle.views.consumablesPanel
          }
       }
       
-      public function showSlotsModifierType() : void
+      public function showSlotsModifierValue() : void
       {
-         this.clearSlotsModifierTypeTween();
+         this.clearSlotsModifierValuePositionTween();
          if(this._isExtendedAnim)
          {
-            this._slotsModifierTypeTween = new Tween(SLOTS_GLOW_TWEEN_TIME,this.slotsModifierType,{
+            this._slotsModifierValuePositionTween = new Tween(SLOTS_GLOW_TWEEN_TIME,this.slotsModifierValue,{
                "alpha":Values.DEFAULT_ALPHA,
-               "y":this._slotsModifierTypeInitialY
+               "y":this._slotsModifierValueInitialY
             },{"ease":Cubic.easeOut});
          }
          else
          {
-            this.slotsModifierType.alpha = Values.DEFAULT_ALPHA;
-            this.slotsModifierType.y = this._slotsModifierTypeInitialY;
+            this.slotsModifierValue.alpha = Values.DEFAULT_ALPHA;
+            this.slotsModifierValue.y = this._slotsModifierValueInitialY;
          }
       }
       
-      public function hideSlotsModifierType(param1:Boolean = true) : void
+      public function hideSlotsModifierValue(param1:Boolean = true) : void
       {
-         this.clearSlotsModifierTypeTween();
+         this.clearSlotsModifierValuePositionTween();
          if(this._isExtendedAnim)
          {
-            this._slotsModifierTypeTween = new Tween(SLOTS_GLOW_TWEEN_TIME,this.slotsModifierType,{
+            this._slotsModifierValuePositionTween = new Tween(SLOTS_GLOW_TWEEN_TIME,this.slotsModifierValue,{
                "alpha":Values.ZERO,
-               "y":this._slotsModifierTypeInitialY + HIDE_TWEEN_Y_OFFSET
+               "y":this._slotsModifierValueInitialY + HIDE_TWEEN_Y_OFFSET
             },{
                "ease":Cubic.easeOut,
                "delay":(!!param1 ? SLOTS_GLOW_TWEEN_DELAY : Values.ZERO)
@@ -361,13 +347,13 @@ package net.wg.gui.battle.views.consumablesPanel
          }
          else if(param1)
          {
-            this._scheduler.scheduleTask(this.hideSlotsModifierType,SLOTS_GLOW_TASK_DELAY,false);
+            this._scheduler.scheduleTask(this.hideSlotsModifierValue,SLOTS_GLOW_TASK_DELAY,false);
          }
          else
          {
-            this._scheduler.cancelTask(this.hideSlotsModifierType);
-            this.slotsModifierType.alpha = Values.ZERO;
-            this.slotsModifierType.y = this._slotsModifierTypeInitialY + HIDE_TWEEN_Y_OFFSET;
+            this._scheduler.cancelTask(this.hideSlotsModifierValue);
+            this.slotsModifierValue.alpha = Values.ZERO;
+            this.slotsModifierValue.y = this._slotsModifierValueInitialY + HIDE_TWEEN_Y_OFFSET;
          }
       }
       
@@ -385,11 +371,11 @@ package net.wg.gui.battle.views.consumablesPanel
          this._hasHover = param1;
          if(this._hasHover)
          {
-            this.showSlotsModifierType();
+            this.showSlotsModifierValue();
          }
          else
          {
-            this.hideSlotsModifierType(false);
+            this.hideSlotsModifierValue(false);
          }
       }
       

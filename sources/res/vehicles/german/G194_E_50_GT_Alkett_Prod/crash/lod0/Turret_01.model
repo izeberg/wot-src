@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<visibilityBox>
+		<min>-1.330782 -0.000022 -2.206963</min>
+		<max>1.330783 1.144704 1.614518</max>
+	</visibilityBox>
+	<parent>vehicles/german/G194_E_50_GT_Alkett_Prod/crash/lod1/Turret_01</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/german/G194_E_50_GT_Alkett_Prod/crash/lod0/Turret_01</nodefullVisual>
+</root>

@@ -22,21 +22,21 @@ msgstr "За тыдзень"
 
 msgid "battleModifiers/body"
 msgstr ""
-"Изменяет некоторые параметры всей техники, участвующей в сражениях Укрепрайона. Работает в следующих режимах: %(battleModifiersQueue)s.\n"
+"Изменяет некоторые параметры всей техники, участвующей в сражениях Укрепрайона. Работает в следующих режимах: %(battleModifiersQueue)s.\n"
 "\n"
-"Чтобы увидеть актуальные значения, вступите в соответствующий отряд или создайте его."
+"Чтобы увидеть актуальные значения, вступите в соответствующий отряд или создайте его."
 
 msgid "battleModifiers/fortBattle"
-msgstr "Наступления"
+msgstr "Наступленні"
 
 msgid "battleModifiers/sortie"
-msgstr "Вылазки %(level)s"
+msgstr "Вылазкі %(level)s"
 
 msgid "battleModifiers/title"
-msgstr "Модификатор Укрепрайона"
+msgstr "Мадыфікатар Умацаванага раёна"
 
 msgid "battleModifiersGM/title"
-msgstr "Модификатор Глобальной карты"
+msgstr "Мадыфікатар Глабальнай карты"
 
 msgid "battleQueue/clanPosition"
 msgstr "Пазіцыя: %(position)s"
@@ -65,7 +65,7 @@ msgstr ""
 "перайдзіце ў свой рэгіён."
 
 msgid "fortBattleRoom/freezeJournal"
-msgstr "К разморозке техники"
+msgstr "К разморозке техники"
 
 msgid "fortBattleRoom/listHeader/clanPlayers"
 msgstr "Члены клана"
@@ -420,10 +420,10 @@ msgid "strongholdtooltips/fortTitle"
 msgstr "Наступленне з %(direction)s плацдарма"
 
 msgid "strongholdtooltips/hours"
-msgstr "ч."
+msgstr "гадз."
 
 msgid "strongholdtooltips/minuts"
-msgstr "мин."
+msgstr "хв."
 
 msgid "strongholdtooltips/sortieTitle"
 msgstr "Вылазка ў %(level)s дывізіёне"
