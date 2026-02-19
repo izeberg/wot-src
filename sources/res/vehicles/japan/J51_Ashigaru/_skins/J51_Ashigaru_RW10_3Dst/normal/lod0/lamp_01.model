@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodelessVisual>vehicles/japan/J51_Ashigaru/_skins/J51_Ashigaru_RW10_3Dst/normal/lod0/lamp_01</nodelessVisual>
+	<parent>vehicles/japan/J51_Ashigaru/_skins/J51_Ashigaru_RW10_3Dst/normal/lod1/lamp_01</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.495043 0.000004 -3.025067</min>
+		<max>1.196157 3.011171 1.811815</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

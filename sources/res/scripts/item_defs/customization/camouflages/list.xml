@@ -443576,6 +443576,147 @@
 	</itemGroup>
 	<itemGroup>
 		<userString>#vehicle_customization:camouflage/opaque</userString>
+		<season>summer</season>
+		<historical>0</historical>
+		<priceGroup>camouflages 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<include>
+				<vehicles>japan:J51_Ashigaru</vehicles>
+			</include>
+		</vehicleFilter>
+		<camouflage>
+			<id>1075</id>
+			<texture>vehicles/russian/Camouflage/J51_Ashigaru_RW10_3Dst.dds</texture>
+			<description>#vehicle_customization:camouflage/empty/description</description>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<userString>#vehicle_customization:camouflage/J51_Ashigaru_RW10_3Dst/label</userString>
+			<tags>fullRGB vehicleBound hiddenInUI</tags>
+			<invisibilityFactor>1</invisibilityFactor>
+			<palettes>
+				<palette>
+					<c0>64 64 64 255</c0>
+					<c1>102 83 70 255</c1>
+					<c2>89 99 76 255</c2>
+					<c3>143 136 107 255</c3>
+				</palette>
+			</palettes>
+			<rotation>
+				<HULL>-2.549053</HULL>
+				<TURRET>-2.549053</TURRET>
+				<GUN>-2.549053</GUN>
+			</rotation>
+			<tilingSettings>
+				<type>relativewithfactor</type>
+				<factor>
+					2.05 2.05
+					<!--BW_String-->
+				</factor>
+				<offset>
+					0.6 -3.01
+					<!--BW_String-->
+				</offset>
+			</tilingSettings>
+		</camouflage>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:camouflage/opaque</userString>
+		<season>desert</season>
+		<historical>0</historical>
+		<priceGroup>camouflages 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<include>
+				<vehicles>japan:J51_Ashigaru</vehicles>
+			</include>
+		</vehicleFilter>
+		<camouflage>
+			<id>1076</id>
+			<texture>vehicles/russian/Camouflage/J51_Ashigaru_RW10_3Dst.dds</texture>
+			<description>#vehicle_customization:camouflage/empty/description</description>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<userString>#vehicle_customization:camouflage/J51_Ashigaru_RW10_3Dst/label</userString>
+			<tags>fullRGB vehicleBound hiddenInUI</tags>
+			<invisibilityFactor>1</invisibilityFactor>
+			<palettes>
+				<palette>
+					<c0>84 82 78 255</c0>
+					<c1>120 108 97 255</c1>
+					<c2>135 140 111 255</c2>
+					<c3>179 159 134 255</c3>
+				</palette>
+			</palettes>
+			<rotation>
+				<HULL>-2.549053</HULL>
+				<TURRET>-2.549053</TURRET>
+				<GUN>-2.549053</GUN>
+			</rotation>
+			<tilingSettings>
+				<type>relativewithfactor</type>
+				<factor>
+					2.05 2.05
+					<!--BW_String-->
+				</factor>
+				<offset>
+					0.6 -3.01
+					<!--BW_String-->
+				</offset>
+			</tilingSettings>
+		</camouflage>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:camouflage/opaque</userString>
+		<season>winter</season>
+		<historical>0</historical>
+		<priceGroup>camouflages 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<include>
+				<vehicles>japan:J51_Ashigaru</vehicles>
+			</include>
+		</vehicleFilter>
+		<camouflage>
+			<id>1077</id>
+			<texture>vehicles/russian/Camouflage/J51_Ashigaru_RW10_3Dst.dds</texture>
+			<description>#vehicle_customization:camouflage/empty/description</description>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<userString>#vehicle_customization:camouflage/J51_Ashigaru_RW10_3Dst/label</userString>
+			<tags>fullRGB vehicleBound hiddenInUI</tags>
+			<invisibilityFactor>1</invisibilityFactor>
+			<palettes>
+				<palette>
+					<c0>74 84 94 255</c0>
+					<c1>107 117 97 255</c1>
+					<c2>125 127 128 255</c2>
+					<c3>160 165 168 255</c3>
+				</palette>
+			</palettes>
+			<rotation>
+				<HULL>-2.549053</HULL>
+				<TURRET>-2.549053</TURRET>
+				<GUN>-2.549053</GUN>
+			</rotation>
+			<tilingSettings>
+				<type>relativewithfactor</type>
+				<factor>
+					2.05 2.05
+					<!--BW_String-->
+				</factor>
+				<offset>
+					0.6 -3.01
+					<!--BW_String-->
+				</offset>
+			</tilingSettings>
+		</camouflage>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:camouflage/opaque</userString>
 		<season>winter</season>
 		<historical>1</historical>
 		<priceGroup>camouflages 50g IGR notInShop</priceGroup>

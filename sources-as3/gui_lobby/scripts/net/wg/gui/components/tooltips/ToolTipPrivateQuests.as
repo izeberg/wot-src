@@ -54,6 +54,8 @@ package net.wg.gui.components.tooltips
       
       override protected function redraw() : void
       {
+         var _loc6_:Number = NaN;
+         var _loc8_:PrivateQuestsVO = null;
          var _loc9_:ToolTipBlockVO = null;
          var _loc10_:String = null;
          var _loc11_:String = null;
@@ -65,10 +67,10 @@ package net.wg.gui.components.tooltips
          var _loc3_:uint = 0;
          var _loc4_:uint = 0;
          var _loc5_:Number = 300;
-         var _loc6_:Number = bgShadowMargin.left + contentMargin.left;
+         _loc6_ = bgShadowMargin.left + contentMargin.left;
          var _loc7_:ILocale = App.utils.locale;
          App.utils.asserter.assertNotNull(_loc7_,"App.utils.locale is Null");
-         var _loc8_:PrivateQuestsVO = new PrivateQuestsVO(_data);
+         _loc8_ = new PrivateQuestsVO(_data);
          this.headerTF.autoSize = TextFieldAutoSize.LEFT;
          this.headerTF.htmlText = Utils.instance.htmlWrapper(_loc8_.name,Utils.instance.COLOR_HEADER,18,"$TitleFont");
          this.headerTF.width = this.headerTF.textWidth + 5 | 0;
