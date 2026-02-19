@@ -1127,7 +1127,7 @@
 		<isTracer>true</isTracer>
 		<effects>mainHighExplosive</effects>
 		<damage>
-			<armor>440</armor>
+			<armor>410</armor>
 			<devices>135</devices>
 		</damage>
 		<armorSpalls>
@@ -1137,7 +1137,7 @@
 			</impactRadius>
 			<coneAngle>90</coneAngle>
 			<damage>
-				<armor>440</armor>
+				<armor>205</armor>
 				<devices>70</devices>
 			</damage>
 		</armorSpalls>

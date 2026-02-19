@@ -10,7 +10,7 @@
 	<postProgressionTree>role_MT_universal</postProgressionTree>
 	<customRoleSlotOptions>3 5</customRoleSlotOptions>
 	<speedLimits>
-		<forward>65</forward>
+		<forward>60</forward>
 		<backward>20</backward>
 	</speedLimits>
 	<invisibility>
@@ -101,7 +101,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>21925</weight>
-		<maxHealth>1250</maxHealth>
+		<maxHealth>1150</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>210</maxHealth>
 			<maxRegenHealth>140</maxRegenHealth>
@@ -2622,7 +2622,7 @@
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
 					<shotDispersionRadius>
-						0.37
+						0.49
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>11</reloadTime>
@@ -3556,7 +3556,7 @@
 			<engines>
 				<GTD_1GV8>
 					<smplEnginePower>1040</smplEnginePower>
-					<smplFwMaxSpeed>65</smplFwMaxSpeed>
+					<smplFwMaxSpeed>60</smplFwMaxSpeed>
 				</GTD_1GV8>
 			</engines>
 			<chassis>

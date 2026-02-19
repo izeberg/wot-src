@@ -2,8 +2,7 @@
 <root>
 	<xmlns:xmlref>http://bwt/xmlref</xmlns:xmlref>
 	<crew>
-		<commander>radioman
-			loader</commander>
+		<commander>radioman</commander>
 		<gunner>loader</gunner>
 		<driver/>
 	</crew>
@@ -2632,7 +2631,7 @@
 					</clip>
 					<autoShoot>
 						<shotDispersionPerSec>
-							1.5
+							1.0
 							<!--BW_String-->
 						</shotDispersionPerSec>
 						<maxShotDispersion>7</maxShotDispersion>

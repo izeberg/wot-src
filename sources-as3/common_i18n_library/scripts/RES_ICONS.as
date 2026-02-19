@@ -24797,6 +24797,8 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_STYLE_3D:String = "../maps/icons/quests/bonuses/big/style_3d.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_BIG_STYLE_3D_31013:String = "../maps/icons/quests/bonuses/big/style_3d_31013.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_STYLE_PROGRESS_31315_1:String = "../maps/icons/quests/bonuses/big/style_progress_31315_1.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_STYLE_PROGRESS_31315_2:String = "../maps/icons/quests/bonuses/big/style_progress_31315_2.png";
@@ -28098,6 +28100,8 @@ package
       public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_STYLE:String = "../maps/icons/quests/bonuses/small/style.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_STYLE_3D:String = "../maps/icons/quests/bonuses/small/style_3d.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_STYLE_3D_31013:String = "../maps/icons/quests/bonuses/small/style_3d_31013.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_TACTICALTRAINING:String = "../maps/icons/quests/bonuses/small/tacticalTraining.png";
       
