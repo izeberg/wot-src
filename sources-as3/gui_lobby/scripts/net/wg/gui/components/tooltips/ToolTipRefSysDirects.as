@@ -172,7 +172,8 @@ package net.wg.gui.components.tooltips
       
       override protected function updatePositions() : void
       {
-         var _loc1_:int = !this._model.infoDirection.length ? int(DIR_OFFSET) : int(0);
+         var _loc1_:int = 0;
+         _loc1_ = !this._model.infoDirection.length ? int(DIR_OFFSET) : int(0);
          this._infoMapNameTF.y -= _loc1_;
          this._minimap.y += this._infoMapNameTF.textHeight - _loc1_;
          var _loc2_:int = (!this._model.isMapEnabled ? MAP_HEIGHT : 0) - this._infoMapNameTF.textHeight + _loc1_;

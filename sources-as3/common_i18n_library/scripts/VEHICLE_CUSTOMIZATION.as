@@ -4457,6 +4457,8 @@ package
       
       public static const CAMOUFLAGE_JPN_VOLUMETRIC_LABEL:String = "#vehicle_customization:camouflage/jpn_volumetric/label";
       
+      public static const CAMOUFLAGE_J51_ASHIGARU_RW10_3DST_LABEL:String = "#vehicle_customization:camouflage/J51_Ashigaru_RW10_3Dst/label";
+      
       public static const CAMOUFLAGE_LOOTBOXES_LUNAR_1_LABEL:String = "#vehicle_customization:camouflage/lootboxes_lunar_1/label";
       
       public static const CAMOUFLAGE_LOOTBOXES_LUNAR_2_LABEL:String = "#vehicle_customization:camouflage/lootboxes_lunar_2/label";
@@ -15458,6 +15460,10 @@ package
       public static const SPECIAL_STYLE_WELL_DESERVED_REWARD_2025_DESC:String = "#vehicle_customization:special_style/well_deserved_reward_2025_desc";
       
       public static const SPECIAL_STYLE_WELL_DESERVED_REWARD_2025_DESC_LONG:String = "#vehicle_customization:special_style/well_deserved_reward_2025_desc/long";
+      
+      public static const SPECIAL_STYLE_J51_ASHIGARU_RW10_3DST:String = "#vehicle_customization:special_style/J51_Ashigaru_RW10_3Dst";
+      
+      public static const SPECIAL_STYLE_J51_ASHIGARU_RW10_3DST_DESC_LONG:String = "#vehicle_customization:special_style/J51_Ashigaru_RW10_3Dst_desc/long";
       
       public static const SPECIAL_STYLE_R172_OBJECT_752_K_3DST:String = "#vehicle_customization:special_style/R172_Object_752_K_3Dst";
       

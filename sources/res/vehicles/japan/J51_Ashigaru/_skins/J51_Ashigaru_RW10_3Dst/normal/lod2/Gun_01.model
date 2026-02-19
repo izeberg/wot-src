@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-0.431011 -0.321593 -0.168767</min>
+		<max>0.429794 0.563422 4.569461</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/japan/J51_Ashigaru/_skins/J51_Ashigaru_RW10_3Dst/normal/lod2/Gun_01</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/japan/J51_Ashigaru/_skins/J51_Ashigaru_RW10_3Dst/normal/lod3/Gun_01</parent>
+	<extent>96.000000</extent>
+</root>

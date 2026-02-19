@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.698179 -0.635220 -3.936389</min>
+		<max>1.587900 0.858601 2.488448</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/japan/J51_Ashigaru/_skins/J51_Ashigaru_RW10_3Dst/normal/lod1/Hull</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/japan/J51_Ashigaru/_skins/J51_Ashigaru_RW10_3Dst/normal/lod2/Hull</parent>
+	<extent>64.000000</extent>
+</root>
