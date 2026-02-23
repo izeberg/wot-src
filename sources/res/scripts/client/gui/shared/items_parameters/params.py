@@ -402,23 +402,11 @@ class VehicleParams(ParameterBase):
 
     @property
     def circularVisionRadius(self):
-        baseCircularVisionRadius = items_utils.getCircularVisionRadius(self._itemDescr, self.__factors)
-        skillName = 'radioman_finder'
-        argName = 'vehicleCircularVisionRadius'
-        additionalFactor = self.__getFactorValueFromSkill(skillName, argName)
-        result = baseCircularVisionRadius * additionalFactor
-        if self.__hasUnsupportedSwitchMode():
-            visRadiusSiegeVal = items_utils.getCircularVisionRadius(self._itemDescr.siegeVehicleDescr, self.__factors)
-            return (
-             result, visRadiusSiegeVal * additionalFactor)
-        return (
-         result,)
+        return self.__calculateCircularVisionRadius()
 
     @property
     def circularVisionRadiusSituational(self):
-        skillName = 'radioman_threatSearch'
-        argName = 'circularVisionRadius'
-        return self.__calculateCircularVisionRadius(skillName, argName)
+        return self.__calculateCircularVisionRadius(isSituational=True)
 
     @property
     def radioDistance(self):
@@ -1067,9 +1055,17 @@ class VehicleParams(ParameterBase):
              repairChassisKpi))
         return chassisRepairTime / repairFactor / repairKpi / repairChassisKpi / driverSuspensionRepairFactor
 
-    def __calculateCircularVisionRadius(self, skillName, argName):
+    def __calculateCircularVisionRadius(self, isSituational=False):
         baseCircularVisionRadius = items_utils.getCircularVisionRadius(self._itemDescr, self.__factors)
-        additionalFactor = self.__getFactorValueFromSkill(skillName, argName)
+        skillName = 'radioman_finder'
+        argName = 'vehicleCircularVisionRadius'
+        finderFactor = self.__getFactorValueFromSkill(skillName, argName)
+        threatSearchFactor = 1
+        if isSituational:
+            skillName = 'radioman_threatSearch'
+            argName = 'circularVisionRadius'
+            threatSearchFactor = self.__getFactorValueFromSkill(skillName, argName)
+        additionalFactor = self.__calcParamWithSkillFactorAmp(1, (finderFactor, threatSearchFactor))
         result = baseCircularVisionRadius * additionalFactor
         if self.__hasUnsupportedSwitchMode():
             visRadiusSiegeVal = items_utils.getCircularVisionRadius(self._itemDescr.siegeVehicleDescr, self.__factors)

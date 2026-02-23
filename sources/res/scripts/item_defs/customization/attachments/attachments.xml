@@ -757,6 +757,18 @@
 			<attachmentLogic>prefab</attachmentLogic>
 		</attachment>
 		<attachment>
+			<id>169</id>
+			<name>J51_Ashigaru_RW10_3Dst_Lamp</name>
+			<modelName>vehicles/japan/J51_Ashigaru/_skins/J51_Ashigaru_RW10_3Dst/lamp_switcher.prefab</modelName>
+			<attachmentLogic>prefab</attachmentLogic>
+		</attachment>
+		<attachment>
+			<id>170</id>
+			<name>J51_Ashigaru_RW10_3Dst_GunNum</name>
+			<modelName>vehicles/japan/J51_Ashigaru/_skins/J51_Ashigaru_RW10_3Dst/gun_number_switcher.prefab</modelName>
+			<attachmentLogic>prefab</attachmentLogic>
+		</attachment>
+		<attachment>
 			<id>172</id>
 			<name>A144_M_VI_Y_CFE_R_3Dst</name>
 			<modelName>particles/Tank/customization/A144_M_VI_Y_CFE_R_3Dst/A144_M_VI_Y_CFE_R_3Dst.prefab</modelName>

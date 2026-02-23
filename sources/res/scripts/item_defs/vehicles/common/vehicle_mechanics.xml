@@ -645,8 +645,7 @@
 						<template>vehicle_hub.characteristics.templates.upTo</template>
 					</param>
 					<param>
-						1.5
-						<!--BW_String-->
+						2
 						<name>coolingDelay</name>
 					</param>
 					<param>
@@ -683,8 +682,7 @@
 						<template>vehicle_hub.characteristics.templates.upTo</template>
 					</param>
 					<param>
-						1.5
-						<!--BW_String-->
+						2
 						<name>coolingDelay</name>
 					</param>
 					<param>
@@ -721,7 +719,8 @@
 						<template>vehicle_hub.characteristics.templates.upTo</template>
 					</param>
 					<param>
-						1
+						1.5
+						<!--BW_String-->
 						<name>coolingDelay</name>
 						<template>vehicle_hub.characteristics.templates.upTo</template>
 					</param>
