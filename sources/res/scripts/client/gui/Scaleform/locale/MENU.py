@@ -1848,6 +1848,7 @@ class MENU(object):
     BONUSTYPE_32 = '#menu:bonusType/32'
     BONUSTYPE_37 = '#menu:bonusType/37'
     BONUSTYPE_38 = '#menu:bonusType/38'
+    BONUSTYPE_42 = '#menu:bonusType/42'
     BONUSTYPE_43 = '#menu:bonusType/43'
     BONUSTYPE_44 = '#menu:bonusType/44'
     BONUSTYPE_50 = '#menu:bonusType/50'

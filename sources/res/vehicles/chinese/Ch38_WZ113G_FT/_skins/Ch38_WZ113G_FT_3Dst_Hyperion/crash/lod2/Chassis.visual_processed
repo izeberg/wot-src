@@ -115,7 +115,7 @@
 						<Texture>vehicles/chinese/tracks/WZ113G_FT_3Dst_Hyperion_track_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>1.334614 0.535297 0.079484</groupOrigin>
+				<groupOrigin>1.334614 0.535297 0.079432</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -177,9 +177,9 @@
 	</renderSet>
 	<constraints/>
 	<boundingBox>
-		<min>-1.619871 -0.000001 -3.669075</min>
-		<max>1.619872 1.071714 3.510108</max>
+		<min>-1.619871 -0.000001 -3.669023</min>
+		<max>1.619872 1.071714 3.510159</max>
 	</boundingBox>
-	<geometrySize>59088</geometrySize>
-	<minUVDensity>1.764222</minUVDensity>
+	<geometrySize>55488</geometrySize>
+	<minUVDensity>0.882567</minUVDensity>
 </root>

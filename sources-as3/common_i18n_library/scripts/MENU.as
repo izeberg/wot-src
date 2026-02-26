@@ -3677,6 +3677,8 @@ package
       
       public static const BONUSTYPE_38:String = "#menu:bonusType/38";
       
+      public static const BONUSTYPE_42:String = "#menu:bonusType/42";
+      
       public static const BONUSTYPE_43:String = "#menu:bonusType/43";
       
       public static const BONUSTYPE_44:String = "#menu:bonusType/44";

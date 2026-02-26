@@ -88284,38 +88284,6 @@
 		</contours>
 		<contours>
 			<trimmingParams>
-				<textureName>particles/content_deferred/PFX_textures/eff_tex_flash.dds</textureName>
-				<columns>1</columns>
-				<rows>1</rows>
-				<uvLeft>0.000000</uvLeft>
-				<uvRight>1.000000</uvRight>
-				<uvBottom>0.000000</uvBottom>
-				<uvTop>1.000000</uvTop>
-				<alphaThreshold>1.000000</alphaThreshold>
-			</trimmingParams>
-			<contour>
-				<vertex>0.000000 0.874510</vertex>
-				<vertex>0.098039 1.000000</vertex>
-				<vertex>0.000000 0.054902</vertex>
-				<vertex>0.203922 1.000000</vertex>
-				<vertex>0.776471 0.054902</vertex>
-				<vertex>0.839216 0.894118</vertex>
-				<vertex>0.992157 0.400000</vertex>
-				<vertex>0.980392 0.678431</vertex>
-			</contour>
-			<contour>
-				<vertex>0.000000 0.874510</vertex>
-				<vertex>0.098039 1.000000</vertex>
-				<vertex>0.000000 0.054902</vertex>
-				<vertex>0.203922 1.000000</vertex>
-				<vertex>0.776471 0.054902</vertex>
-				<vertex>0.839216 0.894118</vertex>
-				<vertex>0.992157 0.400000</vertex>
-				<vertex>0.980392 0.678431</vertex>
-			</contour>
-		</contours>
-		<contours>
-			<trimmingParams>
 				<textureName>particles/content_deferred/PFX_textures/eff_tex_flash_2.dds</textureName>
 				<columns>1</columns>
 				<rows>1</rows>
@@ -196382,38 +196350,6 @@
 				<vertex>0.776471 0.223529</vertex>
 				<vertex>0.164706 0.133333</vertex>
 				<vertex>0.494118 0.007843</vertex>
-			</contour>
-		</contours>
-		<contours>
-			<trimmingParams>
-				<textureName>particles/content_forward/PFX_textures/eff_tex_flash.dds</textureName>
-				<columns>1</columns>
-				<rows>1</rows>
-				<uvLeft>0.000000</uvLeft>
-				<uvRight>1.000000</uvRight>
-				<uvBottom>0.000000</uvBottom>
-				<uvTop>1.000000</uvTop>
-				<alphaThreshold>1.000000</alphaThreshold>
-			</trimmingParams>
-			<contour>
-				<vertex>0.000000 0.874510</vertex>
-				<vertex>0.098039 1.000000</vertex>
-				<vertex>0.000000 0.054902</vertex>
-				<vertex>0.203922 1.000000</vertex>
-				<vertex>0.776471 0.054902</vertex>
-				<vertex>0.839216 0.894118</vertex>
-				<vertex>0.992157 0.400000</vertex>
-				<vertex>0.980392 0.678431</vertex>
-			</contour>
-			<contour>
-				<vertex>0.000000 0.874510</vertex>
-				<vertex>0.098039 1.000000</vertex>
-				<vertex>0.000000 0.054902</vertex>
-				<vertex>0.203922 1.000000</vertex>
-				<vertex>0.776471 0.054902</vertex>
-				<vertex>0.839216 0.894118</vertex>
-				<vertex>0.992157 0.400000</vertex>
-				<vertex>0.980392 0.678431</vertex>
 			</contour>
 		</contours>
 		<contours>

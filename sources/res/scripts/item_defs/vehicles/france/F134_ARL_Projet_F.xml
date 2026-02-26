@@ -1387,7 +1387,10 @@
 		</customization>
 		<hangarShadowTexture>vehicles/french/F134_ARL_Projet_F/ARL_Projet_F_HangarShadowMap.dds</hangarShadowTexture>
 		<camouflage>
-			<density>93.440369 92.991997</density>
+			<density>
+				93.44136 92.992332
+				<!--BW_String-->
+			</density>
 			<aoTextureSize>1024 1024</aoTextureSize>
 		</camouflage>
 	</hull>
@@ -3298,8 +3301,8 @@
 						<!--BW_String-->
 					</shotOffset>
 					<camouflage>
-						<density>95.153328 97.850113</density>
-						<aoTextureSize>512 512</aoTextureSize>
+						<density>95.153656 97.849457</density>
+						<aoTextureSize>1024 1024</aoTextureSize>
 					</camouflage>
 				</_138mm_Canon_Mle1946>
 			</guns>
@@ -3803,8 +3806,8 @@
 				<!--BW_String-->
 			</physicsShape>
 			<camouflage>
-				<density>108.238594 108.228752</density>
-				<aoTextureSize>1024 512</aoTextureSize>
+				<density>108.684242 108.684776</density>
+				<aoTextureSize>1024 1024</aoTextureSize>
 			</camouflage>
 		</Turret_1_F134_ARL_Projet_F>
 	</turrets0>

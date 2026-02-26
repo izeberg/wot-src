@@ -8,6 +8,7 @@ from gui.shared.gui_items.Vehicle import VEHICLE_ROLES_LABELS, VEHICLE_CLASS_NAM
 from helpers import dependency
 from skeletons.account_helpers.settings_core import ISettingsCore
 from skeletons.gui.game_control import IDebutBoxesController, IEarlyAccessController, IParagonsController, IFunRandomController
+_VEHICLE_MAX_RESEARCH_LEVEL = 10
 
 class FILTER_KEYS(object):
     ELITE = 'elite'
@@ -343,7 +344,7 @@ class BasicCriteriesGroup(CriteriesGroup):
     def _paragonsCriteria(cls, vehicle):
         controller = cls.__paragonsController
         intCD = vehicle.intCD
-        return vehicle.isResetParagons and controller.getVehicleProgressPoints(intCD) > 0 or controller.paragons.isVehicleWasReset(intCD) and not controller.isNextResetVehUnlocked(intCD)
+        return vehicle.isResetParagons and controller.getVehicleProgressPoints(intCD) > 0 or controller.paragons.isVehicleWasReset(intCD) and not controller.isNextResetVehUnlocked(intCD) and vehicle.level < _VEHICLE_MAX_RESEARCH_LEVEL
 
     def _setEarlyAccessCriteria(self, filters):
         if filters.get(FILTER_KEYS.EARLY_ACCESS):

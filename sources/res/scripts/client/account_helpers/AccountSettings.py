@@ -303,6 +303,7 @@ NY_PET_SLOT_VISITED = 'NyPetSlotVisited'
 NY_GREETINGS_SEEN = 'NYGreetingsSeen'
 PREMIUM_QUESTS_NOTIFICATION = 'PremiumPurchased'
 DEFERRED_LOG_PLAYER_SETTINGS_ACTIONS = 'DeferredLogPlayerSettingsActions'
+SPACE_DAY_CONGRATS = 'space_day_congrats'
 
 class BattleMatters(object):
     BATTLE_MATTERS_SETTINGS = 'battleMattersSettings'
@@ -1382,7 +1383,8 @@ DEFAULT_VALUES = {KEY_FILTERS: {STORE_TAB: 0,
                              NY_ACTIVE_WIDGET_TRANSITION_SHOWN: False, 
                              NY_PET_SLOT_VISITED: False, 
                              NY_GREETINGS_SEEN: False}, 
-                  DEFERRED_LOG_PLAYER_SETTINGS_ACTIONS: set()}, 
+                  DEFERRED_LOG_PLAYER_SETTINGS_ACTIONS: set(), 
+                  SPACE_DAY_CONGRATS: False}, 
    KEY_COUNTERS: {NEW_HOF_COUNTER: {PROFILE_CONSTANTS.HOF_ACHIEVEMENTS_BUTTON: True, 
                                     PROFILE_CONSTANTS.HOF_VEHICLES_BUTTON: True, 
                                     PROFILE_CONSTANTS.HOF_VIEW_RATING_BUTTON: True}, 

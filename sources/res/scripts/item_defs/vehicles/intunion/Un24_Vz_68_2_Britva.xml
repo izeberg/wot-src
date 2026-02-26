@@ -3579,10 +3579,7 @@
 					</customization>
 					<edgeByVisualModel>false</edgeByVisualModel>
 					<effects>shot_autoshoot_medium</effects>
-					<shotOffset>
-						-0.000001 -0.010758 0
-						<!--BW_String-->
-					</shotOffset>
+					<shotOffset>-0.000001 -0.010758 0.399097</shotOffset>
 					<models>
 						<undamaged>vehicles/intunion/Un24_Vz_68_2_Britva/normal/lod0/Gun_01.model</undamaged>
 						<destroyed>vehicles/intunion/Un24_Vz_68_2_Britva/crash/lod0/Gun_01.model</destroyed>
@@ -3620,7 +3617,7 @@
 						<!--BW_String-->
 					</position>
 					<shotOffset>
-						-0.00626 -0.00028 -1.325155
+						-0.00626 -0.00028 0.244
 						<!--BW_String-->
 					</shotOffset>
 				</gun>
@@ -3628,7 +3625,7 @@
 					<gunNode>G_R</gunNode>
 					<gunFire>HP_gunFire_R</gunFire>
 					<position>0.121888 0.284967 1.451391</position>
-					<shotOffset>-0.001422 0.001016 -1.325155</shotOffset>
+					<shotOffset>-0.001422 0.001016 0.243741</shotOffset>
 				</gun>
 			</multiGun>
 			<customizationSlots>

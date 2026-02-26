@@ -4604,3 +4604,7 @@ class INewbieEntryPointController(IGameController):
 
     def goToHangar(self, guiCtx):
         raise NotImplementedError
+
+
+class ISpaceDayController(IGameController):
+    pass

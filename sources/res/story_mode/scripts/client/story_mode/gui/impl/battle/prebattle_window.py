@@ -55,7 +55,6 @@ class PrebattleView(BaseWaitQueueView, IArenaLoadController):
             sendViewLoadedEvent(self.LAYOUT_ID)
             self._gotoBattleHandler()
         else:
-            BigWorld.setReducedFpsMode(False)
             self.viewModel.setIsLoading(False)
             self._uiLogger.logButtonShown(LogButtons.BATTLE)
 
@@ -87,6 +86,7 @@ class PrebattleView(BaseWaitQueueView, IArenaLoadController):
 
     def _finalize(self):
         self._sessionProvider.removeArenaCtrl(self)
+        BigWorld.setReducedFpsMode(False)
         self._uiLogger.logClose()
         super(PrebattleView, self)._finalize()
 

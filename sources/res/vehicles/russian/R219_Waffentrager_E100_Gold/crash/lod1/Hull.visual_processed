@@ -49,64 +49,18 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<primitive>indices</primitive>
+			<vertices>hullShape.vertices</vertices>
+			<primitive>hullShape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>tank_mat_inside</identifier>
 					<fx>shaders/std_effects/PBS_tank.fx</fx>
-					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
-					<property>
-						normalMap
-						<Texture>vehicles/german/Crash_inside/crash_inside_NM.dds</Texture>
-					</property>
-					<property>
-						metallicGlossMap
-						<Texture>vehicles/german/Crash_inside/crash_inside_GMM.dds</Texture>
-					</property>
-					<property>
-						g_useNormalPackDXT1
-						<Bool>true</Bool>
-					</property>
-					<property>
-						excludeMaskAndAOMap
-						<Texture>vehicles/german/Crash_inside/crash_inside_AO.dds</Texture>
-					</property>
-					<property>
-						diffuseMap
-						<Texture>vehicles/german/Crash_inside/crash_inside_AM.dds</Texture>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>64</Int>
-					</property>
-					<property>
-						colorIdMap
-						<Texture>vehicles/russian/R219_Waffentrager_E100_Gold/Waffentrager_E100_Gold_hull_01_ID.dds</Texture>
-					</property>
-				</material>
-				<groupOrigin>-0.028852 -0.017654 -0.117808</groupOrigin>
-			</primitiveGroup>
-			<primitiveGroup>
-				1
-				<material>
 					<identifier>tank_hull_01</identifier>
 					<collisionFlags>0</collisionFlags>
-					<materialKind>0</materialKind>
-					<fx>shaders/std_effects/PBS_tank.fx</fx>
-					<property>
-						alphaReference
-						<Int>160</Int>
-					</property>
 					<property>
 						colorIdMap
-						<Texture>vehicles/russian/R219_Waffentrager_E100_Gold/Waffentrager_E100_Gold_hull_01_ID.dds</Texture>
+						<Texture>vehicles/russian/R219_Waffentrager_E100_Gold/Waffentrager_E100_Gold_turret_01_ID.dds</Texture>
 					</property>
 					<property>
 						diffuseMap
@@ -125,10 +79,6 @@
 						<Bool>true</Bool>
 					</property>
 					<property>
-						metallicDetailMap
-						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
-					</property>
-					<property>
 						metallicGlossMap
 						<Texture>vehicles/russian/R219_Waffentrager_E100_Gold/Waffentrager_E100_Gold_hull_01_crash_GMM.dds</Texture>
 					</property>
@@ -136,23 +86,35 @@
 						normalMap
 						<Texture>vehicles/russian/R219_Waffentrager_E100_Gold/Waffentrager_E100_Gold_hull_01_ANM.dds</Texture>
 					</property>
+					<property>
+						alphaReference
+						<Int>64</Int>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
 				</material>
 				<groupOrigin>0.000001 0.006956 0.153196</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				2
+				1
 				<material>
+					<fx>shaders/std_effects/PBS_tank.fx</fx>
+					<materialKind>0</materialKind>
 					<identifier>tank_chassis_01</identifier>
 					<collisionFlags>0</collisionFlags>
-					<materialKind>0</materialKind>
-					<fx>shaders/std_effects/PBS_tank.fx</fx>
 					<property>
 						alphaReference
-						<Int>160</Int>
+						<Int>128</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
 					</property>
 					<property>
 						colorIdMap
-						<Texture>vehicles/russian/R219_Waffentrager_E100_Gold/Waffentrager_E100_Gold_hull_01_ID.dds</Texture>
+						<Texture>vehicles/russian/R219_Waffentrager_E100_Gold/Waffentrager_E100_Gold_turret_01_ID.dds</Texture>
 					</property>
 					<property>
 						diffuseMap
@@ -171,10 +133,6 @@
 						<Bool>true</Bool>
 					</property>
 					<property>
-						metallicDetailMap
-						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
-					</property>
-					<property>
 						metallicGlossMap
 						<Texture>vehicles/russian/R219_Waffentrager_E100_Gold/Waffentrager_E100_Gold_chassis_01_crash_GMM.dds</Texture>
 					</property>
@@ -182,8 +140,46 @@
 						normalMap
 						<Texture>vehicles/russian/R219_Waffentrager_E100_Gold/Waffentrager_E100_Gold_chassis_01_ANM.dds</Texture>
 					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
 				</material>
 				<groupOrigin>0.000024 -0.453635 0.078450</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				2
+				<material>
+					<fx>shaders/std_effects/PBS_tank.fx</fx>
+					<materialKind>0</materialKind>
+					<identifier>tank_mat_inside</identifier>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>vehicles/russian/Crash_inside/crash_inside_AM.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/russian/Crash_inside/crash_inside_GMM.dds</Texture>
+					</property>
+					<property>
+						g_useNormalPackDXT1
+						<Bool>true</Bool>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/russian/Crash_inside/crash_inside_NM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/russian/Crash_inside/crash_inside_AO.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.028852 -0.017654 -0.117808</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -191,6 +187,6 @@
 		<min>-1.868083 -1.086943 -4.106744</min>
 		<max>1.868132 0.885072 4.413136</max>
 	</boundingBox>
-	<geometrySize>464698</geometrySize>
+	<geometrySize>461738</geometrySize>
 	<minUVDensity>0.002383</minUVDensity>
 </root>

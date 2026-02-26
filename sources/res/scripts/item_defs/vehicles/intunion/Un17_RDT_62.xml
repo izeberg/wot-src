@@ -2861,10 +2861,7 @@
 					<edgeByVisualModel>false</edgeByVisualModel>
 					<effects>shot_autoshoot_medium</effects>
 					<animateEmblemSlots>true</animateEmblemSlots>
-					<shotOffset>
-						0 0.101 0
-						<!--BW_String-->
-					</shotOffset>
+					<shotOffset>-0.000009 0.100496 0.879968</shotOffset>
 					<camouflage>
 						<density>146.136719 146.207474</density>
 						<aoTextureSize>512 512</aoTextureSize>
@@ -2885,17 +2882,15 @@
 				<gun>
 					<gunNode>G_L</gunNode>
 					<gunFire>HP_gunFire_L</gunFire>
-					<position>0.000000 0.000000 1.622654</position>
-					<shotOffset>-0.159906 0.667417 -1.325155</shotOffset>
+					<position>-0.165035 0.672905 0.116933</position>
 				</gun>
 				<gun>
 					<gunNode>G_R</gunNode>
 					<gunFire>HP_gunFire_R</gunFire>
-					<position>0.000000 0.000000 1.622653</position>
-					<shotOffset>
-						0.159219 0.66637 -1.338526
+					<position>
+						0.165 0.673 0.117
 						<!--BW_String-->
-					</shotOffset>
+					</position>
 				</gun>
 			</multiGun>
 			<multiGunState>

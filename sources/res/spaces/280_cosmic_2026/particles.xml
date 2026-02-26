@@ -182,10 +182,6 @@
 			<shader>data/shaders/ps.fx</shader>
 			<texture>particles/content_forward/pfx_textures/plasma_sparks.dds</texture>
 		</preload>
-		<preload>
-			<shader>data/shaders/ps_long.fx</shader>
-			<texture>particles/content_forward/pfx_textures/eff_tex_flash.dds</texture>
-		</preload>
 	</forward>
 	<deferred>
 		<name>default</name>
@@ -423,10 +419,6 @@
 		<preload>
 			<shader>data/shaders/ps.fx</shader>
 			<texture>particles/content_deferred/pfx_textures/eff_waterfall_splash.dds</texture>
-		</preload>
-		<preload>
-			<shader>data/shaders/ps_long.fx</shader>
-			<texture>particles/content_deferred/pfx_textures/eff_tex_flash.dds</texture>
 		</preload>
 		<preload>
 			<shader>data/shaders/ps.fx</shader>

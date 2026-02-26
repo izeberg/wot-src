@@ -3178,6 +3178,10 @@
 					</hitTester>
 					<effects>shot_autoshoot_small</effects>
 					<edgeByVisualModel>false</edgeByVisualModel>
+					<shotOffset>
+						0 0 0.205848
+						<!--BW_String-->
+					</shotOffset>
 					<camouflage>
 						<density>147.183701 146.447754</density>
 						<aoTextureSize>512 512</aoTextureSize>
@@ -3903,7 +3907,10 @@
 						-0.19900 -0.002106 -0.069740
 						<!--BW_String-->
 					</position>
-					<shotOffset>0.084062 0.353985 0.000002</shotOffset>
+					<shotOffset>
+						0.084062 0.353985 1.32656
+						<!--BW_String-->
+					</shotOffset>
 				</gun>
 				<gun>
 					<gunNode>G_R</gunNode>
@@ -3912,7 +3919,10 @@
 						0.20100 -0.002106 -0.069740
 						<!--BW_String-->
 					</position>
-					<shotOffset>-0.090635 0.352938 0.000003</shotOffset>
+					<shotOffset>
+						-0.090635 0.352938 1.327
+						<!--BW_String-->
+					</shotOffset>
 				</gun>
 			</multiGun>
 			<physicsShape>
@@ -4139,6 +4149,10 @@
 					</hitTester>
 					<effects>shot_autoshoot_small</effects>
 					<edgeByVisualModel>false</edgeByVisualModel>
+					<shotOffset>
+						-0 0 0.25
+						<!--BW_String-->
+					</shotOffset>
 					<camouflage>
 						<density>
 							154.36264 153.252228
@@ -4308,6 +4322,10 @@
 					</hitTester>
 					<effects>shot_autoshoot_small</effects>
 					<edgeByVisualModel>false</edgeByVisualModel>
+					<shotOffset>
+						-0 0 0.250392
+						<!--BW_String-->
+					</shotOffset>
 					<camouflage>
 						<density>156.973846 157.657196</density>
 						<aoTextureSize>512 512</aoTextureSize>
@@ -4911,7 +4929,10 @@
 						-0.19900 -0.002106 -0.069740
 						<!--BW_String-->
 					</position>
-					<shotOffset>0.084062 0.353985 0.000002</shotOffset>
+					<shotOffset>
+						0.084062 0.262 1.504
+						<!--BW_String-->
+					</shotOffset>
 				</gun>
 				<gun>
 					<gunNode>G_R</gunNode>
@@ -4920,7 +4941,7 @@
 						0.20100 -0.002106 -0.069740
 						<!--BW_String-->
 					</position>
-					<shotOffset>-0.090635 0.352938 0.000003</shotOffset>
+					<shotOffset>-0.090635 0.262031 1.503867</shotOffset>
 				</gun>
 			</multiGun>
 			<multiGunState>

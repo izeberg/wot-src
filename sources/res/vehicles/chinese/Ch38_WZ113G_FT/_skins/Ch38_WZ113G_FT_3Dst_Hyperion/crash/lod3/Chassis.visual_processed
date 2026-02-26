@@ -135,7 +135,7 @@
 						<Bool>true</Bool>
 					</property>
 				</material>
-				<groupOrigin>1.334614 0.535297 0.077403</groupOrigin>
+				<groupOrigin>1.334614 0.535297 0.079432</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -217,9 +217,9 @@
 	</renderSet>
 	<constraints/>
 	<boundingBox>
-		<min>-1.619871 -0.000002 -3.666769</min>
-		<max>1.619872 1.071716 3.511962</max>
+		<min>-1.619871 -0.000002 -3.669023</min>
+		<max>1.619872 1.071716 3.510159</max>
 	</boundingBox>
-	<geometrySize>33400</geometrySize>
-	<minUVDensity>1.764217</minUVDensity>
+	<geometrySize>32720</geometrySize>
+	<minUVDensity>0.882565</minUVDensity>
 </root>

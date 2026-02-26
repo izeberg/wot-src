@@ -81,15 +81,19 @@
 						alphaReference
 						<Int>64</Int>
 					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
 				</material>
-				<groupOrigin>0.000319 -0.038377 0.001120</groupOrigin>
+				<groupOrigin>0.000319 -0.036057 0.000000</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-0.299450 -0.141182 -0.080552</min>
-		<max>0.300088 0.064428 0.082792</max>
+		<min>-0.299450 -0.141182 -0.108410</min>
+		<max>0.300088 0.069068 0.108410</max>
 	</boundingBox>
 	<geometrySize>8268</geometrySize>
-	<minUVDensity>2.078659</minUVDensity>
+	<minUVDensity>1.682294</minUVDensity>
 </root>
