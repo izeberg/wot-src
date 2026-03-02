@@ -196,6 +196,7 @@
 		<MAN_D2840_LXE>303</MAN_D2840_LXE>
 		<MTU_MB_838_CaM_501>304</MTU_MB_838_CaM_501>
 		<MB_517_Spezialausfuehrung>305</MB_517_Spezialausfuehrung>
+		<Maybach_HL_120_TRM_F_2>310</Maybach_HL_120_TRM_F_2>
 		<Praga_EPA_AC_Grille>2000</Praga_EPA_AC_Grille>
 		<Maybach_HL_120_TRM_112_Hummel>2001</Maybach_HL_120_TRM_112_Hummel>
 		<Maybach_HL_120_TRM_Hummel>2002</Maybach_HL_120_TRM_Hummel>
@@ -705,6 +706,27 @@
 			<rpm_min>324</rpm_min>
 			<rpm_max>2761</rpm_max>
 		</Maybach_HL_120_TRM_A>
+		<Maybach_HL_120_TRM_F_2>
+			<userString>#germany_vehicles:Maybach_HL_120_TRM_F_2</userString>
+			<shortUserString>#germany_vehicles:Maybach_HL_120_TRM_F_2_short</shortUserString>
+			<tags>gasoline</tags>
+			<level>5</level>
+			<notInShop>true</notInShop>
+			<price>20000</price>
+			<wwsoundPC>eng_Continental_R975_pc</wwsoundPC>
+			<wwsoundNPC>eng_Continental_R975_npc</wwsoundNPC>
+			<power>510</power>
+			<weight>510</weight>
+			<maxHealth>170</maxHealth>
+			<maxRegenHealth>85</maxRegenHealth>
+			<repairCost>5</repairCost>
+			<fireStartingChance>
+				0.2
+				<!--BW_String-->
+			</fireStartingChance>
+			<rpm_min>305</rpm_min>
+			<rpm_max>2821</rpm_max>
+		</Maybach_HL_120_TRM_F_2>
 		<Maybach_HL_120_TRM_C>
 			<userString>#germany_vehicles:Maybach_HL_120_TRM_C</userString>
 			<tags>gasoline</tags>

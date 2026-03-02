@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<event>
+		<name>fall_tanks_ability_ready</name>
+		<chance>100</chance>
+		<fxEvent>ev_fep_fall_ability_button_ready</fxEvent>
+		<cooldownFx>0</cooldownFx>
+	</event>
+</root>

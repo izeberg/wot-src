@@ -59,9 +59,9 @@ package net.wg.gui.battle.windows
       
       private static const ARROWS_PADDING_TOP:int = 85;
       
-      private static const PAGINATOR_PADDING_BOTTOM:int = 65;
+      private static const PAGINATOR_HEIGHT:int = 20;
       
-      private static const WINDOW_PADDING:Padding = new Padding(-70,0,0,0);
+      private static const WINDOW_PADDING:Padding = new Padding(-140,0,0,0);
       
       private static const ARROW_HORIZONTAL_GAP:int = 80;
       
@@ -179,13 +179,10 @@ package net.wg.gui.battle.windows
                requestPageDataS(this._currentIndex);
                invalidateSize();
             }
-            if(isInvalid(INV_PAGE))
+            if(this._pageData != null && _loc1_ > this._currentIndex && isInvalid(INV_PAGE))
             {
-               if(_loc1_ > this._currentIndex && this._pageData != null)
-               {
-                  this.setData(this._pageData);
-                  invalidate(INV_PAGE_SIZE);
-               }
+               this.setData(this._pageData);
+               invalidate(INV_PAGE_SIZE);
             }
          }
          if(isInvalid(InvalidationType.SIZE))
@@ -262,11 +259,14 @@ package net.wg.gui.battle.windows
       
       private function updateLayout() : void
       {
+         var _loc1_:Number = NaN;
          this.arrowLeftBtn.x = x - this.arrowLeftBtn.width + ARROW_HORIZONTAL_GAP >> 0;
          this.arrowRightBtn.x = x + width + this.arrowLeftBtn.width - ARROW_HORIZONTAL_GAP >> 0;
          this.arrowLeftBtn.y = this.arrowRightBtn.y = this.background.y + ARROWS_PADDING_TOP;
-         var _loc1_:Point = new Point(x + (width >> 1),this.background.y + height + PAGINATOR_PADDING_BOTTOM);
-         this._pageController.setPositions(_loc1_);
+         _loc1_ = this.pgBackground.height;
+         this.pgBackground.y = this.background.height - _loc1_;
+         var _loc2_:Point = new Point(x + (width >> 1),this.pgBackground.y + (_loc1_ - PAGINATOR_HEIGHT >> 1));
+         this._pageController.setPositions(_loc2_);
       }
       
       private function updatePageLayout() : void

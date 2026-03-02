@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G191_StuG_IIIF_CFE_A/_skins/G191_StuG_IIIF_AF_3Dst/normal/lod0/Turret_01</nodefullVisual>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.023500 -0.043000 -0.050500</min>
+		<max>0.023500 0.043000 0.050500</max>
+	</visibilityBox>
+	<parent>vehicles/german/G191_StuG_IIIF_CFE_A/_skins/G191_StuG_IIIF_AF_3Dst/normal/lod1/Turret_01</parent>
+	<extent>32.000000</extent>
+</root>

@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<version>4</version>
+	<GameObjects>
+		<GameObject>
+			<name>141_finish_yellow_light</name>
+			<UUID>7d7c209f-fe0a-48b8-83f8-28fa036c99d3</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>finish_yellow_light</name>
+			<UUID>d0b58d79-77b5-4221-a498-1f3177c3cccb</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>finish_blue_border</name>
+			<UUID>ecf9412d-29dd-44c0-9903-f30556e98709</UUID>
+			<flags>0</flags>
+		</GameObject>
+	</GameObjects>
+	<components>
+		<ComponentPool>
+			<type>Hierarchy</type>
+			<version>2</version>
+			<component>
+				<UUID>d0b58d79-77b5-4221-a498-1f3177c3cccb</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>7d7c209f-fe0a-48b8-83f8-28fa036c99d3</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>ecf9412d-29dd-44c0-9903-f30556e98709</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>7d7c209f-fe0a-48b8-83f8-28fa036c99d3</link>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>Transform</type>
+			<version>1</version>
+			<component>
+				<UUID>7d7c209f-fe0a-48b8-83f8-28fa036c99d3</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>d0b58d79-77b5-4221-a498-1f3177c3cccb</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							-4.14246 0 4.62
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>ecf9412d-29dd-44c0-9903-f30556e98709</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							0.207001 0.70091 -46.7882
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>PrismArea</type>
+			<version>1</version>
+			<component>
+				<UUID>d0b58d79-77b5-4221-a498-1f3177c3cccb</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Curvature</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Tesselation Step</name>
+						<value>20</value>
+					</property>
+					<property>
+						<name>Height</name>
+						<value>20</value>
+					</property>
+					<property>
+						<name>Points</name>
+						<collection>
+							<item>
+								<value>
+									-83.194 4.99638
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									76.4088 5.16229
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									76.2424 0.477272
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									-83.059 0.34742
+									<!--BW_String-->
+								</value>
+							</item>
+						</collection>
+					</property>
+					<property>
+						<name>Douglas-Peucker Epsilon</name>
+						<value>
+							0.2
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>ecf9412d-29dd-44c0-9903-f30556e98709</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Curvature</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Tesselation Step</name>
+						<value>20</value>
+					</property>
+					<property>
+						<name>Height</name>
+						<value>20</value>
+					</property>
+					<property>
+						<name>Points</name>
+						<collection>
+							<item>
+								<value>
+									-63.5 4.99638
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>
+									57 5.16229
+									<!--BW_String-->
+								</value>
+							</item>
+							<item>
+								<value>57 5</value>
+							</item>
+							<item>
+								<value>
+									-63.5 5
+									<!--BW_String-->
+								</value>
+							</item>
+						</collection>
+					</property>
+					<property>
+						<name>Douglas-Peucker Epsilon</name>
+						<value>
+							0.2
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>PolygonBorderVisualComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>d0b58d79-77b5-4221-a498-1f3177c3cccb</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Attach to the ground</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Border Height</name>
+						<value>
+							-8.35
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Zone Visible</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Zone Fade</name>
+						<value>3</value>
+					</property>
+					<property>
+						<name>Zone Intensity</name>
+						<value>2</value>
+					</property>
+					<property>
+						<name>Zone Offset</name>
+						<value>
+							0.1
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Tessellation Factor</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Zone Color</name>
+						<value>0 0 0 0</value>
+					</property>
+					<property>
+						<name>Wall Visible</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Draw Wall Stripes</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Wall Height</name>
+						<value>50</value>
+					</property>
+					<property>
+						<name>Wall Color</name>
+						<value>
+							1 0.509804 0.109804 1
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Dissolve height</name>
+						<value>
+							0.03
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Dissolve power</name>
+						<value>3</value>
+					</property>
+					<property>
+						<name>Stripe width</name>
+						<value>
+							9.51
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Stripe fill ratio</name>
+						<value>
+							0.36
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>ecf9412d-29dd-44c0-9903-f30556e98709</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Attach to the ground</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Border Height</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Zone Visible</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Zone Fade</name>
+						<value>3</value>
+					</property>
+					<property>
+						<name>Zone Intensity</name>
+						<value>2</value>
+					</property>
+					<property>
+						<name>Zone Offset</name>
+						<value>
+							0.1
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Tessellation Factor</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Zone Color</name>
+						<value>0 0 0 0</value>
+					</property>
+					<property>
+						<name>Wall Visible</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Draw Wall Stripes</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Wall Height</name>
+						<value>100</value>
+					</property>
+					<property>
+						<name>Wall Color</name>
+						<value>
+							1 0 0.415686 1
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Dissolve height</name>
+						<value>
+							0.01
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Dissolve power</name>
+						<value>3</value>
+					</property>
+					<property>
+						<name>Stripe width</name>
+						<value>
+							9.51
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Stripe fill ratio</name>
+						<value>
+							0.36
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+	</components>
+</root>

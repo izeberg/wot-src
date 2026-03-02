@@ -759,6 +759,8 @@ package
       
       public static const DETAILS_CALCULATIONS_WOTPLUSBONUS:String = "#battle_results:details/calculations/wotPlusBonus";
       
+      public static const DETAILS_CALCULATIONS_WOTPLUSPROBOOST:String = "#battle_results:details/calculations/wotPlusProBoost";
+      
       public static const DETAILS_CALCULATIONS_XPRECORD:String = "#battle_results:details/calculations/xpRecord";
       
       public static const DETAILS_CALCULATIONS_XPRECORDSIMPLE:String = "#battle_results:details/calculations/xpRecordSimple";

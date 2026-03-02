@@ -430,8 +430,9 @@ class _CurrentVehicle(_CachedVehicle):
         if vehicle is None:
             return False
         else:
-            if vehicle.isModeHidden and vehicle.isOnlyForFunRandomBattles and not self.funRandomController.isEnabled():
-                return False
+            if vehicle.isModeHidden:
+                if self.funRandomController.isOnlyFunRandomVehicle(vehicle) and not self.funRandomController.isEnabled():
+                    return False
             return not REQ_CRITERIA.VEHICLE.BATTLE_ROYALE(vehicle) or self.battleRoyaleController.isBattleRoyaleMode()
 
     def __checkPrebattleLockedVehicle(self):

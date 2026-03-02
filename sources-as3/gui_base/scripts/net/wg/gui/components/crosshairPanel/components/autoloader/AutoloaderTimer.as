@@ -30,6 +30,8 @@ package net.wg.gui.components.crosshairPanel.components.autoloader
       
       private var _disposed:Boolean = false;
       
+      private var _isReloading:Boolean = false;
+      
       public function AutoloaderTimer()
       {
          super();
@@ -66,9 +68,11 @@ package net.wg.gui.components.crosshairPanel.components.autoloader
          {
             _loc4_ = ExternalInterface.call.apply(this,[FRACTIONAL_FORMAT_CMD,this._mathAbs.call(null,param1)]);
             _loc3_ = _loc4_.slice(0,_loc4_.length - 1);
+            this.reloadingBg.visible = this._isReloading;
          }
          else
          {
+            this.reloadingBg.visible = false;
             _loc3_ = Values.EMPTY_STR;
          }
          this._currentLabel = _loc3_;
@@ -77,7 +81,8 @@ package net.wg.gui.components.crosshairPanel.components.autoloader
       
       public function updateTimerColor(param1:Boolean, param2:Boolean, param3:Boolean) : void
       {
-         this.reloadingBg.visible = param1;
+         this._isReloading = param1;
+         this.reloadingBg.visible = param1 && this._currentLabel;
          if(param1)
          {
             this.switchCurrentTimers(this.timerReloading);

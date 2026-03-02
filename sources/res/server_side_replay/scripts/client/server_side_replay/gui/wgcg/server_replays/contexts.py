@@ -14,7 +14,7 @@ def makeTupleByDict(ntClass, data):
                 try:
                     supported[k] = fieldTypes[k]()
                     continue
-                except:
+                except Exception:
                     pass
 
             supported[k] = v

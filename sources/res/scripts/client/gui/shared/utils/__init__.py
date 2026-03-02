@@ -114,6 +114,8 @@ def code2str(code):
         return 'Player dossier is hidden'
     if code == AccountCommands.RES_CENTER_DISCONNECTED:
         return 'Dossiers are unavailable'
+    if code == AccountCommands.RES_RATE_LIMIT_COOLDOWN:
+        return 'Identical requests rate limit cooldown'
     return 'Unknown error code'
 
 

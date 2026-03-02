@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.Scaleform.locale.RES_ICONS import RES_ICONS
 from shared_utils import CONST_CONTAINER
 

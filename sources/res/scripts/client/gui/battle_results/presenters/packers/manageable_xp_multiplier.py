@@ -1,13 +1,14 @@
+from shared_utils import first
 from constants import PREMIUM_TYPE
 from gui.battle_results.pbs_helpers.additional_bonuses import getAdditionalXpBonusStatus, getAdditionalXPFactor10FromResult, getLeftAdditionalBonus, isAdditionalXpBonusAvailable, isAddXpBonusStatusAcceptable, getAdditionalXpBonusDiff
 from gui.battle_results.presenters.packers.interfaces import IBattleResultsPacker
 from gui.battle_results.settings import BATTLE_RESULTS_RECORD as _RECORD
+from gui.game_control.wot_plus.utils import WOT_PLUS_TIER_MAP
 from gui.impl.gen.view_models.views.lobby.battle_results.additional_bonus_model import PremiumXpBonusRestriction
 from helpers import dependency
 from skeletons.gui.game_control import IWotPlusController
 from skeletons.gui.lobby_context import ILobbyContext
 from skeletons.gui.shared import IItemsCache
-from shared_utils import first
 
 class ManageableXpMultiplier(IBattleResultsPacker):
     __itemsCache = dependency.descriptor(IItemsCache)
@@ -17,7 +18,7 @@ class ManageableXpMultiplier(IBattleResultsPacker):
     @classmethod
     def packModel(cls, model, battleResults):
         reusable = battleResults.reusable
-        model.setHasWotPlus(reusable.personal.isWotPlus)
+        model.setWotPlusType(WOT_PLUS_TIER_MAP[reusable.personal.wotPlusTier])
         model.setHasAnyPremium(reusable.personal.hasAnyPremium)
         hasPremiumPlus = cls.__itemsCache.items.stats.isActivePremium(PREMIUM_TYPE.PLUS)
         model.setHasPremium(hasPremiumPlus)
@@ -31,7 +32,7 @@ class ManageableXpMultiplier(IBattleResultsPacker):
             return
         wasPremiumPlusInBattle = reusable.personal.isPremiumPlus
         model.setWasPremium(wasPremiumPlusInBattle)
-        hasWotPlus = cls.__wotPlusController.isEnabled()
+        hasWotPlus = cls.__wotPlusController.hasSubscription()
         cls._updateLeftCount(model, wasPremiumPlusInBattle, hasPremiumPlus, hasWotPlus)
         model.setBonusMultiplier(getAdditionalXPFactor10FromResult(battleResults.results[_RECORD.PERSONAL], reusable))
         isPersonalTeamWin = reusable.isPersonalTeamWin()

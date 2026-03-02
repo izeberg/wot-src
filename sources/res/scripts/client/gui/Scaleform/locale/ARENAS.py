@@ -48,18 +48,12 @@ class ARENAS(object):
     INVALID_MAP_NAME = '#arenas:invalid_map/name'
     C_01_KARELIA_NAME = '#arenas:01_karelia/name'
     C_01_KARELIA_DESCRIPTION = '#arenas:01_karelia/description'
-    C_01_KARELIA_FP_NAME = '#arenas:01_karelia_fp/name'
-    C_01_KARELIA_FP_DESCRIPTION = '#arenas:01_karelia_fp/description'
     C_02_MALINOVKA_NAME = '#arenas:02_malinovka/name'
     C_02_MALINOVKA_DESCRIPTION = '#arenas:02_malinovka/description'
-    C_02_MALINOVKA_FP_NAME = '#arenas:02_malinovka_fp/name'
-    C_02_MALINOVKA_FP_DESCRIPTION = '#arenas:02_malinovka_fp/description'
     C_04_HIMMELSDORF_NAME = '#arenas:04_himmelsdorf/name'
     C_04_HIMMELSDORF_DESCRIPTION = '#arenas:04_himmelsdorf/description'
     C_05_PROHOROVKA_NAME = '#arenas:05_prohorovka/name'
     C_05_PROHOROVKA_DESCRIPTION = '#arenas:05_prohorovka/description'
-    C_05_PROHOROVKA_FP_NAME = '#arenas:05_prohorovka_fp/name'
-    C_05_PROHOROVKA_FP_DESCRIPTION = '#arenas:05_prohorovka_fp/description'
     C_06_ENSK_NAME = '#arenas:06_ensk/name'
     C_06_ENSK_DESCRIPTION = '#arenas:06_ensk/description'
     C_07_LAKEVILLE_NAME = '#arenas:07_lakeville/name'
@@ -161,6 +155,12 @@ class ARENAS(object):
     TYPE_WINBACK_DESCRIPTION = '#arenas:type/winback/description'
     C_210_BF_EPIC_DESERT_NAME = '#arenas:210_bf_epic_desert/name'
     C_210_BF_EPIC_DESERT_DESCRIPTION = '#arenas:210_bf_epic_desert/description'
+    C_140_FALL_TANKS_NAME = '#arenas:140_fall_tanks/name'
+    C_140_FALL_TANKS_DESCRIPTION = '#arenas:140_fall_tanks/description'
+    C_141_DASH_TO_GO_NAME = '#arenas:141_dash_to_go/name'
+    C_141_DASH_TO_GO_DESCRIPTION = '#arenas:141_dash_to_go/description'
+    C_142_ROAD_TO_DASH_NAME = '#arenas:142_road_to_dash/name'
+    C_142_ROAD_TO_DASH_DESCRIPTION = '#arenas:142_road_to_dash/description'
     C_08_RUINBERG_SM24_NAME = '#arenas:08_ruinberg_sm24/name'
     C_08_RUINBERG_SM24_DESCRIPTION = '#arenas:08_ruinberg_sm24/description'
     C_14_SIEGFRIED_LINE_WT_NAME = '#arenas:14_siegfried_line_wt/name'
@@ -174,10 +174,6 @@ class ARENAS(object):
     C_120_GRAF_ZEPPELIN_SCC_DESCRIPTION = '#arenas:120_graf_zeppelin_scc/description'
     C_120_GRAF_ZEPPELIN_NAME = '#arenas:120_graf_zeppelin/name'
     C_120_GRAF_ZEPPELIN_DESCRIPTION = '#arenas:120_graf_zeppelin/description'
-    C_35_STEPPES_LUNAR_26_NAME = '#arenas:35_steppes_lunar_26/name'
-    C_59_ASIA_GREAT_WALL_LUNAR_26_NAME = '#arenas:59_asia_great_wall_lunar_26/name'
-    C_10_HILLS_LUNAR_26_NAME = '#arenas:10_hills_lunar_26/name'
-    C_28_DESERT_LUNAR_26_NAME = '#arenas:28_desert_lunar_26/name'
     ALL_ENUM = (
      TYPE_CTF_NAME,
      TYPE_CTF_DESCRIPTION,
@@ -226,18 +222,12 @@ class ARENAS(object):
      INVALID_MAP_NAME,
      C_01_KARELIA_NAME,
      C_01_KARELIA_DESCRIPTION,
-     C_01_KARELIA_FP_NAME,
-     C_01_KARELIA_FP_DESCRIPTION,
      C_02_MALINOVKA_NAME,
      C_02_MALINOVKA_DESCRIPTION,
-     C_02_MALINOVKA_FP_NAME,
-     C_02_MALINOVKA_FP_DESCRIPTION,
      C_04_HIMMELSDORF_NAME,
      C_04_HIMMELSDORF_DESCRIPTION,
      C_05_PROHOROVKA_NAME,
      C_05_PROHOROVKA_DESCRIPTION,
-     C_05_PROHOROVKA_FP_NAME,
-     C_05_PROHOROVKA_FP_DESCRIPTION,
      C_06_ENSK_NAME,
      C_06_ENSK_DESCRIPTION,
      C_07_LAKEVILLE_NAME,
@@ -339,6 +329,12 @@ class ARENAS(object):
      TYPE_WINBACK_DESCRIPTION,
      C_210_BF_EPIC_DESERT_NAME,
      C_210_BF_EPIC_DESERT_DESCRIPTION,
+     C_140_FALL_TANKS_NAME,
+     C_140_FALL_TANKS_DESCRIPTION,
+     C_141_DASH_TO_GO_NAME,
+     C_141_DASH_TO_GO_DESCRIPTION,
+     C_142_ROAD_TO_DASH_NAME,
+     C_142_ROAD_TO_DASH_DESCRIPTION,
      C_08_RUINBERG_SM24_NAME,
      C_08_RUINBERG_SM24_DESCRIPTION,
      C_14_SIEGFRIED_LINE_WT_NAME,
@@ -351,11 +347,7 @@ class ARENAS(object):
      C_120_GRAF_ZEPPELIN_SCC_NAME,
      C_120_GRAF_ZEPPELIN_SCC_DESCRIPTION,
      C_120_GRAF_ZEPPELIN_NAME,
-     C_120_GRAF_ZEPPELIN_DESCRIPTION,
-     C_35_STEPPES_LUNAR_26_NAME,
-     C_59_ASIA_GREAT_WALL_LUNAR_26_NAME,
-     C_10_HILLS_LUNAR_26_NAME,
-     C_28_DESERT_LUNAR_26_NAME)
+     C_120_GRAF_ZEPPELIN_DESCRIPTION)
 
     @classmethod
     def all(cls, key0):

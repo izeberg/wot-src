@@ -24,6 +24,11 @@ package net.wg.gui.components.crosshairPanel.components.gunMarker
       
       override protected function draw() : void
       {
+         if(currMixingMC && isInvalid(GunMarkerConsts.GUN_MIXING_TYPE_VALIDATION))
+         {
+            GTweener.removeTweens(currMixingMC);
+            currMixingMC.alpha = mixingAlpha;
+         }
          super.draw();
          if(isInvalid(GunMarkerConsts.GUN_MIXING_TYPE_VALIDATION))
          {

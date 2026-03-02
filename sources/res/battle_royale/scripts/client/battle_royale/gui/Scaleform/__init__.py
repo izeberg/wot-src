@@ -1,4 +1,5 @@
-from gui.shared.system_factory import registerScaleformBattlePackages, registerScaleformLobbyPackages, registerBattleTooltipsBuilders, registerLobbyTooltipsBuilders, registerHangarDynamicGuiProvider
+from gui.Scaleform.genConsts.BATTLEROYALE_ALIASES import BATTLEROYALE_ALIASES
+from gui.shared.system_factory import registerScaleformBattlePackages, registerScaleformLobbyPackages, registerBattleTooltipsBuilders, registerLobbyTooltipsBuilders, registerHangarDynamicGuiProvider, registerLifecycleHandledSubViews
 from constants import ARENA_GUI_TYPE, QUEUE_TYPE
 from gui.Scaleform.genConsts.TOOLTIPS_CONSTANTS import TOOLTIPS_CONSTANTS as _TOOLTIPS
 from gui.Scaleform.required_libraries_config import addBattleRequiredLibraries
@@ -26,6 +27,7 @@ def registerBRTooltipsBuilders():
       'battle_royale.gui.Scaleform.daapi.view.tooltips.royale_lobby_builders', _TOOLTIPS.ROYALE_LOBBY_SET),
      (
       'battle_royale.gui.Scaleform.daapi.view.tooltips.royale_battle_builders', _TOOLTIPS.ROYALE_BATTLE_SET)])
+    registerLifecycleHandledSubViews([BATTLEROYALE_ALIASES.BR_HANGAR_VIEW])
 
 
 def registerCustomSwf():

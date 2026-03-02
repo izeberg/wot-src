@@ -79,16 +79,6 @@ msgstr "Available maps:"
 msgid "modeInfoTooltip/title"
 msgstr "Warm-Up"
 
-msgid "progression/counter"
-msgstr "%(completed)s / %(total)s"
-
-msgid "progression/description"
-msgstr ""
-"Each completed Standard, Premium, or Bonus Mission counts toward the reward."
-
-msgid "progression/title"
-msgstr "Missions completed: %(counter)s"
-
 msgid "selectableRewardTooltip/basic/description"
 msgstr ""
 "Any researchable Tier %(level)s vehicle may be selected. The vehicle comes "
@@ -111,9 +101,6 @@ msgstr ""
 
 msgid "selectableRewardTooltip/discount/title"
 msgstr "Discount on Tier %(level)s Vehicle"
-
-msgid "takeReward/buttonText"
-msgstr "Claim reward"
 
 msgid "vehicleDiscountRewardTooltip/description"
 msgstr ""

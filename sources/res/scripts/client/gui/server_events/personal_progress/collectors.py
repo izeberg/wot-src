@@ -31,9 +31,7 @@ class UniqueProgressCollector(ClientProgressCollector):
 
     @classmethod
     def validate(cls, progress):
-        if progress.getUniqueVehicles():
-            return True
-        return False
+        return bool(progress.getUniqueVehicles())
 
 
 class LobbyProgressCollector(ClientProgressCollector):

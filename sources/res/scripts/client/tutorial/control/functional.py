@@ -147,7 +147,7 @@ class FunctionalGameItemSimpleStateCondition(FunctionalCondition):
             try:
                 result = getter(value)
             except Exception as e:
-                LOG_ERROR('Can not resolve condition', varID, e.message)
+                LOG_ERROR('Can not resolve condition', varID, str(e))
                 return False
 
             if condition.isPositiveState():
@@ -169,7 +169,7 @@ class FunctionalGameItemRelateStateCondition(FunctionalCondition):
             try:
                 result = getter(value, *otherIDs)
             except Exception as e:
-                LOG_ERROR('Can not resolve condition', varID, e.message)
+                LOG_ERROR('Can not resolve condition', varID, str(e))
                 return False
 
             if condition.isPositiveState():

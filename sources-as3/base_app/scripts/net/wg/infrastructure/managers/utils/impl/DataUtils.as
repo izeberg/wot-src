@@ -103,33 +103,35 @@ package net.wg.infrastructure.managers.utils.impl
       {
          this.assertEvenArray(param1);
          var _loc2_:Map = new HashMap();
-         var _loc3_:Number = 0;
-         while(_loc3_ < param1.length)
+         var _loc3_:uint = param1.length;
+         var _loc4_:Number = 0;
+         while(_loc4_ < _loc3_)
          {
-            if(_loc3_ % 2 == 1 && _loc3_ > 0)
+            if(_loc4_ % 2 == 1 && _loc4_ > 0)
             {
-               _loc2_.put(param1[_loc3_ - 1],param1[_loc3_]);
+               _loc2_.put(param1[_loc4_ - 1],param1[_loc4_]);
             }
-            _loc3_++;
+            _loc4_++;
          }
          return _loc2_;
       }
       
       public function createMappedArray(param1:Array) : Array
       {
-         var _loc4_:Object = null;
+         var _loc5_:Object = null;
          this.assertEvenArray(param1);
          var _loc2_:Array = [];
-         var _loc3_:Number = 0;
-         while(_loc3_ < param1.length)
+         var _loc3_:uint = param1.length;
+         var _loc4_:Number = 0;
+         while(_loc4_ < _loc3_)
          {
-            if(_loc3_ % 2 == 1 && _loc3_ > 0)
+            if(_loc4_ % 2 == 1 && _loc4_ > 0)
             {
-               _loc4_ = {};
-               _loc4_[param1[_loc3_ - 1]] = param1[_loc3_];
-               _loc2_.push(_loc4_);
+               _loc5_ = {};
+               _loc5_[param1[_loc4_ - 1]] = param1[_loc4_];
+               _loc2_.push(_loc5_);
             }
-            _loc3_++;
+            _loc4_++;
          }
          return _loc2_;
       }

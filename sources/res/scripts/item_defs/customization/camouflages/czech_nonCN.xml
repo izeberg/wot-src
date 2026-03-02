@@ -20,6 +20,9 @@
 			<include>
 				<nations>czech</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<camouflage>
 			<id>15704</id>
@@ -109,6 +112,9 @@
 			<include>
 				<nations>czech</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<camouflage>
 			<id>15707</id>
@@ -198,6 +204,9 @@
 			<include>
 				<nations>czech</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<camouflage>
 			<id>15705</id>
@@ -287,6 +296,9 @@
 			<include>
 				<nations>czech</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<camouflage>
 			<id>15706</id>
@@ -376,6 +388,9 @@
 			<include>
 				<nations>czech</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<camouflage>
 			<id>15708</id>

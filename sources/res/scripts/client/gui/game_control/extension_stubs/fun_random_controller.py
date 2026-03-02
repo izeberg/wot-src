@@ -1,12 +1,23 @@
 from collections import namedtuple
 from skeletons.gui.game_control import IFunRandomController
-from gui.impl.gen import R
 _FunRandomConfig = namedtuple('_FunRandomConfig', ('isEnabled', 'subModes', 'metaProgression'))
 _FunRandomProgressConfig = namedtuple('_FunRandomProgressConfig', ('isEnabled', 'progressions'))
 _FunRandomStatus = namedtuple('_FunRandomStatus', ('state', 'rightBorder', 'primeDelta'))
 _FUN_PROGRESS_CONFIG_STUB = _FunRandomProgressConfig(isEnabled=False, progressions=())
 _FUN_CONFIG_STUB = _FunRandomConfig(isEnabled=False, subModes={}, metaProgression=_FUN_PROGRESS_CONFIG_STUB)
 _FUN_STATUS_STUB = _FunRandomStatus(state=0, rightBorder=0, primeDelta=0)
+
+class _FunHiddenVehicles(IFunRandomController.IFunHiddenVehicles):
+
+    def startVehiclesListening(self):
+        pass
+
+    def stopVehiclesListening(self):
+        pass
+
+    def updateCurrentVehicle(self, desiredSubMode):
+        pass
+
 
 class _FunNotifications(IFunRandomController.IFunNotifications):
 
@@ -149,14 +160,20 @@ class FunRandomController(IFunRandomController):
         self.__subscription = _FunSubscription()
         self.__subModesHolder = _FunSubModesHolder()
         self.__subModesInfo = _FunSubModesInfo()
+        self.__hiddenVehicles = _FunHiddenVehicles()
 
     def fini(self):
+        self.__hiddenVehicles.fini()
         self.__subModesInfo.fini()
         self.__subModesHolder.fini()
         self.__progressions.fini()
         self.__subscription.fini()
         self.__notifications.fini()
         super(FunRandomController, self).fini()
+
+    @property
+    def hiddenVehicles(self):
+        return self.__hiddenVehicles
 
     @property
     def notifications(self):
@@ -184,18 +201,11 @@ class FunRandomController(IFunRandomController):
     def isFunRandomPrbActive(self):
         return False
 
-    def getAssetsPointer(self):
-        return 'undefined'
+    def isOnlyFunRandomVehicle(self, vehicle):
+        return 'fun_random' in vehicle.tags
 
-    def getIconsResRoot(self):
-        if R.images.dyn('fun_random'):
-            return R.images.fun_random.gui.maps.icons.feature.asset_packs.modes.undefined
-        return R.invalid
-
-    def getLocalsResRoot(self):
-        if R.strings.dyn('fun_random'):
-            return R.strings.fun_random.modes.undefined
-        return R.invalid
+    def getConfigurationModel(self):
+        return
 
     def getSettings(self):
         return _FUN_CONFIG_STUB

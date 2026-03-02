@@ -6,7 +6,6 @@ package net.wg.gui.lobby.personalMissions.components
    import flash.geom.Rectangle;
    import flash.ui.Keyboard;
    import net.wg.data.constants.LobbyMetrics;
-   import net.wg.gui.components.advanced.interfaces.IBackButton;
    import net.wg.gui.components.controls.UILoaderAlt;
    import net.wg.gui.components.windows.ScreenBg;
    import net.wg.gui.lobby.personalMissions.components.awardsView.AdditionalAwards;
@@ -20,14 +19,9 @@ package net.wg.gui.lobby.personalMissions.components
    import net.wg.infrastructure.base.meta.impl.PersonalMissionsAwardsViewMeta;
    import net.wg.infrastructure.interfaces.IInnerView;
    import scaleform.clik.constants.InvalidationType;
-   import scaleform.clik.events.ButtonEvent;
    
    public class PersonalMissionsAwardsView extends PersonalMissionsAwardsViewMeta implements IPersonalMissionsAwardsViewMeta, IInnerView
    {
-      
-      private static const BACK_BTN_TOP_MARGIN:int = 58;
-      
-      private static const BACK_BTN_RIGHT_MARGIN:int = 7;
       
       private static const MAIN_AWARDS_X_SHIFT:int = 40;
       
@@ -68,8 +62,6 @@ package net.wg.gui.lobby.personalMissions.components
       
       public var mainAwards:AdditionalAwards = null;
       
-      public var backBtn:IBackButton = null;
-      
       public var bg:UILoaderAlt = null;
       
       public var screenBg:ScreenBg = null;
@@ -98,8 +90,6 @@ package net.wg.gui.lobby.personalMissions.components
          super.configUI();
          App.gameInputMgr.setKeyHandler(Keyboard.ESCAPE,KeyboardEvent.KEY_DOWN,this.onEscapeKeyHandler,true);
          this.vehicleAward.addEventListener(AwardEvent.VEHICLE_PREVIEW,this.onVehicleAwardVehiclePreviewHandler);
-         this.backBtn.addEventListener(ButtonEvent.CLICK,this.onBackBtnClickHandler);
-         this.backBtn.x = BACK_BTN_RIGHT_MARGIN;
          addEventListener(PersonalMissionsItemSlotEvent.UNLOCK,this.onUnlockHandler);
          addEventListener(PersonalMissionsItemSlotEvent.CLICK,this.onClickHandler);
          addChildAt(this._smokeGenerator,getChildIndex(this.bg) + 1);
@@ -116,7 +106,6 @@ package net.wg.gui.lobby.personalMissions.components
          removeEventListener(PersonalMissionsItemSlotEvent.CLICK,this.onClickHandler);
          App.gameInputMgr.clearKeyHandler(Keyboard.ESCAPE,KeyboardEvent.KEY_DOWN,this.onEscapeKeyHandler);
          this.vehicleAward.removeEventListener(AwardEvent.VEHICLE_PREVIEW,this.onVehicleAwardVehiclePreviewHandler);
-         this.backBtn.removeEventListener(ButtonEvent.CLICK,this.onBackBtnClickHandler);
          this.awardHeader.dispose();
          this.awardHeader = null;
          this.screenBg.dispose();
@@ -127,8 +116,6 @@ package net.wg.gui.lobby.personalMissions.components
          this.additionalAwards = null;
          this.mainAwards.dispose();
          this.mainAwards = null;
-         this.backBtn.dispose();
-         this.backBtn = null;
          this._smokeGenerator.dispose();
          this._smokeGenerator = null;
          this.bg.dispose();
@@ -154,11 +141,6 @@ package net.wg.gui.lobby.personalMissions.components
       override protected function draw() : void
       {
          super.draw();
-         if(this._model != null && isInvalid(InvalidationType.DATA))
-         {
-            this.backBtn.label = this._model.backBtnLabel;
-            this.backBtn.descrLabel = this._model.backBtnDescrLabel;
-         }
          if(isInvalid(InvalidationType.SIZE))
          {
             this.updateSize();
@@ -179,11 +161,9 @@ package net.wg.gui.lobby.personalMissions.components
       
       private function updateSize() : void
       {
-         var _loc3_:Boolean = false;
-         this.backBtn.y = BACK_BTN_TOP_MARGIN + this._topOffset;
          var _loc1_:int = _width >> 1;
          var _loc2_:int = _height + (this._bottomOffset > 0 ? 0 : LobbyMetrics.LOBBY_MESSENGER_HEIGHT);
-         _loc3_ = App.appHeight < COMPACT_HEIGHT;
+         var _loc3_:Boolean = App.appHeight < COMPACT_HEIGHT;
          this.vehicleAward.switchCompact(_loc3_);
          this.screenBg.setSize(_width,_loc2_);
          this.awardHeader.isCompact(_loc3_);
@@ -216,11 +196,6 @@ package net.wg.gui.lobby.personalMissions.components
       private function onVehicleAwardVehiclePreviewHandler(param1:AwardEvent) : void
       {
          showVehiclePreviewS();
-      }
-      
-      private function onBackBtnClickHandler(param1:Event) : void
-      {
-         closeViewS();
       }
       
       private function onEscapeKeyHandler(param1:Event) : void

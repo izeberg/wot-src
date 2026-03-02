@@ -1,4 +1,7 @@
-import logging, typing, BigWorld, Event, constants
+from __future__ import absolute_import
+import logging, typing
+from future.utils import viewvalues
+import BigWorld, Event, constants
 from gui.Scaleform.framework import g_entitiesFactories, ViewSettings, ScopeTemplates
 from gui.Scaleform.framework.entities.View import View, ViewKey
 from gui.Scaleform.framework.entities.abstract.LoaderManagerMeta import LoaderManagerMeta
@@ -66,6 +69,9 @@ class ViewLoadParams(object):
     def __repr__(self):
         return ('{}[viewKey={}, loadMode={}, parent={}]').format(self.__class__.__name__, self.__viewKey, self.loadMode, str(self.__parent))
 
+    def __hash__(self):
+        return id(self)
+
     def __eq__(self, other):
         return isinstance(other, ViewLoadParams) and self.__viewKey == other.viewKey and self.__loadMode == other.loadMode and self.__parent == other.parent
 
@@ -107,6 +113,9 @@ class GuiImplViewLoadParams(ViewLoadParams):
         self.__viewClass = viewClass
         self.__scope = scope
         return
+
+    def __hash__(self):
+        return id(self)
 
     def __eq__(self, other):
         return super(GuiImplViewLoadParams, self).__eq__(other) and self.__viewClass == other.viewClass and self.__scope == other.scope
@@ -176,8 +185,8 @@ class LoaderManager(LoaderManagerMeta):
     def isViewLoading(self, key):
         return key in self.__loadingItems
 
-    def viewLoaded(self, alias, name, gfxEntity):
-        viewKey = ViewKey(alias, name)
+    def viewLoaded(self, alias, viewName, view):
+        viewKey = ViewKey(alias, viewName)
         if viewKey in self.__loadingItems:
             item = self.__loadingItems.pop(viewKey)
             uniprof.exitFromRegion(('Loading {} {}').format(viewKey.name, item.uid))
@@ -185,7 +194,7 @@ class LoaderManager(LoaderManagerMeta):
             if item.isCancelled or item.pyEntity.isDisposed():
                 self.onViewLoadCanceled(viewKey, item)
             else:
-                pyEntity = g_entitiesFactories.initialize(item.pyEntity, gfxEntity, item.factoryIdx, extra={'name': item.name})
+                pyEntity = g_entitiesFactories.initialize(item.pyEntity, view, item.factoryIdx, extra={'name': item.name})
                 item.pyEntity.onDispose -= self.__handleViewDispose
                 if pyEntity is not None:
                     pyEntity.getParentWindow().setViewLoaded()
@@ -200,15 +209,15 @@ class LoaderManager(LoaderManagerMeta):
             _logger.error('View loading for key has no associated data: %r', viewKey)
         return
 
-    def viewLoadCanceled(self, alias, name):
-        viewKey = ViewKey(alias, name)
+    def viewLoadCanceled(self, alias, viewName):
+        viewKey = ViewKey(alias, viewName)
         if viewKey in self.__loadingItems:
             _logger.warning('View loading for key %r has been canceled on FE side: %r.', viewKey, self.__loadingItems[viewKey])
             self.cancelLoading(viewKey)
 
-    def viewLoadError(self, alias, name, errorTxt):
-        viewKey = ViewKey(alias, name)
-        msg = ('Error occurred during view {0} loading. Error:{1}').format(viewKey, errorTxt)
+    def viewLoadError(self, alias, viewName, text):
+        viewKey = ViewKey(alias, viewName)
+        msg = ('Error occurred during view {0} loading. Error:{1}').format(viewKey, text)
         _logger.error(msg)
         if viewKey in self.__loadingItems:
             item = self.__loadingItems.pop(viewKey)
@@ -225,11 +234,11 @@ class LoaderManager(LoaderManagerMeta):
             uniprof.exitFromRegion(('Loading {} {}').format(viewKey.name, item.uid))
             BigWorld.notify(BigWorld.EventType.VIEW_LOADED, viewKey.alias, item.uid, viewKey.name)
         else:
-            _logger.warning('View loading for name has no associated data: %s', name)
+            _logger.warning('View loading for name has no associated data: %s', viewName)
         return
 
-    def viewInitializationError(self, alias, name):
-        viewKey = ViewKey(alias, name)
+    def viewInitializationError(self, alias, viewName):
+        viewKey = ViewKey(alias, viewName)
         msg = ("View '{0}' does not implement net.wg.infrastructure.interfaces.IView").format(viewKey)
         _logger.error(msg)
         item = None
@@ -243,7 +252,7 @@ class LoaderManager(LoaderManagerMeta):
         return
 
     def isModalViewLoading(self):
-        for item in self.__loadingItems.itervalues():
+        for item in viewvalues(self.__loadingItems):
             if item.isModal:
                 return True
 

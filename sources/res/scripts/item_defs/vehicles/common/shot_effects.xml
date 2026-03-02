@@ -6087,6 +6087,7 @@
 	</smallArmorPiercing>
 	<smallArmorPiercing1>
 		<caliber>30</caliber>
+		<shotsCount>1</shotsCount>
 		<projectile>
 			<model>objects/misc/shell_glow/shell_medium.model</model>
 			<modelOwnShot>objects/misc/shell_player/shell_player_medium.model</modelOwnShot>
@@ -7684,6 +7685,7 @@
 	</smallArmorPiercing1>
 	<smallArmorPiercing3>
 		<caliber>30</caliber>
+		<shotsCount>3</shotsCount>
 		<projectile>
 			<model>objects/misc/shell_glow/shell_medium.model</model>
 			<modelOwnShot>objects/misc/shell_player/shell_player_medium.model</modelOwnShot>
@@ -9281,6 +9283,7 @@
 	</smallArmorPiercing3>
 	<smallArmorPiercing6>
 		<caliber>30</caliber>
+		<shotsCount>6</shotsCount>
 		<projectile>
 			<model>objects/misc/shell_glow/shell_medium.model</model>
 			<modelOwnShot>objects/misc/shell_player/shell_player_medium.model</modelOwnShot>
@@ -12189,6 +12192,7 @@
 	</smallHighExplosive>
 	<smallHighExplosive1>
 		<caliber>30</caliber>
+		<shotsCount>1</shotsCount>
 		<projectile>
 			<model>objects/fake_model.model</model>
 			<modelOwnShot>objects/misc/shell_player/shell_player_medium.model</modelOwnShot>
@@ -13504,6 +13508,7 @@
 	</smallHighExplosive1>
 	<smallHighExplosive3>
 		<caliber>30</caliber>
+		<shotsCount>3</shotsCount>
 		<projectile>
 			<model>objects/fake_model.model</model>
 			<modelOwnShot>objects/misc/shell_player/shell_player_medium.model</modelOwnShot>
@@ -14819,6 +14824,7 @@
 	</smallHighExplosive3>
 	<smallHighExplosive6>
 		<caliber>30</caliber>
+		<shotsCount>6</shotsCount>
 		<projectile>
 			<model>objects/fake_model.model</model>
 			<modelOwnShot>objects/misc/shell_player/shell_player_medium.model</modelOwnShot>
@@ -19289,6 +19295,7 @@
 	</smallAPCR>
 	<smallAPCR1>
 		<caliber>30</caliber>
+		<shotsCount>1</shotsCount>
 		<projectile>
 			<model>objects/misc/shell_glow/shell_medium.model</model>
 			<modelOwnShot>objects/misc/shell_player/shell_player_medium.model</modelOwnShot>
@@ -20880,6 +20887,7 @@
 	</smallAPCR1>
 	<smallAPCR3>
 		<caliber>30</caliber>
+		<shotsCount>3</shotsCount>
 		<projectile>
 			<model>objects/misc/shell_glow/shell_medium.model</model>
 			<modelOwnShot>objects/misc/shell_player/shell_player_medium.model</modelOwnShot>
@@ -22471,6 +22479,7 @@
 	</smallAPCR3>
 	<smallAPCR6>
 		<caliber>30</caliber>
+		<shotsCount>6</shotsCount>
 		<projectile>
 			<model>objects/misc/shell_glow/shell_medium.model</model>
 			<modelOwnShot>objects/misc/shell_player/shell_player_medium.model</modelOwnShot>
@@ -25624,6 +25633,7 @@
 	</mediumArmorPiercing>
 	<mediumArmorPiercing1>
 		<caliber>60</caliber>
+		<shotsCount>1</shotsCount>
 		<projectile>
 			<model>objects/misc/shell_glow/shell_medium.model</model>
 			<modelOwnShot>objects/misc/shell_player/shell_player_medium.model</modelOwnShot>
@@ -27182,6 +27192,7 @@
 	</mediumArmorPiercing1>
 	<mediumArmorPiercing3>
 		<caliber>60</caliber>
+		<shotsCount>3</shotsCount>
 		<projectile>
 			<model>objects/misc/shell_glow/shell_medium.model</model>
 			<modelOwnShot>objects/misc/shell_player/shell_player_medium.model</modelOwnShot>
@@ -28740,6 +28751,7 @@
 	</mediumArmorPiercing3>
 	<mediumArmorPiercing6>
 		<caliber>60</caliber>
+		<shotsCount>6</shotsCount>
 		<projectile>
 			<model>objects/misc/shell_glow/shell_medium.model</model>
 			<modelOwnShot>objects/misc/shell_player/shell_player_medium.model</modelOwnShot>
@@ -31636,6 +31648,7 @@
 	</mediumHighExplosive>
 	<mediumHighExplosive1>
 		<caliber>60</caliber>
+		<shotsCount>1</shotsCount>
 		<projectile>
 			<model>objects/fake_model.model</model>
 			<modelOwnShot>objects/misc/shell_player/shell_player_medium.model</modelOwnShot>
@@ -32978,6 +32991,7 @@
 	</mediumHighExplosive1>
 	<mediumHighExplosive3>
 		<caliber>60</caliber>
+		<shotsCount>3</shotsCount>
 		<projectile>
 			<model>objects/fake_model.model</model>
 			<modelOwnShot>objects/misc/shell_player/shell_player_medium.model</modelOwnShot>
@@ -34320,6 +34334,7 @@
 	</mediumHighExplosive3>
 	<mediumHighExplosive6>
 		<caliber>60</caliber>
+		<shotsCount>6</shotsCount>
 		<projectile>
 			<model>objects/fake_model.model</model>
 			<modelOwnShot>objects/misc/shell_player/shell_player_medium.model</modelOwnShot>
@@ -38815,6 +38830,7 @@
 	</mediumAPCR>
 	<mediumAPCR1>
 		<caliber>60</caliber>
+		<shotsCount>1</shotsCount>
 		<projectile>
 			<model>objects/misc/shell_glow/shell_medium.model</model>
 			<modelOwnShot>objects/misc/shell_player/shell_player_medium.model</modelOwnShot>
@@ -40447,6 +40463,7 @@
 	</mediumAPCR1>
 	<mediumAPCR3>
 		<caliber>60</caliber>
+		<shotsCount>3</shotsCount>
 		<projectile>
 			<model>objects/misc/shell_glow/shell_medium.model</model>
 			<modelOwnShot>objects/misc/shell_player/shell_player_medium.model</modelOwnShot>
@@ -42079,6 +42096,7 @@
 	</mediumAPCR3>
 	<mediumAPCR6>
 		<caliber>60</caliber>
+		<shotsCount>6</shotsCount>
 		<projectile>
 			<model>objects/misc/shell_glow/shell_medium.model</model>
 			<modelOwnShot>objects/misc/shell_player/shell_player_medium.model</modelOwnShot>
@@ -45255,6 +45273,7 @@
 	</mainArmorPiercing>
 	<mainArmorPiercing1>
 		<caliber>90</caliber>
+		<shotsCount>1</shotsCount>
 		<projectile>
 			<model>objects/misc/shell_glow/shell_heavy.model</model>
 			<modelOwnShot>objects/misc/shell_player/shell_player_medium.model</modelOwnShot>
@@ -48101,6 +48120,7 @@
 	</mainHighExplosive>
 	<mainHighExplosive1>
 		<caliber>90</caliber>
+		<shotsCount>1</shotsCount>
 		<projectile>
 			<model>objects/misc/shell_glow/shell_heavy.model</model>
 			<modelOwnShot>objects/misc/shell_player/shell_player_medium.model</modelOwnShot>
@@ -52491,6 +52511,7 @@
 	</mainAPCR>
 	<mainAPCR1>
 		<caliber>90</caliber>
+		<shotsCount>1</shotsCount>
 		<projectile>
 			<model>objects/misc/shell_glow/shell_heavy.model</model>
 			<modelOwnShot>objects/misc/shell_player/shell_player_medium.model</modelOwnShot>

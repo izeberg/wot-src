@@ -16,10 +16,6 @@ package net.wg.gui.lobby.personalMissions.data
       
       public var operationTitle:OperationTitleVO = null;
       
-      public var backBtnLabel:String = "";
-      
-      public var backBtnDescrLabel:String = "";
-      
       public function OperationsHeaderVO(param1:Object)
       {
          super(param1);

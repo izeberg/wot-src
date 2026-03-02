@@ -464,11 +464,11 @@
 		<shortDescriptionSpecial>#japan_vehicles:J49_Kame_short_special</shortDescriptionSpecial>
 		<longDescriptionSpecial>#japan_vehicles:J49_Kame_long_special</longDescriptionSpecial>
 		<price>
-			100
+			10150
 			<gold/>
 		</price>
 		<notInShop>true</notInShop>
-		<tags>mediumTank role_MT_support HD mediumTank2 improvedVentilation_class2_user aimingStabilizer_class1_user extraHealthReserve_class2_user antifragmentationLining_medium_user earn_crystals secret testTank</tags>
+		<tags>mediumTank role_MT_support HD mediumTank2 improvedVentilation_class2_user aimingStabilizer_class1_user extraHealthReserve_class2_user antifragmentationLining_medium_user earn_crystals</tags>
 		<level>9</level>
 	</J49_Kame>
 	<J48_Saryuda>
@@ -479,11 +479,11 @@
 		<shortDescriptionSpecial>#japan_vehicles:J48_Saryuda_short_special</shortDescriptionSpecial>
 		<longDescriptionSpecial>#japan_vehicles:J48_Saryuda_long_special</longDescriptionSpecial>
 		<price>
-			100
+			10500
 			<gold/>
 		</price>
 		<notInShop>true</notInShop>
-		<tags>AT-SPG role_ATSPG_universal siegeMode dualgun charger HD heavyAT-SPG improvedVentilation_class1_user extraHealthReserve_class1_user antifragmentationLining_heavy_user special secret testTank</tags>
+		<tags>AT-SPG role_ATSPG_universal siegeMode dualgun charger HD heavyAT-SPG improvedVentilation_class1_user extraHealthReserve_class1_user antifragmentationLining_heavy_user special builtinRepairkit_user</tags>
 		<level>9</level>
 	</J48_Saryuda>
 	<J51_Ashigaru>

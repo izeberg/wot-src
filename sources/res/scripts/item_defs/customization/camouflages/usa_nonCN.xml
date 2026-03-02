@@ -21,7 +21,10 @@
 				<nations>usa</nations>
 			</include>
 			<exclude>
-				<vehicles>usa:A13_T34_hvy_BF usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A13_T34_hvy_BF</vehicles>
+			</exclude>
+			<exclude>
+				<tags>excluded_from_customization</tags>
 			</exclude>
 		</vehicleFilter>
 		<camouflage>
@@ -585,7 +588,10 @@
 				<nations>usa</nations>
 			</include>
 			<exclude>
-				<vehicles>usa:A13_T34_hvy_BF usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A13_T34_hvy_BF</vehicles>
+			</exclude>
+			<exclude>
+				<tags>excluded_from_customization</tags>
 			</exclude>
 		</vehicleFilter>
 		<camouflage>
@@ -1149,7 +1155,10 @@
 				<nations>usa</nations>
 			</include>
 			<exclude>
-				<vehicles>usa:A13_T34_hvy_BF usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A13_T34_hvy_BF</vehicles>
+			</exclude>
+			<exclude>
+				<tags>excluded_from_customization</tags>
 			</exclude>
 		</vehicleFilter>
 		<camouflage>
@@ -1709,7 +1718,10 @@
 				<nations>usa</nations>
 			</include>
 			<exclude>
-				<vehicles>usa:A13_T34_hvy_BF usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A13_T34_hvy_BF</vehicles>
+			</exclude>
+			<exclude>
+				<tags>excluded_from_customization</tags>
 			</exclude>
 		</vehicleFilter>
 		<camouflage>
@@ -2269,7 +2281,10 @@
 				<nations>usa</nations>
 			</include>
 			<exclude>
-				<vehicles>usa:A13_T34_hvy_BF usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A13_T34_hvy_BF</vehicles>
+			</exclude>
+			<exclude>
+				<tags>excluded_from_customization</tags>
 			</exclude>
 		</vehicleFilter>
 		<camouflage>

@@ -65,6 +65,7 @@ class SETTINGS_SECTIONS(CONST_CONTAINER):
     BATTLE_EVENTS = 'FEEDBACK_BATTLE_EVENTS'
     BATTLE_BORDER_MAP = 'FEEDBACK_BORDER_MAP'
     QUESTS_PROGRESS = 'QUESTS_PROGRESS'
+    SITUATIONAL_PERKS = 'FEEDBACK_SITUATIONAL_PERKS'
     UI_STORAGE = 'UI_STORAGE'
     UI_STORAGE_2 = 'UI_STORAGE_2'
     BATTLE_MATTERS_QUESTS = 'BATTLE_MATTERS_QUESTS'
@@ -189,6 +190,7 @@ class ServerSettingsManager(object):
     BATTLE_EVENTS = settings_constants.BATTLE_EVENTS
     BATTLE_BORDER_MAP = settings_constants.BATTLE_BORDER_MAP
     QUESTS_PROGRESS = settings_constants.QUESTS_PROGRESS
+    SITUATIONAL_PERKS = settings_constants.SITUATIONAL_PERKS
     SESSION_STATS = settings_constants.SESSION_STATS
     BATTLE_COMM = settings_constants.BattleCommStorageKeys
     BATTLE_PASS = settings_constants.BattlePassStorageKeys
@@ -553,11 +555,8 @@ class ServerSettingsManager(object):
                                               GuiSettingsBehavior.RANKED_WELCOME_VIEW_STARTED: 2, 
                                               GuiSettingsBehavior.CLAN_SUPPLY_INTRO_SHOWN: 4, 
                                               GuiSettingsBehavior.CREW_MENTORING_LICENSE_AWARDS_SHOWN: 18, 
-                                              GuiSettingsBehavior.CREW_NPS_INTRO_SHOWN: 19, 
-                                              GuiSettingsBehavior.CREW_NPS_WELCOME_SHOWN: 20, 
-                                              GuiSettingsBehavior.CREW_5075_WELCOME_SHOWN: 21, 
+                                              GuiSettingsBehavior.CREW_PE_WELCOME_SHOWN: 22, 
                                               GuiSettingsBehavior.PRESTIGE_FIRST_ENTRY_NOTIFICATION_SHOWN: 23, 
-                                              GuiSettingsBehavior.CREW_22_WELCOME_SHOWN: 24, 
                                               GuiSettingsBehavior.DISPLAY_PLATOON_MEMBER_CLICKED: 25, 
                                               GuiSettingsBehavior.VEH_POST_PROGRESSION_UNLOCK_MSG_NEED_SHOW: 26, 
                                               GuiSettingsBehavior.BIRTHDAY_CALENDAR_INTRO_SHOWED: 27, 
@@ -702,6 +701,25 @@ class ServerSettingsManager(object):
                                                  BATTLE_MATTERS_KEYS.QUEST_PROGRESS: Offset(8, 4294967040)}), 
        SETTINGS_SECTIONS.QUESTS_PROGRESS: Section(masks={}, offsets={QUESTS_PROGRESS.VIEW_TYPE: Offset(0, 3), 
                                            QUESTS_PROGRESS.DISPLAY_TYPE: Offset(2, 3 << 2)}), 
+       SETTINGS_SECTIONS.SITUATIONAL_PERKS: Section(masks={SITUATIONAL_PERKS.ARMOR_PATCHING: 0, 
+                                             SITUATIONAL_PERKS.COMMANDER_EAGLE_EYE: 1, 
+                                             SITUATIONAL_PERKS.COMMANDER_EMERGENCY: 2, 
+                                             SITUATIONAL_PERKS.COMMANDER_TUTOR: 3, 
+                                             SITUATIONAL_PERKS.COMMANDER_COORDINATION: 4, 
+                                             SITUATIONAL_PERKS.COMMANDER_HOLD_LINE: 5, 
+                                             SITUATIONAL_PERKS.COMMANDER_STAY_SHARP: 6, 
+                                             SITUATIONAL_PERKS.GUNNER_FOCUS: 7, 
+                                             SITUATIONAL_PERKS.GUNNER_LONE_WOLF: 8, 
+                                             SITUATIONAL_PERKS.DRIVER_MOTOR_EXPERT: 9, 
+                                             SITUATIONAL_PERKS.DRIVER_SUSPENSION_REPAIR: 10, 
+                                             SITUATIONAL_PERKS.DRIVER_BULLETPROOF: 11, 
+                                             SITUATIONAL_PERKS.LOADER_DESPERADO: 12, 
+                                             SITUATIONAL_PERKS.LOADER_INTUITION: 13, 
+                                             SITUATIONAL_PERKS.LOADER_MELEE: 14, 
+                                             SITUATIONAL_PERKS.LOADER_SECOND_CHANCE: 15, 
+                                             SITUATIONAL_PERKS.RADIOMAN_SIDE_BY_SIDE: 16, 
+                                             SITUATIONAL_PERKS.RADIOMAN_EXPERT: 17, 
+                                             SITUATIONAL_PERKS.RADIOMAN_THREAT_SEARCH: 18}, offsets={}), 
        SETTINGS_SECTIONS.SESSION_STATS: Section(masks={SESSION_STATS.IS_NOT_NEEDED_RESET_STATS_EVERY_DAY: 0, 
                                          SESSION_STATS.IS_NEEDED_SAVE_CURRENT_TAB: 1, 
                                          SESSION_STATS.CURRENT_TAB: 2, 
@@ -1358,7 +1376,7 @@ class ServerSettingsManager(object):
     @adisp_process
     def _updateToVersion(self, callback=None):
         currentVersion = self.settingsCache.getVersion()
-        data = {'gameData': {}, 'gameExtData': {}, 'gameExtData2': {}, 'gameplayData': {}, 'controlsData': {}, 'aimData': {}, 'markersData': {}, 'graphicsData': {}, 'marksOnGun': {}, 'fallout': {}, 'carousel_filter': {}, 'feedbackDamageIndicator': {}, 'feedbackDamageLog': {}, 'feedbackBattleEvents': {}, 'onceOnlyHints': {}, 'onceOnlyHints2': {}, 'uiStorage': {}, SETTINGS_SECTIONS.UI_STORAGE_2: {}, 'epicCarouselFilter2': {}, 'rankedCarouselFilter1': {}, 'rankedCarouselFilter2': {}, 'comp7CarouselFilter1': {}, 'comp7CarouselFilter2': {}, 'sessionStats': {}, 'battleComm': {}, 'dogTags': {}, 'battleHud': {}, 'spgAim': {}, GUI_START_BEHAVIOR: {}, 'battlePassStorage': {}, SETTINGS_SECTIONS.CONTOUR: {}, SETTINGS_SECTIONS.ROYALE_CAROUSEL_FILTER_1: {}, SETTINGS_SECTIONS.ROYALE_CAROUSEL_FILTER_2: {}, SETTINGS_SECTIONS.SENIORITY_AWARDS_STORAGE: {}, 'clear': {}, 'delete': [], SETTINGS_SECTIONS.LIMITED_UI_1: {}, SETTINGS_SECTIONS.LIMITED_UI_2: {}, SETTINGS_SECTIONS.LIMITED_UI_PERMANENT_1: {}, SETTINGS_SECTIONS.LIMITED_UI_PERMANENT_2: {}, SETTINGS_SECTIONS.BATTLE_MATTERS_QUESTS: {}, SETTINGS_SECTIONS.BATTLE_BORDER_MAP: {}, SETTINGS_SECTIONS.ADVANCED_ACHIEVEMENTS_STORAGE: {}, SETTINGS_SECTIONS.CAROUSEL_FILTER_3: {}, SETTINGS_SECTIONS.RANKED_CAROUSEL_FILTER_3: {}, SETTINGS_SECTIONS.EPICBATTLE_CAROUSEL_FILTER_3: {}, SETTINGS_SECTIONS.MAPBOX_CAROUSEL_FILTER_3: {}, SETTINGS_SECTIONS.COMP7_CAROUSEL_FILTER_3: {}, SETTINGS_SECTIONS.COMP7_LIGHT_CAROUSEL_FILTER_3: {}, SETTINGS_SECTIONS.FUN_RANDOM_CAROUSEL_FILTER_3: {}, SETTINGS_SECTIONS.PERSONAL_MISSION_3: {}}
+        data = {'gameData': {}, 'gameExtData': {}, 'gameExtData2': {}, 'gameplayData': {}, 'controlsData': {}, 'aimData': {}, 'markersData': {}, 'graphicsData': {}, 'marksOnGun': {}, 'fallout': {}, 'carousel_filter': {}, 'feedbackDamageIndicator': {}, 'feedbackDamageLog': {}, 'feedbackBattleEvents': {}, 'onceOnlyHints': {}, 'onceOnlyHints2': {}, 'uiStorage': {}, SETTINGS_SECTIONS.UI_STORAGE_2: {}, 'epicCarouselFilter2': {}, 'rankedCarouselFilter1': {}, 'rankedCarouselFilter2': {}, 'comp7CarouselFilter1': {}, 'comp7CarouselFilter2': {}, 'sessionStats': {}, 'battleComm': {}, 'dogTags': {}, 'battleHud': {}, 'spgAim': {}, GUI_START_BEHAVIOR: {}, 'battlePassStorage': {}, SETTINGS_SECTIONS.CONTOUR: {}, SETTINGS_SECTIONS.ROYALE_CAROUSEL_FILTER_1: {}, SETTINGS_SECTIONS.ROYALE_CAROUSEL_FILTER_2: {}, SETTINGS_SECTIONS.SENIORITY_AWARDS_STORAGE: {}, 'clear': {}, 'delete': [], SETTINGS_SECTIONS.LIMITED_UI_1: {}, SETTINGS_SECTIONS.LIMITED_UI_2: {}, SETTINGS_SECTIONS.LIMITED_UI_PERMANENT_1: {}, SETTINGS_SECTIONS.LIMITED_UI_PERMANENT_2: {}, SETTINGS_SECTIONS.BATTLE_MATTERS_QUESTS: {}, SETTINGS_SECTIONS.BATTLE_BORDER_MAP: {}, SETTINGS_SECTIONS.ADVANCED_ACHIEVEMENTS_STORAGE: {}, SETTINGS_SECTIONS.CAROUSEL_FILTER_3: {}, SETTINGS_SECTIONS.RANKED_CAROUSEL_FILTER_3: {}, SETTINGS_SECTIONS.EPICBATTLE_CAROUSEL_FILTER_3: {}, SETTINGS_SECTIONS.MAPBOX_CAROUSEL_FILTER_3: {}, SETTINGS_SECTIONS.COMP7_CAROUSEL_FILTER_3: {}, SETTINGS_SECTIONS.COMP7_LIGHT_CAROUSEL_FILTER_3: {}, SETTINGS_SECTIONS.FUN_RANDOM_CAROUSEL_FILTER_3: {}, SETTINGS_SECTIONS.PERSONAL_MISSION_3: {}, SETTINGS_SECTIONS.SITUATIONAL_PERKS: {}}
         yield migrateToVersion(currentVersion, self._core, data)
         self._setSettingsSections(data)
         callback(self)
@@ -1463,6 +1481,9 @@ class ServerSettingsManager(object):
         feedbackBattleEvents = data.get('feedbackBattleEvents', {})
         if feedbackBattleEvents:
             settings[SETTINGS_SECTIONS.BATTLE_EVENTS] = self._buildSectionSettings(SETTINGS_SECTIONS.BATTLE_EVENTS, feedbackBattleEvents)
+        feedbackSituationalPerks = data.get(SETTINGS_SECTIONS.SITUATIONAL_PERKS, {})
+        if feedbackSituationalPerks:
+            settings[SETTINGS_SECTIONS.SITUATIONAL_PERKS] = self._buildSectionSettings(SETTINGS_SECTIONS.SITUATIONAL_PERKS, feedbackSituationalPerks)
         onceOnlyHints = data.get('onceOnlyHints', {})
         clearOnceOnlyHints = clear.get('onceOnlyHints', 0)
         if onceOnlyHints or clearOnceOnlyHints:

@@ -11,6 +11,8 @@
 		<spacedArmor>#0055FF</spacedArmor>
 		<spacedArmor>#0000FF</spacedArmor>
 		<spacedArmor>#261774</spacedArmor>
+		<ricochet>#AB5EAB</ricochet>
+		<noDamage>#99C8CC</noDamage>
 	</colorList>
 	<blindColorList>
 		<normalArmor>#333333</normalArmor>
@@ -23,6 +25,8 @@
 		<spacedArmor>#9F9999</spacedArmor>
 		<spacedArmor>#BBBFBB</spacedArmor>
 		<spacedArmor>#015680</spacedArmor>
+		<ricochet>#0E888C</ricochet>
+		<noDamage>#BFBFBF</noDamage>
 	</blindColorList>
 	<tierList>
 		<tier>
@@ -35,6 +39,7 @@
 				<min>5</min>
 				<max>30</max>
 			</spacedArmor>
+			<defaultVehicle>germany:G12_Ltraktor</defaultVehicle>
 		</tier>
 		<tier>
 			<number>2</number>
@@ -46,6 +51,7 @@
 				<min>5</min>
 				<max>45</max>
 			</spacedArmor>
+			<defaultVehicle>germany:G06_PzII</defaultVehicle>
 		</tier>
 		<tier>
 			<number>3</number>
@@ -57,6 +63,7 @@
 				<min>5</min>
 				<max>55</max>
 			</spacedArmor>
+			<defaultVehicle>germany:G102_Pz_III</defaultVehicle>
 		</tier>
 		<tier>
 			<number>4</number>
@@ -68,6 +75,7 @@
 				<min>10</min>
 				<max>65</max>
 			</spacedArmor>
+			<defaultVehicle>germany:G10_PzIII_AusfJ</defaultVehicle>
 		</tier>
 		<tier>
 			<number>5</number>
@@ -79,6 +87,7 @@
 				<min>10</min>
 				<max>85</max>
 			</spacedArmor>
+			<defaultVehicle>france:F112_M10_RBFM</defaultVehicle>
 		</tier>
 		<tier>
 			<number>6</number>
@@ -90,6 +99,7 @@
 				<min>15</min>
 				<max>110</max>
 			</spacedArmor>
+			<defaultVehicle>ussr:R108_T34_85M</defaultVehicle>
 		</tier>
 		<tier>
 			<number>7</number>
@@ -101,6 +111,7 @@
 				<min>15</min>
 				<max>140</max>
 			</spacedArmor>
+			<defaultVehicle>usa:A130_Super_Hellcat</defaultVehicle>
 		</tier>
 		<tier>
 			<number>8</number>
@@ -112,6 +123,7 @@
 				<min>20</min>
 				<max>170</max>
 			</spacedArmor>
+			<defaultVehicle>italy:It13_Progetto_M35_mod_46</defaultVehicle>
 		</tier>
 		<tier>
 			<number>9</number>
@@ -123,6 +135,7 @@
 				<min>25</min>
 				<max>190</max>
 			</spacedArmor>
+			<defaultVehicle>ussr:R151_Object_257_2</defaultVehicle>
 		</tier>
 		<tier>
 			<number>10</number>
@@ -134,6 +147,7 @@
 				<min>30</min>
 				<max>210</max>
 			</spacedArmor>
+			<defaultVehicle>france:F18_Bat_Chatillon25t</defaultVehicle>
 		</tier>
 		<tier>
 			<number>11</number>
@@ -145,6 +159,7 @@
 				<min>30</min>
 				<max>225</max>
 			</spacedArmor>
+			<defaultVehicle>usa:A183_XM69_Hacker</defaultVehicle>
 		</tier>
 	</tierList>
 	<blendingAlpha>

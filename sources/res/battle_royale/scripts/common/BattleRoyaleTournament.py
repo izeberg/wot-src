@@ -81,7 +81,7 @@ class BattleRoyaleTourmanentToken(object):
                 self.whatWrong = ('Wrong role {}').format(role)
                 return
             self.isValid = True
-        except:
+        except Exception:
             self.whatWrong = 'Something wrong'
             LOG_CURRENT_EXCEPTION()
 

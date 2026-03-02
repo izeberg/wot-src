@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.789079 -1.012912 -2.971444</min>
+		<max>1.797509 0.715176 3.167890</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/american/A170_M_VII_Y/crash/lod0/Hull</nodefullVisual>
+	<parent>vehicles/american/A170_M_VII_Y/crash/lod1/Hull</parent>
+	<extent>32.000000</extent>
+</root>

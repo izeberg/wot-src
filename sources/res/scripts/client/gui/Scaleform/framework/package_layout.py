@@ -1,4 +1,6 @@
+from __future__ import absolute_import
 import importlib, logging
+from future.utils import viewvalues
 from frameworks.wulf import WindowLayer
 from gui.Scaleform.framework import g_entitiesFactories, GroupedViewSettings
 from gui.Scaleform.framework.managers import context_menu
@@ -48,7 +50,7 @@ class PackageBusinessHandler(object):
         self._app.loadView(SFViewLoadParams(alias, name=name, parent=parent), *args, **kwargs)
 
     def loadViewWithGenName(self, alias, parent=None, *args, **kwargs):
-        self._app.loadView(SFViewLoadParams(alias, name=('rw{0}').format(self.__counter.next()), parent=parent), *args, **kwargs)
+        self._app.loadView(SFViewLoadParams(alias, name=('rw{0}').format(self.__counter.nextSequenceID), parent=parent), *args, **kwargs)
 
     def loadViewBySharedEvent(self, event):
         self._app.loadView(event.loadParams)
@@ -113,7 +115,7 @@ class PackageImporter(object):
         return path in self._handlers
 
     def getLoadedPackages(self):
-        return self._handlers.keys()
+        return list(self._handlers)
 
     def getAliasesByPackage(self, path):
         return self._aliases.get(path)
@@ -124,7 +126,7 @@ class PackageImporter(object):
             load(path, arenaGuiType, isExtention)
 
         appNS = app.appNS
-        for handlers in self._handlers.itervalues():
+        for handlers in viewvalues(self._handlers):
             for handler in handlers:
                 required = handler.getAppNS()
                 if required is None or required == appNS:
@@ -139,7 +141,7 @@ class PackageImporter(object):
 
     def unload(self, seq=None):
         if seq is None:
-            seq = self._handlers.keys()
+            seq = list(self._handlers)
         for path in seq:
             _logger.debug('Tries to unload GUI package "%s"', path)
             if path in self._handlers:

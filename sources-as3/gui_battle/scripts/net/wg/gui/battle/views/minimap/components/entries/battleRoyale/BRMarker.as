@@ -189,6 +189,16 @@ package net.wg.gui.battle.views.minimap.components.entries.battleRoyale
          return 0;
       }
       
+      public function get isVehicleLabelVisible() : Boolean
+      {
+         return false;
+      }
+      
+      public function get isHpCircleVisible() : Boolean
+      {
+         return false;
+      }
+      
       private function get colorSchemeName() : String
       {
          return "vm_" + this._entryName;

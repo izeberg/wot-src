@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/american/A194_AHT_7/crash/lod2/Chassis</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.602925 0.100080 -2.765968</min>
+		<max>1.602926 0.922489 0.433089</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/american/A194_AHT_7/crash/lod1/Chassis</nodefullVisual>
+</root>

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing, SCALEFORM
 from Event import Event
 from gui.browser import BrowserViewWebHandlers

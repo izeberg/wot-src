@@ -47,10 +47,10 @@ msgid "reward/viewTitle"
 msgstr "REWARD RECEIVED!"
 
 msgid "subscriptionItem/active"
-msgstr "Active."
+msgstr "Active"
 
 msgid "subscriptionItem/activeUntil"
-msgstr "Active until %(chargeDate)"
+msgstr "Expires on %(chargeDate)"
 
 msgid "subscriptionItem/button/activate"
 msgstr "Subscribe"
@@ -82,17 +82,23 @@ msgstr "Select"
 msgid "subscriptionItem/button/subscribe"
 msgstr "Subscribe"
 
+msgid "subscriptionItem/button/upgrade"
+msgstr "Upgrade"
+
 msgid "subscriptionItem/cancelled"
-msgstr "Canceled."
+msgstr "Canceled"
 
 msgid "subscriptionItem/nextCharge"
 msgstr "Extends on %(chargeDate)"
+
+msgid "subscriptionItem/plan"
+msgstr "-day plan"
 
 msgid "subscriptionItem/timerLabel"
 msgstr "Offer ends in:"
 
 msgid "subtitle"
-msgstr "Take advantage of even more opportunities in the game"
+msgstr "Enjoy everything the game has to offer"
 
 msgid "title"
 msgstr "SUBSCRIPTIONS"

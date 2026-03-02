@@ -115,10 +115,10 @@ msgid "editConfirm/title/normal"
 msgstr "Apply the valuable awards ribbon changes?"
 
 msgid "editView/footer/button/cancel"
-msgstr "Cancel Changes"
+msgstr "Discard and Leave"
 
 msgid "editView/footer/button/save"
-msgstr "Apply and Exit"
+msgstr "Apply and Leave"
 
 msgid "editView/header/checkbox"
 msgstr "Automatic Display"
@@ -295,6 +295,36 @@ msgstr " Last battle: %(lastVisitDate)s at %(lastVisitTime)s"
 
 msgid "summary/accountInfo/registrationDate"
 msgstr "Account created: %(registrationDate)s"
+
+msgid "summary/achievements/customization/background"
+msgstr "Background"
+
+msgid "summary/achievements/customization/backgrounds/default"
+msgstr "Default"
+
+msgid "summary/achievements/customization/backgrounds/fiery"
+msgstr "Fire"
+
+msgid "summary/achievements/customization/backgrounds/golden"
+msgstr "Gold"
+
+msgid "summary/achievements/customization/backgrounds/legendary"
+msgstr "Legendary"
+
+msgid "summary/achievements/customization/backgrounds/retro"
+msgstr "Retro"
+
+msgid "summary/achievements/customization/backgrounds/smashing"
+msgstr "Explosive"
+
+msgid "summary/achievements/customization/discard"
+msgstr "Discard and Leave"
+
+msgid "summary/achievements/customization/ribbon"
+msgstr "Ribbon"
+
+msgid "summary/achievements/customization/save"
+msgstr "Apply and Leave"
 
 msgid "summary/achievements/mastery/counter"
 msgstr "%(current)s / %(total)s"

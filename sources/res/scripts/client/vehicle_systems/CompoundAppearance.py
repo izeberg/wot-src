@@ -465,7 +465,7 @@ class CompoundAppearance(CommonTankAppearance, CallbackDelayer):
         if not self._vehicle.isAlive() or self.crashedTracksController is None:
             return
         pairsCnt = self.crashedTracksController.getPairsCnt()
-        isLeftTrack = True if index < pairsCnt else False
+        isLeftTrack = index < pairsCnt
         trackIndex = index % pairsCnt
         if hitPoint is None:
             hitPoint = DEFAULT_TRACK_HIT_VECTOR

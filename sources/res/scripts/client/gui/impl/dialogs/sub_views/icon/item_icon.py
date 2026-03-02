@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging
 from gui.impl.gen import R
 from gui.impl.dialogs.sub_views.common import IconSetData

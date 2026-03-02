@@ -19,15 +19,6 @@ msgstr ""
 msgid "01_karelia/name"
 msgstr "Karelia"
 
-msgid "01_karelia_fp/description"
-msgstr ""
-"Two avenues of attack are divided by a swamp. The eastern side is ideal for "
-"trench warfare. The western side is favorable to a hard push. The swamp "
-"provides a risky but perhaps unexpected attack route."
-
-msgid "01_karelia_fp/name"
-msgstr "Karelia (Winter)"
-
 msgid "02_malinovka/description"
 msgstr ""
 "Initial staging areas are separated by a wide open field, ideal for "
@@ -38,17 +29,6 @@ msgstr ""
 
 msgid "02_malinovka/name"
 msgstr "Malinovka"
-
-msgid "02_malinovka_fp/description"
-msgstr ""
-"Initial staging areas are separated by a wide open field, ideal for "
-"artillery and defensive operations. Concealment and cover including woods, "
-"hills, and farmhouses can be decisive. Attackers should consider flanking "
-"maneuvers, but another option is a well-coordinated high-speed assault "
-"across the field, which could either bring victory or a bloody loss."
-
-msgid "02_malinovka_fp/name"
-msgstr "Malinovka (Winter)"
 
 msgid "03_campania_big/description"
 msgstr ""
@@ -80,17 +60,6 @@ msgstr ""
 
 msgid "05_prohorovka/name"
 msgstr "Prokhorovka"
-
-msgid "05_prohorovka_fp/description"
-msgstr ""
-"Generally open terrain featuring a large hill and a railway embankment. "
-"Scattered trees provide concealment for tank destroyers. On the offensive, "
-"strike against the enemy's flanks, but do not leave your own flanks "
-"unguarded. Artillery enjoys good fields of fire, but is still vulnerable to "
-"raids by light tanks."
-
-msgid "05_prohorovka_fp/name"
-msgstr "Prokhorovka (Winter)"
 
 msgid "06_ensk/description"
 msgstr ""
@@ -207,9 +176,6 @@ msgstr ""
 msgid "10_hills/name"
 msgstr "Mines"
 
-msgid "10_hills_lunar_26/name"
-msgstr "Mines"
-
 msgid "112_eiffel_tower_ctf/description"
 msgstr ""
 "Tight winding streets provide great cover for allied heavy vehicles. The "
@@ -316,6 +282,30 @@ msgstr ""
 
 msgid "13_erlenberg/name"
 msgstr "Erlenberg"
+
+msgid "140_fall_tanks/description"
+msgstr ""
+"A chaotic race across crumbling platforms and treacherous drops, where "
+"reaching checkpoints first is key to victory."
+
+msgid "140_fall_tanks/name"
+msgstr "Old School"
+
+msgid "141_dash_to_go/description"
+msgstr ""
+"A chaotic race across crumbling platforms and treacherous drops, where "
+"reaching checkpoints first is key to victory."
+
+msgid "141_dash_to_go/name"
+msgstr "New School"
+
+msgid "142_road_to_dash/description"
+msgstr ""
+"A chaotic race across crumbling platforms and treacherous drops, where "
+"reaching checkpoints first is key to victory."
+
+msgid "142_road_to_dash/name"
+msgstr "Brawl School"
 
 msgid "14_siegfried_line/description"
 msgstr ""
@@ -459,9 +449,6 @@ msgstr ""
 msgid "28_desert/name"
 msgstr "Sand River"
 
-msgid "28_desert_lunar_26/name"
-msgstr "Sand River"
-
 msgid "29_el_hallouf/description"
 msgstr ""
 "A spacious valley sprinkled with boulders and trees lies in the center of "
@@ -512,9 +499,6 @@ msgstr ""
 " of the map may offer better avenues for attacks and feints."
 
 msgid "35_steppes/name"
-msgstr "Steppes"
-
-msgid "35_steppes_lunar_26/name"
 msgstr "Steppes"
 
 msgid "35_steppes_wt/name"
@@ -585,9 +569,6 @@ msgstr ""
 "line of attack."
 
 msgid "59_asia_great_wall/name"
-msgstr "Empire's Border"
-
-msgid "59_asia_great_wall_lunar_26/name"
 msgstr "Empire's Border"
 
 msgid "60_asia_miao/description"

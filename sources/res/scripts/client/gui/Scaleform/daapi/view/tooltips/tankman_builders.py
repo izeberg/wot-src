@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.Scaleform.genConsts.TOOLTIPS_CONSTANTS import TOOLTIPS_CONSTANTS
 from gui.impl import backport
 from gui.impl.backport.backport_tooltip import DecoratedTooltipWindow
@@ -62,8 +63,8 @@ class SpecialTankmanTooltipBuilder(DataBuilder):
 
 class CrewPerkTooltipData(ToolTipBaseData):
 
-    def __init__(self, context):
-        super(CrewPerkTooltipData, self).__init__(context, TOOLTIPS_CONSTANTS.CREW_PERK_GF)
+    def __init__(self, context, toolTipType=TOOLTIPS_CONSTANTS.CREW_PERK_GF):
+        super(CrewPerkTooltipData, self).__init__(context, toolTipType)
 
     def getDisplayableData(self, skillName, skillRole, tankmanId, skillLevel=None, showAdditionalInfo=True, crewCustomName='', isBonus=None, skillIdx=-1, guiTankman=None, vehicle=None, *args, **kwargs):
         parent = kwargs.pop('parent', None)
@@ -106,7 +107,7 @@ class CommanderBonusTooltipData(ToolTipBaseData):
         super(CommanderBonusTooltipData, self).__init__(context, TOOLTIPS_CONSTANTS.COMMANDER_BONUS)
 
     def getDisplayableData(self, tankmanId=None, *args, **kwargs):
-        parent = kwargs.get('parent', None)
+        parent = kwargs.get('parent')
         return DecoratedTooltipWindow(CommanderBonusTooltip(tankmanId), parent, useDecorator=False)
 
 
@@ -122,7 +123,7 @@ class TankmanTooltipData(ToolTipBaseData):
         super(TankmanTooltipData, self).__init__(context, TOOLTIPS_CONSTANTS.TANKMAN)
 
     def getDisplayableData(self, *args, **kwargs):
-        parent = kwargs.get('parent', None)
+        parent = kwargs.get('parent')
         kwargs['layoutID'] = parent.content.layoutID if parent else None
         return DecoratedTooltipWindow(TankmanTooltip(*args, **kwargs), parent, useDecorator=False)
 
@@ -187,7 +188,7 @@ class MentorAssignmentTooltipData(ToolTipBaseData):
 
     @staticmethod
     def getDisplayableData(*args, **kwargs):
-        parent = kwargs.get('parent', None)
+        parent = kwargs.get('parent')
         kwargs['layoutID'] = parent.content.layoutID if parent else None
         return DecoratedTooltipWindow(MentorAssignmentTooltip(*args, **kwargs), parent, useDecorator=False)
 

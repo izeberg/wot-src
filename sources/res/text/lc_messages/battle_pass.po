@@ -104,9 +104,9 @@ msgstr "Purchase Improved Pass"
 
 msgid "battlePassAwardsView/footer/bpDescriptionGotStyle"
 msgstr ""
-"At the beginning of each Chapter, you receive a style that can be upgraded "
-"as you progress through the Chapter. Incomplete styles can be upgraded also "
-"after the end of the current Battle Pass Season."
+"At the beginning of each chapter, you receive a style that you can improve "
+"as you progress through the chapter. Unfinished styles can be improved even "
+"after the end of the current Battle Pass season."
 
 msgid "battlePassAwardsView/footer/bpInProgressTitle"
 msgstr ""
@@ -162,7 +162,7 @@ msgid "battlePassAwardsView/header/styleReceivedText"
 msgstr "STYLE RECEIVED"
 
 msgid "battlePassAwardsView/header/styleUpgradedText"
-msgstr "STYLE UPGRADED"
+msgstr "STYLE IMPROVED"
 
 msgid "battlePassAwardsView/mainReward/battlePassNewDeviceGiftToken"
 msgstr "Standard Equipment to Select From"
@@ -227,13 +227,15 @@ msgid "battlePassBuyView/btnCancel"
 msgstr "Back"
 
 msgid "battlePassBuyView/btnRewards"
-msgstr "Next Rewards: {count}"
+msgstr ""
+"View All\n"
+"%(count)s Rewards"
 
 msgid "battlePassBuyView/card/activeChapter/text"
 msgstr "Active Chapter"
 
 msgid "battlePassBuyView/card/competePreviousChapter"
-msgstr "Complete Chapter {chapter}"
+msgstr "Complete Chapter %(chapter)"
 
 msgid "battlePassBuyView/card/currentLevel/text"
 msgstr "Current Stage"
@@ -273,7 +275,7 @@ msgid "battlePassBuyView/card/timer/time"
 msgstr "Left: %(time)s"
 
 msgid "battlePassBuyView/card/title/chapter"
-msgstr "CHAPTER {chapter}"
+msgstr "CHAPTER %(chapter)"
 
 msgid "battlePassBuyView/card/title/shopOffer"
 msgstr "THREE-IN-ONE"
@@ -285,17 +287,16 @@ msgid "battlePassBuyView/confirm/btnBuy"
 msgstr "Purchase"
 
 msgid "battlePassBuyView/confirm/chapter"
-msgstr "CHAPTER: %(name)s"
+msgstr "CHAPTER: \"%(name)s\""
 
 msgid "battlePassBuyView/confirm/checkbox/stage"
 msgid_plural "plural/battlePassBuyView/confirm/checkbox/stage"
-msgstr[0] "With %(stagesNumber)s remaining Stage"
-msgstr[1] "With %(stagesNumber)s remaining Stages"
-msgstr[2] "With %(stagesNumber)s remaining Stages"
+msgstr[0] "Together with %(stagesNumber)s remaining stage"
+msgstr[1] "Together with %(stagesNumber)s remaining stages"
+msgstr[2] "Together with %(stagesNumber)s remaining stages"
 
 msgid "battlePassBuyView/confirm/description"
-msgstr ""
-"After completing all Stages, you will receive the Improved Pass rewards:"
+msgstr "The Improved Pass unlocks:"
 
 msgid "battlePassBuyView/confirm/descriptionCheckboxChecked"
 msgstr "You will receive all Chapter rewards immediately:"
@@ -306,6 +307,25 @@ msgstr "Improved Pass purchase price:"
 msgid "battlePassBuyView/confirm/priceWithLevels"
 msgstr "Improved Pass and Stages purchase price:"
 
+msgid "battlePassBuyView/confirm/shopOfferBlock/buy"
+msgstr "View Offers"
+
+msgid "battlePassBuyView/confirm/shopOfferBlock/description"
+msgstr ""
+"This offer is valid as long as none\n"
+"of the Season Chapters are Improved."
+
+msgid "battlePassBuyView/confirm/shopOfferBlock/headline"
+msgstr "%(count)s in 1"
+
+msgid "battlePassBuyView/confirm/shopOfferBlock/packsAmount"
+msgstr "x%(amount)s"
+
+msgid "battlePassBuyView/confirm/shopOfferBlock/title"
+msgstr ""
+"Improved Passes for\n"
+"all Season Chapters"
+
 msgid "battlePassBuyView/confirm/shopOfferLinkText"
 msgstr "offer"
 
@@ -314,20 +334,26 @@ msgstr ""
 "If you purchase the Improved Pass for a specific Chapter, the %(link)s will "
 "become unavailable."
 
+msgid "battlePassBuyView/confirm/starterPack/description"
+msgstr "Bonus %(purchaseText)s"
+
+msgid "battlePassBuyView/confirm/starterPack/purchaseText"
+msgstr "on purchase:"
+
 msgid "battlePassBuyView/confirm/subTitle/finished"
 msgstr ""
 "Allows you to receive Improved Rewards for already completed Battle Pass "
-"Stages in Chapter {chapter}."
+"Stages in Chapter %(chapter)."
 
 msgid "battlePassBuyView/confirm/subTitle/inProgress"
 msgstr ""
 "Allows you to receive Improved Rewards for each completed and upcoming "
-"Battle Pass Stage in Chapter {chapter}."
+"Battle Pass Stage in Chapter %(chapter)."
 
 msgid "battlePassBuyView/confirm/subTitle/notStarted"
 msgstr ""
 "Allows you to receive Improved Rewards for each completed Battle Pass Stage "
-"in Chapter {chapter}."
+"in Chapter %(chapter)."
 
 msgid "battlePassBuyView/confirm/title"
 msgstr "PURCHASE THE IMPROVED PASS"
@@ -348,9 +374,6 @@ msgstr "Unlock Improved Rewards for completed Stages."
 
 msgid "battlePassBuyView/levelsSelected"
 msgstr "Selected Stages:"
-
-msgid "battlePassBuyView/multicurrencyPrice"
-msgstr "Purchase price:"
 
 msgid "battlePassBuyView/price"
 msgstr "Purchase price:"
@@ -398,7 +421,7 @@ msgstr ""
 "Track."
 
 msgid "battlePassBuyView/title"
-msgstr "IMPROVED PASS"
+msgstr "IMPROVED PASS PURCHASING"
 
 msgid "battlePassStatus/activateChapter"
 msgstr "Activate the Battle Pass Chapter"
@@ -424,47 +447,68 @@ msgstr "BATTLE PASS"
 msgid "battlepassTab"
 msgstr "Battle Pass"
 
-msgid "chapter/fullName/10061"
-msgstr "RoboCop"
+msgid "chapter/fullName/10021"
+msgstr "Carmen de Bisonte"
 
 msgid "chapter/fullName/1114"
 msgstr "Carmen de Bisonte"
 
-msgid "chapter/fullName/181"
-msgstr "On the Hardline"
+msgid "chapter/fullName/190"
+msgstr "Elite Circuit"
 
-msgid "chapter/fullName/182"
-msgstr "Project Überpanzer"
+msgid "chapter/fullName/191"
+msgstr "The Inheritor"
 
-msgid "chapter/fullName/183"
-msgstr "Mechanized Momentum"
+msgid "chapter/fullName/192"
+msgstr "The Specialist"
 
-msgid "chapter/fullNameUppercased/10061"
-msgstr "ROBOCOP"
+msgid "chapter/fullName/193"
+msgstr "The Scout"
+
+msgid "chapter/fullNameUppercased/10021"
+msgstr "CARMEN DE BISONTE"
 
 msgid "chapter/fullNameUppercased/1114"
 msgstr "CARMEN DE BISONTE"
 
-msgid "chapter/fullNameUppercased/181"
-msgstr "ON THE HARDLINE"
+msgid "chapter/fullNameUppercased/191"
+msgstr "THE INHERITOR"
 
-msgid "chapter/fullNameUppercased/182"
-msgstr "PROJECT ÜBERPANZER"
+msgid "chapter/fullNameUppercased/192"
+msgstr "THE SPECIALIST"
 
-msgid "chapter/fullNameUppercased/183"
-msgstr "MECHANIZED MOMENTUM"
+msgid "chapter/fullNameUppercased/193"
+msgstr "THE SCOUT"
 
 msgid "chapter/title"
 msgstr "CHAPTER %(chapter)s"
 
-msgid "chapterChoice/activeTitle"
-msgstr "SEASON CHAPTERS"
+msgid "chapterChoice/about"
+msgstr "ABOUT BATTLE PASS"
+
+msgid "chapterChoice/activeChapter/postprogression/text"
+msgstr "Active"
+
+msgid "chapterChoice/activeChapter/text"
+msgstr "Active Chapter"
 
 msgid "chapterChoice/chapterCompleted"
 msgstr "Chapter completed"
 
-msgid "chapterChoice/completed"
-msgstr "Completed"
+msgid "chapterChoice/chapterInfo/buttons/toChapter"
+msgstr "To the Chapter"
+
+msgid "chapterChoice/chapterInfo/buttons/toCrewMembers"
+msgstr "View Crew Members"
+
+msgid "chapterChoice/chapterInfo/buttons/toPostProgression"
+msgstr "To Progression"
+
+msgid "chapterChoice/chapterInfo/deadline/date"
+msgstr "Will last until %(endDate)s"
+
+msgid "chapterChoice/chapterInfo/deadline/time"
+msgstr "Will end in %(endTime)s"
 
 msgid "chapterChoice/confirmation/button/cancel"
 msgstr "Cancel"
@@ -498,55 +542,70 @@ msgstr "Switch to the %(chName)s Chapter?"
 msgid "chapterChoice/crewMember/reward"
 msgstr "Crew Members"
 
+msgid "chapterChoice/crewMember/reward/subTitle"
+msgstr "and other crew members inside"
+
+msgid "chapterChoice/eliteCircuit/reward/subTitle"
+msgstr "within the cyclical Progression"
+
+msgid "chapterChoice/eliteCircuit/reward/title"
+msgstr "Bonds, Chips, and Vouchers"
+
 msgid "chapterChoice/extraChapter/reward"
 msgstr "Premium Vehicle"
 
-msgid "chapterChoice/freePoints/description"
-msgstr "Unspent Battle Pass Points: "
+msgid "chapterChoice/freePoints/text"
+msgstr "Unspent Points"
 
-msgid "chapterChoice/freePoints/tooltip/description"
+msgid "chapterChoice/freePoints/tooltip/body"
 msgstr ""
-"As you progress through Battle Pass, Points will be accumulated, even if no "
-"Chapter is selected. Select a Chapter, and the Points accumulated will be "
-"credited to its progression."
+"Points are accumulated as you progress through the Battle Pass, even if no "
+"chapter is activated. Once you activate a chapter, points will be credited "
+"to its Progression."
 
-msgid "chapterChoice/freePoints/tooltip/title"
+msgid "chapterChoice/freePoints/tooltip/header"
 msgstr "Unspent Battle Pass Points"
 
-msgid "chapterChoice/postProgression/button/text"
-msgstr "ELITE CIRCUIT"
-
-msgid "chapterChoice/postProgression/text"
+msgid "chapterChoice/postprogression/locked"
 msgstr ""
-"Available after all Chapters are completed. Chapters completed: "
-"%(completedChaptersCount)/%(chaptersCount)"
+"Complete all {{count}} season\n"
+"Chapters to unlock"
+
+msgid "chapterChoice/postprogression/name"
+msgstr "Elite Circuit"
+
+msgid "chapterChoice/postprogression/unlocked/cycle"
+msgstr "Cycle %(cycle)s"
 
 msgid "chapterChoice/premiumVehicle/reward"
 msgstr "Premium Vehicle"
 
-msgid "chapterChoice/stylePreview/backLabel"
-msgstr "TO CHAPTERS"
+msgid "chapterChoice/stages/additional"
+msgstr " / %(level)s Stages"
 
-msgid "chapterChoice/stylePreview/extraLabel"
+msgid "chapterChoice/stages/complete/improved"
+msgstr "Completed and Improved"
+
+msgid "chapterChoice/stages/complete/unimproved"
+msgstr "%(count)s more rewards inside"
+
+msgid "chapterChoice/stylePreview/reward/subTitle"
+msgstr "for the %(vehicleName)s"
+
+msgid "chapterChoice/stylePreview/reward/title"
+msgstr "%(styleName)s 3D style"
+
+msgid "chapterChoice/vehicle/reward/subTitle"
 msgstr "%(vehicleName)s"
 
-msgid "chapterChoice/stylePreview/forLabel"
-msgstr "For the %(vehicleName)s"
+msgid "chapterChoice/vehicle/reward/title"
+msgstr "Premium Vehicle"
 
-msgid "chapterChoice/stylePreview/label"
-msgstr "Preview"
+msgid "chapterChoice/vehicleStyle/reward/subTitle"
+msgstr "and the %(styleName)s 3D style"
 
-msgid "chapterChoice/stylePreview/name"
-msgstr "%(styleName)s Style"
-
-msgid "chapterChoice/tankman/description"
-msgstr "All crew members correspond to certain Chapters."
-
-msgid "chapterChoice/title"
-msgstr "SELECT CHAPTER"
-
-msgid "chapterChoice/vehicleInHangar/tooltip/text"
-msgstr "In Garage"
+msgid "chapterChoice/vehicleStyle/reward/title"
+msgstr "%(vehicleName)s"
 
 msgid "chapterStatus/notSelected"
 msgstr "Chapter not selected"
@@ -645,9 +704,8 @@ msgstr "Purchase Improved Pass"
 
 msgid "holidayFinalScreen/buyState/description"
 msgstr ""
-"By purchasing the Improved Pass, you will immediately receive the OCP "
-"Peacekeeper Tier IX Premium American heavy tank with a unique look inspired "
-"by the movies, along with all the Improved Pass Rewards."
+"By purchasing the Improved Pass, you will immediately receive a Premium "
+"vehicle with a unique 3D style and all Improved Pass Rewards."
 
 msgid "holidayFinalScreen/buyState/moreRewards"
 msgstr "Other Rewards: %(count)s"
@@ -760,6 +818,9 @@ msgstr ""
 msgid "howToEarnPoints/card/specialVehicle/title"
 msgstr "Season Core Vehicles"
 
+msgid "howToEarnPoints/conditions"
+msgstr "{{icon}}Earning Conditions"
+
 msgid "howToEarnPoints/description"
 msgstr ""
 "Battle Pass Points allow you to sequentially complete Stages. They can be "
@@ -767,20 +828,33 @@ msgstr ""
 " for completing missions and daily missions, as well as for reaching a "
 "vehicle's Point Limit."
 
+msgid "howToEarnPoints/earned"
+msgstr "{{icon}}"
+
 msgid "howToEarnPoints/lose/1"
-msgstr "Defeat/Draw"
+msgstr "Defeat and Draw"
 
 msgid "howToEarnPoints/lose/22"
-msgstr "Defeat/Draw"
+msgstr "Defeat and Draw"
 
 msgid "howToEarnPoints/lose/27"
 msgstr "Defeat"
 
 msgid "howToEarnPoints/lose/43"
-msgstr "Defeat/Draw"
+msgstr "Defeat and Draw"
 
 msgid "howToEarnPoints/lose/49"
-msgstr "Defeat/Draw"
+msgstr "Defeat and Draw"
+
+msgid "howToEarnPoints/plusBanner/line1"
+msgstr ""
+"{{@ style (color $color)}}Battle Pass Plus:{{/}} Available with {{link}}"
+
+msgid "howToEarnPoints/plusBanner/line2"
+msgstr "Earn more Battle Pass Points (excluding Special Chapters)."
+
+msgid "howToEarnPoints/plusBanner/link"
+msgstr "WoT Plus Pro"
 
 msgid "howToEarnPoints/rangeLevels/29"
 msgstr "Positions %(startLevel)d–%(endLevel)d"
@@ -856,15 +930,15 @@ msgstr "Affirmative!"
 
 msgid "intro/seasonDescription/text"
 msgstr ""
-"This is a special Battle Pass event in collaboration with the legendary "
-"RoboCop. A short but explosive adventure, it offers exclusive rewards "
-"inspired by the iconic universe. Are you ready to uphold the law?"
+"In Battle Pass Season XVIII, you will have the chance to receive exclusive "
+"3D styles for the Season's Core Vehicles: Maus, IS-7, and "
+"AMX&nbsp;50&nbsp;B."
 
 msgid "intro/seasonDescription/title"
-msgstr "COLLABORATION WITH ROBOCOP"
+msgstr "NEW THEMED 3D STYLES"
 
 msgid "intro/title"
-msgstr "ROBOCOP"
+msgstr "SEASON XVIII: PATH TO PERFECTION"
 
 msgid "lootBoxBonus"
 msgstr "%(boxName)s: %(count)s"
@@ -876,7 +950,7 @@ msgid "navigation/buyLevelsRewards"
 msgstr "STAGE REWARDS"
 
 msgid "navigation/buyPass"
-msgstr "IMPROVED PASS"
+msgstr "IMPROVED PASS PURCHASING"
 
 msgid "navigation/buyPassConfirm"
 msgstr "IMPROVED PASS PURCHASE"
@@ -888,16 +962,16 @@ msgid "navigation/chapterChoice"
 msgstr "BATTLE PASS SEASON %(seasonNum)s"
 
 msgid "navigation/holidayFinal"
-msgstr "BATTLE PASS: ROBOCOP"
+msgstr "BATTLE PASS"
 
 msgid "navigation/intro"
-msgstr "BATTLE PASS: ROBOCOP"
+msgstr "BATTLE PASS SEASON %(seasonNum)s"
 
 msgid "navigation/postProgression"
 msgstr "BATTLE PASS ELITE CIRCUIT"
 
 msgid "navigation/progression"
-msgstr "BATTLE PASS: ROBOCOP"
+msgstr "BATTLE PASS CHAPTER"
 
 msgid "points/top"
 msgstr "%(vehicle): %(bonus) for %(top) by XP."
@@ -929,7 +1003,7 @@ msgid "postProgressionView/footer/purchaseIP/button/text"
 msgstr "Purchase"
 
 msgid "postProgressionView/header/description/active"
-msgstr "Earn Points in battle and receive even more rewards"
+msgstr "Earn Points in battle and receive bonds and Vouchers as a reward"
 
 msgid "postProgressionView/header/description/onPause/highlight"
 msgstr "PAUSED."
@@ -1007,6 +1081,11 @@ msgstr ""
 "The Improved Pass unlocks the Improved Rewards Track for the current "
 "Chapter."
 
+msgid "progression/battlePassBuyDescrStarterPack"
+msgstr ""
+"Unlock the Improved Rewards\n"
+"and get a bonus"
+
 msgid "progression/battlePassBuyHolidayDescr"
 msgstr "The Improved Pass unlocks the Improved Rewards Track."
 
@@ -1025,8 +1104,8 @@ msgstr ""
 
 msgid "progression/btnExtrasTooltip"
 msgstr ""
-"Complete Stages and unlock new materials. Unlocked materials: {opened} / "
-"{total}."
+"Complete Stages and unlock new materials. Unlocked materials: %(opened) / "
+"%(total)."
 
 msgid "progression/btnNoExtrasTooltip"
 msgstr "Complete Stages and unlock new materials."
@@ -1053,7 +1132,7 @@ msgstr ""
 msgid "progression/btnTokensStoreTooltip"
 msgstr ""
 "Click to view valuable items for Battle Pass Tokens.\n"
-"Available Tokens: {bpcoinCount}."
+"Available Tokens: %(bpcoinCount)."
 
 msgid "progression/chapterText"
 msgstr "CHAPTER %(chapter)s: %(chapterName)s"
@@ -1134,17 +1213,17 @@ msgstr "and the %(styleName)s 3D style"
 msgid "progression/extraChapterWidget/voiceoverTooltip"
 msgstr "Click to listen to the crew member voiceover."
 
-msgid "progression/footer/freePointsDescr"
-msgstr "Unspent Battle Pass Points: "
-
-msgid "progression/footer/multicurrencyTooltip"
-msgstr "Can be purchased for gold or Free XP."
+msgid "progression/footer/starter_pack/equal"
+msgstr "="
 
 msgid "progression/footer/status/inactive"
 msgstr "Chapter inactive"
 
 msgid "progression/footer/status/paused"
 msgstr "Chapter paused."
+
+msgid "progression/freePointsDescr"
+msgstr "Unspent Battle Pass Points: "
 
 msgid "progression/header/chapter/status"
 msgstr "%(chapterName)s Chapter"
@@ -1170,7 +1249,7 @@ msgstr ""
 "ALL STAGES"
 
 msgid "progression/progressionChapterArrow"
-msgstr "CHAPTER {chapter}"
+msgstr "CHAPTER %(chapter)"
 
 msgid "progression/progressionChapterGoTo"
 msgstr "GO TO"
@@ -1194,7 +1273,7 @@ msgid "progression/universalCommander"
 msgstr "Unique Crew Member"
 
 msgid "progression/widget3dStyle/currentStyle"
-msgstr "{name} Style"
+msgstr "%(name) Style"
 
 msgid "progression/widget3dStyle/forVehicle"
 msgstr "For the "
@@ -1285,17 +1364,17 @@ msgstr "BATTLE PASS: %(chapter)s CHAPTER"
 msgid "rewardChoice/titleChapterLevel"
 msgstr "BATTLE PASS: %(chapter)s CHAPTER, STAGE %(level)s"
 
-msgid "season/fullName/1006"
-msgstr "RoboCop"
+msgid "season/fullName/1002"
+msgstr "Carmen de Bisonte"
 
-msgid "season/fullName/18"
-msgstr "Path to Perfection"
+msgid "season/fullName/19"
+msgstr "Operation Borealis"
 
-msgid "season/fullNameUppercased/1006"
-msgstr "ROBOCOP"
+msgid "season/fullNameUppercased/1002"
+msgstr "CARMEN DE BISONTE"
 
-msgid "season/fullNameUppercased/18"
-msgstr "PATH TO PERFECTION"
+msgid "season/fullNameUppercased/19"
+msgstr "OPERATION BOREALIS"
 
 msgid "selectBonus/battle_booster_gift"
 msgstr "Directives to Select From"
@@ -1346,7 +1425,7 @@ msgid "styleProgression/newStyle"
 msgstr "First Level of the %(styleName)s style"
 
 msgid "tankmenVoiceover/availableInQuestChain"
-msgstr "Will be received for completing missions"
+msgstr "Will be received for completing tasks"
 
 msgid "tankmenVoiceover/button"
 msgstr "Affirmative!"
@@ -1359,22 +1438,22 @@ msgstr "All crew members have enough Crew XP to train three perks to 100%."
 
 msgid "tankmenVoiceover/free"
 msgstr ""
-"In Base Rewards\n"
-"on Stage %(progressNumber)s"
+"In basic rewards\n"
+" at stage %(progressNumber)s"
 
 msgid "tankmenVoiceover/inShop"
-msgstr "In a special bundle"
+msgstr "Part of the bundle"
 
 msgid "tankmenVoiceover/notFull"
-msgstr "%(availableCount)s of %(count)s available"
+msgstr "%(availableCount)s of %(count)s still available"
 
 msgid "tankmenVoiceover/paid"
 msgstr ""
-"In Improved Rewards\n"
-"on Stage %(progressNumber)s"
+"In improved rewards\n"
+" at stage %(progressNumber)s"
 
 msgid "tankmenVoiceover/questChain"
-msgstr "In a series of missions"
+msgstr "In a chain of combat missions"
 
 msgid "tankmenVoiceover/received"
 msgstr "Received"
@@ -1648,7 +1727,7 @@ msgid "tooltips/inProgress/battleRoyale"
 msgstr "\"Steel Hunter\""
 
 msgid "tooltips/inProgress/chapter"
-msgstr "\"{name}\" Chapter"
+msgstr "\"%(name)\" Chapter"
 
 msgid "tooltips/inProgress/epic"
 msgstr "Frontline"
@@ -1690,11 +1769,19 @@ msgstr ""
 msgid "tooltips/inProgress/playGame/ranked"
 msgstr "Rules for earning Points in Tier X vehicles in Ranked Battles."
 
+msgid "tooltips/inProgress/playGame/winback"
+msgstr ""
+"Rules for earning Points in %(bond_Open)sRandom Battle: Warm-"
+"Up%(bond_Close)s in Tier IV–XI vehicles."
+
 msgid "tooltips/inProgress/postProgression/header"
 msgstr "Elite Circuit"
 
 msgid "tooltips/inProgress/timeLeft"
-msgstr "Left:"
+msgstr "Remaining in Battle Pass"
+
+msgid "tooltips/inProgress/wotPlusProFooter"
+msgstr "Earnings with WoT Plus Pro"
 
 msgid "tooltips/notChosen/description"
 msgstr ""
@@ -1712,6 +1799,12 @@ msgstr "Battle Pass"
 
 msgid "tooltips/notStarted/date"
 msgstr "%(month)s %(day)s"
+
+msgid "tooltips/plusBanner/text"
+msgstr ""
+"{{@ style (color $color1)}}Battle Pass Plus:{{/}} Available with {{@ style "
+"(color $color2)}}WoT Plus Pro{{/}}. Earn more Battle Pass points (excluding "
+"Special Chapters)."
 
 msgid "tooltips/points/footer"
 msgstr ""
@@ -1734,17 +1827,20 @@ msgstr ""
 msgid "tooltips/points/title"
 msgstr "Battle Pass Points"
 
+msgid "tooltips/pointsTable/header"
+msgstr "Earning Conditions"
+
 msgid "tooltips/pointsTable/lose"
-msgstr "For defeat/draw"
+msgstr "Defeat and Draw"
 
 msgid "tooltips/pointsTable/loseWithoutDraw"
-msgstr "For defeat"
+msgstr "Defeat"
 
 msgid "tooltips/pointsTable/place"
-msgstr "Position {place}"
+msgstr "Position %(place)"
 
 msgid "tooltips/pointsTable/places"
-msgstr "Positions {place}"
+msgstr "Positions %(place)"
 
 msgid "tooltips/pointsTable/solo"
 msgstr "Solo"
@@ -1753,15 +1849,15 @@ msgid "tooltips/pointsTable/squad"
 msgstr "Platoon"
 
 msgid "tooltips/pointsTable/topPlace"
-msgstr "Top {place} by XP earned"
+msgstr "Top %(place) by XP earned"
 
 msgid "tooltips/pointsTable/win"
-msgstr "For victory"
+msgstr "Victory"
 
 msgid "tooltips/postProgress/body"
 msgstr ""
 "Elite Progression starts after completing Main Progression Stage "
-"{maxLevelBase}. It provides the option to earn valuable in-game currency. "
+"%(maxLevelBase). It provides the option to earn valuable in-game currency. "
 "The completion of Elite Progression Stages does not require the Improved "
 "Pass."
 
@@ -1769,13 +1865,13 @@ msgid "tooltips/postProgress/header"
 msgstr "Elite Progression"
 
 msgid "tooltips/prestigePoints/lose"
-msgstr "Defeat/Draw"
+msgstr "Defeat & Draw"
 
 msgid "tooltips/prestigePoints/loseWithoutDraw"
 msgstr "Defeat"
 
 msgid "tooltips/prestigePoints/topPlace"
-msgstr "Top {place} by Prestige Points"
+msgstr "Top %(place) by Prestige Points"
 
 msgid "tooltips/prestigePoints/win"
 msgstr "Victory"
@@ -1811,7 +1907,7 @@ msgid "tooltips/styleUpgrade/chosen/text"
 msgstr "Upgrades the Chapter style to %(levelWord) %(level)"
 
 msgid "tooltips/styleUpgrade/chosen/title"
-msgstr "{styleName} Style Upgrade"
+msgstr "%(styleName) Style Upgrade"
 
 msgid "tooltips/styleUpgrade/notChosen/text"
 msgstr ""

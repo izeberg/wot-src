@@ -2,7 +2,9 @@ from __future__ import absolute_import
 from constants_utils import ConstInjector
 from gui.limited_ui.lui_rules_storage import LUI_RULES
 from gui.prb_control import settings
+from gui.shared.gui_items import Vehicle
 from messenger import m_constants
+from shared_utils import CONST_CONTAINER
 ATTR_NAME = 'FUN_RANDOM'
 PRB_REQ_TYPE_ATTR_NAME = 'CHANGE_FUN_SUB_MODE'
 _LUI_RULE_ENTRY_POINT = 'FunRandomEntryPoint'
@@ -33,14 +35,18 @@ class SCH_CLIENT_MSG_TYPE(m_constants.SCH_CLIENT_MSG_TYPE, ConstInjector):
     FUN_RANDOM_PROGRESSION = 101
 
 
-class AccountSettingsKeys(object):
-    FUN_KEY = 'fun_keys'
-    IS_NEW = 'is_new'
-    INFO_PAGE_VIEWED = 'info_page_viewed'
+class VEHICLE_TAGS(Vehicle.VEHICLE_TAGS, ConstInjector):
+    _const_type = str
+    FUN_RANDOM = 'fun_random'
 
 
-ACCOUNT_DEFAULT_SETTINGS = {AccountSettingsKeys.IS_NEW: True, 
-   AccountSettingsKeys.INFO_PAGE_VIEWED: False}
+class FunRandomTooltipConstants(CONST_CONTAINER):
+    FUN_RANDOM_CALENDAR_DAY = 'funRandomCalendarDay'
+    FUN_RANDOM_MODE_SELECTOR_CALENDAR_DAY = 'funRandomModeSelectorCalendarDay'
+    FUN_RANDOM_REWARDS = 'funRandomRewards'
+    LOBBY_TOOLTIPS_SET = (
+     FUN_RANDOM_CALENDAR_DAY, FUN_RANDOM_MODE_SELECTOR_CALENDAR_DAY, FUN_RANDOM_REWARDS)
+
 
 def initFunRandomLimitedUIIds():
     LUI_RULES.inject(_LUI_RULES)

@@ -4,13 +4,13 @@ package net.wg.gui.components.icons
    
    public class PlayerActionMarker extends UIComponentEx
    {
+      
+      private static const ACTIONS_LABEL:String = "actions";
        
       
       private var _actionBitMask:Number = 0;
       
       private var _team:String = "common";
-      
-      private const ACTIONS_LABEL:String = "actions";
       
       public function PlayerActionMarker()
       {
@@ -52,15 +52,17 @@ package net.wg.gui.components.icons
          var allActions:Array = null;
          var elName:String = null;
          var i:uint = 0;
+         var allActionsLength:uint = 0;
          super.draw();
          var actions:Array = PlayerActionMarkerController.instance.getActions(this._team,this._actionBitMask);
-         if(actions.length)
+         var length:uint = actions.length;
+         if(length)
          {
             allActions = PlayerActionMarkerController.instance.allActions;
-            gotoAndStop(this.ACTIONS_LABEL);
+            gotoAndStop(ACTIONS_LABEL);
+            allActionsLength = allActions.length;
             i = 0;
-            i = 0;
-            while(i < allActions.length)
+            while(i < allActionsLength)
             {
                elName = allActions[i];
                try
@@ -74,7 +76,7 @@ package net.wg.gui.components.icons
                i++;
             }
             i = 0;
-            while(i < actions.length)
+            while(i < length)
             {
                elName = actions[i];
                try

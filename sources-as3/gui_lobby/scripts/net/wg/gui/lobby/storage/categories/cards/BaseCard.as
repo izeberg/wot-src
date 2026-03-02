@@ -32,8 +32,12 @@ package net.wg.gui.lobby.storage.categories.cards
    import net.wg.gui.lobby.storage.categories.storage.ExtraParams;
    import net.wg.infrastructure.base.UIComponentEx;
    import net.wg.infrastructure.interfaces.entity.ISoundable;
+   import net.wg.infrastructure.managers.IStageSizeManager;
    import net.wg.infrastructure.managers.ITooltipMgr;
+   import net.wg.utils.IClassFactory;
    import net.wg.utils.ICommons;
+   import net.wg.utils.ILocale;
+   import net.wg.utils.IScheduler;
    import net.wg.utils.IStageSizeDependComponent;
    import scaleform.clik.constants.InvalidationType;
    import scaleform.clik.core.UIComponent;
@@ -43,6 +47,14 @@ package net.wg.gui.lobby.storage.categories.cards
    [Event(name="sell",type="net.wg.gui.lobby.storage.categories.cards.CardEvent")]
    public class BaseCard extends UIComponentEx implements IStageSizeDependComponent, IScrollerItemRenderer, ISoundable
    {
+      
+      public static const CARD_SMALL_WIDTH:int = 280;
+      
+      public static const DESCRIPTION_SMALL_CARD_MAX_LINES:uint = 2;
+      
+      public static const DESCRIPTION_BIG_CARD_MAX_LINES:uint = 3;
+      
+      public static const DESCRIPTION_TRANSACTION_SYMBOL:String = "...";
       
       protected static const FIRST_ANIMATION_DURATION:Number = 200;
       
@@ -59,8 +71,6 @@ package net.wg.gui.lobby.storage.categories.cards
       protected static const BORDER_OFFSET:Number = 0.5;
       
       protected static const BORDER_CORNER_RADIUS:int = 2;
-      
-      protected static const OVERLAY_OFFSET:int = 1;
       
       protected static const ININVENTORY_ICON_OFFSET:int = 2;
       
@@ -95,14 +105,6 @@ package net.wg.gui.lobby.storage.categories.cards
       private static const EXTRA_PARAMS_SMALL_CARD_MAX_NUM:int = 3;
       
       private static const EXTRA_PARAMS_BIG_CARD_MAX_NUM:int = 4;
-      
-      public static const CARD_SMALL_WIDTH:int = 280;
-      
-      public static const DESCRIPTION_SMALL_CARD_MAX_LINES:uint = 2;
-      
-      public static const DESCRIPTION_BIG_CARD_MAX_LINES:uint = 3;
-      
-      public static const DESCRIPTION_TRANCATION_SYMBOL:String = "...";
       
       private static const TOOLTIP_HIT_AREA_NAME:String = "tooltipHitArea";
        
@@ -159,8 +161,26 @@ package net.wg.gui.lobby.storage.categories.cards
       
       private var _index:uint;
       
+      private var _stageSizeMgr:IStageSizeManager;
+      
+      private var _scheduler:IScheduler;
+      
+      private var _locale:ILocale;
+      
+      private var _commons:ICommons;
+      
+      private var _classFactory:IClassFactory;
+      
+      private var _toolTipMgr:ITooltipMgr;
+      
       public function BaseCard()
       {
+         this._stageSizeMgr = App.stageSizeMgr;
+         this._scheduler = App.utils.scheduler;
+         this._locale = App.utils.locale;
+         this._commons = App.utils.commons;
+         this._classFactory = App.utils.classFactory;
+         this._toolTipMgr = App.toolTipMgr;
          super();
       }
       
@@ -168,12 +188,12 @@ package net.wg.gui.lobby.storage.categories.cards
       {
          super.initialize();
          alpha = 0;
-         App.stageSizeMgr.register(this);
+         this._stageSizeMgr.register(this);
       }
       
       override protected function onDispose() : void
       {
-         App.utils.scheduler.cancelTask(dispatchEvent);
+         this._scheduler.cancelTask(dispatchEvent);
          if(App.soundMgr != null)
          {
             App.soundMgr.removeSoundHdlrs(this);
@@ -192,6 +212,12 @@ package net.wg.gui.lobby.storage.categories.cards
          this.inInventoryIcon = null;
          this.discountIcon = null;
          this.equipmentType = null;
+         this._stageSizeMgr = null;
+         this._scheduler = null;
+         this._locale = null;
+         this._commons = null;
+         this._classFactory = null;
+         this._toolTipMgr = null;
          this.sellButton.dispose();
          this.sellButton = null;
          if(this.upgradeButton != null)
@@ -321,191 +347,197 @@ package net.wg.gui.lobby.storage.categories.cards
       override protected function draw() : void
       {
          var _loc1_:Boolean = false;
-         var _loc2_:Graphics = null;
-         var _loc3_:Rectangle = null;
-         var _loc4_:uint = 0;
+         var _loc2_:Rectangle = null;
+         var _loc3_:uint = 0;
          super.draw();
-         if(this._data && isInvalid(InvalidationType.DATA))
+         if(this._data)
          {
-            buttonMode = this._data.enabled;
-            this.titleTF.htmlText = this._data.title;
-            if(this.descriptionTF)
+            if(isInvalid(InvalidationType.DATA))
+            {
+               buttonMode = this._data.enabled;
+               this.titleTF.htmlText = this._data.title;
+               if(this._resetViewOnDataChange)
+               {
+                  if(this.descriptionTF)
+                  {
+                     this.descriptionTF.alpha = 0;
+                  }
+                  if(this.extraParams)
+                  {
+                     this.extraParams.alpha = 0;
+                  }
+                  if(this.specialization)
+                  {
+                     this.specialization.alpha = 1;
+                  }
+               }
+               this.drawPrice();
+               if(this.flags)
+               {
+                  if(this._data.nationFlagIcon)
+                  {
+                     this.flags.source = this._data.nationFlagIcon;
+                     this.flags.visible = true;
+                     if(this._resetViewOnDataChange)
+                     {
+                        this.flags.alpha = FLAG_HOVER_ALPHA;
+                     }
+                  }
+                  else
+                  {
+                     this.flags.visible = false;
+                  }
+               }
+               if(this.inInventoryCountTF)
+               {
+                  this.inInventoryCountTF.visible = this.inInventoryIcon.visible = this._data.count > 0;
+                  this.inInventoryCountTF.text = this._locale.integer(this._data.count);
+                  if(this._resetViewOnDataChange)
+                  {
+                     this.inInventoryCountTF.alpha = 1;
+                     this.inInventoryIcon.alpha = 1;
+                  }
+               }
+               if(this.discountIcon)
+               {
+                  this.discountIcon.visible = this.hasAction && this._data.enabled;
+               }
+               this.sellButton.visible = this._data.enabled;
+               this.sellButton.tooltip = this._data.actionButtonTooltip;
+               _loc1_ = Boolean(this._data.actionButtonIcon);
+               if(_loc1_)
+               {
+                  this.sellButton.label = Values.EMPTY_STR;
+                  this.sellButton.iconSource = this._data.actionButtonIcon;
+                  this.sellButton.width = SMALL_BUTTON_WIDTH;
+               }
+               else
+               {
+                  this.sellButton.minWidth = SELL_BUTTON_MIN_WIDTH;
+                  this.sellButton.iconSource = Values.EMPTY_STR;
+                  this.sellButton.label = this._data.sellButtonLabel;
+               }
+               this.createUpgradeButton();
+               if(this._resetViewOnDataChange)
+               {
+                  this.sellButton.alpha = 0;
+                  if(this._data.upgradable)
+                  {
+                     this.upgradeButton.alpha = 0;
+                  }
+                  this._overlay.alpha = 0;
+               }
+               invalidateSize();
+            }
+            if(isInvalid(InvalidationType.SIZE))
             {
                if(this._resetViewOnDataChange)
                {
-                  this.descriptionTF.alpha = 0;
+                  this.disposeTweens();
                }
-            }
-            if(this.extraParams)
-            {
-               if(this._resetViewOnDataChange)
+               if(this.image.source != this._data.image)
                {
-                  this.extraParams.alpha = 0;
+                  this.image.alpha = 0;
+                  this.image.sourceAlt = this._data.imageAlt;
+                  this.image.source = this._data.image;
                }
-            }
-            if(this.specialization)
-            {
-               if(this._resetViewOnDataChange)
+               if(this.specialization)
                {
                   this.specialization.alpha = 1;
                }
-            }
-            this.drawPrice();
-            if(this.flags)
-            {
-               if(this._data.nationFlagIcon)
+               this.drawBorder();
+               if(this.flags)
                {
-                  this.flags.source = this._data.nationFlagIcon;
-                  this.flags.visible = true;
-                  if(this._resetViewOnDataChange)
+                  this.flags.y = this._sizeVO.flagsOffset;
+               }
+               _loc2_ = this._sizeVO.innerPadding;
+               if(this.price)
+               {
+                  if(this.discountIcon && this.discountIcon.visible)
                   {
-                     this.flags.alpha = FLAG_HOVER_ALPHA;
+                     this.discountIcon.x = _loc2_.left;
+                     this.price.x = this.discountIcon.x + this.discountIcon.width + DISCOUNT_OFFSET >> 0;
+                     this.price.y = _loc2_.bottom - this.price.height >> 0;
+                     this.discountIcon.y = this.price.y + (this.price.height - this.discountIcon.height >> 1);
+                  }
+                  else
+                  {
+                     this.price.x = _loc2_.left;
+                     this.price.y = _loc2_.bottom - this.price.height >> 0;
                   }
                }
-               else
+               if(this.cannotSellTF)
                {
-                  this.flags.visible = false;
+                  this.cannotSellTF.x = _loc2_.left + this.cannotSellIcon.width + ININVENTORY_ICON_OFFSET;
+                  this.cannotSellTF.y = _loc2_.bottom - this.cannotSellTF.height >> 0;
+                  this.cannotSellIcon.x = _loc2_.left;
+                  this.cannotSellIcon.y = this.cannotSellTF.y + (this.cannotSellTF.height - this.cannotSellIcon.height >> 1) + CANNOT_SELL_ICON_V_OFFSET;
                }
-            }
-            if(this.inInventoryCountTF)
-            {
-               this.inInventoryCountTF.visible = this.inInventoryIcon.visible = this._data.count > 0;
-               this.inInventoryCountTF.text = App.utils.locale.integer(this._data.count);
-               if(this._resetViewOnDataChange)
+               if(this.inInventoryCountTF)
                {
-                  this.inInventoryCountTF.alpha = 1;
-                  this.inInventoryIcon.alpha = 1;
+                  this.updateInventoryPosition(_loc2_);
                }
-            }
-            if(this.discountIcon)
-            {
-               this.discountIcon.visible = this.hasAction && this._data.enabled;
-            }
-            this.sellButton.visible = this._data.enabled;
-            this.sellButton.tooltip = this._data.actionButtonTooltip;
-            _loc1_ = Boolean(this._data.actionButtonIcon);
-            if(_loc1_)
-            {
-               this.sellButton.label = Values.EMPTY_STR;
-               this.sellButton.iconSource = this._data.actionButtonIcon;
-               this.sellButton.width = SMALL_BUTTON_WIDTH;
-            }
-            else
-            {
-               this.sellButton.minWidth = SELL_BUTTON_MIN_WIDTH;
-               this.sellButton.iconSource = Values.EMPTY_STR;
-               this.sellButton.label = this._data.sellButtonLabel;
-            }
-            this.createUpgradeButton();
-            if(this._resetViewOnDataChange)
-            {
-               this.sellButton.alpha = 0;
+               this.titleTF.x = _loc2_.left;
+               this.titleTF.width = this.price && this.price.visible || !this.inInventoryIcon || !this.inInventoryIcon.visible ? Number(_loc2_.width) : Number(this.inInventoryIcon.x - this.titleTF.x);
+               if(!this._isOver)
+               {
+                  this._container.y = this.getContainerYRolloutPosition();
+               }
+               if(this.descriptionTF)
+               {
+                  this.descriptionTF.x = _loc2_.left;
+                  this.descriptionTF.y = this.titleTF.y + this.titleTF.height + this._sizeVO.descriptionOffset;
+                  this.descriptionTF.width = _loc2_.width >> 0;
+                  _loc3_ = this._sizeVO.size.width < CARD_SMALL_WIDTH ? uint(DESCRIPTION_SMALL_CARD_MAX_LINES) : uint(DESCRIPTION_BIG_CARD_MAX_LINES);
+                  this._commons.truncateHtmlTextMultiline(this.descriptionTF,this._data.description,_loc3_,DESCRIPTION_TRANSACTION_SYMBOL);
+               }
+               if(this.extraParams)
+               {
+                  if(this._data.description == "")
+                  {
+                     this.extraParams.y = this.descriptionTF.y;
+                  }
+                  else
+                  {
+                     this.extraParams.y = this.descriptionTF.y + this.descriptionTF.height + this._sizeVO.descriptionOffset;
+                  }
+               }
+               this.sellButton.validateNow();
+               this.sellButton.x = _loc2_.right - this.sellButton.width >> 0;
+               this.sellButton.y = _loc2_.bottom - this.sellButton.height >> 0;
                if(this._data.upgradable)
                {
-                  this.upgradeButton.alpha = 0;
+                  this.upgradeButton.x = this.sellButton.x - this.upgradeButton.width + GAP_BUTTONS;
+                  this.upgradeButton.y = this.sellButton.y;
                }
-               this._overlay.alpha = 0;
+               this.renderEquipmentType();
+               this.onImageComplete();
+               this.drawTooltipHitArea();
             }
-            invalidateSize();
          }
-         if(this._data && isInvalid(InvalidationType.SIZE))
-         {
-            if(this._resetViewOnDataChange)
-            {
-               this.disposeTweens();
-            }
-            if(this.image.source != this._data.image)
-            {
-               this.image.alpha = 0;
-               this.image.sourceAlt = this._data.imageAlt;
-               this.image.source = this._data.image;
-            }
-            if(this.specialization)
-            {
-               this.specialization.alpha = 1;
-            }
-            _loc2_ = graphics;
-            _loc2_.clear();
-            _loc2_.lineStyle(1,16777215,0.15);
-            _loc2_.beginFill(0,0.25);
-            _loc2_.drawRoundRect(BORDER_OFFSET,BORDER_OFFSET,width - BORDER_SIZE_CORRECTION,height - BORDER_SIZE_CORRECTION,BORDER_CORNER_RADIUS,BORDER_CORNER_RADIUS);
-            _loc2_.endFill();
-            _loc2_ = this._overlay.graphics;
-            _loc2_.clear();
-            _loc2_.beginFill(1973272);
-            _loc2_.drawRoundRect(1,1,width - OVERLAY_SIZE_CORRECTION,height - OVERLAY_SIZE_CORRECTION,BORDER_CORNER_RADIUS,BORDER_CORNER_RADIUS);
-            _loc2_.endFill();
-            if(this.flags)
-            {
-               this.flags.y = this._sizeVO.flagsOffset;
-            }
-            _loc3_ = this._sizeVO.innerPadding;
-            if(this.price)
-            {
-               if(this.discountIcon && this.discountIcon.visible)
-               {
-                  this.discountIcon.x = _loc3_.left;
-                  this.price.x = this.discountIcon.x + this.discountIcon.width + DISCOUNT_OFFSET >> 0;
-                  this.price.y = _loc3_.bottom - this.price.height >> 0;
-                  this.discountIcon.y = this.price.y + (this.price.height - this.discountIcon.height >> 1);
-               }
-               else
-               {
-                  this.price.x = _loc3_.left;
-                  this.price.y = _loc3_.bottom - this.price.height >> 0;
-               }
-            }
-            if(this.cannotSellTF)
-            {
-               this.cannotSellTF.x = _loc3_.left + this.cannotSellIcon.width + ININVENTORY_ICON_OFFSET;
-               this.cannotSellTF.y = _loc3_.bottom - this.cannotSellTF.height >> 0;
-               this.cannotSellIcon.x = _loc3_.left;
-               this.cannotSellIcon.y = this.cannotSellTF.y + (this.cannotSellTF.height - this.cannotSellIcon.height >> 1) + CANNOT_SELL_ICON_V_OFFSET;
-            }
-            if(this.inInventoryCountTF)
-            {
-               this.inInventoryCountTF.x = _loc3_.right - this.inInventoryCountTF.width >> 0;
-               this.inInventoryCountTF.y = _loc3_.bottom - this.inInventoryCountTF.height >> 0;
-               this.inInventoryIcon.x = this.inInventoryCountTF.x - this.inInventoryIcon.width - ININVENTORY_ICON_OFFSET;
-               this.inInventoryIcon.y = this.inInventoryCountTF.y - ININVENTORY_ICON_OFFSET;
-            }
-            this.titleTF.x = _loc3_.left;
-            this.titleTF.width = this.price && this.price.visible || !this.inInventoryIcon || !this.inInventoryIcon.visible ? Number(_loc3_.width) : Number(this.inInventoryIcon.x - this.titleTF.x);
-            if(!this._isOver)
-            {
-               this._container.y = this.getContainerYRolloutPosition();
-            }
-            if(this.descriptionTF)
-            {
-               this.descriptionTF.x = _loc3_.left;
-               this.descriptionTF.y = this.titleTF.y + this.titleTF.height + this._sizeVO.descriptionOffset;
-               this.descriptionTF.width = _loc3_.width >> 0;
-               _loc4_ = this._sizeVO.size.width < CARD_SMALL_WIDTH ? uint(DESCRIPTION_SMALL_CARD_MAX_LINES) : uint(DESCRIPTION_BIG_CARD_MAX_LINES);
-               App.utils.commons.truncateHtmlTextMultiline(this.descriptionTF,this._data.description,_loc4_,DESCRIPTION_TRANCATION_SYMBOL);
-            }
-            if(this.extraParams)
-            {
-               if(this._data.description == "")
-               {
-                  this.extraParams.y = this.descriptionTF.y;
-               }
-               else
-               {
-                  this.extraParams.y = this.descriptionTF.y + this.descriptionTF.height + this._sizeVO.descriptionOffset;
-               }
-            }
-            this.sellButton.validateNow();
-            this.sellButton.x = _loc3_.right - this.sellButton.width >> 0;
-            this.sellButton.y = _loc3_.bottom - this.sellButton.height >> 0;
-            if(this._data.upgradable)
-            {
-               this.upgradeButton.x = this.sellButton.x - this.upgradeButton.width + GAP_BUTTONS;
-               this.upgradeButton.y = this.sellButton.y;
-            }
-            this.renderEquipmentType();
-            this.onImageComplete();
-            this.drawTooltipHitArea();
-         }
+      }
+      
+      protected function drawBorder() : void
+      {
+         var _loc1_:Graphics = graphics;
+         _loc1_.clear();
+         _loc1_.lineStyle(1,16777215,0.15);
+         _loc1_.beginFill(0,0.25);
+         _loc1_.drawRoundRect(BORDER_OFFSET,BORDER_OFFSET,width - BORDER_SIZE_CORRECTION,height - BORDER_SIZE_CORRECTION,BORDER_CORNER_RADIUS,BORDER_CORNER_RADIUS);
+         _loc1_.endFill();
+         _loc1_ = this._overlay.graphics;
+         _loc1_.clear();
+         _loc1_.beginFill(1973272);
+         _loc1_.drawRoundRect(1,1,width - OVERLAY_SIZE_CORRECTION,height - OVERLAY_SIZE_CORRECTION,BORDER_CORNER_RADIUS,BORDER_CORNER_RADIUS);
+         _loc1_.endFill();
+      }
+      
+      protected function updateInventoryPosition(param1:Rectangle) : void
+      {
+         this.inInventoryCountTF.x = param1.right - this.inInventoryCountTF.width >> 0;
+         this.inInventoryCountTF.y = param1.bottom - this.inInventoryCountTF.height >> 0;
+         this.inInventoryIcon.x = this.inInventoryCountTF.x - this.inInventoryIcon.width - ININVENTORY_ICON_OFFSET;
+         this.inInventoryIcon.y = this.inInventoryCountTF.y - ININVENTORY_ICON_OFFSET;
       }
       
       public function canPlaySound(param1:String) : Boolean
@@ -530,9 +562,10 @@ package net.wg.gui.lobby.storage.categories.cards
       
       public function setStateSizeBoundaries(param1:int, param2:int) : void
       {
-         this._stageWidthBoundary = App.stageSizeMgr.calcAllowSize(param1,CardConfigs.getInstance().allowCardsResolution);
-         this._sizeVO = CardConfigs.getInstance().cardSize.getConfig(this._stageWidthBoundary);
-         this._imageSizeVO = CardConfigs.getInstance().cardImage.getConfig(this._stageWidthBoundary);
+         var _loc3_:CardConfigs = CardConfigs.getInstance();
+         this._stageWidthBoundary = this._stageSizeMgr.calcAllowSize(param1,_loc3_.allowCardsResolution);
+         this._sizeVO = _loc3_.cardSize.getConfig(this._stageWidthBoundary);
+         this._imageSizeVO = _loc3_.cardImage.getConfig(this._stageWidthBoundary);
          this.updateExtraParamsLayout();
       }
       
@@ -543,7 +576,7 @@ package net.wg.gui.lobby.storage.categories.cards
          {
             if(this.price)
             {
-               this.price.text = App.utils.locale.integer(_loc1_.value);
+               this.price.text = this._locale.integer(_loc1_.value);
                this.price.icon = _loc1_.name;
                this.price.visible = true;
                this.price.invalidatePosition();
@@ -709,7 +742,7 @@ package net.wg.gui.lobby.storage.categories.cards
          this._isOver = true;
          this.disposeTweens();
          this._tweens = this.getRollOverTweens();
-         App.utils.scheduler.scheduleTask(dispatchEvent,ROLL_OVER_ANIMATION_DELAY,new CardEvent(CardEvent.PLAY_INFO_SOUND));
+         this._scheduler.scheduleTask(dispatchEvent,ROLL_OVER_ANIMATION_DELAY,new CardEvent(CardEvent.PLAY_INFO_SOUND));
       }
       
       protected function onRollOut() : void
@@ -717,7 +750,7 @@ package net.wg.gui.lobby.storage.categories.cards
          this._isOver = false;
          this.disposeTweens();
          this._tweens = this.getRollOutTweens();
-         App.utils.scheduler.cancelTask(dispatchEvent);
+         this._scheduler.cancelTask(dispatchEvent);
       }
       
       protected function animateImage() : void
@@ -808,7 +841,7 @@ package net.wg.gui.lobby.storage.categories.cards
          var _loc1_:int = 0;
          if(this.upgradeButton == null)
          {
-            this.upgradeButton = App.utils.classFactory.getComponent(Linkages.BUTTON_ICON_NORMAL,ButtonIconNormal);
+            this.upgradeButton = this._classFactory.getComponent(Linkages.BUTTON_ICON_NORMAL,ButtonIconNormal);
             this.upgradeButton.width = SMALL_BUTTON_WIDTH;
             this.upgradeButton.alpha = 0;
             _loc1_ = getChildIndex(this.sellButton);
@@ -841,11 +874,9 @@ package net.wg.gui.lobby.storage.categories.cards
       
       private function updateExtraParamsLayout() : void
       {
-         var _loc1_:int = 0;
          if(this.extraParams)
          {
-            _loc1_ = this._sizeVO.size.width < CARD_SMALL_WIDTH ? int(EXTRA_PARAMS_SMALL_CARD_MAX_NUM) : int(EXTRA_PARAMS_BIG_CARD_MAX_NUM);
-            this.extraParams.setMaxTextLines(_loc1_);
+            this.extraParams.setMaxTextLines(this._sizeVO.size.width < CARD_SMALL_WIDTH ? uint(EXTRA_PARAMS_SMALL_CARD_MAX_NUM) : uint(EXTRA_PARAMS_BIG_CARD_MAX_NUM));
             this.extraParams.setMaxTextWidth(this._sizeVO.innerPadding.width >> 0);
          }
       }
@@ -854,7 +885,7 @@ package net.wg.gui.lobby.storage.categories.cards
       {
          var _loc1_:CompoundPriceVO = this._data.price.price;
          var _loc2_:CompoundPriceVO = this._data.price.defPrice;
-         App.toolTipMgr.showSpecial(TOOLTIPS_CONSTANTS.ACTION_PRICE,null,TOOLTIP_ACTION_PRICE_FIELD_NAME_ITEM,this._data.id,[_loc1_.getPriceValueByName(CURRENCIES_CONSTANTS.CREDITS),_loc1_.getPriceValueByName(CURRENCIES_CONSTANTS.GOLD),_loc1_.getPriceValueByName(CURRENCIES_CONSTANTS.CRYSTAL)],[_loc2_.getPriceValueByName(CURRENCIES_CONSTANTS.CREDITS),_loc2_.getPriceValueByName(CURRENCIES_CONSTANTS.GOLD),_loc2_.getPriceValueByName(CURRENCIES_CONSTANTS.CRYSTAL)],false,true,-1);
+         this._toolTipMgr.showSpecial(TOOLTIPS_CONSTANTS.ACTION_PRICE,null,TOOLTIP_ACTION_PRICE_FIELD_NAME_ITEM,this._data.id,[_loc1_.getPriceValueByName(CURRENCIES_CONSTANTS.CREDITS),_loc1_.getPriceValueByName(CURRENCIES_CONSTANTS.GOLD),_loc1_.getPriceValueByName(CURRENCIES_CONSTANTS.CRYSTAL)],[_loc2_.getPriceValueByName(CURRENCIES_CONSTANTS.CREDITS),_loc2_.getPriceValueByName(CURRENCIES_CONSTANTS.GOLD),_loc2_.getPriceValueByName(CURRENCIES_CONSTANTS.CRYSTAL)],false,true,-1);
       }
       
       public function get index() : uint
@@ -938,7 +969,7 @@ package net.wg.gui.lobby.storage.categories.cards
       
       protected function onTooltipHitAreaRollOut(param1:MouseEvent) : void
       {
-         App.toolTipMgr.hide();
+         this._toolTipMgr.hide();
       }
       
       protected function onClick(param1:MouseEvent) : void
@@ -947,8 +978,7 @@ package net.wg.gui.lobby.storage.categories.cards
          {
             return;
          }
-         var _loc2_:ICommons = App.utils.commons;
-         if(_loc2_.isRightButton(param1))
+         if(this._commons.isRightButton(param1))
          {
             if(this._data.contextMenuId)
             {
@@ -988,7 +1018,10 @@ package net.wg.gui.lobby.storage.categories.cards
       
       private function onClickHandler(param1:MouseEvent) : void
       {
-         this.onClick(param1);
+         if(this._commons.isLeftButton(param1) || this._commons.isRightButton(param1))
+         {
+            this.onClick(param1);
+         }
       }
    }
 }

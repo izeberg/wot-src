@@ -27,6 +27,8 @@ package net.wg.gui.lobby.settings.config
       
       public static var TYPE_BUTTON:String = "Button";
       
+      public static var TYPE_CONTROLS_GROUP:String = "ControlsGroup";
+      
       private static var _instance:ControlsFactory = null;
        
       

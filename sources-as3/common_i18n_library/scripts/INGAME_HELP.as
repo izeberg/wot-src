@@ -315,32 +315,6 @@ package
       
       public static const DETAILSHELP_NOKEYSWARNING:String = "#ingame_help:detailsHelp/noKeysWarning";
       
-      public static const DETAILSHELP_BATTLEROYALE_RADAR_TITLE:String = "#ingame_help:detailsHelp/battleRoyale/radar/title";
-      
-      public static const DETAILSHELP_BATTLEROYALE_RADAR_DESCRIPTION:String = "#ingame_help:detailsHelp/battleRoyale/radar/description";
-      
-      public static const DETAILSHELP_BATTLEROYALE_SECTORVISION_TITLE:String = "#ingame_help:detailsHelp/battleRoyale/sectorVision/title";
-      
-      public static const DETAILSHELP_BATTLEROYALE_SECTORVISION_DESCRIPTION:String = "#ingame_help:detailsHelp/battleRoyale/sectorVision/description";
-      
-      public static const DETAILSHELP_BATTLEROYALE_ZONE_TITLE:String = "#ingame_help:detailsHelp/battleRoyale/zone/title";
-      
-      public static const DETAILSHELP_BATTLEROYALE_ZONE_DESCRIPTION:String = "#ingame_help:detailsHelp/battleRoyale/zone/description";
-      
-      public static const DETAILSHELP_BATTLEROYALE_AIRDROP_TITLE:String = "#ingame_help:detailsHelp/battleRoyale/airDrop/title";
-      
-      public static const DETAILSHELP_BATTLEROYALE_AIRDROP_DESCRIPTION:String = "#ingame_help:detailsHelp/battleRoyale/airDrop/description";
-      
-      public static const DETAILSHELP_BATTLEROYALE_UPGRADE_TITLE:String = "#ingame_help:detailsHelp/battleRoyale/upgrade/title";
-      
-      public static const DETAILSHELP_BATTLEROYALE_UPGRADE_DESCRIPTION:String = "#ingame_help:detailsHelp/battleRoyale/upgrade/description";
-      
-      public static const DETAILSHELP_BATTLEROYALE_UNIQUEABILITIES_TITLE:String = "#ingame_help:detailsHelp/battleRoyale/uniqueAbilities/title";
-      
-      public static const DETAILSHELP_BATTLEROYALE_UNIQUEABILITIES_DESCRIPTION:String = "#ingame_help:detailsHelp/battleRoyale/uniqueAbilities/description";
-      
-      public static const DETAILSHELP_NOKEY:String = "#ingame_help:detailsHelp/noKey";
-      
       public static const DETAILSHELP_ROLE_TITLE:String = "#ingame_help:detailsHelp/role/title";
       
       public static const DETAILSHELP_ROLE_DESCRIPTION:String = "#ingame_help:detailsHelp/role/description";

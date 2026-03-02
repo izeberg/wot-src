@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G191_StuG_IIIF_CFE_A/_skins/G191_StuG_IIIF_AF_3Dst/normal/lod0/Chassis</nodefullVisual>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.430207 -0.000685 -2.567199</min>
+		<max>1.430207 1.238142 2.607294</max>
+	</visibilityBox>
+	<parent>vehicles/german/G191_StuG_IIIF_CFE_A/_skins/G191_StuG_IIIF_AF_3Dst/normal/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+</root>

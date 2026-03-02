@@ -191,28 +191,28 @@ msgid "battlePage/statusNotificationTimers/sureShot"
 msgstr "Vehicle characteristics improved"
 
 msgid "battleResult/header/deserter"
-msgstr "You have received a disciplinary penalty: Penalty to Rating Points"
+msgstr "You have received a penalty to Rating Points"
 
 msgid "battleResult/header/deserterQualification"
 msgstr ""
-"You have received a disciplinary penalty: After completing Qualification, "
-"your rating will be reduced"
+"You have been penalized. After completing Qualification, your rating will be"
+" reduced."
 
 msgid "battleResult/label/deserter"
 msgstr "Desertion"
 
 msgid "battleResult/message/deserter"
 msgstr ""
-"You have received a disciplinary penalty.\n"
+"You have been penalized.\n"
 "Rating Points lost: %(penalty)s"
 
 msgid "battleResult/message/deserterQualification"
 msgstr ""
-"You have deserted the battlefield and received a disciplinary penalty.\n"
+"You have deserted the battlefield.\n"
 "After completing Qualification, your rating will be reduced."
 
 msgid "battleResult/message/header/deserter"
-msgstr "Disciplinary Penalty"
+msgstr "Unsportsmanlike Conduct"
 
 msgid "battleResult/personal/label"
 msgstr "Rating Points"
@@ -225,7 +225,7 @@ msgstr ""
 msgid "battleResult/personal/tooltip/loseDescr"
 msgstr ""
 "• Defeats/draws in mode battles\n"
-"• Receiving a disciplinary penalty\n"
+"• Receiving a penalty\n"
 "• Rank inactivity."
 
 msgid "battleResult/personal/tooltip/loseTitle"
@@ -2059,8 +2059,8 @@ msgstr "View All"
 
 msgid "tournament/visitShop/description/ols"
 msgstr ""
-"If your chosen team wins, you'll receive a unique OLS'26 Winter badge. Cheer"
-" for your favorites!"
+"Support the Onslaught Legends Series while boosting the prize pool with "
+"tournament bundles!"
 
 msgid "tournament/visitShop/description/wci"
 msgstr ""
@@ -2068,7 +2068,7 @@ msgstr ""
 "unique tanks!"
 
 msgid "tournament/visitShop/heading/ols"
-msgstr "ORACLE BUNDLES"
+msgstr "FUEL THE PRIZE POOL"
 
 msgid "tournament/visitShop/heading/wci"
 msgstr "WCI BUNDLES"

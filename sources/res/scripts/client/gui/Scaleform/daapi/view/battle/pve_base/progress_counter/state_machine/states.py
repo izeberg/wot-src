@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from frameworks.state_machine import StateFlags
 from gui.Scaleform.daapi.view.battle.pve_base.base.state_machine.states import BaseState
 from pve_battle_hud import ProgressCounterState

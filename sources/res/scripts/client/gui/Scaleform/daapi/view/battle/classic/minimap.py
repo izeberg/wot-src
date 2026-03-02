@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, BattleReplay, BigWorld, CommandMapping, Keys, Math
 from PlayerEvents import g_playerEvents
 from account_helpers import AccountSettings
@@ -213,7 +214,7 @@ class TeamsOrControlsPointsPlugin(common.EntriesPlugin):
         if removeID in self.__markerIDs:
             self._invoke(self.__markerIDs[removeID].getID(), BATTLE_MINIMAP_CONSTS.SET_STATE, BATTLE_MINIMAP_CONSTS.STATE_DEFAULT)
             return
-        _logger.error(str(removeID) + ' not found in markerIDs')
+        _logger.error('%s not found in markerIDs', removeID)
 
     def __onTeamChanged(self, teamID):
         self.restart()

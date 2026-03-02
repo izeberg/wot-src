@@ -354,7 +354,7 @@
 					</property>
 					<property>
 						<name>Rotation</name>
-						<value>0 0 0</value>
+						<value>-0 0 0</value>
 					</property>
 				</config>
 			</component>
@@ -372,7 +372,7 @@
 					</property>
 					<property>
 						<name>Rotation</name>
-						<value>0 0 0</value>
+						<value>-0 0 0</value>
 					</property>
 				</config>
 			</component>
@@ -516,7 +516,7 @@
 					</property>
 					<property>
 						<name>Rotation</name>
-						<value>0 0 0</value>
+						<value>-0 0 0</value>
 					</property>
 				</config>
 			</component>
@@ -833,6 +833,30 @@
 						<section>
 							<resource>particles/Tank/customization/Ch62_BZ_75_M/nitro_tank_end.prefab</resource>
 						</section>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>DistToTerrainComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>283e7594-f444-48ce-8417-f8f468fb35b2</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>transfromLink</name>
+						<link>283e7594-f444-48ce-8417-f8f468fb35b2</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>d263ea22-8132-4acc-9621-91428ce380fc</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>transfromLink</name>
+						<link>d263ea22-8132-4acc-9621-91428ce380fc</link>
 					</property>
 				</config>
 			</component>

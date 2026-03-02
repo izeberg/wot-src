@@ -1,6 +1,12 @@
-import time, math, BigWorld, Math, resource_helper, ResMgr
-from debug_utils import LOG_ERROR
+from __future__ import absolute_import, division
+import math, time
+from past.utils import old_div
+import BigWorld, Event, Math, ResMgr, resource_helper
+from debug_utils import LOG_ERROR, LOG_WARNING
+from gui.Scaleform.framework.entities.abstract.AbstractTweenMeta import AbstractTweenMeta
+from gui.Scaleform.framework.entities.abstract.PythonTweenMeta import PythonTweenMeta
 from gui.Scaleform.framework.entities.abstract.TweenManagerMeta import TweenManagerMeta
+from math_common import decimal_round
 TWEEN_CONSTRAINTS_FILE_PATH = 'gui/tween_constraints.xml'
 ERROR_NOT_SUCH_FILE = 'Not such file '
 REQUIRED_PARAMETERS = [
@@ -207,7 +213,7 @@ class TweenManager(TweenManagerMeta):
                 position += deltaTime
                 tween.position = position
                 if position > 0:
-                    ratio = position / duration
+                    ratio = old_div(position, duration)
                     if ratio >= 1:
                         tween.isComplete = True
                         ratio = 1
@@ -216,10 +222,6 @@ class TweenManager(TweenManagerMeta):
 
         return
 
-
-from debug_utils import LOG_WARNING
-import Event
-from gui.Scaleform.framework.entities.abstract.AbstractTweenMeta import AbstractTweenMeta
 
 class _AbstractTween(AbstractTweenMeta):
     PAUSED = 'paused'
@@ -310,14 +312,14 @@ class _AbstractTween(AbstractTweenMeta):
         info = target.getDisplayInfo()
         return {_AbstractTween.X: info.x, 
            _AbstractTween.Y: info.y, 
-           _AbstractTween.SCALE_X: info.xScale / 100, 
-           _AbstractTween.SCALE_Y: info.yScale / 100, 
+           _AbstractTween.SCALE_X: old_div(info.xScale, 100), 
+           _AbstractTween.SCALE_Y: old_div(info.yScale, 100), 
            _AbstractTween.ALPHA: info.alpha, 
            _AbstractTween.ROTATION: matrix.roll}
 
     def __creatDeltaData(self):
         deltaProps = {}
-        for prop in _AbstractTween.PROPS_IN_USE.iterkeys():
+        for prop in _AbstractTween.PROPS_IN_USE:
             if self.__animTargetProps.has_key(prop) and self.__animTargetProps[prop] is not None:
                 deltaProps[prop] = self.__animTargetProps[prop] - self.__startTargetProps[prop]
             else:
@@ -327,7 +329,7 @@ class _AbstractTween(AbstractTweenMeta):
 
     def __createAnimPropsFromObject(self, newProps):
         resultProps = {}
-        for propName in _AbstractTween.PROPS_IN_USE.iterkeys():
+        for propName in _AbstractTween.PROPS_IN_USE:
             propValue = getattr(newProps, propName, None)
             if propValue is not None and str(propValue) != _AbstractTween.NAN:
                 resultProps[propName] = propValue
@@ -357,7 +359,7 @@ class _AbstractTween(AbstractTweenMeta):
         if self.__target:
             self.__startTargetProps = self.__createStartProps(self.__target)
         duration = props.getDuration()
-        if not duration == 0:
+        if duration != 0:
             self.setDuration(duration)
         self.__animTargetProps = self.__createAnimPropsFromObject(props)
         self.__deltaTargetProps = self.__creatDeltaData()
@@ -373,7 +375,7 @@ class _AbstractTween(AbstractTweenMeta):
         return self.__paused
 
     def setPaused(self, paused):
-        if not self.__paused == paused:
+        if self.__paused != paused:
             if not paused and self.__isPostponedStarted:
                 self.onTweenStart(self)
             self.__paused = paused
@@ -514,18 +516,16 @@ class _AbstractTween(AbstractTweenMeta):
         return resultData
 
 
-from gui.Scaleform.framework.entities.abstract.PythonTweenMeta import PythonTweenMeta
-
 class _PythonTween(_AbstractTween, PythonTweenMeta):
 
-    def setPropToTargetDO(self, data, ratio):
+    def setPropToTargetDO(self, props, ratio):
         target = self.getTarget()
         info = target.getDisplayInfo()
         self.resetMatrix(target)
         matrix = target.displayMatrix
         translation = matrix.translation
-        if _AbstractTween.ALPHA in data:
-            info.alpha = data[_AbstractTween.ALPHA]
+        if _AbstractTween.ALPHA in props:
+            info.alpha = props[_AbstractTween.ALPHA]
             info.x = translation.x
             info.y = translation.y
             target.setDisplayInfo(info)
@@ -535,16 +535,16 @@ class _PythonTween(_AbstractTween, PythonTweenMeta):
          _AbstractTween.ROTATION,
          _AbstractTween.SCALE_X,
          _AbstractTween.SCALE_Y])
-        if set(data.keys()).intersection(matrixProps):
-            if _AbstractTween.ROTATION in data:
+        if set(props.keys()).intersection(matrixProps):
+            if _AbstractTween.ROTATION in props:
                 matrixRotation = Math.Matrix()
-                matrixRotation.setRotateZ(-data[_AbstractTween.ROTATION] - matrix.roll)
+                matrixRotation.setRotateZ(-props[_AbstractTween.ROTATION] - matrix.roll)
                 matrix.preMultiply(matrixRotation)
-            if _AbstractTween.X in data:
+            if _AbstractTween.X in props:
                 matrixTranslation = Math.Matrix()
                 matrixTranslation.setTranslate((
-                 data[_AbstractTween.X] - translation.x,
-                 data[_AbstractTween.Y] - translation.y, 0))
+                 props[_AbstractTween.X] - translation.x,
+                 props[_AbstractTween.Y] - translation.y, 0))
                 matrix.preMultiply(matrixTranslation)
             target.displayMatrix = matrix
             self.resetDisplayInfo(target)
@@ -554,8 +554,8 @@ class _PythonTween(_AbstractTween, PythonTweenMeta):
         matrixTranslation = Math.Matrix()
         matrix = target.displayMatrix
         translation = matrix.translation
-        x = round(displayInfo.x, 1) - round(translation.x, 1)
-        y = round(displayInfo.y, 1) - round(translation.y, 1)
+        x = decimal_round(displayInfo.x, 1) - decimal_round(translation.x, 1)
+        y = decimal_round(displayInfo.y, 1) - decimal_round(translation.y, 1)
         matrixTranslation.setTranslate((x, y, 1))
         matrix.postMultiply(matrixTranslation)
         target.displayMatrix = matrix

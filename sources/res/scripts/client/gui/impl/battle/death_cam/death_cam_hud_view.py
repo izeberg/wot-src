@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging
 from gui.impl.battle.death_cam.death_cam_ui_view import DeathCamUIView
 from gui.impl.battle.death_cam.marker_view import DeathCamMarkerView

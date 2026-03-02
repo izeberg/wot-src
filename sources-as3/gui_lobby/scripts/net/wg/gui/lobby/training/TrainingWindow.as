@@ -194,7 +194,7 @@ package net.wg.gui.lobby.training
       override protected function draw() : void
       {
          var _loc1_:uint = 0;
-         var _loc2_:uint = 0;
+         var _loc2_:Number = NaN;
          var _loc3_:uint = 0;
          super.draw();
          if(this._paramsVO != null && this._mapsData != null && isInvalid(InvalidationType.DATA))
@@ -223,39 +223,22 @@ package net.wg.gui.lobby.training
             {
                this.createButon.label = MENU.TRAINING_INFO_SETTINGS_OKBUTTON;
                _loc1_ = this._mapsData.length;
-               _loc2_ = 0;
-               while(_loc2_ < _loc1_)
+               _loc2_ = this._paramsVO.arena;
+               _loc3_ = 0;
+               while(_loc3_ < _loc1_)
                {
-                  if(this._paramsVO.arena == this._mapsData[_loc2_].key)
+                  if(_loc2_ == this._mapsData[_loc3_].key)
                   {
-                     this.maps.selectedIndex = _loc2_;
+                     this.maps.selectedIndex = _loc3_;
                      this._dataWasSetted = true;
                      break;
                   }
-                  _loc2_++;
+                  _loc3_++;
                }
             }
          }
-         if(isInvalid(InvalidationType.LAYOUT))
+         if(!isInvalid(InvalidationType.LAYOUT))
          {
-            _loc3_ = 0;
-            if(this._layoutType == LAYOUT_WITH_AVERAGE_DESC)
-            {
-               _loc3_ = LAYOUT_WITH_AVERAGE_DESC_OFFSET_Y;
-            }
-            else if(this._layoutType == LAYOUT_WITH_SHORT_DESC)
-            {
-               _loc3_ = LAYOUT_WITH_SHORT_DESC_OFFSET_Y;
-            }
-            this.maxPlayerTitleTF.y = MAX_PLAYER_TITLE_TF_Y + _loc3_;
-            this.maxPlayers.y = MAX_PLAYERS_Y + _loc3_;
-            this.battleTimerTitleTF.y = BATTLE_TIMER_TITLE_TF_Y + _loc3_;
-            this.battleTime.y = BATTLE_TIME_Y + _loc3_;
-            this.timerInfoIcon.y = TIMER_INFO_ICON_Y + _loc3_;
-            this.isPrivate.y = IS_PRIVATE_CHECKBOX_Y + _loc3_;
-            this.descrTitleTF.y = DESCR_TITLE_Y + _loc3_;
-            this.description.y = DESCRIPTION_Y + _loc3_;
-            this.description.height = DESCRIPTION_HEIGHT - _loc3_;
          }
       }
       
@@ -278,6 +261,29 @@ package net.wg.gui.lobby.training
          var _loc4_:int = !!this.isPrivate.selected ? int(1) : int(Values.ZERO);
          var _loc5_:String = Boolean(this.description.text) ? this.description.text : Values.EMPTY_STR;
          updateTrainingRoomS(_loc2_,_loc3_,_loc4_,_loc5_);
+      }
+      
+      private function updateLayout() : void
+      {
+         var _loc1_:uint = 0;
+         if(this._layoutType == LAYOUT_WITH_AVERAGE_DESC)
+         {
+            _loc1_ = LAYOUT_WITH_AVERAGE_DESC_OFFSET_Y;
+         }
+         else if(this._layoutType == LAYOUT_WITH_SHORT_DESC)
+         {
+            _loc1_ = LAYOUT_WITH_SHORT_DESC_OFFSET_Y;
+         }
+         this.maxPlayerTitleTF.y = MAX_PLAYER_TITLE_TF_Y + _loc1_;
+         this.maxPlayers.y = MAX_PLAYERS_Y + _loc1_;
+         this.battleTimerTitleTF.y = BATTLE_TIMER_TITLE_TF_Y + _loc1_;
+         this.battleTime.y = BATTLE_TIME_Y + _loc1_;
+         this.timerInfoIcon.y = TIMER_INFO_ICON_Y + _loc1_;
+         this.isPrivate.y = IS_PRIVATE_CHECKBOX_Y + _loc1_;
+         this.descrTitleTF.y = DESCR_TITLE_Y + _loc1_;
+         this.description.y = DESCRIPTION_Y + _loc1_;
+         this.description.height = DESCRIPTION_HEIGHT - _loc1_;
+         this.description.validateNow();
       }
       
       private function onMapIndexChangeHandler(param1:ListEvent) : void
@@ -307,7 +313,7 @@ package net.wg.gui.lobby.training
             {
                this._layoutType = LAYOUT_WITH_AVERAGE_DESC;
             }
-            invalidateLayout();
+            this.updateLayout();
          }
          if(this._dataWasSetted && this._paramsVO)
          {

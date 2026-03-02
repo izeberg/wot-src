@@ -76,15 +76,17 @@ package net.wg.gui.notification.custom.pm3
       
       public function setData(param1:String, param2:Array, param3:int) : void
       {
+         var _loc4_:PM3VehicleIcon = null;
+         var _loc10_:Boolean = false;
          this.statusTF.htmlText = param1;
          this.statusTF.height = this.statusTF.textHeight + TEXT_ADDITIONAL_HEIGHT + TEXT_BOTTOM_MARGIN >> 0;
-         var _loc4_:PM3VehicleIcon = null;
+         _loc4_ = null;
          var _loc5_:PM3VehicleInfo = null;
          var _loc6_:int = X_CENTER - (ICON_STEP * (param3 - 1) >> 1);
          var _loc7_:int = this.statusTF.y + this.statusTF.height + ICON_TOP_MARGIN - TEXT_ADDITIONAL_HEIGHT;
          var _loc8_:int = FROM_Y;
          var _loc9_:int = param2.length;
-         var _loc10_:Boolean = false;
+         _loc10_ = false;
          this._vehicleIcons = [];
          this._vehicleInfos = [];
          var _loc11_:int = 0;

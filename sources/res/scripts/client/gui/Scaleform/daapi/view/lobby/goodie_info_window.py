@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.Scaleform.daapi.view.meta.GoodieInfoMeta import GoodieInfoMeta
 from helpers import dependency
 from skeletons.gui.goodies import IGoodiesCache

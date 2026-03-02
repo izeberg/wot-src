@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from gui.impl.backport.backport_tooltip import DecoratedTooltipWindow
 from gui.impl.gen import R

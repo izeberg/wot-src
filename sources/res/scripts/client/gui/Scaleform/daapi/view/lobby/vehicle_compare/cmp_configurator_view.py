@@ -706,9 +706,9 @@ class VehicleCompareConfiguratorMain(LobbySubView, VehicleCompareConfiguratorMai
     def __isHasDifferences(self, strCD, equipment, basketVehCrewLvl, basketVehCrewSkills, selShellIndex, hasCamouflage, battleBooster, dynSlotType, postProgressionState):
         if basketVehCrewLvl != self.getCurrentCrewSkillLevel():
             return True
-        if basketVehCrewSkills != self.getCurrentCrewSkills():
-            return True
         else:
+            if basketVehCrewSkills != self.getCurrentCrewSkills():
+                return True
             if not cmp_helpers.isEquipmentSame(equipment, self.__vehicle.consumables.installed.getIntCDs(default=None)):
                 return True
             if selShellIndex != self.__selectedShellIndex:
@@ -717,7 +717,7 @@ class VehicleCompareConfiguratorMain(LobbySubView, VehicleCompareConfiguratorMai
             if hasCamouflage != currVehHasCamouflage:
                 return True
             currVehBattleBoosters = self.__vehicle.battleBoosters.installed
-            if currVehBattleBoosters.getCapacity() > 0 and not battleBooster == currVehBattleBoosters[0]:
+            if currVehBattleBoosters.getCapacity() > 0 and battleBooster != currVehBattleBoosters[0]:
                 return True
             if currVehHasCamouflage:
                 targetVehicle = Vehicle(self.__vehicle.descriptor.makeCompactDescr())

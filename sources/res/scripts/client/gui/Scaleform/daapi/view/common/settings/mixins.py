@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from frameworks.wulf import WindowLayer
 if typing.TYPE_CHECKING:

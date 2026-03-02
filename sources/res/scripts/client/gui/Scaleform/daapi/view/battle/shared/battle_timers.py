@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, SoundGroups, CommandMapping
 from constants import ARENA_GUI_TYPE
 from PlayerEvents import g_playerEvents
@@ -29,7 +30,7 @@ class PreBattleTimer(PrebattleTimerMeta):
     def __init__(self):
         self.__isPMBattleProgressEnabled = False
         self.__isRankedBattle = False
-        self.__sounds = dict()
+        self.__sounds = {}
         super(PreBattleTimer, self).__init__()
 
     def _populate(self):
@@ -103,7 +104,7 @@ class BattleTimer(BattleTimerMeta, IAbstractPeriodView):
         self.__endingSoonTime = self.arenaVisitor.type.getBattleEndingSoonTime()
         self.__isDeathScreenShown = False
         self.__endWarningIsEnabled = self.__checkEndWarningStatus()
-        self.__sounds = dict()
+        self.__sounds = {}
 
     def destroy(self):
         for sound in self.__sounds.values():

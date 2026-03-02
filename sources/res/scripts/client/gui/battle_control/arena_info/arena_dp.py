@@ -1,4 +1,4 @@
-import logging, operator, typing
+import logging, operator
 from constants import TEAMS_IN_ARENA, PLAYER_RANK
 from shared_utils import first
 from gui.battle_control import avatar_getter
@@ -7,14 +7,13 @@ from gui.battle_control.arena_info import arena_vos
 from gui.battle_control.arena_info import settings
 from gui.battle_control.arena_info import squad_finder
 from gui.battle_control.arena_info import vos_collections
+from gui.battle_control.arena_info.arena_vos import EPIC_BATTLE_KEYS
 from gui.battle_control.battle_constants import MULTIPLE_TEAMS_TYPE
 from gui.battle_control.battle_constants import PLAYER_GUI_PROPS
 from skeletons.gui.battle_session import IBattleSessionProvider
 from skeletons.gui.battle_session import IArenaDataProvider
 from helpers import dependency
 from skeletons.gui.lobby_context import ILobbyContext
-if typing.TYPE_CHECKING:
-    from gui.battle_control.arena_info.arena_vos import EPIC_BATTLE_KEYS, VehicleArenaInfoVO
 _logger = logging.getLogger(__name__)
 _OP = settings.INVALIDATE_OP
 _INVITATION_STATUS = settings.INVITATION_DELIVERY_STATUS
@@ -377,9 +376,6 @@ class ArenaDataProvider(IArenaDataProvider):
 
     def getWinStatus(self, team):
         return self.__description.getTeamWinStatus(team, self.isAllyTeam(team))
-
-    def getVehicleInfoByID(self, vehicleID):
-        return self.__vInfoVOs.get(vehicleID, None)
 
     def __findSquads(self, exclude=None):
         result = []

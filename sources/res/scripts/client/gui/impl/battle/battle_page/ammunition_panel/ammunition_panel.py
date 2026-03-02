@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.impl.battle.battle_page.ammunition_panel.groups_controller import PrebattleAmmunitionGroupsController
 from gui.impl.common.ammunition_panel.base import BaseAmmunitionPanel
 from gui.impl.gen.view_models.views.lobby.tank_setup.tank_setup_constants import TankSetupConstants

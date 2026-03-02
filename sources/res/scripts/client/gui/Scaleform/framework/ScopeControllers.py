@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.shared import g_eventBus, EVENT_BUS_SCOPE
 from gui.shared.events import ComponentEvent
 from gui.shared.utils.callable_delayer import delayUntilParentWindowReady, CallableDelayer

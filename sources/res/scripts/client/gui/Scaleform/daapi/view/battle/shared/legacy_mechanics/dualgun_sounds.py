@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import WWISE, math_utils, BigWorld
 from gui.battle_control.battle_constants import CANT_SHOOT_ERROR
 from helpers.CallbackDelayer import CallbackDelayer

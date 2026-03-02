@@ -1,5 +1,5 @@
 from constants import ARENA_GAMEPLAY_IDS, HANGAR_VISIBILITY_TAGS
-import ResMgr
+from extension_utils import ResMgr
 from soft_exception import SoftException
 from debug_utils import LOG_WARNING
 
@@ -23,6 +23,7 @@ class SpaceVisibilityFlags(object):
 
     def __init__(self, geometryName):
         settingsPath = SpaceVisibilityFlags.__formSettingPath(geometryName)
+        settingsPath = ResMgr.findFirstPathOccurrence(settingsPath)
         settingsSection = _openSection(settingsPath)
         flagsSection = None
         self.types = ARENA_GAMEPLAY_IDS

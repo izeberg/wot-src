@@ -9,35 +9,11 @@ package net.wg.gui.lobby.techtree
       
       public static const STATE_CHANGED:String = "stateChanged";
       
-      public static const CLICK_2_OPEN:String = "clickToOpen";
-      
-      public static const CLICK_2_UNLOCK:String = "unlock";
-      
-      public static const CLICK_2_BUY:String = "buy";
-      
-      public static const CLICK_2_RENT:String = "rent";
-      
-      public static const ON_MODULE_HOVER:String = "moduleHover";
-      
-      public static const RESTORE_VEHICLE:String = "restoreVehicle";
-      
       public static const GO_TO_VEHICLE_VIEW:String = "goToVehicleView";
       
       public static const GO_TO_POST_PROGRESSION:String = "goToPostProgression";
       
       public static const CLICK_VEHICLE_COMPARE:String = "clickVehicleCompare";
-      
-      public static const GO_TO_BLUEPRINT_VIEW:String = "goToBluePrintView";
-      
-      public static const GO_TO_CHANGE_NATION_VIEW:String = "goToChangeNationView";
-      
-      public static const GO_TO_PREMIUM_SHOP:String = "goToPremiumShop";
-      
-      public static const GO_TO_SHOP:String = "goToShop";
-      
-      public static const ON_START_HINT_ANIMATION:String = "startHintAnimation";
-      
-      public static const ON_END_HINT_ANIMATION:String = "endHintAnimation";
        
       
       public var nodeState:String = "";

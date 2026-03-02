@@ -164,7 +164,7 @@ class RecordsIterator(ResultRecord):
                 return idx or self
             return self._seq[(idx - 1)]
 
-        raise StopIteration()
+        raise StopIteration
 
     def addRecords(self, record):
         self._seq.append(record)

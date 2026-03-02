@@ -38,7 +38,7 @@ package net.wg.gui.notification
          this.checkNewsBtn.changeSizeOnlyUpwards = true;
          this.checkNewsBtn.width = CHECK_NEWS_BTN_WIDTH;
          this.checkNewsBtn.paddingHorizontal = BTN_TEXT_FIELD_PADDING;
-         this.checkNewsBtn.tooltip = TOOLTIPS.LOBY_MESSENGER_LISTVIEW_NEWS_TOOLTIP;
+         this.checkNewsBtn.tooltip = TOOLTIPS.LOBBY_MESSENGER_LISTVIEW_NEWS_TOOLTIP;
          this.checkNewsBtn.addEventListener(ButtonEvent.CLICK,this.onCheckNewsBtnClickHandler);
          App.utils.universalBtnStyles.setStyle(this.checkNewsBtn,UniversalBtnStylesConst.STYLE_SLIM_BLACK);
       }

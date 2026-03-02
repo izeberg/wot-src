@@ -32,10 +32,11 @@ def _getViewSoundEnv(view):
 
 def _getGFViewSoundEnv(viewImplAdaptor):
     viewImpl = getattr(viewImplAdaptor, 'view', None)
-    if viewImpl is not None:
-        return getattr(viewImpl, '__sound_env__', None)
+    view = viewImpl if viewImpl is not None else viewImplAdaptor
+    if hasattr(view, 'getDynamicSoundEnv'):
+        return getattr(view, 'getDynamicSoundEnv')()
     else:
-        return getattr(viewImplAdaptor, '__sound_env__', None)
+        return getattr(view, '__sound_env__', None)
 
 
 class SoundEvent(Notifiable):
@@ -365,13 +366,6 @@ class BattleResultsEnv(SoundEnv):
     def _onMusicFinished(self, isCompleted=False):
         self._clearMusicEvent()
         self._onChanged()
-
-
-class BattlePassSoundEnv(SoundEnv):
-
-    def __init__(self, soundsCtrl):
-        super(BattlePassSoundEnv, self).__init__(soundsCtrl, 'battlePass', filters=(
-         SoundFilters.BATTLE_PASS_FILTER, SoundFilters.HANGAR_PLACE_TASKS_BATTLE_PASS))
 
 
 class MarathonPageSoundEnv(SoundEnv):

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.475633 -0.014196 -2.919443</min>
+		<max>1.478055 1.410108 1.140469</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/italy/It40_Predatore/crash/lod4/Turret_01</nodefullVisual>
+</root>

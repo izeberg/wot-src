@@ -4,7 +4,6 @@ from gui.impl.backport import BackportTooltipWindow, createTooltipData
 from gui.impl.gen import R
 from gui.impl.pub import ViewImpl
 from gui.prb_control.entities.listener import IGlobalListener
-from gui.shared import EVENT_BUS_SCOPE, g_eventBus, events
 from gui.shared.event_dispatcher import showHangar
 
 class NoVehiclesScreen(ViewImpl, IGlobalListener):
@@ -76,12 +75,10 @@ class NoVehiclesScreen(ViewImpl, IGlobalListener):
     def __addListeners(self):
         self.viewModel.scheduleInfo.season.pollServerTime += self.__onPollServerTime
         self.startGlobalListening()
-        g_eventBus.addListener(events.LobbyHeaderMenuEvent.MENU_CLICK, self.__onHeaderMenuClick, scope=EVENT_BUS_SCOPE.LOBBY)
 
     def __removeListeners(self):
         self.viewModel.scheduleInfo.season.pollServerTime -= self.__onPollServerTime
         self.stopGlobalListening()
-        g_eventBus.removeListener(events.LobbyHeaderMenuEvent.MENU_CLICK, self.__onHeaderMenuClick, scope=EVENT_BUS_SCOPE.LOBBY)
 
     def _getEvents(self):
         return (
@@ -103,9 +100,6 @@ class NoVehiclesScreen(ViewImpl, IGlobalListener):
             showHangar()
         else:
             self.__onPollServerTime()
-
-    def __onHeaderMenuClick(self, *_):
-        self.destroyWindow()
 
     def __updateData(self):
         with self.viewModel.transaction() as (model):

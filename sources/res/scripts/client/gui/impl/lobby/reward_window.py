@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging
 from frameworks.wulf import ViewSettings
 from frameworks.wulf.gui_constants import WindowFlags, WindowLayer, ViewFlags

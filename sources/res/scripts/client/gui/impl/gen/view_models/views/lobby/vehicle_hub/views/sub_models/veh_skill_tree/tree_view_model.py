@@ -11,6 +11,7 @@ class ResearchAvailability(Enum):
     NEEDS_REPAIR = 'needsRepair'
     AVAILABLE = 'researchAvailable'
     EMERGENCY_MODE_ENABLED = 'emergencyModeEnabled'
+    RESEARCH_IN_PROGRESS = 'researchInProgress'
 
 
 class TreeViewModel(ViewModel):

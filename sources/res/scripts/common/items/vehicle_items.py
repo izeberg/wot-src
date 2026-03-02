@@ -377,6 +377,10 @@ class Gun(InstallableItem):
         else:
             return
 
+    @property
+    def hasClip(self):
+        return 'clip' in self.tags
+
 
 @add_shallow_copy('variantName')
 class Hull(BasicItem):

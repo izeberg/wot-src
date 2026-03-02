@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging
 from gui.impl.common.ammunition_panel.ammunition_groups_controller import GROUPS_MAP
 from gui.impl.common.base_sub_model_view import BaseSubModelView

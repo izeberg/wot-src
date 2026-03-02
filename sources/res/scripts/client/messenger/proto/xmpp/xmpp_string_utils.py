@@ -15,7 +15,7 @@ def validateRosterItemGroup(name):
              ClientContactError(CONTACT_ERROR_ID.GROUP_INVALID_NAME, name))
 
         length = len(name)
-        if CONTACT_LIMIT.GROUP_MIN_LENGTH > length or CONTACT_LIMIT.GROUP_MAX_LENGTH < length:
+        if length < CONTACT_LIMIT.GROUP_MIN_LENGTH or length > CONTACT_LIMIT.GROUP_MAX_LENGTH:
             return (name.encode('utf-8'),
              ClientIntLimitError(LIMIT_ERROR_ID.GROUP_INVALID_LENGTH, CONTACT_LIMIT.GROUP_MAX_LENGTH, CONTACT_LIMIT.GROUP_MIN_LENGTH))
         return (
@@ -45,7 +45,7 @@ def validateUserRoomName(name):
              ClientChannelError(CHANNEL_ERROR_ID.NAME_INVALID, name))
 
         length = len(name)
-        if CHANNEL_LIMIT.NAME_MIN_CHARS_COUNT > length or CHANNEL_LIMIT.NAME_MAX_CHARS_COUNT < length:
+        if length < CHANNEL_LIMIT.NAME_MIN_CHARS_COUNT or length > CHANNEL_LIMIT.NAME_MAX_CHARS_COUNT:
             return (name.encode('utf-8'),
              ClientIntLimitError(LIMIT_ERROR_ID.CHANNEL_INVALID_LENGTH, CHANNEL_LIMIT.NAME_MAX_CHARS_COUNT, CHANNEL_LIMIT.NAME_MIN_CHARS_COUNT))
         return (
@@ -71,7 +71,7 @@ def validateUserRoomPwd(password, isRetype=False):
             return ('', ClientChannelError(errorID))
 
         length = len(password)
-        if not isRetype and (CHANNEL_LIMIT.PWD_MIN_CHARS_COUNT > length or CHANNEL_LIMIT.PWD_MAX_CHARS_COUNT < length):
+        if not isRetype and (length < CHANNEL_LIMIT.PWD_MIN_CHARS_COUNT or length > CHANNEL_LIMIT.PWD_MAX_CHARS_COUNT):
             return ('',
              ClientIntLimitError(LIMIT_ERROR_ID.PWD_INVALID_LENGTH, CHANNEL_LIMIT.PWD_MIN_CHARS_COUNT, CHANNEL_LIMIT.PWD_MAX_CHARS_COUNT))
         return (

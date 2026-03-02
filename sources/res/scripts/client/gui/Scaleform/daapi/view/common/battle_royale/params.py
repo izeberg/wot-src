@@ -1,5 +1,7 @@
+from __future__ import absolute_import
 import logging
 from collections import namedtuple
+from future.utils import viewitems
 from gui import makeHtmlString, GUI_SETTINGS
 from gui.impl import backport
 from gui.impl.gen import R
@@ -17,6 +19,7 @@ from gui.shared.gui_items import GUI_ITEM_TYPE
 from helpers import i18n, dependency
 from items import ITEM_TYPES
 from items import getTypeOfCompactDescr
+from math_common import decimal_round
 from skeletons.gui.shared.gui_items import IGuiItemsFactory
 _logger = logging.getLogger(__name__)
 _ModuleDescr = namedtuple('_ModuleDescr', ('vDescr', 'currentModuleDescr', 'intCD',
@@ -151,7 +154,7 @@ def _updateSeparator(separator):
 def _reloadTimeSecsPreprocessor(value, states):
     statesOverride = states
     if states:
-        statesOverride = list()
+        statesOverride = []
         stateOverride = states[0][0]
         for state in states:
             stateCopy = list(state)
@@ -185,7 +188,7 @@ def _generateSettings():
     s['reloadTimeSecs'] = s.get('reloadTimeSecs', {}).copy()
     s['reloadTimeSecs']['preprocessor'] = _reloadTimeSecsPreprocessor
     s[params_formatters.AUTO_RELOAD_PROP_NAME] = {'preprocessor': _autoReloadPreprocessor, 
-       'rounder': lambda v: getNiceNumberFormat(round(v, 1))}
+       'rounder': lambda v: getNiceNumberFormat(decimal_round(v, 1))}
     return s
 
 
@@ -257,7 +260,7 @@ def _deltaWrapper(fn):
 
 def _generateFormatSettings(rounder=None):
     copy = {}
-    for originalName, originalSetting in _FORMAT_SETTINGS.iteritems():
+    for originalName, originalSetting in viewitems(_FORMAT_SETTINGS):
         settingCopy = originalSetting.copy()
         if 'separator' in settingCopy:
             settingCopy['separator'] = _updateSeparator(settingCopy['separator'])
@@ -300,7 +303,7 @@ def getModuleParameters(module, vehicle, currentModule=None):
                    'description': _formatModuleParamName(paramName)})
 
     paramsDict = moduleData.constParams if moduleData else {}
-    for paramName, paramVal in paramsDict.iteritems():
+    for paramName, paramVal in viewitems(paramsDict):
         fmtValue = _makeTxtForBetter(paramVal)
         params.append({'value': str(fmtValue), 
            'description': _formatModuleParamName(paramName)})

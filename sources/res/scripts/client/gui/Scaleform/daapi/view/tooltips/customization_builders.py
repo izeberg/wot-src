@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.Scaleform.genConsts.TOOLTIPS_CONSTANTS import TOOLTIPS_CONSTANTS
 from gui.Scaleform.daapi.view.lobby.customization.tooltips import ElementTooltip
 from gui.Scaleform.daapi.view.lobby.customization.tooltips import ElementIconTooltip

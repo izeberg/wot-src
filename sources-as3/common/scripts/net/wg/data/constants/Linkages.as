@@ -179,8 +179,6 @@ package net.wg.data.constants
       
       public static const SHADOW_OUT_ANIM:String = "ShadowOutAnimUI";
       
-      public static const PRE_BATTLE_CHANNEL_RENDERER:String = "PreBattleChannelRendererUI";
-      
       public static const PROGRESS_STEP_RENDERER:String = "ProgressStepRendererUI";
       
       public static const SEASON_VIEW_RENDERER:String = "SeasonViewRendererUI";
@@ -347,29 +345,11 @@ package net.wg.data.constants
       
       public static const LINK_PLUS_BONUS:String = "LinkPlusBonusBtn_UI";
       
-      public static const AUTOLOADED_GUN_ICON:String = "AutoLoaderGun";
-      
-      public static const HYDRAULIC_CHASSIS_ICON:String = "HydraulicChassisIconUI";
-      
-      public static const HYDRAULIC_WHEELED_CHASSIS_ICON:String = "HydraulicWheeledChassisIconUI";
-      
-      public static const GOLD_FISH_BUTTON_ANIMATION:String = "GoldFishButtonAnimation_UI";
-      
-      public static const HEADER_BUTTON_ACTION_CONTENT:String = "HeaderButtonActionContent_UI";
-      
       public static const CONTACT_ITEM_UI:String = "ContactItemUI";
       
       public static const CONTACT_LIST_ITEM_RENDERER:String = "ContactsListItemRendererUI";
       
       public static const STATS_GROUP_ITEM:String = "StaticFormationStatsItemUI";
-      
-      public static const LINKED_MINI_CLIENT_COMPONENT:String = "LinkedMiniClientComponentUI";
-      
-      public static const BATTLE_TYPES_MINI_CLIENT_COMPONENT:String = "BattleTypesMiniClientComponentUI";
-      
-      public static const HANGAR_MINI_CLIENT_COMPONENT:String = "HangarMiniClientComponentUI";
-      
-      public static const TECH_TREE_MINI_CLIENT_COMPONENT:String = "TechTreeMiniClientComponentUI";
       
       public static const BATTLE_LOADING_BG_SHADOW:String = "BackgroundShadow";
       
@@ -450,8 +430,6 @@ package net.wg.data.constants
       public static const TASK_AWARD_RENDERER_LINKAGE:String = "TaskAwardItemRendererUI";
       
       public static const CREW_OPERATIONS_IR_UI:String = "CrewOperationsIRenderer_UI";
-      
-      public static const SPARK_ANIM_LINKAGE:String = "SparkAnimUI";
       
       public static const SPARK_ANIM_EXCEPTION_LINKAGE:String = "SparkAnimExceptionUI";
       
@@ -719,6 +697,8 @@ package net.wg.data.constants
       
       public static const FEEDBACK_QUESTS_PROGRESS:String = "feedbackQuestsProgress";
       
+      public static const FEEDBACK_SITUATIONAL_PERKS:String = "feedbackSituationalPerks";
+      
       public static const RIBBONS_ANIMATION_SET:String = "AnimationSetUI";
       
       public static const RIBBONS_BONUS_ANIMATION:String = "EfficiencyBonusAnimationUI";
@@ -729,13 +709,7 @@ package net.wg.data.constants
       
       public static const RIBBON_SETTINGS_ITEM:String = "RibbonTypeItemUI";
       
-      public static const NATION_TREE_NODE_SKINNED:String = "NationTreeNodeSkinned";
-      
       public static const TRADE_ICO_UI:String = "TradeIcoUI";
-      
-      public static const RESEARCH_ITEM_NODE:String = "ResearchItemNode";
-      
-      public static const FAKE_ITEM_NODE:String = "FakeItemNode";
       
       public static const VEHICLE_PARAMETERS_UI:String = "VehicleParametersUI";
       
@@ -744,28 +718,6 @@ package net.wg.data.constants
       public static const PIERCING_DEBUG_RENDERER:String = "PiercingDebugRendererUI";
       
       public static const RESEARCH_ITEMS_ARROW:String = "NationTreeArrowUI";
-      
-      public static const VEHICLE_COMPARE_ANIM:String = "VehicleCompareAnimUI";
-      
-      public static const HBC_SETTINGS_UI:String = "HBC_Settings_UI";
-      
-      public static const HBC_ACCOUNT_UI:String = "HBC_Account_UI";
-      
-      public static const HBC_ACCOUNT_UPPER_UI:String = "HBC_AccountUpper_UI";
-      
-      public static const HBC_PREM_UI:String = "HBC_Prem_UI";
-      
-      public static const HBC_WOT_PLUS_UI:String = "HBC_WotPlus_UI";
-      
-      public static const HBC_PREM_SHOP_UI:String = "HBC_PremShop_UI";
-      
-      public static const HBC_SQUAD_UI:String = "HBC_Squad_UI";
-      
-      public static const HBC_PERSONAL_RESERVES_UI:String = "HBC_Personal_Reserves_UI";
-      
-      public static const HBC_BATTLE_SELECTOR_UI:String = "HBC_BattleSelector_UI";
-      
-      public static const HBC_FINANCE_UI:String = "HBC_Finance_UI";
       
       public static const ACOUSTIC_BTN:String = "AcousticBtn_UI";
       

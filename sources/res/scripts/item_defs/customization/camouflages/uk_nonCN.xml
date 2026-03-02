@@ -20,6 +20,9 @@
 			<include>
 				<nations>uk</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<camouflage>
 			<id>15516</id>
@@ -441,6 +444,9 @@
 			<include>
 				<nations>uk</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<camouflage>
 			<id>15519</id>
@@ -874,6 +880,9 @@
 			<include>
 				<nations>uk</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<camouflage>
 			<id>15517</id>
@@ -1315,6 +1324,9 @@
 			<include>
 				<nations>uk</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<camouflage>
 			<id>15518</id>
@@ -1748,6 +1760,9 @@
 			<include>
 				<nations>uk</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<camouflage>
 			<id>15520</id>

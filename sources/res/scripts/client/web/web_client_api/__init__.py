@@ -1,10 +1,11 @@
 import json, inspect, logging, weakref
 from functools import partial
 from itertools import chain
-from types import FunctionType, BooleanType, TypeType
+from types import FunctionType, TypeType
 import typing
 from Event import Event
 from helpers import uniprof
+from py2to3.utils import getargspec
 from soft_exception import SoftException
 if typing.TYPE_CHECKING:
     from typing import Callable, Dict, Iterable, NamedTuple, Optional, Type, Union
@@ -292,7 +293,7 @@ def w2c(schema, name='', finiHandlerName=None):
 
             @uniprof.regionDecorator(label=('w2c {}').format(name), scope='wrap')
             def handler(self, cmd, ctx):
-                argspec = inspect.getargspec(fn)
+                argspec = getargspec(fn)
                 if 'ctx' in argspec.args and argspec.args.index('ctx') == 2:
                     return ctx['callback'](fn(self, cmd, ctx))
                 return ctx['callback'](fn(self, cmd))

@@ -56,20 +56,3 @@ class TransferOwnershipToWorld(Block, CGFMeta):
     @classmethod
     def blockAspects(cls):
         return [ASPECT.CLIENT, ASPECT.SERVER]
-
-
-class GetSpaceIDFromGO(Block, CGFMeta):
-
-    def __init__(self, *args, **kwargs):
-        super(GetSpaceIDFromGO, self).__init__(*args, **kwargs)
-        self._go = self._makeDataInputSlot('go', SLOT_TYPE.GAME_OBJECT)
-        self._spaceId = self._makeDataOutputSlot('vehicle', SLOT_TYPE.INT, self._execute)
-
-    @classmethod
-    def blockAspects(cls):
-        return [ASPECT.SERVER]
-
-    def _execute(self):
-        go = self._go.getValue()
-        if go:
-            self._spaceId.setValue(go.spaceID)

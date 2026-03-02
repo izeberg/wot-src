@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, json, typing
 from soft_exception import SoftException
 from helpers import dependency

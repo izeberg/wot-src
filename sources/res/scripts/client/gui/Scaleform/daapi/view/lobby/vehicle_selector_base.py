@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+from future.utils import lrange, viewvalues
 from constants import MIN_VEHICLE_LEVEL, MAX_VEHICLE_LEVEL
 from gui.Scaleform.genConsts.VEHICLE_SELECTOR_CONSTANTS import VEHICLE_SELECTOR_CONSTANTS
 from gui.shared.formatters.vehicle_filters import packVehicleTypesFilter, packVehicleLevelsFilter, packNationsFilter
@@ -7,7 +9,7 @@ class VehicleSelectorBase(object):
 
     def __init__(self):
         self.__filters = None
-        self._levelsRange = range(MIN_VEHICLE_LEVEL, MAX_VEHICLE_LEVEL + 1)
+        self._levelsRange = lrange(MIN_VEHICLE_LEVEL, MAX_VEHICLE_LEVEL + 1)
         self.showNotReadyVehicles = True
         self._filterVisibility = VEHICLE_SELECTOR_CONSTANTS.VISIBLE_ALL
         self._compatibleOnlyLabel = ''
@@ -45,7 +47,7 @@ class VehicleSelectorBase(object):
         else:
             predicate = lambda vo: True
         result = []
-        for v in filteredVehicles.itervalues():
+        for v in viewvalues(filteredVehicles):
             vo = self._makeVehicleVOAction(v)
             if predicate(vo):
                 result.append(vo)

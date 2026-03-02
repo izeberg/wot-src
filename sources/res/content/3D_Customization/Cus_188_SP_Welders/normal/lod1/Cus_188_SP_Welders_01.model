@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/3D_Customization/Cus_188_SP_Welders/normal/lod2/Cus_188_SP_Welders_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.548919 0.000000 -0.680205</min>
+		<max>0.067855 0.480535 0.680369</max>
+	</visibilityBox>
+	<nodefullVisual>content/3D_Customization/Cus_188_SP_Welders/normal/lod1/Cus_188_SP_Welders_01</nodefullVisual>
+	<tank>true</tank>
+</root>

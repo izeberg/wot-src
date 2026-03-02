@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.431107 -0.060160 -3.163666</min>
+		<max>1.353332 1.449948 1.754125</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/american/A170_M_VII_Y/crash/lod0/Turret_01</nodefullVisual>
+	<parent>vehicles/american/A170_M_VII_Y/crash/lod1/Turret_01</parent>
+	<extent>32.000000</extent>
+</root>

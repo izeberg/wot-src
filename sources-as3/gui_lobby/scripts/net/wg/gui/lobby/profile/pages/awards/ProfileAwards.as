@@ -106,6 +106,7 @@ package net.wg.gui.lobby.profile.pages.awards
       override protected function applyData(param1:Object) : void
       {
          var _loc7_:AwardsBlock = null;
+         var _loc8_:int = 0;
          var _loc11_:AchievementProfileVO = null;
          var _loc12_:Array = null;
          var _loc13_:Array = null;
@@ -133,7 +134,6 @@ package net.wg.gui.lobby.profile.pages.awards
          _loc5_.push(_loc2_.blockStageAwards);
          _loc5_.push(_loc2_.blockSpecialAwards);
          var _loc6_:uint = _loc4_.length;
-         var _loc8_:int = 0;
          _loc8_ = 0;
          while(_loc8_ < _loc6_)
          {
@@ -176,10 +176,10 @@ package net.wg.gui.lobby.profile.pages.awards
       
       override protected function applyResizing() : void
       {
-         var _loc1_:Number = NaN;
-         var _loc11_:AwardsTileListBlock = null;
-         _loc1_ = Math.round(currentDimension.x / 2 - centerOffset);
-         var _loc2_:Boolean = App.appWidth < StageSizeBoundaries.WIDTH_1280;
+         var _loc2_:Boolean = false;
+         var _loc12_:AwardsTileListBlock = null;
+         var _loc1_:Number = Math.round(currentDimension.x / 2 - centerOffset);
+         _loc2_ = App.appWidth < StageSizeBoundaries.WIDTH_1280;
          var _loc3_:int = !!isWindowed ? int(DROP_DOWN_WINDOW_X) : int(0);
          var _loc4_:int = -this.txtLabel.width - TXT_LABEL_OFFSET_X + _loc3_;
          this.dropdownMenu.x = this._startMenuX + _loc1_ + (!!isWindowed ? DROP_DOWN_WINDOW_X : 0);
@@ -194,13 +194,22 @@ package net.wg.gui.lobby.profile.pages.awards
          windowOffset = -WINDOW_OFFSET;
          var _loc8_:AwardsMainContainer = this.getMainContainer();
          var _loc9_:Vector.<AwardsTileListBlock> = _loc8_.blocks;
-         var _loc10_:int = 0;
-         while(_loc10_ < _loc9_.length)
+         var _loc10_:uint = _loc9_.length;
+         var _loc11_:int = 0;
+         while(_loc11_ < _loc10_)
          {
-            _loc11_ = _loc9_[_loc10_];
-            _loc11_.tileList.columnCount = isWindowed || !_loc2_ ? uint(COLUMN_COUNT) : uint(COLUMN_COUNT_SMALL);
-            _loc11_.tileList.x = isWindowed || !_loc2_ ? Number(0) : Number(BLOCK_OFFSET);
-            _loc10_++;
+            _loc12_ = _loc9_[_loc11_];
+            if(isWindowed || !_loc2_)
+            {
+               _loc12_.tileList.columnCount = COLUMN_COUNT;
+               _loc12_.tileList.x = 0;
+            }
+            else
+            {
+               _loc12_.tileList.columnCount = COLUMN_COUNT_SMALL;
+               _loc12_.tileList.x = BLOCK_OFFSET;
+            }
+            _loc11_++;
          }
          title.visible = !isWindowed;
          title.x = App.appWidth - title.width >> 1;
@@ -247,6 +256,7 @@ package net.wg.gui.lobby.profile.pages.awards
       {
          this.dropdownMenu.removeEventListener(MouseEvent.MOUSE_OVER,this.onDropdownMenuMouseOverHandler);
          this.dropdownMenu.removeEventListener(MouseEvent.MOUSE_OUT,this.onDropdownMenuMouseOutHandler);
+         this.dropdownMenu.removeEventListener(ListEvent.INDEX_CHANGE,this.onDropdownMenuIndexChangeHandler);
          this.dropdownMenu.dispose();
          this.dropdownMenu = null;
          this.mainScrollPane.dispose();
@@ -255,16 +265,6 @@ package net.wg.gui.lobby.profile.pages.awards
          this._profileAwardsInitVO.dispose();
          this._profileAwardsInitVO = null;
          super.onDispose();
-      }
-      
-      public function setBattlesHeroesData(param1:Array) : void
-      {
-         this.getMainContainer().blockBattleHeroes.dataProvider = param1;
-      }
-      
-      public function setHonorsData(param1:String, param2:Array) : void
-      {
-         this.getMainContainer().blockHonors.dataProvider = new DataProvider(param2);
       }
       
       protected function getMainContainer() : AwardsMainContainer

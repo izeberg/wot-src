@@ -6,4 +6,4 @@ if typing.TYPE_CHECKING:
 class IRoutableView(object):
 
     def getRouterModel(self):
-        raise NotImplementedError()
+        raise NotImplementedError

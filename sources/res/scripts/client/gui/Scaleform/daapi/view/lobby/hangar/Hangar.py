@@ -1,6 +1,9 @@
 import logging
 from functools import partial
-import typing, BigWorld
+import BigWorld, typing
+from helpers.CallbackDelayer import CallbackDelayer
+from helpers.i18n import makeString as _ms
+from helpers.statistics import HANGAR_LOADING_STATE
 from ClientSelectableCameraObject import ClientSelectableCameraObject
 from CurrentVehicle import g_currentPreviewVehicle, g_currentVehicle
 from HeroTank import HeroTank
@@ -9,7 +12,7 @@ from account_helpers import AccountSettings
 from account_helpers.AccountSettings import NATION_CHANGE_VIEWED
 from account_helpers.settings_core.ServerSettingsManager import SETTINGS_SECTIONS
 from battle_pass_common import BATTLE_PASS_CONFIG_NAME
-from constants import Configs, DOG_TAGS_CONFIG, RENEWABLE_SUBSCRIPTION_CONFIG
+from constants import Configs, DOG_TAGS_CONFIG
 from frameworks.wulf import ViewStatus, WindowFlags, WindowLayer, WindowStatus
 from gui import SystemMessages
 from gui.ClientUpdateManager import g_clientUpdateManager
@@ -52,14 +55,12 @@ from gui.shared.utils.functions import makeTooltip
 from gui.shared.utils.requesters.ItemsRequester import REQ_CRITERIA
 from gui.sounds.filters import States, StatesGroup
 from helpers import dependency
-from helpers.CallbackDelayer import CallbackDelayer
-from helpers.i18n import makeString as _ms
-from helpers.statistics import HANGAR_LOADING_STATE
 from nation_change_helpers.client_nation_change_helper import getChangeNationTooltip
+from renewable_subscription_common.schema import renewableSubscriptionsConfigSchema
 from shared_utils import nextTick
 from skeletons.account_helpers.settings_core import ISettingsCore
 from skeletons.connection_mgr import IConnectionManager
-from skeletons.gui.game_control import IBattlePassController, IBattleRoyaleController, IComp7Controller, IEpicBattleMetaGameController, IHangarGuiController, IIGRController, ILootBoxSystemController, IMapboxController, IMarathonEventsController, IPromoController, IRankedBattlesController, IWotPlusController, ILimitedUIController
+from skeletons.gui.game_control import IBattlePassController, IBattleRoyaleController, IComp7Controller, IEpicBattleMetaGameController, IHangarGuiController, IIGRController, ILootBoxSystemController, IMapboxController, IMarathonEventsController, IPromoController, IRankedBattlesController, ILimitedUIController
 from skeletons.gui.impl import IGuiLoader
 from skeletons.gui.lobby_context import ILobbyContext
 from skeletons.gui.offers import IOffersBannerController
@@ -103,7 +104,6 @@ class Hangar(LobbySelectableView, HangarMeta, IGlobalListener):
     _promoController = dependency.descriptor(IPromoController)
     _connectionMgr = dependency.descriptor(IConnectionManager)
     _offersBannerController = dependency.descriptor(IOffersBannerController)
-    _wotPlusCtrl = dependency.descriptor(IWotPlusController)
     __mapboxCtrl = dependency.descriptor(IMapboxController)
     __marathonCtrl = dependency.descriptor(IMarathonEventsController)
     __comp7Controller = dependency.descriptor(IComp7Controller)
@@ -249,6 +249,7 @@ class Hangar(LobbySelectableView, HangarMeta, IGlobalListener):
         if unitMgr:
             unitMgr.onUnitJoined += self.__onUnitJoined
         g_clientUpdateManager.addCallbacks({'inventory': self.__updateAlertMessage})
+        g_playerEvents.onConfigModelUpdated += self._onConfigModelUpdated
         self.lobbyContext.getServerSettings().onServerSettingsChange += self.__onServerSettingChanged
         self._settingsCore.onSettingsChanged += self.__onSettingsChanged
         self.battlePassController.onSeasonStateChanged += self.__switchCarousels
@@ -268,7 +269,6 @@ class Hangar(LobbySelectableView, HangarMeta, IGlobalListener):
         g_currentPreviewVehicle.selectNoVehicle()
         if g_currentVehicle.isPresent():
             g_currentVehicle.refreshModel()
-        self.__updateIsComp7SpaceLoaded()
         g_clientUpdateManager.addCallback('inventory', self.__onInventoryUpdate)
 
     def _dispose(self):
@@ -304,6 +304,7 @@ class Hangar(LobbySelectableView, HangarMeta, IGlobalListener):
             unitMgr.onUnitJoined -= self.__onUnitJoined
         g_playerEvents.onPrebattleInvitationAccepted -= self.__onPrebattleInvitationAccepted
         g_clientUpdateManager.removeObjectCallbacks(self)
+        g_playerEvents.onConfigModelUpdated -= self._onConfigModelUpdated
         self._settingsCore.onSettingsChanged -= self.__onSettingsChanged
         self.lobbyContext.getServerSettings().onServerSettingsChange -= self.__onServerSettingChanged
         self.battlePassController.onSeasonStateChanged -= self.__switchCarousels
@@ -532,7 +533,6 @@ class Hangar(LobbySelectableView, HangarMeta, IGlobalListener):
         self.__hangarGuiCtrl.sfController.updateComponentsVisibility()
         self.__updatePrestigeProgressWidget()
         self.__updateAlertMessage()
-        self.__updateIsComp7SpaceLoaded()
         self.__updateCrew()
 
     def __onEntityUpdated(self, *_):
@@ -557,11 +557,13 @@ class Hangar(LobbySelectableView, HangarMeta, IGlobalListener):
             self.__switchCarousels(force=True)
         if DOG_TAGS_CONFIG in diff:
             self.__updateDogTagsState()
-        if RENEWABLE_SUBSCRIPTION_CONFIG in diff:
-            self.__updateState()
         if Configs.PRESTIGE_CONFIG.value in diff:
             self.__updatePrestigeProgressWidget()
         if Configs.EASY_TANK_EQUIP_CONFIG.value in diff:
+            self.__updateState()
+
+    def _onConfigModelUpdated(self, gpKey):
+        if renewableSubscriptionsConfigSchema.gpKey == gpKey:
             self.__updateState()
 
     def __onSettingsChanged(self, diff):
@@ -603,9 +605,6 @@ class Hangar(LobbySelectableView, HangarMeta, IGlobalListener):
 
     def __updateCarouselEventEntryState(self):
         self.as_updateCarouselEventEntryStateS(isAnyEntryVisible())
-
-    def __updateIsComp7SpaceLoaded(self):
-        self.as_setComp7SpaceLoadedS(self.__comp7Controller.isModePrbActive())
 
     @ifComponentAvailable(HANGAR_CONSTS.PRESTIGE_WIDGET)
     def __updatePrestigeProgressWidget(self):

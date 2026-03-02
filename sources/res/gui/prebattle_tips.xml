@@ -938,12 +938,6 @@
 			<filter>only_dualGun_first_5_times</filter>
 		</tip>
 		<tip>
-			<id>tip190</id>
-			<status>battlePassSeasonDescription</status>
-			<group>all</group>
-			<filter>battlePass_on</filter>
-		</tip>
-		<tip>
 			<id>tip191</id>
 			<status>payAttention</status>
 			<filter>from_2_to_11_levels</filter>
@@ -1251,6 +1245,34 @@
 		<tip>
 			<id>battleRoyale6</id>
 			<status>battleRoyale6Status</status>
+		</tip>
+		<tip>
+			<id>stPatrick0</id>
+			<status>stPatrick0Status</status>
+		</tip>
+		<tip>
+			<id>stPatrick1</id>
+			<status>stPatrick1Status</status>
+		</tip>
+		<tip>
+			<id>stPatrick2</id>
+			<status>stPatrick2Status</status>
+		</tip>
+		<tip>
+			<id>stPatrick3</id>
+			<status>stPatrick3Status</status>
+		</tip>
+		<tip>
+			<id>stPatrick4</id>
+			<status>stPatrick4Status</status>
+		</tip>
+		<tip>
+			<id>stPatrick5</id>
+			<status>stPatrick5Status</status>
+		</tip>
+		<tip>
+			<id>stPatrick6</id>
+			<status>stPatrick6Status</status>
 		</tip>
 		<tip>
 			<id>comp7Ranked0</id>

@@ -1,4 +1,7 @@
-import logging, BigWorld, typing
+from __future__ import absolute_import
+import logging, typing
+from future.utils import viewitems
+import BigWorld
 from battle_royale.gui.battle_control.controllers.radar_ctrl import IRadarListener
 import CommandMapping
 from Event import EventsSubscriber
@@ -8,7 +11,6 @@ from arena_bonus_type_caps import ARENA_BONUS_TYPE_CAPS
 from constants import VEHICLE_SIEGE_STATE as _SIEGE_STATE, ARENA_PERIOD, ARENA_GUI_TYPE, ROLE_TYPE, ROCKET_ACCELERATION_STATE, RECHARGEABLE_NITRO_STATE, TARGET_DESIGNATOR_STATE, PHASED_MECHANIC_STATE
 from events_containers.common.containers import ContainersListener
 from debug_utils import LOG_DEBUG
-from dyn_squad_hint_plugin import DynSquadHintPlugin
 from events_handler import eventHandler
 from gui import GUI_SETTINGS
 from gui.Scaleform.daapi.settings.views import VIEW_ALIAS
@@ -16,6 +18,8 @@ from gui.Scaleform.daapi.view.battle.shared.hint_panel.hint_panel_plugin import 
 from gui.battle_control.battle_constants import VEHICLE_VIEW_STATE, CROSSHAIR_VIEW_ID
 from gui.impl import backport
 from gui.impl.gen import R
+from gui.Scaleform.daapi.view.battle.shared.hint_panel.dyn_squad_hint_plugin import DynSquadHintPlugin
+from gui.Scaleform.daapi.view.battle.shared.hint_panel.hint_panel_plugin import HintPanelPlugin, HintData, HintPriority
 from gui.shared import g_eventBus, EVENT_BUS_SCOPE
 from gui.shared.events import GameEvent, ViewEventType, LoadViewEvent
 from gui.shared.utils.key_mapping import getReadableKey, getVirtualKey
@@ -24,7 +28,6 @@ from gui.veh_mechanics.battle.updaters.mechanics.mechanic_states_updater import 
 from gui.veh_mechanics.battle.updaters.updaters_common import ViewUpdatersCollection
 from helpers import dependency
 from helpers.CallbackDelayer import CallbackDelayer
-from hint_panel_plugin import HintPanelPlugin, HintData, HintPriority
 from items import makeIntCompactDescrByID
 from skeletons.account_helpers.settings_core import ISettingsCore, IBattleCommunicationsSettings
 from skeletons.gui.battle_session import IBattleSessionProvider
@@ -317,7 +320,7 @@ class SiegeIndicatorHintPlugin(HintPanelPlugin):
             vStateCtrl.onPostMortemSwitched -= self.__onPostMortemSwitched
             vStateCtrl.onRespawnBaseMoving -= self.__onRespawnBaseMoving
         if not self.sessionProvider.isReplayPlaying:
-            for name, setting in self.__settings.iteritems():
+            for name, setting in viewitems(self.__settings):
                 AccountSettings.setSettings(name, setting)
 
         self.__callbackDelayer.destroy()
@@ -711,7 +714,7 @@ class PreBattleHintPlugin(HintPanelPlugin):
     @classmethod
     def isSuitable(cls):
         guiType = cls.sessionProvider.arenaVisitor.getArenaGuiType()
-        return guiType != ARENA_GUI_TYPE.RANKED and guiType != ARENA_GUI_TYPE.BATTLE_ROYALE and guiType != ARENA_GUI_TYPE.MAPS_TRAINING
+        return guiType not in (ARENA_GUI_TYPE.RANKED, ARENA_GUI_TYPE.BATTLE_ROYALE, ARENA_GUI_TYPE.MAPS_TRAINING)
 
     def start(self):
         prbSettings = dict(AccountSettings.getSettings(PRE_BATTLE_HINT_SECTION))
@@ -732,23 +735,22 @@ class PreBattleHintPlugin(HintPanelPlugin):
     def stop(self):
         if not self.isActive():
             return
-        else:
-            g_eventBus.removeListener(GameEvent.SHOW_BTN_HINT, self.__handleShowBtnHint, scope=EVENT_BUS_SCOPE.GLOBAL)
-            g_eventBus.removeListener(ViewEventType.LOAD_VIEW, self.__handleLoadView, scope=EVENT_BUS_SCOPE.BATTLE)
-            g_eventBus.removeListener(GameEvent.FULL_STATS_QUEST_PROGRESS, self.__handlePressQuestBtn, scope=EVENT_BUS_SCOPE.BATTLE)
-            vStateCtrl = self.sessionProvider.shared.vehicleState
-            if vStateCtrl is not None:
-                vStateCtrl.onVehicleControlling -= self.__onVehicleControlling
-            self.__callbackDelayer.destroy()
-            self.__isActive = False
-            if not self.sessionProvider.isReplayPlaying:
-                prbHintSettings = dict()
-                prbHintSettings[QUEST_PROGRESS_HINT_SECTION] = self.__questHintSettings
-                prbHintSettings[HELP_SCREEN_HINT_SECTION] = self.__helpHintSettings
-                prbHintSettings[IBC_HINT_SECTION] = self.__battleComHintSettings
-                prbHintSettings[RESERVES_HINT_SECTION] = self.__reservesHintSettings
-                AccountSettings.setSettings(PRE_BATTLE_HINT_SECTION, prbHintSettings)
-            return
+        g_eventBus.removeListener(GameEvent.SHOW_BTN_HINT, self.__handleShowBtnHint, scope=EVENT_BUS_SCOPE.GLOBAL)
+        g_eventBus.removeListener(ViewEventType.LOAD_VIEW, self.__handleLoadView, scope=EVENT_BUS_SCOPE.BATTLE)
+        g_eventBus.removeListener(GameEvent.FULL_STATS_QUEST_PROGRESS, self.__handlePressQuestBtn, scope=EVENT_BUS_SCOPE.BATTLE)
+        vStateCtrl = self.sessionProvider.shared.vehicleState
+        if vStateCtrl is not None:
+            vStateCtrl.onVehicleControlling -= self.__onVehicleControlling
+        self.__callbackDelayer.destroy()
+        self.__isActive = False
+        if not self.sessionProvider.isReplayPlaying:
+            prbHintSettings = {}
+            prbHintSettings[QUEST_PROGRESS_HINT_SECTION] = self.__questHintSettings
+            prbHintSettings[HELP_SCREEN_HINT_SECTION] = self.__helpHintSettings
+            prbHintSettings[IBC_HINT_SECTION] = self.__battleComHintSettings
+            prbHintSettings[RESERVES_HINT_SECTION] = self.__reservesHintSettings
+            AccountSettings.setSettings(PRE_BATTLE_HINT_SECTION, prbHintSettings)
+        return
 
     def isActive(self):
         return self.__isActive
@@ -1510,7 +1512,7 @@ class SkillActivatedHintPlugin(HintPanelPlugin):
             vStateCtrl.onPostMortemSwitched -= self.__onPostMortemSwitched
             vStateCtrl.onRespawnBaseMoving -= self.__onRespawnBaseMoving
         if not self.sessionProvider.isReplayPlaying:
-            for name, setting in self.__settings.iteritems():
+            for name, setting in viewitems(self.__settings):
                 AccountSettings.setSettings(name, setting)
 
         self.__callbackDelayer.destroy()

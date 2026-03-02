@@ -1,6 +1,7 @@
+from __future__ import absolute_import
 import WGC
 from account_helpers.settings_core.settings_constants import GAME
-from base_mode import BaseMode
+from gui.Scaleform.daapi.view.login.login_modes.base_mode import BaseMode
 _g_firstEntry = True
 
 class BaseWgcMode(BaseMode):

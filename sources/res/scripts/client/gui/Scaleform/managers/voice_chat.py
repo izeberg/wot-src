@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from frameworks.wulf import WindowLayer
 from VOIP import getVOIPManager
 from messenger.proto.events import g_messengerEvents

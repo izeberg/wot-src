@@ -61,6 +61,8 @@ package net.wg.gui.lobby.settings.config
       
       public static const TYPE_BUTTON:String = "Button";
       
+      public static const TYPE_CONTROLS_GROUP:String = "ControlsGroup";
+      
       public static const LOCALIZATION:String = "#settings:";
       
       public static const ADVANCED_GRAPHICS_DATA:int = 0;
@@ -626,6 +628,10 @@ package net.wg.gui.lobby.settings.config
          if(_loc2_.indexOf(TYPE_BUTTON) >= 0)
          {
             return TYPE_BUTTON;
+         }
+         if(_loc2_.indexOf(TYPE_CONTROLS_GROUP) >= 0)
+         {
+            return TYPE_CONTROLS_GROUP;
          }
          return null;
       }

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging
 from AvatarInputHandler.DynamicCameras.kill_cam_camera import CallbackPauseManager
 from constants import IMPACT_TYPES
@@ -6,6 +7,7 @@ from gui.battle_control.controllers.kill_cam_ctrl import KillCamInfoMarkerType, 
 from gui.impl.gen.view_models.views.battle.death_cam.death_cam_hud_view_model import DeathCamHudViewModel, ImpactMode
 from gui.shared.events import DeathCamEvent
 from helpers import dependency
+from math_common import decimal_round
 from skeletons.gui.battle_session import IBattleSessionProvider
 _logger = logging.getLogger(__name__)
 
@@ -36,7 +38,7 @@ class DeathCamUIView(SubModelPresenter):
     def updateTimerCallback(self):
         callbackTime = None
         if self.__timerSeconds > 0:
-            self.__timerSeconds = round(max(self.__timerSeconds - self._UPDATE_TIMER_TICK, 0), 1)
+            self.__timerSeconds = decimal_round(max(self.__timerSeconds - self._UPDATE_TIMER_TICK, 0), 1)
             callbackTime = min(self._UPDATE_TIMER_TICK, self.__timerSeconds)
         self.updatePauseText()
         return callbackTime

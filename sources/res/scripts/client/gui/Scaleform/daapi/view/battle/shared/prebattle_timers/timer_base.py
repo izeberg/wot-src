@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld
 from constants import ARENA_PERIOD
 from gui.Scaleform.daapi.view.meta.PrebattleTimerBaseMeta import PrebattleTimerBaseMeta

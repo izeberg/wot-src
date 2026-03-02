@@ -3482,9 +3482,25 @@ RECORDS = (
  (
   'singleAchievements', 'BattlePassCommonPr_NY26', 'p', 'B', 1),
  (
-  'singleAchievements', 'BPReserveAchievement_9', 'p', 'B', 1),
+  'singleAchievements', 'BattlePassCommonPr_19', 'p', 'B', 1),
  (
   'singleAchievements', 'BPReserveAchievement_10', 'p', 'B', 1),
+ (
+  'singleAchievements', 'BPReserveAchievement_1', 'p', 'B', 1),
+ (
+  'singleAchievements', 'BPReserveAchievement_2', 'p', 'B', 1),
+ (
+  'singleAchievements', 'BPReserveAchievement_3', 'p', 'B', 1),
+ (
+  'singleAchievements', 'BPReserveAchievement_4', 'p', 'B', 1),
+ (
+  'singleAchievements', 'BPReserveAchievement_5', 'p', 'B', 1),
+ (
+  'singleAchievements', 'BPReserveAchievement_6', 'p', 'B', 1),
+ (
+  'singleAchievements', 'BPReserveAchievement_7', 'p', 'B', 1),
+ (
+  'singleAchievements', 'BPReserveAchievement_9', 'p', 'B', 1),
  (
   'singleAchievements', 'vDayHero', 'p', 'B', 1),
  (
@@ -5373,8 +5389,6 @@ RECORD_DB_IDS = {('total', 'creationTime'): 68,
    ('singleAchievements', 'BattlePassCommonPr_18extra_1'): 2016, 
    ('singleAchievements', 'BattlePassCommonPr_18extra_2'): 2017, 
    ('singleAchievements', 'BattlePassCommonPr_NY26'): 2018, 
-   ('singleAchievements', 'BPReserveAchievement_9'): 2019, 
-   ('singleAchievements', 'BPReserveAchievement_10'): 2020, 
    ('singleAchievements', 'vDayHero'): 2021, 
    ('singleAchievements', 'ls2025Medal'): 2022, 
    ('singleAchievements', 'wot15thAnniversary'): 2024, 
@@ -5453,7 +5467,17 @@ RECORD_DB_IDS = {('total', 'creationTime'): 68,
    ('singleAchievements', 'NY26_CelebChallenge'): 2098, 
    ('singleAchievements', 'grinch_medal_2026'): 2099, 
    ('singleAchievements', '15YearsOfService'): 2100, 
-   ('singleAchievements', 'LunarNY2026CN'): 2101}
+   ('singleAchievements', 'LunarNY2026CN'): 2101, 
+   ('singleAchievements', 'BattlePassCommonPr_19'): 2019, 
+   ('singleAchievements', 'BPReserveAchievement_10'): 2020, 
+   ('singleAchievements', 'BPReserveAchievement_1'): 2102, 
+   ('singleAchievements', 'BPReserveAchievement_2'): 2103, 
+   ('singleAchievements', 'BPReserveAchievement_3'): 2104, 
+   ('singleAchievements', 'BPReserveAchievement_4'): 2105, 
+   ('singleAchievements', 'BPReserveAchievement_5'): 2106, 
+   ('singleAchievements', 'BPReserveAchievement_6'): 2107, 
+   ('singleAchievements', 'BPReserveAchievement_7'): 2108, 
+   ('singleAchievements', 'BPReserveAchievement_9'): 2109}
 DB_ID_TO_RECORD = dict([ (value, key) for key, value in RECORD_DB_IDS.iteritems() ])
 RECORD_DB_IDS.update({('vehTypeFrags', ''): 863, 
    ('a15x15Cut', ''): 864, 

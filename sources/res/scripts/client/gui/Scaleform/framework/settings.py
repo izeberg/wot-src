@@ -1,4 +1,4 @@
-
+from __future__ import absolute_import
 
 class UIFrameworkImpl(object):
     UNDEFINED = 0

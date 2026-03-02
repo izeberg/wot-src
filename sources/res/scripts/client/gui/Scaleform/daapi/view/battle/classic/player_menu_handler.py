@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging
 from commendations_common import CommendationHelpers
 from commendations_common.CommendationHelpers import CommendationsSource

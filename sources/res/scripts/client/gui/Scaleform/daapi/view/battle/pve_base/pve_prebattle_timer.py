@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.Scaleform.daapi.view.battle.shared.prebattle_timers.timer_base import PreBattleTimerBase
 from gui.battle_control.battle_constants import COUNTDOWN_STATE
 from helpers import dependency

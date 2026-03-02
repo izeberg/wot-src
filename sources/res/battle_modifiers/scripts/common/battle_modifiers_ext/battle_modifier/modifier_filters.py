@@ -4,9 +4,9 @@ from typing import TYPE_CHECKING, Optional, Any, Tuple, Union, List, Dict
 from battle_modifiers_ext.battle_params import BattleParam
 from battle_modifiers_ext.battle_modifier import modifier_readers
 from battle_modifiers_ext.battle_modifier import modifier_appliers
-from battle_modifiers_ext.battle_modifier.modifier_restrictions import readRestrictions, getValueLimiter
+from battle_modifiers_ext.battle_modifier.modifier_restrictions import DataTypeValidator, readRestrictions, getValueLimiter
 from battle_modifiers_ext.battle_modifier.modifier_helpers import createLevelTag, parseLevelTag, Serializable
-from battle_modifiers_ext.constants_ext import DEBUG_MODIFIERS, ERROR_TEMPLATE, UseType, ModifierRestriction, NodeType, ShellKind
+from battle_modifiers_ext.constants_ext import DEBUG_MODIFIERS, ERROR_TEMPLATE, UseType, ModifierRestriction, NodeType, ShellKind, DataType
 from constants import ROLE_TYPE_TO_LABEL, ROLE_LABEL_TO_TYPE, VEHICLE_CLASSES, MIN_VEHICLE_LEVEL, MAX_VEHICLE_LEVEL
 from debug_utils import LOG_DEBUG
 from ResMgr import DataSection
@@ -87,9 +87,15 @@ class ModificationNode(Serializable):
         return tuple(descr)
 
     def __makeId(self):
-        if self.param.isHashable():
-            return hash(self.descr())
-        return 0
+        if not self.param.isHashable():
+            return 0
+        descr = self.descr()
+        if self.param.dataType == DataType.HASHABLE_DICT:
+            dictHash = hash(tuple(sorted(viewitems(descr[1]))))
+            descrCopy = list(descr)
+            descrCopy[1] = dictHash
+            return hash(tuple(descrCopy))
+        return hash(descr)
 
     def __setLimits(self, minValue, maxValue):
         self.minValue = minValue
@@ -112,7 +118,7 @@ class ModificationNode(Serializable):
 
     def __applyRestrictions(self, config):
         param = self.param
-        localValidators, localMinValue, localMaxValue = readRestrictions(config, self.param.id, ModifierRestriction.LIMITS)
+        localValidators, localMinValue, localMaxValue = readRestrictions(config, param.id, ModifierRestriction.LIMITS)
         if localMinValue is not None and param.minValue is not None and localMinValue < param.minValue:
             raise SoftException(ERROR_TEMPLATE.format('Global min limit is violated by local min limit', config.name))
         if localMaxValue is not None and param.maxValue is not None and localMaxValue > param.maxValue:
@@ -124,6 +130,8 @@ class ModificationNode(Serializable):
 
         if self.useType != UseType.VAL:
             self.__setLimits(localMinValue, localMaxValue)
+        dataTypeValidator = DataTypeValidator(config, param.id)
+        dataTypeValidator(self)
         return
 
 

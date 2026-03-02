@@ -25,7 +25,7 @@ class EventSquadSlotsValidator(CommanderValidator):
         stats = self._entity.getStats()
         roster = self._entity.getRoster()
         pInfo = self._entity.getPlayerInfo()
-        hasEmptySlots = roster.MAX_SLOTS > stats.readyCount + roster.MAX_EMPTY_SLOTS
+        hasEmptySlots = stats.readyCount + roster.MAX_EMPTY_SLOTS < roster.MAX_SLOTS
         if hasEmptySlots or not pInfo.isReady:
             return ValidationResult(False, UNIT_RESTRICTION.COMMANDER_VEHICLE_NOT_SELECTED)
 

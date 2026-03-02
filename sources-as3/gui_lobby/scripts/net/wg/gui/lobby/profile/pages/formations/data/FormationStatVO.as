@@ -6,6 +6,8 @@ package net.wg.gui.lobby.profile.pages.formations.data
    
    public class FormationStatVO extends DAAPIDataClass
    {
+      
+      private static const TOOLTIP_PARAMS:String = "tooltipParams";
        
       
       public var icon:String = "";
@@ -18,8 +20,6 @@ package net.wg.gui.lobby.profile.pages.formations.data
       
       public var tooltipParams:IToolTipParams = null;
       
-      private const TOOLTIP_PARAMS:String = "tooltipParams";
-      
       public function FormationStatVO(param1:Object)
       {
          super(param1);
@@ -27,7 +27,7 @@ package net.wg.gui.lobby.profile.pages.formations.data
       
       override protected function onDataWrite(param1:String, param2:Object) : Boolean
       {
-         if(param1 == this.TOOLTIP_PARAMS)
+         if(param1 == TOOLTIP_PARAMS)
          {
             this.tooltipParams = new ToolTipParams(param2.header != null ? param2.header : {},param2.body != null ? param2.body : {});
             App.utils.data.cleanupDynamicObject(param2);

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.867757 -0.777454 -3.357738</min>
+		<max>1.868419 0.624932 3.550792</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/american/A69_T110E5/_skins/A69_T110E5_BPXIX_3Dst/normal/lod1/Hull</nodefullVisual>
+	<parent>vehicles/american/A69_T110E5/_skins/A69_T110E5_BPXIX_3Dst/normal/lod2/Hull</parent>
+	<extent>64.000000</extent>
+</root>

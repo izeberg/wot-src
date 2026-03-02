@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from account_helpers.settings_core.settings_constants import GRAPHICS
 from gui.Scaleform.daapi.view.battle.shared.damage_log_panel import DamageLogPanel
 

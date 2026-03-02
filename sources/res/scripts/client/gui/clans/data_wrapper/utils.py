@@ -70,7 +70,7 @@ def fmtUnavailableValue(fields=tuple(), dummy=clans_fmts.DUMMY_UNAVAILABLE_DATA)
             else:
                 doFmt = kwargs.get('doFmt', False)
                 placeholder = kwargs.get('dummy', dummy) or dummy
-                f = kwargs.get('formatter', None)
+                f = kwargs.get('formatter')
                 if doFmt and not _isAvailable(fields):
                     return placeholder
                 try:
@@ -162,7 +162,7 @@ def conditionFormatter(formatter=None):
 
         def wrapper(self, *args, **kwargs):
             doFmt = kwargs.get('doFmt', False)
-            fmt = kwargs.get('formatter', None) or formatter
+            fmt = kwargs.get('formatter') or formatter
             value = func(self)
             if doFmt and fmt:
                 value = fmt(value)

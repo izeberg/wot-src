@@ -67,3 +67,9 @@ class FunNotificationSubModeState(Enum):
 class FunSubModeBroadcast(Enum):
     START_NOTIFICATION = 'startNotification'
     STOP_NOTIFICATION = 'stopNotification'
+
+
+@unique
+class FunCustomShellsSource(Enum):
+    REGULAR = 'regular'
+    CUSTOM = 'custom'

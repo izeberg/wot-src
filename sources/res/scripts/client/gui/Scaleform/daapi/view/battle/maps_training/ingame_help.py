@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui import GUI_CTRL_MODE_FLAG
 from gui.Scaleform.daapi.settings.views import VIEW_ALIAS
 from gui.Scaleform.daapi.view.meta.MapsTrainingIngameHelpWindowMeta import MapsTrainingIngameHelpWindowMeta
@@ -23,7 +24,7 @@ class MapsTrainingIngameHelpWindow(MapsTrainingIngameHelpWindowMeta, BattleGUIKe
         self.app.registerGuiKeyHandler(self)
         self.app.enterGuiControlMode(VIEW_ALIAS.INGAME_HELP, cursorVisible=True, enableAiming=False)
         avatar_getter.setForcedGuiControlMode(GUI_CTRL_MODE_FLAG.GUI_ENABLED, enableAiming=False)
-        self.as_setDataS([ self.__getPageConfig(pageNum + 1) for pageNum in xrange(4) ])
+        self.as_setDataS([ self.__getPageConfig(pageNum + 1) for pageNum in range(4) ])
 
     @staticmethod
     def __getPageConfig(pageNum):

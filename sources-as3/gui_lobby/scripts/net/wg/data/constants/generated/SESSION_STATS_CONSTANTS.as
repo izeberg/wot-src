@@ -13,8 +13,6 @@ package net.wg.data.constants.generated
       
       public static const SESSION_VEHICLE_STATS_VIEW_LINKAGE:String = "SessionVehicleStatsViewUI";
       
-      public static const SESSION_STATS_BUTTON_ALIAS:String = "SessionStatsButtonAlias";
-      
       public static const SESSION_STATS_PROPS_WTR:String = "wtr";
       
       public static const SESSION_STATS_PROPS_RATIO_DAMAGE:String = "ratioDamage";

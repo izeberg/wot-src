@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.battle_control.controllers.period_ctrl import IAbstractPeriodView
 from helpers import dependency
 from skeletons.gui.battle_session import IBattleSessionProvider

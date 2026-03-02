@@ -1,20 +1,29 @@
 package net.wg.gui.battle.battleloading
 {
+   import flash.display.MovieClip;
    import flash.text.TextField;
+   import flash.text.TextFieldAutoSize;
    import net.wg.data.VO.daapi.DAAPIVehicleInfoVO;
    import net.wg.data.VO.daapi.DAAPIVehicleUserTagsVO;
+   import net.wg.data.constants.generated.BATTLEATLAS;
    import net.wg.data.constants.generated.BATTLE_TYPES;
    import net.wg.gui.battle.battleloading.vo.VisualTipInfoVO;
+   import net.wg.gui.battle.components.BattleAtlasSprite;
    import net.wg.gui.components.controls.UILoaderAlt;
    import net.wg.gui.components.minimap.MinimapPresentation;
    import net.wg.infrastructure.base.UIComponentEx;
    import net.wg.infrastructure.exceptions.AbstractException;
+   import net.wg.utils.ICommons;
    import org.idmedia.as3commons.util.StringUtils;
    import scaleform.clik.constants.InvalidationType;
    import scaleform.clik.controls.StatusIndicator;
    
    public class BaseLoadingForm extends UIComponentEx
    {
+      
+      protected static const MAP_SIZE:int = 360;
+      
+      protected static const TIPS_OFFSET:int = 5;
       
       private static const PROGRESS:String = "progress";
       
@@ -39,6 +48,18 @@ package net.wg.gui.battle.battleloading
       
       public var tipText:TextField;
       
+      public var tipBackground:BattleAtlasSprite;
+      
+      public var mapBackground:BattleAtlasSprite;
+      
+      public var mapBorder:MovieClip;
+      
+      public var map:MinimapPresentation;
+      
+      public var tipImage:UILoaderAlt;
+      
+      protected var progress:Number = 0;
+      
       private var _winTextPosY:int;
       
       private var _battleTextPosY:int;
@@ -46,8 +67,6 @@ package net.wg.gui.battle.battleloading
       private var _battleTypeStr:String;
       
       private var _winStr:String;
-      
-      private var _progress:Number = 0;
       
       private var _mapName:String = "";
       
@@ -57,85 +76,21 @@ package net.wg.gui.battle.battleloading
       
       private var _tipBodyStr:String = null;
       
+      private var _commons:ICommons;
+      
       public function BaseLoadingForm()
       {
+         this._commons = App.utils.commons;
          super();
       }
       
-      private static function throwAbstractException() : void
+      override protected function configUI() : void
       {
-         DebugUtils.LOG_ERROR(MSG_MUST_BE_OVERRIDEN);
-         throw new AbstractException(MSG_MUST_BE_OVERRIDEN);
-      }
-      
-      public function updateTipBody(param1:String) : void
-      {
-         if(param1 != this._tipBodyStr)
+         super.configUI();
+         if(this.helpTip)
          {
-            this._tipBodyStr = param1;
-            invalidate(INVALID_TIP);
+            this.helpTip.autoSize = TextFieldAutoSize.CENTER;
          }
-      }
-      
-      public function updateTipTitle(param1:String) : void
-      {
-         if(param1 != this._tipTitleStr)
-         {
-            this._tipTitleStr = param1;
-            invalidate(INVALID_TIP);
-         }
-      }
-      
-      public function updateTipVisibility(param1:Boolean) : void
-      {
-         this.helpTip.visible = param1;
-         this.tipText.visible = param1;
-      }
-      
-      public function addVehiclesInfo(param1:Boolean, param2:Vector.<DAAPIVehicleInfoVO>, param3:Vector.<Number>) : void
-      {
-         throwAbstractException();
-      }
-      
-      public function getMapComponent() : MinimapPresentation
-      {
-         throwAbstractException();
-         return null;
-      }
-      
-      public function setFormDisplayData(param1:VisualTipInfoVO) : void
-      {
-         throwAbstractException();
-      }
-      
-      public function setPlayerStatus(param1:Boolean, param2:Number, param3:uint) : void
-      {
-         throwAbstractException();
-      }
-      
-      public function setUserTags(param1:Boolean, param2:Vector.<DAAPIVehicleUserTagsVO>) : void
-      {
-         throwAbstractException();
-      }
-      
-      public function setVehicleStatus(param1:Boolean, param2:Number, param3:uint, param4:Vector.<Number>) : void
-      {
-         throwAbstractException();
-      }
-      
-      public function setVehiclesData(param1:Boolean, param2:Array, param3:Vector.<Number>) : void
-      {
-         throwAbstractException();
-      }
-      
-      public function updateTeamsHeaders(param1:String, param2:String) : void
-      {
-         throwAbstractException();
-      }
-      
-      public function updateVehiclesInfo(param1:Boolean, param2:Vector.<DAAPIVehicleInfoVO>, param3:Vector.<Number>) : void
-      {
-         throwAbstractException();
       }
       
       override protected function draw() : void
@@ -143,7 +98,7 @@ package net.wg.gui.battle.battleloading
          super.draw();
          if(isInvalid(InvalidationType.DATA))
          {
-            App.utils.commons.truncateTextFieldText(this.battleText,this._battleTypeStr,true,true);
+            this._commons.truncateTextFieldText(this.battleText,this._battleTypeStr,true,true);
             if(StringUtils.isNotEmpty(this._winStr))
             {
                this.winText.htmlText = this._winStr;
@@ -156,7 +111,7 @@ package net.wg.gui.battle.battleloading
          }
          if(isInvalid(PROGRESS))
          {
-            this.loadingBar.position = this._progress;
+            this.loadingBar.position = this.progress;
          }
          if(isInvalid(INVALID_TIP))
          {
@@ -170,14 +125,30 @@ package net.wg.gui.battle.battleloading
       
       override protected function onDispose() : void
       {
+         this._commons = null;
          this.mapText = null;
          this.battleText = null;
          this.winText = null;
-         this.loadingBar.dispose();
-         this.loadingBar = null;
-         this.battleIcon.dispose();
-         this.battleIcon = null;
-         if(this.mapIcon != null)
+         this.tipBackground = null;
+         this.mapBackground = null;
+         this.mapBorder = null;
+         this.map = null;
+         if(this.tipImage)
+         {
+            this.tipImage.dispose();
+            this.tipImage = null;
+         }
+         if(this.loadingBar)
+         {
+            this.loadingBar.dispose();
+            this.loadingBar = null;
+         }
+         if(this.battleIcon)
+         {
+            this.battleIcon.dispose();
+            this.battleIcon = null;
+         }
+         if(this.mapIcon)
          {
             this.mapIcon.dispose();
             this.mapIcon = null;
@@ -185,6 +156,17 @@ package net.wg.gui.battle.battleloading
          this.helpTip = null;
          this.tipText = null;
          super.onDispose();
+      }
+      
+      public function addVehiclesInfo(param1:Boolean, param2:Vector.<DAAPIVehicleInfoVO>, param3:Vector.<Number>) : void
+      {
+         this.throwAbstractException();
+      }
+      
+      public function getMapComponent() : MinimapPresentation
+      {
+         this.throwAbstractException();
+         return null;
       }
       
       public function getMapIconComponent() : UILoaderAlt
@@ -210,12 +192,37 @@ package net.wg.gui.battle.battleloading
          }
       }
       
+      public function setFormDisplayData(param1:VisualTipInfoVO) : void
+      {
+         this.throwAbstractException();
+      }
+      
       public function setMapIcon(param1:String) : void
       {
          if(param1 != this.mapIcon.source)
          {
             this.mapIcon.source = param1;
          }
+      }
+      
+      public function setPlayerStatus(param1:Boolean, param2:Number, param3:uint) : void
+      {
+         this.throwAbstractException();
+      }
+      
+      public function setUserTags(param1:Boolean, param2:Vector.<DAAPIVehicleUserTagsVO>) : void
+      {
+         this.throwAbstractException();
+      }
+      
+      public function setVehicleStatus(param1:Boolean, param2:Number, param3:uint, param4:Vector.<Number>) : void
+      {
+         this.throwAbstractException();
+      }
+      
+      public function setVehiclesData(param1:Boolean, param2:Array, param3:Vector.<Number>) : void
+      {
+         this.throwAbstractException();
       }
       
       public function updateMapName(param1:String) : void
@@ -229,11 +236,48 @@ package net.wg.gui.battle.battleloading
       
       public function updateProgress(param1:Number) : void
       {
-         if(param1 != this._progress)
+         if(this.progress != param1)
          {
-            this._progress = param1;
+            this.progress = param1;
             invalidate(PROGRESS);
          }
+      }
+      
+      public function updateTeamsHeaders(param1:String, param2:String) : void
+      {
+         this.throwAbstractException();
+      }
+      
+      public function updateTipBody(param1:String) : void
+      {
+         if(param1 != this._tipBodyStr)
+         {
+            this._tipBodyStr = param1;
+            invalidate(INVALID_TIP);
+         }
+      }
+      
+      public function updateTipTitle(param1:String) : void
+      {
+         if(param1 != this._tipTitleStr)
+         {
+            this._tipTitleStr = param1;
+            invalidate(INVALID_TIP);
+         }
+      }
+      
+      public function updateTipVisibility(param1:Boolean) : void
+      {
+         if(this.helpTip)
+         {
+            this.helpTip.visible = param1;
+         }
+         this.tipText.visible = param1;
+      }
+      
+      public function updateVehiclesInfo(param1:Boolean, param2:Vector.<DAAPIVehicleInfoVO>, param3:Vector.<Number>) : void
+      {
+         this.throwAbstractException();
       }
       
       public function updateWinText(param1:String) : void
@@ -258,8 +302,7 @@ package net.wg.gui.battle.battleloading
       
       protected function alignHeaderText() : void
       {
-         var _loc1_:Number = NaN;
-         _loc1_ = this.winText.textHeight >> 1;
+         var _loc1_:int = this.winText.textHeight >> 1;
          this.winText.y = this._winTextPosY - _loc1_;
          this.battleText.y = this._battleTextPosY - _loc1_;
       }
@@ -267,6 +310,36 @@ package net.wg.gui.battle.battleloading
       protected function getBattleTypeName() : String
       {
          return BATTLE_TYPES.RANDOM;
+      }
+      
+      protected function showMap(param1:int, param2:int) : void
+      {
+         this.mapBackground.visible = true;
+         this.mapBackground.imageName = BATTLEATLAS.BATTLE_LOADING_FORM_MAP_BACKGROUND;
+         this.mapBorder.visible = true;
+         this.map.setMinimapDataS(param1,param2,MAP_SIZE);
+         this.map.border.visible = false;
+         this.map.grid.visible = true;
+         this.map.visible = true;
+      }
+      
+      protected function configureTip(param1:int, param2:int, param3:String = null) : void
+      {
+         var _loc4_:Boolean = StringUtils.isNotEmpty(param3);
+         this.tipBackground.visible = this.tipImage.visible = _loc4_;
+         if(_loc4_)
+         {
+            this.helpTip.y = param1;
+            this.tipBackground.imageName = BATTLEATLAS.BATTLE_LOADING_FORM_TIP_BACKGROUND;
+            this.tipImage.source = param3;
+         }
+         this.tipText.y = this.helpTip.y + this.helpTip.height + TIPS_OFFSET;
+      }
+      
+      private function throwAbstractException() : void
+      {
+         DebugUtils.LOG_ERROR(MSG_MUST_BE_OVERRIDEN);
+         throw new AbstractException(MSG_MUST_BE_OVERRIDEN);
       }
    }
 }

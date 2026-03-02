@@ -462,8 +462,7 @@ package net.wg.gui.components.paginator
       
       private function onArrowMouseRollOverHandler(param1:MouseEvent) : void
       {
-         var _loc2_:ISoundButtonEx = ISoundButtonEx(param1.target);
-         this.onArrowRollOver(_loc2_);
+         this.onArrowRollOver(ISoundButtonEx(param1.target));
       }
       
       private function onArrowMouseRollOutHandler(param1:MouseEvent) : void

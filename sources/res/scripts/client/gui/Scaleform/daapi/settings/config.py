@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from constants import HAS_DEV_RESOURCES, ARENA_GUI_TYPE, IS_DEVELOPMENT_BUILD
 from gui.Scaleform.genConsts.TOOLTIPS_CONSTANTS import TOOLTIPS_CONSTANTS as _TOOLTIPS
 from gui.shared.system_factory import registerScaleformBattlePackages, registerScaleformLobbyPackages, registerLobbyTooltipsBuilders, registerBattleTooltipsBuilders
@@ -10,18 +11,18 @@ _LOBBY_RELEASE_PACKAGES = ('gui.Scaleform.daapi.view.lobby', 'gui.Scaleform.daap
                            'gui.Scaleform.daapi.view.lobby.customization', 'gui.Scaleform.daapi.view.lobby.cyberSport',
                            'gui.Scaleform.daapi.view.lobby.exchange', 'gui.Scaleform.daapi.view.lobby.fortifications',
                            'gui.Scaleform.daapi.view.lobby.hangar', 'gui.Scaleform.daapi.view.lobby.header',
-                           'gui.Scaleform.daapi.view.lobby.messengerBar', 'gui.Scaleform.daapi.view.lobby.prb_windows',
-                           'gui.Scaleform.daapi.view.lobby.profile', 'gui.Scaleform.daapi.view.lobby.rankedBattles',
-                           'gui.Scaleform.daapi.view.lobby.epicBattle', 'gui.Scaleform.daapi.view.lobby.store',
-                           'gui.Scaleform.daapi.view.lobby.storage', 'gui.Scaleform.daapi.view.lobby.shared',
-                           'gui.Scaleform.daapi.view.lobby.techtree', 'gui.Scaleform.daapi.view.lobby.trainings',
-                           'gui.Scaleform.daapi.view.lobby.vehicle_preview', 'gui.Scaleform.daapi.view.lobby.vehicle_compare',
-                           'gui.Scaleform.daapi.view.lobby.wgnc', 'gui.Scaleform.daapi.view.login',
-                           'messenger.gui.Scaleform.view.lobby', 'gui.Scaleform.daapi.view.lobby.missions.regular',
-                           'gui.Scaleform.daapi.view.lobby.missions.personal', 'gui.Scaleform.daapi.view.lobby.event_boards',
-                           'gui.Scaleform.daapi.view.lobby.shop', 'gui.Scaleform.daapi.view.lobby.session_stats',
-                           'gui.Scaleform.daapi.view.lobby.tank_setup', 'gui.Scaleform.daapi.view.lobby.mapbox',
-                           'gui.Scaleform.daapi.view.lobby.veh_post_progression',
+                           'gui.Scaleform.daapi.view.lobby.messengerBar', 'gui.Scaleform.daapi.view.lobby.notifications',
+                           'gui.Scaleform.daapi.view.lobby.prb_windows', 'gui.Scaleform.daapi.view.lobby.profile',
+                           'gui.Scaleform.daapi.view.lobby.rankedBattles', 'gui.Scaleform.daapi.view.lobby.epicBattle',
+                           'gui.Scaleform.daapi.view.lobby.store', 'gui.Scaleform.daapi.view.lobby.storage',
+                           'gui.Scaleform.daapi.view.lobby.shared', 'gui.Scaleform.daapi.view.lobby.techtree',
+                           'gui.Scaleform.daapi.view.lobby.trainings', 'gui.Scaleform.daapi.view.lobby.vehicle_preview',
+                           'gui.Scaleform.daapi.view.lobby.vehicle_compare', 'gui.Scaleform.daapi.view.lobby.wgnc',
+                           'gui.Scaleform.daapi.view.login', 'messenger.gui.Scaleform.view.lobby',
+                           'gui.Scaleform.daapi.view.lobby.missions.regular', 'gui.Scaleform.daapi.view.lobby.missions.personal',
+                           'gui.Scaleform.daapi.view.lobby.event_boards', 'gui.Scaleform.daapi.view.lobby.shop',
+                           'gui.Scaleform.daapi.view.lobby.session_stats', 'gui.Scaleform.daapi.view.lobby.tank_setup',
+                           'gui.Scaleform.daapi.view.lobby.mapbox', 'gui.Scaleform.daapi.view.lobby.veh_post_progression',
                            'gui.Scaleform.daapi.view.lobby.battle_queue', 'gui.Scaleform.daapi.view.lobby.tank_setup',
                            'gui.Scaleform.daapi.view.lobby.user_missions', 'gui.Scaleform.daapi.view.lobby.store.browser',
                            'gui.Scaleform.daapi.view.lobby.wot_plus', 'gui.Scaleform.daapi.view.lobby.manual',
@@ -104,9 +105,7 @@ _LOBBY_TOOLTIPS_BUILDERS_PATHS = [
  (
   'gui.Scaleform.daapi.view.tooltips.account_completion_builders', _TOOLTIPS.ACCOUNT_COMPLETION_SET),
  (
-  'gui.Scaleform.daapi.view.tooltips.referral_program_builder', _TOOLTIPS.REFERRAL_PROGRAM_SET),
- (
-  'gui.Scaleform.daapi.view.tooltips.wot_plus_builders', _TOOLTIPS.WOT_PLUS_SET)]
+  'gui.Scaleform.daapi.view.tooltips.referral_program_builder', _TOOLTIPS.REFERRAL_PROGRAM_SET)]
 _LOBBY_DEBUG_TOOLTIPS_BUILDERS_PATHS = (
  (
   'gui.development.ui.tooltips.development_builders', _TOOLTIPS.DEVELOPMENT_SET),)

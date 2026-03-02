@@ -54,6 +54,8 @@ package net.wg.frontline.gui.battle.battleLoading
       
       private var _defaultTeam2ScrollBarPositionX:int;
       
+      private var _data:VisualTipInfoVO;
+      
       public function FrontlineBattleLoadingForm()
       {
          super();
@@ -67,11 +69,8 @@ package net.wg.frontline.gui.battle.battleLoading
       
       override public function setFormDisplayData(param1:VisualTipInfoVO) : void
       {
-         if(!param1.showMinimap && param1.tipIcon != null)
-         {
-            this.configureTip(param1.tipTitleTop,param1.tipBodyTop,param1.tipIcon);
-         }
-         this.configureTip(param1.tipTitleTop,param1.tipBodyTop,param1.tipIcon);
+         this._data = param1;
+         invalidateLayout();
       }
       
       override public function setPlayerStatus(param1:Boolean, param2:Number, param3:uint) : void
@@ -120,23 +119,6 @@ package net.wg.frontline.gui.battle.battleLoading
          this._tableCtrl.updateVehiclesInfo(param1,param2,param3);
       }
       
-      public function setStateSizeBoundaries(param1:int, param2:int) : void
-      {
-         var _loc3_:Boolean = param1 >= StageSizeBoundaries.WIDTH_1366;
-         this.team1Text.x = this._defaultTeam1TextPositionX;
-         this.team2Text.x = this._defaultTeam2TextPositionX;
-         this.table.team1ScrollBar.x = this._defaultTeam1ScrollBarPositionX;
-         this.table.team2ScrollBar.x = this._defaultTeam2ScrollBarPositionX;
-         if(_loc3_)
-         {
-            this.team1Text.x -= EXTENDED_LAYOUT_OFFSET_X;
-            this.team2Text.x += EXTENDED_LAYOUT_OFFSET_X;
-            this.table.team1ScrollBar.x -= EXTENDED_LAYOUT_OFFSET_X;
-            this.table.team2ScrollBar.x += EXTENDED_LAYOUT_OFFSET_X;
-         }
-         this.table.gotoAndStop(!!_loc3_ ? EXTENDED_LAYOUT_TABLE_FRAME_LABEL : SIMPLE_LAYOUT_TABLE_FRAME_LABEL);
-      }
-      
       override protected function onDispose() : void
       {
          App.stageSizeMgr.unregister(this);
@@ -164,6 +146,10 @@ package net.wg.frontline.gui.battle.battleLoading
             this.team1Text.text = this._leftTeamName;
             this.team2Text.text = this._rightTeamName;
          }
+         if(this._data && isInvalid(InvalidationType.LAYOUT))
+         {
+            this.configureTip(this._data.tipTitleTop,this._data.tipBodyTop,this._data.tipIcon);
+         }
       }
       
       override protected function initialize() : void
@@ -180,6 +166,16 @@ package net.wg.frontline.gui.battle.battleLoading
          App.stageSizeMgr.register(this);
       }
       
+      override protected function configureTip(param1:int, param2:int, param3:String = null) : void
+      {
+         var _loc4_:Boolean = StringUtils.isNotEmpty(param3);
+         if(_loc4_)
+         {
+            helpTip.y = param1;
+         }
+         tipText.y = helpTip.y + helpTip.height + TIPS_OFFSET;
+      }
+      
       public function setEpicVehiclesStats(param1:FrontlineVehiclesStatsVO) : void
       {
          this._tableCtrl.setEpicVehiclesStats(false,param1.leftItems,param1.leftVehiclesIDs);
@@ -187,14 +183,21 @@ package net.wg.frontline.gui.battle.battleLoading
          this._tableCtrl.sortVehicles();
       }
       
-      private function configureTip(param1:int, param2:int, param3:String = null) : void
+      public function setStateSizeBoundaries(param1:int, param2:int) : void
       {
-         var _loc4_:Boolean = StringUtils.isNotEmpty(param3);
-         if(_loc4_)
+         var _loc3_:Boolean = param1 >= StageSizeBoundaries.WIDTH_1366;
+         this.team1Text.x = this._defaultTeam1TextPositionX;
+         this.team2Text.x = this._defaultTeam2TextPositionX;
+         this.table.team1ScrollBar.x = this._defaultTeam1ScrollBarPositionX;
+         this.table.team2ScrollBar.x = this._defaultTeam2ScrollBarPositionX;
+         if(_loc3_)
          {
-            helpTip.y = param1;
-            tipText.y = param2;
+            this.team1Text.x -= EXTENDED_LAYOUT_OFFSET_X;
+            this.team2Text.x += EXTENDED_LAYOUT_OFFSET_X;
+            this.table.team1ScrollBar.x -= EXTENDED_LAYOUT_OFFSET_X;
+            this.table.team2ScrollBar.x += EXTENDED_LAYOUT_OFFSET_X;
          }
+         this.table.gotoAndStop(!!_loc3_ ? EXTENDED_LAYOUT_TABLE_FRAME_LABEL : SIMPLE_LAYOUT_TABLE_FRAME_LABEL);
       }
    }
 }

@@ -224,6 +224,12 @@ package net.wg.data.constants.generated
       public static const TARGET_DESIGNATOR_UNSPOTTED_MARKER:String = "targetDesignatorUnspottedMarker";
       
       public static const VEHICLE_MECHANICS_PANELS:Array = [WIDGETS_PANEL,DECORATIVE_CROSSHAIR_PANEL];
+      
+      public static const BR_SHAMROCK_CONTROLLER:String = "BRShamrockController";
+      
+      public static const BR_SHAMROCK_SIDEBAR:String = "ShamrockSideBar";
+      
+      public static const BR_SHAMROCK_COLLECT:String = "ShamrockCollect";
        
       
       public function BATTLE_VIEW_ALIASES()

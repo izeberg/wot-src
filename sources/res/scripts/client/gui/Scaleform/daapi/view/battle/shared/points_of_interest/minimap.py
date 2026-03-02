@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, typing, math_utils
 from gui.Scaleform.daapi.view.battle.shared.minimap.common import EntriesPlugin
 from gui.Scaleform.daapi.view.battle.shared.minimap.settings import CONTAINER_NAME

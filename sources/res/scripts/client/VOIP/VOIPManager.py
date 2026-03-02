@@ -49,6 +49,7 @@ class VOIPManager(VOIPHandler):
         self.__reLoginCallbackID = None
         self.__activateMicByVoice = False
         self.__captureDevices = []
+        self.__captureDevicesNames = []
         self.__currentCaptureDevice = ''
         self.__channelUsers = {}
         self.__eventManager = em = Event.EventManager()
@@ -119,7 +120,7 @@ class VOIPManager(VOIPHandler):
         return self.__user[0]
 
     def isInDesiredChannel(self):
-        if not self.__channel[0] == self.__currentChannel:
+        if self.__channel[0] != self.__currentChannel:
             return False
         if self.__currentChannel == self.__testDomain:
             return True
@@ -128,6 +129,9 @@ class VOIPManager(VOIPHandler):
 
     def getCaptureDevices(self):
         return self.__captureDevices
+
+    def getCaptureDevicesNames(self):
+        return self.__captureDevicesNames
 
     def getCurrentCaptureDevice(self):
         return self.__currentCaptureDevice
@@ -486,8 +490,10 @@ class VOIPManager(VOIPHandler):
             return
         captureDevicesCount = int(data[VOIPCommon.KEY_COUNT])
         self.__captureDevices = []
+        self.__captureDevicesNames = []
         for i in xrange(captureDevicesCount):
             self.__captureDevices.append(str(data[(VOIPCommon.KEY_CAPTURE_DEVICES + '_' + str(i))]))
+            self.__captureDevicesNames.append(str(data[(VOIPCommon.KEY_CAPTURE_DEVICES_NAMES + '_' + str(i))]))
 
         self.__currentCaptureDevice = str(data[VOIPCommon.KEY_CURRENT_CAPTURE_DEVICE])
         self.onCaptureDevicesUpdated()

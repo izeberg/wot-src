@@ -8,6 +8,7 @@ if typing.TYPE_CHECKING:
     from gui.battle_results.stats_ctrl import BattleResults
 
 class FunBattleInfoSubPresenter(BattleResultsSubPresenter):
+    _PACKER_CLS = FunRandomBattleInfo
 
     @classmethod
     def getViewModelType(cls):
@@ -15,4 +16,4 @@ class FunBattleInfoSubPresenter(BattleResultsSubPresenter):
 
     def packBattleResults(self, battleResults):
         with self.getViewModel().transaction() as (model):
-            FunRandomBattleInfo.packModel(model, battleResults)
+            self._PACKER_CLS.packModel(model, battleResults)

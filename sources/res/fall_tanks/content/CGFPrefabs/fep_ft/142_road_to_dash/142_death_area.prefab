@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<version>4</version>
+	<GameObjects>
+		<GameObject>
+			<name>142_death_area</name>
+			<UUID>632f164e-d953-495c-90f3-0d73814dd89e</UUID>
+			<flags>2</flags>
+		</GameObject>
+		<GameObject>
+			<name>142_death_area_trigger_sky</name>
+			<UUID>60fae6a4-6113-4a01-b86e-32ce769b6df2</UUID>
+			<flags>2</flags>
+		</GameObject>
+		<GameObject>
+			<name>142_death_area_trigger_bottom</name>
+			<UUID>d7164628-6a8b-3558-8143-486e561267d9</UUID>
+			<flags>2</flags>
+		</GameObject>
+	</GameObjects>
+	<components>
+		<ComponentPool>
+			<type>Hierarchy</type>
+			<version>2</version>
+			<component>
+				<UUID>60fae6a4-6113-4a01-b86e-32ce769b6df2</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>632f164e-d953-495c-90f3-0d73814dd89e</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>d7164628-6a8b-3558-8143-486e561267d9</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>632f164e-d953-495c-90f3-0d73814dd89e</link>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>Transform</type>
+			<version>1</version>
+			<component>
+				<UUID>632f164e-d953-495c-90f3-0d73814dd89e</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>60fae6a4-6113-4a01-b86e-32ce769b6df2</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							0 197.608 0
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>d7164628-6a8b-3558-8143-486e561267d9</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							0 -204.597 0
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>PrismArea</type>
+			<version>1</version>
+			<component>
+				<UUID>60fae6a4-6113-4a01-b86e-32ce769b6df2</UUID>
+				<flags>34</flags>
+				<config>
+					<property>
+						<name>Curvature</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Tesselation Step</name>
+						<value>20</value>
+					</property>
+					<property>
+						<name>Height</name>
+						<value>184</value>
+					</property>
+					<property>
+						<name>Points</name>
+						<collection>
+							<item>
+								<value>-1700 -600</value>
+							</item>
+							<item>
+								<value>-1700 400</value>
+							</item>
+							<item>
+								<value>650 400</value>
+							</item>
+							<item>
+								<value>650 -7600</value>
+							</item>
+						</collection>
+					</property>
+					<property>
+						<name>Douglas-Peucker Epsilon</name>
+						<value>
+							0.2
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>d7164628-6a8b-3558-8143-486e561267d9</UUID>
+				<flags>34</flags>
+				<config>
+					<property>
+						<name>Curvature</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Tesselation Step</name>
+						<value>20</value>
+					</property>
+					<property>
+						<name>Height</name>
+						<value>60</value>
+					</property>
+					<property>
+						<name>Points</name>
+						<collection>
+							<item>
+								<value>-1700 -600</value>
+							</item>
+							<item>
+								<value>-1700 400</value>
+							</item>
+							<item>
+								<value>650 400</value>
+							</item>
+							<item>
+								<value>650 -600</value>
+							</item>
+						</collection>
+					</property>
+					<property>
+						<name>Douglas-Peucker Epsilon</name>
+						<value>
+							0.2
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>Area trigger</type>
+			<version>1</version>
+			<component>
+				<UUID>60fae6a4-6113-4a01-b86e-32ce769b6df2</UUID>
+				<flags>34</flags>
+			</component>
+			<component>
+				<UUID>d7164628-6a8b-3558-8143-486e561267d9</UUID>
+				<flags>34</flags>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>VSEComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>60fae6a4-6113-4a01-b86e-32ce769b6df2</UUID>
+				<flags>32</flags>
+				<config>
+					<property>
+						<name>Path</name>
+						<isAsset>true</isAsset>
+						<value>fall_tanks/vscript/plans/fall_tanks/common/fall_tanks_death_zone.xml</value>
+					</property>
+					<property>
+						<name>AutoStart</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>d7164628-6a8b-3558-8143-486e561267d9</UUID>
+				<flags>32</flags>
+				<config>
+					<property>
+						<name>Path</name>
+						<isAsset>true</isAsset>
+						<value>fall_tanks/vscript/plans/fall_tanks/common/fall_tanks_death_zone.xml</value>
+					</property>
+					<property>
+						<name>AutoStart</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+	</components>
+</root>
