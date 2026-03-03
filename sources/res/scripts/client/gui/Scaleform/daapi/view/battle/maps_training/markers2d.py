@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+from future.utils import viewvalues
 from account_helpers.settings_core.settings_constants import BattleCommStorageKeys
 from gui.battle_control import avatar_getter
 from gui.Scaleform.daapi.view.battle.shared.markers2d import plugins, vehicle_plugins, MarkersManager
@@ -30,7 +32,7 @@ class _MapsTrainingVehicleMarkerPlugin(vehicle_plugins.VehicleMarkerPlugin):
 
     def __onLocalKillGoalsUpdated(self, localGoals):
         self.__localGoals = set(vehID for vehID in localGoals)
-        for marker in self._markers.itervalues():
+        for marker in viewvalues(self._markers):
             self.__updateGoal(marker)
 
     def __updateGoal(self, marker):

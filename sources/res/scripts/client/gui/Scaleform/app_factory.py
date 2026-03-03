@@ -1,4 +1,7 @@
-import logging, weakref, BattleReplay, BigWorld
+from __future__ import absolute_import
+import logging, weakref
+from future.utils import viewitems
+import BattleReplay, BigWorld
 from constants import ARENA_GUI_TYPE
 from frameworks.wulf import WindowFlags
 from gui import GUI_SETTINGS
@@ -51,7 +54,7 @@ class EmptyAppFactory(AlwaysValidObject, IAppFactory):
 
 class AS3_AppFactory(IAppFactory):
     __slots__ = ('__apps', '__packages', '__importer', '__waiting', '__ctrlModeFlags',
-                 '__weakref__', '__gui')
+                 '__weakref__')
     __gui = dependency.descriptor(IGuiLoader)
 
     def __init__(self):
@@ -217,9 +220,8 @@ class AS3_AppFactory(IAppFactory):
             return
 
     def destroy(self):
-        for appNS in self.__apps.iterkeys():
+        for appNS, entry in viewitems(self.__apps):
             _logger.info('Destroying app: %s', appNS)
-            entry = self.__apps[appNS]
             if entry:
                 entry.close()
             self.__apps[appNS] = None

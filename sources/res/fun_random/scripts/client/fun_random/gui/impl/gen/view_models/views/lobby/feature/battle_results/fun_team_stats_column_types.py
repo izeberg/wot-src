@@ -1,8 +1,10 @@
-from gui.impl.gen.view_models.views.lobby.battle_results.team_stats_column_types import TeamStatsColumnTypes
+from frameworks.wulf import ViewModel
 
-class FunTeamStatsColumnTypes(TeamStatsColumnTypes):
+class FunTeamStatsColumnTypes(ViewModel):
     __slots__ = ()
-    SPIRIT_POINTS = 'spiritPoints'
+    FINISH_TIME = 'finishTime'
+    FINISH_POSITION = 'finishPosition'
+    CHECKPOINTS = 'checkpoints'
 
     def __init__(self, properties=0, commands=0):
         super(FunTeamStatsColumnTypes, self).__init__(properties=properties, commands=commands)

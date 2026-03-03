@@ -1,4 +1,7 @@
-import logging, Math, typing
+from __future__ import absolute_import
+import logging
+from future.utils import viewvalues
+import Math, typing
 from gui.Scaleform.daapi.view.battle.shared.map_zones.mixins import MapZonesListener
 from gui.Scaleform.daapi.view.battle.shared.markers2d import plugins
 _logger = logging.getLogger(__name__)
@@ -19,7 +22,7 @@ class MapZonesPlugin(plugins.MarkerPlugin, MapZonesListener):
         super(MapZonesPlugin, self).start()
         mapZones = self.sessionProvider.shared.mapZones
         if mapZones:
-            for zoneMarker, matrix in mapZones.getZoneMarkers().itervalues():
+            for zoneMarker, matrix in viewvalues(mapZones.getZoneMarkers()):
                 if zoneMarker.isVisibleOn3DScene:
                     self.__addMarkerToZone(zoneMarker, matrix)
 

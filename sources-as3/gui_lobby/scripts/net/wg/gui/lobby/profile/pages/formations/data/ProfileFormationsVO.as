@@ -30,8 +30,6 @@ package net.wg.gui.lobby.profile.pages.formations.data
       
       public var isFortAvailable:Boolean = false;
       
-      public var fortState:int = -1;
-      
       public var isClanOwner:Boolean = false;
       
       public var fortLevel:String = "";

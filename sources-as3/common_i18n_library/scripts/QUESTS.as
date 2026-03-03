@@ -2651,6 +2651,8 @@ package
       
       public static const BONUSNAME_BRCOIN:String = "#quests:bonusName/brcoin";
       
+      public static const BONUSNAME_STPCOIN:String = "#quests:bonusName/stpcoin";
+      
       public static const BONUSNAME_GOLD_BANK:String = "#quests:bonusName/gold_bank";
       
       public static const BONUSNAME_IDLE_CREW_XP:String = "#quests:bonusName/idle_crew_xp";
@@ -2664,6 +2666,12 @@ package
       public static const BONUSNAME_EXCLUSIVE_VEHICLE:String = "#quests:bonusName/exclusive_vehicle";
       
       public static const BONUSNAME_ATTENDANCE_REWARD:String = "#quests:bonusName/attendance_reward";
+      
+      public static const BONUSNAME_PRO_BOOST:String = "#quests:bonusName/pro_boost";
+      
+      public static const BONUSNAME_SERVICE_RECORD_CUSTOMIZATION:String = "#quests:bonusName/service_record_customization";
+      
+      public static const BONUSNAME_BATTLE_PASS_PLUS:String = "#quests:bonusName/battle_pass_plus";
       
       public static const BONUSNAME_TOURCOIN:String = "#quests:bonusName/tourcoin";
       
@@ -2686,10 +2694,6 @@ package
       public static const ACTION_HERO_FULL_CALENDAR:String = "#quests:action/hero/full/calendar";
       
       public static const ACTION_BUTTON_CALENDAR:String = "#quests:action/button/calendar";
-      
-      public static const ACTION_SHORT_CALENDAR:String = "#quests:action/short/calendar";
-      
-      public static const ACTION_SUBHEADER_CALENDAR:String = "#quests:action/subheader/calendar";
       
       public static const ACTION_AUTO_EXCHANGERATE:String = "#quests:action/auto/exchangeRate";
       
@@ -3275,14 +3279,6 @@ package
       
       public static const METRICS_TITLE_TARGETS:String = "#quests:metrics/title/targets";
       
-      public static const BATTLECONDITION_STATE_COMPLETED:String = "#quests:battleCondition/state/completed";
-      
-      public static const BATTLECONDITION_STATE_COMPLETED_PERFECTLY:String = "#quests:battleCondition/state/completed_perfectly";
-      
-      public static const BATTLECONDITION_STATE_IN_PROGRESS:String = "#quests:battleCondition/state/in_progress";
-      
-      public static const BATTLECONDITION_STATE_FAILED:String = "#quests:battleCondition/state/failed";
-      
       public static const BATTLECONDITION_TASK_STATUS_DONE:String = "#quests:battleCondition/task/status/done";
       
       public static const BATTLECONDITION_TASK_STATUS_FAILED:String = "#quests:battleCondition/task/status/failed";
@@ -3339,53 +3335,7 @@ package
       
       public static const PREMIUMQUESTS_CONDITION_WIN_WINLONG:String = "#quests:premiumQuests/condition/win/winLong";
       
-      public static const DAILYQUESTS_HEADER_DEFAULT:String = "#quests:dailyQuests/header/default";
-      
       public static const PREMIUMQUESTS_HEADER_DEFAULT:String = "#quests:premiumQuests/header/default";
-      
-      public static const DAILYQUESTS_HEADER_WINBACK:String = "#quests:dailyQuests/header/winback";
-      
-      public static const PREMIUMQUESTS_HEADER_WINBACK:String = "#quests:premiumQuests/header/winback";
-      
-      public static const DAILYQUESTS_TAB_LABEL:String = "#quests:dailyQuests/tab/label";
-      
-      public static const PREMIUMQUESTS_TAB_LABEL:String = "#quests:premiumQuests/tab/label";
-      
-      public static const DAILYQUESTS_BODY_REROLL:String = "#quests:dailyQuests/body/reroll";
-      
-      public static const DAILYQUESTS_MISSIONSWITCH_TOOLTIP_HEADER:String = "#quests:dailyQuests/missionSwitch/tooltip/header";
-      
-      public static const DAILYQUESTS_MISSIONSWITCH_TOOLTIP_BODY_AVAILABLE:String = "#quests:dailyQuests/missionSwitch/tooltip/body/available";
-      
-      public static const DAILYQUESTS_MISSIONSWITCH_TOOLTIP_BODY_DESC_HRS:String = "#quests:dailyQuests/missionSwitch/tooltip/body/desc_hrs";
-      
-      public static const DAILYQUESTS_MISSIONSWITCH_TOOLTIP_BODY_DESC_HRS_MIN:String = "#quests:dailyQuests/missionSwitch/tooltip/body/desc_hrs_min";
-      
-      public static const DAILYQUESTS_MISSIONSWITCH_TOOLTIP_BODY_DESC_MIN_ONLY:String = "#quests:dailyQuests/missionSwitch/tooltip/body/desc_min_only";
-      
-      public static const DAILYQUESTS_MISSIONSWITCH_TOOLTIP_BODY_DESC:String = "#quests:dailyQuests/missionSwitch/tooltip/body/desc";
-      
-      public static const PREMIUMQUESTS_TOOLTIPS_LOCKED_HEADER:String = "#quests:premiumQuests/tooltips/locked/header";
-      
-      public static const PREMIUMQUESTS_TOOLTIPS_LOCKED_BODY:String = "#quests:premiumQuests/tooltips/locked/body";
-      
-      public static const PREMIUMQUESTS_NOTPREMIUMACCOUNT_TITLE:String = "#quests:premiumQuests/notPremiumAccount/title";
-      
-      public static const PREMIUMQUESTS_NOTPREMIUMACCOUNT_PARAGRAPH:String = "#quests:premiumQuests/notPremiumAccount/paragraph";
-      
-      public static const PREMIUMQUESTS_NOTPREMIUMACCOUNT_BUTTON:String = "#quests:premiumQuests/notPremiumAccount/button";
-      
-      public static const PREMIUMQUESTS_COUNTDOWN_TITLE:String = "#quests:premiumQuests/countDown/title";
-      
-      public static const PREMIUMQUESTS_COUNTDOWN_REMAININGTEXT:String = "#quests:premiumQuests/countDown/remainingText";
-      
-      public static const DAILYQUESTS_COUNTDOWN_TITLE:String = "#quests:dailyQuests/countDown/title";
-      
-      public static const DAILYQUESTS_COUNTDOWN_REMAININGTEXT:String = "#quests:dailyQuests/countDown/remainingText";
-      
-      public static const DAILYQUESTS_FOOTER_TITLE:String = "#quests:dailyQuests/footer/title";
-      
-      public static const DAILYQUESTS_FOOTER_PARAGRAPH:String = "#quests:dailyQuests/footer/paragraph";
       
       public static const DAILYQUESTS_BONUS_TOOLTIPTITLE:String = "#quests:dailyQuests/bonus/tooltipTitle";
       
@@ -3403,12 +3353,6 @@ package
       
       public static const DAILYQUESTS_POSTBATTLE_EPIC_DESCRIPTION:String = "#quests:dailyQuests/postBattle/epic/description";
       
-      public static const DAILYQUESTS_BONUSQUEST_BONUSMISSIONTITLE:String = "#quests:dailyQuests/bonusQuest/bonusMissionTitle";
-      
-      public static const DAILYQUESTS_BONUSQUEST_COUNTDOWN_HRS:String = "#quests:dailyQuests/bonusQuest/countDown_hrs";
-      
-      public static const DAILYQUESTS_BONUSQUEST_COUNTDOWN_MINSEC:String = "#quests:dailyQuests/bonusQuest/countDown_minSec";
-      
       public static const PREMIUMQUESTS_POSTBATTLE_GENERICTITLE_EASY:String = "#quests:premiumQuests/postBattle/genericTitle_easy";
       
       public static const PREMIUMQUESTS_POSTBATTLE_GENERICTITLE_MEDIUM:String = "#quests:premiumQuests/postBattle/genericTitle_medium";
@@ -3417,101 +3361,11 @@ package
       
       public static const GENERAL_COUNTDOWN_TEXT_TIMER_HRS:String = "#quests:general/countdown/text/timer_hrs";
       
-      public static const GENERAL_COUNTDOWN_TEXT_TIMER_HRS_ONLY:String = "#quests:general/countdown/text/timer_hrs_only";
-      
-      public static const GENERAL_COUNTDOWN_TEXT_TIMER_MIN_ONLY:String = "#quests:general/countdown/text/timer_min_only";
-      
-      public static const GENERAL_COUNTDOWN_TEXT_TIMER_MIN:String = "#quests:general/countdown/text/timer_min";
-      
-      public static const GENERAL_COUNTDOWN_TEXT_TIMER_SEC:String = "#quests:general/countdown/text/timer_sec";
-      
-      public static const GENERAL_COUNTDOWN_TIMER_HRS:String = "#quests:general/countdown/timer_hrs";
-      
-      public static const GENERAL_COUNTDOWN_TIMER_HRS_ONLY:String = "#quests:general/countdown/timer_hrs_only";
-      
-      public static const GENERAL_COUNTDOWN_TIMER_MIN_ONLY:String = "#quests:general/countdown/timer_min_only";
-      
       public static const GENERAL_COUNTDOWN_TIMER_MIN:String = "#quests:general/countdown/timer_min";
-      
-      public static const GENERAL_COUNTDOWN_TIMER_SEC:String = "#quests:general/countdown/timer_sec";
-      
-      public static const DAILYQUESTS_POSTBATTLE_GENERICAMPERSAND:String = "#quests:dailyQuests/postBattle/genericAmpersand";
       
       public static const DAILYQUESTS_POSTBATTLE_CONDITIONTYPEAND:String = "#quests:dailyQuests/postBattle/conditionTypeAnd";
       
       public static const DAILYQUESTS_POSTBATTLE_CONDITIONTYPEOR:String = "#quests:dailyQuests/postBattle/conditionTypeOr";
-      
-      public static const DAILYQUESTS_TAKEREWARDSBUTTON_TEXT:String = "#quests:dailyQuests/takeRewardsButton/text";
-      
-      public static const DAILYQUESTS_TAKEREWARDSBUTTON_COUNTDOWN:String = "#quests:dailyQuests/takeRewardsButton/countdown";
-      
-      public static const DAILYQUESTS_TAKEREWARDSBUTTON_TOOLTIP:String = "#quests:dailyQuests/takeRewardsButton/tooltip";
-      
-      public static const DAILYQUESTS_TAKEREWARDSBUTTON_TOOLTIPDISABLE:String = "#quests:dailyQuests/takeRewardsButton/tooltipDisable";
-      
-      public static const INFOPAGE_HEADER_DEFAULT:String = "#quests:infoPage/header/default";
-      
-      public static const INFOPAGE_HEADER_WINBACK:String = "#quests:infoPage/header/winback";
-      
-      public static const INFOPAGE_INFOBUTTON_DEFAULT:String = "#quests:infoPage/infoButton/default";
-      
-      public static const INFOPAGE_INFOBUTTON_WINBACK:String = "#quests:infoPage/infoButton/winback";
-      
-      public static const INFOPAGE_INFOBUTTON_BACK_TITLE:String = "#quests:infoPage/infoButton/back/title";
-      
-      public static const INFOPAGE_INFOBUTTON_BACK_GOTO:String = "#quests:infoPage/infoButton/back/goto";
-      
-      public static const INFOPAGE_INFOBUTTONTOOLTIP_BODY:String = "#quests:infoPage/infoButtonTooltip/body";
-      
-      public static const INFOPAGE_INFOBUTTONTOOLTIP_HEADER_DEFAULT:String = "#quests:infoPage/infoButtonTooltip/header/default";
-      
-      public static const INFOPAGE_INFOBUTTONTOOLTIP_HEADER_WINBACK:String = "#quests:infoPage/infoButtonTooltip/header/winback";
-      
-      public static const INFOPAGE_DAILYMISSIONTITLE:String = "#quests:infoPage/dailyMissionTitle";
-      
-      public static const INFOPAGE_PREMIUMMISSIONSTITLE:String = "#quests:infoPage/premiumMissionsTitle";
-      
-      public static const INFOPAGE_DAILYMISSIONS_DEFAULT:String = "#quests:infoPage/dailyMissions/default";
-      
-      public static const INFOPAGE_DAILYMISSIONS_BATTLEPASSDAILYMISSIONS_DEFAULT:String = "#quests:infoPage/dailyMissions/battlePassDailyMissions/default";
-      
-      public static const INFOPAGE_DAILYMISSIONS_WINBACK:String = "#quests:infoPage/dailyMissions/winback";
-      
-      public static const INFOPAGE_DAILYMISSIONS_BATTLEPASSDAILYMISSIONS_WINBACK:String = "#quests:infoPage/dailyMissions/battlePassDailyMissions/winback";
-      
-      public static const INFOPAGE_PREMIUMMISSIONS_DEFAULT:String = "#quests:infoPage/premiumMissions/default";
-      
-      public static const INFOPAGE_PREMIUMMISSIONS_WINBACK:String = "#quests:infoPage/premiumMissions/winback";
-      
-      public static const INFOPAGE_PREMIUMMISSIONS_WINBACK_COMP7ACTIVE:String = "#quests:infoPage/premiumMissions/winback_comp7Active";
-      
-      public static const INFOPAGE_CONDITIONSTITLE:String = "#quests:infoPage/conditionsTitle";
-      
-      public static const INFOPAGE_CONDITIONS_DEFAULT:String = "#quests:infoPage/conditions/default";
-      
-      public static const INFOPAGE_CONDITIONS_WINBACK:String = "#quests:infoPage/conditions/winback";
-      
-      public static const INFOPAGE_CONDITIONS_WINBACK_COMP7ACTIVE:String = "#quests:infoPage/conditions/winback_comp7Active";
-      
-      public static const INFOPAGE_BONUSMISSIONTITLE:String = "#quests:infoPage/bonusMissionTitle";
-      
-      public static const INFOPAGE_BONUSMISSION_DEFAULT:String = "#quests:infoPage/bonusMission/default";
-      
-      public static const INFOPAGE_BONUSMISSION_WINBACK:String = "#quests:infoPage/bonusMission/winback";
-      
-      public static const INFOPAGE_EPICREWARDSTITLE:String = "#quests:infoPage/epicRewardsTitle";
-      
-      public static const INFOPAGE_EPICREWARDS_DEFAULT:String = "#quests:infoPage/epicRewards/default";
-      
-      public static const INFOPAGE_EPICREWARDS_WINBACK:String = "#quests:infoPage/epicRewards/winback";
-      
-      public static const INFOPAGE_MISSIONSWITCHTITLE:String = "#quests:infoPage/missionSwitchTitle";
-      
-      public static const INFOPAGE_MISSIONSWITCH_HRS:String = "#quests:infoPage/missionSwitch_hrs";
-      
-      public static const INFOPAGE_MISSIONSWITCH_MIN:String = "#quests:infoPage/missionSwitch_min";
-      
-      public static const INFOPAGE_MISSIONSWITCH_WINBACK:String = "#quests:infoPage/missionSwitch/winback";
       
       public static const DAILYQUESTS_CONDITION_DODAMAGE:String = "#quests:dailyQuests/condition/doDamage";
       
@@ -3565,26 +3419,12 @@ package
       
       public static const DETAILS_CONDITIONS_CUMULATIVE_COMP7PRESTIGEPOINTS:String = "#quests:details/conditions/cumulative/comp7PrestigePoints";
       
-      public static const BATTLECONDITION_STATE_ENUM:Array = [BATTLECONDITION_STATE_COMPLETED,BATTLECONDITION_STATE_COMPLETED_PERFECTLY,BATTLECONDITION_STATE_IN_PROGRESS,BATTLECONDITION_STATE_FAILED];
-      
       public static const QUEST_FLAG_STATUS_ENUM:Array = [QUEST_FLAG_STATUS_NOT_STARTED,QUEST_FLAG_STATUS_LOCKED,QUEST_FLAG_STATUS_FAILED,QUEST_FLAG_STATUS_COMPLETED,QUEST_FLAG_STATUS_IN_PROGRESS,QUEST_FLAG_STATUS_COMPLETED_PERFECTLY];
        
       
       public function QUESTS()
       {
          super();
-      }
-      
-      public static function battlecondition_state(param1:String) : String
-      {
-         var _loc2_:String = null;
-         _loc2_ = "#quests:" + "battleCondition/state/" + param1;
-         if(BATTLECONDITION_STATE_ENUM.indexOf(_loc2_) == -1)
-         {
-            DebugUtils.LOG_WARNING("[battlecondition_state]:locale key \"" + _loc2_ + "\" was not found");
-            return null;
-         }
-         return _loc2_;
       }
       
       public static function getFlagStatus(param1:String) : String

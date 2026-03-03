@@ -1,12 +1,13 @@
-import inspect, logging
+import logging
 from functools import partial, wraps
 import AccountCommands
 from battle_pass_common import BATTLE_PASS_PDATA_KEY
+from py2to3.utils import getargspec
 from shared_utils.account_helpers.diff_utils import synchronizeDicts
 _logger = logging.getLogger()
 
 def _handleNonPlayerIgnoreState(func):
-    callbackNdx = inspect.getargspec(func).args.index('callback')
+    callbackNdx = getargspec(func).args.index('callback')
 
     @wraps(func)
     def wrapped(self, *args, **kwargs):

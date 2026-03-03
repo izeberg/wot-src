@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G191_StuG_IIIF_CFE_A/crash/lod3/Hull</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/german/G191_StuG_IIIF_CFE_A/crash/lod4/Hull</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.455083 -1.012682 -2.841864</min>
+		<max>1.454789 1.128741 2.718498</max>
+	</visibilityBox>
+</root>

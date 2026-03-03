@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import Keys
 from AvatarInputHandler import aih_global_binding
 from aih_constants import CTRL_MODE_NAME

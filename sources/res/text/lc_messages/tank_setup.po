@@ -1094,6 +1094,9 @@ msgstr "to firefighting speed"
 msgid "kpi/bonus/negative/foliageMaskingFactor"
 msgstr "to concealment behind foliage"
 
+msgid "kpi/bonus/negative/hpRecover"
+msgstr "to HP restored by Repair Kit"
+
 msgid "kpi/bonus/negative/mediumGroundFactor"
 msgstr ""
 "to maintaining speed\n"
@@ -1103,6 +1106,9 @@ msgid "kpi/bonus/negative/penaltyToDamagedSurveyingDevice"
 msgstr ""
 "to the penalty to view range when observation\n"
 "devices are disabled"
+
+msgid "kpi/bonus/negative/piercingHEShellsDistributionUpperBound"
+msgstr "to maximum potential penetration"
 
 msgid "kpi/bonus/negative/radiomanActivityTimeAfterVehicleDestroy"
 msgstr ""
@@ -1126,7 +1132,13 @@ msgstr ""
 msgid "kpi/bonus/negative/stunResistanceEffectFactor"
 msgstr ""
 "to negative effects\n"
-"from crew injuries"
+"from crew stunning"
+
+msgid "kpi/bonus/negative/suspensionDamageReduction"
+msgstr "to incoming damage to suspension"
+
+msgid "kpi/bonus/negative/suspensionRepairSpeed"
+msgstr "to suspension repair speed"
 
 msgid "kpi/bonus/negative/vehPenaltyForDamagedAmmorack"
 msgstr "to the loading speed penalty"
@@ -1388,6 +1400,9 @@ msgstr "to gun stabilization"
 msgid "kpi/bonus/positive/gunTraverse"
 msgstr "to gun traverse limits"
 
+msgid "kpi/bonus/positive/hpRecover"
+msgstr "to HP restored by Repair Kit"
+
 msgid "kpi/bonus/positive/hullElevationSpeed"
 msgstr "to hull elevation speed"
 
@@ -1403,6 +1418,9 @@ msgid "kpi/bonus/positive/penaltyToDamagedSurveyingDevice"
 msgstr ""
 "to the penalty to visibility when observation\n"
 "devices are disabled"
+
+msgid "kpi/bonus/positive/piercingHEShellsDistributionUpperBound"
+msgstr "to maximum potential penetration"
 
 msgid "kpi/bonus/positive/radiomanActivityTimeAfterVehicleDestroy"
 msgstr ""
@@ -1454,7 +1472,13 @@ msgid "kpi/bonus/positive/standardShellVelocity"
 msgstr "to standard shell velocity"
 
 msgid "kpi/bonus/positive/stunResistanceEffectFactor"
-msgstr "to negative stun effect"
+msgstr "to negative effects from crew stunning"
+
+msgid "kpi/bonus/positive/suspensionDamageReduction"
+msgstr "to incoming damage to suspension"
+
+msgid "kpi/bonus/positive/suspensionRepairSpeed"
+msgstr "to suspension repair speed"
 
 msgid "kpi/bonus/positive/turretTraverse"
 msgstr "to turret traverse limits"
@@ -1647,6 +1671,15 @@ msgstr ""
 "to concealment of moving\n"
 "enemy vehicles"
 
+msgid "kpi/bonus/ttc/negative/hpRecover"
+msgstr "to HP restored by Repair Kit"
+
+msgid "kpi/bonus/ttc/negative/magazineGunReloadSpeed"
+msgstr "to magazine reload time"
+
+msgid "kpi/bonus/ttc/negative/piercingHEShellsDistributionUpperBound"
+msgstr "to maximum potential penetration"
+
 msgid "kpi/bonus/ttc/negative/radiomanChanceToHitPerLevel"
 msgstr "to protection of the radio operator from injuries"
 
@@ -1655,6 +1688,9 @@ msgstr "to shell velocity for all shell types"
 
 msgid "kpi/bonus/ttc/negative/shotDispersionAngle"
 msgstr "to gun dispersion"
+
+msgid "kpi/bonus/ttc/negative/suspensionRepairSpeed"
+msgstr "to suspension repair speed"
 
 msgid "kpi/bonus/ttc/negative/turretAimingDispersion"
 msgstr "to dispersion during gun traverse"
@@ -1841,6 +1877,12 @@ msgstr ""
 msgid "kpi/bonus/ttc/positive/fireExtinguishingRate"
 msgstr "to firefighting speed"
 
+msgid "kpi/bonus/ttc/positive/hpRecover"
+msgstr "to HP restored by Repair Kit"
+
+msgid "kpi/bonus/ttc/positive/magazineGunReloadSpeed"
+msgstr "to magazine reload time"
+
 msgid "kpi/bonus/ttc/positive/maskingFactor"
 msgstr "to concealment of the vehicle"
 
@@ -1848,6 +1890,9 @@ msgid "kpi/bonus/ttc/positive/mediumGroundFactor"
 msgstr ""
 "to maintaining speed\n"
 "on moderately soft terrain"
+
+msgid "kpi/bonus/ttc/positive/piercingHEShellsDistributionUpperBound"
+msgstr "to maximum potential penetration"
 
 msgid "kpi/bonus/ttc/positive/radioDistance"
 msgstr "to radio signal range"
@@ -1862,6 +1907,9 @@ msgid "kpi/bonus/ttc/positive/softGroundFactor"
 msgstr ""
 "to maintaining speed\n"
 "on soft terrain"
+
+msgid "kpi/bonus/ttc/positive/suspensionRepairSpeed"
+msgstr "to suspension repair speed"
 
 msgid "kpi/bonus/ttc/positive/teamRadioBonusFactor"
 msgstr "to signal range of allied comms within the vehicle's radio coverage"

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from enum import IntEnum
 from Math import Vector3
 from gui.shared import EVENT_BUS_SCOPE

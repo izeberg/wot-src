@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from account_helpers.settings_core.options import QuestsProgressViewType, QuestsProgressDisplayType
 from account_helpers.settings_core.settings_constants import QUESTS_PROGRESS
 from gui.Scaleform.daapi.view.meta.QuestProgressTopViewMeta import QuestProgressTopViewMeta

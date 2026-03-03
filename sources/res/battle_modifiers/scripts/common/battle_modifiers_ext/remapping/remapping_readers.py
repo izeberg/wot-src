@@ -1,12 +1,13 @@
+from __future__ import absolute_import
 from typing import List, Dict, FrozenSet, TYPE_CHECKING
 from battle_modifiers_ext.constants_ext import RemappingConditionNames, ModifiersWithRemapping
-from remapping_composers import getComposerClass
-from remapping_conditions import getConditionClass
+from battle_modifiers_ext.remapping.remapping_composers import getComposerClass
+from battle_modifiers_ext.remapping.remapping_conditions import getConditionClass
 from ResMgr import DataSection
 from soft_exception import SoftException
 if TYPE_CHECKING:
-    from remapping_conditions import IRemappingCondition
-    from remapping_composers import IComposer
+    from battle_modifiers_ext.remapping.remapping_conditions import IRemappingCondition
+    from battle_modifiers_ext.remapping.remapping_composers import IComposer
 ERR_TEMPLATE = "[Remapping] {} for remapping '{}'"
 
 def readComposers(config, remappingName, availableConditions):

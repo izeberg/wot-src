@@ -42,6 +42,7 @@ package net.wg.gui.lobby.profile.pages
          if(this._pendingAchievementsData)
          {
             this._pendingAchievementsData = App.utils.data.cleanupDynamicObject(this._pendingAchievementsData);
+            this._pendingAchievementsData = null;
          }
          super.onDispose();
       }

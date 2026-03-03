@@ -9,15 +9,15 @@ from shared_utils import findFirst
 if typing.TYPE_CHECKING:
     from fun_random.helpers.server_settings import FunProgressionConfig
     from gui.server_events.bonuses import SimpleBonus
-    from gui.server_events.event_items import Quest, TokenQuest
+    from gui.server_events.event_items import Quest
     from fun_random.gui.server_events.event_items import FunProgressionTriggerQuest
 
 @ReprInjector.simple('text', 'counterName', 'counter', 'maximumCounter')
 class FunProgressionConditions(object):
 
-    def __init__(self, pConfig, counter, triggers, executors):
+    def __init__(self, pConfig, counter, triggers):
         self.__counter = counter
-        self.__finishTimestamp = executors[(-1)].getFinishTimeRaw()
+        self.__finishTimestamp = triggers[0].getFinishTimeRaw()
         self.__pConfig = pConfig
         self.__triggers = triggers
 
@@ -158,7 +158,7 @@ class FunProgressionState(object):
 class FunProgression(object):
 
     def __init__(self, pConfig, isFirst, isLast, counter, triggers, executors, unlimitedProgress):
-        self.__conditions = FunProgressionConditions(pConfig, counter, triggers, executors)
+        self.__conditions = FunProgressionConditions(pConfig, counter, triggers)
         self.__pConfig = pConfig
         self.__stages = tuple(FunProgressionStage(pConfig, idx, exe) for idx, exe in enumerate(executors))
         self.__state = FunProgressionState(pConfig, isFirst, isLast, self.__conditions, self.__stages)

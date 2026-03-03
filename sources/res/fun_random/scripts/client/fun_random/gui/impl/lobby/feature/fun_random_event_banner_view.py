@@ -1,6 +1,6 @@
 from __future__ import absolute_import
 import typing
-from account_helpers.AccountSettings import AccountSettings, FUN_RANDOM_HANGAR_VISITED_TIMESTAMP
+from account_helpers.AccountSettings import AccountSettings, FUN_RANDOM_BANNER_INTRO_CLICK_TIMESTAMP
 from adisp import adisp_process
 from fun_random.gui.feature.util.fun_mixins import FunAssetPacksMixin, FunSubModesWatcher
 from skeletons.gui.game_control import IFunRandomController
@@ -13,7 +13,6 @@ from gui.impl.lobby.user_missions.hangar_widget.event_banners.base_event_banner 
 from gui.impl.lobby.user_missions.hangar_widget.event_banners.event_banners_container import EventBannersContainer
 from gui.impl.lobby.user_missions.hangar_widget.services import IEventsService
 from helpers import dependency
-from helpers.time_utils import ONE_DAY
 if typing.TYPE_CHECKING:
     from typing import Optional
     from frameworks.wulf import View, ViewEvent
@@ -23,7 +22,7 @@ def isFunRandomEntryPointAvailable(funRandomCtrl=None):
     return funRandomCtrl.subModesInfo.isEntryPointAvailable()
 
 
-class FunRandomEventBannerView(BaseEventBanner, FunSubModesWatcher):
+class FunRandomEventBannerView(BaseEventBanner, FunAssetPacksMixin, FunSubModesWatcher):
     NAME = FUNRANDOM_ALIASES.FUN_RANDOM_ENTRY_POINT
     __eventsService = dependency.descriptor(IEventsService)
 
@@ -41,29 +40,27 @@ class FunRandomEventBannerView(BaseEventBanner, FunSubModesWatcher):
 
     @property
     def title(self):
-        return backport.text(FunAssetPacksMixin.getModeLocalsResRoot().capsUserName())
+        return backport.text(self.getModeLocalsResRoot().capsUserName())
 
     @property
     def introDescription(self):
-        return backport.text(FunAssetPacksMixin.getModeLocalsResRoot().entryPoint.intro.description())
+        return backport.text(self.getModeLocalsResRoot().entryPoint.intro.description())
 
     @property
     def inProgressDescription(self):
-        return backport.text(FunAssetPacksMixin.getModeLocalsResRoot().entryPoint.inProgress.description())
+        return backport.text(self.getModeLocalsResRoot().entryPoint.inProgress.description())
 
     @property
     def iconsPath(self):
-        assetsPointer = FunAssetPacksMixin.getModeAssetsPointer()
-        return ('fun_random.gui.maps.icons.feature.asset_packs.modes.{}').format(assetsPointer)
+        return ('fun_random.gui.maps.icons.feature.asset_packs.modes.{}').format(self.getModeAssetsPointer())
 
     @property
     def videosPath(self):
-        assetsPointer = FunAssetPacksMixin.getModeAssetsPointer()
-        return ('fun_random.asset_packs.modes.{}').format(assetsPointer)
+        return ('asset_packs.modes.{}').format(self.getModeAssetsPointer())
 
     @property
     def borderColor(self):
-        return '#61BAFF'
+        return self.getModeAssetsConfiguration().hangarEventBanner.borderColor
 
     @property
     def bannerState(self):
@@ -81,10 +78,6 @@ class FunRandomEventBannerView(BaseEventBanner, FunSubModesWatcher):
     def timerValue(self):
         return self.__timerValue
 
-    @property
-    def showTimerBeforeEventEnd(self):
-        return 2 * ONE_DAY
-
     def prepare(self):
         status = self.getSubModesStatus()
         self.__state = getFunRandomEventState(status)
@@ -92,7 +85,7 @@ class FunRandomEventBannerView(BaseEventBanner, FunSubModesWatcher):
         self.__eventStartDate = status.rightBorder
         self.__eventEndDate = status.endTime
         if self.__state == EventBannerState.IN_PROGRESS:
-            savedClickTime = AccountSettings.getSettings(FUN_RANDOM_HANGAR_VISITED_TIMESTAMP)
+            savedClickTime = AccountSettings.getSettings(FUN_RANDOM_BANNER_INTRO_CLICK_TIMESTAMP)
             if savedClickTime < self.__eventStartDate:
                 self.__state = EventBannerState.INTRO
 
@@ -101,6 +94,8 @@ class FunRandomEventBannerView(BaseEventBanner, FunSubModesWatcher):
 
     def onClick(self):
         self.__onSelectFunRandom()
+        if self.__state == EventBannerState.INTRO:
+            AccountSettings.setSettings(FUN_RANDOM_BANNER_INTRO_CLICK_TIMESTAMP, self.__eventStartDate)
 
     def onAppear(self):
         if self._isVisible:

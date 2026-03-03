@@ -11,14 +11,229 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: \n"
 
+msgid "battleQuestAwards/button"
+msgstr "Affirmative!"
+
+msgid "battleQuestAwards/stPatrick/subTitle"
+msgstr "STEEL HUNTER: SHAMROCK SHOWDOWN"
+
+msgid "battleQuestAwards/subTitle"
+msgstr "STEEL HUNTER"
+
+msgid "battleQuestAwards/title/completed"
+msgstr "FINAL STAGE COMPLETED!"
+
+msgid "battleQuestAwards/title/inProgress"
+msgstr "STAGE %(level)s COMPLETED!"
+
+msgid "dailyBonus/description"
+msgstr ""
+"%(dailyBonus)s Bonus to Lucky Seals for being among the top "
+"%(soloTopPlaces)s players in Solo battles or among the top "
+"%(squadTopPlaces)s in Platoon battles. The bonus can be activated once a day"
+" for each event vehicle."
+
 msgid "eventShop"
 msgstr "Event Shop"
+
+msgid "leaveBattleView/confirmation/cancel"
+msgstr "Stay"
+
+msgid "leaveBattleView/confirmation/submit"
+msgstr "Desert"
+
+msgid "leaveBattleView/description"
+msgstr ""
+"Your vehicles can still fight. If you leave the battle now, you will not "
+"receive any rewards for it. Are you sure you want to leave the battle?"
+
+msgid "leaveBattleView/title"
+msgstr "Desertion From Battlefield"
+
+msgid "leaveBattleView/warning"
+msgstr "You will not receive rewards!"
 
 msgid "progress/counter"
 msgstr "{{current}}{{divider}}{{total}}"
 
 msgid "progressionComplete"
 msgstr "Main Progression Complete!"
+
+msgid "progressionView/battleQuests/multiConditions"
+msgstr "%(firstCondition)s or %(secondCondition)s"
+
+msgid "progressionView/battleQuests/oneCondition"
+msgstr "%(firstCondition)s"
+
+msgid "progressionView/battleQuests/questsTotal/text"
+msgstr "Completed missions: "
+
+msgid "progressionView/battleQuests/timer/eventResetTime/text"
+msgstr "Event ends in:"
+
+msgid "progressionView/battleQuests/timer/inProgress/text"
+msgstr "Missions will be updated in"
+
+msgid "progressionView/card/points"
+msgstr "%(current)s/%(total)s"
+
+msgid "progressionView/seasonRange"
+msgstr "%(startDate)s – %(endDate)s"
+
+msgid "progressionView/subTitle/completed"
+msgstr ""
+"Progression completed. Keep playing Steel Hunter to earn more rewards."
+
+msgid "progressionView/subTitle/endEvent"
+msgstr ""
+"The event has ended. Missions and the Progression are no longer available."
+
+msgid "progressionView/subTitle/inProgress"
+msgstr ""
+"Complete missions to earn Progression Points.\n"
+"The number of Points you earn also depends on your position in battle. %(infotip)s"
+
+msgid "proxy_currency_tooltip/earn/description/brcoin"
+msgstr ""
+"Receive Steel Seals for efficient battle performance, achieving high "
+"positions in the battle results, and completing the mode missions."
+
+msgid "proxy_currency_tooltip/earn/description/stpcoin"
+msgstr ""
+"Receive Lucky Seals for picking up Spoils of War in battle, completing "
+"Progression Stages, and taking the top positions in Steel Hunter."
+
+msgid "proxy_currency_tooltip/earn/title/brcoin"
+msgstr "How to Earn Seals"
+
+msgid "proxy_currency_tooltip/earn/title/stpcoin"
+msgstr "How to Earn Seals"
+
+msgid "proxy_currency_tooltip/spend/description/brcoin"
+msgstr "Use the earned Steel Seals to purchase Steel Hunter styles."
+
+msgid "proxy_currency_tooltip/spend/description/stpcoin"
+msgstr ""
+"Exchange your earned Lucky Seals for valuable rewards in the Shamrock Shop."
+
+msgid "proxy_currency_tooltip/spend/title/brcoin"
+msgstr "What to Spend Seals On"
+
+msgid "proxy_currency_tooltip/spend/title/stpcoin"
+msgstr "What to Spend Seals On"
+
+msgid "proxy_currency_tooltip/title/brcoin"
+msgstr "Steel Seals"
+
+msgid "proxy_currency_tooltip/title/stpcoin"
+msgstr "Lucky Seals"
+
+msgid "quests/bonuses/progressionToken/body"
+msgstr ""
+"Awarded for completing special missions in Steel Hunter. They allow you to "
+"advance through the Progression."
+
+msgid "quests/bonuses/progressionToken/header"
+msgstr "Steel Hunter Progression Points"
+
+msgid "rewardCurrencyTooltip/body/battlePassPoints"
+msgstr ""
+"Points can be earned by fighting in battles and completing special missions."
+" They are automatically added to the Battle Pass Progression."
+
+msgid "rewardCurrencyTooltip/body/brProgressionToken"
+msgstr ""
+"Awarded for completing Steel Hunter missions and for good battle results. "
+"They allow you to advance through the Progression."
+
+msgid "rewardCurrencyTooltip/body/brcoin"
+msgstr ""
+"Steel Seals can be received for efficient battle performance, achieving high"
+" positions in the battle results, and completing special missions."
+
+msgid "rewardCurrencyTooltip/body/credits"
+msgstr "The main in-game currency. Earned in battles or purchased with gold."
+
+msgid "rewardCurrencyTooltip/body/crystal"
+msgstr ""
+"A rare, special currency used to purchase unique items that are unavailable "
+"through other means."
+
+msgid "rewardCurrencyTooltip/body/stpcoin"
+msgstr ""
+"Currency that can be earned in Steel Hunter battles. Seals can be exchanged "
+"for unique rewards in the Shamrock Shop. When playing in a Platoon, Seals "
+"are divided equally among Platoon members. The specified amount is your part"
+" of the total earnings."
+
+msgid "rewardCurrencyTooltip/body/xp"
+msgstr ""
+"The experience earned in special vehicles can be converted to Free "
+"Experience."
+
+msgid "rewardCurrencyTooltip/dailyBonus/stpcoin"
+msgstr ""
+"Bonus applied! The number of Seals received in battle is increased by "
+"%(count)s times."
+
+msgid "rewardCurrencyTooltip/header/battlePassPoints"
+msgstr "Battle Pass Points"
+
+msgid "rewardCurrencyTooltip/header/brProgressionToken"
+msgstr "Steel Hunter Progression Points"
+
+msgid "rewardCurrencyTooltip/header/brcoin"
+msgstr "Steel Seals"
+
+msgid "rewardCurrencyTooltip/header/credits"
+msgstr "Credits"
+
+msgid "rewardCurrencyTooltip/header/crystal"
+msgstr "Bonds"
+
+msgid "rewardCurrencyTooltip/header/stpcoin"
+msgstr "Lucky Seals"
+
+msgid "rewardCurrencyTooltip/header/xp"
+msgstr "Combat Experience"
+
+msgid "rewardCurrencyTooltip/premiumBonus/brcoin"
+msgstr ""
+"WoT Premium Account increases the amount of this currency earned by 50%."
+
+msgid "rewardCurrencyTooltip/premiumBonus/credits"
+msgstr ""
+"WoT Premium Account increases the amount of this currency earned by 50%."
+
+msgid "rewardCurrencyTooltip/premiumBonus/xp"
+msgstr ""
+"WoT Premium Account increases the amount of Combat Experience earned by 50%."
+
+msgid "serviceChannelMessages/awards"
+msgstr "Reward received:"
+
+msgid "serviceChannelMessages/body"
+msgstr ""
+"You have completed Progression Stage %(stage)s in the %(progressionName)s "
+"mode."
+
+msgid "serviceChannelMessages/header"
+msgstr "Congratulations!"
+
+msgid "serviceChannelMessages/progressionButton"
+msgstr "Details"
+
+msgid "serviceChannelMessages/progressionName"
+msgstr "Steel Hunter"
+
+msgid "tab/label/platoon"
+msgstr "PLATOON"
+
+msgid "tab/label/solo"
+msgstr "SOLO"
+
+msgid "tab/label/team"
+msgstr "WITH FRIEND"
 
 msgid "tooltip/banner/description"
 msgstr ""
@@ -50,11 +265,20 @@ msgstr "Low Performance"
 msgid "tooltip/banner/performanceRisk/title/medium"
 msgstr "Possible Reduced Performance"
 
+msgid "tooltip/banner/stPatrickDescription"
+msgstr ""
+"Dynamic last-man-standing battle royale with a touch of green magic. Fight "
+"in eight special vehicles that can be upgraded as you battle, growing "
+"stronger with each tier. Exclusive rewards and much more await you!"
+
+msgid "tooltip/banner/stPatrickTitle"
+msgstr "Shamrock Showdown"
+
 msgid "tooltip/banner/timer/text/accent"
-msgstr "Event available for {{timer}}"
+msgstr "Event available for %(timer)s"
 
 msgid "tooltip/banner/timer/text/cooldown"
-msgstr "Ceasefire {{timer}}"
+msgstr "Ceasefire %(timer)s"
 
 msgid "tooltip/banner/title"
 msgstr "Steel Hunter"
@@ -94,10 +318,21 @@ msgstr "Steel Hunter"
 msgid "tooltip/quest/header"
 msgstr "Steel Hunter Mission"
 
+msgid "tooltip/shop/stPatrick/subtitle"
+msgstr ""
+"Exchange your {ede6d9_Open}Lucky Seals{ede6d9_Close} for special rewards."
+
+msgid "tooltip/shop/stPatrick/text"
+msgstr ""
+"Receive Lucky Seals for picking up Spoils of War in battle, completing "
+"Progression Stages, and taking the top positions in the battle royale."
+
+msgid "tooltip/shop/stPatrick/title"
+msgstr "Shamrock Shop"
+
 msgid "tooltip/shop/subtitle"
 msgstr ""
-"Exchange your {{@ colorLegacy 'ede6d9'}}Steel Seals{{/}} for special "
-"rewards."
+"Exchange your {ede6d9_Open}Steel Seals{ede6d9_Close} for special rewards."
 
 msgid "tooltip/shop/text"
 msgstr ""

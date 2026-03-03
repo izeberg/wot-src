@@ -211,7 +211,7 @@ class SectorBasesPlugin(FrontlineMissionsPlugin, ChatCommunicationComponent):
     def getMarkerSubtype(self, targetID):
         if targetID == INVALID_TARGET_ID or targetID not in self._markers:
             return INVALID_MARKER_SUBTYPE
-        if _ALLY_OWNER == self._markers[targetID].getOwningTeam():
+        if self._markers[targetID].getOwningTeam() == _ALLY_OWNER:
             return DefaultMarkerSubType.ALLY_MARKER_SUBTYPE
         return DefaultMarkerSubType.ENEMY_MARKER_SUBTYPE
 

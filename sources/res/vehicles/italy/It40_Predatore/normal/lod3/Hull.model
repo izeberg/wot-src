@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/italy/It40_Predatore/normal/lod3/Hull</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/italy/It40_Predatore/normal/lod4/Hull</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.701053 -0.859487 -3.729662</min>
+		<max>1.700923 0.675814 3.524807</max>
+	</visibilityBox>
+</root>

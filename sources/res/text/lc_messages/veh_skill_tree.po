@@ -56,6 +56,69 @@ msgstr[0] "%(perks)s"
 msgstr[1] "%(perks)s nodes"
 msgstr[2] "%(perks)s nodes"
 
+msgid "footer/button/label"
+msgstr "Research"
+
+msgid "footer/description/text/allResearched"
+msgstr ""
+"All nodes have been researched. You can now access the Elite Rewards system."
+
+msgid "footer/description/text/emergencyModeEnabled"
+msgstr ""
+"WG Wallet is temporarily unavailable. We apologize for the inconvenience."
+
+msgid "footer/description/text/inBattle"
+msgstr "Node unavailable. The vehicle is in battle."
+
+msgid "footer/description/text/inFormation"
+msgstr "Node unavailable. The vehicle is in a tactical unit."
+
+msgid "footer/description/text/needsRepair"
+msgstr "Node unavailable. The vehicle requires repairs."
+
+msgid "footer/description/text/notInInventory"
+msgstr "You need to own this vehicle to be able to research its nodes"
+
+msgid "footer/description/text/researchAvailable"
+msgstr "Select a node or branch of nodes to research"
+
+msgid "footer/text/amountItems"
+msgstr "{{amount}} nodes"
+
+msgid "footer/text/selectedItem"
+msgstr "Selected: {{selectedItem}}"
+
+msgid "footer/tooltip/body/emergencyModeEnabled"
+msgstr ""
+"WG Wallet is temporarily unavailable. We apologize for the inconvenience."
+
+msgid "footer/tooltip/body/inBattle"
+msgstr "Node unavailable. The vehicle is in battle."
+
+msgid "footer/tooltip/body/inFormation"
+msgstr "Node unavailable. The vehicle is in a tactical unit."
+
+msgid "footer/tooltip/body/needsRepair"
+msgstr "Node unavailable. The vehicle requires repairs."
+
+msgid "footer/tooltip/body/notEnoughExp"
+msgstr "Not enough XP to research the selected nodes."
+
+msgid "footer/tooltip/body/researchInProgress"
+msgstr "Research in progress, please wait..."
+
+msgid "footer/tooltip/header/emergencyModeEnabled"
+msgstr "Unavailable"
+
+msgid "footer/tooltip/header/info"
+msgstr "Selected nodes"
+
+msgid "footer/tooltip/listSelectedPerks"
+msgid_plural "plural/footer/tooltip/listSelectedPerks"
+msgstr[0] "• {{selectedPerks}},"
+msgstr[1] "• {{selectedPerks}}."
+msgstr[2] "• {{selectedPerks}}."
+
 msgid "intro/button"
 msgstr "Affirmative!"
 
@@ -130,53 +193,6 @@ msgstr "Go to Upgrades"
 
 msgid "notifications/perkAvailable/title"
 msgstr "You have enough XP to enhance your vehicle!"
-
-msgid "research/allResearched"
-msgstr ""
-"All nodes have been researched. You can now access the Elite Rewards system."
-
-msgid "research/button/label"
-msgstr "Research"
-
-msgid "research/emergencyModeEnabled/body"
-msgstr ""
-"WG Wallet is temporarily unavailable. We apologize for the inconvenience."
-
-msgid "research/emergencyModeEnabled/header"
-msgstr "Unavailable"
-
-msgid "research/inBattle"
-msgstr "Node unavailable. The vehicle is in battle."
-
-msgid "research/inFormation"
-msgstr "Node unavailable. The vehicle is in a tactical unit."
-
-msgid "research/infoTooltipTitle"
-msgstr "Selected nodes"
-
-msgid "research/needsRepair"
-msgstr "Node unavailable. The vehicle requires repairs."
-
-msgid "research/noSelected"
-msgstr "Select a node or branch of nodes to research"
-
-msgid "research/notEnoughExp"
-msgstr "Not enough XP to research the selected nodes."
-
-msgid "research/notInInventory"
-msgstr "You need to own this vehicle to be able to research its nodes"
-
-msgid "research/perks"
-msgstr "{{amount}} nodes"
-
-msgid "research/selected"
-msgstr "Selected: {{selectedItem}}"
-
-msgid "research/tooltip/description"
-msgid_plural "plural/research/tooltip/description"
-msgstr[0] "• {{selectedPerks}},"
-msgstr[1] "• {{selectedPerks}}."
-msgstr[2] "• {{selectedPerks}}."
 
 msgid "rewardScreen/button/accept"
 msgstr "Affirmative"

@@ -1,3 +1,4 @@
+from __future__ import absolute_import, division
 import typing, BigWorld
 from items import vehicles
 from points_of_interest_shared import PoiEquipmentNamesByPoiType, PoiTypesByPoiEquipmentName

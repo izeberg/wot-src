@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui import makeHtmlString
 from gui.Scaleform.daapi.view.dialogs import IDialogMeta
 from gui.Scaleform.framework import ScopeTemplates

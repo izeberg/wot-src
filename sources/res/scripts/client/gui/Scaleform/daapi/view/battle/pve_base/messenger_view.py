@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from pve_battle_hud import WidgetType
 from messenger.gui.Scaleform.view.battle.messenger_view import BattleMessengerView
 

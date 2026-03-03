@@ -1021,18 +1021,6 @@ package
       
       public static const QUESTSTOOLTIP_BOTTOM:String = "#ranked_battles:questsTooltip/bottom";
       
-      public static const ENTRYPOINT_TITLE:String = "#ranked_battles:entryPoint/title";
-      
-      public static const ENTRYPOINT_SEASON_STARTS:String = "#ranked_battles:entryPoint/season/starts";
-      
-      public static const ENTRYPOINT_SEASON_LASTS:String = "#ranked_battles:entryPoint/season/lasts";
-      
-      public static const ENTRYPOINT_SEASON_END:String = "#ranked_battles:entryPoint/season/end";
-      
-      public static const ENTRYPOINT_FROZEN_WIDE:String = "#ranked_battles:entryPoint/frozen/wide";
-      
-      public static const ENTRYPOINT_FROZEN_THIN:String = "#ranked_battles:entryPoint/frozen/thin";
-      
       public static const QUALIFICATIONREWARDS_BATTLESPLAYED:String = "#ranked_battles:qualificationRewards/battlesPlayed";
       
       public static const QUALIFICATIONREWARDS_BATTLESNEEDED:String = "#ranked_battles:qualificationRewards/battlesNeeded";

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing, CommandMapping, GUI
 from aih_constants import CTRL_MODE_NAME
 from constants import PVE_MINIMAP_DEFAULT_ZOOM, PVE_MINIMAP_DEFAULT_BORDERS
@@ -65,7 +66,7 @@ class PveScaleCenteredPersonalEntriesPlugin(PersonalEntriesPlugin):
     def _onZoomLevelUpdated(self, event):
         zoomLevel = event.ctx.get('zoomLevel', 0)
         if zoomLevel < PVE_MINIMAP_DEFAULT_ZOOM:
-            _logger.warn('zoomLevel is out of scope: %f', zoomLevel)
+            _logger.warning('zoomLevel is out of scope: %f', zoomLevel)
         self._centerMapBasedOnMode()
         self._parentObj.setZoom(max(PVE_MINIMAP_DEFAULT_ZOOM, zoomLevel))
         self._isInBordersMode = False

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging
 from collections import namedtuple
 from wg_async import wg_async, wg_await, AsyncEvent, AsyncReturn, AsyncScope, BrokenPromiseError

@@ -1,4 +1,6 @@
+from __future__ import absolute_import
 import typing
+from past.builtins import basestring
 from frameworks.wulf import WindowFlags, View, ViewSettings, PositionAnchor
 from gui.impl.gen import R
 from gui.impl.gen.view_models.windows.advanced_animated_tooltip_content_model import AdvancedAnimatedTooltipContentModel

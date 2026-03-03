@@ -74,8 +74,6 @@ package net.wg.gui.battle.views.widgetsPanel
       
       private var _maxSpeed:int = 0;
       
-      private var _maxActiveSpeed:int = 0;
-      
       private var _maxPassiveSpeed:int = 0;
       
       private var _totalMaxSpeed:int = 0;
@@ -142,10 +140,9 @@ package net.wg.gui.battle.views.widgetsPanel
       public function draw(param1:Number, param2:Number, param3:Number, param4:Number) : void
       {
          this._maxSpeed = param1;
-         this._maxActiveSpeed = param2;
          this._maxPassiveSpeed = param3;
          this._chargeZoneStart = param4;
-         this._totalMaxSpeed = this._maxSpeed + this._maxActiveSpeed + this._maxPassiveSpeed;
+         this._totalMaxSpeed = this._maxSpeed + param2 + this._maxPassiveSpeed;
          this.drawBaseMask();
          this.drawBaseActiveMask();
          this.drawChargeZoneMask();

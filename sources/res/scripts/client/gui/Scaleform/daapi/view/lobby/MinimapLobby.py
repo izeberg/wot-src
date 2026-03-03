@@ -1,4 +1,6 @@
+from __future__ import absolute_import, division
 from typing import Union
+from past.utils import old_div
 import ArenaType
 from gui.Scaleform.daapi.view.meta.MinimapPresentationMeta import MinimapPresentationMeta
 from gui.Scaleform.genConsts.MINIMAPENTRIES_CONSTANTS import MINIMAPENTRIES_CONSTANTS
@@ -31,7 +33,7 @@ class MinimapLobby(MinimapPresentationMeta):
         super(MinimapLobby, self).__init__()
         self.__playerTeam = 1
         self.__arenaTypeID = None
-        self.__cfg = dict()
+        self.__cfg = {}
         self.__minimapSize = 300
         return
 
@@ -97,8 +99,8 @@ class MinimapLobby(MinimapPresentationMeta):
 
         def _normalizePoint(posX, posY):
             return (
-             (posX - offset.x) / mapWidthMult,
-             (posY - offset.y) / mapHeightMult)
+             old_div(posX - offset.x, mapWidthMult),
+             old_div(posY - offset.y, mapHeightMult))
 
         for team, teamSpawnPoints in enumerate(self.__cfg['teamSpawnPoints'], 1):
             for spawn, spawnPoint in enumerate(teamSpawnPoints, 1):

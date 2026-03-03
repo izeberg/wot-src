@@ -183,15 +183,15 @@ package net.wg.gui.lobby.profile.pages.awards
          invalidateSize();
       }
       
+      public function get blocks() : Vector.<AwardsTileListBlock>
+      {
+         return this._blocks;
+      }
+      
       private function onBlockResizeHandler(param1:Event) : void
       {
          param1.stopPropagation();
          this.updateSize();
-      }
-      
-      public function get blocks() : Vector.<AwardsTileListBlock>
-      {
-         return this._blocks;
       }
    }
 }

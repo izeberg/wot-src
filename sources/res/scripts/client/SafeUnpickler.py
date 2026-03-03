@@ -1,11 +1,14 @@
-import sys, cPickle, StringIO
+import sys, copy, cPickle, StringIO
 
 class SafeUnpickler(object):
     PICKLE_SAFE = {'__builtin__': set(['object', 'set', 'frozenset', 'list', 'tuple']), 
        'datetime': set(['datetime']), 
        '_BWp': set(['Array', 'FixedDict']), 
-       'Math': set(['Vector2', 'Vector3']), 
-       'items.components.shared_components': None}
+       'Math': set(['Vector2', 'Vector3'])}
+
+    def __init__(self):
+        import items.components.shared_components as sc
+        sc.MechanicsParams.createMechanicsParamsOrigin = copy.deepcopy
 
     @classmethod
     def find_class(cls, module, name):
@@ -14,7 +17,7 @@ class SafeUnpickler(object):
         __import__(module)
         mod = sys.modules[module]
         classesSet = cls.PICKLE_SAFE[module]
-        if classesSet is not None and name not in classesSet:
+        if name not in classesSet:
             raise cPickle.UnpicklingError('Attempting to unpickle unsafe class %s' % name)
         klass = getattr(mod, name)
         return klass

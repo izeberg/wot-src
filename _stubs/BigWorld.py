@@ -1057,6 +1057,8 @@ class CollisionComponent(PyComponentWrapperBase):
 	partIndices = property(lambda self: None)
 	def removeAttachment(self, *args, **kwargs): pass
 	def setColliderType(self, *args, **kwargs): pass
+	def setOnAttachmentsReady(self, *args, **kwargs): pass
+	def setOnAttachmentsUpdated(self, *args, **kwargs): pass
 	spaceID = property(lambda self: None)
 	def valid(self, *args, **kwargs): pass
 
@@ -1109,6 +1111,7 @@ class CursorCamera(BaseCamera):
 	def __str__(*args, **kwargs): pass
 	def __subclasshook__(*args, **kwargs): pass
 	def addVolumeGroup(self, *args, **kwargs): pass
+	currentYPR = property(lambda self: None)
 	direction = property(lambda self: None)
 	def enableAdvancedCollider(self, *args, **kwargs): pass
 	def enableCollisions(self, *args, **kwargs): pass
@@ -4432,6 +4435,7 @@ class SphericalTransitionCamera(CursorCamera):
 	def __str__(*args, **kwargs): pass
 	def __subclasshook__(*args, **kwargs): pass
 	def addVolumeGroup(self, *args, **kwargs): pass
+	currentYPR = property(lambda self: None)
 	direction = property(lambda self: None)
 	def easingProgress(self, *args, **kwargs): pass
 	def enableAdvancedCollider(self, *args, **kwargs): pass
@@ -5592,6 +5596,7 @@ class WGVehiclePhysics(pybind11_object):
 	boundingRadius = property(lambda self: None)
 	centerOfMass = property(lambda self: None)
 	choker = property(lambda self: None)
+	def clearVelocities(self, *args, **kwargs): pass
 	def configure(self, *args, **kwargs): pass
 	correctionSpeedFactor = property(lambda self: None)
 	cruiseSignals = property(lambda self: None)
@@ -5743,6 +5748,7 @@ class WGTankPhysics(WGVehiclePhysics):
 	boundingRadius = property(lambda self: None)
 	centerOfMass = property(lambda self: None)
 	choker = property(lambda self: None)
+	def clearVelocities(self, *args, **kwargs): pass
 	def configure(self, *args, **kwargs): pass
 	correctionSpeedFactor = property(lambda self: None)
 	cruiseSignals = property(lambda self: None)
@@ -6116,6 +6122,7 @@ class WGWheeledPhysics(WGVehiclePhysics):
 	boundingRadius = property(lambda self: None)
 	centerOfMass = property(lambda self: None)
 	choker = property(lambda self: None)
+	def clearVelocities(self, *args, **kwargs): pass
 	def configure(self, *args, **kwargs): pass
 	correctionSpeedFactor = property(lambda self: None)
 	cruiseSignals = property(lambda self: None)
@@ -6676,6 +6683,7 @@ def getImageMemory(*args, **kwargs): pass
 def getIsImpassableZoneEnabled(*args, **kwargs): pass
 def getMaterialInfo(*args, **kwargs): pass
 def getMaterialKinds(*args, **kwargs): pass
+def getMaterials(*args, **kwargs): pass
 def getMemoryInfoKB(*args, **kwargs): pass
 def getScaleformMemory(*args, **kwargs): pass
 def getStreamingMemory(*args, **kwargs): pass

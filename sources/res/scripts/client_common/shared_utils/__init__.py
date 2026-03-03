@@ -257,6 +257,9 @@ class AlwaysValidObject(object):
             return self.__dict__[item]
         return AlwaysValidObject(self._makeName(self.__name, item))
 
+    def __getitem__(self, item):
+        return 0
+
     def __call__(self, *args, **kwargs):
         return AlwaysValidObject()
 

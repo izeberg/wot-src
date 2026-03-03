@@ -410,7 +410,7 @@ package net.wg.gui.lobby.settings
          var _loc3_:SettingsControlProp = null;
          var _loc4_:Number = NaN;
          var _loc5_:* = null;
-         var _loc6_:Number = NaN;
+         var _loc6_:int = 0;
          var _loc7_:Boolean = false;
          var _loc8_:Object = null;
          var _loc9_:Number = NaN;
@@ -662,7 +662,7 @@ package net.wg.gui.lobby.settings
          _loc4_.prevVal = [];
          _loc5_.prevVal = [];
          _loc6_.prevVal = [];
-         var _loc7_:Number = 0;
+         var _loc7_:int = 0;
          while(_loc7_ < _loc3_)
          {
             _loc4_.prevVal[_loc7_] = _loc7_ == _loc2_ ? _loc4_.changedVal : 0;

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, weakref
 from account_helpers.settings_core import settings_constants
 from frameworks.wulf import WindowStatus

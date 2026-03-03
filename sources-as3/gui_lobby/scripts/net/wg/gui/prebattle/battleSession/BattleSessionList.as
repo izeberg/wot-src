@@ -5,10 +5,9 @@ package net.wg.gui.prebattle.battleSession
    import net.wg.gui.components.controls.ScrollBar;
    import net.wg.gui.components.controls.ScrollingListEx;
    import net.wg.gui.events.ListEventEx;
-   import net.wg.gui.events.MessengerBarEvent;
-   import net.wg.gui.lobby.messengerBar.WindowGeometryInBar;
    import net.wg.gui.prebattle.meta.IBattleSessionListMeta;
    import net.wg.gui.prebattle.meta.impl.BattleSessionListMeta;
+   import net.wg.infrastructure.base.DefaultWindowGeometry;
    import net.wg.infrastructure.events.FocusRequestEvent;
    import scaleform.clik.constants.ConstrainMode;
    import scaleform.clik.data.DataProvider;
@@ -77,7 +76,7 @@ package net.wg.gui.prebattle.battleSession
          addEventListener(FocusRequestEvent.REQUEST_FOCUS,this.onRequestFocusHandler);
          window.setTitleIcon(TEAM_LIST);
          window.title = CHAT.CHANNELS_SPECIAL_BATTLES;
-         geometry = new WindowGeometryInBar(MessengerBarEvent.PIN_CAROUSEL_WINDOW,getClientIDS());
+         geometry = new DefaultWindowGeometry();
       }
       
       override protected function refreshList(param1:DataProvider) : void

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing, BigWorld
 from account_helpers.settings_core.settings_constants import GRAPHICS
 from constants import ARENA_PERIOD

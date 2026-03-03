@@ -109,6 +109,10 @@ package net.wg.gui.components.controls
          downArrow.y = _loc1_;
          track.y = upArrow.y + upArrow.height;
          track.height = _loc1_ - track.y - downArrow.height;
+         if(track is UIComponent)
+         {
+            track.validateNow();
+         }
       }
       
       [Inspectable(defaultValue="20",type="Number")]

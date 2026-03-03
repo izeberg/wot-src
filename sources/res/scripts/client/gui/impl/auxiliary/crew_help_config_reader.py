@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import resource_helper
 from functools import reduce
 from operator import attrgetter

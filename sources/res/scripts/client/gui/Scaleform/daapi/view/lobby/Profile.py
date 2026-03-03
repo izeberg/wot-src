@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.Scaleform.daapi import LobbySubView
 
 class Profile(LobbySubView):

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from collections import namedtuple
 import BigWorld
 from gui.Scaleform.daapi.view.battle.shared.radial_menu import RadialMenu

@@ -470,46 +470,6 @@
 			</value>
 		</item>
 		<item>
-			<name>SessionStatsOpenBtn</name>
-			<type>dict</type>
-			<value>
-				<item>
-					<name>view</name>
-					<value>lobby</value>
-				</item>
-				<item>
-					<name>path</name>
-					<value>messengerBar.sessionStatsBtn.button</value>
-				</item>
-				<item>
-					<name>padding</name>
-					<type>dict</type>
-					<value>
-						<item>
-							<name>left</name>
-							<type>float</type>
-							<value>0</value>
-						</item>
-						<item>
-							<name>top</name>
-							<type>float</type>
-							<value>2</value>
-						</item>
-						<item>
-							<name>right</name>
-							<type>float</type>
-							<value>1</value>
-						</item>
-						<item>
-							<name>bottom</name>
-							<type>float</type>
-							<value>3</value>
-						</item>
-					</value>
-				</item>
-			</value>
-		</item>
-		<item>
 			<name>SessionStatsSettingsBtn</name>
 			<type>dict</type>
 			<value>
@@ -3183,25 +3143,6 @@
 				<item>
 					<name>name</name>
 					<value>tutorial.control.sales.commands.configureShopForShells</value>
-				</item>
-				<item>
-					<name>args</name>
-					<type>list</type>
-					<value/>
-				</item>
-			</value>
-		</command>
-		<command>
-			<name>OpenCalendar</name>
-			<type>dict</type>
-			<value>
-				<item>
-					<name>type</name>
-					<value>invoke-method</value>
-				</item>
-				<item>
-					<name>name</name>
-					<value>tutorial.control.sales.commands.showAdventCalendarFromAction</value>
 				</item>
 				<item>
 					<name>args</name>

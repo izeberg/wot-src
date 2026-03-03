@@ -1280,9 +1280,6 @@ msgstr "Battle Pass Points removed"
 msgid "platformCurrencyMsg/debited/bptaler"
 msgstr "Chips removed"
 
-msgid "platformCurrencyMsg/debited/brcoin"
-msgstr "Steel Seals removed"
-
 msgid "platformCurrencyMsg/debited/clanvehiclecoin"
 msgstr "Maneuvers Tokens removed"
 
@@ -1306,9 +1303,6 @@ msgstr "Battle Pass Points added"
 
 msgid "platformCurrencyMsg/received/bptaler"
 msgstr "Chips added"
-
-msgid "platformCurrencyMsg/received/brcoin"
-msgstr "Steel Seals added"
 
 msgid "platformCurrencyMsg/received/clanvehiclecoin"
 msgstr "Maneuvers Tokens added"
@@ -1568,15 +1562,6 @@ msgid "serviceChannelMessages/BRVehiclesInvoice/descr"
 msgstr ""
 "These are special vehicles for Steel Hunter. Enter Steel Hunter to find out "
 "what these vehicles are capable of."
-
-msgid "serviceChannelMessages/BRbattleResults/BRProgressionTitle"
-msgstr "Progression Points received: %(value)s"
-
-msgid "serviceChannelMessages/BRbattleResults/battlePass"
-msgstr "Battle Pass Points received: %(pointsDiff)s"
-
-msgid "serviceChannelMessages/BRbattleResults/battleRoyaleBrCoin"
-msgstr "Steel Seals received: %(value)s"
 
 msgid "serviceChannelMessages/BRbattleResults/ended"
 msgstr "Vehicle destroyed"
@@ -1899,6 +1884,9 @@ msgstr ""
 "You completed Progression Stage %(newLevel)s of the %(chapter)s Chapter.\n"
 "Reward received:"
 
+msgid "serviceChannelMessages/battlePassReward/breakLine"
+msgstr "<br/>"
+
 msgid "serviceChannelMessages/battlePassReward/button"
 msgstr "Details"
 
@@ -1912,6 +1900,9 @@ msgid "serviceChannelMessages/battlePassReward/buyBPWithLevels/text"
 msgstr ""
 "You have purchased the Improved Pass and all Stages for the %(chapter)s Chapter.\n"
 "Rewards received for all Stages of the Chapter:"
+
+msgid "serviceChannelMessages/battlePassReward/buyMultiple/starterPack"
+msgstr "You received a bonus for purchasing the Improved Passes:"
 
 msgid "serviceChannelMessages/battlePassReward/buyMultiple/text"
 msgstr ""
@@ -1927,16 +1918,23 @@ msgstr ""
 "You reached Stage %(currentLevel)s.\n"
 "Rewards received:"
 
+msgid "serviceChannelMessages/battlePassReward/buySingle/starterPack"
+msgstr "You received a bonus for purchasing the Improved Pass:"
+
 msgid "serviceChannelMessages/battlePassReward/buyWithRewards/additionalText"
 msgstr "This Improved Pass only applies to the %(chapter)s Chapter."
 
 msgid "serviceChannelMessages/battlePassReward/buyWithRewards/text"
 msgstr "You received rewards for the previously completed Battle Pass Stages:"
 
+msgid ""
+"serviceChannelMessages/battlePassReward/buyWithoutRewards/additionalText"
+msgstr "This Improved Pass works only for the %(chapter)s Chapter."
+
 msgid "serviceChannelMessages/battlePassReward/buyWithoutRewards/text"
 msgstr ""
-"You will now receive rewards from both the Base and Improved Reward Tracks in the %(chapter)s Chapter.\n"
-"This Improved Pass works only for the %(chapter)s Chapter."
+"You will now receive rewards from both the Base and Improved Reward Tracks "
+"in the %(chapter)s Chapter."
 
 msgid "serviceChannelMessages/battlePassReward/header/autoSelectReward"
 msgstr "Default Reward Added:"
@@ -2489,7 +2487,7 @@ msgid "serviceChannelMessages/currencyUpdate/financial_transaction"
 msgstr "Financial Transaction"
 
 msgid "serviceChannelMessages/currencyUpdate/integratedAuction"
-msgstr "Benedict's Special Offers"
+msgstr "Auction"
 
 msgid "serviceChannelMessages/currencyUpdate/received/bpcoin"
 msgstr "Tokens received"
@@ -2667,8 +2665,8 @@ msgstr ""
 
 msgid "serviceChannelMessages/fairplayViolation/text/penalty"
 msgstr ""
-"You are deprived of credits, XP, and rewards earned in battle for %(reason)s"
-" in the %(mode)s mode."
+"Your credits, XP, and rewards earned in battle have been removed for "
+"%(reason)s in the %(mode)s mode."
 
 msgid "serviceChannelMessages/fairplayViolation/text/warning"
 msgstr "You received a warning for %(reason)s in the %(mode)s mode."
@@ -3281,6 +3279,21 @@ msgstr "Reserves to expire: "
 msgid "serviceChannelMessages/personalReservesSoonExpire/title"
 msgstr "Expirable Reserves about to be lost"
 
+msgid "serviceChannelMessages/petSystem/events/creditsReceived"
+msgstr "Credits Received: %(credits)s"
+
+msgid "serviceChannelMessages/petSystem/events/date"
+msgstr "Date: %(date)s"
+
+msgid "serviceChannelMessages/petSystem/events/financial_transaction"
+msgstr "Financial Transaction:"
+
+msgid "serviceChannelMessages/petSystem/events/itemsReceived"
+msgstr "Added to Depot: %(item)s"
+
+msgid "serviceChannelMessages/petSystem/events/receipt"
+msgstr "Receipt"
+
 msgid "serviceChannelMessages/piggyBank/continueAfterSmashed"
 msgstr "New accumulation cycle started."
 
@@ -3617,6 +3630,15 @@ msgstr "The game server will be disconnected at %(date)s."
 
 msgid "serviceChannelMessages/serverRebootCancelled"
 msgstr "Server disconnection canceled, disconnection planned at %(date)s."
+
+msgid "serviceChannelMessages/serviceRecordCustomization/available/title"
+msgstr "Service Record Customization is available"
+
+msgid "serviceChannelMessages/serviceRecordCustomization/unavailable/text"
+msgstr "This feature has been suspended."
+
+msgid "serviceChannelMessages/serviceRecordCustomization/unavailable/title"
+msgstr "Service Record Customization is currently unavailable"
 
 msgid "serviceChannelMessages/specialReward/intelligenceBlueprints"
 msgstr "Universal fragment (x%(fragmentsCount)s)"
@@ -3955,6 +3977,15 @@ msgstr "Select"
 msgid "serviceChannelMessages/winbackSelectableRewardEntry/header"
 msgstr "Rewards Received!"
 
+msgid "serviceChannelMessages/wotPlus/battlePass/isDisabled/text"
+msgstr "Battle Pass Plus benefits have been suspended."
+
+msgid "serviceChannelMessages/wotPlus/battlePass/isDisabled/title"
+msgstr "Battle Pass Plus is currently unavailable"
+
+msgid "serviceChannelMessages/wotPlus/battlePass/isEnabled/title"
+msgstr "Battle Pass Plus is available"
+
 msgid ""
 "serviceChannelMessages/wotPlus/dailyAttendanceRewarded/big/cycleEnded/endText"
 msgstr "Continue logging in to the game to get more rewards!"
@@ -4003,14 +4034,20 @@ msgstr ""
 "The <font color='#E9E2BF'>%(vehicleName)s</font> %(vehicleType)s, exclusive "
 "to WoT Plus, is currently not available."
 
+msgid "serviceChannelMessages/wotPlus/expireCoreMessage/title"
+msgstr "WoT Plus Core expired on %(time)s"
+
 msgid "serviceChannelMessages/wotPlus/expireFreeDemount/title"
 msgstr "Free equipment demounting is unavailable"
 
 msgid "serviceChannelMessages/wotPlus/expireMessage/text"
-msgstr "Extend WoT Plus to get all the benefits."
+msgstr "Extend WoT Plus to get all the benefits again."
 
 msgid "serviceChannelMessages/wotPlus/expireMessage/title"
 msgstr "WoT Plus expired on %(time)s"
+
+msgid "serviceChannelMessages/wotPlus/expireProMessage/title"
+msgstr "WoT Plus Pro expired on %(time)s"
 
 msgid "serviceChannelMessages/wotPlus/goldReserve/isDisabled/text"
 msgstr "Gold accumulation has been suspended."
@@ -4029,8 +4066,27 @@ msgstr "Gold Reserve Opened!"
 
 msgid "serviceChannelMessages/wotPlus/nextDateOfRenewal"
 msgstr ""
-"Now, all benefits are available.\n"
-"Next extension: <font color='#E9E2BF'>%(time)s</font>"
+"All benefits are now available.\n"
+"Extends on: <font color='#E9E2BF'>%(time)s</font>"
+
+msgid "serviceChannelMessages/wotPlus/nextDateOfRenewalChange"
+msgstr "Extends again on: <font color='#E9E2BF'>%(time)s</font>"
+
+msgid "serviceChannelMessages/wotPlus/nextDateOfRenewalPro"
+msgstr "Your 180-day plan is now active. Enjoy!"
+
+msgid "serviceChannelMessages/wotPlus/nextDateOfRenewalProYearly"
+msgstr "Your 360-day plan is now active. Enjoy!"
+
+msgid "serviceChannelMessages/wotPlus/nextDateOfUnlockPro"
+msgstr ""
+"Your 180-day plan is now active. Enjoy!\n"
+"Extends on: <font color='#E9E2BF'>%(time)s</font>"
+
+msgid "serviceChannelMessages/wotPlus/nextDateOfUnlockProYearly"
+msgstr ""
+"Your 360-day plan is now active. Enjoy!\n"
+"Extends on: <font color='#E9E2BF'>%(time)s</font>"
 
 msgid "serviceChannelMessages/wotPlus/passiveXP/allCrewAreVeterans/text"
 msgstr ""
@@ -4081,8 +4137,37 @@ msgstr "The Crew XP bonus cannot be applied to one or more crew members."
 msgid "serviceChannelMessages/wotPlus/passiveXP/wasting/title"
 msgstr "You are missing out on valuable Crew XP!"
 
+msgid "serviceChannelMessages/wotPlus/proBoost/isActivated/text"
+msgstr "You can change your choice again in %(cooldown)s hours."
+
+msgid "serviceChannelMessages/wotPlus/proBoost/isActivated/title"
+msgstr "Pro Boost activated for the %(vehicleName)s"
+
+msgid "serviceChannelMessages/wotPlus/proBoost/isDeactivated/text"
+msgstr "You can boost another vehicle instead."
+
+msgid "serviceChannelMessages/wotPlus/proBoost/isDeactivated/title"
+msgstr "Pro Boost disabled for the %(vehicleName)s"
+
+msgid "serviceChannelMessages/wotPlus/proBoost/isDisabled/text"
+msgstr "Pro Boost earnings have been suspended."
+
+msgid "serviceChannelMessages/wotPlus/proBoost/isDisabled/title"
+msgstr "Pro Boost is currently unavailable"
+
+msgid "serviceChannelMessages/wotPlus/proBoost/isEnabled/title"
+msgstr "Pro Boost is available"
+
+msgid "serviceChannelMessages/wotPlus/proBoost/switch/text"
+msgstr ""
+"%(vehicleNameFrom)s is no longer boosted. You can change your choice again "
+"in %(cooldown)s hours."
+
+msgid "serviceChannelMessages/wotPlus/proBoost/switch/title"
+msgstr "Pro Boost switched to the %(vehicleNameTo)s"
+
 msgid "serviceChannelMessages/wotPlus/renewMessage/title"
-msgstr "WoT Plus extended on %(time)s"
+msgstr "WoT Plus Extension Date Changed"
 
 msgid "serviceChannelMessages/wotPlus/rental/noTank/text"
 msgstr "Select a vehicle from the list to rent."
@@ -4097,16 +4182,28 @@ msgid "serviceChannelMessages/wotPlus/tankRental/isPending/title"
 msgstr "Rented!"
 
 msgid "serviceChannelMessages/wotPlus/unavailableMessage/text"
-msgstr "WoT Plus benefits are disabled."
+msgstr "These benefits are disabled."
 
 msgid "serviceChannelMessages/wotPlus/unavailableMessage/title"
 msgstr "WoT Plus Unavailable"
+
+msgid "serviceChannelMessages/wotPlus/unlockCoreMessage/title"
+msgstr "WoT Plus Core Activated"
 
 msgid "serviceChannelMessages/wotPlus/unlockFreeDemount/title"
 msgstr "Free equipment demounting is available"
 
 msgid "serviceChannelMessages/wotPlus/unlockMessage/title"
-msgstr "World of Tanks Plus Activated"
+msgstr "WoT Plus Activated"
+
+msgid "serviceChannelMessages/wotPlus/unlockProMessage/title"
+msgstr "WoT Plus Pro"
+
+msgid "serviceChannelMessages/wotPlus/upgradeMessage/title"
+msgstr "WoT Plus upgraded to Pro!"
+
+msgid "serviceChannelMessages/wotPlusExtend/button"
+msgstr "Extend"
 
 msgid "serviceChannelMessages/xpReceivedAsGift"
 msgstr "You have been granted %(freeXP)s Free Experience."

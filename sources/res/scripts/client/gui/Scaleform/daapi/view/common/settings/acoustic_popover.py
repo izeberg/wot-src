@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from debug_utils import LOG_ERROR
 from gui.Scaleform.daapi.view.common.settings import acoustic_presets
 from gui.Scaleform.daapi.view.meta.AcousticPopoverMeta import AcousticPopoverMeta

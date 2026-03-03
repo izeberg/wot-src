@@ -1,15 +1,13 @@
 package net.wg.gui.messenger.meta.impl
 {
    import net.wg.data.constants.Errors;
-   import net.wg.gui.lobby.messengerBar.MessengerChannelCarouselItem;
+   import net.wg.infrastructure.base.AbstractWindowView;
    
-   public class ChannelWindowMeta extends MessengerChannelCarouselItem
+   public class ChannelWindowMeta extends AbstractWindowView
    {
        
       
       public var showFAQWindow:Function;
-      
-      public var getClientID:Function;
       
       public function ChannelWindowMeta()
       {
@@ -20,12 +18,6 @@ package net.wg.gui.messenger.meta.impl
       {
          App.utils.asserter.assertNotNull(this.showFAQWindow,"showFAQWindow" + Errors.CANT_NULL);
          this.showFAQWindow();
-      }
-      
-      public function getClientIDS() : Number
-      {
-         App.utils.asserter.assertNotNull(this.getClientID,"getClientID" + Errors.CANT_NULL);
-         return this.getClientID();
       }
    }
 }

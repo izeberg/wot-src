@@ -61,6 +61,9 @@ msgstr "A-220B/78"
 msgid "A_220B_79"
 msgstr "A-220B/79"
 
+msgid "A_220R"
+msgstr "A 220R"
+
 msgid "A_220_70"
 msgstr "A-220-70"
 
@@ -1410,6 +1413,35 @@ msgstr "First Warrior"
 msgid "Ch65_Type59_IC4_3DSt_short_special"
 msgstr "Decent frontal armor, preferential matchmaking"
 
+msgid "Ch66_121_2_Ziqiang"
+msgstr "Ziqiang"
+
+msgid "Ch66_121_2_Ziqiang_desc"
+msgstr ""
+"After the Korean War, the PLA received trophy American and British M46 "
+"Patton and Centurion tanks. At the same time, Chinese engineers were ordered"
+" to build a vehicle that could exceed the performance of Western "
+"counterparts. By the late 1950s, several projects were ready, one of which "
+"was named the Ziqiang. It broadly incorporated Soviet and American tank-"
+"building innovations. After considering the projects, the PLA leadership "
+"decided to develop the mass-produced Type 59 and re-target the Ziqiang for "
+"export, equipping it with guns of NATO states. However, in the absence of "
+"any orders, no prototype was built."
+
+msgid "Ch66_121_2_Ziqiang_long_special"
+msgstr ""
+"The Ziqiang is a Tier IX Chinese assault medium tank. It is equipped with a "
+"two-round autoloader, but both shells are housed in a single container. When"
+" firing, the tank releases both shells with a short delay between them. In "
+"addition to its unique gun, the vehicle boasts reliable armor, a high rate "
+"of fire, and good gun handling."
+
+msgid "Ch66_121_2_Ziqiang_short"
+msgstr "Ziqiang"
+
+msgid "Ch66_121_2_Ziqiang_short_special"
+msgstr "Reliable armor, autoloader with container"
+
 msgid "Ch67_BZ_79"
 msgstr "BZ-79"
 
@@ -1766,6 +1798,9 @@ msgstr "Yong Bing"
 msgid "Chassis_Ch65_Type59_IC4_3DSt"
 msgstr "IC4"
 
+msgid "Chassis_Ch66_121_2_Ziqiang"
+msgstr "Ziqiang"
+
 msgid "Chassis_Ch67_BZ_79"
 msgstr "BZ-79"
 
@@ -2057,6 +2092,9 @@ msgstr "Yong Bing"
 
 msgid "Turret_1_Ch65_Type59_IC4_3DSt"
 msgstr "IC4"
+
+msgid "Turret_1_Ch66_121_2_Ziqiang"
+msgstr "Ziqiang"
 
 msgid "Turret_1_Ch67_BZ_79"
 msgstr "BZ-79"
@@ -2483,6 +2521,9 @@ msgstr "12150L3G2"
 
 msgid "_12150L3_131"
 msgstr "12150L3 (131)"
+
+msgid "_12150L3_II"
+msgstr "12150L3 II"
 
 msgid "_12150L4"
 msgstr "12150L4"
@@ -3298,6 +3339,18 @@ msgstr "76 mm ZiS-3"
 
 msgid "_789T"
 msgstr "789T"
+
+msgid "_84_mm_Type_79"
+msgstr "84 mm Type 79"
+
+msgid "_84mm_Chuan_bei_79"
+msgstr "Chuan bei-79"
+
+msgid "_84mm_Po_79"
+msgstr "Po-79"
+
+msgid "_84mm_Sha_bao_79"
+msgstr "Sha bao-79"
 
 msgid "_85mm_367"
 msgstr "Chuan chao-367"

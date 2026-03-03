@@ -3,7 +3,6 @@ import typing, math_utils
 from fun_random.gui.feature.fun_constants import FunSubModesState
 from fun_random.gui.feature.util.fun_mixins import FunAssetPacksMixin, FunProgressionWatcher, FunSubModesWatcher
 from fun_random.gui.feature.util.fun_wrappers import hasActiveProgression, hasAnySubMode, hasMultipleSubModes, avoidSubModesStates
-from fun_random.gui.fun_account_settings import FunSubModeAccountSettings
 from fun_random.gui.impl.gen.view_models.views.lobby.common.fun_random_progression_state import FunRandomProgressionStatus
 from fun_random.gui.impl.lobby.common.fun_view_helpers import defineProgressionStatus
 from fun_random.gui.impl.lobby.common.fun_view_helpers import getFormattedTimeLeft
@@ -20,7 +19,6 @@ from gui.impl.lobby.mode_selector.items.base_item import ModeSelectorLegacyItem
 from gui.impl.lobby.mode_selector.items.items_constants import ModeSelectorRewardID
 from gui.server_events.bonuses import LootBoxTokensBonus
 from helpers import time_utils
-from shared_utils import first
 if typing.TYPE_CHECKING:
     from frameworks.wulf import Array
     from fun_random.gui.feature.models.common import FunSubModesStatus
@@ -66,13 +64,7 @@ class FunRandomSelectorItem(ModeSelectorLegacyItem, FunAssetPacksMixin, FunSubMo
 
     def _isNewLabelVisible(self):
         isEntryPointAvailable = self._funRandomCtrl.subModesInfo.isEntryPointAvailable()
-        hasSuitableVehicle = self._funRandomCtrl.subModesInfo.hasSuitableVehicles()
-        if isEntryPointAvailable:
-            subModes = self.getSubModes()
-            if len(subModes) == 1:
-                accountSettings = FunSubModeAccountSettings(first(subModes).getSettings().client.settingsKey)
-                return accountSettings.isNew() and hasSuitableVehicle
-        return super(FunRandomSelectorItem, self)._isNewLabelVisible() and isEntryPointAvailable and hasSuitableVehicle
+        return super(FunRandomSelectorItem, self)._isNewLabelVisible() and isEntryPointAvailable
 
     def _getModeStringsRoot(self):
         return self.getModeLocalsResRoot().mode_selector

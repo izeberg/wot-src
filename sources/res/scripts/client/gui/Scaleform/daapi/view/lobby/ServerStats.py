@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, BigWorld, constants
 from wg_async import wg_await, wg_async
 from gui.Scaleform.daapi.view.servers_data_provider import ServersDataProvider
@@ -44,14 +45,14 @@ class ServerStats(ServerStatsMeta, ILegacyListener):
         else:
             self.as_changePeripheryFailedS()
 
-    def startListenCsisUpdate(self, startListen):
+    def startListenCsisUpdate(self, startListenCsis):
         if GUI_SETTINGS.csisRequestRate == REQUEST_RATE.ON_REQUEST:
-            if startListen:
+            if startListenCsis:
                 g_preDefinedHosts.startCSISUpdate()
             else:
                 g_preDefinedHosts.stopCSISUpdate()
                 self._updateServersList()
-        if startListen:
+        if startListenCsis:
             g_preDefinedHosts.requestPing(True)
 
     def _populate(self):

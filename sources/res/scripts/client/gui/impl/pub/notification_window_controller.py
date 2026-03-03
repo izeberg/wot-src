@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, typing, BigWorld, Event
 from PlayerEvents import g_playerEvents
 from frameworks.wulf import WindowStatus, WindowLayer

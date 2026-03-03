@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, weakref, GUI, Math, SoundGroups
 from AvatarInputHandler import AvatarInputHandler
 from gui.Scaleform.daapi.view.battle.shared.map_zones.minimap import MapZonesEntriesPlugin
@@ -47,8 +48,8 @@ class MinimapComponent(MinimapMeta, IMinimapComponent):
         self.__plugins = None
         return
 
-    def onMinimapClicked(self, x, y, buttonIdx, minimapScaleIndex):
-        self.__plugins.onMinimapClicked(x, y, buttonIdx, minimapScaleIndex)
+    def onMinimapClicked(self, x, y, buttonIdx, mapScaleIndex):
+        self.__plugins.onMinimapClicked(x, y, buttonIdx, mapScaleIndex)
 
     def applyNewSize(self, sizeIndex):
         if self.__plugins is not None:

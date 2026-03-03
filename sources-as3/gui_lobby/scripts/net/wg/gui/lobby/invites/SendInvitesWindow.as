@@ -535,7 +535,7 @@ package net.wg.gui.lobby.invites
       private function hasUserInReceiverList(param1:Number) : Boolean
       {
          var _loc2_:uint = this._receiverData.length;
-         var _loc3_:Number = 0;
+         var _loc3_:int = 0;
          while(_loc3_ < _loc2_)
          {
             if(ContactItemVO(this._receiverData[_loc3_]).dbID == param1)

@@ -258,6 +258,7 @@ __name__ = 'ResMgr'
 __package__ = None
 def activeContentType(*args, **kwargs): pass
 def appDirectory(*args, **kwargs): pass
+def findFirstPathOccurrence(*args, **kwargs): pass
 def getFilename(*args, **kwargs): pass
 def isDir(*args, **kwargs): pass
 def isFile(*args, **kwargs): pass

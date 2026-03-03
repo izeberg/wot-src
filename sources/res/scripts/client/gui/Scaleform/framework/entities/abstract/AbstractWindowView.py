@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.Scaleform.daapi.view.meta.WindowViewMeta import WindowViewMeta
 
 class AbstractWindowView(WindowViewMeta):

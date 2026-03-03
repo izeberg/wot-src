@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from frameworks.wulf import GuiApplication
 from gui.impl.optimization_manager import GraphicsOptimizationManager
@@ -27,6 +28,10 @@ class GuiLoader(IGuiLoader):
     @property
     def systemLocale(self):
         return self.__gui.systemLocale
+
+    @property
+    def formatters(self):
+        return self.__gui.formatters
 
     @property
     def tutorial(self):

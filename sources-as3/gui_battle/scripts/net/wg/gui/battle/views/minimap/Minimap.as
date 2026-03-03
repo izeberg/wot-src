@@ -72,13 +72,13 @@ package net.wg.gui.battle.views.minimap
          this._clickAreaSpr = new Sprite();
          super();
          this._foregrounds = new <Sprite>[this.foreground0,this.foreground1,this.foreground2,this.foreground3,this.foreground4,this.foreground5];
+         this.foreground0.visible = this.foreground1.visible = this.foreground2.visible = this.foreground3.visible = this.foreground4.visible = this.foreground5.visible = false;
          this.foreground0.imageName = BATTLEATLAS.MINIMAP_B1;
          this.foreground1.imageName = BATTLEATLAS.MINIMAP_B2;
          this.foreground2.imageName = BATTLEATLAS.MINIMAP_B3;
          this.foreground3.imageName = BATTLEATLAS.MINIMAP_B4;
          this.foreground4.imageName = BATTLEATLAS.MINIMAP_B5;
          this.foreground5.imageName = BATTLEATLAS.MINIMAP_B6;
-         this.foreground0.visible = this.foreground1.visible = this.foreground2.visible = this.foreground3.visible = this.foreground4.visible = this.foreground5.visible = false;
          this._currForeground = this.foreground0;
          this.entriesContainer.mask = this.entriesContainerMask;
          this._clickAreaSpr.name = NAME_CLICK_AREA;
@@ -277,7 +277,7 @@ package net.wg.gui.battle.views.minimap
       private function createScenarioLayer() : void
       {
          this._scenarioLayer = App.utils.classFactory.getComponent(Linkages.MINIMAP_SCENARIO_LAYOUT,ScenarioLayer);
-         addChildAt(this._scenarioLayer,getChildIndex(this.foreground0) + 1);
+         addChildAt(this._scenarioLayer,getChildIndex(this.background) + 1);
          this._scenarioLayer.x = this.background.x;
          this._scenarioLayer.y = this.background.y;
          this._scenarioLayer.updateSize(this.background.width,this.background.height);

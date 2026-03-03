@@ -1,20 +1,8 @@
 from __future__ import absolute_import
-import constants
 from fun_random.gui.feature.util.fun_mixins import FunAssetPacksMixin, FunSubModesWatcher
 from fun_random.gui.feature.util.fun_wrappers import hasDesiredSubMode
 from gui.Scaleform.daapi.view.lobby.battle_queue.battle_queue import RandomQueueProvider
 from gui.impl import backport
-from gui.Scaleform.locale.ITEM_TYPES import ITEM_TYPES
-from gui.shared.gui_items.Vehicle import getTypeBigIconPath
-TYPES_ORDERED = (
- (
-  'heavyTank', ITEM_TYPES.VEHICLE_TAGS_HEAVY_TANK_NAME),
- (
-  'mediumTank', ITEM_TYPES.VEHICLE_TAGS_MEDIUM_TANK_NAME),
- (
-  'lightTank', ITEM_TYPES.VEHICLE_TAGS_LIGHT_TANK_NAME),
- (
-  'AT-SPG', ITEM_TYPES.VEHICLE_TAGS_AT_SPG_NAME))
 
 class FunRandomQueueProvider(RandomQueueProvider, FunAssetPacksMixin, FunSubModesWatcher):
 
@@ -25,24 +13,17 @@ class FunRandomQueueProvider(RandomQueueProvider, FunAssetPacksMixin, FunSubMode
         return self.__getTitle() or self.getModeUserName()
 
     def processQueueInfo(self, qInfo):
-        info = dict(qInfo)
-        if 'classes' in info:
-            vClasses = info['classes']
-            vClassesLen = len(vClasses)
-        else:
-            vClasses = []
-            vClassesLen = 0
-        self._createCommonPlayerString(sum(vClasses))
-        if vClassesLen > 0:
-            vClassesData = []
-            for vClass, message in TYPES_ORDERED:
-                idx = constants.VEHICLE_CLASS_INDICES[vClass]
-                vClassesData.append({'type': message, 
-                   'icon': getTypeBigIconPath(vClass), 
-                   'count': vClasses[idx] if idx < vClassesLen else 0})
+        super(FunRandomQueueProvider, self).processQueueInfo(qInfo or {})
 
-            self._proxy.as_setDPS(vClassesData)
-        self._proxy.as_showStartS(self._isStartButtonDisplayed(vClasses))
+    @hasDesiredSubMode(defReturn=False)
+    def needAdditionalInfo(self):
+        if self._needAdditionalInfo is not None:
+            return self._needAdditionalInfo
+        else:
+            hasBattleQueueWarning = self.getDesiredSubMode().getConfigurationModel().subMode.hasBattleQueueWarning
+            if not hasBattleQueueWarning:
+                self._needAdditionalInfo = False
+            return super(FunRandomQueueProvider, self).needAdditionalInfo()
 
     @hasDesiredSubMode()
     def _doRequestQueueInfo(self, currPlayer):

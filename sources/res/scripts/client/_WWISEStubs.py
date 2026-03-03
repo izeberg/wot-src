@@ -3,13 +3,13 @@ import typing, Math
 class Sound:
 
     def __init__(self, *args, **kwargs):
-        raise TypeError, 'WWISE.Sound is abstract and cannot be directly instanced.'
+        raise TypeError('WWISE.Sound is abstract and cannot be directly instanced.')
 
 
 class SoundParameter:
 
     def __init__(self, *args, **kwargs):
-        raise TypeError, 'WWISE.SoundParameter is abstract and cannot be directly instanced.'
+        raise TypeError('WWISE.SoundParameter is abstract and cannot be directly instanced.')
 
 
 class EventCategory:

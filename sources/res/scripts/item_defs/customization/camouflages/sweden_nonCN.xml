@@ -20,6 +20,9 @@
 			<include>
 				<nations>sweden</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<camouflage>
 			<id>15806</id>
@@ -177,6 +180,9 @@
 			<include>
 				<nations>sweden</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<camouflage>
 			<id>15809</id>
@@ -342,6 +348,9 @@
 			<include>
 				<nations>sweden</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<camouflage>
 			<id>15807</id>
@@ -511,6 +520,9 @@
 			<include>
 				<nations>sweden</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<camouflage>
 			<id>15808</id>
@@ -680,6 +692,9 @@
 			<include>
 				<nations>sweden</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<camouflage>
 			<id>15810</id>

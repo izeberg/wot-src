@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A170_M_VII_Y/normal/lod1/Turret_01</nodefullVisual>
+	<parent>vehicles/american/A170_M_VII_Y/normal/lod2/Turret_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.430728 -0.025484 -3.152021</min>
+		<max>1.463839 1.507266 1.729050</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

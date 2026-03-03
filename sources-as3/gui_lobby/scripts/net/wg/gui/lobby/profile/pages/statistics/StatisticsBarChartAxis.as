@@ -66,7 +66,7 @@ package net.wg.gui.lobby.profile.pages.statistics
          {
             return;
          }
-         var _loc3_:Number = renderers.length;
+         var _loc3_:int = renderers.length;
          var _loc4_:int = 0;
          while(_loc4_ < _loc3_)
          {

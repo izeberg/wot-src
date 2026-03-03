@@ -1,11 +1,12 @@
+from __future__ import absolute_import
 from gui.shared.system_factory import CollectEventsManager
 
 class FunFactoryConstants(object):
-    PRESETS_CONFIG = 0
-    SUB_MODE = 1
-    BATTLE_RESULTS_SUB_FORMATTER = 2
-    BATTLE_RESULTS_PRESENTER = 3
-    HANGAR_COMPONENTS = 4
+    SUB_MODE = 0
+    BATTLE_RESULTS_SUB_FORMATTER = 1
+    BATTLE_RESULTS_SUB_PRESENTER = 2
+    BATTLE_RESULTS_SOUND_ENV = 3
+    MODE_ASSETS_PACK_CONFIG_PATH = 4
 
 
 __collectFunRandomEM = CollectEventsManager()
@@ -23,21 +24,6 @@ def collectFunRandomSubMode(subModeImpl):
      FunFactoryConstants.SUB_MODE, subModeImpl), {}).get(subModeImpl)
 
 
-def registerFunBattleResultsPresenter(subModeImpl, presenterCls, layoutID=None):
-
-    def onCollect(ctx):
-        ctx[subModeImpl] = (
-         presenterCls, layoutID)
-
-    __collectFunRandomEM.addListener((FunFactoryConstants.BATTLE_RESULTS_PRESENTER, subModeImpl), onCollect)
-
-
-def collectFunBattleResultsPresenter(subModeImpl):
-    return __collectFunRandomEM.handleEvent((
-     FunFactoryConstants.BATTLE_RESULTS_PRESENTER, subModeImpl), {}).get(subModeImpl, (None,
-                                                                                       None))
-
-
 def registerBattleResultsMessageSubFormatter(arenaGuiType, battleResultsFormatterCls):
 
     def onCollect(ctx):
@@ -51,14 +37,40 @@ def collectBattleResultsMessageSubFormatter(arenaGuiType):
      FunFactoryConstants.BATTLE_RESULTS_SUB_FORMATTER, arenaGuiType), ctx={}).get('battleResultsSubFormatter')
 
 
-def registerFunHangarComponent(subModeImpl, alias, presenterClass):
+def registerBattleResultsSubPresenter(subModeImpl, subPresenterCls, viewCls):
 
     def onCollect(ctx):
-        ctx[alias] = presenterClass
+        ctx['battleResultsSubPresenters'][subModeImpl] = (
+         subPresenterCls, viewCls)
 
-    __collectFunRandomEM.addListener((FunFactoryConstants.HANGAR_COMPONENTS, subModeImpl, alias), onCollect)
+    __collectFunRandomEM.addListener(FunFactoryConstants.BATTLE_RESULTS_SUB_PRESENTER, onCollect)
 
 
-def collectFunHangarComponent(subModeImpl, alias, default=None):
+def collectBattleResultsSubPresenters():
+    return __collectFunRandomEM.handleEvent(FunFactoryConstants.BATTLE_RESULTS_SUB_PRESENTER, {'battleResultsSubPresenters': {}})['battleResultsSubPresenters']
+
+
+def registerBattleResultsSoundEnv(arenaGuiType, battleResultsSoundEnvCls):
+
+    def onCollect(ctx):
+        ctx['battleResultsSoundEnv'] = battleResultsSoundEnvCls
+
+    __collectFunRandomEM.addListener((FunFactoryConstants.BATTLE_RESULTS_SOUND_ENV, arenaGuiType), onCollect)
+
+
+def collectBattleResultsSoundEnv(arenaGuiType):
     return __collectFunRandomEM.handleEvent((
-     FunFactoryConstants.HANGAR_COMPONENTS, subModeImpl, alias), {}).get(alias, default)
+     FunFactoryConstants.BATTLE_RESULTS_SOUND_ENV, arenaGuiType), ctx={}).get('battleResultsSoundEnv')
+
+
+def registerModeAssetsPackConfigPath(assetsPointer, path):
+
+    def onCollect(ctx):
+        ctx['modeAssetsPackConfigPath'] = path
+
+    __collectFunRandomEM.addListener((FunFactoryConstants.MODE_ASSETS_PACK_CONFIG_PATH, assetsPointer), onCollect)
+
+
+def collectModeAssetsPackConfigPath(assetsPointer):
+    return __collectFunRandomEM.handleEvent((
+     FunFactoryConstants.MODE_ASSETS_PACK_CONFIG_PATH, assetsPointer), ctx={}).get('modeAssetsPackConfigPath', '')

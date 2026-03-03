@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.385695 -0.030261 -2.769056</min>
+		<max>1.307992 2.313737 1.618879</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/american/A69_T110E5/_skins/A69_T110E5_BPXIX_3Dst/crash/lod2/Turret_01</nodefullVisual>
+	<parent>vehicles/american/A69_T110E5/_skins/A69_T110E5_BPXIX_3Dst/crash/lod3/Turret_01</parent>
+	<extent>96.000000</extent>
+</root>

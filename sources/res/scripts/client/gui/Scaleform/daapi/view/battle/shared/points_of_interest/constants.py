@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.Scaleform.genConsts.POI_CONSTS import POI_CONSTS
 from points_of_interest_shared import PoiStatus, PoiType
 POI_TYPE_UI_MAPPING = {PoiType.ARTILLERY: POI_CONSTS.POI_TYPE_ARTILLERY, 

@@ -885,13 +885,13 @@
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
 		<node>Track_R5_BlendBone</node>
+		<node>V_BlendBone</node>
 		<node>Track_R4_BlendBone</node>
 		<node>Track_R3_BlendBone</node>
 		<node>Track_R2_BlendBone</node>
 		<node>Track_R1_BlendBone</node>
 		<node>Track_R0_BlendBone</node>
 		<node>Track_VD_R0_BlendBone</node>
-		<node>V_BlendBone</node>
 		<node>Track_VD_R1_BlendBone</node>
 		<geometry>
 			<vertices>track_R_Shape.vertices</vertices>
@@ -945,20 +945,20 @@
 						<Vector4>4.208219 1.052055 0.000000 0.000000</Vector4>
 					</property>
 				</material>
-				<groupOrigin>1.331457 0.671893 -0.372505</groupOrigin>
+				<groupOrigin>1.264440 0.052205 -0.969365</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
 		<node>Track_L5_BlendBone</node>
+		<node>V_BlendBone</node>
 		<node>Track_L4_BlendBone</node>
 		<node>Track_L3_BlendBone</node>
 		<node>Track_L2_BlendBone</node>
 		<node>Track_L1_BlendBone</node>
 		<node>Track_L0_BlendBone</node>
 		<node>Track_VD_L0_BlendBone</node>
-		<node>V_BlendBone</node>
 		<node>Track_VD_L1_BlendBone</node>
 		<geometry>
 			<vertices>track_L_Shape.vertices</vertices>
@@ -1016,7 +1016,7 @@
 						<Bool>false</Bool>
 					</property>
 				</material>
-				<groupOrigin>-1.331457 0.671893 -0.372505</groupOrigin>
+				<groupOrigin>-1.583221 0.052205 -0.969365</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import operator, Event
 from adisp import adisp_async, adisp_process
 from exchange.personal_discounts_constants import EXCHANGE_RATE_FREE_XP_NAME, EXCHANGE_RATE_GOLD_NAME, ExchangeDiscountType
@@ -43,21 +44,21 @@ class InfoItemBase(object):
 
     @property
     def itemTypeName(self):
-        raise NotImplementedError()
+        raise NotImplementedError
 
     @property
     def userName(self):
-        raise NotImplementedError()
+        raise NotImplementedError
 
     @property
     def itemTypeID(self):
-        raise NotImplementedError()
+        raise NotImplementedError
 
     def getExtraIconInfo(self):
-        raise NotImplementedError()
+        raise NotImplementedError
 
     def getGUIEmblemID(self):
-        raise NotImplementedError()
+        raise NotImplementedError
 
 
 class _ExchangeSubmitterBase(object):
@@ -117,40 +118,40 @@ class _ExchangeSubmitterBase(object):
         pass
 
     def submit(self, gold, valueToExchange, callback=None):
-        raise NotImplementedError()
+        raise NotImplementedError
 
     def _getType(self):
-        raise NotImplementedError()
+        raise NotImplementedError
 
     def _getInfoItem(self):
-        raise NotImplementedError()
+        raise NotImplementedError
 
     def _getResourceToExchange(self):
-        raise NotImplementedError()
+        raise NotImplementedError
 
     def _getCurrencyIconStr(self):
-        raise NotImplementedError()
+        raise NotImplementedError
 
     def _getNeedItemsType(self):
-        raise NotImplementedError()
+        raise NotImplementedError
 
     def _getCurrencyIconPath(self):
-        raise NotImplementedError()
+        raise NotImplementedError
 
     def _getCurrencyFormat(self):
-        raise NotImplementedError()
+        raise NotImplementedError
 
     def _getColorScheme(self):
-        raise NotImplementedError()
+        raise NotImplementedError
 
     def _getRateToColorScheme(self):
-        raise NotImplementedError()
+        raise NotImplementedError
 
     def _getExchangeRateItemsIcon(self):
-        raise NotImplementedError()
+        raise NotImplementedError
 
     def _getMaxExchangeValue(self):
-        raise NotImplementedError()
+        raise NotImplementedError
 
 
 class _ExchangeRate(object):
@@ -233,7 +234,7 @@ class _ExchangeRate(object):
         return self._getResourceAmountToExchangeForGold(goldAmount)
 
     def getExchangeType(self):
-        raise NotImplementedError()
+        raise NotImplementedError
 
     def _getResourceAmountToExchangeForGold(self, goldAmount):
         return self._exchangeRate.calculateExchange(goldAmount)
@@ -337,7 +338,7 @@ class _ExchangeDialogMeta(I18nConfirmDialogMeta):
            'exchangeBlockData': self._getExchangeBlockData(resToExchange)}
 
     def _getSubmitterType(self):
-        raise NotImplementedError()
+        raise NotImplementedError
 
     def _getSubmitter(self):
         return self.__submitter
@@ -641,7 +642,7 @@ class _ExchangeCreditsSubscriber(object):
         g_clientUpdateManager.removeObjectCallbacks(self)
 
     def _onStatsChanged(self, *args):
-        raise NotImplementedError()
+        raise NotImplementedError
 
 
 class ExchangeCreditsSingleItemMeta(_ExchangeDialogMeta, _ExchangeCreditsSubscriber):
@@ -776,9 +777,9 @@ class _ExchangeXpSubmitter(_ExchangeSubmitterBase, _XpTranslationExchangeRate):
 
     @adisp_async
     @wg_async
-    def submit(self, gold, xpToExchange, callback=None):
+    def submit(self, gold, valueToExchange, callback=None):
         isOk, result, xpExchanged = yield wg_await(showExchangeXPDialogWindow(self.getResourceAmountToExchangeForGold(gold)))
-        if xpExchanged < xpToExchange:
+        if xpExchanged < valueToExchange:
             result = makeError(auxData=[result])
         if callback is not None:
             callback(result if isOk else None)

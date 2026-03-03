@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing, logging, Event
 from gui.impl.gen.view_models.ui_kit.list_model import ListModel
 if typing.TYPE_CHECKING:

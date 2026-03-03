@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import operator
 from soft_exception import SoftException
 from account_helpers.settings_core.settings_constants import GRAPHICS

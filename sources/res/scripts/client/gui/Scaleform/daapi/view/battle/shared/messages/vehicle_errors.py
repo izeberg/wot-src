@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from debug_utils import LOG_DEBUG
 from gui.Scaleform.daapi.view.battle.shared.messages import fading_messages
 

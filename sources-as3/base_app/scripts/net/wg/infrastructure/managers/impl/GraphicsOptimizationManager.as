@@ -134,7 +134,7 @@ package net.wg.infrastructure.managers.impl
          var _loc3_:Boolean = this._lastScaleFactor != App.appScale;
          for(_loc4_ in this._componentsInWork)
          {
-            this.updateComponentReactangle(_loc4_,_loc3_);
+            this.updateComponentRectangle(_loc4_,_loc3_);
          }
          this._lastScaleFactor = App.appScale;
       }
@@ -210,7 +210,7 @@ package net.wg.infrastructure.managers.impl
          }
       }
       
-      private function updateComponentReactangle(param1:IGraphicsOptimizationComponent, param2:Boolean = false) : void
+      private function updateComponentRectangle(param1:IGraphicsOptimizationComponent, param2:Boolean = false) : void
       {
          var _loc10_:Rectangle = null;
          var _loc11_:Rectangle = null;
@@ -257,7 +257,7 @@ package net.wg.infrastructure.managers.impl
       
       private function onGraphicsRectanglesUpdateHandler(param1:Event) : void
       {
-         this.updateComponentReactangle(IGraphicsOptimizationComponent(param1.currentTarget));
+         this.updateComponentRectangle(IGraphicsOptimizationComponent(param1.currentTarget));
       }
    }
 }

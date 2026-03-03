@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, typing
 from functools import wraps
 from gui.Scaleform.daapi.view.meta.InjectComponentMeta import InjectComponentMeta

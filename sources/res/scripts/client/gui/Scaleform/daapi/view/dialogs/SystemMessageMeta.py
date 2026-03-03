@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from collections import namedtuple
 from gui.Scaleform.daapi.view.dialogs import IDialogMeta
 from gui.impl import backport

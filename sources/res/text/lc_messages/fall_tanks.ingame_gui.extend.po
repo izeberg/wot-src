@@ -1,0 +1,29 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-03-24 10:00+0300\n"
+"PO-Revision-Date: 2023-03-24 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "player_messages/DEATH_FROM_FALL_TANKS_FALLING"
+msgstr "%(attacker)s disintegrated %(target)s."
+
+msgid "player_messages/DEATH_FROM_FALL_TANKS_FINISH"
+msgstr "%(target)s has finished."
+
+msgid "player_messages/DEATH_FROM_FALL_TANKS_LEAVER"
+msgstr "%(target)s left the battle."
+
+msgid "player_messages/DEATH_FROM_FALL_TANKS_SUICIDE"
+msgstr "%(target)s disintegrated themselves."
+
+msgid "postmortem_messages/DEATH_FROM_FALL_TANKS_FALLING_ENEMY_SELF"
+msgstr "Vehicle disintegrated by enemy"
+
+msgid "postmortem_messages/DEATH_FROM_FALL_TANKS_FALLING_SELF_SUICIDE"
+msgstr "Vehicle disintegrated"

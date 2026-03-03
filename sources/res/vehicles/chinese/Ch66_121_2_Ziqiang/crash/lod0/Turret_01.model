@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/chinese/Ch66_121_2_Ziqiang/crash/lod0/Turret_01</nodefullVisual>
+	<parent>vehicles/chinese/Ch66_121_2_Ziqiang/crash/lod1/Turret_01</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.390521 -0.105507 -1.500000</min>
+		<max>1.390520 1.366403 1.385578</max>
+	</visibilityBox>
+</root>

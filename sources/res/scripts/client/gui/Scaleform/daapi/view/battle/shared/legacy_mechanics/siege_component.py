@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld
 from gui.shared.utils.TimeInterval import TimeInterval
 from constants import VEHICLE_SIEGE_STATE

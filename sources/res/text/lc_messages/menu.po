@@ -131,9 +131,6 @@ msgstr "Wargaming"
 msgid "accountTypes/subscription"
 msgstr "Premium Subscription"
 
-msgid "adventCalendar/window/title"
-msgstr "Loading..."
-
 msgid "ammoReload/additionBuy"
 msgstr "Purchase"
 
@@ -1046,6 +1043,9 @@ msgstr "Create Event Platoon"
 msgid "contextMenu/createMapboxSquad"
 msgstr "Recon Mission: Create Platoon"
 
+msgid "contextMenu/createPlaylist"
+msgstr "Create Playlist"
+
 msgid "contextMenu/createPrivateChannel"
 msgstr "Send message"
 
@@ -1138,6 +1138,9 @@ msgstr "Leave Platoon"
 
 msgid "contextMenu/lockSlot"
 msgstr "Lock the slot"
+
+msgid "contextMenu/managePlaylists"
+msgstr "Playlists"
 
 msgid "contextMenu/mentorAssignment"
 msgstr "Mentoring Course"
@@ -2199,6 +2202,11 @@ msgstr ""
 msgid "extraParams/name/foliageMaskingFactor"
 msgstr "This parameter shows the effect of concealment behind foliage."
 
+msgid "extraParams/name/hpRecover"
+msgstr ""
+"This parameter shows the increase in HP restored when using a Repair Kit. "
+"The higher the value, the more HP will be restored."
+
 msgid "extraParams/name/mediumGroundFactor"
 msgstr ""
 "This parameter shows the crossing capacity of the suspension on moderately "
@@ -2210,6 +2218,12 @@ msgstr ""
 "This parameter reduces the penalty to maximum viewing distance when "
 "observation devices are destroyed. The lower the value, the better the "
 "visibility."
+
+msgid "extraParams/name/piercingHEShellsDistributionUpperBound"
+msgstr ""
+"This parameter shows the increase in maximum potential penetration value for"
+" shells at distances of less than 50 m. The higher the value, the better the"
+" penetration."
 
 msgid "extraParams/name/radiomanActivityTimeAfterVehicleDestroy"
 msgstr ""
@@ -2234,6 +2248,11 @@ msgstr ""
 msgid "extraParams/name/stunResistanceEffectFactor"
 msgstr ""
 "This parameter shows the degree of negative effects from crew stunning."
+
+msgid "extraParams/name/suspensionDamageReduction"
+msgstr ""
+"This parameter shows the reduction in incoming damage to suspension. The "
+"higher the value, the less damage will be received."
 
 msgid "extraParams/name/vehPenaltyForDamagedAmmorack"
 msgstr ""
@@ -2436,27 +2455,6 @@ msgstr "Open clan profile"
 
 msgid "fortificationCtx/prepareOrder"
 msgstr "Prepare Reserve"
-
-msgid "goldFish/buttonClose"
-msgstr "Close"
-
-msgid "goldFish/eventLink"
-msgstr "Go to Premium Shop"
-
-msgid "goldFish/eventText"
-msgstr ""
-"One-time offer! You receive bonus gold for making a purchase in the Premium Shop.\n"
-"\n"
-"To view the special offer, click \"Go to Premium Shop.\" The default browser will be opened."
-
-msgid "goldFish/eventTitle"
-msgstr "PERFECT TIME TO PURCHASE GOLD"
-
-msgid "goldFish/header"
-msgstr "One-Time Offer in Premium Shop"
-
-msgid "goldFish/windowHeader"
-msgstr "Bulletin"
 
 msgid "hangar/ammunitionPanel/easyTankEquipBtn"
 msgstr "Quick Service"
@@ -3172,9 +3170,6 @@ msgstr "Clans"
 
 msgid "headerButtons/defaultCounter"
 msgstr "!"
-
-msgid "headerButtons/doLabel/premium"
-msgstr "Extend"
 
 msgid "headerButtons/fightBtn/tooltip/battleRoyaleDisabled/body"
 msgstr "Ceasefire is in effect on this server."
@@ -4008,6 +4003,9 @@ msgstr " "
 msgid "loading/battleTypes/desc/9"
 msgstr " "
 
+msgid "loading/battleTypes/subTitle/23"
+msgstr "Shamrock Showdown"
+
 msgid "loading/helpTip"
 msgstr "For help in battle, press F1."
 
@@ -4621,8 +4619,7 @@ msgid "moduleInfo/params/forwardMaxSpeed"
 msgstr "Top Speed"
 
 msgid "moduleInfo/params/guaranteedDamage/footnote"
-msgstr ""
-"The shell deals a small percentage of damage if armor is not penetrated."
+msgstr "Always causes damage if the main armor is hit"
 
 msgid "moduleInfo/params/hullAndChassisWeight"
 msgstr "Weight"
@@ -4669,6 +4666,17 @@ msgstr " does not depend on the distance for this type of shell"
 msgid "moduleInfo/params/noPiercingDistance/footnote/maxDistance"
 msgstr ", maximum flying range—400 m"
 
+msgid "moduleInfo/params/normalisation"
+msgstr "Normalization Angle"
+
+msgid "moduleInfo/params/penetrationLoss"
+msgstr "Penetration Loss"
+
+msgid "moduleInfo/params/penetrationLoss/footnote"
+msgstr ""
+" this shell type starts losing penetration power over distance after passing"
+" through the first screen"
+
 msgid "moduleInfo/params/piercingDistance"
 msgstr "%(dist)s m"
 
@@ -4711,11 +4719,25 @@ msgstr "Gun Loading in Single Fire Mode"
 msgid "moduleInfo/params/reloadTimeTwinGun"
 msgstr "Gun Loading in Salvo Fire Mode"
 
+msgid "moduleInfo/params/ricochetAngle"
+msgstr "Ricochet Angle"
+
 msgid "moduleInfo/params/rocketAccelerationEnginePower"
 msgstr "Engine Power (With Boosters)"
 
 msgid "moduleInfo/params/rotationSpeed"
 msgstr "Traverse Speed"
+
+msgid "moduleInfo/params/screensArmorMultiplier"
+msgstr "Spaced Armor Multiplier"
+
+msgid "moduleInfo/params/screensArmorMultiplier/footnote"
+msgstr ""
+" this shell type penetrates screens as usual, but then loses penetration "
+"power equal to three times the screen armor thickness"
+
+msgid "moduleInfo/params/screensArmorMultiplier/value"
+msgstr "x%(multiplier)s"
 
 msgid "moduleInfo/params/shellLoadingTime"
 msgstr "Ammunition Belt Loading"
@@ -5350,12 +5372,6 @@ msgstr ""
 msgid "progressiveReward/widget/title"
 msgstr "Reward for Merit"
 
-msgid "promo/patch/message"
-msgstr "Client version:"
-
-msgid "promo/patch/title"
-msgstr "Bulletin"
-
 msgid "promo/teaser/title"
 msgstr "Combat Intelligence"
 
@@ -5370,9 +5386,6 @@ msgstr "%(hour)s:%(min)s:%(sec)s"
 
 msgid "promo/teaserTimeFormat/min"
 msgstr "%(hour)s:%(min)s:%(sec)s"
-
-msgid "promo/toArchive"
-msgstr "Bulletin"
 
 msgid "quote"
 msgstr "%(string)s"
@@ -6623,6 +6636,9 @@ msgstr ""
 "Coincidence Electromechanical Sight Charge (% per s) (Engagement mode, "
 "passive)"
 
+msgid "tank_params/penetrationLoss"
+msgstr "(%/100 mm)"
+
 msgid "tank_params/perActivation"
 msgstr "(per activation)"
 
@@ -7024,18 +7040,6 @@ msgstr "(Awaiting battle)"
 
 msgid "tankmen/mediumTank"
 msgstr "Medium Tank"
-
-msgid "techtree/Announcement"
-msgstr "Coming soon"
-
-msgid "techtree/premiumPanel/btnLabel"
-msgstr "%(count)s more in the Store"
-
-msgid "techtree/premiumPanel/btnLabel/count"
-msgstr "%(count)s"
-
-msgid "techtree/premiumPanel/title"
-msgstr "PREMIUM VEHICLES"
 
 msgid "timeLeft/full/day"
 msgstr "{day} d {hour} h"
@@ -7666,68 +7670,35 @@ msgstr "TO TECH TREE"
 msgid "viewHeader/backBtn/descrLabel/techtree/china"
 msgstr "TO CHINA TECH TREE"
 
-msgid "viewHeader/backBtn/descrLabel/techtree/china/blueprints"
-msgstr "TO CHINESE BLUEPRINTS"
-
 msgid "viewHeader/backBtn/descrLabel/techtree/czech"
 msgstr "TO CZECHOSLOVAKIA TECH TREE"
-
-msgid "viewHeader/backBtn/descrLabel/techtree/czech/blueprints"
-msgstr "TO CZECHOSLOVAKIAN BLUEPRINTS"
 
 msgid "viewHeader/backBtn/descrLabel/techtree/france"
 msgstr "TO FRANCE TECH TREE"
 
-msgid "viewHeader/backBtn/descrLabel/techtree/france/blueprints"
-msgstr "TO FRENCH BLUEPRINTS"
-
 msgid "viewHeader/backBtn/descrLabel/techtree/germany"
 msgstr "TO GERMANY TECH TREE"
-
-msgid "viewHeader/backBtn/descrLabel/techtree/germany/blueprints"
-msgstr "TO GERMAN BLUEPRINTS"
 
 msgid "viewHeader/backBtn/descrLabel/techtree/italy"
 msgstr "TO ITALY TECH TREE"
 
-msgid "viewHeader/backBtn/descrLabel/techtree/italy/blueprints"
-msgstr "TO ITALIAN BLUEPRINTS"
-
 msgid "viewHeader/backBtn/descrLabel/techtree/japan"
 msgstr "TO JAPAN TECH TREE"
-
-msgid "viewHeader/backBtn/descrLabel/techtree/japan/blueprints"
-msgstr "TO JAPANESE BLUEPRINTS"
 
 msgid "viewHeader/backBtn/descrLabel/techtree/poland"
 msgstr "TO POLAND TECH TREE"
 
-msgid "viewHeader/backBtn/descrLabel/techtree/poland/blueprints"
-msgstr "TO POLISH BLUEPRINTS"
-
 msgid "viewHeader/backBtn/descrLabel/techtree/sweden"
 msgstr "TO SWEDEN TECH TREE"
-
-msgid "viewHeader/backBtn/descrLabel/techtree/sweden/blueprints"
-msgstr "TO SWEDISH BLUEPRINTS"
 
 msgid "viewHeader/backBtn/descrLabel/techtree/uk"
 msgstr "TO U.K. TECH TREE"
 
-msgid "viewHeader/backBtn/descrLabel/techtree/uk/blueprints"
-msgstr "TO BRITISH BLUEPRINTS"
-
 msgid "viewHeader/backBtn/descrLabel/techtree/usa"
 msgstr "TO U.S.A. TECH TREE"
 
-msgid "viewHeader/backBtn/descrLabel/techtree/usa/blueprints"
-msgstr "TO AMERICAN BLUEPRINTS"
-
 msgid "viewHeader/backBtn/descrLabel/techtree/ussr"
 msgstr "TO U.S.S.R TECH TREE"
-
-msgid "viewHeader/backBtn/descrLabel/techtree/ussr/blueprints"
-msgstr "TO SOVIET BLUEPRINTS"
 
 msgid "viewHeader/backBtn/label"
 msgstr "BACK"

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging
 from gui.impl.gen.view_models.ui_kit.drop_down_menu_item_model import DropDownMenuItemModel
 from gui.impl.wrappers.user_list_model import UserListModel

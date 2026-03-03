@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from Event import Event, EventManager
 from gui.Scaleform.framework.entities.abstract.TutorialManagerMeta import TutorialManagerMeta
 

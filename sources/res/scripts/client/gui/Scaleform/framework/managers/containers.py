@@ -1,7 +1,8 @@
-import logging, weakref
+from __future__ import absolute_import
+import logging, typing, weakref
 from collections import OrderedDict
 from functools import partial
-import typing
+from future.utils import iteritems, itervalues, listvalues
 from Event import Event
 from frameworks.wulf import WindowLayer
 from gui.Scaleform.genConsts.LAYER_NAMES import LAYER_NAMES
@@ -67,7 +68,7 @@ class ViewContainer(object):
 
     def destroy(self):
         while self.__child:
-            container = next(self.__child.itervalues())
+            container = next(iter(itervalues(self.__child)))
             container.destroy()
 
         self.clear()
@@ -118,7 +119,7 @@ class ViewContainer(object):
             child = self.getChildContainer(layer)
             if child is not None:
                 return child
-            for c in self.__child.itervalues():
+            for c in itervalues(self.__child):
                 child = c.getChildContainer(layer)
                 if child is not None:
                     return child
@@ -129,7 +130,7 @@ class ViewContainer(object):
         if viewKey in self._views:
             return self._views[viewKey]
         else:
-            for c in self.__child.itervalues():
+            for c in itervalues(self.__child):
                 view = c.findView(viewKey)
                 if view is not None:
                     return view
@@ -171,19 +172,19 @@ class ViewContainer(object):
             return False
 
     def getAllLoadingViews(self):
-        views = self._loadingViews.values()
-        for c in self.__child.itervalues():
+        views = listvalues(self._loadingViews)
+        for c in itervalues(self.__child):
             views.extend(c.getAllLoadingViews())
 
         return views
 
     def removeAllLoadingViews(self):
         self._removeLoadingViews()
-        for c in self.__child.itervalues():
+        for c in itervalues(self.__child):
             c.removeAllLoadingViews()
 
     def removeLoadingSubViews(self):
-        for c in self.__child.itervalues():
+        for c in itervalues(self.__child):
             c.removeAllLoadingViews()
 
     def getView(self, criteria):
@@ -201,7 +202,7 @@ class ViewContainer(object):
             result = len(self._views)
         else:
             result = 0
-            for view in self._views.itervalues():
+            for view in itervalues(self._views):
                 if view.isViewModal() == isModal:
                     result += 1
 
@@ -245,12 +246,12 @@ class ViewContainer(object):
 
     def _removeLoadingViews(self):
         while self._loadingViews:
-            view = next(self._loadingViews.itervalues())
+            view = next(iter(itervalues(self._loadingViews)))
             self.removeLoadingView(view)
 
     def _removeViews(self):
         while self._views:
-            view = next(self._views.itervalues())
+            view = next(iter(itervalues(self._views)))
             self.removeView(view)
 
     def _addView(self, pyView):
@@ -306,7 +307,7 @@ class ViewContainer(object):
             if key in criteria:
                 value = criteria[key]
                 handler = _VIEW_SEARCH_CRITERIA_HANDLERS[key]
-                for v in self._views.itervalues():
+                for v in itervalues(self._views):
                     if handler(v, value):
                         return v
 
@@ -317,7 +318,7 @@ class ViewContainer(object):
         def find(item):
             return criteria.find(*item)
 
-        return findFirst(find, self._views.iteritems(), ('', None))[1]
+        return findFirst(find, iteritems(self._views), ('', None))[1]
 
 
 class SingleViewContainer(ViewContainer):
@@ -334,7 +335,7 @@ class SingleViewContainer(ViewContainer):
         view = None
         if criteria is None:
             if self._views:
-                view = next(self._views.itervalues())
+                view = next(iter(itervalues(self._views)))
         else:
             view = super(SingleViewContainer, self).getView(criteria)
         return view
@@ -406,7 +407,7 @@ class _ViewCollection(object):
         return self._views.__len__()
 
     def destroy(self):
-        for view in self._views.itervalues():
+        for view in itervalues(self._views):
             view.onDispose -= self._onViewDisposed
             if not view.isDisposed():
                 view.destroy()
@@ -414,13 +415,13 @@ class _ViewCollection(object):
         self._views.clear()
 
     def clear(self):
-        for view in self._views.itervalues():
+        for view in itervalues(self._views):
             view.onDispose -= self._onViewDisposed
 
         self._views.clear()
 
     def findViews(self, comparator):
-        return [ v for v in self._views.itervalues() if comparator(v) ]
+        return [ v for v in itervalues(self._views) if comparator(v) ]
 
     def addView(self, view):
         viewKey = view.key
@@ -609,7 +610,7 @@ class _ChainManager(object):
 
 class IContainerManager(object):
 
-    def registerViewContainer(self, layer, name):
+    def registerViewContainer(self, layer, uniqueName):
         raise NotImplementedError
 
     def unregisterViewContainer(self, layer):
@@ -841,7 +842,7 @@ class ContainerManager(ContainerManagerMeta, IContainerManager):
             status = False
             container = self.__globalContainer.findContainer(layer)
             if container is not None:
-                if WindowLayer.VIEW == layer:
+                if layer == WindowLayer.VIEW:
                     self.closePopUps()
                 if container.addView(pyView):
                     self.__scopeController.addView(pyView, False)

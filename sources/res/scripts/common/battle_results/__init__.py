@@ -1,3 +1,4 @@
+from future.utils import viewitems
 import importlib
 from DictPackers import Meta, MergeDictPacker
 from battle_pass_integration import getAllIntergatedGameModes
@@ -42,11 +43,14 @@ def __processBonusTypeResults(config, allResults, bonusType, serverResults):
 def setBattleResultsConfig(config):
     serverResults = {}
     battlePassIntergated = getAllIntergatedGameModes()
-    for bonusType, path in PATH_TO_CONFIG.iteritems():
-        if path.startswith('.'):
-            path = 'battle_results' + path
-        module = importlib.import_module(path)
-        allResults = BATTLE_RESULTS + module.BATTLE_RESULTS
+    for bonusType, paths in viewitems(PATH_TO_CONFIG):
+        allResults = BATTLE_RESULTS[:]
+        for path in paths:
+            if path.startswith('.'):
+                path = 'battle_results' + path
+            module = importlib.import_module(path)
+            allResults += module.BATTLE_RESULTS
+
         if bonusType in battlePassIntergated:
             allResults += BATTLE_PASS_RESULTS
         __processBonusTypeResults(config, allResults, bonusType, serverResults)

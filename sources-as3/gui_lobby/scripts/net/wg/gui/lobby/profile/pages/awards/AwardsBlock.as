@@ -12,15 +12,21 @@ package net.wg.gui.lobby.profile.pages.awards
       
       public var background:MovieClip;
       
+      private var _totalCount:uint;
+      
       private var _showProgress:Boolean = true;
       
       private var _currentCount:uint;
       
-      protected var _totalCount:uint;
-      
       public function AwardsBlock()
       {
          super();
+      }
+      
+      override protected function onDispose() : void
+      {
+         this.background = null;
+         super.onDispose();
       }
       
       override protected function configUI() : void
@@ -35,6 +41,13 @@ package net.wg.gui.lobby.profile.pages.awards
          textField.htmlText = labelText + "<font color=\'#8c8c7e\' size=\'14\'> (" + this._currentCount + "/" + this._totalCount + ")</font>";
       }
       
+      override protected function applySizeChanges() : void
+      {
+         var _loc1_:Number = Math.round(tileList.y + tileList.height + BG_PADDING);
+         this.background.y = Math.round(_loc1_ - this.background.height);
+         _height = _loc1_;
+      }
+      
       public function get showProgress() : Boolean
       {
          return this._showProgress;
@@ -44,13 +57,6 @@ package net.wg.gui.lobby.profile.pages.awards
       {
          this._showProgress = param1;
          invalidate(LABEL_INV);
-      }
-      
-      override protected function applySizeChanges() : void
-      {
-         var _loc1_:Number = Math.round(tileList.y + tileList.height + BG_PADDING);
-         this.background.y = Math.round(_loc1_ - this.background.height);
-         _height = _loc1_;
       }
       
       public function set totalCount(param1:uint) : void

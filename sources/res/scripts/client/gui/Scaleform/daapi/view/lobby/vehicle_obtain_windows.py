@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from collections import namedtuple
 from soft_exception import SoftException
 import constants
@@ -431,9 +432,6 @@ class VehicleBuyWindow(VehicleBuyWindowMeta):
 
 class VehicleRestoreWindow(VehicleBuyWindow):
     restore = dependency.descriptor(IRestoreController)
-
-    def submit(self, data):
-        super(VehicleRestoreWindow, self).submit(data)
 
     def _populate(self):
         super(VehicleRestoreWindow, self)._populate()

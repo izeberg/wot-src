@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import weakref
 from gui.Scaleform.daapi.view.battle.shared.stats_exchange import broker
 from gui.Scaleform.daapi.view.battle.shared.stats_exchange import player

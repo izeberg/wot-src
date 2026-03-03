@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from frameworks.wulf import WindowFlags
 from gui.impl.pub.window_impl import WindowImpl
 from gui.impl.pub.window_view import WindowView

@@ -13,6 +13,9 @@ msgstr ""
 msgid "barracks/action/enlarge"
 msgstr "Enlarge"
 
+msgid "barracks/action/retireUndertrained"
+msgstr "Retire Undertrained"
+
 msgid "barracks/bunks/title"
 msgstr "Bunks:"
 
@@ -32,6 +35,25 @@ msgstr "Previous cost: %(currency)s per %(bunksCount)s bunks"
 
 msgid "barracks/enlarge/header"
 msgstr "Enlarge the Barracks?"
+
+msgid "barracks/retireUndertrainedTooltip/description"
+msgstr ""
+"Undertrained crew members in your Barracks who have less than the "
+"{whiteSpanish_Open}210,060{whiteSpanish_Close}{icon} XP required to train "
+"their first crew perk to {whiteSpanish_Open}100%{whiteSpanish_Close} can be "
+"retired."
+
+msgid "barracks/retireUndertrainedTooltip/header"
+msgstr "Undertrained Crew Members"
+
+msgid "barracks/retireUndertrainedTooltip/noUndertrainedMembers"
+msgstr "You do not have undertrained crew members"
+
+msgid "barracks/retireUndertrainedTooltip/warning"
+msgstr ""
+"You will not receive any compensation for retiring undertrained crew "
+"members. Once retired, they cannot be recovered, and all their XP will be "
+"lost."
 
 msgid "barracks/title"
 msgstr "BARRACKS"
@@ -90,30 +112,20 @@ msgstr "The following items have been added to your account."
 msgid "conversionConfirm/button/cancel/label"
 msgstr "Cancel"
 
-msgid "conversionConfirm/button/convert/label"
-msgstr "Convert"
+msgid "conversionConfirm/button/retire/label"
+msgstr "Retire"
 
 msgid "conversionConfirm/button/showTankmen/label"
-msgstr "Crew members to convert: {amount}"
-
-msgid "conversionConfirm/description"
-msgstr ""
-"For details of the Crew Books you will receive, hover over a Crew Book icon.\n"
-"For more information about convertible crew members, click the button below."
-
-msgid "conversionConfirm/empty"
-msgstr ""
-"{alertIcon} You have no experience\n"
-"to be compensated."
-
-msgid "conversionConfirm/subTitle"
-msgstr ""
-"You can obtain these Crew Books by converting undertrained crew members in the Barracks.\n"
-"Undertrained crew members are members who have their first perk trained to less than 100%,\n"
-"do not have a zero perk, and are not unique or reward characters."
+msgstr "Crew members to be retired: {amount}"
 
 msgid "conversionConfirm/title"
-msgstr "Crew Member Conversion"
+msgstr "Retire undertrained crew members?"
+
+msgid "conversionConfirm/warning"
+msgstr ""
+"You will not receive any compensation for retiring undertrained crew "
+"members. Once retired, they cannot be recovered, and all their XP will be "
+"lost."
 
 msgid "crewBanner/button/fill/label"
 msgstr "Autoselect Perks"
@@ -398,12 +410,11 @@ msgstr "Affirmative!"
 
 msgid "junkTankmen/description"
 msgstr ""
-"A list of crew members in your Barracks who do not have enough XP to train their first perk to 100%,\n"
-"do not have a zero perk, and are not unique or rewarded characters.\n"
-"These crew members will be converted."
+"These crew members have less than the {bond_Open}210,060{bond_Close}{icon} XP required to train their first crew perk to {whiteSpanish_Open}100%{whiteSpanish_Close}.\n"
+"They will be removed from your account."
 
 msgid "junkTankmen/title"
-msgstr "Crew Member Conversion"
+msgstr "Retire undertrained crew members?"
 
 msgid "matrix/bonusTooltip/description"
 msgstr ""
@@ -996,3 +1007,28 @@ msgid "vehicleParamsDecorator/perkTip"
 msgstr ""
 "*Hovering over a perk shows how it affects the corresponding characteristics"
 " when trained to 100% with the current level of perk efficiency."
+
+msgid "welcomeScreen/button/affirmative"
+msgstr "Affirmative!"
+
+msgid "welcomeScreen/item1/description"
+msgstr ""
+"Two new perks for each qualification have been introduced, Reliable "
+"Placement has been reworked, and a new option lets you hide perks in the "
+"battle HUD."
+
+msgid "welcomeScreen/item2/description"
+msgstr ""
+"A convenient new operation allows you to retire undertrained crew members in"
+" one click."
+
+msgid "welcomeScreen/item3/description"
+msgstr "Perks can now be reset using only credits, without losing XP."
+
+msgid "welcomeScreen/subTitle"
+msgstr ""
+"New perks and features have been added, and an existing perk has been "
+"updated."
+
+msgid "welcomeScreen/title"
+msgstr "UPDATES TO CREW"

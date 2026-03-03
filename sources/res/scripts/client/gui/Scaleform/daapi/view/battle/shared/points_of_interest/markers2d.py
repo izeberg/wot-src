@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, typing, Math
 from gui.Scaleform.daapi.view.battle.shared.markers2d import plugins
 from gui.Scaleform.daapi.view.battle.shared.points_of_interest.constants import POI_TYPE_UI_MAPPING, POI_STATUS_UI_MAPPING

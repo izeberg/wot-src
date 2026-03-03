@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from debug_utils import LOG_ERROR
 from gui.Scaleform.framework import g_entitiesFactories
 from gui.Scaleform.framework.entities.abstract.PopoverManagerMeta import PopoverManagerMeta

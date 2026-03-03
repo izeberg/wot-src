@@ -25,7 +25,6 @@ class ReportGenerator(object):
 
     def startCollectingData(self):
         if self.location is None:
-            logging.error('cannot start collecting data - the location for reports was not provided...')
             return
         else:
             if self.__isCollectingData:
@@ -38,7 +37,6 @@ class ReportGenerator(object):
 
     def stopCollectingData(self):
         if self.location is None:
-            logging.error('cannot stop collecting data - the location for reports was not provided...')
             return
         else:
             if not self.__isCollectingData:
@@ -50,7 +48,6 @@ class ReportGenerator(object):
 
     def generateReport(self):
         if self.__location is None:
-            logging.error('failed to generate a report - location was not provided (None)!')
             return
         else:
             if self.__isCollectingData is None:

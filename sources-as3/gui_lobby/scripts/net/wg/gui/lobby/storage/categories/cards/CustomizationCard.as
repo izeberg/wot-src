@@ -7,6 +7,8 @@ package net.wg.gui.lobby.storage.categories.cards
    import net.wg.gui.components.controls.Image;
    import net.wg.gui.components.controls.SoundButtonEx;
    import net.wg.gui.lobby.storage.categories.cards.configs.CardConfigs;
+   import net.wg.infrastructure.managers.ITooltipMgr;
+   import net.wg.utils.ICommons;
    import scaleform.clik.constants.InvalidationType;
    import scaleform.clik.motion.Tween;
    
@@ -28,6 +30,10 @@ package net.wg.gui.lobby.storage.categories.cards
       
       private var _progressiveLevelPosition:Point = null;
       
+      private var _commons:ICommons;
+      
+      private var _toolTipMgr:ITooltipMgr;
+      
       private const RARITY_OFFSET_X:Number = -35;
       
       private const RARITY_OFFSET_Y:Number = -15;
@@ -36,6 +42,8 @@ package net.wg.gui.lobby.storage.categories.cards
       
       public function CustomizationCard()
       {
+         this._commons = App.utils.commons;
+         this._toolTipMgr = App.toolTipMgr;
          super();
       }
       
@@ -65,6 +73,8 @@ package net.wg.gui.lobby.storage.categories.cards
          this.progressiveLevelIcon = null;
          this.rarityIcon.dispose();
          this.rarityIcon = null;
+         this._commons = null;
+         this._toolTipMgr = null;
          this.rarityBackgroundIcon.dispose();
          this.rarityBackgroundIcon = null;
          this.rentIcon = null;
@@ -181,7 +191,7 @@ package net.wg.gui.lobby.storage.categories.cards
          {
             return;
          }
-         if(App.utils.commons.isRightButton(param1))
+         if(this._commons.isRightButton(param1))
          {
             if(this._typedData.contextMenuId)
             {
@@ -212,7 +222,7 @@ package net.wg.gui.lobby.storage.categories.cards
       
       private function onPreviewButtonClick(param1:MouseEvent) : void
       {
-         if(App.utils.commons.isLeftButton(param1))
+         if(this._commons.isLeftButton(param1))
          {
             param1.stopImmediatePropagation();
             dispatchEvent(new CardEvent(CardEvent.PREVIEW,_data));
@@ -221,12 +231,12 @@ package net.wg.gui.lobby.storage.categories.cards
       
       private function onPreviewButtonRollOver(param1:MouseEvent) : void
       {
-         App.toolTipMgr.show(this._typedData.previewTooltip);
+         this._toolTipMgr.show(this._typedData.previewTooltip);
       }
       
       private function onPreviewButtonRollOut(param1:MouseEvent) : void
       {
-         App.toolTipMgr.hide();
+         this._toolTipMgr.hide();
       }
       
       private function onProgressionIconLoaded(param1:Event) : void

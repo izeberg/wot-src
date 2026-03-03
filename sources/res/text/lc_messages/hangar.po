@@ -209,6 +209,12 @@ msgstr "FIELD MODIFICATION"
 msgid "vehicleMenu/menuItem/nationChange/title"
 msgstr "CHANGE NATION"
 
+msgid "vehicleMenu/menuItem/proBoost/active"
+msgstr "ACTIVE"
+
+msgid "vehicleMenu/menuItem/proBoost/title"
+msgstr "PRO BOOST {{activeOrCountdown}}"
+
 msgid "vehicleMenu/menuItem/quickTraining/title"
 msgstr "QUICK TRAINING"
 
@@ -220,3 +226,38 @@ msgstr "RESEARCH"
 
 msgid "vehicleMenu/menuItem/vehSkillTree/title"
 msgstr "UPGRADES"
+
+msgid "vehicleMenu/proBoostTooltips/active/body"
+msgstr "You can change this choice at any time."
+
+msgid "vehicleMenu/proBoostTooltips/active/header"
+msgstr "Pro Boost active for this vehicle"
+
+msgid "vehicleMenu/proBoostTooltips/incompatibleMode/body"
+msgstr ""
+"You can only boost vehicles in Random Battles, Onslaught modes, Stronghold, "
+"Global Map, and tournaments."
+
+msgid "vehicleMenu/proBoostTooltips/incompatibleMode/header"
+msgstr "Incompatible mode for Pro Boost"
+
+msgid "vehicleMenu/proBoostTooltips/incompatibleVehicle/body"
+msgstr ""
+"You can only boost researchable and Collectors' vehicles of Tiers I–X."
+
+msgid "vehicleMenu/proBoostTooltips/incompatibleVehicle/header"
+msgstr "Incompatible vehicle for Pro Boost"
+
+msgid "vehicleMenu/proBoostTooltips/locked/body"
+msgstr ""
+"Your Pro Boost is currently active for the {{vehicle}}. You can change this "
+"choice in {{time}}."
+
+msgid "vehicleMenu/proBoostTooltips/locked/header"
+msgstr "Come back later!"
+
+msgid "vehicleMenu/proBoostTooltips/lockedActive/body"
+msgstr "You can change this choice in {{time}}."
+
+msgid "vehicleMenu/proBoostTooltips/lockedActive/header"
+msgstr "Pro Boost active for this vehicle"

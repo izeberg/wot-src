@@ -537,6 +537,9 @@ msgstr "Jagdpanther"
 msgid "Chassis_G18_JagdPanther_2"
 msgstr "Jagdpanther verstärkteketten"
 
+msgid "Chassis_G191_StuG_IIIF_CFE_A"
+msgstr "StuG III Ausf. F Kabasan"
+
 msgid "Chassis_G23_Grille"
 msgstr "Grille"
 
@@ -1124,6 +1127,9 @@ msgstr "Fu 8"
 
 msgid "FuG8f"
 msgstr "FuG 8 (f)"
+
+msgid "FuG_7_F"
+msgstr "FuG 7 (F)"
 
 msgid "FuG_F"
 msgstr "Fu.Spr.Ger. \"f\""
@@ -2848,7 +2854,7 @@ msgstr ""
 "when trading shots at close range, making use of its high alpha."
 
 msgid "G175_Rheinmetall_Begleitwagen_short"
-msgstr "B.W.(Rh) "
+msgstr "B.W.(Rh)"
 
 msgid "G175_Rheinmetall_Begleitwagen_short_special"
 msgstr "Powerful gun, decent mobility"
@@ -3152,6 +3158,38 @@ msgstr ""
 msgid "G18_JagdPanther_short"
 msgstr "JPanther"
 
+msgid "G191_StuG_IIIF_CFE_A"
+msgstr "StuG III Ausf. F Kabasan"
+
+msgid "G191_StuG_IIIF_CFE_A_descr"
+msgstr ""
+"Having encountered a large number of enemy armored vehicles, the German "
+"military improved the StuG III, mounting the 7.5 cm StuK 40 L/43 gun, a new "
+"ammo rack, and a fan. After successful trials in April 1942, mass production"
+" began. The first 120 vehicles had the StuK 40 L/43, and the following "
+"240—the StuK 40 L/48. The frontal armor thickness was soon increased from 50"
+" mm to 80 mm. Altogether, around 360 SPGs of this modification were "
+"produced. The team known as \"Kabasan\" faced St. Gloriana Girls' College in"
+" a friendly match, sporting decorations that embodied their passion for "
+"military history. Using tactics that blended seamlessly into the townscape, "
+"they achieved notable results. Since then, in every match, Team-Kabasan has "
+"employed gray-based camouflage, honing their skills in concealment and "
+"ambush."
+
+msgid "G191_StuG_IIIF_CFE_A_long_special"
+msgstr ""
+"The StuG III Ausf. F Kabasan is a Tier V German tank destroyer. Thanks to "
+"its powerful engine and reliable gun, this vehicle is very versatile. It is "
+"capable of swift repositioning around the map when needed, and can inflict "
+"significant damage on enemy vehicles. It also possesses good concealment, "
+"allowing for stealthy maneuvers."
+
+msgid "G191_StuG_IIIF_CFE_A_short"
+msgstr "StuG III Kaba"
+
+msgid "G191_StuG_IIIF_CFE_A_short_special"
+msgstr "Good mobility, high rate of fire"
+
 msgid "G20_Marder_II"
 msgstr "Marder II"
 
@@ -3202,6 +3240,12 @@ msgstr "Hare"
 
 msgid "G25_PzII_Luchs_SHXXI_B_short"
 msgstr "Hare"
+
+msgid "G25_PzII_Luchs_SHXXI_L"
+msgstr "404"
+
+msgid "G25_PzII_Luchs_SHXXI_L_short"
+msgstr "404"
 
 msgid "G25_PzII_Luchs_descr"
 msgstr ""
@@ -4295,6 +4339,14 @@ msgstr ""
 
 msgid "Maybach_HL_120_TRM_F"
 msgstr "Maybach HL 120 TRM"
+
+msgid "Maybach_HL_120_TRM_F_2"
+msgstr "Maybach HL 120 TRM (F2)"
+
+msgid "Maybach_HL_120_TRM_F_2_short"
+msgstr ""
+"Maybach HL 120\n"
+"TRM (F2)"
 
 msgid "Maybach_HL_120_TRM_G"
 msgstr "Maybach HL 120 TRM/G"
@@ -5861,6 +5913,9 @@ msgstr "Hirschkäfer"
 
 msgid "Turret_1_G18_JagdPanther"
 msgstr "Jagdpanther"
+
+msgid "Turret_1_G191_StuG_IIIF_CFE_A"
+msgstr "StuG III Ausf. F Kabasan"
 
 msgid "Turret_1_G23_Grille"
 msgstr "Grille"
@@ -7976,6 +8031,9 @@ msgstr "Pzgr. 39 (B)"
 msgid "_75mm_Pzgr_39_E"
 msgstr "Pzgr. 39 (E)"
 
+msgid "_75mm_Pzgr_39_F"
+msgstr "Pzgr. 39 (F)"
+
 msgid "_75mm_Pzgr_39_G"
 msgstr "Pzgr. 39 (G)"
 
@@ -8020,6 +8078,9 @@ msgstr "Pzgr. 40 (B)"
 
 msgid "_75mm_Pzgr_40_E"
 msgstr "Pzgr. 40 (E)"
+
+msgid "_75mm_Pzgr_40_F"
+msgstr "Pzgr. 40 (F)"
 
 msgid "_75mm_Pzgr_40_G"
 msgstr "Pzgr. 40 (G)"
@@ -8084,6 +8145,9 @@ msgstr "Sprgr. 18 Ausf. H"
 msgid "_75mm_Sprgr_18_E"
 msgstr "Sprgr. 18 (E)"
 
+msgid "_75mm_Sprgr_18_F"
+msgstr "Sprgr. 18 (F)"
+
 msgid "_75mm_Sprgr_18_G"
 msgstr "Sprgr. 18 (G)"
 
@@ -8122,6 +8186,9 @@ msgstr "7,5 cm Stu.K. 40 L/43"
 
 msgid "_75mm_StuK_40_L48A"
 msgstr "7,5 cm Stu.K. 40 L/48"
+
+msgid "_75mm_StuK_40_L48_F"
+msgstr "7,5 cm StuK 40 L/48 (F)"
 
 msgid "_75mm_Waffe0725_1944"
 msgstr "7,5/5,5 cm Kw.K. 44 L/53"

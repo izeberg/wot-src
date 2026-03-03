@@ -100,10 +100,6 @@ class FunRandomLootboxAutoOpenFormatter(AsyncAutoLootBoxSubFormatter, FunAssetPa
         return
 
     @classmethod
-    def get_template(cls):
-        return cls.__MESSAGE_TEMPLATE
-
-    @classmethod
     def _isBoxOfThisGroup(cls, boxID):
         return cls._isBoxOfRequiredTypes(boxID, FunRandomLootBoxTypes.ALL)
 

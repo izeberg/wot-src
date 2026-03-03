@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, weakref
 from future.utils import iteritems
 from typing import TYPE_CHECKING

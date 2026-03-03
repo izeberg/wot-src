@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.Scaleform.genConsts.TOOLTIPS_CONSTANTS import TOOLTIPS_CONSTANTS
 from gui.impl.backport.backport_tooltip import DecoratedTooltipWindow
 from gui.impl.lobby.account_completion.tooltips.hangar_tooltip_view import HangarTooltipView

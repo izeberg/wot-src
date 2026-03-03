@@ -1,3 +1,4 @@
+from __future__ import absolute_import, division
 from dossiers2.ui.achievements import ACHIEVEMENT_SECTION, ACHIEVEMENT_TYPE
 from dossiers2.custom.config import RECORD_CONFIGS
 from gui.shared.gui_items.dossier.achievements.abstract import isRareAchievement
@@ -20,7 +21,7 @@ class AchievementsUtils(object):
         progress = None
         section = achievement.getSection()
         if atype == ACHIEVEMENT_TYPE.REPEATABLE:
-            if section == ACHIEVEMENT_SECTION.SPECIAL or section == ACHIEVEMENT_SECTION.BATTLE:
+            if section in (ACHIEVEMENT_SECTION.SPECIAL, ACHIEVEMENT_SECTION.BATTLE):
                 if total > 0:
                     progress = (
                      0, current, total)
@@ -113,7 +114,7 @@ class AchievementsUtils(object):
         atype = achievement.getType()
         in_dossier = achievement.isInDossier()
         if atype == ACHIEVEMENT_TYPE.REPEATABLE:
-            if section == ACHIEVEMENT_SECTION.SPECIAL or section == ACHIEVEMENT_SECTION.BATTLE:
+            if section in (ACHIEVEMENT_SECTION.SPECIAL, ACHIEVEMENT_SECTION.BATTLE):
                 if in_dossier:
                     counterType = ACHIEVEMENTS_ALIASES.RED_COUNTER
             elif section == ACHIEVEMENT_SECTION.ACTION:

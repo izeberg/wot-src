@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from gui.impl.gen.view_models.views.dialogs.dialog_base_focus_view_model import DialogBaseFocusViewModel
 from gui.impl.gen.view_models.views.dialogs.dialog_focus_view_model import DialogFocusViewModel

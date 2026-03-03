@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from frameworks.wulf import ViewSettings
 from gui.impl.dialogs.dialog_template_utils import toString
 from gui.impl.gen import R

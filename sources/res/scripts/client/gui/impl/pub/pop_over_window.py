@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from frameworks.wulf import WindowFlags, ViewFlags, WindowLayer
 from gui.impl.gen import R

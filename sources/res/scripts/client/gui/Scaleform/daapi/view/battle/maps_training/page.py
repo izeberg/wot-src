@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import WWISE
 from gui.Scaleform.daapi.view.battle.shared.markers2d.manager import KillCamMarkersManager
 from shared_utils import CONST_CONTAINER

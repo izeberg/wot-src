@@ -150,11 +150,10 @@ class LoadViewEvent(_ViewEvent):
     def __init__(self, loadParams, *args, **kwargs):
         if isinstance(loadParams, str):
             _logger.error('Wrong loadParams type for "%s"! Replace it by SFViewLoadParams.', loadParams)
-        super(LoadViewEvent, self).__init__(ViewEventType.LOAD_VIEW, loadParams.viewKey.alias, loadParams.viewKey.name, ctx=kwargs.get('ctx', None))
+        super(LoadViewEvent, self).__init__(ViewEventType.LOAD_VIEW, loadParams.viewKey.alias, loadParams.viewKey.name, ctx=kwargs.get('ctx'))
         self.loadParams = loadParams
         self.args = args
         self.kwargs = kwargs
-        return
 
     def __repr__(self):
         return ('LoadViewEvent[loadParams={}, ctx={}, args={}, kwargs={}]').format(repr(self.loadParams), self.ctx, self.args, self.kwargs)
@@ -380,14 +379,10 @@ class LobbyHeaderControlsEvent(LobbySimpleEvent):
 
 class LobbyHeaderMenuEvent(LobbySimpleEvent):
     UPDATE_PREBATTLE_CONTROLS = 'updateControlsHeaderMenu'
-    TOGGLE_VISIBILITY = 'toggleVisibilityHeaderMenu'
-    MENU_CLICK = 'headerMenuClick'
-    DESELECT_HEADER_BUTTONS = 'deselectHeaderButtons'
 
 
 class CloseWindowEvent(SharedEvent):
     EULA_CLOSED = 'EULAClosed'
-    GOLD_FISH_CLOSED = 'GoldFishClosed'
     ELITE_WINDOW_CLOSED = 'EliteWindowClosed'
     BUY_VEHICLE_VIEW_CLOSED = 'BuyVehicleViewClosed'
 
@@ -485,8 +480,6 @@ class PreBattleChannelEvent(ChannelManagementEvent):
 
 
 class ChannelCarouselEvent(SharedEvent):
-    CAROUSEL_INITED = 'carouselInited'
-    CAROUSEL_DESTROYED = 'carouselDestroyed'
     OPEN_BUTTON_CLICK = 'openButtonClick'
     MINIMIZE_ALL_CHANNELS = 'minimizeAllChannels'
     CLOSE_ALL_EXCEPT_CURRENT = 'closeAllExceptCurrent'
@@ -643,6 +636,7 @@ class HangarVehicleEvent(HasCtxEvent):
     ON_HERO_TANK_DESTROY = 'hangarVehicle/onHeroTankDestroy'
     ON_PLATOON_TANK_LOADED = 'hangarVehicle/onPlatoonTankLoaded'
     ON_PLATOON_TANK_DESTROY = 'hangarVehicle/onPlatoonTankDestroy'
+    ON_CONTEXT_MENU_CLICKED = 'hangarVehicle/onContextMenuClicked'
     PLATOON_TANK_MARKER = 'hangarVehicle/platoonTankMarker'
     SELECT_VEHICLE_IN_HANGAR = 'hangarVehicle/selectVehicleInHangar'
 
@@ -672,11 +666,6 @@ class ReferralProgramEvent(HasCtxEvent):
     REFERRAL_PROGRAM_DEACTIVATED = 'referralProgrammDeactivated'
     SHOW_REFERRAL_PROGRAM_WINDOW = 'showReferralProgramWindow'
     DISABLE_REFERRAL_PROGRAM = 'disableReferralProgram'
-
-
-class AdventCalendarEvent(HasCtxEvent):
-    ADVENT_CALENDAR = 'adventCalendar'
-    HERO_ADVENT_ACTION_STATE_CHANGED = 'heroAdventActionStateChanged'
 
 
 class ProgressiveRewardEvent(HasCtxEvent):

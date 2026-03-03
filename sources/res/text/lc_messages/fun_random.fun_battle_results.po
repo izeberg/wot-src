@@ -61,9 +61,6 @@ msgstr "—"
 msgid "efficiency/kills"
 msgstr "Destroyed"
 
-msgid "efficiency/spiritPoints"
-msgstr "Spirit Points"
-
 msgid "efficiency/spotted"
 msgstr "Spotting"
 
@@ -91,17 +88,8 @@ msgstr "Base Defense"
 msgid "efficiencyTooltip/header/kills"
 msgstr "Enemy destroyed"
 
-msgid "efficiencyTooltip/header/spiritPoints"
-msgstr "Spirit Points"
-
 msgid "efficiencyTooltip/header/spotted"
 msgstr "Spotting"
-
-msgid "efficiencyTooltip/spiritPoints/description"
-msgstr ""
-"Counted:\n"
-"• Delivering the Spirit\n"
-"• Destroying enemy vehicles"
 
 msgid "finish"
 msgstr "Battle ended"
@@ -139,6 +127,35 @@ msgstr "DRAW"
 msgid "result/win"
 msgstr "VICTORY"
 
+msgid "resultRace/battleStatus/finished"
+msgstr "FINISHED"
+
+msgid "resultRace/battleStatus/inTop"
+msgstr "PLACE"
+
+msgid "resultRace/battleStatus/notFinished"
+msgstr ""
+"DID NOT\n"
+"FINISH"
+
+msgid "resultRace/finishReason/finished"
+msgstr "Finish line reached"
+
+msgid "resultRace/finishReason/notFinished"
+msgstr "Finish line not reached"
+
+msgid "resultRace/footerSubtitle/battleEnded"
+msgstr "Battle ended: {{time}}"
+
+msgid "resultRace/footerSubtitle/finished"
+msgstr "Not bad!"
+
+msgid "resultRace/footerSubtitle/inTop"
+msgstr "Top 3!"
+
+msgid "resultRace/footerSubtitle/notFinished"
+msgstr "Better luck next time!"
+
 msgid "ribbon/applied"
 msgstr "Bonus successfully applied"
 
@@ -163,20 +180,92 @@ msgstr "Dev TEAM SCORE"
 msgid "sub_modes/development/team/singleTeam"
 msgstr "Players"
 
+msgid "sub_modes/fall_tanks/efficiency/checkpointsPassed"
+msgstr "Checkpoints"
+
+msgid "sub_modes/fall_tanks/efficiency/deathCount"
+msgstr "Respawns"
+
+msgid "sub_modes/fall_tanks/efficiency/finishPosition"
+msgstr "Place"
+
+msgid "sub_modes/fall_tanks/efficiency/finishTime"
+msgstr "Time"
+
+msgid "sub_modes/fall_tanks/efficiency/kills"
+msgstr "Disintegrated"
+
+msgid "sub_modes/fall_tanks/efficiencyTooltip/description/checkpointsPassed"
+msgstr "The number of checkpoints you passed"
+
+msgid "sub_modes/fall_tanks/efficiencyTooltip/description/deathCount"
+msgstr "Times you respawned after your vehicle was disintegrated"
+
+msgid "sub_modes/fall_tanks/efficiencyTooltip/description/destroyed"
+msgstr "The number of enemy vehicles you disintegrated"
+
+msgid "sub_modes/fall_tanks/efficiencyTooltip/description/finishPosition"
+msgstr "Your final position in the race standings"
+
+msgid "sub_modes/fall_tanks/efficiencyTooltip/description/finishTime"
+msgstr "How long it took you to reach the finish line"
+
+msgid "sub_modes/fall_tanks/efficiencyTooltip/header/checkpointsPassed"
+msgstr "Checkpoints"
+
+msgid "sub_modes/fall_tanks/efficiencyTooltip/header/deathCount"
+msgstr "Respawns"
+
+msgid "sub_modes/fall_tanks/efficiencyTooltip/header/destroyed"
+msgstr "Disintegrated"
+
+msgid "sub_modes/fall_tanks/efficiencyTooltip/header/finishPosition"
+msgstr "Place"
+
+msgid "sub_modes/fall_tanks/efficiencyTooltip/header/finishTime"
+msgstr "Time"
+
+msgid "sub_modes/fall_tanks/navigation/battleResults"
+msgstr "PERSONAL SCORE"
+
+msgid "sub_modes/fall_tanks/navigation/teamEfficiency"
+msgstr "PARTICIPANTS' RESULTS"
+
+msgid "sub_modes/fall_tanks/team/finishPositionHeader/body"
+msgstr "Sort by place"
+
+msgid "sub_modes/fall_tanks/team/finishPositionHeader/header"
+msgstr "Place"
+
+msgid "sub_modes/fall_tanks/team/finishTimeHeader/body"
+msgstr "Sort by time"
+
+msgid "sub_modes/fall_tanks/team/finishTimeHeader/header"
+msgstr "Time"
+
+msgid "sub_modes/fall_tanks/team/singleTeam"
+msgstr "Players"
+
+msgid "sub_modes/fall_tanks/team/tankHeader/body"
+msgstr "Sort by vehicle"
+
+msgid "sub_modes/fall_tanks/team/tankHeader/header"
+msgstr "Vehicles"
+
 msgid "sub_modes/undefined/navigation/battleResults"
 msgstr "OVERVIEW"
 
 msgid "sub_modes/undefined/navigation/teamEfficiency"
 msgstr "TEAM SCORE"
 
-msgid "sub_modes/undefined/team/empty/finishTime"
-msgstr "-- : -- . --"
-
-msgid "sub_modes/undefined/team/format/finishTime"
-msgstr "{minutes}:{seconds}.{milliseconds}"
-
 msgid "sub_modes/undefined/team/singleTeam"
 msgstr "Players"
+
+msgid "team/empty/finishTime"
+msgstr "-- : -- . --"
+
+msgid "team/format/finishTime"
+msgstr "{minutes}:{seconds}.{milliseconds}"
 
 msgid "title"
 msgstr "BATTLE RESULTS"

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.Scaleform.daapi.view.meta.LoginQueueWindowMeta import LoginQueueWindowMeta
 from gui.shared import EVENT_BUS_SCOPE
 from gui.shared.events import LoginEvent, LoginEventEx, ArgsEvent

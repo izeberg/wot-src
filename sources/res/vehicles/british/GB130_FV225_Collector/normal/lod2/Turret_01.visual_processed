@@ -86,8 +86,14 @@
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-1.983585 -0.034647 -2.646565</min>
-		<max>1.983581 2.410855 1.727787</max>
+		<min>
+			-1.8650534057617187 -0.30392608642578095 -2.645
+			<!--BW_String-->
+		</min>
+		<max>
+			1.8443739318847656 0.9971343994140628 2.247105865478516
+			<!--BW_String-->
+		</max>
 	</boundingBox>
 	<geometrySize>75348</geometrySize>
 </root>

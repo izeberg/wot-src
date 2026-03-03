@@ -56,16 +56,17 @@ class UserDossier(object):
                 self.__cache['wtr'] = value[8]
                 self.__cache['layout'] = value[9]
                 self.__cache['layoutState'] = value[10]
+                self.__cache['serviceRecordCustomization'] = value[11]
                 for sID, d in (value[4] or {}).iteritems():
                     seasons[sID] = dossiers2.getRated7x7DossierDescr(d)
 
             callback(self.__cache['account'])
             return
 
-        def callBackMethod(c, code, databaseID, dossier, clanID, clanInfo, gRating, eSportSeasons, ranked, dogTag, br, wtr, layout, layoutState):
+        def callBackMethod(c, code, databaseID, dossier, clanID, clanInfo, gRating, eSportSeasons, ranked, dogTag, br, wtr, layout, layoutState, serviceRecordCustomization):
             value = (
              databaseID, dossier, (clanID, clanInfo), gRating, eSportSeasons, ranked, dogTag, br, wtr, layout,
-             layoutState)
+             layoutState, serviceRecordCustomization)
             self.__processValueResponse(c, code, value)
 
         self.__queue.append(lambda : BigWorld.player().requestPlayerInfo(self.__cache['databaseID'], partial(callBackMethod, proxyCallback)))
@@ -183,6 +184,18 @@ class UserDossier(object):
             return
         else:
             callback(self.__cache['dogTag'])
+            return
+
+    @adisp_async
+    def getServiceRecordCustomization(self, callback):
+        if not self.isValid:
+            callback(None)
+            return
+        else:
+            if self.__cache.get('serviceRecordCustomization') is None:
+                self.__requestPlayerInfo(callback)
+                return
+            callback(self.__cache['serviceRecordCustomization'])
             return
 
     @adisp_async

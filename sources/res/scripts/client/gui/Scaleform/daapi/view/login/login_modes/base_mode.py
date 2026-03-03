@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import weakref
 from helpers import dependency
 from skeletons.gui.login_manager import ILoginManager

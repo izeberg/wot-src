@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.Scaleform.framework.entities.abstract.UILoggerManagerMeta import UILoggerManagerMeta
 from gui.shared.utils import flashObject2Dict
 from helpers import dependency

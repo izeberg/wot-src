@@ -29,6 +29,7 @@ package net.wg.infrastructure.managers.impl
    import net.wg.infrastructure.managers.impl.tutorial.TriggerEvent;
    import net.wg.infrastructure.managers.impl.tutorial.TriggerWatcherFactory;
    import net.wg.infrastructure.wulf.IViewWrapper;
+   import net.wg.utils.IDataUtils;
    import org.idmedia.as3commons.util.StringUtils;
    
    public class TutorialManager extends TutorialManagerMeta implements ITutorialManager
@@ -83,6 +84,8 @@ package net.wg.infrastructure.managers.impl
       
       private var _unboundComponents:Dictionary;
       
+      private var _dataUtils:IDataUtils;
+      
       public function TutorialManager(param1:ICustomObjectFinder)
       {
          this._ignoredInTutorialComponents = new Vector.<DisplayObject>();
@@ -95,10 +98,11 @@ package net.wg.infrastructure.managers.impl
          this._criteriaHash = {};
          this._shownIds = new Vector.<String>();
          this._compIdToWatchers = {};
-         this._timeoutsIds = new Object();
+         this._timeoutsIds = {};
          this._buildersMap = new BuildersMap();
          this._unboudViewsForRegister = new Dictionary();
          this._unboundComponents = new Dictionary();
+         this._dataUtils = App.utils.data;
          super();
          this._customObjectFinder = param1;
       }
@@ -151,7 +155,7 @@ package net.wg.infrastructure.managers.impl
          var _loc9_:DisplayObject = null;
          var _loc10_:Vector.<String> = null;
          var _loc11_:TutorialComponentPathVO = null;
-         App.utils.data.cleanupDynamicObject(this._descriptions);
+         this._dataUtils.cleanupDynamicObject(this._descriptions);
          for(_loc1_ in this._criteriaHash)
          {
             this._criteriaHash[_loc1_].dispose();
@@ -184,24 +188,24 @@ package net.wg.infrastructure.managers.impl
             _loc10_ = this._aliasToPathsList[_loc6_];
             _loc10_.splice(0,_loc10_.length);
          }
-         App.utils.data.cleanupDynamicObject(this._aliasToPathsList);
+         this._dataUtils.cleanupDynamicObject(this._aliasToPathsList);
          this._aliasToPathsList = null;
          for(_loc7_ in this._fullPathToVO)
          {
             _loc11_ = this._fullPathToVO[_loc7_];
             _loc11_.dispose();
          }
-         App.utils.data.cleanupDynamicObject(this._fullPathToVO);
-         App.utils.data.cleanupDynamicObject(this._idToVO);
-         App.utils.data.cleanupDynamicObject(this._componentToVO);
-         App.utils.data.cleanupDynamicObject(this._isSystemEnabled);
-         App.utils.data.cleanupDynamicObject(this._compIdToWatchers);
+         this._dataUtils.cleanupDynamicObject(this._fullPathToVO);
+         this._dataUtils.cleanupDynamicObject(this._idToVO);
+         this._dataUtils.cleanupDynamicObject(this._componentToVO);
+         this._dataUtils.cleanupDynamicObject(this._isSystemEnabled);
+         this._dataUtils.cleanupDynamicObject(this._compIdToWatchers);
          for each(_loc8_ in this._unboudViewsForRegister)
          {
             _loc8_.dispose();
          }
-         App.utils.data.cleanupDynamicObject(this._unboudViewsForRegister);
-         App.utils.data.cleanupDynamicObject(this._unboundComponents);
+         this._dataUtils.cleanupDynamicObject(this._unboudViewsForRegister);
+         this._dataUtils.cleanupDynamicObject(this._unboundComponents);
          this._componentToVO = null;
          this._fullPathToVO = null;
          this._idToVO = null;
@@ -215,6 +219,9 @@ package net.wg.infrastructure.managers.impl
          this._shownIds = null;
          this._customObjectFinder = null;
          this._buildersMap.dispose();
+         this._buildersMap = null;
+         this._idToView = null;
+         this._dataUtils = null;
          super.onDispose();
       }
       
@@ -968,20 +975,22 @@ package net.wg.infrastructure.managers.impl
          var _loc3_:Object = null;
          var _loc4_:String = null;
          var _loc5_:Array = null;
-         var _loc6_:int = 0;
-         var _loc7_:Array = null;
+         var _loc6_:uint = 0;
+         var _loc7_:int = 0;
+         var _loc8_:Array = null;
          var _loc2_:int = param1.search(PARAMS_REG_EXP);
          if(_loc2_ != -1)
          {
             _loc3_ = {};
             _loc4_ = param1.slice(_loc2_ + 1,param1.length);
             _loc5_ = _loc4_.split("&");
-            _loc6_ = 0;
-            while(_loc6_ < _loc5_.length)
+            _loc6_ = _loc5_.length;
+            _loc7_ = 0;
+            while(_loc7_ < _loc6_)
             {
-               _loc7_ = _loc5_[_loc6_].split("=");
-               _loc3_[_loc7_[0]] = _loc7_[1];
-               _loc6_++;
+               _loc8_ = _loc5_[_loc7_].split("=");
+               _loc3_[_loc8_[0]] = _loc8_[1];
+               _loc7_++;
             }
             return _loc3_;
          }

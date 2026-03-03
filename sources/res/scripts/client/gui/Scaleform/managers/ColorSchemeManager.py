@@ -1,3 +1,4 @@
+from __future__ import absolute_import, division
 import BigWorld
 from gui.Scaleform.framework.entities.abstract.ColorSchemeManagerMeta import ColorSchemeManagerMeta
 from gui.battle_control.arena_info.interfaces import IArenaVehiclesController

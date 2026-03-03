@@ -108,7 +108,10 @@ def getDefaultBonusPackersMap():
        constants.WoTPlusBonusType.BATTLE_BONUSES: wotPlusBonusPacker, 
        constants.WoTPlusBonusType.BADGES: wotPlusBonusPacker, 
        constants.WoTPlusBonusType.ADDITIONAL_BONUSES: wotPlusBonusPacker, 
-       constants.WoTPlusBonusType.OPTIONAL_DEVICES_ASSISTANT: wotPlusBonusPacker}
+       constants.WoTPlusBonusType.OPTIONAL_DEVICES_ASSISTANT: wotPlusBonusPacker, 
+       constants.WoTPlusBonusType.PRO_BOOST: wotPlusBonusPacker, 
+       constants.WoTPlusBonusType.SERVICE_RECORD_CUSTOMIZATION: wotPlusBonusPacker, 
+       constants.WoTPlusBonusType.BATTLE_PASS_PLUS: wotPlusBonusPacker}
 
 
 def getLocalizedBonusName(name):
@@ -983,13 +986,17 @@ class GroupsBonusUIPacker(BaseBonusUIPacker):
     def _pack(cls, bonus):
         model = IconBonusModel()
         cls._packCommon(bonus, model)
-        model.setIcon('default')
+        model.setIcon(cls._getIcon(bonus))
         return [model]
 
     @classmethod
     def _getToolTip(cls, bonus):
         return [
          createTooltipData(makeTooltip(TOOLTIPS.getAwardHeader(bonus.getName()), TOOLTIPS.getAwardBody(bonus.getName())))]
+
+    @classmethod
+    def _getIcon(cls, bonus):
+        return 'default'
 
 
 class BattlePassPointsBonusPacker(SimpleBonusUIPacker):

@@ -20,7 +20,9 @@ package net.wg.gui.lobby.storage.categories.cards
    import net.wg.infrastructure.base.UIComponentEx;
    import net.wg.infrastructure.interfaces.entity.ISoundable;
    import net.wg.infrastructure.managers.ITooltipMgr;
+   import net.wg.utils.IClassFactory;
    import net.wg.utils.ICommons;
+   import net.wg.utils.IScheduler;
    import net.wg.utils.IStageSizeDependComponent;
    import net.wg.utils.StageSizeBoundaries;
    import scaleform.clik.constants.InvalidationType;
@@ -50,7 +52,7 @@ package net.wg.gui.lobby.storage.categories.cards
       
       private static const BG_SHINE_OFFSET_X:int = -1;
       
-      private static const COST_HEGHT:int = 23;
+      private static const COST_HEIGHT:int = 23;
       
       private static const PADDINGS_SMALL:Rectangle = new Rectangle(12,12,260 - 8 - 12 - 2,171 - 8 - 9 - 2);
       
@@ -123,10 +125,19 @@ package net.wg.gui.lobby.storage.categories.cards
       
       private var _fragmentsCostItems:Vector.<BlueprintCostRenderer>;
       
+      private var _scheduler:IScheduler;
+      
+      private var _commons:ICommons;
+      
+      private var _classFactory:IClassFactory;
+      
       public function BlueprintsCard()
       {
          this._tweens = new Vector.<Tween>(0);
          this._fragmentsCostItems = new Vector.<BlueprintCostRenderer>(0);
+         this._scheduler = App.utils.scheduler;
+         this._commons = App.utils.commons;
+         this._classFactory = App.utils.classFactory;
          super();
       }
       
@@ -140,7 +151,7 @@ package net.wg.gui.lobby.storage.categories.cards
       override protected function onDispose() : void
       {
          var _loc1_:BlueprintCostRenderer = null;
-         App.utils.scheduler.cancelTask(dispatchEvent);
+         this._scheduler.cancelTask(dispatchEvent);
          if(App.soundMgr != null)
          {
             App.soundMgr.removeSoundHdlrs(this);
@@ -148,6 +159,9 @@ package net.wg.gui.lobby.storage.categories.cards
          removeEventListener(MouseEvent.ROLL_OVER,this.onRollOverHandler);
          removeEventListener(MouseEvent.ROLL_OUT,this.onRollOutHandler);
          removeEventListener(MouseEvent.CLICK,this.onClickHandler);
+         this._scheduler = null;
+         this._commons = null;
+         this._classFactory = null;
          this._data = null;
          this.navigateButton.dispose();
          this.navigateButton = null;
@@ -236,111 +250,114 @@ package net.wg.gui.lobby.storage.categories.cards
          var _loc10_:int = 0;
          var _loc11_:BlueprintCostRenderer = null;
          super.draw();
-         if(this._data && isInvalid(InvalidationType.DATA))
+         if(this._data)
          {
-            this.titleTF.htmlText = this._data.title;
-            this.descriptionTF.htmlText = this._data.description;
-            this.fragmentsCountTF.htmlText = this._data.fragmentsProgress;
-            this.intelligenceCostTF.htmlText = this._data.intelligenceCostText;
-            this.treeIcon.visible = this._data.availableToUnlock;
-            this.bgShine.visible = this._data.hasDiscount;
-            this.plus.visible = this._data.convertAvailable;
-            _loc1_ = this._data.fragmentsCost;
-            _loc2_ = _loc1_.length;
-            this._fragmentsCostHolder.visible = Boolean(_loc2_);
-            if(_loc2_)
+            if(isInvalid(InvalidationType.DATA))
             {
-               _loc4_ = this._fragmentsCostItems.length;
-               _loc6_ = 0;
-               while(_loc6_ < _loc2_)
+               this.titleTF.htmlText = this._data.title;
+               this.descriptionTF.htmlText = this._data.description;
+               this.fragmentsCountTF.htmlText = this._data.fragmentsProgress;
+               this.intelligenceCostTF.htmlText = this._data.intelligenceCostText;
+               this.treeIcon.visible = this._data.availableToUnlock;
+               this.bgShine.visible = this._data.hasDiscount;
+               this.plus.visible = this._data.convertAvailable;
+               _loc1_ = this._data.fragmentsCost;
+               _loc2_ = _loc1_.length;
+               this._fragmentsCostHolder.visible = Boolean(_loc2_);
+               if(_loc2_)
                {
-                  _loc3_ = _loc1_[_loc6_];
-                  if(_loc6_ < _loc4_)
+                  _loc4_ = this._fragmentsCostItems.length;
+                  _loc6_ = 0;
+                  while(_loc6_ < _loc2_)
                   {
-                     _loc5_ = this._fragmentsCostItems[_loc6_];
-                     _loc5_.visible = true;
-                     _loc5_.updateCostData(_loc3_);
+                     _loc3_ = _loc1_[_loc6_];
+                     if(_loc6_ < _loc4_)
+                     {
+                        _loc5_ = this._fragmentsCostItems[_loc6_];
+                        _loc5_.visible = true;
+                        _loc5_.updateCostData(_loc3_);
+                     }
+                     else
+                     {
+                        _loc5_ = this._classFactory.getComponent(Linkages.STORE_BLUEPRINT_COST_RENDERER,BlueprintCostRenderer);
+                        _loc5_.updateCostData(_loc3_);
+                        this._fragmentsCostItems.push(_loc5_);
+                        this._fragmentsCostHolder.addChild(_loc5_);
+                     }
+                     _loc6_++;
                   }
-                  else
+                  _loc6_ = this._fragmentsCostItems.length - 1;
+                  while(_loc6_ >= _loc2_)
                   {
-                     _loc5_ = App.utils.classFactory.getComponent(Linkages.STORE_BLUEPRINT_COST_RENDERER,BlueprintCostRenderer);
-                     _loc5_.updateCostData(_loc3_);
-                     this._fragmentsCostItems.push(_loc5_);
-                     this._fragmentsCostHolder.addChild(_loc5_);
+                     this._fragmentsCostItems[_loc6_].visible = false;
+                     _loc6_--;
                   }
-                  _loc6_++;
                }
-               _loc6_ = this._fragmentsCostItems.length - 1;
-               while(_loc6_ >= _loc2_)
+               invalidateSize();
+            }
+            if(isInvalid(InvalidationType.SIZE))
+            {
+               if(this.image.source != this._data.image)
                {
-                  this._fragmentsCostItems[_loc6_].visible = false;
-                  _loc6_--;
+                  this.image.alpha = 0;
+                  this.image.sourceAlt = this._data.imageAlt;
+                  this.image.source = this._data.image;
                }
-            }
-            invalidateSize();
-         }
-         if(this._data && isInvalid(InvalidationType.SIZE))
-         {
-            if(this.image.source != this._data.image)
-            {
-               this.image.alpha = 0;
-               this.image.sourceAlt = this._data.imageAlt;
-               this.image.source = this._data.image;
-            }
-            _loc7_ = graphics;
-            _loc7_.clear();
-            _loc7_.lineStyle(1,16777215,0.15);
-            _loc7_.beginFill(0,0.25);
-            _loc7_.drawRoundRect(BORDER_OFFSET,BORDER_OFFSET,width - BORDER_SIZE_CORRECTION,height - BORDER_SIZE_CORRECTION,BORDER_CORNER_RADIUS,BORDER_CORNER_RADIUS);
-            _loc7_.endFill();
-            _loc7_ = this._overlay.graphics;
-            _loc7_.clear();
-            _loc7_.beginFill(1973272);
-            _loc7_.drawRoundRect(1,1,width - OVERLAY_SIZE_CORRECTION,height - OVERLAY_SIZE_CORRECTION,BORDER_CORNER_RADIUS,BORDER_CORNER_RADIUS);
-            _loc7_.endFill();
-            _loc8_ = !!this._useSmallImage ? PADDINGS_SMALL : PADDINGS_BIG;
-            _loc9_ = !!this._useSmallImage ? IMAGE_SIZE_SMALL : IMAGE_SIZE_BIG;
-            this.bgImage.gotoAndStop(!!this._useSmallImage ? BG_STATE_SMALL : BG_STATE_BIG);
-            if(_baseDisposed)
-            {
-               return;
-            }
-            this.titleTF.x = _loc8_.left | 0;
-            this.titleTF.width = _loc8_.width | 0;
-            if(!this._isOver)
-            {
-               this._container.y = this.getContainterRollOutY();
-            }
-            this.descriptionTF.x = _loc8_.left | 0;
-            this.descriptionTF.y = this.titleTF.y + this.titleTF.height + DESCRIPTION_OFFSET_Y | 0;
-            this.descriptionTF.width = _loc8_.width >> 0;
-            this.navigateButton.x = _loc8_.right - this.navigateButton.width >> 0;
-            this.navigateButton.y = _loc8_.bottom - this.navigateButton.height >> 0;
-            this.onImageChange();
-            this.treeIcon.x = _loc8_.right - this.treeIcon.width | 0;
-            this.treeIcon.y = _loc8_.bottom - this.treeIcon.height | 0;
-            this.bgShine.x = width - this.bgShine.width + BG_SHINE_OFFSET_X | 0;
-            this.bgShine.y = 0;
-            this.image.width = _loc9_.width | 0;
-            this.image.height = _loc9_.height | 0;
-            this.image.x = width - this.image.width >> 1;
-            this.fragmentsCountTF.x = _loc8_.right - this.fragmentsCountTF.width | 0;
-            this.fragmentsCountTF.y = _loc8_.top - FRAGMENTS_COUNT_OFFSET_Y | 0;
-            this._fragmentsCostHolder.x = this.intelligenceCostTF.x = _loc8_.left | 0;
-            this._fragmentsCostHolder.y = this.getFragmentsCostHolderY();
-            this.intelligenceCostTF.y = this.getIntelligenceConstY(this._fragmentsCostHolder.y);
-            _loc10_ = 0;
-            for each(_loc11_ in this._fragmentsCostItems)
-            {
-               if(_loc11_.visible)
+               _loc7_ = graphics;
+               _loc7_.clear();
+               _loc7_.lineStyle(1,16777215,0.15);
+               _loc7_.beginFill(0,0.25);
+               _loc7_.drawRoundRect(BORDER_OFFSET,BORDER_OFFSET,width - BORDER_SIZE_CORRECTION,height - BORDER_SIZE_CORRECTION,BORDER_CORNER_RADIUS,BORDER_CORNER_RADIUS);
+               _loc7_.endFill();
+               _loc7_ = this._overlay.graphics;
+               _loc7_.clear();
+               _loc7_.beginFill(1973272);
+               _loc7_.drawRoundRect(1,1,width - OVERLAY_SIZE_CORRECTION,height - OVERLAY_SIZE_CORRECTION,BORDER_CORNER_RADIUS,BORDER_CORNER_RADIUS);
+               _loc7_.endFill();
+               _loc8_ = !!this._useSmallImage ? PADDINGS_SMALL : PADDINGS_BIG;
+               _loc9_ = !!this._useSmallImage ? IMAGE_SIZE_SMALL : IMAGE_SIZE_BIG;
+               this.bgImage.gotoAndStop(!!this._useSmallImage ? BG_STATE_SMALL : BG_STATE_BIG);
+               if(_baseDisposed)
                {
-                  _loc11_.x = _loc10_;
-                  _loc10_ += _loc11_.width + COST_GAP;
+                  return;
                }
-            }
-            if(this.plus.visible)
-            {
-               this.plus.x = width - this.plus.width >> 1;
+               this.titleTF.x = _loc8_.left | 0;
+               this.titleTF.width = _loc8_.width | 0;
+               if(!this._isOver)
+               {
+                  this._container.y = this.getContainterRollOutY();
+               }
+               this.descriptionTF.x = _loc8_.left | 0;
+               this.descriptionTF.y = this.titleTF.y + this.titleTF.height + DESCRIPTION_OFFSET_Y | 0;
+               this.descriptionTF.width = _loc8_.width >> 0;
+               this.navigateButton.x = _loc8_.right - this.navigateButton.width >> 0;
+               this.navigateButton.y = _loc8_.bottom - this.navigateButton.height >> 0;
+               this.onImageChange();
+               this.treeIcon.x = _loc8_.right - this.treeIcon.width | 0;
+               this.treeIcon.y = _loc8_.bottom - this.treeIcon.height | 0;
+               this.bgShine.x = width - this.bgShine.width + BG_SHINE_OFFSET_X | 0;
+               this.bgShine.y = 0;
+               this.image.width = _loc9_.width | 0;
+               this.image.height = _loc9_.height | 0;
+               this.image.x = width - this.image.width >> 1;
+               this.fragmentsCountTF.x = _loc8_.right - this.fragmentsCountTF.width | 0;
+               this.fragmentsCountTF.y = _loc8_.top - FRAGMENTS_COUNT_OFFSET_Y | 0;
+               this._fragmentsCostHolder.x = this.intelligenceCostTF.x = _loc8_.left | 0;
+               this._fragmentsCostHolder.y = this.getFragmentsCostHolderY();
+               this.intelligenceCostTF.y = this.getIntelligenceConstY(this._fragmentsCostHolder.y);
+               _loc10_ = 0;
+               for each(_loc11_ in this._fragmentsCostItems)
+               {
+                  if(_loc11_.visible)
+                  {
+                     _loc11_.x = _loc10_;
+                     _loc10_ += _loc11_.width + COST_GAP;
+                  }
+               }
+               if(this.plus.visible)
+               {
+                  this.plus.x = width - this.plus.width >> 1;
+               }
             }
          }
       }
@@ -447,7 +464,7 @@ package net.wg.gui.lobby.storage.categories.cards
       
       private function getFragmentsCostHolderY() : int
       {
-         return (!!this._useSmallImage ? PADDINGS_SMALL.bottom : PADDINGS_BIG.bottom) - COST_HEGHT - this.getCostOffsetY();
+         return (!!this._useSmallImage ? PADDINGS_SMALL.bottom : PADDINGS_BIG.bottom) - COST_HEIGHT - this.getCostOffsetY();
       }
       
       private function startRollOutTweens() : void
@@ -587,14 +604,14 @@ package net.wg.gui.lobby.storage.categories.cards
       {
          this._isOver = true;
          this.startRollOverTweens();
-         App.utils.scheduler.scheduleTask(dispatchEvent,ROLL_OVER_ANIMATION_DELAY,new CardEvent(CardEvent.PLAY_INFO_SOUND));
+         this._scheduler.scheduleTask(dispatchEvent,ROLL_OVER_ANIMATION_DELAY,new CardEvent(CardEvent.PLAY_INFO_SOUND));
       }
       
       private function onRollOutHandler(param1:MouseEvent) : void
       {
          this._isOver = false;
          this.startRollOutTweens();
-         App.utils.scheduler.cancelTask(dispatchEvent);
+         this._scheduler.cancelTask(dispatchEvent);
       }
       
       private function onClickHandler(param1:MouseEvent) : void
@@ -603,8 +620,7 @@ package net.wg.gui.lobby.storage.categories.cards
          {
             return;
          }
-         var _loc2_:ICommons = App.utils.commons;
-         if(_loc2_.isRightButton(param1))
+         if(this._commons.isRightButton(param1))
          {
             if(this._data.contextMenuId)
             {

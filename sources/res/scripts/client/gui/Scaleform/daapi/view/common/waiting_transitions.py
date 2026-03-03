@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, SCALEFORM
 from gui.Scaleform.daapi.view.external_components import ExternalFlashComponent
 from gui.Scaleform.daapi.view.external_components import ExternalFlashSettings

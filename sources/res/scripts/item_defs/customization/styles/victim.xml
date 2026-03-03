@@ -9,6 +9,9 @@
 			<include>
 				<nations>ussr</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<style>
 			<id>385</id>
@@ -39,6 +42,9 @@
 			<include>
 				<nations>ussr</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<style>
 			<id>386</id>
@@ -69,6 +75,9 @@
 			<include>
 				<nations>ussr</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<style>
 			<id>387</id>
@@ -99,6 +108,9 @@
 			<include>
 				<nations>ussr</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<style>
 			<id>388</id>
@@ -129,6 +141,9 @@
 			<include>
 				<nations>germany</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<style>
 			<id>389</id>
@@ -159,6 +174,9 @@
 			<include>
 				<nations>germany</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<style>
 			<id>390</id>
@@ -189,6 +207,9 @@
 			<include>
 				<nations>germany</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<style>
 			<id>391</id>
@@ -219,6 +240,9 @@
 			<include>
 				<nations>germany</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<style>
 			<id>392</id>
@@ -249,6 +273,9 @@
 			<include>
 				<nations>usa</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<style>
 			<id>393</id>
@@ -279,6 +306,9 @@
 			<include>
 				<nations>usa</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<style>
 			<id>394</id>
@@ -309,6 +339,9 @@
 			<include>
 				<nations>usa</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<style>
 			<id>395</id>
@@ -339,6 +372,9 @@
 			<include>
 				<nations>usa</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<style>
 			<id>396</id>
@@ -369,6 +405,9 @@
 			<include>
 				<nations>china</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<style>
 			<id>397</id>
@@ -399,6 +438,9 @@
 			<include>
 				<nations>china</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<style>
 			<id>398</id>
@@ -429,6 +471,9 @@
 			<include>
 				<nations>china</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<style>
 			<id>399</id>
@@ -459,6 +504,9 @@
 			<include>
 				<nations>china</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<style>
 			<id>400</id>
@@ -489,6 +537,9 @@
 			<include>
 				<nations>france</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<style>
 			<id>401</id>
@@ -519,6 +570,9 @@
 			<include>
 				<nations>france</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<style>
 			<id>402</id>
@@ -549,6 +603,9 @@
 			<include>
 				<nations>france</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<style>
 			<id>403</id>
@@ -579,6 +636,9 @@
 			<include>
 				<nations>france</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<style>
 			<id>404</id>
@@ -609,6 +669,9 @@
 			<include>
 				<nations>uk</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<style>
 			<id>405</id>
@@ -639,6 +702,9 @@
 			<include>
 				<nations>uk</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<style>
 			<id>406</id>
@@ -669,6 +735,9 @@
 			<include>
 				<nations>uk</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<style>
 			<id>407</id>
@@ -699,6 +768,9 @@
 			<include>
 				<nations>uk</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<style>
 			<id>408</id>
@@ -729,6 +801,9 @@
 			<include>
 				<nations>japan</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<style>
 			<id>409</id>
@@ -759,6 +834,9 @@
 			<include>
 				<nations>japan</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<style>
 			<id>410</id>
@@ -789,6 +867,9 @@
 			<include>
 				<nations>japan</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<style>
 			<id>411</id>
@@ -819,6 +900,9 @@
 			<include>
 				<nations>japan</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<style>
 			<id>412</id>
@@ -849,6 +933,9 @@
 			<include>
 				<nations>czech</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<style>
 			<id>413</id>
@@ -879,6 +966,9 @@
 			<include>
 				<nations>czech</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<style>
 			<id>414</id>
@@ -909,6 +999,9 @@
 			<include>
 				<nations>czech</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<style>
 			<id>415</id>
@@ -939,6 +1032,9 @@
 			<include>
 				<nations>czech</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<style>
 			<id>416</id>
@@ -969,6 +1065,9 @@
 			<include>
 				<nations>sweden</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<style>
 			<id>417</id>
@@ -999,6 +1098,9 @@
 			<include>
 				<nations>sweden</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<style>
 			<id>418</id>
@@ -1029,6 +1131,9 @@
 			<include>
 				<nations>sweden</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<style>
 			<id>419</id>
@@ -1059,6 +1164,9 @@
 			<include>
 				<nations>sweden</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<style>
 			<id>420</id>
@@ -1089,6 +1197,9 @@
 			<include>
 				<nations>italy</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<style>
 			<id>421</id>
@@ -1119,6 +1230,9 @@
 			<include>
 				<nations>italy</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<style>
 			<id>422</id>
@@ -1149,6 +1263,9 @@
 			<include>
 				<nations>italy</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<style>
 			<id>423</id>
@@ -1179,6 +1296,9 @@
 			<include>
 				<nations>italy</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<style>
 			<id>424</id>
@@ -1209,6 +1329,9 @@
 			<include>
 				<nations>poland</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<style>
 			<id>425</id>
@@ -1239,6 +1362,9 @@
 			<include>
 				<nations>poland</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<style>
 			<id>426</id>
@@ -1269,6 +1395,9 @@
 			<include>
 				<nations>poland</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<style>
 			<id>427</id>
@@ -1299,6 +1428,9 @@
 			<include>
 				<nations>poland</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<style>
 			<id>428</id>
