@@ -852,7 +852,7 @@ class _ClanPersonalInvitesListener(_ClanNotificationsCommonListener):
 
     def onAccountWebVitalInfoChanged(self, fieldName, value):
         super(_ClanPersonalInvitesListener, self).onAccountWebVitalInfoChanged(fieldName, value)
-        if SYNC_KEYS.CLAN_INFO == fieldName:
+        if fieldName == SYNC_KEYS.CLAN_INFO:
             profile = self.webCtrl.getAccountProfile()
             if not profile.isInClan():
                 self.__updateNotificationsByTypes((NOTIFICATION_TYPE.CLAN_INVITE,))
@@ -1461,7 +1461,7 @@ class RecertificationFormStateListener(_NotificationListener):
         super(RecertificationFormStateListener, self).stop()
 
     def _getState(self):
-        if not self.__goodiesCache.getRecertificationForm(currency='gold').enabled:
+        if not self.__goodiesCache.getRecertificationForm(currency='credits').enabled:
             return SwitchState.DISABLED.value
         return self.__lobbyContext.getServerSettings().recertificationFormState()
 
@@ -2298,7 +2298,7 @@ class EasyTankEquipStateListener(_NotificationListener):
 class LootBoxSystemListener(_NotificationListener):
     __slots__ = ('__isActive', '__isLootBoxesWasStarted')
     __lootBoxes = dependency.descriptor(ILootBoxSystemController)
-    __nameRes = ('eventName/lowerCase').split('/')
+    __nameRes = ['eventName', 'lowerCase']
     __START_ENTITY_ID = 0
 
     def __init__(self):
@@ -2348,7 +2348,7 @@ class LootBoxSystemListener(_NotificationListener):
         return
 
     def __pushStarted(self, eventName):
-        res = ('serviceChannelMessages/start').split('/')
+        res = ['serviceChannelMessages', 'start']
         model = self._model()
         if model is not None:
             _, finish = self.__lootBoxes.getActiveTime(eventName)
@@ -2361,19 +2361,20 @@ class LootBoxSystemListener(_NotificationListener):
         return
 
     def __pushFinished(self, eventName, boxesCount):
-        res = ('serviceChannelMessages/finish').split('/')
+        res = [
+         'serviceChannelMessages', 'finish']
         eventNameText = backport.text(getTextResource(self.__nameRes, eventName)())
         SystemMessages.pushMessage(text=backport.text(R.strings.lootbox_system.helpers.doubleBreakLine()) + backport.text(getTextResource(res + [NotificationPathPart.TEXT], eventName)()) if boxesCount > 0 else '', priority=NotificationPriorityLevel.MEDIUM, type=SystemMessages.SM_TYPE.LootBoxSystemFinish, messageData={'header': backport.text(getTextResource(res + [NotificationPathPart.HEADER], eventName)(), eventName=eventNameText)})
         self.__lootBoxes.setSetting(eventName, LOOT_BOXES_WAS_FINISHED, True)
 
     @staticmethod
     def __pushLootBoxesEnabled(eventName):
-        res = ('serviceChannelMessages/lootBoxesEnabled').split('/')
+        res = ['serviceChannelMessages', 'lootBoxesEnabled']
         SystemMessages.pushMessage(text=backport.text(getTextResource(res + [NotificationPathPart.TEXT], eventName)()), priority=NotificationPriorityLevel.HIGH, type=SystemMessages.SM_TYPE.LootBoxSystemEnabled, messageData={'header': backport.text(getTextResource(res + [NotificationPathPart.HEADER], eventName)())})
 
     @staticmethod
     def __pushLootBoxesDisabled(eventName):
-        res = ('serviceChannelMessages/lootBoxesDisabled').split('/')
+        res = ['serviceChannelMessages', 'lootBoxesDisabled']
         SystemMessages.pushMessage(text=backport.text(getTextResource(res + [NotificationPathPart.TEXT], eventName)()), priority=NotificationPriorityLevel.HIGH, type=SystemMessages.SM_TYPE.LootBoxSystemDisabled, messageData={'header': backport.text(getTextResource(res + [NotificationPathPart.HEADER], eventName)())})
 
 

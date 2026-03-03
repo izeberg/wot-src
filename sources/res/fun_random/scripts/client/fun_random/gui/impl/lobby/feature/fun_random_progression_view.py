@@ -1,5 +1,5 @@
 from __future__ import absolute_import
-import BigWorld, math_utils
+import json, BigWorld, math_utils
 from account_helpers.AccountSettings import AccountSettings, FUN_RANDOM_PROGRESSION_OPENED, FUN_RANDOM_PROGRESSION, FUN_RANDOM_PROGR_PREV_COUNTER, FUN_RANDOM_INF_PROGR_PREV_COUNTER, FUN_RANDOM_INF_PROGR_PREV_COMPLETE_COUNT
 from frameworks.wulf import ViewSettings, WindowFlags
 from fun_random.gui.feature.fun_sounds import FUN_PROGRESSION_SOUND_SPACE
@@ -15,7 +15,6 @@ from gui.impl.gen.view_models.views.loot_box_compensation_tooltip_types import L
 from gui.impl.gen.view_models.views.loot_box_vehicle_compensation_tooltip_model import LootBoxVehicleCompensationTooltipModel
 from gui.impl.lobby.common.view_wrappers import createBackportTooltipDecorator
 from gui.impl.lobby.tooltips.additional_rewards_tooltip import AdditionalRewardsTooltip
-from gui.impl.lobby.lootbox_system.base.tooltips.box_tooltip import BoxTooltip
 from gui.impl.pub import ViewImpl, WindowImpl
 from gui.shared.event_dispatcher import showHangar
 _DESTROY_ACTION_NAME = 'showHangar'
@@ -57,26 +56,20 @@ class FunRandomProgressionView(ViewImpl, FunAssetPacksMixin, FunProgressionWatch
             if lootboxID:
                 return FunRandomLootBoxTooltipView(lootboxID)
             return
-        if contentID == R.views.mono.lootbox.tooltips.box_tooltip():
-            tooltipData = self.getTooltipData(event)
-            if tooltipData is None:
-                return
-            return BoxTooltip(*tooltipData.specialArgs)
-        else:
-            tooltipId = event.getArgument('tooltipId')
-            tc = R.views.lobby.awards.tooltips.RewardCompensationTooltip()
-            if event.contentID == tc:
-                if tooltipId in self.__tooltips:
-                    tooltipData = {'iconBefore': event.getArgument('iconBefore', ''), 'labelBefore': event.getArgument('labelBefore', ''), 
-                       'iconAfter': event.getArgument('iconAfter', ''), 
-                       'labelAfter': event.getArgument('labelAfter', ''), 
-                       'bonusName': event.getArgument('bonusName', ''), 
-                       'countBefore': event.getArgument('countBefore', 1), 
-                       'tooltipType': LootBoxCompensationTooltipTypes.VEHICLE}
-                    tooltipData.update(self.__tooltips[tooltipId].specialArgs)
-                    settings = ViewSettings(tc, model=LootBoxVehicleCompensationTooltipModel(), kwargs=tooltipData)
-                    return VehicleCompensationTooltipContent(settings)
-            return super(FunRandomProgressionView, self).createToolTipContent(event, contentID)
+        tooltipId = event.getArgument('tooltipId')
+        tc = R.views.lobby.awards.tooltips.RewardCompensationTooltip()
+        if event.contentID == tc:
+            if tooltipId in self.__tooltips:
+                tooltipData = {'iconBefore': event.getArgument('iconBefore', ''), 'labelBefore': event.getArgument('labelBefore', ''), 
+                   'iconAfter': event.getArgument('iconAfter', ''), 
+                   'labelAfter': event.getArgument('labelAfter', ''), 
+                   'bonusName': event.getArgument('bonusName', ''), 
+                   'countBefore': event.getArgument('countBefore', 1), 
+                   'tooltipType': LootBoxCompensationTooltipTypes.VEHICLE}
+                tooltipData.update(self.__tooltips[tooltipId].specialArgs)
+                settings = ViewSettings(tc, model=LootBoxVehicleCompensationTooltipModel(), kwargs=tooltipData)
+                return VehicleCompensationTooltipContent(settings)
+        return super(FunRandomProgressionView, self).createToolTipContent(event, contentID)
 
     def getTooltipData(self, event):
         tooltipId = event.getArgument('tooltipId')
@@ -118,6 +111,7 @@ class FunRandomProgressionView(ViewImpl, FunAssetPacksMixin, FunProgressionWatch
             wasOpened = AccountSettings.getSettings(settingsKey)
             model.setAssetsPointer(self.getModeAssetsPointer())
             model.setIsFirstOpen(not wasOpened)
+            model.setModeViewSettings(json.dumps(self.getModeAssetsConfiguration().progressionView.toDict()))
             modeName = self.getModeUserName()
             packProgressionState(progression, model.state)
             packProgressionStages(progression, model.getStages(), self.__tooltips)

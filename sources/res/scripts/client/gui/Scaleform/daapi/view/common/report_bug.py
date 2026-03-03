@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from adisp import adisp_process
 from gui import GUI_SETTINGS, DialogsInterface, makeHtmlString
 from gui.Scaleform.daapi.view.dialogs import DIALOG_BUTTON_ID

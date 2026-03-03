@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.Scaleform.genConsts.CURRENCIES_CONSTANTS import CURRENCIES_CONSTANTS
 from gui.Scaleform.genConsts.TOOLTIPS_CONSTANTS import TOOLTIPS_CONSTANTS
 from gui.impl.lobby.exchange.discount_info_tooltip_decorator import DiscountInfoTooltipContentWindowData, LimitedDiscountInfoTooltipContentWindowData

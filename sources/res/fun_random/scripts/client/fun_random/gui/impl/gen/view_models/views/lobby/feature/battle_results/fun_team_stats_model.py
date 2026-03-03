@@ -5,7 +5,7 @@ from gui.impl.gen.view_models.views.lobby.battle_results.team_stats_model import
 class FunTeamStatsModel(TeamStatsModel):
     __slots__ = ()
 
-    def __init__(self, properties=9, commands=1):
+    def __init__(self, properties=8, commands=1):
         super(FunTeamStatsModel, self).__init__(properties=properties, commands=commands)
 
     def getAllies(self):
@@ -28,21 +28,14 @@ class FunTeamStatsModel(TeamStatsModel):
     def getEnemiesType():
         return FunPlayerModel
 
-    def getSortingColumn(self):
-        return self._getString(7)
-
-    def setSortingColumn(self, value):
-        self._setString(7, value)
-
     def getIsSingleTeamPostbattle(self):
-        return self._getBool(8)
+        return self._getBool(7)
 
     def setIsSingleTeamPostbattle(self, value):
-        self._setBool(8, value)
+        self._setBool(7, value)
 
     def _initialize(self):
         super(FunTeamStatsModel, self)._initialize()
         self._addArrayProperty('allies', Array())
         self._addArrayProperty('enemies', Array())
-        self._addStringProperty('sortingColumn', 'spiritPoints')
         self._addBoolProperty('isSingleTeamPostbattle', False)

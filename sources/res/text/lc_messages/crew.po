@@ -13,6 +13,9 @@ msgstr ""
 msgid "barracks/action/enlarge"
 msgstr "扩充"
 
+msgid "barracks/action/retireUndertrained"
+msgstr "解雇训练不足的乘员"
+
 msgid "barracks/bunks/title"
 msgstr "床位:"
 
@@ -30,6 +33,19 @@ msgstr "原价: 每%(bunksCount)s个床位%(currency)s"
 
 msgid "barracks/enlarge/header"
 msgstr "扩充兵营？"
+
+msgid "barracks/retireUndertrainedTooltip/description"
+msgstr ""
+"您可以解雇兵营中训练不足的乘员——这些乘员拥有的经验低于{whiteSpanish_Open}210060{whiteSpanish_Close}{icon}，无法将首项特长训练至{whiteSpanish_Open}100%{whiteSpanish_Close}。"
+
+msgid "barracks/retireUndertrainedTooltip/header"
+msgstr "训练不足的乘员"
+
+msgid "barracks/retireUndertrainedTooltip/noUndertrainedMembers"
+msgstr "您没有训练不足的乘员"
+
+msgid "barracks/retireUndertrainedTooltip/warning"
+msgstr "解雇训练不足的乘员不会获得任何补偿。一经解雇，乘员将无法恢复，其所有经验也将丢失。"
 
 msgid "barracks/title"
 msgstr "兵营"
@@ -88,30 +104,17 @@ msgstr "下列物品已添加至您的账号。"
 msgid "conversionConfirm/button/cancel/label"
 msgstr "取消"
 
-msgid "conversionConfirm/button/convert/label"
-msgstr "转换"
+msgid "conversionConfirm/button/retire/label"
+msgstr "解雇"
 
 msgid "conversionConfirm/button/showTankmen/label"
-msgstr "您将转换的乘员数: {amount}"
-
-msgid "conversionConfirm/description"
-msgstr ""
-"欲知您将获得的乘员手册详情，将鼠标移至乘员手册图标上方即可。\n"
-"点击下方按钮，即可查看关于可转换乘员的更多信息。"
-
-msgid "conversionConfirm/empty"
-msgstr ""
-"{alertIcon}您没有可以获得\n"
-"补偿的经验。"
-
-msgid "conversionConfirm/subTitle"
-msgstr ""
-"您可以将兵营中训练不足的乘员转换成乘员手册。\n"
-"训练不足的乘员是指首个特长未训练至100%，\n"
-"且不拥有“零历练”特长，也不属于独特或奖励人物的乘员。"
+msgstr "将被解雇的乘员: {amount}"
 
 msgid "conversionConfirm/title"
-msgstr "乘员转换"
+msgstr "解雇训练不足的乘员？"
+
+msgid "conversionConfirm/warning"
+msgstr "解雇训练不足的乘员不会获得任何补偿。一经解雇，乘员将无法恢复，其所有经验也将丢失。"
 
 msgid "crewBanner/button/fill/label"
 msgstr "自动选择特长"
@@ -386,12 +389,11 @@ msgstr "收到！"
 
 msgid "junkTankmen/description"
 msgstr ""
-"兵营中训练不足的乘员名单，他们所拥有的经验不足以将首个特长训练至100%，\n"
-"且不具有“零历练”特长，也不属于独特或奖励人物。\n"
-"这些乘员将被转换。"
+"这些乘员拥有的经验低于{bond_Open}210060{bond_Close}{icon}，无法将首项特长训练至{whiteSpanish_Open}100%{whiteSpanish_Close}。\n"
+"他们将从您的账号中移除。"
 
 msgid "junkTankmen/title"
-msgstr "乘员转换"
+msgstr "解雇训练不足的乘员？"
 
 msgid "matrix/bonusTooltip/description"
 msgstr ""
@@ -932,3 +934,21 @@ msgstr "名称最长不得超过%(maxLength)s个字符。"
 
 msgid "vehicleParamsDecorator/perkTip"
 msgstr "*将鼠标移动至特长上方，即可查看按当前的特长效率水平，该特长在训练至100%熟练度后对相应参数所产生的效果。"
+
+msgid "welcomeScreen/button/affirmative"
+msgstr "收到!"
+
+msgid "welcomeScreen/item1/description"
+msgstr "每个专业都引入了2项全新特长，重制了可靠布局，并且新增了一个可在战斗平视显示系统中隐藏特长的选项。"
+
+msgid "welcomeScreen/item2/description"
+msgstr "一项便捷的全新操作，让您一键解雇训练不足的乘员。"
+
+msgid "welcomeScreen/item3/description"
+msgstr "现在可以只使用银币重置特长，而不会损失经验。"
+
+msgid "welcomeScreen/subTitle"
+msgstr "新增了全新特长和功能，并更新了一项现有特长。"
+
+msgid "welcomeScreen/title"
+msgstr "乘员系统更新"

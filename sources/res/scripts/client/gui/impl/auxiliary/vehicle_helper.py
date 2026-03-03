@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import math, typing
 from gui.shared.gui_items.Vehicle import VEHICLE_TAGS
 if typing.TYPE_CHECKING:

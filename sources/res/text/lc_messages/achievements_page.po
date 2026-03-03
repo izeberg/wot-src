@@ -103,10 +103,10 @@ msgid "editConfirm/title/normal"
 msgstr "应用战斗勋章缎带改动？"
 
 msgid "editView/footer/button/cancel"
-msgstr "取消改动"
+msgstr "放弃并离开"
 
 msgid "editView/footer/button/save"
-msgstr "应用并退出"
+msgstr "应用并离开"
 
 msgid "editView/header/checkbox"
 msgstr "自动展示"
@@ -279,6 +279,36 @@ msgstr " 最后一场战斗: %(lastVisitDate)s%(lastVisitTime)s"
 
 msgid "summary/accountInfo/registrationDate"
 msgstr "账号创建于: %(registrationDate)s"
+
+msgid "summary/achievements/customization/background"
+msgstr "背景"
+
+msgid "summary/achievements/customization/backgrounds/default"
+msgstr "默认"
+
+msgid "summary/achievements/customization/backgrounds/fiery"
+msgstr "烈火"
+
+msgid "summary/achievements/customization/backgrounds/golden"
+msgstr "金光"
+
+msgid "summary/achievements/customization/backgrounds/legendary"
+msgstr "传说"
+
+msgid "summary/achievements/customization/backgrounds/retro"
+msgstr "复古"
+
+msgid "summary/achievements/customization/backgrounds/smashing"
+msgstr "炸裂"
+
+msgid "summary/achievements/customization/discard"
+msgstr "放弃并离开"
+
+msgid "summary/achievements/customization/ribbon"
+msgstr "缎带"
+
+msgid "summary/achievements/customization/save"
+msgstr "应用并离开"
 
 msgid "summary/achievements/mastery/counter"
 msgstr "%(current)s/%(total)s"

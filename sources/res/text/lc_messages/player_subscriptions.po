@@ -47,10 +47,10 @@ msgid "reward/viewTitle"
 msgstr "已获得奖励！"
 
 msgid "subscriptionItem/active"
-msgstr "激活。"
+msgstr "已激活"
 
 msgid "subscriptionItem/activeUntil"
-msgstr "有效期至%(chargeDate)"
+msgstr "到期时间%(chargeDate)"
 
 msgid "subscriptionItem/button/activate"
 msgstr "订阅"
@@ -82,17 +82,23 @@ msgstr "选择"
 msgid "subscriptionItem/button/subscribe"
 msgstr "订阅"
 
+msgid "subscriptionItem/button/upgrade"
+msgstr "升级"
+
 msgid "subscriptionItem/cancelled"
-msgstr "已取消。"
+msgstr "已取消"
 
 msgid "subscriptionItem/nextCharge"
 msgstr "续订时间%(chargeDate)"
+
+msgid "subscriptionItem/plan"
+msgstr "天方案"
 
 msgid "subscriptionItem/timerLabel"
 msgstr "距优惠结束还有:"
 
 msgid "subtitle"
-msgstr "在游戏中获得更多机遇"
+msgstr "畅享游戏中的所有内容"
 
 msgid "title"
 msgstr "订阅"

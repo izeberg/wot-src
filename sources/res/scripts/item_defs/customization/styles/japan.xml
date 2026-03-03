@@ -9,6 +9,9 @@
 			<include>
 				<nations>japan</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<style>
 			<id>5</id>
@@ -66,6 +69,9 @@
 			<include>
 				<nations>japan</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<style>
 			<id>38</id>
@@ -210,6 +216,9 @@
 			<include>
 				<nations>japan</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<style>
 			<id>152</id>
@@ -267,6 +276,9 @@
 			<include>
 				<nations>japan</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<style>
 			<id>43</id>
@@ -348,6 +360,9 @@
 			<include>
 				<nations>japan</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<style>
 			<id>67</id>
@@ -664,6 +679,8 @@
 								<item>
 									<slotId>18000</slotId>
 									<id>59</id>
+									<scaleFactorId>0</scaleFactorId>
+									<rotated>0</rotated>
 								</item>
 							</attachments>
 						</outfit>

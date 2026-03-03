@@ -1,4 +1,7 @@
+from __future__ import absolute_import, division
 import typing
+from future.utils import viewkeys, viewvalues
+import BigWorld, BattleReplay
 from CurrentVehicle import g_currentVehicle
 from constants import SEASON_NAME_BY_TYPE
 from gui.Scaleform.locale.RES_ICONS import RES_ICONS
@@ -16,6 +19,7 @@ from gui.shared.gui_items.dossier.achievements import isMarkOfMasteryAchieved
 from gui.shared.utils.requesters import REQ_CRITERIA
 from helpers.i18n import makeString as ms
 from helpers import dependency
+from math_common import round_py2_style_int
 from skeletons.gui.game_control import IBattleRoyaleController
 if typing.TYPE_CHECKING:
     from skeletons.gui.shared import IItemsCache
@@ -224,10 +228,13 @@ class CarouselDataProvider(SortableDAAPIDataProvider):
             criteria = self._baseCriteria | REQ_CRITERIA.VEHICLE.ACTIVE_IN_NATION_GROUP
             newVehiclesCollection = self._itemsCache.items.getVehicles(criteria | filterCriteria)
             oldVehiclesCDs = [ vehicle.intCD for vehicle in self._vehicles ]
-            isVehicleRemoved = not set(vehiclesCDs or ()).issubset(newVehiclesCollection.viewkeys())
+            isVehicleRemoved = not set(vehiclesCDs or ()).issubset(viewkeys(newVehiclesCollection))
             isVehicleAdded = not set(vehiclesCDs or ()).issubset(oldVehiclesCDs)
             if isFullResync or isVehicleAdded or isVehicleRemoved:
-                self.buildList()
+                if BattleReplay.isPlaying():
+                    BigWorld.callback(0.1, self.buildList)
+                else:
+                    self.buildList()
             else:
                 self._updateVehicleItems(newVehiclesCollection.values(), forceUpdate)
             return
@@ -310,7 +317,7 @@ class CarouselDataProvider(SortableDAAPIDataProvider):
             return
         vehiclesDict = self._itemsCache.items.getVehicles(criteria)
         vehicleIcons = []
-        for vehicle in vehiclesDict.itervalues():
+        for vehicle in viewvalues(vehiclesDict):
             vehicleIcons.append(vehicle.icon)
             self._vehicles.append(vehicle)
             vehicleDataVO = self._buildVehicle(vehicle)
@@ -348,7 +355,7 @@ class CarouselDataProvider(SortableDAAPIDataProvider):
                 else:
                     markOfMasteryText = ''
                 winsEfficiency = 100.0 * wins / battlesCount if battlesCount else 0
-                winsEfficiencyStr = backport.getIntegralFormat(round(winsEfficiency)) + '%'
+                winsEfficiencyStr = backport.getIntegralFormat(round_py2_style_int(winsEfficiency)) + '%'
                 winsText = makeHtmlString('html_templates:lobby/tank_carousel/statistic', 'wins', ctx={'wins': winsEfficiencyStr})
                 vehDossier = self._itemsCache.items.getVehicleDossier(intCD)
                 vehStats = vehDossier.getTotalStats()

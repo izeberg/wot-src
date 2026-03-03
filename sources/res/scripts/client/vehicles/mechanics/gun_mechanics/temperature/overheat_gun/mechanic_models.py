@@ -46,8 +46,8 @@ class OverheatGunMechanicState(IOverheatGunMechanicState):
         self.__params = params
 
     @classmethod
-    def fromComponentStatus(cls, state, params):
-        return cls(state, params)
+    def fromComponentStatus(cls, overheatState, params):
+        return cls(overheatState, params)
 
     @property
     def isOverheated(self):
@@ -60,9 +60,9 @@ class OverheatGunMechanicState(IOverheatGunMechanicState):
     def isTransition(self, other):
         return self.overheatState != other.overheatState
 
-    def overheatTimeLeft(self, temperatureState):
+    def overheatTimeLeft(self, temperatureGunState):
         if self.isOverheated:
-            return temperatureState.getCoolingTime(self.__params.overheatOffThreshold)
+            return temperatureGunState.getCoolingTime(self.__params.overheatOffThreshold)
         return -1.0
 
 

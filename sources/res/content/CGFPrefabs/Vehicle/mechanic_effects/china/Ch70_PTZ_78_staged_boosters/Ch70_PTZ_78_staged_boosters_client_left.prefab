@@ -4627,6 +4627,20 @@
 			</component>
 		</ComponentPool>
 		<ComponentPool>
+			<type>DistToTerrainComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>cba3d525-da51-43e1-812a-0389d1256798</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>transfromLink</name>
+						<link>cba3d525-da51-43e1-812a-0389d1256798</link>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
 			<type>NozzleController</type>
 			<version>1</version>
 			<component>
@@ -4812,6 +4826,15 @@
 			<component>
 				<UUID>dd8ebd05-04ee-4ebf-bc37-25a27f06c8e5</UUID>
 				<flags>1</flags>
+				<config>
+					<property>
+						<name>endOffset</name>
+						<value>
+							0.2
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
 			</component>
 		</ComponentPool>
 		<ComponentPool>

@@ -23,6 +23,9 @@
 			<exclude>
 				<vehicles>china:Ch01_Type59_Gold</vehicles>
 			</exclude>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<camouflage>
 			<id>15321</id>
@@ -266,6 +269,9 @@
 			</include>
 			<exclude>
 				<vehicles>china:Ch01_Type59_Gold</vehicles>
+			</exclude>
+			<exclude>
+				<tags>excluded_from_customization</tags>
 			</exclude>
 		</vehicleFilter>
 		<camouflage>
@@ -519,6 +525,9 @@
 			<exclude>
 				<vehicles>china:Ch01_Type59_Gold</vehicles>
 			</exclude>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<camouflage>
 			<id>15322</id>
@@ -762,6 +771,9 @@
 			</include>
 			<exclude>
 				<vehicles>china:Ch01_Type59_Gold</vehicles>
+			</exclude>
+			<exclude>
+				<tags>excluded_from_customization</tags>
 			</exclude>
 		</vehicleFilter>
 		<camouflage>
@@ -1010,6 +1022,9 @@
 			</include>
 			<exclude>
 				<vehicles>china:Ch01_Type59_Gold</vehicles>
+			</exclude>
+			<exclude>
+				<tags>excluded_from_customization</tags>
 			</exclude>
 		</vehicleFilter>
 		<camouflage>

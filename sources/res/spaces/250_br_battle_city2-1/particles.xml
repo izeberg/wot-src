@@ -476,6 +476,10 @@
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_tex_snow_250_br_battle.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
 			<texture>particles/content_deferred/PFX_textures/eff_tex_83_kharkiv_fire.dds</texture>
 		</preload>
 		<fn_effect_bin>particles/Environment/Battle_Royal/Loot_Area/br_flare_green_end.eff</fn_effect_bin>

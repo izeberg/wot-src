@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from BWUtil import AsyncReturn
 from gui.impl.dialogs.dialog_template_utils import closeDialogTemplate
 from gui.impl.gen import R

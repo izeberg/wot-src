@@ -16,25 +16,12 @@ msgstr "两条进攻路径被地图中央的沼泽分隔开来。东边是进行
 msgid "01_karelia/name"
 msgstr "卡累利阿"
 
-msgid "01_karelia_fp/description"
-msgstr "两条进攻路径被地图中央的沼泽分隔开来。东边是进行堑壕战的理想位置，西边的地形则有利于强攻。从沼泽进攻风险较大，但可能会有出其不意的效果。"
-
-msgid "01_karelia_fp/name"
-msgstr "卡累利阿(冬季)"
-
 msgid "02_malinovka/description"
 msgstr ""
 "双方队伍的出生点被一片平坦开阔的地域相隔，非常适合自行火炮射击，也是进行防御的理想地形。掩体包括树林、山丘和农舍等，合理利用它们能够对战斗结果产生决定性影响。进攻方最好采用侧袭战术，但也可以在队友的配合下，利用高机动在开阔地带发动突击，这有可能会取得胜利，但也有可能遭受惨败。"
 
 msgid "02_malinovka/name"
 msgstr "马利诺夫卡"
-
-msgid "02_malinovka_fp/description"
-msgstr ""
-"双方队伍的出生点被一片平坦开阔的地域相隔，非常适合自行火炮射击，也是进行防御的理想地形。掩体包括树林、山丘和农舍等，合理利用它们能够对战斗结果产生决定性影响。进攻方最好采用侧袭战术，但也可以在队友的配合下，利用高机动在开阔地带发动突击，这有可能会取得胜利，但也有可能遭受惨败。"
-
-msgid "02_malinovka_fp/name"
-msgstr "马利诺夫卡(冬季)"
 
 msgid "03_campania_big/description"
 msgstr ""
@@ -56,13 +43,6 @@ msgstr ""
 
 msgid "05_prohorovka/name"
 msgstr "普罗霍洛夫卡"
-
-msgid "05_prohorovka_fp/description"
-msgstr ""
-"这张地图总体上地形开阔，拥有一座大型山丘以及铁路路基。星罗棋布的树丛是自行反坦克炮最好的掩护。进攻方最好从侧翼发动突击，但要注意保护己方侧翼。可供自行火炮利用的作战区域较多，但容易受到轻型坦克的突袭。"
-
-msgid "05_prohorovka_fp/name"
-msgstr "普罗霍洛夫卡(冬季)"
 
 msgid "06_ensk/description"
 msgstr ""
@@ -140,9 +120,6 @@ msgstr ""
 msgid "10_hills/name"
 msgstr "湖边的角逐"
 
-msgid "10_hills_lunar_26/name"
-msgstr "湖边的角逐"
-
 msgid "112_eiffel_tower_ctf/description"
 msgstr "蜿蜒的街道，为盟友的重型坦克提供了良好的掩护。中心区域比较危险，因为会受到来自四面八方的射击，而河堤是机动坦克快速通过的理想区域。"
 
@@ -210,6 +187,24 @@ msgstr ""
 
 msgid "13_erlenberg/name"
 msgstr "埃勒斯堡"
+
+msgid "140_fall_tanks/description"
+msgstr "在摇摇欲坠的平台、危险的深渊间展开自由竞赛，抢先抵达检查点是通往胜利的关键。"
+
+msgid "140_fall_tanks/name"
+msgstr "老派"
+
+msgid "141_dash_to_go/description"
+msgstr "在摇摇欲坠的平台、危险的深渊间展开自由竞赛，抢先抵达检查点是通往胜利的关键。"
+
+msgid "141_dash_to_go/name"
+msgstr "新派"
+
+msgid "142_road_to_dash/description"
+msgstr "在摇摇欲坠的平台、危险的深渊间展开自由竞赛，抢先抵达检查点是通往胜利的关键。"
+
+msgid "142_road_to_dash/name"
+msgstr "缠斗派"
 
 msgid "14_siegfried_line/description"
 msgstr "地图由开阔的地域和城市街区组成。蜿蜒的街道能够为您迂回到敌人后方发动奇袭提供机会，大量的堡垒也能为您提供掩护。"
@@ -313,9 +308,6 @@ msgstr ""
 msgid "28_desert/name"
 msgstr "荒漠小镇"
 
-msgid "28_desert_lunar_26/name"
-msgstr "荒漠小镇"
-
 msgid "29_el_hallouf/description"
 msgstr ""
 "地图中央是一片宽阔的山谷，山谷中遍布巨石和树木。山谷两侧地势较高的山脊是天然的狙击点。无论试图占领哪一方的基地都称得上是一项壮举，因为它们都位于易守难攻的丘陵地带。"
@@ -352,9 +344,6 @@ msgstr ""
 "总的来说这张地图较为开阔，可以从多个方向发动攻击，但不要分兵过多。沿地图中央的道路可以直达敌方基地，但会困难重重。地图的边缘的道路是发起进攻和佯攻更好的选择。"
 
 msgid "35_steppes/name"
-msgstr "荒蛮之地"
-
-msgid "35_steppes_lunar_26/name"
 msgstr "荒蛮之地"
 
 msgid "35_steppes_wt/name"
@@ -402,9 +391,6 @@ msgstr ""
 "这张地图拥有许多道路和峡谷，为轻型坦克和自行火炮大显身手提供了充足的机会。城墙上的开口是高机动车辆发动快速攻击的理想地点。其他车辆应专注于从主要路线发动进攻。"
 
 msgid "59_asia_great_wall/name"
-msgstr "钢铁壁垒"
-
-msgid "59_asia_great_wall_lunar_26/name"
 msgstr "钢铁壁垒"
 
 msgid "60_asia_miao/description"

@@ -8,6 +8,9 @@ from gui.battle_results.reusable import records
 from gui.battle_results.settings import FACTOR_VALUE
 from gui.shared.money import Currency
 from helpers import dependency
+from renewable_subscription_common.settings_constants import WotPlusTier
+from renewable_subscription_common.settings_helpers import SubscriptionSettingsStorage
+from skeletons.gui.game_control import IWotPlusController
 from skeletons.gui.lobby_context import ILobbyContext
 _DEFAULT_FACTORS = {_CAPS.PREM_CREDITS: FACTOR_VALUE.BASE_CREDITS_FACTOR, 
    _CAPS.PREM_XP: FACTOR_VALUE.BASE_XP_FACTOR, 
@@ -422,21 +425,21 @@ class EconomicsRecordsChains(object):
 
     def __buildCreditsReplayForWotPlus(self, targetPremiumType, results, replay):
         initialWotPlusCreditsFactor = results['wotPlusCreditsFactor100']
-        results['wotPlusCreditsFactor100'] = self.__getWotPlusFactor('creditsFactor')
+        results['wotPlusCreditsFactor100'] = self.__getWotPlusFactor(results, 'creditsFactor')
         creditsReplayToUse = self.__buildCreditsReplayForPremType(targetPremiumType, results, replay)
         results['wotPlusCreditsFactor100'] = initialWotPlusCreditsFactor
         return creditsReplayToUse
 
     def __buildXPReplayForWotPlus(self, isHighScope, results, replay):
         initialWotPlusXPFactor = results['wotPlusXPFactor100']
-        results['wotPlusXPFactor100'] = self.__getWotPlusFactor('xpFactor')
+        results['wotPlusXPFactor100'] = self.__getWotPlusFactor(results, 'xpFactor')
         xpReplayToUse = _XPReplayRecords(replay, isHighScope, results['achievementXP'])
         results['wotPlusXPFactor100'] = initialWotPlusXPFactor
         return xpReplayToUse
 
     def __buildFreeXPReplayForWotPlus(self, results, replay):
         initialWotPlusFreeXPFactor = results['wotPlusFreeXPFactor100']
-        results['wotPlusFreeXPFactor100'] = self.__getWotPlusFactor('freeXPFactor')
+        results['wotPlusFreeXPFactor100'] = self.__getWotPlusFactor(results, 'freeXPFactor')
         freeXPReplayToUse = _FreeXPReplayRecords(replay, results['achievementFreeXP'])
         results['wotPlusFreeXPFactor100'] = initialWotPlusFreeXPFactor
         return freeXPReplayToUse
@@ -462,8 +465,19 @@ class EconomicsRecordsChains(object):
         return results.get('premSquadCreditsFactor100', 0)
 
     @staticmethod
-    @dependency.replace_none_kwargs(lobbyContext=ILobbyContext)
-    def __getWotPlusFactor(factorName, lobbyContext=None):
-        if lobbyContext.getServerSettings().isWotPlusBattleBonusesEnabled():
-            return lobbyContext.getServerSettings().getWotPlusBattleBonusesConfig().get(factorName, 0.0) * 100
+    @dependency.replace_none_kwargs(wotPlusCtrl=IWotPlusController)
+    def __getWotPlusFactor(results, factorName, wotPlusCtrl=None):
+        battleResultsWotPlusTier = results.get('wotPlusTier', WotPlusTier.NONE)
+        if battleResultsWotPlusTier == WotPlusTier.NONE:
+            settingsStorage = wotPlusCtrl.getSettingsStorage()
+            if not settingsStorage.isBattleBonusesEnabled():
+                return 0.0
+            for tierID, tier in settingsStorage.reverseIterTiers():
+                if tier.battleBonusesFeature.available:
+                    battleResultsWotPlusTier = tierID
+                    break
+
+        config = SubscriptionSettingsStorage(battleResultsWotPlusTier).getBattleBonusesFeatureFactors()
+        if config:
+            return getattr(config, factorName) * 100
         return 0.0

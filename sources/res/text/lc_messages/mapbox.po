@@ -31,37 +31,6 @@ msgstr "%(start)s–%(end)s"
 msgid "calendarDay/title"
 msgstr "时间表"
 
-msgid "entryPoint/activeStatus"
-msgstr "%(endDate)s结束"
-
-msgid "entryPoint/dateRange"
-msgstr "%(month1)s%(day1)s日 - %(month2)s%(day2)s日"
-
-msgid "entryPoint/endDate"
-msgstr "%(month)s%(day)s日结束"
-
-msgid "entryPoint/lessMinute"
-msgstr "少于1分钟"
-
-msgid "entryPoint/notPrimeTimes/status"
-msgstr "战斗即将开放"
-
-msgid "entryPoint/seasonFinished/status"
-msgstr "战斗结束"
-
-msgid "entryPoint/title"
-msgstr "侦察任务"
-
-msgid "entryPoint/tooltip/alert/body"
-msgstr ""
-"天气视觉效果取决于整体图形质量设置。在低图形质量设置下，可能会出现视觉伪影等问题。建议您在电脑配置允许的情况下，选择最高的图形质量设置以获得最佳体验。该模式对电脑性能要求较高，战况激烈时可能会发生掉帧问题。"
-
-msgid "entryPoint/tooltip/alert/header"
-msgstr "建议选择最高的图形质量设置"
-
-msgid "entryPoint/undefined/status"
-msgstr "战斗即将开放"
-
 msgid "headerButtons/fightBtn/tooltip/battlesEnded/header"
 msgstr "加入战斗失败"
 

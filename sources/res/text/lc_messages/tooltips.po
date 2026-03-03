@@ -1322,6 +1322,14 @@ msgstr "可以助您在钢铁猎手模式中升级并收获奖励。"
 msgid "awardItem/steelHunterPoint/header"
 msgstr "钢铁猎手积分"
 
+msgid "awardItem/stpcoin/body"
+msgstr ""
+"可在钢铁猎手战斗中获取的货币。印章可用来在幸运草商店中兑换独特奖励。\n"
+"组队战斗时，所获幸运印章将在小队成员之间平均分配。所示数量为属于您的奖励。"
+
+msgid "awardItem/stpcoin/header"
+msgstr "幸运印章"
+
 msgid "awardItem/tankman/body"
 msgstr "可选择系别和专业的乘员。"
 
@@ -5551,12 +5559,6 @@ msgstr "前往军团信息。"
 msgid "header/buttons/forts/header"
 msgstr "军团"
 
-msgid "header/buttons/forts/sandbox/turnedOff/body"
-msgstr "下载完整客户端后可用。"
-
-msgid "header/buttons/forts/sandbox/turnedOff/header"
-msgstr "要塞"
-
 msgid "header/buttons/forts/turnedOff/body"
 msgstr "由于定期维护，军团信息目前无法使用。"
 
@@ -5999,14 +6001,11 @@ msgstr "延期高级账号失败。"
 msgid "lobbyMenu/versionInfoButton/body"
 msgstr "点击打开当前更新的信息窗口。"
 
-msgid "lobbyMenu/versionInfoButton/miniclient/body"
-msgstr "公告可用后可以下载完整客户端。"
+msgid "lobby_messenger/listView/news/tooltip/body"
+msgstr "重大且有趣的游戏改动一览无遗。"
 
-msgid "lobbyMenu/versionInfoButton/miniclient/header"
-msgstr "注意！"
-
-msgid "loby_messenger/channel_button/inRoaming"
-msgstr "因变更地区频道无法使用。"
+msgid "lobby_messenger/listView/news/tooltip/header"
+msgstr "新内容"
 
 msgid "loby_messenger/channels_button/body"
 msgstr "创建，寻找，并加入聊天频道。"
@@ -6014,41 +6013,11 @@ msgstr "创建，寻找，并加入聊天频道。"
 msgid "loby_messenger/channels_button/header"
 msgstr "聊天频道"
 
-msgid "loby_messenger/channels_carousel_button_left/body"
-msgstr "没有新消息"
-
-msgid "loby_messenger/channels_carousel_button_left/header"
-msgstr "向左滚动"
-
-msgid "loby_messenger/channels_carousel_button_right/body"
-msgstr "没有新消息"
-
-msgid "loby_messenger/channels_carousel_button_right/header"
-msgstr "向右滚动"
-
 msgid "loby_messenger/contacts_button/body"
 msgstr "查看，添加，删除联系人。"
 
 msgid "loby_messenger/contacts_button/header"
 msgstr "联系人"
-
-msgid "loby_messenger/listView/news/tooltip/body"
-msgstr "重大且有趣的游戏改动一览无遗。"
-
-msgid "loby_messenger/listView/news/tooltip/header"
-msgstr "有何新内容？"
-
-msgid "loby_messenger/new/channels_carousel_button_left/body"
-msgstr "你有新消息。"
-
-msgid "loby_messenger/new/channels_carousel_button_left/header"
-msgstr "向左滚动"
-
-msgid "loby_messenger/new/channels_carousel_button_right/body"
-msgstr "你有新消息。"
-
-msgid "loby_messenger/new/channels_carousel_button_right/header"
-msgstr "向右滚动"
 
 msgid "loby_messenger/referral_button/body"
 msgstr "点击前往\"推荐计划\"界面"
@@ -7125,6 +7094,24 @@ msgstr "?empty?"
 msgid "notrecruitedtankman/girls_und_panzer_alisa/label"
 msgstr "?empty?"
 
+msgid "notrecruitedtankman/girls_und_panzer_caesar/desc"
+msgstr "雄心勃勃的Caesar会以无愧于帝王之名的勤恳来履行装填手的职责。"
+
+msgid "notrecruitedtankman/girls_und_panzer_caesar/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/girls_und_panzer_caesar/label"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/girls_und_panzer_erwin/desc"
+msgstr "作为一名坦克战专家，Erwin会坚定不移地指挥河马组。"
+
+msgid "notrecruitedtankman/girls_und_panzer_erwin/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/girls_und_panzer_erwin/label"
+msgstr "?empty?"
+
 msgid "notrecruitedtankman/girls_und_panzer_kei/desc"
 msgstr ""
 "Kei性格外向，一直秉持着公平竞争的原则，是桑德斯大学附属高中战车道团队中既活泼又技艺高超的指挥官。她是全队的精神支柱，也时刻提醒队友：玩得开心，才能让胜利更加令人愉悦。"
@@ -7142,6 +7129,24 @@ msgid "notrecruitedtankman/girls_und_panzer_naomi/howToGetInfo"
 msgstr "?empty?"
 
 msgid "notrecruitedtankman/girls_und_panzer_naomi/label"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/girls_und_panzer_oryou/desc"
+msgstr "Oryo是一名冷静沉着的驾驶员，她条理分明的作风在比赛中极具价值。"
+
+msgid "notrecruitedtankman/girls_und_panzer_oryou/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/girls_und_panzer_oryou/label"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/girls_und_panzer_saemonza/desc"
+msgstr "炮手Saemonza天生是名神射手，在战场上出手迅捷且果断。"
+
+msgid "notrecruitedtankman/girls_und_panzer_saemonza/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/girls_und_panzer_saemonza/label"
 msgstr "?empty?"
 
 msgid "notrecruitedtankman/girls_und_panzer_saunders/desc"
@@ -8865,6 +8870,47 @@ msgstr "?empty?"
 
 msgid "notrecruitedtankman/tankmen_bp18_9/label"
 msgstr "战斗通行证:Wolfenstein"
+
+msgid "notrecruitedtankman/tankmen_bp19_1/desc"
+msgstr ""
+"丹尼尔·泽玛是一名钟表匠，当他意外继承叔叔的无线电工作室时，他以为工具持续的嗡嗡声和信号传输的噼啪声会把他逼疯。但没过多久，他就被无线电波的无形世界所吸引，他会花上数小时调谐来自远方的信号，想象着信号背后的生活——那些远离他沉寂的摩拉维亚小镇的世界。如今，在冰封的北方，丹尼尔利用他对各种机械的知识来破译更广阔世界中看不见的线索，追踪着极少有人能听到的信号。"
+
+msgid "notrecruitedtankman/tankmen_bp19_1/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp19_1/label"
+msgstr "战斗通行证赛季XIX"
+
+msgid "notrecruitedtankman/tankmen_bp19_2/desc"
+msgstr ""
+"早年生活的艰辛与物资匮乏教会了奥托·费伯一个道理: "
+"秩序是混乱的解药。他很快就找到了自己的使命，成为一名侦察专家，并磨炼出一种非凡的能力，能以始终如一的精准度追踪信号、破译传输内容，其严谨程度甚至会让最一丝不苟的教授都自愧不如。在费伯严苛的审视下，每一次读数都完美精确，每一个信号都被完整记录。然而，极寒北境中的异常现象让训练有素、一向缜密的奥托也感到困惑。"
+
+msgid "notrecruitedtankman/tankmen_bp19_2/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp19_2/label"
+msgstr "战斗通行证赛季XIX"
+
+msgid "notrecruitedtankman/tankmen_bp19_3/desc"
+msgstr ""
+"杰克·霍克出身矿工家庭，自小在阿巴拉契亚群山下长大。他对机械运转有着天生的敏锐感，为摆脱矿井生活，他选择投身军旅。从车辆勤务起步，一步步进入装甲部队，在北方边境磨砺本领，随后远赴海外执行任务。命运却开了个玩笑——那个为逃离井下生活而参军的青年，如今发现自己正在一个截然不同的隐秘世界中穿行，执行一项秘密侦察任务，绘制冰封广袤之地的地图。"
+
+msgid "notrecruitedtankman/tankmen_bp19_3/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp19_3/label"
+msgstr "战斗通行证赛季XIX"
+
+msgid "notrecruitedtankman/tankmen_bp19_4/desc"
+msgstr ""
+"伊林·伯格法尔克从小就沉浸在业余无线电的世界里，在漫长的冬季里，她横跨大陆追逐微弱的信号并破译信息。她对空中无形电波的敏锐感知很快引起了一个机密电子战项目组的注意。在那里，她能探测到甚至让高级军官都感到困惑的异常和干扰模式，因而声名鹊起。如今，作为一名经验丰富的系统工程师和信号情报专家，她被召回年少时那片冰封之地——这一次，她将在坦克伪装下的狭小空间内执行任务。"
+
+msgid "notrecruitedtankman/tankmen_bp19_4/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp19_4/label"
+msgstr "战斗通行证赛季XIX"
 
 msgid "notrecruitedtankman/tankmen_bp2_1/desc"
 msgstr ""
@@ -10899,12 +10945,6 @@ msgstr "如有必要坦克在离开战斗后将自动修复。"
 msgid "repair/auto/header"
 msgstr "自动修复"
 
-msgid "researchPage/collectibleVehicle/vehicleEnabled/body"
-msgstr "前往军械库的%(nation)s收藏坦克"
-
-msgid "researchPage/collectibleVehicle/vehicleEnabled/header"
-msgstr "收藏坦克"
-
 msgid "researchPage/module/status/needToBuyTank/header"
 msgstr "无法购买和安装模块。"
 
@@ -10946,12 +10986,6 @@ msgstr "无法购买和安装模块。"
 
 msgid "researchPage/module/status/vehicleIsReadyToFight/text"
 msgstr "退出该小队。"
-
-msgid "researchPage/vehicle/button/compare/disabled/body"
-msgstr "添加坦克进行对比，从对比列表移除坦克。"
-
-msgid "researchPage/vehicle/button/compare/disabled/header"
-msgstr "无法添加"
 
 msgid "researchPage/vehicle/status/parentModuleIsLocked/body"
 msgstr "上一级坦克和/或模块尚未研发完成，无法解锁这辆坦克。"
@@ -11374,10 +11408,10 @@ msgid "showDogTag/header"
 msgstr "显示已应用的可定制军用识别牌"
 
 msgid "showMarksOnGun/body"
-msgstr "在所有模式中禁用或启用您的坦克上的战绩标识。在某次战斗中修改的设置将在战斗结束/退出战斗后生效。"
+msgstr "在所有模式中禁用或启用您的坦克上的特级标识。在某次战斗中修改的设置将在战斗结束/退出战斗后生效。"
 
 msgid "showMarksOnGun/header"
-msgstr "显示战绩标识"
+msgstr "显示特级标识"
 
 msgid "showPersonalAnimatedDogTag/body"
 msgstr ""
@@ -11423,9 +11457,6 @@ msgstr "启用小地图功能"
 
 msgid "skill/name/brotherhood"
 msgstr "兄弟连"
-
-msgid "skill/name/commander_sixthSense"
-msgstr "战场直觉"
 
 msgid "skill/newPerk/perk/text"
 msgstr "该乘员有1项零历练特长，训练所需经验总数减少。"
@@ -12469,26 +12500,6 @@ msgstr "请点击以选择一辆要租用的坦克。"
 
 msgid "tanks_carousel/wot_plus_slot/header"
 msgstr "租用坦克"
-
-msgid "techTreePage/blueprintConvertTooltip/body"
-msgstr "可以用来创建:%(fragCount)s"
-
-msgid "techTreePage/blueprintConvertTooltip/header"
-msgstr "创建蓝图碎片"
-
-msgid "techTreePage/blueprintsSwitchTooltip/body"
-msgstr "显示/隐藏关于研发坦克的蓝图的信息。"
-
-msgid "techTreePage/blueprintsSwitchTooltip/header"
-msgstr "?empty?"
-
-msgid "techTreePage/blueprintsSwitchTooltipDisabled/body"
-msgstr ""
-"因技术原因，此功能已被禁用。\n"
-"给您带来的不便之处，我们深感抱歉。"
-
-msgid "techTreePage/blueprintsSwitchTooltipDisabled/header"
-msgstr "?empty?"
 
 msgid "techTreePage/event/description"
 msgstr "折扣可用于%(nation)s坦克："

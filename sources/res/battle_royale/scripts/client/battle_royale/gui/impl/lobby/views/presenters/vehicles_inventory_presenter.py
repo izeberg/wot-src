@@ -12,6 +12,8 @@ from helpers import dependency
 from skeletons.gui.customization import ICustomizationService
 from skeletons.gui.game_control import IRentalsController
 from skeletons.gui.shared import IItemsCache
+from battle_royale.gui.impl.gen.view_models.views.lobby.enums import CoinType
+from skeletons.gui.game_control import IBattleRoyaleController
 if typing.TYPE_CHECKING:
     from gui.impl.lobby.hangar.base.hangar_interfaces import IVehicleFilter
     from gui.shared.gui_items.Vehicle import Vehicle
@@ -21,6 +23,7 @@ class BattleRoyaleVehiclesInventoryPresenter(ViewComponent[VehiclesInventoryMode
     __itemsCache = dependency.descriptor(IItemsCache)
     __rentalsCtrl = dependency.descriptor(IRentalsController)
     __customizationService = dependency.descriptor(ICustomizationService)
+    __brController = dependency.descriptor(IBattleRoyaleController)
 
     def __init__(self, vehiclesComponent, vehiclesCriteria):
         super(BattleRoyaleVehiclesInventoryPresenter, self).__init__(model=VehiclesInventoryModel)
@@ -57,6 +60,8 @@ class BattleRoyaleVehiclesInventoryPresenter(ViewComponent[VehiclesInventoryMode
 
     def _toModelItem(self, vehicle):
         vState = self.__getVehicleStatus(vehicle)
+        modeSettings = self.__brController.getModeSettings()
+        coinType = CoinType.STPCOIN if self.__brController.isStPatrick() else CoinType.BRCOIN
         return {'id': str(vehicle.intCD), 
            'vehicleId': vehicle.intCD, 
            'inventoryId': vehicle.invID, 
@@ -65,7 +70,10 @@ class BattleRoyaleVehiclesInventoryPresenter(ViewComponent[VehiclesInventoryMode
            'name': vehicle.name, 
            'shortName': vehicle.shortUserName, 
            'fullName': vehicle.typeDescr.userString, 
-           'status': vState}
+           'status': vState, 
+           'hasDailyBonus': self.__brController.hasDailyBonus(vehicle), 
+           'dailyBonusFactor': modeSettings.dailyBonus.get('bonusFactor', 0), 
+           'coinType': coinType.value}
 
     @staticmethod
     def __getVehicleStatus(vehicle):

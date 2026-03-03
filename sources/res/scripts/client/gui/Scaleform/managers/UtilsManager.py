@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import calendar, Keys
 from Keys import KEY_NONE
 from gui.Scaleform.framework.managers.TextManager import TextManager
@@ -59,12 +60,12 @@ class UtilsManager(UtilsManagerMeta):
     def getNationIndices(self):
         return nations.INDICES
 
-    def changeStringCasing(self, s, isUpper, _):
-        return utils.changeStringCasing(str(s).decode('utf-8'), isUpper)
+    def changeStringCasing(self, string, isUpper, _):
+        return utils.changeStringCasing(str(string).decode('utf-8'), isUpper)
 
     @classmethod
-    def getAbsoluteUrl(cls, value):
-        return getAbsoluteUrl(value)
+    def getAbsoluteUrl(cls, relativeUrl):
+        return getAbsoluteUrl(relativeUrl)
 
     @classmethod
     def getHtmlIconText(cls, properties):

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.Scaleform.daapi.view.battle.pve_base.base.state_machine.machine import BaseTimerStateMachine
 from gui.Scaleform.daapi.view.battle.pve_base.base.state_machine.transitions import PostponedTransition, CountdownTimerCondition, RegularTimerCondition
 from gui.Scaleform.daapi.view.battle.pve_base.primary_objective.state_machine import states

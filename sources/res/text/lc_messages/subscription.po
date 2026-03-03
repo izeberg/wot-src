@@ -103,8 +103,47 @@ msgstr "管理"
 msgid "headerButton/state/available"
 msgstr "激活"
 
-msgid "headerButton/state/cancelled"
-msgstr "管理"
+msgid "headerButton/tooltip/Active"
+msgstr "已激活"
+
+msgid "headerButton/tooltip/Cancelled"
+msgstr "已取消"
+
+msgid "headerButton/tooltip/expiresOn"
+msgstr "到期时间%(date)"
+
+msgid "headerButton/tooltip/extendsOn"
+msgstr "续订时间: %(date)"
+
+msgid "headerButton/tooltip/getSubscriptionHint"
+msgstr "点击探索"
+
+msgid "headerButton/tooltip/nonSubscriberTitle"
+msgstr "订阅"
+
+msgid "headerButton/tooltip/periodicity"
+msgstr "%(number)天方案"
+
+msgid "headerButton/tooltip/title"
+msgstr "坦克世界Plus"
+
+msgid "headerButton/tooltip/titleCore"
+msgstr "坦克世界Plus核心版"
+
+msgid "headerButton/tooltip/titlePro"
+msgstr "坦克世界Plus专业版"
+
+msgid "headerButton/tooltip/unavailable"
+msgstr "坦克世界Plus暂不可用"
+
+msgid "headerButton/tooltip/unlockPro"
+msgstr "使用坦克世界Plus专业版解锁"
+
+msgid "headerButton/tooltip/unlockSteamAndCn"
+msgstr "使用坦克世界Plus解锁"
+
+msgid "headerButton/tooltip/unlockSubscription"
+msgstr "使用坦克世界Plus核心版或专业版解锁"
 
 msgid "rentButton/label"
 msgstr "租用"

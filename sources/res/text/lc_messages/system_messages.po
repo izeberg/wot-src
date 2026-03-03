@@ -476,9 +476,9 @@ msgstr "战斗通行证现已重新开放。我们对造成的不便深表歉意
 
 msgid "battlePassH/switch_started/body"
 msgstr ""
-"指挥官！本次战斗通行证特殊章节将联动精彩纷呈的《机械战警》宇宙。\n"
+"各位指挥官！准备体验战斗通行证特殊章节。\n"
 "\n"
-"随着您推动活动进度，将有机会将机械战警和里德警长纳入麾下，同时，您还可以获取专属个性化元素及其他好物！"
+"完成进度后，您将获得一辆带有独特3D风格的金币坦克、个性化元素，以及大量其他奖励！"
 
 msgid "battlePassH/switch_started/title"
 msgstr "战斗通行证: %(seasonName)s"
@@ -526,7 +526,7 @@ msgid "blueprints/conversion/disable"
 msgstr "无足够的碎片进行兑换。"
 
 msgid "blueprints/conversion/error"
-msgstr "选项目前不可用。请稍后再试。"
+msgstr "无法解雇: 服务器不可用。请稍后再试。"
 
 msgid "blueprints/switch_off"
 msgstr "坦克蓝图功能已被暂时禁用。给您带来的不便之处，我们深感抱歉。"
@@ -962,9 +962,7 @@ msgid "consumables_apply/wallet_not_available"
 msgstr "操作失败。您的金币将在战游钱包恢复后再次可用。"
 
 msgid "conversion/error"
-msgstr ""
-"转换乘员失败。\n"
-"请稍后再试。"
+msgstr "无法解雇: 服务器不可用。请稍后再试。"
 
 msgid "conversion/header"
 msgstr ""
@@ -972,9 +970,7 @@ msgstr ""
 "已添加:"
 
 msgid "conversion/success"
-msgstr ""
-"成功！\n"
-"兵营已清理完毕。"
+msgstr "已解雇训练不足的乘员: %(number)s"
 
 msgid "conversion/title"
 msgstr "收到"

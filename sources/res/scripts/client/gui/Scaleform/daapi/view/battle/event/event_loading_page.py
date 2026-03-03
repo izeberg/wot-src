@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from PlayerEvents import g_playerEvents
 from gui.Scaleform.daapi.view.meta.EventLoadingMeta import EventLoadingMeta
 from gui.battle_control.arena_info.interfaces import IArenaLoadController

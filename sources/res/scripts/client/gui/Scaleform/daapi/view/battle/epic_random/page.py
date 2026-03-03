@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.Scaleform.daapi.view.battle.classic.page import ClassicPage, COMMON_CLASSIC_CONFIG, EXTENDED_CLASSIC_CONFIG
 from gui.Scaleform.genConsts.BATTLE_VIEW_ALIASES import BATTLE_VIEW_ALIASES
 _EPIC_RANDOM_CLASSICS_COMPONENTS = COMMON_CLASSIC_CONFIG

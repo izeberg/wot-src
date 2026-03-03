@@ -1,0 +1,37 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-01 10:00+0300\n"
+"PO-Revision-Date: 2010-06-01 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "#PluralForms"
+msgstr "nplurals=1; plural=0;"
+
+msgid "mode/battleRoyale/progression/currentStage"
+msgstr "当前阶段:"
+
+msgid "mode/battleRoyale/progression/steps"
+msgstr "{whiteSpanish_Open}%(done)s{whiteSpanish_Close}/%(total)s"
+
+msgid "mode/battleRoyaleQueue/battlePassTooltip/body"
+msgstr ""
+"参加{whiteSpanish_open}钢铁猎手{whiteSpanish_close}战斗可以获得点数。您可使用点数推动战斗通行证进度。"
+
+msgid "mode/battleRoyaleQueue/battlePassTooltip/header"
+msgstr "战斗通行证点数"
+
+msgid "mode/battleRoyaleQueue/description"
+msgstr "军事演习模式"
+
+msgid "mode/battleRoyaleQueue/stPatrickDescription"
+msgstr "幸运草对决"
+
+msgid "mode/battleRoyaleQueue/title"
+msgstr "钢铁猎手"

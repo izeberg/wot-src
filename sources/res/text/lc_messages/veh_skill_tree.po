@@ -53,6 +53,66 @@ msgstr[0] "\"%(perks)s\"节点"
 msgstr[1] "%(perks)s个节点"
 msgstr[2] "%(perks)s个节点"
 
+msgid "footer/button/label"
+msgstr "研发"
+
+msgid "footer/description/text/allResearched"
+msgstr "已研发全部节点。您现已解锁精英奖励系统。"
+
+msgid "footer/description/text/emergencyModeEnabled"
+msgstr "WG钱包暂不可用。我们对给您造成的不便深表歉意。"
+
+msgid "footer/description/text/inBattle"
+msgstr "节点不可用。该坦克在战斗中。"
+
+msgid "footer/description/text/inFormation"
+msgstr "节点不可用。该坦克在小队中。"
+
+msgid "footer/description/text/needsRepair"
+msgstr "节点不可用。该坦克需要维修。"
+
+msgid "footer/description/text/notInInventory"
+msgstr "您需要拥有该坦克才能研发其节点"
+
+msgid "footer/description/text/researchAvailable"
+msgstr "选择要研发的节点或节点分支"
+
+msgid "footer/text/amountItems"
+msgstr "{{amount}}个节点"
+
+msgid "footer/text/selectedItem"
+msgstr "已选择: {{selectedItem}}"
+
+msgid "footer/tooltip/body/emergencyModeEnabled"
+msgstr "WG钱包暂不可用。我们对给您造成的不便深表歉意。"
+
+msgid "footer/tooltip/body/inBattle"
+msgstr "节点不可用。该坦克在战斗中。"
+
+msgid "footer/tooltip/body/inFormation"
+msgstr "节点不可用。该坦克在小队中。"
+
+msgid "footer/tooltip/body/needsRepair"
+msgstr "节点不可用。该坦克需要维修。"
+
+msgid "footer/tooltip/body/notEnoughExp"
+msgstr "经验不足，无法研发所选节点。"
+
+msgid "footer/tooltip/body/researchInProgress"
+msgstr "正在研发，请稍等..."
+
+msgid "footer/tooltip/header/emergencyModeEnabled"
+msgstr "不可用"
+
+msgid "footer/tooltip/header/info"
+msgstr "已选择的节点"
+
+msgid "footer/tooltip/listSelectedPerks"
+msgid_plural "plural/footer/tooltip/listSelectedPerks"
+msgstr[0] "• {{selectedPerks}}"
+msgstr[1] "• {{selectedPerks}}"
+msgstr[2] "• {{selectedPerks}}"
+
 msgid "intro/button"
 msgstr "收到！"
 
@@ -118,51 +178,6 @@ msgstr "前往升级"
 
 msgid "notifications/perkAvailable/title"
 msgstr "您有足够的经验来强化坦克！"
-
-msgid "research/allResearched"
-msgstr "已研发全部节点。您现已解锁精英奖励系统。"
-
-msgid "research/button/label"
-msgstr "研发"
-
-msgid "research/emergencyModeEnabled/body"
-msgstr "WG钱包暂不可用。我们对给您造成的不便深表歉意。"
-
-msgid "research/emergencyModeEnabled/header"
-msgstr "不可用"
-
-msgid "research/inBattle"
-msgstr "节点不可用。该坦克在战斗中。"
-
-msgid "research/inFormation"
-msgstr "节点不可用。该坦克在小队中。"
-
-msgid "research/infoTooltipTitle"
-msgstr "已选择的节点"
-
-msgid "research/needsRepair"
-msgstr "节点不可用。该坦克需要维修。"
-
-msgid "research/noSelected"
-msgstr "选择要研发的节点或节点分支"
-
-msgid "research/notEnoughExp"
-msgstr "经验不足，无法研发所选节点。"
-
-msgid "research/notInInventory"
-msgstr "您需要拥有该坦克才能研发其节点"
-
-msgid "research/perks"
-msgstr "{{amount}}个节点"
-
-msgid "research/selected"
-msgstr "已选择: {{selectedItem}}"
-
-msgid "research/tooltip/description"
-msgid_plural "plural/research/tooltip/description"
-msgstr[0] "• {{selectedPerks}}"
-msgstr[1] "• {{selectedPerks}}"
-msgstr[2] "• {{selectedPerks}}"
 
 msgid "rewardScreen/button/accept"
 msgstr "收到！"

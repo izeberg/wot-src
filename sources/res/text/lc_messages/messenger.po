@@ -1226,9 +1226,6 @@ msgstr "已移除战斗通行证点数"
 msgid "platformCurrencyMsg/debited/bptaler"
 msgstr "已移除硬币"
 
-msgid "platformCurrencyMsg/debited/brcoin"
-msgstr "已移除钢铁印章"
-
 msgid "platformCurrencyMsg/debited/clanvehiclecoin"
 msgstr "已移除机动战令牌"
 
@@ -1252,9 +1249,6 @@ msgstr "已添加战斗通行证点数"
 
 msgid "platformCurrencyMsg/received/bptaler"
 msgstr "已添加硬币"
-
-msgid "platformCurrencyMsg/received/brcoin"
-msgstr "已添加钢铁印章"
 
 msgid "platformCurrencyMsg/received/clanvehiclecoin"
 msgstr "已添加机动战令牌"
@@ -1507,15 +1501,6 @@ msgstr "钢铁猎手"
 
 msgid "serviceChannelMessages/BRVehiclesInvoice/descr"
 msgstr "这些是专为钢铁猎手模式设计的特殊坦克。进入钢铁猎手战斗，体验这些坦克的真正实力吧。"
-
-msgid "serviceChannelMessages/BRbattleResults/BRProgressionTitle"
-msgstr "获得进度点数: %(value)s"
-
-msgid "serviceChannelMessages/BRbattleResults/battlePass"
-msgstr "获得战斗通行证点数: %(pointsDiff)s"
-
-msgid "serviceChannelMessages/BRbattleResults/battleRoyaleBrCoin"
-msgstr "已获得钢铁印章：%(value)s"
 
 msgid "serviceChannelMessages/BRbattleResults/ended"
 msgstr "坦克被击毁"
@@ -1805,6 +1790,9 @@ msgstr ""
 "您完成了\"%(chapter)s\"章节的进度阶段%(newLevel)s。\n"
 "已获得奖励:"
 
+msgid "serviceChannelMessages/battlePassReward/breakLine"
+msgstr "<br/>"
+
 msgid "serviceChannelMessages/battlePassReward/button"
 msgstr "详细"
 
@@ -1819,6 +1807,9 @@ msgstr ""
 "您购买了\"%(chapter)s\"章节的高级通行证和全部阶段。\n"
 "已获得该章节全部阶段的奖励:"
 
+msgid "serviceChannelMessages/battlePassReward/buyMultiple/starterPack"
+msgstr "购买高级通行证后获得了奖励:"
+
 msgid "serviceChannelMessages/battlePassReward/buyMultiple/text"
 msgstr "您现在将同时获得本赛季所有章节中的基础和高级奖励。"
 
@@ -1831,16 +1822,21 @@ msgstr ""
 "您达到了阶段%(currentLevel)s。\n"
 "已获得奖励:"
 
+msgid "serviceChannelMessages/battlePassReward/buySingle/starterPack"
+msgstr "购买高级通行证后获得了奖励:"
+
 msgid "serviceChannelMessages/battlePassReward/buyWithRewards/additionalText"
 msgstr "该高级通行证仅适用于\"%(chapter)s\"章节。"
 
 msgid "serviceChannelMessages/battlePassReward/buyWithRewards/text"
 msgstr "您获得了战斗通行证已完成阶段的奖励："
 
+msgid ""
+"serviceChannelMessages/battlePassReward/buyWithoutRewards/additionalText"
+msgstr "该高级通行证仅适用于\"%(chapter)s\"章节。"
+
 msgid "serviceChannelMessages/battlePassReward/buyWithoutRewards/text"
-msgstr ""
-"您现在将同时获得\"%(chapter)s\"章节基础和高级奖励轨道中的奖励。\n"
-"该高级通行证仅适用于\"%(chapter)s\"章节。"
+msgstr "您现在将同时获得\"%(chapter)s\"章节基础和高级奖励轨道中的奖励。"
 
 msgid "serviceChannelMessages/battlePassReward/header/autoSelectReward"
 msgstr "已添加默认奖励:"
@@ -2377,7 +2373,7 @@ msgid "serviceChannelMessages/currencyUpdate/financial_transaction"
 msgstr "交易"
 
 msgid "serviceChannelMessages/currencyUpdate/integratedAuction"
-msgstr "本尼迪克特的特别竞拍"
+msgstr "竞拍"
 
 msgid "serviceChannelMessages/currencyUpdate/received/bpcoin"
 msgstr "已获得令牌"
@@ -3134,6 +3130,21 @@ msgstr "将过期的储备:"
 msgid "serviceChannelMessages/personalReservesSoonExpire/title"
 msgstr "即将损失的限时储备"
 
+msgid "serviceChannelMessages/petSystem/events/creditsReceived"
+msgstr "获得银币: %(credits)s"
+
+msgid "serviceChannelMessages/petSystem/events/date"
+msgstr "日期: %(date)s"
+
+msgid "serviceChannelMessages/petSystem/events/financial_transaction"
+msgstr "交易:"
+
+msgid "serviceChannelMessages/petSystem/events/itemsReceived"
+msgstr "已添加至仓库: %(item)s"
+
+msgid "serviceChannelMessages/petSystem/events/receipt"
+msgstr "收到"
+
 msgid "serviceChannelMessages/piggyBank/continueAfterSmashed"
 msgstr "新的积累周期开始了。"
 
@@ -3464,6 +3475,15 @@ msgstr "游戏服务器将在%(date)s被断开。"
 msgid "serviceChannelMessages/serverRebootCancelled"
 msgstr "%(date)s的服务器维护计划已被取消。"
 
+msgid "serviceChannelMessages/serviceRecordCustomization/available/title"
+msgstr "服役记录个性化可用"
+
+msgid "serviceChannelMessages/serviceRecordCustomization/unavailable/text"
+msgstr "此功能已暂停。"
+
+msgid "serviceChannelMessages/serviceRecordCustomization/unavailable/title"
+msgstr "服役记录个性化暂不可用"
+
 msgid "serviceChannelMessages/specialReward/intelligenceBlueprints"
 msgstr "通用碎片 （x%(fragmentsCount)s）"
 
@@ -3787,6 +3807,15 @@ msgstr "选择"
 msgid "serviceChannelMessages/winbackSelectableRewardEntry/header"
 msgstr "已获得奖励！"
 
+msgid "serviceChannelMessages/wotPlus/battlePass/isDisabled/text"
+msgstr "战斗通行证Plus福利已暂停。"
+
+msgid "serviceChannelMessages/wotPlus/battlePass/isDisabled/title"
+msgstr "战斗通行证Plus暂不可用"
+
+msgid "serviceChannelMessages/wotPlus/battlePass/isEnabled/title"
+msgstr "战斗通行证Plus可用"
+
 msgid ""
 "serviceChannelMessages/wotPlus/dailyAttendanceRewarded/big/cycleEnded/endText"
 msgstr "持续登录游戏以获得更多奖励！"
@@ -3832,14 +3861,20 @@ msgid "serviceChannelMessages/wotPlus/exclusiveVehicle/unsubscribed/text"
 msgstr ""
 "坦克世界Plus专属<font color='#E9E2BF'>%(vehicleName)s</font>%(vehicleType)s暂时无法使用。"
 
+msgid "serviceChannelMessages/wotPlus/expireCoreMessage/title"
+msgstr "坦克世界Plus核心版已于%(time)s到期"
+
 msgid "serviceChannelMessages/wotPlus/expireFreeDemount/title"
 msgstr "免费拆卸配件不可用"
 
 msgid "serviceChannelMessages/wotPlus/expireMessage/text"
-msgstr "续订坦克世界Plus即可获得所有专属福利。"
+msgstr "续订坦克世界Plus即可再次获得所有专属福利。"
 
 msgid "serviceChannelMessages/wotPlus/expireMessage/title"
 msgstr "坦克世界Plus已于%(time)s到期"
+
+msgid "serviceChannelMessages/wotPlus/expireProMessage/title"
+msgstr "坦克世界Plus专业版已于%(time)s到期"
 
 msgid "serviceChannelMessages/wotPlus/goldReserve/isDisabled/text"
 msgstr "金币储备库已暂停。"
@@ -3858,8 +3893,27 @@ msgstr "金币储备库已开启！"
 
 msgid "serviceChannelMessages/wotPlus/nextDateOfRenewal"
 msgstr ""
-"福利现已全部开放。\n"
-"下次续订: <font color='#E9E2BF'>%(time)s</font>"
+"所有福利现已开放。\n"
+"续订时间: <font color='#E9E2BF'>%(time)s</font>"
+
+msgid "serviceChannelMessages/wotPlus/nextDateOfRenewalChange"
+msgstr "下次续订时间: <font color='#E9E2BF'>%(time)s</font>"
+
+msgid "serviceChannelMessages/wotPlus/nextDateOfRenewalPro"
+msgstr "您的180天方案现已激活。敬请体验！"
+
+msgid "serviceChannelMessages/wotPlus/nextDateOfRenewalProYearly"
+msgstr "您的360天方案现已激活。敬请体验！"
+
+msgid "serviceChannelMessages/wotPlus/nextDateOfUnlockPro"
+msgstr ""
+"您的180天方案现已激活。敬请体验！\n"
+"续订时间: <font color='#E9E2BF'>%(time)s</font>"
+
+msgid "serviceChannelMessages/wotPlus/nextDateOfUnlockProYearly"
+msgstr ""
+"您的360天方案现已激活。敬请体验！\n"
+"续订时间: <font color='#E9E2BF'>%(time)s</font>"
 
 msgid "serviceChannelMessages/wotPlus/passiveXP/allCrewAreVeterans/text"
 msgstr "<font color='#E9E2BF'>%(vehicleName)s</font>的高强度乘员训练已停止工作。请检查该坦克的乘员。"
@@ -3905,8 +3959,35 @@ msgstr "一名或多名乘员无法应用该乘员经验加成。"
 msgid "serviceChannelMessages/wotPlus/passiveXP/wasting/title"
 msgstr "您错过了珍贵的乘员经验！"
 
+msgid "serviceChannelMessages/wotPlus/proBoost/isActivated/text"
+msgstr "您可在%(cooldown)s小时后再次更改选择。"
+
+msgid "serviceChannelMessages/wotPlus/proBoost/isActivated/title"
+msgstr "已为%(vehicleName)s激活专业版增益"
+
+msgid "serviceChannelMessages/wotPlus/proBoost/isDeactivated/text"
+msgstr "您可为另一辆坦克激活专业版增益。"
+
+msgid "serviceChannelMessages/wotPlus/proBoost/isDeactivated/title"
+msgstr "已为%(vehicleName)s关闭专业版增益"
+
+msgid "serviceChannelMessages/wotPlus/proBoost/isDisabled/text"
+msgstr "专业版增益收益已暂停。"
+
+msgid "serviceChannelMessages/wotPlus/proBoost/isDisabled/title"
+msgstr "专业版增益暂不可用"
+
+msgid "serviceChannelMessages/wotPlus/proBoost/isEnabled/title"
+msgstr "专业版增益可用"
+
+msgid "serviceChannelMessages/wotPlus/proBoost/switch/text"
+msgstr "%(vehicleNameFrom)s不再享受专业版增益。您可在%(cooldown)s小时后再次更改选择。"
+
+msgid "serviceChannelMessages/wotPlus/proBoost/switch/title"
+msgstr "专业版增益已切换至%(vehicleNameTo)s上"
+
 msgid "serviceChannelMessages/wotPlus/renewMessage/title"
-msgstr "坦克世界Plus已于%(time)s续订"
+msgstr "坦克世界Plus续订日期已变更"
 
 msgid "serviceChannelMessages/wotPlus/rental/noTank/text"
 msgstr "请从列表中选择一辆坦克进行租用。"
@@ -3921,16 +4002,28 @@ msgid "serviceChannelMessages/wotPlus/tankRental/isPending/title"
 msgstr "已租用！"
 
 msgid "serviceChannelMessages/wotPlus/unavailableMessage/text"
-msgstr "坦克世界Plus福利已关闭。"
+msgstr "这些福利已关闭。"
 
 msgid "serviceChannelMessages/wotPlus/unavailableMessage/title"
 msgstr "坦克世界Plus不可用"
+
+msgid "serviceChannelMessages/wotPlus/unlockCoreMessage/title"
+msgstr "已激活坦克世界Plus核心版"
 
 msgid "serviceChannelMessages/wotPlus/unlockFreeDemount/title"
 msgstr "免费拆卸配件已解锁"
 
 msgid "serviceChannelMessages/wotPlus/unlockMessage/title"
 msgstr "已激活坦克世界Plus"
+
+msgid "serviceChannelMessages/wotPlus/unlockProMessage/title"
+msgstr "坦克世界Plus专业版"
+
+msgid "serviceChannelMessages/wotPlus/upgradeMessage/title"
+msgstr "坦克世界Plus已升级至专业版！"
+
+msgid "serviceChannelMessages/wotPlusExtend/button"
+msgstr "续订"
 
 msgid "serviceChannelMessages/xpReceivedAsGift"
 msgstr "您收到%(freeXP)s全局经验。"

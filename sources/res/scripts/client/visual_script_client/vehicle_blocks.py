@@ -626,22 +626,3 @@ class OnDiscreteShotDone(Block, VehicleMeta):
     @classmethod
     def blockAspects(cls):
         return [ASPECT.CLIENT]
-
-
-class GetVehicleName(Block, VehicleMeta):
-
-    def __init__(self, *args, **kwargs):
-        super(GetVehicleName, self).__init__(*args, **kwargs)
-        self._vehicle = self._makeDataInputSlot('vehicle', SLOT_TYPE.VEHICLE)
-        self._name = self._makeDataOutputSlot('name', SLOT_TYPE.STR, self._getName)
-
-    def _getName(self):
-        vehicle = self._vehicle.getValue()
-        name = ''
-        if vehicle.typeDescriptor:
-            name = vehicle.typeDescriptor.name
-        self._name.setValue(name)
-
-    @classmethod
-    def blockAspects(cls):
-        return [ASPECT.CLIENT]

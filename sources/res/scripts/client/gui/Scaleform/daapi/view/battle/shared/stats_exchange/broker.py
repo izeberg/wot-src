@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import weakref
 from contextlib import contextmanager
 import Event

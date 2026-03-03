@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import time, itertools
 from constants import REQUEST_COOLDOWN
 from debug_utils import LOG_DEBUG, LOG_WARNING

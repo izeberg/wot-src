@@ -34,11 +34,6 @@ class CGFGameObjectContext(VScriptContext):
     def getArena(self):
         return weakref.proxy(self.__arena)
 
-    @vse_get_property(SLOT_TYPE.INT, display_name='spaceID', description='SpaceID of current arena', aspects=[
-     ASPECT.SERVER])
-    def getSpaceID(self):
-        return self.gameObject.spaceID
-
     @vse_event_out((), display_name='OnClick', description='Reacts on click on game object                      (only if go have CollisionComponent, IsSelectableComponent, VSEComponent)', aspects=[
      ASPECT.CLIENT, ASPECT.HANGAR])
     def onGameObjectClick(self):

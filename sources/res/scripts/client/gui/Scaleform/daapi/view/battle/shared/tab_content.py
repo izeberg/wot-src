@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.Scaleform.daapi.view.meta.TabContentMeta import TabContentMeta
 from gui.impl.battle.battle_page.tab_view import TabView
 from gui.impl.gen import R

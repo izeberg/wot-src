@@ -499,6 +499,9 @@ msgstr "“猎豹”"
 msgid "Chassis_G18_JagdPanther_2"
 msgstr "“猎豹”加强型"
 
+msgid "Chassis_G191_StuG_IIIF_CFE_A"
+msgstr "III号突击炮F型\"河马\""
+
 msgid "Chassis_G23_Grille"
 msgstr "“蟋蟀”"
 
@@ -1046,6 +1049,9 @@ msgstr "Fu 8"
 
 msgid "FuG8f"
 msgstr "FuG 8 (f)"
+
+msgid "FuG_7_F"
+msgstr "FuG 7 (F)"
 
 msgid "FuG_F"
 msgstr "Fu.Spr.Ger"
@@ -2386,6 +2392,26 @@ msgstr "?empty?"
 msgid "G18_JagdPanther_short"
 msgstr "“猎豹”"
 
+msgid "G191_StuG_IIIF_CFE_A"
+msgstr "III号突击炮F型\"河马\""
+
+msgid "G191_StuG_IIIF_CFE_A_descr"
+msgstr ""
+"在与大量敌方装甲车辆交战后，D系军方改良了III号突击炮，为其安装了7.5cm StuK 40 "
+"L/43炮、新型弹药架和风扇。1942年4月成功通过测试后，该坦克开始量产。首批120辆坦克装备了StuK 40 "
+"L/43炮，后续的240辆则装备了StuK 40 "
+"L/48炮。正面装甲厚度随即从50毫米增加到了80毫米。该改进型总共生产了约360辆。被称为\"河马\"的队伍在一场友谊赛中对阵圣葛罗莉安娜女学院，该队伍的坦克上带有体现其对军事历史热情的装饰物。她们利用与城镇景观融为一体的战术，取得了显著的战果。从那时起，在每一场比赛中，河马组都使用灰色涂装，磨炼其隐蔽和伏击技巧。"
+
+msgid "G191_StuG_IIIF_CFE_A_long_special"
+msgstr ""
+"III号突击炮F型\"河马\"是一辆D系V级自行反坦克炮。得益于强劲的发动机和可靠的火炮，这辆坦克性能全面，可在必要时快速转场，并能对敌方坦克造成大量损伤。它还拥有良好的隐蔽性，能做到来去无踪。"
+
+msgid "G191_StuG_IIIF_CFE_A_short"
+msgstr "III号突击炮F型\"河马\""
+
+msgid "G191_StuG_IIIF_CFE_A_short_special"
+msgstr "良好的机动性，较高的射速"
+
 msgid "G20_Marder_II"
 msgstr "“黄鼠狼”II"
 
@@ -2421,6 +2447,12 @@ msgstr "狡兔"
 
 msgid "G25_PzII_Luchs_SHXXI_B_short"
 msgstr "狡兔"
+
+msgid "G25_PzII_Luchs_SHXXI_L"
+msgstr "404"
+
+msgid "G25_PzII_Luchs_SHXXI_L_short"
+msgstr "404"
 
 msgid "G25_PzII_Luchs_descr"
 msgstr "?empty?"
@@ -3260,6 +3292,14 @@ msgstr ""
 
 msgid "Maybach_HL_120_TRM_F"
 msgstr "迈巴赫 HL 120TRM"
+
+msgid "Maybach_HL_120_TRM_F_2"
+msgstr "迈巴赫 HL 120 TRM (F2)"
+
+msgid "Maybach_HL_120_TRM_F_2_short"
+msgstr ""
+"迈巴赫 HL 120\n"
+"TRM (F2)"
 
 msgid "Maybach_HL_120_TRM_G"
 msgstr "迈巴赫 HL 120 TRM/G"
@@ -4669,6 +4709,9 @@ msgstr "\"鹿角虫\""
 
 msgid "Turret_1_G18_JagdPanther"
 msgstr "“猎豹”"
+
+msgid "Turret_1_G191_StuG_IIIF_CFE_A"
+msgstr "III号突击炮F型\"河马\""
 
 msgid "Turret_1_G23_Grille"
 msgstr "“蟋蟀”"
@@ -6818,6 +6861,9 @@ msgstr "Pzgr 39 (B)"
 msgid "_75mm_Pzgr_39_E"
 msgstr "Pzgr 39 (E)"
 
+msgid "_75mm_Pzgr_39_F"
+msgstr "Pzgr 39 (F)"
+
 msgid "_75mm_Pzgr_39_G"
 msgstr "Pzgr 39 (G)"
 
@@ -6862,6 +6908,9 @@ msgstr "Pzgr 40 (B)"
 
 msgid "_75mm_Pzgr_40_E"
 msgstr "Pzgr 40 (E)"
+
+msgid "_75mm_Pzgr_40_F"
+msgstr "Pzgr 40 (F)"
 
 msgid "_75mm_Pzgr_40_G"
 msgstr "Pzgr 40 (G)"
@@ -6926,6 +6975,9 @@ msgstr "Sprgr 18 H型"
 msgid "_75mm_Sprgr_18_E"
 msgstr "Sprgr 18 (E)"
 
+msgid "_75mm_Sprgr_18_F"
+msgstr "Sprgr 18 (F)"
+
 msgid "_75mm_Sprgr_18_G"
 msgstr "Sprgr 18 (G)"
 
@@ -6974,6 +7026,9 @@ msgid "_75mm_StuK_40_L48A"
 msgstr ""
 "7.5cm Stu.K.40\n"
 "L/48炮"
+
+msgid "_75mm_StuK_40_L48_F"
+msgstr "7.5cm StuK 40 L/48 (F)炮"
 
 msgid "_75mm_Waffe0725_1944"
 msgstr ""

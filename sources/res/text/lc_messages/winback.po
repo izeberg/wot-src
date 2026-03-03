@@ -64,15 +64,6 @@ msgstr "可用地图:"
 msgid "modeInfoTooltip/title"
 msgstr "热身模式"
 
-msgid "progression/counter"
-msgstr "%(completed)s/%(total)s"
-
-msgid "progression/description"
-msgstr "每完成一个普通、高级或奖励任务都可以推进奖励进度。"
-
-msgid "progression/title"
-msgstr "已完成任务: %(counter)s"
-
 msgid "selectableRewardTooltip/basic/description"
 msgstr "可选择任意一辆%(level)s级可研发坦克。该坦克的模块均已研发，并附带乘员和车位。"
 
@@ -89,9 +80,6 @@ msgstr ""
 
 msgid "selectableRewardTooltip/discount/title"
 msgstr "%(level)s级坦克的折扣"
-
-msgid "takeReward/buttonText"
-msgstr "领取奖励"
 
 msgid "vehicleDiscountRewardTooltip/description"
 msgstr "%(research)s折扣已加到坦克蓝图碎片所提供的折扣上。可用的最大%(purchase)s折扣也已应用。"

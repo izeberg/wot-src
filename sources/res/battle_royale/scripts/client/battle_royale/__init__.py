@@ -1,1 +1,15 @@
-pass
+from chat_shared import SYS_MESSAGE_TYPE
+from battle_royale_progression_common.battle_royale_progression_constants import SM_TYPES
+
+def registerSystemMessagesTypes():
+    SYS_MESSAGE_TYPE.inject(SM_TYPES)
+
+
+def initProgression():
+    registerSystemMessagesTypes()
+    from gui.game_control import registerBRProgressionAwardControllers
+    registerBRProgressionAwardControllers()
+    from notification import registerClientNotificationHandlers
+    registerClientNotificationHandlers()
+    from messenger.formatters import registerMessengerServerFormatters
+    registerMessengerServerFormatters()

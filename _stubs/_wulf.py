@@ -45,12 +45,12 @@ class PyGuiApplication(pybind11_object):
 	def __str__(*args, **kwargs): pass
 	def __subclasshook__(*args, **kwargs): pass
 	def destroy(self, *args, **kwargs): pass
+	formatters = property(lambda self: None)
 	def initialize(self, *args, **kwargs): pass
 	def isInitialized(self, *args, **kwargs): pass
 	resourceManager = property(lambda self: None)
 	scale = property(lambda self: None)
 	def setServerTimeCallback(self, *args, **kwargs): pass
-	systemLocale = property(lambda self: None)
 	tutorial = property(lambda self: None)
 	uiLogger = property(lambda self: None)
 	windowsManager = property(lambda self: None)
@@ -144,6 +144,33 @@ class PyObjectCommand(PyObjectEntity):
 	def bindPyObject(self, *args, **kwargs): pass
 	def execute(self, *args, **kwargs): pass
 	name = property(lambda self: None)
+	object = property(lambda self: None)
+	def unbindPyObject(self, *args, **kwargs): pass
+
+
+class PyObjectFormatters(PyObjectEntity):
+	def __delattr__(*args, **kwargs): pass
+	__doc__ = None
+	def __format__(*args, **kwargs): pass
+	def __getattribute__(*args, **kwargs): pass
+	def __hash__(*args, **kwargs): pass
+	def __init__(*args, **kwargs): pass
+	__module__ = '_wulf'
+	def __new__(*args, **kwargs): pass
+	__qualname__ = 'PyObjectFormatters'
+	def __reduce__(*args, **kwargs): pass
+	def __reduce_ex__(*args, **kwargs): pass
+	def __repr__(*args, **kwargs): pass
+	def __setattr__(*args, **kwargs): pass
+	def __sizeof__(*args, **kwargs): pass
+	def __str__(*args, **kwargs): pass
+	def __subclasshook__(*args, **kwargs): pass
+	def bindPyObject(self, *args, **kwargs): pass
+	def caseMap(self, *args, **kwargs): pass
+	def getDateFormat(self, *args, **kwargs): pass
+	def getNumberFormat(self, *args, **kwargs): pass
+	def getRealFormat(self, *args, **kwargs): pass
+	def getTimeFormat(self, *args, **kwargs): pass
 	object = property(lambda self: None)
 	def unbindPyObject(self, *args, **kwargs): pass
 
@@ -1015,33 +1042,6 @@ class PyObjectResourceManager(PyObjectEntity):
 	def getSoundEffectId(self, *args, **kwargs): pass
 	def getTranslatedPluralText(self, *args, **kwargs): pass
 	def getTranslatedText(self, *args, **kwargs): pass
-	object = property(lambda self: None)
-	def unbindPyObject(self, *args, **kwargs): pass
-
-
-class PyObjectSystemLocale(PyObjectEntity):
-	def __delattr__(*args, **kwargs): pass
-	__doc__ = None
-	def __format__(*args, **kwargs): pass
-	def __getattribute__(*args, **kwargs): pass
-	def __hash__(*args, **kwargs): pass
-	def __init__(*args, **kwargs): pass
-	__module__ = '_wulf'
-	def __new__(*args, **kwargs): pass
-	__qualname__ = 'PyObjectSystemLocale'
-	def __reduce__(*args, **kwargs): pass
-	def __reduce_ex__(*args, **kwargs): pass
-	def __repr__(*args, **kwargs): pass
-	def __setattr__(*args, **kwargs): pass
-	def __sizeof__(*args, **kwargs): pass
-	def __str__(*args, **kwargs): pass
-	def __subclasshook__(*args, **kwargs): pass
-	def bindPyObject(self, *args, **kwargs): pass
-	def caseMap(self, *args, **kwargs): pass
-	def getDateFormat(self, *args, **kwargs): pass
-	def getNumberFormat(self, *args, **kwargs): pass
-	def getRealFormat(self, *args, **kwargs): pass
-	def getTimeFormat(self, *args, **kwargs): pass
 	object = property(lambda self: None)
 	def unbindPyObject(self, *args, **kwargs): pass
 

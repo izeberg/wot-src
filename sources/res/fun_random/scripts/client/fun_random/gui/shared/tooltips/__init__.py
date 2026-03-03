@@ -1,5 +1,5 @@
 from __future__ import absolute_import
-from shared_utils import CONST_CONTAINER
+from gui.shared import tooltips
 
-class TooltipType(CONST_CONTAINER):
+class TOOLTIP_TYPE(tooltips.TOOLTIP_TYPE):
     FUN_RANDOM = 'funRandom'

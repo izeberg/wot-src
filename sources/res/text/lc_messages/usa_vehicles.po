@@ -1067,6 +1067,26 @@ msgstr "\"巴顿\"坦克"
 msgid "A169_PattonIII_120_short_special"
 msgstr "强大的火炮，良好的俯/仰角"
 
+msgid "A170_M_VII_Y"
+msgstr "M-VII-Y"
+
+msgid "A170_M_VII_Y_descr"
+msgstr ""
+"1953年，M系军方开启了研发新型坦克的全新阶段。其中一个方向是H.L. "
+"Yoh公司在1953年6月提出的一系列坦克方案。该系列坦克因其极具创新性的技术方案脱颖而出。这些坦克的特点是应急履带，而其中最不寻常的方案是M-"
+"VII-Y。为了缩短车体，动力单元(发动机和油箱)被移至炮塔，并安置在加长的尾舱中。未建造原型车。"
+
+msgid "A170_M_VII_Y_long_special"
+msgstr ""
+"M-VII-"
+"Y是一辆全新的M系IX级重型坦克，拥有Yoh机制。其应急履带非常高效，即使主履带被击毁也不会损失太多速度。该坦克在其他方面也相当全能，包括良好的机动性、坚固的炮塔装甲和手感舒适的火炮。"
+
+msgid "A170_M_VII_Y_short"
+msgstr "M-VII-Y"
+
+msgid "A170_M_VII_Y_short_special"
+msgstr "应急履带、良好的炮塔装甲和火炮俯角"
+
 msgid "A171_IMT"
 msgstr "IMT"
 
@@ -1265,13 +1285,15 @@ msgstr ""
 "20世纪70年代末，太平洋汽车与铸造公司启动了一项搭载滑膛炮的中型坦克计划。该坦克计划发展为配备新型武器系统、改进型侦测与瞄准系统的主战坦克。主武器曾考虑采用75毫米或85毫米火炮。它尺寸较小但重量偏高。由于配备两吨重的大型发动机、火力配置相对不足，加之内外履带双驱动系统过于复杂，该计划在原型车制造前即被终止。"
 
 msgid "A188_Ares_MTB_long_special"
-msgstr "?empty?"
+msgstr ""
+"Ares "
+"MTB是一辆M系IX级中型坦克，其主要特点是速射过热调节自动炮。该武器系统非常适合发动突袭，可使坦克在短时间内造成巨额损伤。舒适的火炮俯角、良好的机动性与其武器相得益彰。"
 
 msgid "A188_Ares_MTB_short"
 msgstr "Ares MTB"
 
 msgid "A188_Ares_MTB_short_special"
-msgstr "?empty?"
+msgstr "速射过热调节自动炮，应急履带"
 
 msgid "A189_Ares_90"
 msgstr "Ares 90"
@@ -1332,6 +1354,24 @@ msgstr "\"萤火虫\"桑德斯"
 
 msgid "A192_M4A4_Firefly_CFE_A_short_special"
 msgstr "精准且射速较快的火炮，炮弹穿透力高"
+
+msgid "A194_AHT_7"
+msgstr "AHT-7"
+
+msgid "A194_AHT_7_descr"
+msgstr ""
+"该突击坦克概念始于20世纪60年代末。设计将发动机置于炮塔尾舱，使得车体可以大幅缩短，从而减轻重量并强化装甲。该坦克装备一门Y系165mm "
+"L9A1炮。为此，M系本计划购买生产许可并在国内建立生产线。然而，由于该计划与已服役的M48和M60坦克在标准化方面存在困难，M系陆军决定叫停该坦克的研发工作。"
+
+msgid "A194_AHT_7_long_special"
+msgstr ""
+"AHT-7是一辆M系X级自行反坦克炮。其165.1毫米火炮可造成巨额损伤，而拥有出色穿透力的特殊HE炮弹进一步增强了其威力。良好的火炮俯角让您能够利用不规则地形偷炮，掌控敌人意想不到的射击角度。应急履带机制可防止坦克被击毁履带而完全无法移动。"
+
+msgid "A194_AHT_7_short"
+msgstr "AHT-7"
+
+msgid "A194_AHT_7_short_special"
+msgstr "高额平均单发损伤，应急履带"
 
 msgid "A21_T14_long_special"
 msgstr ""
@@ -1738,11 +1778,17 @@ msgstr "AN/GRC-7 LTC"
 msgid "AN_GRC_8"
 msgstr "AN/GRC-8"
 
+msgid "AN_GRC_8A"
+msgstr "AN/GRC-8A"
+
 msgid "AN_GRC_8D"
 msgstr "AN/GRC-8D"
 
 msgid "AN_GRC_8E"
 msgstr "AN GRC 8E"
+
+msgid "AN_GRC_8F"
+msgstr "AN/GRC-8F"
 
 msgid "AN_PRC_10"
 msgstr "AN/PRC-10"
@@ -2138,6 +2184,9 @@ msgstr "XM57"
 msgid "Chassis_A169_PattonIII_120"
 msgstr "\"巴顿\"坦克"
 
+msgid "Chassis_A170_M_VII_Y"
+msgstr "M-VII-Y"
+
 msgid "Chassis_A171_IMT"
 msgstr "IMT"
 
@@ -2197,6 +2246,9 @@ msgstr "Ares 2000"
 
 msgid "Chassis_A192_M4A4_Firefly_CFE_A"
 msgstr "\"萤火虫\"桑德斯"
+
+msgid "Chassis_A194_AHT_7"
+msgstr "AHT-7"
 
 msgid "Chassis_A22_M5_Stuart"
 msgstr "M5 \"斯图亚特\""
@@ -2550,6 +2602,14 @@ msgstr "大陆 AOSI-895-5C"
 msgid "Continental_AOSI_1195_5"
 msgstr "大陆 AOSI-1195-5"
 
+msgid "Continental_AOSI_1195_5F"
+msgstr "大陆 AOSI-1195-5F"
+
+msgid "Continental_AOSI_1195_5F_short"
+msgstr ""
+"大陆\n"
+"AOSI-1195-5F"
+
 msgid "Continental_AOSI_1195_5_Y_III_A"
 msgstr "大陆 AOSI-1195-5 Y III A型"
 
@@ -2592,6 +2652,14 @@ msgstr ""
 
 msgid "Continental_AOSI_1195_5_Y_V"
 msgstr "大陆 AOSI-1195-5 Y V"
+
+msgid "Continental_AOSI_1195_5_Y_VII"
+msgstr "大陆 AOSI-1195-5 Y VII"
+
+msgid "Continental_AOSI_1195_5_Y_VII_short"
+msgstr ""
+"大陆\n"
+"AOSI-1195-5 Y VII"
 
 msgid "Continental_AOSI_1195_5_Y_VI_A"
 msgstr "大陆 AOSI-1195-5 Y VI A型"
@@ -4086,6 +4154,9 @@ msgstr "XM57"
 msgid "Turret_1_A169_PattonIII_120"
 msgstr "\"巴顿\"坦克"
 
+msgid "Turret_1_A170_M_VII_Y"
+msgstr "M-VII-Y"
+
 msgid "Turret_1_A171_IMT"
 msgstr "IMT"
 
@@ -4136,6 +4207,9 @@ msgstr "Ares 2000"
 
 msgid "Turret_1_A192_M4A4_Firefly_CFE_A"
 msgstr "\"萤火虫\"桑德斯"
+
+msgid "Turret_1_A194_AHT_7"
+msgstr "AHT-7"
 
 msgid "Turret_1_A22_M5_Stuart"
 msgstr "M5 \"斯图亚特\""
@@ -5130,6 +5204,9 @@ msgstr "AP T42 (T28)"
 msgid "_120mm_AP_T42_T95"
 msgstr "AP T42 (T95)"
 
+msgid "_120mm_AP_T_M358"
+msgstr "M358"
+
 msgid "_120mm_AP_T_M358E1"
 msgstr "AP-T M358E1"
 
@@ -5265,6 +5342,9 @@ msgstr "HEAT M835"
 msgid "_120mm_HEAT_T153E18"
 msgstr "HEAT T153E18"
 
+msgid "_120mm_HEAT_T_M469"
+msgstr "M469"
+
 msgid "_120mm_HEAT_T_M469E1"
 msgstr "HEAT-T M469E1"
 
@@ -5331,6 +5411,9 @@ msgstr "HE T67 (T28)"
 msgid "_120mm_HE_T67_T95"
 msgstr "HE T67 (T95)"
 
+msgid "_120mm_HE_T_M356"
+msgstr "M356"
+
 msgid "_120mm_HE_T_M356E1"
 msgstr "HE-T M356E1"
 
@@ -5345,6 +5428,9 @@ msgstr "T102 SPHT"
 
 msgid "_120mm_MPP_Gun_RHD"
 msgstr "120mm MPP RHD炮"
+
+msgid "_120mm_T123E1"
+msgstr "120mm T123E1炮"
 
 msgid "_120mm_T123E2_SPG"
 msgstr "120mm T123E2 SPG炮"
@@ -5558,6 +5644,18 @@ msgstr "155mm M1榴弹炮 (M41)"
 
 msgid "_155mm_Howitzer_M45"
 msgstr "155mm M45榴弹炮"
+
+msgid "_165_1mm_HEAT_M623E1"
+msgstr "HEAT M623E1"
+
+msgid "_165_1mm_HESH_M123E2"
+msgstr "HESH M123E2"
+
+msgid "_165_1mm_HE_M123E1"
+msgstr "HE M123E1"
+
+msgid "_165_1mm_M135E1"
+msgstr "165.1mm M135E1"
 
 msgid "_17pdr_APC_Mk4TA"
 msgstr "APDS 17磅Mk.1TA"

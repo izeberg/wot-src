@@ -20,6 +20,9 @@
 			<include>
 				<nations>japan</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<camouflage>
 			<id>15606</id>
@@ -189,6 +192,9 @@
 			<include>
 				<nations>japan</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<camouflage>
 			<id>15609</id>
@@ -358,6 +364,9 @@
 			<include>
 				<nations>japan</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<camouflage>
 			<id>15607</id>
@@ -527,6 +536,9 @@
 			<include>
 				<nations>japan</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<camouflage>
 			<id>15608</id>
@@ -696,6 +708,9 @@
 			<include>
 				<nations>japan</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<camouflage>
 			<id>15610</id>

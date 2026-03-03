@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.288917 1.765000 -2.662008</min>
+		<max>0.573972 2.895154 2.525734</max>
+	</visibilityBox>
+	<parent>vehicles/czech/Cz34_Vz_71_Tesak/_skins/Cz34_Vz_71_Tesak_BPXIX_3Dst/crash/lod2/Gun_01</parent>
+	<extent>64.000000</extent>
+	<nodefullVisual>vehicles/czech/Cz34_Vz_71_Tesak/_skins/Cz34_Vz_71_Tesak_BPXIX_3Dst/crash/lod1/Gun_01</nodefullVisual>
+</root>

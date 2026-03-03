@@ -1,4 +1,4 @@
-import json, logging, os, typing, Event
+import json, logging, os, uuid, typing, Event
 from PlayerEvents import g_playerEvents
 from gui.shared.utils import getPlayerDatabaseID
 from helpers.local_cache import FileLocalCache
@@ -60,7 +60,7 @@ class _VehiclePlaylistsCache(FileLocalCache):
         if len(data) != 3:
             _logger.warning('Expected len of cached data is 3, but received %d', len(data))
             return
-        if self.__VERSION == data[0]:
+        if data[0] == self.__VERSION:
             self.selectedID = data[1]
             self.data = data[2] or {}
             return
@@ -131,6 +131,9 @@ class VehiclePlaylistsController(IVehiclePlaylistsController):
     @property
     def isEnabled(self):
         return self.__isEnabled
+
+    def generateId(self):
+        return uuid.uuid4().hex
 
     def getSelectedID(self):
         if not self.isEnabled:

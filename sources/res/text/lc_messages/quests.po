@@ -662,9 +662,6 @@ msgstr "坦克"
 msgid "action/short/berthsPrices"
 msgstr "花费%(discount)s扩充兵营"
 
-msgid "action/short/calendar"
-msgstr "销售日历"
-
 msgid "action/short/changeRoleCost"
 msgstr "按%(discount)s折扣更改乘员专业"
 
@@ -821,26 +818,11 @@ msgstr "每场战斗胜利可获得%(discount)s倍经验奖励"
 msgid "action/short/winXPFactorMode/daily"
 msgstr "首次战斗胜利可获得%(discount)s倍经验奖励"
 
-msgid "action/subheader/calendar"
-msgstr "热卖！"
-
 msgid "action/time/finish"
 msgstr "有效期:"
 
 msgid "action/time/left"
 msgstr "剩余:"
-
-msgid "battleCondition/state/completed"
-msgstr "已完成"
-
-msgid "battleCondition/state/completed_perfectly"
-msgstr "完美完成"
-
-msgid "battleCondition/state/failed"
-msgstr "失败"
-
-msgid "battleCondition/state/in_progress"
-msgstr "启用"
 
 msgid "battleCondition/task/status/done"
 msgstr "完成！"
@@ -898,6 +880,11 @@ msgstr "5倍胜场经验任务"
 
 msgid "bonusName/battle_bonuses"
 msgstr "战斗收益加成"
+
+msgid "bonusName/battle_pass_plus"
+msgstr ""
+"战斗通行证\n"
+"Plus"
 
 msgid "bonusName/berths"
 msgstr "兵营中的床位"
@@ -1124,6 +1111,9 @@ msgstr "普通高级账号天数"
 msgid "bonusName/premium_plus"
 msgstr "《坦克世界》高级账号天数"
 
+msgid "bonusName/pro_boost"
+msgstr "专业版增益"
+
 msgid "bonusName/projectionDecal"
 msgstr "贴花"
 
@@ -1133,11 +1123,17 @@ msgstr "标准奖励战斗。"
 msgid "bonusName/rankedDailyBattles"
 msgstr "每日奖励战斗。"
 
+msgid "bonusName/service_record_customization"
+msgstr "服役记录个性化"
+
 msgid "bonusName/slots"
 msgstr "车位"
 
 msgid "bonusName/statTracker"
 msgstr "战绩追踪器"
+
+msgid "bonusName/stpcoin"
+msgstr "幸运印章"
 
 msgid "bonusName/style"
 msgstr "风格"
@@ -1322,23 +1318,11 @@ msgstr "轻型坦克"
 msgid "classes/small/mediumTank"
 msgstr "中型坦克"
 
-msgid "dailyQuests/body/reroll"
-msgstr "重置任务"
-
 msgid "dailyQuests/bonus/tooltipDescription"
 msgstr "完成3个普通任务以解锁奖励任务。"
 
 msgid "dailyQuests/bonus/tooltipTitle"
 msgstr "奖励任务"
-
-msgid "dailyQuests/bonusQuest/bonusMissionTitle"
-msgstr "奖励任务"
-
-msgid "dailyQuests/bonusQuest/countDown_hrs"
-msgstr "%H时%M分后过期"
-
-msgid "dailyQuests/bonusQuest/countDown_minSec"
-msgstr "在%MM:%SS后过期"
 
 msgid "dailyQuests/condition/battle_singular"
 msgstr "进行一场战斗"
@@ -1412,42 +1396,6 @@ msgstr "获得一场战斗胜利"
 msgid "dailyQuests/condition/winBattle_accum"
 msgstr "取得战斗胜利"
 
-msgid "dailyQuests/countDown/remainingText"
-msgstr "后新的普通任务可用"
-
-msgid "dailyQuests/countDown/title"
-msgstr "您已经完成了今天的所有普通任务"
-
-msgid "dailyQuests/footer/paragraph"
-msgstr "每完成一个普通、高级或奖励任务都会增加奖励进度。"
-
-msgid "dailyQuests/footer/title"
-msgstr "已完成任务："
-
-msgid "dailyQuests/header/default"
-msgstr "日常任务"
-
-msgid "dailyQuests/header/winback"
-msgstr "厉兵秣马"
-
-msgid "dailyQuests/missionSwitch/tooltip/body/available"
-msgstr "解锁于："
-
-msgid "dailyQuests/missionSwitch/tooltip/body/desc"
-msgstr "可以将不想要的任务重置，并获得一个不同的任务。"
-
-msgid "dailyQuests/missionSwitch/tooltip/body/desc_hrs"
-msgstr "每%H时"
-
-msgid "dailyQuests/missionSwitch/tooltip/body/desc_hrs_min"
-msgstr "每%H时%M分"
-
-msgid "dailyQuests/missionSwitch/tooltip/body/desc_min_only"
-msgstr "每%M分"
-
-msgid "dailyQuests/missionSwitch/tooltip/header"
-msgstr "任务重置不可用"
-
 msgid "dailyQuests/postBattle/conditionTypeAnd"
 msgstr "和"
 
@@ -1456,9 +1404,6 @@ msgstr "或"
 
 msgid "dailyQuests/postBattle/epic/description"
 msgstr "完成日常任务，获取史诗奖励"
-
-msgid "dailyQuests/postBattle/genericAmpersand"
-msgstr "&"
 
 msgid "dailyQuests/postBattle/genericTitle_bonus"
 msgstr "奖励任务"
@@ -1474,21 +1419,6 @@ msgstr "第三个日常任务"
 
 msgid "dailyQuests/postBattle/genericTitle_medium"
 msgstr "第二个日常任务"
-
-msgid "dailyQuests/tab/label"
-msgstr "普通"
-
-msgid "dailyQuests/takeRewardsButton/countdown"
-msgstr "剩余时间: {cream_Open}%(leftTime)s{cream_Close}"
-
-msgid "dailyQuests/takeRewardsButton/text"
-msgstr "领取奖励"
-
-msgid "dailyQuests/takeRewardsButton/tooltip"
-msgstr "点击即可选择并领取奖励。"
-
-msgid "dailyQuests/takeRewardsButton/tooltipDisable"
-msgstr "奖励暂时不可用。我们对造成的不便深表歉意。"
 
 msgid "details/conditions/achievements"
 msgstr "获得下列勋章之一:"
@@ -4201,146 +4131,14 @@ msgstr "任务"
 msgid "general/countdown/text/timer_hrs"
 msgstr "任务重置将在以下时间后可用：%H时%M分"
 
-msgid "general/countdown/text/timer_hrs_only"
-msgstr "任务重置将在以下时间后可用：%H时"
-
-msgid "general/countdown/text/timer_min"
-msgstr "任务重置将在以下时间后可用：%MM:%SS"
-
-msgid "general/countdown/text/timer_min_only"
-msgstr "任务重置将在以下时间后可用：%M分"
-
-msgid "general/countdown/text/timer_sec"
-msgstr "任务重置将在以下时间后可用：%S秒"
-
-msgid "general/countdown/timer_hrs"
-msgstr "%H时%M分"
-
-msgid "general/countdown/timer_hrs_only"
-msgstr "%H时"
-
 msgid "general/countdown/timer_min"
 msgstr "%MM:%SS"
-
-msgid "general/countdown/timer_min_only"
-msgstr "%M分"
-
-msgid "general/countdown/timer_sec"
-msgstr "%S秒"
 
 msgid "igr/tooltip/battlesLabel"
 msgstr "战斗场次"
 
 msgid "igr/tooltip/winsLabel"
 msgstr "胜率"
-
-msgid "infoPage/bonusMission/default"
-msgstr "完成3个普通任务后，将解锁一个报酬更加丰富的奖励任务。奖励任务必须当日完成，否则就会过期。"
-
-msgid "infoPage/bonusMission/winback"
-msgstr "完成3个普通任务即可解锁一个带有更多珍贵奖励的奖励任务。该任务必须当日完成，否则就会过期。"
-
-msgid "infoPage/bonusMissionTitle"
-msgstr "奖励任务"
-
-msgid "infoPage/conditions/default"
-msgstr ""
-"一些任务必须在单场战斗中完成，而累积型任务则没有完成的时间限制。累积型任务拥有一个进度条，您可以在标准模式和天梯战中完成它们，而且这些游戏模式中的任务进度将共享。"
-
-msgid "infoPage/conditions/winback"
-msgstr "一些任务必须在单场战斗中完成，而累积型任务则没有完成的时间限制。累积型任务拥有一个进度条，您可以在热身模式和标准模式中完成它们。"
-
-msgid "infoPage/conditions/winback_comp7Active"
-msgstr ""
-"一些任务必须在单场战斗中完成，而累积型任务则没有完成的时间限制。累积型任务拥有一个进度条，您可以在热身模式、标准模式和天梯战中完成它们，而且这些游戏模式中的任务进度将共享。"
-
-msgid "infoPage/conditionsTitle"
-msgstr "条件"
-
-msgid "infoPage/dailyMissionTitle"
-msgstr "普通任务"
-
-msgid "infoPage/dailyMissions/battlePassDailyMissions/default"
-msgstr ""
-"普通任务由每天都可以完成的随机任务条件构成。它和个人任务类似，普通任务的进度仅在每场战斗结束后才会更新。我们建议您在获得普通任务的当天完成。否则，它将顺延至第二天，阻碍下一个任务的完成。战斗通行证期间，每个任务都可为您带来额外的战斗通行证点数。"
-
-msgid "infoPage/dailyMissions/battlePassDailyMissions/winback"
-msgstr ""
-"普通任务的完成条件随机，并且每天都可完成。普通任务的进度仅在每场战斗结束后更新。我们建议您在获得每个任务的当天将其完成。否则，此任务会顺延至第二天，并妨碍下个任务的完成。战斗通行证期间，完成每个任务都可额外获得战斗通行证点数。"
-
-msgid "infoPage/dailyMissions/default"
-msgstr "普通任务的完成条件随机，并且每天都可完成。与个人任务相似，其任务进度仅在每场战斗结束后更新。这些任务没有任何时间限制，随时都可以完成。"
-
-msgid "infoPage/dailyMissions/winback"
-msgstr "普通任务的完成条件随机，并且每天都可完成。其任务进度仅在每场战斗结束后更新。这些任务没有时间限制，可在任意时间完成。"
-
-msgid "infoPage/epicRewards/default"
-msgstr ""
-"史诗奖励是马拉松式的循环奖励。每个完成的普通、高级、和奖励任务都会计入其进度。\n"
-"一轮结束后会开启新的一轮。史诗奖励循环没有时间限制，可随时完成。"
-
-msgid "infoPage/epicRewards/winback"
-msgstr ""
-"您需要完成整个厉兵秣马任务进度才能获得主要奖励。完成每个普通、高级和奖励任务都能推进其进度。完成最终任务后，您将获得奖励。届时进度将会重置，您可以再次完成它。"
-
-msgid "infoPage/epicRewardsTitle"
-msgstr "史诗奖励"
-
-msgid "infoPage/header/default"
-msgstr "关于日常任务"
-
-msgid "infoPage/header/winback"
-msgstr "厉兵秣马"
-
-msgid "infoPage/infoButton/back/goto"
-msgstr "打开任务界面"
-
-msgid "infoPage/infoButton/back/title"
-msgstr "返回"
-
-msgid "infoPage/infoButton/default"
-msgstr "关于日常任务"
-
-msgid "infoPage/infoButton/winback"
-msgstr "关于任务"
-
-msgid "infoPage/infoButtonTooltip/body"
-msgstr "点击链接查看更多信息。"
-
-msgid "infoPage/infoButtonTooltip/header/default"
-msgstr "关于日常任务"
-
-msgid "infoPage/infoButtonTooltip/header/winback"
-msgstr "关于任务"
-
-msgid "infoPage/missionSwitch/winback"
-msgstr "任意普通任务都可以替换为另外一项随机任务，每四个小时一次。如果您的其中一辆坦克此时正在战斗中，已完成的进度将丢失。"
-
-msgid "infoPage/missionSwitchTitle"
-msgstr "重置任务"
-
-msgid "infoPage/missionSwitch_hrs"
-msgstr ""
-"玩家可以重置不想要的普通任务，并获得不同的任务。执行操作后，任务重置按钮进入%H小时的冷却时间。如果您有战车在战斗中，重置任务后您可能会丢失任务进度。"
-
-msgid "infoPage/missionSwitch_min"
-msgstr ""
-"玩家可以重置不想要的普通任务，并获得不同的任务。执行操作后，任务重置按钮进入%H小时 "
-"%MM分钟的冷却时间。如果您有战车在战斗中，重置任务后您可能会丢失任务进度。"
-
-msgid "infoPage/premiumMissions/default"
-msgstr ""
-"拥有《坦克世界》高级账号后，将为您解锁一组必须依次完成的3个高级任务。这些任务都可以在标准模式和天梯战中完成。这些高级任务的进度将在每场战斗结束后才会进行更新。"
-
-msgid "infoPage/premiumMissions/winback"
-msgstr "《坦克世界》高级账号可解锁3个需要依次完成的高级任务。这些任务可通过参加热身和标准模式的战斗来完成。其进度仅会在每场战斗结束后更新。"
-
-msgid "infoPage/premiumMissions/winback_comp7Active"
-msgstr ""
-"《坦克世界》高级账号可解锁3个需要依次完成的高级任务。这些任务可通过参加热身、标准和天梯战模式的战斗来完成。其进度仅会在每场战斗结束后更新。"
-
-msgid "infoPage/premiumMissionsTitle"
-msgstr "高级任务"
 
 msgid "item/timer/tillFinish"
 msgstr "完成时间"
@@ -5008,12 +4806,6 @@ msgstr "造成的损伤排名本队前5"
 msgid "premiumQuests/condition/win/winLong"
 msgstr "获得一场战斗胜利"
 
-msgid "premiumQuests/countDown/remainingText"
-msgstr "后新的高级任务可用"
-
-msgid "premiumQuests/countDown/title"
-msgstr "您已经完成了今天的所有高级任务"
-
 msgid "premiumQuests/detailedQuests/requirements/premiumAccount"
 msgstr "需要拥有坦克世界高级账号"
 
@@ -5022,18 +4814,6 @@ msgstr "前一个任务尚未完成"
 
 msgid "premiumQuests/header/default"
 msgstr "高级任务"
-
-msgid "premiumQuests/header/winback"
-msgstr "厉兵秣马"
-
-msgid "premiumQuests/notPremiumAccount/button"
-msgstr "购买高级账号"
-
-msgid "premiumQuests/notPremiumAccount/paragraph"
-msgstr "《坦克世界》高级账号可以解锁3个连续的高级任务，并提供各种福利。如:额外50%经验和银币、银币储备库、额外的地图排除栏位以及可控经验加成。"
-
-msgid "premiumQuests/notPremiumAccount/title"
-msgstr "高级任务需要坦克世界高级账号才能解锁"
 
 msgid "premiumQuests/postBattle/genericTitle_easy"
 msgstr "第一个高级任务"
@@ -5052,15 +4832,6 @@ msgstr "第二个高级任务"
 
 msgid "premiumQuests/quests/prem_acc_q03/title"
 msgstr "第三个高级任务"
-
-msgid "premiumQuests/tab/label"
-msgstr "高级"
-
-msgid "premiumQuests/tooltips/locked/body"
-msgstr "完成前置高级任务以解锁这一个。"
-
-msgid "premiumQuests/tooltips/locked/header"
-msgstr "任务不可用"
 
 msgid "quest/chain/hint/holdAwardSheet"
 msgstr "用通行令来完成任务"

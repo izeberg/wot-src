@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.impl.dialogs.sub_views.common.single_price import SinglePrice
 from gui.impl.gen import R
 

@@ -104,7 +104,6 @@ package net.wg.gui.lobby.rankedBattles19.components.divisionProgress.helpers
          var _loc5_:Number = NaN;
          var _loc6_:int = 0;
          var _loc8_:int = 0;
-         var _loc15_:int = 0;
          var _loc16_:DivisionProgressRankRenderer = null;
          var _loc17_:Number = NaN;
          var _loc18_:Number = NaN;
@@ -130,7 +129,7 @@ package net.wg.gui.lobby.rankedBattles19.components.divisionProgress.helpers
          {
             _loc14_ = _loc11_ * (_loc5_ - _loc4_ + 1);
          }
-         _loc15_ = 0;
+         var _loc15_:int = 0;
          while(_loc15_ < _loc4_)
          {
             _loc16_ = _loc3_[_loc15_];

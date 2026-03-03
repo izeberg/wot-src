@@ -509,7 +509,7 @@ class _ClassicGroupWrapper(object):
 
 
 def getGroupHelper(item):
-    if not item.itemTypeID == GUI_ITEM_TYPE.STYLE and item.isQuestsProgression:
+    if item.itemTypeID != GUI_ITEM_TYPE.STYLE and item.isQuestsProgression:
         return _QuestGroupWrapper(item)
     return _ClassicGroupWrapper(item)
 

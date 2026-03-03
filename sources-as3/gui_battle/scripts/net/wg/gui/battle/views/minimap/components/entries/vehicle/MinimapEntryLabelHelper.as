@@ -4,6 +4,7 @@ package net.wg.gui.battle.views.minimap.components.entries.vehicle
    import flash.geom.Point;
    import flash.text.TextField;
    import flash.utils.Timer;
+   import net.wg.gui.battle.views.minimap.components.entries.interfaces.IVehicleMinimapEntry;
    import net.wg.gui.battle.views.minimap.constants.MinimapSizeConst;
    
    public class MinimapEntryLabelHelper
@@ -22,7 +23,7 @@ package net.wg.gui.battle.views.minimap.components.entries.vehicle
       
       private var bounds:Point;
       
-      private var _entryRef:VehicleMinimapEntry;
+      private var _entryRef:IVehicleMinimapEntry;
       
       private var _initialOffsetX:int;
       
@@ -46,7 +47,7 @@ package net.wg.gui.battle.views.minimap.components.entries.vehicle
       
       private var _tfHeightOnScreen:Number = 0;
       
-      public function MinimapEntryLabelHelper(param1:VehicleMinimapEntry, param2:TextField)
+      public function MinimapEntryLabelHelper(param1:IVehicleMinimapEntry, param2:TextField)
       {
          this.bounds = new Point(MinimapSizeConst.MAP_SIZE[0].width / 2,MinimapSizeConst.MAP_SIZE[0].height / 2);
          super();
@@ -82,6 +83,7 @@ package net.wg.gui.battle.views.minimap.components.entries.vehicle
       
       public function validateLabel() : void
       {
+         this.recalcTFScreenParameters();
          this.validateState();
       }
       
@@ -139,7 +141,7 @@ package net.wg.gui.battle.views.minimap.components.entries.vehicle
          {
             this.__prevEntityX = this._entryRef.x;
             this.__prevEntityY = this._entryRef.y;
-            _loc2_ = this._entryRef.hpCircle.visible;
+            _loc2_ = this._entryRef.isHpCircleVisible;
             if(_loc2_)
             {
                _loc3_ = this._hpOffsetX;

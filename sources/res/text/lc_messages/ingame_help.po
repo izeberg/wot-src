@@ -169,45 +169,6 @@ msgstr "目标名称"
 msgid "crosshairControls/title"
 msgstr "炮和瞄准十字线"
 
-msgid "detailsHelp/battleRoyale/airDrop/description"
-msgstr ""
-"搜索用烟雾标记的物资。绿色烟雾内含炮弹和第2个能力的1次充能次数。黄色烟雾内含第1、3、4个能力的充能次数。蓝色烟雾内含生命值恢复、模块修复及全部能力的充能次数。在战斗中按下Tab键，即可查看各种物资的详情。"
-
-msgid "detailsHelp/battleRoyale/airDrop/title"
-msgstr "搜索物资"
-
-msgid "detailsHelp/battleRoyale/radar/description"
-msgstr ""
-"无线电探测激活后将侦测敌方坦克和有价值物品的位置，并将他们标记在小地图上。激活无线电探测的玩家将会自动显示在小地图上，并对探测范围内的所有其他玩家保持可见。"
-
-msgid "detailsHelp/battleRoyale/radar/title"
-msgstr "无线电探测"
-
-msgid "detailsHelp/battleRoyale/sectorVision/description"
-msgstr ""
-"您只能发现炮塔前方锥形区域观察范围内的坦克。为方便起见，这个锥形区域也将显示在小地图上。距离您非常近的敌方坦克会对您一直可见(X光透视技术)。"
-
-msgid "detailsHelp/battleRoyale/sectorVision/title"
-msgstr "观察范围机制"
-
-msgid "detailsHelp/battleRoyale/uniqueAbilities/description"
-msgstr "8辆钢铁猎手坦克中的每一辆都有2个通用和2个专属能力。其中之一威力强大，足以改变战斗结果。"
-
-msgid "detailsHelp/battleRoyale/uniqueAbilities/title"
-msgstr "每辆坦克都有它的专属能力"
-
-msgid "detailsHelp/battleRoyale/upgrade/description"
-msgstr "您只能驾驶可在战斗中升级的特殊坦克进入战斗。您可以选择每次需要升级的项目。"
-
-msgid "detailsHelp/battleRoyale/upgrade/title"
-msgstr "在战斗中升级坦克"
-
-msgid "detailsHelp/battleRoyale/zone/description"
-msgstr "黄色边界代表这个区域将很快封闭。如果您位于红色区域中，请尽快离开以免坦克被摧毁。"
-
-msgid "detailsHelp/battleRoyale/zone/title"
-msgstr "游戏区域正在缩小"
-
 msgid "detailsHelp/default/title"
 msgstr "帮  助"
 
@@ -466,9 +427,6 @@ msgstr "在齐射射击模式下，射击损伤和装填时间都增加至2倍�
 
 msgid "detailsHelp/mechanics/twinGun/page2/title"
 msgstr "优缺点"
-
-msgid "detailsHelp/noKey"
-msgstr "未分配"
 
 msgid "detailsHelp/noKeysWarning"
 msgstr "核心按键尚未分配。在游戏设置中分配它们。"

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from helpers.time_utils import ONE_MINUTE
 import BattleReplay, BigWorld

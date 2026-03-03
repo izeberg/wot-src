@@ -206,6 +206,12 @@ msgstr "战地升级"
 msgid "vehicleMenu/menuItem/nationChange/title"
 msgstr "修改系别"
 
+msgid "vehicleMenu/menuItem/proBoost/active"
+msgstr "已激活"
+
+msgid "vehicleMenu/menuItem/proBoost/title"
+msgstr "{{activeOrCountdown}}专业版增益"
+
 msgid "vehicleMenu/menuItem/quickTraining/title"
 msgstr "快速训练"
 
@@ -217,3 +223,33 @@ msgstr "研发"
 
 msgid "vehicleMenu/menuItem/vehSkillTree/title"
 msgstr "升级"
+
+msgid "vehicleMenu/proBoostTooltips/active/body"
+msgstr "您可随时更改该选择。"
+
+msgid "vehicleMenu/proBoostTooltips/active/header"
+msgstr "已为该坦克激活专业版增益"
+
+msgid "vehicleMenu/proBoostTooltips/incompatibleMode/body"
+msgstr "您只能在标准模式、天梯战模式、要塞模式、领土战和赛事中为坦克激活专业版增益。"
+
+msgid "vehicleMenu/proBoostTooltips/incompatibleMode/header"
+msgstr "无法在该模式下激活专业版增益"
+
+msgid "vehicleMenu/proBoostTooltips/incompatibleVehicle/body"
+msgstr "您只能为I–X级的可研发和收藏坦克激活专业版增益。"
+
+msgid "vehicleMenu/proBoostTooltips/incompatibleVehicle/header"
+msgstr "无法为该坦克激活专业版增益"
+
+msgid "vehicleMenu/proBoostTooltips/locked/body"
+msgstr "您当前已为{{vehicle}}激活专业版增益。您可在{{time}}后更改该选择。"
+
+msgid "vehicleMenu/proBoostTooltips/locked/header"
+msgstr "请稍后再来！"
+
+msgid "vehicleMenu/proBoostTooltips/lockedActive/body"
+msgstr "您可在{{time}}后更改此选择。"
+
+msgid "vehicleMenu/proBoostTooltips/lockedActive/header"
+msgstr "已为该坦克激活专业版增益"

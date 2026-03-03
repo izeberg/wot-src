@@ -1,5 +1,8 @@
+from __future__ import absolute_import
+import logging
 from collections import defaultdict
-import logging, Event, BattleReplay
+from future.utils import viewitems, viewvalues
+import Event, BattleReplay
 from constants import ROLE_TYPE
 from gui.Scaleform.genConsts.DAMAGE_SOURCE_TYPES import DAMAGE_SOURCE_TYPES
 from ids_generators import SequenceIDGenerator
@@ -11,7 +14,7 @@ from helpers import dependency
 from skeletons.gui.battle_session import IBattleSessionProvider
 _logger = logging.getLogger(__name__)
 
-class DAMAGE_SOURCE():
+class DAMAGE_SOURCE(object):
     PLAYER = 'player'
     ARTILLERY = 'artillery'
     BOMBERS = 'airstrike'
@@ -713,13 +716,13 @@ class _MultiVehicleRibbon(_MultiTargetsRibbon):
         return cls(ribbonID, event.getTargetID(), _isRoleBonus(event), event.getRole(), cls._extractExtraValue(event))
 
     def getVehIDs(self):
-        return self._vehicles.keys()
+        return list(self._vehicles)
 
     def getExtraValue(self, vehID):
         return self._vehicles[vehID]
 
     def getTotalExtraValue(self):
-        return sum(self._vehicles.itervalues())
+        return sum(viewvalues(self._vehicles))
 
     def _canAggregate(self, ribbon):
         return super(_MultiVehicleRibbon, self)._canAggregate(ribbon) and self.isRoleBonus() == ribbon.isRoleBonus()
@@ -1222,14 +1225,14 @@ class RibbonsAggregator(object):
         self.__isInPostmortemMode = False
 
     def _onPerksChanged(self, perkData):
-        self._aggregateRibbons([_PerkRibbon.createFromFeedbackEvent(self.__idGenerator.next(), perkData)])
+        self._aggregateRibbons([_PerkRibbon.createFromFeedbackEvent(self.__idGenerator.nextSequenceID, perkData)])
 
     def _onVehicleStateUpdated(self, state, value):
         if state in VEHICLE_VIEW_STATE.WEATHER_ZONES and not value.needToCloseTimer():
-            self._aggregateRibbons([_WeatherZoneRibbon(self.__idGenerator.next(), state)])
+            self._aggregateRibbons([_WeatherZoneRibbon(self.__idGenerator.nextSequenceID, state)])
 
     def _onPlayerFeedbackReceived(self, events):
-        self._aggregateRibbons(list(_createRibbonFromPlayerFeedbackEvent(self, self.__idGenerator.next(), e) for e in events))
+        self._aggregateRibbons(list(_createRibbonFromPlayerFeedbackEvent(self, self.__idGenerator.nextSequenceID, e) for e in events))
 
     def _aggregateRibbons(self, ribbons):
         aggregatedRibbons = {}
@@ -1293,14 +1296,14 @@ class RibbonsAggregator(object):
                 isValid = True
                 if condition is not None and self.__vehicleStateCtrl is not None:
                     vehId = self.__vehicleStateCtrl.getControllingVehicleID()
-                    isValid = all([ condition(r, vehId) for r in ribbons[rType] ])
+                    isValid = all(condition(r, vehId) for r in ribbons[rType])
                 if isValid:
                     del ribbons[rType]
 
         if self.KILL_RIBBON_BATTLE_EFFICIENCY_TYPE in ribbons:
             killRibbons = dict((r.getVehicleID(), r) for r in ribbons[self.KILL_RIBBON_BATTLE_EFFICIENCY_TYPE])
             damageRibbons = dict((t, ribbons[t]) for t in self.RIBBON_TYPES_AGGREGATED_WITH_KILL_RIBBON if t in ribbons)
-            for rType, tmpRibbons in damageRibbons.iteritems():
+            for rType, tmpRibbons in viewitems(damageRibbons):
                 filteredRibbons = []
                 for tmpRibbon in tmpRibbons:
                     if tmpRibbon.getVehicleID() in killRibbons:
@@ -1313,7 +1316,7 @@ class RibbonsAggregator(object):
                 ribbons[rType] = filteredRibbons
 
             excludedRibbons = dict((t, ribbons[t]) for t in _RIBBON_TYPES_EXCLUDED_IF_KILL_RIBBON if t in ribbons)
-            for rType, tmpRibbons in excludedRibbons.iteritems():
+            for rType, tmpRibbons in viewitems(excludedRibbons):
                 filteredRibbons = [ r for r in tmpRibbons if r.getVehicleID() not in killRibbons ]
                 ribbons[rType] = filteredRibbons
 
@@ -1331,7 +1334,7 @@ class RibbonsAggregator(object):
             if detectionRibbons is not None:
                 sortedRibons.extend(sorted(detectionRibbons, key=_sortKey))
             remaningRibbons = []
-            for newRibbons in ribbons.itervalues():
+            for newRibbons in viewvalues(ribbons):
                 remaningRibbons.extend(newRibbons)
 
             sortedRibons.extend(sorted(remaningRibbons, key=_sortKey))

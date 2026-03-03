@@ -235,9 +235,9 @@ class BaseBattlePassEntryPointView(IGlobalListener, EventsHandler):
         if self.isPaused:
             return R.invalid()
         if self.isCompleted and self.isHoliday:
-            return R.views.lobby.battle_pass.tooltips.BattlePassCompletedTooltipView()
+            return R.views.mono.battle_pass.tooltips.completed()
         if not self.chapterID and not self.isHoliday:
-            return R.views.lobby.battle_pass.tooltips.BattlePassNoChapterTooltipView()
+            return R.views.mono.battle_pass.tooltips.no_chapter()
         return R.views.lobby.battle_pass.tooltips.BattlePassInProgressTooltipView()
 
     def _getNotChosenRewardCount(self):

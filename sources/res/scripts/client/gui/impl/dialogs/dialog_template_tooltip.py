@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from gui.impl.gen.view_models.views.dialogs.dialog_template_generic_tooltip_view_model import TooltipType
 if typing.TYPE_CHECKING:

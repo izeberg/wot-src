@@ -33,10 +33,9 @@ class _ResourceLoadingConfirmator(MessageConfirmator):
     @wg_async
     def _confirm(self, callback):
         gfMetaData = self._gfMakeMeta()
-        if gfMetaData:
-            isOk, data = yield wg_await(gfMetaData())
-            result = plugins.makeSuccess(**data) if isOk else plugins.makeError(**data)
-            callback(result)
+        isOk, data = yield wg_await(gfMetaData())
+        result = plugins.makeSuccess(**data) if isOk else plugins.makeError(**data)
+        callback(result)
 
 
 class ResourceWellTakeBackProcessor(Processor):
@@ -137,10 +136,9 @@ class _NextSerialVehicleConfirmator(MessageConfirmator):
     @wg_async
     def _confirm(self, callback):
         gfMetaData = self._gfMakeMeta()
-        if gfMetaData:
-            isOk, data = yield wg_await(gfMetaData())
-            result = plugins.makeSuccess(**data) if isOk else plugins.makeError(**data)
-            callback(result)
+        isOk, data = yield wg_await(gfMetaData())
+        result = plugins.makeSuccess(**data) if isOk else plugins.makeError(**data)
+        callback(result)
 
 
 class NextSerialVehicleProcessor(_BasePutResourcesProcessor):

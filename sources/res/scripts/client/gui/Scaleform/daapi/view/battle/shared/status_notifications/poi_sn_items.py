@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, typing
 from gui.Scaleform.daapi.view.battle.shared.status_notifications.components import StatusNotificationsGroup
 from gui.Scaleform.daapi.view.battle.shared.status_notifications.sn_items import TimerSN
@@ -43,7 +44,7 @@ class PointOfInterestSN(TimerSN):
         raise NotImplementedError
 
     def _getTimeParams(self, value):
-        if value.status.endTime == INVALID_TIMESTAMP or value.status.startTime == INVALID_TIMESTAMP:
+        if INVALID_TIMESTAMP in (value.status.endTime, value.status.startTime):
             return (0, 0)
         return (
          value.status.endTime - value.status.startTime, value.status.endTime)

@@ -1,6 +1,6 @@
 from __future__ import absolute_import
 import typing
-from gui.battle_results.presenters.packers.tooltips.efficiency_tooltips import BaseParameter, KillsParameter, StunParameter, SpottedParameter, DefencePointsParameter, DamageDealtParameter, DamageAssistedParameter, DamageBlockedByArmorParameter, CapturePointsParameter, EfficiencyTooltipsPacker
+from gui.battle_results.presenters.packers.tooltips.efficiency_tooltips import KillsParameter, StunParameter, SpottedParameter, DefencePointsParameter, DamageDealtParameter, DamageAssistedParameter, DamageBlockedByArmorParameter, CapturePointsParameter, EfficiencyTooltipsPacker
 from gui.impl.gen import R
 from gui.impl.gen.view_models.views.lobby.battle_results.efficiency_param_constants import EfficiencyParamConstants
 from soft_exception import SoftException
@@ -8,7 +8,6 @@ if typing.TYPE_CHECKING:
     from gui.battle_results.stats_ctrl import BattleResults
     from gui.impl.gen.view_models.views.lobby.battle_results.tooltips.efficiency_tooltip_model import EfficiencyTooltipModel
 _STR_PATH = R.strings.fun_battle_results.efficiencyTooltip.header
-_IMG_PATH = R.images.gui.maps.icons.library.efficiency.statsParameters
 
 class FunTotalKillsParameter(KillsParameter):
     _TITLE = _STR_PATH.kills
@@ -42,12 +41,6 @@ class FunTotalDefencePointsParameter(DefencePointsParameter):
     _TITLE = _STR_PATH.droppedCapturePoints
 
 
-class FunTotalSpiritPointsParameter(BaseParameter):
-    _TITLE = _STR_PATH.spiritPoints
-    _DESCRIPTION = R.strings.fun_battle_results.efficiencyTooltip.spiritPoints.description
-    _ICON = _IMG_PATH.spiritPoints
-
-
 _FUN_PARAMETERS_TO_TOOLTIP_MAP = {EfficiencyParamConstants.STUN: FunTotalStunParameter, 
    EfficiencyParamConstants.DAMAGE_DEALT: FunTotalDamageDealtParameter, 
    EfficiencyParamConstants.DAMAGE_BLOCKED_BY_ARMOR: FunTotalDamageBlockedByArmorParameter, 
@@ -55,11 +48,9 @@ _FUN_PARAMETERS_TO_TOOLTIP_MAP = {EfficiencyParamConstants.STUN: FunTotalStunPar
    EfficiencyParamConstants.SPOTTED: FunTotalSpottedParameter, 
    EfficiencyParamConstants.KILLS: FunTotalKillsParameter, 
    EfficiencyParamConstants.CAPTURE_POINTS: FunTotalCapturePointsParameter, 
-   EfficiencyParamConstants.DROPPED_CAPTURE_POINTS: FunTotalDefencePointsParameter, 
-   EfficiencyParamConstants.SPIRIT_POINTS: FunTotalSpiritPointsParameter}
+   EfficiencyParamConstants.DROPPED_CAPTURE_POINTS: FunTotalDefencePointsParameter}
 
 class FunEfficiencyTooltipsPacker(EfficiencyTooltipsPacker):
-    __slots__ = ()
     _TOOLTIPS = _FUN_PARAMETERS_TO_TOOLTIP_MAP
 
     @classmethod

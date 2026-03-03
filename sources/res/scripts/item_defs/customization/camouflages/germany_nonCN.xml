@@ -23,6 +23,9 @@
 			<exclude>
 				<vehicles>germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF germany:G137_PzVI_Tiger_217</vehicles>
 			</exclude>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<camouflage>
 			<id>15119</id>
@@ -666,6 +669,9 @@
 			</include>
 			<exclude>
 				<vehicles>germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF germany:G137_PzVI_Tiger_217</vehicles>
+			</exclude>
+			<exclude>
+				<tags>excluded_from_customization</tags>
 			</exclude>
 		</vehicleFilter>
 		<camouflage>
@@ -1311,6 +1317,9 @@
 			<exclude>
 				<vehicles>germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF germany:G137_PzVI_Tiger_217</vehicles>
 			</exclude>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<camouflage>
 			<id>15120</id>
@@ -1951,6 +1960,9 @@
 			<exclude>
 				<vehicles>germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF germany:G137_PzVI_Tiger_217</vehicles>
 			</exclude>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<camouflage>
 			<id>15121</id>
@@ -2574,6 +2586,9 @@
 			</include>
 			<exclude>
 				<vehicles>germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF germany:G137_PzVI_Tiger_217</vehicles>
+			</exclude>
+			<exclude>
+				<tags>excluded_from_customization</tags>
 			</exclude>
 		</vehicleFilter>
 		<camouflage>
@@ -3203,6 +3218,9 @@
 			</include>
 			<exclude>
 				<vehicles>germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF</vehicles>
+			</exclude>
+			<exclude>
+				<tags>excluded_from_customization</tags>
 			</exclude>
 		</vehicleFilter>
 		<camouflage>

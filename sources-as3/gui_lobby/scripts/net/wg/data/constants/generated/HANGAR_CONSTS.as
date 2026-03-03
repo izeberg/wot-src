@@ -13,8 +13,6 @@ package net.wg.data.constants.generated
       
       public static const VEHICLE_PARAMETERS:String = "vehicleParameters";
       
-      public static const EVENT_ENTRIES_CONTAINER:String = "eventsEntryContainer";
-      
       public static const HEADER:String = "header";
       
       public static const VEHICLE_RESEARCH:String = "vehicleResearch";
@@ -24,8 +22,6 @@ package net.wg.data.constants.generated
       public static const ALERT_MESSAGE:String = "alertMessage";
       
       public static const CAROUSEL:String = "carousel";
-      
-      public static const MINI_CLIENT:String = "miniClient";
       
       public static const PRESTIGE_WIDGET:String = "prestigeWidget";
       

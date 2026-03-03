@@ -56,13 +56,14 @@ def weeklyQuestsProgressFilter(reusable, allCommonQuests):
 
 
 def battlePassProgressFilter(reusable):
+    battlePassController = dependency.instance(IBattlePassController)
+    if battlePassController.isDisabled() or battlePassController.isPaused():
+        return
     battlePassProgress = reusable.battlePassProgress
     isNewPoints = battlePassProgress.pointsAux > 0 or battlePassProgress.questPoints > 0 or battlePassProgress.bonusCapPoints > 0 or battlePassProgress.bpTopPoints > 0
-    battlePassController = dependency.instance(IBattlePassController)
-    if (battlePassProgress.hasProgress(battlePassProgress.currentChapterID) or isNewPoints) and not battlePassController.isDisabled():
+    if battlePassProgress.hasProgress(battlePassProgress.currentChapterID) or isNewPoints:
         return battlePassProgress
-    else:
-        return
+    return
 
 
 def prestigeProgressFilter(reusable):

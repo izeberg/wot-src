@@ -1,10 +1,11 @@
 from collections import OrderedDict
 from itertools import chain
+from helpers.dependency import descriptor
 from typing import TYPE_CHECKING, NamedTuple, Generator
 import Event
+from PlayerEvents import g_playerEvents
 from account_helpers import AccountSettings
 from account_helpers.AccountSettings import CREW_BOOKS_VIEWED
-from constants import RENEWABLE_SUBSCRIPTION_CONFIG, JUNK_TANKMAN_NOVELTY
 from frameworks.wulf import ViewFlags, ViewSettings
 from gui import SystemMessages
 from gui.ClientUpdateManager import g_clientUpdateManager
@@ -13,7 +14,6 @@ from gui.Scaleform.genConsts.CONTEXT_MENU_HANDLER_TYPE import CONTEXT_MENU_HANDL
 from gui.Scaleform.genConsts.TOOLTIPS_CONSTANTS import TOOLTIPS_CONSTANTS
 from gui.impl import backport
 from gui.impl.auxiliary.crew_books_helper import crewBooksViewedCache
-from gui.impl.auxiliary.junk_tankman_helper import JunkTankmanHelper
 from gui.impl.backport import BackportContextMenuWindow, createContextMenuData
 from gui.impl.backport.backport_pop_over import BackportPopOverContent, createPopOverData
 from gui.impl.backport.backport_tooltip import createBackportTooltipContent
@@ -40,12 +40,11 @@ from gui.shared.gui_items.processors.vehicle import VehicleTmenXPAccelerator
 from gui.shared.items_cache import CACHE_SYNC_REASON
 from gui.shared.utils import decorators
 from helpers import dependency, int2roman
-from helpers.dependency import descriptor
 from items.tankmen import MAX_SKILL_LEVEL, getLessMasteredIDX, sortTankmanRoles
 from renewable_subscription_common.passive_xp import isTagsSetOk
+from renewable_subscription_common.schema import renewableSubscriptionsConfigSchema
 from skeletons.gui.app_loader import IAppLoader
 from skeletons.gui.game_control import IWotPlusController
-from skeletons.gui.lobby_context import ILobbyContext
 from skeletons.gui.shared import IItemsCache
 from wg_async import wg_async, wg_await
 if TYPE_CHECKING:
@@ -73,7 +72,6 @@ class CrewWidget(ViewImpl, IGlobalListener):
     PREBATTLE_TYPE_TO_SLOT_MODE = {}
     DEFAULT_SLOT_MODE = SlotSizeMode.DEFAULT
     itemsCache = dependency.descriptor(IItemsCache)
-    lobbyContext = dependency.descriptor(ILobbyContext)
     wotPlusCtrl = dependency.descriptor(IWotPlusController)
     appLoader = descriptor(IAppLoader)
 
@@ -285,11 +283,9 @@ class CrewWidget(ViewImpl, IGlobalListener):
          (
           self.itemsCache.onSyncCompleted, self.__onCacheResync),
          (
-          self.lobbyContext.getServerSettings().onServerSettingsChange, self.__onServerSettingsChange),
-         (
           AccountSettings.onSettingsChanging, self.__onAccountSettingsChanging),
          (
-          JunkTankmanHelper().onShowNoveltyUpdated, self.__onShowNoveltyUpdated))
+          g_playerEvents.onConfigModelUpdated, self._onConfigModelUpdated))
 
     def _finalize(self):
         super(CrewWidget, self)._finalize()
@@ -335,7 +331,10 @@ class CrewWidget(ViewImpl, IGlobalListener):
         self.__setSlotMode()
 
     def __setSlotMode(self):
-        mode = self.PREBATTLE_TYPE_TO_SLOT_MODE.get(self.prbEntity.getEntityType(), self.DEFAULT_SLOT_MODE)
+        if self.prbEntity:
+            mode = self.PREBATTLE_TYPE_TO_SLOT_MODE.get(self.prbEntity.getEntityType(), self.DEFAULT_SLOT_MODE)
+        else:
+            mode = self.DEFAULT_SLOT_MODE
         self.viewModel.setSlotSizeMode(mode)
 
     def __updateWidgetModelByVehicle(self, vm):
@@ -434,8 +433,8 @@ class CrewWidget(ViewImpl, IGlobalListener):
         self.updateSlotIdx(slotIdx)
         self.onSlotClick(tankmanID, slotIdx)
 
-    def __onServerSettingsChange(self, diff):
-        if RENEWABLE_SUBSCRIPTION_CONFIG in diff:
+    def _onConfigModelUpdated(self, gpKey):
+        if renewableSubscriptionsConfigSchema.gpKey == gpKey:
             with self.viewModel.transaction() as (vm):
                 self.__updateWotPlusButtonModel(vm.buttonsBar.wotPlus)
                 self.__updateWidgetModel()
@@ -519,8 +518,9 @@ class CrewWidget(ViewImpl, IGlobalListener):
     def __updateWotPlusButtonModel(self, vmWotPlusButton):
         wotPlusState = ToggleState.HIDDEN
         vehicle = self.__currentVehicle
-        if vehicle and self.lobbyContext.getServerSettings().isRenewableSubPassiveCrewXPEnabled():
-            wotPlusState = ToggleState.DISABLED if not self.wotPlusCtrl.isEnabled() or not isTagsSetOk(vehicle.tags) or vehicle.isCrewFullyTrained else ToggleState.ON if self.wotPlusCtrl.hasVehicleCrewIdleXP(vehicle.invID) else ToggleState.OFF
+        settingsStorage = self.wotPlusCtrl.getSettingsStorage()
+        if vehicle and settingsStorage.isPassiveCrewXPEnabled():
+            wotPlusState = ToggleState.DISABLED if not settingsStorage.isPassiveCrewXPAvailable() or not isTagsSetOk(vehicle.tags) or vehicle.isCrewFullyTrained else ToggleState.ON if self.wotPlusCtrl.hasVehicleCrewIdleXP(vehicle.invID) else ToggleState.OFF
         vmWotPlusButton.setState(wotPlusState)
 
     def __onDogMoreInfoClick(self):
@@ -592,9 +592,10 @@ class CrewWidget(ViewImpl, IGlobalListener):
 
     def __getIdleCrewState(self):
         vehicle = self.__currentVehicle
-        if not self.lobbyContext.getServerSettings().isRenewableSubPassiveCrewXPEnabled():
+        settingsStorage = self.wotPlusCtrl.getSettingsStorage()
+        if not settingsStorage.isPassiveCrewXPEnabled():
             return IdleCrewBonusEnum.INVISIBLE
-        if not self.wotPlusCtrl.isEnabled():
+        if not settingsStorage.isPassiveCrewXPAvailable():
             return IdleCrewBonusEnum.DISABLED
         if not isTagsSetOk(vehicle.tags):
             return IdleCrewBonusEnum.INCOMPATIBLEWITHCURRENTVEHICLE
@@ -606,10 +607,6 @@ class CrewWidget(ViewImpl, IGlobalListener):
             return IdleCrewBonusEnum.ACTIVEONANOTHERVEHICLE
         return IdleCrewBonusEnum.ENABLED
 
-    def __onShowNoveltyUpdated(self):
-        with self.viewModel.transaction() as (vm):
-            self.__updateCrewBooksAmount(vm.buttonsBar.crewBooks)
-
     def __updateCrewBooksAmount(self, vmCrewBooks):
         if self.__currentVehicle is None:
             vmCrewBooks.setNewAmount('0')
@@ -619,8 +616,6 @@ class CrewWidget(ViewImpl, IGlobalListener):
             newCrewBooksAmount = viewedCache.newCrewBooksAmount
             if newCrewBooksAmount:
                 vmCrewBooks.setNewAmount(str(int(newCrewBooksAmount)))
-            elif JunkTankmanHelper().isShowNovelty(showPlace=JUNK_TANKMAN_NOVELTY.WIDGET):
-                vmCrewBooks.setNewAmount(backport.text(R.strings.crew.common.exclamationMark()))
             else:
                 vmCrewBooks.setNewAmount('0')
             vmCrewBooks.setTotalAmount(viewedCache.crewBooksAmount)

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import ResMgr
 from debug_utils import LOG_ERROR, LOG_WARNING, LOG_CURRENT_EXCEPTION
 from gui.Scaleform.Waiting import Waiting

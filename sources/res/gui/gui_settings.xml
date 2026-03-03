@@ -1967,10 +1967,6 @@
 			</item>
 		</value>
 	</allowedNotSupportedGraphicSettings>
-	<goldFishActionShowCooldown>
-		<type>int</type>
-		<value>1209600</value>
-	</goldFishActionShowCooldown>
 	<promoscreens>
 		<type>macros</type>
 		<macros>AUTH_REALM</macros>
@@ -2594,6 +2590,11 @@
 				<name>showcase</name>
 				<type>url</type>
 			</item>
+			<item>
+				$PARAMS(/showcase/styles_2d)
+				<name>showcase</name>
+				<type>url</type>
+			</item>
 		</value>
 	</shop>
 	<easterEgg>
@@ -2684,7 +2685,7 @@
 		<type>dict</type>
 		<value>
 			<item>
-				/$LANGUAGE_CODE/promocontent/bp-special-chapter-6/
+				/$LANGUAGE_CODE/promocontent/19BPContentPage/
 				<name>infoPage</name>
 				<type>url</type>
 			</item>
@@ -2694,7 +2695,7 @@
 				<type>url</type>
 			</item>
 			<item>
-				/$LANGUAGE_CODE/promocontent/bp-special-chapter-6-Video/
+				/$LANGUAGE_CODE/promocontent/19BPIntroVideo/
 				<name>introVideo</name>
 				<type>url</type>
 			</item>
@@ -2705,39 +2706,6 @@
 			</item>
 		</value>
 	</battlePassUrls>
-	<battlePassVisuals>
-		<type>dict</type>
-		<value>
-			<item>
-				<name>season</name>
-				<type>dict</type>
-				<value>
-					<item>
-						<name>hasAdditionalBackground</name>
-						<type>bool</type>
-						<value>False</value>
-					</item>
-				</value>
-			</item>
-			<item>
-				<name>chapter</name>
-				<type>dict</type>
-				<value>
-					<item>
-						<name>hasChapterLogoInBg</name>
-						<type>dict</type>
-						<value>
-							<item>
-								<name>10061</name>
-								<type>bool</type>
-								<value>True</value>
-							</item>
-						</value>
-					</item>
-				</value>
-			</item>
-		</value>
-	</battlePassVisuals>
 	<battlePassIntroSlides>
 		<type>macros</type>
 		<macros>AUTH_REALM</macros>
@@ -2913,7 +2881,7 @@
 		<macros>AUTH_REALM</macros>
 		<value>
 			<item>
-				https://worldoftanks.asia/$LANGUAGE_CODE/news/specials/lunar-bounty-2026/
+				https://worldoftanks.asia/$LANGUAGE_CODE/news/general-news/glorious-in-green-2026/
 				<name>default</name>
 				<type>url</type>
 			</item>
@@ -3288,7 +3256,7 @@
 		<type>dict</type>
 		<value>
 			<item>
-				{webBridgeRootURL}/$LANGUAGE_CODE/promocontent/SH2023IntroVideo/
+				{webBridgeRootURL}/$LANGUAGE_CODE/promocontent/SteelHunterIntroVideo/
 				<name>introVideo</name>
 				<type>url</type>
 			</item>
@@ -3306,37 +3274,73 @@
 		<macros>AUTH_REALM</macros>
 		<value>
 			<item>
-				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/wot-plus-september-2025/
+				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/wot-plus-march-2026/
 				<name>EU</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://webbrg.worldoftanks.asia/$LANGUAGE_CODE/promocontent/wot-plus-september-2025/
+				https://webbrg.worldoftanks.asia/$LANGUAGE_CODE/promocontent/wot-plus-march-2026/
 				<name>ASIA</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://webbrg.worldoftanks.com/$LANGUAGE_CODE/promocontent/wot-plus-september-2025/
+				https://webbrg.worldoftanks.com/$LANGUAGE_CODE/promocontent/wot-plus-march-2026/
 				<name>NA</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://webbrg-cn360.wotgame.cn/$LANGUAGE_CODE/promocontent/wot-plus-september-2025/
+				https://webbrg-cn360.wotgame.cn/$LANGUAGE_CODE/promocontent/wot-plus-march-2026/
 				<name>CN</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/wot-plus-september-2025/
+				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/wot-plus-march-2026/
 				<name>CT</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/wot-plus-september-2025/
+				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/wot-plus-march-2026/
 				<name>default</name>
 				<type>url</type>
 			</item>
 		</value>
 	</renewableSubscriptionInfoPage>
+	<renewableSubscriptionSteamInfoPage>
+		<type>macros</type>
+		<macros>AUTH_REALM</macros>
+		<value>
+			<item>
+				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/wot-plus-march-2026-Steam/
+				<name>EU</name>
+				<type>url</type>
+			</item>
+			<item>
+				https://webbrg.worldoftanks.asia/$LANGUAGE_CODE/promocontent/wot-plus-march-2026-Steam/
+				<name>ASIA</name>
+				<type>url</type>
+			</item>
+			<item>
+				https://webbrg.worldoftanks.com/$LANGUAGE_CODE/promocontent/wot-plus-march-2026-Steam/
+				<name>NA</name>
+				<type>url</type>
+			</item>
+			<item>
+				https://webbrg-cn360.wotgame.cn/$LANGUAGE_CODE/promocontent/wot-plus-march-2026/
+				<name>CN</name>
+				<type>url</type>
+			</item>
+			<item>
+				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/wot-plus-march-2026-Steam/
+				<name>CT</name>
+				<type>url</type>
+			</item>
+			<item>
+				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/wot-plus-march-2026-Steam/
+				<name>default</name>
+				<type>url</type>
+			</item>
+		</value>
+	</renewableSubscriptionSteamInfoPage>
 	<infoPageMapsTraining>
 		<type>macros</type>
 		<macros>AUTH_REALM</macros>

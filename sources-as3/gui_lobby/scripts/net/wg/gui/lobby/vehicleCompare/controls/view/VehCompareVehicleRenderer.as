@@ -157,30 +157,35 @@ package net.wg.gui.lobby.vehicleCompare.controls.view
          }
       }
       
-      override protected function onDispose() : void
+      override protected function onBeforeDispose() : void
       {
          this.vehicleIcon.removeEventListener(MouseEvent.CLICK,this.onVehicleIconClickHandler);
          this.vehicleIcon.removeEventListener(MouseEvent.MOUSE_OVER,this.onVehicleIconMouseOverHandler);
          this.vehicleIcon.removeEventListener(MouseEvent.MOUSE_OUT,this.onVehicleIconMouseOutHandler);
-         this.vehicleIcon.dispose();
-         this.vehicleIcon = null;
          this.moduleBtn.removeEventListener(ButtonEvent.CLICK,this.onModuleBtnClickHandler);
-         this.moduleBtn.dispose();
-         this.moduleBtn = null;
-         this.closeBtn.removeEventListener(ButtonEvent.CLICK,this.onCloseBtnClickHandler);
-         this.closeBtn.dispose();
-         this.closeBtn = null;
          this.addVehicleBtn.removeEventListener(MouseEvent.MOUSE_OVER,this.onAddVehicleBtnMouseOverHandler);
          this.addVehicleBtn.removeEventListener(MouseEvent.MOUSE_OUT,this.onAddVehicleBtnMouseOutHandler);
          this.addVehicleBtn.removeEventListener(MouseEvent.CLICK,this.onAddVehicleBtnClickHandler);
-         this.addVehicleBtn = null;
+         this.closeBtn.removeEventListener(ButtonEvent.CLICK,this.onCloseBtnClickHandler);
          if(this._rendererData)
          {
             this._rendererData.removeEventListener(Event.CHANGE,this.onDataChangeHandler);
-            this._rendererData = null;
          }
-         this.attentionIcon = null;
          this.revertBtn.removeEventListener(ButtonEvent.CLICK,this.onRevertBtnClickHandler);
+         super.onBeforeDispose();
+      }
+      
+      override protected function onDispose() : void
+      {
+         this.vehicleIcon.dispose();
+         this.vehicleIcon = null;
+         this.moduleBtn.dispose();
+         this.moduleBtn = null;
+         this.closeBtn.dispose();
+         this.closeBtn = null;
+         this.addVehicleBtn = null;
+         this._rendererData = null;
+         this.attentionIcon = null;
          this.revertBtn.dispose();
          this.revertBtn = null;
          this.separator = null;

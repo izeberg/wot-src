@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from frameworks.wulf import ViewSettings
 from gui.Scaleform.genConsts.TOOLTIPS_CONSTANTS import TOOLTIPS_CONSTANTS
 from gui.impl.auxiliary.tooltips.compensation_tooltip import VehicleCompensationTooltipContent

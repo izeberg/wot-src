@@ -1,5 +1,7 @@
+from __future__ import absolute_import
 import logging
 from functools import partial
+from future.utils import listvalues, viewitems
 import BigWorld, Event
 from chat_commands_consts import INVALID_TARGET_ID
 from gui.battle_control.arena_info.interfaces import IArenaVehiclesController
@@ -30,11 +32,11 @@ class BaseMarkerController(IArenaVehiclesController):
 
     @property
     def allMarkers(self):
-        return self._markers.values()
+        return listvalues(self._markers)
 
     @property
     def allMarkersID(self):
-        return self._markers.keys()
+        return list(self._markers)
 
     def getPluginID(self):
         raise NotImplementedError
@@ -78,20 +80,20 @@ class BaseMarkerController(IArenaVehiclesController):
             return
 
     def removeAllMarkers(self):
-        for markerID in self._markers:
+        for markerID, marker in viewitems(self._markers):
             if markerID in self._attachGUIToMarkersCallback:
                 BigWorld.cancelCallback(self._attachGUIToMarkersCallback[markerID])
                 self._attachGUIToMarkersCallback.pop(markerID)
             else:
-                self._markers[markerID].detachGUI()
-            self._markers[markerID].clear()
+                marker.detachGUI()
+            marker.clear()
 
         self._markers.clear()
 
     def showMarkers(self, unblock=True):
         if not self._globalVisibility:
             return
-        for markerID in self._markers.iterkeys():
+        for markerID in self._markers:
             self.showMarkersById(markerID, unblock)
 
         self.checkStartTimer()

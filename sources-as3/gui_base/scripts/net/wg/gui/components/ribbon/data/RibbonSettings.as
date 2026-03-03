@@ -267,6 +267,7 @@ package net.wg.gui.components.ribbon.data
          {
             _isInit = true;
             this.atlasInit();
+            this.initPerksRibbons();
             TEXT_SETTINGS[RibbonColors.GREEN] = new RibbonTextSettings(RibbonColors.GREEN);
             TEXT_SETTINGS[RibbonColors.GREY] = new RibbonTextSettings(RibbonColors.GREY);
             TEXT_SETTINGS[RibbonColors.RED] = new RibbonTextSettings(RibbonColors.RED);
@@ -310,6 +311,33 @@ package net.wg.gui.components.ribbon.data
             ICON_Y_PADDINGS[DAMAGE_SOURCE_TYPES.FORT_ARTILLERY] = -6;
             ICON_Y_PADDINGS[DAMAGE_SOURCE_TYPES.BUNKER] = 11;
          }
+      }
+      
+      private function initPerksRibbons() : void
+      {
+         this.addPerkRibbon(BATTLE_EFFICIENCY_TYPES.COMMANDER_EAGLE_EYE);
+         this.addPerkRibbon(BATTLE_EFFICIENCY_TYPES.COMMANDER_EMERGENCY);
+         this.addPerkRibbon(BATTLE_EFFICIENCY_TYPES.COMMANDER_TUTOR);
+         this.addPerkRibbon(BATTLE_EFFICIENCY_TYPES.COMMANDER_COORDINATION);
+         this.addPerkRibbon(BATTLE_EFFICIENCY_TYPES.COMMANDER_HOLD_LINE);
+         this.addPerkRibbon(BATTLE_EFFICIENCY_TYPES.COMMANDER_STAY_SHARP);
+         this.addPerkRibbon(BATTLE_EFFICIENCY_TYPES.GUNNER_FOCUS);
+         this.addPerkRibbon(BATTLE_EFFICIENCY_TYPES.GUNNER_LONE_WOLF);
+         this.addPerkRibbon(BATTLE_EFFICIENCY_TYPES.DRIVER_MOTOR_EXPERT);
+         this.addPerkRibbon(BATTLE_EFFICIENCY_TYPES.DRIVER_SUSPENSION_REPAIR);
+         this.addPerkRibbon(BATTLE_EFFICIENCY_TYPES.DRIVER_BULLETPROOF);
+         this.addPerkRibbon(BATTLE_EFFICIENCY_TYPES.LOADER_DESPERADO);
+         this.addPerkRibbon(BATTLE_EFFICIENCY_TYPES.LOADER_INTUITION);
+         this.addPerkRibbon(BATTLE_EFFICIENCY_TYPES.LOADER_MELEE);
+         this.addPerkRibbon(BATTLE_EFFICIENCY_TYPES.LOADER_SECOND_CHANCE);
+         this.addPerkRibbon(BATTLE_EFFICIENCY_TYPES.RADIOMAN_SIDE_BY_SIDE);
+         this.addPerkRibbon(BATTLE_EFFICIENCY_TYPES.RADIOMAN_EXPERT);
+         this.addPerkRibbon(BATTLE_EFFICIENCY_TYPES.RADIOMAN_THREAT_SEARCH);
+      }
+      
+      private function addPerkRibbon(param1:String) : void
+      {
+         RIBBON_TYPES_MAP[param1] = new RibbonSettingByType(RibbonColors.PERK,param1,RibbonColors.PERK,param1,1);
       }
       
       protected function initDynamicRibbons() : void

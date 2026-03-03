@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.Scaleform.framework.entities.DisposableEntity import DisposableEntity
 from gui.shared import g_eventBus, EVENT_BUS_SCOPE, EventPriority
 

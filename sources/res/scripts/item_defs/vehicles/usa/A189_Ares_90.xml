@@ -4209,13 +4209,10 @@
 			<notInShop>true</notInShop>
 			<armor>
 				<armor_1>
-					260.4
-					<!--BW_String-->
-				</armor_1>
-				<armor_2>
 					247.7
 					<!--BW_String-->
-				</armor_2>
+				</armor_1>
+				<armor_2>235</armor_2>
 				<armor_3>
 					114.3
 					<!--BW_String-->
@@ -4233,7 +4230,7 @@
 					<!--BW_String-->
 				</armor_6>
 				<armor_7>
-					209.6
+					190.5
 					<!--BW_String-->
 				</armor_7>
 				<armor_8>0</armor_8>
@@ -4242,7 +4239,7 @@
 					<!--BW_String-->
 				</armor_9>
 				<armor_10>
-					222.3
+					190.5
 					<!--BW_String-->
 				</armor_10>
 				<armor_11>
@@ -4254,7 +4251,7 @@
 					<!--BW_String-->
 				</armor_12>
 				<armor_13>
-					165.1
+					152.4
 					<!--BW_String-->
 				</armor_13>
 				<armor_14>
@@ -4274,16 +4271,19 @@
 					<!--BW_String-->
 				</armor_17>
 				<armor_18>
-					44.5
+					38.1
 					<!--BW_String-->
 				</armor_18>
-				<armor_19>254</armor_19>
+				<armor_19>
+					241.3
+					<!--BW_String-->
+				</armor_19>
 				<armor_20>
-					228.6
+					203.2
 					<!--BW_String-->
 				</armor_20>
 				<armor_21>
-					184.2
+					171.5
 					<!--BW_String-->
 				</armor_21>
 				<armor_22>
@@ -4306,13 +4306,16 @@
 					63.5
 					<!--BW_String-->
 				</armor_26>
-				<armor_27>254</armor_27>
+				<armor_27>
+					241.3
+					<!--BW_String-->
+				</armor_27>
 				<armor_28>
 					57.2
 					<!--BW_String-->
 				</armor_28>
 				<armor_29>
-					215.9
+					203.2
 					<!--BW_String-->
 				</armor_29>
 				<armor_30>
@@ -4320,10 +4323,13 @@
 					<!--BW_String-->
 				</armor_30>
 				<armor_31>
-					241.3
+					228.6
 					<!--BW_String-->
 				</armor_31>
-				<armor_32>235</armor_32>
+				<armor_32>
+					222.3
+					<!--BW_String-->
+				</armor_32>
 			</armor>
 			<primaryArmor>armor_1 armor_11 armor_4</primaryArmor>
 			<weight>5200</weight>
@@ -4359,7 +4365,7 @@
 					</pitchLimits>
 					<armor>
 						<armor_1>
-							260.4
+							247.7
 							<!--BW_String-->
 							<tags>gunMask</tags>
 						</armor_1>
@@ -4376,7 +4382,7 @@
 							<!--BW_String-->
 						</armor_5>
 						<armor_2>
-							241.3
+							228.6
 							<!--BW_String-->
 						</armor_2>
 						<armor_6>

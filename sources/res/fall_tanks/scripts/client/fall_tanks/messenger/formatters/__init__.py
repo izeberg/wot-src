@@ -1,0 +1,7 @@
+from __future__ import absolute_import
+from fun_random.gui.shared.fun_system_factory import registerBattleResultsMessageSubFormatter
+from fall_tanks_constants import ARENA_GUI_TYPE
+from fall_tanks.messenger.formatters.battle_results_formatter import FallTanksBattleResultsSubFormatter
+
+def registerFallTanksFormatters():
+    registerBattleResultsMessageSubFormatter(ARENA_GUI_TYPE.FALL_TANKS, FallTanksBattleResultsSubFormatter)

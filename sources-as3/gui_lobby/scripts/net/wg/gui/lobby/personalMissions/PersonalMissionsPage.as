@@ -10,7 +10,6 @@ package net.wg.gui.lobby.personalMissions
    import net.wg.data.constants.Values;
    import net.wg.data.constants.generated.PERSONAL_MISSIONS_ALIASES;
    import net.wg.gui.components.advanced.ViewHeader;
-   import net.wg.gui.components.advanced.events.ViewHeaderEvent;
    import net.wg.gui.lobby.personalMissions.components.PersonalMissionsMapView;
    import net.wg.gui.lobby.personalMissions.components.interfaces.IAwardSheetPopup;
    import net.wg.gui.lobby.personalMissions.components.interfaces.IChainsPanel;
@@ -104,10 +103,10 @@ package net.wg.gui.lobby.personalMissions
       override protected function configUI() : void
       {
          super.configUI();
+         this.header.backBtn.visible = false;
          this.chainsPanel.addEventListener(ChainEvent.CHAIN_CHANGED,this.onChainsPanelChainChangedHandler);
          this.chainsPanel.addEventListener(ChainEvent.CHAIN_INIT_COMPLETED,this.onChainsPanelChainInitCompletedHandler);
          this.operationsHeader.operationsContainer.addEventListener(ChainEvent.CHAIN_CHANGED,this.onOperationsHeaderChainChangedHandler);
-         this.header.addEventListener(ViewHeaderEvent.BACK_BTN_CLICK,this.onHeaderBackBtnClickHandler);
          this.operationsHeader.addEventListener(OperationEvent.SIZE_CHANGED,this.onOperationHeaderSizeChangedHandler);
          this.operationTitle.addEventListener(OperationEvent.AWARDS_BTN_CLICK,this.onOperationInfoAwardsBtnClickHandler);
          this.statusFooter.addEventListener(StatusFooterEvent.SKIP_TASK,this.onStatusPanelSkipTaskHandler);
@@ -116,8 +115,6 @@ package net.wg.gui.lobby.personalMissions
       
       override protected function setHeaderData(param1:OperationsHeaderVO) : void
       {
-         this.header.backBtnLabel = param1.backBtnLabel;
-         this.header.backBtnDescription = param1.backBtnDescrLabel;
          this.operationsHeader.update(param1);
          this.operationTitle.update(param1.operationTitle);
       }
@@ -150,7 +147,6 @@ package net.wg.gui.lobby.personalMissions
             this._bgFadeTween.dispose();
             this._bgFadeTween = null;
          }
-         this.header.removeEventListener(ViewHeaderEvent.BACK_BTN_CLICK,this.onHeaderBackBtnClickHandler);
          this.header.dispose();
          this.header = null;
          this.map.removeEventListener(ChainEvent.CHAIN_CHANGED,this.onMapChainChangedHandler);
@@ -374,11 +370,6 @@ package net.wg.gui.lobby.personalMissions
       private function onChainsPanelChainInitCompletedHandler(param1:ChainEvent) : void
       {
          this.layoutChainsPanel();
-      }
-      
-      private function onHeaderBackBtnClickHandler(param1:ViewHeaderEvent) : void
-      {
-         onBackBtnClickS();
       }
       
       private function onStatusPanelSkipTaskHandler(param1:StatusFooterEvent) : void

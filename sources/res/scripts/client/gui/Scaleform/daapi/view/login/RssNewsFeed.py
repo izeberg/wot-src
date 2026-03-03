@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, uuid, BigWorld, ResMgr
 from adisp import adisp_process, adisp_async
 from gui import GUI_SETTINGS

@@ -10,7 +10,6 @@ class CrewModel(ViewModel):
     ON_TRAINING_STATE = 'on'
     OFF_TRAINING_STATE = 'off'
     DISABLED_TRAINING_STATE = 'disabled'
-    HIDDEN_TRAINING_STATE = 'hidden'
 
     def __init__(self, properties=10, commands=5):
         super(CrewModel, self).__init__(properties=properties, commands=commands)

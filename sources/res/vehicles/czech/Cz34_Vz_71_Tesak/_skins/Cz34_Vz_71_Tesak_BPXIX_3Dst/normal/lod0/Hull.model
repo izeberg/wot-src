@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.889203 -0.801371 -3.723361</min>
+		<max>1.989077 0.590348 3.336204</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/czech/Cz34_Vz_71_Tesak/_skins/Cz34_Vz_71_Tesak_BPXIX_3Dst/normal/lod0/Hull</nodefullVisual>
+	<parent>vehicles/czech/Cz34_Vz_71_Tesak/_skins/Cz34_Vz_71_Tesak_BPXIX_3Dst/normal/lod1/Hull</parent>
+	<extent>32.000000</extent>
+</root>

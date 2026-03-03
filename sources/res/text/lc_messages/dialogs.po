@@ -131,7 +131,9 @@ msgid "accountCompletion/warningServerUnavailable"
 msgstr "%(icon) 这项服务暂不可用。请稍后再试。"
 
 msgid "accountCompletion/warningServerUnavailableTimed"
-msgstr "%(icon)这项服务暂时不可用。%(br) 请在%(time)s后再试。"
+msgstr ""
+"%(icon)这项服务暂时不可用。\n"
+"请在%(time)s后再试。"
 
 msgid "barracksExpand/cancel"
 msgstr "取消"
@@ -1938,13 +1940,21 @@ msgstr "从特长经验总数中扣除"
 msgid "perksReset/priceCard/free/title"
 msgstr "快速课程"
 
-msgid "perksReset/priceCard/gold/description"
+msgid "perksReset/priceCard/freeGold/description"
 msgstr ""
 "重置特长\n"
-"经验不会减少"
+"且不损失经验"
+
+msgid "perksReset/priceCard/gold/description"
+msgstr "使用银币重置特长且不损失经验"
 
 msgid "perksReset/priceCard/gold/title"
 msgstr "坦克学院"
+
+msgid "perksReset/priceCard/recertification/description"
+msgstr ""
+"重置特长\n"
+"且不损失经验"
 
 msgid "perksReset/priceCard/xpLoose"
 msgstr "{percentAmount}&nbsp;({xpAmount})"
@@ -2043,7 +2053,7 @@ msgstr ""
 msgid "punishmentWindow/message/penalty"
 msgstr ""
 "您于{whiteSpanish_Open}%(time)s{whiteSpanish_Close}在{whiteSpanish_Open}%(arenaName)s{whiteSpanish_Close}地图上违反了游戏规则。\n"
-"系统将扣除您在战斗中所获得的银币、经验和奖励。"
+"系统已扣除您在战斗中所获得的银币、经验和奖励。"
 
 msgid "punishmentWindow/message/warning"
 msgstr ""
@@ -2153,7 +2163,7 @@ msgid "quitBattle/IGR/leaver/cancel"
 msgstr "取消"
 
 msgid "quitBattle/IGR/leaver/descriptionAlive"
-msgstr "您的团队需要您！在战斗结束或您的坦克被击毁前退出战斗将被视为中途退场。您可能会因为违规而受到处罚，并失去在IGR的战斗中所获的所有奖励。"
+msgstr "您的团队需要您！在战斗结束或您的坦克被击毁前退出战斗将被视为中途退场。您可能会受到处罚，并失去在IGR的战斗中所获的所有奖励。"
 
 msgid "quitBattle/IGR/leaver/submit"
 msgstr "确认"
@@ -2168,7 +2178,7 @@ msgid "quitBattle/leaver/cancel"
 msgstr "取消"
 
 msgid "quitBattle/leaver/descriptionAlive"
-msgstr "您的团队需要您！在战斗结束或您的坦克被击毁前退出战斗将被视为中途退场。您可能会因为违规而受到处罚。"
+msgstr "您的团队需要您！在战斗结束或您的坦克被击毁前退出战斗将被视为中途退场。您可能会受到处罚。"
 
 msgid "quitBattle/leaver/submit"
 msgstr "确认"
@@ -2616,6 +2626,15 @@ msgstr "收到！"
 
 msgid "rudyInfo/title"
 msgstr "四个坦克兵与狗"
+
+msgid "selectVehicle/counter"
+msgstr "显示的坦克:"
+
+msgid "selectVehicle/selectAttackerTitle"
+msgstr "选择攻击方坦克"
+
+msgid "selectVehicle/selectVehicle"
+msgstr "选择该坦克"
 
 msgid "sellConfirmation/cancel"
 msgstr "取消"
@@ -3284,6 +3303,107 @@ msgstr "恢复战备状态"
 msgid "wgshEventUnfreezeVehicle/title"
 msgstr "恢复战备状态？"
 
+msgid "wotPlusActivationDialog/benefits/assistant"
+msgstr "助手"
+
+msgid "wotPlusActivationDialog/benefits/attendanceRewards"
+msgstr "签到奖励"
+
+msgid "wotPlusActivationDialog/benefits/battleBonus"
+msgstr "战斗收益加成"
+
+msgid "wotPlusActivationDialog/benefits/battlePassPlus"
+msgstr "战斗通行证Plus"
+
+msgid "wotPlusActivationDialog/benefits/excludedMap"
+msgstr "排除地图"
+
+msgid "wotPlusActivationDialog/benefits/exclusiveVehicles"
+msgstr "专属坦克"
+
+msgid "wotPlusActivationDialog/benefits/freeEquipmentDemounting"
+msgstr "免费拆卸配件"
+
+msgid "wotPlusActivationDialog/benefits/goldReserve"
+msgstr "金币储备库"
+
+msgid "wotPlusActivationDialog/benefits/intensiveCrewRegimen"
+msgstr "高强度乘员训练"
+
+msgid "wotPlusActivationDialog/benefits/manageableXpMultiplier"
+msgstr "可控经验加成"
+
+msgid "wotPlusActivationDialog/benefits/proBoost"
+msgstr "专业版增益"
+
+msgid "wotPlusActivationDialog/benefits/serviceRecordCustomization"
+msgstr "服役记录个性化"
+
+msgid "wotPlusActivationDialog/benefits/tankerBanner"
+msgstr "坦克手旗帜"
+
+msgid "wotPlusActivationDialog/cn/heading"
+msgstr "已激活坦克世界Plus"
+
+msgid "wotPlusActivationDialog/confirmation"
+msgstr "一切就绪！"
+
+msgid "wotPlusActivationDialog/core/description"
+msgstr "续订时间: {{date}}"
+
+msgid "wotPlusActivationDialog/core/heading"
+msgstr "已激活坦克世界Plus核心版"
+
+msgid "wotPlusActivationDialog/details"
+msgstr "详情"
+
+msgid "wotPlusActivationDialog/planInterval12"
+msgstr "360天方案"
+
+msgid "wotPlusActivationDialog/planInterval6"
+msgstr "180天方案"
+
+msgid "wotPlusActivationDialog/pro/description"
+msgstr "{{planInterval}}，续订时间: {{date}}"
+
+msgid "wotPlusActivationDialog/pro/heading"
+msgstr "已激活坦克世界Plus专业版"
+
+msgid "wotPlusProBoostActivationDialog/confirm"
+msgstr "激活"
+
+msgid "wotPlusProBoostActivationDialog/description"
+msgstr ""
+"{{@ split}}在{{@ style (color "
+"#fff)}}{{boostInterval}}小时{{/}}内，您将无法再次为另一辆坦克提供增益。{{/}}"
+
+msgid "wotPlusProBoostActivationDialog/footer"
+msgstr ""
+"激活专业版增益后，该坦克将额外获得{{@ style (color "
+"#fff)}}{{bonusPercent}}的银币和经验{{/}}。仅应用于一辆坦克。"
+
+msgid "wotPlusProBoostActivationDialog/title"
+msgstr "为{{vehicle}}激活专业版增益？"
+
+msgid "wotPlusProBoostSwitchDialog/confirm"
+msgstr "切换"
+
+msgid "wotPlusProBoostSwitchDialog/description"
+msgstr ""
+"{{@ split}}仅有一辆坦克可获得加成。在{{@ style (color "
+"#fff)}}{{boostInterval}}小时{{/}}内，您将无法再次为另一辆坦克提供加成。{{/}}"
+
+msgid "wotPlusProBoostSwitchDialog/footer"
+msgstr ""
+"激活专业版增益后，该坦克将额外获得{{@ style (color "
+"#fff)}}{{bonusPercent}}的银币和经验{{/}}。仅应用于一辆坦克。"
+
+msgid "wotPlusProBoostSwitchDialog/title"
+msgstr "将专业版增益切换至{{vehicle}}上？"
+
+msgid "wotPlusProBoostSwitchDialog/vehicle"
+msgstr "{{tier}}{{type_image}}{{name}}"
+
 msgid "wotPlusRental/cancel"
 msgstr "取消"
 
@@ -3295,6 +3415,12 @@ msgstr "租用"
 
 msgid "wotPlusRental/title"
 msgstr "租用{cream_Open}%s{cream_Close}吗？"
+
+msgid "wotPlusServiceRecordCustomizationDialog/save"
+msgstr "保存"
+
+msgid "wotPlusServiceRecordCustomizationDialog/title"
+msgstr "保存您的服役记录个性化？"
 
 msgid "xpToTmenCheckbox/cancel"
 msgstr "取消"

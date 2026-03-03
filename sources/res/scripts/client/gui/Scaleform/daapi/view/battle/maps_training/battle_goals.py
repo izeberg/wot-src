@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing, BigWorld
 from constants import ARENA_PERIOD
 from hints.battle.schemas.maps_training import HintType

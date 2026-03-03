@@ -156,14 +156,13 @@ package net.wg.gui.lobby.profile
       
       private function updateMenu() : void
       {
-         var _loc3_:int = 0;
          if(this._isWindowed)
          {
             return;
          }
          var _loc1_:Boolean = width <= StageSizeBoundaries.WIDTH_1366;
          var _loc2_:int = !!_loc1_ ? int(MENU_OFFSET_SMALL_X) : int(MENU_OFFSET_X);
-         _loc3_ = !!_loc1_ ? int(MENU_OFFSET_SMALL_Y) : int(MENU_OFFSET_Y);
+         var _loc3_:int = !!_loc1_ ? int(MENU_OFFSET_SMALL_Y) : int(MENU_OFFSET_Y);
          this.removeCounters();
          this.menu.itemRendererName = !!_loc1_ ? Linkages.SIDE_BAR_SMALL_RENDERER : Linkages.SIDE_BAR_NORMAL_RENDERER;
          this.menu.validateNow();

@@ -26,6 +26,11 @@
 				<priority>83</priority>
 				<bigIcon>Standard</bigIcon>
 			</override>
+			<override>
+				<id>crew_bonus_x3</id>
+				<priority>82</priority>
+				<bigIcon>Standard</bigIcon>
+			</override>
 		</tokens>
 		<lootBox>
 			<priority>93</priority>
@@ -86,7 +91,7 @@
 				<priority>75</priority>
 			</projectionDecal>
 			<decal>
-				<priority>74</priority>
+				<priority>75</priority>
 			</decal>
 			<emblem>
 				<priority>71</priority>

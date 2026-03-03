@@ -588,7 +588,6 @@ _(#messenger:battle/toolTips/mutePlayer){/BODY}</value>
 		<battleResultRatingPoints>&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/battleResults/ratingPoints): &lt;font color=&apos;#D6D7D4&apos;&gt;%(ratingPoints)s&lt;/font&gt;&lt;/font&gt;</battleResultRatingPoints>
 		<battlePass>&lt;br/&gt;%(battlePassProgression)s</battlePass>
 		<battlePassBR>%(battlePassProgression)s</battlePassBR>
-		<battleResultBrcoin>&lt;br/&gt;%(brcoin)s</battleResultBrcoin>
 		<commendations>&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/commendations/battleResults/commendationsReceived): &lt;font color=&apos;#FFDD99&apos;&gt;%(commendationsReceived)s&lt;/font&gt;&lt;/font&gt;</commendations>
 		<piggyBank>&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/battleResults/piggyBank): &lt;font color=&apos;#D6D7D4&apos;&gt;%(credits)s&lt;/font&gt;&lt;/font&gt;</piggyBank>
 		<battleResultLocks>&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/vehicleLock)&lt;/font&gt;</battleResultLocks>
@@ -830,38 +829,6 @@ _(#messenger:battle/toolTips/mutePlayer){/BODY}</value>
 			<priority>medium</priority>
 			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#messenger:serviceChannelMessages/specialReward/title)&lt;/font&gt;&lt;br/&gt;%(specialRewardItems)s</message>
 		</specialReward>
-		<battleRoyaleVictoryResult>
-			<type>battleResult</type>
-			<icon>BattleResultIcon</icon>
-			<bgIcon>br_notification_background</bgIcon>
-			<bgIconHeight>100</bgIconHeight>
-			<buttonsLayout>
-				<button>
-					<type>submit</type>
-					<label>_(#messenger:serviceChannelMessages/battleResults/button)</label>
-					<action>showBattleResults</action>
-				</button>
-			</buttonsLayout>
-			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#messenger:serviceChannelMessages/BRbattleResults/victory)&lt;/font&gt;
-_(#messenger:serviceChannelMessages/battleResults/battle): %(arenaName)s 
-_(#messenger:serviceChannelMessages/battleResults/tanks): %(vehicleNames)s%(xp)s%(xpEx)s%(crystalStr)s%(gold)s%(credits)s%(creditsEx)s%(brcoin)s%(battlePassProgress)s%(brAwardTokens)s%(rankedProgress)s%(rankedBonusBattles)s%(achieves)s%(lock)s%(quests)s%(piggyBank)s</message>
-		</battleRoyaleVictoryResult>
-		<battleRoyaleDefeatResult>
-			<type>battleResult</type>
-			<icon>BattleResultIcon</icon>
-			<bgIcon>br_notification_background</bgIcon>
-			<bgIconHeight>100</bgIconHeight>
-			<buttonsLayout>
-				<button>
-					<type>submit</type>
-					<label>_(#messenger:serviceChannelMessages/battleResults/button)</label>
-					<action>showBattleResults</action>
-				</button>
-			</buttonsLayout>
-			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#messenger:serviceChannelMessages/BRbattleResults/ended)&lt;/font&gt;
-_(#messenger:serviceChannelMessages/battleResults/battle): %(arenaName)s 
-_(#messenger:serviceChannelMessages/battleResults/tanks): %(vehicleNames)s%(xp)s%(xpEx)s%(crystalStr)s%(gold)s%(credits)s%(creditsEx)s%(brcoin)s%(battlePassProgress)s%(brAwardTokens)s%(rankedProgress)s%(rankedBonusBattles)s%(achieves)s%(lock)s%(quests)s%(piggyBank)s</message>
-		</battleRoyaleDefeatResult>
 		<currencyUpdate>
 			<type>yellow</type>
 			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;%(title)s&lt;/font&gt;
@@ -2376,7 +2343,7 @@ _(#messenger:serviceChannelMessages/piggyBank/continueAfterSmashed)</message>
 			<type>grey</type>
 			<icon>InformationIcon</icon>
 			<priority>medium</priority>
-			<message>&lt;font color=&quot;#8C8C7E&quot;&gt;%(header)s&lt;/font&gt;</message>
+			<message>&lt;font color=&quot;#8C8C7E&quot;&gt;%(header)s&lt;/font&gt;&lt;br/&gt;%(text)s</message>
 		</BattlePassBuyMultipleMessage>
 		<BattlePassDefaultRewardMessage>
 			<type>grey</type>
@@ -2771,6 +2738,22 @@ _(#messenger:serviceChannelMessages/piggyBank/continueAfterSmashed)</message>
 			<icon>wotplus_16x16</icon>
 			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#messenger:serviceChannelMessages/wotPlus/unlockMessage/title)&lt;/font&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;%(text)s&lt;/font&gt;</message>
 		</WotPlusUnlockMessage>
+		<WotPlusCoreUnlockMessage>
+			<priority>medium</priority>
+			<type>grey</type>
+			<bgIcon>WotPlusUnlockBG</bgIcon>
+			<bgIconSizeAuto>true</bgIconSizeAuto>
+			<icon>wotplus_16x16</icon>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#messenger:serviceChannelMessages/wotPlus/unlockCoreMessage/title)&lt;/font&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;%(text)s&lt;/font&gt;</message>
+		</WotPlusCoreUnlockMessage>
+		<WotPlusProUnlockMessage>
+			<priority>medium</priority>
+			<type>grey</type>
+			<bgIcon>WotPlusUnlockBG</bgIcon>
+			<bgIconSizeAuto>true</bgIconSizeAuto>
+			<icon>wotplus_16x16</icon>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#messenger:serviceChannelMessages/wotPlus/unlockProMessage/title)&lt;/font&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;%(text)s&lt;/font&gt;</message>
+		</WotPlusProUnlockMessage>
 		<WotPlusFreeDemountUnlockMessage>
 			<priority>high</priority>
 			<type>yellow</type>
@@ -2779,14 +2762,27 @@ _(#messenger:serviceChannelMessages/piggyBank/continueAfterSmashed)</message>
 		</WotPlusFreeDemountUnlockMessage>
 		<WotPlusRenewMessage>
 			<priority>medium</priority>
-			<type>grey</type>
+			<type>yellow</type>
 			<icon>InformationIcon</icon>
 			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;%(title)s&lt;/font&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;%(text)s&lt;/font&gt;</message>
 		</WotPlusRenewMessage>
+		<WotPlusUpgradeMessage>
+			<priority>medium</priority>
+			<type>grey</type>
+			<icon>wotplus_16x16</icon>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;%(title)s&lt;/font&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;%(text)s&lt;/font&gt;</message>
+		</WotPlusUpgradeMessage>
 		<WotPlusExpireMessage>
 			<priority>medium</priority>
 			<type>grey</type>
 			<icon>WarningIcon</icon>
+			<buttonsLayout>
+				<button>
+					<type>submit</type>
+					<label>_(#messenger:serviceChannelMessages/wotPlusExtend/button)</label>
+					<action>wotPlusExtend</action>
+				</button>
+			</buttonsLayout>
 			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;%(title)s&lt;/font&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/wotPlus/expireMessage/text)&lt;/font&gt;</message>
 		</WotPlusExpireMessage>
 		<WotPlusFreeDemountExpireMessage>
@@ -2881,6 +2877,60 @@ _(#messenger:serviceChannelMessages/piggyBank/continueAfterSmashed)</message>
 			<icon>WarningIcon</icon>
 			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#messenger:serviceChannelMessages/crewAssistant/unavailable/title)&lt;/font&gt;</message>
 		</CrewAssistantDisabledMessage>
+		<ServiceRecordCustomizationEnabledMessage>
+			<priority>high</priority>
+			<type>yellow</type>
+			<icon>InformationIcon</icon>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#messenger:serviceChannelMessages/serviceRecordCustomization/available/title)&lt;/font&gt;</message>
+		</ServiceRecordCustomizationEnabledMessage>
+		<ServiceRecordCustomizationDisabledMessage>
+			<priority>high</priority>
+			<type>yellow</type>
+			<icon>WarningIcon</icon>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#messenger:serviceChannelMessages/serviceRecordCustomization/unavailable/title)&lt;/font&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/serviceRecordCustomization/unavailable/text)&lt;/font&gt;</message>
+		</ServiceRecordCustomizationDisabledMessage>
+		<WotPlusProBoostDisabledMessage>
+			<priority>high</priority>
+			<type>yellow</type>
+			<icon>WarningIcon</icon>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#messenger:serviceChannelMessages/wotPlus/proBoost/isDisabled/title)&lt;/font&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/wotPlus/proBoost/isDisabled/text)&lt;/font&gt;</message>
+		</WotPlusProBoostDisabledMessage>
+		<WotPlusProBoostEnabledMessage>
+			<priority>high</priority>
+			<type>yellow</type>
+			<icon>InformationIcon</icon>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#messenger:serviceChannelMessages/wotPlus/proBoost/isEnabled/title)&lt;/font&gt;&lt;br/&gt;</message>
+		</WotPlusProBoostEnabledMessage>
+		<WotPlusProBoostActivatedMessage>
+			<priority>high</priority>
+			<type>yellow</type>
+			<icon>InformationIcon</icon>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#messenger:serviceChannelMessages/wotPlus/proBoost/isActivated/title)&lt;/font&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/wotPlus/proBoost/isActivated/text)&lt;/font&gt;</message>
+		</WotPlusProBoostActivatedMessage>
+		<WotPlusProBoostDeactivatedMessage>
+			<priority>high</priority>
+			<type>yellow</type>
+			<icon>InformationIcon</icon>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#messenger:serviceChannelMessages/wotPlus/proBoost/isDeactivated/title)&lt;/font&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/wotPlus/proBoost/isDeactivated/text)&lt;/font&gt;</message>
+		</WotPlusProBoostDeactivatedMessage>
+		<WotPlusProBoostSwitchMessage>
+			<priority>high</priority>
+			<type>yellow</type>
+			<icon>InformationIcon</icon>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#messenger:serviceChannelMessages/wotPlus/proBoost/switch/title)&lt;/font&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/wotPlus/proBoost/switch/text)&lt;/font&gt;</message>
+		</WotPlusProBoostSwitchMessage>
+		<WotPlusBattlePassEnabledMessage>
+			<priority>high</priority>
+			<type>yellow</type>
+			<icon>InformationIcon</icon>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#messenger:serviceChannelMessages/wotPlus/battlePass/isEnabled/title)&lt;/font&gt;&lt;br/&gt;</message>
+		</WotPlusBattlePassEnabledMessage>
+		<WotPlusBattlePassDisabledMessage>
+			<priority>high</priority>
+			<type>yellow</type>
+			<icon>WarningIcon</icon>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#messenger:serviceChannelMessages/wotPlus/battlePass/isDisabled/title)&lt;/font&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/wotPlus/battlePass/isDisabled/text)&lt;/font&gt;</message>
+		</WotPlusBattlePassDisabledMessage>
 		<PassiveXPNoTankMessage>
 			<priority>medium</priority>
 			<type>grey</type>
@@ -3553,6 +3603,16 @@ _(#messenger:serviceChannelMessages/piggyBank/continueAfterSmashed)</message>
 			<icon>petSystem</icon>
 			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;%(header)s&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#8C8C7E&quot;&gt;%(text)s&lt;/font&gt;</message>
 		</PetSystemSynergyMaxLevelMessage>
+		<PetSystemEventsCreditsReceived>
+			<type>grey</type>
+			<icon>CreditsIcon</icon>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;%(header)s&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#8C8C7E&quot;&gt;%(date)s&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#8C8C7E&quot;&gt;%(text)s&lt;/font&gt;</message>
+		</PetSystemEventsCreditsReceived>
+		<PetSystemEventsItemsReceived>
+			<type>grey</type>
+			<icon>InformationIcon</icon>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;%(header)s&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#8C8C7E&quot;&gt;%(date)s&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#8C8C7E&quot;&gt;%(text)s&lt;/font&gt;</message>
+		</PetSystemEventsItemsReceived>
 		<Collector20RewardReceivedMessage>
 			<priority>low</priority>
 			<type>grey</type>

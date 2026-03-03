@@ -162,6 +162,7 @@ package net.wg.gui.battle.windows
          this.headerTF = null;
          this.serverNameTF = null;
          this.serverStatsTF = null;
+         this._buttonsOrder = null;
          super.onDispose();
       }
       
@@ -233,12 +234,11 @@ package net.wg.gui.battle.windows
       
       override protected function removeCounter(param1:Vector.<String>) : void
       {
-         var _loc4_:String = null;
+         var _loc3_:String = null;
          var _loc2_:ISoundButtonEx = null;
-         var _loc3_:Number = 0;
-         for each(_loc4_ in param1)
+         for each(_loc3_ in param1)
          {
-            _loc2_ = this.getBtnByName(_loc4_);
+            _loc2_ = this.getBtnByName(_loc3_);
             if(_loc2_)
             {
                this._counterManager.removeCounter(DisplayObject(_loc2_),NEW_COUNTERS_CONTAINER_ID);

@@ -48,37 +48,40 @@ package net.wg.gui.lobby.storage.categories.cards
          var _loc1_:VehicleCardVO = null;
          var _loc2_:Rectangle = null;
          super.draw();
-         if(_data && isInvalid(InvalidationType.DATA))
+         if(_data)
          {
-            _loc1_ = VehicleCardVO(_data);
-            if(_loc1_.rentText)
+            if(isInvalid(InvalidationType.DATA))
             {
-               this.rentTF.text = _loc1_.rentText;
-               this.rentTF.visible = true;
-               this.rentIcon.source = _loc1_.rentIcon;
-               this.rentIcon.visible = true;
-            }
-            else
-            {
-               this.rentTF.visible = false;
-               this.rentIcon.visible = false;
-            }
-         }
-         if(_data && isInvalid(InvalidationType.SIZE))
-         {
-            _loc2_ = _sizeVO.innerPadding;
-            if(this.rentTF.visible)
-            {
-               this.rentTF.y = titleTF.y + titleTF.height + _sizeVO.descriptionOffset;
-               this.rentTF.width = _loc2_.width - this.rentTF.x >> 0;
-               if(this.rentIcon.ready)
+               _loc1_ = VehicleCardVO(_data);
+               if(_loc1_.rentText)
                {
-                  this.rentIcon.y = this.rentTF.y + (this.rentTF.height - this.rentIcon.height >> 1);
+                  this.rentTF.text = _loc1_.rentText;
+                  this.rentTF.visible = true;
+                  this.rentIcon.source = _loc1_.rentIcon;
+                  this.rentIcon.visible = true;
+               }
+               else
+               {
+                  this.rentTF.visible = false;
+                  this.rentIcon.visible = false;
                }
             }
-            if(!_isOver)
+            if(isInvalid(InvalidationType.SIZE))
             {
-               _container.y = this.getContainerYRolloutPosition();
+               _loc2_ = _sizeVO.innerPadding;
+               if(this.rentTF.visible)
+               {
+                  this.rentTF.y = titleTF.y + titleTF.height + _sizeVO.descriptionOffset;
+                  this.rentTF.width = _loc2_.width - this.rentTF.x >> 0;
+                  if(this.rentIcon.ready)
+                  {
+                     this.rentIcon.y = this.rentTF.y + (this.rentTF.height - this.rentIcon.height >> 1);
+                  }
+               }
+               if(!_isOver)
+               {
+                  _container.y = this.getContainerYRolloutPosition();
+               }
             }
          }
       }

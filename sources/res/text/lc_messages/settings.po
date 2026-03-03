@@ -817,9 +817,6 @@ msgstr "防御基地点数"
 msgid "feedback/tab/battleEvents/checkbox/BlockedDamage"
 msgstr "抵挡损伤"
 
-msgid "feedback/tab/battleEvents/checkbox/CrewPerks"
-msgstr "乘员特长"
-
 msgid "feedback/tab/battleEvents/checkbox/EnemyBurning"
 msgstr "着火损伤"
 
@@ -862,6 +859,9 @@ msgstr "坦克信息"
 msgid "feedback/tab/battleEvents/checkbox/WorldCollision"
 msgstr "撞击损伤"
 
+msgid "feedback/tab/battleEvents/checkbox/allSituationalPerks"
+msgstr "全部触发式特长"
+
 msgid "feedback/tab/battleEvents/info"
 msgstr ""
 "战斗中仅显示\n"
@@ -875,6 +875,9 @@ msgstr "信息显示"
 
 msgid "feedback/tab/battleEvents/label/VisibleEvents"
 msgstr "信息"
+
+msgid "feedback/tab/battleEvents/label/crewPerks"
+msgstr "乘员特长"
 
 msgid "feedback/tab/battleEvents/label/negative"
 msgstr "受到损伤"
@@ -1405,7 +1408,7 @@ msgid "game/showLanguageBar"
 msgstr "显示语言栏"
 
 msgid "game/showMarksOnGun"
-msgstr "显示战绩标识"
+msgstr "显示特级标识"
 
 msgid "game/showPersonalAnimatedDogTag"
 msgstr "显示您的军用识别牌"

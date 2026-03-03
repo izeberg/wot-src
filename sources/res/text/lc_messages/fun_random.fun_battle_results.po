@@ -55,9 +55,6 @@ msgstr "—"
 msgid "efficiency/kills"
 msgstr "击毁"
 
-msgid "efficiency/spiritPoints"
-msgstr "祈福点数"
-
 msgid "efficiency/spotted"
 msgstr "点亮"
 
@@ -85,17 +82,8 @@ msgstr "防御基地"
 msgid "efficiencyTooltip/header/kills"
 msgstr "击毁敌方坦克"
 
-msgid "efficiencyTooltip/header/spiritPoints"
-msgstr "祈福点数"
-
 msgid "efficiencyTooltip/header/spotted"
 msgstr "点亮"
-
-msgid "efficiencyTooltip/spiritPoints/description"
-msgstr ""
-"计入: \n"
-"• 运送火马灵币\n"
-"• 击毁敌方坦克"
 
 msgid "finish"
 msgstr "战斗结束"
@@ -133,6 +121,33 @@ msgstr "平局"
 msgid "result/win"
 msgstr "胜利"
 
+msgid "resultRace/battleStatus/finished"
+msgstr "已抵达终点"
+
+msgid "resultRace/battleStatus/inTop"
+msgstr "名次"
+
+msgid "resultRace/battleStatus/notFinished"
+msgstr "未完成"
+
+msgid "resultRace/finishReason/finished"
+msgstr "已抵达终点"
+
+msgid "resultRace/finishReason/notFinished"
+msgstr "未抵达终点"
+
+msgid "resultRace/footerSubtitle/battleEnded"
+msgstr "战斗结束: {{time}}"
+
+msgid "resultRace/footerSubtitle/finished"
+msgstr "不错!"
+
+msgid "resultRace/footerSubtitle/inTop"
+msgstr "前3!"
+
+msgid "resultRace/footerSubtitle/notFinished"
+msgstr "祝您下次好运！"
+
 msgid "ribbon/applied"
 msgstr "已成功应用加成"
 
@@ -157,20 +172,92 @@ msgstr "Dev 团队战绩"
 msgid "sub_modes/development/team/singleTeam"
 msgstr "玩家"
 
+msgid "sub_modes/fall_tanks/efficiency/checkpointsPassed"
+msgstr "检查点"
+
+msgid "sub_modes/fall_tanks/efficiency/deathCount"
+msgstr "重生"
+
+msgid "sub_modes/fall_tanks/efficiency/finishPosition"
+msgstr "名次"
+
+msgid "sub_modes/fall_tanks/efficiency/finishTime"
+msgstr "用时"
+
+msgid "sub_modes/fall_tanks/efficiency/kills"
+msgstr "摧毁"
+
+msgid "sub_modes/fall_tanks/efficiencyTooltip/description/checkpointsPassed"
+msgstr "通过的检查点数量"
+
+msgid "sub_modes/fall_tanks/efficiencyTooltip/description/deathCount"
+msgstr "坦克被摧毁后重生的次数"
+
+msgid "sub_modes/fall_tanks/efficiencyTooltip/description/destroyed"
+msgstr "摧毁的敌方坦克数量"
+
+msgid "sub_modes/fall_tanks/efficiencyTooltip/description/finishPosition"
+msgstr "竞赛排行榜上的最终名次"
+
+msgid "sub_modes/fall_tanks/efficiencyTooltip/description/finishTime"
+msgstr "您抵达终点用时"
+
+msgid "sub_modes/fall_tanks/efficiencyTooltip/header/checkpointsPassed"
+msgstr "检查点"
+
+msgid "sub_modes/fall_tanks/efficiencyTooltip/header/deathCount"
+msgstr "重生"
+
+msgid "sub_modes/fall_tanks/efficiencyTooltip/header/destroyed"
+msgstr "摧毁"
+
+msgid "sub_modes/fall_tanks/efficiencyTooltip/header/finishPosition"
+msgstr "名次"
+
+msgid "sub_modes/fall_tanks/efficiencyTooltip/header/finishTime"
+msgstr "用时"
+
+msgid "sub_modes/fall_tanks/navigation/battleResults"
+msgstr "个人战绩"
+
+msgid "sub_modes/fall_tanks/navigation/teamEfficiency"
+msgstr "参与者的结果"
+
+msgid "sub_modes/fall_tanks/team/finishPositionHeader/body"
+msgstr "按名次排序"
+
+msgid "sub_modes/fall_tanks/team/finishPositionHeader/header"
+msgstr "名次"
+
+msgid "sub_modes/fall_tanks/team/finishTimeHeader/body"
+msgstr "按用时排序"
+
+msgid "sub_modes/fall_tanks/team/finishTimeHeader/header"
+msgstr "用时"
+
+msgid "sub_modes/fall_tanks/team/singleTeam"
+msgstr "玩家"
+
+msgid "sub_modes/fall_tanks/team/tankHeader/body"
+msgstr "按坦克排序"
+
+msgid "sub_modes/fall_tanks/team/tankHeader/header"
+msgstr "坦克"
+
 msgid "sub_modes/undefined/navigation/battleResults"
 msgstr "概览"
 
 msgid "sub_modes/undefined/navigation/teamEfficiency"
 msgstr "团队战绩"
 
-msgid "sub_modes/undefined/team/empty/finishTime"
-msgstr "--:--.--"
-
-msgid "sub_modes/undefined/team/format/finishTime"
-msgstr "{minutes}:{seconds}.{milliseconds}"
-
 msgid "sub_modes/undefined/team/singleTeam"
 msgstr "玩家"
+
+msgid "team/empty/finishTime"
+msgstr "--:--.--"
+
+msgid "team/format/finishTime"
+msgstr "{minutes}:{seconds}.{milliseconds}"
 
 msgid "title"
 msgstr "战斗结果"

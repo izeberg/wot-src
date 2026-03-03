@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>lod</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>gun_01</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 -1.964686 -1.504820</row3>
+				</transform>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>gun_01</node>
+		<geometry>
+			<vertices>gun_01_Shape.vertices</vertices>
+			<primitive>gun_01_Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_guns</identifier>
+					<property>
+						diffuseMap
+						<Texture>vehicles/american/A69_T110E5/_skins/A69_T110E5_BPXIX_3Dst/A69_T110E5_BPXIX_3Dst_guns_AM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/american/A69_T110E5/_skins/A69_T110E5_BPXIX_3Dst/A69_T110E5_BPXIX_3Dst_guns_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/american/A69_T110E5/_skins/A69_T110E5_BPXIX_3Dst/A69_T110E5_BPXIX_3Dst_guns_ANM.dds</Texture>
+					</property>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<fx>shaders/std_effects/PBS_tank_crash.fx</fx>
+					<property>
+						crashTileMap
+						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/american/A69_T110E5/_skins/A69_T110E5_BPXIX_3Dst/A69_T110E5_BPXIX_3Dst_guns_AO.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.000023 2.035050 3.767082</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>-0.476201 -0.389772 -1.489378</min>
+		<max>0.476246 0.530501 6.013903</max>
+	</boundingBox>
+	<geometrySize>280314</geometrySize>
+</root>

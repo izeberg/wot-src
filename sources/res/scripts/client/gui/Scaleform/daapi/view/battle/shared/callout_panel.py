@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import CommandMapping, Event
 from chat_commands_consts import BATTLE_CHAT_COMMAND_NAMES
 from gui.Scaleform.daapi.view.meta.CalloutPanelMeta import CalloutPanelMeta
@@ -59,7 +60,7 @@ class CalloutPanel(CalloutPanelMeta):
         if self.__hidingInProgress is True:
             return
         else:
-            cmdName = _CALLOUT_COMMMAND_TO_UI_VISUAL_STATE.get(commandReceived, None)
+            cmdName = _CALLOUT_COMMMAND_TO_UI_VISUAL_STATE.get(commandReceived)
             answered = wasAnswered and cmdName is not None
             self.as_setHideDataS(answered, cmdName)
             return

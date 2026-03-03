@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from gui.impl.common.base_sub_model_view import BaseSubModelView
 from gui.impl.pub import ViewImpl

@@ -1,6 +1,5 @@
 package net.wg.gui.lobby.colorSettings
 {
-   import flash.display.Graphics;
    import flash.display.InteractiveObject;
    import flash.display.MovieClip;
    import flash.display.Sprite;
@@ -272,22 +271,21 @@ package net.wg.gui.lobby.colorSettings
       private function updateBeforeAfter() : void
       {
          var _loc2_:int = 0;
+         var _loc3_:int = 0;
          var _loc4_:int = 0;
-         var _loc5_:int = 0;
          var _loc1_:int = _originalHeight - (this._smallPanelHeight << 1);
          _loc2_ = _originalWidth - this._panelWidth;
-         var _loc3_:Graphics = graphics;
          this.onePxWhite.visible = this.beforeAfterPxBg.visible = this.afterTF.visible = this.beforeTF.visible = this._isManualSelected;
          if(this._isManualSelected)
          {
-            _loc4_ = this._panelWidth + (_loc2_ >> 1);
-            this.beforeTF.x = _loc4_ + TEXTS_OFFSET_X;
-            _loc5_ = _originalHeight - TEXTS_OFFSET_Y;
-            this.afterTF.y = _loc5_;
-            this.beforeTF.y = _loc5_;
+            _loc3_ = this._panelWidth + (_loc2_ >> 1);
+            this.beforeTF.x = _loc3_ + TEXTS_OFFSET_X;
+            _loc4_ = _originalHeight - TEXTS_OFFSET_Y;
+            this.afterTF.y = _loc4_;
+            this.beforeTF.y = _loc4_;
             this.beforeAfterPxBg.y = this._smallPanelHeight + _loc1_;
             this.beforeAfterPxBg.width = _loc2_;
-            this.onePxWhite.x = _loc4_;
+            this.onePxWhite.x = _loc3_;
             this.onePxWhite.height = _originalHeight;
          }
       }

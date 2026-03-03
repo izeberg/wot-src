@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld
 from constants import ACCOUNT_KICK_REASONS, IS_CHINA
 from gui import makeHtmlString

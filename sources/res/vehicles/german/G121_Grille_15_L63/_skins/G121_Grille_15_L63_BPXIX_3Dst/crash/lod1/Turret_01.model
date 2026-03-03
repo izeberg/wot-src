@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G121_Grille_15_L63/_skins/G121_Grille_15_L63_BPXIX_3Dst/crash/lod1/Turret_01</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/german/G121_Grille_15_L63/_skins/G121_Grille_15_L63_BPXIX_3Dst/crash/lod2/Turret_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.872010 -0.129762 -1.151652</min>
+		<max>0.879484 1.540814 0.700502</max>
+	</visibilityBox>
+</root>

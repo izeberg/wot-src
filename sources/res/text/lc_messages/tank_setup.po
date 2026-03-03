@@ -984,6 +984,9 @@ msgstr "灭火速度"
 msgid "kpi/bonus/negative/foliageMaskingFactor"
 msgstr "在植被后方的隐蔽系数"
 
+msgid "kpi/bonus/negative/hpRecover"
+msgstr "修理箱恢复的生命值"
+
 msgid "kpi/bonus/negative/mediumGroundFactor"
 msgstr ""
 "在中度松软地形上\n"
@@ -993,6 +996,9 @@ msgid "kpi/bonus/negative/penaltyToDamagedSurveyingDevice"
 msgstr ""
 "观察设备受损时的\n"
 "观察范围惩罚"
+
+msgid "kpi/bonus/negative/piercingHEShellsDistributionUpperBound"
+msgstr "潜在穿透力浮动范围上限"
 
 msgid "kpi/bonus/negative/radiomanActivityTimeAfterVehicleDestroy"
 msgstr ""
@@ -1015,8 +1021,14 @@ msgstr ""
 
 msgid "kpi/bonus/negative/stunResistanceEffectFactor"
 msgstr ""
-"乘员受伤的\n"
-"负面效果"
+"乘员受到弹震的\n"
+"减益效果"
+
+msgid "kpi/bonus/negative/suspensionDamageReduction"
+msgstr "悬挂装置受到的损伤"
+
+msgid "kpi/bonus/negative/suspensionRepairSpeed"
+msgstr "悬挂装置维修速度"
 
 msgid "kpi/bonus/negative/vehPenaltyForDamagedAmmorack"
 msgstr "装填速度惩罚"
@@ -1276,6 +1288,9 @@ msgstr "火炮稳定性"
 msgid "kpi/bonus/positive/gunTraverse"
 msgstr "火炮射界"
 
+msgid "kpi/bonus/positive/hpRecover"
+msgstr "修理箱恢复的生命值"
+
 msgid "kpi/bonus/positive/hullElevationSpeed"
 msgstr "车体抬高速度"
 
@@ -1291,6 +1306,9 @@ msgid "kpi/bonus/positive/penaltyToDamagedSurveyingDevice"
 msgstr ""
 "观察设备受损时的\n"
 "观察范围惩罚"
+
+msgid "kpi/bonus/positive/piercingHEShellsDistributionUpperBound"
+msgstr "潜在穿透力浮动范围上限"
 
 msgid "kpi/bonus/positive/radiomanActivityTimeAfterVehicleDestroy"
 msgstr ""
@@ -1342,7 +1360,13 @@ msgid "kpi/bonus/positive/standardShellVelocity"
 msgstr "标准炮弹飞行速度"
 
 msgid "kpi/bonus/positive/stunResistanceEffectFactor"
-msgstr "弹震减益效果"
+msgstr "乘员受到弹震的减益效果"
+
+msgid "kpi/bonus/positive/suspensionDamageReduction"
+msgstr "悬挂装置受到的损伤"
+
+msgid "kpi/bonus/positive/suspensionRepairSpeed"
+msgstr "悬挂装置维修速度"
 
 msgid "kpi/bonus/positive/turretTraverse"
 msgstr "炮塔射界"
@@ -1533,6 +1557,15 @@ msgstr ""
 "移动中的敌方\n"
 "坦克隐蔽"
 
+msgid "kpi/bonus/ttc/negative/hpRecover"
+msgstr "修理箱恢复的生命值"
+
+msgid "kpi/bonus/ttc/negative/magazineGunReloadSpeed"
+msgstr "弹夹装填时间"
+
+msgid "kpi/bonus/ttc/negative/piercingHEShellsDistributionUpperBound"
+msgstr "潜在穿透力浮动范围上限"
+
 msgid "kpi/bonus/ttc/negative/radiomanChanceToHitPerLevel"
 msgstr "保护通信兵免于受伤的几率"
 
@@ -1541,6 +1574,9 @@ msgstr "全部炮弹类型的炮弹速度"
 
 msgid "kpi/bonus/ttc/negative/shotDispersionAngle"
 msgstr "炮弹散布范围"
+
+msgid "kpi/bonus/ttc/negative/suspensionRepairSpeed"
+msgstr "悬挂装置维修速度"
 
 msgid "kpi/bonus/ttc/negative/turretAimingDispersion"
 msgstr "火炮旋转时的炮弹散布范围"
@@ -1725,6 +1761,12 @@ msgstr ""
 msgid "kpi/bonus/ttc/positive/fireExtinguishingRate"
 msgstr "灭火速度"
 
+msgid "kpi/bonus/ttc/positive/hpRecover"
+msgstr "修理箱恢复的生命值"
+
+msgid "kpi/bonus/ttc/positive/magazineGunReloadSpeed"
+msgstr "弹夹装填时间"
+
 msgid "kpi/bonus/ttc/positive/maskingFactor"
 msgstr "坦克隐蔽系数"
 
@@ -1732,6 +1774,9 @@ msgid "kpi/bonus/ttc/positive/mediumGroundFactor"
 msgstr ""
 "在中度松软地形上\n"
 "维持速度的能力"
+
+msgid "kpi/bonus/ttc/positive/piercingHEShellsDistributionUpperBound"
+msgstr "潜在穿透力浮动范围上限"
 
 msgid "kpi/bonus/ttc/positive/radioDistance"
 msgstr "无线电台通信距离"
@@ -1746,6 +1791,9 @@ msgid "kpi/bonus/ttc/positive/softGroundFactor"
 msgstr ""
 "在松软地形上\n"
 "维持速度的能力"
+
+msgid "kpi/bonus/ttc/positive/suspensionRepairSpeed"
+msgstr "悬挂装置维修速度"
 
 msgid "kpi/bonus/ttc/positive/teamRadioBonusFactor"
 msgstr "坦克信号覆盖范围内盟友的通信距离"

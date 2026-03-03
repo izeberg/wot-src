@@ -94,7 +94,7 @@ msgid "battlePassAwardsView/footer/bpButtonTitle"
 msgstr "购买高级通行证"
 
 msgid "battlePassAwardsView/footer/bpDescriptionGotStyle"
-msgstr "在每个章节开始时，您会获得一个可以随着章节进度升级的风格。当前战斗通行证赛季结束后仍然可以升级未完成的风格。"
+msgstr "每个章节开始时，您会获得一款可以随着章节进度升级的风格。当前战斗通行证赛季结束后仍然可以升级未完成的风格。"
 
 msgid "battlePassAwardsView/footer/bpInProgressTitle"
 msgstr "购买高级通行证就能获得当前章节已完成阶段的高级奖励。您在完成后续的阶段时也会获得相应的高级奖励。"
@@ -208,13 +208,15 @@ msgid "battlePassBuyView/btnCancel"
 msgstr "返回"
 
 msgid "battlePassBuyView/btnRewards"
-msgstr "下组奖励: {count}"
+msgstr ""
+"查看全部\n"
+"%(count)s项奖励"
 
 msgid "battlePassBuyView/card/activeChapter/text"
 msgstr "已激活章节"
 
 msgid "battlePassBuyView/card/competePreviousChapter"
-msgstr "完成章节{chapter}"
+msgstr "完成章节%(chapter)"
 
 msgid "battlePassBuyView/card/currentLevel/text"
 msgstr "当前阶段"
@@ -250,7 +252,7 @@ msgid "battlePassBuyView/card/timer/time"
 msgstr "剩余：%(time)s"
 
 msgid "battlePassBuyView/card/title/chapter"
-msgstr "章节{chapter}"
+msgstr "章节%(chapter)"
 
 msgid "battlePassBuyView/card/title/shopOffer"
 msgstr "三合一"
@@ -262,7 +264,7 @@ msgid "battlePassBuyView/confirm/btnBuy"
 msgstr "购买"
 
 msgid "battlePassBuyView/confirm/chapter"
-msgstr "章节: %(name)s"
+msgstr "章节: \"%(name)s\""
 
 msgid "battlePassBuyView/confirm/checkbox/stage"
 msgid_plural "plural/battlePassBuyView/confirm/checkbox/stage"
@@ -271,7 +273,7 @@ msgstr[1] "加上剩余的%(stagesNumber)s个阶段"
 msgstr[2] "加上剩余的%(stagesNumber)s个阶段"
 
 msgid "battlePassBuyView/confirm/description"
-msgstr "完成全部阶段后，您将获得高级通行证奖励:"
+msgstr "高级通行证可解锁:"
 
 msgid "battlePassBuyView/confirm/descriptionCheckboxChecked"
 msgstr "您将立即获得全部章节的奖励:"
@@ -282,20 +284,45 @@ msgstr "高级通行证价格:"
 msgid "battlePassBuyView/confirm/priceWithLevels"
 msgstr "高级通行证和阶段价格:"
 
+msgid "battlePassBuyView/confirm/shopOfferBlock/buy"
+msgstr "查看特惠"
+
+msgid "battlePassBuyView/confirm/shopOfferBlock/description"
+msgstr ""
+"只要尚未购买任意赛季章节的高级通行证，\n"
+"该特惠便有效。"
+
+msgid "battlePassBuyView/confirm/shopOfferBlock/headline"
+msgstr "%(count)s合1"
+
+msgid "battlePassBuyView/confirm/shopOfferBlock/packsAmount"
+msgstr "x%(amount)s"
+
+msgid "battlePassBuyView/confirm/shopOfferBlock/title"
+msgstr ""
+"所有赛季章节的\n"
+"高级通行证"
+
 msgid "battlePassBuyView/confirm/shopOfferLinkText"
 msgstr "特惠"
 
 msgid "battlePassBuyView/confirm/shopOfferWarning"
 msgstr "购买特定章节的高级通行证后，您将无法再购买%(link)s。"
 
+msgid "battlePassBuyView/confirm/starterPack/description"
+msgstr "%(purchaseText)s附带奖励"
+
+msgid "battlePassBuyView/confirm/starterPack/purchaseText"
+msgstr "购买时:"
+
 msgid "battlePassBuyView/confirm/subTitle/finished"
-msgstr "您可以获得已完成的战斗通行证章节{chapter}中各阶段的高级奖励。"
+msgstr "您可以获得战斗通行证章节%(chapter)中已完成阶段的高级奖励。"
 
 msgid "battlePassBuyView/confirm/subTitle/inProgress"
-msgstr "您可以获得已完成和即将到来的战斗通行证章节 {chapter}中每个阶段的高级奖励。"
+msgstr "您可以获得战斗通行证章节%(chapter)中每个已完成和即将完成阶段的高级奖励。"
 
 msgid "battlePassBuyView/confirm/subTitle/notStarted"
-msgstr "您可以获得已完成的战斗通行证章节{chapter}中每个阶段的高级奖励。"
+msgstr "您可以获得战斗通行证章节%(chapter)中每个已完成阶段的高级奖励。"
 
 msgid "battlePassBuyView/confirm/title"
 msgstr "购买高级通行证"
@@ -314,9 +341,6 @@ msgstr "解锁已完成阶段的高级奖励。"
 
 msgid "battlePassBuyView/levelsSelected"
 msgstr "已选择的阶段数量:"
-
-msgid "battlePassBuyView/multicurrencyPrice"
-msgstr "价格:"
 
 msgid "battlePassBuyView/price"
 msgstr "购买价格："
@@ -361,7 +385,7 @@ msgid "battlePassBuyView/subTitle"
 msgstr "您可以通过高级通行证获得第二奖励轨道的奖励。"
 
 msgid "battlePassBuyView/title"
-msgstr "高级通行证"
+msgstr "购买高级通行证"
 
 msgid "battlePassStatus/activateChapter"
 msgstr "激活战斗通行证章节"
@@ -387,47 +411,68 @@ msgstr "战斗通行证"
 msgid "battlepassTab"
 msgstr "战斗通行证"
 
-msgid "chapter/fullName/10061"
-msgstr "机械战警"
+msgid "chapter/fullName/10021"
+msgstr "猎牛之歌"
 
 msgid "chapter/fullName/1114"
 msgstr "猎牛之歌"
 
-msgid "chapter/fullName/181"
-msgstr "钢铁防线"
+msgid "chapter/fullName/190"
+msgstr "精英征程"
 
-msgid "chapter/fullName/182"
-msgstr "无敌装甲"
+msgid "chapter/fullName/191"
+msgstr "薪火传人"
 
-msgid "chapter/fullName/183"
-msgstr "机械狂潮"
+msgid "chapter/fullName/192"
+msgstr "行动专家"
 
-msgid "chapter/fullNameUppercased/10061"
-msgstr "机械战警"
+msgid "chapter/fullName/193"
+msgstr "侦察先锋"
+
+msgid "chapter/fullNameUppercased/10021"
+msgstr "猎牛之歌"
 
 msgid "chapter/fullNameUppercased/1114"
 msgstr "猎牛之歌"
 
-msgid "chapter/fullNameUppercased/181"
-msgstr "钢铁防线"
+msgid "chapter/fullNameUppercased/191"
+msgstr "传承之人"
 
-msgid "chapter/fullNameUppercased/182"
-msgstr "无敌装甲"
+msgid "chapter/fullNameUppercased/192"
+msgstr "行动专家"
 
-msgid "chapter/fullNameUppercased/183"
-msgstr "机械狂潮"
+msgid "chapter/fullNameUppercased/193"
+msgstr "侦察先锋"
 
 msgid "chapter/title"
 msgstr "章节%(chapter)s"
 
-msgid "chapterChoice/activeTitle"
-msgstr "赛季章节"
+msgid "chapterChoice/about"
+msgstr "关于战斗通行证"
+
+msgid "chapterChoice/activeChapter/postprogression/text"
+msgstr "已激活"
+
+msgid "chapterChoice/activeChapter/text"
+msgstr "已激活章节"
 
 msgid "chapterChoice/chapterCompleted"
 msgstr "已完成章节"
 
-msgid "chapterChoice/completed"
-msgstr "已完成"
+msgid "chapterChoice/chapterInfo/buttons/toChapter"
+msgstr "前往章节"
+
+msgid "chapterChoice/chapterInfo/buttons/toCrewMembers"
+msgstr "查看乘员"
+
+msgid "chapterChoice/chapterInfo/buttons/toPostProgression"
+msgstr "前往进度"
+
+msgid "chapterChoice/chapterInfo/deadline/date"
+msgstr "持续至%(endDate)s"
+
+msgid "chapterChoice/chapterInfo/deadline/time"
+msgstr "距结束还有%(endTime)s"
 
 msgid "chapterChoice/confirmation/button/cancel"
 msgstr "取消"
@@ -459,50 +504,67 @@ msgstr "切换至\"%(chName)s\"章节？"
 msgid "chapterChoice/crewMember/reward"
 msgstr "乘员"
 
+msgid "chapterChoice/crewMember/reward/subTitle"
+msgstr "还有所含的其他乘员"
+
+msgid "chapterChoice/eliteCircuit/reward/subTitle"
+msgstr "包含在循环进度中"
+
+msgid "chapterChoice/eliteCircuit/reward/title"
+msgstr "战争债券、硬币和凭证"
+
 msgid "chapterChoice/extraChapter/reward"
 msgstr "金币坦克"
 
-msgid "chapterChoice/freePoints/description"
-msgstr "未分配的战斗通行证点数: "
+msgid "chapterChoice/freePoints/text"
+msgstr "未分配的点数"
 
-msgid "chapterChoice/freePoints/tooltip/description"
-msgstr "就算您没有选择任何章节，随着您推进战斗通行证的进度，您依然会积累点数。只需选择一个章节，即可将积累的点数添加到该章节的进度中。"
+msgid "chapterChoice/freePoints/tooltip/body"
+msgstr "即使没有激活任何章节，随着您推动战斗通行证进度，仍然会累积点数。激活一个章节后，点数将分配至对应进度。"
 
-msgid "chapterChoice/freePoints/tooltip/title"
+msgid "chapterChoice/freePoints/tooltip/header"
 msgstr "未分配的战斗通行证点数"
 
-msgid "chapterChoice/postProgression/button/text"
+msgid "chapterChoice/postprogression/locked"
+msgstr ""
+"完成全部{{count}}个赛季章节\n"
+"即可解锁"
+
+msgid "chapterChoice/postprogression/name"
 msgstr "精英征程"
 
-msgid "chapterChoice/postProgression/text"
-msgstr "完成所有章节后开放。已完成章节: %(completedChaptersCount)/%(chaptersCount)"
+msgid "chapterChoice/postprogression/unlocked/cycle"
+msgstr "周期%(cycle)s"
 
 msgid "chapterChoice/premiumVehicle/reward"
 msgstr "金币坦克"
 
-msgid "chapterChoice/stylePreview/backLabel"
-msgstr "章节"
+msgid "chapterChoice/stages/additional"
+msgstr " / %(level)s阶段"
 
-msgid "chapterChoice/stylePreview/extraLabel"
-msgstr "%(vehicleName)s"
+msgid "chapterChoice/stages/complete/improved"
+msgstr "已完成并提升"
 
-msgid "chapterChoice/stylePreview/forLabel"
+msgid "chapterChoice/stages/complete/unimproved"
+msgstr "包含%(count)s项额外奖励"
+
+msgid "chapterChoice/stylePreview/reward/subTitle"
 msgstr "适用于%(vehicleName)s"
 
-msgid "chapterChoice/stylePreview/label"
-msgstr "预览"
+msgid "chapterChoice/stylePreview/reward/title"
+msgstr "\"%(styleName)s\"3D风格"
 
-msgid "chapterChoice/stylePreview/name"
-msgstr "%(styleName)s风格"
+msgid "chapterChoice/vehicle/reward/subTitle"
+msgstr "%(vehicleName)s"
 
-msgid "chapterChoice/tankman/description"
-msgstr "所有乘员都对应特定章节。"
+msgid "chapterChoice/vehicle/reward/title"
+msgstr "金币坦克"
 
-msgid "chapterChoice/title"
-msgstr "选择章节"
+msgid "chapterChoice/vehicleStyle/reward/subTitle"
+msgstr "和\"%(styleName)s\"3D风格"
 
-msgid "chapterChoice/vehicleInHangar/tooltip/text"
-msgstr "在车库中"
+msgid "chapterChoice/vehicleStyle/reward/title"
+msgstr "%(vehicleName)s"
 
 msgid "chapterStatus/notSelected"
 msgstr "未选择章节"
@@ -593,8 +655,7 @@ msgid "holidayFinalScreen/buyState/buyButton"
 msgstr "购买高级通行证"
 
 msgid "holidayFinalScreen/buyState/description"
-msgstr ""
-"购买高级通行证后，您将立即获得M系IX级金币重型坦克——OCP 和平卫士(其独特外观的设计灵感源于著名电影系列)，以及高级通行证的所有奖励。"
+msgstr "购买高级通行证后，您将立即获得1辆拥有独特3D风格的金币坦克和全部高级通行证奖励。"
 
 msgid "holidayFinalScreen/buyState/moreRewards"
 msgstr "其他奖励: %(count)s"
@@ -701,24 +762,39 @@ msgstr "通过使用本赛季的核心坦克加入战斗，您将获得额外点
 msgid "howToEarnPoints/card/specialVehicle/title"
 msgstr "赛季核心坦克"
 
+msgid "howToEarnPoints/conditions"
+msgstr "{{icon}}获取条件"
+
 msgid "howToEarnPoints/description"
 msgstr ""
 "战斗通行证点数可以让您依序完成阶段。获得点数的方式包括:标准模式和战斗通行证期间开放的其他模式、完成任务和日常任务，以及达到坦克的点数上限。"
 
+msgid "howToEarnPoints/earned"
+msgstr "{{icon}}"
+
 msgid "howToEarnPoints/lose/1"
-msgstr "失败/平局"
+msgstr "失败与平局"
 
 msgid "howToEarnPoints/lose/22"
-msgstr "失败/平局"
+msgstr "失败与平局"
 
 msgid "howToEarnPoints/lose/27"
 msgstr "失败"
 
 msgid "howToEarnPoints/lose/43"
-msgstr "失败/平局"
+msgstr "失败与平局"
 
 msgid "howToEarnPoints/lose/49"
-msgstr "失败/平局"
+msgstr "失败与平局"
+
+msgid "howToEarnPoints/plusBanner/line1"
+msgstr "{{@ style (color $color)}}战斗通行证Plus: {{/}}可通过{{link}}获取"
+
+msgid "howToEarnPoints/plusBanner/line2"
+msgstr "获取更多战斗通行证点数(特殊章节除外)。"
+
+msgid "howToEarnPoints/plusBanner/link"
+msgstr "坦克世界Plus专业版"
 
 msgid "howToEarnPoints/rangeLevels/29"
 msgstr "排名%(startLevel)d–%(endLevel)d"
@@ -793,14 +869,13 @@ msgid "intro/button"
 msgstr "收到！"
 
 msgid "intro/seasonDescription/text"
-msgstr ""
-"本期战斗通行证是与传奇电影系列《机械战警》联动的特殊活动。这将是一场短暂但惊险刺激的旅程，将为您带来灵感源于该标志性宇宙的专属奖励。您准备好维护法律了吗？"
+msgstr "在战斗通行证赛季XVIII中，您将有机会获得专属3D风格，适用于本赛季的核心坦克: \"鼠\"式、IS-7、AMX&nbsp;50&nbsp;B。"
 
 msgid "intro/seasonDescription/title"
-msgstr "联动《机械战警》"
+msgstr "全新主题3D风格"
 
 msgid "intro/title"
-msgstr "机械战警"
+msgstr "赛季XVIII: 巅峰征途"
 
 msgid "lootBoxBonus"
 msgstr "%(boxName)s: %(count)s"
@@ -812,7 +887,7 @@ msgid "navigation/buyLevelsRewards"
 msgstr "阶段奖励"
 
 msgid "navigation/buyPass"
-msgstr "高级通行证"
+msgstr "购买高级通行证"
 
 msgid "navigation/buyPassConfirm"
 msgstr "购买高级通行证"
@@ -824,16 +899,16 @@ msgid "navigation/chapterChoice"
 msgstr "战斗通行证赛季%(seasonNum)s"
 
 msgid "navigation/holidayFinal"
-msgstr "战斗通行证:机械战警"
+msgstr "战斗通行证"
 
 msgid "navigation/intro"
-msgstr "战斗通行证:机械战警"
+msgstr "战斗通行证赛季%(seasonNum)s"
 
 msgid "navigation/postProgression"
 msgstr "战斗通行证精英征程"
 
 msgid "navigation/progression"
-msgstr "战斗通行证:机械战警"
+msgstr "战斗通行证章节"
 
 msgid "points/top"
 msgstr "%(vehicle):所获经验排名%(top)时%(bonus)。"
@@ -863,7 +938,7 @@ msgid "postProgressionView/footer/purchaseIP/button/text"
 msgstr "购买"
 
 msgid "postProgressionView/header/description/active"
-msgstr "在战斗中获取点数，收获更多奖励"
+msgstr "通过在战斗中获取点数，即可获得战争债券和凭证奖励"
 
 msgid "postProgressionView/header/description/onPause/highlight"
 msgstr "已暂停。"
@@ -931,6 +1006,11 @@ msgstr "购买高级通行证"
 msgid "progression/battlePassBuyDescr"
 msgstr "高级通行证可以解锁当前章节的高级奖励轨道。"
 
+msgid "progression/battlePassBuyDescrStarterPack"
+msgstr ""
+"解锁高级奖励\n"
+"并获得加成"
+
 msgid "progression/battlePassBuyHolidayDescr"
 msgstr "高级通行证可以解锁高级奖励轨道。"
 
@@ -946,7 +1026,7 @@ msgstr ""
 "材料"
 
 msgid "progression/btnExtrasTooltip"
-msgstr "完成阶段并解锁新材料。已解锁材料：{opened}/{total}。"
+msgstr "完成阶段并解锁新材料。已解锁材料: %(opened)/%(total)。"
 
 msgid "progression/btnNoExtrasTooltip"
 msgstr "完成阶段并解锁新材料。"
@@ -970,8 +1050,8 @@ msgstr ""
 
 msgid "progression/btnTokensStoreTooltip"
 msgstr ""
-"点击查看战斗通行证令牌可兑换的高价值物品。\n"
-"可用令牌:{bpcoinCount}."
+"点击查看战斗通行证令牌可兑换的珍贵物品。\n"
+"可用令牌: %(bpcoinCount)。"
 
 msgid "progression/chapterText"
 msgstr "章节%(chapter)s：%(chapterName)s"
@@ -1052,17 +1132,17 @@ msgstr "和%(styleName)s3D风格"
 msgid "progression/extraChapterWidget/voiceoverTooltip"
 msgstr "点击试听乘员的专属语音。"
 
-msgid "progression/footer/freePointsDescr"
-msgstr "未分配的战斗通行证点数: "
-
-msgid "progression/footer/multicurrencyTooltip"
-msgstr "可使用金币或全局经验购买。"
+msgid "progression/footer/starter_pack/equal"
+msgstr "="
 
 msgid "progression/footer/status/inactive"
 msgstr "章节未激活"
 
 msgid "progression/footer/status/paused"
 msgstr "章节已暂停。"
+
+msgid "progression/freePointsDescr"
+msgstr "未分配的战斗通行证点数:"
 
 msgid "progression/header/chapter/status"
 msgstr "\"%(chapterName)s\"章节"
@@ -1088,7 +1168,7 @@ msgstr ""
 "所有阶段"
 
 msgid "progression/progressionChapterArrow"
-msgstr "章节{chapter}"
+msgstr "章节%(chapter)"
 
 msgid "progression/progressionChapterGoTo"
 msgstr "前往"
@@ -1112,7 +1192,7 @@ msgid "progression/universalCommander"
 msgstr "特殊乘员"
 
 msgid "progression/widget3dStyle/currentStyle"
-msgstr "{name}风格"
+msgstr "\"%(name)\"风格"
 
 msgid "progression/widget3dStyle/forVehicle"
 msgstr "适用于"
@@ -1202,17 +1282,17 @@ msgstr "战斗通行证: \"%(chapter)s\"章节"
 msgid "rewardChoice/titleChapterLevel"
 msgstr "战斗通行证: \"%(chapter)s\"章节，阶段%(level)s"
 
-msgid "season/fullName/1006"
-msgstr "机械战警"
+msgid "season/fullName/1002"
+msgstr "猎牛之歌"
 
-msgid "season/fullName/18"
-msgstr "巅峰征途"
+msgid "season/fullName/19"
+msgstr "极光行动"
 
-msgid "season/fullNameUppercased/1006"
-msgstr "机械战警"
+msgid "season/fullNameUppercased/1002"
+msgstr "猎牛之歌"
 
-msgid "season/fullNameUppercased/18"
-msgstr "巅峰征途"
+msgid "season/fullNameUppercased/19"
+msgstr "极光行动"
 
 msgid "selectBonus/battle_booster_gift"
 msgstr "自选指令"
@@ -1276,22 +1356,22 @@ msgstr "全部乘员均附带足以将3项特长训练至100%熟练度的乘员�
 
 msgid "tankmenVoiceover/free"
 msgstr ""
-"在阶段%(progressNumber)s的\n"
+"包含在阶段%(progressNumber)s的\n"
 "基础奖励中"
 
 msgid "tankmenVoiceover/inShop"
-msgstr "在特殊礼包中"
+msgstr "包含在礼包中"
 
 msgid "tankmenVoiceover/notFull"
-msgstr "%(availableCount)s/%(count)s可用"
+msgstr "%(availableCount)s/%(count)s仍开放获取"
 
 msgid "tankmenVoiceover/paid"
 msgstr ""
-"在阶段%(progressNumber)s的\n"
+"包含在阶段%(progressNumber)s的\n"
 "高级奖励中"
 
 msgid "tankmenVoiceover/questChain"
-msgstr "在一系列任务中"
+msgstr "包含在一系列战斗任务中"
 
 msgid "tankmenVoiceover/received"
 msgstr "已获得"
@@ -1517,7 +1597,7 @@ msgid "tooltips/inProgress/battleRoyale"
 msgstr "\"钢铁猎手\""
 
 msgid "tooltips/inProgress/chapter"
-msgstr "\"{name}\"章节"
+msgstr "\"%(name)\"章节"
 
 msgid "tooltips/inProgress/epic"
 msgstr "前线模式"
@@ -1549,11 +1629,17 @@ msgstr "使用IV-XI级坦克在%(bond_Open)s标准模式%(bond_Close)s中获取�
 msgid "tooltips/inProgress/playGame/ranked"
 msgstr "使用X级坦克在排位赛中获取点数的规则。"
 
+msgid "tooltips/inProgress/playGame/winback"
+msgstr "使用IV–XI级坦克在%(bond_Open)s标准模式: 热身模式%(bond_Close)s中获取点数的规则。"
+
 msgid "tooltips/inProgress/postProgression/header"
 msgstr "精英征程"
 
 msgid "tooltips/inProgress/timeLeft"
-msgstr "剩余:"
+msgstr "距战斗通行证结束还有"
+
+msgid "tooltips/inProgress/wotPlusProFooter"
+msgstr "坦克世界Plus专业版收益"
 
 msgid "tooltips/notChosen/description"
 msgstr "您需要选择一个章节来推进进度并获得高价值奖励。"
@@ -1570,6 +1656,11 @@ msgstr "战斗通行证"
 msgid "tooltips/notStarted/date"
 msgstr "%(month)s%(day)s日"
 
+msgid "tooltips/plusBanner/text"
+msgstr ""
+"{{@ style (color $color1)}}战斗通行证Plus: {{/}}{{@ style (color "
+"$color2)}}坦克世界Plus专业版福利{{/}}。获取更多战斗通行证点数(特殊章节除外)。"
+
 msgid "tooltips/points/footer"
 msgstr "您可以在\"如何获取点数\"菜单中了解更多关于在各种游戏模式中获取点数的信息。"
 
@@ -1585,17 +1676,20 @@ msgstr "战斗通行证点数可用来推动进度。您可通过使用IV–XI�
 msgid "tooltips/points/title"
 msgstr "战斗通行证点数"
 
+msgid "tooltips/pointsTable/header"
+msgstr "获取条件"
+
 msgid "tooltips/pointsTable/lose"
-msgstr "失败/平局"
+msgstr "失败与平局"
 
 msgid "tooltips/pointsTable/loseWithoutDraw"
 msgstr "失败"
 
 msgid "tooltips/pointsTable/place"
-msgstr "第{place}名"
+msgstr "排名%(place)"
 
 msgid "tooltips/pointsTable/places"
-msgstr "第{place}名"
+msgstr "排名%(place)"
 
 msgid "tooltips/pointsTable/solo"
 msgstr "单人"
@@ -1604,13 +1698,13 @@ msgid "tooltips/pointsTable/squad"
 msgstr "小队"
 
 msgid "tooltips/pointsTable/topPlace"
-msgstr "经验排名前{place}"
+msgstr "所获经验排名前%(place)"
 
 msgid "tooltips/pointsTable/win"
 msgstr "胜利"
 
 msgid "tooltips/postProgress/body"
-msgstr "精英进度在完成主线进度阶段{maxLevelBase}后开始。您可以通过该阶段获得珍贵的游戏货币。没有高级通行证也可完成精英进度阶段。"
+msgstr "精英进度在完成主线进度阶段%(maxLevelBase)后开始。您可以通过该阶段获取珍贵的游戏内货币。没有高级通行证也可完成精英进度阶段。"
 
 msgid "tooltips/postProgress/header"
 msgstr "精英进度"
@@ -1622,7 +1716,7 @@ msgid "tooltips/prestigePoints/loseWithoutDraw"
 msgstr "失败"
 
 msgid "tooltips/prestigePoints/topPlace"
-msgstr "声望点数排名前{place}"
+msgstr "声望点数排名前%(place)"
 
 msgid "tooltips/prestigePoints/win"
 msgstr "胜利"
@@ -1652,7 +1746,7 @@ msgid "tooltips/styleUpgrade/chosen/text"
 msgstr "升级章节风格至%(levelWord)%(level)"
 
 msgid "tooltips/styleUpgrade/chosen/title"
-msgstr "{styleName}风格升级"
+msgstr "\"%(styleName)\"风格升级"
 
 msgid "tooltips/styleUpgrade/notChosen/text"
 msgstr "若要选择一款风格，请点击战斗通行证章节进度开头的\"选择风格\"按钮。"

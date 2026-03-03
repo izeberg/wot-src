@@ -493,6 +493,8 @@ package
       
       public static const NAVIGATION_BACKBUTTON_MISSIONS:String = "#personal_missions:navigation/backButton/missions";
       
+      public static const NAVIGATION_BACKBUTTON_REWARDS:String = "#personal_missions:navigation/backButton/rewards";
+      
       public static const SIDEBAR_VEHICLES_ENUM:Array = [SIDEBAR_VEHICLES_LIGHTTANK,SIDEBAR_VEHICLES_MEDIUMTANK,SIDEBAR_VEHICLES_HEAVYTANK,SIDEBAR_VEHICLES_AT_SPG,SIDEBAR_VEHICLES_SPG];
       
       public static const ALLIANCE_ALL_NAME_ENUM:Array = [ALLIANCE_0_NAME,ALLIANCE_1_NAME,ALLIANCE_2_NAME,ALLIANCE_3_NAME];

@@ -21,6 +21,9 @@
 			<include>
 				<nations>ussr</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<type>INSCRIPTION</type>
 		<decal>
@@ -85,6 +88,9 @@
 			<include>
 				<nations>ussr</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<decal>
 			<id>14501</id>

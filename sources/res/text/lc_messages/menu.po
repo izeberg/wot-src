@@ -128,9 +128,6 @@ msgstr "默认"
 msgid "accountTypes/subscription"
 msgstr "高级订阅"
 
-msgid "adventCalendar/window/title"
-msgstr "加载中"
-
 msgid "ammoReload/additionBuy"
 msgstr "购买"
 
@@ -1007,6 +1004,9 @@ msgstr "创建活动小队"
 msgid "contextMenu/createMapboxSquad"
 msgstr "侦察任务：创建小队"
 
+msgid "contextMenu/createPlaylist"
+msgstr "创建游玩列表"
+
 msgid "contextMenu/createPrivateChannel"
 msgstr "发送信息"
 
@@ -1099,6 +1099,9 @@ msgstr "退出组队"
 
 msgid "contextMenu/lockSlot"
 msgstr "锁定车位"
+
+msgid "contextMenu/managePlaylists"
+msgstr "游玩列表"
 
 msgid "contextMenu/mentorAssignment"
 msgstr "授业课程"
@@ -2121,11 +2124,17 @@ msgstr "该参数决定减少起火持续时间及起火造成损伤的能力。
 msgid "extraParams/name/foliageMaskingFactor"
 msgstr "该参数表示在植被后方的隐蔽效果。"
 
+msgid "extraParams/name/hpRecover"
+msgstr "该参数表示使用修理箱时恢复的生命值提高幅度。数值越高，恢复的生命值就越多。"
+
 msgid "extraParams/name/mediumGroundFactor"
 msgstr "该参数表示悬挂装置在中度松软地形上的越野能力。数值越高，达到最高速度的时间越短。"
 
 msgid "extraParams/name/penaltyToDamagedSurveyingDevice"
 msgstr "该参数降低观察设备被击毁导致的最大观察范围惩罚。数值减少得越多，观察范围越大。"
+
+msgid "extraParams/name/piercingHEShellsDistributionUpperBound"
+msgstr "该参数表示炮弹在射击50米范围内的目标时，潜在穿透力浮动范围上限的提高幅度。数值越高，穿透力越强。"
 
 msgid "extraParams/name/radiomanActivityTimeAfterVehicleDestroy"
 msgstr "该参数表示坦克被击毁后敌方位置的额外报告时间。"
@@ -2141,6 +2150,9 @@ msgstr "该参数表示悬挂装置在松软地形上的越野能力。数值越
 
 msgid "extraParams/name/stunResistanceEffectFactor"
 msgstr "该参数表示乘员受弹震影响时的减益程度。"
+
+msgid "extraParams/name/suspensionDamageReduction"
+msgstr "该参数表示悬挂装置所受损伤的降低幅度。数值越高，受到的损伤越少。"
 
 msgid "extraParams/name/vehPenaltyForDamagedAmmorack"
 msgstr "该参数降低弹药架受损导致的装填时间惩罚。数值减少得越多，装填时间越短。"
@@ -2288,27 +2300,6 @@ msgstr "打开军团成员列表"
 
 msgid "fortificationCtx/prepareOrder"
 msgstr "准备储备"
-
-msgid "goldFish/buttonClose"
-msgstr "关闭"
-
-msgid "goldFish/eventLink"
-msgstr "前往特惠商城"
-
-msgid "goldFish/eventText"
-msgstr ""
-"一次性优惠！此次在特惠商城中购买商品将获得奖励金币。\n"
-"\n"
-"请点击“前往特惠商城”查看特殊优惠。将打开默认浏览器。"
-
-msgid "goldFish/eventTitle"
-msgstr "购买金币的最佳时机"
-
-msgid "goldFish/header"
-msgstr "特惠商城中的一次性优惠"
-
-msgid "goldFish/windowHeader"
-msgstr "公告"
 
 msgid "hangar/ammunitionPanel/easyTankEquipBtn"
 msgstr "快速备战"
@@ -3020,9 +3011,6 @@ msgstr "军团"
 
 msgid "headerButtons/defaultCounter"
 msgstr "!"
-
-msgid "headerButtons/doLabel/premium"
-msgstr "延期高级账号"
 
 msgid "headerButtons/fightBtn/tooltip/battleRoyaleDisabled/body"
 msgstr "该服务器已进入休战期。"
@@ -3847,6 +3835,9 @@ msgstr " "
 msgid "loading/battleTypes/desc/9"
 msgstr " "
 
+msgid "loading/battleTypes/subTitle/23"
+msgstr "幸运草对决"
+
 msgid "loading/helpTip"
 msgstr "车库和战场内按F1可查看帮助。"
 
@@ -4388,7 +4379,7 @@ msgid "moduleInfo/params/continuousDamagePerSecond"
 msgstr "平均每秒损伤"
 
 msgid "moduleInfo/params/continuousShotsPerMinute"
-msgstr "连射射速"
+msgstr "持续射速"
 
 msgid "moduleInfo/params/cooldownSeconds"
 msgstr "冷却时间"
@@ -4430,7 +4421,7 @@ msgid "moduleInfo/params/forwardMaxSpeed"
 msgstr "最大速度"
 
 msgid "moduleInfo/params/guaranteedDamage/footnote"
-msgstr "如果未击穿装甲，炮弹仅能造成较小比例的损伤。"
+msgstr "击中主装甲时必定造成损伤"
 
 msgid "moduleInfo/params/hullAndChassisWeight"
 msgstr "重量"
@@ -4477,6 +4468,15 @@ msgstr "这种炮弹的穿透力不受距离影响"
 msgid "moduleInfo/params/noPiercingDistance/footnote/maxDistance"
 msgstr ",最大飞行距离—400米"
 
+msgid "moduleInfo/params/normalisation"
+msgstr "转正效应角度"
+
+msgid "moduleInfo/params/penetrationLoss"
+msgstr "穿透力损失"
+
+msgid "moduleInfo/params/penetrationLoss/footnote"
+msgstr "该类型炮弹在击穿第一层间隙装甲后，穿透力会开始随距离衰减"
+
 msgid "moduleInfo/params/piercingDistance"
 msgstr "%(dist)s 米"
 
@@ -4519,11 +4519,23 @@ msgstr "单发射击模式下的装填时间"
 msgid "moduleInfo/params/reloadTimeTwinGun"
 msgstr "齐射射击模式下的装填时间"
 
+msgid "moduleInfo/params/ricochetAngle"
+msgstr "跳弹角度"
+
 msgid "moduleInfo/params/rocketAccelerationEnginePower"
 msgstr "发动机功率(激活火箭助推器后)"
 
 msgid "moduleInfo/params/rotationSpeed"
 msgstr "旋转速度"
+
+msgid "moduleInfo/params/screensArmorMultiplier"
+msgstr "间隙装甲系数"
+
+msgid "moduleInfo/params/screensArmorMultiplier/footnote"
+msgstr "该类型炮弹可正常击穿间隙装甲，但之后会损失相当于间隙装甲厚度3倍的穿透力"
+
+msgid "moduleInfo/params/screensArmorMultiplier/value"
+msgstr "x%(multiplier)s"
 
 msgid "moduleInfo/params/shellLoadingTime"
 msgstr "弹链装填时间"
@@ -5148,12 +5160,6 @@ msgstr "通过战斗获得所需坦克的蓝图碎片以及其它可用部件。
 msgid "progressiveReward/widget/title"
 msgstr "成就奖励"
 
-msgid "promo/patch/message"
-msgstr "客户端版本:"
-
-msgid "promo/patch/title"
-msgstr "公告"
-
 msgid "promo/teaser/title"
 msgstr "战斗情报"
 
@@ -5168,9 +5174,6 @@ msgstr "%(hour)s:%(min)s:%(sec)s"
 
 msgid "promo/teaserTimeFormat/min"
 msgstr "%(hour)s:%(min)s:%(sec)s"
-
-msgid "promo/toArchive"
-msgstr "公告"
 
 msgid "quote"
 msgstr "%(string)s"
@@ -6182,7 +6185,7 @@ msgid "tank_params/concentrationModeDuration"
 msgstr "持续时间"
 
 msgid "tank_params/continuousShotsPerMinute"
-msgstr "连射射速"
+msgstr "持续射速"
 
 msgid "tank_params/coolingDelay"
 msgstr "冷却延迟时间"
@@ -6381,6 +6384,9 @@ msgstr "越野能力"
 
 msgid "tank_params/passiveCoincideceShootingCharge"
 msgstr "重合式机电瞄准镜充能(%/秒)(交战模式，被动)"
+
+msgid "tank_params/penetrationLoss"
+msgstr "(%/100毫米)"
 
 msgid "tank_params/perActivation"
 msgstr "(每次激活)"
@@ -6784,18 +6790,6 @@ msgstr "(等待进入战斗)"
 msgid "tankmen/mediumTank"
 msgstr "中型坦克"
 
-msgid "techtree/Announcement"
-msgstr "敬请期待"
-
-msgid "techtree/premiumPanel/btnLabel"
-msgstr "军械库中还有%(count)s辆"
-
-msgid "techtree/premiumPanel/btnLabel/count"
-msgstr "%(count)s"
-
-msgid "techtree/premiumPanel/title"
-msgstr "金币坦克"
-
 msgid "timeLeft/full/day"
 msgstr "{day}天{hour}时"
 
@@ -7133,7 +7127,7 @@ msgid "vehicleInfo/params/clipFireRate"
 msgstr "装填(弹夹/炮弹或短弹夹/炮弹数量)"
 
 msgid "vehicleInfo/params/continuousShotsPerMinute"
-msgstr "连射射速(发/分钟)"
+msgstr "持续射速(发/分钟)"
 
 msgid "vehicleInfo/params/dualAccuracyCoolingDelay"
 msgstr "射击后的火炮冷却时间(秒)"
@@ -7420,68 +7414,35 @@ msgstr "升级路线"
 msgid "viewHeader/backBtn/descrLabel/techtree/china"
 msgstr "C系升级路线"
 
-msgid "viewHeader/backBtn/descrLabel/techtree/china/blueprints"
-msgstr "C系蓝图"
-
 msgid "viewHeader/backBtn/descrLabel/techtree/czech"
 msgstr "J系升级路线"
-
-msgid "viewHeader/backBtn/descrLabel/techtree/czech/blueprints"
-msgstr "J系蓝图"
 
 msgid "viewHeader/backBtn/descrLabel/techtree/france"
 msgstr "F系升级路线"
 
-msgid "viewHeader/backBtn/descrLabel/techtree/france/blueprints"
-msgstr "F系蓝图"
-
 msgid "viewHeader/backBtn/descrLabel/techtree/germany"
 msgstr "D系升级路线"
-
-msgid "viewHeader/backBtn/descrLabel/techtree/germany/blueprints"
-msgstr "D系蓝图"
 
 msgid "viewHeader/backBtn/descrLabel/techtree/italy"
 msgstr "I系升级路线"
 
-msgid "viewHeader/backBtn/descrLabel/techtree/italy/blueprints"
-msgstr "I系蓝图"
-
 msgid "viewHeader/backBtn/descrLabel/techtree/japan"
 msgstr "R系升级路线"
-
-msgid "viewHeader/backBtn/descrLabel/techtree/japan/blueprints"
-msgstr "R系蓝图"
 
 msgid "viewHeader/backBtn/descrLabel/techtree/poland"
 msgstr "B系升级路线"
 
-msgid "viewHeader/backBtn/descrLabel/techtree/poland/blueprints"
-msgstr "B系蓝图"
-
 msgid "viewHeader/backBtn/descrLabel/techtree/sweden"
 msgstr "V系升级路线"
-
-msgid "viewHeader/backBtn/descrLabel/techtree/sweden/blueprints"
-msgstr "V系蓝图"
 
 msgid "viewHeader/backBtn/descrLabel/techtree/uk"
 msgstr "Y系升级路线"
 
-msgid "viewHeader/backBtn/descrLabel/techtree/uk/blueprints"
-msgstr "Y系蓝图"
-
 msgid "viewHeader/backBtn/descrLabel/techtree/usa"
 msgstr "M系升级路线"
 
-msgid "viewHeader/backBtn/descrLabel/techtree/usa/blueprints"
-msgstr "M系蓝图"
-
 msgid "viewHeader/backBtn/descrLabel/techtree/ussr"
 msgstr "S系升级路线"
-
-msgid "viewHeader/backBtn/descrLabel/techtree/ussr/blueprints"
-msgstr "S系蓝图"
 
 msgid "viewHeader/backBtn/label"
 msgstr "返回"

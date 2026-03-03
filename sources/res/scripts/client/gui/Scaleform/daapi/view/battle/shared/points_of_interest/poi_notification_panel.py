@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, typing, BigWorld
 from Event import EventsSubscriber
 from gui.Scaleform.daapi.view.battle.shared.points_of_interest.constants import POI_TYPE_UI_MAPPING, POI_STATUS_UI_MAPPING

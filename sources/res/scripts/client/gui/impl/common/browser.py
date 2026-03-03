@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, typing, Event
 from frameworks.wulf import ViewSettings, ViewFlags
 from gui.browser import BrowserViewWebHandlers

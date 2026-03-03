@@ -100,22 +100,22 @@ package net.wg.gui.components.crosshairPanel.components.autoloader
          gotoAndStop(param1);
          if(this.soundsEnabled && this._prevFrame != param1)
          {
-            if(this._soundProgress == START && (param1 >= START && param1 <= START_SPAN))
+            if(this._soundProgress == START && param1 >= START && param1 <= START_SPAN)
             {
                this.dispatchSoundEvent(AUTOLOADERBOOSTVIEWSOUNDS.START);
                this._soundProgress = PROGRESS_QUARTER;
             }
-            else if(this._soundProgress == PROGRESS_QUARTER && (param1 >= PROGRESS_QUARTER && param1 <= PROGRESS_QUARTER_SPAN))
+            else if(this._soundProgress == PROGRESS_QUARTER && param1 >= PROGRESS_QUARTER && param1 <= PROGRESS_QUARTER_SPAN)
             {
                this.dispatchSoundEvent(AUTOLOADERBOOSTVIEWSOUNDS.PROGRESS);
                this._soundProgress = PROGRESS_HALF;
             }
-            else if(this._soundProgress == PROGRESS_HALF && (param1 >= PROGRESS_HALF && param1 <= PROGRESS_HALF_SPAN))
+            else if(this._soundProgress == PROGRESS_HALF && param1 >= PROGRESS_HALF && param1 <= PROGRESS_HALF_SPAN)
             {
                this.dispatchSoundEvent(AUTOLOADERBOOSTVIEWSOUNDS.PROGRESS);
                this._soundProgress = CHARGE_MAX;
             }
-            else if(this._soundProgress == CHARGE_MAX && (param1 >= CHARGE_MAX && param1 <= CHARGE_MAX_SPAN))
+            else if(this._soundProgress == CHARGE_MAX && param1 >= CHARGE_MAX && param1 <= CHARGE_MAX_SPAN)
             {
                this.onMaxCharge();
                this._soundProgress = START;

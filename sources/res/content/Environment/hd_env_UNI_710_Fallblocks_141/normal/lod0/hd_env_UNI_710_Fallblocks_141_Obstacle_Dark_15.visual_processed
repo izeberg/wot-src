@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>hd_env_UNI_710_Fallblocks_Obstacle_Dark_15</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>lod0</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.000000 0.000000</row3>
+				</transform>
+				<node>
+					<identifier>s2</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd2</identifier>
+					<fx>shaders/custom/emissive_playground.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>112</materialKind>
+					<property>
+						angleFalloffParams
+						<Vector4>1.000000 0.300000 1.000000 0.000000</Vector4>
+					</property>
+					<property>
+						destBlend
+						<Int>2</Int>
+					</property>
+					<property>
+						emissionMap
+						<Texture>content/Environment/hd_env_UNI_710_Fallblocks_141/hd_env_UNI_710_Fallblocks_Squares_01.dds</Texture>
+					</property>
+					<property>
+						g_contrast
+						<Float>26.000000</Float>
+					</property>
+					<property>
+						g_deferredMult
+						<Float>30.000000</Float>
+					</property>
+					<property>
+						g_offsetBlack
+						<Float>0.120000</Float>
+					</property>
+					<property>
+						g_tint
+						<Vector4>0.972549 0.203922 0.772549 1.000000</Vector4>
+					</property>
+					<property>
+						g_zeroPhaseLum
+						<Float>0.000000</Float>
+					</property>
+					<property>
+						pattern
+						<Texture>content/Environment/hd_env_UNI_710_Fallblocks_141/hd_env_UNI_710_Fallblocks_Noise_01.dds</Texture>
+					</property>
+					<property>
+						phaseMap
+						<Texture>content/Environment/hd_env_UNI_710_Fallblocks_141/hd_env_UNI_710_Fallblocks_Noise_01.dds</Texture>
+					</property>
+					<property>
+						speed
+						<Float>0.070000</Float>
+					</property>
+					<property>
+						srcBlend
+						<Int>2</Int>
+					</property>
+					<property>
+						usePhaseMap
+						<Bool>true</Bool>
+					</property>
+					<property>
+						waveLen
+						<Float>6.000000</Float>
+					</property>
+					<property>
+						g_forwardMult
+						<Float>3.000000</Float>
+					</property>
+				</material>
+				<groupOrigin>0.000000 4.999998 0.000001</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>s_nd0</identifier>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<property>
+						diffuseMap
+						<Texture>content/Environment/hd_env_UNI_710_Fallblocks_141/hd_env_UNI_710_Fallblocks_Obstacle_Dark_01_AM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Environment/hd_env_UNI_710_Fallblocks_141/hd_env_UNI_710_Fallblocks_Obstacle_Dark_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Environment/hd_env_UNI_710_Fallblocks_141/hd_env_UNI_710_Fallblocks_Obstacle_Dark_01_ANM.dds</Texture>
+					</property>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>112</materialKind>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+				</material>
+				<groupOrigin>0.000000 4.999998 0.000002</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				2
+				<material>
+					<identifier>s_nd1</identifier>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>112</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/Environment/hd_env_UNI_710_Fallblocks_141/hd_env_UNI_710_Fallblocks_Obstacle_Pink_AM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Environment/hd_env_UNI_710_Fallblocks_141/hd_env_UNI_710_Fallblocks_Obstacle_Pink_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Environment/hd_env_UNI_710_Fallblocks_141/hd_env_UNI_710_Fallblocks_Obstacle_Pink_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.000000 4.999998 0.000002</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-5.014261 -0.014274 -15.014263</min>
+		<max>5.014261 10.014269 15.014267</max>
+	</boundingBox>
+	<customBsp>true</customBsp>
+	<geometrySize>5424</geometrySize>
+</root>

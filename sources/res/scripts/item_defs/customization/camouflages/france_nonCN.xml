@@ -20,6 +20,9 @@
 			<include>
 				<nations>france</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<camouflage>
 			<id>15418</id>
@@ -425,6 +428,9 @@
 			<include>
 				<nations>france</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<camouflage>
 			<id>15421</id>
@@ -834,6 +840,9 @@
 			<include>
 				<nations>france</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<camouflage>
 			<id>15419</id>
@@ -1247,6 +1256,9 @@
 			<include>
 				<nations>france</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<camouflage>
 			<id>15420</id>
@@ -1652,6 +1664,9 @@
 			<include>
 				<nations>france</nations>
 			</include>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
 		</vehicleFilter>
 		<camouflage>
 			<id>15422</id>

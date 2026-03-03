@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging
 from soft_exception import SoftException
 from gui.Scaleform.framework.entities.abstract.BaseDAAPIModuleMeta import BaseDAAPIModuleMeta

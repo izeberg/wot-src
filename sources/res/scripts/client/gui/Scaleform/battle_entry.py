@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import weakref, BigWorld
 from frameworks.wulf import WindowLayer
 from gui import DEPTH_OF_Battle

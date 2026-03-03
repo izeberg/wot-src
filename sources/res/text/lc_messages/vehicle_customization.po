@@ -569,6 +569,31 @@ msgstr "弹药木箱"
 msgid "attachment/tactical_supplies/Cus_82_NationsA_Ammogun"
 msgstr "车载机枪补给箱"
 
+msgid "attachment/tank_lads"
+msgstr "坦克搭档"
+
+msgid "attachment/tank_lads/Cus_185_SP_Spotlighter"
+msgstr "观测手"
+
+msgid "attachment/tank_lads/Cus_186_SP_MachineGunner"
+msgstr "机枪手"
+
+msgid "attachment/tank_lads/Cus_187_SP_Firefighters"
+msgstr "消防组"
+
+msgid "attachment/tank_lads/Cus_188_SP_Welders"
+msgstr "焊接组"
+
+msgid "attachment/tank_lads/Cus_188_SP_Welders/description"
+msgstr ""
+"\"装甲裂开了，伙计！\"\n"
+"\"收到，打开喷灯！\"\n"
+"\"坦克撑得住吗？\"\n"
+"\"绝对没问题！\""
+
+msgid "attachment/tank_lads/Cus_189_SP_Engineer"
+msgstr "机械师"
+
 msgid "attachment/test"
 msgstr "测试对象"
 
@@ -3053,10 +3078,22 @@ msgid "camouflage/bp2025_s18_1/label"
 msgstr "末日之后"
 
 msgid "camouflage/bp2025_s18_2/label"
-msgstr "时过境迁"
+msgstr "欢迎来到新世界"
 
 msgid "camouflage/bp2025_s18_3/label"
-msgstr "欢迎来到新世界"
+msgstr "时过境迁"
+
+msgid "camouflage/bp2025_s19_bundle/label"
+msgstr "信号串扰"
+
+msgid "camouflage/bp2025_s19_cz/label"
+msgstr "载波"
+
+msgid "camouflage/bp2025_s19_g/label"
+msgstr "方位角"
+
+msgid "camouflage/bp2025_s19_usa/label"
+msgstr "电波猎手"
 
 msgid "camouflage/bp8_auction_1_hull/description"
 msgstr "?empty?"
@@ -4166,6 +4203,12 @@ msgstr "脱离统治"
 msgid "camouflage/event/name"
 msgstr "钢铁熔岩"
 
+msgid "camouflage/fall_tanks/description"
+msgstr "?empty?"
+
+msgid "camouflage/fall_tanks/label"
+msgstr "霓虹猛兽"
+
 msgid "camouflage/feer/label"
 msgstr "烟花"
 
@@ -4288,6 +4331,9 @@ msgstr "?empty?"
 
 msgid "camouflage/foreign_legion_2/label"
 msgstr "喷漆绘画"
+
+msgid "camouflage/forged_flame/label"
+msgstr "烈火锻造"
 
 msgid "camouflage/fort/description"
 msgstr "?empty?"
@@ -4738,6 +4784,9 @@ msgstr "?empty?"
 msgid "camouflage/girls_und_panzer_2024_jatkosota/label"
 msgstr "继续高中"
 
+msgid "camouflage/girls_und_panzer_kabasan/label"
+msgstr "河马组"
+
 msgid "camouflage/give_paw/description"
 msgstr "?empty?"
 
@@ -5112,6 +5161,12 @@ msgstr "?empty?"
 msgid "camouflage/liveops_backtoschool_2025/label"
 msgstr "不断进取"
 
+msgid "camouflage/liveops_directsales/label"
+msgstr "迫击炮弹"
+
+msgid "camouflage/liveops_hist_camo/label"
+msgstr "妙计先驱"
+
 msgid "camouflage/liveops_hw_2025/description"
 msgstr "?empty?"
 
@@ -5129,6 +5184,9 @@ msgstr "?empty?"
 
 msgid "camouflage/liveops_medieval/label"
 msgstr "九命神兽"
+
+msgid "camouflage/liveops_pixelart/label"
+msgstr "数字之根"
 
 msgid "camouflage/liveops_recolor_1/description"
 msgstr "?empty?"
@@ -6482,6 +6540,9 @@ msgstr "?empty?"
 
 msgid "camouflage/st_patricks_day_2025/label"
 msgstr "熔炼好运"
+
+msgid "camouflage/st_patricks_day_2026/label"
+msgstr "盖尔烙印"
 
 msgid "camouflage/stayhome/description"
 msgstr "?empty?"
@@ -16512,14 +16573,26 @@ msgstr "地狱犬"
 
 msgid "main_style/A69_T110E5_3DSt_TIR_desc/long"
 msgstr ""
-"“我们都累了，还有很多工作要做。但我们仍在行动。我们还活着，还在战斗，这在很大程度上要感谢你。你带我们穿过敌人的炮火，击退了许多敌人的攻击。是的，我们累坏了，但是请再等一会儿，朋友，有人在等我们回家。我们想活着回来。”"
+"灵感源自T57重型坦克的原始风格。\n"
+"\n"
+"\"我们都累了，可还有很多工作要做。但我们仍在行动。我们还活着，还在战斗，这在很大程度上要感谢你。\n"
+"\n"
+"%(insertion_open)s你带我们穿越枪林弹雨，击退了敌人一波又一波的进攻。%(insertion_close)s\n"
+"\n"
+"是的，我们累坏了，但是请再坚持一会儿，朋友，有人在等我们回家。我们想活着回去。\""
 
 msgid "main_style/A89_T54E1_3DSt_TIR"
 msgstr "地狱犬"
 
 msgid "main_style/A89_T54E1_3DSt_TIR_desc/long"
 msgstr ""
-"“我们都累了，还有很多工作要做。但我们仍在行动。我们还活着，还在战斗，这在很大程度上要感谢你。你带我们穿过敌人的炮火，击退了许多敌人的攻击。是的，我们累坏了，但是请再等一会儿，朋友，有人在等我们回家。我们想活着回来。”"
+"灵感源自T57重型坦克的原始风格。\n"
+"\n"
+"\"我们都累了，可还有很多工作要做。但我们仍在行动。我们还活着，还在战斗，这在很大程度上要感谢你。\n"
+"\n"
+"%(insertion_open)s你带我们穿越枪林弹雨，击退了敌人一波又一波的进攻。%(insertion_close)s\n"
+"\n"
+"是的，我们累坏了，但是请再坚持一会儿，朋友，有人在等我们回家。我们想活着回去。\""
 
 msgid "main_style/F108_Panhard_EBR_105_3Dst"
 msgstr "特拉蒙塔纳"
@@ -16567,22 +16640,26 @@ msgstr "马伦戈"
 
 msgid "main_style/F75_Char_de_25t_3DSt_TIR_desc/long"
 msgstr ""
-"查狄伦 25t(以名马命名的坦克)驾驶员的日记中写到: “多么讽刺……我们的“阿拉伯种马”回家了，但我们只是这里的客人。\n"
+"灵感源自查狄伦 25 t的原始风格。\n"
 "\n"
-"只有马伦戈可以决定这次是否轮到我们回家。\n"
+"从查狄伦 25t(以良驹命名的坦克)驾驶员的日记中得知: \"多么讽刺...我们的'阿拉伯种马'回家了，但我们只是这里的客人。\n"
 "\n"
-"我希望它不会永远留在这里。 我想再次看到我宏伟的F系...”"
+"%(insertion_open)s只有马伦戈有权决定我们能不能回家。%(insertion_close)s\n"
+"\n"
+"我希望它不会永远留在这里。我想看到F系再次伟大...\""
 
 msgid "main_style/F88_AMX_13_105_3DSt_TIR"
 msgstr "马伦戈"
 
 msgid "main_style/F88_AMX_13_105_3DSt_TIR_desc/long"
 msgstr ""
-"查狄伦 25t(以名马命名的坦克)驾驶员的日记中写到: “多么讽刺……我们的“阿拉伯种马”回家了，但我们只是这里的客人。\n"
+"灵感源自查狄伦 25 t的原始风格。\n"
 "\n"
-"只有马伦戈可以决定这次是否轮到我们回家。\n"
+"从查狄伦 25t(以良驹命名的坦克)驾驶员的日记中得知: \"多么讽刺...我们的'阿拉伯种马'回家了，但我们只是这里的客人。\n"
 "\n"
-"我希望它不会永远留在这里。 我想再次看到我宏伟的F系...”"
+"%(insertion_open)s只有马伦戈有权决定我们能不能回家。%(insertion_close)s\n"
+"\n"
+"我希望它不会永远留在这里。我想看到F系再次伟大...\""
 
 msgid "main_style/F88_AMX_13_105_B9BS_3DSt"
 msgstr "勒维兹尔"
@@ -17330,7 +17407,9 @@ msgstr "花岗岩"
 
 msgid "main_style/granit_TIR_desc/long"
 msgstr ""
-"\"这是战后S系坦克工业的杰作。它是能够穿透装甲的战矛，可以在任何天气、化学、生物或核条件下突破最重的防线。这就是指挥官所说的，指挥官总是对的。\""
+"灵感源自IS-7的原始风格。\n"
+"\n"
+"\"这是战后S系坦克建造行业的杰作。它好似一支穿甲长矛，能够突破最坚固的防线，并在任何天气、核生化条件下，以最高效率消灭任何陆地或空中威胁。指挥官是这么说的，而指挥官总是对的。\""
 
 msgid "main_style/historical_custom_look_korea"
 msgstr "日出纳卡翁"
@@ -17364,8 +17443,13 @@ msgstr "刺猬"
 
 msgid "main_style/igelschnauzchen_description/long"
 msgstr ""
-"在一个巨大的弹坑中发现的一张被火焰烧黑的纸上，这些字依稀可见:\n"
-"“这是命令。指挥官的决定需要立刻执行，而且不可改变，就像开枪或枪栓的咔嚓声那样。这条命令立即将您变成一个怀着特定目标和明确指令的精确而完美的武器。照这个命令做就不用负任何责任。我们会完成命令的，亲爱的艾尔莎，然后回家。我向你保证。\""
+"灵感源自\"蟋蟀\"15的原始风格。\n"
+"\n"
+"在一处巨大的弹坑中，发现了一张被烈火灼烧的残纸，上面的字依稀可见: \"这是命令。指挥官的决定是迅速且不可改变的，就好像是射出的子弹，或是枪机的复位一样。\n"
+"\n"
+"%(insertion_open)s该命令立即将您变成一把将要执行特定目标和明确指令的精准且完美的武器。%(insertion_close)s\n"
+"\n"
+"该命令解除了所有责任。我们会完成命令的，亲爱的艾尔莎，然后就回家。我向你保证。\""
 
 msgid "main_style/left_alive"
 msgstr "生还者"
@@ -18963,6 +19047,9 @@ msgstr "Alice海报"
 msgid "projection_decals/pin_up/projection_decal_71"
 msgstr "Kei海报"
 
+msgid "projection_decals/pin_up/projection_decal_72"
+msgstr "Erwin海报"
+
 msgid "projection_decals/progression"
 msgstr "可升级"
 
@@ -19275,6 +19362,15 @@ msgstr "玩火上身"
 msgid "projection_decals/special/projection_decal_102/description"
 msgstr "装备S军口粮或提神咖啡可能有些作用，但它们也无法在着火时挽救您的生命值。请谨慎使用。"
 
+msgid "projection_decals/special/projection_decal_1022"
+msgstr "再联络"
+
+msgid "projection_decals/special/projection_decal_1023"
+msgstr "请报上呼号"
+
+msgid "projection_decals/special/projection_decal_1024"
+msgstr "全体呼叫"
+
 msgid "projection_decals/special/projection_decal_1027"
 msgstr "机械战警"
 
@@ -19319,6 +19415,12 @@ msgstr "SU-76I"
 
 msgid "projection_decals/special/projection_decal_104/description"
 msgstr "没有投降一说。要么您摧毁它，要么它摧毁您。您看着办。"
+
+msgid "projection_decals/special/projection_decal_1043"
+msgstr "Q版Erwin"
+
+msgid "projection_decals/special/projection_decal_1044"
+msgstr "趁热打铁"
 
 msgid "projection_decals/special/projection_decal_105"
 msgstr "重型热狗"
@@ -23619,6 +23721,9 @@ msgstr "精锐之师"
 msgid "repaint/foreign_legion_2"
 msgstr "喷漆绘画"
 
+msgid "repaint/forged_flame"
+msgstr "烈火锻造"
+
 msgid "repaint/france_base_color"
 msgstr "F系基色"
 
@@ -23717,6 +23822,9 @@ msgstr "橄榄绿色"
 
 msgid "repaint/girls_und_panzer_hippo"
 msgstr "炭灰色"
+
+msgid "repaint/girls_und_panzer_kabasan_style"
+msgstr "河马组"
 
 msgid "repaint/girls_und_panzer_rabbit"
 msgstr "苔藓绿色"
@@ -25073,6 +25181,14 @@ msgid "special_style/A69_T110E5_3Dst_BP_desc/long"
 msgstr ""
 "“问题就在于我没有第二次机会。与机器不同，人类可不能被融化并铸成其他东西。我也永远不会像你一样，被当成训练目标送到试验场里。朋友啊，你可能还有未来，但我没有。我去世后，人们就会逐渐淡忘我。我的一生将被人事档案姓名旁的三个字母总结：K.I.A。仅此而已，挺悲哀的，不是吗？但是，我总觉得转世成为煎锅不是您的风格，而且我也不打算在阿灵顿安息。至少现在还不行，因为我们还有太多光荣的战役要去打。在四十岁之前，我还有太多事情想做。因此，不如这样：别老是像锈了的旧皮卡一样一天到晚熄火。让我们离开这个的地方。我们一定能做到！我们一定能活下去！”"
 
+msgid "special_style/A69_T110E5_BPXIX_3Dst"
+msgstr "北境守望"
+
+msgid "special_style/A69_T110E5_BPXIX_3Dst_desc/long"
+msgstr ""
+"\"当天线升起时，我稳稳地待在驾驶员舱口里，这片凛冽呼啸的广袤天地也随之缩小，成为我们可以量化的信号和光点。我的车组主要负责三角测量、监听和记录，而坦克的AA-52机枪确实能提供一些安全感。雷达和红外线将黑暗拒之门外，车头灯划破暴风雪...可惜它无法驱散严寒。尽管如此，我们的生存物资还比较齐全:"
+" 伪装网、坚固的帐篷，甚至还有一个绞盘。不过，最重要的还是弹药箱——对于守望者来说，没有休息可言。\""
+
 msgid "special_style/A83_T110E4_BVII_3DSt"
 msgstr "货运列车"
 
@@ -25405,6 +25521,13 @@ msgstr ""
 " 人们只会从自己的错误中吸取教训。今天，人生又给你上了一课。虽然我也想继续跟你聊童话、怪物和音乐的话题，但是俗话说得好: "
 "歌曲可填不饱怪物的肚子...\""
 
+msgid "special_style/Cz34_Vz_71_Tesak_BPXIX_3Dst"
+msgstr "寒冬Vz.71"
+
+msgid "special_style/Cz34_Vz_71_Tesak_BPXIX_3Dst_desc/long"
+msgstr ""
+"\"我透过伪装网向外张望，调整着坦克上可拆卸的野战天线，惊叹于这些纤细的导线竟能承载如此庞杂的信息——每一条读数彼此衔接，如同一枚精密腕表中紧密咬合的齿轮。探照灯在雪地上投下温暖的光芒，我循着雷达低沉的嗡鸣声前行。其电子脉冲在这片远离人迹的荒野中显得格外陌生。备用油箱轻轻碰撞着车体，发出细微声响，我们缓缓向前推进。而我在这层装甲包裹之中，心中涌起一阵奇妙的激动——从这个钢铁制成的'茧'里，我得以窥见那片我一直向往的更广阔世界。\""
+
 msgid "special_style/Cz40_DBV_152_RW6_3Dst"
 msgstr "摩拉维亚臼炮"
 
@@ -25593,6 +25716,13 @@ msgid "special_style/G04_PzVI_Tiger_I_E_3DSt_desc/long"
 msgstr ""
 "\"苍天无眼啊。我们近乎各个方面都比敌人强大，我们的坦克拥有更好的火炮、发动机、装甲和训练有素的乘员...我们的实力远超他们。他们那些所谓的坦克根本比不上我们，但我不得不承认...他们依然会赢。敌人在某个方面完全抵消了我们的优势，使得我们伟大的D系军械完全瘫痪在日落之地...因为敌人的燃油储备充足。\""
 
+msgid "special_style/G121_Grille_15_L63_BPXIX_3Dst"
+msgstr "PZ-15极地哨卫"
+
+msgid "special_style/G121_Grille_15_L63_BPXIX_3Dst_desc/long"
+msgstr ""
+"\"在这铜墙铁壁里，世界重新回归秩序。我从机器按蓝图精确运转的确定性中获得极大的安慰。乘员们沉浸于追猎的神秘感之中，而我却无暇分心——我校准雷达，调整夜视光学设备，观察推土铲的液压曲线如何贴合冰冻的地面。无论我们在此发现什么——无论那异常信号指向的是无辜者还是破坏者——对我而言，都不及解开方程本身所带来的满足感重要。对我来说，这本身就是终点。\""
+
 msgid "special_style/G121_Grille_15_L63_NY2025_3Dst"
 msgstr "鱼竿"
 
@@ -25740,6 +25870,20 @@ msgstr ""
 "\"都给我听好了。这就是神之拳。看看那加固的装甲，双管火炮，能轻松击毁一只机械军犬...敌人创造这头怪物就是为了消灭所有反抗势力。但反抗军抢先一步将其缴获。这辆坦克本该成为让人们屈服的工具，但对这个怪物来说，只要为它指明目标，怪物可不在乎那是不是它的创造者。\n"
 "\n"
 "既然敌人在玩火，那就别怪我们火上浇油了。\""
+
+msgid "special_style/G191_StuG_IIIF_AF_3Dst"
+msgstr "河马组友谊赛"
+
+msgid "special_style/G191_StuG_IIIF_AF_3Dst_desc/long"
+msgstr ""
+"在湖中失踪许久后，III号突击炮F型被河马组寻获，并根据成员们最喜欢的古代历史时期风格进行了个性化装饰。这辆坦克参加了与圣葛罗莉安娜女学院的友谊赛，在城市战中利用景观进行隐蔽，取得了不俗战绩。然而，该队伍很快意识到，鲜艳的色彩和引人注目的符号远非自行反坦克炮涂装的理想选择。"
+
+msgid "special_style/G191_StuG_IIIF_A_3Dst"
+msgstr "河马组标准"
+
+msgid "special_style/G191_StuG_IIIF_A_3Dst_desc/long"
+msgstr ""
+"在某次探索大洗女子学园的过程中，河马组的女孩们在湖中发现了一辆失踪已久的III号突击炮F型，并努力帮其恢复昔日辉煌。这辆坦克曾经点缀着华丽的装饰物，但后来被重新漆成了实用的战地灰色，这反映了该队伍非常擅长隐蔽和伏击战术。"
 
 msgid "special_style/G42_Maus_BPXVIII_3Dst"
 msgstr "钢铁凝视"
@@ -27847,25 +27991,67 @@ msgstr ""
 "\"我以前只想求个清静。受不了城市里的那些噪音——人们喋喋不休地说着那些没有意义的话题，扰民的音乐，街上发动机的轰鸣...现在一切都安静了。只能听到蝉鸣和乌鸦的叫声。当然，前提是您运气好。否则，您听到的可能就是噬皮者饥饿的低吼。是啊...我曾经讨厌噪音。但现在我却想念它了。\""
 
 msgid "special_style/bp2025_s18_2"
-msgstr "时过境迁"
+msgstr "欢迎来到新世界"
 
 msgid "special_style/bp2025_s18_2_desc"
-msgstr "一款不祥的全地形风格。注意与它保持距离..."
+msgstr "一款全地形风格，见证残酷的新世界吧。"
 
 msgid "special_style/bp2025_s18_2_desc/long"
+msgstr ""
+"\"你不会认为还能正常生活吧？好工作、好房子、高档社区。现在这些全都没了。噬皮者每时每刻都在威胁着你的安危，并且其他幸存者对你的威胁有过之而无不及。每天都是一次考验，大多数人根本活不下去。欢迎来到新世界。\""
+
+msgid "special_style/bp2025_s18_3"
+msgstr "时过境迁"
+
+msgid "special_style/bp2025_s18_3_desc"
+msgstr "一款不祥的全地形风格。注意与它保持距离..."
+
+msgid "special_style/bp2025_s18_3_desc/long"
 msgstr ""
 "\"从那张医院病床上醒来，仿佛已经是很久以前的事了。没有医生，也没有护士，只有一地血迹和砸坏的医疗器材，灯光忽明忽暗。空气中弥漫着腐臭。我路过一扇用铁链锁住的门:"
 " 上面刷着\"不要打开，内有噬皮者\"。直到后来我才真正明白那是什么意思。房间里的人...早已与世长辞。但他的躯体却又动了起来。\""
 
-msgid "special_style/bp2025_s18_3"
-msgstr "欢迎来到新世界"
+msgid "special_style/bp2025_s19_bundle"
+msgstr "信号串扰"
 
-msgid "special_style/bp2025_s18_3_desc"
-msgstr "一款全地形风格，见证残酷的新世界吧。"
+msgid "special_style/bp2025_s19_bundle_desc"
+msgstr "一款适合最艰苦北方远征的全地形风格。"
 
-msgid "special_style/bp2025_s18_3_desc/long"
+msgid "special_style/bp2025_s19_bundle_desc/long"
 msgstr ""
-"\"你不会认为还能正常生活吧？好工作、好房子、高档社区。现在这些全都没了。噬皮者每时每刻都在威胁着你的安危，并且其他幸存者对你的威胁有过之而无不及。每天都是一次考验，大多数人根本活不下去。欢迎来到新世界。\""
+"\"我奉命调查来自一个位置极其偏远的未注册发射站的无线电信号。毋庸置疑，我们很快就能破译讯息并定位其确切来源，但我总有种不祥的预感: "
+"真相恐怕并不值得庆贺。无论等待我们的是谁或是什么，我们都必须小心行事。正如我们这一行常说的: 无线电静默，总比通信兵静默要好。\""
+
+msgid "special_style/bp2025_s19_cz"
+msgstr "载波"
+
+msgid "special_style/bp2025_s19_cz_desc"
+msgstr "一款适合勇敢调查员的理想全地形风格。"
+
+msgid "special_style/bp2025_s19_cz_desc/long"
+msgstr ""
+"\"当他们说有一个来历不明的信号时，我立刻收拾好设备，尽快向北出发。坦白说，驾驶坦克穿越苔原并不是我设想中的下一项任务。我更习惯待在工作台前，而不是透过潜望镜观察外界，但这确实是看世界的一种方式——而且，很难不对我们将要发现的事情感到好奇。也许什么都没有。也许有意外收获。无论怎样，我都会是最先知晓的人之一。\""
+
+msgid "special_style/bp2025_s19_g"
+msgstr "方位角"
+
+msgid "special_style/bp2025_s19_g_desc"
+msgstr "应用这款全地形风格，展现博学工程师的风采。"
+
+msgid "special_style/bp2025_s19_g_desc/long"
+msgstr ""
+"\"对我来说，这次任务是一场技术上的考验。无论这些信号代表什么，它们都可以被理解——而这才是关键所在。我在这一切的秩序中，在支撑着谜团的数学原理中，找到了慰藉。眼下，我完全专注于手头的智力挑战，并享受着每一秒。也许在别人看来，我只是个简单的人，但我确实热爱自己的专业。当仪表上的刻度彼此对齐时，世界才变得清晰有序。\""
+
+msgid "special_style/bp2025_s19_usa"
+msgstr "电波猎手"
+
+msgid "special_style/bp2025_s19_usa_desc"
+msgstr "一款适合坚忍侦察兵的全地形风格。"
+
+msgid "special_style/bp2025_s19_usa_desc/long"
+msgstr ""
+"\"我不知道我们在这里会发现什么，但我已经掌握了我需要的所有情报: "
+"有一个信号，我们来这里就是为了追踪它。装备很可靠，地形就不那么友好了，天气也在尽力把一切掩埋。但这都是工作的一部分。我在更糟的环境下工作过，我愿将生命托付给我的团队...但愿别到那一步。无论如何，不管那里有谁，他们都在和某人通信——在查明真相之前，我们不能回家。\""
 
 msgid "special_style/bp8_auction_1"
 msgstr "帝皇怒火"
@@ -28840,6 +29026,16 @@ msgstr "脱离统治"
 msgid "special_style/european_three_tone"
 msgstr "三色欧陆(M系)"
 
+msgid "special_style/fall_tanks"
+msgstr "霓虹猛兽"
+
+msgid "special_style/fall_tanks_desc"
+msgstr "一款未来派全地形风格，为扭曲现实的霓虹竞速世界而设计。"
+
+msgid "special_style/fall_tanks_desc/long"
+msgstr ""
+"\"我见过你们根本无法相信的景象。说实话，当他们下达命令时，我自己都不敢相信。我是看那些八十年代傻乎乎的科幻电影长大的，幻想着一个我见所未见的世界。然后，我真的进去了。通往另一个维度的传送门。霓虹闪耀的世界。冲向终点的竞速。所有的一切都无法用常理解释。我是个坦克手，不是赛车手——至少，在来到这里之前是这样。但这里的规则和外面的世界不同，而我，也不再是从前的自己。我已打破思维的束缚，建议你也这么做。\""
+
 msgid "special_style/feer"
 msgstr "烟花"
 
@@ -29052,6 +29248,16 @@ msgstr "一款全地形风格，灵感源于艺术家斯特西的作品。"
 msgid "special_style/foreign_legion_2_desc/long"
 msgstr ""
 "斯特西是一位战后现代艺术家的笔名。他会使用各种材料和画布尺寸，其作品多次成为竞拍中的拍品。该风格的设计灵感源于2019年的\"有机蒸汽\"喷漆画作品。"
+
+msgid "special_style/forged_flame"
+msgstr "烈火锻造"
+
+msgid "special_style/forged_flame_desc"
+msgstr "应用这款气势磅礴的全地形风格，纪念古代的勇士。"
+
+msgid "special_style/forged_flame_desc/long"
+msgstr ""
+"如今的战士有装甲车辆保护，但先辈所面对的战场截然不同。他们手持冷兵器，在开阔地带与敌人正面交锋，而非在坦克内操控武器。带着先辈冲锋陷阵的勇气，投入战斗吧。出发！指挥官，像一把在远古烈焰中锻造的骑士之刃，撕裂敌人的防线。"
 
 msgid "special_style/fort"
 msgstr "要塞"
@@ -29273,6 +29479,16 @@ msgid "special_style/girls_und_panzer_desc/long"
 msgstr ""
 "在与其他学校的战斗中，大洗女子学园的坦克数量往往处于劣势。为了弥补实力差距，鮟鱇组队长Miho Nishizumi选择剑走偏锋，首先转移敌方注意力，然后打敌方一个措手不及。\n"
 "除鮟鱇组外，大洗女子学园最初的阵容还包括乌龟组、河马组、兔子组、家鸭组。坦克和队伍的数量随着时间的推移不断增加。虽然这些新成员的战斗经验不足，但是她们在战车道社团中快速地掌握了坦克的各种细节，并在大洗女子学园的数场高调胜利中鼎力相助。"
+
+msgid "special_style/girls_und_panzer_kabasan"
+msgstr "河马组"
+
+msgid "special_style/girls_und_panzer_kabasan_desc"
+msgstr "一款带有著名河马组形象的全地形风格。"
+
+msgid "special_style/girls_und_panzer_kabasan_desc/long"
+msgstr ""
+"没错！这支由历史爱好者组成的队伍久经沙场，利用深厚的作战知识，勇往直前，给对手以决定性的打击。她们自豪地展示着河马徽章，以摧枯拉朽的效率和无可挑剔的风格展开攻击，在任何战车道活动中都是不可小觑的对手。"
 
 msgid "special_style/girls_und_panzer_saunders"
 msgstr "桑德斯大学附属高中"
@@ -29563,6 +29779,29 @@ msgstr ""
 msgid "special_style/liveops_desc"
 msgstr "一款为隐蔽任意等级的坦克而设计的全地形风格。"
 
+msgid "special_style/liveops_directsales"
+msgstr "迫击炮弹"
+
+msgid "special_style/liveops_directsales_desc"
+msgstr "在这款铺满瓷砖的全地形风格中，赋予\"迫击炮弹\"一词新的含义。"
+
+msgid "special_style/liveops_directsales_desc/long"
+msgstr ""
+"现在有一个概念: "
+"迫击炮坦克。人们可能会想象一门安装在坦克底盘上的自行迫击炮——这或许就是武器设计师向工程师们提出这个想法时的初衷。然而，在某个环节出了差错，因为最终的成品坦克只装备了普通火炮，车身却涂满了建筑砂浆，还贴着零零碎碎的碎裂瓷砖，看起来更像一座破旧公寓楼的外墙。我们很确定这不是预期的结果，但必须承认:"
+" 它自有其怀旧的魅力。"
+
+msgid "special_style/liveops_hist_camo"
+msgstr "妙计先驱"
+
+msgid "special_style/liveops_hist_camo_desc"
+msgstr "一款灵感源自开创性\"眩晕迷彩\"图案的全地形风格。"
+
+msgid "special_style/liveops_hist_camo_desc/long"
+msgstr ""
+"\"眩晕\"涂装以其不规则的图案和强烈的对比色而闻名，乍看之下似乎并不适合用来隐藏坦克、避免被敌方发现。但事实上，这从来就不是它的设计目的。这种创新设计最早在战事期间被应用于坦克和军舰，使对方误判目标的位置、行进方向和速度。"
+" 尽管这种涂装最终在坦克上的实际应用较为有限——西线泥泞的战场环境使涂装效果大打折扣——但它仍作为战略欺骗领域的早期探索，被载入历史。"
+
 msgid "special_style/liveops_hw_2025"
 msgstr "锢灵低语"
 
@@ -29605,6 +29844,16 @@ msgid "special_style/liveops_medieval_desc/long"
 msgstr ""
 "中世纪艺术充满惊喜——像什么跳舞的骸骨啊，多头怪兽之类的。哦，还有猫，许多猫，而且这些猫非同寻常，诡异骇人。它们为何长着人类的面孔？为何头戴王冠？为何演奏乐器？又为何看起来如此...呆萌？疑问多多，但答案寥寥。中世纪思维对我们来说仍是谜团，但有一点确凿无疑:"
 " 时代变迁，萌猫永存。"
+
+msgid "special_style/liveops_pixelart"
+msgstr "数字之根"
+
+msgid "special_style/liveops_pixelart_desc"
+msgstr "一款舒适的全地形风格，纪念美好的旧日游戏时光。"
+
+msgid "special_style/liveops_pixelart_desc/long"
+msgstr ""
+"别担心，独自前行并不危险。您越是深入森林，周围的色彩就越是明亮。前方的林间空地似乎闪烁着柔和的霓虹光芒。那是什么声音？是机器的嗡嗡声，以及微弱的8位电子旋律声。随着您不断靠近，森林的纹理开始扭曲...并像素化？展现在您面前的是大自然本身的\"故障\"，一个只有懂得欣赏数字世界之美的人才能看到的隐秘天堂。但要小心。一旦您偶然来到这个地方，可能就再也不想离开了。"
 
 msgid "special_style/liveops_recolor_1"
 msgstr "剧毒弥漫"
@@ -31526,6 +31775,18 @@ msgstr "一款全地形风格，让您在参加幸运草对决的同时感受翡
 
 msgid "special_style/st_patricks_day_2025"
 msgstr "熔炼好运"
+
+msgid "special_style/st_patricks_day_2026"
+msgstr "盖尔烙印"
+
+msgid "special_style/st_patricks_day_2026_desc"
+msgstr "一款全地形风格，为了纪念钢铁猎手中幸运草对决活动而设计。"
+
+msgid "special_style/st_patricks_day_2026_desc/long"
+msgstr "一款献给幸运草对决活动的全地形风格，将在战场上为您带来好运。"
+
+msgid "special_style/st_patricks_vehicles_2026"
+msgstr "绿色利器"
 
 msgid "special_style/stayhome"
 msgstr "待出乐趣"

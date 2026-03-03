@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import math
 from gui.Scaleform.daapi.view.battle.shared.timers_common import PythonTimer
 
@@ -27,6 +28,6 @@ class MarkerTimer(PythonTimer):
         marker = self._viewObject
         marker.hideMarkerTimer(self.__vehicleID, self._typeID, self.__statusID, -1, self.__animated, self.__isSourceVehicle)
 
-    def _setViewSnapshot(self, leftTime):
+    def _setViewSnapshot(self, timeLeft):
         if self.__showCountdown:
-            self._viewObject.updateMarkerTimer(self._typeID, math.ceil(leftTime), False, self.__statusID)
+            self._viewObject.updateMarkerTimer(self._typeID, math.ceil(timeLeft), False, self.__statusID)

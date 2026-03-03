@@ -189,26 +189,26 @@ msgid "battlePage/statusNotificationTimers/sureShot"
 msgstr "坦克参数已提升"
 
 msgid "battleResult/header/deserter"
-msgstr "您因违规受到了处罚: 评级点数处罚"
+msgstr "您的评级点数被扣除"
 
 msgid "battleResult/header/deserterQualification"
-msgstr "您受到了处罚: 完成资格赛后，您的评级将被降低"
+msgstr "您受到了处罚。完成资格赛后，您的评级将被降低。"
 
 msgid "battleResult/label/deserter"
 msgstr "中途离场"
 
 msgid "battleResult/message/deserter"
 msgstr ""
-"您因违规受到了处罚。\n"
+"您受到了处罚。\n"
 "失去评级点数: %(penalty)s"
 
 msgid "battleResult/message/deserterQualification"
 msgstr ""
-"您因中途离场而受到了处罚。\n"
+"您中途离场。\n"
 "完成资格赛后，您的评级将被降低。"
 
 msgid "battleResult/message/header/deserter"
-msgstr "违规处罚"
+msgstr "消极战斗"
 
 msgid "battleResult/personal/label"
 msgstr "评级点数"
@@ -219,7 +219,7 @@ msgstr "显示玩家在段位系统中的当前进度。依据在模式中的行
 msgid "battleResult/personal/tooltip/loseDescr"
 msgstr ""
 "• 在模式战斗中失败/平局\n"
-"• 违规受到处罚\n"
+"• 受到处罚\n"
 "• 评级不活跃。"
 
 msgid "battleResult/personal/tooltip/loseTitle"
@@ -1877,13 +1877,13 @@ msgid "tournament/viewFull"
 msgstr "查看全部"
 
 msgid "tournament/visitShop/description/ols"
-msgstr "如果所选战队成功夺冠，您将获得独特的\"2026冬季OLS\"奖章。为心仪的战队加油助威！"
+msgstr "购买赛事主题礼包，扩充奖金池，支持天梯传奇联赛！"
 
 msgid "tournament/visitShop/description/wci"
 msgstr "入手专属主题个性化元素与独特坦克，展现您的电竞精神！"
 
 msgid "tournament/visitShop/heading/ols"
-msgstr "预言大师礼包"
+msgstr "扩充奖金池"
 
 msgid "tournament/visitShop/heading/wci"
 msgstr "WCI礼包"

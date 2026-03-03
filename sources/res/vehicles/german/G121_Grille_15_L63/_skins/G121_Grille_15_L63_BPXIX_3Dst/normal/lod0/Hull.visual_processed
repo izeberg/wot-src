@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>nodes_01</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>HP_G121_Attachment_Hull</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.000000 0.000000</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Fire_1</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-0.054583 0.269752 -0.267974</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Fire_2</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.506846 -0.034355 1.718334</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_LFront</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.322137 0.946693</row1>
+					<row2>0.000000 -0.946693 0.322137</row2>
+					<row3>-1.208456 -0.124047 3.110429</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_LRear</identifier>
+				<transform>
+					<row0>-1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.731369 -0.681982</row1>
+					<row2>-0.000000 -0.681982 -0.731369</row2>
+					<row3>-1.208456 -0.159901 -2.810840</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_RFront</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.322137 0.946693</row1>
+					<row2>0.000000 -0.946693 0.322137</row2>
+					<row3>1.208456 -0.124047 3.110429</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_RRear</identifier>
+				<transform>
+					<row0>-1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.731369 -0.681982</row1>
+					<row2>-0.000000 -0.681982 -0.731369</row2>
+					<row3>1.208456 -0.159901 -2.810840</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Track_Exhaus_1</identifier>
+				<transform>
+					<row0>0.000000 0.000000 1.000000</row0>
+					<row1>-0.619029 0.785368 0.000000</row1>
+					<row2>-0.785368 -0.619029 0.000000</row2>
+					<row3>-0.847853 0.086037 -0.280848</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Track_Exhaus_2</identifier>
+				<transform>
+					<row0>0.000000 0.000000 -1.000000</row0>
+					<row1>0.619029 0.785368 0.000000</row1>
+					<row2>0.785368 -0.619029 0.000000</row2>
+					<row3>0.848023 0.086037 -0.280848</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_turretJoint</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.379761 -1.485358</row3>
+				</transform>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_hull_01</identifier>
+					<property>
+						g_maskBias
+						<Float>
+							0.22
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailPowerGloss
+						<Float>
+							0.35
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailPower
+						<Float>5</Float>
+					</property>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<fx>shaders/std_effects/PBS_tank.fx</fx>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/german/G121_Grille_15_L63/_skins/G121_Grille_15_L63_BPXIX_3Dst/Grille_15_L63_BPXIX_3Dst_hull_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/german/G121_Grille_15_L63/_skins/G121_Grille_15_L63_BPXIX_3Dst/Grille_15_L63_BPXIX_3Dst_hull_01_ANM.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/german/G121_Grille_15_L63/_skins/G121_Grille_15_L63_BPXIX_3Dst/Grille_15_L63_BPXIX_3Dst_hull_01_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/german/G121_Grille_15_L63/_skins/G121_Grille_15_L63_BPXIX_3Dst/Grille_15_L63_BPXIX_3Dst_hull_01_AO.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>7.013700 7.013700 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						alphaReference
+						<Int>128</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_defaultDetail
+						<Bool>false</Bool>
+					</property>
+					<property>
+						g_detailParams
+						<matrix>
+							<element>60381184</element>
+							<element>966407216</element>
+							<element>293615616</element>
+							<element>1006632960</element>
+							<element>258567168</element>
+							<element>1013317632</element>
+							<element>192952996</element>
+							<element>1006632960</element>
+							<element>436155392</element>
+							<element>1006632960</element>
+							<element>4261412864</element>
+							<element>0</element>
+							<element>679497728</element>
+							<element>1073757768</element>
+							<element>4261412864</element>
+							<element>0</element>
+						</matrix>
+					</property>
+					<property>
+						g_glossMax
+						<Float>0.652601</Float>
+					</property>
+				</material>
+				<groupOrigin>-0.001033 0.082609 0.122051</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>tank_equipment_02</identifier>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<property>
+						alphaReference
+						<Int>128</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/german/G121_Grille_15_L63/_skins/G121_Grille_15_L63_BPXIX_3Dst/Grille_15_L63_BPXIX_3Dst_equipment_02_AM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/german/G121_Grille_15_L63/_skins/G121_Grille_15_L63_BPXIX_3Dst/Grille_15_L63_BPXIX_3Dst_equipment_02_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/german/G121_Grille_15_L63/_skins/G121_Grille_15_L63_BPXIX_3Dst/Grille_15_L63_BPXIX_3Dst_equipment_02_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.039785 -0.071733 0.350540</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				2
+				<material>
+					<identifier>tank_equipment_01</identifier>
+					<property>
+						diffuseMap
+						<Texture>vehicles/german/G121_Grille_15_L63/_skins/G121_Grille_15_L63_BPXIX_3Dst/Grille_15_L63_BPXIX_3Dst_equipment_01_AM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/german/G121_Grille_15_L63/_skins/G121_Grille_15_L63_BPXIX_3Dst/Grille_15_L63_BPXIX_3Dst_equipment_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/german/G121_Grille_15_L63/_skins/G121_Grille_15_L63_BPXIX_3Dst/Grille_15_L63_BPXIX_3Dst_equipment_01_ANM.dds</Texture>
+					</property>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<fx>shaders/std_effects/PBS_tank.fx</fx>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/german/G121_Grille_15_L63/_skins/G121_Grille_15_L63_BPXIX_3Dst/Grille_15_L63_BPXIX_3Dst_equipment_01_AO.dds</Texture>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>7.013700 7.013700 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						g_defaultDetail
+						<Bool>false</Bool>
+					</property>
+					<property>
+						g_detailParams
+						<matrix>
+							<element>57029632</element>
+							<element>1040200752</element>
+							<element>4261412864</element>
+							<element>0</element>
+							<element>613044224</element>
+							<element>1006632960</element>
+							<element>192954368</element>
+							<element>1006632960</element>
+							<element>411052032</element>
+							<element>1006632960</element>
+							<element>962484224</element>
+							<element>1026752512</element>
+							<element>679505920</element>
+							<element>1006632960</element>
+							<element>578832384</element>
+							<element>1006632960</element>
+						</matrix>
+					</property>
+				</material>
+				<groupOrigin>-0.076999 -0.135453 0.268080</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-1.869333 -0.909155 -3.134619</min>
+		<max>1.789763 0.799942 3.670779</max>
+	</boundingBox>
+	<geometrySize>1878302</geometrySize>
+</root>

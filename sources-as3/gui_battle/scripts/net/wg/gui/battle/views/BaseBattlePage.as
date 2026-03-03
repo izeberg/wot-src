@@ -151,13 +151,12 @@ package net.wg.gui.battle.views
       
       override public function updateStage(param1:Number, param2:Number) : void
       {
-         var _loc3_:int = 0;
          var _loc4_:int = 0;
          var _loc5_:int = 0;
          var _loc6_:Number = NaN;
          var _loc7_:int = 0;
          super.updateStage(param1,param2);
-         _loc3_ = param1 >> 1;
+         var _loc3_:int = param1 >> 1;
          _loc4_ = param2 >> 1;
          _originalWidth = param1;
          _originalHeight = param2;
@@ -202,15 +201,24 @@ package net.wg.gui.battle.views
          this.playerMessageListPositionUpdate();
          this.vehicleMessageList.updateStage();
          this.vehicleMessageListPositionUpdate();
-         this.sixthSense.x = _loc3_;
-         this.sixthSense.y = param2 >> 2;
-         this.unspotted.x = _loc3_;
-         this.unspotted.y = param2 >> 2;
+         if(this.sixthSense)
+         {
+            this.sixthSense.x = _loc3_;
+            this.sixthSense.y = param2 >> 2;
+         }
+         if(this.unspotted)
+         {
+            this.unspotted.x = _loc3_;
+            this.unspotted.y = param2 >> 2;
+         }
          if(this.battleLoading)
          {
             this.battleLoading.updateStage(param1,param2);
          }
-         this.gameMessagesPanel.x = _loc3_;
+         if(this.gameMessagesPanel)
+         {
+            this.gameMessagesPanel.x = _loc3_;
+         }
          if(this.calloutPanel)
          {
             this.calloutPanel.updateStage(param1,param2);
@@ -241,9 +249,12 @@ package net.wg.gui.battle.views
       override protected function initialize() : void
       {
          super.initialize();
-         this.gameMessagesPanel.addEventListener(GameMessagesPanelEvent.MESSAGES_STARTED_PLAYING,this.onMessagesStartedPlayingHandler);
-         this.gameMessagesPanel.addEventListener(GameMessagesPanelEvent.MESSAGES_ENDED_PLAYING,this.onMessagesEndedPlayingHandler);
-         this.gameMessagesPanel.addEventListener(GameMessagesPanelEvent.ALL_MESSAGES_ENDED_PLAYING,this.onAllMessagesEndedPlayingHandler);
+         if(this.gameMessagesPanel)
+         {
+            this.gameMessagesPanel.addEventListener(GameMessagesPanelEvent.MESSAGES_STARTED_PLAYING,this.onMessagesStartedPlayingHandler);
+            this.gameMessagesPanel.addEventListener(GameMessagesPanelEvent.MESSAGES_ENDED_PLAYING,this.onMessagesEndedPlayingHandler);
+            this.gameMessagesPanel.addEventListener(GameMessagesPanelEvent.ALL_MESSAGES_ENDED_PLAYING,this.onAllMessagesEndedPlayingHandler);
+         }
       }
       
       override protected function configUI() : void
@@ -288,9 +299,18 @@ package net.wg.gui.battle.views
          this.registerComponent(this.vehicleMessageList,BATTLE_VIEW_ALIASES.VEHICLE_MESSAGES);
          this.registerComponent(this.vehicleErrorMessageList,BATTLE_VIEW_ALIASES.VEHICLE_ERROR_MESSAGES);
          this.registerComponent(this.playerMessageList,BATTLE_VIEW_ALIASES.PLAYER_MESSAGES);
-         this.registerComponent(this.gameMessagesPanel,BATTLE_VIEW_ALIASES.GAME_MESSAGES_PANEL);
-         this.registerComponent(this.sixthSense,BATTLE_VIEW_ALIASES.SIXTH_SENSE);
-         this.registerComponent(this.unspotted,BATTLE_VIEW_ALIASES.TARGET_DESIGNATOR_UNSPOTTED_MARKER);
+         if(this.sixthSense)
+         {
+            this.registerComponent(this.sixthSense,BATTLE_VIEW_ALIASES.SIXTH_SENSE);
+         }
+         if(this.unspotted)
+         {
+            this.registerComponent(this.unspotted,BATTLE_VIEW_ALIASES.TARGET_DESIGNATOR_UNSPOTTED_MARKER);
+         }
+         if(this.gameMessagesPanel)
+         {
+            this.registerComponent(this.gameMessagesPanel,BATTLE_VIEW_ALIASES.GAME_MESSAGES_PANEL);
+         }
          if(this.calloutPanel)
          {
             this.registerComponent(this.calloutPanel,BATTLE_VIEW_ALIASES.CALLOUT_PANEL);
@@ -345,9 +365,12 @@ package net.wg.gui.battle.views
          {
             this.ribbonsPanel.removeEventListener(Event.CHANGE,this.onRibbonsPanelChangeHandler);
          }
-         this.gameMessagesPanel.removeEventListener(GameMessagesPanelEvent.MESSAGES_STARTED_PLAYING,this.onMessagesStartedPlayingHandler);
-         this.gameMessagesPanel.removeEventListener(GameMessagesPanelEvent.MESSAGES_ENDED_PLAYING,this.onMessagesEndedPlayingHandler);
-         this.gameMessagesPanel.removeEventListener(GameMessagesPanelEvent.ALL_MESSAGES_ENDED_PLAYING,this.onAllMessagesEndedPlayingHandler);
+         if(this.gameMessagesPanel)
+         {
+            this.gameMessagesPanel.removeEventListener(GameMessagesPanelEvent.MESSAGES_STARTED_PLAYING,this.onMessagesStartedPlayingHandler);
+            this.gameMessagesPanel.removeEventListener(GameMessagesPanelEvent.MESSAGES_ENDED_PLAYING,this.onMessagesEndedPlayingHandler);
+            this.gameMessagesPanel.removeEventListener(GameMessagesPanelEvent.ALL_MESSAGES_ENDED_PLAYING,this.onAllMessagesEndedPlayingHandler);
+         }
          this.minimap.removeEventListener(MinimapEvent.TRY_SIZE_CHANGED,this.onMinimapTrySizeChangedHandler);
          this.minimap.removeEventListener(MinimapEvent.SIZE_CHANGED,this.onMinimapSizeChangedHandler);
          this.minimap.removeEventListener(MinimapEvent.VISIBILITY_CHANGED,this.onMinimapSizeChangedHandler);

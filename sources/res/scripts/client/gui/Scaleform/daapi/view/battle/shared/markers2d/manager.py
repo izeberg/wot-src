@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, weakref, BattleReplay, GUI
 from chat_commands_consts import INVALID_MARKER_SUBTYPE, MarkerType, INVALID_MARKER_ID
 from gui import DEPTH_OF_VehicleMarker, GUI_SETTINGS

@@ -1,4 +1,7 @@
-import math, SoundGroups
+from __future__ import absolute_import
+import math
+from past.utils import old_div
+import SoundGroups
 from CurrentVehicle import g_currentVehicle
 from gui.Scaleform.daapi.view.dialogs import IDialogMeta
 from gui.Scaleform.daapi.view.lobby.customization.sound_constants import SOUNDS
@@ -96,7 +99,7 @@ class ConfirmC11nBuyMeta(IDialogMeta):
         result = 0
         modulePrice = self.getActualPrices(item)
         if modulePrice.get(currency, 0) > 0:
-            result = math.floor(balance.get(currency, 0) / modulePrice.get(currency))
+            result = math.floor(old_div(balance.get(currency, 0), modulePrice.get(currency)))
         if item.isLimited:
             result = min(result, item.buyCount)
         if item.isProgressionAutoBound and self.vehicle is not None:

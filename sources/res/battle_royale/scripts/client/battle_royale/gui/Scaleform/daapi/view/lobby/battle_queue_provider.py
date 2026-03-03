@@ -1,9 +1,10 @@
-from battle_royale.gui.constants import BattleRoyaleSubMode
 import constants
+from battle_royale.gui.constants import BattleRoyaleSubMode
+from gui.Scaleform.daapi.view.lobby.battle_queue.battle_queue import RandomQueueProvider
 from gui.impl import backport
 from gui.impl.gen import R
-from gui.Scaleform.daapi.view.lobby.battle_queue.battle_queue import RandomQueueProvider
 from gui.impl.gen.view_models.views.battle_royale.battle_results.player_battle_type_status_model import BattleType
+from gui.prb_control import prb_getters
 from helpers import dependency
 from skeletons.gui.game_control import IBattleRoyaleController
 _SUBMODE_ID_TO_BATTLE_TYPE = {BattleRoyaleSubMode.SOLO_MODE_ID: BattleType.SOLO, 
@@ -25,9 +26,21 @@ class BattleRoyaleQueueProvider(RandomQueueProvider):
         self._proxy.as_setDPS(modesData)
 
     def getLayoutStr(self):
+        if self.__battleRoyaleController.isStPatrick():
+            return 'stPatrick'
         return 'battleRoyale'
+
+    def getIconPath(self, iconlabel):
+        if self.__battleRoyaleController.isStPatrick():
+            iconPath = R.images.battle_royale.gui.maps.st_patrick.icons.battleTypes.c_136x136.battle_royale()
+        else:
+            iconPath = R.images.gui.maps.icons.battleTypes.c_136x136.battle_royale()
+        return backport.image(iconPath)
 
     def getAdditionalParams(self):
         battleType = _SUBMODE_ID_TO_BATTLE_TYPE[self.__battleRoyaleController.getCurrentSubModeID()].value
         iconPath = backport.image(R.images.battle_royale.gui.maps.icons.battleQueue.battleType.dyn(battleType)())
-        return {'battleTypeIconPath': iconPath}
+        guiType = prb_getters.getArenaGUIType(queueType=self._queueType)
+        titleRes = R.strings.menu.loading.battleTypes.subTitle.num(guiType)
+        return {'battleTypeIconPath': iconPath, 
+           'subTitle': backport.text(titleRes()) if titleRes.exists() else ''}

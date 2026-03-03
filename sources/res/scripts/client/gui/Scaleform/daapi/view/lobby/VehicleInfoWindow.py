@@ -1,10 +1,11 @@
+from __future__ import absolute_import
 import typing
+from future.utils import lzip
 from debug_utils import LOG_ERROR
 from gui.impl import backport
 from gui.impl.gen import R
 from gui.Scaleform import MENU
 from gui.Scaleform.daapi.view.meta.VehicleInfoMeta import VehicleInfoMeta
-from gui.Scaleform.locale.VEH_COMPARE import VEH_COMPARE
 from gui.shared.formatters import getRoleTextWithLabel
 from gui.shared.items_parameters import formatters
 from gui.shared.utils import AUTO_RELOAD_PROP_NAME, TURBOSHAFT_ENGINE_POWER, TURBOSHAFT_SPEED_MODE_SPEED, TURBOSHAFT_SWITCH_TIME, TURBOSHAFT_INVISIBILITY_MOVING_FACTOR, TURBOSHAFT_INVISIBILITY_STILL_FACTOR, ROCKET_ACCELERATION_ENGINE_POWER, ROCKET_ACCELERATION_SPEED_LIMITS, ROCKET_ACCELERATION_REUSE_AND_DURATION, DUAL_ACCURACY_COOLING_DELAY, SHOT_DISPERSION_ANGLE, AVG_DAMAGE_PER_SECOND, CONTINUOUS_SHOTS_PER_MINUTE, TWIN_GUN_SWITCH_FIRE_MODE_TIME, TWIN_GUN_TOP_SPEED, RELOAD_TIME_SECS_PROP_NAME, TWIN_GUN_RELOAD_TIME
@@ -32,10 +33,12 @@ class _Highlight(object):
         self.__checker = checker
         return
 
-    def __nonzero__(self):
+    def __bool__(self):
         if self.__highlight is None:
             self.__highlight = self.__checker()
         return self.__highlight
+
+    __nonzero__ = __bool__
 
 
 def _highlightsMap(settings, vehicle=None):
@@ -66,8 +69,8 @@ def _highlightsMap(settings, vehicle=None):
       (
        TWIN_GUN_SWITCH_FIRE_MODE_TIME, TWIN_GUN_TOP_SPEED, RELOAD_TIME_SECS_PROP_NAME),
       _Highlight(lambda : vehicle.descriptor.isTwinGunVehicle and settings.checkTwinGunHighlights(increase=True))))
-    mapping = [ zip(params, [highlight] * len(params)) for params, highlight in config ]
-    return dict([ item for sub in mapping for item in sub ])
+    mapping = (lzip(params, [highlight] * len(params)) for params, highlight in config)
+    return {k:v for sub in mapping for k, v in sub}
 
 
 class VehicleInfoWindow(VehicleInfoMeta):
@@ -99,7 +102,7 @@ class VehicleInfoWindow(VehicleInfoMeta):
             return
         else:
             params = vehicle.getParams()
-            tankmenParams = list()
+            tankmenParams = []
             for slotIdx, tankman in vehicle.crew:
                 role = vehicle.descriptor.type.crewRoles[slotIdx][0]
                 tankmanLabel = ''
@@ -133,7 +136,7 @@ class VehicleInfoWindow(VehicleInfoMeta):
 
     def changeNation(self):
         vehicle = self._itemsCache.items.getItemByCD(self.__vehicleCompactDescr)
-        vehCD = vehicle.intCD if vehicle.activeInNationGroup else iterVehTypeCDsInNationGroup(vehicle.intCD).next()
+        vehCD = vehicle.intCD if vehicle.activeInNationGroup else next(iterVehTypeCDsInNationGroup(vehicle.intCD))
         ItemsActionsFactory.doAction(ItemsActionsFactory.CHANGE_NATION, vehCD)
         self.destroy()
 
@@ -166,9 +169,7 @@ class VehicleInfoWindow(VehicleInfoMeta):
         return result
 
     def __updateCompareButtonState(self):
-        if not self._comparisonBasket.isAvailable():
-            tooltip = VEH_COMPARE.COMPAREVEHICLEBTN_TOOLTIPS_MINICLIENT
-        elif self._comparisonBasket.isFull():
+        if self._comparisonBasket.isAvailable() and self._comparisonBasket.isFull():
             tooltip = MENU.VEHICLEINFO_COMPAREBTN_TOOLTIP
         else:
             tooltip = ''

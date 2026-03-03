@@ -1,6 +1,8 @@
 from __future__ import absolute_import
 from fun_random.gui.battle_control import registerFunRandomBattle
+from fun_random.gui.feature import registerFunRandomFeature
 from fun_random.gui.game_control import registerFunRandomAwardControllers
+from fun_random.gui.impl import registerFunRandomImpl
 from fun_random.gui.prb_control import registerFunRandomOthersPrbParams
 from fun_random.gui.Scaleform import registerFunRandomScaleform
 from fun_random.gui.server_events import registerFunRandomQuests
@@ -9,10 +11,10 @@ from fun_random.gui import fun_gui_constants
 from fun_random_common import injectConsts, injectSquadConsts
 from fun_random_common.fun_battle_mode import FunRandomBattleMode
 from gui.override_scaleform_views_manager import g_overrideScaleFormViewsConfig
+from chat_shared import SYS_MESSAGE_TYPE as _SM_TYPE
 from gui.prb_control.prb_utils import initGuiTypes, initRequestType
 from gui.Scaleform.daapi.settings.views import VIEW_ALIAS
 from gui.Scaleform.genConsts.FUNRANDOM_ALIASES import FUNRANDOM_ALIASES
-from fun_random.gui.feature.sub_modes import registerFunRandomSubModes
 _LOBBY_EXT_PACKAGES = [
  'fun_random.gui.impl.lobby.feature',
  'fun_random.gui.impl.lobby.hangar',
@@ -136,6 +138,11 @@ class ClientFunRandomBattleMode(FunRandomBattleMode):
          SelectFunRandomMode, ShowFunRandomProgression)
 
     @property
+    def _client_messengerServerFormatters(self):
+        from fun_random.messenger.formatters.battle_results_formatters import FunBattleResultsFormatter
+        return {_SM_TYPE.funRandomBattleResults.index(): FunBattleResultsFormatter()}
+
+    @property
     def _client_messengerClientFormatters(self):
         from fun_random.messenger.formatters.service_channel import FunRandomNotificationsFormatter
         from fun_random.messenger.formatters.token_quest_subformatters import FunProgressionRewardsSyncFormatter
@@ -164,10 +171,9 @@ class ClientFunRandomBattleMode(FunRandomBattleMode):
         return FunRandomHangarDynamicGuiProvider
 
     @property
-    def _client_messengerServerFormatters(self):
-        from fun_random.messenger.formatters.battle_results_formatter import FunBattleResultsFormatter
-        from chat_shared import SYS_MESSAGE_TYPE
-        return {SYS_MESSAGE_TYPE.funRandomBattleResults.index(): FunBattleResultsFormatter()}
+    def _client_modeHiddenVehiclesCriteria(self):
+        from fun_random.gui.shared.gui_items.vehicle import ONLY_FUN_RANDOM_VEHICLE_CRITERIA
+        return ONLY_FUN_RANDOM_VEHICLE_CRITERIA
 
 
 def preInit():
@@ -183,10 +189,12 @@ def preInit():
     battleMode.registerClientHangarPresets()
     battleMode.registerHangarEventBanner()
     battleMode.registerBannerEntryPointValidatorMethod()
-    battleMode.registerSystemMessagesTypes()
     battleMode.registerBannerEntryPointLUIRule()
     battleMode.registerProviderBattleQueue()
     battleMode.registerBattleResultsConfig()
+    battleMode.registerSystemMessagesTypes()
+    battleMode.registerBattleResultSysMsgType()
+    battleMode.registerMessengerServerFormatters()
     battleMode.registerSquadTypes()
     battleMode.registerClientPlatoon()
     battleMode.registerClientSquadSelector()
@@ -194,18 +202,18 @@ def preInit():
     battleMode.registerGameControllers()
     battleMode.registerBattleControllersRepository()
     battleMode.registerClientNotificationHandlers()
+    battleMode.registerClientVehicleTags(fun_gui_constants)
     battleMode.registerMessengerClientFormatters(fun_gui_constants)
     battleMode.registerClientTokenQuestsSubFormatters()
     battleMode.registerClientLootBoxAutoOpenSubFormatters()
     battleMode.registerVehicleViewStates()
-    battleMode.registerMessengerServerFormatters()
-    battleMode.registerBattleResultSysMsgType()
     registerFunRandomOthersPrbParams()
     registerFunRandomAwardControllers()
     registerFunRandomScaleform()
+    registerFunRandomImpl()
     registerFunRandomBattle()
     registerFunRandomQuests()
-    registerFunRandomSubModes()
+    registerFunRandomFeature()
 
 
 def init():

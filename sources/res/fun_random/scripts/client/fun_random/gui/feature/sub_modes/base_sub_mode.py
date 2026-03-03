@@ -2,8 +2,8 @@ from __future__ import absolute_import
 import typing
 from battle_modifiers.gui.feature.modifiers_data_provider import ModifiersDataProvider
 from Event import Event, EventManager
-from fun_random.gui.fun_account_settings import setSubModeDefaultSettings
 from fun_random_common.fun_constants import BATTLE_MODE_VEH_TAGS_EXCEPT_FUN
+from fun_random.gui.feature.configs.providers.fun_sub_mode_configuration import FunSubModeConfigurationProvider
 from fun_random.gui.feature.fun_constants import FunTimersShifts
 from fun_random.gui.feature.models.common import FunRandomSeason, FunPeriodInfo
 from fun_random.gui.feature.sub_systems.fun_performance_alert_info import PerformanceAlertInfo
@@ -11,7 +11,6 @@ from fun_random.gui.shared.events import FunEventType
 from fun_random.helpers.server_settings import FunSubModeConfig
 from gui.game_control.season_provider import SeasonProvider
 from gui.impl.gen import R
-from gui.prb_control.entities.base import vehicleAmmoCheck
 from gui.prb_control.items import ValidationResult
 from gui.prb_control.settings import PRE_QUEUE_RESTRICTION, UNIT_RESTRICTION
 from gui.shared.gui_items.Vehicle import Vehicle
@@ -23,10 +22,11 @@ from season_common import CycleStatus
 from skeletons.gui.game_control import ISeasonProvider
 from skeletons.gui.shared import IItemsCache
 if typing.TYPE_CHECKING:
-    from gui.shared.utils.requesters import RequestCriteria
     from fun_random.gui.vehicle_view_states import FunRandomVehicleViewState
+    from fun_random.gui.feature.configs.sub_modes.sub_mode import FunSubModeCompositeConfigurationModel
     from fun_random.gui.feature.sub_systems.fun_performance_analyzers import PerformanceGroup
     from fun_random.helpers.server_settings import FunSubModeSeasonalityConfig
+    from gui.shared.utils.requesters import RequestCriteria
 
 class IFunSubMode(ISeasonProvider, Notifiable):
     onSubModeEvent = None
@@ -64,6 +64,9 @@ class IFunSubMode(ISeasonProvider, Notifiable):
     def getCarouselBaseCriteria(self):
         raise NotImplementedError
 
+    def getConfigurationModel(self):
+        raise NotImplementedError
+
     def getLocalsResRoot(self):
         raise NotImplementedError
 
@@ -74,9 +77,6 @@ class IFunSubMode(ISeasonProvider, Notifiable):
         raise NotImplementedError
 
     def getPerformanceAlertGroup(self):
-        raise NotImplementedError
-
-    def getEfficiencyParameters(self):
         raise NotImplementedError
 
     def getPriority(self):
@@ -100,12 +100,10 @@ class IFunSubMode(ISeasonProvider, Notifiable):
     def updateSettings(self, subModeSettings):
         raise NotImplementedError
 
-    def canEnqueueVehicle(self, callback=None):
-        raise NotImplementedError
-
 
 class FunBaseSubMode(IFunSubMode, SeasonProvider):
     __slots__ = ('_em', '_settings', '_modifiersDataProvider', '_performanceAlertInfo')
+    _CONFIGURATION_PATH = 'fun_random/gui/configs/gamemodes/fun_sub_modes/fun_sub_mode_regular.xml'
     _PERIOD_INFO_CLASS = FunPeriodInfo
     __itemsCache = dependency.descriptor(IItemsCache)
 
@@ -114,6 +112,7 @@ class FunBaseSubMode(IFunSubMode, SeasonProvider):
         self._em = EventManager()
         self.onSubModeEvent = Event(self._em)
         self._settings = subModeSettings
+        self._configurationProvider = self.__createConfigurationProvider()
         self._modifiersDataProvider = ModifiersDataProvider(subModeSettings.client.battleModifiersDescr)
         self._performanceAlertInfo = PerformanceAlertInfo(subModeSettings.client.performanceAnalyzerType)
         self.addNotificator(SimpleNotifier(self.getTimer, self._subModeStatusUpdate))
@@ -121,11 +120,11 @@ class FunBaseSubMode(IFunSubMode, SeasonProvider):
 
     def init(self):
         self.startNotification()
-        self._addSubModeDefaultAccountSettings()
 
     def destroy(self):
         self.clearNotification()
         self._settings = FunSubModeConfig(eventID=self.getSubModeID())
+        self._configurationProvider = self.__createConfigurationProvider()
         self._modifiersDataProvider = ModifiersDataProvider()
         self._performanceAlertInfo = PerformanceAlertInfo()
         self._em.clear()
@@ -140,7 +139,7 @@ class FunBaseSubMode(IFunSubMode, SeasonProvider):
         return self._settings.isEnabled
 
     def isEntryPointAvailable(self):
-        return True
+        return self.hasSuitableVehicles() or self.isSuitableVehicleAvailable()
 
     def isLastActiveCycleEnded(self):
         now = time_utils.getCurrentLocalServerTimestamp()
@@ -188,6 +187,9 @@ class FunBaseSubMode(IFunSubMode, SeasonProvider):
     def getCarouselBaseCriteria(self):
         return
 
+    def getConfigurationModel(self):
+        return self._configurationProvider.getConfigurationModel()
+
     def getEventEndTimestamp(self):
         actualSeason = self.getCurrentSeason()
         if actualSeason is not None:
@@ -211,9 +213,6 @@ class FunBaseSubMode(IFunSubMode, SeasonProvider):
 
     def getPerformanceAlertGroup(self):
         return self._performanceAlertInfo.performanceGroup
-
-    def getEfficiencyParameters(self):
-        return self._settings.client.postbattle.get('postbattleEfficiency', {})
 
     def getPriority(self):
         return self._settings.client.priority
@@ -246,15 +245,12 @@ class FunBaseSubMode(IFunSubMode, SeasonProvider):
             return False
         return self._updateSettings(subModeSettings)
 
-    @vehicleAmmoCheck
-    def canEnqueueVehicle(self, callback=None):
-        pass
-
     def _createSeason(self, cycleInfo, seasonData):
         return FunRandomSeason(cycleInfo, seasonData, self._settings.client.assetsPointer)
 
     def _updateSettings(self, subModeSettings):
         self._settings = subModeSettings
+        self._configurationProvider = self.__createConfigurationProvider()
         self._modifiersDataProvider = ModifiersDataProvider(subModeSettings.client.battleModifiersDescr)
         self._performanceAlertInfo = PerformanceAlertInfo(subModeSettings.client.performanceAnalyzerType)
         return True
@@ -264,10 +260,6 @@ class FunBaseSubMode(IFunSubMode, SeasonProvider):
 
     def _subModeStatusUpdate(self):
         self.onSubModeEvent(FunEventType.SUB_STATUS_UPDATE, self.getSubModeID())
-
-    def _addSubModeDefaultAccountSettings(self):
-        settingsKey = self.getSettings().client.settingsKey
-        setSubModeDefaultSettings(settingsKey)
 
     def __getAllowedVehiclesCriteria(self, settings):
         criteria = REQ_CRITERIA.VEHICLE.LEVELS(settings.levels)
@@ -282,3 +274,6 @@ class FunBaseSubMode(IFunSubMode, SeasonProvider):
         criteria |= ~REQ_CRITERIA.VEHICLE.SPECIFIC_BY_CD(settings.forbiddenVehTypes)
         criteria |= ~REQ_CRITERIA.VEHICLE.HAS_ANY_TAG(BATTLE_MODE_VEH_TAGS_EXCEPT_FUN)
         return criteria
+
+    def __createConfigurationProvider(self):
+        return FunSubModeConfigurationProvider(self._CONFIGURATION_PATH, self)

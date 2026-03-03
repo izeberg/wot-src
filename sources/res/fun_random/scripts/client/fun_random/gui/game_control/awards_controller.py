@@ -20,14 +20,14 @@ class FunProgressionQuestsHandler(ServiceChannelHandler, FunProgressionWatcher):
     _CLIENT_MSG_TYPE = SCH_CLIENT_MSG_TYPE.FUN_RANDOM_PROGRESSION
 
     def __init__(self, awardCtrl):
-        super(FunProgressionQuestsHandler, self).__init__(SYS_MESSAGE_TYPE.funRandomBattleResults.index(), awardCtrl)
+        super(FunProgressionQuestsHandler, self).__init__(SYS_MESSAGE_TYPE.battleResults.index(), awardCtrl)
 
     def _showAward(self, ctx):
         self.__systemMessages.proto.serviceChannel.pushClientMessage(_getMessage(ctx), self._CLIENT_MSG_TYPE)
 
     def _needToShowAward(self, ctx):
         if super(FunProgressionQuestsHandler, self)._needToShowAward(ctx):
-            return bool([ qID for qID in _getMessage(ctx).data.get('completedQuestIDs', set()) if self._funRandomCtrl.progressions.isProgressionExecutor(qID) ])
+            return any(self._funRandomCtrl.progressions.isProgressionExecutor(qID) for qID in _getMessage(ctx).data.get('completedQuestIDs', set()))
         return False
 
 

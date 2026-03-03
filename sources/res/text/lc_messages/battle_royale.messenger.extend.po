@@ -1,0 +1,38 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-01 10:00+0300\n"
+"PO-Revision-Date: 2010-06-07 10:57+0200\n"
+"Last-Translator: WoT Translator <<noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "platformCurrencyMsg/debited/brcoin"
+msgstr "已移除钢铁印章"
+
+msgid "platformCurrencyMsg/debited/stpcoin"
+msgstr "已移除幸运印章"
+
+msgid "platformCurrencyMsg/received/brcoin"
+msgstr "已添加钢铁印章"
+
+msgid "platformCurrencyMsg/received/stpcoin"
+msgstr "已获得幸运印章"
+
+msgid "progression/received/stpcoin"
+msgstr "已获得幸运印章: %(value)s"
+
+msgid "serviceChannelMessages/BRbattleResults/BRProgressionTitle"
+msgstr "获得进度点数: %(value)s"
+
+msgid "serviceChannelMessages/BRbattleResults/battlePass"
+msgstr "已获得战斗通行证点数: %(pointsDiff)s"
+
+msgid "serviceChannelMessages/BRbattleResults/battleRoyaleBrCoin"
+msgstr "已获得钢铁印章: %(value)s"
+
+msgid "serviceChannelMessages/BRbattleResults/battleRoyaleStpCoin"
+msgstr "已获得幸运印章: %(value)s"

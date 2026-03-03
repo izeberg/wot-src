@@ -5,8 +5,8 @@ from enum import Enum
 from future.utils import itervalues, iteritems
 from typing import NamedTuple, Union
 from CurrentVehicle import g_currentVehicle
+from PlayerEvents import g_playerEvents
 from cgf_components.marker_component import IGuiLoader
-from constants import RENEWABLE_SUBSCRIPTION_CONFIG
 from gui.Scaleform.genConsts.TOOLTIPS_CONSTANTS import TOOLTIPS_CONSTANTS
 from gui import SystemMessages
 from gui.ClientUpdateManager import g_clientUpdateManager
@@ -42,6 +42,7 @@ from items.special_crew import CustomSkills
 from items.tankmen import MAX_SKILL_LEVEL, getLessMasteredIDX
 from nations import AVAILABLE_NAMES
 from renewable_subscription_common.passive_xp import isTagsSetOk
+from renewable_subscription_common.schema import renewableSubscriptionsConfigSchema
 from skeletons.gui.app_loader import IAppLoader
 from skeletons.gui.game_control import IWotPlusController
 from skeletons.gui.lobby_context import ILobbyContext
@@ -178,14 +179,12 @@ class CrewPresenter(ViewComponent[CrewModel]):
           'idleCrewXP', self.__idleCrewXPUpdated),)
 
     def __idleCrewXPUpdated(self, diff):
-        self._updateIntensiveTraining()
+        self.__updateIntensiveTraining()
 
     def _getEvents(self):
         return (
          (
           g_currentVehicle.onChanged, self.__onVehicleChanged),
-         (
-          self.__lobbyContext.getServerSettings().onServerSettingsChange, self.__onServerSettingsChange),
          (
           self.__wotPlusCtrl.onEnabledStatusChanged, self.__onWotPlusStatusChanged),
          (
@@ -199,7 +198,9 @@ class CrewPresenter(ViewComponent[CrewModel]):
          (
           self.viewModel.onToggleAcceleratedTraining, self.__onToggleAcceleratedTraining),
          (
-          self.viewModel.onToggleIntensiveTraining, self.__onToggleIntensiveTraining))
+          self.viewModel.onToggleIntensiveTraining, self.__onToggleIntensiveTraining),
+         (
+          g_playerEvents.onConfigModelUpdated, self._onConfigModelUpdated))
 
     @wg_async
     def __onToggleIntensiveTraining(self):
@@ -220,7 +221,7 @@ class CrewPresenter(ViewComponent[CrewModel]):
             layoutID = R.views.dialogs.DefaultDialog()
             if uiLoader.windowsManager.getViewByLayoutID(layoutID) is None:
                 yield wg_await(showIdleCrewBonusDialog(dialogMessage, toggleCallback))
-            self._updateIntensiveTraining()
+            self.__updateIntensiveTraining()
         return
 
     def __buildConfirmationMessage(self):
@@ -241,7 +242,7 @@ class CrewPresenter(ViewComponent[CrewModel]):
         return message
 
     def __onWotPlusStatusChanged(self, _):
-        self._updateIntensiveTraining()
+        self.__updateIntensiveTraining()
 
     @wg_async
     def __onToggleAcceleratedTraining(self):
@@ -268,9 +269,10 @@ class CrewPresenter(ViewComponent[CrewModel]):
             SystemMessages.pushI18nMessage(result.userMsg, type=result.sysMsgType)
 
     def __getIdleCrewState(self):
-        if not self.__lobbyContext.getServerSettings().isRenewableSubPassiveCrewXPEnabled():
+        settingsStorage = self.__wotPlusCtrl.getSettingsStorage()
+        if not settingsStorage.isPassiveCrewXPEnabled():
             return IdleCrewBonus.INVISIBLE
-        if not self.__wotPlusCtrl.isEnabled():
+        if not settingsStorage.isPassiveCrewXPAvailable():
             return IdleCrewBonus.DISABLED
         if not isTagsSetOk(g_currentVehicle.item.tags):
             return IdleCrewBonus.INCOMPATIBLE_WITH_CURRENT_VEHICLE
@@ -298,9 +300,9 @@ class CrewPresenter(ViewComponent[CrewModel]):
     def __onOpenBarracks(self, ctx):
         showBarracks()
 
-    def __onServerSettingsChange(self, diff):
-        if RENEWABLE_SUBSCRIPTION_CONFIG in diff:
-            self._updateIntensiveTraining()
+    def _onConfigModelUpdated(self, gpKey):
+        if renewableSubscriptionsConfigSchema.gpKey == gpKey:
+            self.__updateIntensiveTraining()
 
     def __onVehicleChanged(self):
         self.__updateModel()
@@ -319,8 +321,8 @@ class CrewPresenter(ViewComponent[CrewModel]):
             self.viewModel.setIntensiveTraining(CrewModel.DISABLED_TRAINING_STATE)
         else:
             self.__updateCrewModel()
-            self._updateAcceleratedTraining()
-            self._updateIntensiveTraining()
+            self.__updateAcceleratedTraining()
+            self.__updateIntensiveTraining()
         return
 
     def __findLessMasteredTman(self):
@@ -551,7 +553,7 @@ class CrewPresenter(ViewComponent[CrewModel]):
             return PerkModel.LEARNED_STATE
         return PerkModel.LEARNING_STATE
 
-    def _updateAcceleratedTraining(self):
+    def __updateAcceleratedTraining(self):
         isXPToTman = g_currentVehicle.item.isXPToTman if g_currentVehicle.item else False
         acceleratedTrainingState = CrewModel.DISABLED_TRAINING_STATE
         if isXPToTman:
@@ -560,12 +562,12 @@ class CrewPresenter(ViewComponent[CrewModel]):
             acceleratedTrainingState = CrewModel.OFF_TRAINING_STATE
         self.viewModel.setAcceleratedTraining(acceleratedTrainingState)
 
-    def _updateIntensiveTraining(self):
+    def __updateIntensiveTraining(self):
         with self.viewModel.transaction() as (vm):
             wotPlusState = CrewModel.DISABLED_TRAINING_STATE
             vehicle = g_currentVehicle.item
-            if vehicle and self.__lobbyContext.getServerSettings().isRenewableSubPassiveCrewXPEnabled():
-                if not self.__wotPlusCtrl.isEnabled() or not isTagsSetOk(vehicle.tags):
+            if vehicle and self.__wotPlusCtrl.getSettingsStorage().isPassiveCrewXPEnabled():
+                if not self.__wotPlusCtrl.getSettingsStorage().isPassiveCrewXPAvailable() or not isTagsSetOk(vehicle.tags):
                     wotPlusState = CrewModel.DISABLED_TRAINING_STATE
                 elif self.__wotPlusCtrl.hasVehicleCrewIdleXP(vehicle.invID):
                     wotPlusState = CrewModel.ON_TRAINING_STATE

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BattleReplay
 from account_helpers.settings_core import settings_constants
 from account_helpers.settings_core.options import BattleLoadingTipSetting

@@ -331,6 +331,8 @@ BATTLE_RESULTS = [
  (
   'isWoTPlus', bool, False, None, 'any', ENTRY_TYPE.VEHICLE_SELF),
  (
+  'wotPlusTier', int, 0, None, 'any', ENTRY_TYPE.VEHICLE_SELF),
+ (
   'wotPlusCredits', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_SELF),
  (
   'wotPlusCreditsFactor100', int, 0, None, 'skip', ENTRY_TYPE.VEHICLE_SELF),
@@ -346,6 +348,22 @@ BATTLE_RESULTS = [
   'wotPlusFreeXP', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_SELF),
  (
   'wotPlusFreeXPFactor100', int, 0, None, 'skip', ENTRY_TYPE.VEHICLE_SELF),
+ (
+  'wotPlusProBoostCredits', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_SELF),
+ (
+  'wotPlusProBoostCreditsFactor100', int, 0, None, 'skip', ENTRY_TYPE.VEHICLE_SELF),
+ (
+  'wotPlusProBoostXP', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_SELF),
+ (
+  'wotPlusProBoostXPFactor100', int, 0, None, 'skip', ENTRY_TYPE.VEHICLE_SELF),
+ (
+  'wotPlusProBoostCrewXP', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_SELF),
+ (
+  'wotPlusProBoostCrewXPFactor100', int, 0, None, 'skip', ENTRY_TYPE.VEHICLE_SELF),
+ (
+  'wotPlusProBoostFreeXP', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_SELF),
+ (
+  'wotPlusProBoostFreeXPFactor100', int, 0, None, 'skip', ENTRY_TYPE.VEHICLE_SELF),
  (
   'referral20XP', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_SELF),
  (

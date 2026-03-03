@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui import GUI_SETTINGS
 from gui.Scaleform.framework.entities.abstract.ImageManagerMeta import ImageManagerMeta
 

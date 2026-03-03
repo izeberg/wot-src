@@ -61,6 +61,9 @@ msgstr "A-220B/78"
 msgid "A_220B_79"
 msgstr "A-220B/79"
 
+msgid "A_220R"
+msgstr "A 220R"
+
 msgid "A_220_70"
 msgstr "A-220-70"
 
@@ -878,7 +881,7 @@ msgstr ""
 
 msgid "Ch61_DZT_159_CFE_A_long_special"
 msgstr ""
-"龙魂具有可靠的正面装甲，并且延续C系一贯的设计理念——尽可能为坦克配备较大口径的火炮。坦克还额外配备了试验型火箭助推器，这使它成为了一辆独特且极具威慑力的突击型坦克，能够轻松适应任何战场环境。"
+"龙魂是一辆具有可靠正面装甲的中型坦克，并且延续C系一贯的设计理念——尽可能为坦克配备较大口径的火炮。坦克还额外配备了试验型火箭助推器，这使它成为了一辆独特且极具威慑力的突击型坦克，能够轻松适应任何战场环境。"
 
 msgid "Ch61_DZT_159_CFE_A_short"
 msgstr "龙魂"
@@ -950,6 +953,24 @@ msgstr "第一勇士"
 
 msgid "Ch65_Type59_IC4_3DSt_short_special"
 msgstr "不错的正面装甲，分房保护"
+
+msgid "Ch66_121_2_Ziqiang"
+msgstr "自强"
+
+msgid "Ch66_121_2_Ziqiang_desc"
+msgstr ""
+"南北冲突结束后，C系获得了M系的M46 "
+"\"巴顿\"和Y系的百夫长坦克。与此同时，C系工程师奉命研发一辆性能超越西方同类竞争对手的坦克。到20世纪50年代末，已有数个方案准备就绪，其中之一被命名为\"自强\"。它广泛融合了S系和M系的坦克制造创新技术。在审阅这些方案后，军方决定转而研发量产型59式，并将\"自强\"重新定位为出口型，为其配备同盟标准化火炮。然而，由于没有任何订单，该坦克未建造原型车。"
+
+msgid "Ch66_121_2_Ziqiang_long_special"
+msgstr ""
+"\"自强\"是一辆C系IX级突击中型坦克。它配备一门两连发弹夹炮，但两发炮弹都装在一个短弹夹中。开火时，坦克会以较短的间隔接连射击两发炮弹。除了独特的火炮，该坦克还拥有可靠的装甲、高射速和良好的火炮手感。"
+
+msgid "Ch66_121_2_Ziqiang_short"
+msgstr "自强"
+
+msgid "Ch66_121_2_Ziqiang_short_special"
+msgstr "可靠的装甲，配备短弹夹的弹夹炮"
 
 msgid "Ch67_BZ_79"
 msgstr "BZ-79"
@@ -1283,6 +1304,9 @@ msgstr "骁勇"
 msgid "Chassis_Ch65_Type59_IC4_3DSt"
 msgstr "IC4"
 
+msgid "Chassis_Ch66_121_2_Ziqiang"
+msgstr "自强"
+
 msgid "Chassis_Ch67_BZ_79"
 msgstr "BZ-79"
 
@@ -1574,6 +1598,9 @@ msgstr "骁勇"
 
 msgid "Turret_1_Ch65_Type59_IC4_3DSt"
 msgstr "IC4"
+
+msgid "Turret_1_Ch66_121_2_Ziqiang"
+msgstr "自强"
 
 msgid "Turret_1_Ch67_BZ_79"
 msgstr "BZ-79"
@@ -2004,6 +2031,9 @@ msgstr "12150L3G2"
 
 msgid "_12150L3_131"
 msgstr "12150L3 (131)"
+
+msgid "_12150L3_II"
+msgstr "12150L3 II"
 
 msgid "_12150L4"
 msgstr "12150L4"
@@ -2821,6 +2851,18 @@ msgstr "76mm ZiS-3炮"
 
 msgid "_789T"
 msgstr "789T"
+
+msgid "_84_mm_Type_79"
+msgstr "84mm 79式炮"
+
+msgid "_84mm_Chuan_bei_79"
+msgstr "穿被-79"
+
+msgid "_84mm_Po_79"
+msgstr "破-79"
+
+msgid "_84mm_Sha_bao_79"
+msgstr "高爆-79"
 
 msgid "_85mm_367"
 msgstr "穿超-367"

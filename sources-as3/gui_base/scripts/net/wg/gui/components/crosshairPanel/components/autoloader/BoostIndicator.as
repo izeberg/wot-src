@@ -56,7 +56,8 @@ package net.wg.gui.components.crosshairPanel.components.autoloader
       public function autoloaderBoostUpdate(param1:BoostIndicatorStateParamsVO, param2:Number, param3:Boolean = false) : void
       {
          var _loc4_:Number = NaN;
-         var _loc5_:Number = NaN;
+         var _loc5_:int = 0;
+         var _loc6_:Number = NaN;
          if(!param3 && param1.currentState != AUTOLOADERBOOSTVIEWSTATES.RECHARGE && this._currentState == param1.currentState)
          {
             return;
@@ -76,7 +77,7 @@ package net.wg.gui.components.crosshairPanel.components.autoloader
             this.right.hide();
             this.right.showFadeIn(_loc4_);
          }
-         else if(param1.currentState == AUTOLOADERBOOSTVIEWSTATES.INVISIBLE && !this._isFadingOut)
+         else if(!this._isFadingOut && param1.currentState == AUTOLOADERBOOSTVIEWSTATES.INVISIBLE)
          {
             this._currentState = AUTOLOADERBOOSTVIEWSTATES.INVISIBLE;
             this._isRecharging = false;
@@ -97,53 +98,57 @@ package net.wg.gui.components.crosshairPanel.components.autoloader
                this.autoloaderBoostUpdateAsPercent(param1.currentState,param1.percent);
             }
          }
-         else if(this._rechargeEnabled && param1.currentState == AUTOLOADERBOOSTVIEWSTATES.CHARGED)
+         else
          {
-            this._currentState = AUTOLOADERBOOSTVIEWSTATES.CHARGED;
-            this._isRecharging = false;
-            this._isFadingOut = false;
-            if(param1.isCharging)
+            _loc5_ = param1.currentFrame;
+            if(this._rechargeEnabled && param1.currentState == AUTOLOADERBOOSTVIEWSTATES.CHARGED)
             {
-               this.left.showCharged(param1.currentFrame);
-               this.right.showCharged(param1.currentFrame);
+               this._currentState = AUTOLOADERBOOSTVIEWSTATES.CHARGED;
+               this._isRecharging = false;
+               this._isFadingOut = false;
+               if(param1.isCharging)
+               {
+                  this.left.showCharged(_loc5_);
+                  this.right.showCharged(_loc5_);
+               }
+               else if(_loc5_ > this.left.currentFrame && _loc5_ >= BoostIndicatorElement.CHARGE_MAX_FRAME)
+               {
+                  this.left.showCharged(_loc5_);
+                  this.right.showCharged(_loc5_);
+               }
+               else
+               {
+                  this.left.showCharged();
+                  this.right.showCharged();
+               }
+               this._isCharging = true;
             }
-            else if(param1.currentFrame > this.left.currentFrame && param1.currentFrame >= BoostIndicatorElement.CHARGE_MAX_FRAME)
+            else if(this._rechargeEnabled && !this._isRecharging && param1.currentState > 0)
             {
-               this.left.showCharged(param1.currentFrame);
-               this.right.showCharged(param1.currentFrame);
-            }
-            else
-            {
-               this.left.showCharged();
-               this.right.showCharged();
-            }
-            this._isCharging = true;
-         }
-         else if(this._rechargeEnabled && param1.currentState > 0 && !this._isRecharging)
-         {
-            this._currentState = AUTOLOADERBOOSTVIEWSTATES.RECHARGE;
-            this._isRecharging = true;
-            this._isFadingOut = false;
-            this._isCharging = false;
-            if(param1.isRecharging)
-            {
-               this.left.currentFrame = this.right.currentFrame = param1.currentFrame;
-            }
-            else
-            {
-               this.left.currentFrame = this.right.currentFrame = BoostIndicatorElement.RECHARGE_BEGIN_FRAME;
-            }
-            this.left.showRecharge(param1.remainingDurationMSec);
-            this.right.showRecharge(param1.remainingDurationMSec);
-            _loc5_ = param1.remainingDurationMSec - CHARGED_OFFSET_MSECS;
-            if(_loc5_ > 0)
-            {
-               this._stateParams.remainingDurationMSec = this._stateParams.currentState = AUTOLOADERBOOSTVIEWSTATES.CHARGED;
-               this._stateParams.currentFrame = BoostIndicatorElement.RECHARGE_END_FRAME;
-               this._stateParams.isRecharging = true;
-               this._stateParams.isFadingOut = false;
-               this._stateParams.isCharging = false;
-               this._timeOutId = setTimeout(this.autoloaderBoostUpdate,_loc5_,param1,0);
+               this._currentState = AUTOLOADERBOOSTVIEWSTATES.RECHARGE;
+               this._isRecharging = true;
+               this._isFadingOut = false;
+               this._isCharging = false;
+               if(param1.isRecharging)
+               {
+                  this.left.currentFrame = this.right.currentFrame = _loc5_;
+               }
+               else
+               {
+                  this.left.currentFrame = this.right.currentFrame = BoostIndicatorElement.RECHARGE_BEGIN_FRAME;
+               }
+               this.left.showRecharge(param1.remainingDurationMSec);
+               this.right.showRecharge(param1.remainingDurationMSec);
+               _loc6_ = param1.remainingDurationMSec - CHARGED_OFFSET_MSECS;
+               if(_loc6_ > 0)
+               {
+                  this._stateParams.remainingDurationMSec = this._stateParams.currentState = AUTOLOADERBOOSTVIEWSTATES.CHARGED;
+                  this._stateParams.currentFrame = BoostIndicatorElement.RECHARGE_END_FRAME;
+                  this._stateParams.isRecharging = true;
+                  this._stateParams.isFadingOut = false;
+                  this._stateParams.isCharging = false;
+                  this._timeOutId = setTimeout(this.autoloaderBoostUpdate,_loc6_,param1,0);
+               }
             }
          }
       }
@@ -154,7 +159,7 @@ package net.wg.gui.components.crosshairPanel.components.autoloader
          {
             return;
          }
-         if(param1 == AUTOLOADERBOOSTVIEWSTATES.INVISIBLE && !this._isFadingOut)
+         if(param1 == AUTOLOADERBOOSTVIEWSTATES.INVISIBLE)
          {
             this._currentState = AUTOLOADERBOOSTVIEWSTATES.INVISIBLE;
             this._isRecharging = false;
@@ -166,7 +171,7 @@ package net.wg.gui.components.crosshairPanel.components.autoloader
             this._isRecharging = false;
             this._isFadingOut = false;
          }
-         else if(param1 > 0 && !this._isRecharging)
+         else if(!this._isRecharging && param1 > 0)
          {
             this._currentState = AUTOLOADERBOOSTVIEWSTATES.RECHARGE;
             this._isRecharging = true;

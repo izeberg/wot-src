@@ -76,7 +76,7 @@ package net.wg.gui.battle.views.ribbonsPanel
          this._ribbonQueue = null;
          this._visibleItems = null;
          this._visibleItemsById = null;
-         this._bonusLabels.length = 0;
+         this._bonusLabels.splice(0,this._bonusLabels.length);
          this._bonusLabels = null;
          super.onDispose();
       }

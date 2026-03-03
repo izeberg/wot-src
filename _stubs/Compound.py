@@ -251,3 +251,4 @@ __doc__ = None
 __name__ = 'Compound'
 __package__ = None
 def dumpHierarchy(*args, **kwargs): pass
+def onClientCompositionAboutToBeRemoved(*args, **kwargs): pass

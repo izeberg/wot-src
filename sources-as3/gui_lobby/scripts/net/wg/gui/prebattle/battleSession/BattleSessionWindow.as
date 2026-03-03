@@ -12,12 +12,11 @@ package net.wg.gui.prebattle.battleSession
    import net.wg.gui.components.controls.ScrollingListEx;
    import net.wg.gui.components.controls.SoundButtonEx;
    import net.wg.gui.events.ListEventEx;
-   import net.wg.gui.events.MessengerBarEvent;
    import net.wg.gui.interfaces.IButtonIconLoader;
-   import net.wg.gui.lobby.messengerBar.WindowGeometryInBar;
    import net.wg.gui.prebattle.data.PlayerPrbInfoVO;
    import net.wg.gui.prebattle.meta.IBattleSessionWindowMeta;
    import net.wg.gui.prebattle.meta.impl.BattleSessionWindowMeta;
+   import net.wg.infrastructure.base.DefaultWindowGeometry;
    import net.wg.infrastructure.managers.ITooltipMgr;
    import net.wg.utils.IClassFactory;
    import net.wg.utils.IScheduler;
@@ -263,7 +262,7 @@ package net.wg.gui.prebattle.battleSession
          this.readyButton.enabled = isReadyBtnEnabledS();
          this.enableLeave(isLeaveBtnEnabledS());
          window.setTitleIcon(TITLE_ICON);
-         geometry = new WindowGeometryInBar(MessengerBarEvent.PIN_CAROUSEL_WINDOW,getClientIDS());
+         geometry = new DefaultWindowGeometry();
          setSize(width,this.leaveButton.y + this.leaveButton.height);
          this.txtEmptyMemberList.text = PREBATTLE.MEMBERLIST_EMPTY_LABEL;
          App.utils.commons.updateTextFieldSize(this.txtEmptyMemberList);

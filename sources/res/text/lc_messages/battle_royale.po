@@ -110,6 +110,15 @@ msgstr "停止交火！"
 msgid "battle/respawnMessagePanel/squad/stayInCover/title"
 msgstr "正在使盟友重生"
 
+msgid "battle/winnerCongratulationsView/bonusActivated"
+msgstr "已激活加成！"
+
+msgid "battle/winnerCongratulationsView/bonusForFirstPlace"
+msgstr "排名第1的奖励"
+
+msgid "battle/winnerCongratulationsView/colected"
+msgstr "战斗中所收集"
+
 msgid "battle/winnerCongratulationsView/title"
 msgstr "胜利"
 
@@ -191,49 +200,49 @@ msgstr "玩家的真实昵称: {name}"
 msgid "battleResult/stats/anonymizer/header"
 msgstr "玩家的昵称已更改为{name}"
 
-msgid "battleResult/stats/damageBlockedByArmor/body"
+msgid "battleResult/stats/body/damageBlockedByArmor"
 msgstr "您的坦克装甲抵挡的损伤。"
 
-msgid "battleResult/stats/damageBlockedByArmor/header"
-msgstr "抵挡的损伤"
-
-msgid "battleResult/stats/damageBlockedByArmor/title"
-msgstr "抵挡的损伤"
-
-msgid "battleResult/stats/damageDealt/body"
+msgid "battleResult/stats/body/damageDealt"
 msgstr "您造成的损伤。"
 
-msgid "battleResult/stats/damageDealt/header"
-msgstr "造成损伤"
+msgid "battleResult/stats/body/kills"
+msgstr "您击毁的敌方坦克数量。"
 
-msgid "battleResult/stats/damageDealt/title"
-msgstr "造成损伤"
-
-msgid "battleResult/stats/kills/body"
-msgstr "被您击毁的敌方坦克数量。"
-
-msgid "battleResult/stats/kills/header"
-msgstr "您击毁的坦克"
-
-msgid "battleResult/stats/kills/title"
-msgstr "您击毁的坦克"
-
-msgid "battleResult/stats/place/body"
+msgid "battleResult/stats/body/place"
 msgstr "您的战斗结果排名。"
 
-msgid "battleResult/stats/place/header"
-msgstr "名次"
-
-msgid "battleResult/stats/place/title"
-msgstr "名次"
-
-msgid "battleResult/stats/squadKills/body"
+msgid "battleResult/stats/body/squadKills"
 msgstr "您的小队击毁的敌方坦克数量。"
 
-msgid "battleResult/stats/squadKills/header"
+msgid "battleResult/stats/header/damageBlockedByArmor"
+msgstr "抵挡损伤"
+
+msgid "battleResult/stats/header/damageDealt"
+msgstr "造成损伤"
+
+msgid "battleResult/stats/header/kills"
+msgstr "您击毁的坦克"
+
+msgid "battleResult/stats/header/place"
+msgstr "排名"
+
+msgid "battleResult/stats/header/squadKills"
 msgstr "小队击毁的坦克"
 
-msgid "battleResult/stats/squadKills/title"
+msgid "battleResult/stats/title/damageBlockedByArmor"
+msgstr "抵挡损伤"
+
+msgid "battleResult/stats/title/damageDealt"
+msgstr "造成损伤"
+
+msgid "battleResult/stats/title/kills"
+msgstr "您击毁的坦克"
+
+msgid "battleResult/stats/title/place"
+msgstr "排名"
+
+msgid "battleResult/stats/title/squadKills"
 msgstr "小队击毁的坦克"
 
 msgid "battleResult/tab/leaderboard"
@@ -351,39 +360,6 @@ msgstr ""
 
 msgid "fragPanel/squadsCount"
 msgstr "小队数量: %(squadsCount)s"
-
-msgid "fullStats/alive"
-msgstr "存活玩家"
-
-msgid "fullStats/deathZone/closed/description"
-msgstr "区域已封闭"
-
-msgid "fullStats/deathZone/warning/description"
-msgstr "区域正在封闭中"
-
-msgid "fullStats/description"
-msgstr "主要目标是成为最后幸存的玩家(或小队)。收集资源，升级坦克，笑到最后！"
-
-msgid "fullStats/destroyed"
-msgstr "您击毁的坦克"
-
-msgid "fullStats/icons/airDrop/description"
-msgstr "空投: 经验、恢复生命值、修理模块、全部战斗能力的充能次数、弹药。"
-
-msgid "fullStats/icons/corpseLoot/description"
-msgstr "战利品: 经验、恢复生命值、修理模块、部分战斗能力的充能次数、弹药。"
-
-msgid "fullStats/icons/defaultLoot/description"
-msgstr "补给: 经验、可能包含战斗能力充能次数、弹药。"
-
-msgid "fullStats/icons/extendedLoot/description"
-msgstr "给养: 经验、恢复生命值、修理模块、恢复能力的1次充能次数、弹药。"
-
-msgid "fullStats/subTitle"
-msgstr "在“混战”规则下为宝贵的资源而战。"
-
-msgid "fullStats/title"
-msgstr "钢铁猎手"
 
 msgid "hangarResults/btns/score"
 msgstr "排行榜"
@@ -599,51 +575,6 @@ msgstr "请按"
 msgid "radar/hint/text"
 msgstr "激活无线电探测"
 
-msgid "rewardCurrencyTooltip/battlePassPoints/body"
-msgstr "参加战斗和完成特殊任务可获得点数。它们将被自动计入战斗通行证进度。"
-
-msgid "rewardCurrencyTooltip/battlePassPoints/header"
-msgstr "战斗通行证点数"
-
-msgid "rewardCurrencyTooltip/brProgressionToken/body"
-msgstr "完成钢铁猎手任务和取得良好战绩的奖励。可用于推进进度。"
-
-msgid "rewardCurrencyTooltip/brProgressionToken/header"
-msgstr "钢铁猎手进度点数"
-
-msgid "rewardCurrencyTooltip/brcoin/body"
-msgstr "良好的战斗表现、在战斗结果中获得较高的排名以及完成特殊任务可获得钢铁印章。"
-
-msgid "rewardCurrencyTooltip/brcoin/header"
-msgstr "钢铁印章"
-
-msgid "rewardCurrencyTooltip/brcoin/premFactor"
-msgstr "使用坦克世界高级账号可获得额外50%的此种货币。"
-
-msgid "rewardCurrencyTooltip/credits/body"
-msgstr "主要的游戏货币。在战斗中获得或用金币兑换。"
-
-msgid "rewardCurrencyTooltip/credits/header"
-msgstr "银币"
-
-msgid "rewardCurrencyTooltip/credits/premFactor"
-msgstr "使用坦克世界高级账号可获得额外50%的此种货币。"
-
-msgid "rewardCurrencyTooltip/crystal/body"
-msgstr "一种罕见的特殊货币，用来购买无法通过其他方式获得的独特物品。"
-
-msgid "rewardCurrencyTooltip/crystal/header"
-msgstr "战争债券"
-
-msgid "rewardCurrencyTooltip/xp/body"
-msgstr "使用特殊坦克获取的经验可以被转换为全局经验。"
-
-msgid "rewardCurrencyTooltip/xp/header"
-msgstr "战斗经验"
-
-msgid "rewardCurrencyTooltip/xp/premFactor"
-msgstr "使用坦克世界高级账号可获得额外50%的战斗经验。"
-
 msgid "season/202206/name"
 msgstr "2022"
 
@@ -742,15 +673,6 @@ msgstr "我们的装甲正在受到腐蚀！"
 
 msgid "statusNotificationTimers/thunderStrike"
 msgstr "机动性下降！"
-
-msgid "tab/lable/platoon"
-msgstr "小队"
-
-msgid "tab/lable/solo"
-msgstr "单人"
-
-msgid "tab/lable/team"
-msgstr "与好友"
 
 msgid "techParams/type/damage"
 msgstr "火力"

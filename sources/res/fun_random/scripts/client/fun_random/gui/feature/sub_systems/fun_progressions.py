@@ -110,9 +110,9 @@ class FunProgressions(IFunRandomController.IFunProgressions, Notifiable):
     def __buildProgression(self, pConfig, isFirst, isLast, quests, tokens):
         executors = tuple(quests.get(PROGRESSION_EXECUTOR_TEMPLATE.format(pConfig.name, amount)) for amount in pConfig.executors)
         triggers = tuple(quests.get(PROGRESSION_TRIGGER_TEMPLATE.format(pConfig.name, trigger['id'])) for trigger in pConfig.triggers)
-        triggers = tuple(filter(None, triggers))
         for t in triggers:
-            t.findAndSaveAltQuest(quests)
+            if t is not None:
+                t.findAndSaveAltQuest(quests)
 
         if not triggers or not executors or not all(executors) or not all(triggers):
             return

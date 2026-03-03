@@ -1,5 +1,8 @@
 package net.wg.gui.lobby.profile.pages.statistics
 {
+   import flash.display.MovieClip;
+   import flash.display.Sprite;
+   
    public class StatisticsChartItemAnimClient
    {
       
@@ -12,7 +15,7 @@ package net.wg.gui.lobby.profile.pages.statistics
       public static const VALUE_PROPERTY:String = "value";
        
       
-      private var item:StatisticBarChartItem;
+      private var _item:StatisticBarChartItem;
       
       private var _frameNumber:Number = 0;
       
@@ -21,22 +24,12 @@ package net.wg.gui.lobby.profile.pages.statistics
       public function StatisticsChartItemAnimClient(param1:StatisticBarChartItem)
       {
          super();
-         this.item = param1;
+         this._item = param1;
       }
       
-      public function set frameNumber(param1:Number) : void
+      public function dispose() : void
       {
-         this._frameNumber = param1;
-         this.item.gotoAndStop(Math.round(this._frameNumber));
-         this.item.textField.textColor = Math.round(this._frameNumber) == 101 ? uint(topTextColor) : uint(textColor);
-         this.item.textField.y = this.item.mcMask.y - this.item.mcMask.height - this.item.textField.height;
-         this.item.textField.x = Math.round(this.item.background.x + this.item.background.width / 2 - this.item.textField.width / 2);
-      }
-      
-      public function set value(param1:Number) : void
-      {
-         this._value = param1;
-         this.item.textField.text = Math.round(param1).toString();
+         this._item = null;
       }
       
       public function get frameNumber() : Number
@@ -44,14 +37,26 @@ package net.wg.gui.lobby.profile.pages.statistics
          return this._frameNumber;
       }
       
+      public function set frameNumber(param1:Number) : void
+      {
+         this._frameNumber = param1;
+         this._item.gotoAndStop(Math.round(this._frameNumber));
+         this._item.textField.textColor = Math.round(this._frameNumber) == 101 ? uint(topTextColor) : uint(textColor);
+         var _loc2_:MovieClip = this._item.mcMask;
+         var _loc3_:Sprite = this._item.background;
+         this._item.textField.y = _loc2_.y - _loc2_.height - this._item.textField.height;
+         this._item.textField.x = _loc3_.x + (_loc3_.width - this._item.textField.width >> 1) | 0;
+      }
+      
       public function get value() : Number
       {
          return this._value;
       }
       
-      public function dispose() : void
+      public function set value(param1:Number) : void
       {
-         this.item = null;
+         this._value = param1;
+         this._item.textField.text = Math.round(param1).toString();
       }
    }
 }

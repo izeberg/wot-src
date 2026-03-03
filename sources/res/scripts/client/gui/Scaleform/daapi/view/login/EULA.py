@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.Scaleform.daapi.view.meta.EULAMeta import EULAMeta
 from gui.shared.events import CloseWindowEvent, OpenLinkEvent
 from helpers import dependency

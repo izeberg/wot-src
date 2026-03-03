@@ -1,5 +1,7 @@
+from __future__ import absolute_import
 import logging
 from collections import namedtuple, defaultdict
+from future.utils import lmap
 import GUI, Keys, CommandMapping
 from AvatarInputHandler import aih_global_binding
 from aih_constants import CTRL_MODE_NAME
@@ -278,13 +280,13 @@ class RadialMenu(RadialMenuMeta, BattleGUIKeyHandler, CallbackDelayer):
         for s in REGULAR_BOTTOM_STATIC_SHORTCUTS:
             for group in s.groups:
                 if group not in self.bottomShortcutSets:
-                    self.bottomShortcutSets[group] = list()
+                    self.bottomShortcutSets[group] = []
                 self.bottomShortcutSets[group].append(s)
 
         for s in REGULAR_UPPER_STATIC_SHORTCUTS:
             for group in s.groups:
                 if group not in self.upperShortcutSets:
-                    self.upperShortcutSets[group] = list()
+                    self.upperShortcutSets[group] = []
                 self.upperShortcutSets[group].append(s)
 
     def _showInternal(self, radialState, staticDiff, replyDiff, position):
@@ -316,11 +318,11 @@ class RadialMenu(RadialMenuMeta, BattleGUIKeyHandler, CallbackDelayer):
     def __refreshShortcutsAndState(self):
         self.__stateData = []
         for state in self._ALL_TARGET_STATES:
-            bottomShortcuts = map(self.__createShortcut, self.bottomShortcutSets[state])
+            bottomShortcuts = lmap(self.__createShortcut, self.bottomShortcutSets[state])
             if state == RADIAL_MENU_CONSTS.TARGET_STATE_ALLY:
-                regularShortcuts = map(self.__createShortcut, ALLY_UPPER_SHORTCUTS_DEFAULT)
+                regularShortcuts = lmap(self.__createShortcut, ALLY_UPPER_SHORTCUTS_DEFAULT)
             else:
-                regularShortcuts = map(self.__createShortcut, self.upperShortcutSets[state])
+                regularShortcuts = lmap(self.__createShortcut, self.upperShortcutSets[state])
             self.__stateData.append({'state': state, 'bottomShortcuts': bottomShortcuts, 
                'regularShortcuts': regularShortcuts})
 
@@ -410,7 +412,7 @@ class RadialMenu(RadialMenuMeta, BattleGUIKeyHandler, CallbackDelayer):
         chatCommands = self.sessionProvider.shared.chatCommands
         if chatCommands is not None and chatCommands.isTargetAllyCommittedToMe(targetID):
             buttonDataTemplate = ALLY_UPPER_SHORTCUTS_ONE_DISABLED
-        if (replyState == ReplyState.CAN_CONFIRM or replyState == ReplyState.CAN_RESPOND) and replyAction != BATTLE_CHAT_COMMAND_NAMES.RELOADINGGUN:
+        if replyState in (ReplyState.CAN_CONFIRM, ReplyState.CAN_RESPOND) and replyAction != BATTLE_CHAT_COMMAND_NAMES.RELOADINGGUN:
             buttonDataTemplate = ALLY_UPPER_SHORTCUTS_THREE_DISABLED
         for shortcut in buttonDataTemplate:
             buttonData = defaultdict()

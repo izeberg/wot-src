@@ -17,6 +17,7 @@ package net.wg.gui.lobby.profile.pages.technique
    import net.wg.gui.lobby.profile.components.ResizableContent;
    import net.wg.gui.lobby.profile.pages.technique.data.RatingButtonVO;
    import net.wg.infrastructure.base.UIComponentEx;
+   import net.wg.infrastructure.managers.ITooltipMgr;
    import net.wg.infrastructure.managers.counter.CounterProps;
    import net.wg.utils.ICounterManager;
    import net.wg.utils.ICounterProps;
@@ -77,6 +78,8 @@ package net.wg.gui.lobby.profile.pages.technique
       
       private var _counterManager:ICounterManager;
       
+      private var _toolTipMgr:ITooltipMgr;
+      
       private var _countersToSet:Vector.<CountersVo> = null;
       
       private var _actualCounters:Vector.<SoundButtonEx>;
@@ -85,6 +88,7 @@ package net.wg.gui.lobby.profile.pages.technique
       {
          this._scheduler = App.utils.scheduler;
          this._counterManager = App.utils.counterManager;
+         this._toolTipMgr = App.toolTipMgr;
          this._actualCounters = new Vector.<SoundButtonEx>();
          super();
       }
@@ -183,8 +187,11 @@ package net.wg.gui.lobby.profile.pages.technique
                _loc2_ = _loc7_.componentId;
                _loc3_ = getChildByName(_loc2_);
                App.utils.asserter.assertNotNull(_loc3_,_loc2_ + " " + Errors.CANT_NULL);
-               this._counterManager.setCounter(_loc3_,_loc7_.count,null,_loc4_);
-               this._actualCounters.push(_loc3_);
+               if(_loc3_.visible)
+               {
+                  this._counterManager.setCounter(_loc3_,_loc7_.count,null,_loc4_);
+                  this._actualCounters.push(_loc3_);
+               }
                _loc6_++;
             }
          }
@@ -213,6 +220,7 @@ package net.wg.gui.lobby.profile.pages.technique
          this.tabsBg = null;
          this.vNameTF = null;
          this._scheduler = null;
+         this._toolTipMgr = null;
          this.viewRatingBtn.removeEventListener(ButtonEvent.CLICK,this.onViewRatingBtnClickHandler);
          this.viewRatingBtn.removeEventListener(MouseEvent.ROLL_OVER,this.onViewRatingBtnRollOverHandler);
          this.viewRatingBtn.removeEventListener(MouseEvent.ROLL_OUT,this.onViewRatingBtnRollOutHandler);
@@ -374,13 +382,13 @@ package net.wg.gui.lobby.profile.pages.technique
       {
          if(!this._enableRating)
          {
-            App.toolTipMgr.showComplex(PROFILE.SECTION_HOF_NOTAVAILABLE_TOOLTIP);
+            this._toolTipMgr.showComplex(PROFILE.SECTION_HOF_NOTAVAILABLE_TOOLTIP);
          }
       }
       
       private function onViewRatingBtnRollOutHandler(param1:MouseEvent) : void
       {
-         App.toolTipMgr.hide();
+         this._toolTipMgr.hide();
       }
    }
 }

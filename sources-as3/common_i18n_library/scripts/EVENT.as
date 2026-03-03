@@ -10,12 +10,6 @@ package
       public static const BATTLEHINTS_TESTMESSAGE:String = "#event:battleHints/testMessage";
       
       public static const BATTLEHINTS_TESTMESSAGEWITHPARAMS:String = "#event:battleHints/testMessageWithParams";
-      
-      public static const CRAFTMACHINE_TITLE:String = "#event:craftMachine/title";
-      
-      public static const CRAFTMACHINE_SUBTITLE:String = "#event:craftMachine/subTitle";
-      
-      public static const CRAFTMACHINE_ENDDATETEXT:String = "#event:craftMachine/endDateText";
        
       
       public function EVENT()

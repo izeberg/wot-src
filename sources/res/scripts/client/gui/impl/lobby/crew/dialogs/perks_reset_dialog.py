@@ -1,5 +1,6 @@
 import time, typing, SoundGroups
 from chat_shared import SYS_MESSAGE_TYPE
+from goodies.goodie_constants import GOODIE_VARIETY
 from gui import SystemMessages
 from gui.customization.shared import getPurchaseGoldForCredits, getPurchaseMoneyState, MoneyForPurchase
 from gui.impl import backport
@@ -135,24 +136,19 @@ class PerksResetDialog(BaseCrewDialogTemplateView):
 
     def _resetPerks(self):
         if self._isFreePerkReset or self._isFreeByGold:
-            self.__processReset(self._tankman, 0, None, True)
+            self.__processReset(self._tankman, 0, True)
             return True
-        else:
-            if self._priceListContent.isRecertification:
-                self.__processReset(self._tankman, self._priceListContent.goldOptionKey, None, False)
-                return True
-            itemPrice, _, dropSkillKey = self._priceListContent.selectedPriceData
-            price = self._itemsCache.items.shop.dropSkillsCost[dropSkillKey]
-            purchaseMoneyState = getPurchaseMoneyState(itemPrice.price)
-            if purchaseMoneyState is MoneyForPurchase.NOT_ENOUGH:
-                showBuyGoldForCrew(itemPrice.price.gold)
-                return False
-            if purchaseMoneyState is MoneyForPurchase.ENOUGH_WITH_EXCHANGE:
-                purchaseGold = getPurchaseGoldForCredits(itemPrice.price)
-                event_dispatcher.showExchangeCurrencyWindowModal(gold=purchaseGold, backgroundImage=R.images.gui.maps.icons.windows.background())
-                return False
-            self.__processReset(self._tankman, dropSkillKey, price, self._isFreePerkReset)
-            return True
+        itemPrice, _, dropSkillKey = self._priceListContent.selectedPriceData
+        purchaseMoneyState = getPurchaseMoneyState(itemPrice.price)
+        if purchaseMoneyState is MoneyForPurchase.NOT_ENOUGH:
+            showBuyGoldForCrew(itemPrice.price.gold)
+            return False
+        if purchaseMoneyState is MoneyForPurchase.ENOUGH_WITH_EXCHANGE:
+            purchaseGold = getPurchaseGoldForCredits(itemPrice.price)
+            event_dispatcher.showExchangeCurrencyWindowModal(gold=purchaseGold, backgroundImage=R.images.gui.maps.icons.windows.background())
+            return False
+        self.__processReset(self._tankman, dropSkillKey, self._isFreePerkReset)
+        return True
 
     def _updateTankmenBefore(self):
         packBaseTankman(self.viewModel.tankmanBefore, self._tankman)
@@ -167,9 +163,12 @@ class PerksResetDialog(BaseCrewDialogTemplateView):
         packSkills(self.viewModel.tankmanAfter.skillList, tankman)
 
     @decorators.adisp_process('deleting')
-    def __processReset(self, tankman, dropSkillKey, price, freeDrop):
-        useRecertificationForm = price is None
-        proc = TankmanDropSkills(tankman, dropSkillKey, useRecertificationForm)
+    def __processReset(self, tankman, dropSkillKey, freeDrop):
+        useRecertificationForm = False
+        if not freeDrop:
+            price = self._itemsCache.items.shop.dropSkillsCost[dropSkillKey]
+            useRecertificationForm = price.get(GOODIE_VARIETY.RECERTIFICATION_FORM_NAME, 0) > 0
+        proc = TankmanDropSkills(tankman, dropSkillKey)
         result = yield proc.request()
         if result.userMsg:
             if not useRecertificationForm or freeDrop:
@@ -179,4 +178,3 @@ class PerksResetDialog(BaseCrewDialogTemplateView):
                    'data': {'type': SYS_MESSAGE_TYPE.recertificationResetUsed.index(), 
                             'data': {'currencyType': 'blanks', 'count': 1}}}
                 MessengerEntry.g_instance.protos.BW.serviceChannel.onReceivePersonalSysMessage(action)
-        return

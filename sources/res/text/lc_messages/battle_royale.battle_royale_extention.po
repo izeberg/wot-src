@@ -11,14 +11,195 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: \n"
 
+msgid "battleQuestAwards/button"
+msgstr "收到!"
+
+msgid "battleQuestAwards/stPatrick/subTitle"
+msgstr "钢铁猎手:幸运草对决"
+
+msgid "battleQuestAwards/subTitle"
+msgstr "钢铁猎手"
+
+msgid "battleQuestAwards/title/completed"
+msgstr "已完成最终阶段！"
+
+msgid "battleQuestAwards/title/inProgress"
+msgstr "已完成阶段%(level)s！"
+
+msgid "dailyBonus/description"
+msgstr ""
+"%(dailyBonus)s在单人战斗中排名前%(soloTopPlaces)s，或在组队战斗中排名前%(squadTopPlaces)s即可获得幸运印章加成。每辆活动坦克每天可激活该加成1次。"
+
 msgid "eventShop"
 msgstr "活动商店"
+
+msgid "leaveBattleView/confirmation/cancel"
+msgstr "留下"
+
+msgid "leaveBattleView/confirmation/submit"
+msgstr "确认"
+
+msgid "leaveBattleView/description"
+msgstr "您的坦克仍能战斗。如果现在中途离场，您将因违规而无法获得任何奖励。您确定要离开战斗？"
+
+msgid "leaveBattleView/title"
+msgstr "中途离场"
+
+msgid "leaveBattleView/warning"
+msgstr "您将无法获得奖励！"
 
 msgid "progress/counter"
 msgstr "{{current}}{{divider}}{{total}}"
 
 msgid "progressionComplete"
 msgstr "已完成主要进度！"
+
+msgid "progressionView/battleQuests/multiConditions"
+msgstr "%(firstCondition)s或%(secondCondition)s"
+
+msgid "progressionView/battleQuests/oneCondition"
+msgstr "%(firstCondition)s"
+
+msgid "progressionView/battleQuests/questsTotal/text"
+msgstr "已完成任务:"
+
+msgid "progressionView/battleQuests/timer/eventResetTime/text"
+msgstr "距活动结束还有:"
+
+msgid "progressionView/battleQuests/timer/inProgress/text"
+msgstr "距任务更新还有"
+
+msgid "progressionView/card/points"
+msgstr "%(current)s/%(total)s"
+
+msgid "progressionView/seasonRange"
+msgstr "%(startDate)s–%(endDate)s"
+
+msgid "progressionView/subTitle/completed"
+msgstr "已完成进度。继续游玩钢铁猎手，获取更多奖励。"
+
+msgid "progressionView/subTitle/endEvent"
+msgstr "活动已结束。任务和进度不再开放。"
+
+msgid "progressionView/subTitle/inProgress"
+msgstr ""
+"完成任务以获取进度点数。\n"
+"您所获得的点数也取决于您的战斗结果排名。%(infotip)s"
+
+msgid "proxy_currency_tooltip/earn/description/brcoin"
+msgstr "良好的战斗表现、在战斗结果中取得较高的名次和完成模式任务都可获得钢铁印章。"
+
+msgid "proxy_currency_tooltip/earn/description/stpcoin"
+msgstr "在战斗中收集物资、完成进度阶段、在钢铁猎手中排名靠前均可获得幸运印章。"
+
+msgid "proxy_currency_tooltip/earn/title/brcoin"
+msgstr "如何获取印章"
+
+msgid "proxy_currency_tooltip/earn/title/stpcoin"
+msgstr "如何获取印章"
+
+msgid "proxy_currency_tooltip/spend/description/brcoin"
+msgstr "使用所获得的钢铁印章兑换钢铁猎手风格。"
+
+msgid "proxy_currency_tooltip/spend/description/stpcoin"
+msgstr "您可使用幸运印章在幸运草商店中兑换珍贵奖励。"
+
+msgid "proxy_currency_tooltip/spend/title/brcoin"
+msgstr "印章的用处"
+
+msgid "proxy_currency_tooltip/spend/title/stpcoin"
+msgstr "印章的用处"
+
+msgid "proxy_currency_tooltip/title/brcoin"
+msgstr "钢铁印章"
+
+msgid "proxy_currency_tooltip/title/stpcoin"
+msgstr "幸运印章"
+
+msgid "quests/bonuses/progressionToken/body"
+msgstr "在钢铁猎手中完成特殊任务的奖励。可用于推动进度。"
+
+msgid "quests/bonuses/progressionToken/header"
+msgstr "钢铁猎手进度点数"
+
+msgid "rewardCurrencyTooltip/body/battlePassPoints"
+msgstr "参加战斗和完成特殊任务可获得点数。点数将被自动计入战斗通行证进度。"
+
+msgid "rewardCurrencyTooltip/body/brProgressionToken"
+msgstr "完成钢铁猎手任务和取得良好战绩的奖励。可用于推动进度。"
+
+msgid "rewardCurrencyTooltip/body/brcoin"
+msgstr "良好的战斗表现、在战斗结果中获得较高的排名以及完成特殊任务均可获得钢铁印章。"
+
+msgid "rewardCurrencyTooltip/body/credits"
+msgstr "主要的游戏货币。在战斗中获取或用金币购买。"
+
+msgid "rewardCurrencyTooltip/body/crystal"
+msgstr "一种罕见的特殊货币，用来购买无法通过其他方式获得的独特物品。"
+
+msgid "rewardCurrencyTooltip/body/stpcoin"
+msgstr ""
+"可在钢铁猎手战斗中获取的货币。印章可用来在幸运草商店中兑换独特奖励。组队战斗时，所获幸运印章将在小队成员之间平均分配。所示数量为属于您的奖励。"
+
+msgid "rewardCurrencyTooltip/body/xp"
+msgstr "使用特殊坦克获得的经验可转换为全局经验。"
+
+msgid "rewardCurrencyTooltip/dailyBonus/stpcoin"
+msgstr "加成已生效！战斗中获得的印章数量提高了%(count)s倍。"
+
+msgid "rewardCurrencyTooltip/header/battlePassPoints"
+msgstr "战斗通行证点数"
+
+msgid "rewardCurrencyTooltip/header/brProgressionToken"
+msgstr "钢铁猎手进度点数"
+
+msgid "rewardCurrencyTooltip/header/brcoin"
+msgstr "钢铁印章"
+
+msgid "rewardCurrencyTooltip/header/credits"
+msgstr "银币"
+
+msgid "rewardCurrencyTooltip/header/crystal"
+msgstr "战争债券"
+
+msgid "rewardCurrencyTooltip/header/stpcoin"
+msgstr "幸运印章"
+
+msgid "rewardCurrencyTooltip/header/xp"
+msgstr "战斗经验"
+
+msgid "rewardCurrencyTooltip/premiumBonus/brcoin"
+msgstr "使用《坦克世界》高级账号可额外获得50%的此种货币。"
+
+msgid "rewardCurrencyTooltip/premiumBonus/credits"
+msgstr "使用《坦克世界》高级账号可额外获得50%的此种货币。"
+
+msgid "rewardCurrencyTooltip/premiumBonus/xp"
+msgstr "使用《坦克世界》高级账号可额外获得50%的战斗经验。"
+
+msgid "serviceChannelMessages/awards"
+msgstr "已获得奖励:"
+
+msgid "serviceChannelMessages/body"
+msgstr "您已完成%(progressionName)s模式的阶段%(stage)s。"
+
+msgid "serviceChannelMessages/header"
+msgstr "恭喜!"
+
+msgid "serviceChannelMessages/progressionButton"
+msgstr "详情"
+
+msgid "serviceChannelMessages/progressionName"
+msgstr "钢铁猎手"
+
+msgid "tab/label/platoon"
+msgstr "小队"
+
+msgid "tab/label/solo"
+msgstr "单人"
+
+msgid "tab/label/team"
+msgstr "与好友"
 
 msgid "tooltip/banner/description"
 msgstr ""
@@ -42,11 +223,18 @@ msgstr "低性能"
 msgid "tooltip/banner/performanceRisk/title/medium"
 msgstr "可能会降低性能"
 
+msgid "tooltip/banner/stPatrickDescription"
+msgstr ""
+"体验变幻莫测、融入了绿色魔法元素的军事演习模式，成为笑到最后的猎手。驾驶8辆可在战斗过程中升级的特殊坦克，每升一级就能变得更强。专属奖励以及更多精彩内容等待着您！"
+
+msgid "tooltip/banner/stPatrickTitle"
+msgstr "幸运草对决"
+
 msgid "tooltip/banner/timer/text/accent"
-msgstr "活动将开放{{timer}}"
+msgstr "活动将开放%(timer)s"
 
 msgid "tooltip/banner/timer/text/cooldown"
-msgstr "休战期{{timer}}"
+msgstr "休战%(timer)s"
 
 msgid "tooltip/banner/title"
 msgstr "钢铁猎手"
@@ -84,8 +272,17 @@ msgstr "钢铁猎手"
 msgid "tooltip/quest/header"
 msgstr "钢铁猎手任务"
 
+msgid "tooltip/shop/stPatrick/subtitle"
+msgstr "使用您的{ede6d9_Open}幸运印章{ede6d9_Close}兑换特殊奖励。"
+
+msgid "tooltip/shop/stPatrick/text"
+msgstr "在战斗中收集物资、完成进度阶段、在此军事演习模式中排名靠前均可获得幸运印章。"
+
+msgid "tooltip/shop/stPatrick/title"
+msgstr "幸运草商店"
+
 msgid "tooltip/shop/subtitle"
-msgstr "使用{{@ colorLegacy 'ede6d9'}}钢铁印章{{/}}兑换特殊奖励。"
+msgstr "使用您的{ede6d9_Open}钢铁印章{ede6d9_Close}兑换特殊奖励。"
 
 msgid "tooltip/shop/text"
 msgstr "通过在战斗中表现出色、在战斗结果中排名靠前，以及完成任务来获得钢铁印章。"

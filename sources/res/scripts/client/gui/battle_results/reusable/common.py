@@ -98,10 +98,7 @@ class CommonInfo(shared.UnpackedInfo):
         return self.__arenaVisitor.getArenaIcon(subdir)
 
     def getBotInfo(self, vehicleID):
-        if vehicleID in self.__bots:
-            return self.__bots[vehicleID]
-        else:
-            return
+        return self.__bots.get(vehicleID, None)
 
     def getBots(self):
         return self.__bots

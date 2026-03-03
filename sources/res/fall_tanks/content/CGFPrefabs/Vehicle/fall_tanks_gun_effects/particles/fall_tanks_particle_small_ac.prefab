@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<version>4</version>
+	<GameObjects>
+		<GameObject>
+			<name>particle_small_ac</name>
+			<UUID>7c4c2471-9358-4b38-8c81-226f44033c39</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>continuous_burst_particle</name>
+			<UUID>b367b017-f80d-46cc-841f-b7ec412e5966</UUID>
+			<flags>8</flags>
+		</GameObject>
+		<GameObject>
+			<name>single_shot_particle</name>
+			<UUID>512d374a-ceb5-405d-a913-2d38a0294c60</UUID>
+			<flags>8</flags>
+		</GameObject>
+		<GameObject>
+			<name>stop_continuous_burst_particle</name>
+			<UUID>f315260c-cff5-4c5b-8a57-8d2a22ffa6c3</UUID>
+			<flags>8</flags>
+		</GameObject>
+	</GameObjects>
+	<components>
+		<ComponentPool>
+			<type>Hierarchy</type>
+			<version>2</version>
+			<component>
+				<UUID>b367b017-f80d-46cc-841f-b7ec412e5966</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>7c4c2471-9358-4b38-8c81-226f44033c39</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>512d374a-ceb5-405d-a913-2d38a0294c60</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>7c4c2471-9358-4b38-8c81-226f44033c39</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>f315260c-cff5-4c5b-8a57-8d2a22ffa6c3</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>7c4c2471-9358-4b38-8c81-226f44033c39</link>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>Transform</type>
+			<version>1</version>
+			<component>
+				<UUID>7c4c2471-9358-4b38-8c81-226f44033c39</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>b367b017-f80d-46cc-841f-b7ec412e5966</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>512d374a-ceb5-405d-a913-2d38a0294c60</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>f315260c-cff5-4c5b-8a57-8d2a22ffa6c3</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>BW::variables::PropertyOnChangeCalculatorComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>b367b017-f80d-46cc-841f-b7ec412e5966</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>calcs</name>
+						<object>
+							<property>
+								<name>calculations</name>
+								<collection>
+									<item>
+										<object>
+											<property>
+												<name>dest</name>
+												<object>
+													<property>
+														<name>compType</name>
+														<value>Particle</value>
+													</property>
+													<property>
+														<name>propertyPath</name>
+														<value>emissionRate</value>
+													</property>
+												</object>
+											</property>
+											<property>
+												<name>calcExpr</name>
+												<object>
+													<property>
+														<name>expressionType</name>
+														<value>BW::variables::MultiplyExpression</value>
+													</property>
+													<property>
+														<name>expr</name>
+														<object>
+															<property>
+																<name>leftOp</name>
+																<object>
+																	<property>
+																		<name>expressionType</name>
+																		<value>BW::variables::VariableExpression</value>
+																	</property>
+																	<property>
+																		<name>expr</name>
+																		<object>
+																			<property>
+																				<name>variable</name>
+																				<object>
+																					<property>
+																						<name>name</name>
+																						<value>vehicle/gun/shotsPerSecond</value>
+																					</property>
+																				</object>
+																			</property>
+																		</object>
+																	</property>
+																</object>
+															</property>
+															<property>
+																<name>rightOp</name>
+																<object>
+																	<property>
+																		<name>expressionType</name>
+																		<value>BW::variables::ConstantFloatExpression</value>
+																	</property>
+																	<property>
+																		<name>expr</name>
+																		<object>
+																			<property>
+																				<name>value</name>
+																				<value>10</value>
+																			</property>
+																		</object>
+																	</property>
+																</object>
+															</property>
+														</object>
+													</property>
+												</object>
+											</property>
+										</object>
+									</item>
+								</collection>
+							</property>
+						</object>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>BW::Gun::Effects::EffectComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>b367b017-f80d-46cc-841f-b7ec412e5966</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>effectMask</name>
+						<value>8</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>512d374a-ceb5-405d-a913-2d38a0294c60</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>effectMask</name>
+						<value>3</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>f315260c-cff5-4c5b-8a57-8d2a22ffa6c3</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>effectMask</name>
+						<value>4</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>ComponentsVisibilityController</type>
+			<version>1</version>
+			<component>
+				<UUID>b367b017-f80d-46cc-841f-b7ec412e5966</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>castShadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in SNIPER MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in STRATEGIC MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in ARTY MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in POSTMORTEM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in RESPAWN_DEATH MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DEATH_FREE_CAM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DUAL_GUN MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in KILL_CAM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in LOOK_AT_KILLER MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in TWIN_GUN MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in SM_STRATEGIC MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in SM_ENTITY_VIEW MODE</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>512d374a-ceb5-405d-a913-2d38a0294c60</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>castShadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in SNIPER MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in STRATEGIC MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in ARTY MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in POSTMORTEM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in RESPAWN_DEATH MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DEATH_FREE_CAM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DUAL_GUN MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in KILL_CAM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in LOOK_AT_KILLER MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in TWIN_GUN MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in SM_STRATEGIC MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in SM_ENTITY_VIEW MODE</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>f315260c-cff5-4c5b-8a57-8d2a22ffa6c3</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>castShadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in SNIPER MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in STRATEGIC MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in ARTY MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in POSTMORTEM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in RESPAWN_DEATH MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DEATH_FREE_CAM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DUAL_GUN MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in KILL_CAM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in LOOK_AT_KILLER MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in TWIN_GUN MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in SM_STRATEGIC MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in SM_ENTITY_VIEW MODE</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>Particle</type>
+			<version>1</version>
+			<component>
+				<UUID>b367b017-f80d-46cc-841f-b7ec412e5966</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>effect</name>
+						<isAsset>true</isAsset>
+						<value>particles/Environment/fall_tanks/140_fall_tanks_shot_ap_main.eff</value>
+					</property>
+					<property>
+						<name>Rate</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>autoStart</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>oneTimeEffect</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>tintColour</name>
+						<value>1 1 1 1</value>
+					</property>
+					<property>
+						<name>opacity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>epicenterOffset</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>emissionSize</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>startSpeed</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>gravity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>windWeight</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>fps</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>512d374a-ceb5-405d-a913-2d38a0294c60</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>effect</name>
+						<isAsset>true</isAsset>
+						<value>particles/Environment/fall_tanks/140_fall_tanks_shot_ap_start.eff</value>
+					</property>
+					<property>
+						<name>Rate</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>autoStart</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>oneTimeEffect</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>tintColour</name>
+						<value>1 1 1 1</value>
+					</property>
+					<property>
+						<name>opacity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>epicenterOffset</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>emissionSize</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>startSpeed</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>gravity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>windWeight</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>fps</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>f315260c-cff5-4c5b-8a57-8d2a22ffa6c3</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>effect</name>
+						<isAsset>true</isAsset>
+						<value>particles/Environment/fall_tanks/140_fall_tanks_shot_ap_end.eff</value>
+					</property>
+					<property>
+						<name>Rate</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>autoStart</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>oneTimeEffect</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>tintColour</name>
+						<value>1 1 1 1</value>
+					</property>
+					<property>
+						<name>opacity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>epicenterOffset</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>emissionSize</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>startSpeed</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>gravity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>windWeight</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>fps</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+	</components>
+</root>

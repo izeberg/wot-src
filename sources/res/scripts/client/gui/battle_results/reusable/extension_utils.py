@@ -1,5 +1,4 @@
 from enum import Enum
-from constants import ARENA_BONUS_TYPE_IDS
 
 class ReusableInfoFactory(object):
 

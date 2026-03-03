@@ -159,10 +159,10 @@ msgid "entryPoint/boxes"
 msgstr "前往补给品"
 
 msgid "entryPoint/count"
-msgstr "x%(count)"
+msgstr "×%(count)"
 
 msgid "entryPoint/maxBoxesCount"
-msgstr "x999+"
+msgstr "×999+"
 
 msgid "entryPoint/tooltip/description"
 msgstr ""
@@ -405,11 +405,23 @@ msgstr "指令"
 msgid "statisticsRewards/label/blueprint_tube"
 msgstr "蓝图碎片"
 
+msgid "statisticsRewards/label/brochure"
+msgstr "手册"
+
+msgid "statisticsRewards/label/brochure_tooltip"
+msgstr "培训手册"
+
 msgid "statisticsRewards/label/consumables"
 msgstr "给养"
 
 msgid "statisticsRewards/label/credits"
 msgstr "银币"
+
+msgid "statisticsRewards/label/crewBook"
+msgstr "手册"
+
+msgid "statisticsRewards/label/crewBook_tooltip"
+msgstr "通用手册"
 
 msgid "statisticsRewards/label/crew_bonus_x3"
 msgstr "3倍乘员经验任务"
@@ -435,6 +447,15 @@ msgstr "全局经验"
 msgid "statisticsRewards/label/gold"
 msgstr "金币"
 
+msgid "statisticsRewards/label/guide"
+msgstr "指南"
+
+msgid "statisticsRewards/label/guide_tooltip"
+msgstr "培训指南"
+
+msgid "statisticsRewards/label/mentoringLicense"
+msgstr "授业许可"
+
 msgid "statisticsRewards/label/new_device_mi_gift"
 msgstr "标准配件"
 
@@ -447,6 +468,9 @@ msgstr "《坦克世界》高级账号"
 msgid "statisticsRewards/label/rations"
 msgstr "口粮"
 
+msgid "statisticsRewards/label/recertificationForm"
+msgstr "再训练命令"
+
 msgid "statisticsRewards/label/style"
 msgstr "2D风格"
 
@@ -455,9 +479,6 @@ msgstr "3D风格"
 
 msgid "statisticsRewards/label/tankman"
 msgstr "乘员"
-
-msgid "statisticsRewards/label/training_materials"
-msgstr "乘员手册"
 
 msgid "statisticsRewards/label/trophy_gift"
 msgstr "赏金配件"

@@ -2,7 +2,11 @@ package net.wg.gui.battle.views.situationIndicators
 {
    import com.gskinner.motion.GTweener;
    import com.gskinner.motion.easing.Cubic;
+   import flash.display.BlendMode;
+   import flash.display.GradientType;
    import flash.display.MovieClip;
+   import flash.display.Sprite;
+   import flash.geom.Matrix;
    import net.wg.data.constants.InvalidationType;
    import net.wg.data.constants.Time;
    import net.wg.gui.battle.views.situationIndicators.components.PerkItem;
@@ -20,11 +24,11 @@ package net.wg.gui.battle.views.situationIndicators
       
       private static const ITEM_GAP:int = 10;
       
-      private static const ITEM_WIDTH:int = 30;
+      private static const ITEM_SIZE:int = 30;
       
       private static const ANIMATION_SPEED_PER_PX:Number = 10;
       
-      private static const ITEM_FULL_WIDTH:int = ITEM_GAP + ITEM_WIDTH;
+      private static const ITEM_FULL_WIDTH:int = ITEM_GAP + ITEM_SIZE;
       
       private static const HALF_ITEM_FULL_WIDTH:int = ITEM_FULL_WIDTH >> 1;
       
@@ -39,11 +43,17 @@ package net.wg.gui.battle.views.situationIndicators
       private static const GROUPS_GAP:int = 12;
       
       private static const SEPARATOR_Y:int = -12;
+      
+      private static const MAX_VISIBLE_ITEMS:int = 11;
        
       
       public var wrapper:AnimatedSpriteContainer = null;
       
       public var glowWrapper:MovieClip = null;
+      
+      private var _gMask:Sprite;
+      
+      private var _sMask:Sprite;
       
       private var _perksList:Vector.<PerkItem>;
       
@@ -57,6 +67,8 @@ package net.wg.gui.battle.views.situationIndicators
       
       public function SituationIndicatorsPanel()
       {
+         this._gMask = new Sprite();
+         this._sMask = new Sprite();
          this._perksList = new Vector.<PerkItem>();
          this._weatherList = new Vector.<WeatherItem>();
          this._classFactory = App.utils.classFactory;
@@ -80,6 +92,8 @@ package net.wg.gui.battle.views.situationIndicators
             this._separator.y = SEPARATOR_Y;
             this.wrapper.addContent(this._separator);
          }
+         this.blendMode = BlendMode.LAYER;
+         this.addMask();
       }
       
       override protected function draw() : void
@@ -147,6 +161,20 @@ package net.wg.gui.battle.views.situationIndicators
          this._weatherList.length = 0;
          this._weatherList = null;
          this._separator = null;
+         this.mask = null;
+         this.blendMode = BlendMode.NORMAL;
+         if(this._gMask)
+         {
+            this._gMask.blendMode = BlendMode.NORMAL;
+            this._gMask.cacheAsBitmap = false;
+            this._gMask.graphics.clear();
+            this._gMask = null;
+         }
+         if(this._sMask)
+         {
+            this._sMask.graphics.clear();
+            this._sMask = null;
+         }
          this._classFactory = null;
          super.onDispose();
       }
@@ -207,9 +235,10 @@ package net.wg.gui.battle.views.situationIndicators
          var _loc4_:WeatherItem = null;
          var _loc5_:PerkItem = null;
          var _loc6_:int = 0;
+         var _loc7_:Boolean = false;
          _loc1_ = this._weatherList.length;
          _loc2_ = this._perksList.length;
-         var _loc7_:Boolean = _loc2_ > 0 && _loc1_ > 0;
+         _loc7_ = _loc2_ > 0 && _loc1_ > 0;
          var _loc8_:int = this.getItemsStartPosition();
          _loc3_ = 0;
          while(_loc3_ < _loc2_)
@@ -273,6 +302,10 @@ package net.wg.gui.battle.views.situationIndicators
          }
          else
          {
+            if(GTweener.getTweens(param1).length)
+            {
+               GTweener.removeTweens(param1);
+            }
             _loc4_ = Math.abs(param1.x - param2) * ANIMATION_SPEED_PER_PX / Time.MILLISECOND_IN_SECOND;
             GTweener.to(param1,_loc4_,{"x":param2},{"ease":Cubic.easeOut});
          }
@@ -296,8 +329,7 @@ package net.wg.gui.battle.views.situationIndicators
       
       private function addWeather(param1:String, param2:int, param3:String) : void
       {
-         var _loc4_:WeatherItem = null;
-         _loc4_ = this._classFactory.getComponent(WEATHER_ITEM_UI_LINKAGE,WeatherItem);
+         var _loc4_:WeatherItem = this._classFactory.getComponent(WEATHER_ITEM_UI_LINKAGE,WeatherItem);
          _loc4_.weatherName = param1;
          _loc4_.state = param2;
          _loc4_.toolTip = param3;
@@ -312,6 +344,30 @@ package net.wg.gui.battle.views.situationIndicators
          this.wrapper.addContent(_loc4_);
       }
       
+      private function addMask() : void
+      {
+         var _loc1_:uint = MAX_VISIBLE_ITEMS * ITEM_FULL_WIDTH + ITEM_GAP;
+         var _loc2_:uint = ITEM_SIZE;
+         var _loc3_:Matrix = new Matrix();
+         _loc3_.createGradientBox(_loc1_,_loc2_,0,0,0);
+         this._gMask.graphics.beginGradientFill(GradientType.LINEAR,[16777215,16777215,16777215,16777215],[0,1,1,0],[0,255 * 0.02,255 * 0.98,255],_loc3_);
+         this._gMask.graphics.drawRect(0,0,_loc1_,_loc2_);
+         this._gMask.graphics.endFill();
+         _loc3_ = null;
+         this.addChild(this._gMask);
+         this._gMask.cacheAsBitmap = true;
+         this._gMask.blendMode = BlendMode.ALPHA;
+         this._sMask.graphics.beginFill(16777215);
+         this._sMask.graphics.drawRect(0,0,_loc1_,_loc2_);
+         this._sMask.graphics.endFill();
+         addChild(this._sMask);
+         this.mask = this._sMask;
+         this._gMask.mouseEnabled = this._sMask.mouseEnabled = false;
+         this._gMask.mouseChildren = this._sMask.mouseChildren = false;
+         this._gMask.x = this._sMask.x = (_loc1_ >> 1) * -1;
+         this._gMask.y = this._sMask.y = this.wrapper.y;
+      }
+      
       private function getItemsStartPosition() : int
       {
          var _loc1_:int = this._perksList.length + this._weatherList.length;
@@ -319,6 +375,10 @@ package net.wg.gui.battle.views.situationIndicators
          if(this._perksList.length > 0 && this._weatherList.length > 0)
          {
             _loc2_ -= GROUPS_GAP >> 1;
+         }
+         if(_loc1_ > MAX_VISIBLE_ITEMS)
+         {
+            _loc2_ -= (_loc1_ - MAX_VISIBLE_ITEMS) * HALF_ITEM_FULL_WIDTH;
          }
          return _loc2_;
       }

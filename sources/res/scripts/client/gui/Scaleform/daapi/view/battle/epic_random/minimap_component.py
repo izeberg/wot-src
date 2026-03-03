@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.Scaleform.daapi.view.battle.classic.minimap import ClassicMinimapComponent
 from gui.Scaleform.daapi.view.battle.classic.minimap import TeamsOrControlsPointsPlugin
 _SCALE_FAC = 2.0 / 3.0

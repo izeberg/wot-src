@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.Scaleform.daapi.view.battle.pve_base.base.state_machine.machine import BaseStateMachine
 from gui.Scaleform.daapi.view.battle.pve_base.progress_counter.state_machine import states
 from gui.Scaleform.daapi.view.battle.pve_base.progress_counter.state_machine import transitions

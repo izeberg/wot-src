@@ -7,10 +7,10 @@ package net.wg.gui.lobby.profile.pages.technique
    public class TechniqueAchievementsBlock extends AwardsTileListBlock
    {
       
+      private static const MIN_ITEMS_COUNT:uint = 5;
+      
       private static var defaultIR_smallWidth:int = -1;
        
-      
-      private const MIN_ITEMS_COUNT:uint = 5;
       
       public function TechniqueAchievementsBlock()
       {
@@ -43,7 +43,7 @@ package net.wg.gui.lobby.profile.pages.technique
          super.configUI();
          tileList.direction = DirectionMode.VERTICAL;
          tileList.columnWidth = getBigRendererWidth();
-         tileList.columnCount = this.MIN_ITEMS_COUNT;
+         tileList.columnCount = MIN_ITEMS_COUNT;
          tileList.itemRenderer = getClass(Linkages.ACHIEVEMENT_COMMON);
       }
       

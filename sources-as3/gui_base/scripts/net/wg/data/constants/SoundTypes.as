@@ -43,8 +43,6 @@ package net.wg.data.constants
       
       public static const CANCEL_BTN:String = "cancelButton";
       
-      public static const MESSANGER_BTN:String = "messengerButton";
-      
       public static const COLOR_SETTINGS_SOUND_TYPE:String = "colorSettingsButtonRenderer";
       
       public static const ARTEFACT_RENDERER:String = "artefactRenderer";

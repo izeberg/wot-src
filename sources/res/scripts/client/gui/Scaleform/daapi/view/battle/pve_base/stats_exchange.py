@@ -1,4 +1,6 @@
+from __future__ import absolute_import
 import typing
+from past.builtins import cmp
 from TeamInfoLivesComponent import TeamInfoLivesComponent
 from constants import BOT_DISPLAY_STATUS
 from gui.Scaleform.daapi.view.battle.classic.stats_exchange import ClassicStatisticsDataController, DynamicVehicleStatsComponent

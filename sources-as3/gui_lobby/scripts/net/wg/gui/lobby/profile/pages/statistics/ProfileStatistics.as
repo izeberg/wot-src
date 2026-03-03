@@ -162,12 +162,9 @@ package net.wg.gui.lobby.profile.pages.statistics
          {
             this.playersStats.removeEventListener(MouseEvent.CLICK,this.onPlayersStatsClickHandler);
          }
-         if(battlesDropdown.visible)
+         if(isWindowed && battlesDropdown.visible)
          {
-            if(isWindowed)
-            {
-               battlesDropdown.y = DROP_DOWN_BATTLE_MODE_WINDOW_Y;
-            }
+            battlesDropdown.y = DROP_DOWN_BATTLE_MODE_WINDOW_Y;
          }
          if(this.seasonDropdown.visible)
          {

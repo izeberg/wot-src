@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/german/G191_StuG_IIIF_CFE_A/_skins/G191_StuG_IIIF_AF_3Dst/crash/lod3/Gun_01</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-0.409009 -0.448020 -0.672610</min>
+		<max>0.407821 0.392631 3.033789</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/german/G191_StuG_IIIF_CFE_A/_skins/G191_StuG_IIIF_AF_3Dst/crash/lod2/Gun_01</nodefullVisual>
+</root>

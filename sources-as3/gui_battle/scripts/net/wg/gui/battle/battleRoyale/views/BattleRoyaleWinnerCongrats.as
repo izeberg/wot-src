@@ -3,6 +3,7 @@ package net.wg.gui.battle.battleRoyale.views
    import flash.display.MovieClip;
    import net.wg.data.constants.InvalidationType;
    import net.wg.gui.battle.battleRoyale.views.components.BattleRoyaleWinnerCongratsAnimation;
+   import net.wg.gui.battle.battleRoyale.views.shamrock.components.results.WinnerShamrockAnimation;
    import net.wg.infrastructure.base.meta.IBattleRoyaleWinnerCongratsMeta;
    import net.wg.infrastructure.base.meta.impl.BattleRoyaleWinnerCongratsMeta;
    import net.wg.utils.IClassFactory;
@@ -19,6 +20,10 @@ package net.wg.gui.battle.battleRoyale.views
       private static const VIGNETTE_MC:String = "BRWinnerCongratsVignetteMC";
       
       private static const GRADIENT_MC:String = "BRWinnerCongratsGradientMC";
+      
+      private static const SHAMROCK_ANIMATION_MC:String = "BRWinnerShamrockAnimationUI";
+      
+      private static const SHAMROCK_ANIMATION_Y_OFFSET:int = 210;
        
       
       public var animation:BattleRoyaleWinnerCongratsAnimation = null;
@@ -26,6 +31,8 @@ package net.wg.gui.battle.battleRoyale.views
       public var vignette:MovieClip = null;
       
       public var gradient:MovieClip = null;
+      
+      public var shamrockAnimation:WinnerShamrockAnimation = null;
       
       private var _classFactory:IClassFactory = null;
       
@@ -54,6 +61,7 @@ package net.wg.gui.battle.battleRoyale.views
             this.animation.gotoAndPlay(FRAME_START);
             this.vignette.gotoAndPlay(FRAME_START);
             this.gradient.gotoAndPlay(FRAME_START);
+            this.shamrockAnimation.gotoAndPlay(FRAME_START);
             playWinSoundS();
          }
          else if(this._isInitialized)
@@ -61,6 +69,7 @@ package net.wg.gui.battle.battleRoyale.views
             this.animation.stop();
             this.vignette.stop();
             this.gradient.stop();
+            this.shamrockAnimation.stop();
          }
       }
       
@@ -72,6 +81,11 @@ package net.wg.gui.battle.battleRoyale.views
          {
             this.animation.dispose();
             this.animation = null;
+         }
+         if(this.shamrockAnimation)
+         {
+            this.shamrockAnimation.dispose();
+            this.shamrockAnimation = null;
          }
          this._isInitialized = false;
          this._classFactory = null;
@@ -89,6 +103,8 @@ package net.wg.gui.battle.battleRoyale.views
             this.gradient.height = this.vignette.height = this._stageHeight;
             this.animation.x = this._stageWidth >> 1;
             this.animation.y = this._stageHeight * VERTICAL_ALIGNMENT_PERCENT >> 0;
+            this.shamrockAnimation.x = this._stageWidth >> 1;
+            this.shamrockAnimation.y = this.animation.y + SHAMROCK_ANIMATION_Y_OFFSET;
          }
       }
       
@@ -106,11 +122,21 @@ package net.wg.gui.battle.battleRoyale.views
             this.animation = this._classFactory.getComponent(ANIMATION_UI,BattleRoyaleWinnerCongratsAnimation);
             this.vignette = this._classFactory.getComponent(VIGNETTE_MC,MovieClip);
             this.gradient = this._classFactory.getComponent(GRADIENT_MC,MovieClip);
+            this.shamrockAnimation = this._classFactory.getComponent(SHAMROCK_ANIMATION_MC,WinnerShamrockAnimation);
             addChild(this.animation);
             addChild(this.vignette);
             addChild(this.gradient);
+            addChild(this.shamrockAnimation);
             invalidateSize();
             this._isInitialized = true;
+         }
+      }
+      
+      public function as_setStpCoins(param1:int, param2:int, param3:int) : void
+      {
+         if(this.shamrockAnimation)
+         {
+            this.shamrockAnimation.setValues(param1,param2,param3);
          }
       }
    }
