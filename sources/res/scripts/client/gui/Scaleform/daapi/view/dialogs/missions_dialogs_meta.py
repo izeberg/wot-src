@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.Scaleform.daapi.view.dialogs import IDialogMeta
 from gui.Scaleform.framework import ScopeTemplates
 from gui.Scaleform.locale.PERSONAL_MISSIONS import PERSONAL_MISSIONS

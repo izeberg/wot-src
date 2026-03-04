@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.Scaleform.daapi.view.battle.classic import ClassicPage
 from gui.Scaleform.daapi.view.battle.shared.crosshair import CrosshairPanelContainer
 from gui.Scaleform.daapi.view.battle.shared.markers2d.manager import KillCamMarkersManager

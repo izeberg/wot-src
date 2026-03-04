@@ -1,7 +1,8 @@
-from base_mode import BaseMode, INVALID_FIELDS
+from __future__ import absolute_import
 from connection_mgr import LOGIN_STATUS
 from constants import IS_CHINA
 from gui import makeHtmlString
+from gui.Scaleform.daapi.view.login.login_modes.base_mode import BaseMode, INVALID_FIELDS
 from gui.Scaleform.Waiting import Waiting
 from gui.login.social_networks import SOCIAL_NETWORKS
 from helpers import dependency
@@ -83,7 +84,9 @@ class SocialMode(BaseMode):
     def __onLoginRejected(self, loginStatus, _):
         socialList = self._loginManager.getAvailableSocialNetworks()
         lastLoginType = self._loginManager.getPreference('login_type')
-        if lastLoginType in socialList and (loginStatus == LOGIN_STATUS.SESSION_END or loginStatus == LOGIN_STATUS.LOGIN_REJECTED_INVALID_PASSWORD):
+        loginStatuses = (
+         LOGIN_STATUS.SESSION_END, LOGIN_STATUS.LOGIN_REJECTED_INVALID_PASSWORD)
+        if lastLoginType in socialList and loginStatus in loginStatuses:
             Waiting.hide('login')
             self._loginManager.clearToken2Preference()
             self._view.update()

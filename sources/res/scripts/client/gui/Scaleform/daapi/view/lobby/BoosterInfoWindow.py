@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.Scaleform import MENU
 from gui.Scaleform.daapi.view.meta.BoosterInfoMeta import BoosterInfoMeta
 from gui.Scaleform.framework.entities.View import View

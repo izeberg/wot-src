@@ -1,4 +1,4 @@
-
+from __future__ import absolute_import
 
 class BUTTON_LINKAGES(object):
     BUTTON_BLACK = 'ButtonBlack'

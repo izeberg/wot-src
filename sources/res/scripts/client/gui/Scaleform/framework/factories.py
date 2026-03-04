@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from constants import IS_DEVELOPMENT
 from debug_utils import LOG_ERROR, LOG_CURRENT_EXCEPTION
 from gui.Scaleform.framework.entities.BaseDAAPIComponent import BaseDAAPIComponent
@@ -5,6 +6,7 @@ from gui.Scaleform.framework.entities.BaseDAAPIModule import BaseDAAPIModule
 from gui.Scaleform.framework.entities.View import View
 from gui.Scaleform.framework.entities.wulf_adapter import WulfPackageLayoutAdapter
 from gui.shared.events import LoadViewEvent
+from py2to3.utils import getargspec
 from soft_exception import SoftException
 
 class EntityFactory(object):
@@ -79,8 +81,7 @@ class ViewFactory(DAAPIModuleFactory):
                 raise SoftException(('Class is not valid. {}').format(errorMessage))
         if WulfPackageLayoutAdapter.shoudBeWrapped(settings.clazz):
             if IS_DEVELOPMENT:
-                import inspect
-                argsData = inspect.getargspec(settings.clazz.__init__)
+                argsData = getargspec(settings.clazz.__init__)
                 if 'layer' not in argsData.args:
                     raise SoftException(('Constructor of {} must contain "layer" argument').format(settings.clazz))
             return
@@ -161,10 +162,7 @@ class EntitiesFactories(object):
         return
 
     def getSettings(self, alias):
-        if alias in self.__settings:
-            return self.__settings[alias]
-        else:
-            return
+        return self.__settings.get(alias, None)
 
     def getAliasByEvent(self, eventType):
         alias = None

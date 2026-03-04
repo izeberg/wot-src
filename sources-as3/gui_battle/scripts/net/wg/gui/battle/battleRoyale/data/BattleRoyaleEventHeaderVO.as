@@ -14,6 +14,10 @@ package net.wg.gui.battle.battleRoyale.data
       
       public var battleType:String = "";
       
+      public var battleTypeIconPathSmall:String = "";
+      
+      public var battleTypeIconPathBig:String = "";
+      
       public function BattleRoyaleEventHeaderVO(param1:Object = null)
       {
          super(param1);

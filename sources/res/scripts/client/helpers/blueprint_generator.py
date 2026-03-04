@@ -112,7 +112,7 @@ class BlueprintGenerator(object):
                     for vehicleName in layout['vehicles'].asString.split():
                         layouts[vehicleName] = bpLayout
 
-            except:
+            except Exception:
                 _logger.exception("Can't read blueprint layouts config")
 
         finally:

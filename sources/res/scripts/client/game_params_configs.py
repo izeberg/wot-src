@@ -6,7 +6,7 @@ from config_schemas.umg import umgMissionsConfigSchema, umgEventsConfigSchema
 from config_schemas.umg_config import umgConfigSchema
 from player_satisfaction_schema import playerSatisfactionSchema
 from schema_manager import getSchemaManager
-import armor_inspector_common.schemas, hints_common.prebattle.newbie.schemas, hints_common.prebattle.schemas, hints_common.battle.schemas.newbie
+import armor_inspector_common.schemas, hints_common.prebattle.newbie.schemas, hints_common.prebattle.schemas, hints_common.battle.schemas.newbie, renewable_subscription_common.schema
 from weekly_quests_common.weekly_quests_schema import weeklyQuestsSchema
 if typing.TYPE_CHECKING:
     from schema_manager import SchemaManager
@@ -29,3 +29,4 @@ def _registerSchemas(schemaManager):
     schemaManager.registerSchema(umgConfigSchema)
     schemaManager.registerSchema(weeklyQuestsSchema)
     schemaManager.registerSchema(armor_inspector_common.schemas.armorInspectorConfigSchema)
+    schemaManager.registerSchema(renewable_subscription_common.schema.renewableSubscriptionsConfigSchema)

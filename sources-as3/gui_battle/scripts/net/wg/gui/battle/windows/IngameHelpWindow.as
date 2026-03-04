@@ -12,17 +12,21 @@ package net.wg.gui.battle.windows
    import net.wg.infrastructure.base.meta.impl.IngameHelpWindowMeta;
    import net.wg.infrastructure.constants.WindowViewInvalidationType;
    import net.wg.infrastructure.events.ColorSchemeEvent;
+   import net.wg.infrastructure.interfaces.IWindow;
    import net.wg.infrastructure.managers.IColorSchemeManager;
    import net.wg.utils.IAssertable;
    import net.wg.utils.ICommons;
    import scaleform.clik.events.ButtonEvent;
+   import scaleform.clik.utils.Padding;
    
    public class IngameHelpWindow extends IngameHelpWindowMeta implements IIngameHelpWindowMeta
    {
       
-      private static const CROSSHAIRCONTROLS_TIMELEFT:Number = 7.42;
+      private static const CROSSHAIR_CONTROLS_TIMELEFT:Number = 7.42;
       
       private static const SCHEME_NAME:String = "vm_enemy";
+      
+      private static const WINDOW_PADDING:Padding = new Padding(-25,0,0,0);
        
       
       public var closeBtn:CloseButtonText = null;
@@ -256,6 +260,15 @@ package net.wg.gui.battle.windows
          this._colorMgr.addEventListener(ColorSchemeEvent.SCHEMAS_UPDATED,this.onColorSchemasUpdatedHandler);
       }
       
+      override public function setWindow(param1:IWindow) : void
+      {
+         super.setWindow(param1);
+         if(window)
+         {
+            window.contentPadding = WINDOW_PADDING;
+         }
+      }
+      
       override protected function configUI() : void
       {
          super.configUI();
@@ -483,7 +496,7 @@ package net.wg.gui.battle.windows
       
       private function setCrossHairTexts() : void
       {
-         this.exampleTimeLeft.text = App.utils.locale.float(CROSSHAIRCONTROLS_TIMELEFT);
+         this.exampleTimeLeft.text = App.utils.locale.float(CROSSHAIR_CONTROLS_TIMELEFT);
          this.exampleName.text = INGAME_HELP.CROSSHAIRCONTROLS_EXAMPLE_NAME;
          this.exampleHp.text = INGAME_HELP.CROSSHAIRCONTROLS_EXAMPLE_HP;
          this.exampleHit.text = INGAME_HELP.CROSSHAIRCONTROLS_EXAMPLE_DAMAGE;

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/german/G121_Grille_15_L63/_skins/G121_Grille_15_L63_BPXIX_3Dst/crash/lod2/Chassis</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.539681 0.003959 -2.948030</min>
+		<max>1.539673 1.393598 3.142356</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/german/G121_Grille_15_L63/_skins/G121_Grille_15_L63_BPXIX_3Dst/crash/lod1/Chassis</nodefullVisual>
+</root>

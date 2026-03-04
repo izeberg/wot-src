@@ -49,12 +49,9 @@ package net.wg.gui.components.paginator
       
       public function ensureIndexVisible(param1:int) : void
       {
-         if(this.isMultiPages())
+         if(this._maxElementsPerPage * this._currentPageIndex < param1 || this._maxElementsPerPage * (this._currentPageIndex + 1) >= param1 && this.isMultiPages())
          {
-            if(this._maxElementsPerPage * this._currentPageIndex < param1 || this._maxElementsPerPage * (this._currentPageIndex + 1) >= param1)
-            {
-               this.currentPageIndex = param1 / this._maxElementsPerPage;
-            }
+            this.currentPageIndex = param1 / this._maxElementsPerPage;
          }
       }
       

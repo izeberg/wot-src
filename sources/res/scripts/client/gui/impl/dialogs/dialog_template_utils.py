@@ -1,4 +1,7 @@
-import typing, constants
+from __future__ import absolute_import
+import typing
+from past.builtins import long
+import constants
 from gui.Scaleform.genConsts.CURRENCIES_CONSTANTS import CURRENCIES_CONSTANTS
 from gui.impl import backport
 from gui.impl.gen_utils import DynAccessor

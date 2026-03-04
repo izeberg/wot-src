@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/italy/It40_Predatore/crash/lod1/Gun_02</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-0.368481 -0.301823 -0.762864</min>
+		<max>0.368253 0.398814 5.893002</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/italy/It40_Predatore/crash/lod0/Gun_02</nodefullVisual>
+</root>

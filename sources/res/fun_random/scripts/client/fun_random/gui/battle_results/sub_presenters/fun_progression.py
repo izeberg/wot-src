@@ -12,7 +12,6 @@ from gui.battle_results.presenters.battle_results_sub_presenter import BattleRes
 from gui.impl.backport.backport_tooltip import createBackportTooltipContent
 from gui.impl.gen import R
 from gui.impl.lobby.tooltips.additional_rewards_tooltip import AdditionalRewardsTooltip
-from gui.impl.lobby.lootbox_system.base.tooltips.box_tooltip import BoxTooltip
 if typing.TYPE_CHECKING:
     from frameworks.wulf import ViewModel
     from gui.battle_results.stats_ctrl import BattleResults
@@ -58,21 +57,16 @@ class FunProgressionSubPresenter(BattleResultsSubPresenter, FunProgressionWatche
             if lootboxID:
                 return FunRandomLootBoxTooltipView(lootboxID)
             return
-        if contentID == R.views.mono.lootbox.tooltips.box_tooltip():
-            tooltipData = self.__getTooltipData(event)
-            if tooltipData is None:
-                return
-            return BoxTooltip(*tooltipData.specialArgs)
+        if contentID == R.views.lobby.tooltips.AdditionalRewardsTooltip():
+            showCount = max(0, int(event.getArgument('showCount')) - 1)
+            bonuses = packBonuses(self.__rewardsData.bonuses, showCount, isSpecial=True)
+            if bonuses:
+                return AdditionalRewardsTooltip(bonuses)
+            return
+        if contentID == R.views.common.tooltip_window.backport_tooltip_content.BackportTooltipContent():
+            tooltipId = event.getArgument('tooltipId')
+            return createBackportTooltipContent(specialAlias=tooltipId, tooltipData=self.__getTooltipData(event))
         else:
-            if contentID == R.views.lobby.tooltips.AdditionalRewardsTooltip():
-                showCount = max(0, int(event.getArgument('showCount')) - 1)
-                bonuses = packBonuses(self.__rewardsData.bonuses, showCount, isSpecial=True)
-                if bonuses:
-                    return AdditionalRewardsTooltip(bonuses)
-                return
-            if contentID == R.views.common.tooltip_window.backport_tooltip_content.BackportTooltipContent():
-                tooltipId = event.getArgument('tooltipId')
-                return createBackportTooltipContent(specialAlias=tooltipId, tooltipData=self.__getTooltipData(event), event=event)
             return super(FunProgressionSubPresenter, self).createToolTipContent(event, contentID)
 
     def __getTooltipData(self, event):

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/american/A69_T110E5/_skins/A69_T110E5_BPXIX_3Dst/normal/lod4/Gun_01</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-0.489749 -0.357967 -0.029982</min>
+		<max>0.489701 0.533369 6.022581</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/american/A69_T110E5/_skins/A69_T110E5_BPXIX_3Dst/normal/lod3/Gun_01</nodefullVisual>
+</root>

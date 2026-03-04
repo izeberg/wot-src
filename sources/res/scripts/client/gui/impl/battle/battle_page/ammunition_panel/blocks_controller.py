@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from typing import TYPE_CHECKING
 from gui.impl.common.ammunition_panel.ammunition_blocks_controller import AmmunitionBlocksController
 from gui.impl.gen.view_models.views.battle.battle_page.prebattle_shell_ammunition_slot import PrebattleShellAmmunitionSlot, ShellBattleState

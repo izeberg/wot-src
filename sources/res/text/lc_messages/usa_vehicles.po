@@ -1613,6 +1613,32 @@ msgstr "Patton Tank"
 msgid "A169_PattonIII_120_short_special"
 msgstr "A powerful gun with good elevation/depression angles"
 
+msgid "A170_M_VII_Y"
+msgstr "M-VII-Y"
+
+msgid "A170_M_VII_Y_descr"
+msgstr ""
+"In 1953, the U.S. military began a new stage in developing promising tanks. "
+"One of the areas was a series of vehicles proposed in June 1953 by H.L. Yoh "
+"Company. The series stood out for its extremely innovative technical "
+"solutions. The distinguishing feature of these tanks was a so-called reserve"
+" track, and the most unusual project was the M-VII-Y. To shorten the hull, "
+"the power unit (engine and fuel tank) were moved to the turret, being placed"
+" in a developed rear recess. No prototype was made."
+
+msgid "A170_M_VII_Y_long_special"
+msgstr ""
+"The M-VII-Y is a new Tier IX American heavy tank with the Yoh mechanic. Its "
+"reserve tracks can work very effectively, so not much speed is lost when the"
+" main tracks are destroyed. The vehicle is fairly versatile in all other "
+"aspects, with good mobility, strong turret armor, and a comfortable gun."
+
+msgid "A170_M_VII_Y_short"
+msgstr "M-VII-Y"
+
+msgid "A170_M_VII_Y_short_special"
+msgstr "Reserve track, good turret armor and gun depression"
+
 msgid "A171_IMT"
 msgstr "IMT"
 
@@ -1920,13 +1946,18 @@ msgstr ""
 "The work was stopped before a prototype was built."
 
 msgid "A188_Ares_MTB_long_special"
-msgstr "?empty?"
+msgstr ""
+"The Ares MTB is a Tier IX American medium tank whose main feature is a "
+"thermal overheat control autocannon. This firing system is well-suited to "
+"unexpected attacks and allows the vehicle to inflict massive damage in a "
+"short time. Comfortable gun depression and good mobility complement the "
+"armament."
 
 msgid "A188_Ares_MTB_short"
 msgstr "Ares MTB"
 
 msgid "A188_Ares_MTB_short_special"
-msgstr "?empty?"
+msgstr "Thermal overheat control autocannon, reserve track"
 
 msgid "A189_Ares_90"
 msgstr "Ares 90"
@@ -2013,6 +2044,34 @@ msgstr "Firefly Saunders"
 
 msgid "A192_M4A4_Firefly_CFE_A_short_special"
 msgstr "An accurate gun with high penetration and rate of fire"
+
+msgid "A194_AHT_7"
+msgstr "AHT-7"
+
+msgid "A194_AHT_7_descr"
+msgstr ""
+"A concept for an assault tank from the late 1960s. Placing the engine in the"
+" rear recess of the turret made it possible to significantly shorten the "
+"hull, which reduced the weight and allowed for enhancing the armor. The tank"
+" was supposed to be armed with a British 165 mm L9A1 gun. A license would "
+"have been purchased and production set up in the U.S.A. for this purpose. "
+"However, due to difficulties in unifying the project with the M48 and M60, "
+"which were already in service, the U.S. Army decided to discontinue work on "
+"the vehicle."
+
+msgid "A194_AHT_7_long_special"
+msgstr ""
+"The AHT-7 is a Tier X American tank destroyer. Its 165.1 mm gun causes "
+"massive damage, further enhanced by its special HE shells with exceptional "
+"penetration. Good gun depression allows you to peek from uneven terrain and "
+"hold unexpected firing lanes. The reserve track mechanic prevents the "
+"vehicle from being completely immobilized."
+
+msgid "A194_AHT_7_short"
+msgstr "AHT-7"
+
+msgid "A194_AHT_7_short_special"
+msgstr "Huge alpha damage, reserve track"
 
 msgid "A21_T14_long_special"
 msgstr ""
@@ -2595,11 +2654,17 @@ msgstr "AN/GRC-7 LTC"
 msgid "AN_GRC_8"
 msgstr "AN/GRC-8"
 
+msgid "AN_GRC_8A"
+msgstr "AN/GRC-8A"
+
 msgid "AN_GRC_8D"
 msgstr "AN/GRC-8D"
 
 msgid "AN_GRC_8E"
 msgstr "AN GRC 8E"
+
+msgid "AN_GRC_8F"
+msgstr "AN/GRC-8F"
 
 msgid "AN_PRC_10"
 msgstr "AN/PRC-10"
@@ -2995,6 +3060,9 @@ msgstr "XM57"
 msgid "Chassis_A169_PattonIII_120"
 msgstr "Patton the Tank"
 
+msgid "Chassis_A170_M_VII_Y"
+msgstr "M-VII-Y"
+
 msgid "Chassis_A171_IMT"
 msgstr "IMT"
 
@@ -3054,6 +3122,9 @@ msgstr "Ares 2000"
 
 msgid "Chassis_A192_M4A4_Firefly_CFE_A"
 msgstr "Sherman Firefly Saunders"
+
+msgid "Chassis_A194_AHT_7"
+msgstr "AHT-7"
 
 msgid "Chassis_A22_M5_Stuart"
 msgstr "M5 Stuart"
@@ -3407,6 +3478,14 @@ msgstr "Continental AOSI-895-5C"
 msgid "Continental_AOSI_1195_5"
 msgstr "Continental AOSI-1195-5"
 
+msgid "Continental_AOSI_1195_5F"
+msgstr "Continental AOSI-1195-5F"
+
+msgid "Continental_AOSI_1195_5F_short"
+msgstr ""
+"Continental\n"
+"AOSI-1195-5F"
+
 msgid "Continental_AOSI_1195_5_Y_III_A"
 msgstr "Continental AOSI-1195-5 Y III A"
 
@@ -3449,6 +3528,14 @@ msgstr ""
 
 msgid "Continental_AOSI_1195_5_Y_V"
 msgstr "Continental AOSI-1195-5 Y V"
+
+msgid "Continental_AOSI_1195_5_Y_VII"
+msgstr "Continental AOSI-1195-5 Y VII"
+
+msgid "Continental_AOSI_1195_5_Y_VII_short"
+msgstr ""
+"Continental\n"
+"AOSI-1195-5 Y VII"
 
 msgid "Continental_AOSI_1195_5_Y_VI_A"
 msgstr "Continental AOSI-1195-5 Y VI A"
@@ -5106,6 +5193,9 @@ msgstr "XM57"
 msgid "Turret_1_A169_PattonIII_120"
 msgstr "Patton the Tank"
 
+msgid "Turret_1_A170_M_VII_Y"
+msgstr "M-VII-Y"
+
 msgid "Turret_1_A171_IMT"
 msgstr "IMT"
 
@@ -5156,6 +5246,9 @@ msgstr "Ares 2000"
 
 msgid "Turret_1_A192_M4A4_Firefly_CFE_A"
 msgstr "Sherman Firefly Saunders"
+
+msgid "Turret_1_A194_AHT_7"
+msgstr "AHT-7"
 
 msgid "Turret_1_A22_M5_Stuart"
 msgstr "M5 Stuart"
@@ -6148,6 +6241,9 @@ msgstr "AP T42 (T28)"
 msgid "_120mm_AP_T42_T95"
 msgstr "AP T42 (T95)"
 
+msgid "_120mm_AP_T_M358"
+msgstr "M358"
+
 msgid "_120mm_AP_T_M358E1"
 msgstr "AP-T M358E1"
 
@@ -6283,6 +6379,9 @@ msgstr "HEAT M835"
 msgid "_120mm_HEAT_T153E18"
 msgstr "HEAT T153E18"
 
+msgid "_120mm_HEAT_T_M469"
+msgstr "M469"
+
 msgid "_120mm_HEAT_T_M469E1"
 msgstr "HEAT-T M469E1"
 
@@ -6349,6 +6448,9 @@ msgstr "HE T67 (T28)"
 msgid "_120mm_HE_T67_T95"
 msgstr "HE T67 (T95)"
 
+msgid "_120mm_HE_T_M356"
+msgstr "M356"
+
 msgid "_120mm_HE_T_M356E1"
 msgstr "HE-T M356E1"
 
@@ -6363,6 +6465,9 @@ msgstr "T102 SPHT"
 
 msgid "_120mm_MPP_Gun_RHD"
 msgstr "120 mm MPP Gun RHD"
+
+msgid "_120mm_T123E1"
+msgstr "120 mm T123E1"
 
 msgid "_120mm_T123E2_SPG"
 msgstr "120 mm T123E2 SPG"
@@ -6576,6 +6681,18 @@ msgstr "155 mm Howitzer M1 (M41)"
 
 msgid "_155mm_Howitzer_M45"
 msgstr "155 mm Howitzer M45"
+
+msgid "_165_1mm_HEAT_M623E1"
+msgstr "HEAT M623E1"
+
+msgid "_165_1mm_HESH_M123E2"
+msgstr "HESH M123E2"
+
+msgid "_165_1mm_HE_M123E1"
+msgstr "HE M123E1"
+
+msgid "_165_1mm_M135E1"
+msgstr "165.1 mm M135E1"
 
 msgid "_17pdr_APC_Mk4TA"
 msgstr "APDS 17-Pr. Mk. 1TA"

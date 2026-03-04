@@ -47,17 +47,11 @@ package net.wg.gui.lobby.hangar
                case HANGAR_CONSTS.CAROUSEL:
                   this._hangar.carouselVisible = false;
                   break;
-               case HANGAR_CONSTS.DAILY_QUEST:
-                  this._hangar.dqWidget.visible = false;
-                  break;
                case HANGAR_CONSTS.SWITCH_MODE:
                   this._hangar.switchModePanel.visible = false;
                   break;
                case HANGAR_CONSTS.VEHICLE_PARAMETERS:
                   this._hangar.params.visible = false;
-                  break;
-               case HANGAR_CONSTS.EVENT_ENTRIES_CONTAINER:
-                  this._hangar.eventsEntryContainer.visible = false;
                   break;
                case HANGAR_CONSTS.HEADER:
                   this._hangar.header.visible = false;
@@ -65,12 +59,6 @@ package net.wg.gui.lobby.hangar
                case HANGAR_CONSTS.VEHICLE_RESEARCH:
                   this._hangar.vehResearchBG.visible = false;
                   this._hangar.vehResearchPanel.visible = false;
-                  break;
-               case HANGAR_CONSTS.MINI_CLIENT:
-                  if(this._hangar.miniClient)
-                  {
-                     this._hangar.miniClient.visible = false;
-                  }
                   break;
                case HANGAR_CONSTS.ALERT_MESSAGE:
                   this._hangar.removeAlertMessage();
@@ -101,17 +89,11 @@ package net.wg.gui.lobby.hangar
                case HANGAR_CONSTS.CAROUSEL:
                   this._hangar.carouselVisible = true;
                   break;
-               case HANGAR_CONSTS.DAILY_QUEST:
-                  this._hangar.dqWidget.visible = true;
-                  break;
                case HANGAR_CONSTS.SWITCH_MODE:
                   this._hangar.switchModePanel.visible = true;
                   break;
                case HANGAR_CONSTS.VEHICLE_PARAMETERS:
                   this._hangar.params.visible = true;
-                  break;
-               case HANGAR_CONSTS.EVENT_ENTRIES_CONTAINER:
-                  this._hangar.eventsEntryContainer.visible = true;
                   break;
                case HANGAR_CONSTS.HEADER:
                   this._hangar.header.visible = true;
@@ -119,12 +101,6 @@ package net.wg.gui.lobby.hangar
                case HANGAR_CONSTS.VEHICLE_RESEARCH:
                   this._hangar.vehResearchBG.visible = true;
                   this._hangar.vehResearchPanel.visible = true;
-                  break;
-               case HANGAR_CONSTS.MINI_CLIENT:
-                  if(this._hangar.miniClient)
-                  {
-                     this._hangar.miniClient.visible = true;
-                  }
                   break;
                case HANGAR_CONSTS.ALERT_MESSAGE:
                   this._hangar.addAlertMessage();

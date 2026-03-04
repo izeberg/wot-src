@@ -356,10 +356,8 @@ package net.wg.gui.lobby.personalMissions.components
          this.lock.source = RES_ICONS.MAPS_ICONS_PERSONALMISSIONS_LOCK_PROGRESS;
       }
       
-      override protected function onDispose() : void
+      override protected function onBeforeDispose() : void
       {
-         this._vo = null;
-         this.removeDynamicBtns();
          this.mainConditionsTf.removeEventListener(MouseEvent.MOUSE_OVER,this.onConditionsTfMouseOverHandler);
          this.mainConditionsTf.removeEventListener(MouseEvent.MOUSE_OUT,this.onComponentMouseOutHandler);
          this.addConditionsTf.removeEventListener(MouseEvent.MOUSE_OVER,this.onConditionsFullyTfMouseOverHandler);
@@ -367,27 +365,36 @@ package net.wg.gui.lobby.personalMissions.components
          this.startBtn.removeEventListener(ButtonEvent.CLICK,this.onStartBtnClickHandler);
          this.startBtn.removeEventListener(MouseEvent.MOUSE_OVER,this.onStartBtnMouseOverHandler);
          this.startBtn.removeEventListener(MouseEvent.MOUSE_OUT,this.onComponentMouseOutHandler);
-         this.startBtn.dispose();
-         this.startBtn = null;
          this.retryBtn.removeEventListener(ButtonEvent.CLICK,this.onRetryBtnClickHandler);
          this.retryBtn.removeEventListener(MouseEvent.MOUSE_OVER,this.onRetryBtnMouseOverHandler);
          this.retryBtn.removeEventListener(MouseEvent.MOUSE_OUT,this.onComponentMouseOutHandler);
-         this.retryBtn.dispose();
-         this.retryBtn = null;
          this.discardBtn.removeEventListener(ButtonEvent.CLICK,this.onDiscardBtnClickHandler);
          this.discardBtn.removeEventListener(MouseEvent.MOUSE_OVER,this.onDiscardBtnMouseOverHandler);
          this.discardBtn.removeEventListener(MouseEvent.MOUSE_OUT,this.onComponentMouseOutHandler);
-         this.discardBtn.dispose();
-         this.discardBtn = null;
          this.obtainAwardBtn.removeEventListener(ButtonEvent.CLICK,this.onObtainAwardBtnClickHandler);
          this.obtainAwardBtn.removeEventListener(MouseEvent.MOUSE_OVER,this.onObtainAwardBtnMouseOverHandler);
          this.obtainAwardBtn.removeEventListener(MouseEvent.MOUSE_OUT,this.onComponentMouseOutHandler);
-         this.obtainAwardBtn.dispose();
-         this.obtainAwardBtn = null;
          bottomStatus2Tf.removeEventListener(MouseEvent.ROLL_OVER,this.onBottomStatus2LabelTfRollOverHandler);
          bottomStatus2Tf.removeEventListener(MouseEvent.ROLL_OUT,this.onComponentRollOutHandler);
          this.conditionsContainer.removeEventListener(MouseEvent.MOUSE_WHEEL,this.onConditionsContainerMouseWheelHandler);
          this.scrollBar.removeEventListener(Event.SCROLL,this.onScrollBarScrollHandler);
+         this.lock.removeEventListener(MouseEvent.ROLL_OVER,this.onLockRollOverHandler);
+         this.lock.removeEventListener(MouseEvent.ROLL_OUT,this.onComponentRollOutHandler);
+         super.onBeforeDispose();
+      }
+      
+      override protected function onDispose() : void
+      {
+         this._vo = null;
+         this.removeDynamicBtns();
+         this.startBtn.dispose();
+         this.startBtn = null;
+         this.retryBtn.dispose();
+         this.retryBtn = null;
+         this.discardBtn.dispose();
+         this.discardBtn = null;
+         this.obtainAwardBtn.dispose();
+         this.obtainAwardBtn = null;
          this.headerContainer.dispose();
          this.headerContainer = null;
          this.cleanConditions(this._bodyConditions);
@@ -409,8 +416,6 @@ package net.wg.gui.lobby.personalMissions.components
          this._commons = null;
          this.scrollBar.dispose();
          this.scrollBar = null;
-         this.lock.removeEventListener(MouseEvent.ROLL_OVER,this.onLockRollOverHandler);
-         this.lock.removeEventListener(MouseEvent.ROLL_OUT,this.onComponentRollOutHandler);
          this.lock.dispose();
          this.lock = null;
          super.onDispose();

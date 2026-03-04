@@ -1,6 +1,6 @@
 from __future__ import absolute_import
 import typing
-from constants import ARENA_BONUS_TYPE
+from fun_random_common.fun_constants import ARENA_BONUS_TYPE
 from fun_random.gui.battle_results.packers.fun_packers import FunRandomTeamStats
 from fun_random.gui.impl.gen.view_models.views.lobby.feature.battle_results.fun_team_stats_model import FunTeamStatsModel
 from gui.battle_results.pbs_helpers.team_stats_helpers import getPlayerContextMenuArgs
@@ -17,6 +17,7 @@ if typing.TYPE_CHECKING:
 class FunTeamStatsSubPresenter(BattleResultsSubPresenter):
     __connectionMgr = dependency.descriptor(IConnectionManager)
     _CONTEXT_MENU_TYPE = CONTEXT_MENU_HANDLER_TYPE.BATTLE_RESULTS_USER
+    _PACKER_CLS = FunRandomTeamStats
 
     @classmethod
     def getViewModelType(cls):
@@ -24,7 +25,7 @@ class FunTeamStatsSubPresenter(BattleResultsSubPresenter):
 
     def packBattleResults(self, battleResults):
         with self.getViewModel().transaction() as (model):
-            FunRandomTeamStats.packModel(model, battleResults)
+            self._PACKER_CLS.packModel(model, battleResults)
 
     def createContextMenu(self, event):
         if event.contentID == R.views.common.BackportContextMenu():

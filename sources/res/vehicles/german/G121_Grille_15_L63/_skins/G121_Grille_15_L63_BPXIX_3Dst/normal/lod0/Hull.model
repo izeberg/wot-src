@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<extent>32.000000</extent>
+	<materialNames/>
+	<visibilityBox>
+		<min>-1.869333 -0.909155 -3.134619</min>
+		<max>1.789763 0.799942 3.670779</max>
+	</visibilityBox>
+	<parent>vehicles/german/G121_Grille_15_L63/_skins/G121_Grille_15_L63_BPXIX_3Dst/normal/lod1/Hull</parent>
+	<nodefullVisual>vehicles/german/G121_Grille_15_L63/_skins/G121_Grille_15_L63_BPXIX_3Dst/normal/lod0/Hull</nodefullVisual>
+</root>

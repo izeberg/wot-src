@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+from future.utils import viewvalues
 import BigWorld
 from gui import makeHtmlString
 from gui.impl import backport
@@ -20,7 +22,7 @@ def getVehicleName(vehicle):
 
 def getSlotsStatesData(vehs, cooldowns, disabled, limits={}):
     result = []
-    for v in vehs.itervalues():
+    for v in viewvalues(vehs):
         compactDescr = v.intCD
         cooldownTime = cooldowns.get(compactDescr, 0)
         cooldownStr = ''

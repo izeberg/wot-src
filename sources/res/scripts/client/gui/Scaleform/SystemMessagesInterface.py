@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import time, account_helpers
 from MemoryCriticalController import g_critMemHandler
 from PlayerEvents import g_playerEvents
@@ -56,10 +57,9 @@ class SystemMessagesInterface(ISystemMessages):
     def pushI18nMessage(self, key, *args, **kwargs):
         text = i18n.makeString(key, *args, **kwargs)
         msgType = kwargs.get('type', SM_TYPE.Information)
-        msgPriority = kwargs.get('priority', None)
-        messageData = kwargs.get('messageData', None)
+        msgPriority = kwargs.get('priority')
+        messageData = kwargs.get('messageData')
         self.pushMessage(text, msgType, msgPriority, messageData)
-        return
 
     def __onAccountShowGUI(self, ctx):
         self.__checkPremiumAccountExpiry()

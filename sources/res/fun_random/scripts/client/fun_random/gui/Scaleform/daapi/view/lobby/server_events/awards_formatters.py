@@ -2,7 +2,6 @@ from __future__ import absolute_import
 from future.utils import viewvalues
 from constants import PREMIUM_ENTITLEMENTS
 from fun_random.gui.feature.util.fun_mixins import FunAssetPacksMixin
-from fun_random.gui.impl.lobby.common.bonuses import FunRandomGoodiesBonusFormatter
 from fun_random.gui.impl.lobby.common.lootboxes import FunRandomLootBoxTypes, sortTokenFunc
 from gui.Scaleform.daapi.view.lobby.missions.awards_formatters import CurtailingAwardsComposer, formatShortData
 from gui.impl import backport
@@ -32,7 +31,6 @@ def getFunSpecialFormatterMap():
 
 def getFunAwardsPacker(isSpecial=False):
     mapping = getFunSpecialFormatterMap() if isSpecial else getFunFormatterMap()
-    mapping.update({'goodies': FunRandomGoodiesBonusFormatter()})
     return AwardsPacker(mapping)
 
 
@@ -48,9 +46,7 @@ class FunRandomLootBoxFormatter(TokenBonusFormatter, FunAssetPacksMixin):
         return result
 
     def _getLootboxUserName(self, lootBox):
-        if lootBox.getType() in FunRandomLootBoxTypes.ALL:
-            return backport.text(self.getModeLocalsResRoot().lootbox.dyn(lootBox.getType())())
-        return super(FunRandomLootBoxFormatter, self)._getLootboxUserName(lootBox)
+        return backport.text(self.getModeLocalsResRoot().lootbox.dyn(lootBox.getType())())
 
     def _getLootboxIcon(self, lootBox, size):
         if lootBox.getType() in FunRandomLootBoxTypes.ALL:

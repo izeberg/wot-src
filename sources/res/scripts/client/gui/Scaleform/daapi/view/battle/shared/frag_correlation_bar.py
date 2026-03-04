@@ -1,3 +1,4 @@
+from __future__ import absolute_import, division
 from collections import namedtuple
 import typing
 from account_helpers.settings_core.settings_constants import ScorePanelStorageKeys, GAME

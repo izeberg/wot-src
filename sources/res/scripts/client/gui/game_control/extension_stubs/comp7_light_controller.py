@@ -51,6 +51,9 @@ class Comp7LightController(IComp7LightController):
     def hasPrimeTimesLeftForCurrentCycle(self):
         return False
 
+    def hasPrimeTimesPassedForCurrentCycle(self):
+        return False
+
     def getClosestStateChangeTime(self, now=None):
         return 0
 

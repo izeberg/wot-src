@@ -105,8 +105,47 @@ msgstr "Manage"
 msgid "headerButton/state/available"
 msgstr "Activate"
 
-msgid "headerButton/state/cancelled"
-msgstr "Manage"
+msgid "headerButton/tooltip/Active"
+msgstr "Active"
+
+msgid "headerButton/tooltip/Cancelled"
+msgstr "Canceled"
+
+msgid "headerButton/tooltip/expiresOn"
+msgstr "Expires on %(date)"
+
+msgid "headerButton/tooltip/extendsOn"
+msgstr "Extends on %(date)"
+
+msgid "headerButton/tooltip/getSubscriptionHint"
+msgstr "Click to explore"
+
+msgid "headerButton/tooltip/nonSubscriberTitle"
+msgstr "Subscription"
+
+msgid "headerButton/tooltip/periodicity"
+msgstr "%(number)-day plan"
+
+msgid "headerButton/tooltip/title"
+msgstr "WoT Plus"
+
+msgid "headerButton/tooltip/titleCore"
+msgstr "WoT Plus Core"
+
+msgid "headerButton/tooltip/titlePro"
+msgstr "WoT Plus Pro"
+
+msgid "headerButton/tooltip/unavailable"
+msgstr "WoT Plus is temporary unavailable"
+
+msgid "headerButton/tooltip/unlockPro"
+msgstr "Unlock with WoT Plus Pro"
+
+msgid "headerButton/tooltip/unlockSteamAndCn"
+msgstr "Unlock with WoT Plus"
+
+msgid "headerButton/tooltip/unlockSubscription"
+msgstr "Unlock with WoT Plus Core or Pro"
 
 msgid "rentButton/label"
 msgstr "Rent"

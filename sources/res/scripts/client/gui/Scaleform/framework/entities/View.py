@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, typing, BigWorld
 from collections import namedtuple
 from gui.Scaleform.framework.settings import UIFrameworkImpl
@@ -29,6 +30,9 @@ class ViewKey(_ViewKey):
     def __repr__(self):
         return ('{}[alias={}, name={}]').format(self.__class__.__name__, self.alias, self.name)
 
+    def __hash__(self):
+        return hash((self.alias, self.name))
+
     def __eq__(self, other):
         if isinstance(other, ViewKey):
             return self.name == other.name and self.alias == other.alias
@@ -36,6 +40,9 @@ class ViewKey(_ViewKey):
 
 
 class ViewKeyDynamic(ViewKey):
+
+    def __hash__(self):
+        return hash((self.alias, self.name))
 
     def __eq__(self, other):
         if isinstance(other, ViewKey):
@@ -51,7 +58,7 @@ class View(AbstractViewMeta, ViewInterface):
         super(View, self).__init__()
         from gui.Scaleform.framework import ViewSettings
         self.__settings = ViewSettings()
-        self.__uid = _view_id_generator.next()
+        self.__uid = _view_id_generator.nextSequenceID
         self.__key = ViewKey(None, None)
         self.__soundExtension = None
         self.initSoundManager(self._COMMON_SOUND_SPACE)

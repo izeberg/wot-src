@@ -110,6 +110,15 @@ msgstr "Stay out of combat!"
 msgid "battle/respawnMessagePanel/squad/stayInCover/title"
 msgstr "Respawning Ally"
 
+msgid "battle/winnerCongratulationsView/bonusActivated"
+msgstr "Bonus activated!"
+
+msgid "battle/winnerCongratulationsView/bonusForFirstPlace"
+msgstr "Reward for first place"
+
+msgid "battle/winnerCongratulationsView/colected"
+msgstr "Collected in battle"
+
 msgid "battle/winnerCongratulationsView/title"
 msgstr "VICTORY"
 
@@ -196,49 +205,49 @@ msgstr "Player's actual nickname: {name}"
 msgid "battleResult/stats/anonymizer/header"
 msgstr "Player's actual nickname was changed to {name}"
 
-msgid "battleResult/stats/damageBlockedByArmor/body"
+msgid "battleResult/stats/body/damageBlockedByArmor"
 msgstr "The amount of damage blocked by your vehicle's armor."
 
-msgid "battleResult/stats/damageBlockedByArmor/header"
-msgstr "Blocked Damage"
-
-msgid "battleResult/stats/damageBlockedByArmor/title"
-msgstr "Blocked Damage"
-
-msgid "battleResult/stats/damageDealt/body"
+msgid "battleResult/stats/body/damageDealt"
 msgstr "The amount of damage caused by you."
 
-msgid "battleResult/stats/damageDealt/header"
-msgstr "Caused Damage"
-
-msgid "battleResult/stats/damageDealt/title"
-msgstr "Caused Damage"
-
-msgid "battleResult/stats/kills/body"
+msgid "battleResult/stats/body/kills"
 msgstr "The number of enemy vehicles destroyed by you."
 
-msgid "battleResult/stats/kills/header"
-msgstr "Destroyed by You"
-
-msgid "battleResult/stats/kills/title"
-msgstr "Destroyed by You"
-
-msgid "battleResult/stats/place/body"
+msgid "battleResult/stats/body/place"
 msgstr "Your position based on battle results."
 
-msgid "battleResult/stats/place/header"
-msgstr "Position"
-
-msgid "battleResult/stats/place/title"
-msgstr "Position"
-
-msgid "battleResult/stats/squadKills/body"
+msgid "battleResult/stats/body/squadKills"
 msgstr "The number of enemy vehicles destroyed by your Platoon."
 
-msgid "battleResult/stats/squadKills/header"
+msgid "battleResult/stats/header/damageBlockedByArmor"
+msgstr "Blocked Damage"
+
+msgid "battleResult/stats/header/damageDealt"
+msgstr "Caused Damage"
+
+msgid "battleResult/stats/header/kills"
+msgstr "Destroyed by You"
+
+msgid "battleResult/stats/header/place"
+msgstr "Position"
+
+msgid "battleResult/stats/header/squadKills"
 msgstr "Destroyed by Platoon"
 
-msgid "battleResult/stats/squadKills/title"
+msgid "battleResult/stats/title/damageBlockedByArmor"
+msgstr "Blocked Damage"
+
+msgid "battleResult/stats/title/damageDealt"
+msgstr "Caused Damage"
+
+msgid "battleResult/stats/title/kills"
+msgstr "Destroyed by You"
+
+msgid "battleResult/stats/title/place"
+msgstr "Position"
+
+msgid "battleResult/stats/title/squadKills"
 msgstr "Destroyed by Platoon"
 
 msgid "battleResult/tab/leaderboard"
@@ -362,46 +371,6 @@ msgstr ""
 
 msgid "fragPanel/squadsCount"
 msgstr "Platoons: %(squadsCount)s"
-
-msgid "fullStats/alive"
-msgstr "Survived players"
-
-msgid "fullStats/deathZone/closed/description"
-msgstr "Zone Closed"
-
-msgid "fullStats/deathZone/warning/description"
-msgstr "Zone Is Closing"
-
-msgid "fullStats/description"
-msgstr ""
-"The main objective is to be the last player (or Platoon) standing. Collect "
-"resources, upgrade your vehicle, and survive!"
-
-msgid "fullStats/destroyed"
-msgstr "Destroyed by you"
-
-msgid "fullStats/icons/airDrop/description"
-msgstr ""
-"Airdrop: XP, HP recovery, module repairs, charges for all Combat Abilities, "
-"ammo."
-
-msgid "fullStats/icons/corpseLoot/description"
-msgstr ""
-"Spoils of War: XP, HP recovery, module repairs, charges for some Combat "
-"Abilities, ammo."
-
-msgid "fullStats/icons/defaultLoot/description"
-msgstr "Supplies: XP, possible Combat Ability charge, ammo."
-
-msgid "fullStats/icons/extendedLoot/description"
-msgstr ""
-"Consumables: XP, HP recovery, module repairs, charge for Recovery, ammo."
-
-msgid "fullStats/subTitle"
-msgstr "Battle for valuable resources under \"free-for-all\" rules."
-
-msgid "fullStats/title"
-msgstr "Steel Hunter"
 
 msgid "hangarResults/btns/score"
 msgstr "Leaderboard"
@@ -625,64 +594,6 @@ msgstr "Press"
 msgid "radar/hint/text"
 msgstr "to activate Radio Detection"
 
-msgid "rewardCurrencyTooltip/battlePassPoints/body"
-msgstr ""
-"Points can be earned by fighting in battles and completing special missions."
-" They are automatically added to the Battle Pass Progression."
-
-msgid "rewardCurrencyTooltip/battlePassPoints/header"
-msgstr "Battle Pass Points"
-
-msgid "rewardCurrencyTooltip/brProgressionToken/body"
-msgstr ""
-"Awarded for completing Steel Hunter missions and for good battle results. "
-"They allow you to advance through the Progression."
-
-msgid "rewardCurrencyTooltip/brProgressionToken/header"
-msgstr "Steel Hunter Progression Points"
-
-msgid "rewardCurrencyTooltip/brcoin/body"
-msgstr ""
-"Steel Seals can be received for efficient battle performance, achieving high"
-" positions in the battle results, and completing special missions."
-
-msgid "rewardCurrencyTooltip/brcoin/header"
-msgstr "Steel Seals"
-
-msgid "rewardCurrencyTooltip/brcoin/premFactor"
-msgstr ""
-"WoT Premium Account increases the amount of this currency earned by 50%."
-
-msgid "rewardCurrencyTooltip/credits/body"
-msgstr "The main in-game currency. Earned in battles or purchased with gold."
-
-msgid "rewardCurrencyTooltip/credits/header"
-msgstr "Credits"
-
-msgid "rewardCurrencyTooltip/credits/premFactor"
-msgstr ""
-"WoT Premium Account increases the amount of this currency earned by 50%."
-
-msgid "rewardCurrencyTooltip/crystal/body"
-msgstr ""
-"A rare, special currency used to purchase unique items that are unavailable "
-"through other means."
-
-msgid "rewardCurrencyTooltip/crystal/header"
-msgstr "Bonds"
-
-msgid "rewardCurrencyTooltip/xp/body"
-msgstr ""
-"The experience earned in special vehicles can be converted to Free "
-"Experience."
-
-msgid "rewardCurrencyTooltip/xp/header"
-msgstr "Combat Experience"
-
-msgid "rewardCurrencyTooltip/xp/premFactor"
-msgstr ""
-"WoT Premium Account increases the amount of Combat Experience earned by 50%."
-
 msgid "season/202206/name"
 msgstr "2022"
 
@@ -785,15 +696,6 @@ msgstr "Our armor is corroding!"
 
 msgid "statusNotificationTimers/thunderStrike"
 msgstr "Mobility decreased!"
-
-msgid "tab/lable/platoon"
-msgstr "PLATOON"
-
-msgid "tab/lable/solo"
-msgstr "SOLO"
-
-msgid "tab/lable/team"
-msgstr "WITH FRIEND"
 
 msgid "techParams/type/damage"
 msgstr "Damage"

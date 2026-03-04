@@ -19,7 +19,7 @@ package net.wg.gui.lobby.profile.pages
       
       private static const ANIMATION_INVALID:String = "animInv";
       
-      private static const TOP_OFFSET:Number = -100;
+      private static const TOP_OFFSET:int = -100;
       
       protected static const TOP_PADDING:uint = 55;
        
@@ -98,6 +98,7 @@ package net.wg.gui.lobby.profile.pages
          this.currentData = null;
          this.currentDimension = null;
          this.paddings = null;
+         this.title = null;
          this._animationManager.dispose();
          this._animationManager = null;
          if(this.battlesDropdown)
@@ -202,6 +203,10 @@ package net.wg.gui.lobby.profile.pages
          else
          {
             this._animationManager.stop();
+            if(this.battlesDropdown)
+            {
+               this.battlesDropdown.dropdownMenu.close();
+            }
          }
          setActiveS(this._isActive);
       }

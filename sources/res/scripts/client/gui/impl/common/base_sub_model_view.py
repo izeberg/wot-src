@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from frameworks.wulf import ViewModel
 from py2to3 import patched_typing

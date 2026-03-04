@@ -166,10 +166,10 @@ msgid "entryPoint/boxes"
 msgstr "TO BOXES"
 
 msgid "entryPoint/count"
-msgstr "x%(count)"
+msgstr "×%(count)"
 
 msgid "entryPoint/maxBoxesCount"
-msgstr "x999+"
+msgstr "×999+"
 
 msgid "entryPoint/tooltip/description"
 msgstr ""
@@ -429,11 +429,23 @@ msgstr "Directives"
 msgid "statisticsRewards/label/blueprint_tube"
 msgstr "Blueprint Fragments"
 
+msgid "statisticsRewards/label/brochure"
+msgstr "Booklet"
+
+msgid "statisticsRewards/label/brochure_tooltip"
+msgstr "Training Booklets"
+
 msgid "statisticsRewards/label/consumables"
 msgstr "Consumables"
 
 msgid "statisticsRewards/label/credits"
 msgstr "Credits"
+
+msgid "statisticsRewards/label/crewBook"
+msgstr "Manual"
+
+msgid "statisticsRewards/label/crewBook_tooltip"
+msgstr "Training Manuals"
 
 msgid "statisticsRewards/label/crew_bonus_x3"
 msgstr "Missions for x3 Crew XP"
@@ -459,6 +471,15 @@ msgstr "Free XP"
 msgid "statisticsRewards/label/gold"
 msgstr "Gold"
 
+msgid "statisticsRewards/label/guide"
+msgstr "Guide"
+
+msgid "statisticsRewards/label/guide_tooltip"
+msgstr "Training Guides"
+
+msgid "statisticsRewards/label/mentoringLicense"
+msgstr "Mentoring License"
+
 msgid "statisticsRewards/label/new_device_mi_gift"
 msgstr "Standard Equipment"
 
@@ -471,6 +492,9 @@ msgstr "WoT Premium Account"
 msgid "statisticsRewards/label/rations"
 msgstr "Rations"
 
+msgid "statisticsRewards/label/recertificationForm"
+msgstr "Retraining Order"
+
 msgid "statisticsRewards/label/style"
 msgstr "2D Styles"
 
@@ -479,9 +503,6 @@ msgstr "3D Styles"
 
 msgid "statisticsRewards/label/tankman"
 msgstr "Crew Members"
-
-msgid "statisticsRewards/label/training_materials"
-msgstr "Crew Books"
 
 msgid "statisticsRewards/label/trophy_gift"
 msgstr "Bounty Equipment"

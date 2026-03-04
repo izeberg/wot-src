@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from collections import namedtuple
 from typing import TYPE_CHECKING
 from frameworks.wulf import ViewModel, Window, WindowFlags, ViewSettings, PositionAnchor
@@ -28,8 +29,8 @@ def createAndLoadBackportTooltipWindow(parentWindow, tooltip=None, isSpecial=Fal
     return window
 
 
-def createBackportTooltipContent(specialAlias=None, specialArgs=None, isSpecial=True, tooltip=None, tooltipData=None, isWulfTooltip=False, event=None):
-    return _BackportTooltipContent(tooltipData or createTooltipData(tooltip, isSpecial, specialAlias, specialArgs or [], isWulfTooltip), event)
+def createBackportTooltipContent(specialAlias=None, specialArgs=None, isSpecial=True, tooltip=None, tooltipData=None, isWulfTooltip=False):
+    return _BackportTooltipContent(tooltipData or createTooltipData(tooltip, isSpecial, specialAlias, specialArgs or [], isWulfTooltip))
 
 
 class _BackportTooltipContent(ViewImpl):

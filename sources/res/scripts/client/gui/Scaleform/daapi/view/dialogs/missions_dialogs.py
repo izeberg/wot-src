@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.Scaleform.daapi.view.meta.UseAwardSheetWindowMeta import UseAwardSheetWindowMeta
 from gui.Scaleform.locale.RES_ICONS import RES_ICONS
 from gui.server_events.pm_constants import SOUNDS

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<stream>colour</stream>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>Cube1</identifier>
+					<fx>shaders/custom/vector_animation_2.fx</fx>
+					<materialKind>0</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Environment/hd_env_UNI_710_Fallblocks_142/hd_env_UNI_710_Fallblocks_Obstacle_AM.dds</Texture>
+					</property>
+					<property>
+						lightMultipliers
+						<Vector4>30.000000 1.000000 1.000000 0.000000</Vector4>
+					</property>
+					<property>
+						TintlColor
+						<Vector4>0.933333 0.388235 0.074510 0.920000</Vector4>
+					</property>
+					<property>
+						selfIllumLight
+						<Vector3>0.933333 0.388235 0.074510</Vector3>
+					</property>
+					<property>
+						diffuseUVSpeedAlphaOffset
+						<Vector4>0.000000 0.000000 2.000000 0.000000</Vector4>
+					</property>
+					<property>
+						phaseMap
+						<Texture>content/Environment/hd_env_UNI_710_Fallblocks_142/hd_env_UNI_710_Fallblocks_Obstacle_AM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.000000 0.000000 0.000000</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-10.000000 -1.000000 -1.000000</min>
+		<max>10.000000 1.000000 1.000000</max>
+	</boundingBox>
+	<geometrySize>744</geometrySize>
+</root>

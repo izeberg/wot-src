@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-0.440437 -0.531682 -0.768158</min>
+		<max>-0.000000 0.063587 0.731968</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<parent>content/3D_Customization/Cus_187_SP_Firefighters/normal/lod1/Cus_187_SP_Firefighters_01</parent>
+	<extent>32.000000</extent>
+	<nodelessVisual>content/3D_Customization/Cus_187_SP_Firefighters/normal/lod0/Cus_187_SP_Firefighters_01</nodelessVisual>
+</root>

@@ -3,7 +3,6 @@ package net.wg.gui.lobby.techtree.nodes
    import flash.display.BlendMode;
    import flash.display.DisplayObject;
    import flash.display.MovieClip;
-   import flash.events.MouseEvent;
    import flash.text.TextField;
    import flash.text.TextFieldAutoSize;
    import net.wg.data.Aliases;
@@ -11,7 +10,6 @@ package net.wg.gui.lobby.techtree.nodes
    import net.wg.data.constants.generated.NODE_STATE_FLAGS;
    import net.wg.data.constants.generated.TOOLTIPS_CONSTANTS;
    import net.wg.gui.components.advanced.ModuleTypesUIWithFill;
-   import net.wg.gui.lobby.techtree.TechTreeEvent;
    import net.wg.gui.lobby.techtree.constants.NodeEntityType;
    import net.wg.gui.lobby.techtree.constants.NodeRendererState;
    import net.wg.gui.lobby.techtree.constants.XpTypeStrings;
@@ -177,30 +175,6 @@ package net.wg.gui.lobby.techtree.nodes
          delegateToChildren();
       }
       
-      override protected function addNodeEventHandlers() : void
-      {
-         super.addNodeEventHandlers();
-         hit.addEventListener(MouseEvent.CLICK,this.onHitClickHandler,false,0,true);
-      }
-      
-      override protected function removeNodeEventHandlers() : void
-      {
-         hit.removeEventListener(MouseEvent.CLICK,this.onHitClickHandler);
-         super.removeNodeEventHandlers();
-      }
-      
-      override protected function rollOut() : void
-      {
-         super.rollOut();
-         dispatchEvent(new TechTreeEvent(TechTreeEvent.ON_MODULE_HOVER,nodeState,-1,entityType));
-      }
-      
-      override protected function rollOver() : void
-      {
-         super.rollOver();
-         dispatchEvent(new TechTreeEvent(TechTreeEvent.ON_MODULE_HOVER,nodeState,_index,entityType));
-      }
-      
       public function isDashed() : Boolean
       {
          return valueObject && (valueObject.state & NODE_STATE_FLAGS.DASHED) > 0;
@@ -236,14 +210,6 @@ package net.wg.gui.lobby.techtree.nodes
       public function set isBorderHighlighted(param1:Boolean) : void
       {
          this.lockedModuleHighlight.isHighlighted = param1;
-      }
-      
-      private function onHitClickHandler(param1:MouseEvent) : void
-      {
-         if(App.utils.commons.isLeftButton(param1))
-         {
-            dispatchEvent(new TechTreeEvent(TechTreeEvent.CLICK_2_OPEN,nodeState,_index,entityType));
-         }
       }
    }
 }

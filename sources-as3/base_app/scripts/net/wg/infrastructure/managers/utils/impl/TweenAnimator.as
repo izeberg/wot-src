@@ -20,13 +20,13 @@ package net.wg.infrastructure.managers.utils.impl
       private static var ms_instance:ITweenAnimator = null;
        
       
-      private var tweensData:Vector.<TweenLinkedObjects>;
+      private var _tweensData:Vector.<TweenLinkedObjects>;
       
       private var _disposed:Boolean = false;
       
       public function TweenAnimator()
       {
-         this.tweensData = new Vector.<TweenLinkedObjects>(0);
+         this._tweensData = new Vector.<TweenLinkedObjects>(0);
          super();
       }
       
@@ -48,7 +48,7 @@ package net.wg.infrastructure.managers.utils.impl
          _loc3_.memberData = {"type":TweenTypes.FADE_IN};
          var _loc4_:String = "Fading for \'" + param1.name + "\' already exists!";
          this.getAsserter().assert(this.checkTweenTypeInStack(TweenTypes.FADE_IN,param1),_loc4_);
-         this.tweensData.push(new TweenLinkedObjects(_loc3_,param1,param2));
+         this._tweensData.push(new TweenLinkedObjects(_loc3_,param1,param2));
       }
       
       public function addFadeInAnimEx(param1:DisplayObject) : ITween
@@ -64,7 +64,7 @@ package net.wg.infrastructure.managers.utils.impl
          _loc3_.memberData = {"type":TweenTypes.FADE_OUT};
          var _loc4_:String = "Fading for \'" + param1.name + "\' already exists!";
          this.getAsserter().assert(this.checkTweenTypeInStack(TweenTypes.FADE_OUT,param1),_loc4_);
-         this.tweensData.push(new TweenLinkedObjects(_loc3_,param1,param2));
+         this._tweensData.push(new TweenLinkedObjects(_loc3_,param1,param2));
       }
       
       public function addFadeOutAnimEx(param1:DisplayObject) : ITween
@@ -77,15 +77,15 @@ package net.wg.infrastructure.managers.utils.impl
       public function removeAnims(param1:DisplayObject) : void
       {
          var _loc3_:TweenLinkedObjects = null;
-         var _loc2_:int = this.tweensData.length - 1;
+         var _loc2_:int = this._tweensData.length - 1;
          while(_loc2_ >= 0)
          {
-            _loc3_ = this.tweensData[_loc2_];
+            _loc3_ = this._tweensData[_loc2_];
             if(_loc3_.target == param1)
             {
                this.tweenManager.disposeTweenS(_loc3_.tween);
                _loc3_.dispose();
-               this.tweensData.splice(_loc2_,1);
+               this._tweensData.splice(_loc2_,1);
             }
             _loc2_--;
          }
@@ -99,7 +99,7 @@ package net.wg.infrastructure.managers.utils.impl
          var _loc7_:ITween = this.addMoveAnim(param1,this.tweenMgrHelper.getMoveDuration(),_loc5_,_loc6_,true);
          _loc7_.memberData = {"type":TweenTypes.MOVE_UP};
          this.getAsserter().assert(this.checkTweenTypeInStack(TweenTypes.MOVE_UP,param1),_loc4_);
-         this.tweensData.push(new TweenLinkedObjects(_loc7_,param1,param3));
+         this._tweensData.push(new TweenLinkedObjects(_loc7_,param1,param3));
       }
       
       public function addMoveUpAnimEx(param1:DisplayObject, param2:Number) : ITween
@@ -119,7 +119,7 @@ package net.wg.infrastructure.managers.utils.impl
          var _loc7_:ITween = this.addMoveAnim(param1,this.tweenMgrHelper.getMoveDuration(),_loc5_,_loc6_,true);
          _loc7_.memberData = {"type":TweenTypes.MOVE_DOWN};
          this.getAsserter().assert(this.checkTweenTypeInStack(TweenTypes.MOVE_DOWN,param1),_loc4_);
-         this.tweensData.push(new TweenLinkedObjects(_loc7_,param1,param3));
+         this._tweensData.push(new TweenLinkedObjects(_loc7_,param1,param3));
       }
       
       public function addMoveDownAnimEx(param1:DisplayObject, param2:Number) : ITween
@@ -137,7 +137,7 @@ package net.wg.infrastructure.managers.utils.impl
          var _loc3_:ITween = this.addHalfTurnAnimEx(param1);
          _loc3_.setHandler(this);
          this.getAsserter().assert(this.checkTweenTypeInStack(TweenTypes.TURN_HALF,param1),_loc2_);
-         this.tweensData.push(new TweenLinkedObjects(_loc3_,param1,null));
+         this._tweensData.push(new TweenLinkedObjects(_loc3_,param1,null));
       }
       
       public function addHalfTurnAnimEx(param1:DisplayObject) : ITween
@@ -159,12 +159,12 @@ package net.wg.infrastructure.managers.utils.impl
       {
          var _loc4_:TweenLinkedObjects = null;
          var _loc2_:Object = param1.memberData;
-         var _loc3_:ITweenAnimatorHandler = this.tweensData[this.getIdxOfTweenDataByTween(param1)].handler;
+         var _loc3_:ITweenAnimatorHandler = this._tweensData[this.getIdxOfTweenDataByTween(param1)].handler;
          if(TweenTypes.SIMPLE_ANIM_TYPES.indexOf(_loc2_.type) >= 0)
          {
             if(_loc2_.type == TweenTypes.FADE_OUT)
             {
-               _loc4_ = this.tweensData[this.getIdxOfTweenDataByTween(param1)];
+               _loc4_ = this._tweensData[this.getIdxOfTweenDataByTween(param1)];
                _loc4_.target.visible = false;
             }
             this.removeTween(param1);
@@ -183,14 +183,14 @@ package net.wg.infrastructure.managers.utils.impl
       {
          var _loc1_:TweenLinkedObjects = null;
          this._disposed = true;
-         while(this.tweensData.length > 0 && this.tweenManager)
+         while(this._tweensData.length > 0 && this.tweenManager)
          {
-            _loc1_ = this.tweensData.pop();
+            _loc1_ = this._tweensData.pop();
             this.tweenManager.disposeTweenS(_loc1_.tween);
             _loc1_.dispose();
          }
          ms_instance = null;
-         this.tweensData = null;
+         this._tweensData = null;
       }
       
       public function createPropsForAlpha(param1:DisplayObject, param2:uint, param3:Number, param4:uint = 0) : ITweenPropertiesVO
@@ -224,12 +224,12 @@ package net.wg.infrastructure.managers.utils.impl
       {
          var _loc3_:TweenLinkedObjects = null;
          var _loc2_:int = 0;
-         while(_loc2_ < this.tweensData.length)
+         while(_loc2_ < this._tweensData.length)
          {
-            _loc3_ = this.tweensData[_loc2_];
+            _loc3_ = this._tweensData[_loc2_];
             if(_loc3_.tween == param1 && this.tweenManager)
             {
-               this.tweensData.splice(_loc2_,1);
+               this._tweensData.splice(_loc2_,1);
                this.tweenManager.disposeTweenS(param1);
                _loc3_.dispose();
                return;
@@ -279,8 +279,8 @@ package net.wg.infrastructure.managers.utils.impl
       
       private function checkTweenTypeInStack(param1:String, param2:DisplayObject) : Boolean
       {
-         var _loc6_:TweenLinkedObjects = null;
-         var _loc7_:String = null;
+         var _loc7_:TweenLinkedObjects = null;
+         var _loc8_:String = null;
          var _loc3_:String = "Not such type = " + param1;
          var _loc4_:Vector.<String> = null;
          if(_loc4_ == TweenTypes.FADE_TYPES)
@@ -290,19 +290,20 @@ package net.wg.infrastructure.managers.utils.impl
          }
          _loc4_ = this.tweenMgrHelper.getSimilarTypes(param1);
          this.getAsserter().assertNotNull(_loc4_ && _loc4_.length > 0,_loc3_);
-         var _loc5_:int = 0;
-         while(_loc5_ < this.tweensData.length)
+         var _loc5_:uint = this._tweensData.length;
+         var _loc6_:int = 0;
+         while(_loc6_ < _loc5_)
          {
-            _loc6_ = this.tweensData[_loc5_];
-            _loc7_ = _loc6_.tween.memberData.type;
-            if(this.tweensData[_loc5_].target != param2)
+            _loc7_ = this._tweensData[_loc6_];
+            _loc8_ = _loc7_.tween.memberData.type;
+            if(this._tweensData[_loc6_].target != param2)
             {
-               if(_loc6_.target == param2 && _loc4_.indexOf(_loc7_) >= 0)
+               if(_loc7_.target == param2 && _loc4_.indexOf(_loc8_) >= 0)
                {
                   return false;
                }
             }
-            _loc5_++;
+            _loc6_++;
          }
          return true;
       }
@@ -335,21 +336,22 @@ package net.wg.infrastructure.managers.utils.impl
          _loc4_.setDelayS(this.tweenMgrHelper.getBlinkingDuration());
          _loc4_.setLoopS(true);
          _loc4_.setPausedS(false);
-         this.tweensData.push(new TweenLinkedObjects(_loc4_,param1,null));
+         this._tweensData.push(new TweenLinkedObjects(_loc4_,param1,null));
          return _loc4_;
       }
       
       private function getIdxOfTweenDataByTween(param1:ITween) : int
       {
          var _loc2_:uint = param1.getTweenIdxS();
-         var _loc3_:int = 0;
-         while(_loc3_ < this.tweensData.length)
+         var _loc3_:uint = this._tweensData.length;
+         var _loc4_:int = 0;
+         while(_loc4_ < _loc3_)
          {
-            if(this.tweensData[_loc3_].getTweenId() == _loc2_)
+            if(this._tweensData[_loc4_].getTweenId() == _loc2_)
             {
-               return _loc3_;
+               return _loc4_;
             }
-            _loc3_++;
+            _loc4_++;
          }
          return -1;
       }

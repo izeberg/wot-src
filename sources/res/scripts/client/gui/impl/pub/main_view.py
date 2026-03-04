@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from frameworks.wulf import ViewFlags, ViewSettings, ViewModel
 from gui.impl.pub import ViewImpl
 

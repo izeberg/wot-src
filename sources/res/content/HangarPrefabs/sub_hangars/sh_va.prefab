@@ -1033,8 +1033,18 @@
 			<flags>0</flags>
 		</GameObject>
 		<GameObject>
-			<name>Collisionplane01</name>
+			<name>Collisionplane01_4</name>
 			<UUID>af440448-50ff-4983-988b-831091865e79</UUID>
+			<flags>2</flags>
+		</GameObject>
+		<GameObject>
+			<name>Collisionplane01_5</name>
+			<UUID>a0d2aa82-2f4b-4d6a-9fb7-6c550caab2cf</UUID>
+			<flags>2</flags>
+		</GameObject>
+		<GameObject>
+			<name>Collisionplane01_6</name>
+			<UUID>d46c327d-1363-4033-b41c-64b4c2236753</UUID>
 			<flags>2</flags>
 		</GameObject>
 	</GameObjects>
@@ -3094,6 +3104,26 @@
 			</component>
 			<component>
 				<UUID>af440448-50ff-4983-988b-831091865e79</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>f5c8d0a9-1481-3df8-ba83-d9385acd9a1e</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>a0d2aa82-2f4b-4d6a-9fb7-6c550caab2cf</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>f5c8d0a9-1481-3df8-ba83-d9385acd9a1e</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>d46c327d-1363-4033-b41c-64b4c2236753</UUID>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -7277,7 +7307,7 @@
 					<property>
 						<name>Position</name>
 						<value>
-							-2.49102 1.25504 14.1273
+							-2.32668 1.17224 13.1953
 							<!--BW_String-->
 						</value>
 					</property>
@@ -7288,7 +7318,7 @@
 					<property>
 						<name>Rotation</name>
 						<value>
-							0.0872665 2.96706 4.6744e-10
+							0.0872665 2.96706 -4.6744e-10
 							<!--BW_String-->
 						</value>
 					</property>
@@ -8212,6 +8242,60 @@
 					</property>
 				</config>
 			</component>
+			<component>
+				<UUID>a0d2aa82-2f4b-4d6a-9fb7-6c550caab2cf</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							-11.3566 -6.15001 9.88838
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>
+							2.71839 6.63095 1
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>
+							-0 2.45184 0
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>d46c327d-1363-4033-b41c-64b4c2236753</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							-3.63375 -6.15001 19.1792
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>
+							5.39439 6.63096 0.999999
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>
+							-0 2.18306 0
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
 		</ComponentPool>
 		<ComponentPool>
 			<type>TagsComponent</type>
@@ -8241,6 +8325,10 @@
 					<property>
 						<name>Name</name>
 						<value>Armor_Inspector_Camera</value>
+					</property>
+					<property>
+						<name>Type</name>
+						<value>0</value>
 					</property>
 					<property>
 						<name>Rotation sensitivity</name>
@@ -8274,6 +8362,10 @@
 						<value>sh_va_small_tanks_base_camera</value>
 					</property>
 					<property>
+						<name>Type</name>
+						<value>0</value>
+					</property>
+					<property>
 						<name>Rotation sensitivity</name>
 						<value>
 							0.005
@@ -8303,6 +8395,10 @@
 					<property>
 						<name>Name</name>
 						<value>sh_va_small_tanks_charectiristics_camera</value>
+					</property>
+					<property>
+						<name>Type</name>
+						<value>0</value>
 					</property>
 					<property>
 						<name>Rotation sensitivity</name>
@@ -8336,6 +8432,10 @@
 						<value>sh_va_medium_tanks_base_camera</value>
 					</property>
 					<property>
+						<name>Type</name>
+						<value>0</value>
+					</property>
+					<property>
 						<name>Rotation sensitivity</name>
 						<value>
 							0.005
@@ -8365,6 +8465,10 @@
 					<property>
 						<name>Name</name>
 						<value>sh_va_medium_tanks_charectiristics_camera</value>
+					</property>
+					<property>
+						<name>Type</name>
+						<value>0</value>
 					</property>
 					<property>
 						<name>Rotation sensitivity</name>
@@ -8398,6 +8502,10 @@
 						<value>sh_va_large_tanks_charectiristics_camera</value>
 					</property>
 					<property>
+						<name>Type</name>
+						<value>0</value>
+					</property>
+					<property>
 						<name>Rotation sensitivity</name>
 						<value>
 							0.005
@@ -8427,6 +8535,10 @@
 					<property>
 						<name>Name</name>
 						<value>sh_va_large_tanks_base_camera</value>
+					</property>
+					<property>
+						<name>Type</name>
+						<value>0</value>
 					</property>
 					<property>
 						<name>Rotation sensitivity</name>
@@ -8460,6 +8572,10 @@
 						<value>sh_va_large_tanks_upgrade_camera</value>
 					</property>
 					<property>
+						<name>Type</name>
+						<value>0</value>
+					</property>
+					<property>
 						<name>Rotation sensitivity</name>
 						<value>
 							0.005
@@ -8491,6 +8607,10 @@
 						<value>sh_va_medium_tanks_upgrade_camera</value>
 					</property>
 					<property>
+						<name>Type</name>
+						<value>0</value>
+					</property>
+					<property>
 						<name>Rotation sensitivity</name>
 						<value>
 							0.005
@@ -8520,6 +8640,10 @@
 					<property>
 						<name>Name</name>
 						<value>sh_va_small_tanks_upgrade_camera</value>
+					</property>
+					<property>
+						<name>Type</name>
+						<value>0</value>
 					</property>
 					<property>
 						<name>Rotation sensitivity</name>
@@ -8790,12 +8914,12 @@
 					</property>
 					<property>
 						<name>PitchLimits</name>
-						<value>-40 -1</value>
+						<value>-23 -1</value>
 					</property>
 					<property>
 						<name>DistLimits</name>
 						<value>
-							6.5 14.45
+							6.5 11.45
 							<!--BW_String-->
 						</value>
 					</property>
@@ -8810,7 +8934,7 @@
 					<property>
 						<name>StartDist</name>
 						<value>
-							14.45
+							12.45
 							<!--BW_String-->
 						</value>
 					</property>
@@ -9333,6 +9457,72 @@
 					</property>
 				</config>
 			</component>
+			<component>
+				<UUID>a0d2aa82-2f4b-4d6a-9fb7-6c550caab2cf</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Colliders</name>
+						<collection>
+							<item>
+								<object>
+									<property>
+										<name>Type</name>
+										<value>3</value>
+									</property>
+									<property>
+										<name>Parameters</name>
+										<object>
+											<property>
+												<name>Model name</name>
+												<isAsset>true</isAsset>
+												<value>content/Hangars/hangar_v4/Environment/collisionplane/normal/lod0/Collisionplane01.model\</value>
+											</property>
+											<property>
+												<name>Module name</name>
+												<value>default</value>
+											</property>
+										</object>
+									</property>
+								</object>
+							</item>
+						</collection>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>d46c327d-1363-4033-b41c-64b4c2236753</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Colliders</name>
+						<collection>
+							<item>
+								<object>
+									<property>
+										<name>Type</name>
+										<value>3</value>
+									</property>
+									<property>
+										<name>Parameters</name>
+										<object>
+											<property>
+												<name>Model name</name>
+												<isAsset>true</isAsset>
+												<value/>
+											</property>
+											<property>
+												<name>Module name</name>
+												<value/>
+											</property>
+										</object>
+									</property>
+								</object>
+							</item>
+						</collection>
+					</property>
+				</config>
+			</component>
 		</ComponentPool>
 		<ComponentPool>
 			<type>DynamicModel</type>
@@ -9349,6 +9539,10 @@
 					<property>
 						<name>Cast Shadows</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
 					</property>
 					<property>
 						<name>decorType</name>
@@ -9370,6 +9564,10 @@
 						<value>1</value>
 					</property>
 					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
 						<name>decorType</name>
 						<value>0</value>
 					</property>
@@ -9386,6 +9584,10 @@
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
 						<value>0</value>
 					</property>
 					<property>
@@ -9408,6 +9610,10 @@
 						<value>0</value>
 					</property>
 					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
 						<name>decorType</name>
 						<value>0</value>
 					</property>
@@ -9424,6 +9630,10 @@
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
 						<value>0</value>
 					</property>
 					<property>
@@ -9446,6 +9656,10 @@
 						<value>0</value>
 					</property>
 					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
 						<name>decorType</name>
 						<value>0</value>
 					</property>
@@ -9462,6 +9676,10 @@
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
 						<value>0</value>
 					</property>
 					<property>
@@ -9484,6 +9702,10 @@
 						<value>0</value>
 					</property>
 					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
 						<name>decorType</name>
 						<value>0</value>
 					</property>
@@ -9500,6 +9722,10 @@
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
 						<value>0</value>
 					</property>
 					<property>
@@ -9522,6 +9748,10 @@
 						<value>0</value>
 					</property>
 					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
 						<name>decorType</name>
 						<value>0</value>
 					</property>
@@ -9538,6 +9768,10 @@
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
 						<value>0</value>
 					</property>
 					<property>
@@ -9560,6 +9794,10 @@
 						<value>0</value>
 					</property>
 					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
 						<name>decorType</name>
 						<value>0</value>
 					</property>
@@ -9576,6 +9814,10 @@
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
 						<value>0</value>
 					</property>
 					<property>
@@ -9598,6 +9840,10 @@
 						<value>0</value>
 					</property>
 					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
 						<name>decorType</name>
 						<value>0</value>
 					</property>
@@ -9614,6 +9860,10 @@
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
 						<value>0</value>
 					</property>
 					<property>
@@ -9636,6 +9886,10 @@
 						<value>0</value>
 					</property>
 					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
 						<name>decorType</name>
 						<value>0</value>
 					</property>
@@ -9652,6 +9906,10 @@
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
 						<value>0</value>
 					</property>
 					<property>
@@ -9674,6 +9932,10 @@
 						<value>0</value>
 					</property>
 					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
 						<name>decorType</name>
 						<value>0</value>
 					</property>
@@ -9690,6 +9952,10 @@
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
 						<value>0</value>
 					</property>
 					<property>
@@ -9712,6 +9978,10 @@
 						<value>0</value>
 					</property>
 					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
 						<name>decorType</name>
 						<value>0</value>
 					</property>
@@ -9728,6 +9998,10 @@
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
 						<value>0</value>
 					</property>
 					<property>
@@ -9750,6 +10024,10 @@
 						<value>0</value>
 					</property>
 					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
 						<name>decorType</name>
 						<value>0</value>
 					</property>
@@ -9766,6 +10044,10 @@
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
 						<value>0</value>
 					</property>
 					<property>
@@ -9788,6 +10070,10 @@
 						<value>0</value>
 					</property>
 					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
 						<name>decorType</name>
 						<value>0</value>
 					</property>
@@ -9804,6 +10090,10 @@
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
 						<value>0</value>
 					</property>
 					<property>
@@ -9826,6 +10116,10 @@
 						<value>0</value>
 					</property>
 					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
 						<name>decorType</name>
 						<value>0</value>
 					</property>
@@ -9842,6 +10136,10 @@
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
 						<value>0</value>
 					</property>
 					<property>
@@ -9864,6 +10162,10 @@
 						<value>0</value>
 					</property>
 					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
 						<name>decorType</name>
 						<value>0</value>
 					</property>
@@ -9880,6 +10182,10 @@
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
 						<value>0</value>
 					</property>
 					<property>
@@ -9902,6 +10208,10 @@
 						<value>0</value>
 					</property>
 					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
 						<name>decorType</name>
 						<value>0</value>
 					</property>
@@ -9918,6 +10228,10 @@
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
 						<value>0</value>
 					</property>
 					<property>
@@ -9940,6 +10254,10 @@
 						<value>0</value>
 					</property>
 					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
 						<name>decorType</name>
 						<value>480</value>
 					</property>
@@ -9956,6 +10274,10 @@
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
 						<value>0</value>
 					</property>
 					<property>
@@ -9978,6 +10300,10 @@
 						<value>0</value>
 					</property>
 					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
 						<name>decorType</name>
 						<value>480</value>
 					</property>
@@ -9994,6 +10320,10 @@
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
 						<value>0</value>
 					</property>
 					<property>
@@ -10016,6 +10346,10 @@
 						<value>0</value>
 					</property>
 					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
 						<name>decorType</name>
 						<value>480</value>
 					</property>
@@ -10032,6 +10366,10 @@
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
 						<value>0</value>
 					</property>
 					<property>
@@ -10054,6 +10392,10 @@
 						<value>0</value>
 					</property>
 					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
 						<name>decorType</name>
 						<value>480</value>
 					</property>
@@ -10070,6 +10412,10 @@
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
 						<value>0</value>
 					</property>
 					<property>
@@ -10092,6 +10438,10 @@
 						<value>0</value>
 					</property>
 					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
 						<name>decorType</name>
 						<value>480</value>
 					</property>
@@ -10108,6 +10458,10 @@
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
 						<value>0</value>
 					</property>
 					<property>
@@ -10130,6 +10484,10 @@
 						<value>0</value>
 					</property>
 					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
 						<name>decorType</name>
 						<value>0</value>
 					</property>
@@ -10146,6 +10504,10 @@
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
 						<value>0</value>
 					</property>
 					<property>
@@ -10168,6 +10530,10 @@
 						<value>0</value>
 					</property>
 					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
 						<name>decorType</name>
 						<value>0</value>
 					</property>
@@ -10184,6 +10550,10 @@
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
 						<value>0</value>
 					</property>
 					<property>
@@ -10206,6 +10576,10 @@
 						<value>0</value>
 					</property>
 					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
 						<name>decorType</name>
 						<value>0</value>
 					</property>
@@ -10222,6 +10596,10 @@
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
 						<value>0</value>
 					</property>
 					<property>
@@ -10244,6 +10622,10 @@
 						<value>0</value>
 					</property>
 					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
 						<name>decorType</name>
 						<value>0</value>
 					</property>
@@ -10263,6 +10645,10 @@
 						<value>0</value>
 					</property>
 					<property>
+						<name>isOverlayEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
 						<name>decorType</name>
 						<value>0</value>
 					</property>
@@ -10279,6 +10665,10 @@
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>isOverlayEnabled</name>
 						<value>0</value>
 					</property>
 					<property>
@@ -19488,6 +19878,38 @@
 						<value>0</value>
 					</property>
 				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>VehicleToCameraAlignmentComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>15c1398c-0e58-3a97-8dba-b5f17e07a3b7</UUID>
+				<flags>3</flags>
+			</component>
+			<component>
+				<UUID>b8fd01ad-e82f-3353-9da1-b12e0755656c</UUID>
+				<flags>3</flags>
+			</component>
+			<component>
+				<UUID>34fa3c55-6bbc-3d61-b74b-091495098de0</UUID>
+				<flags>3</flags>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>VehicleToCameraAlignmentRule</type>
+			<version>1</version>
+			<component>
+				<UUID>15c1398c-0e58-3a97-8dba-b5f17e07a3b7</UUID>
+				<flags>1</flags>
+			</component>
+			<component>
+				<UUID>b8fd01ad-e82f-3353-9da1-b12e0755656c</UUID>
+				<flags>1</flags>
+			</component>
+			<component>
+				<UUID>34fa3c55-6bbc-3d61-b74b-091495098de0</UUID>
+				<flags>1</flags>
 			</component>
 		</ComponentPool>
 		<ComponentPool>

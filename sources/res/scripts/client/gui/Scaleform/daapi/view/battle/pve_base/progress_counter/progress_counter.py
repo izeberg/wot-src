@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BattleReplay
 from gui.Scaleform.daapi.view.battle.pve_base.base.pve_hud_widget import SingleItemPveHudWidget
 from gui.Scaleform.daapi.view.battle.pve_base.progress_counter.settings_model import ProgressCounterServerModel

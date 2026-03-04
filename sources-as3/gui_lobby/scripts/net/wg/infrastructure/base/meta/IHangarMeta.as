@@ -32,8 +32,6 @@ package net.wg.infrastructure.base.meta
       
       function as_closeHelpLayout() : void;
       
-      function as_showMiniClientInfo(param1:String, param2:String) : void;
-      
       function as_show3DSceneTooltip(param1:String, param2:Array) : void;
       
       function as_hide3DSceneTooltip() : void;
@@ -48,12 +46,8 @@ package net.wg.infrastructure.base.meta
       
       function as_animateHangarViews(param1:Boolean) : void;
       
-      function as_setDQWidgetLayout(param1:int) : void;
-      
       function as_updateCarouselEventEntryState(param1:Boolean) : void;
       
       function as_updateHangarComponents(param1:Array, param2:Array) : void;
-      
-      function as_setComp7SpaceLoaded(param1:Boolean) : void;
    }
 }

@@ -2,7 +2,6 @@ from __future__ import absolute_import
 import logging, typing
 from adisp import adisp_async, adisp_process
 from fun_random_common.fun_constants import UNKNOWN_EVENT_ID
-from fun_random.gui.fun_account_settings import FunSubModeAccountSettings
 from fun_random.gui.fun_gui_constants import SELECTOR_BATTLE_TYPES
 from fun_random.gui.feature.util.fun_helpers import notifyCaller
 from fun_random.gui.feature.util.fun_wrappers import hasActiveProgression, hasAnySubMode, hasSingleSubMode, hasSpecifiedSubMode
@@ -14,6 +13,7 @@ from helpers import dependency
 from shared_utils import first
 from skeletons.gui.game_control import IFunRandomController
 if typing.TYPE_CHECKING:
+    from fun_random.gui.feature.configs.modes.assets_pack import FunModeAssetsPackConfigurationModel
     from fun_random.gui.feature.models.common import FunSubModesStatus
     from fun_random.gui.feature.models.progressions import FunProgression
     from fun_random.gui.feature.sub_modes.base_sub_mode import IFunSubMode
@@ -24,16 +24,20 @@ class FunAssetPacksMixin(object):
     _funRandomCtrl = dependency.descriptor(IFunRandomController)
 
     @classmethod
+    def getModeAssetsConfiguration(cls):
+        return cls._funRandomCtrl.getConfigurationModel().mode.assetsPack
+
+    @classmethod
     def getModeAssetsPointer(cls):
-        return cls._funRandomCtrl.getAssetsPointer()
+        return cls.getModeAssetsConfiguration().assetsPointer
 
     @classmethod
     def getModeIconsResRoot(cls):
-        return cls._funRandomCtrl.getIconsResRoot()
+        return cls.getModeAssetsConfiguration().getIconsResRoot()
 
     @classmethod
     def getModeLocalsResRoot(cls):
-        return cls._funRandomCtrl.getLocalsResRoot()
+        return cls.getModeAssetsConfiguration().getLocalsResRoot()
 
     @classmethod
     def getModeNameKwargs(cls):
@@ -109,14 +113,12 @@ class FunSubModesWatcher(object):
     @hasSpecifiedSubMode()
     def showSubModeInfoPage(self, subModeID):
         selectorUtils.setBattleTypeAsKnown(SELECTOR_BATTLE_TYPES.FUN_RANDOM)
-        subModeSettings = self.getSubMode(subModeID).getSettings().client
-        showFunRandomInfoPage(subModeSettings.infoPageUrl)
-        FunSubModeAccountSettings(subModeSettings.settingsKey).setInfoPageViewed(True)
+        showFunRandomInfoPage(self.getSubMode(subModeID).getSettings().client.infoPageUrl)
 
     @hasSingleSubMode(abortAction='showCommonInfoPage')
     def showSubModesInfoPage(self):
         selectorUtils.setBattleTypeAsKnown(SELECTOR_BATTLE_TYPES.FUN_RANDOM)
-        self.showSubModeInfoPage(first(self.getSubModes()).getSubModeID())
+        showFunRandomInfoPage(first(self.getSubModes()).getSettings().client.infoPageUrl)
 
     def startSubSelectionListening(self, method):
         self._funRandomCtrl.subscription.addListener(FunEventType.SUB_SELECTION, method)

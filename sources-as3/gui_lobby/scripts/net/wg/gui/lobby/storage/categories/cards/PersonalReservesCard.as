@@ -1,6 +1,5 @@
 package net.wg.gui.lobby.storage.categories.cards
 {
-   import flash.display.Graphics;
    import flash.geom.Rectangle;
    import flash.text.TextField;
    import flash.text.TextFieldAutoSize;
@@ -18,8 +17,6 @@ package net.wg.gui.lobby.storage.categories.cards
       public static const ITEMS_DISABLE_ALPHA:Number = 0.7;
       
       public static const ALERT_TOP:int = 10;
-      
-      private static const DOTS:String = "...";
        
       
       public var disabled:BitmapFill;
@@ -70,114 +67,102 @@ package net.wg.gui.lobby.storage.categories.cards
       override protected function draw() : void
       {
          var _loc1_:Rectangle = null;
-         var _loc2_:Graphics = null;
-         var _loc3_:uint = 0;
-         if(_data && isInvalid(InvalidationType.DATA))
+         var _loc2_:uint = 0;
+         if(_data)
          {
-            buttonMode = _data.enabled;
-            titleTF.htmlText = _data.title;
-            descriptionTF.htmlText = _data.description;
-            descriptionTF.alpha = 1;
-            this.alertTF.alpha = 0;
-            this.alertTF.autoSize = TextFieldAutoSize.RIGHT;
-            this.alertTF.htmlText = _data.additionalInfo;
-            inInventoryCountTF.visible = inInventoryIcon.visible = _data.count > 0;
-            inInventoryCountTF.text = _data.count.toString();
-            if(_data.customData && _data.customData.hasOwnProperty("expiryTime"))
+            if(isInvalid(InvalidationType.DATA))
             {
-               this.activatedTF.text = "";
-               this.activatedTF.htmlText = _data.customData["expiryTime"];
-               this.activatedTF.visible = true;
-               this.cornerImage.visible = true;
+               buttonMode = _data.enabled;
+               titleTF.htmlText = _data.title;
+               descriptionTF.htmlText = _data.description;
+               descriptionTF.alpha = 1;
+               this.alertTF.alpha = 0;
+               this.alertTF.autoSize = TextFieldAutoSize.RIGHT;
+               this.alertTF.htmlText = _data.additionalInfo;
+               inInventoryCountTF.visible = inInventoryIcon.visible = _data.count > 0;
+               inInventoryCountTF.text = _data.count.toString();
+               if(_data.customData && _data.customData.hasOwnProperty("expiryTime"))
+               {
+                  this.activatedTF.text = "";
+                  this.activatedTF.htmlText = _data.customData["expiryTime"];
+                  this.activatedTF.visible = true;
+                  this.cornerImage.visible = true;
+               }
+               else
+               {
+                  this.activatedTF.htmlText = "";
+                  this.activatedTF.text = "";
+                  this.cornerImage.visible = false;
+                  this.activatedTF.visible = false;
+               }
+               this.disabledTF.visible = !_data.available;
+               sellButton.visible = _data.enabled;
+               if(_resetViewOnDataChange)
+               {
+                  sellButton.alpha = 0;
+                  _overlay.alpha = 0;
+               }
+               if(_data.enabled)
+               {
+                  this.disabled.visible = false;
+                  titleTF.alpha = descriptionTF.alpha = inInventoryCountTF.alpha = inInventoryIcon.alpha = 1;
+                  mouseChildren = buttonMode = true;
+               }
+               else
+               {
+                  this.disabled.visible = true;
+                  titleTF.alpha = descriptionTF.alpha = inInventoryCountTF.alpha = inInventoryIcon.alpha = ITEMS_DISABLE_ALPHA;
+                  mouseChildren = buttonMode = false;
+               }
+               sellButton.label = _data.sellButtonLabel;
+               sellButton.validateNow();
+               invalidateSize();
             }
-            else
+            if(isInvalid(InvalidationType.SIZE))
             {
-               this.activatedTF.htmlText = "";
-               this.activatedTF.text = "";
-               this.cornerImage.visible = false;
-               this.activatedTF.visible = false;
-            }
-            this.disabledTF.visible = !_data.available;
-            sellButton.visible = _data.enabled;
-            if(_resetViewOnDataChange)
-            {
+               if(_resetViewOnDataChange)
+               {
+                  disposeTweens();
+               }
+               if(image.source != _data.image)
+               {
+                  image.alpha = 0;
+                  image.sourceAlt = _data.imageAlt;
+                  image.source = _data.image;
+               }
+               else
+               {
+                  image.alpha = !!_data.enabled ? Number(1) : Number(IMAGE_DISABLE_ALPHA);
+               }
+               _loc1_ = _sizeVO.innerPadding;
+               drawBorder();
+               this.disabled.widthFill = _overlay.width;
+               this.disabled.heightFill = _overlay.height;
+               updateInventoryPosition(_loc1_);
+               titleTF.x = _loc1_.left;
+               titleTF.width = !inInventoryIcon.visible ? Number(_loc1_.width) : Number(inInventoryIcon.x - titleTF.x);
+               descriptionTF.x = _loc1_.left;
+               descriptionTF.y = titleTF.y + titleTF.height + _sizeVO.descriptionOffset;
+               if(_isOver)
+               {
+                  descriptionTF.width = _loc1_.width >> 0;
+               }
+               else
+               {
+                  descriptionTF.width = inInventoryIcon.x - descriptionTF.x >> 0;
+               }
+               _loc2_ = _sizeVO.size.width < CARD_SMALL_WIDTH ? uint(DESCRIPTION_SMALL_CARD_MAX_LINES) : uint(DESCRIPTION_BIG_CARD_MAX_LINES);
+               App.utils.commons.truncateHtmlTextMultiline(descriptionTF,_data.description,_loc2_,DESCRIPTION_TRANSACTION_SYMBOL);
+               this.alertTF.x = _loc1_.right - this.alertTF.width;
+               this.alertTF.y = ALERT_TOP;
+               _container.y = this.getContainerYRolloutPosition();
+               this.disabledTF.x = this.activatedTF.x = _loc1_.left;
+               this.disabledTF.y = this.activatedTF.y = ALERT_TOP;
+               sellButton.x = _loc1_.right - sellButton.width >> 0;
+               sellButton.y = _loc1_.bottom - sellButton.height >> 0;
                sellButton.alpha = 0;
-               _overlay.alpha = 0;
+               onImageComplete();
             }
-            if(_data.enabled)
-            {
-               this.disabled.visible = false;
-               titleTF.alpha = descriptionTF.alpha = inInventoryCountTF.alpha = inInventoryIcon.alpha = 1;
-               mouseChildren = buttonMode = true;
-            }
-            else
-            {
-               this.disabled.visible = true;
-               titleTF.alpha = descriptionTF.alpha = inInventoryCountTF.alpha = inInventoryIcon.alpha = ITEMS_DISABLE_ALPHA;
-               mouseChildren = buttonMode = false;
-            }
-            sellButton.label = _data.sellButtonLabel;
-            sellButton.validateNow();
-            invalidateSize();
-         }
-         if(_data && isInvalid(InvalidationType.SIZE))
-         {
-            if(_resetViewOnDataChange)
-            {
-               disposeTweens();
-            }
-            if(image.source != _data.image)
-            {
-               image.alpha = 0;
-               image.sourceAlt = _data.imageAlt;
-               image.source = _data.image;
-            }
-            else
-            {
-               image.alpha = !!_data.enabled ? Number(1) : Number(IMAGE_DISABLE_ALPHA);
-            }
-            _loc1_ = _sizeVO.innerPadding;
-            _loc2_ = graphics;
-            _loc2_.clear();
-            _loc2_.lineStyle(1,16777215,0.15);
-            _loc2_.beginFill(0,0.25);
-            _loc2_.drawRoundRect(BORDER_OFFSET,BORDER_OFFSET,width - BORDER_SIZE_CORRECTION,height - BORDER_SIZE_CORRECTION,BORDER_CORNER_RADIUS,BORDER_CORNER_RADIUS);
-            _loc2_.endFill();
-            _overlay.alpha = 0;
-            _loc2_ = _overlay.graphics;
-            _loc2_.clear();
-            _loc2_.beginFill(1973272);
-            _loc2_.drawRoundRect(OVERLAY_OFFSET,OVERLAY_OFFSET,width - OVERLAY_SIZE_CORRECTION,height - OVERLAY_SIZE_CORRECTION,BORDER_CORNER_RADIUS,BORDER_CORNER_RADIUS);
-            _loc2_.endFill();
-            this.disabled.widthFill = _overlay.width;
-            this.disabled.heightFill = _overlay.height;
-            inInventoryCountTF.x = _loc1_.right - inInventoryCountTF.width >> 0;
-            inInventoryCountTF.y = _loc1_.bottom - inInventoryCountTF.height >> 0;
-            inInventoryIcon.x = inInventoryCountTF.x - inInventoryIcon.width - ININVENTORY_ICON_OFFSET;
-            inInventoryIcon.y = inInventoryCountTF.y - ININVENTORY_ICON_OFFSET;
-            titleTF.x = _loc1_.left;
-            titleTF.width = !inInventoryIcon.visible ? Number(_loc1_.width) : Number(inInventoryIcon.x - titleTF.x);
-            descriptionTF.x = _loc1_.left;
-            descriptionTF.y = titleTF.y + titleTF.height + _sizeVO.descriptionOffset;
-            if(_isOver)
-            {
-               descriptionTF.width = _loc1_.width >> 0;
-            }
-            else
-            {
-               descriptionTF.width = inInventoryIcon.x - descriptionTF.x >> 0;
-            }
-            _loc3_ = _sizeVO.size.width < CARD_SMALL_WIDTH ? uint(DESCRIPTION_SMALL_CARD_MAX_LINES) : uint(DESCRIPTION_BIG_CARD_MAX_LINES);
-            App.utils.commons.truncateHtmlTextMultiline(descriptionTF,_data.description,_loc3_,DESCRIPTION_TRANCATION_SYMBOL);
-            this.alertTF.x = _loc1_.right - this.alertTF.width;
-            this.alertTF.y = ALERT_TOP;
-            _container.y = this.getContainerYRolloutPosition();
-            this.disabledTF.x = this.activatedTF.x = _loc1_.left;
-            this.disabledTF.y = this.activatedTF.y = ALERT_TOP;
-            sellButton.x = _loc1_.right - sellButton.width >> 0;
-            sellButton.y = _loc1_.bottom - sellButton.height >> 0;
-            sellButton.alpha = 0;
-            onImageComplete();
          }
       }
       

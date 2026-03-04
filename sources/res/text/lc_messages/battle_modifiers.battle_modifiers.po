@@ -164,32 +164,6 @@ msgstr "Crew injuries during impact"
 msgid "modifier/name/equipmentCooldown"
 msgstr "Consumable cooldown time"
 
-msgid "modifier/name/fakeCommonBkwSpeed"
-msgstr "Top reverse speed for tracked vehicles"
-
-msgid "modifier/name/fakeHeShellsEfficiencyUp"
-msgstr ""
-"The HE shells' effectiveness has been increased (except for SPG shells)"
-
-msgid "modifier/name/fakePhysicsChange"
-msgstr ""
-"The ground resistance of all terrain types has been significantly decreased,"
-" and the drifting effect has been increased"
-
-msgid "modifier/name/fakePiercingPowerDown"
-msgstr "Penetration of non-HE shells"
-
-msgid "modifier/name/fakeStabilizationParams"
-msgstr ""
-"Dispersion during vehicle movement and traverse, as well as during turret "
-"rotation"
-
-msgid "modifier/name/fakeTrajectoryChange"
-msgstr "Shells have a more curved trajectory"
-
-msgid "modifier/name/fakeWheeledBkwSpeed"
-msgstr "Top reverse speed for wheeled vehicles"
-
 msgid "modifier/name/fuelTankHealth"
 msgstr "Fuel tank durability"
 
@@ -281,6 +255,12 @@ msgstr "View range"
 
 msgid "modifier/name/visionTime"
 msgstr "Time remaining visible"
+
+msgid "modifier/name/zeroDamage"
+msgstr "Damage caused by shots and ramming"
+
+msgid "modifier/name/zeroEconomy"
+msgstr "Resources spent and earned in mode battles"
 
 msgid "modifiersDomainTooltip/restrict/max"
 msgstr "not&nbsp;more than&nbsp;{value}"

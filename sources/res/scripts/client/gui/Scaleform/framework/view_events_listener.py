@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from debug_utils import LOG_UNEXPECTED
 from gui.shared import EVENT_BUS_SCOPE
 from gui.shared.events import ViewEventType

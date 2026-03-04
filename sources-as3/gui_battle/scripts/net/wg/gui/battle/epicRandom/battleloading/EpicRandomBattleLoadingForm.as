@@ -1,6 +1,5 @@
 package net.wg.gui.battle.epicRandom.battleloading
 {
-   import flash.display.MovieClip;
    import flash.text.TextField;
    import net.wg.data.VO.daapi.DAAPIVehicleInfoVO;
    import net.wg.data.VO.daapi.DAAPIVehicleUserTagsVO;
@@ -12,17 +11,13 @@ package net.wg.gui.battle.epicRandom.battleloading
    import net.wg.gui.battle.components.BattleAtlasSprite;
    import net.wg.gui.battle.epicRandom.battleloading.components.EpicRandomStatsTable;
    import net.wg.gui.battle.epicRandom.battleloading.components.EpicRandomStatsTableCtrl;
-   import net.wg.gui.components.controls.UILoaderAlt;
    import net.wg.gui.components.minimap.MinimapPresentation;
    import net.wg.utils.IStageSizeDependComponent;
    import net.wg.utils.StageSizeBoundaries;
-   import org.idmedia.as3commons.util.StringUtils;
    import scaleform.clik.constants.InvalidationType;
    
    public class EpicRandomBattleLoadingForm extends BaseLoadingForm implements IStageSizeDependComponent
    {
-      
-      private static const MAP_SIZE:int = 360;
       
       private static const LOADING_BAR_MIN:int = 0;
       
@@ -45,16 +40,6 @@ package net.wg.gui.battle.epicRandom.battleloading
       
       public var team2Text:TextField = null;
       
-      public var tipImage:UILoaderAlt = null;
-      
-      public var map:MinimapPresentation = null;
-      
-      public var mapBorder:MovieClip = null;
-      
-      public var tipBackground:BattleAtlasSprite = null;
-      
-      public var mapBackground:BattleAtlasSprite = null;
-      
       public var formBackgroundTable:BattleAtlasSprite = null;
       
       public var betaIcon:BattleAtlasSprite = null;
@@ -68,6 +53,8 @@ package net.wg.gui.battle.epicRandom.battleloading
       public var rightTank:BattleAtlasSprite = null;
       
       public var rightSquad:BattleAtlasSprite = null;
+      
+      private var _data:VisualTipInfoVO;
       
       private var _team1TextInitX:int;
       
@@ -104,11 +91,12 @@ package net.wg.gui.battle.epicRandom.battleloading
       
       override public function getMapComponent() : MinimapPresentation
       {
-         return this.map;
+         return map;
       }
       
       override public function setFormDisplayData(param1:VisualTipInfoVO) : void
       {
+         this._data = param1;
          if(param1.showTableBackground)
          {
             this.formBackgroundTable.imageName = BATTLEATLAS.BATTLE_LOADING_FORM_BG_TABLE;
@@ -124,13 +112,9 @@ package net.wg.gui.battle.epicRandom.battleloading
          }
          if(param1.showMinimap)
          {
-            this.showMap(param1.arenaTypeID,param1.minimapTeam);
+            showMap(param1.arenaTypeID,param1.minimapTeam);
          }
-         else if(param1.tipIcon != null)
-         {
-            this.configureTip(param1.tipTitleTop,param1.tipBodyTop,param1.tipIcon);
-         }
-         this.configureTip(param1.tipTitleTop,param1.tipBodyTop,param1.tipIcon);
+         invalidateLayout();
          if(param1.showTableBackground)
          {
             this.table.team1PlayerList.itemRendererName = Linkages.ER_TABLE_LEFT_RENDERER_UI;
@@ -140,30 +124,6 @@ package net.wg.gui.battle.epicRandom.battleloading
          {
             this.table.team1PlayerList.itemRendererName = Linkages.ER_TIP_LEFT_RENDERER_UI;
             this.table.team2PlayerList.itemRendererName = Linkages.ER_TIP_RIGHT_RENDERER_UI;
-         }
-      }
-      
-      public function setStateSizeBoundaries(param1:int, param2:int) : void
-      {
-         var _loc3_:Boolean = param1 >= StageSizeBoundaries.WIDTH_1366;
-         this.team1Text.x = this._team1TextInitX;
-         this.team2Text.x = this._team2TextInitX;
-         this.leftSquad.x = this._leftSquadInitX - SQUAD_ICON_SHIFT;
-         this.leftTank.x = this._leftTankInitX - TANK_ICON_SHIFT;
-         this.rightTank.x = this._rightTankInitX + TANK_ICON_SHIFT;
-         this.rightSquad.x = this._rightSquadInitX + SQUAD_ICON_SHIFT;
-         this.table.team1ScrollBar.x = this._team1ScrollBarInitX;
-         this.table.team2ScrollBar.x = this._team2ScrollBarInitX;
-         if(_loc3_)
-         {
-            this.team1Text.x -= EXTENDED_LAYOUT_OFFSET;
-            this.team2Text.x += EXTENDED_LAYOUT_OFFSET;
-            this.leftSquad.x -= EXTENDED_LAYOUT_OFFSET;
-            this.leftTank.x -= EXTENDED_LAYOUT_OFFSET;
-            this.rightTank.x += EXTENDED_LAYOUT_OFFSET;
-            this.rightSquad.x += EXTENDED_LAYOUT_OFFSET;
-            this.table.team1ScrollBar.x -= EXTENDED_LAYOUT_OFFSET;
-            this.table.team2ScrollBar.x += EXTENDED_LAYOUT_OFFSET;
          }
       }
       
@@ -219,14 +179,8 @@ package net.wg.gui.battle.epicRandom.battleloading
          this.table = null;
          this.team1Text = null;
          this.team2Text = null;
-         this.tipBackground = null;
-         this.mapBackground = null;
          this.formBackgroundTable = null;
-         this.mapBorder = null;
          this.betaIcon = null;
-         this.tipImage.dispose();
-         this.tipImage = null;
-         this.map = null;
          super.onDispose();
       }
       
@@ -237,6 +191,10 @@ package net.wg.gui.battle.epicRandom.battleloading
          {
             this.team1Text.text = this._leftTeamName;
             this.team2Text.text = this._rightTeamName;
+         }
+         if(this._data && isInvalid(InvalidationType.LAYOUT))
+         {
+            configureTip(this._data.tipTitleTop,this._data.tipBodyTop,this._data.tipIcon);
          }
       }
       
@@ -256,7 +214,7 @@ package net.wg.gui.battle.epicRandom.battleloading
          this._team1ScrollBarInitX = this.table.team1ScrollBar.x;
          this._team2ScrollBarInitX = this.table.team2ScrollBar.x;
          this.hideMap();
-         this.map.size = MAP_SIZE;
+         map.size = MAP_SIZE;
          mapIcon.autoSize = false;
          loadingBar.minimum = LOADING_BAR_MIN;
          loadingBar.maximum = LOADING_BAR_MAX;
@@ -282,35 +240,35 @@ package net.wg.gui.battle.epicRandom.battleloading
          return BATTLE_TYPES.EPIC_RANDOM;
       }
       
+      public function setStateSizeBoundaries(param1:int, param2:int) : void
+      {
+         var _loc3_:Boolean = param1 >= StageSizeBoundaries.WIDTH_1366;
+         this.team1Text.x = this._team1TextInitX;
+         this.team2Text.x = this._team2TextInitX;
+         this.leftSquad.x = this._leftSquadInitX - SQUAD_ICON_SHIFT;
+         this.leftTank.x = this._leftTankInitX - TANK_ICON_SHIFT;
+         this.rightTank.x = this._rightTankInitX + TANK_ICON_SHIFT;
+         this.rightSquad.x = this._rightSquadInitX + SQUAD_ICON_SHIFT;
+         this.table.team1ScrollBar.x = this._team1ScrollBarInitX;
+         this.table.team2ScrollBar.x = this._team2ScrollBarInitX;
+         if(_loc3_)
+         {
+            this.team1Text.x -= EXTENDED_LAYOUT_OFFSET;
+            this.team2Text.x += EXTENDED_LAYOUT_OFFSET;
+            this.leftSquad.x -= EXTENDED_LAYOUT_OFFSET;
+            this.leftTank.x -= EXTENDED_LAYOUT_OFFSET;
+            this.rightTank.x += EXTENDED_LAYOUT_OFFSET;
+            this.rightSquad.x += EXTENDED_LAYOUT_OFFSET;
+            this.table.team1ScrollBar.x -= EXTENDED_LAYOUT_OFFSET;
+            this.table.team2ScrollBar.x += EXTENDED_LAYOUT_OFFSET;
+         }
+      }
+      
       private function hideMap() : void
       {
-         this.map.visible = false;
-         this.mapBackground.visible = false;
-         this.mapBorder.visible = false;
-      }
-      
-      private function showMap(param1:int, param2:int) : void
-      {
-         this.mapBackground.visible = true;
-         this.mapBackground.imageName = BATTLEATLAS.BATTLE_LOADING_FORM_MAP_BACKGROUND;
-         this.mapBorder.visible = true;
-         this.map.setMinimapDataS(param1,param2,MAP_SIZE);
-         this.map.border.visible = false;
-         this.map.grid.visible = true;
-         this.map.visible = true;
-      }
-      
-      private function configureTip(param1:int, param2:int, param3:String = null) : void
-      {
-         var _loc4_:Boolean = StringUtils.isNotEmpty(param3);
-         this.tipBackground.visible = this.tipImage.visible = _loc4_;
-         if(_loc4_)
-         {
-            helpTip.y = param1;
-            tipText.y = param2;
-            this.tipBackground.imageName = BATTLEATLAS.BATTLE_LOADING_FORM_TIP_BACKGROUND;
-            this.tipImage.source = param3;
-         }
+         map.visible = false;
+         mapBackground.visible = false;
+         mapBorder.visible = false;
       }
    }
 }

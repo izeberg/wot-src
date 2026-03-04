@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<version>4</version>
+	<GameObjects>
+		<GameObject>
+			<name>fall_tanks_local_fog_01</name>
+			<UUID>41ee20d2-d523-4f90-a049-d4b98998c52b</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>local_fog_01</name>
+			<UUID>de7f1b8d-8075-3aca-bf7e-8a2f91862917</UUID>
+			<flags>0</flags>
+		</GameObject>
+	</GameObjects>
+	<components>
+		<ComponentPool>
+			<type>Hierarchy</type>
+			<version>2</version>
+			<component>
+				<UUID>de7f1b8d-8075-3aca-bf7e-8a2f91862917</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>41ee20d2-d523-4f90-a049-d4b98998c52b</link>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>Transform</type>
+			<version>1</version>
+			<component>
+				<UUID>41ee20d2-d523-4f90-a049-d4b98998c52b</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>de7f1b8d-8075-3aca-bf7e-8a2f91862917</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							0 -25.3994 0
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1200 200 1200</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 -0</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>LocalFogComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>de7f1b8d-8075-3aca-bf7e-8a2f91862917</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Fog Color</name>
+						<value>
+							0 0.901961 0.827451 1
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Texture Apply Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Lower Height Falloff</name>
+						<value>
+							0.02
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Upper Height Falloff</name>
+						<value>
+							0.21
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Edge Gradient</name>
+						<value>
+							2.8
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Fog Strength</name>
+						<value>
+							0.03
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Noise Texture Channel</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Noise Scale</name>
+						<value>
+							0.2
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Fog Shape</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Fog Shape Radius</name>
+						<value>
+							0.5
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Fog Shape Edge Smoothness</name>
+						<value>
+							0.2
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Fog Is Animated</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Animation Direction</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Animation Speed</name>
+						<value>
+							0.05
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Snap To Terrain</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Exponential Height</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Medium_QualityFlags</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>High_QualityFlags</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Max_QualityFlags</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Ultra_QualityFlags</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+	</components>
+</root>

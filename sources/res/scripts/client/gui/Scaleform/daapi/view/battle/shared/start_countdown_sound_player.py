@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, WWISE
 from helpers import dependency
 import BattleReplay
@@ -14,7 +15,7 @@ class StartCountdownSoundPlayer(IAbstractPeriodView, IViewComponentsCtrlListener
         super(StartCountdownSoundPlayer, self).__init__()
         self.__soundID = dependency.instance(IBattleSessionProvider).arenaVisitor.type.getCountdownTimerSound()
         if not self.__soundID:
-            _logger.warning('Countdown sound for this game mode is not defined! ' + 'Please define one ' + 'otherwise remove this player from the list in the corresponded page.py')
+            _logger.warning('Countdown sound for this game mode is not defined! Define or remove player from page')
 
     def setCountdown(self, state, timeLeft):
         if state == COUNTDOWN_STATE.START:
@@ -27,7 +28,7 @@ class StartCountdownSoundPlayer(IAbstractPeriodView, IViewComponentsCtrlListener
     def __checkNotReplay(self):
         replay = BattleReplay.g_replayCtrl
         if replay.isPlaying:
-            return not replay.playbackSpeed == 0
+            return replay.playbackSpeed != 0
         return True
 
     def __playSound(self, timeLeft):

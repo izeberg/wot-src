@@ -9,7 +9,7 @@ package net.wg.data.constants.generated
       
       public static const BR_PROGRESSION:String = "BattleRoyaleProgression";
       
-      public static const BR_BATTLE_RESULTS:String = "BattleRoyaleBattleResults";
+      public static const BR_BATTLE_RESULTS:String = "BattleRoyale/postBattleResults";
       
       public static const VEH_MODULES_CONFIGURATOR_CMP:String = "VehModulesConfiguratorComp";
       

@@ -89,7 +89,7 @@ class EasyTankEquipBottomContent(SubModelPresenter):
 
     def update(self):
         presets = self.__getSelectedPresets()
-        self.getViewModel().setCanAccept(True if presets else False)
+        self.getViewModel().setCanAccept(bool(presets))
         EasyTankEquipDealPanel.updateDealPanelPrice(None, presets, self.getViewModel())
         return
 

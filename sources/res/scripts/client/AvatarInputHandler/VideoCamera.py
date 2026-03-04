@@ -228,7 +228,7 @@ class _VehicleBounder(object):
         if self.__vehicle is None:
             return
         else:
-            if self.__vehicle.isTurretDetached and not self.__placement == _VehicleBounder.SELECT_DETACHED_TURRET:
+            if self.__vehicle.isTurretDetached and self.__placement != _VehicleBounder.SELECT_DETACHED_TURRET:
                 turretFound = None
                 for turret in DetachedTurret.allTurrets:
                     if turret.vehicleID == self.__vehicle.id and turret.model.visible:

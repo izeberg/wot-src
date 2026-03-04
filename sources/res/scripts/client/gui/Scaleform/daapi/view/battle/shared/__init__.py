@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from frameworks.wulf import WindowLayer
 from gui.Scaleform.daapi.settings.views import VIEW_ALIAS

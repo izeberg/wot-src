@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging
 from account_helpers.settings_core.settings_constants import GAME
 from gui.Scaleform.framework.entities.inject_component_adaptor import InjectComponentAdaptor

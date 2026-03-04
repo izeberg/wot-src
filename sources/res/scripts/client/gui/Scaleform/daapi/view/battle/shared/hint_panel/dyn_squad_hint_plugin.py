@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging
 from typing import TYPE_CHECKING
 import CommandMapping
@@ -7,16 +8,16 @@ from account_helpers.AccountSettings import DYN_SQUAD_HINT_SECTION
 from gui.battle_control.battle_constants import VEHICLE_VIEW_STATE
 from gui.impl import backport
 from gui.impl.gen import R
+from gui.Scaleform.daapi.view.battle.shared.hint_panel.hint_panel_plugin import HintPanelPlugin, HintData, HintPriority
 from gui.shared import g_eventBus, EVENT_BUS_SCOPE
 from gui.shared.events import GameEvent
 from gui.shared.utils.key_mapping import getReadableKey, getVirtualKey
 from helpers import dependency
 from helpers.CallbackDelayer import CallbackDelayer
 from skeletons.gui.battle_session import IBattleSessionProvider
-from hint_panel_plugin import HintPanelPlugin, HintData, HintPriority
 import VOIP
 if TYPE_CHECKING:
-    from component import BattleHintPanel
+    from gui.Scaleform.daapi.view.battle.shared.hint_panel.component import BattleHintPanel
     from typing import Type as TType, Any as TAny
 _logger = logging.getLogger(__name__)
 

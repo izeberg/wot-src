@@ -156,3 +156,18 @@ class ResMgr(object):
             return func(getRealmFilePath(filePath)) or func(filePath)
         else:
             return False
+
+    @staticmethod
+    def findFirstPathOccurrence(filePath, extensionsOnly=False):
+        if not extensionsOnly and (rmgr.isDir(filePath) or rmgr.isFile(filePath)):
+            return filePath
+        for extension in g_extensionsManager.activeExtensions:
+            extPath = extension.path + filePath
+            if rmgr.isDir(extPath) or rmgr.isFile(extPath):
+                return extPath
+
+        return filePath
+
+    @staticmethod
+    def purge(resourceID, recurse=False):
+        rmgr.purge(resourceID, recurse)

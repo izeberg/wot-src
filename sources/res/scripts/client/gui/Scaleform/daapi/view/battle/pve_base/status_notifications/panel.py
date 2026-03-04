@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, BigWorld
 from arena_bonus_type_caps import ARENA_BONUS_TYPE_CAPS
 from gui.Scaleform.daapi.view.battle.shared.status_notifications import components

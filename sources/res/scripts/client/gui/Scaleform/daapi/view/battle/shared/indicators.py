@@ -1,4 +1,7 @@
-import typing, BigWorld, GUI, SCALEFORM, SoundGroups
+from __future__ import absolute_import, division
+import typing
+from past.builtins import xrange
+import BigWorld, GUI, SCALEFORM, SoundGroups
 from account_helpers.settings_core.settings_constants import SOUND, DAMAGE_INDICATOR, GRAPHICS
 from constants import VEHICLE_SIEGE_STATE as _SIEGE_STATE, DIRECT_DETECTION_TYPE
 from debug_utils import LOG_DEBUG, LOG_DEBUG_DEV, LOG_WARNING
@@ -641,8 +644,7 @@ class SiegeModeIndicator(SiegeModeIndicatorMeta):
         LOG_DEBUG('Updating siege mode: devices')
         device = max(self._devices.items(), key=self.__getDeviceStateLevel)
         deviceName, deviceState = device
-        if deviceName in VEHICLE_DEVICE_IN_COMPLEX_ITEM:
-            deviceName = VEHICLE_DEVICE_IN_COMPLEX_ITEM[deviceName]
+        deviceName = VEHICLE_DEVICE_IN_COMPLEX_ITEM.get(deviceName, deviceName)
         self.as_updateDeviceStateS(deviceName, deviceState)
 
     def __onVehicleControlling(self, vehicle):
@@ -891,7 +893,7 @@ class _DirectionIndicator(Flash, IDirectionIndicator):
         return
 
     def setVisibility(self, isVisible):
-        if not self.__isVisible == isVisible:
+        if self.__isVisible != isVisible:
             self.__isVisible = isVisible
             self.component.visible = isVisible
 
@@ -954,7 +956,7 @@ class _ArtyDirectionIndicator(Flash, IDirectionIndicator):
         return
 
     def setVisibility(self, isVisible):
-        if not self.__isVisible == isVisible:
+        if self.__isVisible != isVisible:
             self.__isVisible = isVisible
             self.component.visible = isVisible
 

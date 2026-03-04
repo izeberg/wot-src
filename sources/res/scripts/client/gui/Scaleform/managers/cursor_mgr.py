@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, GUI, BigWorld
 from gui import GUI_CTRL_MODE_FLAG as _CTRL_FLAG
 from gui.Scaleform.framework.entities.abstract.CursorManagerMeta import CursorManagerMeta

@@ -1,5 +1,7 @@
-from helpers import dependency
 from skeletons.gui.impl import IGuiLoader
+from gui.impl.pub.notification_commands import WindowNotificationCommand
+from helpers import dependency
+from skeletons.gui.impl import INotificationWindowController
 
 def showBattleRoyaleResults(ctx):
     from battle_royale.gui.impl.lobby.views.states import BattleRoyaleBattleResultsState
@@ -29,3 +31,18 @@ def showBattleRoyalePrimeTime():
 def showHangarVehicleConfigurator():
     from battle_royale.gui.impl.lobby.views.states import BattleRoyaleVehicleInfoState
     BattleRoyaleVehicleInfoState.goTo()
+
+
+@dependency.replace_none_kwargs(notificationMgr=INotificationWindowController)
+def showAwardsView(stage, notificationMgr=None):
+    from battle_royale.gui.impl.lobby.views.battle_quest_awards_view import BattleQuestAwardsViewWindow
+    window = BattleQuestAwardsViewWindow(stage)
+    notificationMgr.append(WindowNotificationCommand(window))
+
+
+def showProgressionView(activeTab=None):
+    from battle_royale.gui.impl.lobby.views.states import BattleRoyaleProgressionState
+    from battle_royale.gui.impl.gen.view_models.views.lobby.views.progression.progression_main_view_model import MainViews
+    if not activeTab:
+        activeTab = MainViews.PROGRESSION
+    BattleRoyaleProgressionState.goTo(ctx={'menuName': activeTab})

@@ -16,8 +16,6 @@ package net.wg.gui.lobby.profile.pages.summary
    public class ProfileSummary extends ProfileSummaryMeta implements IProfileSummaryMeta
    {
       
-      private static const INIT_DATA_INVALID:String = "idInv";
-      
       private static const SUMMARY_LEFT_OFFSET:int = 18;
       
       private static const MIN_HEIGHT:int = 525;

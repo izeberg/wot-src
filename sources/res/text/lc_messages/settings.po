@@ -836,9 +836,6 @@ msgstr "Capture points reset"
 msgid "feedback/tab/battleEvents/checkbox/BlockedDamage"
 msgstr "Damage Blocked"
 
-msgid "feedback/tab/battleEvents/checkbox/CrewPerks"
-msgstr "Crew Perks"
-
 msgid "feedback/tab/battleEvents/checkbox/EnemyBurning"
 msgstr "Enemy vehicle set on fire"
 
@@ -881,6 +878,9 @@ msgstr "Vehicle info"
 msgid "feedback/tab/battleEvents/checkbox/WorldCollision"
 msgstr "Damage by impact"
 
+msgid "feedback/tab/battleEvents/checkbox/allSituationalPerks"
+msgstr "All situational perks"
+
 msgid "feedback/tab/battleEvents/info"
 msgstr ""
 "The three most recent events\n"
@@ -894,6 +894,9 @@ msgstr "Notifications"
 
 msgid "feedback/tab/battleEvents/label/VisibleEvents"
 msgstr "Events"
+
+msgid "feedback/tab/battleEvents/label/crewPerks"
+msgstr "Crew Perks"
 
 msgid "feedback/tab/battleEvents/label/negative"
 msgstr "Damage received"

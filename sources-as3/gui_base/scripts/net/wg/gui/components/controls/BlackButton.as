@@ -130,10 +130,11 @@ package net.wg.gui.components.controls
          var _loc1_:Number = NaN;
          if(textField != null && StringUtils.isNotEmpty(textField.text))
          {
-            _loc1_ = textField.textWidth + (!!this.image.visible ? this.image.width : _paddingHorizontal + textFieldPaddingHorizontal << 1);
+            _loc1_ = textField.textWidth + (!!this.image.visible ? this.image.width : _paddingHorizontal + textFieldPaddingHorizontal << 1) ^ 0;
+            _loc1_ = Math.max(minWidth,_loc1_);
             if(this.canChangeSize(_loc1_))
             {
-               this.width = Math.max(minWidth,_loc1_);
+               this.width = _loc1_;
                dispatchEvent(new Event(Event.RESIZE,true));
             }
          }
@@ -158,9 +159,8 @@ package net.wg.gui.components.controls
       
       protected function layoutContent(param1:int, param2:Number, param3:Number) : void
       {
-         var _loc4_:Boolean = false;
          var _loc6_:uint = 0;
-         _loc4_ = textField.text != null && StringUtils.isNotEmpty(textField.text);
+         var _loc4_:Boolean = textField.text != null && StringUtils.isNotEmpty(textField.text);
          var _loc5_:Boolean = this.image.visible;
          textField.x = param1 - (textField.width >> 1);
          this.toggleGlow.scaleX = param2;

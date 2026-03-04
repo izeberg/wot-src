@@ -1,8 +1,15 @@
+import BigWorld
 from arena_component_system.client_arena_component_system import ClientArenaComponent
 import Event
+from constants import ARENA_BONUS_TYPE
 from debug_utils import LOG_DEBUG_DEV
+from helpers import dependency
+from skeletons.gui.battle_session import IBattleSessionProvider
+from skeletons.gui.game_control import IBattleRoyaleController
 
 class BattleRoyaleComponent(ClientArenaComponent):
+    __battleRoyaleController = dependency.descriptor(IBattleRoyaleController)
+    __sessionProvider = dependency.descriptor(IBattleSessionProvider)
 
     def __init__(self, componentSystem):
         ClientArenaComponent.__init__(self, componentSystem)
@@ -30,3 +37,18 @@ class BattleRoyaleComponent(ClientArenaComponent):
     @property
     def defeatedTeams(self):
         return self.__defeatedTeams
+
+    @property
+    def dailyBonusFactor(self):
+        defaultFactor = 1
+        vehicle = BigWorld.entity(BigWorld.player().playerVehicleID)
+        stPatrickComp = vehicle.dynamicComponents.get('vehicleBRStPatrickComponent')
+        if not stPatrickComp or not stPatrickComp.isDailyBonusAvailable:
+            return defaultFactor
+        stpDailyBonusConf = self.__battleRoyaleController.getModeSettings().dailyBonus
+        arenaBonusType = self.__sessionProvider.arenaVisitor.getArenaBonusType()
+        topPlaceKey = 'squadTopPlaces' if arenaBonusType in ARENA_BONUS_TYPE.BATTLE_ROYALE_SQUAD_RANGE else 'soloTopPlaces'
+        topPlace = stpDailyBonusConf.get(topPlaceKey, 0)
+        if self.place <= topPlace:
+            return stpDailyBonusConf['bonusFactor']
+        return defaultFactor

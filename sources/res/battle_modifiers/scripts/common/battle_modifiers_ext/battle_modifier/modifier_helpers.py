@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from typing import Any, Optional, Callable, Union, Tuple, Dict
 from ResMgr import DataSection
 from battle_modifiers_ext.constants_ext import UseType

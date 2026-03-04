@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging
 from gui.Scaleform.daapi.view.battle.shared.status_notifications import components
 from gui.Scaleform.daapi.view.battle.shared.status_notifications import sn_items

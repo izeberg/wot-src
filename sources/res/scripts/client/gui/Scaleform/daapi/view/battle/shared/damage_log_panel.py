@@ -1,4 +1,6 @@
+from __future__ import absolute_import
 from collections import defaultdict
+from future.utils import viewitems
 import BattleReplay
 from BattleFeedbackCommon import BATTLE_EVENT_TYPE as _BET
 from account_helpers.settings_core.options import DamageLogDetailsSetting as _VIEW_MODE, DamageLogEventPositionsSetting as _EVENT_POSITIONS, DamageLogEventTypesSetting as _DISPLAYED_EVENT_TYPES
@@ -608,21 +610,17 @@ class DamageLogPanel(BattleDamageLogPanelMeta):
         self._bottomLog.updateLog(bottomLogContentMask, self._logViewMode, bottomLogRecStyle)
 
     def _invalidateTotalDamages(self):
-        contentMask = self._invalidateTotalDamageContentMask()
+        contentMask = 0
+        isDamageSettingEnabled = self.__isDamageSettingEnabled
+        for settingName, bit in viewitems(_TOTAL_DAMAGE_SETTINGS_TO_CONTENT_MASK):
+            if isDamageSettingEnabled(settingName):
+                contentMask |= bit
+
         if contentMask != self.__totalDamageContentMask:
             self.__totalDamageContentMask = contentMask
             getter = self.__efficiencyCtrl.getTotalEfficiency
             args = [ self._setTotalValue(e, getter(e))[1] for e, _ in self._totalEvents ]
             self.as_summaryStatsS(*args)
-
-    def _invalidateTotalDamageContentMask(self):
-        contentMask = 0
-        isDamageSettingEnabled = self.__isDamageSettingEnabled
-        for settingName, bit in _TOTAL_DAMAGE_SETTINGS_TO_CONTENT_MASK.iteritems():
-            if isDamageSettingEnabled(settingName):
-                contentMask |= bit
-
-        return contentMask
 
     def _onTotalEfficiencyUpdated(self, diff):
         if self.isSwitchToVehicle() or BattleReplay.isServerSideReplay():
@@ -661,7 +659,7 @@ class DamageLogPanel(BattleDamageLogPanelMeta):
         return
 
     def _onSettingsChanged(self, diff):
-        for key in _TOTAL_DAMAGE_SETTINGS_TO_CONTENT_MASK.iterkeys():
+        for key in _TOTAL_DAMAGE_SETTINGS_TO_CONTENT_MASK:
             if key in diff:
                 self._invalidateTotalDamages()
 

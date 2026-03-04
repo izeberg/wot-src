@@ -4,11 +4,10 @@ package net.wg.gui.messenger.windows
    import flash.ui.Keyboard;
    import net.wg.data.Aliases;
    import net.wg.data.constants.Errors;
-   import net.wg.gui.events.MessengerBarEvent;
-   import net.wg.gui.lobby.messengerBar.WindowGeometryInBar;
    import net.wg.gui.messenger.ChannelComponent;
    import net.wg.gui.messenger.meta.IChannelWindowMeta;
    import net.wg.gui.messenger.meta.impl.ChannelWindowMeta;
+   import net.wg.infrastructure.base.DefaultWindowGeometry;
    import net.wg.infrastructure.events.FocusRequestEvent;
    import scaleform.clik.constants.ConstrainMode;
    import scaleform.clik.constants.InputValue;
@@ -33,11 +32,6 @@ package net.wg.gui.messenger.windows
          canResize = true;
       }
       
-      override public function getClientItemID() : Number
-      {
-         return getClientIDS();
-      }
-      
       override protected function configUI() : void
       {
          super.configUI();
@@ -55,7 +49,7 @@ package net.wg.gui.messenger.windows
          super.onPopulate();
          registerFlashComponentS(this.channelComponent,Aliases.CHANNEL_COMPONENT);
          window.contentPadding = this.CONTENT_PADDING;
-         geometry = new WindowGeometryInBar(MessengerBarEvent.PIN_CAROUSEL_WINDOW,getClientIDS());
+         geometry = new DefaultWindowGeometry();
       }
       
       override protected function onDispose() : void

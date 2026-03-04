@@ -4,13 +4,10 @@ package net.wg.gui.lobby.techtree.controls
    import flash.display.DisplayObject;
    import flash.display.MovieClip;
    import flash.events.MouseEvent;
-   import net.wg.data.constants.Errors;
    import net.wg.gui.components.controls.BitmapFill;
    import net.wg.gui.components.controls.SoundButton;
-   import net.wg.gui.lobby.techtree.TechTreeEvent;
    import net.wg.gui.lobby.techtree.constants.ActionName;
    import net.wg.gui.lobby.techtree.data.state.AnimationProperties;
-   import net.wg.gui.lobby.techtree.interfaces.IRenderer;
    import net.wg.gui.utils.ImageSubstitution;
    import scaleform.clik.constants.InvalidationType;
    import scaleform.clik.core.UIComponent;
@@ -144,12 +141,6 @@ package net.wg.gui.lobby.techtree.controls
          }
       }
       
-      override protected function handleClick(param1:uint = 0) : void
-      {
-         super.handleClick(param1);
-         this.doAction();
-      }
-      
       public function endAnimation(param1:Boolean) : void
       {
          var _loc2_:DisplayObject = null;
@@ -243,30 +234,6 @@ package net.wg.gui.lobby.techtree.controls
          visible = true;
       }
       
-      private function doAction() : void
-      {
-         var _loc2_:IRenderer = null;
-         var _loc1_:String = null;
-         switch(this._action)
-         {
-            case ActionName.UNLOCK:
-               _loc1_ = TechTreeEvent.CLICK_2_UNLOCK;
-               break;
-            case ActionName.BUY:
-            case ActionName.RENT:
-               _loc1_ = TechTreeEvent.CLICK_2_BUY;
-               break;
-            case ActionName.RESTORE:
-               _loc1_ = TechTreeEvent.RESTORE_VEHICLE;
-         }
-         if(_loc1_ != null && owner != null)
-         {
-            _loc2_ = owner as IRenderer;
-            App.utils.asserter.assertNotNull(_loc2_,RENDERER + Errors.CANT_NULL);
-            dispatchEvent(new TechTreeEvent(_loc1_,_loc2_.nodeState,_loc2_.index,_loc2_.entityType));
-         }
-      }
-      
       private function makeStatesPrefixes() : void
       {
          var _loc1_:String = this._action + SEPARATOR;
@@ -321,23 +288,6 @@ package net.wg.gui.lobby.techtree.controls
             this._imgSubstitution = new ImageSubstitution(param1.subString,param1.source,param1.baseLineY,param1.width,param1.height);
          }
          invalidateData();
-      }
-      
-      override protected function handleMouseRollOver(param1:MouseEvent) : void
-      {
-         super.handleMouseRollOver(param1);
-         var _loc2_:IRenderer = owner as IRenderer;
-         App.utils.asserter.assertNotNull(_loc2_,RENDERER + Errors.CANT_NULL);
-         dispatchEvent(new TechTreeEvent(TechTreeEvent.ON_MODULE_HOVER,_loc2_.nodeState,_loc2_.index,_loc2_.entityType));
-      }
-      
-      override protected function handleMouseRollOut(param1:MouseEvent) : void
-      {
-         super.handleMouseRollOut(param1);
-         this.endAnimation(false);
-         var _loc2_:IRenderer = owner as IRenderer;
-         App.utils.asserter.assertNotNull(_loc2_,RENDERER + Errors.CANT_NULL);
-         dispatchEvent(new TechTreeEvent(TechTreeEvent.ON_MODULE_HOVER,_loc2_.nodeState,-1,_loc2_.entityType));
       }
       
       override protected function handleReleaseOutside(param1:MouseEvent) : void

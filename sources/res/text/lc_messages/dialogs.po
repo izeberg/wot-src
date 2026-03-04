@@ -144,8 +144,8 @@ msgstr ""
 
 msgid "accountCompletion/warningServerUnavailableTimed"
 msgstr ""
-"%(icon) The service is temporarily unavailable.%(br)Please try again in "
-"%(time)s."
+"%(icon) The service is temporarily unavailable.\n"
+"Please try again in %(time)s."
 
 msgid "barracksExpand/cancel"
 msgstr "Cancel"
@@ -2087,13 +2087,21 @@ msgstr "from the total perk XP"
 msgid "perksReset/priceCard/free/title"
 msgstr "Rapid Courses"
 
-msgid "perksReset/priceCard/gold/description"
+msgid "perksReset/priceCard/freeGold/description"
 msgstr ""
 "Reset perks\n"
-"without losing XP"
+" without losing XP"
+
+msgid "perksReset/priceCard/gold/description"
+msgstr "Use credits to reset perks without losing XP"
 
 msgid "perksReset/priceCard/gold/title"
 msgstr "Tank Academy"
+
+msgid "perksReset/priceCard/recertification/description"
+msgstr ""
+"Reset perks\n"
+" without losing XP"
 
 msgid "perksReset/priceCard/xpLoose"
 msgstr "{percentAmount}&nbsp;({xpAmount})"
@@ -2186,7 +2194,7 @@ msgstr "Unsportsmanlike Conduct"
 
 msgid "punishmentWindow/info"
 msgstr ""
-"If your situation is caused by connection problems or other technical issues,\n"
+"If your situation was caused by connection problems or other technical issues,\n"
 "please contact Player Support."
 
 msgid "punishmentWindow/message/ban"
@@ -2197,7 +2205,7 @@ msgstr ""
 msgid "punishmentWindow/message/penalty"
 msgstr ""
 "You violated Game Rules on the {whiteSpanish_Open}%(arenaName)s{whiteSpanish_Close} map at {whiteSpanish_Open}%(time)s{whiteSpanish_Close}.\n"
-"You are deprived of credits, XP, and rewards earned in battle."
+"Your credits, XP, and rewards earned in battle have been removed."
 
 msgid "punishmentWindow/message/warning"
 msgstr ""
@@ -2312,8 +2320,8 @@ msgstr "Cancel"
 msgid "quitBattle/IGR/leaver/descriptionAlive"
 msgstr ""
 "Your team needs you! Leaving a battle before it ends or before your vehicle "
-"is destroyed is considered desertion. This may result in a disciplinary "
-"penalty and the loss of all bonuses for the battle played in IGR."
+"is destroyed is considered desertion. This may result in a penalty and the "
+"loss of all bonuses for the battle played in IGR."
 
 msgid "quitBattle/IGR/leaver/submit"
 msgstr "Desert"
@@ -2330,8 +2338,7 @@ msgstr "Cancel"
 msgid "quitBattle/leaver/descriptionAlive"
 msgstr ""
 "Your team needs you! Leaving a battle before it ends or before your vehicle "
-"is destroyed is considered desertion. This may result in a disciplinary "
-"penalty."
+"is destroyed is considered desertion. This may result in a penalty."
 
 msgid "quitBattle/leaver/submit"
 msgstr "Desert"
@@ -2817,6 +2824,15 @@ msgstr "Affirmative!"
 
 msgid "rudyInfo/title"
 msgstr "Four Tank-Men and a Dog"
+
+msgid "selectVehicle/counter"
+msgstr "Displayed vehicles:"
+
+msgid "selectVehicle/selectAttackerTitle"
+msgstr "Select Attacking Vehicle"
+
+msgid "selectVehicle/selectVehicle"
+msgstr "Select this vehicle"
 
 msgid "sellConfirmation/cancel"
 msgstr "Cancel"
@@ -3522,6 +3538,110 @@ msgstr "Restore to Duty"
 msgid "wgshEventUnfreezeVehicle/title"
 msgstr "Restore to duty?"
 
+msgid "wotPlusActivationDialog/benefits/assistant"
+msgstr "Assistant"
+
+msgid "wotPlusActivationDialog/benefits/attendanceRewards"
+msgstr "Attendance Rewards"
+
+msgid "wotPlusActivationDialog/benefits/battleBonus"
+msgstr "Battle Bonus"
+
+msgid "wotPlusActivationDialog/benefits/battlePassPlus"
+msgstr "Battle Pass Plus"
+
+msgid "wotPlusActivationDialog/benefits/excludedMap"
+msgstr "Excluded Map"
+
+msgid "wotPlusActivationDialog/benefits/exclusiveVehicles"
+msgstr "Exclusive Vehicle"
+
+msgid "wotPlusActivationDialog/benefits/freeEquipmentDemounting"
+msgstr "Free Equipment Demounting"
+
+msgid "wotPlusActivationDialog/benefits/goldReserve"
+msgstr "Gold Reserve"
+
+msgid "wotPlusActivationDialog/benefits/intensiveCrewRegimen"
+msgstr "Intensive Crew Regimen"
+
+msgid "wotPlusActivationDialog/benefits/manageableXpMultiplier"
+msgstr "Manageable XP Multiplier"
+
+msgid "wotPlusActivationDialog/benefits/proBoost"
+msgstr "Pro Boost"
+
+msgid "wotPlusActivationDialog/benefits/serviceRecordCustomization"
+msgstr "Service Record Customization"
+
+msgid "wotPlusActivationDialog/benefits/tankerBanner"
+msgstr "Tanker Banner"
+
+msgid "wotPlusActivationDialog/cn/heading"
+msgstr "WOT PLUS ACTIVATED"
+
+msgid "wotPlusActivationDialog/confirmation"
+msgstr "I'm All Set!"
+
+msgid "wotPlusActivationDialog/core/description"
+msgstr "Extends on {{date}}"
+
+msgid "wotPlusActivationDialog/core/heading"
+msgstr "WOT PLUS CORE ACTIVATED"
+
+msgid "wotPlusActivationDialog/details"
+msgstr "Details"
+
+msgid "wotPlusActivationDialog/planInterval12"
+msgstr "360-day plan"
+
+msgid "wotPlusActivationDialog/planInterval6"
+msgstr "180-day plan"
+
+msgid "wotPlusActivationDialog/pro/description"
+msgstr "{{planInterval}}, extends on {{date}}"
+
+msgid "wotPlusActivationDialog/pro/heading"
+msgstr "WOT PLUS PRO ACTIVATED"
+
+msgid "wotPlusProBoostActivationDialog/confirm"
+msgstr "Activate"
+
+msgid "wotPlusProBoostActivationDialog/description"
+msgstr ""
+"{{@ split}}You will not be able to boost another vehicle again for {{@ style"
+" (color #fff)}}{{boostInterval}} hours{{/}}.{{/}}"
+
+msgid "wotPlusProBoostActivationDialog/footer"
+msgstr ""
+"Activating Pro Boost makes this vehicle earn {{@ style (color "
+"#fff)}}{{bonusPercent}} more Credits and XP{{/}}. Applies to one vehicle "
+"only."
+
+msgid "wotPlusProBoostActivationDialog/title"
+msgstr "Activate Pro Boost for the {{vehicle}}?"
+
+msgid "wotPlusProBoostSwitchDialog/confirm"
+msgstr "Switch"
+
+msgid "wotPlusProBoostSwitchDialog/description"
+msgstr ""
+"{{@ split}}Only one vehicle can receive the boost. You will not be able to "
+"boost another vehicle again for {{@ style (color #fff)}}{{boostInterval}} "
+"hours{{/}}.{{/}}"
+
+msgid "wotPlusProBoostSwitchDialog/footer"
+msgstr ""
+"Activating Pro Boost makes this vehicle earn {{@ style (color "
+"#fff)}}{{bonusPercent}} more Credits and XP{{/}}. Applies to one vehicle "
+"only."
+
+msgid "wotPlusProBoostSwitchDialog/title"
+msgstr "Switch Pro Boost to the {{vehicle}}?"
+
+msgid "wotPlusProBoostSwitchDialog/vehicle"
+msgstr "{{tier}} {{type_image}} {{name}}"
+
 msgid "wotPlusRental/cancel"
 msgstr "Cancel"
 
@@ -3533,6 +3653,12 @@ msgstr "Rent"
 
 msgid "wotPlusRental/title"
 msgstr "Rent {cream_Open}%s{cream_Close}?"
+
+msgid "wotPlusServiceRecordCustomizationDialog/save"
+msgstr "Save"
+
+msgid "wotPlusServiceRecordCustomizationDialog/title"
+msgstr "Do you want to save your Service Record customization?"
 
 msgid "xpToTmenCheckbox/cancel"
 msgstr "Cancel"

@@ -63,6 +63,9 @@ def getProgressionYearState(modeController, yearStateClazz):
         return yearStateClazz.ACTIVE
 
 
+INACTIVE_PRIME_TIMES = {
+ PrimeTimeStatus.NOT_AVAILABLE, PrimeTimeStatus.NOT_SET}
+
 def getEventBannerState(modeController, seasonStateClazz, selectorBattleType):
     if not modeController.isAvailable():
         return EventBannerState.INACTIVE
@@ -76,9 +79,15 @@ def getEventBannerState(modeController, seasonStateClazz, selectorBattleType):
             if modeController.getCurrentSeason(includePreannounced=True) is not None:
                 return EventBannerState.ANNOUNCE
             return EventBannerState.INACTIVE
-        primeTimeStatus, _, _ = modeController.getPrimeTimeStatus()
-        if primeTimeStatus in (PrimeTimeStatus.NOT_AVAILABLE, PrimeTimeStatus.NOT_SET):
+        primeTimes = modeController.getPrimeTimes()
+        getPrimeTimeStatus = modeController.getPrimeTimeStatus
+        for peripheryID in primeTimes:
+            primeTimeStatus = getPrimeTimeStatus(peripheryID=peripheryID, primeTimes=primeTimes)[0]
+            if primeTimeStatus not in INACTIVE_PRIME_TIMES:
+                break
+        else:
             return EventBannerState.INACTIVE
+
         if isKnownBattleType(selectorBattleType):
             return EventBannerState.IN_PROGRESS
         return EventBannerState.INTRO

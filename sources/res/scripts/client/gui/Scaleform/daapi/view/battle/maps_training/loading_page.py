@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.Scaleform.daapi.view.meta.MapsTrainingBattleLoadingMeta import MapsTrainingBattleLoadingMeta
 from gui.Scaleform.genConsts.BATTLE_VIEW_ALIASES import BATTLE_VIEW_ALIASES
 from gui.battle_control.arena_info.interfaces import IArenaLoadController

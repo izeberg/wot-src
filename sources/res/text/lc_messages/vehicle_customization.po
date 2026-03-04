@@ -621,6 +621,31 @@ msgstr "Ammunition Crate"
 msgid "attachment/tactical_supplies/Cus_82_NationsA_Ammogun"
 msgstr "Mounted Gun Crate"
 
+msgid "attachment/tank_lads"
+msgstr "Tank Lads"
+
+msgid "attachment/tank_lads/Cus_185_SP_Spotlighter"
+msgstr "Peeker"
+
+msgid "attachment/tank_lads/Cus_186_SP_MachineGunner"
+msgstr "Rattler"
+
+msgid "attachment/tank_lads/Cus_187_SP_Firefighters"
+msgstr "Splashers"
+
+msgid "attachment/tank_lads/Cus_188_SP_Welders"
+msgstr "Sizzlers"
+
+msgid "attachment/tank_lads/Cus_188_SP_Welders/description"
+msgstr ""
+"\"Plate's split, lad!\" \n"
+"\"Grand, fire up the torch!\" \n"
+"\"Reckon she'll hold?\" \n"
+"\"Aye, solid as gold!\""
+
+msgid "attachment/tank_lads/Cus_189_SP_Engineer"
+msgstr "Tinker"
+
 msgid "attachment/test"
 msgstr "Test Subjects"
 
@@ -3300,10 +3325,22 @@ msgid "camouflage/bp2025_s18_1/label"
 msgstr "What Comes After"
 
 msgid "camouflage/bp2025_s18_2/label"
-msgstr "Days Gone Bye"
+msgstr "Welcome to the New World"
 
 msgid "camouflage/bp2025_s18_3/label"
-msgstr "Welcome to the New World"
+msgstr "Days Gone Bye"
+
+msgid "camouflage/bp2025_s19_bundle/label"
+msgstr "Crosstalk"
+
+msgid "camouflage/bp2025_s19_cz/label"
+msgstr "Carrier Wave"
+
+msgid "camouflage/bp2025_s19_g/label"
+msgstr "Azimuth"
+
+msgid "camouflage/bp2025_s19_usa/label"
+msgstr "Ham Spirit"
 
 msgid "camouflage/bp8_auction_1_hull/description"
 msgstr "?empty?"
@@ -4481,6 +4518,12 @@ msgstr "Revolutionary"
 msgid "camouflage/event/name"
 msgstr "WG Fest"
 
+msgid "camouflage/fall_tanks/description"
+msgstr "?empty?"
+
+msgid "camouflage/fall_tanks/label"
+msgstr "Neon Demon"
+
 msgid "camouflage/feer/label"
 msgstr "Fireworks"
 
@@ -4607,6 +4650,9 @@ msgstr "?empty?"
 
 msgid "camouflage/foreign_legion_2/label"
 msgstr "Spray Paint"
+
+msgid "camouflage/forged_flame/label"
+msgstr "Forged in Flame"
 
 msgid "camouflage/fort/description"
 msgstr "?empty?"
@@ -5126,6 +5172,9 @@ msgstr "?empty?"
 msgid "camouflage/girls_und_panzer_2024_jatkosota/label"
 msgstr "Jatkosota High School"
 
+msgid "camouflage/girls_und_panzer_kabasan/label"
+msgstr "Team-Kabasan"
+
 msgid "camouflage/give_paw/description"
 msgstr "?empty?"
 
@@ -5549,6 +5598,12 @@ msgstr "?empty?"
 msgid "camouflage/liveops_backtoschool_2025/label"
 msgstr "No Brakes"
 
+msgid "camouflage/liveops_directsales/label"
+msgstr "Mortar Shell"
+
+msgid "camouflage/liveops_hist_camo/label"
+msgstr "Pioneer of Deception"
+
 msgid "camouflage/liveops_hw_2025/description"
 msgstr "?empty?"
 
@@ -5566,6 +5621,9 @@ msgstr "?empty?"
 
 msgid "camouflage/liveops_medieval/label"
 msgstr "Nine Lives"
+
+msgid "camouflage/liveops_pixelart/label"
+msgstr "Digital Roots"
 
 msgid "camouflage/liveops_recolor_1/description"
 msgstr "?empty?"
@@ -6973,6 +7031,9 @@ msgstr "?empty?"
 
 msgid "camouflage/st_patricks_day_2025/label"
 msgstr "Fortune's Forge"
+
+msgid "camouflage/st_patricks_day_2026/label"
+msgstr "Gaelic Brand"
 
 msgid "camouflage/stayhome/description"
 msgstr "?empty?"
@@ -17404,22 +17465,26 @@ msgstr "Hellhound"
 
 msgid "main_style/A69_T110E5_3DSt_TIR_desc/long"
 msgstr ""
-"\"We are all exhausted, and there is a lot of work left to do. But we are "
-"still in action. We are alive and fighting, in no small part thanks to you. "
-"You drove us through enemy fire and repelled numerous enemy attacks. Yes, we"
-" are exhausted, but please, hold out for a bit longer, friend, as someone is"
-" waiting for every one of us back home. And we want to come back alive.\""
+"Inspired by the original style for the T57 Heavy.\n"
+"\n"
+"\"We are all exhausted, and there is a lot of work left to do. But we are still in action. We are alive and fighting, in no small part thanks to you.\n"
+"\n"
+"%(insertion_open)sYou drove us through enemy fire and repelled numerous enemy attacks.%(insertion_close)s\n"
+"\n"
+"Yes, we are exhausted, but please, hold out for a bit longer, friend, as someone is waiting for every one of us back home. And we want to come back alive.\""
 
 msgid "main_style/A89_T54E1_3DSt_TIR"
 msgstr "Hellhound"
 
 msgid "main_style/A89_T54E1_3DSt_TIR_desc/long"
 msgstr ""
-"\"We are all exhausted, and there is a lot of work left to do. But we are "
-"still in action. We are alive and fighting, in no small part thanks to you. "
-"You drove us through enemy fire and repelled numerous enemy attacks. Yes, we"
-" are exhausted, but please, hold out for a bit longer, friend, as someone is"
-" waiting for every one of us back home. And we want to come back alive.\""
+"Inspired by the original style for the T57 Heavy.\n"
+"\n"
+"\"We are all exhausted, and there is a lot of work left to do. But we are still in action. We are alive and fighting, in no small part thanks to you.\n"
+"\n"
+"%(insertion_open)sYou drove us through enemy fire and repelled numerous enemy attacks.%(insertion_close)s\n"
+"\n"
+"Yes, we are exhausted, but please, hold out for a bit longer, friend, as someone is waiting for every one of us back home. And we want to come back alive.\""
 
 msgid "main_style/F108_Panhard_EBR_105_3Dst"
 msgstr "Tramontana"
@@ -17483,9 +17548,11 @@ msgstr "Marengo"
 
 msgid "main_style/F75_Char_de_25t_3DSt_TIR_desc/long"
 msgstr ""
+"Inspired by the original style for the Bat.-Châtillon 25 t.\n"
+"\n"
 "From the diary of the driver of the Bat.-Châtillon 25 t, a vehicle named after Napoleon Bonaparte's favorite horse: \"How ironic... Our \"Arabian stallion\" came home, but we are only guests here.\n"
 "\n"
-"And only Marengo decides whether we come home for our turn.\n"
+"%(insertion_open)sAnd only Marengo decides whether we come home for our turn.%(insertion_close)s\n"
 "\n"
 "I hope it doesn't decide to stay here forever. I want to see my magnificent France once again...\""
 
@@ -17494,9 +17561,11 @@ msgstr "Marengo"
 
 msgid "main_style/F88_AMX_13_105_3DSt_TIR_desc/long"
 msgstr ""
+"Inspired by the original style for the Bat.-Châtillon 25 t.\n"
+"\n"
 "From the diary of the driver of the Bat.-Châtillon 25 t, a vehicle named after Napoleon Bonaparte's favorite horse: \"How ironic... Our \"Arabian stallion\" came home, but we are only guests here.\n"
 "\n"
-"And only Marengo decides whether we come home for our turn.\n"
+"%(insertion_open)sAnd only Marengo decides whether we come home for our turn.%(insertion_close)s\n"
 "\n"
 "I hope it doesn't decide to stay here forever. I want to see my magnificent France once again...\""
 
@@ -18501,11 +18570,9 @@ msgstr "Granite"
 
 msgid "main_style/granit_TIR_desc/long"
 msgstr ""
-"\"It's a masterpiece of the tank building industry of the post-war USSR. It "
-"is an armor-piercing spear that can break through the heaviest defense lines"
-" and display maximum efficiency when eliminating any land or air threats "
-"under any weather, chemical, biological, or nuclear conditions. That's what "
-"the Commander says, and the Commander is always right.\""
+"Inspired by the original style for the IS-7.\n"
+"\n"
+"\"It's a masterpiece of the tank building industry of the post-war USSR. It is an armor-piercing spear that can break through the heaviest defense lines and display maximum efficiency when eliminating any land or air threats under any weather, chemical, biological, or nuclear conditions. That's what the Commander says, and the Commander is always right.\""
 
 msgid "main_style/historical_custom_look_korea"
 msgstr "Dawn Over Nakdonggang"
@@ -18554,8 +18621,13 @@ msgstr "Igelschnäuzchen"
 
 msgid "main_style/igelschnauzchen_description/long"
 msgstr ""
-"On a badly burnt piece of paper that was found in a huge shell crater, you can barely read the following words:\n"
-"\"It's an order. The Commander's decision is quick and irrevocable, like a shot or the click of a gun bolt. The order immediately turns you into a precise and perfect weapon with a certain goal and clear instructions. The order lifts all responsibility. We'll complete the order, dear Elsa, and get back home. I promise you.\""
+"Inspired by the original style for the Grille 15.\n"
+"\n"
+"On a badly burnt piece of paper that was found in a huge shell crater, you can barely read the following words, \"It's an order. The Commander's decision is quick and irrevocable, like a shot or the click of a gun bolt.\n"
+"\n"
+"%(insertion_open)sThe order immediately turns you into a precise and perfect weapon with a certain goal and clear instructions.%(insertion_close)s\n"
+"\n"
+"The order lifts all responsibility. We'll complete the order, dear Elsa, and get back home. I promise you.\""
 
 msgid "main_style/left_alive"
 msgstr "Left Alive"
@@ -20197,6 +20269,9 @@ msgstr "Pin-Up Alice"
 msgid "projection_decals/pin_up/projection_decal_71"
 msgstr "Pin-up Kei"
 
+msgid "projection_decals/pin_up/projection_decal_72"
+msgstr "Pin-Up Erwin"
+
 msgid "projection_decals/progression"
 msgstr "Progressive"
 
@@ -20519,6 +20594,15 @@ msgstr ""
 "Equipping Extra Combat Rations or Strong Coffee may be beneficial, but they "
 "won't save your hit points in case of fire. Use them wisely."
 
+msgid "projection_decals/special/projection_decal_1022"
+msgstr "CUAGN"
+
+msgid "projection_decals/special/projection_decal_1023"
+msgstr "QRZ"
+
+msgid "projection_decals/special/projection_decal_1024"
+msgstr "CQ"
+
 msgid "projection_decals/special/projection_decal_1027"
 msgstr "RoboCop"
 
@@ -20565,6 +20649,12 @@ msgid "projection_decals/special/projection_decal_104/description"
 msgstr ""
 "There is no surrender. Either you destroy it, or it destroys you. It's in "
 "your hands."
+
+msgid "projection_decals/special/projection_decal_1043"
+msgstr "Chibi-Erwin"
+
+msgid "projection_decals/special/projection_decal_1044"
+msgstr "Anvil Strike"
 
 msgid "projection_decals/special/projection_decal_105"
 msgstr "DOG-II*"
@@ -25083,6 +25173,9 @@ msgstr "Nec Pluribus Impar"
 msgid "repaint/foreign_legion_2"
 msgstr "Spray Paint"
 
+msgid "repaint/forged_flame"
+msgstr "Forged in Flame"
+
 msgid "repaint/france_base_color"
 msgstr "France base color"
 
@@ -25181,6 +25274,9 @@ msgstr "Olive"
 
 msgid "repaint/girls_und_panzer_hippo"
 msgstr "Charcoal"
+
+msgid "repaint/girls_und_panzer_kabasan_style"
+msgstr "Team-Kabasan"
 
 msgid "repaint/girls_und_panzer_rabbit"
 msgstr "Moss"
@@ -26841,6 +26937,20 @@ msgstr ""
 "old pickup and get me out of this godforsaken place. You and me, I know we "
 "can. No, we will! We will stay alive. We will survive!\""
 
+msgid "special_style/A69_T110E5_BPXIX_3Dst"
+msgstr "Boreal Watch"
+
+msgid "special_style/A69_T110E5_BPXIX_3Dst_desc/long"
+msgstr ""
+"\"I brace in the driver's hatch as the antenna rises, and the biting, "
+"howling expanse shrinks to something we can quantify: signals and blips. My "
+"crew mostly triangulates, listens, and records, but our tank's AA-52 machine"
+" gun sure offers some peace of mind. The radar and infrared keep the dark at"
+" bay, and the headlight cuts through the blizzards... too bad it can't slice"
+" through the cold. Still, we've got enough to survive out here: camo nets, a"
+" hardy tent, even a winch. Most important of all, though, are the ammo "
+"boxes—ain't no rest for the watchers.\""
+
 msgid "special_style/A83_T110E4_BVII_3DSt"
 msgstr "Freight Train"
 
@@ -27360,6 +27470,21 @@ msgstr ""
 "I'd love to chat with you some more about fairytales, monsters, and music, "
 "but you know what they say: a monster can't live on songs alone...\""
 
+msgid "special_style/Cz34_Vz_71_Tesak_BPXIX_3Dst"
+msgstr "Zima Vz. 71"
+
+msgid "special_style/Cz34_Vz_71_Tesak_BPXIX_3Dst_desc/long"
+msgstr ""
+"\"Peering through the camouflage netting, I adjust the tank's demountable "
+"field antenna, marveling at how such delicate wires can carry so much "
+"information—each reading interlocking with the next, like the gears of a "
+"finely tuned watch. The searchlight casts a warm glow over the snow as I "
+"follow the hum of the radar. Its electronic pulse feels alien out here, so "
+"far from anything touched by human hands. Spare fuel tanks clink softly "
+"against the hull as we trundle forward, and I feel a strange thrill knowing "
+"that, from this armored cocoon, I can glimpse the wider world I longed to "
+"explore.\""
+
 msgid "special_style/Cz40_DBV_152_RW6_3Dst"
 msgstr "Moravian Bombard"
 
@@ -27649,6 +27774,20 @@ msgstr ""
 "entire war machine of the great Germany in North Africa... The British have "
 "fuel.\""
 
+msgid "special_style/G121_Grille_15_L63_BPXIX_3Dst"
+msgstr "PZ-15 Polarwacht"
+
+msgid "special_style/G121_Grille_15_L63_BPXIX_3Dst_desc/long"
+msgstr ""
+"\"Within these steel-framed walls, the world regains its order. I take great"
+" comfort in the certainty of a machine performing exactly as its blueprints "
+"intended. While my crewmates are captivated by the mystery of the hunt, I "
+"pay no heed as I calibrate the radar, adjust the night-vision optics, and "
+"observe the dozer blade's hydraulic curve against the frozen ground. "
+"Whatever we uncover up here—whether the anomalous transmission leads to "
+"innocents or saboteurs—will be secondary to the satisfaction of having "
+"solved the equation. For me, that is the end in itself.\""
+
 msgid "special_style/G121_Grille_15_L63_NY2025_3Dst"
 msgstr "The Rod"
 
@@ -27897,6 +28036,30 @@ msgstr ""
 "\"Alright, listen up. This here's Götterfaust—the so-called Fist of the Gods. Get a load of that reinforced armor, those twin guns that could drop a Panzerhund without breaking a sweat... the enemy built this monster to end anyone who dared stand up to 'em. 'Cept the Resistance tore it right out from under their boots. It was supposed to keep the people on their knees, but here's the funny thing about monsters: point 'em in the right direction, and they don't give a damn who built 'em.\n"
 "\n"
 "They're playin' with fire. And I intend to pour some gasoline.\""
+
+msgid "special_style/G191_StuG_IIIF_AF_3Dst"
+msgstr "Team-Kabasan Friendly Match"
+
+msgid "special_style/G191_StuG_IIIF_AF_3Dst_desc/long"
+msgstr ""
+"After being missing for a long time in a lake, the StuG III Ausf. F was "
+"recovered and customized by Team-Kabasan with decorations inspired by their "
+"favorite eras of world history. The vehicle entered a friendly match against"
+" St. Gloriana, where it scored some success in urban combat by using the "
+"cityscape for concealment. However, the team quickly realized that vivid "
+"colors and eye-catching symbols were far from ideal for a tank destroyer's "
+"camouflage."
+
+msgid "special_style/G191_StuG_IIIF_A_3Dst"
+msgstr "Team-Kabasan Standard"
+
+msgid "special_style/G191_StuG_IIIF_A_3Dst_desc/long"
+msgstr ""
+"After finding a long-lost StuG III Ausf. F in a lake during a search at "
+"Oarai Girls' High School, the girls of Team-Kabasan worked hard to restore "
+"it to its former glory. The vehicle was once adorned with flamboyant "
+"decorations but has since been repainted practical field gray, reflecting "
+"the team's greater expertise in concealment and ambush tactics."
 
 msgid "special_style/G42_Maus_BPXVIII_3Dst"
 msgstr "Eisenblick"
@@ -30871,12 +31034,25 @@ msgstr ""
 "miss it.\""
 
 msgid "special_style/bp2025_s18_2"
-msgstr "Days Gone Bye"
+msgstr "Welcome to the New World"
 
 msgid "special_style/bp2025_s18_2_desc"
-msgstr "An ominous all-season style. Don't get too close to this one..."
+msgstr "Face a grisly new reality in this all-season style."
 
 msgid "special_style/bp2025_s18_2_desc/long"
+msgstr ""
+"\"Thought you were gonna have it easy, huh? Good job, nice house, fancy "
+"neighborhood. That's all gone now. The dead make every day a struggle, and "
+"the living are the ones you really gotta be afraid of. Every day's a test, "
+"and most folks won’t make it. Welcome to the new world.\""
+
+msgid "special_style/bp2025_s18_3"
+msgstr "Days Gone Bye"
+
+msgid "special_style/bp2025_s18_3_desc"
+msgstr "An ominous all-season style. Don't get too close to this one..."
+
+msgid "special_style/bp2025_s18_3_desc/long"
 msgstr ""
 "\"Feels like a lifetime ago, waking up in that hospital bed. No doctors, no "
 "nurses, just a whole lot of blood and smashed up gear, lights flickering. "
@@ -30885,18 +31061,67 @@ msgstr ""
 "what that meant. Whoever was in that room... they'd already died once. That "
 "should've been enough.\""
 
-msgid "special_style/bp2025_s18_3"
-msgstr "Welcome to the New World"
+msgid "special_style/bp2025_s19_bundle"
+msgstr "Crosstalk"
 
-msgid "special_style/bp2025_s18_3_desc"
-msgstr "Face a grisly new reality in this all-season style."
+msgid "special_style/bp2025_s19_bundle_desc"
+msgstr "An all-season style suited to the toughest of boreal expeditions."
 
-msgid "special_style/bp2025_s18_3_desc/long"
+msgid "special_style/bp2025_s19_bundle_desc/long"
 msgstr ""
-"\"Thought you were gonna have it easy, huh? Good job, nice house, fancy "
-"neighborhood. That's all gone now. The dead make every day a struggle, and "
-"the living are the ones you really gotta be afraid of. Every day's a test, "
-"and most folks won’t make it. Welcome to the new world.\""
+"\"I was assigned to investigate concerning radio signals from an "
+"unregistered, highly remote transmission station. I have no doubt that we "
+"will decipher the message and locate its precise origin soon enough, but I "
+"can't shake the feeling that what we find won't be cause for celebration. "
+"Whoever and whatever may be waiting for us, we must proceed carefully. As we"
+" like to say in my line of work, dead air is better than a dead operator.\""
+
+msgid "special_style/bp2025_s19_cz"
+msgstr "Carrier Wave"
+
+msgid "special_style/bp2025_s19_cz_desc"
+msgstr "The ideal all-season style for an intrepid investigator."
+
+msgid "special_style/bp2025_s19_cz_desc/long"
+msgstr ""
+"\"When they said there was a signal no one could account for, I packed my "
+"equipment and headed north as soon as I could. I'll admit it, crossing the "
+"tundra in a tank wasn't exactly how I pictured my next assignment. I'm more "
+"at home behind my bench than a periscope, but this is certainly one way of "
+"seeing the world—and it's hard not to be curious about what we'll find. "
+"Maybe it's nothing. Maybe not. Either way, I'll be among the very first to "
+"know.\""
+
+msgid "special_style/bp2025_s19_g"
+msgstr "Azimuth"
+
+msgid "special_style/bp2025_s19_g_desc"
+msgstr "Channel an erudite engineer in this all-season style."
+
+msgid "special_style/bp2025_s19_g_desc/long"
+msgstr ""
+"\"To me, this mission is an exercise in skill. Whatever these signals "
+"represent, they can be understood—and that is what matters. I find comfort "
+"in the order of it all, in the mathematics that underpin the mystery. For "
+"now, I am utterly focused on the intellectual challenge at hand, and I am "
+"relishing every second. Perhaps it seems that I am a simple man, but I "
+"simply love my craft. The world only makes sense when my dials align.\""
+
+msgid "special_style/bp2025_s19_usa"
+msgstr "Ham Spirit"
+
+msgid "special_style/bp2025_s19_usa_desc"
+msgstr "An all-season style befitting a stoic scout."
+
+msgid "special_style/bp2025_s19_usa_desc/long"
+msgstr ""
+"\"I've got no idea what we might find up here, but I've got all the intel I "
+"need: there's a signal, and we're out here to track it. The equipment's "
+"solid, the terrain's less so, and the weather's doing its best to bury both."
+" But that's all part of the job. I've worked in worse, and I trust my team "
+"with my life... but let's hope it doesn't come to that. In any case, "
+"whoever's out there, they're talking to someone—and we can't go home until "
+"we find out who.\""
 
 msgid "special_style/bp8_auction_1"
 msgstr "Emperor's Wrath"
@@ -32343,6 +32568,24 @@ msgstr "Revolutionary"
 msgid "special_style/european_three_tone"
 msgstr "European three-tone (USA)"
 
+msgid "special_style/fall_tanks"
+msgstr "Neon Demon"
+
+msgid "special_style/fall_tanks_desc"
+msgstr ""
+"A futuristic all-season style dedicated to the reality-warping world of Neon"
+" Dash."
+
+msgid "special_style/fall_tanks_desc/long"
+msgstr ""
+"\"I've seen things you people wouldn't believe. Hell, I didn't believe it "
+"myself when they gave the order. I grew up watching those goofy '80s sci-fi "
+"movies, dreaming of a world I'd never see. And then I got in. Portal to "
+"another dimension. Neon world. Race to the finish. None of it made sense. "
+"I'm a tanker, not a racing driver—or I was, before I came here. But things "
+"in here don't work like they do out there, and I'm not the same person I was"
+" before. I've freed my mind. And I suggest you do too.\""
+
 msgid "special_style/feer"
 msgstr "Fireworks"
 
@@ -32636,6 +32879,21 @@ msgstr ""
 "with various materials and canvas sizes, and his artworks have been "
 "auctioned in the United States numerous times. This style is inspired by the"
 " Vapeurs organiques painting created with spray paint in 2019."
+
+msgid "special_style/forged_flame"
+msgstr "Forged in Flame"
+
+msgid "special_style/forged_flame_desc"
+msgstr "Remember the warriors of old with this dramatic all-season style."
+
+msgid "special_style/forged_flame_desc/long"
+msgstr ""
+"While today's warriors may battle from within armored machines, our "
+"forefathers faced a battlefield far removed from ours. They met the enemy in"
+" the open, wielding their steel in hand rather than commanding it from "
+"within. Step into the fray with the courage of those who charged before. "
+"Roll forth, Commander, and cleave through enemy lines, like a knight's blade"
+" forged in the fires of yore."
 
 msgid "special_style/fort"
 msgstr "Fort"
@@ -32963,6 +33221,20 @@ msgid "special_style/girls_und_panzer_desc/long"
 msgstr ""
 "In their battles with other schools, Oarai was often in the minority in terms of the amount of equipment. To compensate for the lack of firepower, the commander of the team \"Angler\" Miho Nishizumi resorted to creative tactics, distracting the enemy's attention and catching him off guard.\n"
 "In addition to the \"Angler\", the original Oarai school included the teams \"Turtle\", \"Hippo\", \"Rabbit\" and \"Duck\". Over time, the number of tanks and crews only increased. Although the students did not have much experience in battle, they quickly learned the subtleties of tank science in the Sensha-do club and became part of the high-profile victories of the Oarai school."
+
+msgid "special_style/girls_und_panzer_kabasan"
+msgstr "Team-Kabasan"
+
+msgid "special_style/girls_und_panzer_kabasan_desc"
+msgstr "An all-season style sporting the image of the famous Team-Kabasan."
+
+msgid "special_style/girls_und_panzer_kabasan_desc/long"
+msgstr ""
+"That's right! This battle-hardened band of history enthusiasts drives ever "
+"forward, drawing on knowledge of centuries of warfare to deal decisive blows"
+" to their opponents. Proudly sporting their Hippo emblem, they strike with "
+"both devastating efficiency and impeccable style, making them formidable "
+"opponents at any Sensha-Dō event."
 
 msgid "special_style/girls_und_panzer_saunders"
 msgstr "Saunders University High School"
@@ -33354,6 +33626,41 @@ msgstr ""
 msgid "special_style/liveops_desc"
 msgstr "An all-season style created to conceal vehicles of any tier."
 
+msgid "special_style/liveops_directsales"
+msgstr "Mortar Shell"
+
+msgid "special_style/liveops_directsales_desc"
+msgstr "Give \"mortar shell\" a new meaning in this tiled all-season style."
+
+msgid "special_style/liveops_directsales_desc/long"
+msgstr ""
+"Now here's a concept: a mortar tank. One might imagine a self-propelled "
+"mortar gun mounted on a tank chassis—that's probably what the arms designer "
+"had in mind when he pitched the idea to his engineers. Somewhere along the "
+"line, however, something went wrong, because the resulting vehicle has an "
+"ordinary cannon and has been slathered in construction mortar and clad in a "
+"patchwork of chipped tiles that would look more at home on a dilapidated "
+"apartment block. We're quite certain this isn't the outcome that was "
+"intended, but we have to admit: it has a nostalgic charm of its own."
+
+msgid "special_style/liveops_hist_camo"
+msgstr "Pioneer of Deception"
+
+msgid "special_style/liveops_hist_camo_desc"
+msgstr ""
+"An all-season style inspired by pioneering \"dazzle\" camouflage patterns."
+
+msgid "special_style/liveops_hist_camo_desc/long"
+msgstr ""
+"With their unusual patterns and contrasting colors, \"dazzle\" camouflages "
+"seem like the last thing you'd want to hide your vehicle from enemy view. "
+"That, though, was never the intention. First trialed on both tanks and "
+"warships during World War I, the innovative designs were meant to confuse "
+"enemies by making them misjudge a vehicle's position, direction, and speed. "
+"While they ultimately went mostly unused on tanks—the muddy battlefields of "
+"the Western Front rendered any camouflage pointless—they went down in "
+"history as pioneering experiments in strategic deception."
+
 msgid "special_style/liveops_hw_2025"
 msgstr "Echoes Beneath"
 
@@ -33408,6 +33715,23 @@ msgstr ""
 "crowns, or play instruments, or just look so...silly? So many questions, so "
 "few answers. The medieval mind is a mystery to us, but we know one thing for"
 " sure: times change, but goofy cats are forever."
+
+msgid "special_style/liveops_pixelart"
+msgstr "Digital Roots"
+
+msgid "special_style/liveops_pixelart_desc"
+msgstr "A cozy all-season style dedicated to the good old days of gaming."
+
+msgid "special_style/liveops_pixelart_desc/long"
+msgstr ""
+"Don't worry, it's not dangerous to go alone. The further you venture into "
+"the woods, the brighter the colors around you become. The glade ahead seems "
+"to flicker with a soft neon glow. And what's that sound? The hum of "
+"machines, and the faint bleep-bloop of 8-bit melodies. As you draw closer, "
+"the very fabric of the forest starts to distort and...pixelate? What lies "
+"before you is a glitch in nature itself, a hidden haven visible only to "
+"those who appreciate the beauty of the digital world. But be careful. Once "
+"you stumble upon this place, you might never want to leave."
 
 msgid "special_style/liveops_recolor_1"
 msgstr "Toxicity"
@@ -36175,6 +36499,22 @@ msgstr ""
 
 msgid "special_style/st_patricks_day_2025"
 msgstr "Fortune's Forge"
+
+msgid "special_style/st_patricks_day_2026"
+msgstr "Gaelic Brand"
+
+msgid "special_style/st_patricks_day_2026_desc"
+msgstr ""
+"An all-season style dedicated to the Shamrock Showdown event in Steel "
+"Hunter."
+
+msgid "special_style/st_patricks_day_2026_desc/long"
+msgstr ""
+"An all-season style dedicated to the Shamrock Showdown event to bring you "
+"good fortune on the battlefield."
+
+msgid "special_style/st_patricks_vehicles_2026"
+msgstr "Green Machine"
 
 msgid "special_style/stayhome"
 msgstr "Home Sweet Home"

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import aih_constants
 from gui.Scaleform.genConsts.ROOT_SWF_CONSTANTS import ROOT_SWF_CONSTANTS
 CROSSHAIR_CONTAINER_SWF = 'battleCrosshairsApp.swf'

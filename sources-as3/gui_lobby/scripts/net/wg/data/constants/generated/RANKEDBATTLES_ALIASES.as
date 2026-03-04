@@ -413,8 +413,6 @@ package net.wg.data.constants.generated
       
       public static const DIVISIONS_ORDER:Array = [DIVISIONS_CLASSIFICATION,DIVISIONS_BRONZE,DIVISIONS_SILVER,DIVISIONS_GOLD];
       
-      public static const ENTRY_POINT:String = "RankedEntryPoint";
-      
       public static const QUALIFICATION_REWARDS_VIEW_ALIAS:String = "qualificationRewardsViewAlias";
        
       

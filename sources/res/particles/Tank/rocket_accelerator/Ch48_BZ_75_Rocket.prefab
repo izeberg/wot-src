@@ -706,6 +706,30 @@
 			</component>
 		</ComponentPool>
 		<ComponentPool>
+			<type>DistToTerrainComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>283e7594-f444-48ce-8417-f8f468fb35b2</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>transfromLink</name>
+						<link>283e7594-f444-48ce-8417-f8f468fb35b2</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>d263ea22-8132-4acc-9621-91428ce380fc</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>transfromLink</name>
+						<link>d263ea22-8132-4acc-9621-91428ce380fc</link>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
 			<type>VSEComponent</type>
 			<version>1</version>
 			<component>
@@ -729,7 +753,7 @@
 			<version>1</version>
 			<component>
 				<UUID>4e207a91-2a9b-4440-bccc-9a776d346913</UUID>
-				<flags>3</flags>
+				<flags>1</flags>
 				<config>
 					<property>
 						<name>vseComponent</name>

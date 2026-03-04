@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/german/G191_StuG_IIIF_CFE_A/_skins/G191_StuG_IIIF_AF_3Dst/crash/lod4/Hull</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.455083 -1.045367 -3.296996</min>
+		<max>1.454778 2.877795 2.704158</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/german/G191_StuG_IIIF_CFE_A/_skins/G191_StuG_IIIF_AF_3Dst/crash/lod3/Hull</nodefullVisual>
+</root>

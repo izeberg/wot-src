@@ -465,12 +465,14 @@ class _MedKitItem(_RefillEquipmentItem, _ExpandedItem):
         return vehicle_getter.TankmenStatesIterator(avatar_getter.getVehicleDeviceStates(avatar), avatar_getter.getVehicleTypeDescriptor(avatar))
 
     def _canActivate(self, entityName=None, avatar=None):
-        result, error = super(_MedKitItem, self)._canActivate(entityName, avatar)
-        if not result and type(error) not in (NeedEntitySelection, NotApplyingError) and avatar_getter.isVehicleStunned() and self.isReusable:
-            return (True, IgnoreEntitySelection('', None))
+        vehicle = BigWorld.entity(avatar.playerVehicleID) if avatar else BigWorld.player().vehicle
+        if vehicle and self._descriptor.name in vehicle.perkEffects['equipment']:
+            return (True, None)
         else:
-            return (
-             result, error)
+            result, error = super(_MedKitItem, self)._canActivate(entityName, avatar)
+            if not result and type(error) not in (NeedEntitySelection, NotApplyingError) and avatar_getter.isVehicleStunned() and self.isReusable:
+                return (True, IgnoreEntitySelection('', None))
+            return (result, error)
 
     def _canApplyForEntity(self, entityName, deviceStates):
         if entityName not in deviceStates:
@@ -494,6 +496,13 @@ class _RepairKitItem(_RefillEquipmentItem, _ExpandedItem):
 
     def getEntitiesIterator(self, avatar=None):
         return vehicle_getter.VehicleDeviceStatesIterator(avatar_getter.getVehicleDeviceStates(avatar), avatar_getter.getVehicleTypeDescriptor(avatar))
+
+    def _canActivate(self, entityName=None, avatar=None):
+        vehicle = BigWorld.entity(avatar.playerVehicleID) if avatar else BigWorld.player().vehicle
+        if vehicle and self._descriptor.name in vehicle.perkEffects['equipment']:
+            return (True, None)
+        else:
+            return super(_RepairKitItem, self)._canActivate(entityName, avatar)
 
     def _getEntitiesAreSafeKey(self):
         return 'repairkitAllDevicesAreNotDamaged'

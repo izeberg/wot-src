@@ -1,10 +1,13 @@
+from __future__ import absolute_import
 from enum import IntEnum
 import BattleReplay, BigWorld, WWISE
 from TeamInfoLivesComponent import TeamInfoLivesComponent
 from gui.Scaleform.daapi.view.meta.PvePostmortemPanelMeta import PvePostmortemPanelMeta
 from gui.battle_control import avatar_getter
 from gui.battle_control.controllers.vse_hud_settings_ctrl.settings.respawn_hud import RespawnHUDClientModel
+from math_common import round_py2_style
 from pve_battle_hud import WidgetType
+_TIMER_ZERO_VALUE = '00:00'
 
 class LivesState(IntEnum):
     NONE = 1
@@ -15,6 +18,7 @@ class LivesState(IntEnum):
 
 class PvePostmortemPanel(PvePostmortemPanelMeta):
     __slots__ = ('_settings', '_livesState')
+    _RESPAWN_TIMER_SOUND_EVENT = 'sm_gp_vday_respawn_start'
 
     def __init__(self):
         super(PvePostmortemPanel, self).__init__()
@@ -25,6 +29,10 @@ class PvePostmortemPanel(PvePostmortemPanelMeta):
     def resetDeathInfo(self):
         super(PvePostmortemPanel, self).resetDeathInfo()
         self._livesState = LivesState.NONE
+
+    def updateTime(self, value):
+        if value != _TIMER_ZERO_VALUE:
+            self._playSound(self._RESPAWN_TIMER_SOUND_EVENT)
 
     def _populate(self):
         super(PvePostmortemPanel, self)._populate()
@@ -143,7 +151,7 @@ class PvePostmortemPanel(PvePostmortemPanelMeta):
 
     @property
     def _currentRespawnDelay(self):
-        return round(self._respawnComponent.spawnTime - BigWorld.serverTime())
+        return round_py2_style(self._respawnComponent.spawnTime - BigWorld.serverTime())
 
     @staticmethod
     def _playSound(name):

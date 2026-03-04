@@ -1,6 +1,8 @@
+from __future__ import absolute_import
 import enum
 from frameworks.state_machine import StateFlags
 from gui.Scaleform.daapi.view.battle.pve_base.base.state_machine.states import BaseTimerState, BaseState
+from math_common import round_py2_style
 from pve_battle_hud import PrimaryObjectiveState, getPveHudLogger
 _logger = getPveHudLogger()
 
@@ -24,7 +26,7 @@ class BaseViewTimerState(BaseTimerState):
         super(BaseViewTimerState, self).tick(currentTime)
         serverSettings, _ = self.getSettings()
         finishTime = serverSettings.finishTime
-        timeLeft = round(finishTime - currentTime) if finishTime is not None else None
+        timeLeft = round_py2_style(finishTime - currentTime) if finishTime is not None else None
         self._view.updateTimer(timeLeft)
         return
 

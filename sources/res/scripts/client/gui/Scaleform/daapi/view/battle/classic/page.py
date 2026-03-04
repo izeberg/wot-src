@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from aih_constants import CTRL_MODE_NAME
 from constants import ARENA_PERIOD
 from debug_utils import LOG_DEBUG, LOG_ERROR

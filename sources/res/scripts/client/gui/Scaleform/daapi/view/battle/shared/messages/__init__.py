@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.Scaleform.daapi.view.battle.shared.messages.player_messages import PlayerMessages
 from gui.Scaleform.daapi.view.battle.shared.messages.vehicle_errors import VehicleErrorMessages
 from gui.Scaleform.daapi.view.battle.shared.messages.vehicle_messages import VehicleMessages

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<stream>colour</stream>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>face</identifier>
+					<fx>shaders/custom/emissive_playground.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						emissionMap
+						<Texture>particles/content_deferred/GFX_models/GFX_textures/141_fall_tanks_outland_glow.dds</Texture>
+					</property>
+					<property>
+						g_chromaOffsetBlue
+						<Float>-0.380000</Float>
+					</property>
+					<property>
+						g_chromaOffsetGreen
+						<Float>0.460000</Float>
+					</property>
+					<property>
+						g_deferredMult
+						<Float>200.000000</Float>
+					</property>
+					<property>
+						speed
+						<Float>0.000000</Float>
+					</property>
+				</material>
+				<groupOrigin>-0.330879 0.000000 0.000000</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>glow</identifier>
+					<fx>shaders/custom/emissive_playground.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						emissionMap
+						<Texture>particles/content_deferred/GFX_models/GFX_textures/141_fall_tanks_outland.dds</Texture>
+					</property>
+					<property>
+						g_chromaOffsetBlue
+						<Float>-0.380000</Float>
+					</property>
+					<property>
+						g_chromaOffsetGreen
+						<Float>-0.180000</Float>
+					</property>
+					<property>
+						g_deferredMult
+						<Float>15.000000</Float>
+					</property>
+					<property>
+						speed
+						<Float>0.000000</Float>
+					</property>
+					<property>
+						g_tint
+						<Vector4>1.000000 0.854902 0.756863 1.000000</Vector4>
+					</property>
+				</material>
+				<groupOrigin>0.000000 0.000000 0.000000</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-0.330879 -9.421035 -9.421035</min>
+		<max>0.000001 9.421035 9.421035</max>
+	</boundingBox>
+	<geometrySize>312</geometrySize>
+</root>

@@ -1,5 +1,7 @@
+from __future__ import absolute_import, division
 from functools import wraps, partial
 import time
+from future.utils import viewitems, viewvalues
 from typing import TYPE_CHECKING
 import BigWorld, WWISE, Event, SoundGroups
 from constants import ARENA_GUI_TYPE_LABEL, ARENA_PERIOD
@@ -279,7 +281,7 @@ class _BaseCaptureCondition(_Condition):
 
     def _validatePoints(self):
         criticalPointsCount, musicStopPredelay = self.criticalValue
-        for points in self.__pointsToBase.itervalues():
+        for points in viewvalues(self.__pointsToBase):
             if self._stopCapturingCooldown is not None and points:
                 BigWorld.cancelCallback(self._stopCapturingCooldown)
                 LOG_DEBUG('[Drone] Base Capturing. Cooldown stopped')
@@ -449,7 +451,7 @@ class DroneMusicPlayer(IBattleFieldListener, IAbstractPeriodView, ITeamBasesList
         outcome = []
         if not wwmusicDroneSetup:
             return outcome
-        for settingName, conditionsData in self._SETTING_TO_CONDITION_MAPPING.iteritems():
+        for settingName, conditionsData in viewitems(self._SETTING_TO_CONDITION_MAPPING):
             setting = wwmusicDroneSetup.get(settingName)
             if setting:
                 key = self.__guiTypeName

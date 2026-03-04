@@ -1,12 +1,11 @@
 from gui.impl.pub import ViewImpl
-from gui.impl.lobby.common.view_mixins import LobbyHeaderVisibility
 from gui.hangar_cameras.hangar_camera_common import CameraRelatedEvents
 from gui.shared import g_eventBus, EVENT_BUS_SCOPE, events
 from frameworks.wulf import ViewSettings, ViewFlags
 from helpers import dependency
 from skeletons.gui.app_loader import IAppLoader
 
-class MapsTrainingBaseView(ViewImpl, LobbyHeaderVisibility):
+class MapsTrainingBaseView(ViewImpl):
     appLoader = dependency.descriptor(IAppLoader)
     _BACKGROUND_ALPHA = 0
 
@@ -24,7 +23,6 @@ class MapsTrainingBaseView(ViewImpl, LobbyHeaderVisibility):
 
     def _initialize(self, *args, **kwargs):
         super(MapsTrainingBaseView, self)._initialize(*args, **kwargs)
-        self.suspendLobbyHeader(self.uniqueID)
         app = self.appLoader.getApp()
         app.setBackgroundAlpha(self._BACKGROUND_ALPHA)
 
@@ -34,7 +32,6 @@ class MapsTrainingBaseView(ViewImpl, LobbyHeaderVisibility):
 
     def _finalize(self):
         self._removeListeners()
-        self.resumeLobbyHeader(self.uniqueID)
         super(MapsTrainingBaseView, self)._finalize()
 
     def _addListeners(self):

@@ -132,6 +132,11 @@
 					<destroyed>vehicles/german/G121_Grille_15_L63/_skins/G121_Grille_15_L63_NY2025_3Dst/crash/lod0/Hull.model</destroyed>
 					<exploded>vehicles/german/G121_Grille_15_L63/_skins/G121_Grille_15_L63_NY2025_3Dst/crash/lod0/Hull.model</exploded>
 				</G121_Grille_15_L63_NY2025_3Dst>
+				<G121_Grille_15_L63_BPXIX_3Dst>
+					<undamaged>vehicles/german/G121_Grille_15_L63/_skins/G121_Grille_15_L63_BPXIX_3Dst/normal/lod0/Hull.model</undamaged>
+					<destroyed>vehicles/german/G121_Grille_15_L63/_skins/G121_Grille_15_L63_BPXIX_3Dst/crash/lod0/Hull.model</destroyed>
+					<exploded>vehicles/german/G121_Grille_15_L63/_skins/G121_Grille_15_L63_BPXIX_3Dst/crash/lod0/Hull.model</exploded>
+				</G121_Grille_15_L63_BPXIX_3Dst>
 			</sets>
 		</models>
 		<swinging>
@@ -182,6 +187,26 @@
 				</rayUp>
 				<size>0.300002</size>
 				<hideIfDamaged>true</hideIfDamaged>
+			</slot>
+			<slot>
+				<slotType>clan</slotType>
+				<slotId>10001</slotId>
+				<rayStart>
+					0.597 0.598823 1.39
+					<!--BW_String-->
+				</rayStart>
+				<rayEnd>
+					0.597 0.398826 1.39
+					<!--BW_String-->
+				</rayEnd>
+				<rayUp>-0 0 -1</rayUp>
+				<compatibleModels>G121_Grille_15_L63_BPXIX_3Dst</compatibleModels>
+				<size>
+					0.24
+					<!--BW_String-->
+				</size>
+				<hideIfDamaged>true</hideIfDamaged>
+				<isUVProportional>false</isUVProportional>
 			</slot>
 			<slot>
 				<slotType>paint</slotType>
@@ -292,8 +317,8 @@
 					1.0884
 					<!--BW_String-->
 				</clipAngle>
-				<verticalMirror>true</verticalMirror>
 				<anchorShift>0.039869</anchorShift>
+				<verticalMirror>true</verticalMirror>
 			</slot>
 			<slot>
 				<slotType>projectionDecal</slotType>
@@ -479,8 +504,8 @@
 				</scale>
 				<showOn>16</showOn>
 				<clipAngle>0.033114</clipAngle>
-				<verticalMirror>true</verticalMirror>
 				<anchorShift>0.009878</anchorShift>
+				<verticalMirror>true</verticalMirror>
 			</slot>
 			<slot>
 				<slotType>projectionDecal</slotType>
@@ -520,8 +545,8 @@
 				</scale>
 				<showOn>16</showOn>
 				<clipAngle>0.033114</clipAngle>
-				<verticalMirror>true</verticalMirror>
 				<anchorShift>0.009875</anchorShift>
+				<verticalMirror>true</verticalMirror>
 			</slot>
 			<slot>
 				<slotType>projectionDecal</slotType>
@@ -748,8 +773,8 @@
 					1.0884
 					<!--BW_String-->
 				</clipAngle>
-				<verticalMirror>true</verticalMirror>
 				<anchorShift>0.039872</anchorShift>
+				<verticalMirror>true</verticalMirror>
 			</slot>
 			<slot>
 				<slotType>projectionDecal</slotType>
@@ -887,8 +912,8 @@
 					1.0884
 					<!--BW_String-->
 				</clipAngle>
-				<verticalMirror>true</verticalMirror>
 				<anchorShift>0.099881</anchorShift>
+				<verticalMirror>true</verticalMirror>
 			</slot>
 			<slot>
 				<slotType>projectionDecal</slotType>
@@ -951,8 +976,8 @@
 					1.0884
 					<!--BW_String-->
 				</clipAngle>
-				<verticalMirror>true</verticalMirror>
 				<anchorShift>0.039872</anchorShift>
+				<verticalMirror>true</verticalMirror>
 			</slot>
 			<slot>
 				<slotType>projectionDecal</slotType>
@@ -1191,8 +1216,8 @@
 					1.0884
 					<!--BW_String-->
 				</clipAngle>
-				<verticalMirror>true</verticalMirror>
 				<anchorShift>0.313577</anchorShift>
+				<verticalMirror>true</verticalMirror>
 			</slot>
 			<slot>
 				<slotType>projectionDecal</slotType>
@@ -1337,8 +1362,8 @@
 				</scale>
 				<showOn>16</showOn>
 				<clipAngle>0.741061</clipAngle>
-				<verticalMirror>true</verticalMirror>
 				<anchorShift>0.139872</anchorShift>
+				<verticalMirror>true</verticalMirror>
 			</slot>
 			<slot>
 				<slotType>projectionDecal</slotType>
@@ -1532,7 +1557,6 @@
 				<slotType>projectionDecal</slotType>
 				<slotId>15059</slotId>
 				<tags>formfactor_square</tags>
-				<compatibleModels>NYst</compatibleModels>
 				<position>
 					-0.272129 1.50479 2.37605
 					<!--BW_String-->
@@ -1543,6 +1567,7 @@
 				</rotation>
 				<scale>0.737192 0.737193 0.737193</scale>
 				<showOn>16</showOn>
+				<compatibleModels>NYst</compatibleModels>
 			</slot>
 			<slot>
 				<slotType>projectionDecal</slotType>
@@ -1619,7 +1644,6 @@
 			<slot>
 				<slotType>projectionDecal</slotType>
 				<slotId>15063</slotId>
-				<tags>formfactor_rect1x2 cover direction_right_to_left</tags>
 				<position>
 					-0.003587 1.91227 0.335664
 					<!--BW_String-->
@@ -1632,10 +1656,44 @@
 					6.00001 4.20125 6.34226
 					<!--BW_String-->
 				</scale>
-				<hiddenForUser>true</hiddenForUser>
+				<tags>formfactor_rect1x2 cover direction_right_to_left</tags>
 				<showOn>272</showOn>
 				<clipAngle>0.292599</clipAngle>
 				<anchorShift>-0.006467</anchorShift>
+				<hiddenForUser>true</hiddenForUser>
+			</slot>
+			<slot>
+				<slotType>projectionDecal</slotType>
+				<slotId>15064</slotId>
+				<position>-1.196421 1.245342 2.962475</position>
+				<rotation>
+					0.518706 -0.000014 3.14156
+					<!--BW_String-->
+				</rotation>
+				<scale>0.545885 0.181567 0.545899</scale>
+				<tags>formfactor_square</tags>
+				<compatibleModels>G121_Grille_15_L63_BPXIX_3Dst</compatibleModels>
+				<showOn>16</showOn>
+				<clipAngle>
+					1.38088
+					<!--BW_String-->
+				</clipAngle>
+				<anchorShift>0.097748</anchorShift>
+			</slot>
+			<slot>
+				<slotType>projectionDecal</slotType>
+				<slotId>15065</slotId>
+				<position>1.180779 1.341969 -2.132084</position>
+				<rotation>
+					3.132517 0 0
+					<!--BW_String-->
+				</rotation>
+				<scale>0.610579 0.167163 0.610583</scale>
+				<tags>formfactor_square</tags>
+				<compatibleModels>G121_Grille_15_L63_BPXIX_3Dst</compatibleModels>
+				<showOn>16</showOn>
+				<clipAngle>0.033114</clipAngle>
+				<anchorShift>0.009868</anchorShift>
 			</slot>
 			<slot>
 				<slotType>attachment</slotType>
@@ -1766,6 +1824,11 @@
 						<destroyed>vehicles/german/G121_Grille_15_L63/_skins/G121_Grille_15_L63_NY2025_3Dst/crash/lod0/Chassis.model</destroyed>
 						<exploded>vehicles/german/G121_Grille_15_L63/_skins/G121_Grille_15_L63_NY2025_3Dst/crash/lod0/Chassis.model</exploded>
 					</G121_Grille_15_L63_NY2025_3Dst>
+					<G121_Grille_15_L63_BPXIX_3Dst>
+						<undamaged>vehicles/german/G121_Grille_15_L63/_skins/G121_Grille_15_L63_BPXIX_3Dst/normal/lod0/Chassis.model</undamaged>
+						<destroyed>vehicles/german/G121_Grille_15_L63/_skins/G121_Grille_15_L63_BPXIX_3Dst/crash/lod0/Chassis.model</destroyed>
+						<exploded>vehicles/german/G121_Grille_15_L63/_skins/G121_Grille_15_L63_BPXIX_3Dst/crash/lod0/Chassis.model</exploded>
+					</G121_Grille_15_L63_BPXIX_3Dst>
 				</sets>
 			</models>
 			<traces>
@@ -3659,6 +3722,11 @@
 								<destroyed>vehicles/german/G121_Grille_15_L63/_skins/G121_Grille_15_L63_NY2025_3Dst/crash/lod0/Gun_01.model</destroyed>
 								<exploded>vehicles/german/G121_Grille_15_L63/_skins/G121_Grille_15_L63_NY2025_3Dst/crash/lod0/Gun_01.model</exploded>
 							</G121_Grille_15_L63_NY2025_3Dst>
+							<G121_Grille_15_L63_BPXIX_3Dst>
+								<undamaged>vehicles/german/G121_Grille_15_L63/_skins/G121_Grille_15_L63_BPXIX_3Dst/normal/lod0/Gun_01.model</undamaged>
+								<destroyed>vehicles/german/G121_Grille_15_L63/_skins/G121_Grille_15_L63_BPXIX_3Dst/crash/lod0/Gun_01.model</destroyed>
+								<exploded>vehicles/german/G121_Grille_15_L63/_skins/G121_Grille_15_L63_BPXIX_3Dst/crash/lod0/Gun_01.model</exploded>
+							</G121_Grille_15_L63_BPXIX_3Dst>
 						</sets>
 					</models>
 					<hitTester>
@@ -3778,6 +3846,11 @@
 						<destroyed>vehicles/german/G121_Grille_15_L63/_skins/G121_Grille_15_L63_NY2025_3Dst/crash/lod0/Turret_01.model</destroyed>
 						<exploded>vehicles/german/G121_Grille_15_L63/_skins/G121_Grille_15_L63_NY2025_3Dst/crash/lod0/Turret_01.model</exploded>
 					</G121_Grille_15_L63_NY2025_3Dst>
+					<G121_Grille_15_L63_BPXIX_3Dst>
+						<undamaged>vehicles/german/G121_Grille_15_L63/_skins/G121_Grille_15_L63_BPXIX_3Dst/normal/lod0/Turret_01.model</undamaged>
+						<destroyed>vehicles/german/G121_Grille_15_L63/_skins/G121_Grille_15_L63_BPXIX_3Dst/crash/lod0/Turret_01.model</destroyed>
+						<exploded>vehicles/german/G121_Grille_15_L63/_skins/G121_Grille_15_L63_BPXIX_3Dst/crash/lod0/Turret_01.model</exploded>
+					</G121_Grille_15_L63_BPXIX_3Dst>
 				</sets>
 			</models>
 			<hitTester>
@@ -4131,6 +4204,49 @@
 						<!--BW_String-->
 					</clipAngle>
 					<anchorShift>0.049878</anchorShift>
+				</slot>
+				<slot>
+					<slotType>projectionDecal</slotType>
+					<slotId>35013</slotId>
+					<position>
+						-0.888357 1.934511 -1.4721
+						<!--BW_String-->
+					</position>
+					<rotation>
+						1.500559 1.75459 0.177599
+						<!--BW_String-->
+					</rotation>
+					<scale>
+						0.551544 0.2 0.551545
+						<!--BW_String-->
+					</scale>
+					<tags>formfactor_square</tags>
+					<compatibleModels>G121_Grille_15_L63_BPXIX_3Dst</compatibleModels>
+					<showOn>256</showOn>
+					<anchorShift>
+						0.02
+						<!--BW_String-->
+					</anchorShift>
+				</slot>
+				<slot>
+					<slotType>projectionDecal</slotType>
+					<slotId>35014</slotId>
+					<position>
+						0.467047 2.441188 -0.97216
+						<!--BW_String-->
+					</position>
+					<rotation>
+						0.919265 0 3.139847
+						<!--BW_String-->
+					</rotation>
+					<scale>0.497112 0.180262 0.497112</scale>
+					<tags>formfactor_square</tags>
+					<compatibleModels>G121_Grille_15_L63_BPXIX_3Dst</compatibleModels>
+					<showOn>256</showOn>
+					<anchorShift>
+						0.02
+						<!--BW_String-->
+					</anchorShift>
 				</slot>
 				<slot>
 					<slotType>attachment</slotType>

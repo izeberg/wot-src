@@ -17,6 +17,9 @@ class NetworkReplicationPointComponent(DynamicScriptComponent):
             return
 
     def onLeaveWorld(self):
+        self.onDestroy()
+
+    def onDestroy(self):
         for status in self.status:
             self.__createRemoveState(status['networkID'])
 

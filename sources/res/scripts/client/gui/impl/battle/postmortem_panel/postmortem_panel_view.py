@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, typing, BigWorld
 from PlayerEvents import g_playerEvents
 from aih_constants import CTRL_MODE_NAME
@@ -30,7 +31,7 @@ SELECTION_ORDER = (
  PlayerSatisfactionRating.WORSE,
  PlayerSatisfactionRating.USUAL,
  PlayerSatisfactionRating.BETTER)
-_COMMON_TO_MODEL_ENUM_MAP = {v:k for k, v in _MODEL_TO_COMMON_ENUM_MAP.iteritems()}
+_COMMON_TO_MODEL_ENUM_MAP = {v:k for k, v in _MODEL_TO_COMMON_ENUM_MAP.items()}
 
 class PostmortemPanelView(ViewImpl, CallbackDelayer):
     sessionProvider = dependency.descriptor(IBattleSessionProvider)
@@ -47,25 +48,25 @@ class PostmortemPanelView(ViewImpl, CallbackDelayer):
     @property
     def isRatingWidgetEnabled--- This code section failed: ---
 
- L.  69         0  LOAD_FAST             0  'self'
+ L.  71         0  LOAD_FAST             0  'self'
                 3  LOAD_ATTR             0  'sessionProvider'
                 6  LOAD_ATTR             1  'arenaVisitor'
                 9  LOAD_ATTR             2  'bonus'
                12  STORE_FAST            1  'bonusTypeVistor'
 
- L.  70        15  LOAD_FAST             1  'bonusTypeVistor'
+ L.  72        15  LOAD_FAST             1  'bonusTypeVistor'
                18  LOAD_ATTR             3  'hasBonusCap'
                21  LOAD_GLOBAL           4  'BONUS_TYPE'
                24  LOAD_ATTR             5  'PLAYER_SATISFACTION_RATING'
                27  CALL_FUNCTION_1       1  None
                30  STORE_FAST            2  'hasBonusCap'
 
- L.  71        33  LOAD_GLOBAL           6  'playerSatisfactionSchema'
+ L.  73        33  LOAD_GLOBAL           6  'playerSatisfactionSchema'
                36  LOAD_ATTR             7  'getModel'
                39  CALL_FUNCTION_0       0  None
                42  STORE_FAST            3  'config'
 
- L.  72        45  LOAD_FAST             3  'config'
+ L.  74        45  LOAD_FAST             3  'config'
                48  POP_JUMP_IF_FALSE    76  'to 76'
                51  LOAD_FAST             2  'hasBonusCap'
                54  JUMP_IF_FALSE_OR_POP    79  'to 79'

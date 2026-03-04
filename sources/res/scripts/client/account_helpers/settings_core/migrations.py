@@ -1,6 +1,6 @@
 import BigWorld, constants
 from account_helpers.AccountSettings import NEW_SETTINGS_COUNTER
-from account_helpers.settings_core.settings_constants import GAME, CONTROLS, VERSION, DAMAGE_INDICATOR, DAMAGE_LOG, BATTLE_EVENTS, SESSION_STATS, BattlePassStorageKeys, BattleCommStorageKeys, OnceOnlyHints, ScorePanelStorageKeys, SPGAim, GuiSettingsBehavior
+from account_helpers.settings_core.settings_constants import GAME, CONTROLS, VERSION, DAMAGE_INDICATOR, DAMAGE_LOG, BATTLE_EVENTS, SESSION_STATS, BattlePassStorageKeys, BattleCommStorageKeys, OnceOnlyHints, ScorePanelStorageKeys, SPGAim, GuiSettingsBehavior, SITUATIONAL_PERKS
 from adisp import adisp_process, adisp_async
 from debug_utils import LOG_DEBUG
 from helpers import dependency
@@ -927,8 +927,6 @@ def _migrateTo101(core, data, initialized):
 
 
 def _migrateTo102(core, data, initialized):
-    from account_helpers.settings_core.ServerSettingsManager import GUI_START_BEHAVIOR
-    data[GUI_START_BEHAVIOR][GuiSettingsBehavior.CREW_22_WELCOME_SHOWN] = False
     feedbackBattleEvents = data.get('feedbackBattleEvents', {})
     feedbackBattleEvents[BATTLE_EVENTS.CREW_PERKS] = True
 
@@ -1229,8 +1227,7 @@ def _migrateTo121(core, data, initialized):
 
 
 def _migrateTo122(core, data, initialized):
-    from account_helpers.settings_core.ServerSettingsManager import GUI_START_BEHAVIOR
-    data[GUI_START_BEHAVIOR][GuiSettingsBehavior.CREW_5075_WELCOME_SHOWN] = False
+    pass
 
 
 def _migrateTo123(core, data, initialized):
@@ -1278,9 +1275,7 @@ def _migrateTo130(core, data, initialized):
 
 
 def _migrateTo131(core, data, initialized):
-    from account_helpers.settings_core.ServerSettingsManager import GUI_START_BEHAVIOR
-    data[GUI_START_BEHAVIOR][GuiSettingsBehavior.CREW_NPS_INTRO_SHOWN] = False
-    data[GUI_START_BEHAVIOR][GuiSettingsBehavior.CREW_NPS_WELCOME_SHOWN] = False
+    pass
 
 
 def _migrateTo132(core, data, initialized):
@@ -1476,6 +1471,24 @@ def _migrateTo153(core, data, initialized):
     if storedValue & settingOffset:
         clear = data['clear']
         clear['uiStorage'] = clear.get('uiStorage', 0) | settingOffset
+
+
+def _migrateTo154(core, data, initialized):
+    from account_helpers.settings_core.ServerSettingsManager import SETTINGS_SECTIONS
+    from account_helpers.settings_core.ServerSettingsManager import GUI_START_BEHAVIOR
+    from account_helpers.AccountSettings import AccountSettings
+    newSettingsCounter = AccountSettings.getSettings(NEW_SETTINGS_COUNTER)
+    battlehudData = data[SETTINGS_SECTIONS.SITUATIONAL_PERKS]
+    for key in SITUATIONAL_PERKS.ALL():
+        battlehudData[key] = True
+
+    AccountSettings.setSettings(NEW_SETTINGS_COUNTER, newSettingsCounter)
+    clear = data['clear']
+    storedValue = _getSettingsCache().getSectionSettings(SETTINGS_SECTIONS.GUI_START_BEHAVIOR, 0)
+    offsets = 524288 + 1048576 + 2097152 + 16777216
+    intersection = storedValue & offsets
+    if intersection:
+        clear[GUI_START_BEHAVIOR] = clear.get(GUI_START_BEHAVIOR, 0) | intersection
 
 
 _versions = (
@@ -1782,7 +1795,9 @@ _versions = (
  (
   152, _migrateTo152, False, False),
  (
-  153, _migrateTo153, False, False))
+  153, _migrateTo153, False, False),
+ (
+  154, _migrateTo154, False, False))
 
 @adisp_async
 @adisp_process

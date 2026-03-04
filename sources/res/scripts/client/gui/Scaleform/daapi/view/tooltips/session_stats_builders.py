@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.Scaleform.daapi.view.lobby.session_stats.session_stats_tooltips import SessionStatsTankInfo, SessionStatsEfficiencyParam
 from gui.Scaleform.genConsts.TOOLTIPS_CONSTANTS import TOOLTIPS_CONSTANTS
 from gui.shared.tooltips import contexts

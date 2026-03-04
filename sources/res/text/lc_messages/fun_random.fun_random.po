@@ -146,11 +146,11 @@ msgstr "Vehicle Not Suitable for Mode"
 
 msgid "headerButtons/tooltips/funRandomSquad/body"
 msgstr ""
-"Create a tactical unit of two or three players to cooperate in %(modeName)s "
+"Create a tactical unit of 2 or 3 players to cooperate in %(modeName)s "
 "battles."
 
 msgid "headerButtons/tooltips/funRandomSquad/header"
-msgstr "Lunar New Year 2026 Platoon"
+msgstr "Platoon"
 
 msgid "invite/text/detailedTitle"
 msgstr "Invitation to Join the \"%(detailedModeName)s\" Platoon"
@@ -173,13 +173,13 @@ msgstr ""
 "MISSION COMPLETED"
 
 msgid "metaProgressionTooltip/reward/header/common"
-msgstr "Next Stage Rewards—Unlock at %(stagePoints)s Jades"
+msgstr "Next Stage Rewards—Unlock at %(stagePoints)s Points"
 
 msgid "metaProgressionTooltip/reward/header/infinite"
 msgstr "Next Stage Reward"
 
 msgid "metaProgressionTooltip/timer/untilFinish"
-msgstr "%(time)s until the event ends"
+msgstr "%(time)s until the active phase ends"
 
 msgid "metaProgressionTooltip/timer/untilRelaunch"
 msgstr "%(time)s until next launch"
@@ -356,14 +356,6 @@ msgstr "?empty?"
 msgid "modes/development/progression/infinite/mainProgressionFinished"
 msgstr "?empty?"
 
-msgid "modes/development/progression/pointsTooltipBody"
-msgstr ""
-"Earn Points by completing missions to advance through event progression and "
-"unlock rewards."
-
-msgid "modes/development/progression/pointsTooltipTitle"
-msgstr "Points"
-
 msgid "modes/development/progression/questsList/quest/infinityStageProgress"
 msgstr "Dev Get as many rewards as you can:"
 
@@ -413,412 +405,205 @@ msgstr "?empty?"
 msgid "modes/development/userName"
 msgstr "?empty?"
 
-msgid "modes/fep_new_year_2025/banner/progression/finish"
-msgstr "All Stages completed"
+msgid "modes/fall_tanks/banner/progression/finish"
+msgstr "All stages have been completed"
 
-msgid "modes/fep_new_year_2025/banner/progression/resettable"
-msgstr "Progression update"
+msgid "modes/fall_tanks/banner/progression/resettable"
+msgstr "Progression Update"
 
-msgid "modes/fep_new_year_2025/capsUserName"
-msgstr "ARCADE CABINET"
+msgid "modes/fall_tanks/capsUserName"
+msgstr "NEON DASH"
 
-msgid "modes/fep_new_year_2025/detailedUserName"
-msgstr "%(modeName)s: %(subModeName)s"
+msgid "modes/fall_tanks/detailedUserName"
+msgstr "%(modeName)s"
 
-msgid "modes/fep_new_year_2025/entryPoint/inProgress/description"
-msgstr "Join the action!"
+msgid "modes/fall_tanks/entryPoint/inProgress/description"
+msgstr "The finish line awaits!"
 
-msgid "modes/fep_new_year_2025/entryPoint/intro/description"
-msgstr "Enter the fray!"
+msgid "modes/fall_tanks/entryPoint/intro/description"
+msgstr "Ready to race?"
 
-msgid "modes/fep_new_year_2025/entryPoint/tooltip/description"
+msgid "modes/fall_tanks/entryPoint/tooltip/description"
 msgstr ""
-"Arcade Cabinet events are unique, time-limited activities that offer "
-"something different! Battle in exclusive modes with game-changing rules, "
-"complete missions, and earn rare rewards."
+"Neon Dash is a unique, time-limited event that offers something different! "
+"Race and brawl through perilous courses, complete missions, and earn "
+"rewards."
 
-msgid ""
-"modes/fep_new_year_2025/entryPoint/tooltip/performance/highRisk/description"
-msgstr ""
-"This mode demands high computer performance. You may experience issues with "
-"map loading, graphics, and vehicle movement. In case of insufficient "
-"performance, try a lower graphics quality in Settings."
-
-msgid "modes/fep_new_year_2025/entryPoint/tooltip/performance/highRisk/header"
-msgstr "Possible Reduced Performance"
-
-msgid ""
-"modes/fep_new_year_2025/entryPoint/tooltip/performance/mediumRisk/description"
+msgid "modes/fall_tanks/entryPoint/tooltip/performance/highRisk/description"
 msgstr ""
 "This mode demands high computer performance. You may experience issues with "
 "map loading, graphics, and vehicle movement. In case of insufficient "
-"performance, try a lower graphics quality in Settings."
+"performance, try selecting a lower graphics quality in Settings."
 
-msgid ""
-"modes/fep_new_year_2025/entryPoint/tooltip/performance/mediumRisk/header"
+msgid "modes/fall_tanks/entryPoint/tooltip/performance/highRisk/header"
 msgstr "Possible Reduced Performance"
 
-msgid "modes/fep_new_year_2025/lootbox/fep_epic"
+msgid "modes/fall_tanks/entryPoint/tooltip/performance/mediumRisk/description"
+msgstr ""
+"This mode demands high computer performance. You may experience issues with "
+"map loading, graphics, and vehicle movement. In case of insufficient "
+"performance, try selecting a lower graphics quality in Settings."
+
+msgid "modes/fall_tanks/entryPoint/tooltip/performance/mediumRisk/header"
+msgstr "Possible Reduced Performance"
+
+msgid "modes/fall_tanks/lootbox/fep_epic"
 msgstr "Epic random reward"
 
-msgid "modes/fep_new_year_2025/lootbox/fep_legendary"
+msgid "modes/fall_tanks/lootbox/fep_legendary"
 msgstr "Legendary random reward"
 
-msgid "modes/fep_new_year_2025/lootbox/fep_ordinary"
+msgid "modes/fall_tanks/lootbox/fep_ordinary"
 msgstr "Common random reward"
 
-msgid "modes/fep_new_year_2025/lootbox/fep_rare"
+msgid "modes/fall_tanks/lootbox/fep_rare"
 msgstr "Rare random reward"
 
-msgid "modes/fep_new_year_2025/lootbox/fep_unusual"
+msgid "modes/fall_tanks/lootbox/fep_unusual"
 msgstr "Uncommon random reward"
 
-msgid "modes/fep_new_year_2025/metaProgressionTooltip/header/active"
-msgstr ""
-"Arcade Cabinet Mission – Stage: %(done)s{par_Open}/%(total)s{par_Close}"
+msgid "modes/fall_tanks/metaProgressionTooltip/header/active"
+msgstr "Neon Dash Mission – Stage: %(done)s{par_Open}/%(total)s{par_Close}"
 
-msgid "modes/fep_new_year_2025/metaProgressionTooltip/reward/tip"
+msgid "modes/fall_tanks/metaProgressionTooltip/reward/tip"
+msgstr "Your progress is counted in any Neon Dash race."
+
+msgid "modes/fall_tanks/metaProgressionTooltip/subheader"
+msgstr "Neon Dash Mission"
+
+msgid "modes/fall_tanks/modeSubSelector/progression/info"
 msgstr "Your progress is counted in any Arcade Cabinet submode."
 
-msgid "modes/fep_new_year_2025/metaProgressionTooltip/subheader"
-msgstr "Arcade Cabinet Mission"
-
-msgid "modes/fep_new_year_2025/modeSubSelector/progression/info"
-msgstr "Your progress is counted in any Arcade Cabinet submode."
-
-msgid "modes/fep_new_year_2025/modeSubSelector/progression/timer"
+msgid "modes/fall_tanks/modeSubSelector/progression/timer"
 msgstr "until a new Arcade Cabinet mission is available"
 
-msgid "modes/fep_new_year_2025/mode_selector/description"
-msgstr "Experimental battles with non-standard rules."
+msgid "modes/fall_tanks/mode_selector/battleCondition"
+msgstr "15–30"
 
-msgid "modes/fep_new_year_2025/mode_selector/performance/highRisk/description"
+msgid "modes/fall_tanks/mode_selector/description"
+msgstr "Fight your way to the finish line in this free-for-all race mode."
+
+msgid "modes/fall_tanks/mode_selector/levelCondition"
+msgstr "{parSecondary_open}I{parSecondary_close} All Tiers"
+
+msgid "modes/fall_tanks/mode_selector/performance/highRisk/description"
 msgstr ""
-"This mode demands high computer performance. You may experience issues with "
-"map loading, graphics, and vehicle movement. In case of insufficient "
-"performance, try a lower graphics quality in Settings."
+"At low graphics settings, visual artifacts and issues may occur. We "
+"recommend selecting the highest graphics setting for the best experience "
+"possible, provided that your computer specs meet the requirements. The mode "
+"demands high computer performance. The FPS rate may decrease during "
+"intensive fighting."
 
-msgid "modes/fep_new_year_2025/mode_selector/performance/highRisk/header"
-msgstr "Possible Reduced Performance"
+msgid "modes/fall_tanks/mode_selector/performance/highRisk/header"
+msgstr "Highest graphics settings recommended"
 
-msgid "modes/fep_new_year_2025/mode_selector/performance/highRisk/headerIcon"
-msgstr "%(icon) Possible Reduced Performance"
+msgid "modes/fall_tanks/mode_selector/performance/highRisk/headerIcon"
+msgstr "%(icon) Highest graphics settings recommended"
 
-msgid ""
-"modes/fep_new_year_2025/mode_selector/performance/mediumRisk/description"
+msgid "modes/fall_tanks/mode_selector/performance/mediumRisk/description"
 msgstr ""
-"This mode demands high computer performance. You may experience issues with "
-"map loading, graphics, and vehicle movement. In case of insufficient "
-"performance, try a lower graphics quality in Settings."
+"At low graphics settings, visual artifacts and issues may occur. We "
+"recommend selecting the highest graphics setting for the best experience "
+"possible, provided that your computer specs meet the requirements. The mode "
+"demands high computer performance. The FPS rate may decrease during "
+"intensive fighting."
 
-msgid "modes/fep_new_year_2025/mode_selector/performance/mediumRisk/header"
-msgstr "Possible Reduced Performance"
+msgid "modes/fall_tanks/mode_selector/performance/mediumRisk/header"
+msgstr "Highest graphics settings recommended"
 
-msgid ""
-"modes/fep_new_year_2025/mode_selector/performance/mediumRisk/headerIcon"
-msgstr "%(icon) Possible Reduced Performance"
+msgid "modes/fall_tanks/mode_selector/performance/mediumRisk/headerIcon"
+msgstr "%(icon) Highest graphics settings recommended"
 
-msgid "modes/fep_new_year_2025/mode_selector/progression/resettable"
-msgstr "A new Arcade Cabinet mission is available in:"
+msgid "modes/fall_tanks/mode_selector/progression/resettable"
+msgstr "A new Neon Dash mission is available in:"
 
-msgid "modes/fep_new_year_2025/notification/finishSubModes/withProgression"
+msgid "modes/fall_tanks/notification/finishSubModes/withProgression"
 msgstr "The %(subModeName)s submode has ended. Progression reset."
 
-msgid "modes/fep_new_year_2025/notification/finishSubModes/withoutProgression"
+msgid "modes/fall_tanks/notification/finishSubModes/withoutProgression"
 msgstr "The %(subModeName)s submode has ended."
 
-msgid "modes/fep_new_year_2025/notification/newSubModes/withProgression"
+msgid "modes/fall_tanks/notification/newSubModes/withProgression"
 msgstr "New rewards and the %(subModeName)s submode are available."
 
-msgid "modes/fep_new_year_2025/notification/newSubModes/withoutProgression"
+msgid "modes/fall_tanks/notification/newSubModes/withoutProgression"
 msgstr "A new submode is available: %(subModeName)s."
 
-msgid "modes/fep_new_year_2025/notification/switchOffSubModes"
+msgid "modes/fall_tanks/notification/switchOffSubModes"
 msgstr "The %(subModeName)s submode is unavailable due to maintenance."
 
-msgid "modes/fep_new_year_2025/notification/switchOnSubModes"
+msgid "modes/fall_tanks/notification/switchOnSubModes"
 msgstr "The %(subModeName)s submode is available again."
 
-msgid "modes/fep_new_year_2025/progression/cardsFan/listOfRandomRewards"
+msgid "modes/fall_tanks/progression/cardsFan/listOfRandomRewards"
 msgstr "Reward List"
 
-msgid "modes/fep_new_year_2025/progression/complete/congratulations"
+msgid "modes/fall_tanks/progression/complete/congratulations"
 msgstr "Congratulations!"
 
-msgid "modes/fep_new_year_2025/progression/complete/title"
+msgid "modes/fall_tanks/progression/complete/title"
 msgstr "You completed the Progression"
 
-msgid "modes/fep_new_year_2025/progression/infinite/congratulations"
+msgid "modes/fall_tanks/progression/infinite/congratulations"
 msgstr "Congratulations!"
 
-msgid "modes/fep_new_year_2025/progression/infinite/infinityStep"
-msgstr "Repeatable Stage"
+msgid "modes/fall_tanks/progression/infinite/infinityStep"
+msgstr "Infinite Post-Progression"
 
-msgid "modes/fep_new_year_2025/progression/infinite/mainProgressionFinished"
-msgstr "You completed the Main Progression"
+msgid "modes/fall_tanks/progression/infinite/mainProgressionFinished"
+msgstr "You completed the main progression"
 
-msgid ""
-"modes/fep_new_year_2025/progression/questsList/quest/infinityStageProgress"
-msgstr "Get as many rewards as you can:"
+msgid "modes/fall_tanks/progression/questsList/quest/infinityStageProgress"
+msgstr "Complete this stage as many times as you can."
 
-msgid "modes/fep_new_year_2025/progression/questsList/totalPointsEarned"
+msgid "modes/fall_tanks/progression/questsList/totalPointsEarned"
 msgstr "Points earned: {{progressionSteps}}"
 
 msgid ""
-"modes/fep_new_year_2025/progression/questsList/totalPointsEarnedStandAloneTitle"
+"modes/fall_tanks/progression/questsList/totalPointsEarnedStandAloneTitle"
 msgstr "Points earned:"
 
-msgid "modes/fep_new_year_2025/progression/title"
-msgstr "ARCADE CABINET MISSIONS"
+msgid "modes/fall_tanks/progression/title"
+msgstr "NEON DASH MISSIONS"
 
-msgid "modes/fep_new_year_2025/rewardsView/header"
+msgid "modes/fall_tanks/rewardsView/header"
 msgstr "LEGENDARY REWARD RECEIVED"
 
-msgid "modes/fep_new_year_2025/scheduler/notification/available"
-msgstr "%(subModeName)s battles are available again."
+msgid "modes/fall_tanks/scheduler/notification/available"
+msgstr "%(subModeName)s is available again."
 
-msgid "modes/fep_new_year_2025/scheduler/notification/available/title"
-msgstr "Ceasefire"
+msgid "modes/fall_tanks/scheduler/notification/available/title"
+msgstr "Pit Stop"
 
-msgid "modes/fep_new_year_2025/scheduler/notification/modeEnded"
-msgstr "%(subModeName)s battles have ended."
+msgid "modes/fall_tanks/scheduler/notification/modeEnded"
+msgstr "%(subModeName)s has ended."
 
-msgid "modes/fep_new_year_2025/scheduler/notification/modeEnded/title"
-msgstr "Ceasefire"
+msgid "modes/fall_tanks/scheduler/notification/modeEnded/title"
+msgstr "Pit Stop"
 
-msgid "modes/fep_new_year_2025/scheduler/notification/primeTime"
+msgid "modes/fall_tanks/scheduler/notification/primeTime"
 msgstr ""
-"Ceasefire is in effect. %(subModeName)s battles are temporarily unavailable."
+"Time for a Pit Stop! %(subModeName)s races are temporarily unavailable."
 
-msgid "modes/fep_new_year_2025/scheduler/notification/primeTime/title"
-msgstr "Ceasefire"
+msgid "modes/fall_tanks/scheduler/notification/primeTime/title"
+msgstr "Pit Stop"
 
-msgid "modes/fep_new_year_2025/tierList/description"
+msgid "modes/fall_tanks/tierList/description"
 msgstr ""
-"Each random reward is an item from the list below that you can receive with "
-"a certain probability."
+"Each random reward is an item from the list below, awarded with a certain "
+"probability."
 
-msgid "modes/fep_new_year_2025/tierList/title"
+msgid "modes/fall_tanks/tierList/title"
 msgstr "What's Inside?"
 
-msgid "modes/fep_new_year_2025/tooltip/filter/body"
-msgstr "Show/hide suitable vehicles for Arcade Cabinet mode."
+msgid "modes/fall_tanks/tooltip/filter/body"
+msgstr "All vehicles are available for Neon Dash."
 
-msgid "modes/fep_new_year_2025/tooltip/filter/header"
-msgstr "Arcade Cabinet Vehicles"
+msgid "modes/fall_tanks/tooltip/filter/header"
+msgstr "Neon Dash Vehicles"
 
-msgid "modes/fep_new_year_2025/userName"
-msgstr "Arcade Cabinet"
-
-msgid "modes/lunar_possession/banner/progression/finish"
-msgstr "All Stages completed"
-
-msgid "modes/lunar_possession/banner/progression/resettable"
-msgstr "Progression update"
-
-msgid "modes/lunar_possession/capsUserName"
-msgstr "JADE EMPEROR'S CHALLENGE"
-
-msgid "modes/lunar_possession/detailedUserName"
-msgstr "%(modeName)s"
-
-msgid "modes/lunar_possession/entryPoint/inProgress/description"
-msgstr "Capture and Deliver the Spirit."
-
-msgid "modes/lunar_possession/entryPoint/intro/description"
-msgstr "Join the lunar celebration!"
-
-msgid "modes/lunar_possession/entryPoint/tooltip/description"
-msgstr ""
-"Join this special Lunar New Year event, where two teams vie to capture the "
-"Spirit of the Year and fight to carry it to safety across enemy territory. "
-"Earn the Emperor's favor to receive valuable rewards."
-
-msgid ""
-"modes/lunar_possession/entryPoint/tooltip/performance/highRisk/description"
-msgstr ""
-"Your computer's performance is insufficient for this mode. You will "
-"experience issues with graphics and vehicle movement. Game client crashes "
-"are also probable."
-
-msgid "modes/lunar_possession/entryPoint/tooltip/performance/highRisk/header"
-msgstr "Low Performance"
-
-msgid ""
-"modes/lunar_possession/entryPoint/tooltip/performance/mediumRisk/description"
-msgstr ""
-"This mode demands high computer performance. You may experience issues with "
-"map loading, graphics, and vehicle movement. In case of insufficient "
-"performance, try a lower graphics quality in Settings."
-
-msgid ""
-"modes/lunar_possession/entryPoint/tooltip/performance/mediumRisk/header"
-msgstr "Possible Reduced Performance"
-
-msgid "modes/lunar_possession/lootbox/fep_epic"
-msgstr "Epic random reward"
-
-msgid "modes/lunar_possession/lootbox/fep_legendary"
-msgstr "Legendary random reward"
-
-msgid "modes/lunar_possession/lootbox/fep_ordinary"
-msgstr "Common random reward"
-
-msgid "modes/lunar_possession/lootbox/fep_rare"
-msgstr "Rare random reward"
-
-msgid "modes/lunar_possession/lootbox/fep_unusual"
-msgstr "Uncommon random reward"
-
-msgid "modes/lunar_possession/metaProgressionTooltip/header/active"
-msgstr "Main Progression Stage %(done)s{par_Open}/%(total)s{par_Close}"
-
-msgid "modes/lunar_possession/metaProgressionTooltip/header/infinite"
-msgstr "Repeatable Stage completion %(done)s{par_Open}/%(total)s{par_Close}"
-
-msgid "modes/lunar_possession/metaProgressionTooltip/reward/tip"
-msgstr "Your progress is counted in any Arcade Cabinet submode."
-
-msgid "modes/lunar_possession/metaProgressionTooltip/subheader"
-msgstr "Jade Emperor's Challenge"
-
-msgid "modes/lunar_possession/modeSubSelector/progression/info"
-msgstr "Your progress is counted in any Arcade Cabinet submode."
-
-msgid "modes/lunar_possession/modeSubSelector/progression/timer"
-msgstr "until a new Jade Emperor's Challenge mission is available"
-
-msgid "modes/lunar_possession/mode_selector/battleCondition"
-msgstr "7v7"
-
-msgid "modes/lunar_possession/mode_selector/description"
-msgstr "Capture and Deliver the Spirit"
-
-msgid "modes/lunar_possession/mode_selector/levelCondition"
-msgstr "{parSecondary_open}I{parSecondary_close} Tier&nbsp;%(levels)s"
-
-msgid "modes/lunar_possession/mode_selector/performance/highRisk/description"
-msgstr ""
-"Your computer's performance is insufficient for this mode. You will "
-"experience issues with graphics and vehicle movement. Game client crashes "
-"are also probable."
-
-msgid "modes/lunar_possession/mode_selector/performance/highRisk/header"
-msgstr "Low Performance"
-
-msgid "modes/lunar_possession/mode_selector/performance/highRisk/headerIcon"
-msgstr "%(icon) Low Performance"
-
-msgid ""
-"modes/lunar_possession/mode_selector/performance/mediumRisk/description"
-msgstr ""
-"This mode demands high computer performance. You may experience issues with "
-"map loading, graphics, and vehicle movement. In case of insufficient "
-"performance, try a lower graphics quality in Settings."
-
-msgid "modes/lunar_possession/mode_selector/performance/mediumRisk/header"
-msgstr "Possible Reduced Performance"
-
-msgid "modes/lunar_possession/mode_selector/performance/mediumRisk/headerIcon"
-msgstr "%(icon) Possible Reduced Performance"
-
-msgid "modes/lunar_possession/mode_selector/progression/resettable"
-msgstr "Time before the next Jade Emperor's Challenge mission becomes active"
-
-msgid "modes/lunar_possession/notification/finishSubModes/withProgression"
-msgstr "%(subModeName)s has ended"
-
-msgid "modes/lunar_possession/notification/finishSubModes/withoutProgression"
-msgstr "%(subModeName)s has ended"
-
-msgid "modes/lunar_possession/notification/newSubModes/withProgression"
-msgstr "%(subModeName)s has started"
-
-msgid "modes/lunar_possession/notification/newSubModes/withoutProgression"
-msgstr "%(subModeName)s has started"
-
-msgid "modes/lunar_possession/notification/switchOffSubModes"
-msgstr "The %(subModeName)s event is unavailable due to maintenance."
-
-msgid "modes/lunar_possession/notification/switchOnSubModes"
-msgstr "The %(subModeName)s event is available again."
-
-msgid "modes/lunar_possession/progression/complete/congratulations"
-msgstr "Congratulations!"
-
-msgid "modes/lunar_possession/progression/complete/title"
-msgstr "You completed the Progression"
-
-msgid "modes/lunar_possession/progression/infinite/congratulations"
-msgstr "Congratulations!"
-
-msgid "modes/lunar_possession/progression/infinite/infinityStep"
-msgstr "Repeatable Stage"
-
-msgid "modes/lunar_possession/progression/infinite/mainProgressionFinished"
-msgstr "You completed the Progression"
-
-msgid "modes/lunar_possession/progression/pointsTooltipBody"
-msgstr ""
-"Earn Jades by completing missions to advance through the event Progression "
-"and unlock festive rewards."
-
-msgid "modes/lunar_possession/progression/pointsTooltipTitle"
-msgstr "Jades"
-
-msgid ""
-"modes/lunar_possession/progression/questsList/quest/infinityStageProgress"
-msgstr "Claim as many rewards as you can:"
-
-msgid "modes/lunar_possession/progression/questsList/totalPointsEarned"
-msgstr "Jades earned: {{progressionSteps}}"
-
-msgid ""
-"modes/lunar_possession/progression/questsList/totalPointsEarnedStandAloneTitle"
-msgstr "Jades earned:"
-
-msgid "modes/lunar_possession/progression/title"
-msgstr "JADE EMPEROR'S CHALLENGE"
-
-msgid "modes/lunar_possession/rewardsView/header"
-msgstr "BLAZING TREASURE RECEIVED"
-
-msgid "modes/lunar_possession/scheduler/notification/available"
-msgstr "The %(subModeName)s battles are available again."
-
-msgid "modes/lunar_possession/scheduler/notification/available/title"
-msgstr "Ceasefire"
-
-msgid "modes/lunar_possession/scheduler/notification/modeEnded"
-msgstr "The %(subModeName)s battles have ended"
-
-msgid "modes/lunar_possession/scheduler/notification/modeEnded/title"
-msgstr "Ceasefire"
-
-msgid "modes/lunar_possession/scheduler/notification/primeTime"
-msgstr ""
-"Ceasefire is in effect. The %(subModeName)s battles are temporarily "
-"unavailable."
-
-msgid "modes/lunar_possession/scheduler/notification/primeTime/title"
-msgstr "Ceasefire"
-
-msgid "modes/lunar_possession/tierList/description"
-msgstr ""
-"Each random reward is an item from the list below that you can receive with "
-"a certain probability."
-
-msgid "modes/lunar_possession/tierList/title"
-msgstr "What's Inside?"
-
-msgid "modes/lunar_possession/tooltip/filter/body"
-msgstr "Show/hide suitable vehicles for Jade Emperor's Challenge mode."
-
-msgid "modes/lunar_possession/tooltip/filter/header"
-msgstr "Jade Emperor's Challenge Vehicles"
-
-msgid "modes/lunar_possession/userName"
-msgstr "Jade Emperor's Challenge"
+msgid "modes/fall_tanks/userName"
+msgstr "Neon Dash"
 
 msgid "modes/undefined/banner/progression/finish"
 msgstr "All Stages completed"
@@ -969,14 +754,6 @@ msgstr "Repeatable Stage"
 msgid "modes/undefined/progression/infinite/mainProgressionFinished"
 msgstr "You completed the Main Progression"
 
-msgid "modes/undefined/progression/pointsTooltipBody"
-msgstr ""
-"Earn Points by completing missions to advance through event progression and "
-"unlock rewards."
-
-msgid "modes/undefined/progression/pointsTooltipTitle"
-msgstr "Points"
-
 msgid "modes/undefined/progression/questsList/quest/infinityStageProgress"
 msgstr "Get as many rewards as you can:"
 
@@ -1075,19 +852,8 @@ msgstr ""
 "The progression will be reset in %(days)d days. After that, you will be able"
 " to complete missions again."
 
-msgid "notification/progressionInfiniteStageComplete"
-msgstr ""
-"You have completed the Repeatable Stage of the Progression. Reward received:"
-
 msgid "notification/progressionStageComplete"
 msgstr "You have completed \"%(modeName)s\" stage: %(stage)s. Reward received:"
-
-msgid "notification/progressionStageComplete/rewardReceived"
-msgstr "Stage %(stageIndex)s / %(maximumStage)s completed. Reward received:"
-
-msgid "notification/progressionStageComplete/rewardReceivedLastStage"
-msgstr ""
-"Main Progression completed. Repeatable Stage available. Reward received:"
 
 msgid "notification/subModesSeparator"
 msgstr ", "
@@ -1226,16 +992,16 @@ msgid "primeTimes/timeText/undefined"
 msgstr "?empty?"
 
 msgid "progression/cards/points"
-msgstr "Jades"
+msgstr "points"
 
 msgid "progression/complete/affirmative"
 msgstr "Affirmative!"
 
 msgid "progression/defaultCondition/text"
-msgstr "Jades Earned"
+msgstr "Earn Points and advance through the Progression."
 
 msgid "progression/infinite/pointsEarned"
-msgstr "Jades earned:"
+msgstr "Points earned:"
 
 msgid "progression/questsList/quest/completed"
 msgstr "Completed:"
@@ -1264,17 +1030,11 @@ msgstr "{{reason}} {{value}}"
 msgid "progression/questsList/quest/progressTitle"
 msgstr "{{completed}} {{currentPoints}} {{delimeter}} {{totalPoints}}"
 
-msgid "progression/questsList/questsFinishTimerInfiniteOnelineTitle"
-msgstr "Event ends in: {{time}}"
-
-msgid "progression/questsList/questsFinishTimerInfiniteTitle"
-msgstr "Event ends in:"
-
 msgid "progression/questsList/questsFinishTimerOnelineTitle"
-msgstr "Missions reset daily. Event ends in: {{time}}"
+msgstr "The active phase ends in: {{time}}"
 
 msgid "progression/questsList/questsFinishTimerTitle"
-msgstr "Missions reset daily. Event ends in:"
+msgstr "The active phase ends in:"
 
 msgid "progression/questsList/questsRenewTimerTitle"
 msgstr "Next launch in:"
@@ -1289,7 +1049,7 @@ msgid "progression/stepsNoProgress"
 msgstr "{bond_Open}%(done)s{bond_Close} / %(total)s"
 
 msgid "quests/limitedProgression/awards/nearest/header"
-msgstr "Next Stage Rewards—Unlock at %(count)d Jades"
+msgstr "Next Stage Rewards—Unlock at %(count)d Points"
 
 msgid "rewardsView/additionalRewards/title"
 msgstr "You also received:"
@@ -1372,241 +1132,84 @@ msgstr "?empty?"
 msgid "sub_modes/development/userName/quoted"
 msgstr "?empty?"
 
-msgid "sub_modes/ice_age_2025/capsUserName"
-msgstr "ICE AGE"
+msgid "sub_modes/fall_tanks/capsUserName"
+msgstr "NEON DASH"
 
-msgid "sub_modes/ice_age_2025/detailsHelp/page1/description"
+msgid "sub_modes/fall_tanks/detailsHelp/page1/description"
 msgstr ""
-"If you find yourself at an ice rink in a heavy vehicle, you have two "
-"options: move like a cow on roller skates, or show what stylish drifting is "
-"all about. As compensation, gun dispersion has been reduced, and shot "
-"effects will add a festive flair."
+"Race to the finish line and stop others from reaching it. Use the Dash and "
+"Shield abilities to cause extra mayhem!"
 
-msgid "sub_modes/ice_age_2025/detailsHelp/page1/title"
-msgstr "Ice Age"
+msgid "sub_modes/fall_tanks/detailsHelp/page1/title"
+msgstr "Caution: Moving Platforms"
 
-msgid "sub_modes/ice_age_2025/detailsHelpHint/description"
-msgstr "to view the mode features"
+msgid "sub_modes/fall_tanks/detailsHelp/page2/description"
+msgstr "Dodge the lasers and carefully time the jumps to speed to the finish!"
 
-msgid "sub_modes/ice_age_2025/detailsHelpHint/press"
+msgid "sub_modes/fall_tanks/detailsHelp/page2/title"
+msgstr "Caution: Lasers and Jumps"
+
+msgid "sub_modes/fall_tanks/detailsHelpHint/description"
+msgstr "to learn more about this mode"
+
+msgid "sub_modes/fall_tanks/detailsHelpHint/press"
 msgstr "Press"
 
-msgid "sub_modes/ice_age_2025/detailsHelpTitle"
-msgstr "Arcade Cabinet: Ice Age"
+msgid "sub_modes/fall_tanks/detailsHelpTitle"
+msgstr "Neon Dash"
 
-msgid "sub_modes/ice_age_2025/subModeCard/battleCondition"
-msgstr "15v15"
+msgid "sub_modes/fall_tanks/subModeCard/battleCondition"
+msgstr "15–30"
 
-msgid "sub_modes/ice_age_2025/subModeCard/description"
+msgid "sub_modes/fall_tanks/subModeCard/description"
 msgstr ""
-"Battles with changed\n"
-"mobility parameters"
+"Fight your way\n"
+"to the finish line"
 
-msgid "sub_modes/ice_age_2025/subModeCard/levelCondition"
-msgstr "{parSecondary_open}I{parSecondary_close} Tiers&nbsp;%(levels)s"
+msgid "sub_modes/fall_tanks/subModeCard/levelCondition"
+msgstr "{parSecondary_open}I{parSecondary_close} All Tiers"
 
-msgid "sub_modes/ice_age_2025/subModeCard/performance/highRisk/description"
+msgid "sub_modes/fall_tanks/subModeCard/performance/highRisk/description"
 msgstr ""
-"This mode demands high computer performance. You may experience issues with "
-"map loading, graphics, and vehicle movement. In case of insufficient "
-"performance, try a lower graphics quality in Settings."
+"At low graphics settings, visual artifacts and other issues may occur. We "
+"recommend selecting the highest graphics setting for the best experience "
+"possible, provided that your computer specs meet the requirements. This mode"
+" demands high performance, and the FPS rate may decrease at intense moments."
 
-msgid "sub_modes/ice_age_2025/subModeCard/performance/highRisk/header"
-msgstr "Possible Reduced Performance"
+msgid "sub_modes/fall_tanks/subModeCard/performance/highRisk/header"
+msgstr "Highest Graphics Settings Recommended"
 
-msgid "sub_modes/ice_age_2025/subModeCard/performance/highRisk/headerIcon"
-msgstr "%(icon) Possible Reduced Performance"
+msgid "sub_modes/fall_tanks/subModeCard/performance/highRisk/headerIcon"
+msgstr "%(icon) Highest graphics settings recommended"
 
-msgid "sub_modes/ice_age_2025/subModeCard/performance/mediumRisk/description"
+msgid "sub_modes/fall_tanks/subModeCard/performance/mediumRisk/description"
 msgstr ""
-"This mode demands high computer performance. You may experience issues with "
-"map loading, graphics, and vehicle movement. In case of insufficient "
-"performance, try a lower graphics quality in Settings."
+"At low graphics settings, visual artifacts and other issues may occur. We "
+"recommend selecting the highest graphics setting for the best experience "
+"possible, provided that your computer specs meet the requirements. This mode"
+" demands high computer performance. Your FPS rate may decrease at intense "
+"moments."
 
-msgid "sub_modes/ice_age_2025/subModeCard/performance/mediumRisk/header"
-msgstr "Possible Reduced Performance"
+msgid "sub_modes/fall_tanks/subModeCard/performance/mediumRisk/header"
+msgstr "Highest Graphics Settings Recommended"
 
-msgid "sub_modes/ice_age_2025/subModeCard/performance/mediumRisk/headerIcon"
-msgstr "%(icon) Possible Reduced Performance"
+msgid "sub_modes/fall_tanks/subModeCard/performance/mediumRisk/headerIcon"
+msgstr "%(icon) Highest graphics settings recommended"
 
-msgid "sub_modes/ice_age_2025/subModeCard/title"
-msgstr "Ice Age"
+msgid "sub_modes/fall_tanks/subModeCard/title"
+msgstr "Neon Dash"
 
-msgid "sub_modes/ice_age_2025/tips/tip1/description"
-msgstr ""
-"If you find yourself at an ice rink in a heavy vehicle, you have two "
-"options: move like a cow on roller skates, or show what stylish drifting is "
-"all about. As compensation, gun dispersion has been reduced, and shot "
-"effects will add a festive flair."
+msgid "sub_modes/fall_tanks/tips/tip1/description"
+msgstr "?empty?"
 
-msgid "sub_modes/ice_age_2025/tips/tip1/title"
-msgstr "Ice Age"
+msgid "sub_modes/fall_tanks/tips/tip1/title"
+msgstr "?empty?"
 
-msgid "sub_modes/ice_age_2025/userName"
-msgstr "Ice Age"
+msgid "sub_modes/fall_tanks/userName"
+msgstr "Neon Dash"
 
-msgid "sub_modes/ice_age_2025/userName/quoted"
-msgstr "\"Ice Age\""
-
-msgid "sub_modes/lunar_possession/capsUserName"
-msgstr "JADE EMPEROR'S CHALLENGE"
-
-msgid "sub_modes/lunar_possession/detailsHelp/page1/description"
-msgstr "Grab the Spirit to earn points for your team"
-
-msgid "sub_modes/lunar_possession/detailsHelp/page1/title"
-msgstr "Catch the Spirit"
-
-msgid "sub_modes/lunar_possession/detailsHelp/page2/description"
-msgstr "Defend your teammate holding the Spirit from enemies"
-
-msgid "sub_modes/lunar_possession/detailsHelp/page2/title"
-msgstr "Guard a Teammate"
-
-msgid "sub_modes/lunar_possession/detailsHelp/page3/description"
-msgstr "Destroy the enemy holding the Spirit to grab it yourself"
-
-msgid "sub_modes/lunar_possession/detailsHelp/page3/title"
-msgstr "Seize From the Enemy"
-
-msgid "sub_modes/lunar_possession/detailsHelpHint/description"
-msgstr "to view the mode features"
-
-msgid "sub_modes/lunar_possession/detailsHelpHint/press"
-msgstr "Press"
-
-msgid "sub_modes/lunar_possession/detailsHelpTitle"
-msgstr "Objectives:"
-
-msgid "sub_modes/lunar_possession/subModeCard/battleCondition"
-msgstr "7v7"
-
-msgid "sub_modes/lunar_possession/subModeCard/description"
-msgstr ""
-"Fight as a team to retrieve the Spirit and deliver it to the Shrine behind "
-"enemy lines"
-
-msgid "sub_modes/lunar_possession/subModeCard/levelCondition"
-msgstr "{parSecondary_open}I{parSecondary_close} Tiers&nbsp;%(levels)s"
-
-msgid ""
-"sub_modes/lunar_possession/subModeCard/performance/highRisk/description"
-msgstr ""
-"Your computer's performance is insufficient for this mode. You will "
-"experience issues with graphics and vehicle movement. Game client crashes "
-"are also probable."
-
-msgid "sub_modes/lunar_possession/subModeCard/performance/highRisk/header"
-msgstr "Low Performance"
-
-msgid "sub_modes/lunar_possession/subModeCard/performance/highRisk/headerIcon"
-msgstr "%(icon) Low Performance"
-
-msgid ""
-"sub_modes/lunar_possession/subModeCard/performance/mediumRisk/description"
-msgstr ""
-"This mode demands high computer performance. You may experience issues with "
-"map loading, graphics, and vehicle movement. In case of insufficient "
-"performance, try a lower graphics quality in Settings."
-
-msgid "sub_modes/lunar_possession/subModeCard/performance/mediumRisk/header"
-msgstr "Possible Reduced Performance"
-
-msgid ""
-"sub_modes/lunar_possession/subModeCard/performance/mediumRisk/headerIcon"
-msgstr "%(icon) Possible Reduced Performance"
-
-msgid "sub_modes/lunar_possession/subModeCard/title"
-msgstr "Jade Emperor's Challenge"
-
-msgid "sub_modes/lunar_possession/tips/tip1/description"
-msgstr "Unknown sub mode first tip description"
-
-msgid "sub_modes/lunar_possession/tips/tip1/title"
-msgstr "Unknown sub mode first tip title"
-
-msgid "sub_modes/lunar_possession/userName"
-msgstr "Jade Emperor's Challenge"
-
-msgid "sub_modes/lunar_possession/userName/quoted"
-msgstr "\"Jade Emperor's Challenge\""
-
-msgid "sub_modes/snowballs_2025/capsUserName"
-msgstr "SNOWBALLS"
-
-msgid "sub_modes/snowballs_2025/detailsHelp/page1/description"
-msgstr ""
-"Become an \"HE monster\" to your enemies no matter what you play in! "
-"Penetration with standard and special shells has been decreased, but HE "
-"shell damage has been increased. The type of ammunition fully corresponds to"
-" the festive atmosphere."
-
-msgid "sub_modes/snowballs_2025/detailsHelp/page1/title"
-msgstr "Snowballs"
-
-msgid "sub_modes/snowballs_2025/detailsHelpHint/description"
-msgstr "to view the mode features"
-
-msgid "sub_modes/snowballs_2025/detailsHelpHint/press"
-msgstr "Press"
-
-msgid "sub_modes/snowballs_2025/detailsHelpTitle"
-msgstr "Arcade Cabinet: Snowballs"
-
-msgid "sub_modes/snowballs_2025/subModeCard/battleCondition"
-msgstr "15v15"
-
-msgid "sub_modes/snowballs_2025/subModeCard/description"
-msgstr ""
-"Battles with changed\n"
-"shell parameters"
-
-msgid "sub_modes/snowballs_2025/subModeCard/levelCondition"
-msgstr "{parSecondary_open}I{parSecondary_close} Tiers&nbsp;%(levels)s"
-
-msgid "sub_modes/snowballs_2025/subModeCard/performance/highRisk/description"
-msgstr ""
-"This mode demands high computer performance. You may experience issues with "
-"map loading, graphics, and vehicle movement. In case of insufficient "
-"performance, try a lower graphics quality in Settings."
-
-msgid "sub_modes/snowballs_2025/subModeCard/performance/highRisk/header"
-msgstr "Possible Reduced Performance"
-
-msgid "sub_modes/snowballs_2025/subModeCard/performance/highRisk/headerIcon"
-msgstr "%(icon) Possible Reduced Performance"
-
-msgid ""
-"sub_modes/snowballs_2025/subModeCard/performance/mediumRisk/description"
-msgstr ""
-"This mode demands high computer performance. You may experience issues with "
-"map loading, graphics, and vehicle movement. In case of insufficient "
-"performance, try a lower graphics quality in Settings."
-
-msgid "sub_modes/snowballs_2025/subModeCard/performance/mediumRisk/header"
-msgstr "Possible Reduced Performance"
-
-msgid "sub_modes/snowballs_2025/subModeCard/performance/mediumRisk/headerIcon"
-msgstr "%(icon) Possible Reduced Performance"
-
-msgid "sub_modes/snowballs_2025/subModeCard/title"
-msgstr "Snowballs"
-
-msgid "sub_modes/snowballs_2025/tips/tip1/description"
-msgstr ""
-"Become an \"HE monster\" to your enemies no matter what you play in! "
-"Penetration with standard and special shells has been decreased, but HE "
-"shell damage has been increased. The type of ammunition fully corresponds to"
-" the festive atmosphere."
-
-msgid "sub_modes/snowballs_2025/tips/tip1/title"
-msgstr "Snowballs"
-
-msgid "sub_modes/snowballs_2025/userName"
-msgstr "Snowballs"
-
-msgid "sub_modes/snowballs_2025/userName/quoted"
-msgstr "\"Snowballs\""
+msgid "sub_modes/fall_tanks/userName/quoted"
+msgstr "\"Neon Dash\""
 
 msgid "sub_modes/undefined/capsUserName"
 msgstr "UNKNOWN SUB MODE NAME"

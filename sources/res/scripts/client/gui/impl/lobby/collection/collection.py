@@ -3,7 +3,7 @@ from frameworks.wulf import WindowFlags
 from gui.Scaleform.Waiting import Waiting
 from gui.Scaleform.daapi.view.lobby.profile.sound_constants import ACHIEVEMENTS_SOUND_SPACE
 from gui.collection.account_settings import getShownNewItemsCount, isItemNew, isRewardNew, isTutorialCompleted, setCollectionRenewSeen, setCollectionTutorialCompleted, setItemShown, setRewardShown, setShownNewItemsCount
-from gui.collection.collections_helpers import composeBonuses, getItemResKey, setHangarState
+from gui.collection.collections_helpers import composeBonuses, getItemResKey
 from gui.collection.resources.cdn.models import Group, Sub, makeImageID
 from gui.impl.auxiliary.collections_helper import getCollectionsBonusPacker
 from gui.impl.gen import R
@@ -102,11 +102,6 @@ class CollectionView(ViewComponent):
           self.viewModel.onTabSelected, self.__onTabSelected),
          (
           self.viewModel.onClose, self.__onClose))
-
-    def _getListeners(self):
-        return (
-         (
-          events.LobbyHeaderMenuEvent.MENU_CLICK, self.__onHeaderMenuClick, EVENT_BUS_SCOPE.LOBBY),)
 
     def __onViewLoaded(self, args):
         self.__pagesCount = int(args.get('pagesCount'))
@@ -326,12 +321,6 @@ class CollectionView(ViewComponent):
         if not path:
             _logger.warning('Resource: %s not found', ('/').join((group, sub, name)))
         return path
-
-    def __onHeaderMenuClick(self, _):
-        from gui.lobby_state_machine.states import isInHangarState
-        if isInHangarState():
-            setHangarState()
-        self.destroyWindow()
 
 
 class CollectionWindow(WindowImpl):

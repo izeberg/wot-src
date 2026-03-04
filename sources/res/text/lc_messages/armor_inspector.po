@@ -4,113 +4,62 @@ msgstr ""
 msgid "armorValues/title/main"
 msgstr "Main armor"
 
+msgid "armorValues/title/no_damage"
+msgstr "No damage"
+
+msgid "armorValues/title/other"
+msgstr "Other"
+
+msgid "armorValues/title/penetration"
+msgstr "Penetration chance"
+
+msgid "armorValues/title/percent"
+msgstr "(%)"
+
+msgid "armorValues/title/ricochet"
+msgstr "Ricochet"
+
 msgid "armorValues/title/spaced"
 msgstr "Spaced armor"
 
 msgid "armorValues/title/values"
 msgstr "(mm)"
 
-msgid "explanatory/angle/description"
-msgstr ""
-"The angle between the {t_2_Open}shell trajectory{t_2_Close} and the line "
-"perpendicular to the armor plate."
+msgid "attackerTitle"
+msgstr "Attacker configuration"
 
-msgid "explanatory/angle/header"
-msgstr "Hit angle"
+msgid "attackerTooltip/body"
+msgstr "Click to change attacking vehicle"
 
-msgid "explanatory/effective/description"
-msgstr ""
-"The total {t_3_Open}resulting armor thickness{t_3_Close} along the shell "
-"trajectory."
+msgid "attackerTooltip/header"
+msgstr "Attacking vehicle"
 
-msgid "explanatory/effective/header"
-msgstr "Effective armor"
+msgid "menu/header"
+msgstr "Overlay type"
 
-msgid "explanatory/guide"
-msgstr "Want to know more? Check out our video guide."
+msgid "menu/no_armor"
+msgstr "No overlay"
 
-msgid "explanatory/header"
-msgstr "Legend"
-
-msgid "explanatory/linkButton"
-msgstr "Mastering Armor"
-
-msgid "explanatory/nominal/description"
-msgstr ""
-"The actual width of the {t_1_Open}main or spaced{t_1_Close} armor plate(s)."
-
-msgid "explanatory/nominal/header"
+msgid "menu/nominal"
 msgstr "Nominal armor"
 
-msgid "explanatory/note/description"
-msgstr ""
-"Effective armor is only slightly affected by {t_4_Open}shell type and caliber{t_4_Close}.\n"
-" \n"
-"In battle there are more factors affecting armor penetration: {t_5_Open}ballistics{t_5_Close}, {t_6_Open}distance to target{t_6_Close}, {t_7_Open}randomization{t_7_Close}, and {t_8_Open}ricochets{t_8_Close}."
+msgid "menu/penetration"
+msgstr "Penetration chance"
 
-msgid "explanatory/note/header"
-msgstr "Keep in mind"
+msgid "modules/current"
+msgstr "Current configuration"
 
-msgid "explanatory/tooltips/t_1/body"
-msgstr ""
-"A vehicle is only damaged if its main armor is hit and penetrated.\n"
-"\n"
-"Hitting spaced armor does not damage a vehicle unless a shell hits and then penetrates the main armor after that.\n"
-"\n"
-"Hitting and penetrating external modules damages those modules directly: hit a track to immobilize a vehicle, hit a gun to disable it, or hit an observation device to reduce a vehicle's view range."
+msgid "modules/custom"
+msgstr "Custom configuration"
 
-msgid "explanatory/tooltips/t_2/body"
-msgstr ""
-"The shell trajectory is calculated as if the shell moves in a straight line from the center of the screen.\n"
-"\n"
-"Hit angle does not apply to external modules (such as tracks and gun)—here, effective armor equals nominal armor.\n"
-"\n"
-"If there are multiple armor layers at the point of impact, the tooltip displays the hit angle for the first layer only."
+msgid "modules/standard"
+msgstr "Standard configuration"
 
-msgid "explanatory/tooltips/t_3/body"
-msgstr ""
-"For a single armor layer, effective armor is the nominal armor modified by the hit angle and shell normalization.\n"
-"\n"
-"If there are multiple armor layers at the point of impact, the result is the sum of the effective values for each layer.\n"
-"\n"
-"Shell normalization reduces the hit angle by 5 degrees for armor-piercing shells and by 2 degrees for APCR shells.\n"
-"\n"
-"Other shell types are not normalized.\n"
-"\n"
-"The shell normalization angle may be further increased if the shell caliber is greater than twice the armor thickness."
+msgid "modules/title"
+msgstr "Vehicle modules"
 
-msgid "explanatory/tooltips/t_4/body"
-msgstr ""
-"In this window, an armor-piercing shell of minimum caliber is used to calculate the effective armor.\n"
-"\n"
-"The effective armor value may differ slightly for other shell types and calibers."
-
-msgid "explanatory/tooltips/t_5/body"
-msgstr ""
-"The real shell trajectory is not a straight line—it curves due to gravity, which affects the hit angle.\n"
-"\n"
-"The effect is negligible for most vehicles, but may be noticeable for vehicles with slow shell velocity or at long distances.\n"
-"\n"
-"This is especially significant for SPG shots."
-
-msgid "explanatory/tooltips/t_6/body"
-msgstr ""
-"Armor-piercing and APCR shell penetration is reduced with distance. You may "
-"see this in the tooltips for those shells."
-
-msgid "explanatory/tooltips/t_7/body"
-msgstr ""
-"Each time a shot is fired, shell penetration is randomized by +-25%.\n"
-"\n"
-"Shell direction is slightly randomized with each shot, so it hits a random spot inside the aiming circle."
-
-msgid "explanatory/tooltips/t_8/body"
-msgstr ""
-"The ricochet angle is 70 degrees for armor-piercing and APCR shells and 85 degrees for HEAT shells.\n"
-"\n"
-"HE shells do not ricochet.\n"
-"\n"
-"A ricochet will not occur if the shell's caliber is greater than three times the nominal armor thickness at the point of impact (this only applies to AP and APCR shells)."
+msgid "modules/top"
+msgstr "Top configuration"
 
 msgid "tooltip/angle/value"
 msgstr "{{value}}°"
@@ -145,5 +94,136 @@ msgstr "Turret"
 msgid "tooltip/armor/part/wheels"
 msgstr "Wheels"
 
+msgid "tooltip/armor/reduction"
+msgstr "{{value}}x"
+
 msgid "tooltip/armor/value"
 msgstr "{{value}} mm"
+
+msgid "tooltip/dcc/no_damage"
+msgstr "No damage"
+
+msgid "tooltip/dcc/penetration"
+msgstr "Penetration"
+
+msgid "tooltip/dcc/percent"
+msgstr "{{value}}% "
+
+msgid "tooltip/dcc/ricochet"
+msgstr "Ricochet"
+
+msgid "tooltip/minor/angle/description"
+msgstr ""
+"The angle between the shell trajectory and the line perpendicular to the armor plate.\n"
+"\n"
+"The shell trajectory is calculated as if the shell moves in a straight line from the center of the screen."
+
+msgid "tooltip/minor/angle/header"
+msgstr "Hit angle"
+
+msgid "tooltip/minor/damage/description"
+msgstr ""
+"The chance of penetrating enemy armor and causing damage to the vehicle."
+
+msgid "tooltip/minor/damage/header"
+msgstr "Penetration chance"
+
+msgid "tooltip/minor/effective/description"
+msgstr ""
+"For a single armor layer, effective armor is the nominal armor modified by the hit angle and shell normalization.\n"
+"\n"
+"If there are multiple armor layers at the point of impact, the result is the sum of the effective values for each layer."
+
+msgid "tooltip/minor/effective/header"
+msgstr "Effective armor"
+
+msgid "tooltip/minor/header"
+msgstr "Legend"
+
+msgid "tooltip/minor/noDamage/description"
+msgstr ""
+"Hitting spaced armor does not damage a vehicle unless a shell hits and then "
+"penetrates the main armor after that."
+
+msgid "tooltip/minor/noDamage/header"
+msgstr "No damage"
+
+msgid "tooltip/minor/nominal/description"
+msgstr "The actual width of the main or spaced armor plate(s)."
+
+msgid "tooltip/minor/nominal/header"
+msgstr "Nominal armor"
+
+msgid "tooltip/minor/ricochet/description"
+msgstr ""
+"Shells that hit enemy armor at a glancing angle will ricochet off it. "
+"However, they may still strike another vehicle, or even the same one."
+
+msgid "tooltip/minor/ricochet/header"
+msgstr "Ricochet"
+
+msgid "tooltip/minorShort/attackingConfiguration/description"
+msgstr ""
+"Affects calculations of effective armor and penetration chance.\n"
+"\n"
+"A distance of 100 m is used for all calculations (AP and APCR shells lose penetration power over distance).\n"
+"\n"
+"Crew perks and attacking vehicle upgrades do not affect the calculations."
+
+msgid "tooltip/minorShort/attackingConfiguration/header"
+msgstr "Attacker configuration"
+
+msgid "tooltip/minorShort/damageChance/description"
+msgstr ""
+"The chance of penetrating enemy armor and causing damage to the vehicle.\n"
+"\n"
+"Hitting spaced armor does not damage a vehicle unless a shell hits and then penetrates the main armor after that."
+
+msgid "tooltip/minorShort/damageChance/header"
+msgstr "Penetration chance"
+
+msgid "tooltip/minorShort/mainArmor/description"
+msgstr ""
+"A vehicle is only damaged if its main armor is hit and penetrated. HE shells"
+" can cause reduced damage to a vehicle even without penetration; however, "
+"they must still reach the main armor."
+
+msgid "tooltip/minorShort/mainArmor/header"
+msgstr "Main armor"
+
+msgid "tooltip/minorShort/noDamage/description"
+msgstr ""
+"Hitting spaced armor does not damage a vehicle unless a shell hits and then penetrates the main armor after that.\n"
+"\n"
+"Hitting and penetrating external modules damages those modules directly: hit a track to immobilize a vehicle, hit a gun to disable it, or hit an observation device to reduce a vehicle's view range."
+
+msgid "tooltip/minorShort/noDamage/header"
+msgstr "No damage"
+
+msgid "tooltip/minorShort/ricochet/description"
+msgstr ""
+"The ricochet angle is 70 degrees for armor-piercing and APCR shells and 85 degrees for HEAT shells.\n"
+"\n"
+"HE shells do not ricochet, while AP and APCR shells lose 25% of their penetration power after ricocheting.\n"
+"\n"
+"A ricochet will not occur if the shell's caliber is greater than three times the nominal armor thickness at the point of impact (this only applies to AP and APCR shells)."
+
+msgid "tooltip/minorShort/ricochet/header"
+msgstr "Ricochet"
+
+msgid "tooltip/minorShort/spacedArmor/description"
+msgstr ""
+"Hitting spaced armor does not damage a vehicle unless a shell hits and then penetrates the main armor after that.\n"
+"\n"
+"Hitting and penetrating external modules damages those modules directly: hit a track to immobilize a vehicle, hit a gun to disable it, or hit an observation device to reduce a vehicle's view range.\n"
+"\n"
+"Hit angle does not apply to external modules (such as tracks and gun)—here, effective armor equals nominal armor."
+
+msgid "tooltip/minorShort/spacedArmor/header"
+msgstr "Spaced armor"
+
+msgid "tooltip/reductionAndArmor/value"
+msgstr "{{reduction}}{{value}} mm"
+
+msgid "videoTooltip"
+msgstr "Watch a video on armor penetration mechanics"

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing, Event
 from helpers import dependency
 from skeletons.gui.impl import IGuiLoader

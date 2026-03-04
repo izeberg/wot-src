@@ -124,6 +124,7 @@ package net.wg.gui.lobby.vehicleCompare
       
       override protected function updateLayout() : void
       {
+         var _loc2_:int = 0;
          var _loc1_:Boolean = App.appHeight < StageSizeBoundaries.HEIGHT_900 && this._isPostProgressionEnabled;
          this.modules.setIsSmall(_loc1_);
          this.modificationsWidget.visible = this._isPostProgressionEnabled;
@@ -133,7 +134,7 @@ package net.wg.gui.lobby.vehicleCompare
             this.modificationsWidget.validateNow();
          }
          super.updateLayout();
-         var _loc2_:int = (width - MIN_SCREEN_WIDTH >> 1) + BORDER_OFFSET;
+         _loc2_ = (width - MIN_SCREEN_WIDTH >> 1) + BORDER_OFFSET;
          this.modules.x = _loc2_;
          this.skillsWidget.x = this.modificationsWidget.x = this.equipmentWidget.x = _loc2_ + EQUIPMENT_WIDGET_X_OFFSET;
          bottomPanel.x = _loc2_;

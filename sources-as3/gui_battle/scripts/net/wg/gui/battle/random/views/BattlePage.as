@@ -50,7 +50,7 @@ package net.wg.gui.battle.random.views
       
       private static const BATTLE_DAMAGE_LOG_X_POSITION:int = 229;
       
-      private static const BATTLE_DAMAGE_LOG_Y_PADDING:int = 3;
+      private static const BATTLE_DAMAGE_LOG_Y_PADDING:int = 8;
       
       private static const MINIMAP_MARGIN_HEIGHT:int = 6;
       

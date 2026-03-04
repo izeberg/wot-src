@@ -1,5 +1,7 @@
+from __future__ import absolute_import
 from collections import defaultdict
 from enum import Enum
+from future.utils import iteritems, itervalues
 import BigWorld
 from CurrentVehicle import g_currentVehicle
 from PlayerEvents import g_playerEvents
@@ -53,7 +55,7 @@ class _CrewBooksViewedCache(object):
 
     def addViewedItems(self, nationID):
         if self.__state == self.STATE.UPDATE:
-            for bookType, count in self.__booksCountByNation.iteritems():
+            for bookType, count in iteritems(self.__booksCountByNation):
                 if bookType in CREW_BOOK_RARITY.NO_NATION_TYPES:
                     self.__viewedItems[bookType] = count
                 else:
@@ -66,7 +68,7 @@ class _CrewBooksViewedCache(object):
         if self.isCrewBookAvailable:
             return False
         currentNation = g_currentVehicle.item.nationID
-        for bookType, count in self.__booksCountByNation.iteritems():
+        for bookType, count in iteritems(self.__booksCountByNation):
             if bookType in CREW_BOOK_RARITY.NO_NATION_TYPES:
                 viewedCount = self.__viewedItems.setdefault(bookType, 0)
                 if viewedCount < count:
@@ -90,7 +92,7 @@ class _CrewBooksViewedCache(object):
         if self.isCrewBookAvailable:
             return result
         currentNation = g_currentVehicle.item.nationID
-        for bookType, count in self.__booksCountByNation.iteritems():
+        for bookType, count in iteritems(self.__booksCountByNation):
             if bookType in CREW_BOOK_RARITY.NO_NATION_TYPES:
                 viewedCount = self.__viewedItems.setdefault(bookType, 0)
                 if viewedCount < count:
@@ -108,7 +110,7 @@ class _CrewBooksViewedCache(object):
         if self.isCrewBookAvailable:
             return result
         currentNation = g_currentVehicle.item.nationID
-        for bookType, count in self.__booksCountByNation.iteritems():
+        for bookType, count in iteritems(self.__booksCountByNation):
             if bookType in CREW_BOOK_RARITY.NO_NATION_TYPES:
                 result += count
             else:
@@ -124,7 +126,7 @@ class _CrewBooksViewedCache(object):
     def onCrewBooksUpdated(self, diff):
         inventory = diff.get('inventory', {})
         if GUI_ITEM_TYPE.CREW_BOOKS in inventory:
-            for cd, count in inventory[GUI_ITEM_TYPE.CREW_BOOKS].iteritems():
+            for cd, count in iteritems(inventory[GUI_ITEM_TYPE.CREW_BOOKS]):
                 item = tankmen.getItemByCompactDescr(cd)
                 if count is None:
                     count = 0
@@ -155,7 +157,7 @@ class _CrewBooksViewedCache(object):
     def __syncOwnedItems(self):
         self.__booksCountByNation.clear()
         items = self._itemsCache.items.getItems(GUI_ITEM_TYPE.CREW_BOOKS, REQ_CRITERIA.CREW_ITEM.IN_ACCOUNT)
-        for item in items.itervalues():
+        for item in itervalues(items):
             bookType = item.getBookType()
             if bookType in CREW_BOOK_RARITY.NO_NATION_TYPES:
                 self.__booksCountByNation[bookType] = item.getFreeCount()

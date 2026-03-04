@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.Scaleform.genConsts.TOOLTIPS_CONSTANTS import TOOLTIPS_CONSTANTS
 from gui.shared.tooltips import contexts
 from gui.shared.tooltips.builders import DataBuilder, DefaultFormatBuilder

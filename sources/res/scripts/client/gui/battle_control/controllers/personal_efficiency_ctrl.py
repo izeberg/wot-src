@@ -326,13 +326,6 @@ class PersonalEfficiencyController(IBattleController):
         self.__eManager = None
         return
 
-    @property
-    def _totalEfficiency(self):
-        return self.__totalEfficiency
-
-    def setTotalEfficiency(self, eType, value):
-        self.__totalEfficiency[eType] = value
-
     def getTotalEfficiency(self, eType):
         return self.__totalEfficiency[eType]
 

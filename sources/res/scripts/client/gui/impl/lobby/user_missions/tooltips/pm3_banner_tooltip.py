@@ -1,7 +1,7 @@
-from gui.impl.pub import ViewImpl
 from frameworks.wulf import ViewSettings
 from gui.impl.gen import R
-from gui.impl.gen.view_models.views.lobby.missions.widget.pm3_banner_tooltip_view_model import Pm3BannerTooltipViewModel
+from gui.impl.gen.view_models.views.lobby.user_missions.tooltips.pm3_banner_tooltip_view_model import Pm3BannerTooltipViewModel
+from gui.impl.pub import ViewImpl
 
 class PM3BannerTooltipView(ViewImpl):
     __slots__ = ('__type', )

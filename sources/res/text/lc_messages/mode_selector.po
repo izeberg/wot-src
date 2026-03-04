@@ -44,26 +44,6 @@ msgstr "Season %(seasonNum)s"
 msgid "hint/showProgression"
 msgstr "VIEW IN PROGRESSION MODE"
 
-msgid "mode/battleRoyale/progression/currentStage"
-msgstr "Current Stage:"
-
-msgid "mode/battleRoyale/progression/steps"
-msgstr "{whiteSpanish_Open}%(done)s{whiteSpanish_Close} / %(total)s"
-
-msgid "mode/battleRoyaleQueue/battlePassTooltip/body"
-msgstr ""
-"By playing {whiteSpanish_open}Steel Hunter{whiteSpanish_close}, you will "
-"earn Points. They allow you to advance through the Battle Pass Progression."
-
-msgid "mode/battleRoyaleQueue/battlePassTooltip/header"
-msgstr "Battle Pass Points"
-
-msgid "mode/battleRoyaleQueue/description"
-msgstr "Battle Royale"
-
-msgid "mode/battleRoyaleQueue/title"
-msgstr "Steel Hunter"
-
 msgid "mode/epicBattle/condition"
 msgstr "30v30 &nbsp;{par_open}I{par_close}&nbsp;Tiers&nbsp;%(levels)s"
 

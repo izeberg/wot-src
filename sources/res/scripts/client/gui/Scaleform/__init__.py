@@ -1,6 +1,6 @@
+from __future__ import absolute_import
 import os
 from gui.Scaleform.locale.MENU import MENU
-from nations import NAMES
 from skeletons.gui.system_messages import ISystemMessages
 from skeletons.gui.techtree_events import ITechTreeEventsListener
 SCALEFORM_SUPPORT = False

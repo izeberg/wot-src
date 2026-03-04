@@ -797,8 +797,10 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.settings.feedback.ribbons.BattleRibbonsForm;
    import net.wg.gui.lobby.settings.feedback.ribbons.ControlsContainer;
    import net.wg.gui.lobby.settings.feedback.ribbons.ControlsGroup;
+   import net.wg.gui.lobby.settings.feedback.ribbons.CrewPerksGroupContent;
    import net.wg.gui.lobby.settings.feedback.ribbons.DamageControlsGroupContent;
    import net.wg.gui.lobby.settings.feedback.ribbons.GroupContent;
+   import net.wg.gui.lobby.settings.feedback.ribbons.InfoView;
    import net.wg.gui.lobby.settings.feedback.ribbons.SettingsRibbonContainer;
    import net.wg.gui.lobby.settings.feedback.ribbons.SettingsRibbonItem;
    import net.wg.gui.lobby.settings.feedback.ribbons.data.RibbonItemData;
@@ -2492,9 +2494,13 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_LOBBY_SETTINGS_FEEDBACK_RIBBONS_CONTROLSGROUP:Class = ControlsGroup;
       
+      public static const NET_WG_GUI_LOBBY_SETTINGS_FEEDBACK_RIBBONS_CREWPERKSGROUPCONTENT:Class = CrewPerksGroupContent;
+      
       public static const NET_WG_GUI_LOBBY_SETTINGS_FEEDBACK_RIBBONS_DAMAGECONTROLSGROUPCONTENT:Class = DamageControlsGroupContent;
       
       public static const NET_WG_GUI_LOBBY_SETTINGS_FEEDBACK_RIBBONS_GROUPCONTENT:Class = GroupContent;
+      
+      public static const NET_WG_GUI_LOBBY_SETTINGS_FEEDBACK_RIBBONS_INFOVIEW:Class = InfoView;
       
       public static const NET_WG_GUI_LOBBY_SETTINGS_FEEDBACK_RIBBONS_SETTINGSRIBBONCONTAINER:Class = SettingsRibbonContainer;
       

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from typing import Type
 import BattleReplay
 from AvatarInputHandler.gun_marker_ctrl import useDefaultGunMarkers

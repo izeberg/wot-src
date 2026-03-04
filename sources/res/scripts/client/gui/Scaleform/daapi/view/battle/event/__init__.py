@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from frameworks.wulf import WindowLayer
 from gui.Scaleform.daapi.view.battle.event.page import EventBattlePage
 from gui.Scaleform.daapi.settings.views import VIEW_ALIAS

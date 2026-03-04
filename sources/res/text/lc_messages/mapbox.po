@@ -31,42 +31,6 @@ msgstr "%(start)s–%(end)s"
 msgid "calendarDay/title"
 msgstr "Schedule"
 
-msgid "entryPoint/activeStatus"
-msgstr "Until %(endDate)s"
-
-msgid "entryPoint/dateRange"
-msgstr "%(month1)s %(day1)s - %(month2)s %(day2)s"
-
-msgid "entryPoint/endDate"
-msgstr "Until %(month)s %(day)s"
-
-msgid "entryPoint/lessMinute"
-msgstr "<1 min"
-
-msgid "entryPoint/notPrimeTimes/status"
-msgstr "Battles will be available soon"
-
-msgid "entryPoint/seasonFinished/status"
-msgstr "Battles have ended"
-
-msgid "entryPoint/title"
-msgstr "RECON MISSION"
-
-msgid "entryPoint/tooltip/alert/body"
-msgstr ""
-"Weather visual effects depend on your general graphics settings. At low "
-"graphics settings, visual artifacts and issues may occur. We recommend "
-"selecting the highest graphics setting for the best experience possible, "
-"provided that your computer specs meet the requirements. The mode demands "
-"high computer performance. The FPS rate may decrease during intensive "
-"fighting."
-
-msgid "entryPoint/tooltip/alert/header"
-msgstr "Highest graphics settings recommended"
-
-msgid "entryPoint/undefined/status"
-msgstr "Battles will be available soon"
-
 msgid "headerButtons/fightBtn/tooltip/battlesEnded/header"
 msgstr "Unable to Enter Battle"
 

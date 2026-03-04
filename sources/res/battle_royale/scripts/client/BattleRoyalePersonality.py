@@ -9,6 +9,7 @@ import gui.customization
 from battle_royale.gui.game_control import registerBRGameControllers
 from gui.prb_control.prb_utils import initHangarGuiConsts
 from battle_royale.gui.game_control.br_season_provider import registerBRSeasonProviderHandler
+from battle_royale import initProgression
 
 def preInit():
     initHangarGuiConsts(hangar_constants, __name__)
@@ -25,6 +26,7 @@ def preInit():
     registerBRSeasonProviderHandler()
     registerBRBattleResultsComposer()
     registerBRHangarPresetGetter()
+    initProgression()
 
 
 def init():

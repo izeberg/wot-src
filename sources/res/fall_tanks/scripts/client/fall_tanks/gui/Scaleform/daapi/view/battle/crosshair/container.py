@@ -1,0 +1,9 @@
+from __future__ import absolute_import
+from gui.Scaleform.daapi.view.battle.shared.crosshair.container import CrosshairPanelContainer
+from fall_tanks.gui.Scaleform.daapi.view.battle.crosshair import plugins
+
+class FallTanksCrosshairPanelContainer(CrosshairPanelContainer):
+
+    def _getPlugins(self):
+        commonPlugins = super(FallTanksCrosshairPanelContainer, self)._getPlugins()
+        return plugins.updatePlugins(commonPlugins)

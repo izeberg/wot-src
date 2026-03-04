@@ -110,10 +110,11 @@ package net.wg.gui.battle.views.vehicleMarkers
          super.onDispose();
       }
       
-      override protected function prepareOffsets() : void
+      override protected function prepareOffsets() : Array
       {
-         super.prepareOffsets();
-         offsets.unshift(0);
+         var _loc1_:Array = super.prepareOffsets();
+         _loc1_.unshift(0);
+         return _loc1_;
       }
       
       override protected function initialDrawParts() : void

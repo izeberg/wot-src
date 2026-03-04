@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.impl.dialogs.sub_views.common.simple_text import SimpleText
 from gui.impl.gen import R
 

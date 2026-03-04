@@ -1,4 +1,6 @@
+from __future__ import absolute_import
 import typing
+from future.utils import viewitems
 from collections import defaultdict
 import GUI, Math
 from gui.Scaleform.daapi.view.meta.LobbyVehicleMarkerViewMeta import LobbyVehicleMarkerViewMeta
@@ -151,7 +153,7 @@ class LobbyVehicleMarkerView(LobbyVehicleMarkerViewMeta):
         return
 
     def __destroyAllMarkers(self):
-        for k, marker in self.__markersCache.iteritems():
+        for k, marker in viewitems(self.__markersCache):
             self.as_removeMarkerS(k)
             if marker is not None:
                 marker.markerSetActive(False)

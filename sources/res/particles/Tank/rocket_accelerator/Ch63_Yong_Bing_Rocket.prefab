@@ -499,6 +499,20 @@
 			</component>
 		</ComponentPool>
 		<ComponentPool>
+			<type>DistToTerrainComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>0708661f-24b7-49cc-b913-515b99129f54</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>transfromLink</name>
+						<link>0708661f-24b7-49cc-b913-515b99129f54</link>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
 			<type>VSEComponent</type>
 			<version>1</version>
 			<component>

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, typing
 from account_helpers.settings_core.settings_constants import GRAPHICS
 import BattleReplay, BigWorld, WWISE
@@ -128,7 +129,7 @@ class _BasePostmortemPanel(PostmortemPanelMeta):
             if code in _ALLOWED_EQUIPMENT_DEATH_CODES:
                 pass
             elif equipment is not None:
-                if not self.sessionProvider.arenaVisitor.getArenaBonusType() == ARENA_BONUS_TYPE.COMP7 and not self.sessionProvider.arenaVisitor.gui.isInEpicRange():
+                if self.sessionProvider.arenaVisitor.getArenaBonusType() != ARENA_BONUS_TYPE.COMP7 and not self.sessionProvider.arenaVisitor.gui.isInEpicRange():
                     entityID = 0
                 code = ('_').join((code, equipment.messagePostfix))
         elif postfix:
@@ -340,10 +341,10 @@ class PostmortemPanel(_SummaryPostmortemPanel):
             if self._maxHealth != 0 and self._maxHealth >= value:
                 self._setHealthPercent(value)
                 self._updateVehicleInfo()
-            if BattleReplay.g_replayCtrl.isPlaying and value > 0 and self._maxHealth != 0 and self._maxHealth >= value:
+            if BattleReplay.g_replayCtrl.isPlaying and 0 < value <= self._maxHealth:
                 try:
                     self.as_hideComponentsS()
-                except:
+                except Exception:
                     pass
 
                 self.resetDeathInfo()
@@ -364,7 +365,7 @@ class PostmortemPanel(_SummaryPostmortemPanel):
         self._deathAlreadySet = False
         try:
             self.as_hideComponentsS()
-        except:
+        except Exception:
             pass
 
         self.resetDeathInfo()
