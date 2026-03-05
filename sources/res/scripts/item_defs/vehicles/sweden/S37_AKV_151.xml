@@ -3,10 +3,10 @@
 	<xmlns:xmlref>http://bwt/xmlref</xmlns:xmlref>
 	<crew>
 		<commander/>
-		<gunner>loader</gunner>
-		<gunner>loader</gunner>
+		<gunner/>
 		<driver/>
 		<radioman/>
+		<loader/>
 	</crew>
 	<supplySlots>4 1 1 6 6 6 7 8 8 8</supplySlots>
 	<postProgressionTree>role_SPG</postProgressionTree>
@@ -3897,7 +3897,7 @@
 					<!--BW_String-->
 				</repairCost>
 			</turretRotatorHealth>
-			<circularVisionRadius>270</circularVisionRadius>
+			<circularVisionRadius>290</circularVisionRadius>
 			<surveyingDeviceHealth>
 				<maxHealth>90</maxHealth>
 				<maxRegenHealth>45</maxRegenHealth>

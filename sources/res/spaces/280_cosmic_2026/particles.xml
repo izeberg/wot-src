@@ -118,8 +118,18 @@
 			<shader>\data\shaders\ps_long.fx</shader>
 			<texture>particles/content_forward/PFX_textures/eff_tex_h25_portal.dds</texture>
 		</preload>
-		<fn_effect_bin>particles/environment/interior/280_cosmic_geyser.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/280_cosmic_geyser_small.eff</fn_effect_bin>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_forward/pfx_textures/trail.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_forward/PFX_textures/trail_2.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_tex_trail.dds</texture>
+		</preload>
 		<fn_effect_bin>particles/environment/interior/280_cosm_geyser_bubbles.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/280_cosm_coral_ray.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/280_cosm_coral_ray_active.eff</fn_effect_bin>
@@ -139,30 +149,50 @@
 		<fn_effect_bin>particles/environment/interior/280_cosm_portal_flash.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/280_cosm_abilities_unknow_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/shells_eff/cosm_stun_debuff.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/cosm_event/ability_shield.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/280_cosm_vehicle_boost_01.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/280_cosm_abilities_boost_smoke_burst_01.eff</fn_effect_bin>
+		<fn_effect_bin>particles/tank/exhaust/cosmic_exhaust/280_cosm_pepelac_boost.eff</fn_effect_bin>
+		<fn_effect_bin>particles/tank/exhaust/cosmic_exhaust/280_cosm_pepelac_boost_2.eff</fn_effect_bin>
+		<fn_effect_bin>particles/tank/exhaust/cosmic_exhaust/280_cosm_pepelac_boost_3.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/280_cosm_coral_tank_ray_pc.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/280_cosm_black_hole_01.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/280_cosm_black_hole_02.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/280_cosm_abilities_spawn_dust_01.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/280_cosmic_glitch_s.eff</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/buildings/hd_env_evt_c26_0005_plants_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/buildings/hd_env_evt_c26_0005_plants_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/buildings/hd_env_evt_c26_0005_plants_03.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/buildings/hd_env_evt_c26_0005_plants_04.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/cosm_event/ability_shield.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/cosm_event/ability_teleport.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/cosm_event/ability_teleport_in.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/cosm_event/ability_teleport_out.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/cosm_event/ability_teleport_out_tank.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/interior/280_cosm_abilities_boost_smoke_burst_01.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/interior/280_cosm_abilities_spawn_dust_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/interior/280_cosm_abilities_unknow_01.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/interior/280_cosm_black_hole_01.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/interior/280_cosm_black_hole_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/interior/280_cosm_coral_damage.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/interior/280_cosm_coral_ray.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/interior/280_cosm_coral_ray_active.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/interior/280_cosm_coral_ray_in.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/interior/280_cosm_coral_ray_out.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/interior/280_cosm_coral_tank_ray.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/interior/280_cosm_coral_tank_ray_pc.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/interior/280_cosm_geyser_bubbles.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/interior/280_cosm_mina.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/interior/280_cosm_mina_installation.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/interior/280_cosm_portal_flash.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/pfx/environment/interior/280_cosmic_geyser.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/interior/280_cosm_vehicle_boost_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/interior/280_cosmic_geyser_26.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/pfx/environment/interior/280_cosmic_geyser_small.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/interior/280_cosmic_geyser_small_26.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/interior/280_cosmic_glitch_s.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/shells_eff/cosm_stun_debuff.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/tank/exhaust/cosmic_exhaust/280_cosm_pepelac_boost.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/tank/exhaust/cosmic_exhaust/280_cosm_pepelac_boost_2.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/tank/exhaust/cosmic_exhaust/280_cosm_pepelac_boost_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/environment/buildings/hd_env_evt_c26_0005_plants_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/buildings/hd_env_evt_c26_0005_plants_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/buildings/hd_env_evt_c26_0005_plants_03.eff</fn_effect_bin>
@@ -181,6 +211,14 @@
 		<preload>
 			<shader>data/shaders/ps.fx</shader>
 			<texture>particles/content_forward/pfx_textures/plasma_sparks.dds</texture>
+		</preload>
+		<preload>
+			<shader>data/shaders/ps.fx</shader>
+			<texture>particles/content_forward/pfx_textures/glitch.dds</texture>
+		</preload>
+		<preload>
+			<shader>data/shaders/ps_shimmer.fx</shader>
+			<texture>particles/content_forward/pfx_textures/bricks.dds</texture>
 		</preload>
 	</forward>
 	<deferred>
@@ -341,8 +379,22 @@
 			<shader>\data\shaders\ps_long.fx</shader>
 			<texture>particles/content_deferred/PFX_textures/sparks_3.dds</texture>
 		</preload>
-		<fn_effect_bin>particles/environment/interior/280_cosmic_geyser.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/280_cosmic_geyser_small.eff</fn_effect_bin>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_tex_h25_portal.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/pfx_textures/trail.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/trail_2.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_tex_trail.dds</texture>
+		</preload>
 		<fn_effect_bin>particles/environment/interior/280_cosm_geyser_bubbles.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/280_cosm_coral_ray.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/280_cosm_coral_ray_active.eff</fn_effect_bin>
@@ -362,17 +414,42 @@
 		<fn_effect_bin>particles/environment/interior/280_cosm_portal_flash.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/280_cosm_abilities_unknow_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/shells_eff/cosm_stun_debuff.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/cosm_event/ability_shield.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/280_cosm_vehicle_boost_01.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/280_cosm_abilities_boost_smoke_burst_01.eff</fn_effect_bin>
+		<fn_effect_bin>particles/tank/exhaust/cosmic_exhaust/280_cosm_pepelac_boost.eff</fn_effect_bin>
+		<fn_effect_bin>particles/tank/exhaust/cosmic_exhaust/280_cosm_pepelac_boost_2.eff</fn_effect_bin>
+		<fn_effect_bin>particles/tank/exhaust/cosmic_exhaust/280_cosm_pepelac_boost_3.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/cosm_event/ability_teleport.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/cosm_event/ability_teleport_in.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/cosm_event/ability_teleport_out.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/cosm_event/ability_teleport_out_tank.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/280_cosm_coral_tank_ray_pc.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/280_cosm_black_hole_01.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/280_cosm_black_hole_02.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/280_cosm_abilities_spawn_dust_01.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/280_cosmic_glitch_s.eff</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/buildings/hd_env_evt_c26_0005_plants_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/buildings/hd_env_evt_c26_0005_plants_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/buildings/hd_env_evt_c26_0005_plants_03.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/buildings/hd_env_evt_c26_0005_plants_04.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/cosm_event/ability_shield.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/cosm_event/ability_teleport.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/cosm_event/ability_teleport_in.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/cosm_event/ability_teleport_out.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/cosm_event/ability_teleport_out_tank.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/interior/280_cosm_abilities_boost_smoke_burst_01.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/interior/280_cosm_abilities_spawn_dust_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/interior/280_cosm_abilities_unknow_01.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/interior/280_cosm_black_hole_01.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/interior/280_cosm_black_hole_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/interior/280_cosm_coral_damage.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/interior/280_cosm_coral_ray.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/interior/280_cosm_coral_ray_active.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/interior/280_cosm_coral_ray_in.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/interior/280_cosm_coral_ray_out.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/interior/280_cosm_coral_tank_ray.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/interior/280_cosm_coral_tank_ray_pc.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/interior/280_cosm_fish.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/interior/280_cosm_fish_2.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/interior/280_cosm_geyser_bubbles.vfx</fn_effect_bin>
@@ -383,15 +460,17 @@
 		<fn_effect_bin>particles/content_deferred/pfx/environment/interior/280_cosm_portal_start.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/interior/280_cosm_portal_trail.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/interior/280_cosm_spores.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/pfx/environment/interior/280_cosmic_geyser.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/interior/280_cosm_vehicle_boost_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/interior/280_cosmic_geyser_26.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/pfx/environment/interior/280_cosmic_geyser_small.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/interior/280_cosmic_geyser_small_26.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/interior/280_cosmic_glitch.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/interior/280_cosmic_glitch_s.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/interior/280_cosmic_waterfall_crab.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/interior/280_cosmic_waterfall_splash.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/shells_eff/cosm_stun_debuff.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/tank/exhaust/cosmic_exhaust/280_cosm_pepelac_boost.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/tank/exhaust/cosmic_exhaust/280_cosm_pepelac_boost_2.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/tank/exhaust/cosmic_exhaust/280_cosm_pepelac_boost_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/environment/buildings/hd_env_evt_c26_0005_plants_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/buildings/hd_env_evt_c26_0005_plants_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/buildings/hd_env_evt_c26_0005_plants_03.eff</fn_effect_bin>

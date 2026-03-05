@@ -202,32 +202,26 @@ class Videos(DynAccessor):
 
         class _cosmic_2026(DynAccessor):
             __slots__ = ()
-            A156_T54_2022 = DynAccessor(108117)
-            Ch40_WZ120G_FT = DynAccessor(108118)
-            G171_E77_02 = DynAccessor(108119)
-            GB110_FV4201_Chieftain_Prototype = DynAccessor(108120)
-            GB110_FV4201_Chieftain_Prototype_B = DynAccessor(108121)
-            intro = DynAccessor(108122)
-            R239_ST_Molot_02 = DynAccessor(108123)
+            G171_E77_02 = DynAccessor(108117)
+            GB110_FV4201_Chieftain_Prototype_B = DynAccessor(108118)
+            intro = DynAccessor(108119)
+            R239_ST_Molot_02 = DynAccessor(108120)
 
         cosmic_2026 = _cosmic_2026()
 
         class _cosmic_2026_2(DynAccessor):
             __slots__ = ()
-            A146_TL_7_120 = DynAccessor(108124)
-            Ch58_111_Vz51 = DynAccessor(108125)
-            Cz37_Vz_59_Dravec = DynAccessor(108126)
-            F131_Coutelas = DynAccessor(108127)
-            GB141_Celestial_2_51 = DynAccessor(108128)
-            intro = DynAccessor(108129)
-            R239_ST_Molot = DynAccessor(108130)
+            F131_Coutelas = DynAccessor(108121)
+            GB141_Celestial_2_51 = DynAccessor(108122)
+            intro = DynAccessor(108123)
+            R239_ST_Molot = DynAccessor(108124)
 
         cosmic_2026_2 = _cosmic_2026_2()
 
         class _mtl_universal(DynAccessor):
             __slots__ = ()
-            G164_Kpz_Pr_68_P = DynAccessor(108131)
-            Pl35_CS_57_Sokol = DynAccessor(108132)
+            G164_Kpz_Pr_68_P = DynAccessor(108125)
+            Pl35_CS_57_Sokol = DynAccessor(108126)
 
         mtl_universal = _mtl_universal()
 
@@ -235,48 +229,48 @@ class Videos(DynAccessor):
 
     class _newbie_start_page(DynAccessor):
         __slots__ = ()
-        option_1 = DynAccessor(108133)
-        option_2 = DynAccessor(108134)
-        option_3 = DynAccessor(108135)
+        option_1 = DynAccessor(108127)
+        option_2 = DynAccessor(108128)
+        option_3 = DynAccessor(108129)
 
     newbie_start_page = _newbie_start_page()
 
     class _paragons(DynAccessor):
         __slots__ = ()
-        A150_MBT_B = DynAccessor(108136)
-        Ch57_BZT_70 = DynAccessor(108137)
-        F134_ARL_Projet_F = DynAccessor(108138)
-        G184_EisBaer = DynAccessor(108139)
-        GB140_Champion = DynAccessor(108140)
-        R124_Object_279 = DynAccessor(108141)
+        A150_MBT_B = DynAccessor(108130)
+        Ch57_BZT_70 = DynAccessor(108131)
+        F134_ARL_Projet_F = DynAccessor(108132)
+        G184_EisBaer = DynAccessor(108133)
+        GB140_Champion = DynAccessor(108134)
+        R124_Object_279 = DynAccessor(108135)
 
     paragons = _paragons()
 
     class _personal_mission(DynAccessor):
         __slots__ = ()
-        intro_video = DynAccessor(108142)
-        operation_10 = DynAccessor(108143)
-        operation_8 = DynAccessor(108144)
-        operation_9 = DynAccessor(108145)
-        operation_99 = DynAccessor(108146)
-        video_operations_person = DynAccessor(108147)
+        intro_video = DynAccessor(108136)
+        operation_10 = DynAccessor(108137)
+        operation_8 = DynAccessor(108138)
+        operation_9 = DynAccessor(108139)
+        operation_99 = DynAccessor(108140)
+        video_operations_person = DynAccessor(108141)
 
     personal_mission = _personal_mission()
 
     class _platoon(DynAccessor):
         __slots__ = ()
-        VoiceChat = DynAccessor(108148)
+        VoiceChat = DynAccessor(108142)
 
     platoon = _platoon()
 
     class _startup(DynAccessor):
         __slots__ = ()
-        c_1_41_showreel = DynAccessor(108149)
+        c_1_41_showreel = DynAccessor(108143)
 
     startup = _startup()
 
     class _vehicle(DynAccessor):
         __slots__ = ()
-        A122_TS_5 = DynAccessor(108150)
+        A122_TS_5 = DynAccessor(108144)
 
     vehicle = _vehicle()

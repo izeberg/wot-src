@@ -425,7 +425,7 @@
 					<plan>abilities/base_ability_controller_client</plan>
 				</client>
 			</visualScript>
-			<cooldownSeconds>90</cooldownSeconds>
+			<cooldownSeconds>120</cooldownSeconds>
 			<reuseCount>4</reuseCount>
 			<duration>25</duration>
 			<cooldownAfterRamKill>
@@ -462,7 +462,7 @@
 					<!--BW_String-->
 				</chassisHealthFactor>
 				<vehicle-rotationSpeed>
-					0.33
+					0.44
 					<!--BW_String-->
 				</vehicle-rotationSpeed>
 				<trackRammingDamageFactor>

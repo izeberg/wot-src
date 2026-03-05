@@ -2627,7 +2627,7 @@
 					</aimingTime>
 					<clip>
 						<count>24</count>
-						<rate>240</rate>
+						<rate>260</rate>
 					</clip>
 					<autoShoot>
 						<shotDispersionPerSec>
@@ -2635,7 +2635,10 @@
 							<!--BW_String-->
 						</shotDispersionPerSec>
 						<maxShotDispersion>7</maxShotDispersion>
-						<rate>4</rate>
+						<rate>
+							4.33
+							<!--BW_String-->
+						</rate>
 					</autoShoot>
 					<customizationSlots>
 						<slot>

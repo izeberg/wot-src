@@ -1066,7 +1066,7 @@
 						0.9
 						<!--BW_String-->
 					</defaultPortion>
-					<speed>750</speed>
+					<speed>900</speed>
 					<gravity>
 						9.81
 						<!--BW_String-->
@@ -1085,7 +1085,7 @@
 						<!--BW_String-->
 					</gravity>
 					<maxDistance>720</maxDistance>
-					<piercingPower>206 158</piercingPower>
+					<piercingPower>206 178</piercingPower>
 				</_50mm_JOSvP>
 			</shots>
 		</_50mm_ZK_500>
@@ -1375,13 +1375,13 @@
 						0.9
 						<!--BW_String-->
 					</defaultPortion>
-					<speed>750</speed>
+					<speed>900</speed>
 					<gravity>
 						9.81
 						<!--BW_String-->
 					</gravity>
 					<maxDistance>720</maxDistance>
-					<piercingPower>215 180</piercingPower>
+					<piercingPower>215 190</piercingPower>
 				</_57mm_53_BR_279_T>
 				<_57mm_53_BR_279P_T>
 					<defaultPortion>
@@ -1394,7 +1394,7 @@
 						<!--BW_String-->
 					</gravity>
 					<maxDistance>720</maxDistance>
-					<piercingPower>260 190</piercingPower>
+					<piercingPower>260 221</piercingPower>
 				</_57mm_53_BR_279P_T>
 			</shots>
 		</_57mm_RShR_57_T>

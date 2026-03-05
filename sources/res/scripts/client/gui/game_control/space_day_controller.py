@@ -50,8 +50,8 @@ class SpaceDayController(ISpaceDayController, EventsHandler):
     __slots__ = ('__fadeManager', '__isVideoActive')
     _hangarSpace = dependency.descriptor(IHangarSpace)
     _overlay = dependency.descriptor(IOverlayController)
-    GREETINGS_START_DATE = getTimestampByStrDate('24.02.2026 00:00')
-    GREETINGS_END_DATE = getTimestampByStrDate('05.03.2026 00:00')
+    GREETINGS_START_DATE = getTimestampByStrDate('12.04.2026 00:00')
+    GREETINGS_END_DATE = getTimestampByStrDate('16.04.2026 00:00')
 
     def __init__(self):
         super(SpaceDayController, self).__init__()
