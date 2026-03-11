@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>s1Shape.vertices</vertices>
+			<primitive>s1Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0</identifier>
+					<fx>shaders/experimental/PBS_spawn_effect.fx</fx>
+					<materialKind>108</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Environment/hd_env_EVT_C26_0010_Coral/hd_env_EVT_C26_0010_Coral_01_AM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Environment/hd_env_EVT_C26_0010_Coral/hd_env_EVT_C26_0010_Coral_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Environment/hd_env_EVT_C26_0010_Coral/hd_env_EVT_C26_0010_Coral_01_ANM.dds</Texture>
+					</property>
+					<property>
+						preSpawnTextureMap
+						<Texture>content/Environment/hd_env_EVT_C26_0010_Coral/hd_env_EVT_C26_0010_Coral_01_Position.dds</Texture>
+					</property>
+					<property>
+						spawnContourColor
+						<Vector3>0.000000 0.796078 1.000000</Vector3>
+					</property>
+					<property>
+						spawnContourThickness
+						<Float>0.010000</Float>
+					</property>
+					<property>
+						spawnProgeression
+						<Float>1.100000</Float>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+				</material>
+				<groupOrigin>-0.001118 2.393931 0.091293</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-1.867893 0.500200 -1.689634</min>
+		<max>1.865656 6.237229 1.872219</max>
+	</boundingBox>
+	<customBsp>true</customBsp>
+	<geometrySize>47880</geometrySize>
+	<minUVDensity>0.002939</minUVDensity>
+</root>

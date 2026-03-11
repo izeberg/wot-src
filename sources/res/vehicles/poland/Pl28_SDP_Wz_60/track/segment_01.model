@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
 	<nodelessVisual>vehicles/poland/Pl28_SDP_Wz_60/track/segment_01</nodelessVisual>
+	<visibilityBox>
+		<min>-0.301190 -0.099607 -0.097879</min>
+		<max>0.300005 0.055188 0.097996</max>
+	</visibilityBox>
 </root>

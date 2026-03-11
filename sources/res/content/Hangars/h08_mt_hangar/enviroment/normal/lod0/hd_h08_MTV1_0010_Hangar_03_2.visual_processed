@@ -255,7 +255,7 @@
 					</property>
 					<property>
 						g_tile0Tint
-						<Vector4>0.600000 0.580392 0.568627 1.000000</Vector4>
+						<Vector4>0.478431 0.462745 0.454902 1.000000</Vector4>
 					</property>
 					<property>
 						g_tile1Tint
@@ -288,10 +288,6 @@
 					<property>
 						normalGlossSpecTile2
 						<Texture>content/Hangars/h08_mt_hangar/enviroment/00_Tiles/Sand_Rough_01_GBMT.dds</Texture>
-					</property>
-					<property>
-						g_fakeShadowsAndDetailParams
-						<Vector4>0.500000 0.500000 0.000000 0.000000</Vector4>
 					</property>
 				</material>
 				<groupOrigin>-19.999998 0.347026 -35.000000</groupOrigin>

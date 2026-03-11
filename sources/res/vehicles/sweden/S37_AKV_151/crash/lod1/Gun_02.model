@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/sweden/S37_AKV_151/crash/lod1/Gun_02</nodefullVisual>
+	<parent>vehicles/sweden/S37_AKV_151/crash/lod2/Gun_02</parent>
+	<tank>true</tank>
+	<extent>
+		64.0
+		<!--BW_String-->
+	</extent>
+	<visibilityBox>
+		<min>-1.186282 -0.976391 -3.136110</min>
+		<max>1.186269 1.416737 7.653983</max>
+	</visibilityBox>
+</root>

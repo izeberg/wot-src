@@ -17,6 +17,21 @@
 			<UUID>d05572ff-a7e0-43d2-a085-4a5c0d06e44a</UUID>
 			<flags>0</flags>
 		</GameObject>
+		<GameObject>
+			<name>Sounds</name>
+			<UUID>787535d9-9265-3b95-8c93-52d030ef3329</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>abilityStartSound</name>
+			<UUID>3e1a30dd-ec01-3e7c-90f7-a0196968687e</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>abilityStopSound</name>
+			<UUID>153f52ad-7f17-323d-9b6b-10d1a44260bc</UUID>
+			<flags>0</flags>
+		</GameObject>
 	</GameObjects>
 	<components>
 		<ComponentPool>
@@ -39,6 +54,36 @@
 					<property>
 						<name>Parent</name>
 						<link>fc4033b1-64a6-4586-a21c-8c3de9788178</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>3</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>fc4033b1-64a6-4586-a21c-8c3de9788178</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>4</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>787535d9-9265-3b95-8c93-52d030ef3329</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>5</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>787535d9-9265-3b95-8c93-52d030ef3329</link>
 					</property>
 				</config>
 			</component>
@@ -84,6 +129,60 @@
 			</component>
 			<component>
 				<objectIndex>2</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>3</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>4</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>5</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -245,6 +344,46 @@
 					<property>
 						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
 						<value>1</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>Sound3D</type>
+			<version>1</version>
+			<component>
+				<objectIndex>4</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Object name</name>
+						<value>startSound</value>
+					</property>
+					<property>
+						<name>Event name</name>
+						<value>ability_eisbaer_start</value>
+					</property>
+					<property>
+						<name>AutoStart</name>
+						<value>0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>5</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Object name</name>
+						<value>stopSound</value>
+					</property>
+					<property>
+						<name>Event name</name>
+						<value>ability_eisbaer_stop</value>
+					</property>
+					<property>
+						<name>AutoStart</name>
+						<value>0</value>
 					</property>
 				</config>
 			</component>

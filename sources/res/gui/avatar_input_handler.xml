@@ -60,6 +60,12 @@
 				<!--BW_String-->
 			</range>
 		</caliberImpulses>
+		<autoShootImpulsesCoeffs>
+			<range>
+				0 0.054
+				<!--BW_String-->
+			</range>
+		</autoShootImpulsesCoeffs>
 		<massSensitivity>
 			<range>
 				0 1.3

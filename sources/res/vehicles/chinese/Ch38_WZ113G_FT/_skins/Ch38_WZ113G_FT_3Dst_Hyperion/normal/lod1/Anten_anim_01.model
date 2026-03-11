@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/chinese/Ch38_WZ113G_FT/_skins/Ch38_WZ113G_FT_3Dst_Hyperion/normal/lod2/Anten_anim_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.416485 1.609829 -0.805952</min>
+		<max>-0.079235 2.337551 -0.150104</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/chinese/Ch38_WZ113G_FT/_skins/Ch38_WZ113G_FT_3Dst_Hyperion/normal/lod1/Anten_anim_01</nodefullVisual>
+</root>

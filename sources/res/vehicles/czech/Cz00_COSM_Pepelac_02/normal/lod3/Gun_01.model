@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/czech/Cz00_COSM_Pepelac_02/normal/lod3/Gun_01</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/czech/Cz00_COSM_Pepelac_02/normal/lod4/Gun_01</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-0.338288 -0.231652 -0.814373</min>
+		<max>0.216907 0.356973 1.063385</max>
+	</visibilityBox>
+</root>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/sweden/S42_Kanonvagn_fm_49/normal/lod1/Turret_01</nodefullVisual>
+	<parent>vehicles/sweden/S42_Kanonvagn_fm_49/normal/lod2/Turret_01</parent>
+	<tank>true</tank>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.786532 -0.005318 -1.209768</min>
+		<max>1.365326 1.626862 0.629880</max>
+	</visibilityBox>
+</root>

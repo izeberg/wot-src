@@ -237,7 +237,7 @@ msgid "header/backBtn/descrLabel/collections"
 msgstr "ДА КАЛЕКЦЫІ"
 
 msgid "header/backBtn/descrLabel/eventProgression"
-msgstr " "
+msgstr "?empty?"
 
 msgid "header/backBtn/descrLabel/frontline"
 msgstr "ДА ЛІНІІ ФРОНТУ"
@@ -274,6 +274,9 @@ msgstr "У КРАМУ"
 
 msgid "header/backBtn/descrLabel/storage"
 msgstr "НА СКЛАД"
+
+msgid "header/backBtn/descrLabel/strongholdProgression"
+msgstr "?empty?"
 
 msgid "header/backBtn/descrLabel/vehPostProgression"
 msgstr "ДА ПАЛЯВОЙ МАДЭРНІЗАЦЫІ"

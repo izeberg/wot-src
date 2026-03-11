@@ -49,13 +49,13 @@ msgid "notifications/tokens/timeLeft/days"
 msgstr "%(day)s д %(hour)s гадз"
 
 msgid "notifications/tokens/timeLeft/hours"
-msgstr "%(hour)s гадз %(min)s хв"
+msgstr "%(hour)s гадз. %(min)s хв."
 
 msgid "notifications/tokens/timeLeft/lessMin"
 msgstr "менш за хвіліну"
 
 msgid "notifications/tokens/timeLeft/min"
-msgstr "%(min)s хв"
+msgstr "%(min)s хв."
 
 msgid "notifications/tokens/timer"
 msgstr "Да спісання жэтонаў: %(timeLeft)s"

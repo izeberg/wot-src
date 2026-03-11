@@ -201,7 +201,7 @@
 									<property>
 										<name>Path</name>
 										<isAsset>true</isAsset>
-										<value>vehicles/russian/R239_ST_Molot/Sequence/R239_ST_Molot_Hatch_Sleeve_battle_PC.seq</value>
+										<value>vehicles/russian/R239_ST_Molot/Sequence/R239_ST_Molot_Hatch_Sleeve_battle.seq</value>
 									</property>
 									<property>
 										<name>Properties</name>
@@ -250,66 +250,12 @@
 									</property>
 								</object>
 							</item>
-							<item>
-								<object>
-									<property>
-										<name>Path</name>
-										<isAsset>true</isAsset>
-										<value>vehicles/russian/R239_ST_Molot/Sequence/R239_ST_Molot_Hatch_Sleeve_battle_NPS.seq</value>
-									</property>
-									<property>
-										<name>Properties</name>
-										<object>
-											<property>
-												<name>delay</name>
-												<value>0</value>
-											</property>
-											<property>
-												<name>speed</name>
-												<value>1</value>
-											</property>
-											<property>
-												<name>loop</name>
-												<value>0</value>
-											</property>
-											<property>
-												<name>loopCount</name>
-												<value>-1</value>
-											</property>
-										</object>
-									</property>
-									<property>
-										<name>Clip</name>
-										<value>&lt;Default Clip&gt;</value>
-									</property>
-									<property>
-										<name>LayerName</name>
-										<value>anim_NPC</value>
-									</property>
-									<property>
-										<name>Weight</name>
-										<value>1</value>
-									</property>
-									<property>
-										<name>LOD Scale</name>
-										<value>1</value>
-									</property>
-									<property>
-										<name>Auto Start</name>
-										<value>0</value>
-									</property>
-									<property>
-										<name>Graphics preset</name>
-										<value>2</value>
-									</property>
-								</object>
-							</item>
 						</collection>
 					</property>
 					<property>
 						<name>Path</name>
 						<isAsset>true</isAsset>
-						<value>vehicles/russian/R239_ST_Molot/Sequence/R239_ST_Molot_Hatch_Sleeve_battle_PC.seq</value>
+						<value>vehicles/russian/R239_ST_Molot/Sequence/R239_ST_Molot_Hatch_Sleeve_battle.seq</value>
 					</property>
 					<property>
 						<name>Delay</name>
@@ -335,7 +281,7 @@
 			<version>1</version>
 			<component>
 				<objectIndex>3</objectIndex>
-				<flags>35</flags>
+				<flags>3</flags>
 				<config>
 					<property>
 						<name>Visible in ARCADE MODE</name>
@@ -465,7 +411,7 @@
 					</property>
 					<property>
 						<name>spawnSound</name>
-						<value>R227_Object_407_MZ_hatch_opening</value>
+						<value>R239_ST_Molot_hatch_opening</value>
 					</property>
 					<property>
 						<name>debrisAnimationSequence</name>

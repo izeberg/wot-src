@@ -133,7 +133,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>72000</weight>
-		<maxHealth>2200</maxHealth>
+		<maxHealth>2100</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>300</maxHealth>
 			<maxRegenHealth>200</maxRegenHealth>
@@ -1387,7 +1387,10 @@
 		</customization>
 		<hangarShadowTexture>vehicles/french/F134_ARL_Projet_F/ARL_Projet_F_HangarShadowMap.dds</hangarShadowTexture>
 		<camouflage>
-			<density>93.440369 92.991997</density>
+			<density>
+				93.44136 92.992332
+				<!--BW_String-->
+			</density>
 			<aoTextureSize>1024 1024</aoTextureSize>
 		</camouflage>
 	</hull>
@@ -3213,7 +3216,7 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<shotDispersionRadius>
-						0.38
+						0.4
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<customizationSlots>
@@ -3298,8 +3301,8 @@
 						<!--BW_String-->
 					</shotOffset>
 					<camouflage>
-						<density>95.153328 97.850113</density>
-						<aoTextureSize>512 512</aoTextureSize>
+						<density>95.153656 97.849457</density>
+						<aoTextureSize>1024 1024</aoTextureSize>
 					</camouflage>
 				</_138mm_Canon_Mle1946>
 			</guns>
@@ -3799,12 +3802,12 @@
 			</customization>
 			<wwturretRotatorSoundManual>tur_mech_trav</wwturretRotatorSoundManual>
 			<physicsShape>
-				1.117 -0.274 1 0 0.884 0.176 0.626 0.654 0.315 0.498 0.04 0.489 0.103 0.543 0
+				1 0 1 0 0.808 0.129 0.626 0.654 0.315 0.498 0.04 0.489 0.103 0.543 0
 				<!--BW_String-->
 			</physicsShape>
 			<camouflage>
-				<density>108.238594 108.228752</density>
-				<aoTextureSize>1024 512</aoTextureSize>
+				<density>108.684242 108.684776</density>
+				<aoTextureSize>1024 1024</aoTextureSize>
 			</camouflage>
 		</Turret_1_F134_ARL_Projet_F>
 	</turrets0>

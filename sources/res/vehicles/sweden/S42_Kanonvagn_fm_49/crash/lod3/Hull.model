@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/sweden/S42_Kanonvagn_fm_49/crash/lod4/Hull</parent>
+	<tank>true</tank>
+	<extent>192.000000</extent>
+	<nodefullVisual>vehicles/sweden/S42_Kanonvagn_fm_49/crash/lod3/Hull</nodefullVisual>
+	<visibilityBox>
+		<min>-1.581687 -0.919387 -3.268551</min>
+		<max>1.578701 1.305395 3.141935</max>
+	</visibilityBox>
+</root>

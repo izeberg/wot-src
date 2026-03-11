@@ -439,9 +439,9 @@ msgstr ""
 
 msgid "action/full/exchangeRate"
 msgstr ""
-"Абмяняйце золата на срэбра па выгадным курсе %(discount)s. Такім чынам вы "
-"зэканоміце час на заробак срэбра і хутчэй купіце жаданую машыну, дарагое "
-"абсталяванне і г.д."
+"Абмяняйце золата на срэбра па выгадным курсе %(discount)s. Такім чынам вы "
+"зэканоміце час на заробак срэбра і хутчэй купіце жаданую машыну, дарагое "
+"абсталяванне і г.д."
 
 msgid "action/full/femalePassportChangeCost"
 msgstr ""
@@ -1460,7 +1460,7 @@ msgid "dailyQuests/bonusQuest/bonusMissionTitle"
 msgstr "Бонусная задача"
 
 msgid "dailyQuests/bonusQuest/countDown_hrs"
-msgstr "Заканчваецца праз %H гадз %M хв"
+msgstr "Заканчваецца праз %H гадз %M хв."
 
 msgid "dailyQuests/bonusQuest/countDown_minSec"
 msgstr "Заканчваецца праз %MM:%SS"
@@ -1580,13 +1580,13 @@ msgstr ""
 "у вас з'яўляецца магчымасць замяніць нежаданую задачу на іншую выпадковую."
 
 msgid "dailyQuests/missionSwitch/tooltip/body/desc_hrs"
-msgstr "Кожныя %H гадз"
+msgstr "Кожныя %H гадз."
 
 msgid "dailyQuests/missionSwitch/tooltip/body/desc_hrs_min"
-msgstr "Кожныя %H гадз і %M хв"
+msgstr "Кожныя %H гадз і %M хв."
 
 msgid "dailyQuests/missionSwitch/tooltip/body/desc_min_only"
-msgstr "Кожныя %M хв"
+msgstr "Кожныя %M хв."
 
 msgid "dailyQuests/missionSwitch/tooltip/header"
 msgstr "Замена задачы недаступная"
@@ -2140,8 +2140,8 @@ msgstr "Рыкашэты ад супраціўніка"
 
 msgid "details/conditions/cumulative/innerModuleCritCount"
 msgstr ""
-"Сума пашкоджаных або выведзеных са строю ўнутраных модуляў, а таксама "
-"параненых танкістаў экіпажу супраціўніка"
+"Сума пашкоджаных або выведзеных са строю ўнутраных модуляў, а таксама "
+"параненых танкістаў экіпажу праціўніка"
 
 msgid "details/conditions/cumulative/innerModuleDestrCount"
 msgstr ""
@@ -2658,7 +2658,7 @@ msgid "details/conditions/postBattle/dailyReset/timeFmt"
 msgstr "%H:%M"
 
 msgid "details/conditions/postBattle/deltaDailyReset/timeFmt"
-msgstr "%H гадз %M хв"
+msgstr "%H гадз %M хв."
 
 msgid "details/conditions/postBattle/separator"
 msgstr "У кожным баі:"
@@ -3803,9 +3803,6 @@ msgstr "Медаль Біёта"
 msgid "details/dossier/medalBrothersInArms"
 msgstr "«Таварышы па зброі»"
 
-msgid "details/dossier/medalBrunoPietro"
-msgstr "Медаль Фокіна"
-
 msgid "details/dossier/medalBurda"
 msgstr "Медаль Бурды"
 
@@ -3824,6 +3821,15 @@ msgstr "Ступень медаля Ікінза"
 msgid "details/dossier/medalFadin"
 msgstr "Медаль Фадзіна"
 
+msgid "details/dossier/medalFokin"
+msgstr "Медаль Фокіна"
+
+msgid "details/dossier/medalFomin"
+msgstr "Медаль Фаміна"
+
+msgid "details/dossier/medalGavryushov"
+msgstr "Медаль Гаўрушына"
+
 msgid "details/dossier/medalGudz"
 msgstr "Ступень медаля Гудзя"
 
@@ -3835,6 +3841,9 @@ msgstr "Медаль Хазава"
 
 msgid "details/dossier/medalKolobanov"
 msgstr "Медаль Калабанава"
+
+msgid "details/dossier/medalKrockenberger"
+msgstr "Медаль Крокенбергера"
 
 msgid "details/dossier/medalKrysov"
 msgstr "Медаль Крысава"
@@ -3860,9 +3869,6 @@ msgstr "Медаль Орліка"
 msgid "details/dossier/medalOskin"
 msgstr "Медаль Оськіна"
 
-msgid "details/dossier/medalPascucci"
-msgstr "Медаль Слюняева"
-
 msgid "details/dossier/medalPoppel"
 msgstr "Ступень медаля Попеля"
 
@@ -3871,6 +3877,9 @@ msgstr "Медаль Рэдлі-Уолтэрза"
 
 msgid "details/dossier/medalSamokhin"
 msgstr "Ступень медаля Самохіна"
+
+msgid "details/dossier/medalSlyunyayev"
+msgstr "Медаль Слюняева"
 
 msgid "details/dossier/medalTrubin"
 msgstr "Медаль Трубіна"
@@ -4114,7 +4123,7 @@ msgstr "Да сканчэння менш за %(minutes)d хв"
 msgid "details/header/comeToEndInMinutes/separated"
 msgstr ""
 "Да сканчэння менш за\n"
-"%(minutes)d хв"
+"%(minutes)d хв."
 
 msgid "details/header/completion/daily"
 msgstr "Колькасць даступных выкананняў за суткі: %(count)d."
@@ -4672,31 +4681,31 @@ msgid "epicQuest/countDown/remainingText"
 msgstr "Да скідвання прагрэсу:"
 
 msgid "general/countdown/text/timer_hrs"
-msgstr "Замена даступная праз %H ч %M хв"
+msgstr "Замена даступная праз %H гадз. %M хв."
 
 msgid "general/countdown/text/timer_hrs_only"
-msgstr "Замена даступная праз %H гадз"
+msgstr "Замена даступная праз %H гадз."
 
 msgid "general/countdown/text/timer_min"
 msgstr "Замена даступная праз %MM:%SS"
 
 msgid "general/countdown/text/timer_min_only"
-msgstr "Замена даступная праз %M хв"
+msgstr "Замена даступная праз %M хв."
 
 msgid "general/countdown/text/timer_sec"
 msgstr "Замена даступная праз %S с"
 
 msgid "general/countdown/timer_hrs"
-msgstr "%H гадз %M хв"
+msgstr "%H гадз %M хв."
 
 msgid "general/countdown/timer_hrs_only"
-msgstr "%H гадз"
+msgstr "%H гадз."
 
 msgid "general/countdown/timer_min"
 msgstr "%MM:%SS"
 
 msgid "general/countdown/timer_min_only"
-msgstr "%M хв"
+msgstr "%M хв."
 
 msgid "general/countdown/timer_sec"
 msgstr "%S с"
@@ -4926,22 +4935,22 @@ msgid "item/timer/tillFinish/hours"
 msgstr "Да сканчэння"
 
 msgid "item/timer/tillFinish/lessThanDay"
-msgstr "менш за 1 сут"
+msgstr "менш за 1 сут."
 
 msgid "item/timer/tillFinish/lessThanHour"
 msgstr "менш за гадзіну"
 
 msgid "item/timer/tillFinish/longFormat"
-msgstr "%(hours)s гадз %(min)s хв"
+msgstr "%(hours)s гадз %(min)s хв."
 
 msgid "item/timer/tillFinish/longFullFormat"
-msgstr "Да сканчэння %(hours)s гадз"
+msgstr "Да сканчэння %(hours)s гадз."
 
 msgid "item/timer/tillFinish/longFullFormatMin"
 msgstr "Да сканчэння %(minutes)s хв."
 
 msgid "item/timer/tillFinish/onlyHours"
-msgstr "%(hours)s гадз"
+msgstr "%(hours)s гадз."
 
 msgid "item/timer/tillFinish/shortFormat"
 msgstr "%(min)s хв."
@@ -4953,13 +4962,13 @@ msgid "item/timer/tillStart"
 msgstr "Будзе даступная"
 
 msgid "item/timer/tillStart/days"
-msgstr "праз %(day)s сут %(hour)s"
+msgstr "праз %(day)s сут. %(hour)s гадз."
 
 msgid "item/timer/tillStart/hours"
-msgstr "праз %(hour)s гадз %(min)s хв"
+msgstr "праз %(hour)s гадз %(min)s хв."
 
 msgid "item/timer/tillStart/min"
-msgstr "праз %(min)s хв"
+msgstr "праз %(min)s хв."
 
 msgid "item/type/action"
 msgstr "Акцыя"
@@ -5646,8 +5655,8 @@ msgstr ""
 
 msgid "premiumQuests/notPremiumAccount/paragraphSmall"
 msgstr ""
-"Прэміум акаўнт адкрывае доступ да трох штодзённых прэміум задач, а таксама "
-"дае іншыя перавагі: +50% да заробку досведу і срэбра, сховішча срэбра і г.д."
+"Прэміум акаўнт адкрывае доступ да трох штодзённых прэміум задач, а таксама "
+"дае іншыя перавагі: +50% да заробку досведу і срэбра, сховішча срэбра і г.д."
 
 msgid "premiumQuests/notPremiumAccount/title"
 msgstr "Для доступу да задач неабходны прэміум акаўнт."

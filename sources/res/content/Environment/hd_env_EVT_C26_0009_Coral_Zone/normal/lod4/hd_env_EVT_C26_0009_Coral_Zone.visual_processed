@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>s1Shape.vertices</vertices>
+			<primitive>s1Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd1</identifier>
+					<fx>shaders/std_effects/glow.fx</fx>
+					<materialKind>108</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						destBlend
+						<Int>5</Int>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Environment/hd_env_EVT_C26_0009_Coral_Zone/hd_env_EVT_C26_0009_Coral_Zone_BAM.dds</Texture>
+					</property>
+					<property>
+						g_ditherCoeff
+						<Float>5.000000</Float>
+					</property>
+					<property>
+						g_tintColor
+						<Vector4>0.000000 0.368627 0.501961 1.000000</Vector4>
+					</property>
+					<property>
+						selfIllumination
+						<Float>50.000000</Float>
+					</property>
+					<property>
+						selfIlluminationEnvDependent
+						<Float>-1.000000</Float>
+					</property>
+					<property>
+						srcBlend
+						<Int>2</Int>
+					</property>
+				</material>
+				<groupOrigin>0.000000 1.638911 0.000000</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>s_nd0</identifier>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<materialKind>108</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Environment/hd_env_EVT_C26_0009_Coral_Zone/hd_env_EVT_C26_0009_Coral_Zone_BAM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Environment/hd_env_EVT_C26_0009_Coral_Zone/hd_env_EVT_C26_0009_Coral_Zone_BGMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Environment/hd_env_EVT_C26_0009_Coral_Zone/hd_env_EVT_C26_0009_Coral_Zone_BANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.000000 0.764306 0.000000</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-13.597591 -0.142364 -13.669204</min>
+		<max>13.597591 1.680275 13.669204</max>
+	</boundingBox>
+	<customBsp>true</customBsp>
+	<geometrySize>7272</geometrySize>
+	<minUVDensity>0.000298</minUVDensity>
+</root>

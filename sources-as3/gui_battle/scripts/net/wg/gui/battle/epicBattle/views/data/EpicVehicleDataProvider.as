@@ -10,6 +10,8 @@ package net.wg.gui.battle.epicBattle.views.data
    {
       
       private static const MAX_PLAYER_ENTRIES:int = 30;
+      
+      private static const MAX_REACHED_WARNING:String = "[EpicVehicleDataProvider] The maximum number of players ({}) in the team has been reached! Active lane vehicles list can\'t be updated properly.";
        
       
       private var _activeLane:int = -1;
@@ -155,16 +157,21 @@ package net.wg.gui.battle.epicBattle.views.data
          var _loc4_:int = 0;
          _loc2_ = vehicleIDs.length;
          var _loc5_:int = 0;
-         while(_loc5_ < _loc2_)
+         for(; _loc5_ < _loc2_; _loc5_++)
          {
             _loc6_ = this[_loc5_] as DAAPIVehicleInfoVO;
             if(_loc6_ != null && this._epicStats[_loc6_.vehicleID] && this._epicStats[_loc6_.vehicleID].lane == param1 && param1 > 0)
             {
+               if(MAX_PLAYER_ENTRIES <= _loc4_)
+               {
+                  DebugUtils.LOG_WARNING(MAX_REACHED_WARNING.replace("{}",MAX_PLAYER_ENTRIES));
+               }
                this._activeLaneVehicleIDs[_loc4_] = _loc6_.vehicleID;
                addUpdatedIndex(vehicleIDs.indexOf(_loc6_.vehicleID));
                _loc4_ += 1;
+               continue;
+               break;
             }
-            _loc5_++;
          }
       }
       

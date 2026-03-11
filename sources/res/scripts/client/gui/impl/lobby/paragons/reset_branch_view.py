@@ -47,7 +47,7 @@ class ResetBranchView(ViewImpl):
         settings.model = ResetBranchViewModel()
         self.__branchID = branchID
         self.__vehiclesCopy = []
-        self.__vehicleConfiguration = ResetBranchViewModel.VAL_CURRENT
+        self.__vehicleConfiguration = ResetBranchViewModel.CURRENT_VALUE_KEY
         self.__closeCallback = closeCallback
         self.__tutorialStorage = getTutorialGlobalStorage()
         self.__groupInfoFillersByType = {GroupInfoTypes.OPTIONALDEVICES: self.__fillReturnedOptionalDevices, 
@@ -69,6 +69,8 @@ class ResetBranchView(ViewImpl):
           self.__itemsCache.onSyncCompleted, self.__onInventoryUpdated),
          (
           self.__paragonsController.onSettingsChanged, self.__onServerSettingsChanged),
+         (
+          self.__paragonsController.onFeatureStateChanged, self.__onFeatureStateChanged),
          (
           self.viewModel.onConfirm, self.__resetBranch),
          (
@@ -121,8 +123,8 @@ class ResetBranchView(ViewImpl):
         vehicleModel.setBlueprintFragments(self.__paragonsController.getVehicleResetBonusBlueprintsCount(vehComDescr))
 
     def __onInstallVehicleConfiguration(self, event):
-        self.__vehicleConfiguration = event.get(ResetBranchViewModel.VEH_CONFIG_KEY, ResetBranchViewModel.VAL_CURRENT)
-        if self.__vehicleConfiguration == ResetBranchViewModel.VAL_STOCK:
+        self.__vehicleConfiguration = event.get(ResetBranchViewModel.VEHICLE_CONFIGURATION_KEY, ResetBranchViewModel.CURRENT_VALUE_KEY)
+        if self.__vehicleConfiguration == ResetBranchViewModel.STOCK_VALUE_KEY:
             totalCredits = self.__installAutoUnlockedItems()
         else:
             totalCredits = sum(self.__updatePrice(vehicle) for vehicle in self.__paragonsController.getBranchResetVehicles(self.__branchID))
@@ -135,8 +137,12 @@ class ResetBranchView(ViewImpl):
             closeCallback()
         return
 
+    def __onFeatureStateChanged(self, isPaused, isEnabled):
+        if not isEnabled or isPaused:
+            self.__onClose()
+
     def __resetBranch(self):
-        isStock = self.__vehicleConfiguration == ResetBranchViewModel.VAL_STOCK
+        isStock = self.__vehicleConfiguration == ResetBranchViewModel.STOCK_VALUE_KEY
         ctx = {'credits': self.viewModel.getTotalCredits()}
         self.__paragonsController.branches.resetBranch(self.__branchID, isStock, ctx, self.__resetCallback)
 
@@ -160,7 +166,7 @@ class ResetBranchView(ViewImpl):
                 self.viewModel.getResetVehicles().clear()
                 self.__vehiclesCopy = []
                 self.__updateData()
-        self.__onInstallVehicleConfiguration({ResetBranchViewModel.VEH_CONFIG_KEY: self.__vehicleConfiguration})
+        self.__onInstallVehicleConfiguration({ResetBranchViewModel.VEHICLE_CONFIGURATION_KEY: self.__vehicleConfiguration})
 
     def __updateData(self):
         with self.viewModel.transaction() as (tx):
@@ -168,6 +174,8 @@ class ResetBranchView(ViewImpl):
             tx.setResetBranchesCount(self.__paragonsController.branches.resetBranchesCount)
             tx.setMaxResetBranchesCount(self.__paragonsController.branches.maxResetBranchesCount)
             tx.setTotalCredits(self.__paragonsController.branches.getBranchResetCompensation(self.__branchID))
+            tx.setCompleteBonusCoins(self.__paragonsController.getCompleteBonusCoinsForBranch(self.__branchID))
+            tx.setCoinsForBranchReset(self.__paragonsController.getCoinsForBranchReset())
         resetVehiclesArray = self.viewModel.getResetVehicles()
         if not self.__vehiclesCopy:
             for vehicle in self.__paragonsController.getBranchResetVehicles(self.__branchID):

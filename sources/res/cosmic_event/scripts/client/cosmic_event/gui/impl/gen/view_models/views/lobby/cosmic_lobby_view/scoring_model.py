@@ -3,6 +3,7 @@ from frameworks.wulf import ViewModel
 
 class ScoringTypeEnum(Enum):
     SCAN = 'scan'
+    RESEARCH = 'research'
     KILL = 'kill'
     PICKUP = 'pickup'
     RAM = 'ram'
@@ -11,9 +12,9 @@ class ScoringTypeEnum(Enum):
     ASSIST = 'assist'
     FIRSTBLOOD = 'firstBlood'
     KILLSTREAK = 'killStreak'
-    PICKUPMASTER = 'pickupMaster'
-    REVENGE = 'revenge'
-    BOOSTME = 'boostMe'
+    LOOTRESEARCHING = 'lootResearching'
+    LOOTRESEARCHINGDONE = 'lootResearchingDone'
+    LOOTRESEARCHABLEPICKUP = 'lootResearchablePickUp'
 
 
 class ScoringModel(ViewModel):

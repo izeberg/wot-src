@@ -2221,6 +2221,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.techtree.constants.NodeEntityType;
    import net.wg.gui.lobby.techtree.constants.NodeRendererState;
    import net.wg.gui.lobby.techtree.constants.OutLiteral;
+   import net.wg.gui.lobby.techtree.constants.ParagonsTypeStrings;
    import net.wg.gui.lobby.techtree.constants.XpTypeStrings;
    import net.wg.gui.lobby.techtree.controls.ActionButton;
    import net.wg.gui.lobby.techtree.controls.AnimatedTextButton;
@@ -2249,6 +2250,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.techtree.controls.NationsButtonBar;
    import net.wg.gui.lobby.techtree.controls.NodeComponent;
    import net.wg.gui.lobby.techtree.controls.NodeLock;
+   import net.wg.gui.lobby.techtree.controls.ParagonsInfo;
    import net.wg.gui.lobby.techtree.controls.PremiumShopButton;
    import net.wg.gui.lobby.techtree.controls.ResearchRootExperience;
    import net.wg.gui.lobby.techtree.controls.TechTreeTitle;
@@ -7493,6 +7495,8 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_LOBBY_TECHTREE_CONSTANTS_OUTLITERAL:Class = OutLiteral;
       
+      public static const NET_WG_GUI_LOBBY_TECHTREE_CONSTANTS_PARAGONSTYPESTRINGS:Class = ParagonsTypeStrings;
+      
       public static const NET_WG_GUI_LOBBY_TECHTREE_CONSTANTS_XPTYPESTRINGS:Class = XpTypeStrings;
       
       public static const NET_WG_GUI_LOBBY_TECHTREE_CONTROLS_ACTIONBUTTON:Class = ActionButton;
@@ -7548,6 +7552,8 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_LOBBY_TECHTREE_CONTROLS_NODECOMPONENT:Class = NodeComponent;
       
       public static const NET_WG_GUI_LOBBY_TECHTREE_CONTROLS_NODELOCK:Class = NodeLock;
+      
+      public static const NET_WG_GUI_LOBBY_TECHTREE_CONTROLS_PARAGONSINFO:Class = ParagonsInfo;
       
       public static const NET_WG_GUI_LOBBY_TECHTREE_CONTROLS_PREMIUMSHOPBUTTON:Class = PremiumShopButton;
       

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/czech/Cz00_COSM_Gravizapa_02/normal/lod3/Turret_01</parent>
+	<tank>true</tank>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-0.360034 0.000291 -0.786381</min>
+		<max>0.278018 0.803712 0.268989</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/czech/Cz00_COSM_Gravizapa_02/normal/lod2/Turret_01</nodefullVisual>
+</root>

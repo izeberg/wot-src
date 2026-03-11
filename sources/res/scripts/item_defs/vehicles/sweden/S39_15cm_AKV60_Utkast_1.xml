@@ -3,17 +3,17 @@
 	<xmlns:xmlref>http://bwt/xmlref</xmlns:xmlref>
 	<crew>
 		<commander/>
-		<gunner>loader</gunner>
-		<gunner>loader</gunner>
+		<gunner/>
 		<driver/>
 		<radioman/>
+		<loader/>
 	</crew>
 	<supplySlots>4 1 1 6 6 6 7 8 8 8</supplySlots>
 	<postProgressionTree>role_SPG</postProgressionTree>
 	<customRoleSlotOptions>3 5</customRoleSlotOptions>
 	<speedLimits>
 		<forward>35</forward>
-		<backward>8</backward>
+		<backward>14</backward>
 	</speedLimits>
 	<invisibility>
 		<moving>
@@ -72,6 +72,10 @@
 		<density>0.935151 0.935151</density>
 	</camouflage>
 	<hull>
+		<fakeTurrets>
+			<lobby>0</lobby>
+			<battle/>
+		</fakeTurrets>
 		<armor>
 			<armor_1>15</armor_1>
 			<armor_2>15</armor_2>
@@ -827,11 +831,11 @@
 			<userString>#sweden_vehicles:Chassis_S39_15cm_AKV60_Utkast_1</userString>
 			<tags/>
 			<level>7</level>
-			<price>20000</price>
+			<price>19500</price>
 			<unlocks>
 				<chassis>
 					Chassis_S39_15cm_AKV60_Utkast_1_2
-					<cost>15000</cost>
+					<cost>16000</cost>
 				</chassis>
 			</unlocks>
 			<armor>
@@ -3283,11 +3287,11 @@
 			<guns>
 				<_152mm_Kanon_M37>
 					shared
-					<maxAmmo>32</maxAmmo>
+					<maxAmmo>36</maxAmmo>
 					<unlocks>
 						<gun>
 							_152mm_Kanon_FM49_L50
-							<cost>20500</cost>
+							<cost>21500</cost>
 						</gun>
 					</unlocks>
 					<armor>
@@ -3325,10 +3329,10 @@
 						<gun>25</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.7
+						0.65
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>30</reloadTime>
+					<reloadTime>28</reloadTime>
 					<aimingTime>5</aimingTime>
 					<invisibilityFactorAtShot>
 						0.143
@@ -3981,7 +3985,13 @@
 				</_152mm_Kanon_M37>
 				<_152mm_Kanon_FM49_L50>
 					shared
-					<maxAmmo>32</maxAmmo>
+					<maxAmmo>36</maxAmmo>
+					<unlocks>
+						<vehicle>
+							S37_AKV_151
+							<cost>185800</cost>
+						</vehicle>
+					</unlocks>
 					<armor>
 						<armor_1>16</armor_1>
 						<armor_2>10</armor_2>
@@ -4017,10 +4027,10 @@
 						<gun>25</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.65
+						0.68
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>36</reloadTime>
+					<reloadTime>32</reloadTime>
 					<aimingTime>5</aimingTime>
 					<invisibilityFactorAtShot>
 						0.143
@@ -4039,7 +4049,7 @@
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
-							2.0
+							2.75
 							<!--BW_String-->
 						</afterShot>
 						<whileGunDamaged>
@@ -4048,18 +4058,16 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<clip>
-						<count>2</count>
-						<rate>12</rate>
+						<count>3</count>
+						<rate>60</rate>
 					</clip>
 					<autoreload>
-						<reloadTime>35 45</reloadTime>
-						<boostFraction>
-							0.5
-							<!--BW_String-->
-						</boostFraction>
-						<boostStartTime>0</boostStartTime>
-						<boostResidueTime>2</boostResidueTime>
+						<reloadTime>22 27 32</reloadTime>
 					</autoreload>
+					<burst>
+						<count>3</count>
+						<rate>60</rate>
+					</burst>
 					<turretYawLimits>-12 12</turretYawLimits>
 					<customizationSlots>
 						<slot>
@@ -5376,7 +5384,7 @@
 			<unlocks>
 				<engine>
 					Rolls_Royce_K60_M1
-					<cost>25000</cost>
+					<cost>19200</cost>
 				</engine>
 			</unlocks>
 		</Rolls_Royce_K60>
@@ -5463,9 +5471,4 @@
 			<!--BW_String-->
 		</alpha>
 	</emblems>
-	<prefabAttachments>
-		<newAttachment0>
-			<attachmentId>31070</attachmentId>
-		</newAttachment0>
-	</prefabAttachments>
 </root>

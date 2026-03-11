@@ -155,6 +155,9 @@ msgstr "E 75 verstärkteketten"
 msgid "Chassis_E50_Ausf_M"
 msgstr "E 50 Ausf. M"
 
+msgid "Chassis_E50_Ausf_M_ISP"
+msgstr "E 50 Ausf. M"
+
 msgid "Chassis_G00_Artilleriebunker"
 msgstr "Дот"
 
@@ -271,6 +274,9 @@ msgstr "leKpz M 41 90 mm"
 msgid "Chassis_G121_Grille_15_L63"
 msgstr "Grille 15"
 
+msgid "Chassis_G121_Grille_15_L63_ISP"
+msgstr "Grille 15"
+
 msgid "Chassis_G122_VK6501H"
 msgstr "VK 65.01 (H)"
 
@@ -382,6 +388,9 @@ msgstr "E 100 Feuerbär"
 msgid "Chassis_G193_Aufgabe_57"
 msgstr "Aufgabe 57"
 
+msgid "Chassis_G194_E_50_GT_Alkett_Prod"
+msgstr "E 50 Alkett"
+
 msgid "Chassis_G196_E_75_Ausf_B_Doppel"
 msgstr "E 75"
 
@@ -463,6 +472,9 @@ msgid "Chassis_JagdTiger_SdKfz_185"
 msgstr "Jagdtiger 8,8"
 
 msgid "Chassis_Leopard1"
+msgstr "Leopard 1"
+
+msgid "Chassis_Leopard1_ISP"
 msgstr "Leopard 1"
 
 msgid "Chassis_Lowe"
@@ -847,6 +859,27 @@ msgstr "E 50 M 7x7"
 msgid "E50_Ausf_M_7x7_short_special"
 msgstr "?empty?"
 
+msgid "E50_Ausf_M_ISP"
+msgstr "E 50 M Выпрабавальны"
+
+msgid "E50_Ausf_M_ISP_descr"
+msgstr ""
+"Адным з патрабаванняў вайскоўцаў да танкаў Е-серыі быў перанос трансмісіі ў "
+"кармавую частку корпуса. Аднак у працэсе распрацоўкі танкаў Е 50 і Е 75 для "
+"паскарэння распрацоўкі была цалкам запазычана кампаноўка маторна-"
+"трансмісійнага аддзялення танка Tiger II, што рабіла немагчымым перанос "
+"трансмісіі ў кармавую частку. E 50 Ausf. M — рэканструкцыя праекта Е 50 з "
+"заднім размяшчэннем трансмісіі."
+
+msgid "E50_Ausf_M_ISP_long_special"
+msgstr "?empty?"
+
+msgid "E50_Ausf_M_ISP_short"
+msgstr "E 50 M (В)"
+
+msgid "E50_Ausf_M_ISP_short_special"
+msgstr "?empty?"
+
 msgid "E50_Ausf_M_descr"
 msgstr ""
 "Адным з патрабаванняў вайскоўцаў да танкаў Е-серыі быў перанос трансмісіі ў "
@@ -984,6 +1017,9 @@ msgstr "FuG Spr. 1"
 
 msgid "FuG_Spr.A"
 msgstr "Fu.Spr.Ger. \"a\""
+
+msgid "Fu_8_Alkett"
+msgstr "Fu 8"
 
 msgid "Fu_8_SE_30_M"
 msgstr "Fu 8 SE 30 M"
@@ -1633,6 +1669,31 @@ msgstr "Выдатная гармата, добрая рухомасць"
 msgid "G121_Grille_15_L63"
 msgstr "Grille 15"
 
+msgid "G121_Grille_15_L63_ISP"
+msgstr "Grille 15 Выпрабавальны"
+
+msgid "G121_Grille_15_L63_ISP_descr"
+msgstr ""
+"Улетку 1942 г. Упраўленне ўзбраенняў сухапутных сіл Германіі заключыла "
+"дагавор з кампаніямі Krupp і Rheinmetall на стварэнне СТ-САУ на шасі танка "
+"Panther. Разглядаліся варыянты ўсталявання 128-мм гарматы K 43 і 150-мм "
+"гаўбіцы sFH 43. Праекты атрымалі абазначэнні Grille 12 і Grille 15, "
+"вылучаліся заднім размяшчэннем баявога аддзялення і адрозніваліся паміж "
+"сабой толькі тыпам артылерыйскай сістэмы. Пазней было прынята патрабаванне "
+"аб усталяванні 150-мм гарматы з даўжынёй рулі ў 63 калібры на Grille 15. "
+"Такая гармата мела магчымасць прабіцця снарадамі 200-мм брані на дыстанцыі "
+"4000 метраў. Аднак работы зацягнуліся, і праект Grille 15 так і застаўся "
+"толькі на паперы."
+
+msgid "G121_Grille_15_L63_ISP_long_special"
+msgstr "?empty?"
+
+msgid "G121_Grille_15_L63_ISP_short"
+msgstr "Grille 15 (В)"
+
+msgid "G121_Grille_15_L63_ISP_short_special"
+msgstr "?empty?"
+
 msgid "G121_Grille_15_L63_descr"
 msgstr ""
 "Улетку 1942 г. Упраўленне ўзбраенняў сухапутных сіл Германіі заключыла "
@@ -1641,7 +1702,7 @@ msgstr ""
 "гаўбіцы sFH 43. Праекты атрымалі абазначэнні Grille 12 і Grille 15, "
 "вылучаліся заднім размяшчэннем баявога аддзялення і адрозніваліся паміж "
 "сабой толькі тыпам артылерыйскай сістэмы. Пазней было прынята патрабаванне "
-"аб усталяванні 150-мм гарматы з даўжынёй рулі ў 63 калібру на Grille 15. "
+"аб усталяванні 150-мм гарматы з даўжынёй рулі ў 63 калібры на Grille 15. "
 "Такая гармата мела магчымасць прабіцця снарадамі 200-мм брані на дыстанцыі "
 "4000 метраў. Аднак работы зацягнуліся, і праект Grille 15 так і застаўся "
 "толькі на паперы."
@@ -2387,7 +2448,7 @@ msgstr "StuG Maus 17 cm"
 
 msgid "G181_StuG_Maus_17cm_descr"
 msgstr ""
-"Звышцяжкі нямецкі танк Pz.Kpfw.Maus першапачаткова не разглядаўся як база для САУ. Сітуацыя змянілася вясной 1944 года, калі звышцяжкі знішчальнік танкаў стаў прыярытэтным напрамкам. Тады ж КБ Krupp распрацавала праект гарматы 17cm StuK L/53. Для стварэння САУ на базе Pz.Kpfw.Maus патрабавалася мінімум змен: замест вежы ўсталёўвалася рубка з нязначнай дапрацоўкай корпуса. Адной з асаблівасцяў САУ была зенітная вежа фірмы Porsche з 30-мм авіяцыйнай аўтаматычнай гарматай MK 108, якой кіраваў камандзір. У ліпені 1944 года праца над гэтым праектам была спынена. Да нашых дзён захаваліся толькі ўрыўкавыя звесткі пра гэты праект.\n"
+"Звышцяжкі нямецкі танк Pz.Kpfw.Maus першапачаткова не разглядаўся як база для САУ. Сітуацыя змянілася вясной 1944 года, калі звышцяжкі знішчальнік танкаў стаў прыярытэтным напрамкам. Тады ж КБ Krupp распрацавала праект гарматы 17cm StuK L/53. Для стварэння САУ на базе Pz.Kpfw.Maus патрабавалася мінімум змен: замест вежы ўсталёўвалася рубка з нязначнай дапрацоўкай корпуса. Адной з асаблівасцей САУ была зенітная вежа фірмы Porsche з 30-мм авіяцыйнай аўтаматычнай гарматай MK 108, якой кіраваў камандзір. У ліпені 1944 года праца над гэтым праектам была спынена. Да нашых дзён захаваліся толькі ўрыўкавыя звесткі пра гэты праект.\n"
 "\n"
 "Характарыстыкі машыны могуць быць зменены без кампенсацыі."
 
@@ -2433,18 +2494,25 @@ msgstr "Eisbär"
 
 msgid "G184_EisBaer_descr"
 msgstr ""
-" \n"
+"Першыя пасляваенныя праекты нямецкіх танкаў новага пакалення з'явіліся ў пачатку 1950-х гадоў. Адным з такіх праектаў быў праект цяжкага танка Eisbär (белы мядзведзь), які прызначаўся перш за ўсё для барацьбы з савецкімі цяжкімі танкамі. Танк Eisbär меў магутную лабавую браню, якая магла вытрымліваць траплянні бранябойных снарадаў савецкіх 100-мм танкавых гармат. Танк узброілі новай магутнай 120-мм гарматай з асобным набіваннем, якая ўпэўнена магла паражаць савецкія танкі на далёкіх дыстанцыях бою. Гармату абсталявалі аўтаматам набівання на 14 стрэлаў, які можна папаўняць падчас бою з боеўкладкі ў корпусе танка. Каб больш эфектыўна працавалася з засад і адваротных схілаў вышынь, танк абсталявалі гідрапнеўматычнай падвескай з магчымасцю змены клірансу і вугла нахілу корпуса. Для барацьбы з перспектыўнымі ўдарнымі верталётамі, якія неўзабаве маглі з'явіцца на ўзбраенні ворага, у вежы ўсталявалі дыстанцыйна кіраваную зенітную ўстаноўку з дзвюх спараных аўтаматычных гармат. Зенітная ўстаноўка кіравалася панарамным прыцэлам камандзіра пры дапамозе электрамеханічных прыводаў.\n"
+"Аднак з развіццём кіраваных супрацьтанкавых ракет погляды на канцэпцыю перспектыўнага танкабудавання ссунуліся ў бок больш лёгкіх, хуткіх і манеўраных машын, што ў выніку паставіла крыж на распрацоўцы цяжкіх танкаў, у тым ліку і на праекце Eisbär.\n"
 "\n"
 "Характарыстыкі машыны могуць быць зменены без кампенсацыі."
 
 msgid "G184_EisBaer_long_special"
-msgstr "?empty?"
+msgstr ""
+"Машына вылучаецца выдатнай мабільнасцю, дакладнай хуткастрэльнай гарматай "
+"і вялікімі вугламі вертыкальнага навядзення, якіх удалося дасягнуць дзякуючы"
+" наяўнасці гідрападвескі. Нізкая забойнасць стрэлу, але выдатны паказчык "
+"пашкоджанняў за хвіліну. Сціплае браніраванне прымушае гуляць асцярожна, "
+"выкарыстоўваючы ўкрыцці і рэльеф мясцовасці. Вывучыўшы асаблівасці машыны, "
+"гулец зможа рэалізоўваць яе патэнцыял надзвычай эфектыўна."
 
 msgid "G184_EisBaer_short"
 msgstr "Eisbär"
 
 msgid "G184_EisBaer_short_special"
-msgstr "?empty?"
+msgstr "Выдатная мабільнасць, высокія пашкоджанні за хвіліну"
 
 msgid "G189_E100_02"
 msgstr "Е 100 Feuerbär"
@@ -2478,17 +2546,41 @@ msgstr "Aufgabe 57"
 
 msgid "G193_Aufgabe_57_descr"
 msgstr ""
-" \n"
+"50-я гады XX стагоддзя сталі пачаткам адраджэння нямецкага танкабудавання. З'явіліся першыя эскізныя праекты, прапановы, часта даволі рэвалюцыйныя. Адным з іх стаў Aufgabe 57 (Заданне № 57). Акцэнт быў зроблены на аўтаматызацыі і абароненасці машыны. Галоўнай асаблівасцю гэтага танка стала гармата з механізмам набівання, вакол якой і была выбудавана канцэпцыя. Таксама было прапанавана аддзяліць гармату ад баявога аддзялення. З гэтай прычыны вежа Aufgabe 57 атрымалася несіметрычнай. Экіпаж у вежы размясціўся з правага боку, а гармату і механізаваную ўкладку ссунулі ўлева. Такое рашэнне дазволіла паменшыць габарыты вежы і знізіць яе масу, за кошт чаго павялічылі таўшчыні брані. Як і многія радыкальныя ідэі таго часу, Aufgabe 57 не прасунуўся далей за эскізы. Разам з тым думкі пра механізаваную ўкладку і несіметрычную вежу не раз рэалізоўваліся на нямецкіх танках.\n"
 "\n"
 "Характарыстыкі машыны могуць быць зменены без кампенсацыі."
 
 msgid "G193_Aufgabe_57_long_special"
-msgstr "?empty?"
+msgstr ""
+"Машына вылучаецца гарматай і яе размяшчэннем: дзякуючы ссунутай гармаце, "
+"граматна занятая пазіцыя — гэта ключ да поспеху, бо не трэба выстаўляць "
+"паўкорпуса для стральбы. З улікам сістэмы набівання і добрай лабавой брані "
+"ва ўмелых руках танк здольны стварыць праціўніку нямала праблем, нават "
+"нягледзячы на не самае моцнае бартавое браніраванне."
 
 msgid "G193_Aufgabe_57_short"
 msgstr "Aufgabe 57"
 
 msgid "G193_Aufgabe_57_short_special"
+msgstr ""
+"Камфортная гармата, механізм набівання на 3 снарады, добрая лабавая браня."
+
+msgid "G194_E_50_GT_Alkett_Prod"
+msgstr "E 50 GT Alkett Prod."
+
+msgid "G194_E_50_GT_Alkett_Prod_descr"
+msgstr ""
+" \n"
+"\n"
+"Характарыстыкі машыны могуць быць зменены без кампенсацыі."
+
+msgid "G194_E_50_GT_Alkett_Prod_long_special"
+msgstr "?empty?"
+
+msgid "G194_E_50_GT_Alkett_Prod_short"
+msgstr "Alkett"
+
+msgid "G194_E_50_GT_Alkett_Prod_short_special"
 msgstr "?empty?"
 
 msgid "G196_E_75_Ausf_B_Doppel"
@@ -2496,7 +2588,7 @@ msgstr "E 75 Ausf B Doppel"
 
 msgid "G196_E_75_Ausf_B_Doppel_descr"
 msgstr ""
-"У межах так званай Е-серыі бліжэй да канца Другой сусветнай вайны нямецкія канструктары выказвалі шмат ідэй і прапаноў наконт новых узораў бранятэхнікі, часам — вельмі экзатычных. Адзін з падобных праектаў прапаноўвалася ўзброіць спаранымі гарматамі ў адной вежы. Паводле задумы канструктараў такі танк змог бы весці агонь залпам або з павялічанай хуткастрэльнасцю. Паводле адной з версій, зрэшты, не пацверджанай дакументальна, вежа і корпус распрацоўваліся рознымі фірмамі, прычым вежу пабудавалі ў метале. Для выпрабавання канцэпцыі двухгарматнага танка быў узяты корпус танка E-75, які знаходзіўся ў зборачным цэху, без абвесу і ў заводскай грунтоўцы. З прычыны характэрнага аблічча выпрабавальнікі называлі машыну «Doppel».\n"
+"У межах так званай Е-серыі бліжэй да канца Другой сусветнай вайны нямецкія канструктары выказвалі шмат ідэй і прапаноў наконт новых узораў бранятэхнікі, часам — вельмі экзатычных. Адзін з падобных праектаў прапаноўвалася ўзброіць спаранымі гарматамі ў адной вежы. Паводле задумы канструктараў такі танк змог бы весці агонь залпам або з павялічанай хуткастрэльнасцю. Паводле адной з версій, зрэшты, не пацверджанай дакументальна, вежа і корпус распрацоўваліся рознымі фірмамі, прычым вежу пабудавалі ў метале. Для выпрабавання канцэпцыі двухгарматнага танка быў узяты корпус танка E-75, які знаходзіўся ў зборачным цэху, без абвесу і ў заводскай грунтоўцы. З прычыны характэрнага аблічча выпрабавальнікі называлі машыну Doppel.\n"
 "\n"
 "Характарыстыкі машыны могуць быць зменены без кампенсацыі."
 
@@ -2772,6 +2864,9 @@ msgstr "Выдатная гармата і высокая агнявая моц"
 
 msgid "GT_101"
 msgstr "GT 101"
+
+msgid "GT_102"
+msgstr "GT 102"
 
 msgid "GW_Mk_VIe"
 msgstr "G.Pz. Mk. VI (e)"
@@ -3131,6 +3226,24 @@ msgstr "Leichttraktor verstärkteketten"
 msgid "Leopard1"
 msgstr "Leopard 1"
 
+msgid "Leopard1_ISP"
+msgstr "Leopard 1 Выпрабавальны"
+
+msgid "Leopard1_ISP_descr"
+msgstr ""
+"Асноўны баявы танк ФРГ. Работы над машынай пачаліся ў 1956 г. Першыя "
+"доследныя ўзоры былі выраблены ў 1965 г. на заводзе Krauss-Maffei. Быў на "
+"ўзбраенні больш як у 10 краінах свету."
+
+msgid "Leopard1_ISP_long_special"
+msgstr "?empty?"
+
+msgid "Leopard1_ISP_short"
+msgstr "Leopard 1 (В)"
+
+msgid "Leopard1_ISP_short_special"
+msgstr "?empty?"
+
 msgid "Leopard1_bob"
 msgstr "Leopard 1 BB"
 
@@ -3234,6 +3347,12 @@ msgstr "MTU MB 838 CaM 500"
 msgid "MB-838_CAM-500_1"
 msgstr "MTU MB 838 CaM 500A"
 
+msgid "MB-838_CAM-500_1_ISP"
+msgstr "MTU MB 838 CaM 500A"
+
+msgid "MB-838_CAM-500_1_ISP_short"
+msgstr "MB 838 CaM 500A"
+
 msgid "MB-838_CAM-500_1_short"
 msgstr "MB 838 CaM 500A"
 
@@ -3241,6 +3360,9 @@ msgid "MB-838_CAM-500_short"
 msgstr "MB 838 CaM 500"
 
 msgid "MB507"
+msgstr "DB 603 A2"
+
+msgid "MB507_ISP"
 msgstr "DB 603 A2"
 
 msgid "MB509"
@@ -3311,6 +3433,23 @@ msgstr "Marder II"
 msgid "Maus"
 msgstr "Maus"
 
+msgid "Maus_ISP"
+msgstr "Maus Выпрабавальны"
+
+msgid "Maus_ISP_descr"
+msgstr ""
+"Распрацоўваўся з чэрвеня 1942 г. па ліпень 1944 г. Былі выраблены два "
+"першаўзоры, з якіх толькі адзін атрымаў вежу з узбраеннем."
+
+msgid "Maus_ISP_long_special"
+msgstr "?empty?"
+
+msgid "Maus_ISP_short"
+msgstr "Maus (В)"
+
+msgid "Maus_ISP_short_special"
+msgstr "?empty?"
+
 msgid "Maus_descr"
 msgstr ""
 "Распрацоўваўся з чэрвеня 1942 г. па ліпень 1944 г. Былі выраблены два "
@@ -3322,7 +3461,13 @@ msgstr "Maus"
 msgid "Mausketten"
 msgstr "Maus"
 
+msgid "Mausketten_ISP"
+msgstr "Maus"
+
 msgid "Mausturm"
+msgstr "Maus"
+
+msgid "Mausturm_ISP"
 msgstr "Maus"
 
 msgid "Maybach_HL100"
@@ -3565,6 +3710,9 @@ msgstr "Maybach Neues Projekt A"
 msgid "Maybach_HL_234P60_short"
 msgstr "Maybach Neues Projekt"
 
+msgid "Maybach_HL_234_ISP"
+msgstr "Maybach NL 234"
+
 msgid "Maybach_HL_234_TRM_P30"
 msgstr "Maybach HL 234 TRM P30"
 
@@ -3590,6 +3738,9 @@ msgstr ""
 "Ausf. A"
 
 msgid "Maybach_HL_235"
+msgstr "Maybach HL 235"
+
+msgid "Maybach_HL_235_ISP"
 msgstr "Maybach HL 235"
 
 msgid "Maybach_HL_295"
@@ -4380,6 +4531,9 @@ msgstr ""
 " 1944 года, «Тыгр I» выкарыстоўваўся да канца вайны. Усяго было выпушчана "
 "1354 танкі."
 
+msgid "PzV_BR_short"
+msgstr "?empty?"
+
 msgid "PzV_PzIV"
 msgstr "Pz.Kpfw. V/IV"
 
@@ -4594,6 +4748,9 @@ msgstr "SEM 25"
 msgid "SEM25_1"
 msgstr "SEM 25A"
 
+msgid "SEM25_1_ISP"
+msgstr "SEM 25A"
+
 msgid "SEM25_A"
 msgstr "SEM 25A"
 
@@ -4792,6 +4949,9 @@ msgstr "E 75 Ausf. A"
 msgid "Turret_1_E50_Ausf_M"
 msgstr "E 50 Ausf. M"
 
+msgid "Turret_1_E50_Ausf_M_ISP"
+msgstr "E 50 Ausf. M"
+
 msgid "Turret_1_G00_Artilleriebunker"
 msgstr "Дот"
 
@@ -4896,6 +5056,9 @@ msgid "Turret_1_G120_M41_90_GrandFinal"
 msgstr "leKpz M 41 90 mm"
 
 msgid "Turret_1_G121_Grille_15_L63"
+msgstr "Grille 15"
+
+msgid "Turret_1_G121_Grille_15_L63_ISP"
 msgstr "Grille 15"
 
 msgid "Turret_1_G122_VK6501H"
@@ -5006,6 +5169,9 @@ msgstr "Eisbär"
 msgid "Turret_1_G193_Aufgabe_57"
 msgstr "Aufgabe 57"
 
+msgid "Turret_1_G194_E_50_GT_Alkett_Prod"
+msgstr "E 50 Alkett K.18"
+
 msgid "Turret_1_G196_E_75_Ausf_B_Doppel"
 msgstr "Doppel"
 
@@ -5052,6 +5218,9 @@ msgid "Turret_1_JagdTiger_SdKfz_185"
 msgstr "8,8 cm Pak 43 Jagdtiger"
 
 msgid "Turret_1_Leopard1"
+msgstr "Leopard 1"
+
+msgid "Turret_1_Leopard1_ISP"
 msgstr "Leopard 1"
 
 msgid "Turret_1_Lowe"
@@ -5691,13 +5860,22 @@ msgstr "Gr 39/46 HL"
 msgid "_105mmGr_39H1A_K"
 msgstr "Gr 39 H1A K"
 
+msgid "_105mmGr_39H1A_K_ISP"
+msgstr "Gr 39 H1A K"
+
 msgid "_105mm_APCR_DM23"
+msgstr "DM23"
+
+msgid "_105mm_APCR_DM23_ISP"
 msgstr "DM23"
 
 msgid "_105mm_APDS_M_SH"
 msgstr "M 42/43"
 
 msgid "_105mm_AP_DM13"
+msgstr "DM13"
+
+msgid "_105mm_AP_DM13_ISP"
 msgstr "DM13"
 
 msgid "_105mm_AP_DM7_SH"
@@ -5710,6 +5888,9 @@ msgid "_105mm_BK_L7"
 msgstr "10,5 cm Bordkanone L7"
 
 msgid "_105mm_BK_L7A3_L51"
+msgstr "10,5 cm Bordkanone L7A3"
+
+msgid "_105mm_BK_L7A3_L51_ISP"
 msgstr "10,5 cm Bordkanone L7A3"
 
 msgid "_105mm_DM11A1"
@@ -5748,10 +5929,19 @@ msgstr "Exp. HEAT"
 msgid "_105mm_Gr19"
 msgstr "Gr 19"
 
+msgid "_105mm_Gr_19"
+msgstr "Gr. 19"
+
 msgid "_105mm_Gr_39H1H_SH"
 msgstr "Gr 39H1H"
 
+msgid "_105mm_Gr_39_rot_H1"
+msgstr "Gr. 39 rot H1 FES К.18"
+
 msgid "_105mm_HE_DM11"
+msgstr "DM11"
+
+msgid "_105mm_HE_DM11_ISP"
 msgstr "DM11"
 
 msgid "_105mm_K18_L52"
@@ -5783,6 +5973,14 @@ msgstr ""
 msgid "_105mm_KwK45_L52_ausf_K"
 msgstr "10,5 cm Kw.K. L/52 Ausf. K"
 
+msgid "_105mm_KwK45_L52_ausf_K_ISP"
+msgstr "10,5 cm Kw.K. L/52 Ausf. K"
+
+msgid "_105mm_KwK45_L52_ausf_K_ISP_short"
+msgstr ""
+"10,5 cm Kw.K. L/52\n"
+"Ausf. K"
+
 msgid "_105mm_KwK45_L52_ausf_K_short"
 msgstr ""
 "10,5 cm Kw.K. L/52\n"
@@ -5799,6 +5997,9 @@ msgstr "10,5 cm Kw.K. L/70"
 
 msgid "_105mm_KwK46_L70_SH"
 msgstr "10,5 cm Kw.K. L/70"
+
+msgid "_105mm_KwK_L52"
+msgstr "10,5 cm Kw.K. L/52"
 
 msgid "_105mm_Kw_K_L_73"
 msgstr "10,5 cm Kw.K. L/73"
@@ -5842,6 +6043,9 @@ msgstr "Pzgr 40 G"
 msgid "_105mm_Pzgr.40K"
 msgstr "Pzgr 40 K"
 
+msgid "_105mm_Pzgr.40K_ISP"
+msgstr "Pzgr 40 K"
+
 msgid "_105mm_Pzgr.40L1"
 msgstr "Pzgr 40 L1"
 
@@ -5857,6 +6061,9 @@ msgstr "Pzgr. 39/45"
 msgid "_105mm_Pzgr_40_45"
 msgstr "Pzgr. 40/45"
 
+msgid "_105mm_Pzgr_rot"
+msgstr "Pzgr. rot"
+
 msgid "_105mm_RH_Gun"
 msgstr "10,5 cm RH GUN"
 
@@ -5870,6 +6077,9 @@ msgid "_105mm_Sprg.18G"
 msgstr "Sprgr 18G"
 
 msgid "_105mm_Sprg.18K"
+msgstr "Sprgr 18 K"
+
+msgid "_105mm_Sprg.18K_ISP"
 msgstr "Sprgr 18 K"
 
 msgid "_105mm_Sprg_K"
@@ -5907,6 +6117,9 @@ msgstr "10WSc"
 
 msgid "_10WSc_02"
 msgstr "10WSc F"
+
+msgid "_10WSc_ISP"
+msgstr "10WSc"
 
 msgid "_10WSc_MK"
 msgstr "10WSc"
@@ -5995,6 +6208,9 @@ msgstr "12,8 cm Kw.K. 44 L/55"
 msgid "_128mm_KwK44_L55_G"
 msgstr "12,8 cm Kw.K. 44 L/55"
 
+msgid "_128mm_KwK44_L55_ISP"
+msgstr "12,8 cm Kw.K. 44 L/55"
+
 msgid "_128mm_KwK44_L55_N"
 msgstr "12,8 cm Kw.K. Ausf. E"
 
@@ -6067,6 +6283,9 @@ msgstr "Pzgr 39 E"
 msgid "_128mm_PzGr39_GW"
 msgstr "Pzgr 39"
 
+msgid "_128mm_PzGr39_ISP"
+msgstr "Pzgr 39"
+
 msgid "_128mm_PzGr39_TM"
 msgstr "Pzgr 39TM"
 
@@ -6095,6 +6314,9 @@ msgid "_128mm_PzGr40_E"
 msgstr "Pzgr 40 E"
 
 msgid "_128mm_PzGr40_GW"
+msgstr "Pzgr 40"
+
+msgid "_128mm_PzGr40_ISP"
 msgstr "Pzgr 40"
 
 msgid "_128mm_PzGr40_TM"
@@ -6131,6 +6353,9 @@ msgid "_128mm_SprG18_E"
 msgstr "Sprgr 18 E"
 
 msgid "_128mm_SprG18_GW"
+msgstr "Sprgr 18"
+
+msgid "_128mm_SprG18_ISP"
 msgstr "Sprgr 18"
 
 msgid "_128mm_SprG18_TM"
@@ -6187,6 +6412,9 @@ msgstr "15 cm Gr. 19 Stg FES"
 msgid "_150mm_Gr_HL"
 msgstr "Gr. HL"
 
+msgid "_150mm_Gr_HL_ISP"
+msgstr "Gr. HL"
+
 msgid "_150mm_KwK44_L38"
 msgstr "15 cm Kw.K. L/38"
 
@@ -6202,6 +6430,9 @@ msgstr "15 cm Nebelwerfer 41"
 msgid "_150mm_Pak_L63"
 msgstr "15 cm Pak L/63"
 
+msgid "_150mm_Pak_L63_ISP"
+msgstr "15 cm Pak L/63"
+
 msgid "_150mm_PzGr39H2_SH"
 msgstr "Pzgr 39 H2"
 
@@ -6212,6 +6443,9 @@ msgid "_150mm_PzGr42_02"
 msgstr "Pzgr 42"
 
 msgid "_150mm_Pzgr"
+msgstr "Pzgr."
+
+msgid "_150mm_Pzgr_ISP"
 msgstr "Pzgr."
 
 msgid "_150mm_Rohr_L29_5"
@@ -6245,6 +6479,9 @@ msgid "_150mm_Sprg_L.erz"
 msgstr "Sprgr L erz."
 
 msgid "_150mm_Sprgr"
+msgstr "Sprgr."
+
+msgid "_150mm_Sprgr_ISP"
 msgstr "Sprgr."
 
 msgid "_150mm_sFH13_L17"

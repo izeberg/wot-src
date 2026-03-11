@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<Properties>
+		<isActive>
+			<Type>BOOL</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</isActive>
+		<boosterApplyTime>
+			<Type>FLOAT</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</boosterApplyTime>
+		<type>
+			<Type>STRING</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</type>
+	</Properties>
+	<CellMethods/>
+	<DefaultKeyName>boosterComponent</DefaultKeyName>
+</root>

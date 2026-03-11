@@ -41,6 +41,9 @@ msgstr "WS No. 19 Special"
 msgid "C13B42"
 msgstr "C.13/B.42"
 
+msgid "C13B42_ISP"
+msgstr "C.13/B.42"
+
 msgid "C13B47"
 msgstr "C.13/B.47"
 
@@ -75,6 +78,9 @@ msgid "C45A_Gonsalo"
 msgstr "C45AG"
 
 msgid "C45A_SH"
+msgstr "SR C45"
+
+msgid "C45_ISP"
 msgstr "SR C45"
 
 msgid "Cadillac_75_x_3"
@@ -226,6 +232,9 @@ msgid "Chassis_GB11_Caernarvon_2"
 msgstr "FV221A"
 
 msgid "Chassis_GB120_Concept_No_5"
+msgstr "Concept No. 5"
+
+msgid "Chassis_GB120_Concept_No_5_ISP"
 msgstr "Concept No. 5"
 
 msgid "Chassis_GB121_GSOR_1010_FB"
@@ -579,6 +588,9 @@ msgstr "FV4004 Conway"
 msgid "Chassis_GB83_FV4005"
 msgstr "FV4005 Stage II"
 
+msgid "Chassis_GB83_FV4005_ISP"
+msgstr "FV4005 Stage II"
+
 msgid "Chassis_GB84_Chieftain_Mk6"
 msgstr "Chieftain Mk. 6"
 
@@ -591,13 +603,19 @@ msgstr "Cromwell"
 msgid "Chassis_GB86_Centurion_Action_X"
 msgstr "Centurion Action X"
 
+msgid "Chassis_GB86_Centurion_Action_X_ISP"
+msgstr "Centurion Action X"
+
 msgid "Chassis_GB87_Chieftain_T95_turret"
 msgstr "Chieftain/T95"
 
 msgid "Chassis_GB88_T95_Chieftain_turret"
-msgstr "T95/Chieftain"
+msgstr "Vandal"
 
 msgid "Chassis_GB91_Super_Conqueror"
+msgstr "Super Conqueror"
+
+msgid "Chassis_GB91_Super_Conqueror_ISP"
 msgstr "Super Conqueror"
 
 msgid "Chassis_GB92_FV217"
@@ -1155,7 +1173,7 @@ msgstr "Vickers Mark 3"
 
 msgid "GB114_Vickers_MBT_Mk3_desc"
 msgstr ""
-"Vickers МВТ Mk.3 стаў вынікам удасканалення танка Vickers MBT Mk.1. Ён быў распрацаваны ў ініцыятыўным парадку і прызначаўся для экспартнага продажу ў якасці недарагой альтэрнатывы складаным і дарагім танкам, такім як Chieftain. Vickers МВТ Mk.3 атрымаў новую вежу змяшанай канструкцыі з літых і зварных элементаў, а таксама іншую кампаноўку даху МТА. У цэлым машына не магла пахваліцца выбітнай бранёй: асноўны акцэнт быў зроблены на рухомасці і ўзбраенні. Апошняе ўключала 105-мм наразную гармату L7, стабілізаваную ў дзвюх плоскасцях, і сучасную сістэму кіравання агнём. Дызельны рухавік Detroit Diesel 12V-71T магутнасцю 720 к. с. забяспечваў прымальную рухомасць і максімальную хуткасць каля 50 км/гадз. Машына выраблялася да 1995 года.\n"
+"Vickers МВТ Mk.3 паўстаў у выніку ўдасканалення танка Vickers MBT Mk.1. Ён быў распрацаваны ў ініцыятыўным парадку і прызначаўся для экспартнага продажу ў якасці недарагой альтэрнатывы складаным і дарагім танкам, такім як Chieftain. Vickers МВТ Mk.3 атрымаў новую вежу змяшанай канструкцыі з літых і зварных элементаў, а таксама іншую кампаноўку даху МТА. У цэлым машына не магла пахваліцца выбітнай бранёй: асноўны акцэнт быў зроблены на рухомасці і ўзбраенні. Апошняе ўключала 105-мм наразную гармату L7, стабілізаваную ў дзвюх плоскасцях, і сучасную сістэму кіравання агнём. Дызельны рухавік Detroit Diesel 12V-71T магутнасцю 720 к.с. забяспечваў прымальную рухомасць і максімальную хуткасць каля 50 км/гадз. Машына выраблялася да 1995 года.\n"
 "\n"
 "Характарыстыкі машыны могуць быць зменены без кампенсацыі."
 
@@ -1260,6 +1278,29 @@ msgstr "Caernarvon"
 msgid "GB120_Concept_No_5"
 msgstr "Concept No. 5"
 
+msgid "GB120_Concept_No_5_ISP"
+msgstr "Concept 5 Выпрабавальны"
+
+msgid "GB120_Concept_No_5_ISP_descr"
+msgstr ""
+"У паваенныя гады ў Брытаніі працягвалася праца над цяжкімі "
+"бронеаўтамабілямі. Адзін з амбіцыйных праектаў называўся Concept 5 Future "
+"Tank Design. Па сутнасці, гэта быў танк на колах. Такія машыны прызначаліся "
+"для спецыфічных тэатраў ваенных дзеянняў, дзе ў колавай тэхнікі была "
+"перавага. Напрыклад, для камяністых пустынь. Узбраенне ў выглядзе 105-мм "
+"гарматы дазваляла змагацца з сярэднімі танкамі таго перыяду. Праект так "
+"і застаўся на стадыі канцэпцыі, бо было вырашана развіваць асноўныя танкі "
+"і гусенічныя баявыя машыны."
+
+msgid "GB120_Concept_No_5_ISP_long_special"
+msgstr "?empty?"
+
+msgid "GB120_Concept_No_5_ISP_short"
+msgstr "Concept 5 (В)"
+
+msgid "GB120_Concept_No_5_ISP_short_special"
+msgstr "?empty?"
+
 msgid "GB120_Concept_No_5_bob"
 msgstr "Concept No. 5 BB"
 
@@ -1271,11 +1312,11 @@ msgstr ""
 "У пасляваенныя гады ў Брытаніі працягвалася праца над цяжкімі "
 "бронеаўтамабілямі. Адзін з амбіцыйных праектаў называўся Concept 5 Future "
 "Tank Design. Па сутнасці, гэта быў танк на колах. Такія машыны прызначаліся "
-"для спецыфічных тэатраў ваенных дзеянняў, дзе ў колавай тэхнікі была "
-"перавага. Напрыклад, для камяністых пустыняў. Узбраенне ў выглядзе 105-мм "
-"гарматы дазваляла змагацца з сярэднімі танкамі таго перыяду. Праект так "
-"і застаўся на стадыі канцэпцыі, бо было вырашана развіваць асноўныя танкі "
-"і гусенічныя баявыя машыны."
+"для спецыфічных тэатраў ваенных дзеянняў, дзе колавая тэхніка мела перавагу."
+" Напрыклад, для камяністых пустынь. Узбраенне ў выглядзе 105-мм гарматы "
+"дазваляла змагацца з сярэднімі танкамі таго перыяду. Праект так і застаўся "
+"на стадыі канцэпцыі, бо было вырашана развіваць асноўныя танкі і гусенічныя "
+"баявыя машыны."
 
 msgid "GB120_Concept_No_5_short"
 msgstr "Concept 5"
@@ -1672,43 +1713,54 @@ msgstr "Champion"
 
 msgid "GB140_Champion_descr"
 msgstr ""
-" \n"
+"У канцы 1940-х гадоў узнікла тэндэнцыя да стварэння танкаў, абсталяваных механізмамі набівання. Найбольш вядомымі сталі вежы французскіх танкабудаўнікоў. Англійскія вайскоўцы стараліся не адставаць і прапрацоўвалі ўласныя ідэі веж з механізацыяй набівання. Адзін з такіх праектаў — цяжкі танк Champion з падвышанай рухомасцю, якую павінен быў забяспечыць газатурбінны рухавік Parsons. Разлік вежы знаходзіўся ў яе падставе, пры гэтым калыхальнай зрабілі гарматную ўстаноўку, а кармавая ніша, у якой знаходзіліся дзве механізаваныя ўкладкі са снарадамі першай чаргі, заставалася нерухомай. Дадатковы боезапас размясцілі па баках ад сілавой устаноўкі. У выніку машына атрымлівалася вельмі складанай і недастаткова рухомай. Акрамя таго, праца над газатурбіннымі рухавікамі не выйшла па-за доследныя ўзоры. Праект Champion так і застаўся на паперы.\n"
 "\n"
 "Характарыстыкі машыны могуць быць зменены без кампенсацыі."
 
 msgid "GB140_Champion_long_special"
-msgstr "?empty?"
+msgstr ""
+"Універсальны цяжкі танк, мае моцную лабавую браню і добрую дынаміку, "
+"а магутная 152-мм гармата з добрымі вугламі вертыкальнага навядзення "
+"дазволіць утрымліваць ключавыя пазіцыі і эфектыўна ціснуць на кірунках "
+"атакі. Добрая, камфортная і стабільная машына, зручная для гульцоў з розным "
+"узроўнем навыку."
 
 msgid "GB140_Champion_short"
 msgstr "Champion"
 
 msgid "GB140_Champion_short_special"
-msgstr "?empty?"
+msgstr "Моцнае лабавое браніраванне, магутная гармата"
 
 msgid "GB141_Celestial_2_51"
 msgstr "Celestial 2-51"
 
 msgid "GB141_Celestial_2_51_descr"
 msgstr ""
-" \n"
+"Праект пад працоўнай назвай Celestial 2-51 паўстаў як спроба брытанскіх канструктараў стварыць універсальны танк, абмяжоўваючы няспынны рост баявой масы за кошт зніжэння габарытаў корпуса. Для ўзмацнення бронеаховы ў бакавой праекцыі меркавалася ўсталяваць бартавыя экраны ў якасці фальшбортаў. Канцэпцыя механізаванай укладкі, размешчанай на падвежавым кошыку, мела забяспечваць набойцу ўнітарным стрэлам у любы момант, а таксама дазваляла паскорыць набіванне, вызваліць месца ў вежы і размясціць параўнальна вялікі боекамплект для 105-мм гарматы. Аднак будаваць Celestial 2-51 не сталі, бо перавагу аддалі двум іншым праектам: FV4202 і FV4201 (будучаму танку Chieftain).\n"
 "\n"
 "Характарыстыкі машыны могуць быць зменены без кампенсацыі."
 
 msgid "GB141_Celestial_2_51_long_special"
-msgstr "?empty?"
+msgstr ""
+"Цяжкі танк падтрымкі родам з Туманнага Альбіёна. Танк мае вялікі патэнцыял "
+"дзякуючы сімбіёзу барабана і асноўных фугасных снарадаў. Машына таксама мае "
+"неблагое браніраванне і добрыя вуглы нахілу гарматы. Машына раскрываецца "
+"на пазіцыях, якія дазваляюць выкарыстаць моцную браню вежы і падлавіць "
+"праціўніка пры яго перадыслакцыі."
 
 msgid "GB141_Celestial_2_51_short"
 msgstr "Celestial"
 
 msgid "GB141_Celestial_2_51_short_special"
-msgstr "?empty?"
+msgstr ""
+"Добрае лабавое браніраванне, барабан на 3 снарады, асноўны HESH-снарад."
 
 msgid "GB143_Captain"
 msgstr "Captain"
 
 msgid "GB143_Captain_descr"
 msgstr ""
-"Яшчэ да пачатку Другой сусветнай вайны неаднаразова прапрацоўвалася канцэпцыя двухствольных танкаў і самаходных артылерыйскіх установак. Існавалі ў метале танкі з дзвюма гарматамі, якія вялі залпавы агонь. Займаліся падобнымі працамі і ў Англіі: вайскоўцы ставілі на залпавую канцэпцыю. Прапрацоўваліся як двухствольныя лёгкія танкі, так і куды больш цяжкія машыны. Адной з іх стаў праект пад умоўнай назвай Captain — гэта была спроба стварыць цяжэйшы, чым FV214, танк. Ён быў адной з рэакцый на інфармацыю пра з'яўленне ў СССР цяжкіх танкаў Т-10. Далей за эскізныя прапрацоўкі справа не прасунулася: не дапамагло добрае браніраванне і магутныя гарматы. Галоўнымі прычынамі адмовы ад праекта стала празмерная разліковая маса і кошт.\n"
+"Яшчэ да пачатку Другой сусветнай вайны неаднаразова прапрацоўвалася канцэпцыя двухствольных танкаў і самаходных артылерыйскіх установак. Існавалі ў метале танкі з дзвюма гарматамі, якія вялі залпавы агонь. Займаліся падобнымі працамі і ў Англіі: вайскоўцы ставілі на залпавую канцэпцыю. Прапрацоўваліся як двухствольныя лёгкія танкі, так і значна цяжэйшыя машыны. Адной з іх стаў праект пад умоўнай назвай Captain — гэта была спроба стварыць цяжэйшы, чым FV214, танк. Ён быў адной з рэакцый на інфармацыю пра з'яўленне ў СССР цяжкіх танкаў Т-10. Далей за  эскізныя прапрацоўкі справа не прасунулася: не дапамаглі добрае браніраванне і магутныя гарматы. Галоўнымі прычынамі адмовы ад праекта сталі празмерная разліковая маса і кошт.\n"
 "\n"
 "Характарыстыкі машыны могуць быць зменены без кампенсацыі."
 
@@ -1717,8 +1769,7 @@ msgstr ""
 "Выдатная штурмавая машына, мае моцнае лабавое браніраванне, магутную вежу "
 "і камфортныя вуглы вертыкальнага навядзення. Спараная гармата мае добрую "
 "бронепрабівальнасць і высокую забойнасць стрэлу. Усе плюсы машыны "
-"кампенсуюцца асаблівасцю — нізкай максімальнай хуткасцю і малой удзельнай "
-"магутнасцю."
+"кампенсуюцца нізкай максімальнай хуткасцю і малой удзельнай магутнасцю."
 
 msgid "GB143_Captain_short"
 msgstr "Captain"
@@ -2483,10 +2534,30 @@ msgstr "Conway"
 msgid "GB83_FV4005"
 msgstr "FV4005 Stage II"
 
+msgid "GB83_FV4005_ISP"
+msgstr "FV4005 II Выпрабавальны"
+
+msgid "GB83_FV4005_ISP_descr"
+msgstr ""
+"Праект цяжкай супрацьтанкавай САУ, якую распрацоўвалі ў першай палове "
+"1950-х гг., выкарыстоўваючы вузлы і агрэгаты Centurion Mk3. Першапачаткова "
+"САУ выпрабоўвалася з механізаванай боеўкладкай. Але з таго, што боеўкладка "
+"не адпавядала габарытам вежы, ад яе вырашылі адмовіцца. Быў выраблены адзін "
+"узор, які праходзіў выпрабаванні, аднак серыйна машына не выпускалася."
+
+msgid "GB83_FV4005_ISP_long_special"
+msgstr "?empty?"
+
+msgid "GB83_FV4005_ISP_short"
+msgstr "FV4005 (В)"
+
+msgid "GB83_FV4005_ISP_short_special"
+msgstr "?empty?"
+
 msgid "GB83_FV4005_descr"
 msgstr ""
 "Праект цяжкай супрацьтанкавай САУ, якую распрацоўвалі ў першай палове "
-"1950-х гг. выкарыстоўваючы вузлы і агрэгаты Centurion Mk3. Першапачаткова "
+"1950-х гг., выкарыстоўваючы вузлы і агрэгаты Centurion Mk3. Першапачаткова "
 "САУ выпрабоўвалася з механізаванай боеўкладкай. Але з таго, што боеўкладка "
 "не адпавядала габарытам вежы, ад яе вырашылі адмовіцца. Быў выраблены адзін "
 "узор, які праходзіў выпрабаванні, аднак серыйна машына не выпускалася."
@@ -2513,7 +2584,7 @@ msgid "GB84_Chieftain_Mk6_short"
 msgstr "Chieftain"
 
 msgid "GB84_Chieftain_Mk6_short_special"
-msgstr "Добрыя пашкоджанні за хвіліну, моцная вежа, неблагая дынаміка."
+msgstr "Добрыя пашкоджанні за хвіліну, моцная вежа, неблагая дынаміка"
 
 msgid "GB85_Cromwell_Berlin"
 msgstr "Cromwell B"
@@ -2554,12 +2625,31 @@ msgstr "Cent. AX 7x7"
 msgid "GB86_Centurion_Action_X_7x7_short_special"
 msgstr "?empty?"
 
+msgid "GB86_Centurion_Action_X_ISP"
+msgstr "Cent. AX Выпрабавальны"
+
+msgid "GB86_Centurion_Action_X_ISP_descr"
+msgstr ""
+"Вежу Action X меркавалася выкарыстаць на танках Centurion пазнейшых "
+"мадыфікацый. Адзін прататып вежы быў усталяваны на шасі танка Centurion Mark"
+" 7, яшчэ адзін выкарыстоўваўся для балістычных выпрабаванняў. Танкі з вежай "
+"Action X серыйна не выпускаліся, на ўзбраенні не былі."
+
+msgid "GB86_Centurion_Action_X_ISP_long_special"
+msgstr "?empty?"
+
+msgid "GB86_Centurion_Action_X_ISP_short"
+msgstr "Cent. AX (В)"
+
+msgid "GB86_Centurion_Action_X_ISP_short_special"
+msgstr "?empty?"
+
 msgid "GB86_Centurion_Action_X_descr"
 msgstr ""
 "Вежу Action X меркавалася выкарыстаць на танках Centurion пазнейшых "
-"мадыфікацый. Адзін першаўзор вежы быў усталяваны на шасі танка Centurion "
-"Mark 7, яшчэ адзін выкарыстоўваўся для балістычных выпрабаванняў. Танкі з "
-"вежай Action X серыйна не выпускаліся, на ўзбраенні не былі."
+"мадыфікацый. Адзін прататып вежы быў усталяваны на шасі танка Centurion Mark"
+" 7, яшчэ адзін выкарыстоўваўся для балістычных выпрабаванняў. Танкі з вежай "
+"Action X серыйна не выпускаліся, на ўзбраенні не былі."
 
 msgid "GB86_Centurion_Action_X_short"
 msgstr "Centurion AX"
@@ -2588,34 +2678,54 @@ msgid "GB87_Chieftain_T95_turret_short_special"
 msgstr "Прыстойная гармата, неблагая дынаміка"
 
 msgid "GB88_T95_Chieftain_turret"
-msgstr "T95/Chieftain"
+msgstr "Vandal"
 
 msgid "GB88_T95_Chieftain_turret_descr"
 msgstr ""
-"У пачатку 1950-х гадоў у ЗША пачаліся працы над праектам сярэдняга танка T95, які павінен быў замяніць у будучым М48. Быў распрацаваны і пабудаваны шэраг доследных шасі, узброеных 90-мм і 105-мм гарматамі. Аднак узбраенне машын эксперыментальнай серыі T95 некаторым амерыканскім вайскоўцам здалося недастатковым. Гатовай вежы для ўсталявання больш магутнай 120-мм гарматы не знайшлося, таму ў межах тэхнічнага супрацоўніцтва альянсу быў распрацаваны варыянт ўсталявання вежы ад англійскага танка FV4201 Chieftain. Меркавалася адправіць адно доследнае шасі ў Брытанію, дзе мясцовыя спецыялісты правядуць увесь комплекс прац. Але шматлікія няўдачы распрацоўшчыкаў прывялі да закрыцця ўсяго праекта 7 ліпеня 1960 г., і шасі ў Брытанію адправіць не паспелі.\n"
+"«У такім вось мы свеце жывем: шэрыя надпісы на шэрых бетонных мурах на фоне шэрага неба. Вас гэта задавальняе? Нас — не. Хтосьці назаве гэта хуліганствам, мы ж называем гэта мастацтвам. Мы дадаем фарбы, падкручваем яркасць, ствараем сапраўдныя аазісы ў гэтых бетонных пустынях. Гэта не прыцягненне ўвагі, не маніфестацыя, не спроба самарэалізавацца, і ўжо тым больш — не інструмент руху супраць правіл. Гэта проста крыху прыгажосці, якую мы нясем у гэты свет даступным нам спосабам. Кожны раз, устрэсваючы аэразольны балончык перад шэрай сумнай сцяной, мы згадваем наша крэда: гэтаму гораду патрэбны колер».\n"
 "\n"
 "Характарыстыкі машыны могуць быць зменены без кампенсацыі."
 
 msgid "GB88_T95_Chieftain_turret_long_special"
 msgstr ""
-"Брытанскі цяжкі танк з выдатнымі пашкоджаннямі за хвіліну, добрай "
-"бронепрабівальнасцю, рыкашэтнай бранёй і нізкім сілуэтам. Дзякуючы выдатным "
-"ВВН так эфектыўна гуляе «ад рэльефу». Аднак корпус машыны пад удар лепей "
-"не падстаўляць ніколі."
+"Цяжкі танк з выдатнымі пашкоджаннямі за хвіліну, добрай бронепрабівальнасцю,"
+" рыкашэтнай бранёй і нізкім сілуэтам. Дзякуючы выдатнаму вуглу нахілення "
+"гарматы танк эфектыўна гуляе «ад рэльефу», а браніраванне і форма вежы "
+"дазваляюць эфектыўна адбіваць снарады. Корпус машыны браніраваны значна "
+"сціплей, таму яго пад удар лепей не падстаўляць."
 
 msgid "GB88_T95_Chieftain_turret_short"
-msgstr "T95/Chieftain"
+msgstr "Vandal"
 
 msgid "GB88_T95_Chieftain_turret_short_special"
-msgstr "Добрыя пашкоджанні за хвіліну, моцная вежа, неблагая дынаміка."
+msgstr "Добрыя пашкоджанні за хвіліну, моцная вежа, неблагая дынаміка"
 
 msgid "GB91_Super_Conqueror"
 msgstr "Super Conqueror"
 
+msgid "GB91_Super_Conqueror_ISP"
+msgstr "S. Conq. Выпрабавальны"
+
+msgid "GB91_Super_Conqueror_ISP_descr"
+msgstr ""
+"Варыянт танка Conqueror з дадатковым браніраваннем быў выраблены ў першай "
+"палове 50-х гг. для выпрабаванняў баявых частак супрацьтанкавых кіраваных "
+"ракет «Dart» і «Malkara». На іх выпрабаваннях гэтая машына выконвала ролю "
+"цяжкага танка, які мог бы з'явіцца ў будучыні. Серыйна не вырабляўся."
+
+msgid "GB91_Super_Conqueror_ISP_long_special"
+msgstr "?empty?"
+
+msgid "GB91_Super_Conqueror_ISP_short"
+msgstr "S. Conq. (В)"
+
+msgid "GB91_Super_Conqueror_ISP_short_special"
+msgstr "?empty?"
+
 msgid "GB91_Super_Conqueror_descr"
 msgstr ""
 "Варыянт танка Conqueror з дадатковым браніраваннем быў выраблены ў першай "
-"палове 50-х гг. для выпрабаванняў баявых частак супрацьтанкавых кіроўных "
+"палове 50-х гг. для выпрабаванняў баявых частак супрацьтанкавых кіраваных "
 "ракет «Dart» і «Malkara». На іх выпрабаваннях гэтая машына выконвала ролю "
 "цяжкага танка, які мог бы з'явіцца ў будучыні. Серыйна не вырабляўся."
 
@@ -2864,6 +2974,14 @@ msgstr "L50"
 msgid "LandRover_Meteorite_V8"
 msgstr "Land-Rover Meteorite V8"
 
+msgid "LandRover_Meteorite_V8_ISP"
+msgstr "Land-Rover Meteorite V8"
+
+msgid "LandRover_Meteorite_V8_ISP_short"
+msgstr ""
+"Land-Rover\n"
+"Meteorite V8"
+
 msgid "LandRover_Meteorite_V8_short"
 msgstr ""
 "Land-Rover\n"
@@ -3109,6 +3227,9 @@ msgstr "Rolls-Royce Griffon 180"
 msgid "Rolls_Royce_Griffon_A"
 msgstr "Rolls-Royce Griffon A"
 
+msgid "Rolls_Royce_Griffon_ISP"
+msgstr "Rolls-Royce Griffon"
+
 msgid "Rolls_Royce_K60"
 msgstr "Rolls Royce K60"
 
@@ -3131,6 +3252,9 @@ msgid "Rolls_Royce_Meteor_P"
 msgstr "Rolls-Royce Meteor P"
 
 msgid "Rolls_Royce_Meteor_with_twin_turbo_supercharges"
+msgstr "Rolls-Royce Meteor TTSC"
+
+msgid "Rolls_Royce_Meteor_with_twin_turbo_supercharges_ISP"
 msgstr "Rolls-Royce Meteor TTSC"
 
 msgid "Rolls_Royce_Meteorite_202"
@@ -3317,6 +3441,9 @@ msgid "Turret_1_GB11_Caernarvon"
 msgstr "Centurion Mk. II"
 
 msgid "Turret_1_GB120_Concept_No_5"
+msgstr "Concept No. 5"
+
+msgid "Turret_1_GB120_Concept_No_5_ISP"
 msgstr "Concept No. 5"
 
 msgid "Turret_1_GB121_GSOR_1010_FB"
@@ -3523,6 +3650,9 @@ msgstr "FV4004 Conway"
 msgid "Turret_1_GB83_FV4005"
 msgstr "FV4005 Stage II"
 
+msgid "Turret_1_GB83_FV4005_ISP"
+msgstr "FV4005 Stage II"
+
 msgid "Turret_1_GB84_Chieftain_Mk6"
 msgstr "Chieftain Mk. 6"
 
@@ -3532,13 +3662,19 @@ msgstr "Cromwell Mk. IV"
 msgid "Turret_1_GB86_Centurion_Action_X"
 msgstr "Centurion Action X"
 
+msgid "Turret_1_GB86_Centurion_Action_X_ISP"
+msgstr "Centurion Action X"
+
 msgid "Turret_1_GB87_Chieftain_T95_turret"
 msgstr "Chieftain/T95"
 
 msgid "Turret_1_GB88_T95_Chieftain_turret"
-msgstr "T95/Chieftain"
+msgstr "Vandal"
 
 msgid "Turret_1_GB91_Super_Conqueror"
+msgstr "Conqueror «Unorthodox» ABP"
+
+msgid "Turret_1_GB91_Super_Conqueror_ISP"
 msgstr "Conqueror «Unorthodox» ABP"
 
 msgid "Turret_1_GB92_FV217"
@@ -3758,6 +3894,9 @@ msgstr "APDS L28S"
 msgid "_105mm_APCR_L7_C"
 msgstr "APDS L28 C"
 
+msgid "_105mm_APCR_L7_ISP"
+msgstr "APDS L-28"
+
 msgid "_105mm_APCR_L7_proto"
 msgstr "APDS L-28P"
 
@@ -3780,6 +3919,9 @@ msgid "_105mm_Gun_L7"
 msgstr "105 mm Royal Ordnance L7A1"
 
 msgid "_105mm_Gun_L7_HEAT"
+msgstr "105 mm Gun L7A2"
+
+msgid "_105mm_Gun_L7_HEAT_ISP"
 msgstr "105 mm Gun L7A2"
 
 msgid "_105mm_Gun_L7_HEAT_SH"
@@ -3808,6 +3950,9 @@ msgstr "HEAT-T L-37"
 
 msgid "_105mm_HEAT_L7_C"
 msgstr "HEAT L51 C"
+
+msgid "_105mm_HEAT_L7_ISP"
+msgstr "US HEAT M456"
 
 msgid "_105mm_HEAT_L7_SH"
 msgstr "US AP M456"
@@ -3841,6 +3986,9 @@ msgstr "HESH L35S"
 
 msgid "_105mm_HE_L7_C"
 msgstr "HESH L35 C"
+
+msgid "_105mm_HE_L7_ISP"
+msgstr "HESH-T L-35"
 
 msgid "_105mm_HE_L7_Mk13"
 msgstr "HE L7 Mk. 13"
@@ -3905,10 +4053,22 @@ msgstr "110 mm MV AP"
 msgid "_110mm_MV_APDS"
 msgstr "110 mm MV APCR"
 
+msgid "_110mm_MV_APDS_ISP"
+msgstr "110 mm MV APCR"
+
+msgid "_110mm_MV_AP_ISP"
+msgstr "110 mm MV AP"
+
 msgid "_110mm_MV_Gun"
 msgstr "110 mm Medium Velocity Gun"
 
+msgid "_110mm_MV_Gun_ISP"
+msgstr "110 mm Medium Velocity Gun"
+
 msgid "_110mm_MV_HE"
+msgstr "110 mm MV HE"
+
+msgid "_110mm_MV_HE_ISP"
 msgstr "110 mm MV HE"
 
 msgid "_110mm_MV_N_AP"
@@ -3935,6 +4095,9 @@ msgstr "AP-T L1"
 msgid "_120mm_AP-T_L1A1V"
 msgstr "AP-T L1V"
 
+msgid "_120mm_AP-T_L1A1_ISP"
+msgstr "AP-T L1"
+
 msgid "_120mm_APDS_L15"
 msgstr "APDS L15"
 
@@ -3958,6 +4121,9 @@ msgstr "APDS L1"
 
 msgid "_120mm_APDS_L1A1V"
 msgstr "APDS L1V"
+
+msgid "_120mm_APDS_L1A1_ISP"
+msgstr "APDS L1"
 
 msgid "_120mm_AP_L15A11"
 msgstr "AP L15A11"
@@ -3986,6 +4152,9 @@ msgstr "120 mm Gun L1A1"
 msgid "_120mm_Gun_L1A1_A"
 msgstr "120 mm Gun L1A1 A"
 
+msgid "_120mm_Gun_L1A1_ISP"
+msgstr "120 mm Gun L1A1"
+
 msgid "_120mm_Gun_LV"
 msgstr "120 mm Low Velocity Gun"
 
@@ -4012,6 +4181,9 @@ msgstr "HESH-T L1"
 
 msgid "_120mm_HE_L1A1V"
 msgstr "HESH-T L1V"
+
+msgid "_120mm_HE_L1A1_ISP"
+msgstr "HESH-T L1"
 
 msgid "_120mm_QF_1_gun"
 msgstr "QF 120 mm Gonsalo"
@@ -4127,13 +4299,25 @@ msgstr "17-pdr Dual Gun"
 msgid "_183mm_AP_Mk1"
 msgstr "AP Mk. 1"
 
+msgid "_183mm_AP_Mk1_ISP"
+msgstr "AP Mk. 1"
+
 msgid "_183mm_AT_Gun"
+msgstr "183 mm L4"
+
+msgid "_183mm_AT_Gun_ISP"
 msgstr "183 mm L4"
 
 msgid "_183mm_HESH"
 msgstr "HESH Mk. 1"
 
+msgid "_183mm_HESH_ISP"
+msgstr "AP Mk. 2"
+
 msgid "_183mm_HE_Mk1"
+msgstr "HE Mk. 1"
+
+msgid "_183mm_HE_Mk1_ISP"
 msgstr "HE Mk. 1"
 
 msgid "_183mm_L4"

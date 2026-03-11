@@ -226,6 +226,10 @@ package net.wg.gui.battle.epicBattle.views.stats.components
       
       private function setupDynamicSquad(param1:EpicStatsPlayerRenderer) : void
       {
+         if(param1.squadItem != null)
+         {
+            param1.squadItem.dispose();
+         }
          var _loc2_:DynamicSquadCtrl = new DynamicSquadCtrl(param1.squadStatus,param1.squad,this._squadAcceptBt,this._squadAddBt,param1.hit,param1.noSound);
          _loc2_.addActionHandler(this._squadHandler);
          param1.setupDynamicSquadCtrl(_loc2_);

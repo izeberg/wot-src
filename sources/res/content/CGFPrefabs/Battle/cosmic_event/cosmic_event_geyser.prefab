@@ -8,17 +8,17 @@
 			<flags>0</flags>
 		</GameObject>
 		<GameObject>
-			<name>Geyser_1</name>
+			<name>geyser_1</name>
 			<UUID>6be38cbe-cb05-4bda-9815-497083de19b5</UUID>
 			<flags>0</flags>
 		</GameObject>
 		<GameObject>
-			<name>Geyser_2</name>
+			<name>geyser_2</name>
 			<UUID>7f405222-825f-3452-ae81-11a2b513deac</UUID>
 			<flags>0</flags>
 		</GameObject>
 		<GameObject>
-			<name>Geyser_3</name>
+			<name>geyser_3</name>
 			<UUID>b5f85940-f408-3093-a077-f189ce50d91e</UUID>
 			<flags>0</flags>
 		</GameObject>
@@ -86,7 +86,7 @@
 					<property>
 						<name>Position</name>
 						<value>
-							144.433 6.74539 31.0716
+							27.8323 -71.3705 174.775
 							<!--BW_String-->
 						</value>
 					</property>
@@ -97,7 +97,7 @@
 					<property>
 						<name>Rotation</name>
 						<value>
-							0.0133611 -0.000720514 -4.54788e-13
+							-2.12342e-07 -0.00238841 4.47035e-08
 							<!--BW_String-->
 						</value>
 					</property>
@@ -110,7 +110,7 @@
 					<property>
 						<name>Position</name>
 						<value>
-							33.2305 2.81179 59.4893
+							89.6333 -73.2374 -135.968
 							<!--BW_String-->
 						</value>
 					</property>
@@ -120,7 +120,10 @@
 					</property>
 					<property>
 						<name>Rotation</name>
-						<value>-0 0 0</value>
+						<value>
+							0.0588055 0.000629869 0.0172881
+							<!--BW_String-->
+						</value>
 					</property>
 				</config>
 			</component>
@@ -131,7 +134,7 @@
 					<property>
 						<name>Position</name>
 						<value>
-							-196.755 13.136 -19.6553
+							164.361 -79.5055 -53.2989
 							<!--BW_String-->
 						</value>
 					</property>
@@ -141,7 +144,142 @@
 					</property>
 					<property>
 						<name>Rotation</name>
-						<value>-0 0 0</value>
+						<value>
+							-0.0106628 -0.13181 0.00722295
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>NetworkComponent</type>
+			<version>1</version>
+			<component>
+				<objectIndex>0</objectIndex>
+				<flags>33</flags>
+			</component>
+			<component>
+				<objectIndex>1</objectIndex>
+				<flags>33</flags>
+			</component>
+			<component>
+				<objectIndex>2</objectIndex>
+				<flags>33</flags>
+			</component>
+			<component>
+				<objectIndex>3</objectIndex>
+				<flags>33</flags>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>NetworkEntity</type>
+			<version>1</version>
+			<component>
+				<objectIndex>0</objectIndex>
+				<flags>33</flags>
+			</component>
+			<component>
+				<objectIndex>1</objectIndex>
+				<flags>33</flags>
+			</component>
+			<component>
+				<objectIndex>2</objectIndex>
+				<flags>33</flags>
+			</component>
+			<component>
+				<objectIndex>3</objectIndex>
+				<flags>33</flags>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>NetworkTransformComponent</type>
+			<version>1</version>
+			<component>
+				<objectIndex>0</objectIndex>
+				<flags>33</flags>
+				<config>
+					<property>
+						<name>filterType</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>lagDelay</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>extrapolate</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>detailed</name>
+						<value>0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>1</objectIndex>
+				<flags>33</flags>
+				<config>
+					<property>
+						<name>filterType</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>lagDelay</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>extrapolate</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>detailed</name>
+						<value>0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>2</objectIndex>
+				<flags>33</flags>
+				<config>
+					<property>
+						<name>filterType</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>lagDelay</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>extrapolate</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>detailed</name>
+						<value>0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>3</objectIndex>
+				<flags>33</flags>
+				<config>
+					<property>
+						<name>filterType</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>lagDelay</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>extrapolate</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>detailed</name>
+						<value>0</value>
 					</property>
 				</config>
 			</component>
@@ -155,7 +293,7 @@
 				<config>
 					<property>
 						<name>Height</name>
-						<value>7</value>
+						<value>10</value>
 					</property>
 					<property>
 						<name>Radius</name>
@@ -169,7 +307,7 @@
 				<config>
 					<property>
 						<name>Height</name>
-						<value>7</value>
+						<value>10</value>
 					</property>
 					<property>
 						<name>Radius</name>
@@ -183,11 +321,11 @@
 				<config>
 					<property>
 						<name>Height</name>
-						<value>7</value>
+						<value>13</value>
 					</property>
 					<property>
 						<name>Radius</name>
-						<value>5</value>
+						<value>7</value>
 					</property>
 				</config>
 			</component>
@@ -267,7 +405,53 @@
 			</component>
 		</ComponentPool>
 		<ComponentPool>
-			<type>CosmicEventImpulseComponent</type>
+			<type>BoosterActivationComponent</type>
+			<version>1</version>
+			<component>
+				<objectIndex>1</objectIndex>
+				<flags>34</flags>
+				<config>
+					<property>
+						<name>turnOnTime</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>turnOffTime</name>
+						<value>360</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>2</objectIndex>
+				<flags>34</flags>
+				<config>
+					<property>
+						<name>turnOnTime</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>turnOffTime</name>
+						<value>360</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>3</objectIndex>
+				<flags>34</flags>
+				<config>
+					<property>
+						<name>turnOnTime</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>turnOffTime</name>
+						<value>360</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>ImpulseComponent</type>
 			<version>1</version>
 			<component>
 				<objectIndex>1</objectIndex>
@@ -282,7 +466,11 @@
 					</property>
 					<property>
 						<name>massCoef</name>
-						<value>50</value>
+						<value>15</value>
+					</property>
+					<property>
+						<name>velocityLimit</name>
+						<value>500</value>
 					</property>
 					<property>
 						<name>trigger</name>
@@ -303,7 +491,11 @@
 					</property>
 					<property>
 						<name>massCoef</name>
-						<value>50</value>
+						<value>15</value>
+					</property>
+					<property>
+						<name>velocityLimit</name>
+						<value>500</value>
 					</property>
 					<property>
 						<name>trigger</name>
@@ -324,7 +516,11 @@
 					</property>
 					<property>
 						<name>massCoef</name>
-						<value>50</value>
+						<value>15</value>
+					</property>
+					<property>
+						<name>velocityLimit</name>
+						<value>500</value>
 					</property>
 					<property>
 						<name>trigger</name>
@@ -334,53 +530,33 @@
 			</component>
 		</ComponentPool>
 		<ComponentPool>
-			<type>CosmicEventNameComponent</type>
+			<type>BoosterTypeComponent</type>
 			<version>1</version>
 			<component>
-				<objectIndex>1</objectIndex>
+				<objectIndex>0</objectIndex>
 				<flags>34</flags>
 				<config>
 					<property>
-						<name>name</name>
-						<value>geyser_1</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>2</objectIndex>
-				<flags>34</flags>
-				<config>
-					<property>
-						<name>name</name>
-						<value>geyser_2</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>3</objectIndex>
-				<flags>34</flags>
-				<config>
-					<property>
-						<name>name</name>
-						<value>geyser_3</value>
+						<name>type</name>
+						<value>geyser</value>
 					</property>
 				</config>
 			</component>
 		</ComponentPool>
 		<ComponentPool>
-			<type>VehicleInCGFRule</type>
+			<type>BoosterComponent</type>
 			<version>1</version>
 			<component>
 				<objectIndex>1</objectIndex>
-				<flags>34</flags>
+				<flags>35</flags>
 			</component>
 			<component>
 				<objectIndex>2</objectIndex>
-				<flags>34</flags>
+				<flags>35</flags>
 			</component>
 			<component>
 				<objectIndex>3</objectIndex>
-				<flags>34</flags>
+				<flags>35</flags>
 			</component>
 		</ComponentPool>
 	</components>

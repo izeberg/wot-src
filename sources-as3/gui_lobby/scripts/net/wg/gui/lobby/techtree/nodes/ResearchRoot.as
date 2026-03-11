@@ -10,6 +10,7 @@ package net.wg.gui.lobby.techtree.nodes
    import net.wg.data.constants.UniversalBtnStylesConst;
    import net.wg.data.constants.Values;
    import net.wg.data.constants.generated.NODE_STATE_FLAGS;
+   import net.wg.data.constants.generated.TEXT_MANAGER_STYLES;
    import net.wg.data.constants.generated.TOOLTIPS_CONSTANTS;
    import net.wg.data.managers.ITooltipProps;
    import net.wg.data.managers.impl.ToolTipParams;
@@ -23,11 +24,13 @@ package net.wg.gui.lobby.techtree.nodes
    import net.wg.gui.lobby.techtree.constants.ColorIndex;
    import net.wg.gui.lobby.techtree.constants.NodeEntityType;
    import net.wg.gui.lobby.techtree.constants.NodeRendererState;
+   import net.wg.gui.lobby.techtree.constants.ParagonsTypeStrings;
    import net.wg.gui.lobby.techtree.controls.BlueprintBar;
    import net.wg.gui.lobby.techtree.controls.DiscountBanner;
    import net.wg.gui.lobby.techtree.controls.EarlyAccessButton;
    import net.wg.gui.lobby.techtree.controls.EarlyAccessStatus;
    import net.wg.gui.lobby.techtree.controls.ExperienceBlock;
+   import net.wg.gui.lobby.techtree.controls.ParagonsInfo;
    import net.wg.gui.lobby.techtree.data.ResearchRootVO;
    import net.wg.gui.lobby.techtree.data.state.NodeStateCollection;
    import net.wg.gui.lobby.techtree.data.state.StateProperties;
@@ -43,7 +46,9 @@ package net.wg.gui.lobby.techtree.nodes
    import net.wg.infrastructure.managers.counter.CounterProps;
    import net.wg.utils.IClassFactory;
    import net.wg.utils.ICounterManager;
+   import net.wg.utils.ILocale;
    import net.wg.utils.IUniversalBtnStyles;
+   import org.idmedia.as3commons.util.StringUtils;
    import scaleform.clik.constants.InvalidationType;
    import scaleform.clik.events.ButtonEvent;
    import scaleform.gfx.MouseEventEx;
@@ -88,9 +93,15 @@ package net.wg.gui.lobby.techtree.nodes
       
       private static const EARLY_ACCESS_COIN_ID:String = "eaCoin";
       
+      private static const EARLY_ACCESS_PRICE_ID:String = "price";
+      
       private static const EARLY_ACCESS_SIMPLE_TOOLTIP_MAX_WIDTH:int = 300;
       
       private static const DELIMETER:String = " / ";
+      
+      private static const PARAGONS_INFO_OFFSET:int = 14;
+      
+      private static const PARAGONS_INFO_DIVIDER_Y_GAP:int = 14;
        
       
       public var price:CompoundPrice = null;
@@ -114,6 +125,10 @@ package net.wg.gui.lobby.techtree.nodes
       public var earlyAccessCoinsTF:TextField = null;
       
       public var earlyAccessLock:MovieClip = null;
+      
+      public var paragonsInfo:ParagonsInfo = null;
+      
+      public var paragonsInfoDivider:MovieClip = null;
       
       private var _nodeData:NodeData = null;
       
@@ -151,12 +166,19 @@ package net.wg.gui.lobby.techtree.nodes
       
       private var _tooltipMgr:ITooltipMgr;
       
+      private var _locale:ILocale;
+      
+      private var _paragonsTooltipNewResearch:String = "";
+      
+      private var _paragonsTooltipMakeBattle:String = "";
+      
       public function ResearchRoot()
       {
          this._classFactory = App.utils.classFactory;
          this._universalBtnStyles = App.utils.universalBtnStyles;
          this._counterManager = App.utils.counterManager;
          this._tooltipMgr = App.toolTipMgr;
+         this._locale = App.utils.locale;
          super();
       }
       
@@ -180,15 +202,17 @@ package net.wg.gui.lobby.techtree.nodes
          this.actionButton.mouseEnabledOnDisabled = true;
          this.actionButton.addEventListener(ButtonEvent.CLICK,this.onActionButtonClickHandler,false,0,true);
          this.actionButton.addEventListener(MouseEvent.ROLL_OVER,this.onButtonRollOverHandler,false,0,true);
-         this.actionButton.addEventListener(MouseEvent.ROLL_OUT,this.onButtonRollOutHandler,false,0,true);
+         this.actionButton.addEventListener(MouseEvent.ROLL_OUT,this.onRollOutHandler,false,0,true);
          this.earlyAccessQuestsButton.mouseEnabledOnDisabled = true;
          this.earlyAccessQuestsButton.addEventListener(ButtonEvent.CLICK,this.onActionButtonClickHandler,false,0,true);
          this.earlyAccessQuestsButton.addEventListener(MouseEvent.ROLL_OVER,this.onButtonRollOverHandler,false,0,true);
-         this.earlyAccessQuestsButton.addEventListener(MouseEvent.ROLL_OUT,this.onButtonRollOutHandler,false,0,true);
+         this.earlyAccessQuestsButton.addEventListener(MouseEvent.ROLL_OUT,this.onRollOutHandler,false,0,true);
          this.earlyAccessStatus.addEventListener(MouseEvent.ROLL_OVER,this.onButtonRollOverHandler,false,0,true);
-         this.earlyAccessStatus.addEventListener(MouseEvent.ROLL_OUT,this.onButtonRollOutHandler,false,0,true);
+         this.earlyAccessStatus.addEventListener(MouseEvent.ROLL_OUT,this.onRollOutHandler,false,0,true);
          this.earlyAccessLock.addEventListener(MouseEvent.ROLL_OVER,this.onButtonRollOverHandler,false,0,true);
-         this.earlyAccessLock.addEventListener(MouseEvent.ROLL_OUT,this.onButtonRollOutHandler,false,0,true);
+         this.earlyAccessLock.addEventListener(MouseEvent.ROLL_OUT,this.onRollOutHandler,false,0,true);
+         this.paragonsInfo.addEventListener(MouseEvent.ROLL_OVER,this.onParagonsRollOverHandler,false,0,true);
+         this.paragonsInfo.addEventListener(MouseEvent.ROLL_OUT,this.onRollOutHandler,false,0,true);
          this.earlyAccessCoinsTF.autoSize = TextFieldAutoSize.LEFT;
       }
       
@@ -206,22 +230,27 @@ package net.wg.gui.lobby.techtree.nodes
          this.blueprintBar = null;
          this.actionButton.removeEventListener(ButtonEvent.CLICK,this.onActionButtonClickHandler);
          this.actionButton.removeEventListener(MouseEvent.ROLL_OVER,this.onButtonRollOverHandler);
-         this.actionButton.removeEventListener(MouseEvent.ROLL_OUT,this.onButtonRollOutHandler);
+         this.actionButton.removeEventListener(MouseEvent.ROLL_OUT,this.onRollOutHandler);
          this.actionButton.dispose();
          this.actionButton = null;
          this.earlyAccessQuestsButton.removeEventListener(ButtonEvent.CLICK,this.onActionButtonClickHandler);
          this.earlyAccessQuestsButton.removeEventListener(MouseEvent.ROLL_OVER,this.onButtonRollOverHandler);
-         this.earlyAccessQuestsButton.removeEventListener(MouseEvent.ROLL_OUT,this.onButtonRollOutHandler);
+         this.earlyAccessQuestsButton.removeEventListener(MouseEvent.ROLL_OUT,this.onRollOutHandler);
          this.earlyAccessQuestsButton.dispose();
          this.earlyAccessQuestsButton = null;
          this.earlyAccessStatus.removeEventListener(MouseEvent.ROLL_OVER,this.onButtonRollOverHandler);
-         this.earlyAccessStatus.removeEventListener(MouseEvent.ROLL_OUT,this.onButtonRollOutHandler);
+         this.earlyAccessStatus.removeEventListener(MouseEvent.ROLL_OUT,this.onRollOutHandler);
          this.earlyAccessStatus.dispose();
          this.earlyAccessStatus = null;
          this.earlyAccessCoinsTF = null;
          this.earlyAccessLock.removeEventListener(MouseEvent.ROLL_OVER,this.onButtonRollOverHandler);
-         this.earlyAccessLock.removeEventListener(MouseEvent.ROLL_OUT,this.onButtonRollOutHandler);
+         this.earlyAccessLock.removeEventListener(MouseEvent.ROLL_OUT,this.onRollOutHandler);
          this.earlyAccessLock = null;
+         this.paragonsInfo.removeEventListener(MouseEvent.ROLL_OVER,this.onParagonsRollOverHandler);
+         this.paragonsInfo.removeEventListener(MouseEvent.ROLL_OUT,this.onRollOutHandler);
+         this.paragonsInfo.dispose();
+         this.paragonsInfo = null;
+         this.paragonsInfoDivider = null;
          this.price.dispose();
          this.price = null;
          if(this._experienceBlock)
@@ -244,6 +273,7 @@ package net.wg.gui.lobby.techtree.nodes
          this._universalBtnStyles = null;
          this._counterManager = null;
          this._tooltipMgr = null;
+         this._locale = null;
          super.onDispose();
       }
       
@@ -408,16 +438,6 @@ package net.wg.gui.lobby.techtree.nodes
          return this._nodeData != null && (this._nodeData.state & NODE_STATE_FLAGS.COLLECTIBLE) > 0;
       }
       
-      public function isResetParagons() : Boolean
-      {
-         return this._nodeData != null && this._nodeData.isResetParagons;
-      }
-      
-      public function isLockedByParagons() : Boolean
-      {
-         return this._nodeData != null && this._nodeData.isLockedByParagons;
-      }
-      
       public function isElite() : Boolean
       {
          return this._nodeData != null && (this._nodeData.state & NODE_STATE_FLAGS.ELITE) > 0;
@@ -433,6 +453,11 @@ package net.wg.gui.lobby.techtree.nodes
          return this._nodeData != null && (this._nodeData.state & NODE_STATE_FLAGS.LOCKED) > 0;
       }
       
+      public function isLockedByParagons() : Boolean
+      {
+         return this._nodeData != null && this._nodeData.isLockedByParagons;
+      }
+      
       public function isNext2Unlock() : Boolean
       {
          return this._nodeData != null && (this._nodeData.state & NODE_STATE_FLAGS.NEXT_2_UNLOCK) > 0;
@@ -441,6 +466,11 @@ package net.wg.gui.lobby.techtree.nodes
       public function isPremium() : Boolean
       {
          return this._nodeData != null && (this._nodeData.state & NODE_STATE_FLAGS.PREMIUM) > 0;
+      }
+      
+      public function isResetParagons() : Boolean
+      {
+         return this._nodeData != null && this._nodeData.isResetParagons;
       }
       
       public function isSelected() : Boolean
@@ -536,13 +566,19 @@ package net.wg.gui.lobby.techtree.nodes
                this._experienceBlock.setData(this._nodeData.earnedXP,this.isElite());
             }
          }
+         this.paragonsInfo.visible = StringUtils.isNotEmpty(this._nodeData.paragonsPoints);
+         if(this.paragonsInfo.visible)
+         {
+            this.paragonsInfo.setData(this._nodeData.paragonsPoints,this._nodeData.paragonsType);
+            this.paragonsInfo.validateNow();
+         }
          this.collectibleStatus.visible = this.isCollectible();
          this.price.visible = this._nodeState != NodeRendererState.ROOT_HANGAR && this._nodeState != NodeRendererState.ROOT_COLLECTIBLE;
          if(this.price.visible && this._data.itemPrices)
          {
             if(this.isEarlyAccess() && (this.isLocked() || this.isNext2Unlock()) && !this._nodeData.isEarlyAccessLocked)
             {
-               this.price.setData(new ItemPriceVO({"price":[[EARLY_ACCESS_COIN_ID,this._nodeData.earlyAccessTotalTokens]]}));
+               this.price.setData(new ItemPriceVO({"EARLY_ACCESS_PRICE_ID":[[EARLY_ACCESS_COIN_ID,this._nodeData.earlyAccessTotalTokens]]}));
             }
             else
             {
@@ -725,6 +761,23 @@ package net.wg.gui.lobby.techtree.nodes
             this._experienceBlock.x = -this._experienceBlock.actualWidth >> 1;
             _loc1_ += this._experienceBlock.actualHeight | 0;
          }
+         this.paragonsInfoDivider.visible = this.paragonsInfo.visible && _loc2_;
+         if(this.paragonsInfoDivider.visible)
+         {
+            this.paragonsInfoDivider.y = _loc1_ | 0;
+            this.paragonsInfoDivider.x = -(this.paragonsInfoDivider.width >> 1);
+            _loc1_ += PARAGONS_INFO_DIVIDER_Y_GAP;
+         }
+         else
+         {
+            _loc1_ += PARAGONS_INFO_OFFSET;
+         }
+         if(this.paragonsInfo.visible)
+         {
+            this.paragonsInfo.y = _loc1_ | 0;
+            this.paragonsInfo.x = -(this.paragonsInfo.actualWidth >> 1);
+            _loc1_ += this.paragonsInfo.actualHeight | 0;
+         }
          if(this.earlyAccessStatus.visible)
          {
             if(!_loc2_)
@@ -855,9 +908,9 @@ package net.wg.gui.lobby.techtree.nodes
       private function onButtonRollOverHandler(param1:MouseEvent) : void
       {
          var _loc2_:String = null;
-         var _loc3_:ITooltipProps = null;
+         var _loc3_:String = null;
          var _loc4_:String = null;
-         var _loc5_:String = null;
+         var _loc5_:ITooltipProps = null;
          var _loc6_:String = null;
          var _loc7_:String = null;
          if(param1.target != this.actionButton)
@@ -867,20 +920,20 @@ package net.wg.gui.lobby.techtree.nodes
             {
                if(this.earlyAccessQuestsButton.enabled)
                {
-                  _loc3_ = ITooltipProps(this._tooltipMgr.getDefaultTooltipProps().clone());
-                  _loc3_.maxWidth = EARLY_ACCESS_SIMPLE_TOOLTIP_MAX_WIDTH;
+                  _loc5_ = ITooltipProps(this._tooltipMgr.getDefaultTooltipProps().clone());
+                  _loc5_.maxWidth = EARLY_ACCESS_SIMPLE_TOOLTIP_MAX_WIDTH;
                   if(this._nodeData.isEarlyAccessCanBuy)
                   {
-                     _loc4_ = TOOLTIPS.TECHTREEPAGE_EARLYACCESSBUYENTRYPOINTTOOLTIP_HEADER;
-                     _loc5_ = TOOLTIPS.TECHTREEPAGE_EARLYACCESSBUYENTRYPOINTTOOLTIP_BODY;
+                     _loc3_ = TOOLTIPS.TECHTREEPAGE_EARLYACCESSBUYENTRYPOINTTOOLTIP_HEADER;
+                     _loc4_ = TOOLTIPS.TECHTREEPAGE_EARLYACCESSBUYENTRYPOINTTOOLTIP_BODY;
                   }
                   else
                   {
-                     _loc4_ = TOOLTIPS.TECHTREEPAGE_EARLYACCESSQUESTSENTRYPOINTTOOLTIP_HEADER;
-                     _loc5_ = TOOLTIPS.TECHTREEPAGE_EARLYACCESSQUESTSENTRYPOINTTOOLTIP_BODY;
+                     _loc3_ = TOOLTIPS.TECHTREEPAGE_EARLYACCESSQUESTSENTRYPOINTTOOLTIP_HEADER;
+                     _loc4_ = TOOLTIPS.TECHTREEPAGE_EARLYACCESSQUESTSENTRYPOINTTOOLTIP_BODY;
                   }
-                  _loc6_ = this._tooltipMgr.getNewFormatter().addHeader(_loc4_,true).addBody(_loc5_,true).make();
-                  this._tooltipMgr.showComplex(_loc6_,_loc3_);
+                  _loc6_ = this._tooltipMgr.getNewFormatter().addHeader(_loc3_,true).addBody(_loc4_,true).make();
+                  this._tooltipMgr.showComplex(_loc6_,_loc5_);
                }
                else
                {
@@ -900,11 +953,11 @@ package net.wg.gui.lobby.techtree.nodes
                this._tooltipMgr.showWulfTooltip(_loc2_);
             }
          }
-         if(this.isCollectible())
+         else if(this.isCollectible())
          {
             if(this.actionButton.enabled)
             {
-               _loc7_ = App.utils.locale.makeString(NATIONS.genetiveCase(this._owner.getNation()));
+               _loc7_ = this._locale.makeString(NATIONS.genetiveCase(this._owner.getNation()));
                this._tooltipMgr.showComplexWithParams(TOOLTIPS.RESEARCHPAGE_COLLECTIBLEVEHICLE_VEHICLEENABLED,new ToolTipParams({},{"nation":_loc7_}));
             }
             else
@@ -925,7 +978,33 @@ package net.wg.gui.lobby.techtree.nodes
          }
       }
       
-      private function onButtonRollOutHandler(param1:MouseEvent) : void
+      private function onParagonsRollOverHandler(param1:MouseEvent) : void
+      {
+         var _loc3_:String = null;
+         var _loc4_:String = null;
+         var _loc2_:String = TOOLTIPS.TECHTREEPAGE_PARAGONS_HEADER;
+         if(this._nodeData.paragonsType == ParagonsTypeStrings.FIRST_RESEARCH_TYPE)
+         {
+            if(!this._paragonsTooltipNewResearch)
+            {
+               _loc3_ = this._locale.makeString(TOOLTIPS.TECHTREEPAGE_PARAGONS_FIRSTRESEARCH_BODY,{"researchStr":App.textMgr.getTextStyleById(TEXT_MANAGER_STYLES.NEUTRAL_TEXT,this._locale.makeString(TOOLTIPS.TECHTREEPAGE_PARAGONS_FIRSTRESEARCH_RESEARCHSTR))});
+               this._paragonsTooltipNewResearch = this._tooltipMgr.getNewFormatter().addHeader(_loc2_,true).addBody(_loc3_).make();
+            }
+            _loc4_ = this._paragonsTooltipNewResearch;
+         }
+         else
+         {
+            if(!this._paragonsTooltipMakeBattle)
+            {
+               _loc3_ = PARAGONS.RESETBRANCH_TOOLTIP_PROGRESSIONPOINTS_DESCRIPTION;
+               this._paragonsTooltipMakeBattle = this._tooltipMgr.getNewFormatter().addHeader(_loc2_,true).addBody(_loc3_,true).make();
+            }
+            _loc4_ = this._paragonsTooltipMakeBattle;
+         }
+         this._tooltipMgr.showComplex(_loc4_);
+      }
+      
+      private function onRollOutHandler(param1:MouseEvent) : void
       {
          this._tooltipMgr.hide();
       }

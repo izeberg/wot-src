@@ -33,7 +33,7 @@ msgstr "Параметры бою"
 
 msgid "domain/battleSeasonModifiers/description"
 msgstr ""
-"Змяняе пэўныя параметры ўсёй тэхнікі, якая бярэ удзел у баях Умацаванага "
+"Змяняе пэўныя параметры ўсёй тэхнікі, якая бярэ ўдзел у баях Умацаванага "
 "раёна."
 
 msgid "domain/battleSeasonModifiers/name"
@@ -41,7 +41,7 @@ msgstr "Мадыфікатар Умацаванага раёна"
 
 msgid "domain/battleSeasonModifiersGM/description"
 msgstr ""
-"Змяняе пэўныя параметры ўсёй тэхнікі, якая бярэ удзел у баях на Глабальнай "
+"Змяняе пэўныя параметры ўсёй тэхнікі, якая бярэ ўдзел у баях на Глабальнай "
 "карце."
 
 msgid "domain/battleSeasonModifiersGM/name"
@@ -181,7 +181,7 @@ msgid "modifier/name/fakeComp7DeviceDamage"
 msgstr "Павелічэнне трываласці модуляў тэхнікі"
 
 msgid "modifier/name/fakeComp7GoldShell"
-msgstr "Прабіццё спецыяльных снарадаў на 100 метраў"
+msgstr "Прабіццё спецыяльных снарадаў"
 
 msgid "modifier/name/fakeComp7RadioLightTank"
 msgstr "Далёкасць радыёсувязі (лёгкія танкі)"
@@ -206,7 +206,7 @@ msgid "modifier/name/fakeSHVisionLightTank"
 msgstr "Радыус агляду (лёгкія гусенічныя танкі)"
 
 msgid "modifier/name/fakeSHVisionOtherTank"
-msgstr "Радыус агляду (сярэднія і цяжкія танкі, а таксама СТ-САУ)"
+msgstr "Радыус агляду (сярэднія і цяжкія танкі, а таксама СТ-САУ)"
 
 msgid "modifier/name/fwMaxSpeed"
 msgstr "Максімальная хуткасць руху наперад"

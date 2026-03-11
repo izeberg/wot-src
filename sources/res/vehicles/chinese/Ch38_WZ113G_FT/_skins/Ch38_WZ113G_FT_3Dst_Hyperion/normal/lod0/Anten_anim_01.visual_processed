@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>group</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>Root</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.000000 0.000000</row3>
+				</transform>
+				<node>
+					<identifier>Antenna</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>-0.248191 1.664734 -0.658268</row3>
+					</transform>
+					<node>
+						<identifier>Antenna1</identifier>
+						<transform>
+							<row0>0.342020 -0.536289 -0.771633</row0>
+							<row1>0.939693 0.195193 0.280851</row1>
+							<row2>0.000000 -0.821154 0.570706</row2>
+							<row3>-0.150287 0.394466 0.122129</row3>
+						</transform>
+						<node>
+							<identifier>Antenna1_BlendBone</identifier>
+							<transform>
+								<row0>0.342020 0.939693 -0.000000</row0>
+								<row1>-0.536289 0.195193 -0.821154</row1>
+								<row2>0.771632 -0.280851 -0.570706</row2>
+								<row3>0.826911 0.123081 1.996899</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>Antenna2</identifier>
+						<transform>
+							<row0>-0.342020 -0.536289 -0.771633</row0>
+							<row1>-0.939693 0.195193 0.280851</row1>
+							<row2>-0.000000 0.821154 -0.570706</row2>
+							<row3>0.151081 0.398149 0.119569</row3>
+						</transform>
+						<node>
+							<identifier>Antenna2_BlendBone</identifier>
+							<transform>
+								<row0>-0.342020 -0.939693 -0.000000</row0>
+								<row1>-0.536289 0.195193 0.821154</row1>
+								<row2>0.771632 -0.280851 0.570706</row2>
+								<row3>0.657410 -0.342620 -2.001384</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>Antenna3</identifier>
+						<transform>
+							<row0>-0.000400 -0.255438 -0.966825</row0>
+							<row1>-0.001098 0.966825 -0.255437</row1>
+							<row2>0.999999 0.000960 -0.000667</row2>
+							<row3>-0.001249 0.271733 0.207511</row3>
+						</transform>
+						<node>
+							<identifier>Antenna3_BlendBone</identifier>
+							<transform>
+								<row0>-0.000400 -0.001098 0.999999</row0>
+								<row1>-0.255438 0.966825 0.000960</row1>
+								<row2>0.966825 0.255437 0.000667</row2>
+								<row3>0.058743 -1.987639 0.247281</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>Antenna4</identifier>
+						<transform>
+							<row0>0.000400 -0.817140 -0.576440</row0>
+							<row1>0.001098 -0.576439 0.817140</row1>
+							<row2>-0.999999 -0.000960 0.000667</row2>
+							<row3>-0.000504 0.521823 0.040554</row3>
+						</transform>
+						<node>
+							<identifier>Antenna4_BlendBone</identifier>
+							<transform>
+								<row0>0.000400 0.001098 -0.999999</row0>
+								<row1>-0.817140 -0.576439 -0.000960</row1>
+								<row2>0.576440 -0.817140 -0.000667</row2>
+								<row3>1.430747 1.765449 -0.246184</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>Antenna_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>0.248191 -1.664734 0.658268</row3>
+						</transform>
+					</node>
+				</node>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>Antenna_BlendBone</node>
+		<node>Antenna1_BlendBone</node>
+		<node>Antenna2_BlendBone</node>
+		<node>Antenna3_BlendBone</node>
+		<node>Antenna4_BlendBone</node>
+		<geometry>
+			<vertices>Antena_anim_Shape.vertices</vertices>
+			<primitive>Antena_anim_Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_hull_02_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<materialKind>0</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/chinese/Ch38_WZ113G_FT/_skins/Ch38_WZ113G_FT_3Dst_Hyperion/WZ113G_FT_3Dst_Hyperion_hull_02_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/chinese/Ch38_WZ113G_FT/_skins/Ch38_WZ113G_FT_3Dst_Hyperion/WZ113G_FT_3Dst_Hyperion_hull_02_AO.dds</Texture>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>7.014000 7.014000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/chinese/Ch38_WZ113G_FT/_skins/Ch38_WZ113G_FT_3Dst_Hyperion/WZ113G_FT_3Dst_Hyperion_hull_02_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/chinese/Ch38_WZ113G_FT/_skins/Ch38_WZ113G_FT_3Dst_Hyperion/WZ113G_FT_3Dst_Hyperion_hull_02_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.247860 1.971428 0.485142</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>-0.420378 1.609829 -0.817374</min>
+		<max>-0.075342 2.333026 -0.152911</max>
+	</boundingBox>
+	<geometrySize>43748</geometrySize>
+	<minUVDensity>0.009485</minUVDensity>
+</root>

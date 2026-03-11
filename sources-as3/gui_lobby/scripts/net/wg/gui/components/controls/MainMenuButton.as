@@ -89,7 +89,11 @@ package net.wg.gui.components.controls
       
       private var _isTooltipSpecial:Boolean = false;
       
+      private var _isWulfTooltip:Boolean = false;
+      
       private var _tooltipMgr:ITooltipMgr;
+      
+      private var _tooltipArgs:Array = null;
       
       public function MainMenuButton()
       {
@@ -132,6 +136,7 @@ package net.wg.gui.components.controls
          this._textFormat = null;
          this._commonsUtils = null;
          this._tooltipMgr = null;
+         this._tooltipArgs = null;
          super.onDispose();
       }
       
@@ -319,6 +324,10 @@ package net.wg.gui.components.controls
          {
             this._tooltipMgr.showSpecial(_tooltip,null);
          }
+         if(this._isWulfTooltip && _tooltip)
+         {
+            this._tooltipMgr.showWulfTooltip.apply(this._tooltipMgr,[_tooltip].concat(this._tooltipArgs));
+         }
          else
          {
             super.showTooltip();
@@ -419,6 +428,16 @@ package net.wg.gui.components.controls
       public function set isTooltipSpecial(param1:Boolean) : void
       {
          this._isTooltipSpecial = param1;
+      }
+      
+      public function set isWulfTooltip(param1:Boolean) : void
+      {
+         this._isWulfTooltip = param1;
+      }
+      
+      public function set tooltipArgs(param1:Array) : void
+      {
+         this._tooltipArgs = param1;
       }
       
       [Inspectable(defaultValue="true",name="caps",type="Boolean")]

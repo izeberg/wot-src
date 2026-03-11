@@ -13,9 +13,9 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>polySurface2Shape.vertices</vertices>
-			<stream>polySurface2Shape.colour</stream>
-			<primitive>polySurface2Shape.indices</primitive>
+			<vertices>s_nd0_0Shape.vertices</vertices>
+			<stream>s_nd0_0Shape.colour</stream>
+			<primitive>s_nd0_0Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -25,7 +25,7 @@
 					<collisionFlags>255</collisionFlags>
 					<property>
 						alphaFadeAmountFresnel
-						<Vector4>0.000000 0.000000 1.000000 0.000000</Vector4>
+						<Vector4>0.000000 0.000000 3.000000 1.000000</Vector4>
 					</property>
 					<property>
 						alphaFreshnelEnable
@@ -71,15 +71,19 @@
 						softFactor
 						<Float>0.000000</Float>
 					</property>
+					<property>
+						useSoftEdges
+						<Bool>true</Bool>
+					</property>
 				</material>
-				<groupOrigin>-0.000022 0.301450 3.715987</groupOrigin>
+				<groupOrigin>-0.000022 0.301450 3.710988</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-1.920569 0.247245 3.713847</min>
-		<max>1.920526 0.355655 3.718128</max>
+		<min>-1.920569 0.247245 3.708847</min>
+		<max>1.920526 0.355655 3.713128</max>
 	</boundingBox>
 	<geometrySize>248</geometrySize>
-	<minUVDensity>14.125918</minUVDensity>
+	<minUVDensity>14.125929</minUVDensity>
 </root>

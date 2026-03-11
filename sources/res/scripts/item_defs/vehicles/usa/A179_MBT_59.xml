@@ -101,8 +101,8 @@
 		<weight>19770</weight>
 		<maxHealth>1000</maxHealth>
 		<ammoBayHealth>
-			<maxHealth>70</maxHealth>
-			<maxRegenHealth>60</maxRegenHealth>
+			<maxHealth>250</maxHealth>
+			<maxRegenHealth>170</maxRegenHealth>
 			<repairCost>
 				1.0
 				<!--BW_String-->
@@ -2131,7 +2131,7 @@
 			<guns>
 				<_152mm_XM81_59>
 					shared
-					<maxAmmo>22</maxAmmo>
+					<maxAmmo>25</maxAmmo>
 					<armor>
 						<armor_1>
 							120
@@ -2167,7 +2167,10 @@
 						0.3
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>20</reloadTime>
+					<reloadTime>
+						21.5
+						<!--BW_String-->
+					</reloadTime>
 					<aimingTime>
 						2.5
 						<!--BW_String-->
@@ -2202,7 +2205,7 @@
 							0.44
 							<!--BW_String-->
 						</afterShotDispersionRadius>
-						<coolingDelay>23</coolingDelay>
+						<coolingDelay>25</coolingDelay>
 					</dualAccuracy>
 					<customizationSlots>
 						<slot>
@@ -2453,7 +2456,7 @@
 			</customization>
 			<wwturretRotatorSoundManual>tur_mech_trav</wwturretRotatorSoundManual>
 			<physicsShape>
-				0.991 -0.017 1.043 0 0.312 0.593 0.538 0 0.427 0.5 0 0.5 0 0.1 0
+				0.991 -0.017 1.043 0 0.316 0.595 0.538 0 0.427 0.5 0 0.5 0 0.1 0
 				<!--BW_String-->
 			</physicsShape>
 			<camouflage>

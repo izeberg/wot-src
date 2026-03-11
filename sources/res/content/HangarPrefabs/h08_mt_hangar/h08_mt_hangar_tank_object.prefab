@@ -203,16 +203,13 @@
 					<property>
 						<name>Position</name>
 						<value>
-							-4.69344 0.00344769 5.71627
+							-4.58128 0.00344769 5.44449
 							<!--BW_String-->
 						</value>
 					</property>
 					<property>
 						<name>Scale</name>
-						<value>
-							0.7 0.7 0.7
-							<!--BW_String-->
-						</value>
+						<value>1 1 1</value>
 					</property>
 					<property>
 						<name>Rotation</name>
@@ -586,6 +583,10 @@
 						<name>Cast Shadows</name>
 						<value>1</value>
 					</property>
+					<property>
+						<name>Parts</name>
+						<collection/>
+					</property>
 				</config>
 			</component>
 			<component>
@@ -600,6 +601,10 @@
 					<property>
 						<name>Cast Shadows</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>Parts</name>
+						<collection/>
 					</property>
 				</config>
 			</component>
@@ -616,6 +621,10 @@
 						<name>Cast Shadows</name>
 						<value>1</value>
 					</property>
+					<property>
+						<name>Parts</name>
+						<collection/>
+					</property>
 				</config>
 			</component>
 			<component>
@@ -630,6 +639,10 @@
 					<property>
 						<name>Cast Shadows</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>Parts</name>
+						<collection/>
 					</property>
 				</config>
 			</component>
@@ -646,6 +659,10 @@
 						<name>Cast Shadows</name>
 						<value>0</value>
 					</property>
+					<property>
+						<name>Parts</name>
+						<collection/>
+					</property>
 				</config>
 			</component>
 			<component>
@@ -660,6 +677,10 @@
 					<property>
 						<name>Cast Shadows</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>Parts</name>
+						<collection/>
 					</property>
 				</config>
 			</component>
@@ -676,6 +697,10 @@
 						<name>Cast Shadows</name>
 						<value>1</value>
 					</property>
+					<property>
+						<name>Parts</name>
+						<collection/>
+					</property>
 				</config>
 			</component>
 			<component>
@@ -691,6 +716,10 @@
 						<name>Cast Shadows</name>
 						<value>1</value>
 					</property>
+					<property>
+						<name>Parts</name>
+						<collection/>
+					</property>
 				</config>
 			</component>
 			<component>
@@ -705,6 +734,10 @@
 					<property>
 						<name>Cast Shadows</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>Parts</name>
+						<collection/>
 					</property>
 				</config>
 			</component>

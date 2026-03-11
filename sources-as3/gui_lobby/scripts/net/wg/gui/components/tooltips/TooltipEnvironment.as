@@ -81,7 +81,7 @@ package net.wg.gui.components.tooltips
             topPosition += TITLE_TEXT_GAP;
             this.textTF.width = CONTENT_WIDTH;
          }
-         this.titleTF.x = _loc1_;
+         this.titleTF.x = _loc1_ + (this.textTF.width - this.titleTF.width >> 1);
          this.textTF.x = _loc1_;
          this.textTF.y = topPosition | 0;
          App.utils.commons.updateTextFieldSize(this.textTF,false,true);

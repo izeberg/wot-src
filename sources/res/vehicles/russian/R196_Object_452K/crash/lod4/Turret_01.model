@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<nodefullVisual>vehicles/russian/R196_Object_452K/crash/lod4/Turret_01</nodefullVisual>
 	<tank>true</tank>
 	<visibilityBox>
-		<min>-1.724507 -0.006497 -3.029094</min>
-		<max>1.646537 1.362508 2.155365</max>
+		<min>-1.724507 -0.006497 -2.468728</min>
+		<max>1.646537 1.020175 2.155365</max>
 	</visibilityBox>
+	<nodefullVisual>vehicles/russian/R196_Object_452K/crash/lod4/Turret_01</nodefullVisual>
 </root>

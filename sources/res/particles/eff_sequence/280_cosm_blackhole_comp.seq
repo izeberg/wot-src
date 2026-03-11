@@ -10,6 +10,7 @@
 		<name>Start</name>
 		<type>model</type>
 		<resource>content/Environment/env_null_model/null_model.model</resource>
+		<castsShadow>false</castsShadow>
 		<track>
 			<name>sequence</name>
 			<type>sequence</type>
@@ -37,6 +38,7 @@
 		<name>End</name>
 		<type>model</type>
 		<resource>content/Environment/env_null_model/null_model.model</resource>
+		<castsShadow>false</castsShadow>
 		<track>
 			<name>sequence</name>
 			<type>sequence</type>

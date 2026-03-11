@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/intunion/Un15_SBM_44/normal/lod3/Gun_03</parent>
+	<tank>true</tank>
+	<extent>96.000000</extent>
+	<nodefullVisual>vehicles/intunion/Un15_SBM_44/normal/lod2/Gun_03</nodefullVisual>
+	<visibilityBox>
+		<min>-0.310163 -0.208719 0.017240</min>
+		<max>0.266198 0.200890 2.382173</max>
+	</visibilityBox>
+</root>

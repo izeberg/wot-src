@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<bonuses>
+		<lootBoxToken>
+			<priority>10</priority>
+		</lootBoxToken>
+		<premium_plus>
+			<priority>20</priority>
+		</premium_plus>
+		<crystal>
+			<priority>30</priority>
+		</crystal>
+		<credits>
+			<priority>40</priority>
+		</credits>
+		<items>
+			<priority>50</priority>
+			<override>
+				<id>54011 53499 54779</id>
+				<priority>60</priority>
+			</override>
+		</items>
+		<freeXP>
+			<priority>70</priority>
+		</freeXP>
+		<battlePassPoints>
+			<priority>80</priority>
+		</battlePassPoints>
+		<default>
+			<priority>1000</priority>
+		</default>
+	</bonuses>
+</root>

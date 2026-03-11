@@ -144,7 +144,7 @@
 					<fx>shaders/std_effects/PBS_tank.fx</fx>
 					<property>
 						alphaReference
-						<Int>160</Int>
+						<Int>128</Int>
 					</property>
 					<property>
 						colorIdMap
@@ -173,6 +173,10 @@
 					<property>
 						normalMap
 						<Texture>vehicles/russian/R219_Waffentrager_E100_Gold/Waffentrager_E100_Gold_chassis_01_ANM.dds</Texture>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
 					</property>
 				</material>
 				<groupOrigin>0.000851 -0.484616 0.068769</groupOrigin>

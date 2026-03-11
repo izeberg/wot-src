@@ -17,6 +17,21 @@
 			<UUID>3bb568d4-5d82-4e00-b95b-011284f80ad5</UUID>
 			<flags>0</flags>
 		</GameObject>
+		<GameObject>
+			<name>Sounds</name>
+			<UUID>e98a1948-7493-3531-8a08-3ba8c8224e1f</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>abilityStartSound</name>
+			<UUID>60649c9a-a196-31c9-bc90-131b6989ae90</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>abilityStopSound</name>
+			<UUID>fc64c081-2633-3386-a6a5-67b9e2659c15</UUID>
+			<flags>0</flags>
+		</GameObject>
 	</GameObjects>
 	<components>
 		<ComponentPool>
@@ -39,6 +54,36 @@
 					<property>
 						<name>Parent</name>
 						<link>0bf0df25-a39a-4c3b-8e4b-9aabce372255</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>3</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>0bf0df25-a39a-4c3b-8e4b-9aabce372255</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>4</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>e98a1948-7493-3531-8a08-3ba8c8224e1f</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>5</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>e98a1948-7493-3531-8a08-3ba8c8224e1f</link>
 					</property>
 				</config>
 			</component>
@@ -97,6 +142,60 @@
 					<property>
 						<name>Rotation</name>
 						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>3</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>4</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>5</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>0 0 0</value>
 					</property>
 				</config>
 			</component>
@@ -305,6 +404,46 @@
 					<property>
 						<name>Loop Count</name>
 						<value>-1</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>Sound3D</type>
+			<version>1</version>
+			<component>
+				<objectIndex>4</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Object name</name>
+						<value>startSound</value>
+					</property>
+					<property>
+						<name>Event name</name>
+						<value>ability_champion_start</value>
+					</property>
+					<property>
+						<name>AutoStart</name>
+						<value>0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>5</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Object name</name>
+						<value>stopSound</value>
+					</property>
+					<property>
+						<name>Event name</name>
+						<value>ability_champion_stop</value>
+					</property>
+					<property>
+						<name>AutoStart</name>
+						<value>0</value>
 					</property>
 				</config>
 			</component>

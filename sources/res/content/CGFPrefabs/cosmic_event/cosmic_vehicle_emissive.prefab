@@ -480,25 +480,6 @@
 			<type>DynamicModel</type>
 			<version>1</version>
 			<component>
-				<objectIndex>0</objectIndex>
-				<flags>2</flags>
-				<config>
-					<property>
-						<name>Model name</name>
-						<isAsset>true</isAsset>
-						<value>vehicles/czech/Cz00_COSM_Gravizapa/normal/lod0/Hull.model</value>
-					</property>
-					<property>
-						<name>Cast Shadows</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Parts</name>
-						<collection/>
-					</property>
-				</config>
-			</component>
-			<component>
 				<objectIndex>2</objectIndex>
 				<flags>3</flags>
 				<config>
@@ -582,25 +563,6 @@
 						<name>Model name</name>
 						<isAsset>true</isAsset>
 						<value>particles/content_deferred/GFX_models/cosm_event/vehicle_engine_04.model</value>
-					</property>
-					<property>
-						<name>Cast Shadows</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Parts</name>
-						<collection/>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>8</objectIndex>
-				<flags>2</flags>
-				<config>
-					<property>
-						<name>Model name</name>
-						<isAsset>true</isAsset>
-						<value>vehicles/czech/Cz00_COSM_Gravizapa/normal/lod0/Gun_01.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>

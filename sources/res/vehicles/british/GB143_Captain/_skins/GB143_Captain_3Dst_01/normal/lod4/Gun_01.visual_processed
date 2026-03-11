@@ -112,7 +112,7 @@
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 1.000000 0.000000</row1>
 					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>-0.000000 0.000000 0.000000</row3>
+					<row3>-0.000000 0.000000 0.001000</row3>
 				</transform>
 				<node>
 					<identifier>static_joint_BlendBone</identifier>
@@ -120,7 +120,7 @@
 						<row0>1.000000 0.000000 0.000000</row0>
 						<row1>0.000000 1.000000 0.000000</row1>
 						<row2>0.000000 0.000000 -1.000000</row2>
-						<row3>0.000000 -0.000000 -0.000000</row3>
+						<row3>0.000000 -0.000000 -0.001000</row3>
 					</transform>
 				</node>
 			</node>
@@ -162,18 +162,14 @@
 						excludeMaskAndAOMap
 						<Texture>vehicles/british/GB143_Captain/_skins/GB143_Captain_3Dst_01/Captain_3Dst_01_proxy_AO.dds</Texture>
 					</property>
-					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
 				</material>
-				<groupOrigin>0.006210 0.099331 -1.739763</groupOrigin>
+				<groupOrigin>0.006210 0.099331 -1.740263</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<constraints/>
 	<boundingBox>
-		<min>-0.914660 -0.344215 -0.707206</min>
+		<min>-0.914660 -0.344215 -0.706206</min>
 		<max>0.927080 0.542876 4.186731</max>
 	</boundingBox>
 	<geometrySize>2608</geometrySize>

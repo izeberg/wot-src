@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/intunion/Un15_SBM_44/crash/lod1/Chassis</parent>
+	<tank>true</tank>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.606836 -0.001506 -2.910475</min>
+		<max>1.606836 1.069073 2.983321</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/intunion/Un15_SBM_44/crash/lod0/Chassis</nodefullVisual>
+</root>

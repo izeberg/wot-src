@@ -1,4 +1,4 @@
-import base64, os, datetime, json, copy, cPickle as pickle, logging, zlib
+import base64, os, datetime, json, copy, typing, cPickle as pickle, logging, zlib
 from collections import defaultdict
 import Math, BigWorld, ArenaType, Settings, CommandMapping, constants, Keys, Event, AreaDestructibles, BWReplay, TriggersManager
 from aih_constants import CTRL_MODE_NAME
@@ -173,7 +173,7 @@ class BattleReplay(object):
     warpTime = property(lambda self: self.__warpTime)
     rewind = property(lambda self: self.__rewind)
     isAutoRecordingEnabled = property(lambda self: self.__isAutoRecordingEnabled)
-    arenaInfo = property(lambda self: json.loads(self.__replayCtrl.getArenaInfoStr()))
+    arenaInfo = property(lambda self: self.__getArenaInfo())
 
     def resetUpdateGunOnTimeWarp(self):
         self.__updateGunOnTimeWarp = False
@@ -240,8 +240,13 @@ class BattleReplay(object):
         self.__rewind = False
         self.replayTimeout = 0
         self.__arenaPeriod = -1
+        self.__arenaPeriodLength = -1
         self.__handleInput = True
         self.__previousPeriod = -1
+        self.__replayStartTime = 0
+        self.__replayEndTime = 0
+        self.__actualReplayStartTime = 0
+        self.__actualReplayEndTime = 0
         self.enableAutoRecordingBattles(True)
         self.onCommandReceived = Event.Event()
         self.onAmmoSettingChanged = Event.Event()
@@ -310,6 +315,7 @@ class BattleReplay(object):
         self.__videoCameraMatrix = None
         self.__warpTime = -1.0
         self.__arenaPeriod = -1
+        self.__arenaPeriodLength = -1
         return
 
     def record(self, fileName=None):
@@ -385,13 +391,9 @@ class BattleReplay(object):
         if self.__replayCtrl.startPlayback(fileName):
             self.__playbackSpeedIdx = self.__playbackSpeedModifiers.index(1.0)
             self.__savedPlaybackSpeedIdx = self.__playbackSpeedIdx
-            replayEndTime = self.__replayCtrl.getReplayEndTime()
-            totalReplayTime = self.__replayCtrl.getTimeMark(REPLAY_TIME_MARK_REPLAY_FINISHED)
-            replayStartTime = self.__replayCtrl.getReplayStartTime()
-            replayStartTime = min(replayStartTime, replayEndTime - MIN_REPLAY_TIME, totalReplayTime - MIN_REPLAY_TIME)
-            replayStartTime = max(replayStartTime, 0)
-            self.__replayStartTime = replayStartTime
-            self.__replayEndTime = replayEndTime
+            self.__replayStartTime = self.__replayCtrl.getReplayStartTime()
+            self.__replayEndTime = self.__replayCtrl.getReplayEndTime()
+            self.recalculateReplayTimes()
             g_replayEvents.onPlaying()
             self.onPlay(fileName, True)
             return True
@@ -916,7 +918,7 @@ class BattleReplay(object):
         replayTimes = self.__replayCtrl.getReplayTimes() - 1
         if replayTimes > 0:
             self.__replayCtrl.setReplayTimes(replayTimes)
-            self.timeWarp(self.__replayStartTime - self.currentTime)
+            self.timeWarp(self.__actualReplayStartTime)
             return
         self.__replayCtrl.processFinish()
         if not self.scriptModalWindowsEnabled:
@@ -982,9 +984,9 @@ class BattleReplay(object):
     def onPostTickCallback(self):
         self.__aoi.flush(self.getControlMode())
         currentTime = self.currentTime
-        if currentTime < self.__replayStartTime:
-            self.timeWarp(self.__replayStartTime - currentTime)
-        elif currentTime > self.__replayEndTime:
+        if currentTime < self.__actualReplayStartTime:
+            self.timeWarp(self.__actualReplayStartTime)
+        elif currentTime > self.__actualReplayEndTime:
             self.onReplayFinished()
 
     def setAmmoSetting(self, idx):
@@ -1233,8 +1235,25 @@ class BattleReplay(object):
                 self.__perviousPeriod = period
                 self.resetArenaPeriod()
         self.__arenaPeriod = period
+        self.__arenaPeriodLength = periodLength
         self.__replayCtrl.arenaPeriod = period
         self.__replayCtrl.arenaLength = periodLength
+        if period == ARENA_PERIOD.BATTLE:
+            self.recalculateReplayTimes()
+
+    def recalculateReplayTimes(self):
+        replayStartTime = self.__replayStartTime
+        replayEndTime = self.__replayEndTime
+        if self.__replayCtrl.isUsingReverseTimeFormat() and self.__arenaPeriodLength > 0:
+            if replayStartTime != 0:
+                replayStartTime = self.__arenaPeriodLength - replayStartTime
+            if replayEndTime != float('inf'):
+                replayEndTime = self.__arenaPeriodLength - replayEndTime
+        totalReplayTime = self.__replayCtrl.getTimeMark(REPLAY_TIME_MARK_REPLAY_FINISHED)
+        replayStartTime = min(replayStartTime, replayEndTime - MIN_REPLAY_TIME, totalReplayTime - MIN_REPLAY_TIME)
+        replayStartTime = max(replayStartTime, 0)
+        self.__actualReplayStartTime = replayStartTime
+        self.__actualReplayEndTime = replayEndTime
 
     def __onBootcampAccountMigrationComplete(self):
         if self.isRecording:
@@ -1277,6 +1296,13 @@ class BattleReplay(object):
         if BigWorld.player().isObserver():
             return BigWorld.player().arenaBonusType not in ARENA_BONUS_TYPE.BATTLE_ROYALE_RANGE
         return True
+
+    def __getArenaInfo(self):
+        arenaInfoStr = self.__replayCtrl.getArenaInfoStr()
+        if arenaInfoStr:
+            return json.loads(arenaInfoStr)
+        else:
+            return
 
 
 def _JSON_Encode(obj):

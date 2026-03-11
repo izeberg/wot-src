@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/russian/R225_Vasiliev_project/crash/lod2/Gun_01</parent>
+	<tank>true</tank>
+	<extent>
+		64.0
+		<!--BW_String-->
+	</extent>
+	<nodefullVisual>vehicles/russian/R225_Vasiliev_project/crash/lod1/Gun_01</nodefullVisual>
+	<visibilityBox>
+		<min>-0.357412 -0.409519 -1.208536</min>
+		<max>0.525831 0.301512 4.456416</max>
+	</visibilityBox>
+</root>

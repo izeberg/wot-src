@@ -49,15 +49,27 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<primitive>indices</primitive>
+			<vertices>hullShape.vertices</vertices>
+			<primitive>hullShape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>tank_hull_01</identifier>
 					<fx>shaders/std_effects/PBS_tank_crash.fx</fx>
-					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
+					<identifier>tank_hull_01</identifier>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>vehicles/german/G134_PzKpfw_VII/_skins/G134_PzKpfw_VII_3dst_Kinetic/PzKpfw_VII_3dst_Kinetic_hull_01_AM.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/german/G134_PzKpfw_VII/_skins/G134_PzKpfw_VII_3dst_Kinetic/PzKpfw_VII_3dst_Kinetic_hull_01_GMM.dds</Texture>
+					</property>
 					<property>
 						g_crashUVTiling
 						<Vector4>2.000000 2.000000 0.000000 0.000000</Vector4>
@@ -67,24 +79,12 @@
 						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
 					</property>
 					<property>
-						metallicGlossMap
-						<Texture>vehicles/german/G134_PzKpfw_VII/_skins/G134_PzKpfw_VII_3dst_Kinetic/PzKpfw_VII_3dst_Kinetic_hull_01_GMM.dds</Texture>
-					</property>
-					<property>
 						normalMap
 						<Texture>vehicles/german/G134_PzKpfw_VII/_skins/G134_PzKpfw_VII_3dst_Kinetic/PzKpfw_VII_3dst_Kinetic_hull_01_ANM.dds</Texture>
 					</property>
 					<property>
-						diffuseMap
-						<Texture>vehicles/german/G134_PzKpfw_VII/_skins/G134_PzKpfw_VII_3dst_Kinetic/PzKpfw_VII_3dst_Kinetic_hull_01_AM.dds</Texture>
-					</property>
-					<property>
 						excludeMaskAndAOMap
 						<Texture>vehicles/german/G134_PzKpfw_VII/_skins/G134_PzKpfw_VII_3dst_Kinetic/PzKpfw_VII_3dst_Kinetic_hull_01_AO.dds</Texture>
-					</property>
-					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>0.003698 0.086084 -0.351816</groupOrigin>
@@ -92,37 +92,37 @@
 			<primitiveGroup>
 				1
 				<material>
-					<identifier>tank_equipment</identifier>
 					<fx>shaders/std_effects/PBS_tank_crash.fx</fx>
 					<materialKind>0</materialKind>
+					<identifier>tank_equipment</identifier>
 					<collisionFlags>0</collisionFlags>
-					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
-					</property>
-					<property>
-						crashTileMap
-						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
-					</property>
 					<property>
 						diffuseMap
 						<Texture>vehicles/german/G134_PzKpfw_VII/_skins/G134_PzKpfw_VII_3dst_Kinetic/PzKpfw_VII_3dst_Kinetic_equipment_01_AM.dds</Texture>
 					</property>
 					<property>
-						excludeMaskAndAOMap
-						<Texture>vehicles/german/G134_PzKpfw_VII/_skins/G134_PzKpfw_VII_3dst_Kinetic/PzKpfw_VII_3dst_Kinetic_equipment_01_AO.dds</Texture>
-					</property>
-					<property>
-						g_crashUVTiling
-						<Vector4>4.000000 4.000000 0.000000 0.000000</Vector4>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 					<property>
 						metallicGlossMap
 						<Texture>vehicles/german/G134_PzKpfw_VII/_skins/G134_PzKpfw_VII_3dst_Kinetic/PzKpfw_VII_3dst_Kinetic_equipment_01_GMM.dds</Texture>
 					</property>
 					<property>
+						g_crashUVTiling
+						<Vector4>4.000000 4.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						crashTileMap
+						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
+					</property>
+					<property>
 						normalMap
 						<Texture>vehicles/german/G134_PzKpfw_VII/_skins/G134_PzKpfw_VII_3dst_Kinetic/PzKpfw_VII_3dst_Kinetic_equipment_01_ANM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/german/G134_PzKpfw_VII/_skins/G134_PzKpfw_VII_3dst_Kinetic/PzKpfw_VII_3dst_Kinetic_equipment_01_AO.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>0.254527 0.241143 0.321775</groupOrigin>
@@ -130,29 +130,29 @@
 			<primitiveGroup>
 				2
 				<material>
-					<identifier>tank_mat_inside</identifier>
 					<fx>shaders/std_effects/PBS_tank.fx</fx>
 					<materialKind>0</materialKind>
+					<identifier>tank_mat_inside</identifier>
 					<collisionFlags>0</collisionFlags>
 					<property>
 						diffuseMap
 						<Texture>vehicles/american/crash_inside/crash_inside_AM.dds</Texture>
 					</property>
 					<property>
-						excludeMaskAndAOMap
-						<Texture>vehicles/american/crash_inside/crash_inside_AO.dds</Texture>
+						metallicGlossMap
+						<Texture>vehicles/american/crash_inside/crash_inside_GMM.dds</Texture>
 					</property>
 					<property>
 						g_useNormalPackDXT1
 						<Bool>true</Bool>
 					</property>
 					<property>
-						metallicGlossMap
-						<Texture>vehicles/american/crash_inside/crash_inside_GMM.dds</Texture>
-					</property>
-					<property>
 						normalMap
 						<Texture>vehicles/american/crash_inside/crash_inside_NM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/american/crash_inside/crash_inside_AO.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>-0.001777 -0.000452 -0.230166</groupOrigin>
@@ -160,10 +160,22 @@
 			<primitiveGroup>
 				3
 				<material>
-					<identifier>tank_chassis_01</identifier>
 					<fx>shaders/std_effects/PBS_tank_crash.fx</fx>
-					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
+					<identifier>tank_chassis_01</identifier>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>vehicles/german/G134_PzKpfw_VII/_skins/G134_PzKpfw_VII_3dst_Kinetic/PzKpfw_VII_3dst_Kinetic_chassis_01_AM.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/german/G134_PzKpfw_VII/_skins/G134_PzKpfw_VII_3dst_Kinetic/PzKpfw_VII_3dst_Kinetic_chassis_01_GMM.dds</Texture>
+					</property>
 					<property>
 						g_crashUVTiling
 						<Vector4>2.000000 2.000000 0.000000 0.000000</Vector4>
@@ -173,24 +185,12 @@
 						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
 					</property>
 					<property>
-						metallicGlossMap
-						<Texture>vehicles/german/G134_PzKpfw_VII/_skins/G134_PzKpfw_VII_3dst_Kinetic/PzKpfw_VII_3dst_Kinetic_chassis_01_GMM.dds</Texture>
-					</property>
-					<property>
 						normalMap
 						<Texture>vehicles/german/G134_PzKpfw_VII/_skins/G134_PzKpfw_VII_3dst_Kinetic/PzKpfw_VII_3dst_Kinetic_chassis_01_ANM.dds</Texture>
 					</property>
 					<property>
-						diffuseMap
-						<Texture>vehicles/german/G134_PzKpfw_VII/_skins/G134_PzKpfw_VII_3dst_Kinetic/PzKpfw_VII_3dst_Kinetic_chassis_01_AM.dds</Texture>
-					</property>
-					<property>
 						excludeMaskAndAOMap
 						<Texture>vehicles/german/G134_PzKpfw_VII/_skins/G134_PzKpfw_VII_3dst_Kinetic/PzKpfw_VII_3dst_Kinetic_chassis_01_AO.dds</Texture>
-					</property>
-					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>0.000000 -0.475097 -0.068249</groupOrigin>

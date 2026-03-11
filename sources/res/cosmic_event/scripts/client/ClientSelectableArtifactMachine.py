@@ -1,5 +1,5 @@
 from ClientSelectableObject import ClientSelectableObject
-from cosmic_event.skeletons.battle_controller import ICosmicEventBattleController
+from skeletons.gui.game_control import ICosmicEventBattleController
 from helpers import dependency
 
 class ClientSelectableArtifactMachine(ClientSelectableObject):

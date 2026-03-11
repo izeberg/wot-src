@@ -4,4 +4,8 @@
 	<tank>true</tank>
 	<parent>vehicles/poland/Pl27_SDP_Wz_66T/crash/lod1/Gun_03</parent>
 	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-0.513568 -0.482858 -1.401164</min>
+		<max>0.512298 0.868294 5.645001</max>
+	</visibilityBox>
 </root>

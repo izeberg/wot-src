@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<materialNames/>
+	<visibilityBox>
+		<min>-0.493398 -0.466422 0.061099</min>
+		<max>0.805237 0.593498 3.969271</max>
+	</visibilityBox>
+	<extent>32.000000</extent>
+	<nodelessVisual>vehicles/chinese/Ch38_WZ113G_FT/_skins/Ch38_WZ113G_FT_3Dst_Hyperion/crash/lod0/Gun_05</nodelessVisual>
+	<parent>vehicles/chinese/Ch38_WZ113G_FT/_skins/Ch38_WZ113G_FT_3Dst_Hyperion/crash/lod1/Gun_05</parent>
+</root>

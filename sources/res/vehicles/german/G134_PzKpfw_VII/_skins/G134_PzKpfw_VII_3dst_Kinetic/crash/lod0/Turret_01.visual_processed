@@ -64,6 +64,10 @@
 						normalMap
 						<Texture>vehicles/german/G134_PzKpfw_VII/_skins/G134_PzKpfw_VII_3dst_Kinetic/PzKpfw_VII_3dst_Kinetic_equipment_01_ANM.dds</Texture>
 					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
 				</material>
 				<groupOrigin>0.000838 0.408130 -0.345580</groupOrigin>
 			</primitiveGroup>
@@ -97,6 +101,10 @@
 					<property>
 						excludeMaskAndAOMap
 						<Texture>vehicles/german/G134_PzKpfw_VII/_skins/G134_PzKpfw_VII_3dst_Kinetic/PzKpfw_VII_3dst_Kinetic_turret_01_AO.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>0.000000 0.690418 0.050656</groupOrigin>

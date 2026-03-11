@@ -7,81 +7,6 @@
 		<resource/>
 	</sequenceObject>
 	<sequenceObject>
-		<name>fx_dust</name>
-		<type>particle</type>
-		<resource>particles/Environment/interior/280_cosm_abilities_spawn_dust_04.eff</resource>
-		<track>
-			<name>position</name>
-			<type>vector3</type>
-			<frame>
-				<startTime>0.000000</startTime>
-				<value>0.000000 -66.294518 0.000000</value>
-				<inTangent>0.000000 0.000000 0.000000</inTangent>
-				<outTangent>0.000000 0.000000 0.000000</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-		</track>
-		<track>
-			<name>emission</name>
-			<type>float</type>
-			<frame>
-				<startTime>0.066667</startTime>
-				<value>1.000000</value>
-				<inTangent>-0.337079</inTangent>
-				<outTangent>-0.337079</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-			<frame>
-				<startTime>3.033334</startTime>
-				<value>0.000000</value>
-				<inTangent>-0.337079</inTangent>
-				<outTangent>-0.337079</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-		</track>
-	</sequenceObject>
-	<sequenceObject>
-		<name>stone</name>
-		<type>particle</type>
-		<resource>particles/environment/interior/280_cosm_artifact_spawn_l_zone_01.eff</resource>
-		<track>
-			<name>position</name>
-			<type>vector3</type>
-			<frame>
-				<startTime>0.000000</startTime>
-				<value>0.000000 -66.657028 0.000000</value>
-				<inTangent>0.000000 0.000000 0.000000</inTangent>
-				<outTangent>0.000000 0.000000 0.000000</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-		</track>
-		<track>
-			<name>emission</name>
-			<type>float</type>
-			<frame>
-				<startTime>0.000000</startTime>
-				<value>1.000000</value>
-				<inTangent>-0.004811</inTangent>
-				<outTangent>-0.004811</outTangent>
-				<tangentMode>512</tangentMode>
-			</frame>
-			<frame>
-				<startTime>1.666667</startTime>
-				<value>0.991981</value>
-				<inTangent>-0.318995</inTangent>
-				<outTangent>-0.318995</outTangent>
-				<tangentMode>2</tangentMode>
-			</frame>
-			<frame>
-				<startTime>3.233334</startTime>
-				<value>0.000000</value>
-				<inTangent>-0.633179</inTangent>
-				<outTangent>-0.633179</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-		</track>
-	</sequenceObject>
-	<sequenceObject>
 		<name>Column</name>
 		<type>model</type>
 		<resource>particles/content_deferred/GFX_models/cosm_event/Artifact_column_L_zone_01.model</resource>
@@ -133,30 +58,30 @@
 			<property>TintlColor</property>
 			<frame>
 				<startTime>0.000000</startTime>
-				<value>0.415686 0.878431 1.000000 0.000000</value>
+				<value>1.000000 0.274510 0.000000 0.000000</value>
 				<inTangent>0.000000 0.000000 0.000000 1.111111</inTangent>
 				<outTangent>0.000000 0.000000 0.000000 1.111111</outTangent>
 				<tangentMode>0</tangentMode>
 			</frame>
 			<frame>
 				<startTime>0.900000</startTime>
-				<value>0.415686 0.878431 1.000000 1.000000</value>
+				<value>1.000000 0.274510 0.000000 1.000000</value>
 				<inTangent>0.000000 0.000000 0.000000 0.498737</inTangent>
 				<outTangent>0.000000 0.000000 0.000000 0.498737</outTangent>
 				<tangentMode>0</tangentMode>
 			</frame>
 			<frame>
 				<startTime>5.300000</startTime>
-				<value>0.415686 0.878431 1.000000 0.500000</value>
+				<value>1.000000 0.274510 0.000000 0.500000</value>
 				<inTangent>0.000000 0.000000 0.000000 -0.413961</inTangent>
 				<outTangent>0.000000 0.000000 0.000000 -0.413961</outTangent>
 				<tangentMode>0</tangentMode>
 			</frame>
 			<frame>
 				<startTime>6.000000</startTime>
-				<value>0.415686 0.878431 1.000000 0.000000</value>
-				<inTangent>-0.000000 -0.000000 -0.000000 -0.714285</inTangent>
-				<outTangent>-0.000000 -0.000000 -0.000000 -0.714285</outTangent>
+				<value>1.000000 0.274510 0.000000 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.714286</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -0.714286</outTangent>
 				<tangentMode>0</tangentMode>
 			</frame>
 		</track>
@@ -376,6 +301,72 @@
 				<sequenceSound>ev_cosmic_artifact_spawn_zone_03</sequenceSound>
 				<type>play_till_end</type>
 				<fade>0.000000</fade>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>glitch</name>
+		<type>particle</type>
+		<resource>particles/Environment/interior/280_cosmic_glitch_s.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 -35.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>-33.333332</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.300000</startTime>
+				<value>0.000000</value>
+				<inTangent>-0.000000</inTangent>
+				<outTangent>34.285713</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.533333</startTime>
+				<value>8.000000</value>
+				<inTangent>34.285713</inTangent>
+				<outTangent>-0.569620</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.800000</startTime>
+				<value>5.000000</value>
+				<inTangent>-0.569620</inTangent>
+				<outTangent>-25.000025</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>6.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>-25.000025</inTangent>
+				<outTangent>-25.000025</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emissionSize</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>12.000000 50.000000 12.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
 			</frame>
 		</track>
 	</sequenceObject>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.574775 0.367222 -2.820100</min>
+		<max>1.574773 0.782585 -1.078066</max>
+	</visibilityBox>
+	<parent>vehicles/russian/R169_ST_II/_skins/R169_ST_II_3Dst_Oberon/normal/lod1/Panel</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/russian/R169_ST_II/_skins/R169_ST_II_3Dst_Oberon/normal/lod0/Panel</nodefullVisual>
+</root>

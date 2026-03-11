@@ -14,12 +14,14 @@ from gui.impl.lobby.tooltips.additional_rewards_tooltip import AdditionalRewards
 from helpers import dependency
 from skeletons.gui.game_control import IFunRandomController
 from skeletons.gui.lobby_context import ILobbyContext
+from skeletons.gui.shared import IItemsCache
 _DESTROY_ACTION_NAME = 'showHangar'
 SERVER_SETTINGS_KEYS = ('fun_random_config', )
 
 class FunRandomProgressionView(ViewImpl, LobbyHeaderVisibility, FunAssetPacksMixin, FunProgressionWatcher, FunSubModesWatcher):
     __funRandomCtrl = dependency.descriptor(IFunRandomController)
     __lobbyContext = dependency.descriptor(ILobbyContext)
+    __itemsCache = dependency.descriptor(IItemsCache)
     __slots__ = ('__tooltips', )
     _COMMON_SOUND_SPACE = FUN_PROGRESSION_SOUND_SPACE
 
@@ -41,14 +43,21 @@ class FunRandomProgressionView(ViewImpl, LobbyHeaderVisibility, FunAssetPacksMix
         return super(FunRandomProgressionView, self).createToolTip(event)
 
     def createToolTipContent(self, event, contentID):
-        if contentID == R.views.lobby.tooltips.AdditionalRewardsTooltip():
-            progression = self.getActiveProgression()
-            showCount, stageIdx = int(event.getArgument('showCount')), int(event.getArgument('stageIdx'))
-            packedRewards = packAdditionalRewards(progression, stageIdx, showCount) if progression else []
-            if packedRewards:
-                return AdditionalRewardsTooltip(packedRewards)
-            return None
-        return super(FunRandomProgressionView, self).createToolTipContent(event, contentID)
+        lootBoxRes = R.views.dyn('gui_lootboxes').dyn('lobby').dyn('gui_lootboxes').dyn('tooltips').dyn('LootboxTooltip')
+        if lootBoxRes.exists() and contentID == lootBoxRes():
+            from gui_lootboxes.gui.impl.lobby.gui_lootboxes.tooltips.lootbox_tooltip import LootboxTooltip
+            lootBoxID = self.getTooltipData(event)['lootBoxID']
+            lootBox = self.__itemsCache.items.tokens.getLootBoxByID(int(lootBoxID))
+            return LootboxTooltip(lootBox)
+        else:
+            if contentID == R.views.lobby.tooltips.AdditionalRewardsTooltip():
+                progression = self.getActiveProgression()
+                showCount, stageIdx = int(event.getArgument('showCount')), int(event.getArgument('stageIdx'))
+                packedRewards = packAdditionalRewards(progression, stageIdx, showCount) if progression else []
+                if packedRewards:
+                    return AdditionalRewardsTooltip(packedRewards)
+                return None
+            return super(FunRandomProgressionView, self).createToolTipContent(event, contentID)
 
     def getTooltipData(self, event):
         tooltipId = event.getArgument('tooltipId')

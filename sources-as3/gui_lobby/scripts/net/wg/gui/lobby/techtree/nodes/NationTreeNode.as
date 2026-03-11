@@ -119,6 +119,8 @@ package net.wg.gui.lobby.techtree.nodes
       
       public var earlyAccessBorderHighlight:MovieClip = null;
       
+      public var paragonsBorderHighlight:MovieClip = null;
+      
       public var paragonsLock:MovieClip = null;
       
       private var _isFirstTimeActionShow:Boolean = false;
@@ -343,6 +345,10 @@ package net.wg.gui.lobby.techtree.nodes
          {
             this.nationChangeIcon.visible = getNodeData().isNationChangeAvailable;
          }
+         if(this.paragonsBorderHighlight)
+         {
+            this.paragonsBorderHighlight.mouseEnabled = this.paragonsBorderHighlight.mouseChildren = false;
+         }
          if(this.paragonsLock)
          {
             this.paragonsLock.visible = isLockedByParagons();
@@ -375,6 +381,7 @@ package net.wg.gui.lobby.techtree.nodes
          this.earlyAccessLock = null;
          this.earlyAccessBorder = null;
          this.earlyAccessBorderHighlight = null;
+         this.paragonsBorderHighlight = null;
          if(this.paragonsLock)
          {
             this.paragonsLock.removeEventListener(MouseEvent.ROLL_OVER,this.onParagonsLockRollOverHandler);

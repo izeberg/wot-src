@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/intunion/Un14_T54D/_skins/T54D_3Dst_Stellar/normal/lod1/Gun_02</nodefullVisual>
+	<visibilityBox>
+		<min>-0.447589 -0.271841 0.049426</min>
+		<max>0.292227 0.330751 4.233906</max>
+	</visibilityBox>
+	<parent>vehicles/intunion/Un14_T54D/_skins/T54D_3Dst_Stellar/normal/lod2/Gun_02</parent>
+	<tank>true</tank>
+	<extent>64.000000</extent>
+</root>

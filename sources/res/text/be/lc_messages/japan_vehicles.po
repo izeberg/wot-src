@@ -71,6 +71,9 @@ msgstr "Heavy Tank No. VI"
 msgid "Chassis_J20_Type_2605"
 msgstr "Type 5 Heavy"
 
+msgid "Chassis_J20_Type_2605_ISP"
+msgstr "Type 5 Heavy"
+
 msgid "Chassis_J21_Type_91"
 msgstr "Dai-chi Osaka Sensha"
 
@@ -427,6 +430,24 @@ msgid "J20_Type_2605_7x7_short"
 msgstr "Type 5 H 7x7"
 
 msgid "J20_Type_2605_7x7_short_special"
+msgstr "?empty?"
+
+msgid "J20_Type_2605_ISP"
+msgstr "Type 5 H Выпрабавальны"
+
+msgid "J20_Type_2605_ISP_descr"
+msgstr ""
+"Type 5, вядомы таксама як Type 2605 — адзін з варыянтаў звышцяжкага танка "
+"O-I, распрацаванага ў гады Другой сусветнай вайны. Асноўнымі задачамі танка "
+"былі прарыў умацаваных палос супраціўніка і берагавая абарона."
+
+msgid "J20_Type_2605_ISP_long_special"
+msgstr "?empty?"
+
+msgid "J20_Type_2605_ISP_short"
+msgstr "Type 5 H (В)"
+
+msgid "J20_Type_2605_ISP_short_special"
 msgstr "?empty?"
 
 msgid "J20_Type_2605_descr"
@@ -894,18 +915,24 @@ msgstr "Type 60 Proto 4"
 
 msgid "J49_Type_60_Proto_4_descr"
 msgstr ""
-" \n"
+"У сярэдзіне 1950-х гг. сілы самаабароны Японіі сталі замаўляць распрацоўку ваеннай тэхнікі ўласным фірмам. Быў абвешчаны конкурс на тэхніку з дзвюма безадкатнымі гарматамі. У 1956 годзе «Камацу» прапанавала прататып SS-1, а «Міцубісі» стварылі SS-2. Далей пайшоў трэці доследны ўзор SS-3. У 1959 годзе «Камацу» пабудавалі тры доследныя прататыпы SS-4. Дапрацаваны SS-4 прыняты на ўзбраенне як «самаходная безадкатная гармата Тып 60». Асаблівасцю машыны «Тып 60» і яе папярэдніц была сістэма навядзення і стральбы гармат. Цэнтральная частка рубкі з узбраеннем магла падымацца — гэта павялічыла вуглы навядзення па гарызанталі і вертыкалі. На ўзбраенні сіл самаабароны Японіі «Тып 60» знаходзілася да 2000-х гадоў.\n"
 "\n"
 "Характарыстыкі машыны могуць быць зменены без кампенсацыі."
 
 msgid "J49_Type_60_Proto_4_long_special"
-msgstr "?empty?"
+msgstr ""
+"Нетыповы прадстаўнік класа лёгкіх танкаў, узброены грознай двухгарматнай "
+"устаноўкай з вялізнай забойнасцю стрэлу, але з абмежаванымі вугламі "
+"гарызантальнага навядзення. Танк мае надзейную маскіроўку і кампактныя "
+"габарыты. Выдатны танк для атакі з засады дзякуючы сваім памерам і выдатным "
+"ВВН, здольны здзівіць праціўніка агнём з самых нечаканых пазіцый."
 
 msgid "J49_Type_60_Proto_4_short"
-msgstr "Type 60 P.4"
+msgstr "Type 60 Pr.4"
 
 msgid "J49_Type_60_Proto_4_short_special"
-msgstr "?empty?"
+msgstr ""
+"Добрая забойнасць стрэлу, надзейная маскіроўка, двухгарматная ўстаноўка"
 
 msgid "JAN-GRC-3Z"
 msgstr "JAN/GRC-3Z"
@@ -1111,6 +1138,9 @@ msgid "Turret_1_J19_Tiger_I_Jpn_short"
 msgstr "Heavy Tank No. VI"
 
 msgid "Turret_1_J20_Type_2605"
+msgstr "Type 5 Heavy"
+
+msgid "Turret_1_J20_Type_2605_ISP"
 msgstr "Type 5 Heavy"
 
 msgid "Turret_1_J21_Type_91"
@@ -1577,6 +1607,9 @@ msgstr "14.9 cm Type 1 HE"
 msgid "_150mm_45_41st_Year_Type"
 msgstr "15 cm/45 41st Year Type"
 
+msgid "_150mm_45_41st_Year_Type_ISP"
+msgstr "15 cm/45 41st Year Type"
+
 msgid "_150mm_APHE_Type1"
 msgstr "APHE Type 1"
 
@@ -1589,10 +1622,19 @@ msgstr "AP Type 2"
 msgid "_150mm_Common_Type_0_HE"
 msgstr "Common Type 0"
 
+msgid "_150mm_Common_Type_0_HE_ISP"
+msgstr "Common Type 0"
+
 msgid "_150mm_Common_Type_0_HE_Kai"
 msgstr "Common Type 91 Kai"
 
+msgid "_150mm_Common_Type_0_HE_Kai_ISP"
+msgstr "Common Type 91 Kai"
+
 msgid "_150mm_Common_Type_91_AP"
+msgstr "Common Type 91"
+
+msgid "_150mm_Common_Type_91_AP_ISP"
 msgstr "Common Type 91"
 
 msgid "_150mm_HEAT_Type3"
@@ -2045,6 +2087,9 @@ msgstr "Type 3 Ko"
 msgid "_Type3_Ko_notInShop"
 msgstr "Type 3 Ko"
 
+msgid "_Type3_Ko_notInShop_ISP"
+msgstr "Type 3 Ko"
+
 msgid "_Type3_Otsu"
 msgstr "Type 3 Otsu"
 
@@ -2085,6 +2130,9 @@ msgid "_Type98_V12_x2_1200_BP"
 msgstr "2x Kawasaki Type 98 V-12 (600)"
 
 msgid "_Type98_V12_x2_1200_Kai"
+msgstr "2x Kawasaki Type 98 V-12 Kai (600)"
+
+msgid "_Type98_V12_x2_1200_Kai_ISP"
 msgstr "2x Kawasaki Type 98 V-12 Kai (600)"
 
 msgid "_Type_100_Kuurei_V12"

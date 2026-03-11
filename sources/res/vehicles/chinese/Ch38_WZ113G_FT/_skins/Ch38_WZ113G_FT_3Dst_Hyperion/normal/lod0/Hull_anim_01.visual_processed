@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>group</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>Root</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.000000 0.000000</row3>
+				</transform>
+				<node>
+					<identifier>hull_anim_01</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.184496 0.469182 -1.222357</row3>
+					</transform>
+					<node>
+						<identifier>hull_anim_02</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 0.959551 0.281534</row1>
+							<row2>-0.000000 -0.281534 0.959551</row2>
+							<row3>-0.001454 0.110754 -0.003937</row3>
+						</transform>
+						<node>
+							<identifier>hull_anim_03</identifier>
+							<transform>
+								<row0>1.000000 -0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000350</row1>
+								<row2>-0.000000 -0.000350 1.000000</row2>
+								<row3>-0.000306 0.426500 0.001440</row3>
+							</transform>
+							<node>
+								<identifier>hull_anim_04</identifier>
+								<transform>
+									<row0>0.999716 0.000380 -0.023844</row0>
+									<row1>-0.000531 0.999980 -0.006321</row1>
+									<row2>0.023841 0.006332 0.999696</row2>
+									<row3>-1.378479 -0.067224 0.000326</row3>
+								</transform>
+								<node>
+									<identifier>hull_anim_05</identifier>
+									<transform>
+										<row0>0.999716 -0.000531 0.023841</row0>
+										<row1>0.000400 0.999985 0.005509</row1>
+										<row2>-0.023843 -0.005498 0.999701</row2>
+										<row3>1.522137 0.455730 0.038911</row3>
+									</transform>
+									<node>
+										<identifier>Piston</identifier>
+										<transform>
+											<row0>0.949894 -0.312573 0.000557</row0>
+											<row1>0.312573 0.949892 -0.001692</row1>
+											<row2>0.000000 0.001781 0.999998</row2>
+											<row3>0.187020 -0.065090 0.000672</row3>
+										</transform>
+										<node>
+											<identifier>Piston_BlendBone</identifier>
+											<transform>
+												<row0>0.949894 0.312573 0.000000</row0>
+												<row1>-0.300128 0.912072 -0.279370</row1>
+												<row2>0.087324 -0.265372 -0.960183</row2>
+												<row3>-0.186302 -1.077187 1.335462</row3>
+											</transform>
+										</node>
+									</node>
+									<node>
+										<identifier>Piston1</identifier>
+										<transform>
+											<row0>0.987575 -0.157151 0.000280</row0>
+											<row1>0.157151 0.987573 -0.001759</row1>
+											<row2>-0.000000 0.001781 0.999998</row2>
+											<row3>0.189864 0.048691 0.000469</row3>
+										</transform>
+										<node>
+											<identifier>Piston1_BlendBone</identifier>
+											<transform>
+												<row0>0.987575 0.157151 0.000000</row0>
+												<row1>-0.150894 0.948253 -0.279370</row1>
+												<row2>0.043903 -0.275899 -0.960183</row2>
+												<row3>-0.340564 -1.146527 1.335462</row3>
+											</transform>
+										</node>
+									</node>
+									<node>
+										<identifier>hull_anim_06</identifier>
+										<transform>
+											<row0>0.664645 0.747047 0.012966</row0>
+											<row1>-0.746987 0.664764 -0.009925</row1>
+											<row2>-0.016034 -0.003089 0.999867</row2>
+											<row3>0.699369 0.006773 -0.053181</row3>
+										</transform>
+										<node>
+											<identifier>Piston2</identifier>
+											<transform>
+												<row0>0.515826 -0.856564 -0.014864</row0>
+												<row1>0.856574 0.515966 -0.007737</row1>
+												<row2>0.014297 -0.008741 0.999860</row2>
+												<row3>-0.146017 0.157561 0.057198</row3>
+											</transform>
+											<node>
+												<identifier>Piston2_BlendBone</identifier>
+												<transform>
+													<row0>0.982922 0.184022 0.000000</row0>
+													<row1>-0.176694 0.943786 -0.279370</row1>
+													<row2>0.051410 -0.274599 -0.960183</row2>
+													<row3>-0.606544 -1.163818 1.335462</row3>
+												</transform>
+											</node>
+										</node>
+										<node>
+											<identifier>hull_anim_07</identifier>
+											<transform>
+												<row0>0.507055 -0.814705 -0.281337</row0>
+												<row1>-0.851329 -0.524395 -0.015795</row1>
+												<row2>-0.134663 0.247519 -0.959479</row2>
+												<row3>-0.250812 0.646366 0.137241</row3>
+											</transform>
+											<node>
+												<identifier>hull_anim_07_BlendBone</identifier>
+												<transform>
+													<row0>0.950097 -0.173862 -0.259012</row0>
+													<row1>-0.080449 -0.938761 0.335045</row1>
+													<row2>0.301402 0.297487 0.905902</row2>
+													<row3>-0.485828 1.294359 -1.205878</row3>
+												</transform>
+											</node>
+										</node>
+										<node>
+											<identifier>hull_anim_08</identifier>
+											<transform>
+												<row0>0.504609 -0.816218 0.281349</row0>
+												<row1>0.849777 0.527118 0.005112</row1>
+												<row2>-0.152477 0.236504 0.959592</row2>
+												<row3>-0.257202 0.653895 -0.009470</row3>
+											</transform>
+											<node>
+												<identifier>hull_anim_08_BlendBone</identifier>
+												<transform>
+													<row0>0.940579 0.170968 -0.293395</row0>
+													<row1>-0.242971 0.942433 -0.229749</row1>
+													<row2>-0.237226 -0.287383 -0.927973</row2>
+													<row3>0.285041 -1.305493 1.403139</row3>
+												</transform>
+											</node>
+										</node>
+										<node>
+											<identifier>hull_anim_06_BlendBone</identifier>
+											<transform>
+												<row0>0.664645 -0.746987 -0.016034</row0>
+												<row1>0.713284 0.640754 -0.284007</row1>
+												<row2>-0.222423 -0.177327 -0.958688</row2>
+												<row3>-1.436692 0.064939 1.410492</row3>
+											</transform>
+										</node>
+									</node>
+									<node>
+										<identifier>hull_anim_09</identifier>
+										<transform>
+											<row0>0.972823 0.230976 0.016314</row0>
+											<row1>-0.230995 0.972955 -0.000699</row1>
+											<row2>-0.016034 -0.003089 0.999867</row2>
+											<row3>0.698471 0.006620 0.050988</row3>
+										</transform>
+										<node>
+											<identifier>Piston3</identifier>
+											<transform>
+												<row0>0.862350 -0.506122 -0.013902</row0>
+												<row1>0.506036 0.862461 -0.009357</row1>
+												<row2>0.016725 0.001034 0.999860</row2>
+												<row3>-0.139559 -0.184547 -0.047926</row3>
+											</transform>
+											<node>
+												<identifier>Piston3_BlendBone</identifier>
+												<transform>
+													<row0>0.956048 0.293209 0.000000</row0>
+													<row1>-0.281534 0.917982 -0.279370</row1>
+													<row2>0.081914 -0.267092 -0.960183</row2>
+													<row3>-0.649842 -1.062276 1.335462</row3>
+												</transform>
+											</node>
+										</node>
+										<node>
+											<identifier>hull_anim_09_BlendBone</identifier>
+											<transform>
+												<row0>0.972823 -0.230995 -0.016034</row0>
+												<row1>0.217078 0.933926 -0.284007</row1>
+												<row2>-0.080579 -0.272808 -0.958688</row2>
+												<row3>-1.215164 -0.770439 1.306322</row3>
+											</transform>
+										</node>
+									</node>
+									<node>
+										<identifier>hull_anim_05_BlendBone</identifier>
+										<transform>
+											<row0>1.000000 0.000000 0.000000</row0>
+											<row1>0.000000 0.959684 -0.281080</row1>
+											<row2>-0.000000 -0.281080 -0.959684</row2>
+											<row3>-0.326647 -1.027690 1.337850</row3>
+										</transform>
+									</node>
+								</node>
+								<node>
+									<identifier>hull_anim_04_BlendBone</identifier>
+									<transform>
+										<row0>0.999716 -0.000531 0.023841</row0>
+										<row1>0.007085 0.961215 -0.275709</row1>
+										<row2>0.022770 -0.275800 -0.960945</row2>
+										<row3>1.163273 -0.579126 1.362912</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>hull_anim_03_BlendBone</identifier>
+								<transform>
+									<row0>1.000000 0.000000 0.000000</row0>
+									<row1>0.000000 0.959453 -0.281870</row1>
+									<row2>0.000000 -0.281870 -0.959453</row2>
+									<row3>-0.182736 -0.637267 1.338747</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>hull_anim_02_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 0.959551 -0.281534</row1>
+								<row2>0.000000 -0.281534 -0.959551</row2>
+								<row3>-0.183042 -0.211236 1.339964</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>hull_anim_01_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>-0.184496 -0.469182 1.222357</row3>
+						</transform>
+					</node>
+				</node>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>hull_anim_09_BlendBone</node>
+		<node>hull_anim_05_BlendBone</node>
+		<node>hull_anim_02_BlendBone</node>
+		<node>hull_anim_04_BlendBone</node>
+		<node>hull_anim_03_BlendBone</node>
+		<node>hull_anim_06_BlendBone</node>
+		<node>hull_anim_01_BlendBone</node>
+		<node>Piston1_BlendBone</node>
+		<node>Piston2_BlendBone</node>
+		<node>Piston_BlendBone</node>
+		<node>Piston3_BlendBone</node>
+		<node>hull_anim_08_BlendBone</node>
+		<node>hull_anim_07_BlendBone</node>
+		<geometry>
+			<vertices>Kran_anim_Shape.vertices</vertices>
+			<primitive>Kran_anim_Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_hull_02_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<materialKind>0</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/chinese/Ch38_WZ113G_FT/_skins/Ch38_WZ113G_FT_3Dst_Hyperion/WZ113G_FT_3Dst_Hyperion_hull_02_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/chinese/Ch38_WZ113G_FT/_skins/Ch38_WZ113G_FT_3Dst_Hyperion/WZ113G_FT_3Dst_Hyperion_hull_02_AO.dds</Texture>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>7.014000 7.014000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/chinese/Ch38_WZ113G_FT/_skins/Ch38_WZ113G_FT_3Dst_Hyperion/WZ113G_FT_3Dst_Hyperion_hull_02_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/chinese/Ch38_WZ113G_FT/_skins/Ch38_WZ113G_FT_3Dst_Hyperion/WZ113G_FT_3Dst_Hyperion_hull_02_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.018993 1.011764 1.102134</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>-1.406329 0.276824 -1.473959</min>
+		<max>1.368346 1.746700 -0.730312</max>
+	</boundingBox>
+	<geometrySize>121278</geometrySize>
+	<minUVDensity>0.008496</minUVDensity>
+</root>

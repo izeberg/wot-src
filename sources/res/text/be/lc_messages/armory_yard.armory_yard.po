@@ -51,13 +51,13 @@ msgid "bundles/countdown/days"
 msgstr "%(day)s сут."
 
 msgid "bundles/countdown/daysWithHours"
-msgstr "%(day)s сут %(hour)s гадз"
+msgstr "%(day)s сут. %(hour)s гадз."
 
 msgid "bundles/countdown/hours"
 msgstr "%(hour)s гадз."
 
 msgid "bundles/countdown/hoursWithMinutes"
-msgstr "%(hour)s гадз %(min)s хв"
+msgstr "%(hour)s гадз. %(min)s хв."
 
 msgid "bundles/countdown/min"
 msgstr "%(min)s хв."
@@ -234,13 +234,13 @@ msgid "entryPoint/tooltips/active/header"
 msgstr "Задачы Зборачнага цэха"
 
 msgid "entryPoint/tooltips/active/justBeforeStart/hours"
-msgstr "Будзе даступная праз %(hour)s гадз %(min)s хв"
+msgstr "Будзе даступная праз %(hour)s гадз. %(min)s хв."
 
 msgid "entryPoint/tooltips/active/justBeforeStart/min"
-msgstr "Будзе даступная праз %(min)s хв"
+msgstr "Будзе даступная праз %(min)s хв."
 
 msgid "entryPoint/tooltips/active/justBeforeStart/sec"
-msgstr "Будзе даступная праз < 1 хв"
+msgstr "Будзе даступная праз < 1 хв."
 
 msgid "entryPoint/tooltips/active/locked"
 msgid_plural "plural/entryPoint/tooltips/active/locked"
@@ -1259,7 +1259,7 @@ msgstr[1] "%(value)s дні"
 msgstr[2] "%(value)s дзён"
 
 msgid "widget/countdown/hours"
-msgstr "%(hour)s гадз %(min)s хв"
+msgstr "%(hour)s гадз. %(min)s хв."
 
 msgid "widget/countdown/min"
 msgstr "%(min)s хв."

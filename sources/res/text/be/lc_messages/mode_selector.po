@@ -90,10 +90,10 @@ msgstr ""
 "X&nbsp;уровень"
 
 msgid "mode/comp7/seasonEnd"
-msgstr "Падзея «Ледзяны тыгр» завершана."
+msgstr "Падзея «Навальнічны тыгр» завершана."
 
 msgid "mode/comp7/seasonStart"
-msgstr "Падзея «Ледзяны тыгр» пачнецца %(date)s"
+msgstr "Падзея «Навальнічны тыгр» пачнецца %(date)s."
 
 msgid "mode/comp7/warning"
 msgstr "Рангавая неактыўнасць"
@@ -359,7 +359,7 @@ msgid "selectMap"
 msgstr "Перадвызначаныя налады для Выпадковых баёў"
 
 msgid "status/timeLeft/days"
-msgstr "%(day)s д"
+msgstr "%(day)s сут."
 
 msgid "status/timeLeft/hours"
 msgstr "%(hour)s гадз"
@@ -368,7 +368,7 @@ msgid "status/timeLeft/lessMin"
 msgstr "менш за хвіліну"
 
 msgid "status/timeLeft/min"
-msgstr "%(min)s хв"
+msgstr "%(min)s хв."
 
 msgid "statusSeparator"
 msgstr " %(parSecondary_open)sI%(parSecondary_close)s "

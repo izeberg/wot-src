@@ -758,7 +758,7 @@ def _readEntitlementSection(section, checkLimit, readOp=False):
          entID, entitlement['count'], INVOICE_LIMITS.ENTITLEMENTS_MAX))
     if section.has_key('expires'):
         entitlement['expires'] = expires = {}
-        __readBonus_expires(id, expires, section)
+        __readBonus_expires(entID, expires, section)
     return (entID, entitlement)
 
 

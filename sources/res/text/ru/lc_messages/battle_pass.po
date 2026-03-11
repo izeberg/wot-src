@@ -416,20 +416,20 @@ msgstr "Текущий этап:"
 msgid "chapter/fullName/1"
 msgstr "Задача без решения"
 
-msgid "chapter/fullName/181"
-msgstr "Задача без решения"
-
-msgid "chapter/fullName/182"
-msgstr "В ад и обратно"
-
-msgid "chapter/fullName/183"
-msgstr "Пепел на ветру"
-
-msgid "chapter/fullName/184"
-msgstr "Лучик надежды"
-
 msgid "chapter/fullName/185"
 msgstr "Артефакты прошлого"
+
+msgid "chapter/fullName/191"
+msgstr "108 минут"
+
+msgid "chapter/fullName/192"
+msgstr "Лунная соната"
+
+msgid "chapter/fullName/193"
+msgstr "Покорители космоса"
+
+msgid "chapter/fullName/194"
+msgstr "Ключ на старт!"
 
 msgid "chapter/fullName/2"
 msgstr "В ад и обратно"
@@ -443,50 +443,50 @@ msgstr "Лучик надежды"
 msgid "chapter/fullName/5"
 msgstr "Артефакты прошлого"
 
-msgid "chapter/fullName/quoted/181"
-msgstr "Задача без решения"
-
-msgid "chapter/fullName/quoted/182"
-msgstr "В ад и обратно"
-
-msgid "chapter/fullName/quoted/183"
-msgstr "Пепел на ветру"
-
-msgid "chapter/fullName/quoted/184"
-msgstr "Лучик надежды"
-
 msgid "chapter/fullName/quoted/185"
 msgstr "Артефакты прошлого"
 
-msgid "chapter/fullNameUppercased/181"
-msgstr "ЗАДАЧА БЕЗ РЕШЕНИЯ"
+msgid "chapter/fullName/quoted/191"
+msgstr "108 минут"
 
-msgid "chapter/fullNameUppercased/182"
-msgstr "В АД И ОБРАТНО"
+msgid "chapter/fullName/quoted/192"
+msgstr "Лунная соната"
 
-msgid "chapter/fullNameUppercased/183"
-msgstr "ПЕПЕЛ НА ВЕТРУ"
+msgid "chapter/fullName/quoted/193"
+msgstr "Покорители космоса"
 
-msgid "chapter/fullNameUppercased/184"
-msgstr "ЛУЧИК НАДЕЖДЫ"
+msgid "chapter/fullName/quoted/194"
+msgstr "Ключ на старт!"
 
 msgid "chapter/fullNameUppercased/185"
 msgstr "АРТЕФАКТЫ ПРОШЛОГО"
 
-msgid "chapter/fullNameUppercased/quoted/181"
-msgstr "ЗАДАЧА БЕЗ РЕШЕНИЯ"
+msgid "chapter/fullNameUppercased/191"
+msgstr "108 МИНУТ"
 
-msgid "chapter/fullNameUppercased/quoted/182"
-msgstr "В АД И ОБРАТНО"
+msgid "chapter/fullNameUppercased/192"
+msgstr "ЛУННАЯ СОНАТА"
 
-msgid "chapter/fullNameUppercased/quoted/183"
-msgstr "ПЕПЕЛ НА ВЕТРУ"
+msgid "chapter/fullNameUppercased/193"
+msgstr "ПОКОРИТЕЛИ КОСМОСА"
 
-msgid "chapter/fullNameUppercased/quoted/184"
-msgstr "ЛУЧИК НАДЕЖДЫ"
+msgid "chapter/fullNameUppercased/194"
+msgstr "КЛЮЧ НА СТАРТ!"
 
 msgid "chapter/fullNameUppercased/quoted/185"
 msgstr "АРТЕФАКТЫ ПРОШЛОГО"
+
+msgid "chapter/fullNameUppercased/quoted/191"
+msgstr "108 МИНУТ"
+
+msgid "chapter/fullNameUppercased/quoted/192"
+msgstr "ЛУННАЯ СОНАТА"
+
+msgid "chapter/fullNameUppercased/quoted/193"
+msgstr "ПОКОРИТЕЛИ КОСМОСА"
+
+msgid "chapter/fullNameUppercased/quoted/194"
+msgstr "КЛЮЧ НА СТАРТ!"
 
 msgid "chapter/title"
 msgstr "ГЛАВА %(chapter)s"
@@ -893,10 +893,9 @@ msgstr "Глава «Артефакты прошлого»"
 
 msgid "intro/bonus/text"
 msgstr ""
-"По достижении лимита очков на определённой машине вам будут начислены "
-"бонусные очки в награду, которая будет доступна каждую неделю после "
-"обновления лимита. Больше информации можно найти во вкладке «Как заработать "
-"очки»."
+"Каждый раз по достижении лимита очков на определённой машине вам будут "
+"начислены бонусные очки в награду. Больше информации можно найти во вкладке "
+"«Как заработать очки»."
 
 msgid "intro/bonus/title"
 msgstr "Бонус за достижение лимита"
@@ -926,38 +925,34 @@ msgstr "Глава «Охота на мышей»"
 
 msgid "intro/limit/text"
 msgstr ""
-"На всей технике VI-XI уровней устанавливаются одинаковые лимиты очков "
-"Боевого пропуска. Лимит обновляется еженедельно. По достижении "
-"установленного лимита на следующей неделе будет установлен более высокий "
-"лимит."
+"На всей технике VI–XI уровней устанавливаются одинаковые лимиты очков, "
+"которые обновляются сразу при их достижении. Каждый следующий лимит будет "
+"увеличиваться."
 
 msgid "intro/limit/title"
-msgstr "Еженедельные лимиты очков"
+msgstr "Прогрессионные лимиты очков"
 
 msgid "intro/marathonSubTitle"
-msgstr ""
-"Эта специальная глава Боевого пропуска приурочена к сотрудничеству "
-"с популярной игрой STALCRAFT: X. Вас ждут уникальные члены экипажа, "
-"тематические элементы внешнего вида и множество ценных наград."
+msgstr "?empty?"
 
 msgid "intro/marathonTitle"
 msgstr "ДОСТУПНА СПЕЦИАЛЬНАЯ ГЛАВА"
 
 msgid "intro/subTitle"
 msgstr ""
-"Эта специальная глава Боевого пропуска приурочена к сотрудничеству "
-"с популярной игрой STALCRAFT: X. Вас ждут уникальные члены экипажа, "
-"тематические элементы внешнего вида и множество ценных наград."
+"Какие чудеса скрывает Вселенная? Вопросов бездна, и ответов на них нет, ведь"
+" мы в самом начале пути! Но главное — однажды нашёлся тот, кто первым "
+"сказал: «Поехали!». И после этого мы просто не можем себе позволить "
+"остановиться."
 
 msgid "intro/title"
-msgstr "БОЕВОЙ ПРОПУСК: В ПОГОНЮ ЗА АРТЕФАКТАМИ!"
+msgstr "БОЕВОЙ ПРОПУСК: ВЫШЕ ЗВЁЗД"
 
 msgid "intro/vehicles/text"
 msgstr ""
-"В этом сезоне представлена новая ключевая техника: Rheinmetall Panzerwagen, "
-"Centurion Action X и 121. Играя на этой технике, вы сможете заработать "
-"больше бонусных очков Боевого пропуска за достижение еженедельного лимита "
-"очков."
+"В этом сезоне представлена новая ключевая техника: T-54D, СТ-II и WZ-113G "
+"FT. Играя на этой технике, вы сможете заработать больше бонусных очков "
+"Боевого пропуска за достижение лимита очков."
 
 msgid "intro/vehicles/title"
 msgstr "Новая ключевая техника"
@@ -1555,7 +1550,7 @@ msgid "tooltips/extra/daysAndHours"
 msgstr "%(D)s д %(H)s ч"
 
 msgid "tooltips/extra/min"
-msgstr "%(m)s мин."
+msgstr "%(m)s мин."
 
 msgid "tooltips/footerBuyBtn/activateChapter/descr"
 msgstr "Активируйте главу, чтобы получать награды за её прохождение."

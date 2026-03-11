@@ -303,6 +303,7 @@ NY_PET_SLOT_VISITED = 'NyPetSlotVisited'
 NY_GREETINGS_SEEN = 'NYGreetingsSeen'
 PREMIUM_QUESTS_NOTIFICATION = 'PremiumPurchased'
 DEFERRED_LOG_PLAYER_SETTINGS_ACTIONS = 'DeferredLogPlayerSettingsActions'
+SPACE_DAY_CONGRATS = 'space_day_congrats'
 
 class BattleMatters(object):
     BATTLE_MATTERS_SETTINGS = 'battleMattersSettings'
@@ -1382,7 +1383,8 @@ DEFAULT_VALUES = {KEY_FILTERS: {STORE_TAB: 0,
                              NY_ACTIVE_WIDGET_TRANSITION_SHOWN: False, 
                              NY_PET_SLOT_VISITED: False, 
                              NY_GREETINGS_SEEN: False}, 
-                  DEFERRED_LOG_PLAYER_SETTINGS_ACTIONS: set()}, 
+                  DEFERRED_LOG_PLAYER_SETTINGS_ACTIONS: set(), 
+                  SPACE_DAY_CONGRATS: False}, 
    KEY_COUNTERS: {NEW_HOF_COUNTER: {PROFILE_CONSTANTS.HOF_ACHIEVEMENTS_BUTTON: True, 
                                     PROFILE_CONSTANTS.HOF_VEHICLES_BUTTON: True, 
                                     PROFILE_CONSTANTS.HOF_VIEW_RATING_BUTTON: True}, 
@@ -1638,7 +1640,7 @@ def _recursiveStep(defaultDict, savedDict, finalDict):
 
 class AccountSettings(object):
     onSettingsChanging = Event.Event()
-    version = 76
+    version = 77
     settingsCore = dependency.descriptor(ISettingsCore)
     __cache = {'login': None, 'section': None}
     __sessionSettings = {'login': None, 'section': None}
@@ -2374,6 +2376,17 @@ class AccountSettings(object):
                         lootBoxesSettings[LOOT_BOXES_STATS_HINT_STATE] = 0
                         lootBoxesSettings[LOOT_BOXES_STATS_NO_BOX_HINT_STATE] = 0
                         accSettings.write(GUI_LOOT_BOXES, _pack(lootBoxesSettings))
+
+            if currVersion < 77:
+                if currVersion > 0:
+                    from gui.Scaleform.daapi.view.lobby.header.LobbyHeader import LobbyHeader
+                    for key, section in _filterAccountSection(ads):
+                        accSettings = AccountSettings._readSection(section, KEY_COUNTERS)
+                        counters = {}
+                        if NEW_LOBBY_TAB_COUNTER in accSettings.keys():
+                            counters = _unpack(accSettings[NEW_LOBBY_TAB_COUNTER].asString)
+                        counters[LobbyHeader.TABS.TOURNAMENTS] = False
+                        accSettings.write(NEW_LOBBY_TAB_COUNTER, _pack(counters))
 
             ads.writeInt('version', AccountSettings.version)
         return

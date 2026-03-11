@@ -24,6 +24,16 @@
 				</condition>
 			</conditions>
 		</transition>
+		<transition>
+			<to>close</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>trigger</type>
+					<name>close</name>
+				</condition>
+			</conditions>
+		</transition>
 		<uiPosition>-140.000000 -223.000000 0.000000</uiPosition>
 	</node>
 	<node>

@@ -1,8 +1,16 @@
 import typing
+from constants import IS_VS_EDITOR
 from visual_script.block import Block
 from visual_script.misc import ASPECT
 from visual_script.slot_types import SLOT_TYPE
-from visual_script_client.player_blocks import PlayerEventMeta
+if IS_VS_EDITOR:
+    from visual_script_client.player_blocks import PlayerEventMeta
+else:
+
+    class PlayerEventMeta(object):
+        pass
+
+
 if typing.TYPE_CHECKING:
     from skeletons.gui.battle_session import IBattleSessionProvider
 

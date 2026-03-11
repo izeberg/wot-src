@@ -120,11 +120,7 @@
 					</property>
 					<property>
 						colorIdMap
-						<Texture>vehicles/british/GB88_T95_Chieftain_turret/T95_Chieftain_guns_ID.dds</Texture>
-					</property>
-					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
 					<property>
@@ -151,10 +147,7 @@
 					</property>
 					<property>
 						g_detailUVTiling
-						<Vector4>
-							4.20822 4.20822 0.000000 0.000000
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>4.208220 4.208220 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_detailPower

@@ -15,19 +15,19 @@ msgstr ""
 "(n%100<10 || n%100>=20) ? 1 : 2);"
 
 msgid "alertMessage/afterSeason"
-msgstr "Событие «Ледяной тигр» завершено."
+msgstr "Событие «Грозовой тигр» завершено."
 
 msgid "alertMessage/allNotAvailable"
 msgstr "Бои на серверах начнутся через %(primeDelta)s"
 
 msgid "alertMessage/allNotAvailableEnd"
-msgstr "Событие «Ледяной тигр» завершено."
+msgstr "Событие «Грозовой тигр» завершено."
 
 msgid "alertMessage/allNotSet"
 msgstr "Режим недоступен на всех серверах"
 
 msgid "alertMessage/betweenSeasons"
-msgstr "Событие «Ледяной тигр» завершено."
+msgstr "Событие «Грозовой тигр» завершено."
 
 msgid "alertMessage/button/changeServer"
 msgstr "Сменить сервер"
@@ -51,7 +51,7 @@ msgid "alertMessage/standaloneNotAvailable"
 msgstr "Бои на сервере начнутся через %(primeDelta)s"
 
 msgid "alertMessage/standaloneNotAvailableEnd"
-msgstr "Событие «Ледяной тигр» завершено."
+msgstr "Событие «Грозовой тигр» завершено."
 
 msgid "alertMessage/standaloneNotSet"
 msgstr "Режим недоступен на сервере %(serverName)s"
@@ -93,7 +93,7 @@ msgid "banner/infoSmall/disabled"
 msgstr "Ожидайте прайм-тайма"
 
 msgid "banner/season"
-msgstr "Событие «Ледяной тигр»"
+msgstr "Событие «Грозовой тигр»"
 
 msgid "banner/seasonDate/seasonLasts"
 msgstr "До %(day)s %(month)s"
@@ -308,9 +308,9 @@ msgstr "%(start)s – %(end)s"
 
 msgid "calendarDay/timeLeft"
 msgid_plural "plural/calendarDay/timeLeft"
-msgstr[0] "Событие «Ледяной тигр» продлится %(days)d день."
-msgstr[1] "Событие «Ледяной тигр» продлится %(days)d дня."
-msgstr[2] "Событие «Ледяной тигр» продлится %(days)d дней."
+msgstr[0] "Событие «Грозовой тигр» продлится %(days)d день."
+msgstr[1] "Событие «Грозовой тигр» продлится %(days)d дня."
+msgstr[2] "Событие «Грозовой тигр» продлится %(days)d дней."
 
 msgid "calendarDay/title"
 msgstr "Расписание"
@@ -363,7 +363,7 @@ msgstr ""
 "модификатора."
 
 msgid "detailsHelp/rules/title"
-msgstr "Натиск: Ледяной тигр"
+msgstr "Натиск: Грозовой тигр"
 
 msgid "detailsHelp/seasonModifiers"
 msgstr ""
@@ -754,7 +754,7 @@ msgid "primeTimeView/status/primeWillBeAvailable"
 msgstr "Начало боёв на сервере %(server)s через %(time)s"
 
 msgid "primeTimeView/status/seasonDisabled"
-msgstr "Событие «Ледяной тигр» на сервере %(server)s завершилось."
+msgstr "Событие «Грозовой тигр» на сервере %(server)s завершилось."
 
 msgid "primeTimeView/status/untill"
 msgstr "Бои недоступны до %(startTime)s на сервере %(server)s"
@@ -995,7 +995,7 @@ msgstr ""
 "{whiteSpanish_Open}Для %(vehicleLevel)s уровня техники{whiteSpanish_Close}"
 
 msgid "rewards/subtitle/styleProgress"
-msgstr "{whiteSpanish_Open}Для стиля «Ледяной тигр»{whiteSpanish_Close}"
+msgstr "{whiteSpanish_Open}Для стиля «Грозовой тигр»{whiteSpanish_Close}"
 
 msgid "rewards/subtitle/vehicles_rent"
 msgstr "%(vehicleLevel)s уровень"
@@ -1013,7 +1013,7 @@ msgid "rewardsScreen/description/qualificationEnded"
 msgstr "НАТИСК. КВАЛИФИКАЦИЯ ЗАВЕРШЕНА"
 
 msgid "rewardsScreen/description/season"
-msgstr "НАТИСК. СОБЫТИЕ «ЛЕДЯНОЙ ТИГР»."
+msgstr "НАТИСК. СОБЫТИЕ «ГРОЗОВОЙ ТИГР»."
 
 msgid "rewardsScreen/notice/subTitle"
 msgstr ""
@@ -1078,19 +1078,19 @@ msgid "scoreTooltip/header"
 msgstr "Очки рейтинга"
 
 msgid "season/daysLeft"
-msgstr "До завершения: %(totalDays)s д."
+msgstr "До завершения: %(totalDays)s д."
 
 msgid "season/hoursLeft"
-msgstr "До завершения: %(hours)s ч."
+msgstr "До завершения: %(hours)s ч."
 
 msgid "season/minutesLeft"
-msgstr "До завершения: %(minutes)s мин."
+msgstr "До завершения: %(minutes)s мин."
 
 msgid "season/name"
-msgstr "Натиск: Ледяной тигр"
+msgstr "Натиск: Грозовой тигр"
 
 msgid "season/over"
-msgstr "Событие «Ледяной тигр» завершено."
+msgstr "Событие «Грозовой тигр» завершено."
 
 msgid "season/range"
 msgstr "%(startDate)s – %(endDate)s"
@@ -1099,7 +1099,7 @@ msgid "season/secondsLeft"
 msgstr "До завершения: %(seconds)s с"
 
 msgid "season/shortName"
-msgstr "Ледяной тигр"
+msgstr "Грозовой тигр"
 
 msgid "seasonModifier/title"
 msgstr "Модификатор Натиска"
@@ -1341,7 +1341,7 @@ msgid "weeklyQuests/tokenProgress/description/normal"
 msgstr "Зарабатывайте монеты Натиска для получения наград"
 
 msgid "whatsNewView/banner/title/large"
-msgstr "Событие «Ледяной тигр»"
+msgstr "Событие «Грозовой тигр»"
 
 msgid "whatsNewView/button/ok"
 msgstr "Я в деле!"
@@ -1423,10 +1423,8 @@ msgstr ""
 
 msgid "whatsNewView/slides/description/rework"
 msgstr ""
-"В этом запуске добавлены две новые карты: «Малиновка» и «Эрленберг», "
-"а «Уайдпарк» и «Тихий берег» получили балансные правки. Кроме того, в рамках"
-" «Ледяного тигра» вы сможете сражаться на зимних версиях карт «Малиновка», "
-"«Карелия» и «Прохоровка»."
+"В этом запуске изменился список доступных карт, а также были пересмотрены "
+"некоторые ролевые навыки и тактический навык «Минное поле»."
 
 msgid "whatsNewView/slides/description/roleSkills"
 msgstr ""
@@ -1471,7 +1469,7 @@ msgid "whatsNewView/slides/title/modifiers"
 msgstr "Изменения модификатора"
 
 msgid "whatsNewView/slides/title/newSeason"
-msgstr "Натиск: Ледяной тигр"
+msgstr "Натиск: Грозовой тигр"
 
 msgid "whatsNewView/slides/title/newTypes"
 msgstr "Теперь без САУ"
@@ -1483,7 +1481,7 @@ msgid "whatsNewView/slides/title/ranks"
 msgstr "Система рангов"
 
 msgid "whatsNewView/slides/title/rework"
-msgstr "Натиск: Ледяной тигр"
+msgstr "Натиск: Грозовой тигр"
 
 msgid "whatsNewView/slides/title/roleSkills"
 msgstr "Ролевые навыки"
@@ -1505,7 +1503,7 @@ msgstr "НАТИСК"
 
 msgid "whatsNewView/vehicleLimitations/description"
 msgstr ""
-"К участию в событии «Ледяной тигр» больше не допускаются машины роли САУ "
+"К участию в событии «Грозовой тигр» больше не допускаются машины роли САУ "
 "и тяжёлые огнемётные танки."
 
 msgid "whatsNewView/vehicleLimitations/heading"

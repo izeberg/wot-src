@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<AppealRadius>3000</AppealRadius>
+	<Properties>
+		<ownerVehicleID>
+			<Type>OBJECT_ID</Type>
+			<Flags>ALL_CLIENTS</Flags>
+			<Default>0</Default>
+		</ownerVehicleID>
+		<isPlaced>
+			<Type>BOOL</Type>
+			<Flags>ALL_CLIENTS</Flags>
+			<Default>0</Default>
+		</isPlaced>
+		<isDetonated>
+			<Type>BOOL</Type>
+			<Flags>ALL_CLIENTS</Flags>
+			<Default>0</Default>
+		</isDetonated>
+	</Properties>
+	<shouldBackup>false</shouldBackup>
+</root>

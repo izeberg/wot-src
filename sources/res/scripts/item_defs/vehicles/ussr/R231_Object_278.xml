@@ -3582,6 +3582,25 @@
 					</scale>
 					<showOn>256</showOn>
 				</slot>
+				<slot>
+					<slotType>projectionDecal</slotType>
+					<slotId>35052</slotId>
+					<tags>direction_right_to_left formfactor_square</tags>
+					<compatibleModels>R231_Object_278_3Dst_01</compatibleModels>
+					<position>
+						0.565601 2.31911 0.264257
+						<!--BW_String-->
+					</position>
+					<rotation>
+						3.14159 0.039061 -0.000004
+						<!--BW_String-->
+					</rotation>
+					<scale>
+						0.34249 0.586577 0.34249
+						<!--BW_String-->
+					</scale>
+					<showOn>256</showOn>
+				</slot>
 			</customizationSlots>
 			<customization>
 				<customizableVehicleAreas>

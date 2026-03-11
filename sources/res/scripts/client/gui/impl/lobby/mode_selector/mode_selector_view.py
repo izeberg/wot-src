@@ -27,6 +27,7 @@ from gui.impl.lobby.mode_selector.popovers.random_battle_popover import RandomBa
 from gui.impl.lobby.mode_selector.sound_constants import MODE_SELECTOR_SOUND_SPACE
 from gui.impl.lobby.mode_selector.tooltips.simply_format_tooltip import SimplyFormatTooltipView
 from gui.impl.lobby.stronghold.tooltips.stronghold_main_widget_tooltip import StrongholdMainWidgetTooltip
+from gui.impl.lobby.tooltips.limited_ui_unlock_info_tooltip import LimitedUiUnlockInfoTooltip
 from gui.impl.pub import ViewImpl
 from gui.impl.pub.tooltip_window import SimpleTooltipContent
 from gui.prb_control.settings import PREBATTLE_ACTION_NAME
@@ -160,6 +161,13 @@ class ModeSelectorView(ViewImpl):
                 if not header:
                     return
                 return SimplyFormatTooltipView(header, body)
+            if contentID == R.views.lobby.tooltips.LimitedUiUnlockInfoTooltip():
+                index = int(event.getArgument('index'))
+                modeSelectorItem = self.__dataProvider.getItemByIndex(index)
+                if modeSelectorItem:
+                    luiRule = modeSelectorItem.getLimitedUIRule()
+                    if luiRule:
+                        return LimitedUiUnlockInfoTooltip(luiRule)
             tooltipClass = self.__tooltipConstants.get(_CONTENT_TOOLTIPS_KEY, {}).get(contentID)
             if tooltipClass:
                 return tooltipClass()

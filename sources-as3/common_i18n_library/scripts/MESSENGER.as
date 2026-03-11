@@ -2475,6 +2475,24 @@ package
       
       public static const SERVICECHANNELMESSAGES_PLAYSTREAKFREEZESEND_BODY:String = "#messenger:serviceChannelMessages/playStreakFreezesEnd/body";
       
+      public static const SERVICECHANNELMESSAGES_LIMITEDUICONTENTUNLOCKED_TITLE:String = "#messenger:serviceChannelMessages/limitedUIContentUnlocked/title";
+      
+      public static const SERVICECHANNELMESSAGES_LIMITEDUICONTENTUNLOCKED_BATTLEMODES:String = "#messenger:serviceChannelMessages/limitedUIContentUnlocked/battleModes";
+      
+      public static const SERVICECHANNELMESSAGES_LIMITEDUICONTENTUNLOCKED_BATTLEMODE:String = "#messenger:serviceChannelMessages/limitedUIContentUnlocked/battleMode";
+      
+      public static const SERVICECHANNELMESSAGES_LIMITEDUICONTENTUNLOCKED_CONTENTS:String = "#messenger:serviceChannelMessages/limitedUIContentUnlocked/contents";
+      
+      public static const SERVICECHANNELMESSAGES_LIMITEDUICONTENTUNLOCKED_CONTENT:String = "#messenger:serviceChannelMessages/limitedUIContentUnlocked/content";
+      
+      public static const SERVICECHANNELMESSAGES_LIMITEDUICONTENTUNLOCKED_PERSONALMISSIONS:String = "#messenger:serviceChannelMessages/limitedUIContentUnlocked/personalMissions";
+      
+      public static const SERVICECHANNELMESSAGES_LIMITEDUICONTENTUNLOCKED_TOURNAMENTS:String = "#messenger:serviceChannelMessages/limitedUIContentUnlocked/tournaments";
+      
+      public static const SERVICECHANNELMESSAGES_LIMITEDUICONTENTUNLOCKED_VERSUSAI:String = "#messenger:serviceChannelMessages/limitedUIContentUnlocked/versusAI";
+      
+      public static const SERVICECHANNELMESSAGES_LIMITEDUICONTENTUNLOCKED_STRONGHOLD:String = "#messenger:serviceChannelMessages/limitedUIContentUnlocked/stronghold";
+      
       public static const DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_ENUM:Array = [DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_OFFLINE,DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_NOTREADY,DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_READY,DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_INBATTLE,DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_AFK];
        
       

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/french/F137_Tornade/normal/lod2/Gun_anim</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/french/F137_Tornade/normal/lod3/Gun_anim</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-0.134083 -0.075979 -1.753501</min>
+		<max>0.134384 0.448958 -1.420874</max>
+	</visibilityBox>
+</root>

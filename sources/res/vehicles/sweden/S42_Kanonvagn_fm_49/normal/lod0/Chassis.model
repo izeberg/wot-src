@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.602443 -0.000274 -3.140929</min>
+		<max>1.602443 1.096588 3.107088</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<parent>vehicles/sweden/S42_Kanonvagn_fm_49/normal/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/sweden/S42_Kanonvagn_fm_49/normal/lod0/Chassis</nodefullVisual>
+</root>

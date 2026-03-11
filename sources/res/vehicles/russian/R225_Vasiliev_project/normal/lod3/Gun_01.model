@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/russian/R225_Vasiliev_project/normal/lod4/Gun_01</parent>
+	<tank>true</tank>
+	<extent>192.000000</extent>
+	<nodefullVisual>vehicles/russian/R225_Vasiliev_project/normal/lod3/Gun_01</nodefullVisual>
+	<visibilityBox>
+		<min>-0.211278 -0.216892 -0.263932</min>
+		<max>0.210377 0.297536 4.455751</max>
+	</visibilityBox>
+</root>

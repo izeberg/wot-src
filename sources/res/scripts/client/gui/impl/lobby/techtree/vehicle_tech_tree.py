@@ -177,7 +177,7 @@ class VehicleTechTree(ViewImpl):
             rowToButton = {}
             if eaCtrl.isEnabled() and SelectedNation.getIndex() == eaCtrl.getNationID():
                 addButtonIfDataExists(ButtonType.EARLYACCESS, rowToButton, ts.getTechTreeButtonsType()(), ts.getNodes())
-            if paragonsCtrl.isEnabled and paragonsCtrl.isLimitedUiRuleCompleted:
+            if paragonsCtrl.isEnabled and paragonsCtrl.isLimitedUiParagonsButtonsRuleCompleted:
                 nationId = SelectedNation.getIndex()
                 branchIDs = self.__paragonsController.branches.resetBranchIdsByNationId(nationId)
                 for resetBranchID in branchIDs:

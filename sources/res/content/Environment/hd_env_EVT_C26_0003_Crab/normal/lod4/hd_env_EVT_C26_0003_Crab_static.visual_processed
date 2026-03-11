@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>s4Shape.vertices</vertices>
+			<primitive>s4Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd4</identifier>
+					<fx>shaders/std_effects/glow.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>112</materialKind>
+					<property>
+						destBlend
+						<Int>5</Int>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Environment/hd_env_EVT_C26_0003_Crab/hd_env_EVT_C26_0003_Crab_glow.dds</Texture>
+					</property>
+					<property>
+						g_tintColor
+						<Vector4>0.215686 0.741176 1.000000 1.000000</Vector4>
+					</property>
+					<property>
+						selfIllumination
+						<Float>5.500000</Float>
+					</property>
+					<property>
+						srcBlend
+						<Int>3</Int>
+					</property>
+				</material>
+				<groupOrigin>0.000000 25.933664 -10.630693</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>s_nd0</identifier>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<materialKind>108</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Environment/hd_env_EVT_C26_0003_Crab/hd_env_EVT_C26_0003_Crab_BAM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Environment/hd_env_EVT_C26_0003_Crab/hd_env_EVT_C26_0003_Crab_BGMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Environment/hd_env_EVT_C26_0003_Crab/hd_env_EVT_C26_0003_Crab_BANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.000000 16.146721 -3.716996</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-40.940563 -1.101246 -36.961868</min>
+		<max>40.940563 33.404175 29.527876</max>
+	</boundingBox>
+	<geometrySize>109768</geometrySize>
+	<minUVDensity>0.000076</minUVDensity>
+</root>

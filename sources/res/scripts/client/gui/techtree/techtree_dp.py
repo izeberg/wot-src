@@ -1,4 +1,4 @@
-import operator
+import typing, operator
 from collections import defaultdict, namedtuple
 from copy import copy
 import ResMgr, nations, section2dict

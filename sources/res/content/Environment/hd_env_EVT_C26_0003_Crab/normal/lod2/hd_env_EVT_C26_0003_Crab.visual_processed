@@ -1,0 +1,1302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>Root</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>Head1</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 26.845238 -7.307286</row3>
+				</transform>
+				<node>
+					<identifier>Head1_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.000000 -26.845238 7.307286</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>Main</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 15.873066 -7.307286</row3>
+				</transform>
+				<node>
+					<identifier>B_Crab_Leg_L0</identifier>
+					<transform>
+						<row0>-0.353566 -0.707106 -0.612366</row0>
+						<row1>-0.353740 0.707108 -0.612263</row1>
+						<row2>0.865944 0.000143 -0.500141</row2>
+						<row3>7.309606 -1.185200 10.828088</row3>
+					</transform>
+					<node>
+						<identifier>B_Crab_Leg_L1</identifier>
+						<transform>
+							<row0>0.945923 -0.324391 0.000231</row0>
+							<row1>0.324391 0.945923 -0.000195</row1>
+							<row2>-0.000155 0.000259 1.000000</row2>
+							<row3>-3.667262 -10.693707 0.002203</row3>
+						</transform>
+						<node>
+							<identifier>B_Crab_Leg_L2</identifier>
+							<transform>
+								<row0>-0.219931 0.975515 0.000252</row0>
+								<row1>0.975515 0.219931 0.000035</row1>
+								<row2>-0.000021 0.000253 -1.000000</row2>
+								<row3>-9.427918 -2.125533 -0.000340</row3>
+							</transform>
+							<node>
+								<identifier>B_Crab_Leg_DRV_L2</identifier>
+								<transform>
+									<row0>1.000000 0.000000 -0.000000</row0>
+									<row1>-0.000000 1.000000 -0.000000</row1>
+									<row2>0.000000 0.000000 1.000000</row2>
+									<row3>-2.613671 -3.403642 0.237260</row3>
+								</transform>
+								<node>
+									<identifier>B_Crab_Leg_DRV_L2_BlendBone</identifier>
+									<transform>
+										<row0>-0.389976 -0.312945 -0.866016</row0>
+										<row1>0.626282 -0.779596 -0.000305</row1>
+										<row2>0.675047 0.542490 -0.500016</row2>
+										<row3>9.670454 31.202629 4.339874</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>B_Crab_Leg_L3</identifier>
+								<transform>
+									<row0>-0.161436 -0.986883 -0.000064</row0>
+									<row1>0.986883 -0.161436 0.000002</row1>
+									<row2>-0.000012 -0.000063 1.000000</row2>
+									<row3>-10.821130 1.770134 -0.000018</row3>
+								</transform>
+								<node>
+									<identifier>B_Crab_Leg_L3_BlendBone</identifier>
+									<transform>
+										<row0>0.371852 -0.334342 -0.865992</row0>
+										<row1>0.668266 0.743922 -0.000264</row1>
+										<row2>-0.644319 0.578615 -0.500058</row2>
+										<row3>-28.573870 13.441435 4.575292</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>B_Crab_Leg_L2_BlendBone</identifier>
+								<transform>
+									<row0>-0.389976 -0.312945 -0.866016</row0>
+									<row1>0.626282 -0.779596 -0.000305</row1>
+									<row2>0.675047 0.542490 -0.500016</row2>
+									<row3>7.056785 27.798988 4.577134</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>B_Crab_Leg_L1_BlendBone</identifier>
+							<transform>
+								<row0>-0.219496 -0.449474 0.865907</row0>
+								<row1>-0.898247 0.439491 0.000436</row1>
+								<row2>0.380754 0.777703 0.500205</row2>
+								<row3>16.138325 10.873485 -4.574718</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>B_Crab_Leg_L0_BlendBone</identifier>
+						<transform>
+							<row0>-0.353566 -0.353740 0.865944</row0>
+							<row1>-0.707106 0.707108 0.000143</row1>
+							<row2>0.612366 0.612263 0.500141</row2>
+							<row3>15.126324 -5.644547 -4.570907</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>B_Crab_Leg_R0</identifier>
+					<transform>
+						<row0>0.353566 -0.707106 -0.612366</row0>
+						<row1>0.353740 0.707108 -0.612263</row1>
+						<row2>0.865944 -0.000143 0.500141</row2>
+						<row3>-7.309606 -1.185200 10.828088</row3>
+					</transform>
+					<node>
+						<identifier>B_Crab_Leg_R1</identifier>
+						<transform>
+							<row0>0.945923 -0.324391 0.000231</row0>
+							<row1>0.324391 0.945923 -0.000195</row1>
+							<row2>-0.000155 0.000259 1.000000</row2>
+							<row3>-3.667262 -10.693707 0.002204</row3>
+						</transform>
+						<node>
+							<identifier>B_Crab_Leg_R2</identifier>
+							<transform>
+								<row0>-0.219931 0.975515 0.000252</row0>
+								<row1>0.975515 0.219931 0.000035</row1>
+								<row2>-0.000021 0.000253 -1.000000</row2>
+								<row3>-9.427918 -2.125532 -0.000341</row3>
+							</transform>
+							<node>
+								<identifier>B_Crab_Leg_DRV_R2</identifier>
+								<transform>
+									<row0>1.000000 0.000000 0.000000</row0>
+									<row1>-0.000000 1.000000 0.000000</row1>
+									<row2>0.000000 0.000000 1.000000</row2>
+									<row3>-2.613665 -3.403538 -0.238595</row3>
+								</transform>
+								<node>
+									<identifier>B_Crab_Leg_DRV_R2_BlendBone</identifier>
+									<transform>
+										<row0>0.389995 0.313322 -0.865871</row0>
+										<row1>0.626282 -0.779596 -0.000020</row1>
+										<row2>0.675036 0.542272 0.500267</row2>
+										<row3>9.670552 31.204515 -4.326089</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>B_Crab_Leg_R3</identifier>
+								<transform>
+									<row0>-0.161436 -0.986883 -0.000064</row0>
+									<row1>0.986883 -0.161436 0.000002</row1>
+									<row2>-0.000012 -0.000063 1.000000</row2>
+									<row3>-10.821128 1.770134 -0.000018</row3>
+								</transform>
+								<node>
+									<identifier>B_Crab_Leg_R3_BlendBone</identifier>
+									<transform>
+										<row0>-0.372115 0.334297 -0.865896</row0>
+										<row1>0.668266 0.743922 0.000022</row1>
+										<row2>-0.644166 0.578641 0.500224</row2>
+										<row3>-28.575258 13.441198 -4.566524</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>B_Crab_Leg_R2_BlendBone</identifier>
+								<transform>
+									<row0>0.389995 0.313322 -0.865871</row0>
+									<row1>0.626282 -0.779596 -0.000020</row1>
+									<row2>0.675036 0.542272 0.500267</row2>
+									<row3>7.056885 27.800978 -4.564683</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>B_Crab_Leg_R1_BlendBone</identifier>
+							<transform>
+								<row0>0.219896 0.449136 0.865981</row0>
+								<row1>-0.898247 0.439491 0.000150</row1>
+								<row2>0.380523 0.777898 -0.500077</row2>
+								<row3>16.140436 10.871701 4.567096</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>B_Crab_Leg_R0_BlendBone</identifier>
+						<transform>
+							<row0>0.353566 0.353740 0.865944</row0>
+							<row1>-0.707106 0.707108 -0.000143</row1>
+							<row2>0.612366 0.612263 -0.500141</row2>
+							<row3>15.126324 -5.644547 4.570907</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>Claw_L1</identifier>
+					<transform>
+						<row0>0.306544 0.927540 -0.213775</row0>
+						<row1>0.397920 -0.328897 -0.856438</row1>
+						<row2>-0.864691 0.177470 -0.469909</row2>
+						<row3>8.061914 -1.761996 -11.251928</row3>
+					</transform>
+					<node>
+						<identifier>Claw_L2</identifier>
+						<transform>
+							<row0>0.966994 -0.000559 -0.254797</row0>
+							<row1>-0.034610 0.990441 -0.133526</row1>
+							<row2>0.252436 0.137938 0.957731</row2>
+							<row3>0.003662 5.918943 0.000872</row3>
+						</transform>
+						<node>
+							<identifier>Claw_L3</identifier>
+							<transform>
+								<row0>0.954663 -0.296638 -0.024986</row0>
+								<row1>0.297444 0.953913 0.039711</row1>
+								<row2>0.012055 -0.045343 0.998899</row2>
+								<row3>1.635031 5.179455 0.979102</row3>
+							</transform>
+							<node>
+								<identifier>Claw_L4</identifier>
+								<transform>
+									<row0>0.129398 -0.990932 0.036178</row0>
+									<row1>0.991404 0.129999 0.014759</row1>
+									<row2>-0.019328 0.033958 0.999236</row2>
+									<row3>-5.428496 1.749502 -0.169144</row3>
+								</transform>
+								<node>
+									<identifier>Claw_L4_BlendBone</identifier>
+									<transform>
+										<row0>-0.575351 0.427121 -0.697523</row0>
+										<row1>0.228142 0.902774 0.364622</row1>
+										<row2>-0.785444 -0.050652 0.616857</row2>
+										<row3>29.608477 -9.802483 -12.689527</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>Claw_L3_BlendBone</identifier>
+								<transform>
+									<row0>0.362482 0.601974 -0.711502</row0>
+									<row1>0.917488 -0.096332 0.385922</row1>
+									<row2>-0.163774 0.792684 0.587222</row2>
+									<row3>-11.070165 -29.295712 -11.922472</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>Claw_L2_BlendBone</identifier>
+							<transform>
+								<row0>0.516525 0.498966 -0.695870</row0>
+								<row1>0.851891 -0.381553 0.358746</row1>
+								<row2>0.086509 0.778107 0.622146</row2>
+								<row3>-17.790821 -18.941668 -11.817000</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>Claw_L1_BlendBone</identifier>
+						<transform>
+							<row0>0.306544 0.397920 -0.864691</row0>
+							<row1>0.927540 -0.328897 0.177470</row1>
+							<row2>0.213775 0.856438 0.469909</row2>
+							<row3>-19.527422 -14.461719 -4.254373</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>Claw_R1</identifier>
+					<transform>
+						<row0>0.306544 -0.927540 0.213775</row0>
+						<row1>0.397920 0.328897 0.856438</row1>
+						<row2>-0.864691 -0.177470 0.469909</row2>
+						<row3>-8.061920 -1.761991 -11.251924</row3>
+					</transform>
+					<node>
+						<identifier>Claw_R2</identifier>
+						<transform>
+							<row0>0.966994 -0.000559 -0.254797</row0>
+							<row1>-0.034610 0.990441 -0.133526</row1>
+							<row2>0.252436 0.137938 0.957731</row2>
+							<row3>-0.003650 -5.918902 -0.000856</row3>
+						</transform>
+						<node>
+							<identifier>Claw_R3</identifier>
+							<transform>
+								<row0>0.954663 -0.296638 -0.024986</row0>
+								<row1>0.297444 0.953913 0.039711</row1>
+								<row2>0.012055 -0.045343 0.998899</row2>
+								<row3>-1.635028 -5.179500 -0.979121</row3>
+							</transform>
+							<node>
+								<identifier>Claw_R4</identifier>
+								<transform>
+									<row0>0.129398 -0.990932 0.036178</row0>
+									<row1>0.991404 0.129999 0.014759</row1>
+									<row2>-0.019328 0.033958 0.999236</row2>
+									<row3>5.428489 -1.749436 0.169153</row3>
+								</transform>
+								<node>
+									<identifier>Claw_R4_BlendBone</identifier>
+									<transform>
+										<row0>-0.575351 0.427121 -0.697523</row0>
+										<row1>-0.228142 -0.902774 -0.364622</row1>
+										<row2>0.785444 0.050652 -0.616857</row2>
+										<row3>-29.608410 9.802481 12.689504</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>Claw_R3_BlendBone</identifier>
+								<transform>
+									<row0>0.362482 0.601974 -0.711502</row0>
+									<row1>-0.917488 0.096332 -0.385922</row1>
+									<row2>0.163774 -0.792684 -0.587222</row2>
+									<row3>11.070164 29.295712 11.922460</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>Claw_R2_BlendBone</identifier>
+							<transform>
+								<row0>0.516525 0.498966 -0.695870</row0>
+								<row1>-0.851891 0.381553 -0.358746</row1>
+								<row2>-0.086509 -0.778107 -0.622146</row2>
+								<row3>17.790819 18.941628 11.816971</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>Claw_R1_BlendBone</identifier>
+						<transform>
+							<row0>0.306544 0.397920 -0.864691</row0>
+							<row1>-0.927540 0.328897 -0.177470</row1>
+							<row2>-0.213775 -0.856438 -0.469909</row2>
+							<row3>19.527426 14.461714 4.254368</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>F_Crab_Leg_L0</identifier>
+					<transform>
+						<row0>-0.581438 -0.707106 0.402406</row0>
+						<row1>-0.581321 0.707108 0.402572</row1>
+						<row2>-0.569205 0.000143 -0.822195</row2>
+						<row3>12.110118 -1.184852 -4.210446</row3>
+					</transform>
+					<node>
+						<identifier>F_Crab_Leg_L1</identifier>
+						<transform>
+							<row0>0.945923 -0.324391 0.000231</row0>
+							<row1>0.324391 0.945923 -0.000195</row1>
+							<row2>-0.000155 0.000259 1.000000</row2>
+							<row3>-3.667261 -10.693708 0.002205</row3>
+						</transform>
+						<node>
+							<identifier>F_Crab_Leg_L2</identifier>
+							<transform>
+								<row0>-0.219931 0.975515 0.000252</row0>
+								<row1>0.975515 0.219931 0.000035</row1>
+								<row2>-0.000021 0.000253 -1.000000</row2>
+								<row3>-9.427921 -2.125532 -0.000342</row3>
+							</transform>
+							<node>
+								<identifier>F_Crab_Leg_DRV_L2</identifier>
+								<transform>
+									<row0>1.000000 0.000000 0.000000</row0>
+									<row1>0.000000 1.000000 0.000000</row1>
+									<row2>0.000000 -0.000000 1.000000</row2>
+									<row3>-2.622787 -3.410923 0.143471</row3>
+								</transform>
+								<node>
+									<identifier>F_Crab_Leg_DRV_L2_BlendBone</identifier>
+									<transform>
+										<row0>-0.640936 -0.515114 0.569086</row0>
+										<row1>0.626282 -0.779596 -0.000306</row1>
+										<row2>-0.443815 -0.356213 -0.822278</row2>
+										<row3>17.325626 37.353531 2.442958</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>F_Crab_Leg_L3</identifier>
+								<transform>
+									<row0>-0.161436 -0.986883 -0.000064</row0>
+									<row1>0.986883 -0.161436 0.000002</row1>
+									<row2>-0.000012 -0.000063 1.000000</row2>
+									<row3>-10.821129 1.770137 -0.000020</row3>
+								</transform>
+								<node>
+									<identifier>F_Crab_Leg_L3_BlendBone</identifier>
+									<transform>
+										<row0>0.611790 -0.549370 0.569127</row0>
+										<row1>0.668266 0.743922 -0.000264</row1>
+										<row2>0.423241 -0.380490 -0.822250</row2>
+										<row3>-35.871120 19.995396 2.584110</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>F_Crab_Leg_L2_BlendBone</identifier>
+								<transform>
+									<row0>-0.640936 -0.515114 0.569086</row0>
+									<row1>0.626282 -0.779596 -0.000306</row1>
+									<row2>-0.443815 -0.356213 -0.822278</row2>
+									<row3>14.702840 33.942604 2.586429</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>F_Crab_Leg_L1_BlendBone</identifier>
+							<transform>
+								<row0>-0.361552 -0.738388 -0.569266</row0>
+								<row1>-0.898247 0.439490 0.000436</row1>
+								<row2>-0.249865 -0.511499 0.822153</row2>
+								<row3>20.449955 19.682999 -2.581874</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>F_Crab_Leg_L0_BlendBone</identifier>
+						<transform>
+							<row0>-0.581438 -0.581321 -0.569205</row0>
+							<row1>-0.707106 0.707108 0.000143</row1>
+							<row2>-0.402406 -0.402572 0.822195</row2>
+							<row3>22.062216 1.290434 -2.578785</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>F_Crab_Leg_R0</identifier>
+					<transform>
+						<row0>0.581438 -0.707106 0.402406</row0>
+						<row1>0.581321 0.707108 0.402572</row1>
+						<row2>-0.569205 -0.000143 0.822195</row2>
+						<row3>-12.110118 -1.184852 -4.210447</row3>
+					</transform>
+					<node>
+						<identifier>F_Crab_Leg_R1</identifier>
+						<transform>
+							<row0>0.945923 -0.324391 0.000231</row0>
+							<row1>0.324391 0.945923 -0.000195</row1>
+							<row2>-0.000155 0.000259 1.000000</row2>
+							<row3>-3.667261 -10.693707 0.002205</row3>
+						</transform>
+						<node>
+							<identifier>F_Crab_Leg_R2</identifier>
+							<transform>
+								<row0>-0.219931 0.975515 0.000252</row0>
+								<row1>0.975515 0.219931 0.000035</row1>
+								<row2>-0.000021 0.000253 -1.000000</row2>
+								<row3>-9.427916 -2.125535 -0.000341</row3>
+							</transform>
+							<node>
+								<identifier>F_Crab_Leg_DRV_R2</identifier>
+								<transform>
+									<row0>1.000000 0.000000 0.000000</row0>
+									<row1>0.000000 1.000000 0.000000</row1>
+									<row2>0.000000 0.000000 1.000000</row2>
+									<row3>-2.622786 -3.410862 -0.144812</row3>
+								</transform>
+								<node>
+									<identifier>F_Crab_Leg_DRV_R2_BlendBone</identifier>
+									<transform>
+										<row0>0.640923 0.514866 0.569324</row0>
+										<row1>0.626282 -0.779597 -0.000019</row1>
+										<row2>-0.443833 -0.356570 0.822113</row2>
+										<row3>17.325682 37.354588 -2.426330</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>F_Crab_Leg_R3</identifier>
+								<transform>
+									<row0>-0.161436 -0.986883 -0.000064</row0>
+									<row1>0.986883 -0.161436 0.000002</row1>
+									<row2>-0.000012 -0.000063 1.000000</row2>
+									<row3>-10.821132 1.770137 -0.000021</row3>
+								</transform>
+								<node>
+									<identifier>F_Crab_Leg_R3_BlendBone</identifier>
+									<transform>
+										<row0>-0.611617 0.549399 0.569284</row0>
+										<row1>0.668266 0.743922 0.000022</row1>
+										<row2>0.423491 -0.380447 0.822141</row2>
+										<row3>-35.871902 19.995260 -2.573458</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>F_Crab_Leg_R2_BlendBone</identifier>
+								<transform>
+									<row0>0.640923 0.514866 0.569324</row0>
+									<row1>0.626282 -0.779597 -0.000019</row1>
+									<row2>-0.443833 -0.356570 0.822113</row2>
+									<row3>14.702895 33.943726 -2.571142</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>F_Crab_Leg_R1_BlendBone</identifier>
+							<transform>
+								<row0>0.361289 0.738610 -0.569145</row0>
+								<row1>-0.898247 0.439491 0.000150</row1>
+								<row2>-0.250244 -0.511179 -0.822237</row2>
+								<row3>20.451147 19.681993 2.575697</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>F_Crab_Leg_R0_BlendBone</identifier>
+						<transform>
+							<row0>0.581438 0.581321 -0.569205</row0>
+							<row1>-0.707106 0.707108 -0.000143</row1>
+							<row2>-0.402406 -0.402572 -0.822195</row2>
+							<row3>22.062216 1.290434 2.578787</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>Head</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 5.189541 0.000000</row3>
+					</transform>
+					<node>
+						<identifier>Eye_L</identifier>
+						<transform>
+							<row0>0.996195 0.000000 0.087155</row0>
+							<row1>0.007596 0.996195 -0.086826</row1>
+							<row2>-0.086824 0.087157 0.992404</row2>
+							<row3>2.341300 -0.332405 -20.955734</row3>
+						</transform>
+						<node>
+							<identifier>Eye_L_BlendBone</identifier>
+							<transform>
+								<row0>0.996195 0.007596 -0.086824</row0>
+								<row1>-0.000000 0.996195 0.087157</row1>
+								<row2>-0.087155 0.086826 -0.992404</row2>
+								<row3>0.130880 -23.123056 26.444824</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>Eye_R</identifier>
+						<transform>
+							<row0>0.996195 -0.000000 -0.087155</row0>
+							<row1>-0.007596 0.996195 -0.086826</row1>
+							<row2>0.086824 0.087157 0.992404</row2>
+							<row3>-2.341300 -0.332405 -20.955734</row3>
+						</transform>
+						<node>
+							<identifier>Eye_R_BlendBone</identifier>
+							<transform>
+								<row0>0.996195 -0.007596 0.086824</row0>
+								<row1>0.000000 0.996195 0.087157</row1>
+								<row2>0.087155 0.086826 -0.992404</row2>
+								<row3>-0.130880 -23.123056 26.444824</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>Head_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>0.000000 -21.062607 7.307286</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>M_Crab_Leg_L0</identifier>
+					<transform>
+						<row0>-0.682862 -0.707107 -0.183573</row0>
+						<row1>-0.682915 0.707107 -0.183378</row1>
+						<row2>0.259473 0.000142 -0.965750</row2>
+						<row3>12.194119 -1.184853 4.544660</row3>
+					</transform>
+					<node>
+						<identifier>M_Crab_Leg_L1</identifier>
+						<transform>
+							<row0>0.945923 -0.324391 0.000231</row0>
+							<row1>0.324391 0.945923 -0.000195</row1>
+							<row2>-0.000155 0.000259 1.000000</row2>
+							<row3>-3.667259 -10.693707 0.002203</row3>
+						</transform>
+						<node>
+							<identifier>M_Crab_Leg_L2</identifier>
+							<transform>
+								<row0>-0.219931 0.975515 0.000252</row0>
+								<row1>0.975515 0.219931 0.000035</row1>
+								<row2>-0.000021 0.000253 -1.000000</row2>
+								<row3>-9.427915 -2.125535 -0.000339</row3>
+							</transform>
+							<node>
+								<identifier>M_Crab_Leg_DRV_L2</identifier>
+								<transform>
+									<row0>1.000000 -0.000000 0.000000</row0>
+									<row1>-0.000000 1.000000 0.000000</row1>
+									<row2>0.000000 0.000000 1.000000</row2>
+									<row3>-2.684874 -3.460532 -0.424498</row3>
+								</transform>
+								<node>
+									<identifier>M_Crab_Leg_DRV_L2_BlendBone</identifier>
+									<transform>
+										<row0>-0.752917 -0.604746 -0.259613</row0>
+										<row1>0.626281 -0.779598 -0.000305</row1>
+										<row2>0.202209 0.162820 -0.965713</row2>
+										<row3>13.136708 33.986839 6.265500</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>M_Crab_Leg_L3</identifier>
+								<transform>
+									<row0>-0.161436 -0.986883 -0.000064</row0>
+									<row1>0.986883 -0.161436 0.000002</row1>
+									<row2>-0.000012 -0.000063 1.000000</row2>
+									<row3>-10.821128 1.770137 -0.000018</row3>
+								</transform>
+								<node>
+									<identifier>M_Crab_Leg_L3_BlendBone</identifier>
+									<transform>
+										<row0>0.718378 -0.645414 -0.259566</row0>
+										<row1>0.668268 0.743921 -0.000263</row1>
+										<row2>-0.193266 0.173270 -0.965725</row2>
+										<row3>-31.813568 16.351667 5.838949</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>M_Crab_Leg_L2_BlendBone</identifier>
+								<transform>
+									<row0>-0.752917 -0.604746 -0.259613</row0>
+									<row1>0.626281 -0.779598 -0.000305</row1>
+									<row2>0.202209 0.162820 -0.965713</row2>
+									<row3>10.451832 30.526300 5.841002</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>M_Crab_Leg_L1_BlendBone</identifier>
+							<transform>
+								<row0>-0.424344 -0.867550 0.259402</row0>
+								<row1>-0.898248 0.439489 0.000435</row1>
+								<row2>0.114382 0.232823 0.965769</row2>
+								<row3>18.052158 14.785550 -5.837636</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>M_Crab_Leg_L0_BlendBone</identifier>
+						<transform>
+							<row0>-0.682862 -0.682915 0.259473</row0>
+							<row1>-0.707107 0.707107 0.000142</row1>
+							<row2>0.183573 0.183378 0.965750</row2>
+							<row3>18.205902 -2.565192 -5.834147</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>M_Crab_Leg_R0</identifier>
+					<transform>
+						<row0>0.682862 -0.707107 -0.183573</row0>
+						<row1>0.682915 0.707107 -0.183378</row1>
+						<row2>0.259473 -0.000142 0.965750</row2>
+						<row3>-12.194119 -1.184853 4.544660</row3>
+					</transform>
+					<node>
+						<identifier>M_Crab_Leg_R1</identifier>
+						<transform>
+							<row0>0.945923 -0.324391 0.000231</row0>
+							<row1>0.324391 0.945923 -0.000195</row1>
+							<row2>-0.000155 0.000259 1.000000</row2>
+							<row3>-3.667262 -10.693708 0.002204</row3>
+						</transform>
+						<node>
+							<identifier>M_Crab_Leg_R2</identifier>
+							<transform>
+								<row0>-0.219931 0.975515 0.000252</row0>
+								<row1>0.975515 0.219931 0.000035</row1>
+								<row2>-0.000021 0.000253 -1.000000</row2>
+								<row3>-9.427917 -2.125533 -0.000340</row3>
+							</transform>
+							<node>
+								<identifier>M_Crab_Leg_DRV_R2</identifier>
+								<transform>
+									<row0>1.000000 -0.000000 0.000000</row0>
+									<row1>0.000000 1.000000 0.000000</row1>
+									<row2>-0.000000 -0.000000 1.000000</row2>
+									<row3>-2.622787 -3.410859 0.423137</row3>
+								</transform>
+								<node>
+									<identifier>M_Crab_Leg_DRV_R2_BlendBone</identifier>
+									<transform>
+										<row0>0.752923 0.604859 -0.259334</row0>
+										<row1>0.626281 -0.779598 -0.000020</row1>
+										<row2>0.202188 0.162400 0.965788</row2>
+										<row3>13.074748 33.939705 -6.250428</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>M_Crab_Leg_R3</identifier>
+								<transform>
+									<row0>-0.161436 -0.986883 -0.000064</row0>
+									<row1>0.986883 -0.161436 0.000002</row1>
+									<row2>-0.000012 -0.000063 1.000000</row2>
+									<row3>-10.821129 1.770134 -0.000019</row3>
+								</transform>
+								<node>
+									<identifier>M_Crab_Leg_R3_BlendBone</identifier>
+									<transform>
+										<row0>-0.718457 0.645400 -0.259381</row0>
+										<row1>0.668268 0.743921 0.000021</row1>
+										<row2>-0.192973 0.173320 0.965775</row2>
+										<row3>-31.815344 16.351366 -5.829343</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>M_Crab_Leg_R2_BlendBone</identifier>
+								<transform>
+									<row0>0.752923 0.604859 -0.259334</row0>
+									<row1>0.626281 -0.779598 -0.000020</row1>
+									<row2>0.202188 0.162400 0.965788</row2>
+									<row3>10.451963 30.528845 -5.827291</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>M_Crab_Leg_R1_BlendBone</identifier>
+							<transform>
+								<row0>0.424463 0.867449 0.259544</row0>
+								<row1>-0.898248 0.439489 0.000151</row1>
+								<row2>0.113936 0.233199 -0.965731</row2>
+								<row3>18.054853 14.783279 5.830658</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>M_Crab_Leg_R0_BlendBone</identifier>
+						<transform>
+							<row0>0.682862 0.682915 0.259473</row0>
+							<row1>-0.707107 0.707107 -0.000142</row1>
+							<row2>0.183573 0.183378 -0.965750</row2>
+							<row3>18.205902 -2.565192 5.834147</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>Main_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.000000 -15.873066 7.307286</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>Root_BlendBone</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 -1.000000</row2>
+					<row3>0.000000 0.000000 0.000000</row3>
+				</transform>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>Head1_BlendBone</node>
+		<node>Claw_R3_BlendBone</node>
+		<node>F_Crab_Leg_R2_BlendBone</node>
+		<node>F_Crab_Leg_R3_BlendBone</node>
+		<node>F_Crab_Leg_DRV_R2_BlendBone</node>
+		<node>F_Crab_Leg_R1_BlendBone</node>
+		<node>M_Crab_Leg_R2_BlendBone</node>
+		<node>M_Crab_Leg_R3_BlendBone</node>
+		<node>M_Crab_Leg_DRV_R2_BlendBone</node>
+		<node>M_Crab_Leg_R1_BlendBone</node>
+		<node>B_Crab_Leg_R2_BlendBone</node>
+		<node>B_Crab_Leg_R3_BlendBone</node>
+		<node>B_Crab_Leg_DRV_R2_BlendBone</node>
+		<node>B_Crab_Leg_R1_BlendBone</node>
+		<node>Claw_L3_BlendBone</node>
+		<node>F_Crab_Leg_L2_BlendBone</node>
+		<node>F_Crab_Leg_L3_BlendBone</node>
+		<node>F_Crab_Leg_DRV_L2_BlendBone</node>
+		<node>F_Crab_Leg_L1_BlendBone</node>
+		<node>M_Crab_Leg_L2_BlendBone</node>
+		<node>M_Crab_Leg_L3_BlendBone</node>
+		<node>M_Crab_Leg_DRV_L2_BlendBone</node>
+		<node>M_Crab_Leg_L1_BlendBone</node>
+		<node>B_Crab_Leg_L2_BlendBone</node>
+		<node>B_Crab_Leg_L3_BlendBone</node>
+		<node>B_Crab_Leg_DRV_L2_BlendBone</node>
+		<node>B_Crab_Leg_L1_BlendBone</node>
+		<geometry>
+			<vertices>s3ShapeDeformed.vertices</vertices>
+			<primitive>s3ShapeDeformed.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd3_skinned</identifier>
+					<fx>shaders/std_effects/PBS_ext_skinned.fx</fx>
+					<materialKind>112</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Environment/hd_env_EVT_C26_0009_Coral_Zone/hd_env_EVT_C26_0009_Coral_Zone_decal_AM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Environment/hd_env_EVT_C26_0009_Coral_Zone/hd_env_EVT_C26_0009_Coral_Zone_decal_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Environment/hd_env_EVT_C26_0009_Coral_Zone/hd_env_EVT_C26_0009_Coral_Zone_decal_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.000000 16.189823 2.156103</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>Head1_BlendBone</node>
+		<geometry>
+			<vertices>s7ShapeDeformed.vertices</vertices>
+			<primitive>s7ShapeDeformed.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd7_skinned</identifier>
+					<fx>shaders/std_effects/glow_skinned.fx</fx>
+					<materialKind>0</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						destBlend
+						<Int>5</Int>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Environment/hd_env_EVT_C26_0003_Crab/hd_env_EVT_C26_0003_Crab_glass_AM.dds</Texture>
+					</property>
+					<property>
+						g_tintColor
+						<Vector4>0.215686 0.741176 1.000000 1.000000</Vector4>
+					</property>
+					<property>
+						selfIllumination
+						<Float>12.000000</Float>
+					</property>
+					<property>
+						srcBlend
+						<Int>3</Int>
+					</property>
+				</material>
+				<groupOrigin>0.000000 33.324257 2.502408</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>Head1_BlendBone</node>
+		<node>Main_BlendBone</node>
+		<node>Head_BlendBone</node>
+		<geometry>
+			<vertices>s0ShapeDeformed.vertices</vertices>
+			<stream>s0ShapeDeformed.uv2</stream>
+			<primitive>s0ShapeDeformed.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tiled_skinned.fx</fx>
+					<materialKind>112</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						albedoHeightTile0
+						<Texture>content/Buildings/00_Tiles/dds/Glass_02_01_Cathedral_512_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile1
+						<Texture>content/Environment/00_Tiles/dds/Ceramic_Plate_03_1024_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile2
+						<Texture>content/Environment/00_Tiles/dds/Ceramic_Plate_02_1024_AM.dds</Texture>
+					</property>
+					<property>
+						blendMask
+						<Texture>content/Environment/hd_env_EVT_C26_0003_Crab/hd_env_EVT_C26_0003_Crab_01_blend.png</Texture>
+					</property>
+					<property>
+						colorTex
+						<Texture>content/Environment/hd_env_EVT_C26_0003_Crab/hd_env_EVT_C26_0003_Crab_01_GCM.dds</Texture>
+					</property>
+					<property>
+						dirtMap
+						<Texture>content/Buildings/00_Tiles/Dirt_Yelow_Plaster_06_01_DM.dds</Texture>
+					</property>
+					<property>
+						g_dirtColor
+						<Vector4>0.000000 0.430000 0.380000 0.180000</Vector4>
+					</property>
+					<property>
+						g_dirtColorParams
+						<Vector4>0.250000 0.900000 0.900000 0.900000</Vector4>
+					</property>
+					<property>
+						g_fakeShadowsAndDetailParams
+						<Vector4>0.500000 0.500000 0.000000 0.001000</Vector4>
+					</property>
+					<property>
+						g_tile0Tint
+						<Vector4>0.800000 0.800000 0.800000 1.000000</Vector4>
+					</property>
+					<property>
+						g_tile1Tint
+						<Vector4>0.800000 0.800000 0.800000 1.000000</Vector4>
+					</property>
+					<property>
+						g_tile2Tint
+						<Vector4>0.749020 0.749020 0.749020 1.000000</Vector4>
+					</property>
+					<property>
+						metallicAOTile0
+						<Texture>content/Buildings/00_Tiles/dds/Glass_02_01_Cathedral_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile1
+						<Texture>content/Environment/00_Tiles/dds/Ceramic_Plate_01_1024_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile2
+						<Texture>content/Buildings/00_Tiles/dds/Glass_02_Cathedral_512_MAO.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile0
+						<Texture>content/Buildings/00_Tiles/dds/Glass_02_01_Cathedral_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile1
+						<Texture>content/Environment/00_Tiles/dds/Ceramic_Plate_03_1024_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile2
+						<Texture>content/Buildings/00_Tiles/dds/Glass_02_Cathedral_512_GBMT.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.000000 22.374481 6.061152</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>F_Crab_Leg_R0_BlendBone</node>
+		<node>F_Crab_Leg_R1_BlendBone</node>
+		<node>F_Crab_Leg_DRV_R2_BlendBone</node>
+		<node>F_Crab_Leg_R2_BlendBone</node>
+		<node>F_Crab_Leg_R3_BlendBone</node>
+		<node>Claw_R1_BlendBone</node>
+		<node>Claw_R2_BlendBone</node>
+		<node>Claw_R4_BlendBone</node>
+		<node>Claw_R3_BlendBone</node>
+		<node>M_Crab_Leg_R0_BlendBone</node>
+		<node>M_Crab_Leg_R1_BlendBone</node>
+		<node>M_Crab_Leg_DRV_R2_BlendBone</node>
+		<node>M_Crab_Leg_R2_BlendBone</node>
+		<node>M_Crab_Leg_R3_BlendBone</node>
+		<node>B_Crab_Leg_R0_BlendBone</node>
+		<node>B_Crab_Leg_R1_BlendBone</node>
+		<node>B_Crab_Leg_DRV_R2_BlendBone</node>
+		<node>B_Crab_Leg_R2_BlendBone</node>
+		<node>B_Crab_Leg_R3_BlendBone</node>
+		<node>F_Crab_Leg_L0_BlendBone</node>
+		<node>F_Crab_Leg_L1_BlendBone</node>
+		<node>F_Crab_Leg_DRV_L2_BlendBone</node>
+		<node>F_Crab_Leg_L2_BlendBone</node>
+		<node>F_Crab_Leg_L3_BlendBone</node>
+		<node>Claw_L1_BlendBone</node>
+		<node>Main_BlendBone</node>
+		<node>Claw_L2_BlendBone</node>
+		<node>Claw_L4_BlendBone</node>
+		<node>Claw_L3_BlendBone</node>
+		<node>M_Crab_Leg_L0_BlendBone</node>
+		<node>M_Crab_Leg_L1_BlendBone</node>
+		<node>M_Crab_Leg_DRV_L2_BlendBone</node>
+		<node>M_Crab_Leg_L2_BlendBone</node>
+		<node>M_Crab_Leg_L3_BlendBone</node>
+		<node>B_Crab_Leg_L0_BlendBone</node>
+		<node>B_Crab_Leg_L1_BlendBone</node>
+		<node>B_Crab_Leg_DRV_L2_BlendBone</node>
+		<node>B_Crab_Leg_L2_BlendBone</node>
+		<node>B_Crab_Leg_L3_BlendBone</node>
+		<geometry>
+			<vertices>s1ShapeDeformed.vertices</vertices>
+			<stream>s1ShapeDeformed.uv2</stream>
+			<primitive>s1ShapeDeformed.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd1_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tiled_skinned.fx</fx>
+					<materialKind>112</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						albedoHeightTile0
+						<Texture>content/Buildings/00_Tiles/dds/Glass_02_01_Cathedral_512_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile1
+						<Texture>content/Environment/00_Tiles/dds/Metal_Bare_02_512_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile2
+						<Texture>content/Environment/00_Tiles/dds/Ceramic_Plate_02_1024_AM.dds</Texture>
+					</property>
+					<property>
+						blendMask
+						<Texture>content/Environment/hd_env_EVT_C26_0003_Crab/hd_env_EVT_C26_0003_Crab_02_blend.png</Texture>
+					</property>
+					<property>
+						colorTex
+						<Texture>content/Environment/hd_env_EVT_C26_0003_Crab/hd_env_EVT_C26_0003_Crab_02_GCM.dds</Texture>
+					</property>
+					<property>
+						dirtMap
+						<Texture>content/Buildings/00_Tiles/Dirt_Yelow_Plaster_06_01_DM.dds</Texture>
+					</property>
+					<property>
+						g_dirtColor
+						<Vector4>0.000000 0.430000 0.380000 0.150000</Vector4>
+					</property>
+					<property>
+						g_dirtColorParams
+						<Vector4>0.500000 0.900000 0.900000 0.900000</Vector4>
+					</property>
+					<property>
+						g_fakeShadowsAndDetailParams
+						<Vector4>0.500000 0.500000 0.000000 0.010000</Vector4>
+					</property>
+					<property>
+						g_tile0Tint
+						<Vector4>0.749020 0.749020 0.749020 1.000000</Vector4>
+					</property>
+					<property>
+						g_tile2Tint
+						<Vector4>0.600000 0.568627 0.537255 1.000000</Vector4>
+					</property>
+					<property>
+						metallicAOTile0
+						<Texture>content/Buildings/00_Tiles/dds/Glass_02_01_Cathedral_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile1
+						<Texture>content/Environment/00_Tiles/dds/Metal_Bare_02_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile2
+						<Texture>content/Buildings/00_Tiles/dds/Glass_02_Cathedral_512_MAO.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile0
+						<Texture>content/Buildings/00_Tiles/dds/Glass_02_01_Cathedral_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile1
+						<Texture>content/Environment/00_Tiles/dds/Metal_Bare_02_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile2
+						<Texture>content/Buildings/00_Tiles/dds/Glass_02_Cathedral_512_GBMT.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.000000 10.445614 2.295289</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>Head1_BlendBone</node>
+		<geometry>
+			<vertices>s5ShapeDeformed.vertices</vertices>
+			<primitive>s5ShapeDeformed.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd5_skinned</identifier>
+					<fx>shaders/std_effects/glow_skinned.fx</fx>
+					<materialKind>112</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						destBlend
+						<Int>5</Int>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Environment/hd_env_EVT_C26_0003_Crab/hd_env_EVT_C26_0003_Crab_glow2.dds</Texture>
+					</property>
+					<property>
+						g_tintColor
+						<Vector4>0.215686 0.741176 1.000000 1.000000</Vector4>
+					</property>
+					<property>
+						selfIllumination
+						<Float>5.000000</Float>
+					</property>
+					<property>
+						srcBlend
+						<Int>3</Int>
+					</property>
+				</material>
+				<groupOrigin>0.000000 25.374474 34.145920</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>Head_BlendBone</node>
+		<node>Eye_R_BlendBone</node>
+		<node>Eye_L_BlendBone</node>
+		<geometry>
+			<vertices>s4ShapeDeformed.vertices</vertices>
+			<primitive>s4ShapeDeformed.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd4_skinned</identifier>
+					<fx>shaders/std_effects/glow_skinned.fx</fx>
+					<materialKind>112</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						destBlend
+						<Int>5</Int>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Environment/hd_env_EVT_C26_0003_Crab/hd_env_EVT_C26_0003_Crab_glow.dds</Texture>
+					</property>
+					<property>
+						g_tintColor
+						<Vector4>0.215686 0.741176 1.000000 1.000000</Vector4>
+					</property>
+					<property>
+						selfIllumination
+						<Float>5.500000</Float>
+					</property>
+					<property>
+						srcBlend
+						<Int>3</Int>
+					</property>
+				</material>
+				<groupOrigin>0.000000 20.028894 14.772820</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>Main_BlendBone</node>
+		<node>Head_BlendBone</node>
+		<node>Head1_BlendBone</node>
+		<node>Eye_R_BlendBone</node>
+		<node>Eye_L_BlendBone</node>
+		<geometry>
+			<vertices>s2ShapeDeformed.vertices</vertices>
+			<stream>s2ShapeDeformed.uv2</stream>
+			<primitive>s2ShapeDeformed.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd2_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tiled_skinned.fx</fx>
+					<materialKind>112</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						albedoHeightTile0
+						<Texture>content/Buildings/00_Tiles/dds/Glass_02_01_Cathedral_512_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile1
+						<Texture>content/Environment/00_Tiles/dds/Metal_Bare_01_512_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile2
+						<Texture>content/Environment/00_Tiles/dds/Ceramic_Plate_02_1024_AM.dds</Texture>
+					</property>
+					<property>
+						blendMask
+						<Texture>content/Environment/hd_env_EVT_C26_0003_Crab/hd_env_EVT_C26_0003_Crab_01_blend.png</Texture>
+					</property>
+					<property>
+						colorTex
+						<Texture>content/Environment/hd_env_EVT_C26_0003_Crab/hd_env_EVT_C26_0003_Crab_01_GCM.dds</Texture>
+					</property>
+					<property>
+						dirtMap
+						<Texture>content/Buildings/00_Tiles/Dirt_Yelow_Plaster_06_DM.dds</Texture>
+					</property>
+					<property>
+						g_dirtColor
+						<Vector4>0.000000 0.430000 0.380000 0.150000</Vector4>
+					</property>
+					<property>
+						g_dirtColorParams
+						<Vector4>0.140000 0.900000 0.900000 0.900000</Vector4>
+					</property>
+					<property>
+						g_fakeShadowsAndDetailParams
+						<Vector4>0.500000 0.500000 0.000000 0.000600</Vector4>
+					</property>
+					<property>
+						g_tile0Tint
+						<Vector4>0.701961 0.701961 0.701961 1.000000</Vector4>
+					</property>
+					<property>
+						g_tile2Tint
+						<Vector4>0.749020 0.749020 0.749020 1.000000</Vector4>
+					</property>
+					<property>
+						metallicAOTile0
+						<Texture>content/Buildings/00_Tiles/dds/Glass_02_01_Cathedral_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile1
+						<Texture>content/Environment/00_Tiles/dds/Metal_Bare_01_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile2
+						<Texture>content/Buildings/00_Tiles/dds/Glass_02_Cathedral_512_MAO.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile0
+						<Texture>content/Buildings/00_Tiles/dds/Glass_02_01_Cathedral_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile1
+						<Texture>content/Environment/00_Tiles/dds/Metal_Bare_01_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile2
+						<Texture>content/Buildings/00_Tiles/dds/Glass_02_Cathedral_512_GBMT.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.000000 18.561275 6.631500</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>
+			-42.727827 -5.215342 -34.082036
+			<!--BW_String-->
+		</min>
+		<max>
+			39.667800 44.292632 37.654968
+			<!--BW_String-->
+		</max>
+	</boundingBox>
+	<geometrySize>908036</geometrySize>
+	<minUVDensity>0.000658</minUVDensity>
+</root>

@@ -15,21 +15,25 @@
 			<ArenaVehicleShieldsController/>
 			<VehicleImpulseScheduler/>
 			<VehicleSpawnProtection/>
-			<ArenaCosmicLootComponent/>
+			<ArenaLootControllerComponent/>
 			<ArtifactScanningComponent/>
 			<VehicleOverrideShotComponent/>
 			<EquipVehicleCtrlComponent/>
 			<VehicleStunShotComponent/>
-			<SpringboardEffectComponent/>
+			<BoosterComponent/>
+			<ArenaMeteoriteZoneCtrlComponent/>
+			<CosmicVehicleResearchableLootComponent/>
+			<CosmicVehicleTeleportAbilityComponent/>
+			<VehicleAfkControllerComponent/>
+			<VehicleRotationComponent/>
 		</DynamicComponents>
 	</Components>
 	<Entities>
 		<ClientServerEntities>
 			<CosmicLoot/>
-			<CosmicPlacement/>
 			<ClientSelectableArtifactMachine/>
-			<DronPortal/>
-			<GeyserSplash/>
+			<MeteoriteZone/>
+			<RepulsionMine/>
 		</ClientServerEntities>
 		<ServerOnlyEntities>
 			<CosmicEventBattlesMgr/>
@@ -44,9 +48,24 @@
 	</gui>
 	<cgf>
 		<script>
-			<module>client.cgf_mechanics</module>
-			<module>common.cosmic_event_common_cgf.cosmic_event_components</module>
-			<module>common.cosmic_event_common_cgf.cosmic_event_managers</module>
+			<module>cell.cosmic_event_cell_cgf.components</module>
+			<module>cell.cosmic_event_cell_cgf.managers</module>
+			<module>client.cosmic_event_client_cgf.components</module>
+			<module>client.cosmic_event_client_cgf.managers</module>
+			<module>common.cosmic_event_common_cgf.components</module>
+			<module>common.cosmic_event_common_cgf.managers</module>
+			<module>common.cosmic_event_common_cgf.rules</module>
+			<module>cell.cosmic_event_cell_cgf.boosters.components</module>
+			<module>cell.cosmic_event_cell_cgf.boosters.managers</module>
+			<module>client.cosmic_event_client_cgf.boosters.components</module>
+			<module>client.cosmic_event_client_cgf.boosters.managers</module>
+			<module>common.cosmic_event_common_cgf.boosters.components</module>
+			<module>common.cosmic_event_common_cgf.boosters.managers</module>
+			<module>client.cosmic_event_client_cgf.hangar_entry_point.components</module>
+			<module>client.cosmic_event_client_cgf.hangar_entry_point.managers</module>
 		</script>
+		<prefabFolders>
+			<path>content/CGFPrefabs/cosmic_event</path>
+		</prefabFolders>
 	</cgf>
 </root>

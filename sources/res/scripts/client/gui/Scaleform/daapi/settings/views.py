@@ -118,6 +118,7 @@ class VIEW_ALIAS(COMMON_VIEW_ALIAS):
     VEHICLE_COMPARE_MAIN_CONFIGURATOR = 'vehicleCompareConfigurator'
     LOBBY_STRONGHOLD = 'StrongholdView'
     STRONGHOLD_ADS = 'StrongholdAdsView'
+    STRONGHOLD_PROGRESSION = 'StrongholdProgression'
     LOBBY_TOURNAMENTS = 'TournamentsView'
     BROWSER_VIEW = 'BrowserView'
     SIMPLE_DIALOG = 'simpleDialog'

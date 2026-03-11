@@ -4,16 +4,6 @@ package net.wg.gui.components.crosshairPanel
    
    public class CrosshairSniper extends CrosshairWithCassette
    {
-      
-      private static const RELOAD_TIME_BLINK_Y_DIAGONAL:int = 7;
-      
-      private static const RELOAD_TIME_BLINK_Y_HORIZONTAL:int = 39;
-      
-      private static const RELOAD_TIME_BLINK_Y_RADIAL:int = 11;
-      
-      private static const RELOAD_TIME_BLINK_Y_DASHED:int = 39;
-      
-      private static const RELOAD_TIME_BLINK_Y_SIEGE:int = 25;
        
       
       public var zoomTF:TextField = null;
@@ -22,8 +12,14 @@ package net.wg.gui.components.crosshairPanel
       
       private var _zoomStr:String = "";
       
+      private var _reloadTimeBlinkYPositions:Array;
+      
+      private var _abilityModifierXPositions:Array;
+      
       public function CrosshairSniper()
       {
+         this._reloadTimeBlinkYPositions = [7,39,11,39,25];
+         this._abilityModifierXPositions = [155,211,145,155,155];
          super();
       }
       
@@ -53,13 +49,22 @@ package net.wg.gui.components.crosshairPanel
       
       override protected function onDispose() : void
       {
+         this._reloadTimeBlinkYPositions.splice(0,this._reloadTimeBlinkYPositions.length);
+         this._reloadTimeBlinkYPositions = null;
+         this._abilityModifierXPositions.splice(0,this._abilityModifierXPositions.length);
+         this._abilityModifierXPositions = null;
          this.zoomTF = null;
          super.onDispose();
       }
       
       override protected function getReloadTimeBlinkYPos() : Array
       {
-         return [RELOAD_TIME_BLINK_Y_DIAGONAL,RELOAD_TIME_BLINK_Y_HORIZONTAL,RELOAD_TIME_BLINK_Y_RADIAL,RELOAD_TIME_BLINK_Y_DASHED,RELOAD_TIME_BLINK_Y_SIEGE];
+         return this._reloadTimeBlinkYPositions;
+      }
+      
+      override protected function getAbilityModifierXPos() : Array
+      {
+         return this._abilityModifierXPositions;
       }
    }
 }

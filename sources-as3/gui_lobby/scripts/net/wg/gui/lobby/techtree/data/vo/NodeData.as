@@ -47,6 +47,10 @@ package net.wg.gui.lobby.techtree.data.vo
       private static const EARLY_ACCESS_TOTAL_TOKENS:String = "earlyAccessTotalTokens";
       
       private static const IS_EARLY_ACCESS_CAN_BUY:String = "isEarlyAccessCanBuy";
+      
+      private static const PARAGONS_POINTS_FIELD:String = "paragonsPoints";
+      
+      private static const PARAGONS_TYPE_FIELD:String = "paragonsType";
        
       
       public var id:uint = 0;
@@ -92,6 +96,10 @@ package net.wg.gui.lobby.techtree.data.vo
       public var earlyAccessCurrentTokens:int = 0;
       
       public var earlyAccessTotalTokens:int = 0;
+      
+      public var paragonsPoints:String = "";
+      
+      public var paragonsType:String = "";
       
       private var _blueprintLabel:String = "";
       
@@ -254,6 +262,14 @@ package net.wg.gui.lobby.techtree.data.vo
          if(param1.hasOwnProperty(IS_EARLY_ACCESS_CAN_BUY))
          {
             this.isEarlyAccessCanBuy = param1[IS_EARLY_ACCESS_CAN_BUY];
+         }
+         if(param1.hasOwnProperty(PARAGONS_POINTS_FIELD))
+         {
+            this.paragonsPoints = param1[PARAGONS_POINTS_FIELD];
+         }
+         if(param1.hasOwnProperty(PARAGONS_TYPE_FIELD))
+         {
+            this.paragonsType = param1[PARAGONS_TYPE_FIELD];
          }
          this.dataIsReady = true;
       }

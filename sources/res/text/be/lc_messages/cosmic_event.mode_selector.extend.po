@@ -7,11 +7,31 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+msgid "#PluralForms"
+msgstr ""
+"nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && "
+"(n%100<10 || n%100>=20) ? 1 : 2);"
+
+msgid "cosmic_event/calendarTooltip/body"
+msgid_plural "plural/cosmic_event/calendarTooltip/body"
+msgstr[0] "Падзея «У космас!» працягнецца яшчэ: %(days)d дзень."
+msgstr[1] "Падзея «У космас!» працягнецца яшчэ: %(days)d дні."
+msgstr[2] "Падзея «У космас!» працягнецца яшчэ: %(days)d дзён."
+
+msgid "mode/cosmic_event/battlePassTooltip/body"
+msgstr ""
+"Выконваючы штодзённыя заданні ў рэжыме «У космас!» вы будзеце здабываць "
+"ачкі, неабходныя для прасоўвання па прагрэсіі Баявога пропуска."
+
+msgid "mode/cosmic_event/battlePassTooltip/header"
+msgstr "Ачкі Баявога пропуска"
 
 msgid "mode/cosmic_event/description"
 msgstr ""
-"Адпраўляйцеся ў космас\n"
-"па навуковы прарыў"
+"Энергічная экспедыцыя\n"
+"на планету Усход. Паехалі!"
 
 msgid "mode/cosmic_event/notStarted"
 msgstr "Рэжым недаступны"
@@ -21,22 +41,33 @@ msgstr "----"
 
 msgid "mode/cosmic_event/progression"
 msgstr ""
-"Прагрэсія:\n"
+"Касмічная прагрэсія:\n"
 "%(current) / %(total)"
 
 msgid "mode/cosmic_event/title"
-msgstr "На Марс: хаос"
+msgstr "У космас!"
 
 msgid "reward/equipCoin/name"
 msgstr "Кампаненты"
 
+msgid "reward/experimentalEquipment/description"
+msgstr ""
+"За праходжанне прагрэсіі вас чакаюць расточванне каморы і шматзубая карэтка "
+"дасыльніка. Таксама за некаторыя этапы прагрэсіі вы атрымаеце кампаненты, "
+"якія неабходны для наладкі абсталявання."
+
+msgid "reward/experimentalEquipment/name"
+msgstr "Эксперыментальнае абсталяванне"
+
 msgid "reward/lootbox/description"
 msgstr ""
-"Прасоўваючыся па прагрэсіі, вы будзеце атрымліваць кантэйнеры з тэматычным "
-"змесцівам."
+"За праходжанне этапаў прагрэсіі вы будзеце атрымліваць кантэйнеры "
+"«Дар Усходу». Унутры вас чакае гульнявая маёмасць і кантэйнеры «Рэдкі "
+"госць», а ў іх — прэміум тэхніка, золата, кампаненты для эксперыментальнага "
+"абсталявання, элементы выгляду і іншыя каштоўныя ўзнагароды."
 
 msgid "reward/lootbox/name"
-msgstr "Кантэйнеры"
+msgstr "Дар Усходу"
 
 msgid "reward/prize/description"
 msgstr ""

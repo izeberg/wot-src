@@ -2,30 +2,30 @@
 <root>
 	<forward>
 		<fn_effect_bin>particles/content_forward/pfx/null.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/environment/hangar/h08_car_exhaust.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/hangar/h08_mt_car_splash.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/hangar/h08_mt_sweep_dust.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/hangar/h08_snow_blow.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/hangar/h08_spring_wind.eff</fn_effect_bin>
 	</forward>
 	<deferred>
-		<fn_effect_bin>particles/content_deferred/pfx/environment/hangar/h08_car_exhaust.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/hangar/h08_mt_sweep_dust.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/pfx/environment/hangar/h08_snow_blow.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/pfx/environment/hangar/h08_snow_blow_s.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/environment/hangar/h08_car_exhaust.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/hangar/h08_spring_wind.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/hangar/h08_spring_wind_s.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/interior/h08_mt_car_splash.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/environment/hangar/h08_mt_car_splash.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/hangar/h08_mt_sweep_dust.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/hangar/h08_snow_blow.eff</fn_effect_bin>
-		<preloadVisual>particles/mesh_particles/wood_plank_02.visual</preloadVisual>
+		<fn_effect_bin>particles/environment/hangar/h08_spring_wind.eff</fn_effect_bin>
+		<preloadVisual>particles/mesh_particles/stone_tile_01.visual</preloadVisual>
 		<preload>
-			<shader>data/shaders/ps_long.fx</shader>
-			<texture>particles/content_deferred/pfx_textures/blizzard.dds</texture>
+			<shader>data/shaders/ps.fx</shader>
+			<texture>particles/content_deferred/pfx_textures/eff_leaves.dds</texture>
+		</preload>
+		<preload>
+			<shader>data/shaders/ps.fx</shader>
+			<texture>particles/content_deferred/pfx_textures/eff_tex_splash.dds</texture>
 		</preload>
 		<preload>
 			<shader>data/shaders/ps.fx</shader>
 			<texture>particles/content_deferred/pfx_textures/blizzard.dds</texture>
-		</preload>
-		<preload>
-			<shader>data/shaders/ps.fx</shader>
-			<texture>particles/content_deferred/pfx_textures/eff_tex_h08_mt_hangar.dds</texture>
 		</preload>
 	</deferred>
 </root>

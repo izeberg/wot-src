@@ -289,7 +289,7 @@
 						<type>BoolT</type>
 					</param>
 					<param>
-						c3RhcnRfYWN0aXZl c3RhcnRfY29vbGRvd24= b25BY3RpdmF0ZQ== b25Db29sZG93bg==
+						c3RhcnRfYWN0aXZl b25BY3RpdmF0ZQ== b25Db29sZG93bg== b25FeGhhdXN0ZWQ=
 						<name>Initial Value</name>
 						<type>StringArrayT</type>
 					</param>
@@ -297,7 +297,7 @@
 				<slots>
 					<slot>
 						<name>default</name>
-						<const>\c3RhcnRfYWN0aXZl c3RhcnRfY29vbGRvd24= b25BY3RpdmF0ZQ== b25Db29sZG93bg==\</const>
+						<const>\c3RhcnRfYWN0aXZl b25BY3RpdmF0ZQ== b25Db29sZG93bg== b25FeGhhdXN0ZWQ=\</const>
 					</slot>
 				</slots>
 			</block>
@@ -478,24 +478,15 @@
 			</block>
 			<block>
 				<class>ComponentMethod</class>
-				<id>ComponentMethod_8</id>
+				<id>ComponentMethod_2</id>
 				<params>
 					<param>
-						Animator.startLayerByName
+						Sound3D.play
 						<name>Component Type</name>
 						<type>StringT</type>
 					</param>
 				</params>
-				<slots>
-					<slot>
-						<name>arg#0</name>
-						<const>\012\</const>
-					</slot>
-					<slot>
-						<name>arg#1</name>
-						<const>\0.000000\</const>
-					</slot>
-				</slots>
+				<slots/>
 			</block>
 			<block>
 				<class>SetVariable</class>
@@ -529,6 +520,27 @@
 					<slot>
 						<name>arg#0</name>
 						<const>\0\</const>
+					</slot>
+					<slot>
+						<name>arg#1</name>
+						<const>\0.000000\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>ComponentMethod</class>
+				<id>ComponentMethod_8</id>
+				<params>
+					<param>
+						Animator.startLayerByName
+						<name>Component Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>arg#0</name>
+						<const>\012\</const>
 					</slot>
 					<slot>
 						<name>arg#1</name>
@@ -584,6 +596,19 @@
 				<params>
 					<param>
 						BoolT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>GetVariable</class>
+				<id>GetVariable_11</id>
+				<buddy>Variable_7</buddy>
+				<params>
+					<param>
+						GameObjectT
 						<name>Variable Type</name>
 						<type>TypeT</type>
 					</param>
@@ -706,6 +731,18 @@
 				<slots/>
 			</block>
 			<block>
+				<class>ComponentMethod</class>
+				<id>ComponentMethod_3</id>
+				<params>
+					<param>
+						Sound3D.play
+						<name>Component Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
 				<class>SetVariable</class>
 				<id>SetVariable_11</id>
 				<buddy>Variable_5</buddy>
@@ -739,6 +776,19 @@
 				<class>GetVariable</class>
 				<id>GetVariable_14</id>
 				<buddy>Variable_6</buddy>
+				<params>
+					<param>
+						GameObjectT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>GetVariable</class>
+				<id>GetVariable_12</id>
+				<buddy>Variable_8</buddy>
 				<params>
 					<param>
 						GameObjectT
@@ -871,10 +921,66 @@
 				<slots/>
 			</block>
 			<block>
+				<class>SetVariable</class>
+				<id>SetVariable_8</id>
+				<buddy>Variable_7</buddy>
+				<params>
+					<param>
+						GameObjectT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>SetVariable</class>
+				<id>SetVariable_9</id>
+				<buddy>Variable_8</buddy>
+				<params>
+					<param>
+						GameObjectT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
 				<class>GameObjectToVehicle</class>
 				<id>GameObjectToVehicle_3</id>
 				<params/>
 				<slots/>
+			</block>
+			<block>
+				<class>FindFirstNode</class>
+				<id>FindFirstNode_3</id>
+				<params/>
+				<slots>
+					<slot>
+						<name>name</name>
+						<const>\abilityStopSound\</const>
+					</slot>
+					<slot>
+						<name>includingInactive</name>
+						<const>\true\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>FindFirstNode</class>
+				<id>FindFirstNode_2</id>
+				<params/>
+				<slots>
+					<slot>
+						<name>name</name>
+						<const>\abilityStartSound\</const>
+					</slot>
+					<slot>
+						<name>includingInactive</name>
+						<const>\true\</const>
+					</slot>
+				</slots>
 			</block>
 			<block>
 				<class>FindFirstNode</class>
@@ -896,6 +1002,21 @@
 				<id>GetVehicleGameObject_3</id>
 				<params/>
 				<slots/>
+			</block>
+			<block>
+				<class>FindFirstNode</class>
+				<id>FindFirstNode_4</id>
+				<params/>
+				<slots>
+					<slot>
+						<name>name</name>
+						<const>\Sounds\</const>
+					</slot>
+					<slot>
+						<name>includingInactive</name>
+						<const>\true\</const>
+					</slot>
+				</slots>
 			</block>
 			<block>
 				<class>GetVariable</class>
@@ -1015,15 +1136,15 @@
 				<output>value</output>
 			</connection>
 			<connection>
-				<from>ComponentMethod_1</from>
+				<from>ComponentMethod_8</from>
 				<input>in</input>
-				<to>ComponentMethod_8</to>
+				<to>ComponentMethod_2</to>
 				<output>out</output>
 			</connection>
 			<connection>
-				<from>GetVariable_10</from>
+				<from>GetVariable_11</from>
 				<input>gameObject</input>
-				<to>ComponentMethod_8</to>
+				<to>ComponentMethod_2</to>
 				<output>value</output>
 			</connection>
 			<connection>
@@ -1036,7 +1157,7 @@
 				<from>Choice_1</from>
 				<input>input</input>
 				<to>SetVariable_5</to>
-				<output>o2</output>
+				<output>o1</output>
 			</connection>
 			<connection>
 				<from>SetVariable_5</from>
@@ -1048,6 +1169,18 @@
 				<from>GetVariable_10</from>
 				<input>gameObject</input>
 				<to>ComponentMethod_1</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>ComponentMethod_1</from>
+				<input>in</input>
+				<to>ComponentMethod_8</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>GetVariable_10</from>
+				<input>gameObject</input>
+				<to>ComponentMethod_8</to>
 				<output>value</output>
 			</connection>
 			<connection>
@@ -1108,7 +1241,7 @@
 				<from>Choice_1</from>
 				<input>input</input>
 				<to>SetVariable_6</to>
-				<output>o1</output>
+				<output>o2</output>
 			</connection>
 			<connection>
 				<from>GetVariable_4</from>
@@ -1144,6 +1277,18 @@
 				<from>GetVariable_10</from>
 				<input>gameObject</input>
 				<to>ComponentMethod_5</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>ComponentMethod_5</from>
+				<input>in</input>
+				<to>ComponentMethod_3</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>GetVariable_12</from>
+				<input>gameObject</input>
+				<to>ComponentMethod_3</to>
 				<output>value</output>
 			</connection>
 			<connection>
@@ -1237,10 +1382,46 @@
 				<output>node</output>
 			</connection>
 			<connection>
+				<from>SetVariable_7</from>
+				<input>input</input>
+				<to>SetVariable_8</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>FindFirstNode_2</from>
+				<input>value</input>
+				<to>SetVariable_8</to>
+				<output>node</output>
+			</connection>
+			<connection>
+				<from>SetVariable_8</from>
+				<input>input</input>
+				<to>SetVariable_9</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>FindFirstNode_3</from>
+				<input>value</input>
+				<to>SetVariable_9</to>
+				<output>node</output>
+			</connection>
+			<connection>
 				<from>GetVehicleGameObject_3</from>
 				<input>gameObject</input>
 				<to>GameObjectToVehicle_3</to>
 				<output>vehicleObject</output>
+			</connection>
+			<connection>
+				<from>FindFirstNode_4</from>
+				<input>gameObject</input>
+				<to>FindFirstNode_3</to>
+				<output>node</output>
+			</connection>
+			<connection>
+				<from>FindFirstNode_4</from>
+				<input>gameObject</input>
+				<to>FindFirstNode_2</to>
+				<output>node</output>
 			</connection>
 			<connection>
 				<from>ContextGetSelf_1</from>
@@ -1252,6 +1433,12 @@
 				<from>ContextGetSelf_1</from>
 				<input>gameObject</input>
 				<to>GetVehicleGameObject_3</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>ContextGetSelf_1</from>
+				<input>gameObject</input>
+				<to>FindFirstNode_4</to>
 				<output>value</output>
 			</connection>
 		</connections>

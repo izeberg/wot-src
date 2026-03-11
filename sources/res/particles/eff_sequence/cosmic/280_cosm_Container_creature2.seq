@@ -1,0 +1,1188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>42.500004</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Creature</name>
+		<type>model</type>
+		<resource>content/Characters/hd_anml_m_C26_0008_Creature/normal/lod0/hd_anml_m_C26_0008_Creature.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>animation</name>
+			<type>animation</type>
+			<frame>
+				<startTime>4.000000</startTime>
+				<duration>32.666668</duration>
+				<resourceID>content/Characters/hd_anml_m_C26_0008_Creature/Animation/Swim_new.fbx</resourceID>
+				<clipName/>
+				<speed>1.000000</speed>
+				<layer>0</layer>
+				<blendIn>constant</blendIn>
+				<blendOut>constant</blendOut>
+				<blendInTime>0.000000</blendInTime>
+				<blendOutTime>0.000000</blendOutTime>
+				<clipStartTime>0.000000</clipStartTime>
+				<clipEndTime>32.666668</clipEndTime>
+			</frame>
+		</track>
+		<track>
+			<name>visibility</name>
+			<type>bool</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>false</value>
+			</frame>
+			<frame>
+				<startTime>4.033334</startTime>
+				<value>true</value>
+			</frame>
+			<frame>
+				<startTime>31.600002</startTime>
+				<value>false</value>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>creature_flap</name>
+		<type>sound</type>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>35.933334</duration>
+				<value>Creature|BackA_M</value>
+			</frame>
+		</track>
+		<track>
+			<name>creature_flap_sound</name>
+			<type>sound</type>
+			<frame>
+				<startTime>6.900001</startTime>
+				<duration>3.200000</duration>
+				<sequenceSound>ev_cosmic_whales_flap</sequenceSound>
+				<type>play_till_end</type>
+				<fade>0.000000</fade>
+			</frame>
+			<frame>
+				<startTime>15.366668</startTime>
+				<duration>3.204667</duration>
+				<sequenceSound>ev_cosmic_whales_flap</sequenceSound>
+				<type>play_till_end</type>
+				<fade>0.000000</fade>
+			</frame>
+			<frame>
+				<startTime>21.200001</startTime>
+				<duration>3.200001</duration>
+				<sequenceSound>ev_cosmic_whales_flap</sequenceSound>
+				<type>play_till_end</type>
+				<fade>0.000000</fade>
+			</frame>
+			<frame>
+				<startTime>25.766668</startTime>
+				<duration>3.200001</duration>
+				<sequenceSound>ev_cosmic_whales_flap</sequenceSound>
+				<type>play_till_end</type>
+				<fade>0.000000</fade>
+			</frame>
+		</track>
+		<track>
+			<name>creature_sing_sound</name>
+			<type>sound</type>
+			<frame>
+				<startTime>3.566667</startTime>
+				<duration>10.700001</duration>
+				<sequenceSound>ev_cosmic_whales_sing</sequenceSound>
+				<type>play_till_end</type>
+				<fade>0.000000</fade>
+			</frame>
+			<frame>
+				<startTime>23.700001</startTime>
+				<duration>10.700001</duration>
+				<sequenceSound>ev_cosmic_whales_sing</sequenceSound>
+				<type>play_till_end</type>
+				<fade>0.000000</fade>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Portal_Start</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/environment/280_cosmic_2026/portal_core.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-472.434937 44.069885 60.779404</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>2.000000 2.000000 2.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>s_nd0</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.015686 0.027451 0.082353 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.049026</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.049026</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.000000</startTime>
+				<value>0.015686 0.027451 0.082353 1.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 0.692489</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>65795</tangentMode>
+			</frame>
+			<frame>
+				<startTime>9.000000</startTime>
+				<value>0.015686 0.027451 0.082353 1.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -0.999999</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>10.000001</startTime>
+				<value>0.015686 0.027451 0.082353 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 0.002526</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 0.002526</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>s_nd1</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>3.233334</startTime>
+				<value>0.000000 0.243137 1.000000 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 0.009868</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 0.009868</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.000000</startTime>
+				<value>0.000000 0.243137 1.000000 1.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 0.566038</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>65793</tangentMode>
+			</frame>
+			<frame>
+				<startTime>8.000000</startTime>
+				<value>0.000000 0.243137 1.000000 1.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -0.833333</outTangent>
+				<tangentMode>65793</tangentMode>
+			</frame>
+			<frame>
+				<startTime>9.200001</startTime>
+				<value>0.000000 0.243137 1.000000 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.020684</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -0.020684</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>portal</name>
+		<type>sound</type>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>35.066669</duration>
+				<value>Creature|</value>
+			</frame>
+		</track>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-472.434998 44.069901 60.779400</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>11.600000</startTime>
+				<value>-472.434998 44.069901 60.779400</value>
+				<inTangent>23.592436 1.572398 -19.138632</inTangent>
+				<outTangent>23.592436 1.572398 -19.138632</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>23.533335</startTime>
+				<value>90.637802 81.597801 -395.996002</value>
+				<inTangent>23.592436 1.572398 -19.138632</inTangent>
+				<outTangent>23.592436 1.572398 -19.138632</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>34.633335</startTime>
+				<value>90.637802 81.597801 -395.996002</value>
+				<inTangent>-0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>portal_sound</name>
+			<type>sound</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>11.423479</duration>
+				<sequenceSound>ev_cosmic_portal_start</sequenceSound>
+				<type>play_till_end</type>
+				<fade>0.000000</fade>
+			</frame>
+			<frame>
+				<startTime>0.533333</startTime>
+				<duration>1.000000</duration>
+				<sequenceSound/>
+				<type>play_till_end</type>
+				<fade>0.000000</fade>
+			</frame>
+			<frame>
+				<startTime>23.933334</startTime>
+				<duration>11.423477</duration>
+				<sequenceSound>ev_cosmic_portal_end</sequenceSound>
+				<type>play_till_end</type>
+				<fade>0.000000</fade>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Core</name>
+		<type>particle</type>
+		<resource>particles/Environment/interior/280_cosm_portal.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-472.434998 44.069901 60.779400</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.166667</startTime>
+				<value>0.000000</value>
+				<inTangent>0.666081</inTangent>
+				<outTangent>0.666081</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.000000</startTime>
+				<value>1.000000</value>
+				<inTangent>0.004704</inTangent>
+				<outTangent>0.004704</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>8.500000</startTime>
+				<value>1.000000</value>
+				<inTangent>-1.000000</inTangent>
+				<outTangent>-1.000000</outTangent>
+				<tangentMode>2</tangentMode>
+			</frame>
+			<frame>
+				<startTime>9.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>-4.999981</inTangent>
+				<outTangent>-4.999981</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Start</name>
+		<type>particle</type>
+		<resource>particles/Environment/interior/280_cosm_portal_start.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>3.133333</startTime>
+				<value>-472.434998 44.069901 60.779400</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>3.300000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.259583</inTangent>
+				<outTangent>0.259583</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.133334</startTime>
+				<value>1.000000</value>
+				<inTangent>1.439709</inTangent>
+				<outTangent>1.439709</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.966667</startTime>
+				<value>1.000000</value>
+				<inTangent>-2.999994</inTangent>
+				<outTangent>-2.999994</outTangent>
+				<tangentMode>2</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.133334</startTime>
+				<value>0.000000</value>
+				<inTangent>-5.999989</inTangent>
+				<outTangent>-5.999989</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Portal_End</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/environment/280_cosmic_2026/portal_core.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>90.637772 81.597778 -395.996490</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.500000 1.500000 1.500000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>s_nd0</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>24.000002</startTime>
+				<value>0.015686 0.027451 0.082353 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.049026</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.049026</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>28.000002</startTime>
+				<value>0.015686 0.027451 0.082353 1.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 0.692489</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>65795</tangentMode>
+			</frame>
+			<frame>
+				<startTime>33.000000</startTime>
+				<value>0.015686 0.027451 0.082353 1.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -1.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>34.000000</startTime>
+				<value>0.015686 0.027451 0.082353 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 0.002526</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 0.002526</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>s_nd1</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>27.233335</startTime>
+				<value>0.000000 0.243137 1.000000 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 0.009868</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 0.009868</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>29.000002</startTime>
+				<value>0.000000 0.243137 1.000000 1.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 0.566038</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>65793</tangentMode>
+			</frame>
+			<frame>
+				<startTime>32.000000</startTime>
+				<value>0.000000 0.243137 1.000000 1.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -0.833333</outTangent>
+				<tangentMode>65793</tangentMode>
+			</frame>
+			<frame>
+				<startTime>33.200001</startTime>
+				<value>0.000000 0.243137 1.000000 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.020684</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -0.020684</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Core_2</name>
+		<type>particle</type>
+		<resource>particles/Environment/interior/280_cosm_portal.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>24.066668</startTime>
+				<value>90.637802 81.597801 -395.996002</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>24.233335</startTime>
+				<value>0.000000</value>
+				<inTangent>0.666081</inTangent>
+				<outTangent>0.666081</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>26.066668</startTime>
+				<value>1.000000</value>
+				<inTangent>0.004704</inTangent>
+				<outTangent>0.004704</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>32.566669</startTime>
+				<value>1.000000</value>
+				<inTangent>-1.000000</inTangent>
+				<outTangent>-1.000000</outTangent>
+				<tangentMode>2</tangentMode>
+			</frame>
+			<frame>
+				<startTime>33.066669</startTime>
+				<value>0.000000</value>
+				<inTangent>-4.999981</inTangent>
+				<outTangent>-4.999981</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Start_2</name>
+		<type>particle</type>
+		<resource>particles/Environment/interior/280_cosm_portal_start.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>27.866669</startTime>
+				<value>90.637802 81.597801 -395.996002</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>28.033335</startTime>
+				<value>0.000000</value>
+				<inTangent>0.259583</inTangent>
+				<outTangent>0.259583</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>28.466669</startTime>
+				<value>1.000000</value>
+				<inTangent>1.439709</inTangent>
+				<outTangent>1.439709</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>28.900002</startTime>
+				<value>1.000000</value>
+				<inTangent>-0.652174</inTangent>
+				<outTangent>-0.652174</outTangent>
+				<tangentMode>2</tangentMode>
+			</frame>
+			<frame>
+				<startTime>29.666668</startTime>
+				<value>0.000000</value>
+				<inTangent>-1.304348</inTangent>
+				<outTangent>-1.304348</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>trail</name>
+		<type>particle</type>
+		<resource>particles/Environment/interior/280_cosm_portal_trail.eff</resource>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>4.500000</startTime>
+				<duration>34.000004</duration>
+				<value>Creature|Head_M</value>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>4.966667</startTime>
+				<value>0.000000</value>
+				<inTangent>0.508475</inTangent>
+				<outTangent>0.508474</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>6.933334</startTime>
+				<value>1.000000</value>
+				<inTangent>0.508474</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>27.933334</startTime>
+				<value>1.000000</value>
+				<inTangent>-0.000000</inTangent>
+				<outTangent>-0.937499</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>29.000002</startTime>
+				<value>0.000000</value>
+				<inTangent>-0.937499</inTangent>
+				<outTangent>-0.937499</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Creature1</name>
+		<type>model</type>
+		<resource>content/Characters/hd_anml_m_C26_0008_Creature/normal/lod0/hd_anml_m_C26_0008_Creature_01.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>animation</name>
+			<type>animation</type>
+			<frame>
+				<startTime>4.000000</startTime>
+				<duration>32.666668</duration>
+				<resourceID>content/Characters/hd_anml_m_C26_0008_Creature/Animation/Swim_new1.fbx</resourceID>
+				<clipName/>
+				<speed>1.000000</speed>
+				<layer>0</layer>
+				<blendIn>constant</blendIn>
+				<blendOut>constant</blendOut>
+				<blendInTime>0.000000</blendInTime>
+				<blendOutTime>0.000000</blendOutTime>
+				<clipStartTime>0.000000</clipStartTime>
+				<clipEndTime>32.666668</clipEndTime>
+			</frame>
+		</track>
+		<track>
+			<name>visibility</name>
+			<type>bool</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>false</value>
+			</frame>
+			<frame>
+				<startTime>7.233334</startTime>
+				<value>true</value>
+			</frame>
+			<frame>
+				<startTime>33.300003</startTime>
+				<value>false</value>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>creature1_flap_sound</name>
+		<type>sound</type>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>35.933334</duration>
+				<value>Creature1|BackA_M80</value>
+			</frame>
+		</track>
+		<track>
+			<name>creature_flap_sound</name>
+			<type>sound</type>
+			<frame>
+				<startTime>8.966667</startTime>
+				<duration>3.200000</duration>
+				<sequenceSound>ev_cosmic_whales_flap</sequenceSound>
+				<type>play_till_end</type>
+				<fade>0.000000</fade>
+			</frame>
+			<frame>
+				<startTime>13.333334</startTime>
+				<duration>3.200001</duration>
+				<sequenceSound>ev_cosmic_whales_flap</sequenceSound>
+				<type>play_till_end</type>
+				<fade>0.000000</fade>
+			</frame>
+			<frame>
+				<startTime>22.633335</startTime>
+				<duration>3.199999</duration>
+				<sequenceSound>ev_cosmic_whales_flap</sequenceSound>
+				<type>play_till_end</type>
+				<fade>0.000000</fade>
+			</frame>
+		</track>
+		<track>
+			<name>creature_sing_sound</name>
+			<type>sound</type>
+			<frame>
+				<startTime>15.166667</startTime>
+				<duration>10.700002</duration>
+				<sequenceSound>ev_cosmic_whales_sing</sequenceSound>
+				<type>play_till_end</type>
+				<fade>0.000000</fade>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Portal_Start1</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/environment/280_cosmic_2026/portal_core.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>4.000000</startTime>
+				<value>-294.238281 137.759644 178.037201</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>4.000000</startTime>
+				<value>1.500000 1.500000 1.500000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>s_nd0</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>4.000000</startTime>
+				<value>0.015686 0.027451 0.082353 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.049026</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.049026</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>8.000000</startTime>
+				<value>0.015686 0.027451 0.082353 1.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 0.692489</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>65795</tangentMode>
+			</frame>
+			<frame>
+				<startTime>13.000001</startTime>
+				<value>0.015686 0.027451 0.082353 1.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -1.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>14.000001</startTime>
+				<value>0.015686 0.027451 0.082353 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 0.002526</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 0.002526</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>s_nd1</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>7.233334</startTime>
+				<value>0.000000 0.243137 1.000000 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 0.009868</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 0.009868</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>9.000000</startTime>
+				<value>0.000000 0.243137 1.000000 1.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 0.566038</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>65793</tangentMode>
+			</frame>
+			<frame>
+				<startTime>12.000001</startTime>
+				<value>0.000000 0.243137 1.000000 1.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -0.833333</outTangent>
+				<tangentMode>65793</tangentMode>
+			</frame>
+			<frame>
+				<startTime>13.200001</startTime>
+				<value>0.000000 0.243137 1.000000 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.020684</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -0.020684</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Core1</name>
+		<type>particle</type>
+		<resource>particles/Environment/interior/280_cosm_portal.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>4.000000</startTime>
+				<value>-294.238007 137.759995 178.037003</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>4.166667</startTime>
+				<value>0.000000</value>
+				<inTangent>0.666081</inTangent>
+				<outTangent>0.666081</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>6.000000</startTime>
+				<value>1.000000</value>
+				<inTangent>0.004704</inTangent>
+				<outTangent>0.004704</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>12.500001</startTime>
+				<value>1.000000</value>
+				<inTangent>-1.000000</inTangent>
+				<outTangent>-1.000000</outTangent>
+				<tangentMode>2</tangentMode>
+			</frame>
+			<frame>
+				<startTime>13.000001</startTime>
+				<value>0.000000</value>
+				<inTangent>-4.999981</inTangent>
+				<outTangent>-4.999981</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Start1</name>
+		<type>particle</type>
+		<resource>particles/Environment/interior/280_cosm_portal_start.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>6.466667</startTime>
+				<value>-294.238007 137.759995 178.037003</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>6.633334</startTime>
+				<value>0.000000</value>
+				<inTangent>0.259583</inTangent>
+				<outTangent>0.259583</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>7.466667</startTime>
+				<value>1.000000</value>
+				<inTangent>1.439709</inTangent>
+				<outTangent>1.439709</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>8.300000</startTime>
+				<value>1.000000</value>
+				<inTangent>-2.999994</inTangent>
+				<outTangent>-2.999994</outTangent>
+				<tangentMode>2</tangentMode>
+			</frame>
+			<frame>
+				<startTime>8.466667</startTime>
+				<value>0.000000</value>
+				<inTangent>-5.999989</inTangent>
+				<outTangent>-5.999989</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>portal1</name>
+		<type>sound</type>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>37.033337</duration>
+				<value>Creature1|</value>
+			</frame>
+		</track>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>3.900000</startTime>
+				<value>-294.238007 137.759995 178.037003</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>15.300001</startTime>
+				<value>-294.238007 137.759995 178.037003</value>
+				<inTangent>16.044748 -1.097639 -33.107021</inTangent>
+				<outTangent>16.044748 -1.097639 -33.107021</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>26.666668</startTime>
+				<value>70.512604 112.806999 -574.596008</value>
+				<inTangent>32.089497 -2.195278 -66.214043</inTangent>
+				<outTangent>32.089497 -2.195278 -66.214043</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>portal1_sound</name>
+			<type>sound</type>
+			<frame>
+				<startTime>3.866667</startTime>
+				<duration>11.433334</duration>
+				<sequenceSound>ev_cosmic_portal_start</sequenceSound>
+				<type>play_till_end</type>
+				<fade>0.000000</fade>
+			</frame>
+			<frame>
+				<startTime>26.766668</startTime>
+				<duration>11.433332</duration>
+				<sequenceSound>ev_cosmic_portal_end</sequenceSound>
+				<type>play_till_end</type>
+				<fade>0.000000</fade>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Portal_End1</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/environment/280_cosmic_2026/portal_core.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>4.000000</startTime>
+				<value>42.027817 81.916809 -588.727783</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>4.000000</startTime>
+				<value>1.500000 1.500000 1.500000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>s_nd0</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>26.866669</startTime>
+				<value>0.015686 0.027451 0.082353 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.049026</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.049026</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>30.866669</startTime>
+				<value>0.015686 0.027451 0.082353 1.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 0.692489</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>65795</tangentMode>
+			</frame>
+			<frame>
+				<startTime>35.866669</startTime>
+				<value>0.015686 0.027451 0.082353 1.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -1.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>36.866669</startTime>
+				<value>0.015686 0.027451 0.082353 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 0.002526</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 0.002526</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>s_nd1</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>30.100002</startTime>
+				<value>0.000000 0.243137 1.000000 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 0.009868</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 0.009868</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>31.866669</startTime>
+				<value>0.000000 0.243137 1.000000 1.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 0.566038</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>65793</tangentMode>
+			</frame>
+			<frame>
+				<startTime>34.866669</startTime>
+				<value>0.000000 0.243137 1.000000 1.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -0.833333</outTangent>
+				<tangentMode>65793</tangentMode>
+			</frame>
+			<frame>
+				<startTime>36.066669</startTime>
+				<value>0.000000 0.243137 1.000000 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.020684</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -0.020684</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Core_2_1</name>
+		<type>particle</type>
+		<resource>particles/Environment/interior/280_cosm_portal.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>26.933334</startTime>
+				<value>42.027802 81.916801 -588.728027</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>27.100002</startTime>
+				<value>0.000000</value>
+				<inTangent>0.666081</inTangent>
+				<outTangent>0.666081</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>28.933334</startTime>
+				<value>1.000000</value>
+				<inTangent>0.004704</inTangent>
+				<outTangent>0.004704</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>35.433334</startTime>
+				<value>1.000000</value>
+				<inTangent>-1.000000</inTangent>
+				<outTangent>-1.000000</outTangent>
+				<tangentMode>2</tangentMode>
+			</frame>
+			<frame>
+				<startTime>35.933334</startTime>
+				<value>0.000000</value>
+				<inTangent>-4.999981</inTangent>
+				<outTangent>-4.999981</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Start_2_1</name>
+		<type>particle</type>
+		<resource>particles/Environment/interior/280_cosm_portal_start.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>28.966669</startTime>
+				<value>42.027802 81.916801 -588.728027</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>29.133335</startTime>
+				<value>0.000000</value>
+				<inTangent>0.259583</inTangent>
+				<outTangent>0.259583</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>29.566668</startTime>
+				<value>1.000000</value>
+				<inTangent>1.439709</inTangent>
+				<outTangent>1.439709</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>30.000002</startTime>
+				<value>1.000000</value>
+				<inTangent>-0.652174</inTangent>
+				<outTangent>-0.652174</outTangent>
+				<tangentMode>2</tangentMode>
+			</frame>
+			<frame>
+				<startTime>30.766668</startTime>
+				<value>0.000000</value>
+				<inTangent>-1.304348</inTangent>
+				<outTangent>-1.304348</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>trail1</name>
+		<type>particle</type>
+		<resource>particles/Environment/interior/280_cosm_portal_trail.eff</resource>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>8.500000</startTime>
+				<duration>34.000004</duration>
+				<value>Creature1|Head_M80</value>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>8.533334</startTime>
+				<value>0.000000</value>
+				<inTangent>0.508475</inTangent>
+				<outTangent>0.508474</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>10.500001</startTime>
+				<value>1.000000</value>
+				<inTangent>0.508474</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>29.966669</startTime>
+				<value>1.000000</value>
+				<inTangent>-0.000000</inTangent>
+				<outTangent>-0.937501</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>31.033335</startTime>
+				<value>0.000000</value>
+				<inTangent>-0.937501</inTangent>
+				<outTangent>-0.937499</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

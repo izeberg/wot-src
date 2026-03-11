@@ -118,5 +118,53 @@
 			<berth/>
 			<blueprint/>
 		</TanksBirthday_24_Order>
+		<Cosmic_26_Order>
+			<categories>cosmic_2026</categories>
+			<vehicle/>
+			<customLootBox/>
+			<uniqueCustomization/>
+			<rarityCurrency/>
+			<rarityOptionalDevice/>
+			<optionalDevice/>
+			<ordinaryCurrency/>
+			<crewBook/>
+			<personalBooster/>
+			<battleBooster/>
+			<premium/>
+			<uniqueTankmen/>
+			<tankmen/>
+			<style/>
+			<equipment/>
+			<customization/>
+			<slot/>
+			<berth/>
+			<blueprint/>
+			<narrativeCollectionItem/>
+			<collectionItemCompensation/>
+		</Cosmic_26_Order>
+		<Cosmic_26_2_Order>
+			<categories>cosmic_2026_2</categories>
+			<vehicle/>
+			<customLootBox/>
+			<uniqueCustomization/>
+			<rarityCurrency/>
+			<rarityOptionalDevice/>
+			<optionalDevice/>
+			<crewBook/>
+			<ordinaryCurrency/>
+			<personalBooster/>
+			<battleBooster/>
+			<premium/>
+			<uniqueTankmen/>
+			<tankmen/>
+			<style/>
+			<equipment/>
+			<customization/>
+			<slot/>
+			<berth/>
+			<blueprint/>
+			<narrativeCollectionItem/>
+			<collectionItemCompensation/>
+		</Cosmic_26_2_Order>
 	</orders>
 </root>

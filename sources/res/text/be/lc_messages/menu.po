@@ -37,10 +37,10 @@ msgid "Time/timeLeftShort/min"
 msgstr "%(min)s хв."
 
 msgid "Time/timeValue/days"
-msgstr "%(day)s сут %(hour)s гадз %(min)s хв"
+msgstr "%(day)s сут %(hour)s гадз %(min)s хв."
 
 msgid "Time/timeValue/hours"
-msgstr "%(hour)s гадз %(min)s хв"
+msgstr "%(hour)s гадз. %(min)s хв."
 
 msgid "Time/timeValue/lessMin"
 msgstr "хвіліну"
@@ -49,22 +49,22 @@ msgid "Time/timeValue/min"
 msgstr "%(min)s хв."
 
 msgid "Time/timeValueShort/days"
-msgstr "%(day)s сут %(hour)s гадз"
+msgstr "%(day)s сут. %(hour)s гадз."
 
 msgid "Time/timeValueShort/hours"
-msgstr "%(hour)s гадз %(min)s хв"
+msgstr "%(hour)s гадз. %(min)s хв."
 
 msgid "Time/timeValueShort/lessMin"
-msgstr "01 хв"
+msgstr "01 хв."
 
 msgid "Time/timeValueShort/min"
 msgstr "%(min)s хв."
 
 msgid "Time/timeValueShort/noLeadingZeroes/days"
-msgstr "%(day)s сут %(hour)s гадз"
+msgstr "%(day)s сут. %(hour)s гадз."
 
 msgid "Time/timeValueShort/noLeadingZeroes/hours"
-msgstr "%(hour)s гадз %(min)s хв"
+msgstr "%(hour)s гадз. %(min)s хв."
 
 msgid "Time/timeValueShort/noLeadingZeroes/lessMin"
 msgstr "1 хв."
@@ -73,16 +73,16 @@ msgid "Time/timeValueShort/noLeadingZeroes/min"
 msgstr "%(min)s хв."
 
 msgid "Time/timeValueWithSecs/days"
-msgstr "%(day)s сут %(hour)s гадз"
+msgstr "%(day)s сут. %(hour)s гадз."
 
 msgid "Time/timeValueWithSecs/hours"
-msgstr "%(hour)s гадз %(min)s хв"
+msgstr "%(hour)s гадз. %(min)s хв."
 
 msgid "Time/timeValueWithSecs/lessMin"
 msgstr "%(sec)s с"
 
 msgid "Time/timeValueWithSecs/min"
-msgstr "%(min)s хв %(sec)s с"
+msgstr "%(min)s хв. %(sec)s с"
 
 msgid "ability/title"
 msgstr "Мадыфікацыя"
@@ -880,10 +880,10 @@ msgid "boosters/common/name"
 msgstr "Асабісты рэзерв"
 
 msgid "boosters/timeLeft/days"
-msgstr "%(day)s сут %(hour)s гадз"
+msgstr "%(day)s сут. %(hour)s гадз."
 
 msgid "boosters/timeLeft/hours"
-msgstr "%(hour)s гадз %(min)s хв"
+msgstr "%(hour)s гадз. %(min)s хв."
 
 msgid "boosters/timeLeft/lessMin"
 msgstr "1 хв."
@@ -1103,7 +1103,7 @@ msgid "contextMenu/createContactNote"
 msgstr "Стварыць нататку"
 
 msgid "contextMenu/createEpicSquad"
-msgstr "Стварыць звяза для Лініі фронту"
+msgstr "Стварыць звяз для Лініі фронту"
 
 msgid "contextMenu/createEventSquad"
 msgstr "Стварыць звяз падзеі"
@@ -1375,7 +1375,7 @@ msgstr "Адклікаць запрашэнне ў звяз"
 
 msgid "copy"
 msgstr ""
-"© Леста Игры, 2022-2025. Гульня «Мир танков» заснавана на інтэлектуальнай "
+"© Леста Игры, 2022-2026. Гульня «Мир танков» заснавана на інтэлектуальнай "
 "уласнасці трэціх асоб. Усе правы на аб'екты правоў трэціх асоб належаць іх "
 "законным праваўладальнікам."
 
@@ -1779,6 +1779,12 @@ msgstr "Разблакуецца ў баі"
 
 msgid "currentVehicleStatus/wot_plus_exclusive_vehicle_disabled"
 msgstr "?empty?"
+
+msgid "custom/shot_passion/extraParams/name/vehicleGunDamage"
+msgstr ""
+"%(defaultText)s\n"
+"\n"
+"Агульны бонус да сярэдніх пашкоджанняў не можа перавышаць: %(increaseDamage)d%%"
 
 msgid "customization/title"
 msgstr "Выгляд"
@@ -2241,7 +2247,7 @@ msgid "extraParams/name/enemyModulesCrewCritChance"
 msgstr ""
 "Параметр, які адказвае за змену шанцу прычыніць крытычныя пашкоджанні "
 "экіпажу і ўнутраным модулям праціўніка. Працуе толькі для бранябойных, "
-"падкаліберных, бранябойных апераных падкаліберных і кумулятыўных снарадаў, "
+"падкаліберных, бранябойных апяроных падкаліберных і кумулятыўных снарадаў, "
 "а таксама для бранябойнага і кумулятыўнага НКРСа."
 
 msgid "extraParams/name/equipmentPreparationTime"
@@ -2403,7 +2409,7 @@ msgstr ""
 "Параметр, які адказвае за павелічэнне пашкоджанняў пры актывацыі мадыфікацыі"
 " / пры прабіцці машыны праціўніка за час дзеяння мадыфікацыі. Значэнне "
 "прыросту пашкоджанняў пры кожным прабіцці сумуецца з прыростам пашкоджанняў "
-"пры актывацыі. Бонусныя пашкоджання дадаюцца і прымяняюцца толькі на час "
+"пры актывацыі. Бонусныя пашкоджанні дадаюцца і прымяняюцца толькі на час "
 "дзеяння мадыфікацыі."
 
 msgid "extraParams/name/vehicleGunKillReloadTime"
@@ -2455,7 +2461,7 @@ msgstr ""
 "Параметр, які адказвае за павелічэнне пашкоджанняў пры актывацыі мадыфікацыі"
 " / пры прабіцці машыны праціўніка за час дзеяння мадыфікацыі. Значэнне "
 "прыросту пашкоджанняў пры кожным прабіцці сумуецца з прыростам пашкоджанняў "
-"пры актывацыі. Бонусныя пашкоджання дадаюцца і прымяняюцца толькі на час "
+"пры актывацыі. Бонусныя пашкоджанні дадаюцца і прымяняюцца толькі на час "
 "дзеяння мадыфікацыі."
 
 msgid "extraParams/name/vehicleInvisibilityAfterShot"
@@ -4008,6 +4014,9 @@ msgstr " "
 msgid "loading/battleTypes/30"
 msgstr "Націск"
 
+msgid "loading/battleTypes/300"
+msgstr "У космас!"
+
 msgid "loading/battleTypes/31"
 msgstr "Размінка"
 
@@ -4111,6 +4120,9 @@ msgstr " "
 
 msgid "loading/battleTypes/desc/30"
 msgstr " "
+
+msgid "loading/battleTypes/desc/300"
+msgstr "?empty?"
 
 msgid "loading/battleTypes/desc/31"
 msgstr " "
@@ -4307,6 +4319,9 @@ msgstr "Стварэнне акаўнту..."
 
 msgid "login/status/LOGIN_REJECTED_ALREADY_LOGGED_IN"
 msgstr "Карыстальнік з такім імем ужо ўвайшоў у гульню."
+
+msgid "login/status/LOGIN_REJECTED_BAD_AUTH_METHOD"
+msgstr "Увайсці ў гульню можна толькі праз Lesta Game Center."
 
 msgid "login/status/LOGIN_REJECTED_BAD_DIGEST"
 msgstr "Трэба абнавіць кліента гульні."
@@ -4787,7 +4802,7 @@ msgid "moduleInfo/params/enginePower"
 msgstr "Магутнасць рухавіка"
 
 msgid "moduleInfo/params/enginePowerPerTon"
-msgstr "Да ўдзельнай магутнасці (к.с./т) "
+msgstr "Да ўдзельнай магутнасці (к.с./т) "
 
 msgid "moduleInfo/params/explosionRadius"
 msgstr "Радыус паражэння"
@@ -7044,28 +7059,28 @@ msgid "techtree/premiumPanel/title"
 msgstr "ПРЭМІУМ ТЭХНІКА"
 
 msgid "timeLeft/full/day"
-msgstr "{day} сут {hour} гадз"
+msgstr "{day} сут. {hour} гадз."
 
 msgid "timeLeft/full/hour"
-msgstr "{hour} гадз {min} хв"
+msgstr "{hour} гадз {min} хв."
 
 msgid "timeLeft/full/lessMin"
 msgstr "1 хв."
 
 msgid "timeLeft/full/min"
-msgstr "{min} хв"
+msgstr "{min} хв."
 
 msgid "timeLeft/short/day"
-msgstr "{day} сут"
+msgstr "{day} сут."
 
 msgid "timeLeft/short/hour"
-msgstr "{hour} гадз"
+msgstr "{hour} гадз."
 
 msgid "timeLeft/short/lessMin"
 msgstr "1 хв."
 
 msgid "timeLeft/short/min"
-msgstr "{min} хв"
+msgstr "{min} хв."
 
 msgid "trade/in"
 msgstr "Можна абмяняць"
@@ -7438,7 +7453,7 @@ msgid "vehicleInfo/params/reloadTimeSecs"
 msgstr "Набіванне гарматы (с)"
 
 msgid "vehicleInfo/params/rocketAccelerationEnginePower"
-msgstr "Магутнасць рухавіка (з паскаральнікамі) (л. c.)"
+msgstr "Магутнасць рухавіка (з паскаральнікамі) (к.c.)"
 
 msgid "vehicleInfo/params/rocketAccelerationReuseAndDuration"
 msgstr "Рэактыўныя паскаральнікі (колькасць/час)"
@@ -7600,7 +7615,7 @@ msgid "vehiclePreview/endTime"
 msgstr "Прапанова завяршылася"
 
 msgid "vehiclePreview/timeLeft/hours"
-msgstr "%(hour)s гадз %(min)s хв"
+msgstr "%(hour)s гадз. %(min)s хв."
 
 msgid "vehiclePreview/timeLeft/lessMin"
 msgstr "1 хв."
@@ -7612,22 +7627,22 @@ msgid "vehiclePreview/timeLeftShort/hours"
 msgstr "%(hour)s гадз."
 
 msgid "vehiclePreview/timeLeftShort/lessMin"
-msgstr "01 хв"
+msgstr "01 хв."
 
 msgid "vehiclePreview/timeLeftShort/min"
 msgstr "%(min)s хв."
 
 msgid "vehicleRestore/timeLeftShort/days"
-msgstr "%(day)s сут"
+msgstr "%(day)sсут."
 
 msgid "vehicleRestore/timeLeftShort/hours"
-msgstr "%(hour)s гадз %(min)s хв"
+msgstr "%(hour)sгадз %(min)sхв."
 
 msgid "vehicleRestore/timeLeftShort/lessMin"
-msgstr "01 хв"
+msgstr "01 хв."
 
 msgid "vehicleRestore/timeLeftShort/min"
-msgstr "%(min)s хв"
+msgstr "%(min)sхв."
 
 msgid "vehiclesCarousel/contextMenu/vehicleCheck"
 msgstr "Пазначыць як «асноўны»"

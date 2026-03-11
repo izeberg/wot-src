@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<params>
+		<param>
+			<name>speed</name>
+			<type>float</type>
+		</param>
+	</params>
+	<node>
+		<name>idle</name>
+		<type>sleep</type>
+		<time>0.010000 0.010000</time>
+		<transition>
+			<to>forward</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>float</type>
+					<name>speed</name>
+					<rangeStart>0.200000</rangeStart>
+					<rangeEnd>inf</rangeEnd>
+				</condition>
+			</conditions>
+		</transition>
+		<transition>
+			<to>backward</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>float</type>
+					<name>speed</name>
+					<rangeStart>-inf</rangeStart>
+					<rangeEnd>-0.200000</rangeEnd>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>189.000000 -144.000000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>forward</name>
+		<type>sequence</type>
+		<resource>particles/eff_sequence/280_cosm_ability_boost_pepelac_01.seq</resource>
+		<isLoop>false</isLoop>
+		<loop>1</loop>
+		<transition>
+			<to>idle</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>float</type>
+					<name>speed</name>
+					<rangeStart>-inf</rangeStart>
+					<rangeEnd>0.200000</rangeEnd>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>47.000000 -21.000000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>backward</name>
+		<type>sequence</type>
+		<resource>particles/eff_sequence/280_cosm_ability_boost_pepelac_02.seq</resource>
+		<isLoop>true</isLoop>
+		<loop>1</loop>
+		<transition>
+			<to>idle</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>float</type>
+					<name>speed</name>
+					<rangeStart>-0.200000</rangeStart>
+					<rangeEnd>inf</rangeEnd>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>339.000000 -22.000000 0.000000</uiPosition>
+	</node>
+</root>

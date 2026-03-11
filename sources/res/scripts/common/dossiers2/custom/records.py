@@ -898,13 +898,13 @@ RECORDS = (
  (
   'achievements', 'medalBillotte', 'p', 'H', 60001),
  (
-  'achievements', 'medalBrunoPietro', 'p', 'H', 60001),
+  'achievements', 'medalFokin', 'p', 'H', 60001),
  (
   'achievements', 'medalLyubushkin', 'p', 'H', 60001),
  (
   'achievements', 'medalBurda', 'p', 'H', 60001),
  (
-  'achievements', 'medalPascucci', 'p', 'H', 60001),
+  'achievements', 'medalSlyunyayev', 'p', 'H', 60001),
  (
   'achievements', 'medalDumitru', 'p', 'H', 60001),
  (
@@ -929,6 +929,12 @@ RECORDS = (
   'achievements', 'medalDeLanglade', 'p', 'H', 60001),
  (
   'achievements', 'medalTrubin', 'p', 'H', 60001),
+ (
+  'achievements', 'medalFomin', 'p', 'H', 60001),
+ (
+  'achievements', 'medalKrockenberger', 'p', 'H', 60001),
+ (
+  'achievements', 'medalGavryushov', 'p', 'H', 60001),
  (
   'singleAchievements', 'titleSniper', 'p', 'B', 1),
  (
@@ -3512,6 +3518,8 @@ RECORDS = (
  (
   'singleAchievements', 'ParagonsFirstSeason', 'p', 'B', 1),
  (
+  'singleAchievements', 'Paragons_S2', 'p', 'B', 1),
+ (
   'singleAchievements', 'comp7_4_3', 'p', 'B', 1),
  (
   'singleAchievements', 'comp7_4_3_champion', 'p', 'B', 1),
@@ -3582,7 +3590,19 @@ RECORDS = (
  (
   'epicBattleAchievements', 'saboteurProgress', 'p', 'B', 4),
  (
-  'singleAchievements', 'BattlePassCommonPr_18_5_Marathon', 'p', 'B', 1))
+  'singleAchievements', 'BattlePassCommonPr_18_5_Marathon', 'p', 'B', 1),
+ (
+  'singleAchievements', 'BattlePassCommonPr_19', 'p', 'B', 1),
+ (
+  'singleAchievements', 'cosm2026_medal_1', 'p', 'B', 1),
+ (
+  'singleAchievements', 'cosm2026_medal_2', 'p', 'B', 1),
+ (
+  'singleAchievements', 'comp7_5_3', 'p', 'B', 1),
+ (
+  'singleAchievements', 'comp7_5_3_champion', 'p', 'B', 1),
+ (
+  'singleAchievements', 'comp7_5_3_legend', 'p', 'B', 1))
 RECORD_INDICES = dict((rec[:2], idx) for idx, rec in enumerate(RECORDS))
 RECORD_DB_IDS = {('total', 'creationTime'): 68, 
    ('total', 'lastBattleTime'): 7, 
@@ -3797,10 +3817,10 @@ RECORD_DB_IDS = {('total', 'creationTime'): 68,
    ('achievements', 'medalLafayettePool'): 74, 
    ('achievements', 'heroesOfRassenay'): 110, 
    ('achievements', 'medalBillotte'): 54, 
-   ('achievements', 'medalBrunoPietro'): 75, 
+   ('achievements', 'medalFokin'): 75, 
    ('achievements', 'medalLyubushkin'): 76, 
    ('achievements', 'medalBurda'): 53, 
-   ('achievements', 'medalPascucci'): 77, 
+   ('achievements', 'medalSlyunyayev'): 77, 
    ('achievements', 'medalDumitru'): 78, 
    ('achievements', 'medalOskin'): 51, 
    ('achievements', 'medalKhazov'): 106, 
@@ -5375,7 +5395,17 @@ RECORD_DB_IDS = {('total', 'creationTime'): 68,
    ('singleAchievements', 'clan_season_25_last'): 31151, 
    ('epicBattleAchievements', 'saboteur'): 31152, 
    ('epicBattleAchievements', 'saboteurProgress'): 31153, 
-   ('singleAchievements', 'BattlePassCommonPr_18_5_Marathon'): 31154}
+   ('singleAchievements', 'BattlePassCommonPr_18_5_Marathon'): 31154, 
+   ('achievements', 'medalFomin'): 31155, 
+   ('achievements', 'medalKrockenberger'): 31156, 
+   ('achievements', 'medalGavryushov'): 31157, 
+   ('singleAchievements', 'cosm2026_medal_1'): 31158, 
+   ('singleAchievements', 'cosm2026_medal_2'): 31159, 
+   ('singleAchievements', 'BattlePassCommonPr_19'): 31160, 
+   ('singleAchievements', 'comp7_5_3'): 31161, 
+   ('singleAchievements', 'comp7_5_3_champion'): 31162, 
+   ('singleAchievements', 'comp7_5_3_legend'): 31163, 
+   ('singleAchievements', 'Paragons_S2'): 31164}
 DB_ID_TO_RECORD = dict([ (value, key) for key, value in RECORD_DB_IDS.iteritems() ])
 RECORD_DB_IDS.update({('vehTypeFrags', ''): 863, 
    ('a15x15Cut', ''): 864, 
@@ -5433,13 +5463,13 @@ EPIC_MEDAL_SET = {RECORD_DB_IDS[achievementDescriptor] for achievementDescriptor
  (
   'achievements', 'medalBillotte'),
  (
-  'achievements', 'medalBrunoPietro'),
+  'achievements', 'medalFokin'),
  (
   'achievements', 'medalLyubushkin'),
  (
   'achievements', 'medalBurda'),
  (
-  'achievements', 'medalPascucci'),
+  'achievements', 'medalSlyunyayev'),
  (
   'achievements', 'medalDumitru'),
  (
@@ -5465,7 +5495,13 @@ EPIC_MEDAL_SET = {RECORD_DB_IDS[achievementDescriptor] for achievementDescriptor
  (
   'achievements', 'medalTrubin'),
  (
-  'achievements', 'medalStark')]}
+  'achievements', 'medalStark'),
+ (
+  'achievements', 'medalFomin'),
+ (
+  'achievements', 'medalKrockenberger'),
+ (
+  'achievements', 'medalGavryushov')]}
 BIT_STORAGES = {}
 map(lambda rec: BIT_STORAGES.setdefault((rec[0], rec[3]), []).append(rec[1]), (rec for rec in RECORDS if rec[2] == 'b'))
 RECORD_MAX_VALUES = dict([ (rec[:2], rec[4]) for rec in RECORDS if rec[2] == 'p' ])

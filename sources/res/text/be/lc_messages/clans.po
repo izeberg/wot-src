@@ -33,10 +33,10 @@ msgid "banner/seasonDate/seasonNotStarted"
 msgstr "З %(day)s %(month)s"
 
 msgid "banner/timeLeft/hours"
-msgstr "%(hour)s гадз %(min)s хв"
+msgstr "%(hour)s гадз. %(min)s хв."
 
 msgid "banner/timeLeft/min"
-msgstr "%(min)s хв"
+msgstr "%(min)s хв."
 
 msgid "banner/title"
 msgstr "КЛАНАВЫ СЕЗОН"
@@ -192,7 +192,7 @@ msgid "clanInvitesWindow/status/accepted"
 msgstr "Прынята"
 
 msgid "clanInvitesWindow/status/daysLeft"
-msgstr "%(days)d сут на разгляд"
+msgstr "%(days)d сут. на адказ"
 
 msgid "clanInvitesWindow/status/declined"
 msgstr "Адхілена"
@@ -204,10 +204,10 @@ msgid "clanInvitesWindow/status/expired"
 msgstr "Пратэрмінавана"
 
 msgid "clanInvitesWindow/status/hoursLeft"
-msgstr "%(hours)d гадз на разгляд"
+msgstr "%(hours)d гадз. на адказ"
 
 msgid "clanInvitesWindow/status/minutesLeft"
-msgstr "%(min)d хв на разгляд"
+msgstr "%(min)d хв. на адказ"
 
 msgid "clanInvitesWindow/status/sent"
 msgstr "Адпраўлена"

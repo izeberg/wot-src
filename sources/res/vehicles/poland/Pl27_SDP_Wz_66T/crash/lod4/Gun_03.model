@@ -2,4 +2,8 @@
 <root>
 	<nodelessVisual>vehicles/poland/Pl27_SDP_Wz_66T/crash/lod4/Gun_03</nodelessVisual>
 	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.514184 -0.514571 -0.129366</min>
+		<max>0.497563 0.861377 5.659065</max>
+	</visibilityBox>
 </root>

@@ -61,31 +61,12 @@
 					</transform>
 				</node>
 			</node>
-			<node>
-				<identifier>Joint_01</identifier>
-				<transform>
-					<row0>1.000000 0.000000 0.000000</row0>
-					<row1>0.000000 1.000000 0.000000</row1>
-					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>0.000000 0.437218 -0.110340</row3>
-				</transform>
-				<node>
-					<identifier>Joint_01_BlendBone</identifier>
-					<transform>
-						<row0>1.000000 0.000000 0.000000</row0>
-						<row1>0.000000 1.000000 0.000000</row1>
-						<row2>0.000000 0.000000 -1.000000</row2>
-						<row3>0.000000 -0.437218 0.110340</row3>
-					</transform>
-				</node>
-			</node>
 		</node>
 	</node>
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
 		<node>G_BlendBone</node>
 		<node>Gun_BlendBone</node>
-		<node>Joint_01_BlendBone</node>
 		<geometry>
 			<vertices>gun_03_Shape.vertices</vertices>
 			<primitive>gun_03_Shape.indices</primitive>
@@ -96,14 +77,6 @@
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
-					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
 					<property>
 						diffuseMap
 						<Texture>vehicles/russian/R47_ISU-152/ISU-152_proxy_AM.dds</Texture>
@@ -129,13 +102,13 @@
 						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.022146 -0.027428 -2.837324</groupOrigin>
+				<groupOrigin>0.022146 -0.027428 -2.837323</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<constraints/>
 	<boundingBox>
-		<min>-0.407311 -0.474331 0.206301</min>
+		<min>-0.407311 -0.474331 0.206300</min>
 		<max>0.451603 0.419475 5.468347</max>
 	</boundingBox>
 	<geometrySize>1832</geometrySize>

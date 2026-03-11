@@ -5,58 +5,68 @@ package net.wg.gui.battle.cosmic.battleloading
    import flash.text.TextFormat;
    import net.wg.data.constants.InvalidationType;
    import net.wg.gui.battle.battleloading.vo.VisualTipInfoVO;
+   import net.wg.infrastructure.base.meta.ICosmicBattleLoadingMeta;
    import net.wg.infrastructure.base.meta.impl.CosmicBattleLoadingMeta;
    import net.wg.infrastructure.interfaces.IDAAPIDataClass;
+   import net.wg.infrastructure.managers.IStageSizeManager;
    import net.wg.utils.StageSizeBoundaries;
    import scaleform.clik.controls.StatusIndicator;
    
-   public class CosmicBattleLoading extends CosmicBattleLoadingMeta
+   public class CosmicBattleLoading extends CosmicBattleLoadingMeta implements ICosmicBattleLoadingMeta
    {
       
-      private static const TIPS_COUNT:uint = 5;
+      private static const TIPS_COUNT:uint = 3;
+      
+      private static const TITLE_SIZE:Object = {};
       
       private static const TIPS_SIZE:Object = {};
       
-      private static const TIPS_WIDTH:Object = {};
-      
       private static const TIPS_LEFT:Object = {};
       
-      private static const TIPS_BOTTOM:Object = {};
+      private static const TITLE_BOTTOM:Object = {};
       
-      private static const LOADING_BAR_WIDTH:Object = {};
+      private static const TIPS_BOTTOM:Object = {};
       
       private static const LOADING_BAR_BOTTOM:Object = {};
       
       public static const PROGRESS:int = InvalidationType.SYSTEM_FLAGS_BORDER << 1;
       
       {
-         TIPS_SIZE[StageSizeBoundaries.WIDTH_1024] = [18,16,18,18,18];
-         TIPS_SIZE[StageSizeBoundaries.WIDTH_1366] = [20,16,20,20,20];
-         TIPS_SIZE[StageSizeBoundaries.WIDTH_1600] = [26,20,26,26,26];
-         TIPS_SIZE[StageSizeBoundaries.WIDTH_1920] = [26,20,26,26,26];
-         TIPS_WIDTH[StageSizeBoundaries.WIDTH_1024] = 700;
-         TIPS_WIDTH[StageSizeBoundaries.WIDTH_1366] = 800;
-         TIPS_WIDTH[StageSizeBoundaries.WIDTH_1600] = 1000;
-         TIPS_WIDTH[StageSizeBoundaries.WIDTH_1920] = 1000;
-         TIPS_LEFT[StageSizeBoundaries.WIDTH_1024] = 126;
-         TIPS_LEFT[StageSizeBoundaries.WIDTH_1366] = 113;
+         TITLE_SIZE[StageSizeBoundaries.WIDTH_1024] = 18;
+         TITLE_SIZE[StageSizeBoundaries.WIDTH_1366] = 18;
+         TITLE_SIZE[StageSizeBoundaries.WIDTH_1600] = 24;
+         TITLE_SIZE[StageSizeBoundaries.WIDTH_1920] = 28;
+         TITLE_SIZE[StageSizeBoundaries.WIDTH_2560] = 36;
+         TIPS_SIZE[StageSizeBoundaries.WIDTH_1024] = 16;
+         TIPS_SIZE[StageSizeBoundaries.WIDTH_1366] = 16;
+         TIPS_SIZE[StageSizeBoundaries.WIDTH_1600] = 20;
+         TIPS_SIZE[StageSizeBoundaries.WIDTH_1920] = 24;
+         TIPS_SIZE[StageSizeBoundaries.WIDTH_2560] = 32;
+         TIPS_LEFT[StageSizeBoundaries.WIDTH_1024] = 120;
+         TIPS_LEFT[StageSizeBoundaries.WIDTH_1366] = 120;
          TIPS_LEFT[StageSizeBoundaries.WIDTH_1600] = 140;
-         TIPS_LEFT[StageSizeBoundaries.WIDTH_1920] = 140;
-         TIPS_BOTTOM[StageSizeBoundaries.WIDTH_1024] = [7,36,13,12,52];
-         TIPS_BOTTOM[StageSizeBoundaries.WIDTH_1366] = [10,35,17,18,78];
-         TIPS_BOTTOM[StageSizeBoundaries.WIDTH_1600] = [8,35,18,18,78];
-         TIPS_BOTTOM[StageSizeBoundaries.WIDTH_1920] = [8,35,18,18,86];
-         LOADING_BAR_WIDTH[StageSizeBoundaries.WIDTH_1024] = 412;
-         LOADING_BAR_WIDTH[StageSizeBoundaries.WIDTH_1366] = 704;
-         LOADING_BAR_WIDTH[StageSizeBoundaries.WIDTH_1600] = 704;
-         LOADING_BAR_WIDTH[StageSizeBoundaries.WIDTH_1920] = 704;
-         LOADING_BAR_BOTTOM[StageSizeBoundaries.WIDTH_1024] = 84;
-         LOADING_BAR_BOTTOM[StageSizeBoundaries.WIDTH_1366] = 66;
-         LOADING_BAR_BOTTOM[StageSizeBoundaries.WIDTH_1600] = 66;
+         TIPS_LEFT[StageSizeBoundaries.WIDTH_1920] = 160;
+         TIPS_LEFT[StageSizeBoundaries.WIDTH_2560] = 240;
+         TITLE_BOTTOM[StageSizeBoundaries.WIDTH_1024] = 15;
+         TITLE_BOTTOM[StageSizeBoundaries.WIDTH_1366] = 15;
+         TITLE_BOTTOM[StageSizeBoundaries.WIDTH_1600] = 18;
+         TITLE_BOTTOM[StageSizeBoundaries.WIDTH_1920] = 24;
+         TITLE_BOTTOM[StageSizeBoundaries.WIDTH_2560] = 27;
+         TIPS_BOTTOM[StageSizeBoundaries.WIDTH_1024] = [7,7,24];
+         TIPS_BOTTOM[StageSizeBoundaries.WIDTH_1366] = [7,7,24];
+         TIPS_BOTTOM[StageSizeBoundaries.WIDTH_1600] = [11,11,52];
+         TIPS_BOTTOM[StageSizeBoundaries.WIDTH_1920] = [16,16,58];
+         TIPS_BOTTOM[StageSizeBoundaries.WIDTH_2560] = [18,19,79];
+         LOADING_BAR_BOTTOM[StageSizeBoundaries.WIDTH_1024] = 46;
+         LOADING_BAR_BOTTOM[StageSizeBoundaries.WIDTH_1366] = 46;
+         LOADING_BAR_BOTTOM[StageSizeBoundaries.WIDTH_1600] = 46;
          LOADING_BAR_BOTTOM[StageSizeBoundaries.WIDTH_1920] = 60;
+         LOADING_BAR_BOTTOM[StageSizeBoundaries.WIDTH_2560] = 60;
       }
       
       public var loadingBar:StatusIndicator = null;
+      
+      public var title:TextField = null;
       
       public var tip1:TextField = null;
       
@@ -64,15 +74,11 @@ package net.wg.gui.battle.cosmic.battleloading
       
       public var tip3:TextField = null;
       
-      public var tip4:TextField = null;
-      
-      public var tip5:TextField = null;
-      
       private var _height:int = 0;
       
       private var _width:int = 0;
       
-      private var _state:int = 1024;
+      private var _title:String = null;
       
       private var _tips:Vector.<TextField> = null;
       
@@ -80,27 +86,31 @@ package net.wg.gui.battle.cosmic.battleloading
       
       private var _progress:Number = 0;
       
+      private var _stageSizeMgr:IStageSizeManager;
+      
       public function CosmicBattleLoading()
       {
+         this._stageSizeMgr = App.stageSizeMgr;
          super();
       }
       
       override protected function configUI() : void
       {
          super.configUI();
-         this._tips = new <TextField>[this.tip1,this.tip2,this.tip3,this.tip4,this.tip5];
-         this.tip1.wordWrap = this.tip2.wordWrap = this.tip3.wordWrap = this.tip4.wordWrap = this.tip5.wordWrap = true;
-         this.tip1.autoSize = this.tip2.autoSize = this.tip3.autoSize = this.tip4.autoSize = this.tip5.autoSize = TextFieldAutoSize.LEFT;
+         this._tips = new <TextField>[this.tip1,this.tip2,this.tip3];
+         this.title.wordWrap = this.tip1.wordWrap = this.tip2.wordWrap = this.tip3.wordWrap = true;
+         this.title.autoSize = this.tip1.autoSize = this.tip2.autoSize = this.tip3.autoSize = TextFieldAutoSize.LEFT;
       }
       
       override protected function draw() : void
       {
          var _loc1_:int = 0;
-         var _loc2_:Number = NaN;
-         var _loc3_:TextFormat = null;
-         var _loc4_:TextField = null;
-         var _loc5_:Number = NaN;
-         var _loc6_:int = 0;
+         var _loc2_:int = 0;
+         var _loc3_:Number = NaN;
+         var _loc4_:TextFormat = null;
+         var _loc5_:TextField = null;
+         var _loc6_:Number = NaN;
+         var _loc7_:int = 0;
          super.draw();
          if(this._progress > 0 && isInvalid(PROGRESS))
          {
@@ -110,6 +120,7 @@ package net.wg.gui.battle.cosmic.battleloading
          {
             if(isInvalid(InvalidationType.DATA))
             {
+               this.title.text = this._title;
                _loc1_ = 0;
                while(_loc1_ < TIPS_COUNT)
                {
@@ -120,40 +131,30 @@ package net.wg.gui.battle.cosmic.battleloading
             }
             if(isInvalid(InvalidationType.SIZE))
             {
-               if(this._width >= StageSizeBoundaries.WIDTH_1920 && this._height >= StageSizeBoundaries.HEIGHT_1080)
+               _loc2_ = this._stageSizeMgr.currentBreakPoint.width;
+               _loc3_ = this._height - LOADING_BAR_BOTTOM[_loc2_];
+               this.loadingBar.y = _loc3_;
+               this.loadingBar.x = this._width - this.loadingBar.width >> 1;
+               _loc6_ = _loc3_;
+               _loc7_ = TIPS_COUNT - 1;
+               while(_loc7_ >= 0)
                {
-                  this._state = StageSizeBoundaries.WIDTH_1920;
+                  _loc5_ = this._tips[_loc7_];
+                  _loc4_ = _loc5_.getTextFormat();
+                  _loc4_.size = TIPS_SIZE[_loc2_];
+                  _loc5_.setTextFormat(_loc4_);
+                  _loc5_.width = this._width - TIPS_LEFT[_loc2_] * 2 | 0;
+                  _loc5_.x = TIPS_LEFT[_loc2_];
+                  _loc5_.y = _loc6_ - _loc5_.height - TIPS_BOTTOM[_loc2_][_loc7_];
+                  _loc6_ = _loc5_.y;
+                  _loc7_--;
                }
-               else if(this._width >= StageSizeBoundaries.WIDTH_1600 && this._height >= StageSizeBoundaries.HEIGHT_900)
-               {
-                  this._state = StageSizeBoundaries.WIDTH_1600;
-               }
-               else if(this._width >= StageSizeBoundaries.WIDTH_1366)
-               {
-                  this._state = StageSizeBoundaries.WIDTH_1366;
-               }
-               else
-               {
-                  this._state = StageSizeBoundaries.WIDTH_1024;
-               }
-               this.loadingBar.setActualSize(LOADING_BAR_WIDTH[this._state],this.loadingBar.actualHeight);
-               _loc2_ = this._height - LOADING_BAR_BOTTOM[this._state];
-               this.loadingBar.y = _loc2_;
-               this.loadingBar.x = this._width - LOADING_BAR_WIDTH[this._state] >> 1;
-               _loc5_ = _loc2_;
-               _loc6_ = TIPS_COUNT - 1;
-               while(_loc6_ >= 0)
-               {
-                  _loc4_ = this._tips[_loc6_];
-                  _loc3_ = _loc4_.getTextFormat();
-                  _loc3_.size = TIPS_SIZE[this._state][_loc6_];
-                  _loc4_.setTextFormat(_loc3_);
-                  _loc4_.width = TIPS_WIDTH[this._state];
-                  _loc4_.x = TIPS_LEFT[this._state];
-                  _loc4_.y = _loc5_ - _loc4_.height - TIPS_BOTTOM[this._state][_loc6_];
-                  _loc5_ = _loc4_.y;
-                  _loc6_--;
-               }
+               _loc4_ = this.title.getTextFormat();
+               _loc4_.size = TITLE_SIZE[_loc2_];
+               this.title.setTextFormat(_loc4_);
+               this.title.width = this._width - TIPS_LEFT[_loc2_] * 2 | 0;
+               this.title.x = TIPS_LEFT[_loc2_];
+               this.title.y = _loc6_ - this.title.height - TITLE_BOTTOM[_loc2_];
             }
          }
       }
@@ -162,14 +163,15 @@ package net.wg.gui.battle.cosmic.battleloading
       {
          this.loadingBar.dispose();
          this.loadingBar = null;
+         this.title = null;
          this.tip1 = null;
          this.tip2 = null;
          this.tip3 = null;
-         this.tip4 = null;
-         this.tip5 = null;
          this._tips.length = 0;
          this._tips = null;
+         this._title = null;
          this._tipsData = null;
+         this._stageSizeMgr = null;
          super.onDispose();
       }
       
@@ -198,6 +200,15 @@ package net.wg.gui.battle.cosmic.battleloading
          }
       }
       
+      override public function as_setTipTitle(param1:String) : void
+      {
+         if(this._title != param1)
+         {
+            this._title = param1;
+            invalidateData();
+         }
+      }
+      
       override protected function setTips(param1:Vector.<String>) : void
       {
          if(this._tipsData != param1 && param1 != null)
@@ -216,10 +227,6 @@ package net.wg.gui.battle.cosmic.battleloading
       }
       
       override public function as_setTip(param1:String) : void
-      {
-      }
-      
-      override public function as_setTipTitle(param1:String) : void
       {
       }
       

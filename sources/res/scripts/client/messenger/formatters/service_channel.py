@@ -5940,7 +5940,8 @@ class ParagonsFormatter(ServiceChannelFormatter):
 
 
 class ParagonsLevelCompletedFormatter(ServiceChannelFormatter):
-    __ACHIEVEMENT_NAME = b'ParagonsFirstSeason'
+    __ACHIEVEMENT_NAMES = {
+     b'ParagonsFirstSeason', b'Paragons_S2'}
 
     def format(self, message, *args):
         data = message.data
@@ -5951,40 +5952,46 @@ class ParagonsLevelCompletedFormatter(ServiceChannelFormatter):
             rewardInfo = data[b'levelRewardsInfo']
             coins = data[b'coinsGranted']
             chapter = data[b'chapterID']
-            if not coins:
-                return messageData
+            sourceID = data.get(b'sourceID')
+            if sourceID is not None:
+                sourceID = first(sourceID.split(b':'))
             messages = []
             for level, levelRewards in sorted(rewardInfo.items()):
-                rewards, showSelector = self._getShowSelectorAndRewards(levelRewards)
-                parameters = {b'coins': coins, 
-                   b'rewards': rewards, 
-                   b'chapter': chapter, 
-                   b'level': level}
-                if showSelector:
-                    parameters[b'entitlements'] = levelRewards.get(b'entitlements', {}).keys()
-                    message = self._makeMessage(ParagonsSystemMessages.LEVEL_SELECTABLE_REWARDS, message, parameters)
-                else:
-                    message = self._makeMessage(ParagonsSystemMessages.LEVEL_REWARDS, message, parameters)
-                messages.append(message)
+                if sourceID is not None and coins:
+                    rewards, showSelector = self._getShowSelectorAndRewards(levelRewards)
+                    parameters = {b'coins': coins, 
+                       b'rewards': rewards, 
+                       b'chapter': chapter, 
+                       b'level': level, 
+                       b'source': backport.text(R.strings.paragons.notifications.source.dyn(sourceID)())}
+                    if showSelector:
+                        parameters[b'entitlements'] = levelRewards.get(b'entitlements', {}).keys()
+                        message = self._makeMessage(ParagonsSystemMessages.LEVEL_SELECTABLE_REWARDS, message, parameters)
+                    else:
+                        message = self._makeMessage(ParagonsSystemMessages.LEVEL_REWARDS, message, parameters)
+                    messages.append(message)
                 if b'dossier' in levelRewards:
                     for _, dossier in levelRewards[b'dossier'].items():
                         for blockName, recordName in dossier.keys():
-                            if blockName == b'singleAchievements' and recordName == self.__ACHIEVEMENT_NAME:
+                            if blockName == b'singleAchievements' and recordName in self.__ACHIEVEMENT_NAMES:
                                 messages.append(self.__pushSingleAchievementMessage(data, chapter))
 
+            if not messages:
+                return messageData
             return messages
 
     def __pushSingleAchievementMessage(self, data, chapterID):
         from notification.decorators import ParagonsAchievementDecorator
         chapterName = backport.text(R.strings.paragons.chapterName.short.dyn((b'id_{}').format(str(chapterID)))())
         text = backport.text(R.strings.system_messages.paragons.chapterCompleted.text(), chapter_name=chapterName)
-        formatted = g_settings.msgTemplates.format(ParagonsSystemMessages.FIRST_CHAPTER_COMPLETED, ctx={b'text': text})
-        return MessageData(formatted, self._getGuiSettings(data, messageType=ParagonsSystemMessages.FIRST_CHAPTER_COMPLETED, isSoundable=True, decorator=ParagonsAchievementDecorator))
+        formatted = g_settings.msgTemplates.format(ParagonsSystemMessages.CHAPTER_COMPLETED, ctx={b'text': text})
+        messageType = ParagonsSystemMessages.getChapterCompleteMessage(chapterID)
+        return MessageData(formatted, self._getGuiSettings(data, messageType=messageType, isSoundable=True, decorator=ParagonsAchievementDecorator))
 
     def _makeMessage(self, messageType, message, parameters):
         formatted = g_settings.msgTemplates.format(messageType, ctx=parameters)
         from notification.decorators import ParagonsMessageDecorator
-        return MessageData(formatted, self._getGuiSettings(message, messageType, decorator=ParagonsMessageDecorator, auxData=parameters, isSoundable=True))
+        return MessageData(formatted, self._getGuiSettings(message, messageType=messageType, decorator=ParagonsMessageDecorator, auxData=parameters, isSoundable=True))
 
     def _makeRewards(self, vehicles, styles, crews, showSelector, showBranch):
         rewards = b''
@@ -6038,7 +6045,11 @@ class ParagonsCoinsGrantedFormatter(ServiceChannelFormatter):
         if not data:
             return [MessageData(None, None)]
         else:
-            parameters = {b'coins': data[b'coinsGranted']}
+            if not data.get(b'sourceID'):
+                return [MessageData(None, None)]
+            sourceID = first(data[b'sourceID'].split(b':'))
+            parameters = {b'coins': data[b'coinsGranted'], 
+               b'source': backport.text(R.strings.paragons.notifications.source.dyn(sourceID)())}
             formatted = g_settings.msgTemplates.format(ParagonsSystemMessages.BATTLE_REWARD, ctx=parameters)
             return [
              MessageData(formatted, self._getGuiSettings(message, None, isSoundable=True))]
@@ -6119,3 +6130,46 @@ class PlayStreakSysMessageRewardsFormatter(WaitItemsSyncFormatter):
         else:
             callback([MessageData(None, None)])
         return
+
+
+class LimitedUIContentUnlockedFormatter(ClientSysMessageFormatter):
+    __TEMPLATE = b'LimitedUIContentUnlocked'
+    __SEPARATOR = b'<br/>'
+    __BATTLE_MODE_RULE_TO_STRING = {LuiRules.VERSUS_AI_CONTENT: R.strings.messenger.serviceChannelMessages.limitedUIContentUnlocked.versusAI(), 
+       LuiRules.STRONGHOLD_CONTENT: R.strings.messenger.serviceChannelMessages.limitedUIContentUnlocked.stronghold()}
+    __CONTENT_RULE_TO_STRINGS = {LuiRules.PERSONAL_MISSIONS_CONTENT: R.strings.messenger.serviceChannelMessages.limitedUIContentUnlocked.personalMissions(), 
+       LuiRules.TOURNAMENTS_CONTENT: R.strings.messenger.serviceChannelMessages.limitedUIContentUnlocked.tournaments()}
+
+    def format(self, message, *args):
+        rules = message.get(b'rules')
+        if not rules:
+            return [MessageData(None, None)]
+        else:
+            text = self.__formatText(rules)
+            if not text:
+                return [MessageData(None, None)]
+            ctx = {b'text': text}
+            formatted = g_settings.msgTemplates.format(self.__TEMPLATE, ctx)
+            guiSettings = self._getGuiSettings(message, self.__TEMPLATE)
+            return [
+             MessageData(formatted, guiSettings)]
+
+    def __formatText(self, rules):
+        fmt = b''
+        battleModesSection = self.__formatSection(R.strings.messenger.serviceChannelMessages.limitedUIContentUnlocked.battleMode(), R.strings.messenger.serviceChannelMessages.limitedUIContentUnlocked.battleModes(), self.__BATTLE_MODE_RULE_TO_STRING, rules)
+        if battleModesSection:
+            fmt += battleModesSection
+        contentsSection = self.__formatSection(R.strings.messenger.serviceChannelMessages.limitedUIContentUnlocked.content(), R.strings.messenger.serviceChannelMessages.limitedUIContentUnlocked.contents(), self.__CONTENT_RULE_TO_STRINGS, rules)
+        if contentsSection:
+            fmt += self.__SEPARATOR + self.__SEPARATOR + contentsSection
+        return fmt
+
+    def __formatSection(self, singularSectionName, pluralSectionName, ruleToStringDict, rules):
+        texts = [ backport.text(textId) for rule, textId in ruleToStringDict.iteritems() if rule in rules ]
+        if texts:
+            fmt = text_styles.main(backport.text(pluralSectionName if len(texts) > 1 else singularSectionName))
+            fmt += self.__SEPARATOR
+            fmt += self.__SEPARATOR.join(texts)
+            return fmt
+        else:
+            return

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/russian/R225_Vasiliev_project/normal/lod1/Turret_01</parent>
+	<tank>true</tank>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.212269 -0.023214 -1.212270</min>
+		<max>1.212269 1.895690 1.508725</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/russian/R225_Vasiliev_project/normal/lod0/Turret_01</nodefullVisual>
+</root>

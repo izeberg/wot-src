@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>s0Shape35.vertices</vertices>
+			<primitive>s0Shape35.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0</identifier>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>108</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/Environment/hd_env_EVT_C26_0007_Bridge/hd_env_EVT_C26_0007_Bridge_BAM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Environment/hd_env_EVT_C26_0007_Bridge/hd_env_EVT_C26_0007_Bridge_BGMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Environment/hd_env_EVT_C26_0007_Bridge/hd_env_EVT_C26_0007_Bridge_BANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.000000 -2.462912 0.000000</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-17.039642 -4.925823 -8.025644</min>
+		<max>17.039642 0.000000 8.025644</max>
+	</boundingBox>
+	<customBsp>true</customBsp>
+	<geometrySize>31292</geometrySize>
+	<minUVDensity>0.000054</minUVDensity>
+</root>

@@ -174,6 +174,10 @@ package net.wg.gui.battle.epicBattle.views
       
       private var _isVehPostProgressionEnabled:Boolean;
       
+      private var _epicScorePanelTween:Tween = null;
+      
+      private var _teamBasesPanelTween:Tween = null;
+      
       public function EpicBattlePage()
       {
          super();
@@ -187,6 +191,7 @@ package net.wg.gui.battle.epicBattle.views
       override public function updateStage(param1:Number, param2:Number) : void
       {
          super.updateStage(param1,param2);
+         this.clearTweens();
          var _loc3_:int = param1 >> 1;
          _originalWidth = param1;
          _originalHeight = param2;
@@ -230,8 +235,17 @@ package net.wg.gui.battle.epicBattle.views
          this.battleDamageLogPanel.y = damagePanel.y + BATTLE_DAMAGE_LOG_Y_PADDING;
          this.battleDamageLogPanel.updateSize(param1,param2);
          this.updateBattleDamageLogPanelPosition();
+         if(this._messagePlaying)
+         {
+            this.epicScorePanelUI.alpha = 0;
+            this.epicScorePanelUI.y = SCORE_PANEL_HIDDEN_OFFSET;
+         }
+         else
+         {
+            this.epicScorePanelUI.alpha = 1;
+            this.epicScorePanelUI.y = 0;
+         }
          this.epicScorePanelUI.x = _loc3_;
-         this.epicScorePanelUI.y = !!this._messagePlaying ? Number(SCORE_PANEL_HIDDEN_OFFSET) : Number(0);
          this.epicScorePanelUI.updateStage(param1,param2);
          this.epicSpectatorViewUI.updateStage(param1,param2);
          this.epicRespawnView.updateStage(param1,param2);
@@ -360,6 +374,7 @@ package net.wg.gui.battle.epicBattle.views
       
       override protected function onBeforeDispose() : void
       {
+         this.clearTweens();
          prebattleTimer.removeEventListener(PrebattleTimerEvent.START_HIDING,this.onPrebattleTimerStartHidingHandler);
          this.battleMessenger.removeEventListener(FocusRequestEvent.REQUEST_FOCUS,this.onBattleMessengerRequestFocusHandler);
          this.battleMessenger.removeEventListener(BattleMessenger.REMOVE_FOCUS,this.onBattleMessengerRemoveFocusHandler);
@@ -435,7 +450,7 @@ package net.wg.gui.battle.epicBattle.views
       override protected function playerMessageListPositionUpdate() : void
       {
          var _loc1_:int = PLAYER_MESSAGES_LIST_Y_OFFSET;
-         if(this._progressionCmp && this._progressionCmp.isCompVisible())
+         if(this._progressionCmp && this._progressionCmp.visible)
          {
             _loc1_ = PLAYER_MESSAGES_LIST_OFFSET.y;
          }
@@ -459,33 +474,19 @@ package net.wg.gui.battle.epicBattle.views
       
       override protected function onAllMessagesEndedPlaying(param1:String) : void
       {
-         var messageType:String = param1;
-         super.onAllMessagesEndedPlaying(messageType);
+         super.onAllMessagesEndedPlaying(param1);
          if(!this._messagePlaying)
          {
             return;
          }
          this._messagePlaying = false;
          this.epicScorePanelUI.checkState();
-         var scoreTween:Tween = new Tween(SCORE_PANEL_FADE_IN_TWEEN_LENGTH,this.epicScorePanelUI,{
+         this.clearTweens();
+         this._epicScorePanelTween = new Tween(SCORE_PANEL_FADE_IN_TWEEN_LENGTH,this.epicScorePanelUI,{
             "alpha":1,
             "y":0
-         },{
-            "ease":Strong.easeInOut,
-            "onComplete":function(param1:Tween):void
-            {
-               param1.dispose();
-               param1 = null;
-            }
-         });
-         var capBarTween:Tween = new Tween(CAPTURE_BAR_TWEEN_LENGTH,this.teamBasesPanelUI,{"y":TEAM_BASES_PANEL_OFFSETS[this._scorePanelState]},{
-            "ease":Strong.easeInOut,
-            "onComplete":function(param1:Tween):void
-            {
-               param1.dispose();
-               param1 = null;
-            }
-         });
+         },{"ease":Strong.easeInOut});
+         this._teamBasesPanelTween = new Tween(CAPTURE_BAR_TWEEN_LENGTH,this.teamBasesPanelUI,{"y":TEAM_BASES_PANEL_OFFSETS[this._scorePanelState]},{"ease":Strong.easeInOut});
       }
       
       override protected function onMessagesStartedPlaying(param1:String) : void
@@ -493,7 +494,8 @@ package net.wg.gui.battle.epicBattle.views
          var messageType:String = param1;
          super.onMessagesStartedPlaying(messageType);
          this._messagePlaying = true;
-         var scoreTween:Tween = new Tween(SCORE_PANEL_FADE_OUT_TWEEN_LENGTH,this.epicScorePanelUI,{
+         this.clearTweens();
+         this._epicScorePanelTween = new Tween(SCORE_PANEL_FADE_OUT_TWEEN_LENGTH,this.epicScorePanelUI,{
             "alpha":0,
             "y":SCORE_PANEL_HIDDEN_OFFSET
          },{
@@ -501,18 +503,9 @@ package net.wg.gui.battle.epicBattle.views
             "onComplete":function(param1:Tween):void
             {
                epicScorePanelUI.checkState();
-               param1.dispose();
-               param1 = null;
             }
          });
-         var capBarTween:Tween = new Tween(CAPTURE_BAR_TWEEN_LENGTH,this.teamBasesPanelUI,{"y":TEAM_BASES_PANEL_TOP_OFFSET},{
-            "ease":Strong.easeInOut,
-            "onComplete":function(param1:Tween):void
-            {
-               param1.dispose();
-               param1 = null;
-            }
-         });
+         this._teamBasesPanelTween = new Tween(CAPTURE_BAR_TWEEN_LENGTH,this.teamBasesPanelUI,{"y":TEAM_BASES_PANEL_TOP_OFFSET},{"ease":Strong.easeInOut});
       }
       
       override protected function getAmmunitionPanelYShift() : int
@@ -529,6 +522,20 @@ package net.wg.gui.battle.epicBattle.views
       {
          this._isVehPostProgressionEnabled = param1;
          this.updateStage(App.appWidth,App.appHeight);
+      }
+      
+      private function clearTweens() : void
+      {
+         if(this._epicScorePanelTween)
+         {
+            this._epicScorePanelTween.dispose();
+            this._epicScorePanelTween = null;
+         }
+         if(this._teamBasesPanelTween)
+         {
+            this._teamBasesPanelTween.dispose();
+            this._teamBasesPanelTween = null;
+         }
       }
       
       private function updateConsumablePanel(param1:Boolean = false) : void

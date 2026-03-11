@@ -69,6 +69,8 @@ package
       
       public static const NATIONS:Class = NATIONS;
       
+      public static const PARAGONS:Class = PARAGONS;
+      
       public static const PERSONAL_MISSIONS:Class = PERSONAL_MISSIONS;
       
       public static const PERSONAL_RESERVES:Class = PERSONAL_RESERVES;

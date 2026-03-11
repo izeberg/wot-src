@@ -3,13 +3,7 @@
 	<nodelessVisual>vehicles/chinese/Ch38_WZ113G_FT/track/segment</nodelessVisual>
 	<materialNames/>
 	<visibilityBox>
-		<min>
-			-0.324812 -0.127546 -0.10841
-			<!--BW_String-->
-		</min>
-		<max>
-			0.324812 0.0683298 0.10841
-			<!--BW_String-->
-		</max>
+		<min>-0.324812 -0.127546 -0.108410</min>
+		<max>0.324812 0.068330 0.108410</max>
 	</visibilityBox>
 </root>

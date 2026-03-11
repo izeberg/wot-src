@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<stream>uv2</stream>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd1</identifier>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>111</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h08_mt_hangar/Seasons/Environment/Summer/Buildings/hd_h08_MTV1_0020_NPPO_SMR_02_AM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/h08_mt_hangar/Seasons/Environment/Summer/Buildings/hd_h08_MTV1_0020_NPPO_SMR_02_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/h08_mt_hangar/Seasons/Environment/Summer/Buildings/hd_h08_MTV1_0020_NPPO_SMR_02_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>22.993956 15.111975 -0.000008</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>s_nd2</identifier>
+					<materialKind>111</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h08_mt_hangar/Seasons/Environment/Summer/Buildings/hd_h08_MTV1_0020_NPPO_SMR_glass_AM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/h08_mt_hangar/Seasons/Environment/Summer/Buildings/hd_h08_MTV1_0020_NPPO_SMR_glass_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/h08_mt_hangar/Seasons/Environment/Summer/Buildings/hd_h08_MTV1_0020_NPPO_SMR_glass_ANM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+				</material>
+				<groupOrigin>4.750067 10.625734 0.068240</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				2
+				<material>
+					<identifier>s_nd0</identifier>
+					<fx>shaders/std_effects/PBS_tiled.fx</fx>
+					<materialKind>111</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						albedoHeightTile0
+						<Texture>content/Hangars/h08_mt_hangar/enviroment/Buildings/tiles/Blocks_17_01_512_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile1
+						<Texture>content/Hangars/h08_mt_hangar/enviroment/Buildings/tiles/Blocks_17_01_512_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile2
+						<Texture>content/Hangars/h08_mt_hangar/enviroment/Buildings/tiles/Borders_26_512_AM.dds</Texture>
+					</property>
+					<property>
+						blendMask
+						<Texture>content/Hangars/h08_mt_hangar/Seasons/Environment/Summer/Buildings/hd_h08_MTV1_0020_NPPO_Checkpoint_SMR_blend.png</Texture>
+					</property>
+					<property>
+						colorTex
+						<Texture>content/Hangars/h08_mt_hangar/Seasons/Environment/Summer/Buildings/hd_h08_MTV1_0020_NPPO_Checkpoint_SMR_GCM.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile0
+						<Texture>content/Hangars/h08_mt_hangar/enviroment/Buildings/tiles/Blocks_17_01_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile1
+						<Texture>content/Hangars/h08_mt_hangar/enviroment/Buildings/tiles/Blocks_17_01_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile2
+						<Texture>content/Hangars/h08_mt_hangar/enviroment/Buildings/tiles/Borders_26_512_MAO.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile0
+						<Texture>content/Hangars/h08_mt_hangar/enviroment/Buildings/tiles/Blocks_17_01_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile1
+						<Texture>content/Hangars/h08_mt_hangar/enviroment/Buildings/tiles/Blocks_17_01_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile2
+						<Texture>content/Hangars/h08_mt_hangar/enviroment/Buildings/tiles/Borders_26_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						g_dirtColorParams
+						<Vector4>0.100000 1.000000 1.000000 1.000000</Vector4>
+					</property>
+					<property>
+						g_tile0Tint
+						<Vector4>1.000000 0.913725 0.768627 1.000000</Vector4>
+					</property>
+					<property>
+						dirtMap
+						<Texture>content/Hangars/h03_mt_ny_2024/environment/buildings/tiles/Dirt_Plaster_05_DM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>18.699844 12.340325 0.000000</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-11.318978 -0.143675 -23.510420</min>
+		<max>48.718666 27.198330 23.510420</max>
+	</boundingBox>
+	<customBsp>true</customBsp>
+	<geometrySize>211300</geometrySize>
+	<minUVDensity>0.000417</minUVDensity>
+</root>

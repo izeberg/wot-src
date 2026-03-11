@@ -11,6 +11,7 @@ package net.wg.gui.components.crosshairPanel
    import net.wg.data.constants.generated.CROSSHAIR_CASSETTE_TYPES;
    import net.wg.data.constants.generated.CROSSHAIR_CONSTANTS;
    import net.wg.gui.components.crosshairPanel.VO.GunMarkerIndicatorVO;
+   import net.wg.gui.components.crosshairPanel.components.AbilityModifierIndicator;
    import net.wg.gui.components.crosshairPanel.components.ClipQuantityIndicator;
    import net.wg.gui.components.crosshairPanel.components.CrosshairClipQuantityBarContainer;
    import net.wg.gui.components.crosshairPanel.components.ShotDamageInd;
@@ -97,6 +98,8 @@ package net.wg.gui.components.crosshairPanel
       
       private var _coolantAbilityIndicator:CoolantAbilityIndicator = null;
       
+      private var _abilityModifierIndicator:AbilityModifierIndicator = null;
+      
       private var _prevReloadingState:String = "";
       
       private var _clipsByType:Vector.<ClipQuantityIndicator> = null;
@@ -121,8 +124,6 @@ package net.wg.gui.components.crosshairPanel
       
       private var _quickReloadingTimerVisible:Boolean = true;
       
-      private var _reloadTimeBlinkYPos:Array = null;
-      
       private var _disposed:Boolean = false;
       
       private var _shotFlyTimeIndVisible:Boolean = false;
@@ -139,7 +140,6 @@ package net.wg.gui.components.crosshairPanel
          this.reloadTimeBlink.visible = false;
          this.updateQuickReloadingTimer();
          addEventListener(CrosshairPanelEvent.SOUND,this.onCrosshairPanelSoundHandler);
-         this._reloadTimeBlinkYPos = this.getReloadTimeBlinkYPos();
          this._clipsByType = new Vector.<ClipQuantityIndicator>(0);
          this._clipsByType.length = CROSSHAIR_CASSETTE_TYPES.CASSETTE_TYPES.length;
          this._clipsByType[CROSSHAIR_CASSETTE_TYPES.CASSETTE] = this.cassetteMC;
@@ -490,14 +490,45 @@ package net.wg.gui.components.crosshairPanel
          }
       }
       
-      public function setCoolantAbilityReloadingPenalty(param1:Number) : void
+      public function setCoolantAbilityReloadingPenalty(param1:Number, param2:Number) : void
       {
          if(!this._coolantAbilityIndicator)
          {
             this.addCoolantAbilityIndicator();
             this._coolantAbilityIndicator.validateNow();
          }
-         this._coolantAbilityIndicator.updateReloadingPenalty(param1);
+         this._coolantAbilityIndicator.updateReloadingPenalty(param1,param2);
+      }
+      
+      public function addCoolantAbilityReloadingPenalty(param1:Number) : void
+      {
+         if(!this._coolantAbilityIndicator)
+         {
+            this.addCoolantAbilityIndicator();
+            this._coolantAbilityIndicator.validateNow();
+         }
+         this._coolantAbilityIndicator.addReloadingPenalty(param1);
+      }
+      
+      public function setAbilityModifier(param1:int, param2:Boolean) : void
+      {
+         var _loc3_:Class = null;
+         if(!this._abilityModifierIndicator)
+         {
+            _loc3_ = Class(getDefinitionByName(Linkages.ABILITY_MODIFIER_INDICATOR));
+            this._abilityModifierIndicator = AbilityModifierIndicator(new _loc3_());
+            this._abilityModifierIndicator.y = AbilityModifierIndicator.Y_OFFSET;
+            this.arrangeAbilityModifier();
+            addChild(this._abilityModifierIndicator);
+         }
+         if(param1 <= Values.ZERO)
+         {
+            this._abilityModifierIndicator.hide(param2);
+         }
+         else
+         {
+            this._abilityModifierIndicator.show(param1,param2);
+         }
       }
       
       public function setTimerReloadingState() : void
@@ -625,6 +656,11 @@ package net.wg.gui.components.crosshairPanel
             this._coolantAbilityIndicator.dispose();
             this._coolantAbilityIndicator = null;
          }
+         if(this._abilityModifierIndicator)
+         {
+            this._abilityModifierIndicator.dispose();
+            this._abilityModifierIndicator = null;
+         }
          if(this.shotFlyTimeInd)
          {
             this.shotFlyTimeInd.dispose();
@@ -640,25 +676,31 @@ package net.wg.gui.components.crosshairPanel
             this._overheatBar.dispose();
             this._overheatBar = null;
          }
-         if(this._reloadTimeBlinkYPos)
-         {
-            this._reloadTimeBlinkYPos.splice(0,this._reloadTimeBlinkYPos.length);
-            this._reloadTimeBlinkYPos = null;
-         }
       }
       
       protected function arrangeReloadTimeBlink() : void
       {
-         if(this._reloadTimeBlinkYPos && this.reloadTimeBlink && this._currentTimerTextField)
+         var _loc1_:Array = this.getReloadTimeBlinkYPos();
+         if(_loc1_ && this.reloadTimeBlink && this._currentTimerTextField)
          {
             this.reloadTimeBlink.x = this._currentTimerTextField.x + (this._currentTimerTextField.textWidth >> 1) + TF_LEFT_MARGIN;
-            this.reloadTimeBlink.y = this._reloadTimeBlinkYPos[this.netType];
+            this.reloadTimeBlink.y = _loc1_[this.netType];
+         }
+      }
+      
+      protected function arrangeAbilityModifier() : void
+      {
+         var _loc1_:Array = this.getAbilityModifierXPos();
+         if(this._abilityModifierIndicator && _loc1_)
+         {
+            this._abilityModifierIndicator.x = _loc1_[this.netType];
          }
       }
       
       protected function updateNetType() : void
       {
          gotoAndStop(TYPE_PREFIX + this.netType);
+         this.arrangeAbilityModifier();
       }
       
       protected function updateReloadingState() : void
@@ -678,13 +720,18 @@ package net.wg.gui.components.crosshairPanel
          {
             this.reloadingAnimationMC.visible = false;
          }
-         if(this._coolantAbilityIndicator && this.reloadingState == CrosshairConsts.RELOADING_PROGRESS && this._prevReloadingState == CrosshairConsts.RELOADING_ENDED)
+         if(this._coolantAbilityIndicator && (this.reloadingState == CrosshairConsts.RELOADING_PROGRESS && this._prevReloadingState == CrosshairConsts.RELOADING_ENDED || this.reloadingState == CrosshairConsts.RELOADING_IMPOSSIBLE_AMMO_ENDED))
          {
             this._coolantAbilityIndicator.hideAbilityMod();
          }
       }
       
       protected function getReloadTimeBlinkYPos() : Array
+      {
+         return null;
+      }
+      
+      protected function getAbilityModifierXPos() : Array
       {
          return null;
       }

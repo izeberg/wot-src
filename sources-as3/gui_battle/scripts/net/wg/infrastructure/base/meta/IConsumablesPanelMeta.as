@@ -72,9 +72,7 @@ package net.wg.infrastructure.base.meta
       
       function as_addAbilityEquipmentSlot(param1:int, param2:Number, param3:Number, param4:int, param5:Number, param6:Number, param7:String, param8:String, param9:int) : void;
       
-      function as_showAbilityModifier(param1:int, param2:Boolean) : void;
-      
-      function as_hideAbilityModifier(param1:Boolean) : void;
+      function as_setAbilityModifier(param1:int, param2:Boolean) : void;
       
       function as_addRoleSkillSlot(param1:int, param2:Number, param3:Number, param4:int, param5:Number, param6:Number, param7:String, param8:String, param9:int) : void;
       

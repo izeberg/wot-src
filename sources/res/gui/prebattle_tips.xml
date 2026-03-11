@@ -227,6 +227,13 @@
 				<showTimes>10</showTimes>
 			</preceding>
 		</filter>
+		<filter>
+			<id>only_autoShoot_gun_first_5_times</id>
+			<vehProperty>isAutoShootGunVehicle</vehProperty>
+			<preceding>
+				<showTimes>5</showTimes>
+			</preceding>
+		</filter>
 	</filters>
 	<tips>
 		<tip>
@@ -1038,6 +1045,12 @@
 			<status>thermalVisionVehicles</status>
 			<group>thermalVision</group>
 			<filter>only_thermalVision_first_10_times</filter>
+		</tip>
+		<tip>
+			<id>tip31013</id>
+			<status>autoShootGunVehicles</status>
+			<group>autoShoot</group>
+			<filter>only_autoShoot_gun_first_5_times</filter>
 		</tip>
 		<tip>
 			<id>epicTip1</id>

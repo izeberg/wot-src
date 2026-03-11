@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/czech/Cz00_COSM_Pepelac_02/normal/lod3/Turret_01</nodefullVisual>
+	<parent>vehicles/czech/Cz00_COSM_Pepelac_02/normal/lod4/Turret_01</parent>
+	<tank>true</tank>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-0.535307 -0.000903 -0.537380</min>
+		<max>0.534048 1.240277 0.538894</max>
+	</visibilityBox>
+</root>

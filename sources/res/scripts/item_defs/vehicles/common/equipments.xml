@@ -9685,7 +9685,7 @@
 			<attrFactorMods>
 				<circularVisionRadius>
 					<value>
-						-0.95
+						-0.9
 						<!--BW_String-->
 					</value>
 					<ignoreAllies>True</ignoreAllies>
@@ -9789,7 +9789,7 @@
 				<triggerHeight>5</triggerHeight>
 				<triggerDepth>1</triggerDepth>
 				<influenceType>2</influenceType>
-				<lifetime>25</lifetime>
+				<lifetime>15</lifetime>
 				<damage>0</damage>
 				<shellCompactDescr>97818</shellCompactDescr>
 				<destroyMyMinesOverlappingAlliedMines>True</destroyMyMinesOverlappingAlliedMines>
@@ -11323,11 +11323,11 @@
 				<exports>vse tooltip</exports>
 			</radius>
 			<heal>
-				20 40 60
+				60 120 180
 				<exports>vse</exports>
 			</heal>
 			<secondaryHealDebuff>
-				25
+				75
 				<exports>vse tooltip</exports>
 			</secondaryHealDebuff>
 			<tickInterval>
@@ -11395,11 +11395,11 @@
 				<exports>vse tooltip</exports>
 			</duration>
 			<heal>
-				10 15 20
+				7 11 15
 				<exports>vse</exports>
 			</heal>
 			<gunReloadTimeBuff>
-				4
+				5
 				<exports>vse tooltip</exports>
 			</gunReloadTimeBuff>
 			<tickInterval>
@@ -11434,17 +11434,17 @@
 				<exports>vse tooltip</exports>
 			</duration>
 			<aimingTimeBuff>
-				0.5 0.35 0.15
+				0.8 0.7 0.6
 				<!--BW_String-->
 				<exports>vse</exports>
 			</aimingTimeBuff>
 			<shotDispersionFactors>
-				0.5 0.35 0.25
+				0.7 0.6 0.5
 				<!--BW_String-->
 				<exports>vse</exports>
 			</shotDispersionFactors>
 			<clipReloadTimeBoost>
-				0.65 0.8 1.15
+				0.5 0.7 0.9
 				<!--BW_String-->
 				<exports>vse tooltip</exports>
 			</clipReloadTimeBoost>
@@ -11538,11 +11538,11 @@
 				</server>
 			</visualScript>
 			<cooldownSeconds>
-				20
+				30
 				<exports>vse</exports>
 			</cooldownSeconds>
 			<delay>
-				3
+				4
 				<exports>vse tooltip</exports>
 			</delay>
 			<radius>
@@ -11550,7 +11550,7 @@
 				<exports>vse tooltip</exports>
 			</radius>
 			<damage>
-				100 250 500
+				150 250 450
 				<exports>vse tooltip</exports>
 			</damage>
 			<stunDuration>
@@ -11809,7 +11809,7 @@
 				<exports>vse</exports>
 			</cooldownSeconds>
 			<duration>
-				10 15 25
+				5 10 15
 				<exports>vse tooltip</exports>
 			</duration>
 			<delay>
@@ -12269,14 +12269,14 @@
 					<plan>abilities/base_ability_controller_client</plan>
 				</client>
 			</visualScript>
-			<cooldownSeconds>90</cooldownSeconds>
-			<reuseCount>3</reuseCount>
+			<cooldownSeconds>180</cooldownSeconds>
+			<reuseCount>2</reuseCount>
 			<duration>25</duration>
 			<penaltyReloadTime>4</penaltyReloadTime>
 			<additiveFactors/>
 			<multiplicativeFactors>
 				<gun-reloadTime>
-					0.4
+					0.50
 					<!--BW_String-->
 				</gun-reloadTime>
 				<gun-shotDispersionFactors-afterShot>
@@ -12288,7 +12288,7 @@
 		<kpi>
 			<mul>
 				<name>vehicleGunReloadTime</name>
-				<value>-60</value>
+				<value>-50</value>
 			</mul>
 			<add>
 				<name>vehicleGunReloadPenalty</name>
@@ -12319,7 +12319,7 @@
 					<plan>abilities/base_ability_controller_client</plan>
 				</client>
 			</visualScript>
-			<cooldownSeconds>90</cooldownSeconds>
+			<cooldownSeconds>120</cooldownSeconds>
 			<reuseCount>4</reuseCount>
 			<duration>25</duration>
 			<cooldownAfterRamKill>
@@ -12356,7 +12356,7 @@
 					<!--BW_String-->
 				</chassisHealthFactor>
 				<vehicle-rotationSpeed>
-					0.33
+					0.44
 					<!--BW_String-->
 				</vehicle-rotationSpeed>
 				<trackRammingDamageFactor>
@@ -12421,21 +12421,21 @@
 					<plan>abilities/base_ability_controller_client</plan>
 				</client>
 			</visualScript>
-			<cooldownSeconds>90</cooldownSeconds>
+			<cooldownSeconds>180</cooldownSeconds>
 			<damageFirstIncrease>
-				0.5
+				0.30
 				<!--BW_String-->
 			</damageFirstIncrease>
 			<addDuration>4</addDuration>
-			<reuseCount>3</reuseCount>
+			<reuseCount>2</reuseCount>
 			<consumeAmmo>True</consumeAmmo>
-			<duration>15</duration>
+			<duration>20</duration>
 			<damageIncreasePerShot>
-				0.15
+				0.05
 				<!--BW_String-->
 			</damageIncreasePerShot>
 			<maxDamageIncreasePerShot>
-				0.95
+				0.70
 				<!--BW_String-->
 			</maxDamageIncreasePerShot>
 			<additiveFactors/>
@@ -12460,10 +12460,6 @@
 					0.8
 					<!--BW_String-->
 				</gun-aimingTime>
-				<gun-reloadTime>
-					0.8
-					<!--BW_String-->
-				</gun-reloadTime>
 			</multiplicativeFactors>
 		</script>
 		<kpi>
@@ -12473,13 +12469,9 @@
 			</add>
 			<add>
 				<name>vehicleGunDamage</name>
-				<value>50</value>
-				<specValue>15</specValue>
+				<value>30</value>
+				<specValue>5</specValue>
 			</add>
-			<mul>
-				<name>vehicleGunReloadTime</name>
-				<value>-20</value>
-			</mul>
 			<mul>
 				<name>vehicleGunAimSpeed</name>
 				<value>20</value>
