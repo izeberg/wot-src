@@ -467,13 +467,14 @@ class WotPlusController(IWotPlusController, _ProBoostMixin, CallbackDelayer):
         if self._invalidationInProgress:
             _logger.debug('Wot plus is waiting for another subscription invalidation, skipping')
             return
+        self._invalidationInProgress = True
+        self._state = WotPlusState.ACTIVE if self.hasSubscription() else WotPlusState.INACTIVE
+        self._hasSteamSubscription = False
+        self._billingPeriod = None
+        if constants.IS_CHINA or constants.IS_CT:
+            _logger.warning('Subscriptions are not available for the current realm: %s', constants.CURRENT_REALM)
+            return
         else:
-            self._invalidationInProgress = True
-            self._state = WotPlusState.ACTIVE if self.hasSubscription() else WotPlusState.INACTIVE
-            self._hasSteamSubscription = False
-            if constants.IS_CHINA or constants.IS_CT:
-                _logger.warning('Subscriptions are not available for the current realm: %s', constants.CURRENT_REALM)
-                return
             if not self.hasSubscription():
                 return
             fetchResult = yield wg_await(self._userSubscriptionsFetchController.getSubscriptions(clearCache))
@@ -486,8 +487,10 @@ class WotPlusController(IWotPlusController, _ProBoostMixin, CallbackDelayer):
             if subWithBilling is not None:
                 self._billingPeriod = subWithBilling.billingPeriod
             if not activeSubscriptions:
-                hasCancelled = any(subscription.status in SUBSCRIPTION_CANCEL_STATUSES for subscription in userSubscriptions)
-                if hasCancelled:
+                cancelledSubs = (s for s in userSubscriptions if s.status in SUBSCRIPTION_CANCEL_STATUSES)
+                if cancelledSubs:
+                    cancelledSub = max(cancelledSubs, key=lambda s: s.nextBillingTime)
+                    self._billingPeriod = cancelledSub.billingPeriod
                     self._state = WotPlusState.CANCELLED
             self._hasSteamSubscription = any(userSubscription.platform == SubscriptionRequestPlatform.STEAM for userSubscription in userSubscriptions)
             raise AsyncReturn(None)
