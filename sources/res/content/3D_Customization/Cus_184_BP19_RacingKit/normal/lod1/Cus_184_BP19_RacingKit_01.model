@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/3D_Customization/Cus_184_BP19_RacingKit/normal/lod2/Cus_184_BP19_RacingKit_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.550766 -0.001857 -0.827483</min>
+		<max>0.076479 0.453885 0.899835</max>
+	</visibilityBox>
+	<nodefullVisual>content/3D_Customization/Cus_184_BP19_RacingKit/normal/lod1/Cus_184_BP19_RacingKit_01</nodefullVisual>
+	<tank>true</tank>
+</root>

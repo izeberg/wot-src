@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/3D_Customization/Cus_183_BP19_MissionKit/normal/lod2/Cus_183_BP19_MissionKit_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.490936 0.000000 -0.874723</min>
+		<max>0.070517 0.459986 0.670954</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>content/3D_Customization/Cus_183_BP19_MissionKit/normal/lod1/Cus_183_BP19_MissionKit_01</nodefullVisual>
+</root>
