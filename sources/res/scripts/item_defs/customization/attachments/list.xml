@@ -2722,6 +2722,75 @@
 		</attachment>
 	</itemGroup>
 	<itemGroup>
+		<name>Mafia: Tommy&apos;s Story</name>
+		<userString>#vehicle_customization:attachment/Mafia_Tommys_story</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<attachment>
+			<id>1169</id>
+			<name>Cus_180_BP19_TaxiSign</name>
+			<modelName>content/CGFPrefabs/3D_Customization/Cus_180_BP19_TaxiSign/Cus_180_BP19_TaxiSign.prefab</modelName>
+			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_180_BP19_TaxiSign/Cus_180_BP19_TaxiSign_hangar.prefab</hangarModelName>
+			<attachmentLogic>prefab</attachmentLogic>
+			<applyType>gunMantlet</applyType>
+			<size>medium</size>
+			<rarity>epic</rarity>
+			<priceGroup>attachments 1000g notInShop</priceGroup>
+			<userString>#vehicle_customization:attachment/Mafia_Tommys_story/Cus_180_BP19_TaxiSign</userString>
+			<tags>battleEffect</tags>
+		</attachment>
+		<attachment>
+			<id>1170</id>
+			<name>Cus_181_BP19_TommyGun</name>
+			<modelName>content/CGFPrefabs/3D_Customization/Cus_181_BP19_TommyGun/Cus_181_BP19_TommyGun.prefab</modelName>
+			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_181_BP19_TommyGun/Cus_181_BP19_TommyGun.prefab</hangarModelName>
+			<attachmentLogic>prefab</attachmentLogic>
+			<applyType>turret</applyType>
+			<size>medium</size>
+			<rarity>rare</rarity>
+			<priceGroup>attachments 500g notInShop</priceGroup>
+			<userString>#vehicle_customization:attachment/Mafia_Tommys_story/Cus_181_BP19_TommyGun</userString>
+		</attachment>
+		<attachment>
+			<id>1171</id>
+			<name>Cus_182_BP19_BarSign</name>
+			<modelName>content/CGFPrefabs/3D_Customization/Cus_182_BP19_BarSign/Cus_182_BP19_BarSign.prefab</modelName>
+			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_182_BP19_BarSign/Cus_182_BP19_BarSign_hangar.prefab</hangarModelName>
+			<attachmentLogic>prefab</attachmentLogic>
+			<applyType>universal</applyType>
+			<size>medium</size>
+			<rarity>legendary</rarity>
+			<priceGroup>attachments 2150g notInShop</priceGroup>
+			<userString>#vehicle_customization:attachment/Mafia_Tommys_story/Cus_182_BP19_BarSign</userString>
+			<description>#vehicle_customization:attachment/Mafia_Tommys_story/Cus_182_BP19_BarSign/description</description>
+			<tags>battleEffect</tags>
+		</attachment>
+		<attachment>
+			<id>1172</id>
+			<name>Cus_183_BP19_MissionKit</name>
+			<modelName>content/CGFPrefabs/3D_Customization/Cus_183_BP19_MissionKit/Cus_183_BP19_MissionKit.prefab</modelName>
+			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_183_BP19_MissionKit/Cus_183_BP19_MissionKit.prefab</hangarModelName>
+			<attachmentLogic>prefab</attachmentLogic>
+			<applyType>universal</applyType>
+			<size>medium</size>
+			<rarity>rare</rarity>
+			<priceGroup>attachments 500g notInShop</priceGroup>
+			<userString>#vehicle_customization:attachment/Mafia_Tommys_story/Cus_183_BP19_MissionKit</userString>
+		</attachment>
+		<attachment>
+			<id>1173</id>
+			<name>Cus_184_BP19_RacingKit</name>
+			<modelName>content/CGFPrefabs/3D_Customization/Cus_184_BP19_RacingKit/Cus_184_BP19_RacingKit.prefab</modelName>
+			<hangarModelName>content/CGFPrefabs/3D_Customization/Cus_184_BP19_RacingKit/Cus_184_BP19_RacingKit.prefab</hangarModelName>
+			<attachmentLogic>prefab</attachmentLogic>
+			<applyType>universal</applyType>
+			<size>medium</size>
+			<rarity>rare</rarity>
+			<priceGroup>attachments 500g notInShop</priceGroup>
+			<userString>#vehicle_customization:attachment/Mafia_Tommys_story/Cus_184_BP19_RacingKit</userString>
+		</attachment>
+	</itemGroup>
+	<itemGroup>
 		<name>GunSlots</name>
 		<userString>#vehicle_customization:attachment/gunslot</userString>
 		<season>ALL</season>

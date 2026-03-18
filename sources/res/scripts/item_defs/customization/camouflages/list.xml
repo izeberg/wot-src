@@ -363565,6 +363565,268 @@
 		<userString>#vehicle_customization:camouflage/opaque</userString>
 		<season>ALL</season>
 		<historical>1</historical>
+		<priceGroup>camouflages 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+			</exclude>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
+		</vehicleFilter>
+		<camouflage>
+			<id>1111</id>
+			<texture>vehicles/russian/Camouflage/bp2026_march_1.dds</texture>
+			<description>#vehicle_customization:camouflage/empty/description</description>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<userString>#vehicle_customization:camouflage/bp2026_march_1/label</userString>
+			<tags>fullRGB hiddenInUI</tags>
+			<invisibilityFactor>1</invisibilityFactor>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
+			<tilingSettings>
+				<type>relativewithfactor</type>
+				<factor>2 2</factor>
+				<offset>
+					0.04 -1.2
+					<!--BW_String-->
+				</offset>
+			</tilingSettings>
+			<glossMetallicMap>vehicles/russian/Camouflage/bp2026_march_1_GMM.dds</glossMetallicMap>
+		</camouflage>
+		<camouflage>
+			<id>1104</id>
+			<texture>vehicles/russian/Camouflage/bp2026_march_1_turret.dds</texture>
+			<description>#vehicle_customization:camouflage/empty/description</description>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<userString>#vehicle_customization:camouflage/bp2026_march_1/label</userString>
+			<tags>fullRGB hiddenInUI</tags>
+			<invisibilityFactor>1</invisibilityFactor>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
+			<tilingSettings>
+				<type>relativewithfactor</type>
+				<factor>2 2</factor>
+				<offset>
+					-2.17 -0.11
+					<!--BW_String-->
+				</offset>
+			</tilingSettings>
+			<glossMetallicMap>vehicles/russian/Camouflage/bp2026_march_1_turret_GMM.dds</glossMetallicMap>
+			<rotation>
+				<GUN>1.570796</GUN>
+			</rotation>
+		</camouflage>
+		<camouflage>
+			<id>1105</id>
+			<texture>vehicles/russian/Camouflage/bp2026_march_2.dds</texture>
+			<description>#vehicle_customization:camouflage/empty/description</description>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<userString>#vehicle_customization:camouflage/bp2026_march_2/label</userString>
+			<tags>fullRGB hiddenInUI</tags>
+			<invisibilityFactor>1</invisibilityFactor>
+			<rotation>
+				<HULL>0.589921</HULL>
+				<TURRET>0.589921</TURRET>
+				<GUN>0.589921</GUN>
+			</rotation>
+			<tilingSettings>
+				<type>relativewithfactor</type>
+				<factor>
+					2.17 2.17
+					<!--BW_String-->
+				</factor>
+				<offset>
+					-4.72 -0.9
+					<!--BW_String-->
+				</offset>
+			</tilingSettings>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
+			<tiling>
+				<china:Ch01_Type59>
+					1.23 1.23 0.37 0.25
+					<!--BW_String-->
+				</china:Ch01_Type59>
+				<france:F04_B1>
+					1.05 1.05 -0.03 0.34
+					<!--BW_String-->
+				</france:F04_B1>
+				<france:F64_AMX_50Fosh_155>
+					3.012 3.012 -0.61 0.46
+					<!--BW_String-->
+				</france:F64_AMX_50Fosh_155>
+				<france:F97_ELC_EVEN_90>
+					4.07 4.07 -0.28 0.23
+					<!--BW_String-->
+				</france:F97_ELC_EVEN_90>
+				<france:F108_Panhard_EBR_105>
+					2.26 2.26 -3.3 -0.95
+					<!--BW_String-->
+				</france:F108_Panhard_EBR_105>
+				<france:F114_Projet_4_1>
+					1.2 1.2 0.48 0.21
+					<!--BW_String-->
+				</france:F114_Projet_4_1>
+				<germany:G42_Maus>
+					2.98 2.98 -1.49 -0.8
+					<!--BW_String-->
+				</germany:G42_Maus>
+				<germany:G42_Maus_7x7>
+					2.98 2.98 -1.49 -0.8
+					<!--BW_String-->
+				</germany:G42_Maus_7x7>
+				<germany:G89_Leopard1>
+					2.34 2.34 0.71 0.15
+					<!--BW_String-->
+				</germany:G89_Leopard1>
+				<germany:G92_VK7201>
+					2.16 2.16 -2.71 -0.15
+					<!--BW_String-->
+				</germany:G92_VK7201>
+				<germany:G98_Waffentrager_E100>
+					2.53 2.53 0.69 0
+					<!--BW_String-->
+				</germany:G98_Waffentrager_E100>
+				<germany:G121_Grille_15_L63>
+					5.41 5.41 -1.11 -0.18
+					<!--BW_String-->
+				</germany:G121_Grille_15_L63>
+				<italy:It08_Progetto_M40_mod_65>
+					0.97 0.97 0.39 0.13
+					<!--BW_String-->
+				</italy:It08_Progetto_M40_mod_65>
+				<japan:J20_Type_2605>
+					2.48 2.48 -0.83 0.43
+					<!--BW_String-->
+				</japan:J20_Type_2605>
+				<japan:J28_O_I_100>
+					1.14 1.14 0.19 0.08
+					<!--BW_String-->
+				</japan:J28_O_I_100>
+				<uk:GB45_Achilles_IIC>
+					1.83 1.83 -0.75 -0.28
+					<!--BW_String-->
+				</uk:GB45_Achilles_IIC>
+				<uk:GB63_TOG_II>
+					0.45 0.45 -0.57 -0.15
+					<!--BW_String-->
+				</uk:GB63_TOG_II>
+				<uk:GB83_FV4005>
+					2.51 2.51 0.74 0.77
+					<!--BW_String-->
+				</uk:GB83_FV4005>
+				<uk:GB91_Super_Conqueror>
+					1.24 1.24 1.06 -1.04
+					<!--BW_String-->
+				</uk:GB91_Super_Conqueror>
+				<uk:GB91_Super_Conqueror_7x7>
+					1.24 1.24 1.06 -1.04
+					<!--BW_String-->
+				</uk:GB91_Super_Conqueror_7x7>
+				<usa:A39_T28>
+					1.25 1.25 -4.43 -0.47
+					<!--BW_String-->
+				</usa:A39_T28>
+				<usa:A80_T26_E4_SuperPershing>
+					2.79 2.79 -0.06 0.56
+					<!--BW_String-->
+				</usa:A80_T26_E4_SuperPershing>
+				<usa:A87_M44>
+					4.32 4.32 -0.53 0.79
+					<!--BW_String-->
+				</usa:A87_M44>
+				<usa:A89_T54E1>
+					3.43 3.43 -0.28 0.26
+					<!--BW_String-->
+				</usa:A89_T54E1>
+				<usa:A122_TS-5>
+					3.15 3.15 0.63 -0.14
+					<!--BW_String-->
+				</usa:A122_TS-5>
+				<ussr:R01_IS>
+					3.52 3.52 -0.29 0.36
+					<!--BW_String-->
+				</ussr:R01_IS>
+				<ussr:R11_MS-1>
+					3.4 3.4 0.19 0.09
+					<!--BW_String-->
+				</ussr:R11_MS-1>
+				<ussr:R77_KV2>
+					2.72 2.72 0.1 0.07
+					<!--BW_String-->
+				</ussr:R77_KV2>
+			</tiling>
+		</camouflage>
+		<camouflage>
+			<id>1106</id>
+			<texture>vehicles/russian/Camouflage/bp2026_march_3.dds</texture>
+			<description>#vehicle_customization:camouflage/empty/description</description>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<userString>#vehicle_customization:camouflage/bp2026_march_3/label</userString>
+			<tags>fullRGB hiddenInUI</tags>
+			<invisibilityFactor>1</invisibilityFactor>
+			<rotation>
+				<HULL>0.197397</HULL>
+				<TURRET>0.197397</TURRET>
+				<GUN>0.197397</GUN>
+			</rotation>
+			<tilingSettings>
+				<type>relativewithfactor</type>
+				<factor>
+					2.7 2.7
+					<!--BW_String-->
+				</factor>
+				<offset>
+					-0.05 -1.11
+					<!--BW_String-->
+				</offset>
+			</tilingSettings>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
+			<glossMetallicMap>vehicles/russian/Camouflage/bp2026_march_3_GMM.dds</glossMetallicMap>
+		</camouflage>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:camouflage/opaque</userString>
+		<season>ALL</season>
+		<historical>1</historical>
 		<vehicleFilter>
 			<exclude>
 				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>

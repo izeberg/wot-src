@@ -16629,6 +16629,43 @@
 		<type>INSCRIPTION</type>
 	</itemGroup>
 	<itemGroup>
+		<userString>#vehicle_customization:inscription/special</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>inscriptions 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
+		</vehicleFilter>
+		<decal>
+			<id>1288</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_863.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_863</userString>
+			<mirror>false</mirror>
+		</decal>
+		<decal>
+			<id>1289</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_864.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_864</userString>
+			<mirror>false</mirror>
+		</decal>
+		<decal>
+			<id>1290</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_865.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_865</userString>
+			<mirror>false</mirror>
+		</decal>
+		<decal>
+			<id>1291</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_866.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_866</userString>
+			<mirror>false</mirror>
+		</decal>
+		<name>BattlePass 2026</name>
+		<type>INSCRIPTION</type>
+	</itemGroup>
+	<itemGroup>
 		<name>IGR CN</name>
 		<userString>#vehicle_customization:inscription/IGR</userString>
 		<season>ALL</season>

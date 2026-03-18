@@ -90,6 +90,27 @@ msgstr "天罡宝箱"
 msgid "attachment/Celestial/Cus_112_Celestial_XunLeiChong"
 msgstr "天罡迅雷铳"
 
+msgid "attachment/Mafia_Tommys_story"
+msgstr "四海兄弟: 汤米的故事"
+
+msgid "attachment/Mafia_Tommys_story/Cus_180_BP19_TaxiSign"
+msgstr "开始计费"
+
+msgid "attachment/Mafia_Tommys_story/Cus_181_BP19_TommyGun"
+msgstr "汤米的双枪"
+
+msgid "attachment/Mafia_Tommys_story/Cus_182_BP19_BarSign"
+msgstr "萨列里酒吧招牌"
+
+msgid "attachment/Mafia_Tommys_story/Cus_182_BP19_BarSign/description"
+msgstr "这家家族经营的温馨酒馆——萨列里的酒吧，自1921年起便是小意大利区的心脏。如果您碰巧经过，不妨向酒保路易吉打听一下今日特调。"
+
+msgid "attachment/Mafia_Tommys_story/Cus_183_BP19_MissionKit"
+msgstr "家族补给"
+
+msgid "attachment/Mafia_Tommys_story/Cus_184_BP19_RacingKit"
+msgstr "表面公平"
+
 msgid "attachment/alliance_arsenal"
 msgstr "同盟武器库"
 
@@ -3094,6 +3115,15 @@ msgstr "方位角"
 
 msgid "camouflage/bp2025_s19_usa/label"
 msgstr "电波猎手"
+
+msgid "camouflage/bp2026_march_1/label"
+msgstr "小意大利区"
+
+msgid "camouflage/bp2026_march_2/label"
+msgstr "公平竞争"
+
+msgid "camouflage/bp2026_march_3/label"
+msgstr "失落天堂黑色纪事"
 
 msgid "camouflage/bp8_auction_1_hull/description"
 msgstr "?empty?"
@@ -15849,6 +15879,18 @@ msgstr "驰马迎春"
 msgid "inscription/special/special_862"
 msgstr "马到成功"
 
+msgid "inscription/special/special_863"
+msgstr "投票禁酒"
+
+msgid "inscription/special/special_864"
+msgstr "萨列里的问候"
+
+msgid "inscription/special/special_865"
+msgstr "公事公办"
+
+msgid "inscription/special/special_866"
+msgstr "欢迎来到失落天堂"
+
 msgid "inscription/special/special_90"
 msgstr "2017年总决赛，莫斯科"
 
@@ -19422,11 +19464,29 @@ msgstr "Q版Erwin"
 msgid "projection_decals/special/projection_decal_1044"
 msgstr "趁热打铁"
 
+msgid "projection_decals/special/projection_decal_1046"
+msgstr "汤米·安吉洛卡片"
+
+msgid "projection_decals/special/projection_decal_1047"
+msgstr "萨列里阁下卡片"
+
+msgid "projection_decals/special/projection_decal_1048"
+msgstr "保利·隆巴尔多卡片"
+
+msgid "projection_decals/special/projection_decal_1049"
+msgstr "山姆·特拉帕尼卡片"
+
 msgid "projection_decals/special/projection_decal_105"
 msgstr "重型热狗"
 
 msgid "projection_decals/special/projection_decal_105/description"
 msgstr "我猜这辆狗狗战车是和劳埃德车长和哈利炮手一起来的。"
+
+msgid "projection_decals/special/projection_decal_1050"
+msgstr "神秘狐狸"
+
+msgid "projection_decals/special/projection_decal_1051"
+msgstr "家乡"
 
 msgid "projection_decals/special/projection_decal_106"
 msgstr "这是卡尔，卡尔！"
@@ -28052,6 +28112,44 @@ msgid "special_style/bp2025_s19_usa_desc/long"
 msgstr ""
 "\"我不知道我们在这里会发现什么，但我已经掌握了我需要的所有情报: "
 "有一个信号，我们来这里就是为了追踪它。装备很可靠，地形就不那么友好了，天气也在尽力把一切掩埋。但这都是工作的一部分。我在更糟的环境下工作过，我愿将生命托付给我的团队...但愿别到那一步。无论如何，不管那里有谁，他们都在和某人通信——在查明真相之前，我们不能回家。\""
+
+msgid "special_style/bp2026_march_1"
+msgstr "小意大利区"
+
+msgid "special_style/bp2026_march_1_desc"
+msgstr "应用这款全地形风格，使您的坦克融入萨列里的街区。"
+
+msgid "special_style/bp2026_march_1_desc/long"
+msgstr ""
+"小意大利区的街巷狭窄，两侧是被煤烟熏得发黑的砖楼，窗户后总是笼着一层淡淡的烟雾。阳台之间拉起的晾衣绳上，衣物随风摇晃，空气里飘着若有若无的番茄酱香气。在这里，今天与您闲聊碰杯、共饮\"斯威夫特可乐\"的人，明日或许就会从暗处朝你开枪。要是这些墙会说话，定有讲不完的故事——但它们绝不会出卖那些在阴影角落里谈生意的\"勤劳商人\"。"
+
+msgid "special_style/bp2026_march_2"
+msgstr "公平竞争"
+
+msgid "special_style/bp2026_march_2_desc"
+msgstr "换上这款热血沸腾的全地形风格，驾驭失落天堂国际汽车大奖赛的狂野速度。"
+
+msgid "special_style/bp2026_march_2_desc/long"
+msgstr ""
+"\"见证地球上最快的赛车手！感受他们在终点直道上冲刺时的轰鸣！体验前所未有的速度！\"\n"
+"\n"
+"1932年9月4日，一个美丽的周日早晨，天空晴朗，赛车已在发车格上就位，失落天堂国际汽车大奖赛即将开始。\n"
+"\n"
+"但有一个问题。萨列里阁下的司机米奇·邓恩在最后一刻神秘受伤。时间紧迫，汤米·安吉洛被召来顶替——并击败由莫雷洛支持的欧洲热门车手利希滕贝格。然而，汤米不知道的是，即使他赢得了比赛，家族纷争才刚刚拉开序幕..."
+
+msgid "special_style/bp2026_march_3"
+msgstr "失落天堂黑色纪事"
+
+msgid "special_style/bp2026_march_3_desc"
+msgstr "换上这款充满氛围的全地形风格，代萨列里阁下向所有得罪您的人\"问好\"。"
+
+msgid "special_style/bp2026_march_3_desc/long"
+msgstr ""
+"\"也许我本该趁机离开。但我不能再变回无名小卒。\n"
+"\n"
+"失落天堂的日子不好过。大萧条时期，无人幸免。每个人都想尽办法谋生，但正当工作却一职难求——而禁酒令则让这座城市的地下暗黑世界变成了那些愿意铤而走险之人的机遇之地。\n"
+"\n"
+"汤米·安吉洛从未想过自己会过上这样的生活，但为萨列里阁下工作不仅报酬丰厚，还能让他出人头地。唯一的问题是: 他最终将为此付出什么代价？"
 
 msgid "special_style/bp8_auction_1"
 msgstr "帝皇怒火"
