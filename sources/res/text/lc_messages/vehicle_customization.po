@@ -96,6 +96,30 @@ msgstr "Celestial Chest"
 msgid "attachment/Celestial/Cus_112_Celestial_XunLeiChong"
 msgstr "Celestial XunLeiChong"
 
+msgid "attachment/Mafia_Tommys_story"
+msgstr "Mafia: Tommy's Story"
+
+msgid "attachment/Mafia_Tommys_story/Cus_180_BP19_TaxiSign"
+msgstr "Meter's Running"
+
+msgid "attachment/Mafia_Tommys_story/Cus_181_BP19_TommyGun"
+msgstr "Tommy Guns"
+
+msgid "attachment/Mafia_Tommys_story/Cus_182_BP19_BarSign"
+msgstr "Salieri's Bar Sign"
+
+msgid "attachment/Mafia_Tommys_story/Cus_182_BP19_BarSign/description"
+msgstr ""
+"A charming family-run establishment, Salieri's has been the heart of Little "
+"Italy since 1921. If you're in the neighborhood, make sure to ask bartender "
+"Luigi about the specials of the day."
+
+msgid "attachment/Mafia_Tommys_story/Cus_183_BP19_MissionKit"
+msgstr "Family Supplies"
+
+msgid "attachment/Mafia_Tommys_story/Cus_184_BP19_RacingKit"
+msgstr "Hard \"Fair Play\""
+
 msgid "attachment/alliance_arsenal"
 msgstr "Alliance Arsenal"
 
@@ -3341,6 +3365,15 @@ msgstr "Azimuth"
 
 msgid "camouflage/bp2025_s19_usa/label"
 msgstr "Ham Spirit"
+
+msgid "camouflage/bp2026_march_1/label"
+msgstr "Little Italy"
+
+msgid "camouflage/bp2026_march_2/label"
+msgstr "Fair Play"
+
+msgid "camouflage/bp2026_march_3/label"
+msgstr "Lost Heaven Noir"
 
 msgid "camouflage/bp8_auction_1_hull/description"
 msgstr "?empty?"
@@ -16723,6 +16756,18 @@ msgstr "Galloping Horses Banner"
 msgid "inscription/special/special_862"
 msgstr "Auspicious Banner"
 
+msgid "inscription/special/special_863"
+msgstr "Voted Dry"
+
+msgid "inscription/special/special_864"
+msgstr "Salieri's Regards"
+
+msgid "inscription/special/special_865"
+msgstr "Just Business"
+
+msgid "inscription/special/special_866"
+msgstr "Welcome to Lost Heaven"
+
 msgid "inscription/special/special_90"
 msgstr "Grand Finals 2017, Moscow"
 
@@ -20656,11 +20701,29 @@ msgstr "Chibi-Erwin"
 msgid "projection_decals/special/projection_decal_1044"
 msgstr "Anvil Strike"
 
+msgid "projection_decals/special/projection_decal_1046"
+msgstr "Tommy Angelo Card"
+
+msgid "projection_decals/special/projection_decal_1047"
+msgstr "Don Salieri Card"
+
+msgid "projection_decals/special/projection_decal_1048"
+msgstr "Paulie Lombardo Card"
+
+msgid "projection_decals/special/projection_decal_1049"
+msgstr "Sam Trapani Card"
+
 msgid "projection_decals/special/projection_decal_105"
 msgstr "DOG-II*"
 
 msgid "projection_decals/special/projection_decal_105/description"
 msgstr "I guess this dog van comes with commander Lloyd and Harry the gunner."
+
+msgid "projection_decals/special/projection_decal_1050"
+msgstr "Mystery Fox"
+
+msgid "projection_decals/special/projection_decal_1051"
+msgstr "Old Country"
 
 msgid "projection_decals/special/projection_decal_106"
 msgstr "It's Karl, Karl!"
@@ -31122,6 +31185,57 @@ msgstr ""
 "with my life... but let's hope it doesn't come to that. In any case, "
 "whoever's out there, they're talking to someone—and we can't go home until "
 "we find out who.\""
+
+msgid "special_style/bp2026_march_1"
+msgstr "Little Italy"
+
+msgid "special_style/bp2026_march_1_desc"
+msgstr ""
+"Don this all-season style to suit up your vehicle for Salieri's "
+"neighborhood."
+
+msgid "special_style/bp2026_march_1_desc/long"
+msgstr ""
+"The streets of Little Italy are narrow, lined with soot-stained brick "
+"buildings whose windows are perpetually hazed with smoke. Laundry swings "
+"overhead from clotheslines strung between balconies, carrying the faint "
+"scent of tomato sauce. Around here, the man you're shooting the breeze with "
+"over a Swift Cola one day might be the one shooting you in the back the "
+"next. If those walls could talk, they'd have plenty to say—but they would "
+"never rat out the hardworking businessmen who make their deals in the "
+"shadowed corners."
+
+msgid "special_style/bp2026_march_2"
+msgstr "Fair Play"
+
+msgid "special_style/bp2026_march_2_desc"
+msgstr ""
+"Harness the raw speed of the Lost Heaven Grand Prix in this high-octane all-"
+"season style."
+
+msgid "special_style/bp2026_march_2_desc/long"
+msgstr ""
+"\"See the fastest racers on Earth! Feel the rumble as they head up the home straight! Experience speed like never before!\"\n"
+"\n"
+"September 4th, 1932. A beautiful Sunday morning. The skies are clear, the motors are on the grid, and the Lost Heaven Grand Prix is about to begin.\n"
+"\n"
+"There's just one problem. The Don's driver, Mikey Dunne, has suffered a mysterious last-minute injury. With no time to spare, Tommy Angelo is called to take the wheel—and beat the European hotshot Lichtenberg, backed by Morello. What Tommy doesn't know, though, is that even if he wins the race, the war is just beginning..."
+
+msgid "special_style/bp2026_march_3"
+msgstr "Lost Heaven Noir"
+
+msgid "special_style/bp2026_march_3_desc"
+msgstr ""
+"Deliver Don Salieri's regards to all who wrong you in this atmospheric all-"
+"season style."
+
+msgid "special_style/bp2026_march_3_desc/long"
+msgstr ""
+"\"Maybe I should have taken off when I had the chance. But I couldn't go back to being a nobody.\"\n"
+"\n"
+"Times are hard in Lost Heaven. The Great Depression has spared no one. Everybody's just trying to get by any way they can, but honest work is hard to come by—while Prohibition has turned the city's criminal underworld into a land of opportunity for those willing to get their hands dirty.\n"
+"\n"
+"Tommy Angelo never imagined himself living a life like this, but working for Don Salieri pays handsomely and promises a path out of obscurity. The only question is: what will it cost him in the end?"
 
 msgid "special_style/bp8_auction_1"
 msgstr "Emperor's Wrath"
