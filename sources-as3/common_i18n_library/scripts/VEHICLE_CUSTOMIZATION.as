@@ -4491,6 +4491,12 @@ package
       
       public static const CAMOUFLAGE_ST_PATRICKS_DAY_2026_LABEL:String = "#vehicle_customization:camouflage/st_patricks_day_2026/label";
       
+      public static const CAMOUFLAGE_BP2026_MARCH_1_LABEL:String = "#vehicle_customization:camouflage/bp2026_march_1/label";
+      
+      public static const CAMOUFLAGE_BP2026_MARCH_2_LABEL:String = "#vehicle_customization:camouflage/bp2026_march_2/label";
+      
+      public static const CAMOUFLAGE_BP2026_MARCH_3_LABEL:String = "#vehicle_customization:camouflage/bp2026_march_3/label";
+      
       public static const EMBLEM:String = "#vehicle_customization:emblem";
       
       public static const EMBLEM_CLAN_CONTENT:String = "#vehicle_customization:emblem/clan_content";
@@ -8686,6 +8692,14 @@ package
       public static const INSCRIPTION_SPECIAL_SPECIAL_861:String = "#vehicle_customization:inscription/special/special_861";
       
       public static const INSCRIPTION_SPECIAL_SPECIAL_862:String = "#vehicle_customization:inscription/special/special_862";
+      
+      public static const INSCRIPTION_SPECIAL_SPECIAL_863:String = "#vehicle_customization:inscription/special/special_863";
+      
+      public static const INSCRIPTION_SPECIAL_SPECIAL_864:String = "#vehicle_customization:inscription/special/special_864";
+      
+      public static const INSCRIPTION_SPECIAL_SPECIAL_865:String = "#vehicle_customization:inscription/special/special_865";
+      
+      public static const INSCRIPTION_SPECIAL_SPECIAL_866:String = "#vehicle_customization:inscription/special/special_866";
       
       public static const ITEM_EMBLEM1:String = "#vehicle_customization:item/emblem1";
       
@@ -15751,6 +15765,24 @@ package
       
       public static const SPECIAL_STYLE_ST_PATRICKS_DAY_2026_DESC_LONG:String = "#vehicle_customization:special_style/st_patricks_day_2026_desc/long";
       
+      public static const SPECIAL_STYLE_BP2026_MARCH_1:String = "#vehicle_customization:special_style/bp2026_march_1";
+      
+      public static const SPECIAL_STYLE_BP2026_MARCH_1_DESC:String = "#vehicle_customization:special_style/bp2026_march_1_desc";
+      
+      public static const SPECIAL_STYLE_BP2026_MARCH_1_DESC_LONG:String = "#vehicle_customization:special_style/bp2026_march_1_desc/long";
+      
+      public static const SPECIAL_STYLE_BP2026_MARCH_2:String = "#vehicle_customization:special_style/bp2026_march_2";
+      
+      public static const SPECIAL_STYLE_BP2026_MARCH_2_DESC:String = "#vehicle_customization:special_style/bp2026_march_2_desc";
+      
+      public static const SPECIAL_STYLE_BP2026_MARCH_2_DESC_LONG:String = "#vehicle_customization:special_style/bp2026_march_2_desc/long";
+      
+      public static const SPECIAL_STYLE_BP2026_MARCH_3:String = "#vehicle_customization:special_style/bp2026_march_3";
+      
+      public static const SPECIAL_STYLE_BP2026_MARCH_3_DESC:String = "#vehicle_customization:special_style/bp2026_march_3_desc";
+      
+      public static const SPECIAL_STYLE_BP2026_MARCH_3_DESC_LONG:String = "#vehicle_customization:special_style/bp2026_march_3_desc/long";
+      
       public static const CUSTOMIZATION_POPOVER_STYLE_SUMMER:String = "#vehicle_customization:customization/popover/style/summer";
       
       public static const CUSTOMIZATION_POPOVER_STYLE_DESERT:String = "#vehicle_customization:customization/popover/style/desert";
@@ -19061,6 +19093,18 @@ package
       
       public static const PROJECTION_DECALS_SPECIAL_PROJECTION_DECAL_1044:String = "#vehicle_customization:projection_decals/special/projection_decal_1044";
       
+      public static const PROJECTION_DECALS_SPECIAL_PROJECTION_DECAL_1046:String = "#vehicle_customization:projection_decals/special/projection_decal_1046";
+      
+      public static const PROJECTION_DECALS_SPECIAL_PROJECTION_DECAL_1047:String = "#vehicle_customization:projection_decals/special/projection_decal_1047";
+      
+      public static const PROJECTION_DECALS_SPECIAL_PROJECTION_DECAL_1048:String = "#vehicle_customization:projection_decals/special/projection_decal_1048";
+      
+      public static const PROJECTION_DECALS_SPECIAL_PROJECTION_DECAL_1049:String = "#vehicle_customization:projection_decals/special/projection_decal_1049";
+      
+      public static const PROJECTION_DECALS_SPECIAL_PROJECTION_DECAL_1050:String = "#vehicle_customization:projection_decals/special/projection_decal_1050";
+      
+      public static const PROJECTION_DECALS_SPECIAL_PROJECTION_DECAL_1051:String = "#vehicle_customization:projection_decals/special/projection_decal_1051";
+      
       public static const ATTACHMENT_GENERAL:String = "#vehicle_customization:attachment/general";
       
       public static const ATTACHMENT_TEST:String = "#vehicle_customization:attachment/test";
@@ -19506,6 +19550,20 @@ package
       public static const ATTACHMENT_TANK_LADS_CUS_188_SP_WELDERS_DESCRIPTION:String = "#vehicle_customization:attachment/tank_lads/Cus_188_SP_Welders/description";
       
       public static const ATTACHMENT_TANK_LADS_CUS_189_SP_ENGINEER:String = "#vehicle_customization:attachment/tank_lads/Cus_189_SP_Engineer";
+      
+      public static const ATTACHMENT_MAFIA_TOMMYS_STORY:String = "#vehicle_customization:attachment/Mafia_Tommys_story";
+      
+      public static const ATTACHMENT_MAFIA_TOMMYS_STORY_CUS_180_BP19_TAXISIGN:String = "#vehicle_customization:attachment/Mafia_Tommys_story/Cus_180_BP19_TaxiSign";
+      
+      public static const ATTACHMENT_MAFIA_TOMMYS_STORY_CUS_181_BP19_TOMMYGUN:String = "#vehicle_customization:attachment/Mafia_Tommys_story/Cus_181_BP19_TommyGun";
+      
+      public static const ATTACHMENT_MAFIA_TOMMYS_STORY_CUS_182_BP19_BARSIGN:String = "#vehicle_customization:attachment/Mafia_Tommys_story/Cus_182_BP19_BarSign";
+      
+      public static const ATTACHMENT_MAFIA_TOMMYS_STORY_CUS_182_BP19_BARSIGN_DESCRIPTION:String = "#vehicle_customization:attachment/Mafia_Tommys_story/Cus_182_BP19_BarSign/description";
+      
+      public static const ATTACHMENT_MAFIA_TOMMYS_STORY_CUS_183_BP19_MISSIONKIT:String = "#vehicle_customization:attachment/Mafia_Tommys_story/Cus_183_BP19_MissionKit";
+      
+      public static const ATTACHMENT_MAFIA_TOMMYS_STORY_CUS_184_BP19_RACINGKIT:String = "#vehicle_customization:attachment/Mafia_Tommys_story/Cus_184_BP19_RacingKit";
       
       public static const SPECIAL_STYLE_HIGH_VOLTAGE_EQUIPMENT:String = "#vehicle_customization:special_style/High_Voltage_Equipment";
       
