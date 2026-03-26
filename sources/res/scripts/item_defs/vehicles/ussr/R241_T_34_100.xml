@@ -1096,11 +1096,11 @@
 			<rotationSpeed>40</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
-					0.2
+					0.16
 					<!--BW_String-->
 				</vehicleMovement>
 				<vehicleRotation>
-					0.2
+					0.16
 					<!--BW_String-->
 				</vehicleRotation>
 			</shotDispersionFactors>
@@ -3183,16 +3183,16 @@
 						<gun>40</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.36
+						0.4
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						8.0
+						7.712
 						<!--BW_String-->
 					</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.16
+							0.12
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>

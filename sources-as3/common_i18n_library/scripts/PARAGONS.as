@@ -700,6 +700,10 @@ package
       public static const CAROUSEL_TOOLTIPS_POINTS_DESCRIPTION:String = "#paragons:carousel/tooltips/points/description";
       
       public static const CAROUSEL_TOOLTIPS_POINTS_ADDITIONALDESCRIPTION:String = "#paragons:carousel/tooltips/points/additionalDescription";
+      
+      public static const BANNER_TITLE:String = "#paragons:banner/title";
+      
+      public static const BANNER_SUBTITLE:String = "#paragons:banner/subTitle";
        
       
       public function PARAGONS()

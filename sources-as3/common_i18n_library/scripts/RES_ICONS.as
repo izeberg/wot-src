@@ -20509,6 +20509,42 @@ package
       
       public static const MAPS_ICONS_PARAGONS_BACKGROUNDS_WITH_ICON_BACKGROUND:String = "../maps/icons/paragons/backgrounds/with_icon_background.png";
       
+      public static const MAPS_ICONS_PARAGONS_BANNER_BACK_BIG:String = "../maps/icons/paragons/banner/back_big.png";
+      
+      public static const MAPS_ICONS_PARAGONS_BANNER_BACK_THINEXTRASMALL:String = "../maps/icons/paragons/banner/back_thinExtraSmall.png";
+      
+      public static const MAPS_ICONS_PARAGONS_BANNER_BACK_THINSMALL:String = "../maps/icons/paragons/banner/back_thinSmall.png";
+      
+      public static const MAPS_ICONS_PARAGONS_BANNER_BACK_WIDESMALL:String = "../maps/icons/paragons/banner/back_wideSmall.png";
+      
+      public static const MAPS_ICONS_PARAGONS_BANNER_HIGHLIGHT_BIG:String = "../maps/icons/paragons/banner/highlight_big.png";
+      
+      public static const MAPS_ICONS_PARAGONS_BANNER_HIGHLIGHT_THINEXTRASMALL:String = "../maps/icons/paragons/banner/highlight_thinExtraSmall.png";
+      
+      public static const MAPS_ICONS_PARAGONS_BANNER_HIGHLIGHT_THINSMALL:String = "../maps/icons/paragons/banner/highlight_thinSmall.png";
+      
+      public static const MAPS_ICONS_PARAGONS_BANNER_HIGHLIGHT_WIDESMALL:String = "../maps/icons/paragons/banner/highlight_wideSmall.png";
+      
+      public static const MAPS_ICONS_PARAGONS_BANNER_HOVER_BIG:String = "../maps/icons/paragons/banner/hover_big.png";
+      
+      public static const MAPS_ICONS_PARAGONS_BANNER_HOVER_THINEXTRASMALL:String = "../maps/icons/paragons/banner/hover_thinExtraSmall.png";
+      
+      public static const MAPS_ICONS_PARAGONS_BANNER_HOVER_THINSMALL:String = "../maps/icons/paragons/banner/hover_thinSmall.png";
+      
+      public static const MAPS_ICONS_PARAGONS_BANNER_HOVER_WIDESMALL:String = "../maps/icons/paragons/banner/hover_wideSmall.png";
+      
+      public static const MAPS_ICONS_PARAGONS_BANNER_STROKE_BIG:String = "../maps/icons/paragons/banner/stroke_big.png";
+      
+      public static const MAPS_ICONS_PARAGONS_BANNER_STROKE_THINEXTRASMALL:String = "../maps/icons/paragons/banner/stroke_thinExtraSmall.png";
+      
+      public static const MAPS_ICONS_PARAGONS_BANNER_STROKE_THINSMALL:String = "../maps/icons/paragons/banner/stroke_thinSmall.png";
+      
+      public static const MAPS_ICONS_PARAGONS_BANNER_STROKE_WIDESMALL:String = "../maps/icons/paragons/banner/stroke_wideSmall.png";
+      
+      public static const MAPS_ICONS_PARAGONS_BANNER_SEQUENCE_SPARKS_HOVER_0:String = "../maps/icons/paragons/banner/sequence/sparks_hover_0.png";
+      
+      public static const MAPS_ICONS_PARAGONS_BANNER_SEQUENCE_SPARKS_NORMAL_0:String = "../maps/icons/paragons/banner/sequence/sparks_normal_0.png";
+      
       public static const MAPS_ICONS_PARAGONS_INTRO_ARROW:String = "../maps/icons/paragons/intro/arrow.png";
       
       public static const MAPS_ICONS_PARAGONS_INTRO_CARD_FIRST:String = "../maps/icons/paragons/intro/Card_first.png";

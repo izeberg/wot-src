@@ -11,8 +11,8 @@
 	<postProgressionTree>role_ATSPG_support</postProgressionTree>
 	<customRoleSlotOptions>3 5</customRoleSlotOptions>
 	<speedLimits>
-		<forward>60</forward>
-		<backward>20</backward>
+		<forward>55</forward>
+		<backward>15</backward>
 	</speedLimits>
 	<invisibility>
 		<moving>
@@ -1199,7 +1199,7 @@
 			</terrainResistance>
 			<brakeForce>41000</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>30</rotationSpeed>
+			<rotationSpeed>26</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.16
@@ -2431,7 +2431,7 @@
 			<primaryArmor>armor_15 armor_16 armor_17</primaryArmor>
 			<weight>8500</weight>
 			<maxHealth>370</maxHealth>
-			<rotationSpeed>26</rotationSpeed>
+			<rotationSpeed>20</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>100</maxHealth>
 				<maxRegenHealth>50</maxRegenHealth>
@@ -2483,10 +2483,7 @@
 					</pitchLimits>
 					<clip>
 						<count>3</count>
-						<rate>
-							13.33
-							<!--BW_String-->
-						</rate>
+						<rate>12</rate>
 					</clip>
 					<shotDispersionRadius>
 						0.42
@@ -3262,7 +3259,7 @@
 			<engines>
 				<Hispano_Suiza_HS12_GS>
 					<smplEnginePower>830</smplEnginePower>
-					<smplFwMaxSpeed>60</smplFwMaxSpeed>
+					<smplFwMaxSpeed>55</smplFwMaxSpeed>
 				</Hispano_Suiza_HS12_GS>
 			</engines>
 			<chassis>

@@ -1208,6 +1208,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.hangar.eventEntryPoint.gfWrapper.FunRandomEntryPoint;
    import net.wg.gui.lobby.hangar.eventEntryPoint.gfWrapper.MapBoxEntryPoint;
    import net.wg.gui.lobby.hangar.eventEntryPoint.gfWrapper.MarathonEntryPoint;
+   import net.wg.gui.lobby.hangar.eventEntryPoint.gfWrapper.ParagonsBannerEntryPoint;
    import net.wg.gui.lobby.hangar.eventEntryPoint.gfWrapper.RankedEntryPoint;
    import net.wg.gui.lobby.hangar.eventEntryPoint.gfWrapper.ResizableEntryPoint;
    import net.wg.gui.lobby.hangar.eventEntryPoint.gfWrapper.ShopSalesEntryPoint;
@@ -5468,6 +5469,8 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_LOBBY_HANGAR_EVENTENTRYPOINT_GFWRAPPER_MAPBOXENTRYPOINT:Class = MapBoxEntryPoint;
       
       public static const NET_WG_GUI_LOBBY_HANGAR_EVENTENTRYPOINT_GFWRAPPER_MARATHONENTRYPOINT:Class = MarathonEntryPoint;
+      
+      public static const NET_WG_GUI_LOBBY_HANGAR_EVENTENTRYPOINT_GFWRAPPER_PARAGONSBANNERENTRYPOINT:Class = ParagonsBannerEntryPoint;
       
       public static const NET_WG_GUI_LOBBY_HANGAR_EVENTENTRYPOINT_GFWRAPPER_RANKEDENTRYPOINT:Class = RankedEntryPoint;
       

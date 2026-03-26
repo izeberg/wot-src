@@ -3024,10 +3024,13 @@
 						</maxPitch>
 					</pitchLimits>
 					<shotDispersionRadius>
-						0.38
+						0.4
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>12</reloadTime>
+					<reloadTime>
+						11.5
+						<!--BW_String-->
+					</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
 							0.08

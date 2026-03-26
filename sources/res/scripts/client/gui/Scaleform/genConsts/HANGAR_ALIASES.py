@@ -92,3 +92,4 @@ class HANGAR_ALIASES(object):
     WINBACK_WIDGET = 'WinbackWidget'
     BIRTHDAY_BANNER_ENTRY_POINT = 'BirthdayBannerEntryPoint'
     BLACK_MARKET_ENTRY_POINT = 'BlackMarketEntryPoint'
+    PARAGONS_BANNER_ENTRY_POINT = 'ParagonsBannerEntryPoint'

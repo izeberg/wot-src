@@ -2194,8 +2194,9 @@ msgstr ""
 
 msgid "extraParams/name/abilityCooldownBonus"
 msgstr ""
-"Параметр, отвечающий за уменьшение времени перезарядки модификации при "
-"успешном уничтожении техники противника во время действия модификации."
+"Параметр, отвечающий за уменьшение времени перезарядки модификации "
+"при успешном уничтожении техники противника тараном во время действия "
+"модификации."
 
 msgid "extraParams/name/abilityDurationBonus"
 msgstr ""
@@ -4509,7 +4510,7 @@ msgid "login/updateURLAvaialbleAt"
 msgstr "Требуется обновление клиентского приложения (%s)."
 
 msgid "login/version"
-msgstr "Мир танков"
+msgstr "«Мир танков»"
 
 msgid "mapBlackList/timeLeftShort/days"
 msgstr "%(day)s д."

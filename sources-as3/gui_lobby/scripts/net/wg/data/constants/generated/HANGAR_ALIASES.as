@@ -184,6 +184,8 @@ package net.wg.data.constants.generated
       public static const BIRTHDAY_BANNER_ENTRY_POINT:String = "BirthdayBannerEntryPoint";
       
       public static const BLACK_MARKET_ENTRY_POINT:String = "BlackMarketEntryPoint";
+      
+      public static const PARAGONS_BANNER_ENTRY_POINT:String = "ParagonsBannerEntryPoint";
        
       
       public function HANGAR_ALIASES()
