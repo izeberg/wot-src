@@ -17774,6 +17774,25 @@
 		<type>INSCRIPTION</type>
 	</itemGroup>
 	<itemGroup>
+		<userString>#vehicle_customization:inscription/special</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>inscriptions 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
+		</vehicleFilter>
+		<decal>
+			<id>1292</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_867.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_867</userString>
+			<mirror>false</mirror>
+		</decal>
+		<name>Beaver Fun</name>
+		<type>INSCRIPTION</type>
+	</itemGroup>
+	<itemGroup>
 		<userString>#vehicle_customization:inscription/IGR</userString>
 		<season>ALL</season>
 		<historical>1</historical>
