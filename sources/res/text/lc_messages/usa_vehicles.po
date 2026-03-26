@@ -2090,6 +2090,32 @@ msgstr "AHT-7"
 msgid "A194_AHT_7_short_special"
 msgstr "Огромный урон за выстрел, резервная гусеница"
 
+msgid "A195_Gorilla"
+msgstr "Gorilla"
+
+msgid "A195_Gorilla_descr"
+msgstr ""
+"В конце 1960-х годов в США работали над созданием защищённой противотанковой"
+" САУ с орудиями повышенной энергетики для борьбы с перспективными танками "
+"противника. В качестве основного вооружения рассматривались "
+"высокоэнергетические пушки калибра 155 и 165 мм, а для повышения точности "
+"стрельбы предполагалась установка радиолокационного и дублирующего его "
+"оптического дальномера. Для лучшей защиты от кумулятивных боеприпасов на "
+"корпусе и башне машины должны были быть сварные решётки. В результате "
+"перспективный проект оказался слишком сложным и дорогим, поэтому от него "
+"отказались."
+
+msgid "A195_Gorilla_long_special"
+msgstr ""
+"У Gorilla такая же определяющая черта, как и у предшественников: вращающаяся"
+" башня с неплохим бронированием. Это делает ПТ-САУ более универсальной и "
+"позволяет эффективно действовать на разных позициях и дистанциях, а "
+"новаторский механизм частичной зарядки не даёт ей остаться без выстрела в "
+"нужный момент."
+
+msgid "A195_Gorilla_short"
+msgstr "Gorilla"
+
 msgid "A21_T14_long_special"
 msgstr ""
 "Американский тяжёлый танк V уровня. Обладает наклонной лобовой бронёй, "
@@ -2370,6 +2396,19 @@ msgstr ""
 
 msgid "A67_T57_58"
 msgstr "T57 Heavy"
+
+msgid "A67_T57_58_7x7"
+msgstr "T57 Heavy 7x7"
+
+msgid "A67_T57_58_7x7_descr"
+msgstr ""
+"Проект тяжёлого танка с качающейся башней и автоматом заряжания. "
+"Разрабатывался с 1951 года. К 1957 году были изготовлены опытные башни под "
+"120-мм и 155-мм орудия, однако программа создания таких машин была признана "
+"бесперспективной, и все работы были свёрнуты."
+
+msgid "A67_T57_58_7x7_short"
+msgstr "T57 7x7"
 
 msgid "A67_T57_58_descr"
 msgstr ""
@@ -2732,11 +2771,17 @@ msgstr "AN/VRC-12/9B"
 msgid "AN_VRC_3B"
 msgstr "AN/VRC-3B"
 
+msgid "AN_VRC_3G"
+msgstr "AN/VRC-3G"
+
 msgid "AN_VRC_3H"
 msgstr "AN/VRC-3H"
 
 msgid "AN_VRC_3I"
 msgstr "AN/VRC-3I"
+
+msgid "AN_VRC_3_57_58_7x7"
+msgstr "AN/VRC-3"
 
 msgid "AN_VRC_3_XM"
 msgstr "AN/VRC-3XM"
@@ -3150,6 +3195,9 @@ msgstr "Sherman Firefly Saunders"
 msgid "Chassis_A194_AHT_7"
 msgstr "AHT-7"
 
+msgid "Chassis_A195_Gorilla"
+msgstr "Gorilla"
+
 msgid "Chassis_A22_M5_Stuart"
 msgstr "M5 Stuart"
 
@@ -3253,6 +3301,9 @@ msgid "Chassis_A66_M103_2"
 msgstr "M103"
 
 msgid "Chassis_A67_T57_58"
+msgstr "T57 Heavy"
+
+msgid "Chassis_A67_T57_58_7x7"
 msgstr "T57 Heavy"
 
 msgid "Chassis_A68_T28_Prototype"
@@ -3947,6 +3998,14 @@ msgstr ""
 msgid "Continental_AV_1790_5C"
 msgstr "Continental AV-1790-5C"
 
+msgid "Continental_AV_1790_5C_7x7"
+msgstr "Continental AV-1790-5S"
+
+msgid "Continental_AV_1790_5C_7x7_short"
+msgstr ""
+"Continental\n"
+"AV-1790-5S"
+
 msgid "Continental_AV_1790_5C_Rush_Ep1"
 msgstr "Continental AV-1790-5S"
 
@@ -3959,6 +4018,14 @@ msgid "Continental_AV_1790_5C_short"
 msgstr ""
 "Continental\n"
 "AV-1790-5C"
+
+msgid "Continental_AV_1790_5G"
+msgstr "Continental AV-1790-5G"
+
+msgid "Continental_AV_1790_5G_short"
+msgstr ""
+"Continental\n"
+"AV-1790-5G"
 
 msgid "Continental_AV_1790_7"
 msgstr "Continental AV-1790-7"
@@ -5282,6 +5349,9 @@ msgstr "Sherman Firefly Saunders"
 msgid "Turret_1_A194_AHT_7"
 msgstr "AHT-7"
 
+msgid "Turret_1_A195_Gorilla"
+msgstr "Gorilla"
+
 msgid "Turret_1_A22_M5_Stuart"
 msgstr "M5 Stuart"
 
@@ -5334,6 +5404,9 @@ msgid "Turret_1_A66_M103"
 msgstr "T43"
 
 msgid "Turret_1_A67_T57_58"
+msgstr "T57 Heavy"
+
+msgid "Turret_1_A67_T57_58_7x7"
 msgstr "T57 Heavy"
 
 msgid "Turret_1_A68_T28_Prototype"
@@ -6252,6 +6325,9 @@ msgstr "AP M358 (M-VI-Y)"
 msgid "_120mm_AP_M358_T57"
 msgstr "AP M358 (T57)"
 
+msgid "_120mm_AP_M358_T57_7x7"
+msgstr "AP M358 (T57)"
+
 msgid "_120mm_AP_T117E8"
 msgstr "AP T117E8"
 
@@ -6351,6 +6427,9 @@ msgstr "120 mm Gun T124"
 msgid "_120mm_Gun_T179"
 msgstr "120 mm Gun T179"
 
+msgid "_120mm_Gun_T179_7x7"
+msgstr "120 mm Gun T179S"
+
 msgid "_120mm_Gun_T179_M169"
 msgstr "120 mm Gun T179 in Mount 169"
 
@@ -6400,6 +6479,9 @@ msgid "_120mm_HEAT_M469_T122"
 msgstr "HEAT M469 (T122)"
 
 msgid "_120mm_HEAT_M469_T57"
+msgstr "HEAT M469 (T57)"
+
+msgid "_120mm_HEAT_M469_T57_7x7"
 msgstr "HEAT M469 (T57)"
 
 msgid "_120mm_HEAT_M830"
@@ -6460,6 +6542,9 @@ msgid "_120mm_HE_T15E3_T122"
 msgstr "HE T15E3 (T122)"
 
 msgid "_120mm_HE_T15E3_T57"
+msgstr "HE T15E3 (T57)"
+
+msgid "_120mm_HE_T15E3_T57_7x7"
 msgstr "HE T15E3 (T57)"
 
 msgid "_120mm_HE_T15E8"
@@ -6552,6 +6637,9 @@ msgstr "APCR M112E3"
 msgid "_155mm_APCR_M112_T95"
 msgstr "APCR M112 (T95)"
 
+msgid "_155mm_APCR_MPCS"
+msgstr "APCR MPCS"
+
 msgid "_155mm_AP_M111"
 msgstr "AP M111"
 
@@ -6599,6 +6687,9 @@ msgstr "AP M112 (M53)"
 
 msgid "_155mm_AP_M112_XM57"
 msgstr "APCR M112 XM57"
+
+msgid "_155mm_AP_MPCS"
+msgstr "AP MPCS"
 
 msgid "_155mm_AT_Gun_T7"
 msgstr "155 mm AT Gun T7"
@@ -6705,6 +6796,9 @@ msgstr "HE M107 (M1)"
 msgid "_155mm_HE_M107_M41"
 msgstr "HE M107 (M41)"
 
+msgid "_155mm_HE_MPCS"
+msgstr "HE MPCS"
+
 msgid "_155mm_Howitzer_M1"
 msgstr "155 mm Howitzer M1"
 
@@ -6713,6 +6807,9 @@ msgstr "155 mm Howitzer M1 (M41)"
 
 msgid "_155mm_Howitzer_M45"
 msgstr "155 mm Howitzer M45"
+
+msgid "_155mm_MPCS_SEG"
+msgstr "155 mm MPCS SEG"
 
 msgid "_165_1mm_HEAT_M623E1"
 msgstr "HEAT M623E1"

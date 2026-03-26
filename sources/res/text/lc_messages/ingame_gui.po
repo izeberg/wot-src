@@ -53,6 +53,12 @@ msgstr ""
 msgid "battleMessenger/toxic/blackList/REMOVE_FROM_BLACKLIST/header"
 msgstr "Разблокировать сообщения данного игрока"
 
+msgid "battleMessenger/w2gt/warning/gettingDataError"
+msgstr "Технические проблемы при получении данных о боевых зонах."
+
+msgid "battleMessenger/w2gt/warning/noData"
+msgstr "Данные о боевых зонах для этой машины недоступны на этой карте."
+
 msgid "battleProgress/hint/description"
 msgstr "для просмотра личных боевых задач"
 
@@ -1012,6 +1018,9 @@ msgstr "Стрельба невозможна: орудие перегрето."
 msgid "player_errors/cant_shoot/gun_reload"
 msgstr "Орудие перезаряжается."
 
+msgid "player_errors/cant_shoot/low_charge_shot_blocking"
+msgstr "Зарядка завершена."
+
 msgid "player_errors/cant_shoot/no_ammo"
 msgstr "Стрельба невозможна: нет снарядов."
 
@@ -1485,6 +1494,9 @@ msgstr "%(target)s уничтожен"
 
 msgid "player_messages/DEATH_FROM_SHOT_SELF_ENEMY_POI"
 msgstr "%(target)s уничтожен"
+
+msgid "player_messages/DEATH_FROM_SHOT_UNKNOWN_ALLY"
+msgstr "Противник (неизвестен) уничтожил %(target)s."
 
 msgid "player_messages/DEATH_FROM_STATIC_DEATH_ZONE_ALLY_SUICIDE"
 msgstr "Союзник %(target)s уничтожен смертельной зоной."
@@ -2851,6 +2863,9 @@ msgstr "Урон в секунду: %(value)s ед."
 msgid "shells_kinds/params/explosionRadius"
 msgstr "Радиус поражения: %(value)s м"
 
+msgid "shells_kinds/params/header"
+msgstr "Полный / одиночный заряд"
+
 msgid "shells_kinds/params/piercingPower"
 msgstr "Средняя бронепробиваемость: %(value)s мм"
 
@@ -2900,6 +2915,9 @@ msgstr "чтобы переключить режим огня"
 
 msgid "siegeMode/hint/wheeled"
 msgstr "для смены режима движения"
+
+msgid "siegeMode/hint/wheeledDash"
+msgstr ", чтобы активировать Вспомогательный турбонагнетатель"
 
 msgid "spotted/indicator"
 msgstr "Время видимости и получаемый урон увеличены"

@@ -1,4 +1,7 @@
-import math, BigWorld, Math
+from __future__ import absolute_import
+import math
+from future.utils import viewitems, viewvalues
+import BigWorld, Math
 from ArenaType import g_cache
 import constants
 from debug_utils import LOG_DEBUG, LOG_CURRENT_EXCEPTION
@@ -147,13 +150,13 @@ class OfflineMapCreator(object):
 
     @staticmethod
     def __getArenaTypeId(mapName):
-        info = {arenaType.gameplayName:arenaTypeId for arenaTypeId, arenaType in g_cache.iteritems() if mapName == arenaType.geometryName}
+        info = {arenaType.gameplayName:arenaTypeId for arenaTypeId, arenaType in viewitems(g_cache) if mapName == arenaType.geometryName}
         priority = ('ctf', )
         for p in priority:
             if p in info:
                 return info[p]
 
-        return next(iter(info.itervalues()))
+        return next(iter(viewvalues(info)))
 
     def __setupCamera(self):
         global _CAM_FLUENCY

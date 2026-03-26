@@ -487,6 +487,9 @@ msgstr "Машина не готова к бою: неполный экипаж.
 msgid "window/unit/message/vehicleInNotReady/isInBattle"
 msgstr "Машина в бою"
 
+msgid "window/unit/message/vehicleInNotReady/notEnoughVehicles"
+msgstr "Недостаточно подходящей техники"
+
 msgid "window/unit/message/vehicleInNotReady/rentIsOver"
 msgstr "Машина не готова к бою: аренда завершена."
 

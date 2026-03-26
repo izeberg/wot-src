@@ -1786,17 +1786,16 @@
 	</renderSet>
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
-		<node>Track_L11_BlendBone</node>
-		<node>Track_L10_BlendBone</node>
 		<node>V_BlendBone</node>
-		<node>Track_L3_BlendBone</node>
-		<node>Track_L2_BlendBone</node>
-		<node>Track_L5_BlendBone</node>
-		<node>Track_L4_BlendBone</node>
-		<node>Track_L7_BlendBone</node>
-		<node>Track_L6_BlendBone</node>
 		<node>Track_L9_BlendBone</node>
 		<node>Track_L8_BlendBone</node>
+		<node>Track_L10_BlendBone</node>
+		<node>Track_L11_BlendBone</node>
+		<node>Track_L2_BlendBone</node>
+		<node>Track_L1_BlendBone</node>
+		<node>Track_L3_BlendBone</node>
+		<node>Track_L6_BlendBone</node>
+		<node>Track_L4_BlendBone</node>
 		<geometry>
 			<vertices>chassis_LShape_split_1.vertices</vertices>
 			<primitive>chassis_LShape_split_1.indices</primitive>
@@ -1914,7 +1913,7 @@
 						<Float>0.200000</Float>
 					</property>
 				</material>
-				<groupOrigin>-1.217497 0.430248 0.553413</groupOrigin>
+				<groupOrigin>-1.217503 0.410446 0.201242</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -1940,9 +1939,10 @@
 		<node>WD_L4_BlendBone</node>
 		<node>WD_L5_BlendBone</node>
 		<node>WD_L6_BlendBone</node>
-		<node>Track_L1_BlendBone</node>
-		<node>Track_L0_BlendBone</node>
 		<node>V_BlendBone</node>
+		<node>Track_L5_BlendBone</node>
+		<node>Track_L7_BlendBone</node>
+		<node>Track_L0_BlendBone</node>
 		<geometry>
 			<vertices>chassis_LShape_split_0.vertices</vertices>
 			<primitive>chassis_LShape_split_0.indices</primitive>
@@ -2066,17 +2066,16 @@
 	</renderSet>
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
-		<node>Track_R11_BlendBone</node>
 		<node>V_BlendBone</node>
-		<node>Track_R10_BlendBone</node>
-		<node>Track_R2_BlendBone</node>
-		<node>Track_R3_BlendBone</node>
-		<node>Track_R4_BlendBone</node>
-		<node>Track_R5_BlendBone</node>
-		<node>Track_R7_BlendBone</node>
-		<node>Track_R6_BlendBone</node>
 		<node>Track_R9_BlendBone</node>
 		<node>Track_R8_BlendBone</node>
+		<node>Track_R10_BlendBone</node>
+		<node>Track_R11_BlendBone</node>
+		<node>Track_R2_BlendBone</node>
+		<node>Track_R1_BlendBone</node>
+		<node>Track_R3_BlendBone</node>
+		<node>Track_R6_BlendBone</node>
+		<node>Track_R4_BlendBone</node>
 		<geometry>
 			<vertices>chassis_RShape_split_1.vertices</vertices>
 			<primitive>chassis_RShape_split_1.indices</primitive>
@@ -2194,7 +2193,7 @@
 						<Float>0.200000</Float>
 					</property>
 				</material>
-				<groupOrigin>1.217497 0.430248 0.553413</groupOrigin>
+				<groupOrigin>1.217503 0.410446 0.201242</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -2220,8 +2219,9 @@
 		<node>WD_R4_BlendBone</node>
 		<node>WD_R5_BlendBone</node>
 		<node>WD_R6_BlendBone</node>
-		<node>Track_R1_BlendBone</node>
 		<node>V_BlendBone</node>
+		<node>Track_R5_BlendBone</node>
+		<node>Track_R7_BlendBone</node>
 		<node>Track_R0_BlendBone</node>
 		<geometry>
 			<vertices>chassis_RShape_split_0.vertices</vertices>
@@ -2349,5 +2349,5 @@
 		<min>-1.994995 0.002573 -4.144543</min>
 		<max>1.994995 1.242421 4.374477</max>
 	</boundingBox>
-	<geometrySize>1788000</geometrySize>
+	<geometrySize>1774560</geometrySize>
 </root>

@@ -281,6 +281,11 @@ msgstr ""
 "Исследовать всю технику в ветке французских тяжёлых танков во главе "
 "с&nbsp;AMX&nbsp;67&nbsp;Imbattable %(level)s&nbsp;уровня"
 
+msgid "description/branch_france_F143_Fauteur"
+msgstr ""
+"Исследовать всю технику в ветке французских тяжёлых танков во главе с "
+"Fauteur %(level)s&nbsp;уровня."
+
 msgid "description/branch_france_F18_Bat_Chatillon25t"
 msgstr ""
 "Исследовать всю технику в&nbsp;ветке французских средних танков во главе "
@@ -295,11 +300,6 @@ msgid "description/branch_france_F64_AMX_50Fosh_B"
 msgstr ""
 "Исследовать всю технику в ветке французских ПТ-САУ во главе "
 "с&nbsp;AMX&nbsp;50 Foch&nbsp;B %(level)s&nbsp;уровня"
-
-msgid "description/branch_france_F82_AMX_M4_Mle1949_Ter"
-msgstr ""
-"Исследовать всю технику в ветке французских тяжёлых танков во главе "
-"с&nbsp;AMX&nbsp;M4 mle.&nbsp;54 %(level)s&nbsp;уровня"
 
 msgid "description/branch_france_F88_AMX_13_105"
 msgstr ""
@@ -456,11 +456,6 @@ msgstr ""
 "Исследовать всю технику в ветке британских лёгких танков во главе с "
 "Manticore %(level)s&nbsp;уровня"
 
-msgid "description/branch_uk_GB120_Concept_No_5"
-msgstr ""
-"Исследовать всю технику в ветке британских средних танков во главе с Concept"
-" No.&nbsp;5 %(level)s&nbsp;уровня"
-
 msgid "description/branch_uk_GB142_FV230_Canopener"
 msgstr ""
 "Исследовать всю технику в ветке британских тяжёлых танков во главе "
@@ -475,6 +470,11 @@ msgid "description/branch_uk_GB152_AT_FV230_Breaker"
 msgstr ""
 "Исследовать всю технику в ветке британских ПТ-САУ во главе с&nbsp;AT-"
 "FV230&nbsp;Breaker %(level)s&nbsp;уровня"
+
+msgid "description/branch_uk_GB158_Executor"
+msgstr ""
+"Исследовать всю технику в ветке британских средних танков "
+"во&nbsp;главе&nbsp;с&nbsp;Executor %(level)s&nbsp;уровня."
 
 msgid "description/branch_uk_GB31_Conqueror_Gun"
 msgstr ""
@@ -531,6 +531,11 @@ msgstr ""
 "Исследовать всю технику в ветке американских средних танков во главе "
 "с&nbsp;Ares&nbsp;90&nbsp;C %(level)s&nbsp;уровня."
 
+msgid "description/branch_usa_A195_Gorilla"
+msgstr ""
+"Исследовать всю технику в ветке американских ПТ-САУ во главе с&nbsp;Gorilla "
+"%(level)s&nbsp;уровня."
+
 msgid "description/branch_usa_A38_T92"
 msgstr ""
 "Исследовать всю технику в ветке американских САУ во главе "
@@ -545,11 +550,6 @@ msgid "description/branch_usa_A69_T110E5"
 msgstr ""
 "Исследовать всю технику в ветке американских тяжёлых танков во главе "
 "с&nbsp;T110E5 %(level)s&nbsp;уровня"
-
-msgid "description/branch_usa_A83_T110E4"
-msgstr ""
-"Исследовать всю технику в ветке американских ПТ-САУ во главе с&nbsp;T110E4 "
-"%(level)s&nbsp;уровня"
 
 msgid "description/branch_usa_A85_T110E3"
 msgstr ""
@@ -947,6 +947,9 @@ msgstr "Ares 85"
 msgid "name/A191_Ares_90_C"
 msgstr "Ares 90 C"
 
+msgid "name/A195_Gorilla"
+msgstr "Gorilla"
+
 msgid "name/A31_M36_Slagger"
 msgstr "M36 Jackson"
 
@@ -1192,6 +1195,9 @@ msgstr "AMX&nbsp;67&nbsp;Imbattable"
 
 msgid "name/F140_Fantome"
 msgstr "Fantôme"
+
+msgid "name/F143_Fauteur"
+msgstr "Fauteur"
 
 msgid "name/F15_AMX_12t"
 msgstr "AMX&nbsp;12&nbsp;t"
@@ -1498,6 +1504,9 @@ msgstr "AT-FV230&nbsp;Breaker"
 
 msgid "name/GB156_Black_Prince_II"
 msgstr "Black Prince II"
+
+msgid "name/GB158_Executor"
+msgstr "Executor"
 
 msgid "name/GB20_Crusader"
 msgstr "Crusader"
@@ -2021,6 +2030,9 @@ msgstr "Франция: AS-XX&nbsp;40&nbsp;t"
 msgid "name/branch_france_F136_AMX_67_Imbattable"
 msgstr "Франция: AMX&nbsp;67&nbsp;Imbattable"
 
+msgid "name/branch_france_F143_Fauteur"
+msgstr "Франция: Fauteur"
+
 msgid "name/branch_france_F18_Bat_Chatillon25t"
 msgstr "Франция: Bat.-Châtillon&nbsp;25&nbsp;t"
 
@@ -2029,9 +2041,6 @@ msgstr "Франция: Bat.-Châtillon 155&nbsp;58"
 
 msgid "name/branch_france_F64_AMX_50Fosh_B"
 msgstr "Франция: AMX&nbsp;50 Foch&nbsp;B"
-
-msgid "name/branch_france_F82_AMX_M4_Mle1949_Ter"
-msgstr "Франция: AMX&nbsp;M4 mle.&nbsp;54"
 
 msgid "name/branch_france_F88_AMX_13_105"
 msgstr "Франция: AMX&nbsp;13&nbsp;105"
@@ -2126,9 +2135,6 @@ msgstr "Швеция: Strv&nbsp;107-12"
 msgid "name/branch_uk_GB100_Manticore"
 msgstr "Великобритания: Manticore"
 
-msgid "name/branch_uk_GB120_Concept_No_5"
-msgstr "Великобритания: Concept&nbsp;No.&nbsp;5"
-
 msgid "name/branch_uk_GB142_FV230_Canopener"
 msgstr "Великобритания: FV230&nbsp;Canopener"
 
@@ -2137,6 +2143,9 @@ msgstr "Великобритания: FV4025&nbsp;Contriver"
 
 msgid "name/branch_uk_GB152_AT_FV230_Breaker"
 msgstr "Великобритания: AT-FV230&nbsp;Breaker"
+
+msgid "name/branch_uk_GB158_Executor"
+msgstr "Великобритания: Executor"
 
 msgid "name/branch_uk_GB31_Conqueror_Gun"
 msgstr "Великобритания: Conqueror Gun Carriage"
@@ -2171,6 +2180,9 @@ msgstr "США: XM69&nbsp;Hacker"
 msgid "name/branch_usa_A191_Ares_90_C"
 msgstr "США: Ares 90 C"
 
+msgid "name/branch_usa_A195_Gorilla"
+msgstr "США: Gorilla"
+
 msgid "name/branch_usa_A38_T92"
 msgstr "США: T92&nbsp;HMC"
 
@@ -2179,9 +2191,6 @@ msgstr "США: T57 Heavy Tank"
 
 msgid "name/branch_usa_A69_T110E5"
 msgstr "США: T110E5"
-
-msgid "name/branch_usa_A83_T110E4"
-msgstr "США: T110E4"
 
 msgid "name/branch_usa_A85_T110E3"
 msgstr "США: T110E3"

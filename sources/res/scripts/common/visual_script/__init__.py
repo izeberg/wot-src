@@ -2,7 +2,7 @@ from visual_script.misc import ASPECT
 from visual_script.registrar import VSBlockRegistrar
 from visual_script.contexts.perks_context import PerkContext, CrewContext, PerkNotifyState
 from visual_script.contexts.cgf_context import CGFGameObjectContext
-import ability_common, example, general, vehicle_blocks, qa_blocks, qa_education_blocks, balance, entity_blocks, arena_blocks, bitmask_blocks_common, dictionary_blocks, debug_manager_blocks, cgf_blocks, commendations_common, vehicle_mechanics_blocks, command_flow
+import ability_common, example, general, vehicle_blocks, qa_blocks, qa_education_blocks, balance, entity_blocks, arena_blocks, dictionary_blocks, debug_manager_blocks, cgf_blocks, commendations_common, vehicle_mechanics_blocks, command_flow
 g_blockRegistrar = VSBlockRegistrar(ASPECT.CLIENT, ASPECT.SERVER)
 g_blockRegistrar.regBlocksFromModule(example)
 g_blockRegistrar.regTypesFromModule(example)
@@ -15,11 +15,6 @@ g_blockRegistrar.regBlocksFromModule(vehicle_blocks)
 g_blockRegistrar.regBlocksFromModule(ability_common)
 g_blockRegistrar.regType(ability_common.Stage)
 g_blockRegistrar.regType(ability_common.EquipmentErrorState)
-g_blockRegistrar.regBlock(bitmask_blocks_common.BitwiseNOT)
-g_blockRegistrar.regBlock(bitmask_blocks_common.BitwiseAND)
-g_blockRegistrar.regBlock(bitmask_blocks_common.BitwiseOR)
-g_blockRegistrar.regBlock(bitmask_blocks_common.BitwiseXOR)
-g_blockRegistrar.regBlock(bitmask_blocks_common.BitwiseEQUAL)
 g_blockRegistrar.regBlocksFromModule(entity_blocks)
 g_blockRegistrar.regBlock(arena_blocks.GetFlyDirection)
 g_blockRegistrar.regContext(PerkContext)
@@ -44,5 +39,8 @@ g_blockRegistrar.regType(vehicle_mechanics_blocks.OverheatGunEnum)
 g_blockRegistrar.regType(vehicle_mechanics_blocks.TemperatureGunEnum)
 g_blockRegistrar.regType(vehicle_mechanics_blocks.HeatingZonesGunEnum)
 g_blockRegistrar.regType(vehicle_mechanics_blocks.PhasedMechanicStateEnum)
+g_blockRegistrar.regType(vehicle_mechanics_blocks.LowChargeShotStateEnum)
 g_blockRegistrar.regType(vehicle_mechanics_blocks.AcceleratorStatusEnum)
+g_blockRegistrar.regType(vehicle_mechanics_blocks.PropellantGunEnum)
+g_blockRegistrar.regType(vehicle_mechanics_blocks.WheeledDashDirectionEnum)
 g_blockRegistrar.regBlocksFromModule(command_flow)

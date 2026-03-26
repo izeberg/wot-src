@@ -23,12 +23,9 @@ package net.wg.gui.lobby.settings.feedback.ribbons
       
       private var _disposed:Boolean = false;
       
-      private var _ribbonType:String;
-      
       public function SettingsRibbonItem(param1:RibbonSettingsLobby)
       {
          super();
-         this._ribbonType = param1.getRibbonType();
          var _loc2_:IClassFactory = App.utils.classFactory;
          this._icons = _loc2_.getComponent(Linkages.RIBBON_ICONS,RibbonIcons);
          this._texts = _loc2_.getComponent(Linkages.RIBBON_TEXT,RibbonTexts);
@@ -44,6 +41,11 @@ package net.wg.gui.lobby.settings.feedback.ribbons
       public final function dispose() : void
       {
          this.onDispose();
+      }
+      
+      public function isDisposed() : Boolean
+      {
+         return this._disposed;
       }
       
       public function setData(param1:String, param2:String, param3:String) : void
@@ -62,11 +64,6 @@ package net.wg.gui.lobby.settings.feedback.ribbons
       {
          this._texts.setSettings(false,param1,param2);
          this._icons.setSettings(param1,param2);
-      }
-      
-      public function isDisposed() : Boolean
-      {
-         return this._disposed;
       }
       
       protected function onDispose() : void

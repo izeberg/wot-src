@@ -2291,6 +2291,9 @@ msgstr ""
 "Постепенное появление скрытых интерфейсов снова включено. Отключить можно в "
 "настройках игры."
 
+msgid "locked_vehicle_error"
+msgstr "Действие недоступно для преднастроенных машин."
+
 msgid "login_to_other_game_unknown"
 msgstr ""
 "текущая игровая сессия прервана. Ваш Wargaming.net&nbsp;ID был использован "
@@ -3037,6 +3040,11 @@ msgstr "Вы исключены из взвода."
 
 msgid "prebattle/kick/type/unknown"
 msgstr "Вы исключены из команды."
+
+msgid "prebattle/limits/notEnoughVehicles"
+msgstr ""
+"Для участия в режиме у вас в Ангаре должно быть как минимум 3 подходящие "
+"машины. Подробнее можно узнать на странице «О Натиске»."
 
 msgid "prebattle/request/name/AUTO_SEARCH"
 msgstr "Автопоиск"
@@ -5088,6 +5096,18 @@ msgstr ""
 
 msgid "video/error"
 msgstr "Ошибка воспроизведения видео. Код ошибки: %(code)s."
+
+msgid "w2gt/switchOff/description"
+msgstr "Боевые зоны на мини-карте временно недоступны."
+
+msgid "w2gt/switchOff/header"
+msgstr "Технические проблемы"
+
+msgid "w2gt/switchOn/description"
+msgstr "Боевые зоны на мини-карте доступны. В бой!"
+
+msgid "w2gt/switchOn/header"
+msgstr "Функциональность восстановлена"
 
 msgid "wallet/available"
 msgstr ""

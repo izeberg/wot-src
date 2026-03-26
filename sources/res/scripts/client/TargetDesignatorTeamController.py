@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, typing
 from Math import Vector3
 from chat_commands_consts import LocationMarkerSubType

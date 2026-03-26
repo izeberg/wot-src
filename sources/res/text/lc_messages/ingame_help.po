@@ -350,6 +350,16 @@ msgstr ""
 msgid "detailsHelp/mechanics/improvedRamming/page1/title"
 msgstr "Таранная компоновка"
 
+msgid "detailsHelp/mechanics/lowChargeShot/page1/description"
+msgstr ""
+"Эта машина может стрелять преждевременно: выстрелы с одиночным зарядом, "
+"сделанные во время перезарядки, менее эффективны, в то время как снаряды с "
+"полным зарядом после перезарядки обладают оптимальными баллистическими "
+"характеристиками."
+
+msgid "detailsHelp/mechanics/lowChargeShot/page1/title"
+msgstr "Многозарядная система заряжания"
+
 msgid "detailsHelp/mechanics/overheatStacks/page1/description"
 msgstr ""
 "Оставаясь неподвижным или двигаясь медленнее определённой скорости, вы набираете преднагрев, который увеличивает средний урон и точность вашего следующего выстрела.\n"
@@ -375,6 +385,25 @@ msgstr ""
 
 msgid "detailsHelp/mechanics/powerMode/page1/title"
 msgstr "Прямая передача"
+
+msgid "detailsHelp/mechanics/propellantAfterburnerGun/page1/description"
+msgstr ""
+"Система постепенно накапливает заряд, который частично тратится для "
+"увеличения урона во время выстрела. Чем больше заряд, тем выше "
+"дополнительный урон."
+
+msgid "detailsHelp/mechanics/propellantAfterburnerGun/page1/title"
+msgstr "Индукционный дожигатель заряда"
+
+msgid "detailsHelp/mechanics/propellantAfterburnerGun/page2/description"
+msgstr ""
+"По умолчанию система набирает заряд до определённого значения. Отключение "
+"ограничителя позволяет накопить больше заряда, чтобы нанести больше "
+"дополнительного урона, но это ухудшает стабилизацию орудия. Чтобы "
+"переключить ограничитель, нажмите "
+
+msgid "detailsHelp/mechanics/propellantAfterburnerGun/page2/title"
+msgstr "Ограничитель"
 
 msgid "detailsHelp/mechanics/rechargeableNitro/page1/description"
 msgstr ""
@@ -497,6 +526,15 @@ msgstr ""
 
 msgid "detailsHelp/mechanics/twinGun/page2/title"
 msgstr "Преимущества и недостатки"
+
+msgid "detailsHelp/mechanics/wheeledDash/page1/description"
+msgstr ""
+"Это механическое улучшение на короткое время значительно улучшает параметры "
+"ускорения машины, мощности двигателя и максимальной скорости. Движение на "
+"высокой скорости снижает время подготовки турбонагнетателя."
+
+msgid "detailsHelp/mechanics/wheeledDash/page1/title"
+msgstr "Вспомогательный турбонагнетатель высокого давления"
 
 msgid "detailsHelp/noKeysWarning"
 msgstr "Ключевые клавиши не назначены. Назначьте их в настройках игры."

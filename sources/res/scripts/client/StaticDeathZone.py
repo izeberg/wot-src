@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import functools, random, BigWorld, Math, Event
 from LimitedVisibilityEntity import LimitedVisibilityEntity
 from items import vehicles

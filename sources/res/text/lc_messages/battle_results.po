@@ -581,10 +581,12 @@ msgid "common/vehicleState/dead0"
 msgstr "Уничтожен выстрелом"
 
 msgid "common/vehicleState/dead0_with_killername"
-msgstr "Уничтожен выстрелом ({{killername}})"
+msgstr "Уничтожен выстрелом ({{@ class $killerClass}}{{killername}}{{/}})"
 
 msgid "common/vehicleState/dead0_with_killername_and_clan"
-msgstr "Уничтожен выстрелом ({{killername}}[{{clanTag}}])"
+msgstr ""
+"Уничтожен выстрелом ({{@ class "
+"$killerClass}}{{killername}}[{{clanTag}}]{{/}})"
 
 msgid "common/vehicleState/dead1"
 msgstr "Уничтожен пожаром"
@@ -596,10 +598,12 @@ msgid "common/vehicleState/dead13"
 msgstr "Уничтожен навыком игрока"
 
 msgid "common/vehicleState/dead1_with_killername"
-msgstr "Уничтожен поджогом ({{killername}})"
+msgstr "Уничтожен поджогом ({{@ class $killerClass}}{{killername}}{{/}})"
 
 msgid "common/vehicleState/dead1_with_killername_and_clan"
-msgstr "Уничтожен поджогом ({{killername}}[{{clanTag}}])"
+msgstr ""
+"Уничтожен поджогом ({{@ class "
+"$killerClass}}{{killername}}[{{clanTag}}]{{/}})"
 
 msgid "common/vehicleState/dead2"
 msgstr "Уничтожен тараном"
@@ -611,10 +615,11 @@ msgid "common/vehicleState/dead29"
 msgstr "Разбит"
 
 msgid "common/vehicleState/dead2_with_killername"
-msgstr "Уничтожен тараном ({{killername}})"
+msgstr "Уничтожен тараном ({{@ class $killerClass}}{{killername}}{{/}})"
 
 msgid "common/vehicleState/dead2_with_killername_and_clan"
-msgstr "Уничтожен тараном ({{killername}}[{{clanTag}}])"
+msgstr ""
+"Уничтожен тараном ({{@ class $killerClass}}{{killername}}[{{clanTag}}]{{/}})"
 
 msgid "common/vehicleState/dead3"
 msgstr "Разбит"
@@ -623,19 +628,21 @@ msgid "common/vehicleState/dead30"
 msgstr "Уничтожен выстрелом"
 
 msgid "common/vehicleState/dead30_with_killername"
-msgstr "Уничтожен выстрелом ({{killername}})"
+msgstr "Уничтожен выстрелом ({{@ class $killerClass}}{{killername}}{{/}})"
 
 msgid "common/vehicleState/dead30_with_killername_and_clan"
-msgstr "Уничтожен выстрелом ({{killername}}[{{clanTag}}])"
+msgstr ""
+"Уничтожен выстрелом ({{@ class "
+"$killerClass}}{{killername}}[{{clanTag}}]{{/}})"
 
 msgid "common/vehicleState/dead35"
 msgstr "Разбит"
 
 msgid "common/vehicleState/dead3_with_killername"
-msgstr "Разбит ({{killername}})"
+msgstr "Разбит ({{@ class $killerClass}}{{killername}}{{/}})"
 
 msgid "common/vehicleState/dead3_with_killername_and_clan"
-msgstr "Разбит ({{killername}}[{{clanTag}}])"
+msgstr "Разбит ({{@ class $killerClass}}{{killername}}[{{clanTag}}]{{/}})"
 
 msgid "common/vehicleState/dead4"
 msgstr "Уничтожен запретной зоной"
@@ -644,10 +651,11 @@ msgid "common/vehicleState/dead5"
 msgstr "Затоплен"
 
 msgid "common/vehicleState/dead5_with_killername"
-msgstr "Машина затоплена ({{killername}})"
+msgstr "Машина затоплена ({{@ class $killerClass}}{{killername}}{{/}})"
 
 msgid "common/vehicleState/dead5_with_killername_and_clan"
-msgstr "Машина затоплена ({{killername}}[{{clanTag}}])"
+msgstr ""
+"Машина затоплена ({{@ class $killerClass}}{{killername}}[{{clanTag}}]{{/}})"
 
 msgid "common/vehicleState/dead6"
 msgstr "Уничтожен огненным валом"
@@ -656,10 +664,12 @@ msgid "common/vehicleState/dead7"
 msgstr "Уничтожен при перевороте"
 
 msgid "common/vehicleState/dead7_with_killername"
-msgstr "Уничтожен переворотом ({{killername}})"
+msgstr "Уничтожен переворотом ({{@ class $killerClass}}{{killername}}{{/}})"
 
 msgid "common/vehicleState/dead7_with_killername_and_clan"
-msgstr "Уничтожен переворотом ({{killername}}[{{clanTag}}])"
+msgstr ""
+"Уничтожен переворотом ({{@ class "
+"$killerClass}}{{killername}}[{{clanTag}}]{{/}})"
 
 msgid "common/vehicleState/prematureLeave"
 msgstr "Покинул бой до его завершения"

@@ -164,6 +164,10 @@ package net.wg.gui.components.crosshairPanel.components.gunMarker
          }
       }
       
+      public function setIsColorBlind(param1:Boolean) : void
+      {
+      }
+      
       public function setReloadingParams(param1:Number, param2:String) : void
       {
          if(this._reloadingState != param2 || this._reloadingInPercent != param1)

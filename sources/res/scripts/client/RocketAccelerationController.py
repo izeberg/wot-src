@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, typing
 from functools import partial
 import BigWorld, CGF
@@ -103,6 +104,8 @@ class RocketAccelerationController(BigWorld.DynamicScriptComponent, ILifeCycleCo
         else:
             typeDescriptor = self.entity.typeDescriptor
             if typeDescriptor is None:
+                return False
+            if typeDescriptor.type.compactDescr != self.vehTypeCD:
                 return False
             appearance = self.entity.appearance
             if appearance is None or not appearance.isConstructed or appearance.isDestroyed:

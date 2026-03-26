@@ -1,0 +1,87 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-01 10:00+0300\n"
+"PO-Revision-Date: 2022-05-01 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Contact/status/inBattle/last_stand"
+msgstr "В бою режима «Последний рубеж»"
+
+msgid "advanced/ls_aoeDamageInstantShot"
+msgstr ""
+"Совершает выстрел, который наносит урон цели и всей технике противника в "
+"радиусе 35 м."
+
+msgid "advanced/ls_aoeDrainEnemyHpInstantShot"
+msgstr ""
+"Совершает выстрел, который наносит урон цели и технике противника в радиусе "
+"35 м, за счёт чего восстанавливает прочность вашей машины."
+
+msgid "advanced/ls_aoeStunInstantShot"
+msgstr ""
+"Совершает выстрел, который оглушает цель и всю технику противника в радиусе "
+"35 м."
+
+msgid "advanced/ls_damageShield"
+msgstr ""
+"В течение 7 секунд защищает машину от любых повреждений, кроме урона от "
+"тарана, затопления и падения."
+
+msgid "advanced/ls_doubleDamage"
+msgstr "Ваше следующее попадание нанесёт удвоенный урон."
+
+msgid "advanced/ls_equipment"
+msgstr ""
+"Тактические устройства позволяют эффективнее сражаться в боях события "
+"«Последний рубеж», проходить этапы и получать ценные награды. Для установки "
+"нажмите на один из слотов для тактических устройств."
+
+msgid "advanced/ls_extraDamageSituational"
+msgstr "Даёт шанс нанести увеличенный урон машине противника."
+
+msgid "advanced/ls_fastReload"
+msgstr "Увеличивает скорострельность / перезаряжает магазин."
+
+msgid "advanced/ls_healSituational"
+msgstr ""
+"Восстанавливает некоторое количество очков прочности после уничтожения "
+"машины противника."
+
+msgid "advanced/ls_invisibility"
+msgstr ""
+"Временно делает вашу машину невидимой для противника, восстанавливает запас "
+"прочности, чинит модули, тушит пожар, снимает эффект оглушения и лечит всех "
+"раненых членов экипажа."
+
+msgid "advanced/ls_nitro"
+msgstr "Временно улучшает мобильность вашей машины."
+
+msgid "advanced/ls_nitroSituational"
+msgstr ""
+"Временно улучшает мобильность вашей машины после получения урона от "
+"противника."
+
+msgid "advanced/ls_selfRepairKit"
+msgstr ""
+"Восстанавливает прочность, тушит пожар, снимает эффект оглушения и чинит "
+"повреждённые модули."
+
+msgid "advanced/ls_teamRepairKit"
+msgstr ""
+"Чинит модули, тушит пожар, снимает эффект оглушения и восстанавливает часть "
+"прочности союзникам в радиусе действия."
+
+msgid "hangar/ammo_panel/ls_equipment/empty/body"
+msgstr ""
+"Тактические устройства можно устанавливать в специальные слоты. Они "
+"позволяют эффективнее сражаться в боях события «Последний рубеж», проходить "
+"этапы и получать ценные награды."
+
+msgid "hangar/ammo_panel/ls_equipment/empty/header"
+msgstr "Слот для тактических устройств"

@@ -3193,8 +3193,7 @@ msgid "headerButtons/fightBtn/tooltip/comp7BattleOnly/header"
 msgstr "Выход в бой недоступен"
 
 msgid "headerButtons/fightBtn/tooltip/comp7Disabled/body"
-msgstr ""
-"Режим временно недоступен на всех серверах. Смотрите подробности ниже."
+msgstr "Бои недоступны во время прекращения огня."
 
 msgid "headerButtons/fightBtn/tooltip/comp7Disabled/header"
 msgstr "Выход в бой недоступен"
@@ -3221,9 +3220,18 @@ msgstr ", "
 msgid "headerButtons/fightBtn/tooltip/comp7LightVehLevel/header"
 msgstr "Невозможно выйти в бой"
 
+msgid "headerButtons/fightBtn/tooltip/comp7NotEnoughSuitableVehicles/body"
+msgstr ""
+"Для участия в режиме у вас в Ангаре должно быть как минимум "
+"%(minVehiclesRequired)s ед. подходящей техники. Подробнее можно узнать на "
+"странице «О Натиске»."
+
+msgid "headerButtons/fightBtn/tooltip/comp7NotEnoughSuitableVehicles/header"
+msgstr "Невозможно выйти в бой"
+
 msgid "headerButtons/fightBtn/tooltip/comp7NotSet/body"
 msgstr ""
-"Режим временно недоступен на текущем сервере. Смотрите подробности ниже."
+"Этот режим недоступен на выбранном сервере, но вы можете играть на другом."
 
 msgid "headerButtons/fightBtn/tooltip/comp7NotSet/header"
 msgstr "Выход в бой недоступен"
@@ -3240,13 +3248,19 @@ msgstr "Сезон ещё не начался."
 msgid "headerButtons/fightBtn/tooltip/comp7Preannounce/header"
 msgstr "Выход в бой невозможен"
 
-msgid "headerButtons/fightBtn/tooltip/comp7RatingCalculation/body"
+msgid "headerButtons/fightBtn/tooltip/comp7QualificationCalculation/body"
 msgstr ""
 "Расчёт рейтинга по итогам квалификации может занять до пяти минут. После "
 "этого вам будет присвоен ранг, и вы сможете продолжить игру в «Натиске»."
 
-msgid "headerButtons/fightBtn/tooltip/comp7RatingCalculation/header"
-msgstr "Выход в бой недоступен"
+msgid "headerButtons/fightBtn/tooltip/comp7QualificationCalculation/header"
+msgstr "Невозможно выйти в бой"
+
+msgid "headerButtons/fightBtn/tooltip/comp7SeasonEnd/header"
+msgstr "Невозможно выйти в бой"
+
+msgid "headerButtons/fightBtn/tooltip/comp7UnsuitableVehicle/header"
+msgstr "Невозможно выйти в бой"
 
 msgid "headerButtons/fightBtn/tooltip/comp7VehLevel/body"
 msgstr "В Ангаре нет подходящей техники %(levels)s уровня"
@@ -4493,6 +4507,11 @@ msgstr ""
 msgid "moduleInfo/hydroAutoSiegeChassis"
 msgstr "Гидропневматическая подвеска: позволяет изменять угол наклона корпуса"
 
+msgid "moduleInfo/lowChargeShot"
+msgstr ""
+"Специальная механика орудия, которая позволяет выстрелить раньше за счёт "
+"снижения эффективности снаряда."
+
 msgid "moduleInfo/magazineGun"
 msgstr "Магазинная система заряжания"
 
@@ -4680,7 +4699,7 @@ msgstr " для данного типа снарядов не зависит о�
 msgid "moduleInfo/params/noPiercingDistance/footnote/maxDistance"
 msgstr ", максимальная дальность полёта - 400 м"
 
-msgid "moduleInfo/params/normalisation"
+msgid "moduleInfo/params/normalizationAngle"
 msgstr "Угол нормализации"
 
 msgid "moduleInfo/params/penetrationLoss"
@@ -4792,6 +4811,9 @@ msgstr "Мощность двигателя (турбо)"
 msgid "moduleInfo/params/weight"
 msgstr "Масса"
 
+msgid "moduleInfo/propellantAfterburnerGun"
+msgstr "Индукционный дожигатель заряда повышает средний урон."
+
 msgid "moduleInfo/rocketAcceleration"
 msgstr "Реактивные ускорители, повышающие мобильность"
 
@@ -4814,6 +4836,11 @@ msgstr ""
 
 msgid "moduleInfo/twinGun"
 msgstr "Система выбора режима огня"
+
+msgid "moduleInfo/wheeledDash"
+msgstr ""
+"Специальная механика этой машины на короткое время значительно улучшает "
+"параметры ускорения, мощности двигателя и максимальной скорости."
 
 msgid "nation_tree/blueprint_title/china"
 msgstr "Чертежи техники Китая"
@@ -6601,6 +6628,24 @@ msgstr "Заряд ионно-разрядного дожигателя (%/с) (
 msgid "tank_params/kg"
 msgstr "(кг)"
 
+msgid "tank_params/lowChargeShotAvgDamage"
+msgstr "Средний урон (ед.)"
+
+msgid "tank_params/lowChargeShotBlockDuration"
+msgstr "Время блокировки выстрела (с)"
+
+msgid "tank_params/lowChargeShotDispertion"
+msgstr "Разброс на 100 м (м)"
+
+msgid "tank_params/lowChargeShotPenetration"
+msgstr "Средняя бронепробиваемость (мм)"
+
+msgid "tank_params/lowChargeShotRateOfFire"
+msgstr "Скорострельность орудия (выстр/мин)"
+
+msgid "tank_params/lowChargeShotVelocity"
+msgstr "Скорость полёта (м/с)"
+
 msgid "tank_params/m"
 msgstr "(м)"
 
@@ -6660,6 +6705,9 @@ msgstr "(за активацию)"
 msgid "tank_params/percent"
 msgstr " "
 
+msgid "tank_params/percent_per_s"
+msgstr "(%/с)"
+
 msgid "tank_params/piercingPower"
 msgstr "Бронепробиваемость базовым снарядом"
 
@@ -6701,6 +6749,36 @@ msgstr "Время до нулевого преднагрева"
 
 msgid "tank_params/preheatTransitionDelay"
 msgstr "Задержка перехода преднагрева"
+
+msgid "tank_params/propellantChargeLimit"
+msgstr "Ограничение заряда"
+
+msgid "tank_params/propellantChargeSpendingAfterShot"
+msgstr "Использование заряда за выстрел"
+
+msgid "tank_params/propellantChargingPerSec"
+msgstr "Скорость набора заряда"
+
+msgid "tank_params/propellantDischargingPerSec"
+msgstr "Скорость потери заряда"
+
+msgid "tank_params/propellantOverchargeSwitchCooldown"
+msgstr "Время подготовки ограничителя"
+
+msgid "tank_params/propellantPostLimitAimingTime"
+msgstr "Время сведения после лимита"
+
+msgid "tank_params/propellantPostLimitDamageBonus"
+msgstr "Максимальный бонус к урону после лимита"
+
+msgid "tank_params/propellantPostLimitDamageSpike"
+msgstr "Прирост урона после лимита"
+
+msgid "tank_params/propellantPostLimitDispersion"
+msgstr "Разброс на 100 м после лимита"
+
+msgid "tank_params/propellantPreLimitDamageBonus"
+msgstr "Максимальный бонус к урону перед лимитом"
 
 msgid "tank_params/pt"
 msgstr "(л.с./т)"
@@ -6957,6 +7035,27 @@ msgstr "(ед./мин)"
 msgid "tank_params/vps"
 msgstr "(ед./с)"
 
+msgid "tank_params/wheeledDashAbilityDuration"
+msgstr "Продолжительность (с)"
+
+msgid "tank_params/wheeledDashAbilityReloadTime"
+msgstr "Время подготовки (с)"
+
+msgid "tank_params/wheeledDashAbilityReloadTimeBonus"
+msgstr "Бонус ко времени подготовки (%)"
+
+msgid "tank_params/wheeledDashEnginePower"
+msgstr "Мощность двигателя (%)"
+
+msgid "tank_params/wheeledDashReverseSpeed"
+msgstr "Скорость движения назад (%)"
+
+msgid "tank_params/wheeledDashSpeedLimits"
+msgstr "Минимальная скорость для бонуса к подготовке (км/ч)"
+
+msgid "tank_params/wheeledDashTopSpeed"
+msgstr "Максимальная скорость (%)"
+
 msgid "tank_params/wheeledSpeedModeSpeed"
 msgstr "Макс. скорость / задний ход (скоростной)"
 
@@ -7087,6 +7186,11 @@ msgid "training/additionalInfo/freeSuppliesComp7"
 msgstr ""
 "Теперь на картах режима «Натиск» вам не нужно платить за боеприпасы, "
 "снаряжение и инструкции"
+
+msgid "training/additionalInfo/vehicleRequired3"
+msgstr ""
+"Для участия в режиме у вас в Ангаре должно быть как минимум 3 подходящие "
+"машины. Подробнее можно узнать на странице «О Натиске»."
 
 msgid "training/create/battleTime"
 msgstr "Длительность боя:"
@@ -7227,6 +7331,9 @@ msgstr "Бесплатное снаряжение"
 
 msgid "training/notificationText/onlyTierX"
 msgstr "Только для техники X уровня"
+
+msgid "training/notificationText/vehicleRequired3"
+msgstr "Необходимо несколько машин"
 
 msgid "training/ownerTitle"
 msgstr "Командир"

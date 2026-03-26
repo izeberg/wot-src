@@ -12,8 +12,8 @@
 	<postProgressionTree>role_HT_break</postProgressionTree>
 	<customRoleSlotOptions>2 4</customRoleSlotOptions>
 	<speedLimits>
-		<forward>25</forward>
-		<backward>12</backward>
+		<forward>20</forward>
+		<backward>20</backward>
 	</speedLimits>
 	<invisibility>
 		<moving>
@@ -71,7 +71,7 @@
 			</invisibilityBonus>
 		</deluxeAdditionalInvisibilityDevice>
 	</optDevsOverrides>
-	<repairCost>12</repairCost>
+	<repairCost>10</repairCost>
 	<premiumVehicleXPFactor>
 		0.05
 		<!--BW_String-->
@@ -82,53 +82,117 @@
 	</crewXpFactor>
 	<camouflage>
 		<priceFactor>
-			2.0
+			1.8
 			<!--BW_String-->
 		</priceFactor>
 		<density>1.159326 1.159326</density>
 	</camouflage>
 	<hull>
 		<armor>
-			<armor_1>152</armor_1>
-			<armor_2>170</armor_2>
-			<armor_3>76</armor_3>
-			<armor_4>60</armor_4>
-			<armor_5>40</armor_5>
-			<armor_6>20</armor_6>
-			<armor_7>270</armor_7>
+			<armor_1>
+				152.4
+				<!--BW_String-->
+			</armor_1>
+			<armor_2>
+				171.5
+				<!--BW_String-->
+			</armor_2>
+			<armor_3>
+				76.2
+				<!--BW_String-->
+			</armor_3>
+			<armor_4>
+				60.3
+				<!--BW_String-->
+			</armor_4>
+			<armor_5>
+				38.1
+				<!--BW_String-->
+			</armor_5>
+			<armor_6>
+				19.1
+				<!--BW_String-->
+			</armor_6>
+			<armor_7>
+				269.9
+				<!--BW_String-->
+			</armor_7>
 			<armor_8>0</armor_8>
 			<armor_9>
-				10
+				9.5
+				<!--BW_String-->
 				<vehicleDamageFactor>0</vehicleDamageFactor>
 			</armor_9>
-			<armor_10>30</armor_10>
-			<armor_11>76</armor_11>
-			<armor_12>25</armor_12>
-			<armor_13>165</armor_13>
-			<armor_14>70</armor_14>
-			<armor_15>60</armor_15>
-			<armor_16>250</armor_16>
-			<armor_17>185</armor_17>
-			<armor_18>190</armor_18>
-			<armor_19>250</armor_19>
-			<armor_20>90</armor_20>
-			<armor_21>70</armor_21>
-			<armor_22>45</armor_22>
-			<armor_23>76</armor_23>
-			<armor_24>100</armor_24>
-			<armor_25>60</armor_25>
-			<armor_26>40</armor_26>
+			<armor_10>
+				31.8
+				<!--BW_String-->
+			</armor_10>
+			<armor_11>
+				76.2
+				<!--BW_String-->
+			</armor_11>
+			<armor_12>
+				25.4
+				<!--BW_String-->
+			</armor_12>
+			<armor_13>
+				165.1
+				<!--BW_String-->
+			</armor_13>
+			<armor_14>
+				69.9
+				<!--BW_String-->
+			</armor_14>
+			<armor_15>
+				60.3
+				<!--BW_String-->
+			</armor_15>
+			<armor_16>254</armor_16>
+			<armor_17>
+				184.2
+				<!--BW_String-->
+			</armor_17>
+			<armor_18>
+				190.5
+				<!--BW_String-->
+			</armor_18>
+			<armor_19>254</armor_19>
+			<armor_20>
+				88.9
+				<!--BW_String-->
+			</armor_20>
+			<armor_21>
+				69.9
+				<!--BW_String-->
+			</armor_21>
+			<armor_22>
+				44.5
+				<!--BW_String-->
+			</armor_22>
+			<armor_23>
+				76.2
+				<!--BW_String-->
+			</armor_23>
+			<armor_24>
+				101.6
+				<!--BW_String-->
+			</armor_24>
+			<armor_25>
+				60.3
+				<!--BW_String-->
+			</armor_25>
+			<armor_26>
+				38.1
+				<!--BW_String-->
+			</armor_26>
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>46000</weight>
-		<maxHealth>1760</maxHealth>
+		<maxHealth>1520</maxHealth>
 		<ammoBayHealth>
-			<maxHealth>260</maxHealth>
-			<maxRegenHealth>180</maxRegenHealth>
-			<repairCost>
-				1.0
-				<!--BW_String-->
-			</repairCost>
+			<maxHealth>230</maxHealth>
+			<maxRegenHealth>173</maxRegenHealth>
+			<repairCost>9</repairCost>
 		</ammoBayHealth>
 		<models>
 			<undamaged>vehicles/british/GB130_FV225_Collector/normal/lod0/Hull.model</undamaged>
@@ -1315,22 +1379,21 @@
 		<Chassis_GB130_FV225_Collector>
 			<userString>#gb_vehicles:Chassis_GB130_FV225_Collector</userString>
 			<tags/>
-			<level>10</level>
-			<price>82500</price>
+			<level>9</level>
+			<price>60000</price>
 			<notInShop>true</notInShop>
 			<armor>
 				<leftTrack>20</leftTrack>
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>15000</weight>
-			<maxLoad>85000</maxLoad>
 			<terrainResistance>
 				1 1.2 2
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>82000</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>30</rotationSpeed>
+			<rotationSpeed>45</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.01
@@ -1345,12 +1408,9 @@
 				3.0
 				<!--BW_String-->
 			</bulkHealthFactor>
-			<maxHealth>250</maxHealth>
-			<maxRegenHealth>190</maxRegenHealth>
-			<repairCost>
-				5.0
-				<!--BW_String-->
-			</repairCost>
+			<maxHealth>240</maxHealth>
+			<maxRegenHealth>180</maxRegenHealth>
+			<repairCost>5</repairCost>
 			<models>
 				<undamaged>vehicles/british/GB130_FV225_Collector/normal/lod0/Chassis.model</undamaged>
 				<destroyed>vehicles/british/GB130_FV225_Collector/crash/lod0/Chassis.model</destroyed>
@@ -2935,7 +2995,7 @@
 				</right>
 			</physicalTracks>
 			<repairTime>
-				6.85714293
+				6.66666651
 				<!--BW_String-->
 			</repairTime>
 		</Chassis_GB130_FV225_Collector>
@@ -2944,64 +3004,105 @@
 		<Turret_1_GB130_FV225_Collector>
 			<userString>#gb_vehicles:Turret_1_GB130_FV225_Collector</userString>
 			<tags/>
-			<level>10</level>
-			<price>66000</price>
+			<level>9</level>
+			<price>60000</price>
 			<notInShop>true</notInShop>
 			<armor>
-				<armor_1>250</armor_1>
-				<armor_2>300</armor_2>
-				<armor_3>110</armor_3>
-				<armor_4>70</armor_4>
-				<armor_5>30</armor_5>
-				<armor_6>30</armor_6>
-				<armor_7>170</armor_7>
+				<armor_1>254</armor_1>
+				<armor_2>
+					298.5
+					<!--BW_String-->
+				</armor_2>
+				<armor_3>108</armor_3>
+				<armor_4>
+					69.9
+					<!--BW_String-->
+				</armor_4>
+				<armor_5>
+					31.8
+					<!--BW_String-->
+				</armor_5>
+				<armor_6>
+					31.8
+					<!--BW_String-->
+				</armor_6>
+				<armor_7>
+					171.5
+					<!--BW_String-->
+				</armor_7>
 				<armor_8>0</armor_8>
-				<armor_9>40</armor_9>
-				<armor_10>150</armor_10>
-				<armor_11>30</armor_11>
-				<armor_12>50</armor_12>
+				<armor_9>
+					38.1
+					<!--BW_String-->
+				</armor_9>
+				<armor_10>
+					152.4
+					<!--BW_String-->
+				</armor_10>
+				<armor_11>
+					31.8
+					<!--BW_String-->
+				</armor_11>
+				<armor_12>
+					50.8
+					<!--BW_String-->
+				</armor_12>
 				<armor_13>200</armor_13>
 				<armor_14>200</armor_14>
-				<armor_15>100</armor_15>
-				<armor_16>45</armor_16>
-				<armor_17>110</armor_17>
-				<armor_18>300</armor_18>
+				<armor_15>
+					101.6
+					<!--BW_String-->
+				</armor_15>
+				<armor_16>
+					44.5
+					<!--BW_String-->
+				</armor_16>
+				<armor_17>108</armor_17>
+				<armor_18>
+					298.5
+					<!--BW_String-->
+				</armor_18>
 				<armor_19>200</armor_19>
-				<armor_20>150</armor_20>
-				<armor_21>120</armor_21>
-				<armor_22>100</armor_22>
+				<armor_20>
+					152.4
+					<!--BW_String-->
+				</armor_20>
+				<armor_21>
+					120.7
+					<!--BW_String-->
+				</armor_21>
+				<armor_22>
+					101.6
+					<!--BW_String-->
+				</armor_22>
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>16750</weight>
-			<maxHealth>440</maxHealth>
-			<rotationSpeed>20</rotationSpeed>
+			<maxHealth>380</maxHealth>
+			<rotationSpeed>25</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>170</maxHealth>
 				<maxRegenHealth>85</maxRegenHealth>
-				<repairCost>
-					1.0
-					<!--BW_String-->
-				</repairCost>
+				<repairCost>9</repairCost>
 			</turretRotatorHealth>
-			<circularVisionRadius>390</circularVisionRadius>
+			<circularVisionRadius>380</circularVisionRadius>
 			<surveyingDeviceHealth>
-				<maxHealth>120</maxHealth>
-				<maxRegenHealth>60</maxRegenHealth>
-				<repairCost>
-					1.0
-					<!--BW_String-->
-				</repairCost>
+				<maxHealth>110</maxHealth>
+				<maxRegenHealth>55</maxRegenHealth>
+				<repairCost>2</repairCost>
 			</surveyingDeviceHealth>
 			<guns>
 				<Twin_110_mm_Gun_MBC>
 					<maxAmmo>80</maxAmmo>
 					<armor>
 						<armor_1>
-							350
+							349.3
+							<!--BW_String-->
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_1>
 						<armor_2>
-							185
+							184.2
+							<!--BW_String-->
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_2>
 						<armor_3>
@@ -3013,15 +3114,18 @@
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_4>
 						<armor_5>
-							60
+							60.3
+							<!--BW_String-->
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_5>
 						<armor_6>
-							60
+							60.3
+							<!--BW_String-->
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_6>
 						<armor_7>
-							100
+							101.6
+							<!--BW_String-->
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_7>
 						<armor_8>
@@ -3029,23 +3133,28 @@
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_8>
 						<armor_9>
-							100
+							101.6
+							<!--BW_String-->
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_9>
 						<armor_10>
-							300
+							298.5
+							<!--BW_String-->
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_10>
 						<armor_11>
-							320
+							320.7
+							<!--BW_String-->
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_11>
 						<armor_12>
-							270
+							269.9
+							<!--BW_String-->
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_12>
 						<armor_13>
-							270
+							269.9
+							<!--BW_String-->
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_13>
 						<armor_14>
@@ -3053,11 +3162,13 @@
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_14>
 						<armor_15>
-							100
+							101.6
+							<!--BW_String-->
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_15>
 						<armor_16>
-							150
+							152.4
+							<!--BW_String-->
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_16>
 						<gun>40</gun>
@@ -3066,7 +3177,7 @@
 					<pitchLimits>
 						<minPitch>0 -20 1 -20</minPitch>
 						<maxPitch>
-							0.00000 6 0.40000 6 0.41500 5.50 0.58500 5.50 0.60000 6 1.00000 6
+							0.00000 7 0.40000 7 0.41500 5.50 0.58500 5.50 0.60000 7 1.00000 7
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
@@ -3075,10 +3186,13 @@
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
 					<shotDispersionRadius>
-						1.2
+						1.1
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>7</reloadTime>
+					<reloadTime>
+						7.5
+						<!--BW_String-->
+					</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
 							0.01
@@ -3094,13 +3208,13 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<aimingTime>
-						3.5
+						3.3
 						<!--BW_String-->
 					</aimingTime>
 					<multiGunEffects>shot_dualgun_large_mb_L shot_dualgun_large_mb_R</multiGunEffects>
 					<twinGun>
 						<afterShotDelay>1</afterShotDelay>
-						<twinGunReloadTime>14</twinGunReloadTime>
+						<twinGunReloadTime>15</twinGunReloadTime>
 						<gunMarkerOffset>
 							0.213
 							<!--BW_String-->
@@ -3962,7 +4076,7 @@
 			</customization>
 			<wwturretRotatorSoundManual>tur_mech_trav</wwturretRotatorSoundManual>
 			<physicsShape>
-				0.99 0.304 0.951 0 0.342 -0.794 0.297 0 0.598 0.5 0.206 0.5 0.108 0.356 0
+				0.99 0.279 0.974 0 0.636 0.066 0.328 0 0.598 0.5 0.206 0.5 0.199 0.204 0
 				<!--BW_String-->
 			</physicsShape>
 			<camouflage>
@@ -3985,8 +4099,8 @@
 		<detailed>
 			<engines>
 				<Rolls_Royce_Griffon_180_B>
-					<smplEnginePower>1300</smplEnginePower>
-					<smplFwMaxSpeed>25</smplFwMaxSpeed>
+					<smplEnginePower>1250</smplEnginePower>
+					<smplFwMaxSpeed>20</smplFwMaxSpeed>
 				</Rolls_Royce_Griffon_180_B>
 			</engines>
 			<chassis>
@@ -3995,19 +4109,19 @@
 					<grounds>
 						<soft>
 							<rollingFriction>
-								0.18515
+								0.161
 								<!--BW_String-->
 							</rollingFriction>
 						</soft>
 						<medium>
 							<rollingFriction>
-								0.10465
+								0.0966
 								<!--BW_String-->
 							</rollingFriction>
 						</medium>
 						<firm>
 							<rollingFriction>
-								0.08855
+								0.0805
 								<!--BW_String-->
 							</rollingFriction>
 						</firm>

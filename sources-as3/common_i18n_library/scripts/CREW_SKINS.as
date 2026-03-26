@@ -492,6 +492,84 @@ package
       public static const NY25_BLOGGER14_LASTNAME:String = "#crew_skins:ny25_blogger14/LastName";
       
       public static const NY25_BLOGGER14_DESCR:String = "#crew_skins:ny25_blogger14/Descr";
+      
+      public static const COOLCUMBERGUYS_NAME:String = "#crew_skins:coolcumberguys/Name";
+      
+      public static const COOLCUMBERGUYS_LASTNAME:String = "#crew_skins:coolcumberguys/LastName";
+      
+      public static const COOLCUMBERGUYS_DESCR:String = "#crew_skins:coolcumberguys/Descr";
+      
+      public static const BIRTHDAYCYGAN_NAME:String = "#crew_skins:birthdaycygan/Name";
+      
+      public static const BIRTHDAYCYGAN_LASTNAME:String = "#crew_skins:birthdaycygan/LastName";
+      
+      public static const BIRTHDAYCYGAN_DESCR:String = "#crew_skins:birthdaycygan/Descr";
+      
+      public static const BIRTHDAYDAKILLZOR_NAME:String = "#crew_skins:birthdaydakillzor/Name";
+      
+      public static const BIRTHDAYDAKILLZOR_LASTNAME:String = "#crew_skins:birthdaydakillzor/LastName";
+      
+      public static const BIRTHDAYDAKILLZOR_DESCR:String = "#crew_skins:birthdaydakillzor/Descr";
+      
+      public static const BIRTHDAYEEK_NAME:String = "#crew_skins:birthdayeek/Name";
+      
+      public static const BIRTHDAYEEK_LASTNAME:String = "#crew_skins:birthdayeek/LastName";
+      
+      public static const BIRTHDAYEEK_DESCR:String = "#crew_skins:birthdayeek/Descr";
+      
+      public static const AFTERPARTYDEZGAMEZ_NAME:String = "#crew_skins:afterpartydezgamez/Name";
+      
+      public static const AFTERPARTYDEZGAMEZ_LASTNAME:String = "#crew_skins:afterpartydezgamez/LastName";
+      
+      public static const AFTERPARTYDEZGAMEZ_DESCR:String = "#crew_skins:afterpartydezgamez/Descr";
+      
+      public static const BERTDAYMAILAND_NAME:String = "#crew_skins:bertdaymailand/Name";
+      
+      public static const BERTDAYMAILAND_LASTNAME:String = "#crew_skins:bertdaymailand/LastName";
+      
+      public static const BERTDAYMAILAND_DESCR:String = "#crew_skins:bertdaymailand/Descr";
+      
+      public static const NAROZENINOVYMARTY_NAME:String = "#crew_skins:narozeninovymarty/Name";
+      
+      public static const NAROZENINOVYMARTY_LASTNAME:String = "#crew_skins:narozeninovymarty/LastName";
+      
+      public static const NAROZENINOVYMARTY_DESCR:String = "#crew_skins:narozeninovymarty/Descr";
+      
+      public static const BIRTHDAYMOUZAKROBAT_NAME:String = "#crew_skins:birthdaymouzakrobat/Name";
+      
+      public static const BIRTHDAYMOUZAKROBAT_LASTNAME:String = "#crew_skins:birthdaymouzakrobat/LastName";
+      
+      public static const BIRTHDAYMOUZAKROBAT_DESCR:String = "#crew_skins:birthdaymouzakrobat/Descr";
+      
+      public static const BIRTHDAYNEWMULTISHOW_NAME:String = "#crew_skins:birthdaynewmultishow/Name";
+      
+      public static const BIRTHDAYNEWMULTISHOW_LASTNAME:String = "#crew_skins:birthdaynewmultishow/LastName";
+      
+      public static const BIRTHDAYNEWMULTISHOW_DESCR:String = "#crew_skins:birthdaynewmultishow/Descr";
+      
+      public static const BLINGBLINGORZY_NAME:String = "#crew_skins:blingblingorzy/Name";
+      
+      public static const BLINGBLINGORZY_LASTNAME:String = "#crew_skins:blingblingorzy/LastName";
+      
+      public static const BLINGBLINGORZY_DESCR:String = "#crew_skins:blingblingorzy/Descr";
+      
+      public static const BIRTHDAYKINGBABY_NAME:String = "#crew_skins:birthdaykingbaby/Name";
+      
+      public static const BIRTHDAYKINGBABY_LASTNAME:String = "#crew_skins:birthdaykingbaby/LastName";
+      
+      public static const BIRTHDAYKINGBABY_DESCR:String = "#crew_skins:birthdaykingbaby/Descr";
+      
+      public static const BIRTHDAYSKILL4LTU_NAME:String = "#crew_skins:birthdayskill4ltu/Name";
+      
+      public static const BIRTHDAYSKILL4LTU_LASTNAME:String = "#crew_skins:birthdayskill4ltu/LastName";
+      
+      public static const BIRTHDAYSKILL4LTU_DESCR:String = "#crew_skins:birthdayskill4ltu/Descr";
+      
+      public static const BIRTHDAYTALKTOMEGOOSE_NAME:String = "#crew_skins:birthdaytalktomegoose/Name";
+      
+      public static const BIRTHDAYTALKTOMEGOOSE_LASTNAME:String = "#crew_skins:birthdaytalktomegoose/LastName";
+      
+      public static const BIRTHDAYTALKTOMEGOOSE_DESCR:String = "#crew_skins:birthdaytalktomegoose/Descr";
        
       
       public function CREW_SKINS()

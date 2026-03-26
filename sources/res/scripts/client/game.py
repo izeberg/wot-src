@@ -1,5 +1,7 @@
 from __future__ import absolute_import, print_function
-import cPickle, functools, locale, sys, zlib, Account, AreaDestructibles, BigWorld, CommandMapping, GUI, MusicControllerWWISE, Settings, SoundGroups, TriggersManager, VOIP, WebBrowser, constants, persistent_data_cache as pdc, services_config
+import functools, locale, sys, zlib
+from future.moves import pickle
+import Account, AreaDestructibles, BigWorld, CommandMapping, GUI, MusicControllerWWISE, Settings, SoundGroups, TriggersManager, VOIP, WebBrowser, constants, persistent_data_cache as pdc, services_config
 from MemoryCriticalController import g_critMemHandler
 from debug_utils import LOG_CURRENT_EXCEPTION, LOG_DEBUG, LOG_ERROR, LOG_NOTE
 from gui import onRepeatKeyEvent, g_keyEventHandlers, g_mouseEventHandlers, InputHandler
@@ -232,7 +234,7 @@ def onRecreateDevice():
 
 def onStreamComplete(streamID, desc, data):
     try:
-        origPacketLen, origCrc32 = cPickle.loads(desc)
+        origPacketLen, origCrc32 = pickle.loads(desc)
     except Exception:
         origPacketLen, origCrc32 = (-1, -1)
 
@@ -386,7 +388,7 @@ def addChatMsg(*msg):
 def expandMacros(line):
     import re
     from python_macroses import g_macroses
-    patt = '\\$(' + functools.reduce(lambda x, y: x + '|' + y, g_macroses.iterkeys()) + ')(\\W|\\Z)'
+    patt = '\\$(' + functools.reduce(lambda x, y: x + '|' + y, g_macroses) + ')(\\W|\\Z)'
 
     def repl(match):
         return g_macroses[match.group(1)] + match.group(2)

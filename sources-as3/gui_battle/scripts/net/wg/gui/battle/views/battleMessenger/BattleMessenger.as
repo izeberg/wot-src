@@ -212,11 +212,6 @@ package net.wg.gui.battle.views.battleMessenger
          App.toolTipMgr.hide();
       }
       
-      public function get isHistoryEnabled() : Boolean
-      {
-         return this._isHistoryEnabled;
-      }
-      
       override protected function setupList(param1:BattleMessengerSettingsVO) : void
       {
          this._maxMessagesInHistory = param1.maxLinesCount;
@@ -288,6 +283,10 @@ package net.wg.gui.battle.views.battleMessenger
       override protected function onDispose() : void
       {
          var _loc1_:BattleMessage = null;
+         this._scheduler.cancelTask(this.selectMessageInputField);
+         this._scheduler.cancelTask(this.scrollMessages);
+         this.cancelNextMessageShow();
+         this._scheduler = null;
          if(this._userInteractionCmp)
          {
             this._toxicPanelData = null;
@@ -330,10 +329,6 @@ package net.wg.gui.battle.views.battleMessenger
          this.historyLastMessageBtn = null;
          this.tooltipSymbol = null;
          this.hit = null;
-         this._scheduler.cancelTask(this.selectMessageInputField);
-         this._scheduler.cancelTask(this.scrollMessages);
-         this.cancelNextMessageShow();
-         this._scheduler = null;
          this._appStage = null;
          super.onDispose();
       }
@@ -520,15 +515,6 @@ package net.wg.gui.battle.views.battleMessenger
          this._userInteractionCmp.syncUpdater(param1,this._toxicPanelData);
       }
       
-      public function setMessagesInteraction(param1:Boolean) : void
-      {
-         this.as_toggleCtrlPressFlag(param1);
-         if(param1)
-         {
-            this.setPanelElementsVisibility(false);
-         }
-      }
-      
       public function getComponentForFocus() : InteractiveObject
       {
          return this.messageInputField;
@@ -578,14 +564,6 @@ package net.wg.gui.battle.views.battleMessenger
          }
       }
       
-      public function updateSwapAreaHeight(param1:Number) : void
-      {
-         this.swapArea.graphics.clear();
-         drawRect(this.swapArea,0,param1 - BOTTOM_SIDE_Y_POSITION,BOTTOM_SIDE_WIDTH,BOTTOM_SIDE_Y_POSITION);
-         drawRect(this.swapArea,0,0,!!this._isSmallState ? Number(BOTTOM_SIDE_WIDTH) : Number(BattleMessage.DEFAULT_TEXT_WIDTH),param1 - BOTTOM_SIDE_Y_POSITION,false);
-         this.swapArea.y = -param1 + BOTTOM_SIDE_Y_POSITION;
-      }
-      
       public function setFreeSpace(param1:Number = NaN) : void
       {
          if(this._freeSpace == param1)
@@ -595,6 +573,30 @@ package net.wg.gui.battle.views.battleMessenger
          this._freeSpace = param1;
          this.checkBigMessagesInSmallScreen(true);
          this.updateMessagesPosition();
+      }
+      
+      public function setInputVisible(param1:Boolean) : void
+      {
+         this.receiverField.visible = param1;
+         this.itemBackground.visible = param1;
+         this.messageInputField.visible = param1;
+      }
+      
+      public function setMessagesInteraction(param1:Boolean) : void
+      {
+         this.as_toggleCtrlPressFlag(param1);
+         if(param1)
+         {
+            this.setPanelElementsVisibility(false);
+         }
+      }
+      
+      public function updateSwapAreaHeight(param1:Number) : void
+      {
+         this.swapArea.graphics.clear();
+         drawRect(this.swapArea,0,param1 - BOTTOM_SIDE_Y_POSITION,BOTTOM_SIDE_WIDTH,BOTTOM_SIDE_Y_POSITION);
+         drawRect(this.swapArea,0,0,!!this._isSmallState ? Number(BOTTOM_SIDE_WIDTH) : Number(BattleMessage.DEFAULT_TEXT_WIDTH),param1 - BOTTOM_SIDE_Y_POSITION,false);
+         this.swapArea.y = -param1 + BOTTOM_SIDE_Y_POSITION;
       }
       
       private function removeMessageFromDisplayList(param1:BattleMessage) : void
@@ -609,13 +611,6 @@ package net.wg.gui.battle.views.battleMessenger
          {
             this._userInteractionCmp.syncBackground(param1.width);
          }
-      }
-      
-      public function setInputVisible(param1:Boolean) : void
-      {
-         this.receiverField.visible = param1;
-         this.itemBackground.visible = param1;
-         this.messageInputField.visible = param1;
       }
       
       private function pushMessageWithToxicLogic(param1:BattleMessage) : void
@@ -671,10 +666,17 @@ package net.wg.gui.battle.views.battleMessenger
          {
             return;
          }
-         this.updateFocus(param1);
+         if(this.isEnableReceiver)
+         {
+            this.updateFocus(param1);
+            this.switchListenersViewElements(true);
+            if(this._isEnterButtonPressed)
+            {
+               focusReceivedS();
+            }
+         }
          onMouseOutHandler(null);
          this.setPanelElementsVisibility(true);
-         this.switchListenersViewElements(true);
          this.setAlpha(Values.DEFAULT_ALPHA);
          this.updateReceiverField();
          this.showLastIndexMessages();
@@ -683,10 +685,6 @@ package net.wg.gui.battle.views.battleMessenger
             App.utils.IME.setVisible(true);
             dispatchEvent(new FocusRequestEvent(FocusRequestEvent.REQUEST_FOCUS,this));
             this.messageInputField.setSelection(0,this.messageInputField.length);
-         }
-         if(this._isEnterButtonPressed)
-         {
-            focusReceivedS();
          }
       }
       
@@ -1332,6 +1330,11 @@ package net.wg.gui.battle.views.battleMessenger
          }
       }
       
+      public function get isHistoryEnabled() : Boolean
+      {
+         return this._isHistoryEnabled;
+      }
+      
       public function set isSmallState(param1:Boolean) : void
       {
          this._isSmallState = param1;
@@ -1401,7 +1404,7 @@ package net.wg.gui.battle.views.battleMessenger
       
       private function onStageMouseWheelHandler(param1:MouseEvent = null) : void
       {
-         if(param1 && this._messages.length > 0 && this._isMessengerOver)
+         if(param1 && this._isMessengerOver && this._messages.length > 0)
          {
             if(param1.delta > 0 && !this.historyUpBtn.enabled || param1.delta < 0 && !this.historyDownBtn.enabled)
             {

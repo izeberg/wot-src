@@ -97,7 +97,6 @@ package net.wg.gui.lobby.settings.components
                this.label = data.label;
                if(!this.header)
                {
-                  this.keyInput.keyDefault = data.keyDefault;
                   this.keyInput.setupKey(data.keysRang,data.key);
                }
             }
@@ -134,6 +133,7 @@ package net.wg.gui.lobby.settings.components
       private function keyCodeWasUsed(param1:Number) : Array
       {
          var _loc7_:KeyProps = null;
+         var _loc8_:* = undefined;
          if(param1 == KeyProps.KEY_NONE)
          {
             return [];
@@ -150,11 +150,12 @@ package net.wg.gui.lobby.settings.components
          var _loc6_:uint = 0;
          while(_loc6_ < _loc3_)
          {
-            if(!_loc2_[_loc6_].header && _loc6_ != this.index)
+            _loc8_ = _loc2_[_loc6_];
+            if(_loc6_ != this.index && !_loc8_.header)
             {
-               if(this.keyInput.keyCode == _loc2_[_loc6_].key && (this._codependentID == null || !(this._codependentID && this._codependentID == _loc2_[_loc6_].id && _loc2_[_loc6_].keysRang.indexOf(_loc4_) > -1)))
+               if(this.keyInput.keyCode == _loc8_.key && (this._codependentID == null || !(this._codependentID && this._codependentID == _loc8_.id && _loc8_.keysRang.indexOf(_loc4_) > -1)))
                {
-                  _loc5_.push(_loc2_[_loc6_]);
+                  _loc5_.push(_loc8_);
                }
             }
             _loc6_++;

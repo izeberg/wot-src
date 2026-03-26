@@ -68,18 +68,6 @@ package net.wg.gui.battle.views.damagePanel.components.tankIndicator
          super.onDispose();
       }
       
-      public function onArrivedConstraint(param1:Boolean) : void
-      {
-         if(param1)
-         {
-            this._hull.showTurretConstraintEnabled();
-         }
-         else
-         {
-            this._hull.showTurretConstraintDisabled();
-         }
-      }
-      
       public function reset() : void
       {
          if(this._hull != null)

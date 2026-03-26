@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>nodes_01</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>HP_gunJoint</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 6.400000 0.000000</row3>
+				</transform>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_turret_01</identifier>
+					<fx>shaders/std_effects/PBS_tank.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						g_detailUVTiling
+						<Vector4>3.506850 3.506850 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_detailPowerGloss
+						<Float>
+							0.35
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_maskBias
+						<Float>
+							0.18
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailPower
+						<Float>5</Float>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>last_stand/vehicles/german/G00_Obelisk_01_LS_bot/G00_Obelisk_01_LS_bot_turret_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>last_stand/vehicles/german/G00_Obelisk_01_LS_bot/G00_Obelisk_01_LS_bot_turret_01_ANM.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>last_stand/vehicles/german/G00_Obelisk_01_LS_bot/G00_Obelisk_01_LS_bot_turret_01_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>last_stand/vehicles/german/G00_Obelisk_01_LS_bot/G00_Obelisk_01_LS_bot_turret_01_AO.dds</Texture>
+					</property>
+					<property>
+						g_useDetail
+						<Bool>false</Bool>
+					</property>
+					<property>
+						camoEmissionParams
+						<Vector4>3.000000 3.000000 0.000000 1.000000</Vector4>
+					</property>
+					<property>
+						camoEmissionMap
+						<Texture>last_stand/vehicles/german/G00_Obelisk_01_LS_bot/G00_Obelisk_01_LS_bot_turret_01_EM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.382685 -0.070904 -0.008367</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-2.333182 -4.352554 -2.992031</min>
+		<max>1.567811 4.210745 2.975297</max>
+	</boundingBox>
+	<geometrySize>415656</geometrySize>
+</root>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A195_Gorilla/crash/lod1/Gun_01</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/american/A195_Gorilla/crash/lod2/Gun_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.495000 -0.432548 -2.449614</min>
+		<max>0.495000 0.685499 5.495168</max>
+	</visibilityBox>
+</root>

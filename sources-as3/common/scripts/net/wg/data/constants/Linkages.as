@@ -539,7 +539,13 @@ package net.wg.data.constants
       
       public static const TEMPERATURE_GUN_HEAT_ZONES:String = "TemperatureGunHeatZonesWidgetUI";
       
+      public static const LOW_CHARGE_SHOT:String = "LowChargeShotWidgetUI";
+      
       public static const STAGED_JET_BOOSTERS:String = "StagedJetBoostersWidgetUI";
+      
+      public static const PROPELLANT_GUN:String = "PropellantGunWidgetUI";
+      
+      public static const WHEELED_DASH:String = "WheeledDashWidgetUI";
       
       public static const CONCENTRATION_DECOR_CROSSHAIR:String = "ConcentrationCrosshairUI";
       

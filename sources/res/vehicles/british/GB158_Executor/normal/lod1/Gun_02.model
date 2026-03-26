@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB158_Executor/normal/lod1/Gun_02</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/british/GB158_Executor/normal/lod2/Gun_02</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.355071 -0.261163 0.137042</min>
+		<max>
+			0.356619 0.286683 6.11661
+			<!--BW_String-->
+		</max>
+	</visibilityBox>
+</root>

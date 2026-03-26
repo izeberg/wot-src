@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB151_Headshaker/normal/lod0/Chassis</nodefullVisual>
+	<parent>vehicles/british/GB151_Headshaker/normal/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.582027 -0.000878 -3.580291</min>
+		<max>1.582027 1.118439 3.417409</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

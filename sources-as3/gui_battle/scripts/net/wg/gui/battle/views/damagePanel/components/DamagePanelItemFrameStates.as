@@ -27,30 +27,6 @@ package net.wg.gui.battle.views.damagePanel.components
          }
       }
       
-      public function get state() : String
-      {
-         return this._state;
-      }
-      
-      public function set state(param1:String) : void
-      {
-         if(this._state != param1)
-         {
-            this.setStateManually(param1);
-         }
-      }
-      
-      public function get alwaysVisible() : Boolean
-      {
-         return this._alwaysVisible;
-      }
-      
-      public function set alwaysVisible(param1:Boolean) : void
-      {
-         this._alwaysVisible = param1;
-         invalidateState();
-      }
-      
       protected function setStateManually(param1:String) : void
       {
          this._state = param1;
@@ -65,6 +41,25 @@ package net.wg.gui.battle.views.damagePanel.components
       protected function applyState() : void
       {
          gotoAndPlay(this._state);
+      }
+      
+      public function get state() : String
+      {
+         return this._state;
+      }
+      
+      public function set state(param1:String) : void
+      {
+         if(this._state != param1)
+         {
+            this.setStateManually(param1);
+         }
+      }
+      
+      public function set alwaysVisible(param1:Boolean) : void
+      {
+         this._alwaysVisible = param1;
+         invalidateState();
       }
    }
 }

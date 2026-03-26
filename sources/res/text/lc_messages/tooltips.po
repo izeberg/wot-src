@@ -540,6 +540,17 @@ msgstr ""
 "в экран. Наносит урон только в случае пробития брони. Довольно редко "
 "рикошетит. Не теряет бронепробиваемость с расстоянием."
 
+msgid "advanced/LOW_CHARGE_SHOT/fireMode"
+msgstr "Специальная механика"
+
+msgid "advanced/LOW_CHARGE_SHOT/fireRate"
+msgstr "позволяет стрелять раньше"
+
+msgid "advanced/LOW_CHARGE_SHOT/footer"
+msgstr ""
+"%(fireMode)s для орудия машины, которая %(fireRate)s с изменёнными "
+"характеристиками снаряда."
+
 msgid "advanced/additionalInvisibilityDevice"
 msgstr ""
 "Эффективность зависит от типа техники. Увеличивает незаметность как "
@@ -8113,6 +8124,28 @@ msgstr "?empty?"
 msgid "notrecruitedtankman/girls_und_panzer_alisa/label"
 msgstr "?empty?"
 
+msgid "notrecruitedtankman/girls_und_panzer_caesar/desc"
+msgstr ""
+"Цезарь выполняет обязанности заряжающей с усердием, целеустремлённостью и "
+"трудолюбием, достойными императора."
+
+msgid "notrecruitedtankman/girls_und_panzer_caesar/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/girls_und_panzer_caesar/label"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/girls_und_panzer_erwin/desc"
+msgstr ""
+"Эрвин — непоколебимая предводительница команды «Кабасан», которая знает о "
+"танковых сражениях всё."
+
+msgid "notrecruitedtankman/girls_und_panzer_erwin/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/girls_und_panzer_erwin/label"
+msgstr "?empty?"
+
 msgid "notrecruitedtankman/girls_und_panzer_kei/desc"
 msgstr ""
 "В лице Кей ученицы школы «Сандерс» обрели опытную предводительницу, для "
@@ -8137,6 +8170,27 @@ msgid "notrecruitedtankman/girls_und_panzer_naomi/howToGetInfo"
 msgstr "?empty?"
 
 msgid "notrecruitedtankman/girls_und_panzer_naomi/label"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/girls_und_panzer_oryou/desc"
+msgstr ""
+"Орё — хладнокровный и сосредоточенный мехвод, вдохновляющийся благородными "
+"традициями Японии эпохи Реставрации Мэйдзи."
+
+msgid "notrecruitedtankman/girls_und_panzer_oryou/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/girls_und_panzer_oryou/label"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/girls_und_panzer_saemonza/desc"
+msgstr ""
+"Подобно самураю, наводчица Саэмондза наносит удары быстро и решительно."
+
+msgid "notrecruitedtankman/girls_und_panzer_saemonza/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/girls_und_panzer_saemonza/label"
 msgstr "?empty?"
 
 msgid "notrecruitedtankman/girls_und_panzer_saunders/desc"
@@ -8960,6 +9014,70 @@ msgstr "?empty?"
 msgid "notrecruitedtankman/onslaught_p4_4/label"
 msgstr "Натиск. Год Мантикоры"
 
+msgid "notrecruitedtankman/onslaught_p5_1/desc"
+msgstr ""
+"Александру никогда не сидится на месте: он то бегает до седьмого пота, то "
+"занимается зимним плаванием, то преодолевает препятствия. На поле боя то же "
+"самое: как настоящий поляк по крови и по духу, он будет вести наступление, "
+"пока не иссякнут силы. В детстве Александр разбирал машинки, чтобы узнать, "
+"что внутри, а теперь превращает груды металла в работающие системы. Он "
+"проверяет каждую деталь с дисциплиной фронтовика и скрупулёзностью механика,"
+" ведь от этого зависит жизнь экипажа и исход следующей атаки."
+
+msgid "notrecruitedtankman/onslaught_p5_1/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/onslaught_p5_1/label"
+msgstr "Натиск. Год Дракона"
+
+msgid "notrecruitedtankman/onslaught_p5_2/desc"
+msgstr ""
+"Наталья — опаснейший снайпер. Она видит общую картину даже тогда, когда "
+"смотрит в прицел, и её поразительная проницательность выходит далеко за "
+"рамки сражения. Боевых товарищей не перестаёт удивлять, как она интуитивно "
+"читает людей, чувствует их намерения и делает правильный выбор ещё до того, "
+"как остальные осознают, что его вообще нужно было делать. Решительная и "
+"смелая, она вступает в бой без единого слова и с предельной "
+"сосредоточенностью на поставленной задаче."
+
+msgid "notrecruitedtankman/onslaught_p5_2/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/onslaught_p5_2/label"
+msgstr "Натиск. Год Дракона"
+
+msgid "notrecruitedtankman/onslaught_p5_3/desc"
+msgstr ""
+"Алеш — тот ещё соня. Он способен вздремнуть почти где угодно: хоть на полу "
+"блиндажа, хоть на корпусе танка. Особенно его убаюкивает гул двигателя. Ещё "
+"Алеш — большой любитель поесть, и он никогда не упустит шанс осмотреть паёк."
+" Несмотря на любовь к неспешному темпу жизни, этот общительный великан — "
+"хороший боец, способный ввернуть шутку и поднять боевой дух экипажа даже в "
+"пылу сражения. В мирной жизни он любит проводить время со своей маленькой "
+"дочкой, ради которой возвращается целым и невредимым с каждого задания."
+
+msgid "notrecruitedtankman/onslaught_p5_3/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/onslaught_p5_3/label"
+msgstr "Натиск. Год Дракона"
+
+msgid "notrecruitedtankman/onslaught_p5_4/desc"
+msgstr ""
+"У Евгена есть музыкальное образование и особый талант находить порядок в "
+"хаосе. Он стремится понять и преодолеть каждый вызов, каким бы сложным тот "
+"ни казался. Бежать от проблем — это не про него. Из-за своего неуёмного "
+"любопытства Евген никогда не откажется даже от самой сложной задачи, но и не"
+" станет бросаться вперёд очертя голову. Он доверяет инстинктам и сохраняет "
+"хладнокровие под давлением: слушает, анализирует, а затем действует в ритме "
+"сражения, пока другие колеблются."
+
+msgid "notrecruitedtankman/onslaught_p5_4/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/onslaught_p5_4/label"
+msgstr "Натиск. Год Дракона"
+
 msgid "notrecruitedtankman/oow21_strategist_commander/desc"
 msgstr ""
 "Офицер «старой школы» — взвешенный и рассудительный. Решения принимает "
@@ -9068,6 +9186,23 @@ msgstr "Уникальный командир"
 
 msgid "notrecruitedtankman/skillsTitle"
 msgstr "Навыки"
+
+msgid "notrecruitedtankman/southpawBoxer/desc"
+msgstr ""
+"Опытный боксёр Леонард Нокс — или просто «Левша», как его прозвали спарринг-"
+"партнёры из-за правосторонней стойки — увлекался военной историей ещё до "
+"того, как впервые надел перчатки и капу. И это о многом говорит, ведь он "
+"начал заниматься боксом, когда без табуретки не дотягивался до питьевого "
+"фонтанчика в спортзале. Звуки «бум» и «бдыщ» всегда ласкали слух Ленни, "
+"поэтому неудивительно, что в конце концов он стал командиром танка. Тесный "
+"ринг сменили обширные поля сражений, но Ленни, как и раньше, не боится "
+"выступать выше своей весовой категории."
+
+msgid "notrecruitedtankman/southpawBoxer/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/southpawBoxer/label"
+msgstr "?empty?"
 
 msgid "notrecruitedtankman/tankman/desc"
 msgstr "?empty?"
@@ -10715,6 +10850,94 @@ msgstr "?empty?"
 msgid "notrecruitedtankman/tankmen_bp19_4/label"
 msgstr "Боевой пропуск, XIX сезон"
 
+msgid "notrecruitedtankman/tankmen_bp19_5/desc"
+msgstr ""
+"Не стоит заблуждаться: Поли Ломбардо может и любит изредка поострить, но "
+"когда того требует дело, проломить парочку голов ему тоже не впервой. "
+"Бывалый гангстер с жизнерадостным настроем, который сразу проникается "
+"симпатией к Томми, Поли старается поддерживать лёгкую атмосферу — даже когда"
+" обстановка вовсе к этому не располагает. Однако жизнь в семье тяготит его "
+"куда сильнее, чем он готов признать. Обычно дружелюбный и непринуждённый, он"
+" борется с глубоким упадком духа и вспышками ярости, способными привести к "
+"разрушительным последствиям."
+
+msgid "notrecruitedtankman/tankmen_bp19_5/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp19_5/label"
+msgstr "Боевой пропуск: Mafia"
+
+msgid "notrecruitedtankman/tankmen_bp19_6/desc"
+msgstr ""
+"Всё, что Томми Анджело когда‑либо делал — и хорошее, и плохое — он делал "
+"ради своей семьи. Но он и подумать не мог, куда его это однажды приведёт. Он"
+" всего лишь пытался свести концы с концами, работая таксистом на улицах "
+"Лост-Хэвена, пока случайная встреча и стремительная погоня с парнями дона "
+"Сальери не перевернули его жизнь с ног на голову. Теперь, увязнув в "
+"преступной жизни и рэкете куда глубже, чем он мог ожидать, Томми стал "
+"посвящённым, который заслужил уважение окружающих нелёгким путём. Но что бы "
+"ни случилось, семья всё равно на первом месте. Всегда."
+
+msgid "notrecruitedtankman/tankmen_bp19_6/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp19_6/label"
+msgstr "Боевой пропуск: Mafia"
+
+msgid "notrecruitedtankman/tankmen_bp19_7/desc"
+msgstr ""
+"Лучший друг Сальери со времён их детства на Сицилии, Фрэнк Коллетти — верный"
+" консильери, который знает Дона лучше, чем кто-либо другой. Опытный "
+"посредник и рассудительный советник, он служит для семьи респектабельным "
+"представителем дел, которые сами по себе нередко далеки от "
+"респектабельности. Он знает, что кровопролитие вредит бизнесу, поэтому, где "
+"возможно, предостерегает от него: отчасти чтобы сохранить доверие клиентов, "
+"но ещё и потому, что ему по‑настоящему дороги Томми, Поли и Сэм. Однако его "
+"глубокая осведомлённость о внутренних механизмах семьи делает его "
+"первоочередной мишенью для тех, у кого есть счёты с доном Сальери."
+
+msgid "notrecruitedtankman/tankmen_bp19_7/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp19_7/label"
+msgstr "Боевой пропуск: Mafia"
+
+msgid "notrecruitedtankman/tankmen_bp19_8/desc"
+msgstr ""
+"Сэм Трапани — такой костолом, о каком только может мечтать любой дон: с "
+"уличной хваткой, дисциплинированный и яростно преданный семейному кодексу "
+"чести. Исполняя приказы Сальери по всей Маленькой Италии и за её пределами, "
+"он привык сначала стрелять, а думать... вернее, он понял, что лучше вообще "
+"не думать. Куда более немногословный и прямолинейный, чем его говорливый "
+"напарник Поли, Сэм считает, что сделать дело максимально эффективно — лучше "
+"любых слов. Им также движет сильное чувство справедливости, и он не станет "
+"колебаться, направив пистолет на любого, кто, по его мнению, нечестно с ним "
+"обошёлся."
+
+msgid "notrecruitedtankman/tankmen_bp19_8/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp19_8/label"
+msgstr "Боевой пропуск: Mafia"
+
+msgid "notrecruitedtankman/tankmen_bp19_9/desc"
+msgstr ""
+"Есть две вещи, которые дон Эннио Сальери терпеть не может: сквернословие и "
+"крыс. Сальери —харизматичный глава одной из двух семей, борющихся за "
+"контроль над криминальным бизнесом Лост-Хэвена. Он заработал репутацию "
+"уважаемой отеческой фигуры среди жителей Маленькой Италии, которых защищают "
+"его парни. И хотя он действительно заботится о тех, кто под его присмотром, "
+"бизнес для него превыше всего. Когда дело доходит до жёстких мер, маска отца"
+" общества спадает, обнажая беспощадного босса мафии. Так что если дон "
+"Сальери делает тебе предложение, лучше хорошенько подумай, прежде чем от "
+"него отказаться."
+
+msgid "notrecruitedtankman/tankmen_bp19_9/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp19_9/label"
+msgstr "Боевой пропуск: Mafia"
+
 msgid "notrecruitedtankman/tankmen_bp2_1/desc"
 msgstr ""
 "Если вы попросите характеристику на Рида у его командира, тот скорее всего "
@@ -12174,6 +12397,11 @@ msgstr ""
 
 msgid "prebattle/nameFilterButton/header"
 msgstr "Поиск по имени"
+
+msgid "prebattle/readyButton/vehiclesRequired3/body"
+msgstr ""
+"Для участия в режиме у вас в Ангаре должно быть как минимум 3 подходящие "
+"машины. Подробнее можно узнать на странице «О Натиске»."
 
 msgid "prebattle/upButton/active"
 msgstr "Переместить игрока из очереди в состав команды"
@@ -13664,6 +13892,26 @@ msgstr ""
 msgid "shell/basic/description/bold"
 msgstr "Базовый снаряд"
 
+msgid "shell/mechanics/lowChargeShot/description"
+msgstr ""
+"Специальная механика для орудия машины, которая позволяет стрелять раньше с "
+"изменёнными характеристиками снаряда."
+
+msgid "shell/mechanics/lowChargeShot/description/affectedParams"
+msgstr "изменёнными характеристиками снаряда"
+
+msgid "shell/mechanics/lowChargeShot/description/specialMode"
+msgstr "Специальная механика"
+
+msgid "shell/mechanics/lowChargeShot/infoBlock"
+msgstr "Для всех расчётов используются базовые характеристики"
+
+msgid "shell/mechanics/lowChargeShot/paramsHeader/basic"
+msgstr "Базовые:"
+
+msgid "shell/mechanics/lowChargeShot/paramsHeader/specific"
+msgstr "Изменённые:"
+
 msgid "showArtyHitOnMap/body"
 msgstr ""
 "Включение или отключение отображения на мини-карте области, по которой САУ "
@@ -14553,6 +14801,36 @@ msgstr ""
 "Процент заряда ионно-разрядного дожигателя, получаемый за секунду нахождения"
 " в турбо-режиме."
 
+msgid "tank_params/desc/lowChargeShotAvgDamage"
+msgstr ""
+"Среднее значение урона, наносимого снарядом с одиночным зарядом за один "
+"выстрел при пробитии брони. Разброс урона составляет от –25% до +25% от "
+"среднего значения."
+
+msgid "tank_params/desc/lowChargeShotBlockDuration"
+msgstr ""
+"Время до полной перезарядки, в течение которого нельзя выстрелить снарядом с"
+" одиночным зарядом."
+
+msgid "tank_params/desc/lowChargeShotDispertion"
+msgstr ""
+"Увеличение разброса орудия при выстреле снарядом с одиночным зарядом. "
+"Показывает, на сколько метров снаряд может отклониться от точки прицеливания"
+" за каждые 100 метров расстояния до цели."
+
+msgid "tank_params/desc/lowChargeShotPenetration"
+msgstr ""
+"Средняя толщина брони, пробиваемая снарядом с одиночным зарядом с учётом его"
+" нормализации. Разброс составляет от –25% до +25% от среднего значения."
+
+msgid "tank_params/desc/lowChargeShotRateOfFire"
+msgstr ""
+"Увеличение количества выстрелов в минуту при стрельбе снарядами с одиночным "
+"зарядом (в сравнении с обычными)."
+
+msgid "tank_params/desc/lowChargeShotVelocity"
+msgstr "Скорость полёта снаряда с одиночным зарядом."
+
 msgid "tank_params/desc/maxAccuracyLevel"
 msgstr "Максимальное количество уровней точности."
 
@@ -14633,6 +14911,43 @@ msgstr "Время возврата с полного преднагрева д�
 msgid "tank_params/desc/preheatTransitionDelay"
 msgstr ""
 "Время задержки, при которой преднагрев не увеличивается и не уменьшается."
+
+msgid "tank_params/desc/propellantChargeLimit"
+msgstr ""
+"Максимальный уровень заряда, которого можно достичь без отключения "
+"ограничителя."
+
+msgid "tank_params/desc/propellantChargeSpendingAfterShot"
+msgstr "Количество заряда, теряемого при выстреле."
+
+msgid "tank_params/desc/propellantChargingPerSec"
+msgstr "Количество заряда, набираемого автоматически за секунду."
+
+msgid "tank_params/desc/propellantDischargingPerSec"
+msgstr ""
+"Количество заряда, теряемого каждую секунду после включения ограничителя, до"
+" достижения лимита."
+
+msgid "tank_params/desc/propellantOverchargeSwitchCooldown"
+msgstr "Задержка, после которой ограничитель можно снова переключить."
+
+msgid "tank_params/desc/propellantPostLimitAimingTime"
+msgstr "Штраф ко времени сведения после превышения лимита."
+
+msgid "tank_params/desc/propellantPostLimitDamageBonus"
+msgstr ""
+"Бонус к среднему урону, получаемый при полном заряде и превышенном лимите."
+
+msgid "tank_params/desc/propellantPostLimitDamageSpike"
+msgstr "Резкое увеличение урона за выстрел при превышении лимита."
+
+msgid "tank_params/desc/propellantPostLimitDispersion"
+msgstr "Штраф к разбросу на 100 м при превышении лимита."
+
+msgid "tank_params/desc/propellantPreLimitDamageBonus"
+msgstr ""
+"Бонус к среднему урону, получаемый при полном заряде и активном "
+"ограничителе."
 
 msgid "tank_params/desc/radioDistance"
 msgstr ""
@@ -14900,6 +15215,28 @@ msgstr "Паспортная скорость машины в залповом �
 
 msgid "tank_params/desc/vehicleWeight"
 msgstr "Масса влияет на эффективность тарана."
+
+msgid "tank_params/desc/wheeledDashAbilityDuration"
+msgstr "Продолжительность действия механики после активации."
+
+msgid "tank_params/desc/wheeledDashAbilityReloadTime"
+msgstr "Время, необходимое для повторного использования механики."
+
+msgid "tank_params/desc/wheeledDashAbilityReloadTimeBonus"
+msgstr ""
+"Снижение времени подготовки механики после достижения минимальной скорости."
+
+msgid "tank_params/desc/wheeledDashEnginePower"
+msgstr "Увеличение мощности двигателя во время действия механики."
+
+msgid "tank_params/desc/wheeledDashReverseSpeed"
+msgstr "Бонус к максимальной скорости назад, обеспечиваемый механикой."
+
+msgid "tank_params/desc/wheeledDashSpeedLimits"
+msgstr "Скорость, необходимая для снижения времени подготовки механики."
+
+msgid "tank_params/desc/wheeledDashTopSpeed"
+msgstr "Бонус к максимальной скорости вперёд, обеспечиваемый механикой."
 
 msgid "tank_params/desc/wheeledSpeedModeSpeed"
 msgstr "Параметр указан для скоростного режима техники."
@@ -16233,6 +16570,47 @@ msgstr "Не подходит для взвода"
 
 msgid "vehicleStatus/willBeUnlockedInBattle/header"
 msgstr "Разблокируется в бою"
+
+msgid "vehicleStatus/wot_plus_exclusive_vehicle_disabled/header"
+msgstr "Недоступно"
+
+msgid "w2gt/zone/ambush/body"
+msgstr "Спрячьтесь и ждите, пока появится противник."
+
+msgid "w2gt/zone/ambush/header"
+msgstr "Засада"
+
+msgid "w2gt/zone/artillery/body"
+msgstr "Поддерживайте союзников огнём на ближнем фланге."
+
+msgid "w2gt/zone/artillery/header"
+msgstr "Артиллерия"
+
+msgid "w2gt/zone/brawling/body"
+msgstr "Сражайтесь на средней и ближней дистанции."
+
+msgid "w2gt/zone/brawling/header"
+msgstr "Схватка"
+
+msgid "w2gt/zone/recon/body"
+msgstr "Раскрывайте позиции противника."
+
+msgid "w2gt/zone/recon/header"
+msgstr "Разведка"
+
+msgid "w2gt/zone/universal/body"
+msgstr ""
+"Стреляйте по уязвимым целям на расстоянии и поддерживайте союзников в "
+"ближнем бою."
+
+msgid "w2gt/zone/universal/header"
+msgstr "Универсал"
+
+msgid "w2gtEnable/body"
+msgstr "Отображать рекомендуемые боевые зоны для вашей машины на мини-карте."
+
+msgid "w2gtEnable/header"
+msgstr "Боевые зоны на мини-карте"
 
 msgid "wallet/not_available_credits/body"
 msgstr ""

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import CGF, GenericComponents, GameplayDebug
 from cgf_client_common.entity_dyn_components import ReplicableDynamicScriptComponent
 from cgf_demo.test_replicable import TestReplicableComponentDescriptor

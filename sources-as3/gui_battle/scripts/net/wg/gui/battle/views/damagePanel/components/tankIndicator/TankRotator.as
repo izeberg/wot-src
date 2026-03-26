@@ -44,13 +44,13 @@ package net.wg.gui.battle.views.damagePanel.components.tankIndicator
       
       private var _hasYoh:Boolean = false;
       
-      private var _mainleftTrackState:String = "normal";
+      private var _mainLeftTrackState:String = "normal";
       
-      private var _secondleftTrackState:String = "normal";
+      private var _secondLeftTrackState:String = "normal";
       
-      private var _mainrightTrackState:String = "normal";
+      private var _mainRightTrackState:String = "normal";
       
-      private var _secondrightTrackState:String = "normal";
+      private var _secondRightTrackState:String = "normal";
       
       public function TankRotator()
       {
@@ -193,11 +193,11 @@ package net.wg.gui.battle.views.damagePanel.components.tankIndicator
          var _loc6_:String = param2;
          if(_loc3_ == VehicleModules.LEFT_TRACK)
          {
-            param2 = this._mainleftTrackState + MAIN_SUBFIX + this._secondleftTrackState + SECOND_POSTFIX;
+            param2 = this._mainLeftTrackState + MAIN_SUBFIX + this._secondLeftTrackState + SECOND_POSTFIX;
          }
          else
          {
-            param2 = this._mainrightTrackState + MAIN_SUBFIX + this._secondrightTrackState + SECOND_POSTFIX;
+            param2 = this._mainRightTrackState + MAIN_SUBFIX + this._secondRightTrackState + SECOND_POSTFIX;
          }
          if(_loc6_ == BATTLE_ITEM_STATES.REPAIRED)
          {

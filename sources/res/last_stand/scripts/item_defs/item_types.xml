@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<vehicle>
+		<tags>
+			<lsrole_sentry/>
+			<lsrole_hunter/>
+			<lsrole_runner/>
+			<lsrole_alpha/>
+			<lsrole_turret/>
+			<lsrole_bomber/>
+			<lsrole_bomber_alpha/>
+			<lsrole_catcher/>
+			<lsrole_charger/>
+			<lsrole_ripper/>
+			<lsrole_detonator/>
+			<lsrole_boss/>
+			<lsrole_obelisk/>
+			<ls_continuous_turret_rotation/>
+		</tags>
+	</vehicle>
+	<equipment>
+		<tags>
+			<LS_equipment/>
+			<LS_situational/>
+			<LS_emptySlot/>
+		</tags>
+	</equipment>
+</root>

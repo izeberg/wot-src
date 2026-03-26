@@ -1,3 +1,6 @@
+from __future__ import absolute_import
+from future.utils import viewitems
+from past.builtins import intern, xrange
 import material_kinds
 from items import _xml
 from debug_utils import LOG_ERROR, LOG_CURRENT_EXCEPTION
@@ -5,7 +8,7 @@ from helpers.PixieNode import EffectNode
 from helpers import EffectsList
 from soft_exception import SoftException
 gNodes = {}
-gEffectLists = dict()
+gEffectLists = {}
 
 def getEffectList(name):
     global gEffectLists
@@ -159,8 +162,8 @@ class DiscreteSelectorDesc(SelectorDesc):
 
     def fillTemplate(self, args, effects):
         self._variable = makeDescVariable(self._variable, args)
-        newSelectors = dict()
-        for key, selector in self._selectors.iteritems():
+        newSelectors = {}
+        for key, selector in viewitems(self._selectors):
             selector.fillTemplate(args, effects)
             newKey = args.get(key, key)
             newSelectors[newKey] = selector
@@ -224,8 +227,8 @@ class RangeSelectorDesc(SelectorDesc):
     def fillTemplate(self, args, effects):
         self._variable = makeDescVariable(self._variable, args)
         newKeys = []
-        for i in xrange(len(self.__keys)):
-            newKeys.append(args.get(self.__keys[i], self.__keys[i]))
+        for i, key in enumerate(self.__keys):
+            newKeys.append(args.get(key, key))
             self._selectors[i].fillTemplate(args, effects)
 
         self.__keys = tuple(newKeys)
@@ -310,7 +313,7 @@ class EffectSelectorDesc(SelectorDesc):
         self._variable = makeDescVariable(self._variable, args)
         self.__ttl = args.get(self.__ttl, self.__ttl)
         pathArgs = []
-        for key, val in args.iteritems():
+        for key, val in viewitems(args):
             if len(key) == 2 and key[0] == '_' and key[1].isdigit:
                 index = int(key[1])
                 if index >= len(pathArgs):
@@ -546,8 +549,8 @@ class MainCustomSelector(MainSelectorBase):
         return EffectSettings.SETTING_DUST
 
     def __createEffects(self, effects, args):
-        self._effectNodes = dict()
-        for nodeName, nodeDesc in effects.iteritems():
+        self._effectNodes = {}
+        for nodeName, nodeDesc in viewitems(effects):
             modelName = nodeDesc[1]
             model = args[modelName]['model']
             try:
@@ -579,7 +582,7 @@ class ExhaustMainSelector(MainSelectorBase):
         return EffectSettings.SETTING_EXHAUST
 
     def __createEffects(self, effects, args, nodes):
-        self._effectNodes = dict()
+        self._effectNodes = {}
         for nodeName in nodes:
             model = args['hull']['model']
             try:

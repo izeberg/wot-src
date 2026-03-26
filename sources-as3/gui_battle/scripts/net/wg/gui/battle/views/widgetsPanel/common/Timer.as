@@ -13,28 +13,42 @@ package net.wg.gui.battle.views.widgetsPanel.common
       
       public var label:TextField;
       
-      private var _disposed:Boolean = false;
+      private var _isDisposed:Boolean = false;
       
       public function Timer()
       {
          super();
       }
       
-      public function dispose() : void
+      public final function dispose() : void
       {
-         this.label = null;
-         this._disposed = true;
+         if(this._isDisposed)
+         {
+            return;
+         }
+         this.onDispose();
+         this._isDisposed = true;
       }
       
-      public function isDisposed() : Boolean
+      public final function isDisposed() : Boolean
       {
-         return this._disposed;
+         return this._isDisposed;
+      }
+      
+      public function get timeWidth() : int
+      {
+         return this.label.textWidth >> 0;
       }
       
       public function setLabel(param1:Number) : void
       {
          var _loc2_:String = ExternalInterface.call.apply(this,[FRACTIONAL_FORMAT_CMD,param1]);
          this.label.text = _loc2_.slice(0,_loc2_.length - 1);
+      }
+      
+      protected function onDispose() : void
+      {
+         this.label = null;
       }
    }
 }

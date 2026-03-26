@@ -71,42 +71,41 @@ package net.wg.gui.lobby.settings.feedback
       
       public function setData(param1:Object) : void
       {
-         var _loc5_:String = null;
-         var _loc6_:SettingsControlProp = null;
-         var _loc7_:IDisplayObject = null;
-         var _loc8_:CheckBox = null;
-         var _loc9_:RadioButtonBar = null;
+         var _loc4_:String = null;
+         var _loc5_:SettingsControlProp = null;
+         var _loc6_:IDisplayObject = null;
+         var _loc7_:CheckBox = null;
+         var _loc8_:RadioButtonBar = null;
+         var _loc9_:Boolean = false;
          var _loc10_:Boolean = false;
-         var _loc11_:Boolean = false;
          if(this._initialized)
          {
             return;
          }
          var _loc2_:SettingsDataVo = SettingsDataVo(param1);
          this._data = _loc2_;
-         var _loc3_:int = 0;
-         var _loc4_:int = _loc2_.keys.length;
-         _loc3_ = 0;
-         for(; _loc3_ < _loc4_; _loc3_++)
+         var _loc3_:int = _loc2_.keys.length;
+         var _loc11_:int = 0;
+         for(; _loc11_ < _loc3_; _loc11_++)
          {
-            _loc5_ = _loc2_.keys[_loc3_];
-            _loc6_ = SettingsControlProp(_loc2_[_loc5_]);
-            _loc7_ = this.getControlByName(_loc5_ + _loc6_.type);
-            if(!(_loc6_ && _loc7_))
+            _loc4_ = _loc2_.keys[_loc11_];
+            _loc5_ = SettingsControlProp(_loc2_[_loc4_]);
+            _loc6_ = this.getControlByName(_loc4_ + _loc5_.type);
+            if(!(_loc5_ && _loc6_))
             {
                continue;
             }
-            _loc10_ = !(_loc6_.current == null || _loc6_.readOnly);
-            switch(_loc6_.type)
+            _loc9_ = !(_loc5_.current == null || _loc5_.readOnly);
+            switch(_loc5_.type)
             {
                case SettingsConfigHelper.TYPE_CHECKBOX:
-                  _loc8_ = CheckBox(_loc7_);
-                  _loc11_ = _loc6_.current != null;
-                  this.setupCheckBox(_loc8_,_loc6_.changedVal,_loc10_,_loc11_);
+                  _loc7_ = CheckBox(_loc6_);
+                  _loc10_ = _loc5_.current != null;
+                  this.setupCheckBox(_loc7_,_loc5_.changedVal,_loc9_,_loc10_);
                   break;
                case SettingsConfigHelper.TYPE_BUTTON_BAR:
-                  _loc9_ = RadioButtonBar(_loc7_);
-                  this.setupButtonBar(_loc9_,_loc6_.options,int(_loc6_.current),_loc10_);
+                  _loc8_ = RadioButtonBar(_loc6_);
+                  this.setupButtonBar(_loc8_,_loc5_.options,int(_loc5_.current),_loc9_);
                   break;
             }
          }

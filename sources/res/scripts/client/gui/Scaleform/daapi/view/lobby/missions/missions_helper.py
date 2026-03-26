@@ -1050,11 +1050,13 @@ class _DetailedPersonalMissionInfo(_MissionInfo):
 
     def getInfo(self, mainQuest=None):
         isAvailable, errorMsg = self.event.isAvailable()
+        branchName = self.event.getQuestBranchName()
+        isBranchStarted = isBranchesStarted(*PM_BRANCH.V1_BRANCHES)
         if errorMsg != 'isLocked' and self.event.getQuestBranch() in PM_BRANCH.V1_BRANCHES:
-            if not isBranchesStarted(*PM_BRANCH.V1_BRANCHES) and not getSuitableVehicles():
+            if not isBranchStarted and not getSuitableVehicles():
                 isAvailable = False
                 errorMsg = 'branchNotStarted'
-            elif isBranchesStarted(*PM_BRANCH.V1_BRANCHES) and self.event.getQuestBranchName() not in self.eventsCache.getPersonalMissions().getActiveCampaigns():
+            elif isBranchStarted and branchName not in self.eventsCache.getPersonalMissions().getActiveCampaigns():
                 isAvailable = False
                 errorMsg = 'branchInactive'
         statusData = self._getStatusFields(isAvailable, errorMsg)
@@ -1364,7 +1366,7 @@ class _DetailedPersonalMissionInfo(_MissionInfo):
                 states |= PERSONAL_MISSIONS_BUTTONS.START_BTN_ENABLED
         if quest.canBePawned():
             states |= PERSONAL_MISSIONS_BUTTONS.HOLD_AWARD_SHEET_BTN_VISIBLE
-            if isPawnAvailable and not isPM3Active:
+            if isPawnAvailable and isAvailable and not isPM3Active:
                 states |= PERSONAL_MISSIONS_BUTTONS.HOLD_AWARD_SHEET_BTN_ENABLED
         return states
 

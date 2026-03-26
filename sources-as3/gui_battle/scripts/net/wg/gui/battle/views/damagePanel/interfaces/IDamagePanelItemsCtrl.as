@@ -10,7 +10,7 @@ package net.wg.gui.battle.views.damagePanel.interfaces
       
       function setState(param1:String, param2:String) : void;
       
-      function showDestroyed() : void;
+      function showDestroyed(param1:Boolean) : void;
       
       function getItemByName(param1:String) : IDamagePanelClickableItem;
       

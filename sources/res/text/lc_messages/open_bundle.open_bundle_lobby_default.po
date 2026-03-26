@@ -1,0 +1,189 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-11 10:00+0300\n"
+"PO-Revision-Date: 2022-01-11 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "attachments_preview/confirm"
+msgstr "Так точно!"
+
+msgid "attachments_preview/description"
+msgstr "Комплект 3D-объектов"
+
+msgid "attachments_preview/rarity/epic"
+msgstr "Эпический 3D-объект"
+
+msgid "attachments_preview/rarity/legendary"
+msgstr "Легендарный 3D-объект"
+
+msgid "attachments_preview/rarity/rare"
+msgstr "Редкий 3D-объект"
+
+msgid "bundle/name"
+msgstr "Ярмарка тайн"
+
+msgid "bundle/name_uppercased"
+msgstr "ЯРМАРКА ТАЙН"
+
+msgid "confirmation/buttons/cancel"
+msgstr "Отменить"
+
+msgid "confirmation/buttons/purchase"
+msgstr "Купить"
+
+msgid "confirmation/description"
+msgstr "Подтвердите, чтобы получить боны и открыть новую ячейку с наградой."
+
+msgid "confirmation/purchase"
+msgstr "Купить за {{price}} ?"
+
+msgid "entryPoint/button"
+msgstr "К событию!"
+
+msgid "entryPoint/title"
+msgstr "Событие «{{eventName}}» уже здесь. Присоединяйтесь!"
+
+msgid "intro/cards/description/c_1"
+msgstr ""
+"Покупайте боны в течение события «{{eventName}}» и получайте дополнительные "
+"награды из одной из неоткрытых ячеек, содержащих ценные игровые предметы, "
+"включая главную награду события — премиум машину."
+
+msgid "intro/cards/description/c_2"
+msgstr ""
+"Награды выдаются в случайном порядке. Каждая закрытая ячейка может открыться"
+" с определённой вероятностью, а сумма всех вероятностей всегда равна 100%. "
+"Одна и та же ячейка не может быть открыта повторно, поэтому шанс получить "
+"что-то очень ценное постоянно увеличивается."
+
+msgid "intro/cards/description/c_3"
+msgstr ""
+"У каждого этапа определённая стоимость в золоте, которая, как и количество "
+"получаемых бон, меняется по мере продвижения."
+
+msgid "intro/cards/link"
+msgstr ""
+"Заходите на наш портал, чтобы узнать условия и стоимость каждого этапа."
+
+msgid "intro/cards/title/c_1"
+msgstr "Покупка бон"
+
+msgid "intro/cards/title/c_2"
+msgstr "Ячейки и вероятности"
+
+msgid "intro/cards/title/c_3"
+msgstr "Стоимость этапов"
+
+msgid "intro/timer"
+msgstr "{{timer}}"
+
+msgid "intro/title"
+msgstr "НАГРАДА УЖЕ ЗДЕСЬ"
+
+msgid "main/alt/description"
+msgstr "Узнайте вероятность"
+
+msgid "main/alt/tooltip/body"
+msgstr ""
+"Нажмите клавишу «Alt», чтобы узнать вероятность открытия для каждой ячейки."
+
+msgid "main/alt/tooltip/header"
+msgstr "Отображение вероятности"
+
+msgid "main/cell/probability"
+msgstr "{{num}} %"
+
+msgid "main/completed"
+msgstr ""
+"ПОЗДРАВЛЯЕМ! \n"
+" ВЫ ПОЛУЧИЛИ ВСЕ НАГРАДЫ"
+
+msgid "main/footer/button"
+msgstr "Купить"
+
+msgid "main/footer/item"
+msgstr "{{count}}"
+
+msgid "main/footer/random"
+msgstr "+{{icon}}награда из ячейки"
+
+msgid "main/footer/receive"
+msgstr "Вы получите: {{item}}"
+
+msgid "main/header/description"
+msgstr ""
+"Принимайте участие в событии с {{startDate}} по {{endDate}} и получайте "
+"награды!"
+
+msgid "main/multi"
+msgstr "×{{count}}"
+
+msgid "notifications/specialReward/multiplier"
+msgstr "×{{count}}"
+
+msgid "notifications/specialReward/showStyle"
+msgstr "Перейти к стилю"
+
+msgid "notifications/specialReward/showVehicle"
+msgstr "Перейти к машине"
+
+msgid "notifications/specialReward/title"
+msgstr "Вы получили главную награду события «{{eventName}}»!"
+
+msgid "serviceChannelMessages/cellRewards"
+msgstr "Дополнительные награды:"
+
+msgid "serviceChannelMessages/fixedReward"
+msgstr "Получено:"
+
+msgid "serviceChannelMessages/openBundleError"
+msgstr ""
+"Операция временно недоступна по техническим причинам. Пожалуйста, повторите "
+"попытку позже."
+
+msgid "serviceChannelMessages/reminder/button"
+msgstr "К событию"
+
+msgid "serviceChannelMessages/reminder/header"
+msgstr "Событие «%(eventName)s» скоро закончится!"
+
+msgid "serviceChannelMessages/reminder/text"
+msgstr "Событие доступно до %(date)s."
+
+msgid "serviceChannelMessages/simplePurchase"
+msgstr "%(eventName)s: ячейка открыта"
+
+msgid "tooltips/entry/description"
+msgstr ""
+"Награды ждут! Каждый раз при покупке бон вы получаете случайную награду из "
+"одной ячейки в качестве подарка. После открытия ячейка исчезает, а в "
+"следующий раз открывается новая."
+
+msgid "tooltips/entry/timer"
+msgstr "Событие будет доступно {{timer}}"
+
+msgid "tooltips/header/info"
+msgstr "О событии"
+
+msgid "tooltips/steps/description"
+msgstr ""
+"При каждой следующей покупке вы получаете больше валюты ({{currency}}). "
+"Количество зависит от текущего этапа покупки."
+
+msgid "tooltips/steps/header"
+msgstr "{{currency}} за каждую покупку"
+
+msgid "tooltips/steps/singleStep"
+msgstr "{{step}}"
+
+msgid "tooltips/steps/steps"
+msgstr "Этапы:"
+
+msgid "tooltips/steps/template"
+msgstr "{{start}} – {{end}}"

@@ -995,7 +995,7 @@ msgstr ""
 "%(completedChapters)/%(chaptersAmount)"
 
 msgid "postProgressionView/footer/extraChapter/description/text"
-msgstr "Вас ждут эксклюзивные награды и уникальные элементы внешнего вида."
+msgstr "В ней вас ждут особые награды и элементы внешнего вида."
 
 msgid "postProgressionView/footer/extraChapter/title/text"
 msgstr "Доступна специальная глава!"
@@ -1327,6 +1327,12 @@ msgstr "За достижение лимита очков на технике:"
 
 msgid "reward/postBattle/progress/points/quest"
 msgstr "За выполнение задач:"
+
+msgid "reward/postBattle/progress/points/wotPlusCore"
+msgstr "Бонус WoT Plus Pro:"
+
+msgid "reward/postBattle/progress/points/wotPlusPro"
+msgstr "Бонус WoT Plus Pro:"
 
 msgid "reward/postBattle/progress/pointsAux"
 msgstr "Получено очков:"

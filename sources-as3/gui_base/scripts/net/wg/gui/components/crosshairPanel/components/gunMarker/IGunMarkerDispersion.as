@@ -16,5 +16,7 @@ package net.wg.gui.components.crosshairPanel.components.gunMarker
       function setType(param1:Number) : void;
       
       function setChargeableBurstMode(param1:Boolean) : void;
+      
+      function setIsColorBlind(param1:Boolean) : void;
    }
 }

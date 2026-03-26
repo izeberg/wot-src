@@ -76,6 +76,9 @@ msgstr "Armstrong Siddeley V4"
 msgid "Armstrong_Siddeley_B"
 msgstr "Armstrong Siddeley"
 
+msgid "CWT_165_1"
+msgstr "CWT-165-1"
+
 msgid "Ch00_ClingeBot_SH"
 msgstr "Clinger"
 
@@ -1484,6 +1487,34 @@ msgstr ""
 msgid "Ch67_BZ_79_short"
 msgstr "BZ-79"
 
+msgid "Ch68_PGZ_70"
+msgstr "PGZ-70"
+
+msgid "Ch68_PGZ_70_descr"
+msgstr ""
+"Двуствольная 57-мм гусеничная самоходная зенитная установка на базе "
+"советской ЗСУ-57-2, разработанная оборонным заводом №447 для нужд внешней "
+"торговли КНР. В отличие от ЗСУ-57-2, в качестве ходовой использовалось шасси"
+" танка Туре 59, адаптированное под установку башни ЗСУ. Испытания опытных "
+"образцов показали, что установка обладает высокой поражающей способностью, "
+"огневой мощью, а также простотой эксплуатации и обслуживания. Тем не менее "
+"серийно проект не выпускался."
+
+msgid "Ch68_PGZ_70_long_special"
+msgstr ""
+"PGZ-70 — китайский средний танк поддержки IX уровня с отличной мобильностью,"
+" плохим бронированием и автопушкой, похожей на одну из тех, что используются"
+" на чехословацких лёгких танках. Однако у PGZ-70 гораздо больше огневой "
+"мощи, лучше бронепробитие, а также более высокий урон как за выстрел, так и "
+"за магазин. Благодаря этому машина может поражать противника более "
+"предсказуемо."
+
+msgid "Ch68_PGZ_70_short"
+msgstr "PGZ-70"
+
+msgid "Ch68_PGZ_70_short_special"
+msgstr "Автопушка, отличная подвижность"
+
 msgid "Ch70_PTZ_78"
 msgstr "PTZ-78"
 
@@ -1820,6 +1851,9 @@ msgstr "Ziqiang"
 msgid "Chassis_Ch67_BZ_79"
 msgstr "BZ-79"
 
+msgid "Chassis_Ch68_PGZ_70"
+msgstr "PGZ-70"
+
 msgid "Continental_AOSI_895_5_Prem"
 msgstr "Continental AOSI-895-5"
 
@@ -2114,6 +2148,9 @@ msgstr "Ziqiang"
 
 msgid "Turret_1_Ch67_BZ_79"
 msgstr "BZ-79"
+
+msgid "Turret_1_Ch68_PGZ_70"
+msgstr "PGZ-70"
 
 msgid "Turret_1_Ch70_PTZ_78"
 msgstr "PTZ-78"
@@ -2618,6 +2655,9 @@ msgstr "12150L (120)"
 
 msgid "_12150L_34_1"
 msgstr "12150L (34-1)"
+
+msgid "_12150L_70"
+msgstr "12150L-70"
 
 msgid "_122-mm_37-122JT"
 msgstr "122 mm 37-122JT"
@@ -3231,6 +3271,9 @@ msgstr "Chuan dun-271"
 msgid "_57mm_AP_Type_97"
 msgstr "Type 92"
 
+msgid "_57mm_Chuan_bei_PG70"
+msgstr "Chuan bei PG70"
+
 msgid "_57mm_Chuan_chao_271_34"
 msgstr "Chuan chao-271 (34)"
 
@@ -3239,6 +3282,9 @@ msgstr "Chuan chao-271 (59-16)"
 
 msgid "_57mm_Chuan_chao_271_76G"
 msgstr "Chuan chao-271 (76G)"
+
+msgid "_57mm_Chuan_chao_PG70"
+msgstr "Chuan chao PG70"
 
 msgid "_57mm_Chuan_dun_271_34"
 msgstr "Chuan dun-271 (34)"
@@ -3261,6 +3307,9 @@ msgstr "Sha bao-271"
 msgid "_57mm_HE_Type_97"
 msgstr "Type 90"
 
+msgid "_57mm_PG70_x2"
+msgstr "57 mm PG70 x2"
+
 msgid "_57mm_Sha_bao_271_34"
 msgstr "Sha bao-271 (34)"
 
@@ -3269,6 +3318,9 @@ msgstr "Sha bao-271 (59-16)"
 
 msgid "_57mm_Sha_bao_271_76G"
 msgstr "Sha bao-271 (76G)"
+
+msgid "_57mm_Sha_bao_PG70"
+msgstr "Sha bao PG70"
 
 msgid "_57mm_ZiS_2"
 msgstr "57 mm ZiS-2"

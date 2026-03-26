@@ -1297,6 +1297,9 @@ msgstr "к урону от ОФ снарядов"
 msgid "kpi/bonus/positive/HEShellPenetration"
 msgstr "к бронепробиваемости ОФ снарядов"
 
+msgid "kpi/bonus/positive/HEshellVelocity"
+msgstr "к скорости полёта ОФ снарядов"
+
 msgid "kpi/bonus/positive/additionalShellAmmoCapacity"
 msgstr "к вместимости боекомплекта"
 
@@ -1747,8 +1750,8 @@ msgstr "от разброса при поворотах ходовой"
 
 msgid "kpi/bonus/ttc/negative/vehicleGunShotDispersionTurretRotation"
 msgstr ""
-"от разброса при горизонтальном\n"
-"наведении"
+"от разброса при \n"
+"горизонтальном наведении"
 
 msgid "kpi/bonus/ttc/negative/vehicleGunShotDispersionWhileGunDamaged"
 msgstr ""
@@ -1962,8 +1965,8 @@ msgstr "к разбросу при поворотах ходовой"
 
 msgid "kpi/bonus/ttc/positive/vehicleGunShotDispersionTurretRotation"
 msgstr ""
-"к разбросу при горизонтальном\n"
-"наведении"
+"к разбросу при \n"
+"горизонтальном наведении"
 
 msgid "kpi/bonus/ttc/positive/vehicleGunShotDispersionWhileGunDamaged"
 msgstr ""

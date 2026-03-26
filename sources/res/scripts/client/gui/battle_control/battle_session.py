@@ -127,6 +127,7 @@ class BattleSessionProvider(IBattleSessionProvider):
             ctrl.clear(False)
         vehicle.ownVehicle.initialUpdate(force=True)
         self.updateVehicleEffects(vehicle)
+        vehicle.events.onObserverVehicleDataUpdated()
         self.onUpdateObservedVehicleData(vehicle.id, None)
         return
 

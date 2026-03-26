@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from ClientSelectableObject import ClientSelectableObject
 from gui.shared import g_eventBus, events
 

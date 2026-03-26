@@ -550,7 +550,7 @@
 			<notInShop>true</notInShop>
 			<wwsoundPC>eng_Ford_GAA_pc</wwsoundPC>
 			<wwsoundNPC>eng_Ford_GAA_npc</wwsoundNPC>
-			<power>650</power>
+			<power>750</power>
 			<weight>1000</weight>
 			<maxHealth>310</maxHealth>
 			<maxRegenHealth>155</maxRegenHealth>
@@ -559,8 +559,8 @@
 				0.2
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>632</rpm_min>
-			<rpm_max>2354</rpm_max>
+			<rpm_min>497</rpm_min>
+			<rpm_max>2663</rpm_max>
 		</Skoda_16_ADH_140O>
 		<Skoda_16_ADH_140A_TVP>
 			<userString>#czech_vehicles:Skoda_16_ADH_140A_TVP</userString>

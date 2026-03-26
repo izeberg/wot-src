@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from helpers import dependency
 from script_component.DynamicScriptComponent import DynamicScriptComponent
 from skeletons.gui.battle_session import IBattleSessionProvider

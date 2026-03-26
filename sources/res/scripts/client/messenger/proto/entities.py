@@ -1,4 +1,5 @@
 from collections import deque
+import typing
 from helpers import dependency, i18n
 from ids_generators import SequenceIDGenerator
 from gui.shared.utils.decorators import ReprInjector
@@ -7,6 +8,8 @@ from messenger.proto.events import ChannelEvents, MemberEvents
 from messenger.storage import storage_getter
 from skeletons.gui.lobby_context import ILobbyContext
 from skeletons.gui.battle_session import IBattleSessionProvider
+if typing.TYPE_CHECKING:
+    from typing import Optional, Set
 _g_namesGenerator = None
 
 def _generateUserName():

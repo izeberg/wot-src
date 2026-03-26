@@ -1,0 +1,428 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-01 10:00+0300\n"
+"Last-Translator: i_maliavko <i_maliavko@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "LS_aoeDamageInstantShotReady"
+msgstr "Умение «Энерговыстрел» готово к применению."
+
+msgid "LS_aoeDrainEnemyHpInstantShotReady"
+msgstr "Умение «Выстрел вампира» готово к применению."
+
+msgid "LS_aoeStunInstantShotReady"
+msgstr "Умение «Оглушающий выстрел» готово к применению."
+
+msgid "LS_damageShieldReady"
+msgstr "Умение «Энергощит» готово к применению."
+
+msgid "LS_doubleDamageReady"
+msgstr "Умение «Двойной урон» готово к применению."
+
+msgid "LS_extraDamageSituationalReady"
+msgstr "«Ситуационный урон» готов."
+
+msgid "LS_fastReloadReady"
+msgstr "Умение «Ускоренная перезарядка» готово к применению."
+
+msgid "LS_healSituationalReady"
+msgstr "«Ситуационный ремонт» готов."
+
+msgid "LS_invisibilityReady"
+msgstr "«Теневое восстановление» готово к применению."
+
+msgid "LS_nitroReady"
+msgstr "Умение «Рывок» готово к применению."
+
+msgid "LS_pickupSouls"
+msgstr "Вы собрали %(souls)s ед. мириума"
+
+msgid "LS_selfRepairReady"
+msgstr "Умение «Экстренный ремонт» готово к применению."
+
+msgid "LS_situationalNitroReady"
+msgstr "«Ситуационная мобильность» готова."
+
+msgid "LS_teamRepairKitReady"
+msgstr "Умение «Групповой ремонт» готово к применению."
+
+msgid "LS_teamRepairKitUsed"
+msgstr "%(player)s активирует умение «Групповой ремонт»."
+
+msgid "LS_teamRepairKitUsedSelf"
+msgstr "Умение «Групповой ремонт» активировано."
+
+msgid "arena/marker/attention_to_camp"
+msgstr "Внимание на зону %(gridId)s"
+
+msgid "arena/marker/attention_to_magnus"
+msgstr "Защищайте АТЛАС!"
+
+msgid "arena/marker/defend_magnus"
+msgstr "Защищайте АТЛАС"
+
+msgid "arena/marker/move_to_camp"
+msgstr "Еду к зоне!"
+
+msgid "arena/marker/move_to_magnus"
+msgstr "Защищаю АТЛАС"
+
+msgid "arena/phase"
+msgstr "Фаза %(current)s из %(total)s"
+
+msgid "arena/wave"
+msgstr "Волна %(current)s из %(total)s"
+
+msgid "battleHint/bomber"
+msgstr "Ерши на&nbsp;подходе!"
+
+msgid "battleHint/bomber_alpha"
+msgstr "Альфа-ёрш&nbsp;на подходе!"
+
+msgid "battleHint/clearTheArea"
+msgstr "Зачистить область!"
+
+msgid "battleHint/convoyCloseToMagnus"
+msgstr "Поторопитесь! Зеро приблизился к&nbsp;АТЛАСУ!"
+
+msgid "battleHint/convoyDestroyedEnemiesLeft"
+msgstr ""
+"Зеро уничтожен!\n"
+"Противников осталось: {num}"
+
+msgid "battleHint/destroyEnemies"
+msgstr "Уничтожить технику противника: {num} ед."
+
+msgid "battleHint/enemiesFromAbove"
+msgstr "Обнаружены точки появления! Противник на подходе!"
+
+msgid "battleHint/hunter"
+msgstr "Охотники на&nbsp;подходе!"
+
+msgid "battleHint/lastWaveFinished"
+msgstr "Волна уничтожена!"
+
+msgid "battleHint/leftToDestroy"
+msgstr "Осталось уничтожить ед. техники противника:"
+
+msgid "battleHint/missing_squad"
+msgstr "Взвод Потерянных приближается!"
+
+msgid "battleHint/newWave"
+msgstr "Волна {current} из {total}"
+
+msgid "battleHint/obelisk_spawn"
+msgstr "Появился Обелиск!"
+
+msgid "battleHint/stopConvoy"
+msgstr "Остановите Зеро!"
+
+msgid "battleHint/stopConvoyBeforeMagnus"
+msgstr ""
+"Остановите Зеро,\n"
+"пока он не достиг АТЛАСА!"
+
+msgid "battleHint/trapper"
+msgstr "Уничтожьте Ловца! Это&nbsp;остановит энергоудары."
+
+msgid "battleHint/turret"
+msgstr "Пробудились москиты!"
+
+msgid "battleHint/waveFinished"
+msgstr ""
+"Волна уничтожена!\n"
+"Приготовиться!"
+
+msgid "battleHint/waveFinishedRegroup"
+msgstr "Приготовиться!"
+
+msgid "battleHint/waveReinforcements"
+msgstr "Прибыло подкрепление&nbsp;противника!"
+
+msgid "common/close"
+msgstr "ЗАКРЫТЬ"
+
+msgid "consumablesPanel/tooltip/durationTime"
+msgstr "Продолжительность: %(time)s с"
+
+msgid "damageLog/personal_death_zone"
+msgstr "Урон зоной"
+
+msgid "damageLog/static_death_zone"
+msgstr "Урон зоной"
+
+msgid "efficiencyRibbons/aoeBurn"
+msgstr "Поджог умением «Пирокинетика»"
+
+msgid "efficiencyRibbons/aoeDamage"
+msgstr "Урон умением «Энергоудар»"
+
+msgid "efficiencyRibbons/bomberExplosion"
+msgstr "Урон от взрыва"
+
+msgid "efficiencyRibbons/damageVampire"
+msgstr "Урон умением «Вампиризм»"
+
+msgid "efficiencyRibbons/extraDamageSituational"
+msgstr "«Ситуационный урон» активирован"
+
+msgid "efficiencyRibbons/healSituational"
+msgstr "«Ситуационный ремонт» активирован"
+
+msgid "efficiencyRibbons/instantShotAoeDamage"
+msgstr "Урон умением «Энерговыстрел»"
+
+msgid "efficiencyRibbons/instantShotAoeDrainEnemyHp"
+msgstr "Урон умением «Выстрел вампира»"
+
+msgid "efficiencyRibbons/instantShotAoeStun"
+msgstr "Урон умением «Оглушающий выстрел»"
+
+msgid "efficiencyRibbons/modulesDamageBlocked"
+msgstr "Неуязвимость модулей"
+
+msgid "efficiencyRibbons/nitroActivated"
+msgstr "«Ситуационная мобильность» активирована"
+
+msgid "efficiencyRibbons/passiveVampire"
+msgstr "Заживление"
+
+msgid "efficiencyRibbons/repair"
+msgstr "Машина отремонтирована"
+
+msgid "efficiencyRibbons/repairByObelisk"
+msgstr "Машина отремонтирована"
+
+msgid "efficiencyRibbons/repairByOther"
+msgstr "Машина отремонтирована союзником"
+
+msgid "efficiencyRibbons/repairOther"
+msgstr "Техника союзников отремонтирована"
+
+msgid "eventStats/activeWave"
+msgstr "Волна %(num)s"
+
+msgid "eventStats/difficulty"
+msgstr "Сложность: «%(difficulty)s»"
+
+msgid "eventStats/eventName"
+msgstr "Последний рубеж: Вторжение"
+
+msgid "eventStats/globalTask"
+msgstr "Задача: отразить все волны противника"
+
+msgid "eventStats/mission"
+msgstr "Для победы отразите все волны противника."
+
+msgid "eventStats/tableCaption"
+msgstr "Состав отряда"
+
+msgid "help/description_0"
+msgstr ""
+"Для победы отразите все волны противника.\n"
+"С каждой последующей атакой его сила растёт."
+
+msgid "help/description_1"
+msgstr ""
+"Правильно подобранные тактические устройства дополняют друг друга и могут значительно повысить вашу эффективность.\n"
+"Важно: в режиме «Последний рубеж» инструкции и все снаряды бесплатны."
+
+msgid "help/description_2"
+msgstr ""
+"Часть урона, нанесённого Обелиску, передаётся технике противника. За "
+"уничтожение Обелиска вы получаете случайный бонус."
+
+msgid "help/description_3"
+msgstr ""
+"Защищайте АТЛАС от финального эхо-танка Зеро. Если он достигнет АТЛАСА, то "
+"уничтожит его, и бой завершится поражением."
+
+msgid "help/title"
+msgstr "ПОСЛЕДНИЙ РУБЕЖ: ВТОРЖЕНИЕ"
+
+msgid "help/title_0"
+msgstr "ВОЛНЫ ПРОТИВНИКА"
+
+msgid "help/title_1"
+msgstr "СОВЕТЫ ПО ВЫЖИВАНИЮ"
+
+msgid "help/title_2"
+msgstr "ИСПОЛЬЗУЙТЕ ОБЕЛИСКИ В БОЮ"
+
+msgid "help/title_3"
+msgstr "ЗАЩИЩАЙТЕ АТЛАС"
+
+msgid "helpScreen/hint/description"
+msgstr "для просмотра правил режима"
+
+msgid "helpScreen/hint/press"
+msgstr "Нажмите"
+
+msgid "hitMarker/useless"
+msgstr "Бессмысленно!"
+
+msgid "loading/description_0"
+msgstr ""
+"Для победы отразите все волны противника.\n"
+"С каждой последующей атакой его сила растёт."
+
+msgid "loading/description_1"
+msgstr ""
+"Правильно подобранные тактические устройства дополняют друг друга и могут значительно повысить вашу эффективность.\n"
+"Важно: в режиме «Последний рубеж» инструкции и все снаряды бесплатны."
+
+msgid "loading/description_2"
+msgstr ""
+"Часть урона, нанесённого Обелиску, передаётся технике противника. За "
+"уничтожение Обелиска вы получаете случайный бонус."
+
+msgid "loading/description_3"
+msgstr ""
+"Защищайте АТЛАС от финального эхо-танка Зеро. Если он достигнет АТЛАСА, то "
+"уничтожит его, и бой завершится поражением."
+
+msgid "loading/title"
+msgstr "Загружается..."
+
+msgid "loading/title_0"
+msgstr "ВОЛНЫ ПРОТИВНИКА"
+
+msgid "loading/title_1"
+msgstr "СОВЕТЫ ПО ВЫЖИВАНИЮ"
+
+msgid "loading/title_2"
+msgstr "ИСПОЛЬЗУЙТЕ ОБЕЛИСКИ В БОЮ"
+
+msgid "loading/title_3"
+msgstr "ЗАЩИЩАЙТЕ АТЛАС"
+
+msgid "player_errors/equipment/LS_engineIsDestroyed"
+msgstr "Невозможно применить [%(name)s]: двигатель уничтожен."
+
+msgid "player_errors/equipment/LS_gunDestroyed"
+msgstr "Невозможно применить [%(name)s]: повреждено орудие."
+
+msgid "player_errors/equipment/LS_instantReload/notRequired"
+msgstr "Орудие уже заряжено."
+
+msgid "player_errors/equipment/LS_notEnoughSouls"
+msgstr ""
+"Невозможно применить [%(name)s]: недостаточно мириума для использования "
+"устройства."
+
+msgid "player_errors/equipment/LS_selfRepair/notRequired"
+msgstr "Машина не повреждена."
+
+msgid "player_errors/equipment/LS_vehicleIsDrowning"
+msgstr "Невозможно применить [%(name)s]: машина тонет."
+
+msgid "player_errors/equipment/LS_vehicleIsOnFire"
+msgstr "Невозможно применить [%(name)s]: машина горит."
+
+msgid "player_errors/equipment/LS_vehicleIsOverturned"
+msgstr "Невозможно применить [%(name)s]: машина перевёрнута."
+
+msgid "player_messages/killedAllyByBomberExplosion"
+msgstr "Союзник %(target)s уничтожен взрывом противника %(attacker)s."
+
+msgid "player_messages/killedAllyByDeathPit"
+msgstr "Союзник %(target)s разбился."
+
+msgid "player_messages/killedAllyByDeathZoneArtillery"
+msgstr "Союзник %(target)s уничтожен смертельной зоной."
+
+msgid "player_messages/killedByPhaseTimerAlly"
+msgstr "Союзник %(target)s уничтожен."
+
+msgid "postmortemPanel/doNotLeaveGame/desc"
+msgstr "Если ваш отряд сможет отразить эту волну."
+
+msgid "postmortemPanel/doNotLeaveGame/title"
+msgstr "ВЫ ВОЗРОДИТЕСЬ"
+
+msgid "postmortemPanel/lastPhase/title"
+msgstr ""
+"Для вас бой окончен.\n"
+"Вы внесли свой вклад!"
+
+msgid "postmortem_messages/DEATH_FROM_DEATH_ZONE_ARTILLERY"
+msgstr "Машина уничтожена смертельной зоной"
+
+msgid "postmortem_messages/DEATH_FROM_LS_ABILITY_AOE_DAMAGE"
+msgstr "Машина уничтожена умением «Энергоудар»"
+
+msgid "postmortem_messages/DEATH_FROM_LS_ABILITY_IGNITE"
+msgstr "Машина уничтожена умением «Пирокинетика»"
+
+msgid "postmortem_messages/DEATH_FROM_LS_ABILITY_VAMPIRE"
+msgstr "Машина уничтожена умением «Вампиризм»"
+
+msgid "postmortem_messages/DEATH_FROM_LS_BOMBER_EXPLOSION"
+msgstr "Машина уничтожена взрывом"
+
+msgid "postmortem_messages/DEATH_FROM_LS_DEATH_PIT"
+msgstr "Машина разбита"
+
+msgid "postmortem_messages/DEATH_FROM_LS_DEVICE_EXPLOSION_AT_SHOT"
+msgstr "Устройство [%(device)s] взорвано выстрелом игрока"
+
+msgid "postmortem_messages/DEATH_FROM_LS_FIRE"
+msgstr "Машина уничтожена пожаром"
+
+msgid "postmortem_messages/DEATH_FROM_LS_PHASE_TIMER_SELF_SUICIDE"
+msgstr "Машина уничтожена. Время вышло."
+
+msgid "postmortem_messages/DEATH_FROM_LS_SHOT"
+msgstr "Машина уничтожена выстрелом противника"
+
+msgid "prebattle/description/message"
+msgstr "Задача: отразить все волны противника"
+
+msgid "prebattle/description/title"
+msgstr "Последний рубеж: сложность «%(difficulty)s»"
+
+msgid "prebattle/difficulty/107"
+msgstr "Стандарт"
+
+msgid "prebattle/difficulty/108"
+msgstr "Тяжело"
+
+msgid "prebattle/difficulty/109"
+msgstr "Жесть"
+
+msgid "prebattle/waiting/title"
+msgstr "Ожидание игроков..."
+
+msgid "radialMenu/attention_here"
+msgstr "Запрашиваю поддержку"
+
+msgid "radialMenu/cancel"
+msgstr "Отменить"
+
+msgid "radialMenu/confirm"
+msgstr "Так точно!"
+
+msgid "radialMenu/move_to_camp"
+msgstr "Еду к зоне!"
+
+msgid "radialMenu/move_to_magnus"
+msgstr "Защищаю"
+
+msgid "statusNotificationTimers/obeliskShield"
+msgstr "Энергощит"
+
+msgid "statusNotificationTimers/overturned"
+msgstr "Машина возвращается в строй..."
+
+msgid "statusNotificationTimers/personalDeathZone"
+msgstr ""
+"Покиньте\n"
+"опасную зону!"
+
+msgid "teamList/teammates"
+msgstr "Союзники"

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, BigWorld, CGF, GenericComponents
 from helpers import dependency
 from shared_utils import nextTick

@@ -118,6 +118,32 @@ package net.wg.data.constants.generated
       public static const TURRET_CIRCLE:String = "turretCircle";
       
       public static const WHEEL_CIRCLE:String = "wheelCircle";
+      
+      public static const LS_ALPHA:String = "ls_alpha";
+      
+      public static const LS_BOMBER:String = "ls_bomber";
+      
+      public static const LS_BOMBER_ALPHA:String = "ls_bomber_alpha";
+      
+      public static const LS_BOSS:String = "ls_boss";
+      
+      public static const LS_CATCHER:String = "ls_catcher";
+      
+      public static const LS_CHARGER:String = "ls_charger";
+      
+      public static const LS_DETONATOR:String = "ls_detonator";
+      
+      public static const LS_HUNTER:String = "ls_hunter";
+      
+      public static const LS_OBELISK:String = "ls_obelisk";
+      
+      public static const LS_RIPPER:String = "ls_ripper";
+      
+      public static const LS_RUNNER:String = "ls_runner";
+      
+      public static const LS_SENTRY:String = "ls_sentry";
+      
+      public static const LS_TURRET:String = "ls_turret";
        
       
       public function DAMAGEINDICATOR()

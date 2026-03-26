@@ -87,7 +87,7 @@ package net.wg.gui.components.crosshairPanel
       
       function set scaleWidgetEnabled(param1:Boolean) : void;
       
-      function set overheatIndicatorVisible(param1:Boolean) : void;
+      function set isUseAlternateZoomPosition(param1:Boolean) : void;
       
       function setNetSeparatorType(param1:String) : void;
    }

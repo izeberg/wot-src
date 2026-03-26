@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
+	<xmlns:xmlref>http://bwt/xmlref</xmlns:xmlref>
 	<icons>
 		<ap>ARMOR_PIERCING.png 0 0</ap>
 		<ap_premium>ARMOR_PIERCING_PREMIUM.png 0 0</ap_premium>
@@ -4423,7 +4424,7 @@
 		<isTracer>true</isTracer>
 		<effects>mainAPCR</effects>
 		<damage>
-			<armor>300</armor>
+			<armor>340</armor>
 			<devices>135</devices>
 		</damage>
 		<normalizationAngle>2</normalizationAngle>
@@ -4602,7 +4603,7 @@
 		<isTracer>true</isTracer>
 		<effects>mainHighExplosive</effects>
 		<damage>
-			<armor>400</armor>
+			<armor>450</armor>
 			<devices>135</devices>
 		</damage>
 		<armorSpalls>
@@ -4612,7 +4613,7 @@
 			</impactRadius>
 			<coneAngle>90</coneAngle>
 			<damage>
-				<armor>200</armor>
+				<armor>225</armor>
 				<devices>70</devices>
 			</damage>
 		</armorSpalls>
@@ -4795,7 +4796,7 @@
 		<isTracer>true</isTracer>
 		<effects>mainArmorPiercing</effects>
 		<damage>
-			<armor>300</armor>
+			<armor>340</armor>
 			<devices>135</devices>
 		</damage>
 		<normalizationAngle>5</normalizationAngle>
@@ -5878,13 +5879,13 @@
 		<id>229</id>
 		<userString>#france_vehicles:_105mm_OFL_105_F1_LEOX</userString>
 		<icon>ap</icon>
-		<price>949</price>
+		<price>1036</price>
 		<kind>ARMOR_PIERCING</kind>
 		<caliber>105</caliber>
 		<isTracer>true</isTracer>
 		<effects>mainArmorPiercing</effects>
 		<damage>
-			<armor>390</armor>
+			<armor>410</armor>
 			<devices>150</devices>
 		</damage>
 		<normalizationAngle>5</normalizationAngle>
@@ -5894,14 +5895,14 @@
 		<id>230</id>
 		<userString>#france_vehicles:_105mm_OCC_105_F1_LEOX</userString>
 		<icon>hc_premium</icon>
-		<price>4800</price>
+		<price>5200</price>
 		<improved>true</improved>
 		<kind>HOLLOW_CHARGE</kind>
 		<caliber>105</caliber>
 		<isTracer>true</isTracer>
 		<effects>mainHollowCharge</effects>
 		<damage>
-			<armor>390</armor>
+			<armor>410</armor>
 			<devices>150</devices>
 		</damage>
 		<ricochetAngle>85</ricochetAngle>
@@ -5914,7 +5915,7 @@
 		<id>231</id>
 		<userString>#france_vehicles:_105mm_OE_105_Mle_60_LEOX</userString>
 		<icon>he_modern</icon>
-		<price>469</price>
+		<price>489</price>
 		<kind>HIGH_EXPLOSIVE</kind>
 		<mechanics>MODERN</mechanics>
 		<caliber>105</caliber>
@@ -5925,7 +5926,7 @@
 		<isTracer>true</isTracer>
 		<effects>mainHighExplosive</effects>
 		<damage>
-			<armor>480</armor>
+			<armor>500</armor>
 			<devices>150</devices>
 		</damage>
 		<armorSpalls>
@@ -5935,7 +5936,7 @@
 			</impactRadius>
 			<coneAngle>90</coneAngle>
 			<damage>
-				<armor>240</armor>
+				<armor>250</armor>
 				<devices>75</devices>
 			</damage>
 		</armorSpalls>
@@ -6082,7 +6083,7 @@
 		<isTracer>true</isTracer>
 		<effects>largeArmorPiercing</effects>
 		<damage>
-			<armor>400</armor>
+			<armor>420</armor>
 			<devices>165</devices>
 		</damage>
 		<normalizationAngle>5</normalizationAngle>
@@ -6120,6 +6121,69 @@
 		<normalizationAngle>5</normalizationAngle>
 		<ricochetAngle>70</ricochetAngle>
 	</_120mm_Prf_mle_1943_Foch_B>
+	<_120mm_Prf_mle_1943_Foch_B_7x7>
+		<id>232</id>
+		<userString>#france_vehicles:_120mm_Prf_mle_1943_Foch_B_7x7</userString>
+		<icon>ap</icon>
+		<price>1060</price>
+		<kind>ARMOR_PIERCING</kind>
+		<caliber>120</caliber>
+		<isTracer>true</isTracer>
+		<effects>largeArmorPiercing</effects>
+		<damage>
+			<armor>400</armor>
+			<devices>165</devices>
+		</damage>
+		<normalizationAngle>5</normalizationAngle>
+		<ricochetAngle>70</ricochetAngle>
+	</_120mm_Prf_mle_1943_Foch_B_7x7>
+	<_120mm_Frt_Prf_mle_1945_Foch_B_7x7>
+		<id>233</id>
+		<userString>#france_vehicles:_120mm_Frt_Prf_mle_1945_Foch_B_7x7</userString>
+		<icon>ap_cr_premium</icon>
+		<price>4800</price>
+		<improved>true</improved>
+		<kind>ARMOR_PIERCING_CR</kind>
+		<caliber>120</caliber>
+		<isTracer>true</isTracer>
+		<effects>largeAPCR</effects>
+		<damage>
+			<armor>400</armor>
+			<devices>165</devices>
+		</damage>
+		<normalizationAngle>2</normalizationAngle>
+		<ricochetAngle>70</ricochetAngle>
+	</_120mm_Frt_Prf_mle_1945_Foch_B_7x7>
+	<_120mm_OE_mle_1930_Foch_B_7x7>
+		<id>234</id>
+		<userString>#france_vehicles:_120mm_OE_mle_1930_Foch_B_7x7</userString>
+		<icon>he_modern</icon>
+		<price>900</price>
+		<kind>HIGH_EXPLOSIVE</kind>
+		<mechanics>MODERN</mechanics>
+		<caliber>120</caliber>
+		<explosionRadius>
+			2.42
+			<!--BW_String-->
+		</explosionRadius>
+		<isTracer>true</isTracer>
+		<effects>largeHighExplosive</effects>
+		<damage>
+			<armor>515</armor>
+			<devices>165</devices>
+		</damage>
+		<armorSpalls>
+			<impactRadius>
+				2.42
+				<!--BW_String-->
+			</impactRadius>
+			<coneAngle>90</coneAngle>
+			<damage>
+				<armor>260</armor>
+				<devices>85</devices>
+			</damage>
+		</armorSpalls>
+	</_120mm_OE_mle_1930_Foch_B_7x7>
 	<_120mm_Prf_mle_1943_Foch>
 		<id>2049</id>
 		<userString>#france_vehicles:_120mm_Prf_mle_1943_Foch</userString>
@@ -6162,7 +6226,7 @@
 		<isTracer>true</isTracer>
 		<effects>largeArmorPiercing</effects>
 		<damage>
-			<armor>410</armor>
+			<armor>440</armor>
 			<devices>165</devices>
 		</damage>
 		<normalizationAngle>5</normalizationAngle>
@@ -6179,7 +6243,7 @@
 		<isTracer>true</isTracer>
 		<effects>largeAPCR</effects>
 		<damage>
-			<armor>410</armor>
+			<armor>440</armor>
 			<devices>165</devices>
 		</damage>
 		<normalizationAngle>2</normalizationAngle>
@@ -6200,7 +6264,7 @@
 		<isTracer>true</isTracer>
 		<effects>largeHighExplosive</effects>
 		<damage>
-			<armor>520</armor>
+			<armor>540</armor>
 			<devices>165</devices>
 		</damage>
 		<armorSpalls>
@@ -6210,11 +6274,74 @@
 			</impactRadius>
 			<coneAngle>90</coneAngle>
 			<damage>
-				<armor>260</armor>
+				<armor>270</armor>
 				<devices>85</devices>
 			</damage>
 		</armorSpalls>
 	</_120mm_OE_67>
+	<_120mm_ODR_IPC_1>
+		<id>238</id>
+		<userString>#france_vehicles:_120mm_ODR_IPC_1</userString>
+		<icon>ap</icon>
+		<price>1400</price>
+		<kind>ARMOR_PIERCING</kind>
+		<caliber>120</caliber>
+		<isTracer>true</isTracer>
+		<effects>largeArmorPiercing</effects>
+		<damage>
+			<armor>100</armor>
+			<devices>165</devices>
+		</damage>
+		<normalizationAngle>5</normalizationAngle>
+		<ricochetAngle>70</ricochetAngle>
+	</_120mm_ODR_IPC_1>
+	<_120mm_OPSC_IPC_1>
+		<id>239</id>
+		<userString>#france_vehicles:_120mm_OPSC_IPC_1</userString>
+		<icon>ap_cr_premium</icon>
+		<price>5600</price>
+		<improved>true</improved>
+		<kind>ARMOR_PIERCING_CR</kind>
+		<caliber>120</caliber>
+		<isTracer>true</isTracer>
+		<effects>largeAPCR</effects>
+		<damage>
+			<armor>100</armor>
+			<devices>165</devices>
+		</damage>
+		<normalizationAngle>2</normalizationAngle>
+		<ricochetAngle>70</ricochetAngle>
+	</_120mm_OPSC_IPC_1>
+	<_120mm_OE_IPC_1>
+		<id>240</id>
+		<userString>#france_vehicles:_120mm_OE_IPC_1</userString>
+		<icon>he_modern</icon>
+		<price>950</price>
+		<kind>HIGH_EXPLOSIVE</kind>
+		<mechanics>MODERN</mechanics>
+		<caliber>120</caliber>
+		<explosionRadius>
+			2.42
+			<!--BW_String-->
+		</explosionRadius>
+		<isTracer>true</isTracer>
+		<effects>largeHighExplosive</effects>
+		<damage>
+			<armor>100</armor>
+			<devices>165</devices>
+		</damage>
+		<armorSpalls>
+			<impactRadius>
+				2.42
+				<!--BW_String-->
+			</impactRadius>
+			<coneAngle>90</coneAngle>
+			<damage>
+				<armor>50</armor>
+				<devices>85</devices>
+			</damage>
+		</armorSpalls>
+	</_120mm_OE_IPC_1>
 	<_120mm_Prf1943_fallout2>
 		<id>104</id>
 		<userString>#france_vehicles:_120mm_Prf1943_fallout</userString>
@@ -6242,7 +6369,7 @@
 		<isTracer>true</isTracer>
 		<effects>largeAPCR</effects>
 		<damage>
-			<armor>400</armor>
+			<armor>420</armor>
 			<devices>165</devices>
 		</damage>
 		<normalizationAngle>2</normalizationAngle>
@@ -6348,7 +6475,7 @@
 		<isTracer>true</isTracer>
 		<effects>largeHighExplosive</effects>
 		<damage>
-			<armor>515</armor>
+			<armor>520</armor>
 			<devices>165</devices>
 		</damage>
 		<armorSpalls>
@@ -6891,6 +7018,69 @@
 			</damage>
 		</armorSpalls>
 	</_120mm_OE_mle_1951_65>
+	<_120mm_ODR_APCBC_T14E_D>
+		<id>235</id>
+		<userString>#france_vehicles:_120mm_ODR_APCBC_T14E_D</userString>
+		<icon>ap</icon>
+		<price>847</price>
+		<kind>ARMOR_PIERCING</kind>
+		<caliber>120</caliber>
+		<isTracer>true</isTracer>
+		<effects>largeArmorPiercing</effects>
+		<damage>
+			<armor>350</armor>
+			<devices>165</devices>
+		</damage>
+		<normalizationAngle>5</normalizationAngle>
+		<ricochetAngle>70</ricochetAngle>
+	</_120mm_ODR_APCBC_T14E_D>
+	<_120mm_ODR_HVAP_T17E_D>
+		<id>236</id>
+		<userString>#france_vehicles:_120mm_ODR_HVAP_T17E_D</userString>
+		<icon>ap_cr_premium</icon>
+		<price>4400</price>
+		<improved>true</improved>
+		<kind>ARMOR_PIERCING_CR</kind>
+		<caliber>120</caliber>
+		<isTracer>true</isTracer>
+		<effects>largeArmorPiercing</effects>
+		<damage>
+			<armor>350</armor>
+			<devices>165</devices>
+		</damage>
+		<normalizationAngle>2</normalizationAngle>
+		<ricochetAngle>70</ricochetAngle>
+	</_120mm_ODR_HVAP_T17E_D>
+	<_120mm_OE_T15HE_D>
+		<id>237</id>
+		<userString>#france_vehicles:_120mm_OE_T15HE_D</userString>
+		<icon>he_modern</icon>
+		<price>528</price>
+		<kind>HIGH_EXPLOSIVE</kind>
+		<mechanics>MODERN</mechanics>
+		<caliber>120</caliber>
+		<explosionRadius>
+			2.42
+			<!--BW_String-->
+		</explosionRadius>
+		<isTracer>true</isTracer>
+		<effects>largeHighExplosive</effects>
+		<damage>
+			<armor>440</armor>
+			<devices>165</devices>
+		</damage>
+		<armorSpalls>
+			<impactRadius>
+				2.42
+				<!--BW_String-->
+			</impactRadius>
+			<coneAngle>90</coneAngle>
+			<damage>
+				<armor>220</armor>
+				<devices>85</devices>
+			</damage>
+		</armorSpalls>
+	</_120mm_OE_T15HE_D>
 	<_127mm_Capped_Common_Semi_AP>
 		<id>124</id>
 		<userString>#france_vehicles:_127mm_Capped_Common_Semi_AP</userString>
@@ -7021,13 +7211,13 @@
 		<id>223</id>
 		<userString>#france_vehicles:_128mm_PzGr_39_Terrifiant</userString>
 		<icon>ap</icon>
-		<price>1111</price>
+		<price>1134</price>
 		<kind>ARMOR_PIERCING</kind>
 		<caliber>128</caliber>
 		<isTracer>true</isTracer>
 		<effects>largeArmorPiercing</effects>
 		<damage>
-			<armor>490</armor>
+			<armor>500</armor>
 			<devices>180</devices>
 		</damage>
 		<normalizationAngle>5</normalizationAngle>
@@ -7044,7 +7234,7 @@
 		<isTracer>true</isTracer>
 		<effects>largeArmorPiercing</effects>
 		<damage>
-			<armor>490</armor>
+			<armor>500</armor>
 			<devices>180</devices>
 		</damage>
 		<normalizationAngle>5</normalizationAngle>

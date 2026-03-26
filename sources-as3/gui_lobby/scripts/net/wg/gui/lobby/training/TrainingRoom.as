@@ -73,6 +73,7 @@ package net.wg.gui.lobby.training
          super.configUI();
          App.utils.universalBtnStyles.setStyle(this.swapButton,UniversalBtnStylesConst.STYLE_SLIM_GREEN);
          this.swapButton.iconSource = RES_ICONS.MAPS_ICONS_BUTTONS_SWAP2;
+         comment.mouseChildren = comment.mouseEnabled = false;
       }
       
       override protected function onDispose() : void

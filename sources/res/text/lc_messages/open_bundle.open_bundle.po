@@ -1,0 +1,121 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-11 10:00+0300\n"
+"PO-Revision-Date: 2022-01-11 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "bonuses/attachmentsSet/default"
+msgstr "Комплект 3D-объектов"
+
+msgid "bonuses/attachmentsSet/tooltip/body"
+msgstr ""
+"Комплект 3D-объектов включает индивидуальные элементы для изменения внешнего"
+" вида определённой техники."
+
+msgid "bonuses/battleBonusX5"
+msgstr "Задача на ×5 опыта за бой"
+
+msgid "bonuses/blueprints/nationalFragment"
+msgstr "Фрагмент чертежа: (%(nation)s)"
+
+msgid "bonuses/blueprints/universalFragment"
+msgstr "Универсальный фрагмент чертежа"
+
+msgid "bonuses/bpcoin"
+msgstr "Жетон Боевого пропуска"
+
+msgid "bonuses/crewBonusX3"
+msgstr "Задача на ×3 опыта экипажа"
+
+msgid "bonuses/crewSkin"
+msgstr "Облик экипажа: %(appearance)s"
+
+msgid "bonuses/customization"
+msgstr "%(itemType)s: %(userName)s"
+
+msgid "bonuses/itemTypes/attachment"
+msgstr "3D-объект"
+
+msgid "bonuses/itemTypes/camouflage"
+msgstr "Камуфляж"
+
+msgid "bonuses/itemTypes/decal"
+msgstr "Декаль"
+
+msgid "bonuses/itemTypes/emblem"
+msgstr "Эмблема"
+
+msgid "bonuses/itemTypes/inscription"
+msgstr "Надпись"
+
+msgid "bonuses/itemTypes/paint"
+msgstr "Краска"
+
+msgid "bonuses/itemTypes/projectionDecal"
+msgstr "Декаль"
+
+msgid "bonuses/itemTypes/style"
+msgstr "2D-стиль"
+
+msgid "bonuses/itemTypes/style_3d"
+msgstr "3D-стиль"
+
+msgid "bonuses/premiumPlus"
+msgstr "Танковый премиум аккаунт"
+
+msgid "bonuses/standardCrewMember/female"
+msgstr "Девушка-танкист"
+
+msgid "bonuses/standardCrewMember/male"
+msgstr "Новобранец"
+
+msgid "bonuses/uniqueCrewMember"
+msgstr "Член экипажа: %(fullName)s"
+
+msgid "currency/bpcoin"
+msgstr "Жетоны Боевого пропуска"
+
+msgid "currency/credits"
+msgstr "Кредиты"
+
+msgid "currency/crystal"
+msgstr "Боны"
+
+msgid "currency/equipCoin"
+msgstr "Компоненты"
+
+msgid "currency/freeXP"
+msgstr "Свободный опыт"
+
+msgid "currency/gold"
+msgstr "Золото​"
+
+msgid "customization/projectionDecal"
+msgstr "Декаль"
+
+msgid "formatter/credits"
+msgstr "Потрачено кредитов:"
+
+msgid "formatter/crew/female"
+msgstr "Девушка-танкист (×%(count)s)"
+
+msgid "formatter/crew/male"
+msgstr "Новобранец (×%(count)s)"
+
+msgid "formatter/crystal"
+msgstr "Потрачено бон:"
+
+msgid "formatter/eventCoin"
+msgstr "Потрачено монет события:"
+
+msgid "formatter/gold"
+msgstr "Потрачено золота:"
+
+msgid "formatter/uniqueTankman"
+msgstr "Член экипажа: %(fullName)s"

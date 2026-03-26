@@ -1,4 +1,8 @@
-
+import typing
+if typing.TYPE_CHECKING:
+    from typing import Any, Optional
+    from gui.prb_control.dispatcher import _PreBattleDispatcher
+    from gui.prb_control.entities.base.entity import BasePrbEntity
 
 class prbDispatcherProperty(property):
 

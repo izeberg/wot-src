@@ -107,6 +107,7 @@ package net.wg.gui.battle.random.views.fragCorrelationBar.components
          this.normalMarker = null;
          this.destroyedMarker = null;
          this._vehicleMarkerAnimFinishedHandler = null;
+         addFrameScript(LAST_ANIM_FRAME,null);
       }
       
       private function playDestroyAnim() : void

@@ -35,6 +35,8 @@ package net.wg.data.constants.generated
       
       public static const PENETRATION_FX_LINKAGE:String = "PenetrationFxUI";
       
+      public static const LOW_CHARGE_SHOT_GUN_MARKER_LINKAGE:String = "LowChargeShotGunMarkerUI";
+      
       public static const ARCADE_GUN_MARKER_NAME:String = "arcadeGunMarker";
       
       public static const SNIPER_GUN_MARKER_NAME:String = "sniperGunMarker";
@@ -86,6 +88,14 @@ package net.wg.data.constants.generated
       public static const DEBUG_TWIN_GUN_ARCADE_MARKER_NAME:String = "arcadeDebugTwinGunMarker";
       
       public static const DEBUG_TWIN_GUN_SNIPER_MARKER_NAME:String = "sniperDebugTwinGunMarker";
+      
+      public static const LOW_CHARGE_SHOT_GUN_ARCADE_MARKER_NAME:String = "arcadeLowChargeShotGunMarker";
+      
+      public static const LOW_CHARGE_SHOT_GUN_SNIPER_MARKER_NAME:String = "sniperLowChargeShotGunMarker";
+      
+      public static const DEBUG_LOW_CHARGE_SHOT_GUN_ARCADE_MARKER_NAME:String = "arcadeDebugLowChargeShotGunMarker";
+      
+      public static const DEBUG_LOW_CHARGE_SHOT_GUN_SNIPER_MARKER_NAME:String = "sniperDebugLowChargeShotGunMarker";
       
       public static const GUN_TAG_RELOADING_TYPES:Array = [1,4,7,10,13];
       

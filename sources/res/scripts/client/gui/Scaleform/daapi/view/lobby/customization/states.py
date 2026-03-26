@@ -49,6 +49,7 @@ def registerTransitions(machine):
 class CustomizationState(LobbyState, EventsHandler, SubhangarStateGroupConfigProvider):
     STATE_ID = 'customization'
     __CAMERA_NAME = 'Customization'
+    __ENVIRONMENT_NAME = 'Customization'
     __hangarSpace = dependency.descriptor(IHangarSpace)
     __c11n = dependency.descriptor(ICustomizationService)
 
@@ -68,7 +69,8 @@ class CustomizationState(LobbyState, EventsHandler, SubhangarStateGroupConfigPro
         loading.addNavigationTransition(main)
 
     def getSubhangarStateGroupConfig(self):
-        return SubhangarStateGroupConfig((SubhangarStateGroups.Customization,))
+        return SubhangarStateGroupConfig((
+         SubhangarStateGroups.Customization,), environmentName=self.__ENVIRONMENT_NAME)
 
     def makeTransition(self, transitionType, record):
         return _CustomizationTransition(transitionType, record)

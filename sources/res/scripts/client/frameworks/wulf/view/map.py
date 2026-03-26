@@ -1,6 +1,5 @@
 import typing as t
 from collections import Mapping
-from ..py_object_binder import PyObjectEntity
 from ..py_object_wrappers import PyObjectMap, ValueType
 if t.TYPE_CHECKING:
     from types import TracebackType
@@ -26,15 +25,18 @@ def toValueType(pyType):
     return ValueType.NONE
 
 
-class Map(PyObjectEntity, t.MutableMapping[(KT, VT)]):
-    __slots__ = ('__keyType', '__valueType')
+class Map(t.MutableMapping[(KT, VT)]):
+    slots = ('proxy', '__weakref__')
 
     def __init__(self, keyType, valueType):
         self.__keyType = keyType
         self.__valueType = valueType
-        super(Map, self).__init__(PyObjectMap.create(toValueType(keyType), toValueType(valueType)))
+        self.proxy = PyObjectMap.create(toValueType(keyType), toValueType(valueType), self)
+        super(Map, self).__init__()
 
     def __repr__(self):
+        if not hasattr(self, 'proxy'):
+            return 'Map() not initialized'
         return ('Map({})').format(dict(self.items()))
 
     def __str__(self):
@@ -104,7 +106,7 @@ class Map(PyObjectEntity, t.MutableMapping[(KT, VT)]):
         return self.proxy.getValue(key)
 
     def set(self, key, value):
-        if isinstance(value, PyObjectEntity):
+        if hasattr(value, 'proxy'):
             self.proxy.setValue(key, value.proxy)
         else:
             self.proxy.setValue(key, value)

@@ -305,11 +305,7 @@ package net.wg.gui.lobby.settings
       protected function isCounterCanMarkAsVisited(param1:String, param2:CountersVo) : Boolean
       {
          var _loc3_:SettingsControlProp = this.getControlPropsByKey(param2.componentId);
-         if(_loc3_ && LINE_COUNTER_TYPES.indexOf(_loc3_.type) != Values.DEFAULT_INT)
-         {
-            return true;
-         }
-         return false;
+         return _loc3_ && LINE_COUNTER_TYPES.indexOf(_loc3_.type) != Values.DEFAULT_INT;
       }
       
       protected function addNewCounterControl(param1:DisplayObject, param2:String, param3:ICounterProps, param4:Boolean) : void

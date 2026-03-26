@@ -1,0 +1,115 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-01 10:00+0300\n"
+"PO-Revision-Date: 2022-05-01 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+
+msgid "info/dateAndDuration"
+msgstr "%(date)s, продолжительность: %(duration)s"
+
+msgid "info/difficult/1"
+msgstr "Сложность «Стандарт»"
+
+msgid "info/difficult/2"
+msgstr "Сложность «Тяжело»"
+
+msgid "info/difficult/3"
+msgstr "Сложность «Жесть»"
+
+msgid "info/mapName"
+msgstr "Последний рубеж • Линия Зигфрида • {difficulty}"
+
+msgid "info/respawnCount"
+msgstr "Количество возрождений: {count}"
+
+msgid "ls_finish/reason/1/lose"
+msgstr "Все машины уничтожены."
+
+msgid "ls_finish/reason/10/lose"
+msgstr "Не удалось остановить Зеро."
+
+msgid "ls_finish/reason/3/lose"
+msgstr "Время вышло."
+
+msgid "ls_finish/reason/5/lose"
+msgstr "Все союзники покинули бой."
+
+msgid "ls_finish/reason/last_stand/1/win"
+msgstr "Зеро уничтожен, но это лишь начало."
+
+msgid "ls_finish/reason/last_stand/11/win"
+msgstr "Все противники на сложности «Стандарт» уничтожены."
+
+msgid "ls_finish/reason/last_stand_hard/1/win"
+msgstr "Зеро уничтожен. Вы спасли мир от вторжения."
+
+msgid "ls_finish/reason/last_stand_hard/11/win"
+msgstr "Все противники на сложности «Жесть» уничтожены."
+
+msgid "ls_finish/reason/last_stand_medium/1/win"
+msgstr "Зеро уничтожен. Но конец ли это?"
+
+msgid "ls_finish/reason/last_stand_medium/11/win"
+msgstr "Все противники на сложности «Тяжело» уничтожены."
+
+msgid "ribbon/ban"
+msgstr ""
+"Недопустимое поведение: бездействие / дезертирство.\n"
+"Награда не получена."
+
+msgid "ribbon/banRecord"
+msgstr ""
+"Недопустимое поведение: бездействие.\n"
+"Награда не получена. Ваш рекорд по уничтоженным волнам не обновлён."
+
+msgid "ribbon/noReward"
+msgstr ""
+"Команда не смогла сдержать первую волну.\n"
+"Награда не получена."
+
+msgid "status/lose"
+msgstr "БОЙ ОКОНЧЕН"
+
+msgid "status/win"
+msgstr "ПОБЕДА"
+
+msgid "subtitle/lose"
+msgstr "Атака не сдержана"
+
+msgid "subtitle/win"
+msgstr "Отличная работа. Собраны новые данные."
+
+msgid "teamList/actions"
+msgstr "Быстрые действия"
+
+msgid "teamList/teammates"
+msgstr "Союзники"
+
+msgid "time/record"
+msgstr ""
+"НОВЫЙ\n"
+"РЕКОРД"
+
+msgid "title/lose/noWaves"
+msgstr "БОЙ ОКОНЧЕН"
+
+msgid "title/lose/waves"
+msgid_plural "plural/title/lose/waves"
+msgstr[0] "%(phaseNumber)s ВОЛНА ПРОЙДЕНА"
+msgstr[1] "%(phaseNumber)s ВОЛНЫ ПРОЙДЕНЫ"
+msgstr[2] "%(phaseNumber)s ВОЛН ПРОЙДЕНО"
+
+msgid "title/win"
+msgstr "ВСЕ ВОЛНЫ ОТРАЖЕНЫ"
+
+msgid "tooltip/ban"
+msgstr ""
+"Недопустимое поведение: бездействие. Ваш рекорд по уничтоженным волнам не "
+"обновлён."

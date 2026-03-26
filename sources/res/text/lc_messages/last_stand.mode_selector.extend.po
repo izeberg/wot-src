@@ -1,0 +1,54 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-03-16 10:00+0300\n"
+"PO-Revision-Date: 2023-03-16 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "mode/last_stand/battlePassTooltip/body"
+msgstr ""
+"Определённые задачи события {whiteSpanish_open}«Последний рубеж: "
+"Вторжение»{whiteSpanish_close} позволят вам заработать очки Боевого "
+"пропуска."
+
+msgid "mode/last_stand/battlePassTooltip/header"
+msgstr "Очки Боевого пропуска"
+
+msgid "mode/last_stand/calendar"
+msgstr "Событие продлится %(date)s."
+
+msgid "mode/last_stand/calendarDay"
+msgstr "Событие завершится через %(date)s."
+
+msgid "mode/last_stand/description"
+msgstr ""
+"Сражайтесь против волн противника.\n"
+"Бои на машинах VIII уровня."
+
+msgid "mode/last_stand/performance/highRisk/description"
+msgstr ""
+"Производительности вашего компьютера недостаточно для данного режима. Весьма"
+" вероятны проблемы с графикой и перемещением техники, возможно также "
+"аварийное закрытие клиента игры."
+
+msgid "mode/last_stand/performance/highRisk/header"
+msgstr "Низкая производительность"
+
+msgid "mode/last_stand/performance/highRisk/headerIcon"
+msgstr "%(icon) Низкая производительность"
+
+msgid "mode/last_stand/performance/mediumRisk/description"
+msgstr ""
+"Режим требователен к компьютеру.\n"
+"Карта может долго загружаться, возможны проблемы с графикой и перемещением техники в бою. В случае недостаточной производительности, попробуйте понизить настройки графики."
+
+msgid "mode/last_stand/performance/mediumRisk/header"
+msgstr "Снижение производительности"
+
+msgid "mode/last_stand/performance/mediumRisk/headerIcon"
+msgstr "%(icon) Снижение производительности"

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<ClientMethods>
+		<onDamageReceived/>
+		<onDeath/>
+	</ClientMethods>
+	<CellMethods/>
+	<Properties>
+		<isPresent>
+			<Type>BOOL</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</isPresent>
+	</Properties>
+	<ofEntity>
+		<ArenaInfo/>
+	</ofEntity>
+</root>

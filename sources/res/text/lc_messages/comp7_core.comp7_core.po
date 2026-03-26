@@ -16,6 +16,39 @@ msgstr ""
 "nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && "
 "(n%100<10 || n%100>=20) ? 1 : 2);"
 
+msgid "prebattleTimer/ban/additionalInfo"
+msgstr "Выберите машину, которую хотите исключить из этого боя"
+
+msgid "prebattleTimer/ban/header"
+msgstr "Этап голосования за исключение"
+
+msgid "prebattleTimer/info/readyBtn/label"
+msgstr "Подтвердить выбор"
+
+msgid "prebattleTimer/info/readyBtn/tooltip/body"
+msgstr "После подтверждения вы не сможете выбрать другую машину."
+
+msgid "prebattleTimer/pick/header"
+msgstr "Этап подтверждения"
+
+msgid "prebattleTimer/prepick/additionalInfo"
+msgstr ""
+"Выберите машину, наиболее подходящую для карты и состава вашей команды"
+
+msgid "prebattleTimer/prepick/header"
+msgstr "Этап предвыбора техники"
+
+msgid "prebattleTimer/wait/additionalInfo"
+msgstr ""
+"Выбирайте машину, наиболее подходящую для текущей карты и состава вашей "
+"команды."
+
+msgid "prebattleTimer/wait/header"
+msgstr "Ожидание игроков..."
+
+msgid "prebattleTimer/wait/selectVehicle"
+msgstr "Выбрать машину"
+
 msgid "primeTimeView/endOfCycle"
 msgstr "Этап на сервере %(server)s завершился"
 

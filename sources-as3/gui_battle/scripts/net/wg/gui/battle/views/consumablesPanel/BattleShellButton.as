@@ -276,6 +276,7 @@ package net.wg.gui.battle.views.consumablesPanel
          this._isEmpty = param1;
          if(param1)
          {
+            this.clearCoolDownTime();
             this.icon = this._consumablesVO.noShellIconPath;
             enabled = false;
             this.state = InteractiveStates.EMPTY_UP;

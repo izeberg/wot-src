@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<extraSoundRemapping>
+		<last_stand_remapping>
+			<soundRemapping>
+				<loadBanks>
+					<bank>
+						<name>ev_last_stand_hangar.bnk</name>
+						<extension>last_stand</extension>
+					</bank>
+					<bank>
+						<name>ev_last_stand_hangar.pck</name>
+						<extension>last_stand</extension>
+					</bank>
+				</loadBanks>
+			</soundRemapping>
+		</last_stand_remapping>
+	</extraSoundRemapping>
+</root>

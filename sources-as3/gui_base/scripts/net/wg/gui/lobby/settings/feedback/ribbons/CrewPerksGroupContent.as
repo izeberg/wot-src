@@ -65,9 +65,9 @@ package net.wg.gui.lobby.settings.feedback.ribbons
          var _loc2_:CheckBox = null;
          this.battleEventsCrewPerksCheckbox.enabled = param1;
          var _loc3_:int = 0;
-         while(_loc3_ < this.numChildren)
+         while(_loc3_ < numChildren)
          {
-            _loc2_ = this.getChildAt(_loc3_) as CheckBox;
+            _loc2_ = getChildAt(_loc3_) as CheckBox;
             if(_loc2_ && _loc2_ != this.battleEventsCrewPerksCheckbox)
             {
                _loc2_.enabled = param1 && this.battleEventsCrewPerksCheckbox.selected;
@@ -80,9 +80,9 @@ package net.wg.gui.lobby.settings.feedback.ribbons
       {
          var _loc1_:CheckBox = null;
          var _loc2_:int = 0;
-         while(_loc2_ < this.numChildren)
+         while(_loc2_ < numChildren)
          {
-            _loc1_ = this.getChildAt(_loc2_) as CheckBox;
+            _loc1_ = getChildAt(_loc2_) as CheckBox;
             if(_loc1_ != this.battleEventsCrewPerksCheckbox)
             {
                if(_loc1_.selected && _loc1_.enabled)

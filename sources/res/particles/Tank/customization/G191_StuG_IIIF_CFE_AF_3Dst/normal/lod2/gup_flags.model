@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>particles/Tank/customization/G191_StuG_IIIF_CFE_AF_3Dst/normal/lod3/gup_flags</parent>
+	<extent>150.000000</extent>
+	<visibilityBox>
+		<min>-1.256790 0.571535 -2.395673</min>
+		<max>1.252690 2.925715 -0.413273</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>particles/Tank/customization/G191_StuG_IIIF_CFE_AF_3Dst/normal/lod2/gup_flags</nodefullVisual>
+</root>

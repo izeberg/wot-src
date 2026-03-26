@@ -1,3 +1,4 @@
+from __future__ import absolute_import, division
 import logging, BigWorld, CGF, Math
 from GenericComponents import Sequence, StateSwitcherComponent
 from cgf_components_common.vehicle_mechanics import StationaryReloadSequenceParamsComponent
@@ -125,7 +126,8 @@ class KillCamDataComponent(BigWorld.DynamicScriptComponent):
            'wheelsState': vehicle.appearance.wheelsState, 
            'wheelsSteering': vehicle.appearance.wheelsSteering, 
            'trackInAir': (
-                        vehicle.appearance.isLeftSideFlying, vehicle.appearance.isRightSideFlying)}
+                        vehicle.appearance.isLeftSideFlying, vehicle.appearance.isRightSideFlying), 
+           'gunMechanicVisualState': self.__getGunMechanicVisualState(vehicle)}
 
     def __captureUnspottedVehSimulationData(self, vehicleID):
         return {'vehicleID': vehicleID, 
@@ -176,6 +178,13 @@ class KillCamDataComponent(BigWorld.DynamicScriptComponent):
             return {'activeSequenceLayer': sequence.activeLayerIdx, 'sequenceTime': sequence.time, 
                'attachmentState': stateSwitcher.getState()}
 
+    def __getGunMechanicVisualState(self, vehicle):
+        lcsPublicController = vehicle.dynamicComponents.get('lowChargeShotPublicController')
+        if lcsPublicController is not None:
+            return lcsPublicController.stateStatus
+        else:
+            return
+
     def __unpackShellData(self, shellCompDescr):
         shellDescr = getItemByCompactDescr(shellCompDescr)
         return {'shellType': BATTLE_LOG_SHELL_TYPES.getShellType(shellDescr), 
@@ -193,7 +202,7 @@ class KillCamDataComponent(BigWorld.DynamicScriptComponent):
         unspottedOrigin = None
         if not self.__killerIsSpotted:
             directionVector = origin - impactPoint
-            directionVector *= 1 / directionVector.length
+            directionVector *= 1.0 / directionVector.length
             unspottedOrigin = impactPoint + directionVector * _UNSPOTTED_MARKER_DISTANCE_FACTOR
             origin = impactPoint + directionVector * _UNSPOTTED_PIVOT_DISTANCE_FACTOR
         elif self.processedData['attacker']['vehicleType'] == 'SPG':

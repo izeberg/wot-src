@@ -3554,6 +3554,12 @@
 				<_130mm_45_Model_1935>
 					shared
 					<maxAmmo>30</maxAmmo>
+					<unlocks>
+						<vehicle>
+							F143_Fauteur
+							<cost>325000</cost>
+						</vehicle>
+					</unlocks>
 					<armor>
 						<armor_1>
 							300

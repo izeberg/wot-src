@@ -142,6 +142,7 @@ class GAME(CONST_CONTAINER):
     LIMITED_UI_ACTIVE = 'limitedUIActive'
     NEWBIE_PREBATTLE_HINTS = 'newbiePrebattleHints'
     NEWBIE_BATTLE_HINTS = 'newbieBattleHints'
+    W2GT_ENABLE = 'w2gtEnable'
 
 
 class SOUND(CONST_CONTAINER):

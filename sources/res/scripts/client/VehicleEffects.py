@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from collections import namedtuple
 import typing, cgf_network, Physics
 from Math import Vector3, Vector4, Matrix

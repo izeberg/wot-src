@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+from future.utils import viewvalues
 import GUI
 from gui import g_guiResetters
 
@@ -104,7 +106,7 @@ class DebugView(object):
         return iter(self.__listKeynames)
 
     def iteritems(self):
-        return self.__dictItems.itervalues()
+        return iter(viewvalues(self.__dictItems))
 
     def getItemsCount(self):
         return len(self.__listKeynames)
@@ -161,13 +163,13 @@ class DebugView(object):
         saved_size = self.getSize()
         saved_textureName = self.getTextureName()
         saved_visible = self.getVisible()
-        for curItem in self.__dictItems.itervalues():
+        for curItem in viewvalues(self.__dictItems):
             self.__window.delChild(curItem._guiName)
             self.__window.delChild(curItem._guiValue)
 
         GUI.delRoot(self.__window)
         self.__window = None
-        for curItem in self.__dictItems.itervalues():
+        for curItem in viewvalues(self.__dictItems):
             curItem._rebuild()
 
         self.__createMainWindow(saved_parent)
@@ -175,7 +177,7 @@ class DebugView(object):
         self.setSize(saved_size)
         self.setTextureName(saved_textureName)
         self.setVisible(saved_visible)
-        for curItem in self.__dictItems.itervalues():
+        for curItem in viewvalues(self.__dictItems):
             self.__window.addChild(curItem._guiName)
             self.__window.addChild(curItem._guiValue)
 

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/3D_Customization/Cus_200_LS_EMP_Barrel/normal/lod2/Cus_200_LS_EMP_Barrel</parent>
+	<extent>64.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.445677 -0.000000 -0.386760</min>
+		<max>0.031416 0.571219 0.503249</max>
+	</visibilityBox>
+	<nodefullVisual>content/3D_Customization/Cus_200_LS_EMP_Barrel/normal/lod1/Cus_200_LS_EMP_Barrel</nodefullVisual>
+</root>

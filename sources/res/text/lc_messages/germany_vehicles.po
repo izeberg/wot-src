@@ -513,6 +513,9 @@ msgstr "Jagdpanzer IV 0-Serie"
 msgid "Chassis_G17_JagdPzIV_2"
 msgstr "Jagdpanzer IV"
 
+msgid "Chassis_G183_Radkampfwagen"
+msgstr "Radkampfwagen"
+
 msgid "Chassis_G184_Windhund"
 msgstr "Windhund"
 
@@ -536,6 +539,9 @@ msgstr "Jagdpanther"
 
 msgid "Chassis_G18_JagdPanther_2"
 msgstr "Jagdpanther verstärkteketten"
+
+msgid "Chassis_G191_StuG_IIIF_CFE_A"
+msgstr "StuG III Ausf. F Kabasan"
 
 msgid "Chassis_G23_Grille"
 msgstr "Grille"
@@ -795,6 +801,9 @@ msgstr "Waffenträger auf Pz. IV für 15 cm"
 
 msgid "Chassis_G98_WT_auf_E_100_Phonix"
 msgstr "WT auf E 100 Phönix"
+
+msgid "Chassis_G98_Waffentrager_E100_CFE_T"
+msgstr "Waffenträger auf E 100 T"
 
 msgid "Chassis_G98_Waffentrager_E100_P"
 msgstr "Waffenträger auf E 100 (P)"
@@ -1126,6 +1135,9 @@ msgstr "Fu 8"
 
 msgid "FuG8f"
 msgstr "FuG 8 (f)"
+
+msgid "FuG_7_F"
+msgstr "FuG 7 (F)"
 
 msgid "FuG_F"
 msgstr "Fu.Spr.Ger. \"f\""
@@ -2972,6 +2984,36 @@ msgstr ""
 msgid "G17_JagdPzIV_short"
 msgstr "Jg.Pz. IV"
 
+msgid "G183_Radkampfwagen"
+msgstr "Radkampfwagen"
+
+msgid "G183_Radkampfwagen_desc"
+msgstr ""
+"Проект колёсного танка, разрабатывавшийся в ФРГ в конце 1960-х годов. "
+"Предполагал создание быстрой и хорошо вооружённой машины для разведки и "
+"борьбы с бронетехникой противника. За достойные ходовые характеристики "
+"отвечали мощный и компактный американский V-образный двигатель, ходовая "
+"часть с колёсной формулой 8×8 и независимая подвеска с возможностью "
+"«танкового» поворота. Калибр орудия должен был достигать 90–105 мм. На "
+"стадии проектирования выявились серьёзные недостатки: плотная компоновка "
+"узлов, недостаточный объём топливных баков и боекомплекта, а также высокий "
+"центр тяжести, снижавший устойчивость при поворотах и во время стрельбы. "
+"Проект закрыли до постройки опытного образца."
+
+msgid "G183_Radkampfwagen_long_special"
+msgstr ""
+"Radkampfwagen — немецкий колёсный снайперский средний танк X уровня. "
+"Объединяет в себе выдающуюся подвижность, достигаемую за счёт колёсного "
+"шасси и мощного двигателя, и очень точное орудие. Эти характеристики "
+"позволяют машине действовать в глубоком тылу и нападать с совершенно "
+"неожиданных направлений."
+
+msgid "G183_Radkampfwagen_short"
+msgstr "RadKpfw."
+
+msgid "G183_Radkampfwagen_short_special"
+msgstr "Выдающаяся подвижность, точное орудие"
+
 msgid "G184_Windhund"
 msgstr "Windhund"
 
@@ -3148,6 +3190,37 @@ msgstr ""
 
 msgid "G18_JagdPanther_short"
 msgstr "JPanther"
+
+msgid "G191_StuG_IIIF_CFE_A"
+msgstr "StuG III Ausf. F Kabasan"
+
+msgid "G191_StuG_IIIF_CFE_A_descr"
+msgstr ""
+"Столкнувшись с большим количеством танков противника, немецкая армия усилила"
+" StuG III, установив 7,5-см орудие StuK 40 L/43, новую боеукладку и "
+"вентиляцию. После успешных испытаний в апреле 1942-го начался серийный "
+"выпуск. Первые 120 машин получили пушку StuK 40 L/43, а последующие 240 — "
+"StuK 40 L/48. Вскоре лобовую броню увеличили с 50 до 80 мм. Всего было "
+"построено около 360 самоходок этой модификации, одна из которых оказалась на"
+" вооружении команды «Кабасан». После первого поражения от школы св. Глорианы"
+" экипаж осознал всю важность маскировки. С машины сняли все яркие элементы, "
+"а её саму перекрасили в полевой серый цвет. Такой камуфляж «Кабасан» "
+"использовали во всех боях, доведя навыки маскировки и организации засад до "
+"совершенства."
+
+msgid "G191_StuG_IIIF_CFE_A_long_special"
+msgstr ""
+"The StuG III Ausf. F Kabasan — немецкая ПТ-САУ V уровня. Мощный двигатель и "
+"надёжное орудие делают эту машину по-настоящему универсальной: она способна "
+"быстро реагировать на развитие событий в любой точке карты и наносить "
+"приличный урон противнику. Кроме того, у самоходки хорошая маскировка, "
+"позволяющая действовать очень скрытно."
+
+msgid "G191_StuG_IIIF_CFE_A_short"
+msgstr "StuG III Kaba"
+
+msgid "G191_StuG_IIIF_CFE_A_short_special"
+msgstr "Хорошие мобильность и скорострельность"
 
 msgid "G20_Marder_II"
 msgstr "Marder II"
@@ -3786,6 +3859,29 @@ msgstr "Phönix"
 msgid "G98_WT_auf_E_100_Phonix_short_special"
 msgstr "Великолепное орудие, вращающаяся башня"
 
+msgid "G98_Waffentrager_E100_CFE_T"
+msgstr "Waffenträger auf E 100 T"
+
+msgid "G98_Waffentrager_E100_CFE_T_descr"
+msgstr ""
+"Вариант установки зенитных орудий большого калибра на шасси танка Е 100. "
+"Предполагалось использовать 150-мм пушку. Разработка проекта была "
+"остановлена в связи с окончанием Второй мировой войны."
+
+msgid "G98_Waffentrager_E100_CFE_T_long_special"
+msgstr ""
+"Waffenträger auf E 100 T — немецкая ПТ-САУ X уровня. В отличие от своих "
+"предшественников эта машина использует систему дозарядки вместо магазина "
+"заряжания, что делает игру на ней более гибкой. Waffenträger auf E 100 T "
+"почти всегда готова дать сдачи, ведь ей не нужно каждый раз полностью "
+"заряжать магазин."
+
+msgid "G98_Waffentrager_E100_CFE_T_short"
+msgstr "WT E 100 T"
+
+msgid "G98_Waffentrager_E100_CFE_T_short_special"
+msgstr "Система дозарядки с огромным уроном, вращающаяся башня"
+
 msgid "G98_Waffentrager_E100_P_cn"
 msgstr "Waffenträger auf E 100 (P) Mod"
 
@@ -3901,6 +3997,9 @@ msgstr "Pz. 38H"
 
 msgid "H39turm"
 msgstr "Pz.Kpfw. 38H 735 (f)"
+
+msgid "Hall_Scott_V12_RKW"
+msgstr "Hall-Scott V12 RKW"
 
 msgid "Hetzer"
 msgstr "Jagdpanzer 38(t) Hetzer"
@@ -4292,6 +4391,14 @@ msgstr ""
 msgid "Maybach_HL_120_TRM_F"
 msgstr "Maybach HL 120 TRM"
 
+msgid "Maybach_HL_120_TRM_F_2"
+msgstr "Maybach HL 120 TRM (F2)"
+
+msgid "Maybach_HL_120_TRM_F_2_short"
+msgstr ""
+"Maybach HL 120\n"
+"TRM (F2)"
+
 msgid "Maybach_HL_120_TRM_G"
 msgstr "Maybach HL 120 TRM/G"
 
@@ -4645,6 +4752,12 @@ msgstr "Maybach HL 295 (A)"
 
 msgid "Maybach_HL_234P60"
 msgstr "Maybach Neues Projekt"
+
+msgid "Maybach_HL_234P60_CFE_T"
+msgstr "Maybach Neues Projekt T"
+
+msgid "Maybach_HL_234P60_CFE_T_short"
+msgstr "Maybach Neues Projekt T"
 
 msgid "Maybach_HL_234P60_P"
 msgstr "Maybach Neues Projekt P"
@@ -5427,6 +5540,9 @@ msgstr "SEM 25F"
 msgid "SEM_25_funkgerat"
 msgstr "SEM 25 Funkgerät"
 
+msgid "SEM_25_funkgerat_RKW"
+msgstr "SEM 25 Funkgerät RKW"
+
 msgid "SPA_19TB_mod_43_german"
 msgstr "SPA 19TBM42"
 
@@ -5830,6 +5946,9 @@ msgstr "Straussler V–4/40"
 msgid "Turret_1_G17_JagdPzIV"
 msgstr "Jagdpanzer IV"
 
+msgid "Turret_1_G183_Radkampfwagen"
+msgstr "Radkampfwagen"
+
 msgid "Turret_1_G184_Windhund"
 msgstr "Windhund"
 
@@ -5850,6 +5969,9 @@ msgstr "Hirschkäfer"
 
 msgid "Turret_1_G18_JagdPanther"
 msgstr "Jagdpanther"
+
+msgid "Turret_1_G191_StuG_IIIF_CFE_A"
+msgstr "StuG III Ausf. F Kabasan"
 
 msgid "Turret_1_G23_Grille"
 msgstr "Grille"
@@ -5977,6 +6099,9 @@ msgstr "Waffenträger auf Pz. IV für 12,8 cm"
 
 msgid "Turret_1_G98_WT_auf_E_100_Phonix"
 msgstr "WT auf E 100 Phönix"
+
+msgid "Turret_1_G98_Waffentrager_E100_CFE_T"
+msgstr "Waffenträger auf E 100 T"
 
 msgid "Turret_1_G98_Waffentrager_E100_P"
 msgstr "Waffenträger auf E 100 (P)"
@@ -6386,6 +6511,9 @@ msgstr "DM11 (A)"
 msgid "_105mm_DM11_Kurz"
 msgstr "DM11 Kurz"
 
+msgid "_105mm_DM11_RKW"
+msgstr "DM11 RKW"
+
 msgid "_105mm_DM12"
 msgstr "DM12"
 
@@ -6394,6 +6522,9 @@ msgstr "DM12-20"
 
 msgid "_105mm_DM12_Kurz"
 msgstr "DM12 Kurz"
+
+msgid "_105mm_DM12_RKW"
+msgstr "DM12 RKW"
 
 msgid "_105mm_DM13"
 msgstr "DM13"
@@ -6412,6 +6543,9 @@ msgstr "DM13 (A)"
 
 msgid "_105mm_DM13_Kurz"
 msgstr "DM13 Kurz"
+
+msgid "_105mm_DM13_RKW"
+msgstr "DM13 RKW"
 
 msgid "_105mm_DM23"
 msgstr "DM23"
@@ -6467,6 +6601,9 @@ msgstr "Gr. 39 Hl/A Ausf. H"
 msgid "_105mm_Gr_39_Hl_A_K"
 msgstr "Gr. 39 Hl/A K"
 
+msgid "_105mm_Gr_39_Hl_A_K_7x7"
+msgstr "Gr. 39 Hl/A K"
+
 msgid "_105mm_K18_L52"
 msgstr "10,5 cm Pak L/52"
 
@@ -6478,6 +6615,9 @@ msgstr "105 mm Kanone"
 
 msgid "_105mm_Kanone_18"
 msgstr "10,5 cm Kanone 18"
+
+msgid "_105mm_Kanone_L7_RKW"
+msgstr "105 mm Kanone L7 RKW"
 
 msgid "_105mm_KwK45_L52_N"
 msgstr "10.5 cm Kw.K. L/52 Ausf. B"
@@ -6624,6 +6764,9 @@ msgstr "Pzgr. 40 (JP)"
 msgid "_105mm_Pzgr_40_K"
 msgstr "Pzgr. 40 K"
 
+msgid "_105mm_Pzgr_40_K_7x7"
+msgstr "Pzgr. 40 K"
+
 msgid "_105mm_Pzgr_40_rot_Emil"
 msgstr "Pzgr. 40 rot (Emil)"
 
@@ -6658,6 +6801,9 @@ msgid "_105mm_Sprgr_18_G"
 msgstr "Sprgr. 18 G"
 
 msgid "_105mm_Sprgr_18_K"
+msgstr "Sprgr. 18 K"
+
+msgid "_105mm_Sprgr_18_K_7x7"
 msgstr "Sprgr. 18 K"
 
 msgid "_105mm_Sprgr_45"
@@ -6704,6 +6850,9 @@ msgstr "10,5 cm Panzerkanone L7A3"
 
 msgid "_10WSc"
 msgstr "10WSc"
+
+msgid "_10WSc_CFE_T"
+msgstr "10WSc T"
 
 msgid "_10WSc_P"
 msgstr "10WSc P"
@@ -7194,6 +7343,9 @@ msgstr "Gr. 39 Hl/C G (Rhm)"
 msgid "_150mm_Gr_39_Hl_C_G_WT_IV"
 msgstr "Gr. 39 Hl/C G (WT IV)"
 
+msgid "_150mm_Gr_39_Hl_C_G_WT_IV_CFE_T"
+msgstr "Gr. 39 Hl/C G (WT IV) T"
+
 msgid "_150mm_Gr_44_Hl_A"
 msgstr "Gr. 44 Hl/A"
 
@@ -7214,6 +7366,9 @@ msgstr "15 cm Pak L/29.5"
 
 msgid "_150mm_Pak_L_38"
 msgstr "15 cm Pak L/38"
+
+msgid "_150mm_Pak_L_38_CFE_T"
+msgstr "15 cm Pak L/38 T"
 
 msgid "_150mm_Pak_L_44"
 msgstr "15 cm Pak L/44"
@@ -7238,6 +7393,9 @@ msgstr "Pzgr. 42 (Rhm)"
 
 msgid "_150mm_Pzgr_42_WT_IV"
 msgstr "Pzgr. 42 (WT IV)"
+
+msgid "_150mm_Pzgr_42_WT_IV_CFE_T"
+msgstr "Pzgr. 42 (WT IV) T"
 
 msgid "_150mm_Pzgr_44"
 msgstr "Pzgr. 44"
@@ -7283,6 +7441,9 @@ msgstr "Sprgr. G 45 (Rhm)"
 
 msgid "_150mm_Sprgr_G_45_WT_IV"
 msgstr "Sprgr. G 45 (WT IV)"
+
+msgid "_150mm_Sprgr_G_45_WT_IV_CFE_T"
+msgstr "Sprgr. G 45 (WT IV) T"
 
 msgid "_150mm_Sprgr_G_Hummel"
 msgstr "Sprgr. G (Hummel)"
@@ -7969,6 +8130,9 @@ msgstr "Pzgr. 39 (B)"
 msgid "_75mm_Pzgr_39_E"
 msgstr "Pzgr. 39 (E)"
 
+msgid "_75mm_Pzgr_39_F"
+msgstr "Pzgr. 39 (F)"
+
 msgid "_75mm_Pzgr_39_G"
 msgstr "Pzgr. 39 (G)"
 
@@ -8013,6 +8177,9 @@ msgstr "Pzgr. 40 (B)"
 
 msgid "_75mm_Pzgr_40_E"
 msgstr "Pzgr. 40 (E)"
+
+msgid "_75mm_Pzgr_40_F"
+msgstr "Pzgr. 40 (F)"
 
 msgid "_75mm_Pzgr_40_G"
 msgstr "Pzgr. 40 (G)"
@@ -8077,6 +8244,9 @@ msgstr "Sprgr. 18 Ausf. H"
 msgid "_75mm_Sprgr_18_E"
 msgstr "Sprgr. 18 (E)"
 
+msgid "_75mm_Sprgr_18_F"
+msgstr "Sprgr. 18 (F)"
+
 msgid "_75mm_Sprgr_18_G"
 msgstr "Sprgr. 18 (G)"
 
@@ -8115,6 +8285,9 @@ msgstr "7,5 cm Stu.K. 40 L/43"
 
 msgid "_75mm_StuK_40_L48A"
 msgstr "7,5 cm Stu.K. 40 L/48"
+
+msgid "_75mm_StuK_40_L48_F"
+msgstr "7,5 cm StuK 40 L/48 (F)"
 
 msgid "_75mm_Waffe0725_1944"
 msgstr "7,5/5,5 cm Kw.K. 44 L/53"

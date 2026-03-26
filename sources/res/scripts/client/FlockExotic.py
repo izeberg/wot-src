@@ -1,3 +1,4 @@
+from __future__ import absolute_import, division
 import math, random
 from functools import partial
 import BigWorld, Math, AnimationSequence, FlockManager

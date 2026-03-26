@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.559509 0.059808 -4.740282</min>
+		<max>1.560523 9.594907 4.799272</max>
+	</visibilityBox>
+	<parent>last_stand/vehicles/german/G00_K_bomber_Boss_LS25_bot/normal/lod4/Chassis</parent>
+	<extent>250.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>last_stand/vehicles/german/G00_K_bomber_Boss_LS25_bot/normal/lod3/Chassis</nodefullVisual>
+</root>

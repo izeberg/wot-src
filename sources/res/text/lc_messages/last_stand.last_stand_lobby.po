@@ -1,0 +1,653 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-01-12 10:00+0300\n"
+"PO-Revision-Date: 2023-01-12 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+msgid "#PluralForms"
+msgstr ""
+"nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && "
+"(n%100<10 || n%100>=20) ? 1 : 2);"
+
+msgid "abilitiesIncomplete/cancel"
+msgstr "Выйти в бой"
+
+msgid "abilitiesIncomplete/submit"
+msgstr "Снарядить!"
+
+msgid "abilitiesIncomplete/title"
+msgstr "Тактические устройства не выбраны"
+
+msgid "abilitiesIncomplete/warning"
+msgstr ""
+"На выбранной машине не хватает тактических устройств. Это может негативно "
+"сказаться на боевой эффективности. Всё равно выйти в бой?"
+
+msgid "ammoSetup/changeHotKey/body"
+msgstr ""
+"Вы можете настроить горячие клавиши для типов снарядов и тактических устройств.\n"
+"Эти изменения затрагивают только игровые события и не влияют на стандартные режимы игры.\n"
+"Вы также можете настроить горячие клавиши в меню настроек управления (категория «Снаряжение»)."
+
+msgid "ammoSetup/changeHotKey/header"
+msgstr "Изменить горячие клавиши для снаряжения"
+
+msgid "badgeWidget/round"
+msgstr "%(count)s K"
+
+msgid "badgeWidget/tooltipBody"
+msgstr ""
+"Выполните текущую задачу, чтобы получить уникальную нашивку «Последний "
+"рубеж: Операция \"Пандора\"»:"
+
+msgid "badgeWidget/tooltipHeader"
+msgstr "Задача на эпическую награду"
+
+msgid "booster/booster_ability_cost/description"
+msgstr ""
+"После исследования снижает {EDCB9E_Start}затраты мириума{EDCB9E_End} на "
+"использование всех тактических устройств на "
+"{EDCB9E_Start}%(ability_cost_add_percent)s%%{EDCB9E_End}."
+
+msgid "booster/booster_ability_cost/name"
+msgstr "Эффективность мириума"
+
+msgid "booster/booster_ability_duration/description"
+msgstr ""
+"После исследования увеличивает {EDCB9E_Start}продолжительность действия "
+"тактических устройств{EDCB9E_End} на "
+"{EDCB9E_Start}%(ability_duration_add_percent)s%%{EDCB9E_End}."
+
+msgid "booster/booster_ability_duration/name"
+msgstr "Время действия устройства"
+
+msgid "booster/booster_ability_radius/description"
+msgstr ""
+"После исследования увеличивает {EDCB9E_Start}радиус действия тактических "
+"устройств{EDCB9E_End} на "
+"{EDCB9E_Start}%(ability_radius_add_percent)s%%{EDCB9E_End}."
+
+msgid "booster/booster_ability_radius/name"
+msgstr "Радиус эффекта устройства"
+
+msgid "booster/booster_heal/description"
+msgstr ""
+"После исследования усиливает {EDCB9E_Start}эффекты "
+"восстановления{EDCB9E_End}, применяемые к машине, на "
+"{EDCB9E_Start}%(heal_add_percent)s%%{EDCB9E_End}."
+
+msgid "booster/booster_heal/name"
+msgstr "Эффекты восстановления"
+
+msgid "booster/booster_obelisk_translated_damage/description"
+msgstr ""
+"После исследования увеличивает количество урона, {EDCB9E_Start}передающегося"
+" от Обелисков{EDCB9E_End} технике противника на "
+"{EDCB9E_Start}%(obelisk_translated_damage_add_percent)s%%{EDCB9E_End}."
+
+msgid "booster/booster_obelisk_translated_damage/name"
+msgstr "Транслируемый урон Обелиска"
+
+msgid "booster/booster_pick_up_radius/description"
+msgstr ""
+"После исследования увеличивает {EDCB9E_Start}радиус сбора "
+"мириума{EDCB9E_End} с техники противника на "
+"{EDCB9E_Start}%(pick_up_radius_add)s{EDCB9E_End}."
+
+msgid "booster/booster_pick_up_radius/name"
+msgstr "Радиус сбора мириума"
+
+msgid "booster/booster_pick_up_souls/description"
+msgstr ""
+"После исследования увеличивает {EDCB9E_Start}количество мириума,{EDCB9E_End}"
+" собираемого с уничтоженной техники на "
+"{EDCB9E_Start}%(pick_up_souls_add_percent)s%%{EDCB9E_End}."
+
+msgid "booster/booster_pick_up_souls/name"
+msgstr "Сбор мириума"
+
+msgid "booster/booster_receive_souls_after_wave/description"
+msgstr ""
+"После исследования увеличивает {EDCB9E_Start}количество мириума,{EDCB9E_End}"
+" получаемого за уничтожение волны противника на "
+"{EDCB9E_Start}%(receive_souls_after_wave_add)s{EDCB9E_End}."
+
+msgid "booster/booster_receive_souls_after_wave/name"
+msgstr "Мириум за волну"
+
+msgid "booster/booster_restore_souls_on_respawn/description"
+msgstr ""
+"После исследования увеличивает {EDCB9E_Start}количество мириума,{EDCB9E_End}"
+" восстанавливаемого при возрождении на "
+"{EDCB9E_Start}%(restore_souls_on_respawn_add)s{EDCB9E_End}."
+
+msgid "booster/booster_restore_souls_on_respawn/name"
+msgstr "Мириум при возрождении"
+
+msgid "booster/booster_souls_capacity/description"
+msgstr ""
+"После исследования увеличивает {EDCB9E_Start}максимальный запас "
+"мириума{EDCB9E_End} на {EDCB9E_Start}%(souls_capacity_add)s{EDCB9E_End}."
+
+msgid "booster/booster_souls_capacity/name"
+msgstr "Максимальный запас мириума"
+
+msgid "bundle/name/bundleEventPack"
+msgstr "НАБОР ЗАЩИТНИКА"
+
+msgid "bundleView/bundle/serviceChannelMessages/ls2_0bundle_key"
+msgstr "Ключи куплены"
+
+msgid "bundleView/tooltip/expVehicleX5/body"
+msgstr ""
+"Возможность получать в пять раз больше опыта за бой, начиная со второй "
+"победы в день на любой машине."
+
+msgid "bundleView/tooltip/expVehicleX5/header"
+msgstr "Задача на ×5 опыта за бой"
+
+msgid "carousel/filters/tooltipBody"
+msgstr ""
+"Настройка отображения техники с учётом типа, нации и других параметров."
+
+msgid "carousel/filters/tooltipHeader"
+msgstr "Фильтр по параметрам"
+
+msgid "common/back"
+msgstr "НАЗАД"
+
+msgid "common/close"
+msgstr "ЗАКРЫТЬ"
+
+msgid "common/modifierInline"
+msgstr "×{value}"
+
+msgid "common/modifierInlineTimes"
+msgstr "×{value}"
+
+msgid "common/progress"
+msgstr "{value} / {maxValue}"
+
+msgid "common/toEvent"
+msgstr "К СОБЫТИЮ"
+
+msgid "common/toRewardPath"
+msgstr "К ПРОГРЕССИИ"
+
+msgid "common/yes"
+msgstr "Так точно!"
+
+msgid "difficult/daily"
+msgstr "ДОСТУПНЫ ЕЖЕДНЕВНЫЕ ЗАДАЧИ НА КЛЮЧИ"
+
+msgid "difficult/disabled/body"
+msgstr ""
+"Вы в составе взвода. Только командир взвода может изменять уровень "
+"сложности."
+
+msgid "difficult/disabled/header"
+msgstr "Смена уровня сложности недоступна"
+
+msgid "difficult/level_1"
+msgstr "Стандарт"
+
+msgid "difficult/level_2"
+msgstr "Тяжело"
+
+msgid "difficult/level_3"
+msgstr "Жесть"
+
+msgid "difficult/new"
+msgstr "НОВОЕ"
+
+msgid "difficult/tooltip/description/level1"
+msgstr ""
+"Снижены прочность и бронирование противников. Стандартное количество данных "
+"за бой."
+
+msgid "difficult/tooltip/description/level2"
+msgstr ""
+"Броня противников усилена. Количество данных за бой увеличено на "
+"{{modifier}}."
+
+msgid "difficult/tooltip/description/level3"
+msgstr ""
+"Ещё больше противников с прочной бронёй. Количество данных за бой увеличено "
+"на {{modifier}}."
+
+msgid "difficult/tooltip/description/reward"
+msgstr "Награды за уничтожение последней волны в первый раз:"
+
+msgid "difficult/tooltip/header/level1"
+msgstr "Сложность «Стандарт»"
+
+msgid "difficult/tooltip/header/level2"
+msgstr "Сложность «Тяжело»"
+
+msgid "difficult/tooltip/header/level3"
+msgstr "Сложность «Жесть»"
+
+msgid "difficult/tooltip/locked"
+msgstr "Уровень сложности закрыт"
+
+msgid "difficult/tooltip/lockedDescr/level2"
+msgstr ""
+"Чтобы открыть этот уровень, победите в режиме на сложности «Стандарт»."
+
+msgid "difficult/tooltip/lockedDescr/level3"
+msgstr "Чтобы открыть этот уровень, победите в режиме на сложности «Тяжело»."
+
+msgid "difficult/tooltip/state/default"
+msgstr "Уровень сложности доступен"
+
+msgid "difficult/tooltip/state/selected"
+msgstr "Уровень сложности выбран"
+
+msgid "difficult/tooltip/subHeader"
+msgstr "Волн уничтожено: {count}"
+
+msgid "difficult/uppercase/level_1"
+msgstr "СТАНДАРТ"
+
+msgid "difficult/uppercase/level_2"
+msgstr "ТЯЖЕЛО"
+
+msgid "difficult/uppercase/level_3"
+msgstr "ЖЕСТЬ"
+
+msgid "difficultyWindow/description/level_2"
+msgstr ""
+"Броня противников усилена. Больше кредитов и ×{{modifier}} данных за бой."
+
+msgid "difficultyWindow/description/level_3"
+msgstr ""
+"Ещё больше противников с прочной бронёй. Больше кредитов и ×{{modifier}} "
+"данных за бой."
+
+msgid "difficultyWindow/description/level_4"
+msgstr ""
+"Отражайте волны противников и занимайте почётные места в таблице лидеров. "
+"Вас ждут ценные награды и многое другое!"
+
+msgid "difficultyWindow/header/level_2"
+msgstr "УРОВЕНЬ СЛОЖНОСТИ: ТЯЖЕЛО"
+
+msgid "difficultyWindow/header/level_3"
+msgstr "УРОВЕНЬ СЛОЖНОСТИ: ЖЕСТЬ"
+
+msgid "difficultyWindow/header/level_4"
+msgstr "РЕЖИМ «ПОСЛЕДНИЙ РУБЕЖ»"
+
+msgid "difficultyWindow/headerShort/level_2"
+msgstr "ТЯЖЕЛО"
+
+msgid "difficultyWindow/headerShort/level_3"
+msgstr "ЖЕСТЬ"
+
+msgid "difficultyWindow/headerShort/level_4"
+msgstr "ПОСЛЕДНИЙ РУБЕЖ"
+
+msgid "difficultyWindow/rewards"
+msgstr "Награды за выполнение:"
+
+msgid "difficultyWindow/title"
+msgstr "ДОСТУПЕН"
+
+msgid "hangar/exit"
+msgstr "ПОКИНУТЬ СОБЫТИЕ"
+
+msgid "hangar/narration"
+msgstr "История"
+
+msgid "hangar/tooltip/about"
+msgstr "Узнать больше о событии «Последний рубеж: Вторжение»."
+
+msgid "hangar/tooltip/narration"
+msgstr "Узнать больше об истории события."
+
+msgid "hangarAmmunitionSetup/header"
+msgstr "ТАКТИЧЕСКИЕ УСТРОЙСТВА"
+
+msgid "hangarAmmunitionSetup/navigation"
+msgstr "ОСНАЩЕНИЕ"
+
+msgid "headerButtons/battle/types/last_stand"
+msgstr "Последний рубеж"
+
+msgid "iconButton/comparison/default"
+msgstr "Сравнение техники"
+
+msgid "iconButton/comparison/isDisabled"
+msgstr "Сравнение техники недоступно"
+
+msgid "iconButton/preview/default"
+msgstr "Предпросмотр машины"
+
+msgid "iconButton/preview/isDisabled"
+msgstr "Предпросмотр машины недоступен"
+
+msgid "keyCard/name"
+msgstr "Ключи дешифровки"
+
+msgid "meta/btn/decrypt"
+msgstr "ДЕШИФРОВАТЬ"
+
+msgid "meta/btn/skip"
+msgstr "ПРОПУСТИТЬ"
+
+msgid "meta/btn/view"
+msgstr "СМОТРЕТЬ"
+
+msgid "meta/receive/description"
+msgstr ""
+"Соберите %(keys) / %(decrypt) %(icon)\n"
+"для дешифровки записи"
+
+msgid "metaIntro/description/fight"
+msgstr ""
+"Участвуйте в боях события и зарабатывайте данные, чтобы продвигаться по "
+"прогрессии."
+
+msgid "metaIntro/description/progress"
+msgstr ""
+"Собирайте данные, чтобы исследовать улучшения техники и выполнять более "
+"сложные задачи."
+
+msgid "metaIntro/description/reward"
+msgstr ""
+"Проходите этапы прогрессии, чтобы получить особые награды события. "
+"Подробности можно узнать на экране «Цепочка наград»."
+
+msgid "metaIntro/header/fight"
+msgstr "Бои события"
+
+msgid "metaIntro/header/progress"
+msgstr "Улучшения"
+
+msgid "metaIntro/header/reward"
+msgstr "Уникальные награды"
+
+msgid "metaIntro/title"
+msgstr "ПРОГРЕССИЯ"
+
+msgid "missionWidget/complete"
+msgstr ""
+"Задача выполнена.\n"
+"Возвращайтесь завтра."
+
+msgid "missionWidget/tooltipBody"
+msgstr ""
+"Выполните ежедневные задачи, которые доступны каждые 24 ч, чтобы получить "
+"награду. Сегодняшняя задача:"
+
+msgid "missionWidget/tooltipHeader"
+msgstr "Ежедневная задача"
+
+msgid "narration/actions/voiceover"
+msgstr "Озвучка"
+
+msgid "narration/narrationText/ls_narration_1"
+msgstr ""
+"{{@ class $highlightText}}СОВЕРШЕННО СЕКРЕТНО{{/}}{{titleParagraph}}{{@ "
+"class $highlightText}}СЕКТОР: R-22{{/}} (периметр "
+"«Зигфрид»){{pargraphStart}}Небо над сектором разорвано. Воронка непрерывно "
+"переносит эхо-танки в нашу реальность. Здешний гарнизон удерживает внешний "
+"периметр на пределе возможностей, и если мы не изменим ситуацию, прорыв "
+"неизбежен через {{@ class $highlightSecondaryText}}[ДАННЫЕ УДАЛЕНЫ]{{/}} "
+"часов.{{pargraphStart}}Под центром аномалии развёрнут комплекс «АТЛАС». Это "
+"наша единственная надежда на то, что она схлопнется. Пока работает эхо-"
+"маскировка, враг не замечает комплекс. Но аномалия... она "
+"учится.{{pargraphStart}}Периодически фиксируются всплески: материализуется "
+"эхо-танк неизвестного класса. Его цель — «АТЛАС». Дойдя до точки под центром"
+" воронки, он активирует гравитационный импульс такой силы, что техника "
+"превращается в металлолом, а экипажи — в {{@ class "
+"$highlightSecondaryText}}[ДАННЫЕ УДАЛЕНЫ]{{/}}.{{pargraphStart}}Мы уже "
+"лишились трёх комплексов «АТЛАС». В оперативном резерве осталось всего "
+"несколько единиц. Если мы потеряем последние устройства, аномалию закрыть "
+"будет невозможно. Прорыв станет необратим.{{pargraphStart}}ПОДПИСЬ: КУРАТОР "
+"(ПРОЕКТ «М»)"
+
+msgid "narration/narrationText/ls_narration_2"
+msgstr ""
+"{{@ class $highlightText}}АНАЛИТИЧЕСКАЯ ЗАПИСКА 14/C{{/}}{{titleParagraph}}{{@ class $highlightText}}«АНАЛИЗ ПОЛЕВЫХ АНОМАЛИЙ»{{/}}{{pargraphStart}}Командирам танковых групп.{{pargraphStart}}Капитан Миллер из шестого взвода первым заметил необычные свойства Обелисков. Когда он снарядом случайно задел и расколол кристаллическую структуру, повреждённая броня его танка... восстановилась. К сожалению, из того боя он не вернулся. Но его находка спасёт сотни экипажей.{{pargraphStart}}Благодаря данным комплекса «АТЛАС» аналитики расшифровали природу кристаллических структур. Запомните эту классификацию — эта информация не раз спасёт вас в бою.{{pargraphStart}}Мы выявили три типа:{{pargraphStart}}{{@ class $highlightText}}РЕГЕН{{/}}\n"
+" При разрушении высвобождает поле с отрицательной энтропией. Взрывная волна такого Обелиска буквально «запекает» микротрещины в броне.{{pargraphStart}}{{@ class $highlightText}}БАРЬЕР{{/}}\n"
+" Разрушение Обелиска этого типа высвобождает фазовое стабилизирующее поле, которое концентрируется вокруг ваших боевых машин. Это создаёт временный защитный барьер.{{pargraphStart}}{{@ class $highlightText}}СБОЙ{{/}}\n"
+" При уничтожении происходит выброс мощного фазового импульса, который нарушает целостность мириумного ядра у эхо-танков и парализует их на короткое время.{{pargraphStart}}Важно: все Обелиски находятся в жёсткой фазовой сцепке с определённой группой эхо-танков. Каждое попадание по кристаллу транслирует разрушительный импульс по этой сцепке и наносит урон боевым единицам противника.{{pargraphStart}}Используйте Обелиски в бою. Это единственный способ противостоять превосходящим силам врага.{{pargraphStart}}ПОДПИСЬ: КУРАТОР (ПРОЕКТ «М»)"
+
+msgid "narration/narrationText/ls_narration_3"
+msgstr ""
+"{{@ class $highlightText}}СОВЕРШЕННО СЕКРЕТНО{{/}}{{titleParagraph}}{{@ "
+"class $highlightText}}ДИРЕКТИВА 22/A{{/}}{{pargraphStart}}Мы находимся в "
+"одном шаге от победы... Или от окончательного поражения. За последние "
+"несколько суток мы приблизились к настройкам, необходимым для "
+"принудительного схлопывания аномалии. Впервые у нас есть шанс не просто "
+"сдержать вторжение, а покончить с ним. Но цена высока. В строю осталось "
+"всего несколько комплексов «АТЛАС». Если мы их потеряем, заменить будет "
+"нечем.{{pargraphStart}}ПОМНИТЕ: «АТЛАС» — это не просто научная станция. Это"
+" ваши глаза. Именно «АТЛАС» предсказывает, где начнётся новая волна атаки. "
+"Он анализирует тактику врага и передаёт данные для совершенствования ваших "
+"танков. Каждая перфолента, доставленная с комплекса, — это шаг к победе. Без"
+" него мы ослепнем и потеряем шанс остановить врага.{{pargraphStart}}Мы не "
+"можем допустить дальнейших потерь научного оборудования. Это вопрос "
+"выживания не только для экипажей на передовой — для всех "
+"нас.{{pargraphStart}}Защищать «АТЛАС» любой ценой.{{pargraphStart}}ПОДПИСЬ: "
+"КУРАТОР (ПРОЕКТ «М»)"
+
+msgid "narration/narrationText/ls_narration_4"
+msgstr ""
+"{{@ class $highlightText}}ИТОГОВЫЙ РАПОРТ{{/}}{{titleParagraph}}{{@ class "
+"$highlightText}}СТАТУС: РАССЕКРЕЧЕНО (ЧАСТИЧНО){{/}}{{pargraphStart}}В 06:21"
+" аномальная активность полностью прекратилась. Атмосферный фронт чист. Все "
+"структуры типа «Обелиск» ликвидированы. Угроза "
+"устранена.{{pargraphStart}}Собранные образцы мириумных кристаллов, а также "
+"останки эхо-танка неизвестного класса отправлены в спецхранилище для "
+"изучения.{{pargraphStart}}Официальное заключение: инцидент исчерпан. "
+"Действия контингента по сдерживанию угрозы признаны успешными. Карантин с "
+"сектора снят.{{pargraphStart}}{{pargraphStart}}{{@ class "
+"$highlightText}}ЛИЧНАЯ ЗАМЕТКА КУРАТОРА{{/}} (Только для "
+"спецрезерва){{pargraphStart}}Я настроен скептически. Это победа в сражении, "
+"но не в войне. Аномалия просто... ушла? Мы не успели завершить калибровку "
+"комплекса «АТЛАС». Аналитики фиксируют похожие сигнатуры в других регионах, "
+"но частота всплесков растёт. По их данным у нас есть три месяца перед тем, "
+"как всё это повторится где-то ещё.{{pargraphStart}}Мой опыт подсказывает, "
+"что произошедшее — это лёгкий бриз перед ураганом. Нужно готовиться к "
+"следующей атаке: обновить парк вооружений, подготовить больше «АТЛАСОВ», "
+"задействовать все доступные ресурсы: от мириумных технологий до простых и "
+"надёжных минных полей. Когда они вернутся, а они вернутся, мы должны "
+"встретить их во всеоружии.{{pargraphStart}}Согласно отчётам, аномалия "
+"училась противодействовать нашим средствам. Поэтому нам нужно быть гибкими. "
+"Да, мы изучаем их и подстраиваемся, как можем: берём их технологии, "
+"фиксируем их тактику. Но где гарантия того, что они не делают того же?"
+
+msgid "narration/narrationTitle/ls_artefact_1"
+msgstr "{{number}}. Вторжение"
+
+msgid "narration/narrationTitle/ls_artefact_2"
+msgstr "{{number}}. Обелиски"
+
+msgid "narration/narrationTitle/ls_artefact_3"
+msgstr "{{number}}. АТЛАС"
+
+msgid "narration/narrationTitle/ls_artefact_4"
+msgstr "{{number}}. Чистое небо"
+
+msgid "narration/tooltips/disabledNextEpisode_1"
+msgstr ""
+"Победите в режиме на сложности «Стандарт», чтобы перейти к следующей части "
+"истории."
+
+msgid "narration/tooltips/disabledNextEpisode_2"
+msgstr ""
+"Победите в режиме на сложности «Тяжело», чтобы перейти к следующей части "
+"истории."
+
+msgid "narration/tooltips/disabledNextEpisode_3"
+msgstr ""
+"Победите в режиме на сложности «Жесть», чтобы перейти к финальной части "
+"истории."
+
+msgid "narration/tooltips/nextStory"
+msgstr "Следующая история"
+
+msgid "preBattle/leave"
+msgstr "Выйти из боя"
+
+msgid "preBattle/searching"
+msgstr "ПОИСК СОЮЗНИКОВ..."
+
+msgid "preBattle/tip"
+msgstr ""
+"Долго не можете подобрать отряд для события? Попробуйте изменить уровень "
+"сложности."
+
+msgid "preBattle/uppercase/leave"
+msgstr "ВЫЙТИ ИЗ БОЯ"
+
+msgid "promoWindow/header"
+msgstr "К «ПОСЛЕДНЕМУ РУБЕЖУ»"
+
+msgid "promoWindow/subheader"
+msgstr ""
+"Опробуйте новую главу одиночного игрового режима «Последний рубеж» с {dateRange}.\n"
+"Получите комплект {cream_open}3D-объектов{cream_close} события, экспериментальное оборудование и уникальные награды."
+
+msgid "questCard/allCompleted"
+msgstr "Все ежедневные задачи выполнены"
+
+msgid "questCard/completed"
+msgstr ""
+"Ежедневная задача выполненена.\n"
+"Возвращайтесь завтра."
+
+msgid "reward/rest"
+msgstr "И ещё: %(count)s"
+
+msgid "rewardPath/about"
+msgstr "О ЗАДАНИЯХ"
+
+msgid "rewardPath/aboutTooltip"
+msgstr "Узнать больше о событии."
+
+msgid "rewardPath/boostTitle"
+msgstr "Продвигайтесь быстрее в событии и получайте больше данных {icon}"
+
+msgid "rewardPath/btn/shop"
+msgstr "Смотреть в Магазине"
+
+msgid "rewardPath/completed"
+msgstr "Собраны все данные и получены все награды"
+
+msgid "rewardPath/completedTitle"
+msgstr "Загляните в Магазин за особыми тематическими элементами внешнего вида"
+
+msgid "rewardPath/intro"
+msgstr "ВСТУПЛЕНИЕ"
+
+msgid "rewardPath/introTooltip"
+msgstr "Посмотреть вступительное видео."
+
+msgid "rewardPath/progress"
+msgstr ""
+"Данные получены на ЭТАПЕ {artefactIndex}: {currentProgress} / {maxProgress} "
+"{icon}"
+
+msgid "rewardPath/title"
+msgstr "ПРОГРЕССИЯ"
+
+msgid "rewardPathCard/completed"
+msgstr "Выполнено"
+
+msgid "rewardPathCard/name"
+msgstr "Цепочка наград"
+
+msgid "rewardPathCard/progress"
+msgstr "{{value}} / {{maxValue}} {{storyPoint}}"
+
+msgid "shopCard/name"
+msgstr "Наборы события"
+
+msgid "squad/goToAnother/cancel"
+msgstr "Отменить"
+
+msgid "squad/goToAnother/message"
+msgstr "Взвод будет расформирован."
+
+msgid "squad/goToAnother/submit"
+msgstr "Выйти"
+
+msgid "squad/goToAnother/title"
+msgstr "Покинуть событие «Последний рубеж: Вторжение»?"
+
+msgid "squad/leave/cancel"
+msgstr "Отменить"
+
+msgid "squad/leave/disabledEvent/message"
+msgstr "Взвод будет расформирован."
+
+msgid "squad/leave/disabledEvent/submit"
+msgstr "Так точно!"
+
+msgid "squad/leave/disabledEvent/title"
+msgstr "Событие «Последний рубеж: Вторжение» завершено"
+
+msgid "squad/leave/message"
+msgstr "Взвод будет расформирован."
+
+msgid "squad/leave/submit"
+msgstr "Выйти"
+
+msgid "squad/leave/title"
+msgstr "Покинуть взвод события «Последний рубеж: Вторжение»?"
+
+msgid "squad/leaveDisabled/cancel"
+msgstr "Продолжить"
+
+msgid "squad/leaveDisabled/message"
+msgstr "Вы находитесь в основном составе и подтвердили готовность к бою."
+
+msgid "squad/leaveDisabled/title"
+msgstr "Невозможно покинуть взвод!"
+
+msgid "stageReward/rewards/received"
+msgstr "Также получено:"
+
+msgid "stageReward/special/header"
+msgstr "ПРОЙДЕН УРОВЕНЬ СЛОЖНОСТИ «ЖЕСТЬ»!"
+
+msgid "stageReward/special/subheader"
+msgstr "Получена особая награда"
+
+msgid "stageReward/stage/header"
+msgstr "ПОЛУЧЕНЫ НАГРАДЫ"
+
+msgid "stageReward/stage/subheader"
+msgstr "Последний рубеж: этап {{number}} пройден"
+
+msgid "stageReward/stageFinal/header"
+msgstr "ВСЕ НАГРАДЫ ПОЛУЧЕНЫ"
+
+msgid "stageReward/stageFinal/subheader"
+msgstr "Последний рубеж: последний этап пройден"
+
+msgid "vehicle/rent/label"
+msgstr ""
+"Выполните задачу или купите набор события, чтобы получить доступ к этой "
+"машине."
+
+msgid "vehicle/rent/packs"
+msgstr "К набору события"
+
+msgid "vehicle/rent/tasks"
+msgstr "К задаче"
+
+msgid "vehicle/tasks/locked"
+msgstr ""
+"Выполните текущую задачу или купите набор события, чтобы получить доступ к "
+"этой машине."

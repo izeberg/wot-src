@@ -1075,6 +1075,18 @@ package
       
       public static const TANK_PARAMS_DESIGNATORMARKEDENEMIESADDITIONALDAMAGE:String = "#menu:tank_params/designatorMarkedEnemiesAdditionalDamage";
       
+      public static const TANK_PARAMS_LOWCHARGESHOTAVGDAMAGE:String = "#menu:tank_params/lowChargeShotAvgDamage";
+      
+      public static const TANK_PARAMS_LOWCHARGESHOTPENETRATION:String = "#menu:tank_params/lowChargeShotPenetration";
+      
+      public static const TANK_PARAMS_LOWCHARGESHOTRATEOFFIRE:String = "#menu:tank_params/lowChargeShotRateOfFire";
+      
+      public static const TANK_PARAMS_LOWCHARGESHOTDISPERTION:String = "#menu:tank_params/lowChargeShotDispertion";
+      
+      public static const TANK_PARAMS_LOWCHARGESHOTVELOCITY:String = "#menu:tank_params/lowChargeShotVelocity";
+      
+      public static const TANK_PARAMS_LOWCHARGESHOTBLOCKDURATION:String = "#menu:tank_params/lowChargeShotBlockDuration";
+      
       public static const TANK_PARAMS_MAXHEALTH:String = "#menu:tank_params/maxHealth";
       
       public static const TANK_PARAMS_VEHICLEWEIGHT:String = "#menu:tank_params/vehicleWeight";
@@ -1309,6 +1321,26 @@ package
       
       public static const TANK_PARAMS_TIMETOOVERHEAT:String = "#menu:tank_params/timeToOverheat";
       
+      public static const TANK_PARAMS_PROPELLANTPRELIMITDAMAGEBONUS:String = "#menu:tank_params/propellantPreLimitDamageBonus";
+      
+      public static const TANK_PARAMS_PROPELLANTPOSTLIMITDAMAGESPIKE:String = "#menu:tank_params/propellantPostLimitDamageSpike";
+      
+      public static const TANK_PARAMS_PROPELLANTPOSTLIMITDAMAGEBONUS:String = "#menu:tank_params/propellantPostLimitDamageBonus";
+      
+      public static const TANK_PARAMS_PROPELLANTCHARGINGPERSEC:String = "#menu:tank_params/propellantChargingPerSec";
+      
+      public static const TANK_PARAMS_PROPELLANTCHARGESPENDINGAFTERSHOT:String = "#menu:tank_params/propellantChargeSpendingAfterShot";
+      
+      public static const TANK_PARAMS_PROPELLANTCHARGELIMIT:String = "#menu:tank_params/propellantChargeLimit";
+      
+      public static const TANK_PARAMS_PROPELLANTDISCHARGINGPERSEC:String = "#menu:tank_params/propellantDischargingPerSec";
+      
+      public static const TANK_PARAMS_PROPELLANTPOSTLIMITDISPERSION:String = "#menu:tank_params/propellantPostLimitDispersion";
+      
+      public static const TANK_PARAMS_PROPELLANTPOSTLIMITAIMINGTIME:String = "#menu:tank_params/propellantPostLimitAimingTime";
+      
+      public static const TANK_PARAMS_PROPELLANTOVERCHARGESWITCHCOOLDOWN:String = "#menu:tank_params/propellantOverchargeSwitchCooldown";
+      
       public static const TANK_PARAMS_T:String = "#menu:tank_params/t";
       
       public static const TANK_PARAMS_P:String = "#menu:tank_params/p";
@@ -1324,6 +1356,8 @@ package
       public static const TANK_PARAMS_S:String = "#menu:tank_params/s";
       
       public static const TANK_PARAMS_YOH_S_S:String = "#menu:tank_params/yoh_s_s";
+      
+      public static const TANK_PARAMS_PERCENT_PER_S:String = "#menu:tank_params/percent_per_s";
       
       public static const TANK_PARAMS_MM:String = "#menu:tank_params/mm";
       
@@ -1392,6 +1426,20 @@ package
       public static const TANK_PARAMS_STAGEDJETBOOSTERSCHARGEDURATION:String = "#menu:tank_params/stagedJetBoostersChargeDuration";
       
       public static const TANK_PARAMS_STAGEDJETBOOSTERSCOOLDOWNTIME:String = "#menu:tank_params/stagedJetBoostersCooldownTime";
+      
+      public static const TANK_PARAMS_WHEELEDDASHABILITYDURATION:String = "#menu:tank_params/wheeledDashAbilityDuration";
+      
+      public static const TANK_PARAMS_WHEELEDDASHENGINEPOWER:String = "#menu:tank_params/wheeledDashEnginePower";
+      
+      public static const TANK_PARAMS_WHEELEDDASHTOPSPEED:String = "#menu:tank_params/wheeledDashTopSpeed";
+      
+      public static const TANK_PARAMS_WHEELEDDASHABILITYRELOADTIME:String = "#menu:tank_params/wheeledDashAbilityReloadTime";
+      
+      public static const TANK_PARAMS_WHEELEDDASHABILITYRELOADTIMEBONUS:String = "#menu:tank_params/wheeledDashAbilityReloadTimeBonus";
+      
+      public static const TANK_PARAMS_WHEELEDDASHSPEEDLIMITS:String = "#menu:tank_params/wheeledDashSpeedLimits";
+      
+      public static const TANK_PARAMS_WHEELEDDASHREVERSESPEED:String = "#menu:tank_params/wheeledDashReverseSpeed";
       
       public static const EXTRAPARAMS_HEADER:String = "#menu:extraParams/header";
       
@@ -1835,53 +1883,61 @@ package
       
       public static const HEADERBUTTONS_FIGHTBTN_TOOLTIP_TELECOMRENTALISOVER_BODY:String = "#menu:headerButtons/fightBtn/tooltip/telecomRentalIsOver/body";
       
-      public static const HEADERBUTTONS_FIGHTBTN_TOOLTIP_COMP7OFFLINE_HEADER:String = "#menu:headerButtons/fightBtn/tooltip/comp7Offline/header";
+      public static const HEADERBUTTONS_FIGHTBTN_TOOLTIP_COMP7BANISSET_HEADER:String = "#menu:headerButtons/fightBtn/tooltip/comp7BanIsSet/header";
       
-      public static const HEADERBUTTONS_FIGHTBTN_TOOLTIP_COMP7OFFLINE_BODY:String = "#menu:headerButtons/fightBtn/tooltip/comp7Offline/body";
+      public static const HEADERBUTTONS_FIGHTBTN_TOOLTIP_COMP7BANISSET_BODY:String = "#menu:headerButtons/fightBtn/tooltip/comp7BanIsSet/body";
+      
+      public static const HEADERBUTTONS_FIGHTBTN_TOOLTIP_COMP7VEHLEVEL_HEADER:String = "#menu:headerButtons/fightBtn/tooltip/comp7VehLevel/header";
+      
+      public static const HEADERBUTTONS_FIGHTBTN_TOOLTIP_COMP7VEHLEVEL_BODY:String = "#menu:headerButtons/fightBtn/tooltip/comp7VehLevel/body";
+      
+      public static const HEADERBUTTONS_FIGHTBTN_TOOLTIP_COMP7VEHLEVEL_DELIMITER:String = "#menu:headerButtons/fightBtn/tooltip/comp7VehLevel/delimiter";
+      
+      public static const HEADERBUTTONS_FIGHTBTN_TOOLTIP_COMP7NOTENOUGHSUITABLEVEHICLES_HEADER:String = "#menu:headerButtons/fightBtn/tooltip/comp7NotEnoughSuitableVehicles/header";
+      
+      public static const HEADERBUTTONS_FIGHTBTN_TOOLTIP_COMP7NOTENOUGHSUITABLEVEHICLES_BODY:String = "#menu:headerButtons/fightBtn/tooltip/comp7NotEnoughSuitableVehicles/body";
+      
+      public static const HEADERBUTTONS_FIGHTBTN_TOOLTIP_COMP7PREANNOUNCE_HEADER:String = "#menu:headerButtons/fightBtn/tooltip/comp7Preannounce/header";
+      
+      public static const HEADERBUTTONS_FIGHTBTN_TOOLTIP_COMP7PREANNOUNCE_BODY:String = "#menu:headerButtons/fightBtn/tooltip/comp7Preannounce/body";
+      
+      public static const HEADERBUTTONS_FIGHTBTN_TOOLTIP_COMP7SEASONEND_HEADER:String = "#menu:headerButtons/fightBtn/tooltip/comp7SeasonEnd/header";
+      
+      public static const HEADERBUTTONS_FIGHTBTN_TOOLTIP_COMP7QUALIFICATIONCALCULATION_HEADER:String = "#menu:headerButtons/fightBtn/tooltip/comp7QualificationCalculation/header";
+      
+      public static const HEADERBUTTONS_FIGHTBTN_TOOLTIP_COMP7QUALIFICATIONCALCULATION_BODY:String = "#menu:headerButtons/fightBtn/tooltip/comp7QualificationCalculation/body";
       
       public static const HEADERBUTTONS_FIGHTBTN_TOOLTIP_COMP7NOTSET_HEADER:String = "#menu:headerButtons/fightBtn/tooltip/comp7NotSet/header";
       
       public static const HEADERBUTTONS_FIGHTBTN_TOOLTIP_COMP7NOTSET_BODY:String = "#menu:headerButtons/fightBtn/tooltip/comp7NotSet/body";
       
-      public static const HEADERBUTTONS_FIGHTBTN_TOOLTIP_COMP7LIGHTNOTSET_HEADER:String = "#menu:headerButtons/fightBtn/tooltip/comp7LightNotSet/header";
-      
-      public static const HEADERBUTTONS_FIGHTBTN_TOOLTIP_COMP7LIGHTNOTSET_BODY:String = "#menu:headerButtons/fightBtn/tooltip/comp7LightNotSet/body";
-      
       public static const HEADERBUTTONS_FIGHTBTN_TOOLTIP_COMP7DISABLED_HEADER:String = "#menu:headerButtons/fightBtn/tooltip/comp7Disabled/header";
       
       public static const HEADERBUTTONS_FIGHTBTN_TOOLTIP_COMP7DISABLED_BODY:String = "#menu:headerButtons/fightBtn/tooltip/comp7Disabled/body";
+      
+      public static const HEADERBUTTONS_FIGHTBTN_TOOLTIP_COMP7OFFLINE_HEADER:String = "#menu:headerButtons/fightBtn/tooltip/comp7Offline/header";
+      
+      public static const HEADERBUTTONS_FIGHTBTN_TOOLTIP_COMP7OFFLINE_BODY:String = "#menu:headerButtons/fightBtn/tooltip/comp7Offline/body";
+      
+      public static const HEADERBUTTONS_FIGHTBTN_TOOLTIP_COMP7UNSUITABLEVEHICLE_HEADER:String = "#menu:headerButtons/fightBtn/tooltip/comp7UnsuitableVehicle/header";
+      
+      public static const HEADERBUTTONS_FIGHTBTN_TOOLTIP_COMP7LIGHTNOTSET_HEADER:String = "#menu:headerButtons/fightBtn/tooltip/comp7LightNotSet/header";
+      
+      public static const HEADERBUTTONS_FIGHTBTN_TOOLTIP_COMP7LIGHTNOTSET_BODY:String = "#menu:headerButtons/fightBtn/tooltip/comp7LightNotSet/body";
       
       public static const HEADERBUTTONS_FIGHTBTN_TOOLTIP_COMP7LIGHTDISABLED_HEADER:String = "#menu:headerButtons/fightBtn/tooltip/comp7LightDisabled/header";
       
       public static const HEADERBUTTONS_FIGHTBTN_TOOLTIP_COMP7LIGHTDISABLED_BODY:String = "#menu:headerButtons/fightBtn/tooltip/comp7LightDisabled/body";
       
-      public static const HEADERBUTTONS_FIGHTBTN_TOOLTIP_COMP7BANISSET_HEADER:String = "#menu:headerButtons/fightBtn/tooltip/comp7BanIsSet/header";
-      
-      public static const HEADERBUTTONS_FIGHTBTN_TOOLTIP_COMP7BANISSET_BODY:String = "#menu:headerButtons/fightBtn/tooltip/comp7BanIsSet/body";
-      
       public static const HEADERBUTTONS_FIGHTBTN_TOOLTIP_WOTPLUSEXCLUSIVEUNAVAILABLE_HEADER:String = "#menu:headerButtons/fightBtn/tooltip/wotPlusExclusiveUnavailable/header";
       
       public static const HEADERBUTTONS_FIGHTBTN_TOOLTIP_WOTPLUSEXCLUSIVEUNAVAILABLE_BODY:String = "#menu:headerButtons/fightBtn/tooltip/wotPlusExclusiveUnavailable/body";
-      
-      public static const HEADERBUTTONS_FIGHTBTN_TOOLTIP_COMP7RATINGCALCULATION_HEADER:String = "#menu:headerButtons/fightBtn/tooltip/comp7RatingCalculation/header";
-      
-      public static const HEADERBUTTONS_FIGHTBTN_TOOLTIP_COMP7RATINGCALCULATION_BODY:String = "#menu:headerButtons/fightBtn/tooltip/comp7RatingCalculation/body";
-      
-      public static const HEADERBUTTONS_FIGHTBTN_TOOLTIP_COMP7VEHLEVEL_HEADER:String = "#menu:headerButtons/fightBtn/tooltip/comp7VehLevel/header";
-      
-      public static const HEADERBUTTONS_FIGHTBTN_TOOLTIP_COMP7VEHLEVEL_BODY:String = "#menu:headerButtons/fightBtn/tooltip/comp7VehLevel/body";
       
       public static const HEADERBUTTONS_FIGHTBTN_TOOLTIP_COMP7LIGHTVEHLEVEL_HEADER:String = "#menu:headerButtons/fightBtn/tooltip/comp7LightVehLevel/header";
       
       public static const HEADERBUTTONS_FIGHTBTN_TOOLTIP_COMP7LIGHTVEHLEVEL_BODY:String = "#menu:headerButtons/fightBtn/tooltip/comp7LightVehLevel/body";
       
       public static const HEADERBUTTONS_FIGHTBTN_TOOLTIP_COMP7LIGHTVEHLEVEL_DELIMITER:String = "#menu:headerButtons/fightBtn/tooltip/comp7LightVehLevel/delimiter";
-      
-      public static const HEADERBUTTONS_FIGHTBTN_TOOLTIP_COMP7PREANNOUNCE_HEADER:String = "#menu:headerButtons/fightBtn/tooltip/comp7Preannounce/header";
-      
-      public static const HEADERBUTTONS_FIGHTBTN_TOOLTIP_COMP7PREANNOUNCE_BODY:String = "#menu:headerButtons/fightBtn/tooltip/comp7Preannounce/body";
-      
-      public static const HEADERBUTTONS_FIGHTBTN_TOOLTIP_COMP7VEHLEVEL_DELIMITER:String = "#menu:headerButtons/fightBtn/tooltip/comp7VehLevel/delimiter";
       
       public static const HEADERBUTTONS_DEFAULTCOUNTER:String = "#menu:headerButtons/defaultCounter";
       
@@ -2423,6 +2479,8 @@ package
       
       public static const MODULEINFO_OVERHEATGUN:String = "#menu:moduleInfo/overheatGun";
       
+      public static const MODULEINFO_PROPELLANTAFTERBURNERGUN:String = "#menu:moduleInfo/propellantAfterburnerGun";
+      
       public static const MODULEINFO_ROCKETACCELERATION:String = "#menu:moduleInfo/rocketAcceleration";
       
       public static const MODULEINFO_STAGEDJETBOOSTERS:String = "#menu:moduleInfo/stagedJetBoosters";
@@ -2434,6 +2492,10 @@ package
       public static const MODULEINFO_TWINGUN:String = "#menu:moduleInfo/twinGun";
       
       public static const MODULEINFO_NONPIERCINGDAMAGELABEL:String = "#menu:moduleInfo/nonPiercingDamageLabel";
+      
+      public static const MODULEINFO_LOWCHARGESHOT:String = "#menu:moduleInfo/lowChargeShot";
+      
+      public static const MODULEINFO_WHEELEDDASH:String = "#menu:moduleInfo/wheeledDash";
       
       public static const MODULEINFO_PARAMS_SHOTSPEED:String = "#menu:moduleInfo/params/shotSpeed";
       
@@ -2613,7 +2675,7 @@ package
       
       public static const MODULEINFO_PARAMS_ROCKETACCELERATIONENGINEPOWER:String = "#menu:moduleInfo/params/rocketAccelerationEnginePower";
       
-      public static const MODULEINFO_PARAMS_NORMALISATION:String = "#menu:moduleInfo/params/normalisation";
+      public static const MODULEINFO_PARAMS_NORMALIZATIONANGLE:String = "#menu:moduleInfo/params/normalizationAngle";
       
       public static const MODULEINFO_PARAMS_RICOCHETANGLE:String = "#menu:moduleInfo/params/ricochetAngle";
       
@@ -3271,7 +3333,11 @@ package
       
       public static const TRAINING_NOTIFICATIONTEXT_FREESUPPLIES:String = "#menu:training/notificationText/freeSupplies";
       
+      public static const TRAINING_NOTIFICATIONTEXT_VEHICLEREQUIRED3:String = "#menu:training/notificationText/vehicleRequired3";
+      
       public static const TRAINING_ADDITIONALINFO_FREESUPPLIESCOMP7:String = "#menu:training/additionalInfo/freeSuppliesComp7";
+      
+      public static const TRAINING_ADDITIONALINFO_VEHICLEREQUIRED3:String = "#menu:training/additionalInfo/vehicleRequired3";
       
       public static const TANKMANRETRAININGBTN_FREE:String = "#menu:tankmanRetrainingBtn/free";
       

@@ -4666,7 +4666,7 @@
 						</maxPitch>
 					</pitchLimits>
 					<shotDispersionRadius>
-						0.33
+						0.31
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
@@ -4675,7 +4675,7 @@
 					</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.12
+							0.1
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>4</afterShot>
@@ -6087,7 +6087,7 @@
 						</maxPitch>
 					</pitchLimits>
 					<shotDispersionRadius>
-						0.33
+						0.31
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
@@ -6096,7 +6096,7 @@
 					</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.12
+							0.1
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>4</afterShot>

@@ -242,8 +242,8 @@ class LegacyInitEntity(BaseLegacyEntity):
 class LegacyEntity(_LegacyEntity):
 
     def __init__(self, modeFlags, settings, permClass=None, limits=None, requestHandlers=None):
-        super(LegacyEntity, self).__init__(FUNCTIONAL_FLAG.LEGACY, modeFlags, ILegacyListener, requestHandlers)
         self._settings = settings
+        super(LegacyEntity, self).__init__(FUNCTIONAL_FLAG.LEGACY, modeFlags, ILegacyListener, requestHandlers)
         self._permClass = permClass or LegacyPermissions
         self._limits = limits or LegacyLimits(self)
         self._cooldown = PrbCooldownManager()

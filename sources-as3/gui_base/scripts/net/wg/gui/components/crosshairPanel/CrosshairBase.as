@@ -109,8 +109,6 @@ package net.wg.gui.components.crosshairPanel
       
       protected var reloadingTimeFieldAlpha:Number = 1.0;
       
-      private var _isOverheat:Boolean = false;
-      
       private var _netSeparatorType:String = "default";
       
       private var _timerProgressTextFieldColor:uint = 0;
@@ -150,6 +148,8 @@ package net.wg.gui.components.crosshairPanel
       private var _width:Number = 0;
       
       private var _height:Number = 0;
+      
+      private var _isShownReloading:Boolean = true;
       
       private var _isReloadBoostBorder:Boolean = false;
       
@@ -370,7 +370,7 @@ package net.wg.gui.components.crosshairPanel
          this.updateAutoloaderState(param8,param13);
          this.reloadBoost = param18;
          this.setReloadBoostBorderVisible(param19,param20,true);
-         this.overheatIndicatorVisible = param21;
+         this.isUseAlternateZoomPosition = param21;
          this.setIsInControllableReload(param17);
       }
       
@@ -407,7 +407,6 @@ package net.wg.gui.components.crosshairPanel
             this.setReloadingBarFrame();
             this.updateNetSeparatorVisibility();
             this.updateQuickReloadingTimer();
-            this.overheatIndicatorVisible = this._isOverheat;
             this.setReloadBoostBorderVisible(this._isReloadBoostBorder,this._isReloadBoostBorderActive,true);
          }
       }
@@ -494,7 +493,7 @@ package net.wg.gui.components.crosshairPanel
             this.timerCompleteTextField.visible = false;
          }
          this._currentTimerTextField = !!this._isReloadInProgress ? this.timerProgressTextField : this.timerCompleteTextField;
-         this._currentTimerTextField.visible = true;
+         this._currentTimerTextField.visible = this._isShownReloading;
          this.reloadSwitchIcon.gotoAndStop(!!this._isReloadInProgress ? RELOAD_SWITCH_ICON_PROGRESS : RELOAD_SWITCH_ICON_COMPLETE);
          this.applyReloadingData();
          this.applyReloadingAlpha();
@@ -533,6 +532,7 @@ package net.wg.gui.components.crosshairPanel
             this.timerProgressTextField.visible = false;
             this._quickReloadingTimerVisible = false;
          }
+         this._isShownReloading = param1;
          this.updateQuickReloadingTimer();
       }
       
@@ -794,11 +794,6 @@ package net.wg.gui.components.crosshairPanel
          this.timerCompleteTextField.filters = !!param1 ? this._timerBoostedFilter : this._timerCompleteTextFieldFilter;
       }
       
-      public function set overheatIndicatorVisible(param1:Boolean) : void
-      {
-         this._isOverheat = param1;
-      }
-      
       public function get autoloaderBoostParams() : BoostIndicatorStateParamsVO
       {
          return this.autoloaderComponent.autoloaderBoostParams;
@@ -807,6 +802,10 @@ package net.wg.gui.components.crosshairPanel
       public function set isUseFrameAnimation(param1:Boolean) : void
       {
          this.cassetteMC.isUseFrameAnimation = param1;
+      }
+      
+      public function set isUseAlternateZoomPosition(param1:Boolean) : void
+      {
       }
       
       public function set scaleWidgetEnabled(param1:Boolean) : void

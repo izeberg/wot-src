@@ -1,10 +1,14 @@
-import functools, weakref, BigWorld, win_points
+import functools, typing, weakref, BigWorld, win_points
 from arena_bonus_type_caps import ARENA_BONUS_TYPE_CAPS as _CAPS
 from battle_modifiers_common import BattleParams, BattleModifiers
 from constants import ARENA_GUI_TYPE as _GUI_TYPE, ARENA_GUI_TYPE_LABEL as _GUI_TYPE_LABEL, ARENA_BONUS_TYPE as _BONUS_TYPE, ARENA_PERIOD as _PERIOD, QUEUE_TYPE, TEAMS_IN_ARENA, VISIBILITY
 from gui import GUI_SETTINGS
 from gui.shared.utils.functions import getArenaImage
 from skeletons.gui.battle_session import IClientArenaVisitor
+if typing.TYPE_CHECKING:
+    from typing import Optional
+    from Avatar import PlayerAvatar
+    from ClientArena import ClientArena
 
 def _getClientArena(avatar=None):
     if avatar is None:
@@ -94,6 +98,7 @@ class _ArenaTypeSkeleton(object):
     battleEndWarningAppearTime = 0
     battleEndWarningDuration = 0
     vehicleCamouflageKind = 0
+    wwmusicSetup = {}
 
 
 class IArenaVisitor(object):
@@ -254,6 +259,10 @@ class _ArenaTypeVisitor(IArenaVisitor):
     def getVehicleCamouflageKind(self):
         return self._arenaType.vehicleCamouflageKind
 
+    @catch_attribute_exception(default=_ArenaTypeSkeleton.wwmusicSetup)
+    def getWWmusicSetup(self):
+        return self._arenaType.wwmusicSetup
+
 
 class _ArenaGuiTypeVisitor(IArenaVisitor):
     __slots__ = ('_guiType', )
@@ -395,6 +404,9 @@ class _ArenaBonusTypeVisitor(IArenaVisitor):
 
     def hasLiveTags(self):
         return self.hasAnyBonusCap(_CAPS.COMMENDATIONS_LIVE_TAGS)
+
+    def hasW2gtTag(self):
+        return self.hasAnyBonusCap(_CAPS.W2GT)
 
 
 class _ArenaExtraDataVisitor(IArenaVisitor):
@@ -608,6 +620,9 @@ class _ClientArenaVisitor(IClientArenaVisitor):
 
     def hasLiveTags(self):
         return self._bonus.hasLiveTags()
+
+    def hasW2gtTag(self):
+        return self._bonus.hasW2gtTag()
 
     def getArenaIcon(self, subdir=''):
         return getArenaImage(self._type.getGeometryName(), subdir)

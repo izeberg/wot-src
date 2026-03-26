@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from gui.shared import g_eventBus, EVENT_BUS_SCOPE
 from gui.shared.events import HasCtxEvent

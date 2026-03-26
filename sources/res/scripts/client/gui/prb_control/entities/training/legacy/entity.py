@@ -133,12 +133,12 @@ class TrainingEntity(LegacyEntity):
         result = super(TrainingEntity, self).init(clientPrb=clientPrb, ctx=ctx)
         if self.storage.arenaGuiType is None:
             self.storage.arenaGuiType = self.getSettings()['arenaGuiType']
+        self.__updateTrainingLimits()
         self.__enterTrainingRoom(isInitial=ctx.getInitCtx() is None)
         g_eventDispatcher.addTrainingToCarousel(False)
         result = FUNCTIONAL_FLAG.addIfNot(result, FUNCTIONAL_FLAG.LOAD_WINDOW)
         result = FUNCTIONAL_FLAG.addIfNot(result, FUNCTIONAL_FLAG.LOAD_PAGE)
         self.__updateVehiclesWatcher()
-        self.__updateTrainingLimits()
         return result
 
     def fini(self, clientPrb=None, ctx=None, woEvents=False):

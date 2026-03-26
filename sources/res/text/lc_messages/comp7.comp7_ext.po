@@ -37,6 +37,14 @@ msgstr "Режим недоступен на вашем сервере %(button)
 msgid "alertMessage/ceasefireUnavailable"
 msgstr "Режим недоступен на всех серверах."
 
+msgid "alertMessage/icon/tooltipBody"
+msgstr ""
+"Для участия в режиме у вас в Ангаре должно быть как минимум %(count)s ед. "
+"подходящей техники. Подробнее можно узнать на странице «О Натиске»."
+
+msgid "alertMessage/icon/tooltipHeader"
+msgstr "Недостаточно подходящей техники"
+
 msgid "alertMessage/modeOffline"
 msgstr "Ошибка базы данных. Режим недоступен."
 
@@ -48,6 +56,9 @@ msgstr "Бои недоступны на сервере %(serverName)s"
 
 msgid "alertMessage/notAvailableEnd"
 msgstr "Бои недоступны на сервере %(serverName)s"
+
+msgid "alertMessage/notEnoughVehicles"
+msgstr "Недостаточно подходящей техники %(info)s"
 
 msgid "alertMessage/notSet"
 msgstr "Режим недоступен на сервере %(serverName)s"
@@ -115,6 +126,112 @@ msgstr[1] ""
 msgstr[2] ""
 "ЗАБРАТЬ\n"
 "НАГРАДЫ"
+
+msgid "banView/actionButtons/confirm"
+msgstr "Голосовать"
+
+msgid "banView/actionButtons/description/confirmed/bannedVehicle"
+msgstr "Вы уже проголосовали за машину %(vehicleName)s"
+
+msgid "banView/actionButtons/description/confirmed/withoutBan"
+msgstr "Не исключать"
+
+msgid "banView/actionButtons/description/notSelectedVehicle"
+msgstr "Предложить машину для исключения"
+
+msgid "banView/actionButtons/description/prepick"
+msgstr ""
+"Голосовать можно только\n"
+"на этапе исключения"
+
+msgid "banView/actionButtons/description/selectedVehicle/bannedVehicle"
+msgstr ""
+"Ваше предложение: \n"
+"%(vehicleName)s"
+
+msgid "banView/actionButtons/description/teamAffect"
+msgstr ""
+"Игрок вашей команды\n"
+"выбрал машину, которую вы хотите исключить"
+
+msgid "banView/actionButtons/description/wait"
+msgstr "Дождитесь окончания голосования"
+
+msgid "banView/button/back"
+msgstr "НАЗАД"
+
+msgid "banView/button/ban"
+msgstr "К исключению"
+
+msgid "banView/button/description"
+msgstr "К ВЫБОРУ МАШИНЫ"
+
+msgid "banView/description/prepick"
+msgstr ""
+"Выберите машину, наиболее подходящую для карты и состава вашей команды"
+
+msgid "banView/description/voting"
+msgstr "Выберите машину, которую хотите исключить из этого боя"
+
+msgid "banView/factory/candidate"
+msgstr "Машина для исключения: %(vehicleName)s"
+
+msgid "banView/factory/candidates"
+msgstr "Техника для исключения, предложенная командой"
+
+msgid "banView/factory/noCandidates"
+msgstr "Нет техники для исключения"
+
+msgid "banView/factory/pick"
+msgstr "Ваше предложение: %(vehicleName)s"
+
+msgid "banView/noBan"
+msgstr "Не исключать"
+
+msgid "banView/title/prepick"
+msgstr "Этап предвыбора техники"
+
+msgid "banView/title/voting"
+msgstr "Этап голосования за исключение"
+
+msgid "banView/tooltip/confirmed"
+msgstr "Голос подтверждён"
+
+msgid "banView/tooltip/noAction"
+msgstr "Вы не совершили никаких действий"
+
+msgid "banView/tooltip/noActionDescription"
+msgstr "Этот игрок ещё не предложил машину для исключения."
+
+msgid "banView/tooltip/notConfirmed"
+msgstr "Предложено"
+
+msgid "banView/vehicleTypes/AT_SPG"
+msgstr "ПТ-САУ"
+
+msgid "banView/vehicleTypes/heavyTank"
+msgstr "Тяжёлые танки"
+
+msgid "banView/vehicleTypes/lightTank"
+msgstr "Лёгкие танки"
+
+msgid "banView/vehicleTypes/mediumTank"
+msgstr "Средние танки"
+
+msgid "banView/withoutBan"
+msgstr "Не исключать"
+
+msgid "banWidget/allies"
+msgstr "Голоса союзников"
+
+msgid "banWidget/enemies"
+msgstr "Голоса соперников"
+
+msgid "banWidget/tooltip"
+msgstr ""
+"Ваша команда не определилась с техникой для исключения, поэтому была "
+"исключена случайная машина из списка техники, набравшей наибольшее "
+"количество голосов."
 
 msgid "battleCarousel/filterButtonTooltip/body"
 msgstr "Настройка отображения техники с учётом типа, роли и нации."
@@ -322,6 +439,9 @@ msgstr[2] "Сезон Нефритового дракона продлится %
 msgid "calendarDay/title"
 msgstr "Расписание"
 
+msgid "carousel/banned"
+msgstr "Исключён"
+
 msgid "claimRewards/button"
 msgstr "Получить награду"
 
@@ -359,6 +479,9 @@ msgstr "Навыки"
 
 msgid "crewMembersTooltip/subHeading"
 msgstr "Натиск. Год Дракона"
+
+msgid "crewMembersTooltip/zeroPerks"
+msgstr "«Нулевые» навыки"
 
 msgid "damageIndicatorTooltip/damage/day/heading"
 msgstr "Средний урон за день: %(averageDamageDealt)s"
@@ -536,6 +659,13 @@ msgstr "О СОБЫТИИ"
 msgid "intro/confirmButton"
 msgstr "Так точно!"
 
+msgid "intro/description/banPhase"
+msgstr ""
+"Команды могут исключать машины из боя. Общайтесь с союзниками, чтобы "
+"запретить нежелательную или определиться с наиболее подходящей техникой. "
+"Если ваша машина исключена, выберите любую другую из списка заранее "
+"подготовленной арендной техники."
+
 msgid "intro/description/onslaughtModifiers"
 msgstr ""
 "В режиме действуют модификаторы, меняющие параметры техники, такие как "
@@ -583,6 +713,9 @@ msgstr ""
 "коллекционной и некоторой специальной технике (кроме САУ). Готовьте технику "
 "в Ангаре и выбирайте подходящую прямо в бою, учитывая особенности игровой "
 "карты. Старайтесь подстраиваться под выбор техники союзников."
+
+msgid "intro/title/banPhase"
+msgstr "ИСКЛЮЧЕНИЕ ТЕХНИКИ"
 
 msgid "intro/title/onslaughtModifiers"
 msgstr "МОДИФИКАТОРЫ «НАТИСКА»"
@@ -744,25 +877,96 @@ msgstr "Вперёд"
 msgid "pagination/prev"
 msgstr "Назад"
 
+msgid "pbs/bans/title"
+msgstr "ИСКЛЮЧЁННАЯ ТЕХНИКА"
+
+msgid "pbs/missionsProgress/customization/title"
+msgstr "2D-СТИЛЬ РЕЖИМА «НАТИСК»"
+
+msgid "pbs/missionsProgress/notificationTabs/customization"
+msgstr "ЗАДАЧА НА 2D-СТИЛЬ ВЫПОЛНЕНА!"
+
+msgid "pbs/missionsProgress/notificationTabs/tokenRewards"
+msgstr "ЕЖЕНЕДЕЛЬНАЯ ЗАДАЧА №%(count)s ВЫПОЛНЕНА!"
+
+msgid "pbs/missionsProgress/notificationTabs/weekly"
+msgstr "ЕЖЕНЕДЕЛЬНАЯ ЗАДАЧА ВЫПОЛНЕНА!"
+
+msgid "pbs/missionsProgress/weekly/title"
+msgstr "ЕЖЕНЕДЕЛЬНЫЕ ЗАДАЧИ «НАТИСКА»"
+
+msgid "pbs/overview/extraLeaveStatus/lose"
+msgstr "ПОРАЖЕНИЕ: ВЫ"
+
+msgid "pbs/overview/extraLeaveStatus/tie"
+msgstr "НИЧЬЯ: ВЫ"
+
+msgid "pbs/overview/extraLeaveStatus/win"
+msgstr "ПОБЕДА, НО ВЫ"
+
+msgid "pbs/overview/highRank/promoted"
+msgstr "Звание повышено: %(rank)s"
+
+msgid "pbs/overview/lowRank/default"
+msgstr "%(rank)s, %(division)s"
+
+msgid "pbs/overview/lowRank/demoted"
+msgstr "Звание понижено: %(rank)s, %(division)s"
+
+msgid "pbs/overview/lowRank/promoted"
+msgstr "Звание повышено: %(rank)s, %(division)s"
+
+msgid "pbs/overview/qualification/description"
+msgstr "Боёв проведено"
+
+msgid "pbs/overview/qualification/title"
+msgstr "Специальность"
+
+msgid "pbs/overview/warning/leave/default"
+msgstr "К вам было применено дисциплинарное взыскание: штраф к очкам рейтинга"
+
+msgid "pbs/overview/warning/leave/qualification"
+msgstr ""
+"К вам было применено дисциплинарное взыскание. После прохождения "
+"квалификации рейтинг будет снижен."
+
+msgid "pbs/rankDescription/fifth"
+msgstr ""
+"Для получения ранга «Легенда» войдите в "
+"{ede6d9e5_Open}топ-%(topPercentage)%{ede6d9e5_Close} игроков таблицы "
+"лидеров."
+
+msgid "pbs/rankDescription/sixth"
+msgstr ""
+"Для удержания ранга «Легенда» войдите в "
+"{ede6d9e5_Open}топ-%(topPercentage)%{ede6d9e5_Close} игроков таблицы "
+"лидеров."
+
+msgid "pbs/tooltip/prestige_points_info_tooltip/bullet"
+msgstr "•"
+
+msgid "pbs/tooltip/prestige_points_info_tooltip/footer"
+msgstr "Узнайте подробности на странице «О Натиске»."
+
+msgid "pbs/tooltip/prestige_points_info_tooltip/header"
+msgstr "Очки престижа"
+
+msgid "pbs/tooltip/prestige_points_info_tooltip/listContent"
+msgstr ""
+"Нанесение урона;\n"
+"передача разведданных;\n"
+"обездвиживание;\n"
+"критические попадания;\n"
+"уничтожение техники противника;\n"
+"прочее."
+
+msgid "pbs/tooltip/prestige_points_info_tooltip/listHeader"
+msgstr ""
+"Особый ресурс, влияющий на количество получаемых и теряемых в сражении очков"
+" рейтинга. Очки престижа можно заработать за следующие действия в бою:"
+
 msgid "percentage"
 msgstr "%(percentageValue)s%"
-
-msgid "prebattleTimer/info/readyBtn/label"
-msgstr "Подтвердить выбор"
-
-msgid "prebattleTimer/info/readyBtn/tooltip/body"
-msgstr "После подтверждения вы не сможете выбрать другую машину."
-
-msgid "prebattleTimer/wait/additionalInfo"
-msgstr ""
-"Выбирайте машину, наиболее подходящую для текущей карты и состава вашей "
-"команды."
-
-msgid "prebattleTimer/wait/header"
-msgstr "Ожидание игроков..."
-
-msgid "prebattleTimer/wait/selectVehicle"
-msgstr "Выберите машину"
 
 msgid "prestigeIndicatorTooltip/prestige/day/heading"
 msgstr "Среднее количество очков престижа за день: %(averagePrestige)s"
@@ -1396,7 +1600,7 @@ msgid "rewards/subtitle/customizations"
 msgstr "{b2afab_Open}Для техники %(vehicleLevel)s уровня{b2afab_Close}"
 
 msgid "rewards/subtitle/styleProgress"
-msgstr "{b2afab_Open}Для стиля «Король драконов (алый)»{b2afab_Close}"
+msgstr "{b2afab_Open}Для стиля «%(progressionStyleName)s»{b2afab_Close}"
 
 msgid "rewards/subtitle/vehicles_rent"
 msgstr "%(vehicleLevel)s уровень"
@@ -2008,6 +2212,11 @@ msgstr "ГРАНД-ФИНАЛ"
 msgid "tournament/huya"
 msgstr "Смотреть на Huya"
 
+msgid "tournament/lastPrizePoolUpdate"
+msgstr ""
+"Призовой фонд формируется из средств, потраченных игроками на наборы. "
+"Последнее обновление: %(lastPrizePoolUpdate)s"
+
 msgid "tournament/noMatches"
 msgstr "НЕТ МАТЧЕЙ В РАСПИСАНИИ"
 
@@ -2048,10 +2257,13 @@ msgid "tournament/toShop"
 msgstr "В Магазин"
 
 msgid "tournament/tokenStore/button/ols"
-msgstr "В Магазин"
+msgstr "Обменять"
 
 msgid "tournament/tokenStore/ols"
-msgstr "МАГАЗИН ЖЕТОНОВ"
+msgstr "Жетоны «Легенд Натиска»"
+
+msgid "tournament/tokenStore/unavailable"
+msgstr "Доступно через:"
 
 msgid "tournament/tooltip/infoPageButton/header"
 msgstr "О турнире"
@@ -2106,7 +2318,7 @@ msgstr ""
 "рождением новых легенд!"
 
 msgid "tournamentsEntryPointTooltip/heading/ols"
-msgstr "5-й сезон Легенд Натиска"
+msgstr "6-й сезон OLS"
 
 msgid "tournamentsEntryPointTooltip/heading/wci"
 msgstr "WCI 2025"
@@ -2240,74 +2452,90 @@ msgstr[2] "%(value)s новых задач через:"
 msgid "whatsNewButtonLabel"
 msgstr "СЕЗОННЫЕ ОБНОВЛЕНИЯ"
 
+msgid "whatsNewView/banner/description"
+msgstr ""
+"Не упустите последний шанс получить ценные награды этого сезона, среди "
+"которых специальный тяжёлый танк X уровня Ashbringer. Вместе с машиной вы "
+"получите все заработанные для неё 3D-стили, бесстрашный экипаж с «нулевым» "
+"навыком «Боевое братство», а также экспериментальное оборудование на выбор, "
+"эффектный 2D-стиль и многое другое. Удачи на поле боя!"
+
+msgid "whatsNewView/banner/heading"
+msgstr "Насладитесь последними моментами года Дракона!"
+
 msgid "whatsNewView/banner/title/large"
-msgstr "СЕЗОН АЛОГО ДРАКОНА"
+msgstr "СЕЗОН НЕФРИТОВОГО ДРАКОНА"
 
 msgid "whatsNewView/banner/title/small"
 msgstr "НАТИСК. ЧТО НОВОГО?"
 
 msgid "whatsNewView/button/ok"
-msgstr "Время вершить историю!"
+msgstr "Бан-тастика!"
 
-msgid "whatsNewView/comms/description"
+msgid "whatsNewView/detailedBattleResults/description"
 msgstr ""
-"Повторный захват Узла связи теперь возможен через "
-"{eeede9e6_Open}75{eeede9e6_Close} секунд вместо "
-"{eeede9e6_Open}90{eeede9e6_Close}."
+"Улучшенный экран с результатами боя в стиле обновления 2.0 теперь содержит "
+"дополнительную информацию в зависимости от режима."
 
-msgid "whatsNewView/comms/heading"
-msgstr "Узел связи"
+msgid "whatsNewView/detailedBattleResults/heading"
+msgstr "Подробные результаты боя"
+
+msgid "whatsNewView/equippedRentals/description"
+msgstr ""
+"Вашу машину исключили? Не беда. Выберите арендную технику с заранее "
+"настроенным экипажем. оборудованием, боекомплектом и снаряжением."
+
+msgid "whatsNewView/equippedRentals/heading"
+msgstr "Готовая техника в аренду %(tag)s"
 
 msgid "whatsNewView/intro/description"
 msgstr ""
-"Следите за динамикой вашего рейтинга в сезоне, играйте в своём стиле на "
-"любимой технике и заходите на главную страницу, чтобы узнать, какой элемент "
-"внешнего вида вы сможете получить быстрее всего!"
+"В этом сезоне команды могут исключать машины из боя. Общайтесь с союзниками,"
+" чтобы запретить нежелательную или определиться с наиболее подходящей "
+"техникой для команды."
 
 msgid "whatsNewView/intro/heading"
-msgstr "Мы добавили подробную статистику! %(tag)s"
+msgstr "Исключение техники %(tag)s"
 
 msgid "whatsNewView/mapChanges/heading"
 msgstr "Карты"
 
-msgid "whatsNewView/newVehicles"
-msgid_plural "plural/whatsNewView/newVehicles"
-msgstr[0] ""
-"Новая машина доступна в режиме \n"
-"«Натиск»&nbsp;%(tag)s"
-msgstr[1] ""
-"Новая техника доступна в режиме \n"
-"«Натиск»&nbsp;%(tag)s"
-msgstr[2] ""
-"Новая техника доступна в режиме \n"
-"«Натиск»&nbsp;%(tag)s"
+msgid "whatsNewView/newAvailableVehicles/heading"
+msgstr "Новая машина, доступная в «Натиске»"
+
+msgid "whatsNewView/rentalVehicles/heading"
+msgstr "Арендная техника"
+
+msgid "whatsNewView/roleSkillUpdate/description"
+msgstr ""
+"Для режима доступен новый американский средний танк X уровня Ares 90 с "
+"соответствующим ролевым навыком."
+
+msgid "whatsNewView/roleSkillUpdate/heading"
+msgstr "Обновление ролевого навыка %(tag)s"
 
 msgid "whatsNewView/shopUpdates/description"
 msgstr ""
-"В магазине «Натиска» появился новый лёгкий танк IX уровня {eeede9e6_Open}LTC"
-" II{eeede9e6_Close}, а также две единицы усовершенствованного оборудования: "
-"{eeede9e6_Open}«Телескопическая{eeede9e6_Close} "
-"{eeede9e6_Open}система{eeede9e6_Close} "
-"{eeede9e6_Open}наблюдения»{eeede9e6_Close} и {eeede9e6_Open}«Маскировочная "
-"сеть{eeede9e6_Close} {eeede9e6_Open}высокой{eeede9e6_Close} "
-"{eeede9e6_Open}плотности»{eeede9e6_Close}. Оборудование «Усовершенствованная"
-" бортовая передача» удалено из магазина «Натиска» и будет доступно для "
-"покупки во внутриигровом Магазине после следующего обновления ассортимента."
+"Машина 114 SP2 теперь доступна для покупки в Магазине «Натиска» на ранге "
+"«Серебро»."
 
 msgid "whatsNewView/shopUpdates/heading"
-msgstr "Обновление раздела «Товары за боны»"
+msgstr "Обновления Магазина %(tag)s"
 
 msgid "whatsNewView/stamp/removed"
 msgstr "УДАЛЕНО"
 
 msgid "whatsNewView/stamp/underDevelopment"
-msgstr "++В ПЕРЕРАБОТКЕ++"
+msgstr "В ПЕРЕРАБОТКЕ"
 
 msgid "whatsNewView/tag/attention"
 msgstr "Внимание"
 
 msgid "whatsNewView/tag/changed"
 msgstr "Изменено"
+
+msgid "whatsNewView/tag/experimental"
+msgstr "Экспериментальное"
 
 msgid "whatsNewView/tag/new"
 msgstr "Новое"
@@ -2320,17 +2548,6 @@ msgstr "Переработано"
 
 msgid "whatsNewView/tag/seasonUpdate"
 msgstr "Сезонное обновление"
-
-msgid "whatsNewView/unavailable/description"
-msgstr ""
-"Американский средний танк X уровня {eeede9e6_Open}Ares 90{eeede9e6_Close} "
-"временно недоступен для сражений в режиме."
-
-msgid "whatsNewView/unavailable/heading"
-msgstr "Временно недоступен"
-
-msgid "whatsNewView/vehiclesForRent/heading"
-msgstr "Арендная техника"
 
 msgid "whatsNewView/watchVideo"
 msgstr "Смотреть видео"

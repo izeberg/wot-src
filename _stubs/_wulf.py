@@ -56,7 +56,7 @@ class PyGuiApplication(pybind11_object):
 	windowsManager = property(lambda self: None)
 
 
-class PyObjectEntity(pybind11_object):
+class PyObjectPresentation(pybind11_object):
 	def __delattr__(*args, **kwargs): pass
 	__doc__ = None
 	def __format__(*args, **kwargs): pass
@@ -65,7 +65,7 @@ class PyObjectEntity(pybind11_object):
 	def __init__(*args, **kwargs): pass
 	__module__ = '_wulf'
 	def __new__(*args, **kwargs): pass
-	__qualname__ = 'PyObjectEntity'
+	__qualname__ = 'PyObjectPresentation'
 	def __reduce__(*args, **kwargs): pass
 	def __reduce_ex__(*args, **kwargs): pass
 	def __repr__(*args, **kwargs): pass
@@ -78,7 +78,7 @@ class PyObjectEntity(pybind11_object):
 	def unbindPyObject(self, *args, **kwargs): pass
 
 
-class PyObjectArray(PyObjectEntity):
+class PyObjectArray(PyObjectPresentation):
 	def __delattr__(*args, **kwargs): pass
 	__doc__ = None
 	def __format__(*args, **kwargs): pass
@@ -121,6 +121,28 @@ class PyObjectArray(PyObjectEntity):
 	def setString(self, *args, **kwargs): pass
 	def setViewModel(self, *args, **kwargs): pass
 	def toString(self, *args, **kwargs): pass
+	def unbindPyObject(self, *args, **kwargs): pass
+
+
+class PyObjectEntity(pybind11_object):
+	def __delattr__(*args, **kwargs): pass
+	__doc__ = None
+	def __format__(*args, **kwargs): pass
+	def __getattribute__(*args, **kwargs): pass
+	def __hash__(*args, **kwargs): pass
+	def __init__(*args, **kwargs): pass
+	__module__ = '_wulf'
+	def __new__(*args, **kwargs): pass
+	__qualname__ = 'PyObjectEntity'
+	def __reduce__(*args, **kwargs): pass
+	def __reduce_ex__(*args, **kwargs): pass
+	def __repr__(*args, **kwargs): pass
+	def __setattr__(*args, **kwargs): pass
+	def __sizeof__(*args, **kwargs): pass
+	def __str__(*args, **kwargs): pass
+	def __subclasshook__(*args, **kwargs): pass
+	def bindPyObject(self, *args, **kwargs): pass
+	object = property(lambda self: None)
 	def unbindPyObject(self, *args, **kwargs): pass
 
 
@@ -175,13 +197,13 @@ class PyObjectFormatters(PyObjectEntity):
 	def unbindPyObject(self, *args, **kwargs): pass
 
 
-class PyObjectMap(PyObjectEntity):
+class PyObjectMap(PyObjectPresentation):
 	def __delattr__(*args, **kwargs): pass
 	__doc__ = None
 	def __format__(*args, **kwargs): pass
 	def __getattribute__(*args, **kwargs): pass
 	def __hash__(*args, **kwargs): pass
-	def __init__(self, *args, **kwargs): pass
+	def __init__(*args, **kwargs): pass
 	__module__ = '_wulf'
 	def __new__(*args, **kwargs): pass
 	__qualname__ = 'PyObjectMap'
@@ -1163,7 +1185,7 @@ class PyObjectViewEvent(pybind11_object):
 	targetViewID = property(lambda self: None)
 
 
-class PyObjectViewModel(PyObjectEntity):
+class PyObjectViewModel(PyObjectPresentation):
 	def __delattr__(*args, **kwargs): pass
 	__doc__ = None
 	def __format__(*args, **kwargs): pass

@@ -408,14 +408,23 @@ msgstr "M2A4"
 msgid "Chassis_GB150_Churchill_VII_G"
 msgstr "Churchill St. Gloriana"
 
+msgid "Chassis_GB151_Headshaker"
+msgstr "Headshaker"
+
 msgid "Chassis_GB152_AT_FV230_Breaker"
 msgstr "AT-FV230 Breaker"
+
+msgid "Chassis_GB155_Pike"
+msgstr "Pike"
 
 msgid "Chassis_GB156_Black_Prince_II"
 msgstr "Black Prince II"
 
 msgid "Chassis_GB157_FV214t"
 msgstr "FV214t"
+
+msgid "Chassis_GB158_Executor"
+msgstr "Executor"
 
 msgid "Chassis_GB15_Stuart_I"
 msgstr "Stuart I"
@@ -728,6 +737,9 @@ msgstr "Sexton I"
 
 msgid "Chrysler_A57_multibank"
 msgstr "Chrysler A57 Multibank"
+
+msgid "Clansman_VRC_353"
+msgstr "Clansman VRC 353"
 
 msgid "Continental_AOI-1195-5"
 msgstr "Continental AOI-1195-5"
@@ -1530,10 +1542,10 @@ msgstr ""
 
 msgid "GB130_FV225_Collector_long_special"
 msgstr ""
-"FV225 Collector — британский тяжёлый танк X уровня, вооружённый 110-мм "
-"орудием с высокими показателями урона в минуту и системой выбора режима "
-"огня. Танк проектировался как машина прорыва, поэтому у него хорошая "
-"мобильность и крепкая лобовая броня, но слабые борта."
+"FV225 Collector — британский тяжёлый танк IX уровня, обладающий выдающимся "
+"уроном в минуту благодаря спаренным 110-мм орудиям и системой выбора режима "
+"огня. Будучи танком прорыва, эта машина может похвастаться хорошей "
+"подвижностью и прочной лобовой бронёй при слабом бортовом бронировании."
 
 msgid "GB130_FV225_Collector_short"
 msgstr "Collector"
@@ -1974,6 +1986,37 @@ msgstr "Chur Gloriana"
 msgid "GB150_Churchill_VII_A_short_special"
 msgstr "Высокий урон в минуту, хорошее бронирование"
 
+msgid "GB151_Headshaker"
+msgstr "Headshaker"
+
+msgid "GB151_Headshaker_descr"
+msgstr ""
+"С повышением мощности вооружения классические рубочные компоновки САУ "
+"перестали соответствовать современным требованиям, что привело к разработке "
+"машины с принципиально новой схемой. Одним из таких проектов стала "
+"самоходная артиллерийская установка Headshaker с поворотной в двух "
+"плоскостях обитаемой орудийной установкой. Размещение опорно-поворотного "
+"механизма в верхней части рубки позволяло значительно снизить силуэт и "
+"использовать мощное вооружение с широким диапазоном углов наведения. Ещё "
+"одной особенностью стала система охлаждения из оребрённых теплообменных "
+"элементов, повышавшая надёжность пушки. Однако несмотря на все преимущества,"
+" сложность и высокая стоимость производства привели к остановке работ над "
+"проектом."
+
+msgid "GB151_Headshaker_long_special"
+msgstr ""
+"Headshaker — британская универсальная ПТ-САУ IX уровня. Обладает необычным "
+"сочетанием фугасных снарядов с высокой пробиваемостью и системой двойного "
+"сведения. Охлаждение орудия позволяет машине стрелять точно с дальних "
+"дистанций, а хороший урон в минуту и неплохое бронирование помогают в "
+"ближнем бою."
+
+msgid "GB151_Headshaker_short"
+msgstr "Headshaker"
+
+msgid "GB151_Headshaker_short_special"
+msgstr "Пробивные фугасы, система двойного сведения"
+
 msgid "GB152_AT_FV230_Breaker"
 msgstr "AT-FV230 Breaker"
 
@@ -1999,6 +2042,33 @@ msgstr ""
 
 msgid "GB152_AT_FV230_Breaker_short"
 msgstr "Breaker"
+
+msgid "GB155_Pike"
+msgstr "Pike"
+
+msgid "GB155_Pike_descr"
+msgstr ""
+"Тяжёлый танк Pike, предназначавшийся для Британской Рейнской армии. "
+"Представляет собой сочетание шасси танка береговой обороны FV229 и башни от "
+"нереализованного западногерманского тяжёлого танка с мощным орудием. "
+"Изначально создавался для борьбы с советскими ИС-3. Из-за трудностей во "
+"взаимодействии британских и немецких предприятий разработка серьёзно "
+"затянулась. В результате на вооружение приняли полностью британский танк "
+"Conqueror, а Pike остался на стадии проекта"
+
+msgid "GB155_Pike_long_special"
+msgstr ""
+"Pike — британский тяжёлый танк IX уровня. Вооружён орудием с магазином "
+"заряжания на три снаряда, наносящим высокий урон за выстрел. В сочетании с "
+"надёжным бронированием корпуса и башни это делает Pike эффективной машиной "
+"для позиционных сражений. Орудие не очень комфортное, но обладает неплохим "
+"разбросом."
+
+msgid "GB155_Pike_short"
+msgstr "Pike"
+
+msgid "GB155_Pike_short_special"
+msgstr "Неплохая броня корпуса и башни, магазин заряжания"
 
 msgid "GB156_Black_Prince_II"
 msgstr "Black Prince II"
@@ -2042,6 +2112,27 @@ msgstr "FV214t"
 
 msgid "GB157_FV214t_short_special"
 msgstr "Комфортное орудие, надёжное лобовое бронирование башни"
+
+msgid "GB158_Executor"
+msgstr "Executor"
+
+msgid "GB158_Executor_descr"
+msgstr ""
+"Проект четырёхосной машины повышенной мобильности со 110-мм орудием. "
+"Несмотря на планируемую частичную унификацию с другими машинами, уже "
+"стоявшими на вооружении, разработку остановили на стадии эскиза в пользу "
+"более традиционных танков."
+
+msgid "GB158_Executor_long_special"
+msgstr ""
+"Executor сочетает в себе колёсное шасси, усовершенствованный двигатель и "
+"превосходное орудие, что делает его вершиной ветки британских колёсных "
+"средних танков. Инженерные достижения позволяют машине достичь любой точки "
+"на поле боя, а орудие отвечает за нанесение значительного урона любому "
+"противнику."
+
+msgid "GB158_Executor_short"
+msgstr "Executor"
 
 msgid "GB15_Stuart_I"
 msgstr "Stuart I-IV"
@@ -3249,6 +3340,12 @@ msgstr "2x Leyland E164"
 msgid "Leyland_1A"
 msgstr "2x Leyland E164"
 
+msgid "Leyland_L60F"
+msgstr "Leyland L60F"
+
+msgid "Leyland_L60_HPT_Dark_Morn"
+msgstr "Leyland L60 HPT «Dark Morn»"
+
 msgid "Leyland_L60_No_4"
 msgstr "Leyland L60 No. 4 Mk. 13A"
 
@@ -3748,6 +3845,9 @@ msgstr "Rolls-Royce Meteor M120 (CGC)"
 msgid "Rolls_Royce_Meteor_M300"
 msgstr "Rolls-Royce Meteor M300"
 
+msgid "Rolls_Royce_Meteor_MK_VIB"
+msgstr "Rolls-Royce Meteor MK. VIB"
+
 msgid "Rolls_Royce_Meteor_Mark_IVB_900"
 msgstr "Rolls-Royce Meteor Mk. IVB (900)"
 
@@ -3865,6 +3965,9 @@ msgstr "Rover Meteorite"
 msgid "SR_40_E"
 msgstr "SR 40 E"
 
+msgid "SR_C42F"
+msgstr "SR C42F"
+
 msgid "SR_C42H"
 msgstr "SR C42H"
 
@@ -3879,6 +3982,9 @@ msgstr "SR C42 B"
 
 msgid "SR_C42a"
 msgstr "SR C42a"
+
+msgid "SR_C45H"
+msgstr "SR C42H"
 
 msgid "Sunbeam_Amazon"
 msgstr "Sunbeam Amazon"
@@ -4060,14 +4166,23 @@ msgstr "M2A1"
 msgid "Turret_1_GB150_Churchill_VII_G"
 msgstr "Churchill St. Gloriana"
 
+msgid "Turret_1_GB151_Headshaker"
+msgstr "Headshaker"
+
 msgid "Turret_1_GB152_AT_FV230_Breaker"
 msgstr "Beaver"
+
+msgid "Turret_1_GB155_Pike"
+msgstr "Pike"
 
 msgid "Turret_1_GB156_Black_Prince_II"
 msgstr "Black Prince II"
 
 msgid "Turret_1_GB157_FV214t"
 msgstr "FV214t"
+
+msgid "Turret_1_GB158_Executor"
+msgstr "Executor"
 
 msgid "Turret_1_GB15_Stuart_I"
 msgstr "Stuart I"
@@ -4689,6 +4804,18 @@ msgstr "105 mm MV HE"
 msgid "_105mm_SPH_M4_L23"
 msgstr "105 mm M4"
 
+msgid "_110mm_HV_AP"
+msgstr "110 mm HV AP"
+
+msgid "_110mm_HV_APDS"
+msgstr "110 mm HV APCR"
+
+msgid "_110mm_HV_Gun"
+msgstr "110 mm High Velocity Gun"
+
+msgid "_110mm_HV_HE"
+msgstr "110 mm HV HE"
+
 msgid "_110mm_MK_1_HC_MBC"
 msgstr "HC Mk. 1 MBC"
 
@@ -4919,6 +5046,18 @@ msgstr "OQF 123 mm Mk. 1"
 
 msgid "_123mm_OQF_Mk_1B"
 msgstr "OQF 123 mm Mk. 1B"
+
+msgid "_128_mm_Gun_L_50"
+msgstr "128 mm Gun L/50"
+
+msgid "_128mm_APDS_L1_4004F"
+msgstr "APDS L1 4004HF"
+
+msgid "_128mm_AP_L1_4004F"
+msgstr "AP L1 4004HF"
+
+msgid "_128mm_HESH_L1_4004F"
+msgstr "HESH L1 4004HF"
 
 msgid "_13pdr_Gun"
 msgstr "Q.F. 13-Pr. Mk. III"
@@ -5666,6 +5805,18 @@ msgstr "HE 80-lb Mk. 4 (207)"
 
 msgid "_5_5_in_HE_80_lb_Mk_4_CSP"
 msgstr "HE 80-lb Mk. 4 (CSP)"
+
+msgid "_5_5_inch_AP_Mk_II"
+msgstr "AP Mk. II"
+
+msgid "_5_5_inch_AT_Gun_Mk_II"
+msgstr "5.5-inch AT Gun Mk. II"
+
+msgid "_5_5_inch_HESH_Mk_II"
+msgstr "HESH Mk. II"
+
+msgid "_5_5_inch_HE_Mk_II"
+msgstr "HE Mk. II"
 
 msgid "_5_5inch_APC_Mk_5_SH"
 msgstr "APC Mk. 5"

@@ -11,7 +11,7 @@ package net.wg.gui.battle.views.widgetsPanel.common
       
       public var longBg:HotkeyFilledBgLong = null;
       
-      private var _disposed:Boolean = false;
+      private var _isDisposed:Boolean = false;
       
       private var _isLong:Boolean = false;
       
@@ -26,18 +26,27 @@ package net.wg.gui.battle.views.widgetsPanel.common
          this.longBg.visible = false;
       }
       
-      public final function dispose() : void
+      protected function onDispose() : void
       {
          this.defBg.dispose();
          this.defBg = null;
          this.longBg.dispose();
          this.longBg = null;
-         this._disposed = true;
       }
       
-      public function isDisposed() : Boolean
+      public final function dispose() : void
       {
-         return this._disposed;
+         if(this._isDisposed)
+         {
+            return;
+         }
+         this.onDispose();
+         this._isDisposed = true;
+      }
+      
+      public final function isDisposed() : Boolean
+      {
+         return this._isDisposed;
       }
       
       public function setState(param1:String) : void

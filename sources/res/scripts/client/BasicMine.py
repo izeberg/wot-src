@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from battleground.mines_object import loadMines
 from entity_game_object import EntityGameObject
 

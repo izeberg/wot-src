@@ -22,8 +22,7 @@
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/inf_hd_bld_AM_013_TownShop.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/47_canada_a_butterfly_white.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/47_canada_a_butterfly_yellow.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/47_canada_a_firesmoke_long.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/47_canada_a_firesmoke_thick.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/47_canada_a_fire_cistern.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/47_canada_a_mist.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/47_canada_a_mt_cloud.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/47_canada_a_mt_cloud_lg_offset.vfx</fn_effect_bin>
@@ -52,6 +51,7 @@
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env418_OldGMercedes.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env418_OldGMercedes3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env430_PostBox01.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env601_BunchLogs4.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env601_BunchLogs5.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env611_TableBench.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env_101_10_ChickenCoop.vfx</fn_effect_bin>
@@ -86,11 +86,17 @@
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle001_Fuel.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle019_GerBoxes4.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle044_Barrel.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_rw002_Sleepers.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_rw004_Carriage2.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_rw004_Carriage4.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_rw005_locomotive_part1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_rw_UNI_613_RailwayBarrier_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_streetlamp_fracture.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_streetlamp_touchdown.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/random_events/01_karelia_fire_small.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/random_events/02_malinovka_fires_tiny.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Trees/Broadleaves/dryTree_01_fall.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Trees/Broadleaves/dryTree_01_touchdown.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Trees/Broadleaves/inf_tree_bush_dry_fall.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Trees/Broadleaves/inf_tree_bush_dry_fall_big.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Trees/Broadleaves/inf_tree_bush_dry_fall_small.vfx</fn_effect_bin>
@@ -101,12 +107,8 @@
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Trees/Broadleaves/inf_tree_bush_fall_small.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Trees/Broadleaves/inf_tree_bush_flower_fall_small.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Trees/Broadleaves/inf_tree_bush_flower_touchdown_small.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/Trees/Broadleaves/inf_tree_linden_fall_big.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/Trees/Broadleaves/inf_tree_linden_touchdown_big.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Trees/Broadleaves/tree_Linden_Town_Dry_16m_fall.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Trees/Broadleaves/tree_Linden_Town_Dry_16m_touchdown.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/Trees/Broadleaves/tree_Linden_Town_Dry_23m_fall.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/Trees/Broadleaves/tree_Linden_Town_Dry_23m_touchdown.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Trees/Broadleaves/tree_Maple_12m_fall.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Trees/Broadleaves/tree_Maple_12m_touchdown.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Trees/Broadleaves/tree_Maple_Autumn_2m_fall.vfx</fn_effect_bin>
@@ -135,17 +137,22 @@
 		<fn_effect_bin>particles/Environment/buildings/inf_building_fire_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_hd_bld_AM_012_CottageLong.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_hd_bld_AM_013_TownShop.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/47_canada_a_butterfly_white.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/47_canada_a_butterfly_white.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/47_canada_a_butterfly_yellow.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/47_canada_a_firesmoke_long.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/47_canada_a_firesmoke_thick.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/47_canada_a_butterfly_yellow.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/47_canada_a_fire_cistern.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/47_canada_a_mist.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/47_canada_a_mist.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/47_canada_a_mt_cloud.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/47_canada_a_mt_cloud_lg_offset.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/47_canada_a_mt_cloud_sm.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/47_canada_a_particulates.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/47_canada_a_smoke_black.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/47_canada_a_particulates.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/47_canada_a_smoke_black.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/47_canada_a_smoke_ground.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/47_canada_a_smoke_ground.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/47_canada_a_smoke_ground_lg.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/47_canada_a_smoke_ground_lg.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_bld_AM_035_SmallShed.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env205_Boats01.eff</fn_effect_bin>
@@ -166,6 +173,7 @@
 		<fn_effect_bin>particles/Environment/objects/inf_env414_Pole_Touchdown.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env418_OldGMercedes3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env430_PostBox01.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_env601_BunchLogs4.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env601_BunchLogs5.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env611_TableBench.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env_101_10_ChickenCoop.eff</fn_effect_bin>
@@ -200,11 +208,17 @@
 		<fn_effect_bin>particles/Environment/objects/inf_mle001_Fuel.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle019_GerBoxes4.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle044_Barrel.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_rw002_Sleepers.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_rw004_Carriage2.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_rw004_Carriage4.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_rw005_locomotive_part1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_rw_UNI_613_RailwayBarrier_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_streetlamp_fracture.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_streetlamp_touchdown.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/random_events/01_karelia_fire_small.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/random_events/02_malinovka_fires_tiny.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/trees/Broadleaves/dryTree_01_fall.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/trees/Broadleaves/dryTree_01_touchdown.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/trees/Broadleaves/inf_tree_bush_dry_fall.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/trees/Broadleaves/inf_tree_bush_dry_fall_big.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/trees/Broadleaves/inf_tree_bush_dry_fall_small.eff</fn_effect_bin>
@@ -215,12 +229,8 @@
 		<fn_effect_bin>particles/Environment/trees/Broadleaves/inf_tree_bush_fall_small.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/trees/Broadleaves/inf_tree_bush_flower_fall_small.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/trees/Broadleaves/inf_tree_bush_flower_touchdown_small.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/trees/Broadleaves/inf_tree_linden_fall_big.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/trees/Broadleaves/inf_tree_linden_touchdown_big.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/trees/Broadleaves/tree_Linden_Town_Dry_16m_fall.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/trees/Broadleaves/tree_Linden_Town_Dry_16m_touchdown.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/trees/Broadleaves/tree_Linden_Town_Dry_23m_fall.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/trees/Broadleaves/tree_Linden_Town_Dry_23m_touchdown.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/trees/Broadleaves/tree_Maple_12m_fall.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/trees/Broadleaves/tree_Maple_12m_touchdown.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/trees/Broadleaves/tree_Maple_Autumn_2m_fall.eff</fn_effect_bin>
@@ -265,8 +275,7 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/inf_hd_bld_AM_013_TownShop.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/47_canada_a_butterfly_white.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/47_canada_a_butterfly_yellow.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/47_canada_a_firesmoke_long.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/47_canada_a_firesmoke_thick.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/47_canada_a_fire_cistern.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/47_canada_a_mist.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/47_canada_a_mt_cloud.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/47_canada_a_mt_cloud_lg_offset.vfx</fn_effect_bin>
@@ -295,6 +304,7 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env418_OldGMercedes.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env418_OldGMercedes3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env430_PostBox01.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env601_BunchLogs4.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env601_BunchLogs5.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env611_TableBench.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env_101_10_ChickenCoop.vfx</fn_effect_bin>
@@ -329,11 +339,17 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle001_Fuel.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle019_GerBoxes4.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle044_Barrel.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_rw002_Sleepers.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_rw004_Carriage2.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_rw004_Carriage4.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_rw005_locomotive_part1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_rw_UNI_613_RailwayBarrier_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_streetlamp_fracture.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_streetlamp_touchdown.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/random_events/01_karelia_fire_small.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/random_events/02_malinovka_fires_tiny.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Trees/Broadleaves/dryTree_01_fall.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Trees/Broadleaves/dryTree_01_touchdown.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Trees/Broadleaves/inf_tree_bush_dry_fall.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Trees/Broadleaves/inf_tree_bush_dry_fall_big.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Trees/Broadleaves/inf_tree_bush_dry_fall_small.vfx</fn_effect_bin>
@@ -344,12 +360,8 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Trees/Broadleaves/inf_tree_bush_fall_small.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Trees/Broadleaves/inf_tree_bush_flower_fall_small.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Trees/Broadleaves/inf_tree_bush_flower_touchdown_small.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/Trees/Broadleaves/inf_tree_linden_fall_big.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/Trees/Broadleaves/inf_tree_linden_touchdown_big.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Trees/Broadleaves/tree_Linden_Town_Dry_16m_fall.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Trees/Broadleaves/tree_Linden_Town_Dry_16m_touchdown.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/Trees/Broadleaves/tree_Linden_Town_Dry_23m_fall.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/Trees/Broadleaves/tree_Linden_Town_Dry_23m_touchdown.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Trees/Broadleaves/tree_Maple_12m_fall.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Trees/Broadleaves/tree_Maple_12m_touchdown.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Trees/Broadleaves/tree_Maple_Autumn_2m_fall.vfx</fn_effect_bin>
@@ -378,17 +390,22 @@
 		<fn_effect_bin>particles/Environment/buildings/inf_building_fire_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_hd_bld_AM_012_CottageLong.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_hd_bld_AM_013_TownShop.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/47_canada_a_butterfly_white.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/47_canada_a_butterfly_white.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/47_canada_a_butterfly_yellow.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/47_canada_a_firesmoke_long.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/47_canada_a_firesmoke_thick.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/47_canada_a_butterfly_yellow.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/47_canada_a_fire_cistern.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/47_canada_a_mist.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/47_canada_a_mist.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/47_canada_a_mt_cloud.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/47_canada_a_mt_cloud_lg_offset.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/47_canada_a_mt_cloud_sm.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/47_canada_a_particulates.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/47_canada_a_smoke_black.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/47_canada_a_particulates.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/47_canada_a_smoke_black.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/47_canada_a_smoke_ground.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/47_canada_a_smoke_ground.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/47_canada_a_smoke_ground_lg.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/47_canada_a_smoke_ground_lg.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_bld_AM_035_SmallShed.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env205_Boats01.eff</fn_effect_bin>
@@ -409,6 +426,7 @@
 		<fn_effect_bin>particles/Environment/objects/inf_env414_Pole_Touchdown.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env418_OldGMercedes3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env430_PostBox01.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_env601_BunchLogs4.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env601_BunchLogs5.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env611_TableBench.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env_101_10_ChickenCoop.eff</fn_effect_bin>
@@ -443,11 +461,17 @@
 		<fn_effect_bin>particles/Environment/objects/inf_mle001_Fuel.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle019_GerBoxes4.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle044_Barrel.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_rw002_Sleepers.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_rw004_Carriage2.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_rw004_Carriage4.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_rw005_locomotive_part1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_rw_UNI_613_RailwayBarrier_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_streetlamp_fracture.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_streetlamp_touchdown.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/random_events/01_karelia_fire_small.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/random_events/02_malinovka_fires_tiny.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/trees/Broadleaves/dryTree_01_fall.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/trees/Broadleaves/dryTree_01_touchdown.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/trees/Broadleaves/inf_tree_bush_dry_fall.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/trees/Broadleaves/inf_tree_bush_dry_fall_big.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/trees/Broadleaves/inf_tree_bush_dry_fall_small.eff</fn_effect_bin>
@@ -458,12 +482,8 @@
 		<fn_effect_bin>particles/Environment/trees/Broadleaves/inf_tree_bush_fall_small.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/trees/Broadleaves/inf_tree_bush_flower_fall_small.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/trees/Broadleaves/inf_tree_bush_flower_touchdown_small.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/trees/Broadleaves/inf_tree_linden_fall_big.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/trees/Broadleaves/inf_tree_linden_touchdown_big.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/trees/Broadleaves/tree_Linden_Town_Dry_16m_fall.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/trees/Broadleaves/tree_Linden_Town_Dry_16m_touchdown.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/trees/Broadleaves/tree_Linden_Town_Dry_23m_fall.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/trees/Broadleaves/tree_Linden_Town_Dry_23m_touchdown.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/trees/Broadleaves/tree_Maple_12m_fall.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/trees/Broadleaves/tree_Maple_12m_touchdown.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/trees/Broadleaves/tree_Maple_Autumn_2m_fall.eff</fn_effect_bin>

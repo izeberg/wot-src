@@ -84,6 +84,7 @@ class TutorialLoader(ITutorialLoader):
             self.__tutorial.stop()
         self.__loggedDBIDs.clear()
         self.__settings.clear()
+        self.__guiController.fini()
         return
 
     @property

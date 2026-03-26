@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, BigWorld, CGF
 from constants import HAS_DEV_RESOURCES
 from cgf_client_common.entity_dyn_components import ReplicableDynamicScriptComponent
@@ -107,7 +108,7 @@ class SequenceNetworkSyncManager(CGF.ComponentManager):
     def __init__(self):
         super(SequenceNetworkSyncManager, self).__init__()
         self.__isSyncPaused = False
-        self.__snapshots = dict()
+        self.__snapshots = {}
 
     @onAddedQuery(SequenceNetworkSync, Sequence)
     def onSequenceAdded(self, sync, sequence):
@@ -192,9 +193,6 @@ class SequenceNetworkSyncManager(CGF.ComponentManager):
 
     @staticmethod
     def __updateTime(sync, sequence):
-        time = sync.actualTime
-        duration = sequence.duration
-        if time >= duration:
-            time = duration
+        time = min(sync.actualTime, sequence.duration)
         if sequence.time != time:
             sequence.requestTime(time)

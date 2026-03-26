@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/french/F141_Durendal/crash/lod3/Hull</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.662326 -0.942595 -3.184055</min>
+		<max>1.689355 0.674611 3.070074</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/french/F141_Durendal/crash/lod2/Hull</nodefullVisual>
+</root>

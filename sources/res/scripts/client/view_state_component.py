@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import weakref, typing
 from cache import cached_property
 from constants import BuffDisplayedState
@@ -97,9 +98,10 @@ class ViewStateUpdater(object):
         self._component = weakref.proxy(component)
         self._vehicleID = self._component.entity.id
         self._isActive = self._component.isActive
-        if self._vehicleStateCtrl:
+        if self._vehicleStateCtrl is not None:
             self._vehicleStateCtrl.onVehicleControlling += self.onVehicleControlling
         g_eventBus.addListener(MarkersManagerEvent.MARKERS_CREATED, self.invalidate, EVENT_BUS_SCOPE.BATTLE)
+        return
 
     @cached_property
     def _sessionProvider(self):
@@ -128,7 +130,7 @@ class ViewStateUpdater(object):
             return
 
     def destroy(self):
-        if self._vehicleStateCtrl:
+        if self._vehicleStateCtrl is not None:
             self._vehicleStateCtrl.onVehicleControlling -= self.onVehicleControlling
         g_eventBus.removeListener(MarkersManagerEvent.MARKERS_CREATED, self.invalidate, EVENT_BUS_SCOPE.BATTLE)
         self._component = None

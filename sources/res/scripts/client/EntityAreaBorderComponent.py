@@ -1,3 +1,4 @@
+from __future__ import absolute_import, division
 import BigWorld
 from Math import Vector3
 from cache import cached_property

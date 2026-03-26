@@ -7,7 +7,7 @@ _logger = logging.getLogger(__name__)
 
 class WindowsManager(PyObjectEntity):
     __slots__ = ('__eManager', 'onWindowStatusChanged', 'onWindowShowingStatusChanged',
-                 'onViewStatusChanged', '__weakref__')
+                 'onViewStatusChanged')
 
     def __init__(self, cppObject=None):
         super(WindowsManager, self).__init__(cppObject)

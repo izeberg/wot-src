@@ -25,6 +25,7 @@ _VehicleTags = (VEHICLE_TAGS.PREMIUM_IGR,)
 class TeamStats(IBattleResultsPacker):
     _PLAYER_MODEL_CLS = PlayerModel
     _PLAYER_INFO_PACKER = PlayerInfo
+    _STATS_PACKER = Statistics
     _STATS_VALUES_COLUMNS = {TeamStatsColumnTypes.DAMAGE: None, 
        TeamStatsColumnTypes.FRAG: None, 
        TeamStatsColumnTypes.XP: lambda reusable: reusable.common.checkBonusCaps(_CAPS.XP)}
@@ -41,7 +42,7 @@ class TeamStats(IBattleResultsPacker):
     @classmethod
     def packPlayer(cls, playerModel, summarizeInfo, battleResults):
         cls._PLAYER_INFO_PACKER.packModel(playerModel, battleResults, summarizeInfo)
-        Statistics.packModel(playerModel.getDetailedStatistics(), summarizeInfo, battleResults)
+        cls._STATS_PACKER.packModel(playerModel.getDetailedStatistics(), summarizeInfo, battleResults)
         cls._packEfficiency(playerModel.efficiencyValues, summarizeInfo)
         if summarizeInfo.vehicle is not None:
             fillVehicleModel(playerModel.vehicle, summarizeInfo.vehicle, _VehicleTags)

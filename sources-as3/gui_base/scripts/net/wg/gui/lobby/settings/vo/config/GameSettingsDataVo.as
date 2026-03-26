@@ -1,6 +1,7 @@
 package net.wg.gui.lobby.settings.vo.config
 {
    import net.wg.gui.lobby.settings.config.ControlsFactory;
+   import net.wg.gui.lobby.settings.config.SettingsConfigHelper;
    import net.wg.gui.lobby.settings.vo.SettingsControlProp;
    import net.wg.gui.lobby.settings.vo.base.SettingsDataVo;
    
@@ -140,6 +141,8 @@ package net.wg.gui.lobby.settings.vo.config
       
       public var switchEquipment:SettingsControlProp = null;
       
+      public var w2gtEnable:SettingsControlProp = null;
+      
       public function GameSettingsDataVo()
       {
          super({
@@ -196,7 +199,7 @@ package net.wg.gui.lobby.settings.vo.config
             "enableRepairTimer":createControl(ControlsFactory.TYPE_CHECKBOX).build(),
             "enableBattleNotifier":createControl(ControlsFactory.TYPE_CHECKBOX).build(),
             "newbiePrebattleHints":createControl(ControlsFactory.TYPE_CHECKBOX).build(),
-            "newbieBattleHints":createControl(ControlsFactory.TYPE_CHECKBOX).build(),
+            "newbieBattleHints":createControl(ControlsFactory.TYPE_CHECKBOX).isDependOn(SettingsConfigHelper.RESTART_NEWBIE_BATTLE_HINTS_BUTTON).build(),
             "battleLoadingInfo":createControl(ControlsFactory.TYPE_DROPDOWN).build(),
             "carouselType":createControl(ControlsFactory.TYPE_BUTTON_BAR).build(),
             "doubleCarouselType":createControl(ControlsFactory.TYPE_DROPDOWN).build(),
@@ -208,7 +211,8 @@ package net.wg.gui.lobby.settings.vo.config
             "showLocationMarkers":createControl(ControlsFactory.TYPE_CHECKBOX).build(),
             "showMarkers":createControl(ControlsFactory.TYPE_CHECKBOX).build(),
             "enableCommendations":createControl(ControlsFactory.TYPE_CHECKBOX).build(),
-            "switchEquipment":createControl(ControlsFactory.TYPE_CHECKBOX).build()
+            "switchEquipment":createControl(ControlsFactory.TYPE_CHECKBOX).build(),
+            "w2gtEnable":createControl(ControlsFactory.TYPE_CHECKBOX).build()
          });
       }
       
@@ -346,6 +350,8 @@ package net.wg.gui.lobby.settings.vo.config
          this.showVehicleHPinMinimap = null;
          this.switchEquipment.dispose();
          this.switchEquipment = null;
+         this.w2gtEnable.dispose();
+         this.w2gtEnable = null;
          super.onDispose();
       }
    }

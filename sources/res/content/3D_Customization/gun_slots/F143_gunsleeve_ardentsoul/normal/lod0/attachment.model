@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-0.282041 -0.457209 -1.826909</min>
+		<max>0.274272 0.268721 4.049981</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<parent>content/3D_Customization/gun_slots/F143_gunsleeve_ardentsoul/normal/lod1/attachment</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>content/3D_Customization/gun_slots/F143_gunsleeve_ardentsoul/normal/lod0/attachment</nodefullVisual>
+</root>

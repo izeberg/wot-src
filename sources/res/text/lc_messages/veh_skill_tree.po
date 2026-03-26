@@ -228,6 +228,9 @@ msgstr ""
 msgid "tooltips/description/HEShellDamage"
 msgstr "Увеличивает урон, наносимый осколочно-фугасными снарядами."
 
+msgid "tooltips/description/HEshellVelocity"
+msgstr "Увеличивает скорость полёта ОФ снарядов."
+
 msgid "tooltips/description/a179_mechanic_0"
 msgstr ""
 "Уменьшает разброс второго выстрела в режиме очереди на "
@@ -277,6 +280,26 @@ msgid "tooltips/description/a183_mechanic_3"
 msgstr ""
 "Увеличивает время действия механики на {colorTagOpen}{value} "
 "с{colorTagClose}."
+
+msgid "tooltips/description/a195_mechanic_1"
+msgstr ""
+"Уменьшает разброс на 100 м для снарядов с одиночным зарядом на "
+"{colorTagOpen}{value}%{colorTagClose}."
+
+msgid "tooltips/description/a195_mechanic_2"
+msgstr ""
+"Уменьшает урон, наносимый базовыми и специальными снарядами с одиночным "
+"зарядом на {colorTagOpen}{value} ед.{colorTagClose}"
+
+msgid "tooltips/description/a195_mechanic_3"
+msgstr ""
+"Увеличивает скорость полёта снарядов с одиночным зарядом на "
+"{colorTagOpen}{value} м/с{colorTagClose}."
+
+msgid "tooltips/description/a195_mechanic_4"
+msgstr ""
+"Уменьшает время перезарядки снаряда с одиночным зарядом на "
+"{colorTagOpen}{value}%{colorTagClose}."
 
 msgid "tooltips/description/advancedChassisProtection"
 msgstr "Повышает прочность и скорость ремонта ходовой."
@@ -383,6 +406,28 @@ msgid "tooltips/description/f136_mechanic_0"
 msgstr ""
 "Уменьшает штраф ко времени перезарядки после выстрела последнего снаряда в "
 "кассете на {colorTagOpen}{value} с{colorTagClose}."
+
+msgid "tooltips/description/f143_mechanic_0"
+msgstr ""
+"Уменьшает штраф к разбросу на 100 м на "
+"{colorTagOpen}{value0}%{colorTagClose} и штраф к скорости сведения на "
+"{colorTagOpen}{value1}%{colorTagClose} после превышения лимита."
+
+msgid "tooltips/description/f143_mechanic_1"
+msgstr ""
+"Увеличивает скорость накопления заряда на "
+"{colorTagOpen}{value}%/с{colorTagClose}."
+
+msgid "tooltips/description/f143_mechanic_2"
+msgstr ""
+"Уменьшает количество заряда, теряемого при выстреле, на "
+"{colorTagOpen}{value}%{colorTagClose}."
+
+msgid "tooltips/description/f143_mechanic_3"
+msgstr ""
+"После достижения лимита увеличивает прирост урона на {colorTagOpen}{value0} "
+"ед.{colorTagClose} и максимальный бонус к урону на "
+"{colorTagOpen}{value1}%{colorTagClose}."
 
 msgid "tooltips/description/forwardSpeed"
 msgstr "Увеличивает максимальную скорость движения вперёд."
@@ -496,6 +541,26 @@ msgid "tooltips/description/gb152_mechanic_3"
 msgstr ""
 "Увеличивает максимальную скорость в режиме прямой передачи на "
 "{colorTagOpen}{value}%{colorTagClose}."
+
+msgid "tooltips/description/gb158_mechanic_0"
+msgstr ""
+"Увеличивает бонус к мощности двигателя от вспомогательного турбонагнетателя "
+"на {colorTagOpen}{value}%{colorTagClose}."
+
+msgid "tooltips/description/gb158_mechanic_1"
+msgstr ""
+"Увеличивает максимальную скорость назад при активном вспомогательном "
+"турбонагнетателе на {colorTagOpen}{value} км/ч{colorTagClose}."
+
+msgid "tooltips/description/gb158_mechanic_2"
+msgstr ""
+"Увеличивает время действия вспомогательного турбонагнетателя на "
+"{colorTagOpen}{value} с{colorTagClose}."
+
+msgid "tooltips/description/gb158_mechanic_3"
+msgstr ""
+"Уменьшает время подготовки вспомогательного турбонагнетателя на "
+"{colorTagOpen}{value} с{colorTagClose}."
 
 msgid "tooltips/description/gunDepression"
 msgstr "Увеличивает угол склонения орудия."
@@ -777,6 +842,9 @@ msgstr "Осколочно-фугасный урон"
 msgid "tooltips/title/HEShellPenetration"
 msgstr "Осколочно-фугасное пробитие"
 
+msgid "tooltips/title/HEshellVelocity"
+msgstr "Скорость ОФ снаряда"
+
 msgid "tooltips/title/a179_mechanic_0"
 msgstr "Полуактивный демпфер массы"
 
@@ -806,6 +874,18 @@ msgstr "Пневматическая система на давление 6000 P
 
 msgid "tooltips/title/a183_mechanic_3"
 msgstr "Дополнительный цилиндр высокого давления"
+
+msgid "tooltips/title/a195_mechanic_1"
+msgstr "Улучшение баллистической целостности"
+
+msgid "tooltips/title/a195_mechanic_2"
+msgstr "Увеличенный одиночный заряд"
+
+msgid "tooltips/title/a195_mechanic_3"
+msgstr "Досылатель одиночного заряда"
+
+msgid "tooltips/title/a195_mechanic_4"
+msgstr "Облегчённый разделитель заряда"
 
 msgid "tooltips/title/additionalShellAmmoCapacity"
 msgstr "Дополнительный боезапас"
@@ -903,6 +983,18 @@ msgstr "Оптимизированное заряжание"
 msgid "tooltips/title/f136_mechanic_0"
 msgstr "Усовершенствованный механизм заряжания"
 
+msgid "tooltips/title/f143_mechanic_0"
+msgstr "Термоизоляция ствола"
+
+msgid "tooltips/title/f143_mechanic_1"
+msgstr "Генератор повышенной мощности"
+
+msgid "tooltips/title/f143_mechanic_2"
+msgstr "Проводка пониженного сопротивления"
+
+msgid "tooltips/title/f143_mechanic_3"
+msgstr "Улучшенный выходной ограничитель"
+
 msgid "tooltips/title/forwardSpeed"
 msgstr "Скорость движения вперёд"
 
@@ -974,6 +1066,18 @@ msgstr "Сбалансированный трубчатый коллектор"
 
 msgid "tooltips/title/gb152_mechanic_3"
 msgstr "Модифицированный ограничитель оборотов"
+
+msgid "tooltips/title/gb158_mechanic_0"
+msgstr "Настройка регулятора давления"
+
+msgid "tooltips/title/gb158_mechanic_1"
+msgstr "Модернизированный коллектор выхлопа"
+
+msgid "tooltips/title/gb158_mechanic_2"
+msgstr "Увеличенный воздушный баллон"
+
+msgid "tooltips/title/gb158_mechanic_3"
+msgstr "Компрессор высокой мощности"
 
 msgid "tooltips/title/gunDepression"
 msgstr "Угол склонения орудия"

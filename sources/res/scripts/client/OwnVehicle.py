@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, typing, BigWorld, BattleReplay
 from OwnVehicleBase import OwnVehicleBase
 if typing.TYPE_CHECKING:

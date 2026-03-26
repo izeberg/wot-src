@@ -371,6 +371,42 @@
 			</wwbanks>
 		</mode>
 		<mode>
+			<name>gup_erwin_en</name>
+			<wwise_language>gup_jp/gup_erwin</wwise_language>
+			<description/>
+			<invisible>True</invisible>
+			<wwbanks>
+				<bank>gup_jp/gup_erwin/voiceover.bnk</bank>
+			</wwbanks>
+		</mode>
+		<mode>
+			<name>gup_erwin_cn</name>
+			<wwise_language>gup_jp/gup_erwin_cn</wwise_language>
+			<description/>
+			<invisible>True</invisible>
+			<wwbanks>
+				<bank>gup_jp/gup_erwin_cn/voiceover.bnk</bank>
+			</wwbanks>
+		</mode>
+		<mode>
+			<name>gup_crew_hippo_en</name>
+			<wwise_language>gup_jp/gup_crew_25_hippo</wwise_language>
+			<description/>
+			<invisible>True</invisible>
+			<wwbanks>
+				<bank>gup_jp/gup_crew_25_hippo/voiceover.bnk</bank>
+			</wwbanks>
+		</mode>
+		<mode>
+			<name>gup_crew_hippo_cn</name>
+			<wwise_language>gup_jp/gup_crew_25_hippo_cn</wwise_language>
+			<description/>
+			<invisible>True</invisible>
+			<wwbanks>
+				<bank>gup_jp/gup_crew_25_hippo_cn/voiceover.bnk</bank>
+			</wwbanks>
+		</mode>
+		<mode>
 			<name>yha_crew</name>
 			<wwise_language>YHA_cn_CN</wwise_language>
 			<description/>
@@ -1737,6 +1773,51 @@
 			<invisible>True</invisible>
 			<wwbanks>
 				<bank>BPH6/BPH6_en_US_tankmen_6/voiceover.bnk</bank>
+			</wwbanks>
+		</mode>
+		<mode>
+			<name>tankmen_bp19_5</name>
+			<wwise_language>BP19/BP19_en_US_tankmen_5</wwise_language>
+			<description/>
+			<invisible>True</invisible>
+			<wwbanks>
+				<bank>BP19/BP19_en_US_tankmen_5/voiceover.bnk</bank>
+			</wwbanks>
+		</mode>
+		<mode>
+			<name>tankmen_bp19_6</name>
+			<wwise_language>BP19/BP19_en_US_tankmen_6</wwise_language>
+			<description/>
+			<invisible>True</invisible>
+			<wwbanks>
+				<bank>BP19/BP19_en_US_tankmen_6/voiceover.bnk</bank>
+			</wwbanks>
+		</mode>
+		<mode>
+			<name>tankmen_bp19_7</name>
+			<wwise_language>BP19/BP19_en_US_tankmen_7</wwise_language>
+			<description/>
+			<invisible>True</invisible>
+			<wwbanks>
+				<bank>BP19/BP19_en_US_tankmen_7/voiceover.bnk</bank>
+			</wwbanks>
+		</mode>
+		<mode>
+			<name>tankmen_bp19_8</name>
+			<wwise_language>BP19/BP19_en_US_tankmen_8</wwise_language>
+			<description/>
+			<invisible>True</invisible>
+			<wwbanks>
+				<bank>BP19/BP19_en_US_tankmen_8/voiceover.bnk</bank>
+			</wwbanks>
+		</mode>
+		<mode>
+			<name>tankmen_bp19_9</name>
+			<wwise_language>BP19/BP19_en_US_tankmen_9</wwise_language>
+			<description/>
+			<invisible>True</invisible>
+			<wwbanks>
+				<bank>BP19/BP19_en_US_tankmen_9/voiceover.bnk</bank>
 			</wwbanks>
 		</mode>
 	</modes>

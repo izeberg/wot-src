@@ -1,4 +1,7 @@
-import logging, typing, BigWorld, destructible_entities, Math, CGF, GenericComponents
+from __future__ import absolute_import
+import logging, typing
+from future.utils import viewitems, viewvalues
+import BigWorld, destructible_entities, Math, CGF, GenericComponents
 from DestructibleStickers import DestructibleStickers
 from Vehicle import SegmentCollisionResultExt
 from VehicleEffects import DamageFromShotDecoder
@@ -42,13 +45,13 @@ class DestructibleEntity(BigWorld.Entity):
         self.__activeStateResource = None
         self.__prevDamageStickerCodes = None
         self.__stateResources = {}
-        for stateName, stateProperties in self.__properties.states.iteritems():
+        for stateName, stateProperties in viewitems(self.__properties.states):
             self.__stateResources[stateName] = DestructibleEntityState(stateName, stateProperties, self.id, self.__stateTriggers[stateName], self.spaceID)
 
         return
 
     def __checkStateTriggers(self):
-        for state in self.__stateResources.itervalues():
+        for state in viewvalues(self.__stateResources):
             if state.isTriggered():
                 self.__updateState(state.name)
                 return
@@ -57,15 +60,15 @@ class DestructibleEntity(BigWorld.Entity):
         destructibleEntityComponent = BigWorld.player().arena.componentSystem.destructibleEntityComponent
         if destructibleEntityComponent is not None:
             destructibleEntityComponent.addDestructibleEntity(self)
-        prereqs = list()
-        for stateResource in self.__stateResources.itervalues():
+        prereqs = []
+        for stateResource in viewvalues(self.__stateResources):
             prereqs += stateResource.prereqs(self.spaceID)
 
         return prereqs
 
     def onEnterWorld(self, prereqs):
         self.__setPickingEnabled(self.isActive)
-        for stateResource in self.__stateResources.itervalues():
+        for stateResource in viewvalues(self.__stateResources):
             stateResource.onResourcesLoaded(prereqs)
             stateResource.setParent(self.entityGameObject)
 
@@ -77,7 +80,7 @@ class DestructibleEntity(BigWorld.Entity):
         if self.__activeStateResource is not None:
             self.__activeStateResource.deactivate()
             self.__activeStateResource = None
-        for stateResource in self.__stateResources.itervalues():
+        for stateResource in viewvalues(self.__stateResources):
             stateResource.setParent(None)
             stateResource.destroy()
 
@@ -140,7 +143,7 @@ class DestructibleEntity(BigWorld.Entity):
             stickerMap = {DamageFromShotDecoder.encodeHitPoint(hitPoint):hitPoint for hitPoint in self.damageStickers}
             curr = set(stickerMap.keys())
             for code in prev.difference(curr):
-                for damageStickers in self.__activeStateResource.damageStickers.itervalues():
+                for damageStickers in viewvalues(self.__activeStateResource.damageStickers):
                     damageStickers.delDamageSticker(code)
 
             collisionComponent = self.__activeStateResource.collisionComponent
@@ -248,8 +251,8 @@ class DestructibleEntityState(ScriptGameObject):
         self.__guiNode = None
         self.__active = False
         self.__visualModel = None
-        self.__damageStickers = dict()
-        self.__gameObjects = dict()
+        self.__damageStickers = {}
+        self.__gameObjects = {}
         self.__effectsPlayer = None
         self.__trigger = trigger
         return
@@ -270,7 +273,7 @@ class DestructibleEntityState(ScriptGameObject):
     def prereqs(self, spaceId):
         visualModel = BigWorld.CompoundAssembler(self.__stateName + ASSEMBLER_NAME_SUFFIXES.VISUAL, spaceId)
         bspModels = []
-        for componentIdx, (componentId, component) in enumerate(self.__stateProperties.components.iteritems()):
+        for componentIdx, (componentId, component) in enumerate(viewitems(self.__stateProperties.components)):
             if componentIdx == 0:
                 visualModel.addRootPart(component.visualModel, 'root')
             else:
@@ -289,7 +292,7 @@ class DestructibleEntityState(ScriptGameObject):
         assemblerName = self.__stateName + ASSEMBLER_NAME_SUFFIXES.VISUAL
         if assemblerName not in prereqs.failedIDs:
             self.__visualModel = prereqs[assemblerName]
-            for componentIdx, component in enumerate(self.__stateProperties.components.itervalues()):
+            for componentIdx, component in enumerate(viewvalues(self.__stateProperties.components)):
                 self.__visualModel.setPartProperties(componentIdx, int(component.destructible) << PART_PROPERTIES.HIGHLIGHTABLE | PART_PROPERTIES.HIGHLIGHTBYVISUAL)
                 fashion = BigWorld.WGVehicleFashion()
                 self.__visualModel.setupPartFashion(componentIdx, fashion)
@@ -300,7 +303,7 @@ class DestructibleEntityState(ScriptGameObject):
                 go.createComponent(GenericComponents.FashionComponent, fashion, componentIdx)
                 self.__damageStickers[componentIdx] = DestructibleStickers(self.spaceID, self.__visualModel, componentIdx, go)
 
-            nodeName = next((comp.guiNode for comp in self.__stateProperties.components.itervalues() if comp.guiNode is not None), None)
+            nodeName = next((comp.guiNode for comp in viewvalues(self.__stateProperties.components) if comp.guiNode is not None), None)
             if nodeName is not None:
                 self.__guiNode = self.__visualModel.node(nodeName)
         return
@@ -337,14 +340,14 @@ class DestructibleEntityState(ScriptGameObject):
     def destroy(self):
         super(DestructibleEntityState, self).destroy()
         self.__effectsPlayer = None
-        for damageSticker in self.__damageStickers.itervalues():
+        for damageSticker in viewvalues(self.__damageStickers):
             damageSticker.destroy()
 
-        self.__damageStickers = dict()
-        for go in self.__gameObjects.itervalues():
+        self.__damageStickers = {}
+        for go in viewvalues(self.__gameObjects):
             go.deactivate()
 
-        self.__gameObjects = dict()
+        self.__gameObjects = {}
         self.__visualModel = None
         self.__guiNode = None
         self.__stateProperties = None
@@ -358,7 +361,7 @@ class DestructibleEntityState(ScriptGameObject):
             return
 
     def isDestructibleComponent(self, componentID):
-        component = next((c for cIDx, c in enumerate(self.__stateProperties.components.itervalues()) if cIDx == componentID), None)
+        component = next((c for cIDx, c in enumerate(viewvalues(self.__stateProperties.components)) if cIDx == componentID), None)
         if component is not None:
             return component.destructible
         else:

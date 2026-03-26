@@ -171,9 +171,9 @@ package net.wg.gui.battle.views.widgetsPanel
          this._hotKeyMgr.onKeyPress(param1,param2);
       }
       
-      protected final function onActivateKey(param1:String) : void
+      protected final function onActivateKey(param1:String, param2:Number) : void
       {
-         this._hotKeyMgr.activateKey(param1);
+         this._hotKeyMgr.activateKey(param1,param2);
       }
       
       protected final function onKeyRelease(param1:String) : void
@@ -181,9 +181,14 @@ package net.wg.gui.battle.views.widgetsPanel
          this._hotKeyMgr.onKeyRelease(param1);
       }
       
-      protected final function showKeys() : void
+      protected final function showKeys(param1:Number = 0) : void
       {
-         this._hotKeyMgr.showKeys();
+         this._hotKeyMgr.showKeys(param1);
+      }
+      
+      protected final function hideKeys(param1:Number = 0) : void
+      {
+         this._hotKeyMgr.hideKeys(param1);
       }
       
       protected final function setKeysState(param1:String) : void

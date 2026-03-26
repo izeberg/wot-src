@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld, AnimationSequence
 from Math import Vector2
 from Math import Matrix

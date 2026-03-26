@@ -623,9 +623,14 @@
 				</slots>
 			</block>
 			<block>
-				<class>BitwiseAND</class>
+				<class>BitwiseAnd</class>
 				<id>BitwiseAND_1</id>
 				<params>
+					<param>
+						2
+						<name>Input Count</name>
+						<type>IntT</type>
+					</param>
 					<param>
 						2
 						<name>Masks Count</name>
@@ -1366,13 +1371,13 @@
 			</connection>
 			<connection>
 				<from>OnPlayerShotHit_2</from>
-				<input>m0</input>
+				<input>i1</input>
 				<to>BitwiseAND_1</to>
 				<output>hitFlags</output>
 			</connection>
 			<connection>
 				<from>BitMask_18</from>
-				<input>m1</input>
+				<input>i2</input>
 				<to>BitwiseAND_1</to>
 				<output>Vehicle Hit Flags</output>
 			</connection>
