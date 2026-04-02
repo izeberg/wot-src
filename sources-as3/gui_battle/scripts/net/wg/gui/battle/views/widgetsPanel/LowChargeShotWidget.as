@@ -124,10 +124,6 @@ package net.wg.gui.battle.views.widgetsPanel
                case LOW_CHARGE_SHOT_CONSTS.QUICK_RELOAD:
                   this._currentStageTimerTF = this.firstStageTimerTF;
                   break;
-               case LOW_CHARGE_SHOT_CONSTS.EMPTY:
-                  this.firstStageTimerTF.setValue(0);
-                  this.secondStageTimerTF.setValue(0);
-                  break;
                default:
                   this.firstStageTimerTF.setValue(this._reloadController.lowChargeTime);
                   this.secondStageTimerTF.setValue(this._reloadController.restChargeTime);

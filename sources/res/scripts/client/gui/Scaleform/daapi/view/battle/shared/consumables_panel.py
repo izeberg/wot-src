@@ -24,6 +24,7 @@ from gui.shared.events import GameEvent
 from gui.shared.formatters import text_styles
 from gui.shared.items_parameters import NO_DATA
 from gui.shared.items_parameters.params import ShellParams
+from gui.shared.tooltips.consumables_panel import getLowChargeShotParams
 from gui.shared.utils.key_mapping import getScaleformKey
 from helpers import dependency
 from helpers.CallbackDelayer import CallbackDelayer
@@ -31,7 +32,7 @@ from items import vehicles
 from items.artefacts import SharedCooldownConsumableConfigReader
 from math_common import round_py2_style_int
 from shared_utils import forEach
-from items.utils import getVehicleShotSpeedByFactors, getVehicleDescriptorWithoutMechanics
+from items.utils import getVehicleShotSpeedByFactors
 from skeletons.gui.battle_session import IBattleSessionProvider
 from skeletons.gui.lobby_context import ILobbyContext
 from vehicles.mechanics.mechanic_constants import VehicleMechanic
@@ -40,8 +41,6 @@ if TYPE_CHECKING:
     from gui.battle_control.controllers.consumables.equipment_ctrl import _OrderItem, _EquipmentItem
 _logger = logging.getLogger(__name__)
 ASTERISK = '*'
-BULLET = backport.text(R.strings.common.common.bullet())
-SPEC_PARAM_TEMPLATE = BULLET + ' ' + '%s'
 R_AMMO_ICON = R.images.gui.maps.icons.ammopanel.battle_ammo
 NO_AMMO_ICON = 'NO_{}'
 COMMAND_AMMO_CHOICE_MASK = 'CMD_AMMO_CHOICE_{0:d}'
@@ -51,10 +50,6 @@ EMPTY_EQUIPMENT_TOOLTIP = backport.text(R.strings.ingame_gui.consumables_panel.e
 
 def _isEquipmentAvailableToUse(eq):
     return eq.isAvailableToUse
-
-
-def _formatPairOfValues(value1, value2, formattingFunc=backport.getNiceNumberFormat):
-    return '%s / %s' % (formattingFunc(value1), formattingFunc(value2))
 
 
 class _PythonReloadTicker(PythonTimer):
@@ -573,7 +568,7 @@ class ConsumablesPanel(IAmmoListener, ConsumablesPanelMeta, CallbackDelayer):
             vehicle = self.sessionProvider.shared.vehicleState.getControllingVehicle()
             vehicleDescriptor = vehicle.typeDescriptor if vehicle else None
             if hasVehicleDescrMechanic(vehicleDescriptor, VehicleMechanic.LOW_CHARGE_SHOT):
-                params = self.__getLowChargeShotParams(descriptor, vehicleDescriptor)
+                params = getLowChargeShotParams(descriptor, vehicleDescriptor, vehAttrs=vehAttrs)
             else:
                 shellParams = ShellParams(descriptor, vehicleDescriptor)
                 piercingPowerTable = shellParams.piercingPowerTable
@@ -890,40 +885,3 @@ class ConsumablesPanel(IAmmoListener, ConsumablesPanelMeta, CallbackDelayer):
                     self.as_setSPGShotResultS(self._cds.index(intCD), -1)
 
         return
-
-    def __getLowChargeShotParams(self, shellDescr, vDescr):
-        params = [
-         backport.text(R.strings.ingame_gui.shells_kinds.params.header())]
-        vDescrWithoutMechanics = getVehicleDescriptorWithoutMechanics(vDescr, VehicleMechanic.LOW_CHARGE_SHOT.value)
-        basicShellparams = ShellParams(shellDescr, vDescrWithoutMechanics)
-        specShellParams = ShellParams(shellDescr, vDescr)
-        damage = _formatPairOfValues(basicShellparams.avgDamage, specShellParams.avgDamage)
-        params.append(SPEC_PARAM_TEMPLATE % backport.text(R.strings.ingame_gui.shells_kinds.params.damage(), value=damage))
-        piercingPowerTable = specShellParams.piercingPowerTable
-        piercingNote = ''
-        if piercingPowerTable is not None and piercingPowerTable != NO_DATA:
-            basicPiercing = '%s-%s' % (
-             backport.getNiceNumberFormat(basicShellparams.piercingPowerTable[0][1]),
-             backport.getNiceNumberFormat(basicShellparams.piercingPowerTable[(-1)][1]))
-            specPiercing = '%s-%s' % (
-             backport.getNiceNumberFormat(piercingPowerTable[0][1]),
-             backport.getNiceNumberFormat(piercingPowerTable[(-1)][1]))
-            piercing = '%s / %s' % (basicPiercing, specPiercing)
-            params.append(SPEC_PARAM_TEMPLATE % backport.text(R.strings.ingame_gui.shells_kinds.params.piercingPower(), value=piercing) + ASTERISK)
-            piercingNote = backport.text(R.strings.menu.moduleInfo.params.piercingDistance.footnote(), minDist=backport.getNiceNumberFormat(piercingPowerTable[0][0]), maxDist=backport.getNiceNumberFormat(piercingPowerTable[(-1)][0]))
-        elif specShellParams.avgPiercingPower:
-            piercing = _formatPairOfValues(basicShellparams.avgPiercingPower, specShellParams.avgPiercingPower)
-            params.append(SPEC_PARAM_TEMPLATE % backport.text(R.strings.ingame_gui.shells_kinds.params.piercingPower(), value=piercing) + ASTERISK)
-            piercingNote = backport.text(R.strings.menu.moduleInfo.params.noPiercingDistance.footnote())
-        vehAttrs = self.sessionProvider.shared.feedback.getVehicleAttrs()
-        factorName = ('{}/gunShotsSpeed').format(VehicleMechanic.LOW_CHARGE_SHOT.value)
-        basicShotSpeed, _ = getVehicleShotSpeedByFactors(vehAttrs, basicShellparams.shotSpeed, factorName=factorName)
-        specShotSpeed, _ = getVehicleShotSpeedByFactors(vehAttrs, specShellParams.shotSpeed, factorName=factorName)
-        shotSpeed = _formatPairOfValues(int(round_py2_style_int(basicShotSpeed)), int(round_py2_style_int(specShotSpeed)), backport.getIntegralFormat)
-        params.append(SPEC_PARAM_TEMPLATE % backport.text(R.strings.ingame_gui.shells_kinds.params.shotSpeed(), value=shotSpeed))
-        if specShellParams.explosionRadius:
-            explosionRadius = _formatPairOfValues(basicShellparams.explosionRadius, specShellParams.explosionRadius)
-            params.append(SPEC_PARAM_TEMPLATE % backport.text(R.strings.ingame_gui.shells_kinds.params.explosionRadius(), value=explosionRadius))
-        if piercingNote:
-            params.append('\n' + ASTERISK + piercingNote)
-        return params

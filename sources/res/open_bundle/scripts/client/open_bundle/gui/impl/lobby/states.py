@@ -49,7 +49,3 @@ class OpenBundleState(GuiImplViewLobbyState):
     def _onEntered(self, event):
         super(OpenBundleState, self)._onEntered(event)
         self.__params = event.params
-
-    def _onExited(self):
-        self.__params = {}
-        super(OpenBundleState, self)._onExited()

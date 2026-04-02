@@ -4,7 +4,7 @@ import typing
 from BWUtil import AsyncReturn
 import ArenaType
 from account_helpers.settings_core.ServerSettingsManager import SETTINGS_SECTIONS
-from account_helpers.settings_core.settings_constants import GAME
+from account_helpers.settings_core.settings_constants import GAME, GuiSettingsBehavior
 from adisp import adisp_process
 from client_request_lib.exceptions import ResponseCodes
 from constants import Configs
@@ -70,6 +70,12 @@ class W2GTGameController(IW2GTGameController):
 
     def onAccountBecomePlayer(self):
         self.__subscribe()
+
+    def onLobbyInited(self, event):
+        if self.__settingsCore.isReady:
+            self.__applySettingsSection()
+        else:
+            self.__settingsCore.onSettingsReady += self.__onSettingsReady
 
     def saveProgress(self, arenaUniqueID, playerID, progress):
         self.__cache.saveProgress(arenaUniqueID, playerID, progress.asDict())
@@ -150,14 +156,21 @@ class W2GTGameController(IW2GTGameController):
     def __onUpdateW2GTSettings(self, diff):
         self.__updateConfig()
 
-    def __onServerSettingsSyncCompleted(self):
-        isEnabledByPlayer = self.__settingsCore.serverSettings.getSectionSettings(SETTINGS_SECTIONS.GAME_EXTENDED_2, GAME.W2GT_ENABLE)
-        if isEnabledByPlayer is None:
+    def __onSettingsReady(self):
+        self.__applySettingsSection()
+        self.__settingsCore.onSettingsReady -= self.__onSettingsReady
+
+    def __applySettingsSection(self):
+        isW2gtApplied = self.__settingsCore.serverSettings.getSectionSettings(SETTINGS_SECTIONS.GUI_START_BEHAVIOR, GuiSettingsBehavior.W2GT_APPLIED, 0)
+        if not isW2gtApplied:
             isEnabledByPlayer = self.__isPlayerWinbacker()
+            self.__settingsCore.serverSettings.setSectionSettings(SETTINGS_SECTIONS.GUI_START_BEHAVIOR, {GuiSettingsBehavior.W2GT_APPLIED: True})
             self.__settingsCore.serverSettings.setSectionSettings(SETTINGS_SECTIONS.GAME_EXTENDED_2, {GAME.W2GT_ENABLE: isEnabledByPlayer})
             g_clientUpdateManager.addCallback('tokens', self.__onTokensUpdated)
-        self.__isEnabledByPlayer = isEnabledByPlayer
-        return
+            self.__isEnabledByPlayer = isEnabledByPlayer
+
+    def __onServerSettingsSyncCompleted(self):
+        self.__isEnabledByPlayer = bool(self.__settingsCore.getSetting(GAME.W2GT_ENABLE))
 
     def __onTokensUpdated(self, diff):
         if self.__lobbyContext.getServerSettings().winbackConfig.winbackAccessToken in diff:

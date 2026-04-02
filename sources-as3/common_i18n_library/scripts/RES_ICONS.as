@@ -39971,6 +39971,8 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_CREDITS:String = "../maps/icons/quests/bonuses/s232x174/credits.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_CREWSKIN1:String = "../maps/icons/quests/bonuses/s232x174/crewSkin1.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_CREWSKIN2:String = "../maps/icons/quests/bonuses/s232x174/crewSkin2.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_CREW_BONUS_X3:String = "../maps/icons/quests/bonuses/s232x174/crew_bonus_x3.png";
@@ -40120,6 +40122,8 @@ package
       public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_QUALITYFUEL:String = "../maps/icons/quests/bonuses/s232x174/qualityFuel.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_RAMMER:String = "../maps/icons/quests/bonuses/s232x174/rammer.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_RAMMERBATTLEBOOSTER:String = "../maps/icons/quests/bonuses/s232x174/rammerBattleBooster.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_RARE_OVERLAY:String = "../maps/icons/quests/bonuses/s232x174/rare_overlay.png";
       

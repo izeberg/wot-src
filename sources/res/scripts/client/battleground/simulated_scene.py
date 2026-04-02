@@ -192,10 +192,12 @@ class SimulatedScene(object):
             dynAttachmentsInfo = simVehicle.getDynAttachments()
             if dynAttachmentsInfo is not None:
                 _updateDynAttachments(simVehicle, dynAttachmentsInfo)
-            gunMechanicVisualState = self.__getGunMechanicVisualState(simVehID)
-            if gunMechanicVisualState is not None:
-                gunSlotName = GunInstallationSlot.getPartSlotNameByIndex(DEFAULT_GUN_INSTALLATION_INDEX)
-                postLowChargeShotInitialEvent(gunMechanicVisualState, simVehicle.spaceID, simVehID, gunSlotName)
+            mechanicsInfo = self.__getMechanicsInfo(simVehID)
+            if mechanicsInfo is not None:
+                lowChargeShotVisualState = mechanicsInfo.get('lowChargeShotVisualState')
+                if lowChargeShotVisualState is not None:
+                    gunSlotName = GunInstallationSlot.getPartSlotNameByIndex(DEFAULT_GUN_INSTALLATION_INDEX)
+                    postLowChargeShotInitialEvent(lowChargeShotVisualState, simVehicle.spaceID, simVehID, gunSlotName)
 
         return
 
@@ -409,12 +411,12 @@ class SimulatedScene(object):
         return (
          turretYawLimits, gunPitchLimits)
 
-    def __getGunMechanicVisualState(self, simVehID):
+    def __getMechanicsInfo(self, simVehID):
         if simVehID == self.__simulatedVictimID:
-            return self.__rawSimulationData.get('player', {}).get('gunMechanicVisualState')
+            return self.__rawSimulationData.get('player', {}).get('mechanicsInfo')
         else:
             if simVehID == self.__simulatedKillerID:
-                return self.__rawSimulationData.get('attacker', {}).get('gunMechanicVisualState')
+                return self.__rawSimulationData.get('attacker', {}).get('mechanicsInfo')
             return
 
     class _PostEffectsManager(object):

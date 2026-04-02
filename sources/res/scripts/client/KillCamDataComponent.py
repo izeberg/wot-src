@@ -86,6 +86,9 @@ class KillCamDataComponent(BigWorld.DynamicScriptComponent):
         attackerServerData = serverKillCamData['attacker']['unspottedData']
         if attackerServerData:
             attackerData.update(attackerServerData)
+        attackerServerData = serverKillCamData['attacker']['mechanicsInfo']
+        if attackerServerData:
+            attackerData.update({'mechanicsInfo': attackerServerData})
         attackerData['simulationType'] = SimulatedVehicleType.ATTACKER
         return attackerData
 
@@ -126,8 +129,7 @@ class KillCamDataComponent(BigWorld.DynamicScriptComponent):
            'wheelsState': vehicle.appearance.wheelsState, 
            'wheelsSteering': vehicle.appearance.wheelsSteering, 
            'trackInAir': (
-                        vehicle.appearance.isLeftSideFlying, vehicle.appearance.isRightSideFlying), 
-           'gunMechanicVisualState': self.__getGunMechanicVisualState(vehicle)}
+                        vehicle.appearance.isLeftSideFlying, vehicle.appearance.isRightSideFlying)}
 
     def __captureUnspottedVehSimulationData(self, vehicleID):
         return {'vehicleID': vehicleID, 
@@ -177,13 +179,6 @@ class KillCamDataComponent(BigWorld.DynamicScriptComponent):
                 return
             return {'activeSequenceLayer': sequence.activeLayerIdx, 'sequenceTime': sequence.time, 
                'attachmentState': stateSwitcher.getState()}
-
-    def __getGunMechanicVisualState(self, vehicle):
-        lcsPublicController = vehicle.dynamicComponents.get('lowChargeShotPublicController')
-        if lcsPublicController is not None:
-            return lcsPublicController.stateStatus
-        else:
-            return
 
     def __unpackShellData(self, shellCompDescr):
         shellDescr = getItemByCompactDescr(shellCompDescr)

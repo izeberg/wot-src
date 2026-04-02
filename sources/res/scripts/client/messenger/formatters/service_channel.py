@@ -4461,6 +4461,7 @@ class BattlePassRewardFormatter(WaitItemsSyncFormatter):
             else:
                 description = backport.text(self.__MESSAGES.battlePassReward.battle.newLevel.text(), newLevel=text_styles.credits(newLevel), chapter=text_styles.credits(chapterName))
             template = self.__PROGRESSION_BUTTON_TEMPLATE
+            savedData = {b'chapterID': chapterID}
         elif not self.__battlePass.isCompleted():
             if not self.__battlePass.isFinalLevel(chapterID, newLevel):
                 if self.__battlePass.isHoliday():

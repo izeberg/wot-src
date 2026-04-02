@@ -13,7 +13,7 @@ from comp7.gui.impl.gen.view_models.views.lobby.enums import Division, Rank, Sea
 from comp7.gui.impl.battle.tooltips.ban_show_tooltip import BanShowTooltip
 from comp7.gui.impl.battle.vehicle_ban.ban_helpers import convertVehicleCD, fillComp7VehicleModel, fillBanProgressionModel, getOwnDatabaseID
 from constants import REQUEST_COOLDOWN
-from frameworks.wulf import ViewSettings, WindowFlags
+from frameworks.wulf import ViewSettings, WindowFlags, WindowLayer
 from gui import GUI_NATIONS
 from gui.Scaleform.managers.battle_input import BattleGUIKeyHandler
 from gui.app_loader.settings import APP_NAME_SPACE
@@ -85,6 +85,10 @@ class BanView(ViewImpl, BattleGUIKeyHandler):
         if battleApp:
             battleApp.registerGuiKeyHandler(self)
             battleApp.enterGuiControlMode(self.uniqueID)
+            contextMenuMgr = battleApp.contextMenuManager
+            if contextMenuMgr is not None:
+                contextMenuMgr.as_hideS()
+        return
 
     def _onLoading(self, *args, **kwargs):
         super(BanView, self)._onLoading(*args, **kwargs)
@@ -325,4 +329,4 @@ class BanViewWindow(WindowImpl):
     __slots__ = ()
 
     def __init__(self, parent=None):
-        super(BanViewWindow, self).__init__(wndFlags=WindowFlags.WINDOW | WindowFlags.WINDOW_FULLSCREEN, content=BanView(), parent=parent)
+        super(BanViewWindow, self).__init__(wndFlags=WindowFlags.WINDOW | WindowFlags.WINDOW_FULLSCREEN, layer=WindowLayer.TOP_WINDOW, content=BanView(), parent=parent)

@@ -27,5 +27,4 @@ class LowChargeShotUpdater(ViewUpdater):
         self.view.setShellChangeTime(isVisible, shellChangeTime)
 
     def __onGunReloadTimeSet(self, _, state, __):
-        ammoCtrl = self.__sessionProvider.shared.ammo
-        self.view.setBaseTimeBeforeBattle(state.getBaseValue(), ammoCtrl.getAllShellsQuantityLeft())
+        self.view.setBaseTimeBeforeBattleOrEmpty(state.getBaseValue())

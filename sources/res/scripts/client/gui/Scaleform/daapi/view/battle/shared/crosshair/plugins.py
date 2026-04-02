@@ -39,7 +39,6 @@ from gui.shared.events import GameEvent
 from gui.shared.utils.TimeInterval import TimeInterval
 from gui.shared.utils.plugins import IPlugin, PluginsCollection
 from gui.veh_mechanics.battle.updaters.current_shell_damage_updater import CurrentShellDamageUpdater
-from gui.veh_mechanics.battle.updaters.crosshair_settings_updater import CrosshairSettingsUpdater
 from gui.veh_mechanics.battle.updaters.mechanics.dual_accuracy_updater import IDualAccuracyView, DualAccuracyUpdater
 from gui.veh_mechanics.battle.updaters.mechanics.mechanic_passenger_updater import IMechanicPassengerView, VehicleMechanicPassengerUpdater
 from gui.veh_mechanics.battle.updaters.mechanics.mechanic_states_updater import VehicleMechanicStatesUpdater
@@ -2385,49 +2384,36 @@ class TemperatureHeatingZonesPlugin(VehicleMechanicCrosshairPlugin, IMechanicSta
 
 class LowChargeShotPlugin(VehicleMechanicCrosshairPlugin, IMechanicStatesListenerLogic):
 
-    def __init__(self, parentObj):
-        super(LowChargeShotPlugin, self).__init__(parentObj)
-        self.__useEndTime = True
-        self.__mechanicState = None
-        return
-
     @eventHandler
     def onStatePrepared(self, state):
-        self.__invalidateState(state, self.__useEndTime)
+        self.__invalidateState(state)
         self.parentObj.as_setReloadingCounterShownS(False)
-        self.__useEndTime = True
-        self.__mechanicState = state
 
     @eventHandler
     def onStateObservation(self, state):
-        self.__invalidateState(state, self.__useEndTime)
-        self.__useEndTime = False
-        self.__mechanicState = state
+        self.__invalidateState(state)
 
     @eventHandler
     def onStateTick(self, state):
         if BattleReplay.g_replayCtrl.isPlaying:
             self.parentObj.as_setLowChargeTimeLeftS(state.calculateTimeLeft(), state.reloadingState, True)
 
-    def setGunSettings(self, _):
-        if self.__mechanicState is not None:
-            self.__invalidateState(self.__mechanicState, self.__mechanicState.reloadingState not in (
-             LowChargeShotReloadingState.FULL_CHARGE,
-             LowChargeShotReloadingState.EMPTY))
-        return
-
     def _getViewUpdaters(self):
         return [
-         VehicleMechanicStatesUpdater(VehicleMechanic.LOW_CHARGE_SHOT, self),
-         CrosshairSettingsUpdater(self)]
+         VehicleMechanicStatesUpdater(VehicleMechanic.LOW_CHARGE_SHOT, self)]
 
     def _clearParentState(self):
         self.parentObj.as_setReloadingCounterShownS(True)
 
-    def __invalidateState(self, state, useEndTime):
+    def __invalidateState(self, state):
         self.parentObj.as_setLowChargeInitialTimeS(state.baseTime, state.lowChargeTime, state.almostFinishedTime, state.reloadTimeCoefficient)
         if not BattleReplay.g_replayCtrl.isPlaying:
-            timeLeft = state.calculateTimeLeft() if useEndTime else state.timeLeft
+            if state.reloadingState in (
+             LowChargeShotReloadingState.EMPTY,
+             LowChargeShotReloadingState.FULL_CHARGE):
+                timeLeft = state.timeLeft
+            else:
+                timeLeft = state.calculateTimeLeft()
             self.parentObj.as_setLowChargeTimeLeftS(timeLeft, state.reloadingState, False)
 
 

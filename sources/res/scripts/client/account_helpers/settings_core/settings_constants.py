@@ -382,6 +382,7 @@ class GuiSettingsBehavior(CONST_CONTAINER):
     PRESTIGE_FIRST_ENTRY_NOTIFICATION_SHOWN = 'prestigeFirstEntryNotificationShown'
     CLAN_SUPPLY_INTRO_SHOWN = 'clanSupplyIntroShown'
     CREW_MENTORING_LICENSE_AWARDS_SHOWN = 'crewMentoringLicenseAwardsShown'
+    W2GT_APPLIED = 'w2gtApplied'
 
 
 class OnceOnlyHints(CONST_CONTAINER):

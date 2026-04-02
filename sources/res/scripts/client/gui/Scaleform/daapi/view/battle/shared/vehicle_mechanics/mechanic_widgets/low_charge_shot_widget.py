@@ -4,7 +4,6 @@ from constants import LowChargeShotReloadingState
 from events_containers.common.containers import ContainersListener
 from events_handler import eventHandler
 from gui.Scaleform.daapi.view.meta.LowChargeShotWidgetMeta import LowChargeShotWidgetMeta
-from gui.veh_mechanics.battle.updaters.crosshair_settings_updater import CrosshairSettingsUpdater
 from gui.veh_mechanics.battle.updaters.mechanics.mechanic_passenger_updater import VehicleMechanicPassengerUpdater
 from gui.veh_mechanics.battle.updaters.mechanics.mechanic_states_updater import VehicleMechanicStatesUpdater
 from gui.veh_mechanics.battle.updaters.mechanics.low_charge_shot_updater import LowChargeShotUpdater
@@ -20,7 +19,6 @@ class LowChargeShotMechanicWidget(LowChargeShotWidgetMeta, ContainersListener, I
         super(LowChargeShotMechanicWidget, self).__init__()
         self.__mechanicState = DEFAULT_MECHANIC_STATE
         self.__shellChangeTime = 0.0
-        self.__useEndTime = True
 
     @eventHandler
     def onStatePrepared(self, state):
@@ -34,26 +32,35 @@ class LowChargeShotMechanicWidget(LowChargeShotWidgetMeta, ContainersListener, I
         self.__updateState(state)
         self.__updateInitialTime()
         if not BattleReplay.g_replayCtrl.isPlaying:
-            timeLeft = state.calculateTimeLeft() if self.__useEndTime else state.timeLeft
+            if state.reloadingState in (
+             LowChargeShotReloadingState.EMPTY,
+             LowChargeShotReloadingState.FULL_CHARGE):
+                timeLeft = state.timeLeft
+            else:
+                timeLeft = state.calculateTimeLeft()
             self.__updateTimeLeft(timeLeft, state)
-            self.__useEndTime = False
 
     @eventHandler
     def onStateTick(self, state):
-        if BattleReplay.g_replayCtrl.isPlaying:
+        if BattleReplay.g_replayCtrl.isPlaying and state.reloadingState not in (
+         LowChargeShotReloadingState.NONE,
+         LowChargeShotReloadingState.EMPTY):
             timeLeft = state.calculateTimeLeft()
             self.as_setTimeLeftS(timeLeft, state.reloadingState, True)
 
     def setShellChangeTime(self, isVisible, shellChangeTime):
         if self.__mechanicState.reloadingState not in (
          LowChargeShotReloadingState.NONE,
+         LowChargeShotReloadingState.EMPTY,
          LowChargeShotReloadingState.QUICK_RELOAD):
             self.__updateShellChangeTime(shellChangeTime if isVisible else 0.0)
             self.__updateInitialTime()
 
-    def setBaseTimeBeforeBattle(self, baseTimeSet, allShellsLeft):
-        if self.__mechanicState.reloadingState == LowChargeShotReloadingState.NONE:
-            if allShellsLeft > 0:
+    def setBaseTimeBeforeBattleOrEmpty(self, baseTimeSet):
+        if self.__mechanicState.reloadingState in (
+         LowChargeShotReloadingState.NONE,
+         LowChargeShotReloadingState.EMPTY):
+            if baseTimeSet > 0:
                 baseTime = baseTimeSet
                 lowChargeTime = baseTime * self.__mechanicState.reloadTimeCoefficient
             else:
@@ -61,22 +68,11 @@ class LowChargeShotMechanicWidget(LowChargeShotWidgetMeta, ContainersListener, I
                 lowChargeTime = 0.0
             self.as_setInitialTimeS(baseTime, lowChargeTime, self.__mechanicState.almostFinishedTime, self.__mechanicState.reloadTimeCoefficient, self.__shellChangeTime)
 
-    def setGunSettings(self, _):
-        self.__updateInitialTime()
-        if self.__mechanicState in (
-         LowChargeShotReloadingState.FULL_CHARGE,
-         LowChargeShotReloadingState.EMPTY):
-            timeLeft = self.__mechanicState.timeLeft
-        else:
-            timeLeft = self.__mechanicState.calculateTimeLeft()
-        self.__updateTimeLeft(timeLeft, self.__mechanicState)
-
     def _getViewUpdaters(self):
         return [
          VehicleMechanicPassengerUpdater(VehicleMechanic.LOW_CHARGE_SHOT, self),
          VehicleMechanicStatesUpdater(VehicleMechanic.LOW_CHARGE_SHOT, self),
-         LowChargeShotUpdater(self),
-         CrosshairSettingsUpdater(self)]
+         LowChargeShotUpdater(self)]
 
     def __updateState(self, state):
         self.__mechanicState = state

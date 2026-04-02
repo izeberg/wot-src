@@ -22,7 +22,7 @@
 					<identifier>s_nd0</identifier>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>111</materialKind>
-					<fx>shaders/std_effects/PBS_tiled_global.fx</fx>
+					<fx>shaders/std_effects/PBS_tiled_atlas_global.fx</fx>
 					<property>
 						atlasAlbedoHeight
 						<Texture>content/Environment/hd_env_UNI_028_Rocks/hd_env_UNI_028_Rocks_01_atlas_AM.atlas</Texture>

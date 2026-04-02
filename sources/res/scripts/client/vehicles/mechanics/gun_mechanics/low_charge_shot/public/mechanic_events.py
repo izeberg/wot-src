@@ -38,7 +38,7 @@ class LowChargeShotPublicStatesCoreIntegration(VehicleComponentEventsCoreIntegra
     @eventHandler
     def onStatePrepared(self, state):
         if not BattleReplay.g_replayCtrl.isPlaying:
-            postLowChargeShotInitialEvent(state, self._spaceID, self._vehicleID, self._slotName)
+            postLowChargeShotInitialEvent(state.visualState, self._spaceID, self._vehicleID, self._slotName)
         self.__visualState = state.visualState
 
     @eventHandler
@@ -89,11 +89,11 @@ class LowChargeShotPublicStatesCoreIntegration(VehicleComponentEventsCoreIntegra
         return
 
 
-def postLowChargeShotInitialEvent(state, spaceID, vehicleID, slotName):
-    if state.visualState == LowChargeShotVisualState.QUICK_SHOT:
-        event = _makeEvent(quickShot=True, fullShot=False, fullShotChangeTime=state.fullShotChangeTime)
-    elif state.visualState == LowChargeShotVisualState.FULL_SHOT:
-        event = _makeEvent(quickShot=False, fullShot=True, fullShotChangeTime=state.fullShotChangeTime)
+def postLowChargeShotInitialEvent(visualState, spaceID, vehicleID, slotName):
+    if visualState == LowChargeShotVisualState.QUICK_SHOT:
+        event = _makeEvent(quickShot=True, fullShot=False, fullShotChangeTime=_INSTANT_ANIMATION_TIMESTAMP)
+    elif visualState == LowChargeShotVisualState.FULL_SHOT:
+        event = _makeEvent(quickShot=False, fullShot=True, fullShotChangeTime=_INSTANT_ANIMATION_TIMESTAMP)
     else:
         event = _makeEvent(quickShot=False, fullShot=False, fullShotChangeTime=_INSTANT_ANIMATION_TIMESTAMP)
     gun_events.postVehicularVariablesChangedEvent(spaceID, vehicleID, slotName, event)

@@ -1990,6 +1990,9 @@
 			<unspottedData>
 				<Type>KILL_CAM_ATTACKER_UNSPOTTED</Type>
 			</unspottedData>
+			<mechanicsInfo>
+				<Type>PYTHON</Type>
+			</mechanicsInfo>
 		</Properties>
 	</KILL_CAM_ATTACKER>
 	<KILL_CAM_VICTIM>
@@ -2023,6 +2026,9 @@
 			<causeOfDeath>
 				<Type>STRING</Type>
 			</causeOfDeath>
+			<mechanicsInfo>
+				<Type>PYTHON</Type>
+			</mechanicsInfo>
 		</Properties>
 	</KILL_CAM_VICTIM>
 	<KILL_CAM_PROJECTILE_UNSPOTTED>

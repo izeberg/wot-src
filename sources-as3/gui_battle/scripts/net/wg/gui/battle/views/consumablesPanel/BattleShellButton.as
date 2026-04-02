@@ -198,12 +198,12 @@ package net.wg.gui.battle.views.consumablesPanel
       
       public function setCoolDownPosAsPercent(param1:Number) : void
       {
+         this._isReloading = true;
          if(param1 < 100)
          {
             this._isSelectedIndicatorVisible = false;
             invalidate(SELECTED_INDICATOR_VISIBILITY);
             this._coolDownTimer.setPositionAsPercent(param1);
-            this._isReloading = true;
          }
          else
          {

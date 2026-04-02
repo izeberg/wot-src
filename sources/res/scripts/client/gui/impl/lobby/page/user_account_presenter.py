@@ -161,9 +161,12 @@ class UserAccountPresenter(ViewComponent[UserAccountModel]):
         return
 
     def __updateBadgeInfo(self, _=None):
-        badge = self.__badgesController.getPrefix()
-        selected = badge is not None
-        self.viewModel.userInfo.setBadgeID(badge.badgeID if selected else 0)
+        self.__setBadge(self.viewModel.userInfo.setBadgeID, self.__badgesController.getPrefix())
+        self.__setBadge(self.viewModel.userInfo.setSuffixBadgeID, self.__badgesController.getSuffix())
+
+    @staticmethod
+    def __setBadge(setter, badge):
+        setter(badge.badgeID if badge is not None and badge.isSelected else 0)
         return
 
     def __updatePremiumInfo(self):

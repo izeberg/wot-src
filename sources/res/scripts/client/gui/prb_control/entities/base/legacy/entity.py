@@ -1,4 +1,4 @@
-import BigWorld, account_helpers
+import typing, BigWorld, account_helpers
 from soft_exception import SoftException
 from PlayerEvents import g_playerEvents
 from constants import ARENA_BONUS_TYPE, PREBATTLE_ACCOUNT_STATE, REQUEST_COOLDOWN, PREBATTLE_ERRORS
@@ -21,6 +21,11 @@ from gui.prb_control.items import prb_items
 from gui.prb_control.settings import FUNCTIONAL_FLAG, CTRL_ENTITY_TYPE, PREBATTLE_ROSTER, REQUEST_TYPE, PREBATTLE_INIT_STEP, makePrebattleSettings
 from gui.shared.utils.listeners_collection import ListenersCollection
 from prebattle_shared import decodeRoster
+if typing.TYPE_CHECKING:
+    from typing import Callable, Dict, Type
+    from gui.prb_control.entities.base.legacy.ctx import SetPlayerStateCtx
+    from gui.prb_control.items import ValidationResult
+    from prebattle_shared import PrebattleSettings
 
 class BaseLegacyEntity(BasePrbEntity):
 
@@ -692,11 +697,14 @@ class LegacyEntity(_LegacyEntity):
         BigWorld.player().prb_ready(ctx.getVehicleInventoryID(), ctx.onResponseReceived)
 
     def _processValidationResult(self, ctx, result):
-        if result is not None and not result.isValid:
+        if result is None or result.isValid:
+            return True
+        if ctx.silently:
+            return False
+        else:
             if not (ctx.isInitial() and result.restriction == PREBATTLE_RESTRICTION.VEHICLE_NOT_READY):
                 SystemMessages.pushMessage(messages.getInvalidVehicleMessage(result.restriction, self), type=SystemMessages.SM_TYPE.Error)
             return False
-        return True
 
     def _getPlayersStateStats(self, rosterKey):
         clientPrb = prb_getters.getClientPrebattle()

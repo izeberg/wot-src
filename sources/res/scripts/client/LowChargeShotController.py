@@ -53,6 +53,7 @@ class LowChargeShotController(VehicleDynamicComponent, IGunMechanicComponent, IM
 
     @eventHandler
     def onObserverVehicleDataUpdated(self):
+        self.__statesEvents.updateMechanicState(self.getMechanicState())
         self.__updateVehicleGunReloadTime()
 
     @eventHandler

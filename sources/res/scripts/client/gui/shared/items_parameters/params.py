@@ -1385,9 +1385,12 @@ class ShellParams(CompatibleParams):
     def avgDamage(self):
         damage = self._itemDescr.armorDamage[0]
         shot = self.__getShellDescriptor()
-        if shot is None or not isLowChargeShotGun(self._vehicleDescr):
+        if shot is None:
             return damage
-        return getLowChargeDamage(self._vehicleDescr, shot.shell, damage)
+        else:
+            if isLowChargeShotGun(self._vehicleDescr):
+                return getLowChargeDamage(self._vehicleDescr, shot.shell, damage)
+            return shot.shell.armorDamage[0]
 
     @property
     def avgMutableDamage(self):

@@ -13,6 +13,7 @@ from helpers import dependency
 from shared_utils import CONST_CONTAINER
 from skeletons.account_helpers.settings_core import ISettingsCache
 GUI_START_BEHAVIOR = 'guiStartBehavior'
+GAME_EXTENDED_2 = 'gameExtData2'
 
 class SETTINGS_SECTIONS(CONST_CONTAINER):
     GAME = 'GAME'
@@ -554,6 +555,7 @@ class ServerSettingsManager(object):
        SETTINGS_SECTIONS.GUI_START_BEHAVIOR: Section(masks={GuiSettingsBehavior.FREE_XP_INFO_DIALOG_SHOWED: 0, 
                                               GuiSettingsBehavior.RANKED_WELCOME_VIEW_SHOWED: 1, 
                                               GuiSettingsBehavior.RANKED_WELCOME_VIEW_STARTED: 2, 
+                                              GuiSettingsBehavior.W2GT_APPLIED: 3, 
                                               GuiSettingsBehavior.CLAN_SUPPLY_INTRO_SHOWN: 4, 
                                               GuiSettingsBehavior.CREW_MENTORING_LICENSE_AWARDS_SHOWN: 18, 
                                               GuiSettingsBehavior.CREW_PE_WELCOME_SHOWN: 22, 
@@ -1377,7 +1379,7 @@ class ServerSettingsManager(object):
     @adisp_process
     def _updateToVersion(self, callback=None):
         currentVersion = self.settingsCache.getVersion()
-        data = {'gameData': {}, 'gameExtData': {}, 'gameExtData2': {}, 'gameplayData': {}, 'controlsData': {}, 'aimData': {}, 'markersData': {}, 'graphicsData': {}, 'marksOnGun': {}, 'fallout': {}, 'carousel_filter': {}, 'feedbackDamageIndicator': {}, 'feedbackDamageLog': {}, 'feedbackBattleEvents': {}, 'onceOnlyHints': {}, 'onceOnlyHints2': {}, 'uiStorage': {}, SETTINGS_SECTIONS.UI_STORAGE_2: {}, 'epicCarouselFilter2': {}, 'rankedCarouselFilter1': {}, 'rankedCarouselFilter2': {}, 'comp7CarouselFilter1': {}, 'comp7CarouselFilter2': {}, 'sessionStats': {}, 'battleComm': {}, 'dogTags': {}, 'battleHud': {}, 'spgAim': {}, GUI_START_BEHAVIOR: {}, 'battlePassStorage': {}, SETTINGS_SECTIONS.CONTOUR: {}, SETTINGS_SECTIONS.ROYALE_CAROUSEL_FILTER_1: {}, SETTINGS_SECTIONS.ROYALE_CAROUSEL_FILTER_2: {}, SETTINGS_SECTIONS.SENIORITY_AWARDS_STORAGE: {}, 'clear': {}, 'delete': [], SETTINGS_SECTIONS.LIMITED_UI_1: {}, SETTINGS_SECTIONS.LIMITED_UI_2: {}, SETTINGS_SECTIONS.LIMITED_UI_PERMANENT_1: {}, SETTINGS_SECTIONS.LIMITED_UI_PERMANENT_2: {}, SETTINGS_SECTIONS.BATTLE_MATTERS_QUESTS: {}, SETTINGS_SECTIONS.BATTLE_BORDER_MAP: {}, SETTINGS_SECTIONS.ADVANCED_ACHIEVEMENTS_STORAGE: {}, SETTINGS_SECTIONS.CAROUSEL_FILTER_3: {}, SETTINGS_SECTIONS.RANKED_CAROUSEL_FILTER_3: {}, SETTINGS_SECTIONS.EPICBATTLE_CAROUSEL_FILTER_3: {}, SETTINGS_SECTIONS.MAPBOX_CAROUSEL_FILTER_3: {}, SETTINGS_SECTIONS.COMP7_CAROUSEL_FILTER_3: {}, SETTINGS_SECTIONS.COMP7_LIGHT_CAROUSEL_FILTER_3: {}, SETTINGS_SECTIONS.FUN_RANDOM_CAROUSEL_FILTER_3: {}, SETTINGS_SECTIONS.PERSONAL_MISSION_3: {}, SETTINGS_SECTIONS.SITUATIONAL_PERKS: {}}
+        data = {'gameData': {}, 'gameExtData': {}, GAME_EXTENDED_2: {}, 'gameplayData': {}, 'controlsData': {}, 'aimData': {}, 'markersData': {}, 'graphicsData': {}, 'marksOnGun': {}, 'fallout': {}, 'carousel_filter': {}, 'feedbackDamageIndicator': {}, 'feedbackDamageLog': {}, 'feedbackBattleEvents': {}, 'onceOnlyHints': {}, 'onceOnlyHints2': {}, 'uiStorage': {}, SETTINGS_SECTIONS.UI_STORAGE_2: {}, 'epicCarouselFilter2': {}, 'rankedCarouselFilter1': {}, 'rankedCarouselFilter2': {}, 'comp7CarouselFilter1': {}, 'comp7CarouselFilter2': {}, 'sessionStats': {}, 'battleComm': {}, 'dogTags': {}, 'battleHud': {}, 'spgAim': {}, GUI_START_BEHAVIOR: {}, 'battlePassStorage': {}, SETTINGS_SECTIONS.CONTOUR: {}, SETTINGS_SECTIONS.ROYALE_CAROUSEL_FILTER_1: {}, SETTINGS_SECTIONS.ROYALE_CAROUSEL_FILTER_2: {}, SETTINGS_SECTIONS.SENIORITY_AWARDS_STORAGE: {}, 'clear': {}, 'delete': [], SETTINGS_SECTIONS.LIMITED_UI_1: {}, SETTINGS_SECTIONS.LIMITED_UI_2: {}, SETTINGS_SECTIONS.LIMITED_UI_PERMANENT_1: {}, SETTINGS_SECTIONS.LIMITED_UI_PERMANENT_2: {}, SETTINGS_SECTIONS.BATTLE_MATTERS_QUESTS: {}, SETTINGS_SECTIONS.BATTLE_BORDER_MAP: {}, SETTINGS_SECTIONS.ADVANCED_ACHIEVEMENTS_STORAGE: {}, SETTINGS_SECTIONS.CAROUSEL_FILTER_3: {}, SETTINGS_SECTIONS.RANKED_CAROUSEL_FILTER_3: {}, SETTINGS_SECTIONS.EPICBATTLE_CAROUSEL_FILTER_3: {}, SETTINGS_SECTIONS.MAPBOX_CAROUSEL_FILTER_3: {}, SETTINGS_SECTIONS.COMP7_CAROUSEL_FILTER_3: {}, SETTINGS_SECTIONS.COMP7_LIGHT_CAROUSEL_FILTER_3: {}, SETTINGS_SECTIONS.FUN_RANDOM_CAROUSEL_FILTER_3: {}, SETTINGS_SECTIONS.PERSONAL_MISSION_3: {}, SETTINGS_SECTIONS.SITUATIONAL_PERKS: {}}
         yield migrateToVersion(currentVersion, self._core, data)
         self._setSettingsSections(data)
         callback(self)
@@ -1393,7 +1395,7 @@ class ServerSettingsManager(object):
         clearGameExt = clear.get(SETTINGS_SECTIONS.GAME_EXTENDED, 0)
         if gameExtData or clearGameExt:
             settings[SETTINGS_SECTIONS.GAME_EXTENDED] = self._buildSectionSettings(SETTINGS_SECTIONS.GAME_EXTENDED, gameExtData) ^ clearGameExt
-        gameExtData = data.get('gameExtData2', {})
+        gameExtData = data.get(GAME_EXTENDED_2, {})
         clearGameExt = clear.get(SETTINGS_SECTIONS.GAME_EXTENDED_2, 0)
         if gameExtData or clearGameExt:
             settings[SETTINGS_SECTIONS.GAME_EXTENDED_2] = self._buildSectionSettings(SETTINGS_SECTIONS.GAME_EXTENDED_2, gameExtData) ^ clearGameExt

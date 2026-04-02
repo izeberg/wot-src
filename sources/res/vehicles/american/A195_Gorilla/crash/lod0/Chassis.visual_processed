@@ -69,7 +69,6 @@
 		<node>Tank_BlendBone</node>
 		<geometry>
 			<vertices>track_R_Shape.vertices</vertices>
-			<stream>track_R_Shape.uv2</stream>
 			<primitive>track_R_Shape.indices</primitive>
 			<primitiveGroup>
 				0
@@ -186,5 +185,5 @@
 		<min>-1.701986 0.000000 -3.803805</min>
 		<max>1.702495 1.241063 3.842886</max>
 	</boundingBox>
-	<geometrySize>161184</geometrySize>
+	<geometrySize>148464</geometrySize>
 </root>

@@ -3536,6 +3536,11 @@ class KILL_CAM_STATUS_CODE(enum.IntEnum):
     FOW_NOT_SUPPORTED = 4
 
 
+class KillCamVehicleRole(enum.IntEnum):
+    ATTACKER = 0
+    VICTIM = 1
+
+
 class IMPACT_TYPES:
     PENETRATION = 0
     LEGACY_HE = 1
