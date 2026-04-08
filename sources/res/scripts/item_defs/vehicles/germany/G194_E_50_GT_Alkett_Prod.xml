@@ -112,7 +112,7 @@
 			<armor_24>70</armor_24>
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
-		<weight>45890</weight>
+		<weight>34890</weight>
 		<maxHealth>1690</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>280</maxHealth>
@@ -1378,11 +1378,11 @@
 			<rotationSpeed>44</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
-					0.14
+					0.12
 					<!--BW_String-->
 				</vehicleMovement>
 				<vehicleRotation>
-					0.14
+					0.12
 					<!--BW_String-->
 				</vehicleRotation>
 			</shotDispersionFactors>
@@ -3212,12 +3212,12 @@
 					shared
 					<maxAmmo>60</maxAmmo>
 					<aimingTime>
-						2.3
+						2.0
 						<!--BW_String-->
 					</aimingTime>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.12
+							0.10
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
@@ -3268,7 +3268,7 @@
 						<gun>40</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.32
+						0.33
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
@@ -3971,7 +3971,7 @@
 		<detailed>
 			<engines>
 				<GT_102>
-					<smplEnginePower>1200</smplEnginePower>
+					<smplEnginePower>1100</smplEnginePower>
 					<smplFwMaxSpeed>47</smplFwMaxSpeed>
 				</GT_102>
 			</engines>
@@ -3980,19 +3980,19 @@
 					<grounds>
 						<soft>
 							<rollingFriction>
-								0.18515
+								0.17592
 								<!--BW_String-->
 							</rollingFriction>
 						</soft>
 						<medium>
 							<rollingFriction>
-								0.10465
+								0.09942
 								<!--BW_String-->
 							</rollingFriction>
 						</medium>
 						<firm>
 							<rollingFriction>
-								0.08855
+								0.08412
 								<!--BW_String-->
 							</rollingFriction>
 						</firm>

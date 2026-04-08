@@ -1850,7 +1850,7 @@
 						0.2
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>10</reloadTime>
+					<reloadTime>15</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
 							0.12
@@ -1875,7 +1875,7 @@
 					</aimingTime>
 					<clip>
 						<count>28</count>
-						<rate>260</rate>
+						<rate>290</rate>
 					</clip>
 					<autoShoot>
 						<shotDispersionPerSec>
@@ -1884,7 +1884,7 @@
 						</shotDispersionPerSec>
 						<maxShotDispersion>8</maxShotDispersion>
 						<rate>
-							4.33
+							4.83
 							<!--BW_String-->
 						</rate>
 					</autoShoot>

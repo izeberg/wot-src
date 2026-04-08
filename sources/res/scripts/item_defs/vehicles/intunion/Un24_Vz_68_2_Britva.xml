@@ -3484,8 +3484,8 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<clip>
-						<count>20</count>
-						<rate>260</rate>
+						<count>18</count>
+						<rate>210</rate>
 					</clip>
 					<autoShoot>
 						<shotDispersionPerSec>
@@ -3494,7 +3494,7 @@
 						</shotDispersionPerSec>
 						<maxShotDispersion>9</maxShotDispersion>
 						<rate>
-							4.33
+							3.5
 							<!--BW_String-->
 						</rate>
 					</autoShoot>
