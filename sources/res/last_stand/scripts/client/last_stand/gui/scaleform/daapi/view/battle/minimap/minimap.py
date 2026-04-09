@@ -195,7 +195,7 @@ class LSMinimapPingPlugin(LSMinimapScaleMixin, MinimapPingPlugin):
     def _processCommandByPosition(self, commands, locationCommand, position, minimapScaleIndex):
         if avatar_getter.isVehicleAlive():
             entity = self._getNearestMarkerEntity(position, _BASE_PING_RANGE)
-            if entity is not None:
+            if entity is not None and set(entity.dynamicComponents.keys()).intersection(LSMarkerComponentNames.ALL):
                 self._make3DPingEntity(commands, entity)
                 return
             locationID = self._getNearestLocationIDForPosition(position, _LOCATION_PING_RANGE)
@@ -224,8 +224,6 @@ class LSMinimapPingPlugin(LSMinimapScaleMixin, MinimapPingPlugin):
         if advChatCmp is None:
             return
         else:
-            if not set(entity.dynamicComponents.keys()).intersection(LSMarkerComponentNames.ALL):
-                return
             targetID = entity.id
             replyState, commandKey = advChatCmp.getReplyStateForTargetIDAndMarkerType(targetID, MarkerType.TARGET_POINT_MARKER_TYPE)
             if replyState is ReplyState.NO_REPLY:

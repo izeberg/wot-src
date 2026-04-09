@@ -8577,7 +8577,7 @@
 		<kind>HOLLOW_CHARGE</kind>
 		<caliber>120</caliber>
 		<isTracer>true</isTracer>
-		<effects>largeAPCR</effects>
+		<effects>largeHollowCharge</effects>
 		<damage>
 			<armor>400</armor>
 			<devices>165</devices>

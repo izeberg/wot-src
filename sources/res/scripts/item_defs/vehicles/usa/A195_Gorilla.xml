@@ -2996,16 +2996,19 @@
 									<damageValue>-799</damageValue>
 									<piercingValue>-294</piercingValue>
 									<shotSpeedValue>-899</shotSpeedValue>
+									<effects>largeArmorPiercing</effects>
 								</lowChargeShotModifiers>
 								<lowChargeShotModifiers>
 									<damageValue>-799</damageValue>
 									<piercingValue>-369</piercingValue>
 									<shotSpeedValue>-1099</shotSpeedValue>
+									<effects>largeAPCR</effects>
 								</lowChargeShotModifiers>
 								<lowChargeShotModifiers>
 									<damageValue>-1099</damageValue>
 									<piercingValue>-89</piercingValue>
 									<shotSpeedValue>-899</shotSpeedValue>
+									<effects>largeHighExplosive</effects>
 								</lowChargeShotModifiers>
 							</shots>
 						</lowChargeShot>

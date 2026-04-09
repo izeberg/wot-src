@@ -229,9 +229,8 @@ msgstr "Голоса соперников"
 
 msgid "banWidget/tooltip"
 msgstr ""
-"Ваша команда не определилась с техникой для исключения, поэтому была "
-"исключена случайная машина из списка техники, набравшей наибольшее "
-"количество голосов."
+"Команда не определилась с техникой для исключения, поэтому была исключена "
+"случайная машина из техники, набравшей наибольшее количество голосов."
 
 msgid "battleCarousel/filterButtonTooltip/body"
 msgstr "Настройка отображения техники с учётом типа, роли и нации."
@@ -1147,7 +1146,7 @@ msgid "progressionPage/statistic/averageDamage"
 msgstr "Средний урон"
 
 msgid "progressionPage/statistic/averagePrestigePoints"
-msgstr "Среднее количество очков престижа"
+msgstr "Очков престижа (ср.)"
 
 msgid "progressionPage/statistic/dayRecordDescription"
 msgstr "Изменение рейтинга %(diff)s"

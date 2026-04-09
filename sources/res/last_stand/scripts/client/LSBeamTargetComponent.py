@@ -102,13 +102,16 @@ class LSBeamTargetComponent(DynamicScriptComponent):
         beamComponent = gameObject.findComponentByType(BeamRibbonComponent, '')
         if beamComponent:
             beamComponent.target = entity.entityGameObject
-            if beamName in self._beams[entity.id]:
-                CGF.removeGameObject(self._beams[entity.id][beamName])
-            self._beams[entity.id][beamName] = gameObject
-            self._setBeamActive(entity.id, True)
-            vehId = self._targetVehIds[entity.id]
-            if vehId and BigWorld.entity(vehId) is None and self._sourceVehId and BigWorld.entity(self._sourceVehId) is None:
-                self._setBeamActive(entity.id, False)
+            if entity.id in self._beams:
+                if beamName in self._beams[entity.id]:
+                    CGF.removeGameObject(self._beams[entity.id][beamName])
+                self._beams[entity.id][beamName] = gameObject
+                self._setBeamActive(entity.id, True)
+                vehId = self._targetVehIds[entity.id]
+                if vehId and BigWorld.entity(vehId) is None and self._sourceVehId and BigWorld.entity(self._sourceVehId) is None:
+                    self._setBeamActive(entity.id, False)
+            else:
+                CGF.removeGameObject(gameObject)
         return
 
     def _onDmgGameObjectLoaded(self, gameObject, entityId, beamName):

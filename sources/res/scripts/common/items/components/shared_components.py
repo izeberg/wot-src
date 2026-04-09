@@ -1003,9 +1003,13 @@ class LowChargeShotParams(GunMechanicsParams):
 
     @classmethod
     def _readShot(cls, ctx, section):
+        from items.vehicles import g_cache
+        effectName = _xml.readNonEmptyString(ctx, section, 'effects')
+        effectsIndex = g_cache.shotEffectsIndexes[effectName]
         return {'damageValue': _xml.readInt(ctx, section, 'damageValue'), 
            'piercingValue': _xml.readInt(ctx, section, 'piercingValue'), 
-           'shotSpeedValue': _xml.readInt(ctx, section, 'shotSpeedValue')}
+           'shotSpeedValue': _xml.readInt(ctx, section, 'shotSpeedValue'), 
+           'effectsIndex': effectsIndex}
 
     @classmethod
     def getDefaultMechanicsMiscAttributes(cls):

@@ -1275,7 +1275,7 @@ class _DetailedPersonalMissionInfo(_MissionInfo):
            'completeBtnLabel': _ms(PERSONAL_MISSIONS.DETAILEDVIEW_COMPLETEBTNLABEL, count=self.event.getPawnCost(), icon=getHtmlAwardSheetIcon(self.event.getQuestBranch())), 
            'titleTooltip': self.__getDescription(), 
            'holdAwardSheetBtnTooltipData': self.__getHoldAwardSheetBtnTooltipData()})
-        data.update({'buttonState': self.__getBtnStates(isAvailable)})
+        data.update({'buttonState': self.__getBtnStates(isAvailable, errorMsg)})
         data.update({'onPauseBtnIcon': self.__getPauseBtnIcon()})
         return data
 
@@ -1335,7 +1335,7 @@ class _DetailedPersonalMissionInfo(_MissionInfo):
         else:
             return makeTooltip(PERSONAL_MISSIONS.DETAILEDVIEW_INFOPANEL_HEADER, description)
 
-    def __getBtnStates(self, isAvailable):
+    def __getBtnStates(self, isAvailable, errorMsg):
         quest = self.event
         isPawnAvailable = self.__isPawnAvailable(quest)
         states = PERSONAL_MISSIONS_BUTTONS.NO_BUTTONS
@@ -1366,7 +1366,8 @@ class _DetailedPersonalMissionInfo(_MissionInfo):
                 states |= PERSONAL_MISSIONS_BUTTONS.START_BTN_ENABLED
         if quest.canBePawned():
             states |= PERSONAL_MISSIONS_BUTTONS.HOLD_AWARD_SHEET_BTN_VISIBLE
-            if isPawnAvailable and isAvailable and not isPM3Active:
+            isSuitableBranch = errorMsg not in ('branchNotStarted', 'branchInactive') and not isPM3Active
+            if isPawnAvailable and isSuitableBranch:
                 states |= PERSONAL_MISSIONS_BUTTONS.HOLD_AWARD_SHEET_BTN_ENABLED
         return states
 

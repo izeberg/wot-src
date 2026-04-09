@@ -119,6 +119,7 @@ class HangarVehicleAppearance(ScriptGameObject):
     typeDescriptor = property(lambda self: self.__vDesc)
     vehicleStickers = property(lambda self: self.__vehicleStickers)
     vehicleState = property(lambda self: self.__vState)
+    modelsSetParams = property(lambda self: ModelsSetParams(self.__outfit.modelsSet, self.__vState, self.__attachments))
 
     @property
     def filter(self):
@@ -334,7 +335,7 @@ class HangarVehicleAppearance(ScriptGameObject):
                 resources += trackDesc.prerequisites(modelsSet)
 
         from vehicle_systems import model_assembler
-        resources.append(model_assembler.prepareCompoundAssembler(self.__vDesc, ModelsSetParams(modelsSet, self.__vState, self.__attachments), self.__spaceId))
+        resources.append(model_assembler.prepareCompoundAssembler(self.__vDesc, self.modelsSetParams, self.__spaceId))
         g_eventBus.handleEvent(CameraRelatedEvents(CameraRelatedEvents.VEHICLE_LOADING, ctx={'started': True, 
            'vEntityId': self.__vEntity.id, 
            'intCD': self.__vDesc.type.compactDescr}), scope=EVENT_BUS_SCOPE.DEFAULT)
@@ -446,6 +447,9 @@ class HangarVehicleAppearance(ScriptGameObject):
             self.turretRotator = SimpleTurretRotator(self.compoundModel, self.__staticTurretYaw, self.__vDesc.hull.turretPositions[0], self.__vDesc.hull.turretPitches[0], easingCls=math_utils.Easing.squareEasing)
             self.__applyAttachmentsVisibility()
             self.__fireResourcesLoadedEvent()
+            if not self.__isVehicleDestroyed:
+                from vehicle_systems import model_assembler
+                model_assembler.assembleGunLinkedNodesAnimator(self)
             if succesLoaded:
 
                 def _onAttachmentsReady():
@@ -815,7 +819,7 @@ class HangarVehicleAppearance(ScriptGameObject):
         if self.compoundModel is None:
             return False
         else:
-            localGunMatrix = self.__getGunNode().local
+            localGunMatrix = self.__getGunNode().localMatrix
             currentGunPitch = localGunMatrix.pitch
             if abs(currentGunPitch - gunPitchAngle) < 0.0001:
                 return False
@@ -827,7 +831,7 @@ class HangarVehicleAppearance(ScriptGameObject):
         if self.compoundModel is None:
             return 0.0
         else:
-            localGunMatrix = self.__getGunNode().local
+            localGunMatrix = self.__getGunNode().localMatrix
             return localGunMatrix.pitch
 
     def getVehicleCentralPoint(self):
@@ -1151,7 +1155,7 @@ class HangarVehicleAppearance(ScriptGameObject):
 
     def __setGunMatrix(self, gunMatrix):
         gunNode = self.__getGunNode()
-        gunNode.local = gunMatrix
+        gunNode.localMatrix = gunMatrix
 
     @property
     def outfit(self):

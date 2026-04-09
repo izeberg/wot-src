@@ -748,7 +748,7 @@ package net.wg.gui.components.crosshairPanel
       {
          if(this.healthBarMC)
          {
-            this.healthBarMC.gotoAndStop(CrosshairConsts.PROGRESS_TOTAL_FRAMES_COUNT * this.health);
+            this.healthBarMC.gotoAndStop((this.healthBarMC.totalFrames - 1) * this.health + 1);
          }
       }
       
@@ -757,7 +757,7 @@ package net.wg.gui.components.crosshairPanel
          if(this.reloadingBar)
          {
             this.updateReloadingState();
-            this.reloadingBar.gotoAndStop(CrosshairConsts.PROGRESS_TOTAL_FRAMES_COUNT * this.reloadingTime);
+            this.reloadingBar.gotoAndStop((this.reloadingBar.totalFrames - 1) * this.reloadingTime + 1);
          }
       }
       

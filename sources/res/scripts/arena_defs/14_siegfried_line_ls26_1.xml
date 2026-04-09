@@ -167,6 +167,45 @@
 					<name>enemy_no_piercing_by_player</name>
 				</notification>
 				<notification>
+					<name>frequent_enemy_hp_damaged_by_near_explosion_by_player</name>
+				</notification>
+				<notification>
+					<name>frequent_enemy_hp_damaged_by_projectile_and_chassis_damaged_by_player</name>
+				</notification>
+				<notification>
+					<name>frequent_enemy_hp_damaged_by_projectile_and_gun_damaged_by_player</name>
+				</notification>
+				<notification>
+					<name>frequent_enemy_hp_damaged_by_projectile_by_player</name>
+				</notification>
+				<notification>
+					<name>frequent_enemy_no_hp_damage_at_attempt_and_chassis_damaged_by_player</name>
+				</notification>
+				<notification>
+					<name>frequent_enemy_no_hp_damage_at_attempt_and_gun_damaged_by_player</name>
+				</notification>
+				<notification>
+					<name>frequent_enemy_no_hp_damage_at_attempt_by_player</name>
+				</notification>
+				<notification>
+					<name>frequent_enemy_no_hp_damage_at_no_attempt_and_chassis_damaged_by_player</name>
+				</notification>
+				<notification>
+					<name>frequent_enemy_no_hp_damage_at_no_attempt_and_gun_damaged_by_player</name>
+				</notification>
+				<notification>
+					<name>frequent_enemy_no_hp_damage_at_no_attempt_by_player</name>
+				</notification>
+				<notification>
+					<name>frequent_enemy_no_hp_damage_by_near_explosion_by_player</name>
+				</notification>
+				<notification>
+					<name>frequent_enemy_no_piercing_by_player</name>
+				</notification>
+				<notification>
+					<name>frequent_enemy_ricochet_by_player</name>
+				</notification>
+				<notification>
 					<name>enemy_no_hp_damage_at_attempt_and_chassis_damaged_by_player</name>
 				</notification>
 				<notification>
