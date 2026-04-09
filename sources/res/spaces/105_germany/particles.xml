@@ -2,18 +2,48 @@
 <root>
 	<deferred>
 		<name>default</name>
-		<preload>
-			<shader>\data\shaders\ps_long.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/105_contrail.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_long.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/105_contrail_06.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_long.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/105_damaged_trail_03.dds</texture>
-		</preload>
+		<preloadTextures>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_long.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/tracers.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_leaves.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_38_mannerheim_line.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_distortion.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/105_contrail.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_water.dds
+				<type>water</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/105_contrail_06.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/105_damaged_trail_03.dds
+				<type>primary</type>
+			</path>
+		</preloadTextures>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/buildings/hd_bld_uni_006_kitcrashfactory_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/buildings/hd_bld_uni_006_kitcrashfactory_roof_03.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/buildings/inf_bld4502_fountainsmall.vfx</fn_effect_bin>
@@ -286,16 +316,37 @@
 		<preloadVisual>particles/mesh_particles/wood_board_04.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_board_square_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_broken_01.visual</preloadVisual>
-		<preloadVisual>particles/mesh_particles/wood_log_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_log_02.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_stick_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_stick_03.visual</preloadVisual>
-		<preload>
-			<shader>data/shaders/ps.fx</shader>
-			<texture>particles/content_deferred/pfx_textures/eff_tex_long.dds</texture>
-		</preload>
 	</deferred>
 	<forward>
+		<preloadTextures>
+			<path>
+				particles/content_forward/pfx_textures/eff_tex.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_tex_long.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/tracers.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_leaves.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/105_contrail.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_tex_38_mannerheim_line.dds
+				<type>primary</type>
+			</path>
+		</preloadTextures>
 		<fn_effect_bin>particles/content_forward/pfx/environment/buildings/hd_bld_uni_006_kitcrashfactory_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/buildings/hd_bld_uni_006_kitcrashfactory_roof_03.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/buildings/inf_bld4502_fountainsmall.vfx</fn_effect_bin>
@@ -566,13 +617,5 @@
 		<preloadVisual>particles/mesh_particles/wood_stick_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_stick_02.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_stick_03.visual</preloadVisual>
-		<preload>
-			<shader>data/shaders/ps.fx</shader>
-			<texture>particles/content_forward/pfx_textures/eff_tex_long.dds</texture>
-		</preload>
-		<preload>
-			<shader>data/shaders/ps_long.fx</shader>
-			<texture>particles/content_forward/pfx_textures/105_contrail.dds</texture>
-		</preload>
 	</forward>
 </root>

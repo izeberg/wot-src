@@ -2,69 +2,46 @@
 <root>
 	<forward>
 		<name>default</name>
-		<preload>
-			<shader>\data\shaders\ps.fx</shader>
-			<texture>particles/content_forward/PFX_textures/lightning_02.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_solid.fx</shader>
-			<texture>particles/content_forward/PFX_textures/eff_tex.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_water.fx</shader>
-			<texture>particles/content_forward/PFX_textures/eff_tex.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps.fx</shader>
-			<texture>particles/content_forward/PFX_textures/eff_leaves.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_long.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/eff_tex_95_lost_city_Dust.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_long.fx</shader>
-			<texture>particles/content_forward/PFX_textures/eff_tex.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_long.fx</shader>
-			<texture>particles/content_forward/PFX_textures/eff_tex_long.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps.fx</shader>
-			<texture>particles/content_forward/PFX_textures/eff_tex_long.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps.fx</shader>
-			<texture>particles/content_forward/PFX_textures/eff_tex.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_long.fx</shader>
-			<texture>particles/content_forward/PFX_textures/tracers.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_water.fx</shader>
-			<texture>particles/content_forward/PFX_textures/tracers.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_long.fx</shader>
-			<texture>particles/content_forward/PFX_textures/eff_tex_95_lost_city_Dust.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps.fx</shader>
-			<texture>particles/content_forward/PFX_textures/eff_rocket_accelerator.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_long.fx</shader>
-			<texture>particles/content_forward/PFX_textures/eff_rocket_accelerator.dds</texture>
-		</preload>
 		<fn_effect_bin>particles/Environment/interior/95_lost_city_Sand_Storm_Bottom.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/95_lost_city_Sand_Storm_Bottom_Distant.eff</fn_effect_bin>
-		<preloadVisual>particles/mesh_particles/environment/Lightning_mesh_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/environment/Lightning_mesh_02.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/environment/Lightning_mesh_03.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/environment/vfx_m_newspapers_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/environment/vfx_m_newspapers_02.visual</preloadVisual>
+		<preloadTextures>
+			<path>
+				particles/content_forward/pfx_textures/eff_tex.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/tracers.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_leaves.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_tex_long.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_tex_95_lost_city_dust.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/lightning_02.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_95_lost_city_dust.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_rocket_accelerator.dds
+				<type>primary</type>
+			</path>
+		</preloadTextures>
 		<fn_effect_bin>particles/content_forward/pfx/environment/buildings/hd_bld_su_100_metaldepot_h0.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/buildings/hd_bld_su_100_metaldepot_h1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/buildings/hd_bld_su_101_canopy.vfx</fn_effect_bin>
@@ -371,86 +348,6 @@
 	</forward>
 	<deferred>
 		<name>default</name>
-		<preload>
-			<shader>\data\shaders\ps.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/lightning_02.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_long.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/lightning_02.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_solid.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/eff_tex.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_water.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/eff_tex.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_water_displacement.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/eff_tex_water.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_foam.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/eff_tex_water.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_under_water.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/eff_tex.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/eff_tex_95_lost_city_sand_storm.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/eff_leaves.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_long.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/eff_tex_95_lost_city_Dust.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_long.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/eff_tex.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_long.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/eff_tex_long.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/eff_tex_long.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/eff_tex.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_long.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/tracers.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_water.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/tracers.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_force_fields.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/eff_tex_force_field.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_shimmer.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/eff_tex_distortion.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/eff_rocket_accelerator.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps_long.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/eff_rocket_accelerator.dds</texture>
-		</preload>
 		<fn_effect_bin>particles/Environment/interior/95_lost_city_Sand_Storm_Bottom.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/95_lost_city_Sand_Storm_Bottom_Distant.eff</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/95_lost_city_Sand_Storm_Bottom_Distant.vfx</fn_effect_bin>
@@ -458,11 +355,60 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/95_lost_city_Sand_Storm_Lighting.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/95_lost_city_Sand_Storm_Bottom_big_dust_P.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/95_lost_city_Sand_Storm_Bottom_medium_dust_P.vfx</fn_effect_bin>
-		<preloadVisual>particles/mesh_particles/environment/Lightning_mesh_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/environment/Lightning_mesh_02.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/environment/Lightning_mesh_03.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/environment/vfx_m_newspapers_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/environment/vfx_m_newspapers_02.visual</preloadVisual>
+		<preloadTextures>
+			<path>
+				particles/content_deferred/pfx_textures/eff_rocket_accelerator.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_long.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_leaves.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_95_lost_city_dust.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_distortion.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_force_field.dds
+				<type>forcefields</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_95_lost_city_sand_storm.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_victory_day.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_water.dds
+				<type>water</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/lightning_02.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/tracers.dds
+				<type>primary</type>
+			</path>
+		</preloadTextures>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/buildings/hd_bld_su_100_metaldepot_h0.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/buildings/hd_bld_su_100_metaldepot_h1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/buildings/hd_bld_su_101_canopy.vfx</fn_effect_bin>
@@ -778,9 +724,5 @@
 		<preloadVisual>particles/mesh_particles/wood_plank_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_stick_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_stick_03.visual</preloadVisual>
-		<preload>
-			<shader>data/shaders/ps.fx</shader>
-			<texture>particles/content_deferred/pfx_textures/eff_tex_victory_day.dds</texture>
-		</preload>
 	</deferred>
 </root>

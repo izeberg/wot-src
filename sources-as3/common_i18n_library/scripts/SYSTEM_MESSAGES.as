@@ -413,6 +413,8 @@ package
       
       public static const CUSTOMIZATION_PERSONAL_NUMBER_PROHIBITED:String = "#system_messages:customization/personal_number_prohibited";
       
+      public static const CUSTOMIZATION_PERSONAL_NUMBER_PROHIBITED_ALL_SEASONS:String = "#system_messages:customization/personal_number_prohibited_all_seasons";
+      
       public static const CUSTOMIZATION_SERVER_ERROR:String = "#system_messages:customization/server_error";
       
       public static const CUSTOMIZATION_CREDITS_NOT_ENOUGH:String = "#system_messages:customization/credits_not_enough";
@@ -1209,6 +1211,14 @@ package
       
       public static const ARTEFACT_SELL_SERVER_ERROR:String = "#system_messages:artefact_sell/server_error";
       
+      public static const OPTDEVICESRESTORE_SWITCH_ON_TITLE:String = "#system_messages:optDevicesRestore/switch_on/title";
+      
+      public static const OPTDEVICESRESTORE_SWITCH_ON_BODY:String = "#system_messages:optDevicesRestore/switch_on/body";
+      
+      public static const OPTDEVICESRESTORE_SWITCH_OFF_TITLE:String = "#system_messages:optDevicesRestore/switch_off/title";
+      
+      public static const OPTDEVICESRESTORE_SWITCH_OFF_BODY:String = "#system_messages:optDevicesRestore/switch_off/body";
+      
       public static const MODULE_APPLY_SUCCESS:String = "#system_messages:module_apply/success";
       
       public static const MODULE_APPLY_SUCCESS_GUN_CHANGE:String = "#system_messages:module_apply/success_gun_change";
@@ -1290,6 +1300,20 @@ package
       public static const ARTEFACT_UPGRADE_SERVER_ERROR:String = "#system_messages:artefact_upgrade/server_error";
       
       public static const ARTEFACT_UPGRADE_VEHICLE_NEED_REPAIR:String = "#system_messages:artefact_upgrade/vehicle_need_repair";
+      
+      public static const ARTEFACT_RESTORE_SUCCESS:String = "#system_messages:artefact_restore/success";
+      
+      public static const ARTEFACT_RESTORE_SERVER_ERROR:String = "#system_messages:artefact_restore/server_error";
+      
+      public static const ARTEFACT_RESTORE_CREDITS:String = "#system_messages:artefact_restore/credits";
+      
+      public static const ARTEFACT_RESTORE_GOLD:String = "#system_messages:artefact_restore/gold";
+      
+      public static const ARTEFACT_RESTORE_DEMOUNTKIT:String = "#system_messages:artefact_restore/demountKit";
+      
+      public static const ARTEFACT_RESTORE_CRYSTAL:String = "#system_messages:artefact_restore/crystal";
+      
+      public static const ARTEFACT_RESTORE_EQUIPCOIN:String = "#system_messages:artefact_restore/equipCoin";
       
       public static const LAYOUT_APPLY_SUCCESS_MONEY_SPENT:String = "#system_messages:layout_apply/success_money_spent";
       
@@ -1740,6 +1764,8 @@ package
       public static const UNIT_ERRORS_NO_UNIT:String = "#system_messages:unit/errors/NO_UNIT";
       
       public static const UNIT_ERRORS_JOIN_CTX_LOCK:String = "#system_messages:unit/errors/JOIN_CTX_LOCK";
+      
+      public static const UNIT_ERRORS_HB_BANNED:String = "#system_messages:unit/errors/HB_BANNED";
       
       public static const UNIT_ERRORS_CANT_INVITE:String = "#system_messages:unit/errors/CANT_INVITE";
       

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/british/GB142_FV249_Castle/normal/lod1/Chassis</parent>
+	<tank>true</tank>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.901443 0.000058 -3.575219</min>
+		<max>1.900750 1.224073 3.505281</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/british/GB142_FV249_Castle/normal/lod0/Chassis</nodefullVisual>
+</root>

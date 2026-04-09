@@ -1,44 +1,46 @@
-import math, logging
+import logging, math
 from itertools import chain
-import typing, BigWorld, CGF, Windowing, Event, adisp
-from CurrentVehicle import g_currentVehicle, g_currentPreviewVehicle
+from typing import TYPE_CHECKING
+import BigWorld, CGF, Event, Windowing, adisp
 from ClientSelectableCameraObject import ClientSelectableCameraObject
-from gui.Scaleform.framework.managers.loaders import SFViewLoadParams
-from gui.server_events.events_helpers import getC11nQuestsConfig, isC11nQuest
-from gui.shared.event_dispatcher import hideVehiclePreview
-from helpers import dependency, time_utils
+from CurrentVehicle import g_currentPreviewVehicle, g_currentVehicle
+from cgf_components.c11n_logic_manager import C11nLogicManager
+from cgf_components.hangar_camera_manager import HangarCameraManager
 from customization_quests_common import CustQuestsCache, deserializeToken
 from gui import SystemMessages, g_tankActiveCamouflage
-from gui.Scaleform.daapi.view.lobby.customization.context.context import CustomizationContext
-from gui.customization.shared import C11N_ITEM_TYPE_MAP, HighlightingMode, C11nId
-from gui.shared import g_eventBus, events, EVENT_BUS_SCOPE
+from gui.customization.shared import C11N_ITEM_TYPE_MAP, C11nId, HighlightingMode
+from gui.impl.lobby.customization.context.context import CustomizationContext
+from gui.impl.lobby.customization.customization_window_events import showCustomizationMainView
+from gui.server_events.events_helpers import getC11nQuestsConfig, isC11nQuest
+from gui.shared import EVENT_BUS_SCOPE, events, g_eventBus
+from gui.shared.event_dispatcher import hideVehiclePreview
 from gui.shared.gui_items import GUI_ITEM_TYPE, ItemsCollection
-from gui.shared.gui_items.customization.c11n_items import Customization
-from items import vehicles
-from items.customizations import createNationalEmblemComponents
-from serializable_types.customizations import CustomizationOutfit
-from skeletons.gui.lobby_context import ILobbyContext
-from skeletons.gui.server_events import IEventsCache
-from vehicle_outfit.outfit import Outfit, Area
-from gui.shared.gui_items.processors.common import CustomizationsBuyer, CustomizationsSeller
 from gui.shared.gui_items.Vehicle import Vehicle
+from gui.shared.gui_items.customization.c11n_items import Customization
+from gui.shared.gui_items.processors.common import CustomizationsBuyer, CustomizationsSeller
 from gui.shared.utils.decorators import adisp_process
 from gui.shared.utils.requesters import REQ_CRITERIA, RequestCriteria
-from items.vehicles import makeIntCompactDescrByID, VehicleDescr
+from helpers import dependency, time_utils
+from items import vehicles
+from items.components.c11n_constants import ApplyArea, CUSTOM_STYLE_POOL_ID, CustomizationType, OUTFIT_POOL_EMPTY_STUB, SeasonType
+from items.customizations import createNationalEmblemComponents
+from items.vehicles import VehicleDescr, makeIntCompactDescrByID
+from serializable_types.customizations import CustomizationOutfit
 from skeletons.gui.customization import ICustomizationService
+from skeletons.gui.lobby_context import ILobbyContext
+from skeletons.gui.server_events import IEventsCache
 from skeletons.gui.shared import IItemsCache
 from skeletons.gui.shared.gui_items import IGuiItemsFactory
 from skeletons.gui.shared.utils import IHangarSpace
-from items.components.c11n_constants import SeasonType, ApplyArea, CUSTOM_STYLE_POOL_ID, OUTFIT_POOL_EMPTY_STUB, CustomizationType
-from vehicle_systems.stricted_loading import makeCallbackWeak
+from vehicle_outfit.outfit import Area, Outfit
 from vehicle_systems.camouflages import getStyleProgressionOutfit
-from gui.Scaleform.daapi.settings.views import VIEW_ALIAS
-from cgf_components.hangar_camera_manager import HangarCameraManager
-from cgf_components.c11n_logic_manager import C11nLogicManager
-if typing.TYPE_CHECKING:
+from vehicle_systems.stricted_loading import makeCallbackWeak
+if TYPE_CHECKING:
+    from typing import Callable, List, Optional, Tuple, Union
     from gui.customization.constants import CustomizationModeSource
-    from gui.Scaleform.daapi.view.lobby.customization.shared import CustomizationModes, CustomizationTabs
+    from gui.impl.lobby.customization.shared import CustomizationModes, CustomizationTabs
     from gui.shared.gui_items.customization.c11n_items import Style
+    from items.components.c11n_components import StyleItem
 _logger = logging.getLogger(__name__)
 
 class _ServiceItemShopMixin(object):
@@ -76,11 +78,11 @@ class _ServiceHelpersMixin(object):
         vehicleCD = vehicleCD or self._getVehicleCD()
         return self.itemsFactory.createOutfit(vehicleCD=vehicleCD)
 
-    def getEmptyOutfitWithNationalEmblems(self, vehicleCD):
+    def getEmptyOutfitWithNationalEmblems(self, vehicleCD, isClanHidden=False):
         vehDesc = VehicleDescr(vehicleCD)
         decals = createNationalEmblemComponents(vehDesc)
         component = CustomizationOutfit(decals=decals)
-        return self.itemsFactory.createOutfit(component=component, vehicleCD=vehicleCD)
+        return self.itemsFactory.createOutfit(component=component, vehicleCD=vehicleCD, isClanHidden=isClanHidden)
 
     def getOutfitByStyleId(self, vehicleCD, styleId):
         styleIntCD = vehicles.makeIntCompactDescrByID('customizationItem', CustomizationType.STYLE, styleId)
@@ -503,7 +505,7 @@ class CustomizationService(_ServiceItemShopMixin, _ServiceHelpersMixin, ICustomi
         if callback is not None:
             ctx['callback'] = callback
             self.__customizationShownCallback = None
-        g_eventBus.handleEvent(events.LoadViewEvent(SFViewLoadParams(VIEW_ALIAS.LOBBY_CUSTOMIZATION), ctx=ctx), scope=EVENT_BUS_SCOPE.LOBBY)
+        showCustomizationMainView(ctx=ctx)
         return
 
     def __loadCustomization(self, vehInvID=None, callback=None, season=None, modeId=None, tabId=None):

@@ -85,6 +85,11 @@ def get_uilogging_session(*_, **__):
                    'url': 'https://localhost:81/logging'}}
 
 
+def get_statistic_lootbox(*_, **__):
+    return {123: [
+           1766220793, 12, {}]}
+
+
 class FakeDataAccessor(base.BaseDataAccessor):
     requests_before_logout = -1
 
@@ -660,3 +665,8 @@ class FakeDataAccessor(base.BaseDataAccessor):
                 'on_hold': {'granted': [], 'consumed': []}}})
     def get_inventory_entitlements_v5(self, entitlementsFilter):
         return self._request_data('get_inventory_entitlements_v5', None)
+
+    @fake_method(example=get_statistic_lootbox)
+    def get_statistic_lootbox(self, *_):
+        self._storage.get('get_statistic_lootbox', {}).clear()
+        return self._request_data('get_statistic_lootbox', None)

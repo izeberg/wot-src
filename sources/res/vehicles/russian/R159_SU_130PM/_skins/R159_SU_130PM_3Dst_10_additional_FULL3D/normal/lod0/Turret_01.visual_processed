@@ -76,7 +76,7 @@
 					</property>
 					<property>
 						colorIdMap
-						<Texture>vehicles/russian/R159_SU_130PM/_skins/R159_SU_130PM_3Dst_10_additional_FULL3D/SU_130PM_3Dst_turret_01_ID.dds</Texture>
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 					<property>
 						doubleSided
@@ -88,10 +88,7 @@
 					</property>
 					<property>
 						g_detailUVTiling
-						<Vector4>
-							7.0137 3.50685 0.000000 0.000000
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>7.013700 3.506850 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_useDetailMetallic
@@ -141,7 +138,7 @@
 					</property>
 					<property>
 						colorIdMap
-						<Texture>vehicles/russian/R159_SU_130PM/_skins/R159_SU_130PM_3Dst_10_additional_FULL3D/SU_130PM_3Dst_turret_01_ID.dds</Texture>
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 					<property>
 						g_useDetailMetallic
@@ -183,7 +180,7 @@
 					</property>
 					<property>
 						colorIdMap
-						<Texture>vehicles/russian/R159_SU_130PM/_skins/R159_SU_130PM_3Dst_10_additional_FULL3D/SU_130PM_3Dst_turret_01_ID.dds</Texture>
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 					<property>
 						doubleSided

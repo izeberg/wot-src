@@ -413,11 +413,19 @@ msgstr "Дивизион ещё не достигнут"
 msgid "division/tooltip/status/locked/desc"
 msgstr "Сначала необходимо пройти предыдущий дивизион."
 
-msgid "entryPoint/frozen/thin"
-msgstr "Временно отключён"
-
-msgid "entryPoint/frozen/wide"
+msgid "entryPoint/disabled"
 msgstr "Режим временно отключён"
+
+msgid "entryPoint/finalDivision"
+msgstr "Последний рывок! Вы в финальном дивизионе"
+
+msgid "entryPoint/rankBeforeNextDivision"
+msgstr "1 ранг до нового дивизиона!"
+
+msgid "entryPoint/rewardDescription"
+msgstr ""
+"Усовершенствованное\n"
+"оборудование ждёт вас!"
 
 msgid "entryPoint/season/end"
 msgstr "Бои завершены"
@@ -439,8 +447,8 @@ msgstr "Режим временно недоступен. Зайдите поз�
 
 msgid "introPage/blocks/block1/description"
 msgstr ""
-"Бои проходят на технике VI уровня и по правилам Стандартного боя. Вам "
-"предстоит пройти 3 дивизиона по 5 рангов. Каждый новый ранг принесёт вам "
+"Бои проходят на технике IX уровня и по правилам Стандартного боя. Вам "
+"предстоит пройти 3 дивизиона по 5 рангов. Каждый новый ранг принесёт вам "
 "достойное вознаграждение."
 
 msgid "introPage/blocks/block1/title"
@@ -478,7 +486,7 @@ msgstr "В Ангар"
 
 msgid "introPage/description"
 msgstr ""
-"Бои 10×10, VI уровень техники, 3 дивизиона на пути к финальной награде."
+"Бои 10×10, IX уровень техники, 3 дивизиона на пути к финальной награде."
 
 msgid "introPage/timeLeft/days"
 msgstr "%(day)s д. %(hour)s ч."
@@ -1046,7 +1054,7 @@ msgid "rankedBattleMainView/seasonGap/waitingLeague/title"
 msgstr "Идёт подсчёт результатов"
 
 msgid "rankedBattleMainView/specialSeason"
-msgstr "VI"
+msgstr "IX"
 
 msgid "rankedBattleMainView/stats/battlesInLeague"
 msgstr "Боёв в лигах"
@@ -1139,7 +1147,7 @@ msgid "rankedBattleView/closeBtn"
 msgstr "НАЗАД"
 
 msgid "rankedBattleView/closeBtnDescr"
-msgstr "В АНГАР"
+msgstr "В АНГАР"
 
 msgid "rankedBattleView/nextStageBlock/stage"
 msgstr "Этап %(cycleNumber)s"
@@ -1897,7 +1905,7 @@ msgid "year_award/acceptButton/acceptLabel"
 msgstr "Так точно!"
 
 msgid "year_award/acceptButton/hangarLabel"
-msgstr "Показать в Ангаре"
+msgstr "Показать в Ангаре"
 
 msgid "year_award/compensationLabel"
 msgstr ""

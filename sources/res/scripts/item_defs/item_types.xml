@@ -171,6 +171,7 @@
 			<rentEligible/>
 			<bot_hunter/>
 			<debutBoxes/>
+			<notInShop/>
 			<preferential/>
 		</tags>
 	</vehicle>
@@ -305,6 +306,9 @@
 			<additInvisibilityDevice/>
 			<commandersView/>
 			<notBuyWhenAutoEquip/>
+			<hb_ability/>
+			<hb_passive_ability/>
+			<hb_roleAbility/>
 			<repairKitBattleRoyale/>
 			<advancedLogging/>
 			<hideIfNotInShop/>
@@ -384,6 +388,7 @@
 			<offspringArenaMusic/>
 			<sabatonArenaMusic/>
 			<ariaArenaMusic/>
+			<event_battles/>
 		</tags>
 	</customizationItem>
 	<crewSkin>

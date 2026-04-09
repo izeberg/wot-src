@@ -25,7 +25,7 @@ msgstr "Знічшыць %(goal)s адз. тэхнікі"
 
 msgid "AT_SPG_piercingSeries_plural"
 msgid_plural "plural/AT_SPG_piercingSeries_plural"
-msgstr[0] "Пробить броню %(goal)s раз"
+msgstr[0] "Прабіць браню %(goal)s раз"
 msgstr[1] "Прабіць браню %(goal)s разы запар"
 msgstr[2] "Прабіць браню %(goal)s разоў запар"
 
@@ -45,7 +45,7 @@ msgid "heavyTank_damage"
 msgstr "Прычыніць %(goal)s адз. пашкоджанняў"
 
 msgid "heavyTank_damageDealtReceivedAndBlocked"
-msgstr "Суммарно нанести, получить и заблокировать %(goal)s ед. урона"
+msgstr "Сумарна прычыніць, атрымаць і заблакаваць %(goal)s адз. пашкоджанняў"
 
 msgid "heavyTank_kills"
 msgstr "Знічшыць %(goal)s адз. тэхнікі"
@@ -54,7 +54,7 @@ msgid "heavyTank_killsDiversity"
 msgstr "Знішчыць тэхніку %(totalGoal)s розных тыпаў"
 
 msgid "lightTank_critsTracks"
-msgstr "Сбить гусеницу %(goal)s ед. техники противника"
+msgstr "Збіць гусеніцу %(goal)s адз. тэхнікі праціўніка"
 
 msgid "lightTank_damage"
 msgstr "Прычыніць %(goal)s адз. пашкоджанняў"
@@ -69,7 +69,7 @@ msgstr[1] "Прычыніць пашкоджанні стрэламі %(goal)s 
 msgstr[2] "Прычыніць пашкоджанні стрэламі %(goal)s  разоў"
 
 msgid "mediumTank_critsTracks"
-msgstr "Сбить гусеницу %(goal)s ед. техники противника"
+msgstr "Збіць гусеніцу %(goal)s адз. тэхнікі праціўніка"
 
 msgid "mediumTank_damage"
 msgstr "Прычыніць %(goal)s адз. пашкоджанняў"
@@ -93,10 +93,10 @@ msgstr[1] "Прычыніць пашкоджанні стрэламі %(goal)s 
 msgstr[2] "Прычыніць пашкоджанні стрэламі %(goal)s  разоў"
 
 msgid "quest/blocked/description"
-msgstr "Вернитесь на направление:"
+msgstr "Вярніцеся на кірунак:"
 
 msgid "quest/blocked/description/undefined"
-msgstr "Вернитесь в зону целей"
+msgstr "Вярніцеся ў зону цэляў"
 
 msgid "quest/line/last"
 msgstr "Зона цэляў"
@@ -123,42 +123,42 @@ msgid "quest/title/default"
 msgstr "БАЯВАЯ ЗАДАЧА"
 
 msgid "questTab/isObserver"
-msgstr "Боевая задача и прогрессия зоны недоступны в режиме наблюдателя."
+msgstr "Баявая задача і прагрэсія зоны недаступныя ў рэжыме назіральніка."
 
 msgid "questTab/noStarted"
 msgstr ""
-"Боевая задача и командная прогрессия зоны станут доступны по окончании "
-"предбоевого отсчёта."
+"Баявая задача і камандная прагрэсія зоны стануць даступнымі па заканчэнні "
+"перадбаявога адліку."
 
 msgid "questTab/personal/active"
 msgstr "Выконваецца"
 
 msgid "questTab/personal/blocked"
-msgstr "Не выполняется"
+msgstr "Не выконваецца"
 
 msgid "questTab/personal/completed"
 msgstr "Выканана"
 
 msgid "questTab/personal/completedAll"
-msgstr "Выполнены все доступные задачи в текущей зоне."
+msgstr "Выкананы ўсе даступныя задачы ў бягучай зоне."
 
 msgid "questTab/personal/title"
 msgstr "Персанальная баявая задача"
 
 msgid "questTab/progression/active"
 msgstr ""
-"Выполняйте боевые задачи, пополняйте командную прогрессию зоны и получайте "
-"доступ к объектам поддержки:"
+"Выполняйте боевые задачи и регулярные действия в бою, пополняйте командную "
+"прогрессию зоны и получайте доступ к объектам поддержки:"
 
 msgid "questTab/progression/blocked"
 msgstr ""
-"Вернитесь на своё направление, чтобы продолжить выполнять боевые задачи "
-"и пополнять прогрессию объектов поддержки."
+"Вярніцеся на свой кірунак, каб далей выконваць баявыя задачы і папаўняць "
+"прагрэсію аб'ектаў падтрымкі."
 
 msgid "questTab/progression/completed"
 msgstr ""
-"Получены все объекты поддержки в зоне. Вы можете продолжать выполнять задачи"
-" в зоне для роста в звании."
+"Атрыманы ўсе аб'екты падтрымкі ў зоне. Вы можаце далей выконваць задачы "
+"ў зоне для росту ў званні."
 
 msgid "questTab/progression/current"
 msgstr "%(current)s%"
@@ -167,11 +167,10 @@ msgid "questTab/progression/paused"
 msgstr "Прагрэсія будзе даступная пасля адкрыцця наступнай зоны кірунку."
 
 msgid "questTab/progression/questsBlocked"
-msgstr ""
-"Вернитесь на своё направление, чтобы продолжить выполнять боевые задачи."
+msgstr "Вярніцеся на свой кірунак, каб далей выконваць баявыя задачы."
 
 msgid "questTab/progression/targetZone"
-msgstr "В зоне целей нет объектов поддержки."
+msgstr "У зоне цэляў няма аб'ектаў падтрымкі."
 
 msgid "questTab/progression/title"
 msgstr "Камандная прагрэсія"

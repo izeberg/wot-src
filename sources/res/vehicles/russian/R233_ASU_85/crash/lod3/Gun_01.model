@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/russian/R233_ASU_85/crash/lod4/Gun_01</parent>
+	<tank>true</tank>
+	<extent>192.000000</extent>
+	<nodelessVisual>vehicles/russian/R233_ASU_85/crash/lod3/Gun_01</nodelessVisual>
+	<visibilityBox>
+		<min>-0.432230 -0.277798 -0.221288</min>
+		<max>0.449087 0.791757 4.280761</max>
+	</visibilityBox>
+</root>

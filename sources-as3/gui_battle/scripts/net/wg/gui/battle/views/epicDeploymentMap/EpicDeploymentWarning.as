@@ -3,8 +3,6 @@ package net.wg.gui.battle.views.epicDeploymentMap
    import flash.display.MovieClip;
    import flash.text.TextField;
    import flash.text.TextFieldAutoSize;
-   import net.wg.data.constants.Values;
-   import net.wg.data.constants.generated.EPIC_CONSTS;
    import net.wg.infrastructure.base.SimpleDisposable;
    import org.idmedia.as3commons.util.StringUtils;
    
@@ -35,21 +33,9 @@ package net.wg.gui.battle.views.epicDeploymentMap
          super.onDispose();
       }
       
-      public function updateLane(param1:String, param2:String) : void
+      public function update(param1:String) : void
       {
-         this._text = Values.EMPTY_STR;
-         if(StringUtils.isNotEmpty(param2) && param1 != param2)
-         {
-            this._text = EPIC_BATTLE.DEPLOYMENTMAP_WARNING_1;
-            if(param2 == EPIC_CONSTS.LANE_TOP)
-            {
-               this._text = EPIC_BATTLE.DEPLOYMENTMAP_WARNING_2;
-            }
-            else if(param1 == EPIC_CONSTS.LANE_TOP)
-            {
-               this._text = EPIC_BATTLE.DEPLOYMENTMAP_WARNING_3;
-            }
-         }
+         this._text = param1;
          this.textTF.text = this._text;
          this.background.height = this.textTF.height + this._topPadding * 2;
       }

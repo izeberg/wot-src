@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/russian/R189_SU_100i_TR/normal/lod0/Turret_01</nodefullVisual>
+	<visibilityBox>
+		<min>-0.031233 -0.040803 -0.041594</min>
+		<max>0.031233 0.040803 0.041593</max>
+	</visibilityBox>
+</root>

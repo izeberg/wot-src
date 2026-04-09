@@ -102,6 +102,10 @@ class IItemsRequester(requesters.IRequester):
     def armoryYard(self):
         raise NotImplementedError
 
+    @property
+    def historicalBattles(self):
+        raise NotImplementedError
+
     def requestUserDossier(self, databaseID, callback):
         raise NotImplementedError
 

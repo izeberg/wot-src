@@ -62,6 +62,9 @@ msgstr "A-220A"
 msgid "A_220A_58"
 msgstr "A-220A-58"
 
+msgid "A_220A_Ch76"
+msgstr "A-220A"
+
 msgid "A_220B_1_QL"
 msgstr "A-220B QL"
 
@@ -221,7 +224,7 @@ msgstr ""
 "Модификация танка Renault FT с новой ходовой частью, в которой "
 "использовались элементы подвески с большим ходом и гусеница Kégresse-Hinstin"
 " из армированной резины с металлическими башмаками. Новый двигатель "
-"мощностью 45 л. с. позволил танку развивать скорость до 16 км/ч. Пятнадцать "
+"мощностью 45 л.с. позволил танку развивать скорость до 16 км/ч. Пятнадцать "
 "машин этого типа были поставлены в Китай."
 
 msgid "Ch06_Renault_NC31_short"
@@ -1328,7 +1331,7 @@ msgid "Ch62_ZZT_58_descr"
 msgstr ""
 ".\n"
 "\n"
-"Характеристики машины могут быть изменены без компенсации."
+"Характеристики машины могут быть изменены без компенсации."
 
 msgid "Ch62_ZZT_58_long_special"
 msgstr "?empty?"
@@ -1482,6 +1485,28 @@ msgstr "WZ-57-I"
 
 msgid "Ch74_WZ_57_I_short_special"
 msgstr "Выдатнае браніраванне, магутная гармата"
+
+msgid "Ch76_HSD_1"
+msgstr "HSD-1"
+
+msgid "Ch76_HSD_1_descr"
+msgstr ""
+"Китайское танкостроение в конце 1950-х годов начало переходить к собственным разработкам с использованием зарубежных технологий. Одним из самобытных проектов конструкторов КНР того периода являлся тяжёлый танк с рабочим наименованием HSD-1 (кит. Hóngsè dòushì – «Красный Боец»). Танк предполагалось оснастить ракетными ускорителями для применения в экстренных случаях, когда машине требовалась дополнительная тяга при преодолении сложных участков местности. Также рассматривалась возможность механизация заряжания с размещением автомата заряжания в развитой кормовой нише. Проект HSD-1 не был реализован по ряду причин, прежде всего из-за низкого приоритета тяжёлых танков для китайской промышленности и избыточной сложности для своего времени.\n"
+"\n"
+"Характеристики машины могут быть изменены без компенсации."
+
+msgid "Ch76_HSD_1_long_special"
+msgstr ""
+"Машина выделяется хорошим лобовым бронированием и комфортным орудием с "
+"высоким уроном за выстрел. За счёт ракетных ускорителей танк может занимать "
+"важные позиции на карте, где максимизирует свою эффективность, сокращая "
+"дистанцию до противника до комфортного минимума."
+
+msgid "Ch76_HSD_1_short"
+msgstr "HSD-1"
+
+msgid "Ch76_HSD_1_short_special"
+msgstr "Хорошее лобовое бронирование, ракетные ускорители"
 
 msgid "Chassis_01_Ch24_Type64_SH"
 msgstr "Type 64BL"
@@ -1801,6 +1826,9 @@ msgstr "GPT 75"
 msgid "Chassis_Ch74_WZ_57_I"
 msgstr "WZ-57-I"
 
+msgid "Chassis_Ch76_HSD_1"
+msgstr "HSD-1"
+
 msgid "Continental_AOSI_895_5_Prem_SH"
 msgstr "Contіnental AOSі895-5"
 
@@ -2087,6 +2115,9 @@ msgstr "GPT 75"
 
 msgid "Turret_1_Ch74_WZ_57_I"
 msgstr "WZ-57-I"
+
+msgid "Turret_1_Ch76_HSD_1"
+msgstr "HSD-1"
 
 msgid "Turret_2_Ch04_T34_1"
 msgstr "T-34-1 model 2"
@@ -2478,6 +2509,9 @@ msgstr "TYPE 12150L-7BW"
 msgid "_12150ZL"
 msgstr "12150ZL"
 
+msgid "_12150ZL_Ch76"
+msgstr "12150ZL"
+
 msgid "_122-mm_37-122JT"
 msgstr "122 mm 37-122JT"
 
@@ -2520,6 +2554,9 @@ msgstr "Chuan bei-472"
 msgid "_122mm_Cb_472"
 msgstr "122 mm Cb-472"
 
+msgid "_122mm_Cb_472_Ch76"
+msgstr "Cb-472"
+
 msgid "_122mm_Cb_71"
 msgstr "122 mm Cb-71"
 
@@ -2541,6 +2578,9 @@ msgstr "Po-122"
 msgid "_122mm_PO_5"
 msgstr "122 mm Po-5"
 
+msgid "_122mm_Po_9_Ch76"
+msgstr "Po-9"
+
 msgid "_122mm_Po_Type_59"
 msgstr "Po Type 59-2"
 
@@ -2552,6 +2592,9 @@ msgstr "122 mm Sb-412"
 
 msgid "_122mm_Sb_472"
 msgstr "122 mm Sb-472"
+
+msgid "_122mm_Sb_472_Ch76"
+msgstr "Sb-472"
 
 msgid "_122mm_Sha_bao_Type_59"
 msgstr "Sha bao Type 59-2"
@@ -2576,6 +2619,9 @@ msgstr "122 mm Type 57-I"
 
 msgid "_122mm_Type_57_I_M"
 msgstr "122 mm Type 57-I-М"
+
+msgid "_122mm_Type_61_Ch76"
+msgstr "122 mm Type 61"
 
 msgid "_122mm_Type_64"
 msgstr "Po-471"
@@ -2659,7 +2705,7 @@ msgid "_130mm_M_65_Type_70"
 msgstr "130 mm M-65 Type 70"
 
 msgid "_130mm_PO-122_BZ74"
-msgstr "130mm PO-122M"
+msgstr "130 mm PO-122M"
 
 msgid "_130mm_Po_130F"
 msgstr "Po-130F"
@@ -2671,7 +2717,7 @@ msgid "_130mm_Po_M_65"
 msgstr "Po M-65"
 
 msgid "_130mm_SB-472_BZ74"
-msgstr "130mm SB-472M"
+msgstr "130 mm SB-472M"
 
 msgid "_130mm_Sha_bao_482G"
 msgstr "Sha bao-482G"

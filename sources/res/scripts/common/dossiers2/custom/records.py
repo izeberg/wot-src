@@ -1142,7 +1142,7 @@ RECORDS = (
  (
   'achievements', 'maxAimerSeries', 'p', 'B', 201),
  (
-  'achievements', 'shootToKill', 'p', 'H', 60001),
+  'achievements', 'shootToKill', 'p', 'H', 65001),
  (
   'achievements', 'fighter', 'p', 'H', 60001),
  (
@@ -1152,7 +1152,7 @@ RECORDS = (
  (
   'achievements', 'arsonist', 'p', 'H', 60001),
  (
-  'achievements', 'bonecrusher', 'p', 'H', 60001),
+  'achievements', 'bonecrusher', 'p', 'H', 65001),
  (
   'achievements', 'charmed', 'p', 'H', 60001),
  (
@@ -3602,7 +3602,11 @@ RECORDS = (
  (
   'singleAchievements', 'comp7_5_3_champion', 'p', 'B', 1),
  (
-  'singleAchievements', 'comp7_5_3_legend', 'p', 'B', 1))
+  'singleAchievements', 'comp7_5_3_legend', 'p', 'B', 1),
+ (
+  'singleAchievements', 'hb26MedalTanker', 'p', 'B', 1),
+ (
+  'singleAchievements', 'hb26MedalSPG', 'p', 'B', 1))
 RECORD_INDICES = dict((rec[:2], idx) for idx, rec in enumerate(RECORDS))
 RECORD_DB_IDS = {('total', 'creationTime'): 68, 
    ('total', 'lastBattleTime'): 7, 
@@ -5405,7 +5409,9 @@ RECORD_DB_IDS = {('total', 'creationTime'): 68,
    ('singleAchievements', 'comp7_5_3'): 31161, 
    ('singleAchievements', 'comp7_5_3_champion'): 31162, 
    ('singleAchievements', 'comp7_5_3_legend'): 31163, 
-   ('singleAchievements', 'Paragons_S2'): 31164}
+   ('singleAchievements', 'Paragons_S2'): 31164, 
+   ('singleAchievements', 'hb26MedalTanker'): 31165, 
+   ('singleAchievements', 'hb26MedalSPG'): 31166}
 DB_ID_TO_RECORD = dict([ (value, key) for key, value in RECORD_DB_IDS.iteritems() ])
 RECORD_DB_IDS.update({('vehTypeFrags', ''): 863, 
    ('a15x15Cut', ''): 864, 

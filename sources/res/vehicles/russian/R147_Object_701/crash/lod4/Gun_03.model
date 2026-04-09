@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<nodelessVisual>vehicles/russian/R147_Object_701/crash/lod4/Gun_03</nodelessVisual>
 	<tank>true</tank>
 	<visibilityBox>
 		<min>-0.344072 -0.257335 -0.099653</min>
-		<max>
-			0.269155 0.363085 4.53944
-			<!--BW_String-->
-		</max>
+		<max>0.269155 0.363085 4.539441</max>
 	</visibilityBox>
+	<nodelessVisual>vehicles/russian/R147_Object_701/crash/lod4/Gun_03</nodelessVisual>
 </root>

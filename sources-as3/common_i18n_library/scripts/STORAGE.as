@@ -217,6 +217,16 @@ package
       
       public static const DEVICES_FILTERS_MODERNIZED:String = "#storage:devices/filters/modernized";
       
+      public static const DEVICES_BUTTONLABEL_GOTORESTORE:String = "#storage:devices/buttonLabel/gotoRestore";
+      
+      public static const DEVICES_RESTORE_GOBACK:String = "#storage:devices/restore/goBack";
+      
+      public static const DEVICES_RESTORE_GOBACKTOSECTIONS:String = "#storage:devices/restore/goBackToSections";
+      
+      public static const DEVICES_RESTORE_TITLE:String = "#storage:devices/restore/title";
+      
+      public static const DEVICES_RESTORE_AVAILABLETORESTORE:String = "#storage:devices/restore/availableToRestore";
+      
       public static const OFFERS_SECTIONTITLE:String = "#storage:offers/sectionTitle";
       
       public static const OFFERS_GIFTSTITLE:String = "#storage:offers/giftsTitle";

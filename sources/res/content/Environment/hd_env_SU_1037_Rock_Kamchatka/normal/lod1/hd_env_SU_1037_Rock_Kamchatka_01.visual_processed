@@ -56,10 +56,6 @@
 						<Vector4>0.000000 0.500000 0.200000 0.800000</Vector4>
 					</property>
 					<property>
-						g_ditherCoeff
-						<Float>0.000000</Float>
-					</property>
-					<property>
 						g_enableTerrainBlending
 						<Bool>true</Bool>
 					</property>

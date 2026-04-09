@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<effectMap>spaces/h16_mt_museum/environments/B1D26716-459ADA8B-390A649E-6F37FE40/camera_effects_map.dds</effectMap>
+	<effect>
+		<id>1</id>
+		<name>particles/content_deferred/PFX/Environment/hangar/h16_ambient_dust.vfx</name>
+		<alignToTerrain>true</alignToTerrain>
+		<useCameraTarget>false</useCameraTarget>
+	</effect>
+</root>

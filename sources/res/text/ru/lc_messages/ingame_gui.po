@@ -158,6 +158,11 @@ msgstr ""
 "К выстрелу готов через: <Время перезарядки> с, снарядов в магазине: "
 "<Количество снарядов> шт."
 
+msgid "chat_example/reloading_cassette_auto_shoot"
+msgstr ""
+"К выстрелу готов через: <Время перезарядки> с, снарядов в ленте: <Количество"
+" снарядов> шт."
+
 msgid "chat_example/reloading_gun"
 msgstr "Перезаряжаюсь ещё <Время перезарядки> c!"
 
@@ -168,6 +173,11 @@ msgid "chat_example/reloading_ready_cassette"
 msgstr ""
 "К выстрелу готов! До разрядки магазина осталось снарядов: <Количество "
 "снарядов> шт."
+
+msgid "chat_example/reloading_ready_cassette_auto_shoot"
+msgstr ""
+"К выстрелу готов! До разрядки ленты осталось снарядов: <Количество "
+"снарядов> шт."
 
 msgid "chat_example/reloading_unavailable"
 msgstr "Боекомплект пуст."
@@ -292,6 +302,12 @@ msgstr "Двигаюсь на позицию!"
 msgid "chat_shortcuts/going_there_gridInfo"
 msgstr "Двигаюсь в %(gridId)s"
 
+msgid "chat_shortcuts/hb_ability/artillery_on_yourself"
+msgstr "Вызываю огонь на себя!"
+
+msgid "chat_shortcuts/hb_ability/last_stand"
+msgstr "Бьёмся до конца!"
+
 msgid "chat_shortcuts/help_me"
 msgstr "Нужна помощь!"
 
@@ -312,6 +328,10 @@ msgstr ""
 "К выстрелу готов через: %(floatArg1)d с, снарядов в магазине: %(int32Arg1)s "
 "шт."
 
+msgid "chat_shortcuts/reloading_cassette_auto_shoot"
+msgstr ""
+"К выстрелу готов через: %(floatArg1)d с, снарядов в ленте: %(int32Arg1)s шт."
+
 msgid "chat_shortcuts/reloading_gun"
 msgstr "Перезаряжаюсь ещё %(floatArg1)d c!"
 
@@ -320,6 +340,9 @@ msgstr "К выстрелу готов!"
 
 msgid "chat_shortcuts/reloading_ready_cassette"
 msgstr "К выстрелу готов! Снарядов в магазине: %(int32Arg1)s шт."
+
+msgid "chat_shortcuts/reloading_ready_cassette_auto_shoot"
+msgstr "К выстрелу готов! Снарядов в ленте: %(int32Arg1)s шт."
 
 msgid "chat_shortcuts/reloading_unavailable"
 msgstr "Боекомплект пуст."
@@ -705,6 +728,9 @@ msgstr "Урон артобстрелом"
 msgid "efficiencyRibbons/CannonDmg"
 msgstr "Урон орудием"
 
+msgid "efficiencyRibbons/HBDeathZone"
+msgstr "Урон от запретной зоны"
+
 msgid "efficiencyRibbons/armor"
 msgstr "Удар сдержан"
 
@@ -1082,7 +1108,7 @@ msgid "player_messages/COMBAT_EQUIPMENT_READY_INSPIRE"
 msgstr "Ваш экипаж готов воодушевить союзников."
 
 msgid "player_messages/COMBAT_EQUIPMENT_READY_MINEFIELD_EPIC"
-msgstr "Минное поле готово к развёртыванию."
+msgstr "Минное поле готово к развёртыванию."
 
 msgid "player_messages/COMBAT_EQUIPMENT_READY_RECON"
 msgstr "Самолёт прибыл и готов вести разведку."
@@ -1754,6 +1780,11 @@ msgid "postmortem/tips/exitHangar/text"
 msgstr ""
 "Esc > Выйти в Ангар.\n"
 "Начните бой на другой машине."
+
+msgid "postmortem/tips/exitHangar/text_hb"
+msgstr ""
+"Esc > Выйти в Ангар.\n"
+"Попробуйте свои силы в новом бою!"
 
 msgid "postmortem/tips/observerMode/label"
 msgstr "Режим Наблюдателя"
@@ -3152,7 +3183,7 @@ msgid "vehicle_messages/DEATH_FROM_DEATH_ZONE_ENEMY_SELF"
 msgstr "Машина уничтожена %(entity)s в запретной зоне."
 
 msgid "vehicle_messages/DEATH_FROM_DEATH_ZONE_SELF_SUICIDE"
-msgstr "Машина уничтожена запретной зоной."
+msgstr "Машина уничтожена действием запретной зоны."
 
 msgid "vehicle_messages/DEATH_FROM_DROWNING_ALLY_SELF"
 msgstr "Машина потоплена союзником %(entity)s."

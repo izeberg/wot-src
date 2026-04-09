@@ -71,9 +71,6 @@ msgstr "Heavy Tank No. VI"
 msgid "Chassis_J20_Type_2605"
 msgstr "Type 5 Heavy"
 
-msgid "Chassis_J20_Type_2605_ISP"
-msgstr "Type 5 Heavy"
-
 msgid "Chassis_J21_Type_91"
 msgstr "Dai-chi Osaka Sensha"
 
@@ -430,24 +427,6 @@ msgid "J20_Type_2605_7x7_short"
 msgstr "Type 5 H 7x7"
 
 msgid "J20_Type_2605_7x7_short_special"
-msgstr "?empty?"
-
-msgid "J20_Type_2605_ISP"
-msgstr "Type 5 H Испытательный"
-
-msgid "J20_Type_2605_ISP_descr"
-msgstr ""
-"Type 5, вядомы таксама як Type 2605 — адзін з варыянтаў звышцяжкага танка "
-"O-I, распрацаванага ў гады Другой сусветнай вайны. Асноўнымі задачамі танка "
-"былі прарыў умацаваных палос супраціўніка і берагавая абарона."
-
-msgid "J20_Type_2605_ISP_long_special"
-msgstr "?empty?"
-
-msgid "J20_Type_2605_ISP_short"
-msgstr "Type 5 H (И)"
-
-msgid "J20_Type_2605_ISP_short_special"
 msgstr "?empty?"
 
 msgid "J20_Type_2605_descr"
@@ -915,24 +894,25 @@ msgstr "Type 60 Proto 4"
 
 msgid "J49_Type_60_Proto_4_descr"
 msgstr ""
-"В середине 1950-х гг. силы самообороны Японии стали заказывать разработку военной техники собственным фирмам. Был объявлен конкурс на технику с двумя безоткатными орудиями. В 1956 году «Комацу» предложила прототип SS-1, а «Мицубиси» создали SS-2. Далее последовал третий опытный образец SS-3. В 1959 году «Комацу» построили три опытных прототипа SS-4. Доработанный SS-4 принят на вооружение как «самоходное безоткатное орудие Тип 60». Особенностью машины «Тип 60» и её предшественниц была система наводки и стрельбы орудий. Центральная часть рубки с вооружением могла подниматься — это увеличило углы наведения по горизонтали и вертикали. На вооружении сил самообороны Японии «Тип 60» находилась до 2000-х годов.\n"
+"В середине 1950-х гг. силы самообороны Японии стали заказывать разработку военной техники собственным фирмам. Был объявлен конкурс на технику с двумя безоткатными орудиями. В 1956 году «Комацу» предложила прототип SS-1, а «Мицубиси» создали SS-2. Далее последовал третий опытный образец SS-3. В 1959 году «Комацу» построили три опытных прототипа SS-4. Доработанный SS-4 принят на вооружение как «самоходное безоткатное орудие Тип 60». Особенностью машины «Тип 60» и её предшественниц была система наводки и стрельбы орудий. Центральная часть рубки с вооружением могла подниматься — это увеличило углы наведения по горизонтали и вертикали. На вооружении сил самообороны Японии «Тип 60» находилась до 2000-х годов.\n"
 "\n"
 "Характеристики машины могут быть изменены без компенсации."
 
 msgid "J49_Type_60_Proto_4_long_special"
 msgstr ""
 "Нетипичный представитель класса лёгких танков, вооружённый грозной "
-"двухорудийной установкой с внушительным разовым уроном, но с ограниченными "
-"углами горизонтальной наводки. Танк обладает отличной маскировкой и "
-"компактными габаритами. Отличный танк для атаки из засады благодаря своим "
-"размерам и отличным УВН, способный удивить противника огнём из самых "
+"двухорудийной установкой с внушительным разовым уроном, но с ограниченными "
+"углами горизонтальной наводки. Танк обладает отличной маскировкой "
+"и компактными габаритами. Отличный танк для атаки из засады благодаря своим "
+"размерам и отличным УВН, способный удивить противника огнём из самых "
 "неожиданных позиций."
 
 msgid "J49_Type_60_Proto_4_short"
 msgstr "Type 60 Pr.4"
 
 msgid "J49_Type_60_Proto_4_short_special"
-msgstr "Хороший разовый урон, отличная маскировка, двухорудийная установка"
+msgstr ""
+"Добрая забойнасць стрэлу, надзейная маскіроўка, двухгарматная ўстаноўка"
 
 msgid "JAN-GRC-3Z"
 msgstr "JAN/GRC-3Z"
@@ -1140,9 +1120,6 @@ msgstr "Heavy Tank No. VI"
 msgid "Turret_1_J20_Type_2605"
 msgstr "Type 5 Heavy"
 
-msgid "Turret_1_J20_Type_2605_ISP"
-msgstr "Type 5 Heavy"
-
 msgid "Turret_1_J21_Type_91"
 msgstr "Type 91 Heavy"
 
@@ -1332,7 +1309,7 @@ msgid "_105mm_AP_Experimental_Type2_TS"
 msgstr "AP Experimental Type 2 Toku Otsu"
 
 msgid "_105mm_AP_M68"
-msgstr "10.5 cm AP Type 68"
+msgstr "10,5 cm AP Type 68"
 
 msgid "_105mm_AP_M735"
 msgstr "M392XB"
@@ -1368,7 +1345,7 @@ msgid "_105mm_Experimental_Tank_Gun_Kai_BP"
 msgstr "10 cm Experimental Tank Gun Kai"
 
 msgid "_105mm_Gun_Shin"
-msgstr "10.5 cm Gun Shin"
+msgstr "10,5 cm Gun Shin"
 
 msgid "_105mm_HEAT-T_T384E4"
 msgstr "M456"
@@ -1380,7 +1357,7 @@ msgid "_105mm_HEAT_M457"
 msgstr "M457"
 
 msgid "_105mm_HEAT_M68"
-msgstr "10.5 cm HEAT Type 68"
+msgstr "10,5 cm HEAT Type 68"
 
 msgid "_105mm_HEAT_Type_92"
 msgstr "Type 92 HEAT"
@@ -1392,7 +1369,7 @@ msgid "_105mm_HEPT_Type76"
 msgstr "Type 76"
 
 msgid "_105mm_HE_M68"
-msgstr "10.5 cm HE Type 68"
+msgstr "10,5 cm HE Type 68"
 
 msgid "_105mm_HE_Type14"
 msgstr "HE Type 14"
@@ -1413,7 +1390,7 @@ msgid "_105mm_JSW_105_60"
 msgstr "105 mm JSW 105/60"
 
 msgid "_105mm_M68_L7"
-msgstr "10.5 cm M68 L7"
+msgstr "10,5 cm M68 L7"
 
 msgid "_105mm_Rifled_Gun"
 msgstr "105 mm Rifled Gun"
@@ -1437,25 +1414,25 @@ msgid "_105mm_Type_02_AP"
 msgstr "AP Type 2 Shin"
 
 msgid "_105mm_Type_14_AP_L34"
-msgstr "10.5 cm AP Type 14"
+msgstr "10,5 cm AP Type 14"
 
 msgid "_105mm_Type_14_HEAT_L34"
-msgstr "10.5 cm HEAT Type 14"
+msgstr "10,5 cm HEAT Type 14"
 
 msgid "_105mm_Type_14_HE_L34"
-msgstr "10.5 cm HE Type 14"
+msgstr "10,5 cm HE Type 14"
 
 msgid "_105mm_Type_14_L34_2"
-msgstr "10.5 cm Type 14 L/34"
+msgstr "10,5 cm Type 14 L/34"
 
 msgid "_105mm_Type_92_Gun_Mod1952"
 msgstr "105 mm Type 92 Gun Mod.1952"
 
 msgid "_105mm_Type_92_Gun_Ro"
-msgstr "10.5 cm Type 92 Gun Ro"
+msgstr "10,5 cm Type 92 Gun Ro"
 
 msgid "_105mm_Type_92_L45"
-msgstr "10.5 cm Type 92 L45"
+msgstr "10,5 cm Type 92 L45"
 
 msgid "_105mm_ap_92_L45"
 msgstr "AP Type 92 L45"
@@ -1503,7 +1480,7 @@ msgid "_120mm_HE_Type_60"
 msgstr "12 cm HE Type 60"
 
 msgid "_120mm_HE_Type_71"
-msgstr "12 cm. Type 71 HE"
+msgstr "12 cm Type 71 HE"
 
 msgid "_120mm_Short_Barrel_Gun"
 msgstr "12 cm Short Barrel Gun"
@@ -1524,19 +1501,19 @@ msgid "_120mm_Type_71_Gun"
 msgstr "120 mm Type 71"
 
 msgid "_127mm_50_3rd_Year_Type"
-msgstr "12.7 cm/50 3rd Year Type"
+msgstr "12,7 cm/50 3rd Year Type"
 
 msgid "_127mm_Capped_Common"
-msgstr "12.7 cm Capped Common"
+msgstr "12,7 cm Capped Common"
 
 msgid "_127mm_Capped_Common_Semi_AP"
-msgstr "12.7 cm Capped Common Semi-AP"
+msgstr "12,7 cm Capped Common Semi-AP"
 
 msgid "_127mm_Capped_Common_Type_0"
-msgstr "12.7 cm Capped Common AP"
+msgstr "12,7 cm Capped Common AP"
 
 msgid "_127mm_Capped_Common_Type_1"
-msgstr "12.7 cm Capped Common Type 1 APHE"
+msgstr "12,7 cm Capped Common Type 1 APHE"
 
 msgid "_127mm_Common_AP_J_1"
 msgstr "AP Common Type 89"
@@ -1548,16 +1525,16 @@ msgid "_127mm_Common_HE_J_1"
 msgstr "HE Common Type 89"
 
 msgid "_127mm_Common_Type_0_HE"
-msgstr "12.7 cm Common Type 0 HE"
+msgstr "12,7 cm Common Type 0 HE"
 
 msgid "_127mm_Common_Type_1_HE"
-msgstr "12.7 cm Common Type 1 HE"
+msgstr "12,7 cm Common Type 1 HE"
 
 msgid "_127mm_Gun_Type_89"
-msgstr "12.7 cm Gun Type 89A"
+msgstr "12,7 cm Gun Type 89A"
 
 msgid "_127mm_Gun_Type_89_J"
-msgstr "12.7 cm Gun Type 89"
+msgstr "12,7 cm Gun Type 89"
 
 msgid "_13.2mm_AP"
 msgstr "Type 92"
@@ -1587,27 +1564,24 @@ msgid "_149mm_APHE_Type_2"
 msgstr "APHE Common Type 96"
 
 msgid "_149mm_Capped_Semi_AP"
-msgstr "14.9 cm Capped Semi AP"
+msgstr "14,9 cm Capped Semi AP"
 
 msgid "_149mm_Capped_Semi_AP_Kai"
-msgstr "14.9 cm Capped Semi AP Kai"
+msgstr "14,9 cm Capped Semi AP Kai"
 
 msgid "_149mm_Gun_Type_96"
-msgstr "14.9 cm Gun Type 96"
+msgstr "14,9 cm Gun Type 96"
 
 msgid "_149mm_Gun_Type_97"
-msgstr "14.9 cm Type 97 Cannon"
+msgstr "14,9 cm Type 97 Cannon"
 
 msgid "_149mm_HE_Type_1"
 msgstr "HE Common Type 96"
 
 msgid "_149mm_Type_1_HE"
-msgstr "14.9 cm Type 1 HE"
+msgstr "14,9 cm Type 1 HE"
 
 msgid "_150mm_45_41st_Year_Type"
-msgstr "15 cm/45 41st Year Type"
-
-msgid "_150mm_45_41st_Year_Type_ISP"
 msgstr "15 cm/45 41st Year Type"
 
 msgid "_150mm_APHE_Type1"
@@ -1622,19 +1596,10 @@ msgstr "AP Type 2"
 msgid "_150mm_Common_Type_0_HE"
 msgstr "Common Type 0"
 
-msgid "_150mm_Common_Type_0_HE_ISP"
-msgstr "Common Type 0"
-
 msgid "_150mm_Common_Type_0_HE_Kai"
 msgstr "Common Type 91 Kai"
 
-msgid "_150mm_Common_Type_0_HE_Kai_ISP"
-msgstr "Common Type 91 Kai"
-
 msgid "_150mm_Common_Type_91_AP"
-msgstr "Common Type 91"
-
-msgid "_150mm_Common_Type_91_AP_ISP"
 msgstr "Common Type 91"
 
 msgid "_150mm_HEAT_Type3"
@@ -1740,10 +1705,10 @@ msgid "_57mm_Gun_Shin"
 msgstr "Experimental 57 mm Tank Gun Shin"
 
 msgid "_57mm_Gun_Type90"
-msgstr "5.7 cm Gun Type 90"
+msgstr "5,7 cm Gun Type 90"
 
 msgid "_57mm_Gun_Type97"
-msgstr "5.7 cm Gun Type 97"
+msgstr "5,7 cm Gun Type 97"
 
 msgid "_57mm_HEAT_Type97"
 msgstr "Type 3"
@@ -1782,7 +1747,7 @@ msgid "_75mm_APHE_Type_2_Ni"
 msgstr "APHE Common Type 90/75"
 
 msgid "_75mm_AP_G_Type_3_Ju_Nu"
-msgstr "7.5 cm AP Type 2"
+msgstr "7,5 cm AP Type 2"
 
 msgid "_75mm_AP_Type_1_424"
 msgstr "Type 1 AP"
@@ -1821,28 +1786,28 @@ msgid "_75mm_AP_Type_2_Ni"
 msgstr "AP Common Type 90/75"
 
 msgid "_75mm_AP_Type_3_Ju_Nu"
-msgstr "7.5 cm AP Type 1"
+msgstr "7,5 cm AP Type 1"
 
 msgid "_75mm_Gun_Type3"
-msgstr "7.5 cm Tank Gun Type 3"
+msgstr "7,5 cm Tank Gun Type 3"
 
 msgid "_75mm_Gun_Type5"
-msgstr "7.5 cm Tank Gun Type 5"
+msgstr "7,5 cm Tank Gun Type 5"
 
 msgid "_75mm_Gun_Type5_2"
-msgstr "7.5 cm Tank Gun Type 5"
+msgstr "7,5 cm Tank Gun Type 5"
 
 msgid "_75mm_Gun_Type5_M1"
-msgstr "7.5 cm Tank Gun Type 5 Model I"
+msgstr "7,5 cm Tank Gun Type 5 Model I"
 
 msgid "_75mm_Gun_Type5_M1_auto"
-msgstr "7.5 cm Autoloading Tank Gun Type 5"
+msgstr "7,5 cm Autoloading Tank Gun Type 5"
 
 msgid "_75mm_Gun_Type88"
-msgstr "7.5 cm Type 88 Gun"
+msgstr "7,5 cm Type 88 Gun"
 
 msgid "_75mm_Gun_Type_99"
-msgstr "7.5 cm Tank Gun Type 99"
+msgstr "7,5 cm Tank Gun Type 99"
 
 msgid "_75mm_HEAT_Type2_185"
 msgstr "Type 2"
@@ -1863,7 +1828,7 @@ msgid "_75mm_HE_Type_2_Ni"
 msgstr "HE Common Type 90/75"
 
 msgid "_75mm_HE_Type_3_Ju_Nu"
-msgstr "7.5 cm HE-1"
+msgstr "7,5 cm HE-1"
 
 msgid "_75mm_HE_Type_4_604"
 msgstr "Type 4 604R"
@@ -1878,19 +1843,19 @@ msgid "_75mm_HE_Type_94_425"
 msgstr "Type 90 HE"
 
 msgid "_75mm_Type5_1"
-msgstr "7.5 cm Tank Gun Type 5"
+msgstr "7,5 cm Tank Gun Type 5"
 
 msgid "_75mm_Type_5_Gun_Ro"
-msgstr "7.5 cm Type 5 Gun Ro"
+msgstr "7,5 cm Type 5 Gun Ro"
 
 msgid "_75mm_Type_88R_Gun"
-msgstr "7.5 cm Type 88"
+msgstr "7,5 cm Type 88"
 
 msgid "_75mm_Type_88_Gun"
-msgstr "7.5 cm Tank Gun Type 88"
+msgstr "7,5 cm Tank Gun Type 88"
 
 msgid "_75mm_Type_90_Gun"
-msgstr "7.5 cm Tank Gun Type 90"
+msgstr "7,5 cm Tank Gun Type 90"
 
 msgid "_88mm_AP_Type_3_Ju_Nu"
 msgstr "8,8 cm AP Type 1"
@@ -2087,9 +2052,6 @@ msgstr "Type 3 Ko"
 msgid "_Type3_Ko_notInShop"
 msgstr "Type 3 Ko"
 
-msgid "_Type3_Ko_notInShop_ISP"
-msgstr "Type 3 Ko"
-
 msgid "_Type3_Otsu"
 msgstr "Type 3 Otsu"
 
@@ -2130,9 +2092,6 @@ msgid "_Type98_V12_x2_1200_BP"
 msgstr "2x Kawasaki Type 98 V-12 (600)"
 
 msgid "_Type98_V12_x2_1200_Kai"
-msgstr "2x Kawasaki Type 98 V-12 Kai (600)"
-
-msgid "_Type98_V12_x2_1200_Kai_ISP"
 msgstr "2x Kawasaki Type 98 V-12 Kai (600)"
 
 msgid "_Type_100_Kuurei_V12"

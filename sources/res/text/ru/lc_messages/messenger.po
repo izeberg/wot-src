@@ -2432,6 +2432,9 @@ msgstr "Все экспериментальные модули списаны"
 msgid "serviceChannelMessages/enhancements/wipedOnVehicles"
 msgstr "Демонтированы экспериментальные модули со следующих машин"
 
+msgid "serviceChannelMessages/epicReward/armory_yard"
+msgstr "• Жетоны строительства"
+
 msgid "serviceChannelMessages/epicReward/battleBooster_gift"
 msgstr "• Инструкции к оборудованию на выбор"
 
@@ -3086,6 +3089,9 @@ msgstr "награда на выбор"
 
 msgid "serviceChannelMessages/offerTokenBonus/title"
 msgstr "Поставки из тыла"
+
+msgid "serviceChannelMessages/paragons/body"
+msgstr "Получен доступ к ветке техники."
 
 msgid ""
 "serviceChannelMessages/personalMission/3/earlyPerfectCompletion/congrats"
@@ -3784,6 +3790,12 @@ msgstr ""
 
 msgid "serviceChannelMessages/tradingCaravan/refill/title"
 msgstr "Пополнение товара"
+
+msgid "serviceChannelMessages/tradingCaravanCoinAdded/body"
+msgstr "Добавлено жетонов «Торгового каравана»: "
+
+msgid "serviceChannelMessages/tradingCaravanCoinAdded/title"
+msgstr "Финансовая операция"
 
 msgid "serviceChannelMessages/vehCamouflageTimedOut"
 msgstr "Срок действия камуфляжа на %(vehicleName)s истёк."

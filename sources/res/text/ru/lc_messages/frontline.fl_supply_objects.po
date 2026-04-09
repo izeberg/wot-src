@@ -14,7 +14,7 @@ msgstr ""
 "информацию."
 
 msgid "page/infoBtn"
-msgstr "О СОБЫТИИ"
+msgstr "О СОБЫТИИ"
 
 msgid "page/object/damageZones/hullText"
 msgstr "• В оболочку проходит: %(value)s урона."
@@ -134,6 +134,9 @@ msgstr "Время ремонта"
 msgid "page/object/vehParams/text/resurrectTime"
 msgstr "Время восстановления"
 
+msgid "page/object/vehParams/text/shotDispersionAngle"
+msgstr "Разброс на 100 м"
+
 msgid "page/object/vehParams/text/turretArmor"
 msgstr "Бронирование"
 
@@ -154,6 +157,9 @@ msgstr "Время ремонта объекта (с)"
 
 msgid "page/object/vehParams/title/resurrectTime"
 msgstr "Время восстановления (с)"
+
+msgid "page/object/vehParams/title/shotDispersionAngle"
+msgstr "Разброс на 100 м (м)"
 
 msgid "page/object/vehParams/title/turretArmor"
 msgstr "Бронирование (лоб/борта/корма в мм)"

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>304.000031</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.604246</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.604246</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>72.000000</startTime>
+				<value>-0.000004 -0.000000 -43.505745</value>
+				<inTangent>0.000000 0.000000 -0.598325</inTangent>
+				<outTangent>0.000000 0.000000 -0.598325</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>144.000000</startTime>
+				<value>0.000000 0.000033 -86.158821</value>
+				<inTangent>0.000000 0.000000 -0.592404</inTangent>
+				<outTangent>0.000000 0.000000 -0.598139</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>216.000015</startTime>
+				<value>0.000000 0.000050 -129.224823</value>
+				<inTangent>-0.000000 0.000000 -0.598139</inTangent>
+				<outTangent>0.000000 0.000000 -0.594100</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>288.000000</startTime>
+				<value>0.000000 0.000066 -172.000000</value>
+				<inTangent>-0.000000 0.000000 -0.594100</inTangent>
+				<outTangent>0.000000 0.000001 -0.531248</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>304.000031</startTime>
+				<value>0.000004 0.000081 -180.499985</value>
+				<inTangent>0.000000 0.000001 -0.531248</inTangent>
+				<outTangent>0.000000 0.000001 -0.531248</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>visibility</name>
+			<type>bool</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>false</value>
+			</frame>
+			<frame>
+				<startTime>1.333333</startTime>
+				<value>true</value>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

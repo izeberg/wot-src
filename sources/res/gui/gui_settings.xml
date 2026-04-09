@@ -845,7 +845,7 @@
 						<type>dict</type>
 						<value>
 							<item>
-								http://forum.tanki.su/index.php?/forum/221-/&amp;from=ct_client
+								https://forum.tanki.su/forum/221-/?from=ct_client
 								<name>url</name>
 								<type>url</type>
 							</item>
@@ -1235,6 +1235,11 @@
 				<type>url</type>
 			</item>
 			<item>
+				$PARAMS(/featured/featured/)
+				<name>buyFeatured</name>
+				<type>url</type>
+			</item>
+			<item>
 				$PARAMS(/premium)
 				<name>buyPremiumUrl</name>
 				<type>url</type>
@@ -1382,6 +1387,11 @@
 			<item>
 				$PARAMS(/cosmic_category/cosmic_category/?origin=lobby_cosmic2026)
 				<name>cosm24Shop</name>
+				<type>url</type>
+			</item>
+			<item>
+				$PARAMS(/HB_category)
+				<name>HB24Category</name>
 				<type>url</type>
 			</item>
 			<item>
@@ -2111,6 +2121,23 @@
 						<type>url</type>
 					</item>
 				</value>
+			</item>
+		</value>
+	</setting>
+	<setting>
+		<name>infoPageHistoricalBattles</name>
+		<type>macros</type>
+		<macros>AUTH_REALM</macros>
+		<value>
+			<item>
+				https://webbrg.tanki.su/$LANGUAGE_CODE/promocontent/PVEventMay26/
+				<name>default</name>
+				<type>url</type>
+			</item>
+			<item>
+				https://webbrg-rpt.tanki.su/$LANGUAGE_CODE/promocontent/PVEventMay26/
+				<name>CT</name>
+				<type>url</type>
 			</item>
 		</value>
 	</setting>

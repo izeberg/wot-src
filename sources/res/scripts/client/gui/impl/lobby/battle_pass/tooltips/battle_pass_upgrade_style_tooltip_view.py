@@ -1,5 +1,5 @@
 from frameworks.wulf import ViewSettings
-from gui.Scaleform.daapi.view.lobby.customization.shared import getSuitableText
+from gui.impl.lobby.customization.shared import getSuitableText
 from gui.battle_pass.battle_pass_helpers import getStyleForChapter
 from gui.impl.gen import R
 from gui.impl.gen.view_models.views.lobby.battle_pass.tooltips.battle_pass_upgrade_style_tooltip_view_model import BattlePassUpgradeStyleTooltipViewModel

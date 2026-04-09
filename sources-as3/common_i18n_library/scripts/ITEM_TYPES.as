@@ -303,9 +303,9 @@ package
       
       public static const CUSTOMIZATION_PLURAL_STYLE:String = "#item_types:customization/plural/style";
       
-      public static const CUSTOMIZATION_PLURAL_STYLE_2D:String = "#item_types:customization/plural/style/2d";
+      public static const CUSTOMIZATION_PLURAL_STYLE_3D:String = "#item_types:customization/plural/style_3d";
       
-      public static const CUSTOMIZATION_PLURAL_STYLE_3D:String = "#item_types:customization/plural/style/3d";
+      public static const CUSTOMIZATION_PLURAL_STYLE_2D:String = "#item_types:customization/plural/style_2d";
       
       public static const CUSTOMIZATION_PLURAL_DECAL:String = "#item_types:customization/plural/decal";
       

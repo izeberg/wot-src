@@ -8,6 +8,6 @@ package net.wg.infrastructure.base.meta
       
       function as_setMapDimensions(param1:int, param2:int) : void;
       
-      function as_setDirection(param1:String, param2:String) : void;
+      function as_setDirection(param1:String, param2:String, param3:String) : void;
    }
 }

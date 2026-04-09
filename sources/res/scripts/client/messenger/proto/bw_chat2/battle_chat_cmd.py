@@ -1,4 +1,4 @@
-import struct, Math
+import struct, Math, BigWorld
 from chat_commands_consts import BATTLE_CHAT_COMMAND_NAMES, _DEFAULT_ACTIVE_COMMAND_TIME
 from debug_utils import LOG_ERROR
 from gui.Scaleform.locale.INGAME_GUI import INGAME_GUI as I18N_INGAME_GUI
@@ -13,6 +13,8 @@ from messenger_common_chat2 import BATTLE_CHAT_COMMANDS_BY_NAMES
 from messenger_common_chat2 import MESSENGER_ACTION_IDS as _ACTIONS
 from messenger_common_chat2 import messageArgs, BATTLE_CHAT_COMMANDS
 from skeletons.gui.battle_session import IBattleSessionProvider
+from historical_battles_common.hb_constants_extension import ARENA_GUI_TYPE
+from historical_battles.skeletons.gui.game_event_controller import IGameEventController
 AUTOCOMMIT_COMMAND_NAMES = (
  BATTLE_CHAT_COMMAND_NAMES.ATTACKING_ENEMY, BATTLE_CHAT_COMMAND_NAMES.SUPPORTING_ALLY,
  BATTLE_CHAT_COMMAND_NAMES.ATTACKING_ENEMY_WITH_SPG,
@@ -24,9 +26,9 @@ LOCATION_CMD_NAMES = (
  BATTLE_CHAT_COMMAND_NAMES.SPG_AIM_AREA, BATTLE_CHAT_COMMAND_NAMES.GOING_THERE,
  BATTLE_CHAT_COMMAND_NAMES.ATTENTION_TO_POSITION, BATTLE_CHAT_COMMAND_NAMES.PREBATTLE_WAYPOINT,
  BATTLE_CHAT_COMMAND_NAMES.VEHICLE_SPOTPOINT, BATTLE_CHAT_COMMAND_NAMES.SHOOTING_POINT,
- BATTLE_CHAT_COMMAND_NAMES.NAVIGATION_POINT, BATTLE_CHAT_COMMAND_NAMES.FLAG_POINT)
-EPIC_GLOBAL_CMD_NAMES = (
- BATTLE_CHAT_COMMAND_NAMES.EPIC_GLOBAL_SAVE_TANKS_ATK,
+ BATTLE_CHAT_COMMAND_NAMES.NAVIGATION_POINT, BATTLE_CHAT_COMMAND_NAMES.FLAG_POINT,
+ BATTLE_CHAT_COMMAND_NAMES.OBJECTIVES_POINT)
+EPIC_GLOBAL_CMD_NAMES = (BATTLE_CHAT_COMMAND_NAMES.EPIC_GLOBAL_SAVE_TANKS_ATK,
  BATTLE_CHAT_COMMAND_NAMES.EPIC_GLOBAL_TIME_ATK,
  BATTLE_CHAT_COMMAND_NAMES.EPIC_GLOBAL_HQ_ATK, BATTLE_CHAT_COMMAND_NAMES.EPIC_GLOBAL_TIME_DEF,
  BATTLE_CHAT_COMMAND_NAMES.EPIC_GLOBAL_SAVE_TANKS_DEF,
@@ -60,6 +62,8 @@ _PUBLIC_CMD_NAMES = (
  BATTLE_CHAT_COMMAND_NAMES.RELOADING_UNAVAILABLE, BATTLE_CHAT_COMMAND_NAMES.SOS,
  BATTLE_CHAT_COMMAND_NAMES.RELOADINGGUN, BATTLE_CHAT_COMMAND_NAMES.RELOADING_CASSETE,
  BATTLE_CHAT_COMMAND_NAMES.RELOADING_READY_CASSETE, BATTLE_CHAT_COMMAND_NAMES.SUPPORTING_ALLY,
+ BATTLE_CHAT_COMMAND_NAMES.RELOADING_CASSETE_AUTO_SHOOT,
+ BATTLE_CHAT_COMMAND_NAMES.RELOADING_READY_CASSETE_AUTO_SHOOT,
  BATTLE_CHAT_COMMAND_NAMES.ATTACKING_ENEMY, BATTLE_CHAT_COMMAND_NAMES.DEFENDING_BASE,
  BATTLE_CHAT_COMMAND_NAMES.ATTACKING_BASE, BATTLE_CHAT_COMMAND_NAMES.PREBATTLE_WAYPOINT,
  BATTLE_CHAT_COMMAND_NAMES.EVENT_CHAT_1, BATTLE_CHAT_COMMAND_NAMES.EVENT_CHAT_2,
@@ -70,7 +74,10 @@ _PUBLIC_CMD_NAMES = (
  BATTLE_CHAT_COMMAND_NAMES.FLAG_POINT, BATTLE_CHAT_COMMAND_NAMES.ATTACK_SUPPLY,
  BATTLE_CHAT_COMMAND_NAMES.ATTACKING_SUPPLY, BATTLE_CHAT_COMMAND_NAMES.DEFEND_SUPPLY,
  BATTLE_CHAT_COMMAND_NAMES.DEFENDING_SUPPLY,
- BATTLE_CHAT_COMMAND_NAMES.SELF_REPAIR_SUPPLY)
+ BATTLE_CHAT_COMMAND_NAMES.SELF_REPAIR_SUPPLY,
+ BATTLE_CHAT_COMMAND_NAMES.OBJECTIVES_POINT,
+ BATTLE_CHAT_COMMAND_NAMES.HB_ARTILLERY_ON_YOURSELF,
+ BATTLE_CHAT_COMMAND_NAMES.HB_LAST_STAND)
 _PRIVATE_CMD_NAMES = (
  BATTLE_CHAT_COMMAND_NAMES.TURNBACK, BATTLE_CHAT_COMMAND_NAMES.HELPME,
  BATTLE_CHAT_COMMAND_NAMES.THANKS, BATTLE_CHAT_COMMAND_NAMES.POSITIVE,
@@ -101,11 +108,15 @@ _VEHICLE_COMMAND_NAMES = (
  BATTLE_CHAT_COMMAND_NAMES.RELOADING_UNAVAILABLE, BATTLE_CHAT_COMMAND_NAMES.RELOADINGGUN,
  BATTLE_CHAT_COMMAND_NAMES.RELOADING_CASSETE, BATTLE_CHAT_COMMAND_NAMES.ATTACK_SUPPLY,
  BATTLE_CHAT_COMMAND_NAMES.RELOADING_READY_CASSETE, BATTLE_CHAT_COMMAND_NAMES.TURNBACK,
+ BATTLE_CHAT_COMMAND_NAMES.RELOADING_CASSETE_AUTO_SHOOT,
+ BATTLE_CHAT_COMMAND_NAMES.RELOADING_READY_CASSETE_AUTO_SHOOT,
  BATTLE_CHAT_COMMAND_NAMES.THANKS, BATTLE_CHAT_COMMAND_NAMES.POSITIVE,
  BATTLE_CHAT_COMMAND_NAMES.CONFIRM, BATTLE_CHAT_COMMAND_NAMES.OVERHEAT_CANT_SHOOT,
  BATTLE_CHAT_COMMAND_NAMES.ATTACKING_SUPPLY, BATTLE_CHAT_COMMAND_NAMES.DEFEND_SUPPLY,
  BATTLE_CHAT_COMMAND_NAMES.DEFENDING_SUPPLY,
- BATTLE_CHAT_COMMAND_NAMES.SELF_REPAIR_SUPPLY, BATTLE_CHAT_COMMAND_NAMES.FOCUS_SUPPLY)
+ BATTLE_CHAT_COMMAND_NAMES.SELF_REPAIR_SUPPLY, BATTLE_CHAT_COMMAND_NAMES.FOCUS_SUPPLY,
+ BATTLE_CHAT_COMMAND_NAMES.HB_ARTILLERY_ON_YOURSELF,
+ BATTLE_CHAT_COMMAND_NAMES.HB_LAST_STAND)
 _MUTE_MESSAGE_NAMES = (
  BATTLE_CHAT_COMMAND_NAMES.ATTENTION_TO_POSITION,)
 _TEMPORARY_STICKY_NAMES = (
@@ -119,7 +130,10 @@ _TEMPORARY_STICKY_NAMES = (
  BATTLE_CHAT_COMMAND_NAMES.VEHICLE_SPOTPOINT, BATTLE_CHAT_COMMAND_NAMES.SHOOTING_POINT,
  BATTLE_CHAT_COMMAND_NAMES.NAVIGATION_POINT, BATTLE_CHAT_COMMAND_NAMES.FLAG_POINT,
  BATTLE_CHAT_COMMAND_NAMES.ATTACK_SUPPLY, BATTLE_CHAT_COMMAND_NAMES.DEFEND_SUPPLY,
- BATTLE_CHAT_COMMAND_NAMES.FOCUS_SUPPLY)
+ BATTLE_CHAT_COMMAND_NAMES.FOCUS_SUPPLY,
+ BATTLE_CHAT_COMMAND_NAMES.OBJECTIVES_POINT,
+ BATTLE_CHAT_COMMAND_NAMES.HB_ARTILLERY_ON_YOURSELF,
+ BATTLE_CHAT_COMMAND_NAMES.HB_LAST_STAND)
 _SHORT_MESSAGE_NAMES = (
  BATTLE_CHAT_COMMAND_NAMES.ATTACK_SUPPLY, BATTLE_CHAT_COMMAND_NAMES.ATTACKING_SUPPLY,
  BATTLE_CHAT_COMMAND_NAMES.DEFEND_SUPPLY, BATTLE_CHAT_COMMAND_NAMES.DEFENDING_SUPPLY,
@@ -220,6 +234,7 @@ class _OutCmdDecorator(OutChatCommand):
 class _ReceivedCmdDecorator(ReceivedBattleChatCommand):
     __slots__ = ('_commandID', '__isSilentMode')
     sessionProvider = dependency.descriptor(IBattleSessionProvider)
+    _gameEventController = dependency.descriptor(IGameEventController)
 
     def __init__(self, commandID, args):
         super(_ReceivedCmdDecorator, self).__init__(args, getClientID4BattleChannel(BATTLE_CHANNEL.TEAM.name))
@@ -237,54 +252,58 @@ class _ReceivedCmdDecorator(ReceivedBattleChatCommand):
         if not command:
             LOG_ERROR('Command is not found', self._commandID)
             return ''
-        i18nKey = I18N_INGAME_GUI.chat_shortcuts(command.msgText)
-        i18nArguments = {}
-        if i18nKey is not None:
-            if self.isOnMinimap():
-                if self.isSPGAimCommand():
-                    reloadTime = self._protoData['floatArg1']
-                    if reloadTime > 0:
-                        i18nArguments['reloadTime'] = reloadTime
-                        i18nKey += '_reloading'
-            elif self.hasTarget():
-                i18nArguments['target'] = self._getTarget()
-                if self.isSPGAimCommand():
-                    reloadTime = self._protoData['floatArg1']
-                    if reloadTime > 0:
-                        i18nArguments['reloadTime'] = reloadTime
-                        i18nKey += '_reloading'
-                    elif reloadTime < 0:
-                        i18nKey += '_empty'
-                elif self.isShortTypeMessage():
-                    i18nArguments['target'] = self._getTargetShortName()
-            elif self.isBaseRelatedCommand():
-                strArg = self._protoData['strArg1']
-                if strArg != '':
-                    i18nArguments['strArg1'] = strArg
-                    i18nKey += '_numbered'
-            elif self.isLocationRelatedCommand():
-                if self.isSPGAimCommand():
-                    reloadTime = self._protoData['floatArg1']
-                    if reloadTime > 0:
-                        i18nArguments['reloadTime'] = reloadTime
-                        i18nKey += '_reloading'
-                    elif reloadTime < 0:
-                        i18nKey += '_empty'
-                mapsCtrl = self.sessionProvider.dynamic.maps
-                if mapsCtrl and mapsCtrl.hasMinimapGrid():
-                    cellId = mapsCtrl.getMinimapCellIdByPosition(self.getMarkedPosition())
-                    if cellId is None:
-                        cellId = self.getFirstTargetID()
-                    i18nKey += '_gridInfo'
-                    i18nArguments['gridId'] = mapsCtrl.getMinimapCellNameById(cellId)
-            else:
-                i18nArguments = self._protoData
-            text = i18n.makeString(i18nKey, **i18nArguments)
         else:
-            text = command.msgText
-            if isinstance(text, str):
-                text = unicode(text, 'utf-8', errors='ignore')
-        return text
+            i18nKey = I18N_INGAME_GUI.chat_shortcuts(command.msgText)
+            i18nArguments = {}
+            if i18nKey is not None:
+                if self.isOnMinimap():
+                    if self.isSPGAimCommand():
+                        reloadTime = self._protoData['floatArg1']
+                        if reloadTime > 0:
+                            i18nArguments['reloadTime'] = reloadTime
+                            i18nKey += '_reloading'
+                elif self.hasTarget():
+                    if BigWorld.player().arena.guiType in ARENA_GUI_TYPE.HB_RANGE and BATTLE_CHAT_COMMAND_NAMES.ATTACKING_ENEMY == command.name:
+                        i18nArguments['target'] = self._getEventEnemyName()
+                    else:
+                        i18nArguments['target'] = self._getTarget()
+                    if self.isSPGAimCommand():
+                        reloadTime = self._protoData['floatArg1']
+                        if reloadTime > 0:
+                            i18nArguments['reloadTime'] = reloadTime
+                            i18nKey += '_reloading'
+                        elif reloadTime < 0:
+                            i18nKey += '_empty'
+                    elif self.isShortTypeMessage():
+                        i18nArguments['target'] = self._getTargetShortName()
+                elif self.isBaseRelatedCommand():
+                    strArg = self._protoData['strArg1']
+                    if strArg != '':
+                        i18nArguments['strArg1'] = strArg
+                        i18nKey += '_numbered'
+                elif self.isLocationRelatedCommand():
+                    if self.isSPGAimCommand():
+                        reloadTime = self._protoData['floatArg1']
+                        if reloadTime > 0:
+                            i18nArguments['reloadTime'] = reloadTime
+                            i18nKey += '_reloading'
+                        elif reloadTime < 0:
+                            i18nKey += '_empty'
+                    mapsCtrl = self.sessionProvider.dynamic.maps
+                    if mapsCtrl and mapsCtrl.hasMinimapGrid():
+                        cellId = mapsCtrl.getMinimapCellIdByPosition(self.getMarkedPosition())
+                        if cellId is None:
+                            cellId = self.getFirstTargetID()
+                        i18nKey += '_gridInfo'
+                        i18nArguments['gridId'] = mapsCtrl.getMinimapCellNameById(cellId)
+                else:
+                    i18nArguments = self._protoData
+                text = i18n.makeString(i18nKey, **i18nArguments)
+            else:
+                text = command.msgText
+                if isinstance(text, str):
+                    text = unicode(text, 'utf-8', errors='ignore')
+            return text
 
     def getSenderID(self):
         return self.sessionProvider.getArenaDP().getSessionIDByVehID(self._protoData['int64Arg1'])
@@ -418,6 +437,14 @@ class _ReceivedCmdDecorator(ReceivedBattleChatCommand):
             target = g_settings.battle.targetFormat % {'target': target}
         return target
 
+    def _getEventEnemyName(self):
+        target = self._getTarget()
+        vehInfo = self.sessionProvider.getCtx().getVehicleInfo(vID=self.getFirstTargetID())
+        vehType = vehInfo.vehicleType
+        if vehType is not None:
+            target = vehType.shortName
+        return target
+
     def _getTargetShortName(self):
         vehicleType = self.sessionProvider.getArenaDP().getVehicleInfo(self.getFirstTargetID()).vehicleType
         return ('({})').format(vehicleType.shortNameWithPrefix)
@@ -505,29 +532,27 @@ class BattleCommandFactory(IBattleCommandFactory):
             decorator = _OutCmdDecorator(commandName, messageArgs(int32Arg1=baseIdx, strArg1=baseName))
         return decorator
 
-    def create4Reload(self, isCassetteClip, timeLeft, quantity):
-        name = 'RELOADINGGUN'
-        args = None
+    def createReloadingCommand(self, isCassetteClip, timeLeft, quantity, hasAutoShoot):
+        name, args = BATTLE_CHAT_COMMAND_NAMES.RELOADINGGUN, None
         if timeLeft > 0:
             floatArg1 = timeLeft
             int32Arg1 = 0
-            if isCassetteClip:
-                if quantity > 0:
-                    name = 'RELOADING_CASSETE'
-                    int32Arg1 = quantity
+            if isCassetteClip and quantity > 0:
+                name = BATTLE_CHAT_COMMAND_NAMES.RELOADING_CASSETE
+                int32Arg1 = quantity
+                if hasAutoShoot:
+                    name = BATTLE_CHAT_COMMAND_NAMES.RELOADING_CASSETE_AUTO_SHOOT
             args = messageArgs(int32Arg1=int32Arg1, floatArg1=floatArg1)
         elif quantity <= 0:
-            name = 'RELOADING_UNAVAILABLE'
+            name = BATTLE_CHAT_COMMAND_NAMES.RELOADING_UNAVAILABLE
         elif isCassetteClip:
-            name = 'RELOADING_READY_CASSETE'
+            name = BATTLE_CHAT_COMMAND_NAMES.RELOADING_READY_CASSETE
             args = messageArgs(int32Arg1=quantity)
+            if hasAutoShoot:
+                name = BATTLE_CHAT_COMMAND_NAMES.RELOADING_READY_CASSETE_AUTO_SHOOT
         else:
-            name = 'RELOADING_READY'
-        if name in BATTLE_CHAT_COMMANDS_BY_NAMES:
-            decorator = _OutCmdDecorator(name, args)
-        else:
-            decorator = None
-        return decorator
+            name = BATTLE_CHAT_COMMAND_NAMES.RELOADING_READY
+        return _OutCmdDecorator(name, args)
 
     def createOverheatCantShootCommand(self, timeLeft):
         return _OutCmdDecorator(BATTLE_CHAT_COMMAND_NAMES.OVERHEAT_CANT_SHOOT, messageArgs(floatArg1=timeLeft))

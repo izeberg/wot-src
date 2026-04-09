@@ -83,6 +83,8 @@ package net.wg.gui.components.controls.price
       
       private var _itemsAnchor:String = "bottomLeft";
       
+      private var _useSymmetricLayout:Boolean = false;
+      
       private var _oldPriceAlign:String;
       
       private var _oldPriceVisible:Boolean = false;
@@ -255,7 +257,6 @@ package net.wg.gui.components.controls.price
       private function updatePositions() : void
       {
          var _loc3_:Price = null;
-         var _loc4_:Boolean = false;
          var _loc19_:int = 0;
          var _loc1_:int = 0;
          var _loc2_:int = this._numVisibleItems;
@@ -263,7 +264,7 @@ package net.wg.gui.components.controls.price
          {
             return;
          }
-         _loc4_ = this._itemsDirection == DIRECTION_LEFT;
+         var _loc4_:Boolean = this._itemsDirection == DIRECTION_LEFT;
          var _loc5_:Boolean = this._itemsDirection == DIRECTION_RIGHT;
          var _loc6_:Boolean = this._itemsDirection == DIRECTION_UP;
          var _loc7_:Boolean = this._itemsDirection == DIRECTION_DOWN;
@@ -307,7 +308,7 @@ package net.wg.gui.components.controls.price
                   _loc3_.y = _loc1_;
                   _loc1_ += _loc3_.contentHeight;
                }
-               if(_loc6_ || _loc19_ != 0 && _loc19_ != _loc2_ - 1)
+               if(this._useSymmetricLayout || _loc6_ || _loc19_ != 0 && _loc19_ != _loc2_ - 1)
                {
                   _loc1_ += _loc10_ * _loc16_;
                }
@@ -345,6 +346,21 @@ package net.wg.gui.components.controls.price
             return;
          }
          this._itemsDirection = param1;
+         invalidateLayout();
+      }
+      
+      public function get useSymmetricLayout() : Boolean
+      {
+         return this._useSymmetricLayout;
+      }
+      
+      public function set useSymmetricLayout(param1:Boolean) : void
+      {
+         if(this._useSymmetricLayout == param1)
+         {
+            return;
+         }
+         this._useSymmetricLayout = param1;
          invalidateLayout();
       }
       

@@ -238,28 +238,6 @@ msgstr "AMX 50 120"
 msgid "AMX_50_68t"
 msgstr "AMX 50 B"
 
-msgid "AMX_50_68t_ISP"
-msgstr "AMX 50B Испытательный"
-
-msgid "AMX_50_68t_ISP_descr"
-msgstr ""
-"Разработка была начата в 1951 году компанией DEFA. К 1958 году танк AMX 50 B"
-" получил ряд улучшений: более низкий, частично литой корпус и торсионную "
-"подвеску. На него также была установлена новая башня качающегося типа "
-"со 120-мм орудием. Несмотря на то, что предельная мощность двигателя Maybach"
-" составляла 1000 л.с., специалисты из немецкой компании Gruppe M пытались "
-"разработать решение, которое позволило бы танку развивать скорость "
-"до 65 км/ч. Был построен всего один завершённый прототип данной модификации."
-
-msgid "AMX_50_68t_ISP_long_special"
-msgstr "?empty?"
-
-msgid "AMX_50_68t_ISP_short"
-msgstr "AMX 50 B (И)"
-
-msgid "AMX_50_68t_ISP_short_special"
-msgstr "?empty?"
-
 msgid "AMX_50_68t_bob"
 msgstr "AMX 50 B BB"
 
@@ -465,24 +443,6 @@ msgstr "B-C 25 t 7x7"
 msgid "Bat_Chatillon25t_7x7_short_special"
 msgstr "?empty?"
 
-msgid "Bat_Chatillon25t_ISP"
-msgstr "B-C 25 t Испытательный"
-
-msgid "Bat_Chatillon25t_ISP_descr"
-msgstr ""
-"Средний танк с качающейся башней и 90-мм орудием. Разрабатывался в середине "
-"50-х годов компанией Batignolles-Châtillon. Было построено два опытных "
-"образца. Серийно не выпускался."
-
-msgid "Bat_Chatillon25t_ISP_long_special"
-msgstr "?empty?"
-
-msgid "Bat_Chatillon25t_ISP_short"
-msgstr "B-C 25 t (И)"
-
-msgid "Bat_Chatillon25t_ISP_short_special"
-msgstr "?empty?"
-
 msgid "Bat_Chatillon25t_descr"
 msgstr ""
 "Средний танк с качающейся башней и 90-мм орудием. Разрабатывался в середине "
@@ -680,9 +640,6 @@ msgstr "AMX 50 120 bis"
 msgid "Chassis_AMX_50_68t"
 msgstr "AMX 50 B"
 
-msgid "Chassis_AMX_50_68t_ISP"
-msgstr "AMX 50 B"
-
 msgid "Chassis_AMX_50_68t_fallout"
 msgstr "AMX 50 B"
 
@@ -750,9 +707,6 @@ msgid "Chassis_Bat_Chatillon155_55_2"
 msgstr "Batignolles-Châtillon 155 mle. 56"
 
 msgid "Chassis_Bat_Chatillon25t_2"
-msgstr "Batignolles-Châtillon 25 t"
-
-msgid "Chassis_Bat_Chatillon25t_2_ISP"
 msgstr "Batignolles-Châtillon 25 t"
 
 msgid "Chassis_Bat_Chatillon25t_2_SH"
@@ -1314,12 +1268,12 @@ msgstr "Bretagne Panther"
 
 msgid "F113_Bretagne_Panther_descr"
 msgstr ""
-"Эта модификация «Пантеры» выпускалась с августа 1943 по июль 1944 года. "
-"Версия Ausf. A получила новую башню и шаровую установку курсового пулемёта. "
-"Также изменения коснулись средств наблюдения. Всего было выпущено около 2300"
-" машин данной модификации. В 1944 году, после высадки союзников в Нормандии,"
-" несколько танков были захвачены французскими вооружёнными силами и "
-"использовалось в боевых действиях против немецких войск."
+"Эта модификация «Пантеры» выпускалась с августа 1943 по июль 1944 года. "
+"Версия Ausf. A получила новую башню и шаровую установку курсового пулемёта. "
+"Также изменения коснулись средств наблюдения. Всего было выпущено около "
+"2300 машин данной модификации. В 1944 году, после высадки союзников "
+"в Нормандии, несколько танков были захвачены французскими вооружёнными "
+"силами и использовались в боевых действиях против немецких войск."
 
 msgid "F113_Bretagne_Panther_long_special"
 msgstr ""
@@ -1705,7 +1659,7 @@ msgstr "Хорошая динамика, отличное орудие с маг
 
 msgid "F133_Projet_57_descr"
 msgstr ""
-"Французский тяжёлый танк, который появился как развитие проекта Somua SM. В обновлённой версии конструкторы постарались исправить недостатки исходного проекта и повысить характеристики машины. Машина должна была получить другую башню более снарядостойкой формы, ходовая часть была спроектирована заново с учётом возросших скоростей и массы. Огневая мощь также должна была возрасти: предусматривалась возможность установки 100-мм либо 120-мм орудия с автоматизированным заряжанием. Высокая подвижность обеспечивалась новым дизельным двигатель МР 65 фирмы Saurer. По совокупности основных параметров машина могла стать грозным противником для танков Варшавского договора. Эскизный проект был готов к 1958 году, но в том же году AMX-50 со схожими характеристиками и аналогичной конструкцией уже проходил испытания. В ходе испытаний стало понятно, что сама концепция упустила своё время. В итоге в 1959 году программа AMX-50 была окончательно закрыта в пользу нового проекта Europanzer, а Projet 57 повторил её судьбу.\n"
+"Французский тяжёлый танк, который появился как развитие проекта Somua SM. В обновлённой версии конструкторы постарались исправить недостатки исходного проекта и повысить характеристики машины. Машина должна была получить другую башню более снарядостойкой формы, ходовая часть была спроектирована заново с учётом возросших скоростей и массы. Огневая мощь также должна была возрасти: предусматривалась возможность установки 100-мм либо 120-мм орудия с автоматизированным заряжанием. Высокая подвижность обеспечивалась новым дизельным двигателем МР 65 фирмы Saurer. По совокупности основных параметров машина могла стать грозным противником для танков Варшавского договора. Эскизный проект был готов к 1958 году, но в том же году AMX-50 со схожими характеристиками и аналогичной конструкцией уже проходил испытания. В ходе испытаний стало понятно, что сама концепция упустила своё время. В итоге в 1959 году программа AMX-50 была окончательно закрыта в пользу нового проекта Europanzer, а Projet 57 повторил её судьбу.\n"
 "\n"
 "Характеристики машины могут быть изменены без компенсации."
 
@@ -2403,9 +2357,6 @@ msgstr "Hispano-Suiza HS 110"
 msgid "Hispano-Suiza_HS110_A"
 msgstr "Hispano-Suiza HS 110 pré-série"
 
-msgid "Hispano-Suiza_HS110_ISP"
-msgstr "Hispano-Suiza HS 110"
-
 msgid "Hispano-Suiza_HS110_SH"
 msgstr "Hispano-Suiza HS 110"
 
@@ -2586,9 +2537,6 @@ msgid "Maybach_HL_295_FA"
 msgstr "Maybach HL 295 F"
 
 msgid "Maybach_HL_295_FA_02"
-msgstr "Maybach HL 295 F"
-
-msgid "Maybach_HL_295_F_ISP"
 msgstr "Maybach HL 295 F"
 
 msgid "Maybach_HL_295_F_fallout"
@@ -2847,9 +2795,6 @@ msgstr "SCR-528 F"
 msgid "SCR_528_Fr"
 msgstr "SCR-528 Fr"
 
-msgid "SCR_528_ISP"
-msgstr "SCR 528F"
-
 msgid "SCR_610"
 msgstr "SCR 610"
 
@@ -2858,9 +2803,6 @@ msgstr "SCR 619"
 
 msgid "SCR_619_F155"
 msgstr "SCR 619F"
-
-msgid "SCR_619_ISP"
-msgstr "SCR 619"
 
 msgid "SCR_619_fallout"
 msgstr "SCR 619"
@@ -3050,9 +2992,6 @@ msgstr "AMX 50 120"
 msgid "Turret_1_AMX_50_68t"
 msgstr "AMX 50 B"
 
-msgid "Turret_1_AMX_50_68t_ISP"
-msgstr "AMX 50 B"
-
 msgid "Turret_1_AMX_50_68t_fallout"
 msgstr "AMX 50 B"
 
@@ -3094,14 +3033,6 @@ msgstr "Batignolles-Châtillon 155 mle. 55"
 
 msgid "Turret_1_Bat_Chatillon25t"
 msgstr "Batignolles-Châtillon 25 t"
-
-msgid "Turret_1_Bat_Chatillon25t_ISP"
-msgstr "Batignolles-Châtillon 25 t"
-
-msgid "Turret_1_Bat_Chatillon25t_ISP_short"
-msgstr ""
-"Batignolles-Châtillon\n"
-"25 t"
 
 msgid "Turret_1_Bat_Chatillon25t_short"
 msgstr ""
@@ -3460,9 +3391,6 @@ msgstr "105 mm OFL-105E3"
 msgid "_105mm_APCR_OFL_E1"
 msgstr "OFL-105-57"
 
-msgid "_105mm_APCR_OFL_E1_ISP"
-msgstr "OFL-105-57"
-
 msgid "_105mm_APCR_OFL_SH"
 msgstr "APCR-OLF"
 
@@ -3473,9 +3401,6 @@ msgid "_105mm_CN_105"
 msgstr "105 mm CN 105"
 
 msgid "_105mm_CN_105_57"
-msgstr "105 mm mle. 57 (D. 1504)"
-
-msgid "_105mm_CN_105_57_ISP"
 msgstr "105 mm mle. 57 (D. 1504)"
 
 msgid "_105mm_CN_105_57_SH"
@@ -3511,16 +3436,10 @@ msgstr "105 mm OCC-105E3"
 msgid "_105mm_HEAT_OCC_F1"
 msgstr "OCC-105-57"
 
-msgid "_105mm_HEAT_OCC_F1_ISP"
-msgstr "OCC-105-57"
-
 msgid "_105mm_HE_OE_105E3"
 msgstr "105 mm OE-105E3"
 
 msgid "_105mm_HE_OE_F1"
-msgstr "OE-105-57"
-
-msgid "_105mm_HE_OE_F1_ISP"
 msgstr "OE-105-57"
 
 msgid "_105mm_OCC_105_D1090"
@@ -3664,9 +3583,6 @@ msgstr "120 mm D. 1203 P"
 msgid "_120mm_FrtPrf1945"
 msgstr "Frt.Prf. mle. 1945"
 
-msgid "_120mm_FrtPrf1945_ISP"
-msgstr "Frt.Prf. mle. 1945"
-
 msgid "_120mm_FrtPrf1945_fallout"
 msgstr "Frt.Prf. mle. 1945 A"
 
@@ -3686,9 +3602,6 @@ msgid "_120mm_OE_1930"
 msgstr "ОЕ Mle 1930"
 
 msgid "_120mm_OE_mle_1930"
-msgstr "OE mle. 1930"
-
-msgid "_120mm_OE_mle_1930_ISP"
 msgstr "OE mle. 1930"
 
 msgid "_120mm_OE_mle_1930_fallout"
@@ -3715,9 +3628,6 @@ msgstr "ОР Mle 1943"
 msgid "_120mm_Prf1943"
 msgstr "Prf. mle. 1943"
 
-msgid "_120mm_Prf1943_ISP"
-msgstr "Prf. mle. 1943"
-
 msgid "_120mm_Prf1943_fallout"
 msgstr "Prf. mle. 1943 A"
 
@@ -3734,9 +3644,6 @@ msgid "_120mm_SA_46_AC"
 msgstr "120 mm AC SA46"
 
 msgid "_120mm_SA_46_AC_G"
-msgstr "120 mm SA46"
-
-msgid "_120mm_SA_46_ISP"
 msgstr "120 mm SA46"
 
 msgid "_120mm_SA_46_fallout"

@@ -1,6 +1,6 @@
 import typing
 from gui.Scaleform.framework.entities.View import ViewKey
-from gui.app_loader.observers import BattleLoadingObserver, registerBattleObserverOverrideHandler, SwitchToBattleObserver, BattlePageObserver, SwitchToLobbyObserver
+from gui.app_loader.observers import BattleLoadingObserver, registerBattleObserverOverrideHandler, SwitchToBattleObserver, BattlePageObserver, SwitchToLobbyObserver, AppLoaderObserver
 from helpers import dependency
 from skeletons.gameplay import GameplayStateID
 from skeletons.gui.app_loader import IAppLoader
@@ -64,6 +64,15 @@ class StoryModeSwitchToLobbyObserver(SwitchToLobbyObserver):
             super(StoryModeSwitchToLobbyObserver, self)._createLobby()
 
 
+class SkipStoryModeObserver(AppLoaderObserver):
+    __slots__ = ()
+    _storyModeCtrl = dependency.descriptor(IStoryModeController)
+
+    def onExitState(self, event=None):
+        if self._storyModeCtrl.isQuittingBattle:
+            self._proxy.destroyBattle()
+
+
 class StoryModeObserverPredicate(object):
     __slots__ = ()
     _storyModeCtrl = dependency.descriptor(IStoryModeController)
@@ -79,6 +88,7 @@ def registerObservers(proxy):
       StoryModeSwitchToBattleObserver(GameplayStateID.AVATAR_ENTERING, proxy),
       BattleLoadingObserver(GameplayStateID.AVATAR_ARENA_INFO, proxy),
       BattleLoadingObserver(GameplayStateID.AVATAR_SHOW_GUI, proxy),
+      SkipStoryModeObserver(GameplayStateID.AVATAR_SHOW_GUI, proxy),
       StoryModeBattlePageObserver(GameplayStateID.AVATAR_ARENA_LOADED, proxy),
       StoryModeSwitchToLobbyObserver(GameplayStateID.ACCOUNT_ENTERING, GameplayStateID.AVATAR_EXITING, proxy)))
 

@@ -1457,6 +1457,8 @@ package
       
       public static const HEADER_BUTTONS_EQUIPCOIN_DESCRIPTION1:String = "#tooltips:header/buttons/equipCoin/description1";
       
+      public static const HEADER_BUTTONS_EQUIPCOIN_DESCRIPTION2:String = "#tooltips:header/buttons/equipCoin/description2";
+      
       public static const HEADER_BUTTONS_EQUIPCOIN_DESCRIPTIONEQUIPCOIN:String = "#tooltips:header/buttons/equipCoin/descriptionEquipCoin";
       
       public static const HEADER_BUTTONS_GOLD_TITLE:String = "#tooltips:header/buttons/gold/title";
@@ -1767,6 +1769,20 @@ package
       
       public static const MODULEFITS_UPGRADABLE_MODERNIZED_PRICE:String = "#tooltips:moduleFits/upgradable/modernized/price";
       
+      public static const MODULEFITS_RESTORE_PRICE:String = "#tooltips:moduleFits/restore/price";
+      
+      public static const MODULEFITS_RESTORE_NOMODERNIZED_REASON_1:String = "#tooltips:moduleFits/restore/noModernized/reason/1";
+      
+      public static const MODULEFITS_RESTORE_NOMODERNIZED_REASON_2:String = "#tooltips:moduleFits/restore/noModernized/reason/2";
+      
+      public static const MODULEFITS_RESTORE_NOMODERNIZED_REASON_0:String = "#tooltips:moduleFits/restore/noModernized/reason/0";
+      
+      public static const MODULEFITS_RESTORE_MODERNIZED_REASON_1:String = "#tooltips:moduleFits/restore/modernized/reason/1";
+      
+      public static const MODULEFITS_RESTORE_MODERNIZED_REASON_2:String = "#tooltips:moduleFits/restore/modernized/reason/2";
+      
+      public static const MODULEFITS_RESTORE_MODERNIZED_REASON_0:String = "#tooltips:moduleFits/restore/modernized/reason/0";
+      
       public static const MODULEFITS_DECONSTRUCT_PRICE:String = "#tooltips:moduleFits/deconstruct/price";
       
       public static const MODULEFITS_DECONSTRUCT_MODERNIZED_PRICE:String = "#tooltips:moduleFits/deconstruct/modernized/price";
@@ -1946,6 +1962,14 @@ package
       public static const LOBBY_HEADER_BUYPREMIUMACCOUNT_DISABLED_HEADER:String = "#tooltips:lobby/header/buyPremiumAccount/disabled/header";
       
       public static const LOBBY_HEADER_BUYPREMIUMACCOUNT_DISABLED_BODY:String = "#tooltips:lobby/header/buyPremiumAccount/disabled/body";
+      
+      public static const LOBY_MESSENGER_BTNREFERRALDISABLED_HEADER:String = "#tooltips:loby_messenger/btnReferralDisabled/header";
+      
+      public static const LOBY_MESSENGER_BTNREFERRALDISABLED_BODY:String = "#tooltips:loby_messenger/btnReferralDisabled/body";
+      
+      public static const LOBY_MESSENGER_BTNVEHICLECARTDISABLED_HEADER:String = "#tooltips:loby_messenger/btnVehicleCartDisabled/header";
+      
+      public static const LOBY_MESSENGER_BTNVEHICLECARTDISABLED_BODY:String = "#tooltips:loby_messenger/btnVehicleCartDisabled/body";
       
       public static const TRAINING_CREATE_INVITES_CHECKBOX_HEADER:String = "#tooltips:training/create/invites_checkbox/header";
       
@@ -2953,17 +2977,25 @@ package
       
       public static const VEHICLESELLDIALOG_RENDERER_ALERTICONGOLDWOTPLUS_BODY:String = "#tooltips:vehicleSellDialog/renderer/alertIconGoldWotPlus/body";
       
-      public static const VEHICLESELLDIALOG_RENDERER_ALERTICONSELL_HEADER:String = "#tooltips:vehicleSellDialog/renderer/alertIconSell/header";
+      public static const VEHICLESELLDIALOG_RENDERER_ALERTICONSELLENABLED_HEADER:String = "#tooltips:vehicleSellDialog/renderer/alertIconSellEnabled/header";
       
-      public static const VEHICLESELLDIALOG_RENDERER_ALERTICONSELL_BODY:String = "#tooltips:vehicleSellDialog/renderer/alertIconSell/body";
+      public static const VEHICLESELLDIALOG_RENDERER_ALERTICONSELLENABLED_BODY:String = "#tooltips:vehicleSellDialog/renderer/alertIconSellEnabled/body";
+      
+      public static const VEHICLESELLDIALOG_RENDERER_ALERTICONSELLDISABLED_HEADER:String = "#tooltips:vehicleSellDialog/renderer/alertIconSellDisabled/header";
+      
+      public static const VEHICLESELLDIALOG_RENDERER_ALERTICONSELLDISABLED_BODY:String = "#tooltips:vehicleSellDialog/renderer/alertIconSellDisabled/body";
+      
+      public static const VEHICLESELLDIALOG_RENDERER_ALERTICONDECONSTRUCTENABLED_HEADER:String = "#tooltips:vehicleSellDialog/renderer/alertIconDeconstructEnabled/header";
+      
+      public static const VEHICLESELLDIALOG_RENDERER_ALERTICONDECONSTRUCTENABLED_BODY:String = "#tooltips:vehicleSellDialog/renderer/alertIconDeconstructEnabled/body";
+      
+      public static const VEHICLESELLDIALOG_RENDERER_ALERTICONDECONSTRUCTDISABLED_HEADER:String = "#tooltips:vehicleSellDialog/renderer/alertIconDeconstructDisabled/header";
+      
+      public static const VEHICLESELLDIALOG_RENDERER_ALERTICONDECONSTRUCTDISABLED_BODY:String = "#tooltips:vehicleSellDialog/renderer/alertIconDeconstructDisabled/body";
       
       public static const VEHICLESELLDIALOG_RENDERER_ALERTICONREMOVE_HEADER:String = "#tooltips:vehicleSellDialog/renderer/alertIconRemove/header";
       
       public static const VEHICLESELLDIALOG_RENDERER_ALERTICONREMOVE_BODY:String = "#tooltips:vehicleSellDialog/renderer/alertIconRemove/body";
-      
-      public static const VEHICLESELLDIALOG_RENDERER_ALERTICONDECONSTRUCT_HEADER:String = "#tooltips:vehicleSellDialog/renderer/alertIconDeconstruct/header";
-      
-      public static const VEHICLESELLDIALOG_RENDERER_ALERTICONDECONSTRUCT_BODY:String = "#tooltips:vehicleSellDialog/renderer/alertIconDeconstruct/body";
       
       public static const VEHICLESELLDIALOG_ACCEPTBUTTONTOOLTIP_CONTROLNUMBERVALID_HEADER:String = "#tooltips:vehicleSellDialog/acceptButtonTooltip/controlNumberValid/header";
       
@@ -4390,6 +4422,8 @@ package
       public static const TANK_PARAMS_DESC_SHOTDISPERSIONANGLE:String = "#tooltips:tank_params/desc/shotDispersionAngle";
       
       public static const TANK_PARAMS_DESC_SHOTDISPERSIONANGLE_WITHDUALACCURACY:String = "#tooltips:tank_params/desc/shotDispersionAngle/withDualAccuracy";
+      
+      public static const TANK_PARAMS_DESC_SHOTDISPERSIONANGLE_WITHAUTOSHOOT:String = "#tooltips:tank_params/desc/shotDispersionAngle/withAutoShoot";
       
       public static const TANK_PARAMS_DESC_AIMINGTIME:String = "#tooltips:tank_params/desc/aimingTime";
       
@@ -8068,6 +8102,18 @@ package
       public static const NOTRECRUITEDTANKMAN_TANKMEN_BP19_5_DESC:String = "#tooltips:notrecruitedtankman/tankmen_BP19_5/desc";
       
       public static const NOTRECRUITEDTANKMAN_TANKMEN_BP19_5_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_BP19_5/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_PVEMAY26_1_DESC:String = "#tooltips:notrecruitedtankman/tankmen_PvEMay26_1/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_PVEMAY26_1_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_PvEMay26_1/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_PVEMAY26_2_DESC:String = "#tooltips:notrecruitedtankman/tankmen_PvEMay26_2/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_PVEMAY26_2_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_PvEMay26_2/label";
+      
+      public static const HEADER_BUTTONS_MUSEUM_HEADER:String = "#tooltips:header/buttons/museum/header";
+      
+      public static const HEADER_BUTTONS_MUSEUM_BODY:String = "#tooltips:header/buttons/museum/body";
       
       public static const ELEN_SUMMARY_RANK_ENUM:Array = [ELEN_SUMMARY_RANK_1,ELEN_SUMMARY_RANK_2,ELEN_SUMMARY_RANK_3,ELEN_SUMMARY_RANK_4,ELEN_SUMMARY_RANK_NORANK];
       

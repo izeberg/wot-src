@@ -102,7 +102,7 @@ msgid "abilityInfo/params/recon/revealedArea"
 msgstr "Пакрыццё"
 
 msgid "abilityInfo/params/recon/revealedArea/value"
-msgstr "300 x 750 м"
+msgstr "300×750 м"
 
 msgid "abilityInfo/params/recon/spottingDuration"
 msgstr "Працягласць палёту"
@@ -192,7 +192,7 @@ msgid "battleResults/damage"
 msgstr "Пашкоджанні"
 
 msgid "battleResults/damageSupplies"
-msgstr "Урон по объектам"
+msgstr "Пашкоджанні па аб'ектах"
 
 msgid "battleResults/kill"
 msgstr "Знішчана"
@@ -254,20 +254,20 @@ msgstr "Напрамак заблакаваны — дасягнуты макс
 
 msgid "deploymentMap/warning/1"
 msgstr ""
-"• При выборе другого направления для высадки вы будете закреплены за новым направлением.\n"
-"• Текущая задача будет заменена на новую.\n"
-"• Вы сможете проходить прогрессию зон для нового направления."
+"• Пры выбары іншага кірунку для высадкі вы будзеце замацаваны за новым кірункам.\n"
+"• Бягучая задача будзе заменена на новую.\n"
+"• Вы зможаце праходзіць прагрэсію зон для новага кірунку."
 
 msgid "deploymentMap/warning/2"
 msgstr ""
 "• При выборе другого направления для высадки вы будете закреплены за новым направлением.\n"
-"• Прогресс по текущей задаче будет сброшен."
+"• Выполнение текущей боевой задачи прекратится."
 
 msgid "deploymentMap/warning/3"
 msgstr ""
-"• При выборе другого направления для высадки вы будете закреплены за новым направлением.\n"
-"• Будет выдана новая задача.\n"
-"• Вы сможете проходить прогрессию зон для нового направления."
+"• Пры выбары іншага кірунку для высадкі вы будзеце замацаваны за новым кірункам.\n"
+"• Будзе выдадзена новая задача.\n"
+"• Вы зможаце праходзіць прагрэсію зон для новага кірунку."
 
 msgid "dialogs/quotedName"
 msgstr "«%(name)s»"
@@ -644,7 +644,7 @@ msgid "questsTooltip/epicBattle/header"
 msgstr "Задачы Лініі фронту"
 
 msgid "questsTooltip/epicBattle/lessThanDay"
-msgstr "менее 1 д."
+msgstr "менее 1 д."
 
 msgid "questsTooltip/epicBattle/restrict/level"
 msgstr "атрымайце %(level)s узровень"
@@ -914,7 +914,7 @@ msgid "spectator_mode/unfollow_title"
 msgstr "Перастаць рухацца следам"
 
 msgid "status/timeLeft/days"
-msgstr "%(day)s д."
+msgstr "%(day)s сут."
 
 msgid "status/timeLeft/hours"
 msgstr "%(hour)s гадз"
@@ -923,7 +923,7 @@ msgid "status/timeLeft/lessMin"
 msgstr "хвіліну"
 
 msgid "status/timeLeft/min"
-msgstr "%(min)s мин."
+msgstr "%(min)s хв."
 
 msgid "statusNotificationTimers/captureBlock/blocked"
 msgstr "Ідзе змаганне за базу"
@@ -974,10 +974,10 @@ msgid "supply/marker_need_repair"
 msgstr "Пашкоджаны"
 
 msgid "supply/messages/airshipActive"
-msgstr "В зоне активен дирижабль противника"
+msgstr "У зоне актыўны дырыжабль праціўніка"
 
 msgid "supply/messages/airshipActivePositive"
-msgstr "В зоне активен союзный дирижабль"
+msgstr "У зоне актыўны хаўрусны дырыжабль"
 
 msgid "supply/messages/attack"
 msgstr "Актываваны хаўрусны аб'ект падтрымкі атакі."

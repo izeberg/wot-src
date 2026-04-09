@@ -49,10 +49,6 @@
 						<Texture>content/Environment/hd_env_UNI_635_IceChunks/dirt_DM.dds</Texture>
 					</property>
 					<property>
-						g_ditherCoeff
-						<Float>92.000000</Float>
-					</property>
-					<property>
 						g_enableTerrainBlending
 						<Bool>true</Bool>
 					</property>

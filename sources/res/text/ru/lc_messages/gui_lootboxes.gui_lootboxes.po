@@ -136,10 +136,15 @@ msgstr ""
 msgid "currencies/crystal/title"
 msgstr "Боны"
 
-msgid "currencies/equipCoin/subtitle"
+msgid "currencies/equipCoin/disabled/subtitle"
 msgstr ""
 "Компоненты необходимы для наладки и демонтажа экспериментального "
 "оборудования."
+
+msgid "currencies/equipCoin/enabled/subtitle"
+msgstr ""
+"Компоненты необходимы для наладки, демонтажа и восстановления "
+"экспериментального оборудования."
 
 msgid "currencies/equipCoin/title"
 msgstr "Компоненты"
@@ -279,9 +284,9 @@ msgstr "%(boxNumber)s-го контейнера."
 
 msgid "guaranteedRewardTooltip/block1/bonus/text"
 msgstr ""
-"Гарантированная награда — наиболее ценное игровое имущество из списка "
-"возможного содержимого контейнеров. Награда гарантированно выпадет не "
-"позднее %(bonus)sЕсли выпадет ранее — отсчёт начнётся заново."
+"Гарантированная награда — наиболее ценное игровое имущество из списка "
+"возможного содержимого контейнеров. Награда гарантированно выпадет "
+"не позднее %(bonus)s Если выпадет ранее — отсчёт начнётся заново."
 
 msgid "guaranteedRewardTooltip/block1/bonus/title"
 msgstr "Механика гарантированной награды"
@@ -503,7 +508,7 @@ msgid "openBoxScreen/about"
 msgstr "О контейнерах с этапами"
 
 msgid "openBoxScreen/backBtn/0"
-msgstr "В АНГАР"
+msgstr "В АНГАР"
 
 msgid "openBoxScreen/backBtn/1"
 msgstr "В МАГАЗИН"
@@ -838,10 +843,10 @@ msgstr ""
 "• за {cream_Open}завершение этапов{cream_Close} события «Гонки: рестарт»."
 
 msgid "tooltips/currencyKey/footer/tanks_birthday_2024_key"
-msgstr "В наличии:"
+msgstr "В наличии:"
 
 msgid "tooltips/currencyKey/footer/tanks_birthday_2024_lockpick"
-msgstr "В наличии:"
+msgstr "В наличии:"
 
 msgid "tooltips/currencyKey/title_v1/tanks_birthday_2024_key"
 msgstr "Ключ от контейнера «День рождения 2024»."

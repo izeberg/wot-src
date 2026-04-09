@@ -1,160 +1,128 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<duration>4.633334</duration>
+	<duration>7.677563</duration>
 	<sequenceObject>
 		<name>Root</name>
 		<type>model</type>
 		<resource/>
 	</sequenceObject>
 	<sequenceObject>
-		<name>stg_25_details_1_outside</name>
+		<name>stg_25_Outside_detail_01</name>
 		<type>model</type>
-		<resource>content/Hangars/h00_armory_yard/environment/Constructor/R226_Object_757A/normal/lod0/stg_25_details_1_outside.model</resource>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/A176_OTAC_LK_7605/normal/lod0/stg_25_Outside_detail_01.model</resource>
 		<track>
 			<name>material property float</name>
 			<type>float</type>
-			<identifier>s_nd0</identifier>
+			<identifier>s_nd6</identifier>
 			<property>spawnProgeression</property>
 			<frame>
 				<startTime>1.000000</startTime>
 				<value>0.000000</value>
-				<inTangent>0.666667</inTangent>
-				<outTangent>0.666667</outTangent>
+				<inTangent>0.285714</inTangent>
+				<outTangent>0.285714</outTangent>
 				<tangentMode>0</tangentMode>
 			</frame>
 			<frame>
-				<startTime>2.500000</startTime>
+				<startTime>4.500000</startTime>
 				<value>1.000000</value>
-				<inTangent>0.666667</inTangent>
-				<outTangent>0.666667</outTangent>
+				<inTangent>0.285714</inTangent>
+				<outTangent>0.285714</outTangent>
 				<tangentMode>0</tangentMode>
 			</frame>
 		</track>
 	</sequenceObject>
 	<sequenceObject>
-		<name>stg_25_details_1_outside_DS</name>
+		<name>stg_25_Outside_detail_01_DS</name>
 		<type>model</type>
-		<resource>content/Hangars/h00_armory_yard/environment/Constructor/R226_Object_757A/normal/lod0/stg_25_details_1_outside_DS.model</resource>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/A176_OTAC_LK_7605/normal/lod0/stg_25_Outside_detail_01_DS.model</resource>
 		<castsShadow>false</castsShadow>
 		<track>
 			<name>material property float</name>
 			<type>float</type>
-			<identifier>s_nd0</identifier>
+			<identifier>s_nd5</identifier>
 			<property>spawnProgeression</property>
 			<frame>
 				<startTime>1.000000</startTime>
 				<value>0.000000</value>
-				<inTangent>0.666667</inTangent>
-				<outTangent>0.666667</outTangent>
+				<inTangent>0.285714</inTangent>
+				<outTangent>0.285714</outTangent>
 				<tangentMode>0</tangentMode>
 			</frame>
 			<frame>
-				<startTime>2.500000</startTime>
+				<startTime>4.500000</startTime>
 				<value>1.000000</value>
-				<inTangent>0.666667</inTangent>
-				<outTangent>0.666667</outTangent>
+				<inTangent>0.285714</inTangent>
+				<outTangent>0.285714</outTangent>
 				<tangentMode>0</tangentMode>
 			</frame>
 		</track>
 	</sequenceObject>
 	<sequenceObject>
-		<name>stg_25_details_2_outside</name>
+		<name>stg_25_Outside_detail_02</name>
 		<type>model</type>
-		<resource>content/Hangars/h00_armory_yard/environment/Constructor/R226_Object_757A/normal/lod0/stg_25_details_2_outside.model</resource>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/A176_OTAC_LK_7605/normal/lod0/stg_25_Outside_detail_02.model</resource>
 		<track>
 			<name>material property float</name>
 			<type>float</type>
-			<identifier>s_nd0</identifier>
+			<identifier>s_nd4</identifier>
 			<property>spawnProgeression</property>
 			<frame>
-				<startTime>2.266667</startTime>
+				<startTime>3.666667</startTime>
 				<value>0.000000</value>
-				<inTangent>0.666667</inTangent>
-				<outTangent>0.666667</outTangent>
+				<inTangent>0.285714</inTangent>
+				<outTangent>0.285714</outTangent>
 				<tangentMode>0</tangentMode>
 			</frame>
 			<frame>
-				<startTime>3.766667</startTime>
+				<startTime>7.166667</startTime>
 				<value>1.000000</value>
-				<inTangent>0.666667</inTangent>
-				<outTangent>0.666667</outTangent>
+				<inTangent>0.285714</inTangent>
+				<outTangent>0.285714</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd6</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>3.666667</startTime>
+				<value>0.000000</value>
+				<inTangent>0.285714</inTangent>
+				<outTangent>0.285714</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>7.166667</startTime>
+				<value>1.000000</value>
+				<inTangent>0.285714</inTangent>
+				<outTangent>0.285714</outTangent>
 				<tangentMode>0</tangentMode>
 			</frame>
 		</track>
 	</sequenceObject>
 	<sequenceObject>
-		<name>stg_25_details_2_outside_DS</name>
+		<name>stg_25_Outside_detail_02_DS</name>
 		<type>model</type>
-		<resource>content/Hangars/h00_armory_yard/environment/Constructor/R226_Object_757A/normal/lod0/stg_25_details_2_outside_DS.model</resource>
-		<castsShadow>false</castsShadow>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/A176_OTAC_LK_7605/normal/lod0/stg_25_Outside_detail_02_DS.model</resource>
 		<track>
 			<name>material property float</name>
 			<type>float</type>
-			<identifier>s_nd0</identifier>
+			<identifier>s_nd5</identifier>
 			<property>spawnProgeression</property>
 			<frame>
-				<startTime>2.266667</startTime>
+				<startTime>3.666667</startTime>
 				<value>0.000000</value>
-				<inTangent>0.666667</inTangent>
-				<outTangent>0.666667</outTangent>
+				<inTangent>0.285714</inTangent>
+				<outTangent>0.285714</outTangent>
 				<tangentMode>0</tangentMode>
 			</frame>
 			<frame>
-				<startTime>3.766667</startTime>
+				<startTime>7.166667</startTime>
 				<value>1.000000</value>
-				<inTangent>0.666667</inTangent>
-				<outTangent>0.666667</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-		</track>
-	</sequenceObject>
-	<sequenceObject>
-		<name>stg_25_details_3_outside</name>
-		<type>model</type>
-		<resource>content/Hangars/h00_armory_yard/environment/Constructor/R226_Object_757A/normal/lod0/stg_25_details_3_outside.model</resource>
-		<track>
-			<name>material property float</name>
-			<type>float</type>
-			<identifier>s_nd0</identifier>
-			<property>spawnProgeression</property>
-			<frame>
-				<startTime>3.133333</startTime>
-				<value>0.000000</value>
-				<inTangent>0.666667</inTangent>
-				<outTangent>0.666667</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-			<frame>
-				<startTime>4.633334</startTime>
-				<value>1.000000</value>
-				<inTangent>0.666667</inTangent>
-				<outTangent>0.666667</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-		</track>
-	</sequenceObject>
-	<sequenceObject>
-		<name>stg_25_details_3_outside_DS</name>
-		<type>model</type>
-		<resource>content/Hangars/h00_armory_yard/environment/Constructor/R226_Object_757A/normal/lod0/stg_25_details_3_outside_DS.model</resource>
-		<castsShadow>false</castsShadow>
-		<track>
-			<name>material property float</name>
-			<type>float</type>
-			<identifier>s_nd0</identifier>
-			<property>spawnProgeression</property>
-			<frame>
-				<startTime>3.133333</startTime>
-				<value>0.000000</value>
-				<inTangent>0.666667</inTangent>
-				<outTangent>0.666667</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-			<frame>
-				<startTime>4.633334</startTime>
-				<value>1.000000</value>
-				<inTangent>0.666667</inTangent>
-				<outTangent>0.666667</outTangent>
+				<inTangent>0.285714</inTangent>
+				<outTangent>0.285714</outTangent>
 				<tangentMode>0</tangentMode>
 			</frame>
 		</track>
@@ -166,18 +134,43 @@
 			<name>attach</name>
 			<type>attach</type>
 			<frame>
-				<startTime>1.000000</startTime>
-				<duration>3.600000</duration>
+				<startTime>0.000000</startTime>
+				<duration>7.233334</duration>
 				<value>Root|</value>
 			</frame>
 		</track>
 		<track>
-			<name>ay_ep_07_seq_stage_25</name>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.033333</startTime>
+				<value>0.000000 1.702807 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.600000</startTime>
+				<value>0.000000 1.702807 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>2.712013 15.648232 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.666667</startTime>
+				<value>0.180802 2.746029 0.000000</value>
+				<inTangent>2.712013 15.648232 -0.000000</inTangent>
+				<outTangent>2.712013 15.648232 -0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>ay_ep_08_seq_stage_25</name>
 			<type>sound</type>
 			<frame>
-				<startTime>1.000000</startTime>
-				<duration>3.581146</duration>
-				<sequenceSound>ay_ep_07_seq_stage_25</sequenceSound>
+				<startTime>0.000000</startTime>
+				<duration>7.677563</duration>
+				<sequenceSound>ay_ep_08_seq_stage_25</sequenceSound>
 				<type>play_till_end</type>
 				<fade>0.000000</fade>
 			</frame>

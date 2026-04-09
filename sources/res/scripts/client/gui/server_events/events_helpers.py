@@ -248,9 +248,10 @@ def questsSortFunc(q):
             return -1
         return event.getPriority()
 
+    priority = -getPriority(q)
     return (
      q.isCompleted(),
-     getPriority(q),
+     priority,
      getPriority(q) == -1,
      q.getID())
 
@@ -357,7 +358,7 @@ def isDailyQuest(eventID):
 
 def isDailySubsQuest--- This code section failed: ---
 
- L. 474         0  LOAD_FAST             0  'eventID'
+ L. 479         0  LOAD_FAST             0  'eventID'
                 3  POP_JUMP_IF_FALSE    31  'to 31'
                 6  LOAD_FAST             0  'eventID'
                 9  LOAD_ATTR             0  'startswith'
@@ -379,7 +380,7 @@ Parse error at or near `None' instruction at offset -1
 
 def isDailyPremiumQuest--- This code section failed: ---
 
- L. 481         0  LOAD_FAST             0  'eventID'
+ L. 486         0  LOAD_FAST             0  'eventID'
                 3  POP_JUMP_IF_FALSE    31  'to 31'
                 6  LOAD_FAST             0  'eventID'
                 9  LOAD_ATTR             0  'startswith'
@@ -647,6 +648,22 @@ def isArmoryYardQuest(eventID, armoryYardCtrl=None):
 @dependency.replace_none_kwargs(earlyAccessCtrl=IEarlyAccessController)
 def isActiveEarlyAccessQuest(eventID, earlyAccessCtrl=None):
     return earlyAccessCtrl.isQuestActive() and (earlyAccessCtrl.isProgressionQuest(eventID) or earlyAccessCtrl.isPostProgressionQuest(eventID))
+
+
+def getPreviousBattleQuest(quest):
+    eventsCache = dependency.instance(IEventsCache)
+    group = eventsCache.getGroups().get(quest.getGroupID())
+    if group is not None:
+        questID = quest.getID()
+        quests = eventsCache.getQuests()
+        groupContent = group.getGroupContent(quests)
+        sortedQuests = sorted(groupContent, key=operator.methodcaller('getPriority'), reverse=True)
+        for idx, quest_ in enumerate(sortedQuests):
+            if quest_.getID() == questID:
+                if idx != 0:
+                    return sortedQuests[(idx - 1)]
+
+    return
 
 
 @dependency.replace_none_kwargs(lobbyContext=ILobbyContext)

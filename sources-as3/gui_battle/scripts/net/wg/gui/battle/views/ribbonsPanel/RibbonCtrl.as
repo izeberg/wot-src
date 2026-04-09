@@ -108,12 +108,13 @@ package net.wg.gui.battle.views.ribbonsPanel
       
       public function RibbonCtrl(param1:RibbonSettings, param2:Function)
       {
+         var _loc3_:IClassFactory = null;
          super();
          this._ribbonSettings = param1;
          this._scheduler = App.utils.scheduler;
          this._colorMgr = App.colorSchemeMgr;
          this.ribbonType = this._ribbonSettings.getRibbonType();
-         var _loc3_:IClassFactory = App.utils.classFactory;
+         _loc3_ = App.utils.classFactory;
          var _loc4_:Class = _loc3_.getClass(Linkages.RIBBONS_ANIMATION_SET);
          this.iconsAnim = new _loc4_();
          this.textsAnim = new _loc4_();

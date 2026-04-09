@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/russian/R189_SU_100i_TR/normal/lod3/Hull</parent>
+	<tank>true</tank>
+	<extent>96.000000</extent>
+	<nodefullVisual>vehicles/russian/R189_SU_100i_TR/normal/lod2/Hull</nodefullVisual>
+	<visibilityBox>
+		<min>-1.373318 -0.545711 -3.323027</min>
+		<max>1.377823 1.442177 2.649011</max>
+	</visibilityBox>
+</root>

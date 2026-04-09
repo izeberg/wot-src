@@ -209,8 +209,8 @@ msgstr "Замена мапы недаступная"
 
 msgid "mapsBlacklist/smallSlotTooltip/disabled/body"
 msgstr ""
-"Слот для выключэння дадатковай мапы даступны толькі пры актыўным Танкавым "
-"прэміум акаўнце."
+"Слот для исключения дополнительной карты доступен только при активном "
+"Танковом премиум аккаунте."
 
 msgid "mapsBlacklist/smallSlotTooltip/disabled/header"
 msgstr "Слот недаступны"
@@ -285,10 +285,10 @@ msgid "piggyBank/reserveBankPremUnsearched/title"
 msgstr "Атрымлівайце да {maxAmount}кожныя {period} сут."
 
 msgid "piggyBank/timeLeft/days"
-msgstr "{day} д. {hour} ч."
+msgstr "{day} д. {hour} ч."
 
 msgid "piggyBank/timeLeft/hours"
-msgstr "{hour} ч. {min} мин."
+msgstr "{hour} ч. {min} мин."
 
 msgid "piggyBank/timeLeft/lessMin"
 msgstr "1 хв."
@@ -297,7 +297,7 @@ msgid "piggyBank/timeToOpenBankMsg/title"
 msgstr "Сховішча срэбра адчыніцца праз:"
 
 msgid "piggyBankCard/timeLeft/days"
-msgstr "%(day)s сут"
+msgstr "%(day)sсут."
 
 msgid "piggyBankCard/timeLeft/hours"
 msgstr "%(hour)sгадз."

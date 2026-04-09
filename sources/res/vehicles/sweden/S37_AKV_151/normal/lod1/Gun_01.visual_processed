@@ -25,15 +25,6 @@
 					<row3>0.000000 0.000000 0.000000</row3>
 				</transform>
 				<node>
-					<identifier>HP_gunAnim</identifier>
-					<transform>
-						<row0>1.000000 0.000000 0.000000</row0>
-						<row1>0.000000 1.000000 0.000000</row1>
-						<row2>0.000000 0.000000 1.000000</row2>
-						<row3>0.000000 0.000000 0.000000</row3>
-					</transform>
-				</node>
-				<node>
 					<identifier>G</identifier>
 					<transform>
 						<row0>1.000000 0.000000 0.000000</row0>
@@ -47,7 +38,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 1.000000</row2>
-							<row3>0.000000 0.000068 3.816785</row3>
+							<row3>0.000000 0.000068 3.979999</row3>
 						</transform>
 					</node>
 					<node>
@@ -61,6 +52,24 @@
 					</node>
 				</node>
 				<node>
+					<identifier>joint_01</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 0.995352 0.096303</row1>
+						<row2>0.000000 -0.096303 0.995352</row2>
+						<row3>0.000000 -0.288000 0.529108</row3>
+					</transform>
+					<node>
+						<identifier>joint_01_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 -0.000000</row0>
+							<row1>0.000000 0.995352 -0.096303</row1>
+							<row2>0.000000 -0.096303 -0.995352</row2>
+							<row3>0.000000 0.235707 -0.554384</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
 					<identifier>Gun_BlendBone</identifier>
 					<transform>
 						<row0>1.000000 0.000000 0.000000</row0>
@@ -70,12 +79,32 @@
 					</transform>
 				</node>
 			</node>
+			<node>
+				<identifier>static_joint_01</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.000000 -0.002987</row3>
+				</transform>
+				<node>
+					<identifier>static_joint_01_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.000000 0.000000 0.002987</row3>
+					</transform>
+				</node>
+			</node>
 		</node>
 	</node>
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
 		<node>G_BlendBone</node>
 		<node>Gun_BlendBone</node>
+		<node>joint_01_BlendBone</node>
+		<node>static_joint_01_BlendBone</node>
 		<geometry>
 			<vertices>gun_01_Shape.vertices</vertices>
 			<primitive>gun_01_Shape.indices</primitive>
@@ -106,6 +135,10 @@
 						</Float>
 					</property>
 					<property>
+						alphaTestEnable
+						<Bool>false</Bool>
+					</property>
+					<property>
 						g_maskBias
 						<Float>
 							0.18
@@ -118,7 +151,10 @@
 					</property>
 					<property>
 						g_detailUVTiling
-						<Vector4>7.013999 7.013999 0.000000 0.000000</Vector4>
+						<Vector4>
+							7.014 7.014 0.0 0.0
+							<!--BW_String-->
+						</Vector4>
 					</property>
 					<property>
 						g_detailPower
@@ -138,7 +174,7 @@
 					</property>
 					<property>
 						alphaReference
-						<Int>128</Int>
+						<Int>0</Int>
 					</property>
 					<property>
 						g_detailPowerAlbedo
@@ -148,13 +184,13 @@
 						</Float>
 					</property>
 				</material>
-				<groupOrigin>-0.000006 0.220173 -1.891962</groupOrigin>
+				<groupOrigin>-0.000006 0.222935 -1.891962</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<constraints/>
 	<boundingBox>
-		<min>-1.186282 -0.976391 -3.196077</min>
+		<min>-1.186282 -0.970867 -3.196077</min>
 		<max>1.186269 1.416737 6.980000</max>
 	</boundingBox>
 	<geometrySize>173070</geometrySize>

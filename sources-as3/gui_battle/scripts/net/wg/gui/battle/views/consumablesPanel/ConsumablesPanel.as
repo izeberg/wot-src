@@ -249,6 +249,7 @@ package net.wg.gui.battle.views.consumablesPanel
          var _loc6_:int = 0;
          this._shellCurrentIdx = -1;
          this._shellNextIdx = -1;
+         this._shellSlots = 0;
          this.collapsePopup();
          var _loc2_:int = Boolean(param1) ? int(param1.length) : int(0);
          if(_loc2_ == 0)
@@ -1034,6 +1035,21 @@ package net.wg.gui.battle.views.consumablesPanel
       public function get panelWidth() : Number
       {
          return this.x + this._basePanelWidth;
+      }
+      
+      protected function set basePanelWidth(param1:Number) : void
+      {
+         this._basePanelWidth = param1;
+      }
+      
+      protected function get itemsPadding() : int
+      {
+         return this._itemsPadding;
+      }
+      
+      protected function get renderers() : Vector.<IConsumablesButton>
+      {
+         return this._renderers;
       }
       
       private function onStageMouseDownHandler(param1:MouseEvent) : void

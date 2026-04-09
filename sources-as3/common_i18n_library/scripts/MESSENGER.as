@@ -1927,6 +1927,8 @@ package
       
       public static const SERVICECHANNELMESSAGES_VEHICLECOLLECTOR_UNLOCKLEVEL_TEXT:String = "#messenger:serviceChannelMessages/vehicleCollector/unlockLevel/text";
       
+      public static const SERVICECHANNELMESSAGES_EPICREWARD_ARMORY_YARD:String = "#messenger:serviceChannelMessages/epicReward/armory_yard";
+      
       public static const SERVICECHANNELMESSAGES_EPICREWARD_CRYSTAL:String = "#messenger:serviceChannelMessages/epicReward/crystal";
       
       public static const SERVICECHANNELMESSAGES_EPICREWARD_BROCHURE_GIFT:String = "#messenger:serviceChannelMessages/epicReward/brochure_gift";
@@ -2492,6 +2494,12 @@ package
       public static const SERVICECHANNELMESSAGES_LIMITEDUICONTENTUNLOCKED_VERSUSAI:String = "#messenger:serviceChannelMessages/limitedUIContentUnlocked/versusAI";
       
       public static const SERVICECHANNELMESSAGES_LIMITEDUICONTENTUNLOCKED_STRONGHOLD:String = "#messenger:serviceChannelMessages/limitedUIContentUnlocked/stronghold";
+      
+      public static const SERVICECHANNELMESSAGES_TRADINGCARAVANCOINADDED_TITLE:String = "#messenger:serviceChannelMessages/tradingCaravanCoinAdded/title";
+      
+      public static const SERVICECHANNELMESSAGES_TRADINGCARAVANCOINADDED_BODY:String = "#messenger:serviceChannelMessages/tradingCaravanCoinAdded/body";
+      
+      public static const SERVICECHANNELMESSAGES_PARAGONS_BODY:String = "#messenger:serviceChannelMessages/paragons/body";
       
       public static const DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_ENUM:Array = [DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_OFFLINE,DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_NOTREADY,DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_READY,DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_INBATTLE,DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_AFK];
        

@@ -64,7 +64,10 @@ package net.wg.gui.lobby.storage.categories
          super.draw();
          if(isInvalid(InvalidationType.SIZE))
          {
-            this.line.width = width;
+            if(this.line)
+            {
+               this.line.width = width;
+            }
             _loc1_ = this.filterTitle.x + this.filterTitle.width + FILTER_NAME_GAP;
             this.filterCounter.validateNow();
             this.filterTotalTF.x = _loc1_;

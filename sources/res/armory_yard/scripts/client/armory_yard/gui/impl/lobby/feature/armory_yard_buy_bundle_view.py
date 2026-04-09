@@ -140,7 +140,7 @@ class ArmoryYardBuyBundleView(ViewImpl):
                         self.destroyWindow(isScene=True)
                 else:
                     Waiting.hide('buyBundleArmoryYard')
-                    self.__armoryYardCtrl.onPayedError()
+                    self.__armoryYardCtrl.onBundleOutTime()
                 self.__isBuying = False
             return
 

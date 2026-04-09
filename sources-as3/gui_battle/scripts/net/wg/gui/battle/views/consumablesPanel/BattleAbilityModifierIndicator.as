@@ -25,6 +25,8 @@ package net.wg.gui.battle.views.consumablesPanel
       
       private static const INVALIDATE_MODIFIER_VALUE:uint = InvalidationType.SYSTEM_FLAGS_BORDER << 2;
       
+      private static const SMALL_PADDING_CORRECTION:int = 6;
+      
       private static const HIDE_TWEEN_Y_OFFSET:int = 10;
       
       private static const THIS_TWEEN_TIME:uint = 300;
@@ -151,30 +153,32 @@ package net.wg.gui.battle.views.consumablesPanel
       
       private function drawLayout() : void
       {
-         var _loc2_:int = 0;
-         var _loc3_:MovieClip = null;
+         var _loc4_:int = 0;
+         var _loc5_:MovieClip = null;
          var _loc1_:String = SLOT_FRAME_LABEL + this.shellSlots;
          this.slotsFrame.gotoAndStop(!!this.isSmall ? _loc1_ + SLOT_FRAME_SMALL_RESOLUTION_POSTFIX : _loc1_);
-         this.bg.x = this.shellPadding * this.shellSlots - this.bg.width >> 1;
-         this.slotsModifierType.x = this.shellPadding * this.shellSlots - this.slotsModifierType.width >> 1;
-         this.slotsModifierValue.x = this.shellPadding * this.shellSlots - this.slotsModifierValue.width >> 1;
+         var _loc2_:int = !!this.isSmall ? int(SMALL_PADDING_CORRECTION) : int(Values.ZERO);
+         var _loc3_:int = this.shellPadding * this.shellSlots + _loc2_;
+         this.bg.x = _loc3_ - this.bg.width >> 1;
+         this.slotsModifierType.x = _loc3_ - this.slotsModifierType.width >> 1;
+         this.slotsModifierValue.x = _loc3_ - this.slotsModifierValue.width >> 1;
          if(!this._slotsGlows)
          {
             this._slotsGlows = new Vector.<MovieClip>();
-            _loc2_ = 0;
-            while(_loc2_ < this.shellSlots)
+            _loc4_ = 0;
+            while(_loc4_ < this.shellSlots)
             {
-               _loc3_ = App.utils.classFactory.getComponent(Linkages.ABILITY_MODIFIER_SLOT_GLOW,MovieClip);
-               this.slotsGlowContainer.addChild(_loc3_);
-               this._slotsGlows.push(_loc3_);
-               _loc2_++;
+               _loc5_ = App.utils.classFactory.getComponent(Linkages.ABILITY_MODIFIER_SLOT_GLOW,MovieClip);
+               this.slotsGlowContainer.addChild(_loc5_);
+               this._slotsGlows.push(_loc5_);
+               _loc4_++;
             }
          }
-         _loc2_ = 0;
-         while(_loc2_ < this.shellSlots)
+         _loc4_ = 0;
+         while(_loc4_ < this.shellSlots)
          {
-            this._slotsGlows[_loc2_].x = _loc2_ * this.shellPadding;
-            _loc2_++;
+            this._slotsGlows[_loc4_].x = _loc4_ * this.shellPadding;
+            _loc4_++;
          }
          this.hitMc.width = this.slotsGlowContainer.width;
       }

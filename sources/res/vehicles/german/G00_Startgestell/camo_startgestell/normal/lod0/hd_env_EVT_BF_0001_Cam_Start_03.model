@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.908135 0.034794 -1.060094</min>
+		<max>0.951217 1.455531 1.235467</max>
+	</visibilityBox>
+	<nodelessVisual>vehicles/german/G00_Startgestell/camo_startgestell/normal/lod0/hd_env_EVT_BF_0001_Cam_Start_03</nodelessVisual>
+</root>

@@ -777,10 +777,6 @@
 						</Vector4>
 					</property>
 					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
 						g_dirtColor
 						<Vector4>
 							0.47 0.43 0.38 0.01
@@ -790,10 +786,6 @@
 					<property>
 						dirtMap
 						<Texture>content/Buildings/00_Tiles/Dirt_Plaster_01_DM.dds</Texture>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
 					</property>
 					<property>
 						g_enableTerrainBlending

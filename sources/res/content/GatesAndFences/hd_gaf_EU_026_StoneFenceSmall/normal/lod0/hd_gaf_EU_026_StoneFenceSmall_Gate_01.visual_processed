@@ -55,7 +55,7 @@
 				0
 				<material>
 					<identifier>d_stone0</identifier>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>87</materialKind>
 					<fx>shaders/std_effects/PBS_ext.fx</fx>
 					<property>
@@ -77,7 +77,7 @@
 				1
 				<material>
 					<identifier>n_stone0</identifier>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>128</collisionFlags>
 					<materialKind>73</materialKind>
 					<fx>shaders/std_effects/PBS_ext.fx</fx>
 					<property>

@@ -2,7 +2,8 @@ import time
 from typing import Union, TYPE_CHECKING
 import dossiers2
 from dynamic_currencies import g_dynamicCurrenciesData
-import items, calendar
+import items, calendar, constants
+from entitlements import g_entitlementsData
 from math_common import isAlmostEqual
 from account_shared import validateCustomizationItem
 from battle_pass_common import NON_VEH_CD
@@ -17,6 +18,7 @@ from items.components.crew_skins_constants import NO_CREW_SKIN_ID
 from constants import DOSSIER_TYPE, IS_DEVELOPMENT, SEASON_TYPE_BY_NAME, EVENT_TYPE, INVOICE_LIMITS, ENTITLEMENT_OPS, DailyQuestsLevels, MAX_LOG_EXT_INFO_LEN, MIN_VEHICLE_LEVEL, MAX_VEHICLE_LEVEL
 from soft_exception import SoftException
 from customization_quests_common import validateCustomizationQuestToken
+from collections import OrderedDict
 from items import _xml
 if TYPE_CHECKING:
     from ResMgr import DataSection
@@ -726,6 +728,8 @@ def __readBonus_enhancement(bonus, _name, section, eventType, checkLimit):
 
 def __readBonus_entitlement(bonus, _name, section, eventType, checkLimit):
     entID, entData = _readEntitlementSection(section, checkLimit)
+    if constants.IS_DYNUPDATER:
+        g_entitlementsData.addEntitlementToValidationQueue(entID)
     bonus.setdefault('entitlements', {})[entID] = entData
 
 
@@ -737,6 +741,8 @@ def __readBonus_entitlementList(bonus, _name, section, eventType, checkLimit):
         entID, entData = _readEntitlementSection(itemSection, checkLimit, readOp=True)
         if entData['count'] <= 0:
             raise SoftException('Not positive count for entitlement with operation', entID, entData)
+        if constants.IS_DYNUPDATER:
+            g_entitlementsData.addEntitlementToValidationQueue(entID)
         entData['id'] = entID
         entItems.append(entData)
 
@@ -1021,11 +1027,11 @@ def __readBonus_oneof(config, bonusReaders, bonus, section, eventType):
     return resultLimitIDs
 
 
-def __readBonusRotation(config, bonusReaders, section, eventType, checkLimit):
+def __readBonusRotation(config, bonusReaders, section, eventType, checkLimit, orderedBonuses=False):
     bonus = {}
     if config.get('probabilityStageCount'):
         raise SoftException('probabilityStageCount is not allowed to be used with rotation')
-    limitIDs, subBonus = __readBonusSubSection(config, bonusReaders, section['rotation'], eventType, checkLimit)
+    limitIDs, subBonus = __readBonusSubSection(config, bonusReaders, section['rotation'], eventType, checkLimit, orderedBonuses)
     if not set(subBonus.keys()) == {'groups'}:
         raise _xml.raiseWrongXml(None, 'rotation', 'The rotation should consist only <group> nodes.')
     rotationLevelCount = len(subBonus['groups'])
@@ -1218,21 +1224,21 @@ def __readBonusConfig(section):
     return config
 
 
-def readBonusSection(bonusRange, section, eventType=None, checkLimit=True):
+def readBonusSection(bonusRange, section, eventType=None, checkLimit=True, orderedBonuses=False):
     if section is None:
         return {}
     else:
         bonusReaders = getBonusReaders(bonusRange)
         config = __readBonusConfig(section['config']) if section.has_key('config') else {}
         readerBonus = __readBonusRotation if section.has_key('rotation') else __readBonusSubSection
-        limitIDs, bonus = readerBonus(config, bonusReaders, section, eventType, checkLimit)
+        limitIDs, bonus = readerBonus(config, bonusReaders, section, eventType, checkLimit, orderedBonuses)
         if config:
             bonus['config'] = config
         return bonus
 
 
-def __readBonusSubSection(config, bonusReaders, section, eventType=None, checkLimit=True):
-    bonus = {}
+def __readBonusSubSection(config, bonusReaders, section, eventType=None, checkLimit=True, orderedBonuses=False):
+    bonus = {} if not orderedBonuses else OrderedDict()
     resultLimitIDs = set()
     for name, subSection in section.items():
         if name in __PROBABILITY_READERS:

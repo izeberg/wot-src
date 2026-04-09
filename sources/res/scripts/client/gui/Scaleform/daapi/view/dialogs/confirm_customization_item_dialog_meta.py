@@ -1,7 +1,7 @@
 import math, SoundGroups
 from CurrentVehicle import g_currentVehicle
 from gui.Scaleform.daapi.view.dialogs import IDialogMeta
-from gui.Scaleform.daapi.view.lobby.customization.sound_constants import SOUNDS
+from gui.impl.lobby.customization.sound_constants import SOUNDS
 from gui.Scaleform.framework import ScopeTemplates
 from gui.shared import events
 from gui.shared.tooltips import ACTION_TOOLTIPS_TYPE
@@ -49,7 +49,7 @@ class ConfirmC11nBuyMeta(IDialogMeta):
             if result.userMsg:
                 SystemMessages.pushI18nMessage(result.userMsg, type=result.sysMsgType)
             if result.success:
-                SoundGroups.g_instance.playSound2D(SOUNDS.PURCHASE)
+                SoundGroups.g_instance.playSound2D(SOUNDS.COINS)
         finally:
             self.__soundEventChecker.unlockPlayingSounds(restore=False)
 

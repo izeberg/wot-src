@@ -39,7 +39,7 @@ package net.wg.gui.components.questProgress.data
       
       private var _secondBodyProgressData:Vector.<IQuestProgressItemData> = null;
       
-      private var _isHeaderHasProgress:Boolean = true;
+      private var _isHeaderHasProgress:Boolean = false;
       
       private var _isSecondHeaderHasProgress:Boolean = true;
       
@@ -185,7 +185,7 @@ package net.wg.gui.components.questProgress.data
          else
          {
             this._headerConditions.push(param1);
-            this._isHeaderHasProgress = this._isHeaderHasProgress && param1.progressType != QUEST_PROGRESS_BASE.HEADER_PROGRESS_TYPE_NONE;
+            this._isHeaderHasProgress = this._isHeaderHasProgress || param1.progressType != QUEST_PROGRESS_BASE.HEADER_PROGRESS_TYPE_NONE;
          }
          this._isMainOnly = this._isMainOnly && param1.orderType == QUEST_PROGRESS_BASE.MAIN_ORDER_TYPE;
       }

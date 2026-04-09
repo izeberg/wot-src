@@ -96,10 +96,6 @@
 						normalMap
 						<Texture>content/Environment/hd_env_UNI_414_Pole/hd_env_UNI_414_Pole_ANM.dds</Texture>
 					</property>
-					<property>
-						ditherTestEnable
-						<Bool>true</Bool>
-					</property>
 				</material>
 				<groupOrigin>0.000520 3.945945 0.000000</groupOrigin>
 			</primitiveGroup>

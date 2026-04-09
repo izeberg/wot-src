@@ -1850,7 +1850,7 @@
 						0.2
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>10</reloadTime>
+					<reloadTime>15</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
 							0.12
@@ -1875,7 +1875,7 @@
 					</aimingTime>
 					<clip>
 						<count>28</count>
-						<rate>260</rate>
+						<rate>290</rate>
 					</clip>
 					<autoShoot>
 						<shotDispersionPerSec>
@@ -1884,9 +1884,13 @@
 						</shotDispersionPerSec>
 						<maxShotDispersion>8</maxShotDispersion>
 						<rate>
-							4.33
+							4.83
 							<!--BW_String-->
 						</rate>
+						<rebuildShotDispersionDelay>
+							1.0
+							<!--BW_String-->
+						</rebuildShotDispersionDelay>
 					</autoShoot>
 					<customizationSlots>
 						<slot>
@@ -1976,7 +1980,7 @@
 						<collisionModelServer>vehicles/intunion/Un15_SBM_44/collision/Gun_04.model</collisionModelServer>
 						<collisionModelClient>vehicles/intunion/Un15_SBM_44/collision_client/Gun_04.model</collisionModelClient>
 					</hitTester>
-					<effects>shot_autoshoot_small</effects>
+					<effects>shot_autoshoot_small_shell_inside</effects>
 					<edgeByVisualModel>false</edgeByVisualModel>
 					<camouflage>
 						<density>156.973846 157.657196</density>

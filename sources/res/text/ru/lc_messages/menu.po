@@ -79,7 +79,7 @@ msgid "Time/timeValueWithSecs/hours"
 msgstr "%(hour)s ч. %(min)s мин."
 
 msgid "Time/timeValueWithSecs/lessMin"
-msgstr "%(sec)s с"
+msgstr "%(sec)s с"
 
 msgid "Time/timeValueWithSecs/min"
 msgstr "%(min)s мин. %(sec)s с"
@@ -381,7 +381,7 @@ msgid "awardWindow/takeNextButton"
 msgstr "Просмотреть условия задачи"
 
 msgid "awardWindow/telecomAward/button/label/default"
-msgstr "Показать в Ангаре"
+msgstr "Показать в Ангаре"
 
 msgid "awardWindow/telecomAward/description/full/Twitchprime"
 msgstr ""
@@ -918,6 +918,9 @@ msgstr "Купить"
 msgid "boostersWindow/boostersTableRenderer/goToQuestBtnLabel"
 msgstr "Перейти к задаче"
 
+msgid "boostersWindow/boostersTableRenderer/header"
+msgstr "%(boosterName)s %(quality)s"
+
 msgid "boostersWindow/boostersTableRenderer/questForOpen"
 msgstr "Для доступа выполните «%(questName)s»"
 
@@ -1112,6 +1115,9 @@ msgstr "Создать взвод для Линии фронта"
 
 msgid "contextMenu/createEventSquad"
 msgstr "Создать взвод события"
+
+msgid "contextMenu/createHistoricalBattleSquad"
+msgstr "Взвод события «Время героев»"
 
 msgid "contextMenu/createMapboxSquad"
 msgstr "Разведка боем: создать взвод"
@@ -1507,7 +1513,7 @@ msgstr "от  %(price)s"
 
 msgid "crystals/info/tab/spend/card/specialEquipment/description"
 msgstr ""
-"Улучшает характеристики машины. Эффект больше, чем у штатного оборудования."
+"Улучшает характеристики машины. Эффект больше, чем у штатного оборудования."
 
 msgid "crystals/info/tab/spend/card/specialEquipment/title"
 msgstr ""
@@ -1653,7 +1659,7 @@ msgid "cst_item_ctx_menu/showBlueprint"
 msgstr "К чертежу"
 
 msgid "cst_item_ctx_menu/showInHangar"
-msgstr "Показать в Ангаре"
+msgstr "Показать в Ангаре"
 
 msgid "cst_item_ctx_menu/showVehicleStatistics"
 msgstr "К статистике"
@@ -1680,7 +1686,7 @@ msgid "currentVehicleStatus/ammoNotFullEvents"
 msgstr "Неполный боекомплект"
 
 msgid "currentVehicleStatus/battle"
-msgstr "В бою"
+msgstr "В бою"
 
 msgid "currentVehicleStatus/clanLocked"
 msgstr "?empty?"
@@ -1725,7 +1731,7 @@ msgid "currentVehicleStatus/igrRentalIsOver"
 msgstr "Акция завершена"
 
 msgid "currentVehicleStatus/inPrebattle"
-msgstr "В формировании"
+msgstr "В формировании"
 
 msgid "currentVehicleStatus/inPremiumIgrOnly"
 msgstr "Доступно только в %(icon)s. До завершения акции %(time)s"
@@ -2172,7 +2178,7 @@ msgid "exchangeXP/change"
 msgstr "Перевести в свободный опыт ({%d} за {%d}):"
 
 msgid "exchangeXP/pay"
-msgstr "К оплате:"
+msgstr "К оплате:"
 
 msgid "exchangeXP/submit"
 msgstr "Перевести"
@@ -2692,6 +2698,9 @@ msgstr "Ремонт"
 msgid "hangar/ammunitionPanel/technicalMaitenance/title"
 msgstr "Обслуживание"
 
+msgid "hangar/ammunitionPanel/trophyVehicle"
+msgstr "(трофей)"
+
 msgid "hangar/ammunitionPanel/tuningBtn"
 msgstr "Внешний вид"
 
@@ -2986,6 +2995,9 @@ msgstr "Лёгкий танк"
 msgid "header/wotPlusExclusiveVehicleType/mediumTank"
 msgstr "Средний танк"
 
+msgid "headerButton/museum"
+msgstr "Музей"
+
 msgid "headerButtons/account/accountRefill"
 msgstr "Купить золото"
 
@@ -3174,7 +3186,7 @@ msgid "headerButtons/battle/types/mapbox/availability/lessThanHour"
 msgstr "менее 1 ч."
 
 msgid "headerButtons/battle/types/mapbox/extra/endsIn"
-msgstr "До конца события: %(timeLeft)s"
+msgstr "До конца события: %(timeLeft)s"
 
 msgid "headerButtons/battle/types/mapbox/extra/finished"
 msgstr "Событие завершено"
@@ -3234,7 +3246,7 @@ msgstr ""
 "• Допустимая техника: только VII уровень."
 
 msgid "headerButtons/battle/types/rankedLeave/descr"
-msgstr "Выйти из боя"
+msgstr "Выйти из боя"
 
 msgid "headerButtons/battle/types/rankedSquad"
 msgstr "Создать взвод для Рангового боя"
@@ -3282,7 +3294,7 @@ msgid "headerButtons/battle/types/standart/descr"
 msgstr "Бой с автоматическим подбором союзников и противника."
 
 msgid "headerButtons/battle/types/standartLeave/descr"
-msgstr "Выйти из боя"
+msgstr "Выйти из боя"
 
 msgid "headerButtons/battle/types/strongholds"
 msgstr "Укрепрайон: сражения"
@@ -4509,7 +4521,7 @@ msgid "login/updateURLAvaialbleAt"
 msgstr "Требуется обновление клиентского приложения (%s)."
 
 msgid "login/version"
-msgstr "Мир танков"
+msgstr "«Мир танков»"
 
 msgid "mapBlackList/timeLeftShort/days"
 msgstr "%(day)s д."
@@ -5157,7 +5169,7 @@ msgid "prebattle/description"
 msgstr "prebattle/description"
 
 msgid "prebattle/exitButton"
-msgstr "Выйти из боя"
+msgstr "Выйти из боя"
 
 msgid "prebattle/groupsLabel"
 msgstr "Команд в очереди:"
@@ -5672,7 +5684,7 @@ msgid "research/labels/button/restore"
 msgstr "Восстановить"
 
 msgid "research/labels/button/showInHangar"
-msgstr "Показать в Ангаре"
+msgstr "Показать в Ангаре"
 
 msgid "research/labels/button/toCollection"
 msgstr "К коллекции"
@@ -5988,7 +6000,7 @@ msgid "shop/errors/centerIsDown"
 msgstr "Временно недоступен"
 
 msgid "shop/errors/inHangar"
-msgstr "В Ангаре"
+msgstr "В Ангаре"
 
 msgid "shop/errors/lockedNation"
 msgstr "Недоступно"
@@ -6311,7 +6323,7 @@ msgid "store/vehicleStates/ammoNotFullEvents"
 msgstr "?empty?"
 
 msgid "store/vehicleStates/battle"
-msgstr "В бою"
+msgstr "В бою"
 
 msgid "store/vehicleStates/buySlot"
 msgstr "Купить слот"
@@ -6365,7 +6377,7 @@ msgid "store/vehicleStates/igrRentalIsOver"
 msgstr "Акция завершена"
 
 msgid "store/vehicleStates/inPrebattle"
-msgstr "В формировании"
+msgstr "В формировании"
 
 msgid "store/vehicleStates/inPremiumIgrOnly"
 msgstr "?empty?"
@@ -6436,7 +6448,7 @@ msgid "tankCarousel/vehicleStates/ammoNotFullEvents"
 msgstr "Неполный боекомплект"
 
 msgid "tankCarousel/vehicleStates/battle"
-msgstr "В бою"
+msgstr "В бою"
 
 msgid "tankCarousel/vehicleStates/buySlot"
 msgstr "Купить слот"
@@ -6490,7 +6502,7 @@ msgid "tankCarousel/vehicleStates/igrRentalIsOver"
 msgstr "Акция завершена"
 
 msgid "tankCarousel/vehicleStates/inPrebattle"
-msgstr "В формировании"
+msgstr "В формировании"
 
 msgid "tankCarousel/vehicleStates/inPremiumIgrOnly"
 msgstr "Доступно только в %(icon)s"
@@ -6840,6 +6852,9 @@ msgstr "Пробивает:"
 
 msgid "tank_params/shotDispersionAngle"
 msgstr "Разброс на 100 м"
+
+msgid "tank_params/shotDispersionAngle/withAutoShoot"
+msgstr "Разброс (обобщённый) на 100 м"
 
 msgid "tank_params/shotSpeed"
 msgstr "Скорость полёта"
@@ -7659,7 +7674,7 @@ msgid "vehicleRestore/timeLeftShort/hours"
 msgstr "%(hour)sч. %(min)sмин."
 
 msgid "vehicleRestore/timeLeftShort/lessMin"
-msgstr "01мин."
+msgstr "01 мин."
 
 msgid "vehicleRestore/timeLeftShort/min"
 msgstr "%(min)sмин."
@@ -7680,13 +7695,13 @@ msgid "vehiclesCarousel/contextMenu/vehicleUncheck"
 msgstr "Снять отметку «основной»"
 
 msgid "viewHeader/aboutBtn/label"
-msgstr "О СОБЫТИИ"
+msgstr "О СОБЫТИИ"
 
 msgid "viewHeader/backBtn/descrLabel/battleMatters"
 msgstr "К ТАНКОВОЙ АКАДЕМИИ"
 
 msgid "viewHeader/backBtn/descrLabel/hangar"
-msgstr "В АНГАР"
+msgstr "В АНГАР"
 
 msgid "viewHeader/backBtn/descrLabel/preview"
 msgstr "К ПРЕДПРОСМОТРУ"

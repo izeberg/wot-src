@@ -98,8 +98,9 @@ class ArmoryDynamicQuest(PersonalQuest):
             return
 
     def getGroupID(self):
-        if self.getTokenQuestID():
-            return self.getTokenQuest().getGroupID()
+        tokenQuest = self.getTokenQuest()
+        if tokenQuest:
+            return tokenQuest.getGroupID()
         return super(ArmoryDynamicQuest, self).getGroupID()
 
 

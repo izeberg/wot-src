@@ -89,6 +89,7 @@ class BuyVehicleView(ViewImpl, EventSystemEntity, IPrbListener):
     __RENT_UNLIM_IDX = -1
     __CREW_NOT_SELECTED_IDX = -1
     __TRADE_OFF_NOT_SELECTED = -1
+    _BG_DYN_ACC = R.images.gui.maps.icons.store.shop_2_background_arsenal
 
     def __init__(self, **kwargs):
         settings = ViewSettings(R.views.lobby.shop.buy_vehicle_view.BuyVehicleView())
@@ -106,6 +107,7 @@ class BuyVehicleView(ViewImpl, EventSystemEntity, IPrbListener):
             self.__congratsViewSettings = ctx.get('congratulationsViewSettings')
             self.__returnAlias = ctx.get('returnAlias')
             self.__returnCallback = ctx.get('returnCallback')
+            self.__customVehiclePrice = ctx.get('customVehiclePrice')
         else:
             self.__nationID = None
             self.__inNationID = None
@@ -115,6 +117,7 @@ class BuyVehicleView(ViewImpl, EventSystemEntity, IPrbListener):
             self.__congratsViewSettings = {}
             self.__returnAlias = None
             self.__returnCallback = None
+            self.__customVehiclePrice = None
         self.__selectedCardIdx = 0 if not self.__bootcamp.isInBootcamp() else _ACADEMY_SLOT
         self.__isWithoutCommander = False
         self.__vehicle = self.__itemsCache.items.getItem(GUI_ITEM_TYPE.VEHICLE, self.__nationID, self.__inNationID)
@@ -175,7 +178,7 @@ class BuyVehicleView(ViewImpl, EventSystemEntity, IPrbListener):
         self.__updateFreePremiumCrew()
         with self.viewModel.transaction() as (vm):
             vm.setIsRestore(isRestore)
-            vm.setBgSource(R.images.gui.maps.icons.store.shop_2_background_arsenal())
+            vm.setBgSource(self._BG_DYN_ACC())
             vm.setTankType(('{}_elite').format(vehType) if isElite else vehType)
             vehicleTooltip = i18n.makeString(getTypeUserName(self.__vehicle.type, isElite))
             noCrewLabelPath = R.strings.store.buyVehicleWindow.checkBox
@@ -259,6 +262,11 @@ class BuyVehicleView(ViewImpl, EventSystemEntity, IPrbListener):
           self.__itemsCache.onSyncCompleted, self.__onItemCacheSyncCompleted),
          (
           g_playerEvents.onClientUpdated, self.__onClientUpdated))
+
+    def getCrewType(self):
+        if self.__isWithoutCommander:
+            return self.__CREW_NOT_SELECTED_IDX
+        return self.__selectedCardIdx
 
     def __addListeners(self):
         self.addListener(ShopEvent.CONFIRM_TRADE_IN, self.__onTradeInConfirmed, EVENT_BUS_SCOPE.LOBBY)
@@ -496,22 +504,19 @@ class BuyVehicleView(ViewImpl, EventSystemEntity, IPrbListener):
         try:
             self.__soundEventChecker.lockPlayingSounds()
             self.__tradeInProgress = True
-            yield self.__requestForMoneyObtainImpl()
+            yield self._requestForMoneyObtainImpl()
         finally:
             self.__soundEventChecker.unlockPlayingSounds()
             self.__tradeInProgress = False
 
     @adisp.adisp_async
     @adisp.adisp_process
-    def __requestForMoneyObtainImpl(self, callback):
+    def _requestForMoneyObtainImpl(self, callback):
         equipmentBlock = self.viewModel.equipmentBlock
         isTradeIn = self.__isTradeIn() and self.__tradeInVehicleToSell is not None and not self.__isRentVisible
         isWithSlot = equipmentBlock.slot.getIsSelected()
         isWithAmmo = equipmentBlock.ammo.getIsSelected()
-        if self.__isWithoutCommander:
-            crewType = self.__CREW_NOT_SELECTED_IDX
-        else:
-            crewType = self.__selectedCardIdx
+        crewType = self.getCrewType()
         result = None
         self.__purchaseInProgress = False
         if isTradeIn:

@@ -1404,12 +1404,12 @@ class _GuiLootBoxesConfig(object):
 class ArmoryYardConfig(namedtuple('ArmoryYardConfig', (
  'isEnabled', 'isPaused', 'seasons', 'animations', 'cycleTimes', 'tokenBase', 'receivedRewardTokenPostfix',
  'stageTokenPostfix', 'currencyTokenPostfix', 'tokenCost', 'rewards', 'introVideoLink', 'infoPageLink',
- 'activeHoursCountdown', 'announcementCountdown', 'starterPacks', 'purchaseStage', 'shop',
+ 'announcementCountdown', 'starterPacks', 'purchaseStage', 'shop',
  'rerollSubsection', 'seasonsConfig', 'postProgression'))):
     __slots__ = ()
 
     def __new__(cls, **kwargs):
-        defaults = dict(isEnabled=False, isPaused=False, seasons={}, animations={}, cycleTimes={}, tokenBase='', receivedRewardTokenPostfix='', stageTokenPostfix='', currencyTokenPostfix='', tokenCost={}, rewards={}, introVideoLink='', infoPageLink='', activeHoursCountdown=0, announcementCountdown=0, starterPacks={}, purchaseStage={}, shop={}, rerollSubsection={}, seasonsConfig={}, postProgression={})
+        defaults = dict(isEnabled=False, isPaused=False, seasons={}, animations={}, cycleTimes={}, tokenBase='', receivedRewardTokenPostfix='', stageTokenPostfix='', currencyTokenPostfix='', tokenCost={}, rewards={}, introVideoLink='', infoPageLink='', announcementCountdown=0, starterPacks={}, purchaseStage={}, shop={}, rerollSubsection={}, seasonsConfig={}, postProgression={})
         defaults.update(kwargs)
         return super(ArmoryYardConfig, cls).__new__(cls, **defaults)
 
@@ -2863,6 +2863,9 @@ class ServerSettings(object):
     def isCustomizationEnabled(self):
         return self.__getGlobalSetting('isCustomizationEnabled', True)
 
+    def isOptionalDeviceRestoreEnabled(self):
+        return self.__getGlobalSetting('isOptionalDeviceRestoreEnabled', True)
+
     def getHeroVehicles(self):
         return self.__getGlobalSetting('hero_vehicles', {})
 
@@ -2961,6 +2964,9 @@ class ServerSettings(object):
 
     def getLootBoxStatisticsConfig(self):
         return self.__getGlobalSetting(Configs.LOOTBOX_STATISTICS_CONFIG.value, {})
+
+    def getMuseumOfGloryConfig(self):
+        return self.__getGlobalSetting('museum_of_glory_config', {})
 
     def __getGlobalSetting(self, settingsName, default=None):
         return self.__serverSettings.get(settingsName, default)

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/russian/R242_BM_13_Katyusha/normal/lod4/Hull</parent>
+	<tank>true</tank>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.115878 -0.274022 -2.805163</min>
+		<max>1.108964 1.552500 3.527894</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/russian/R242_BM_13_Katyusha/normal/lod3/Hull</nodefullVisual>
+</root>

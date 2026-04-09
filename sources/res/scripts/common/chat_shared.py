@@ -660,6 +660,15 @@ CHAT_COMMANDS = Enumeration('chatCommands', [
   {'battleCmd': 1}),
  (
   BATTLE_CHAT_COMMAND_NAMES.FOCUS_SUPPLY,
+  {'battleCmd': 1}),
+ (
+  BATTLE_CHAT_COMMAND_NAMES.OBJECTIVES_POINT,
+  {'battleCmd': 1}),
+ (
+  BATTLE_CHAT_COMMAND_NAMES.HB_ARTILLERY_ON_YOURSELF,
+  {'battleCmd': 1}),
+ (
+  BATTLE_CHAT_COMMAND_NAMES.HB_LAST_STAND,
   {'battleCmd': 1})], instance=AttributeEnumItem)
 CHAT_MEMBER_STATUSES = Enumeration('chatMemberStatuses', [
  'available',
@@ -1610,7 +1619,8 @@ SYS_MESSAGE_TYPE = Enumeration('systemMessageType', [
  'playStreakRewards',
  'playStreakSysMessage',
  'playStreakSysWithRewardsMessage',
- 'armoryYardRevertRerollMessage'])
+ 'armoryYardRevertRerollMessage',
+ 'tradingCaravanMessage'])
 SYS_MESSAGE_IMPORTANCE = Enumeration('systemMessageImportance', [
  'normal',
  'high'])

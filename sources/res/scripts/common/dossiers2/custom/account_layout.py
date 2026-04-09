@@ -375,7 +375,7 @@ _SINGLE_ACHIEVEMENTS_VALUES = [
  'NY26_CelebTaskCompleted', 'clan_season_25_first', 'clan_season_25_last',
  'BattlePassCommonPr_18_5_Marathon', 'cosm2026_medal_1', 'cosm2026_medal_2',
  'BattlePassCommonPr_19', 'comp7_5_3', 'comp7_5_3_champion', 'comp7_5_3_legend',
- 'Paragons_S2']
+ 'Paragons_S2', 'hb26MedalTanker', 'hb26MedalSPG']
 _singleAchievementsPopUps = [
  'titleSniper', 'invincible', 'diehard', 'handOfDeath',
  'armorPiercer', 'battleCitizen', 'WFC2014', 'tacticalBreakthrough', 'aimer',
@@ -449,7 +449,7 @@ _singleAchievementsPopUps = [
  'NY26_CelebTaskCompleted', 'clan_season_25_first', 'clan_season_25_last',
  'BattlePassCommonPr_18_5_Marathon', 'cosm2026_medal_1', 'cosm2026_medal_2',
  'BattlePassCommonPr_19', 'comp7_5_3', 'comp7_5_3_champion', 'comp7_5_3_legend',
- 'Paragons_S2']
+ 'Paragons_S2', 'hb26MedalTanker', 'hb26MedalSPG']
 _singleAchievementsBlockBuilder = BinarySetDossierBlockBuilder('singleAchievements', _SINGLE_ACHIEVEMENTS_VALUES, SINGLE_ACHIEVEMENTS_DEPENDENCIES, _singleAchievementsPopUps)
 FORT_ACHIEVEMENTS_BLOCK_LAYOUT = [
  'conqueror', 'fireAndSword', 'crusher', 'counterblow', 'kampfer', 'soldierOfFortune']

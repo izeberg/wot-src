@@ -32,6 +32,9 @@ def parseComplexToken(tokenID):
     match = re.match(COMPLEX_TOKEN_TEMPLATE, tokenID)
     if match:
         return TokenComplex(True, match.group('styleID'), match.group('webID'))
+    from historical_battles_common.hb_constants import FRONT_COUPON_TOKEN_PREFIX
+    if FRONT_COUPON_TOKEN_PREFIX in tokenID:
+        return TokenComplex(True, tokenID, '')
     return TokenComplex(False, '', '')
 
 
@@ -363,10 +366,7 @@ def packMissionBonusTypeElements(bonusTypes, width=32, height=32, vSpace=-11):
     elements = []
     for bonusType in uniqueTypes:
         kwargs = collectModeNameKwargsByBonusType(bonusType) or {}
-        if ARENA_BONUS_TYPE.FUN_RANDOM == bonusType and kwargs.get('modeName'):
-            label = kwargs.get('modeName')
-        else:
-            label = i18n.makeString(('#menu:bonusType/%d' % bonusType), **kwargs)
+        label = i18n.makeString(('#menu:bonusType/%d' % bonusType), **kwargs)
         icon = gui_icons.makeImageTag(collectPrebattleConditionIcon(bonusType) or RES_ICONS.getPrebattleConditionIcon(bonusType), width=width, height=height, vSpace=vSpace)
         elements.append(_IconData(icon, label))
 

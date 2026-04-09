@@ -95,8 +95,8 @@
 			</repairCost>
 		</ammoBayHealth>
 		<armor>
-			<armor_1>100</armor_1>
-			<armor_2>190</armor_2>
+			<armor_1>75</armor_1>
+			<armor_2>100</armor_2>
 			<armor_3>65</armor_3>
 			<armor_4>40</armor_4>
 			<armor_5>35</armor_5>
@@ -2999,8 +2999,8 @@
 				</repairCost>
 			</surveyingDeviceHealth>
 			<armor>
-				<armor_1>200</armor_1>
-				<armor_2>130</armor_2>
+				<armor_1>100</armor_1>
+				<armor_2>100</armor_2>
 				<armor_3>35</armor_3>
 				<armor_4>0</armor_4>
 				<armor_5>40</armor_5>
@@ -3022,11 +3022,11 @@
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						11.5
+						10.5
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>
-						1.7
+						2.0
 						<!--BW_String-->
 					</aimingTime>
 					<shotDispersionFactors>
@@ -3053,10 +3053,10 @@
 						<shootImpulse>200</shootImpulse>
 						<reloadLockTime>1</reloadLockTime>
 						<reloadTimes>
-							11.5 11.5
+							10.5 10.5
 							<!--BW_String-->
 						</reloadTimes>
-						<rateTime>6</rateTime>
+						<rateTime>4</rateTime>
 						<chargeThreshold>
 							0.5
 							<!--BW_String-->

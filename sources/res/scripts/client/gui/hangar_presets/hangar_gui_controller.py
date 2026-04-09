@@ -42,6 +42,9 @@ class HangarGuiController(IHangarGuiController, IPrbListener):
         else:
             return
 
+    def getPresetGetter(self):
+        return self.__getCurrentPresetGetter()
+
     def getAmmoInjectViewAlias(self):
         presetGetter = self.__getCurrentPresetGetter()
         if presetGetter is not None:

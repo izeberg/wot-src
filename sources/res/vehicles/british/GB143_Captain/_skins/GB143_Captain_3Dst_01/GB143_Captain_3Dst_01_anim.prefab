@@ -504,6 +504,24 @@
 			</component>
 		</ComponentPool>
 		<ComponentPool>
+			<type>EdgeDrawerComponent</type>
+			<version>1</version>
+			<component>
+				<objectIndex>1</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>triggerSource</name>
+						<link>00000000-0000-0000-0000-000000000001</link>
+					</property>
+					<property>
+						<name>isAnimated</name>
+						<value>0</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
 			<type>DynamicModel</type>
 			<version>1</version>
 			<component>

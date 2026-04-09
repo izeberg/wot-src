@@ -33,6 +33,10 @@ def getBuyGoldUrl():
     return _getUrl('buyGoldUrl')
 
 
+def getBuyFeaturedUrl():
+    return _getUrl('buyFeatured')
+
+
 def getBuyPremiumUrl():
     return _getUrl('buyPremiumUrl')
 
@@ -161,3 +165,7 @@ def getCosmic2024ShopUrl():
 
 def getComp7ProductsUrl():
     return _getUrl('comp7Products')
+
+
+def getHB24CategoryUrl():
+    return _getUrl(urlName='HB24Category')

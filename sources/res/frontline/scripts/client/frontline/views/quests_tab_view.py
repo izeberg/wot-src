@@ -33,6 +33,10 @@ class EpicBattleQuestsTabView(EpicBattleQuestsView):
          (
           self.__battleController.onProgressionModelChanged, self.__onProgressionModelChanged),
          (
+          self.__battleController.onCurrentSectorChanged, self.__onSectorRelatedChanged),
+         (
+          self.__battleController.onOwnSectorsChanged, self.__onSectorRelatedChanged),
+         (
           g_playerEvents.onArenaStateChange, self.__onArenaStateChange))
         events += super(EpicBattleQuestsTabView, self)._getEvents()
         return events
@@ -44,6 +48,10 @@ class EpicBattleQuestsTabView(EpicBattleQuestsView):
         with self.viewModel.transaction() as (vm):
             SectorProgressionCmpView.fillProgressionArrayModels(progression, vm.getProgressions())
             vm.setIsClientReady(self.__isClientReady)
+            self.__updateAimSector(vm)
+
+    def __onSectorRelatedChanged(self, *_):
+        with self.viewModel.transaction() as (vm):
             self.__updateAimSector(vm)
 
     def __updateAimSector(self, vm):

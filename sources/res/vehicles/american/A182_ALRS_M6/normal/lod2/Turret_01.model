@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A182_ALRS_M6/normal/lod2/Turret_01</nodefullVisual>
+	<parent>vehicles/american/A182_ALRS_M6/normal/lod3/Turret_01</parent>
+	<tank>true</tank>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.281146 -0.000060 -1.176469</min>
+		<max>1.281146 1.064561 1.173661</max>
+	</visibilityBox>
+</root>

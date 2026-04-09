@@ -196,6 +196,24 @@
 		<flakesSurfNormalNoiseWeight>0.100000</flakesSurfNormalNoiseWeight>
 		<flakesEnabled>false</flakesEnabled>
 		<useBC6PackingFormat>false</useBC6PackingFormat>
+		<mossDirectMult>1.000000</mossDirectMult>
+		<mossIndirectMult>1.000000</mossIndirectMult>
+		<mossSheenFactor>0.500000</mossSheenFactor>
+		<mossGrassSheenFactor>0.500000</mossGrassSheenFactor>
+		<mossAddColor>0.000000 0.000000 0.000000</mossAddColor>
+		<mossAddColorTint>0.000000</mossAddColorTint>
+		<mossIndirectBRDFFactor>0.800000</mossIndirectBRDFFactor>
+		<mossMinMaskMult>1.000000</mossMinMaskMult>
+		<mossMaxMaskMult>1.000000</mossMaxMaskMult>
+		<snowDirectMult>1.000000</snowDirectMult>
+		<snowScatterColor>0.000000 0.000000 0.000000</snowScatterColor>
+		<snowScatterColorTint>0.000000</snowScatterColorTint>
+		<snowIndirectMultShittySS>0.200000</snowIndirectMultShittySS>
+		<snowIndirectMultBase>1.000000</snowIndirectMultBase>
+		<snowIndirectBRDFFactor>0.800000</snowIndirectBRDFFactor>
+		<snowMinMaskMult>1.000000</snowMinMaskMult>
+		<snowMaxMaskMult>1.000000</snowMaxMaskMult>
+		<shadingModel>0</shadingModel>
 	</PBS>
 	<Weather>
 		<wind>
@@ -310,6 +328,8 @@
 		<waveMaskTexture>system/maps/wetness_waves.dds</waveMaskTexture>
 		<waveMaskUVScale>0.250000</waveMaskUVScale>
 		<waveMaskSpeed>0.141320</waveMaskSpeed>
+		<waterGlossMultiplier>1.000000</waterGlossMultiplier>
+		<wetCoastGlossMultiplier>1.000000</wetCoastGlossMultiplier>
 	</Wetness>
 	<VFXLighting>
 		<PsDirLightMultDeferred>1.000000</PsDirLightMultDeferred>
@@ -320,6 +340,8 @@
 		<PsIllumMultForward>1.000000</PsIllumMultForward>
 		<PsRibbonMultDeferred>1.000000</PsRibbonMultDeferred>
 		<PsRibbonMultForward>1.000000</PsRibbonMultForward>
+		<particleEnvironmentTintEnabledDeferred>false</particleEnvironmentTintEnabledDeferred>
+		<particleEnvironmentTintEnabledForward>false</particleEnvironmentTintEnabledForward>
 	</VFXLighting>
 	<WeatherDependentSettings>
 		<environment_dependent_emission>

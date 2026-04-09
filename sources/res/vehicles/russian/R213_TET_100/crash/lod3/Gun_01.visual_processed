@@ -13,8 +13,8 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<primitive>indices</primitive>
+			<vertices>gun_01_Shape.vertices</vertices>
+			<primitive>gun_01_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -51,13 +51,13 @@
 						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.078966 -0.027451 1.699450</groupOrigin>
+				<groupOrigin>0.078966 -0.027451 1.699183</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-0.470155 -0.656629 -2.438970</min>
-		<max>0.628087 0.601727 5.837869</max>
+		<min>-0.470155 -0.656629 -2.439236</min>
+		<max>0.628087 0.601727 5.837602</max>
 	</boundingBox>
 	<geometrySize>7206</geometrySize>
 	<minUVDensity>0.002695</minUVDensity>

@@ -10,48 +10,49 @@ msgstr ""
 
 msgid "page/footer"
 msgstr ""
-"Выберите любой из объектов поддержки на карте, чтобы изучить подробную "
-"информацию."
+"Выберыце любы з аб'ектаў падтрымкі на мапе, каб вывучыць падрабязную "
+"інфармацыю."
 
 msgid "page/infoBtn"
 msgstr "ПРА ПАДЗЕЮ"
 
 msgid "page/object/damageZones/hullText"
-msgstr "• В оболочку проходит: %(value)s урона."
+msgstr "• У абалонку праходзіць: %(value)s пашкоджанняў."
 
 msgid "page/object/damageZones/percents"
 msgstr "%(number)s%"
 
 msgid "page/object/damageZones/shortTitle"
 msgstr ""
-"Разные элементы конструкции объекта по-разному восприимчивы к урону..."
+"Розныя элементы канструкцыі аб'екта па-рознаму ўспрымаюць пашкоджанні..."
 
 msgid "page/object/damageZones/title"
-msgstr "Разные элементы конструкции объекта по-разному восприимчивы к урону:"
+msgstr ""
+"Розныя элементы канструкцыі аб'екта па-рознаму ўспрымаюць пашкоджанні:"
 
 msgid "page/object/damageZones/turretText"
-msgstr "• В гондолу проходит: %(value)s урона."
+msgstr "• У гандолу праходзіць: %(value)s пашкоджанняў."
 
 msgid "page/object/description/airship"
 msgstr ""
-"Подвижный летающий объект. Имеет орудие и башню неполного вращения, может вести обстрел техники противника.\n"
-"Может участвовать в захвате базы."
+"Рухомы лятучы аб'ект. Мае гармату і вежу няпоўнага вярчэння, можа весці абстрэл тэхнікі праціўніка.\n"
+"Можа ўдзельнічаць у захопе базы."
 
 msgid "page/object/description/flamer"
 msgstr ""
-"Тяжелобронированная стационарная огневая точка с вращающейся башней. Наносит урон огнём на близкой дистанции.\n"
-"Располагается рядом с базой, роль — помешать захвату базы противником."
+"Цяжкабраніраваны стацыянарны агнявы пункт з вярчальнай вежай. Прычыняе пашкоджанні агнём на блізкай дыстанцыі.\n"
+"Размяшчаецца побач з базай, роля — перашкодзіць захопу базы праціўнікам."
 
 msgid "page/object/description/mortar"
 msgstr ""
-"Реактивная система залпового огня выпускает залп из множества снарядов "
-"по противнику. Эффективна при нанесении урона группам техники с большой "
-"дистанции."
+"Рэактыўная сістэма залпавага агню выпускае залп з мноства снарадаў "
+"па праціўніку. Эфектыўна прычыняе пашкоджанні групам тэхнікі з вялікай "
+"дыстанцыі."
 
 msgid "page/object/description/pillbox"
 msgstr ""
-"Долговременная огневая точка с вращающейся башней. Эффективна против легкобронированной техники на короткой и средней дистанциях.\n"
-"Роль дота — помогать отбивать атаку противника на базу."
+"Доўгачасовы агнявы пункт з вярчальнай вежай. Эфектыўны супраць лёгкабраніраванай тэхнікі на кароткай і сярэдняй дыстанцыях.\n"
+"Роля дота — дапамагаць адбіваць атаку праціўніка на базу."
 
 msgid "page/object/description/subtitle/airship"
 msgstr "(аб'ект падтрымкі атакі)"
@@ -66,7 +67,7 @@ msgid "page/object/description/subtitle/pillbox"
 msgstr "(аб'ект падтрымкі абароны)"
 
 msgid "page/object/infoText"
-msgstr "Условия получения в бою"
+msgstr "Умовы атрымання ў баі"
 
 msgid "page/object/paramsTitle"
 msgstr "Ключавыя ТТХ"
@@ -97,32 +98,32 @@ msgstr "Дот"
 
 msgid "page/object/vehParams/description/captureTime"
 msgstr ""
-"Максимальное количество времени, которое объект может находиться на точке "
-"захвата и самостоятельно производить захват."
+"Максімальны час, які аб'ект можа знаходзіцца на пункце захопу і самастойна "
+"здзяйсняць захоп."
 
 msgid "page/object/vehParams/description/circularVisionRadius"
-msgstr "Обзор объекта — дистанция, на которой может быть обнаружен противник."
+msgstr "Агляд аб'екта — дыстанцыя, на якой можна выявіць праціўніка."
 
 msgid "page/object/vehParams/description/cooldownTime"
 msgstr "Час, праз які аб'ект пачне паўторна ажыццяўляць баявыя дзеянні."
 
 msgid "page/object/vehParams/description/healTime"
 msgstr ""
-"Время, за которое объект может быть отремонтирован. Указаны следующие "
-"значения: минимальное время при ремонте несколькими игроками / максимальное "
-"время при ремонте одним игроком."
+"Час, за які аб'ект можна адрамантаваць. Пададзены наступныя значэнні: "
+"мінімальны час пры рамонце некалькімі гульцамі / максімальны час пры рамонце"
+" адным гульцом."
 
 msgid "page/object/vehParams/description/maxHealth"
 msgstr "Колькасць ачкоў трываласці аб'екта."
 
 msgid "page/object/vehParams/description/resurrectTime"
-msgstr "Время, за которое объект восстановится после уничтожения."
+msgstr "Час, за які аб'ект адновіцца пасля знішчэння."
 
 msgid "page/object/vehParams/description/turretArmor"
 msgstr "Таўшчыня брані аб'екта: лоб/барты/ карма адпаведна."
 
 msgid "page/object/vehParams/text/captureTime"
-msgstr "Время нахождения на точке захвата"
+msgstr "Час знаходжання на пункце захопу"
 
 msgid "page/object/vehParams/text/cooldownTime"
 msgstr "Час паміж з'яўленнем"
@@ -132,6 +133,9 @@ msgstr "Час рамонту"
 
 msgid "page/object/vehParams/text/resurrectTime"
 msgstr "Час аднаўлення"
+
+msgid "page/object/vehParams/text/shotDispersionAngle"
+msgstr "Разброс на 100 м"
 
 msgid "page/object/vehParams/text/turretArmor"
 msgstr "Браніраванне"
@@ -143,7 +147,7 @@ msgid "page/object/vehParams/title/avgPiercingPower"
 msgstr "Сярэдняя бронепрабівальнасць (мм)"
 
 msgid "page/object/vehParams/title/captureTime"
-msgstr "Время нахождения на точке захвата (с)"
+msgstr "Час знаходжання на пункце захопу (с)"
 
 msgid "page/object/vehParams/title/cooldownTime"
 msgstr "Час паміж з'яўленнямі (с)"
@@ -154,8 +158,11 @@ msgstr "Час рамонту аб'екта (с)"
 msgid "page/object/vehParams/title/resurrectTime"
 msgstr "Час аднаўлення (с)"
 
+msgid "page/object/vehParams/title/shotDispersionAngle"
+msgstr "Разброс на 100 м (м)"
+
 msgid "page/object/vehParams/title/turretArmor"
-msgstr "Бронирование (лоб/борта/корма в мм)"
+msgstr "Браніраванне (лоб/барты/карма ў мм)"
 
 msgid "page/title"
 msgstr "АБ'ЕКТЫ ПАДТРЫМКІ"
@@ -177,4 +184,4 @@ msgstr ""
 "Аб'ект актывуецца пасля запаўнення першага этапу каманднай прагрэсіі зоны."
 
 msgid "tooltip/title"
-msgstr "Активация объекта в бою"
+msgstr "Актывацыя аб'екта ў баі"

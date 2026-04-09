@@ -92,6 +92,15 @@ msgstr ""
 msgid "08_ruinberg/name"
 msgstr "Руінбэрг"
 
+msgid "08_ruinberg_att/description"
+msgstr "?empty?"
+
+msgid "08_ruinberg_att/name"
+msgstr "Кюстрин"
+
+msgid "08_ruinberg_att/upperName"
+msgstr "КЮСТРИН"
+
 msgid "1003_cgf_test/description"
 msgstr "?empty?"
 
@@ -136,6 +145,15 @@ msgstr ""
 
 msgid "105_germany/name"
 msgstr "Берлін"
+
+msgid "105_germany_att/description"
+msgstr "?empty?"
+
+msgid "105_germany_att/name"
+msgstr "Берлін"
+
+msgid "105_germany_att/upperName"
+msgstr "БЕРЛИН"
 
 msgid "108_normandy_nom/description"
 msgstr ""
@@ -242,6 +260,15 @@ msgstr ""
 msgid "13_erlenberg/name"
 msgstr "Эрленбэрг"
 
+msgid "13_erlenberg_se22_def/description"
+msgstr "?empty?"
+
+msgid "13_erlenberg_se22_def/name"
+msgstr "Западная Двина"
+
+msgid "13_erlenberg_se22_def/upperName"
+msgstr "ЗАПАДНАЯ ДВИНА"
+
 msgid "14_siegfried_line/description"
 msgstr ""
 "Асаблівасць гэтай мапы — удалае спалучэнне адкрытых прастораў і гарадскіх "
@@ -250,6 +277,15 @@ msgstr ""
 
 msgid "14_siegfried_line/name"
 msgstr "Лінія Зігфрыда"
+
+msgid "14_siegfried_line_att/description"
+msgstr "?empty?"
+
+msgid "14_siegfried_line_att/name"
+msgstr "Зееловские высоты"
+
+msgid "14_siegfried_line_att/upperName"
+msgstr "ЗЕЕЛОВСКИЕ ВЫСОТЫ"
 
 msgid "14_siegfried_line_nom/description"
 msgstr ""
@@ -326,6 +362,15 @@ msgstr ""
 msgid "212_epic_random_valley/name"
 msgstr "Нэбэльбург"
 
+msgid "212_epic_random_valley_att/description"
+msgstr "?empty?"
+
+msgid "212_epic_random_valley_att/name"
+msgstr "Восточные Альпы"
+
+msgid "212_epic_random_valley_att/upperName"
+msgstr "ВОСТОЧНЫЕ АЛЬПЫ"
+
 msgid "217_er_alaska/description"
 msgstr ""
 "Руднік на поўначы дае перавагу хуткім танкам прарыву. У цэнтральнай частцы "
@@ -384,7 +429,7 @@ msgstr ""
 "Невялікае плато, загубленае ў даліне каньёнаў Марса. Чырвоныя пяскі і "
 "стромкія абрывы. Азёры, напоўненыя кіслатой невядомага складу. Не самая "
 "зручная паверхня для сутыкнення на марсаходах. Але менавіта тут касмічным "
-"першапраходцам давядзенне атрымліваць сігнал, якія паходзіць ад нябеснага "
+"першапраходцам давядзецца атрымліваць сігнал, які паходзіць ад нябеснага "
 "цела пад кодавай назвай «Аб'ект»."
 
 msgid "280_cosmic_2026/name"
@@ -448,6 +493,15 @@ msgstr ""
 
 msgid "35_steppes/name"
 msgstr "Стэп"
+
+msgid "35_steppes_def/description"
+msgstr "?empty?"
+
+msgid "35_steppes_def/name"
+msgstr "Тамань"
+
+msgid "35_steppes_def/upperName"
+msgstr "ТAМАНЬ"
 
 msgid "36_fishing_bay/description"
 msgstr ""
@@ -552,17 +606,26 @@ msgstr "Каўказ"
 
 msgid "506_battle_for_moscow/description"
 msgstr ""
-"Карта вдохновлена героической победой в обороне Москвы в 1941 году. Локация "
-"не имеет чёткой географической привязки и представляет собой собирательный "
-"образ элементов ландшафта и объектов, характерных для Подмосковья того "
-"периода. Она условно разделена на две половины рекой, через которую "
-"переброшен мост. На одном берегу — плотная застройка, на другом — "
-"относительно открытая местность. Множество укрытий и перепады высот "
+"Карта вдохновлена героической победой в обороне Москвы в 1941 году. Локация "
+"не имеет чёткой географической привязки и представляет собой собирательный "
+"образ элементов ландшафта и объектов, характерных для Подмосковья того "
+"периода. Она условно разделена на две половины рекой, через которую "
+"переброшен мост. На одном берегу — плотная застройка, на другом — "
+"относительно открытая местность. Множество укрытий и перепады высот "
 "обеспечивают высокую вариативность игрового процесса, способствуя "
-"неожиданным манёврам и безопасной сменой флангов."
+"неожиданным манёврам и безопасной смене флангов."
 
 msgid "506_battle_for_moscow/name"
-msgstr "Битва за Москву"
+msgstr "Битва за Москву"
+
+msgid "513_turningpoint_def/description"
+msgstr "?empty?"
+
+msgid "513_turningpoint_def/name"
+msgstr "Можайский рубеж"
+
+msgid "513_turningpoint_def/upperName"
+msgstr "МОЖАЙСКИЙ РУБЕЖ"
 
 msgid "59_asia_great_wall/description"
 msgstr ""
@@ -638,10 +701,25 @@ msgstr ""
 msgid "99_poland/name"
 msgstr "Студзянкі"
 
+msgid "99_poland_se22_def/description"
+msgstr "?empty?"
+
+msgid "99_poland_se22_def/name"
+msgstr "Брянский фронт"
+
+msgid "99_poland_se22_def/upperName"
+msgstr "БРЯНСКИЙ ФРОНТ"
+
 msgid "h00_armory_yard/description"
 msgstr "?empty?"
 
 msgid "h00_armory_yard/name"
+msgstr "?empty?"
+
+msgid "h01_victory_day_2026/description"
+msgstr "?empty?"
+
+msgid "h01_victory_day_2026/name"
 msgstr "?empty?"
 
 msgid "h08_mt_hangar/description"

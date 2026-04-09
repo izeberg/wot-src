@@ -73,21 +73,17 @@
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>tank_proxy_skinned</identifier>
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
 					<materialKind>0</materialKind>
+					<identifier>tank_proxy_skinned</identifier>
 					<collisionFlags>0</collisionFlags>
-					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
-					</property>
 					<property>
 						diffuseMap
 						<Texture>vehicles/british/GB118_Taurus_CA/Taurus_CA_proxy_AM.dds</Texture>
 					</property>
 					<property>
-						excludeMaskAndAOMap
-						<Texture>vehicles/british/GB118_Taurus_CA/Taurus_CA_proxy_AO.dds</Texture>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 					<property>
 						metallicGlossMap
@@ -97,8 +93,12 @@
 						normalMap
 						<Texture>vehicles/british/GB118_Taurus_CA/Taurus_CA_proxy_ANM.dds</Texture>
 					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/british/GB118_Taurus_CA/Taurus_CA_proxy_AO.dds</Texture>
+					</property>
 				</material>
-				<groupOrigin>1.375541 0.493133 0.010188</groupOrigin>
+				<groupOrigin>1.374717 0.491132 0.009655</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -107,26 +107,22 @@
 		<node>Tank_BlendBone</node>
 		<node>V_BlendBone</node>
 		<geometry>
-			<vertices>chassis_L_Shape.vertices</vertices>
-			<primitive>chassis_L_Shape.indices</primitive>
+			<vertices>chassis_LShape.vertices</vertices>
+			<primitive>chassis_LShape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>tank_proxy_skinned</identifier>
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
 					<materialKind>0</materialKind>
+					<identifier>tank_proxy_skinned</identifier>
 					<collisionFlags>0</collisionFlags>
-					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
-					</property>
 					<property>
 						diffuseMap
 						<Texture>vehicles/british/GB118_Taurus_CA/Taurus_CA_proxy_AM.dds</Texture>
 					</property>
 					<property>
-						excludeMaskAndAOMap
-						<Texture>vehicles/british/GB118_Taurus_CA/Taurus_CA_proxy_AO.dds</Texture>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 					<property>
 						metallicGlossMap
@@ -136,16 +132,20 @@
 						normalMap
 						<Texture>vehicles/british/GB118_Taurus_CA/Taurus_CA_proxy_ANM.dds</Texture>
 					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/british/GB118_Taurus_CA/Taurus_CA_proxy_AO.dds</Texture>
+					</property>
 				</material>
-				<groupOrigin>-1.374004 0.493133 -0.092077</groupOrigin>
+				<groupOrigin>-1.374717 0.491132 -0.092547</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<constraints/>
 	<boundingBox>
-		<min>-1.628519 0.001381 -3.184006</min>
-		<max>1.629936 0.984886 3.368159</max>
+		<min>-1.628519 0.001381 -3.183064</min>
+		<max>1.628519 0.980884 3.368159</max>
 	</boundingBox>
-	<geometrySize>2088</geometrySize>
-	<minUVDensity>0.003679</minUVDensity>
+	<geometrySize>2880</geometrySize>
+	<minUVDensity>0.002634</minUVDensity>
 </root>

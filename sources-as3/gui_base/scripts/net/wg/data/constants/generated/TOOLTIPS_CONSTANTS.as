@@ -177,6 +177,10 @@ package net.wg.data.constants.generated
       
       public static const COMMANDER_BONUS:String = "commanderBonus";
       
+      public static const TANKMAN_SKILL:String = "tankmanSkill";
+      
+      public static const PREVIEW_CREW_SKILL:String = "previewCrewSkill";
+      
       public static const EFFICIENCY_PARAM:String = "efficiencyParam";
       
       public static const MAP:String = "map";
@@ -393,6 +397,8 @@ package net.wg.data.constants.generated
       
       public static const EVENT_BOARDS_BADGES_GROUP:String = "eventBoardsBadgesGroup";
       
+      public static const EVENT_SELECTOR_INFO:String = "eventSelectorInfo";
+      
       public static const OPERATION:String = "operation";
       
       public static const OPERATIONS_CHAIN_DETAILS:String = "operationsChainDetails";
@@ -557,6 +563,8 @@ package net.wg.data.constants.generated
       
       public static const FUN_RANDOM_REWARDS:String = "funRandomRewards";
       
+      public static const STORAGE_RESTORE_DEVICE_INFO:String = "storageRestoreDeviceInfo";
+      
       public static const COMP7_SELECTOR_INFO:String = "comp7SelectorInfo";
       
       public static const COMP7_SELECTOR_UNAVAILABLE_INFO:String = "comp7SelectorUnavailableInfo";
@@ -709,6 +717,10 @@ package net.wg.data.constants.generated
       
       public static const VEH_CMP_SKILLS:String = "vehCmpSkills";
       
+      public static const TANKMAN_SKILL_EXTENDED:String = "tankmanSkillExtended";
+      
+      public static const TANKMAN_SKILL_EXTENDED_UI:String = "ToolTipInblocksDefaultUI";
+      
       public static const MISSIONS_TOKEN:String = "missionsToken";
       
       public static const MISSIONS_TOKEN_UI:String = "ToolTipInblocksDefaultUI";
@@ -800,6 +812,24 @@ package net.wg.data.constants.generated
       public static const OPTDEV_SLOT_STATE_EMPTY_SELECTED:String = "emptySelected";
       
       public static const OPTDEV_SLOT_STATE_ACTIVE_SELECTED:String = "activeSelected";
+      
+      public static const HB_QUESTS_PREVIEW:String = "HBBattleQuest";
+      
+      public static const HANGAR_INTERACTIVE_OBJECT:String = "hangarInteractiveObject";
+      
+      public static const ENTRY_POINT_TOOLTIP:String = "EntryPointTooltip";
+      
+      public static const HB_ORDER_TOOLTIP:String = "HBOrderTooltip";
+      
+      public static const HB_UNAVAILABLE_QUEST:String = "HBUnavailableQuest";
+      
+      public static const HB_VEHICLE:String = "HBVehicle";
+      
+      public static const HB_CALENDAR_TOOLTIP:String = "HBCalendarTooltip";
+      
+      public static const HB_SPECIAL_VEHICLES_TOOLTIP:String = "HBSpecialVehiclesTooltip";
+      
+      public static const HB_EFFICIENCY_TOOLTIP:String = "HBEfficiencyTooltip";
       
       public static const LOOT_BOXES_VEHICLE_BLUEPRINT_FRAGMENT:String = "lootBoxesVehicleBlueprintFragment";
       
@@ -936,6 +966,12 @@ package net.wg.data.constants.generated
       public static const EARLY_ACCESS_LOBBY_SET:Array = [EARLY_ACCESS_COMMON_INFO,EARLY_ACCESS_VEHICLE_LOCKED,EARLY_ACCESS_PAUSED,EARLY_ACCESS_CAROUSEL_VEHICLE_POST_PROGRESSION,EARLY_ACCESS_CURRENCY,EARLY_ACCESS_ENTRY_POINT];
       
       public static const BIRTHDAY_SET:Array = [BIRTHDAY_GIFT_SYSTEM_POSTMARK,BIRTHDAY_GOLDEN_TICKET,ECONOMY_BONUS_TOOLTIP];
+      
+      public static const STORAGE_SET:Array = [STORAGE_RESTORE_DEVICE_INFO];
+      
+      public static const EVENT_SET:Array = [EVENT_SELECTOR_INFO];
+      
+      public static const HISTORICAL_BATTLES_SET:Array = [HB_QUESTS_PREVIEW,HANGAR_INTERACTIVE_OBJECT,ENTRY_POINT_TOOLTIP,HB_ORDER_TOOLTIP,HB_UNAVAILABLE_QUEST,HB_VEHICLE,HB_CALENDAR_TOOLTIP,HB_SPECIAL_VEHICLES_TOOLTIP,HB_EFFICIENCY_TOOLTIP];
        
       
       public function TOOLTIPS_CONSTANTS()

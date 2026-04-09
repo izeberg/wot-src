@@ -374,6 +374,13 @@
 			<Type>UINT8</Type>
 			<Flags>ALL_CLIENTS</Flags>
 		</botDisplayStatus>
+		<buffs>
+			<Type>
+				ARRAY
+				<of>UINT16</of>
+			</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</buffs>
 		<thermalVisionFinishTime>
 			<Type>FLOAT</Type>
 			<Flags>ALL_CLIENTS</Flags>
@@ -401,6 +408,7 @@
 		<_ProximityManager__data/>
 		<_TimerManager__unpersistedTimers/>
 		<gameObject/>
+		<buffContainer/>
 	</TempProperties>
 	<ClientMethods>
 		<onVehiclePickup/>

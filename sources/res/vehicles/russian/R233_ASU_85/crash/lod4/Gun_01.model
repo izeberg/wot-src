@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodelessVisual>vehicles/russian/R233_ASU_85/crash/lod4/Gun_01</nodelessVisual>
+	<visibilityBox>
+		<min>-0.412221 -0.246443 -0.198145</min>
+		<max>0.405349 0.811077 4.281374</max>
+	</visibilityBox>
+</root>

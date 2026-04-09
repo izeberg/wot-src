@@ -551,10 +551,6 @@
 					<materialKind>111</materialKind>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
 					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
 						g_atlasSizes
 						<Vector4>4.000000 4.000000 6.000000 4.000000</Vector4>
 					</property>
@@ -685,10 +681,6 @@
 					<property>
 						g_tile1Tint
 						<Vector4>0.788235 0.800000 0.776471 1.000000</Vector4>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
 					</property>
 					<property>
 						g_dirtColor

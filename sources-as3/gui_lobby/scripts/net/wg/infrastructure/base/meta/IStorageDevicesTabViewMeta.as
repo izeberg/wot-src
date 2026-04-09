@@ -6,7 +6,11 @@ package net.wg.infrastructure.base.meta
    {
        
       
+      function onRestoreButtonClickS() : void;
+      
       function as_initModulesFilter(param1:Object) : void;
+      
+      function as_setRestoreButtonData(param1:Object) : void;
       
       function as_setBalanceValue(param1:String) : void;
    }

@@ -60,7 +60,7 @@
 					<fx>shaders/std_effects/PBS_tank.fx</fx>
 					<property>
 						colorIdMap
-						<Texture>vehicles/italy/It08_Progetto_M40_mod_65/_skin/It08_Progetto_M40_mod_65_3Dst/Progetto_M40_mod_65_3Dst_10_turret_01_ID.dds</Texture>
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 					<property>
 						diffuseMap
@@ -72,10 +72,7 @@
 					</property>
 					<property>
 						g_detailUVTiling
-						<Vector4>
-							7.0137 3.50685 0.000000 0.000000
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>7.013700 3.506850 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_useDetailMetallic
@@ -129,10 +126,7 @@
 					</property>
 					<property>
 						g_detailUVTiling
-						<Vector4>
-							7.0137 3.50685 0.000000 0.000000
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>7.013700 3.506850 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						metallicDetailMap
@@ -141,6 +135,10 @@
 					<property>
 						g_useDetailMetallic
 						<Bool>true</Bool>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>0.073376 1.445864 -2.045312</groupOrigin>

@@ -101,9 +101,6 @@ class VideoView(ViewImpl):
             language = getClientLanguage()
             self.viewModel.setSubtitleTrack(_LOCALE_TO_SUBTITLE_MAP.get(language, 0))
             self.viewModel.setIsWindowAccessible(Windowing.isWindowAccessible())
-            self.viewModel.setCanEscape(kwargs.get('canEscape', True))
-            self.viewModel.setIsUIVisible(kwargs.get('isUIVisible', False))
-            self.viewModel.setUiShowDelay(kwargs.get('uiShowDelay', -1))
             g_playerEvents.onAccountBecomeNonPlayer += self.__removeClosedHandle
             Windowing.addWindowAccessibilitynHandler(self.__onWindowAccessibilityChanged)
             switchVideoOverlaySoundFilter(on=True)
@@ -198,9 +195,3 @@ class VideoViewWindow(LobbyWindow):
     def __init__(self, viewId=None, *args, **kwargs):
         super(VideoViewWindow, self).__init__(content=VideoView(viewId=viewId, *args, **kwargs), wndFlags=WindowFlags.WINDOW | WindowFlags.WINDOW_FULLSCREEN, layer=WindowLayer.OVERLAY, decorator=None)
         return
-
-
-def showWebmVideoView(videoSource, parent=None, onVideoStarted=None, onVideoStopped=None, onVideoClosed=None, isAutoClose=False, canEscape=True, isUIVisible=False, uiShowDelay=-1, soundControl=None):
-    window = VideoViewWindow(videoSource=videoSource, parent=parent, onVideoStarted=onVideoStarted, onVideoStopped=onVideoStopped, onVideoClosed=onVideoClosed, isAutoClose=isAutoClose, soundControl=soundControl or DummySoundManager(), canEscape=canEscape, isUIVisible=isUIVisible, uiShowDelay=uiShowDelay, viewId=R.views.lobby.video.VideoViewWebm())
-    window.load()
-    return window

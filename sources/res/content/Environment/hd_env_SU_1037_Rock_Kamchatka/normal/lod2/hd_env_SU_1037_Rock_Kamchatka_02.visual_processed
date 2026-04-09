@@ -99,10 +99,6 @@
 						g_enableTerrainBlending
 						<Bool>true</Bool>
 					</property>
-					<property>
-						g_ditherCoeff
-						<Float>0.000000</Float>
-					</property>
 				</material>
 				<groupOrigin>-0.020047 9.333940 0.104827</groupOrigin>
 			</primitiveGroup>

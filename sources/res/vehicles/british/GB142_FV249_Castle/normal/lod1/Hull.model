@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/british/GB142_FV249_Castle/normal/lod2/Hull</parent>
+	<tank>true</tank>
+	<extent>64.000000</extent>
+	<nodefullVisual>vehicles/british/GB142_FV249_Castle/normal/lod1/Hull</nodefullVisual>
+	<visibilityBox>
+		<min>-1.938331 -0.643361 -3.804589</min>
+		<max>1.936436 0.798288 3.655778</max>
+	</visibilityBox>
+</root>

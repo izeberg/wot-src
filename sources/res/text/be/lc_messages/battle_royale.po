@@ -51,7 +51,7 @@ msgid "banner/timeLeft/hour"
 msgstr "%(hour)s гадз."
 
 msgid "banner/timeLeft/hours"
-msgstr "%(hours)s ч. %(minutes)s мин."
+msgstr "%(hours)s ч. %(minutes)s мин."
 
 msgid "banner/timeLeft/minutes"
 msgstr "%(minutes)s хв."
@@ -128,10 +128,10 @@ msgstr ""
 "%(points)s%(icon)s"
 
 msgid "battleResult/battlePassWidget/pointsShopDisabled"
-msgstr "Все главы пройдены. Спасибо за участие!"
+msgstr "Усе раздзелы пройдзены. Дзякуй за ўдзел!"
 
 msgid "battleResult/battlePassWidget/pointsShopDisabledSingle"
-msgstr "Глава пройдена. Спасибо за участие!"
+msgstr "Раздзел пройдзены. Дзякуй за ўдзел!"
 
 msgid "battleResult/battlePassWidget/pointsStats"
 msgstr "%(currentLevelPoints)s/%(maxPoints)s"
@@ -143,7 +143,7 @@ msgstr ""
 
 msgid "battleResult/battlePassWidget/progressionCompletedSingle"
 msgstr ""
-"Глава пройдена. Продолжайте играть и накапливать очки Боевого пропуска."
+"Раздзел пройдзены. Працягвайце гуляць і назапашваць ачкі Баявога пропуску."
 
 msgid "battleResult/battlePassWidget/submit"
 msgstr "Перайсці да Баявога пропуска"
@@ -662,7 +662,7 @@ msgid "proxyPanel/store"
 msgstr "КРАМА"
 
 msgid "questsTooltip/lessThanDay"
-msgstr "менее 1 д."
+msgstr "менее 1 д."
 
 msgid "questsTooltip/mission_info/timeLeft"
 msgstr "Да канца этапа %(cycle)s: %(time)s"
@@ -674,7 +674,7 @@ msgid "questsTooltip/timeLeft"
 msgstr "Да канца сезона: %(time)s"
 
 msgid "questsTooltip/timeLeftShort/days"
-msgstr "%(day)s д."
+msgstr "%(day)s сут."
 
 msgid "questsTooltip/timeLeftShort/hours"
 msgstr "%(hour)s гадз"
@@ -683,7 +683,7 @@ msgid "questsTooltip/timeLeftShort/lessMin"
 msgstr "менш за хвіліну"
 
 msgid "questsTooltip/timeLeftShort/min"
-msgstr "%(min)s мин."
+msgstr "%(min)s хв."
 
 msgid "radar/hint/noBinding"
 msgstr "На радар не прызначана клавіша"
@@ -781,13 +781,13 @@ msgid "status/timeLeft/days"
 msgstr "%(day)s сут"
 
 msgid "status/timeLeft/hours"
-msgstr "%(hour)s ч. %(min)s мин."
+msgstr "%(hour)s ч. %(min)s мин."
 
 msgid "status/timeLeft/lessMin"
 msgstr "хвіліну"
 
 msgid "status/timeLeft/min"
-msgstr "%(min)s мин."
+msgstr "%(min)s хв."
 
 msgid "statusNotificationTimers/berserk/active"
 msgstr "У ЛЮТАСЦІ!"
@@ -1034,7 +1034,7 @@ msgstr ""
 "колькасць разоў."
 
 msgid "tooltips/respawnIcon/min"
-msgstr "%(duration)s мин."
+msgstr "%(duration)s мин."
 
 msgid "tooltips/respawnIcon/platoon/description"
 msgstr ""

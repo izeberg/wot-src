@@ -41,7 +41,7 @@ class Comp7Slot(BaseUnitRosterSlot):
 
 
 class RankedSlot(BaseUnitRosterSlot):
-    DEFAULT_LEVELS = (6, 6)
+    DEFAULT_LEVELS = (9, 9)
 
 
 class SquadRoster(BaseUnitRoster):

@@ -270,6 +270,28 @@ msgstr ""
 msgid "artefact_remove/wot_plus_success"
 msgstr "Абсталяванне %(name)s знята з машыны бясплатна па падпісцы."
 
+msgid "artefact_restore/credits"
+msgstr "серебра: "
+
+msgid "artefact_restore/crystal"
+msgstr "бон: "
+
+msgid "artefact_restore/demountKit"
+msgstr "демонтажных наборов: "
+
+msgid "artefact_restore/equipCoin"
+msgstr "компонентов: "
+
+msgid "artefact_restore/gold"
+msgstr "золота: "
+
+msgid "artefact_restore/server_error"
+msgstr "Ошибка восстановления оборудования. Попробуйте позже."
+
+msgid "artefact_restore/success"
+msgstr ""
+"Оборудование «%(name)s» (%(count)s шт.) восстановлено. Потрачено %(money)s."
+
 msgid "artefact_sell/invalid_module"
 msgstr "Не ўдалося прадаць %(kind)s «%(name)s». Памылковы модуль."
 
@@ -1222,6 +1244,11 @@ msgid "customization/personal_number_prohibited"
 msgstr ""
 "Нумар %(value)s недаступны.\n"
 "%(itemType)s «%(itemName)s» быў прыбраны для %(seasonName)s мапы."
+
+msgid "customization/personal_number_prohibited_all_seasons"
+msgstr ""
+"Номер %(value)s недоступен.\n"
+"%(itemType)s «%(itemName)s» был снят для всех карт."
 
 msgid "customization/progression/down/style"
 msgstr "Узровень стылю «%s» зніжаны да %s"
@@ -2257,7 +2284,7 @@ msgid "limitedUI/switchOff"
 msgstr "Паэтапнае з'яўленне схаваных элементаў інтэрфейсу часова адключана."
 
 msgid "limitedUI/switchOn"
-msgstr "Постепенное появление скрытых интерфейсов снова включено."
+msgstr "Паступовае з'яўленне схаваных інтэрфейсаў зноў уключана."
 
 msgid "lootboxes/open/server_error"
 msgstr "Памылка адкрыцця кантэйнера: серверны збой."
@@ -2527,6 +2554,18 @@ msgstr "Страчаны доступ да Прапаноў: %(count)s шт."
 
 msgid "offers/unavailable_one"
 msgstr "Страчаны доступ да прапановы."
+
+msgid "optDevicesRestore/switch_off/body"
+msgstr "Восстановление оборудования временно невозможно."
+
+msgid "optDevicesRestore/switch_off/title"
+msgstr "Ошибка восстановления"
+
+msgid "optDevicesRestore/switch_on/body"
+msgstr "Восстановление оборудования снова доступно."
+
+msgid "optDevicesRestore/switch_on/title"
+msgstr "Неполадки устранены"
 
 msgid "optionalDevices_apply/error"
 msgstr "Памылка наладжвання абсталявання. Паспрабуйце яшчэ раз пазней."
@@ -3026,7 +3065,8 @@ msgid "premium/continueSuccess"
 msgstr "Прэміум акаўнт працягнуты на %(period)d сут. Выдаткавана %(money)s."
 
 msgid "premium/not_enough_gold"
-msgstr "Замала золата, каб купіць прэміум акаўнт на %(period)d сут."
+msgstr ""
+"Недостаточно золота для покупки Премиум аккаунта на срок %(period)d д."
 
 msgid "premium/post_battle_premium"
 msgstr ""
@@ -3035,7 +3075,7 @@ msgstr ""
 
 msgid "premium/server_error"
 msgstr ""
-"Не ўдалося купіць прэміум акаўнт на %(period)d сут. Паспрабуйце пазней."
+"Ошибка покупки Премиум аккаунта на срок %(period)d д. Попробуйте позже."
 
 msgid "premium/wallet_not_available"
 msgstr ""
@@ -3665,7 +3705,7 @@ msgstr ""
 "Інтэрфейс абноўлены %(date)s а %(time)s, бо на серверы адбыліся змены."
 
 msgid "squad/createError"
-msgstr "Стварэнне звязу даступнае толькі гульцам з прэміум акаўнтам."
+msgstr "Создание взводов доступно только игрокам с Премиум аккаунтом."
 
 msgid "squad/kickedFromQueue"
 msgstr ""
@@ -3749,12 +3789,12 @@ msgstr ""
 
 msgid "stronghold/clanSeason/progression/title"
 msgstr ""
-"Вы достигли %(level)s-го уровня личной прогрессии в Клановом сезоне, и вам "
-"начислена награда."
+"Вы дасягнулі %(level)s-га ўзроўню асабістай прагрэсіі ў Кланавым сезоне, "
+"і вам налічана ўзнагарода."
 
 msgid "stronghold/clanSeason/quest/title"
 msgstr ""
-"За выполнение одной или нескольких задач личной прогрессии Кланового сезона "
+"За выполнение одной или нескольких задач личной прогрессии Кланового сезона "
 "вам начислена награда."
 
 msgid "techtree/action/expireTime"
@@ -4000,6 +4040,9 @@ msgstr "Нельга змясціць машыну ў слот."
 
 msgid "unit/errors/HAS_IN_ARENA_MEMBERS"
 msgstr "Дзеянне недаступнае. Частка атрада яшчэ ў баі."
+
+msgid "unit/errors/HB_BANNED"
+msgstr "Вы временно отстранены от боёв в данном режиме."
 
 msgid "unit/errors/INSUFFICIENT_ROLE"
 msgstr "Вы не маеце правоў, каб выканаць гэту аперацыю."

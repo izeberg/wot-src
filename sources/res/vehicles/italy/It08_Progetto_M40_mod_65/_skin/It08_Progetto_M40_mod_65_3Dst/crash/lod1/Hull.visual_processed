@@ -105,6 +105,10 @@
 						normalMap
 						<Texture>vehicles/german/Crash_inside/crash_inside_NM.dds</Texture>
 					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
 				</material>
 				<groupOrigin>-0.000299 0.029835 0.153735</groupOrigin>
 			</primitiveGroup>
@@ -125,7 +129,7 @@
 					</property>
 					<property>
 						colorIdMap
-						<Texture>vehicles/italy/It08_Progetto_M40_mod_65/_skin/It08_Progetto_M40_mod_65_3Dst/Progetto_M40_mod_65_3Dst_10_hull_01_ID.dds</Texture>
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 					<property>
 						crashTileMap
@@ -149,10 +153,7 @@
 					</property>
 					<property>
 						g_crashUVTiling
-						<Vector4>
-							4 4 0.000000 0.000000
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>4.000000 4.000000 0.000000 0.000000</Vector4>
 					</property>
 				</material>
 				<groupOrigin>-0.008100 0.058986 -0.008894</groupOrigin>
@@ -174,7 +175,7 @@
 					</property>
 					<property>
 						colorIdMap
-						<Texture>vehicles/italy/It08_Progetto_M40_mod_65/_skin/It08_Progetto_M40_mod_65_3Dst/Progetto_M40_mod_65_3Dst_10_chassis_01_ID.dds</Texture>
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 					<property>
 						crashTileMap
@@ -198,10 +199,7 @@
 					</property>
 					<property>
 						g_crashUVTiling
-						<Vector4>
-							2 1 0.000000 0.000000
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>2.000000 1.000000 0.000000 0.000000</Vector4>
 					</property>
 				</material>
 				<groupOrigin>0.000000 -0.370845 0.033139</groupOrigin>

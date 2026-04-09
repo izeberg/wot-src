@@ -1017,10 +1017,6 @@
 						<Int>64</Int>
 					</property>
 					<property>
-						colorIdMap
-						<Texture>vehicles/italy/It08_Progetto_M40_mod_65/_skin/It08_Progetto_M40_mod_65_3Dst/Progetto_M40_mod_65_3Dst_10_proxy_ID.dds</Texture>
-					</property>
-					<property>
 						diffuseMap
 						<Texture>vehicles/italy/It08_Progetto_M40_mod_65/_skin/It08_Progetto_M40_mod_65_B9BS_3DSt/Progetto_M40_mod_65_B9BS_3DSt_proxy_AM.dds</Texture>
 					</property>
@@ -1035,6 +1031,10 @@
 					<property>
 						normalMap
 						<Texture>vehicles/italy/It08_Progetto_M40_mod_65/_skin/It08_Progetto_M40_mod_65_B9BS_3DSt/Progetto_M40_mod_65_B9BS_3DSt_proxy_ANM.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>-1.035316 0.569666 -0.036439</groupOrigin>
@@ -1059,10 +1059,6 @@
 						<Int>64</Int>
 					</property>
 					<property>
-						colorIdMap
-						<Texture>vehicles/italy/It08_Progetto_M40_mod_65/_skin/It08_Progetto_M40_mod_65_3Dst/Progetto_M40_mod_65_3Dst_10_proxy_ID.dds</Texture>
-					</property>
-					<property>
 						diffuseMap
 						<Texture>vehicles/italy/It08_Progetto_M40_mod_65/_skin/It08_Progetto_M40_mod_65_B9BS_3DSt/Progetto_M40_mod_65_B9BS_3DSt_proxy_AM.dds</Texture>
 					</property>
@@ -1077,6 +1073,10 @@
 					<property>
 						normalMap
 						<Texture>vehicles/italy/It08_Progetto_M40_mod_65/_skin/It08_Progetto_M40_mod_65_B9BS_3DSt/Progetto_M40_mod_65_B9BS_3DSt_proxy_ANM.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>1.036404 0.567201 -0.053466</groupOrigin>

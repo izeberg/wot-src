@@ -40,7 +40,7 @@
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 1.000000 0.000000</row1>
 					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>0.000000 0.610137 0.000000</row3>
+					<row3>0.000000 0.593637 0.079552</row3>
 				</transform>
 			</node>
 		</node>
@@ -49,8 +49,8 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<primitive>indices</primitive>
+			<vertices>hull_inside_Shape.vertices</vertices>
+			<primitive>hull_inside_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>

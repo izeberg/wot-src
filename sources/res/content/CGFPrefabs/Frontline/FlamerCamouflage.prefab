@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<version>3</version>
+	<GameObjects>
+		<GameObject>
+			<name>PillboxCamouflage</name>
+			<UUID>f9fee52a-2230-4f75-80e4-43c752709820</UUID>
+			<flags>0</flags>
+		</GameObject>
+	</GameObjects>
+	<components>
+		<ComponentPool>
+			<type>Transform</type>
+			<version>1</version>
+			<component>
+				<objectIndex>0</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>SupplyCamouflage</type>
+			<version>1</version>
+			<component>
+				<objectIndex>0</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>winter</name>
+						<value>vehicles/german/G00_Feuerbunker/Animation/Camo_Feuerbunker_02.seq</value>
+					</property>
+					<property>
+						<name>summer</name>
+						<value>vehicles/german/G00_Feuerbunker/Animation/Camo_Feuerbunker_01.seq</value>
+					</property>
+					<property>
+						<name>desert</name>
+						<value>vehicles/german/G00_Feuerbunker/Animation/Camo_Feuerbunker_03.seq</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+	</components>
+</root>

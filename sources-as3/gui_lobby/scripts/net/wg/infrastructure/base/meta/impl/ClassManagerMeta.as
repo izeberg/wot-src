@@ -78,6 +78,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.data.constants.generated.HANGAR_ALIASES;
    import net.wg.data.constants.generated.HANGAR_CONSTS;
    import net.wg.data.constants.generated.HANGAR_HEADER_QUESTS;
+   import net.wg.data.constants.generated.HISTORICALBATTLES_ALIASES;
    import net.wg.data.constants.generated.INGAMEMENU_CONSTANTS;
    import net.wg.data.constants.generated.MANUAL_TEMPLATES;
    import net.wg.data.constants.generated.MAPBOX_ALIASES;
@@ -1208,8 +1209,10 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.hangar.eventEntryPoint.gfWrapper.FunRandomEntryPoint;
    import net.wg.gui.lobby.hangar.eventEntryPoint.gfWrapper.MapBoxEntryPoint;
    import net.wg.gui.lobby.hangar.eventEntryPoint.gfWrapper.MarathonEntryPoint;
+   import net.wg.gui.lobby.hangar.eventEntryPoint.gfWrapper.ParagonsBannerEntryPoint;
    import net.wg.gui.lobby.hangar.eventEntryPoint.gfWrapper.RankedEntryPoint;
    import net.wg.gui.lobby.hangar.eventEntryPoint.gfWrapper.ResizableEntryPoint;
+   import net.wg.gui.lobby.hangar.eventEntryPoint.gfWrapper.SE22EntryPoint;
    import net.wg.gui.lobby.hangar.eventEntryPoint.gfWrapper.ShopSalesEntryPoint;
    import net.wg.gui.lobby.hangar.eventEntryPoint.gfWrapper.StrongholdEntryPoint;
    import net.wg.gui.lobby.hangar.interfaces.IHangar;
@@ -1282,6 +1285,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.header.headerButtonBar.HBC_ActionItem;
    import net.wg.gui.lobby.header.headerButtonBar.HBC_BattleSelector;
    import net.wg.gui.lobby.header.headerButtonBar.HBC_Finance;
+   import net.wg.gui.lobby.header.headerButtonBar.HBC_HBSquad;
    import net.wg.gui.lobby.header.headerButtonBar.HBC_PersonalReserves;
    import net.wg.gui.lobby.header.headerButtonBar.HBC_PersonalReservesWidgetInject;
    import net.wg.gui.lobby.header.headerButtonBar.HBC_Prem;
@@ -1295,6 +1299,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.header.headerButtonBar.HeaderButtonBar;
    import net.wg.gui.lobby.header.headerButtonBar.HeaderButtonContentItem;
    import net.wg.gui.lobby.header.headerButtonBar.HeaderButtonsHelper;
+   import net.wg.gui.lobby.header.headerButtonBar.container.HBPlatoonShieldIconContainer;
    import net.wg.gui.lobby.header.headerButtonBar.container.PlatoonShieldIconContainer;
    import net.wg.gui.lobby.header.interfaces.ILobbyHeader;
    import net.wg.gui.lobby.header.itemSelectorPopover.BattleTypeSelectPopoverDemonstrator;
@@ -1323,6 +1328,8 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.header.vo.HangarMenuTabItemVO;
    import net.wg.gui.lobby.header.vo.HeaderButtonVo;
    import net.wg.gui.lobby.header.vo.IHBC_VO;
+   import net.wg.gui.lobby.historicalBattles.HBHangarComponentsContainer;
+   import net.wg.gui.lobby.historicalBattles.constants.HB_HANGAR_COMPONENTS;
    import net.wg.gui.lobby.imageView.ImageView;
    import net.wg.gui.lobby.interfaces.ILobbyPage;
    import net.wg.gui.lobby.interfaces.ISubtaskComponent;
@@ -2158,6 +2165,10 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.storage.categories.cards.OfferCard;
    import net.wg.gui.lobby.storage.categories.cards.PersonalReservesCard;
    import net.wg.gui.lobby.storage.categories.cards.RentVehicleCard;
+   import net.wg.gui.lobby.storage.categories.cards.RestoreBaseCard;
+   import net.wg.gui.lobby.storage.categories.cards.RestoreBaseCardVO;
+   import net.wg.gui.lobby.storage.categories.cards.RestoreDeviceCard;
+   import net.wg.gui.lobby.storage.categories.cards.RestoreDeviceCardVO;
    import net.wg.gui.lobby.storage.categories.cards.RestoreVehicleCard;
    import net.wg.gui.lobby.storage.categories.cards.SelectableCard;
    import net.wg.gui.lobby.storage.categories.cards.VehicleCard;
@@ -2169,6 +2180,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.storage.categories.cards.configs.CardSizeVO;
    import net.wg.gui.lobby.storage.categories.cards.configs.CustomizationCardImageConfig;
    import net.wg.gui.lobby.storage.categories.cards.configs.ProgressionLevelPositionConfig;
+   import net.wg.gui.lobby.storage.categories.cards.configs.RestoreDeviceCardImageConfig;
    import net.wg.gui.lobby.storage.categories.customization.StorageCategoryCustomizationView;
    import net.wg.gui.lobby.storage.categories.forsell.BuyBlock;
    import net.wg.gui.lobby.storage.categories.forsell.BuyBlockEvent;
@@ -2195,6 +2207,8 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.storage.categories.storage.StorageCategoryStorageView;
    import net.wg.gui.lobby.storage.categories.storage.StorageDevicesTabView;
    import net.wg.gui.lobby.storage.categories.storage.StorageModulesAndVehicleFilterBlock;
+   import net.wg.gui.lobby.storage.categories.storage.StorageRestoreDevicesContent;
+   import net.wg.gui.lobby.storage.categories.storage.StorageRestoreDevicesView;
    import net.wg.gui.lobby.storage.categories.storage.StorageTypeAndNationFilterBlock;
    import net.wg.gui.lobby.storage.categories.storage.StorageTypeAndVehicleFilterBlock;
    import net.wg.gui.lobby.storage.categories.storage.StorageTypeFilterBlock;
@@ -2206,6 +2220,8 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.storage.data.BlueprintsFragmentVO;
    import net.wg.gui.lobby.storage.data.StorageModulesFilterVO;
    import net.wg.gui.lobby.storage.data.StorageNationFilterVO;
+   import net.wg.gui.lobby.storage.data.StorageRestoreDevicesButtonVO;
+   import net.wg.gui.lobby.storage.data.StorageRestoreDevicesVO;
    import net.wg.gui.lobby.storage.data.StorageVO;
    import net.wg.gui.lobby.stronghold.StrongholdClanProfileView;
    import net.wg.gui.lobby.stronghold.StrongholdListView;
@@ -2426,170 +2442,11 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.vehicleCompare.nodes.ModuleRenderer;
    import net.wg.gui.lobby.vehicleCompare.nodes.ModulesRootNode;
    import net.wg.gui.lobby.vehicleCompare.nodes.ModulesTreeDataProvider;
-   import net.wg.gui.lobby.vehicleCustomization.BottomPanel;
    import net.wg.gui.lobby.vehicleCustomization.ConfirmCustomizationItemDialog;
-   import net.wg.gui.lobby.vehicleCustomization.CustomizationAnchorRenderer;
-   import net.wg.gui.lobby.vehicleCustomization.CustomizationAnchorSwitchers;
-   import net.wg.gui.lobby.vehicleCustomization.CustomizationAnchorsSet;
-   import net.wg.gui.lobby.vehicleCustomization.CustomizationBill;
-   import net.wg.gui.lobby.vehicleCustomization.CustomizationBuyRenderer;
-   import net.wg.gui.lobby.vehicleCustomization.CustomizationCarousel;
-   import net.wg.gui.lobby.vehicleCustomization.CustomizationCarouselBookmark;
-   import net.wg.gui.lobby.vehicleCustomization.CustomizationCarouselLayoutController;
-   import net.wg.gui.lobby.vehicleCustomization.CustomizationCarouselLayoutRenderer;
-   import net.wg.gui.lobby.vehicleCustomization.CustomizationDecalAnchorRenderer;
-   import net.wg.gui.lobby.vehicleCustomization.CustomizationEditedKitPopover;
-   import net.wg.gui.lobby.vehicleCustomization.CustomizationEndPointIcon;
-   import net.wg.gui.lobby.vehicleCustomization.CustomizationFadeInFadeOutMovieClip;
-   import net.wg.gui.lobby.vehicleCustomization.CustomizationFiltersPopover;
-   import net.wg.gui.lobby.vehicleCustomization.CustomizationHeader;
-   import net.wg.gui.lobby.vehicleCustomization.CustomizationHelper;
    import net.wg.gui.lobby.vehicleCustomization.CustomizationItemPropertyRenderer;
-   import net.wg.gui.lobby.vehicleCustomization.CustomizationItemsPopover;
-   import net.wg.gui.lobby.vehicleCustomization.CustomizationKitPopover;
-   import net.wg.gui.lobby.vehicleCustomization.CustomizationKitPopoverContent;
-   import net.wg.gui.lobby.vehicleCustomization.CustomizationKitTable;
-   import net.wg.gui.lobby.vehicleCustomization.CustomizationMainView;
-   import net.wg.gui.lobby.vehicleCustomization.CustomizationNonHistoricIcon;
-   import net.wg.gui.lobby.vehicleCustomization.CustomizationNotification;
-   import net.wg.gui.lobby.vehicleCustomization.CustomizationProgressiveKitPopover;
-   import net.wg.gui.lobby.vehicleCustomization.CustomizationPurchasesListItemRenderer;
-   import net.wg.gui.lobby.vehicleCustomization.CustomizationSaleRibbon;
-   import net.wg.gui.lobby.vehicleCustomization.CustomizationShared;
-   import net.wg.gui.lobby.vehicleCustomization.CustomizationSimpleAnchor;
-   import net.wg.gui.lobby.vehicleCustomization.CustomizationStyleInfo;
-   import net.wg.gui.lobby.vehicleCustomization.CustomizationStyleInfoBlock;
-   import net.wg.gui.lobby.vehicleCustomization.CustomizationStyleScrollContainer;
-   import net.wg.gui.lobby.vehicleCustomization.CustomizationSwitcherRibbon;
-   import net.wg.gui.lobby.vehicleCustomization.CustomizationTabNavigator;
-   import net.wg.gui.lobby.vehicleCustomization.CustomizationVehicleView;
-   import net.wg.gui.lobby.vehicleCustomization.ICustomizationEndPointIcon;
-   import net.wg.gui.lobby.vehicleCustomization.ISlotsPanelRenderer;
-   import net.wg.gui.lobby.vehicleCustomization.ItemBrowserDisableOverlay;
    import net.wg.gui.lobby.vehicleCustomization.PropertySheetSeasonItemPopover;
-   import net.wg.gui.lobby.vehicleCustomization.StyleInfoRenderer;
-   import net.wg.gui.lobby.vehicleCustomization.controls.CarouselItemRenderer;
-   import net.wg.gui.lobby.vehicleCustomization.controls.CarouselRendererAttached;
-   import net.wg.gui.lobby.vehicleCustomization.controls.CarouselRendererAttachedBase;
-   import net.wg.gui.lobby.vehicleCustomization.controls.CarouselRendererAttachedDecal;
-   import net.wg.gui.lobby.vehicleCustomization.controls.CheckBoxIcon;
-   import net.wg.gui.lobby.vehicleCustomization.controls.CustomizationBillLineButton;
-   import net.wg.gui.lobby.vehicleCustomization.controls.CustomizationBillLineRenderer;
-   import net.wg.gui.lobby.vehicleCustomization.controls.CustomizationBonusDelta;
-   import net.wg.gui.lobby.vehicleCustomization.controls.CustomizationItemIconRenderer;
-   import net.wg.gui.lobby.vehicleCustomization.controls.CustomizationPopoverEditedItemRenderer;
-   import net.wg.gui.lobby.vehicleCustomization.controls.CustomizationPopoverItemRenderer;
-   import net.wg.gui.lobby.vehicleCustomization.controls.CustomizationPopoverKitRenderer;
-   import net.wg.gui.lobby.vehicleCustomization.controls.CustomizationPopoverProgressiveItemRenderer;
-   import net.wg.gui.lobby.vehicleCustomization.controls.CustomizationRadialButton;
-   import net.wg.gui.lobby.vehicleCustomization.controls.CustomizationSwitcher;
-   import net.wg.gui.lobby.vehicleCustomization.controls.CustomizationSwitcherButton;
-   import net.wg.gui.lobby.vehicleCustomization.controls.FilterCounterTFContainer;
-   import net.wg.gui.lobby.vehicleCustomization.controls.HistoricIndicator;
-   import net.wg.gui.lobby.vehicleCustomization.controls.ImageHitAreaWrapper;
-   import net.wg.gui.lobby.vehicleCustomization.controls.ItemSlot;
-   import net.wg.gui.lobby.vehicleCustomization.controls.PriceItemRenderer;
-   import net.wg.gui.lobby.vehicleCustomization.controls.ProgressionEntryPoint;
-   import net.wg.gui.lobby.vehicleCustomization.controls.RadioButtonListSelectionNavigator;
-   import net.wg.gui.lobby.vehicleCustomization.controls.RadioRenderer;
-   import net.wg.gui.lobby.vehicleCustomization.controls.ShopEntryPoint;
-   import net.wg.gui.lobby.vehicleCustomization.controls.bottomPanel.CustomizationBottomPanelTabBar;
-   import net.wg.gui.lobby.vehicleCustomization.controls.bottomPanel.CustomizationBottomPanelTabButton;
-   import net.wg.gui.lobby.vehicleCustomization.controls.bottomPanel.CustomizationCarouselFilters;
-   import net.wg.gui.lobby.vehicleCustomization.controls.bottomPanel.CustomizationCarouselOverlay;
-   import net.wg.gui.lobby.vehicleCustomization.controls.bottomPanel.CustomizationTabLayout;
-   import net.wg.gui.lobby.vehicleCustomization.controls.magneticTool.MagneticToolController;
-   import net.wg.gui.lobby.vehicleCustomization.controls.propertiesSheet.CustomizationPropertiesSheet;
-   import net.wg.gui.lobby.vehicleCustomization.controls.propertiesSheet.CustomizationSheetBaseBtnRenderer;
-   import net.wg.gui.lobby.vehicleCustomization.controls.propertiesSheet.CustomizationSheetBtnRenderer;
-   import net.wg.gui.lobby.vehicleCustomization.controls.propertiesSheet.CustomizationSheetContentRenderer;
-   import net.wg.gui.lobby.vehicleCustomization.controls.propertiesSheet.CustomizationSheetElementControls;
-   import net.wg.gui.lobby.vehicleCustomization.controls.propertiesSheet.CustomizationSheetIconAnimated;
-   import net.wg.gui.lobby.vehicleCustomization.controls.propertiesSheet.CustomizationSheetProjectionBtn;
-   import net.wg.gui.lobby.vehicleCustomization.controls.propertiesSheet.CustomizationSheetProjectionControls;
-   import net.wg.gui.lobby.vehicleCustomization.controls.propertiesSheet.CustomizationSheetRendererBase;
-   import net.wg.gui.lobby.vehicleCustomization.controls.propertiesSheet.CustomizationSheetScaleColorsRenderer;
-   import net.wg.gui.lobby.vehicleCustomization.controls.propertiesSheet.CustomizationSheetSwitchRenderer;
-   import net.wg.gui.lobby.vehicleCustomization.controls.propertiesSheet.TextFieldAnimated;
-   import net.wg.gui.lobby.vehicleCustomization.controls.propertiesSheet.inscriptionController.CustomizationHintImageWrapper;
-   import net.wg.gui.lobby.vehicleCustomization.controls.propertiesSheet.inscriptionController.CustomizationInscriptionController;
-   import net.wg.gui.lobby.vehicleCustomization.controls.propertiesSheet.inscriptionController.CustomizationInscriptionHint;
-   import net.wg.gui.lobby.vehicleCustomization.controls.seasonBar.CustomizaionSeasonsBar;
-   import net.wg.gui.lobby.vehicleCustomization.controls.seasonBar.CustomizationSeasonBGAnimation;
-   import net.wg.gui.lobby.vehicleCustomization.controls.seasonBar.CustomizationSeasonRenderer;
-   import net.wg.gui.lobby.vehicleCustomization.controls.seasonBar.CustomizationSeasonRendererAnimation;
-   import net.wg.gui.lobby.vehicleCustomization.controls.slot.CustomizationSlotBase;
-   import net.wg.gui.lobby.vehicleCustomization.data.BottomPanelBillVO;
-   import net.wg.gui.lobby.vehicleCustomization.data.BottomPanelVO;
    import net.wg.gui.lobby.vehicleCustomization.data.ConfirmCustomizationItemDialogVO;
-   import net.wg.gui.lobby.vehicleCustomization.data.CustomizationAnchorIdVO;
-   import net.wg.gui.lobby.vehicleCustomization.data.CustomizationAnchorInitVO;
-   import net.wg.gui.lobby.vehicleCustomization.data.CustomizationAnchorPositionVO;
-   import net.wg.gui.lobby.vehicleCustomization.data.CustomizationAnchorsSetVO;
-   import net.wg.gui.lobby.vehicleCustomization.data.CustomizationAnchorsStateVO;
-   import net.wg.gui.lobby.vehicleCustomization.data.CustomizationBillButtonVO;
-   import net.wg.gui.lobby.vehicleCustomization.data.CustomizationBillLineVO;
-   import net.wg.gui.lobby.vehicleCustomization.data.CustomizationBottomPanelInitVO;
-   import net.wg.gui.lobby.vehicleCustomization.data.CustomizationBottomPanelNotificationVO;
-   import net.wg.gui.lobby.vehicleCustomization.data.CustomizationCarouselFilterSelectedVO;
-   import net.wg.gui.lobby.vehicleCustomization.data.CustomizationEditedKitPopoverListVO;
-   import net.wg.gui.lobby.vehicleCustomization.data.CustomizationHeaderVO;
-   import net.wg.gui.lobby.vehicleCustomization.data.CustomizationItemIconRendererVO;
-   import net.wg.gui.lobby.vehicleCustomization.data.CustomizationItemPopoverHeaderVO;
-   import net.wg.gui.lobby.vehicleCustomization.data.CustomizationPopoverEditedItemRendererVO;
-   import net.wg.gui.lobby.vehicleCustomization.data.CustomizationPopoverItemRendererVO;
-   import net.wg.gui.lobby.vehicleCustomization.data.CustomizationPopoverKitRendererVO;
-   import net.wg.gui.lobby.vehicleCustomization.data.CustomizationPopoverProgressiveItemRendererVO;
-   import net.wg.gui.lobby.vehicleCustomization.data.CustomizationProgressiveKitPopoverListVO;
-   import net.wg.gui.lobby.vehicleCustomization.data.CustomizationPurchasesPopoverInitVO;
-   import net.wg.gui.lobby.vehicleCustomization.data.CustomizationPurchasesPopoverVO;
-   import net.wg.gui.lobby.vehicleCustomization.data.CustomizationRadioRendererVO;
-   import net.wg.gui.lobby.vehicleCustomization.data.CustomizationSlotIdVO;
-   import net.wg.gui.lobby.vehicleCustomization.data.CustomizationSlotUpdateVO;
-   import net.wg.gui.lobby.vehicleCustomization.data.CustomizationSwitcherVO;
-   import net.wg.gui.lobby.vehicleCustomization.data.CustomizationTabButtonVO;
-   import net.wg.gui.lobby.vehicleCustomization.data.CustomizationTabNavigatorVO;
-   import net.wg.gui.lobby.vehicleCustomization.data.CustomziationAnchorStateVO;
-   import net.wg.gui.lobby.vehicleCustomization.data.FiltersPopoverVO;
-   import net.wg.gui.lobby.vehicleCustomization.data.FiltersStateVO;
-   import net.wg.gui.lobby.vehicleCustomization.data.HistoricIndicatorVO;
-   import net.wg.gui.lobby.vehicleCustomization.data.ItemBrowserTabStateVO;
-   import net.wg.gui.lobby.vehicleCustomization.data.PriceRendererVO;
    import net.wg.gui.lobby.vehicleCustomization.data.SmallSlotVO;
-   import net.wg.gui.lobby.vehicleCustomization.data.customizationPanel.CustomizationBonusDeltaVO;
-   import net.wg.gui.lobby.vehicleCustomization.data.customizationPanel.CustomizationCarouselArrowVO;
-   import net.wg.gui.lobby.vehicleCustomization.data.customizationPanel.CustomizationCarouselBookmarkVO;
-   import net.wg.gui.lobby.vehicleCustomization.data.customizationPanel.CustomizationCarouselDataVO;
-   import net.wg.gui.lobby.vehicleCustomization.data.customizationPanel.CustomizationCarouselFilterVO;
-   import net.wg.gui.lobby.vehicleCustomization.data.customizationPanel.CustomizationCarouselRendererVO;
-   import net.wg.gui.lobby.vehicleCustomization.data.customizationPanel.CustomizationItemVO;
-   import net.wg.gui.lobby.vehicleCustomization.data.inscriptionController.CustomizationImageVO;
-   import net.wg.gui.lobby.vehicleCustomization.data.inscriptionController.CustomizationInscriptionHintVO;
-   import net.wg.gui.lobby.vehicleCustomization.data.propertiesSheet.CustomizationPropertiesSheetButtonsBlockVO;
-   import net.wg.gui.lobby.vehicleCustomization.data.propertiesSheet.CustomizationPropertiesSheetButtonsRendererVO;
-   import net.wg.gui.lobby.vehicleCustomization.data.propertiesSheet.CustomizationPropertiesSheetRendererVO;
-   import net.wg.gui.lobby.vehicleCustomization.data.propertiesSheet.CustomizationPropertiesSheetStyleRendererVO;
-   import net.wg.gui.lobby.vehicleCustomization.data.propertiesSheet.CustomizationPropertiesSheetVO;
-   import net.wg.gui.lobby.vehicleCustomization.data.purchase.PurchasesPopoverRendererVO;
-   import net.wg.gui.lobby.vehicleCustomization.data.seasonBar.CustomizationSeasonBarRendererVO;
-   import net.wg.gui.lobby.vehicleCustomization.data.styleInfo.BuyBtnVO;
-   import net.wg.gui.lobby.vehicleCustomization.data.styleInfo.ParamRevdererVO;
-   import net.wg.gui.lobby.vehicleCustomization.data.styleInfo.StyleInfoVO;
-   import net.wg.gui.lobby.vehicleCustomization.events.CustomizationAnchorEvent;
-   import net.wg.gui.lobby.vehicleCustomization.events.CustomizationAnchorSetEvent;
-   import net.wg.gui.lobby.vehicleCustomization.events.CustomizationBillLineRendererEvent;
-   import net.wg.gui.lobby.vehicleCustomization.events.CustomizationButtonEvent;
-   import net.wg.gui.lobby.vehicleCustomization.events.CustomizationCarouselScrollEvent;
-   import net.wg.gui.lobby.vehicleCustomization.events.CustomizationEvent;
-   import net.wg.gui.lobby.vehicleCustomization.events.CustomizationIndicatorEvent;
-   import net.wg.gui.lobby.vehicleCustomization.events.CustomizationItemEvent;
-   import net.wg.gui.lobby.vehicleCustomization.events.CustomizationItemSwitchEvent;
-   import net.wg.gui.lobby.vehicleCustomization.events.CustomizationSoundEvent;
-   import net.wg.gui.lobby.vehicleCustomization.events.CustomizationStyleInfoEvent;
-   import net.wg.gui.lobby.vehicleCustomization.events.CustomizationTabEvent;
-   import net.wg.gui.lobby.vehicleCustomization.events.propertiesSheet.CustomizationSheetRendererEvent;
-   import net.wg.gui.lobby.vehicleCustomization.events.propertiesSheet.ProjectionControlsEvent;
-   import net.wg.gui.lobby.vehicleCustomization.progressionStyles.StageSwitcher;
    import net.wg.gui.lobby.vehicleCustomization.tooltips.inblocks.blocks.CustomizationImageBlock;
    import net.wg.gui.lobby.vehicleCustomization.tooltips.inblocks.blocks.CustomizationItemPropertyBlock;
    import net.wg.gui.lobby.vehicleCustomization.tooltips.inblocks.blocks.ImageTextBlockProgressive;
@@ -2635,6 +2492,8 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.vehiclePreview.bottomPanel.SetVehiclesView;
    import net.wg.gui.lobby.vehiclePreview.bottomPanel.VPBottomPanel;
    import net.wg.gui.lobby.vehiclePreview.bottomPanel.VPBottomPanelEarlyAccess;
+   import net.wg.gui.lobby.vehiclePreview.bottomPanel.VPBottomPanelHistoricalBattles;
+   import net.wg.gui.lobby.vehiclePreview.bottomPanel.VPBottomPanelHistoricalBattlesRestore;
    import net.wg.gui.lobby.vehiclePreview.bottomPanel.VPBottomPanelOfferGift;
    import net.wg.gui.lobby.vehiclePreview.bottomPanel.VPBottomPanelShowcaseStyleBuying;
    import net.wg.gui.lobby.vehiclePreview.bottomPanel.VPBottomPanelStatTrack;
@@ -2650,6 +2509,8 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.vehiclePreview.data.VPBuyingPanelVO;
    import net.wg.gui.lobby.vehiclePreview.data.VPCompensationVO;
    import net.wg.gui.lobby.vehiclePreview.data.VPCouponVO;
+   import net.wg.gui.lobby.vehiclePreview.data.VPHBBuyingPanelVO;
+   import net.wg.gui.lobby.vehiclePreview.data.VPHBRestorePanelVO;
    import net.wg.gui.lobby.vehiclePreview.data.VPOfferGiftBuyingPanelVO;
    import net.wg.gui.lobby.vehiclePreview.data.VPOfferVO;
    import net.wg.gui.lobby.vehiclePreview.data.VPPackItemVO;
@@ -3152,6 +3013,8 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_DATA_CONSTANTS_GENERATED_HANGAR_CONSTS:Class = HANGAR_CONSTS;
       
       public static const NET_WG_DATA_CONSTANTS_GENERATED_HANGAR_HEADER_QUESTS:Class = HANGAR_HEADER_QUESTS;
+      
+      public static const NET_WG_DATA_CONSTANTS_GENERATED_HISTORICALBATTLES_ALIASES:Class = HISTORICALBATTLES_ALIASES;
       
       public static const NET_WG_DATA_CONSTANTS_GENERATED_INGAMEMENU_CONSTANTS:Class = INGAMEMENU_CONSTANTS;
       
@@ -5469,9 +5332,13 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_LOBBY_HANGAR_EVENTENTRYPOINT_GFWRAPPER_MARATHONENTRYPOINT:Class = MarathonEntryPoint;
       
+      public static const NET_WG_GUI_LOBBY_HANGAR_EVENTENTRYPOINT_GFWRAPPER_PARAGONSBANNERENTRYPOINT:Class = ParagonsBannerEntryPoint;
+      
       public static const NET_WG_GUI_LOBBY_HANGAR_EVENTENTRYPOINT_GFWRAPPER_RANKEDENTRYPOINT:Class = RankedEntryPoint;
       
       public static const NET_WG_GUI_LOBBY_HANGAR_EVENTENTRYPOINT_GFWRAPPER_RESIZABLEENTRYPOINT:Class = ResizableEntryPoint;
+      
+      public static const NET_WG_GUI_LOBBY_HANGAR_EVENTENTRYPOINT_GFWRAPPER_SE22ENTRYPOINT:Class = SE22EntryPoint;
       
       public static const NET_WG_GUI_LOBBY_HANGAR_EVENTENTRYPOINT_GFWRAPPER_SHOPSALESENTRYPOINT:Class = ShopSalesEntryPoint;
       
@@ -5617,6 +5484,8 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_LOBBY_HEADER_HEADERBUTTONBAR_HBC_FINANCE:Class = HBC_Finance;
       
+      public static const NET_WG_GUI_LOBBY_HEADER_HEADERBUTTONBAR_HBC_HBSQUAD:Class = HBC_HBSquad;
+      
       public static const NET_WG_GUI_LOBBY_HEADER_HEADERBUTTONBAR_HBC_PERSONALRESERVES:Class = HBC_PersonalReserves;
       
       public static const NET_WG_GUI_LOBBY_HEADER_HEADERBUTTONBAR_HBC_PERSONALRESERVESWIDGETINJECT:Class = HBC_PersonalReservesWidgetInject;
@@ -5642,6 +5511,8 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_LOBBY_HEADER_HEADERBUTTONBAR_HEADERBUTTONCONTENTITEM:Class = HeaderButtonContentItem;
       
       public static const NET_WG_GUI_LOBBY_HEADER_HEADERBUTTONBAR_HEADERBUTTONSHELPER:Class = HeaderButtonsHelper;
+      
+      public static const NET_WG_GUI_LOBBY_HEADER_HEADERBUTTONBAR_CONTAINER_HBPLATOONSHIELDICONCONTAINER:Class = HBPlatoonShieldIconContainer;
       
       public static const NET_WG_GUI_LOBBY_HEADER_HEADERBUTTONBAR_CONTAINER_PLATOONSHIELDICONCONTAINER:Class = PlatoonShieldIconContainer;
       
@@ -5698,6 +5569,10 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_LOBBY_HEADER_VO_HEADERBUTTONVO:Class = HeaderButtonVo;
       
       public static const NET_WG_GUI_LOBBY_HEADER_VO_IHBC_VO:Class = IHBC_VO;
+      
+      public static const NET_WG_GUI_LOBBY_HISTORICALBATTLES_HBHANGARCOMPONENTSCONTAINER:Class = HBHangarComponentsContainer;
+      
+      public static const NET_WG_GUI_LOBBY_HISTORICALBATTLES_CONSTANTS_HB_HANGAR_COMPONENTS:Class = HB_HANGAR_COMPONENTS;
       
       public static const NET_WG_GUI_LOBBY_IMAGEVIEW_IMAGEVIEW:Class = ImageView;
       
@@ -7369,6 +7244,14 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_LOBBY_STORAGE_CATEGORIES_CARDS_RENTVEHICLECARD:Class = RentVehicleCard;
       
+      public static const NET_WG_GUI_LOBBY_STORAGE_CATEGORIES_CARDS_RESTOREBASECARD:Class = RestoreBaseCard;
+      
+      public static const NET_WG_GUI_LOBBY_STORAGE_CATEGORIES_CARDS_RESTOREBASECARDVO:Class = RestoreBaseCardVO;
+      
+      public static const NET_WG_GUI_LOBBY_STORAGE_CATEGORIES_CARDS_RESTOREDEVICECARD:Class = RestoreDeviceCard;
+      
+      public static const NET_WG_GUI_LOBBY_STORAGE_CATEGORIES_CARDS_RESTOREDEVICECARDVO:Class = RestoreDeviceCardVO;
+      
       public static const NET_WG_GUI_LOBBY_STORAGE_CATEGORIES_CARDS_RESTOREVEHICLECARD:Class = RestoreVehicleCard;
       
       public static const NET_WG_GUI_LOBBY_STORAGE_CATEGORIES_CARDS_SELECTABLECARD:Class = SelectableCard;
@@ -7390,6 +7273,8 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_LOBBY_STORAGE_CATEGORIES_CARDS_CONFIGS_CUSTOMIZATIONCARDIMAGECONFIG:Class = CustomizationCardImageConfig;
       
       public static const NET_WG_GUI_LOBBY_STORAGE_CATEGORIES_CARDS_CONFIGS_PROGRESSIONLEVELPOSITIONCONFIG:Class = ProgressionLevelPositionConfig;
+      
+      public static const NET_WG_GUI_LOBBY_STORAGE_CATEGORIES_CARDS_CONFIGS_RESTOREDEVICECARDIMAGECONFIG:Class = RestoreDeviceCardImageConfig;
       
       public static const NET_WG_GUI_LOBBY_STORAGE_CATEGORIES_CUSTOMIZATION_STORAGECATEGORYCUSTOMIZATIONVIEW:Class = StorageCategoryCustomizationView;
       
@@ -7443,6 +7328,10 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_LOBBY_STORAGE_CATEGORIES_STORAGE_STORAGEMODULESANDVEHICLEFILTERBLOCK:Class = StorageModulesAndVehicleFilterBlock;
       
+      public static const NET_WG_GUI_LOBBY_STORAGE_CATEGORIES_STORAGE_STORAGERESTOREDEVICESCONTENT:Class = StorageRestoreDevicesContent;
+      
+      public static const NET_WG_GUI_LOBBY_STORAGE_CATEGORIES_STORAGE_STORAGERESTOREDEVICESVIEW:Class = StorageRestoreDevicesView;
+      
       public static const NET_WG_GUI_LOBBY_STORAGE_CATEGORIES_STORAGE_STORAGETYPEANDNATIONFILTERBLOCK:Class = StorageTypeAndNationFilterBlock;
       
       public static const NET_WG_GUI_LOBBY_STORAGE_CATEGORIES_STORAGE_STORAGETYPEANDVEHICLEFILTERBLOCK:Class = StorageTypeAndVehicleFilterBlock;
@@ -7464,6 +7353,10 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_LOBBY_STORAGE_DATA_STORAGEMODULESFILTERVO:Class = StorageModulesFilterVO;
       
       public static const NET_WG_GUI_LOBBY_STORAGE_DATA_STORAGENATIONFILTERVO:Class = StorageNationFilterVO;
+      
+      public static const NET_WG_GUI_LOBBY_STORAGE_DATA_STORAGERESTOREDEVICESBUTTONVO:Class = StorageRestoreDevicesButtonVO;
+      
+      public static const NET_WG_GUI_LOBBY_STORAGE_DATA_STORAGERESTOREDEVICESVO:Class = StorageRestoreDevicesVO;
       
       public static const NET_WG_GUI_LOBBY_STORAGE_DATA_STORAGEVO:Class = StorageVO;
       
@@ -7881,333 +7774,15 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_LOBBY_VEHICLECOMPARE_NODES_MODULESTREEDATAPROVIDER:Class = ModulesTreeDataProvider;
       
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_BOTTOMPANEL:Class = BottomPanel;
-      
       public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CONFIRMCUSTOMIZATIONITEMDIALOG:Class = ConfirmCustomizationItemDialog;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CUSTOMIZATIONANCHORRENDERER:Class = CustomizationAnchorRenderer;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CUSTOMIZATIONANCHORSSET:Class = CustomizationAnchorsSet;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CUSTOMIZATIONANCHORSWITCHERS:Class = CustomizationAnchorSwitchers;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CUSTOMIZATIONBILL:Class = CustomizationBill;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CUSTOMIZATIONBUYRENDERER:Class = CustomizationBuyRenderer;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CUSTOMIZATIONCAROUSEL:Class = CustomizationCarousel;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CUSTOMIZATIONCAROUSELBOOKMARK:Class = CustomizationCarouselBookmark;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CUSTOMIZATIONCAROUSELLAYOUTCONTROLLER:Class = CustomizationCarouselLayoutController;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CUSTOMIZATIONCAROUSELLAYOUTRENDERER:Class = CustomizationCarouselLayoutRenderer;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CUSTOMIZATIONDECALANCHORRENDERER:Class = CustomizationDecalAnchorRenderer;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CUSTOMIZATIONEDITEDKITPOPOVER:Class = CustomizationEditedKitPopover;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CUSTOMIZATIONENDPOINTICON:Class = CustomizationEndPointIcon;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CUSTOMIZATIONFADEINFADEOUTMOVIECLIP:Class = CustomizationFadeInFadeOutMovieClip;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CUSTOMIZATIONFILTERSPOPOVER:Class = CustomizationFiltersPopover;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CUSTOMIZATIONHEADER:Class = CustomizationHeader;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CUSTOMIZATIONHELPER:Class = CustomizationHelper;
       
       public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CUSTOMIZATIONITEMPROPERTYRENDERER:Class = CustomizationItemPropertyRenderer;
       
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CUSTOMIZATIONITEMSPOPOVER:Class = CustomizationItemsPopover;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CUSTOMIZATIONKITPOPOVER:Class = CustomizationKitPopover;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CUSTOMIZATIONKITPOPOVERCONTENT:Class = CustomizationKitPopoverContent;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CUSTOMIZATIONKITTABLE:Class = CustomizationKitTable;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CUSTOMIZATIONMAINVIEW:Class = CustomizationMainView;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CUSTOMIZATIONNONHISTORICICON:Class = CustomizationNonHistoricIcon;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CUSTOMIZATIONNOTIFICATION:Class = CustomizationNotification;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CUSTOMIZATIONPROGRESSIVEKITPOPOVER:Class = CustomizationProgressiveKitPopover;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CUSTOMIZATIONPURCHASESLISTITEMRENDERER:Class = CustomizationPurchasesListItemRenderer;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CUSTOMIZATIONSALERIBBON:Class = CustomizationSaleRibbon;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CUSTOMIZATIONSHARED:Class = CustomizationShared;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CUSTOMIZATIONSIMPLEANCHOR:Class = CustomizationSimpleAnchor;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CUSTOMIZATIONSTYLEINFO:Class = CustomizationStyleInfo;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CUSTOMIZATIONSTYLEINFOBLOCK:Class = CustomizationStyleInfoBlock;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CUSTOMIZATIONSTYLESCROLLCONTAINER:Class = CustomizationStyleScrollContainer;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CUSTOMIZATIONSWITCHERRIBBON:Class = CustomizationSwitcherRibbon;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CUSTOMIZATIONTABNAVIGATOR:Class = CustomizationTabNavigator;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CUSTOMIZATIONVEHICLEVIEW:Class = CustomizationVehicleView;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_ICUSTOMIZATIONENDPOINTICON:Class = ICustomizationEndPointIcon;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_ISLOTSPANELRENDERER:Class = ISlotsPanelRenderer;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_ITEMBROWSERDISABLEOVERLAY:Class = ItemBrowserDisableOverlay;
-      
       public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_PROPERTYSHEETSEASONITEMPOPOVER:Class = PropertySheetSeasonItemPopover;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_STYLEINFORENDERER:Class = StyleInfoRenderer;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CONTROLS_CAROUSELITEMRENDERER:Class = CarouselItemRenderer;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CONTROLS_CAROUSELRENDERERATTACHED:Class = CarouselRendererAttached;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CONTROLS_CAROUSELRENDERERATTACHEDBASE:Class = CarouselRendererAttachedBase;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CONTROLS_CAROUSELRENDERERATTACHEDDECAL:Class = CarouselRendererAttachedDecal;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CONTROLS_CHECKBOXICON:Class = CheckBoxIcon;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CONTROLS_CUSTOMIZATIONBILLLINEBUTTON:Class = CustomizationBillLineButton;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CONTROLS_CUSTOMIZATIONBILLLINERENDERER:Class = CustomizationBillLineRenderer;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CONTROLS_CUSTOMIZATIONBONUSDELTA:Class = CustomizationBonusDelta;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CONTROLS_CUSTOMIZATIONITEMICONRENDERER:Class = CustomizationItemIconRenderer;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CONTROLS_CUSTOMIZATIONPOPOVEREDITEDITEMRENDERER:Class = CustomizationPopoverEditedItemRenderer;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CONTROLS_CUSTOMIZATIONPOPOVERITEMRENDERER:Class = CustomizationPopoverItemRenderer;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CONTROLS_CUSTOMIZATIONPOPOVERKITRENDERER:Class = CustomizationPopoverKitRenderer;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CONTROLS_CUSTOMIZATIONPOPOVERPROGRESSIVEITEMRENDERER:Class = CustomizationPopoverProgressiveItemRenderer;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CONTROLS_CUSTOMIZATIONRADIALBUTTON:Class = CustomizationRadialButton;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CONTROLS_CUSTOMIZATIONSWITCHER:Class = CustomizationSwitcher;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CONTROLS_CUSTOMIZATIONSWITCHERBUTTON:Class = CustomizationSwitcherButton;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CONTROLS_FILTERCOUNTERTFCONTAINER:Class = FilterCounterTFContainer;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CONTROLS_HISTORICINDICATOR:Class = HistoricIndicator;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CONTROLS_IMAGEHITAREAWRAPPER:Class = ImageHitAreaWrapper;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CONTROLS_ITEMSLOT:Class = ItemSlot;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CONTROLS_PRICEITEMRENDERER:Class = PriceItemRenderer;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CONTROLS_PROGRESSIONENTRYPOINT:Class = ProgressionEntryPoint;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CONTROLS_RADIOBUTTONLISTSELECTIONNAVIGATOR:Class = RadioButtonListSelectionNavigator;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CONTROLS_RADIORENDERER:Class = RadioRenderer;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CONTROLS_SHOPENTRYPOINT:Class = ShopEntryPoint;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CONTROLS_BOTTOMPANEL_CUSTOMIZATIONBOTTOMPANELTABBAR:Class = CustomizationBottomPanelTabBar;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CONTROLS_BOTTOMPANEL_CUSTOMIZATIONBOTTOMPANELTABBUTTON:Class = CustomizationBottomPanelTabButton;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CONTROLS_BOTTOMPANEL_CUSTOMIZATIONCAROUSELFILTERS:Class = CustomizationCarouselFilters;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CONTROLS_BOTTOMPANEL_CUSTOMIZATIONCAROUSELOVERLAY:Class = CustomizationCarouselOverlay;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CONTROLS_BOTTOMPANEL_CUSTOMIZATIONTABLAYOUT:Class = CustomizationTabLayout;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CONTROLS_MAGNETICTOOL_MAGNETICTOOLCONTROLLER:Class = MagneticToolController;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CONTROLS_PROPERTIESSHEET_CUSTOMIZATIONPROPERTIESSHEET:Class = CustomizationPropertiesSheet;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CONTROLS_PROPERTIESSHEET_CUSTOMIZATIONSHEETBASEBTNRENDERER:Class = CustomizationSheetBaseBtnRenderer;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CONTROLS_PROPERTIESSHEET_CUSTOMIZATIONSHEETBTNRENDERER:Class = CustomizationSheetBtnRenderer;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CONTROLS_PROPERTIESSHEET_CUSTOMIZATIONSHEETCONTENTRENDERER:Class = CustomizationSheetContentRenderer;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CONTROLS_PROPERTIESSHEET_CUSTOMIZATIONSHEETELEMENTCONTROLS:Class = CustomizationSheetElementControls;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CONTROLS_PROPERTIESSHEET_CUSTOMIZATIONSHEETICONANIMATED:Class = CustomizationSheetIconAnimated;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CONTROLS_PROPERTIESSHEET_CUSTOMIZATIONSHEETPROJECTIONBTN:Class = CustomizationSheetProjectionBtn;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CONTROLS_PROPERTIESSHEET_CUSTOMIZATIONSHEETPROJECTIONCONTROLS:Class = CustomizationSheetProjectionControls;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CONTROLS_PROPERTIESSHEET_CUSTOMIZATIONSHEETRENDERERBASE:Class = CustomizationSheetRendererBase;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CONTROLS_PROPERTIESSHEET_CUSTOMIZATIONSHEETSCALECOLORSRENDERER:Class = CustomizationSheetScaleColorsRenderer;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CONTROLS_PROPERTIESSHEET_CUSTOMIZATIONSHEETSWITCHRENDERER:Class = CustomizationSheetSwitchRenderer;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CONTROLS_PROPERTIESSHEET_TEXTFIELDANIMATED:Class = TextFieldAnimated;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CONTROLS_PROPERTIESSHEET_INSCRIPTIONCONTROLLER_CUSTOMIZATIONHINTIMAGEWRAPPER:Class = CustomizationHintImageWrapper;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CONTROLS_PROPERTIESSHEET_INSCRIPTIONCONTROLLER_CUSTOMIZATIONINSCRIPTIONCONTROLLER:Class = CustomizationInscriptionController;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CONTROLS_PROPERTIESSHEET_INSCRIPTIONCONTROLLER_CUSTOMIZATIONINSCRIPTIONHINT:Class = CustomizationInscriptionHint;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CONTROLS_SEASONBAR_CUSTOMIZAIONSEASONSBAR:Class = CustomizaionSeasonsBar;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CONTROLS_SEASONBAR_CUSTOMIZATIONSEASONBGANIMATION:Class = CustomizationSeasonBGAnimation;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CONTROLS_SEASONBAR_CUSTOMIZATIONSEASONRENDERER:Class = CustomizationSeasonRenderer;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CONTROLS_SEASONBAR_CUSTOMIZATIONSEASONRENDERERANIMATION:Class = CustomizationSeasonRendererAnimation;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CONTROLS_SLOT_CUSTOMIZATIONSLOTBASE:Class = CustomizationSlotBase;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_DATA_BOTTOMPANELBILLVO:Class = BottomPanelBillVO;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_DATA_BOTTOMPANELVO:Class = BottomPanelVO;
       
       public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_DATA_CONFIRMCUSTOMIZATIONITEMDIALOGVO:Class = ConfirmCustomizationItemDialogVO;
       
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_DATA_CUSTOMIZATIONANCHORIDVO:Class = CustomizationAnchorIdVO;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_DATA_CUSTOMIZATIONANCHORINITVO:Class = CustomizationAnchorInitVO;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_DATA_CUSTOMIZATIONANCHORPOSITIONVO:Class = CustomizationAnchorPositionVO;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_DATA_CUSTOMIZATIONANCHORSSETVO:Class = CustomizationAnchorsSetVO;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_DATA_CUSTOMIZATIONANCHORSSTATEVO:Class = CustomizationAnchorsStateVO;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_DATA_CUSTOMIZATIONBILLBUTTONVO:Class = CustomizationBillButtonVO;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_DATA_CUSTOMIZATIONBILLLINEVO:Class = CustomizationBillLineVO;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_DATA_CUSTOMIZATIONBOTTOMPANELINITVO:Class = CustomizationBottomPanelInitVO;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_DATA_CUSTOMIZATIONBOTTOMPANELNOTIFICATIONVO:Class = CustomizationBottomPanelNotificationVO;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_DATA_CUSTOMIZATIONCAROUSELFILTERSELECTEDVO:Class = CustomizationCarouselFilterSelectedVO;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_DATA_CUSTOMIZATIONEDITEDKITPOPOVERLISTVO:Class = CustomizationEditedKitPopoverListVO;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_DATA_CUSTOMIZATIONHEADERVO:Class = CustomizationHeaderVO;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_DATA_CUSTOMIZATIONITEMICONRENDERERVO:Class = CustomizationItemIconRendererVO;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_DATA_CUSTOMIZATIONITEMPOPOVERHEADERVO:Class = CustomizationItemPopoverHeaderVO;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_DATA_CUSTOMIZATIONPOPOVEREDITEDITEMRENDERERVO:Class = CustomizationPopoverEditedItemRendererVO;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_DATA_CUSTOMIZATIONPOPOVERITEMRENDERERVO:Class = CustomizationPopoverItemRendererVO;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_DATA_CUSTOMIZATIONPOPOVERKITRENDERERVO:Class = CustomizationPopoverKitRendererVO;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_DATA_CUSTOMIZATIONPOPOVERPROGRESSIVEITEMRENDERERVO:Class = CustomizationPopoverProgressiveItemRendererVO;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_DATA_CUSTOMIZATIONPROGRESSIVEKITPOPOVERLISTVO:Class = CustomizationProgressiveKitPopoverListVO;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_DATA_CUSTOMIZATIONPURCHASESPOPOVERINITVO:Class = CustomizationPurchasesPopoverInitVO;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_DATA_CUSTOMIZATIONPURCHASESPOPOVERVO:Class = CustomizationPurchasesPopoverVO;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_DATA_CUSTOMIZATIONRADIORENDERERVO:Class = CustomizationRadioRendererVO;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_DATA_CUSTOMIZATIONSLOTIDVO:Class = CustomizationSlotIdVO;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_DATA_CUSTOMIZATIONSLOTUPDATEVO:Class = CustomizationSlotUpdateVO;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_DATA_CUSTOMIZATIONSWITCHERVO:Class = CustomizationSwitcherVO;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_DATA_CUSTOMIZATIONTABBUTTONVO:Class = CustomizationTabButtonVO;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_DATA_CUSTOMIZATIONTABNAVIGATORVO:Class = CustomizationTabNavigatorVO;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_DATA_CUSTOMZIATIONANCHORSTATEVO:Class = CustomziationAnchorStateVO;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_DATA_FILTERSPOPOVERVO:Class = FiltersPopoverVO;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_DATA_FILTERSSTATEVO:Class = FiltersStateVO;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_DATA_HISTORICINDICATORVO:Class = HistoricIndicatorVO;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_DATA_ITEMBROWSERTABSTATEVO:Class = ItemBrowserTabStateVO;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_DATA_PRICERENDERERVO:Class = PriceRendererVO;
-      
       public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_DATA_SMALLSLOTVO:Class = SmallSlotVO;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_DATA_CUSTOMIZATIONPANEL_CUSTOMIZATIONBONUSDELTAVO:Class = CustomizationBonusDeltaVO;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_DATA_CUSTOMIZATIONPANEL_CUSTOMIZATIONCAROUSELARROWVO:Class = CustomizationCarouselArrowVO;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_DATA_CUSTOMIZATIONPANEL_CUSTOMIZATIONCAROUSELBOOKMARKVO:Class = CustomizationCarouselBookmarkVO;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_DATA_CUSTOMIZATIONPANEL_CUSTOMIZATIONCAROUSELDATAVO:Class = CustomizationCarouselDataVO;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_DATA_CUSTOMIZATIONPANEL_CUSTOMIZATIONCAROUSELFILTERVO:Class = CustomizationCarouselFilterVO;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_DATA_CUSTOMIZATIONPANEL_CUSTOMIZATIONCAROUSELRENDERERVO:Class = CustomizationCarouselRendererVO;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_DATA_CUSTOMIZATIONPANEL_CUSTOMIZATIONITEMVO:Class = CustomizationItemVO;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_DATA_INSCRIPTIONCONTROLLER_CUSTOMIZATIONIMAGEVO:Class = CustomizationImageVO;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_DATA_INSCRIPTIONCONTROLLER_CUSTOMIZATIONINSCRIPTIONHINTVO:Class = CustomizationInscriptionHintVO;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_DATA_PROPERTIESSHEET_CUSTOMIZATIONPROPERTIESSHEETBUTTONSBLOCKVO:Class = CustomizationPropertiesSheetButtonsBlockVO;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_DATA_PROPERTIESSHEET_CUSTOMIZATIONPROPERTIESSHEETBUTTONSRENDERERVO:Class = CustomizationPropertiesSheetButtonsRendererVO;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_DATA_PROPERTIESSHEET_CUSTOMIZATIONPROPERTIESSHEETRENDERERVO:Class = CustomizationPropertiesSheetRendererVO;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_DATA_PROPERTIESSHEET_CUSTOMIZATIONPROPERTIESSHEETSTYLERENDERERVO:Class = CustomizationPropertiesSheetStyleRendererVO;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_DATA_PROPERTIESSHEET_CUSTOMIZATIONPROPERTIESSHEETVO:Class = CustomizationPropertiesSheetVO;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_DATA_PURCHASE_PURCHASESPOPOVERRENDERERVO:Class = PurchasesPopoverRendererVO;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_DATA_SEASONBAR_CUSTOMIZATIONSEASONBARRENDERERVO:Class = CustomizationSeasonBarRendererVO;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_DATA_STYLEINFO_BUYBTNVO:Class = BuyBtnVO;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_DATA_STYLEINFO_PARAMREVDERERVO:Class = ParamRevdererVO;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_DATA_STYLEINFO_STYLEINFOVO:Class = StyleInfoVO;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_EVENTS_CUSTOMIZATIONANCHOREVENT:Class = CustomizationAnchorEvent;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_EVENTS_CUSTOMIZATIONANCHORSETEVENT:Class = CustomizationAnchorSetEvent;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_EVENTS_CUSTOMIZATIONBILLLINERENDEREREVENT:Class = CustomizationBillLineRendererEvent;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_EVENTS_CUSTOMIZATIONBUTTONEVENT:Class = CustomizationButtonEvent;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_EVENTS_CUSTOMIZATIONCAROUSELSCROLLEVENT:Class = CustomizationCarouselScrollEvent;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_EVENTS_CUSTOMIZATIONEVENT:Class = CustomizationEvent;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_EVENTS_CUSTOMIZATIONINDICATOREVENT:Class = CustomizationIndicatorEvent;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_EVENTS_CUSTOMIZATIONITEMEVENT:Class = CustomizationItemEvent;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_EVENTS_CUSTOMIZATIONITEMSWITCHEVENT:Class = CustomizationItemSwitchEvent;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_EVENTS_CUSTOMIZATIONSOUNDEVENT:Class = CustomizationSoundEvent;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_EVENTS_CUSTOMIZATIONSTYLEINFOEVENT:Class = CustomizationStyleInfoEvent;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_EVENTS_CUSTOMIZATIONTABEVENT:Class = CustomizationTabEvent;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_EVENTS_PROPERTIESSHEET_CUSTOMIZATIONSHEETRENDEREREVENT:Class = CustomizationSheetRendererEvent;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_EVENTS_PROPERTIESSHEET_PROJECTIONCONTROLSEVENT:Class = ProjectionControlsEvent;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_PROGRESSIONSTYLES_STAGESWITCHER:Class = StageSwitcher;
       
       public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_TOOLTIPS_INBLOCKS_BLOCKS_CUSTOMIZATIONIMAGEBLOCK:Class = CustomizationImageBlock;
       
@@ -8301,6 +7876,10 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_LOBBY_VEHICLEPREVIEW_BOTTOMPANEL_VPBOTTOMPANELEARLYACCESS:Class = VPBottomPanelEarlyAccess;
       
+      public static const NET_WG_GUI_LOBBY_VEHICLEPREVIEW_BOTTOMPANEL_VPBOTTOMPANELHISTORICALBATTLES:Class = VPBottomPanelHistoricalBattles;
+      
+      public static const NET_WG_GUI_LOBBY_VEHICLEPREVIEW_BOTTOMPANEL_VPBOTTOMPANELHISTORICALBATTLESRESTORE:Class = VPBottomPanelHistoricalBattlesRestore;
+      
       public static const NET_WG_GUI_LOBBY_VEHICLEPREVIEW_BOTTOMPANEL_VPBOTTOMPANELOFFERGIFT:Class = VPBottomPanelOfferGift;
       
       public static const NET_WG_GUI_LOBBY_VEHICLEPREVIEW_BOTTOMPANEL_VPBOTTOMPANELSHOWCASESTYLEBUYING:Class = VPBottomPanelShowcaseStyleBuying;
@@ -8328,6 +7907,10 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_LOBBY_VEHICLEPREVIEW_DATA_VPCOMPENSATIONVO:Class = VPCompensationVO;
       
       public static const NET_WG_GUI_LOBBY_VEHICLEPREVIEW_DATA_VPCOUPONVO:Class = VPCouponVO;
+      
+      public static const NET_WG_GUI_LOBBY_VEHICLEPREVIEW_DATA_VPHBBUYINGPANELVO:Class = VPHBBuyingPanelVO;
+      
+      public static const NET_WG_GUI_LOBBY_VEHICLEPREVIEW_DATA_VPHBRESTOREPANELVO:Class = VPHBRestorePanelVO;
       
       public static const NET_WG_GUI_LOBBY_VEHICLEPREVIEW_DATA_VPOFFERGIFTBUYINGPANELVO:Class = VPOfferGiftBuyingPanelVO;
       

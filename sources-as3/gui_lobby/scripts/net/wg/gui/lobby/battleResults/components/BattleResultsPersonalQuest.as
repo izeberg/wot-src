@@ -29,19 +29,15 @@ package net.wg.gui.lobby.battleResults.components
       
       private static const LINK_BTN:String = "LinkBtn_UI";
       
-      private static const CONDITIONS_BASE_OFFSET:int = 19;
-      
       private static const LINK_BTN_PADDING_TOP:int = 1;
       
       private static const LINK_BTN_PADDING_LEFT:int = 8;
       
       private static const LINK_BTN_PADDING_H:int = 5;
       
-      private static const BOTTOM_QUEST_OFFSET:int = 24;
-      
       private static const QUEST_STATUS_PADDING_TOP:int = 4;
       
-      private static const QUEST_DESCR_CONTENT_TF_Y:int = 38;
+      private static const QUEST_CONTENT_TF_Y:int = 38;
       
       private static const QUEST_DESCR_TF_Y:int = 29;
       
@@ -55,7 +51,7 @@ package net.wg.gui.lobby.battleResults.components
       
       private static const QUEST_TITLE_TF_MAX_WIDTH:int = 280;
       
-      private static const PERSONAL_QUEST_LINK:String = "PersonalConditionUI";
+      private static const PERSONAL_CONDITION_LINK:String = "PersonalConditionUI";
        
       
       public var questTitleTF:TextField = null;
@@ -79,10 +75,6 @@ package net.wg.gui.lobby.battleResults.components
       private var _factory:IClassFactory;
       
       private var _toolTipMgr:ITooltipMgr;
-      
-      private var prevCondHeight:int = 0;
-      
-      private var lastYpos:int = 0;
       
       public function BattleResultsPersonalQuest()
       {
@@ -161,12 +153,10 @@ package net.wg.gui.lobby.battleResults.components
             }
             _loc2_++;
          }
-         this.setQuestPosition();
       }
       
       override protected function onDispose() : void
       {
-         var _loc1_:PersonalCondition = null;
          if(this._linkBtn != null)
          {
             this._linkBtn.removeEventListener(ButtonEvent.CLICK,this.onLinkBtnClickHandler);
@@ -197,11 +187,6 @@ package net.wg.gui.lobby.battleResults.components
          this._factory = null;
          this._toolTipMgr = null;
          this.deleteConditions();
-         for each(_loc1_ in this.quests)
-         {
-            _loc1_.dispose();
-         }
-         this.quests.splice(0,this.quests.length);
          this.quests = null;
          super.onDispose();
       }
@@ -225,7 +210,6 @@ package net.wg.gui.lobby.battleResults.components
       
       private function doLayout() : void
       {
-         var _loc1_:int = 0;
          var _loc2_:int = 0;
          this.questStatus.x = width - this.questStatus.width - STATE_RIGHT | 0;
          this.questStatus.y = this.questTitleTF.y + QUEST_STATUS_PADDING_TOP | 0;
@@ -235,18 +219,19 @@ package net.wg.gui.lobby.battleResults.components
             this._linkBtn.x = this.questTitleTF.x + this.questTitleTF.width + LINK_BTN_PADDING_LEFT | 0;
             this._linkBtn.y = this.questTitleTF.y + (this.questTitleTF.height - this._linkBtn.height >> 1) + LINK_BTN_PADDING_TOP | 0;
          }
+         var _loc1_:PersonalCondition = null;
          if(this.collapsedToggleBtn.selected && this._model.collapsedToggleBtnVisible && this._model.personalInfo != null)
          {
-            this.questDescrTF.y = QUEST_DESCR_CONTENT_TF_Y;
-            this.setQuestPosition();
-            this.lineMC.y = this.lastYpos + this.prevCondHeight + LINE_SEPARATOR_PADDING | 0;
+            this.questDescrTF.y = QUEST_CONTENT_TF_Y;
             this.questDescrTF.visible = this._hasQuestDescr;
-            _loc1_ = 0;
-            while(_loc1_ < this.quests.length)
+            _loc2_ = !!this._hasQuestDescr ? int(this.questDescrTF.y + this.questDescrTF.height) : int(QUEST_CONTENT_TF_Y);
+            for each(_loc1_ in this.quests)
             {
-               this.quests[_loc1_].visible = true;
-               _loc1_++;
+               _loc1_.y = _loc2_;
+               _loc1_.visible = true;
+               _loc2_ += _loc1_.getTextHeight() + (QUEST_CONTENT_TF_Y >> 2);
             }
+            this.lineMC.y = _loc2_ + LINE_SEPARATOR_PADDING | 0;
          }
          else
          {
@@ -261,46 +246,22 @@ package net.wg.gui.lobby.battleResults.components
                this.questDescrTF.y = 0;
                this.questDescrTF.visible = false;
             }
-            _loc2_ = 0;
-            while(_loc2_ < this.quests.length)
+            for each(_loc1_ in this.quests)
             {
-               this.quests[_loc2_].y = 0;
-               this.quests[_loc2_].visible = false;
-               _loc2_++;
+               _loc1_.y = 0;
+               _loc1_.visible = false;
             }
          }
          setSize(width,this.lineMC.y);
          dispatchEvent(new Event(Event.RESIZE,true));
       }
       
-      private function setQuestPosition() : void
-      {
-         var _loc1_:PersonalCondition = null;
-         this.prevCondHeight = 0;
-         this.lastYpos = 0;
-         for each(_loc1_ in this.quests)
-         {
-            if(this.lastYpos <= 0)
-            {
-               this.lastYpos = CONDITIONS_BASE_OFFSET;
-            }
-            else
-            {
-               this.lastYpos = CONDITIONS_BASE_OFFSET / 2 - 2 + this.prevCondHeight;
-            }
-            _loc1_.y = this.lastYpos;
-            this.prevCondHeight = _loc1_.getTextHeight() + BOTTOM_QUEST_OFFSET;
-         }
-      }
-      
       private function createCondition(param1:String, param2:String, param3:Boolean) : PersonalCondition
       {
-         var _loc4_:PersonalCondition = App.utils.classFactory.getComponent(PERSONAL_QUEST_LINK,PersonalCondition);
+         var _loc4_:PersonalCondition = PersonalCondition(this.makeComponent(PERSONAL_CONDITION_LINK));
          _loc4_.setData(param1,param2,param3);
-         var _loc5_:Function = !!param3 ? this.onMainConditionTFRollOverHandler : this.onAdditionalConditionTFRollOverHandler;
-         var _loc6_:Function = !!param3 ? this.onMainConditionTFRollOutHandler : this.onAdditionalConditionTFRollOutHandler;
-         _loc4_.addEventListener(MouseEvent.ROLL_OVER,_loc5_);
-         _loc4_.addEventListener(MouseEvent.ROLL_OUT,_loc6_);
+         _loc4_.addEventListener(MouseEvent.ROLL_OVER,this.onConditionTFRollOverHandler);
+         _loc4_.addEventListener(MouseEvent.ROLL_OUT,this.onConditionTFRollOutHandler);
          addChild(_loc4_);
          return _loc4_;
       }
@@ -308,17 +269,13 @@ package net.wg.gui.lobby.battleResults.components
       private function deleteConditions() : void
       {
          var _loc1_:PersonalCondition = null;
-         var _loc2_:Function = null;
-         var _loc3_:Function = null;
          if(this.quests != null)
          {
             for each(_loc1_ in this.quests)
             {
                removeChild(_loc1_);
-               _loc2_ = !!_loc1_.isMainQuest() ? this.onMainConditionTFRollOverHandler : this.onAdditionalConditionTFRollOverHandler;
-               _loc3_ = !!_loc1_.isMainQuest() ? this.onMainConditionTFRollOutHandler : this.onAdditionalConditionTFRollOutHandler;
-               _loc1_.removeEventListener(MouseEvent.ROLL_OVER,_loc2_);
-               _loc1_.removeEventListener(MouseEvent.ROLL_OUT,_loc3_);
+               _loc1_.removeEventListener(MouseEvent.ROLL_OVER,this.onConditionTFRollOverHandler);
+               _loc1_.removeEventListener(MouseEvent.ROLL_OUT,this.onConditionTFRollOutHandler);
                _loc1_.dispose();
             }
             this.quests.splice(0,this.quests.length);
@@ -339,22 +296,18 @@ package net.wg.gui.lobby.battleResults.components
          this._linkBtn.addEventListener(MouseEvent.ROLL_OVER,this.onLinkBtnRollOverHandler);
       }
       
-      private function onMainConditionTFRollOverHandler(param1:MouseEvent) : void
+      private function onConditionTFRollOverHandler(param1:MouseEvent) : void
       {
-         this._toolTipMgr.show(TOOLTIPS.QUESTS_PM_STATUS_MAIN);
+         var _loc3_:String = null;
+         var _loc2_:PersonalCondition = param1.target as PersonalCondition;
+         if(_loc2_)
+         {
+            _loc3_ = !!_loc2_.isMainQuest() ? TOOLTIPS.QUESTS_PM_STATUS_MAIN : TOOLTIPS.QUESTS_PM_STATUS_ADDITIONAL;
+            this._toolTipMgr.show(_loc3_);
+         }
       }
       
-      private function onMainConditionTFRollOutHandler(param1:MouseEvent) : void
-      {
-         this._toolTipMgr.hide();
-      }
-      
-      private function onAdditionalConditionTFRollOverHandler(param1:MouseEvent) : void
-      {
-         this._toolTipMgr.show(TOOLTIPS.QUESTS_PM_STATUS_ADDITIONAL);
-      }
-      
-      private function onAdditionalConditionTFRollOutHandler(param1:MouseEvent) : void
+      private function onConditionTFRollOutHandler(param1:MouseEvent) : void
       {
          this._toolTipMgr.hide();
       }

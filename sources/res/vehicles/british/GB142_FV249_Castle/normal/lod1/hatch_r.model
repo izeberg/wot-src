@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/british/GB142_FV249_Castle/normal/lod2/hatch_r</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>1.050614 0.344223 0.394350</min>
+		<max>1.206167 0.550256 0.665872</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/british/GB142_FV249_Castle/normal/lod1/hatch_r</nodefullVisual>
+</root>

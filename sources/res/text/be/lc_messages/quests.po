@@ -96,28 +96,28 @@ msgid "action/auto/passportChangeCost"
 msgstr "Зніжка на змену дакументаў танкістаў"
 
 msgid "action/auto/premiumPacket14Cost"
-msgstr "Зніжка на куплю 14 дзён прэміум акаўнту"
+msgstr "Скидка на покупку 14 дней Премиум аккаунта"
 
 msgid "action/auto/premiumPacket180Cost"
-msgstr "Зніжка на куплю 180 дзён прэміум акаўнту"
+msgstr "Скидка на покупку 180 дней Премиум аккаунта"
 
 msgid "action/auto/premiumPacket1Cost"
-msgstr "Зніжка на куплю 1 дня прэміум акаўнту"
+msgstr "Скидка на покупку 1 дня Премиум аккаунта"
 
 msgid "action/auto/premiumPacket30Cost"
-msgstr "Зніжка на куплю 30 дзён прэміум акаўнту"
+msgstr "Скидка на покупку 30 дней Премиум аккаунта"
 
 msgid "action/auto/premiumPacket360Cost"
-msgstr "Зніжка на куплю 360 дзён прэміум акаўнту"
+msgstr "Скидка на покупку 360 дней Премиум аккаунта"
 
 msgid "action/auto/premiumPacket3Cost"
-msgstr "Зніжка на куплю 3 дзён прэміум акаўнту"
+msgstr "Скидка на покупку 3 дней Премиум аккаунта"
 
 msgid "action/auto/premiumPacket7Cost"
-msgstr "Зніжка на куплю 7 дзён прэміум акаўнту"
+msgstr "Скидка на покупку 7 дней Премиум аккаунта"
 
 msgid "action/auto/premiumPacket90Cost"
-msgstr "Зніжка на куплю 90 дзён прэміум акаўнту"
+msgstr "Скидка на покупку 90 дней Премиум аккаунта"
 
 msgid "action/auto/set_EquipmentPrice"
 msgstr "Зніжка на куплю рыштунку"
@@ -439,9 +439,9 @@ msgstr ""
 
 msgid "action/full/exchangeRate"
 msgstr ""
-"Переведите золото в серебро по выгодному курсу: %(discount)s. Тем самым вы "
-"сэкономите время на заработок серебра и быстрее купите понравившуюся машину,"
-" дорогостоящее оборудование и т. д."
+"Абмяняйце золата на срэбра па выгадным курсе %(discount)s. Такім чынам вы "
+"зэканоміце час на заробак срэбра і хутчэй купіце жаданую машыну, дарагое "
+"абсталяванне і г.д."
 
 msgid "action/full/femalePassportChangeCost"
 msgstr ""
@@ -489,34 +489,43 @@ msgstr ""
 
 msgid "action/full/premiumPacket14Cost"
 msgstr ""
-"Выгадны кошт куплі або працягу прэміум акаўнту на 14 дзён: %(discount)s"
+"Выгодная стоимость покупки дней Премиум аккаунта (или его продление) "
+"на 14 дней: %(discount)s"
 
 msgid "action/full/premiumPacket180Cost"
 msgstr ""
-"Выгадны кошт куплі або працягу прэміум акаўнту на 180 дзён: %(discount)s"
+"Выгодная стоимость покупки дней Премиум аккаунта (или его продление) "
+"на 180 дней: %(discount)s"
 
 msgid "action/full/premiumPacket1Cost"
 msgstr ""
-"Выгадны кошт куплі або працягу прэміум акаўнту на 1 дзень: %(discount)s"
+"Выгодная стоимость покупки дней Премиум аккаунта (или его продление) "
+"на 1 день: %(discount)s"
 
 msgid "action/full/premiumPacket30Cost"
 msgstr ""
-"Выгадны кошт куплі або працягу прэміум акаўнту на 30 дзён: %(discount)s"
+"Выгодная стоимость покупки дней Премиум аккаунта (или его продление) "
+"на 30 дней: %(discount)s"
 
 msgid "action/full/premiumPacket360Cost"
 msgstr ""
-"Выгадны кошт куплі або працягу прэміум акаўнту на 360 дзён: %(discount)s"
+"Выгодная стоимость покупки дней Премиум аккаунта (или его продление) "
+"на 360 дней: %(discount)s"
 
 msgid "action/full/premiumPacket3Cost"
-msgstr "Выгадны кошт куплі або працягу прэміум акаўнту на 3 дні: %(discount)s"
+msgstr ""
+"Выгодная стоимость покупки дней Премиум аккаунта (или его продление) "
+"на 3 дня: %(discount)s"
 
 msgid "action/full/premiumPacket7Cost"
 msgstr ""
-"Выгадны кошт куплі або працягу прэміум акаўнту на 7 дзён: %(discount)s"
+"Выгодная стоимость покупки дней Премиум аккаунта (или его продление) "
+"на 7 дней: %(discount)s"
 
 msgid "action/full/premiumPacket90Cost"
 msgstr ""
-"Выгадны кошт куплі або працягу прэміум акаўнту на 90 дзён: %(discount)s"
+"Выгодная стоимость покупки дней Премиум аккаунта (или его продление) "
+"на 90 дней: %(discount)s"
 
 msgid "action/full/set_ShellPrice"
 msgstr ""
@@ -672,51 +681,51 @@ msgstr ""
 
 msgid "action/hero/full/premiumPacket14Cost"
 msgstr ""
-"Танкавы прэміум акаўнт — гэта +50%% да заробку досведу і срэбра ў кожным "
-"баі. Выгадны кошт куплі або працягу Танкавага прэміум акаўнту на 14 дзён: "
-"%(discount)s"
+"Танковый премиум аккаунт — это +50%% к заработку опыта и серебра в каждом "
+"бою. Выгодная стоимость покупки дней Танкового премиум аккаунта (или его "
+"продление) на 14 дней: %(discount)s"
 
 msgid "action/hero/full/premiumPacket180Cost"
 msgstr ""
-"Танкавы прэміум акаўнт — гэта +50%% да заробку досведу і срэбра ў кожным "
-"баі. Выгадны кошт куплі або працягу Танкавага прэміум акаўнту на 180 дзён: "
-"%(discount)s"
+"Танковый премиум аккаунт — это +50%% к заработку опыта и серебра в каждом "
+"бою. Выгодная стоимость покупки или продления Танкового премиум аккаунта "
+"на 180 дней: %(discount)s"
 
 msgid "action/hero/full/premiumPacket1Cost"
 msgstr ""
-"Танкавы прэміум акаўнт — гэта +50%% да заробку досведу і срэбра ў кожным "
-"баі. Выгадны кошт куплі або працягу Танкавага прэміум акаўнту на 1 дзень: "
-"%(discount)s"
+"Танковый премиум аккаунт — это +50%% к заработку опыта и серебра в каждом "
+"бою. Выгодная стоимость покупки или продления Танкового премиум аккаунта "
+"на 1 день: %(discount)s"
 
 msgid "action/hero/full/premiumPacket30Cost"
 msgstr ""
-"Танкавы прэміум акаўнт — гэта +50%% да заробку досведу і срэбра ў кожным "
-"баі. Выгадны кошт куплі або працягу Танкавага прэміум акаўнту на 30 дзён: "
-"%(discount)s"
+"Танковый премиум аккаунт — это +50%% к заработку опыта и серебра в каждом "
+"бою. Выгодная стоимость покупки или продления Танкового премиум аккаунта "
+"на 30 дней: %(discount)s"
 
 msgid "action/hero/full/premiumPacket360Cost"
 msgstr ""
-"Танкавы прэміум акаўнт — гэта +50%% да заробку досведу і срэбра ў кожным "
-"баі. Выгадны кошт куплі або працягу Танкавага прэміум акаўнту на 360 дзён: "
-"%(discount)s"
+"Танковый премиум аккаунт — это +50%% к заработку опыта и серебра в каждом "
+"бою. Выгодная стоимость покупки или продления Танкового премиум аккаунта "
+"на 360 дней: %(discount)s"
 
 msgid "action/hero/full/premiumPacket3Cost"
 msgstr ""
-"Танкавы прэміум акаўнт — гэта +50%% да заробку досведу і срэбра ў кожным "
-"баі. Выгадны кошт куплі або працягу Танкавага прэміум акаўнту на 3 дні: "
-"%(discount)s"
+"Танковый премиум аккаунт — это +50%% к заработку опыта и серебра в каждом "
+"бою. Выгодная стоимость покупки или продления Танкового премиум аккаунта "
+"на 3 дня: %(discount)s"
 
 msgid "action/hero/full/premiumPacket7Cost"
 msgstr ""
-"Танкавы прэміум акаўнт — гэта +50%% да заробку досведу і срэбра ў кожным "
-"баі. Выгадны кошт куплі або працягу Танкавага прэміум акаўнту на 7 дзён: "
-"%(discount)s"
+"Танковый премиум аккаунт — это +50%% к заработку опыта и серебра в каждом "
+"бою. Выгодная стоимость покупки или продления Танкового премиум аккаунта "
+"на 7 дней: %(discount)s"
 
 msgid "action/hero/full/premiumPacket90Cost"
 msgstr ""
-"Танкавы прэміум акаўнт — гэта +50%% да заробку досведу і срэбра ў кожным "
-"баі. Выгадны кошт куплі або працягу Танкавага прэміум акаўнту на 90 дзён: "
-"%(discount)s"
+"Танковый премиум аккаунт — это +50%% к заработку опыта и серебра в каждом "
+"бою. Выгодная стоимость покупки дней Танкового премиум аккаунта (или его "
+"продление) на 90 дней: %(discount)s"
 
 msgid "action/hero/full/set_ShellPrice"
 msgstr ""
@@ -1460,7 +1469,7 @@ msgid "dailyQuests/bonusQuest/bonusMissionTitle"
 msgstr "Бонусная задача"
 
 msgid "dailyQuests/bonusQuest/countDown_hrs"
-msgstr "Истекает через %H ч. %M мин."
+msgstr "Истекает через %H ч. %M мин."
 
 msgid "dailyQuests/bonusQuest/countDown_minSec"
 msgstr "Заканчваецца праз %MM:%SS"
@@ -1580,13 +1589,13 @@ msgstr ""
 "у вас з'яўляецца магчымасць замяніць нежаданую задачу на іншую выпадковую."
 
 msgid "dailyQuests/missionSwitch/tooltip/body/desc_hrs"
-msgstr "Каждые %H ч."
+msgstr "Каждые %H ч."
 
 msgid "dailyQuests/missionSwitch/tooltip/body/desc_hrs_min"
-msgstr "Каждые %H ч. и %M мин."
+msgstr "Каждые %H ч. и %M мин."
 
 msgid "dailyQuests/missionSwitch/tooltip/body/desc_min_only"
-msgstr "Каждые %M мин."
+msgstr "Каждые %M мин."
 
 msgid "dailyQuests/missionSwitch/tooltip/header"
 msgstr "Замена задачы недаступная"
@@ -2019,8 +2028,8 @@ msgstr "Ачкі прэстыжу"
 
 msgid "details/conditions/cumulative/critsCount"
 msgstr ""
-"Сумма повреждённых или выведенных из строя внутренних и/или внешних модулей,"
-" а также раненых членов экипажа противника"
+"Сума пашкоджаных або выведзеных са строю ўнутраных і/або вонкавых модуляў, "
+"а таксама параненых членаў экіпажа праціўніка"
 
 msgid "details/conditions/cumulative/damageAssisted"
 msgstr "Пашкоджанні, прыч. з вашай дапамогай"
@@ -2140,13 +2149,13 @@ msgstr "Рыкашэты ад супраціўніка"
 
 msgid "details/conditions/cumulative/innerModuleCritCount"
 msgstr ""
-"Сумма повреждённых или выведенных из строя внутренних модулей, а также "
-"раненых членов экипажа противника"
+"Сума пашкоджаных або выведзеных са строю ўнутраных модуляў, а таксама "
+"параненых танкістаў экіпажу праціўніка"
 
 msgid "details/conditions/cumulative/innerModuleDestrCount"
 msgstr ""
-"Сумма выведенных из строя внутренних модулей и/или раненых членов экипажа "
-"противника"
+"Сума выведзеных са строю ўнутраных модуляў і/або параненых членаў экіпажа "
+"праціўніка"
 
 msgid "details/conditions/cumulative/isAnyOurCrittedInnerModules"
 msgstr ""
@@ -2658,7 +2667,7 @@ msgid "details/conditions/postBattle/dailyReset/timeFmt"
 msgstr "%H:%M"
 
 msgid "details/conditions/postBattle/deltaDailyReset/timeFmt"
-msgstr "%H ч. %M мин."
+msgstr "%H ч. %M мин."
 
 msgid "details/conditions/postBattle/separator"
 msgstr "У кожным баі:"
@@ -3825,10 +3834,10 @@ msgid "details/dossier/medalFokin"
 msgstr "Медаль Фокіна"
 
 msgid "details/dossier/medalFomin"
-msgstr "Медаль Фомина"
+msgstr "Медаль Фаміна"
 
 msgid "details/dossier/medalGavryushov"
-msgstr "Медаль Гаврюшова"
+msgstr "Медаль Гаўрушына"
 
 msgid "details/dossier/medalGudz"
 msgstr "Ступень медаля Гудзя"
@@ -4123,7 +4132,7 @@ msgstr "Да сканчэння менш за %(minutes)d хв"
 msgid "details/header/comeToEndInMinutes/separated"
 msgstr ""
 "До окончания менее\n"
-"%(minutes)d мин."
+"%(minutes)d мин."
 
 msgid "details/header/completion/daily"
 msgstr "Колькасць даступных выкананняў за суткі: %(count)d."
@@ -4257,28 +4266,28 @@ msgid "details/modifiers/economics/passportChangeCost"
 msgstr "На змену дакументаў экіпажу"
 
 msgid "details/modifiers/economics/premiumPacket1"
-msgstr "На куплю прэміум акаўнту на 1 дзень"
+msgstr "На покупку Премиум аккаунта на 1 день"
 
 msgid "details/modifiers/economics/premiumPacket14"
-msgstr "На куплю прэміум акаўнту на 14 дзён"
+msgstr "На покупку Премиум аккаунта на 14 дней"
 
 msgid "details/modifiers/economics/premiumPacket180"
-msgstr "На куплю прэміум акаўнту на 180 дзён"
+msgstr "На покупку Премиум аккаунта на 180 дней"
 
 msgid "details/modifiers/economics/premiumPacket3"
-msgstr "На куплю прэміум акаўнту на 3 дні"
+msgstr "На покупку Премиум аккаунта на 3 дня"
 
 msgid "details/modifiers/economics/premiumPacket30"
-msgstr "На куплю прэміум акаўнту на 30 дзён"
+msgstr "На покупку Премиум аккаунта на 30 дней"
 
 msgid "details/modifiers/economics/premiumPacket360"
-msgstr "На куплю прэміум акаўнту на 360 дзён"
+msgstr "На покупку Премиум аккаунта на 360 дней"
 
 msgid "details/modifiers/economics/premiumPacket7"
-msgstr "На куплю прэміум акаўнту на 7 дзён"
+msgstr "На покупку Премиум аккаунта на 7 дней"
 
 msgid "details/modifiers/economics/premiumPacket90"
-msgstr "На куплю прэміум акаўнту на 90 дзён"
+msgstr "На покупку Премиум аккаунта на 90 дней"
 
 msgid "details/modifiers/economics/slotsPrices"
 msgstr "На куплю слотаў у Гаражы"
@@ -4681,31 +4690,31 @@ msgid "epicQuest/countDown/remainingText"
 msgstr "Да скідвання прагрэсу:"
 
 msgid "general/countdown/text/timer_hrs"
-msgstr "Замена доступна через %H ч. %M мин."
+msgstr "Замена доступна через %H ч. %M мин."
 
 msgid "general/countdown/text/timer_hrs_only"
-msgstr "Замена доступна через %H ч."
+msgstr "Замена доступна через %H ч."
 
 msgid "general/countdown/text/timer_min"
 msgstr "Замена даступная праз %MM:%SS"
 
 msgid "general/countdown/text/timer_min_only"
-msgstr "Замена доступна через %M мин."
+msgstr "Замена доступна через %M мин."
 
 msgid "general/countdown/text/timer_sec"
 msgstr "Замена даступная праз %S с"
 
 msgid "general/countdown/timer_hrs"
-msgstr "%H ч. %M мин."
+msgstr "%H ч. %M мин."
 
 msgid "general/countdown/timer_hrs_only"
-msgstr "%H ч."
+msgstr "%H ч."
 
 msgid "general/countdown/timer_min"
 msgstr "%MM:%SS"
 
 msgid "general/countdown/timer_min_only"
-msgstr "%M мин."
+msgstr "%M мин."
 
 msgid "general/countdown/timer_sec"
 msgstr "%S с"
@@ -4935,22 +4944,22 @@ msgid "item/timer/tillFinish/hours"
 msgstr "Да сканчэння"
 
 msgid "item/timer/tillFinish/lessThanDay"
-msgstr "менее 1 д."
+msgstr "менее 1 д."
 
 msgid "item/timer/tillFinish/lessThanHour"
 msgstr "менш за гадзіну"
 
 msgid "item/timer/tillFinish/longFormat"
-msgstr "%(hours)s ч. %(min)s мин."
+msgstr "%(hours)s ч. %(min)s мин."
 
 msgid "item/timer/tillFinish/longFullFormat"
-msgstr "До окончания %(hours)s ч."
+msgstr "До окончания %(hours)s ч."
 
 msgid "item/timer/tillFinish/longFullFormatMin"
 msgstr "Да сканчэння %(minutes)s хв."
 
 msgid "item/timer/tillFinish/onlyHours"
-msgstr "%(hours)s ч."
+msgstr "%(hours)s ч."
 
 msgid "item/timer/tillFinish/shortFormat"
 msgstr "%(min)s хв."
@@ -4962,13 +4971,13 @@ msgid "item/timer/tillStart"
 msgstr "Будзе даступная"
 
 msgid "item/timer/tillStart/days"
-msgstr "через %(day)s д. %(hour)s"
+msgstr "через %(day)s д. %(hour)s ч."
 
 msgid "item/timer/tillStart/hours"
-msgstr "через %(hour)s ч. %(min)s мин."
+msgstr "через %(hour)s ч. %(min)s мин."
 
 msgid "item/timer/tillStart/min"
-msgstr "через %(min)s мин."
+msgstr "через %(min)s мин."
 
 msgid "item/type/action"
 msgstr "Акцыя"
@@ -5228,7 +5237,7 @@ msgid "missions/filter/filterButton/header"
 msgstr "Фільтр задач"
 
 msgid "missions/filter/popover/defaultButton/body"
-msgstr "Нажмите, чтобы сбросить настройки фильтра на состояние по умолчанию."
+msgstr "Націсніце, каб вярнуць стандартныя налады фільтра."
 
 msgid "missions/filter/popover/defaultButton/header"
 msgstr "Скінуць фільтр"
@@ -5246,7 +5255,7 @@ msgid "missions/filter/popover/title"
 msgstr "Фільтр задач"
 
 msgid "missions/filterCounter/closeButton/body"
-msgstr "Нажмите, чтобы сбросить настройки фильтра на стандартные."
+msgstr "Націсніце, каб вярнуць стандартныя налады фільтра."
 
 msgid "missions/filterCounter/closeButton/header"
 msgstr "Паставіць стандартныя налады"
@@ -5655,12 +5664,11 @@ msgstr ""
 
 msgid "premiumQuests/notPremiumAccount/paragraphSmall"
 msgstr ""
-"Премиум аккаунт открывает доступ к трём ежедневным премиум задачам, а также "
-"даёт другие преимущества: +50% к заработку опыта и серебра, хранилище "
-"серебра и т. д."
+"Прэміум акаўнт адкрывае доступ да трох штодзённых прэміум задач, а таксама "
+"дае іншыя перавагі: +50% да заробку досведу і срэбра, сховішча срэбра і г.д."
 
 msgid "premiumQuests/notPremiumAccount/title"
-msgstr "Для доступу да задач неабходны прэміум акаўнт."
+msgstr "Для доступа к задачам необходим Премиум аккаунт"
 
 msgid "premiumQuests/postBattle/genericTitle_easy"
 msgstr "Першая стандартная штодзённая задача"
@@ -5690,7 +5698,8 @@ msgid "premiumQuests/tab/label"
 msgstr "Прэміум задачы:"
 
 msgid "premiumQuests/tooltips/locked/body"
-msgstr "Выканайце папярэднюю прэміум задачу, каб атрымаць доступ да гэтай."
+msgstr ""
+"Ежедневные премиум задачи доступны только при наличии Премиум аккаунта."
 
 msgid "premiumQuests/tooltips/locked/header"
 msgstr "Задача недаступная"
@@ -5990,7 +5999,7 @@ msgid "token/default/sweden"
 msgstr "«Швецыя»"
 
 msgid "token/default/tankrewards"
-msgstr "«Tank Rewards»"
+msgstr "Tank Rewards"
 
 msgid "token/default/track"
 msgstr "«Тракавы пас»"

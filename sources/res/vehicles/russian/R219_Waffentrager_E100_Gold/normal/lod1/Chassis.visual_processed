@@ -1349,7 +1349,7 @@
 					</property>
 					<property>
 						colorIdMap
-						<Texture>vehicles/russian/R219_Waffentrager_E100_Gold/Waffentrager_E100_Gold_chassis_01_ID.dds</Texture>
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
 					<property>
@@ -1450,7 +1450,7 @@
 					</property>
 					<property>
 						colorIdMap
-						<Texture>vehicles/russian/R219_Waffentrager_E100_Gold/Waffentrager_E100_Gold_chassis_01_ID.dds</Texture>
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
 					<property>

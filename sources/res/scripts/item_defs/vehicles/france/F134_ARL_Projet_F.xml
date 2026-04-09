@@ -3295,7 +3295,7 @@
 						<collisionModelServer>vehicles/french/F134_ARL_Projet_F/collision/Gun_01.model</collisionModelServer>
 						<collisionModelClient>vehicles/french/F134_ARL_Projet_F/collision_client/Gun_01.model</collisionModelClient>
 					</hitTester>
-					<effects>shot_largeext</effects>
+					<effects>shot_large_APFSDS_mb</effects>
 					<shotOffset>
 						-0.08353 0.01305 0.000032
 						<!--BW_String-->

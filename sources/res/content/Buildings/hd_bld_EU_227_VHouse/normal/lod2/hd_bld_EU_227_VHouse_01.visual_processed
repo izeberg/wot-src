@@ -818,10 +818,6 @@
 					<materialKind>111</materialKind>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
 					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
 						blendMask
 						<Texture>content/Buildings/hd_bld_EU_227_VHouse/EU_Houses_01_03_blend.png</Texture>
 					</property>
@@ -891,10 +887,6 @@
 					<collisionFlags>0</collisionFlags>
 					<materialKind>111</materialKind>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
 					<property>
 						blendMask
 						<Texture>content/Buildings/hd_bld_EU_227_VHouse/EU_Houses_01_03_blend.png</Texture>
@@ -978,10 +970,6 @@
 					<materialKind>111</materialKind>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
 					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
 						blendMask
 						<Texture>content/Buildings/hd_bld_EU_227_VHouse/EU_Houses_01_03_blend.png</Texture>
 					</property>
@@ -1064,10 +1052,6 @@
 					<materialKind>111</materialKind>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
 					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
 						blendMask
 						<Texture>content/Buildings/hd_bld_EU_227_VHouse/EU_Houses_01_03_blend.png</Texture>
 					</property>
@@ -1145,10 +1129,6 @@
 					<collisionFlags>0</collisionFlags>
 					<materialKind>111</materialKind>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
 					<property>
 						blendMask
 						<Texture>content/Buildings/hd_bld_EU_227_VHouse/EU_Houses_01_03_blend.png</Texture>
@@ -1240,10 +1220,6 @@
 					<materialKind>111</materialKind>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
 					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
 						blendMask
 						<Texture>content/Buildings/hd_bld_EU_227_VHouse/EU_Houses_01_03_blend.png</Texture>
 					</property>
@@ -1313,10 +1289,6 @@
 					<collisionFlags>0</collisionFlags>
 					<materialKind>111</materialKind>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
 					<property>
 						blendMask
 						<Texture>content/Buildings/hd_bld_EU_227_VHouse/EU_Houses_01_03_blend.png</Texture>

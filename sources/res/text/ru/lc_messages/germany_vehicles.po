@@ -154,9 +154,6 @@ msgstr "E 75 verstärkteketten"
 msgid "Chassis_E50_Ausf_M"
 msgstr "E 50 Ausf. M"
 
-msgid "Chassis_E50_Ausf_M_ISP"
-msgstr "E 50 Ausf. M"
-
 msgid "Chassis_G00_Artilleriebunker"
 msgstr "Дот"
 
@@ -271,9 +268,6 @@ msgid "Chassis_G120_M41_90_GrandFinal"
 msgstr "leKpz M 41 90 mm"
 
 msgid "Chassis_G121_Grille_15_L63"
-msgstr "Grille 15"
-
-msgid "Chassis_G121_Grille_15_L63_ISP"
 msgstr "Grille 15"
 
 msgid "Chassis_G122_VK6501H"
@@ -471,9 +465,6 @@ msgid "Chassis_JagdTiger_SdKfz_185"
 msgstr "Jagdtiger 8,8"
 
 msgid "Chassis_Leopard1"
-msgstr "Leopard 1"
-
-msgid "Chassis_Leopard1_ISP"
 msgstr "Leopard 1"
 
 msgid "Chassis_Lowe"
@@ -861,27 +852,6 @@ msgstr "E 50 M 7x7"
 msgid "E50_Ausf_M_7x7_short_special"
 msgstr "?empty?"
 
-msgid "E50_Ausf_M_ISP"
-msgstr "E 50 M Испытательный"
-
-msgid "E50_Ausf_M_ISP_descr"
-msgstr ""
-"Одним из требований, выдвигаемых военными к танкам E-серии, было перенесение"
-" трансмиссии в кормовую часть корпуса. Однако в процессе разработки танков E"
-" 50 и E 75 для ускорения работы была полностью заимствована компоновка "
-"моторно-трансмиссионного отделения танка Tiger II, что полностью исключало "
-"перенос трансмиссии назад. E 50 Ausf. M — реконструкция проекта E 50 с "
-"задним расположением трансмиссии."
-
-msgid "E50_Ausf_M_ISP_long_special"
-msgstr "?empty?"
-
-msgid "E50_Ausf_M_ISP_short"
-msgstr "E 50 M (И)"
-
-msgid "E50_Ausf_M_ISP_short_special"
-msgstr "?empty?"
-
 msgid "E50_Ausf_M_descr"
 msgstr ""
 "Одним из требований, выдвигаемых военными к танкам E-серии, было перенесение"
@@ -1076,6 +1046,12 @@ msgstr "РСЗО"
 msgid "G00_Startgestell_short"
 msgstr "РСЗО"
 
+msgid "G03_PzV_Panther_hb25_Elite"
+msgstr "Panther Elite"
+
+msgid "G03_PzV_Panther_hb25_Elite_short"
+msgstr "Panther Elite"
+
 msgid "G04"
 msgstr "G04"
 
@@ -1101,6 +1077,24 @@ msgstr "Медведь"
 
 msgid "G04_PzVI_Tiger_I_SHXXI_B_short"
 msgstr "Медведь"
+
+msgid "G04_PzVI_Tiger_I_hb25_Elite"
+msgstr "Tiger I (Elite)"
+
+msgid "G04_PzVI_Tiger_I_hb25_Elite_short"
+msgstr "Tiger I (Elite)"
+
+msgid "G08_Pz38t_hb25_Elite"
+msgstr "Pz.Kpfw. 38 (t)(Elite)"
+
+msgid "G08_Pz38t_hb25_Elite_short"
+msgstr "Pz. 38 (t) (Elite)"
+
+msgid "G09_Hetzer_hb25_Elite"
+msgstr "Hetzer Elite"
+
+msgid "G09_Hetzer_hb25_Elite_short"
+msgstr "Hetzer Elite"
 
 msgid "G100_Gtraktor_Krupp"
 msgstr "Großtraktor - Krupp"
@@ -1137,6 +1131,12 @@ msgstr ""
 "непосредственная поддержка атакующих подразделений пехоты. В 1937 году были "
 "изготовлены первые пять прототипов так называемой «нулевой» серии. Ранние "
 "модификации от Ausf.A до Ausf.F/8 выпускались до декабря 1942 года."
+
+msgid "G101_StuG_III_hb25_Elite"
+msgstr "StuG III Ausf. B Elite"
+
+msgid "G101_StuG_III_hb25_Elite_short"
+msgstr "StuG III B Elite"
 
 msgid "G101_StuG_III_short"
 msgstr "StuG III B"
@@ -1254,6 +1254,12 @@ msgstr "Pz. III K"
 msgid "G107_PzKpfwIII_AusfK_short_special"
 msgstr "Скорострельное орудие, хорошие УВН"
 
+msgid "G107_PzKpfwIII_AusfKhb25_Elite"
+msgstr "Pz.Kpfw. III Ausf. K (Elite)"
+
+msgid "G107_PzKpfwIII_AusfKhb25_Elite_short"
+msgstr "Pz. III K (Elite)"
+
 msgid "G108_PzKpfwII_AusfD"
 msgstr "Pz.Kpfw. II Ausf. D"
 
@@ -1306,6 +1312,12 @@ msgstr "Steyr WT"
 
 msgid "G109_Steyr_WT_short_special"
 msgstr "Комфортное орудие, хорошая маскировка"
+
+msgid "G10_PzIII_AusfJ_hb25_Elite"
+msgstr "Pz.Kpfw. III Ausf. J (Elite)"
+
+msgid "G10_PzIII_AusfJ_hb25_Elite_short"
+msgstr "Pz. III J (Elite)"
 
 msgid "G1105_T-55_NVA_DDR_T"
 msgstr "T 55 Test"
@@ -1675,30 +1687,6 @@ msgstr "Отличное орудие, хорошая подвижность"
 
 msgid "G121_Grille_15_L63"
 msgstr "Grille 15"
-
-msgid "G121_Grille_15_L63_ISP"
-msgstr "Grille 15 Испытательный"
-
-msgid "G121_Grille_15_L63_ISP_descr"
-msgstr ""
-"Летом 1942 года Управление вооружений сухопутных сил Германии заключило "
-"договор с компаниями Krupp и Rheinmetall на создание САУ на шасси танка "
-"Panther. Рассматривались варианты установки 128-мм орудия K 43 и 150-мм "
-"гаубицы sFH 43. Проекты получили обозначение Grille 12 и Grille 15. Имели "
-"заднее расположение боевого отделения и отличались между собой только типом "
-"артсистемы. Позднее было принято требование об установке 150-мм пушки с "
-"длиной ствола в 63 калибра на Grille 15. Такое орудие имело возможность "
-"пробития снарядами 200-мм брони на дистанции 4000 метров. Однако работы "
-"затянулись, и проект Grille 15 так и не был реализован в металле."
-
-msgid "G121_Grille_15_L63_ISP_long_special"
-msgstr "?empty?"
-
-msgid "G121_Grille_15_L63_ISP_short"
-msgstr "Grille 15 (И)"
-
-msgid "G121_Grille_15_L63_ISP_short_special"
-msgstr "?empty?"
 
 msgid "G121_Grille_15_L63_descr"
 msgstr ""
@@ -2120,6 +2108,12 @@ msgstr "Хорошая динамика и урон в минуту"
 msgid "G158_VK2801_105_SPXXI"
 msgstr "VK 28.01 mit 10,5 cm L/28"
 
+msgid "G158_VK2801_105_SPXXI_hb25_Elite"
+msgstr "VK 28.01 mit 10,5 cm L/28 Elite"
+
+msgid "G158_VK2801_105_SPXXI_hb25_Elite_short"
+msgstr "VK 28.01 105 Elite"
+
 msgid "G158_VK2801_105_SPXXI_long_special"
 msgstr ""
 "Старый знакомый многих игроков — немецкий лёгкий танк VI уровня. Отличается "
@@ -2385,6 +2379,18 @@ msgstr ""
 msgid "G16_PzVIB_Tiger_II_F_short_special"
 msgstr "Крепкая броня, точное орудие"
 
+msgid "G16_PzVIB_Tiger_II_hb25_Boss"
+msgstr "Tiger II Kommandant"
+
+msgid "G16_PzVIB_Tiger_II_hb25_Boss_short"
+msgstr "Tiger II Kommandant"
+
+msgid "G16_PzVIB_Tiger_II_hb25_Elite"
+msgstr "Tiger II Elite"
+
+msgid "G16_PzVIB_Tiger_II_hb25_Elite_short"
+msgstr "Tiger II Elite"
+
 msgid "G171_E77"
 msgstr "E 77"
 
@@ -2629,6 +2635,12 @@ msgstr ""
 " применялась на Восточном фронте, а с 1944 года — в Италии и на Западном "
 "фронте. Состояла на вооружении до конца войны."
 
+msgid "G20_Marder_II_hb25_Elite"
+msgstr "Marder II (Elite)"
+
+msgid "G20_Marder_II_hb25_Elite_short"
+msgstr "Marder II (Elite)"
+
 msgid "G20_Marder_II_short"
 msgstr "Marder II"
 
@@ -2640,6 +2652,12 @@ msgstr "Заяц"
 
 msgid "G25_PzII_Luchs_SHXXI_B_short"
 msgstr "Заяц"
+
+msgid "G26_VK1602_hb25_Elite"
+msgstr "VK 16.02 Leopard Elite"
+
+msgid "G26_VK1602_hb25_Elite_short"
+msgstr "Leopard Elite"
 
 msgid "G32_PzV_PzIV_CN_long_special"
 msgstr ""
@@ -2704,6 +2722,15 @@ msgstr ""
 msgid "G36_PzII_J_short_special"
 msgstr "Великолепная броня, малые габариты, хорошие УВН"
 
+msgid "G37_Ferdinand_hb25_Elite"
+msgstr "Ferdinand Elite"
+
+msgid "G42_Maus_hb25_Boss"
+msgstr "Maus Kommandant"
+
+msgid "G42_Maus_hb25_Boss_short"
+msgstr "Maus Kommandant"
+
 msgid "G44_JagdTigerH_long_special"
 msgstr ""
 "Немецкая ПТ-САУ VIII уровня с достойным бронированием, неплохой подвижностью"
@@ -2715,8 +2742,23 @@ msgid "G44_JagdTigerH_short_special"
 msgstr ""
 "Отличное орудие, хорошее фронтальное бронирование, неплохая подвижность"
 
+msgid "G44_JagdTiger_hb25_Boss"
+msgstr "Jagdtiger Kommandant"
+
+msgid "G44_JagdTiger_hb25_Boss_short"
+msgstr "Jagdtiger Kommandant"
+
+msgid "G51_Lowe_hb25_Boss"
+msgstr "Löwe Kommandant"
+
 msgid "G58_VK4502P"
 msgstr "VK 45.02 (P) Ausf. B7"
+
+msgid "G58_VK4502P7_hb25_Boss"
+msgstr "VK 45.02 B7 Kommandant"
+
+msgid "G58_VK4502P7_hb25_Boss_short"
+msgstr "VK 45.02 B7 Kommandant"
 
 msgid "G58_VK4502P7_long_special"
 msgstr ""
@@ -2755,6 +2797,12 @@ msgstr "Волк"
 msgid "G77_PzIV_Schmalturm_SHXXI_B_short"
 msgstr "Волк"
 
+msgid "G80_Pz_IV_AusfD_hb25_Elite"
+msgstr "Pz.Kpfw. IV Ausf. D (Elite)"
+
+msgid "G80_Pz_IV_AusfD_hb25_Elite_short"
+msgstr "Pz. IV D (Elite)"
+
 msgid "G81_Pz_IV_AusfH_GuP"
 msgstr "Pz.Kpfw. IV Ausf. H Ankou"
 
@@ -2782,6 +2830,12 @@ msgstr "Pz. IV H Ankou"
 msgid "G81_Pz_IV_AusfH_GuP_short_special"
 msgstr "Достойное бронепробитие, хорошие УВН, наличие экранов"
 
+msgid "G81_Pz_IV_AusfH_hb25_Elite"
+msgstr "Pz.Kpfw. IV Ausf. H Elite"
+
+msgid "G81_Pz_IV_AusfH_hb25_Elite_short"
+msgstr "Pz.Kpfw. IV H Elite"
+
 msgid "G85_Aufklarungspanzer_V"
 msgstr "Aufklärungspanzer V"
 
@@ -2792,6 +2846,12 @@ msgstr ""
 "серийного производства. Установка меньшей по габаритам башни снижала вес "
 "машины, что положительно отразилось бы на ходовых характеристиках. Однако "
 "работы были завершены ещё на стадии проектирования."
+
+msgid "G85_Aufklarungspanzer_V_hb25_Elite"
+msgstr "Aufklärungspanzer V Elite"
+
+msgid "G85_Aufklarungspanzer_V_hb25_Elite_short"
+msgstr "Aufkl.Pz. V Elite"
 
 msgid "G85_Aufklarungspanzer_V_long_special"
 msgstr ""
@@ -3240,24 +3300,6 @@ msgstr "Leichttraktor verstärkteketten"
 msgid "Leopard1"
 msgstr "Leopard 1"
 
-msgid "Leopard1_ISP"
-msgstr "Leopard 1 Испытательный"
-
-msgid "Leopard1_ISP_descr"
-msgstr ""
-"Основной боевой танк ФРГ. Работы по созданию машины начались в 1956 году. "
-"Первые опытные образцы были построены в 1965 году на заводе Krauss-Maffei. "
-"Состоял на вооружении более чем в 10 странах мира."
-
-msgid "Leopard1_ISP_long_special"
-msgstr "?empty?"
-
-msgid "Leopard1_ISP_short"
-msgstr "Leopard 1 (И)"
-
-msgid "Leopard1_ISP_short_special"
-msgstr "?empty?"
-
 msgid "Leopard1_bob"
 msgstr "Leopard 1 BB"
 
@@ -3361,12 +3403,6 @@ msgstr "MTU MB 838 CaM 500"
 msgid "MB-838_CAM-500_1"
 msgstr "MTU MB 838 CaM 500A"
 
-msgid "MB-838_CAM-500_1_ISP"
-msgstr "MTU MB 838 CaM 500A"
-
-msgid "MB-838_CAM-500_1_ISP_short"
-msgstr "MB 838 CaM 500A"
-
 msgid "MB-838_CAM-500_1_short"
 msgstr "MB 838 CaM 500A"
 
@@ -3374,9 +3410,6 @@ msgid "MB-838_CAM-500_short"
 msgstr "MB 838 CaM 500"
 
 msgid "MB507"
-msgstr "DB 603 A2"
-
-msgid "MB507_ISP"
 msgstr "DB 603 A2"
 
 msgid "MB509"
@@ -3448,23 +3481,6 @@ msgstr "Marder II"
 msgid "Maus"
 msgstr "Maus"
 
-msgid "Maus_ISP"
-msgstr "Maus Испытательный"
-
-msgid "Maus_ISP_descr"
-msgstr ""
-"Разрабатывался с июня 1942 по июль 1944 года. Было изготовлено два "
-"прототипа, из которых только один получил башню с вооружением."
-
-msgid "Maus_ISP_long_special"
-msgstr "?empty?"
-
-msgid "Maus_ISP_short"
-msgstr "Maus (И)"
-
-msgid "Maus_ISP_short_special"
-msgstr "?empty?"
-
 msgid "Maus_descr"
 msgstr ""
 "Разрабатывался с июня 1942 по июль 1944 года. Было изготовлено два "
@@ -3476,13 +3492,7 @@ msgstr "Maus"
 msgid "Mausketten"
 msgstr "Maus"
 
-msgid "Mausketten_ISP"
-msgstr "Maus"
-
 msgid "Mausturm"
-msgstr "Maus"
-
-msgid "Mausturm_ISP"
 msgstr "Maus"
 
 msgid "Maybach_HL100"
@@ -3725,9 +3735,6 @@ msgstr "Maybach Neues Projekt A"
 msgid "Maybach_HL_234P60_short"
 msgstr "Maybach Neues Projekt"
 
-msgid "Maybach_HL_234_ISP"
-msgstr "Maybach NL 234"
-
 msgid "Maybach_HL_234_TRM_P30"
 msgstr "Maybach HL 234 TRM P30"
 
@@ -3753,9 +3760,6 @@ msgstr ""
 "Ausf. A"
 
 msgid "Maybach_HL_235"
-msgstr "Maybach HL 235"
-
-msgid "Maybach_HL_235_ISP"
 msgstr "Maybach HL 235"
 
 msgid "Maybach_HL_295"
@@ -4757,9 +4761,6 @@ msgstr "SEM 25"
 msgid "SEM25_1"
 msgstr "SEM 25A"
 
-msgid "SEM25_1_ISP"
-msgstr "SEM 25A"
-
 msgid "SEM25_A"
 msgstr "SEM 25A"
 
@@ -4954,9 +4955,6 @@ msgstr "E 75 Ausf. A"
 msgid "Turret_1_E50_Ausf_M"
 msgstr "E 50 Ausf. M"
 
-msgid "Turret_1_E50_Ausf_M_ISP"
-msgstr "E 50 Ausf. M"
-
 msgid "Turret_1_G00_Artilleriebunker"
 msgstr "Дот"
 
@@ -5061,9 +5059,6 @@ msgid "Turret_1_G120_M41_90_GrandFinal"
 msgstr "leKpz M 41 90 mm"
 
 msgid "Turret_1_G121_Grille_15_L63"
-msgstr "Grille 15"
-
-msgid "Turret_1_G121_Grille_15_L63_ISP"
 msgstr "Grille 15"
 
 msgid "Turret_1_G122_VK6501H"
@@ -5223,9 +5218,6 @@ msgid "Turret_1_JagdTiger_SdKfz_185"
 msgstr "8,8 cm Pak 43 Jagdtiger"
 
 msgid "Turret_1_Leopard1"
-msgstr "Leopard 1"
-
-msgid "Turret_1_Leopard1_ISP"
 msgstr "Leopard 1"
 
 msgid "Turret_1_Lowe"
@@ -5869,22 +5861,13 @@ msgstr "Gr 39/46 HL"
 msgid "_105mmGr_39H1A_K"
 msgstr "Gr 39 H1A K"
 
-msgid "_105mmGr_39H1A_K_ISP"
-msgstr "Gr 39 H1A K"
-
 msgid "_105mm_APCR_DM23"
-msgstr "DM23"
-
-msgid "_105mm_APCR_DM23_ISP"
 msgstr "DM23"
 
 msgid "_105mm_APDS_M_SH"
 msgstr "M 42/43"
 
 msgid "_105mm_AP_DM13"
-msgstr "DM13"
-
-msgid "_105mm_AP_DM13_ISP"
 msgstr "DM13"
 
 msgid "_105mm_AP_DM7_SH"
@@ -5897,9 +5880,6 @@ msgid "_105mm_BK_L7"
 msgstr "10,5 cm Bordkanone L7"
 
 msgid "_105mm_BK_L7A3_L51"
-msgstr "10,5 cm Bordkanone L7A3"
-
-msgid "_105mm_BK_L7A3_L51_ISP"
 msgstr "10,5 cm Bordkanone L7A3"
 
 msgid "_105mm_DM11A1"
@@ -5950,9 +5930,6 @@ msgstr "Gr. 39 rot H1 FES К.18"
 msgid "_105mm_HE_DM11"
 msgstr "DM11"
 
-msgid "_105mm_HE_DM11_ISP"
-msgstr "DM11"
-
 msgid "_105mm_K18_L52"
 msgstr "10,5 cm Pak L/52"
 
@@ -5981,14 +5958,6 @@ msgstr ""
 
 msgid "_105mm_KwK45_L52_ausf_K"
 msgstr "10,5 cm Kw.K. L/52 Ausf. K"
-
-msgid "_105mm_KwK45_L52_ausf_K_ISP"
-msgstr "10,5 cm Kw.K. L/52 Ausf. K"
-
-msgid "_105mm_KwK45_L52_ausf_K_ISP_short"
-msgstr ""
-"10,5 cm Kw.K. L/52\n"
-"Ausf. K"
 
 msgid "_105mm_KwK45_L52_ausf_K_short"
 msgstr ""
@@ -6052,9 +6021,6 @@ msgstr "Pzgr 40 G"
 msgid "_105mm_Pzgr.40K"
 msgstr "Pzgr 40 K"
 
-msgid "_105mm_Pzgr.40K_ISP"
-msgstr "Pzgr 40 K"
-
 msgid "_105mm_Pzgr.40L1"
 msgstr "Pzgr 40 L1"
 
@@ -6086,9 +6052,6 @@ msgid "_105mm_Sprg.18G"
 msgstr "Sprgr 18G"
 
 msgid "_105mm_Sprg.18K"
-msgstr "Sprgr 18 K"
-
-msgid "_105mm_Sprg.18K_ISP"
 msgstr "Sprgr 18 K"
 
 msgid "_105mm_Sprg_K"
@@ -6126,9 +6089,6 @@ msgstr "10WSc"
 
 msgid "_10WSc_02"
 msgstr "10WSc F"
-
-msgid "_10WSc_ISP"
-msgstr "10WSc"
 
 msgid "_10WSc_MK"
 msgstr "10WSc"
@@ -6217,9 +6177,6 @@ msgstr "12,8 cm Kw.K. 44 L/55"
 msgid "_128mm_KwK44_L55_G"
 msgstr "12,8 cm Kw.K. 44 L/55"
 
-msgid "_128mm_KwK44_L55_ISP"
-msgstr "12,8 cm Kw.K. 44 L/55"
-
 msgid "_128mm_KwK44_L55_N"
 msgstr "12,8 cm Kw.K. Ausf. E"
 
@@ -6292,9 +6249,6 @@ msgstr "Pzgr 39 E"
 msgid "_128mm_PzGr39_GW"
 msgstr "Pzgr 39"
 
-msgid "_128mm_PzGr39_ISP"
-msgstr "Pzgr 39"
-
 msgid "_128mm_PzGr39_TM"
 msgstr "Pzgr 39TM"
 
@@ -6323,9 +6277,6 @@ msgid "_128mm_PzGr40_E"
 msgstr "Pzgr 40 E"
 
 msgid "_128mm_PzGr40_GW"
-msgstr "Pzgr 40"
-
-msgid "_128mm_PzGr40_ISP"
 msgstr "Pzgr 40"
 
 msgid "_128mm_PzGr40_TM"
@@ -6362,9 +6313,6 @@ msgid "_128mm_SprG18_E"
 msgstr "Sprgr 18 E"
 
 msgid "_128mm_SprG18_GW"
-msgstr "Sprgr 18"
-
-msgid "_128mm_SprG18_ISP"
 msgstr "Sprgr 18"
 
 msgid "_128mm_SprG18_TM"
@@ -6421,9 +6369,6 @@ msgstr "15 cm Gr. 19 Stg FES"
 msgid "_150mm_Gr_HL"
 msgstr "Gr. HL"
 
-msgid "_150mm_Gr_HL_ISP"
-msgstr "Gr. HL"
-
 msgid "_150mm_KwK44_L38"
 msgstr "15 cm Kw.K. L/38"
 
@@ -6439,9 +6384,6 @@ msgstr "15 cm Nebelwerfer 41"
 msgid "_150mm_Pak_L63"
 msgstr "15 cm Pak L/63"
 
-msgid "_150mm_Pak_L63_ISP"
-msgstr "15 cm Pak L/63"
-
 msgid "_150mm_PzGr39H2_SH"
 msgstr "Pzgr 39 H2"
 
@@ -6452,9 +6394,6 @@ msgid "_150mm_PzGr42_02"
 msgstr "Pzgr 42"
 
 msgid "_150mm_Pzgr"
-msgstr "Pzgr."
-
-msgid "_150mm_Pzgr_ISP"
 msgstr "Pzgr."
 
 msgid "_150mm_Rohr_L29_5"
@@ -6488,9 +6427,6 @@ msgid "_150mm_Sprg_L.erz"
 msgstr "Sprgr L erz."
 
 msgid "_150mm_Sprgr"
-msgstr "Sprgr."
-
-msgid "_150mm_Sprgr_ISP"
 msgstr "Sprgr."
 
 msgid "_150mm_sFH13_L17"

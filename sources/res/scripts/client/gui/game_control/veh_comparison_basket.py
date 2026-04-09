@@ -406,11 +406,19 @@ class _VehCompareData(object):
         return [None] * eqCapacity
 
     def __addBuiltInEquipment(self, equipmentIDs):
-        if not self.__isInInventory and self.itemsCache.isSynced():
-            vehicleType = self.__getVehicleType()
-            builtInEquipmentIDs = vehicles.getBuiltinEqsForVehicle(vehicleType)
-            for slotId, eqID in enumerate(builtInEquipmentIDs):
+        if self.__isInInventory or not self.itemsCache.isSynced():
+            return
+        vehicleType = self.__getVehicleType()
+        builtInEquipmentIDs = vehicles.getBuiltinEqsForVehicle(vehicleType)
+        for slotId, eqID in enumerate(builtInEquipmentIDs):
+            if eqID is None:
+                continue
+            if eqID in equipmentIDs:
+                continue
+            if equipmentIDs[slotId] is None:
                 equipmentIDs[slotId] = eqID
+
+        return
 
     def __getVehicleType(self):
         _, nationID, vehicleTypeID = vehicles.parseIntCompactDescr(self.__intCD)

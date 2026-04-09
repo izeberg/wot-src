@@ -8,6 +8,15 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "armoryYard/currency/featureName"
+msgstr "«Сборочный цех»"
+
+msgid "armoryYard/currency/progression_token/description"
+msgstr "Используется для прохождения этапов события %(featureName)s."
+
+msgid "armoryYard/currency/progression_token/title"
+msgstr "Жетон строительства"
+
 msgid "notEnoughPoints/body"
 msgstr ""
 "Павышайце ўзроўні фронту ў рэжыме «Лінія фронту», каб здабываць ачкі "
@@ -20,7 +29,7 @@ msgid "notEnoughPoints/value"
 msgstr "Не стае: %(points)s %(icon)s "
 
 msgid "notification/frontlineDisabled"
-msgstr "Режим недоступен по техническим причинам."
+msgstr "Рэжым недаступны з тэхнічных прычын."
 
 msgid "notification/frontlineEnabled"
 msgstr "Рэжым зноў даступны."

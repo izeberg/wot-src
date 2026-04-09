@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/Hangars/h00_armory_yard/environment/Constructor/A176_OTAC_LK_7605/normal/lod2/stg_12_gun_turret</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.418695 1.466397 -2.642736</min>
+		<max>1.418776 2.763964 3.829307</max>
+	</visibilityBox>
+	<nodefullVisual>content/Hangars/h00_armory_yard/environment/Constructor/A176_OTAC_LK_7605/normal/lod1/stg_12_gun_turret</nodefullVisual>
+</root>

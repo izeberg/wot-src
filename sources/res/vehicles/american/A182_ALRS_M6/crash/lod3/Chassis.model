@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A182_ALRS_M6/crash/lod3/Chassis</nodefullVisual>
+	<parent>vehicles/american/A182_ALRS_M6/crash/lod4/Chassis</parent>
+	<tank>true</tank>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.601608 -0.001065 -2.861211</min>
+		<max>1.601630 1.185637 3.766640</max>
+	</visibilityBox>
+</root>

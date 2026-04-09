@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>s_nd0.vertices</vertices>
+			<stream>s_nd0.uv2</stream>
+			<stream>s_nd0.uv3</stream>
+			<primitive>s_nd0.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0</identifier>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<fx>shaders/custom/VAT.fx</fx>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/CharacterAnimations/hd_char_h_VD26_0035_Civil_Boy/hd_char_h_VD26_0035_Civil_Boy_02_AM.dds</Texture>
+					</property>
+					<property>
+						g_AnimationDuration
+						<Float>2.500000</Float>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_posTexture
+						<Texture>content/Hangars/CharacterAnimations/VAT/Civil_Boy/s_nd0_16f4_POS_VAT.dds</Texture>
+					</property>
+					<property>
+						g_rotTexture
+						<Texture>content/Hangars/CharacterAnimations/VAT/Civil_Boy/s_nd0_R32f_ROT_VAT.dds</Texture>
+					</property>
+					<property>
+						g_timeMode
+						<Int>2</Int>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/CharacterAnimations/hd_char_h_VD26_0035_Civil_Boy/hd_char_h_VD26_0035_Civil_Boy_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/CharacterAnimations/hd_char_h_VD26_0035_Civil_Boy/hd_char_h_VD26_0035_Civil_Boy_ANM.dds</Texture>
+					</property>
+					<property>
+						g_timeRandomizationParams
+						<Vector4>1.000000 0.000000 1.000000 0.000000</Vector4>
+					</property>
+				</material>
+				<groupOrigin>-0.006855 0.584624 0.075686</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-0.193161 -0.003652 -0.118652</min>
+		<max>0.179452 1.172900 0.270025</max>
+	</boundingBox>
+	<geometrySize>183348</geometrySize>
+	<minUVDensity>0.336038</minUVDensity>
+</root>

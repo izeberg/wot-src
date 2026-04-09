@@ -109,8 +109,7 @@ package net.wg.gui.lobby.questsWindow.components
       
       protected function layoutBlocks() : void
       {
-         var _loc1_:Number = NaN;
-         _loc1_ = Boolean(this.data.description) ? Number(Math.round(this.description.height + HEADER_PADDING)) : Number(0);
+         var _loc1_:Number = Boolean(this.data.description) ? Number(Math.round(this.description.height + HEADER_PADDING)) : Number(0);
          this.progressElementsContainer.y = _loc1_;
          var _loc2_:Number = Math.round(_loc1_ + this.progressElementsContainer.height);
          setSize(this.width,_loc2_);

@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
 	<forward>
+		<preloadTextures>
+			<path>
+				particles/content_forward/pfx_textures/eff_tex.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_leaves.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_tex_h33_comp7.dds
+				<type>primary</type>
+			</path>
+		</preloadTextures>
 		<fn_effect_bin>particles/content_forward/pfx/environment/hangar/h33_comp7_campfire.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/hangar/h33_comp7_exhaust.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/hangar/h33_comp7_godsmoke.vfx</fn_effect_bin>
@@ -41,24 +55,30 @@
 		<preloadVisual>particles/mesh_particles/tree_twig_02.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_board_04.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_board_square_01.visual</preloadVisual>
-		<preload>
-			<shader>data/shaders/ps.fx</shader>
-			<texture>particles/content_forward/pfx_textures/eff_tex.dds</texture>
-		</preload>
-		<preload>
-			<shader>data/shaders/ps.fx</shader>
-			<texture>particles/content_forward/pfx_textures/eff_leaves.dds</texture>
-		</preload>
-		<preload>
-			<shader>data/shaders/ps.fx</shader>
-			<texture>particles/content_forward/pfx_textures/eff_tex_h33_comp7.dds</texture>
-		</preload>
-		<preload>
-			<shader>data/shaders/ps_long.fx</shader>
-			<texture>particles/content_forward/pfx_textures/eff_tex_h33_comp7.dds</texture>
-		</preload>
 	</forward>
 	<deferred>
+		<preloadTextures>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_leaves.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_water.dds
+				<type>water</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_h33_comp7.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_distortion.dds
+				<type>primary</type>
+			</path>
+		</preloadTextures>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/hangar/h33_comp7_campfire.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/hangar/h33_comp7_exhaust.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/hangar/h33_comp7_flies.vfx</fn_effect_bin>
@@ -99,29 +119,5 @@
 		<preloadVisual>particles/mesh_particles/tree_twig_02.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_board_04.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_board_square_01.visual</preloadVisual>
-		<preload>
-			<shader>data/shaders/ps_long.fx</shader>
-			<texture>particles/content_deferred/pfx_textures/eff_tex_h33_comp7.dds</texture>
-		</preload>
-		<preload>
-			<shader>data/shaders/ps.fx</shader>
-			<texture>particles/content_deferred/pfx_textures/eff_tex.dds</texture>
-		</preload>
-		<preload>
-			<shader>data/shaders/ps.fx</shader>
-			<texture>particles/content_deferred/pfx_textures/eff_leaves.dds</texture>
-		</preload>
-		<preload>
-			<shader>data/shaders/ps.fx</shader>
-			<texture>particles/content_deferred/pfx_textures/eff_tex_h33_comp7.dds</texture>
-		</preload>
-		<preload>
-			<shader>data/shaders/ps_water_displacement.fx</shader>
-			<texture>particles/content_deferred/pfx_textures/eff_tex_water.dds</texture>
-		</preload>
-		<preload>
-			<shader>data/shaders/ps_shimmer.fx</shader>
-			<texture>particles/content_deferred/pfx_textures/eff_tex_distortion.dds</texture>
-		</preload>
 	</deferred>
 </root>

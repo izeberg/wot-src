@@ -296,10 +296,16 @@ class BattleMattersMainView(ViewImpl):
         intermediateQuests = questProgressModel.getIntermediateQuests()
         intermediateQuests.clear()
         for intermediateQuest in quests:
-            intermediateQuests.addViewModel(self.__createQuestProgressModel(intermediateQuest))
+            if self.__needToShowIntermediateQuest(intermediateQuest):
+                intermediateQuests.addViewModel(self.__createQuestProgressModel(intermediateQuest))
 
         intermediateQuests.invalidate()
         self.__settingsCore.serverSettings.setBattleMattersQuestWasShowed(countCompletedQuests)
+
+    def __needToShowIntermediateQuest(self, quest):
+        if self.__battleMattersController.isFinished() or quest.getOrder() < self.__currentQuestIdx:
+            return quest.isCompleted()
+        return True
 
     def __createQuestProgressModel(self, quest):
         intermediateQuestModel = IntermediateQuestModel()

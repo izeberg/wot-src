@@ -1,6 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
 	<forward>
+		<preloadTextures>
+			<path>
+				particles/content_forward/pfx_textures/eff_tex.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_tex_long.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/tracers.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_leaves.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_tex_83_kharkiv_fire.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/lm_textures/smoke_8x4_ea.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/lm_textures/smoke_8x4_lm.dds
+				<type>lightmaps</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/ramp/ramp_fire_smoke.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/ash.dds
+				<type>primary</type>
+			</path>
+		</preloadTextures>
 		<fn_effect_bin>particles/content_forward/pfx/environment/buildings/506_moscow_smoke_haze.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/buildings/hd_bld_uni_006_kitcrashfactory_roof_03.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/buildings/hd_env_uni_0035_pierwood_02.vfx</fn_effect_bin>
@@ -260,14 +298,66 @@
 		<preloadVisual>particles/mesh_particles/wood_stick_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_stick_02.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_stick_03.visual</preloadVisual>
-		<preload>
-			<shader>data/shaders/ps.fx</shader>
-			<texture>particles/content_forward/pfx_textures/lm_textures/smoke_8x4_ea.dds</texture>
-			<textureLM>particles/content_forward/pfx_textures/lm_textures/smoke_8x4_lm.dds</textureLM>
-			<textureRamp>particles/content_forward/pfx_textures/ramp/ramp_fire_smoke.dds</textureRamp>
-		</preload>
 	</forward>
 	<deferred>
+		<preloadTextures>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_long.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_leaves.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/503_kaliningrad_efftex.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_83_kharkiv_fire.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_distortion.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/lm_textures/smoke_8x4_ea.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/lm_textures/smoke_8x4_lm.dds
+				<type>lightmaps</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/ramp/ramp_fire_smoke.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_wt_spaces.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/ash.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/tracers.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_water.dds
+				<type>water</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_95_lost_city_dust.dds
+				<type>primary</type>
+			</path>
+		</preloadTextures>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/buildings/506_moscow_smoke_haze.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/buildings/hd_bld_uni_006_kitcrashfactory_roof_03.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/buildings/hd_env_uni_0035_pierwood_02.vfx</fn_effect_bin>
@@ -531,23 +621,5 @@
 		<preloadVisual>particles/mesh_particles/wood_log_02.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_stick_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_stick_03.visual</preloadVisual>
-		<preload>
-			<shader>data/shaders/ps.fx</shader>
-			<texture>particles/content_deferred/pfx_textures/lm_textures/smoke_8x4_ea.dds</texture>
-			<textureLM>particles/content_deferred/pfx_textures/lm_textures/smoke_8x4_lm.dds</textureLM>
-			<textureRamp>particles/content_deferred/pfx_textures/ramp/ramp_fire_smoke.dds</textureRamp>
-		</preload>
-		<preload>
-			<shader>data/shaders/ps_long.fx</shader>
-			<texture>particles/content_deferred/pfx_textures/eff_tex_wt_spaces.dds</texture>
-		</preload>
-		<preload>
-			<shader>data/shaders/ps_long.fx</shader>
-			<texture>particles/content_deferred/pfx_textures/eff_tex_95_lost_city_dust.dds</texture>
-		</preload>
-		<preload>
-			<shader>data/shaders/ps_long.fx</shader>
-			<texture>particles/content_deferred/pfx_textures/503_kaliningrad_efftex.dds</texture>
-		</preload>
 	</deferred>
 </root>

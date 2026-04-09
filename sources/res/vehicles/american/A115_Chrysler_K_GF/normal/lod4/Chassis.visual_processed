@@ -1124,10 +1124,6 @@
 						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
 					</property>
 					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
-					</property>
-					<property>
 						g_maskBias
 						<Float>
 							0.18
@@ -1136,10 +1132,7 @@
 					</property>
 					<property>
 						g_detailUVTiling
-						<Vector4>
-							4.20822 2.10411 0.000000 0.000000
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>4.208220 2.104110 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_detailPowerGloss
@@ -1166,10 +1159,6 @@
 					<property>
 						diffuseMap
 						<Texture>vehicles/american/A115_Chrysler_K_GF/Chrysler_K_GF_proxy_AM.dds</Texture>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
 					</property>
 				</material>
 				<groupOrigin>-1.550222 0.640677 -0.094944</groupOrigin>
@@ -1202,10 +1191,6 @@
 						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
 					</property>
 					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
-					</property>
-					<property>
 						g_maskBias
 						<Float>
 							0.18
@@ -1214,10 +1199,7 @@
 					</property>
 					<property>
 						g_detailUVTiling
-						<Vector4>
-							4.20822 2.10411 0.000000 0.000000
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>4.208220 2.104110 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_detailPowerGloss
@@ -1244,10 +1226,6 @@
 					<property>
 						diffuseMap
 						<Texture>vehicles/american/A115_Chrysler_K_GF/Chrysler_K_GF_proxy_AM.dds</Texture>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
 					</property>
 				</material>
 				<groupOrigin>1.531409 0.612164 -0.103163</groupOrigin>

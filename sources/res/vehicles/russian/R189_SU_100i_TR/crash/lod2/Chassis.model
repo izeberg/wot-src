@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/russian/R189_SU_100i_TR/crash/lod3/Chassis</parent>
+	<tank>true</tank>
+	<extent>96.000000</extent>
+	<nodefullVisual>vehicles/russian/R189_SU_100i_TR/crash/lod2/Chassis</nodefullVisual>
+	<visibilityBox>
+		<min>-1.272831 0.006553 -3.698825</min>
+		<max>1.572522 1.150420 2.845449</max>
+	</visibilityBox>
+</root>

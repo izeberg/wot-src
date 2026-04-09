@@ -1,0 +1,879 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>32.500000</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Yak3</name>
+		<type>model</type>
+		<resource>content/MilitaryEnvironment/hd_mle_EVT_PVE26_0003_Yak3T/normal/lod0/hd_mle_EVT_PVE26_0003_Yak3T_01.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>724.985779 3.066307 1193.930298</value>
+				<inTangent>-65.362236 -1.072022 -58.614803</inTangent>
+				<outTangent>-65.362236 -1.072022 -58.614803</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.033334</startTime>
+				<value>592.082520 0.886528 1074.746826</value>
+				<inTangent>-58.402397 0.788195 -73.559402</inTangent>
+				<outTangent>-58.402397 0.788195 -73.559402</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>6.133334</startTime>
+				<value>381.167999 11.745021 711.880371</value>
+				<inTangent>-38.756287 6.598424 -86.842575</inTangent>
+				<outTangent>-38.756287 6.598424 -86.842575</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>8.900001</startTime>
+				<value>309.040985 40.929024 476.212585</value>
+				<inTangent>-18.623899 7.386467 -87.679565</inTangent>
+				<outTangent>-18.623899 7.386467 -87.679565</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>11.633334</startTime>
+				<value>278.488342 52.475994 229.726044</value>
+				<inTangent>-11.525886 3.678776 -89.500076</inTangent>
+				<outTangent>-11.525886 3.678776 -89.500076</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>14.833334</startTime>
+				<value>240.491623 62.501755 -54.504791</value>
+				<inTangent>10.772841 -0.651118 -86.512398</inTangent>
+				<outTangent>10.772841 -0.651118 -86.512398</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>18.533335</startTime>
+				<value>364.144379 46.091194 -366.054657</value>
+				<inTangent>20.560127 -3.277623 -86.981812</inTangent>
+				<outTangent>20.560127 -3.277623 -86.981812</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>21.466667</startTime>
+				<value>386.732788 39.872646 -629.353455</value>
+				<inTangent>3.682025 -3.990997 -89.343452</inTangent>
+				<outTangent>3.682025 -3.990997 -89.343452</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>24.200001</startTime>
+				<value>385.812897 23.849754 -872.417664</value>
+				<inTangent>-14.119053 -9.374340 -95.393967</inTangent>
+				<outTangent>-14.119053 -9.374340 -95.393967</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>27.133335</startTime>
+				<value>303.968292 -13.951088 -1171.213013</value>
+				<inTangent>-47.730259 -9.203374 -86.945824</inTangent>
+				<outTangent>-47.730259 -9.203374 -86.945824</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>32.000000</startTime>
+				<value>-24.818512 -40.815575 -1521.757080</value>
+				<inTangent>-67.558960 -5.520102 -72.029633</inTangent>
+				<outTangent>-67.558960 -5.520102 -72.029633</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>3.966667</startTime>
+				<value>13.847038 33.000000 0.000001</value>
+				<inTangent>0.000000 -5.076923 0.000000</inTangent>
+				<outTangent>0.000000 -5.076923 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>6.133334</startTime>
+				<value>13.847038 22.000000 0.000001</value>
+				<inTangent>-2.233589 -5.413465 -4.998420</inTangent>
+				<outTangent>-2.233589 -5.413465 -4.998420</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>7.066667</startTime>
+				<value>9.677673 16.633327 -9.330379</value>
+				<inTangent>-9.482545 -5.493561 -15.896604</inTangent>
+				<outTangent>-9.482545 -5.493561 -15.896604</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>8.900001</startTime>
+				<value>2.603224 12.641496 -43.881554</value>
+				<inTangent>-4.348676 -3.852422 1.031937</inTangent>
+				<outTangent>-4.348676 -3.852422 1.031937</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>10.233334</startTime>
+				<value>-1.523575 5.414934 3.457754</value>
+				<inTangent>-0.516516 -1.049101 31.059301</inTangent>
+				<outTangent>-0.516516 -1.049101 31.059301</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>11.766667</startTime>
+				<value>1.613816 7.155546 57.499928</value>
+				<inTangent>2.969687 2.852123 0.777552</inTangent>
+				<outTangent>2.969687 2.852123 0.777552</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>12.600000</startTime>
+				<value>4.517572 10.944988 2.552682</value>
+				<inTangent>-0.132757 -5.064361 -51.423405</inTangent>
+				<outTangent>-0.132757 -5.064361 -51.423405</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>14.933334</startTime>
+				<value>1.318367 -6.617023 -59.843830</value>
+				<inTangent>-1.034502 -6.301630 -5.664580</inTangent>
+				<outTangent>-1.034502 -6.301630 -5.664580</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>19.000002</startTime>
+				<value>-1.519824 -27.262213 2.832438</value>
+				<inTangent>0.096691 10.374083 88.322182</inTangent>
+				<outTangent>0.096691 10.374083 88.322182</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>19.533335</startTime>
+				<value>-1.044466 -13.488973 88.822838</value>
+				<inTangent>0.320225 18.610788 0.125979</inTangent>
+				<outTangent>0.320225 18.610788 0.125979</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>21.466667</startTime>
+				<value>-0.763707 0.240823 3.141587</value>
+				<inTangent>-0.127122 3.808068 -9.132190</inTangent>
+				<outTangent>-0.127122 3.808068 -9.132190</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>24.466667</startTime>
+				<value>-1.975413 8.702175 23.451672</value>
+				<inTangent>-0.816305 0.577929 11.200274</inTangent>
+				<outTangent>-0.816305 0.577929 11.200274</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>25.966667</startTime>
+				<value>-3.156964 13.040262 28.657375</value>
+				<inTangent>0.405432 7.164414 -0.723015</inTangent>
+				<outTangent>0.405432 7.164414 -0.723015</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>27.466667</startTime>
+				<value>-0.759117 30.195417 21.282627</value>
+				<inTangent>0.591241 10.711933 -8.524918</inTangent>
+				<outTangent>0.591241 10.711933 -8.524918</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>29.000002</startTime>
+				<value>-1.397111 45.508980 2.678163</value>
+				<inTangent>-0.416083 9.987097 -12.133335</inTangent>
+				<outTangent>-0.416083 9.987097 -12.133335</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>6.100000</startTime>
+				<value>-1.000000 1.000000 -1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>visibility</name>
+			<type>bool</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>false</value>
+			</frame>
+			<frame>
+				<startTime>0.433333</startTime>
+				<value>true</value>
+			</frame>
+			<frame>
+				<startTime>32.000000</startTime>
+				<value>false</value>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>BF109G_01</name>
+		<type>model</type>
+		<resource>content/MilitaryEnvironment/hd_mle_EVT_PVE26_0002_BF109G/normal/lod0/hd_mle_EVT_PVE26_0002_BF109G_01.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>827.811768 -1.970070 1201.992798</value>
+				<inTangent>-59.536613 8.653880 -73.430832</inTangent>
+				<outTangent>-59.536613 8.653880 -73.430832</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.066667</startTime>
+				<value>704.769409 15.914619 1050.235718</value>
+				<inTangent>-48.978752 5.211860 -74.254425</inTangent>
+				<outTangent>-48.978752 5.211860 -74.254425</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>7.233334</startTime>
+				<value>506.261475 25.058794 662.332642</value>
+				<inTangent>-41.957932 3.913826 -76.012589</inTangent>
+				<outTangent>-41.957932 3.913826 -76.012589</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>10.933334</startTime>
+				<value>337.930054 47.472702 377.628113</value>
+				<inTangent>-33.582767 4.866659 -81.413162</inTangent>
+				<outTangent>-33.582767 4.866659 -81.413162</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>14.966667</startTime>
+				<value>250.525452 62.297237 31.248856</value>
+				<inTangent>-9.133057 2.007691 -87.440430</inTangent>
+				<outTangent>-9.133057 2.007691 -87.440430</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>17.833334</startTime>
+				<value>260.284882 63.271549 -223.889359</value>
+				<inTangent>-3.594847 -4.556542 -88.312561</inTangent>
+				<outTangent>-3.594847 -4.556542 -88.312561</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>20.000002</startTime>
+				<value>237.330887 42.790123 -413.740204</value>
+				<inTangent>-17.514671 -7.502827 -86.669106</inTangent>
+				<outTangent>-17.514671 -7.502827 -86.669106</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>25.333334</startTime>
+				<value>107.009865 13.175768 -870.885681</value>
+				<inTangent>-12.521122 -2.574431 -87.288086</inTangent>
+				<outTangent>-12.521122 -2.574431 -87.288086</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>29.233335</startTime>
+				<value>104.642380 14.750707 -1217.445190</value>
+				<inTangent>-35.475975 -4.785783 -81.393707</inTangent>
+				<outTangent>-35.475975 -4.785783 -81.393707</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>32.000000</startTime>
+				<value>-89.978363 -12.847870 -1421.973755</value>
+				<inTangent>-70.344902 -9.975396 -73.926041</inTangent>
+				<outTangent>-70.344902 -9.975396 -73.926041</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.933333</startTime>
+				<value>3.876891 44.110031 0.000000</value>
+				<inTangent>0.003785 -7.983043 0.256615</inTangent>
+				<outTangent>0.003785 -7.983043 0.256615</outTangent>
+				<tangentMode>768</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.433333</startTime>
+				<value>3.882568 32.135468 0.384923</value>
+				<inTangent>0.001301 -4.152124 0.088211</inTangent>
+				<outTangent>0.001301 -4.152124 0.088211</outTangent>
+				<tangentMode>3</tangentMode>
+			</frame>
+			<frame>
+				<startTime>7.233334</startTime>
+				<value>3.876891 30.593678 0.000000</value>
+				<inTangent>-0.072853 -1.128376 -4.939497</inTangent>
+				<outTangent>-0.072853 -1.128376 -4.939497</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>10.933334</startTime>
+				<value>3.342153 23.432154 -36.255569</value>
+				<inTangent>-0.308222 -3.254106 -5.982197</inTangent>
+				<outTangent>-0.308222 -3.254106 -5.982197</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>14.966667</startTime>
+				<value>1.438739 4.989075 -44.990124</value>
+				<inTangent>-0.494887 -11.216663 3.928006</inTangent>
+				<outTangent>-0.494887 -11.216663 3.928006</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>16.466667</startTime>
+				<value>1.090238 -4.922523 1.172031</value>
+				<inTangent>-1.534128 -0.595213 32.116169</inTangent>
+				<outTangent>-1.534128 -0.595213 32.116169</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>17.833334</startTime>
+				<value>-2.785522 2.481129 46.897377</value>
+				<inTangent>-2.881832 9.102007 -0.155735</inTangent>
+				<outTangent>-2.881832 9.102007 -0.155735</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>20.133335</startTime>
+				<value>-4.580401 11.401100 25.918005</value>
+				<inTangent>-0.156091 3.445636 -8.081537</inTangent>
+				<outTangent>-0.156091 3.445636 -8.081537</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>22.600000</startTime>
+				<value>-3.425508 18.833223 8.548705</value>
+				<inTangent>0.575175 -0.422865 -10.333269</inTangent>
+				<outTangent>0.575175 -0.422865 -10.333269</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>25.333334</startTime>
+				<value>-1.560967 8.285960 -28.692762</value>
+				<inTangent>1.622874 -8.216426 -0.353340</inTangent>
+				<outTangent>1.622874 -8.216426 -0.353340</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>27.333334</startTime>
+				<value>0.876790 -1.626450 -6.691157</value>
+				<inTangent>2.005454 3.100758 40.779202</inTangent>
+				<outTangent>2.005454 3.100758 40.779202</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>28.400002</startTime>
+				<value>3.782535 9.819229 37.215584</value>
+				<inTangent>0.335563 17.293394 3.140280</inTangent>
+				<outTangent>0.335563 17.293394 3.140280</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>29.933334</startTime>
+				<value>0.566156 47.194389 35.401257</value>
+				<inTangent>-8.902366 2.952240 -6.484851</inTangent>
+				<outTangent>-8.902366 2.952240 -6.484851</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>31.166668</startTime>
+				<value>-5.602560 44.110031 -4.151097</value>
+				<inTangent>-5.001660 -2.500830 -32.069469</inTangent>
+				<outTangent>-5.001660 -2.500830 -32.069469</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>6.066667</startTime>
+				<value>-1.000000 1.000000 -1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>visibility</name>
+			<type>bool</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>false</value>
+			</frame>
+			<frame>
+				<startTime>0.733333</startTime>
+				<value>true</value>
+			</frame>
+			<frame>
+				<startTime>32.000000</startTime>
+				<value>false</value>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>BF109G_02</name>
+		<type>model</type>
+		<resource>content/MilitaryEnvironment/hd_mle_EVT_PVE26_0002_BF109G/normal/lod0/hd_mle_EVT_PVE26_0002_BF109G_01.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.100000</startTime>
+				<value>854.394531 -14.785072 1323.518311</value>
+				<inTangent>-86.742676 11.332575 -85.036423</inTangent>
+				<outTangent>-86.742676 11.332575 -85.036423</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.033334</startTime>
+				<value>686.691956 7.124580 1159.114502</value>
+				<inTangent>-62.946651 6.425559 -70.980080</inTangent>
+				<outTangent>-62.946651 6.425559 -70.980080</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>7.866667</startTime>
+				<value>458.313293 15.982746 827.059387</value>
+				<inTangent>-25.741705 3.200670 -72.549034</inTangent>
+				<outTangent>-25.741705 3.200670 -72.549034</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>11.633334</startTime>
+				<value>411.859802 34.374622 494.936035</value>
+				<inTangent>-32.803627 9.034468 -79.534950</inTangent>
+				<outTangent>-32.803627 9.034468 -79.534950</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>13.833334</startTime>
+				<value>294.655975 63.384121 338.965820</value>
+				<inTangent>-23.812702 2.161550 -79.407349</inTangent>
+				<outTangent>-23.812702 2.161550 -79.407349</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>17.333334</startTime>
+				<value>314.427704 32.363491 31.248856</value>
+				<inTangent>-6.668517 -0.680469 -87.302666</inTangent>
+				<outTangent>-6.668517 -0.680469 -87.302666</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>22.466667</startTime>
+				<value>216.965729 70.874268 -413.740204</value>
+				<inTangent>-0.949781 -1.526252 -90.973251</inTangent>
+				<outTangent>-0.949781 -1.526252 -90.973251</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>27.933334</startTime>
+				<value>310.372131 13.175766 -934.496643</value>
+				<inTangent>-26.620672 -8.211617 -105.023720</inTangent>
+				<outTangent>-26.620672 -8.211617 -105.023720</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>32.500000</startTime>
+				<value>-10.791779 -13.624298 -1458.691040</value>
+				<inTangent>-70.327881 -5.868629 -114.787117</inTangent>
+				<outTangent>-70.327881 -5.868629 -114.787117</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>1.400000</startTime>
+				<value>10.087450 44.553936 16.250332</value>
+				<inTangent>-5.274538 -2.405930 2.921379</inTangent>
+				<outTangent>-5.274538 -2.405930 2.921379</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.866667</startTime>
+				<value>-2.923077 38.619308 23.456400</value>
+				<inTangent>-1.133886 -2.893158 1.365713</inTangent>
+				<outTangent>-1.133886 -2.893158 1.365713</outTangent>
+				<tangentMode>768</tangentMode>
+			</frame>
+			<frame>
+				<startTime>6.533334</startTime>
+				<value>5.094964 29.604942 22.949862</value>
+				<inTangent>0.084721 -3.879197 -0.122015</inTangent>
+				<outTangent>0.084721 -3.879197 -0.122015</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>9.100000</startTime>
+				<value>4.419075 4.596803 20.487606</value>
+				<inTangent>0.838582 -0.842596 -0.130252</inTangent>
+				<outTangent>0.838582 -0.842596 -0.130252</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>11.633334</startTime>
+				<value>6.902652 22.348175 41.227882</value>
+				<inTangent>5.945087 15.142117 22.697321</inTangent>
+				<outTangent>5.945087 15.142117 22.697321</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>12.066668</startTime>
+				<value>9.803853 40.035629 49.767998</value>
+				<inTangent>4.244987 32.344143 11.407673</inTangent>
+				<outTangent>4.244987 32.344143 11.407673</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>13.066668</startTime>
+				<value>9.845816 44.698322 40.211201</value>
+				<inTangent>-2.803957 -9.273508 -49.512299</inTangent>
+				<outTangent>-2.803957 -9.273508 -49.512299</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>13.366668</startTime>
+				<value>8.150851 37.735405 13.370844</value>
+				<inTangent>-9.583780 -49.663673 -136.257202</inTangent>
+				<outTangent>-9.583780 -49.663673 -136.257202</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>13.833334</startTime>
+				<value>3.201116 16.325321 -45.752811</value>
+				<inTangent>-12.104931 -45.355026 -8.206360</inTangent>
+				<outTangent>-12.104931 -45.355026 -8.206360</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>15.666668</startTime>
+				<value>-6.282765 -10.503033 -18.066313</value>
+				<inTangent>-1.709131 -8.081784 53.024715</inTangent>
+				<outTangent>-1.709131 -8.081784 53.024715</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>17.333334</startTime>
+				<value>1.594954 3.989120 36.711281</value>
+				<inTangent>6.053027 14.173257 0.458376</inTangent>
+				<outTangent>6.053027 14.173257 0.458376</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>19.866667</startTime>
+				<value>9.391562 17.521156 7.825276</value>
+				<inTangent>-0.014688 -1.537959 -19.940001</inTangent>
+				<outTangent>-0.014688 -1.537959 -19.940001</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>22.433334</startTime>
+				<value>1.416967 -4.083799 -65.267326</value>
+				<inTangent>-4.790768 -17.191355 0.669501</inTangent>
+				<outTangent>-4.790768 -17.191355 0.669501</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>25.166668</startTime>
+				<value>-6.447279 -24.690672 9.939390</value>
+				<inTangent>-0.652372 3.055923 14.110656</inTangent>
+				<outTangent>-0.652372 3.055923 14.110656</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>28.433334</startTime>
+				<value>-1.310713 19.902411 12.247812</value>
+				<inTangent>2.193897 14.506687 0.862835</inTangent>
+				<outTangent>2.193897 14.506687 0.862835</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>30.433334</startTime>
+				<value>2.090122 37.706291 13.170144</value>
+				<inTangent>0.857353 0.000001 0.232521</inTangent>
+				<outTangent>0.857353 0.000001 0.232521</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>6.066667</startTime>
+				<value>-1.000000 1.000000 -1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>visibility</name>
+			<type>bool</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>false</value>
+			</frame>
+			<frame>
+				<startTime>1.033333</startTime>
+				<value>true</value>
+			</frame>
+			<frame>
+				<startTime>32.500000</startTime>
+				<value>false</value>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Airplane_Burning_Trail</name>
+		<type>particle</type>
+		<resource>particles/Environment/scenarios/105_air_smoke_trail_dense.eff</resource>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>6.033334</startTime>
+				<duration>25.966667</duration>
+				<value>Yak3|</value>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>6.033334</startTime>
+				<value>0.000000</value>
+				<inTangent>0.000000</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>13.366668</startTime>
+				<value>0.000000</value>
+				<inTangent>-0.000000</inTangent>
+				<outTangent>20.000114</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>13.466667</startTime>
+				<value>2.000000</value>
+				<inTangent>20.000114</inTangent>
+				<outTangent>-0.107914</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>32.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>-0.618557</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>EffSfx_Tracers_Yak3_01</name>
+		<type>model</type>
+		<resource>content/Environment/env_null_model/null_model.model</resource>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>6.033334</startTime>
+				<duration>25.533333</duration>
+				<value>BF109G_01|root</value>
+			</frame>
+		</track>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>6.033334</startTime>
+				<value>0.000000 0.200000 4.500000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>sequence</name>
+			<type>sequence</type>
+			<frame>
+				<startTime>9.566668</startTime>
+				<duration>2.500000</duration>
+				<value>particles/eff_sequence/105_effsfx_attack_airplane_bf109g.seq</value>
+				<speed>1.000000</speed>
+			</frame>
+			<frame>
+				<startTime>12.533334</startTime>
+				<duration>2.500000</duration>
+				<value>particles/eff_sequence/105_effsfx_attack_airplane_bf109g.seq</value>
+				<speed>1.000000</speed>
+			</frame>
+			<frame>
+				<startTime>15.066668</startTime>
+				<duration>2.500000</duration>
+				<value>particles/eff_sequence/105_effsfx_attack_airplane_bf109g.seq</value>
+				<speed>1.000000</speed>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>BF109G_01_engine</name>
+		<type>sound</type>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>31.933334</duration>
+				<value>BF109G_01|root</value>
+			</frame>
+		</track>
+		<track>
+			<name>sound</name>
+			<type>sound</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>31.933334</duration>
+				<sequenceSound>amb_map_105_germany_plane_yak</sequenceSound>
+				<type>play_till_end</type>
+				<fade>0.000000</fade>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>BF109G_02_engine</name>
+		<type>sound</type>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>32.433334</duration>
+				<value>BF109G_02|root</value>
+			</frame>
+		</track>
+		<track>
+			<name>sound</name>
+			<type>sound</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>32.466667</duration>
+				<sequenceSound>amb_map_105_germany_plane_yak</sequenceSound>
+				<type>play_till_end</type>
+				<fade>0.000000</fade>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Yak3_engine</name>
+		<type>sound</type>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>31.933334</duration>
+				<value>Yak3|root</value>
+			</frame>
+		</track>
+		<track>
+			<name>sound</name>
+			<type>sound</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>31.933334</duration>
+				<sequenceSound>amb_map_105_germany_plane_yak</sequenceSound>
+				<type>play_till_end</type>
+				<fade>0.000000</fade>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Yak3_exhaust_explosion</name>
+		<type>sound</type>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>31.933334</duration>
+				<value>Yak3|root</value>
+			</frame>
+		</track>
+		<track>
+			<name>sound</name>
+			<type>sound</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>31.966669</duration>
+				<sequenceSound>amb_map_105_germany_plane_exhaust_expl_yak</sequenceSound>
+				<type>play_till_end</type>
+				<fade>0.000000</fade>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>EffSfx_Tracers_Yak1_03</name>
+		<type>model</type>
+		<resource>content/Environment/env_null_model/null_model.model</resource>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>6.033334</startTime>
+				<duration>25.566669</duration>
+				<value>BF109G_02|root</value>
+			</frame>
+		</track>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>6.033334</startTime>
+				<value>0.000000 0.200000 3.500000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>sequence</name>
+			<type>sequence</type>
+			<frame>
+				<startTime>13.866668</startTime>
+				<duration>2.499999</duration>
+				<value>particles/eff_sequence/105_effsfx_attack_airplane_bf109g.seq</value>
+				<speed>1.000000</speed>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

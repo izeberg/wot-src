@@ -33,10 +33,10 @@ msgid "banner/seasonDate/seasonNotStarted"
 msgstr "З %(day)s %(month)s"
 
 msgid "banner/timeLeft/hours"
-msgstr "%(hour)s ч. %(min)s мин."
+msgstr "%(hour)s гадз. %(min)s хв."
 
 msgid "banner/timeLeft/min"
-msgstr "%(min)s мин."
+msgstr "%(min)s хв."
 
 msgid "banner/title"
 msgstr "КЛАНАВЫ СЕЗОН"
@@ -192,7 +192,7 @@ msgid "clanInvitesWindow/status/accepted"
 msgstr "Прынята"
 
 msgid "clanInvitesWindow/status/daysLeft"
-msgstr "%(days)d д. на ответ"
+msgstr "%(days)d д. на ответ"
 
 msgid "clanInvitesWindow/status/declined"
 msgstr "Адхілена"
@@ -204,10 +204,10 @@ msgid "clanInvitesWindow/status/expired"
 msgstr "Пратэрмінавана"
 
 msgid "clanInvitesWindow/status/hoursLeft"
-msgstr "%(hours)d ч. на ответ"
+msgstr "%(hours)d ч. на ответ"
 
 msgid "clanInvitesWindow/status/minutesLeft"
-msgstr "%(min)d мин. на ответ"
+msgstr "%(min)d мин. на ответ"
 
 msgid "clanInvitesWindow/status/sent"
 msgstr "Адпраўлена"
@@ -292,7 +292,9 @@ msgid "clanInvitesWindow/tooltips/table/cantSendInvite/body"
 msgstr "Немагчыма прыняць гульцоў у клан: у клане няма вольных месцаў."
 
 msgid "clanInvitesWindow/tooltips/table/invites/avgXP/body"
-msgstr "Сярэдні досвед за бой запрошанага гульца (прэміум акаўнт улічваецца)"
+msgstr ""
+"Средний опыт за бой игрока, которому отправлено приглашение (с учётом "
+"Премиум аккаунта)"
 
 msgid "clanInvitesWindow/tooltips/table/invites/avgXP/header"
 msgstr "Сярэдні досвед за бой"
@@ -352,7 +354,7 @@ msgstr "Дзеянні"
 
 msgid "clanInvitesWindow/tooltips/table/requests/avgXP/body"
 msgstr ""
-"Сярэдні досвед за бой гульца, які падаў заяўку (прэміум акаўнт улічваецца)"
+"Средний опыт за бой игрока, подавшего заявку (с учётом Премиум аккаунта)."
 
 msgid "clanInvitesWindow/tooltips/table/requests/avgXP/header"
 msgstr "Сярэдні досвед за бой"

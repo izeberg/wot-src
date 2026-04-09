@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>s0Shape5.vertices</vertices>
+			<primitive>s0Shape5.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0</identifier>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<materialKind>112</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Environment/hd_env_EVT_MAYPVE26_0001_G80PzI/hd_env_EVT_MAYPVE26_0001_G80PzI_AM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Environment/hd_env_EVT_MAYPVE26_0001_G80PzI/hd_env_EVT_MAYPVE26_0001_G80PzI_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Environment/hd_env_EVT_MAYPVE26_0001_G80PzI/hd_env_EVT_MAYPVE26_0001_G80PzI_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.021604 0.476523 -0.142751</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-1.148643 -0.033744 -1.947251</min>
+		<max>1.105435 0.986791 1.661750</max>
+	</boundingBox>
+	<customBsp>true</customBsp>
+	<geometrySize>122192</geometrySize>
+	<minUVDensity>0.001300</minUVDensity>
+</root>

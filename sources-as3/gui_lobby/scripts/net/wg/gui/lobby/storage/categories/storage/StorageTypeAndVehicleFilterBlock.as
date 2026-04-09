@@ -30,6 +30,8 @@ package net.wg.gui.lobby.storage.categories.storage
       
       private var _vehicleFilterVO:VehicleVO;
       
+      private var _hasResetVehicleFilterButton:Boolean = true;
+      
       public function StorageTypeAndVehicleFilterBlock()
       {
          super();
@@ -82,7 +84,7 @@ package net.wg.gui.lobby.storage.categories.storage
             if(this._vehicleFilterVO)
             {
                this.vehiclesFilterButton.setVehicle(this._vehicleFilterVO);
-               this.resetVehicleFilterButton.visible = true;
+               this.resetVehicleFilterButton.visible = this.hasResetVehicleFilterButton;
             }
             else
             {
@@ -120,6 +122,16 @@ package net.wg.gui.lobby.storage.categories.storage
       private function onResetVehicleFilterButtonClickHandler(param1:ButtonEvent) : void
       {
          dispatchEvent(new FiltersEvent(FiltersEvent.RESET_VEHICLE_FILTERS));
+      }
+      
+      public function get hasResetVehicleFilterButton() : Boolean
+      {
+         return this._hasResetVehicleFilterButton;
+      }
+      
+      public function set hasResetVehicleFilterButton(param1:Boolean) : void
+      {
+         this._hasResetVehicleFilterButton = param1;
       }
    }
 }

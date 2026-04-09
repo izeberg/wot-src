@@ -98,7 +98,6 @@ def getGameControllersConfig(manager):
     from gui.game_control.play_streak_controller import PlayStreakController
     from gui.game_control.black_market_controller import BlackMarketController
     from gui.game_control.newbie_entry_point_controller import NewbieEntryPointController
-    from gui.game_control.space_day_controller import SpaceDayController
     tracker = GameStateTracker()
     tracker.init()
     manager.addInstance(_interface.IGameStateTracker, tracker, finalizer='fini')
@@ -195,5 +194,4 @@ def getGameControllersConfig(manager):
     _config(_interface.IBlackMarketController, BlackMarketController())
     _config(_interface.IUnseenEventsCounter, UnseenEventManager())
     _config(_interface.INewbieEntryPointController, NewbieEntryPointController())
-    _config(_interface.ISpaceDayController, SpaceDayController())
     collectGameControllers(_config)

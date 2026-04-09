@@ -135,6 +135,9 @@ msgstr "Подходит к машинам: "
 msgid "customizationSuitableForAll/label"
 msgstr "Подходит для любой техники"
 
+msgid "devices/buttonLabel/gotoRestore"
+msgstr "Восстановление"
+
 msgid "devices/filters/all"
 msgstr "Всё оборудование"
 
@@ -149,6 +152,18 @@ msgstr "Штатное"
 
 msgid "devices/filters/trophy"
 msgstr "Трофейное"
+
+msgid "devices/restore/availableToRestore"
+msgstr "Доступно: "
+
+msgid "devices/restore/goBack"
+msgstr "НАЗАД"
+
+msgid "devices/restore/goBackToSections"
+msgstr "К ЗАПАСАМ"
+
+msgid "devices/restore/title"
+msgstr "ВОССТАНОВЛЕНИЕ ОБОРУДОВАНИЯ"
 
 msgid "filter/noResultsBtn/label"
 msgstr "Сбросить фильтр"
@@ -276,7 +291,7 @@ msgid "shellCompatible/moreGuns"
 msgstr "... и ещё к орудиям: %(vehCount)s"
 
 msgid "storage/balanceLabel"
-msgstr "В наличии:"
+msgstr "В наличии:"
 
 msgid "storage/filterTitle"
 msgstr "Показано:"

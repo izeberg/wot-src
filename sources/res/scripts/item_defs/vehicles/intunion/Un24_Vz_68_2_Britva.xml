@@ -3484,8 +3484,8 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<clip>
-						<count>20</count>
-						<rate>260</rate>
+						<count>18</count>
+						<rate>210</rate>
 					</clip>
 					<autoShoot>
 						<shotDispersionPerSec>
@@ -3494,9 +3494,13 @@
 						</shotDispersionPerSec>
 						<maxShotDispersion>9</maxShotDispersion>
 						<rate>
-							4.33
+							3.5
 							<!--BW_String-->
 						</rate>
+						<rebuildShotDispersionDelay>
+							1.0
+							<!--BW_String-->
+						</rebuildShotDispersionDelay>
 					</autoShoot>
 					<customizationSlots>
 						<slot>
@@ -3581,7 +3585,7 @@
 						</customizableVehicleAreas>
 					</customization>
 					<edgeByVisualModel>false</edgeByVisualModel>
-					<effects>shot_autoshoot_medium</effects>
+					<effects>shot_autoshoot_medium_shell_inside</effects>
 					<shotOffset>-0.000001 -0.010758 0.399097</shotOffset>
 					<models>
 						<undamaged>vehicles/intunion/Un24_Vz_68_2_Britva/normal/lod0/Gun_01.model</undamaged>

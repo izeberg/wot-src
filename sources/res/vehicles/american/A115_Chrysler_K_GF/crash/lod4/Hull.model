@@ -3,14 +3,8 @@
 	<tank>true</tank>
 	<materialNames/>
 	<visibilityBox>
-		<min>
-			-1.98609 -0.646738 -3.82846
-			<!--BW_String-->
-		</min>
-		<max>
-			2.0197 1.01144 3.82652
-			<!--BW_String-->
-		</max>
+		<min>-1.986090 -0.646738 -3.828460</min>
+		<max>2.019700 1.011440 3.826520</max>
 	</visibilityBox>
 	<nodefullVisual>vehicles/american/A115_Chrysler_K_GF/crash/lod4/Hull</nodefullVisual>
 </root>

@@ -91,10 +91,6 @@
 						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
 					</property>
 					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
-					</property>
-					<property>
 						g_useDetailMetallic
 						<Bool>true</Bool>
 					</property>
@@ -137,10 +133,7 @@
 					</property>
 					<property>
 						crash_coefficient
-						<Float>
-							0.3
-							<!--BW_String-->
-						</Float>
+						<Float>0.300000</Float>
 					</property>
 					<property>
 						alphaTestEnable
@@ -148,7 +141,7 @@
 					</property>
 					<property>
 						alphaReference
-						<Int>64</Int>
+						<Int>128</Int>
 					</property>
 				</material>
 				<groupOrigin>1.571695 0.475389 -0.450404</groupOrigin>
@@ -183,10 +176,6 @@
 						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
 					</property>
 					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
-					</property>
-					<property>
 						g_useDetailMetallic
 						<Bool>true</Bool>
 					</property>
@@ -229,10 +218,7 @@
 					</property>
 					<property>
 						crash_coefficient
-						<Float>
-							0.3
-							<!--BW_String-->
-						</Float>
+						<Float>0.300000</Float>
 					</property>
 					<property>
 						alphaTestEnable
@@ -240,7 +226,7 @@
 					</property>
 					<property>
 						alphaReference
-						<Int>64</Int>
+						<Int>128</Int>
 					</property>
 				</material>
 				<groupOrigin>-1.579044 0.621033 -0.085765</groupOrigin>

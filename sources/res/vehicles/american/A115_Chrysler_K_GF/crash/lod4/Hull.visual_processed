@@ -49,18 +49,22 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<primitive>indices</primitive>
+			<vertices>hull_Shape.vertices</vertices>
+			<primitive>hull_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>tank_proxy</identifier>
 					<fx>shaders/std_effects/PBS_tank_crash.fx</fx>
-					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
+					<identifier>tank_proxy</identifier>
+					<collisionFlags>0</collisionFlags>
 					<property>
-						normalMap
-						<Texture>vehicles/american/A115_Chrysler_K_GF/Chrysler_K_GF_proxy_ANM.dds</Texture>
+						diffuseMap
+						<Texture>vehicles/american/A115_Chrysler_K_GF/Chrysler_K_GF_proxy_AM.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 					<property>
 						metallicGlossMap
@@ -71,16 +75,16 @@
 						<Vector4>0.500000 0.500000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
-						excludeMaskAndAOMap
-						<Texture>vehicles/american/A115_Chrysler_K_GF/Chrysler_K_GF_proxy_AO.dds</Texture>
-					</property>
-					<property>
-						diffuseMap
-						<Texture>vehicles/american/A115_Chrysler_K_GF/Chrysler_K_GF_proxy_AM.dds</Texture>
-					</property>
-					<property>
 						crashTileMap
 						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/american/A115_Chrysler_K_GF/Chrysler_K_GF_proxy_ANM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/american/A115_Chrysler_K_GF/Chrysler_K_GF_proxy_AO.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>0.016807 0.182350 -0.000970</groupOrigin>

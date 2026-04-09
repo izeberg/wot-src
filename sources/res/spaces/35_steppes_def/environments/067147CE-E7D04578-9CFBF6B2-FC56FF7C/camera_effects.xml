@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<effectMap>spaces/35_steppes_def/environments/067147CE-E7D04578-9CFBF6B2-FC56FF7C/camera_effects_map.dds</effectMap>
+	<effect>
+		<id>1</id>
+		<name>particles/content_deferred/PFX/Environment/CameraEffects/City_Ash.vfx</name>
+		<alignToTerrain>true</alignToTerrain>
+		<useCameraTarget>false</useCameraTarget>
+	</effect>
+	<effect>
+		<id>2</id>
+		<name>particles/content_deferred/PFX/Environment/CameraEffects/fire_sparks.vfx</name>
+		<alignToTerrain>true</alignToTerrain>
+		<useCameraTarget>false</useCameraTarget>
+	</effect>
+	<effect>
+		<id>3</id>
+		<name>particles/content_deferred/PFX/Environment/CameraEffects/ground_fire_sparks.vfx</name>
+		<alignToTerrain>true</alignToTerrain>
+		<useCameraTarget>false</useCameraTarget>
+	</effect>
+</root>

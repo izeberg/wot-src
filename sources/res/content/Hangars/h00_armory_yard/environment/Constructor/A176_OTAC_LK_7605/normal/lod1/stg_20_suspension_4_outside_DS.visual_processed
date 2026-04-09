@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>lod0</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>stg_20_Torsions</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.000000 0.000000</row3>
+				</transform>
+				<node>
+					<identifier>stg_20_suspension_4_outside_DS</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>stg_20_suspension_4_outside_DS</node>
+		<geometry>
+			<vertices>stg_20_suspension_4_outside_DS_Shape.vertices</vertices>
+			<primitive>stg_20_suspension_4_outside_DS_Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd5</identifier>
+					<fx>shaders/experimental/spawn_effect.fx</fx>
+					<materialKind>112</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						alphaReference
+						<Int>1</Int>
+					</property>
+					<property>
+						finalParticlesColor
+						<Vector3>1.000000 0.023529 0.000000</Vector3>
+					</property>
+					<property>
+						initialParticlesColor
+						<Vector3>0.113725 0.082353 0.000000</Vector3>
+					</property>
+					<property>
+						particlesColorTransitionDistance
+						<Float>0.300000</Float>
+					</property>
+					<property>
+						particlesFar
+						<Float>5.000000</Float>
+					</property>
+					<property>
+						particleSizeMultiplier
+						<Float>1.500000</Float>
+					</property>
+					<property>
+						particlesMaxLinearDistance
+						<Vector3>0.200000 1.000000 0.200000</Vector3>
+					</property>
+					<property>
+						selfIllumination
+						<Float>50.000000</Float>
+					</property>
+					<property>
+						spawnContourColor
+						<Vector3>1.000000 0.023529 0.000000</Vector3>
+					</property>
+					<property>
+						spawnContourThickness
+						<Float>0.020000</Float>
+					</property>
+					<property>
+						spawnProgeression
+						<Float>0.000000</Float>
+					</property>
+					<property>
+						useParticles
+						<Bool>true</Bool>
+					</property>
+					<property>
+						useParticlesTexture
+						<Bool>true</Bool>
+					</property>
+					<property>
+						particlesTextureMap
+						<Texture>content/Hangars/h00_armory_yard/environment/Constructor/A176_OTAC_LK_7605/spark.dds</Texture>
+					</property>
+					<property>
+						preSpawnTextureMap
+						<Texture>content/Hangars/h00_armory_yard/environment/Constructor/A176_OTAC_LK_7605/noise_alpha_mask.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>1.178173 0.514621 -0.834546</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>0.963786 0.405718 -1.144423</min>
+		<max>1.392561 0.623524 -0.524668</max>
+	</boundingBox>
+	<geometrySize>14934</geometrySize>
+	<minUVDensity>0.039470</minUVDensity>
+</root>

@@ -1770,9 +1770,9 @@ msgstr "Дасягнуты ліміт ачкоў Баявога пропуска
 
 msgid "serviceChannelMessages/battlePass/reachedCapFactor/text"
 msgstr ""
-"На %(vehNameHighlight)s заработано максимально доступное количество очков.\n"
-"Получено очков в награду: %(bonusPoints)s\n"
-"Лимит очков и награда обновились. Продолжайте зарабатывать очки на %(vehName)s."
+"На %(vehNameHighlight)s здабыта максімальна даступная колькасць ачкоў.\n"
+"Атрымана ачкоў ва ўзнагароду: %(bonusPoints)s\n"
+"Ліміт ачкоў і ўзнагарода абнавіліся. Працягвайце здабываць ачкі на %(vehName)s."
 
 msgid "serviceChannelMessages/battlePass/reachedCapWeek/header"
 msgstr "Дасягнуты штотыднёвы ліміт ачкоў Баявога пропуска"
@@ -2420,6 +2420,9 @@ msgstr "Усе эксперыментальныя модулі спісаны"
 msgid "serviceChannelMessages/enhancements/wipedOnVehicles"
 msgstr "Дэмантаваны эксперыментальныя модулі з наступных машын"
 
+msgid "serviceChannelMessages/epicReward/armory_yard"
+msgstr "• Жетоны строительства"
+
 msgid "serviceChannelMessages/epicReward/battleBooster_gift"
 msgstr "• Настаўленне да абсталявання на выбар"
 
@@ -2936,31 +2939,31 @@ msgstr ""
 " шт."
 
 msgid "serviceChannelMessages/limitedUIContentUnlocked/battleMode"
-msgstr "Доступен режим боя:"
+msgstr "Даступны рэжым бою:"
 
 msgid "serviceChannelMessages/limitedUIContentUnlocked/battleModes"
-msgstr "Доступны режимы боя:"
+msgstr "Даступныя рэжымы бою:"
 
 msgid "serviceChannelMessages/limitedUIContentUnlocked/content"
-msgstr "Доступен раздел:"
+msgstr "Даступны раздзел:"
 
 msgid "serviceChannelMessages/limitedUIContentUnlocked/contents"
-msgstr "Доступны разделы:"
+msgstr "Даступныя раздзелы:"
 
 msgid "serviceChannelMessages/limitedUIContentUnlocked/personalMissions"
-msgstr "Кампании"
+msgstr "Кампаніі"
 
 msgid "serviceChannelMessages/limitedUIContentUnlocked/stronghold"
-msgstr "Укрепрайон"
+msgstr "Умацаваны раён"
 
 msgid "serviceChannelMessages/limitedUIContentUnlocked/title"
-msgstr "Разблокированы игровые возможности!"
+msgstr "Разблакаваны гульнявыя магчымасці!"
 
 msgid "serviceChannelMessages/limitedUIContentUnlocked/tournaments"
-msgstr "Турниры"
+msgstr "Турніры"
 
 msgid "serviceChannelMessages/limitedUIContentUnlocked/versusAI"
-msgstr "Полигон"
+msgstr "Палігон"
 
 msgid "serviceChannelMessages/lootBoxes/button"
 msgstr "Да кантэйнераў"
@@ -3076,6 +3079,9 @@ msgstr "узнагарода на выбар"
 
 msgid "serviceChannelMessages/offerTokenBonus/title"
 msgstr "Пастаўкі з тылу"
+
+msgid "serviceChannelMessages/paragons/body"
+msgstr "Получен доступ к ветке техники."
 
 msgid ""
 "serviceChannelMessages/personalMission/3/earlyPerfectCompletion/congrats"
@@ -3781,6 +3787,12 @@ msgstr ""
 
 msgid "serviceChannelMessages/tradingCaravan/refill/title"
 msgstr "Папаўненне тавару"
+
+msgid "serviceChannelMessages/tradingCaravanCoinAdded/body"
+msgstr "Добавлено жетонов «Торгового каравана»: "
+
+msgid "serviceChannelMessages/tradingCaravanCoinAdded/title"
+msgstr "Фінансавая аперацыя"
 
 msgid "serviceChannelMessages/vehCamouflageTimedOut"
 msgstr "Тэрмін дзеяння камуфляжу на %(vehicleName)s скончыўся."

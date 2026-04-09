@@ -27,7 +27,10 @@ package net.wg.gui.components.common
             param7 = NORMAL_STATE;
          }
          super.setTarget(param1,param2,param3,param4,param5,param6,param7);
-         this.counterView.tfPadding = param6;
+         if(this.counterView)
+         {
+            this.counterView.tfPadding = param6;
+         }
       }
       
       override protected function onDispose() : void
@@ -42,7 +45,10 @@ package net.wg.gui.components.common
       
       override protected function applyCountValue() : void
       {
-         this.counterView.setCount(value);
+         if(this.counterView)
+         {
+            this.counterView.setCount(value);
+         }
          super.applyCountValue();
       }
       
@@ -50,7 +56,7 @@ package net.wg.gui.components.common
       {
          var _loc1_:Rectangle = this.target.getBounds(this.target.parent);
          x = _loc1_.x + _loc1_.width | 0;
-         if(this.counterView.label)
+         if(this.counterView && this.counterView.label)
          {
             if(this.horizontalAlign == TextFormatAlign.RIGHT)
             {
@@ -76,7 +82,10 @@ package net.wg.gui.components.common
          {
             this.gotoAndStop(this.viewState);
          }
-         this.counterView.tfPadding = tfPadding;
+         if(this.counterView)
+         {
+            this.counterView.tfPadding = tfPadding;
+         }
       }
    }
 }

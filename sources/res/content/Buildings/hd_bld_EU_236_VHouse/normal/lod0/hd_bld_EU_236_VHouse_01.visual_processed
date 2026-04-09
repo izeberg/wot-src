@@ -445,14 +445,6 @@
 						<Texture>content/Buildings/00_Tiles/Dirt_PChurch_02_DM.dds</Texture>
 					</property>
 					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>64</Int>
-					</property>
-					<property>
 						g_enableTerrainBlending
 						<Bool>true</Bool>
 					</property>
@@ -547,14 +539,6 @@
 						</Vector4>
 					</property>
 					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>64</Int>
-					</property>
-					<property>
 						g_enableTerrainBlending
 						<Bool>true</Bool>
 					</property>
@@ -615,14 +599,6 @@
 					<property>
 						blendMask
 						<Texture>content/Buildings/hd_bld_EU_236_VHouse/hd_bld_EU_236_VHouse_01_atlas_blend.png</Texture>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>64</Int>
 					</property>
 					<property>
 						dirtMap
@@ -725,14 +701,6 @@
 					<property>
 						dirtMap
 						<Texture>content/Buildings/00_Tiles/Dirt_PChurch_02_horisontal_DM.dds</Texture>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>64</Int>
 					</property>
 					<property>
 						g_enableTerrainBlending
@@ -860,14 +828,6 @@
 						<Texture>content/Buildings/00_Tiles/Dirt_PChurch_02_DM.dds</Texture>
 					</property>
 					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>64</Int>
-					</property>
-					<property>
 						g_enableTerrainBlending
 						<Bool>true</Bool>
 					</property>
@@ -962,14 +922,6 @@
 						</Vector4>
 					</property>
 					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>64</Int>
-					</property>
-					<property>
 						g_enableTerrainBlending
 						<Bool>true</Bool>
 					</property>
@@ -1030,14 +982,6 @@
 					<property>
 						blendMask
 						<Texture>content/Buildings/hd_bld_EU_236_VHouse/hd_bld_EU_236_VHouse_01_atlas_blend.png</Texture>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>64</Int>
 					</property>
 					<property>
 						dirtMap
@@ -1140,14 +1084,6 @@
 					<property>
 						dirtMap
 						<Texture>content/Buildings/00_Tiles/Dirt_PChurch_02_horisontal_DM.dds</Texture>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>64</Int>
 					</property>
 					<property>
 						g_enableTerrainBlending
@@ -1275,14 +1211,6 @@
 						<Texture>content/Buildings/00_Tiles/Dirt_PChurch_02_DM.dds</Texture>
 					</property>
 					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>64</Int>
-					</property>
-					<property>
 						g_enableTerrainBlending
 						<Bool>true</Bool>
 					</property>
@@ -1377,14 +1305,6 @@
 						</Vector4>
 					</property>
 					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>64</Int>
-					</property>
-					<property>
 						g_enableTerrainBlending
 						<Bool>true</Bool>
 					</property>
@@ -1445,14 +1365,6 @@
 					<property>
 						blendMask
 						<Texture>content/Buildings/hd_bld_EU_236_VHouse/hd_bld_EU_236_VHouse_01_atlas_blend.png</Texture>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>64</Int>
 					</property>
 					<property>
 						dirtMap
@@ -1555,14 +1467,6 @@
 					<property>
 						dirtMap
 						<Texture>content/Buildings/00_Tiles/Dirt_PChurch_02_horisontal_DM.dds</Texture>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>64</Int>
 					</property>
 					<property>
 						g_enableTerrainBlending
@@ -1690,14 +1594,6 @@
 						<Texture>content/Buildings/00_Tiles/Dirt_PChurch_02_DM.dds</Texture>
 					</property>
 					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>64</Int>
-					</property>
-					<property>
 						g_enableTerrainBlending
 						<Bool>true</Bool>
 					</property>
@@ -1792,14 +1688,6 @@
 						</Vector4>
 					</property>
 					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>64</Int>
-					</property>
-					<property>
 						g_enableTerrainBlending
 						<Bool>true</Bool>
 					</property>
@@ -1860,14 +1748,6 @@
 					<property>
 						blendMask
 						<Texture>content/Buildings/hd_bld_EU_236_VHouse/hd_bld_EU_236_VHouse_01_atlas_blend.png</Texture>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>64</Int>
 					</property>
 					<property>
 						dirtMap
@@ -1970,14 +1850,6 @@
 					<property>
 						dirtMap
 						<Texture>content/Buildings/00_Tiles/Dirt_PChurch_02_horisontal_DM.dds</Texture>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>64</Int>
 					</property>
 					<property>
 						g_enableTerrainBlending
@@ -2109,14 +1981,6 @@
 						</Vector4>
 					</property>
 					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>64</Int>
-					</property>
-					<property>
 						g_enableTerrainBlending
 						<Bool>true</Bool>
 					</property>
@@ -2202,14 +2066,6 @@
 					<property>
 						dirtMap
 						<Texture>content/Buildings/00_Tiles/Dirt_PChurch_02_DM.dds</Texture>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>64</Int>
 					</property>
 					<property>
 						g_enableTerrainBlending
@@ -2306,14 +2162,6 @@
 						</Vector4>
 					</property>
 					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>64</Int>
-					</property>
-					<property>
 						g_enableTerrainBlending
 						<Bool>true</Bool>
 					</property>
@@ -2374,14 +2222,6 @@
 					<property>
 						blendMask
 						<Texture>content/Buildings/hd_bld_EU_236_VHouse/hd_bld_EU_236_VHouse_01_atlas_blend.png</Texture>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>64</Int>
 					</property>
 					<property>
 						dirtMap
@@ -2484,14 +2324,6 @@
 					<property>
 						dirtMap
 						<Texture>content/Buildings/00_Tiles/Dirt_PChurch_02_horisontal_DM.dds</Texture>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>64</Int>
 					</property>
 					<property>
 						g_enableTerrainBlending
@@ -2623,14 +2455,6 @@
 						</Vector4>
 					</property>
 					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>64</Int>
-					</property>
-					<property>
 						g_enableTerrainBlending
 						<Bool>true</Bool>
 					</property>
@@ -2716,14 +2540,6 @@
 					<property>
 						dirtMap
 						<Texture>content/Buildings/00_Tiles/Dirt_PChurch_02_DM.dds</Texture>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>64</Int>
 					</property>
 					<property>
 						g_enableTerrainBlending
@@ -2820,14 +2636,6 @@
 						</Vector4>
 					</property>
 					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>64</Int>
-					</property>
-					<property>
 						g_enableTerrainBlending
 						<Bool>true</Bool>
 					</property>
@@ -2888,14 +2696,6 @@
 					<property>
 						blendMask
 						<Texture>content/Buildings/hd_bld_EU_236_VHouse/hd_bld_EU_236_VHouse_01_atlas_blend.png</Texture>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>64</Int>
 					</property>
 					<property>
 						dirtMap
@@ -2998,14 +2798,6 @@
 					<property>
 						dirtMap
 						<Texture>content/Buildings/00_Tiles/Dirt_PChurch_02_horisontal_DM.dds</Texture>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>64</Int>
 					</property>
 					<property>
 						g_enableTerrainBlending
@@ -3133,14 +2925,6 @@
 						<Texture>content/Buildings/00_Tiles/Dirt_PChurch_02_DM.dds</Texture>
 					</property>
 					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>64</Int>
-					</property>
-					<property>
 						g_enableTerrainBlending
 						<Bool>true</Bool>
 					</property>
@@ -3235,14 +3019,6 @@
 						</Vector4>
 					</property>
 					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>64</Int>
-					</property>
-					<property>
 						g_enableTerrainBlending
 						<Bool>true</Bool>
 					</property>
@@ -3303,14 +3079,6 @@
 					<property>
 						blendMask
 						<Texture>content/Buildings/hd_bld_EU_236_VHouse/hd_bld_EU_236_VHouse_01_atlas_blend.png</Texture>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>64</Int>
 					</property>
 					<property>
 						dirtMap
@@ -3413,14 +3181,6 @@
 					<property>
 						dirtMap
 						<Texture>content/Buildings/00_Tiles/Dirt_PChurch_02_horisontal_DM.dds</Texture>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>64</Int>
 					</property>
 					<property>
 						g_enableTerrainBlending
@@ -3548,14 +3308,6 @@
 						<Texture>content/Buildings/00_Tiles/Dirt_PChurch_02_DM.dds</Texture>
 					</property>
 					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>64</Int>
-					</property>
-					<property>
 						g_enableTerrainBlending
 						<Bool>true</Bool>
 					</property>
@@ -3650,14 +3402,6 @@
 						</Vector4>
 					</property>
 					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>64</Int>
-					</property>
-					<property>
 						g_enableTerrainBlending
 						<Bool>true</Bool>
 					</property>
@@ -3718,14 +3462,6 @@
 					<property>
 						blendMask
 						<Texture>content/Buildings/hd_bld_EU_236_VHouse/hd_bld_EU_236_VHouse_01_atlas_blend.png</Texture>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>64</Int>
 					</property>
 					<property>
 						dirtMap
@@ -3828,14 +3564,6 @@
 					<property>
 						dirtMap
 						<Texture>content/Buildings/00_Tiles/Dirt_PChurch_02_horisontal_DM.dds</Texture>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>64</Int>
 					</property>
 					<property>
 						g_enableTerrainBlending
