@@ -13,7 +13,7 @@ class HBMarkersMixin(object):
             if arena is not None:
                 role = arena.arenaInfo.vehicleRoleArenaComponent.getRole(attackerID)
                 if role == VehicleRole.elite:
-                    tankTypeStr += role.capitalize()
+                    tankTypeStr += role.name.capitalize()
                 elif role.hasUniqueIcon():
                     tankTypeStr = role.name
         return tankTypeStr

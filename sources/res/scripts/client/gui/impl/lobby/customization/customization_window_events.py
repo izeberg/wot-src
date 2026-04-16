@@ -1,12 +1,9 @@
 import logging
-from gui.Scaleform.framework.entities.View import ViewKeyDynamic, ViewKey
 from gui.impl.gen import R
 from gui.shared.event_dispatcher import getParentWindow
 from gui.shared import g_eventBus, events, EVENT_BUS_SCOPE
-from gui.Scaleform.daapi.settings.views import VIEW_ALIAS
 from gui.Scaleform.framework.managers.loaders import GuiImplViewLoadParams
 from gui.Scaleform.framework import ScopeTemplates
-from skeletons.gui.app_loader import IAppLoader
 from skeletons.gui.impl import IGuiLoader
 from helpers import dependency
 _logger = logging.getLogger(__name__)
@@ -32,12 +29,10 @@ def showFilterPopoverWindow(event, carouselDP, parent=None):
 
 def showProgressiveItemsView(itemIntCD=None, customizationView=None):
     from gui.impl.lobby.customization.progressive_items_view.progressive_items_view import ProgressiveItemsWindow
-    appLoader = dependency.instance(IAppLoader)
-    app = appLoader.getApp()
     if customizationView is None:
-        customizationView = app.containerManager.getViewByKey(ViewKeyDynamic(R.views.lobby.customization.progressive_items_view.ProgressiveItemsView()))
-    if customizationView is None:
-        customizationView = app.containerManager.getViewByKey(ViewKey(VIEW_ALIAS.LOBBY_CUSTOMIZATION))
+        uiLoader = dependency.instance(IGuiLoader)
+        layoutID = R.views.lobby.customization.CustomizationMainView()
+        customizationView = uiLoader.windowsManager.getViewByLayoutID(layoutID)
     if customizationView is None:
         parent = None
         _logger.error('ProgressiveItemsView shall be created only from customization')

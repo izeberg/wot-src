@@ -67,6 +67,8 @@ class _CustomizationEvents(object):
         self.onEditModeEnabled = Event.Event(self._eventsManager)
         self.onPersonalNumberCleared = Event.Event(self._eventsManager)
         self.onProlongStyleRent = Event.Event(self._eventsManager)
+        self.onFilterPopover = Event.Event(self._eventsManager)
+        self.onOnboardingView = Event.Event(self._eventsManager)
 
     def fini(self):
         self._eventsManager.clear()

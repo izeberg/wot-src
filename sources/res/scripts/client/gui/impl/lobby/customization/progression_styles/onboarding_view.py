@@ -26,7 +26,7 @@ def _onCustomizationLoadedCallback(styleCD, service=None, itemsCache=None):
 
 
 class OnboardingView(ViewImpl):
-    __slots__ = ('__isFirstRun', '__styleCD')
+    __slots__ = ('__isFirstRun', '__styleCD', '__ctx')
     __customizationService = dependency.descriptor(ICustomizationService)
 
     def __init__(self, ctx, layoutID):
@@ -45,6 +45,7 @@ class OnboardingView(ViewImpl):
         self.viewModel.setIsFirstShow(self.__isFirstRun)
         self.soundManager.setState(SOUNDS.STATE_STYLEINFO, SOUNDS.STATE_STYLEINFO_SHOW)
         self.soundManager.setRTPC(SOUNDS.RTPC_STYLEINFO, 1)
+        self.__ctx = self.__customizationService.getCtx()
 
     def _getEvents(self):
         return (
@@ -52,6 +53,14 @@ class OnboardingView(ViewImpl):
           self.viewModel.onGotoStyle, self.__onGotoStyle),
          (
           self.viewModel.onClose, self.__onClose))
+
+    def _initialize(self):
+        self.__ctx.events.onOnboardingView(True)
+        super(OnboardingView, self)._initialize()
+
+    def _finalize(self):
+        self.__ctx.events.onOnboardingView(False)
+        super(OnboardingView, self)._finalize()
 
     def __onGotoStyle(self):
         customizationCallback = partial(_onCustomizationLoadedCallback, styleCD=self.__styleCD)

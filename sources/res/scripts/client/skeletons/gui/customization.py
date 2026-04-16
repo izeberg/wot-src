@@ -26,7 +26,7 @@ class ICustomizationService(object):
     def fini(self):
         raise NotImplementedError
 
-    def showCustomization(self, vehInvID=None, callback=None, season=None, modeId=None, tabId=None, isOld=False):
+    def showCustomization(self, vehInvID=None, progressiveItemCD=None, callback=None, season=None, modeId=None, tabId=None, isOld=False):
         raise NotImplementedError
 
     def closeCustomization(self):
@@ -83,7 +83,7 @@ class ICustomizationService(object):
     def getEmptyOutfit(self, vehicleCD=''):
         raise NotImplementedError
 
-    def getEmptyOutfitWithNationalEmblems(self, vehicleCD, isClanHidden=False):
+    def getEmptyOutfitWithNationalEmblems(self, vehicleCD, isClanHidden=False, isMarksOnGunHidden=False):
         raise NotImplementedError
 
     def getOutfitByStyleId(self, vehicleCD, styleId):

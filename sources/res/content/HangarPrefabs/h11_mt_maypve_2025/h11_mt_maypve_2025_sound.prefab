@@ -10,7 +10,7 @@
 		<GameObject>
 			<name>h05_hangar_tank_static</name>
 			<UUID>609f1a5b-b290-4d60-92e1-3c3344670526</UUID>
-			<flags>2</flags>
+			<flags>0</flags>
 		</GameObject>
 	</GameObjects>
 	<components>
@@ -19,16 +19,6 @@
 			<version>2</version>
 			<component>
 				<objectIndex>1</objectIndex>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Parent</name>
-						<link>d9632e64-ec85-458a-9db7-917487ef7beb</link>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>2</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -66,28 +56,7 @@
 					<property>
 						<name>Position</name>
 						<value>
-							-70.9507 18 -26.72
-							<!--BW_String-->
-						</value>
-					</property>
-					<property>
-						<name>Scale</name>
-						<value>1 1 1</value>
-					</property>
-					<property>
-						<name>Rotation</name>
-						<value>-0 0 0</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>2</objectIndex>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Position</name>
-						<value>
-							-64.5421 17.5 -17.9133
+							-64.5421 18 -17.9133
 							<!--BW_String-->
 						</value>
 					</property>
@@ -105,24 +74,6 @@
 		<ComponentPool>
 			<type>Sound3D</type>
 			<version>1</version>
-			<component>
-				<objectIndex>0</objectIndex>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>Object name</name>
-						<value/>
-					</property>
-					<property>
-						<name>Event name</name>
-						<value/>
-					</property>
-					<property>
-						<name>AutoStart</name>
-						<value>0</value>
-					</property>
-				</config>
-			</component>
 			<component>
 				<objectIndex>1</objectIndex>
 				<flags>3</flags>

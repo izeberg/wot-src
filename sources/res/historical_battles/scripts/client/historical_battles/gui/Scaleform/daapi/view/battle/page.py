@@ -8,7 +8,6 @@ from gui.shared import EVENT_BUS_SCOPE, events
 from gui.battle_control.battle_constants import BATTLE_CTRL_ID
 from gui.Scaleform.genConsts.BATTLE_VIEW_ALIASES import BATTLE_VIEW_ALIASES
 from gui.Scaleform.daapi.view.battle.shared.page import ComponentsConfig
-from gui.Scaleform.daapi.view.battle.shared.crosshair import CrosshairPanelContainer
 from gui.Scaleform.daapi.view.battle.classic.page import ClassicPage
 from gui.Scaleform.daapi.view.battle.classic.page import DynamicAliases
 from gui.Scaleform.daapi.view.battle.shared.indicators import createPredictionIndicator
@@ -20,6 +19,7 @@ from historical_battles_common.hb_constants import AccountSettingsKeys
 from historical_battles_common.hb_constants_extension import ARENA_BONUS_TYPE
 from HBAvatarRespawnComponent import HBAvatarRespawnComponent
 from historical_battles.gui.Scaleform.daapi.settings import VIEW_ALIAS
+from historical_battles.gui.Scaleform.daapi.view.battle.crosshair import HBCrosshairPanelContainer
 from historical_battles.gui.Scaleform.daapi.view.battle.manager import HistoricalMarkersManager
 from historical_battles.gui.Scaleform.daapi.view.battle.indicators import createHistoricalBattlesDamageIndicator
 from historical_battles.gui.Scaleform.daapi.view.battle import start_countdown_sound_player
@@ -88,7 +88,7 @@ _FULL_SCREEN_VIEWS = {
  BATTLE_VIEW_ALIASES.RADIAL_MENU,
  BATTLE_VIEW_ALIASES.HISTORICAL_BATTLES_RESPAWN}
 _EVENT_EXTERNAL_COMPONENTS = (
- CrosshairPanelContainer, HistoricalMarkersManager)
+ HBCrosshairPanelContainer, HistoricalMarkersManager)
 
 class HistoricalBattlePage(ClassicPage):
     _gameEventController = dependency.descriptor(IGameEventController)
@@ -160,11 +160,13 @@ class HistoricalBattlePage(ClassicPage):
         self.__onRespawnVisibility(False)
 
     def __onRespawnVisibility(self, isVisible):
-        respawnAlias = BATTLE_VIEW_ALIASES.HISTORICAL_BATTLES_RESPAWN
-        respawn = self.getComponent(respawnAlias)
-        if respawn is None:
+        if self.sessionProvider.isReplayPlaying:
             return
         else:
+            respawnAlias = BATTLE_VIEW_ALIASES.HISTORICAL_BATTLES_RESPAWN
+            respawn = self.getComponent(respawnAlias)
+            if respawn is None:
+                return
             if isVisible:
                 self._toggleFullMap(False)
                 respawn.show()

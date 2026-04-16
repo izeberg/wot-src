@@ -24,7 +24,7 @@ from gui.impl.gen.view_models.constants.dialog_presets import DialogPresets
 from gui.impl.gen.view_models.views.lobby.customization.cart_season_model import CartSeasonModel
 from gui.impl.gen.view_models.views.lobby.customization.customization_bin_subview_model import CustomizationBinSubviewModel
 from gui.impl.gui_decorators import args2params
-from gui.impl.lobby.customization.customization_bill_data_packer import processBillDataPurchaseItems
+from gui.impl.lobby.customization.customization_bill_data_packer import processBillDataPurchaseItems, isVehicleEmpty
 from gui.impl.lobby.customization.customization_bin.bin_helpers import CartExchangeCreditsInfoItem, SelectItemData, getProcessorsMap
 from gui.impl.lobby.customization.shared import ITEM_TYPE_TO_SLOT_TYPE
 from gui.impl.pub import ViewImpl
@@ -404,7 +404,7 @@ class CustomizationBinSubview(ViewImpl):
                 _logger.error('Failed to purchase customization outfits.')
                 return
             cart = getTotalPurchaseInfo(purchaseItems)
-            if cart.totalPrice != ITEM_PRICE_EMPTY:
+            if cart.totalPrice != ITEM_PRICE_EMPTY and not isVehicleEmpty():
                 currency = cart.totalPrice.getCurrency(byWeight=True)
                 msgText = self.__getPurchaseMessage(cart, purchaseItems)
                 msgType = CURRENCY_TO_SM_TYPE.get(currency, SM_TYPE.PurchaseForGold)

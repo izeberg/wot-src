@@ -8,7 +8,6 @@ from gui.Scaleform.genConsts.PERSONAL_MISSIONS_ALIASES import PERSONAL_MISSIONS_
 from gui.Scaleform.genConsts.QUESTS_ALIASES import QUESTS_ALIASES
 from gui.impl.gen.view_models.views.lobby.personal_missions.personal_missions_main_quests_view_model import PageViewIdEnum
 from gui.impl.lobby.customization.progression_helpers import parseEventID
-from gui.impl.lobby.customization.customization_window_events import showProgressiveItemsView
 from gui.impl.lobby.personal_missions.personal_missions_window_events import showPersonalMissionsOperationWindow
 from gui.impl.lobby.reward_window import GiveAwayRewardWindow, PiggyBankRewardWindow, TwitchRewardWindow
 from gui.impl.pub.notification_commands import WindowNotificationCommand, EventNotificationCommand, NotificationEvent
@@ -256,7 +255,7 @@ def showMission(eventID, eventType=None):
         itemIntCD, vehicleIntCD = parseEventID(eventID)
         service = dependency.instance(ICustomizationService)
         vehicle = service.getItemByCD(vehicleIntCD)
-        service.showCustomization(vehicle.invID, lambda : showProgressiveItemsView(itemIntCD))
+        service.showCustomization(vehicle.invID, progressiveItemCD=itemIntCD)
         return
     else:
         if isC11nQuest(eventID):

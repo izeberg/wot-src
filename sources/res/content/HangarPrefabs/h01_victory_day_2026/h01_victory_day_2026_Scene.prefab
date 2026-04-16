@@ -12,6 +12,16 @@
 			<UUID>9f32e8e6-baa2-47db-8d72-f0d57efdad8f</UUID>
 			<flags>0</flags>
 		</GameObject>
+		<GameObject>
+			<name>start_sound_GO</name>
+			<UUID>d7994177-e407-4873-8355-9a97045e4b62</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>stop_sound_GO</name>
+			<UUID>28db597e-de51-4866-a51c-a0dadb92071e</UUID>
+			<flags>0</flags>
+		</GameObject>
 	</GameObjects>
 	<components>
 		<ComponentPool>
@@ -24,6 +34,26 @@
 					<property>
 						<name>Parent</name>
 						<link>673d42a3-ecea-4baa-b774-0640181b0322</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>2</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>9f32e8e6-baa2-47db-8d72-f0d57efdad8f</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>3</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>9f32e8e6-baa2-47db-8d72-f0d57efdad8f</link>
 					</property>
 				</config>
 			</component>
@@ -67,6 +97,91 @@
 					<property>
 						<name>Rotation</name>
 						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>2</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							1.0948 4.82639 -6.312
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>
+							-0 -5.96046e-08 0
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>3</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							1.0948 4.82639 -6.312
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>Sound3D</type>
+			<version>1</version>
+			<component>
+				<objectIndex>2</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Object name</name>
+						<value>hangar_h01_vd_night_stage_start</value>
+					</property>
+					<property>
+						<name>Event name</name>
+						<value>hangar_h01_vd_night_stage_start</value>
+					</property>
+					<property>
+						<name>AutoStart</name>
+						<value>0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>3</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Object name</name>
+						<value>hangar_h01_vd_night_stage_stop</value>
+					</property>
+					<property>
+						<name>Event name</name>
+						<value>hangar_h01_vd_night_stage_stop</value>
+					</property>
+					<property>
+						<name>AutoStart</name>
+						<value>0</value>
 					</property>
 				</config>
 			</component>
@@ -127,6 +242,25 @@
 					<property>
 						<name>Parts</name>
 						<collection/>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>VSEComponent</type>
+			<version>1</version>
+			<component>
+				<objectIndex>1</objectIndex>
+				<flags>1</flags>
+				<config>
+					<property>
+						<name>Path</name>
+						<isAsset>true</isAsset>
+						<value>vscript/plans/hangar/h01_victory_day_2026_scene_clickable.xml</value>
+					</property>
+					<property>
+						<name>AutoStart</name>
+						<value>1</value>
 					</property>
 				</config>
 			</component>

@@ -616,8 +616,8 @@ class CustomizationCarouselDataProvider(_CustomizationFiltersSettingsSerializabl
         self.__carouselFilters[FilterTypes.HISTORIC] = DisjunctionCarouselFilter(criteria={FilterAliases.HISTORIC: REQ_CRITERIA.CUSTOMIZATION.HISTORICAL, 
            FilterAliases.NON_HISTORIC: REQ_CRITERIA.CUSTOMIZATION.NON_HISTORICAL, 
            FilterAliases.FANTASTICAL: REQ_CRITERIA.CUSTOMIZATION.FANTASTICAL})
-        self.__carouselFilters[FilterTypes.INVENTORY] = SimpleCarouselFilter(criteria=REQ_CRITERIA.CUSTOM(lambda item: item.isInInventory and item.isUnlockedByToken()))
-        self.__carouselFilters[FilterTypes.SALE] = SimpleCarouselFilter(criteria=RequestCriteria(PredicateCondition(lambda item: 'notInShop' not in item.priceGroupTags)))
+        self.__carouselFilters[FilterTypes.INVENTORY] = SimpleCarouselFilter(criteria=REQ_CRITERIA.CUSTOM(lambda item: (True if self.__ctx.mode.getItemInventoryCount(item) > 0 or self.__ctx.modeId == CustomizationModes.EDITABLE_STYLE and self.__ctx.tabId == CustomizationTabs.CAMOUFLAGES else item.isInInventory) and item.isUnlockedByToken()))
+        self.__carouselFilters[FilterTypes.SALE] = SimpleCarouselFilter(criteria=RequestCriteria(PredicateCondition(lambda item: 'notInShop' not in item.priceGroupTags and not self.__ctx.mode.getItemInventoryCount(item))))
         self.__carouselFilters[FilterTypes.APPLIED] = SimpleCarouselFilter(criteria=REQ_CRITERIA.CUSTOM(lambda item: item.intCD in self.__ctx.mode.getAppliedItems(isOriginal=False)))
         self.__carouselFilters[FilterTypes.FAVORITE] = SimpleCarouselFilter(criteria=REQ_CRITERIA.CUSTOM(lambda item: item.markedAsFavorite))
         self.__carouselFilters[FilterTypes.USED_UP] = SimpleCarouselFilter(criteria=REQ_CRITERIA.CUSTOM(lambda item: not isItemUsedUp(item)), requirements=lambda : self.__ctx.isItemsOnAnotherVeh, inverse=True)

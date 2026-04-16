@@ -325,9 +325,11 @@ class CustomizationInscriptionController(EventsHandler, CallbackDelayer, Customi
         firstEnterRange.addString(formatPersonalNumber('1', self._digitsCount))
         firstEnterRange.addString('9' * self._digitsCount)
         editModel.setStartTimestamp(time_utils.getCurrentTimestamp())
-        editModel.setInscriptionState(InscriptionStateEnum.FIRSTENTER)
+        if self.__storedNumber is None:
+            editModel.setInscriptionState(InscriptionStateEnum.FIRSTENTER)
         editModel.setInscriptionDelay(inscriptionDelay)
         editModel.setInscriptionDuration(inscriptionDuration)
+        return
 
     def __fillInscriptionModel(self, inscriptionState, inscriptionDelay, inscriptionDuration, invalidInscriptionNumber=''):
         editModel = self.viewModel.editModeData

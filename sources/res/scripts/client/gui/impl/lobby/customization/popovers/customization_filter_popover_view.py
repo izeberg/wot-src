@@ -32,6 +32,14 @@ class CustomizationFilterPopoverView(PopOverViewImpl):
          (
           self.__ctx.events.onCarouselFiltered, self.__onCarouselFiltered))
 
+    def _initialize(self):
+        self.__ctx.events.onFilterPopover(True)
+        super(CustomizationFilterPopoverView, self)._initialize()
+
+    def _finalize(self):
+        self.__ctx.events.onFilterPopover(False)
+        super(CustomizationFilterPopoverView, self)._finalize()
+
     def _onLoading(self, *args, **kwargs):
         self.__ctx = self.__service.getCtx()
         super(CustomizationFilterPopoverView, self)._onLoading(*args, **kwargs)

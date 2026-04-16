@@ -12,6 +12,11 @@
 			<UUID>a51ffc9f-36b1-4fa1-b551-50e5fe323def</UUID>
 			<flags>0</flags>
 		</GameObject>
+		<GameObject>
+			<name>h01_VD25_Tanks_T34_85</name>
+			<UUID>71f78983-98c5-3a81-9704-db382a0eb6cc</UUID>
+			<flags>0</flags>
+		</GameObject>
 	</GameObjects>
 	<components>
 		<ComponentPool>
@@ -19,6 +24,16 @@
 			<version>2</version>
 			<component>
 				<objectIndex>1</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>8feecae8-7694-4c40-973f-6f123c66216b</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>2</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -70,6 +85,30 @@
 					</property>
 				</config>
 			</component>
+			<component>
+				<objectIndex>2</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							-1.29873 4.93719 0.0180359
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>
+							-0.122173 -1.5708 -7.50653e-09
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
 		</ComponentPool>
 		<ComponentPool>
 			<type>DynamicModel</type>
@@ -86,6 +125,25 @@
 					<property>
 						<name>Cast Shadows</name>
 						<value>0</value>
+					</property>
+					<property>
+						<name>Parts</name>
+						<collection/>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>2</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Model name</name>
+						<isAsset>true</isAsset>
+						<value>content/Hangars/h01_victory_day_2025/Environment/normal/lod0/h01_VD25_Tanks_T34_85.model</value>
+					</property>
+					<property>
+						<name>Cast Shadows</name>
+						<value>1</value>
 					</property>
 					<property>
 						<name>Parts</name>

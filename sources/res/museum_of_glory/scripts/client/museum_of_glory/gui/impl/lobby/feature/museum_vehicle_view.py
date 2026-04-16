@@ -355,7 +355,7 @@ class MuseumVehicleView(BaseTransitionView):
         self.__onYearChanged(vehicle.year)
         state = self.__museumOfGlory.getEpochMusics(vehicle.year)
         SoundGroups.setState(Constants.DATES_STATE, state)
-        outfit = self.__customizationService.getEmptyOutfitWithNationalEmblems(vehicle.strCD, isClanHidden=True)
+        outfit = self.__customizationService.getEmptyOutfitWithNationalEmblems(vehicle.strCD, isClanHidden=True, isMarksOnGunHidden=True)
         g_currentPreviewVehicle.selectVehicle(vehicle.intCD, vehicle.strCD, outfit=outfit)
         if self.__audioEnabled and self.__welcomeCallback is None:
             self.__playVehSoundEvent(vehicle)
@@ -372,6 +372,8 @@ class MuseumVehicleView(BaseTransitionView):
 
     def __onExcursionPlay(self, event):
         self.__isExcursionPlaying = event.get('isExcursionPlaying')
+        if not self.__isExcursionPlaying:
+            self.__isExcursionPaused = False
         if not self.__audioEnabled:
             SoundGroups.playSound2D(Constants.EXCURSION_MUTE)
             self.__playVehSoundEvent(self.__vehDtos[self.__currentVehicleIndex])

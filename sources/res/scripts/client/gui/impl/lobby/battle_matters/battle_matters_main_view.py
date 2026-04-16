@@ -150,15 +150,11 @@ class BattleMattersMainView(ViewImpl):
     def createToolTipContent(self, event, contentID):
         if contentID == R.views.lobby.tooltips.AdditionalRewardsTooltip():
             showCount = int(event.getArgument('showCount'))
-            questIdx = int(event.getArgument(BattleMattersMainViewModel.ARG_QUEST_ID, 1))
-            quest = self.__battleMattersController.getQuestByIdx(questIdx - 1)
-            bonuses = sorted(quest.getBonuses(), cmp=bonusesSort)
-            packer = getBattleMattersBonusPacker()
-            packed = []
-            for bonus in bonuses[showCount:]:
-                packed.extend(packer.pack(bonus))
-
-            return AdditionalRewardsTooltip(packed)
+            questIdx = int(event.getArgument(BattleMattersMainViewModel.ARG_QUEST_ID, 1)) - 1
+            quests = self.getViewModel().getQuests()
+            if questIdx < len(quests):
+                quest = quests[questIdx]
+                return AdditionalRewardsTooltip(quest.getRewards()[showCount:])
         if contentID == R.views.lobby.battle_matters.tooltips.BattleMattersTokenTooltipView():
             rewardToken = event.getArgument(BattleMattersTokenTooltipViewModel.ARG_REWARD_TOKEN)
             return BattleMattersTokenTooltipView(rewardToken)

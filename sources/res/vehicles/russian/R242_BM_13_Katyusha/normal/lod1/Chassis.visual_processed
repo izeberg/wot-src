@@ -436,10 +436,10 @@
 		<node>WD_R0_BlendBone</node>
 		<node>WD_L0_BlendBone</node>
 		<node>W_L0_BlendBone</node>
-		<node>W_R0_BlendBone</node>
-		<node>WD_L0_SCR_BlendBone</node>
 		<node>WD_L1_BlendBone</node>
+		<node>WD_L0_SCR_BlendBone</node>
 		<node>WD_R0_SCR_BlendBone</node>
+		<node>W_R0_BlendBone</node>
 		<node>WD_R1_BlendBone</node>
 		<geometry>
 			<vertices>chassis_L_Shape.vertices</vertices>
@@ -589,15 +589,15 @@
 						</Float>
 					</property>
 				</material>
-				<groupOrigin>0.000000 0.463091 -0.475731</groupOrigin>
+				<groupOrigin>0.000000 0.462908 -0.475731</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<constraints/>
 	<boundingBox>
 		<min>-1.101461 -0.000113 -2.324540</min>
-		<max>1.101461 0.926296 3.334714</max>
+		<max>1.101461 0.925929 3.334714</max>
 	</boundingBox>
-	<geometrySize>343488</geometrySize>
+	<geometrySize>342144</geometrySize>
 	<minUVDensity>0.005788</minUVDensity>
 </root>

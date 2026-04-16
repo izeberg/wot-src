@@ -1,6 +1,7 @@
 import logging, weakref
 from CurrentVehicle import g_currentVehicle
 from gui.impl.gui_decorators import args2params
+from gui.impl.lobby.customization.customization_bill_data_packer import packBottomPanelBillData
 from helpers.events_handler import EventsHandler
 from gui.customization.constants import CustomizationModes
 from gui.impl.gen.view_models.views.lobby.customization.progression_styles.stage_switcher_widget_model import StageSwitcherWidgetModel, SwitcherType
@@ -87,6 +88,7 @@ class StageSwitcherProvider(EventsHandler):
             tx.setSelectedLevel(selectedLevel)
         if self.__ctx is not None and self.__ctx.modeId == CustomizationModes.STYLED_3D:
             self.__ctx.mode.changeStyleProgressionLevel(selectedLevel)
+            packBottomPanelBillData(self.__mainView.viewModel.billModel)
         else:
             self.__customizationService.changeStyleProgressionLevelPreview(selectedLevel)
         return

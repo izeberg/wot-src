@@ -3306,23 +3306,30 @@
 			<frame>
 				<startTime>0.000000</startTime>
 				<value>0.000000</value>
-				<inTangent>16711.267578</inTangent>
-				<outTangent>16711.267578</outTangent>
+				<inTangent>0.000000</inTangent>
+				<outTangent>0.000000</outTangent>
 				<tangentMode>256</tangentMode>
 			</frame>
 			<frame>
-				<startTime>0.033333</startTime>
+				<startTime>0.100000</startTime>
+				<value>0.000000</value>
+				<inTangent>-0.000000</inTangent>
+				<outTangent>16711.265625</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.133333</startTime>
 				<value>557.042297</value>
-				<inTangent>16711.267578</inTangent>
-				<outTangent>-16711.267578</outTangent>
+				<inTangent>16711.269531</inTangent>
+				<outTangent>-16711.269531</outTangent>
 				<tangentMode>257</tangentMode>
 			</frame>
 			<frame>
-				<startTime>0.066667</startTime>
+				<startTime>0.166667</startTime>
 				<value>0.000000</value>
-				<inTangent>-16711.267578</inTangent>
-				<outTangent>0.000000</outTangent>
-				<tangentMode>257</tangentMode>
+				<inTangent>-16718.738281</inTangent>
+				<outTangent>0.679068</outTangent>
+				<tangentMode>514</tangentMode>
 			</frame>
 			<frame>
 				<startTime>0.500000</startTime>

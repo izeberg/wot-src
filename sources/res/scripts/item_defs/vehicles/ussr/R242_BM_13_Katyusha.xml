@@ -839,7 +839,9 @@
 	<radios>
 		<_12RT_K>shared</_12RT_K>
 	</radios>
-	<clientAdjustmentFactors/>
+	<clientAdjustmentFactors>
+		<armour>15</armour>
+	</clientAdjustmentFactors>
 	<physics>
 		<detailed>
 			<engines>

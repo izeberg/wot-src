@@ -1,5 +1,4 @@
-import logging, BigWorld
-from HBTeamInfoComponent import HBTeamInfoComponent
+import logging, typing, BigWorld
 from PlayerEvents import g_playerEvents
 from constants import ARENA_PERIOD
 from frameworks.wulf import ViewFlags, ViewSettings, WindowFlags, WindowLayer
@@ -7,17 +6,20 @@ from frameworks.wulf.gui_constants import ShowingStatus
 from gui.Scaleform.framework.entities.inject_component_adaptor import InjectComponentAdaptor
 from gui.battle_control.arena_info.interfaces import IArenaVehiclesController
 from gui.battle_control import avatar_getter
-from gui.impl.wrappers.function_helpers import replaceNoneKwargsModel
-from helpers import dependency
-from historical_battles.gui.impl.gen.view_models.views.battle.event_stats_view_model import EventStatsViewModel
-from historical_battles.gui.impl.gen.view_models.views.battle.event_stats_team_member_model import EventStatsTeamMemberModel
 from gui.impl.gui_decorators import args2params
 from gui.impl.pub import ViewImpl, WindowImpl
 from gui.impl.gen import R
-from historical_battles.gui.impl.gen.view_models.views.common.base_team_member_model import TeamMemberBanType
+from gui.impl.wrappers.function_helpers import replaceNoneKwargsModel
+from helpers import dependency
 from skeletons.gui.battle_session import IBattleSessionProvider
-from historical_battles_common.hb_constants_extension import ARENA_BONUS_TYPE
+from HBTeamInfoComponent import HBTeamInfoComponent
+from historical_battles.gui.impl.gen.view_models.views.battle.event_stats_view_model import EventStatsViewModel
+from historical_battles.gui.impl.gen.view_models.views.battle.event_stats_team_member_model import EventStatsTeamMemberModel
+from historical_battles.gui.impl.gen.view_models.views.common.base_team_member_model import TeamMemberBanType
 from historical_battles.gui.Scaleform.genConsts.HB_FRONT_NAME import HB_FRONT_NAME
+from historical_battles_common.hb_constants_extension import ARENA_BONUS_TYPE
+if typing.TYPE_CHECKING:
+    from gui.battle_control.arena_info.arena_vos import VehicleArenaInfoVO
 _logger = logging.getLogger(__name__)
 
 class EventStatsInjected(InjectComponentAdaptor):
@@ -43,6 +45,7 @@ class EventStats(ViewImpl, IArenaVehiclesController):
         settings.args = args
         settings.kwargs = kwargs
         super(EventStats, self).__init__(settings)
+        self.__leaverStates = {}
         self.__arenaDP = self.sessionProvider.getArenaDP()
 
     @property
@@ -78,6 +81,7 @@ class EventStats(ViewImpl, IArenaVehiclesController):
         if self.vehicleStats:
             self.vehicleStats.onTeamStatsUpdated += self.__updateStatsOnChangeParams
         HBTeamInfoComponent.onAllyInfoUpdated += self.__onAllyInfoUpdated
+        self.__leaverStates = {}
         with self.viewModel.transaction() as (tx):
             self.__updateHeader(model=tx)
             self.__updateColumns(model=tx)
@@ -91,7 +95,9 @@ class EventStats(ViewImpl, IArenaVehiclesController):
         HBTeamInfoComponent.onAllyInfoUpdated -= self.__onAllyInfoUpdated
         if self.vehicleStats:
             self.vehicleStats.onTeamStatsUpdated -= self.__updateStatsOnChangeParams
+        self.__leaverStates = None
         super(EventStats, self)._finalize()
+        return
 
     @property
     def vehicleStats(self):
@@ -116,19 +122,17 @@ class EventStats(ViewImpl, IArenaVehiclesController):
         vehID = vInfo.vehicleID
         vStats = self.__arenaDP.getVehicleStats(vehID)
         isSquad = playerSquad > 0 and playerSquad == vInfo.squadIndex
-        banType = TeamMemberBanType.NOTBANNED
+        banType = TeamMemberBanType.WARNED if self.__leaverStates.get(vehID) else TeamMemberBanType.NOTBANNED
         kills = vStats.frags
         damage = 0
         block = 0
         assist = 0
-        if self.vehicleStats:
-            banType = TeamMemberBanType.WARNED if self.vehicleStats.getIsLeaver(vehID) else TeamMemberBanType.NOTBANNED
-            if banType == TeamMemberBanType.NOTBANNED:
-                damage = self.vehicleStats.getDamage(vehID)
-                block = self.vehicleStats.getBlocked(vehID)
-                assist = self.vehicleStats.getAssist(vehID)
-            else:
-                kills = 0
+        if banType != TeamMemberBanType.NOTBANNED:
+            kills = 0
+        elif self.vehicleStats:
+            damage = self.vehicleStats.getDamage(vehID)
+            block = self.vehicleStats.getBlocked(vehID)
+            assist = self.vehicleStats.getAssist(vehID)
         member.setId(index)
         member.setIsAlive(vInfo.isAlive())
         member.setIsCurrentPlayer(vehID == playerVehicle.vehicleID)
@@ -189,6 +193,12 @@ class EventStats(ViewImpl, IArenaVehiclesController):
         team.invalidate()
 
     def __updateStatsOnChangeParams(self, *args, **kwars):
+        for info in iter(self.vehicleStats.isLeaver):
+            vID, isLeaver = info.id, info.value
+            if isLeaver and vID not in self.__leaverStates:
+                hasAvailableVehicles = self.allyInfo.getAliveVehicleCount(vID) != 0
+                self.__leaverStates[vID] = isLeaver and hasAvailableVehicles
+
         self.__updateStats()
 
     @args2params(int)

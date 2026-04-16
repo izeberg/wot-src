@@ -78,11 +78,11 @@ class _ServiceHelpersMixin(object):
         vehicleCD = vehicleCD or self._getVehicleCD()
         return self.itemsFactory.createOutfit(vehicleCD=vehicleCD)
 
-    def getEmptyOutfitWithNationalEmblems(self, vehicleCD, isClanHidden=False):
+    def getEmptyOutfitWithNationalEmblems(self, vehicleCD, isClanHidden=False, isMarksOnGunHidden=False):
         vehDesc = VehicleDescr(vehicleCD)
         decals = createNationalEmblemComponents(vehDesc)
         component = CustomizationOutfit(decals=decals)
-        return self.itemsFactory.createOutfit(component=component, vehicleCD=vehicleCD, isClanHidden=isClanHidden)
+        return self.itemsFactory.createOutfit(component=component, vehicleCD=vehicleCD, isClanHidden=isClanHidden, isMarksOnGunHidden=isMarksOnGunHidden)
 
     def getOutfitByStyleId(self, vehicleCD, styleId):
         styleIntCD = vehicles.makeIntCompactDescrByID('customizationItem', CustomizationType.STYLE, styleId)
@@ -234,12 +234,13 @@ class CustomizationService(_ServiceItemShopMixin, _ServiceHelpersMixin, ICustomi
         return
 
     @adisp.adisp_process
-    def showCustomization(self, vehInvID=None, callback=None, season=None, modeId=None, tabId=None):
+    def showCustomization(self, vehInvID=None, progressiveItemCD=None, callback=None, season=None, modeId=None, tabId=None):
         if self.__customizationCtx is None:
             lobbyHeaderNavigationPossible = yield self.__lobbyContext.isHeaderNavigationPossible()
             if not lobbyHeaderNavigationPossible:
                 return
-        self.__showCustomizationKwargs = {'vehInvID': vehInvID, 'callback': callback, 'season': season, 'modeId': modeId, 'tabId': tabId}
+        self.__showCustomizationKwargs = {'vehInvID': vehInvID, 'progressiveItemCD': progressiveItemCD, 'callback': callback, 'season': season, 'modeId': modeId, 
+           'tabId': tabId}
         shouldSelectVehicle = False
         if self.hangarSpace.space is not None:
             self.hangarSpace.space.turretAndGunAngles.set(gunPitch=self.__GUN_PITCH_ANGLE, turretYaw=self.__TURRET_YAW_ANGLE)
@@ -277,6 +278,7 @@ class CustomizationService(_ServiceItemShopMixin, _ServiceHelpersMixin, ICustomi
         modeId = self.__showCustomizationKwargs.get('modeId', None)
         tabId = self.__showCustomizationKwargs.get('tabId', None)
         vehInvID = self.__showCustomizationKwargs.get('vehInvID', None)
+        progressiveItemCD = self.__showCustomizationKwargs.get('progressiveItemCD', None)
         callback = self.__showCustomizationKwargs.get('callback', None)
         loadCallback = lambda : self.__loadCustomization(vehInvID, callback, season, modeId, tabId)
         if self.__showCustomizationCallbackId is None:
@@ -290,7 +292,7 @@ class CustomizationService(_ServiceItemShopMixin, _ServiceHelpersMixin, ICustomi
             ClientSelectableCameraObject.deselectAll()
             self.hangarSpace.space.getVehicleEntity().onSelect()
             self.__moveHangarVehicleToCustomizationRoom()
-            self.__showCustomizationCallbackId = BigWorld.callback(0.0, lambda : self.__showCustomization(loadCallback))
+            self.__showCustomizationCallbackId = BigWorld.callback(0.0, lambda : self.__showCustomization(progressiveItemCD, loadCallback))
         self.onVisibilityChanged(True)
         return
 
@@ -499,11 +501,12 @@ class CustomizationService(_ServiceItemShopMixin, _ServiceHelpersMixin, ICustomi
             self.__onSuspendHighlighter()
             g_eventBus.removeListener(events.LobbySimpleEvent.NOTIFY_SPACE_MOVED, self.__onSpaceMoving)
 
-    def __showCustomization(self, callback=None):
+    def __showCustomization(self, progressiveItemCD=None, callback=None):
         self.__showCustomizationCallbackId = None
         ctx = {}
         if callback is not None:
             ctx['callback'] = callback
+            ctx['progressiveItemCD'] = progressiveItemCD
             self.__customizationShownCallback = None
         showCustomizationMainView(ctx=ctx)
         return

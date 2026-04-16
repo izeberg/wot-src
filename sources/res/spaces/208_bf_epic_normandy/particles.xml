@@ -17,7 +17,7 @@
 		<fn_effect_bin>particles/environment/interior/208_firesmoke_hard.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/208_smoke_light_med.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/208_smoke_light_area.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/scenarios/front_line_cloak.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/scenarios/front_line_welding.eff</fn_effect_bin>
 		<preloadTextures>
 			<path>
 				particles/content_forward/pfx_textures/eff_tex.dds
@@ -33,6 +33,14 @@
 			</path>
 			<path>
 				particles/content_forward/pfx_textures/eff_dirt.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_fireworks.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_tex_smoke.dds
 				<type>primary</type>
 			</path>
 		</preloadTextures>
@@ -218,7 +226,7 @@
 		<fn_effect_bin>particles/content_forward/pfx/environment/scenarios/208_aircraft_damaged_west_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/scenarios/208_lrg_explosion.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/scenarios/208_smoke_east_01.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/pfx/environment/scenarios/front_line_cloak.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/scenarios/front_line_welding.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/scenarios/plane_engine_sc_all.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/trees/broadleaves/inf_tree_bush_dry_fall.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/trees/broadleaves/inf_tree_bush_dry_fall_big.vfx</fn_effect_bin>
@@ -479,7 +487,7 @@
 		<fn_effect_bin>particles/environment/interior/208_firesmoke_hard.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/208_smoke_light_med.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/208_smoke_light_area.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/scenarios/front_line_cloak.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/scenarios/front_line_welding.eff</fn_effect_bin>
 		<preloadTextures>
 			<path>
 				particles/content_deferred/pfx_textures/eff_tex_long.dds
@@ -504,6 +512,14 @@
 			<path>
 				particles/content_deferred/pfx_textures/eff_tex_force_field.dds
 				<type>forcefields</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_fireworks.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_smoke.dds
+				<type>primary</type>
 			</path>
 		</preloadTextures>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/battle_royal/lighting/lighting_arc_sparks.vfx</fn_effect_bin>
@@ -688,7 +704,7 @@
 		<fn_effect_bin>particles/content_deferred/pfx/environment/scenarios/208_aircraft_damaged_west_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/scenarios/208_lrg_explosion.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/scenarios/208_smoke_east_01.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/pfx/environment/scenarios/front_line_cloak.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/scenarios/front_line_welding.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/scenarios/plane_engine_sc_all.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/trees/broadleaves/inf_tree_bush_dry_fall.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/trees/broadleaves/inf_tree_bush_dry_fall_big.vfx</fn_effect_bin>

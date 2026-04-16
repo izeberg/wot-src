@@ -25235,6 +25235,8 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_XPDIRECTIVESBATTLEBOOSTER2:String = "../maps/icons/quests/bonuses/s180x135/xpDirectivesBattleBooster2.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_XPDIRECTIVESBATTLEBOOSTER2BATTLEBOOSTER:String = "../maps/icons/quests/bonuses/s180x135/xpDirectivesBattleBooster2BattleBooster.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_XPDIRECTIVESBATTLEBOOSTER3:String = "../maps/icons/quests/bonuses/s180x135/xpDirectivesBattleBooster3.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_ADDITIONALINVISIBILITYDEVICE:String = "../maps/icons/quests/bonuses/s232x174/additionalInvisibilityDevice.png";
@@ -28378,6 +28380,8 @@ package
       public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_XPDIRECTIVESBATTLEBOOSTER1:String = "../maps/icons/quests/bonuses/small/xpDirectivesBattleBooster1.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_XPDIRECTIVESBATTLEBOOSTER2:String = "../maps/icons/quests/bonuses/small/xpDirectivesBattleBooster2.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_XPDIRECTIVESBATTLEBOOSTER2BATTLEBOOSTER:String = "../maps/icons/quests/bonuses/small/xpDirectivesBattleBooster2BattleBooster.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_XPDIRECTIVESBATTLEBOOSTER3:String = "../maps/icons/quests/bonuses/small/xpDirectivesBattleBooster3.png";
       

@@ -569,7 +569,7 @@ class HangarVehicleAppearance(ScriptGameObject):
         return
 
     def getThisVehicleDossierInsigniaRank(self):
-        if self.__vDesc and self.__showMarksOnGun:
+        if self.__vDesc and self.isMarksOnGunVisible:
             vehicleDossier = self.itemsCache.items.getVehicleDossier(self.__vDesc.type.compactDescr)
             return vehicleDossier.getRandomStats().getAchievement(MARK_ON_GUN_RECORD).getValue()
         return 0
@@ -1087,6 +1087,10 @@ class HangarVehicleAppearance(ScriptGameObject):
     @property
     def outfit(self):
         return self.__outfit
+
+    @property
+    def isMarksOnGunVisible(self):
+        return self.__showMarksOnGun and self.__outfit is not None and not self.__outfit.isMarksOnGunHidden
 
     def __getStyleProgressionOutfitData(self, outfit):
         vehicle = None

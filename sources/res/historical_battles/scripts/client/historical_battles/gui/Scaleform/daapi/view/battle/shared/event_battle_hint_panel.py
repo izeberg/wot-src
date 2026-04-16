@@ -9,7 +9,7 @@ from gui.shared.utils.key_mapping import getReadableKey, getVirtualKey
 class HBBattleHintPanel(BattleHintPanel):
 
     def _createPlugins(self):
-        return {'HBHelpHintPlugin': HBHelpHintPlugin}
+        return {}
 
 
 class HBHelpHintPlugin(PreBattleHintPlugin):

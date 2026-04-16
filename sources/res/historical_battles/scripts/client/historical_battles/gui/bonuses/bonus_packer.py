@@ -8,7 +8,6 @@ from gui.impl.gen.view_models.common.missions.bonuses.icon_bonus_model import Ic
 from gui.impl.gen.view_models.common.missions.bonuses.token_bonus_model import TokenBonusModel
 from gui.impl.gen.view_models.views.lobby.battle_pass.reward_item_model import RewardItemModel
 from gui.server_events.formatters import COMPLEX_TOKEN
-from gui.shared.gui_items import GUI_ITEM_TYPE
 from gui.shared.missions.packers.bonus import SimpleBonusUIPacker, getLocalizedBonusName, TokenBonusUIPacker, BattlePassPointsBonusPacker
 from gui.shared.money import Currency
 from gui.shared.utils.functions import makeTooltip
@@ -279,14 +278,8 @@ class HBExtendedItemBonusUIPacker(ExtendedItemBonusUIPacker):
     @classmethod
     def _packSingleBonus(cls, bonus, item, count):
         model = super(HBExtendedItemBonusUIPacker, cls)._packSingleBonus(bonus, item, count)
-        icon = model.getIcon()
-        if not icon:
-            icon = item.name
-            isBattleBoosterOrOptional = item.itemTypeID in (GUI_ITEM_TYPE.BATTLE_BOOSTER, GUI_ITEM_TYPE.OPTIONALDEVICE)
-            isModernizedOptional = item.itemTypeID == GUI_ITEM_TYPE.OPTIONALDEVICE and item.isModernized
-            if not isBattleBoosterOrOptional or isModernizedOptional:
-                icon = item.getGUIEmblemID()
-            model.setIcon(icon)
+        if not model.getIcon():
+            model.setIcon(model.getBigIcon())
         return model
 
 

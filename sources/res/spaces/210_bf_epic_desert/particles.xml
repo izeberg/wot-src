@@ -2,6 +2,7 @@
 <root>
 	<forward>
 		<name>default</name>
+		<fn_effect_bin>particles/environment/scenarios/front_line_welding.eff</fn_effect_bin>
 		<preloadTextures>
 			<path>
 				particles/content_forward/pfx_textures/eff_tex.dds
@@ -29,6 +30,14 @@
 			</path>
 			<path>
 				particles/content_forward/pfx_textures/105_contrail.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_fireworks.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_forward/pfx_textures/eff_tex_smoke.dds
 				<type>primary</type>
 			</path>
 			<path>
@@ -147,6 +156,7 @@
 		<fn_effect_bin>particles/content_forward/pfx/environment/scenarios/105_germany_water_explosion.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/scenarios/210_air_smoke_trail.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/scenarios/210_bf_epic_attack_airplane_01.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/pfx/environment/scenarios/front_line_welding.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/trees/broadleaves/inf_tree_bush_dry_fall.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/trees/broadleaves/inf_tree_bush_dry_touchdown.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/pfx/environment/trees/broadleaves/tree_linden_town_dry_23m_fall.vfx</fn_effect_bin>
@@ -323,6 +333,7 @@
 		<fn_effect_bin>particles/environment/interior/210_bf_epic_desert_dust_blow_ground.eff</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/interior/210_bf_epic_desert_dust_blow_ground.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/interior/210_bf_epic_desert_dust_blow_ground_s.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/environment/scenarios/front_line_welding.eff</fn_effect_bin>
 		<preloadTextures>
 			<path>
 				particles/content_deferred/pfx_textures/eff_tex.dds
@@ -374,6 +385,14 @@
 			</path>
 			<path>
 				particles/content_deferred/pfx_textures/tracers.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_fireworks.dds
+				<type>primary</type>
+			</path>
+			<path>
+				particles/content_deferred/pfx_textures/eff_tex_smoke.dds
 				<type>primary</type>
 			</path>
 			<path>
@@ -494,6 +513,7 @@
 		<fn_effect_bin>particles/content_deferred/pfx/environment/scenarios/105_germany_water_explosion.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/scenarios/210_air_smoke_trail.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/scenarios/210_bf_epic_attack_airplane_01.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/scenarios/front_line_welding.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/trees/broadleaves/inf_tree_bush_dry_fall.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/trees/broadleaves/inf_tree_bush_dry_touchdown.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/trees/broadleaves/tree_linden_town_dry_23m_fall.vfx</fn_effect_bin>

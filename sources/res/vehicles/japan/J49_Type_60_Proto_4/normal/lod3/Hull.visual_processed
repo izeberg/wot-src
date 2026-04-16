@@ -170,14 +170,14 @@
 						<Int>128</Int>
 					</property>
 				</material>
-				<groupOrigin>-0.003441 0.223485 -0.048310</groupOrigin>
+				<groupOrigin>-0.003441 0.202200 -0.048310</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
 		<min>-1.122037 -0.394198 -2.214991</min>
-		<max>1.115155 0.841168 2.118371</max>
+		<max>1.115155 0.798599 2.118371</max>
 	</boundingBox>
-	<geometrySize>55500</geometrySize>
+	<geometrySize>53720</geometrySize>
 	<minUVDensity>0.002200</minUVDensity>
 </root>

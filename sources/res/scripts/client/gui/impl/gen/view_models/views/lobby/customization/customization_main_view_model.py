@@ -19,7 +19,7 @@ class CustomizationMainViewModel(ViewModel):
                  'onSceneClick', 'onBuyItems', 'onProgressiveInfoButtonClick', 'onPressSelectNextItem',
                  'onRequestItems')
 
-    def __init__(self, properties=18, commands=25):
+    def __init__(self, properties=20, commands=25):
         super(CustomizationMainViewModel, self).__init__(properties=properties, commands=commands)
 
     @property
@@ -150,6 +150,18 @@ class CustomizationMainViewModel(ViewModel):
     def setIsProgressiveItemsViewVisible(self, value):
         self._setBool(17, value)
 
+    def getIsFilterPopoverOpened(self):
+        return self._getBool(18)
+
+    def setIsFilterPopoverOpened(self, value):
+        self._setBool(18, value)
+
+    def getIsOnboardingViewOpened(self):
+        return self._getBool(19)
+
+    def setIsOnboardingViewOpened(self, value):
+        self._setBool(19, value)
+
     def _initialize(self):
         super(CustomizationMainViewModel, self)._initialize()
         self._addViewModelProperty('carouselModel', CustomizationCarouselModel())
@@ -170,6 +182,8 @@ class CustomizationMainViewModel(ViewModel):
         self._addBoolProperty('isStyleInfoViewActive', False)
         self._addBoolProperty('isHoverVehicleSlot', False)
         self._addBoolProperty('isProgressiveItemsViewVisible', False)
+        self._addBoolProperty('isFilterPopoverOpened', False)
+        self._addBoolProperty('isOnboardingViewOpened', False)
         self.onClose = self._addCommand('onClose')
         self.onCloseCarouselView = self._addCommand('onCloseCarouselView')
         self.onCloseBinEsc = self._addCommand('onCloseBinEsc')

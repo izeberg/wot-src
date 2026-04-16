@@ -97,7 +97,7 @@ class CustomizationMainView(ViewImpl, EventSystemEntity, CustomizationSettingsSe
     __slots__ = ('__ctx', '__carouselDP', '__renderEnv', '__slotSelector', '__selectedItem',
                  '__isHistoric', '__isNonHistoric', '__isFantastical', '__initAnchorsPositionsCallback',
                  '__toolbarProvider', '__stageSwitcherProvider', '__carouselArrowsHintShown',
-                 '__closeConfirmationsHelper', '__isOnLoading')
+                 '__closeConfirmationsHelper', '__isOnLoading', '__forceClose', '__progressiveItemCD')
     __service = dependency.descriptor(ICustomizationService)
     __settingsCore = dependency.descriptor(ISettingsCore)
     __guiLoader = dependency.descriptor(IGuiLoader)
@@ -112,6 +112,7 @@ class CustomizationMainView(ViewImpl, EventSystemEntity, CustomizationSettingsSe
         settings.flags = ViewFlags.LOBBY_SUB_VIEW
         settings.model = CustomizationMainViewModel()
         safeCall(ctx.get('callback'))
+        self.__progressiveItemCD = ctx.get('progressiveItemCD')
         self.__ctx = None
         self.__carouselDP = None
         self.__renderEnv = BigWorld.CustomizationEnvironment()
@@ -127,6 +128,7 @@ class CustomizationMainView(ViewImpl, EventSystemEntity, CustomizationSettingsSe
         self.__carouselArrowsHintShown = False
         self.__closeConfirmationsHelper = _CustomizationCloseConfirmationsHelper()
         self.__isOnLoading = False
+        self.__forceClose = False
         super(CustomizationMainView, self).__init__(settings)
         return
 
@@ -178,7 +180,8 @@ class CustomizationMainView(ViewImpl, EventSystemEntity, CustomizationSettingsSe
     def applyItems(self, purchaseItems, force=False, callback=None):
         self.__service.stopHighlighter()
         yield self.__ctx.applyItems(purchaseItems)
-        self.__close(force=force)
+        self.__forceClose = force
+        self.__close()
         callback(None)
         return
 
@@ -223,7 +226,8 @@ class CustomizationMainView(ViewImpl, EventSystemEntity, CustomizationSettingsSe
             entity.appearance.loadState.unsubscribe(self.__onVehicleLoadFinished, self.__onVehicleLoadStarted)
             entity.appearance.turretRotator.onTurretRotated -= self.__onTurretAndGunRotated
         self._dumpSettings()
-        self.__closeConfirmationsHelper.stop()
+        if not self.__forceClose:
+            self.__closeConfirmationsHelper.stop()
         self.soundManager.playInstantSound(SOUNDS.BACK_TO_HANGAR)
         super(CustomizationMainView, self)._finalize()
         self.__carouselDP.fini()
@@ -338,6 +342,10 @@ class CustomizationMainView(ViewImpl, EventSystemEntity, CustomizationSettingsSe
          (
           self.__ctx.events.onComponentChanged, self.__onComponentChanged),
          (
+          self.__ctx.events.onFilterPopover, self.__onFilterPopover),
+         (
+          self.__ctx.events.onOnboardingView, self.__onOnboardingView),
+         (
           self.__service.onRegionHighlighted, self.__onRegionHighlighted),
          (
           self.__toolbarProvider.onApplyToAllSeasonsSelectedChanged, self.__onApplyToAllSeasonsSelectedChanged),
@@ -383,6 +391,9 @@ class CustomizationMainView(ViewImpl, EventSystemEntity, CustomizationSettingsSe
             if questProgressionStyles:
                 showOnboardingView(first(questProgressionStyles), True)
                 self.setSetting(IS_CUSTOMIZATION_INTRO_VIEWED, True)
+        if self.__progressiveItemCD is not None:
+            showProgressiveItemsView(self.__progressiveItemCD, customizationView=self)
+        return
 
     def __onPropertySheetHidden(self):
         if self.__ctx.mode.isRegion:
@@ -700,7 +711,7 @@ class CustomizationMainView(ViewImpl, EventSystemEntity, CustomizationSettingsSe
             outfit = self.__ctx.mode.currentOutfit
             slotType = self.__ctx.mode.slotType
             emptyRegions = getEmptyRegions(outfit, slotType)
-            self.__service.highlightRegions(emptyRegions)
+            self.__service.highlightRegions(emptyRegions if self.__ctx.tabId != CustomizationTabs.MODIFICATIONS else ApplyArea.ALL)
         self.__updateSelection()
 
     def __updateItems(self, model):
@@ -797,6 +808,14 @@ class CustomizationMainView(ViewImpl, EventSystemEntity, CustomizationSettingsSe
             self.__updateBaseData(model)
             if self.__ctx.mode.modeId in CustomizationModes.STYLED:
                 self.__updateItems(model)
+
+    def __onFilterPopover(self, isOpened):
+        with self.viewModel.transaction() as (model):
+            model.setIsFilterPopoverOpened(isOpened)
+
+    def __onOnboardingView(self, isOpened):
+        with self.viewModel.transaction() as (model):
+            model.setIsOnboardingViewOpened(isOpened)
 
     def __selectInitialTab(self):
         visibleTabs = self.__carouselDP.getVisibleTabs()
@@ -1034,12 +1053,13 @@ class CustomizationMainView(ViewImpl, EventSystemEntity, CustomizationSettingsSe
 
     @th_async
     def __closeConfirmator(self):
-        if not self.__ctx.isOutfitsModified() or self.__ctx.mode.modeId in CustomizationModes.STYLED and self.__ctx.mode.isOutfitsEmpty():
+        if isVehicleEmpty() or self.__ctx.mode.modeId in CustomizationModes.STYLED and self.__ctx.mode.isOutfitsEmpty():
             isOk = True
         else:
             isOk = yield th_await(showCloseConfirmWithoutApplyingChangesDialog())
         if isOk:
-            self.__close(force=True)
+            self.__forceClose = True
+            self.__close()
         raise AsyncReturn(isOk)
 
     def __onCloseBinEsc(self):
@@ -1056,8 +1076,8 @@ class CustomizationMainView(ViewImpl, EventSystemEntity, CustomizationSettingsSe
         with self.viewModel.transaction() as (model):
             model.setIsStyleInfoViewActive(False)
 
-    def __close(self, force=False):
-        if force:
+    def __close(self):
+        if self.__forceClose:
             self.__closeConfirmationsHelper.stop()
         self.fireEvent(events.LoadViewEvent(SFViewLoadParams(VIEW_ALIAS.LOBBY_HANGAR)), scope=EVENT_BUS_SCOPE.LOBBY)
         self.destroy()
