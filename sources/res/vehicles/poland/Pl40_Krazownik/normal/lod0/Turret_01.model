@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/poland/Pl40_Krazownik/normal/lod0/Turret_01</nodefullVisual>
+	<parent>vehicles/poland/Pl40_Krazownik/normal/lod1/Turret_01</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.456390 0.000018 -2.579930</min>
+		<max>1.298600 4.892658 1.194250</max>
+	</visibilityBox>
+</root>

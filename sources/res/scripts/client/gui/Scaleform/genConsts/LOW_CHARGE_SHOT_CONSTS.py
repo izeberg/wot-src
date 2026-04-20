@@ -1,0 +1,10 @@
+
+
+class LOW_CHARGE_SHOT_CONSTS(object):
+    STATE_NONE = 0
+    INITIAL_RELOAD = 1
+    LOW_CHARGE = 2
+    ALMOST_FINISHED = 3
+    FULL_CHARGE = 4
+    QUICK_RELOAD = 5
+    EMPTY = 6

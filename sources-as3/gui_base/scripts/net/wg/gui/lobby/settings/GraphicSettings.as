@@ -406,19 +406,20 @@ package net.wg.gui.lobby.settings
       public function tryFindPreset() : Number
       {
          var _loc1_:Array = null;
-         var _loc2_:Number = NaN;
+         var _loc2_:int = 0;
          var _loc3_:SettingsControlProp = null;
          var _loc4_:Number = NaN;
          var _loc5_:* = null;
          var _loc6_:int = 0;
          var _loc7_:Boolean = false;
          var _loc8_:Object = null;
-         var _loc9_:Number = NaN;
+         var _loc9_:* = undefined;
          var _loc10_:Number = NaN;
-         var _loc11_:DropdownMenu = null;
-         var _loc12_:Number = NaN;
+         var _loc11_:Number = NaN;
+         var _loc12_:DropdownMenu = null;
          var _loc13_:Number = NaN;
-         var _loc14_:String = null;
+         var _loc14_:Number = NaN;
+         var _loc15_:String = null;
          if(this._allowCheckPreset)
          {
             _loc1_ = this._presets.getByKey(OPTIONS_STR) as Array;
@@ -434,14 +435,15 @@ package net.wg.gui.lobby.settings
                _loc8_ = _loc1_[_loc6_];
                if(_loc8_[SUPPORTED_STR])
                {
-                  for(_loc5_ in _loc8_.settings)
+                  _loc9_ = _loc8_.settings;
+                  for(_loc5_ in _loc9_)
                   {
                      if(this._qualityOrderIdList.indexOf(_loc5_) >= 0)
                      {
-                        _loc9_ = _loc8_.settings[_loc5_];
+                        _loc10_ = _loc9_[_loc5_];
                         _loc3_ = SettingsControlProp(this._graphicsQualityDataProv[_loc5_]);
-                        _loc10_ = Number(_loc3_.changedVal);
-                        if(_loc9_ != _loc10_)
+                        _loc11_ = Number(_loc3_.changedVal);
+                        if(_loc10_ != _loc11_)
                         {
                            _loc7_ = false;
                            break;
@@ -461,17 +463,17 @@ package net.wg.gui.lobby.settings
             {
                _loc5_ = SettingsConfigHelper.GRAPHIC_QUALITY;
                _loc3_ = SettingsControlProp(data[_loc5_]);
-               _loc11_ = this[_loc5_ + _loc3_.type];
+               _loc12_ = this[_loc5_ + _loc3_.type];
                this.updatePresetsDP();
-               _loc12_ = _loc11_.selectedIndex;
-               _loc13_ = this.getDPItemIndex(_loc11_.dataProvider,_loc4_);
-               if(_loc12_ != _loc13_)
+               _loc13_ = _loc12_.selectedIndex;
+               _loc14_ = this.getDPItemIndex(_loc12_.dataProvider,_loc4_);
+               if(_loc13_ != _loc14_)
                {
                   this._skipDispatchPresetEvent = true;
-                  _loc11_.selectedIndex = _loc13_;
+                  _loc12_.selectedIndex = _loc14_;
                }
-               _loc14_ = _loc11_.dataProvider.requestItemAt(_loc11_.selectedIndex).key;
-               this.updateGraphicsQualityHDSDLabel(_loc14_);
+               _loc15_ = _loc12_.dataProvider.requestItemAt(_loc12_.selectedIndex).key;
+               this.updateGraphicsQualityHDSDLabel(_loc15_);
             }
          }
          return _loc4_;
@@ -1106,13 +1108,10 @@ package net.wg.gui.lobby.settings
                _loc6_ = _loc12_.value;
                _loc12_.value = _loc4_ != -1 ? Number(_loc4_) : Number(0);
                _loc7_ = _loc9_[_loc12_.value].data;
-               if(_loc6_ == _loc12_.value)
+               if(_loc6_ == _loc12_.value && param2.prevVal != _loc7_)
                {
-                  if(param2.prevVal != _loc7_)
-                  {
-                     param2.prevVal = param2.changedVal;
-                     dispatchEvent(new SettingViewEvent(SettingViewEvent.ON_CONTROL_CHANGED,viewId,null,param1,_loc7_));
-                  }
+                  param2.prevVal = param2.changedVal;
+                  dispatchEvent(new SettingViewEvent(SettingViewEvent.ON_CONTROL_CHANGED,viewId,null,param1,_loc7_));
                }
                param2.changedVal = _loc7_;
                if(!this._isInited)
@@ -1140,13 +1139,10 @@ package net.wg.gui.lobby.settings
                _loc6_ = _loc13_.selectedIndex;
                _loc13_.selectedIndex = _loc4_ != -1 ? int(_loc4_) : int(0);
                _loc7_ = _loc9_[_loc13_.selectedIndex].data;
-               if(_loc6_ == _loc13_.selectedIndex)
+               if(_loc6_ == _loc13_.selectedIndex && param2.prevVal != _loc7_)
                {
-                  if(param2.prevVal != _loc7_)
-                  {
-                     param2.prevVal = param2.changedVal;
-                     dispatchEvent(new SettingViewEvent(SettingViewEvent.ON_CONTROL_CHANGED,viewId,null,param1,_loc7_));
-                  }
+                  param2.prevVal = param2.changedVal;
+                  dispatchEvent(new SettingViewEvent(SettingViewEvent.ON_CONTROL_CHANGED,viewId,null,param1,_loc7_));
                }
                param2.changedVal = _loc7_;
                this.updateDropDownEnabled(param1);
@@ -1580,9 +1576,9 @@ package net.wg.gui.lobby.settings
       
       private function onDropDownOrderedIndexChangeHandler(param1:ListEvent) : void
       {
+         var _loc4_:SettingsControlProp = null;
          var _loc2_:DropdownMenu = DropdownMenu(param1.target);
          var _loc3_:String = this._settingsConfigHelper.getControlIdByControlNameAndType(_loc2_.name,SettingsConfigHelper.TYPE_DROPDOWN);
-         var _loc4_:SettingsControlProp = null;
          if(this._extendAdvancedControlsIds.indexOf(_loc3_) >= 0)
          {
             _loc4_ = SettingsControlProp(this._extendAdvancedControls[_loc3_]);
@@ -1601,9 +1597,9 @@ package net.wg.gui.lobby.settings
       
       private function onSliderOrderedValueChangeHandler(param1:SliderEvent) : void
       {
+         var _loc4_:SettingsControlProp = null;
          var _loc2_:SettingsStepSlider = SettingsStepSlider(param1.target);
          var _loc3_:String = this._settingsConfigHelper.getControlIdByControlNameAndType(_loc2_.name,SettingsConfigHelper.TYPE_STEP_SLIDER);
-         var _loc4_:SettingsControlProp = null;
          if(this._extendAdvancedControlsIds.indexOf(_loc3_) >= 0)
          {
             _loc4_ = SettingsControlProp(this._extendAdvancedControls[_loc3_]);

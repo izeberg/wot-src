@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A195_Gorilla/crash/lod3/Turret_01</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/american/A195_Gorilla/crash/lod4/Turret_01</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.548583 -0.011572 -2.486173</min>
+		<max>1.507321 1.978886 1.803228</max>
+	</visibilityBox>
+</root>

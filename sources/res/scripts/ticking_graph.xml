@@ -4,11 +4,13 @@
 		<preInitGroup>
 			<before>true</before>
 		</preInitGroup>
+		<eventSystemUpdate/>
 		<journalInit/>
 		<journalUpdate/>
 		<clientRecreate/>
 		<networkObjectsUpdate/>
 		<gunEffectsUpdate/>
+		<parametrizationUpdate/>
 		<variablesOnChangePreUpdate/>
 		<variablesOnChangeUpdate/>
 		<variablesOnChangePostUpdate/>

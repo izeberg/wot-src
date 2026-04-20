@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld
 from debug_utils import LOG_DEBUG_DEV
 from gui.battle_control.battle_constants import VEHICLE_VIEW_STATE

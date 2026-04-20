@@ -276,18 +276,19 @@
 						<name>postProgressionBaseModifications</name>
 						<type>list</type>
 						<value>
-							<item>f136_node21</item>
 							<item>r228_node14</item>
 							<item>gb147_node18</item>
-							<item>f135_node16</item>
-							<item>f136_node10</item>
-							<item>f136_node25</item>
-							<item>f136_node24</item>
-							<item>f136_node13</item>
 							<item>f135_node3</item>
 							<item>f135_node10</item>
+							<item>f135_node16</item>
 							<item>f135_node18</item>
 							<item>f135_node24</item>
+							<item>f136_node10</item>
+							<item>f136_node13</item>
+							<item>f136_node21</item>
+							<item>f136_node24</item>
+							<item>f136_node25</item>
+							<item>f143_node16</item>
 						</value>
 					</item>
 				</value>
@@ -482,6 +483,7 @@
 						<name>postProgressionBaseModifications</name>
 						<type>list</type>
 						<value>
+							<item>f143_node16</item>
 							<item>r228_node14</item>
 							<item>gb147_node18</item>
 						</value>
@@ -831,10 +833,11 @@
 							<item>a191_node2</item>
 							<item>g189_node5</item>
 							<item>pl37_node4</item>
-							<item>f135_node2</item>
 							<item>g187_node13</item>
 							<item>r230_node14</item>
+							<item>f135_node2</item>
 							<item>f136_node23</item>
+							<item>f143_node9</item>
 							<item>gb152_node12</item>
 							<item>s36_node21</item>
 							<item>s36_node25</item>
@@ -845,6 +848,8 @@
 							<item>a182_node9</item>
 							<item>a179_node7</item>
 							<item>j52_node4</item>
+							<item>a195_node15</item>
+							<item>gb158_node17</item>
 						</value>
 					</item>
 					<item>
@@ -1099,6 +1104,7 @@
 							<item>a191_node4</item>
 							<item>s36_node23</item>
 							<item>f135_node4</item>
+							<item>gb158_node18</item>
 						</value>
 					</item>
 				</value>
@@ -1196,9 +1202,10 @@
 							<item>a191_node5</item>
 							<item>g185_node5</item>
 							<item>a183_node20</item>
-							<item>f135_node5</item>
 							<item>s36_node18</item>
+							<item>f135_node5</item>
 							<item>f136_node22</item>
+							<item>f143_node5</item>
 							<item>r228_node18</item>
 							<item>g189_node14</item>
 							<item>r230_node5</item>
@@ -1208,6 +1215,8 @@
 							<item>a182_node5</item>
 							<item>a179_node3</item>
 							<item>j52_node5</item>
+							<item>a195_node3</item>
+							<item>gb158_node21</item>
 						</value>
 					</item>
 					<item>
@@ -1328,6 +1337,7 @@
 							<item>gb147_node13</item>
 							<item>a182_node10</item>
 							<item>a179_node2</item>
+							<item>a195_node20</item>
 						</value>
 					</item>
 				</value>
@@ -1520,18 +1530,22 @@
 							<item>role_HT_universal_base_5</item>
 							<item>role_HT_universal_base_4</item>
 							<item>a191_node17</item>
+							<item>a182_node4</item>
+							<item>a183_node5</item>
+							<item>a179_node10</item>
+							<item>ch70_node15</item>
 							<item>gb147_node19</item>
 							<item>r228_node2</item>
-							<item>a183_node5</item>
 							<item>gb152_node14</item>
 							<item>gb147_node20</item>
 							<item>g185_node18</item>
 							<item>g187_node15</item>
 							<item>f136_node20</item>
 							<item>f135_node17</item>
-							<item>a182_node4</item>
-							<item>a179_node10</item>
-							<item>ch70_node15</item>
+							<item>f143_node12</item>
+							<item>a195_node5</item>
+							<item>gb158_node12</item>
+							<item>gb158_node14</item>
 						</value>
 					</item>
 					<item>
@@ -1645,6 +1659,7 @@
 							<item>s36_node4</item>
 							<item>g189_node2</item>
 							<item>f136_node16</item>
+							<item>f143_node4</item>
 							<item>g187_node20</item>
 							<item>g188_node16</item>
 							<item>gb147_node21</item>
@@ -1800,6 +1815,7 @@
 							<item>f135_node10</item>
 							<item>f135_node18</item>
 							<item>f135_node24</item>
+							<item>f143_node16</item>
 							<item>j52_node1</item>
 							<item>j52_node9</item>
 							<item>ch70_node16</item>
@@ -1856,10 +1872,11 @@
 							<item>a191_node2</item>
 							<item>g189_node5</item>
 							<item>pl37_node4</item>
-							<item>f135_node2</item>
 							<item>g187_node13</item>
 							<item>r230_node14</item>
+							<item>f135_node2</item>
 							<item>f136_node23</item>
+							<item>f143_node9</item>
 							<item>gb152_node12</item>
 							<item>s36_node21</item>
 							<item>s36_node25</item>
@@ -1870,6 +1887,8 @@
 							<item>a182_node9</item>
 							<item>a179_node7</item>
 							<item>j52_node4</item>
+							<item>a195_node15</item>
+							<item>gb158_node17</item>
 						</value>
 					</item>
 					<item>
@@ -2235,9 +2254,12 @@
 							<item>ch67_node25</item>
 							<item>ch67_node26</item>
 							<item>ch67_node6</item>
+							<item>ch70_node13</item>
+							<item>ch70_node25</item>
 							<item>f135_node9</item>
 							<item>f136_node1</item>
 							<item>f136_node2</item>
+							<item>f143_node11</item>
 							<item>g185_node19</item>
 							<item>g187_node10</item>
 							<item>g187_node17</item>
@@ -2254,8 +2276,8 @@
 							<item>r228_node7</item>
 							<item>r230_node17</item>
 							<item>s36_node17</item>
-							<item>ch70_node13</item>
-							<item>ch70_node25</item>
+							<item>a195_node13</item>
+							<item>gb158_node19</item>
 						</value>
 					</item>
 				</value>
@@ -2324,23 +2346,27 @@
 						<name>postProgressionBaseModifications</name>
 						<type>list</type>
 						<value>
+							<item>a179_node25</item>
+							<item>a179_node8</item>
+							<item>a182_node11</item>
+							<item>a183_node23</item>
 							<item>a191_node13</item>
 							<item>s36_node15</item>
 							<item>s36_node14</item>
 							<item>g187_node16</item>
-							<item>a183_node23</item>
 							<item>g187_node7</item>
 							<item>gb147_node26</item>
 							<item>f136_node18</item>
 							<item>f135_node13</item>
 							<item>f135_node19</item>
-							<item>a182_node11</item>
+							<item>f143_node23</item>
 							<item>ch67_node17</item>
 							<item>ch67_node21</item>
-							<item>a179_node25</item>
-							<item>a179_node8</item>
 							<item>j52_node11</item>
 							<item>j52_node12</item>
+							<item>a195_node23</item>
+							<item>gb158_node5</item>
+							<item>gb158_node11</item>
 						</value>
 					</item>
 				</value>
@@ -3046,6 +3072,7 @@
 							<item>pl37_node19</item>
 							<item>g187_node21</item>
 							<item>ch70_node11</item>
+							<item>a195_node2</item>
 						</value>
 					</item>
 				</value>
@@ -3120,15 +3147,17 @@
 						<name>postProgressionBaseModifications</name>
 						<type>list</type>
 						<value>
-							<item>f135_node14</item>
-							<item>r230_node2</item>
-							<item>g187_node4</item>
-							<item>gb147_node4</item>
-							<item>pl37_node12</item>
+							<item>a179_node13</item>
 							<item>a182_node3</item>
 							<item>ch67_node22</item>
-							<item>a179_node13</item>
+							<item>f135_node14</item>
+							<item>f143_node1</item>
+							<item>g187_node4</item>
+							<item>gb147_node4</item>
 							<item>j52_node3</item>
+							<item>pl37_node12</item>
+							<item>r230_node2</item>
+							<item>a195_node12</item>
 						</value>
 					</item>
 				</value>
@@ -3178,6 +3207,7 @@
 							<item>gb152_node24</item>
 							<item>ch67_node8</item>
 							<item>ch70_node2</item>
+							<item>gb158_node16</item>
 						</value>
 					</item>
 				</value>
@@ -3218,6 +3248,7 @@
 							<item>g187_node1</item>
 							<item>ch67_node4</item>
 							<item>ch70_node3</item>
+							<item>gb158_node9</item>
 						</value>
 					</item>
 				</value>
@@ -3261,6 +3292,7 @@
 							<item>ch67_node12</item>
 							<item>a179_node17</item>
 							<item>ch70_node10</item>
+							<item>a195_node10</item>
 						</value>
 					</item>
 					<item>
@@ -3445,19 +3477,22 @@
 							<item>role_ATSPG_base_3</item>
 							<item>role_ATSPG_support_base_4</item>
 							<item>role_ATSPG_support_base_5</item>
+							<item>a179_node18</item>
+							<item>a182_node18</item>
+							<item>a183_node26</item>
 							<item>a191_node19</item>
 							<item>f135_node11</item>
 							<item>f136_node26</item>
+							<item>f143_node20</item>
 							<item>gb147_node2</item>
 							<item>g185_node4</item>
 							<item>g189_node17</item>
 							<item>g187_node11</item>
-							<item>a182_node18</item>
-							<item>s36_node26</item>
-							<item>a183_node26</item>
-							<item>r228_node26</item>
-							<item>a179_node18</item>
 							<item>j52_node18</item>
+							<item>s36_node26</item>
+							<item>r228_node26</item>
+							<item>a195_node4</item>
+							<item>gb158_node2</item>
 						</value>
 					</item>
 					<item>
@@ -3489,9 +3524,10 @@
 							<item>role_MT_sniper_base_4</item>
 							<item>role_MT_sniper_base_5</item>
 							<item>a191_node11</item>
-							<item>f135_node11</item>
 							<item>g185_node2</item>
+							<item>f135_node11</item>
 							<item>f136_node12</item>
+							<item>f143_node26</item>
 							<item>gb147_node2</item>
 							<item>g187_node24</item>
 							<item>s36_node2</item>
@@ -3501,6 +3537,8 @@
 							<item>r228_node26</item>
 							<item>a179_node26</item>
 							<item>j52_node26</item>
+							<item>a195_node22</item>
+							<item>gb158_node7</item>
 						</value>
 					</item>
 					<item>
@@ -3557,6 +3595,7 @@
 							<item>g189_node26</item>
 							<item>ch67_node5</item>
 							<item>a179_node4</item>
+							<item>a195_node24</item>
 						</value>
 					</item>
 					<item>
@@ -3640,13 +3679,16 @@
 							<item>s36_node5</item>
 							<item>pl37_node11</item>
 							<item>g185_node24</item>
-							<item>f135_node1</item>
 							<item>g189_node8</item>
+							<item>f135_node1</item>
 							<item>f136_node5</item>
+							<item>f143_node18</item>
 							<item>a182_node23</item>
 							<item>ch67_node1</item>
-							<item>j52_node23</item>
 							<item>ch70_node23</item>
+							<item>j52_node23</item>
+							<item>a195_node1</item>
+							<item>gb158_node8</item>
 						</value>
 					</item>
 				</value>
@@ -3871,9 +3913,9 @@
 						<name>postProgressionBaseModifications</name>
 						<type>list</type>
 						<value>
-							<item>gb152_node2</item>
 							<item>g188_node1</item>
 							<item>a183_node4</item>
+							<item>gb152_node2</item>
 							<item>gb152_node4</item>
 							<item>r230_node6</item>
 							<item>pl37_node26</item>
@@ -3883,6 +3925,8 @@
 							<item>a182_node25</item>
 							<item>a182_node19</item>
 							<item>a179_node12</item>
+							<item>a195_node25</item>
+							<item>f143_node21</item>
 						</value>
 					</item>
 				</value>

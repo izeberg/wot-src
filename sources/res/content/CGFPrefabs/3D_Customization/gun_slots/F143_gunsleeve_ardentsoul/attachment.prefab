@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<version>4</version>
+	<GameObjects>
+		<GameObject>
+			<name>F143_gunsleeve_ardentsoul</name>
+			<UUID>82010aed-7b37-4a72-8a81-deb70e1946f8</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>model_go</name>
+			<UUID>d4e973b4-26f1-45b0-be54-7ba84e2efc07</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>normal</name>
+			<UUID>cc7ff6b0-5327-4d01-9f14-2139865b0a28</UUID>
+			<flags>8</flags>
+		</GameObject>
+	</GameObjects>
+	<components>
+		<ComponentPool>
+			<type>Hierarchy</type>
+			<version>2</version>
+			<component>
+				<UUID>d4e973b4-26f1-45b0-be54-7ba84e2efc07</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>cc7ff6b0-5327-4d01-9f14-2139865b0a28</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>cc7ff6b0-5327-4d01-9f14-2139865b0a28</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>82010aed-7b37-4a72-8a81-deb70e1946f8</link>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>Transform</type>
+			<version>1</version>
+			<component>
+				<UUID>82010aed-7b37-4a72-8a81-deb70e1946f8</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>d4e973b4-26f1-45b0-be54-7ba84e2efc07</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>cc7ff6b0-5327-4d01-9f14-2139865b0a28</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>0 0 0</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>BW::StateSwitcherComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>82010aed-7b37-4a72-8a81-deb70e1946f8</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>normal</name>
+						<link>cc7ff6b0-5327-4d01-9f14-2139865b0a28</link>
+					</property>
+					<property>
+						<name>damaged</name>
+						<link>00000000-0000-0000-0000-000000000000</link>
+					</property>
+					<property>
+						<name>critical</name>
+						<link>00000000-0000-0000-0000-000000000000</link>
+					</property>
+					<property>
+						<name>previewState</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>ComponentsVisibilityController</type>
+			<version>1</version>
+			<component>
+				<UUID>d4e973b4-26f1-45b0-be54-7ba84e2efc07</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>castShadows</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in SNIPER MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in STRATEGIC MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in ARTY MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in POSTMORTEM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in RESPAWN_DEATH MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DEATH_FREE_CAM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DUAL_GUN MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in KILL_CAM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in LOOK_AT_KILLER MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in TWIN_GUN MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in SM_STRATEGIC MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in SM_ENTITY_VIEW MODE</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>DynamicModel</type>
+			<version>1</version>
+			<component>
+				<UUID>d4e973b4-26f1-45b0-be54-7ba84e2efc07</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Model name</name>
+						<isAsset>true</isAsset>
+						<value>content/3D_Customization/gun_slots/F143_gunsleeve_ardentsoul/normal/lod0/attachment.model</value>
+					</property>
+					<property>
+						<name>Cast Shadows</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>BW::FashionComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>d4e973b4-26f1-45b0-be54-7ba84e2efc07</UUID>
+				<flags>3</flags>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>BW::GpuDecalsReceiverComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>d4e973b4-26f1-45b0-be54-7ba84e2efc07</UUID>
+				<flags>3</flags>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>InsigniaStickersReceiverComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>d4e973b4-26f1-45b0-be54-7ba84e2efc07</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>vehiclePart</name>
+						<value>gunInsignia</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>VehicleHealthObserverComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>82010aed-7b37-4a72-8a81-deb70e1946f8</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>state</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+	</components>
+</root>

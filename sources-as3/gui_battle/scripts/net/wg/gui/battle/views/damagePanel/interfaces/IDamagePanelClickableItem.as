@@ -6,7 +6,7 @@ package net.wg.gui.battle.views.damagePanel.interfaces
    {
        
       
-      function showDestroyed() : void;
+      function showDestroyed(param1:Boolean) : void;
       
       function get mouseEventHitElement() : DamagePanelItemClickArea;
    }

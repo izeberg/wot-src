@@ -1,3 +1,4 @@
+from __future__ import absolute_import, division
 import GenericComponents
 from soft_exception import SoftException
 import math_utils, BigWorld, Math, logging
@@ -20,7 +21,7 @@ _logger = logging.getLogger(__name__)
 _MIN_COLLISION_SPEED = 3.5
 
 class DetachedTurret(BigWorld.Entity, ScriptGameObject):
-    allTurrets = list()
+    allTurrets = []
     collisions = ComponentDescriptor()
 
     def __init__(self):
@@ -49,7 +50,7 @@ class DetachedTurret(BigWorld.Entity, ScriptGameObject):
         parts = {TankPartNames.TURRET: self.__vehDescr.turret, 
            TankPartNames.GUN: self.__vehDescr.gun}
         bspModels = ()
-        for partName, part in parts.iteritems():
+        for partName, part in parts.items():
             partID = TankPartNames.getIdx(partName)
             crashedHT = part.hitTesterManager.crashedModelHitTester
             modelHT = part.hitTesterManager.modelHitTester

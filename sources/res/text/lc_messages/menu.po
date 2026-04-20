@@ -3190,9 +3190,7 @@ msgid "headerButtons/fightBtn/tooltip/comp7BattleOnly/header"
 msgstr "Unable to Enter Battle"
 
 msgid "headerButtons/fightBtn/tooltip/comp7Disabled/body"
-msgstr ""
-"This mode is currently unavailable on all servers. Availability details are "
-"listed below."
+msgstr "Battles are unavailable while the ceasefire is in effect."
 
 msgid "headerButtons/fightBtn/tooltip/comp7Disabled/header"
 msgstr "Unable to Enter Battle"
@@ -3218,10 +3216,18 @@ msgstr ", "
 msgid "headerButtons/fightBtn/tooltip/comp7LightVehLevel/header"
 msgstr "Unable to Enter Battle"
 
+msgid "headerButtons/fightBtn/tooltip/comp7NotEnoughSuitableVehicles/body"
+msgstr ""
+"You must have at least %(minVehiclesRequired)s suitable vehicles for the "
+"mode. See the About Onslaught page for details."
+
+msgid "headerButtons/fightBtn/tooltip/comp7NotEnoughSuitableVehicles/header"
+msgstr "Unable to Enter Battle"
+
 msgid "headerButtons/fightBtn/tooltip/comp7NotSet/body"
 msgstr ""
-"This mode is currently unavailable on your server. Server details are listed"
-" below. "
+"This mode is not available on the selected server, but you can play on a "
+"different one."
 
 msgid "headerButtons/fightBtn/tooltip/comp7NotSet/header"
 msgstr "Unable to Enter Battle"
@@ -3238,13 +3244,19 @@ msgstr "Season has not started."
 msgid "headerButtons/fightBtn/tooltip/comp7Preannounce/header"
 msgstr "Unable to Enter Battle"
 
-msgid "headerButtons/fightBtn/tooltip/comp7RatingCalculation/body"
+msgid "headerButtons/fightBtn/tooltip/comp7QualificationCalculation/body"
 msgstr ""
 "It may take up to five minutes to calculate your rating based on the "
 "Qualification results. After receiving a rank, you can continue to play "
 "Onslaught."
 
-msgid "headerButtons/fightBtn/tooltip/comp7RatingCalculation/header"
+msgid "headerButtons/fightBtn/tooltip/comp7QualificationCalculation/header"
+msgstr "Unable to Enter Battle"
+
+msgid "headerButtons/fightBtn/tooltip/comp7SeasonEnd/header"
+msgstr "Unable to Enter Battle"
+
+msgid "headerButtons/fightBtn/tooltip/comp7UnsuitableVehicle/header"
 msgstr "Unable to Enter Battle"
 
 msgid "headerButtons/fightBtn/tooltip/comp7VehLevel/body"
@@ -4480,6 +4492,11 @@ msgstr ""
 msgid "moduleInfo/hydroAutoSiegeChassis"
 msgstr "Hydropneumatic suspension: allows the vehicle to tilt the hull"
 
+msgid "moduleInfo/lowChargeShot"
+msgstr ""
+"A special gun mechanic that allows for earlier firing at the cost of shot "
+"effectiveness."
+
 msgid "moduleInfo/magazineGun"
 msgstr "Magazine loading system"
 
@@ -4666,7 +4683,7 @@ msgstr " does not depend on the distance for this type of shell"
 msgid "moduleInfo/params/noPiercingDistance/footnote/maxDistance"
 msgstr ", maximum flying range—400 m"
 
-msgid "moduleInfo/params/normalisation"
+msgid "moduleInfo/params/normalizationAngle"
 msgstr "Normalization Angle"
 
 msgid "moduleInfo/params/penetrationLoss"
@@ -4778,6 +4795,9 @@ msgstr "Engine Power (Turbo)"
 msgid "moduleInfo/params/weight"
 msgstr "Weight"
 
+msgid "moduleInfo/propellantAfterburnerGun"
+msgstr "Induction Propellant Afterburner that increases average damage"
+
 msgid "moduleInfo/rocketAcceleration"
 msgstr "Jet boosters increasing the vehicle mobility"
 
@@ -4800,6 +4820,11 @@ msgstr ""
 
 msgid "moduleInfo/twinGun"
 msgstr "Selective Fire Modes System"
+
+msgid "moduleInfo/wheeledDash"
+msgstr ""
+"The vehicle's special mechanic significantly boosts its acceleration, engine"
+" power, and top forward and reverse speed for a short time."
 
 msgid "nation_tree/blueprint_title/china"
 msgstr "Blueprints of Chinese Vehicles"
@@ -6586,6 +6611,24 @@ msgstr "Ion-Discharge Afterburner Charge (% per s) (Turbo mode, passive)"
 msgid "tank_params/kg"
 msgstr "(kg)"
 
+msgid "tank_params/lowChargeShotAvgDamage"
+msgstr "Average Damage (HP)"
+
+msgid "tank_params/lowChargeShotBlockDuration"
+msgstr "Shot Lock Duration (s)"
+
+msgid "tank_params/lowChargeShotDispertion"
+msgstr "Dispersion at 100 m (m)"
+
+msgid "tank_params/lowChargeShotPenetration"
+msgstr "Average Penetration (mm)"
+
+msgid "tank_params/lowChargeShotRateOfFire"
+msgstr "Rate of Fire (rounds/min)"
+
+msgid "tank_params/lowChargeShotVelocity"
+msgstr "Shell Velocity (m/s)"
+
 msgid "tank_params/m"
 msgstr "(m)"
 
@@ -6645,6 +6688,9 @@ msgstr "(per activation)"
 msgid "tank_params/percent"
 msgstr " "
 
+msgid "tank_params/percent_per_s"
+msgstr "(%/s)"
+
 msgid "tank_params/piercingPower"
 msgstr "Standard Shell Penetration"
 
@@ -6686,6 +6732,36 @@ msgstr "Time to Zero Preheat"
 
 msgid "tank_params/preheatTransitionDelay"
 msgstr "Preheat Transition Delay"
+
+msgid "tank_params/propellantChargeLimit"
+msgstr "Charge Limit"
+
+msgid "tank_params/propellantChargeSpendingAfterShot"
+msgstr "Charge Spent per Shot"
+
+msgid "tank_params/propellantChargingPerSec"
+msgstr "Charge Accumulation Speed"
+
+msgid "tank_params/propellantDischargingPerSec"
+msgstr "Charge Loss Speed"
+
+msgid "tank_params/propellantOverchargeSwitchCooldown"
+msgstr "Limiter Toggle Cooldown"
+
+msgid "tank_params/propellantPostLimitAimingTime"
+msgstr "Post-Limit Aiming Time"
+
+msgid "tank_params/propellantPostLimitDamageBonus"
+msgstr "Maximum Post-Limit Damage Bonus"
+
+msgid "tank_params/propellantPostLimitDamageSpike"
+msgstr "Post-Limit Damage Spike"
+
+msgid "tank_params/propellantPostLimitDispersion"
+msgstr "Post-Limit Dispersion at 100 m"
+
+msgid "tank_params/propellantPreLimitDamageBonus"
+msgstr "Maximum Pre-Limit Damage Bonus"
 
 msgid "tank_params/pt"
 msgstr "(h.p./t)"
@@ -6942,6 +7018,27 @@ msgstr "(HP/min)"
 msgid "tank_params/vps"
 msgstr "(HP/s)"
 
+msgid "tank_params/wheeledDashAbilityDuration"
+msgstr "Duration (s)"
+
+msgid "tank_params/wheeledDashAbilityReloadTime"
+msgstr "Cooldown (s)"
+
+msgid "tank_params/wheeledDashAbilityReloadTimeBonus"
+msgstr "Cooldown Bonus (%)"
+
+msgid "tank_params/wheeledDashEnginePower"
+msgstr "Engine Power (%)"
+
+msgid "tank_params/wheeledDashReverseSpeed"
+msgstr "Reverse Speed (%)"
+
+msgid "tank_params/wheeledDashSpeedLimits"
+msgstr "Cooldown Bonus Speed Threshold (km/h)"
+
+msgid "tank_params/wheeledDashTopSpeed"
+msgstr "Top Speed (%)"
+
 msgid "tank_params/wheeledSpeedModeSpeed"
 msgstr "Top Speed/Reverse Speed (Rapid)"
 
@@ -7071,6 +7168,11 @@ msgstr "Available for trade-in"
 msgid "training/additionalInfo/freeSuppliesComp7"
 msgstr ""
 "Ammo, consumables, and directives can now be used for free on Onslaught maps"
+
+msgid "training/additionalInfo/vehicleRequired3"
+msgstr ""
+"You must have at least 3 suitable vehicles for the mode. See the About "
+"Onslaught page for details."
 
 msgid "training/create/battleTime"
 msgstr "Battle duration:"
@@ -7211,6 +7313,9 @@ msgstr "Free consumables"
 
 msgid "training/notificationText/onlyTierX"
 msgstr "Tier X vehicles only"
+
+msgid "training/notificationText/vehicleRequired3"
+msgstr "Multiple vehicles required"
 
 msgid "training/ownerTitle"
 msgstr "Commander"

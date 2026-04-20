@@ -542,6 +542,17 @@ msgstr ""
 "penetration of a vehicle's armor. Ricochets are quite rare. The penetration "
 "power of this shell is not reduced with distance traveled."
 
+msgid "advanced/LOW_CHARGE_SHOT/fireMode"
+msgstr "A special mechanic"
+
+msgid "advanced/LOW_CHARGE_SHOT/fireRate"
+msgstr "allows for earlier firing"
+
+msgid "advanced/LOW_CHARGE_SHOT/footer"
+msgstr ""
+"%(fireMode)s for the vehicle's gun %(fireRate)s with altered shell "
+"parameters."
+
 msgid "advanced/additionalInvisibilityDevice"
 msgstr ""
 "Effectiveness depends on the vehicle type. Increases the concealment of a "
@@ -9032,6 +9043,72 @@ msgstr "?empty?"
 msgid "notrecruitedtankman/onslaught_p4_4/label"
 msgstr "Onslaught. Year of the Manticore"
 
+msgid "notrecruitedtankman/onslaught_p5_1/desc"
+msgstr ""
+"Aleksander lives life in constant motion: running to the limit, swimming "
+"through cold, pushing through obstacles. His approach on the battlefield is "
+"no different; a Pole by blood and character, he will lead the charge until "
+"his strength gives out. For as long as he can remember, he has had a habit "
+"of taking machines apart to see what’s inside, and an uncanny ability to "
+"turn heaps of metal into functioning systems. With front-line discipline and"
+" a mechanic's meticulousness, he checks every part of every vehicle, knowing"
+" that the life of the crew and the next meter of progress depend on it."
+
+msgid "notrecruitedtankman/onslaught_p5_1/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/onslaught_p5_1/label"
+msgstr "Onslaught. Year of the Dragon"
+
+msgid "notrecruitedtankman/onslaught_p5_2/desc"
+msgstr ""
+"A dangerous sniper with a keen eye, Natalia keeps the bigger picture in mind"
+" even when her sights are trained on her target. Her prodigious vision, "
+"though, extends beyond just marksmanship. To the constant amazement of her "
+"crewmates, she reads people intuitively, senses their intentions, and "
+"manages to make the right choice before others realize there was one to be "
+"made. Decisive, brave, and usually silent, she enters combat without a word,"
+" but with a relentless focus on the task at hand."
+
+msgid "notrecruitedtankman/onslaught_p5_2/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/onslaught_p5_2/label"
+msgstr "Onslaught. Year of the Dragon"
+
+msgid "notrecruitedtankman/onslaught_p5_3/desc"
+msgstr ""
+"A lover of sleep, Aleš can doze just about anywhere: on a dugout floor, on "
+"his tank's hull, or even to the \"soothing\" rumble of its engine. He's also"
+" a hearty eater who will never pass up the chance to inspect a ration pack. "
+"Yet despite his appreciation for the more sedentary side of life, this "
+"gregarious giant is a formidable fighter who can lift his crew's spirits "
+"with a well-timed joke even in the heat of battle. Outside combat, he "
+"treasures time with his young daughter, his greatest motivation to return "
+"from every mission."
+
+msgid "notrecruitedtankman/onslaught_p5_3/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/onslaught_p5_3/label"
+msgstr "Onslaught. Year of the Dragon"
+
+msgid "notrecruitedtankman/onslaught_p5_4/desc"
+msgstr ""
+"A musician by training, Eugen has a knack for finding order in chaos. For "
+"him, any challenge is something to understand and master, not to shy away "
+"from, no matter how complex it may appear. That boundless curiosity means "
+"he'll never say no to even the most daunting of tasks, but he doesn't leap "
+"in all guns blazing; trusting his instinct and cool head under pressure, he "
+"listens, analyzes, then moves with the rhythm of the battlefield while "
+"others continue to hesitate."
+
+msgid "notrecruitedtankman/onslaught_p5_4/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/onslaught_p5_4/label"
+msgstr "Onslaught. Year of the Dragon"
+
 msgid "notrecruitedtankman/oow21_strategist_commander/desc"
 msgstr ""
 "An \"old-school\" officer. Cold-blooded and prudent, he makes decisions "
@@ -9140,6 +9217,23 @@ msgstr "Unique Commander"
 
 msgid "notrecruitedtankman/skillsTitle"
 msgstr "Perks"
+
+msgid "notrecruitedtankman/southpawBoxer/desc"
+msgstr ""
+"Accomplished boxer Leonard Knox, known to his sparring buddies simply as "
+"\"Southpaw\" for his left-handed stance, has been a military history buff "
+"since before he put on his first pair of boxing gloves. And that's saying "
+"something, considering he started boxing when he still needed a step stool "
+"to reach his gym's water fountain. It's no surprise, then, that this "
+"lifelong fan of anything that goes boom, smack, or thwack eventually stepped"
+" up as a tank commander. Trading the confines of the ring for sprawling "
+"battlefields, Lenny punches well above his weight in every fight."
+
+msgid "notrecruitedtankman/southpawBoxer/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/southpawBoxer/label"
+msgstr "?empty?"
 
 msgid "notrecruitedtankman/tankman/desc"
 msgstr "?empty?"
@@ -12366,6 +12460,11 @@ msgstr ""
 msgid "prebattle/nameFilterButton/header"
 msgstr "Search by Name"
 
+msgid "prebattle/readyButton/vehiclesRequired3/body"
+msgstr ""
+"You must have at least 3 suitable vehicles for the mode. See the About "
+"Onslaught page for details."
+
 msgid "prebattle/upButton/active"
 msgstr "Move a player from the queue to the team"
 
@@ -13842,6 +13941,26 @@ msgstr ""
 msgid "shell/basic/description/bold"
 msgstr "Default shell"
 
+msgid "shell/mechanics/lowChargeShot/description"
+msgstr ""
+"A special mechanic for the vehicle's gun allows for earlier firing with "
+"altered shell parameters."
+
+msgid "shell/mechanics/lowChargeShot/description/affectedParams"
+msgstr "altered shell parameters"
+
+msgid "shell/mechanics/lowChargeShot/description/specialMode"
+msgstr "Special mechanic"
+
+msgid "shell/mechanics/lowChargeShot/infoBlock"
+msgstr "Basic parameters are used for all calculations"
+
+msgid "shell/mechanics/lowChargeShot/paramsHeader/basic"
+msgstr "Basic:"
+
+msgid "shell/mechanics/lowChargeShot/paramsHeader/specific"
+msgstr "Altered:"
+
 msgid "showArtyHitOnMap/body"
 msgstr "Show/hide the area under enemy SPG fire on the minimap."
 
@@ -14732,6 +14851,34 @@ msgstr ""
 "The amount of Ion-Discharge Afterburner charge generated per second in Turbo"
 " mode."
 
+msgid "tank_params/desc/lowChargeShotAvgDamage"
+msgstr ""
+"Average damage caused by a single-charge shot after an armor-penetrating "
+"hit. The potential damage dispersion is +/- 25% of the average value."
+
+msgid "tank_params/desc/lowChargeShotBlockDuration"
+msgstr ""
+"Time before full reload during which single-charge shots cannot be fired."
+
+msgid "tank_params/desc/lowChargeShotDispertion"
+msgstr ""
+"Increase to gun dispersion when firing a single-charge shot. Characterized "
+"by the maximum shell deviation from the aiming point at a distance of 100 m."
+
+msgid "tank_params/desc/lowChargeShotPenetration"
+msgstr ""
+"Average armor thickness that can be penetrated by a single-charge shot, "
+"adjusted for shell normalization. The dispersion is +/- 25% of the average "
+"value."
+
+msgid "tank_params/desc/lowChargeShotRateOfFire"
+msgstr ""
+"Increase to rounds per minute when firing single-charge shots (compared to "
+"regular shots)."
+
+msgid "tank_params/desc/lowChargeShotVelocity"
+msgstr "Speed of a single-charge shot."
+
 msgid "tank_params/desc/maxAccuracyLevel"
 msgstr "The maximum number of accuracy levels that can be accumulated."
 
@@ -14816,6 +14963,44 @@ msgid "tank_params/desc/preheatTransitionDelay"
 msgstr ""
 "During this delay, your vehicle's preheat will neither increase nor "
 "decrease."
+
+msgid "tank_params/desc/propellantChargeLimit"
+msgstr ""
+"The maximum charge level that can be reached without disabling the limiter."
+
+msgid "tank_params/desc/propellantChargeSpendingAfterShot"
+msgstr "The amount of charge lost after firing."
+
+msgid "tank_params/desc/propellantChargingPerSec"
+msgstr "The amount of charge automatically generated per second."
+
+msgid "tank_params/desc/propellantDischargingPerSec"
+msgstr ""
+"The amount of charge lost per second after the limiter is activated, until "
+"it reaches the limit."
+
+msgid "tank_params/desc/propellantOverchargeSwitchCooldown"
+msgstr "The delay after which the limiter can be toggled again."
+
+msgid "tank_params/desc/propellantPostLimitAimingTime"
+msgstr "The penalty to aiming time when the limit is exceeded."
+
+msgid "tank_params/desc/propellantPostLimitDamageBonus"
+msgstr ""
+"The bonus to average damage granted at full charge when the limit is "
+"exceeded."
+
+msgid "tank_params/desc/propellantPostLimitDamageSpike"
+msgstr ""
+"The sudden increase in damage caused by shots when the limit is exceeded."
+
+msgid "tank_params/desc/propellantPostLimitDispersion"
+msgstr "The penalty to dispersion at 100 m when the limit is exceeded."
+
+msgid "tank_params/desc/propellantPreLimitDamageBonus"
+msgstr ""
+"The bonus to average damage granted at maximum charge while the limiter is "
+"active."
 
 msgid "tank_params/desc/radioDistance"
 msgstr ""
@@ -15080,6 +15265,30 @@ msgstr "Nominal vehicle speed in salvo fire mode."
 
 msgid "tank_params/desc/vehicleWeight"
 msgstr "Weight determines the effectiveness of ramming."
+
+msgid "tank_params/desc/wheeledDashAbilityDuration"
+msgstr "Duration of the mechanic's effect after activation."
+
+msgid "tank_params/desc/wheeledDashAbilityReloadTime"
+msgstr "Time required before the mechanic can be activated again after use."
+
+msgid "tank_params/desc/wheeledDashAbilityReloadTimeBonus"
+msgstr ""
+"Reduction in the mechanic's cooldown time granted after the speed threshold "
+"is reached."
+
+msgid "tank_params/desc/wheeledDashEnginePower"
+msgstr "Increase in engine power granted while the mechanic is active."
+
+msgid "tank_params/desc/wheeledDashReverseSpeed"
+msgstr "The bonus to top reverse speed granted by the mechanic."
+
+msgid "tank_params/desc/wheeledDashSpeedLimits"
+msgstr ""
+"Speed the vehicle must reach for the mechanic's cooldown time to be reduced."
+
+msgid "tank_params/desc/wheeledDashTopSpeed"
+msgstr "The bonus to top forward speed granted by the mechanic."
 
 msgid "tank_params/desc/wheeledSpeedModeSpeed"
 msgstr "The parameter for the Rapid mode."
@@ -16407,6 +16616,46 @@ msgstr "Not Suitable for Platoon"
 
 msgid "vehicleStatus/willBeUnlockedInBattle/header"
 msgstr "Unlocked in battle"
+
+msgid "vehicleStatus/wot_plus_exclusive_vehicle_disabled/header"
+msgstr "Not available"
+
+msgid "w2gt/zone/ambush/body"
+msgstr "Take cover and wait for enemies to come into view."
+
+msgid "w2gt/zone/ambush/header"
+msgstr "Ambush"
+
+msgid "w2gt/zone/artillery/body"
+msgstr "Provide fire support to allies on the nearest flank."
+
+msgid "w2gt/zone/artillery/header"
+msgstr "Artillery"
+
+msgid "w2gt/zone/brawling/body"
+msgstr "Attack the enemy at medium and close range."
+
+msgid "w2gt/zone/brawling/header"
+msgstr "Brawling"
+
+msgid "w2gt/zone/recon/body"
+msgstr "Scout for enemy positions."
+
+msgid "w2gt/zone/recon/header"
+msgstr "Recon"
+
+msgid "w2gt/zone/universal/body"
+msgstr ""
+"Engage exposed targets at range and support nearby allies in close combat."
+
+msgid "w2gt/zone/universal/header"
+msgstr "Universal"
+
+msgid "w2gtEnable/body"
+msgstr "Display combat zone recommendations for your vehicle on the minimap."
+
+msgid "w2gtEnable/header"
+msgstr "Minimap Combat Zones"
 
 msgid "wallet/not_available_credits/body"
 msgstr ""

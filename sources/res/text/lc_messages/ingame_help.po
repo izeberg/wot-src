@@ -349,6 +349,15 @@ msgstr ""
 msgid "detailsHelp/mechanics/improvedRamming/page1/title"
 msgstr "Ramming Configuration"
 
+msgid "detailsHelp/mechanics/lowChargeShot/page1/description"
+msgstr ""
+"This vehicle's gun can fire early: single-charge shots, fired during reload,"
+" have reduced effectiveness, while regular full-charge shots fired after "
+"reloading have optimal ballistic parameters."
+
+msgid "detailsHelp/mechanics/lowChargeShot/page1/title"
+msgstr "Multi-Pack Charge System"
+
 msgid "detailsHelp/mechanics/overheatStacks/page1/description"
 msgstr ""
 "Remaining stationary or moving below a certain speed generates preheat, which increases the average damage and accuracy of your next shot.\n"
@@ -375,6 +384,25 @@ msgstr ""
 
 msgid "detailsHelp/mechanics/powerMode/page1/title"
 msgstr "Direct Drive"
+
+msgid "detailsHelp/mechanics/propellantAfterburnerGun/page1/description"
+msgstr ""
+"Over time, the system automatically accumulates a charge, which is partially"
+" consumed to boost damage when firing. The higher the charge, the greater "
+"the bonus damage."
+
+msgid "detailsHelp/mechanics/propellantAfterburnerGun/page1/title"
+msgstr "Induction Propellant Afterburner"
+
+msgid "detailsHelp/mechanics/propellantAfterburnerGun/page2/description"
+msgstr ""
+"By default, the system only stores the charge up to a certain limit. "
+"Disabling the limiter lets it accumulate an even higher charge, granting a "
+"much greater damage bonus but reducing gun handling. To toggle the limiter, "
+"press:"
+
+msgid "detailsHelp/mechanics/propellantAfterburnerGun/page2/title"
+msgstr "Limiter"
 
 msgid "detailsHelp/mechanics/rechargeableNitro/page1/description"
 msgstr ""
@@ -493,6 +521,15 @@ msgstr ""
 
 msgid "detailsHelp/mechanics/twinGun/page2/title"
 msgstr "Advantages and Disadvantages"
+
+msgid "detailsHelp/mechanics/wheeledDash/page1/description"
+msgstr ""
+"This mechanical modification significantly boosts the vehicle's forward and "
+"reverse acceleration, engine power, and top forward and reverse speed for a "
+"short time. Maintaining a high movement speed accelerates its cooldown."
+
+msgid "detailsHelp/mechanics/wheeledDash/page1/title"
+msgstr "High-Pressure Turbocharger Assist"
 
 msgid "detailsHelp/noKeysWarning"
 msgstr "The core keys have not been assigned. Assign them in game settings."

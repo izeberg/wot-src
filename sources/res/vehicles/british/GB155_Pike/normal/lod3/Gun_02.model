@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/british/GB155_Pike/normal/lod4/Gun_02</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-0.437291 -0.339739 -0.001599</min>
+		<max>0.429015 0.281694 6.518176</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/british/GB155_Pike/normal/lod3/Gun_02</nodefullVisual>
+</root>

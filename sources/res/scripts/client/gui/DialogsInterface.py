@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from constants import ACCOUNT_KICK_REASONS
 from gui.Scaleform.Waiting import Waiting
 from gui.Scaleform.daapi.view.dialogs import I18nInfoDialogMeta, I18nConfirmDialogMeta, DisconnectMeta, CheckBoxDialogMeta

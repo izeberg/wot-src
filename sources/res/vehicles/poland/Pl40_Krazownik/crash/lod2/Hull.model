@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/poland/Pl40_Krazownik/crash/lod2/Hull</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/poland/Pl40_Krazownik/crash/lod3/Hull</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.641932 -0.785530 -3.512605</min>
+		<max>1.643948 0.472856 3.582654</max>
+	</visibilityBox>
+</root>

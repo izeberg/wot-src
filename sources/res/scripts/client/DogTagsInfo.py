@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing, BigWorld, Event
 if typing.TYPE_CHECKING:
     from typing import List, Tuple

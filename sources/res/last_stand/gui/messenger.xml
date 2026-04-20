@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<htmlTemplatesSimple>
+		<LSBattleResultWaves>&lt;br/&gt;&lt;font color=&apos;#929290&apos;&gt;_(#last_stand.last_stand_system_messages:serviceChannelMessages/battleResults/wavesCompleted)&lt;/font&gt;</LSBattleResultWaves>
+		<LSBattleResultQuest>&lt;br/&gt;&lt;font color=&apos;#929290&apos;&gt;_(#last_stand.last_stand_system_messages:serviceChannelMessages/battleResults/questCompleted)&lt;br/&gt;_(#last_stand.last_stand_system_messages:serviceChannelMessages/battleResults/artefacts): &lt;font color=&apos;#C8C8B5&apos;&gt;%(artefacts)s&lt;/font&gt;&lt;/font&gt;</LSBattleResultQuest>
+		<LSBattleResultQuests>&lt;br/&gt;&lt;font color=&apos;#929290&apos;&gt;_(#last_stand.last_stand_system_messages:serviceChannelMessages/battleResults/questsCompleted)&lt;br/&gt;_(#last_stand.last_stand_system_messages:serviceChannelMessages/battleResults/artefacts): &lt;font color=&apos;#C8C8B5&apos;&gt;%(artefacts)s&lt;/font&gt;&lt;/font&gt;</LSBattleResultQuests>
+	</htmlTemplatesSimple>
+	<htmlTemplates>
+		<lsProgressPointsMessage>
+			<priority>medium</priority>
+			<type>grey</type>
+			<icon>lsArtefactKey</icon>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;%(title)s&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#8C8C7E&quot;&gt;%(description)s&lt;/font&gt;</message>
+		</lsProgressPointsMessage>
+		<lsPurchaseBundleForGoldSysMessage>
+			<type>yellow</type>
+			<icon>GoldIcon</icon>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;%(title)s&lt;/font&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;%(description)s&lt;/font&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;%(additionalText)s&lt;/font&gt;</message>
+		</lsPurchaseBundleForGoldSysMessage>
+		<lsDifficultyOpenMessageSysMessage>
+			<type>grey</type>
+			<icon>InformationIcon</icon>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;%(text)s&lt;/font&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;%(description)s&lt;/font&gt;</message>
+		</lsDifficultyOpenMessageSysMessage>
+		<lsBattlePassPointsMessage>
+			<type>yellow</type>
+			<icon>lsBattlePassPoints</icon>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#messenger:serviceChannelMessages/invoiceReceived/invoice)&lt;/font&gt;
+&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/currencyUpdate/date):&lt;/font&gt; &lt;font color=&apos;#8C8C7E&apos;&gt;%(at)s&lt;/font&gt;
+&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:platformCurrencyMsg/received/bpbit): &lt;/font&gt;&lt;br/&gt;&lt;font color=&apos;#C8C8B5&apos;&gt;%(bpPoints)s&lt;/font&gt;</message>
+		</lsBattlePassPointsMessage>
+		<LSBattleVictoryResult>
+			<type>battleResult</type>
+			<icon>BattleResultIcon</icon>
+			<bgIcon>BgLSBattleResultIconVictory</bgIcon>
+			<buttonsLayout>
+				<button>
+					<type>submit</type>
+					<label>_(#messenger:serviceChannelMessages/battleResults/button)</label>
+					<action>showBattleResults</action>
+				</button>
+			</buttonsLayout>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#messenger:serviceChannelMessages/battleResults/victory)!&lt;/font&gt;
+&lt;font color=&apos;#929290&apos;&gt;_(#last_stand.last_stand_system_messages:serviceChannelMessages/battleResults/battleTypeName)&lt;/font&gt;
+&lt;font color=&apos;#929290&apos;&gt;_(#last_stand.last_stand_system_messages:serviceChannelMessages/battleResults/difficulty): %(difficultyLevel)s&lt;/font&gt;%(finalResult)s
+&lt;font color=&apos;#929290&apos;&gt;_(#last_stand.last_stand_system_messages:serviceChannelMessages/battleResults/tank): %(vehicleNames)s&lt;/font&gt;
+&lt;font color=&apos;#929290&apos;&gt;_(#last_stand.last_stand_system_messages:serviceChannelMessages/battleResults/progressPoints): &lt;font color=&apos;#C8C8B5&apos;&gt;%(progressPoints)s&lt;/font&gt;%(battlePassProgress)s&lt;/font&gt;%(crystalStr)s%(gold)s%(eventCoinStr)s%(bpcoinStr)s%(equipCoinStr)s&lt;font color=&apos;#929290&apos;&gt;%(credits)s%(creditsEx)s&lt;/font&gt;%(rankedProgress)s%(rankedBonusBattles)s%(achieves)s%(lock)s%(badges)s%(quests)s%(piggyBank)s%(platformCurrencyStr)s</message>
+		</LSBattleVictoryResult>
+		<LSBattleDefeatResult>
+			<type>battleResult</type>
+			<icon>BattleResultIcon</icon>
+			<bgIcon>BgLSBattleResultIconDefeat</bgIcon>
+			<buttonsLayout>
+				<button>
+					<type>submit</type>
+					<label>_(#messenger:serviceChannelMessages/battleResults/button)</label>
+					<action>showBattleResults</action>
+				</button>
+			</buttonsLayout>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#messenger:serviceChannelMessages/battleResults/ended)&lt;/font&gt;
+&lt;font color=&apos;#929290&apos;&gt;_(#last_stand.last_stand_system_messages:serviceChannelMessages/battleResults/battleTypeName)&lt;/font&gt;
+&lt;font color=&apos;#929290&apos;&gt;_(#last_stand.last_stand_system_messages:serviceChannelMessages/battleResults/difficulty): %(difficultyLevel)s&lt;/font&gt;%(finalResult)s
+&lt;font color=&apos;#929290&apos;&gt;_(#last_stand.last_stand_system_messages:serviceChannelMessages/battleResults/tank): %(vehicleNames)s&lt;/font&gt;
+&lt;font color=&apos;#929290&apos;&gt;_(#last_stand.last_stand_system_messages:serviceChannelMessages/battleResults/progressPoints): &lt;font color=&apos;#C8C8B5&apos;&gt;%(progressPoints)s&lt;/font&gt;%(battlePassProgress)s&lt;/font&gt;%(crystalStr)s%(gold)s%(eventCoinStr)s%(bpcoinStr)s%(equipCoinStr)s&lt;font color=&apos;#929290&apos;&gt;%(credits)s%(creditsEx)s&lt;/font&gt;%(rankedProgress)s%(rankedBonusBattles)s%(achieves)s%(lock)s%(badges)s%(quests)s%(piggyBank)s%(platformCurrencyStr)s</message>
+		</LSBattleDefeatResult>
+	</htmlTemplates>
+</root>

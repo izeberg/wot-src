@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import math, typing
 from collections import namedtuple
 import BigWorld
@@ -30,6 +31,9 @@ class StationaryReloadAmmoState(DefaultComponentAmmoState):
 
     def __eq__(self, other):
         return isinstance(other, StationaryReloadAmmoState) and self.__state == other.stationaryReloadState and self.__baseTime == other.stationaryBaseTime and self.__timeLeft == other.stationaryTimeLeft
+
+    def __hash__(self):
+        return hash((self.__state, self.__baseTime, self.__timeLeft))
 
     @classmethod
     def fromComponentStatus(cls, status):

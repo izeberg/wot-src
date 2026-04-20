@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB155_Pike/normal/lod3/Chassis</nodefullVisual>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.881601 0.030299 -3.233362</min>
+		<max>1.881601 1.149805 3.148078</max>
+	</visibilityBox>
+	<parent>vehicles/british/GB155_Pike/normal/lod4/Chassis</parent>
+	<extent>192.000000</extent>
+</root>

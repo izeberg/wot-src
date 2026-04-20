@@ -48,8 +48,6 @@ package net.wg.gui.lobby.settings.components
       
       private var _keyString:String;
       
-      private var _keyDefault:Number;
-      
       private var _alertMessageAlias:String = "#tooltips:setting_window/controls/key_input/warning";
       
       public function KeyInput()
@@ -204,11 +202,6 @@ package net.wg.gui.lobby.settings.components
          return this._keyCode;
       }
       
-      public function set keyDefault(param1:Number) : void
-      {
-         this._keyDefault = param1;
-      }
-      
       public function get key() : Number
       {
          return this._keyCode;
@@ -240,11 +233,6 @@ package net.wg.gui.lobby.settings.components
       {
          this._keys = param1;
          invalidate(INVALID_KEYS);
-      }
-      
-      public function get alertMessageAlias() : String
-      {
-         return this._alertMessageAlias;
       }
       
       public function set alertMessageAlias(param1:String) : void

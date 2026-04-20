@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<stream>colour</stream>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd1</identifier>
+					<fx>shaders/custom/vector_animation_2.fx</fx>
+					<materialKind>112</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						destBlend
+						<Int>2</Int>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/3D_Customization/Cus_213_OB_LamellarArmor/Cus_213_OB_LamellarArmor_02_AM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						enableLighting
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_useTime
+						<Bool>false</Bool>
+					</property>
+					<property>
+						lightMultipliers
+						<Vector4>200.000000 0.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						opacityMap
+						<Texture>particles/content_deferred/GFX_models/GFX_textures/half_mask_02.dds</Texture>
+					</property>
+					<property>
+						opacityMapEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						selfIllumLight
+						<Vector3>0.552941 0.690196 0.529412</Vector3>
+					</property>
+					<property>
+						TintlColor
+						<Vector4>0.298039 0.600000 0.317647 1.000000</Vector4>
+					</property>
+				</material>
+				<groupOrigin>-0.170200 0.319768 -0.065782</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-0.437189 0.216498 -0.789865</min>
+		<max>0.103586 0.417920 0.659593</max>
+	</boundingBox>
+	<customBsp>true</customBsp>
+	<geometrySize>22332</geometrySize>
+</root>

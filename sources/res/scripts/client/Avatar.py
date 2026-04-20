@@ -1,4 +1,7 @@
-import cPickle, logging, math, typing, weakref, zlib
+from __future__ import absolute_import, division
+from future.moves import pickle
+from future.utils import lrange, viewitems
+import logging, math, typing, weakref, zlib
 from functools import partial
 import BigWorld, Keys, Math, ResMgr, WWISE, WoT, Account, AccountCommands, AreaDestructibles, AvatarInputHandler, AvatarPositionControl, BattleReplay, ClientArena, CommandMapping, Event, FlockManager, MusicControllerWWISE, ProjectileMover, SoundGroups, TriggersManager, Vehicle, VehicleGunRotator, VehicleObserverGunRotator, Weather, constants
 from AimSound import AimSound
@@ -75,7 +78,7 @@ from battle_modifiers_common import BattleModifiers, BattleParams
 from helpers_common import unpackHullAimingPitch, unpackChunkObstacles
 import VOIP
 if typing.TYPE_CHECKING:
-    from typing import Tuple, Union
+    from typing import Tuple, Union, Optional
 _logger = logging.getLogger(__name__)
 
 class _CRUISE_CONTROL_MODE(object):
@@ -295,7 +298,7 @@ class PlayerAvatar(BigWorld.Entity, ClientChat, CombatEquipmentManager, AvatarOb
         self.__isOnArena = False
         uniprof.enterToRegion('avatar.arena.loading')
         BigWorld.enableLoadingTimer(True)
-        self.arena = ClientArena.ClientArena(self.arenaUniqueID, self.arenaTypeID, self.arenaBonusType, self.arenaGuiType, self.arenaExtraData, self.spaceID)
+        self.arena = ClientArena.ClientArena(self.arenaUniqueID, self.arenaTypeID, self.arenaBonusType, self.arenaGuiType, self.arenaExtraData, self.spaceID, self)
         AreaDestructibles.g_destructiblesManager.startSpace(self.spaceID)
         if self.arena.arenaType is None:
             import game
@@ -358,7 +361,7 @@ class PlayerAvatar(BigWorld.Entity, ClientChat, CombatEquipmentManager, AvatarOb
             from helpers import EdgeDetectColorController
             EdgeDetectColorController.g_instance.updateColors()
             self.statsCollector.start()
-            self.__prereqs = dict()
+            self.__prereqs = {}
             self.loadPrerequisites(self.__initGUI())
             self.__projectileMover = ProjectileMover.ProjectileMover()
             SoundGroups.g_instance.enableArenaSounds(False)
@@ -604,7 +607,7 @@ class PlayerAvatar(BigWorld.Entity, ClientChat, CombatEquipmentManager, AvatarOb
         return
 
     def onCmdResponseExt(self, requestID, resultID, errorStr, ext):
-        ext = cPickle.loads(ext)
+        ext = pickle.loads(ext)
         callback = self.__onCmdResponse.pop(requestID, None)
         if callback is not None:
             callback(requestID, resultID, errorStr, ext)
@@ -616,7 +619,7 @@ class PlayerAvatar(BigWorld.Entity, ClientChat, CombatEquipmentManager, AvatarOb
 
     def onIGRTypeChanged(self, data):
         try:
-            data = cPickle.loads(data)
+            data = pickle.loads(data)
             g_playerEvents.onIGRTypeChanged(data.get('roomType'), data.get('igrXPFactor'))
         except Exception:
             LOG_ERROR('Error while unpickling igr data information', data)
@@ -724,7 +727,7 @@ class PlayerAvatar(BigWorld.Entity, ClientChat, CombatEquipmentManager, AvatarOb
                         self.base.setDevelopmentFeature(0, 'setSignal', 3, '')
                         return True
                     if key == Keys.KEY_C:
-                        self.base.setDevelopmentFeature(0, 'navigateTo', 0, cPickle.dumps((tuple(self.inputHandler.getDesiredShotPoint()), None, None), -1))
+                        self.base.setDevelopmentFeature(0, 'navigateTo', 0, pickle.dumps((tuple(self.inputHandler.getDesiredShotPoint()), None, None), -1))
                         return True
                     if key == Keys.KEY_PAUSE:
                         self.base.setDevelopmentFeature(0, 'togglePauseAI', 0, '')
@@ -837,7 +840,7 @@ class PlayerAvatar(BigWorld.Entity, ClientChat, CombatEquipmentManager, AvatarOb
                 if not isGuiEnabled and isDown and mods == 0:
                     if keys_handlers.processAmmoSelection(key):
                         return True
-                    if cmdMap.isFiredList(xrange(CommandMapping.CMD_AMMO_CHOICE_4, CommandMapping.CMD_AMMO_CHOICE_0 + 1), key):
+                    if cmdMap.isFiredList(lrange(CommandMapping.CMD_AMMO_CHOICE_4, CommandMapping.CMD_AMMO_CHOICE_0 + 1), key):
                         gui_event_dispatcher.choiceConsumable(key)
                         return True
                 isComp7 = self.hasBonusCap(_CAPS.COMP7)
@@ -1205,6 +1208,7 @@ class PlayerAvatar(BigWorld.Entity, ClientChat, CombatEquipmentManager, AvatarOb
         if self.playerVehicleID != vehID:
             return
         self.__disableRespawnMode = True
+        self.__isVehicleDrowning = False
         self.setVehicleOverturned(False)
         vehicle = BigWorld.entities.get(vehID)
         self.guiSessionProvider.movingToRespawnBase(vehicle)
@@ -1270,7 +1274,7 @@ class PlayerAvatar(BigWorld.Entity, ClientChat, CombatEquipmentManager, AvatarOb
 
     def updateVehicleGunReloadTime(self, vehicleID, timeLeft, baseTime, clipTime=None):
         LOG_DEBUG_DEV(('updateVehicleGunReloadTime vehicleID={}, timeLeft={} baseTime={}').format(vehicleID, timeLeft, baseTime))
-        if vehicleID != self.playerVehicleID and vehicleID != self.observedVehicleID:
+        if vehicleID not in (self.playerVehicleID, self.observedVehicleID):
             if not self.__isVehicleAlive and vehicleID == self.inputHandler.ctrl.curVehicleID:
                 self.guiSessionProvider.shared.feedback.setVehicleHasAmmo(vehicleID, timeLeft != -2)
             return
@@ -1350,7 +1354,7 @@ class PlayerAvatar(BigWorld.Entity, ClientChat, CombatEquipmentManager, AvatarOb
 
     def __updateVehicleStatus(self, vehicleID):
         observedVehID = self.guiSessionProvider.shared.vehicleState.getControllingVehicleID()
-        if vehicleID != self.playerVehicleID and vehicleID != observedVehID and (self.__isVehicleAlive or vehicleID != self.inputHandler.ctrl.curVehicleID):
+        if vehicleID not in (self.playerVehicleID, observedVehID) and (self.__isVehicleAlive or vehicleID != self.inputHandler.ctrl.curVehicleID):
             return False
         typeDescr = None
         if self.isObserver() or observedVehID == vehicleID:
@@ -1396,8 +1400,6 @@ class PlayerAvatar(BigWorld.Entity, ClientChat, CombatEquipmentManager, AvatarOb
         typeDescr = self.__updateVehicleStatus(vehicleID)
         if not typeDescr:
             return
-        extraIndex = extraIndex
-        progress = progress
         LOG_DEBUG_DEV('DESTROYED_DEVICE_IS_REPAIRING (%s): %s%%, %s sec' % (
          typeDescr.extras[extraIndex].name, progress, timeLeft))
         self.guiSessionProvider.invalidateVehicleState(VEHICLE_VIEW_STATE.REPAIRING, (
@@ -1481,7 +1483,7 @@ class PlayerAvatar(BigWorld.Entity, ClientChat, CombatEquipmentManager, AvatarOb
 
     def updateTargetingInfo(self, entityId, turretYaw, gunPitch, maxTurretRotationSpeed, maxGunRotationSpeed, shotDispMultiplierFactor, gunShotDispersionFactorsTurretRotation, chassisShotDispersionFactorsMovement, chassisShotDispersionFactorsRotation, gunShotDispersionFactorsAfterShot, aimingTime):
         _logger.debug('updateTargetingInfo %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s', entityId, turretYaw, gunPitch, maxTurretRotationSpeed, maxGunRotationSpeed, shotDispMultiplierFactor, gunShotDispersionFactorsTurretRotation, chassisShotDispersionFactorsMovement, chassisShotDispersionFactorsRotation, gunShotDispersionFactorsAfterShot, aimingTime)
-        if entityId != self.playerVehicleID and entityId != self.observedVehicleID:
+        if entityId not in (self.playerVehicleID, self.observedVehicleID):
             return
         dispersionInfo = self.__dispersionInfo
         prevAimingTime = dispersionInfo[5]
@@ -1610,7 +1612,7 @@ class PlayerAvatar(BigWorld.Entity, ClientChat, CombatEquipmentManager, AvatarOb
             if not shotsResultSound:
                 _logger.warning('IShotsResultSoundController is missing, add it to allow sounds on hit.')
                 return
-            for enemyVehID, flags in enemies.iteritems():
+            for enemyVehID, flags in viewitems(enemies):
                 if enemyVehID == self.playerVehicleID:
                     continue
                 sound = shotsResultSound.getVehicleHitResultSound(enemyVehID, flags, len(enemies))
@@ -1652,7 +1654,7 @@ class PlayerAvatar(BigWorld.Entity, ClientChat, CombatEquipmentManager, AvatarOb
             return self.arena.loadVsePlans()
         else:
             if constants.HAS_DEV_RESOURCES:
-                params = cPickle.loads(arg)
+                params = pickle.loads(arg)
                 g_playerEvents.onShowDevelopmentInfo(code, params)
                 if code == DEVELOPMENT_INFO.BONUSES:
                     self.guiSessionProvider.shared.feedback.setDevelopmentInfo(code, params)
@@ -1671,12 +1673,18 @@ class PlayerAvatar(BigWorld.Entity, ClientChat, CombatEquipmentManager, AvatarOb
                     LOG_DEBUG('showDevelopmentInfo', code, params)
             return
 
-    def syncVehicleAttrs(self, _, attrs):
-        LOG_DEBUG('syncVehicleAttrs', attrs)
+    def syncVehicleAttrs(self, vehicleID, attrs):
+        vehicleAttrs = dict(attrs)
+        vehicle = BigWorld.entity(vehicleID)
+        if vehicle is not None:
+            vehicleAttrsCollected = vehicle.events.collectVehicleAttrs()
+            vehicleAttrs.update(vehicleAttrsCollected)
+        LOG_DEBUG('syncVehicleAttrs', vehicleAttrs)
         if self.guiSessionProvider.shared.prebattleSetups.isSelectionStarted():
-            self.guiSessionProvider.shared.prebattleSetups.setVehicleAttrs(self.playerVehicleID, attrs)
+            self.guiSessionProvider.shared.prebattleSetups.setVehicleAttrs(self.playerVehicleID, vehicleAttrs)
         else:
-            self.guiSessionProvider.shared.feedback.setVehicleAttrs(self.playerVehicleID, attrs)
+            self.guiSessionProvider.shared.feedback.setVehicleAttrs(self.playerVehicleID, vehicleAttrs)
+        return
 
     def showTracer(self, shooterID, shotID, isRicochet, effectsIndex, prefabEffIndex, shellTypeIdx, shellCaliber, refStartPoint, velocity, gravity, maxShotDist, gunIndex, gunInstallationIndex):
         g_playerEvents.onTracerReceived(shotID)
@@ -1766,12 +1774,6 @@ class PlayerAvatar(BigWorld.Entity, ClientChat, CombatEquipmentManager, AvatarOb
         if self.arena:
             self.arena.update(updateType, argStr)
 
-    def updatePositions(self, indices, positions):
-        try:
-            self.arena.updatePositions(indices, positions)
-        except Exception:
-            pass
-
     def updateCarriedFlagPositions(self, flagIDs, positions):
         pass
 
@@ -1791,7 +1793,7 @@ class PlayerAvatar(BigWorld.Entity, ClientChat, CombatEquipmentManager, AvatarOb
             self.guiSessionProvider.updateVehicleQuickShellChanger(isActive)
 
     def updateAvatarPrivateStats(self, stats):
-        stats = cPickle.loads(zlib.decompress(stats))
+        stats = pickle.loads(zlib.decompress(stats))
         stats = listToDict(AVATAR_PRIVATE_STATS, stats)
         self.guiSessionProvider.updateAvatarPrivateStats(stats)
 
@@ -1848,7 +1850,7 @@ class PlayerAvatar(BigWorld.Entity, ClientChat, CombatEquipmentManager, AvatarOb
             return
         else:
             try:
-                stats = cPickle.loads(stats)
+                stats = pickle.loads(stats)
             except Exception:
                 LOG_CURRENT_EXCEPTION()
 
@@ -1918,7 +1920,7 @@ class PlayerAvatar(BigWorld.Entity, ClientChat, CombatEquipmentManager, AvatarOb
             cantMove = False
             vehicle = BigWorld.entity(self.playerVehicleID)
             if self.inputHandler.ctrl.isSelfVehicle():
-                for deviceName, stateName in self.__deviceStates.iteritems():
+                for deviceName, stateName in viewitems(self.__deviceStates):
                     msgName = self.__cantMoveCriticals.get(deviceName + '_' + stateName)
                     if msgName is not None:
                         cantMove = True
@@ -2082,7 +2084,7 @@ class PlayerAvatar(BigWorld.Entity, ClientChat, CombatEquipmentManager, AvatarOb
                     if not isRepeat:
                         self.showVehicleError(self.__cantShootCriticals['gun_locked'])
                     return
-                for deviceName, stateName in self.__deviceStates.iteritems():
+                for deviceName, stateName in viewitems(self.__deviceStates):
                     msgName = self.__cantShootCriticals.get(deviceName + '_' + stateName)
                     if msgName is not None:
                         if not isRepeat:
@@ -2107,7 +2109,7 @@ class PlayerAvatar(BigWorld.Entity, ClientChat, CombatEquipmentManager, AvatarOb
         return True
 
     def __verifyShooting(self, isRepeat=False):
-        for deviceName, stateName in self.__deviceStates.iteritems():
+        for deviceName, stateName in viewitems(self.__deviceStates):
             msgName = self.__cantShootCriticals.get(deviceName + '_' + stateName)
             if msgName is not None:
                 if not isRepeat:
@@ -2411,7 +2413,7 @@ class PlayerAvatar(BigWorld.Entity, ClientChat, CombatEquipmentManager, AvatarOb
         if not isSuccess:
             return
         try:
-            self.__battleResults = cPickle.loads(zlib.decompress(data))
+            self.__battleResults = pickle.loads(zlib.decompress(data))
             BattleResultsCache.save(self.name, self.__battleResults)
             LOG_DEBUG('Show battle results.')
             g_playerEvents.onBattleResultsReceived(True, BattleResultsCache.convertToFullForm(self.__battleResults))
@@ -2477,7 +2479,8 @@ class PlayerAvatar(BigWorld.Entity, ClientChat, CombatEquipmentManager, AvatarOb
        'no_ammo': 'cantShootNoAmmo', 
        'gun_reload': 'cantShootGunReloading', 
        'gun_locked': 'cantShootGunLocked', 
-       'gun_overheated': 'cantShootGunOverheated'}
+       'gun_overheated': 'cantShootGunOverheated', 
+       'low_charge_shot_blocking': 'lowChargeShotBlocking'}
 
     def __createFakeCameraMatrix(self):
         BigWorld.camera(BigWorld.FreeCamera())
@@ -2510,6 +2513,7 @@ class PlayerAvatar(BigWorld.Entity, ClientChat, CombatEquipmentManager, AvatarOb
         self.arena.onPeriodChange += self.__onArenaPeriodChange
         self.cell.autoAim(0, False)
         self.arena.startVsePlans()
+        self.arena.invalidateVehiclesPosition()
         g_playerEvents.onAvatarReady()
         vehicle = BigWorld.entity(self.playerVehicleID)
         if vehicle is None:
@@ -2926,6 +2930,8 @@ class PlayerAvatar(BigWorld.Entity, ClientChat, CombatEquipmentManager, AvatarOb
             if not ammoCtrl.shellInAmmo(value):
                 return
             ammoCtrl.setCurrentShellCD(value, not fromServer)
+            if vehicle is not None:
+                vehicle.events.onCurrentShellChanged(value)
             if not fromServer and isOwnMultiGun:
                 self.guiSessionProvider.shared.prebattleSetups.onCurrentShellUpdate(vehicleID)
             isSelectionStarted = self.guiSessionProvider.shared.prebattleSetups.isSelectionStarted()
@@ -3075,7 +3081,7 @@ class PlayerAvatar(BigWorld.Entity, ClientChat, CombatEquipmentManager, AvatarOb
         self.__doCmd('doCmdIntStr', cmd, callback, int1, s)
 
     def update(self, pickledDiff):
-        self._update(cPickle.loads(pickledDiff))
+        self._update(pickle.loads(pickledDiff))
 
     def _update(self, diff):
         if self.intUserSettings is not None:
@@ -3090,7 +3096,7 @@ class PlayerAvatar(BigWorld.Entity, ClientChat, CombatEquipmentManager, AvatarOb
             return self.intUserSettings.isSynchronized()
 
     def reloadPlans(self, *args):
-        self.base.setDevelopmentFeature(0, 'reloadPlans', 0, zlib.compress(cPickle.dumps(*args)))
+        self.base.setDevelopmentFeature(0, 'reloadPlans', 0, zlib.compress(pickle.dumps(*args)))
 
     def killEngine(self):
         self.base.setDevelopmentFeature(0, 'kill_engine', 0, '')
@@ -3106,7 +3112,7 @@ class PlayerAvatar(BigWorld.Entity, ClientChat, CombatEquipmentManager, AvatarOb
         self.base.setDevelopmentFeature(0, 'flGetAbilitiesProperties', 0, '')
 
     def receivePhysicsDebugInfo(self, info):
-        modifD = dict()
+        modifD = {}
         self.telemetry.receivePhysicsDebugInfo(info, modifD)
 
     def physicModeChanged(self, newMode):

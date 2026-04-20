@@ -258,6 +258,11 @@ msgstr ""
 "Research all vehicles in the French heavy branch that leads to "
 "the&nbsp;AMX&nbsp;67&nbsp;Imbattable (Tier&nbsp;%(level)s)"
 
+msgid "description/branch_france_F143_Fauteur"
+msgstr ""
+"Research all vehicles in the French heavy branch that leads to the Fauteur "
+"(Tier&nbsp;%(level)s)"
+
 msgid "description/branch_france_F18_Bat_Chatillon25t"
 msgstr ""
 "Research all vehicles in the&nbsp;French medium branch that leads to "
@@ -272,11 +277,6 @@ msgid "description/branch_france_F64_AMX_50Fosh_B"
 msgstr ""
 "Research all vehicles in the French TD branch that leads to "
 "the&nbsp;AMX&nbsp;50 Foch&nbsp;B (Tier&nbsp;%(level)s)"
-
-msgid "description/branch_france_F82_AMX_M4_Mle1949_Ter"
-msgstr ""
-"Research all vehicles in the French heavy branch that leads to "
-"the&nbsp;AMX&nbsp;M4 mle.&nbsp;54 (Tier&nbsp;%(level)s)"
 
 msgid "description/branch_france_F88_AMX_13_105"
 msgstr ""
@@ -433,11 +433,6 @@ msgstr ""
 "Research all vehicles in the British light branch that leads to the "
 "Manticore (Tier&nbsp;%(level)s)"
 
-msgid "description/branch_uk_GB120_Concept_No_5"
-msgstr ""
-"Research all vehicles in the British medium branch that leads to the Concept"
-" No.&nbsp;5 (Tier&nbsp;%(level)s)"
-
 msgid "description/branch_uk_GB142_FV230_Canopener"
 msgstr ""
 "Research all vehicles in the U.K. heavy branch that leads to "
@@ -452,6 +447,11 @@ msgid "description/branch_uk_GB152_AT_FV230_Breaker"
 msgstr ""
 "Research all vehicles in the British TD branch that leads to the&nbsp;AT-"
 "FV230&nbsp;Breaker (Tier&nbsp;%(level)s)"
+
+msgid "description/branch_uk_GB158_Executor"
+msgstr ""
+"Research all vehicles in the British medium branch that leads "
+"to&nbsp;the&nbsp;Executor&nbsp;(Tier&nbsp;%(level)s)"
 
 msgid "description/branch_uk_GB31_Conqueror_Gun"
 msgstr ""
@@ -508,6 +508,11 @@ msgstr ""
 "Research all vehicles in the American medium branch that leads to "
 "the&nbsp;Ares&nbsp;90&nbsp;C (Tier&nbsp;%(level)s)"
 
+msgid "description/branch_usa_A195_Gorilla"
+msgstr ""
+"Research all vehicles in the American TD branch that leads to "
+"the&nbsp;Gorilla (Tier&nbsp;%(level)s)"
+
 msgid "description/branch_usa_A38_T92"
 msgstr ""
 "Research all vehicles in the American SPG branch that leads to "
@@ -522,11 +527,6 @@ msgid "description/branch_usa_A69_T110E5"
 msgstr ""
 "Research all vehicles in the American heavy branch that leads to "
 "the&nbsp;T110E5 (Tier&nbsp;%(level)s)"
-
-msgid "description/branch_usa_A83_T110E4"
-msgstr ""
-"Research all vehicles in the American TD branch that leads to "
-"the&nbsp;T110E4 (Tier&nbsp;%(level)s)"
 
 msgid "description/branch_usa_A85_T110E3"
 msgstr ""
@@ -797,7 +797,7 @@ msgstr ""
 "Research at least one vehicle from tier&nbsp;V in the U.S.A. Tech Tree"
 
 msgid "description/ussr"
-msgstr "Research all vehicles in the&nbsp;USSR Tech Tree."
+msgstr "Research all vehicles in the&nbsp;U.S.S.R. Tech Tree."
 
 msgid "description/ussr_early_era"
 msgstr "Research all Tier&nbsp;I–V vehicles in the&nbsp;U.S.S.R. Tech Tree"
@@ -904,6 +904,9 @@ msgstr "Ares 85"
 
 msgid "name/A191_Ares_90_C"
 msgstr "Ares 90 C"
+
+msgid "name/A195_Gorilla"
+msgstr "Gorilla"
 
 msgid "name/A31_M36_Slagger"
 msgstr "M36 Jackson"
@@ -1150,6 +1153,9 @@ msgstr "AMX&nbsp;67&nbsp;Imbattable"
 
 msgid "name/F140_Fantome"
 msgstr "Fantôme"
+
+msgid "name/F143_Fauteur"
+msgstr "Fauteur"
 
 msgid "name/F15_AMX_12t"
 msgstr "AMX&nbsp;12&nbsp;t"
@@ -1456,6 +1462,9 @@ msgstr "AT-FV230&nbsp;Breaker"
 
 msgid "name/GB156_Black_Prince_II"
 msgstr "Black Prince II"
+
+msgid "name/GB158_Executor"
+msgstr "Executor"
 
 msgid "name/GB20_Crusader"
 msgstr "Crusader"
@@ -1979,6 +1988,9 @@ msgstr "France: AS-XX&nbsp;40&nbsp;t"
 msgid "name/branch_france_F136_AMX_67_Imbattable"
 msgstr "France: AMX&nbsp;67&nbsp;Imbattable"
 
+msgid "name/branch_france_F143_Fauteur"
+msgstr "France: Fauteur"
+
 msgid "name/branch_france_F18_Bat_Chatillon25t"
 msgstr "France: Bat.-Châtillon&nbsp;25&nbsp;t"
 
@@ -1987,9 +1999,6 @@ msgstr "France: Bat.-Châtillon 155&nbsp;58"
 
 msgid "name/branch_france_F64_AMX_50Fosh_B"
 msgstr "France: AMX&nbsp;50 Foch&nbsp;B"
-
-msgid "name/branch_france_F82_AMX_M4_Mle1949_Ter"
-msgstr "France: AMX&nbsp;M4 mle.&nbsp;54"
 
 msgid "name/branch_france_F88_AMX_13_105"
 msgstr "France: AMX&nbsp;13&nbsp;105"
@@ -2084,9 +2093,6 @@ msgstr "Sweden: Strv&nbsp;107-12"
 msgid "name/branch_uk_GB100_Manticore"
 msgstr "U.K.: Manticore"
 
-msgid "name/branch_uk_GB120_Concept_No_5"
-msgstr "U.K.: Concept&nbsp;No.&nbsp;5"
-
 msgid "name/branch_uk_GB142_FV230_Canopener"
 msgstr "U.K.: FV230&nbsp;Canopener"
 
@@ -2095,6 +2101,9 @@ msgstr "U.K.: FV4025&nbsp;Contriver"
 
 msgid "name/branch_uk_GB152_AT_FV230_Breaker"
 msgstr "U.K.: AT-FV230&nbsp;Breaker"
+
+msgid "name/branch_uk_GB158_Executor"
+msgstr "U.K.: Executor"
 
 msgid "name/branch_uk_GB31_Conqueror_Gun"
 msgstr "U.K.: Conqueror Gun Carriage"
@@ -2129,6 +2138,9 @@ msgstr "U.S.A.: XM69&nbsp;Hacker"
 msgid "name/branch_usa_A191_Ares_90_C"
 msgstr "U.S.A.: Ares 90 C"
 
+msgid "name/branch_usa_A195_Gorilla"
+msgstr "U.S.A.: Gorilla"
+
 msgid "name/branch_usa_A38_T92"
 msgstr "U.S.A.: T92&nbsp;HMC"
 
@@ -2137,9 +2149,6 @@ msgstr "U.S.A.: T57 Heavy Tank"
 
 msgid "name/branch_usa_A69_T110E5"
 msgstr "U.S.A.: T110E5"
-
-msgid "name/branch_usa_A83_T110E4"
-msgstr "U.S.A.: T110E4"
 
 msgid "name/branch_usa_A85_T110E3"
 msgstr "U.S.A.: T110E3"
@@ -2334,7 +2343,7 @@ msgid "name/usa_first_steps"
 msgstr "First Steps — U.S.A."
 
 msgid "name/ussr"
-msgstr "USSR"
+msgstr "U.S.S.R."
 
 msgid "name/ussr_early_era"
 msgstr "Early Era — U.S.S.R."

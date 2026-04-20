@@ -1,0 +1,187 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-11 10:00+0300\n"
+"PO-Revision-Date: 2022-01-11 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "attachments_preview/confirm"
+msgstr "Affirmative!"
+
+msgid "attachments_preview/description"
+msgstr "Set of 3D Attachments"
+
+msgid "attachments_preview/rarity/epic"
+msgstr "Epic 3D attachment"
+
+msgid "attachments_preview/rarity/legendary"
+msgstr "Legendary 3D attachment"
+
+msgid "attachments_preview/rarity/rare"
+msgstr "Rare 3D attachment"
+
+msgid "bundle/name"
+msgstr "Mystery Market"
+
+msgid "bundle/name_uppercased"
+msgstr "MYSTERY MARKET"
+
+msgid "confirmation/buttons/cancel"
+msgstr "Cancel"
+
+msgid "confirmation/buttons/purchase"
+msgstr "Purchase"
+
+msgid "confirmation/description"
+msgstr "Confirm to receive bonds and a new cell reward."
+
+msgid "confirmation/purchase"
+msgstr "Purchase for {{price}} ?"
+
+msgid "entryPoint/button"
+msgstr "Go to Event"
+
+msgid "entryPoint/title"
+msgstr "{{eventName}} is here. Check it out!"
+
+msgid "intro/cards/description/c_1"
+msgstr ""
+"When you purchase bonds during the {{eventName}}, you will receive a reward "
+"from one of the unopened cells as a bonus gift. Cells contain valuable in-"
+"game items, including the event's main reward: a Premium vehicle."
+
+msgid "intro/cards/description/c_2"
+msgstr ""
+"Rewards are granted in random order. Each unopened cell has its own "
+"probability of being selected, and all probabilities always total 100%. Once"
+" a cell is opened, it cannot be opened again, and the chances of receiving "
+"the remaining rewards increase."
+
+msgid "intro/cards/description/c_3"
+msgstr ""
+"Each step costs a set amount of gold. Both the number of bonds received and "
+"the step price vary as you progress."
+
+msgid "intro/cards/link"
+msgstr "View the conditions and prices for each step on the portal."
+
+msgid "intro/cards/title/c_1"
+msgstr "Purchasing Bonds"
+
+msgid "intro/cards/title/c_2"
+msgstr "Cells and Probability"
+
+msgid "intro/cards/title/c_3"
+msgstr "Step Prices"
+
+msgid "intro/timer"
+msgstr "{{timer}}"
+
+msgid "intro/title"
+msgstr "YOUR REWARD AWAITS"
+
+msgid "main/alt/description"
+msgstr "View probability"
+
+msgid "main/alt/tooltip/body"
+msgstr "Press the Alt key to see the probability of receiving each cell."
+
+msgid "main/alt/tooltip/header"
+msgstr "Probability display"
+
+msgid "main/cell/probability"
+msgstr "{{num}} %"
+
+msgid "main/completed"
+msgstr ""
+"CONGRATULATIONS! \n"
+" YOU HAVE RECEIVED ALL OF THE REWARDS"
+
+msgid "main/footer/button"
+msgstr "Purchase"
+
+msgid "main/footer/item"
+msgstr "{{count}}"
+
+msgid "main/footer/random"
+msgstr "+{{icon}}Reward from a cell"
+
+msgid "main/footer/receive"
+msgstr "You receive: {{item}}"
+
+msgid "main/header/description"
+msgstr ""
+"Participate in the event from {{startDate}} through {{endDate}} and grab "
+"rewards!"
+
+msgid "main/multi"
+msgstr "x{{count}}"
+
+msgid "notifications/specialReward/multiplier"
+msgstr "x{{count}}"
+
+msgid "notifications/specialReward/showStyle"
+msgstr "Go to Style"
+
+msgid "notifications/specialReward/showVehicle"
+msgstr "Go to Vehicle"
+
+msgid "notifications/specialReward/title"
+msgstr "The Main {{eventName}} Reward Is Yours!"
+
+msgid "serviceChannelMessages/cellRewards"
+msgstr "Additional rewards:"
+
+msgid "serviceChannelMessages/fixedReward"
+msgstr "Received:"
+
+msgid "serviceChannelMessages/openBundleError"
+msgstr ""
+"This operation is temporarily unavailable due to technical reasons. Please "
+"try again later."
+
+msgid "serviceChannelMessages/reminder/button"
+msgstr "To Event"
+
+msgid "serviceChannelMessages/reminder/header"
+msgstr "%(eventName)s will end soon!"
+
+msgid "serviceChannelMessages/reminder/text"
+msgstr "The event is available until: %(date)s."
+
+msgid "serviceChannelMessages/simplePurchase"
+msgstr "%(eventName)s cell opened"
+
+msgid "tooltips/entry/description"
+msgstr ""
+"Your reward awaits! Each purchase of bonds grants you a random reward from "
+"one cell as a gift. You open a new cell each time, as the ones that you have"
+" already opened are eliminated."
+
+msgid "tooltips/entry/timer"
+msgstr "The event will be available for {{timer}}"
+
+msgid "tooltips/header/info"
+msgstr "About event"
+
+msgid "tooltips/steps/description"
+msgstr ""
+"For each purchase, you get more {{currency}}. The amount you receive "
+"increases at certain purchase steps."
+
+msgid "tooltips/steps/header"
+msgstr "{{currency}} for Each Purchase"
+
+msgid "tooltips/steps/singleStep"
+msgstr "{{step}}"
+
+msgid "tooltips/steps/steps"
+msgstr "Steps:"
+
+msgid "tooltips/steps/template"
+msgstr "{{start}} — {{end}}"

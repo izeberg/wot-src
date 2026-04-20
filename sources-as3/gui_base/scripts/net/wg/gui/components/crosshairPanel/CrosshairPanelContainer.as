@@ -154,7 +154,7 @@ package net.wg.gui.components.crosshairPanel
       
       private var _isAutoloaderCritical:Boolean = false;
       
-      private var _isOverheat:Boolean = false;
+      private var _isAlternateZoomPosition:Boolean = false;
       
       private var _ammoClipState:String = "";
       
@@ -237,12 +237,12 @@ package net.wg.gui.components.crosshairPanel
          }
       }
       
-      public function as_setOverheatVisible(param1:Boolean) : void
+      public function as_setAlternateZoomPosition(param1:Boolean) : void
       {
-         this._isOverheat = param1;
+         this._isAlternateZoomPosition = param1;
          if(this._currentCrosshair)
          {
-            this._currentCrosshair.overheatIndicatorVisible = this._isOverheat;
+            this._currentCrosshair.isUseAlternateZoomPosition = this._isAlternateZoomPosition;
          }
       }
       
@@ -876,6 +876,22 @@ package net.wg.gui.components.crosshairPanel
          }
       }
       
+      public function as_setLowChargeInitialTime(param1:Number, param2:Number, param3:Number, param4:Number) : void
+      {
+         if(this._gunMarkersContainer != null)
+         {
+            this._gunMarkersContainer.setLowChargeInitialTime(param1,param2,param3,param4);
+         }
+      }
+      
+      public function as_setLowChargeTimeLeft(param1:Number, param2:Number, param3:Boolean) : void
+      {
+         if(this._gunMarkersContainer != null)
+         {
+            this._gunMarkersContainer.setLowChargeTimeLeft(param1,param2,param3);
+         }
+      }
+      
       public function as_setView(param1:int, param2:int) : void
       {
          var _loc3_:BoostIndicatorStateParamsVO = null;
@@ -901,9 +917,6 @@ package net.wg.gui.components.crosshairPanel
             this._currentCrosshair.setSize(this._width,this._height);
             this._currentCrosshair.setVisibleNet(this._visibleNet);
             this._currentCrosshair.setNetSeparatorVisible(this._visibleNetSeparator);
-            this._currentCrosshair.reloadBoost = this._isReloadBoost;
-            this._currentCrosshair.setReloadBoostBorderVisible(this._isReloadBoostBorder,this._isReloadBoostBorderActive,true);
-            this._currentCrosshair.overheatIndicatorVisible = this._isOverheat;
             if(_loc3_)
             {
                this._currentCrosshair.autoloaderBoostUpdate(_loc3_,0,true);
@@ -1181,7 +1194,7 @@ package net.wg.gui.components.crosshairPanel
       {
          if(this._currentCrosshair != null)
          {
-            this._currentCrosshair.setInfo(this._healthInPercents,this._zoomStr,this._currReloadingState,this._isReloadingTimeFieldShown,this._isDistanceShown,this._distanceStr,this._playerInfoStr,this._clipCapacity,this._burst,this._clipReloadingType,this._ammoState,this._ammoQuantity,this._ammoQuantityInClip,this._ammoClipState,this._averageDamageStr,this._ammoClipReloaded,this._isInControllableReload,this._isReloadBoost,this._isReloadBoostBorder,this._isReloadBoostBorderActive,this._isOverheat);
+            this._currentCrosshair.setInfo(this._healthInPercents,this._zoomStr,this._currReloadingState,this._isReloadingTimeFieldShown,this._isDistanceShown,this._distanceStr,this._playerInfoStr,this._clipCapacity,this._burst,this._clipReloadingType,this._ammoState,this._ammoQuantity,this._ammoQuantityInClip,this._ammoClipState,this._averageDamageStr,this._ammoClipReloaded,this._isInControllableReload,this._isReloadBoost,this._isReloadBoostBorder,this._isReloadBoostBorderActive,this._isAlternateZoomPosition);
             this._currentCrosshair.setQuickReloadingTime(this._isQuickReloadingActive,this._quickReloadingTime);
             if(this._speedometer != null)
             {
@@ -1274,14 +1287,7 @@ package net.wg.gui.components.crosshairPanel
             this._currentCrosshair.setReloadingAsPercent(this._currReloadingPercent);
             this._currentCrosshair.setReloadingState(this._currReloadingState);
          }
-         if(!this._isShotAvailable)
-         {
-            this._gunMarkersContainer.updateReloadingParams(this._currReloadingPercent,this._currReloadingState);
-         }
-         else
-         {
-            this._gunMarkersContainer.updateReloadingParams(1,CrosshairConsts.RELOADING_ENDED);
-         }
+         this._gunMarkersContainer.updateReloadingParams(this._currReloadingPercent,this._currReloadingState);
       }
       
       private function clearReloadingTimer() : void

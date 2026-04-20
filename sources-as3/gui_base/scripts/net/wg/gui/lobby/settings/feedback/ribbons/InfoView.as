@@ -51,7 +51,7 @@ package net.wg.gui.lobby.settings.feedback.ribbons
       private function onIconCompleteHandler(param1:Event) : void
       {
          var _loc2_:int = this.icon.height + ALERT_ICON_PADDING_Y + this.message.textHeight >> 1;
-         this.icon.y = this.hintArea.height / 2 - _loc2_ | 0;
+         this.icon.y = (this.hintArea.height >> 1) - _loc2_;
          this.message.y = this.icon.y + this.icon.height + ALERT_ICON_PADDING_Y;
          this.messageBG.y = this.message.y - (this.messageBG.height - this.message.height >> 1);
       }

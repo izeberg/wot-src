@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB151_Headshaker/crash/lod2/Chassis</nodefullVisual>
+	<parent>vehicles/british/GB151_Headshaker/crash/lod3/Chassis</parent>
+	<extent>96.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.594837 0.001551 -3.948351</min>
+		<max>1.565806 1.121359 3.418115</max>
+	</visibilityBox>
+</root>

@@ -87,6 +87,8 @@ package
       
       public static const PLAYER_ERRORS_CANT_SHOOT_GUN_OVERHEATED:String = "#ingame_gui:player_errors/cant_shoot/gun_overheated";
       
+      public static const PLAYER_ERRORS_CANT_SHOOT_LOW_CHARGE_SHOT_BLOCKING:String = "#ingame_gui:player_errors/cant_shoot/low_charge_shot_blocking";
+      
       public static const PLAYER_ERRORS_CANT_SWITCH_ENGINE_DESTROYED:String = "#ingame_gui:player_errors/cant_switch/engine_destroyed";
       
       public static const PLAYER_ERRORS_CANT_SWITCH_GUN_DESTROYED:String = "#ingame_gui:player_errors/cant_switch/gun_destroyed";
@@ -491,6 +493,8 @@ package
       
       public static const SHELLS_KINDS_ARMOR_PIERCING_CR:String = "#ingame_gui:shells_kinds/ARMOR_PIERCING_CR";
       
+      public static const SHELLS_KINDS_PARAMS_HEADER:String = "#ingame_gui:shells_kinds/params/header";
+      
       public static const SHELLS_KINDS_PARAMS_DAMAGE:String = "#ingame_gui:shells_kinds/params/damage";
       
       public static const SHELLS_KINDS_PARAMS_DAMAGEPERSECOND:String = "#ingame_gui:shells_kinds/params/damagePerSecond";
@@ -866,6 +870,8 @@ package
       public static const PLAYER_MESSAGES_DEATH_FROM_SHOT_ENEMY_ALLY_POI:String = "#ingame_gui:player_messages/DEATH_FROM_SHOT_ENEMY_ALLY_POI";
       
       public static const PLAYER_MESSAGES_DEATH_FROM_SHOT_ENEMY_ALLY_COMP7:String = "#ingame_gui:player_messages/DEATH_FROM_SHOT_ENEMY_ALLY_COMP7";
+      
+      public static const PLAYER_MESSAGES_DEATH_FROM_SHOT_UNKNOWN_ALLY:String = "#ingame_gui:player_messages/DEATH_FROM_SHOT_UNKNOWN_ALLY";
       
       public static const PLAYER_MESSAGES_DEATH_FROM_ARTILLERY_ENEMY_SUICIDE:String = "#ingame_gui:player_messages/DEATH_FROM_ARTILLERY_ENEMY_SUICIDE";
       
@@ -1478,6 +1484,8 @@ package
       public static const SIEGEMODE_HINT_TWINGUN:String = "#ingame_gui:siegeMode/hint/twinGun";
       
       public static const SIEGEMODE_HINT_STAGEDJETBOOSTERS:String = "#ingame_gui:siegeMode/hint/stagedJetBoosters";
+      
+      public static const SIEGEMODE_HINT_WHEELEDDASH:String = "#ingame_gui:siegeMode/hint/wheeledDash";
       
       public static const EFFICIENCYRIBBONS_ENEMYSECTORCAPTURED:String = "#ingame_gui:efficiencyRibbons/enemySectorCaptured";
       
@@ -2128,6 +2136,10 @@ package
       public static const GRILLE_STATUS_SPEEDLIMIT:String = "#ingame_gui:grille/status/speedlimit";
       
       public static const GRILLE_STATUS_RELOAD:String = "#ingame_gui:grille/status/reload";
+      
+      public static const BATTLEMESSENGER_W2GT_WARNING_NODATA:String = "#ingame_gui:battleMessenger/w2gt/warning/noData";
+      
+      public static const BATTLEMESSENGER_W2GT_WARNING_GETTINGDATAERROR:String = "#ingame_gui:battleMessenger/w2gt/warning/gettingDataError";
        
       
       public function INGAME_GUI()

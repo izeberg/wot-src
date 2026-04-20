@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from functools import partial
 import BigWorld, Event
 from debug_utils import LOG_NOTE, LOG_CURRENT_EXCEPTION, LOG_ERROR
@@ -46,8 +47,7 @@ class MemoryCriticalController(object):
         while textureSettings[textureMinQuality][1] is False or isLowPreset and textureSettings[textureMinQuality][2] is True:
             textureMinQuality -= 1
 
-        if textureMinQuality < texQuality:
-            textureMinQuality = texQuality
+        textureMinQuality = max(textureMinQuality, texQuality)
         if texQuality >= textureMinQuality:
             message = (1, 'insufficient_memory_please_reboot')
             self.__messages.append(message)

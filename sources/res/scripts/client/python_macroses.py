@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import ResMgr
 from debug_utils import LOG_ERROR
 _MACROSES_XML = 'scripts/python_macroses.xml'

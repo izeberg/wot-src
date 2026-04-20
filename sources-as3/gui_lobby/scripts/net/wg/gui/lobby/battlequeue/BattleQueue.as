@@ -22,8 +22,6 @@ package net.wg.gui.lobby.battlequeue
    public class BattleQueue extends BattleQueueMeta implements IBattleQueueMeta, IInnerView
    {
       
-      private static const MAX_POS_Y:int = 80;
-      
       private static const INV_TYPE_INFO:String = "InvTypeInfo";
       
       private static const TNK_ICON_OFFSET:int = 16;
@@ -293,7 +291,7 @@ package net.wg.gui.lobby.battlequeue
       public function updateStageWithPadding(param1:Number, param2:Number, param3:Rectangle) : void
       {
          x = param1 - actualWidth >> 1;
-         y = Math.max(Math.min(-parent.y + (param2 - actualHeight >> 1) ^ 0,MAX_POS_Y),-MAX_POS_Y);
+         y = -parent.y + (param2 - actualHeight >> 1) ^ 0;
       }
       
       private function onExitButtonClickHandler(param1:ButtonEvent) : void

@@ -26,7 +26,7 @@ package net.wg.gui.prebattle.meta.impl
       
       public var isPlayerCreator:Function;
       
-      public var isReadyBtnEnabled:Function;
+      public var updateReadyBtnState:Function;
       
       public var isLeaveBtnEnabled:Function;
       
@@ -90,10 +90,10 @@ package net.wg.gui.prebattle.meta.impl
          return this.isPlayerCreator();
       }
       
-      public function isReadyBtnEnabledS() : Boolean
+      public function updateReadyBtnStateS() : void
       {
-         App.utils.asserter.assertNotNull(this.isReadyBtnEnabled,"isReadyBtnEnabled" + Errors.CANT_NULL);
-         return this.isReadyBtnEnabled();
+         App.utils.asserter.assertNotNull(this.updateReadyBtnState,"updateReadyBtnState" + Errors.CANT_NULL);
+         this.updateReadyBtnState();
       }
       
       public function isLeaveBtnEnabledS() : Boolean

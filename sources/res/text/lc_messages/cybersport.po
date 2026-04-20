@@ -487,6 +487,9 @@ msgstr "Vehicle not ready for battle: crew incomplete."
 msgid "window/unit/message/vehicleInNotReady/isInBattle"
 msgstr "Vehicle in battle"
 
+msgid "window/unit/message/vehicleInNotReady/notEnoughVehicles"
+msgstr "Not enough suitable vehicles"
+
 msgid "window/unit/message/vehicleInNotReady/rentIsOver"
 msgstr "Vehicle not ready for battle: rental period ended."
 

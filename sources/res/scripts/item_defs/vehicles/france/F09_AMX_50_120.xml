@@ -5630,7 +5630,7 @@
 						<gun>35</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.36
+						0.35
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>35</reloadTime>
@@ -5639,7 +5639,7 @@
 							0.1
 							<!--BW_String-->
 						</turretRotation>
-						<afterShot>4</afterShot>
+						<afterShot>3</afterShot>
 						<whileGunDamaged>
 							2.0
 							<!--BW_String-->
@@ -6368,7 +6368,10 @@
 							0.12
 							<!--BW_String-->
 						</turretRotation>
-						<afterShot>4</afterShot>
+						<afterShot>
+							3.5
+							<!--BW_String-->
+						</afterShot>
 						<whileGunDamaged>
 							2.0
 							<!--BW_String-->
@@ -6393,7 +6396,7 @@
 						</maxPitch>
 					</pitchLimits>
 					<aimingTime>
-						2.7
+						2.5
 						<!--BW_String-->
 					</aimingTime>
 					<models>

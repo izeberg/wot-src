@@ -1628,7 +1628,8 @@ SYS_MESSAGE_TYPE = Enumeration('systemMessageType', [
  'wotPlusProBoostSwitch',
  'wotPlusCoreUnlocked',
  'wotPlusProUnlocked',
- 'wotPlusUpgrade'])
+ 'wotPlusUpgrade',
+ 'piggyBankCreditsFull'])
 SYS_MESSAGE_IMPORTANCE = Enumeration('systemMessageImportance', [
  'normal',
  'high'])

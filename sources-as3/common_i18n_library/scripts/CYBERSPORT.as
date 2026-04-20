@@ -177,6 +177,8 @@ package
       
       public static const WINDOW_UNIT_MESSAGE_VEHICLEINNOTREADY_ISINBATTLE:String = "#cyberSport:window/unit/message/vehicleInNotReady/isInBattle";
       
+      public static const WINDOW_UNIT_MESSAGE_VEHICLEINNOTREADY_NOTENOUGHVEHICLES:String = "#cyberSport:window/unit/message/vehicleInNotReady/notEnoughVehicles";
+      
       public static const WINDOW_UNIT_MESSAGE_VEHICLEINNOTREADY_WRONGMODE:String = "#cyberSport:window/unit/message/vehicleInNotReady/wrongMode";
       
       public static const WINDOW_UNIT_MESSAGE_VEHICLENOTVALIDFOREVENT:String = "#cyberSport:window/unit/message/vehicleNotValidForEvent";

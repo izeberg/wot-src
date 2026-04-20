@@ -1,6 +1,9 @@
-import operator, random, time, threading, urllib2
-from urllib import urlencode
+from __future__ import absolute_import
+import operator, random, time, threading
 from collections import namedtuple
+from future.moves.urllib import parse
+from future.moves.urllib import request
+from future.utils import viewitems
 import BigWorld, ResMgr, constants
 from Event import Event, EventManager
 from helpers.time_utils import ONE_MINUTE
@@ -117,9 +120,9 @@ class _CSISRequestWorker(threading.Thread):
                 try:
                     url = self._makeUrl()
                     LOG_DEBUG('CSIS url', url)
-                    req = urllib2.Request(url=url)
-                    urllib2.build_opener(urllib2.HTTPHandler())
-                    info = urllib2.urlopen(req, timeout=CSIS_REQUEST_TIMEOUT)
+                    req = request.Request(url=url)
+                    request.build_opener(request.HTTPHandler())
+                    info = request.urlopen(req, timeout=CSIS_REQUEST_TIMEOUT)
                     if info.code == 200 and info.headers.type == 'text/xml':
                         response = _CSISResponseParser(info.read(), self.__params)
                 except IOError:
@@ -142,7 +145,7 @@ class _CSISRequestWorker(threading.Thread):
     def _makeUrl(self):
         url = self.__url
         if self.__params:
-            data = urlencode([ ('periphery', param) for param in self.__params ])
+            data = parse.urlencode([ ('periphery', param) for param in self.__params ])
             url = ('{0:>s}?{1:>s}').format(self.__url, data)
         return url
 
@@ -172,7 +175,7 @@ class _LoginAppUrlIterator(list):
     def resume(self):
         self.__lock = False
 
-    def next(self):
+    def nextUrl(self):
         value = self[self.cursor]
         if not self.__lock:
             self.cursor += 1
@@ -199,7 +202,7 @@ def getHostURL(item, token2=None, useIterator=False):
         if useIterator and urls is not None:
             if urls.end():
                 urls.cursor = 0
-            url = urls.next()
+            url = urls.nextUrl()
             LOG_DEBUG('Gets next LoginApp url:', url)
     return result
 
@@ -264,7 +267,7 @@ class _PingRequester(object):
 
     def __updatePing(self, pingData, state=None):
         self.__lastUpdateTime = time.time()
-        for rKey, pData in self.__pingResult.iteritems():
+        for rKey, pData in viewitems(self.__pingResult):
             self.__pingResult[rKey] = PingData(pData.value, PING_STATUSES.UNDEFINED)
 
         try:

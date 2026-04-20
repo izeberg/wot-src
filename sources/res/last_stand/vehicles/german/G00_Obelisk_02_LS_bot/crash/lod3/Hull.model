@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-5.289591 -0.300000 -6.355610</min>
+		<max>4.665929 0.500000 5.664760</max>
+	</visibilityBox>
+	<parent>last_stand/vehicles/german/G00_Obelisk_02_LS_bot/crash/lod4/Hull</parent>
+	<extent>192.000000</extent>
+	<nodefullVisual>last_stand/vehicles/german/G00_Obelisk_02_LS_bot/crash/lod3/Hull</nodefullVisual>
+</root>

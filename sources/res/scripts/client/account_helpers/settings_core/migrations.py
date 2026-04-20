@@ -391,7 +391,8 @@ def _migrateTo38(core, data, initialized):
 
 
 def _migrateTo39(core, data, initialized):
-    data['gameExtData2'][GAME.CUSTOMIZATION_DISPLAY_TYPE] = 0
+    from account_helpers.settings_core.ServerSettingsManager import GAME_EXTENDED_2
+    data[GAME_EXTENDED_2][GAME.CUSTOMIZATION_DISPLAY_TYPE] = 0
 
 
 def _migrateTo40(core, data, initialized):
@@ -578,7 +579,8 @@ def _migrateTo69(core, data, initialized):
 
 
 def _migrateTo70(core, data, initialized):
-    gameData = data['gameExtData2']
+    from account_helpers.settings_core.ServerSettingsManager import GAME_EXTENDED_2
+    gameData = data[GAME_EXTENDED_2]
     gameData[GAME.SHOW_ARTY_HIT_ON_MAP] = True
     spgAim = data['spgAim']
     spgAim[SPGAim.SHOTS_RESULT_INDICATOR] = True
@@ -618,17 +620,17 @@ def _migrateTo73(core, data, initialized):
 
 
 def _migrateTo74(core, data, initialized):
-    from account_helpers.settings_core.ServerSettingsManager import SETTINGS_SECTIONS
+    from account_helpers.settings_core.ServerSettingsManager import GAME_EXTENDED_2, SETTINGS_SECTIONS
     storedValue = _getSettingsCache().getSectionSettings(SETTINGS_SECTIONS.GAME_EXTENDED, 0)
     maskOffset = 131072
     valueToSave = (storedValue & maskOffset) >> 17
-    if data['gameExtData2'].get(GAME.CUSTOMIZATION_DISPLAY_TYPE, None) is None:
+    if data[GAME_EXTENDED_2].get(GAME.CUSTOMIZATION_DISPLAY_TYPE, None) is None:
         if valueToSave:
             clear = data['clear']
             clear[SETTINGS_SECTIONS.GAME_EXTENDED] = clear.get(SETTINGS_SECTIONS.GAME_EXTENDED, 0) | maskOffset
-            data['gameExtData2'][GAME.CUSTOMIZATION_DISPLAY_TYPE] = 0
+            data[GAME_EXTENDED_2][GAME.CUSTOMIZATION_DISPLAY_TYPE] = 0
         else:
-            data['gameExtData2'][GAME.CUSTOMIZATION_DISPLAY_TYPE] = 1
+            data[GAME_EXTENDED_2][GAME.CUSTOMIZATION_DISPLAY_TYPE] = 1
     return
 
 
@@ -637,12 +639,12 @@ def _migrateTo75(core, data, initialized):
 
 
 def _migrateTo76(core, data, initialized):
-    from account_helpers.settings_core.ServerSettingsManager import SETTINGS_SECTIONS
+    from account_helpers.settings_core.ServerSettingsManager import GAME_EXTENDED_2, SETTINGS_SECTIONS
     storedValue = _getSettingsCache().getSectionSettings(SETTINGS_SECTIONS.GAME_EXTENDED_2, 0)
     maskOffset = 12
     valueToCheck = (storedValue & maskOffset) >> 2
-    if valueToCheck == 1 or data['gameExtData2'].get(GAME.CUSTOMIZATION_DISPLAY_TYPE) == 1:
-        data['gameExtData2'][GAME.CUSTOMIZATION_DISPLAY_TYPE] = 2
+    if valueToCheck == 1 or data[GAME_EXTENDED_2].get(GAME.CUSTOMIZATION_DISPLAY_TYPE) == 1:
+        data[GAME_EXTENDED_2][GAME.CUSTOMIZATION_DISPLAY_TYPE] = 2
 
 
 def _migrateTo77(core, data, initialized):
@@ -755,7 +757,8 @@ def _migrateTo86(core, data, initialized):
 
 
 def _migrateTo87(core, data, initialized):
-    gameData = data['gameExtData2']
+    from account_helpers.settings_core.ServerSettingsManager import GAME_EXTENDED_2
+    gameData = data[GAME_EXTENDED_2]
     gameData[GAME.SCROLL_SMOOTHING] = True
 
 
@@ -981,7 +984,8 @@ def _migrateTo108(core, data, initialized):
 
 
 def _migrateTo109(core, data, initialized):
-    data['gameExtData2'][GAME.GAMEPLAY_DEV_MAPS] = True
+    from account_helpers.settings_core.ServerSettingsManager import GAME_EXTENDED_2
+    data[GAME_EXTENDED_2][GAME.GAMEPLAY_DEV_MAPS] = True
 
 
 def _migrateTo110(core, data, initialized):
@@ -1013,6 +1017,7 @@ def _migrateTo115(core, data, initialized):
 
 
 def _migrateTo116(core, data, initialized):
+    from account_helpers.settings_core.ServerSettingsManager import GAME_EXTENDED_2
     if initialized:
         newbiesConfigs = {'gameData': {GAME.REPLAY_ENABLED: 1, 
                         GAME.SNIPER_MODE_STABILIZATION: True, 
@@ -1027,7 +1032,7 @@ def _migrateTo116(core, data, initialized):
                            GAME.MINIMAP_VIEW_RANGE: True, 
                            GAME.MINIMAP_MAX_VIEW_RANGE: False, 
                            GAME.MINIMAP_DRAW_RANGE: True}, 
-           'gameExtData2': {GAME.CUSTOMIZATION_DISPLAY_TYPE: 2}, 
+           GAME_EXTENDED_2: {GAME.CUSTOMIZATION_DISPLAY_TYPE: 2}, 
            'dogTags': {GAME.SHOW_VICTIMS_DOGTAG: False, 
                        GAME.SHOW_DOGTAG_TO_KILLER: False, 
                        GAME.SHOW_KILLERS_DOGTAG: False}, 
@@ -1194,27 +1199,28 @@ def _migrateTo119(core, data, initialized):
 
 
 def _migrateTo120(core, data, initialized):
-    itemsCache = dependency.instance(IItemsCache)
-    lobbyContext = dependency.instance(ILobbyContext)
     import gui.prebattle_hints.newbie_controller
     from gui.battle_hints.newbie_battle_hints_controller import NEWBIE_SETTINGS_MAX_BATTLES as BH_NEWBIE_MAX_BATTLES
+    from account_helpers.settings_core.ServerSettingsManager import GAME_EXTENDED_2
+    itemsCache = dependency.instance(IItemsCache)
+    lobbyContext = dependency.instance(ILobbyContext)
     disabled = itemsCache.items.stats.attributes & constants.ACCOUNT_ATTR.NEWBIE_FEATURES_DISABLED
     battlesCount = itemsCache.items.getAccountDossier().getTotalStats().getBattlesCount()
-    data['gameExtData2'][GAME.NEWBIE_PREBATTLE_HINTS] = not disabled and battlesCount <= gui.prebattle_hints.newbie_controller.IS_NEWBIE_MAX_BATTLES
-    data['gameExtData2'][GAME.NEWBIE_BATTLE_HINTS] = not disabled and battlesCount <= BH_NEWBIE_MAX_BATTLES
+    data[GAME_EXTENDED_2][GAME.NEWBIE_PREBATTLE_HINTS] = not disabled and battlesCount <= gui.prebattle_hints.newbie_controller.IS_NEWBIE_MAX_BATTLES
+    data[GAME_EXTENDED_2][GAME.NEWBIE_BATTLE_HINTS] = not disabled and battlesCount <= BH_NEWBIE_MAX_BATTLES
     newbieGroup = itemsCache.items.stats.getABGroup(feature='newbieHints')
     abConfig = lobbyContext.getServerSettings().abFeatureTestConfig
     if not disabled and newbieGroup and hasattr(abConfig, 'newbieHints'):
         properties = abConfig.newbieHints.get(newbieGroup)['properties']
         for param in [GAME.NEWBIE_PREBATTLE_HINTS, GAME.NEWBIE_BATTLE_HINTS]:
             if param in properties:
-                data['gameExtData2'][param] = properties[param]
+                data[GAME_EXTENDED_2][param] = properties[param]
 
 
 def _migrateTo121(core, data, initialized):
-    from account_helpers.settings_core.ServerSettingsManager import SETTINGS_SECTIONS
+    from account_helpers.settings_core.ServerSettingsManager import GAME_EXTENDED_2, SETTINGS_SECTIONS
     gameData = data['gameData']
-    gameExtData2 = data['gameExtData2']
+    gameExtData2 = data[GAME_EXTENDED_2]
     currentVal = _getSettingsCache().getSectionSettings(SETTINGS_SECTIONS.GAME, 0)
     gameExtData2[GAME.ENABLE_SERVER_AIM] = __migrateMaskValue(currentVal, 1, 8)
     if GAME.ENABLE_SERVER_AIM in gameData:
@@ -1398,14 +1404,14 @@ def _migrateTo146(core, data, initialized):
 
 
 def _migrateTo147(core, data, initialized):
-    from account_helpers.settings_core.ServerSettingsManager import SETTINGS_SECTIONS
+    from account_helpers.settings_core.ServerSettingsManager import GAME_EXTENDED_2, SETTINGS_SECTIONS
     from account_helpers.AccountSettings import AccountSettings
     default = AccountSettings.getSettingsDefault(GAME.GAMEPLAY_MASK)
     storedValue = _getSettingsCache().getSectionSettings(SETTINGS_SECTIONS.GAMEPLAY, default)
     import ArenaType
     newMask = storedValue & ~ArenaType.getGameplaysMask(('ctf30x30', 'domination30x30'))
     data['gameplayData'][GAME.GAMEPLAY_MASK] = newMask & 65535
-    data['gameExtData2'][GAME.GAMEPLAY_DEV_MAPS] = True
+    data[GAME_EXTENDED_2][GAME.GAMEPLAY_DEV_MAPS] = True
 
 
 def _migrateTo148(core, data, initialized):
@@ -1489,6 +1495,12 @@ def _migrateTo154(core, data, initialized):
     intersection = storedValue & offsets
     if intersection:
         clear[GUI_START_BEHAVIOR] = clear.get(GUI_START_BEHAVIOR, 0) | intersection
+
+
+def _migrateTo155(core, data, initialized):
+    from account_helpers.settings_core.ServerSettingsManager import GAME_EXTENDED_2, GUI_START_BEHAVIOR
+    data[GUI_START_BEHAVIOR][GuiSettingsBehavior.W2GT_APPLIED] = False
+    data[GAME_EXTENDED_2][GAME.W2GT_ENABLE] = False
 
 
 _versions = (
@@ -1797,7 +1809,9 @@ _versions = (
  (
   153, _migrateTo153, False, False),
  (
-  154, _migrateTo154, False, False))
+  154, _migrateTo154, False, False),
+ (
+  155, _migrateTo155, False, False))
 
 @adisp_async
 @adisp_process

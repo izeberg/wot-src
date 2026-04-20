@@ -13,6 +13,7 @@ package net.wg.gui.battle.views.minimap
    import net.wg.gui.battle.views.minimap.constants.MinimapSizeConst;
    import net.wg.gui.battle.views.minimap.containers.MinimapEntriesContainer;
    import net.wg.gui.battle.views.minimap.events.MinimapEvent;
+   import net.wg.gui.battle.views.minimap.interfaces.IHoverableEntity;
    import net.wg.gui.components.controls.UILoaderAlt;
    import net.wg.infrastructure.events.LifeCycleEvent;
    import scaleform.gfx.MouseEventEx;
@@ -67,6 +68,14 @@ package net.wg.gui.battle.views.minimap
       
       private var _bIsHintPanelEnabled:Boolean = false;
       
+      private var _containers:Vector.<Sprite> = null;
+      
+      private var _hoverableEntities:Vector.<IHoverableEntity> = null;
+      
+      private var _hoverableActive:Boolean = false;
+      
+      private var _hoveredEntity:IHoverableEntity = null;
+      
       public function Minimap()
       {
          this._clickAreaSpr = new Sprite();
@@ -81,6 +90,8 @@ package net.wg.gui.battle.views.minimap
          this.foreground5.imageName = BATTLEATLAS.MINIMAP_B6;
          this._currForeground = this.foreground0;
          this.entriesContainer.mask = this.entriesContainerMask;
+         this._containers = new <Sprite>[this.entriesContainer.points,this.entriesContainer.icons,this.entriesContainer.equipments,this.entriesContainer.flags];
+         this._hoverableEntities = new Vector.<IHoverableEntity>();
          this._clickAreaSpr.name = NAME_CLICK_AREA;
          addChildAt(this._clickAreaSpr,getChildIndex(this.mapHit));
          this.mapHit.visible = false;
@@ -239,6 +250,11 @@ package net.wg.gui.battle.views.minimap
       
       override protected function onDispose() : void
       {
+         this.clearHoverableEntities();
+         this._hoverableEntities = null;
+         this._hoveredEntity = null;
+         this._containers.length = 0;
+         this._containers = null;
          this.foreground0 = null;
          this.foreground1 = null;
          this.foreground2 = null;
@@ -369,9 +385,15 @@ package net.wg.gui.battle.views.minimap
       
       private function onMouseClickHandler(param1:MouseEvent) : void
       {
+         var _loc2_:Point = null;
          if(param1 is MouseEventEx && param1.target == this._clickAreaSpr)
          {
             onMinimapClickedS(this.mapHit.mouseX,this.mapHit.mouseY,MouseEventEx(param1).buttonIdx,this._currentSizeIndex);
+         }
+         if(this._hoveredEntity != null)
+         {
+            _loc2_ = this.mapHit.localToGlobal(new Point(this.mapHit.mouseX,this.mapHit.mouseY));
+            this._hoveredEntity.onClick(this._hoveredEntity.globalToLocal(_loc2_));
          }
       }
       
@@ -381,6 +403,9 @@ package net.wg.gui.battle.views.minimap
          {
             this.minimapHint.gotoAndPlay(ANIM_FADE_OUT);
          }
+         this.invalidateHoverableEntities();
+         this._hoverableActive = this._hoverableEntities.length > 0;
+         this._clickAreaSpr.addEventListener(MouseEvent.MOUSE_MOVE,this.onMouseMoveHandler);
       }
       
       private function onMouseOutHandler(param1:MouseEvent) : void
@@ -389,6 +414,99 @@ package net.wg.gui.battle.views.minimap
          {
             this.minimapHint.gotoAndPlay(ANIM_FADE_IN);
          }
+         this._hoverableActive = false;
+         this._clickAreaSpr.removeEventListener(MouseEvent.MOUSE_MOVE,this.onMouseMoveHandler);
+         this.quitHover(new Point(0,0));
+      }
+      
+      private function onMouseMoveHandler(param1:MouseEvent) : void
+      {
+         var _loc4_:IHoverableEntity = null;
+         if(this._hoverableActive == false)
+         {
+            return;
+         }
+         var _loc2_:Point = this.mapHit.localToGlobal(new Point(this.mapHit.mouseX,this.mapHit.mouseY));
+         _loc2_.x = _loc2_.x / App.appScale >> 0;
+         _loc2_.y = _loc2_.y / App.appScale >> 0;
+         var _loc3_:Boolean = false;
+         for each(_loc4_ in this._hoverableEntities)
+         {
+            if(_loc4_.hitTestTarget.hitTestPoint(_loc2_.x,_loc2_.y,true))
+            {
+               if(this._hoveredEntity != _loc4_)
+               {
+                  if(this._hoveredEntity != null)
+                  {
+                     this._hoveredEntity.onRollOut(this._hoveredEntity.globalToLocal(_loc2_));
+                  }
+                  _loc4_.onRollOver(_loc4_.globalToLocal(_loc2_));
+                  this._hoveredEntity = _loc4_;
+               }
+               _loc3_ = true;
+               continue;
+               _loc3_ = true;
+               break;
+            }
+         }
+         if(!_loc3_ && this._hoveredEntity)
+         {
+            this.quitHover(this._hoveredEntity.globalToLocal(_loc2_));
+         }
+      }
+      
+      private function quitHover(param1:Point) : void
+      {
+         if(this._hoveredEntity && !this._hoveredEntity.isDisposed())
+         {
+            this._hoveredEntity.onRollOut(param1);
+            this._hoveredEntity = null;
+         }
+      }
+      
+      private function invalidateHoverableEntities() : void
+      {
+         var _loc3_:Sprite = null;
+         var _loc4_:int = 0;
+         this.clearHoverableEntities();
+         var _loc1_:IHoverableEntity = null;
+         var _loc2_:int = Values.ZERO;
+         for each(_loc3_ in this._containers)
+         {
+            _loc2_ = _loc3_.numChildren;
+            _loc4_ = 0;
+            while(_loc4_ < _loc2_)
+            {
+               _loc1_ = _loc3_.getChildAt(_loc4_) as IHoverableEntity;
+               if(_loc1_)
+               {
+                  _loc1_.addEventListener(LifeCycleEvent.ON_DISPOSE,this.onEntityDisposeHandler);
+                  this._hoverableEntities.push(_loc1_);
+               }
+               _loc4_++;
+            }
+         }
+      }
+      
+      private function onEntityDisposeHandler(param1:LifeCycleEvent) : void
+      {
+         var _loc2_:IHoverableEntity = param1.currentTarget as IHoverableEntity;
+         var _loc3_:int = this._hoverableEntities.indexOf(_loc2_);
+         if(_loc3_ > -1)
+         {
+            _loc2_.removeEventListener(LifeCycleEvent.ON_DISPOSE,this.onEntityDisposeHandler);
+            this._hoverableEntities.splice(_loc3_,1);
+         }
+      }
+      
+      private function clearHoverableEntities() : void
+      {
+         var _loc1_:IHoverableEntity = null;
+         for each(_loc1_ in this._hoverableEntities)
+         {
+            _loc1_.removeEventListener(LifeCycleEvent.ON_DISPOSE,this.onEntityDisposeHandler);
+         }
+         this._hoverableEntities.length = 0;
       }
    }
 }

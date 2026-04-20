@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.ClientHangarSpace import hangarCFG
 from skeletons.gui.turret_gun_angles import ITurretAndGunAngles
 

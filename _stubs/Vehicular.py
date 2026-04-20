@@ -1318,25 +1318,6 @@ class TankWheelsAnimator(PyComponentWrapperBase):
 	def wheelIsFlying(self, *args, **kwargs): pass
 
 
-class TemperatureChangedEvent(IEvent):
-	def __delattr__(*args, **kwargs): pass
-	__doc__ = None
-	def __format__(*args, **kwargs): pass
-	def __getattribute__(*args, **kwargs): pass
-	def __hash__(*args, **kwargs): pass
-	def __init__(self, *args, **kwargs): pass
-	__module__ = 'Vehicular'
-	def __new__(*args, **kwargs): pass
-	__qualname__ = 'TemperatureChangedEvent'
-	def __reduce__(*args, **kwargs): pass
-	def __reduce_ex__(*args, **kwargs): pass
-	def __repr__(*args, **kwargs): pass
-	def __setattr__(*args, **kwargs): pass
-	def __sizeof__(*args, **kwargs): pass
-	def __str__(*args, **kwargs): pass
-	def __subclasshook__(*args, **kwargs): pass
-
-
 class TerrainMatKindSensor(PyComponentWrapperBase):
 	def __cmp__(self, *args, **kwargs): pass
 	def __delattr__(*args, **kwargs): pass
@@ -1423,6 +1404,25 @@ class TrackNodesAnimator(PyComponentWrapperBase):
 	def setParameters(self, *args, **kwargs): pass
 	def setWheelsDataProvider(self, *args, **kwargs): pass
 	def valid(self, *args, **kwargs): pass
+
+
+class VariablesChangedEvent(IEvent):
+	def __delattr__(*args, **kwargs): pass
+	__doc__ = None
+	def __format__(*args, **kwargs): pass
+	def __getattribute__(*args, **kwargs): pass
+	def __hash__(*args, **kwargs): pass
+	def __init__(self, *args, **kwargs): pass
+	__module__ = 'Vehicular'
+	def __new__(*args, **kwargs): pass
+	__qualname__ = 'VariablesChangedEvent'
+	def __reduce__(*args, **kwargs): pass
+	def __reduce_ex__(*args, **kwargs): pass
+	def __repr__(*args, **kwargs): pass
+	def __setattr__(*args, **kwargs): pass
+	def __sizeof__(*args, **kwargs): pass
+	def __str__(*args, **kwargs): pass
+	def __subclasshook__(*args, **kwargs): pass
 
 
 class VehicleAudition(PyComponentWrapperBase):

@@ -200,7 +200,8 @@ package net.wg.gui.lobby.settings
       
       override protected function updateNewCountersControls(param1:Vector.<SettingsTabNewCounterVo>) : void
       {
-         var _loc8_:int = 0;
+         var _loc8_:* = undefined;
+         var _loc9_:int = 0;
          var _loc2_:int = this._cursorTabsDataProvider.length;
          var _loc3_:String = null;
          var _loc4_:String = null;
@@ -209,20 +210,21 @@ package net.wg.gui.lobby.settings
          var _loc7_:int = 0;
          while(_loc7_ < _loc2_)
          {
-            _loc3_ = this._cursorTabsDataProvider[_loc7_].id;
-            _loc4_ = this._cursorTabsDataProvider[_loc7_].formID;
-            _loc8_ = 0;
-            while(_loc8_ < _loc6_)
+            _loc8_ = this._cursorTabsDataProvider[_loc7_];
+            _loc3_ = _loc8_.id;
+            _loc4_ = _loc8_.formID;
+            _loc9_ = 0;
+            while(_loc9_ < _loc6_)
             {
-               if(_loc3_ == param1[_loc8_].subTabId)
+               if(_loc3_ == param1[_loc9_].subTabId)
                {
                   _loc5_ = this[_loc4_];
                   if(_loc5_)
                   {
-                     _loc5_.updateNewCounters(param1[_loc8_].counters);
+                     _loc5_.updateNewCounters(param1[_loc9_].counters);
                   }
                }
-               _loc8_++;
+               _loc9_++;
             }
             _loc7_++;
          }
@@ -367,6 +369,7 @@ package net.wg.gui.lobby.settings
          artyShotNotify.gotoAndStop(!!_loc2_ ? ARTY_SHOT_NOTIFY_COLORBLIND : ARTY_SHOT_NOTIFY_NORMAL);
          contourCrosshair.isColorBlind = _loc2_;
          armorFlashlight.setIsColorBlind(_loc2_);
+         gunMarker.setIsColorBlind(_loc2_);
       }
    }
 }

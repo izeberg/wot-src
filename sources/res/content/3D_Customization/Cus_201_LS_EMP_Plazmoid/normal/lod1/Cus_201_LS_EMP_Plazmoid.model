@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/3D_Customization/Cus_201_LS_EMP_Plazmoid/normal/lod2/Cus_201_LS_EMP_Plazmoid</parent>
+	<extent>64.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.460053 -0.000800 -0.692679</min>
+		<max>0.199328 0.705671 0.692679</max>
+	</visibilityBox>
+	<nodefullVisual>content/3D_Customization/Cus_201_LS_EMP_Plazmoid/normal/lod1/Cus_201_LS_EMP_Plazmoid</nodefullVisual>
+</root>

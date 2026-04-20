@@ -136,6 +136,8 @@ STORE_TAB = 'store_tab'
 STATS_REGULAR_SORTING = 'statsSorting'
 STATS_SORTIE_SORTING = 'statsSortingSortie'
 STATS_COMP7_SORTING = 'statsSortingComp7'
+STATS_COMP7_LIGHT_SORTING = 'statsSortingComp7Light'
+STATS_COMP7_SPECIAL_SORTING = 'statsSortingComp7Special'
 STATS_FUN_RANDOM_SORTING = 'statsSortingFunRandom'
 MISSIONS_PAGE = 'missions_page'
 DEFAULT_VEHICLE_TYPES_FILTER = [
@@ -190,6 +192,7 @@ STAGED_JET_BOOSTERS_MODE_HINT_SECTION = 'stagedJetBoostersModeHint'
 TARGET_DESIGNATOR_MODE_HINT_SECTION = 'targetDesignatorModeHint'
 DYN_SQUAD_HINT_SECTION = 'dynSquadHint'
 PILLBOX_HINT_SECTION = 'pillboxModeHint'
+WHEELED_DASH_MODE_HINT_SECTION = 'wheeledDashModeHint'
 RADAR_HINT_SECTION = 'radarHint'
 PRE_BATTLE_HINT_SECTION = 'preBattleHintSection'
 PRE_BATTLE_ROLE_HINT_SECTION = 'preBattleRoleHintSection'
@@ -929,7 +932,8 @@ DEFAULT_VALUES = {KEY_FILTERS: {STORE_TAB: 0,
                                       GuiSettingsBehavior.COMP7_YEARLY_ANIMATION_SEEN: False, 
                                       GuiSettingsBehavior.CLAN_SUPPLY_INTRO_SHOWN: False, 
                                       GuiSettingsBehavior.CREW_PE_WELCOME_SHOWN: False, 
-                                      GuiSettingsBehavior.CREW_MENTORING_LICENSE_AWARDS_SHOWN: False}, 
+                                      GuiSettingsBehavior.CREW_MENTORING_LICENSE_AWARDS_SHOWN: False, 
+                                      GuiSettingsBehavior.W2GT_APPLIED: False}, 
                  EULA_VERSION: {'version': 0}, FORT_MEMBER_TUTORIAL: {'wasShown': False}, IGR_PROMO: {'wasShown': False}, CONTACTS: {'showOfflineUsers': True, 'showOthersCategory': True}, BOOSTERS_FILTER: 0, 
                  'cs_intro_view_vehicle': {'nation': -1, 'vehicleType': 'none', 'isMain': False, 'level': -1, 'compatibleOnly': True}, 
                  'cs_list_view_vehicle': {'nation': -1, 'vehicleType': 'none', 'isMain': False, 'level': -1, 'compatibleOnly': True}, 
@@ -1043,6 +1047,7 @@ DEFAULT_VALUES = {KEY_FILTERS: {STORE_TAB: 0,
                   GAME.PRE_COMMANDER_CAM: True, 
                   GAME.COMMANDER_CAM: True, 
                   GAME.SCROLL_SMOOTHING: True, 
+                  GAME.W2GT_ENABLE: False, 
                   'hangarCamPeriod': 1, 
                   'hangarCamParallaxEnabled': True, 
                   'players_panel': {'state': None, 
@@ -1054,8 +1059,12 @@ DEFAULT_VALUES = {KEY_FILTERS: {STORE_TAB: 0,
                                    'sortDirection': 'descending'}, 
                   'statsSortingSortie': {'iconType': 'tank', 
                                          'sortDirection': 'descending'}, 
-                  'statsSortingComp7': {'iconType': 'prestigePoints', 
+                  STATS_COMP7_SORTING: {'iconType': 'rank', 
                                         'sortDirection': 'descending'}, 
+                  STATS_COMP7_LIGHT_SORTING: {'iconType': 'prestigePoints', 
+                                              'sortDirection': 'descending'}, 
+                  STATS_COMP7_SPECIAL_SORTING: {'iconType': 'tank', 
+                                                'sortDirection': 'descending'}, 
                   STATS_FUN_RANDOM_SORTING: {'iconType': 'xp', 
                                              'sortDirection': 'descending'}, 
                   'backDraftInvert': False, 
@@ -1257,6 +1266,9 @@ DEFAULT_VALUES = {KEY_FILTERS: {STORE_TAB: 0,
                   STAGED_JET_BOOSTERS_MODE_HINT_SECTION: {HINTS_LEFT: 3, 
                                                           LAST_DISPLAY_DAY: 0, 
                                                           NUM_BATTLES: 0}, 
+                  WHEELED_DASH_MODE_HINT_SECTION: {HINTS_LEFT: 3, 
+                                                   LAST_DISPLAY_DAY: 0, 
+                                                   NUM_BATTLES: 0}, 
                   TARGET_DESIGNATOR_MODE_HINT_SECTION: {HINTS_LEFT: 3, 
                                                         LAST_DISPLAY_DAY: 0, 
                                                         NUM_BATTLES: 0}, 

@@ -69,6 +69,10 @@ def isTemperatureGun(descr):
     return descr is not None and hasVehicleDescrMechanic(descr, VehicleMechanic.TEMPERATURE_GUN)
 
 
+def isLowChargeShotGun(descr):
+    return descr is not None and hasVehicleDescrMechanic(descr, VehicleMechanic.LOW_CHARGE_SHOT)
+
+
 def isBurstGun(gun):
     if gun is not None:
         return gun.burst != component_constants.DEFAULT_GUN_BURST

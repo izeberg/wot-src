@@ -52,6 +52,12 @@ msgstr ""
 msgid "battleMessenger/toxic/blackList/REMOVE_FROM_BLACKLIST/header"
 msgstr "Unblock Messages from Player"
 
+msgid "battleMessenger/w2gt/warning/gettingDataError"
+msgstr "Technical problem retrieving combat zone data."
+
+msgid "battleMessenger/w2gt/warning/noData"
+msgstr "Combat zone data for this vehicle is not available on this map."
+
 msgid "battleProgress/hint/description"
 msgstr "to view personal missions"
 
@@ -1005,6 +1011,9 @@ msgstr "Unable to fire: gun overheated."
 msgid "player_errors/cant_shoot/gun_reload"
 msgstr "Loading gun."
 
+msgid "player_errors/cant_shoot/low_charge_shot_blocking"
+msgstr "Completing loading."
+
 msgid "player_errors/cant_shoot/no_ammo"
 msgstr "Unable to fire: out of shells."
 
@@ -1478,6 +1487,9 @@ msgstr "%(target)s destroyed"
 
 msgid "player_messages/DEATH_FROM_SHOT_SELF_ENEMY_POI"
 msgstr "%(target)s destroyed"
+
+msgid "player_messages/DEATH_FROM_SHOT_UNKNOWN_ALLY"
+msgstr "Enemy (Unknown) destroyed %(target)s."
 
 msgid "player_messages/DEATH_FROM_STATIC_DEATH_ZONE_ALLY_SUICIDE"
 msgstr "Ally %(target)s destroyed by the destruction zone."
@@ -2841,6 +2853,9 @@ msgstr "Damage per Second: %(value)s HP/s"
 msgid "shells_kinds/params/explosionRadius"
 msgstr "Damage radius: %(value)s m"
 
+msgid "shells_kinds/params/header"
+msgstr "Full / Single-Charge"
+
 msgid "shells_kinds/params/piercingPower"
 msgstr "Average penetration: %(value)s mm"
 
@@ -2889,6 +2904,9 @@ msgstr "to change fire mode"
 
 msgid "siegeMode/hint/wheeled"
 msgstr "to switch the movement mode"
+
+msgid "siegeMode/hint/wheeledDash"
+msgstr "to activate Turbocharger Assist"
 
 msgid "spotted/indicator"
 msgstr "Time spotted and damage received increased"

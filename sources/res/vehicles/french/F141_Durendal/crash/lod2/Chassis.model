@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/french/F141_Durendal/crash/lod2/Chassis</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/french/F141_Durendal/crash/lod3/Chassis</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.631172 -0.000149 -3.172036</min>
+		<max>1.631172 1.149574 3.194592</max>
+	</visibilityBox>
+</root>

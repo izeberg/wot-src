@@ -2665,6 +2665,8 @@ package
       
       public static const BONUSNAME_EXCLUSIVE_VEHICLE:String = "#quests:bonusName/exclusive_vehicle";
       
+      public static const BONUSNAME_EXCLUSIVE_VEHICLES:String = "#quests:bonusName/exclusive_vehicles";
+      
       public static const BONUSNAME_ATTENDANCE_REWARD:String = "#quests:bonusName/attendance_reward";
       
       public static const BONUSNAME_PRO_BOOST:String = "#quests:bonusName/pro_boost";

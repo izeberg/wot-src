@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<extent>64.000000</extent>
+	<tank>true</tank>
+	<parent>content/3D_Customization/gun_slots/GB158_gunsleeve_slipstream/normal/lod2/attachment</parent>
+	<visibilityBox>
+		<min>-0.243474 -0.356991 -0.745775</min>
+		<max>0.271404 0.329244 2.392778</max>
+	</visibilityBox>
+	<nodefullVisual>content/3D_Customization/gun_slots/GB158_gunsleeve_slipstream/normal/lod1/attachment</nodefullVisual>
+</root>

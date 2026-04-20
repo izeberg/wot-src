@@ -1,3 +1,4 @@
+from __future__ import absolute_import, division
 import typing, BigWorld
 from constants import OVERHEAT_GAIN_STATE as STATE
 from gui.shared.utils.decorators import ReprInjector

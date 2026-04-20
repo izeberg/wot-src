@@ -115,6 +115,10 @@ class PetTriggerEnum(VScriptEnum):
 
         return entriesData
 
+    @classmethod
+    def vs_aspects(cls):
+        return [ASPECT.HANGAR]
+
 
 class StorageStaticTriggerEnum(VScriptEnum):
 
@@ -126,6 +130,10 @@ class StorageStaticTriggerEnum(VScriptEnum):
     def vs_enum(cls):
         return StorageStaticTrigger
 
+    @classmethod
+    def vs_aspects(cls):
+        return [ASPECT.HANGAR]
+
 
 class PetStaticTriggerEnum(VScriptEnum):
 
@@ -136,6 +144,10 @@ class PetStaticTriggerEnum(VScriptEnum):
     @classmethod
     def vs_enum(cls):
         return PetStaticTrigger
+
+    @classmethod
+    def vs_aspects(cls):
+        return [ASPECT.HANGAR]
 
 
 class AnimationStateNameEnum(VScriptEnum):
@@ -159,6 +171,10 @@ class AnimationStateNameEnum(VScriptEnum):
             entriesData[name] = index
 
         return entriesData
+
+    @classmethod
+    def vs_aspects(cls):
+        return [ASPECT.HANGAR]
 
 
 class GetPetState(Block, PetSystemMeta):

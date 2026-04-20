@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/british/GB151_Headshaker/crash/lod1/Turret_01</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.306959 -0.004831 -1.292840</min>
+		<max>1.273754 0.726170 1.287875</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/british/GB151_Headshaker/crash/lod0/Turret_01</nodefullVisual>
+</root>

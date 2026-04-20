@@ -128,6 +128,10 @@ def addDamageResistanceReasonsFromExtension(extDmgResistReasonType, personality)
     extDmgResistReasonType.inject(personality)
 
 
+def addBattleProgressCategory(extBattleProgressCategory, personality):
+    extBattleProgressCategory.inject(personality)
+
+
 def addDamageInfoCodes(infoCodesPerAttackReason, personality):
     for attackReason, damageInfoCode in sorted(infoCodesPerAttackReason.iteritems()):
         if damageInfoCode in DAMAGE_INFO_INDICES:
@@ -385,6 +389,10 @@ class AbstractBattleMode(object):
 
     @property
     def _client_battleResultStatsCtrlClass(self):
+        return
+
+    @property
+    def _client_battleResultsEntryState(self):
         return
 
     @property
@@ -702,6 +710,12 @@ class AbstractBattleMode(object):
     def registerClientBattleResultsCtrl(self):
         from gui.shared.system_factory import registerBattleResultStatsCtrl
         registerBattleResultStatsCtrl(self._ARENA_BONUS_TYPE, self._client_battleResultStatsCtrlClass)
+
+    def registerBattleResultsEntryState(self):
+        from gui.shared.system_factory import registerBattleResultsEntryState
+        if self._client_battleResultsEntryState is not None:
+            registerBattleResultsEntryState(self._ARENA_BONUS_TYPE, self._client_battleResultsEntryState)
+        return
 
     def registerClientBattleResultReusabled(self):
         from gui.battle_results.reusable import ReusableInfoFactory

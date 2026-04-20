@@ -1,3 +1,4 @@
+from __future__ import absolute_import, division
 import BigWorld, ResMgr, SoundGroups
 from helpers import dependency
 from FlagModel import FlagSettings, FlagModel

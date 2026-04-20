@@ -1,4 +1,4 @@
-import logging
+import logging, typing
 from constants import ARENA_GUI_TYPE
 from debug_utils import LOG_ERROR, LOG_DEBUG
 from gui.armor_flashlight.battle_controller import ArmorFlashlightBattleController
@@ -18,8 +18,13 @@ from gui.battle_control.controllers.sound_ctrls.common import ShotsResultSoundCo
 from gui.battle_control.controllers.sound_ctrls.stronghold_battle_sounds import StrongholdBattleSoundController
 from gui.battle_control.controllers.spam_protection import battle_spam_ctrl
 from gui.battle_control.controllers.vse_hud_settings_ctrl import vse_hud_settings_ctrl
+from gui.battle_control.controllers.w2gt import w2gt_ctrl
 from gui.shared.system_factory import registerBattleControllerRepo
 from skeletons.gui.battle_session import ISharedControllersLocator, IDynamicControllersLocator
+if typing.TYPE_CHECKING:
+    from typing import Any, Optional
+    from gui.battle_control.arena_info.interfaces import IW2GTBattleController
+    from Avatar import PlayerAvatar
 _logger = logging.getLogger(__name__)
 
 class BattleSessionSetup(object):
@@ -349,6 +354,10 @@ class DynamicControllersLocator(_ControllersLocator, IDynamicControllersLocator)
     def commendationsMessagesController(self):
         return self._repository.getController(BATTLE_CTRL_ID.COMMENDATIONS_MESSAGES_CTRL)
 
+    @property
+    def w2GTBattleController(self):
+        return self._repository.getController(BATTLE_CTRL_ID.W2GT_CTRL)
+
 
 class _EmptyRepository(interfaces.IBattleControllersRepository):
     __slots__ = ()
@@ -519,6 +528,8 @@ class ClassicControllersRepository(ControllersRepositoryByBonuses):
         repository.addArenaViewController(battle_field_ctrl.BattleFieldCtrl(), setup)
         repository.addArenaController(cls._getAppearanceCacheController(setup), setup)
         repository.addController(ShotsResultSoundController())
+        if setup.arenaVisitor.hasW2gtTag():
+            repository.addArenaController(w2gt_ctrl.W2GTBattleController(), setup)
         return repository
 
     @staticmethod

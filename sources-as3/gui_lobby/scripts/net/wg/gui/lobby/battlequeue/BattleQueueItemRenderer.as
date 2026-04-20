@@ -130,12 +130,6 @@ package net.wg.gui.lobby.battlequeue
          invalidate(INVALIDATE_COUNT);
       }
       
-      public function setCount(param1:Number) : void
-      {
-         this._data.count = param1;
-         this.invalidateCount();
-      }
-      
       public function setData(param1:Object) : void
       {
          var _loc2_:BattleQueueItemVO = BattleQueueItemVO(param1);

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G183_Radkampfwagen/normal/lod3/Gun_02</nodefullVisual>
+	<parent>vehicles/german/G183_Radkampfwagen/normal/lod4/Gun_02</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-0.503453 -0.264583 0.124158</min>
+		<max>0.503751 0.778926 4.680236</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

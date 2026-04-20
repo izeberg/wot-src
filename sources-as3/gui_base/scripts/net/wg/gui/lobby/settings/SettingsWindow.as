@@ -224,7 +224,7 @@ package net.wg.gui.lobby.settings
       
       override protected function onBeforeDispose() : void
       {
-         this.markVisitedCounterItems(_currentTab);
+         this.markVisitedCounterItems();
          super.onBeforeDispose();
       }
       
@@ -610,7 +610,8 @@ package net.wg.gui.lobby.settings
       {
          var _loc12_:int = 0;
          var _loc13_:String = null;
-         var _loc14_:int = 0;
+         var _loc14_:SettingsTabNewCounterVo = null;
+         var _loc15_:int = 0;
          var _loc1_:SettingsNewCountersVo = null;
          var _loc2_:Number = this.tabs.dataProvider.length;
          var _loc3_:IDataProvider = this.tabs.dataProvider;
@@ -638,15 +639,16 @@ package net.wg.gui.lobby.settings
                      _loc12_ = 0;
                      while(_loc12_ < _loc8_)
                      {
-                        _loc7_ = _loc6_[_loc12_].counters.length;
-                        _loc14_ = 0;
-                        while(_loc14_ < _loc7_)
+                        _loc14_ = _loc6_[_loc12_];
+                        _loc7_ = _loc14_.counters.length;
+                        _loc15_ = 0;
+                        while(_loc15_ < _loc7_)
                         {
-                           if(_loc6_[_loc12_].counters[_loc14_].count == CounterManager.DEF_COUNTER_NO_VIEWED_VALUE)
+                           if(_loc14_.counters[_loc15_].count == CounterManager.DEF_COUNTER_NO_VIEWED_VALUE)
                            {
                               _loc9_++;
                            }
-                           _loc14_++;
+                           _loc15_++;
                         }
                         _loc12_++;
                      }
@@ -908,12 +910,12 @@ package net.wg.gui.lobby.settings
          var _loc8_:int = 0;
          for(; _loc8_ < _loc3_; _loc8_++)
          {
-            _loc4_ = param1.keys[_loc8_];
             _loc5_ = param1.values[_loc8_];
             if(_loc5_ == null)
             {
                continue;
             }
+            _loc4_ = param1.keys[_loc8_];
             switch(_loc4_)
             {
                case SettingsConfigHelper.PRESETS:
@@ -979,7 +981,7 @@ package net.wg.gui.lobby.settings
                      _loc5_.options = _loc4_.cloneObject(param3.options);
                      for(_loc6_ in param3.options)
                      {
-                        if(param3.options[_loc6_].hasOwnProperty(SettingsControlProp.ADVANCED_LBL) && param3.options[_loc6_].advanced == true)
+                        if(param3.options[_loc6_].hasOwnProperty(SettingsControlProp.ADVANCED_LBL) && param3.options[_loc6_].advanced)
                         {
                            _loc5_.advanced = true;
                            break;
@@ -1165,31 +1167,31 @@ package net.wg.gui.lobby.settings
          App.toolTipMgr.show(_loc6_,_loc5_);
       }
       
-      private function markVisitedCounterItems(param1:int) : void
+      private function markVisitedCounterItems() : void
       {
-         var _loc4_:SettingsNewCountersForm = null;
-         var _loc5_:Array = null;
-         var _loc6_:VisitedCounters = null;
-         var _loc2_:String = this._settingsConfigHelper.tabsDataProvider[_currentTab].linkage;
-         var _loc3_:MovieClip = this.tryGetView(_loc2_);
-         if(this.view && _loc3_)
+         var _loc3_:SettingsNewCountersForm = null;
+         var _loc4_:Array = null;
+         var _loc5_:VisitedCounters = null;
+         var _loc1_:String = this._settingsConfigHelper.tabsDataProvider[_currentTab].linkage;
+         var _loc2_:MovieClip = this.tryGetView(_loc1_);
+         if(this.view && _loc2_)
          {
-            _loc4_ = SettingsNewCountersForm(_loc3_);
-            if(_loc4_)
+            _loc3_ = SettingsNewCountersForm(_loc2_);
+            if(_loc3_)
             {
-               _loc5_ = _loc4_.markVisitedCounters();
-               if(_loc5_.length)
+               _loc4_ = _loc3_.markVisitedCounters();
+               if(_loc4_.length)
                {
-                  for each(_loc6_ in _loc5_)
+                  for each(_loc5_ in _loc4_)
                   {
-                     if(_loc6_.ids && _loc6_.ids.length)
+                     if(_loc5_.ids && _loc5_.ids.length)
                      {
-                        onCounterTargetVisitedS(_loc6_.viewId,_loc6_.subViewId,_loc6_.ids);
+                        onCounterTargetVisitedS(_loc5_.viewId,_loc5_.subViewId,_loc5_.ids);
                      }
-                     _loc6_.dispose();
+                     _loc5_.dispose();
                   }
-                  _loc5_.splice(0,_loc5_.length);
-                  _loc5_ = null;
+                  _loc4_.splice(0,_loc4_.length);
+                  _loc4_ = null;
                }
             }
          }
@@ -1213,7 +1215,7 @@ package net.wg.gui.lobby.settings
       
       private function onTabIndexChangeHandler(param1:IndexEvent) : void
       {
-         this.markVisitedCounterItems(_currentTab);
+         this.markVisitedCounterItems();
          _currentTab = param1.index;
          App.toolTipMgr.hide();
          var _loc2_:SoundSettings = this.getSoundSettings();

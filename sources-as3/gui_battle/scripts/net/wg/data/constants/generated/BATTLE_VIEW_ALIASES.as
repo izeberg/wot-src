@@ -175,6 +175,10 @@ package net.wg.data.constants.generated
       
       public static const COMP7_RECON_FLIGHT:String = "comp7ReconFlight";
       
+      public static const COMP7_BANS_WIDGET:String = "comp7BansWidget";
+      
+      public static const COMP7_BANS_PROGRESS_WIDGET:String = "comp7BansProgressWidget";
+      
       public static const WIDGETS_PANEL:String = "widgetPanel";
       
       public static const ROCKET_ACCELERATOR_INDICATOR:String = "rocketAcceleratorIndicator";
@@ -205,7 +209,13 @@ package net.wg.data.constants.generated
       
       public static const TEMPERATURE_GUN_HEAT_ZONES_WIDGET:String = "temperatureGunHeatZonesWidget";
       
+      public static const LOW_CHARGE_SHOT_WIDGET:String = "lowChargeShotMechanicWidget";
+      
       public static const STAGED_JET_BOOSTERS_WIDGET:String = "stagedJetBoostersWidget";
+      
+      public static const PROPELLANT_GUN_WIDGET:String = "propellantGunWidget";
+      
+      public static const WHEELED_DASH_WIDGET:String = "wheeledDashWidget";
       
       public static const DECORATIVE_CROSSHAIR_PANEL:String = "decorativeCrosshairPanel";
       

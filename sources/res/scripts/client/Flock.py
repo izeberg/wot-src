@@ -1,4 +1,7 @@
-import math, random, math_utils, BigWorld, Math, ResMgr, SoundGroups
+from __future__ import absolute_import, division
+import math, random
+from past.builtins import xrange
+import math_utils, BigWorld, Math, ResMgr, SoundGroups
 from debug_utils import LOG_CURRENT_EXCEPTION, LOG_ERROR
 from Math import Vector3
 import AnimationSequence

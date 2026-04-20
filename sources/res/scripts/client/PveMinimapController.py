@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from constants import PVE_MINIMAP_DEFAULT_ZOOM, PVE_MINIMAP_DEFAULT_BORDERS
 from gui.shared import g_eventBus, events, EVENT_BUS_SCOPE
 from script_component.DynamicScriptComponent import DynamicScriptComponent

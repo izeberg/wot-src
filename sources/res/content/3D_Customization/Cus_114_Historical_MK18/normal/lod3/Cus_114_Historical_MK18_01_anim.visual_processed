@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>static_joint</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>base</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.000000 0.000000</row3>
+				</transform>
+				<node>
+					<identifier>gun</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.301262 0.103300</row3>
+					</transform>
+					<node>
+						<identifier>belt</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>0.000000 0.090000 -0.100000</row3>
+						</transform>
+						<node>
+							<identifier>Joint_01</identifier>
+							<transform>
+								<row0>1.000000 -0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 1.000000</row2>
+								<row3>0.054486 -0.010421 0.000000</row3>
+							</transform>
+							<node>
+								<identifier>Joint_02</identifier>
+								<transform>
+									<row0>1.000000 -0.000000 0.000000</row0>
+									<row1>0.000000 1.000000 0.000000</row1>
+									<row2>0.000000 0.000000 1.000000</row2>
+									<row3>0.027538 -0.036166 0.000000</row3>
+								</transform>
+								<node>
+									<identifier>Joint_03</identifier>
+									<transform>
+										<row0>1.000000 0.000000 -0.000000</row0>
+										<row1>0.000000 1.000000 -0.000000</row1>
+										<row2>0.000000 0.000000 1.000000</row2>
+										<row3>-0.000606 -0.048948 0.000000</row3>
+									</transform>
+									<node>
+										<identifier>Joint_04</identifier>
+										<transform>
+											<row0>1.000000 0.000000 -0.000000</row0>
+											<row1>0.000000 1.000000 0.000000</row1>
+											<row2>0.000000 0.000000 1.000000</row2>
+											<row3>-0.002974 -0.051653 0.000000</row3>
+										</transform>
+										<node>
+											<identifier>Joint_04_BlendBone</identifier>
+											<transform>
+												<row0>1.000000 0.000000 0.000000</row0>
+												<row1>-0.000000 1.000000 0.000000</row1>
+												<row2>0.000000 0.000000 -1.000000</row2>
+												<row3>-0.078443 -0.244074 -0.003300</row3>
+											</transform>
+										</node>
+									</node>
+									<node>
+										<identifier>Joint_03_BlendBone</identifier>
+										<transform>
+											<row0>1.000000 0.000000 0.000000</row0>
+											<row1>-0.000000 1.000000 0.000000</row1>
+											<row2>0.000000 0.000000 -1.000000</row2>
+											<row3>-0.081418 -0.295727 -0.003300</row3>
+										</transform>
+									</node>
+								</node>
+								<node>
+									<identifier>Joint_02_BlendBone</identifier>
+									<transform>
+										<row0>1.000000 0.000000 0.000000</row0>
+										<row1>-0.000000 1.000000 0.000000</row1>
+										<row2>0.000000 0.000000 -1.000000</row2>
+										<row3>-0.082024 -0.344676 -0.003300</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>Joint_01_BlendBone</identifier>
+								<transform>
+									<row0>1.000000 0.000000 0.000000</row0>
+									<row1>-0.000000 1.000000 0.000000</row1>
+									<row2>0.000000 0.000000 -1.000000</row2>
+									<row3>-0.054486 -0.380841 -0.003300</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>Joint_05</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>-0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 1.000000</row2>
+								<row3>-0.055458 -0.002853 0.000000</row3>
+							</transform>
+							<node>
+								<identifier>Joint_06</identifier>
+								<transform>
+									<row0>1.000000 -0.000000 0.000000</row0>
+									<row1>0.000000 1.000000 0.000000</row1>
+									<row2>0.000000 0.000000 1.000000</row2>
+									<row3>-0.041769 -0.031100 0.000000</row3>
+								</transform>
+								<node>
+									<identifier>Joint_07</identifier>
+									<transform>
+										<row0>1.000000 0.000000 -0.000000</row0>
+										<row1>0.000000 1.000000 -0.000000</row1>
+										<row2>0.000000 0.000000 1.000000</row2>
+										<row3>-0.010797 -0.052981 0.000000</row3>
+									</transform>
+									<node>
+										<identifier>Joint_07_BlendBone</identifier>
+										<transform>
+											<row0>1.000000 -0.000000 0.000000</row0>
+											<row1>0.000000 1.000000 0.000000</row1>
+											<row2>0.000000 0.000000 -1.000000</row2>
+											<row3>0.108025 -0.304328 -0.003300</row3>
+										</transform>
+									</node>
+								</node>
+								<node>
+									<identifier>Joint_06_BlendBone</identifier>
+									<transform>
+										<row0>1.000000 -0.000000 0.000000</row0>
+										<row1>0.000000 1.000000 0.000000</row1>
+										<row2>0.000000 0.000000 -1.000000</row2>
+										<row3>0.097227 -0.357309 -0.003300</row3>
+									</transform>
+								</node>
+							</node>
+						</node>
+						<node>
+							<identifier>belt_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>0.000000 -0.391262 -0.003300</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>gun_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>0.000000 -0.301262 -0.103300</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>base_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>gun_BlendBone</node>
+		<node>base_BlendBone</node>
+		<node>Joint_06_BlendBone</node>
+		<node>belt_BlendBone</node>
+		<node>Joint_07_BlendBone</node>
+		<node>Joint_03_BlendBone</node>
+		<node>Joint_02_BlendBone</node>
+		<node>Joint_01_BlendBone</node>
+		<node>Joint_04_BlendBone</node>
+		<geometry>
+			<vertices>s0Shape.vertices</vertices>
+			<primitive>s0Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>112</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/3D_Customization/Cus_114_Historical_MK18/Cus_114_Historical_MK18_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>content/3D_Customization/Cus_114_Historical_MK18/Cus_114_Historical_MK18_AO.dds</Texture>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>3.500000 3.500000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/3D_Customization/Cus_114_Historical_MK18/Cus_114_Historical_MK18_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/3D_Customization/Cus_114_Historical_MK18/Cus_114_Historical_MK18_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.007071 0.170970 0.042352</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>-0.156059 -0.200000 -0.319241</min>
+		<max>0.141917 0.541940 0.234537</max>
+	</boundingBox>
+	<geometrySize>15702</geometrySize>
+</root>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.219501 -0.880975 -1.198295</min>
+		<max>1.181376 0.640399 8.425486</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/british/GB151_Headshaker/crash/lod0/Gun_03</nodefullVisual>
+	<parent>vehicles/british/GB151_Headshaker/crash/lod1/Gun_03</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+</root>

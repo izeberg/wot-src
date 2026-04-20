@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>2.000000</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>pins</name>
+		<type>model</type>
+		<resource>particles/3D_Customization/Cus_201_LS_EMP_Plazmoid/Cus_201_LS_EMP_Plazmoid_pins.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>line_01</name>
+		<type>model</type>
+		<resource>particles/3D_Customization/Cus_201_LS_EMP_Plazmoid/Cus_201_LS_EMP_Plazmoid_line_01.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.105164 -0.101967 -0.018021</value>
+				<inTangent>0.069481 0.076378 0.010239</inTangent>
+				<outTangent>0.069481 0.076378 0.010239</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.000000</startTime>
+				<value>0.033798 0.050790 0.002457</value>
+				<inTangent>0.069481 0.076378 0.010239</inTangent>
+				<outTangent>0.069481 0.076378 0.010239</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 4.540136 0.000000</value>
+				<inTangent>0.000000 -3.303813 0.000000</inTangent>
+				<outTangent>0.000000 -3.303813 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.000000</startTime>
+				<value>0.000000 -2.067490 0.000000</value>
+				<inTangent>-0.000000 -3.303813 -0.000000</inTangent>
+				<outTangent>-0.000000 -3.303813 -0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.800000 1.000000 1.000000</value>
+				<inTangent>0.150000 0.000000 0.000000</inTangent>
+				<outTangent>0.150000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.000000</startTime>
+				<value>1.100000 1.000000 1.000000</value>
+				<inTangent>0.150000 -0.000000 -0.000000</inTangent>
+				<outTangent>0.150000 -0.000000 -0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>line</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 0.000000 0.000000 0.100000</value>
+				<inTangent>0.078431 -0.043137 -0.043137 0.600000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.000000</startTime>
+				<value>1.000000 0.000000 0.000000 0.600000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 0.500000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.000000</startTime>
+				<value>1.000000 0.000000 0.000000 0.100000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.500000</inTangent>
+				<outTangent>-0.078431 0.043137 0.043137 -0.600000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>line_02</name>
+		<type>model</type>
+		<resource>particles/3D_Customization/Cus_201_LS_EMP_Plazmoid/Cus_201_LS_EMP_Plazmoid_line_03.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.105160 -0.101970 0.018020</value>
+				<inTangent>0.069480 0.076380 -0.010240</inTangent>
+				<outTangent>0.069480 0.076380 -0.010240</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.000000</startTime>
+				<value>0.033800 0.050790 -0.002460</value>
+				<inTangent>0.069480 0.076380 -0.010240</inTangent>
+				<outTangent>0.069480 0.076380 -0.010240</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 -4.540140 0.000000</value>
+				<inTangent>0.000000 3.303815 0.000000</inTangent>
+				<outTangent>0.000000 3.303815 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.000000</startTime>
+				<value>0.000000 2.067490 0.000000</value>
+				<inTangent>-0.000000 3.303815 -0.000000</inTangent>
+				<outTangent>-0.000000 3.303815 -0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.800000 1.000000 1.000000</value>
+				<inTangent>0.150000 0.000000 0.000000</inTangent>
+				<outTangent>0.150000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.000000</startTime>
+				<value>1.100000 1.000000 1.000000</value>
+				<inTangent>0.150000 -0.000000 -0.000000</inTangent>
+				<outTangent>0.150000 -0.000000 -0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>line</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 0.000000 0.000000 0.100000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.450000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.000000</startTime>
+				<value>1.000000 0.000000 0.000000 0.600000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 0.500000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.000000</startTime>
+				<value>1.000000 0.000000 0.000000 0.100000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.500000</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -0.450000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>line_03</name>
+		<type>model</type>
+		<resource>particles/3D_Customization/Cus_201_LS_EMP_Plazmoid/Cus_201_LS_EMP_Plazmoid_line_02.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 -0.108829 0.000000</value>
+				<inTangent>0.000000 0.078175 0.000000</inTangent>
+				<outTangent>0.000000 0.078175 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.000000</startTime>
+				<value>0.000000 0.047521 0.000000</value>
+				<inTangent>-0.000000 0.078175 -0.000000</inTangent>
+				<outTangent>-0.000000 0.078175 -0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>line</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 0.000000 0.000000 0.100000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.450000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.000000</startTime>
+				<value>1.000000 0.000000 0.000000 0.600000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 0.500000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.000000</startTime>
+				<value>1.000000 0.000000 0.000000 0.100000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.500000</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -0.450000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>line_04</name>
+		<type>model</type>
+		<resource>particles/3D_Customization/Cus_201_LS_EMP_Plazmoid/Cus_201_LS_EMP_Plazmoid_line_04.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.137741 -0.154966 0.000000</value>
+				<inTangent>0.085873 0.098728 0.000000</inTangent>
+				<outTangent>0.085873 0.098728 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.000000</startTime>
+				<value>0.034004 0.042490 0.000000</value>
+				<inTangent>0.085873 0.098728 -0.000000</inTangent>
+				<outTangent>0.085873 0.098728 -0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 1.000000 0.900000</value>
+				<inTangent>0.000000 0.000000 0.075000</inTangent>
+				<outTangent>0.000000 0.000000 0.075000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.000000</startTime>
+				<value>1.000000 1.000000 1.050000</value>
+				<inTangent>-0.000000 -0.000000 0.075000</inTangent>
+				<outTangent>-0.000000 -0.000000 0.075000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>line</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 0.000000 0.000000 0.100000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.450000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.000000</startTime>
+				<value>1.000000 0.000000 0.000000 0.600000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 0.500000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.000000</startTime>
+				<value>1.000000 0.000000 0.000000 0.100000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.500000</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -0.450000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

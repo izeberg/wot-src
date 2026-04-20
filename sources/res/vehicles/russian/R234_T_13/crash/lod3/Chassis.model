@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/russian/R234_T_13/crash/lod4/Chassis</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.670000 0.000190 -3.444943</min>
+		<max>1.672997 0.874704 3.459274</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/russian/R234_T_13/crash/lod3/Chassis</nodefullVisual>
+</root>

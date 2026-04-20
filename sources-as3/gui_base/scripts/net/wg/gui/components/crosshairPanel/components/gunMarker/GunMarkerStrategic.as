@@ -129,6 +129,10 @@ package net.wg.gui.components.crosshairPanel.components.gunMarker
       {
       }
       
+      public function setIsColorBlind(param1:Boolean) : void
+      {
+      }
+      
       public function setIsSecondary(param1:Boolean) : void
       {
       }

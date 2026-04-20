@@ -1,5 +1,6 @@
+from __future__ import absolute_import
 import base64
-from urllib import quote_plus
+from future.moves.urllib.parse import quote_plus
 import BigWorld, constants
 from adisp import adisp_async, adisp_process
 from helpers import getClientLanguage, dependency

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<stream>colour</stream>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>Energy_torus_inside</identifier>
+					<fx>shaders/custom/volumetric_effect_vtx.fx</fx>
+					<property>
+						diffuseMap
+						<Texture>particles/content_deferred/GFX_models/GFX_textures/FireCutout01_desaturate_02.dds</Texture>
+					</property>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						alphaReference
+						<Int>0</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>false</Bool>
+					</property>
+					<property>
+						dynamicObject
+						<Bool>false</Bool>
+					</property>
+					<property>
+						g_albedoConversions
+						<Vector4>0.050000 0.950000 0.700000 0.300000</Vector4>
+					</property>
+					<property>
+						g_defaultPBSConversionParams
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_glossConversions
+						<Vector4>0.050000 0.750000 0.500000 2.000000</Vector4>
+					</property>
+					<property>
+						g_metallicConversions
+						<Vector4>0.020000 0.600000 2.000000 1.500000</Vector4>
+					</property>
+					<property>
+						alphaFadeAmountFresnel
+						<Vector4>1.000000 0.000000 0.300000 0.000000</Vector4>
+					</property>
+					<property>
+						alphaFreshnelEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						destBlend
+						<Int>2</Int>
+					</property>
+					<property>
+						diffuseUVSpeedAlphaOffset
+						<Vector4>-0.500000 0.100000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						distortion_UV_Speed_Amount
+						<Vector4>-0.300000 0.400000 0.300000 0.500000</Vector4>
+					</property>
+					<property>
+						FreshnelColor
+						<Vector4>1.000000 0.000000 0.552941 1.000000</Vector4>
+					</property>
+					<property>
+						lightMultipliers
+						<Vector4>40.000000 0.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						TintlColor
+						<Vector4>1.000000 0.200000 0.078431 1.000000</Vector4>
+					</property>
+					<property>
+						distortionMap
+						<Texture>particles/content_deferred/GFX_models/GFX_textures/distortion_02.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.094433 16.252666 -0.157588</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>Energy_torus_</identifier>
+					<fx>shaders/custom/volumetric_effect_vtx.fx</fx>
+					<property>
+						diffuseMap
+						<Texture>particles/content_deferred/GFX_models/GFX_textures/FireCutout01_desaturate_02.dds</Texture>
+					</property>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						alphaFadeAmountFresnel
+						<Vector4>1.000000 0.000000 0.700000 0.000000</Vector4>
+					</property>
+					<property>
+						alphaFreshnelEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						destBlend
+						<Int>9</Int>
+					</property>
+					<property>
+						diffuseUVSpeedAlphaOffset
+						<Vector4>-0.200000 0.030000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						distortion_UV_Speed_Amount
+						<Vector4>-0.300000 0.200000 0.400000 0.400000</Vector4>
+					</property>
+					<property>
+						FreshnelColor
+						<Vector4>0.984314 0.000000 0.227451 1.000000</Vector4>
+					</property>
+					<property>
+						lightMultipliers
+						<Vector4>20.000000 0.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						TintlColor
+						<Vector4>1.000000 0.333333 0.411765 1.000000</Vector4>
+					</property>
+					<property>
+						distortionMap
+						<Texture>particles/content_deferred/GFX_models/GFX_textures/distortion_02.dds</Texture>
+					</property>
+					<property>
+						srcBlend
+						<Int>2</Int>
+					</property>
+				</material>
+				<groupOrigin>-0.000002 16.464834 0.000002</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				2
+				<material>
+					<identifier>prominence1</identifier>
+					<fx>shaders/custom/volumetric_effect_vtx.fx</fx>
+					<property>
+						diffuseMap
+						<Texture>particles/content_deferred/GFX_models/GFX_textures/prominence_scarlet_red.dds</Texture>
+					</property>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						alphaFadeAmountFresnel
+						<Vector4>1.000000 2.000000 1.000000 0.200000</Vector4>
+					</property>
+					<property>
+						alphaFreshnelEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						destBlend
+						<Int>2</Int>
+					</property>
+					<property>
+						diffuseUVSpeedAlphaOffset
+						<Vector4>-0.080000 -0.200000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						distortion_UV_Speed_Amount
+						<Vector4>-0.120000 -0.250000 0.300000 0.300000</Vector4>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						FreshnelColor
+						<Vector4>0.705882 0.439216 1.000000 1.000000</Vector4>
+					</property>
+					<property>
+						lightMultipliers
+						<Vector4>12.000000 0.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						TintlColor
+						<Vector4>0.447059 0.278431 1.000000 1.000000</Vector4>
+					</property>
+					<property>
+						distortionMap
+						<Texture>particles/content_deferred/GFX_models/GFX_textures/distortion_02.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.014477 17.114664 -0.052391</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-8.726333 12.561863 -8.511429</min>
+		<max>8.755286 21.667465 8.406647</max>
+	</boundingBox>
+	<geometrySize>68076</geometrySize>
+</root>

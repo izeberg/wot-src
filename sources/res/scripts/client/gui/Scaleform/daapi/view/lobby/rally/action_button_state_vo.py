@@ -71,6 +71,8 @@ class ActionButtonStateVO(dict):
                                                         CYBERSPORT.WINDOW_UNIT_MESSAGE_VEHICLENOTVALIDFOREVENT, {}), 
            UNIT_RESTRICTION.CURFEW: (
                                    CYBERSPORT.WINDOW_UNIT_MESSAGE_CURFEW, {}), 
+           UNIT_RESTRICTION.LIMIT_NOT_ENOUGH_SUITABLE_VEHICLES: (
+                                                               CYBERSPORT.WINDOW_UNIT_MESSAGE_VEHICLEINNOTREADY_NOTENOUGHVEHICLES, {}), 
            UNIT_RESTRICTION.VEHICLE_WRONG_MODE: (
                                                CYBERSPORT.WINDOW_UNIT_MESSAGE_VEHICLEINNOTREADY_WRONGMODE, {}), 
            UNIT_RESTRICTION.UNIT_WRONG_DATA: (

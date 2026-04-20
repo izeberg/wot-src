@@ -26,7 +26,7 @@ package net.wg.gui.battle.views.damagePanel.components
          useHandCursor = buttonMode = true;
       }
       
-      public function dispose() : void
+      public final function dispose() : void
       {
          this._disposed = true;
          graphics.clear();
@@ -35,11 +35,6 @@ package net.wg.gui.battle.views.damagePanel.components
       public function get itemName() : String
       {
          return this._itemName;
-      }
-      
-      public function set itemName(param1:String) : void
-      {
-         this._itemName = param1;
       }
       
       public function isDisposed() : Boolean

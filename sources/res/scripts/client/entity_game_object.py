@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld
 
 class EntityGameObject(BigWorld.Entity):

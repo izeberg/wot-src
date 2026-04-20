@@ -675,14 +675,6 @@ package
       
       public static const TEAM_STATS_MILEAGE:String = "#battle_results:team/stats/mileage";
       
-      public static const TEAM_STATS_LABELS_DAMAGEDEALTBYSKILLS:String = "#battle_results:team/stats/labels_damageDealtBySkills";
-      
-      public static const TEAM_STATS_LABELS_HEALED:String = "#battle_results:team/stats/labels_healed";
-      
-      public static const TEAM_STATS_LABELS_CAPTUREDPOINTSOFINTEREST:String = "#battle_results:team/stats/labels_capturedPointsOfInterest";
-      
-      public static const TEAM_STATS_LABELS_ROLESKILLUSED:String = "#battle_results:team/stats/labels_roleSkillUsed";
-      
       public static const TEAM_STATS_CLOSE:String = "#battle_results:team/stats/close";
       
       public static const TEAM_RANKHEADER_HEADER:String = "#battle_results:team/rankHeader/header";
@@ -1076,6 +1068,14 @@ package
       public static const CONDITIONS_TYPE_OR:String = "#battle_results:conditions/type/or";
       
       public static const CONDITIONS_TYPE_AND:String = "#battle_results:conditions/type/and";
+      
+      public static const TEAM_STATS_LABELS_DAMAGEDEALTBYSKILLS:String = "#battle_results:team/stats/labels_damageDealtBySkills";
+      
+      public static const TEAM_STATS_LABELS_HEALED:String = "#battle_results:team/stats/labels_healed";
+      
+      public static const TEAM_STATS_LABELS_CAPTUREDPOINTSOFINTEREST:String = "#battle_results:team/stats/labels_capturedPointsOfInterest";
+      
+      public static const TEAM_STATS_LABELS_ROLESKILLUSED:String = "#battle_results:team/stats/labels_roleSkillUsed";
        
       
       public function BATTLE_RESULTS()

@@ -1,5 +1,6 @@
 from __future__ import absolute_import
 import typing, logging, Event
+from WeakMethod import WeakMethodProxy
 from gui.impl.gen.view_models.ui_kit.list_model import ListModel
 if typing.TYPE_CHECKING:
     from frameworks.wulf import Array
@@ -104,15 +105,8 @@ class UserListModel(ListModel[T]):
 
     def _initialize(self):
         super(UserListModel, self)._initialize()
-        self.onSelectionChanged += self.__onSelectionChanged
-        self.onItemClicked += self.__onItemClicked
-
-    def _finalize(self):
-        self.onSelectionChanged -= self.__onSelectionChanged
-        self.onItemClicked -= self.__onItemClicked
-        self.onUserSelectionChanged.clear()
-        self.onUserItemClicked.clear()
-        super(UserListModel, self)._finalize()
+        self.onSelectionChanged += WeakMethodProxy(self.__onSelectionChanged)
+        self.onItemClicked += WeakMethodProxy(self.__onItemClicked)
 
     def __onSelectionChanged(self, args=None):
         if 'selectedIndex' not in args or 'unselectedIndex' not in args:

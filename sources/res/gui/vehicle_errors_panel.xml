@@ -126,6 +126,14 @@
 			</value>
 		</message>
 		<message>
+			<name>lowChargeShotBlocking</name>
+			<type>list</type>
+			<value>
+				<item>_(#ingame_gui:player_errors/cant_shoot/low_charge_shot_blocking)</item>
+				<item>yellow</item>
+			</value>
+		</message>
+		<message>
 			<name>cantShootGunOverheated</name>
 			<type>list</type>
 			<value>

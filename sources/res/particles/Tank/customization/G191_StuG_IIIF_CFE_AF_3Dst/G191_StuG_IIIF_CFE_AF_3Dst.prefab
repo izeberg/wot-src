@@ -141,45 +141,6 @@
 			</component>
 		</ComponentPool>
 		<ComponentPool>
-			<type>Colliders</type>
-			<version>1</version>
-			<component>
-				<UUID>1bd49544-a7ec-495c-b50a-2ef90ebbf101</UUID>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Colliders</name>
-						<collection>
-							<item>
-								<object>
-									<property>
-										<name>Type</name>
-										<value>1</value>
-									</property>
-									<property>
-										<name>Parameters</name>
-										<object>
-											<property>
-												<name>Offset</name>
-												<value>((     0.4,       0,       0,       0), (       0,     0.4,       0,       0), (       0,       0,     0.4,       0), (       0,    1.14,-0.0734711,       1))</value>
-											</property>
-											<property>
-												<name>Radius</name>
-												<value>
-													0.2
-													<!--BW_String-->
-												</value>
-											</property>
-										</object>
-									</property>
-								</object>
-							</item>
-						</collection>
-					</property>
-				</config>
-			</component>
-		</ComponentPool>
-		<ComponentPool>
 			<type>CameraCollideComponent</type>
 			<version>1</version>
 			<component>
@@ -188,7 +149,10 @@
 				<config>
 					<property>
 						<name>Distance</name>
-						<value>5</value>
+						<value>
+							5.8
+							<!--BW_String-->
+						</value>
 					</property>
 					<property>
 						<name>becomeTransparent</name>

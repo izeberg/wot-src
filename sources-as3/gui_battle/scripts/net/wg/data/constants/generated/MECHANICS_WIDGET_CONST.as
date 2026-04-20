@@ -3,6 +3,8 @@ package net.wg.data.constants.generated
    public class MECHANICS_WIDGET_CONST
    {
       
+      public static const DEPLOYING:String = "deploying";
+      
       public static const PREPARING:String = "preparing";
       
       public static const ACTIVE:String = "active";
@@ -21,7 +23,7 @@ package net.wg.data.constants.generated
       
       public static const EMPTY:String = "empty";
       
-      public static const MECHANICS_WIDGET_STATE:Array = [PREPARING,ACTIVE,PASSIVE_ACTIVE,READY,DISABLE,IDLE,PRIME,TRANSITION,EMPTY];
+      public static const MECHANICS_WIDGET_STATE:Array = [DEPLOYING,PREPARING,ACTIVE,PASSIVE_ACTIVE,READY,DISABLE,IDLE,PRIME,TRANSITION,EMPTY];
        
       
       public function MECHANICS_WIDGET_CONST()

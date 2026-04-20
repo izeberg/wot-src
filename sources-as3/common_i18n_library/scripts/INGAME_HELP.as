@@ -309,9 +309,25 @@ package
       
       public static const DETAILSHELP_MECHANICS_HEATINGZONESGUN_PAGE1_DESCRIPTION:String = "#ingame_help:detailsHelp/mechanics/heatingZonesGun/page1/description";
       
+      public static const DETAILSHELP_MECHANICS_PROPELLANTAFTERBURNERGUN_PAGE1_TITLE:String = "#ingame_help:detailsHelp/mechanics/propellantAfterburnerGun/page1/title";
+      
+      public static const DETAILSHELP_MECHANICS_PROPELLANTAFTERBURNERGUN_PAGE1_DESCRIPTION:String = "#ingame_help:detailsHelp/mechanics/propellantAfterburnerGun/page1/description";
+      
+      public static const DETAILSHELP_MECHANICS_PROPELLANTAFTERBURNERGUN_PAGE2_TITLE:String = "#ingame_help:detailsHelp/mechanics/propellantAfterburnerGun/page2/title";
+      
+      public static const DETAILSHELP_MECHANICS_PROPELLANTAFTERBURNERGUN_PAGE2_DESCRIPTION:String = "#ingame_help:detailsHelp/mechanics/propellantAfterburnerGun/page2/description";
+      
       public static const DETAILSHELP_MECHANICS_STAGEDJETBOOSTERS_PAGE1_TITLE:String = "#ingame_help:detailsHelp/mechanics/stagedJetBoosters/page1/title";
       
       public static const DETAILSHELP_MECHANICS_STAGEDJETBOOSTERS_PAGE1_DESCRIPTION:String = "#ingame_help:detailsHelp/mechanics/stagedJetBoosters/page1/description";
+      
+      public static const DETAILSHELP_MECHANICS_LOWCHARGESHOT_PAGE1_TITLE:String = "#ingame_help:detailsHelp/mechanics/lowChargeShot/page1/title";
+      
+      public static const DETAILSHELP_MECHANICS_LOWCHARGESHOT_PAGE1_DESCRIPTION:String = "#ingame_help:detailsHelp/mechanics/lowChargeShot/page1/description";
+      
+      public static const DETAILSHELP_MECHANICS_WHEELEDDASH_PAGE1_TITLE:String = "#ingame_help:detailsHelp/mechanics/wheeledDash/page1/title";
+      
+      public static const DETAILSHELP_MECHANICS_WHEELEDDASH_PAGE1_DESCRIPTION:String = "#ingame_help:detailsHelp/mechanics/wheeledDash/page1/description";
       
       public static const DETAILSHELP_NOKEYSWARNING:String = "#ingame_help:detailsHelp/noKeysWarning";
       

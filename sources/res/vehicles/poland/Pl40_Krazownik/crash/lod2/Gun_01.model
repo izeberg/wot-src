@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/poland/Pl40_Krazownik/crash/lod2/Gun_01</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/poland/Pl40_Krazownik/crash/lod3/Gun_01</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-0.309457 -0.419492 -1.184362</min>
+		<max>0.309853 0.572720 5.658699</max>
+	</visibilityBox>
+</root>
