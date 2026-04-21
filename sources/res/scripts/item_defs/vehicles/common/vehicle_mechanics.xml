@@ -49,6 +49,49 @@
 		</mechanics>
 	</vehicle>
 	<vehicle>
+		<vehicleType>china:Ch70_PTZ_78</vehicleType>
+		<mechanics>
+			<stagedJetBoosters>
+				<priority>1</priority>
+				<rank>gold</rank>
+				<params>
+					<param>
+						130%
+						<name>stagedJetBoostersEnginePower</name>
+						<template>vehicle_hub.characteristics.templates.upTo</template>
+					</param>
+					<param>
+						112.5%
+						<!--BW_String-->
+						<name>stagedJetBoostersTopSpeed</name>
+					</param>
+					<param>
+						100%
+						<name>stagedJetBoostersSpeedLimits</name>
+					</param>
+					<param>
+						130%
+						<name>stagedJetBoostersRotationSpeed</name>
+					</param>
+					<param>
+						10
+						<name>stagedJetBoostersChargesCount</name>
+						<template>vehicle_hub.characteristics.templates.upTo</template>
+					</param>
+					<param>
+						10
+						<name>stagedJetBoostersChargeDuration</name>
+					</param>
+					<param>
+						12
+						<name>stagedJetBoostersCooldownTime</name>
+						<template>vehicle_hub.characteristics.templates.upTo</template>
+					</param>
+				</params>
+			</stagedJetBoosters>
+		</mechanics>
+	</vehicle>
+	<vehicle>
 		<vehicleType>france:F135_AS_XX_40_t</vehicleType>
 		<mechanics>
 			<stationaryReload>
@@ -86,6 +129,65 @@
 					</param>
 				</params>
 			</extraShotClip>
+		</mechanics>
+	</vehicle>
+	<vehicle>
+		<vehicleType>france:F143_Fauteur</vehicleType>
+		<mechanics>
+			<propellantAfterburnerGun>
+				<priority>1</priority>
+				<rank>gold</rank>
+				<params>
+					<param>
+						25
+						<name>propellantPreLimitDamageBonus</name>
+					</param>
+					<param>
+						100
+						<name>propellantPostLimitDamageSpike</name>
+						<template>vehicle_hub.characteristics.templates.upTo</template>
+					</param>
+					<param>
+						62.5
+						<!--BW_String-->
+						<name>propellantPostLimitDamageBonus</name>
+						<template>vehicle_hub.characteristics.templates.upTo</template>
+					</param>
+					<param>
+						2.75
+						<!--BW_String-->
+						<name>propellantChargingPerSec</name>
+						<template>vehicle_hub.characteristics.templates.upTo</template>
+					</param>
+					<param>
+						45
+						<name>propellantChargeSpendingAfterShot</name>
+						<template>vehicle_hub.characteristics.templates.upTo</template>
+					</param>
+					<param>
+						70
+						<name>propellantChargeLimit</name>
+					</param>
+					<param>
+						10
+						<name>propellantDischargingPerSec</name>
+					</param>
+					<param>
+						+100%
+						<name>propellantPostLimitDispersion</name>
+						<template>vehicle_hub.characteristics.templates.upTo</template>
+					</param>
+					<param>
+						+100%
+						<name>propellantPostLimitAimingTime</name>
+						<template>vehicle_hub.characteristics.templates.upTo</template>
+					</param>
+					<param>
+						2
+						<name>propellantOverchargeSwitchCooldown</name>
+					</param>
+				</params>
+			</propellantAfterburnerGun>
 		</mechanics>
 	</vehicle>
 	<vehicle>
@@ -136,7 +238,7 @@
 				<rank>gold</rank>
 				<params>
 					<param>
-						50
+						40
 						<name>secondaryReloadTimeSecs</name>
 						<template>vehicle_hub.characteristics.templates.upTo</template>
 					</param>
@@ -237,7 +339,7 @@
 				<rank>gold</rank>
 				<params>
 					<param>
-						33.3
+						31.9
 						<!--BW_String-->
 						<name>coolingTime</name>
 						<template>vehicle_hub.characteristics.templates.upTo</template>
@@ -249,7 +351,7 @@
 						<template>vehicle_hub.characteristics.templates.upTo</template>
 					</param>
 					<param>
-						50%
+						46%
 						<name>heatingPerShot</name>
 						<template>vehicle_hub.characteristics.templates.upTo</template>
 					</param>
@@ -786,6 +888,46 @@
 		</mechanics>
 	</vehicle>
 	<vehicle>
+		<vehicleType>usa:A195_Gorilla</vehicleType>
+		<mechanics>
+			<lowChargeShot>
+				<priority>1</priority>
+				<rank>gold</rank>
+				<params>
+					<param>
+						400
+						<name>lowChargeShotAvgDamage</name>
+						<template>vehicle_hub.characteristics.templates.upTo</template>
+					</param>
+					<param>
+						260
+						<name>lowChargeShotPenetration</name>
+						<template>vehicle_hub.characteristics.templates.upTo</template>
+					</param>
+					<param>
+						222%
+						<name>lowChargeShotRateOfFire</name>
+						<template>vehicle_hub.characteristics.templates.upTo</template>
+					</param>
+					<param>
+						125%
+						<name>lowChargeShotDispertion</name>
+						<template>vehicle_hub.characteristics.templates.upTo</template>
+					</param>
+					<param>
+						750
+						<name>lowChargeShotVelocity</name>
+						<template>vehicle_hub.characteristics.templates.upTo</template>
+					</param>
+					<param>
+						2
+						<name>lowChargeShotBlockDuration</name>
+					</param>
+				</params>
+			</lowChargeShot>
+		</mechanics>
+	</vehicle>
+	<vehicle>
 		<vehicleType>china:Ch70_PTZ_78</vehicleType>
 		<mechanics>
 			<stagedJetBoosters>
@@ -826,6 +968,49 @@
 					</param>
 				</params>
 			</stagedJetBoosters>
+		</mechanics>
+	</vehicle>
+	<vehicle>
+		<vehicleType>uk:GB158_Executor</vehicleType>
+		<mechanics>
+			<wheeledDash>
+				<priority>1</priority>
+				<rank>gold</rank>
+				<params>
+					<param>
+						150%
+						<name>wheeledDashEnginePower</name>
+						<template>vehicle_hub.characteristics.templates.upTo</template>
+					</param>
+					<param>
+						104%
+						<name>wheeledDashTopSpeed</name>
+					</param>
+					<param>
+						114%
+						<name>wheeledDashReverseSpeed</name>
+						<template>vehicle_hub.characteristics.templates.upTo</template>
+					</param>
+					<param>
+						5
+						<name>wheeledDashAbilityDuration</name>
+						<template>vehicle_hub.characteristics.templates.upTo</template>
+					</param>
+					<param>
+						15
+						<name>wheeledDashAbilityReloadTime</name>
+						<template>vehicle_hub.characteristics.templates.upTo</template>
+					</param>
+					<param>
+						-50%
+						<name>wheeledDashAbilityReloadTimeBonus</name>
+					</param>
+					<param>
+						50
+						<name>wheeledDashSpeedLimits</name>
+					</param>
+				</params>
+			</wheeledDash>
 		</mechanics>
 	</vehicle>
 </root>

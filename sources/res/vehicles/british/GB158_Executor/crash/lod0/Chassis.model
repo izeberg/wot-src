@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB158_Executor/crash/lod0/Chassis</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/british/GB158_Executor/crash/lod1/Chassis</parent>
+	<visibilityBox>
+		<min>
+			-1.537113 -0.02583 -3.254756
+			<!--BW_String-->
+		</min>
+		<max>1.541865 1.160792 2.222237</max>
+	</visibilityBox>
+	<extent>32.000000</extent>
+</root>

@@ -104,6 +104,11 @@ package net.wg.gui.battle.views.damagePanel.components.modules
          return Vector.<IDamagePanelClickableItem>(this._modules);
       }
       
+      public function isDisposed() : Boolean
+      {
+         return this._disposed;
+      }
+      
       public function reset() : void
       {
          var _loc1_:int = this._modules.length;
@@ -254,14 +259,14 @@ package net.wg.gui.battle.views.damagePanel.components.modules
          this._wheelsCount = param1;
       }
       
-      public function showDestroyed() : void
+      public function showDestroyed(param1:Boolean) : void
       {
-         var _loc2_:IDamagePanelClickableItem = null;
+         var _loc3_:IDamagePanelClickableItem = null;
          this._isDestroyed = true;
-         var _loc1_:Vector.<IDamagePanelClickableItem> = this.getItems();
-         for each(_loc2_ in _loc1_)
+         var _loc2_:Vector.<IDamagePanelClickableItem> = this.getItems();
+         for each(_loc3_ in _loc2_)
          {
-            _loc2_.showDestroyed();
+            _loc3_.showDestroyed(param1);
          }
       }
       
@@ -473,11 +478,6 @@ package net.wg.gui.battle.views.damagePanel.components.modules
             this._turretRotator.hideAsset();
          }
       }
-      
-      public function isDisposed() : Boolean
-      {
-         return this._disposed;
-      }
    }
 }
 
@@ -511,24 +511,13 @@ class YohChassisState implements IDisposable
       super();
    }
    
-   public function updateTrackState(param1:String, param2:String) : void
+   public function dispose() : void
    {
-      this[param1].updateState(param2);
-   }
-   
-   public function updateRepairTime(param1:String, param2:int, param3:int) : void
-   {
-      this[param1].updateRepairTime(param2,param3);
-   }
-   
-   public function reset() : void
-   {
-      this.leftTrack0.reset();
-      this.leftTrack1.reset();
-      this.rightTrack1.reset();
-      this.rightTrack0.reset();
-      this._prevState = BATTLE_ITEM_STATES.NORMAL;
-      this._currentState = BATTLE_ITEM_STATES.NORMAL;
+      this._disposed = true;
+      this.leftTrack0 = null;
+      this.leftTrack1 = null;
+      this.rightTrack0 = null;
+      this.rightTrack1 = null;
    }
    
    public function getChassisState() : String
@@ -583,18 +572,34 @@ class YohChassisState implements IDisposable
       return null;
    }
    
-   public function dispose() : void
-   {
-      this._disposed = true;
-      this.leftTrack0 = null;
-      this.leftTrack1 = null;
-      this.rightTrack0 = null;
-      this.rightTrack1 = null;
-   }
-   
    public function hasSameState() : Boolean
    {
       return this._currentState == this._prevState;
+   }
+   
+   public function isDisposed() : Boolean
+   {
+      return this._disposed;
+   }
+   
+   public function reset() : void
+   {
+      this.leftTrack0.reset();
+      this.leftTrack1.reset();
+      this.rightTrack1.reset();
+      this.rightTrack0.reset();
+      this._prevState = BATTLE_ITEM_STATES.NORMAL;
+      this._currentState = BATTLE_ITEM_STATES.NORMAL;
+   }
+   
+   public function updateRepairTime(param1:String, param2:int, param3:int) : void
+   {
+      this[param1].updateRepairTime(param2,param3);
+   }
+   
+   public function updateTrackState(param1:String, param2:String) : void
+   {
+      this[param1].updateState(param2);
    }
    
    private function saveState(param1:String) : String
@@ -602,11 +607,6 @@ class YohChassisState implements IDisposable
       this._prevState = this._currentState;
       this._currentState = param1;
       return param1;
-   }
-   
-   public function isDisposed() : Boolean
-   {
-      return this._disposed;
    }
 }
 
@@ -630,6 +630,20 @@ class PartState
       super();
    }
    
+   public function reset() : void
+   {
+      this.state = BATTLE_ITEM_STATES.NORMAL;
+      this.prevState = BATTLE_ITEM_STATES.NORMAL;
+      this.repairTime = Values.ZERO;
+      this.repairPercent = Values.ZERO;
+   }
+   
+   public function updateRepairTime(param1:int, param2:int) : void
+   {
+      this.repairTime = param1;
+      this.repairPercent = param2;
+   }
+   
    public function updateState(param1:String) : void
    {
       this.prevState = this.state;
@@ -639,19 +653,5 @@ class PartState
          this.repairTime = Values.ZERO;
          this.repairPercent = Values.ZERO;
       }
-   }
-   
-   public function updateRepairTime(param1:int, param2:int) : void
-   {
-      this.repairTime = param1;
-      this.repairPercent = param2;
-   }
-   
-   public function reset() : void
-   {
-      this.state = BATTLE_ITEM_STATES.NORMAL;
-      this.prevState = BATTLE_ITEM_STATES.NORMAL;
-      this.repairTime = Values.ZERO;
-      this.repairPercent = Values.ZERO;
    }
 }

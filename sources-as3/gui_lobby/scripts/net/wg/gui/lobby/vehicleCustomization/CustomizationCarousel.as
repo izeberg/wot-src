@@ -186,13 +186,14 @@ package net.wg.gui.lobby.vehicleCustomization
       
       override protected function updateLayout(param1:int, param2:int = 0) : void
       {
+         var _loc5_:int = 0;
          var _loc9_:Number = NaN;
          var _loc10_:Number = NaN;
          var _loc11_:Point = null;
          var _loc12_:Rectangle = null;
          var _loc3_:int = param2 + OFFSET_ARROW + EXTRA_OFFSET + this.leftOffset;
          var _loc4_:int = param1 - _loc3_ - OFFSET_ARROW;
-         var _loc5_:int = _loc4_ + leftArrowOffset - rightArrowOffset;
+         _loc5_ = _loc4_ + leftArrowOffset - rightArrowOffset;
          if(this.shopEntryPointBtn)
          {
             this.shopEntryPointBtn.x = SHOP_ENTRY_X;

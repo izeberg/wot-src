@@ -105,7 +105,7 @@ class ParamsConfiguration(object):
                  'isCurrentUserDossier', 'historicalBattleID', 'checkAchievementExistence',
                  'simplifiedOnly', 'externalCrewParam', 'vehicleLevel', 'arenaType',
                  'colorless', 'showNormalizationAngle', 'showReboundAngle', 'showBasic',
-                 'showPenetrationLoss', 'showScreensArmorMultiplier')
+                 'showPenetrationLoss', 'showScreensArmorMultiplier', 'showBasicIsUsedinCalculations')
 
     def __init__(self):
         self.vehicle = None
@@ -128,6 +128,7 @@ class ParamsConfiguration(object):
         self.showBasic = True
         self.showPenetrationLoss = False
         self.showScreensArmorMultiplier = False
+        self.showBasicIsUsedinCalculations = False
         return
 
 
@@ -721,6 +722,7 @@ class ArmorInspectorContext(HangarContext):
         value.showBasic = False
         value.showPenetrationLoss = True
         value.showScreensArmorMultiplier = True
+        value.showBasicIsUsedinCalculations = True
         value.colorless = True
         return value
 

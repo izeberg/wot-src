@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/3D_Customization/Cus_203_LS_EMP_GunLamp/normal/lod2/Cus_203_LS_EMP_GunLamp</parent>
+	<extent>64.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.367047 -0.200000 -0.158668</min>
+		<max>0.318080 0.419477 0.454330</max>
+	</visibilityBox>
+	<nodefullVisual>content/3D_Customization/Cus_203_LS_EMP_GunLamp/normal/lod1/Cus_203_LS_EMP_GunLamp</nodefullVisual>
+</root>

@@ -15,24 +15,33 @@ package net.wg.gui.battle.views.widgetsPanel.common
       
       public var centerSide:Sprite = null;
       
-      private var _isDisposable:Boolean = false;
+      private var _isDisposed:Boolean = false;
       
       public function HotkeyMask()
       {
          super();
       }
       
-      public final function dispose() : void
+      protected function onDispose() : void
       {
          this.leftSide = null;
          this.rightSide = null;
          this.centerSide = null;
-         this._isDisposable = true;
       }
       
-      public function isDisposed() : Boolean
+      public final function dispose() : void
       {
-         return this._isDisposable;
+         if(this._isDisposed)
+         {
+            return;
+         }
+         this.onDispose();
+         this._isDisposed = true;
+      }
+      
+      public final function isDisposed() : Boolean
+      {
+         return this._isDisposed;
       }
       
       public function setSize(param1:int) : void

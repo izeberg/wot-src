@@ -35,6 +35,14 @@ msgstr "This mode is unavailable on your current server %(button)s"
 msgid "alertMessage/ceasefireUnavailable"
 msgstr "This mode is unavailable on all servers."
 
+msgid "alertMessage/icon/tooltipBody"
+msgstr ""
+"You must have at least %(count)s suitable vehicles for the mode. See the "
+"About Onslaught page for details."
+
+msgid "alertMessage/icon/tooltipHeader"
+msgstr "Not enough suitable vehicles"
+
 msgid "alertMessage/modeOffline"
 msgstr "Database error. Game mode unavailable."
 
@@ -46,6 +54,9 @@ msgstr "Battles are not available on the %(serverName)s server"
 
 msgid "alertMessage/notAvailableEnd"
 msgstr "Battles are not available on the %(serverName)s server"
+
+msgid "alertMessage/notEnoughVehicles"
+msgstr "Not enough suitable vehicles %(info)s"
 
 msgid "alertMessage/notSet"
 msgstr "This mode is not available on the %(serverName)s server"
@@ -114,6 +125,111 @@ msgstr[1] ""
 msgstr[2] ""
 "CLAIM\n"
 "REWARDS"
+
+msgid "banView/actionButtons/confirm"
+msgstr "Vote"
+
+msgid "banView/actionButtons/description/confirmed/bannedVehicle"
+msgstr "You have already voted for the %(vehicleName)s"
+
+msgid "banView/actionButtons/description/confirmed/withoutBan"
+msgstr "Do Not Ban"
+
+msgid "banView/actionButtons/description/notSelectedVehicle"
+msgstr "Propose a vehicle to ban"
+
+msgid "banView/actionButtons/description/prepick"
+msgstr ""
+"You can only vote\n"
+"during the ban vote stage"
+
+msgid "banView/actionButtons/description/selectedVehicle/bannedVehicle"
+msgstr ""
+"You are proposing the:\n"
+"%(vehicleName)s"
+
+msgid "banView/actionButtons/description/teamAffect"
+msgstr ""
+"Someone on your team\n"
+"has selected the vehicle you want to ban"
+
+msgid "banView/actionButtons/description/wait"
+msgstr "Wait for the ban vote stage to end"
+
+msgid "banView/button/back"
+msgstr "BACK"
+
+msgid "banView/button/ban"
+msgstr "To Ban Selection"
+
+msgid "banView/button/description"
+msgstr "TO VEHICLE SELECTION"
+
+msgid "banView/description/prepick"
+msgstr ""
+"Select the most suitable vehicle for this map and your team composition"
+
+msgid "banView/description/voting"
+msgstr "Choose a vehicle you want to exclude from this battle"
+
+msgid "banView/factory/candidate"
+msgstr "Ban candidate: %(vehicleName)s"
+
+msgid "banView/factory/candidates"
+msgstr "Team ban candidates"
+
+msgid "banView/factory/noCandidates"
+msgstr "No ban candidate"
+
+msgid "banView/factory/pick"
+msgstr "Your candidate: %(vehicleName)s"
+
+msgid "banView/noBan"
+msgstr "Do Not Ban"
+
+msgid "banView/title/prepick"
+msgstr "Vehicle Pre-Selection Stage"
+
+msgid "banView/title/voting"
+msgstr "Ban Vote Stage"
+
+msgid "banView/tooltip/confirmed"
+msgstr "Vote confirmed"
+
+msgid "banView/tooltip/noAction"
+msgstr "No Action Made"
+
+msgid "banView/tooltip/noActionDescription"
+msgstr "This player has not proposed a vehicle to ban yet."
+
+msgid "banView/tooltip/notConfirmed"
+msgstr "Proposed"
+
+msgid "banView/vehicleTypes/AT_SPG"
+msgstr "Tank destroyers"
+
+msgid "banView/vehicleTypes/heavyTank"
+msgstr "Heavy tanks"
+
+msgid "banView/vehicleTypes/lightTank"
+msgstr "Light tanks"
+
+msgid "banView/vehicleTypes/mediumTank"
+msgstr "Medium tanks"
+
+msgid "banView/withoutBan"
+msgstr "Do Not Ban"
+
+msgid "banWidget/allies"
+msgstr "Allied votes"
+
+msgid "banWidget/enemies"
+msgstr "Enemy votes"
+
+msgid "banWidget/tooltip"
+msgstr ""
+"The team did not agree on a vehicle to ban, so a random vehicle from those "
+"with the most votes was banned."
 
 msgid "battleCarousel/filterButtonTooltip/body"
 msgstr "Configure the vehicle display by type, role, and nation."
@@ -323,6 +439,9 @@ msgstr[2] "Season of the Jade Dragon will last for %(days)d days"
 msgid "calendarDay/title"
 msgstr "Schedule"
 
+msgid "carousel/banned"
+msgstr "Banned"
+
 msgid "claimRewards/button"
 msgstr "Claim Reward"
 
@@ -351,15 +470,19 @@ msgstr "<1 min"
 msgid "crewMembersTooltip/description"
 msgstr ""
 "This special crew comprises tankers from around the world, united under the "
-"leadership of their Commander. All of them have enough Crew XP to train "
-"three perks, allowing them to improve the vehicle's performance—as well as "
-"bring their own personal flair to the battlefield."
+"leadership of their Commander. All of them have Brothers in Arms as a zero "
+"perk and enough Crew XP to train two more perks, allowing them to improve "
+"the vehicle's performance—as well as bring their own personal flair to the "
+"battlefield."
 
 msgid "crewMembersTooltip/perks"
 msgstr "Perks"
 
 msgid "crewMembersTooltip/subHeading"
 msgstr "Onslaught. Year of the Dragon"
+
+msgid "crewMembersTooltip/zeroPerks"
+msgstr "Zero perks"
 
 msgid "damageIndicatorTooltip/damage/day/heading"
 msgstr "Average damage (day): %(averageDamageDealt)s"
@@ -535,6 +658,13 @@ msgstr "ABOUT THE EVENT"
 msgid "intro/confirmButton"
 msgstr "Affirmative!"
 
+msgid "intro/description/banPhase"
+msgstr ""
+"Each team can completely ban a vehicle from a battle. Coordinate votes with "
+"allies to exclude your most feared machine or to prepare an unexpected "
+"lineup for enemies. If your vehicle is banned, you can choose from several "
+"pre-configured rentals instead."
+
 msgid "intro/description/onslaughtModifiers"
 msgstr ""
 "The mode has modifiers that change certain parameters of the vehicle, such "
@@ -583,6 +713,9 @@ msgstr ""
 "vehicles in the Garage, then choose the best one based on the features of "
 "the given map once you get into battle. When selecting your vehicle, also "
 "consider which vehicles your allies have chosen."
+
+msgid "intro/title/banPhase"
+msgstr "VEHICLE BANS"
 
 msgid "intro/title/onslaughtModifiers"
 msgstr "ONSLAUGHT MODIFIERS"
@@ -744,23 +877,95 @@ msgstr "Forward"
 msgid "pagination/prev"
 msgstr "Back"
 
+msgid "pbs/bans/title"
+msgstr "BANNED VEHICLES"
+
+msgid "pbs/missionsProgress/customization/title"
+msgstr "ONSLAUGHT 2D STYLE"
+
+msgid "pbs/missionsProgress/notificationTabs/customization"
+msgstr "2D STYLE MISSION COMPLETED!"
+
+msgid "pbs/missionsProgress/notificationTabs/tokenRewards"
+msgstr "WEEKLY MISSION #%(count)s COMPLETED!"
+
+msgid "pbs/missionsProgress/notificationTabs/weekly"
+msgstr "WEEKLY MISSION COMPLETED!"
+
+msgid "pbs/missionsProgress/weekly/title"
+msgstr "ONSLAUGHT WEEKLY"
+
+msgid "pbs/overview/extraLeaveStatus/lose"
+msgstr "DEFEAT, BECAUSE YOU"
+
+msgid "pbs/overview/extraLeaveStatus/tie"
+msgstr "DRAW, BECAUSE YOU"
+
+msgid "pbs/overview/extraLeaveStatus/win"
+msgstr "VICTORY, BUT YOU"
+
+msgid "pbs/overview/highRank/promoted"
+msgstr "Promoted to %(rank)s"
+
+msgid "pbs/overview/lowRank/default"
+msgstr "%(rank)s, %(division)s"
+
+msgid "pbs/overview/lowRank/demoted"
+msgstr "Demoted to %(rank)s, %(division)s"
+
+msgid "pbs/overview/lowRank/promoted"
+msgstr "Promoted to %(rank)s, %(division)s"
+
+msgid "pbs/overview/qualification/description"
+msgstr "Battles fought"
+
+msgid "pbs/overview/qualification/title"
+msgstr "Qualification"
+
+msgid "pbs/overview/warning/leave/default"
+msgstr "You have received a disciplinary penalty: Penalty to Rating Points"
+
+msgid "pbs/overview/warning/leave/qualification"
+msgstr ""
+"You have received a disciplinary penalty: After completing Qualification, "
+"your rating will be reduced."
+
+msgid "pbs/rankDescription/fifth"
+msgstr ""
+"To reach the Legend rank, be among the {ede6d9e5_Open}top "
+"%(topPercentage)%{ede6d9e5_Close} of players on the Leaderboard."
+
+msgid "pbs/rankDescription/sixth"
+msgstr ""
+"To stay at the Legend rank, be among the {ede6d9e5_Open}top "
+"%(topPercentage)%{ede6d9e5_Close} of players on the Leaderboard."
+
+msgid "pbs/tooltip/prestige_points_info_tooltip/bullet"
+msgstr "•"
+
+msgid "pbs/tooltip/prestige_points_info_tooltip/footer"
+msgstr "See the About Onslaught page for details."
+
+msgid "pbs/tooltip/prestige_points_info_tooltip/header"
+msgstr "Prestige Points"
+
+msgid "pbs/tooltip/prestige_points_info_tooltip/listContent"
+msgstr ""
+"Causing damage\n"
+"Spotting assists\n"
+"Destroying tracks\n"
+"Causing critical hits\n"
+"Destroying enemy vehicles\n"
+"And more"
+
+msgid "pbs/tooltip/prestige_points_info_tooltip/listHeader"
+msgstr ""
+"This special resource affects the number of Rating Points earned and lost in"
+" battle. Prestige Points can be earned for performing combat actions "
+"including:"
+
 msgid "percentage"
 msgstr "%(percentageValue)s%"
-
-msgid "prebattleTimer/info/readyBtn/label"
-msgstr "Confirm Selection"
-
-msgid "prebattleTimer/info/readyBtn/tooltip/body"
-msgstr "After confirming, you will not be able to select another vehicle."
-
-msgid "prebattleTimer/wait/additionalInfo"
-msgstr "Select the best vehicle for the current map and your team."
-
-msgid "prebattleTimer/wait/header"
-msgstr "Awaiting players..."
-
-msgid "prebattleTimer/wait/selectVehicle"
-msgstr "Select a vehicle"
 
 msgid "prestigeIndicatorTooltip/prestige/day/heading"
 msgstr "Average Prestige Points (day): %(averagePrestige)s"
@@ -1388,7 +1593,7 @@ msgid "rewards/subtitle/customizations"
 msgstr "{b2afab_Open}For Tier %(vehicleLevel)s vehicles{b2afab_Close}"
 
 msgid "rewards/subtitle/styleProgress"
-msgstr "{b2afab_Open}For the Rex Draconis (Crimson) style{b2afab_Close}"
+msgstr "{b2afab_Open}For the %(progressionStyleName)s style{b2afab_Close}"
 
 msgid "rewards/subtitle/vehicles_rent"
 msgstr "Tier %(vehicleLevel)s"
@@ -2003,6 +2208,11 @@ msgstr "GRAND FINAL"
 msgid "tournament/huya"
 msgstr "Watch on Huya"
 
+msgid "tournament/lastPrizePoolUpdate"
+msgstr ""
+"The prize pool is formed from players' bundle purchases. Last updated at: "
+"%(lastPrizePoolUpdate)s"
+
 msgid "tournament/noMatches"
 msgstr "NO MORE MATCHES SCHEDULED"
 
@@ -2043,10 +2253,13 @@ msgid "tournament/toShop"
 msgstr "Visit Shop"
 
 msgid "tournament/tokenStore/button/ols"
-msgstr "To Store"
+msgstr "Exchange"
 
 msgid "tournament/tokenStore/ols"
-msgstr "OLS TOKEN STORE"
+msgstr "OLS TOKENS"
+
+msgid "tournament/tokenStore/unavailable"
+msgstr "Available in:"
 
 msgid "tournament/tooltip/infoPageButton/header"
 msgstr "About the tournament"
@@ -2103,7 +2316,7 @@ msgstr ""
 "born on the battlefield!"
 
 msgid "tournamentsEntryPointTooltip/heading/ols"
-msgstr "OLS Season 5"
+msgstr "OLS Season 6"
 
 msgid "tournamentsEntryPointTooltip/heading/wci"
 msgstr "WCI'25"
@@ -2237,74 +2450,90 @@ msgstr[2] "%(value)s new missions in:"
 msgid "whatsNewButtonLabel"
 msgstr "SEASON UPDATES"
 
+msgid "whatsNewView/banner/description"
+msgstr ""
+"This season marks your last chance to claim valuable rewards, including the "
+"exclusive Ashbringer Tier X heavy tank with all the unique 3D styles you've "
+"earned for it and a fearless crew with Brothers in Arms as a zero perk, plus"
+" improved and Experimental Equipment to select from, an eye-catching 2D "
+"style, and more. Don't miss out—your victory awaits on the battlefield!"
+
+msgid "whatsNewView/banner/heading"
+msgstr "Seize the final moments of the Year of the Dragon!"
+
 msgid "whatsNewView/banner/title/large"
-msgstr "SEASON OF THE CRIMSON DRAGON"
+msgstr "SEASON OF THE JADE DRAGON"
 
 msgid "whatsNewView/banner/title/small"
 msgstr "ONSLAUGHT. WHAT'S NEW?"
 
 msgid "whatsNewView/button/ok"
-msgstr "Time to Write History!"
+msgstr "Ban-tastic!"
 
-msgid "whatsNewView/comms/description"
+msgid "whatsNewView/detailedBattleResults/description"
 msgstr ""
-"Comms Centers can now be recaptured after {eeede9e6_Open}75{eeede9e6_Close} "
-"seconds instead of the previous {eeede9e6_Open}90{eeede9e6_Close}."
+"The improved post-battle results screen with its fresh Update 2.0 design "
+"will now give you additional mode-related information after every battle."
 
-msgid "whatsNewView/comms/heading"
-msgstr "Comms Center"
+msgid "whatsNewView/detailedBattleResults/heading"
+msgstr "Detailed Battle Results"
+
+msgid "whatsNewView/equippedRentals/description"
+msgstr ""
+"Have no fear if your favorite vehicle was excluded. Rentals now come with "
+"pre-configured crew, equipment, shells, and consumables."
+
+msgid "whatsNewView/equippedRentals/heading"
+msgstr "Ready-to-Go Rentals %(tag)s"
 
 msgid "whatsNewView/intro/description"
 msgstr ""
-"Track your rating journey through the season, adjust your playstyle based on"
-" your best vehicles' performance, and see which customization element you're"
-" closest to earning on the updated main page!"
+"This season, each team can completely ban a vehicle from a battle. "
+"Coordinate votes with allies to exclude your most feared machine or to "
+"prepare an unexpected lineup for enemies."
 
 msgid "whatsNewView/intro/heading"
-msgstr "Detailed Statistics Are Here! %(tag)s"
+msgstr "Vehicle Bans %(tag)s"
 
 msgid "whatsNewView/mapChanges/heading"
 msgstr "Maps"
 
-msgid "whatsNewView/newVehicles"
-msgid_plural "plural/whatsNewView/newVehicles"
-msgstr[0] ""
-"New Vehicle Available in\n"
-"Onslaught&nbsp;%(tag)s"
-msgstr[1] ""
-"New Vehicles Available in\n"
-"Onslaught&nbsp;%(tag)s"
-msgstr[2] ""
-"New Vehicles Available in\n"
-"Onslaught&nbsp;%(tag)s"
+msgid "whatsNewView/newAvailableVehicles/heading"
+msgstr "New Vehicles Available in Onslaught"
+
+msgid "whatsNewView/rentalVehicles/heading"
+msgstr "Rental Vehicles"
+
+msgid "whatsNewView/roleSkillUpdate/description"
+msgstr ""
+"The recently released Ares 90 Tier X American medium tank is now available "
+"in the mode with an adjusted Role Skill."
+
+msgid "whatsNewView/roleSkillUpdate/heading"
+msgstr "Role Skill Update %(tag)s"
 
 msgid "whatsNewView/shopUpdates/description"
 msgstr ""
-"A brand-new Tier IX light tank, the {eeede9e6_Open}LTC II{eeede9e6_Close}, "
-"is now available in the Onslaught Shop, as well as two new pieces of "
-"improved equipment: {eeede9e6_Open}Telescopic{eeede9e6_Close} "
-"{eeede9e6_Open}Observation{eeede9e6_Close} "
-"{eeede9e6_Open}System{eeede9e6_Close} and "
-"{eeede9e6_Open}Tactical{eeede9e6_Close} "
-"{eeede9e6_Open}Concealment{eeede9e6_Close} "
-"{eeede9e6_Open}Net{eeede9e6_Close}. Improved Final Drive has been removed "
-"from the Onslaught Shop and will become available in the regular in-game "
-"Store after its next update."
+"The 114 SP2 is now available for purchase at the Silver rank in the "
+"Onslaught Shop."
 
 msgid "whatsNewView/shopUpdates/heading"
-msgstr "Bond Shop Updates"
+msgstr "Shop Updates %(tag)s"
 
 msgid "whatsNewView/stamp/removed"
 msgstr "EXCLUDED"
 
 msgid "whatsNewView/stamp/underDevelopment"
-msgstr "++UNDER REDEVELOPMENT++"
+msgstr "UNDER REDEVELOPMENT"
 
 msgid "whatsNewView/tag/attention"
 msgstr "Attention"
 
 msgid "whatsNewView/tag/changed"
 msgstr "Changed"
+
+msgid "whatsNewView/tag/experimental"
+msgstr "Experimental"
 
 msgid "whatsNewView/tag/new"
 msgstr "New"
@@ -2317,17 +2546,6 @@ msgstr "Revamped"
 
 msgid "whatsNewView/tag/seasonUpdate"
 msgstr "Seasonal Update"
-
-msgid "whatsNewView/unavailable/description"
-msgstr ""
-"The {eeede9e6_Open}Ares 90{eeede9e6_Close} Tier X American medium tank is "
-"temporarily unavailable in the mode."
-
-msgid "whatsNewView/unavailable/heading"
-msgstr "Temporarily Unavailable"
-
-msgid "whatsNewView/vehiclesForRent/heading"
-msgstr "Rental Vehicles"
 
 msgid "whatsNewView/watchVideo"
 msgstr "Watch Video"

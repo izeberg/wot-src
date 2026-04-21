@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/american/A195_Gorilla/crash/lod2/Hull</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.964733 -0.962257 -3.790750</min>
+		<max>2.000859 0.963918 3.759854</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/american/A195_Gorilla/crash/lod1/Hull</nodefullVisual>
+</root>

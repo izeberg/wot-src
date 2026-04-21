@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-0.099210 -0.200000 -0.090612</min>
+		<max>0.099210 0.554573 0.375656</max>
+	</visibilityBox>
+	<parent>content/3D_Customization/Cus_209_OB_Lantern/normal/lod1/Cus_209_OB_Lantern_01</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>content/3D_Customization/Cus_209_OB_Lantern/normal/lod0/Cus_209_OB_Lantern_01</nodefullVisual>
+</root>

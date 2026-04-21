@@ -116,8 +116,6 @@ package net.wg.gui.battle.views
       
       protected var piercingDebugPanel:PiercingDebugPanel = null;
       
-      protected var isPostMortem:Boolean = false;
-      
       protected var hitTestFix:Sprite;
       
       private var _messagesContainer:Sprite = null;
@@ -151,13 +149,12 @@ package net.wg.gui.battle.views
       
       override public function updateStage(param1:Number, param2:Number) : void
       {
-         var _loc4_:int = 0;
          var _loc5_:int = 0;
          var _loc6_:Number = NaN;
          var _loc7_:int = 0;
          super.updateStage(param1,param2);
          var _loc3_:int = param1 >> 1;
-         _loc4_ = param2 >> 1;
+         var _loc4_:int = param2 >> 1;
          _originalWidth = param1;
          _originalHeight = param2;
          setSize(param1,param2);
@@ -491,12 +488,7 @@ package net.wg.gui.battle.views
             return;
          }
          this.postmortemPanelUI.setCompVisible(param1);
-         this.isPostMortem = param1;
          this.vehicleMessageListPositionUpdate();
-         if(this.isPostMortem)
-         {
-            this.updateBattleDamageLogPosInPostmortem();
-         }
       }
       
       public function as_setArtyShotIndicatorFlag(param1:Boolean) : void
@@ -571,10 +563,6 @@ package net.wg.gui.battle.views
       protected function createStatisticsController() : BattleStatisticDataController
       {
          return null;
-      }
-      
-      protected function updateBattleDamageLogPosInPostmortem() : void
-      {
       }
       
       protected function initializeStatisticsController(param1:BattleStatisticDataController) : void

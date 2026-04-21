@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from enum import Enum
 import logging, typing
 from dog_tags_common.components_config import componentConfigAdapter as componentConfig

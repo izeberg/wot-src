@@ -24,7 +24,7 @@ package net.wg.gui.components.hintPanel
       
       private var _keyGap:int = 35;
       
-      private var _keySideOffset:int;
+      private var _keySideOffset:int = 17;
       
       private var _disposed:Boolean = false;
       
@@ -32,7 +32,6 @@ package net.wg.gui.components.hintPanel
       {
          this._keys = new Vector.<KeyViewer>(0);
          this._pluses = new Vector.<Image>(0);
-         this._keySideOffset = KeyViewer.DEFAULT_KEY_SIDE_OFFSET;
          super();
          this._keyClass = getDefinitionByName(Linkages.KEY_VIEWER) as Class;
       }

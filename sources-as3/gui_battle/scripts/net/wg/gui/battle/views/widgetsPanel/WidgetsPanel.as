@@ -3,10 +3,10 @@ package net.wg.gui.battle.views.widgetsPanel
    import flash.display.Sprite;
    import flash.utils.Dictionary;
    import net.wg.data.constants.InvalidationType;
-   import net.wg.data.constants.Linkages;
-   import net.wg.data.constants.generated.BATTLE_VIEW_ALIASES;
    import net.wg.data.constants.generated.BATTLE_WIDGETS_CONSTS;
    import net.wg.data.constants.generated.CROSSHAIR_VIEW_ID;
+   import net.wg.gui.battle.views.widgetsPanel.settings.WidgetProperties;
+   import net.wg.gui.battle.views.widgetsPanel.settings.WidgetSettings;
    import net.wg.infrastructure.base.meta.IWidgetsPanelMeta;
    import net.wg.infrastructure.base.meta.impl.WidgetsPanelMeta;
    
@@ -63,6 +63,7 @@ package net.wg.gui.battle.views.widgetsPanel
       override protected function draw() : void
       {
          super.draw();
+         var _loc1_:BaseVehicleMechanicsWidget = null;
          if(isInvalid(InvalidationType.SIZE))
          {
             if(this._crosshairType == CROSSHAIR_VIEW_ID.ARCADE)
@@ -81,8 +82,11 @@ package net.wg.gui.battle.views.widgetsPanel
             }
             this.infoSlot.x = INFO_OFFSET;
             this.infoSlot.y = INFO_OFFSET;
+            for each(_loc1_ in this._componentsStorage)
+            {
+               _loc1_.crosshairType = this._crosshairType;
+            }
          }
-         var _loc1_:BaseVehicleMechanicsWidget = null;
          if(isInvalid(InvalidationType.DATA))
          {
             for each(_loc1_ in this._componentsStorage)
@@ -107,10 +111,7 @@ package net.wg.gui.battle.views.widgetsPanel
       public function addWidget(param1:String) : void
       {
          var _loc2_:Sprite = null;
-         var _loc3_:String = null;
-         var _loc4_:Class = null;
-         var _loc5_:String = null;
-         var _loc6_:BaseVehicleMechanicsWidget = null;
+         var _loc4_:BaseVehicleMechanicsWidget = null;
          if(BATTLE_WIDGETS_CONSTS.MECHANICS_WIDGETS_RIGHT.indexOf(param1) > -1)
          {
             _loc2_ = this.mechanicsSlotRight;
@@ -132,94 +133,20 @@ package net.wg.gui.battle.views.widgetsPanel
             DebugUtils.LOG_ERROR("Incorrect type of slot for " + param1 + " widget!");
             _loc2_ = this.infoSlot;
          }
-         switch(param1)
+         var _loc3_:WidgetProperties = WidgetSettings.instance.getProperties(param1);
+         if(!_loc3_)
          {
-            case BATTLE_WIDGETS_CONSTS.ROCKET_ACCELERATOR:
-               _loc3_ = Linkages.ROCKET_ACCELERATOR;
-               _loc4_ = RocketAcceleratorWidget;
-               _loc5_ = BATTLE_VIEW_ALIASES.ROCKET_ACCELERATOR_INDICATOR;
-               break;
-            case BATTLE_WIDGETS_CONSTS.RECHARGEABLE_NITRO:
-               _loc3_ = Linkages.RECHARGEABLE_NITRO;
-               _loc4_ = RechargeableNitroWidget;
-               _loc5_ = BATTLE_VIEW_ALIASES.RECHARGEABLE_NITRO_WIDGET;
-               break;
-            case BATTLE_WIDGETS_CONSTS.CONCENTRATION:
-               _loc3_ = Linkages.CONCENTRATION;
-               _loc4_ = ConcentrationWidget;
-               _loc5_ = BATTLE_VIEW_ALIASES.CONCENTRATION_WIDGET;
-               break;
-            case BATTLE_WIDGETS_CONSTS.POWER:
-               _loc3_ = Linkages.POWER;
-               _loc4_ = PowerWidget;
-               _loc5_ = BATTLE_VIEW_ALIASES.POWER_WIDGET;
-               break;
-            case BATTLE_WIDGETS_CONSTS.SUPPORT_WEAPON:
-               _loc3_ = Linkages.SUPPORT_WEAPON;
-               _loc4_ = SupportWeaponWidget;
-               _loc5_ = BATTLE_VIEW_ALIASES.SUPPORT_WEAPON;
-               break;
-            case BATTLE_WIDGETS_CONSTS.PILLBOX_SIEGE:
-               _loc3_ = Linkages.PILLBOX_SIEGE;
-               _loc4_ = PillboxSiegeWidget;
-               _loc5_ = BATTLE_VIEW_ALIASES.PILLBOX_SIEGE_WIDGET;
-               break;
-            case BATTLE_WIDGETS_CONSTS.CHARGE_SHOT:
-               _loc3_ = Linkages.CHARGE_SHOT;
-               _loc4_ = ChargeShotWidget;
-               _loc5_ = BATTLE_VIEW_ALIASES.CHARGE_SHOT_WIDGET;
-               break;
-            case BATTLE_WIDGETS_CONSTS.STANCE_DANCE_FIGHT:
-               _loc3_ = Linkages.STANCE_DANCE_FIGHT;
-               _loc4_ = StanceDanceFightWidget;
-               _loc5_ = BATTLE_VIEW_ALIASES.STANCE_DANCE_WIDGET_FIGHT;
-               break;
-            case BATTLE_WIDGETS_CONSTS.STANCE_DANCE_TURBO:
-               _loc3_ = Linkages.STANCE_DANCE_TURBO;
-               _loc4_ = StanceDanceTurboWidget;
-               _loc5_ = BATTLE_VIEW_ALIASES.STANCE_DANCE_WIDGET_TURBO;
-               break;
-            case BATTLE_WIDGETS_CONSTS.TARGET_DESIGNATOR_WIDGET:
-               _loc3_ = Linkages.TARGET_DESIGNATOR_WIDGET;
-               _loc4_ = TargetDesignatorWidget;
-               _loc5_ = BATTLE_VIEW_ALIASES.TARGET_DESIGNATOR_WIDGET;
-               break;
-            case BATTLE_WIDGETS_CONSTS.CHARGEABLE_BURST:
-               _loc3_ = Linkages.CHARGEABLE_BURST;
-               _loc4_ = ChargeableBurstWidget;
-               _loc5_ = BATTLE_VIEW_ALIASES.CHARGEABLE_BURST_WIDGET;
-               break;
-            case BATTLE_WIDGETS_CONSTS.STATIONARY_RELOAD:
-               _loc3_ = Linkages.STATIONARY_RELOAD;
-               _loc4_ = StationaryReloadWidget;
-               _loc5_ = BATTLE_VIEW_ALIASES.STATIONARY_RELOAD_WIDGET;
-               break;
-            case BATTLE_WIDGETS_CONSTS.TEMPERATURE_GUN_OVERHEAT:
-               _loc3_ = Linkages.TEMPERATURE_GUN_OVERHEAT;
-               _loc4_ = TemperatureGunOverheatWidget;
-               _loc5_ = BATTLE_VIEW_ALIASES.TEMPERATURE_GUN_OVERHEAT_WIDGET;
-               break;
-            case BATTLE_WIDGETS_CONSTS.TEMPERATURE_GUN_HEAT_ZONES:
-               _loc3_ = Linkages.TEMPERATURE_GUN_HEAT_ZONES;
-               _loc4_ = TemperatureGunHeatZonesWidget;
-               _loc5_ = BATTLE_VIEW_ALIASES.TEMPERATURE_GUN_HEAT_ZONES_WIDGET;
-               break;
-            case BATTLE_WIDGETS_CONSTS.STAGED_JET_BOOSTERS:
-               _loc3_ = Linkages.STAGED_JET_BOOSTERS;
-               _loc4_ = StagedJetBoostersWidget;
-               _loc5_ = BATTLE_VIEW_ALIASES.STAGED_JET_BOOSTERS_WIDGET;
-               break;
-            default:
-               return;
+            return;
          }
-         if(!this._componentsStorage[_loc5_])
+         if(!this._componentsStorage[_loc3_.alias])
          {
-            _loc6_ = App.utils.classFactory.getComponent(_loc3_,_loc4_);
-            _loc2_.addChild(_loc6_);
+            _loc4_ = App.utils.classFactory.getComponent(_loc3_.linkage,_loc3_.cls);
+            _loc2_.addChild(_loc4_);
             _loc2_.visible = true;
-            this.registerComponent(_loc6_,_loc5_);
-            _loc6_.isReplay = this._isReplay;
-            _loc6_.isPlayer = this._isPlayer;
+            this.registerComponent(_loc4_,_loc3_.alias);
+            _loc4_.isReplay = this._isReplay;
+            _loc4_.isPlayer = this._isPlayer;
+            _loc4_.crosshairType = this._crosshairType;
          }
       }
       

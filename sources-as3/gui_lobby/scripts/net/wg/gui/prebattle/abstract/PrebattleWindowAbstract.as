@@ -61,6 +61,11 @@ package net.wg.gui.prebattle.abstract
          throw new AbstractException("This method should be overriden");
       }
       
+      public function as_setReadyBtnTooltip(param1:String) : void
+      {
+         throw new AbstractException("This method should be overriden");
+      }
+      
       public function as_toggleReadyBtn(param1:Boolean) : void
       {
          throw new AbstractException("This method should be overriden");

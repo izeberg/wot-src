@@ -1,9 +1,11 @@
-import nations
+import typing, nations
 from items import vehicles, ITEM_TYPES
 from items.badges_common import BadgesCommon
 from account_shared import AmmoIterator
 from constants import PREBATTLE_ACCOUNT_STATE, VEHICLE_CLASSES, ARENA_GUI_TYPE, PREBATTLE_ROLE, IGR_TYPE, IS_DEVELOPMENT
 from debug_utils import LOG_DEBUG
+if typing.TYPE_CHECKING:
+    from typing import Any, Dict
 
 def decodeRoster(roster):
     return (

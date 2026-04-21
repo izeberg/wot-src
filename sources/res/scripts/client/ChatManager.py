@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from chat_shared import CHAT_ACTIONS, CHAT_CHANNEL_BATTLE, CHAT_CHANNEL_BATTLE_TEAM
 import Event
 from Singleton import Singleton

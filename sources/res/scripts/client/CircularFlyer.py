@@ -1,3 +1,4 @@
+from __future__ import absolute_import, division
 import math, BigWorld, AnimationSequence
 from Math import Matrix, Vector3
 from debug_utils import LOG_CURRENT_EXCEPTION

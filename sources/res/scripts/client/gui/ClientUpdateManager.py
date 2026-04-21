@@ -1,11 +1,13 @@
+from __future__ import absolute_import
 import inspect
+from future.utils import viewitems
 from gui.shared.money import Currency
 
 class _ClientUpdateManager(object):
     EVENT_TYPE_DELIMITER = '.'
 
     def __init__(self):
-        self.__handlers = dict()
+        self.__handlers = {}
         self.__removedHandlers = set()
 
     def update(self, diff):
@@ -23,7 +25,7 @@ class _ClientUpdateManager(object):
         self.__subscribeHandler(handler, diffpath)
 
     def addCallbacks(self, map_of_handlers):
-        for diffpath, handler in map_of_handlers.iteritems():
+        for diffpath, handler in viewitems(map_of_handlers):
             self.__subscribeHandler(handler, diffpath)
 
     def addCurrencyCallback(self, currency, handler):
@@ -40,7 +42,7 @@ class _ClientUpdateManager(object):
         self.__unsubscribeHandler(handler, ('stats.{}').format(currency))
 
     def removeObjectCallbacks(self, obj_instance, force=False):
-        removed = set(key for key in self.__handlers.iterkeys() if inspect.ismethod(key) and key.__self__ is obj_instance)
+        removed = set(key for key in self.__handlers if inspect.ismethod(key) and key.__self__ is obj_instance)
         if force:
             for item in removed:
                 del self.__handlers[item]

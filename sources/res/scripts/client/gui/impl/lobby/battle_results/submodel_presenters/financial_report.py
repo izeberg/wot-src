@@ -87,7 +87,7 @@ class ManageableBonusSubPresenter(BattleResultsSubPresenter):
          (
           self.getViewModel().onLocalStorageUpdated, self.__onLocalStorageUpdated),
          (
-          self.getViewModel().onShowDetails, self.__onShowDetails),
+          self.getViewModel().onShowDetails, self._onShowDetails),
          (
           self.__lobbyContext.getServerSettings().onServerSettingsChange, self.__onServerSettingsChanged),
          (
@@ -136,10 +136,13 @@ class ManageableBonusSubPresenter(BattleResultsSubPresenter):
         ctx = event.get('localStorage', '')
         self.parentView.saveLocalStorage(ctx)
 
-    def __onShowDetails(self, _=None):
+    def _onShowDetails(self, _=None):
         bonusState = self.getViewModel().getState()
         if bonusState == BonusStates.PLUSEARNINGS:
-            url = getWotPlusShopUrl()
+            if self.__itemsCache.items.stats.isActivePremium(PREMIUM_TYPE.PLUS):
+                url = getWotPlusShopUrl()
+            else:
+                url = getBuyPremiumUrl()
             BigWorld.callback(0.0, partial(showShop, url))
         elif bonusState in (BonusStates.PREMIUMEARNINGS, BonusStates.PREMIUMADVERTISING, BonusStates.PREMIUMINFO):
             url = getBuyPremiumUrl()

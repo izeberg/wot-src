@@ -33,7 +33,13 @@ class MechanicWidgetsPanel(WidgetsPanelMeta, VehiclePassengerInfoWatcher):
        VehicleMechanic.OVERHEAT_GUN: (
                                     BATTLE_WIDGETS_CONSTS.TEMPERATURE_GUN_OVERHEAT,), 
        VehicleMechanic.HEATING_ZONES_GUN: (
-                                         BATTLE_WIDGETS_CONSTS.TEMPERATURE_GUN_HEAT_ZONES,)}
+                                         BATTLE_WIDGETS_CONSTS.TEMPERATURE_GUN_HEAT_ZONES,), 
+       VehicleMechanic.LOW_CHARGE_SHOT: (
+                                       BATTLE_WIDGETS_CONSTS.LOW_CHARGE_SHOT,), 
+       VehicleMechanic.PROPELLANT_GUN: (
+                                      BATTLE_WIDGETS_CONSTS.PROPELLANT_GUN,), 
+       VehicleMechanic.WHEELED_DASH: (
+                                    BATTLE_WIDGETS_CONSTS.WHEELED_DASH,)}
 
     def _populate(self):
         super(MechanicWidgetsPanel, self)._populate()

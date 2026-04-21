@@ -67,6 +67,7 @@ package net.wg.gui.battle.views.damagePanel.components.modules
       
       public function ModuleAssets(param1:String, param2:Boolean, param3:int)
       {
+         this._iconHolder = new Sprite();
          this._moduleState = new ModuleStateAdapter();
          super();
          this._name = param1;
@@ -76,7 +77,6 @@ package net.wg.gui.battle.views.damagePanel.components.modules
          this._repairAnim.addEventListener(RepairAnimEvent.ANIM_COMPLETE,this.onRepairAnimCompleteHandler);
          this._repairAnim.addEventListener(RepairAnimEvent.ANIM_HIDE,this.onRepairAnimHideHandler);
          this._warningAnim = _loc4_.getComponent(Linkages.MODULE_WARNING_ANIM,MovieClip);
-         this._iconHolder = new Sprite();
          this._critical = new Bitmap(_loc5_.getNewBitmapData(ATLAS_CONSTANTS.BATTLE_ATLAS,param1 + CRITICAL_POSTFIX));
          this._destroyed = new Bitmap(_loc5_.getNewBitmapData(ATLAS_CONSTANTS.BATTLE_ATLAS,param1 + DESTROYED_POSTFIX));
          this._iconHolder.addChild(this._critical);
@@ -130,6 +130,7 @@ package net.wg.gui.battle.views.damagePanel.components.modules
          this._repairAnim = null;
          this._warningAnim.dispose();
          this._warningAnim = null;
+         this._moduleState = null;
          this._iconHolder = null;
       }
       
@@ -147,6 +148,11 @@ package net.wg.gui.battle.views.damagePanel.components.modules
          this._modulesHit.visible = false;
          this._iconHolder.visible = false;
          this._iconHolderTween.paused = true;
+      }
+      
+      public function isDisposed() : Boolean
+      {
+         return this._disposed;
       }
       
       public function resetModule() : void
@@ -175,9 +181,9 @@ package net.wg.gui.battle.views.damagePanel.components.modules
          this._repairAnim.setRepairTimeVisible(param1);
       }
       
-      public function showDestroyed() : void
+      public function showDestroyed(param1:Boolean) : void
       {
-         this.applyState(this._moduleState.updateState(BATTLE_ITEM_STATES.DESTROYED));
+         this.applyState(this._moduleState.updateState(BATTLE_ITEM_STATES.DESTROYED,param1));
       }
       
       private function applyState(param1:int) : void
@@ -285,11 +291,6 @@ package net.wg.gui.battle.views.damagePanel.components.modules
             this._iconHolderTween.paused = false;
          }
       }
-      
-      public function isDisposed() : Boolean
-      {
-         return this._disposed;
-      }
    }
 }
 
@@ -330,6 +331,52 @@ class ModuleStateAdapter
    function ModuleStateAdapter()
    {
       super();
+   }
+   
+   public function changeStateAfterAnimationComplete() : int
+   {
+      switch(this._state)
+      {
+         case STATE_DESTROYED_TO_CRITICAL:
+         case STATE_NORMAL_TO_CRITICAL:
+            this._state = STATE_CRITICAL;
+            break;
+         case STATE_DESTROYED_TO_NORMAL:
+         case STATE_CRITICAL_TO_NORMAL:
+            this._state = STATE_NORMAL;
+            break;
+         case STATE_CRITICAL_TO_DESTROYED:
+         case STATE_NORMAL_TO_DESTROYED:
+            this._state = STATE_DESTROYED;
+            break;
+         default:
+            DebugUtils.LOG_DEBUG(CHANGE_AFTER_ANIM_COMPLETE_MSG,this._state);
+      }
+      this._waitForNextState = false;
+      return this._state;
+   }
+   
+   public function getExternalNamedState() : String
+   {
+      var _loc1_:String = BATTLE_ITEM_STATES.NORMAL;
+      switch(this._state)
+      {
+         case STATE_DESTROYED:
+         case STATE_CRITICAL_TO_DESTROYED:
+         case STATE_NORMAL_TO_DESTROYED:
+            _loc1_ = BATTLE_ITEM_STATES.DESTROYED;
+            break;
+         case STATE_CRITICAL:
+         case STATE_NORMAL_TO_CRITICAL:
+         case STATE_DESTROYED_TO_CRITICAL:
+            _loc1_ = BATTLE_ITEM_STATES.CRITICAL;
+            break;
+         case STATE_NORMAL:
+         case STATE_DESTROYED_TO_NORMAL:
+         case STATE_CRITICAL_TO_NORMAL:
+            _loc1_ = BATTLE_ITEM_STATES.NORMAL;
+      }
+      return _loc1_;
    }
    
    public function updateState(param1:String, param2:Boolean = false) : int
@@ -429,51 +476,5 @@ class ModuleStateAdapter
       this._prevRawState = param1;
       this._state = _loc3_;
       return this._state;
-   }
-   
-   public function changeStateAfterAnimationComplete() : int
-   {
-      switch(this._state)
-      {
-         case STATE_DESTROYED_TO_CRITICAL:
-         case STATE_NORMAL_TO_CRITICAL:
-            this._state = STATE_CRITICAL;
-            break;
-         case STATE_DESTROYED_TO_NORMAL:
-         case STATE_CRITICAL_TO_NORMAL:
-            this._state = STATE_NORMAL;
-            break;
-         case STATE_CRITICAL_TO_DESTROYED:
-         case STATE_NORMAL_TO_DESTROYED:
-            this._state = STATE_DESTROYED;
-            break;
-         default:
-            DebugUtils.LOG_DEBUG(CHANGE_AFTER_ANIM_COMPLETE_MSG,this._state);
-      }
-      this._waitForNextState = false;
-      return this._state;
-   }
-   
-   public function getExternalNamedState() : String
-   {
-      var _loc1_:String = BATTLE_ITEM_STATES.NORMAL;
-      switch(this._state)
-      {
-         case STATE_DESTROYED:
-         case STATE_CRITICAL_TO_DESTROYED:
-         case STATE_NORMAL_TO_DESTROYED:
-            _loc1_ = BATTLE_ITEM_STATES.DESTROYED;
-            break;
-         case STATE_CRITICAL:
-         case STATE_NORMAL_TO_CRITICAL:
-         case STATE_DESTROYED_TO_CRITICAL:
-            _loc1_ = BATTLE_ITEM_STATES.CRITICAL;
-            break;
-         case STATE_NORMAL:
-         case STATE_DESTROYED_TO_NORMAL:
-         case STATE_CRITICAL_TO_NORMAL:
-            _loc1_ = BATTLE_ITEM_STATES.NORMAL;
-      }
-      return _loc1_;
    }
 }

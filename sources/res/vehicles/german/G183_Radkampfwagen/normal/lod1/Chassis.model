@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G183_Radkampfwagen/normal/lod1/Chassis</nodefullVisual>
+	<parent>vehicles/german/G183_Radkampfwagen/normal/lod2/Chassis</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.185670 0.003331 -2.595303</min>
+		<max>1.184799 1.130291 3.030362</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

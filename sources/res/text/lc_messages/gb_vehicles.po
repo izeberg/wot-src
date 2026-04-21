@@ -408,14 +408,23 @@ msgstr "M2A4"
 msgid "Chassis_GB150_Churchill_VII_G"
 msgstr "Churchill St. Gloriana"
 
+msgid "Chassis_GB151_Headshaker"
+msgstr "Headshaker"
+
 msgid "Chassis_GB152_AT_FV230_Breaker"
 msgstr "AT-FV230 Breaker"
+
+msgid "Chassis_GB155_Pike"
+msgstr "Pike"
 
 msgid "Chassis_GB156_Black_Prince_II"
 msgstr "Black Prince II"
 
 msgid "Chassis_GB157_FV214t"
 msgstr "FV214t"
+
+msgid "Chassis_GB158_Executor"
+msgstr "Executor"
 
 msgid "Chassis_GB15_Stuart_I"
 msgstr "Stuart I"
@@ -728,6 +737,9 @@ msgstr "Sexton I"
 
 msgid "Chrysler_A57_multibank"
 msgstr "Chrysler A57 Multibank"
+
+msgid "Clansman_VRC_353"
+msgstr "Clansman VRC 353"
 
 msgid "Continental_AOI-1195-5"
 msgstr "Continental AOI-1195-5"
@@ -1530,10 +1542,10 @@ msgstr ""
 
 msgid "GB130_FV225_Collector_long_special"
 msgstr ""
-"The FV225 Collector is a Tier X British heavy tank armed with a twin 110 mm "
-"gun featuring selective fire modes that delivers exceptional DPM. Designed "
-"as a breakthrough heavy, it boasts good mobility and frontal armor, but has "
-"weaker side protection."
+"The FV225 Collector is a Tier IX British heavy tank that delivers "
+"exceptional DPM thanks to its twin-barreled 110 mm gun and the Selective "
+"Fire Modes mechanic. Designed as a breakthrough heavy, the vehicle boasts "
+"good mobility and frontal armor but has weaker side protection."
 
 msgid "GB130_FV225_Collector_short"
 msgstr "Collector"
@@ -1980,6 +1992,36 @@ msgstr "Chur Gloriana"
 msgid "GB150_Churchill_VII_A_short_special"
 msgstr "High DPM, good armor"
 
+msgid "GB151_Headshaker"
+msgstr "Headshaker"
+
+msgid "GB151_Headshaker_descr"
+msgstr ""
+"As armament power increased, classic SPG cabin configurations no longer met "
+"contemporary requirements, leading to the development of a vehicle with a "
+"fundamentally new arrangement. One such project was the Headshaker self-"
+"propelled gun with a manned turret that could rotate across two planes. "
+"Placing the support and rotation mechanism in the upper part of the cabin "
+"made it possible to significantly lower the vehicle's profile and use a "
+"powerful gun with a wide aiming range. Another important feature was a "
+"cooling system with ribbed heat-exchange elements, increasing the gun's "
+"reliability. However, despite all the benefits, the project was terminated "
+"due to the complexity and high production costs."
+
+msgid "GB151_Headshaker_long_special"
+msgstr ""
+"The Headshaker is a Tier IX British versatile tank destroyer. It possesses "
+"an unusual combination of high-penetration HE rounds and a double aiming "
+"system. Gun cooling allows the vehicle to make precise shots at range, while"
+" good damage per minute and decent armor allow for efficient close-combat "
+"brawling."
+
+msgid "GB151_Headshaker_short"
+msgstr "Headshaker"
+
+msgid "GB151_Headshaker_short_special"
+msgstr "High-penetration HE rounds, double aiming system"
+
 msgid "GB152_AT_FV230_Breaker"
 msgstr "AT-FV230 Breaker"
 
@@ -2005,6 +2047,33 @@ msgstr ""
 
 msgid "GB152_AT_FV230_Breaker_short"
 msgstr "Breaker"
+
+msgid "GB155_Pike"
+msgstr "Pike"
+
+msgid "GB155_Pike_descr"
+msgstr ""
+"The Pike heavy tank, designed for the British Army of the Rhine. It combined"
+" the chassis of the FV229 coastal defense tank and the turret of an "
+"unimplemented West German heavy tank with a powerful gun. It was initially "
+"created to fight the Soviet IS-3 heavy tank. Due to difficult interaction "
+"between British and German companies, the development was seriously delayed."
+" As a result, the British Conqueror was fully adopted for service, and the "
+"Pike remained in draft form."
+
+msgid "GB155_Pike_long_special"
+msgstr ""
+"The Pike is a Tier IX British heavy tank. It is equipped with a three-shell "
+"autoloader that delivers high single-shot damage. That, combined with "
+"reliable hull and turret armor, makes the Pike very dangerous in positional "
+"brawls. The gun may not boast comfortable handling, but it offers good "
+"accuracy."
+
+msgid "GB155_Pike_short"
+msgstr "Pike"
+
+msgid "GB155_Pike_short_special"
+msgstr "Reliable hull and turret armor, autoloader"
 
 msgid "GB156_Black_Prince_II"
 msgstr "Black Prince II"
@@ -2049,6 +2118,27 @@ msgstr "FV214t"
 
 msgid "GB157_FV214t_short_special"
 msgstr "Excellent handling, reliable frontal turret armor"
+
+msgid "GB158_Executor"
+msgstr "Executor"
+
+msgid "GB158_Executor_descr"
+msgstr ""
+"A project for a four-axle vehicle with increased mobility and a 110 mm gun. "
+"Despite planned partial unification with other vehicles already in service, "
+"development was stopped at the blueprint phase in favor of more traditional "
+"tanks."
+
+msgid "GB158_Executor_long_special"
+msgstr ""
+"Combining a wheeled chassis, a sophisticated powerful engine, and excellent "
+"armament, the Executor stands as a pinnacle of British wheeled medium tanks."
+" State-of-the-art engineering ensures that any place on the battlefield is "
+"reachable, while its gun will inflict considerable damage to any possible "
+"adversary."
+
+msgid "GB158_Executor_short"
+msgstr "Executor"
 
 msgid "GB15_Stuart_I"
 msgstr "Stuart I-IV"
@@ -3243,6 +3333,12 @@ msgstr "2x Leyland E164"
 msgid "Leyland_1A"
 msgstr "2x Leyland E164"
 
+msgid "Leyland_L60F"
+msgstr "Leyland L60F"
+
+msgid "Leyland_L60_HPT_Dark_Morn"
+msgstr "Leyland L60 HPT «Dark Morn»"
+
 msgid "Leyland_L60_No_4"
 msgstr "Leyland L60 No. 4 Mk. 13A"
 
@@ -3742,6 +3838,9 @@ msgstr "Rolls-Royce Meteor M120 (CGC)"
 msgid "Rolls_Royce_Meteor_M300"
 msgstr "Rolls-Royce Meteor M300"
 
+msgid "Rolls_Royce_Meteor_MK_VIB"
+msgstr "Rolls-Royce Meteor MK. VIB"
+
 msgid "Rolls_Royce_Meteor_Mark_IVB_900"
 msgstr "Rolls-Royce Meteor Mk. IVB (900)"
 
@@ -3859,6 +3958,9 @@ msgstr "Rover Meteorite"
 msgid "SR_40_E"
 msgstr "SR 40 E"
 
+msgid "SR_C42F"
+msgstr "SR C42F"
+
 msgid "SR_C42H"
 msgstr "SR C42H"
 
@@ -3873,6 +3975,9 @@ msgstr "SR C42 B"
 
 msgid "SR_C42a"
 msgstr "SR C42a"
+
+msgid "SR_C45H"
+msgstr "SR C42H"
 
 msgid "Sunbeam_Amazon"
 msgstr "Sunbeam Amazon"
@@ -4054,14 +4159,23 @@ msgstr "M2A1"
 msgid "Turret_1_GB150_Churchill_VII_G"
 msgstr "Churchill St. Gloriana"
 
+msgid "Turret_1_GB151_Headshaker"
+msgstr "Headshaker"
+
 msgid "Turret_1_GB152_AT_FV230_Breaker"
 msgstr "Beaver"
+
+msgid "Turret_1_GB155_Pike"
+msgstr "Pike"
 
 msgid "Turret_1_GB156_Black_Prince_II"
 msgstr "Black Prince II"
 
 msgid "Turret_1_GB157_FV214t"
 msgstr "FV214t"
+
+msgid "Turret_1_GB158_Executor"
+msgstr "Executor"
 
 msgid "Turret_1_GB15_Stuart_I"
 msgstr "Stuart I"
@@ -4683,6 +4797,18 @@ msgstr "105 mm MV HE"
 msgid "_105mm_SPH_M4_L23"
 msgstr "105 mm M4"
 
+msgid "_110mm_HV_AP"
+msgstr "110 mm HV AP"
+
+msgid "_110mm_HV_APDS"
+msgstr "110 mm HV APCR"
+
+msgid "_110mm_HV_Gun"
+msgstr "110 mm High Velocity Gun"
+
+msgid "_110mm_HV_HE"
+msgstr "110 mm HV HE"
+
 msgid "_110mm_MK_1_HC_MBC"
 msgstr "HC Mk. 1 MBC"
 
@@ -4913,6 +5039,18 @@ msgstr "OQF 123 mm Mk. 1"
 
 msgid "_123mm_OQF_Mk_1B"
 msgstr "OQF 123 mm Mk. 1B"
+
+msgid "_128_mm_Gun_L_50"
+msgstr "128 mm Gun L/50"
+
+msgid "_128mm_APDS_L1_4004F"
+msgstr "APDS L1 4004HF"
+
+msgid "_128mm_AP_L1_4004F"
+msgstr "AP L1 4004HF"
+
+msgid "_128mm_HESH_L1_4004F"
+msgstr "HESH L1 4004HF"
 
 msgid "_13pdr_Gun"
 msgstr "Q.F. 13-Pr. Mk. III"
@@ -5660,6 +5798,18 @@ msgstr "HE 80-lb Mk. 4 (207)"
 
 msgid "_5_5_in_HE_80_lb_Mk_4_CSP"
 msgstr "HE 80-lb Mk. 4 (CSP)"
+
+msgid "_5_5_inch_AP_Mk_II"
+msgstr "AP Mk. II"
+
+msgid "_5_5_inch_AT_Gun_Mk_II"
+msgstr "5.5-inch AT Gun Mk. II"
+
+msgid "_5_5_inch_HESH_Mk_II"
+msgstr "HESH Mk. II"
+
+msgid "_5_5_inch_HE_Mk_II"
+msgstr "HE Mk. II"
 
 msgid "_5_5inch_APC_Mk_5_SH"
 msgstr "APC Mk. 5"

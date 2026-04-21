@@ -34,6 +34,14 @@
 			</value>
 		</message>
 		<message>
+			<name>comp7FastRechargeGunTemperatureLow</name>
+			<type>list</type>
+			<value>
+				<item>_(#comp7.ingame_gui.extend:player_errors/equipment/fastRecharge/gunTemperatureLow)</item>
+				<item>yellow</item>
+			</value>
+		</message>
+		<message>
 			<name>comp7RoleSkillUnavailable</name>
 			<type>list</type>
 			<value>

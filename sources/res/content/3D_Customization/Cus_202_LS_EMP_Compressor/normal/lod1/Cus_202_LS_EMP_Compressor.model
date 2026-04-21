@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/3D_Customization/Cus_202_LS_EMP_Compressor/normal/lod2/Cus_202_LS_EMP_Compressor</parent>
+	<extent>64.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.546582 -0.000763 -0.558415</min>
+		<max>0.054757 0.443654 0.530591</max>
+	</visibilityBox>
+	<nodefullVisual>content/3D_Customization/Cus_202_LS_EMP_Compressor/normal/lod1/Cus_202_LS_EMP_Compressor</nodefullVisual>
+</root>

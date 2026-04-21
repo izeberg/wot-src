@@ -232,19 +232,21 @@ package net.wg.gui.components.hintPanel
       private function update() : void
       {
          var _loc3_:int = 0;
+         var _loc4_:int = 0;
          this.messageLeftAnim.visible = this._keySelected;
          this.keyEffectAnim.visible = this._keySelected;
          this.keyAnim.visible = this._keySelected;
          if(this._keySelected)
          {
-            _loc3_ = (this.keyAnim.width >> 1) + this.messageLeftAnim.width + GAP ^ 0;
+            _loc3_ = this.keyAnim.width >> 1;
+            _loc4_ = _loc3_ + this.messageLeftAnim.width + GAP ^ 0;
             if(!this._reducedPanning)
             {
-               _loc3_ += BACKGROUND_INNER_PADDING;
+               _loc4_ += BACKGROUND_INNER_PADDING;
             }
-            this.keyAnim.x = _loc3_;
-            this.keyEffectAnim.x = _loc3_;
-            this.messageRightAnim.x = _loc3_ + (this.keyAnim.width >> 1) + GAP;
+            this.keyAnim.x = _loc4_;
+            this.keyEffectAnim.x = _loc4_;
+            this.messageRightAnim.x = _loc4_ + _loc3_ + GAP;
          }
          else if(!this._reducedPanning)
          {

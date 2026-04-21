@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<materialNames/>
+	<visibilityBox>
+		<min>-0.364939 -0.477312 0.152780</min>
+		<max>0.364939 0.358685 6.327278</max>
+	</visibilityBox>
+	<parent>last_stand/vehicles/german/G73_E50_Ausf_M_LS_BOT/normal/lod4/Gun_01</parent>
+	<extent>192.000000</extent>
+	<nodefullVisual>last_stand/vehicles/german/G73_E50_Ausf_M_LS_BOT/normal/lod3/Gun_01</nodefullVisual>
+</root>

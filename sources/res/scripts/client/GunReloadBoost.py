@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from cache import cached_property
 from helpers import dependency
 from skeletons.gui.battle_session import IBattleSessionProvider

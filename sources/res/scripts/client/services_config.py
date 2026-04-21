@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging
 __all__ = ('getClientServicesConfig', )
 _logger = logging.getLogger(__name__)

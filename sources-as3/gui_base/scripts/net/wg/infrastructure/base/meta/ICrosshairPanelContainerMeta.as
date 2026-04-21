@@ -120,13 +120,15 @@ package net.wg.infrastructure.base.meta
       
       function as_setAimDamageStage(param1:String) : void;
       
-      function as_setOverheatVisible(param1:Boolean) : void;
-      
       function as_setAccuracyStacksProgress(param1:int) : void;
       
       function as_setChargeGunActive(param1:Boolean) : void;
       
       function as_setChargeGunState(param1:Number, param2:uint, param3:Boolean) : void;
+      
+      function as_setLowChargeInitialTime(param1:Number, param2:Number, param3:Number, param4:Number) : void;
+      
+      function as_setLowChargeTimeLeft(param1:Number, param2:Number, param3:Boolean) : void;
       
       function as_setReloadBoost(param1:Boolean) : void;
       
@@ -141,5 +143,7 @@ package net.wg.infrastructure.base.meta
       function as_setSecondaryGunMarkerActive(param1:Boolean) : void;
       
       function as_setDispersionCircleThickness(param1:Boolean) : void;
+      
+      function as_setAlternateZoomPosition(param1:Boolean) : void;
    }
 }

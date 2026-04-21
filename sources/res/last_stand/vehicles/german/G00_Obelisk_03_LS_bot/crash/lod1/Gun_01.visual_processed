@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_guns</identifier>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<fx>shaders/std_effects/PBS_tank_crash.fx</fx>
+					<property>
+						diffuseMap
+						<Texture>last_stand/vehicles/german/G00_Obelisk_03_LS_bot/G00_Obelisk_03_LS_bot_Gun_01_AM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>last_stand/vehicles/german/G00_Obelisk_03_LS_bot/G00_Obelisk_03_LS_bot_Gun_01_ANM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>last_stand/vehicles/german/G00_Obelisk_03_LS_bot/G00_Obelisk_03_LS_bot_Gun_01_GMM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>last_stand/vehicles/german/G00_Obelisk_03_LS_bot/G00_Obelisk_03_LS_bot_Gun_01_AO.dds</Texture>
+					</property>
+					<property>
+						g_useDetail
+						<Bool>false</Bool>
+					</property>
+				</material>
+				<groupOrigin>-0.001531 -0.036296 0.124697</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-0.484863 -1.097035 -0.396330</min>
+		<max>0.481801 1.024443 0.645724</max>
+	</boundingBox>
+	<geometrySize>80260</geometrySize>
+</root>

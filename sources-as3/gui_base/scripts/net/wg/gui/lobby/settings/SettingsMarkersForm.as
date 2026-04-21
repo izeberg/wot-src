@@ -219,7 +219,7 @@ package net.wg.gui.lobby.settings
                   case SettingsConfigHelper.TYPE_CHECKBOX:
                      _loc9_ = this[_loc6_ + _loc7_.type];
                      _loc9_.selected = _loc7_.current;
-                     _loc9_.enabled = _loc7_.readOnly == false;
+                     _loc9_.enabled = !_loc7_.readOnly;
                      _loc9_.addEventListener(Event.SELECT,this.onCheckBoxSelectHandler);
                      break;
                   case SettingsConfigHelper.TYPE_DROPDOWN:
@@ -227,7 +227,7 @@ package net.wg.gui.lobby.settings
                      _loc10_.menuRowCount = _loc7_.options.length;
                      _loc10_.dataProvider = new DataProvider(_loc7_.options);
                      _loc10_.selectedIndex = int(_loc7_.current);
-                     _loc10_.enabled = _loc7_.current != null && _loc7_.readOnly == false;
+                     _loc10_.enabled = _loc7_.current != null && !_loc7_.readOnly;
                      _loc10_.addEventListener(ListEvent.INDEX_CHANGE,this.onDropDownIndexChangeHandler);
                      break;
                }

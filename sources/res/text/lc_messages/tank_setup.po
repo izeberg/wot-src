@@ -1311,6 +1311,9 @@ msgstr "to HE shell damage"
 msgid "kpi/bonus/positive/HEShellPenetration"
 msgstr "to HE shell penetration"
 
+msgid "kpi/bonus/positive/HEshellVelocity"
+msgstr "to HE shell velocity"
+
 msgid "kpi/bonus/positive/additionalShellAmmoCapacity"
 msgstr "to ammo capacity"
 
@@ -1771,7 +1774,7 @@ msgstr "to dispersion during hull traverse"
 
 msgid "kpi/bonus/ttc/negative/vehicleGunShotDispersionTurretRotation"
 msgstr ""
-"to dispersion during\n"
+"to dispersion during \n"
 "gun traverse"
 
 msgid "kpi/bonus/ttc/negative/vehicleGunShotDispersionWhileGunDamaged"
@@ -1992,7 +1995,7 @@ msgstr "to dispersion during hull traverse"
 
 msgid "kpi/bonus/ttc/positive/vehicleGunShotDispersionTurretRotation"
 msgstr ""
-"to dispersion during\n"
+"to dispersion during \n"
 "gun traverse"
 
 msgid "kpi/bonus/ttc/positive/vehicleGunShotDispersionWhileGunDamaged"

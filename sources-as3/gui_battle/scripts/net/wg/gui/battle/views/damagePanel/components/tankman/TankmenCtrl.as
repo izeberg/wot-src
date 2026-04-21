@@ -121,17 +121,17 @@ package net.wg.gui.battle.views.damagePanel.components.tankman
          _loc3_.state = param2;
       }
       
-      public function showDestroyed() : void
+      public function showDestroyed(param1:Boolean) : void
       {
-         var _loc4_:IDamagePanelClickableItem = null;
-         var _loc1_:Vector.<IDamagePanelClickableItem> = this._items.getItems();
-         var _loc2_:int = _loc1_.length;
-         var _loc3_:int = 0;
-         while(_loc3_ < _loc2_)
+         var _loc5_:IDamagePanelClickableItem = null;
+         var _loc2_:Vector.<IDamagePanelClickableItem> = this._items.getItems();
+         var _loc3_:int = _loc2_.length;
+         var _loc4_:int = 0;
+         while(_loc4_ < _loc3_)
          {
-            _loc4_ = _loc1_[_loc3_];
-            _loc4_.showDestroyed();
-            _loc3_++;
+            _loc5_ = _loc2_[_loc4_];
+            _loc5_.showDestroyed(param1);
+            _loc4_++;
          }
       }
       

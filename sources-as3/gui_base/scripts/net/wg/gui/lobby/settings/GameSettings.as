@@ -66,6 +66,8 @@ package net.wg.gui.lobby.settings
       private static const LIMITED_UI_SETTING_BLOCK_PADDING:uint = 80;
       
       private static const PANE_HEIGHT_WITH_LIMITED_UI_SETTING_BLOCK:uint = PANE_HEIGHT - LIMITED_UI_SETTING_BLOCK_PADDING;
+      
+      private static const CONTROLS_WITH_SIMPLE_EXTRA_DATA:Array = [SHOW_VEHICLE_HP_IN_MINIMAP,SWITCH_EQUIPMENT,SettingsConfigHelper.NEWBIE_PREBATTLE_HINTS,SettingsConfigHelper.NEWBIE_BATTLE_HINTS,SettingsConfigHelper.W2GT_ENABLE];
        
       
       public var scrollPane:BorderShadowScrollPane;
@@ -120,14 +122,13 @@ package net.wg.gui.lobby.settings
          var _loc8_:String = null;
          var _loc9_:CheckBox = null;
          var _loc10_:Boolean = false;
-         var _loc13_:CheckboxVo = null;
-         var _loc14_:AnonymizerExtraVO = null;
-         var _loc15_:SimpleExtraVO = null;
+         var _loc13_:String = null;
+         var _loc14_:CheckboxVo = null;
+         var _loc15_:AnonymizerExtraVO = null;
          var _loc16_:DevMapsVO = null;
          var _loc17_:SimpleExtraVO = null;
          var _loc18_:SimpleExtraVO = null;
-         var _loc19_:SimpleExtraVO = null;
-         var _loc20_:String = null;
+         var _loc19_:String = null;
          var _loc2_:Vector.<String> = param1.keys;
          var _loc3_:Vector.<Object> = param1.values;
          var _loc4_:int = _loc2_.length;
@@ -144,6 +145,10 @@ package net.wg.gui.lobby.settings
             _loc8_ = _loc5_ + _loc6_.type;
             if(_loc7_[_loc8_])
             {
+               if(_loc6_.isDependOn)
+               {
+                  headDependedControls.push(_loc5_);
+               }
                _loc10_ = !(_loc6_.current == null || _loc6_.readOnly);
                switch(_loc6_.type)
                {
@@ -160,49 +165,39 @@ package net.wg.gui.lobby.settings
                      }
                      else if(_loc5_ == SHOW_DAMAGE_ICON_LBL || _loc5_ == INCREASED_ZOOM_LBL)
                      {
-                        _loc13_ = new CheckboxVo(_loc6_.extraData);
-                        _loc9_.toolTip = _loc13_.tooltip;
-                        _loc9_.label = _loc13_.checkBoxLabel;
-                        _loc13_.dispose();
+                        _loc14_ = new CheckboxVo(_loc6_.extraData);
+                        _loc9_.toolTip = _loc14_.tooltip;
+                        _loc9_.label = _loc14_.checkBoxLabel;
+                        _loc14_.dispose();
                      }
                      else if(_loc5_ == ANONYMIZER)
                      {
-                        _loc14_ = new AnonymizerExtraVO(_loc6_.extraData);
-                        _loc9_.label = _loc14_.checkBoxLabel;
-                        _loc9_.toolTip = _loc14_.tooltip;
-                        _loc9_.visible = _loc14_.visible;
-                        _loc9_.enabled = _loc14_.enabled;
-                        _loc11_ = _loc14_.visible;
-                        _loc14_.dispose();
-                     }
-                     else if(_loc5_ == SHOW_VEHICLE_HP_IN_MINIMAP || _loc5_ == SWITCH_EQUIPMENT)
-                     {
-                        _loc15_ = new SimpleExtraVO(_loc6_.extraData);
+                        _loc15_ = new AnonymizerExtraVO(_loc6_.extraData);
+                        _loc9_.label = _loc15_.checkBoxLabel;
+                        _loc9_.toolTip = _loc15_.tooltip;
+                        _loc9_.visible = _loc15_.visible;
                         _loc9_.enabled = _loc15_.enabled;
+                        _loc11_ = _loc15_.visible;
+                        _loc15_.dispose();
                      }
                      else if(_loc5_ == SettingsConfigHelper.GAMEPLAY_DEVMAPS)
                      {
                         _loc16_ = new DevMapsVO(_loc6_.extraData);
                         _loc9_.visible = _loc16_.enabled;
                      }
-                     else if(_loc5_ == SettingsConfigHelper.NEWBIE_PREBATTLE_HINTS)
+                     else if(CONTROLS_WITH_SIMPLE_EXTRA_DATA.indexOf(_loc5_) != -1)
                      {
                         _loc17_ = new SimpleExtraVO(_loc6_.extraData);
-                        _loc9_.enabled = _loc17_.enabled;
-                     }
-                     else if(_loc5_ == SettingsConfigHelper.NEWBIE_BATTLE_HINTS)
-                     {
-                        _loc18_ = new SimpleExtraVO(_loc6_.extraData);
-                        _loc9_.enabled = _loc18_.enabled;
-                        if(this._restartNewbieBattleHints)
+                        if(!_loc17_.enabled)
                         {
-                           this._restartNewbieBattleHints.enabled = _loc18_.enabled;
+                           _loc9_.selected = false;
                         }
+                        _loc9_.enabled = _loc17_.enabled;
                      }
                      else if(_loc5_ == SettingsConfigHelper.ENABLE_COMMENDATIONS_FEEDBACK)
                      {
-                        _loc19_ = new SimpleExtraVO(_loc6_.extraData);
-                        _loc9_.enabled = _loc19_.enabled;
+                        _loc18_ = new SimpleExtraVO(_loc6_.extraData);
+                        _loc9_.enabled = _loc18_.enabled;
                      }
                      break;
                   case SettingsConfigHelper.TYPE_DROPDOWN:
@@ -219,8 +214,8 @@ package net.wg.gui.lobby.settings
                      this.setupButtonBar(ButtonBarEx(_loc7_[_loc8_]),_loc6_,_loc10_);
                      if(_loc5_ == SettingsConfigHelper.CAROUSEL_TYPE)
                      {
-                        _loc20_ = SettingsConfigHelper.CAROUSEL_TYPE_ID[_loc6_.current];
-                        _loc7_.doubleCarouselTypeDropDown.enabled = _loc20_ == SettingsConfigHelper.CAROUSEL_DOUBLE;
+                        _loc19_ = SettingsConfigHelper.CAROUSEL_TYPE_ID[_loc6_.current];
+                        _loc7_.doubleCarouselTypeDropDown.enabled = _loc19_ == SettingsConfigHelper.CAROUSEL_DOUBLE;
                      }
                }
             }
@@ -229,6 +224,10 @@ package net.wg.gui.lobby.settings
                DebugUtils.LOG_WARNING(_loc8_ + Errors.CANT_NULL);
             }
             _loc12_++;
+         }
+         for each(_loc13_ in headDependedControls)
+         {
+            this.updateDependedControl(_loc13_);
          }
          _loc7_.updateDependentVisibleControls(_loc11_);
       }
@@ -247,6 +246,7 @@ package net.wg.gui.lobby.settings
          var _loc10_:DropdownMenu = null;
          var _loc11_:ButtonBarEx = null;
          var _loc12_:int = 0;
+         var _loc13_:* = undefined;
          if(data)
          {
             _loc1_ = Values.EMPTY_STR;
@@ -261,26 +261,27 @@ package net.wg.gui.lobby.settings
                _loc6_ = _loc3_[_loc12_] as SettingsControlProp;
                App.utils.asserter.assertNotNull(_loc6_,Errors.CANT_NULL);
                _loc7_ = _loc1_ + _loc6_.type;
-               if(!_loc5_[_loc7_])
+               _loc13_ = _loc5_[_loc7_];
+               if(!_loc13_)
                {
                   continue;
                }
                switch(_loc6_.type)
                {
                   case SettingsConfigHelper.TYPE_CHECKBOX:
-                     _loc8_ = _loc5_[_loc7_];
+                     _loc8_ = _loc13_;
                      _loc8_.removeEventListener(Event.SELECT,this.onCheckBoxSelectHandler);
                      break;
                   case SettingsConfigHelper.TYPE_SLIDER:
-                     _loc9_ = _loc5_[_loc7_];
+                     _loc9_ = _loc13_;
                      _loc9_.removeEventListener(SliderEvent.VALUE_CHANGE,this.onSliderValueChangeHandler);
                      break;
                   case SettingsConfigHelper.TYPE_DROPDOWN:
-                     _loc10_ = _loc5_[_loc7_];
+                     _loc10_ = _loc13_;
                      _loc10_.removeEventListener(ListEvent.INDEX_CHANGE,this.onDropdownIndexChangeHandler);
                      break;
                   case SettingsConfigHelper.TYPE_BUTTON_BAR:
-                     _loc11_ = _loc5_[_loc7_];
+                     _loc11_ = _loc13_;
                      _loc11_.removeEventListener(IndexEvent.INDEX_CHANGE,this.onButtonBarIndexChangeHandler);
                      break;
                }
@@ -436,6 +437,12 @@ package net.wg.gui.lobby.settings
       {
          var _loc2_:String = SettingsConfigHelper.instance.getControlIdByControlNameAndType(CheckBox(param1.target).name,SettingsConfigHelper.TYPE_CHECKBOX);
          var _loc3_:Boolean = CheckBox(param1.target).selected;
+         var _loc4_:SettingsControlProp = SettingsControlProp(data[_loc2_]);
+         _loc4_.changedVal = _loc3_;
+         if(_loc4_.isDependOn)
+         {
+            this.updateDependedControl(_loc2_);
+         }
          dispatchEvent(new SettingViewEvent(SettingViewEvent.ON_CONTROL_CHANGED,viewId,null,_loc2_,_loc3_));
       }
       
@@ -446,6 +453,34 @@ package net.wg.gui.lobby.settings
             this._restartNewbieBattleHints.enabled = false;
          }
          dispatchEvent(new SettingViewEvent(SettingViewEvent.ON_RESTART_NEWBIE_BATTLE_HINTS,viewId));
+      }
+      
+      override protected function updateDependedControl(param1:String) : void
+      {
+         var _loc6_:Boolean = false;
+         var _loc7_:SoundButtonEx = null;
+         var _loc2_:GameSettingsContent = this.getContent();
+         var _loc3_:SettingsControlProp = null;
+         var _loc4_:CheckBox = null;
+         var _loc5_:CheckBox = _loc2_[param1 + SettingsConfigHelper.TYPE_CHECKBOX];
+         if(param1 == SettingsConfigHelper.W2GT_ENABLE)
+         {
+            _loc3_ = data[param1];
+            _loc4_ = _loc2_[_loc3_.isDependOn + SettingsConfigHelper.TYPE_CHECKBOX];
+            _loc6_ = _loc5_.enabled && Boolean(_loc3_.changedVal);
+            if(!_loc6_ && _loc4_.selected)
+            {
+               _loc4_.selected = false;
+            }
+            _loc4_.enabled = _loc6_;
+         }
+         else if(param1 == SettingsConfigHelper.NEWBIE_BATTLE_HINTS)
+         {
+            _loc3_ = data[param1];
+            _loc7_ = _loc2_[_loc3_.isDependOn];
+            _loc7_.enabled = _loc5_.enabled;
+         }
+         super.updateDependedControl(param1);
       }
    }
 }

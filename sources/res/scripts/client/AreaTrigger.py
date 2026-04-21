@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld, TriggersManager
 
 class AreaTrigger(BigWorld.UserDataObject):

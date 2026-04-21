@@ -23,11 +23,7 @@ def getWotPlusBattlePassTier(wotPlusCtrl=None, steamCtrl=None, battlePassCtrl=No
         return WotPlusTier.NONE
     if isBPAvailableForCurrentTier:
         return wotPlusCtrl.getTier()
-    for tierID, tier in settingsStorage.reverseIterTiers():
-        if tier.battlePassFeature.available:
-            return tierID
-
-    return WotPlusTier.NONE
+    return settingsStorage.getBestBattlePassBonusTier()
 
 
 def isWotPlusBattlePassAvailableForAnyTier():

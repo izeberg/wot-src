@@ -68,7 +68,8 @@
 				<exports>vse tooltip</exports>
 			</duration>
 			<crewBuff>
-				4 7 10
+				5.5 9 13
+				<!--BW_String-->
 				<exports>vse tooltip</exports>
 			</crewBuff>
 		</script>
@@ -101,11 +102,12 @@
 				<exports>vse tooltip</exports>
 			</duration>
 			<heal>
-				8 14 20
+				10 16 22
 				<exports>vse tooltip</exports>
 			</heal>
 			<gunReloadTimeBuff>
-				4
+				5.5
+				<!--BW_String-->
 				<exports>vse tooltip</exports>
 			</gunReloadTimeBuff>
 			<tickInterval>
@@ -173,7 +175,7 @@
 				</server>
 			</visualScript>
 			<cooldownSeconds>
-				3
+				5
 				<exports>vse</exports>
 			</cooldownSeconds>
 			<duration>
@@ -181,7 +183,7 @@
 				<exports>vse tooltip</exports>
 			</duration>
 			<gunReloadTimeBuff>
-				0.75 0.7 0.65
+				0.75 0.725 0.7
 				<!--BW_String-->
 				<exports>vse tooltip</exports>
 			</gunReloadTimeBuff>
@@ -213,7 +215,7 @@
 				</server>
 			</visualScript>
 			<cooldownSeconds>
-				3
+				7
 				<exports>vse</exports>
 			</cooldownSeconds>
 			<duration>
@@ -317,6 +319,10 @@
 				<!--BW_String-->
 				<exports>vse tooltip</exports>
 			</gunReloadTimeBuff>
+			<gunTemperatureBuff>
+				-15 -30 -50
+				<exports>vse tooltip</exports>
+			</gunTemperatureBuff>
 		</script>
 	</comp7_fast_recharge>
 	<comp7_juggernaut>

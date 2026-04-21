@@ -66,28 +66,14 @@ package net.wg.gui.battle.mapsTraining.views
          this.battleDamageLogPanel.init(ATLAS_CONSTANTS.BATTLE_ATLAS);
       }
       
-      override public function as_onPostmortemActive(param1:Boolean) : void
-      {
-         super.as_onPostmortemActive(param1);
-         if(!param1 && !this.consumablesPanel.hasEventListener(ConsumablesPanelEvent.UPDATE_POSITION))
-         {
-            this.consumablesPanel.addEventListener(ConsumablesPanelEvent.UPDATE_POSITION,this.onConsumablesPanelUpdatePositionHandler);
-         }
-      }
-      
-      override protected function updatePrebattleTimerPosition(param1:int) : void
-      {
-         prebattleTimer.x = param1;
-         prebattleTimer.y = App.appHeight <= StageSizeBoundaries.HEIGHT_800 ? Number(PREBATTLE_TIMER_Y_SMALL) : Number(PREBATTLE_TIMER_Y);
-      }
-      
       override public function updateStage(param1:Number, param2:Number) : void
       {
+         var _loc3_:uint = 0;
          super.updateStage(param1,param2);
          this.battleDamageLogPanel.x = BATTLE_DAMAGE_LOG_X_POSITION;
          this.battleDamageLogPanel.y = damagePanel.y + BATTLE_DAMAGE_LOG_Y_PADDING >> 0;
          this.battleDamageLogPanel.updateSize(param1,param2);
-         var _loc3_:uint = param1 >> 1;
+         _loc3_ = param1 >> 1;
          this.consumablesPanel.updateStage(param1,param2);
          this.damageInfoPanel.y = (param2 >> 1) / scaleY + DAMAGE_INFO_PANEL_CONSTS.HEIGHT * scaleY | 0;
          this.damageInfoPanel.x = param1 - DAMAGE_INFO_PANEL_CONSTS.WIDTH >> 1;
@@ -99,6 +85,13 @@ package net.wg.gui.battle.mapsTraining.views
          this.battleMessenger.y = damagePanel.y - this.battleMessenger.height + MESSENGER_Y_OFFSET;
          this.destroyTimersPanel.updateStage(param1,param2);
          this.updateHintPanelPosition();
+         this.updateBattleDamageLogPanelPosition();
+      }
+      
+      override protected function updatePrebattleTimerPosition(param1:int) : void
+      {
+         prebattleTimer.x = param1;
+         prebattleTimer.y = App.appHeight <= StageSizeBoundaries.HEIGHT_800 ? Number(PREBATTLE_TIMER_Y_SMALL) : Number(PREBATTLE_TIMER_Y);
       }
       
       override protected function configUI() : void
@@ -206,15 +199,7 @@ package net.wg.gui.battle.mapsTraining.views
       
       private function onConsumablesPanelUpdatePositionHandler(param1:ConsumablesPanelEvent) : void
       {
-         if(isPostMortem)
-         {
-            this.consumablesPanel.removeEventListener(ConsumablesPanelEvent.UPDATE_POSITION,this.onConsumablesPanelUpdatePositionHandler);
-            updateBattleDamageLogPosInPostmortem();
-         }
-         else
-         {
-            this.updateBattleDamageLogPanelPosition();
-         }
+         this.updateBattleDamageLogPanelPosition();
          minimap.updateSizeIndex(false);
       }
       

@@ -196,10 +196,6 @@ class ArmorSubPresenter(SubPresenterBase):
         super(ArmorSubPresenter, self).finalize()
         return
 
-    def clear(self):
-        self.finalize()
-        super(ArmorSubPresenter, self).clear()
-
     @createBackportTooltipDecorator()
     def createToolTip(self, event):
         return super(ArmorSubPresenter, self).createToolTip(event)

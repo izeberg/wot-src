@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing, BigWorld
 if typing.TYPE_CHECKING:
     from ResMgr import DataSection

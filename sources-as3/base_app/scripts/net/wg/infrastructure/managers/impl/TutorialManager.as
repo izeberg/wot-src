@@ -266,7 +266,11 @@ package net.wg.infrastructure.managers.impl
          if(_loc4_ && !_loc4_.foundComponent)
          {
             _loc5_ = IViewWrapper(this._idToView[param2]);
-            App.utils.asserter.assertNotNull(_loc5_,"view id " + param2 + Errors.WASNT_FOUND);
+            if(_loc5_ == null)
+            {
+               DebugUtils.LOG_ERROR("View id = " + param2 + " is not ready for tutorial events");
+               return;
+            }
             _loc6_ = _loc5_.getTutorialHintZone(getTutorialHintZoneName(param1));
             updateExternalHintComponent(_loc6_,param3.rect);
             _loc6_.addEventListener(LifeCycleEvent.ON_BEFORE_DISPOSE,this.onExternalComponentDisposedHandler);

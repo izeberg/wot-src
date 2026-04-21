@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import math, random
 from typing import TYPE_CHECKING
 from ClientSelectableCameraVehicle import ClientSelectableCameraVehicle
@@ -72,6 +73,7 @@ class HeroTank(ClientSelectableCameraVehicle):
 
     def onMouseClick(self):
         from gui.shared.event_dispatcher import showVehicleHubOverview
+        super(HeroTank, self).onMouseClick()
         style = None
         styleId = self._heroTankCtrl.getCurrentTankStyleId()
         if styleId is not None:

@@ -190,6 +190,9 @@ msgstr "Wz. 64GC Bzyg"
 msgid "Chassis_Pl37_CS_67_Szakal"
 msgstr "CS-67 Szakal"
 
+msgid "Chassis_Pl40_Krazownik"
+msgstr "Krazownik"
+
 msgid "Fug7A"
 msgstr "FuG 7"
 
@@ -227,6 +230,9 @@ msgid "GTD_2T5x2"
 msgstr "2x GTD-2T5"
 
 msgid "GTD_2T6x2"
+msgstr "2x GTD-2T6"
+
+msgid "GTD_2T6x2_7x7"
 msgstr "2x GTD-2T6"
 
 msgid "GTD_2_WSK_x2"
@@ -340,6 +346,9 @@ msgstr "PP-GG m85/175"
 msgid "PP_GG_m85_175_60"
 msgstr "PP-GG m85/175 (60)"
 
+msgid "PP_GG_m85_175_7x7"
+msgstr "PP-GG m85/175"
+
 msgid "PP_GG_m85_175_GC"
 msgstr "PP-GG m85/175 GC"
 
@@ -361,6 +370,9 @@ msgstr "PPrz-GG m85/175"
 msgid "PPrz_GG_m85_175_60"
 msgstr "PPrz-GG m85/175 (60)"
 
+msgid "PPrz_GG_m85_175_7x7"
+msgstr "PPrz-GG m85/175"
+
 msgid "PPrz_GG_m85_175_GC"
 msgstr "PPrz-GG m85/175 GC"
 
@@ -381,6 +393,9 @@ msgstr "PW-GG m85/175"
 
 msgid "PW_GG_m85_175_60"
 msgstr "PW-GG m85/175 (60)"
+
+msgid "PW_GG_m85_175_7x7"
+msgstr "PW-GG m85/175"
 
 msgid "PW_GG_m85_175_GC"
 msgstr "PW-GG m85/175 GC"
@@ -1110,6 +1125,33 @@ msgstr ""
 msgid "Pl37_CS_67_Szakal_short"
 msgstr "Szakal"
 
+msgid "Pl40_Krazownik"
+msgstr "Krazownik"
+
+msgid "Pl40_Krazownik_descr"
+msgstr ""
+"After World War II, many shell stocks for the German 12.8 cm naval gun "
+"remained in Poland. In the 1960s, the country decided to begin a project for"
+" the Krazownik* heavy tank with armament designed to use this ammo. The "
+"Soviet B-13 naval gun was considered as an alternative. The estimated cost "
+"of the project rose significantly during development, and, as the ammunition"
+" was quickly becoming outdated, the project was terminated at the blueprint "
+"phase."
+
+msgid "Pl40_Krazownik_long_special"
+msgstr ""
+"The Krazownik is a Tier VIII Polish assault heavy tank. As a typical "
+"representative of its role, it features a gun with very high alpha damage "
+"and reliable hull and turret armor. The vehicle still offers decent mobility"
+" despite its heavy protection. The gun is also quite comfortable for its "
+"level of alpha damage."
+
+msgid "Pl40_Krazownik_short"
+msgstr "Krazownik"
+
+msgid "Pl40_Krazownik_short_special"
+msgstr "Good armor, high single damage"
+
 msgid "Polski_FIAT_122BC"
 msgstr "Polski FIAT 122BC"
 
@@ -1142,6 +1184,9 @@ msgstr "RTU \"Jesion\""
 
 msgid "RTU_Jesion_M"
 msgstr "RTU \"Jesion-M\""
+
+msgid "R_112"
+msgstr "R-112"
 
 msgid "R_113"
 msgstr "R-113"
@@ -1177,6 +1222,9 @@ msgid "R_123_1"
 msgstr "R-123C"
 
 msgid "R_123_7x7"
+msgstr "R-123"
+
+msgid "R_123_NC_Wz_70T_7x7"
 msgstr "R-123"
 
 msgid "R_123_OSP3"
@@ -1325,6 +1373,9 @@ msgstr "Wz. 64GC Bzyg"
 
 msgid "Turret_1_Pl37_CS_67_Szakal"
 msgstr "CS-67 Szakal"
+
+msgid "Turret_1_Pl40_Krazownik"
+msgstr "Krazownik"
 
 msgid "Turret_2_Pl05_50TP_Tyszkiewicza"
 msgstr "50TP Tyszkiewicza II"
@@ -1707,6 +1758,18 @@ msgstr "122 mm wz. 53"
 msgid "_122mm_wz_53_53TP"
 msgstr "122 mm wz. 53 (53TP)"
 
+msgid "_128_mm_SK_C_34L"
+msgstr "128 mm SK C/34L"
+
+msgid "_128mm_Pzgr_39K"
+msgstr "Pzgr. 39K"
+
+msgid "_128mm_Pzgr_40K"
+msgstr "Pzgr. 40K"
+
+msgid "_128mm_Sprgr_18K"
+msgstr "Sprgr. 18K"
+
 msgid "_130mm_AZ_OF_46"
 msgstr "AZ-OF-46"
 
@@ -1772,6 +1835,9 @@ msgstr "Ulepszony z pociskiem wybuchowym"
 
 msgid "_20mm_z_pociskiem_wybuchowo_ulepszony_B"
 msgstr "Ulepszony z pociskiem wybuchowym B"
+
+msgid "_2xGTD_2T5A"
+msgstr "2xGTD-2T5A"
 
 msgid "_37mm_APCR_Bofors"
 msgstr "37 mm APCR Bofors"

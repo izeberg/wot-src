@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, CGF
 from BigWorld import DynamicScriptComponent
 from cgf_network import ClientReplicableDataSingleton, ReplicationState, ObjectCommand

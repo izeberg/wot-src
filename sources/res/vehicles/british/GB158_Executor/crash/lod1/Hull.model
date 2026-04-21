@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB158_Executor/crash/lod1/Hull</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/british/GB158_Executor/crash/lod2/Hull</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>
+			-1.527 -0.592251 -3.768975
+			<!--BW_String-->
+		</min>
+		<max>
+			1.527 0.765984 2.931999
+			<!--BW_String-->
+		</max>
+	</visibilityBox>
+</root>

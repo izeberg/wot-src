@@ -1,0 +1,30 @@
+from __future__ import absolute_import
+from gui.veh_mechanics.battle.updaters.updaters_common import ViewUpdater
+from helpers import dependency
+from skeletons.gui.battle_session import IBattleSessionProvider
+
+class LowChargeShotUpdater(ViewUpdater):
+    __sessionProvider = dependency.descriptor(IBattleSessionProvider)
+
+    def initialize(self):
+        super(LowChargeShotUpdater, self).initialize()
+        ammoCtrl = self.__sessionProvider.shared.ammo
+        if ammoCtrl is not None:
+            ammoCtrl.onShellChangeTimeUpdated += self.__onShellChangeTimeUpdated
+            ammoCtrl.onGunReloadTimeSet += self.__onGunReloadTimeSet
+            self.__onShellChangeTimeUpdated(ammoCtrl.canQuickShellChange(), ammoCtrl.getQuickShellChangeTime())
+        return
+
+    def finalize(self):
+        ammoCtrl = self.__sessionProvider.shared.ammo
+        if ammoCtrl is not None:
+            ammoCtrl.onShellChangeTimeUpdated -= self.__onShellChangeTimeUpdated
+            ammoCtrl.onGunReloadTimeSet -= self.__onGunReloadTimeSet
+        super(LowChargeShotUpdater, self).finalize()
+        return
+
+    def __onShellChangeTimeUpdated(self, isVisible, shellChangeTime):
+        self.view.setShellChangeTime(isVisible, shellChangeTime)
+
+    def __onGunReloadTimeSet(self, _, state, __):
+        self.view.setBaseTimeBeforeBattleOrEmpty(state.getBaseValue())

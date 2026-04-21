@@ -1,4 +1,4 @@
 from constants import ARENA_BONUS_TYPE
-from account_helpers.AccountSettings import STATS_COMP7_SORTING
+from account_helpers.AccountSettings import STATS_COMP7_LIGHT_SORTING
 from gui.shared.system_factory import registerBattleResultsStatsSorting
-registerBattleResultsStatsSorting(ARENA_BONUS_TYPE.COMP7_LIGHT, STATS_COMP7_SORTING)
+registerBattleResultsStatsSorting(ARENA_BONUS_TYPE.COMP7_LIGHT, STATS_COMP7_LIGHT_SORTING)

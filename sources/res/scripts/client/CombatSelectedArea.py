@@ -1,3 +1,4 @@
+from __future__ import absolute_import, division
 import BigWorld, Math, math_utils
 from constants import SERVER_TICK_LENGTH
 OVER_TERRAIN_HEIGHT = 0.5
@@ -94,7 +95,7 @@ class CombatSelectedArea(object):
                 corners = {
                  (
                   halfX, 0, halfY), (-halfX, 0, halfY), (-halfX, 0, -halfY), (halfX, 0, -halfY)}
-                transformedCorners = map(lambda corner: self.__matrix.applyPoint(corner), corners)
+                transformedCorners = [ self.__matrix.applyPoint(corner) for corner in corners ]
                 arena = BigWorld.player().arena
                 correction = Math.Vector3(0)
                 for transformedCorner in transformedCorners:

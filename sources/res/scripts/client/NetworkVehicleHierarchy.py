@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from BigWorld import DynamicScriptComponent
 from vehicle_hierarchy import createClientVehicleHierarchy, removeClientVehicleHierarchy, updateClientVehicleHierarchy
 

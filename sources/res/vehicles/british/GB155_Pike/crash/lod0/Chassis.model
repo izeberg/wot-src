@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB155_Pike/crash/lod0/Chassis</nodefullVisual>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.881601 -0.000001 -3.266582</min>
+		<max>1.881601 1.229170 3.198188</max>
+	</visibilityBox>
+	<parent>vehicles/british/GB155_Pike/crash/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+</root>

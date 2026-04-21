@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.288047 -0.271661 -0.254056</min>
+		<max>0.288047 0.336537 6.109997</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/russian/R234_T_13/normal/lod4/Gun_04</nodefullVisual>
+</root>

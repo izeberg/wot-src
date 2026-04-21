@@ -115,7 +115,7 @@ package net.wg.gui.lobby.settings.feedback.damageIndicator
                   {
                      _loc8_.yaw = !!_loc4_ ? Number(DAMAGE_INDICATOR_BLOCKED_YAW_WITH_ALLIES) : Number(DAMAGE_INDICATOR_BLOCKED_YAW_DEFAULT);
                   }
-                  else if(_loc8_.type == DamageIndicatorExtendedSetting.ALLY && !_loc4_)
+                  else if(!_loc4_ && _loc8_.type == DamageIndicatorExtendedSetting.ALLY)
                   {
                      continue;
                   }

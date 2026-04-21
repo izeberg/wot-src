@@ -355,6 +355,9 @@
 		<GB120_Concept_No_5>
 			<row>10</row>
 			<column>10</column>
+			<lines>
+				<GB158_Executor/>
+			</lines>
 		</GB120_Concept_No_5>
 		<GB100_Manticore>
 			<row>11</row>
@@ -364,6 +367,10 @@
 			<row>8</row>
 			<column>11</column>
 		</GB147_FV4025_Contriver>
+		<GB158_Executor>
+			<row>10</row>
+			<column>11</column>
+		</GB158_Executor>
 		<GB152_AT_FV230_Breaker>
 			<row>4</row>
 			<column>11</column>

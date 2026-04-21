@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from commendations_schema import commendationsConfigSchema
 from params_schemas.veh_playlists_schema import vehPlaylistsConfigSchema

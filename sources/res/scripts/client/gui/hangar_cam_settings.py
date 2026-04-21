@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from account_helpers.settings_core.options import HangarCamPeriodSetting
 OPTIONS = HangarCamPeriodSetting.OPTIONS
 HANGAR_CAM_PERIODS = {OPTIONS.TYPE0: 30, 

@@ -1,7 +1,6 @@
 from __future__ import absolute_import
 from gui.shared.gui_items.vehicle_mechanics.factories.base_factory import BaseMechanicFactory
 from vehicles.mechanics.mechanic_constants import VehicleMechanic
-from vehicles.mechanics.mechanic_helpers import hasVehicleDescrMechanic
 
 class EngineMechanicFactory(BaseMechanicFactory):
 
@@ -13,8 +12,6 @@ class EngineMechanicFactory(BaseMechanicFactory):
          (
           guiItem.hasRocketAcceleration(vehDescr), VehicleMechanic.ROCKET_ACCELERATION),
          (
-          cls.__checkMechanic(vehDescr, VehicleMechanic.STAGED_JET_BOOSTERS), VehicleMechanic.STAGED_JET_BOOSTERS)]
-
-    @staticmethod
-    def __checkMechanic(vehDescr, mechanicConstant):
-        return vehDescr is not None and hasVehicleDescrMechanic(vehDescr, mechanicConstant)
+          guiItem.hasWheeledDash(vehDescr), VehicleMechanic.WHEELED_DASH),
+         (
+          guiItem.hasStagedJetBoosters(vehDescr), VehicleMechanic.STAGED_JET_BOOSTERS)]

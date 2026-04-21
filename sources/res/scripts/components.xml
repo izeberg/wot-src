@@ -105,6 +105,8 @@
 		<SecondaryGunComponent/>
 		<PillboxSiegeComponent/>
 		<StationaryReloadController/>
+		<LowChargeShotController/>
+		<LowChargeShotPublicController/>
 		<NetworkReplicationPointComponent/>
 		<NetworkVehicleHierarchy/>
 		<ChargeShotComponent/>
@@ -115,5 +117,7 @@
 		<ChargeableBurstComponent/>
 		<DebuffController/>
 		<StagedJetBoostersController/>
+		<PropellantGunController/>
+		<WheeledDashController/>
 	</DynamicComponents>
 </root>

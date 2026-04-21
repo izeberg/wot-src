@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<effectMap>spaces/14_siegfried_line_ls26_1/environments/E85EDA4C-492A96F1-BA87B8A9-0966EAF0/camera_effects_map.dds</effectMap>
+	<effect>
+		<id>1</id>
+		<name>particles/content_deferred/PFX/Environment/CameraEffects/city_ash_fire.vfx</name>
+		<alignToTerrain>false</alignToTerrain>
+		<useCameraTarget>false</useCameraTarget>
+	</effect>
+</root>

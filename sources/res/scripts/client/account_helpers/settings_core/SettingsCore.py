@@ -312,6 +312,9 @@ class SettingsCore(ISettingsCore):
           GAME.NEWBIE_BATTLE_HINTS,
           options.NewbieBattleHintsSetting(GAME.NEWBIE_BATTLE_HINTS, storage=EXTENDED_GAME_2_SETTINGS_STORAGE)),
          (
+          GAME.W2GT_ENABLE,
+          options.W2GTEnabledSetting(GAME.W2GT_ENABLE, storage=EXTENDED_GAME_2_SETTINGS_STORAGE)),
+         (
           GRAPHICS.MONITOR,
           options.MonitorSetting(storage=VIDEO_SETTINGS_STORAGE)),
          (

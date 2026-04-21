@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld
 from visual_script.misc import ASPECT
 from visual_script.multi_plan_provider import MultiPlanCache

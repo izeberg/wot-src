@@ -12,7 +12,7 @@
 	<postProgressionTree>role_HT_universal</postProgressionTree>
 	<customRoleSlotOptions>2 4</customRoleSlotOptions>
 	<speedLimits>
-		<forward>33</forward>
+		<forward>35</forward>
 		<backward>15</backward>
 	</speedLimits>
 	<invisibility>
@@ -91,15 +91,15 @@
 		<armor>
 			<armor_1>180</armor_1>
 			<armor_2>155</armor_2>
-			<armor_3>65</armor_3>
+			<armor_3>60</armor_3>
 			<armor_4>38</armor_4>
 			<armor_5>50</armor_5>
 			<armor_6>38</armor_6>
 			<armor_7>240</armor_7>
 			<armor_8>0</armor_8>
-			<armor_9>170</armor_9>
-			<armor_10>135</armor_10>
-			<armor_11>130</armor_11>
+			<armor_9>155</armor_9>
+			<armor_10>125</armor_10>
+			<armor_11>90</armor_11>
 			<armor_12>155</armor_12>
 			<armor_13>145</armor_13>
 			<armor_14>140</armor_14>
@@ -1774,7 +1774,7 @@
 				1 1.2 2
 				<!--BW_String-->
 			</terrainResistance>
-			<brakeForce>55000</brakeForce>
+			<brakeForce>60000</brakeForce>
 			<rotationIsAroundCenter>false</rotationIsAroundCenter>
 			<rotationSpeed>26</rotationSpeed>
 			<shotDispersionFactors>
@@ -3825,7 +3825,7 @@
 			<price>60000</price>
 			<notInShop>true</notInShop>
 			<armor>
-				<armor_1>300</armor_1>
+				<armor_1>290</armor_1>
 				<armor_2>190</armor_2>
 				<armor_3>70</armor_3>
 				<armor_4>30</armor_4>
@@ -3879,11 +3879,11 @@
 					<unlocks/>
 					<armor>
 						<armor_1>
-							330
+							290
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_1>
 						<armor_2>
-							110
+							100
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_2>
 						<armor_3>
@@ -3895,19 +3895,19 @@
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_4>
 						<armor_5>
-							110
+							100
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_5>
 						<armor_6>
-							150
+							135
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_6>
 						<armor_7>
-							130
+							125
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_7>
 						<armor_8>
-							170
+							160
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_8>
 						<armor_9>
@@ -3915,7 +3915,7 @@
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_9>
 						<armor_10>
-							135
+							125
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_10>
 						<armor_11>
@@ -3939,43 +3939,43 @@
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_15>
 						<armor_16>
-							170
+							155
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_16>
 						<armor_17>
-							235
+							210
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_17>
 						<armor_18>
-							280
+							255
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_18>
 						<armor_19>
-							310
+							280
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_19>
 						<armor_20>
-							320
+							290
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_20>
 						<armor_21>
-							320
+							290
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_21>
 						<armor_22>
-							300
+							270
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_22>
 						<armor_23>
-							260
+							235
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_23>
 						<armor_24>
-							210
+							185
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_24>
 						<armor_25>
-							140
+							125
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_25>
 						<gun>50</gun>
@@ -3984,7 +3984,7 @@
 					<pitchLimits>
 						<minPitch>0 -15 1 -15</minPitch>
 						<maxPitch>
-							0.00000 10.00 0.43333 10.00 0.45000 3.50 0.55000 3.50 0.56667 10.00 1.00000 10.00
+							0.00000 8.00 0.43333 8.00 0.45000 3.50 0.55000 3.50 0.56667 8.00 1.00000 8.00
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
@@ -5217,8 +5217,8 @@
 		<detailed>
 			<engines>
 				<Continental_AV_1790_8_Terrifiant>
-					<smplEnginePower>1050</smplEnginePower>
-					<smplFwMaxSpeed>33</smplFwMaxSpeed>
+					<smplEnginePower>950</smplEnginePower>
+					<smplFwMaxSpeed>35</smplFwMaxSpeed>
 				</Continental_AV_1790_8_Terrifiant>
 			</engines>
 			<chassis>

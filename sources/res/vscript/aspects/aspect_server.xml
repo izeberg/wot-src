@@ -16,5 +16,9 @@
 			<module>visual_script</module>
 			<name>g_blockRegistrar</name>
 		</registrar>
+		<registrar>
+			<module>ai.aicore.AIComponents.subcomponents.Stats</module>
+			<name>g_blockRegistrar</name>
+		</registrar>
 	</python>
 </root>

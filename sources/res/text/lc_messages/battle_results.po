@@ -575,10 +575,12 @@ msgid "common/vehicleState/dead0"
 msgstr "Destroyed by a shot"
 
 msgid "common/vehicleState/dead0_with_killername"
-msgstr "Destroyed by a shot ({{killername}})"
+msgstr "Destroyed by a shot ({{@ class $killerClass}}{{killername}}{{/}})"
 
 msgid "common/vehicleState/dead0_with_killername_and_clan"
-msgstr "Destroyed by a shot ({{killername}}[{{clanTag}}])"
+msgstr ""
+"Destroyed by a shot ({{@ class "
+"$killerClass}}{{killername}}[{{clanTag}}]{{/}})"
 
 msgid "common/vehicleState/dead1"
 msgstr "Destroyed by fire"
@@ -590,10 +592,11 @@ msgid "common/vehicleState/dead13"
 msgstr "Destroyed by the player's skill"
 
 msgid "common/vehicleState/dead1_with_killername"
-msgstr "Destroyed by fire ({{killername}})"
+msgstr "Destroyed by fire ({{@ class $killerClass}}{{killername}}{{/}})"
 
 msgid "common/vehicleState/dead1_with_killername_and_clan"
-msgstr "Destroyed by fire ({{killername}}[{{clanTag}}])"
+msgstr ""
+"Destroyed by fire ({{@ class $killerClass}}{{killername}}[{{clanTag}}]{{/}})"
 
 msgid "common/vehicleState/dead2"
 msgstr "Destroyed by ramming"
@@ -605,10 +608,12 @@ msgid "common/vehicleState/dead29"
 msgstr "Crashed"
 
 msgid "common/vehicleState/dead2_with_killername"
-msgstr "Destroyed by ramming ({{killername}})"
+msgstr "Destroyed by ramming ({{@ class $killerClass}}{{killername}}{{/}})"
 
 msgid "common/vehicleState/dead2_with_killername_and_clan"
-msgstr "Destroyed by ramming ({{killername}}[{{clanTag}}])"
+msgstr ""
+"Destroyed by ramming ({{@ class "
+"$killerClass}}{{killername}}[{{clanTag}}]{{/}})"
 
 msgid "common/vehicleState/dead3"
 msgstr "Crashed"
@@ -617,19 +622,21 @@ msgid "common/vehicleState/dead30"
 msgstr "Destroyed by a shot"
 
 msgid "common/vehicleState/dead30_with_killername"
-msgstr "Destroyed by a shot ({{killername}})"
+msgstr "Destroyed by a shot ({{@ class $killerClass}}{{killername}}{{/}})"
 
 msgid "common/vehicleState/dead30_with_killername_and_clan"
-msgstr "Destroyed by a shot ({{killername}}[{{clanTag}}])"
+msgstr ""
+"Destroyed by a shot ({{@ class "
+"$killerClass}}{{killername}}[{{clanTag}}]{{/}})"
 
 msgid "common/vehicleState/dead35"
 msgstr "Crashed"
 
 msgid "common/vehicleState/dead3_with_killername"
-msgstr "Crashed ({{killername}})"
+msgstr "Crashed ({{@ class $killerClass}}{{killername}}{{/}})"
 
 msgid "common/vehicleState/dead3_with_killername_and_clan"
-msgstr "Crashed ({{killername}}[{{clanTag}}])"
+msgstr "Crashed ({{@ class $killerClass}}{{killername}}[{{clanTag}}]{{/}})"
 
 msgid "common/vehicleState/dead4"
 msgstr "Destroyed by a death zone"
@@ -638,10 +645,11 @@ msgid "common/vehicleState/dead5"
 msgstr "Vehicle drowned"
 
 msgid "common/vehicleState/dead5_with_killername"
-msgstr "Vehicle drowned ({{killername}})"
+msgstr "Vehicle drowned ({{@ class $killerClass}}{{killername}}{{/}})"
 
 msgid "common/vehicleState/dead5_with_killername_and_clan"
-msgstr "Vehicle drowned ({{killername}}[{{clanTag}}])"
+msgstr ""
+"Vehicle drowned ({{@ class $killerClass}}{{killername}}[{{clanTag}}]{{/}})"
 
 msgid "common/vehicleState/dead6"
 msgstr "Destroyed by Firestorm"
@@ -650,10 +658,13 @@ msgid "common/vehicleState/dead7"
 msgstr "Destroyed by overturning"
 
 msgid "common/vehicleState/dead7_with_killername"
-msgstr "Destroyed by overturning ({{killername}})"
+msgstr ""
+"Destroyed by overturning ({{@ class $killerClass}}{{killername}}{{/}})"
 
 msgid "common/vehicleState/dead7_with_killername_and_clan"
-msgstr "Destroyed by overturning ({{killername}}[{{clanTag}}])"
+msgstr ""
+"Destroyed by overturning ({{@ class "
+"$killerClass}}{{killername}}[{{clanTag}}]{{/}})"
 
 msgid "common/vehicleState/prematureLeave"
 msgstr "Quit before the end of the battle"

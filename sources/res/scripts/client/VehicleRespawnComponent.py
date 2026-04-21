@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld, Event
 from constants import RespawnState, VEHICLE_SETTING, IS_VS_EDITOR
 from helpers import dependency

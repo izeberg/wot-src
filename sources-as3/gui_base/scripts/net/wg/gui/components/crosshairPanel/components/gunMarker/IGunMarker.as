@@ -14,6 +14,8 @@ package net.wg.gui.components.crosshairPanel.components.gunMarker
       
       function setColor(param1:String) : void;
       
+      function setIsColorBlind(param1:Boolean) : void;
+      
       function setScale(param1:Number) : void;
       
       function setMixingScale(param1:Number) : void;

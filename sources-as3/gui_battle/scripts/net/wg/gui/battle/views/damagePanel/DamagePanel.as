@@ -128,6 +128,8 @@ package net.wg.gui.battle.views.damagePanel
       
       private var _isDestroyed:Boolean = false;
       
+      private var _isAlive:Boolean = false;
+      
       private var _hasWheel:Boolean = false;
       
       private var _playerName:String = "";
@@ -278,8 +280,8 @@ package net.wg.gui.battle.views.damagePanel
          {
             if(this._isDestroyed)
             {
-               this._modulesCtrl.showDestroyed();
-               this._tankmenCtrl.showDestroyed();
+               this._modulesCtrl.showDestroyed(!this._isAlive);
+               this._tankmenCtrl.showDestroyed(!this._isAlive);
                this.tankIndicator.showDestroyed();
                this.fireIndicator.state = BATTLE_ITEM_STATES.NORMAL;
             }
@@ -308,9 +310,10 @@ package net.wg.gui.battle.views.damagePanel
          }
       }
       
-      override protected function setup(param1:String, param2:int, param3:String, param4:Array, param5:Array, param6:Boolean, param7:Boolean, param8:Boolean, param9:Boolean) : void
+      override protected function setup(param1:String, param2:int, param3:String, param4:Array, param5:Array, param6:Boolean, param7:Boolean, param8:Boolean, param9:Boolean, param10:Boolean) : void
       {
          this._hasWheel = param7;
+         this._isAlive = param10;
          this.updateHealth(param1,param2);
          if(this._tankmenCtrl != null)
          {
@@ -369,6 +372,7 @@ package net.wg.gui.battle.views.damagePanel
             this.setAutoRotation(true);
             this._isReseted = true;
          }
+         this._isAlive = true;
          this._isDestroyed = false;
       }
       

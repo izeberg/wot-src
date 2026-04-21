@@ -43,8 +43,10 @@ class GunMechanicItem(ModuleMechanicItem):
      VehicleMechanic.HEATING_ZONES_GUN,
      VehicleMechanic.MAGAZINE_GUN,
      VehicleMechanic.OVERHEAT_GUN,
+     VehicleMechanic.PROPELLANT_GUN,
      VehicleMechanic.STUN,
-     VehicleMechanic.TWIN_GUN}
+     VehicleMechanic.TWIN_GUN,
+     VehicleMechanic.LOW_CHARGE_SHOT}
     _EXTRA_STATUSES = {
      VehicleMechanic.AUTO_LOADER_GUN,
      VehicleMechanic.AUTO_LOADER_GUN_BOOST,
@@ -55,18 +57,22 @@ class GunMechanicItem(ModuleMechanicItem):
      VehicleMechanic.HEATING_ZONES_GUN,
      VehicleMechanic.MAGAZINE_GUN,
      VehicleMechanic.OVERHEAT_GUN,
-     VehicleMechanic.TWIN_GUN}
+     VehicleMechanic.PROPELLANT_GUN,
+     VehicleMechanic.TWIN_GUN,
+     VehicleMechanic.LOW_CHARGE_SHOT}
 
 
 class EngineMechanicItem(ModuleMechanicItem):
     _GUI_SUPPORTED_MECHANICS = {
      VehicleMechanic.TURBOSHAFT_ENGINE,
      VehicleMechanic.ROCKET_ACCELERATION,
-     VehicleMechanic.STAGED_JET_BOOSTERS}
+     VehicleMechanic.STAGED_JET_BOOSTERS,
+     VehicleMechanic.WHEELED_DASH}
     _EXTRA_STATUSES = {
      VehicleMechanic.TURBOSHAFT_ENGINE,
      VehicleMechanic.ROCKET_ACCELERATION,
-     VehicleMechanic.STAGED_JET_BOOSTERS}
+     VehicleMechanic.STAGED_JET_BOOSTERS,
+     VehicleMechanic.WHEELED_DASH}
 
 
 class ChassisMechanicItem(ModuleMechanicItem):

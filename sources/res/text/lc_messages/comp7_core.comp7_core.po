@@ -14,6 +14,37 @@ msgstr ""
 msgid "#PluralForms"
 msgstr "nplurals=2; plural=(n != 1);"
 
+msgid "prebattleTimer/ban/additionalInfo"
+msgstr "Choose a vehicle you want to exclude from this battle"
+
+msgid "prebattleTimer/ban/header"
+msgstr "Ban Vote Stage"
+
+msgid "prebattleTimer/info/readyBtn/label"
+msgstr "Confirm Selection"
+
+msgid "prebattleTimer/info/readyBtn/tooltip/body"
+msgstr "After confirming, you will not be able to select another vehicle."
+
+msgid "prebattleTimer/pick/header"
+msgstr "Confirmation Stage"
+
+msgid "prebattleTimer/prepick/additionalInfo"
+msgstr ""
+"Select the most suitable vehicle for this map and your team composition"
+
+msgid "prebattleTimer/prepick/header"
+msgstr "Vehicle Pre-Selection Stage"
+
+msgid "prebattleTimer/wait/additionalInfo"
+msgstr "Select the best vehicle for the current map and your team."
+
+msgid "prebattleTimer/wait/header"
+msgstr "Awaiting players..."
+
+msgid "prebattleTimer/wait/selectVehicle"
+msgstr "Select a vehicle"
+
 msgid "primeTimeView/endOfCycle"
 msgstr "The Stage on the %(server)s server has finished"
 

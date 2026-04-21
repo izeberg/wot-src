@@ -1,8 +1,10 @@
+from __future__ import absolute_import
+from collections import namedtuple
 from random import randrange
 from functools import partial
-from collections import namedtuple
-from debug_utils import LOG_WARNING, LOG_DEBUG, LOG_ERROR
+from future.utils import viewitems
 import Math, BigWorld, ResMgr, BattleReplay, Event, SoundGroups, VSE, WWISE
+from debug_utils import LOG_WARNING, LOG_DEBUG, LOG_ERROR
 from helpers import isPlayerAvatar
 from account_helpers import AccountSettings
 from account_helpers.settings_core.settings_constants import SOUND
@@ -202,8 +204,8 @@ class IngameSoundNotifications(CallbackDelayer, TimeDeltaMeter):
         return ''
 
     def clear(self):
-        for queueNum in self.__queues:
-            LOG_VO(('Clear queue "{}". Removed events: {}').format(queueNum, [ eventItem.eventName for eventItem in self.__queues[queueNum] ]))
+        for queueNum, queue in viewitems(self.__queues):
+            LOG_VO(('Clear queue "{}". Removed events: {}').format(queueNum, [ eventItem.eventName for eventItem in queue ]))
             self.__queues[queueNum] = []
 
         for queueNum in self.__playingEvents:
@@ -264,7 +266,7 @@ class IngameSoundNotifications(CallbackDelayer, TimeDeltaMeter):
 
     def getCircumstanceIndex(self, circGroup, circName):
         for circ in self.__circumstances.values():
-            if 'group' and 'name' and 'index' in circ and circ['group'] == circGroup and circ['name'] == circName:
+            if 'index' in circ and circ.get('group') == circGroup and circ.get('name') == circName:
                 return circ['index']
 
         return ''

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld, Event
 from helpers import isPlayerAvatar
 from script_component.DynamicScriptComponent import DynamicScriptComponent

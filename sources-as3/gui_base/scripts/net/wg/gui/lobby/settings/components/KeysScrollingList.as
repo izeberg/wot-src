@@ -204,16 +204,18 @@ package net.wg.gui.lobby.settings.components
       
       public function restoreDefault() : void
       {
-         var _loc3_:ListEventEx = null;
+         var _loc3_:* = undefined;
+         var _loc4_:ListEventEx = null;
          var _loc1_:uint = dataProvider.length;
          var _loc2_:uint = 0;
          while(_loc2_ < _loc1_)
          {
-            if(!dataProvider[_loc2_].header && dataProvider[_loc2_].key != dataProvider[_loc2_].keyDefault)
+            _loc3_ = dataProvider[_loc2_];
+            if(!_loc3_.header && _loc3_.key != _loc3_.keyDefault)
             {
-               dataProvider[_loc2_].key = dataProvider[_loc2_].keyDefault;
-               _loc3_ = new ListEventEx(ListEventEx.ITEM_TEXT_CHANGE,false,true,0,0,0,null,dataProvider[_loc2_],dataProvider[_loc2_].key);
-               dispatchEvent(_loc3_);
+               _loc3_.key = _loc3_.keyDefault;
+               _loc4_ = new ListEventEx(ListEventEx.ITEM_TEXT_CHANGE,false,true,0,0,0,null,_loc3_,_loc3_.key);
+               dispatchEvent(_loc4_);
             }
             _loc2_++;
          }

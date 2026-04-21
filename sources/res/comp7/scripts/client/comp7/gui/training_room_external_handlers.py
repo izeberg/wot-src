@@ -35,8 +35,8 @@ class Comp7TrainingRoomHandler(TrainingRoomBaseHandler):
     def getObserverValidator(self):
         return _canBeComp7Observer
 
-    def getPlayerReadyHandler(self):
-        return _handleComp7PlayerReady
+    def playerReadyHandler(self, result):
+        g_eventDispatcher.loadTrainingRoom(silently=True)
 
     def getPrebattleLimits(self):
         return Comp7TrainingLimits
@@ -75,10 +75,6 @@ def _isComp7ArenaFilter(arena, settings, comp7Controller=None):
         return False
     comp7Config = comp7Controller.getModeSettings()
     return arena.geometryID in comp7Config.maps
-
-
-def _handleComp7PlayerReady():
-    g_eventDispatcher.loadTrainingRoom()
 
 
 def _shouldComp7PlayerStateBeValidated(propertyName):

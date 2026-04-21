@@ -1,7 +1,7 @@
 from __future__ import absolute_import
 import typing, BigWorld
 from vehicles.parts.guns.twin_shoot.guns_interfaces import ITwinShootingEventsLogic, ITwinShootingListenerLogic
-from vehicles.parts.guns.common import GunShootingEvents, GunShootingCGFIntegration, GunShootingEventsDebugger
+from vehicles.parts.guns.common import GunShootingEvents, GunShootingCoreIntegration, GunShootingEventsDebugger
 if typing.TYPE_CHECKING:
     from vehicles.parts.guns.twin_shoot.guns_interfaces import ITwinShootGunComponent
 
@@ -28,8 +28,8 @@ class TwinShootingEvents(GunShootingEvents, ITwinShootingEventsLogic):
         self.__lastShotTime = BigWorld.time()
         super(TwinShootingEvents, self).processMultiShot(gunIndexes)
 
-    def _createCGFIntegration(self):
-        return TwinShootingCGFIntegration(self, self._getComponent())
+    def _createCoreIntegration(self):
+        return TwinShootingCoreIntegration(self, self._getComponent())
 
     def _createEventsDebugger(self):
         return TwinShootingEventsDebugger(self, self._getComponent())
@@ -60,7 +60,7 @@ class TwinShootingEvents(GunShootingEvents, ITwinShootingEventsLogic):
         return
 
 
-class TwinShootingCGFIntegration(GunShootingCGFIntegration, ITwinShootingListenerLogic):
+class TwinShootingCoreIntegration(GunShootingCoreIntegration, ITwinShootingListenerLogic):
     pass
 
 

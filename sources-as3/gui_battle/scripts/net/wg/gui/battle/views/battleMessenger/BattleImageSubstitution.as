@@ -11,8 +11,6 @@ package net.wg.gui.battle.views.battleMessenger
       
       public var image:BitmapData;
       
-      public var baseLineY:int = 11;
-      
       private var _disposed:Boolean = false;
       
       public function BattleImageSubstitution(param1:String, param2:BitmapData)

@@ -96,6 +96,30 @@ msgstr "Celestial Chest"
 msgid "attachment/Celestial/Cus_112_Celestial_XunLeiChong"
 msgstr "Celestial XunLeiChong"
 
+msgid "attachment/Justice_and_Virtue"
+msgstr "Justice and Virtue"
+
+msgid "attachment/Justice_and_Virtue/Cus_209_OB_Lantern"
+msgstr "Hanging Lantern"
+
+msgid "attachment/Justice_and_Virtue/Cus_210_OB_Gong"
+msgstr "Ceremonial Gong"
+
+msgid "attachment/Justice_and_Virtue/Cus_211_OB_Ponyaga"
+msgstr "Traveler's Pack"
+
+msgid "attachment/Justice_and_Virtue/Cus_212_OB_RedHareArmor"
+msgstr "Red Hare's Armor"
+
+msgid "attachment/Justice_and_Virtue/Cus_213_OB_LamellarArmor"
+msgstr "Green Dragon Crescent Blade"
+
+msgid "attachment/Justice_and_Virtue/Cus_213_OB_LamellarArmor/description"
+msgstr ""
+"The legendary guandao polearm wielded by Guan Yu in the Romance of the Three"
+" Kingdoms, this remarkably heavy weapon is said to be imbued with the "
+"magical power of a green dragon."
+
 msgid "attachment/Mafia_Tommys_story"
 msgstr "Mafia: Tommy's Story"
 
@@ -119,6 +143,24 @@ msgstr "Family Supplies"
 
 msgid "attachment/Mafia_Tommys_story/Cus_184_BP19_RacingKit"
 msgstr "Hard \"Fair Play\""
+
+msgid "attachment/Zero_Legacy"
+msgstr "Zero Legacy"
+
+msgid "attachment/Zero_Legacy/Cus_199_LS_EMP_TurretLamp"
+msgstr "Resonance Emitter"
+
+msgid "attachment/Zero_Legacy/Cus_200_LS_EMP_Barrel"
+msgstr "Pure Mirium Canister"
+
+msgid "attachment/Zero_Legacy/Cus_201_LS_EMP_Plazmoid"
+msgstr "Phase Inductor"
+
+msgid "attachment/Zero_Legacy/Cus_202_LS_EMP_Compressor"
+msgstr "Power Core"
+
+msgid "attachment/Zero_Legacy/Cus_203_LS_EMP_GunLamp"
+msgstr "Spectral Scanner"
 
 msgid "attachment/alliance_arsenal"
 msgstr "Alliance Arsenal"
@@ -426,6 +468,9 @@ msgstr "Arrowhead"
 msgid "attachment/gunslot/A191_gunsleeve_redhot"
 msgstr "Red Hot"
 
+msgid "attachment/gunslot/A195_gunsleeve_quickdraw"
+msgstr "Quick Draw"
+
 msgid "attachment/gunslot/Ch67_gunsleeve_thunder"
 msgstr "Thunder and Lightning"
 
@@ -437,6 +482,9 @@ msgstr "Woodpecker"
 
 msgid "attachment/gunslot/F136_gunsleeve_beast"
 msgstr "Beast"
+
+msgid "attachment/gunslot/F143_gunsleeve_ardentsoul"
+msgstr "Ardent Soul"
 
 msgid "attachment/gunslot/G185_gunsleeve_haunting"
 msgstr "Haunting"
@@ -456,6 +504,9 @@ msgstr "Concussion"
 msgid "attachment/gunslot/GB152_gunsleeve_centipede"
 msgstr "Centipede"
 
+msgid "attachment/gunslot/GB158_gunsleeve_slipstream"
+msgstr "Slipstream"
+
 msgid "attachment/gunslot/J52_gunsleeve_tempered"
 msgstr "Tempered"
 
@@ -473,6 +524,30 @@ msgstr "Nightmare"
 
 msgid "attachment/gunslot/shortDescriptionSpecial"
 msgstr "Can be received as one of the vehicle's Elite Rewards."
+
+msgid "attachment/heavy_ordnance"
+msgstr "Heavy Ordnance"
+
+msgid "attachment/heavy_ordnance/Cus_113_Historical_M129"
+msgstr "M129 Grenade Launcher"
+
+msgid "attachment/heavy_ordnance/Cus_113_Historical_M129/description"
+msgstr ""
+"A U.S. aircraft weapon developed from the earlier M75. Capable of using both"
+" high- and low-velocity grenades, it unleashed a steady stream of explosive "
+"fire from above."
+
+msgid "attachment/heavy_ordnance/Cus_114_Historical_MK18"
+msgstr "Mk 18 Grenade Launcher"
+
+msgid "attachment/heavy_ordnance/Cus_115_Historical_AircraftCannon"
+msgstr "XM-30"
+
+msgid "attachment/heavy_ordnance/Cus_116_Historical_RocketLauncher"
+msgstr "M25 Rocket Launcher"
+
+msgid "attachment/heavy_ordnance/Cus_117_Historical_CrewStuff"
+msgstr "Ammunition Boxes"
 
 msgid "attachment/iron_fury"
 msgstr "Iron Fury"
@@ -3606,6 +3681,9 @@ msgstr "?empty?"
 msgid "camouflage/bulat/label"
 msgstr "Damascus Steel"
 
+msgid "camouflage/campeador/label"
+msgstr "Campeador"
+
 msgid "camouflage/canada_day_2021/description"
 msgstr "?empty?"
 
@@ -5764,6 +5842,9 @@ msgstr "?empty?"
 msgid "camouflage/ls25_2d/label"
 msgstr "Anomaly's Mark"
 
+msgid "camouflage/ls26_1/label"
+msgstr "Scars of the Anomaly"
+
 msgid "camouflage/lunar26/description"
 msgstr "?empty?"
 
@@ -6044,6 +6125,9 @@ msgstr ""
 
 msgid "camouflage/moon_camo/label"
 msgstr "Moon Viewing"
+
+msgid "camouflage/movieNight/label"
+msgstr "Movie Night"
 
 msgid "camouflage/na_america_bd/description"
 msgstr "?empty?"
@@ -6685,6 +6769,9 @@ msgstr "?empty?"
 
 msgid "camouflage/pub_west_streamer/label"
 msgstr "Aurora Borealis"
+
+msgid "camouflage/pub_west_tankfest_2026/label"
+msgstr "Khaki Stripes"
 
 msgid "camouflage/pub_west_token_1/description"
 msgstr "?empty?"
@@ -9636,6 +9723,9 @@ msgstr "MAXIMUM NUMBER OF DECALS APPLIED"
 msgid "customization/tooltip/potentialProjDecalPlace/toltip/text"
 msgstr "Slot unavailable: remove any applied decal from another slot."
 
+msgid "customization/tooltip/quests/ashes_to_ashes_1243/condition"
+msgstr "Spot or destroy 500 enemy vehicles in Onslaught."
+
 msgid "customization/tooltip/quests/blitzkrieg_1026/condition"
 msgstr ""
 "Win an Onslaught battle by destroying all enemy vehicles in under 150 "
@@ -9928,6 +10018,28 @@ msgstr ""
 msgid "customization/tooltip/quests/comp7_5_2_ranks_65/condition"
 msgstr ""
 "Achieve the Iron rank in Season of the Crimson Dragon in Onslaught mode."
+
+msgid "customization/tooltip/quests/comp7_5_3_ranks_11/condition"
+msgstr ""
+"Achieve the Legend rank in Season of the Jade Dragon in Onslaught mode."
+
+msgid "customization/tooltip/quests/comp7_5_3_ranks_21/condition"
+msgstr ""
+"Achieve the Champion rank in Season of the Jade Dragon in Onslaught mode."
+
+msgid "customization/tooltip/quests/comp7_5_3_ranks_35/condition"
+msgstr "Achieve the Gold rank in Season of the Jade Dragon in Onslaught mode."
+
+msgid "customization/tooltip/quests/comp7_5_3_ranks_45/condition"
+msgstr ""
+"Achieve the Silver rank in Season of the Jade Dragon in Onslaught mode."
+
+msgid "customization/tooltip/quests/comp7_5_3_ranks_55/condition"
+msgstr ""
+"Achieve the Bronze rank in Season of the Jade Dragon in Onslaught mode."
+
+msgid "customization/tooltip/quests/comp7_5_3_ranks_65/condition"
+msgstr "Achieve the Iron rank in Season of the Jade Dragon in Onslaught mode."
 
 msgid "customization/tooltip/quests/comp7_ranks_diamond_1/condition"
 msgstr "Achieve the Gold rank in Season of the Griffin in Onslaught mode."
@@ -10253,6 +10365,15 @@ msgstr "Cause 225 000 HP of damage in Onslaught."
 msgid "customization/tooltip/quests/devastating_damage_1179_3/condition"
 msgstr "Cause 550 000 HP of damage in Onslaught."
 
+msgid "customization/tooltip/quests/devastating_damage_1243_1/condition"
+msgstr "Cause 25 000 HP of damage in Onslaught."
+
+msgid "customization/tooltip/quests/devastating_damage_1243_2/condition"
+msgstr "Cause 225 000 HP of damage in Onslaught."
+
+msgid "customization/tooltip/quests/devastating_damage_1243_3/condition"
+msgstr "Cause 550 000 HP of damage in Onslaught."
+
 msgid "customization/tooltip/quests/domino_effect_1179/condition"
 msgstr "Destroy 5 enemy vehicles in one battle in Onslaught."
 
@@ -10293,6 +10414,21 @@ msgstr ""
 msgid "customization/tooltip/quests/exhibition_performance_1179_3/condition"
 msgstr ""
 "Fight 50 Onslaught battles in a vehicle with the \"Rex Draconis (Crimson)\" "
+"style."
+
+msgid "customization/tooltip/quests/exhibition_performance_1243_1/condition"
+msgstr ""
+"Fight 10 Onslaught battles in a vehicle with the \"Rex Draconis (Jade)\" "
+"style."
+
+msgid "customization/tooltip/quests/exhibition_performance_1243_2/condition"
+msgstr ""
+"Fight 25 Onslaught battles in a vehicle with the \"Rex Draconis (Jade)\" "
+"style."
+
+msgid "customization/tooltip/quests/exhibition_performance_1243_3/condition"
+msgstr ""
+"Fight 50 Onslaught battles in a vehicle with the \"Rex Draconis (Jade)\" "
 "style."
 
 msgid "customization/tooltip/quests/find_and_destroy_648/condition"
@@ -10403,6 +10539,15 @@ msgstr "Earn a total of 500 base capture/defense points in Onslaught."
 msgid "customization/tooltip/quests/into_the_cap_circle_1179_3/condition"
 msgstr "Earn a total of 750 base capture/defense points in Onslaught."
 
+msgid "customization/tooltip/quests/into_the_cap_circle_1243_1/condition"
+msgstr "Earn a total of 250 base capture/defense points in Onslaught."
+
+msgid "customization/tooltip/quests/into_the_cap_circle_1243_2/condition"
+msgstr "Earn a total of 500 base capture/defense points in Onslaught."
+
+msgid "customization/tooltip/quests/into_the_cap_circle_1243_3/condition"
+msgstr "Earn a total of 750 base capture/defense points in Onslaught."
+
 msgid "customization/tooltip/quests/last_man_1026/condition"
 msgstr "Stand alone against at least 3 enemy vehicles in Onslaught and win."
 
@@ -10451,6 +10596,9 @@ msgstr ""
 "Win an Onslaught battle by destroying all enemy vehicles in under 150 "
 "seconds."
 
+msgid "customization/tooltip/quests/pioneer_of_destruction_1243/condition"
+msgstr "Be the first to destroy an enemy vehicle in Onslaught 10 times."
+
 msgid "customization/tooltip/quests/prestige_648/condition"
 msgstr ""
 "Be the top player on your team by Prestige Points earned in Onslaught 50 "
@@ -10477,6 +10625,11 @@ msgstr ""
 "times."
 
 msgid "customization/tooltip/quests/prestige_7v7_1179/condition"
+msgstr ""
+"Be the top player on your team by Prestige Points earned in Onslaught 50 "
+"times."
+
+msgid "customization/tooltip/quests/prestige_7v7_1243/condition"
 msgstr ""
 "Be the top player on your team by Prestige Points earned in Onslaught 50 "
 "times."
@@ -10530,6 +10683,9 @@ msgstr "Destroy 5 enemy vehicles in one battle in Onslaught."
 msgid "customization/tooltip/quests/rampage_965/condition"
 msgstr "Destroy 5 enemy vehicles in one battle in Onslaught."
 
+msgid "customization/tooltip/quests/ready_to_reign_1243/condition"
+msgstr "Destroy 5 enemy vehicles in one battle in Onslaught."
+
 msgid "customization/tooltip/quests/rush_648/condition"
 msgstr "Destroy 4 enemy vehicles in one battle in Onslaught."
 
@@ -10580,6 +10736,9 @@ msgstr "Mission completion time expired. The element has not been unlocked."
 
 msgid "customization/tooltip/quests/status/unavailable"
 msgstr "Unavailable"
+
+msgid "customization/tooltip/quests/still_alive_1243/condition"
+msgstr "Stand alone against at least 3 enemy vehicles in Onslaught and win."
 
 msgid "customization/tooltip/quests/sudden_strike_1026/condition"
 msgstr "Be the first to destroy an enemy vehicle in Onslaught 10 times."
@@ -10661,6 +10820,21 @@ msgstr ""
 "includes captures by both the player and their teammates."
 
 msgid "customization/tooltip/quests/tactical_advantage_1179_3/condition"
+msgstr ""
+"Capture a total of 375 Points of Interest as a team in Onslaught. This "
+"includes captures by both the player and their teammates."
+
+msgid "customization/tooltip/quests/tactical_advantage_1243_1/condition"
+msgstr ""
+"Capture a total of 15 Points of Interest as a team in Onslaught. This "
+"includes captures by both the player and their teammates."
+
+msgid "customization/tooltip/quests/tactical_advantage_1243_2/condition"
+msgstr ""
+"Capture a total of 150 Points of Interest as a team in Onslaught. This "
+"includes captures by both the player and their teammates."
+
+msgid "customization/tooltip/quests/tactical_advantage_1243_3/condition"
 msgstr ""
 "Capture a total of 375 Points of Interest as a team in Onslaught. This "
 "includes captures by both the player and their teammates."
@@ -10764,8 +10938,25 @@ msgstr "Destroy 150 enemy vehicles in Onslaught."
 msgid "customization/tooltip/quests/till_we_meet_again_1179_3/condition"
 msgstr "Destroy 350 enemy vehicles in Onslaught."
 
+msgid "customization/tooltip/quests/till_we_meet_again_1243_1/condition"
+msgstr "Destroy 15 enemy vehicles in Onslaught."
+
+msgid "customization/tooltip/quests/till_we_meet_again_1243_2/condition"
+msgstr "Destroy 150 enemy vehicles in Onslaught."
+
+msgid "customization/tooltip/quests/till_we_meet_again_1243_3/condition"
+msgstr "Destroy 350 enemy vehicles in Onslaught."
+
+msgid "customization/tooltip/quests/times_up_1243/condition"
+msgstr ""
+"Win an Onslaught battle by destroying all enemy vehicles in under 150 "
+"seconds."
+
 msgid "customization/tooltip/quests/title"
 msgstr "Conditions for Receiving the Element"
+
+msgid "customization/tooltip/quests/two_to_tango_1243/condition"
+msgstr "Win 25 battles in a 2-player Platoon in Onslaught."
 
 msgid "customization/tooltip/quests/veni_vidi_vici_648/condition"
 msgstr ""
@@ -10995,6 +11186,9 @@ msgstr "Moderator"
 
 msgid "emblem/auto/poland_chekers"
 msgstr "Emblem of Poland"
+
+msgid "emblem/auto/spanish_campeador"
+msgstr "Campeador"
 
 msgid "emblem/auto/star"
 msgstr "Emblem of the U.S.S.R."
@@ -16741,6 +16935,24 @@ msgstr "You Got No Guts"
 msgid "inscription/special/special_850"
 msgstr "Eeny, Meeny, Miny, Moe"
 
+msgid "inscription/special/special_851"
+msgstr "Two to Tango"
+
+msgid "inscription/special/special_852"
+msgstr "Pioneer of Destruction"
+
+msgid "inscription/special/special_853"
+msgstr "Still Alive"
+
+msgid "inscription/special/special_854"
+msgstr "Ashes to Ashes"
+
+msgid "inscription/special/special_855"
+msgstr "Ready to Reign"
+
+msgid "inscription/special/special_856"
+msgstr "Time's Up!"
+
 msgid "inscription/special/special_857"
 msgstr "Thank You for Your Cooperation"
 
@@ -18623,7 +18835,7 @@ msgid "main_style/granit_TIR_desc/long"
 msgstr ""
 "Inspired by the original style for the IS-7.\n"
 "\n"
-"\"It's a masterpiece of the tank building industry of the post-war USSR. It is an armor-piercing spear that can break through the heaviest defense lines and display maximum efficiency when eliminating any land or air threats under any weather, chemical, biological, or nuclear conditions. That's what the Commander says, and the Commander is always right.\""
+"\"It's a masterpiece of the tank building industry of the post-war U.S.S.R. It is an armor-piercing spear that can break through the heaviest defense lines and display maximum efficiency when eliminating any land or air threats under any weather, chemical, biological, or nuclear conditions. That's what the Commander says, and the Commander is always right.\""
 
 msgid "main_style/historical_custom_look_korea"
 msgstr "Dawn Over Nakdonggang"
@@ -20736,6 +20948,12 @@ msgstr "It's Karl, Karl!"
 
 msgid "projection_decals/special/projection_decal_106/description"
 msgstr "126 tons, 11 meters, 4 shells... It's 8-bit and perfect!"
+
+msgid "projection_decals/special/projection_decal_1060"
+msgstr "Boxing Gloves"
+
+msgid "projection_decals/special/projection_decal_1061"
+msgstr "Kernel"
 
 msgid "projection_decals/special/projection_decal_1064"
 msgstr "Bóbr"
@@ -24294,6 +24512,45 @@ msgstr "Break the Silence"
 msgid "questProgress/cust_progress_1179_9"
 msgstr "Second to None"
 
+msgid "questProgress/cust_progress_1243_1"
+msgstr "?empty?"
+
+msgid "questProgress/cust_progress_1243_10"
+msgstr "Ashes to Ashes"
+
+msgid "questProgress/cust_progress_1243_11"
+msgstr "7v7"
+
+msgid "questProgress/cust_progress_1243_12"
+msgstr "Ready to Reign"
+
+msgid "questProgress/cust_progress_1243_13"
+msgstr "Time's Up!"
+
+msgid "questProgress/cust_progress_1243_2"
+msgstr "Devastating Damage"
+
+msgid "questProgress/cust_progress_1243_3"
+msgstr "Exhibition Performance"
+
+msgid "questProgress/cust_progress_1243_4"
+msgstr "Into the Cap Circle"
+
+msgid "questProgress/cust_progress_1243_5"
+msgstr "Tactical Advantage"
+
+msgid "questProgress/cust_progress_1243_6"
+msgstr "Till We Meet Again"
+
+msgid "questProgress/cust_progress_1243_7"
+msgstr "Two to Tango"
+
+msgid "questProgress/cust_progress_1243_8"
+msgstr "Pioneer of Destruction"
+
+msgid "questProgress/cust_progress_1243_9"
+msgstr "Still Alive"
+
 msgid "questProgress/cust_progress_648_1"
 msgstr "?empty?"
 
@@ -24924,6 +25181,9 @@ msgstr "Order and Progress"
 msgid "repaint/bts_marathon_t9"
 msgstr "Plated Armor"
 
+msgid "repaint/campeador"
+msgstr "Campeador"
+
 msgid "repaint/canada_day_2021"
 msgstr "Dominion"
 
@@ -25496,6 +25756,9 @@ msgstr "Meteorite"
 
 msgid "repaint/mid_autumn_fest_2023_1"
 msgstr "Mid-Autumn Festival"
+
+msgid "repaint/movieNight"
+msgstr "Movie Night"
 
 msgid "repaint/na_america_bd"
 msgstr "Star-Spangled"
@@ -28648,11 +28911,11 @@ msgstr "Granite"
 
 msgid "special_style/IS7_NYst_description/long"
 msgstr ""
-"\"It's a masterpiece of the tank building industry of the post-war USSR. It "
-"is an armor-piercing spear that can break through the heaviest defense lines"
-" and display maximum efficiency when eliminating any land or air threats "
-"under any weather, chemical, biological, or nuclear conditions. That's what "
-"the Commander says, and the Commander is always right.\""
+"\"It's a masterpiece of the tank building industry of the post-war U.S.S.R. "
+"It is an armor-piercing spear that can break through the heaviest defense "
+"lines and display maximum efficiency when eliminating any land or air "
+"threats under any weather, chemical, biological, or nuclear conditions. "
+"That's what the Commander says, and the Commander is always right.\""
 
 msgid "special_style/It15_Rinoceronte_3DSt_MD_21_XXII"
 msgstr "Fortuna"
@@ -31689,6 +31952,32 @@ msgstr ""
 msgid "special_style/bulat"
 msgstr "Damascus Steel"
 
+msgid "special_style/campeador"
+msgstr "Campeador"
+
+msgid "special_style/campeador_desc"
+msgstr ""
+"An all-season style that remembers all vehicles used by Spain across the 20th century.\n"
+"Acquired through any WoT Plus tier."
+
+msgid "special_style/campeador_desc/long"
+msgstr ""
+"Here's to all vehicles borrowed, recycled, and used by Spain across the 20th century!\n"
+"In the 1960s and 1970s, regulation camouflage was rare, and tanks were mostly painted in a single color. During military exercises, this improvised camouflage could be applied using mud and then, conveniently, washed off with water.\n"
+"One of these training sessions in Spain was the inspiration behind Campeador, although this practice existed in various European armies.\n"
+"Acquired through any WoT Plus tier."
+
+msgid "special_style/campeador_desc_CN"
+msgstr ""
+"An all-season style inspired by military exercises in the late 20th century, where mud replaced paint as an improvised camouflage.\n"
+"Acquired through any WoT Plus tier."
+
+msgid "special_style/campeador_desc_CN/long"
+msgstr ""
+"In the 1960s and 1970s, regulation camouflage was rare, and tanks were mostly painted in a single color. During military exercises, this improvised camouflage could be applied using mud and then, conveniently, washed off with water.\n"
+"One of these training sessions was the inspiration behind Campeador, although this practice existed in various armies.\n"
+"Acquired through any WoT Plus tier."
+
 msgid "special_style/canada_day_2021"
 msgstr "Dominion"
 
@@ -34166,6 +34455,24 @@ msgstr ""
 "\n"
 "No one knows."
 
+msgid "special_style/ls26_1"
+msgstr "Scars of the Anomaly"
+
+msgid "special_style/ls26_1_desc"
+msgstr ""
+"A corrupted all-season style for those who have turned the scars of the "
+"anomaly into their primary defense and stand ready to fight a new invasion."
+
+msgid "special_style/ls26_1_desc/long"
+msgstr ""
+"They say the vehicle's \"infected,\" and that I've lost my mind. But I feel "
+"its controls as if they were my own hands. Mirium has seeped into every "
+"crevice and bound us together as one. The armor pulsates. It's alive, and it"
+" craves another encounter with what created it. I'm no longer afraid of the "
+"funnel in the sky. My tank has changed, and so have I. We're not victims of "
+"this invasion anymore. We're its most dangerous mistake. So let them come "
+"again. We're ready."
+
 msgid "special_style/lunar26"
 msgstr "Blazing Steed"
 
@@ -34650,6 +34957,19 @@ msgstr ""
 "events celebrated in Asian countries. This festival is associated with the "
 "Moon, and gazing at the Moon is considered an essential element of its "
 "celebration."
+
+msgid "special_style/movieNight"
+msgstr "Movie Night"
+
+msgid "special_style/movieNight_desc"
+msgstr ""
+"Wrap your vehicle in this movie-themed all-season style, and you'll have the"
+" best seat in the house."
+
+msgid "special_style/movieNight_desc/long"
+msgstr ""
+"Ah, the movies. Sure, streaming the latest release from the comfort of home may be easier, but it doesn't compare. The buttery, salty aroma of popcorn mingled with the faint tang of soda syrup, the towering screen, booming speakers, the cushy chair... Even the oddly sticky floor and the irritating bursts of hushed chatter coming from the row behind you somehow become a part of the fun.\n"
+"Maybe it's just nostalgia speaking, but sometimes it's worth venturing out to your local theater and paying far too much snacks (or sneaking some in your bag) just to make a night of it."
 
 msgid "special_style/multicolor_dark_disruptive_ambush"
 msgstr "Multicolor dark disruptive ambush"
@@ -35411,6 +35731,9 @@ msgstr ""
 msgid "special_style/onslaught_2025_crimson_dragon"
 msgstr "Rex Draconis (Crimson)"
 
+msgid "special_style/onslaught_2025_jade_dragon"
+msgstr "Rex Draconis (Jade)"
+
 msgid "special_style/onslaught_autumn_2025_blue"
 msgstr "Iron Resolve"
 
@@ -35871,6 +36194,22 @@ msgstr ""
 "sky, writhing as if the gods themselves wove it from light. Now I stand "
 "before you and swear this truth: the gods have a fire of their own, and it "
 "burns in the coldest reaches of the world.\""
+
+msgid "special_style/pub_west_tankfest_2026"
+msgstr "Khaki Stripes"
+
+msgid "special_style/pub_west_tankfest_2026_desc"
+msgstr "A versatile all-season style composed of historical camouflage hues."
+
+msgid "special_style/pub_west_tankfest_2026_desc/long"
+msgstr ""
+"Armored vehicles have been painted in all manner of camouflage colors over "
+"the years—brown, gray, blue, even pink. But the enduring staple has to be "
+"good old khaki green, featuring in countless variations of tigerstripe and "
+"flecktarn across nations. This classic design is no exception. Some things "
+"are iconic for a reason, especially when that reason is that the crew inside"
+" remains unseen and in one piece. Here, those khaki tones settle into thick,"
+" layered stripes, like a banded agate whose strata resist detection."
 
 msgid "special_style/pub_west_token_1"
 msgstr "Windborne"

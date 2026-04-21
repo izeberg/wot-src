@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/french/F141_Durendal/normal/lod3/Hull</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/french/F141_Durendal/normal/lod4/Hull</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.667826 -0.588142 -3.197470</min>
+		<max>1.684311 0.612818 2.982883</max>
+	</visibilityBox>
+</root>

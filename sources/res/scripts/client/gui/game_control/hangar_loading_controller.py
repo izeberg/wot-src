@@ -1,5 +1,4 @@
 import Event
-from gui.shared.event_dispatcher import showPEWelcomeScreen
 from helpers import dependency
 from skeletons.gui.game_control import IHangarLoadingController
 from skeletons.gui.goodies import IGoodiesCache
@@ -42,7 +41,6 @@ class HangarLoadingController(IHangarLoadingController):
                 self.__hangarSpace.onSpaceCreate += self.__hangarLoadedAfterLoginNotify
 
     def __hangarLoadedAfterLoginNotify(self):
-        showPEWelcomeScreen()
         self.__hangarSpace.onSpaceCreate -= self.__hangarLoadedAfterLoginNotify
         self.onHangarLoadedAfterLogin()
 

@@ -134,4 +134,9 @@
 	<NonChunkUDO>true</NonChunkUDO>
 	<navmeshGenerator>navgen</navmeshGenerator>
 	<enableClusteredShading>false</enableClusteredShading>
+	<isSHGridQualityOverridden>true</isSHGridQualityOverridden>
+	<overrideSHGridQuality>0</overrideSHGridQuality>
+	<lightsCutOffDistance>500.000000</lightsCutOffDistance>
+	<isSimplifiedSHGridQualityOverridden>false</isSimplifiedSHGridQualityOverridden>
+	<overrideSimplifiedSHGridQuality>2</overrideSimplifiedSHGridQuality>
 </root>

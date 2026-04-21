@@ -55,6 +55,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.data.constants.generated.DUAL_GUN_MARKER_STATE;
    import net.wg.data.constants.generated.EQUIPMENT_ITEM_TARGET;
    import net.wg.data.constants.generated.GUN_MARKER_VIEW_CONSTANTS;
+   import net.wg.data.constants.generated.LOW_CHARGE_SHOT_CONSTS;
    import net.wg.data.constants.generated.MINIMAPENTRIES_CONSTANTS;
    import net.wg.data.constants.generated.MISSIONS_STATES;
    import net.wg.data.constants.generated.QUEST_PROGRESS_BASE;
@@ -466,6 +467,13 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.components.crosshairPanel.components.gunMarker.TwinGunMarkerDispersionCircle;
    import net.wg.gui.components.crosshairPanel.components.gunMarker.ZoomingAimDamage;
    import net.wg.gui.components.crosshairPanel.components.gunMarker.constants.GunMarkerConsts;
+   import net.wg.gui.components.crosshairPanel.components.gunMarker.lowChargeShot.ColorsProvider;
+   import net.wg.gui.components.crosshairPanel.components.gunMarker.lowChargeShot.LowChargeShotGunMarker;
+   import net.wg.gui.components.crosshairPanel.components.gunMarker.lowChargeShot.LowChargeShotGunMarkerDispersionCircle;
+   import net.wg.gui.components.crosshairPanel.components.gunMarker.lowChargeShot.LowChargeShotGunMarkerMixing;
+   import net.wg.gui.components.crosshairPanel.components.gunMarker.lowChargeShot.LowChargeShotReloadController;
+   import net.wg.gui.components.crosshairPanel.components.gunMarker.lowChargeShot.LowChargeShotReloadEvent;
+   import net.wg.gui.components.crosshairPanel.components.gunMarker.lowChargeShot.MarkerDrawer;
    import net.wg.gui.components.crosshairPanel.components.gunStack.ReloadBoostBorder;
    import net.wg.gui.components.crosshairPanel.components.shared.ShellProgressBar;
    import net.wg.gui.components.crosshairPanel.components.speedometer.Speedometer;
@@ -975,6 +983,8 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_DATA_CONSTANTS_GENERATED_EQUIPMENT_ITEM_TARGET:Class = EQUIPMENT_ITEM_TARGET;
       
       public static const NET_WG_DATA_CONSTANTS_GENERATED_GUN_MARKER_VIEW_CONSTANTS:Class = GUN_MARKER_VIEW_CONSTANTS;
+      
+      public static const NET_WG_DATA_CONSTANTS_GENERATED_LOW_CHARGE_SHOT_CONSTS:Class = LOW_CHARGE_SHOT_CONSTS;
       
       public static const NET_WG_DATA_CONSTANTS_GENERATED_MINIMAPENTRIES_CONSTANTS:Class = MINIMAPENTRIES_CONSTANTS;
       
@@ -1825,6 +1835,20 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_GUNMARKER_ZOOMINGAIMDAMAGE:Class = ZoomingAimDamage;
       
       public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_GUNMARKER_CONSTANTS_GUNMARKERCONSTS:Class = GunMarkerConsts;
+      
+      public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_GUNMARKER_LOWCHARGESHOT_COLORSPROVIDER:Class = ColorsProvider;
+      
+      public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_GUNMARKER_LOWCHARGESHOT_LOWCHARGESHOTGUNMARKER:Class = LowChargeShotGunMarker;
+      
+      public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_GUNMARKER_LOWCHARGESHOT_LOWCHARGESHOTGUNMARKERDISPERSIONCIRCLE:Class = LowChargeShotGunMarkerDispersionCircle;
+      
+      public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_GUNMARKER_LOWCHARGESHOT_LOWCHARGESHOTGUNMARKERMIXING:Class = LowChargeShotGunMarkerMixing;
+      
+      public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_GUNMARKER_LOWCHARGESHOT_LOWCHARGESHOTRELOADCONTROLLER:Class = LowChargeShotReloadController;
+      
+      public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_GUNMARKER_LOWCHARGESHOT_LOWCHARGESHOTRELOADEVENT:Class = LowChargeShotReloadEvent;
+      
+      public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_GUNMARKER_LOWCHARGESHOT_MARKERDRAWER:Class = MarkerDrawer;
       
       public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_GUNSTACK_RELOADBOOSTBORDER:Class = ReloadBoostBorder;
       

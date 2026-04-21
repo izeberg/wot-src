@@ -21,21 +21,6 @@ package net.wg.gui.lobby.settings.feedback.ribbons
          super();
       }
       
-      public function set isEnabled(param1:Boolean) : void
-      {
-         var _loc2_:CheckBox = null;
-         var _loc3_:int = 0;
-         while(_loc3_ < this.numChildren)
-         {
-            _loc2_ = this.getChildAt(_loc3_) as CheckBox;
-            if(_loc2_)
-            {
-               _loc2_.enabled = param1;
-            }
-            _loc3_++;
-         }
-      }
-      
       override protected function onDispose() : void
       {
          this._allItems = null;
@@ -43,62 +28,14 @@ package net.wg.gui.lobby.settings.feedback.ribbons
          super.onDispose();
       }
       
-      public function get isSelectedAnyCheckbox() : Boolean
-      {
-         var _loc1_:CheckBox = null;
-         var _loc2_:int = 0;
-         while(_loc2_ < this.numChildren)
-         {
-            _loc1_ = this.getChildAt(_loc2_) as CheckBox;
-            if(_loc1_ && _loc1_.selected)
-            {
-               return true;
-            }
-            _loc2_++;
-         }
-         return false;
-      }
-      
-      public function get selectedItemsAmount() : int
-      {
-         var _loc2_:CheckBox = null;
-         var _loc1_:int = 0;
-         var _loc3_:int = 0;
-         while(_loc3_ < this.numChildren)
-         {
-            _loc2_ = this.getChildAt(_loc3_) as CheckBox;
-            if(_loc2_ && _loc2_.selected)
-            {
-               _loc1_++;
-            }
-            _loc3_++;
-         }
-         return _loc1_;
-      }
-      
-      public function selectAllCheckBoxes() : void
-      {
-         var _loc1_:CheckBox = null;
-         var _loc2_:int = 0;
-         while(_loc2_ < this.numChildren)
-         {
-            _loc1_ = this.getChildAt(_loc2_) as CheckBox;
-            if(_loc1_)
-            {
-               _loc1_.selected = true;
-            }
-            _loc2_++;
-         }
-      }
-      
       override protected function initialize() : void
       {
          var _loc2_:DisplayObject = null;
          this._allItems = [];
          var _loc1_:int = 0;
-         while(_loc1_ < this.numChildren)
+         while(_loc1_ < numChildren)
          {
-            this._allItems[this._allItems.length] = this.getChildAt(_loc1_);
+            this._allItems.push(getChildAt(_loc1_));
             _loc1_++;
          }
          this._allItems.sortOn("y",Array.NUMERIC);
@@ -109,7 +46,7 @@ package net.wg.gui.lobby.settings.feedback.ribbons
          while(_loc1_ < _loc4_)
          {
             _loc2_ = this._allItems[_loc1_];
-            this._itemsOffsetsList[this._itemsOffsetsList.length] = _loc2_.y - _loc3_.y - _loc3_.height;
+            this._itemsOffsetsList.push(_loc2_.y - _loc3_.y - _loc3_.height);
             _loc3_ = _loc2_;
             _loc1_++;
          }
@@ -121,9 +58,9 @@ package net.wg.gui.lobby.settings.feedback.ribbons
          var _loc1_:DisplayObject = null;
          super.configUI();
          var _loc2_:int = 0;
-         while(_loc2_ < this.numChildren)
+         while(_loc2_ < numChildren)
          {
-            _loc1_ = this.getChildAt(_loc2_);
+            _loc1_ = getChildAt(_loc2_);
             if(_loc1_ is CheckBox)
             {
                CheckBox(_loc1_).multiline = true;
@@ -157,6 +94,69 @@ package net.wg.gui.lobby.settings.feedback.ribbons
             setSize(actualWidth,_loc1_.y + _loc1_.height);
             dispatchEvent(new Event(Event.RESIZE));
          }
+      }
+      
+      public function selectAllCheckBoxes() : void
+      {
+         var _loc1_:CheckBox = null;
+         var _loc2_:int = 0;
+         while(_loc2_ < numChildren)
+         {
+            _loc1_ = getChildAt(_loc2_) as CheckBox;
+            if(_loc1_)
+            {
+               _loc1_.selected = true;
+            }
+            _loc2_++;
+         }
+      }
+      
+      public function set isEnabled(param1:Boolean) : void
+      {
+         var _loc2_:CheckBox = null;
+         var _loc3_:int = 0;
+         while(_loc3_ < numChildren)
+         {
+            _loc2_ = getChildAt(_loc3_) as CheckBox;
+            if(_loc2_)
+            {
+               _loc2_.enabled = param1;
+            }
+            _loc3_++;
+         }
+      }
+      
+      public function get isSelectedAnyCheckbox() : Boolean
+      {
+         var _loc1_:CheckBox = null;
+         var _loc2_:int = 0;
+         while(_loc2_ < numChildren)
+         {
+            _loc1_ = getChildAt(_loc2_) as CheckBox;
+            if(_loc1_ && _loc1_.selected)
+            {
+               return true;
+            }
+            _loc2_++;
+         }
+         return false;
+      }
+      
+      public function get selectedItemsAmount() : int
+      {
+         var _loc2_:CheckBox = null;
+         var _loc1_:int = 0;
+         var _loc3_:int = 0;
+         while(_loc3_ < numChildren)
+         {
+            _loc2_ = getChildAt(_loc3_) as CheckBox;
+            if(_loc2_ && _loc2_.selected)
+            {
+               _loc1_++;
+            }
+            _loc3_++;
+         }
+         return _loc1_;
       }
       
       private function renderHandler(param1:Event) : void

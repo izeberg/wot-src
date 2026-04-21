@@ -5,22 +5,24 @@ from math import ceil, floor
 import typing
 from future.utils import iteritems, itervalues
 import BigWorld
-from constants import SHELL_TYPES, BonusTypes
+from constants import SHELL_TYPES, BonusTypes, SHELL_MECHANICS_TYPE
 from debug_utils import LOG_DEBUG
 from gui.shared.gui_items import KPI
 from gui.shared.gui_items.Tankman import isSkillLearnt, crewMemberRealSkillLevel
-from gui.shared.items_parameters import calcShellParams, getShotsPerMinute, isAutoReloadGun, isDualGun, isTwinGun, isUnlimitedClipGun, isTemperatureGun, isOverheatedUnlimitedGun, getMechanicsReloadDelay, getShellDescriptors, getOptionalDeviceWeight, NO_DATA
+from gui.shared.items_parameters import calcShellParams, getShotsPerMinute, isAutoReloadGun, isDualGun, isTwinGun, isUnlimitedClipGun, isTemperatureGun, isOverheatedUnlimitedGun, getMechanicsReloadDelay, getShellDescriptors, getOptionalDeviceWeight, NO_DATA, isLowChargeShotGun
 from gui.shared.items_parameters.params_constants import ONE_HUNDRED_PERCENTS, AUTOCANNON_SHOT_DISTANCE, MIN_VISION_RADIUS, MAX_VISION_RADIUS, PIERCING_DISTANCES, MIN_RELATIVE_VALUE, EXTRAS_CAMOUFLAGE, MAX_DAMAGED_MODULES_DETECTION_PERK_VAL, MAX_ART_NOTIFICATION_DELAY_PERK_VAL, METERS_PER_SECOND_TO_KILOMETERS_PER_HOUR, HIDDEN_PARAM_DEFAULTS
 from gui.shared.items_parameters.base_params import CompatibleParams, ParameterBase, ParamsDictProxy, WeightedParam
 from gui.shared.items_parameters.comparator import rateParameterState, PARAM_STATE
 from gui.shared.items_parameters import functions
-from gui.shared.items_parameters.functions import getClientShotDispersion, getClientCoolingDelay, getTurboshaftEnginePower, getMaxSteeringLockAngle, isStunParamVisible, getRocketAccelerationEnginePower, getRocketAccelerationKpiFactors, getBasicShell
+from gui.shared.items_parameters.functions import getClientShotDispersion, getClientCoolingDelay, getTurboshaftEnginePower, getMaxSteeringLockAngle, isStunParamVisible, getRocketAccelerationEnginePower, getRocketAccelerationKpiFactors, getBasicShell, getLowChargePiercingPower, getLowChargeDamage, getLowChargeShotSpeed
 from gui.shared.items_parameters.params_cache import g_paramsCache
 from gui.shared.utils import AUTO_SHOOT_CLIP_FIRE_RATE, AUTO_RELOAD_PROP_NAME, BURST_FIRE_RATE, CHASSIS_REPAIR_TIME, DAMAGE_PROP_NAME, DUAL_ACCURACY_COOLING_DELAY, DUAL_GUN_CHARGE_TIME, MAX_STEERING_LOCK_ANGLE, PIERCING_POWER_PROP_NAME, RELOAD_TIME_PROP_NAME, ROCKET_ACCELERATION_ENGINE_POWER, ROCKET_ACCELERATION_SPEED_LIMITS, ROCKET_ACCELERATION_REUSE_AND_DURATION, TURBOSHAFT_ENGINE_POWER, TURBOSHAFT_SPEED_MODE_SPEED, TURBOSHAFT_INVISIBILITY_MOVING_FACTOR, TURBOSHAFT_INVISIBILITY_STILL_FACTOR, TURBOSHAFT_SWITCH_TIME, TURBOSHAFT_SWITCH_ON_TIME, TURBOSHAFT_SWITCH_OFF_TIME, TWIN_GUN_SWITCH_FIRE_MODE_TIME, TWIN_GUN_TOP_SPEED, WHEELED_SWITCH_OFF_TIME, WHEELED_SWITCH_ON_TIME, WHEELED_SWITCH_TIME, WHEELED_SPEED_MODE_SPEED, SHELL_LOADING_TIME_PROP_NAME, TEMPERATURE_RELOAD_TIME, TEMPERATURE_AVG_DAMAGE_PER_MINUTE
+from gui.shared.utils.functions import getShellImpactParams
 from helpers import time_utils
 from items import getTypeInfoByIndex, ITEM_TYPES, vehicles, tankmen
 from items import utils as items_utils
 from items.components import component_constants
+from items.components.component_constants import MODERN_HE_PIERCING_POWER_REDUCTION_FACTOR_FOR_SHIELDS
 from items.params_utils import getHeatedAimingTime, getTemperatureRateOfFire
 from post_progression_common import ACTION_TYPES
 from shared_utils import findFirst, first
@@ -1368,7 +1370,12 @@ class ShellParams(CompatibleParams):
 
     @property
     def piercingPower(self):
-        return self._getRawParams()[PIERCING_POWER_PROP_NAME]
+        piercingPower = self._getRawParams()[PIERCING_POWER_PROP_NAME]
+        shot = self.__getShellDescriptor()
+        if not isLowChargeShotGun(self._vehicleDescr) or shot is None:
+            return piercingPower
+        return [ getLowChargePiercingPower(self._vehicleDescr, shot.shell, piercingPower) for piercingPower in piercingPower
+               ]
 
     @property
     def damage(self):
@@ -1376,11 +1383,14 @@ class ShellParams(CompatibleParams):
 
     @property
     def avgDamage(self):
-        if self._vehicleDescr is not None:
-            shot = self.__getShellDescriptor()
-            if shot is not None:
-                return shot.shell.armorDamage[0]
-        return self._itemDescr.armorDamage[0]
+        damage = self._itemDescr.armorDamage[0]
+        shot = self.__getShellDescriptor()
+        if shot is None:
+            return damage
+        else:
+            if isLowChargeShotGun(self._vehicleDescr):
+                return getLowChargeDamage(self._vehicleDescr, shot.shell, damage)
+            return shot.shell.armorDamage[0]
 
     @property
     def avgMutableDamage(self):
@@ -1416,11 +1426,16 @@ class ShellParams(CompatibleParams):
             if not shellDescriptor:
                 return
             maxDistance = self.maxShotDistance
+            lowChargeShotGun = isLowChargeShotGun(self._vehicleDescr)
             for distance in PIERCING_DISTANCES:
                 if distance > maxDistance:
                     distance = int(maxDistance)
                 currPiercing = computePiercingPowerAtDist(shellDescriptor.piercingPower, distance)
-                result.append((distance, currPiercing))
+                if lowChargeShotGun:
+                    result.append((distance,
+                     getLowChargePiercingPower(self._vehicleDescr, shellDescriptor.shell, currPiercing)))
+                else:
+                    result.append((distance, currPiercing))
 
             return result
         return
@@ -1428,10 +1443,9 @@ class ShellParams(CompatibleParams):
     @property
     def maxShotDistance(self):
         if self._itemDescr.kind in _SHELL_KINDS:
-            if self._vehicleDescr is not None:
-                result = self.__getShellDescriptor()
-                if result:
-                    return result.maxDistance
+            result = self.__getShellDescriptor()
+            if result:
+                return result.maxDistance
         return
 
     @property
@@ -1472,12 +1486,42 @@ class ShellParams(CompatibleParams):
 
     @property
     def shotSpeed(self):
-        if self._itemDescr.kind in _SHELL_KINDS and self._vehicleDescr is not None:
-            result = self.__getShellDescriptor()
-            if result:
-                projSpeedFactor = vehicles.g_cache.commonConfig['miscParams']['projectileSpeedFactor']
-                return result.speed / projSpeedFactor
-        return
+        shot = self.__getShellDescriptor()
+        if shot is None or self._itemDescr.kind not in _SHELL_KINDS:
+            return
+        projSpeedFactor = vehicles.g_cache.commonConfig['miscParams']['projectileSpeedFactor']
+        shotSpeed = shot.speed / projSpeedFactor
+        if isLowChargeShotGun(self._vehicleDescr):
+            return getLowChargeShotSpeed(self._vehicleDescr, shot.shell, shotSpeed)
+        else:
+            return shotSpeed
+
+    @property
+    def normalizationAngle(self):
+        _, normalizationAngle, _, _ = getShellImpactParams(self._itemDescr.type)
+        return int(math.degrees(normalizationAngle))
+
+    @property
+    def ricochetAngle(self):
+        ricochetAngleCos, _, _, _ = getShellImpactParams(self._itemDescr.type)
+        return int(math.degrees(math.acos(ricochetAngleCos)))
+
+    @property
+    def penetrationLoss(self):
+        shellType = self._itemDescr.type
+        if not hasattr(shellType, 'piercingPowerLossFactorByDistance'):
+            return None
+        else:
+            return int(shellType.piercingPowerLossFactorByDistance * 10)
+
+    @property
+    def screensArmorMultiplier(self):
+        shellType = self._itemDescr.type
+        isModernHE = shellType.mechanics == SHELL_MECHANICS_TYPE.MODERN
+        if not isModernHE:
+            return None
+        else:
+            return int(MODERN_HE_PIERCING_POWER_REDUCTION_FACTOR_FOR_SHIELDS)
 
     def getParamsDict(self):
         stunConditionParams = ('stunMaxDuration', 'stunMinDuration')
@@ -1500,10 +1544,12 @@ class ShellParams(CompatibleParams):
           'shellGuns', (', ').join(self.compatibles)),)
 
     def __getShellDescriptor(self):
-        shellDescriptors = getShellDescriptors(self._itemDescr, self._vehicleDescr)
-        if shellDescriptors:
-            return shellDescriptors[0]
+        if self._vehicleDescr is None:
+            return
         else:
+            shellDescriptors = getShellDescriptors(self._itemDescr, self._vehicleDescr)
+            if shellDescriptors:
+                return shellDescriptors[0]
             return
 
 
