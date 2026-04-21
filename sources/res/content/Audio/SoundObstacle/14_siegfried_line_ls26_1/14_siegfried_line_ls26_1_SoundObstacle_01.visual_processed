@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>Brick</identifier>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>0</materialKind>
+				</material>
+				<groupOrigin>-2.642731 -1.305919 10.742828</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>Mountain</identifier>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>0</materialKind>
+				</material>
+				<groupOrigin>129.798996 10.628618 5.810074</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-467.498383 -36.254421 -485.497406</min>
+		<max>462.212921 57.511658 506.983063</max>
+	</boundingBox>
+	<geometrySize>10518</geometrySize>
+</root>

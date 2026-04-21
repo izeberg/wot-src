@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/french/F143_Fauteur/normal/lod0/Hull</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/french/F143_Fauteur/normal/lod1/Hull</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.872892 -0.757174 -4.105643</min>
+		<max>1.867815 0.675931 4.053232</max>
+	</visibilityBox>
+</root>

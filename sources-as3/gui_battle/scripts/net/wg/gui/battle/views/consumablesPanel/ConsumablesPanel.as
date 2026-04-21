@@ -340,10 +340,12 @@ package net.wg.gui.battle.views.consumablesPanel
       
       public function as_setCoolDownPosAsPercent(param1:int, param2:Number) : void
       {
+         var _loc4_:Boolean = false;
          var _loc3_:IConsumablesButton = this.getRendererBySlotIdx(param1);
          if(_loc3_)
          {
-            if(this.getRenderer(param1) !== Linkages.SHELL_BUTTON_BATTLE || this._shellCurrentIdx >= 0 && this._shellCurrentIdx == param1)
+            _loc4_ = _loc3_ is IBattleShellButton;
+            if(!_loc4_ || _loc4_ && this._shellCurrentIdx >= 0 && this._shellCurrentIdx == param1)
             {
                _loc3_.setCoolDownPosAsPercent(param2);
             }

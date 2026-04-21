@@ -85,12 +85,9 @@ package net.wg.gui.lobby.settings
       
       private var _isPhysicsSoundCtrlsVisible:Boolean = true;
       
-      private var _settingsConfigHelper:SettingsConfigHelper;
-      
       public function SoundSettings()
       {
          this._toolTipMgr = App.toolTipMgr;
-         this._settingsConfigHelper = SettingsConfigHelper.instance;
          super();
       }
       
@@ -146,6 +143,7 @@ package net.wg.gui.lobby.settings
       
       override protected function setData(param1:SettingsDataVo) : void
       {
+         var _loc3_:Boolean = false;
          var _loc9_:String = null;
          var _loc11_:String = null;
          var _loc12_:String = null;
@@ -155,7 +153,7 @@ package net.wg.gui.lobby.settings
          this.controlsUnsubscribe();
          super.setData(param1);
          var _loc2_:SettingsControlProp = SettingsControlProp(param1.getByKey(SettingsConfigHelper.VOICE_CHAT_SUPPORTED));
-         var _loc3_:Boolean = _loc2_.current;
+         _loc3_ = _loc2_.current;
          var _loc4_:Array = [{"label":SETTINGS.SOUNDS_TABCOMMON}];
          var _loc5_:Boolean = App.voiceChatMgr.getYY();
          if(_loc3_ || _loc5_)
@@ -229,7 +227,6 @@ package net.wg.gui.lobby.settings
       {
          this.breakSoundCheck();
          this.forceFinishVivoxTest();
-         this._settingsConfigHelper = null;
          btnCaptureDevicesUpdate.removeEventListener(ButtonEvent.CLICK,this.onBtnCaptureDevicesUpdateClickHandler);
          soundSpeakersTestButton.removeEventListener(ButtonEvent.CLICK,this.onSoundSpeakersTestButtonClickHandler);
          btnVivoxTest.removeEventListener(ButtonEvent.CLICK,this.onBtnVivoxTestClickHandler);
@@ -397,19 +394,18 @@ package net.wg.gui.lobby.settings
             return;
          }
          var _loc3_:int = _loc2_.length;
-         var _loc4_:int = 0;
-         var _loc5_:Object = null;
-         _loc4_ = 0;
-         while(_loc4_ < _loc3_)
+         var _loc4_:Object = null;
+         var _loc5_:int = 0;
+         while(_loc5_ < _loc3_)
          {
-            _loc5_ = _loc2_.requestItemAt(_loc4_);
-            if(_loc5_.hasOwnProperty(SettingsConfigHelper.SOUND_SPEAKERS_ID_FIELD) && _loc5_[SettingsConfigHelper.SOUND_SPEAKERS_ID_FIELD] == param1)
+            _loc4_ = _loc2_.requestItemAt(_loc5_);
+            if(_loc4_.hasOwnProperty(SettingsConfigHelper.SOUND_SPEAKERS_ID_FIELD) && _loc4_[SettingsConfigHelper.SOUND_SPEAKERS_ID_FIELD] == param1)
             {
-               this.updateAcousticDeviceLabel(_loc5_);
+               this.updateAcousticDeviceLabel(_loc4_);
                soundSpeakersTestButton.enabled = true;
                break;
             }
-            _loc4_++;
+            _loc5_++;
          }
       }
       
@@ -727,7 +723,6 @@ package net.wg.gui.lobby.settings
       private function applyNewPhysicsSoundQuality(param1:int) : void
       {
          var _loc2_:SettingsControlProp = SettingsControlProp(data[SettingsConfigHelper.PHYSICS_SOUND_QUALITY]);
-         var _loc3_:String = _loc2_.options[param1].data;
          _loc2_.changedVal = param1;
          dispatchEvent(new SettingViewEvent(SettingViewEvent.ON_CONTROL_CHANGED,viewId,null,SettingsConfigHelper.PHYSICS_SOUND_QUALITY,param1));
       }

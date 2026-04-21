@@ -1,0 +1,544 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-01-12 10:00+0300\n"
+"PO-Revision-Date: 2023-01-12 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "#PluralForms"
+msgstr "nplurals=1; plural=0;"
+
+msgid "abilitiesIncomplete/cancel"
+msgstr "仍然加入战斗"
+
+msgid "abilitiesIncomplete/submit"
+msgstr "安装！"
+
+msgid "abilitiesIncomplete/title"
+msgstr "战术设备不完整"
+
+msgid "abilitiesIncomplete/warning"
+msgstr "所选坦克缺少一个或多个战术设备。这可能会严重影响您的战斗表现。仍然要加入战斗吗？"
+
+msgid "ammoSetup/changeHotKey/body"
+msgstr ""
+"您可自定义炮弹和战术设备的默认活动热键设置。\n"
+"此更改仅适用于活动战斗，不会影响其他任何模式。\n"
+"您仍可在菜单 - 游戏设置 - 控制(给养版块)中修改各个热键。"
+
+msgid "ammoSetup/changeHotKey/header"
+msgstr "更改给养热键设置"
+
+msgid "badgeWidget/round"
+msgstr "%(count)s千"
+
+msgid "badgeWidget/tooltipBody"
+msgstr "完成该任务即可获得独特的背水一战:潘多拉行动奖章:"
+
+msgid "badgeWidget/tooltipHeader"
+msgstr "史诗成就任务"
+
+msgid "booster/booster_ability_cost/description"
+msgstr ""
+"研发后，所有战术设备的{EDCB9E_Start}銤元素花费{EDCB9E_End}降低{EDCB9E_Start}%(ability_cost_add_percent)s%%{EDCB9E_End}。"
+
+msgid "booster/booster_ability_cost/name"
+msgstr "銤元素效率"
+
+msgid "booster/booster_ability_duration/description"
+msgstr ""
+"研发后，{EDCB9E_Start}战术设备的效果持续时间{EDCB9E_End}延长{EDCB9E_Start}%(ability_duration_add_percent)s%%{EDCB9E_End}。"
+
+msgid "booster/booster_ability_duration/name"
+msgstr "设备效果持续时间"
+
+msgid "booster/booster_ability_radius/description"
+msgstr ""
+"研发后，{EDCB9E_Start}战术设备的效果半径{EDCB9E_End}提高{EDCB9E_Start}%(ability_radius_add_percent)s%%{EDCB9E_End}。"
+
+msgid "booster/booster_ability_radius/name"
+msgstr "设备效果半径"
+
+msgid "booster/booster_heal/description"
+msgstr ""
+"研发后，应用于坦克的所有{EDCB9E_Start}恢复效果{EDCB9E_End}提高{EDCB9E_Start}%(heal_add_percent)s%%{EDCB9E_End}。"
+
+msgid "booster/booster_heal/name"
+msgstr "恢复效果"
+
+msgid "booster/booster_obelisk_translated_damage/description"
+msgstr ""
+"研发后，{EDCB9E_Start}方尖碑传导给敌方坦克的损伤{EDCB9E_End}提高{EDCB9E_Start}%(obelisk_translated_damage_add_percent)s%%{EDCB9E_End}。"
+
+msgid "booster/booster_obelisk_translated_damage/name"
+msgstr "方尖碑传导损伤"
+
+msgid "booster/booster_pick_up_radius/description"
+msgstr ""
+"研发后，从敌方坦克处{EDCB9E_Start}拾取銤元素的半径{EDCB9E_End}提高{EDCB9E_Start}%(pick_up_radius_add)s%%{EDCB9E_End}。"
+
+msgid "booster/booster_pick_up_radius/name"
+msgstr "銤元素拾取半径"
+
+msgid "booster/booster_pick_up_souls/description"
+msgstr ""
+"研发后，从被击毁坦克处{EDCB9E_Start}收集的銤元素数量{EDCB9E_End}提高{EDCB9E_Start}%(pick_up_souls_add_percent)s%%{EDCB9E_End}。"
+
+msgid "booster/booster_pick_up_souls/name"
+msgstr "銤元素收集"
+
+msgid "booster/booster_receive_souls_after_wave/description"
+msgstr ""
+"研发后，消灭一个波次后获得的{EDCB9E_Start}銤元素数量{EDCB9E_End}提高{EDCB9E_Start}%(receive_souls_after_wave_add)s{EDCB9E_End}。"
+
+msgid "booster/booster_receive_souls_after_wave/name"
+msgstr "每个波次的銤元素"
+
+msgid "booster/booster_restore_souls_on_respawn/description"
+msgstr ""
+"研发后，重生时恢复的{EDCB9E_Start}銤元素数量{EDCB9E_End}提高{EDCB9E_Start}%(restore_souls_on_respawn_add)s{EDCB9E_End}。"
+
+msgid "booster/booster_restore_souls_on_respawn/name"
+msgstr "重生时的銤元素"
+
+msgid "booster/booster_souls_capacity/description"
+msgstr ""
+"研发后，{EDCB9E_Start}坦克的銤元素容量上限{EDCB9E_End}提高{EDCB9E_Start}%(souls_capacity_add)s{EDCB9E_End}。"
+
+msgid "booster/booster_souls_capacity/name"
+msgstr "銤元素容量"
+
+msgid "bundle/name/bundleEventPack"
+msgstr "防御者礼包"
+
+msgid "bundleView/bundle/serviceChannelMessages/ls2_0bundle_key"
+msgstr "已购买密钥"
+
+msgid "bundleView/tooltip/expVehicleX5/body"
+msgstr "驾驶任意已取得当天首胜奖励的坦克，从第2场胜利开始获得5倍经验。"
+
+msgid "bundleView/tooltip/expVehicleX5/header"
+msgstr "5倍乘员经验任务"
+
+msgid "carousel/filters/tooltipBody"
+msgstr "根据类型、系别，以及其它参数显示。"
+
+msgid "carousel/filters/tooltipHeader"
+msgstr "按参数筛选"
+
+msgid "common/back"
+msgstr "返回"
+
+msgid "common/close"
+msgstr "关闭"
+
+msgid "common/modifierInline"
+msgstr "x{value}"
+
+msgid "common/modifierInlineTimes"
+msgstr "×{value}"
+
+msgid "common/progress"
+msgstr "{value}/{maxValue}"
+
+msgid "common/toEvent"
+msgstr "活动"
+
+msgid "common/toRewardPath"
+msgstr "前往进度"
+
+msgid "common/yes"
+msgstr "收到！"
+
+msgid "difficult/daily"
+msgstr "已解锁每日密钥任务"
+
+msgid "difficult/disabled/body"
+msgstr "您在小队中。仅小队指挥官可更改难度等级。"
+
+msgid "difficult/disabled/header"
+msgstr "无法更改难度等级"
+
+msgid "difficult/level_1"
+msgstr "普通"
+
+msgid "difficult/level_2"
+msgstr "激战"
+
+msgid "difficult/level_3"
+msgstr "残酷"
+
+msgid "difficult/new"
+msgstr "新"
+
+msgid "difficult/tooltip/description/level1"
+msgstr "敌人的生命值较低，装甲较为薄弱。每场战斗可获得标准数量的数据点数。"
+
+msgid "difficult/tooltip/description/level2"
+msgstr "敌人拥有较为坚固的装甲。每场战斗可获得的数据点数{{modifier}}。"
+
+msgid "difficult/tooltip/description/level3"
+msgstr "敌人数量更多，装甲也更坚固。每场战斗可获得的数据点数{{modifier}}。"
+
+msgid "difficult/tooltip/description/reward"
+msgstr "首次消灭最终波次的奖励:"
+
+msgid "difficult/tooltip/header/level1"
+msgstr "普通难度"
+
+msgid "difficult/tooltip/header/level2"
+msgstr "激战难度"
+
+msgid "difficult/tooltip/header/level3"
+msgstr "残酷难度"
+
+msgid "difficult/tooltip/locked"
+msgstr "难度尚未解锁"
+
+msgid "difficult/tooltip/lockedDescr/level2"
+msgstr "完成普通难度等级，即可解锁该难度等级。"
+
+msgid "difficult/tooltip/lockedDescr/level3"
+msgstr "完成激战难度等级，即可解锁该难度等级。"
+
+msgid "difficult/tooltip/state/default"
+msgstr "开放的难度"
+
+msgid "difficult/tooltip/state/selected"
+msgstr "所选难度"
+
+msgid "difficult/tooltip/subHeader"
+msgstr "已消灭波次: {count}"
+
+msgid "difficult/uppercase/level_1"
+msgstr "普通"
+
+msgid "difficult/uppercase/level_2"
+msgstr "激战"
+
+msgid "difficult/uppercase/level_3"
+msgstr "残酷"
+
+msgid "difficultyWindow/description/level_2"
+msgstr "敌人的装甲更坚固。每场战斗可获得更多银币和{{modifier}}倍的数据点数。"
+
+msgid "difficultyWindow/description/level_3"
+msgstr "敌人数量更多，装甲也更坚固。每场战斗可获得更多银币和{{modifier}}倍的数据点数。"
+
+msgid "difficultyWindow/description/level_4"
+msgstr "投身战斗，击败一波又一波的敌人，登上排行榜榜首，展示自己的实力。独特奖励和更多精彩内容等待着您。"
+
+msgid "difficultyWindow/header/level_2"
+msgstr "激战难度等级"
+
+msgid "difficultyWindow/header/level_3"
+msgstr "残酷难度等级"
+
+msgid "difficultyWindow/header/level_4"
+msgstr "星火燎原模式"
+
+msgid "difficultyWindow/headerShort/level_2"
+msgstr "激战"
+
+msgid "difficultyWindow/headerShort/level_3"
+msgstr "残酷"
+
+msgid "difficultyWindow/headerShort/level_4"
+msgstr "'星火燎原'"
+
+msgid "difficultyWindow/rewards"
+msgstr "完成奖励:"
+
+msgid "difficultyWindow/title"
+msgstr "已开放"
+
+msgid "hangar/exit"
+msgstr "离开活动"
+
+msgid "hangar/narration"
+msgstr "故事"
+
+msgid "hangar/tooltip/about"
+msgstr "了解更多关于星火燎原:入侵活动的信息。"
+
+msgid "hangar/tooltip/narration"
+msgstr "了解更多活动故事详情。"
+
+msgid "hangarAmmunitionSetup/header"
+msgstr "战术设备"
+
+msgid "hangarAmmunitionSetup/navigation"
+msgstr "武装"
+
+msgid "headerButtons/battle/types/last_stand"
+msgstr "星火燎原"
+
+msgid "iconButton/comparison/default"
+msgstr "坦克对比"
+
+msgid "iconButton/comparison/isDisabled"
+msgstr "坦克对比不可用"
+
+msgid "iconButton/preview/default"
+msgstr "预览坦克"
+
+msgid "iconButton/preview/isDisabled"
+msgstr "坦克预览不可用"
+
+msgid "keyCard/name"
+msgstr "解密密钥"
+
+msgid "meta/btn/decrypt"
+msgstr "解密"
+
+msgid "meta/btn/skip"
+msgstr "跳过"
+
+msgid "meta/btn/view"
+msgstr "查看"
+
+msgid "meta/receive/description"
+msgstr ""
+"该胶片解密进度:\n"
+"%(keys)/%(decrypt)%(icon)"
+
+msgid "metaIntro/description/fight"
+msgstr "参加活动战斗，获取数据点数，推动进度。"
+
+msgid "metaIntro/description/progress"
+msgstr "收集数据点数，研发坦克升级，迎接更艰巨的挑战。"
+
+msgid "metaIntro/description/reward"
+msgstr "完成活动进度阶段即可获得特殊活动奖励。请查看探秘之旅，了解更多详情。"
+
+msgid "metaIntro/header/fight"
+msgstr "活动战斗"
+
+msgid "metaIntro/header/progress"
+msgstr "升级"
+
+msgid "metaIntro/header/reward"
+msgstr "独特奖励"
+
+msgid "metaIntro/title"
+msgstr "进度"
+
+msgid "missionWidget/complete"
+msgstr ""
+"任务完成。\n"
+"明天再来。"
+
+msgid "missionWidget/tooltipBody"
+msgstr "完成每24小时开放一次的每日任务，即可获得奖励。今日任务:"
+
+msgid "missionWidget/tooltipHeader"
+msgstr "每日任务"
+
+msgid "narration/actions/voiceover"
+msgstr "配音"
+
+msgid "narration/narrationText/ls_narration_1"
+msgstr ""
+"{{@ class $highlightText}}最高机密{{/}}{{titleParagraph}}{{@ class "
+"$highlightText}}区域: "
+"R-22{{/}}(齐格菲防区){{pargraphStart}}防区上空已然撕裂。相位漏斗正源源不断地将余响坦克输送到我们的现实世界。当地守军正在坚守外围防线，但已接近极限。如果局势无法扭转，预计{{@"
+" class "
+"$highlightSecondaryText}}[已删节]{{/}}小时内防线必将被突破。{{pargraphStart}}阿特拉斯综合体已部署在异象中心下方。这是使其坍缩的唯一希望。只要余响伪装还在运作，敌人就无法发现该综合体。但是异象...它在进化。{{pargraphStart}}我们监测到周期性的能量脉冲:"
+" "
+"这意味着一辆未知型号的余响坦克正在实体化。其目标直指阿特拉斯综合体。当它到达相位漏斗中心下方时，会激活一股强度极大的重力脉冲，将坦克变成废铁，将乘员化为灰...{{@"
+" class "
+"$highlightSecondaryText}}[已删节]{{/}}。{{pargraphStart}}我们已经损失了3座阿特拉斯综合体。作战储备中仅剩最后几座了。如果失去这最后几座，我们将无法关闭异象。敌方的突破将无法逆转。{{pargraphStart}}签名:"
+" 主管(M计划)"
+
+msgid "narration/narrationText/ls_narration_2"
+msgstr ""
+"{{@ class $highlightText}}分析备忘录14/C{{/}}{{titleParagraph}}{{@ class $highlightText}}《实地异象分析》{{/}}{{pargraphStart}}致各坦克集群指挥官: {{pargraphStart}}6排的米勒上尉最先注意到方尖碑的异常特性。当炮弹意外命中并崩裂水晶结构时，其坦克的受损装甲...竟被修复了。遗憾的是，他没能从那场战斗中生还。但他的发现将拯救成百上千的坦克乘员。{{pargraphStart}}得益于阿特拉斯综合体提供的数据，分析人员破解了这种水晶结构的本质。请务必熟记以下分类——此情报可以显著提高乘员的生存率。{{pargraphStart}}我们发现了3种类型: {{pargraphStart}}{{@ class $highlightText}}恢复型{{/}}\n"
+"被击毁时，它会释放负熵力场。这种方尖碑的冲击波几乎能瞬间\"焊结\"装甲的微小裂纹。{{pargraphStart}}{{@ class $highlightText}}屏障型{{/}}\n"
+"击毁此类方尖碑会释放稳定相位力场，并笼罩住您的坦克，形成一个临时的防护屏障。{{pargraphStart}}{{@ class $highlightText}}干扰型{{/}}\n"
+"击毁这种方尖碑时会产生强烈的相位脉冲爆发。它会破坏余响坦克銤元素核心的完整性，并使其短暂瘫痪。{{pargraphStart}}请注意: 所有方尖碑均与特定余响坦克集群存在相位绑定。每次击中晶体均会通过该链接传导破坏脉冲，对敌造成损伤。{{pargraphStart}}在战斗中善用方尖碑。这是以少胜多、击败敌人的唯一办法。{{pargraphStart}}签名: 主管(M计划)"
+
+msgid "narration/narrationText/ls_narration_3"
+msgstr ""
+"{{@ class $highlightText}}最高机密{{/}}{{titleParagraph}}{{@ class "
+"$highlightText}}指令 "
+"22/A{{/}}{{pargraphStart}}我们离胜利只有一步之遥...亦有可能走向彻底失败。在过去几天里，我们距离强制坍缩异象所需的设置参数越来越近了。这意味着，我们不仅能击退敌人，而是终于有机会结束这一切了。即便如此，代价依然惨重。仍在运行的阿特拉斯综合体所剩无几。一旦失去它们，那就没有别的替代方案了。{{pargraphStart}}记住:"
+" "
+"阿特拉斯不仅仅是一座科研站。它还是您的双眼。阿特拉斯能预测下一波攻势爆发的方位。它能分析敌人的战术并传输数据，从而强化您的坦克。该设施输出的每一条穿孔纸带，都是迈向胜利的基石。没有它，我们将失去双眼，失去阻止敌人的机会。{{pargraphStart}}我们不能再损失科研设备了。这不仅关乎前线车组的安危，更关系到我们所有人的存亡。{{pargraphStart}}不惜一切代价保护阿特拉斯。{{pargraphStart}}签名:"
+" 主管(M计划)"
+
+msgid "narration/narrationText/ls_narration_4"
+msgstr ""
+"{{@ class $highlightText}}最终报告{{/}}{{titleParagraph}}{{@ class "
+"$highlightText}}状态: "
+"已解密(部分){{/}}{{pargraphStart}}06:21，异象活动完全停止。气象锋面已散去。所有方尖碑型结构已被摧毁。威胁已解除。{{pargraphStart}}收集到的銤元素晶体样本，以及未知型号余响坦克的残骸，已被送往特殊保管库进行后续研究。{{pargraphStart}}官方声明:"
+" 事件已平息。特遣队遏制威胁的行动已取得成功。该区域的隔离已被解除。{{pargraphStart}}{{pargraphStart}}{{@ "
+"class "
+"$highlightText}}主管个人备注{{/}}(仅供特种预备队审阅){{pargraphStart}}我对此持保留态度。我们赢得了战斗，但尚未彻底赢得胜利。异象就这样...消失了？我们没能及时完成阿特拉斯综合体的校准工作。分析人员在其他区域也记录到了类似的信号特征，且爆发频率呈上升趋势。根据数据推演，距离下一次爆发仅剩3个月时间。{{pargraphStart}}凭我的经验，发生的一切不过是山雨欲来前的阵阵微风。我们必须为下一轮进攻做好准备:"
+" "
+"升级武器，准备更多的阿特拉斯综合体，利用一切手头上的资源——无论是銤元素技术，还是简单高效的雷区。它们定会卷土重来；待到那时，我们必须全副武装，严阵以待。{{pargraphStart}}报告称，异象正在学习如何反制我们的手段。所以我们必须灵活应变。是的，我们正竭尽所能去研究并适应它们——以其人之道，还治其人之身。但谁能保证，它们没有采取同样的策略呢？"
+
+msgid "narration/narrationTitle/ls_artefact_1"
+msgstr "{{number}}. 入侵"
+
+msgid "narration/narrationTitle/ls_artefact_2"
+msgstr "{{number}}. 方尖碑"
+
+msgid "narration/narrationTitle/ls_artefact_3"
+msgstr "{{number}}. 阿特拉斯"
+
+msgid "narration/narrationTitle/ls_artefact_4"
+msgstr "{{number}}. 晴空"
+
+msgid "narration/tooltips/disabledNextEpisode_1"
+msgstr "完成普通难度等级即可进入下一个故事章节。"
+
+msgid "narration/tooltips/disabledNextEpisode_2"
+msgstr "完成困难难度等级即可进入下一个故事章节。"
+
+msgid "narration/tooltips/disabledNextEpisode_3"
+msgstr "完成残酷难度等级即可进入最终故事章节。"
+
+msgid "narration/tooltips/nextStory"
+msgstr "下个故事"
+
+msgid "preBattle/leave"
+msgstr "退出战斗"
+
+msgid "preBattle/searching"
+msgstr "搜索盟友..."
+
+msgid "preBattle/tip"
+msgstr "匹配行动部队耗时太久？请尝试更改难度等级。"
+
+msgid "preBattle/uppercase/leave"
+msgstr "退出战斗"
+
+msgid "promoWindow/header"
+msgstr "投身星火燎原"
+
+msgid "promoWindow/subheader"
+msgstr ""
+"{dateRange}，体验星火燎原PvE游戏模式的全新章节。\n"
+"获取一套活动主题{cream_open}3D附件{cream_close}、试验型配件，以及更多专属奖励。"
+
+msgid "questCard/allCompleted"
+msgstr "已完成全部每日任务"
+
+msgid "questCard/completed"
+msgstr ""
+"已完成每日任务。\n"
+"请明天再来。"
+
+msgid "reward/rest"
+msgstr "还有%(count)s个"
+
+msgid "rewardPath/about"
+msgstr "关于目标"
+
+msgid "rewardPath/aboutTooltip"
+msgstr "查看活动详情。"
+
+msgid "rewardPath/boostTitle"
+msgstr "加快推动您的进度，获取更多数据点数{icon}"
+
+msgid "rewardPath/btn/shop"
+msgstr "前往军械库查看"
+
+msgid "rewardPath/completed"
+msgstr "已获得全部数据点数和奖励"
+
+msgid "rewardPath/completedTitle"
+msgstr "前往军械库，获取独特主题个性化元素"
+
+msgid "rewardPath/intro"
+msgstr "简介"
+
+msgid "rewardPath/introTooltip"
+msgstr "观看简介视频。"
+
+msgid "rewardPath/progress"
+msgstr "阶段{artefactIndex}的数据点数进度: {currentProgress}/{maxProgress}{icon}"
+
+msgid "rewardPath/title"
+msgstr "进度"
+
+msgid "rewardPathCard/completed"
+msgstr "已完成"
+
+msgid "rewardPathCard/name"
+msgstr "探秘之旅"
+
+msgid "rewardPathCard/progress"
+msgstr "{{value}}/{{maxValue}}{{storyPoint}}"
+
+msgid "shopCard/name"
+msgstr "活动礼包"
+
+msgid "squad/goToAnother/cancel"
+msgstr "取消"
+
+msgid "squad/goToAnother/message"
+msgstr "小队将被解散。"
+
+msgid "squad/goToAnother/submit"
+msgstr "离开"
+
+msgid "squad/goToAnother/title"
+msgstr "离开星火燎原:入侵活动？"
+
+msgid "squad/leave/cancel"
+msgstr "取消"
+
+msgid "squad/leave/disabledEvent/message"
+msgstr "小队将被解散。"
+
+msgid "squad/leave/disabledEvent/submit"
+msgstr "收到！"
+
+msgid "squad/leave/disabledEvent/title"
+msgstr "星火燎原:入侵活动已结束"
+
+msgid "squad/leave/message"
+msgstr "小队将被解散。"
+
+msgid "squad/leave/submit"
+msgstr "离开"
+
+msgid "squad/leave/title"
+msgstr "离开星火燎原:入侵小队？"
+
+msgid "squad/leaveDisabled/cancel"
+msgstr "继续"
+
+msgid "squad/leaveDisabled/message"
+msgstr "您所在小队已做好战斗准备。"
+
+msgid "squad/leaveDisabled/title"
+msgstr "您无法离开小队！"
+
+msgid "stageReward/rewards/received"
+msgstr "同时获得:"
+
+msgid "stageReward/special/header"
+msgstr "已完成残酷难度等级！"
+
+msgid "stageReward/special/subheader"
+msgstr "已获得特殊奖励"
+
+msgid "stageReward/stage/header"
+msgstr "已获得奖励"
+
+msgid "stageReward/stage/subheader"
+msgstr "已完成星火燎原:阶段{{number}}"
+
+msgid "stageReward/stageFinal/header"
+msgstr "已获得全部奖励"
+
+msgid "stageReward/stageFinal/subheader"
+msgstr "已完成星火燎原:最终阶段"

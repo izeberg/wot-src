@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>nodes_01</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>HP_Fire_1</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 -0.011436 -2.434312</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Fire_2</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-0.445267 -0.011436 2.270838</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_LFront</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.199909 0.979815</row1>
+					<row2>0.000000 -0.979815 0.199909</row2>
+					<row3>-1.253255 -0.083979 3.371174</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_LRear</identifier>
+				<transform>
+					<row0>-1.000000 0.000000 -0.000000</row0>
+					<row1>0.000000 0.590682 -0.806904</row1>
+					<row2>-0.000000 -0.806904 -0.590682</row2>
+					<row3>-1.253255 0.021976 -3.169884</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_RFront</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.199909 0.979815</row1>
+					<row2>0.000000 -0.979815 0.199909</row2>
+					<row3>1.253254 -0.083946 3.371172</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_RRear</identifier>
+				<transform>
+					<row0>-1.000000 0.000000 -0.000000</row0>
+					<row1>0.000000 0.590682 -0.806904</row1>
+					<row2>-0.000000 -0.806904 -0.590682</row2>
+					<row3>1.253254 0.020006 -3.167200</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Track_Exhaus_1</identifier>
+				<transform>
+					<row0>0.704737 0.000000 0.000000</row0>
+					<row1>0.000000 -0.932787 0.360429</row1>
+					<row2>0.000000 -0.360429 -0.932787</row2>
+					<row3>-0.354290 0.013397 -3.271387</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Track_Exhaus_2</identifier>
+				<transform>
+					<row0>0.704737 0.000000 0.000000</row0>
+					<row1>0.000000 -0.932787 0.360429</row1>
+					<row2>0.000000 -0.360429 -0.932787</row2>
+					<row3>0.355795 0.014047 -3.269603</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_turretJoint</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.465310 0.872200</row3>
+				</transform>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_proxy</identifier>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<fx>shaders/std_effects/PBS_tank.fx</fx>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/poland/Pl40_Krazownik/Krazownik_proxy_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/poland/Pl40_Krazownik/Krazownik_proxy_ANM.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/poland/Pl40_Krazownik/Krazownik_proxy_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/poland/Pl40_Krazownik/Krazownik_proxy_AO.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
+						crashTileMap
+						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.057363 -0.029730 -0.101642</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-1.765156 -0.612762 -3.666299</min>
+		<max>1.650430 0.553303 3.463016</max>
+	</boundingBox>
+	<geometrySize>4148</geometrySize>
+</root>

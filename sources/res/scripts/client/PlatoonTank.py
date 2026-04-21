@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from typing import TYPE_CHECKING
 from collections import namedtuple

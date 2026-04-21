@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB155_Pike/normal/lod1/Turret_01</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/british/GB155_Pike/normal/lod2/Turret_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.446172 -0.008075 -2.576491</min>
+		<max>1.446233 2.438657 1.343962</max>
+	</visibilityBox>
+</root>

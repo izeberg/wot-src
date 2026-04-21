@@ -269,6 +269,9 @@
 		<F82_AMX_M4_Mle1949_Ter>
 			<row>6</row>
 			<column>10</column>
+			<lines>
+				<F143_Fauteur/>
+			</lines>
 		</F82_AMX_M4_Mle1949_Ter>
 		<F18_Bat_Chatillon25t>
 			<row>8</row>
@@ -293,5 +296,9 @@
 			<row>4</row>
 			<column>11</column>
 		</F136_AMX_67_Imbattable>
+		<F143_Fauteur>
+			<row>6</row>
+			<column>11</column>
+		</F143_Fauteur>
 	</nodes>
 </root>

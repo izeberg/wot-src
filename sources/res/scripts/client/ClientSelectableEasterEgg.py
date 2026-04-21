@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld, AnimationSequence
 from ClientSelectableObject import ClientSelectableObject
 from gui import GUI_SETTINGS

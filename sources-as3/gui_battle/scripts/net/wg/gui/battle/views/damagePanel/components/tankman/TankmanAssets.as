@@ -77,10 +77,8 @@ package net.wg.gui.battle.views.damagePanel.components.tankman
          this.state = BATTLE_ITEM_STATES.NORMAL;
          this._tankmanHit.x = this._critical.x = this._normal.x = _loc10_ + param6;
          this._tankmanHit.y = this._critical.y = this._normal.y = _loc11_;
-         this._stunIndicator.x = this._tankmanHit.x + X_STUN_OFFSET;
-         this._stunIndicator.y = this._tankmanHit.y + Y_STUN_OFFSET;
-         this._buffIndicator.x = this._tankmanHit.x + X_STUN_OFFSET;
-         this._buffIndicator.y = this._tankmanHit.y + Y_STUN_OFFSET;
+         this._stunIndicator.x = this._buffIndicator.x = this._tankmanHit.x + X_STUN_OFFSET;
+         this._stunIndicator.y = this._buffIndicator.y = this._tankmanHit.y + Y_STUN_OFFSET;
          this._tankmanHit.visible = false;
       }
       
@@ -138,7 +136,7 @@ package net.wg.gui.battle.views.damagePanel.components.tankman
          return this._isDisposed;
       }
       
-      public function showDestroyed() : void
+      public function showDestroyed(param1:Boolean) : void
       {
          this._critical.visible = true;
          this._normal.visible = false;

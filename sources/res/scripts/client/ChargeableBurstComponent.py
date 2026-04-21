@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from collections import namedtuple
 from events_handler import eventHandler

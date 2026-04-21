@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>nodes_01</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>HP_Wheel_L_01_Front</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.993847 -0.110758</row1>
+					<row2>0.000000 0.110758 0.993847</row2>
+					<row3>-1.037753 0.000000 1.558089</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Wheel_L_01_Rear</identifier>
+				<transform>
+					<row0>-1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.994751 0.102324</row1>
+					<row2>-0.000000 0.102324 -0.994751</row2>
+					<row3>-1.037753 0.000000 1.486664</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Wheel_L_02_Front</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.993847 -0.110758</row1>
+					<row2>0.000000 0.110758 0.993847</row2>
+					<row3>-1.037753 0.000000 0.035022</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Wheel_L_02_Rear</identifier>
+				<transform>
+					<row0>-1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.994751 0.102324</row1>
+					<row2>-0.000000 0.102324 -0.994751</row2>
+					<row3>-1.037753 0.000000 -0.036403</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Wheel_L_03_Front</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.993847 -0.110758</row1>
+					<row2>0.000000 0.110758 0.993847</row2>
+					<row3>-1.037753 0.000000 -1.489334</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Wheel_L_03_Rear</identifier>
+				<transform>
+					<row0>-1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.994751 0.102324</row1>
+					<row2>-0.000000 0.102324 -0.994751</row2>
+					<row3>-1.037753 0.000000 -1.560759</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Wheel_R_01_Front</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.993847 -0.110758</row1>
+					<row2>0.000000 0.110758 0.993847</row2>
+					<row3>1.031413 0.000000 1.558089</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Wheel_R_01_Rear</identifier>
+				<transform>
+					<row0>-1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.994751 0.102324</row1>
+					<row2>-0.000000 0.102324 -0.994751</row2>
+					<row3>1.031413 0.000000 1.486664</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Wheel_R_02_Front</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.993847 -0.110758</row1>
+					<row2>0.000000 0.110758 0.993847</row2>
+					<row3>1.031413 0.000000 0.035022</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Wheel_R_02_Rear</identifier>
+				<transform>
+					<row0>-1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.994751 0.102324</row1>
+					<row2>-0.000000 0.102324 -0.994751</row2>
+					<row3>1.031413 0.000000 -0.036403</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Wheel_R_03_Front</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.993847 -0.110758</row1>
+					<row2>0.000000 0.110758 0.993847</row2>
+					<row3>1.031413 0.000000 -1.489334</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Wheel_R_03_Rear</identifier>
+				<transform>
+					<row0>-1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.994751 0.102324</row1>
+					<row2>-0.000000 0.102324 -0.994751</row2>
+					<row3>1.031413 0.000000 -1.560759</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_gui</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.000000 -1.000000</row1>
+					<row2>0.000000 1.000000 0.000000</row2>
+					<row3>0.000000 3.910213 0.000000</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>Tank</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.500000 0.000000</row3>
+				</transform>
+				<node>
+					<identifier>Track_L0</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>-1.037863 -0.472929 1.524000</row3>
+					</transform>
+					<node>
+						<identifier>WD_L0</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>-0.000005 0.533184 0.000000</row3>
+						</transform>
+						<node>
+							<identifier>WD_L0_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>1.037868 -0.560255 -1.524000</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>Track_L0_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>1.037863 -0.027071 -1.524000</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>Track_L1</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>-1.037863 -0.472929 -0.000002</row3>
+					</transform>
+					<node>
+						<identifier>W_L0</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>-0.000005 0.533184 0.000000</row3>
+						</transform>
+						<node>
+							<identifier>W_L0_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>1.037868 -0.560255 0.000002</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>Track_L1_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>1.037863 -0.027071 0.000002</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>Track_L2</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>-1.037863 -0.472929 -1.524000</row3>
+					</transform>
+					<node>
+						<identifier>WD_L1</identifier>
+						<transform>
+							<row0>1.000000 0.000000 -0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 -0.000000 1.000000</row2>
+							<row3>-0.000005 0.533184 0.000000</row3>
+						</transform>
+						<node>
+							<identifier>WD_L1_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>1.037868 -0.560255 1.524000</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>Track_L2_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>1.037863 -0.027071 1.524000</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>Track_R0</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>1.031985 -0.472929 1.524000</row3>
+					</transform>
+					<node>
+						<identifier>WD_R0</identifier>
+						<transform>
+							<row0>1.000000 -0.000000 -0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>-0.000000 0.000000 1.000000</row2>
+							<row3>-0.000008 0.533184 0.000000</row3>
+						</transform>
+						<node>
+							<identifier>WD_R0_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>-1.031977 -0.560255 -1.524000</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>Track_R0_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>-1.031985 -0.027071 -1.524000</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>Track_R1</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>1.031985 -0.472929 -0.000002</row3>
+					</transform>
+					<node>
+						<identifier>W_R0</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>-0.000008 0.533184 0.000000</row3>
+						</transform>
+						<node>
+							<identifier>W_R0_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>-1.031977 -0.560255 0.000002</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>Track_R1_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>-1.031985 -0.027071 0.000002</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>Track_R2</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>1.031985 -0.472929 -1.524000</row3>
+					</transform>
+					<node>
+						<identifier>WD_R1</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>-0.000000 -0.000000 1.000000</row2>
+							<row3>-0.000008 0.533184 0.000000</row3>
+						</transform>
+						<node>
+							<identifier>WD_R1_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>-1.031977 -0.560255 1.524000</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>Track_R2_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>-1.031985 -0.027071 1.524000</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>V</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.702150 0.000000</row3>
+					</transform>
+					<node>
+						<identifier>V_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>0.000000 -1.202150 0.000000</row3>
+						</transform>
+					</node>
+				</node>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>V_BlendBone</node>
+		<geometry>
+			<vertices>chassis_RShape.vertices</vertices>
+			<primitive>chassis_RShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_proxy_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						diffuseMap
+						<Texture>last_stand/vehicles/british/GB125_Saladin_LS_BOT/Saladin_LS_BOT_proxy_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>last_stand/vehicles/british/GB125_Saladin_LS_BOT/Saladin_LS_BOT_proxy_AO.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>last_stand/vehicles/british/GB125_Saladin_LS_BOT/Saladin_LS_BOT_proxy_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>last_stand/vehicles/british/GB125_Saladin_LS_BOT/Saladin_LS_BOT_proxy_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.831281 0.599264 -0.001805</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>V_BlendBone</node>
+		<geometry>
+			<vertices>chassis_LShape.vertices</vertices>
+			<primitive>chassis_LShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_proxy_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						diffuseMap
+						<Texture>last_stand/vehicles/british/GB125_Saladin_LS_BOT/Saladin_LS_BOT_proxy_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>last_stand/vehicles/british/GB125_Saladin_LS_BOT/Saladin_LS_BOT_proxy_AO.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>last_stand/vehicles/british/GB125_Saladin_LS_BOT/Saladin_LS_BOT_proxy_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>last_stand/vehicles/british/GB125_Saladin_LS_BOT/Saladin_LS_BOT_proxy_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.832708 0.591002 -0.013282</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>-1.274737 0.015002 -2.062078</min>
+		<max>1.271532 1.182457 2.066184</max>
+	</boundingBox>
+	<geometrySize>13968</geometrySize>
+</root>

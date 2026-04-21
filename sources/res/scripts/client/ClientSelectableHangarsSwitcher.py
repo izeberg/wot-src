@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, BigWorld
 from ClientSelectableObject import ClientSelectableObject
 from helpers import dependency

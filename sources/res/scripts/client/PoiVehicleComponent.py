@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from PoiBaseComponent import PoiBaseComponent
 from points_of_interest.components import PoiVehicleStateComponent
 

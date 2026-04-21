@@ -69,7 +69,7 @@ class BattleMessagesController(IBattleController):
         self._buffer = []
         self._isUIPopulated = False
         self.__specEntityStringByCode = {}
-        self.__initSpecEntittyStringFuncsByCode()
+        self.__initSpecEntityStringFuncsByCode()
 
     def getControllerID(self):
         return BATTLE_CTRL_ID.MESSAGES
@@ -203,7 +203,7 @@ class BattleMessagesController(IBattleController):
             soundExt = _ENEMY_KILLED_SOUND
         return (code, '%s_%s' % (attacker.upper(), target.upper()), sound, soundExt)
 
-    def __initSpecEntittyStringFuncsByCode(self):
+    def __initSpecEntityStringFuncsByCode(self):
         self.__specEntityStringByCode['DEATH_FROM_DEATH_ZONE'] = self.__getEntityStringDeathZone
 
     def onUIPopulated(self):

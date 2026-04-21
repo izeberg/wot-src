@@ -23,9 +23,8 @@ class TournamentView(ViewImpl):
     _TOURNAMENT_VIEW = None
     _MATCH_ROUND_TO_MATCH_STAGE = {}
     __BRACKET_TYPE_TO_MATCH_STAGE = {IngameTournamentBracketType.RR: MatchStage.ROUNDROBIN}
-    __tournamentCtrl = dependency.descriptor(IIngameTournamentController)
-    __externalLinksCtrl = dependency.descriptor(IExternalLinksController)
     __tournamentController = dependency.descriptor(IIngameTournamentController)
+    __externalLinksCtrl = dependency.descriptor(IExternalLinksController)
     _INGAME_TOURNAMENT_MATCH_STATE_TO_UI_STATE = {IngameTournamentMatchState.UPCOMING: MatchState.NOTSTARTED, 
        IngameTournamentMatchState.IN_LIVE: MatchState.LIVE, 
        IngameTournamentMatchState.COMPLETED: MatchState.COMPLETED}
@@ -57,20 +56,24 @@ class TournamentView(ViewImpl):
          (
           self.viewModel.onClose, self.__onClose),
          (
-          self.viewModel.onRefresh, self.__onRefresh))
+          self.viewModel.onRefresh, self.__onRefresh),
+         (
+          self.viewModel.pollServerTime, self.__pollServerTime))
 
     def _onLoading(self, *args, **kwargs):
         super(TournamentView, self)._onLoading(*args, **kwargs)
         self.viewModel.setPageState(PageState.LOADING)
-        self.__tournamentCtrl.onTournamentWGCGDataUpdated += self.__onTournamentWGCGDataUpdated
+        self.viewModel.setTokenStoreAvailabilityTimestamp(self.__tournamentController.getTokenStoreOpeningTime(self._TOURNAMENT_TYPE))
+        self.__tournamentController.onTournamentWGCGDataUpdated += self.__onTournamentWGCGDataUpdated
         self.__updateTournamentData()
+        self.__pollServerTime()
         self.__tournamentController.setIsIntroSeen(self._TOURNAMENT_TYPE)
 
     def _finalize(self):
         super(TournamentView, self)._finalize()
         self._callbackDelayer.destroy()
         self._callbackDelayer = None
-        self.__tournamentCtrl.onTournamentWGCGDataUpdated -= self.__onTournamentWGCGDataUpdated
+        self.__tournamentController.onTournamentWGCGDataUpdated -= self.__onTournamentWGCGDataUpdated
         self._data = None
         return
 
@@ -82,7 +85,7 @@ class TournamentView(ViewImpl):
 
     def __updateTournamentData(self):
         self.viewModel.setIsRefreshing(True)
-        self.__tournamentCtrl.requestTournamentWGCGData()
+        self.__tournamentController.requestTournamentWGCGData()
 
     def __onTournamentWGCGDataUpdated(self, data):
         self._data = data
@@ -95,6 +98,8 @@ class TournamentView(ViewImpl):
             vm.setIsRefreshing(False)
             if self._data is not None:
                 vm.setPrizeFund(self._data.getTotalRewardAmount())
+                vm.setLastPrizePoolUpdate(self._data.getLastPrizePoolUpdate())
+                vm.setIsDynamicPrizePool(self._data.isDynamicPrizePool())
                 matches = []
                 for matchData in self._data.getAllMatches():
                     matchModel = MatchModel()
@@ -208,10 +213,14 @@ class TournamentView(ViewImpl):
             _logger.warning('Could not open translation link two, data is not set')
 
     def __onGoToShop(self):
-        self.__tournamentCtrl.openShop(self._TOURNAMENT_TYPE)
+        self.__tournamentController.openShop(self._TOURNAMENT_TYPE)
 
     def __onClose(self):
         showHangar()
 
     def __onRefresh(self):
         self.__updateTournamentData()
+
+    def __pollServerTime(self):
+        with self.viewModel.transaction() as (tx):
+            tx.setServerTimestamp(int(getServerUTCTime()))

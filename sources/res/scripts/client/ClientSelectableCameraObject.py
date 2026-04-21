@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import CGF
 from ClientSelectableObject import ClientSelectableObject
 from gui.hangar_cameras.hangar_camera_common import CameraMovementStates, CameraRelatedEvents
@@ -23,7 +24,9 @@ class ClientSelectableCameraObject(ClientSelectableObject):
             ClientSelectableCameraObject.allCameraObjects.remove(self)
 
     def onMouseClick(self):
-        ClientSelectableCameraObject.switchCamera(self)
+        ClientSelectableObject.onMouseClick(self)
+        ClientSelectableCameraObject.deselectAll()
+        self.onSelect()
         return self.state != CameraMovementStates.FROM_OBJECT
 
     @classmethod

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB158_Executor/normal/lod0/Turret_01</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/british/GB158_Executor/normal/lod1/Turret_01</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>
+			-1.38142 -0.006942 -3.103754
+			<!--BW_String-->
+		</min>
+		<max>
+			1.397538 2.381073 1.3634
+			<!--BW_String-->
+		</max>
+	</visibilityBox>
+</root>

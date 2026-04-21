@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld, Math
 from AreaOfEffect import AreaOfEffect
 from account_helpers.settings_core.settings_constants import GRAPHICS

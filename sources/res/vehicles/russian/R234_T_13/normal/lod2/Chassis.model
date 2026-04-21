@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/russian/R234_T_13/normal/lod3/Chassis</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.670001 -0.000051 -3.178918</min>
+		<max>1.670001 0.896909 3.222970</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/russian/R234_T_13/normal/lod2/Chassis</nodefullVisual>
+</root>

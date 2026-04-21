@@ -93,15 +93,6 @@ package net.wg.gui.battle.epicRandom.views
          super();
       }
       
-      override protected function initialize() : void
-      {
-         super.initialize();
-         this.battleDamageLogPanel.init(ATLAS_CONSTANTS.BATTLE_ATLAS);
-         this.teamBasesPanelUI.addEventListener(Event.CHANGE,this.onTeamBasesPanelUIChangeHandler);
-         this.epicRandomPlayersPanel.addEventListener(Event.CHANGE,this.onPlayersPanelChangeHandler);
-         this.endWarningPanel.addEventListener(EndWarningPanelEvent.VISIBILITY_CHANGED,this.onEndWarningPanelVisibilityChangedHandler);
-      }
-      
       override public function updateStage(param1:Number, param2:Number) : void
       {
          var _loc3_:int = 0;
@@ -127,6 +118,16 @@ package net.wg.gui.battle.epicRandom.views
          this.radialMenu.updateStage(param1,param2);
          this.endWarningPanel.x = _loc3_;
          this.updateHintPanelPosition();
+         this.updateBattleDamageLogPanelPosition();
+      }
+      
+      override protected function initialize() : void
+      {
+         super.initialize();
+         this.battleDamageLogPanel.init(ATLAS_CONSTANTS.BATTLE_ATLAS);
+         this.teamBasesPanelUI.addEventListener(Event.CHANGE,this.onTeamBasesPanelUIChangeHandler);
+         this.epicRandomPlayersPanel.addEventListener(Event.CHANGE,this.onPlayersPanelChangeHandler);
+         this.endWarningPanel.addEventListener(EndWarningPanelEvent.VISIBILITY_CHANGED,this.onEndWarningPanelVisibilityChangedHandler);
       }
       
       override protected function createStatisticsController() : BattleStatisticDataController
@@ -245,17 +246,6 @@ package net.wg.gui.battle.epicRandom.views
          {
             playerMessageList.setLocation(_originalWidth - PLAYER_MESSAGES_LIST_OFFSET.x | 0,this.battleMessenger.y);
          }
-      }
-      
-      override protected function updateBattleDamageLogPosInPostmortem() : void
-      {
-         var _loc1_:int = BattleDamageLogConstants.MAX_VIEW_RENDER_COUNT;
-         var _loc2_:int = postmortemPanelUI.x - (postmortemPanelUI.width >> 1);
-         if(this.battleDamageLogPanel.x + BattleDamageLogConstants.MAX_DAMAGE_LOG_VIEW_WIDTH >= _loc2_)
-         {
-            _loc1_ = BattleDamageLogConstants.MIN_VIEW_RENDERER_COUNT_IN_POSTMORTEM;
-         }
-         this.battleDamageLogPanel.setDetailActionCount(_loc1_);
       }
       
       override protected function onComponentVisibilityChanged(param1:String, param2:Boolean) : void
@@ -432,15 +422,7 @@ package net.wg.gui.battle.epicRandom.views
       
       private function onConsumablesPanelUpdatePositionHandler(param1:ConsumablesPanelEvent) : void
       {
-         if(isPostMortem)
-         {
-            this.consumablesPanel.removeEventListener(ConsumablesPanelEvent.UPDATE_POSITION,this.onConsumablesPanelUpdatePositionHandler);
-            this.updateBattleDamageLogPosInPostmortem();
-         }
-         else
-         {
-            this.updateBattleDamageLogPanelPosition();
-         }
+         this.updateBattleDamageLogPanelPosition();
          minimap.updateSizeIndex(false);
       }
    }

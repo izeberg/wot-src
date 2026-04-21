@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, BigWorld, Math, Event, math_utils
 from vehicle_systems.tankStructure import TankNodeNames
 from VehicleGunRotator import VehicleGunRotator, MatrixAnimator

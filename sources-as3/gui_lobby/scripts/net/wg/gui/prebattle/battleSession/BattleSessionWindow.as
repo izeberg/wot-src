@@ -150,14 +150,19 @@ package net.wg.gui.prebattle.battleSession
       
       override public function as_enableReadyBtn(param1:Boolean) : void
       {
-         this.readyButton.enabled = param1;
+         this.notReadyButton.enabled = this.readyButton.enabled = param1;
+      }
+      
+      override public function as_setReadyBtnTooltip(param1:String) : void
+      {
+         this.readyButton.tooltip = param1;
       }
       
       override public function as_refreshPermissions() : void
       {
          this._isReady = isPlayerReadyS();
          this.updateReadyButton();
-         this.readyButton.enabled = isReadyBtnEnabledS();
+         updateReadyBtnStateS();
          this.enableLeave(isLeaveBtnEnabledS());
          this.updateMoveControls();
          this.updateMoveControlsTooltips();
@@ -215,7 +220,7 @@ package net.wg.gui.prebattle.battleSession
             this.numberingContainer.x = !!_loc5_ ? Number(NUMBERING_WIDE_X) : Number(NUMBERING_X);
             disposeDataProvider(this.memberList.dataProvider);
             this.memberList.dataProvider = param3;
-            this.readyButton.enabled = this.notReadyButton.enabled = isReadyBtnEnabledS();
+            updateReadyBtnStateS();
             _loc8_ = 0;
             while(_loc8_ < _loc4_)
             {
@@ -259,7 +264,7 @@ package net.wg.gui.prebattle.battleSession
          registerFlashComponentS(channelComponent,Aliases.CHANNEL_COMPONENT);
          this._isReady = isPlayerReadyS();
          this.updateReadyButton();
-         this.readyButton.enabled = isReadyBtnEnabledS();
+         updateReadyBtnStateS();
          this.enableLeave(isLeaveBtnEnabledS());
          window.setTitleIcon(TITLE_ICON);
          geometry = new DefaultWindowGeometry();
@@ -284,6 +289,7 @@ package net.wg.gui.prebattle.battleSession
          this.downButton.iconSource = RES_ICONS.MAPS_ICONS_MESSENGER_ICONS_SINGLE_LEFT_ARROW_ICON;
          this.downButton.mouseEnabledOnDisabled = true;
          this.readyButton.label = PREBATTLE.DIALOGS_BUTTONS_READY;
+         this.readyButton.mouseEnabledOnDisabled = true;
          this.notReadyButton.label = PREBATTLE.DIALOGS_BUTTONS_NOTREADY;
          this.setControlsLabels();
          this.memberList.addEventListener(ListEventEx.ITEM_CLICK,this.onMemberListItemClickHandler);
@@ -574,7 +580,7 @@ package net.wg.gui.prebattle.battleSession
       
       private function stopReadyButtonCoolDown() : void
       {
-         this.notReadyButton.enabled = this.readyButton.enabled = isReadyBtnEnabledS();
+         updateReadyBtnStateS();
       }
       
       private function setControlsLabels() : void

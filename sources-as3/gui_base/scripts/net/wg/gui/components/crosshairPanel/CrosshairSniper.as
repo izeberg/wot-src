@@ -30,9 +30,9 @@ package net.wg.gui.components.crosshairPanel
       
       private static const SIEGE_NET_SCALE_NORMAL:Number = 1;
       
-      private static const ZOOM_OVERHEAT_POSITION_X:int = 240;
+      private static const ZOOM_INDICATOR_ALT_X:int = 240;
       
-      private static const ZOOM_OVERHEAT_POSITION_Y:int = 20;
+      private static const ZOOM_INDICATOR_ALT_Y:int = 20;
        
       
       public var zoomTF:TextField = null;
@@ -41,9 +41,17 @@ package net.wg.gui.components.crosshairPanel
       
       private var _zoomStr:String = "";
       
+      private var _zoomIndicatorDefaultX:int = 0;
+      
+      private var _zoomIndicatorDefaultY:int = 0;
+      
+      private var _isUseAltZoomPosition:Boolean = false;
+      
       public function CrosshairSniper()
       {
          super();
+         this._zoomIndicatorDefaultX = this.zoomTF.x;
+         this._zoomIndicatorDefaultY = this.zoomTF.y;
       }
       
       override public function setComponentsAlpha(param1:Number, param2:Number, param3:Number, param4:Number, param5:Number, param6:Number, param7:Number) : void
@@ -53,19 +61,16 @@ package net.wg.gui.components.crosshairPanel
          this.zoomTF.alpha = this._zoomIndicatorAlphaValue;
       }
       
-      override public function set overheatIndicatorVisible(param1:Boolean) : void
-      {
-         if(param1)
-         {
-            this.zoomTF.x = ZOOM_OVERHEAT_POSITION_X;
-            this.zoomTF.y = ZOOM_OVERHEAT_POSITION_Y;
-         }
-         super.overheatIndicatorVisible = param1;
-      }
-      
       override public function setNetType(param1:Number) : void
       {
+         if(this.netType == param1)
+         {
+            return;
+         }
          super.setNetType(param1);
+         this._zoomIndicatorDefaultX = this.zoomTF.x;
+         this._zoomIndicatorDefaultY = this.zoomTF.y;
+         this.updateZoomPosition();
          this.zoomTF.text = this._zoomStr;
          this.zoomTF.alpha = this._zoomIndicatorAlphaValue;
       }
@@ -78,6 +83,16 @@ package net.wg.gui.components.crosshairPanel
          }
          this._zoomStr = param1;
          this.zoomTF.text = this._zoomStr;
+      }
+      
+      override public function set isUseAlternateZoomPosition(param1:Boolean) : void
+      {
+         if(param1 == this._isUseAltZoomPosition)
+         {
+            return;
+         }
+         this._isUseAltZoomPosition = param1;
+         this.updateZoomPosition();
       }
       
       override protected function onDispose() : void
@@ -103,6 +118,12 @@ package net.wg.gui.components.crosshairPanel
             return SIEGE_NET_SCALE_SMALL;
          }
          return SIEGE_NET_SCALE_NORMAL;
+      }
+      
+      private function updateZoomPosition() : void
+      {
+         this.zoomTF.x = !!this._isUseAltZoomPosition ? Number(ZOOM_INDICATOR_ALT_X) : Number(this._zoomIndicatorDefaultX);
+         this.zoomTF.y = !!this._isUseAltZoomPosition ? Number(ZOOM_INDICATOR_ALT_Y) : Number(this._zoomIndicatorDefaultY);
       }
    }
 }

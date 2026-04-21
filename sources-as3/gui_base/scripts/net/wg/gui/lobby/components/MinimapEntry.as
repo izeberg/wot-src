@@ -135,12 +135,6 @@ package net.wg.gui.lobby.components
          invalidate();
       }
       
-      private function playPlayer() : void
-      {
-         this.player.litIcon.play();
-         App.utils.scheduler.cancelTask(this.playPlayer);
-      }
-      
       private function isBackMarker() : Boolean
       {
          return this.m_type == MINIMAPENTRIES_CONSTANTS.MARKER_TYPE_BACKGROUND_MARKER && this.backMarker != null;

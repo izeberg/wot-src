@@ -33,7 +33,9 @@ msgid "AMX_50Fosh_155"
 msgstr "AMX 50 福熙 155"
 
 msgid "AMX_50Fosh_155_descr"
-msgstr "?empty?"
+msgstr ""
+"1952年，随着AMX 50 120坦克计划的启动，F系中止了AMX 50 "
+"福熙自行反坦克炮的研发。军方认为，研发配备与重坦同口径120毫米火炮的自行反坦克炮并无必要。期间曾尝试将火炮升级为155毫米，但随着F系转向采用同盟标准化装备，相关研发工作最终被放弃。"
 
 msgid "AMX_50Fosh_155_long_special"
 msgstr ""
@@ -56,6 +58,9 @@ msgstr "(R)AMX 50B"
 
 msgid "AMX_APX_E_P_C_Moteur"
 msgstr "AMX-APX E.P.C.型"
+
+msgid "AMX_APX_E_P_C_Moteur_F"
+msgstr "AMX-APX E.P.C.型 F"
 
 msgid "AMX_B_270"
 msgstr "AMX B 270"
@@ -457,6 +462,12 @@ msgstr "AMX 38量产型"
 
 msgid "Chassis_F140_Fantome"
 msgstr "幻影"
+
+msgid "Chassis_F141_Durendal"
+msgstr "杜兰达尔"
+
+msgid "Chassis_F143_Fauteur"
+msgstr "庇护者"
 
 msgid "Chassis_F14_AMX40"
 msgstr "AMX 40"
@@ -958,7 +969,8 @@ msgid "F111_AM39_Gendron_Somua"
 msgstr "AM 39 让德隆-索玛"
 
 msgid "F111_AM39_Gendron_Somua_descr"
-msgstr "?empty?"
+msgstr ""
+"1932年至1934年间，该坦克的第一辆原型车在工程师让德隆的监督下进行了研发。1935年，第二辆原型车成功通过了测试。因资金不足，该计划险些被取消，但索玛公司继续进行研发。1938年，改进型原型车下线，并在1938年至1939年间成功通过了测试。该坦克曾投入服役，但由于炮塔供应延迟而未能投入量产。"
 
 msgid "F111_AM39_Gendron_Somua_long_special"
 msgstr ""
@@ -974,7 +986,9 @@ msgid "F112_M10_RBFM"
 msgstr "M10 RBFM"
 
 msgid "F112_M10_RBFM_descr"
-msgstr "?empty?"
+msgstr ""
+"1943年至1944年间，该型号的坦克在F系军队中服役。1944年，在海军炮兵工程师西尔韦尔·瑟拉的监督下，殖民地坦克歼击团所属36辆坦克换装了舰炮瞄准镜，有效射程提高至3000米。F系著名演员让·迦本(原名让-"
+"亚历克西·蒙科尔热)曾作为该自行反坦克炮的车长亲历战斗。"
 
 msgid "F112_M10_RBFM_long_special"
 msgstr ""
@@ -991,7 +1005,8 @@ msgid "F113_Bretagne_Panther"
 msgstr "“黑豹” 布列塔尼"
 
 msgid "F113_Bretagne_Panther_descr"
-msgstr "?empty?"
+msgstr ""
+"该\"黑豹\"改进型生产于1943年8月至1944年6月期间。A型采用了一座新炮塔和球形机枪座。观察设备也进行了现代化改造。共计生产了2300辆采用这些改进的坦克。1944年，盟军在诺曼底登陆后，一些坦克被F系军队缴获，并用于对抗D系军队。"
 
 msgid "F113_Bretagne_Panther_long_special"
 msgstr ""
@@ -1008,7 +1023,8 @@ msgid "F114_Projet_4_1"
 msgstr "4号先进战车"
 
 msgid "F114_Projet_4_1_descr"
-msgstr "?empty?"
+msgstr ""
+"1977年，F系在研发新坦克的过程中考虑了数个设计方案，其中包括4号工程。未生产金属原型车。然而，其后续研发成果促成了F系主战坦克\"勒克莱尔\"的诞生。"
 
 msgid "F114_Projet_4_1_long_special"
 msgstr ""
@@ -1059,7 +1075,7 @@ msgid "F116_Bat_Chatillon_Bourrasque_DV_short_special"
 msgstr "机动和隐蔽优秀，高效率的弹夹装填系统"
 
 msgid "F116_Bat_Chatillon_Bourrasque_descr"
-msgstr "?empty?"
+msgstr "由巴蒂尼奥勒-查狄伦公司研发的F系坦克计划。该坦克采用了一座经过升级、可安装105毫米火炮的双人炮塔。仅存在于蓝图中。"
 
 msgid "F116_Bat_Chatillon_Bourrasque_long_special"
 msgstr ""
@@ -1363,7 +1379,7 @@ msgstr "莱欧克斯"
 
 msgid "F137_LEOX_descr"
 msgstr ""
-"1970年，X系面临坦克装备老化困境，包括M74在内的M系坦克阵容均已过时。由于各种原因，军方无法从M系、Y系、D系那里采购武器。为此军方转而采购F系AMX"
+"1970年，伊比利亚军方面临坦克装备老化困境，包括M74在内的M系坦克阵容均已过时。由于各种原因，军方无法从M系、Y系、D系那里采购武器。为此军方转而采购F系AMX"
 " 30坦克，并于1974年开始生产未经现代化改造的授权版本AMX 30E。但由于F系坦克可靠性不足，遂被迫对旧的M47、M48及AMX "
 "30进行现代化改造。1979年AMX 30E结束生产后，启动了现代化改造计划，包括加长车体版的AMX "
 "30——\"厄尔尼诺\"，以及采用\"豹\"I车体搭配AMX 30E炮塔的莱欧克斯。"
@@ -1441,6 +1457,36 @@ msgstr "幻影"
 msgid "F140_Fantome_short_special"
 msgstr "弹夹炮与自动液气悬挂装置"
 
+msgid "F141_Durendal"
+msgstr "杜兰达尔"
+
+msgid "F141_Durendal_desc"
+msgstr "基于F系和I系联合研发的中型坦克初步设计方案。"
+
+msgid "F141_Durendal_long_special"
+msgstr ""
+"杜兰达尔是一辆F系X级支援型中型坦克。它配备一门独特的弹夹炮，拥有2个短弹夹，可实现非常快速的双连发点射，能在短时间内造成高额损伤。它还拥有出色的机动性，能从出其不意的角度发动攻击。"
+
+msgid "F141_Durendal_short"
+msgstr "杜兰达尔"
+
+msgid "F141_Durendal_short_special"
+msgstr "带有短弹夹的弹夹炮，良好的机动性"
+
+msgid "F143_Fauteur"
+msgstr "庇护者"
+
+msgid "F143_Fauteur_descr"
+msgstr ""
+"20世纪70年代初，AMX公司启动了一项计划，旨在研发一辆配备强劲速射火炮的重装甲坦克。尽管其装甲采用传统设计，但火力系统却基于一项全新理论。工程师们计划采用一种混合型火炮，利用额外电力来提高固体推进剂的效能。推进剂气体由炮管电极间的电弧加热，从而改善燃烧效果并提高射击威力。由于技术限制，该计划最终被叫停。"
+
+msgid "F143_Fauteur_long_special"
+msgstr ""
+"庇护者是可靠的重型坦克设计与先进推进剂控制技术的结晶，这辆令人生畏的坦克能够胜任近距离和远距离作战。良好的装甲使其能抵御敌方炮火，而不俗的机动性则能将火力投送至前线。"
+
+msgid "F143_Fauteur_short"
+msgstr "庇护者"
+
 msgid "F14_AMX40"
 msgstr "AMX 40"
 
@@ -1499,7 +1545,8 @@ msgid "F19_Lorraine40t"
 msgstr "洛林 40t"
 
 msgid "F19_Lorraine40t_descr"
-msgstr "?empty?"
+msgstr ""
+"这辆F系试验型坦克研发于20世纪40年代。1952年建造了两辆原型车。除了摇摆式炮塔，该坦克还采用空心负重轮悬挂装置和箭簇型首上装甲。其设计通过了测试，但从未投入量产。"
 
 msgid "F19_Lorraine40t_long_special"
 msgstr ""
@@ -1646,7 +1693,8 @@ msgid "F42_AMR_35"
 msgstr "AMR 35"
 
 msgid "F42_AMR_35_descr"
-msgstr "?empty?"
+msgstr ""
+"由雷诺公司研发的一辆轻型侦察坦克。1936年至1940年间，共计生产了200辆不同改型的坦克。该坦克参与了战事初期的战斗。这些坦克中的大部分被D系缴获，并被改装为搭载8厘米迫击炮的自行火炮。"
 
 msgid "F42_AMR_35_long_special"
 msgstr ""
@@ -1713,7 +1761,8 @@ msgid "F68_AMX_Chasseur_de_char_46"
 msgstr "AMX CDC"
 
 msgid "F68_AMX_Chasseur_de_char_46_descr"
-msgstr "?empty?"
+msgstr ""
+"1946年，AMX公司提出了新型坦克的设计方案。强劲的发动机和较轻的重量使该坦克具有优秀的机动性，而配备机械供弹系统的90毫米火炮则能实现高射速。然而，该坦克尺寸过大、装甲薄弱、成本高昂且设计复杂，这些缺点使其缺乏吸引力，该计划最终未能进入原型车阶段。"
 
 msgid "F68_AMX_Chasseur_de_char_46_long_special"
 msgstr ""
@@ -1732,7 +1781,9 @@ msgid "F69_AMX13_57_100_GrandFinal"
 msgstr "AMX 13 57 GF"
 
 msgid "F69_AMX13_57_100_GrandFinal_descr"
-msgstr "?empty?"
+msgstr ""
+"该轻型坦克由AMX公司设计，配备了一门57mm "
+"L/100炮。由于研发过程中问题不断，计划进展缓慢，直至20世纪50年代仍未能定型。当时，生产安装75毫米火炮炮塔的改进型底盘版本获得了更高的优先级，57毫米版本遂被叫停。"
 
 msgid "F69_AMX13_57_100_GrandFinal_long_special"
 msgstr "这辆轻型坦克装备一门弹夹炮，具有巨大的输出潜力。它非常适合近距离战斗——8发炮弹可在短时间内造成高额损伤。"
@@ -1744,7 +1795,9 @@ msgid "F69_AMX13_57_100_GrandFinal_short_special"
 msgstr "独特的火炮和良好的机动性"
 
 msgid "F69_AMX13_57_100_descr"
-msgstr "?empty?"
+msgstr ""
+"该轻型坦克由AMX公司设计，配备了一门57mm "
+"L/100炮。由于研发过程中问题不断，计划进展缓慢，直至20世纪50年代仍未能定型。当时，生产安装75毫米火炮炮塔的改进型底盘版本获得了更高的优先级，57毫米版本遂被叫停。"
 
 msgid "F69_AMX13_57_100_long_special"
 msgstr "这辆F系轻型坦克装备一门弹夹炮，具有巨大的输出潜力。它非常适合近距离战斗——8发炮弹可在短时间内造成高额损伤。"
@@ -1774,7 +1827,10 @@ msgid "F73_M4A1_Revalorise_FL_short"
 msgstr "M4A1升级型 FL"
 
 msgid "F73_M4A1_Revalorise_descr"
-msgstr "?empty?"
+msgstr ""
+"20世纪50年代，作为MDAP的一部分，F系接收了经过各种改装的M4 "
+"\"谢尔曼\"坦克。其设计局随即启动了对坦克的现代化改造，目的是提高其火力。紧随其后的是另一项现代化改造项目\"谢尔曼\" "
+"M51。该坦克从未在F系服役。建造的原型车数量不详。"
 
 msgid "F73_M4A1_Revalorise_long_special"
 msgstr ""
@@ -1799,7 +1855,7 @@ msgid "F74_AMX_M4_1949_Liberte"
 msgstr "AMX M449L"
 
 msgid "F74_AMX_M4_1949_Liberte_descr"
-msgstr "?empty?"
+msgstr "一辆最初被命名为141工程的重型坦克。由于急需现代化重型坦克，F系在战事结束后立即启动了该坦克的研发。仅存在于蓝图中。"
 
 msgid "F74_AMX_M4_1949_Liberte_long_special"
 msgstr ""
@@ -1812,7 +1868,7 @@ msgid "F74_AMX_M4_1949_Liberte_short_special"
 msgstr "正面防护出色，炮弹穿透力强"
 
 msgid "F74_AMX_M4_1949_descr"
-msgstr "?empty?"
+msgstr "一辆最初被命名为141工程的重型坦克。由于急需现代化重型坦克，F系在战事结束后立即启动了该坦克的研发。仅存在于蓝图中。"
 
 msgid "F74_AMX_M4_1949_long_special"
 msgstr ""
@@ -1899,7 +1955,10 @@ msgid "F84_Somua_SM"
 msgstr "索玛 SM"
 
 msgid "F84_Somua_SM_descr"
-msgstr "?empty?"
+msgstr ""
+"一辆F系重型坦克，在一次设计竞标中作为AMX "
+"50的备选方案而提出。研发始于1946年，但原型车直到1951年10月才准备就绪。该坦克的研发应用了D系坦克制造技术: "
+"它装备了一门安装在摇摆式炮塔中的100毫米弹夹炮。1953年1月至7月期间，该坦克接受了测试，但结果并不理想。因此，为支持AMX 50，该计划被叫停。"
 
 msgid "F84_Somua_SM_long_special"
 msgstr ""
@@ -1915,7 +1974,9 @@ msgid "F85_M4A1_FL10"
 msgstr "M4A1 FL10"
 
 msgid "F85_M4A1_FL10_descr"
-msgstr "?empty?"
+msgstr ""
+"这辆坦克由巴蒂尼奥勒-查狄伦公司应客户的要求而研发，是M4 \"谢尔曼\"坦克的一次重大现代化改造。首批生产的坦克采用了M4A1的车体和底盘，以及AMX"
+" 13的FL 10炮塔。然而，大部分坦克使用的是M4A4的车体和底盘。总计生产了50辆坦克，服役至20世纪60年代中期。"
 
 msgid "F85_M4A1_FL10_long_special"
 msgstr ""
@@ -1955,7 +2016,9 @@ msgid "F89_Canon_dassaut_de_105"
 msgstr "AMX 105突击型"
 
 msgid "F89_Canon_dassaut_de_105_descr"
-msgstr "?empty?"
+msgstr ""
+"AMX "
+"105突击型自行反坦克炮由AMX公司于1958年研发。根据档案记录，这辆自行反坦克炮结合了优秀的机动性、可靠的装甲(正面区域厚达100毫米)和一门强劲的105毫米火炮。该研发计划后来被中止，没有建造任何原型车。"
 
 msgid "F89_Canon_dassaut_de_105_long_special"
 msgstr ""
@@ -1977,7 +2040,9 @@ msgid "F97_ELC_EVEN_90_FL_short"
 msgstr "ELC EVEN 90 FL"
 
 msgid "F97_ELC_EVEN_90_descr"
-msgstr "?empty?"
+msgstr ""
+"20世纪50年代末，布鲁诺-"
+"瓦莱特公司在ELC计划下研发了一系列坦克。其目标是建造一种用于火力支援的轻型空运坦克。该坦克尺寸小，机动性高。总计生产了10辆配备不同类型武器的试验车。它们接受了测试，但从未投入量产。"
 
 msgid "F97_ELC_EVEN_90_long_special"
 msgstr ""
@@ -1993,7 +2058,7 @@ msgid "FCM_36Pak40"
 msgstr "FCM 36 Pak40"
 
 msgid "FCM_36Pak40_descr"
-msgstr "?empty?"
+msgstr "1943年，10辆被D系缴获的FCM 36坦克被改装成了自行反坦克炮。这些坦克随西部快速反应加强旅在西线作战。"
 
 msgid "FCM_36Pak40_short"
 msgstr "FCM36 Pak40"
@@ -2002,7 +2067,9 @@ msgid "FCM_50t"
 msgstr "FCM 50t"
 
 msgid "FCM_50t_descr"
-msgstr "?empty?"
+msgstr ""
+"该坦克的研发始于1945年12月，旨在作为AMX "
+"50t的备选方案。其设计融合了战前F系坦克工业的过时特征，以及D系的创新技术。该坦克装备了额外的集装箱拖车、潜渡设备和可拆卸扫雷器。"
 
 msgid "FCM_50t_long_special"
 msgstr ""
@@ -2087,7 +2154,7 @@ msgid "Lorraine40t"
 msgstr "洛林 40t"
 
 msgid "Lorraine40t_descr"
-msgstr "?empty?"
+msgstr "该坦克于1952年建造了一辆原型车。它采用空心负重轮悬挂装置和摇摆式炮塔。该设计通过了测试，但从未投入量产。"
 
 msgid "Lorraine40t_short"
 msgstr "洛林 40t"
@@ -2517,6 +2584,9 @@ msgstr "SCR 528F"
 msgid "SCR_528_F"
 msgstr "SCR-528 F"
 
+msgid "SCR_528_F_D"
+msgstr "SCR 528 F(D)"
+
 msgid "SCR_528_F_SH"
 msgstr "SCR-528 F"
 
@@ -2558,6 +2628,9 @@ msgstr "SOFAM 12 GSdsB"
 
 msgid "SOFAM_12_58"
 msgstr "SOFAM 12 58"
+
+msgid "SOFAM_12_6S_D"
+msgstr "SOFAM 12 6S(D)"
 
 msgid "SOFAM_12_GS"
 msgstr "SOFAM 12 GS"
@@ -2657,6 +2730,9 @@ msgstr "TRVP-13-A L"
 
 msgid "TRVP_13_SH"
 msgstr "TRVP-13"
+
+msgid "TR_VP_113"
+msgstr "TR-VP 113"
 
 msgid "Turmo_III_V"
 msgstr "透默 III-V"
@@ -2824,6 +2900,12 @@ msgstr "AMX 38"
 
 msgid "Turret_1_F140_Fantome"
 msgstr "幻影"
+
+msgid "Turret_1_F141_Durendal"
+msgstr "杜兰达尔"
+
+msgid "Turret_1_F143_Fauteur"
+msgstr "庇护者"
 
 msgid "Turret_1_F14_AMX40"
 msgstr "AMX 40"
@@ -3169,7 +3251,7 @@ msgid "_105_leFH18B2"
 msgstr "105 leFH18B2"
 
 msgid "_105_leFH18B2_descr"
-msgstr "?empty?"
+msgstr "D系军队在西线战役期间缴获的B1重型坦克，经改装后广泛投入战场。其中一部分被改装为自行火炮，命名为105 leFH18B2。"
 
 msgid "_105_leFH18B2_long_special"
 msgstr ""
@@ -3432,6 +3514,9 @@ msgstr "OE AS"
 msgid "_118mm_OFL_AS"
 msgstr "OFL AS"
 
+msgid "_120mm_Canon_de_120_67_T53_D"
+msgstr "120mm L/67 T53炮(D)"
+
 msgid "_120mm_DEFA_120_F"
 msgstr "120mm DEFA 120 F炮"
 
@@ -3471,6 +3556,9 @@ msgstr "Frt.Prf. mle.45 (福熙)"
 msgid "_120mm_Frt_Prf_mle_1945_Foch_B"
 msgstr "Frt.Prf. mle.45 (福熙 B)"
 
+msgid "_120mm_Frt_Prf_mle_1945_Foch_B_7x7"
+msgstr "Frt.Prf. mle.45 (福熙 B)"
+
 msgid "_120mm_Frt_Prf_mle_1951_51"
 msgstr "Frt.Prf. mle.51 (51)"
 
@@ -3486,14 +3574,32 @@ msgstr "Frt.Prf. mle.52"
 msgid "_120mm_Frt_Prf_mle_1952_LA"
 msgstr "Frt.Prf. mle.1952 LA"
 
+msgid "_120mm_IPC_1"
+msgstr "120mm IPC-1"
+
 msgid "_120mm_ODR_358"
 msgstr "ODR 358"
 
 msgid "_120mm_ODR_67"
 msgstr "ODR 67"
 
+msgid "_120mm_ODR_APCBC_T14E_D"
+msgstr "ODR 120/67 APCBC T14E(D)"
+
+msgid "_120mm_ODR_HVAP_T17E_D"
+msgstr "ODR 120/67 HVAP T17E(D)"
+
+msgid "_120mm_ODR_IPC_1"
+msgstr "ODR IPC-1"
+
 msgid "_120mm_OE_67"
 msgstr "OE 67"
+
+msgid "_120mm_OE_IPC_1"
+msgstr "OE IPC-1"
+
+msgid "_120mm_OE_T15HE_D"
+msgstr "OE 120/67 T15HE(D)"
 
 msgid "_120mm_OE_mle_1930"
 msgstr "OE mle.30"
@@ -3508,6 +3614,9 @@ msgid "_120mm_OE_mle_1930_Foch"
 msgstr "OE mle.30 (福熙)"
 
 msgid "_120mm_OE_mle_1930_Foch_B"
+msgstr "OE mle.30 (福熙 B)"
+
+msgid "_120mm_OE_mle_1930_Foch_B_7x7"
 msgstr "OE mle.30 (福熙 B)"
 
 msgid "_120mm_OE_mle_1930_fallout"
@@ -3531,6 +3640,9 @@ msgstr "OE mle.52"
 msgid "_120mm_OE_mle_1952_LA"
 msgstr "OE mle.1952 LA"
 
+msgid "_120mm_OPSC_IPC_1"
+msgstr "OPSC IPC-1"
+
 msgid "_120mm_Prf1943"
 msgstr "Prf. mle.43"
 
@@ -3550,6 +3662,9 @@ msgid "_120mm_Prf_mle_1943_Foch"
 msgstr "Prf. mle.43 (福熙)"
 
 msgid "_120mm_Prf_mle_1943_Foch_B"
+msgstr "Prf. mle.43 (福熙 B)"
+
+msgid "_120mm_Prf_mle_1943_Foch_B_7x7"
 msgstr "Prf. mle.43 (福熙 B)"
 
 msgid "_120mm_Prf_mle_1951_51"

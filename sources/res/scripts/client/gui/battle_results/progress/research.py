@@ -26,7 +26,7 @@ class VehicleProgressHelper(object):
         self.__vehTypeCompDescr = vehTypeCompDescr
         self.__vehicle = items.getItemByCD(vehTypeCompDescr)
         self.__vehicleXp = stats.vehiclesXPs.get(self.__vehTypeCompDescr, 0)
-        self.__avgVehicleXp = self.__getAvgVehicleXp(self.__vehTypeCompDescr)
+        self.__avgVehicleXp = self._getAvgVehicleXp(self.__vehTypeCompDescr)
 
     def clear(self):
         self.__unlocks = None
@@ -36,7 +36,7 @@ class VehicleProgressHelper(object):
         self.__vehTypeCompDescr = None
         return
 
-    def __getAvgVehicleXp(self, vehTypeCompDescr):
+    def _getAvgVehicleXp(self, vehTypeCompDescr):
         vehiclesStats = self._itemsCache.items.getAccountDossier().getRandomStats().getVehicles()
         vehicleStats = vehiclesStats.get(vehTypeCompDescr, None)
         if vehicleStats is not None:

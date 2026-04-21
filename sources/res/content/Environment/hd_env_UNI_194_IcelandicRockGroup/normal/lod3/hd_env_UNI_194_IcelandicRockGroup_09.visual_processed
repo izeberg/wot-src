@@ -24,7 +24,7 @@
 					<collisionFlags>144</collisionFlags>
 					<materialKind>111</materialKind>
 				</material>
-				<groupOrigin>-388.724365 50.216389 -459.074707</groupOrigin>
+				<groupOrigin>-388.826660 50.216389 -459.074707</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				1
@@ -112,8 +112,8 @@
 	</renderSet>
 	<boundingBox>
 		<min>-464.878845 -20.187609 -590.750061</min>
-		<max>-333.163391 120.620384 -325.543152</max>
+		<max>-333.368011 120.620384 -325.543152</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>205506</geometrySize>
+	<geometrySize>234026</geometrySize>
 </root>

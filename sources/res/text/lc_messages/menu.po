@@ -3031,7 +3031,7 @@ msgid "headerButtons/fightBtn/tooltip/comp7BattleOnly/header"
 msgstr "无法加入战斗"
 
 msgid "headerButtons/fightBtn/tooltip/comp7Disabled/body"
-msgstr "该模式目前在所有服务器上均未开放。模式开放详情如下。"
+msgstr "休战生效期间无法进行战斗。"
 
 msgid "headerButtons/fightBtn/tooltip/comp7Disabled/header"
 msgstr "无法加入战斗"
@@ -3057,8 +3057,14 @@ msgstr "、"
 msgid "headerButtons/fightBtn/tooltip/comp7LightVehLevel/header"
 msgstr "加入战斗失败"
 
+msgid "headerButtons/fightBtn/tooltip/comp7NotEnoughSuitableVehicles/body"
+msgstr "您必须拥有至少%(minVehiclesRequired)s辆符合该模式要求的坦克。请参阅\"关于天梯战\"页面了解详情。"
+
+msgid "headerButtons/fightBtn/tooltip/comp7NotEnoughSuitableVehicles/header"
+msgstr "加入战斗失败"
+
 msgid "headerButtons/fightBtn/tooltip/comp7NotSet/body"
-msgstr "该模式目前在所有服务器上均未开放。服务器详情如下。"
+msgstr "该模式在所选服务器上不开放，但您可在其他服务器上游玩。"
 
 msgid "headerButtons/fightBtn/tooltip/comp7NotSet/header"
 msgstr "无法加入战斗"
@@ -3075,10 +3081,16 @@ msgstr "赛季尚未开启。"
 msgid "headerButtons/fightBtn/tooltip/comp7Preannounce/header"
 msgstr "加入战斗失败"
 
-msgid "headerButtons/fightBtn/tooltip/comp7RatingCalculation/body"
+msgid "headerButtons/fightBtn/tooltip/comp7QualificationCalculation/body"
 msgstr "根据资格赛结果计算您的评级可能最多需要5分钟。获得段位后，您可继续投身天梯战。"
 
-msgid "headerButtons/fightBtn/tooltip/comp7RatingCalculation/header"
+msgid "headerButtons/fightBtn/tooltip/comp7QualificationCalculation/header"
+msgstr "加入战斗失败"
+
+msgid "headerButtons/fightBtn/tooltip/comp7SeasonEnd/header"
+msgstr "加入战斗失败"
+
+msgid "headerButtons/fightBtn/tooltip/comp7UnsuitableVehicle/header"
 msgstr "加入战斗失败"
 
 msgid "headerButtons/fightBtn/tooltip/comp7VehLevel/body"
@@ -4282,6 +4294,9 @@ msgstr "伸缩式液压传动装置: 坦克可以调整附加车轮的位置。"
 msgid "moduleInfo/hydroAutoSiegeChassis"
 msgstr "液气悬挂装置: 坦克可以倾斜车体"
 
+msgid "moduleInfo/lowChargeShot"
+msgstr "一种特殊火炮机制，可提前开火，但会牺牲射击效能。"
+
 msgid "moduleInfo/magazineGun"
 msgstr "弹夹装填系统"
 
@@ -4468,7 +4483,7 @@ msgstr "这种炮弹的穿透力不受距离影响"
 msgid "moduleInfo/params/noPiercingDistance/footnote/maxDistance"
 msgstr ",最大飞行距离—400米"
 
-msgid "moduleInfo/params/normalisation"
+msgid "moduleInfo/params/normalizationAngle"
 msgstr "转正效应角度"
 
 msgid "moduleInfo/params/penetrationLoss"
@@ -4576,6 +4591,9 @@ msgstr "发动机功率(涡轮)"
 msgid "moduleInfo/params/weight"
 msgstr "重量"
 
+msgid "moduleInfo/propellantAfterburnerGun"
+msgstr "感应式加力装置可提高平均损伤"
+
 msgid "moduleInfo/rocketAcceleration"
 msgstr "火箭助推器可提升坦克的机动性"
 
@@ -4595,6 +4613,9 @@ msgstr ""
 
 msgid "moduleInfo/twinGun"
 msgstr "可选射击模式系统"
+
+msgid "moduleInfo/wheeledDash"
+msgstr "该坦克的特殊机制可在短时间内大幅提高其加速能力、发动机功率以及最大前进和倒车速度。"
 
 msgid "nation_tree/blueprint_title/china"
 msgstr "C系蓝图"
@@ -6337,6 +6358,24 @@ msgstr "离子喷射加力装置充能(%/秒)(涡轮模式，被动)"
 msgid "tank_params/kg"
 msgstr "(kg)"
 
+msgid "tank_params/lowChargeShotAvgDamage"
+msgstr "平均损伤(点)"
+
+msgid "tank_params/lowChargeShotBlockDuration"
+msgstr "射击锁定持续时间(秒)"
+
+msgid "tank_params/lowChargeShotDispertion"
+msgstr "100米距离上射击精度(米)"
+
+msgid "tank_params/lowChargeShotPenetration"
+msgstr "标准炮弹的平均穿透力(毫米)"
+
+msgid "tank_params/lowChargeShotRateOfFire"
+msgstr "射速(发/分钟)"
+
+msgid "tank_params/lowChargeShotVelocity"
+msgstr "炮弹速度(米/秒)"
+
 msgid "tank_params/m"
 msgstr "(米)"
 
@@ -6394,6 +6433,9 @@ msgstr "(每次激活)"
 msgid "tank_params/percent"
 msgstr " "
 
+msgid "tank_params/percent_per_s"
+msgstr "(%/秒)"
+
 msgid "tank_params/piercingPower"
 msgstr "标准炮弹穿透力"
 
@@ -6435,6 +6477,36 @@ msgstr "零预热所需时间"
 
 msgid "tank_params/preheatTransitionDelay"
 msgstr "预热转换延迟"
+
+msgid "tank_params/propellantChargeLimit"
+msgstr "能量上限"
+
+msgid "tank_params/propellantChargeSpendingAfterShot"
+msgstr "单次射击能量消耗"
+
+msgid "tank_params/propellantChargingPerSec"
+msgstr "能量累积速度"
+
+msgid "tank_params/propellantDischargingPerSec"
+msgstr "能量衰减速度"
+
+msgid "tank_params/propellantOverchargeSwitchCooldown"
+msgstr "限制器开关冷却时间"
+
+msgid "tank_params/propellantPostLimitAimingTime"
+msgstr "超限瞄准时间"
+
+msgid "tank_params/propellantPostLimitDamageBonus"
+msgstr "最大超限损伤加成"
+
+msgid "tank_params/propellantPostLimitDamageSpike"
+msgstr "超限损伤峰值"
+
+msgid "tank_params/propellantPostLimitDispersion"
+msgstr "超限100米精度"
+
+msgid "tank_params/propellantPreLimitDamageBonus"
+msgstr "最大未超限损伤加成"
 
 msgid "tank_params/pt"
 msgstr "(马力/吨)"
@@ -6691,6 +6763,27 @@ msgstr "(HP/分钟)"
 msgid "tank_params/vps"
 msgstr "(HP/秒)"
 
+msgid "tank_params/wheeledDashAbilityDuration"
+msgstr "持续时间(秒)"
+
+msgid "tank_params/wheeledDashAbilityReloadTime"
+msgstr "冷却时间(秒)"
+
+msgid "tank_params/wheeledDashAbilityReloadTimeBonus"
+msgstr "冷却时间加成(%)"
+
+msgid "tank_params/wheeledDashEnginePower"
+msgstr "发动机功率(%)"
+
+msgid "tank_params/wheeledDashReverseSpeed"
+msgstr "倒车速度(%)"
+
+msgid "tank_params/wheeledDashSpeedLimits"
+msgstr "冷却加成速度阈值(千米/小时)"
+
+msgid "tank_params/wheeledDashTopSpeed"
+msgstr "最大速度(%)"
+
 msgid "tank_params/wheeledSpeedModeSpeed"
 msgstr "最大速度/倒车速度(快速)"
 
@@ -6819,6 +6912,9 @@ msgstr "可用于折价置换"
 
 msgid "training/additionalInfo/freeSuppliesComp7"
 msgstr "现在可在天梯战地图上免费使用弹药、给养和指令"
+
+msgid "training/additionalInfo/vehicleRequired3"
+msgstr "您必须拥有至少3辆符合该模式要求的坦克。请参阅\"关于天梯战\"页面了解详情。"
 
 msgid "training/create/battleTime"
 msgstr "战斗持续时间:"
@@ -6957,6 +7053,9 @@ msgstr "免费给养"
 
 msgid "training/notificationText/onlyTierX"
 msgstr "仅限X级坦克"
+
+msgid "training/notificationText/vehicleRequired3"
+msgstr "需要多辆坦克"
 
 msgid "training/ownerTitle"
 msgstr "房主"

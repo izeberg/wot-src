@@ -14,7 +14,8 @@ msgid "A-32"
 msgstr "A-32"
 
 msgid "A-32_descr"
-msgstr "?empty?"
+msgstr ""
+"一辆试验型中型坦克。A-32和A-20是同时研发的。两辆原型车均于1939年制造并顺利通过测试，最终A-32换装了更厚的45毫米装甲。A-32被批准服役并最终演变成了T-34。"
 
 msgid "A-32_mod_1939"
 msgstr "A-32"
@@ -47,7 +48,9 @@ msgid "BT-SV"
 msgstr "BT-SV"
 
 msgid "BT-SV_descr"
-msgstr "?empty?"
+msgstr ""
+"该坦克于1937年由第12号装甲车辆维修基地研发。BT-"
+"SV使用了BT-7的零件和部件。其车体使用10-12毫米的结构钢板来制造倾斜装甲；量产型坦克采用了25毫米的均质钢板装甲。该坦克通过了测试但并未服役。后来，其倾斜装甲设计被用于制造A-20试验型坦克和T-34。"
 
 msgid "Bedford_Twin-Six"
 msgstr "贝德福德双六缸"
@@ -559,6 +562,9 @@ msgstr "432工程U"
 msgid "Chassis_R231_Buryan"
 msgstr "布雷扬"
 
+msgid "Chassis_R234_T_13"
+msgstr "T-13"
+
 msgid "Chassis_R235_KB_52"
 msgstr "KB-52"
 
@@ -727,6 +733,9 @@ msgstr "430工程改进型"
 msgid "Chassis_R97_Object_140"
 msgstr "140工程"
 
+msgid "Chassis_R97_Object_140_7x7"
+msgstr "140工程"
+
 msgid "Chassis_SU100Y"
 msgstr "SU-100Y"
 
@@ -797,7 +806,7 @@ msgid "Churchill_LL"
 msgstr "“丘吉尔” L"
 
 msgid "Churchill_LL_descr"
-msgstr "?empty?"
+msgstr "一辆根据租借法案提供给S系的Y系坦克。S系总计接收了301辆坦克，其中一些在海运途中丢失。"
 
 msgid "Churchill_LL_long_special"
 msgstr ""
@@ -905,7 +914,8 @@ msgid "IS-6_BF"
 msgstr "IS-6 B"
 
 msgid "IS-6_BF_descr"
-msgstr "?empty?"
+msgstr ""
+"该坦克的设计方案由车里雅宾斯克基洛夫工厂的设计局于1943年12月至1944年夏季期间制定。后续的研发和首辆原型车的制造则由乌拉尔马什工厂负责。然而，相较于其他正在考察中的重型坦克设计方案，该坦克没有任何优势，其装甲也被认为不如IS-4(701工程)，因此IS-6并未获选投产。"
 
 msgid "IS-6_BF_long_special"
 msgstr ""
@@ -921,7 +931,8 @@ msgid "IS-6_FL_short"
 msgstr "IS-6 FL"
 
 msgid "IS-6_descr"
-msgstr "?empty?"
+msgstr ""
+"该坦克的设计方案由车里雅宾斯克基洛夫工厂的设计局于1943年12月至1944年夏季期间制定。后续的研发和首辆原型车的制造则由乌拉尔马什工厂负责。然而，相较于其他正在考察中的重型坦克设计方案，该坦克没有任何优势，其装甲也被认为不如IS-4(701工程)，因此IS-6并未获选投产。"
 
 msgid "IS-6_long_special"
 msgstr ""
@@ -976,7 +987,9 @@ msgid "KV-220-1"
 msgstr "KV-220-2"
 
 msgid "KV-220_descr"
-msgstr "?empty?"
+msgstr ""
+"KV-220的研发工作于1940年夏开始，其设计基于KV重型坦克。一辆原型车于12月5日制造完毕。与其他KV改型不同，该坦克拥有加长的车体、额外的托带轮、强化装甲(100毫米)以及一个配备85mm"
+" F-30炮的新炮塔。1941年秋，KV-1停产。该坦克换装了量产型KV炮塔并被派往前线。"
 
 msgid "KV-220_test"
 msgstr "KV-220-2 试验型"
@@ -988,7 +1001,10 @@ msgid "KV-5"
 msgstr "KV-5"
 
 msgid "KV-5_descr"
-msgstr "?empty?"
+msgstr ""
+"研发工作于1941年6月在基洛夫工厂开始，并于8月完成，但由于前线局势复杂，计划被迫中断。KV-5计划利用了KV-1的部分组件。重新设计了一座炮塔，配备107mm"
+" "
+"ZiS-6炮。计划在坦克两侧增加两个负重轮和一个托带轮。虽然当时正在为该坦克研发一台新的1200马力柴油发动机，但最后未能及时完成，因此被两台V-2K发动机取代。"
 
 msgid "KV-5_long_special"
 msgstr ""
@@ -1004,7 +1020,8 @@ msgid "KV2_W"
 msgstr "KV-2 (R)"
 
 msgid "KV2_W_descr"
-msgstr "?empty?"
+msgstr ""
+"一辆重型突击坦克，以KV-1为基础于1940年1月研发。1940年至1941年，共计生产了334辆。KV-2坦克于1941年服役，同一年便损失大半。"
 
 msgid "KV2_W_long_special"
 msgstr "这辆坦克配备了一门令人生畏的火炮，一次射击即可将大部分同等级坦克送回车库，但如此高额的平均单发损伤需要付出沉重代价——较低的射速和精度。"
@@ -1019,7 +1036,7 @@ msgid "KV_2"
 msgstr "KV-2"
 
 msgid "KV_descr"
-msgstr "?empty?"
+msgstr "由基洛夫工厂的第二特别设计局于1939年研发。1940年2月至1942年9月期间生产，总计生产了2769辆KV-1和334辆KV-2。"
 
 msgid "KZ_V16"
 msgstr "KZ V16"
@@ -1031,7 +1048,7 @@ msgid "LTP"
 msgstr "LTP"
 
 msgid "LTP_descr"
-msgstr "?empty?"
+msgstr "一辆由普罗沃诺夫中尉于1942年夏提议研发的轻型坦克。未制造任何原型车。"
 
 msgid "M-17B-IT"
 msgstr "M-17B-IT"
@@ -1177,7 +1194,9 @@ msgid "Matilda_II_LL"
 msgstr "“玛蒂尔达” IV型"
 
 msgid "Matilda_II_LL_descr"
-msgstr "?empty?"
+msgstr ""
+"一辆根据租借法案提供给S系的Y系坦克。\n"
+"1941年12月，一辆\"玛蒂尔达\"换上了S系的76.2mm ZiS-5炮和DT机枪。更高的穿透力以及HE炮弹显著增强了其火力。没有关于大规模普及此改装的记录。"
 
 msgid "Matilda_II_LL_long_special"
 msgstr "这辆坦克拥有较高的射速和坚固的装甲。因为Y系在战时通过租借计划将这些坦克提供给S系，S系才能获得这个型号的坦克。"
@@ -1222,13 +1241,15 @@ msgid "Object_907A"
 msgstr "907工程A"
 
 msgid "Object_907A_descr"
-msgstr "?empty?"
+msgstr ""
+"1953年7月13日，官方决定在改进T-54的同时，开始下一代中型坦克的研发。研发工作由第100设计局负责。该项目于1954年2月至3月提交，1955年4月，对新坦克的车体进行了抗弹性能测试。然而，该项目后来因其复杂性而被取消。"
 
 msgid "Object_907A_short"
 msgstr "907工程A"
 
 msgid "Object_907_descr"
-msgstr "?empty?"
+msgstr ""
+"1953年7月13日，官方决定在改进T-54的同时，开始下一代中型坦克的研发。研发工作由第100设计局负责。该项目于1954年2月至3月提交，1955年4月，对新坦克的车体进行了抗弹性能测试。然而，该项目后来因其复杂性而被取消。"
 
 msgid "Object_907_short"
 msgstr "907工程"
@@ -1309,7 +1330,9 @@ msgid "R105_BT_7A"
 msgstr "BT-7A"
 
 msgid "R105_BT_7A_descr"
-msgstr "?empty?"
+msgstr ""
+"1934-1935年间，哈尔科夫机车工厂的设计局研发了BT-7的火炮改装型。新的椭圆形炮塔配备了76.2mm "
+"KT-28炮。此外，部分车辆还安装了新的无线电台。总计制造了155辆火炮改装型BT-7。这些坦克参与了数场战斗。"
 
 msgid "R105_BT_7A_long_special"
 msgstr ""
@@ -1337,7 +1360,8 @@ msgid "R108_T34_85M"
 msgstr "T-34-85M"
 
 msgid "R108_T34_85M_descr"
-msgstr "?empty?"
+msgstr ""
+"T-34-85坦克的一款改进型，由183号工厂生产。与原版坦克不同，它加强了正面装甲，削弱了后部装甲。油箱从战斗舱转移到了车体后部。由于悬挂装置存在缺陷，该坦克仅生产了一辆原型车后便停产了。"
 
 msgid "R108_T34_85M_long_special"
 msgstr "这是一辆出色的坦克，没有明显缺点。它能频繁造成损伤，弹开敌方炮弹，在任何战况下作战。"
@@ -1358,7 +1382,7 @@ msgid "R110_Object_260"
 msgstr "260工程"
 
 msgid "R110_Object_260_descr"
-msgstr "?empty?"
+msgstr "260工程重型坦克的一个版本。设计方案于1945年9月完成，但并未制造任何原型车。"
 
 msgid "R110_Object_260_long_special"
 msgstr ""
@@ -1374,7 +1398,9 @@ msgid "R111_ISU130"
 msgstr "ISU-130"
 
 msgid "R111_ISU130_descr"
-msgstr "?empty?"
+msgstr ""
+"这款以ISU-122S为基础的重型自行反坦克炮于1944年研发，一辆原型车于同年10月制造完毕。它在ISU-122S上安装了基于B-13舰炮所研发的130mm"
+" S-26炮。该坦克于1945年进行了机动和射击测试，但其穿透力劣于122毫米火炮，并且战事已接近尾声，因此该坦克从未服役。"
 
 msgid "R111_ISU130_long_special"
 msgstr "这是一辆标准的自行反坦克炮，其火炮拥有高额的平均单发损伤和可靠的炮盾。您可占领一处位于团队后方的有利点位，在保持不被点亮的情况下造成损伤。"
@@ -1392,7 +1418,8 @@ msgid "R112_T54_45_FL_short"
 msgstr "T-54(原型车) FL"
 
 msgid "R112_T54_45_descr"
-msgstr "?empty?"
+msgstr ""
+"1944年由183号工厂研发。它以T-44为基础，对许多部件进行了调整，以增强新坦克的装甲和武器。据说，其第一辆原型车于1944年底制造完毕。然而，其他一些资料则记录了另一个日期——1945年1月。该坦克于1945年3月和4月进行了测试，但从未投入量产。"
 
 msgid "R112_T54_45_long_special"
 msgstr ""
@@ -1416,6 +1443,9 @@ msgstr "R-113K"
 msgid "R113M"
 msgstr "R-113"
 
+msgid "R113M_140_7x7"
+msgstr "R-113"
+
 msgid "R113M_7x7"
 msgstr "R-113"
 
@@ -1432,7 +1462,8 @@ msgid "R113_Object_730"
 msgstr "IS-5(730工程)"
 
 msgid "R113_Object_730_descr"
-msgstr "?empty?"
+msgstr ""
+"该坦克的研发工作于1949年开始，由车里雅宾斯克基洛夫工厂设计局在约瑟夫·科京的监督下进行。于1950年开始了10辆坦克的试生产。在经过所有测试并升级后，该坦克于1953年以IS-8的编号投入服役。"
 
 msgid "R113_Object_730_long_special"
 msgstr ""
@@ -1454,7 +1485,9 @@ msgid "R114_Object_244"
 msgstr "244工程"
 
 msgid "R114_Object_244_descr"
-msgstr "?empty?"
+msgstr ""
+"试验型坦克237工程的后续研发型号。244工程配备了更强大的火炮。战斗舱略有改动: "
+"无线电台被放置在炮塔尾舱，安装了更高效的风扇，并修改了弹药架和潜望镜。驾驶舱和引擎-传动舱未作改动。由于炮管存在问题，该坦克从未服役。"
 
 msgid "R114_Object_244_long_special"
 msgstr ""
@@ -1473,7 +1506,9 @@ msgid "R115_IS-3_auto_S"
 msgstr "IS-3A\"游隼\""
 
 msgid "R115_IS-3_auto_S_descr"
-msgstr "?empty?"
+msgstr ""
+"1956-1957年，军事装甲部队学院为IS-3和T-10重型坦克开发了一种新的装填系统的概念设计。IS-3的改装型号采用带有自动装填系统的双排弹药架。乘员减少到三名:"
+" 车长、炮手和驾驶员。炮塔经过重新设计以容纳装填机构。该坦克仅存在于蓝图中。"
 
 msgid "R115_IS-3_auto_S_long_special"
 msgstr ""
@@ -1486,7 +1521,9 @@ msgid "R115_IS-3_auto_S_short_special"
 msgstr "配备独特火炮的多功能坦克"
 
 msgid "R115_IS-3_auto_descr"
-msgstr "?empty?"
+msgstr ""
+"1956-1957年，军事装甲部队学院为IS-3和T-10重型坦克开发了一种新的装填系统的概念设计。IS-3的改装型号采用带有自动装填系统的双排弹药架。乘员减少到三名:"
+" 车长、炮手和驾驶员。炮塔经过重新设计以容纳装填机构。该坦克仅存在于蓝图中。"
 
 msgid "R115_IS-3_auto_long_special"
 msgstr ""
@@ -1511,7 +1548,8 @@ msgid "R116_ISU122C_Berlin"
 msgstr "ISU-122S"
 
 msgid "R116_ISU122C_Berlin_descr"
-msgstr "?empty?"
+msgstr ""
+"一款以IS坦克为基础所研发的重型突击炮，能有效应对D系的重型坦克及防御工事。原型车于1944年4月在车里雅宾斯克基洛夫工厂建成。该坦克于同年8月投入服役，1944年至1945年间总计制造了675辆。"
 
 msgid "R116_ISU122C_Berlin_long_special"
 msgstr "这辆自行反坦克炮装备了一门射速高、平均每分钟损伤出色的火炮，可迅速击败几乎所有对手。由于机动性并不出众，因此该坦克更适合采用伏击战术。"
@@ -1523,7 +1561,8 @@ msgid "R117_T34_85_Rudy"
 msgstr "T-34-85“鲁迪”"
 
 msgid "R117_T34_85_Rudy_descr"
-msgstr "?empty?"
+msgstr ""
+"这辆虚构的T-34-85坦克编号为102，隶属于B系陆军第1坦克旅，曾在B系电视剧《四个坦克兵与狗》中出镜。实际上，T-34-85坦克于20世纪50年代在B系格利维采的布马尔·拉贝迪工厂生产。B系的T-34-85是在战时后期S系坦克的基础上略微改装的结果。"
 
 msgid "R117_T34_85_Rudy_long_special"
 msgstr ""
@@ -1539,7 +1578,9 @@ msgid "R118_T28_F30"
 msgstr "T28(F30)"
 
 msgid "R118_T28_F30_descr"
-msgstr "?empty?"
+msgstr ""
+"配备85mm "
+"F-30炮的T-28坦克于1941年研发。曾制造出一辆原型车并进行了测试。与量产型T-28坦克的差别在于其配备的武器装备。没有资料能够证明该坦克曾被量产或投入实战。"
 
 msgid "R118_T28_F30_long_special"
 msgstr ""
@@ -1574,7 +1615,9 @@ msgid "R119_Object_777C_short_special"
 msgstr "优秀的火炮，低矮的车身，良好的机动性"
 
 msgid "R119_Object_777_descr"
-msgstr "?empty?"
+msgstr ""
+"777工程是一个独特的重型坦克项目。该坦克由车里雅宾斯克基洛夫工厂研发。于1953年完成图纸设计，并建造了样车。原型车计划采用铸造车体和流线型炮塔。该坦克计划配备122mm"
+" M62T2炮。然而，研发工作并未继续。777工程从未投入量产，也未曾服役。"
 
 msgid "R119_Object_777_long_special"
 msgstr ""
@@ -1596,7 +1639,8 @@ msgid "R120_T22SR_A22"
 msgstr "T-22"
 
 msgid "R120_T22SR_A22_descr"
-msgstr "?empty?"
+msgstr ""
+"配备A-22车体的原型车于1949年生产。其设计采用了具有最大倾斜角度的轧制装甲板。实弹测试表明，该车体能有效抵御大口径AP炮弹。该车体被用作中型坦克T-22项目的基础。在完成悬挂装置和总体设计后，研发工作便中止了。后来，其最佳创新成果被应用于907工程的研发中。"
 
 msgid "R120_T22SR_A22_long_special"
 msgstr ""
@@ -1631,13 +1675,17 @@ msgid "R122_T44_100B"
 msgstr "T-44-100(B)"
 
 msgid "R122_T44_100B_descr"
-msgstr "?empty?"
+msgstr ""
+"在T-44的基础上于1945年研发的试验性中型坦克，与前者不同的是，T-44-100采用了新设计的炮塔与100mm "
+"LB-1炮，并装有抵挡破甲弹的侧裙板。仅生产2辆。"
 
 msgid "R122_T44_100B_short"
 msgstr "T-44-100(B)"
 
 msgid "R122_T44_100_descr"
-msgstr "?empty?"
+msgstr ""
+"在T-44的基础上于1945年研发的试验性中型坦克，与前者不同的是，T-44-100采用了新设计的炮塔与100mm "
+"LB-1炮，并装有抵挡破甲弹的侧裙板。仅生产2辆。"
 
 msgid "R122_T44_100_long_special"
 msgstr ""
@@ -1684,7 +1732,8 @@ msgid "R125_T_45"
 msgstr "T-45"
 
 msgid "R125_T_45_descr"
-msgstr "?empty?"
+msgstr ""
+"T-60坦克的升级版。与原型号坦克不同，T-45采用了强化装甲和一个配备了1938年型45毫米火炮的炮塔，以及一挺同轴DT机枪。1942年6月，与T-70相比，该坦克被认为已过时。该坦克从未投入量产。但是，其一辆原型车被送往前线战场。"
 
 msgid "R125_T_45_long_special"
 msgstr "一辆S系II级轻型坦克，正面装甲可靠，装备了一门穿透力良好的大威力火炮。这辆坦克能单枪匹马击退任何同级坦克，但机动性和火炮精度较为一般。"
@@ -1699,7 +1748,8 @@ msgid "R126_Object_730_5"
 msgstr "268工程V型"
 
 msgid "R126_Object_730_5_descr"
-msgstr "?empty?"
+msgstr ""
+"基于730工程(T-10)坦克的自行反坦克炮。于20世纪50年代早期研发。该项目将火炮安装在可旋转炮塔中，从而实现全向水平射击。大部分弹药被放置在炮塔后部，以改善乘员的操作环境。由于需要对许多基础部件进行昂贵而复杂的修改，该项目被取消。"
 
 msgid "R126_Object_730_5_long_special"
 msgstr ""
@@ -1745,7 +1795,9 @@ msgid "R127_T44_100_P"
 msgstr "T-44-100 (R)"
 
 msgid "R127_T44_100_P_descr"
-msgstr "?empty?"
+msgstr ""
+"在T-44的基础上于1945年研发的试验性中型坦克，与前者不同的是，T-44-100采用了新设计的炮塔与100mm "
+"LB-1炮，并装有抵挡破甲弹的侧裙板。仅生产2辆。"
 
 msgid "R127_T44_100_P_short"
 msgstr "T-44-100 (R)"
@@ -1764,7 +1816,7 @@ msgid "R128_KV4_Kreslavskiy"
 msgstr "KV-4 K型"
 
 msgid "R128_KV4_Kreslavskiy_descr"
-msgstr "?empty?"
+msgstr "由M.I.克列斯拉夫斯基设计的一个项目。由于战事爆发，未能建造任何原型车。仅存在于蓝图中。"
 
 msgid "R128_KV4_Kreslavskiy_long_special"
 msgstr "一辆S系VIII级重型坦克 ，火炮拥有良好的单发损伤和穿透力，炮塔正面和车体侧面的防护也可圈可点。但它的火炮精度和瞄准时间则乏善可陈。"
@@ -1823,7 +1875,8 @@ msgid "R133_KV_122"
 msgstr "KV-122"
 
 msgid "R133_KV_122_descr"
-msgstr "?empty?"
+msgstr ""
+"KV-122的原型车于1944年春开始研发，由车里雅宾斯克基洛夫工厂设计局在KV-85的基础上研发，与后者的不同之处在于其炮塔中安装的122毫米火炮。该炮塔仿制自1944年设计的IS-2。在IS系列重型坦克开始生产后，该项目的所有工作都被终止了。"
 
 msgid "R133_KV_122_long_special"
 msgstr ""
@@ -1836,7 +1889,8 @@ msgid "R134_Object_252K"
 msgstr "252工程U 防卫者"
 
 msgid "R134_Object_252K_descr"
-msgstr "?empty?"
+msgstr ""
+"在IS-6重型坦克的研发过程中准备的一个草案项目。该草案于1944年底完成。后来，IS-6坦克的工作被叫停，该项目的研发也随之中止。该坦克从未服役。"
 
 msgid "R134_Object_252K_long_special"
 msgstr ""
@@ -1852,7 +1906,8 @@ msgid "R134_Object_252U"
 msgstr "252工程U"
 
 msgid "R134_Object_252U_descr"
-msgstr "?empty?"
+msgstr ""
+"在IS-6重型坦克的研发过程中准备的一个草案项目。该草案于1944年底完成。后来，IS-6坦克的工作被叫停，该项目的研发也随之中止。该坦克从未服役。"
 
 msgid "R134_Object_252U_long_special"
 msgstr ""
@@ -1868,7 +1923,7 @@ msgid "R135_T_103"
 msgstr "T-103"
 
 msgid "R135_T_103_descr"
-msgstr "?empty?"
+msgstr "以试验型T-100重型坦克为基础所研发的坦克。计划用来摧毁防御工事，并可用于海岸防御。该项目的工作在蓝图阶段就已中止。这辆坦克从未服役。"
 
 msgid "R135_T_103_long_special"
 msgstr ""
@@ -1900,7 +1955,8 @@ msgid "R140_M4_Loza"
 msgstr "M4A2 \"谢尔曼\"L"
 
 msgid "R140_M4_Loza_descr"
-msgstr "?empty?"
+msgstr ""
+"德米特里·洛萨的车组在1945年春季所驾驶的M4A2(76)W中型坦克。德米特里后来成为了S系英雄，他还是第9近卫机械化部队第46近卫坦克旅第1坦克营的指挥官。"
 
 msgid "R140_M4_Loza_long_special"
 msgstr ""
@@ -1916,7 +1972,8 @@ msgid "R143_T_29"
 msgstr "T-29"
 
 msgid "R143_T_29_descr"
-msgstr "?empty?"
+msgstr ""
+"1934年由政治保卫总局经济部的坦克设计局研发。该项目旨在替换T-28。在工程师N.V.采茨的监督下，可正常运行的原型车于1935年在基洛夫试验工厂(第185号工厂)生产。该坦克配备了轮式和履带式行走机构。该坦克于1936年2月服役；基洛夫工厂负责生产。由于结构复杂和底盘的可靠性问题，在仅生产了少量坦克后，生产便被中止。"
 
 msgid "R143_T_29_long_special"
 msgstr ""
@@ -2065,7 +2122,8 @@ msgid "R154_T_34E_1943"
 msgstr "T-34加强型"
 
 msgid "R154_T_34E_1943_descr"
-msgstr "?empty?"
+msgstr ""
+"T-34加强型是旨在改进T-34系列坦克装甲的项目之一。其装甲由第48研究所和第112号工厂的工程师在I.布尔采夫的监督下研发。在实地测试中，其侧面的装甲能够抵挡37毫米和50毫米反坦克炮的射击，但会被88毫米和75毫米的AP炮弹击穿。所有制造出的原型车都被送往前线，并在战斗中损毁。"
 
 msgid "R154_T_34E_1943_long_special"
 msgstr "这辆中型坦克安装有间隙装甲板，能有效抵御HEAT炮弹的攻击。此外，它的火炮俯仰角优秀，炮塔尺寸较小，能够很好地利用地形扩大战斗优势。"
@@ -2098,7 +2156,10 @@ msgid "R156_IS_2M"
 msgstr "IS-2M"
 
 msgid "R156_IS_2M_descr"
-msgstr "?empty?"
+msgstr ""
+"该坦克是IS-2的改进型，于20世纪50年代初至60年代初研发。在T-10的研发开始之前，IS-2是S系的主力重型坦克。它一直服役到20世纪90年代中期。该坦克的底盘、动力单元和炮塔都经过了重大改动。部分底盘组件、防溅挡板和备件套件来自IS-3。炮塔后部的机枪被移除，取而代之的是为战斗舱增设的通风扇。所有的机枪口都被封闭。此外，标准发动机被替换为V-54K-IS发动机。载弹量增加至34-35发炮弹，而标准火炮(122mm"
+" "
+"D-25炮)保持不变。然而，火炮的俯仰机构得到了改进。部分坦克装备了TVN-2夜视设备，还用新型R-113电台替换了标准电台。此外，驾驶员的观察设备也得到了改进。"
 
 msgid "R156_IS_2M_long_special"
 msgstr ""
@@ -2114,7 +2175,10 @@ msgid "R157_Object_279R"
 msgstr "279工程早期型"
 
 msgid "R157_Object_279R_descr"
-msgstr "?empty?"
+msgstr ""
+"一个重型坦克蓝图项目的早期衍生型号，拥有良好越野能力并采用了全新布局方案。由L.S.特罗扬诺夫于1947-1948年研发。该坦克计划采用低矮的四履带行走机构，发动机在纵向梁上，而纵向梁也兼作燃料箱，从而大大降低了起火的几率。这些解决方案提供了良好的越野和生存能力:"
+" "
+"即使履带受损，坦克也能继续移动。将车体置于悬挂装置上方，从而获得了宽敞的战斗舱，并因此增加了载弹量，改进了机械装填机构以实现高射速。一辆可运行的原型车于1948年制造完成。"
 
 msgid "R157_Object_279R_long_special"
 msgstr ""
@@ -2130,7 +2194,7 @@ msgid "R158_LT_432"
 msgstr "LT-432"
 
 msgid "R158_LT_432_descr"
-msgstr "?empty?"
+msgstr "20世纪60年代初，第100设计局基于432工程研发了数个坦克项目。除车组乘员外，坦克还可额外搭载一支部署部队。仅存在于蓝图中。"
 
 msgid "R158_LT_432_long_special"
 msgstr ""
@@ -2163,7 +2227,8 @@ msgid "R159_SU_130PM_DR_short_special"
 msgstr "强劲的火炮，优秀的隐蔽系数，以及独特的外观"
 
 msgid "R159_SU_130PM_descr"
-msgstr "?empty?"
+msgstr ""
+"SU-130PM是一个基于SU-100PM的开放战斗室自行反坦克炮项目。与其前身型号不同，这辆改装型号配备了更强大的130毫米火炮，因此需要对坦克设计进行特定改动。"
 
 msgid "R159_SU_130PM_long_special"
 msgstr ""
@@ -2185,7 +2250,8 @@ msgid "R160_T_50_2"
 msgstr "T-50-2"
 
 msgid "R160_T_50_2_descr"
-msgstr "?empty?"
+msgstr ""
+"T-50是一辆由基洛夫工厂生产的轻型坦克。为了替换T-26而研发新型轻型坦克的计划于1940年初开始。同年秋天，在研究了D系III号中型坦克的设计后，设计师敲定了新坦克所需的技术参数。该坦克的设计特点是带有全向观察孔的车长塔，车长不再兼任炮手和装填手职责。最终要求于1940年11月制定，新坦克被命名为T-50。1941年初，基洛夫工厂制造了一辆原型车并进行了测试，但该坦克从未服役。该项目最终被取消，取而代之的是由第174号工厂研发的T-50。"
 
 msgid "R160_T_50_2_long_special"
 msgstr ""
@@ -2201,7 +2267,8 @@ msgid "R161_T_116"
 msgstr "T-116"
 
 msgid "R161_T_116_descr"
-msgstr "?empty?"
+msgstr ""
+"1937年，装甲载具总局指挥官博基斯开始了一辆新型侦察坦克的研发。1937年秋季的战术和技术要求规定，该坦克不能潜水，并应配备BT型轮履两用行走机构。第185号工厂设计局负责研发。计划使用风冷发动机以及PT-1和T-29轮履两用坦克的传动装置。后来，项目停止开发，没有生产原型车。"
 
 msgid "R161_T_116_long_special"
 msgstr ""
@@ -2220,7 +2287,9 @@ msgid "R165_Object_703_II_2"
 msgstr "703工程II型(100)"
 
 msgid "R165_Object_703_II_2_descr"
-msgstr "?empty?"
+msgstr ""
+"在一个炮塔中安装两门火炮的概念早在20世纪30年代末就在KV坦克上实现。配备双管炮的ST-"
+"II重型坦克项目是在战事的最后阶段研发的。其设计理念是最大化坦克的火力。该项目仅存在于蓝图中。"
 
 msgid "R165_Object_703_II_2_long_special"
 msgstr ""
@@ -2233,7 +2302,9 @@ msgid "R165_Object_703_II_2_short_special"
 msgstr "双火炮系统与可靠的装甲"
 
 msgid "R165_Object_703_II_descr"
-msgstr "?empty?"
+msgstr ""
+"在一个炮塔中安装两门火炮的概念早在20世纪30年代末就在KV坦克上实现。配备双管炮的ST-"
+"II重型坦克项目是在战事的最后阶段研发的。其设计理念是最大化坦克的火力。该项目仅存在于蓝图中。"
 
 msgid "R165_Object_703_II_long_special"
 msgstr ""
@@ -2314,7 +2385,8 @@ msgid "R173_K_91_2"
 msgstr "K-91 II型"
 
 msgid "R173_K_91_2_descr"
-msgstr "?empty?"
+msgstr ""
+"K-91配备前置式炮塔的设计方案。该坦克由陆军工程委员会设计局在A.F.克拉夫采夫的指导下于1949年3月至8月间研发。计划安装12缸水平对置柴油发动机，并使用外形类似雪橇的独特行走机构。该项目于1949年12月在蓝图阶段被终止。"
 
 msgid "R173_K_91_2_long_special"
 msgstr ""
@@ -2336,7 +2408,8 @@ msgid "R175_IS_2_screen"
 msgstr "IS-2加强型"
 
 msgid "R175_IS_2_screen_descr"
-msgstr "?empty?"
+msgstr ""
+"重型坦克IS-2(IS-122)于1944年制造，是IS-1的改进型。它采用了一块铸造工艺更为简单的120毫米首上装甲。S系精锐近卫的重型坦克团在进攻数个要塞城市时广泛使用了IS-2。IS-2加强型是加装了网状格栅装甲的改装型号，旨在提高坦克在巷战中的生存能力。"
 
 msgid "R175_IS_2_screen_long_special"
 msgstr "除了继承自S系重型坦克的所有特点外，IS-2加强型还针对巷战环境加装了额外的防护。主装甲上方安装的铁丝网能够显著提升坦克对敌方炮弹的抗性。"
@@ -2351,7 +2424,8 @@ msgid "R177_ISU_152K_BL10"
 msgstr "ISU-152K"
 
 msgid "R177_ISU_152K_BL10_descr"
-msgstr "?empty?"
+msgstr ""
+"ISU-152K自行反坦克炮(其原型车被命名为241工程K)是ISU-152自行反坦克炮的升级版，后者是在战时由IS坦克发展而来。该坦克于1955年至1958年间在基洛夫工厂进行了现代化改造。经过第二阶段的现代化改造后，由于内部油箱比ISU-152M更大，ISU-152K的作战范围增加了1.65倍。新型ISU-152K的许多部件与T-10、T-54和PT-76通用。"
 
 msgid "R177_ISU_152K_BL10_long_special"
 msgstr ""
@@ -2931,6 +3005,23 @@ msgstr "布雷扬"
 msgid "R231_Buryan_short_special"
 msgstr "高额的平均单发损伤和平均每分钟损伤。"
 
+msgid "R234_T_13"
+msgstr "T-13"
+
+msgid "R234_T_13_descr"
+msgstr ""
+"重型坦克T-10的替代方案，研发于20世纪50年代末。该坦克计划加强了装甲和武器，并成为首辆量产并搭载新型UTD-45柴油发动机的坦克。最终，该坦克装备一门140毫米火炮；然而，在评估生产成本后，该计划被终止，转而对T-10进行现代化改造，最终诞生了T-10M。"
+
+msgid "R234_T_13_long_special"
+msgstr ""
+"T-13是一辆S系X级重型坦克。侧面装甲和首上装甲的倾斜度相当优秀，使得相对薄弱的垂直装甲也能提供很高的等效厚度。炮塔装甲也极其可靠。大口径火炮完美契合其突击型重型坦克的定位。"
+
+msgid "R234_T_13_short"
+msgstr "T-13"
+
+msgid "R234_T_13_short_special"
+msgstr "出色的车体和炮塔装甲，强劲的火炮"
+
 msgid "R235_KB_52"
 msgstr "KB-52"
 
@@ -3106,7 +3197,8 @@ msgid "R71_IS_2B"
 msgstr "IS-2\"柏林\""
 
 msgid "R71_IS_2B_descr"
-msgstr "?empty?"
+msgstr ""
+"重型坦克IS-2(IS-122)于1944年制造，是IS-1的改进型。它采用了一块铸造工艺更为简单的首上装甲。S系精锐近卫的重型坦克团在进攻数个要塞城市时广泛使用了IS-2。这些坦克涂有粗大的白色条纹，以便其他S系坦克乘员快速识别。这辆隶属于第7近卫独立重型坦克旅的坦克，因一张拍摄于标志性建筑前的照片而闻名。"
 
 msgid "R71_IS_2B_long_special"
 msgstr ""
@@ -3223,6 +3315,15 @@ msgstr "430工程"
 msgid "R97_Object_140"
 msgstr "140工程"
 
+msgid "R97_Object_140_7x7"
+msgstr "140工程 7v7"
+
+msgid "R97_Object_140_7x7_descr"
+msgstr "?empty?"
+
+msgid "R97_Object_140_7x7_short"
+msgstr "140工程 7v7"
+
 msgid "R97_Object_140_cl"
 msgstr "140工程 CL"
 
@@ -3271,6 +3372,9 @@ msgstr "RTU(\"亚森\") A"
 
 msgid "RTY_RCEHb_CFE_T"
 msgstr "RTU(\"亚森\")"
+
+msgid "R_113C"
+msgstr "R-113C"
 
 msgid "R_123B"
 msgstr "R-123B"
@@ -3324,7 +3428,8 @@ msgid "SU100Y"
 msgstr "SU-100Y"
 
 msgid "SU100Y_descr"
-msgstr "?empty?"
+msgstr ""
+"该坦克在T-100重型坦克的基础上研发而成，专门用于摧毁防御工事和敌方坦克，并装备了改进型B-13-S2舰炮。唯一的原型车于1940年3月制造。该坦克从未投入量产。"
 
 msgid "SU100Y_long_special"
 msgstr ""
@@ -3337,7 +3442,8 @@ msgid "SU122_44"
 msgstr "SU-122-44"
 
 msgid "SU122_44_descr"
-msgstr "?empty?"
+msgstr ""
+"乌拉尔马什设计局于1944年6月开始研发该坦克，坦克基于T-44底盘，采用传统布局，战斗室前置。10月，坦克工业人民委员会审议了SU-122-44项目。12月，设计项目准备就绪。然而，具有后置式战斗室的SU-100M-2更受青睐。"
 
 msgid "SU122_44_long_special"
 msgstr ""
@@ -3347,7 +3453,7 @@ msgid "SU122_44_short"
 msgstr "SU-122-44"
 
 msgid "SU122_44_short_special"
-msgstr "?empty?"
+msgstr "单发损伤高、射速快，能够在战场上扮演多种角色。"
 
 msgid "SU122_54"
 msgstr "SU-122-54"
@@ -3368,13 +3474,16 @@ msgid "SU76I"
 msgstr "SU-76I"
 
 msgid "SU76I_descr"
-msgstr "?empty?"
+msgstr ""
+"SU-76I(名称中\"I\"代表\"来自其他系别\")的首辆原型车于1943年3月，基于缴获的D系III号突击炮和III号坦克制造而成，并配备了S系76mm"
+" "
+"F-34炮。总共制造了200辆。SU-76I直至1944年夏天仍在参与战斗行动，后来作为训练坦克直至战事结束。SU-85I本应成为该坦克发展的下一阶段。"
 
 msgid "SU_85I"
 msgstr "SU-85I"
 
 msgid "SU_85I_descr"
-msgstr "?empty?"
+msgstr "在研发SU-76I的同时，也有人尝试在缴获的D系III号坦克上安装一门85毫米火炮。该坦克从未进入量产或服役。"
 
 msgid "Su-26A"
 msgstr "SU-26"
@@ -3386,7 +3495,7 @@ msgid "T-127"
 msgstr "T-127"
 
 msgid "T-127_descr"
-msgstr "?empty?"
+msgstr "1940年夏天与T-126在第174号工厂一同研发。该坦克的研发在初步设计阶段被叫停，后因V-3柴油发动机的问题而彻底中止。"
 
 msgid "T-127_long_special"
 msgstr "相对于其等级来说，这是一辆尺寸小、外观硬朗、防护性良好的坦克。它配备了一门高射速的火炮，容错率较高，在战场上几乎能扮演所有角色。"
@@ -3498,7 +3607,10 @@ msgstr ""
 "以T-44为基础，于1944年2月开发的型号。该坦克的车体、炮塔、装甲和火力与T-44均存在差异。它所搭载的大威力122毫米D-25-44T火炮导致载弹量减少，分装弹药的设计使得无法快速装弹。由于射速降低，该套系统被认为弊大于利，因此T-44-122后又重新装备了85毫米火炮。"
 
 msgid "T44_122_descr"
-msgstr "?empty?"
+msgstr ""
+"于1944年2月基于T-44研发。与其前身相比，该坦克拥有不同的车体、炮塔、装甲和武器。安装在坦克上的强劲122mm "
+"D-25-44T炮导致载弹量减少，并使速射炮弹的装填变得复杂。由于射速过低，也就没有必要再采用分装式装填系统，因此T-44-122之后重新装备了85毫米火炮。"
+" "
 
 msgid "T44_85"
 msgstr "T-44-85"
@@ -3507,13 +3619,15 @@ msgid "T44_85M"
 msgstr "T-44轻型"
 
 msgid "T44_85M_descr"
-msgstr "?empty?"
+msgstr ""
+"研发始于1943年。在原型车试验后，设计得到了升级。一辆标准的T-44A于1944年8月制造完毕，并继续进行测试。T-44A从未投入量产。然而，该坦克的下一辆原型车被投入了量产。"
 
 msgid "T44_85M_short"
 msgstr "T-44轻型"
 
 msgid "T44_85_descr"
-msgstr "?empty?"
+msgstr ""
+"研发始于1943年。T-44的第二辆原型车于1944年1月在坦克工业人民委员会第183号工厂制造完毕。该坦克于1944年6月15日至7月17日进行了实地测试。从未投入量产。"
 
 msgid "T62A"
 msgstr "T-62A"
@@ -3545,6 +3659,9 @@ msgstr "M-50D"
 msgid "TD_12"
 msgstr "TD-12"
 
+msgid "TD_12_7x7"
+msgstr "TD-12"
+
 msgid "TD_30"
 msgstr "TD-30"
 
@@ -3552,7 +3669,7 @@ msgid "T_50_2"
 msgstr "T-50-2"
 
 msgid "T_50_2_descr"
-msgstr "?empty?"
+msgstr "T-50的设计由基洛夫工厂和第174号工厂的设计局提交。基洛夫工厂提出的设计更难实现。该坦克的显著特点是其车体形状和马蹄形散热器。"
 
 msgid "T_50_2_short"
 msgstr "T-50-2"
@@ -3561,7 +3678,9 @@ msgid "Tetrarch_LL"
 msgstr "MK VII \"领主\"L"
 
 msgid "Tetrarch_LL_descr"
-msgstr "?empty?"
+msgstr ""
+"1936年由维克斯-阿姆斯特朗公司研发。1941年至1942年间，共生产了177辆，分为两种基础型号(Mk I和Mk "
+"ICS)。1942年，根据租借法案向S系交付了20辆，其中19辆在东线作战至1943年10月。"
 
 msgid "Tetrarch_LL_short"
 msgstr "MK VII \"领主\"L"
@@ -3968,6 +4087,9 @@ msgstr "432工程U"
 msgid "Turret_1_R231_Buryan"
 msgstr "布雷扬"
 
+msgid "Turret_1_R234_T_13"
+msgstr "T-13"
+
 msgid "Turret_1_R235_KB_52"
 msgstr "KB-52"
 
@@ -4065,6 +4187,9 @@ msgid "Turret_1_R96_Object_430"
 msgstr "430工程"
 
 msgid "Turret_1_R97_Object_140"
+msgstr "140工程"
+
+msgid "Turret_1_R97_Object_140_7x7"
 msgstr "140工程"
 
 msgid "Turret_1_SU100Y"
@@ -4264,6 +4389,9 @@ msgstr "IS-7"
 
 msgid "UTD_20"
 msgstr "UTD-20"
+
+msgid "UTD_45A"
+msgstr "UTD-45A"
 
 msgid "UTD_50M1"
 msgstr "UTD-50M1 B"
@@ -4680,7 +4808,7 @@ msgid "Valentine_LL"
 msgstr "“瓦伦丁” L"
 
 msgid "Valentine_LL_descr"
-msgstr "?empty?"
+msgstr "一辆根据租借法案提供给S系的Y系坦克。总计向S系运送了3782辆坦克，其中一些在海运途中丢失。"
 
 msgid "Valentine_LL_long_special"
 msgstr "出色的整体防护、优秀的观察范围、高射速的火炮，这三个方面决定了该坦克的玩法。不过，由于平均穿透力较低，该坦克更适合近战。"
@@ -4704,6 +4832,9 @@ msgid "_100mm_3UBK4M"
 msgstr "3UBK4M"
 
 msgid "_100mm_3UBK4M_140"
+msgstr "3UBK4M (140)"
+
+msgid "_100mm_3UBK4M_140_7x7"
 msgstr "3UBK4M (140)"
 
 msgid "_100mm_3UBK4M_SH"
@@ -4737,6 +4868,9 @@ msgid "_100mm_3UOF10"
 msgstr "3UOF10"
 
 msgid "_100mm_3UOF10_140"
+msgstr "3UOF10 (140)"
+
+msgid "_100mm_3UOF10_140_7x7"
 msgstr "3UOF10 (140)"
 
 msgid "_100mm_3UOF10_fallout"
@@ -4940,6 +5074,9 @@ msgstr "UBR-412PA"
 msgid "_100mm_UBR_412PB_140"
 msgstr "UBR-412PB (140)"
 
+msgid "_100mm_UBR_412PB_140_7x7"
+msgstr "UBR-412PB (140)"
+
 msgid "_100mm_UBR_412PDG_IS_2_II"
 msgstr "UBR-412PDG (IS-2-II)"
 
@@ -5076,6 +5213,9 @@ msgid "_100mm_UOF_412_T_54S_45"
 msgstr "UOF-412 (T-54S/45)"
 
 msgid "_100mm_U_8TS_140"
+msgstr "100mm U-8TS炮 (140)"
+
+msgid "_100mm_U_8TS_140_7x7"
 msgstr "100mm U-8TS炮 (140)"
 
 msgid "_100mm_ZBK17M"
@@ -6151,6 +6291,18 @@ msgstr "136mm D-79炮"
 
 msgid "_136mm_OF_79"
 msgstr "OF-79"
+
+msgid "_140mm_BR_482A"
+msgstr "BR 482A"
+
+msgid "_140mm_D_63Sh"
+msgstr "140mm D-63Sh炮"
+
+msgid "_140mm_OF_482A"
+msgstr "OF 482A"
+
+msgid "_140mm_ZBK60A"
+msgstr "ZBK60A"
 
 msgid "_152mm_53-BR-540B"
 msgstr "53-BR-540B"

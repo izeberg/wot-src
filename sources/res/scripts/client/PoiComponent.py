@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, weakref, typing, CGF, GenericComponents, Math
 from helpers import dependency, fixed_dict
 from points_of_interest.components import PoiStateComponent

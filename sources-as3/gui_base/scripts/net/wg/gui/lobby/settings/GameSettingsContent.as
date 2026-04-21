@@ -54,18 +54,6 @@ package net.wg.gui.lobby.settings
       
       public var gameplay_devMapsCheckbox:CheckBox = null;
       
-      public var newbiePrebattleHintsCheckbox:CheckBox = null;
-      
-      public var newbieBattleHintsCheckbox:CheckBox = null;
-      
-      public var restartNewbieBattleHints:SoundButtonEx = null;
-      
-      public var battleLoadingInfoLabelControl:LabelControl = null;
-      
-      public var battleLoadingInfoDropDown:DropdownMenu = null;
-      
-      public var switchEquipmentCheckbox:CheckBox = null;
-      
       public var showCommInPlayerlistCheckbox:CheckBox = null;
       
       public var showStickyMarkersCheckbox:CheckBox = null;
@@ -132,6 +120,8 @@ package net.wg.gui.lobby.settings
       
       public var showArtyHitOnMapCheckbox:CheckBox = null;
       
+      public var switchEquipmentCheckbox:CheckBox = null;
+      
       public var showVehicleHPinPlayersPanelLabel:LabelControl = null;
       
       public var showVehicleHPinPlayersPanelDropDown:DropdownMenu = null;
@@ -189,6 +179,20 @@ package net.wg.gui.lobby.settings
       public var showKillersDogTagCheckbox:CheckBox = null;
       
       public var showPersonalAnimatedDogTagCheckbox:CheckBox = null;
+      
+      public var fieldSetTips:FieldSet = null;
+      
+      public var newbiePrebattleHintsCheckbox:CheckBox = null;
+      
+      public var newbieBattleHintsCheckbox:CheckBox = null;
+      
+      public var restartNewbieBattleHints:SoundButtonEx = null;
+      
+      public var battleLoadingInfoLabelControl:LabelControl = null;
+      
+      public var battleLoadingInfoDropDown:DropdownMenu = null;
+      
+      public var w2gtEnableCheckbox:CheckBox = null;
       
       private var _initYGameplayDevMapsCheckbox:int;
       
@@ -347,6 +351,10 @@ package net.wg.gui.lobby.settings
          this.showPersonalAnimatedDogTagCheckbox.label = SETTINGS.GAME_SHOWPERSONALANIMATEDDOGTAG;
          this.showPersonalAnimatedDogTagCheckbox.toolTip = TOOLTIPS.SHOWPERSONALANIMATEDDOGTAG;
          this.showPersonalAnimatedDogTagCheckbox.infoIcoType = InfoIcon.TYPE_INFO;
+         this.fieldSetTips.label = SETTINGS.GAME_NEWBEETIPSTITLE;
+         this.w2gtEnableCheckbox.label = SETTINGS.GAME_W2GTENABLE;
+         this.w2gtEnableCheckbox.toolTip = TOOLTIPS.W2GTENABLE;
+         this.w2gtEnableCheckbox.infoIcoType = InfoIcon.TYPE_INFO;
          this.customizationDisplayTypeButtonBar.setInfoButton(TOOLTIPS.CUSTOMIZATIONDISPLAYTYPE_HISTORICAL,0);
          this.customizationDisplayTypeButtonBar.setInfoButton(TOOLTIPS.CUSTOMIZATIONDISPLAYTYPE_NOTHISTORICAL,1);
          this.customizationDisplayTypeButtonBar.setInfoButton(TOOLTIPS.CUSTOMIZATIONDISPLAYTYPE_ALL,2);
@@ -401,22 +409,13 @@ package net.wg.gui.lobby.settings
          this.enableCommendationsCheckbox = null;
          this.gameplay_devMapsCheckbox.dispose();
          this.gameplay_devMapsCheckbox = null;
-         this.newbiePrebattleHintsCheckbox.dispose();
-         this.newbiePrebattleHintsCheckbox = null;
-         this.newbieBattleHintsCheckbox.dispose();
-         this.newbieBattleHintsCheckbox = null;
-         this.restartNewbieBattleHints.dispose();
-         this.restartNewbieBattleHints = null;
-         this.battleLoadingInfoLabelControl.dispose();
-         this.battleLoadingInfoLabelControl = null;
-         this.battleLoadingInfoDropDown.dispose();
-         this.battleLoadingInfoDropDown = null;
          this.switchEquipmentCheckbox.dispose();
          this.switchEquipmentCheckbox = null;
          this.minimapAlphaSlider.dispose();
          this.minimapAlphaSlider = null;
          this.enableOpticalSnpEffectCheckbox.dispose();
          this.enableOpticalSnpEffectCheckbox = null;
+         this.postmortemModeLabelControl.dispose();
          this.postmortemModeLabelControl = null;
          this.postmortemModeDropDown.dispose();
          this.postmortemModeDropDown = null;
@@ -518,6 +517,20 @@ package net.wg.gui.lobby.settings
          this.enableRepairTimerCheckbox = null;
          this.enableBattleNotifierCheckbox.dispose();
          this.enableBattleNotifierCheckbox = null;
+         this.fieldSetTips.dispose();
+         this.fieldSetTips = null;
+         this.newbiePrebattleHintsCheckbox.dispose();
+         this.newbiePrebattleHintsCheckbox = null;
+         this.newbieBattleHintsCheckbox.dispose();
+         this.newbieBattleHintsCheckbox = null;
+         this.restartNewbieBattleHints.dispose();
+         this.restartNewbieBattleHints = null;
+         this.battleLoadingInfoLabelControl.dispose();
+         this.battleLoadingInfoLabelControl = null;
+         this.battleLoadingInfoDropDown.dispose();
+         this.battleLoadingInfoDropDown = null;
+         this.w2gtEnableCheckbox.dispose();
+         this.w2gtEnableCheckbox = null;
          super.onDispose();
       }
       

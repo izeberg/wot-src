@@ -229,10 +229,6 @@ class CrosshairPanelContainerMeta(DAAPISimpleContainerMeta):
         if self._isDAAPIInited():
             return self.flashObject.as_setAimDamageStage(value)
 
-    def as_setOverheatVisibleS(self, value):
-        if self._isDAAPIInited():
-            return self.flashObject.as_setOverheatVisible(value)
-
     def as_setAccuracyStacksProgressS(self, count):
         if self._isDAAPIInited():
             return self.flashObject.as_setAccuracyStacksProgress(count)
@@ -244,6 +240,14 @@ class CrosshairPanelContainerMeta(DAAPISimpleContainerMeta):
     def as_setChargeGunStateS(self, progress, stacks, isShootBlock):
         if self._isDAAPIInited():
             return self.flashObject.as_setChargeGunState(progress, stacks, isShootBlock)
+
+    def as_setLowChargeInitialTimeS(self, baseTime, lowChargeTime, almostFinishedTime, lowChargeCap):
+        if self._isDAAPIInited():
+            return self.flashObject.as_setLowChargeInitialTime(baseTime, lowChargeTime, almostFinishedTime, lowChargeCap)
+
+    def as_setLowChargeTimeLeftS(self, timeLeft, state, isReplay):
+        if self._isDAAPIInited():
+            return self.flashObject.as_setLowChargeTimeLeft(timeLeft, state, isReplay)
 
     def as_setReloadBoostS(self, value):
         if self._isDAAPIInited():
@@ -272,3 +276,7 @@ class CrosshairPanelContainerMeta(DAAPISimpleContainerMeta):
     def as_setDispersionCircleThicknessS(self, isBold):
         if self._isDAAPIInited():
             return self.flashObject.as_setDispersionCircleThickness(isBold)
+
+    def as_setAlternateZoomPositionS(self, value):
+        if self._isDAAPIInited():
+            return self.flashObject.as_setAlternateZoomPosition(value)

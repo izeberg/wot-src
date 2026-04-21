@@ -1,3 +1,4 @@
+from __future__ import absolute_import, division
 import functools, logging, math, random, typing, weakref
 from collections import namedtuple
 import BigWorld, CGF, GenericComponents, InstantStatuses, Math, Statuses, WoT
@@ -51,7 +52,7 @@ if typing.TYPE_CHECKING:
 _logger = logging.getLogger(__name__)
 LOW_ENERGY_COLLISION_D = 0.3
 HIGH_ENERGY_COLLISION_D = 0.6
-_g_respawnQueue = dict()
+_g_respawnQueue = {}
 
 class _Vector4Provider(object):
     __slots__ = ('_v', )
@@ -88,16 +89,31 @@ VEHICLE_COMPONENTS = {
  BattleAbilitiesComponent}
 
 class Vehicle(BigWorld.Entity, BWEntitiyComponentTracker, BattleAbilitiesComponent):
-    isEnteringWorld = property(lambda self: self.__isEnteringWorld)
-    isTurretDetached = property(lambda self: constants.SPECIAL_VEHICLE_HEALTH.IS_TURRET_DETACHED(self.health) and self.__turretDetachmentConfirmed)
-    isTurretMarkedForDetachment = property(lambda self: constants.SPECIAL_VEHICLE_HEALTH.IS_TURRET_DETACHED(self.health))
-    isTurretDetachmentConfirmationNeeded = property(lambda self: not self.__turretDetachmentConfirmed)
-    hasMovingFlags = property(lambda self: self.engineMode is not None and self.engineMode[1] & 3)
     guiSessionProvider = dependency.descriptor(IBattleSessionProvider)
     lobbyContext = dependency.descriptor(ILobbyContext)
     __specialSounds = dependency.descriptor(ISpecialSoundCtrl)
     __appearanceCache = dependency.descriptor(IAppearanceCache)
     __settingsCore = dependency.descriptor(ISettingsCore)
+
+    @property
+    def isEnteringWorld(self):
+        return self.__isEnteringWorld
+
+    @property
+    def isTurretDetached(self):
+        return constants.SPECIAL_VEHICLE_HEALTH.IS_TURRET_DETACHED(self.health) and self.__turretDetachmentConfirmed
+
+    @property
+    def isTurretMarkedForDetachment(self):
+        return constants.SPECIAL_VEHICLE_HEALTH.IS_TURRET_DETACHED(self.health)
+
+    @property
+    def isTurretDetachmentConfirmationNeeded(self):
+        return not self.__turretDetachmentConfirmed
+
+    @property
+    def hasMovingFlags(self):
+        return self.engineMode is not None and self.engineMode[1] & 3
 
     @property
     def activeGunIndexes(self):
@@ -206,7 +222,7 @@ class Vehicle(BigWorld.Entity, BWEntitiyComponentTracker, BattleAbilitiesCompone
 
         self.proxy = weakref.proxy(self)
         self.extras = {}
-        self.extrasHitPoint = dict()
+        self.extrasHitPoint = {}
         self.typeDescriptor = None
         self.appearance = None
         self.isPlayerVehicle = False
@@ -599,7 +615,7 @@ class Vehicle(BigWorld.Entity, BWEntitiyComponentTracker, BattleAbilitiesCompone
             return
         else:
             __WHEEL_DESTROYED = 3
-            for i in xrange(0, 8):
+            for i in range(0, 8):
                 prevState = prev >> i * 2 & 3
                 newState = self.wheelsState >> i * 2 & 3
                 if prevState != newState:
@@ -814,7 +830,7 @@ class Vehicle(BigWorld.Entity, BWEntitiyComponentTracker, BattleAbilitiesCompone
         return
 
     def onHealthChanged(self, newHealth, oldHealth, attackerID, attackReasonID, attackReasonExtID):
-        if newHealth > 0 and self.health <= 0:
+        if newHealth > 0 >= self.health:
             self.health = newHealth
             self.__prevHealth = newHealth
             return

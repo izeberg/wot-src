@@ -81,15 +81,6 @@ package net.wg.gui.battle.eventBattle.views
          battleTimer.visible = false;
       }
       
-      override public function as_onPostmortemActive(param1:Boolean) : void
-      {
-         super.as_onPostmortemActive(param1);
-         if(!param1 && !this.consumablesPanel.hasEventListener(ConsumablesPanelEvent.UPDATE_POSITION))
-         {
-            this.consumablesPanel.addEventListener(ConsumablesPanelEvent.UPDATE_POSITION,this.onConsumablesPanelUpdatePositionHandler);
-         }
-      }
-      
       override public function updateStage(param1:Number, param2:Number) : void
       {
          super.updateStage(param1,param2);
@@ -115,6 +106,7 @@ package net.wg.gui.battle.eventBattle.views
          this.battleMessenger.y = damagePanel.y - this.battleMessenger.height + MESSENGER_Y_OFFSET - PANEL_VEHICLES_OFFSET >> 0;
          this.updateHintPanelPosition();
          this.updateConsumablesPanelPosition();
+         this.updateBattleDamageLogPanelPosition();
       }
       
       override protected function configUI() : void
@@ -255,15 +247,7 @@ package net.wg.gui.battle.eventBattle.views
       
       private function onConsumablesPanelUpdatePositionHandler(param1:ConsumablesPanelEvent) : void
       {
-         if(isPostMortem)
-         {
-            this.consumablesPanel.removeEventListener(ConsumablesPanelEvent.UPDATE_POSITION,this.onConsumablesPanelUpdatePositionHandler);
-            updateBattleDamageLogPosInPostmortem();
-         }
-         else
-         {
-            this.updateBattleDamageLogPanelPosition();
-         }
+         this.updateBattleDamageLogPanelPosition();
          minimap.updateSizeIndex(false);
       }
       

@@ -22,6 +22,8 @@ package net.wg.gui.battle.views.widgetsPanel
       
       private static const HOT_KEY_GAP_Y:uint = 0;
       
+      private static const HOT_KEY_ACTIVATE_DURATION:Number = 1000;
+      
       private static const SEC_TO_MILLISECONDS_MULTIPLIER:int = 1000;
        
       
@@ -86,7 +88,7 @@ package net.wg.gui.battle.views.widgetsPanel
          var _loc3_:Boolean = PILLBOX_SIEGE_WIDGET_CONST.PILLBOX_SIEGE_TRANSITIONS_STATE.indexOf(param1) != -1;
          if(this._readyToActivate && _loc3_)
          {
-            onActivateKey(this._readyToActivate);
+            onActivateKey(this._readyToActivate,HOT_KEY_ACTIVATE_DURATION);
             this._readyToActivate = Values.EMPTY_STR;
          }
          this._animMgr.setState(param1,param2);

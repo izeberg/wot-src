@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld
 from helpers import isPlayerAccount
 

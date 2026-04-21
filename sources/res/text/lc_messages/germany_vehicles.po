@@ -47,7 +47,8 @@ msgid "Auf_Panther"
 msgstr "“黑豹”侦察车"
 
 msgid "Auf_Panther_descr"
-msgstr "?empty?"
+msgstr ""
+"一项基于\"黑豹\"坦克的重型侦察车计划。使用现有坦克的车体和底盘将极大地促进新坦克的量产；更小的炮塔可以减轻重量并提高坦克的机动性。然而，该计划在研发阶段就被终止了。"
 
 msgid "Auf_Panther_long_special"
 msgstr ""
@@ -63,7 +64,9 @@ msgid "B-1bis_captured"
 msgstr "B2 740(f)"
 
 msgid "B-1bis_captured_descr"
-msgstr "?empty?"
+msgstr ""
+"在西线战役期间，D系军队缴获了161辆B1 II型重型坦克，这些坦克后来被赋予了B2 "
+"740(f)的编号。所有坦克都进行了升级，并安装了D系无线电设备和车长指挥塔上的双开式舱门。一些拆除了武器的坦克被用于训练目的，16辆坦克被改装为自行榴弹炮。大部分坦克被改装成了喷火坦克。"
 
 msgid "B-1bis_captured_short"
 msgstr "B2 740(f)"
@@ -475,6 +478,9 @@ msgstr "IV号歼击车 (0批次)"
 msgid "Chassis_G17_JagdPzIV_2"
 msgstr "IV号坦克歼击车"
 
+msgid "Chassis_G183_Radkampfwagen"
+msgstr "RKW"
+
 msgid "Chassis_G184_Windhund"
 msgstr "风猎者"
 
@@ -747,6 +753,9 @@ msgstr "IV WT 15cm炮型"
 msgid "Chassis_G98_WT_auf_E_100_Phonix"
 msgstr "E-100 WT\"凤凰\""
 
+msgid "Chassis_G98_Waffentrager_E100_CFE_T"
+msgstr "E-100 WT T"
+
 msgid "Chassis_G98_Waffentrager_E100_P"
 msgstr "E-100 WT(P)"
 
@@ -932,7 +941,8 @@ msgid "DickerMax"
 msgstr "大麦克斯"
 
 msgid "DickerMax_descr"
-msgstr "?empty?"
+msgstr ""
+"\"大麦克斯\"(\"胖麦克斯\")最初设计用于摧毁碉堡。1941年春季制造了两辆原型车。后来该坦克被重新划分为重型自行反坦克炮。该设计从未投入量产，但原型车曾在东线作战。"
 
 msgid "DickerMax_long_special"
 msgstr ""
@@ -948,7 +958,7 @@ msgid "E-25"
 msgstr "E-25"
 
 msgid "E-25_descr"
-msgstr "?empty?"
+msgstr "E-25的研发是\"E\"计划的一部分，由武器局第6处监督。E-25由阿格斯公司(D系卡尔斯鲁厄)在赫尔曼·克劳博士的监督下研发。未建造原型车。"
 
 msgid "E-25_long_special"
 msgstr ""
@@ -1162,7 +1172,8 @@ msgid "G100_Gtraktor_Krupp"
 msgstr "克虏伯试验车"
 
 msgid "G100_Gtraktor_Krupp_descr"
-msgstr "?empty?"
+msgstr ""
+"一辆由克虏伯公司研发的试验型中型坦克。1929年，两辆采用了低强度钢的原型车制造完毕，并在S系持续测试到1933年。测试暴露了诸多缺陷，该坦克从未服役。然而，其研发成果后来被D系工程师所利用。"
 
 msgid "G100_Gtraktor_Krupp_long_special"
 msgstr ""
@@ -1205,7 +1216,8 @@ msgid "G104_Stug_IV"
 msgstr "IV号突击炮"
 
 msgid "G104_Stug_IV_descr"
-msgstr "?empty?"
+msgstr ""
+"1943年2月，根据军备部的建议，克虏伯公司开始测试一种新坦克，该坦克采用了改进型III号突击炮的上层结构和IV号坦克H型和J型的悬挂装置。首批坦克于1943年12月生产。在取消了IV号坦克的生产后，克虏伯公司从1944年1月开始致力于新坦克的生产。总计生产了1108辆坦克，另外有31辆用现有坦克改装而成。"
 
 msgid "G104_Stug_IV_long_special"
 msgstr ""
@@ -1221,7 +1233,8 @@ msgid "G105_T-55_NVA_DDR"
 msgstr "T-55A"
 
 msgid "G105_T-55_NVA_DDR_descr"
-msgstr "?empty?"
+msgstr ""
+"T-55坦克的升级版。T-55A拥有更高级别的核防护能力，并且没有车首机枪。从1962年到1970年，S系向D系东部供应了约1800辆T-55和T-55A坦克。"
 
 msgid "G105_T-55_NVA_DDR_long_special"
 msgstr ""
@@ -1237,7 +1250,8 @@ msgid "G106_PzKpfwPanther_AusfF"
 msgstr "“黑豹”88 L/71"
 
 msgid "G106_PzKpfwPanther_AusfF_descr"
-msgstr "?empty?"
+msgstr ""
+"\"黑豹\"坦克改进型的研发始于1944年春。新变体计划采用全新的窄型炮塔设计。这辆新坦克被命名为\"黑豹\"F型。据1945年1月23日的情报显示，\"虎\"式的88毫米火炮被安装在了新炮塔的升级版上。D系为该坦克制造了大量的车体，但炮塔从未投产，仅存在木制模型。"
 
 msgid "G106_PzKpfwPanther_AusfF_long_special"
 msgstr ""
@@ -1253,7 +1267,8 @@ msgid "G107_PzKpfwIII_AusfK"
 msgstr "III号K型"
 
 msgid "G107_PzKpfwIII_AusfK_descr"
-msgstr "?empty?"
+msgstr ""
+"该坦克基于后期型III号坦克的J型底盘所研发，并结合了IV号坦克F2型炮塔和一门75毫米火炮。首批设计方案于1941年12月底完成。制造工作开始后，发现该坦克过于复杂，生产很快被取消。总计完成了50辆坦克，并被用作指挥坦克。它们装备的是50毫米火炮，从未配备75毫米火炮。"
 
 msgid "G107_PzKpfwIII_AusfK_long_special"
 msgstr "一辆D系V级中型坦克，拥有一门射速高，俯仰角良好的火炮。它的主要任务是支援盟友并防守侧翼。薄弱的装甲和较差的精度让它更适合在二线作战。"
@@ -1268,7 +1283,8 @@ msgid "G108_PzKpfwII_AusfD"
 msgstr "II号D型"
 
 msgid "G108_PzKpfwII_AusfD_descr"
-msgstr "?empty?"
+msgstr ""
+"II号坦克的高速改进型，专为由骑兵组建而成的轻装师设计。II号坦克D型拥有全新的车体和悬挂装置。炮塔和火炮沿用了C型版本。悬挂装置有8对大直径负重轮，采用独立扭杆，没有托带轮。采用增强型悬挂元件(包括新的驱动轮和诱导轮)的坦克被命名为E型。据不同信息来源显示，D型和E型改进型总计生产了约200-250辆。"
 
 msgid "G108_PzKpfwII_AusfD_long_special"
 msgstr ""
@@ -1284,7 +1300,8 @@ msgid "G109_Steyr_WT"
 msgstr "斯太尔 WT"
 
 msgid "G109_Steyr_WT_descr"
-msgstr "?empty?"
+msgstr ""
+"该坦克计划由斯太尔公司设计，作为特种火炮运输车，它不仅能运输火炮，还能直接在该运输载具上开火。为了降低成本、简化结构，该坦克大量采用RSO履带式火炮牵引车部件。炮塔及火炮由克虏伯公司提供。至1944年9月2日，建造了一辆木制样车和一辆原型车。"
 
 msgid "G109_Steyr_WT_long_special"
 msgstr ""
@@ -1321,7 +1338,8 @@ msgid "G112_KanonenJagdPanzer_105"
 msgstr "JPZ4-5 105"
 
 msgid "G112_KanonenJagdPanzer_105_descr"
-msgstr "?empty?"
+msgstr ""
+"JPZ4-5的首批原型车由哈诺玛格和亨舍尔公司于1960年为D系生产。量产一直持续到1967年。总计为军方制造了770辆，另外出口了80辆。然而，该坦克于1983年被军方认为已经过时。根据工程师的说法，其中一些可以装备105毫米火炮，但这些坦克最终被改装为炮兵观察车或反坦克导弹运载车。一些JPZ4-5在民兵部队中一直服役到1990年。"
 
 msgid "G112_KanonenJagdPanzer_105_long_special"
 msgstr ""
@@ -1334,7 +1352,8 @@ msgid "G112_KanonenJagdPanzer_105_short_special"
 msgstr "机动性高隐蔽性好"
 
 msgid "G112_KanonenJagdPanzer_descr"
-msgstr "?empty?"
+msgstr ""
+"JPZ4-5的首批原型车由哈诺玛格和亨舍尔公司于1960年为D系生产。量产一直持续到1967年。总计为军方制造了770辆，另外出口了80辆。然而，在1985年，该坦克被认为已经过时。其中一些被改装为炮兵观察车，另一些则被改装为反坦克导弹运载车。一些JPZ4-5一直服役到1990年。"
 
 msgid "G112_KanonenJagdPanzer_long_special"
 msgstr ""
@@ -1359,7 +1378,8 @@ msgid "G114_Rheinmetall_Skorpian"
 msgstr "天蝎 G"
 
 msgid "G114_Rheinmetall_Skorpian_descr"
-msgstr "?empty?"
+msgstr ""
+"1943年1月，莱茵金属公司开始在\"黑豹\"的基础上研发第二代自行反坦克炮。1943年4月2日完成了12.8厘米口径的天蝎设计方案。仅存在于蓝图中。"
 
 msgid "G114_Rheinmetall_Skorpian_long_special"
 msgstr ""
@@ -1375,7 +1395,8 @@ msgid "G114_Skorpian"
 msgstr "天蝎"
 
 msgid "G114_Skorpian_descr"
-msgstr "?empty?"
+msgstr ""
+"1943年1月，莱茵金属公司开始在\"黑豹\"的基础上研发第二代自行反坦克炮。1943年4月2日完成了12.8厘米口径的天蝎设计方案。仅存在于蓝图中。"
 
 msgid "G114_Skorpian_long_special"
 msgstr ""
@@ -1400,7 +1421,7 @@ msgid "G115_Typ_205_4_Jun"
 msgstr "VK10001(P)"
 
 msgid "G115_Typ_205_4_Jun_descr"
-msgstr "?empty?"
+msgstr "1942年6月4日生产的\"鼠\"式。这辆120吨重的超重型坦克前身仅存在于蓝图中，从未服役。该坦克只是\"鼠\"式坦克研发过程中的一个中间阶段。"
 
 msgid "G115_Typ_205_4_Jun_long_special"
 msgstr ""
@@ -1416,7 +1437,8 @@ msgid "G116_Turan_III_prot"
 msgstr "突朗III型"
 
 msgid "G116_Turan_III_prot_descr"
-msgstr "?empty?"
+msgstr ""
+"战时的中型坦克原型车。与之前的改进型相比，它装备了长管75mm 43 M炮并改进了装甲。由于1944年夏终止了坦克生产，该坦克没能进行量产。"
 
 msgid "G116_Turan_III_prot_long_special"
 msgstr ""
@@ -1432,7 +1454,7 @@ msgid "G117_Toldi_III"
 msgstr "托蒂III型"
 
 msgid "G117_Toldi_III_descr"
-msgstr "?empty?"
+msgstr "托蒂I型轻型坦克的改进型。该坦克以米克洛什·托蒂骑士的名字命名。与之前的型号相比，该坦克的装甲和载弹量均得到提升。战时大约生产了12辆。"
 
 msgid "G117_Toldi_III_long_special"
 msgstr ""
@@ -1448,7 +1470,7 @@ msgid "G118_VK4503"
 msgstr "VK4503"
 
 msgid "G118_VK4503_descr"
-msgstr "?empty?"
+msgstr "在战时末期研发的一辆重型坦克。1942年10月12日，该项目被命名为VK4503。仅存在于蓝图中。"
 
 msgid "G118_VK4503_long_special"
 msgstr ""
@@ -1464,7 +1486,8 @@ msgid "G119_Panzer58_BF"
 msgstr "施瓦茨 58"
 
 msgid "G119_Panzer58_BF_descr"
-msgstr "?empty?"
+msgstr ""
+"1953年研发的中型坦克项目，旨在提升作战参数并使其具备山地作战能力。计划使用Y系百夫长的火炮。总计生产了两辆原型车和十辆坦克，但该坦克从未投入量产。"
 
 msgid "G119_Panzer58_BF_long_special"
 msgstr ""
@@ -1483,7 +1506,8 @@ msgid "G119_Panzer58_FL_short"
 msgstr "58号试验型FL"
 
 msgid "G119_Panzer58_descr"
-msgstr "?empty?"
+msgstr ""
+"1953年研发的中型坦克项目，旨在提升作战参数并使其具备山地作战能力。计划使用Y系百夫长的火炮。总计生产了两辆原型车和十辆坦克，但该坦克从未投入量产。"
 
 msgid "G119_Panzer58_long_special"
 msgstr ""
@@ -1499,7 +1523,8 @@ msgid "G119_Pz58_Mutz"
 msgstr "58号M型"
 
 msgid "G119_Pz58_Mutz_descr"
-msgstr "?empty?"
+msgstr ""
+"该坦克于1953年研发，首辆原型车配备了一门90毫米火炮。后来又制造了配备Y系20磅炮的第二辆原型车。最终，生产了一批安装了105毫米火炮的10辆坦克，并一直服役至1964年。此后，这些坦克成为了研发61号坦克的基础。唯一幸存至今的58号坦克装备了一门20磅炮，现存于一座坦克博物馆。"
 
 msgid "G119_Pz58_Mutz_long_special"
 msgstr ""
@@ -1518,7 +1543,7 @@ msgid "G120_M41_90_GrandFinal"
 msgstr "M4190 GF"
 
 msgid "G120_M41_90_GrandFinal_descr"
-msgstr "?empty?"
+msgstr "M系轻型坦克M41A1 \"斗牛犬\"的D系变体。其改装主要涉及76mm M32炮，其口径被扩膛至90毫米，长度则缩短了425毫米。"
 
 msgid "G120_M41_90_GrandFinal_long_special"
 msgstr "这辆坦克的火力和体积都大于一般的侦察坦克，更接近一辆轻型支援坦克。它有着高穿透力的HE炮弹，打击装甲薄弱的敌方目标时极为有效。"
@@ -1530,7 +1555,7 @@ msgid "G120_M41_90_GrandFinal_short_special"
 msgstr "出色的火炮和良好的机动性"
 
 msgid "G120_M41_90_descr"
-msgstr "?empty?"
+msgstr "M系轻型坦克M41A1 \"斗牛犬\"的D系变体。其改装主要涉及76mm M32炮，其口径被扩膛至90毫米，长度则缩短了425毫米。"
 
 msgid "G120_M41_90_long_special"
 msgstr "这辆坦克的火力和体积都大于一般的侦察坦克，更接近一辆轻型支援坦克。它有着高穿透力的HE炮弹，打击装甲薄弱的敌方目标时极为有效。"
@@ -1554,7 +1579,8 @@ msgid "G122_VK6501H"
 msgstr "VK6501(H)"
 
 msgid "G122_VK6501H_descr"
-msgstr "?empty?"
+msgstr ""
+"1939年1月19日，D系陆军武器局的装甲和机动化装备处(武器局第6处)宣布研发一辆65吨的坦克。亨舍尔公司和克虏伯公司于1939年9月1日收到了生产试验车的订单。1940年4月前制造出了一辆木制样车，不同来源的资料显示，1941年中期又生产了一到两辆采用非装甲钢且未安装炮塔的原型车。1942年，该研发项目被中止，原型车也被销毁。"
 
 msgid "G122_VK6501H_long_special"
 msgstr ""
@@ -1624,7 +1650,8 @@ msgid "G136_Tiger_131"
 msgstr "131号\"虎\"式"
 
 msgid "G136_Tiger_131_descr"
-msgstr "?empty?"
+msgstr ""
+"这辆坦克是唯一一辆能完全正常运作的VI号\"虎\"式坦克。该坦克于1943年4月21日被Y系第48皇家坦克团缴获，并于之后被修复。同年，它被运往Y系。Y系对该坦克进行了全面检查，并于1951年将其作为展品陈列在博文顿坦克博物馆。"
 
 msgid "G136_Tiger_131_long_special"
 msgstr "这辆坦克拥有高射速的火炮、良好的观察范围和充足的生命值。不过，由于装甲几乎没有倾斜度，这辆坦克非常容易被敌方炮弹击穿。"
@@ -1639,7 +1666,8 @@ msgid "G137_PzVI_Tiger_217"
 msgstr "217号\"虎\"式"
 
 msgid "G137_PzVI_Tiger_217_descr"
-msgstr "?empty?"
+msgstr ""
+"1944年4月，奥托·卡里乌斯接收了编号为217的E型\"虎\"式坦克。这位王牌车长驾驶该坦克作战，直到1944年6月负伤。1945年，该坦克在战斗中严重受损并爆炸。"
 
 msgid "G137_PzVI_Tiger_217_long_special"
 msgstr ""
@@ -1658,7 +1686,8 @@ msgid "G138_VK168_02_Mauerbrecher"
 msgstr "VK16801 WB"
 
 msgid "G138_VK168_02_Mauerbrecher_descr"
-msgstr "?empty?"
+msgstr ""
+"1942年夏天，保时捷公司收到了一份订单，要求研发一辆突破型坦克，该坦克要拥有同级中首屈一指的强大火力和厚重装甲。VK16801是\"鼠\"式原型车计划的衍生型号。主要区别是其前置式炮塔。仅存在于蓝图中。"
 
 msgid "G138_VK168_02_Mauerbrecher_long_special"
 msgstr ""
@@ -1671,7 +1700,8 @@ msgid "G138_VK168_02_Mauerbrecher_short_special"
 msgstr "强大的火炮和良好的观察范围"
 
 msgid "G138_VK168_02_descr"
-msgstr "?empty?"
+msgstr ""
+"1942年夏天，保时捷公司收到了一份订单，要求研发一辆突破型坦克，该坦克要拥有同级中首屈一指的强大火力和厚重装甲。VK16801是\"鼠\"式原型车计划的后续研发型号。主要区别是其前置式炮塔。仅存在于蓝图中。"
 
 msgid "G138_VK168_02_long_special"
 msgstr ""
@@ -1687,7 +1717,8 @@ msgid "G139_MKA"
 msgstr "MKA"
 
 msgid "G139_MKA_descr"
-msgstr "?empty?"
+msgstr ""
+"由克虏伯公司研发的一款出口型坦克。首辆原型车于1940年通过测试，但其研发工作被终止，该项目也未能吸引到潜在客户。仅制造了一辆原型车，后来被拆解。"
 
 msgid "G139_MKA_long_special"
 msgstr ""
@@ -1712,7 +1743,8 @@ msgid "G140_HWK_30"
 msgstr "HWK 30"
 
 msgid "G140_HWK_30_descr"
-msgstr "?empty?"
+msgstr ""
+"该坦克是作为Ru251的后续研发型号而提出的，主要用于出口。该型号继承了其前身的装甲和武器，但采用了加长的车体和一个额外的托带轮。该坦克仅存在于蓝图中。"
 
 msgid "G140_HWK_30_long_special"
 msgstr ""
@@ -1728,7 +1760,7 @@ msgid "G141_VK7501K"
 msgstr "VK7501(K)"
 
 msgid "G141_VK7501K_descr"
-msgstr "?empty?"
+msgstr "采用后置式炮塔的重型坦克设计概念。未制造原型车，也从未投入量产。"
 
 msgid "G141_VK7501K_long_special"
 msgstr ""
@@ -1744,7 +1776,8 @@ msgid "G142_M48RPz"
 msgstr "M48A2清障坦克"
 
 msgid "G142_M48RPz_descr"
-msgstr "?empty?"
+msgstr ""
+"工程坦克的前身，基于M系战后中型坦克M48而研发。这些坦克配备M8A1的推土铲，在D系军方工程部队中服役，直到20世纪90年代末仍有地方部队使用，但火炮已被拆除。总计有53辆坦克在D系部队中服役。"
 
 msgid "G142_M48RPz_long_special"
 msgstr ""
@@ -1760,7 +1793,7 @@ msgid "G143_E75_TS"
 msgstr "E 75 TS"
 
 msgid "G143_E75_TS_descr"
-msgstr "?empty?"
+msgstr "E-75坦克的后续研发和现代化改造项目之一。计划安装燃气轮机和带防护的铸造炮塔。该项目仅存在于蓝图中。"
 
 msgid "G143_E75_TS_long_special"
 msgstr ""
@@ -1776,7 +1809,7 @@ msgid "G144_Kpz_50t"
 msgstr "50吨主战方案"
 
 msgid "G144_Kpz_50t_descr"
-msgstr "?empty?"
+msgstr "20世纪60年代D系研发的一辆中型坦克项目。该坦克计划采用一门强大的火炮和可靠的装甲。然而，其研发工作在设计阶段便被终止。"
 
 msgid "G144_Kpz_50t_long_special"
 msgstr ""
@@ -2087,7 +2120,9 @@ msgid "G16_PzVIB_Tiger_II_F_short_special"
 msgstr "可靠的装甲和精准的火炮"
 
 msgid "G16_PzVIB_Tiger_II_descr"
-msgstr "?empty?"
+msgstr ""
+"\"虎王\"是战时装甲防护最坚固的坦克之一，配备当时最强劲的反坦克炮。其缺点包括负载过重的悬挂装置和引擎-"
+"传动组件，还有过大的战斗全重。远距离交战时，\"虎王\"在火炮和装甲防护方面几乎优于同时期的任何对手。然而，由于重量过大、发动机和传动系统的耐久度较低，而且产量较少，因此\"虎王\"并未对战事进程产生重大影响。"
 
 msgid "G16_PzVIB_Tiger_II_short"
 msgstr "\"虎王\""
@@ -2288,6 +2323,24 @@ msgstr "?empty?"
 
 msgid "G17_JagdPzIV_short"
 msgstr "IV号坦克歼击车"
+
+msgid "G183_Radkampfwagen"
+msgstr "RKW"
+
+msgid "G183_Radkampfwagen_desc"
+msgstr ""
+"D系于20世纪60年代末研发的轮式坦克计划。该计划旨在打造一辆速度快、火力强的坦克，用于侦察和对抗装甲防护良好的对手。该坦克配备一台动力强劲且结构紧凑的M系V型发动机、8x8轮式布局的底盘和独立悬挂，可实现坦克式的旋转，机动性良好。火炮口径达到90–105毫米。在设计阶段发现了一些严重缺陷:"
+" 部件布局过于紧凑、油箱容量和弹药架空间不足，以及重心过高，导致旋转和开火时稳定性不足。该计划在建造原型车之前被终止。"
+
+msgid "G183_Radkampfwagen_long_special"
+msgstr ""
+"RKW是一辆D系X级轮式狙击型中型坦克。它凭借轮式底盘和强劲的发动机获得了出色的机动性，同时还配备一门非常精准的火炮。这些性能参数使其能够深入敌方战线，并从意想不到的角度发动突袭。"
+
+msgid "G183_Radkampfwagen_short"
+msgstr "RKW"
+
+msgid "G183_Radkampfwagen_short_special"
+msgstr "出色的机动性，精准的火炮"
 
 msgid "G184_Windhund"
 msgstr "风猎者"
@@ -2768,7 +2821,8 @@ msgid "G85_Aufklarungspanzer_V"
 msgstr "“黑豹”侦察车"
 
 msgid "G85_Aufklarungspanzer_V_descr"
-msgstr "?empty?"
+msgstr ""
+"一项基于\"黑豹\"坦克的重型侦察车计划。使用现有坦克的车体和底盘将极大地促进新坦克的量产；更小的炮塔可以减轻重量并提高坦克的机动性。然而，该计划在研发阶段就被终止了。"
 
 msgid "G85_Aufklarungspanzer_V_long_special"
 msgstr ""
@@ -2857,6 +2911,24 @@ msgstr "E-100 WT\"凤凰\""
 msgid "G98_WT_auf_E_100_Phonix_short_special"
 msgstr "完美的火炮，可全向旋转的炮塔"
 
+msgid "G98_Waffentrager_E100_CFE_T"
+msgstr "E-100 WT T"
+
+msgid "G98_Waffentrager_E100_CFE_T_descr"
+msgstr "在E-100底盘上安装大口径高射炮的项目，计划使用150毫米火炮。战事的结束为其画上了终止符。"
+
+msgid "G98_Waffentrager_E100_CFE_T_long_special"
+msgstr ""
+"E-100 WT "
+"T是一辆D系X级自行反坦克炮。与其前置坦克不同，该坦克装备一门自动装填炮而非弹夹炮，玩法更加灵活。因为不必每次都重新装填整个弹夹，E-100 WT "
+"T几乎能随时进行反击。"
+
+msgid "G98_Waffentrager_E100_CFE_T_short"
+msgstr "E-100 WT T"
+
+msgid "G98_Waffentrager_E100_CFE_T_short_special"
+msgstr "拥有高额损伤的自动装填炮，全向旋转炮塔"
+
 msgid "G98_Waffentrager_E100_P_cn"
 msgstr "E-100 WT(P)"
 
@@ -2933,13 +3005,16 @@ msgid "H39_captured"
 msgstr "38H735(f)"
 
 msgid "H39_captured_descr"
-msgstr "?empty?"
+msgstr "在战役期间，D系缴获了约600辆霍奇基斯39坦克。他们将这些坦克进行了改装并在D系军方部队中服役。"
 
 msgid "H39_captured_short"
 msgstr "38H735(f)"
 
 msgid "H39turm"
 msgstr "38H735(f)"
+
+msgid "Hall_Scott_V12_RKW"
+msgstr "霍尔-斯科特 V12 RKW"
 
 msgid "Hetzer"
 msgstr "\"追猎者\""
@@ -3002,7 +3077,7 @@ msgid "JagdTiger_SdKfz_185"
 msgstr "“猎虎” 88 L/71"
 
 msgid "JagdTiger_SdKfz_185_descr"
-msgstr "?empty?"
+msgstr "1945年，\"猎虎\"的生产订单增加了，但兼容火炮的供应不足。因此，大约有20辆坦克装备了8.8cm PaK 43 L/71炮。"
 
 msgid "JagdTiger_SdKfz_185_long_special"
 msgstr ""
@@ -3051,7 +3126,8 @@ msgid "Lowe_FL_short"
 msgstr "“狮”式 FL"
 
 msgid "Lowe_descr"
-msgstr "?empty?"
+msgstr ""
+"这辆70吨超重型坦克的研发始于1941年11月1日。1942年2月，克虏伯公司提出了VK7001前卫方案，后来被命名为\"狮\"式。该坦克有数个构型、武器和装甲各不相同的设计草案。然而，在上级决定研发更重的坦克后，该项目被取消了。从未制造出任何原型车。"
 
 msgid "Lowe_long_special"
 msgstr "该坦克拥有近乎完美的精准火炮和良好的装甲。不过，其速度较低。该坦克主要用作支援型重型坦克，可轻松防御侧翼。多辆坦克即可极大地改变战场情势。"
@@ -3655,6 +3731,12 @@ msgstr "迈巴赫 HL 295 (A)"
 msgid "Maybach_HL_234P60"
 msgstr "迈巴赫新型发动机"
 
+msgid "Maybach_HL_234P60_CFE_T"
+msgstr "迈巴赫新型发动机 T"
+
+msgid "Maybach_HL_234P60_CFE_T_short"
+msgstr "迈巴赫新型发动机 T"
+
 msgid "Maybach_HL_234P60_P"
 msgstr "迈巴赫新型发动机 P"
 
@@ -3790,7 +3872,8 @@ msgid "Panther_M10"
 msgstr "\"黑豹\"(伪装M10)"
 
 msgid "Panther_M10_descr"
-msgstr "?empty?"
+msgstr ""
+"奥托·斯科尔兹内的第150装甲旅为阿登攻势做准备的期间，四辆\"黑豹\"坦克被伪装成M10自行反坦克炮。该装甲旅的任务是深入盟军战线后方分散敌人的注意力。1945年2月21日，在与M系第120步兵团的战斗中，这些坦克被全数击毁。"
 
 msgid "Panther_M10_long_special"
 msgstr ""
@@ -4007,7 +4090,8 @@ msgid "PzII_J"
 msgstr "II号J型"
 
 msgid "PzII_J_descr"
-msgstr "?empty?"
+msgstr ""
+"一辆强化了装甲的侦察坦克。该坦克是II号坦克的后续研发型号。于1939年10月开始试生产，第一辆原型车于1940年7月制造。1943年至1944年间，第12装甲师在东线使用了7辆该型号坦克。总计生产了22辆。"
 
 msgid "PzII_J_short"
 msgstr "II号J型"
@@ -4028,7 +4112,8 @@ msgid "PzIV_Hydro"
 msgstr "IV号 \"液力试验型\""
 
 msgid "PzIV_Hydro_descr"
-msgstr "?empty?"
+msgstr ""
+"1944年7月，D系开始研发采用后置液压传动装置的坦克。IV号坦克G型的底盘被用于相关试验。第一辆原型车于1944年10月底制造完成。仅生产了一辆。"
 
 msgid "PzIV_Hydro_short"
 msgstr "IV号 \"液力试验型\""
@@ -4060,13 +4145,15 @@ msgid "PzIV_ausf_H_short"
 msgstr "III/IV号B型"
 
 msgid "PzIV_descr"
-msgstr "?empty?"
+msgstr ""
+"D系装甲部队中生产数量最多的坦克。1937年10月至1945年3月期间生产，总计生产了8519辆普通型号和指挥坦克。从1942年5月起，该坦克开始配备长管火炮。"
 
 msgid "PzIV_schmalturm"
 msgstr "IV号炮塔升级型"
 
 msgid "PzIV_schmalturm_descr"
-msgstr "?empty?"
+msgstr ""
+"1944年11月，克虏伯公司提出了数个前卫方案，旨在升级现役坦克和自行反坦克炮的武器。其中一个方案是将\"黑豹\"的窄型炮塔安装在IV号坦克J型上。由于这会使悬挂超载，并且IV号坦克的生产也正在被逐步淘汰，该方案未被采纳。"
 
 msgid "PzIV_schmalturm_long_special"
 msgstr "这辆坦克安装了\"黑豹\"的炮塔，并因此拥有了一门强劲火炮，一定会令对手有所忌惮。这是一辆出色的支援坦克，能在任意距离造成损伤。"
@@ -4093,7 +4180,8 @@ msgid "PzI_ausf_C_short"
 msgstr "I号C型"
 
 msgid "PzI_descr"
-msgstr "?empty?"
+msgstr ""
+"I号坦克A型是D系的第一个量产坦克型号。其设计于1935年进行了升级，加长了车体并换装了更强劲的发动机。该型号，即I号坦克B型，最终总计生产了675辆。其标准武器威力有限，一些地区的该型号坦克进行了升级，以容纳20毫米火炮。"
 
 msgid "PzI_short"
 msgstr "I号坦克"
@@ -4117,7 +4205,9 @@ msgid "PzVIB_Tiger_II_FL_short"
 msgstr "\"虎王\" FL"
 
 msgid "PzVIB_Tiger_II_F_descr"
-msgstr "?empty?"
+msgstr ""
+"\"虎王\"是战时装甲防护最坚固的坦克之一，配备当时最强劲的反坦克炮。其缺点包括负载过重的悬挂装置和引擎-"
+"传动组件，还有过大的战斗全重。远距离交战时，\"虎王\"在火炮和装甲防护方面几乎优于同时期的任何对手。然而，由于重量过大，发动机和传动系统的耐久度较低，而且产量较少，因此\"虎王\"并未对战事进程产生重大影响。"
 
 msgid "PzVIB_Tiger_II_F_short"
 msgstr "\"虎王\""
@@ -4157,7 +4247,7 @@ msgid "PzV_PzIV_CN"
 msgstr "V号黑豹"
 
 msgid "PzV_PzIV_CN_descr"
-msgstr "?empty?"
+msgstr "该坦克以\"黑豹\"装甲抢救车和IV号坦克炮塔为基础，由第653重型坦克歼击营的维修连生产。"
 
 msgid "PzV_PzIV_CN_short"
 msgstr "V号黑豹"
@@ -4169,19 +4259,19 @@ msgid "PzV_PzIV_ausf_Alfa_CN"
 msgstr "A号黑豹"
 
 msgid "PzV_PzIV_ausf_Alfa_CN_descr"
-msgstr "?empty?"
+msgstr "该坦克以\"黑豹\"装甲抢救车和IV号坦克炮塔为基础，由第653重型坦克歼击营的维修连生产。"
 
 msgid "PzV_PzIV_ausf_Alfa_CN_short"
 msgstr "A号黑豹"
 
 msgid "PzV_PzIV_ausf_Alfa_descr"
-msgstr "?empty?"
+msgstr "该坦克以\"黑豹\"装甲抢救车和IV号坦克炮塔为基础，由第653重型坦克歼击营的维修连生产。"
 
 msgid "PzV_PzIV_ausf_Alfa_short"
 msgstr "V-IV试验型坦克"
 
 msgid "PzV_PzIV_descr"
-msgstr "?empty?"
+msgstr "该坦克以\"黑豹\"装甲抢救车和IV号坦克炮塔为基础，由第653重型坦克歼击营的维修连生产。"
 
 msgid "PzV_PzIV_short"
 msgstr "V-IV号坦克"
@@ -4253,7 +4343,7 @@ msgid "S35_captured"
 msgstr "S35 739(f)"
 
 msgid "S35_captured_descr"
-msgstr "?empty?"
+msgstr "该F系坦克总计400辆，部分被D系陆军缴获，随后被用于训练及次要战线。"
 
 msgid "S35_captured_long_special"
 msgstr ""
@@ -4306,6 +4396,9 @@ msgstr "SEM 25F"
 
 msgid "SEM_25_funkgerat"
 msgstr "SEM 25"
+
+msgid "SEM_25_funkgerat_RKW"
+msgstr "SEM 25 RKW"
 
 msgid "SPA_19TB_mod_43_german"
 msgstr "SPA 19TBM42"
@@ -4362,7 +4455,7 @@ msgid "T-15"
 msgstr "T-15"
 
 msgid "T-15_descr"
-msgstr "?empty?"
+msgstr "这辆试验型轻型坦克于1941–1943年在斯柯达工厂研发，总计建造了5辆原型车。该坦克从未量产，也未服役。"
 
 msgid "T-15_long_special"
 msgstr "这辆坦克是同等级中最佳侦察坦克之一: 尺寸小，外加良好的速度、操控性、观察范围和通信距离。不过，该坦克火力不足，因此您应将重点放在侦察上。"
@@ -4377,7 +4470,7 @@ msgid "T-25"
 msgstr "T-25"
 
 msgid "T-25_descr"
-msgstr "?empty?"
+msgstr "T-25由斯柯达公司根据D系陆军发起的装甲发展计划而研发。仅存在于蓝图中。"
 
 msgid "T-25_long_special"
 msgstr "该坦克拥有相当不错的最大前进和倒车速度，但操控性较为平庸。其火炮具有良好的俯角、平均穿透力和射速。该坦克可用于高效训练D系中型坦克乘员。"
@@ -4689,6 +4782,9 @@ msgstr "V–4/40"
 msgid "Turret_1_G17_JagdPzIV"
 msgstr "IV号坦克歼击车"
 
+msgid "Turret_1_G183_Radkampfwagen"
+msgstr "RKW"
+
 msgid "Turret_1_G184_Windhund"
 msgstr "风猎者"
 
@@ -4835,6 +4931,9 @@ msgstr "IV WT 12.8cm炮型"
 
 msgid "Turret_1_G98_WT_auf_E_100_Phonix"
 msgstr "E-100 WT\"凤凰\""
+
+msgid "Turret_1_G98_Waffentrager_E100_CFE_T"
+msgstr "E-100 WT T"
 
 msgid "Turret_1_G98_Waffentrager_E100_P"
 msgstr "E-100 WT(P)"
@@ -5107,7 +5206,7 @@ msgid "VK7201"
 msgstr "VK7201"
 
 msgid "VK7201_descr"
-msgstr "?empty?"
+msgstr "一辆采用后置式炮塔的超重型坦克。由克虏伯公司研发。与VK7001相比，该新型坦克拥有更强劲的武器和更坚固的装甲。仅存在于蓝图中。"
 
 msgid "VK7201_short"
 msgstr "VK7201"
@@ -5128,7 +5227,7 @@ msgid "Waffentrager_E100"
 msgstr "E-100 WT"
 
 msgid "Waffentrager_E100_descr"
-msgstr "?empty?"
+msgstr "在E-100底盘上安装大口径高射炮的项目，计划使用带有弹夹装填系统的128毫米或150毫米火炮。战事的结束为其画上了终止符。"
 
 msgid "Waffentrager_E100_short"
 msgstr "E-100 WT"
@@ -5198,6 +5297,9 @@ msgstr "DM11 (A)"
 msgid "_105mm_DM11_Kurz"
 msgstr "DM11(短身管型)"
 
+msgid "_105mm_DM11_RKW"
+msgstr "DM11 RKW"
+
 msgid "_105mm_DM12"
 msgstr "DM12"
 
@@ -5206,6 +5308,9 @@ msgstr "DM12-20"
 
 msgid "_105mm_DM12_Kurz"
 msgstr "DM12(短身管型)"
+
+msgid "_105mm_DM12_RKW"
+msgstr "DM12 RKW"
 
 msgid "_105mm_DM13"
 msgstr "DM13"
@@ -5224,6 +5329,9 @@ msgstr "DM13 (A)"
 
 msgid "_105mm_DM13_Kurz"
 msgstr "DM13(短身管型)"
+
+msgid "_105mm_DM13_RKW"
+msgstr "DM13 RKW"
 
 msgid "_105mm_DM23"
 msgstr "DM23"
@@ -5279,6 +5387,9 @@ msgstr "Gr 39 Hl/A H型"
 msgid "_105mm_Gr_39_Hl_A_K"
 msgstr "Gr 39 Hl/A K"
 
+msgid "_105mm_Gr_39_Hl_A_K_7x7"
+msgstr "Gr 39 Hl/A K"
+
 msgid "_105mm_K18_L52"
 msgstr ""
 "10.5cm PaK 45\n"
@@ -5292,6 +5403,9 @@ msgstr "105mm炮"
 
 msgid "_105mm_Kanone_18"
 msgstr "10.5cm K 18 L/52炮"
+
+msgid "_105mm_Kanone_L7_RKW"
+msgstr "105mm L7 RKW炮"
 
 msgid "_105mm_KwK45_L52_N"
 msgstr "10.5cm KwK L/52炮 B型"
@@ -5446,6 +5560,9 @@ msgstr "Pzgr 40 (JP)"
 msgid "_105mm_Pzgr_40_K"
 msgstr "Pzgr 40 K"
 
+msgid "_105mm_Pzgr_40_K_7x7"
+msgstr "Pzgr 40 K"
+
 msgid "_105mm_Pzgr_40_rot_Emil"
 msgstr "Pzgr 40 rot (埃米尔)"
 
@@ -5480,6 +5597,9 @@ msgid "_105mm_Sprgr_18_G"
 msgstr "Sprgr 18 G"
 
 msgid "_105mm_Sprgr_18_K"
+msgstr "Sprgr 18 K"
+
+msgid "_105mm_Sprgr_18_K_7x7"
 msgstr "Sprgr 18 K"
 
 msgid "_105mm_Sprgr_45"
@@ -5534,6 +5654,9 @@ msgstr "10.5cm L7A3 坦克炮"
 
 msgid "_10WSc"
 msgstr "10WSc"
+
+msgid "_10WSc_CFE_T"
+msgstr "10WSc T"
 
 msgid "_10WSc_P"
 msgstr "10WSc P"
@@ -6034,6 +6157,9 @@ msgstr "Gr 39 Hl/C G (Rhm)"
 msgid "_150mm_Gr_39_Hl_C_G_WT_IV"
 msgstr "Gr 39 Hl/C G (IV WT)"
 
+msgid "_150mm_Gr_39_Hl_C_G_WT_IV_CFE_T"
+msgstr "Gr 39 Hl/C G (IV WT) T"
+
 msgid "_150mm_Gr_44_Hl_A"
 msgstr "Gr 44 Hl/A"
 
@@ -6054,6 +6180,9 @@ msgstr "15cm Pak L/29.5炮"
 
 msgid "_150mm_Pak_L_38"
 msgstr "15cm Pak L/38炮"
+
+msgid "_150mm_Pak_L_38_CFE_T"
+msgstr "15cm Pak L/38 T炮"
 
 msgid "_150mm_Pak_L_44"
 msgstr "15cm Pak L/44炮"
@@ -6078,6 +6207,9 @@ msgstr "Pzgr 42 (Rhm)"
 
 msgid "_150mm_Pzgr_42_WT_IV"
 msgstr "Pzgr 42 (IV WT)"
+
+msgid "_150mm_Pzgr_42_WT_IV_CFE_T"
+msgstr "Pzgr 42 (IV WT) T"
 
 msgid "_150mm_Pzgr_44"
 msgstr "Pzgr 44"
@@ -6123,6 +6255,9 @@ msgstr "Sprgr G 45 (Rhm)"
 
 msgid "_150mm_Sprgr_G_45_WT_IV"
 msgstr "Sprgr G 45 (IV WT)"
+
+msgid "_150mm_Sprgr_G_45_WT_IV_CFE_T"
+msgstr "Sprgr G 45 (IV WT) T"
 
 msgid "_150mm_Sprgr_G_Hummel"
 msgstr "Sprgr G (\"野蜂\")"

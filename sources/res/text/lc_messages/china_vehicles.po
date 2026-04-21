@@ -76,6 +76,9 @@ msgstr "阿姆斯特朗 西德利 V4"
 msgid "Armstrong_Siddeley_B"
 msgstr "阿姆斯特朗 西德利"
 
+msgid "CWT_165_1"
+msgstr "CWT-165-1"
+
 msgid "Ch00_ClingeBot_SH"
 msgstr "智械模块"
 
@@ -101,7 +104,8 @@ msgid "Ch01_Type59_Gold_short_special"
 msgstr "良好的火炮俯/仰角，可靠的装甲，独特的外观"
 
 msgid "Ch01_Type59_descr"
-msgstr "?empty?"
+msgstr ""
+"59式是一辆C系中型坦克。该坦克最初借鉴了S系中型坦克T-54A的设计，于1959年服役。首批下线的坦克没有安装火炮稳定器或夜视设备。之后该坦克经历了数次现代化改造。从1958年到1987年，所有型号共计生产了6000至9500辆。"
 
 msgid "Ch01_Type59_long_special"
 msgstr ""
@@ -114,7 +118,8 @@ msgid "Ch02_Type62"
 msgstr "62式"
 
 msgid "Ch02_Type62_descr"
-msgstr "?empty?"
+msgstr ""
+"59式坦克的轻量化版本，其研发始于1957年。这辆新型坦克专为在南方山区和沼泽地带作战而设计。首辆原型车于1962年下线。之后该坦克经历了数次现代化改造。"
 
 msgid "Ch02_Type62_long_special"
 msgstr ""
@@ -127,7 +132,8 @@ msgid "Ch03_WZ-111"
 msgstr "WZ111"
 
 msgid "Ch03_WZ-111_descr"
-msgstr "?empty?"
+msgstr ""
+"该重型坦克原型车以S系IS-2和IS-3坦克为基础，并受到T-10坦克的影响，研发工作始于20世纪60年代初。该坦克旨在实现C系装甲部队的现代化。测试中暴露了诸多缺陷，该坦克的研发工作于1964年被叫停。"
 
 msgid "Ch03_WZ-111_long_special"
 msgstr ""
@@ -140,7 +146,8 @@ msgid "Ch03_WZ_111_A"
 msgstr "WZ111 T型"
 
 msgid "Ch03_WZ_111_A_descr"
-msgstr "?empty?"
+msgstr ""
+"该重型坦克原型车以S系IS-2和IS-3坦克为基础，并受到T-10坦克的影响，研发工作始于20世纪60年代初。该坦克旨在实现C系装甲部队的现代化。测试中暴露了诸多缺陷，该坦克的研发工作于1964年被叫停。"
 
 msgid "Ch03_WZ_111_A_long_special"
 msgstr ""
@@ -228,7 +235,7 @@ msgid "Ch14_T34_3"
 msgstr "T-34-3"
 
 msgid "Ch14_T34_3_descr"
-msgstr "?empty?"
+msgstr "中型坦克T-34-3是T-34-2的改型。其设计于1957年完成。然而，由于59式坦克于1958年开始量产，T-34-3计划随之被叫停。"
 
 msgid "Ch14_T34_3_long_special"
 msgstr "T-34-3的炮塔拥有可靠的正面装甲。此外，得益于低矮的外形，该坦克的隐蔽性可圈可点。虽然火炮精度稍有不足，但每次击穿都能造成高额损伤。"
@@ -289,7 +296,8 @@ msgid "Ch22_113P"
 msgstr "113"
 
 msgid "Ch22_113P_descr"
-msgstr "?empty?"
+msgstr ""
+"113的研发工作始于1963年。该坦克作为WZ111的替代方案而设计，使用了中型坦克的零部件。然而，由于另一项主战坦克系列的研发工作优先级更高，该计划最终被取消。"
 
 msgid "Ch22_113P_long_special"
 msgstr "一辆C系X级重型坦克。其参数与特种坦克113相似：强大的机动，大角度倾斜的装甲，以及可观的每分钟损伤。"
@@ -301,7 +309,8 @@ msgid "Ch22_113_Beijing_Opera"
 msgstr "113 BO"
 
 msgid "Ch22_113_Beijing_Opera_descr"
-msgstr "?empty?"
+msgstr ""
+"113的研发工作始于1963年。该坦克作为WZ111的替代方案而设计，使用了中型坦克的零部件。然而，由于另一项主战坦克系列的研发工作优先级更高，该计划最终被取消。"
 
 msgid "Ch22_113_Beijing_Opera_long_special"
 msgstr "一辆拥有独特京剧风格外观的C系X级重型坦克。它的参数与特种坦克113相似：强大的机动，大倾角的装甲，以及可观的每分钟损伤。"
@@ -325,7 +334,7 @@ msgid "Ch23_112_FL_short"
 msgstr "112 FL"
 
 msgid "Ch23_112_descr"
-msgstr "?empty?"
+msgstr "112坦克的研发工作始于1962年。该计划采用中型和重型坦克的零部件。仅存在于蓝图中。113坦克是112的进一步研发成果。"
 
 msgid "Ch23_112_long_special"
 msgstr ""
@@ -348,7 +357,9 @@ msgid "Ch24_Type64_SH_short"
 msgstr "白狼"
 
 msgid "Ch24_Type64_descr"
-msgstr "?empty?"
+msgstr ""
+"该坦克共计生产了超过50辆。其所有基础零部件均基于M系坦克。采用M42防空坦克底盘，安装M18 "
+"\"地狱猫\"炮塔，武器则采用了久经考验的M1A2火炮。如今仅存一辆64式原型车。"
 
 msgid "Ch24_Type64_long_special"
 msgstr ""
@@ -378,7 +389,8 @@ msgid "Ch25_121_mod_1971B_MK_short_special"
 msgstr "良好的单发损伤和机动性，具有独特外观"
 
 msgid "Ch25_121_mod_1971B_descr"
-msgstr "?empty?"
+msgstr ""
+"121B是20世纪60年代研发的121中型坦克的升级型号。有别于原型车，121B装备了现代化的105毫米线膛炮、改进型悬挂装置和强化正面装甲。该改型还加装了红外探照灯和激光测距仪。其瞄准系统的射击精度优于59式。"
 
 msgid "Ch25_121_mod_1971B_long_special"
 msgstr "良好的火炮精度和完美的HE弹穿透力使它成为了一辆优秀的支援型坦克。然而它的装甲很薄弱，并不适合在前线作战。"
@@ -393,7 +405,8 @@ msgid "Ch26_59_Patton"
 msgstr "59-巴顿"
 
 msgid "Ch26_59_Patton_descr"
-msgstr "?empty?"
+msgstr ""
+"1960年后，C系启动了新型坦克的研发。工程试验中广泛借鉴了此前生产的59式坦克。其中一辆坦克上安装了M系M48A3坦克的炮塔、火炮和火控系统。"
 
 msgid "Ch26_59_Patton_long_special"
 msgstr "凭借出色的观察范围、良好的火炮和可靠的正面装甲，这辆中型坦克能高效作战。另一方面，请时刻留意其高大的外形和平庸的机动性。"
@@ -523,7 +536,7 @@ msgid "Ch39_WZ120_1G_FT_FL_short"
 msgstr "WZ120-1 FT FL"
 
 msgid "Ch39_WZ120_1G_FT_descr"
-msgstr "?empty?"
+msgstr "一辆自行反坦克炮的改型，以1959年服役的59式中型坦克(工厂代号WZ120)为基础。仅存在于蓝图中。"
 
 msgid "Ch39_WZ120_1G_FT_long_special"
 msgstr "出色的隐蔽性、可靠的倾斜装甲，提升了这辆自行反坦克炮的生存能力。虽然精度较为平庸，但其火炮的平均穿透力和射速均可圈可点。"
@@ -538,7 +551,8 @@ msgid "Ch40_WZ120G_FT"
 msgstr "WZ120G"
 
 msgid "Ch40_WZ120G_FT_descr"
-msgstr "?empty?"
+msgstr ""
+"该自行反坦克炮计划以C系WZ120中型坦克为基础。这辆新型坦克的研发工作始于20世纪60年代初。其设计要求与基础型号最大限度地实现零部件通用化。由于出现了其它更具前景的设计，该计划被叫停。"
 
 msgid "Ch40_WZ120G_FT_long_special"
 msgstr "一辆C系IX级自行反坦克炮，有着高额的每分钟损伤，优异的隐蔽和优秀的机动性。它会给敌人造成不少麻烦，但是需注意它平庸的精度和瞄准速度。"
@@ -568,7 +582,9 @@ msgid "Ch41_WZ_111_QL"
 msgstr "WZ111 QL"
 
 msgid "Ch41_WZ_111_QL_descr"
-msgstr "?empty?"
+msgstr ""
+"111工程的原型车，拥有经过强化的正面装甲和一门威力更强的火炮。它受到了古老祥瑞\"麒麟\"神力的庇佑。《礼记·礼运第九》中记载: "
+"\"麟、凤、龟、龙，谓之四灵。\"传说孔子也受到过麒麟神力的庇佑。现在，就让麒麟庇佑着您去夺取胜利吧！"
 
 msgid "Ch41_WZ_111_QL_long_special"
 msgstr ""
@@ -591,7 +607,9 @@ msgid "Ch42_WalkerBulldog_M41D"
 msgstr "M41D"
 
 msgid "Ch42_WalkerBulldog_M41D_descr"
-msgstr "?empty?"
+msgstr ""
+"M41D是C系以M系M41A3 \"斗牛犬\"坦克为基础而研发的改型。该坦克装备了DD "
+"8V-71T柴油发动机、一套现代化的火控系统、一门经过现代化改进的M32K1火炮，以及侧裙板。此外，该坦克还使用了一种新型弹药。共计50辆坦克接受了现代化改造。"
 
 msgid "Ch42_WalkerBulldog_M41D_long_special"
 msgstr ""
@@ -986,6 +1004,23 @@ msgstr ""
 msgid "Ch67_BZ_79_short"
 msgstr "BZ-79"
 
+msgid "Ch68_PGZ_70"
+msgstr "PGZ-70"
+
+msgid "Ch68_PGZ_70_descr"
+msgstr ""
+"一辆基于S系ZSU-57-2的57毫米履带式双管自行高炮，由第447军工厂为外贸而研发。有别于ZSU-57-2，该坦克使用了59式坦克的底盘，并适配了ZSU的炮塔。原型车测试表明该坦克具有强大的破坏力和火力，且操作和维护简单。尽管如此，该坦克从未投入量产。"
+
+msgid "Ch68_PGZ_70_long_special"
+msgstr ""
+"PGZ-70是一辆C系IX级支援型中型坦克，机动性出色，但装甲非常薄弱，配备一门类似J系轻型坦克线的自动炮。不过PGZ-70的火力更强，平均穿透力、平均单发损伤和弹夹损伤都更高。得益于此，该坦克能更稳定地输出损伤。"
+
+msgid "Ch68_PGZ_70_short"
+msgstr "PGZ-70"
+
+msgid "Ch68_PGZ_70_short_special"
+msgstr "自动炮，出色的机动性"
+
 msgid "Ch70_PTZ_78"
 msgstr "PTZ-78"
 
@@ -1310,6 +1345,9 @@ msgstr "自强"
 msgid "Chassis_Ch67_BZ_79"
 msgstr "BZ-79"
 
+msgid "Chassis_Ch68_PGZ_70"
+msgstr "PGZ-70"
+
 msgid "Continental_AOSI_895_5_Prem"
 msgstr "大陆 AOSI-895-5"
 
@@ -1604,6 +1642,9 @@ msgstr "自强"
 
 msgid "Turret_1_Ch67_BZ_79"
 msgstr "BZ-79"
+
+msgid "Turret_1_Ch68_PGZ_70"
+msgstr "PGZ-70"
 
 msgid "Turret_1_Ch70_PTZ_78"
 msgstr "PTZ-78"
@@ -2112,6 +2153,9 @@ msgstr "12150L (120)"
 
 msgid "_12150L_34_1"
 msgstr "12150L (34-1)"
+
+msgid "_12150L_70"
+msgstr "12150L-70"
 
 msgid "_122-mm_37-122JT"
 msgstr "122mm 37-122JT炮"
@@ -2727,6 +2771,9 @@ msgstr "穿钝-271"
 msgid "_57mm_AP_Type_97"
 msgstr "九二式"
 
+msgid "_57mm_Chuan_bei_PG70"
+msgstr "穿被 PG70"
+
 msgid "_57mm_Chuan_chao_271_34"
 msgstr "穿超-271 (34)"
 
@@ -2735,6 +2782,9 @@ msgstr "穿超-271 (59-16)"
 
 msgid "_57mm_Chuan_chao_271_76G"
 msgstr "穿超-271 (76G)"
+
+msgid "_57mm_Chuan_chao_PG70"
+msgstr "穿超 PG70"
 
 msgid "_57mm_Chuan_dun_271_34"
 msgstr "穿钝-271 (34)"
@@ -2757,6 +2807,9 @@ msgstr "高爆-271"
 msgid "_57mm_HE_Type_97"
 msgstr "九零式"
 
+msgid "_57mm_PG70_x2"
+msgstr "57mm PG70x2"
+
 msgid "_57mm_Sha_bao_271_34"
 msgstr "高爆-271 (34)"
 
@@ -2765,6 +2818,9 @@ msgstr "高爆-271 (59-16)"
 
 msgid "_57mm_Sha_bao_271_76G"
 msgstr "高爆-271 (76G)"
+
+msgid "_57mm_Sha_bao_PG70"
+msgstr "高爆 PG70"
 
 msgid "_57mm_ZiS_2"
 msgstr "57mm ZiS-2炮"

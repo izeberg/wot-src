@@ -51,6 +51,12 @@ msgstr ""
 msgid "battleMessenger/toxic/blackList/REMOVE_FROM_BLACKLIST/header"
 msgstr "显示来自玩家的信息"
 
+msgid "battleMessenger/w2gt/warning/gettingDataError"
+msgstr "检索战斗区域推荐数据时出现技术问题。"
+
+msgid "battleMessenger/w2gt/warning/noData"
+msgstr "该坦克的战斗区域推荐数据在此地图上不可用。"
+
 msgid "battleProgress/hint/description"
 msgstr "查看个人任务"
 
@@ -996,6 +1002,9 @@ msgstr "无法射击: 火炮过热。"
 msgid "player_errors/cant_shoot/gun_reload"
 msgstr "正在装填。"
 
+msgid "player_errors/cant_shoot/low_charge_shot_blocking"
+msgstr "正在完成装填。"
+
 msgid "player_errors/cant_shoot/no_ammo"
 msgstr "无法开炮:炮弹用尽。"
 
@@ -1467,6 +1476,9 @@ msgstr "%(target)s被击毁"
 
 msgid "player_messages/DEATH_FROM_SHOT_SELF_ENEMY_POI"
 msgstr "%(target)s被击毁"
+
+msgid "player_messages/DEATH_FROM_SHOT_UNKNOWN_ALLY"
+msgstr "敌方(未知)击毁了%(target)s。"
 
 msgid "player_messages/DEATH_FROM_STATIC_DEATH_ZONE_ALLY_SUICIDE"
 msgstr "盟友%(target)s被崩坏区域摧毁。"
@@ -2747,6 +2759,9 @@ msgstr "平均每秒损伤: %(value)s HP/秒"
 msgid "shells_kinds/params/explosionRadius"
 msgstr "损伤范围：%(value)s米"
 
+msgid "shells_kinds/params/header"
+msgstr "完全/应急补能"
+
 msgid "shells_kinds/params/piercingPower"
 msgstr "平均穿透力: %(value)s 毫米"
 
@@ -2794,6 +2809,9 @@ msgstr "切换射击模式"
 
 msgid "siegeMode/hint/wheeled"
 msgstr "切换机动模式"
+
+msgid "siegeMode/hint/wheeledDash"
+msgstr "激活涡轮增压"
 
 msgid "spotted/indicator"
 msgstr "可见时长延长，受到的损伤提高"

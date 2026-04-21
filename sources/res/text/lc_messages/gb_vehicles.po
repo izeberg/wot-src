@@ -405,14 +405,23 @@ msgstr "M2A4"
 msgid "Chassis_GB150_Churchill_VII_G"
 msgstr "\"丘吉尔\" St.G"
 
+msgid "Chassis_GB151_Headshaker"
+msgstr "撼首者"
+
 msgid "Chassis_GB152_AT_FV230_Breaker"
 msgstr "AT-FV230 \"破碎者\""
+
+msgid "Chassis_GB155_Pike"
+msgstr "长矛"
 
 msgid "Chassis_GB156_Black_Prince_II"
 msgstr "\"黑亲王\" II"
 
 msgid "Chassis_GB157_FV214t"
 msgstr "FV214t"
+
+msgid "Chassis_GB158_Executor"
+msgstr "执行者"
 
 msgid "Chassis_GB15_Stuart_I"
 msgstr "\"斯图亚特\"I型"
@@ -726,6 +735,9 @@ msgstr "司事 I"
 msgid "Chrysler_A57_multibank"
 msgstr "克莱斯勒 A57多排式"
 
+msgid "Clansman_VRC_353"
+msgstr "克兰斯曼 VRC 353"
+
 msgid "Continental_AOI-1195-5"
 msgstr "大陆 AOI-1195-5"
 
@@ -860,7 +872,9 @@ msgid "GB101_FV1066_Senlac"
 msgstr "FV1066 森拉克"
 
 msgid "GB101_FV1066_Senlac_descr"
-msgstr "?empty?"
+msgstr ""
+"FV1066 "
+"\"森拉克\"是20世纪60年代研发的轻型坦克改型。根据总参谋部的要求，该坦克应具有优于M系M24\"霞飞\"坦克的操控性与机动性。该计划采用了摇摆式炮塔。仅存在于蓝图中。"
 
 msgid "GB101_FV1066_Senlac_long_special"
 msgstr ""
@@ -903,7 +917,8 @@ msgid "GB105_Black_Prince_2019"
 msgstr "A43 BP原型"
 
 msgid "GB105_Black_Prince_2019_descr"
-msgstr "?empty?"
+msgstr ""
+"该坦克于1943年至1945年间在\"丘吉尔\"坦克的基础上研发。它采用更宽、更长的车体，以承载装有17磅炮的改进型炮塔。1944年至1945年间，总计生产了6辆A43原型车。部分坦克接受了测试，但从未参与实战。"
 
 msgid "GB105_Black_Prince_2019_long_special"
 msgstr ""
@@ -945,7 +960,10 @@ msgid "GB108_A46"
 msgstr "A46"
 
 msgid "GB108_A46_descr"
-msgstr "?empty?"
+msgstr ""
+"该坦克的研发工作始于1943年12月，并计划于1945年开始量产。该坦克旨在替换装甲团侦察部队使用的M系M3/M5 "
+"\"斯图亚特\"坦克，以及后来的M24'霞飞\"坦克。维克斯公司签下了协议，在MK VII \"领主\"L和A25 H.H. "
+"I坦克上试验过的一些技术方案被应用于该坦克的研发中。建造了一辆木制样车。然而在战事结束后，战术和技术要求发生了变化。后续研发工作在FV300计划下继续进行。"
 
 msgid "GB108_A46_long_special"
 msgstr ""
@@ -993,7 +1011,8 @@ msgid "GB10_Black_Prince"
 msgstr "A43"
 
 msgid "GB10_Black_Prince_descr"
-msgstr "?empty?"
+msgstr ""
+"该坦克于1943年至1945年间在\"丘吉尔\"坦克的基础上研发。它采用更宽、更长的车体，以承载装有17磅炮的改进型炮塔。1944年至1945年间，总计生产了6辆A43原型车。部分坦克接受了测试，但从未参与实战。"
 
 msgid "GB10_Black_Prince_short"
 msgstr "A43"
@@ -1288,7 +1307,7 @@ msgstr ""
 msgid "GB130_FV225_Collector_long_special"
 msgstr ""
 "FV225 "
-"收藏家是一辆Y系X级重型坦克，配备具有可选射击模式的110毫米双管火炮，每分钟可输出高额损伤。其定位为突破型重型坦克，兼具良好的机动性和正面装甲，但侧面防护较弱。"
+"收藏家是一辆Y系IX级重型坦克，得益于其110毫米双管火炮和可选射击模式机制，它拥有出色的平均每分钟损伤。其定位为突破型重型坦克，兼具良好的机动性和正面装甲，但侧面防护较弱。"
 
 msgid "GB130_FV225_Collector_short"
 msgstr "FV225 收藏家"
@@ -1422,7 +1441,7 @@ msgid "GB13_FV215b"
 msgstr "FV215b"
 
 msgid "GB13_FV215b_descr"
-msgstr "?empty?"
+msgstr "一项基于征服者 Mk.II的重型坦克计划。与量产型号不同，该改型采用了战斗室后置的布局。从未投入生产或服役。"
 
 msgid "GB13_FV215b_long_special"
 msgstr ""
@@ -1589,6 +1608,23 @@ msgstr "\"丘吉尔\" St.G"
 msgid "GB150_Churchill_VII_A_short_special"
 msgstr "高额的平均每分钟损伤，良好的装甲"
 
+msgid "GB151_Headshaker"
+msgstr "撼首者"
+
+msgid "GB151_Headshaker_descr"
+msgstr ""
+"随着武器威力的增强，经典的自行反坦克炮战斗室配置已无法满足当代需求，因此催生了采用全新布局的坦克研发方案。自行反坦克炮撼首者就是计划之一，它配备了双向旋转载人炮塔。将支撑和旋转机构置于战斗室上部，可以显著降低坦克外形，并使用一门射界较宽的强劲火炮。另一个重要特点是带有肋状散热元件的冷却系统，提高了火炮的可靠性。然而，尽管有诸多优点，该计划最终因其复杂性和高昂的生产成本而被终止。"
+
+msgid "GB151_Headshaker_long_special"
+msgstr ""
+"撼首者是一辆Y系IX级全能型自行反坦克炮。它独特地结合了高穿透力的HE炮弹和双重瞄准系统。火炮冷却系统使该坦克能够进行精准的远程射击，而良好的平均每分钟损伤和不俗的装甲则使其能够高效地展开近距离缠斗。"
+
+msgid "GB151_Headshaker_short"
+msgstr "撼首者"
+
+msgid "GB151_Headshaker_short_special"
+msgstr "高穿透力的HE炮弹，双重瞄准系统"
+
 msgid "GB152_AT_FV230_Breaker"
 msgstr "AT-FV230 \"破碎者\""
 
@@ -1604,6 +1640,23 @@ msgstr ""
 
 msgid "GB152_AT_FV230_Breaker_short"
 msgstr "AT-FV230 \"破碎者\""
+
+msgid "GB155_Pike"
+msgstr "长矛"
+
+msgid "GB155_Pike_descr"
+msgstr ""
+"重型坦克长矛专为驻莱茵河的Y系陆军而设计。它结合了FV229岸防坦克的底盘和一辆未投产的D系重型坦克的炮塔，并配备一门强劲的火炮。它最初是为了对抗S系重型坦克IS-3而研发。由于Y系和D系公司之间合作不畅，研发工作严重滞后。最终，Y系坦克征服者被全面列装，而坦克长矛则仅停留在草案阶段。"
+
+msgid "GB155_Pike_long_special"
+msgstr ""
+"长矛是一辆Y系IX级重型坦克。它配备一门3连发弹夹炮，可造成高额的平均单发损伤。再加上可靠的车体和炮塔装甲，使得长矛在阵地战中极具威胁性。虽然其火炮手感略有不足，但精度良好。"
+
+msgid "GB155_Pike_short"
+msgstr "长矛"
+
+msgid "GB155_Pike_short_special"
+msgstr "可靠的车体和炮塔装甲，弹夹炮"
 
 msgid "GB156_Black_Prince_II"
 msgstr "\"黑亲王\" II"
@@ -1637,6 +1690,20 @@ msgstr "FV214t"
 
 msgid "GB157_FV214t_short_special"
 msgstr "出色的火炮手感，可靠的炮塔正面装甲"
+
+msgid "GB158_Executor"
+msgstr "执行者"
+
+msgid "GB158_Executor_descr"
+msgstr ""
+"一项四轴坦克计划，具有更强的机动性，并配备一门110毫米火炮。尽管该计划与已服役的其他坦克进行了部分军备统一，但为了支持更传统的坦克方案，该研发计划在蓝图阶段被终止。"
+
+msgid "GB158_Executor_long_special"
+msgstr ""
+"执行者结合了轮式底盘、精密的大功率发动机和出色的武器，是Y系轮式中型坦克的巅峰之作。尖端的工程技术确保它能抵达战场上的任意点位，而其火炮则能对所有可能遭遇的敌人造成可观损伤。"
+
+msgid "GB158_Executor_short"
+msgstr "执行者"
 
 msgid "GB15_Stuart_I"
 msgstr "\"斯图亚特\" I-IV"
@@ -1777,7 +1844,8 @@ msgid "GB33_Sentinel_AC_I"
 msgstr "哨兵 AC I"
 
 msgid "GB33_Sentinel_AC_I_descr"
-msgstr "?empty?"
+msgstr ""
+"该坦克于1941年在巡航坦克计划下研发，曾计划生产2000辆，但在1942年至1943年间，仅生产了65辆，序列号从8001到8065。1943年7月，军方决定停止研发并取消该计划。这些坦克从未参与实战，仅用于训练目的。坦克于1946年退役。"
 
 msgid "GB33_Sentinel_AC_I_long_special"
 msgstr "一辆Y系IV级中型坦克，有着高射速，良好的火炮俯/仰角，以及出色的最大速度。由于单发损伤低且瞄准速度慢，它无法快速击毁所有目标。"
@@ -1792,7 +1860,9 @@ msgid "GB35_Sentinel_AC_IV"
 msgstr "哨兵 AC IV"
 
 msgid "GB35_Sentinel_AC_IV_descr"
-msgstr "?empty?"
+msgstr ""
+"该坦克于1943年研发，并收到了400辆坦克的订单。原型车在AC 1坦克的基础上建造，采用了扩大的上层结构，从而可以安装AC "
+"3坦克的改进型炮塔和一门17磅炮。1943年7月，由于巡航坦克计划被终止，该计划的相关工作在最终阶段被叫停。"
 
 msgid "GB35_Sentinel_AC_IV_long_special"
 msgstr ""
@@ -1876,7 +1946,9 @@ msgid "GB48_FV215b_183"
 msgstr "FV215b (183)"
 
 msgid "GB48_FV215b_183_descr"
-msgstr "?empty?"
+msgstr ""
+"一项基于征服者 "
+"Mk.II的重型自行反坦克炮研发计划，配备一门183毫米火炮，并采用后置式可旋转炮塔和战斗室。该坦克设计初衷是为了从远距离(最远1829米)消灭S系重型坦克，理论上可以抵挡500米距离外122毫米火炮的回击。在193毫米\"马尔卡拉\"反坦克火箭研发成功后，对于消灭IS系列坦克而言，后者成为更廉价、更高效的选择，这辆坦克遂失去了其存在的意义。建造样车后不久，该计划被取消。"
 
 msgid "GB48_FV215b_183_long_special"
 msgstr "一辆Y系X级自行反坦克炮，其HE炮弹拥有毁灭性的单发损伤。虽然对任何坦克都能形成巨大威胁，但是它的瞄准时间较长，且精度欠佳。"
@@ -1900,7 +1972,8 @@ msgid "GB51_Excelsior"
 msgstr "A33\"奋进\""
 
 msgid "GB51_Excelsior_descr"
-msgstr "?empty?"
+msgstr ""
+"一辆基于\"克伦威尔\"底盘的试验型突击坦克。旨在替换步兵坦克和巡洋坦克。研发工作始于1942年，Y系电气公司在1943至1944年间制造了两辆名为A33\"奋进\"的原型车。试验结束后，由于军方更倾向于已经研发成功的\"丘吉尔\"坦克，该计划被终止。"
 
 msgid "GB51_Excelsior_long_special"
 msgstr "凭借良好的机动性和较高的射速，该坦克可与任何中型坦克盟友高效配合。此外，坚固的正面装甲也提高了其生存能力。"
@@ -1912,7 +1985,9 @@ msgid "GB52_A45"
 msgstr "FV201(A45)"
 
 msgid "GB52_A45_descr"
-msgstr "?empty?"
+msgstr ""
+"由Y系电气公司于1944年开始研发此坦克，作为可能替代A43的潜力项目之一。部分组件与A41百夫长通用。于1948年开始了一辆原型车的试验。该原型车安装了百夫长"
+" Mk.II炮塔和一门17磅炮。由于装甲部队的政策和理念发生变化，研发工作未能继续。然而，该设计后来成为数款战后重型坦克的基础。"
 
 msgid "GB52_A45_long_special"
 msgstr ""
@@ -1961,7 +2036,9 @@ msgid "GB63_TOG_II"
 msgstr "TOG II"
 
 msgid "GB63_TOG_II_descr"
-msgstr "?empty?"
+msgstr ""
+"该坦克专为堑壕战而研发。最初，武器计划安装在车体前部和侧面炮座中。后改为安装炮塔，放弃炮座设计。到1943年，当TOG "
+"II下线并准备进行测试时，设计已经过时。该坦克从未服役。"
 
 msgid "GB63_TOG_II_long_special"
 msgstr ""
@@ -1974,7 +2051,7 @@ msgid "GB68_Matilda_Black_Prince"
 msgstr "\"玛蒂尔达\" 黑亲王"
 
 msgid "GB68_Matilda_Black_Prince_descr"
-msgstr "?empty?"
+msgstr "该坦克在A27炮塔中安装了一门6磅炮。仅生产了一辆原型车，之后由于炮塔安装存在问题，研发工作被叫停。该坦克从未服役。"
 
 msgid "GB68_Matilda_Black_Prince_long_special"
 msgstr "高射速的火炮、坚固的装甲弥补了该坦克机动性的不足，使其更符合重型坦克定位，而非中型坦克。这辆坦克非常适合用来为冲锋陷阵的重型坦克提供支援。"
@@ -2013,7 +2090,9 @@ msgid "GB70_N_FV4202_105_FL_short"
 msgstr "FV4202 FL"
 
 msgid "GB70_N_FV4202_105_descr"
-msgstr "?empty?"
+msgstr ""
+"FV4202是一辆试验型坦克，以百夫长中坦为基础，于1956年至1959年间研发。从未投入量产。该坦克所使用的技术创新后来被重新应用到FV4201 "
+"\"酋长\"坦克上。"
 
 msgid "GB70_N_FV4202_105_long_special"
 msgstr "虽然这辆中型坦克机动性并不突出，但它拥有固若金汤的炮塔，炮塔中还安装了一门近乎完美的火炮。"
@@ -2022,13 +2101,13 @@ msgid "GB70_N_FV4202_105_short"
 msgstr "FV4202"
 
 msgid "GB70_N_FV4202_105_short_special"
-msgstr "?empty?"
+msgstr "穿透力出色的良好火炮、优秀的观察范围和可靠的炮塔装甲"
 
 msgid "GB71_AT_15A"
 msgstr "AT 15A"
 
 msgid "GB71_AT_15A_descr"
-msgstr "?empty?"
+msgstr "为突破敌方防御工事而设计的突击坦克。设计于1943年10月5日完成。未建造原型车。然而，该计划成为了A39\"土龟\"重型突击坦克的基础。"
 
 msgid "GB71_AT_15A_long_special"
 msgstr "这辆自行反坦克炮拥有近乎完美的装甲，并配备了一门高射速、射界良好的精准火炮。但较慢的移动速度导致该坦克容易受到自行火炮的攻击。"
@@ -2089,7 +2168,9 @@ msgid "GB78_Sexton_I"
 msgstr "司事 I"
 
 msgid "GB78_Sexton_I_descr"
-msgstr "?empty?"
+msgstr ""
+"1943年，蒙特利尔机车厂开始量产以\"公羊\"II为基础研发的司事自行火炮。该坦克与M7\"牧师\"类似，但装备了一门Y系25磅炮。截至1945年，总计生产了2150辆；首批125辆被命名为司事"
+" I。"
 
 msgid "GB78_Sexton_I_long_special"
 msgstr ""
@@ -2157,7 +2238,8 @@ msgid "GB85_Cromwell_Berlin"
 msgstr "\"克伦威尔\" B型"
 
 msgid "GB85_Cromwell_Berlin_descr"
-msgstr "?empty?"
+msgstr ""
+"这辆坦克因Y系第7装甲师而闻名，该师因在热带战场的战绩而被称为\"沙漠老鼠\"。然而，第7装甲师直到1944年返回Y系为诺曼底登陆做准备时才装备\"克伦威尔\"坦克。他们驾驶\"克伦威尔\"坦克一路凯歌，并最终参加了1945年9月7日举行的胜利大阅兵。"
 
 msgid "GB85_Cromwell_Berlin_long_special"
 msgstr ""
@@ -2199,7 +2281,8 @@ msgstr ""
 "云台列将耀汗青。"
 
 msgid "GB86_Centurion_Action_X_descr"
-msgstr "?empty?"
+msgstr ""
+"AX炮塔原计划用于百夫长坦克的后续改型。一座炮塔原型被安装在百夫长 Mk.VII的底盘上，另一座则用于弹道测试。装备AX炮塔的坦克从未投入量产或服役。"
 
 msgid "GB86_Centurion_Action_X_short"
 msgstr "百夫长 AX"
@@ -2208,7 +2291,7 @@ msgid "GB87_Chieftain_T95_turret"
 msgstr "酋长 T95"
 
 msgid "GB87_Chieftain_T95_turret_descr"
-msgstr "?empty?"
+msgstr "FV4201 酋长在设计上能够通过更换炮塔的方式，与M系T95坦克互换火炮。由于训练乘员掌握两套火炮系统存在诸多问题，该计划被终止。"
 
 msgid "GB87_Chieftain_T95_turret_long_special"
 msgstr ""
@@ -2224,7 +2307,9 @@ msgid "GB88_T95_Chieftain_turret"
 msgstr "T95 酋长"
 
 msgid "GB88_T95_Chieftain_turret_descr"
-msgstr "?empty?"
+msgstr ""
+"研发始于1954年9月，其许多部件与试验型原型车T96相似。在研发过程中，计划通过模块更换，使该坦克能与Y系FV4201 "
+"\"酋长\"坦克互换炮塔和火炮。由于训练车组人员掌握两套火炮火控系统存在困难，该计划被取消。"
 
 msgid "GB88_T95_Chieftain_turret_long_special"
 msgstr "一辆Y系X级重型坦克，有着精度和稳定性出色的火炮，优秀的俯/仰角，但生命值较低。适合支援重型坦克盟友，以及利用不规则地形作战。"
@@ -2272,7 +2357,7 @@ msgid "GB93_Caernarvon_AX"
 msgstr "卡那封 AX"
 
 msgid "GB93_Caernarvon_AX_descr"
-msgstr "?empty?"
+msgstr "由Y系电气公司在\"通用坦克\"概念(FV200)下设计的坦克的进一步研发成果。该计划最终被叫停，转而支持A41坦克(百夫长)。未制造原型车。"
 
 msgid "GB93_Caernarvon_AX_long_special"
 msgstr ""
@@ -2288,7 +2373,9 @@ msgid "GB94_Centurion_Mk5-1_RAAC"
 msgstr "百夫长 Mk.V RAAC"
 
 msgid "GB94_Centurion_Mk5-1_RAAC_descr"
-msgstr "?empty?"
+msgstr ""
+"Y系战后百夫长 "
+"Mk.V的衍生型号，改进了正面装甲、机枪，并配备了更强劲的发动机。该坦克后部增加了一个100加仑的装甲油箱，且未配备侧裙甲。该坦克曾在南部地区服役。"
 
 msgid "GB94_Centurion_Mk5-1_RAAC_long_special"
 msgstr ""
@@ -2304,7 +2391,9 @@ msgid "GB95_Ekins_Firefly_M4A4"
 msgstr "谢尔曼 \"萤火虫\""
 
 msgid "GB95_Ekins_Firefly_M4A4_descr"
-msgstr "?empty?"
+msgstr ""
+"Y系谢尔曼 "
+"\"萤火虫\"(第一北安普敦郡义勇骑兵团A中队)以S系城镇大卢基命名。1944年8月8日，Y系在西线树林边缘组织了一次伏击。\"谢尔曼\"的炮手乔·阿肯斯向移动中的\"虎\"式坦克开火，在12分钟内击毁了全部三辆D系坦克。事后发现，编号为007的坦克指挥官正是D系著名坦克王牌，人称\"黑男爵\"的米歇尔·魏特曼。然而，由于当时有多辆Y系坦克参与了战斗，因此至今仍不清楚究竟是谁击毁了魏特曼的坦克。"
 
 msgid "GB95_Ekins_Firefly_M4A4_long_special"
 msgstr ""
@@ -2320,7 +2409,7 @@ msgid "GB96_Excalibur"
 msgstr "圣剑"
 
 msgid "GB96_Excalibur_descr"
-msgstr "?empty?"
+msgstr "一项空降两栖自行反坦克炮计划。制造出了一辆全尺寸原型车，但后续研发工作被终止。"
 
 msgid "GB96_Excalibur_long_special"
 msgstr ""
@@ -2336,7 +2425,7 @@ msgid "GB97_Chimera"
 msgstr "奇美拉"
 
 msgid "GB97_Chimera_descr"
-msgstr "?empty?"
+msgstr "一项旨在对抗S系IS-3的Y系重型坦克计划。尽管采用了非标准方案和D系坦克制造技术，但该计划最终被终止，仅存在于蓝图中。"
 
 msgid "GB97_Chimera_long_special"
 msgstr ""
@@ -2353,7 +2442,9 @@ msgid "GB98_T95_FV4201_Chieftain"
 msgstr "T95/FV4201 酋长"
 
 msgid "GB98_T95_FV4201_Chieftain_descr"
-msgstr "?empty?"
+msgstr ""
+"Y系新型重型坦克的研发工作于1951年开始。该计划旨在实现FV4201 "
+"酋长和M系T95之间的武器互换(包括炮塔)。由于乘员训练问题，该计划被终止，因为坦克乘员必须同时具备操作两种不同的火炮和火控系统的能力。"
 
 msgid "GB98_T95_FV4201_Chieftain_long_special"
 msgstr ""
@@ -2369,7 +2460,8 @@ msgid "GB99_Turtle_Mk1"
 msgstr "\"土龟\" Mk.I"
 
 msgid "GB99_Turtle_Mk1_descr"
-msgstr "?empty?"
+msgstr ""
+"一辆为突破敌方防御工事而设计的突击坦克。研发始于1943年。其中一个由学生设计的方案被提交给了坦克技术学院(Y系，切特西)。仅存在于蓝图中。"
 
 msgid "GB99_Turtle_Mk1_long_special"
 msgstr ""
@@ -2458,6 +2550,12 @@ msgstr "2x 利兰 E164"
 
 msgid "Leyland_1A"
 msgstr "2x 利兰 E164"
+
+msgid "Leyland_L60F"
+msgstr "利兰 L60F"
+
+msgid "Leyland_L60_HPT_Dark_Morn"
+msgstr "利兰 L60 HPT \"暗晨\""
 
 msgid "Leyland_L60_No_4"
 msgstr "利兰 L60 NO.4 Mk.13A"
@@ -2964,6 +3062,9 @@ msgstr "罗·罗 流星 M120 (CGC)"
 msgid "Rolls_Royce_Meteor_M300"
 msgstr "罗·罗 流星 M300"
 
+msgid "Rolls_Royce_Meteor_MK_VIB"
+msgstr "罗·罗 流星 MK.VIB"
+
 msgid "Rolls_Royce_Meteor_Mark_IVB_900"
 msgstr "罗·罗 流星 Mk.IVB型(900)"
 
@@ -3083,6 +3184,9 @@ msgstr "流浪者陨石"
 msgid "SR_40_E"
 msgstr "SR 40 E"
 
+msgid "SR_C42F"
+msgstr "SR C42F"
+
 msgid "SR_C42H"
 msgstr "SR C42H"
 
@@ -3097,6 +3201,9 @@ msgstr "SR C42 B"
 
 msgid "SR_C42a"
 msgstr "SR C42a"
+
+msgid "SR_C45H"
+msgstr "SR C42H"
 
 msgid "Sunbeam_Amazon"
 msgstr "亚马逊-桑比姆"
@@ -3278,14 +3385,23 @@ msgstr "M2A1"
 msgid "Turret_1_GB150_Churchill_VII_G"
 msgstr "\"丘吉尔\" St.G"
 
+msgid "Turret_1_GB151_Headshaker"
+msgstr "撼首者"
+
 msgid "Turret_1_GB152_AT_FV230_Breaker"
 msgstr "\"海狸\""
+
+msgid "Turret_1_GB155_Pike"
+msgstr "长矛"
 
 msgid "Turret_1_GB156_Black_Prince_II"
 msgstr "\"黑亲王\" II"
 
 msgid "Turret_1_GB157_FV214t"
 msgstr "FV214t"
+
+msgid "Turret_1_GB158_Executor"
+msgstr "执行者"
 
 msgid "Turret_1_GB15_Stuart_I"
 msgstr "\"斯图亚特\" I"
@@ -3907,6 +4023,18 @@ msgstr "105mm MV HE"
 msgid "_105mm_SPH_M4_L23"
 msgstr "105mm M4炮"
 
+msgid "_110mm_HV_AP"
+msgstr "110mm HV AP"
+
+msgid "_110mm_HV_APDS"
+msgstr "110mm HV APCR"
+
+msgid "_110mm_HV_Gun"
+msgstr "110mm 高初速炮"
+
+msgid "_110mm_HV_HE"
+msgstr "110mm HV HE"
+
 msgid "_110mm_MK_1_HC_MBC"
 msgstr "HC Mk.1 MBC"
 
@@ -4137,6 +4265,18 @@ msgstr "OQF 123mm炮 Mk.1"
 
 msgid "_123mm_OQF_Mk_1B"
 msgstr "OQF 123mm炮 Mk.1B"
+
+msgid "_128_mm_Gun_L_50"
+msgstr "128mm L/50炮"
+
+msgid "_128mm_APDS_L1_4004F"
+msgstr "APDS L1 4004HF"
+
+msgid "_128mm_AP_L1_4004F"
+msgstr "AP L1 4004HF"
+
+msgid "_128mm_HESH_L1_4004F"
+msgstr "HESH L1 4004HF"
 
 msgid "_13pdr_Gun"
 msgstr "QF 13磅炮 Mk.III"
@@ -4884,6 +5024,18 @@ msgstr "HE 80磅 Mk.4 (207)"
 
 msgid "_5_5_in_HE_80_lb_Mk_4_CSP"
 msgstr "HE 80磅 Mk.4 (CSP)"
+
+msgid "_5_5_inch_AP_Mk_II"
+msgstr "AP Mk.II"
+
+msgid "_5_5_inch_AT_Gun_Mk_II"
+msgstr "5.5英寸 AT炮 Mk.II"
+
+msgid "_5_5_inch_HESH_Mk_II"
+msgstr "HESH Mk.II"
+
+msgid "_5_5_inch_HE_Mk_II"
+msgstr "HE Mk.II"
 
 msgid "_5_5inch_APC_Mk_5_SH"
 msgstr "APC Mk.5"

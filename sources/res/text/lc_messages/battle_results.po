@@ -549,10 +549,10 @@ msgid "common/vehicleState/dead0"
 msgstr "因射击被击毁"
 
 msgid "common/vehicleState/dead0_with_killername"
-msgstr "因射击被击毁({{killername}})"
+msgstr "因射击被击毁({{@ class $killerClass}}{{killername}}{{/}})"
 
 msgid "common/vehicleState/dead0_with_killername_and_clan"
-msgstr "因射击被击毁({{killername}}[{{clanTag}}])"
+msgstr "因射击被击毁({{@ class $killerClass}}{{killername}}[{{clanTag}}]{{/}})"
 
 msgid "common/vehicleState/dead1"
 msgstr "因起火被烧毁"
@@ -564,10 +564,10 @@ msgid "common/vehicleState/dead13"
 msgstr "被玩家的能力击毁"
 
 msgid "common/vehicleState/dead1_with_killername"
-msgstr "因起火被摧毁({{killername}})"
+msgstr "因起火被摧毁({{@ class $killerClass}}{{killername}}{{/}})"
 
 msgid "common/vehicleState/dead1_with_killername_and_clan"
-msgstr "因起火被摧毁({{killername}}[{{clanTag}}])"
+msgstr "因起火被摧毁({{@ class $killerClass}}{{killername}}[{{clanTag}}]{{/}})"
 
 msgid "common/vehicleState/dead2"
 msgstr "因撞击被撞毁"
@@ -579,10 +579,10 @@ msgid "common/vehicleState/dead29"
 msgstr "坠毁"
 
 msgid "common/vehicleState/dead2_with_killername"
-msgstr "因撞击被摧毁({{killername}})"
+msgstr "因撞击被摧毁({{@ class $killerClass}}{{killername}}{{/}})"
 
 msgid "common/vehicleState/dead2_with_killername_and_clan"
-msgstr "因撞击被摧毁({{killername}}[{{clanTag}}])"
+msgstr "因撞击被摧毁({{@ class $killerClass}}{{killername}}[{{clanTag}}]{{/}})"
 
 msgid "common/vehicleState/dead3"
 msgstr "坠毁"
@@ -591,19 +591,19 @@ msgid "common/vehicleState/dead30"
 msgstr "因射击被击毁"
 
 msgid "common/vehicleState/dead30_with_killername"
-msgstr "因射击被击毁({{killername}})"
+msgstr "因射击被击毁({{@ class $killerClass}}{{killername}}{{/}})"
 
 msgid "common/vehicleState/dead30_with_killername_and_clan"
-msgstr "因射击被击毁({{killername}}[{{clanTag}}])"
+msgstr "因射击被击毁({{@ class $killerClass}}{{killername}}[{{clanTag}}]{{/}})"
 
 msgid "common/vehicleState/dead35"
 msgstr "坠毁"
 
 msgid "common/vehicleState/dead3_with_killername"
-msgstr "坠毁({{killername}})"
+msgstr "坠毁({{@ class $killerClass}}{{killername}}{{/}})"
 
 msgid "common/vehicleState/dead3_with_killername_and_clan"
-msgstr "坠毁({{killername}}[{{clanTag}}])"
+msgstr "坠毁({{@ class $killerClass}}{{killername}}[{{clanTag}}]{{/}})"
 
 msgid "common/vehicleState/dead4"
 msgstr "因进入危险区域而毁坏"
@@ -612,10 +612,10 @@ msgid "common/vehicleState/dead5"
 msgstr "坦克溺水"
 
 msgid "common/vehicleState/dead5_with_killername"
-msgstr "坦克溺水({{killername}})"
+msgstr "坦克溺水({{@ class $killerClass}}{{killername}}{{/}})"
 
 msgid "common/vehicleState/dead5_with_killername_and_clan"
-msgstr "坦克溺水({{killername}}[{{clanTag}}])"
+msgstr "坦克溺水({{@ class $killerClass}}{{killername}}[{{clanTag}}]{{/}})"
 
 msgid "common/vehicleState/dead6"
 msgstr "被风暴击毁"
@@ -624,10 +624,10 @@ msgid "common/vehicleState/dead7"
 msgstr "因被推翻而被击毁"
 
 msgid "common/vehicleState/dead7_with_killername"
-msgstr "因翻车被摧毁({{killername}})"
+msgstr "因翻车被摧毁({{@ class $killerClass}}{{killername}}{{/}})"
 
 msgid "common/vehicleState/dead7_with_killername_and_clan"
-msgstr "因翻车被摧毁({{killername}}[{{clanTag}}])"
+msgstr "因翻车被摧毁({{@ class $killerClass}}{{killername}}[{{clanTag}}]{{/}})"
 
 msgid "common/vehicleState/prematureLeave"
 msgstr "在战斗结束之前退出"

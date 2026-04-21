@@ -1,4 +1,7 @@
+from __future__ import absolute_import
 from collections import defaultdict
+from future.utils import viewvalues
+from past.builtins import xrange
 import BigWorld, GUI
 from Math import Vector3, Matrix
 import math_utils
@@ -22,14 +25,14 @@ class DebugDrawEntity(BigWorld.Entity):
         self.__update()
 
     def onLeaveWorld(self):
-        for _, state in self.objectStates.iteritems():
+        for state in viewvalues(self.objectStates):
             for _, model, _ in state['models']:
                 BigWorld.delModel(model)
 
             for model, _, _ in state['3Dtexts']:
                 BigWorld.delModel(model)
 
-        for listOfModels in self.reuseModels.itervalues():
+        for listOfModels in viewvalues(self.reuseModels):
             for model, _ in listOfModels:
                 BigWorld.delModel(model)
 
@@ -92,7 +95,7 @@ class DebugDrawEntity(BigWorld.Entity):
                 obj = self.__create3DText(text['position'], text['text'], text['color'], text['textSize'])
                 state['3Dtexts'].append(obj)
 
-        for listOfModels in self.reuseModels.itervalues():
+        for listOfModels in viewvalues(self.reuseModels):
             for model, _ in listOfModels:
                 BigWorld.delModel(model)
 

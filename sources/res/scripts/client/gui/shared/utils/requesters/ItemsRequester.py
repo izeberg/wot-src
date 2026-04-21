@@ -31,6 +31,7 @@ from wg_async import wg_async, wg_await, distributeLoopOverTicks
 if TYPE_CHECKING:
     from typing import Optional, Dict, List
     import skeletons.gui.shared.utils.requesters as requesters
+    from disjoint_set import DisjointSet
     from gui.shared.gui_items.badge import Badge
     from gui.shared.gui_items.Tankman import Tankman
     from gui.shared.gui_items.Vehicle import Vehicle
@@ -141,6 +142,23 @@ class IntCDProtector(object):
 
     def isTriggered(self, intCD):
         return intCD not in self.__intCDs
+
+
+class SelectDistinctFilter(object):
+
+    def __init__(self, dsu):
+        self._dsu = dsu
+        self._filtered_roots = set()
+
+    def __call__(self, item):
+        root = self._dsu.getRoot(item)
+        if root is None:
+            return True
+        else:
+            if root in self._filtered_roots:
+                return False
+            self._filtered_roots.add(root)
+            return True
 
 
 class RequestCriteria(object):
@@ -353,7 +371,7 @@ class REQ_CRITERIA(object):
     class RECRUIT(object):
         ROLES = staticmethod(lambda roles=tankmen.ROLES: RequestCriteria(PredicateCondition(--- This code section failed: ---
 
- L. 612         0  LOAD_FAST             0  'item'
+ L. 635         0  LOAD_FAST             0  'item'
                 3  LOAD_ATTR             0  'getRoles'
                 6  CALL_FUNCTION_0       0  None
                 9  POP_JUMP_IF_FALSE    53  'to 53'
@@ -643,7 +661,7 @@ class ItemsRequester(IItemsRequester):
 
     def isSynced--- This code section failed: ---
 
- L.1074         0  LOAD_FAST             0  'self'
+ L.1097         0  LOAD_FAST             0  'self'
                 3  LOAD_ATTR             0  '__blueprints'
                 6  LOAD_CONST               None
                 9  COMPARE_OP            9  is-not
@@ -1130,8 +1148,8 @@ Parse error at or near `None' instruction at offset -1
     def freeTankmenBerthsCount(self):
         return self.stats.tankmenBerthsCount - self.tankmenInBarracksCount()
 
-    def getVehicles(self, criteria=REQ_CRITERIA.EMPTY):
-        return self.getItems(GUI_ITEM_TYPE.VEHICLE, criteria=criteria)
+    def getVehicles(self, criteria=REQ_CRITERIA.EMPTY, limit=None):
+        return self.getItems(GUI_ITEM_TYPE.VEHICLE, criteria=criteria, limit=limit)
 
     def getStyles(self, criteria=REQ_CRITERIA.EMPTY):
         return self.getItems(GUI_ITEM_TYPE.STYLE, criteria=criteria)

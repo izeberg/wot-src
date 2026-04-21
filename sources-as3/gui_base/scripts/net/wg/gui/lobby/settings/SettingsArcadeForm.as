@@ -219,11 +219,11 @@ package net.wg.gui.lobby.settings
                _loc6_ = _loc3_[_loc9_];
                _loc7_ = _loc4_[_loc9_] as SettingsControlProp;
                App.utils.asserter.assertNotNull(_loc7_," values[i] must be SettingsControlProp");
-               _loc8_ = !(_loc7_.current == null || _loc7_.readOnly);
                if(!this[_loc6_ + _loc7_.type])
                {
                   continue;
                }
+               _loc8_ = !(_loc7_.current == null || _loc7_.readOnly);
                switch(_loc7_.type)
                {
                   case SettingsConfigHelper.TYPE_SLIDER:

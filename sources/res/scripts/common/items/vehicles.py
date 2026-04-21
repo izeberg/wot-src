@@ -284,7 +284,8 @@ def vehicleAttributeFactors():
        'discreteDamageFactor': 1.0, 
        'gun/shotDispersionFactors/afterShot': 1.0, 
        'gun/extraReloadTime': 0.0, 
-       'gun/isExtraFullGunReload': False}
+       'gun/isExtraFullGunReload': False, 
+       'gun/needToAdjustPotentialDamage': False}
     return factors
 
 
@@ -531,6 +532,8 @@ class VehicleDescriptor(object):
     hasHydraulicChassis = property(lambda self: self.type.hasHydraulicChassis)
     hasCharge = property(lambda self: self.type.hasCharge)
     hasRocketAcceleration = property(lambda self: self.type.hasRocketAcceleration)
+    hasWheeledDash = property(lambda self: self.type.hasWheeledDash)
+    hasStagedJetBoosters = property(lambda self: self.type.hasStagedJetBoosters)
     hasBurst = property(lambda self: self.gun.burst != component_constants.DEFAULT_GUN_BURST)
     role = property(lambda self: self.type.role)
     isPitchHullAimingAvailable = property(lambda self: self.type.hullAimingParams['pitch']['isAvailable'])
@@ -551,6 +554,10 @@ class VehicleDescriptor(object):
     @property
     def isWheeledOnSpotRotation(self):
         return self.isWheeledVehicle and self.chassisCfg['isWheeledOnSpotRotation']
+
+    @property
+    def isWheeledOnMoveRotation(self):
+        return self.isWheeledVehicle and self.chassisCfg['isWheeledOnMoveRotation']
 
     @property
     def isTrackWithinTrack(self):
@@ -1942,7 +1949,8 @@ class VehicleType(object):
      'nationChangeGroupId', 'isCollectorVehicle', 'isPremium', 'hasTurboshaftEngine', 'hasHydraulicChassis',
      'hasSpeedometer', 'supplySlots', 'optDevsOverrides', 'postProgressionTree', 'postProgressionPricesOverrides',
      'customRoleSlotOptions', 'hasRocketAcceleration', 'rocketAccelerationParams', 'classTag', 'armorMaxHealth',
-     'visualScript', 'mechanicsParams', 'eliteByProgression', '__weakref__')
+     'visualScript', 'mechanicsParams', 'eliteByProgression', 'hasWheeledDash', 'hasStagedJetBoosters',
+     '__weakref__')
 
     def __init__(self, nationID, basicInfo, xmlPath, vehMode=VEHICLE_MODE.DEFAULT):
         self.name = basicInfo.name
@@ -1967,6 +1975,8 @@ class VehicleType(object):
         self.hasCharge = 'charger' in self.tags
         self.builtins = {t.split('_user')[0] for t in self.tags if t.startswith('builtin') if t.startswith('builtin')}
         self.hasRocketAcceleration = 'rocketAcceleration' in self.tags
+        self.hasWheeledDash = 'wheeledDash' in self.tags
+        self.hasStagedJetBoosters = 'stagedJetBoosters' in self.tags
         self.isCollectorVehicle = CollectorVehicleConsts.COLLECTOR_VEHICLES_TAG in self.tags
         self.isPremium = 'premium' in self.tags
         self.role = self.__getRoleFromTags() if self.level in ROLE_LEVELS else ROLE_TYPE.NOT_DEFINED
@@ -3409,6 +3419,15 @@ def makeOutfitCD(outfitData):
     return outfit
 
 
+def getShellByName(name, nation):
+    nationID = nations.INDICES.get(nation, None)
+    if nationID is None:
+        return
+    else:
+        shellID = g_cache.shellIDs(nationID).get(name, None)
+        return g_cache.shells(nationID).get(shellID, None)
+
+
 def _readComponents(xmlPath, reader, nationID, itemTypeID):
     section = ResMgr.openSection(xmlPath)
     if section is None:
@@ -4376,6 +4395,7 @@ def _xphysicsParseChassis(type, ctx, sec):
 def _xphysicsParseWheeledChassis(type, ctx, sec):
     res = _xphysicsParseChassis(type, ctx, sec)
     res['isWheeledOnSpotRotation'] = _xml.readBool(ctx, sec, 'isWheeledOnSpotRotation', False)
+    res['isWheeledOnMoveRotation'] = _xml.readBool(ctx, sec, 'isWheeledOnMoveRotation', False)
     axleCount = sec.readInt('axleCount', 5)
     res['axleSteeringAngles'], res['axleSteeringLockAngles'] = _readSteeringAngles(ctx, sec, axleCount, not res['isWheeledOnSpotRotation'])
     floatArrParams = (
@@ -4457,6 +4477,7 @@ def _xphysicsParseWheeledChassisClient(ctx, sec):
     res = _xphysicsParseChassisClient(ctx, sec)
     axleCount = sec.readInt('axleCount', 5)
     res['isWheeledOnSpotRotation'] = _xml.readBool(ctx, sec, 'isWheeledOnSpotRotation', False)
+    res['isWheeledOnMoveRotation'] = _xml.readBool(ctx, sec, 'isWheeledOnMoveRotation', False)
     res['axleSteeringAngles'], res['axleSteeringLockAngles'] = _readSteeringAngles(ctx, sec, axleCount, not res['isWheeledOnSpotRotation'])
     res['wheelRiseSpeed'] = _xml.readFloat(ctx, sec, 'wheelRiseSpeed', 0.0)
     res['burnout'] = {} if sec.has_key('burnout') else None
@@ -5660,7 +5681,8 @@ def _readShell(xmlCtx, section, name, nationID, shellTypeID, icons):
     effName = _xml.readNonEmptyString(xmlCtx, section, 'effects')
     effIdx = g_cache.shotEffectsIndexes.get(effName, component_constants.INVALID_EFFECT_INDEX)
     shell.effectsIndex = effIdx
-    prefabEffName = _readPrefabEffect(xmlCtx, section, 'prefabEffects', g_cache.defaultPrefabEffects.shot)
+    defaultPrefabEffName = g_cache.defaultPrefabEffects.shot.shellTypeEffects.get(kind, g_cache.defaultPrefabEffects.shot.default)
+    prefabEffName = _readPrefabEffect(xmlCtx, section, 'prefabEffects', defaultPrefabEffName)
     prefabEffIdx = g_cache.prefabEffects.shot.indexes.get(prefabEffName, component_constants.INVALID_EFFECT_INDEX)
     shell.prefabEffectsIndex = prefabEffIdx
     if effIdx == component_constants.INVALID_EFFECT_INDEX and prefabEffIdx == effIdx:

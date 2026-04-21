@@ -3990,7 +3990,7 @@
 		<isTracer>true</isTracer>
 		<effects>largeArmorPiercing</effects>
 		<damage>
-			<armor>400</armor>
+			<armor>430</armor>
 			<devices>165</devices>
 		</damage>
 		<normalizationAngle>5</normalizationAngle>
@@ -4007,7 +4007,7 @@
 		<isTracer>true</isTracer>
 		<effects>largeAPCR</effects>
 		<damage>
-			<armor>400</armor>
+			<armor>430</armor>
 			<devices>165</devices>
 		</damage>
 		<normalizationAngle>2</normalizationAngle>
@@ -4028,7 +4028,7 @@
 		<isTracer>true</isTracer>
 		<effects>largeHighExplosive</effects>
 		<damage>
-			<armor>515</armor>
+			<armor>520</armor>
 			<devices>165</devices>
 		</damage>
 		<armorSpalls>

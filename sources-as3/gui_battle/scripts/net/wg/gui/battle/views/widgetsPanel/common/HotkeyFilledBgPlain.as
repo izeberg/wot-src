@@ -8,7 +8,7 @@ package net.wg.gui.battle.views.widgetsPanel.common
    {
        
       
-      private var _disposed:Boolean = false;
+      private var _isDisposed:Boolean = false;
       
       private var _width:int = 0;
       
@@ -17,15 +17,23 @@ package net.wg.gui.battle.views.widgetsPanel.common
          super();
       }
       
-      public final function dispose() : void
+      protected function onDispose() : void
       {
-         this.onDispose();
-         this._disposed = true;
       }
       
-      public function isDisposed() : Boolean
+      public final function dispose() : void
       {
-         return this._disposed;
+         if(this._isDisposed)
+         {
+            return;
+         }
+         this.onDispose();
+         this._isDisposed = true;
+      }
+      
+      public final function isDisposed() : Boolean
+      {
+         return this._isDisposed;
       }
       
       public function setState(param1:String) : void
@@ -44,10 +52,6 @@ package net.wg.gui.battle.views.widgetsPanel.common
             this._width = param1;
             this.updateSize(param1);
          }
-      }
-      
-      protected function onDispose() : void
-      {
       }
       
       protected function updateSize(param1:int) : void

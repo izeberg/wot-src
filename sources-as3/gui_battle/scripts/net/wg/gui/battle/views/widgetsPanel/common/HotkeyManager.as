@@ -9,8 +9,6 @@ package net.wg.gui.battle.views.widgetsPanel.common
    
    public class HotkeyManager implements IDisposable
    {
-      
-      private static const HIDE_KEY_DURATION:int = 1000;
        
       
       private var _target:DisplayObjectContainer = null;
@@ -29,6 +27,8 @@ package net.wg.gui.battle.views.widgetsPanel.common
       
       private var _isAvailable:Boolean = true;
       
+      private var _isDisposed:Boolean = false;
+      
       public function HotkeyManager(param1:DisplayObjectContainer, param2:HotkeySettings)
       {
          this._hotKeys = new Dictionary();
@@ -37,18 +37,7 @@ package net.wg.gui.battle.views.widgetsPanel.common
          this._settings = param2;
       }
       
-      public function activateKey(param1:String) : void
-      {
-         if(!this._isAvailable && this.getHotKey(param1).isLongKey)
-         {
-            return;
-         }
-         this.onKeyPress(param1,Values.ZERO);
-         this.hideOtherKeys(param1);
-         this.hideKey(param1,HIDE_KEY_DURATION);
-      }
-      
-      public final function dispose() : void
+      protected function onDispose() : void
       {
          if(this._hotKeys)
          {
@@ -68,6 +57,32 @@ package net.wg.gui.battle.views.widgetsPanel.common
          this._target = null;
          this._settings.dispose();
          this._settings = null;
+      }
+      
+      public final function dispose() : void
+      {
+         if(this._isDisposed)
+         {
+            return;
+         }
+         this.onDispose();
+         this._isDisposed = true;
+      }
+      
+      public final function isDisposed() : Boolean
+      {
+         return this._isDisposed;
+      }
+      
+      public function activateKey(param1:String, param2:Number) : void
+      {
+         if(!this._isAvailable && this.getHotKey(param1).isLongKey)
+         {
+            return;
+         }
+         this.onKeyPress(param1,Values.ZERO);
+         this.hideOtherKeys(param1);
+         this.hideKey(param1,param2);
       }
       
       public function hideKey(param1:String, param2:Number) : void
@@ -108,11 +123,6 @@ package net.wg.gui.battle.views.widgetsPanel.common
          this.updateHotKeys();
          this.updateState(this._state);
          this.updateVisibility(this._visible);
-      }
-      
-      public function isDisposed() : Boolean
-      {
-         return false;
       }
       
       public function onKeyPress(param1:String, param2:Number) : void
@@ -202,12 +212,21 @@ package net.wg.gui.battle.views.widgetsPanel.common
          }
       }
       
-      public function showKeys() : void
+      public function showKeys(param1:Number) : void
       {
-         var _loc1_:Hotkey = null;
-         for each(_loc1_ in this._hotKeys)
+         var _loc2_:Hotkey = null;
+         for each(_loc2_ in this._hotKeys)
          {
-            _loc1_.show();
+            _loc2_.show(param1);
+         }
+      }
+      
+      public function hideKeys(param1:Number) : void
+      {
+         var _loc2_:Hotkey = null;
+         for each(_loc2_ in this._hotKeys)
+         {
+            _loc2_.hide(param1);
          }
       }
       

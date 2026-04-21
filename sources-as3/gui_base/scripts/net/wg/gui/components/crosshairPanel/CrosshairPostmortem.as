@@ -24,10 +24,6 @@ package net.wg.gui.components.crosshairPanel
       {
       }
       
-      public function set overheatIndicatorVisible(param1:Boolean) : void
-      {
-      }
-      
       public function autoloaderBoostUpdate(param1:BoostIndicatorStateParamsVO, param2:Number, param3:Boolean = false) : void
       {
       }
@@ -179,6 +175,10 @@ package net.wg.gui.components.crosshairPanel
       }
       
       public function set isUseFrameAnimation(param1:Boolean) : void
+      {
+      }
+      
+      public function set isUseAlternateZoomPosition(param1:Boolean) : void
       {
       }
       

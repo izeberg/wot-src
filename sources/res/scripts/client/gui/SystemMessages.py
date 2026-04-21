@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from collections import namedtuple
 from enumerations import Enumeration
 from gui.shared.money import Currency

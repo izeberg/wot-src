@@ -14,6 +14,36 @@ msgstr ""
 msgid "#PluralForms"
 msgstr "nplurals=1; plural=0;"
 
+msgid "prebattleTimer/ban/additionalInfo"
+msgstr "选择您想在本场战斗中排除的坦克"
+
+msgid "prebattleTimer/ban/header"
+msgstr "禁用投票阶段"
+
+msgid "prebattleTimer/info/readyBtn/label"
+msgstr "确认选择"
+
+msgid "prebattleTimer/info/readyBtn/tooltip/body"
+msgstr "您确认后无法再选择另外一辆坦克。"
+
+msgid "prebattleTimer/pick/header"
+msgstr "确认阶段"
+
+msgid "prebattleTimer/prepick/additionalInfo"
+msgstr "为该地图和您的团队阵容选择最合适的坦克"
+
+msgid "prebattleTimer/prepick/header"
+msgstr "坦克预选阶段"
+
+msgid "prebattleTimer/wait/additionalInfo"
+msgstr "选择最适合当前地图和您团队的坦克。"
+
+msgid "prebattleTimer/wait/header"
+msgstr "正在等待玩家..."
+
+msgid "prebattleTimer/wait/selectVehicle"
+msgstr "选择坦克"
+
 msgid "primeTimeView/endOfCycle"
 msgstr "%(server)s服务器上的阶段已结束"
 

@@ -1,7 +1,6 @@
 import itertools
 from collections import OrderedDict, namedtuple
-from typing import TYPE_CHECKING
-import SoundGroups
+import typing, SoundGroups
 from account_helpers.AccountSettings import AccountSettings, PERSONAL_MISSION_3
 from adisp import adisp_process
 from gui import GUI_SETTINGS
@@ -26,8 +25,10 @@ from shared_utils import findFirst
 from skeletons.account_helpers.settings_core import ISettingsCore
 from skeletons.gui.server_events import IEventsCache
 from skeletons.gui.shared import IItemsCache
-if TYPE_CHECKING:
+if typing.TYPE_CHECKING:
+    from typing import List, Tuple
     from gui.impl.lobby.personal_missions_30.personal_mission_constants import StageInfo
+    from gui.server_events.event_items import PMOperation
 ConditionsConfig = namedtuple('ConditionsConfig', 'maxProgressValue, allQuestsRequired, questsDetails')
 
 def isIntroShown(intro):
@@ -62,8 +63,12 @@ def isVehDetailInstalled(lastInstalledDetail, detail):
     return int(detail.rsplit(':')[(-1)]) <= lastInstalledDetail
 
 
+def _vehDetailsSortKey(vehDetail):
+    return int(vehDetail[0].rsplit(':')[(-1)])
+
+
 def getVehicleDetails(operation):
-    return sorted(tuple(operation.getVehDetails().items()), key=lambda vehDetail: int(vehDetail[0].rsplit(':')[(-1)]))
+    return sorted(operation.getVehDetails().items(), key=_vehDetailsSortKey)
 
 
 def firstUnclaimedOperation(operations):
@@ -91,6 +96,11 @@ def getMissionConfigData(mission):
 
 def getDetailNameByToken(token):
     return ('_').join(token.split(':')[2:])
+
+
+@dependency.replace_none_kwargs(eventsCache=IEventsCache)
+def getBranchSortedPmOperations(branchID, eventsCache=None):
+    return OrderedDict(sorted(eventsCache.getPersonalMissions().getOperationsForBranch(branchID).items()))
 
 
 @dependency.replace_none_kwargs(eventsCache=IEventsCache)
@@ -245,7 +255,7 @@ def setVideoOverlayOff():
 
 def isOperationAvailableByVehicles--- This code section failed: ---
 
- L. 302         0  LOAD_FAST             0  'operation'
+ L. 320         0  LOAD_FAST             0  'operation'
                 3  LOAD_ATTR             0  'getBranch'
                 6  CALL_FUNCTION_0       0  None
                 9  LOAD_GLOBAL           1  'PM_BRANCH'
@@ -265,7 +275,7 @@ def isOperationAvailableByVehicles--- This code section failed: ---
              49_0  COME_FROM            36  '36'
              49_1  COME_FROM            18  '18'
 
- L. 303        49  LOAD_FAST             0  'operation'
+ L. 321        49  LOAD_FAST             0  'operation'
                52  LOAD_ATTR             5  'hasRequiredVehicles'
                55  CALL_FUNCTION_0       0  None
                58  RETURN_VALUE     

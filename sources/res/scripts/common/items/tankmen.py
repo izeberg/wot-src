@@ -1158,12 +1158,18 @@ def makeTmanDescrByTmanData(tmanData):
     lastSkillLevel = tmanData.get('lastSkillLevel', MAX_SKILL_LEVEL)
     skills = tmanData.get('skills', [])
     freeSkills = tmanData.get('freeSkills', [])
+    rolesBonusSkills = tmanData.get('bonusSkills', {})
     skills = skills if skills is not None else []
     freeSkills = freeSkills if freeSkills is not None else []
+    rolesBonusSkills = rolesBonusSkills if rolesBonusSkills is not None else {}
+    bonusSkills = [ bonusSkill for bonusSkills in rolesBonusSkills.itervalues() for bonusSkill in bonusSkills ]
     __validateSkills(skills)
     __validateSkills(freeSkills)
+    __validateSkills(bonusSkills)
     if not set(skills).isdisjoint(set(freeSkills)):
         raise SoftException('Free skills and skills must be disjoint.')
+    if not set(skills + freeSkills).isdisjoint(set(bonusSkills)):
+        raise SoftException('Bonus skills and skills must be disjoint.')
     if len(freeSkills) > MAX_FREE_SKILLS_SIZE:
         raise SoftException('Free skills count is too big.')
     isFemale = tmanData.get('isFemale', False)
@@ -1213,7 +1219,7 @@ def makeTmanDescrByTmanData(tmanData):
     if role not in group.roles:
         raise SoftException(('Tankman, with nation = "{}"; isPremium = "{}" and groupID = {}, can\'t have role "{}". Available roles = {}').format(nations.NAMES[nationID], isPremium, groupID, role, group.rolesList))
     passport = (nationID, isPremium, isFemale, firstNameID, lastNameID, iconID)
-    tmanCompDescr = generateCompactDescr(passport, vehicleTypeID, role, skills=skills, lastSkillLevel=lastSkillLevel, freeSkills=freeSkills, initialXP=tmanData.get('freeXP', 0), skillsEfficiencyXP=skillsEfficiencyXP)
+    tmanCompDescr = generateCompactDescr(passport, vehicleTypeID, role, skills=skills, lastSkillLevel=lastSkillLevel, freeSkills=freeSkills, initialXP=tmanData.get('freeXP', 0), skillsEfficiencyXP=skillsEfficiencyXP, rolesBonusSkills=rolesBonusSkills)
     return tmanCompDescr
 
 

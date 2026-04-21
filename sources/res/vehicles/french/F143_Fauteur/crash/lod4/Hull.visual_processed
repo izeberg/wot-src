@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>nodes_01</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>HP_Fire_1</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 -0.040622 -3.184684</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Fire_2</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 -0.040622 2.322660</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_turretJoint</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.427840 0.397500</row3>
+				</transform>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_proxy</identifier>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<fx>shaders/std_effects/PBS_tank_crash.fx</fx>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/french/F143_Fauteur/Fauteur_proxy_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/french/F143_Fauteur/Fauteur_proxy_ANM.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/french/F143_Fauteur/Fauteur_proxy_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/french/F143_Fauteur/Fauteur_proxy_AO.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
+						crashTileMap
+						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.023694 -0.074504 -0.013148</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-1.910439 -1.159067 -4.105640</min>
+		<max>2.023736 0.675932 4.053234</max>
+	</boundingBox>
+	<geometrySize>5572</geometrySize>
+</root>

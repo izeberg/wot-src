@@ -507,6 +507,15 @@ msgid "advanced/HOLLOW_CHARGE"
 msgstr ""
 "虽然具有较高的穿透力，但在击中间隙装甲时将显著降低。HEAT炮弹只有在击穿坦克装甲时才会造成损伤。这种炮弹很少跳弹。该炮弹的穿透力不会因为飞行距离的增加而降低。"
 
+msgid "advanced/LOW_CHARGE_SHOT/fireMode"
+msgstr "一种特殊机制"
+
+msgid "advanced/LOW_CHARGE_SHOT/fireRate"
+msgstr "可提前开火"
+
+msgid "advanced/LOW_CHARGE_SHOT/footer"
+msgstr "坦克火炮的%(fireMode)s，%(fireRate)s，炮弹参数也会发生改变。"
+
 msgid "advanced/additionalInvisibilityDevice"
 msgstr "效果取决于坦克类型。它能增加坦克在静止和移动时的隐蔽系数。对主动侦察，以及在高风险位置的被动侦察都有帮助。"
 
@@ -7752,6 +7761,47 @@ msgstr "?empty?"
 msgid "notrecruitedtankman/onslaught_p4_4/label"
 msgstr "天梯战蝎狮赛年"
 
+msgid "notrecruitedtankman/onslaught_p5_1/desc"
+msgstr ""
+"亚历山大过着永不停歇的生活: "
+"极限跑步、挑战冬泳、突破障碍。他在战场上的作风也别无二致；凭借钢铁意志，他会冲锋陷阵，直到筋疲力尽。从记事起，他就喜欢拆解机器一探究竟，而且还拥有将一堆金属变成正常运作的系统的非凡能力。凭借前线士兵的纪律性和机械师的一丝不苟，他会检查每辆坦克的各个部件，因为他深知乘员的生命和前进的每一步都取决于此。"
+
+msgid "notrecruitedtankman/onslaught_p5_1/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/onslaught_p5_1/label"
+msgstr "天梯战巨龙赛年"
+
+msgid "notrecruitedtankman/onslaught_p5_2/desc"
+msgstr ""
+"娜塔莉亚是一名极具威胁性的狙击手，眼光敏锐，即使在瞄准目标时也能考虑全局。然而，她非凡的洞察力不仅限于枪法。令车组战友们惊叹不已的是，她能凭直觉洞悉人心、预判对方意图，在旁人尚未意识到抉择降临之前，便已做出正确决断。她果敢、无畏，素来沉默寡言，总是无声无息地投入战斗，但对手头任务有着近乎偏执的专注。"
+
+msgid "notrecruitedtankman/onslaught_p5_2/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/onslaught_p5_2/label"
+msgstr "天梯战巨龙赛年"
+
+msgid "notrecruitedtankman/onslaught_p5_3/desc"
+msgstr ""
+"阿莱斯嗜睡如命，几乎可以在任何地方小憩一会，无论是战壕泥地里，还是坦克车体上，甚至在发动机\"舒缓\"的轰鸣声中也能安然入眠。他食量也很大，任何一个口粮包都逃不过他的手掌。尽管偏爱安逸的生活，这名合群的大个子却是战场上令人生畏的斗士。激战正酣时，他总能用一句适时的笑话，让车组士气重燃。战斗之余，他珍惜与小女儿在一起的时光，这是他每次出任务必须活着回来的最大动力。"
+
+msgid "notrecruitedtankman/onslaught_p5_3/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/onslaught_p5_3/label"
+msgstr "天梯战巨龙赛年"
+
+msgid "notrecruitedtankman/onslaught_p5_4/desc"
+msgstr ""
+"欧根是科班出身的音乐人，擅长在混乱中寻找秩序。对他来说，任何挑战都是值得理解和掌握的，而非退避三舍之事，无论挑战看起来多么复杂。无穷的好奇心意味着，即使是最艰巨的任务，他也永远不会拒绝，但他绝不会鲁莽行事；他相信自己的直觉和临危不乱的冷静头脑，他会倾听、分析，然后在其他人犹豫不决时，随着战场的节奏而动。"
+
+msgid "notrecruitedtankman/onslaught_p5_4/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/onslaught_p5_4/label"
+msgstr "天梯战巨龙赛年"
+
 msgid "notrecruitedtankman/oow21_strategist_commander/desc"
 msgstr "一名\"老派\"军官。无情且谨慎，决策果断不鲁莽。他深知\"一招不慎满盘皆输\"。"
 
@@ -7832,6 +7882,16 @@ msgstr "独特车长"
 
 msgid "notrecruitedtankman/skillsTitle"
 msgstr "特长"
+
+msgid "notrecruitedtankman/southpawBoxer/desc"
+msgstr ""
+"因左撇子站姿，技艺高超的拳击手伦纳德·诺克斯被陪练伙伴们称为\"左撇子\"。在戴上第一副拳击手套之前，他就已经是一名军事历史爱好者。考虑到开始练习拳击时，他还需要踩着脚凳才能喝到健身房饮水机的水，这可真不简单。因此，作为对任何会发出砰、啪或重击声的东西都终生着迷的人，最终成为坦克车长也就不足为奇了。伦尼将拳击台的方寸之地换成了广阔的战场，在每场战斗中都发挥出超乎寻常的实力。"
+
+msgid "notrecruitedtankman/southpawBoxer/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/southpawBoxer/label"
+msgstr "?empty?"
 
 msgid "notrecruitedtankman/tankman/desc"
 msgstr "?empty?"
@@ -10084,6 +10144,9 @@ msgstr "在左栏输入昵称并选择所有目录进行搜索。"
 msgid "prebattle/nameFilterButton/header"
 msgstr "通过昵称搜索"
 
+msgid "prebattle/readyButton/vehiclesRequired3/body"
+msgstr "您必须拥有至少3辆符合该模式要求的坦克。请参阅\"关于天梯战\"页面了解详情。"
+
 msgid "prebattle/upButton/active"
 msgstr "将队列中的玩家移入团队"
 
@@ -11404,6 +11467,24 @@ msgstr "%(bold)s—当前火炮的默认炮弹。用于计算火炮参数和火�
 msgid "shell/basic/description/bold"
 msgstr "默认炮弹"
 
+msgid "shell/mechanics/lowChargeShot/description"
+msgstr "坦克火炮的一种特殊机制，可提前开火，炮弹参数也会发生改变。"
+
+msgid "shell/mechanics/lowChargeShot/description/affectedParams"
+msgstr "改变后的炮弹参数"
+
+msgid "shell/mechanics/lowChargeShot/description/specialMode"
+msgstr "特殊机制"
+
+msgid "shell/mechanics/lowChargeShot/infoBlock"
+msgstr "所有计算均使用基础参数。"
+
+msgid "shell/mechanics/lowChargeShot/paramsHeader/basic"
+msgstr "基础:"
+
+msgid "shell/mechanics/lowChargeShot/paramsHeader/specific"
+msgstr "改变后:"
+
 msgid "showArtyHitOnMap/body"
 msgstr "显示/隐藏小地图上敌方自行火炮的攻击覆盖区域。"
 
@@ -12149,6 +12230,24 @@ msgstr "激活离子喷射加力装置后获得的额外速度。"
 msgid "tank_params/desc/ionAfterburnerPassiveTurboCharge"
 msgstr "涡轮模式下，每秒生成的离子喷射加力装置充能数量。"
 
+msgid "tank_params/desc/lowChargeShotAvgDamage"
+msgstr "应急补能射击击穿后所造成的平均损伤。损伤浮动范围为平均值的±25%。"
+
+msgid "tank_params/desc/lowChargeShotBlockDuration"
+msgstr "完全装填前无法进行应急补能射击的时间。"
+
+msgid "tank_params/desc/lowChargeShotDispertion"
+msgstr "应急补能射击时的炮弹散布范围增加幅度，表现为100米距离时炮弹与瞄准点的最大偏差。"
+
+msgid "tank_params/desc/lowChargeShotPenetration"
+msgstr "应急补能射击的平均穿透力，已计入炮弹转正效应。穿透力浮动范围为平均值的±25%。"
+
+msgid "tank_params/desc/lowChargeShotRateOfFire"
+msgstr "应急补能射击时的射速提高幅度(与常规射击相比)。"
+
+msgid "tank_params/desc/lowChargeShotVelocity"
+msgstr "应急补能射击时的炮弹速度。"
+
 msgid "tank_params/desc/maxAccuracyLevel"
 msgstr "可累积的最大精度等级数量。"
 
@@ -12208,6 +12307,36 @@ msgstr "坦克从完全预热恢复到零所需的时间。"
 
 msgid "tank_params/desc/preheatTransitionDelay"
 msgstr "在该延迟期间，坦克预热将不会增加或减少。"
+
+msgid "tank_params/desc/propellantChargeLimit"
+msgstr "不关闭限制器情况下可达到的最大能量等级。"
+
+msgid "tank_params/desc/propellantChargeSpendingAfterShot"
+msgstr "射击后损失的能量。"
+
+msgid "tank_params/desc/propellantChargingPerSec"
+msgstr "每秒自动生成的能量。"
+
+msgid "tank_params/desc/propellantDischargingPerSec"
+msgstr "限制器激活后每秒损失的能量，直至达到限制。"
+
+msgid "tank_params/desc/propellantOverchargeSwitchCooldown"
+msgstr "再次开关限制器所需的延迟。"
+
+msgid "tank_params/desc/propellantPostLimitAimingTime"
+msgstr "超过上限时，对瞄准时间的惩罚。"
+
+msgid "tank_params/desc/propellantPostLimitDamageBonus"
+msgstr "超过上限时，充满能量状态下提供的平均损伤加成。"
+
+msgid "tank_params/desc/propellantPostLimitDamageSpike"
+msgstr "超过上限时，射击损伤的突然提高幅度。"
+
+msgid "tank_params/desc/propellantPostLimitDispersion"
+msgstr "超过上限时，对100米精度的惩罚。"
+
+msgid "tank_params/desc/propellantPreLimitDamageBonus"
+msgstr "限制器激活时，最大能量状态下提供的平均损伤加成。"
 
 msgid "tank_params/desc/radioDistance"
 msgstr ""
@@ -12394,6 +12523,27 @@ msgstr "齐射射击模式下的坦克速度。"
 
 msgid "tank_params/desc/vehicleWeight"
 msgstr "重量决定撞击的效果。"
+
+msgid "tank_params/desc/wheeledDashAbilityDuration"
+msgstr "激活后，机制效果的持续时间。"
+
+msgid "tank_params/desc/wheeledDashAbilityReloadTime"
+msgstr "使用后，再次激活机制所需的时间。"
+
+msgid "tank_params/desc/wheeledDashAbilityReloadTimeBonus"
+msgstr "达到速度阈值后机制冷却时间的缩短幅度。"
+
+msgid "tank_params/desc/wheeledDashEnginePower"
+msgstr "机制激活时提供的发动机功率提高幅度。"
+
+msgid "tank_params/desc/wheeledDashReverseSpeed"
+msgstr "机制提供的最大倒车速度加成。"
+
+msgid "tank_params/desc/wheeledDashSpeedLimits"
+msgstr "坦克为缩短机制冷却时间而必须达到的速度。"
+
+msgid "tank_params/desc/wheeledDashTopSpeed"
+msgstr "机制提供的最大前进速度加成。"
 
 msgid "tank_params/desc/wheeledSpeedModeSpeed"
 msgstr "快速模式的参数。"
@@ -13654,6 +13804,45 @@ msgstr "不适用于组队"
 
 msgid "vehicleStatus/willBeUnlockedInBattle/header"
 msgstr "在战斗中解锁"
+
+msgid "vehicleStatus/wot_plus_exclusive_vehicle_disabled/header"
+msgstr "不可用"
+
+msgid "w2gt/zone/ambush/body"
+msgstr "寻找掩护，等待敌人进入视野。"
+
+msgid "w2gt/zone/ambush/header"
+msgstr "伏击"
+
+msgid "w2gt/zone/artillery/body"
+msgstr "为最近侧翼的盟友提供火力支援。"
+
+msgid "w2gt/zone/artillery/header"
+msgstr "自行火炮"
+
+msgid "w2gt/zone/brawling/body"
+msgstr "在中近距离攻击敌人。"
+
+msgid "w2gt/zone/brawling/header"
+msgstr "近战"
+
+msgid "w2gt/zone/recon/body"
+msgstr "侦察敌方点位。"
+
+msgid "w2gt/zone/recon/header"
+msgstr "侦察"
+
+msgid "w2gt/zone/universal/body"
+msgstr "远距离打击暴露目标，近战时支援附近盟友。"
+
+msgid "w2gt/zone/universal/header"
+msgstr "通用"
+
+msgid "w2gtEnable/body"
+msgstr "在小地图上显示适合您坦克的战斗区域推荐。"
+
+msgid "w2gtEnable/header"
+msgstr "小地图战斗区域推荐"
 
 msgid "wallet/not_available_credits/body"
 msgstr ""

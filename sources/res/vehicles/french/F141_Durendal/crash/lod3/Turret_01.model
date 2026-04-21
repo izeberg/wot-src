@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/french/F141_Durendal/crash/lod3/Turret_01</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/french/F141_Durendal/crash/lod4/Turret_01</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.553210 -0.013875 -2.779227</min>
+		<max>1.530287 2.620717 1.550779</max>
+	</visibilityBox>
+</root>

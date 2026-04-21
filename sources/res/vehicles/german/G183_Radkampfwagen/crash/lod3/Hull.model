@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/german/G183_Radkampfwagen/crash/lod4/Hull</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.356590 -0.740251 -2.989270</min>
+		<max>1.321078 0.408849 3.385094</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/german/G183_Radkampfwagen/crash/lod3/Hull</nodefullVisual>
+	<tank>true</tank>
+</root>

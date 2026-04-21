@@ -215,6 +215,9 @@ msgstr "研发F系AS-XX&nbsp;40t(%(level)s级)中型坦克研发分支中的所�
 msgid "description/branch_france_F136_AMX_67_Imbattable"
 msgstr "研发F系AMX&nbsp;67&nbsp;\"无双\"(%(level)s级)重型坦克研发分支中的所有坦克"
 
+msgid "description/branch_france_F143_Fauteur"
+msgstr "研发F系庇护者(%(level)s级)重型坦克研发分支中的所有坦克"
+
 msgid "description/branch_france_F18_Bat_Chatillon25t"
 msgstr "研发F系查狄伦&nbsp;25t(%(level)s级)中型坦克研发分支中的所有坦克"
 
@@ -223,9 +226,6 @@ msgstr "研发F系查狄伦&nbsp;155(%(level)s级)自行火炮研发分支中的
 
 msgid "description/branch_france_F64_AMX_50Fosh_B"
 msgstr "研发F系AMX&nbsp;50&nbsp;福熙&nbsp;B(%(level)s级)自行反坦克炮研发分支中的所有坦克"
-
-msgid "description/branch_france_F82_AMX_M4_Mle1949_Ter"
-msgstr "研发F系AMX&nbsp;M4(1954)(%(level)s级)重型坦克研发分支中的所有坦克"
 
 msgid "description/branch_france_F88_AMX_13_105"
 msgstr "研发F系AMX&nbsp;13&nbsp;105(%(level)s级)轻型坦克研发分支中的所有坦克"
@@ -320,9 +320,6 @@ msgstr "研发V系Strv&nbsp;107-12(%(level)s级)自行反坦克炮研发分支�
 msgid "description/branch_uk_GB100_Manticore"
 msgstr "研发Y系曼蒂科尔(%(level)s级)轻型坦克研发分支中的所有坦克"
 
-msgid "description/branch_uk_GB120_Concept_No_5"
-msgstr "研发Y系5号概念车(%(level)s级)中型坦克研发分支中的所有坦克"
-
 msgid "description/branch_uk_GB142_FV230_Canopener"
 msgstr "研发Y系FV230 爆裂者(%(level)s级)重型坦克研发分支中的所有坦克"
 
@@ -331,6 +328,9 @@ msgstr "研发Y系FV4025&nbsp;谋划者(%(level)s级)重型坦克研发分支中
 
 msgid "description/branch_uk_GB152_AT_FV230_Breaker"
 msgstr "研发Y系AT-FV230&nbsp;\"破碎者\"(%(level)s级)自行反坦克炮研发分支中的所有坦克"
+
+msgid "description/branch_uk_GB158_Executor"
+msgstr "研发Y系执行者(%(level)s级)中型坦克研发分支中的所有坦克"
 
 msgid "description/branch_uk_GB31_Conqueror_Gun"
 msgstr "研发Y系征服者GC(%(level)s级)自行火炮研发分支中的所有坦克"
@@ -365,6 +365,9 @@ msgstr "研发M系XM69&nbsp;\"开拓者\"(%(level)s级)中型坦克研发分支�
 msgid "description/branch_usa_A191_Ares_90_C"
 msgstr "研发M系Ares 90 C(%(level)s级)中型坦克研发分支中的所有坦克"
 
+msgid "description/branch_usa_A195_Gorilla"
+msgstr "研发M系\"巨猿\"(%(level)s级)自行反坦克炮研发分支中的所有坦克"
+
 msgid "description/branch_usa_A38_T92"
 msgstr "研发M系T92(%(level)s级)自行火炮研发分支中的所有坦克"
 
@@ -373,9 +376,6 @@ msgstr "研发M系T57重型坦克(%(level)s级)重型坦克研发分支中的所
 
 msgid "description/branch_usa_A69_T110E5"
 msgstr "研发M系T110E5(%(level)s级)重型坦克研发分支中的所有坦克"
-
-msgid "description/branch_usa_A83_T110E4"
-msgstr "研发M系T110E4(%(level)s级)自行反坦克炮研发分支中的所有坦克"
 
 msgid "description/branch_usa_A85_T110E3"
 msgstr "研发M系T110E3(%(level)s级)自行反坦克炮研发分支中的所有坦克"
@@ -692,6 +692,9 @@ msgstr "Ares 85"
 msgid "name/A191_Ares_90_C"
 msgstr "Ares 90 C"
 
+msgid "name/A195_Gorilla"
+msgstr "\"巨猿\""
+
 msgid "name/A31_M36_Slagger"
 msgstr "M36 \"杰克逊\""
 
@@ -937,6 +940,9 @@ msgstr "AMX&nbsp;67&nbsp;\"无双\""
 
 msgid "name/F140_Fantome"
 msgstr "幻影"
+
+msgid "name/F143_Fauteur"
+msgstr "庇护者"
 
 msgid "name/F15_AMX_12t"
 msgstr "AMX&nbsp;12t"
@@ -1243,6 +1249,9 @@ msgstr "AT-FV230&nbsp;\"破碎者\""
 
 msgid "name/GB156_Black_Prince_II"
 msgstr "\"黑亲王\" II"
+
+msgid "name/GB158_Executor"
+msgstr "执行者"
 
 msgid "name/GB20_Crusader"
 msgstr "十字军"
@@ -1766,6 +1775,9 @@ msgstr "F系: AS-XX&nbsp;40t"
 msgid "name/branch_france_F136_AMX_67_Imbattable"
 msgstr "F系: AMX&nbsp;67&nbsp;\"无双\""
 
+msgid "name/branch_france_F143_Fauteur"
+msgstr "F系: 庇护者"
+
 msgid "name/branch_france_F18_Bat_Chatillon25t"
 msgstr "F系:&nbsp;查狄伦&nbsp;25t"
 
@@ -1774,9 +1786,6 @@ msgstr "F系: 查狄伦&nbsp;155"
 
 msgid "name/branch_france_F64_AMX_50Fosh_B"
 msgstr "F系: AMX&nbsp;50 福熙&nbsp;B"
-
-msgid "name/branch_france_F82_AMX_M4_Mle1949_Ter"
-msgstr "F系:&nbsp;AMX&nbsp;M4(1954)"
 
 msgid "name/branch_france_F88_AMX_13_105"
 msgstr "F系: AMX&nbsp;13&nbsp;105"
@@ -1871,9 +1880,6 @@ msgstr "V系: Strv&nbsp;107-12"
 msgid "name/branch_uk_GB100_Manticore"
 msgstr "Y系: 曼蒂科尔"
 
-msgid "name/branch_uk_GB120_Concept_No_5"
-msgstr "Y系:&nbsp;5号概念车"
-
 msgid "name/branch_uk_GB142_FV230_Canopener"
 msgstr "Y系: FV230&nbsp;爆裂者"
 
@@ -1882,6 +1888,9 @@ msgstr "Y系: FV4025&nbsp;谋划者"
 
 msgid "name/branch_uk_GB152_AT_FV230_Breaker"
 msgstr "Y系: AT-FV230&nbsp;\"破碎者\""
+
+msgid "name/branch_uk_GB158_Executor"
+msgstr "Y系: 执行者"
 
 msgid "name/branch_uk_GB31_Conqueror_Gun"
 msgstr "Y系: 征服者GC"
@@ -1916,6 +1925,9 @@ msgstr "M系: XM69&nbsp;\"开拓者\""
 msgid "name/branch_usa_A191_Ares_90_C"
 msgstr "M系: Ares 90 C"
 
+msgid "name/branch_usa_A195_Gorilla"
+msgstr "M系: \"巨猿\""
+
 msgid "name/branch_usa_A38_T92"
 msgstr "M系:&nbsp;T92"
 
@@ -1924,9 +1936,6 @@ msgstr "M系: T57重型坦克"
 
 msgid "name/branch_usa_A69_T110E5"
 msgstr "M系: T110E5"
-
-msgid "name/branch_usa_A83_T110E4"
-msgstr "M系: T110E4"
 
 msgid "name/branch_usa_A85_T110E3"
 msgstr "M系: T110E3"

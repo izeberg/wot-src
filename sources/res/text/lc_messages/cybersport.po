@@ -477,6 +477,9 @@ msgstr "坦克未做好战斗准备: 乘员不足。"
 msgid "window/unit/message/vehicleInNotReady/isInBattle"
 msgstr "坦克在战斗中"
 
+msgid "window/unit/message/vehicleInNotReady/notEnoughVehicles"
+msgstr "符合要求的坦克数量不足"
+
 msgid "window/unit/message/vehicleInNotReady/rentIsOver"
 msgstr "坦克未做好战斗准备: 租期已结束。"
 

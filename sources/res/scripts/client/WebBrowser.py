@@ -1,5 +1,8 @@
-import weakref, urlparse, functools, logging
+from __future__ import absolute_import
+import weakref, functools, logging
+from builtins import zip
 from enum import Enum
+from future.moves.urllib import parse
 import BigWorld, Keys, SoundGroups, Settings
 from gui.shared import event_dispatcher
 from Event import Event, EventManager
@@ -354,7 +357,6 @@ class WebBrowser(object):
             self.__onLoadEnd(self.__browser.url)
 
     def __getBrowserKeyHandler(self, key, isKeyDown, isAltDown, isShiftDown, isCtrlDown):
-        from itertools import izip
         params = (key, isKeyDown, isAltDown, isShiftDown, isCtrlDown)
 
         def matches(t):
@@ -364,7 +366,7 @@ class WebBrowser(object):
         if self.useSpecialKeys:
             browserKeyHandlers = self.__specialKeyHandlers + browserKeyHandlers
         for values in browserKeyHandlers:
-            if functools.reduce(lambda a, b: a and matches(b), izip(values, params), True):
+            if functools.reduce(lambda a, b: a and matches(b), zip(values, params), True):
                 return values[(-1)]
 
         return
@@ -477,8 +479,8 @@ class WebBrowser(object):
             _logger.error("Trying to delete navigation filter which doesn't exist: %r", handler)
 
     def filterNavigation(self, url):
-        query = urlparse.urlparse(url).query
-        tags = urlparse.parse_qs(query).get(_WOT_CLIENT_PARAM_NAME, [])
+        query = parse.urlparse(url).query
+        tags = parse.parse_qs(query).get(_WOT_CLIENT_PARAM_NAME, [])
         stopNavigation = False
         closeBrowser = False
         for handler in self.__navigationFilters:
@@ -497,7 +499,7 @@ class WebBrowser(object):
         return stopNavigation
 
     def onResourceLoadRequest(self, url):
-        result = urlparse.urlparse(url)
+        result = parse.urlparse(url)
         if result.scheme == _WOT_RESOURCE_CUSTOM_SCHEME:
             return result.netloc + result.path
         return _g_webCache.get(url)
@@ -683,10 +685,10 @@ class EventListener(object):
         _logger.debug('completed %s %s', method, url)
 
     def onResourceLoadError(self, method, url, status, statusStr, error, requestHeaders, responseHeaders):
-        _logger.warn('failed %s %s (status %d (%s)\terror %d)', method, url, status, statusStr, error)
+        _logger.warning('failed %s %s (status %d (%s)\terror %d)', method, url, status, statusStr, error)
         if _EXTENDED_LOGGING:
             from pprint import pformat
-            _logger.warn('headers:\n\trequest:\n%s\n\tresponse:\n%s', pformat(requestHeaders), pformat(responseHeaders))
+            _logger.warning('headers:\n\trequest:\n%s\n\tresponse:\n%s', pformat(requestHeaders), pformat(responseHeaders))
 
     def onWhitelistMiss(self, isMainFrame, failedURL, httpStatusCode=None):
         if isMainFrame:

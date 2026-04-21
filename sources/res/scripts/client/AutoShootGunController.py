@@ -1,3 +1,4 @@
+from __future__ import absolute_import, division
 import typing, BigWorld
 from auto_shoot_guns.auto_shoot_guns_common import AutoShootGunState
 from constants import UNKNOWN_GUN_INDEX

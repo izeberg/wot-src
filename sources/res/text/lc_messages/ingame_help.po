@@ -313,6 +313,12 @@ msgstr "该坦克具有用于撞击的特殊配置，通过一系列设计改装
 msgid "detailsHelp/mechanics/improvedRamming/page1/title"
 msgstr "撞击专用配置"
 
+msgid "detailsHelp/mechanics/lowChargeShot/page1/description"
+msgstr "该坦克的火炮可提前开火: 在装填期间射出的应急补能炮弹效能会降低，而在装填完毕后射出的常规完全补能炮弹则拥有最佳弹道参数。"
+
+msgid "detailsHelp/mechanics/lowChargeShot/page1/title"
+msgstr "多级补能系统"
+
 msgid "detailsHelp/mechanics/overheatStacks/page1/description"
 msgstr ""
 "保持静止不动或移动速度低于特定数值时可进行预热，强化下一次射击的平均损伤与精度。\n"
@@ -332,6 +338,18 @@ msgstr "直接驱动模式可大幅提高发动机功率和最大前进速度。
 
 msgid "detailsHelp/mechanics/powerMode/page1/title"
 msgstr "直接驱动"
+
+msgid "detailsHelp/mechanics/propellantAfterburnerGun/page1/description"
+msgstr "随着时间推移，系统会自动累积能量，开火时会消耗部分能量来提高损伤。能量越高，损伤加成越大。"
+
+msgid "detailsHelp/mechanics/propellantAfterburnerGun/page1/title"
+msgstr "感应式加力装置"
+
+msgid "detailsHelp/mechanics/propellantAfterburnerGun/page2/description"
+msgstr "默认情况下，能量具有一定上限。关闭限制器可累积更多能量，提供更大的损伤加成，但会降低火炮手感。按下以下按键即可开关限制器:"
+
+msgid "detailsHelp/mechanics/propellantAfterburnerGun/page2/title"
+msgstr "限制器"
 
 msgid "detailsHelp/mechanics/rechargeableNitro/page1/description"
 msgstr ""
@@ -427,6 +445,12 @@ msgstr "在齐射射击模式下，射击损伤和装填时间都增加至2倍�
 
 msgid "detailsHelp/mechanics/twinGun/page2/title"
 msgstr "优缺点"
+
+msgid "detailsHelp/mechanics/wheeledDash/page1/description"
+msgstr "该机械改装可在短时间内大幅提高坦克的前进和倒车加速能力、发动机功率，以及最大前进和倒车速度。保持高速移动可缩短其冷却时间。"
+
+msgid "detailsHelp/mechanics/wheeledDash/page1/title"
+msgstr "高压涡轮增压"
 
 msgid "detailsHelp/noKeysWarning"
 msgstr "核心按键尚未分配。在游戏设置中分配它们。"

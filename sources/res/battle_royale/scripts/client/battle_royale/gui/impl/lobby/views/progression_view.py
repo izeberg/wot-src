@@ -18,7 +18,7 @@ from gui.server_events.events_helpers import EventInfoModel
 from gui.shared import event_dispatcher
 from gui.shared.utils.scheduled_notifications import SimpleNotifier
 from helpers import dependency, time_utils
-from helpers.time_utils import ONE_DAY, ONE_MINUTE
+from helpers.time_utils import ONE_DAY, ONE_MINUTE, getServerUTCTime
 from skeletons.gui.game_control import IBattleRoyaleController
 from skeletons.gui.server_events import IEventsCache
 
@@ -79,6 +79,8 @@ class ProgressionView(SubModelPresenter):
         return (
          (
           self.viewModel.onClose, self.__onClose),
+         (
+          self.viewModel.pollServerTime, self.__onPollServerTime),
          (
           self.brProgression.onProgressPointsUpdated, self.__updateProgressionPoints),
          (
@@ -141,12 +143,17 @@ class ProgressionView(SubModelPresenter):
             model.setState(state)
             model.setStartTimestamp(self.battleRoyale.getStartTime())
             model.setEndTimestamp(self.battleRoyale.getEndTime())
+            model.setServerTimestamp(round(getServerUTCTime()))
             model.setCalendarTooltipId(TOOLTIPS_CONSTANTS.BATTLE_ROYALE_SELECTOR_CALENDAR_INFO)
             setEventInfo(model.eventInfo)
             self.__updateBattleQuestsCards(model.battleQuests, data)
             self.__updateProgression(data, pointsData, model)
             self.__updateMissionVisitedArray(model.battleQuests.getMissionsCompletedVisited(), data['battleQuests'].keys())
             self.__markAsVisited(data)
+
+    def __onPollServerTime(self):
+        self.viewModel.setServerTimestamp(int(getServerUTCTime()))
+        self.__updateQuestTimer()
 
     def __updateProgression(self, data, pointsData, model):
         progressionLevelsList = data['progressionLevels']

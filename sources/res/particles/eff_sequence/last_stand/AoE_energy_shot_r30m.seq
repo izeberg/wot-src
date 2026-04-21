@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>3.000000</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>damage_circle</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/environment/last_stand/AoE_DamageCircle.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.033333</startTime>
+				<value>0.000000 -2.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.033333</startTime>
+				<value>1.080000 0.004879 1.080000</value>
+				<inTangent>0.300000 0.975605 0.300000</inTangent>
+				<outTangent>0.300000 0.975605 0.300000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.233333</startTime>
+				<value>1.140000 0.200000 1.140000</value>
+				<inTangent>0.000000 1.161826 0.000000</inTangent>
+				<outTangent>0.000000 1.161826 0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.600000</startTime>
+				<value>1.140000 0.300000 1.140000</value>
+				<inTangent>0.000000 -0.660875 0.000000</inTangent>
+				<outTangent>0.000000 -0.660875 0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.833333</startTime>
+				<value>1.380000 0.000000 1.380000</value>
+				<inTangent>-0.000000 0.027854 -0.000000</inTangent>
+				<outTangent>-0.000000 0.027854 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>visibility</name>
+			<type>bool</type>
+			<frame>
+				<startTime>0.033333</startTime>
+				<value>false</value>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>lambert02</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.266667</startTime>
+				<value>1.000000 0.666667 0.294118 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 4.285715</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 4.285715</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.500000</startTime>
+				<value>1.000000 0.666667 0.294118 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 1.767857</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 1.767857</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.833333</startTime>
+				<value>1.000000 0.666667 0.294118 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.750000</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -0.750000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>dust</name>
+		<type>particle</type>
+		<resource>particles/Environment/last_stand/abilities/AoE_damage_dust.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 -2.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>14.999999</inTangent>
+				<outTangent>14.999999</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.066667</startTime>
+				<value>1.000000</value>
+				<inTangent>14.999999</inTangent>
+				<outTangent>14.999999</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>-0.000000</inTangent>
+				<outTangent>-0.000000</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.066667</startTime>
+				<value>0.000000</value>
+				<inTangent>-0.000000</inTangent>
+				<outTangent>-0.000000</outTangent>
+				<tangentMode>2</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>damage_center_copied</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/environment/last_stand/AoE_DamageCircle_02.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 -2.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.400000</startTime>
+				<value>0.000000 -2.000000 0.000000</value>
+				<inTangent>0.000392 -0.342273 -0.000360</inTangent>
+				<outTangent>0.000392 -0.342273 -0.000360</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.633333</startTime>
+				<value>0.000183 -9.547993 -0.000168</value>
+				<inTangent>0.000785 -32.348537 -0.000719</inTangent>
+				<outTangent>0.000785 -32.348537 -0.000719</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.033333</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.188578 11.597530 17.874689</inTangent>
+				<outTangent>-0.188578 11.597530 17.874689</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.166667</startTime>
+				<value>7.200000 10.000000 7.200000</value>
+				<inTangent>100.894928 198.275085 99.625870</inTangent>
+				<outTangent>100.894928 198.275085 99.625870</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.333333</startTime>
+				<value>24.000000 20.000000 24.000000</value>
+				<inTangent>17.315195 5.174724 21.122355</inTangent>
+				<outTangent>17.315195 5.174724 21.122355</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.400000</startTime>
+				<value>30.000000 10.000000 30.000000</value>
+				<inTangent>0.336122 6.857299 -0.439286</inTangent>
+				<outTangent>0.336122 6.857299 -0.439286</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>visibility</name>
+			<type>bool</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>false</value>
+			</frame>
+			<frame>
+				<startTime>0.033333</startTime>
+				<value>false</value>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>Border</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.033333</startTime>
+				<value>1.000000 0.713726 0.376471 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 1.153846</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 1.153846</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.900000</startTime>
+				<value>1.000000 0.713726 0.376471 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 -0.423077</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -0.423077</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.400000</startTime>
+				<value>1.000000 0.713726 0.376471 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 -1.138675</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -1.138675</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.633333</startTime>
+				<value>1.000000 0.713726 0.376471 -0.064715</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.277351</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -0.277351</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>energy</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.033333</startTime>
+				<value>1.000000 0.698039 0.337255 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 1.799996</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 1.799996</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.200000</startTime>
+				<value>1.000000 0.698039 0.337255 0.300000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.899998</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.899998</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.433333</startTime>
+				<value>1.000000 0.698039 0.337255 0.300000</value>
+				<inTangent>0.000000 0.000000 0.000000 -0.162194</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -0.162194</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.400000</startTime>
+				<value>1.000000 0.698039 0.337255 -0.013575</value>
+				<inTangent>0.000000 0.000000 0.000000 -0.276133</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -0.276133</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.633333</startTime>
+				<value>1.000000 0.698039 0.337255 -0.066747</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.227880</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -0.227880</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>damage_center</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/environment/last_stand/AoE_DamageInside.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 -1.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.033333</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>133.333328 25.000000 133.333328</inTangent>
+				<outTangent>133.333328 25.000000 133.333328</outTangent>
+				<tangentMode>768</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.633333</startTime>
+				<value>80.000000 15.000000 80.000000</value>
+				<inTangent>32.040962 4.396907 27.488607</inTangent>
+				<outTangent>32.040962 4.396907 27.488607</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.666667</startTime>
+				<value>90.000000 0.000000 90.000000</value>
+				<inTangent>9.677413 -14.516120 9.677413</inTangent>
+				<outTangent>9.677413 -14.516120 9.677413</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>visibility</name>
+			<type>bool</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>false</value>
+			</frame>
+			<frame>
+				<startTime>0.033333</startTime>
+				<value>true</value>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>energy</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.033333</startTime>
+				<value>0.585031 0.369345 0.173266 0.750000</value>
+				<inTangent>0.000000 0.000000 0.000000 7.022277</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 7.022277</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.100000</startTime>
+				<value>1.000000 0.678431 0.388235 0.750000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.633333</startTime>
+				<value>0.741176 0.466667 0.219608 0.750000</value>
+				<inTangent>-0.485295 -0.397058 -0.316176 -0.000000</inTangent>
+				<outTangent>-0.151108 -0.094183 -0.044847 -0.725806</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.666667</startTime>
+				<value>0.585031 0.369345 0.173266 0.000000</value>
+				<inTangent>-0.151108 -0.094183 -0.044847 -0.725806</inTangent>
+				<outTangent>-0.151108 -0.094183 -0.044847 -0.725806</outTangent>
+				<tangentMode>1</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property vector4</name>
+			<type>vector4</type>
+			<identifier>energy</identifier>
+			<property>opacity_UV_Speed_Scale</property>
+			<frame>
+				<startTime>0.033333</startTime>
+				<value>0.000000 -0.500000 1.000000 2.000000</value>
+				<inTangent>0.000000 1.833334 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 1.833334 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>seq_ability_energy_shot</name>
+		<type>sound</type>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>3.000000</duration>
+				<value>damage_center|</value>
+			</frame>
+		</track>
+		<track>
+			<name>Wwise event</name>
+			<type>sound</type>
+			<frame>
+				<startTime>0.033333</startTime>
+				<duration>2.966667</duration>
+				<sequenceSound>ev_last_stand_ability_energy_shot_3D_seq</sequenceSound>
+				<type>play_till_end</type>
+				<fade>1.000000</fade>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

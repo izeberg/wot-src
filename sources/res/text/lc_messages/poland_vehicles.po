@@ -190,6 +190,9 @@ msgstr "Wz.64GC B"
 msgid "Chassis_Pl37_CS_67_Szakal"
 msgstr "CS-67 S"
 
+msgid "Chassis_Pl40_Krazownik"
+msgstr "巡航者"
+
 msgid "Fug7A"
 msgstr "FuG 7"
 
@@ -227,6 +230,9 @@ msgid "GTD_2T5x2"
 msgstr "2x GTD-2T5"
 
 msgid "GTD_2T6x2"
+msgstr "2x GTD-2T6"
+
+msgid "GTD_2T6x2_7x7"
 msgstr "2x GTD-2T6"
 
 msgid "GTD_2_WSK_x2"
@@ -340,6 +346,9 @@ msgstr "PP-GG m85/175"
 msgid "PP_GG_m85_175_60"
 msgstr "PP-GG m85/175 (60)"
 
+msgid "PP_GG_m85_175_7x7"
+msgstr "PP-GG m85/175"
+
 msgid "PP_GG_m85_175_GC"
 msgstr "PP-GG m85/175 GC"
 
@@ -360,6 +369,9 @@ msgstr "PPrz-GG m85/175"
 
 msgid "PPrz_GG_m85_175_60"
 msgstr "PPrz-GG m85/175 (60)"
+
+msgid "PPrz_GG_m85_175_7x7"
+msgstr "PPrz-GG m85/175"
 
 msgid "PPrz_GG_m85_175_GC"
 msgstr "PPrz-GG m85/175 GC"
@@ -382,6 +394,9 @@ msgstr "PW-GG m85/175"
 msgid "PW_GG_m85_175_60"
 msgstr "PW-GG m85/175 (60)"
 
+msgid "PW_GG_m85_175_7x7"
+msgstr "PW-GG m85/175"
+
 msgid "PW_GG_m85_175_GC"
 msgstr "PW-GG m85/175 GC"
 
@@ -389,7 +404,9 @@ msgid "Pl01_TKS_20mm"
 msgstr "TKS z n.k.m.20mm"
 
 msgid "Pl01_TKS_20mm_descr"
-msgstr "?empty?"
+msgstr ""
+"1933年研发，是TK-3超轻型坦克的升级版。1939年，为了提升火力，为24辆该型号坦克换装了20mm wz.38 FK-"
+"A炮。这些超轻型坦克参加了1939年秋季的战斗。"
 
 msgid "Pl01_TKS_20mm_long_special"
 msgstr "一辆B系II级轻型坦克，是游戏中隐蔽性最高的坦克之一。它是天生的侦察好手，也可以深入敌后，在不被点亮的情况下，逐步蚕食敌方坦克的生命值。"
@@ -404,7 +421,8 @@ msgid "Pl03_PzV_Poland"
 msgstr "“贵宾犬”"
 
 msgid "Pl03_PzV_Poland_descr"
-msgstr "?empty?"
+msgstr ""
+"\"黑豹\"G型的衍生型号，也是D系\"黑豹\"坦克产量最多的改进型。1944年8月2日，两辆D系\"黑豹\"G型坦克被B系缴获。B系军方给该坦克换上了新的涂装和各种徽章，游戏中的涂装反映了这一改动。其中一辆坦克被赋予\"贵宾犬\"的昵称，并主要用于巷战。"
 
 msgid "Pl03_PzV_Poland_long_special"
 msgstr ""
@@ -448,7 +466,7 @@ msgid "Pl08_50TP_Prototyp_Resilient"
 msgstr "50TP坚韧"
 
 msgid "Pl08_50TP_Prototyp_Resilient_descr"
-msgstr "?empty?"
+msgstr "参与WargamingUnited慈善筹款活动的奖励，该活动旨在支援受战火影响的人民。由我们当地的美术团队制作。"
 
 msgid "Pl08_50TP_Prototyp_Resilient_long_special"
 msgstr ""
@@ -464,7 +482,7 @@ msgid "Pl08_50TP_prototyp"
 msgstr "50TP原型车"
 
 msgid "Pl08_50TP_prototyp_descr"
-msgstr "?empty?"
+msgstr "由军校生塔德乌什·提斯科维奇在20世纪50年代早期提出的重型坦克设计，重量不超过50吨。仅存在于蓝图中。"
 
 msgid "Pl08_50TP_prototyp_long_special"
 msgstr ""
@@ -560,7 +578,8 @@ msgid "Pl16_T34_85_Rudy"
 msgstr "T-34-85“鲁迪”"
 
 msgid "Pl16_T34_85_Rudy_descr"
-msgstr "?empty?"
+msgstr ""
+"这辆虚构的T-34-85坦克编号为102，隶属于B系陆军第1坦克旅，曾在B系电视剧《四个坦克兵与狗》中出镜。实际上，T-34-85坦克于20世纪50年代在B系格利维采的布马尔·拉贝迪工厂生产。B系的T-34-85是在战时后期S系坦克的基础上略微改装的结果。"
 
 msgid "Pl16_T34_85_Rudy_long_special"
 msgstr ""
@@ -882,6 +901,23 @@ msgstr ""
 msgid "Pl37_CS_67_Szakal_short"
 msgstr "CS-67 S"
 
+msgid "Pl40_Krazownik"
+msgstr "巡航者"
+
+msgid "Pl40_Krazownik_descr"
+msgstr ""
+"战事结束后，B系境内仍留有大量D系12.8厘米舰炮炮弹。20世纪60年代，军方决定启动巡航者*重型坦克计划，其火炮设计旨在利用这些弹药。S系B-13舰炮被视为备选方案。在研发过程中，该计划的预估成本大幅上涨，同时弹药迅速变得过时。该计划在蓝图阶段被终止。"
+
+msgid "Pl40_Krazownik_long_special"
+msgstr ""
+"巡航者是一辆B系VIII级突击型重型坦克。作为其角色的典型代表，它配备一门具有超高平均单发损伤的火炮，并拥有可靠的车体和炮塔装甲。尽管具有重型防护，但这辆坦克仍具有不俗的机动性。考虑到其高额的平均单发损伤，这门火炮的手感也相当优秀。"
+
+msgid "Pl40_Krazownik_short"
+msgstr "巡航者"
+
+msgid "Pl40_Krazownik_short_special"
+msgstr "良好的装甲，高额的平均单发损伤"
+
 msgid "Polski_FIAT_122BC"
 msgstr "波尔斯基菲亚特 122BC"
 
@@ -914,6 +950,9 @@ msgstr "RTU \"杰西恩\""
 
 msgid "RTU_Jesion_M"
 msgstr "RTU \"杰西恩-M\""
+
+msgid "R_112"
+msgstr "R-112"
 
 msgid "R_113"
 msgstr "R-113"
@@ -949,6 +988,9 @@ msgid "R_123_1"
 msgstr "R-123C"
 
 msgid "R_123_7x7"
+msgstr "R-123"
+
+msgid "R_123_NC_Wz_70T_7x7"
 msgstr "R-123"
 
 msgid "R_123_OSP3"
@@ -1097,6 +1139,9 @@ msgstr "Wz.64GC B"
 
 msgid "Turret_1_Pl37_CS_67_Szakal"
 msgstr "CS 67 S"
+
+msgid "Turret_1_Pl40_Krazownik"
+msgstr "巡航者"
 
 msgid "Turret_2_Pl05_50TP_Tyszkiewicza"
 msgstr "50TP T II型"
@@ -1479,6 +1524,18 @@ msgstr "122mm wz.53炮"
 msgid "_122mm_wz_53_53TP"
 msgstr "122mm wz.53炮 (53TP)"
 
+msgid "_128_mm_SK_C_34L"
+msgstr "128mm SK C/34L炮"
+
+msgid "_128mm_Pzgr_39K"
+msgstr "Pzgr 39K"
+
+msgid "_128mm_Pzgr_40K"
+msgstr "Pzgr 40K"
+
+msgid "_128mm_Sprgr_18K"
+msgstr "Sprgr 18K"
+
 msgid "_130mm_AZ_OF_46"
 msgstr "AZ-OF-46"
 
@@ -1544,6 +1601,9 @@ msgstr "HE 改进型"
 
 msgid "_20mm_z_pociskiem_wybuchowo_ulepszony_B"
 msgstr "HE B改进型"
+
+msgid "_2xGTD_2T5A"
+msgstr "2xGTD-2T5A"
 
 msgid "_37mm_APCR_Bofors"
 msgstr "37mm博福斯APCR"

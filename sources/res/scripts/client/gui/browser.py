@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, typing
 from web.client_web_api.common import WebEventSender
 from web.web_client_api import WebCommandHandler

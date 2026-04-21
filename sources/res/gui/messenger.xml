@@ -2805,6 +2805,12 @@ _(#messenger:serviceChannelMessages/piggyBank/continueAfterSmashed)</message>
 			<icon>WarningIcon</icon>
 			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#messenger:serviceChannelMessages/wotPlus/goldReserve/isFull/title)&lt;/font&gt;&lt;br/&gt;</message>
 		</GoldReserveFullMessage>
+		<PiggyBankCreditsFullMessage>
+			<type>grey</type>
+			<priority>medium</priority>
+			<icon>InformationIcon</icon>
+			<message>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#system_messages:piggyBank/piggyBankFull)&lt;/font&gt;</message>
+		</PiggyBankCreditsFullMessage>
 		<BonusExcludedMapAvailable>
 			<priority>high</priority>
 			<type>yellow</type>
@@ -3508,14 +3514,6 @@ _(#messenger:serviceChannelMessages/piggyBank/continueAfterSmashed)</message>
 			<gfViewName>Test1</gfViewName>
 			<linkage>GamefaceNotification</linkage>
 		</TestGFNotification>
-		<MentoringLicense>
-			<priority>high</priority>
-			<type>lightGrey</type>
-			<linkage>PostProgressionStyleMessage</linkage>
-			<icon>MentoringLicense</icon>
-			<bgIcon>PrestigeStyleBG</bgIcon>
-			<message>&lt;P ALIGN=&quot;center&quot;&gt;&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#FFFFFF&quot;&gt;%(header)s&lt;/font&gt;&lt;br/&gt;&lt;font color=&quot;#8C8C7E&quot;&gt;%(text)s&lt;/font&gt;&lt;/P&gt;</message>
-		</MentoringLicense>
 		<MentorAssignmentSysMessage>
 			<type>yellow</type>
 			<icon>MentorLicenceIcon</icon>

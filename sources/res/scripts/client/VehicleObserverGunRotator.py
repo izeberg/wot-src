@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld, Math, BattleReplay
 from VehicleGunRotator import VehicleGunRotator
 

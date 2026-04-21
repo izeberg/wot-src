@@ -1,3 +1,4 @@
+from __future__ import absolute_import, division
 import typing, BigWorld
 from gui.shared.utils.decorators import ReprInjector
 from vehicles.components.vehicle_component import VehicleDynamicComponent

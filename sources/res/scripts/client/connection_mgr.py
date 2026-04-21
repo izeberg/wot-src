@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import hashlib, json, ResMgr, BigWorld, constants, pwd_token
 from Event import Event, EventManager
 from PlayerEvents import g_playerEvents

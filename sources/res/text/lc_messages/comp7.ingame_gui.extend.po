@@ -10,6 +10,9 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "player_errors/equipment/fastRecharge/gunTemperatureLow"
+msgstr "不可用: 该坦克的火炮未升温。"
+
 msgid "player_errors/equipment/fastRecharge/vehicleIsNotRecharged"
 msgstr "不可用: 该坦克未在装填中。"
 

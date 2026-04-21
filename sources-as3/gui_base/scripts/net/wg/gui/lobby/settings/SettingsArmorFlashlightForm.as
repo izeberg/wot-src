@@ -126,14 +126,15 @@ package net.wg.gui.lobby.settings
       private function getSelectedIndex(param1:SettingsControlProp) : int
       {
          var _loc2_:int = param1.options.length;
-         var _loc3_:int = 0;
-         while(_loc3_ < _loc2_)
+         var _loc3_:Object = param1.current;
+         var _loc4_:int = 0;
+         while(_loc4_ < _loc2_)
          {
-            if(param1.options[_loc3_].data == param1.current)
+            if(param1.options[_loc4_].data == _loc3_)
             {
-               return _loc3_;
+               return _loc4_;
             }
-            _loc3_++;
+            _loc4_++;
          }
          return Values.DEFAULT_INT;
       }

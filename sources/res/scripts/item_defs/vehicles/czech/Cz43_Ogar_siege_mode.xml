@@ -3702,11 +3702,11 @@
 						</maxPitch>
 					</pitchLimits>
 					<shotDispersionRadius>
-						0.34
+						0.32
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						8.7
+						8.2
 						<!--BW_String-->
 					</reloadTime>
 					<shotDispersionFactors>
@@ -4751,7 +4751,7 @@
 	</turrets0>
 	<engines>
 		<Skoda_16_ADH_140O>
-			<power>1100</power>
+			<power>1150</power>
 		</Skoda_16_ADH_140O>
 	</engines>
 	<fuelTanks>
@@ -4765,7 +4765,7 @@
 		<detailed>
 			<engines>
 				<Skoda_16_ADH_140O>
-					<smplEnginePower>1100</smplEnginePower>
+					<smplEnginePower>1150</smplEnginePower>
 					<smplFwMaxSpeed>65</smplFwMaxSpeed>
 				</Skoda_16_ADH_140O>
 			</engines>

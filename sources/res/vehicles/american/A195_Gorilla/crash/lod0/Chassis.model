@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/american/A195_Gorilla/crash/lod1/Chassis</parent>
+	<extent>32</extent>
+	<visibilityBox>
+		<min>
+			-1.701986 0 -3.803805
+			<!--BW_String-->
+		</min>
+		<max>1.702495 1.241063 3.842886</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/american/A195_Gorilla/crash/lod0/Chassis</nodefullVisual>
+</root>

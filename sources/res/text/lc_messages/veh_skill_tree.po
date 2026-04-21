@@ -209,6 +209,9 @@ msgstr "提高坦克吸收HE炮弹和撞击损伤的能力。"
 msgid "tooltips/description/HEShellDamage"
 msgstr "提高HE炮弹造成的损伤。"
 
+msgid "tooltips/description/HEshellVelocity"
+msgstr "提高HE炮弹的飞行速度。"
+
 msgid "tooltips/description/a179_mechanic_0"
 msgstr "点射模式下第二发炮弹的散布范围降低{colorTagOpen}{value}%{colorTagClose}。"
 
@@ -238,6 +241,18 @@ msgstr "机制持续时间延长{colorTagOpen}{value}秒{colorTagClose}。"
 
 msgid "tooltips/description/a183_mechanic_3"
 msgstr "机制持续时间延长{colorTagOpen}{value}秒{colorTagClose}。"
+
+msgid "tooltips/description/a195_mechanic_1"
+msgstr "应急补能射击的100米精度降低{colorTagOpen}{value}%{colorTagClose}。"
+
+msgid "tooltips/description/a195_mechanic_2"
+msgstr "使用标准和特殊炮弹进行应急补能射击造成的损伤提高{colorTagOpen}{value}点{colorTagClose}。"
+
+msgid "tooltips/description/a195_mechanic_3"
+msgstr "应急补能射击的炮弹速度提高{colorTagOpen}{value}米/秒{colorTagClose}。"
+
+msgid "tooltips/description/a195_mechanic_4"
+msgstr "应急补能射击的装填时间缩短{colorTagOpen}{value}%{colorTagClose}。"
 
 msgid "tooltips/description/advancedChassisProtection"
 msgstr "提高悬挂装置的耐久度和修复速度。"
@@ -320,6 +335,20 @@ msgstr "中断装填后，射击前的延迟缩短{colorTagOpen}{value}%{colorTa
 msgid "tooltips/description/f136_mechanic_0"
 msgstr "射击短弹夹中最后一发炮弹后的装填时间惩罚缩短{colorTagOpen}{value}秒{colorTagClose}。"
 
+msgid "tooltips/description/f143_mechanic_0"
+msgstr ""
+"超过上限时，100米精度惩罚降低{colorTagOpen}{value0}%{colorTagClose}，火炮瞄准时间惩罚降低{colorTagOpen}{value1}%{colorTagClose}。"
+
+msgid "tooltips/description/f143_mechanic_1"
+msgstr "能量累积速度提高{colorTagOpen}{value}%/秒{colorTagClose}。"
+
+msgid "tooltips/description/f143_mechanic_2"
+msgstr "开火后损失的能量减少{colorTagOpen}{value}%{colorTagClose}。"
+
+msgid "tooltips/description/f143_mechanic_3"
+msgstr ""
+"超限损伤峰值提高{colorTagOpen}{value0}点{colorTagClose}，最大超限损伤加成提高{colorTagOpen}{value1}%{colorTagClose}。"
+
 msgid "tooltips/description/forwardSpeed"
 msgstr "提高坦克前进速度。"
 
@@ -388,6 +417,18 @@ msgstr "直接驱动模式下的发动机功率提高{colorTagOpen}{value}%{colo
 
 msgid "tooltips/description/gb152_mechanic_3"
 msgstr "直接驱动模式下的前进速度提高{colorTagOpen}{value}%{colorTagClose}。"
+
+msgid "tooltips/description/gb158_mechanic_0"
+msgstr "涡轮增压提供的发动机功率加成提高{colorTagOpen}{value}%{colorTagClose}。"
+
+msgid "tooltips/description/gb158_mechanic_1"
+msgstr "涡轮增压激活时的最大倒车速度提高{colorTagOpen}{value}千米/小时{colorTagClose}。"
+
+msgid "tooltips/description/gb158_mechanic_2"
+msgstr "涡轮增压的持续时间延长{colorTagOpen}{value}秒{colorTagClose}。"
+
+msgid "tooltips/description/gb158_mechanic_3"
+msgstr "涡轮增压可再次使用前的冷却时间缩短{colorTagOpen}{value}秒{colorTagClose}。"
 
 msgid "tooltips/description/gunDepression"
 msgstr "强化火炮俯角。"
@@ -612,6 +653,9 @@ msgstr "HE炮弹损伤"
 msgid "tooltips/title/HEShellPenetration"
 msgstr "HE炮弹穿透力"
 
+msgid "tooltips/title/HEshellVelocity"
+msgstr "HE炮弹速度"
+
 msgid "tooltips/title/a179_mechanic_0"
 msgstr "半主动质量阻尼器"
 
@@ -641,6 +685,18 @@ msgstr "6000psi气动系统"
 
 msgid "tooltips/title/a183_mechanic_3"
 msgstr "附加高压气缸"
+
+msgid "tooltips/title/a195_mechanic_1"
+msgstr "弹道稳定性增强"
+
+msgid "tooltips/title/a195_mechanic_2"
+msgstr "强化型应急补能"
+
+msgid "tooltips/title/a195_mechanic_3"
+msgstr "加速型应急补能"
+
+msgid "tooltips/title/a195_mechanic_4"
+msgstr "轻型能量隔板"
 
 msgid "tooltips/title/additionalShellAmmoCapacity"
 msgstr "额外载弹量"
@@ -738,6 +794,18 @@ msgstr "装填流程优化"
 msgid "tooltips/title/f136_mechanic_0"
 msgstr "改进型装填机构"
 
+msgid "tooltips/title/f143_mechanic_0"
+msgstr "炮管隔热层"
+
+msgid "tooltips/title/f143_mechanic_1"
+msgstr "高功率交流发电机"
+
+msgid "tooltips/title/f143_mechanic_2"
+msgstr "低电阻线束"
+
+msgid "tooltips/title/f143_mechanic_3"
+msgstr "改进型输出限制器"
+
 msgid "tooltips/title/forwardSpeed"
 msgstr "前进速度"
 
@@ -809,6 +877,18 @@ msgstr "管状歧管优化"
 
 msgid "tooltips/title/gb152_mechanic_3"
 msgstr "强化型转速限制器"
+
+msgid "tooltips/title/gb158_mechanic_0"
+msgstr "可调压力调节器"
+
+msgid "tooltips/title/gb158_mechanic_1"
+msgstr "现代化排气歧管"
+
+msgid "tooltips/title/gb158_mechanic_2"
+msgstr "增容气瓶"
+
+msgid "tooltips/title/gb158_mechanic_3"
+msgstr "高效空气压缩机"
 
 msgid "tooltips/title/gunDepression"
 msgstr "火炮俯角"

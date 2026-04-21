@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from events_handler import eventHandler
 from gui.shared.utils.decorators import ReprInjector

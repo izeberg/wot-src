@@ -11,4 +11,6 @@ BATTLE_RESULTS = [
  (
   'fareTeamPrestigePointsPosition', int, 0, None, 'skip', ENTRY_TYPE.ACCOUNT_SELF),
  (
-  'isSuperSquad', bool, False, None, 'skip', ENTRY_TYPE.ACCOUNT_ALL)]
+  'isSuperSquad', bool, False, None, 'skip', ENTRY_TYPE.ACCOUNT_ALL),
+ (
+  'comp7BannedVehicles', dict, {}, None, 'skip', ENTRY_TYPE.COMMON)]

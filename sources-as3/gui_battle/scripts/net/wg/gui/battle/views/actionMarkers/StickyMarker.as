@@ -14,15 +14,12 @@ package net.wg.gui.battle.views.actionMarkers
       
       public var txtLabel:TextField = null;
       
-      public var targetHighlight:MovieClip = null;
-      
       private var _disposed:Boolean = false;
       
       public function StickyMarker()
       {
          super();
          this.arrow.visible = false;
-         this.targetHighlight.visible = false;
          this.txtLabel.visible = false;
       }
       
@@ -31,7 +28,6 @@ package net.wg.gui.battle.views.actionMarkers
          this._disposed = true;
          this.arrow = null;
          this.txtLabel = null;
-         this.targetHighlight = null;
       }
       
       public function setArrowPosition(param1:Point) : void

@@ -35,6 +35,12 @@ msgstr "该模式在您当前所在服务器上不开放%(button)s"
 msgid "alertMessage/ceasefireUnavailable"
 msgstr "该模式在所有服务器上均未开放。"
 
+msgid "alertMessage/icon/tooltipBody"
+msgstr "您必须拥有至少%(count)s辆符合该模式要求的坦克。请参阅\"关于天梯战\"页面了解详情。"
+
+msgid "alertMessage/icon/tooltipHeader"
+msgstr "符合要求的坦克数量不足"
+
 msgid "alertMessage/modeOffline"
 msgstr "数据库错误。模式暂不开放。"
 
@@ -46,6 +52,9 @@ msgstr "战斗在%(serverName)s服务器上不开放"
 
 msgid "alertMessage/notAvailableEnd"
 msgstr "战斗在%(serverName)s服务器上不开放"
+
+msgid "alertMessage/notEnoughVehicles"
+msgstr "符合要求的坦克数量不足%(info)s"
 
 msgid "alertMessage/notSet"
 msgstr "此模式在%(serverName)s服务器上不开放"
@@ -112,6 +121,108 @@ msgstr[1] ""
 msgstr[2] ""
 "领取\n"
 "奖励"
+
+msgid "banView/actionButtons/confirm"
+msgstr "投票"
+
+msgid "banView/actionButtons/description/confirmed/bannedVehicle"
+msgstr "您已投票禁用%(vehicleName)s"
+
+msgid "banView/actionButtons/description/confirmed/withoutBan"
+msgstr "不禁用"
+
+msgid "banView/actionButtons/description/notSelectedVehicle"
+msgstr "提议禁用坦克"
+
+msgid "banView/actionButtons/description/prepick"
+msgstr ""
+"您只能在禁用投票阶段\n"
+"投票"
+
+msgid "banView/actionButtons/description/selectedVehicle/bannedVehicle"
+msgstr ""
+"您提议禁用:\n"
+"%(vehicleName)s"
+
+msgid "banView/actionButtons/description/teamAffect"
+msgstr ""
+"您团队中的一名成员\n"
+"已选择您想禁用的坦克"
+
+msgid "banView/actionButtons/description/wait"
+msgstr "等待禁用投票阶段结束"
+
+msgid "banView/button/back"
+msgstr "返回"
+
+msgid "banView/button/ban"
+msgstr "前往禁用选择"
+
+msgid "banView/button/description"
+msgstr "选择坦克"
+
+msgid "banView/description/prepick"
+msgstr "为该地图和您的团队阵容选择最合适的坦克"
+
+msgid "banView/description/voting"
+msgstr "选择您想在本场战斗中排除的坦克"
+
+msgid "banView/factory/candidate"
+msgstr "禁用候选坦克: %(vehicleName)s"
+
+msgid "banView/factory/candidates"
+msgstr "团队禁用候选坦克"
+
+msgid "banView/factory/noCandidates"
+msgstr "无禁用候选坦克"
+
+msgid "banView/factory/pick"
+msgstr "您的候选坦克: %(vehicleName)s"
+
+msgid "banView/noBan"
+msgstr "不禁用"
+
+msgid "banView/title/prepick"
+msgstr "坦克预选阶段"
+
+msgid "banView/title/voting"
+msgstr "禁用投票阶段"
+
+msgid "banView/tooltip/confirmed"
+msgstr "投票已确认"
+
+msgid "banView/tooltip/noAction"
+msgstr "未进行操作"
+
+msgid "banView/tooltip/noActionDescription"
+msgstr "该玩家尚未提议禁用坦克。"
+
+msgid "banView/tooltip/notConfirmed"
+msgstr "已提议"
+
+msgid "banView/vehicleTypes/AT_SPG"
+msgstr "自行反坦克炮"
+
+msgid "banView/vehicleTypes/heavyTank"
+msgstr "重型坦克"
+
+msgid "banView/vehicleTypes/lightTank"
+msgstr "轻型坦克"
+
+msgid "banView/vehicleTypes/mediumTank"
+msgstr "中型坦克"
+
+msgid "banView/withoutBan"
+msgstr "不禁用"
+
+msgid "banWidget/allies"
+msgstr "我方投票"
+
+msgid "banWidget/enemies"
+msgstr "敌方投票"
+
+msgid "banWidget/tooltip"
+msgstr "团队未能就禁用坦克达成一致，因此，系统从得票最多的坦克中随机禁用了一辆。"
 
 msgid "battleCarousel/filterButtonTooltip/body"
 msgstr "设置按类型、角色和系别显示坦克。"
@@ -309,6 +420,9 @@ msgstr[2] "翡翠巨龙赛季将持续%(days)d天"
 msgid "calendarDay/title"
 msgstr "时间表"
 
+msgid "carousel/banned"
+msgstr "已禁用"
+
 msgid "claimRewards/button"
 msgstr "领取奖励"
 
@@ -334,13 +448,16 @@ msgstr "少于1分钟"
 
 msgid "crewMembersTooltip/description"
 msgstr ""
-"这个特殊车组由来自世界各地的坦克手组成，在车长的领导下团结一心。他们附带足以训练3项特长的乘员经验，从而可以提高坦克的战斗效能，在战场上展现个人魅力。"
+"这个特殊车组由来自世界各地的坦克手组成，在指挥官的领导下团结一心。他们拥有零历练兄弟连特长，并附带足以训练另外2项特长的乘员经验，以此他们可以提高坦克的效能，在战场上展现个人魅力。"
 
 msgid "crewMembersTooltip/perks"
 msgstr "特长"
 
 msgid "crewMembersTooltip/subHeading"
 msgstr "天梯战: 巨龙赛年"
+
+msgid "crewMembersTooltip/zeroPerks"
+msgstr "零历练特长"
 
 msgid "damageIndicatorTooltip/damage/day/heading"
 msgstr "平均损伤(单日): %(averageDamageDealt)s"
@@ -499,6 +616,10 @@ msgstr "活动详情"
 msgid "intro/confirmButton"
 msgstr "收到！"
 
+msgid "intro/description/banPhase"
+msgstr ""
+"每个团队都可以完全禁用一辆坦克参加战斗。与盟友协调投票，排除您最忌惮的坦克，或打乱敌方的阵容。如果您的坦克被禁用，您可以从数辆已预设的租用坦克中进行选择。"
+
 msgid "intro/description/onslaughtModifiers"
 msgstr "该模式的修改器可改变坦克的某些参数，如: 生命值、给养冷却时间、可见时长等。"
 
@@ -535,6 +656,9 @@ msgstr ""
 msgid "intro/description/vehiclesOnMap"
 msgstr ""
 "您可驾驶%(levels)s级可研发坦克(自行火炮除外)、收藏坦克、部分特种坦克参加战斗。在车库中准备好坦克，进入战场后，再根据指定地图的特点选择最合适的坦克。选择坦克时，您还要考虑盟友选择了哪些坦克。"
+
+msgid "intro/title/banPhase"
+msgstr "坦克禁用"
 
 msgid "intro/title/onslaughtModifiers"
 msgstr "天梯战修改器"
@@ -690,23 +814,86 @@ msgstr "下一页"
 msgid "pagination/prev"
 msgstr "上一页"
 
+msgid "pbs/bans/title"
+msgstr "已禁用坦克"
+
+msgid "pbs/missionsProgress/customization/title"
+msgstr "天梯战2D风格"
+
+msgid "pbs/missionsProgress/notificationTabs/customization"
+msgstr "已完成2D风格任务！"
+
+msgid "pbs/missionsProgress/notificationTabs/tokenRewards"
+msgstr "已完成每周任务#%(count)s！"
+
+msgid "pbs/missionsProgress/notificationTabs/weekly"
+msgstr "已完成每周任务！"
+
+msgid "pbs/missionsProgress/weekly/title"
+msgstr "天梯战每周任务"
+
+msgid "pbs/overview/extraLeaveStatus/lose"
+msgstr "失败，因为您"
+
+msgid "pbs/overview/extraLeaveStatus/tie"
+msgstr "平局，因为您"
+
+msgid "pbs/overview/extraLeaveStatus/win"
+msgstr "胜利，但您"
+
+msgid "pbs/overview/highRank/promoted"
+msgstr "晋升至%(rank)s"
+
+msgid "pbs/overview/lowRank/default"
+msgstr "%(rank)s.%(division)s"
+
+msgid "pbs/overview/lowRank/demoted"
+msgstr "降级至%(rank)s.%(division)s"
+
+msgid "pbs/overview/lowRank/promoted"
+msgstr "晋升至%(rank)s.%(division)s"
+
+msgid "pbs/overview/qualification/description"
+msgstr "参战场次"
+
+msgid "pbs/overview/qualification/title"
+msgstr "资格赛"
+
+msgid "pbs/overview/warning/leave/default"
+msgstr "您因违规受到了处罚: 评级点数处罚"
+
+msgid "pbs/overview/warning/leave/qualification"
+msgstr "您受到了处罚: 完成资格赛后，您的评级将被降低。"
+
+msgid "pbs/rankDescription/fifth"
+msgstr "您需要在排行榜上排名{ede6d9e5_Open}前%(topPercentage)%{ede6d9e5_Close}才能达到传说段位。"
+
+msgid "pbs/rankDescription/sixth"
+msgstr "您需要在排行榜上排名{ede6d9e5_Open}前%(topPercentage)%{ede6d9e5_Close}才能保持传说段位。"
+
+msgid "pbs/tooltip/prestige_points_info_tooltip/bullet"
+msgstr "•"
+
+msgid "pbs/tooltip/prestige_points_info_tooltip/footer"
+msgstr "请参阅\"关于天梯战\"页面了解详情。"
+
+msgid "pbs/tooltip/prestige_points_info_tooltip/header"
+msgstr "声望点数"
+
+msgid "pbs/tooltip/prestige_points_info_tooltip/listContent"
+msgstr ""
+"造成损伤\n"
+"点亮协助\n"
+"击毁履带\n"
+"造成关键一击\n"
+"击毁敌方坦克\n"
+"以及其他行为"
+
+msgid "pbs/tooltip/prestige_points_info_tooltip/listHeader"
+msgstr "这种特殊资源会影响玩家在战斗中获得和失去的评级点数。声望点数可通过执行战斗行为来获取，包括:"
+
 msgid "percentage"
 msgstr "%(percentageValue)s%"
-
-msgid "prebattleTimer/info/readyBtn/label"
-msgstr "确认选择"
-
-msgid "prebattleTimer/info/readyBtn/tooltip/body"
-msgstr "您确认后无法再选择另外一辆坦克。"
-
-msgid "prebattleTimer/wait/additionalInfo"
-msgstr "选择最适合当前地图和您团队的坦克。"
-
-msgid "prebattleTimer/wait/header"
-msgstr "等待玩家..."
-
-msgid "prebattleTimer/wait/selectVehicle"
-msgstr "选择坦克"
 
 msgid "prestigeIndicatorTooltip/prestige/day/heading"
 msgstr "平均声望点数(单日): %(averagePrestige)s"
@@ -1256,7 +1443,7 @@ msgid "rewards/subtitle/customizations"
 msgstr "{b2afab_Open}适用于%(vehicleLevel)s级坦克{b2afab_Close}"
 
 msgid "rewards/subtitle/styleProgress"
-msgstr "{b2afab_Open}适用于\"威龙称霸(绯红)\"风格{b2afab_Close}"
+msgstr "{b2afab_Open}适用于\"%(progressionStyleName)s\"风格{b2afab_Close}"
 
 msgid "rewards/subtitle/vehicles_rent"
 msgstr "%(vehicleLevel)s级"
@@ -1822,6 +2009,9 @@ msgstr "总决赛"
 msgid "tournament/huya"
 msgstr "在虎牙上观看"
 
+msgid "tournament/lastPrizePoolUpdate"
+msgstr "奖金池由玩家购买的礼包组成。上次更新时间: %(lastPrizePoolUpdate)s"
+
 msgid "tournament/noMatches"
 msgstr "暂无赛程安排"
 
@@ -1862,10 +2052,13 @@ msgid "tournament/toShop"
 msgstr "前往购买"
 
 msgid "tournament/tokenStore/button/ols"
-msgstr "前往军械库"
+msgstr "兑换"
 
 msgid "tournament/tokenStore/ols"
-msgstr "OLS令牌商店"
+msgstr "OLS令牌"
+
+msgid "tournament/tokenStore/unavailable"
+msgstr "距开放还有:"
 
 msgid "tournament/tooltip/infoPageButton/header"
 msgstr "关于赛事"
@@ -1911,7 +2104,7 @@ msgstr ""
 "坦克世界国际冠军赛(WCI)将在中国苏州举行，一场史诗般的对决即将展开。届时，来自全球各地的顶尖战队将在此一决高下，争夺国际冠军的荣誉称号。见证传奇在战场上诞生的荣耀时刻！"
 
 msgid "tournamentsEntryPointTooltip/heading/ols"
-msgstr "OLS赛季5"
+msgstr "OLS赛季6"
 
 msgid "tournamentsEntryPointTooltip/heading/wci"
 msgstr "2025WCI"
@@ -2034,62 +2227,75 @@ msgstr[2] "距%(value)s个新任务开放还有:"
 msgid "whatsNewButtonLabel"
 msgstr "赛季更新"
 
+msgid "whatsNewView/banner/description"
+msgstr ""
+"这个赛季是您获取珍贵奖励的最后机会，奖励包括专属的X级重型坦克灰烬使者(附带您所获得的适用于该坦克的全部独特3D风格、拥有\"零历练\"兄弟连特长的无畏乘员)，以及自选改进型和试验型配件、引人注目的2D风格等好物。精彩不容错过——胜利在战场上等待着您！"
+
+msgid "whatsNewView/banner/heading"
+msgstr "抓住巨龙赛年的最后时刻！"
+
 msgid "whatsNewView/banner/title/large"
-msgstr "绯红巨龙赛季"
+msgstr "翡翠巨龙赛季"
 
 msgid "whatsNewView/banner/title/small"
 msgstr "天梯战有什么新内容？"
 
 msgid "whatsNewView/button/ok"
-msgstr "历史由您铸就！"
+msgstr "禁得漂亮！"
 
-msgid "whatsNewView/comms/description"
-msgstr ""
-"通讯中心重新占领等待时间由{eeede9e6_Open}90{eeede9e6_Close}秒缩短至{eeede9e6_Open}75{eeede9e6_Close}秒。"
+msgid "whatsNewView/detailedBattleResults/description"
+msgstr "经过优化的战斗结果界面采用了2.0版本更新的全新设计，现在每场战斗后都会为您提供更多的模式相关信息。"
 
-msgid "whatsNewView/comms/heading"
-msgstr "通讯中心"
+msgid "whatsNewView/detailedBattleResults/heading"
+msgstr "详细战斗结果"
+
+msgid "whatsNewView/equippedRentals/description"
+msgstr "如果您最喜爱的坦克被禁用，无需担心。租用坦克现已预设乘员、配件、炮弹和给养。"
+
+msgid "whatsNewView/equippedRentals/heading"
+msgstr "配置齐全的租用坦克%(tag)s"
 
 msgid "whatsNewView/intro/description"
-msgstr "追踪您整个赛季的评级历程，根据最佳坦克的表现调整玩法风格，同时访问经过更新的主页，查看您即将获得的个性化元素！"
+msgstr "本赛季，每个团队都可以完全禁用一辆坦克参加战斗。与盟友协调投票，排除您最忌惮的坦克，或打乱敌方的阵容。"
 
 msgid "whatsNewView/intro/heading"
-msgstr "详细战绩统计现已推出！%(tag)s"
+msgstr "坦克禁用%(tag)s"
 
 msgid "whatsNewView/mapChanges/heading"
 msgstr "地图"
 
-msgid "whatsNewView/newVehicles"
-msgid_plural "plural/whatsNewView/newVehicles"
-msgstr[0] ""
-"现在可通过天梯战获取\n"
-"新坦克&nbsp;%(tag)s"
-msgstr[1] ""
-"现在可通过天梯战获取\n"
-"新坦克&nbsp;%(tag)s"
-msgstr[2] ""
-"现在可通过天梯战获取\n"
-"新坦克&nbsp;%(tag)s"
+msgid "whatsNewView/newAvailableVehicles/heading"
+msgstr "天梯战中开放的新坦克"
+
+msgid "whatsNewView/rentalVehicles/heading"
+msgstr "租用坦克"
+
+msgid "whatsNewView/roleSkillUpdate/description"
+msgstr "最近推出的X级M系中型坦克Ares 90现已在该模式中开放，其角色能力经过了调整。"
+
+msgid "whatsNewView/roleSkillUpdate/heading"
+msgstr "角色能力更新%(tag)s"
 
 msgid "whatsNewView/shopUpdates/description"
-msgstr ""
-"全新IX级轻型坦克{eeede9e6_Open}LTC II{eeede9e6_Close}现已上架天梯战商店，同时还有2种改进型配件: "
-"{eeede9e6_Open}伸缩式{eeede9e6_Close}{eeede9e6_Open}观测{eeede9e6_Close}{eeede9e6_Open}系统{eeede9e6_Close}和{eeede9e6_Open}战术{eeede9e6_Close}{eeede9e6_Open}伪装{eeede9e6_Close}{eeede9e6_Open}网{eeede9e6_Close}。改进型旋转驱动已从天梯战商店中移除，将在下次更新后上架军械库。"
+msgstr "达到白银段位后，即可在天梯战商店中购买114 SP2。"
 
 msgid "whatsNewView/shopUpdates/heading"
-msgstr "战争债券商品更新"
+msgstr "商店更新%(tag)s"
 
 msgid "whatsNewView/stamp/removed"
 msgstr "已排除"
 
 msgid "whatsNewView/stamp/underDevelopment"
-msgstr "++正在重新开发中++"
+msgstr "正在重新开发中"
 
 msgid "whatsNewView/tag/attention"
 msgstr "注意"
 
 msgid "whatsNewView/tag/changed"
 msgstr "已更改"
+
+msgid "whatsNewView/tag/experimental"
+msgstr "试验性"
 
 msgid "whatsNewView/tag/new"
 msgstr "新"
@@ -2102,15 +2308,6 @@ msgstr "已重制"
 
 msgid "whatsNewView/tag/seasonUpdate"
 msgstr "赛季更新"
-
-msgid "whatsNewView/unavailable/description"
-msgstr "M系X级中型坦克{eeede9e6_Open}Ares 90{eeede9e6_Close}在该模式中暂不可用。"
-
-msgid "whatsNewView/unavailable/heading"
-msgstr "暂不可用"
-
-msgid "whatsNewView/vehiclesForRent/heading"
-msgstr "租用坦克"
 
 msgid "whatsNewView/watchVideo"
 msgstr "观看视频"

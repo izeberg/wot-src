@@ -15,11 +15,9 @@ package net.wg.gui.components.crosshairPanel.components.autoloader
       
       private static const AUTOLOADING_FRAMES:int = 83;
       
-      private static const STATUS_RELOAD_IDLE_STATE:int = 11;
+      private static const STATUS_RELOAD_PROGRESS_FRAME:int = 1;
       
-      private static const STATUS_RELOAD_COMPLETE_STATE:int = 2;
-      
-      private static const STATUS_RELOAD_COMPLETE_IDLE:int = 1;
+      private static const STATUS_RELOAD_TRANSITION_FRAME:int = 2;
       
       private static const SHELL_STATE_COMEIN:String = "comeIn";
       
@@ -30,6 +28,8 @@ package net.wg.gui.components.crosshairPanel.components.autoloader
       private static const SHELL_STATE_ON_READY:String = "onReady";
       
       private static const SHELL_STATE_CLEAR:String = "clear";
+      
+      private static const SHELL_STATE_CLEAR_FRAME:int = 8;
       
       private static const TIMER_STATE_INVALID:String = "TIMER_STATE_INVALID";
       
@@ -139,7 +139,10 @@ package net.wg.gui.components.crosshairPanel.components.autoloader
             }
             if(this._isAutoloadInProgress)
             {
-               this._lastLoadedShell.gotoAndStop(AUTOLOADING_START_FRAME + param1 * AUTOLOADING_FRAMES);
+               if(this._lastLoadedShell.currentFrame >= SHELL_STATE_CLEAR_FRAME)
+               {
+                  this._lastLoadedShell.gotoAndStop(AUTOLOADING_START_FRAME + param1 * AUTOLOADING_FRAMES);
+               }
             }
          }
          if(this._currentReloadingPercent >= GUN_RELOADING_COMPLETE_STATE)
@@ -261,11 +264,11 @@ package net.wg.gui.components.crosshairPanel.components.autoloader
          }
          if(this._isTimerRed)
          {
-            this.statusMc.gotoAndStop(STATUS_RELOAD_COMPLETE_IDLE);
+            this.statusMc.gotoAndStop(STATUS_RELOAD_PROGRESS_FRAME);
          }
-         else if(this.statusMc.currentFrame != STATUS_RELOAD_IDLE_STATE)
+         else if(this.statusMc.currentFrame == STATUS_RELOAD_PROGRESS_FRAME)
          {
-            this.statusMc.gotoAndPlay(STATUS_RELOAD_COMPLETE_STATE);
+            this.statusMc.gotoAndPlay(STATUS_RELOAD_TRANSITION_FRAME);
          }
       }
       

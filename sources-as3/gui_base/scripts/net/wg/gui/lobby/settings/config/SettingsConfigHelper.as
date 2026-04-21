@@ -259,6 +259,8 @@ package net.wg.gui.lobby.settings.config
       
       private static const PTT_KEY_RANGE:String = "pushToTalk";
       
+      public static const W2GT_ENABLE:String = "w2gtEnable";
+      
       public static const CO_DEPENDENTS:Object = {
          "fire":"chargeFire",
          "chargeFire":"fire"

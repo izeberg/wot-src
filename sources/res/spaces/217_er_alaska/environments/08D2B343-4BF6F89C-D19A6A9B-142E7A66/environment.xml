@@ -2,12 +2,12 @@
 <root>
 	<name/>
 	<Fog>
-		<version>2.000000</version>
+		<version>3.000000</version>
 		<enable>true</enable>
-		<innerBB>-650.000000 -700.000000 670.000000 650.000000</innerBB>
-		<outerBB>-900.000000 -920.000000 820.000000 950.000000</outerBB>
 		<deferred>
 			<useEdgeFog>false</useEdgeFog>
+			<edgeFogInnerBB>-650.000000 -700.000000 670.000000 650.000000</edgeFogInnerBB>
+			<edgeFogOuterBB>-900.000000 -920.000000 820.000000 950.000000</edgeFogOuterBB>
 			<color>0.470000 0.634300 1.000000 15.000000</color>
 			<density>0.001400</density>
 			<height>-51.790001</height>
@@ -21,6 +21,8 @@
 		</deferred>
 		<simplifiedDeferred>
 			<useEdgeFog>true</useEdgeFog>
+			<edgeFogInnerBB>-496.000000 -484.000000 605.000000 606.500000</edgeFogInnerBB>
+			<edgeFogOuterBB>-569.500000 -547.000000 741.500000 743.000000</edgeFogOuterBB>
 			<color>0.470588 0.619608 1.000000 12.000000</color>
 			<density>0.001400</density>
 			<height>-51.790001</height>
@@ -34,6 +36,8 @@
 		</simplifiedDeferred>
 		<forward>
 			<useEdgeFog>true</useEdgeFog>
+			<edgeFogInnerBB>-650.000000 -700.000000 670.000000 650.000000</edgeFogInnerBB>
+			<edgeFogOuterBB>-900.000000 -920.000000 820.000000 950.000000</edgeFogOuterBB>
 			<color>0.718900 0.802698 0.910000 5.000000</color>
 			<density>0.002400</density>
 			<height>0.000000</height>
@@ -48,36 +52,31 @@
 		<enable>true</enable>
 		<adaptationSpeed>120.000000</adaptationSpeed>
 		<bloom>
-			<enable>true</enable>
 			<threshold>0.330000</threshold>
 			<amount>0.470000</amount>
-			<tint>1.000000 1.000000 1.000000</tint>
 			<dirtAmount>0.880000</dirtAmount>
 		</bloom>
 		<environment>
 			<sunlightLumMultiplier>23.110001</sunlightLumMultiplier>
-			<ambientLumMultiplier>1.000000</ambientLumMultiplier>
 			<sunLumMultiplier>15.100000</sunLumMultiplier>
 			<skyLumMultiplier>5.000000</skyLumMultiplier>
+			<skyLumMultiplierDeferred>1.000000</skyLumMultiplierDeferred>
 			<LDR2HDRenableLumaMask>false</LDR2HDRenableLumaMask>
 			<LDR2HDRsaturation>1.000000</LDR2HDRsaturation>
 		</environment>
 		<tonemappings>
 			<tonemapping>
 				<name>RexpTM</name>
-				<middleGray>0.190000</middleGray>
 				<whitePoint>1.000000</whitePoint>
 				<blackPoint>1.500000</blackPoint>
 			</tonemapping>
 			<tonemapping>
 				<name>FilmicTM</name>
-				<middleGray>0.194354</middleGray>
 				<whitePoint>12.790000</whitePoint>
 				<blackPoint>3.500000</blackPoint>
 			</tonemapping>
 			<tonemapping>
 				<name>LinearExpTM</name>
-				<middleGray>0.285637</middleGray>
 				<whitePoint>1.750000</whitePoint>
 				<blackPoint>1.300000</blackPoint>
 			</tonemapping>
@@ -337,4 +336,7 @@
 		<transmissionMult>0.600000</transmissionMult>
 		<waterReflectionAttenuation>1.000000</waterReflectionAttenuation>
 	</SimplifiedDeferred>
+	<VisibilityTunnel>
+		<shouldOverrideSettings>false</shouldOverrideSettings>
+	</VisibilityTunnel>
 </root>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB158_Executor/normal/lod0/Hull</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/british/GB158_Executor/normal/lod1/Hull</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>
+			-1.535 -0.613821 -3.770896
+			<!--BW_String-->
+		</min>
+		<max>
+			1.535 0.770672 2.947002
+			<!--BW_String-->
+		</max>
+	</visibilityBox>
+</root>

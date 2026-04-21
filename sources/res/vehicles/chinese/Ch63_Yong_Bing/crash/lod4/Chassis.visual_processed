@@ -22,7 +22,7 @@
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 0.000000 -1.000000</row1>
 					<row2>0.000000 1.000000 0.000000</row2>
-					<row3>0.000000 6.742513 0.000000</row3>
+					<row3>0.000000 4.292000 0.000000</row3>
 				</transform>
 			</node>
 			<node>
@@ -117,53 +117,6 @@
 				0
 				<material>
 					<identifier>tank_chassis_01_skinned</identifier>
-					<property>
-						g_detailUVTiling
-                        &gt;
-						<Vector4>
-							3.50685 3.50685 0.000000 0.000000
-							<!--BW_String-->
-						</Vector4>
-					</property>
-					<property>
-						g_detailPowerGloss
-                        &gt;
-						<Float>
-							0.35
-							<!--BW_String-->
-						</Float>
-					</property>
-					<property>
-						g_detailPowerAlbedo
-                        &gt;
-						<Float>
-							0.11
-							<!--BW_String-->
-						</Float>
-					</property>
-					<property>
-						g_maskBias
-                        &gt;
-						<Float>
-							0.18
-							<!--BW_String-->
-						</Float>
-					</property>
-					<property>
-						g_detailPower
-                        &gt;
-						<Float>5</Float>
-					</property>
-					<property>
-						metallicDetailMap
-                        &gt;
-						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
-					</property>
-					<property>
-						g_useDetailMetallic
-                        &gt;
-						<Bool>true</Bool>
-					</property>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>

@@ -1236,6 +1236,10 @@
 					2.1 2.1 0.1 0.1
 					<!--BW_String-->
 				</germany:G98_Waffentrager_E100>
+				<germany:G98_Waffentrager_E100_CFE_T>
+					2.1 2.1 0.1 0.1
+					<!--BW_String-->
+				</germany:G98_Waffentrager_E100_CFE_T>
 				<germany:G98_WT_auf_E_100_Phonix>
 					2.1 2.1 0.1 0.1
 					<!--BW_String-->
@@ -4363,6 +4367,10 @@
 					2.43243 2.43243 0.2 0.6
 					<!--BW_String-->
 				</germany:G98_Waffentrager_E100>
+				<germany:G98_Waffentrager_E100_CFE_T>
+					2.43243 2.43243 0.2 0.6
+					<!--BW_String-->
+				</germany:G98_Waffentrager_E100_CFE_T>
 				<germany:G98_WT_auf_E_100_Phonix>
 					2.43243 2.43243 0.2 0.6
 					<!--BW_String-->
@@ -12979,5 +12987,64 @@
 				<tags>excluded_from_customization</tags>
 			</exclude>
 		</vehicleFilter>
+	</itemGroup>
+	<itemGroup>
+		<season>ALL</season>
+		<historical>1</historical>
+		<userString>#vehicle_customization:camouflage/opaque</userString>
+		<priceGroup>camouflages 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF</vehicles>
+			</exclude>
+			<exclude>
+				<tags>excluded_from_customization</tags>
+			</exclude>
+		</vehicleFilter>
+		<camouflage>
+			<id>1268</id>
+			<texture>vehicles/russian/Camouflage/movieNight.dds</texture>
+			<userString>#vehicle_customization:camouflage/movieNight/label</userString>
+			<description>#vehicle_customization:camouflage/empty/description</description>
+			<tags>hiddenInUI fullRGB</tags>
+			<invisibilityFactor>1</invisibilityFactor>
+			<scales>
+				1.33 1 0.7
+				<!--BW_String-->
+			</scales>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
+			<rotation>
+				<HULL>
+					-0.15708
+					<!--BW_String-->
+				</HULL>
+				<TURRET>
+					-0.15708
+					<!--BW_String-->
+				</TURRET>
+				<GUN>
+					-0.15708
+					<!--BW_String-->
+				</GUN>
+			</rotation>
+			<tilingSettings>
+				<type>relativewithfactor</type>
+				<factor>
+					3.4 3.4
+					<!--BW_String-->
+				</factor>
+				<offset>
+					0.96 -0.44
+					<!--BW_String-->
+				</offset>
+			</tilingSettings>
+		</camouflage>
 	</itemGroup>
 </root>

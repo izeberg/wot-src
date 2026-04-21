@@ -70,7 +70,6 @@
 						<type>BoolT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>Variable</class>
@@ -129,7 +128,6 @@
 						<type>BoolT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>VariableReadOnly</class>
@@ -171,8 +169,6 @@
 			<block>
 				<class>GetRootOf</class>
 				<id>GetRootOf_1</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>GetVariable</class>
@@ -185,30 +181,22 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>GameObjectToVehicle</class>
 				<id>GameObjectToVehicle_1</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>CompareVehicles</class>
 				<id>CompareVehicles_1</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>If</class>
 				<id>If_1</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>OnAnyVehicleDamaged</class>
 				<id>OnAnyVehicleDamaged_1</id>
-				<params/>
 				<slots>
 					<slot>
 						<name>cooldown</name>
@@ -217,21 +205,24 @@
 				</slots>
 			</block>
 			<block>
-				<class>BitwiseAND</class>
+				<class>BitwiseAnd</class>
 				<id>BitwiseAND_1</id>
 				<params>
+					<param>
+						2
+						<name>Input Count</name>
+						<type>IntT</type>
+					</param>
 					<param>
 						2
 						<name>Masks Count</name>
 						<type>IntT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>CompareFloats</class>
 				<id>CompareFloats_1</id>
-				<params/>
 				<slots>
 					<slot>
 						<name>b</name>
@@ -242,8 +233,6 @@
 			<block>
 				<class>StartScript</class>
 				<id>StartScript_1</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>SetVariable</class>
@@ -256,13 +245,10 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>GetVehicleAppearanceGameObject</class>
 				<id>GetVehicleAppearanceGameObject_2</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>SetVariable</class>
@@ -275,18 +261,14 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>GetVehicleGameObject</class>
 				<id>GetVehicleGameObject_3</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>FindFirstNode</class>
 				<id>FindFirstNode_4</id>
-				<params/>
 				<slots>
 					<slot>
 						<name>name</name>
@@ -313,13 +295,10 @@
 						<type>StringT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>If</class>
 				<id>If_2</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>PrintToGameLogs</class>
@@ -341,8 +320,6 @@
 			<block>
 				<class>IsValid</class>
 				<id>IsValid_1</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>GetVariable</class>
@@ -355,7 +332,6 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>GetVariable</class>
@@ -368,7 +344,6 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>ComponentMethod</class>
@@ -398,12 +373,10 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>RandomInteger</class>
 				<id>RandomInteger_1</id>
-				<params/>
 				<slots>
 					<slot>
 						<name>a</name>
@@ -422,12 +395,10 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>SubtractInteger</class>
 				<id>SubtractInteger_1</id>
-				<params/>
 				<slots>
 					<slot>
 						<name>b</name>
@@ -493,13 +464,13 @@
 			</connection>
 			<connection>
 				<from>CompareVehicles_1</from>
-				<input>m0</input>
+				<input>i1</input>
 				<to>BitwiseAND_1</to>
 				<output>res</output>
 			</connection>
 			<connection>
 				<from>CompareFloats_1</from>
-				<input>m1</input>
+				<input>i2</input>
 				<to>BitwiseAND_1</to>
 				<output>greater</output>
 			</connection>

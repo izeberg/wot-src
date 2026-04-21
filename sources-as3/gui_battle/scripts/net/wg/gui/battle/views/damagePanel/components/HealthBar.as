@@ -20,7 +20,7 @@ package net.wg.gui.battle.views.damagePanel.components
          super.draw();
          if(isInvalid(InvalidationType.DATA))
          {
-            _loc1_ = 1 + totalFrames * (this.progress * 0.01) | 0;
+            _loc1_ = 1 + totalFrames * (this.progress * 0.01);
             gotoAndStop(_loc1_);
          }
       }

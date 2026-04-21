@@ -347,6 +347,9 @@ class ArenaDataProvider(IArenaDataProvider):
     def getVehiclesInfoIterator(self):
         return self.__vInfoVOs.itervalues()
 
+    def getAllyVehiclesInfoIterator(self):
+        return (vehicleVO for vehicleVO in self.getVehiclesInfoIterator() if self.isAllyTeam(vehicleVO.team))
+
     def getVehiclesStatsIterator(self):
         return self.__vStatsVOs.itervalues()
 

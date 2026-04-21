@@ -20,7 +20,7 @@ package net.wg.gui.lobby.settings.feedback.damageLog.data
       
       private static const ACTION_TYPE_IMG:String = "actionTypeImg";
       
-      private static const VEHICLE_TYPE_IMGVEHICLE_TYPE_IMG:String = "vehicleTypeImg";
+      private static const VEHICLE_TYPE_IMG:String = "vehicleTypeImg";
       
       private static const VEHICLE_NAME:String = "vehicleName";
       
@@ -54,29 +54,12 @@ package net.wg.gui.lobby.settings.feedback.damageLog.data
          return new Vector.<MessageRenderModel>(0);
       }
       
-      private static function getDataByEventTypeSettingIdx(param1:int) : Vector.<MessageRenderModel>
-      {
-         var _loc2_:Vector.<MessageRenderModel> = null;
-         switch(param1)
-         {
-            case 0:
-               _loc2_ = getTotal();
-               break;
-            case 1:
-               _loc2_ = getPositive();
-               break;
-            case 2:
-               _loc2_ = getNegative();
-         }
-         return _loc2_;
-      }
-      
       private static function getItemData(param1:String, param2:String, param3:String, param4:String, param5:String, param6:String) : MessageRenderModel
       {
          var _loc7_:Object = {};
          _loc7_[VALUE] = param1;
          _loc7_[ACTION_TYPE_IMG] = param2;
-         _loc7_[VEHICLE_TYPE_IMGVEHICLE_TYPE_IMG] = param3;
+         _loc7_[VEHICLE_TYPE_IMG] = param3;
          _loc7_[VEHICLE_NAME] = param4;
          _loc7_[SHELL_TYPE_STR] = param5;
          _loc7_[SHELL_TYPE_BG] = param6;

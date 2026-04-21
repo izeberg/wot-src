@@ -1,3 +1,4 @@
+from __future__ import absolute_import, division
 import logging, typing, BigWorld, CGF
 from CommandMapping import CMD_CM_SPECIAL_ABILITY, CMD_CM_VEHICLE_SWITCH_AUTOROTATION
 from cgf_components_common.vehicle_mechanics.staged_jet_boosters import StagedJetBoostersControllerDescriptor

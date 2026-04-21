@@ -78,6 +78,8 @@ GUN_CAN_BE_AUTO_SHOOT = 9
 GUN_AUTO_SHOOT = 10
 GUN_CAN_BE_TWIN_GUN = 11
 GUN_TWIN_GUN = 12
+GUN_CAN_BE_LOW_CHARGE_SHOT = 13
+LOW_CHARGE_SHOT = 14
 EXTRA_MODULE_INFO = 'extraModuleInfo'
 FIELD_SPECIALIZATIONS = 'specs'
 FIELD_HIGHLIGHT_TYPE = 'highlightType'
@@ -116,6 +118,8 @@ def code2str(code):
         return 'Dossiers are unavailable'
     if code == AccountCommands.RES_RATE_LIMIT_COOLDOWN:
         return 'Identical requests rate limit cooldown'
+    if code == AccountCommands.RES_LOCKED_VEHICLE:
+        return 'Vehicle is locked for this request type'
     return 'Unknown error code'
 
 

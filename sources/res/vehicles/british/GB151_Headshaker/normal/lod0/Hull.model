@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB151_Headshaker/normal/lod0/Hull</nodefullVisual>
+	<parent>vehicles/british/GB151_Headshaker/normal/lod1/Hull</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.668704 -0.573504 -3.673269</min>
+		<max>1.671904 2.714025 3.693748</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

@@ -2033,6 +2033,9 @@ msgstr "隐藏界面元素的逐步显示暂时关闭。"
 msgid "limitedUI/switchOn"
 msgstr "隐藏界面元素的逐步显示已再次开启。您可在设置中关闭它。"
 
+msgid "locked_vehicle_error"
+msgstr "该操作不适用于已预设的坦克。"
+
 msgid "login_to_other_game_unknown"
 msgstr "该账号已在其它游戏中登录。"
 
@@ -2687,6 +2690,9 @@ msgstr "你被从战队中踢出。"
 
 msgid "prebattle/kick/type/unknown"
 msgstr "你被从团队中踢出。"
+
+msgid "prebattle/limits/notEnoughVehicles"
+msgstr "您必须拥有至少3辆符合该模式要求的坦克。请参阅\"关于天梯战\"页面了解详情。"
 
 msgid "prebattle/request/name/AUTO_SEARCH"
 msgstr "自动匹配"
@@ -4491,6 +4497,18 @@ msgstr "操作失败。您的所有金币将在资产同步完成后可用。"
 
 msgid "video/error"
 msgstr "视频播放错误。错误信息:%(code)s。"
+
+msgid "w2gt/switchOff/description"
+msgstr "小地图战斗区域推荐暂不可用。"
+
+msgid "w2gt/switchOff/header"
+msgstr "技术问题"
+
+msgid "w2gt/switchOn/description"
+msgstr "小地图战斗区域推荐现已可用。投入战斗！"
+
+msgid "w2gt/switchOn/header"
+msgstr "功能已恢复"
 
 msgid "wallet/available"
 msgstr "WG Wallet成功同步。您现在可以获得所有的金币、战争债券、银币和全局经验。"

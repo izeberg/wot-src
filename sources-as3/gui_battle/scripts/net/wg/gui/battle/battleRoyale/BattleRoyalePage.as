@@ -247,6 +247,7 @@ package net.wg.gui.battle.battleRoyale
          }
          this.damageScreen.updateStage(param1,param2);
          this.updateShamrockSideBarPosition();
+         this.updateBattleDamageLogPanelPosition();
       }
       
       override protected function configUI() : void
@@ -523,20 +524,6 @@ package net.wg.gui.battle.battleRoyale
       {
       }
       
-      private function onShamrockSideBarResizeHandler(param1:Event) : void
-      {
-         this.updateShamrockSideBarPosition();
-      }
-      
-      private function updateShamrockSideBarPosition() : void
-      {
-         if(this.shamrockSideBar)
-         {
-            this.shamrockSideBar.x = _width - this.shamrockSideBar.getRightOffset();
-            this.shamrockSideBar.y = SHAMROCK_BAR_Y_OFFSET;
-         }
-      }
-      
       public function as_setCrosshairMode(param1:int) : void
       {
          if(param1 == CROSSHAIR_VIEW_ID.POSTMORTEM)
@@ -554,6 +541,15 @@ package net.wg.gui.battle.battleRoyale
          this.damageScreen.visible = param1;
          this.damageScreen.showSingleShineAnim();
          this.statusNotificationsPanel.notifyZoneDamage();
+      }
+      
+      private function updateShamrockSideBarPosition() : void
+      {
+         if(this.shamrockSideBar)
+         {
+            this.shamrockSideBar.x = _width - this.shamrockSideBar.getRightOffset();
+            this.shamrockSideBar.y = SHAMROCK_BAR_Y_OFFSET;
+         }
       }
       
       private function updateVehicleErrorMessageListVisible(param1:Boolean) : void
@@ -635,6 +631,11 @@ package net.wg.gui.battle.battleRoyale
          }
       }
       
+      private function onShamrockSideBarResizeHandler(param1:Event) : void
+      {
+         this.updateShamrockSideBarPosition();
+      }
+      
       private function onRedialMenuDeactivateHandler(param1:Event) : void
       {
          GTweener.removeTweens(this.respawnMessagePanel);
@@ -676,10 +677,7 @@ package net.wg.gui.battle.battleRoyale
       
       private function onConsumablesPanelUpdatePositionHandler(param1:ConsumablesPanelEvent) : void
       {
-         if(!isPostMortem)
-         {
-            this.updateBattleDamageLogPanelPosition();
-         }
+         this.updateBattleDamageLogPanelPosition();
          minimap.updateSizeIndex(false);
       }
       

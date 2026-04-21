@@ -1,7 +1,8 @@
 import typing, ResMgr
+from constants import SHELL_TYPES_INDICES
+from debug_utils import LOG_ERROR
 from items import _xml
 from items.components import component_constants
-from soft_exception import SoftException
 EffectDesc = typing.NamedTuple('EffectDesc', (('prefab', str),))
 ShotEffectItemDesc = typing.NamedTuple('ShotEffectItemDesc', (('prefab', str), ('decal', int)))
 EffectDescMap = typing.Dict[(str, EffectDesc)]
@@ -17,6 +18,12 @@ GunEffectDescMap = typing.Dict[(str, GunEffectDesc)]
 ShotEffectDesc = typing.NamedTuple('ShotEffectDesc', (
  (
   'idx', int),
+ (
+  'defaultHit', ShotEffectItemDesc),
+ (
+  'defaultVehicleHit', ShotEffectItemDesc),
+ (
+  'defaultSceneHit', ShotEffectItemDesc),
  (
   'groups', ShotEffectGroups)))
 ShotEffects = typing.NamedTuple('ShotEffects', (
@@ -36,15 +43,33 @@ Decals = typing.NamedTuple('Decals', (
   'effects', typing.Sequence[DecalDesc]),
  (
   'indexes', typing.Dict[(str, int)])))
+ShotDefaults = typing.NamedTuple('ShotDefaults', (
+ (
+  'default', str),
+ (
+  'shellTypeEffects', typing.Dict[(str, str)])))
 Defaults = typing.NamedTuple('Defaults', (
  (
   'gun', str),
  (
-  'shot', str)))
+  'shot', ShotDefaults)))
 
 def readDefaultPrefabEffects(xmlCtx, section, subsectionName):
     section = _xml.getSubsection(xmlCtx, section, subsectionName)
-    return Defaults(_xml.readStringOrEmpty(xmlCtx, section, 'gun'), _xml.readStringOrEmpty(xmlCtx, section, 'shot'))
+    gunDefault = _xml.readStringOrEmpty(xmlCtx, section, 'gun').strip()
+    shotDefault = ''
+    shotShellTypeEffects = {}
+    shotSection = section['shot']
+    if shotSection is not None:
+        for sectionName, subsection in shotSection.items():
+            if sectionName == 'default':
+                shotDefault = subsection.asString.strip() or shotDefault
+            elif sectionName in SHELL_TYPES_INDICES:
+                shotShellTypeEffects[sectionName] = subsection.asString.strip()
+            else:
+                LOG_ERROR(('Unrecognized shell type name when reading defaultPrefabEffects: {}').format(sectionName))
+
+    return Defaults(gunDefault, ShotDefaults(shotDefault, shotShellTypeEffects))
 
 
 def readGunEffects(xmlPath):
@@ -121,12 +146,23 @@ def _readShotEffectItem(xmlCtx, section, decals):
 
 def _readShotEffect(xmlCtx, section, decals, idx):
     res = {}
+    defaultHit = ShotEffectItemDesc('', component_constants.INVALID_EFFECT_INDEX)
+    defaultVehicleHit = ShotEffectItemDesc('', component_constants.INVALID_EFFECT_INDEX)
+    defaultSceneHit = ShotEffectItemDesc('', component_constants.INVALID_EFFECT_INDEX)
     for sname, subsection in section.items():
         xmlCtx = (
          xmlCtx, sname)
-        res[sname] = _readShotEffectItem(xmlCtx, subsection, decals)
+        shotEffectItem = _readShotEffectItem(xmlCtx, subsection, decals)
+        if sname == 'defaultHit':
+            defaultHit = shotEffectItem
+        elif sname == 'defaultVehicleHit':
+            defaultVehicleHit = shotEffectItem
+        elif sname == 'defaultSceneHit':
+            defaultSceneHit = shotEffectItem
+        else:
+            res[sname] = shotEffectItem
 
-    return ShotEffectDesc(idx, res)
+    return ShotEffectDesc(idx, defaultHit, defaultVehicleHit, defaultSceneHit, res)
 
 
 def _readDecal(xmlCtx, section, idx):
