@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+from future.utils import viewitems
 import BigWorld, ResMgr, Keys, Event, Settings
 from shared_utils import findFirst
 from debug_utils import LOG_DEBUG
@@ -123,7 +125,7 @@ class CommandMapping(object):
     def get(self, commandName):
         try:
             command = int(self.getCommand(commandName))
-            for fireKey, listKeyInfo in self.__mapping.iteritems():
+            for fireKey, listKeyInfo in viewitems(self.__mapping):
                 for keyInfo in listKeyInfo:
                     if keyInfo[0] == command and not keyInfo[1]:
                         return fireKey
@@ -134,7 +136,7 @@ class CommandMapping(object):
         return
 
     def getCommandKeys(self, command):
-        for fireKey, listKeyInfo in self.__mapping.iteritems():
+        for fireKey, listKeyInfo in viewitems(self.__mapping):
             for keyInfo in listKeyInfo:
                 if keyInfo[0] == command:
                     return (fireKey, keyInfo[1])
@@ -154,12 +156,12 @@ class CommandMapping(object):
             return False
 
         delListFireKey = []
-        for fireKey in self.__mapping:
+        for fireKey, keyInfos in viewitems(self.__mapping):
             if delFireKey is not None:
                 if fireKey != delFireKey:
                     continue
             delListKeyInfo = []
-            for keyInfo in self.__mapping[fireKey]:
+            for keyInfo in keyInfos:
                 if keyInfo[0] != delCommand:
                     continue
                 if delSatelliteKeys is not None:
@@ -171,9 +173,9 @@ class CommandMapping(object):
                 delListKeyInfo.append(keyInfo)
 
             for keyInfo in delListKeyInfo:
-                self.__mapping[fireKey].remove(keyInfo)
+                keyInfos.remove(keyInfo)
 
-            if not self.__mapping[fireKey]:
+            if not keyInfos:
                 delListFireKey.append(fireKey)
 
         for fireKey in delListFireKey:
@@ -196,7 +198,7 @@ class CommandMapping(object):
         self.__loadDevelopment()
 
     def isActive(self, command):
-        for fireKey, listKeyInfo in self.__mapping.iteritems():
+        for fireKey, listKeyInfo in viewitems(self.__mapping):
             if not BigWorld.isKeyDown(fireKey):
                 continue
             for keyInfo in listKeyInfo:
@@ -272,7 +274,7 @@ class CommandMapping(object):
 
     def save(self):
         tmpList = []
-        for fireKey, listKeyInfo in self.__mapping.iteritems():
+        for fireKey, listKeyInfo in viewitems(self.__mapping):
             for command, satelliteKeys, isDefault in listKeyInfo:
                 if isDefault:
                     continue
@@ -322,7 +324,7 @@ class CommandMapping(object):
             tempList.append((commandName, fireKeyName, satelliteKeyNames))
 
         if asDefault is False:
-            for commandNameTarget, commandNameSrc in CO_DEPENDENT_KEYS.iteritems():
+            for commandNameTarget, commandNameSrc in viewitems(CO_DEPENDENT_KEYS):
                 if findFirst(lambda a: a[0] == commandNameTarget, tempList, None) is None:
                     src = findFirst(lambda a: a[0] == commandNameSrc, tempList, None)
                     if src is not None:

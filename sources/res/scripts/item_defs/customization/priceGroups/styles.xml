@@ -317,4 +317,14 @@
 		</price>
 		<notInShop>False</notInShop>
 	</priceGroup>
+	<priceGroup>
+		<id>119</id>
+		<name>styles 0g notInShop</name>
+		<tags>styles</tags>
+		<price>
+			0
+			<gold/>
+		</price>
+		<notInShop>true</notInShop>
+	</priceGroup>
 </root>

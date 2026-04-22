@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from GlobalMapBase import GlobalMapBase, GM_CLIENT_METHOD
 from debug_utils import LOG_DEBUG_DEV
 import Event

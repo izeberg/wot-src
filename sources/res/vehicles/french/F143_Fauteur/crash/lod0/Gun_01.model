@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/french/F143_Fauteur/crash/lod1/Gun_01</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-0.047341 -0.341578 -1.789198</min>
+		<max>0.533929 0.312489 7.879763</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/french/F143_Fauteur/crash/lod0/Gun_01</nodefullVisual>
+</root>

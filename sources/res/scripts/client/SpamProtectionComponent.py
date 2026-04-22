@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, BigWorld
 _logger = logging.getLogger(__name__)
 

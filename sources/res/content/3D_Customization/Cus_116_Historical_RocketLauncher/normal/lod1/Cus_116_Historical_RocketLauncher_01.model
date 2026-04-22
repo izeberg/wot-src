@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>content/3D_Customization/Cus_116_Historical_RocketLauncher/normal/lod1/Cus_116_Historical_RocketLauncher_01</nodefullVisual>
+	<parent>content/3D_Customization/Cus_116_Historical_RocketLauncher/normal/lod2/Cus_116_Historical_RocketLauncher_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.614441 -0.000663 -0.705533</min>
+		<max>0.048915 0.277296 0.792471</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

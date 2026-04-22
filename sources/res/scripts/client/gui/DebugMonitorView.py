@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+from past.builtins import xrange
 from debug_utils import LOG_ERROR, LOG_CURRENT_EXCEPTION
 from gui.DebugView import DebugView
 from gui.DebugView import DebugViewItem

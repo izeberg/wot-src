@@ -18879,6 +18879,9 @@
 							<item>
 								<value>PostBattleCommonGroup</value>
 							</item>
+							<item>
+								<value>Comp7PostBattleCommonGroup</value>
+							</item>
 						</collection>
 					</property>
 				</config>
@@ -29183,6 +29186,10 @@
 						<value>0</value>
 					</property>
 					<property>
+						<name>DynamicModelLinkType</name>
+						<value>0</value>
+					</property>
+					<property>
 						<name>Layers</name>
 						<collection>
 							<item>
@@ -29270,6 +29277,10 @@
 				<config>
 					<property>
 						<name>Auto Start</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>DynamicModelLinkType</name>
 						<value>0</value>
 					</property>
 					<property>
@@ -29363,6 +29374,10 @@
 						<value>0</value>
 					</property>
 					<property>
+						<name>DynamicModelLinkType</name>
+						<value>0</value>
+					</property>
+					<property>
 						<name>Layers</name>
 						<collection>
 							<item>
@@ -29450,6 +29465,10 @@
 				<config>
 					<property>
 						<name>Auto Start</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>DynamicModelLinkType</name>
 						<value>0</value>
 					</property>
 					<property>
@@ -29543,6 +29562,10 @@
 						<value>0</value>
 					</property>
 					<property>
+						<name>DynamicModelLinkType</name>
+						<value>0</value>
+					</property>
+					<property>
 						<name>Layers</name>
 						<collection>
 							<item>
@@ -29630,6 +29653,10 @@
 				<config>
 					<property>
 						<name>Auto Start</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>DynamicModelLinkType</name>
 						<value>0</value>
 					</property>
 					<property>
@@ -29723,6 +29750,10 @@
 						<value>0</value>
 					</property>
 					<property>
+						<name>DynamicModelLinkType</name>
+						<value>0</value>
+					</property>
+					<property>
 						<name>Layers</name>
 						<collection>
 							<item>
@@ -29810,6 +29841,10 @@
 				<config>
 					<property>
 						<name>Auto Start</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>DynamicModelLinkType</name>
 						<value>0</value>
 					</property>
 					<property>
@@ -29903,6 +29938,10 @@
 						<value>0</value>
 					</property>
 					<property>
+						<name>DynamicModelLinkType</name>
+						<value>0</value>
+					</property>
+					<property>
 						<name>Layers</name>
 						<collection>
 							<item>
@@ -29990,6 +30029,10 @@
 				<config>
 					<property>
 						<name>Auto Start</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>DynamicModelLinkType</name>
 						<value>0</value>
 					</property>
 					<property>
@@ -30083,6 +30126,10 @@
 						<value>0</value>
 					</property>
 					<property>
+						<name>DynamicModelLinkType</name>
+						<value>0</value>
+					</property>
+					<property>
 						<name>Layers</name>
 						<collection>
 							<item>
@@ -30170,6 +30217,10 @@
 				<config>
 					<property>
 						<name>Auto Start</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>DynamicModelLinkType</name>
 						<value>0</value>
 					</property>
 					<property>
@@ -30263,6 +30314,10 @@
 						<value>0</value>
 					</property>
 					<property>
+						<name>DynamicModelLinkType</name>
+						<value>0</value>
+					</property>
+					<property>
 						<name>Layers</name>
 						<collection>
 							<item>
@@ -30350,6 +30405,10 @@
 				<config>
 					<property>
 						<name>Auto Start</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>DynamicModelLinkType</name>
 						<value>0</value>
 					</property>
 					<property>
@@ -30443,6 +30502,10 @@
 						<value>0</value>
 					</property>
 					<property>
+						<name>DynamicModelLinkType</name>
+						<value>0</value>
+					</property>
+					<property>
 						<name>Layers</name>
 						<collection>
 							<item>
@@ -30530,6 +30593,10 @@
 				<config>
 					<property>
 						<name>Auto Start</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>DynamicModelLinkType</name>
 						<value>0</value>
 					</property>
 					<property>

@@ -22,7 +22,7 @@ package net.wg.gui.prebattle.meta
       
       function isPlayerCreatorS() : Boolean;
       
-      function isReadyBtnEnabledS() : Boolean;
+      function updateReadyBtnStateS() : void;
       
       function isLeaveBtnEnabledS() : Boolean;
       
@@ -35,6 +35,8 @@ package net.wg.gui.prebattle.meta
       function as_enableLeaveBtn(param1:Boolean) : void;
       
       function as_enableReadyBtn(param1:Boolean) : void;
+      
+      function as_setReadyBtnTooltip(param1:String) : void;
       
       function as_setCoolDownForReadyButton(param1:uint) : void;
       

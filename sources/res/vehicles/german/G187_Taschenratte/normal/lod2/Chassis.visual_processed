@@ -1765,13 +1765,13 @@
 		<node>Track_L5_BlendBone</node>
 		<node>V_BlendBone</node>
 		<node>Track_L10_BlendBone</node>
+		<node>Track_L9_BlendBone</node>
 		<node>Track_L3_BlendBone</node>
 		<node>Track_L11_BlendBone</node>
 		<node>Track_L1_BlendBone</node>
 		<node>Track_L4_BlendBone</node>
-		<node>Track_L7_BlendBone</node>
-		<node>Track_L9_BlendBone</node>
 		<node>Track_L8_BlendBone</node>
+		<node>Track_L7_BlendBone</node>
 		<geometry>
 			<vertices>chassis_LShape_split_1.vertices</vertices>
 			<primitive>chassis_LShape_split_1.indices</primitive>
@@ -1844,7 +1844,7 @@
 						<Bool>true</Bool>
 					</property>
 				</material>
-				<groupOrigin>-1.271811 0.481243 0.197341</groupOrigin>
+				<groupOrigin>-1.145569 0.481243 0.197341</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -1946,7 +1946,7 @@
 						<Bool>true</Bool>
 					</property>
 				</material>
-				<groupOrigin>-1.246611 0.667445 -0.060022</groupOrigin>
+				<groupOrigin>-1.265279 0.667445 -0.060022</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -1955,13 +1955,13 @@
 		<node>Track_R5_BlendBone</node>
 		<node>V_BlendBone</node>
 		<node>Track_R10_BlendBone</node>
+		<node>Track_R9_BlendBone</node>
 		<node>Track_R3_BlendBone</node>
 		<node>Track_R11_BlendBone</node>
 		<node>Track_R1_BlendBone</node>
 		<node>Track_R4_BlendBone</node>
-		<node>Track_R7_BlendBone</node>
-		<node>Track_R9_BlendBone</node>
 		<node>Track_R8_BlendBone</node>
+		<node>Track_R7_BlendBone</node>
 		<geometry>
 			<vertices>chassis_RShape_split_1.vertices</vertices>
 			<primitive>chassis_RShape_split_1.indices</primitive>
@@ -2034,7 +2034,7 @@
 						<Bool>true</Bool>
 					</property>
 				</material>
-				<groupOrigin>1.271811 0.481243 0.197341</groupOrigin>
+				<groupOrigin>1.145569 0.481243 0.197341</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -2136,7 +2136,7 @@
 						<Bool>true</Bool>
 					</property>
 				</material>
-				<groupOrigin>1.246611 0.667445 -0.067288</groupOrigin>
+				<groupOrigin>1.265279 0.667445 -0.067288</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>

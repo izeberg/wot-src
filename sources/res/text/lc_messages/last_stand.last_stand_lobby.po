@@ -1,0 +1,629 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-01-12 10:00+0300\n"
+"PO-Revision-Date: 2023-01-12 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "#PluralForms"
+msgstr "nplurals=2; plural=(n != 1);"
+
+msgid "abilitiesIncomplete/cancel"
+msgstr "Battle Anyway"
+
+msgid "abilitiesIncomplete/submit"
+msgstr "Equip!"
+
+msgid "abilitiesIncomplete/title"
+msgstr "Tactical Devices Incomplete"
+
+msgid "abilitiesIncomplete/warning"
+msgstr ""
+"Your selected vehicle is missing one or more Tactical Devices. This could "
+"significantly impact your battle performance. Enter the battle anyway?"
+
+msgid "ammoSetup/changeHotKey/body"
+msgstr ""
+"You can customize the default event hotkey presets for shells and Tactical Devices.\n"
+"This change applies only to event battles and will not affect any other modes.\n"
+"You can still modify individual hotkeys in Menu — Settings — Controls (under Consumables)."
+
+msgid "ammoSetup/changeHotKey/header"
+msgstr "Consumable Hotkey Presets Change"
+
+msgid "badgeWidget/round"
+msgstr "%(count)s K"
+
+msgid "badgeWidget/tooltipBody"
+msgstr ""
+"Complete this mission to receive a unique Last Stand: Operation Pandora "
+"badge:"
+
+msgid "badgeWidget/tooltipHeader"
+msgstr "Epic Achievement Mission"
+
+msgid "booster/booster_ability_cost/description"
+msgstr ""
+"When researched, reduces the {EDCB9E_Start}Mirium cost{EDCB9E_End} of all "
+"Tactical Devices by "
+"{EDCB9E_Start}%(ability_cost_add_percent)s%%{EDCB9E_End}."
+
+msgid "booster/booster_ability_cost/name"
+msgstr "Mirium Efficiency"
+
+msgid "booster/booster_ability_duration/description"
+msgstr ""
+"When researched, increases the {EDCB9E_Start}effect duration of Tactical "
+"Devices{EDCB9E_End} by "
+"{EDCB9E_Start}%(ability_duration_add_percent)s%%{EDCB9E_End}."
+
+msgid "booster/booster_ability_duration/name"
+msgstr "Device Effect Duration"
+
+msgid "booster/booster_ability_radius/description"
+msgstr ""
+"When researched, increases the {EDCB9E_Start} effect radius of Tactical "
+"Devices{EDCB9E_End} by "
+"{EDCB9E_Start}%(ability_radius_add_percent)s%%{EDCB9E_End}."
+
+msgid "booster/booster_ability_radius/name"
+msgstr "Device Effect Radius"
+
+msgid "booster/booster_heal/description"
+msgstr ""
+"When researched, increases all {EDCB9E_Start}healing effects{EDCB9E_End} "
+"applied to the vehicle by {EDCB9E_Start}%(heal_add_percent)s%%{EDCB9E_End}."
+
+msgid "booster/booster_heal/name"
+msgstr "Healing Effects"
+
+msgid "booster/booster_obelisk_translated_damage/description"
+msgstr ""
+"When researched, increases the amount of {EDCB9E_Start}damage transmitted "
+"from Obelisks{EDCB9E_End} to enemy vehicles by "
+"{EDCB9E_Start}%(obelisk_translated_damage_add_percent)s%%{EDCB9E_End}."
+
+msgid "booster/booster_obelisk_translated_damage/name"
+msgstr "Transmitted Obelisk Damage"
+
+msgid "booster/booster_pick_up_radius/description"
+msgstr ""
+"When researched, increases the {EDCB9E_Start}Mirium pickup "
+"radius{EDCB9E_End} from enemies by "
+"{EDCB9E_Start}%(pick_up_radius_add)s{EDCB9E_End}."
+
+msgid "booster/booster_pick_up_radius/name"
+msgstr "Mirium Pickup Radius"
+
+msgid "booster/booster_pick_up_souls/description"
+msgstr ""
+"When researched, increases the {EDCB9E_Start}amount of Mirium "
+"collected{EDCB9E_End} from destroyed vehicles by "
+"{EDCB9E_Start}%(pick_up_souls_add_percent)s%%{EDCB9E_End}."
+
+msgid "booster/booster_pick_up_souls/name"
+msgstr "Mirium Collection"
+
+msgid "booster/booster_receive_souls_after_wave/description"
+msgstr ""
+"When researched, increases the {EDCB9E_Start}amount of Mirium{EDCB9E_End} "
+"granted for destroying a wave by "
+"{EDCB9E_Start}%(receive_souls_after_wave_add)s{EDCB9E_End}."
+
+msgid "booster/booster_receive_souls_after_wave/name"
+msgstr "Mirium Per Wave"
+
+msgid "booster/booster_restore_souls_on_respawn/description"
+msgstr ""
+"When researched, increases the {EDCB9E_Start}amount of Mirium{EDCB9E_End} "
+"restored on respawn by "
+"{EDCB9E_Start}%(restore_souls_on_respawn_add)s{EDCB9E_End}."
+
+msgid "booster/booster_restore_souls_on_respawn/name"
+msgstr "Mirium on Respawn"
+
+msgid "booster/booster_souls_capacity/description"
+msgstr ""
+"When researched, increases the {EDCB9E_Start}vehicle’s maximum Mirium "
+"capacity{EDCB9E_End} by {EDCB9E_Start}%(souls_capacity_add)s{EDCB9E_End}."
+
+msgid "booster/booster_souls_capacity/name"
+msgstr "Mirium Capacity"
+
+msgid "bundle/name/bundleEventPack"
+msgstr "DEFENDER BUNDLE"
+
+msgid "bundleView/bundle/serviceChannelMessages/ls2_0bundle_key"
+msgstr "Keys purchased"
+
+msgid "bundleView/tooltip/expVehicleX5/body"
+msgstr ""
+"The option to earn ×5 XP, starting from the second victory of the day in any"
+" vehicle."
+
+msgid "bundleView/tooltip/expVehicleX5/header"
+msgstr "Mission for ×5 to XP earned in battle"
+
+msgid "carousel/filters/tooltipBody"
+msgstr ""
+"Configure the display of vehicles by their type, nation, and other "
+"parameters."
+
+msgid "carousel/filters/tooltipHeader"
+msgstr "Filter by Parameters"
+
+msgid "common/back"
+msgstr "BACK"
+
+msgid "common/close"
+msgstr "CLOSE"
+
+msgid "common/modifierInline"
+msgstr "x{value}"
+
+msgid "common/modifierInlineTimes"
+msgstr "×{value}"
+
+msgid "common/progress"
+msgstr "{value} / {maxValue}"
+
+msgid "common/toEvent"
+msgstr "TO EVENT"
+
+msgid "common/toRewardPath"
+msgstr "TO PROGRESSION"
+
+msgid "common/yes"
+msgstr "Affirmative!"
+
+msgid "difficult/daily"
+msgstr "DAILY KEYS MISSION UNLOCKED"
+
+msgid "difficult/disabled/body"
+msgstr ""
+"You are in a Platoon. Only the Commander can change the difficulty level."
+
+msgid "difficult/disabled/header"
+msgstr "Changing Difficulty Unavailable"
+
+msgid "difficult/level_1"
+msgstr "Basic"
+
+msgid "difficult/level_2"
+msgstr "Intense"
+
+msgid "difficult/level_3"
+msgstr "Brutal"
+
+msgid "difficult/new"
+msgstr "NEW"
+
+msgid "difficult/tooltip/description/level1"
+msgstr ""
+"Enemies have lower durability and weaker armor. Standard amount of Data per "
+"battle."
+
+msgid "difficult/tooltip/description/level2"
+msgstr ""
+"Enemies have stronger armor. Data per battle is increased by {{modifier}}."
+
+msgid "difficult/tooltip/description/level3"
+msgstr ""
+"There are more enemies with stronger armor. Data per battle is increased by "
+"{{modifier}}."
+
+msgid "difficult/tooltip/description/reward"
+msgstr "Rewards for destroying the last wave for the first time:"
+
+msgid "difficult/tooltip/header/level1"
+msgstr "Basic Difficulty"
+
+msgid "difficult/tooltip/header/level2"
+msgstr "Intense Difficulty"
+
+msgid "difficult/tooltip/header/level3"
+msgstr "Brutal Difficulty"
+
+msgid "difficult/tooltip/locked"
+msgstr "Difficulty Locked"
+
+msgid "difficult/tooltip/lockedDescr/level2"
+msgstr "To unlock this difficulty level, complete the Basic difficulty level."
+
+msgid "difficult/tooltip/lockedDescr/level3"
+msgstr ""
+"To unlock this difficulty level, complete the Intense difficulty level."
+
+msgid "difficult/tooltip/state/default"
+msgstr "Difficulty Available"
+
+msgid "difficult/tooltip/state/selected"
+msgstr "Difficulty Selected"
+
+msgid "difficult/tooltip/subHeader"
+msgstr "Waves destroyed: {count}"
+
+msgid "difficult/uppercase/level_1"
+msgstr "BASIC"
+
+msgid "difficult/uppercase/level_2"
+msgstr "INTENSE"
+
+msgid "difficult/uppercase/level_3"
+msgstr "BRUTAL"
+
+msgid "difficultyWindow/description/level_2"
+msgstr ""
+"Enemies have stronger armor. More credits and ×{{modifier}} Data per battle."
+
+msgid "difficultyWindow/description/level_3"
+msgstr ""
+"More enemies with stronger armor. More credits and ×{{modifier}} Data per "
+"battle."
+
+msgid "difficultyWindow/description/level_4"
+msgstr ""
+"Battle and defeat waves of enemies, and show your prowess by reaching the "
+"top of the Leaderboard. Unique rewards and much more await you."
+
+msgid "difficultyWindow/header/level_2"
+msgstr "INTENSE DIFFICULTY LEVEL"
+
+msgid "difficultyWindow/header/level_3"
+msgstr "BRUTAL DIFFICULTY LEVEL"
+
+msgid "difficultyWindow/header/level_4"
+msgstr "LAST STAND MODE"
+
+msgid "difficultyWindow/headerShort/level_2"
+msgstr "INTENSE"
+
+msgid "difficultyWindow/headerShort/level_3"
+msgstr "BRUTAL"
+
+msgid "difficultyWindow/headerShort/level_4"
+msgstr "'LAST STAND'"
+
+msgid "difficultyWindow/rewards"
+msgstr "Rewards for completion:"
+
+msgid "difficultyWindow/title"
+msgstr "AVAILABLE"
+
+msgid "hangar/exit"
+msgstr "LEAVE EVENT"
+
+msgid "hangar/narration"
+msgstr "Story"
+
+msgid "hangar/tooltip/about"
+msgstr "Learn more about the Last Stand: Invasion event."
+
+msgid "hangar/tooltip/narration"
+msgstr "Learn more about the event story."
+
+msgid "hangarAmmunitionSetup/header"
+msgstr "TACTICAL DEVICES"
+
+msgid "hangarAmmunitionSetup/navigation"
+msgstr "LOADOUT"
+
+msgid "headerButtons/battle/types/last_stand"
+msgstr "Last Stand"
+
+msgid "iconButton/comparison/default"
+msgstr "Vehicle comparison"
+
+msgid "iconButton/comparison/isDisabled"
+msgstr "Vehicle comparison is unavailable"
+
+msgid "iconButton/preview/default"
+msgstr "Preview vehicle"
+
+msgid "iconButton/preview/isDisabled"
+msgstr "Vehicle preview is unavailable"
+
+msgid "keyCard/name"
+msgstr "Decryption Keys"
+
+msgid "meta/btn/decrypt"
+msgstr "DECRYPT"
+
+msgid "meta/btn/skip"
+msgstr "SKIP"
+
+msgid "meta/btn/view"
+msgstr "VIEW"
+
+msgid "meta/receive/description"
+msgstr ""
+"Collect %(keys) / %(decrypt) %(icon) \n"
+"to decrypt this Record"
+
+msgid "metaIntro/description/fight"
+msgstr ""
+"Fight in event battles and earn Data to advance through the Progression."
+
+msgid "metaIntro/description/progress"
+msgstr ""
+"Collect Data to research vehicle upgrades and take on greater challenges."
+
+msgid "metaIntro/description/reward"
+msgstr ""
+"Complete Progression Stages to receive special event rewards. See the Reward"
+" Path for more details."
+
+msgid "metaIntro/header/fight"
+msgstr "Event Battles"
+
+msgid "metaIntro/header/progress"
+msgstr "Upgrades"
+
+msgid "metaIntro/header/reward"
+msgstr "Unique Rewards"
+
+msgid "metaIntro/title"
+msgstr "PROGRESSION"
+
+msgid "missionWidget/complete"
+msgstr ""
+"Mission complete.\n"
+"Come back tomorrow."
+
+msgid "missionWidget/tooltipBody"
+msgstr ""
+"Complete current Daily Mission which is available every 24 h to receive the "
+"reward. Today's mission:"
+
+msgid "missionWidget/tooltipHeader"
+msgstr "Daily Mission"
+
+msgid "narration/actions/voiceover"
+msgstr "Voiceover"
+
+msgid "narration/narrationText/ls_narration_1"
+msgstr ""
+"{{@ class $highlightText}}TOP SECRET{{/}}{{titleParagraph}}{{@ class "
+"$highlightText}}SECTOR: R-22{{/}} (Siegfried Perimeter){{pargraphStart}}The "
+"sky over the sector is torn apart. The funnel is constantly bringing echo "
+"tanks into our reality. The local garrison is holding the outer perimeter "
+"but is pushed to their limits. If we don't change the situation, a "
+"breakthrough is inevitable in {{@ class "
+"$highlightSecondaryText}}[REDACTED]{{/}} hours.{{pargraphStart}}The ATLAS "
+"complex has been deployed under the anomaly's center. This is our only hope "
+"for it to collapse. While the echo cloaking is working, the enemy can't "
+"notice the complex. But the anomaly...it's learning.{{pargraphStart}}We're "
+"registering periodic bursts: This means an echo tank of an unknown type is "
+"materializing. Its objective is ATLAS. When it reaches the point under the "
+"funnel's center, it activates a gravitational pulse of such force that the "
+"vehicles turn into scrap, and their crews turn into {{@ class "
+"$highlightSecondaryText}}[REDACTED]{{/}}.{{pargraphStart}}We've already lost"
+" three ATLAS complexes. Only a few more remain in our operational reserve. "
+"If we lose these last devices, we won't be able to close the anomaly. The "
+"breakthrough will be irreversible.{{pargraphStart}}SIGNATURE: CURATOR "
+"(PROJECT M)"
+
+msgid "narration/narrationText/ls_narration_2"
+msgstr ""
+"{{@ class $highlightText}}ANALYTICAL MEMO 14/C{{/}}{{titleParagraph}}{{@ class $highlightText}}ANALYSIS OF FIELD ANOMALIES{{/}}{{pargraphStart}}To the tank group commanders.{{pargraphStart}}Captain Miller of the 6th Platoon was the first to notice the unusual properties of the Obelisks. When their shell accidentally impacted and cracked the crystal structure, the damaged armor of his tank...was restored. Unfortunately he didn't make it out of that battle. But his find will save hundreds of crews.{{pargraphStart}}Thanks to the ATLAS complex data, analysts deciphered the nature of the crystal structures. Remember this classification—this information will save you in battle more than once.{{pargraphStart}}We discovered three types:{{pargraphStart}}{{@ class $highlightText}}REGEN{{/}}\n"
+" When destroyed, it emits a field with negative entropy. The blast wave of this kind of Obelisk literally \"bakes\" the micro cracks in the armor.{{pargraphStart}}{{@ class $highlightText}}BARRIER{{/}}\n"
+" Destroying an Obelisk of this type releases a stabilization phase field that concentrates around your vehicles. This creates a temporary protective barrier.{{pargraphStart}}{{@ class $highlightText}}FAILURE{{/}}\n"
+" When destroyed, a powerful phase pulse burst occurs. It disrupts the integrity of echo tanks' Mirium core and paralyzes them for a short time.{{pargraphStart}}Note: All Obelisks are in a firm phase bond with a certain group of echo tanks. Each hit at the crystal sends a destructive pulse over this bond and deals damage to the enemy units.{{pargraphStart}}Use the Obelisks in battle. This is the only way to fight the superior enemy forces.{{pargraphStart}}SIGNATURE: CURATOR (PROJECT M)"
+
+msgid "narration/narrationText/ls_narration_3"
+msgstr ""
+"{{@ class $highlightText}}TOP SECRET{{/}}{{titleParagraph}}{{@ class "
+"$highlightText}}DIRECTIVE 22/A{{/}}{{pargraphStart}}We are one step from "
+"victory... Or from ultimate defeat. In the last few days, we came closer to "
+"the settings we need to forcibly collapse the anomaly. For the first time, "
+"we have a chance not only to fend off the invasion, but to end it. The price"
+" is high, though. Only several ATLAS complexes remain operational. If we "
+"lose them, we can't replace them.{{pargraphStart}}REMEMBER: ATLAS is not "
+"just a research station. It's your eyes. ATLAS predicts where the next "
+"attack wave will come from. It analyzes the enemy's tactics and transfers "
+"data to improve your tanks. Every punched tape delivered from the complex is"
+" a step towards victory. Without it, we will be made blind and lose our "
+"chance to stop the enemy.{{pargraphStart}}We can't lose more scientific "
+"equipment. This is the matter of survival not only for the crews on the "
+"front line, but for all of us.{{pargraphStart}}Protect ATLAS at any "
+"cost.{{pargraphStart}}SIGNATURE: CURATOR (PROJECT M)"
+
+msgid "narration/narrationText/ls_narration_4"
+msgstr ""
+"{{@ class $highlightText}}FINAL REPORT{{/}}{{titleParagraph}}{{@ class "
+"$highlightText}}STATUS: DECLASSIFIED (PARTLY){{/}}{{pargraphStart}}At 06:21,"
+" the anomaly's activity completely stopped. The weather front is clear. All "
+"Obelisk-type structures were destroyed. The threat is "
+"averted.{{pargraphStart}}The collected specimens of the Mirium crystals, as "
+"well as the remainders of the echo tank of unknown type were sent to a "
+"special storage for further studies.{{pargraphStart}}Official statement: The"
+" incident is over. The contingent's actions to hold the threat were "
+"successful. The quarantine has been lifted from the "
+"sector.{{pargraphStart}}{{pargraphStart}}{{@ class $highlightText}}PERSONAL "
+"CURATOR'S NOTE{{/}} (Only for special reserves){{pargraphStart}}I'm "
+"skeptical. We've won the battle, but not the war.The anomaly is just...gone?"
+" We couldn't finish the calibration of the ATLAS complex in time. Analysts "
+"are registering similar signatures in other regions but the number of bursts"
+" is increasing. According to their data, we have three months before it "
+"happens again somewhere else.{{pargraphStart}}My experience tells me that "
+"what happened is just a light breeze before the storm. We need to prepare "
+"for the next attack: update our weapons, prepare more ATLASES, use all "
+"available resource—from Mirium technologies to simple and effective mine "
+"fields. When they return, and they will return, we must face them fully "
+"armed.{{pargraphStart}}The reports say the anomaly was learning to counter "
+"our measures. So we have to be flexible. Yes, we study them and adapt as "
+"much as we can—use their technologies and track their tactics. But how can "
+"we be sure they're not doing the same?"
+
+msgid "narration/narrationTitle/ls_artefact_1"
+msgstr "{{number}}. Invasion"
+
+msgid "narration/narrationTitle/ls_artefact_2"
+msgstr "{{number}}. Obelisks"
+
+msgid "narration/narrationTitle/ls_artefact_3"
+msgstr "{{number}}. ATLAS"
+
+msgid "narration/narrationTitle/ls_artefact_4"
+msgstr "{{number}}. Clear skies"
+
+msgid "narration/tooltips/disabledNextEpisode_1"
+msgstr ""
+"Complete the Basic difficulty level to proceed to the next Story part."
+
+msgid "narration/tooltips/disabledNextEpisode_2"
+msgstr ""
+"Complete the Intense difficulty level to proceed to the next Story part."
+
+msgid "narration/tooltips/disabledNextEpisode_3"
+msgstr ""
+"Complete the Brutal difficulty level to proceed to the final Story part."
+
+msgid "narration/tooltips/nextStory"
+msgstr "Next Story"
+
+msgid "preBattle/leave"
+msgstr "Exit Battle"
+
+msgid "preBattle/searching"
+msgstr "SEARCHING FOR ALLIES..."
+
+msgid "preBattle/tip"
+msgstr ""
+"Taking too long to find an Operational Force? Try changing the difficulty "
+"level."
+
+msgid "preBattle/uppercase/leave"
+msgstr "EXIT BATTLE"
+
+msgid "promoWindow/header"
+msgstr "PLAY LAST STAND"
+
+msgid "promoWindow/subheader"
+msgstr ""
+"Explore a new chapter of the Last Stand PvE game mode from {dateRange}.\n"
+"Earn a set of themed {cream_open}3D attachments{cream_close}, Experimental Equipment, and more exclusive rewards."
+
+msgid "questCard/allCompleted"
+msgstr "All daily missions completed"
+
+msgid "questCard/completed"
+msgstr ""
+"Daily mission completed.\n"
+"Come back tomorrow."
+
+msgid "reward/rest"
+msgstr "And %(count)s more"
+
+msgid "rewardPath/about"
+msgstr "ABOUT OBJECTIVES"
+
+msgid "rewardPath/aboutTooltip"
+msgstr "Learn more about the event."
+
+msgid "rewardPath/boostTitle"
+msgstr "Accelerate your progress and earn more Data {icon}"
+
+msgid "rewardPath/btn/shop"
+msgstr "View in Store"
+
+msgid "rewardPath/completed"
+msgstr "All Data and rewards received"
+
+msgid "rewardPath/completedTitle"
+msgstr "Visit the Store for unique themed customization elements"
+
+msgid "rewardPath/intro"
+msgstr "INTRODUCTION"
+
+msgid "rewardPath/introTooltip"
+msgstr "Watch the introductory video."
+
+msgid "rewardPath/progress"
+msgstr ""
+"Data received at STAGE {artefactIndex}: {currentProgress} / {maxProgress} "
+"{icon}"
+
+msgid "rewardPath/title"
+msgstr "PROGRESSION"
+
+msgid "rewardPathCard/completed"
+msgstr "Completed"
+
+msgid "rewardPathCard/name"
+msgstr "Reward Path"
+
+msgid "rewardPathCard/progress"
+msgstr "{{value}} / {{maxValue}} {{storyPoint}}"
+
+msgid "shopCard/name"
+msgstr "Event Bundles"
+
+msgid "squad/goToAnother/cancel"
+msgstr "Cancel"
+
+msgid "squad/goToAnother/message"
+msgstr "The Platoon will be dismissed."
+
+msgid "squad/goToAnother/submit"
+msgstr "Leave"
+
+msgid "squad/goToAnother/title"
+msgstr "Leave the Last Stand: Invasion event?"
+
+msgid "squad/leave/cancel"
+msgstr "Cancel"
+
+msgid "squad/leave/disabledEvent/message"
+msgstr "The Platoon will be dismissed."
+
+msgid "squad/leave/disabledEvent/submit"
+msgstr "Affirmative!"
+
+msgid "squad/leave/disabledEvent/title"
+msgstr "The Last Stand: Invasion event has ended"
+
+msgid "squad/leave/message"
+msgstr "The Platoon will be dismissed."
+
+msgid "squad/leave/submit"
+msgstr "Leave"
+
+msgid "squad/leave/title"
+msgstr "Leave the Last Stand: Invasion Platoon?"
+
+msgid "squad/leaveDisabled/cancel"
+msgstr "Continue"
+
+msgid "squad/leaveDisabled/message"
+msgstr "You are in the Platoon and ready for battle."
+
+msgid "squad/leaveDisabled/title"
+msgstr "You cannot leave the Platoon!"
+
+msgid "stageReward/rewards/received"
+msgstr "Also received:"
+
+msgid "stageReward/special/header"
+msgstr "BRUTAL DIFFICULTY LEVEL COMPLETED!"
+
+msgid "stageReward/special/subheader"
+msgstr "Special reward received"
+
+msgid "stageReward/stage/header"
+msgstr "REWARDS RECEIVED"
+
+msgid "stageReward/stage/subheader"
+msgstr "Last Stand: Stage {{number}} completed"
+
+msgid "stageReward/stageFinal/header"
+msgstr "ALL REWARDS RECEIVED"
+
+msgid "stageReward/stageFinal/subheader"
+msgstr "Last Stand: Final Stage completed"

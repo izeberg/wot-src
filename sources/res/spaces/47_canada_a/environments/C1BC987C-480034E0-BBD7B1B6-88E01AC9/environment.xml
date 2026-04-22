@@ -49,12 +49,12 @@
 		</deferred>
 		<simplifiedDeferred>
 			<useEdgeFog>true</useEdgeFog>
-			<edgeFogInnerBB>-501.623596 -500.000000 480.000000 500.000000</edgeFogInnerBB>
-			<edgeFogOuterBB>-690.000000 -685.000000 670.000000 750.000000</edgeFogOuterBB>
+			<edgeFogInnerBB>-501.623596 -513.631287 450.000000 500.000000</edgeFogInnerBB>
+			<edgeFogOuterBB>-690.000000 -671.173157 595.681824 750.000000</edgeFogOuterBB>
 			<color>0.184314 0.313726 0.568627 11.003222</color>
 			<density>0.000900</density>
-			<height>0.000000</height>
-			<heightFalloff>0.002000</heightFalloff>
+			<height>-150.000000</height>
+			<heightFalloff>0.004000</heightFalloff>
 			<startDistance>80.000000</startDistance>
 			<scatterStart>2000.000000</scatterStart>
 			<scatterExponent>9.610000</scatterExponent>
@@ -80,36 +80,31 @@
 		<enable>true</enable>
 		<adaptationSpeed>100.000000</adaptationSpeed>
 		<bloom>
-			<enable>true</enable>
 			<threshold>0.400000</threshold>
 			<amount>0.800000</amount>
-			<tint>1.000000 1.000000 1.000000</tint>
 			<dirtAmount>0.880000</dirtAmount>
 		</bloom>
 		<environment>
 			<sunlightLumMultiplier>15.000000</sunlightLumMultiplier>
-			<ambientLumMultiplier>1.000000</ambientLumMultiplier>
 			<sunLumMultiplier>50.000000</sunLumMultiplier>
 			<skyLumMultiplier>0.510000</skyLumMultiplier>
+			<skyLumMultiplierDeferred>1.000000</skyLumMultiplierDeferred>
 			<LDR2HDRenableLumaMask>false</LDR2HDRenableLumaMask>
 			<LDR2HDRsaturation>0.600000</LDR2HDRsaturation>
 		</environment>
 		<tonemappings>
 			<tonemapping>
 				<name>RexpTM</name>
-				<middleGray>0.200000</middleGray>
 				<whitePoint>1.000000</whitePoint>
 				<blackPoint>1.000000</blackPoint>
 			</tonemapping>
 			<tonemapping>
 				<name>FilmicTM</name>
-				<middleGray>0.140000</middleGray>
 				<whitePoint>12.790000</whitePoint>
 				<blackPoint>3.500000</blackPoint>
 			</tonemapping>
 			<tonemapping>
 				<name>LinearExpTM</name>
-				<middleGray>0.090000</middleGray>
 				<whitePoint>1.750000</whitePoint>
 				<blackPoint>1.000000</blackPoint>
 			</tonemapping>
@@ -154,8 +149,8 @@
 	</LensFlare>
 	<GodRays>
 		<enable>true</enable>
-		<attenuationPower>20.799999</attenuationPower>
-		<decay>0.570000</decay>
+		<attenuationPower>20.000000</attenuationPower>
+		<decay>0.450000</decay>
 		<color>1.000000 0.945750 0.825000 25.000000</color>
 	</GodRays>
 	<SSAO>
@@ -296,4 +291,7 @@
 		<transmissionMult>0.580000</transmissionMult>
 		<waterReflectionAttenuation>1.000000</waterReflectionAttenuation>
 	</SimplifiedDeferred>
+	<VisibilityTunnel>
+		<shouldOverrideSettings>false</shouldOverrideSettings>
+	</VisibilityTunnel>
 </root>

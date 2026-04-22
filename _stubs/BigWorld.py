@@ -5633,6 +5633,7 @@ class WGVehiclePhysics(pybind11_object):
 	groundResistances = property(lambda self: None)
 	groundType = property(lambda self: None)
 	handbrake = property(lambda self: None)
+	def hasAnyChassisContact(self, *args, **kwargs): pass
 	hullCOMZ = property(lambda self: None)
 	hullCollisionReaction = property(lambda self: None)
 	hullContactPt = property(lambda self: None)
@@ -5785,6 +5786,7 @@ class WGTankPhysics(WGVehiclePhysics):
 	groundResistances = property(lambda self: None)
 	groundType = property(lambda self: None)
 	handbrake = property(lambda self: None)
+	def hasAnyChassisContact(self, *args, **kwargs): pass
 	hullCOMZ = property(lambda self: None)
 	hullCollisionReaction = property(lambda self: None)
 	hullContactPt = property(lambda self: None)
@@ -6160,6 +6162,7 @@ class WGWheeledPhysics(WGVehiclePhysics):
 	groundResistances = property(lambda self: None)
 	groundType = property(lambda self: None)
 	handbrake = property(lambda self: None)
+	def hasAnyChassisContact(self, *args, **kwargs): pass
 	hullCOMZ = property(lambda self: None)
 	hullCollisionReaction = property(lambda self: None)
 	hullContactPt = property(lambda self: None)

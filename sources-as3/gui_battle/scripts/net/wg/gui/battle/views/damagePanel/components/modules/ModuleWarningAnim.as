@@ -23,6 +23,7 @@ package net.wg.gui.battle.views.damagePanel.components.modules
       private function onAnimEnd() : void
       {
          visible = false;
+         stop();
       }
    }
 }

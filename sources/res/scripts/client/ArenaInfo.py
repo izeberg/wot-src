@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld
 from cgf_script.entity_dyn_components import BWEntitiyComponentTracker
 from helpers import dependency

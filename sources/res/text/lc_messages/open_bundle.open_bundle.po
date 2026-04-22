@@ -1,0 +1,121 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-11 10:00+0300\n"
+"PO-Revision-Date: 2022-01-11 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "bonuses/attachmentsSet/default"
+msgstr "3D Attachment Set"
+
+msgid "bonuses/attachmentsSet/tooltip/body"
+msgstr ""
+"Set of 3D attachments includes individual elements to customize specific "
+"vehicles."
+
+msgid "bonuses/battleBonusX5"
+msgstr "Mission for ×5 XP per Battle"
+
+msgid "bonuses/blueprints/nationalFragment"
+msgstr "Blueprint fragment: (%(nation)s)"
+
+msgid "bonuses/blueprints/universalFragment"
+msgstr "Universal blueprint fragment"
+
+msgid "bonuses/bpcoin"
+msgstr "Battle Pass Token"
+
+msgid "bonuses/crewBonusX3"
+msgstr "Mission for ×3 Crew XP"
+
+msgid "bonuses/crewSkin"
+msgstr "Crew skin: %(appearance)s"
+
+msgid "bonuses/customization"
+msgstr "%(itemType)s: %(userName)s"
+
+msgid "bonuses/itemTypes/attachment"
+msgstr "3D attachment"
+
+msgid "bonuses/itemTypes/camouflage"
+msgstr "Camouflage"
+
+msgid "bonuses/itemTypes/decal"
+msgstr "Decal"
+
+msgid "bonuses/itemTypes/emblem"
+msgstr "Emblem"
+
+msgid "bonuses/itemTypes/inscription"
+msgstr "Inscription"
+
+msgid "bonuses/itemTypes/paint"
+msgstr "Paint"
+
+msgid "bonuses/itemTypes/projectionDecal"
+msgstr "Decal"
+
+msgid "bonuses/itemTypes/style"
+msgstr "2D style"
+
+msgid "bonuses/itemTypes/style_3d"
+msgstr "3D style"
+
+msgid "bonuses/premiumPlus"
+msgstr "WoT Premium Account"
+
+msgid "bonuses/standardCrewMember/female"
+msgstr "Female crew member"
+
+msgid "bonuses/standardCrewMember/male"
+msgstr "Recruit"
+
+msgid "bonuses/uniqueCrewMember"
+msgstr "Crew member: %(fullName)s"
+
+msgid "currency/bpcoin"
+msgstr "Battle Pass Tokens"
+
+msgid "currency/credits"
+msgstr "Credits"
+
+msgid "currency/crystal"
+msgstr "Bonds"
+
+msgid "currency/equipCoin"
+msgstr "Components"
+
+msgid "currency/freeXP"
+msgstr "Free XP"
+
+msgid "currency/gold"
+msgstr "Gold"
+
+msgid "customization/projectionDecal"
+msgstr "Decal"
+
+msgid "formatter/credits"
+msgstr "Credits spent:"
+
+msgid "formatter/crew/female"
+msgstr "Female crew member (x%(count)s)"
+
+msgid "formatter/crew/male"
+msgstr "Recruit (x%(count)s)"
+
+msgid "formatter/crystal"
+msgstr "Bonds spent:"
+
+msgid "formatter/eventCoin"
+msgstr "Event coins spent:"
+
+msgid "formatter/gold"
+msgstr "Gold spent:"
+
+msgid "formatter/uniqueTankman"
+msgstr "Crew member: %(fullName)s"

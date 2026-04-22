@@ -1,3 +1,4 @@
+import typing
 from typing import Optional, Set
 import BigWorld
 from account_helpers.AccountSettings import AccountSettings, IS_BATTLE_PASS_START_ANIMATION_SEEN
@@ -17,6 +18,8 @@ from gui.shared.event_dispatcher import showBattlePass
 from helpers import dependency
 from skeletons.gui.game_control import IBattlePassController
 from skeletons.gui.shared.utils import IHangarSpace
+if typing.TYPE_CHECKING:
+    from frameworks.wulf import View, ViewEvent
 
 class _LastEntryState(object):
 
@@ -69,13 +72,16 @@ class BattlePassPresenter(TooltipPositionerMixin, OverlapCtrlMixin, ViewComponen
             return BattlePassNoChapterTooltipView()
         if contentID == R.views.mono.battle_pass.tooltips.completed():
             return BattlePassCompletedTooltipView()
-        return BattlePassInProgressTooltipView()
+        return self._createInProgressTooltipView()
 
     @property
     def hasDeferModelUpdate(self):
         isDeferUpdate = super(BattlePassPresenter, self).hasDeferModelUpdate
         isSpaceInited = self.__hangarSpace.spaceInited
         return isDeferUpdate or not isSpaceInited
+
+    def _createInProgressTooltipView(self):
+        return BattlePassInProgressTooltipView()
 
     @staticmethod
     def _onIntroAnimationPlayed():

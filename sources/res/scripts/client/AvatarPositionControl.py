@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import weakref, logging, math_utils, BigWorld, Math
 from Event import Event
 import constants, BattleReplay

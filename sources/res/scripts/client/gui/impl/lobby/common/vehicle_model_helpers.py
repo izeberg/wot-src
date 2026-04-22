@@ -1,6 +1,6 @@
 import typing
 from frameworks.wulf.view.array import fillViewModelsArray
-from gui.impl.gen.view_models.common.vehicle_mechanic_model import VehicleMechanicModel
+from gui.impl.gen.view_models.common.vehicle_mechanic_model import VehicleMechanicModel, MechanicsRank, MechanicsEnum
 from gui.impl.gen.view_models.views.lobby.common.vehicle_model import VehicleModel
 from gui.impl.lobby.platoon.platoon_helpers import removeNationFromTechName
 from gui.shared.gui_items.Vehicle import Vehicle
@@ -29,6 +29,13 @@ def fillVehicleMechanicModel(mechanicModel, mechanicItem):
     mechanicModel.setPriority(mechanicItem.priority)
     mechanicModel.setRank(mechanicItem.rank)
     mechanicModel.setHasVideo(mechanicItem.hasVideo)
+
+
+def clearVehicleMechanicModel(mechanicModel):
+    mechanicModel.setName(MechanicsEnum.UNKNOWN)
+    mechanicModel.setPriority(0)
+    mechanicModel.setRank(MechanicsRank.UNDEFINED)
+    mechanicModel.setHasVideo(False)
 
 
 def fillVehicleMechanicsArray(mechanicsArray, vehicleItem):

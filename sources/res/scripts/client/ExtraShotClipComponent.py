@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from constants import ExtraShotClipStates
 from events_handler import eventHandler
 from gui.battle_control.components_states.ammo import DefaultComponentAmmoState, AmmoShootPossibility

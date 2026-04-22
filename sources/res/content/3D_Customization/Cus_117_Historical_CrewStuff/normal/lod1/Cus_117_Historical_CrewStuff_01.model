@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>content/3D_Customization/Cus_117_Historical_CrewStuff/normal/lod1/Cus_117_Historical_CrewStuff_01</nodefullVisual>
+	<parent>content/3D_Customization/Cus_117_Historical_CrewStuff/normal/lod2/Cus_117_Historical_CrewStuff_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.560457 -0.008650 -0.824009</min>
+		<max>0.042139 0.420992 0.813090</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

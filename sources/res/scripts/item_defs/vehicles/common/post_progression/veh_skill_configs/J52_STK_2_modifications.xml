@@ -104,13 +104,13 @@
 		<modifiers>
 			<add>
 				<name>miscAttrs/temperatureGun/heatingPerShot</name>
-				<value>-5</value>
+				<value>-2</value>
 			</add>
 		</modifiers>
 		<kpi>
 			<add>
 				<name>value</name>
-				<value>-5</value>
+				<value>-2</value>
 			</add>
 		</kpi>
 	</j52_node6>
@@ -292,13 +292,13 @@
 		<modifiers>
 			<add>
 				<name>miscAttrs/temperatureGun/heatingPerShot</name>
-				<value>-5</value>
+				<value>-2</value>
 			</add>
 		</modifiers>
 		<kpi>
 			<add>
 				<name>value</name>
-				<value>-5</value>
+				<value>-2</value>
 			</add>
 		</kpi>
 	</j52_node17>
@@ -425,7 +425,7 @@
 			<mul>
 				<name>miscAttrs/temperatureGun/coolingPerSec</name>
 				<value>
-					1.25
+					1.12
 					<!--BW_String-->
 				</value>
 			</mul>
@@ -434,7 +434,7 @@
 			<mul>
 				<name>value</name>
 				<value>
-					1.25
+					1.12
 					<!--BW_String-->
 				</value>
 			</mul>

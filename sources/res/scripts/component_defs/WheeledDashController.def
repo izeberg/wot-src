@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<Properties>
+		<vehTypeCD>
+			<Type>UINT32</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</vehTypeCD>
+		<status>
+			<Type>WHEELED_DASH_STATUS</Type>
+			<Flags>ALL_CLIENTS</Flags>
+			<DetailLevel>MY_VEHICLE</DetailLevel>
+		</status>
+		<publicStatus>
+			<Type>UINT8</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</publicStatus>
+	</Properties>
+	<CellMethods>
+		<tryActivate>
+			<Exposed>OWN_CLIENT</Exposed>
+		</tryActivate>
+	</CellMethods>
+	<ClientMethods>
+		<onImpulseStarted>
+			<Args>
+				<direction>UINT8</direction>
+			</Args>
+		</onImpulseStarted>
+	</ClientMethods>
+	<ofEntity>
+		<Vehicle/>
+	</ofEntity>
+	<DefaultKeyName>wheeledDashController</DefaultKeyName>
+</root>

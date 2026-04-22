@@ -807,6 +807,8 @@ BATTLE_PASS_RESULTS = [
  (
   'bpTopPoints', int, 0, None, 'skip', ENTRY_TYPE.ACCOUNT_ALL),
  (
+  'bpTopExternalPoints', dict, {}, None, 'skip', ENTRY_TYPE.ACCOUNT_ALL),
+ (
   'bpBonusPoints', int, 0, None, 'skip', ENTRY_TYPE.ACCOUNT_ALL),
  (
   'bpNonChapterPointsDiff', int, 0, None, 'skip', ENTRY_TYPE.ACCOUNT_ALL),

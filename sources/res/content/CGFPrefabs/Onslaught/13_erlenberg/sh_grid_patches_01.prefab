@@ -32,6 +32,16 @@
 			<UUID>7f19647c-5d02-45be-95a3-2938be262f05</UUID>
 			<flags>0</flags>
 		</GameObject>
+		<GameObject>
+			<name>sh_grid_06</name>
+			<UUID>e9401401-ec02-4727-a5b5-424e81c9227e</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>sh_grid_07</name>
+			<UUID>433c60da-f088-4108-8e10-35df6a67bf78</UUID>
+			<flags>0</flags>
+		</GameObject>
 	</GameObjects>
 	<components>
 		<ComponentPool>
@@ -79,6 +89,26 @@
 			</component>
 			<component>
 				<UUID>7f19647c-5d02-45be-95a3-2938be262f05</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>4ab2da80-9bda-4260-acb5-d9d2a4f8658f</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>e9401401-ec02-4727-a5b5-424e81c9227e</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>4ab2da80-9bda-4260-acb5-d9d2a4f8658f</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>433c60da-f088-4108-8e10-35df6a67bf78</UUID>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -177,12 +207,48 @@
 					</property>
 					<property>
 						<name>Rotation</name>
-						<value>0 0 0</value>
+						<value>-0 0 0</value>
 					</property>
 				</config>
 			</component>
 			<component>
 				<UUID>7f19647c-5d02-45be-95a3-2938be262f05</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>e9401401-ec02-4727-a5b5-424e81c9227e</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>433c60da-f088-4108-8e10-35df6a67bf78</UUID>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -250,6 +316,26 @@
 					<property>
 						<name>zoneId</name>
 						<value>200110787</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>e9401401-ec02-4727-a5b5-424e81c9227e</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>zoneId</name>
+						<value>3902201238</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>433c60da-f088-4108-8e10-35df6a67bf78</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>zoneId</name>
+						<value>2470016378</value>
 					</property>
 				</config>
 			</component>

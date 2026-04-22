@@ -1,8 +1,13 @@
+import typing
 from PlayerEvents import g_playerEvents
 from gui.prb_control.entities.base.actions_validator import BaseActionsValidator, ActionsValidatorComposite
 from gui.prb_control.items import ValidationResult
-from gui.prb_control.settings import PREBATTLE_RESTRICTION
+from gui.prb_control.settings import PREBATTLE_RESTRICTION, PREBATTLE_SETTING_NAME
 from prebattle_shared import decodeRoster
+if typing.TYPE_CHECKING:
+    from typing import Dict, List, Type
+    from constants import ARENA_GUI_TYPE
+ARENA_GUI_TYPE_VALIDATORS = {}
 
 class InQueueValidator(BaseActionsValidator):
 
@@ -37,4 +42,9 @@ class LegacyActionsValidator(ActionsValidatorComposite):
          InQueueValidator(entity),
          LegacyVehicleValid(entity),
          LegacyTeamValidator(entity)]
+        arenaGuiType = entity.getSettings()[PREBATTLE_SETTING_NAME.ARENA_GUI_TYPE]
+        validator = ARENA_GUI_TYPE_VALIDATORS.get(arenaGuiType)
+        if validator is not None:
+            validators.append(validator(entity))
         super(LegacyActionsValidator, self).__init__(entity, validators)
+        return

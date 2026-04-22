@@ -80,6 +80,11 @@ package net.wg.gui.components.crosshairPanel.components.gunMarker
          this.gunTag.setColor(param1);
       }
       
+      public function setIsColorBlind(param1:Boolean) : void
+      {
+         this.radiusMC.setIsColorBlind(param1);
+      }
+      
       public function setIsSecondary(param1:Boolean) : void
       {
          this._isSecondary = param1;

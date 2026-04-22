@@ -1,3 +1,4 @@
+from __future__ import absolute_import, division
 import Event
 from constants import DUAL_ACCURACY_STATE
 from gui.shared.utils.decorators import ReprInjector

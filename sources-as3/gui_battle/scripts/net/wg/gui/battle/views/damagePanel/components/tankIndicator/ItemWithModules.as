@@ -58,10 +58,5 @@ package net.wg.gui.battle.views.damagePanel.components.tankIndicator
       {
          return new Vector.<DamagePanelItemFrameStates>(0);
       }
-      
-      protected function get modules() : Vector.<DamagePanelItemFrameStates>
-      {
-         return this._modules;
-      }
    }
 }

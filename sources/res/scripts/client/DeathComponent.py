@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld, CGF, GenericComponents, Math
 from cgf_components_common.state_components import DeathComponentDescriptor, SpawnOnDeathComponent, RemoveOnDeathComponent
 from cgf_script.managers_registrator import onAddedQuery, onRemovedQuery, autoregister

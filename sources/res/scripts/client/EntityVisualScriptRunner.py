@@ -1,4 +1,7 @@
-import cPickle, zlib, BigWorld
+from __future__ import absolute_import
+import zlib
+from future.moves import pickle
+import BigWorld
 from script_component.DynamicScriptComponent import DynamicScriptComponent
 from visual_script_client.contexts.vehicle_context import VehicleContextClient
 from visual_script_client.contexts.entity_context import EntityContextClient
@@ -20,7 +23,7 @@ class EntityVisualScriptRunner(DynamicScriptComponent):
                 self._ctx = VehicleContextClient(self.entity)
             else:
                 self._ctx = EntityContextClient(self)
-            clientPlanParams = cPickle.loads(zlib.decompress(self.clientPlanParams))
+            clientPlanParams = pickle.loads(zlib.decompress(self.clientPlanParams))
             vsePlans.setContext(self._ctx)
             vsePlans.setOptionalInputParams(**clientPlanParams)
             vsePlans.start()

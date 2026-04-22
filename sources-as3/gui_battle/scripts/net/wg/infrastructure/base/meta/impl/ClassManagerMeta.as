@@ -62,6 +62,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.data.constants.generated.PLAYERS_PANEL_STATE;
    import net.wg.data.constants.generated.POI_CONSTS;
    import net.wg.data.constants.generated.PREBATTLE_TIMER;
+   import net.wg.data.constants.generated.PROPELLANT_GUN_WIDGET_CONST;
    import net.wg.data.constants.generated.QUEST_PROGRESS_BATTLE;
    import net.wg.data.constants.generated.RADIAL_MENU_CONSTS;
    import net.wg.data.constants.generated.SIEGE_MODE_CONSTS;
@@ -705,11 +706,15 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.battle.views.minimap.components.entries.vehicle.MinimapEntryLabelHelper;
    import net.wg.gui.battle.views.minimap.components.entries.vehicle.VehicleAnimationMinimapEntry;
    import net.wg.gui.battle.views.minimap.components.entries.vehicle.VehicleMinimapEntry;
+   import net.wg.gui.battle.views.minimap.components.entries.w2gt.W2GTBattleZoneMinimapEntry;
+   import net.wg.gui.battle.views.minimap.components.entries.w2gt.W2gtBattleZoneProperties;
+   import net.wg.gui.battle.views.minimap.components.entries.w2gt.W2gtHover;
    import net.wg.gui.battle.views.minimap.constants.MinimapColorConst;
    import net.wg.gui.battle.views.minimap.constants.MinimapSizeConst;
    import net.wg.gui.battle.views.minimap.containers.EpicMinimapEntriesContainer;
    import net.wg.gui.battle.views.minimap.containers.MinimapEntriesContainer;
    import net.wg.gui.battle.views.minimap.events.MinimapEvent;
+   import net.wg.gui.battle.views.minimap.interfaces.IHoverableEntity;
    import net.wg.gui.battle.views.newbieHint.NewbieHint;
    import net.wg.gui.battle.views.newbieHint.constants.HINT_LABELS;
    import net.wg.gui.battle.views.newbieHint.containers.HintComponentContainer;
@@ -917,8 +922,10 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.battle.views.widgetsPanel.ChargeShotWidget;
    import net.wg.gui.battle.views.widgetsPanel.ChargeableBurstWidget;
    import net.wg.gui.battle.views.widgetsPanel.ConcentrationWidget;
+   import net.wg.gui.battle.views.widgetsPanel.LowChargeShotWidget;
    import net.wg.gui.battle.views.widgetsPanel.PillboxSiegeWidget;
    import net.wg.gui.battle.views.widgetsPanel.PowerWidget;
+   import net.wg.gui.battle.views.widgetsPanel.PropellantGunWidget;
    import net.wg.gui.battle.views.widgetsPanel.RechargeableNitroWidget;
    import net.wg.gui.battle.views.widgetsPanel.RocketAcceleratorWidget;
    import net.wg.gui.battle.views.widgetsPanel.StagedJetBoostersWidget;
@@ -931,6 +938,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.battle.views.widgetsPanel.TargetDesignatorWidget;
    import net.wg.gui.battle.views.widgetsPanel.TemperatureGunHeatZonesWidget;
    import net.wg.gui.battle.views.widgetsPanel.TemperatureGunOverheatWidget;
+   import net.wg.gui.battle.views.widgetsPanel.WheeledDashWidget;
    import net.wg.gui.battle.views.widgetsPanel.WidgetsPanel;
    import net.wg.gui.battle.views.widgetsPanel.chargeableBurst.BulletItem;
    import net.wg.gui.battle.views.widgetsPanel.chargeableBurst.Bullets;
@@ -949,12 +957,21 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.battle.views.widgetsPanel.common.HotkeyMask;
    import net.wg.gui.battle.views.widgetsPanel.common.HotkeySettings;
    import net.wg.gui.battle.views.widgetsPanel.common.Timer;
+   import net.wg.gui.battle.views.widgetsPanel.lowChargeShot.FirstStageTimeField;
+   import net.wg.gui.battle.views.widgetsPanel.lowChargeShot.QuickReloadTimeField;
+   import net.wg.gui.battle.views.widgetsPanel.lowChargeShot.SecondStageTimeField;
+   import net.wg.gui.battle.views.widgetsPanel.lowChargeShot.TimeField;
    import net.wg.gui.battle.views.widgetsPanel.pillbox.AnimSnapshot;
    import net.wg.gui.battle.views.widgetsPanel.pillbox.PillboxAnim;
    import net.wg.gui.battle.views.widgetsPanel.pillbox.PillboxAnimMgr;
    import net.wg.gui.battle.views.widgetsPanel.pillbox.PillboxDevice;
    import net.wg.gui.battle.views.widgetsPanel.pillbox.PillboxDevicesContainer;
    import net.wg.gui.battle.views.widgetsPanel.power.TurbineAnimation;
+   import net.wg.gui.battle.views.widgetsPanel.propellantGun.PropellantGunDamageIndicator;
+   import net.wg.gui.battle.views.widgetsPanel.propellantGun.PropellantGunScaleCursor;
+   import net.wg.gui.battle.views.widgetsPanel.propellantGun.PropellantGunScaleSector;
+   import net.wg.gui.battle.views.widgetsPanel.settings.WidgetProperties;
+   import net.wg.gui.battle.views.widgetsPanel.settings.WidgetSettings;
    import net.wg.gui.battle.views.widgetsPanel.stanceDance.FightWidgetAnimation;
    import net.wg.gui.battle.views.widgetsPanel.stanceDance.StanceDanceProgress;
    import net.wg.gui.battle.views.widgetsPanel.stanceDance.StanceDanceWidget;
@@ -963,6 +980,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.battle.views.widgetsPanel.vo.DeviceStateInfo;
    import net.wg.gui.battle.views.widgetsPanel.vo.HotKeyVo;
    import net.wg.gui.battle.views.widgetsPanel.vo.StateVO;
+   import net.wg.gui.battle.views.widgetsPanel.wheeledDash.HighlightTimer;
    import net.wg.gui.battle.windows.IngameDetailsHelpWindow;
    import net.wg.gui.battle.windows.IngameHelpWindow;
    import net.wg.gui.battle.windows.IngameMenu;
@@ -1074,6 +1092,8 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_DATA_CONSTANTS_GENERATED_POI_CONSTS:Class = POI_CONSTS;
       
       public static const NET_WG_DATA_CONSTANTS_GENERATED_PREBATTLE_TIMER:Class = PREBATTLE_TIMER;
+      
+      public static const NET_WG_DATA_CONSTANTS_GENERATED_PROPELLANT_GUN_WIDGET_CONST:Class = PROPELLANT_GUN_WIDGET_CONST;
       
       public static const NET_WG_DATA_CONSTANTS_GENERATED_QUEST_PROGRESS_BATTLE:Class = QUEST_PROGRESS_BATTLE;
       
@@ -2401,6 +2421,12 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_BATTLE_VIEWS_MINIMAP_COMPONENTS_ENTRIES_VEHICLE_VEHICLEMINIMAPENTRY:Class = VehicleMinimapEntry;
       
+      public static const NET_WG_GUI_BATTLE_VIEWS_MINIMAP_COMPONENTS_ENTRIES_W2GT_W2GTBATTLEZONEMINIMAPENTRY:Class = W2GTBattleZoneMinimapEntry;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_MINIMAP_COMPONENTS_ENTRIES_W2GT_W2GTBATTLEZONEPROPERTIES:Class = W2gtBattleZoneProperties;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_MINIMAP_COMPONENTS_ENTRIES_W2GT_W2GTHOVER:Class = W2gtHover;
+      
       public static const NET_WG_GUI_BATTLE_VIEWS_MINIMAP_CONSTANTS_MINIMAPCOLORCONST:Class = MinimapColorConst;
       
       public static const NET_WG_GUI_BATTLE_VIEWS_MINIMAP_CONSTANTS_MINIMAPSIZECONST:Class = MinimapSizeConst;
@@ -2410,6 +2436,8 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_BATTLE_VIEWS_MINIMAP_CONTAINERS_MINIMAPENTRIESCONTAINER:Class = MinimapEntriesContainer;
       
       public static const NET_WG_GUI_BATTLE_VIEWS_MINIMAP_EVENTS_MINIMAPEVENT:Class = MinimapEvent;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_MINIMAP_INTERFACES_IHOVERABLEENTITY:Class = IHoverableEntity;
       
       public static const NET_WG_GUI_BATTLE_VIEWS_NEWBIEHINT_NEWBIEHINT:Class = NewbieHint;
       
@@ -2825,9 +2853,13 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_CONCENTRATIONWIDGET:Class = ConcentrationWidget;
       
+      public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_LOWCHARGESHOTWIDGET:Class = LowChargeShotWidget;
+      
       public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_PILLBOXSIEGEWIDGET:Class = PillboxSiegeWidget;
       
       public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_POWERWIDGET:Class = PowerWidget;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_PROPELLANTGUNWIDGET:Class = PropellantGunWidget;
       
       public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_RECHARGEABLENITROWIDGET:Class = RechargeableNitroWidget;
       
@@ -2852,6 +2884,8 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_TEMPERATUREGUNHEATZONESWIDGET:Class = TemperatureGunHeatZonesWidget;
       
       public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_TEMPERATUREGUNOVERHEATWIDGET:Class = TemperatureGunOverheatWidget;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_WHEELEDDASHWIDGET:Class = WheeledDashWidget;
       
       public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_WIDGETSPANEL:Class = WidgetsPanel;
       
@@ -2889,6 +2923,14 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_COMMON_TIMER:Class = Timer;
       
+      public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_LOWCHARGESHOT_FIRSTSTAGETIMEFIELD:Class = FirstStageTimeField;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_LOWCHARGESHOT_QUICKRELOADTIMEFIELD:Class = QuickReloadTimeField;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_LOWCHARGESHOT_SECONDSTAGETIMEFIELD:Class = SecondStageTimeField;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_LOWCHARGESHOT_TIMEFIELD:Class = TimeField;
+      
       public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_PILLBOX_ANIMSNAPSHOT:Class = AnimSnapshot;
       
       public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_PILLBOX_PILLBOXANIM:Class = PillboxAnim;
@@ -2900,6 +2942,16 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_PILLBOX_PILLBOXDEVICESCONTAINER:Class = PillboxDevicesContainer;
       
       public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_POWER_TURBINEANIMATION:Class = TurbineAnimation;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_PROPELLANTGUN_PROPELLANTGUNDAMAGEINDICATOR:Class = PropellantGunDamageIndicator;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_PROPELLANTGUN_PROPELLANTGUNSCALECURSOR:Class = PropellantGunScaleCursor;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_PROPELLANTGUN_PROPELLANTGUNSCALESECTOR:Class = PropellantGunScaleSector;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_SETTINGS_WIDGETPROPERTIES:Class = WidgetProperties;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_SETTINGS_WIDGETSETTINGS:Class = WidgetSettings;
       
       public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_STANCEDANCE_FIGHTWIDGETANIMATION:Class = FightWidgetAnimation;
       
@@ -2916,6 +2968,8 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_VO_HOTKEYVO:Class = HotKeyVo;
       
       public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_VO_STATEVO:Class = StateVO;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_WHEELEDDASH_HIGHLIGHTTIMER:Class = HighlightTimer;
       
       public static const NET_WG_GUI_BATTLE_WINDOWS_INGAMEDETAILSHELPWINDOW:Class = IngameDetailsHelpWindow;
       

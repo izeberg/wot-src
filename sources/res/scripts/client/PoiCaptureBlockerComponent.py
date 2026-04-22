@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, typing
 from PoiBaseComponent import PoiBaseComponent
 from helpers import fixed_dict

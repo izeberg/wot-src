@@ -4,10 +4,10 @@
 	<chunkSize>100.000000</chunkSize>
 	<flora>spaces/217_er_alaska/flora.xml</flora>
 	<bounds>
-		<minX>-9</minX>
-		<maxX>8</maxX>
-		<minY>-9</minY>
-		<maxY>8</maxY>
+		<minX>-7</minX>
+		<maxX>7</maxX>
+		<minY>-7</minY>
+		<maxY>7</maxY>
 	</bounds>
 	<farPlane>
 		<max>15000.000000</max>
@@ -110,7 +110,7 @@
 			<type>
 				<name>GBufferDecals</name>
 				<atlas>
-					<width>4096</width>
+					<width>3328</width>
 					<height>2048</height>
 					<format>DXT5</format>
 					<constrains>
@@ -122,7 +122,7 @@
 					</constrains>
 				</atlas>
 				<atlas>
-					<width>4096</width>
+					<width>3328</width>
 					<height>2048</height>
 					<format>DXT5</format>
 					<constrains>
@@ -134,7 +134,7 @@
 					</constrains>
 				</atlas>
 				<atlas>
-					<width>4096</width>
+					<width>3328</width>
 					<height>2048</height>
 					<format>DXT5</format>
 					<constrains>
@@ -165,16 +165,20 @@
 	</havok>
 	<navmeshGenerator>navgen</navmeshGenerator>
 	<enableClusteredShading>false</enableClusteredShading>
+	<borderMask>borderMask.dds</borderMask>
 	<isSHGridQualityOverridden>false</isSHGridQualityOverridden>
 	<overrideSHGridQuality>0</overrideSHGridQuality>
 	<spaceVisibilityFlags>
 		<type>
-			<tag>ctf30x30</tag>
-			<bitIndex>11</bitIndex>
-		</type>
-		<type>
 			<tag>comp7</tag>
 			<bitIndex>0</bitIndex>
 		</type>
+		<type>
+			<tag>ctf</tag>
+			<bitIndex>1</bitIndex>
+		</type>
 	</spaceVisibilityFlags>
+	<lightsCutOffDistance>500.000000</lightsCutOffDistance>
+	<isSimplifiedSHGridQualityOverridden>false</isSimplifiedSHGridQualityOverridden>
+	<overrideSimplifiedSHGridQuality>2</overrideSimplifiedSHGridQuality>
 </root>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0</identifier>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<property>
+						diffuseMap
+						<Texture>content/LastStand/Environment/hd_env_UNI_090_HellStone/hd_env_UNI_090_HellStone_401_AM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/LastStand/Environment/hd_env_UNI_090_HellStone/hd_env_UNI_090_HellStone_401_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/LastStand/Environment/hd_env_UNI_090_HellStone/hd_env_UNI_090_HellStone_01_ANM.dds</Texture>
+					</property>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>111</materialKind>
+					<property>
+						g_applyScreenSpaceMorphing
+						<Bool>false</Bool>
+					</property>
+				</material>
+				<groupOrigin>0.002986 6.964209 0.008456</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>s_nd1</identifier>
+					<fx>shaders/custom/emissive_playground.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>111</materialKind>
+					<property>
+						angleFalloffParams
+						<Vector4>0.700000 1.000000 1.000000 0.000000</Vector4>
+					</property>
+					<property>
+						animationMode
+						<Int>1</Int>
+					</property>
+					<property>
+						emissionMap
+						<Texture>content/LastStand/Environment/hd_env_UNI_090_HellStone/hd_env_UNI_090_HellStone_401_Glow_AM.dds</Texture>
+					</property>
+					<property>
+						g_deferredMult
+						<Float>6.000000</Float>
+					</property>
+					<property>
+						g_offsetBlack
+						<Float>0.080000</Float>
+					</property>
+					<property>
+						g_tint
+						<Vector4>0.349020 0.000000 0.050980 1.000000</Vector4>
+					</property>
+					<property>
+						pattern
+						<Texture>content/LastStand/Environment/hd_env_UNI_090_HellStone/hd_env_UNI_090_HellStone_401_Glow_AM_Pattern.dds</Texture>
+					</property>
+					<property>
+						speed
+						<Float>0.040000</Float>
+					</property>
+					<property>
+						waveLen
+						<Float>1.000000</Float>
+					</property>
+				</material>
+				<groupOrigin>0.004586 6.961570 0.006679</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-4.110072 0.263898 -4.437382</min>
+		<max>4.112028 13.659242 4.450741</max>
+	</boundingBox>
+	<customBsp>true</customBsp>
+	<geometrySize>48096</geometrySize>
+</root>

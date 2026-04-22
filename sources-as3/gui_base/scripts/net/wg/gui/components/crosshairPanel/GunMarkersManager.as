@@ -10,6 +10,7 @@ package net.wg.gui.components.crosshairPanel
    import net.wg.gui.components.crosshairPanel.components.gunMarker.DualGunMarker;
    import net.wg.gui.components.crosshairPanel.components.gunMarker.IGunMarker;
    import net.wg.gui.components.crosshairPanel.components.gunMarker.TwinGunMarker;
+   import net.wg.gui.components.crosshairPanel.components.gunMarker.lowChargeShot.LowChargeShotGunMarker;
    import net.wg.infrastructure.interfaces.entity.IDisposable;
    
    public class GunMarkersManager implements IDisposable
@@ -27,6 +28,8 @@ package net.wg.gui.components.crosshairPanel
       private var _accuracyGunMarkers:Vector.<AccuracyGunMarker>;
       
       private var _chargeGunMarkers:Vector.<ChargeGunMarker>;
+      
+      private var _lowChargeShotGunMarkers:Vector.<LowChargeShotGunMarker>;
       
       private var _scale:Number = 1;
       
@@ -54,6 +57,7 @@ package net.wg.gui.components.crosshairPanel
          this._twinGunMarkers = new Vector.<TwinGunMarker>(0);
          this._accuracyGunMarkers = new Vector.<AccuracyGunMarker>(0);
          this._chargeGunMarkers = new Vector.<ChargeGunMarker>(0);
+         this._lowChargeShotGunMarkers = new Vector.<LowChargeShotGunMarker>(0);
          this._container = param1;
       }
       
@@ -92,13 +96,17 @@ package net.wg.gui.components.crosshairPanel
          {
             this._twinGunMarkers.push(param1);
          }
-         if(param1 is AccuracyGunMarker)
+         else if(param1 is AccuracyGunMarker)
          {
             this._accuracyGunMarkers.push(param1);
          }
-         if(param1 is ChargeGunMarker)
+         else if(param1 is ChargeGunMarker)
          {
             this._chargeGunMarkers.push(param1);
+         }
+         else if(param1 is LowChargeShotGunMarker)
+         {
+            this._lowChargeShotGunMarkers.push(param1);
          }
          if(DUAL_ACC_NAMES.indexOf(param2) >= 0)
          {
@@ -107,6 +115,7 @@ package net.wg.gui.components.crosshairPanel
          if(this._markerSettings)
          {
             param1.setSettings(this._markerSettings.gunTagType,this._markerSettings.mixingType,this._markerSettings.gunTagAlpha,this._markerSettings.mixingAlpha);
+            param1.setIsColorBlind(this._markerSettings.isColorBlind);
          }
          param1.setReloadingParams(this._currReloadingPercent,this._currReloadingState);
          param1.setDispersionCircleThickness(this._isDispersionCircleBold);
@@ -128,6 +137,7 @@ package net.wg.gui.components.crosshairPanel
       {
          var _loc4_:int = 0;
          var _loc5_:int = 0;
+         var _loc6_:int = 0;
          var _loc2_:IGunMarker = this._gunMarkers[param1];
          var _loc3_:int = Values.DEFAULT_INT;
          if(_loc2_)
@@ -151,6 +161,11 @@ package net.wg.gui.components.crosshairPanel
             if(_loc4_ != -1)
             {
                this._chargeGunMarkers.splice(_loc5_,1);
+            }
+            _loc6_ = this._lowChargeShotGunMarkers.indexOf(_loc2_);
+            if(_loc4_ != -1)
+            {
+               this._lowChargeShotGunMarkers.splice(_loc6_,1);
             }
             _loc2_.dispose();
             this._container.removeChild(DisplayObject(_loc2_));
@@ -177,6 +192,8 @@ package net.wg.gui.components.crosshairPanel
          this._accuracyGunMarkers = null;
          this._chargeGunMarkers.length = 0;
          this._chargeGunMarkers = null;
+         this._lowChargeShotGunMarkers.length = 0;
+         this._lowChargeShotGunMarkers = null;
          this._markerSettings = null;
          this._container = null;
       }
@@ -223,15 +240,6 @@ package net.wg.gui.components.crosshairPanel
          }
       }
       
-      public function setSecondaryActive(param1:Boolean) : void
-      {
-         var _loc2_:IGunMarker = null;
-         for each(_loc2_ in this._gunMarkers)
-         {
-            _loc2_.setSecondaryActive(param1);
-         }
-      }
-      
       public function setDispersionCircleThickness(param1:Boolean) : void
       {
          var _loc2_:IGunMarker = null;
@@ -251,6 +259,24 @@ package net.wg.gui.components.crosshairPanel
          }
       }
       
+      public function setLowChargeInitialTime(param1:Number, param2:Number, param3:Number, param4:Number) : void
+      {
+         var _loc5_:LowChargeShotGunMarker = null;
+         for each(_loc5_ in this._lowChargeShotGunMarkers)
+         {
+            _loc5_.setLowChargeInitialTime(param1,param2,param3,param4);
+         }
+      }
+      
+      public function setLowChargeTimeLeft(param1:Number, param2:Number, param3:Boolean) : void
+      {
+         var _loc4_:LowChargeShotGunMarker = null;
+         for each(_loc4_ in this._lowChargeShotGunMarkers)
+         {
+            _loc4_.setLowChargeTimeLeft(param1,param2,param3);
+         }
+      }
+      
       public function setScale(param1:Number) : void
       {
          var _loc2_:IGunMarker = null;
@@ -258,6 +284,15 @@ package net.wg.gui.components.crosshairPanel
          for each(_loc2_ in this._gunMarkers)
          {
             _loc2_.setScale(param1);
+         }
+      }
+      
+      public function setSecondaryActive(param1:Boolean) : void
+      {
+         var _loc2_:IGunMarker = null;
+         for each(_loc2_ in this._gunMarkers)
+         {
+            _loc2_.setSecondaryActive(param1);
          }
       }
       
@@ -333,6 +368,7 @@ package net.wg.gui.components.crosshairPanel
          for each(_loc2_ in this._gunMarkers)
          {
             _loc2_.setSettings(param1.gunTagType,param1.mixingType,param1.gunTagAlpha,param1.mixingAlpha);
+            _loc2_.setIsColorBlind(param1.isColorBlind);
          }
       }
       

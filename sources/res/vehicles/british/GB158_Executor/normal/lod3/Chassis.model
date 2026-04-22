@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB158_Executor/normal/lod3/Chassis</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/british/GB158_Executor/normal/lod4/Chassis</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>
+			-1.505408 -0.019487 -3.20984
+			<!--BW_String-->
+		</min>
+		<max>
+			1.50541 1.163487 2.233696
+			<!--BW_String-->
+		</max>
+	</visibilityBox>
+</root>

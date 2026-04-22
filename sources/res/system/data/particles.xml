@@ -3119,6 +3119,30 @@
 			<shader>\data\shaders\ps.fx</shader>
 			<texture>particles/content_deferred/PFX_textures/eff_fireworks.dds</texture>
 		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/105_germany_smoke.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/209_wg_epic_suburbia_steam.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_tex_hangar_v4.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_tex_whitesmoke_steam.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/251_sulfurFumes.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_tex_fog.dds</texture>
+		</preload>
 		<fn_effect_bin>particles/tank/customization/It36_Progetto_C45_mod_71_M/it36_movement_sand.eff</fn_effect_bin>
 		<fn_effect_bin>particles/tank/customization/It36_Progetto_C45_mod_71_M/it36_idle_sand.eff</fn_effect_bin>
 		<fn_effect_bin>particles/tank/customization/It36_Progetto_C45_mod_71_M/it36_idle_sand_2_EE.eff</fn_effect_bin>
@@ -3195,6 +3219,10 @@
 		<fn_effect_bin>particles/Tank/mechanics/heatmech_ac_distortion.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/mechanics/heatmech_ac_smoke_gun.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/mechanics/coolingmech_smoke_gun.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/mechanics/charge_quickshot_gorilla.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/mechanics/start_exhaust_diesel_bwmt.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/mechanics/start_exhaust_fire_bwmt.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/mechanics/idle_exhaust_diesel_bwmt.eff</fn_effect_bin>
 		<fn_effect_bin>particles/tank/customization/A158_T832_BX_T_3DSt/A158_T832_BX_T_3DSt_eye_glow.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/customization/A83_T110E4_Dl_22_3Dst/A83_T110E4_Dl_22_3Dst_brazier.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/customization/GB133_Charioteer_MkVII_HBP_3DSt/GB133_Charioteer_MkVII_HBP_3DSt_smoke.eff</fn_effect_bin>
@@ -3294,6 +3322,10 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/mechanics/heatmech_ac_distortion.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/mechanics/heatmech_ac_smoke_gun.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/mechanics/coolingmech_smoke_gun.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/mechanics/charge_quickshot_gorilla.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/mechanics/start_exhaust_diesel_bwmt.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/mechanics/start_exhaust_fire_bwmt.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/mechanics/idle_exhaust_diesel_bwmt.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/customization/Ch62_BZ_75_M/Ch62_hull_hit.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/customization/Ch62_BZ_75_M/Ch62_steam.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/customization/Ch62_BZ_75_M/Ch62_steam_smoke.eff</fn_effect_bin>
@@ -3320,6 +3352,12 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/customization/A176_M103_110_HBP_3Dst/Torch_Default.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/customization/A176_M103_110_HBP_3Dst/Torch_Move.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/customization/A176_M103_110_HBP_3Dst/Torch_Stop.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/mechanics/extinguisher_base_steam.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/mechanics/extinguisher_steam_single.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/mechanics/heat_coil.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/mechanics/extinguisher_base_steam.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/mechanics/extinguisher_steam_single.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/mechanics/heat_coil.vfx</fn_effect_bin>
 		<preloadVisual>particles/mesh_particles/scale_golden_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/scale_golden_02.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/mushroom_01.visual</preloadVisual>
@@ -3453,6 +3491,8 @@
 		<fn_effect_bin>particles/3D_Customization/Cus_171_Lunar_Fireworks/cus_171_fireworks_trail_big.eff</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_171_Lunar_Fireworks/cus_171_fireworks_trail_big.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_171_Lunar_Fireworks/cus_171_fireworks_secondary_s.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/3D_Customization/Cus_113_Historical_M129/Cus_113_Historical_M129.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_113_Historical_M129/Cus_113_Historical_M129.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Battle_Royal/Afterburning/br_nitro_gearup.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Battle_Royal/Afterburning/br_nitro_idle.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Battle_Royal/Afterburning/br_nitro_load.vfx</fn_effect_bin>

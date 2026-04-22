@@ -1,3 +1,4 @@
+from __future__ import absolute_import, division
 import enum, BigWorld
 from Math import Vector3, Vector4
 from Event import Event

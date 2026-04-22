@@ -579,10 +579,6 @@ package net.wg.frontline.gui.battle.views
       
       private function onConsumablesPanelUpdatePositionHandler(param1:ConsumablesPanelEvent) : void
       {
-         if(isPostMortem)
-         {
-            this.consumablesPanel.removeEventListener(ConsumablesPanelEvent.UPDATE_POSITION,this.onConsumablesPanelUpdatePositionHandler);
-         }
          this.updateBattleDamageLogPanelPosition();
          minimap.updateSizeIndex(false);
       }

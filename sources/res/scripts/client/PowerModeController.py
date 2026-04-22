@@ -1,3 +1,4 @@
+from __future__ import absolute_import, division
 import typing
 from collections import namedtuple
 import BigWorld

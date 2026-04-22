@@ -82,6 +82,9 @@ msgstr "(R) AMX 50 B"
 msgid "AMX_APX_E_P_C_Moteur"
 msgstr "AMX-APX E.P.C. Moteur"
 
+msgid "AMX_APX_E_P_C_Moteur_F"
+msgstr "AMX-APX E.P.C. Moteur F"
+
 msgid "AMX_B_270"
 msgstr "AMX B 270"
 
@@ -485,6 +488,12 @@ msgstr "AMX 38 série"
 
 msgid "Chassis_F140_Fantome"
 msgstr "Fantôme"
+
+msgid "Chassis_F141_Durendal"
+msgstr "Durendal"
+
+msgid "Chassis_F143_Fauteur"
+msgstr "Fauteur"
 
 msgid "Chassis_F14_AMX40"
 msgstr "AMX 40"
@@ -1773,6 +1782,51 @@ msgstr "Fantôme"
 
 msgid "F140_Fantome_short_special"
 msgstr "Autoloader, automatic hydropneumatic suspension"
+
+msgid "F141_Durendal"
+msgstr "Durendal"
+
+msgid "F141_Durendal_desc"
+msgstr ""
+"A preliminary design for a medium tank based on Franco-Italian developments."
+
+msgid "F141_Durendal_long_special"
+msgstr ""
+"The Durendal is a Tier X French support medium tank. It possesses an unusual"
+" autoloading gun that has two containers delivering very quick two-shell "
+"bursts. This allows it to inflict significant damage in a short amount of "
+"time. It also has exceptional mobility, enabling it to strike from "
+"unexpected angles."
+
+msgid "F141_Durendal_short"
+msgstr "Durendal"
+
+msgid "F141_Durendal_short_special"
+msgstr "Autoloader with containers, good mobility"
+
+msgid "F143_Fauteur"
+msgstr "Fauteur"
+
+msgid "F143_Fauteur_descr"
+msgstr ""
+"In the early 1970s, AMX promoted a program to develop a new highly armored "
+"tank, armed with a powerful, fast-firing gun. Although the armor was "
+"traditional, the firepower was based on a new principle. The engineers "
+"planned to implement a hybrid gun with additional electrical power "
+"increasing the effectiveness of the solid propellant. The propellant gases "
+"were heated by an electric arc between electrodes on the barrel, improving "
+"combustion and boosting the shot power. The project was closed due to "
+"technical limitations."
+
+msgid "F143_Fauteur_long_special"
+msgstr ""
+"The Fauteur is the product of a reliable heavy tank formula and advanced "
+"propellant manipulations, giving a formidable vehicle that is well-suited to"
+" both close- and long-range combat. Good armor lets it withstand enemy fire,"
+" while decent mobility gets its firepower closer to the front lines."
+
+msgid "F143_Fauteur_short"
+msgstr "Fauteur"
 
 msgid "F14_AMX40"
 msgstr "AMX 40"
@@ -3155,6 +3209,9 @@ msgstr "SCR 528F"
 msgid "SCR_528_F"
 msgstr "SCR-528 F"
 
+msgid "SCR_528_F_D"
+msgstr "SCR 528 F (D)"
+
 msgid "SCR_528_F_SH"
 msgstr "SCR-528 F"
 
@@ -3196,6 +3253,9 @@ msgstr "SOFAM 12 GSds B"
 
 msgid "SOFAM_12_58"
 msgstr "SOFAM 12 58"
+
+msgid "SOFAM_12_6S_D"
+msgstr "SOFAM 12 6S (D)"
 
 msgid "SOFAM_12_GS"
 msgstr "SOFAM 12 GS"
@@ -3295,6 +3355,9 @@ msgstr "TRVP-13-A L"
 
 msgid "TRVP_13_SH"
 msgstr "TRVP-13"
+
+msgid "TR_VP_113"
+msgstr "TR-VP 113"
 
 msgid "Turmo_III_V"
 msgstr "Turmo III-V"
@@ -3462,6 +3525,12 @@ msgstr "AMX 38"
 
 msgid "Turret_1_F140_Fantome"
 msgstr "Fantôme"
+
+msgid "Turret_1_F141_Durendal"
+msgstr "Durendal"
+
+msgid "Turret_1_F143_Fauteur"
+msgstr "Fauteur"
 
 msgid "Turret_1_F14_AMX40"
 msgstr "AMX 40"
@@ -4076,6 +4145,9 @@ msgstr "OE AS"
 msgid "_118mm_OFL_AS"
 msgstr "OFL AS"
 
+msgid "_120mm_Canon_de_120_67_T53_D"
+msgstr "Canon de 120/67 T53 (D)"
+
 msgid "_120mm_DEFA_120_F"
 msgstr "120 mm DEFA 120 F"
 
@@ -4115,6 +4187,9 @@ msgstr "Frt.Prf. mle. 1945 (Foch)"
 msgid "_120mm_Frt_Prf_mle_1945_Foch_B"
 msgstr "Frt.Prf. mle. 1945 (Foch B)"
 
+msgid "_120mm_Frt_Prf_mle_1945_Foch_B_7x7"
+msgstr "Frt.Prf. mle. 1945 (Foch B)"
+
 msgid "_120mm_Frt_Prf_mle_1951_51"
 msgstr "Frt.Prf. mle. 1951 (51)"
 
@@ -4130,14 +4205,32 @@ msgstr "Frt.Prf. mle. 1952"
 msgid "_120mm_Frt_Prf_mle_1952_LA"
 msgstr "Frt.Prf. mle. 1952 LA"
 
+msgid "_120mm_IPC_1"
+msgstr "120 mm IPC-1"
+
 msgid "_120mm_ODR_358"
 msgstr "ODR 358"
 
 msgid "_120mm_ODR_67"
 msgstr "ODR 67"
 
+msgid "_120mm_ODR_APCBC_T14E_D"
+msgstr "ODR 120/67 APCBC T14E (D)"
+
+msgid "_120mm_ODR_HVAP_T17E_D"
+msgstr "ODR 120/67 HVAP T17E (D)"
+
+msgid "_120mm_ODR_IPC_1"
+msgstr "ODR IPC-1"
+
 msgid "_120mm_OE_67"
 msgstr "OE 67"
+
+msgid "_120mm_OE_IPC_1"
+msgstr "OE IPC-1"
+
+msgid "_120mm_OE_T15HE_D"
+msgstr "OE 120/67 T15HE (D)"
 
 msgid "_120mm_OE_mle_1930"
 msgstr "OE mle. 1930"
@@ -4152,6 +4245,9 @@ msgid "_120mm_OE_mle_1930_Foch"
 msgstr "OE mle. 1930 (Foch)"
 
 msgid "_120mm_OE_mle_1930_Foch_B"
+msgstr "OE mle. 1930 (Foch B)"
+
+msgid "_120mm_OE_mle_1930_Foch_B_7x7"
 msgstr "OE mle. 1930 (Foch B)"
 
 msgid "_120mm_OE_mle_1930_fallout"
@@ -4175,6 +4271,9 @@ msgstr "OE mle. 1952"
 msgid "_120mm_OE_mle_1952_LA"
 msgstr "OE mle. 1952 LA"
 
+msgid "_120mm_OPSC_IPC_1"
+msgstr "OPSC IPC-1"
+
 msgid "_120mm_Prf1943"
 msgstr "Prf. mle. 1943"
 
@@ -4194,6 +4293,9 @@ msgid "_120mm_Prf_mle_1943_Foch"
 msgstr "Prf. mle. 1943 (Foch)"
 
 msgid "_120mm_Prf_mle_1943_Foch_B"
+msgstr "Prf. mle. 1943 (Foch B)"
+
+msgid "_120mm_Prf_mle_1943_Foch_B_7x7"
 msgstr "Prf. mle. 1943 (Foch B)"
 
 msgid "_120mm_Prf_mle_1951_51"

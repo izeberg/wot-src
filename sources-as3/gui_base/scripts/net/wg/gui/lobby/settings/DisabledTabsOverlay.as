@@ -54,7 +54,6 @@ package net.wg.gui.lobby.settings
       private static function drawTabs(param1:ButtonBarEx, param2:Vector.<int>, param3:Vector.<Sprite>) : void
       {
          var _loc4_:Button = null;
-         _loc4_ = null;
          var _loc5_:Rectangle = null;
          var _loc6_:Sprite = null;
          var _loc7_:Graphics = null;
@@ -107,32 +106,29 @@ package net.wg.gui.lobby.settings
          var _loc2_:Boolean = false;
          var _loc3_:ButtonBarEx = null;
          super.draw();
-         if(isInvalid(InvalidationType.DATA))
+         if(this._currentView != null && isInvalid(InvalidationType.DATA))
          {
-            if(this._currentView != null)
+            clearTabCovers(this._secondaryTabCovers);
+            _loc1_ = 0;
+            _loc2_ = this._tabIndexes.indexOf(this._currentIndex) != -1;
+            if(_loc2_ && this._currentView.hasOwnProperty(TABS_PROPERTY))
             {
-               clearTabCovers(this._secondaryTabCovers);
-               _loc1_ = 0;
-               _loc2_ = this._tabIndexes.indexOf(this._currentIndex) != -1;
-               if(_loc2_ && this._currentView.hasOwnProperty(TABS_PROPERTY))
+               _loc3_ = this._currentView[TABS_PROPERTY];
+               if(_loc3_.y == 0)
                {
-                  _loc3_ = this._currentView[TABS_PROPERTY];
-                  if(_loc3_.y == 0)
+                  _loc3_.validateNow();
+                  drawTabs(_loc3_,null,this._secondaryTabCovers);
+                  if(this._secondaryTabCovers.length > 0)
                   {
-                     _loc3_.validateNow();
-                     drawTabs(_loc3_,null,this._secondaryTabCovers);
-                     if(this._secondaryTabCovers.length > 0)
-                     {
-                        _loc1_ = this._secondaryTabCovers[0].height;
-                     }
+                     _loc1_ = this._secondaryTabCovers[0].height;
                   }
                }
-               this.bg.visible = this.glow.visible = this.textField.visible = _loc2_;
-               if(_loc2_)
-               {
-                  this.bg.y = BG_Y + _loc1_;
-                  this.bg.height = BG_HEIGHT - _loc1_;
-               }
+            }
+            this.bg.visible = this.glow.visible = this.textField.visible = _loc2_;
+            if(_loc2_)
+            {
+               this.bg.y = BG_Y + _loc1_;
+               this.bg.height = BG_HEIGHT - _loc1_;
             }
          }
       }

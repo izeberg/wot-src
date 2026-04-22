@@ -465,9 +465,6 @@ msgstr "The Specialist"
 msgid "chapter/fullName/193"
 msgstr "The Scout"
 
-msgid "chapter/fullName/194"
-msgstr "Mafia"
-
 msgid "chapter/fullNameUppercased/10021"
 msgstr "CARMEN DE BISONTE"
 
@@ -482,9 +479,6 @@ msgstr "THE SPECIALIST"
 
 msgid "chapter/fullNameUppercased/193"
 msgstr "THE SCOUT"
-
-msgid "chapter/fullNameUppercased/194"
-msgstr "MAFIA"
 
 msgid "chapter/title"
 msgstr "CHAPTER %(chapter)s"
@@ -997,10 +991,10 @@ msgstr ""
 "%(completedChapters)/%(chaptersAmount)"
 
 msgid "postProgressionView/footer/extraChapter/description/text"
-msgstr "A Premium vehicle with themed 3D attachments and much more awaits."
+msgstr "Dive into it for exclusive rewards and unique customization elements."
 
 msgid "postProgressionView/footer/extraChapter/title/text"
-msgstr "Battle Pass: Mafia is here!"
+msgstr "The Special Chapter is here!"
 
 msgid "postProgressionView/footer/purchaseIP/banner/text"
 msgstr "Purchase the Improved Pass and get more rewards!"
@@ -1333,6 +1327,12 @@ msgstr "For reaching the vehicle Point Limit:"
 
 msgid "reward/postBattle/progress/points/quest"
 msgstr "For completing missions:"
+
+msgid "reward/postBattle/progress/points/wotPlusCore"
+msgstr "WoT Plus Pro bonus:"
+
+msgid "reward/postBattle/progress/points/wotPlusPro"
+msgstr "WoT Plus Pro bonus:"
 
 msgid "reward/postBattle/progress/pointsAux"
 msgstr "Points earned:"

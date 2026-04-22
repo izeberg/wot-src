@@ -145,6 +145,8 @@ package
       
       public static const SESSION_TRACKER_KICK:String = "#system_messages:session_tracker_kick";
       
+      public static const PREBATTLE_LIMITS_NOTENOUGHVEHICLES:String = "#system_messages:prebattle/limits/notEnoughVehicles";
+      
       public static const PREBATTLE_VEHICLEINVALID_LIMITS_LEVEL:String = "#system_messages:prebattle/vehicleInvalid/limits/level";
       
       public static const PREBATTLE_VEHICLEINVALID_LIMITS_CLASSLEVEL:String = "#system_messages:prebattle/vehicleInvalid/limits/classLevel";
@@ -278,6 +280,8 @@ package
       public static const STEAM_LOGIN_NOT_ALLOWED:String = "#system_messages:steam_login_not_allowed";
       
       public static const SERVER_SHUT_DOWN:String = "#system_messages:server_shut_down";
+      
+      public static const LOCKED_VEHICLE_ERROR:String = "#system_messages:locked_vehicle_error";
       
       public static const UNLOCKS_VEHICLE_UNLOCK_SUCCESS:String = "#system_messages:unlocks/vehicle/unlock_success";
       
@@ -2904,6 +2908,14 @@ package
       public static const VEHICLESKILLTREEPROGRESSION_PROCESSORERROR_TITLE:String = "#system_messages:vehicleSkillTreeProgression/processorError/title";
       
       public static const VEHICLESKILLTREEPROGRESSION_PROCESSORERROR_BODY:String = "#system_messages:vehicleSkillTreeProgression/processorError/body";
+      
+      public static const W2GT_SWITCHON_HEADER:String = "#system_messages:w2gt/switchOn/header";
+      
+      public static const W2GT_SWITCHON_DESCRIPTION:String = "#system_messages:w2gt/switchOn/description";
+      
+      public static const W2GT_SWITCHOFF_HEADER:String = "#system_messages:w2gt/switchOff/header";
+      
+      public static const W2GT_SWITCHOFF_DESCRIPTION:String = "#system_messages:w2gt/switchOff/description";
        
       
       public function SYSTEM_MESSAGES()

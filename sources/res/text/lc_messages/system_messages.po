@@ -2251,6 +2251,9 @@ msgstr ""
 "Gradual appearance of hidden interface elements is enabled again. You can "
 "turn it off in Settings."
 
+msgid "locked_vehicle_error"
+msgstr "This action is not possible for pre-configured vehicles."
+
 msgid "login_to_other_game_unknown"
 msgstr ""
 "current game session was interrupted. Your Wargaming.net&nbsp;ID was used to"
@@ -3002,6 +3005,11 @@ msgstr "You have been excluded from the Platoon."
 
 msgid "prebattle/kick/type/unknown"
 msgstr "You have been excluded from the team."
+
+msgid "prebattle/limits/notEnoughVehicles"
+msgstr ""
+"You must have at least 3 suitable vehicles for the mode. See the About "
+"Onslaught page for details."
 
 msgid "prebattle/request/name/AUTO_SEARCH"
 msgstr "Autosearch"
@@ -5059,6 +5067,18 @@ msgstr ""
 
 msgid "video/error"
 msgstr "Video playback error. Error code: %(code)s."
+
+msgid "w2gt/switchOff/description"
+msgstr "Minimap combat zones are temporarily unavailable."
+
+msgid "w2gt/switchOff/header"
+msgstr "Technical Issues"
+
+msgid "w2gt/switchOn/description"
+msgstr "Minimap combat zones are now available. Battle on!"
+
+msgid "w2gt/switchOn/header"
+msgstr "Functionality Restored"
 
 msgid "wallet/available"
 msgstr ""

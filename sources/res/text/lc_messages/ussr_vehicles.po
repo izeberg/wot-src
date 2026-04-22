@@ -575,6 +575,9 @@ msgstr "Object 432U"
 msgid "Chassis_R231_Buryan"
 msgstr "Buryan"
 
+msgid "Chassis_R234_T_13"
+msgstr "T-13"
+
 msgid "Chassis_R235_KB_52"
 msgstr "KB-52"
 
@@ -741,6 +744,9 @@ msgid "Chassis_R96_Object_430_2"
 msgstr "Object 430 improved"
 
 msgid "Chassis_R97_Object_140"
+msgstr "Object 140"
+
+msgid "Chassis_R97_Object_140_7x7"
 msgstr "Object 140"
 
 msgid "Chassis_SU100Y"
@@ -1641,6 +1647,9 @@ msgstr "R-113K"
 msgid "R113M"
 msgstr "R-113"
 
+msgid "R113M_140_7x7"
+msgstr "R-113"
+
 msgid "R113M_7x7"
 msgstr "R-113"
 
@@ -1815,7 +1824,7 @@ msgstr ""
 "quickly."
 
 msgid "R117_T34_85_Rudy_short"
-msgstr "Rudy USSR"
+msgstr "Rudy U.S.S.R."
 
 msgid "R117_T34_85_Rudy_short_special"
 msgstr "Versatility, good gun handling"
@@ -3976,6 +3985,32 @@ msgstr "Buryan"
 msgid "R231_Buryan_short_special"
 msgstr "High single damage, high DPM"
 
+msgid "R234_T_13"
+msgstr "T-13"
+
+msgid "R234_T_13_descr"
+msgstr ""
+"A replacement option for the T-10 heavy tank, developed in the late 1950s. "
+"It was supposed to have enhanced armor and armament and be the first mass-"
+"produced tank with the new UTD-45 diesel engine. Eventually, the vehicle "
+"could have been armed with a 140 mm gun; however, after the costs for "
+"organizing production were assessed, the project was discontinued in favor "
+"of modernizing the T-10, as a result of which the T-10M was built."
+
+msgid "R234_T_13_long_special"
+msgstr ""
+"The T-13 is a Tier X Soviet heavy tank. The side armor and upper glacis "
+"plate are angled very effectively, allowing the relatively thin nominal "
+"armor to provide very high effective values. The turret armor is also "
+"extremely reliable. A large-caliber gun perfectly fits the vehicle's profile"
+" as an assault heavy tank."
+
+msgid "R234_T_13_short"
+msgstr "T-13"
+
+msgid "R234_T_13_short_special"
+msgstr "Impressive hull and turret armor, powerful gun"
+
 msgid "R235_KB_52"
 msgstr "KB-52"
 
@@ -4441,6 +4476,18 @@ msgstr "Obj. 430"
 msgid "R97_Object_140"
 msgstr "Object 140"
 
+msgid "R97_Object_140_7x7"
+msgstr "Object 140 7x7"
+
+msgid "R97_Object_140_7x7_descr"
+msgstr ""
+"An experimental medium tank. Developed between 1953 and 1958 in Nizhny Tagil"
+" to replace the T-54. Two prototypes were built, but in 1958 the project was"
+" terminated in favor of the Object 430."
+
+msgid "R97_Object_140_7x7_short"
+msgstr "Obj. 140 7x7"
+
 msgid "R97_Object_140_cl"
 msgstr "Object 140 CL"
 
@@ -4504,6 +4551,9 @@ msgstr "RTU (\"Yasen\") A"
 
 msgid "RTY_RCEHb_CFE_T"
 msgstr "RTU (\"Yasen\")"
+
+msgid "R_113C"
+msgstr "R-113C"
 
 msgid "R_123B"
 msgstr "R-123B"
@@ -4893,6 +4943,9 @@ msgid "TD-30"
 msgstr "M-50D"
 
 msgid "TD_12"
+msgstr "TD-12"
+
+msgid "TD_12_7x7"
 msgstr "TD-12"
 
 msgid "TD_30"
@@ -5326,6 +5379,9 @@ msgstr "Object 432U"
 msgid "Turret_1_R231_Buryan"
 msgstr "Buryan"
 
+msgid "Turret_1_R234_T_13"
+msgstr "T-13"
+
 msgid "Turret_1_R235_KB_52"
 msgstr "KB-52"
 
@@ -5423,6 +5479,9 @@ msgid "Turret_1_R96_Object_430"
 msgstr "Object 430"
 
 msgid "Turret_1_R97_Object_140"
+msgstr "Object 140"
+
+msgid "Turret_1_R97_Object_140_7x7"
 msgstr "Object 140"
 
 msgid "Turret_1_SU100Y"
@@ -5622,6 +5681,9 @@ msgstr "IS-7"
 
 msgid "UTD_20"
 msgstr "UTD-20"
+
+msgid "UTD_45A"
+msgstr "UTD-45A"
 
 msgid "UTD_50M1"
 msgstr "UTD-50M1 Barnaulskiy"
@@ -6071,6 +6133,9 @@ msgstr "3UBK4M"
 msgid "_100mm_3UBK4M_140"
 msgstr "3UBK4M (140)"
 
+msgid "_100mm_3UBK4M_140_7x7"
+msgstr "3UBK4M (140)"
+
 msgid "_100mm_3UBK4M_SH"
 msgstr "ZB 4KM"
 
@@ -6102,6 +6167,9 @@ msgid "_100mm_3UOF10"
 msgstr "3UOF10"
 
 msgid "_100mm_3UOF10_140"
+msgstr "3UOF10 (140)"
+
+msgid "_100mm_3UOF10_140_7x7"
 msgstr "3UOF10 (140)"
 
 msgid "_100mm_3UOF10_fallout"
@@ -6305,6 +6373,9 @@ msgstr "UBR-412PA"
 msgid "_100mm_UBR_412PB_140"
 msgstr "UBR-412PB (140)"
 
+msgid "_100mm_UBR_412PB_140_7x7"
+msgstr "UBR-412PB (140)"
+
 msgid "_100mm_UBR_412PDG_IS_2_II"
 msgstr "UBR-412PDG (IS-2-II)"
 
@@ -6441,6 +6512,9 @@ msgid "_100mm_UOF_412_T_54S_45"
 msgstr "UOF-412 (T-54S/45)"
 
 msgid "_100mm_U_8TS_140"
+msgstr "100 mm U-8TS (140)"
+
+msgid "_100mm_U_8TS_140_7x7"
 msgstr "100 mm U-8TS (140)"
 
 msgid "_100mm_ZBK17M"
@@ -7516,6 +7590,18 @@ msgstr "136 mm D-79"
 
 msgid "_136mm_OF_79"
 msgstr "OF-79"
+
+msgid "_140mm_BR_482A"
+msgstr "BR 482A"
+
+msgid "_140mm_D_63Sh"
+msgstr "140 mm D-63Sh"
+
+msgid "_140mm_OF_482A"
+msgstr "OF 482A"
+
+msgid "_140mm_ZBK60A"
+msgstr "ZBK60A"
 
 msgid "_152mm_53-BR-540B"
 msgstr "53-BR-540B"

@@ -22,9 +22,10 @@ class BattlePassInProgressTooltipView(ViewImpl):
     __battleRoyaleController = dependency.descriptor(IBattleRoyaleController)
     __lobbyContext = dependency.descriptor(ILobbyContext)
     __slots__ = ('__battleType', )
+    LAYOUT_ID = R.views.mono.battle_pass.tooltips.in_progress()
 
     def __init__(self, battleType=None, *args, **kwargs):
-        settings = ViewSettings(R.views.mono.battle_pass.tooltips.in_progress())
+        settings = ViewSettings(self.LAYOUT_ID)
         settings.model = BattlePassInProgressTooltipViewModel()
         settings.args = args
         settings.kwargs = kwargs
@@ -34,6 +35,13 @@ class BattlePassInProgressTooltipView(ViewImpl):
     @property
     def viewModel(self):
         return super(BattlePassInProgressTooltipView, self).getViewModel()
+
+    @property
+    def _customBattleTypeIcon(self):
+        return ''
+
+    def _hasRewardPoints(self):
+        return True
 
     def _onLoading(self, *args, **kwargs):
         super(BattlePassInProgressTooltipView, self)._onLoading(*args, **kwargs)
@@ -47,7 +55,7 @@ class BattlePassInProgressTooltipView(ViewImpl):
                 model.setIsWotPlusShown(isValidWotPlusTier(availableBPTier))
                 if self.__battleRoyaleController.isBattleRoyaleMode():
                     self.__updateBattleRoyalePoints(model, availableBPTier)
-                else:
+                elif self._hasRewardPoints():
                     items = model.rewardPoints.getItems()
                     arenaBonusType = getSupportedCurrentArenaBonusType(battleType)
                     for points in self.__battlePass.getPerBattlePoints(gameMode=arenaBonusType):
@@ -79,6 +87,7 @@ class BattlePassInProgressTooltipView(ViewImpl):
                 model.setIsBattlePassPurchased(isBattlePassPurchased)
                 if battleType:
                     model.setBattleType(getPreQueueName(battleType).lower())
+                model.setCustomBattleTypeIcon(self._customBattleTypeIcon)
                 model.setNotChosenRewardCount(self.__battlePass.getNotChosenRewardCount())
                 model.setExpireTime(expireTime)
                 model.setChapterType(ChapterType(getChapterType(self.__battlePass.getCurrentChapterID())))

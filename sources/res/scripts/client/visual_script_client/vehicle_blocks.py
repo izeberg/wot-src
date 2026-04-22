@@ -474,6 +474,10 @@ class OnAnyVehicleRespawned(TunableEventBlock, VehicleMeta):
     def _vehicleRespawnHandler(self, vehicle):
         self._vehicle.setValue(weakref.proxy(vehicle))
 
+    @classmethod
+    def blockAspects(cls):
+        return [ASPECT.CLIENT]
+
 
 class VehicleMaxSpeed(Block, VehicleMeta):
 
@@ -572,6 +576,10 @@ class GetVehicleOverturnLevel(Block, VehicleMeta):
         self._overturnLevel.setValue(OVERTURN_WARNING_LEVEL.SAFE)
         return
 
+    @classmethod
+    def blockAspects(cls):
+        return [ASPECT.CLIENT]
+
 
 class GetVehicleDrownLevel(Block, VehicleMeta):
 
@@ -591,6 +599,10 @@ class GetVehicleDrownLevel(Block, VehicleMeta):
                     return
         self._drownLevel.setValue(DROWN_WARNING_LEVEL.SAFE)
         return
+
+    @classmethod
+    def blockAspects(cls):
+        return [ASPECT.CLIENT]
 
 
 class OnDiscreteShotDone(Block, VehicleMeta):

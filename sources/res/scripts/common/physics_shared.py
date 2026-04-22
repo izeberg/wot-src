@@ -224,7 +224,8 @@ def getDefaultWheeledChassisXPhysicsCfg():
                    'warningMaxHealthCritEngine': 50.0, 
                    'power': 1.0, 
                    'impulse': 0.0}, 
-       'isWheeledOnSpotRotation': False})
+       'isWheeledOnSpotRotation': False, 
+       'isWheeledOnMoveRotation': False})
 
 
 def getDefaultTankVehicleXPhysicsShapeCfg():
@@ -597,7 +598,7 @@ def configurePhysicsMode(cfg, typeDesc, gravityFactor):
                     'noSignalBrakeForce', 'afterDeathBrakeForce', 'afterDeathMinSpeedForImpulse',
                     'afterDeathImpulse', 'jumpingFactor', 'jumpingMinForce', 'slowTurnChocker',
                     'airPitchReduction', 'wheelToHullRollTransmission', 'steeringSpeedInTurnMultiplier',
-                    'isWheeledOnSpotRotation'):
+                    'isWheeledOnSpotRotation', 'isWheeledOnMoveRotation'):
             cfg[key] = cfg['chassis'][key]
 
     cfg['gimletGoalWOnSpot'] = cfg['chassis']['gimletGoalWOnSpot']

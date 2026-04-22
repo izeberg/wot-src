@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import random, weakref, BigWorld
 from constants import FIRE_NOTIFICATION_CODES
 from helpers import dependency

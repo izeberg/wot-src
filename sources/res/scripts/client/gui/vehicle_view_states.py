@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.prb_control import prbDispatcherProperty
 from gui.shared.system_factory import registerVehicleViewState, collectVehicleViewStates
 from shared_utils import findFirst

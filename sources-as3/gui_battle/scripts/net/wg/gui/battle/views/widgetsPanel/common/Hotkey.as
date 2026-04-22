@@ -58,7 +58,7 @@ package net.wg.gui.battle.views.widgetsPanel.common
       
       public var filledLabel:TextField;
       
-      private var _disposed:Boolean = false;
+      private var _isDisposed:Boolean = false;
       
       private var _isValid:Boolean = false;
       
@@ -70,7 +70,9 @@ package net.wg.gui.battle.views.widgetsPanel.common
       
       private var _command:String = "";
       
-      private var _visibilityTween:Tween = null;
+      private var _showTween:Tween = null;
+      
+      private var _hideTween:Tween = null;
       
       private var _fillTween:Tween = null;
       
@@ -87,13 +89,14 @@ package net.wg.gui.battle.views.widgetsPanel.common
          this.label.autoSize = TextFieldAutoSize.LEFT;
          this.filledLabel.autoSize = TextFieldAutoSize.LEFT;
          this.maskMc.visible = false;
-         this.renewBlendMod();
+         this.renewBlendMode();
       }
       
-      public final function dispose() : void
+      protected function onDispose() : void
       {
-         this.removeShake();
-         this.removeVisibilityTween();
+         this.removeShakeTween();
+         this.removeShowTween();
+         this.removeHideTween();
          this.removeFillTween();
          stop();
          this.label = null;
@@ -106,19 +109,33 @@ package net.wg.gui.battle.views.widgetsPanel.common
          this.filledBg = null;
          this.maskMc.dispose();
          this.maskMc = null;
-         this._disposed = true;
+      }
+      
+      public final function dispose() : void
+      {
+         if(this._isDisposed)
+         {
+            return;
+         }
+         this.onDispose();
+         this._isDisposed = true;
+      }
+      
+      public final function isDisposed() : Boolean
+      {
+         return this._isDisposed;
       }
       
       public function hide(param1:Number) : void
       {
-         if(this._visibilityTween != null && this.alpha != Values.DEFAULT_ALPHA)
+         this.removeShowTween();
+         if(this._hideTween != null || this.alpha == Values.ZERO)
          {
             return;
          }
-         this.removeVisibilityTween();
          if(param1 != Values.ZERO)
          {
-            this._visibilityTween = new Tween(param1,this,{"alpha":Values.ZERO},{
+            this._hideTween = new Tween(param1,this,{"alpha":Values.ZERO},{
                "ease":Cubic.easeIn,
                "onComplete":this.onHideComplete
             });
@@ -127,11 +144,6 @@ package net.wg.gui.battle.views.widgetsPanel.common
          {
             this.alpha = Values.ZERO;
          }
-      }
-      
-      public function isDisposed() : Boolean
-      {
-         return this._disposed;
       }
       
       public function onPress(param1:Number) : void
@@ -198,21 +210,35 @@ package net.wg.gui.battle.views.widgetsPanel.common
       
       public function shake() : void
       {
-         this.removeShake();
+         this.removeShakeTween();
          this._shakeTween = new Tween(START_SHAKE_DURATION,this,{"x":this._x + SHAKE_MAX_SHIFT_X},{
             "ease":Cubic.easeOut,
             "onComplete":this.onStartShakeComplete
          });
       }
       
-      public function show() : void
+      public function show(param1:Number) : void
       {
-         this.removeVisibilityTween();
+         this.removeHideTween();
+         if(this._showTween != null || this.alpha == Values.DEFAULT_ALPHA)
+         {
+            return;
+         }
          this.fillMaskMc.height = MIN_FILL_HEIGHT;
-         this.alpha = Values.DEFAULT_ALPHA;
+         if(param1 != Values.ZERO)
+         {
+            this._showTween = new Tween(param1,this,{"alpha":Values.DEFAULT_ALPHA},{
+               "ease":Cubic.easeOut,
+               "onComplete":this.onShowComplete
+            });
+         }
+         else
+         {
+            this.alpha = Values.DEFAULT_ALPHA;
+         }
       }
       
-      private function renewBlendMod() : void
+      private function renewBlendMode() : void
       {
          this.bg.blendMode = BlendMode.SCREEN;
          this.label.blendMode = BlendMode.SCREEN;
@@ -220,14 +246,25 @@ package net.wg.gui.battle.views.widgetsPanel.common
          this.lid.blendMode = BlendMode.SCREEN;
       }
       
-      private function removeVisibilityTween() : void
+      private function removeShowTween() : void
       {
-         if(this._visibilityTween)
+         if(this._showTween)
          {
-            this._visibilityTween.paused = true;
-            this._visibilityTween.onComplete = null;
-            this._visibilityTween.dispose();
-            this._visibilityTween = null;
+            this._showTween.paused = true;
+            this._showTween.onComplete = null;
+            this._showTween.dispose();
+            this._showTween = null;
+         }
+      }
+      
+      private function removeHideTween() : void
+      {
+         if(this._hideTween)
+         {
+            this._hideTween.paused = true;
+            this._hideTween.onComplete = null;
+            this._hideTween.dispose();
+            this._hideTween = null;
          }
       }
       
@@ -263,7 +300,7 @@ package net.wg.gui.battle.views.widgetsPanel.common
          this.filledBg.setState(_loc1_);
          this.maskMc.visible = this._isLongKey;
          this.bg.mask = !!this._isLongKey ? this.maskMc : null;
-         this.renewBlendMod();
+         this.renewBlendMode();
       }
       
       private function updateLabel() : void
@@ -300,9 +337,14 @@ package net.wg.gui.battle.views.widgetsPanel.common
          }
       }
       
+      private function onShowComplete() : void
+      {
+         this.removeShowTween();
+      }
+      
       private function onHideComplete() : void
       {
-         this.removeVisibilityTween();
+         this.removeHideTween();
       }
       
       private function onFillComplete() : void
@@ -312,7 +354,7 @@ package net.wg.gui.battle.views.widgetsPanel.common
       
       private function onStartShakeComplete() : void
       {
-         this.removeShake();
+         this.removeShakeTween();
          this._shakeTween = new Tween(CONTINUE_SHAKE_DURATION,this,{"x":this._x},{
             "ease":Elastic.easeOut,
             "onComplete":this.onShakeComplete
@@ -321,10 +363,10 @@ package net.wg.gui.battle.views.widgetsPanel.common
       
       private function onShakeComplete() : void
       {
-         this.removeShake();
+         this.removeShakeTween();
       }
       
-      private function removeShake() : void
+      private function removeShakeTween() : void
       {
          if(this._shakeTween)
          {

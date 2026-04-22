@@ -37,6 +37,8 @@ package net.wg.gui.battle.views.decorativeCrosshair
       
       public var heatProgress:MovieClip = null;
       
+      private var _crosshairType:int = 1;
+      
       private var _isColorBlind:Boolean = false;
       
       private var _prevState:String = "empty";
@@ -62,6 +64,7 @@ package net.wg.gui.battle.views.decorativeCrosshair
       override public function updateScale(param1:int) : void
       {
          this.heatProgress.scaleX = this.heatProgress.scaleY = param1 == CROSSHAIR_VIEW_ID.ARCADE ? Number(SCALE_ARCADE) : Number(SCALE_SNIPER);
+         this._crosshairType = param1;
       }
       
       override protected function configUI() : void
@@ -111,6 +114,7 @@ package net.wg.gui.battle.views.decorativeCrosshair
             this._isColorBlind = _loc1_;
             gotoAndStop(!!this._isColorBlind ? COLOR_BLIND_FRAME : NORMAL_COLOR_FRAME);
             this.updateState(true);
+            this.updateScale(this._crosshairType);
          }
       }
       

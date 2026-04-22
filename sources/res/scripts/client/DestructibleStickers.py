@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, typing, BigWorld, CGF, GpuDecals, math_utils, VehicleStickers
 from VehicleEffects import DamageFromShotDecoder
 from cgf_modules import game_events

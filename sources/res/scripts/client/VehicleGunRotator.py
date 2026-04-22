@@ -1,6 +1,8 @@
+from __future__ import absolute_import, division
 import math, weakref
 from collections import namedtuple
 from functools import partial
+from future.utils import lrange
 from math import pi, fmod
 import BattleReplay, BigWorld, Math, math_utils
 from AvatarInputHandler import AimingSystems
@@ -628,7 +630,7 @@ class VehicleGunRotator(object):
             multiGun = playerVehicle.typeDescriptor.gun.multiGun
             if not multiGun:
                 return
-            activeGuns = range(len(multiGun)) if twinGun is None else twinGun.getActiveGunIndexes()
+            activeGuns = lrange(len(multiGun)) if twinGun is None else twinGun.getActiveGunIndexes()
             if len(activeGuns) < 2:
                 return
             playerTeam = playerVehicle.publicInfo.team

@@ -121,7 +121,7 @@ package net.wg.gui.battle.random.views
       
       private var _teamBasesPanelDefaultY:int = 0;
       
-      private var _tweens:Vector.<Tween>;
+      protected var _tweens:Vector.<Tween>;
       
       public function BattlePage()
       {
@@ -190,6 +190,7 @@ package net.wg.gui.battle.random.views
          this.updateBattleMessengerSwapArea();
          this.updateHintPanelPosition();
          this.updateMapInfoHintLayout();
+         this.updateBattleDamageLogPanelPosition();
       }
       
       override protected function initialize() : void
@@ -417,17 +418,6 @@ package net.wg.gui.battle.random.views
          }
       }
       
-      override protected function updateBattleDamageLogPosInPostmortem() : void
-      {
-         var _loc1_:int = BattleDamageLogConstants.MAX_VIEW_RENDER_COUNT;
-         var _loc2_:int = postmortemPanelUI.x - (postmortemPanelUI.width >> 1);
-         if(this.battleDamageLogPanel.x + BattleDamageLogConstants.MAX_DAMAGE_LOG_VIEW_WIDTH >= _loc2_)
-         {
-            _loc1_ = BattleDamageLogConstants.MIN_VIEW_RENDERER_COUNT_IN_POSTMORTEM;
-         }
-         this.battleDamageLogPanel.setDetailActionCount(_loc1_);
-      }
-      
       override protected function onComponentVisibilityChanged(param1:String, param2:Boolean) : void
       {
          super.onComponentVisibilityChanged(param1,param2);
@@ -558,19 +548,6 @@ package net.wg.gui.battle.random.views
          }
       }
       
-      protected function consumablesPanelUpdatePosition() : void
-      {
-         if(isPostMortem)
-         {
-            this.consumablesPanel.removeEventListener(ConsumablesPanelEvent.UPDATE_POSITION,this.onConsumablesPanelUpdatePositionHandler);
-            this.updateBattleDamageLogPosInPostmortem();
-         }
-         else
-         {
-            this.updateBattleDamageLogPanelPosition();
-         }
-      }
-      
       private function updateConsumablePanel(param1:Boolean = false) : void
       {
          if(prebattleAmmunitionPanelShown)
@@ -645,6 +622,28 @@ package net.wg.gui.battle.random.views
                {
                   this.newbieHint.y = _loc2_;
                }
+            }
+         }
+      }
+      
+      protected function completeActiveTweens(param1:Object) : void
+      {
+         var _loc2_:int = 0;
+         var _loc3_:Tween = null;
+         if(this._tweens.length > 0)
+         {
+            _loc2_ = this._tweens.length - 1;
+            while(_loc2_ >= 0)
+            {
+               _loc3_ = this._tweens[_loc2_];
+               if(_loc3_.target == param1 && !_loc3_.paused)
+               {
+                  _loc3_.onComplete && _loc3_.onComplete();
+                  _loc3_.dispose();
+                  _loc3_ = null;
+                  this._tweens.splice(_loc2_,1);
+               }
+               _loc2_--;
             }
          }
       }
@@ -749,10 +748,10 @@ package net.wg.gui.battle.random.views
          invalidate(INVALID_PLAYERS_PANEL_STATE);
       }
       
-      private function onConsumablesPanelUpdatePositionHandler(param1:ConsumablesPanelEvent) : void
+      protected function onConsumablesPanelUpdatePositionHandler(param1:ConsumablesPanelEvent) : void
       {
          minimap.updateSizeIndex(false);
-         this.consumablesPanelUpdatePosition();
+         this.updateBattleDamageLogPanelPosition();
       }
    }
 }

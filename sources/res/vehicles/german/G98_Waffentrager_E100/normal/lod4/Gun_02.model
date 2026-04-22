@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<materialNames/>
+	<visibilityBox>
+		<min>
+			-1.15939 -1.0281 -1.71989
+			<!--BW_String-->
+		</min>
+		<max>
+			0.825171 0.679469 5.66309
+			<!--BW_String-->
+		</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/german/G98_Waffentrager_E100/normal/lod4/Gun_02</nodefullVisual>
+</root>

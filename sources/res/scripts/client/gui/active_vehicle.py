@@ -1,5 +1,7 @@
+from __future__ import absolute_import
+import logging
 from typing import TYPE_CHECKING
-import logging, BigWorld, AccountCommands
+import BigWorld, AccountCommands
 from items.components.c11n_constants import SeasonType
 from soft_exception import SoftException
 if TYPE_CHECKING:

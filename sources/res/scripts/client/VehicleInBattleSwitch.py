@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from arena_bonus_type_caps import ARENA_BONUS_TYPE_CAPS
 from script_component.ScriptComponent import ScriptComponent
 

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-0.300001 -0.372904 -1.184523</min>
+		<max>
+			0.300009 0.279 6.114
+			<!--BW_String-->
+		</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/british/GB158_Executor/crash/lod0/Gun_02</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/british/GB158_Executor/crash/lod1/Gun_02</parent>
+	<extent>32.000000</extent>
+</root>

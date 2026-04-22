@@ -50,6 +50,27 @@ package net.wg.gui.battle.views.widgetsPanel.common
          this._gapY = param5;
       }
       
+      protected function onDispose() : void
+      {
+         this._anchor = null;
+         this._asserter = null;
+      }
+      
+      public final function dispose() : void
+      {
+         if(this._isDisposed)
+         {
+            return;
+         }
+         this.onDispose();
+         this._isDisposed = true;
+      }
+      
+      public final function isDisposed() : Boolean
+      {
+         return this._isDisposed;
+      }
+      
       public function calcHorizontalStep(param1:uint) : int
       {
          if(this.isVertical)
@@ -78,13 +99,6 @@ package net.wg.gui.battle.views.widgetsPanel.common
          return param1;
       }
       
-      public final function dispose() : void
-      {
-         this._anchor = null;
-         this._asserter = null;
-         this._isDisposed = true;
-      }
-      
       public function initItemsSize(param1:uint, param2:uint, param3:uint) : void
       {
          if(this._anchorCenter)
@@ -107,11 +121,6 @@ package net.wg.gui.battle.views.widgetsPanel.common
             }
          }
          this._wasInited = true;
-      }
-      
-      public function isDisposed() : Boolean
-      {
-         return this._isDisposed;
       }
       
       public function get anchorX() : int

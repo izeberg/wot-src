@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/french/F143_Fauteur/crash/lod0/Chassis</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/french/F143_Fauteur/crash/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.749768 -0.002931 -3.919921</min>
+		<max>1.750839 1.466870 3.953485</max>
+	</visibilityBox>
+</root>

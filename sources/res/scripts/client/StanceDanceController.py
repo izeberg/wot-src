@@ -1,3 +1,4 @@
+from __future__ import absolute_import, division
 import typing, BigWorld, math_utils
 from constants import STANCE_DANCE_STATE
 from gui.shared.utils.decorators import ReprInjector

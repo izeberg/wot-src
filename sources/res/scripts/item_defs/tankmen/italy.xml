@@ -17388,5 +17388,25 @@
 				<_8339>tankmen_bp19_9.png</_8339>
 			</icons>
 		</tankmen_bp19_9>
+		<southpawBoxer>
+			<groupID>354</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>male</sex>
+			<notInShop>true</notInShop>
+			<tags>commander passportReplacementForbidden</tags>
+			<roles>commander</roles>
+			<firstNames>
+				<_8340>#italy_crew:names/southpawBoxer_n</_8340>
+			</firstNames>
+			<lastNames>
+				<_8340>#italy_crew:names/southpawBoxer</_8340>
+			</lastNames>
+			<icons>
+				<_8340>southpawBoxer.png</_8340>
+			</icons>
+		</southpawBoxer>
 	</premiumGroups>
 </root>

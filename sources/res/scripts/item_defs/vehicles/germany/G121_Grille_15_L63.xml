@@ -2734,7 +2734,10 @@
 						</segmentSyncPivotOffset>
 						<sync>
 							<name>WD_L0</name>
-							<startAngle>-419.776001</startAngle>
+							<startAngle>
+								-421.785001
+								<!--BW_String-->
+							</startAngle>
 							<teethCount>17</teethCount>
 						</sync>
 					</teethSyncs>
@@ -3241,7 +3244,10 @@
 						</segmentSyncPivotOffset>
 						<sync>
 							<name>WD_R0</name>
-							<startAngle>-419.777008</startAngle>
+							<startAngle>
+								-421.785001
+								<!--BW_String-->
+							</startAngle>
 							<teethCount>17</teethCount>
 						</sync>
 					</teethSyncs>

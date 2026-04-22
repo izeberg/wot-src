@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB151_Headshaker/normal/lod3/Turret_01</nodefullVisual>
+	<parent>vehicles/british/GB151_Headshaker/normal/lod4/Turret_01</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.320484 -0.027194 -1.292843</min>
+		<max>1.322460 0.732552 1.305858</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

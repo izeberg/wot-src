@@ -2,7 +2,8 @@
 <root>
 	<CustomizationCommonGroup>
 		<states>CustomizationStates
-			PostBattleCommonStates</states>
+			PostBattleCommonStates
+			Comp7PostBattleCommonStates</states>
 	</CustomizationCommonGroup>
 	<CustomizationGroup>
 		<states>CustomizationStates</states>
@@ -100,4 +101,25 @@
 		<states>PetDenStorage</states>
 		<defaultCamera>DogStorage</defaultCamera>
 	</PetDenGroup>
+	<Comp7PostBattleSmallGroup>
+		<states>Comp7PostBattleSmallStates</states>
+		<defaultCamera>comp7_sh_pbs_small_tanks_camera</defaultCamera>
+	</Comp7PostBattleSmallGroup>
+	<Comp7PostBattleMediumGroup>
+		<states>Comp7PostBattleMediumStates</states>
+		<defaultCamera>comp7_sh_pbs_medium_tanks_camera</defaultCamera>
+	</Comp7PostBattleMediumGroup>
+	<Comp7PostBattleLargeGroup>
+		<states>Comp7PostBattleLargeStates</states>
+		<defaultCamera>comp7_sh_pbs_large_tanks_camera</defaultCamera>
+	</Comp7PostBattleLargeGroup>
+	<Comp7PostBattleCommonGroup>
+		<states>Comp7PostBattleCommonStates</states>
+	</Comp7PostBattleCommonGroup>
+	<Comp7PostBattleVictoryGroup>
+		<states>Comp7PostBattleVictoryStates</states>
+	</Comp7PostBattleVictoryGroup>
+	<Comp7PostBattleDefeatGroup>
+		<states>Comp7PostBattleDefeatStates</states>
+	</Comp7PostBattleDefeatGroup>
 </root>

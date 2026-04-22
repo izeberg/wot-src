@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from constants import EQUIPMENT_STAGES as STAGES
 from VisualScriptEquipment import VisualScriptEquipment
 from helpers.fixed_dict import getVisualScriptEquipmentPublicState

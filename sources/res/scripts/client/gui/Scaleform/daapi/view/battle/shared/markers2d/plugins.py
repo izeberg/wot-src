@@ -560,7 +560,7 @@ class VehicleMarkerTargetPluginReplayRecording(VehicleMarkerTargetPlugin):
 
     def _handleAutoAimMarker(self, event):
         super(VehicleMarkerTargetPluginReplayRecording, self)._handleAutoAimMarker(event)
-        if BattleReplay.g_replayCtrl.isRecording:
+        if BattleReplay.isRecording():
             BattleReplay.g_replayCtrl.serializeCallbackData(CallbackDataNames.ON_TARGET_VEHICLE_CHANGED, (event,))
 
 

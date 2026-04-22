@@ -1,5 +1,8 @@
+import typing
 from gui.prb_control.entities.base.actions_validator import BaseActionsValidator, ActionsValidatorComposite, CurrentVehicleActionsValidator, TutorialActionsValidator, CurrentPreviewVehicleActionsValidator
 from gui.prb_control.items import ValidationResult
+if typing.TYPE_CHECKING:
+    from gui.prb_control.entities.base.entity import BasePrbEntity
 
 class InQueueValidator(BaseActionsValidator):
 

@@ -76,6 +76,9 @@ msgstr "Armstrong Siddeley V4"
 msgid "Armstrong_Siddeley_B"
 msgstr "Armstrong Siddeley"
 
+msgid "CWT_165_1"
+msgstr "CWT-165-1"
+
 msgid "Ch00_ClingeBot_SH"
 msgstr "Clinger"
 
@@ -114,8 +117,8 @@ msgstr ""
 
 msgid "Ch01_Type59_long_special"
 msgstr ""
-"This Premium Chinese medium tank is based on the USSR T-54 tank and features"
-" similar armor protection and dynamic characteristics, allowing for "
+"This Premium Chinese medium tank is based on the U.S.S.R. T-54 tank and "
+"features similar armor protection and dynamic characteristics, allowing for "
 "effective gameplay. However, it is still a Chinese tank, which means it does"
 " not have great gun depression/elevation angles."
 
@@ -616,8 +619,8 @@ msgstr "T-26G FT"
 
 msgid "Ch30_T-26G_FT_descr"
 msgstr ""
-"The T-26 tanks were exported by the USSR to China in the late 1930s, where "
-"they saw service in the 200th Mechanized Division of the National "
+"The T-26 tanks were exported by the U.S.S.R. to China in the late 1930s, "
+"where they saw service in the 200th Mechanized Division of the National "
 "Revolutionary Army of Kuomintang (China). During the 1946–50 civil war, a "
 "number of vehicles were captured by the People's Liberation Army in eastern "
 "China in 1949. In 1950, they were used as a basis for the creation of at "
@@ -1402,8 +1405,8 @@ msgstr ""
 
 msgid "Ch65_Type59_IC4_3DSt_long_special"
 msgstr ""
-"This Premium Chinese medium tank is based on the USSR T-54 tank and features"
-" similar armor protection and dynamic characteristics, allowing for "
+"This Premium Chinese medium tank is based on the U.S.S.R. T-54 tank and "
+"features similar armor protection and dynamic characteristics, allowing for "
 "effective gameplay. However, it is still a Chinese tank, which means it does"
 " not have great gun depression/elevation angles."
 
@@ -1469,6 +1472,32 @@ msgstr ""
 
 msgid "Ch67_BZ_79_short"
 msgstr "BZ-79"
+
+msgid "Ch68_PGZ_70"
+msgstr "PGZ-70"
+
+msgid "Ch68_PGZ_70_descr"
+msgstr ""
+"A double-barreled 57 mm tracked self-propelled anti-aircraft gun based on "
+"the Soviet ZSU-57-2, developed by Military Plant #447 for China's foreign "
+"trade. Unlike the ZSU-57-2, the chassis of the Type 59 tank was used and "
+"adapted to the turret of the ZSU. Prototype trials showed the vehicle had "
+"great destructive power and firepower and was simple to operate and service."
+" Nevertheless, it never saw mass production."
+
+msgid "Ch68_PGZ_70_long_special"
+msgstr ""
+"The PGZ-70 is a Tier IX Chinese support medium tank with excellent mobility,"
+" very poor armor, and an autocannon similar to those of the Czechoslovakian "
+"light tank line. But the PGZ-70 has much more firepower, with better "
+"penetration and bigger single-shot and clip damage. Thanks to this, the "
+"vehicle can deal damage more consistently."
+
+msgid "Ch68_PGZ_70_short"
+msgstr "PGZ-70"
+
+msgid "Ch68_PGZ_70_short_special"
+msgstr "Autocannon, excellent mobility"
 
 msgid "Ch70_PTZ_78"
 msgstr "PTZ-78"
@@ -1804,6 +1833,9 @@ msgstr "Ziqiang"
 msgid "Chassis_Ch67_BZ_79"
 msgstr "BZ-79"
 
+msgid "Chassis_Ch68_PGZ_70"
+msgstr "PGZ-70"
+
 msgid "Continental_AOSI_895_5_Prem"
 msgstr "Continental AOSI-895-5"
 
@@ -2098,6 +2130,9 @@ msgstr "Ziqiang"
 
 msgid "Turret_1_Ch67_BZ_79"
 msgstr "BZ-79"
+
+msgid "Turret_1_Ch68_PGZ_70"
+msgstr "PGZ-70"
 
 msgid "Turret_1_Ch70_PTZ_78"
 msgstr "PTZ-78"
@@ -2602,6 +2637,9 @@ msgstr "12150L (120)"
 
 msgid "_12150L_34_1"
 msgstr "12150L (34-1)"
+
+msgid "_12150L_70"
+msgstr "12150L-70"
 
 msgid "_122-mm_37-122JT"
 msgstr "122 mm 37-122JT"
@@ -3215,6 +3253,9 @@ msgstr "Chuan dun-271"
 msgid "_57mm_AP_Type_97"
 msgstr "Type 92"
 
+msgid "_57mm_Chuan_bei_PG70"
+msgstr "Chuan bei PG70"
+
 msgid "_57mm_Chuan_chao_271_34"
 msgstr "Chuan chao-271 (34)"
 
@@ -3223,6 +3264,9 @@ msgstr "Chuan chao-271 (59-16)"
 
 msgid "_57mm_Chuan_chao_271_76G"
 msgstr "Chuan chao-271 (76G)"
+
+msgid "_57mm_Chuan_chao_PG70"
+msgstr "Chuan chao PG70"
 
 msgid "_57mm_Chuan_dun_271_34"
 msgstr "Chuan dun-271 (34)"
@@ -3245,6 +3289,9 @@ msgstr "Sha bao-271"
 msgid "_57mm_HE_Type_97"
 msgstr "Type 90"
 
+msgid "_57mm_PG70_x2"
+msgstr "57 mm PG70 x2"
+
 msgid "_57mm_Sha_bao_271_34"
 msgstr "Sha bao-271 (34)"
 
@@ -3253,6 +3300,9 @@ msgstr "Sha bao-271 (59-16)"
 
 msgid "_57mm_Sha_bao_271_76G"
 msgstr "Sha bao-271 (76G)"
+
+msgid "_57mm_Sha_bao_PG70"
+msgstr "Sha bao PG70"
 
 msgid "_57mm_ZiS_2"
 msgstr "57 mm ZiS-2"

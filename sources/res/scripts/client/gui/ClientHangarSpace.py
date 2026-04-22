@@ -1,6 +1,8 @@
-import copy
+from __future__ import absolute_import
+import copy, itertools
+from future.utils import viewkeys
 from logging import getLogger
-import itertools, BigWorld, Math, MusicControllerWWISE, ResMgr, constants
+import BigWorld, Math, MusicControllerWWISE, ResMgr, constants
 from PlayerEvents import g_playerEvents
 from debug_utils import LOG_DEBUG, LOG_ERROR, LOG_CURRENT_EXCEPTION
 from gui.hangar_config import HangarConfig
@@ -51,7 +53,7 @@ def _getHangarType(isPremium):
 def getHangarFullVisibilityMask(spacePath):
     spaceName = _getSpaceNameFromPath(spacePath)
     spaceVisibilityFlags = SpaceVisibilityFlagsFactory.create(spaceName)
-    availableFullVisibilityIDs = FULL_VISIBILITY_TAG_IDS.intersection(spaceVisibilityFlags.typeIDToIndex.iterkeys())
+    availableFullVisibilityIDs = FULL_VISIBILITY_TAG_IDS.intersection(viewkeys(spaceVisibilityFlags.typeIDToIndex))
     return spaceVisibilityFlags.getMaskForGameplayIDs(availableFullVisibilityIDs)
 
 
@@ -195,7 +197,7 @@ class ClientHangarSpace(object):
         _CFG = copy.deepcopy(_HANGAR_CFGS[spaceKey])
         self.turretAndGunAngles.init()
         self.__vEntityId = BigWorld.createEntity('HangarVehicle', self.__space.id, 0, _CFG['v_start_pos'], (
-         _CFG['v_start_angles'][2], _CFG['v_start_angles'][1], _CFG['v_start_angles'][0]), dict())
+         _CFG['v_start_angles'][2], _CFG['v_start_angles'][1], _CFG['v_start_angles'][0]), {})
         camera = BigWorld.FreeCamera()
         camera.spaceID = self.__space.id
         cameraMatrix = Math.Matrix()
@@ -378,14 +380,20 @@ class _ClientHangarSpacePathOverride(object):
         if path is not None and 'spaces/' not in path:
             path = 'spaces/' + path
         if isPremium is None:
-            isPremium = self.hangarSpace.isPremium
-        if path is not None:
-            if visibilityMask is None:
-                visibilityMask = getHangarFullVisibilityMask(path)
-            _EVENT_HANGAR_PATHS[isPremium] = (
-             path, visibilityMask)
-        elif isPremium in _EVENT_HANGAR_PATHS:
-            del _EVENT_HANGAR_PATHS[isPremium]
+            premiumKeys = (
+             True, False)
+        else:
+            premiumKeys = (
+             isPremium,)
+        for premiumKey in premiumKeys:
+            if path is not None:
+                if visibilityMask is None:
+                    visibilityMask = getHangarFullVisibilityMask(path)
+                _EVENT_HANGAR_PATHS[premiumKey] = (
+                 path, visibilityMask)
+            elif premiumKey in _EVENT_HANGAR_PATHS:
+                del _EVENT_HANGAR_PATHS[isPremium]
+
         if isReload:
             self.hangarSpace.refreshSpace(self.hangarSpace.isPremium, True)
             if event is None:

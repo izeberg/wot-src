@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
 	<Properties>
-		<requiredVersion_2200>
+		<requiredVersion_2210>
 			<Type>STRING</Type>
 			<Flags>BASE_AND_CLIENT</Flags>
-			<Default>eu_2.2.0_3</Default>
-		</requiredVersion_2200>
+			<Default>eu_2.2.1</Default>
+		</requiredVersion_2210>
 	</Properties>
 </root>
