@@ -1217,23 +1217,23 @@ msgid "crewMemberTankChange/transfer"
 msgstr "Перавесці"
 
 msgid "customization/applyToOtherSeason/desert"
-msgstr "на пустынной"
+msgstr "на пустынной"
 
 msgid "customization/applyToOtherSeason/message"
 msgstr ""
-"Все установленные декали %(season)s карте будут %(removed)s с машины,\n"
-"т. к. данная ячейка недоступна для %(this)s."
+"Все установленные декали %(season)s карте будут %(removed)s с машины,\n"
+"т. к. данная ячейка недоступна для %(this)s."
 
 msgid "customization/applyToOtherSeason/summer"
-msgstr "на летней"
+msgstr "на летней"
 
 msgid "customization/applyToOtherSeason/winter"
-msgstr "на зимней"
+msgstr "на зимней"
 
 msgid "customization/applyToOtherSeasons/alert_message"
 msgstr ""
-"При нанесении данной декали в эту ячейку для всех карт установленные декали %(season)s картах будут %(removed)s с машины,\n"
-"т. к. данная ячейка недоступна для %(this)s."
+"При нанесении данной декали в эту ячейку для всех карт установленные декали %(season)s картах будут %(removed)s с машины,\n"
+"т. к. данная ячейка недоступна для %(this)s."
 
 msgid "customization/applyToOtherSeasons/cancel"
 msgstr "Скасаваць"
@@ -1243,23 +1243,23 @@ msgstr "на пустынных"
 
 msgid "customization/applyToOtherSeasons/message"
 msgstr ""
-"Все установленные декали %(season)s картах будут %(removed)s с машины,\n"
-"т. к. данная ячейка недоступна для %(this)s."
+"Все установленные декали %(season)s картах будут %(removed)s с машины,\n"
+"т. к. данная ячейка недоступна для %(this)s."
 
 msgid "customization/applyToOtherSeasons/removed"
-msgstr "сняты"
+msgstr "прыбраны"
 
 msgid "customization/applyToOtherSeasons/submit"
 msgstr "Пацвердзіць"
 
 msgid "customization/applyToOtherSeasons/summer"
-msgstr "на летних"
+msgstr "на летніх"
 
 msgid "customization/applyToOtherSeasons/summer_desert"
-msgstr "на летних и пустынных"
+msgstr "на летніх і пустынных"
 
 msgid "customization/applyToOtherSeasons/summer_winter"
-msgstr "на летних и зимних"
+msgstr "на летніх і зімовых"
 
 msgid "customization/applyToOtherSeasons/these"
 msgstr "этих карт"
@@ -1271,10 +1271,10 @@ msgid "customization/applyToOtherSeasons/title"
 msgstr "Усталяваць дадзеную дэколь у гэтую ячэйку для ўсіх мапаў?"
 
 msgid "customization/applyToOtherSeasons/winter"
-msgstr "на зимних"
+msgstr "на зімовых"
 
 msgid "customization/applyToOtherSeasons/winter_desert"
-msgstr "на зимних и пустынных"
+msgstr "на зімовых і пустынных"
 
 msgid "customization/buy_install_bound/message"
 msgstr ""
@@ -1394,13 +1394,13 @@ msgid "customizationConfirmSell/title"
 msgstr "Пацвярджэнне продажу"
 
 msgid "dailyQuests/dialogConfirmReroll/timeLimitMsgHours"
-msgstr "каждые %(hours)s ч."
+msgstr "кожныя %(hours)s гадз."
 
 msgid "dailyQuests/dialogConfirmReroll/timeLimitMsgHoursMins"
-msgstr "каждые %(hours)s ч %(mins)s мин."
+msgstr "кожныя %(hours)s гадз %(mins)s хв."
 
 msgid "dailyQuests/dialogConfirmReroll/timeLimitMsgMins"
-msgstr "каждые %(mins)s мин."
+msgstr "кожныя %(mins)s хв."
 
 msgid "dailyQuests/dialogInfoConfirmReroll/message"
 msgstr "Замена задачы даступная {timeLimitMsg}"
@@ -1695,8 +1695,8 @@ msgstr "Знішчыць абсталяванне «%(equipment)s»?"
 
 msgid "equipmentDestroy/warningMsg"
 msgstr ""
-"Обратите внимание: уничтожив оборудование, вы сможете восстановить его в "
-"меню «Восстановление». Оно находится на Складе в запасах, во вкладке "
+"Обратите внимание: уничтожив оборудование, вы сможете восстановить его "
+"в меню «Восстановление». Оно находится на Складе в запасах, во вкладке "
 "«Оборудование»."
 
 msgid "equipmentPurcase/conformation/all"
@@ -2507,7 +2507,7 @@ msgid "premiumBuyConfirmation/cancel"
 msgstr "Скасаваць"
 
 msgid "premiumBuyConfirmation/message"
-msgstr "Купить Премиум аккаунт на %(days)s д. за %(gold)s золота?"
+msgstr "Ці купіць прэміум акаўнт на %(days)s сут, заплаціўшы %(gold)s золата?"
 
 msgid "premiumBuyConfirmation/submit"
 msgstr "Купіць"
@@ -2519,7 +2519,7 @@ msgid "premiumContinueConfirmation/cancel"
 msgstr "Скасаваць"
 
 msgid "premiumContinueConfirmation/message"
-msgstr "Продлить Премиум аккаунт на %(days)s д. за %(gold)s?"
+msgstr "Ці працягнуць прэміум акаўнт на %(days)s сут, заплаціўшы %(gold)s?"
 
 msgid "premiumContinueConfirmation/submit"
 msgstr "Прадоўжыць"
@@ -3063,7 +3063,7 @@ msgstr ""
 " «%(equipmentName)s»?"
 
 msgid "restoreEquipment/text"
-msgstr "Стоимость восстановления 1 ед.:"
+msgstr "Стоимость восстановления 1 ед.:"
 
 msgid "restoreTankman/buttons/recover"
 msgstr "Аднавіць"
@@ -3188,7 +3188,7 @@ msgid "sessionStats/confirmReset/submit"
 msgstr "Скінуць"
 
 msgid "sessionStats/confirmReset/time"
-msgstr ": %(hours)s ч. %(minutes)s мин."
+msgstr ": %(hours)s гадз %(minutes)s хв."
 
 msgid "sessionStats/confirmReset/title"
 msgstr "Скінуць статыстыку сеанса?"
@@ -3426,11 +3426,11 @@ msgstr "Добра"
 
 msgid "squadPremiumNeeded/message"
 msgstr ""
-"Создание взводов доступно только игрокам с Премиум аккаунтом.\n"
-"Игрок, создавший взвод, может пригласить любого игрока независимо от типа его аккаунта."
+"Толькі гульцы з прэміум акаўнтам могуць ствараць звязы.\n"
+"Гулец, які стварыў звяз, можа запрасіць адвольнага гульца незалежна ад тыпу яго акаўнту."
 
 msgid "squadPremiumNeeded/title"
-msgstr "Только для Премиум аккаунта"
+msgstr "Толькі для прэміум акаўнту"
 
 msgid "steamStartNeeded/cancel"
 msgstr "Закрыць гульню"

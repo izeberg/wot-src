@@ -12,7 +12,7 @@
 	<postProgressionTree>role_MT_universal</postProgressionTree>
 	<speedLimits>
 		<forward>55</forward>
-		<backward>20</backward>
+		<backward>23</backward>
 	</speedLimits>
 	<invisibility>
 		<moving>
@@ -4922,7 +4922,10 @@
 		<detailed>
 			<engines>
 				<V-2-34A_hb25>
-					<smplEnginePower>600</smplEnginePower>
+					<smplEnginePower>
+						676.83
+						<!--BW_String-->
+					</smplEnginePower>
 					<smplFwMaxSpeed>55</smplFwMaxSpeed>
 				</V-2-34A_hb25>
 			</engines>

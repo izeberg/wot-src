@@ -973,7 +973,7 @@
 			<shortFilterAlert/>
 			<longFilterAlert/>
 			<tooltips>cooldownTime delay areaRadius shotsNumber duration-artillery</tooltips>
-			<cooldownTime>120</cooldownTime>
+			<cooldownTime>90</cooldownTime>
 			<cooldownFactors/>
 			<sharedCooldownTime>0</sharedCooldownTime>
 			<consumeAmmo>false</consumeAmmo>
@@ -986,9 +986,9 @@
 				<areaSwitch>content/Interface/TargetPoint/circle_dot_cross.visual</areaSwitch>
 				<areaColor>0xFFFF0000</areaColor>
 			</arenaAimLimits>
-			<delay>1</delay>
+			<delay>3</delay>
 			<duration>10</duration>
-			<shotsNumber>20</shotsNumber>
+			<shotsNumber>30</shotsNumber>
 			<areaRadius>50</areaRadius>
 			<explodeDestructible>false</explodeDestructible>
 			<areaVisual>content/Interface/TargetPoint/circle_attack.visual</areaVisual>

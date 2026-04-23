@@ -9,10 +9,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "battleQuestAwards/button"
-msgstr "Так точно!"
+msgstr "Так!"
 
 msgid "battleQuestAwards/goToShop"
-msgstr "В Магазин события"
+msgstr "В Магазин события"
 
 msgid "battleQuestAwards/header/subTitle/left"
 msgstr "СОБЫТИЕ «ВРЕМЯ ГЕРОЕВ»"
@@ -24,138 +24,138 @@ msgid "battleQuestAwards/header/subTitle/right/offence"
 msgstr "РЕЖИМ «ПРОРЫВ»"
 
 msgid "battleQuestAwards/header/title/battleQuest"
-msgstr "НАГРАДА ЗА БОЕВУЮ ЗАДАЧУ"
+msgstr "НАГРАДА ЗА БОЕВУЮ ЗАДАЧУ"
 
 msgid "battleQuestAwards/header/title/regular"
-msgstr "НАГРАДА ЗА ПРОХОЖДЕНИЕ %(level)s ЭТАПА"
+msgstr "НАГРАДА ЗА ПРОХОЖДЕНИЕ %(level)s ЭТАПА"
 
 msgid "battleQuestAwards/header/title/special"
-msgstr "НАГРАДА ЗА ПРОХОЖДЕНИЕ СОБЫТИЯ"
+msgstr "НАГРАДА ЗА ПРОХОЖДЕНИЕ СОБЫТИЯ"
 
 msgid "battleQuestAwards/mainRewardDescription"
-msgstr "Полностью пройти Путь к победе в событии «Время героев»."
+msgstr "Полностью пройти Путь к победе в событии «Время героев»."
 
 msgid "battleQuestAwards/mainRewardTitle"
-msgstr "Нашивка «Победитель»"
+msgstr "Нашыўка «Пераможца»."
 
 msgid "battleQuestAwards/showInHangar"
-msgstr "Показать в Ангаре"
+msgstr "Паказаць у Гаражы"
 
 msgid "battleQuestAwards/subTitle"
-msgstr "СТАЛЬНОЙ ОХОТНИК"
+msgstr "СТАЛЁВЫ ПАЛЯЎНІЧЫ"
 
 msgid "battleQuestAwards/title/completed"
-msgstr "ФИНАЛЬНЫЙ ЭТАП ПРОЙДЕН!"
+msgstr "ФІНАЛЬНЫ ЭТАП ПРОЙДЗЕНЫ!"
 
 msgid "battleQuestAwards/title/inProgress"
-msgstr "ЭТАП %(level)s ПРОЙДЕН!"
+msgstr "ЭТАП %(level)s ПРОЙДЗЕНЫ!"
 
 msgid "header/coinValue/maxAmount"
 msgstr " / %(value)"
 
 msgid "progressionView/battleQuests/multiConditions"
-msgstr "%(firstCondition)s или %(secondCondition)s"
+msgstr "%(firstCondition)s або %(secondCondition)s"
 
 msgid "progressionView/battleQuests/oneCondition"
 msgstr "%(firstCondition)s"
 
 msgid "progressionView/battleQuests/questsTotal/text"
-msgstr "Выполненных задач: "
+msgstr "Выкананых задач:"
 
 msgid "progressionView/battleQuests/timer/completed/text"
-msgstr "Задачи появятся через"
+msgstr "Задачы з'явяцца праз"
 
 msgid "progressionView/battleQuests/timer/inProgress/text"
-msgstr "Задачи обновятся через"
+msgstr "Задачы абновяцца праз"
 
 msgid "progressionView/battleQuests/timer/title"
-msgstr "Все ежедневные задачи выполнены. Возвращайтесь завтра."
+msgstr "Усе штодзённыя задачы выкананы. Вяртайцеся заўтра."
 
 msgid "progressionView/card/points"
 msgstr ""
 "%(whiteSpanish_Open)s%(current)s/%(whiteSpanish_Close)s%(par_Open)s%(total)s%(par_Close)s"
 
 msgid "progressionView/discountFull"
-msgstr "(вплоть до 100%)"
+msgstr "(вплоть до 100%)"
 
 msgid "progressionView/discountPercent"
 msgstr "25%"
 
 msgid "progressionView/rewardBuy"
-msgstr "Купить"
+msgstr "Купіць"
 
 msgid "progressionView/rewardBuyDesc"
 msgstr ""
-"Участвуйте в событии «Время героев» и зарабатывайте очки победы, чтобы в "
-"итоге получить советский средний премиум танк %(vehicleLevel)s уровня "
+"Участвуйте в событии «Время героев» и зарабатывайте очки победы, чтобы "
+"в итоге получить советский средний премиум танк %(vehicleLevel)s уровня "
 "%(vehicleName)s %(free)s."
 
 msgid "progressionView/rewardBuyLabel"
 msgstr "Получение танка"
 
 msgid "progressionView/rewardDiscount"
-msgstr "Скидка %(percent)s% на %(vehicleLvl)s %(roleIcon)s %(vehicleName)s"
+msgstr "Скидка %(percent)s% на %(vehicleLvl)s %(roleIcon)s %(vehicleName)s"
 
 msgid "progressionView/rewardForFree"
-msgstr "бесплатно"
+msgstr "бясплатна"
 
 msgid "progressionView/rewardLevel"
 msgstr "VII"
 
 msgid "progressionView/rewardNoPersonalDiscount"
-msgstr "%(icon)s Персональная скидка на танк отсутствует"
+msgstr "%(icon)s Персональная скидка на танк отсутствует"
 
 msgid "progressionView/rewardNoPersonalDiscountExist"
 msgstr "%(icon)s Ваша действующая скидка: %(discount)s"
 
 msgid "progressionView/rewardPersonalDiscountInfo"
 msgstr ""
-"Не успеваете пройти Путь к победе? Машину также можно купить %(discount)s, "
-"которая увеличивается на %(discountPercent)s за каждые 2 пройденных этапа "
+"Не успеваете пройти Путь к победе? Машину также можно купить %(discount)s, "
+"которая увеличивается на %(discountPercent)s за каждые 2 пройденных этапа "
 "%(discountFull)s."
 
 msgid "progressionView/rewardReceived"
-msgstr "Награда получена!"
+msgstr "Узнагарода атрымана!"
 
 msgid "progressionView/rewardWithDiscount"
-msgstr "по скидке"
+msgstr "по скидке"
 
 msgid "progressionView/subTitle/completed"
-msgstr "Зарабатывайте стальные печати и приобретайте стили Стального охотника"
+msgstr "Зарабатывайте стальные печати и приобретайте стили Стального охотника"
 
 msgid "progressionView/subTitle/inProgress"
-msgstr "Выполняя боевые задачи, вы получаете очки прогрессии"
+msgstr "Выконваючы баявыя задачы, вы атрымліваеце ачкі прагрэсіі"
 
 msgid "progressionView/title/completed"
-msgstr "ПУТЬ К ПОБЕДЕ ЗАВЕРШЁН!"
+msgstr "ПУТЬ К ПОБЕДЕ ЗАВЕРШЁН!"
 
 msgid "progressionView/title/inProgress"
 msgstr "ПУТЬ ПОБЕДЫ"
 
 msgid "serviceChannelMessages/awards"
-msgstr "Получена награда:"
+msgstr "Атрымана ўзнагарода:"
 
 msgid "serviceChannelMessages/body"
 msgstr ""
-"Вы завершили %(stage)s-й этап прогрессии %(modeName)s события "
+"Вы завершили %(stage)s-й этап прогрессии %(modeName)s события "
 "«%(progressionName)s»."
 
 msgid "serviceChannelMessages/compensation/body"
 msgstr ""
-"+++Часть компенсации за машину %(vehicleLvl)s уровня %(vehicleName)s золотом"
+"+++Часть компенсации за машину %(vehicleLvl)s уровня %(vehicleName)s золотом"
 " %(compensationAmount)s+++"
 
 msgid "serviceChannelMessages/compensation/title"
 msgstr "+++Компенсация+++"
 
 msgid "serviceChannelMessages/discountAward"
-msgstr "Ваша скидка на %(vehicle)s повысилась"
+msgstr "Ваша скидка на %(vehicle)s повысилась"
 
 msgid "serviceChannelMessages/discountAwardPercentage"
-msgstr " до %(discount)d%%"
+msgstr " до %(discount)d%%"
 
 msgid "serviceChannelMessages/header"
-msgstr "Поздравляем!"
+msgstr "Віншуем!"
 
 msgid "serviceChannelMessages/modeName/defence"
 msgstr "Оборона"
@@ -164,7 +164,7 @@ msgid "serviceChannelMessages/modeName/offence"
 msgstr "Прорыв"
 
 msgid "serviceChannelMessages/progressionButton"
-msgstr "Подробнее"
+msgstr "Падрабязней"
 
 msgid "serviceChannelMessages/progressionName"
 msgstr "Время героев"
@@ -173,4 +173,4 @@ msgid "serviceChannelMessages/tankmanAward"
 msgstr "Добавлен член экипажа «%(name)s»"
 
 msgid "serviceChannelMessages/unlockedVehiclesAward"
-msgstr "Разблокирован доступ к улучшенной технике события: %(vehicles)s"
+msgstr "Разблокирован доступ к улучшенной технике события: %(vehicles)s"

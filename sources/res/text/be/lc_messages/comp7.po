@@ -307,7 +307,7 @@ msgstr "%(start)s — %(end)s"
 
 msgid "calendarDay/timeLeft"
 msgid_plural "plural/calendarDay/timeLeft"
-msgstr[0] "Событие «Грозовой тигр» продлится %(days)d день."
+msgstr[0] "Падзея «Навальнічны тыгр» працягнецца %(days)d дзень."
 msgstr[1] "Падзея «Навальнічны тыгр» працягнецца %(days)d дні."
 msgstr[2] "Падзея «Навальнічны тыгр» працягнецца %(days)d дзён."
 
@@ -748,7 +748,7 @@ msgid "primeTimeView/status/primeWillBeAvailable"
 msgstr "Баі на серверы %(server)s пачнуцца праз %(time)s"
 
 msgid "primeTimeView/status/seasonDisabled"
-msgstr "Событие «Грозовой тигр» на сервере %(server)s завершилось."
+msgstr "Падзея «Навальнічны тыгр» на серверы %(server)s завяршылася."
 
 msgid "primeTimeView/status/untill"
 msgstr "Баі на серверы %(server)s недаступныя да %(startTime)s"
@@ -988,7 +988,7 @@ msgstr ""
 "{whiteSpanish_Open}Для %(vehicleLevel)s узроўню тэхнікі{whiteSpanish_Close}"
 
 msgid "rewards/subtitle/styleProgress"
-msgstr "{whiteSpanish_Open}Для стиля «Грозовой тигр»{whiteSpanish_Close}"
+msgstr "{whiteSpanish_Open}Для стылю «Навальнічны тыгр»{whiteSpanish_Close}"
 
 msgid "rewards/subtitle/vehicles_rent"
 msgstr "%(vehicleLevel)s узровень"
@@ -1071,13 +1071,13 @@ msgid "scoreTooltip/header"
 msgstr "Ачкі рэйтынгу"
 
 msgid "season/daysLeft"
-msgstr "До завершения: %(totalDays)s д."
+msgstr "Да завяршэння %(totalDays)s сут."
 
 msgid "season/hoursLeft"
-msgstr "До завершения: %(hours)s ч."
+msgstr "Да завяршэння: %(hours)s гадз."
 
 msgid "season/minutesLeft"
-msgstr "До завершения: %(minutes)s мин."
+msgstr "Да завяршэння: %(minutes)s хв."
 
 msgid "season/name"
 msgstr "Націск: Навальнічны тыгр"
@@ -1415,8 +1415,8 @@ msgstr ""
 
 msgid "whatsNewView/slides/description/rework"
 msgstr ""
-"В этом запуске изменился список доступных карт, а также были пересмотрены "
-"некоторые ролевые навыки и тактический навык «Минное поле»."
+"У гэтым запуску змяніўся спіс даступных мап, а таксама былі перагледжаны "
+"некаторыя ролевыя навыкі і тактычны навык «Міннае поле»."
 
 msgid "whatsNewView/slides/description/roleSkills"
 msgstr ""
@@ -1495,8 +1495,8 @@ msgstr "НАЦІСК"
 
 msgid "whatsNewView/vehicleLimitations/description"
 msgstr ""
-"К участию в событии «Грозовой тигр» больше не допускаются машины роли САУ "
-"и тяжёлые огнемётные танки."
+"Да ўдзелу ў падзеі «Навальнічны тыгр» больш не дапускаюцца машыны ролі САУ "
+"і цяжкія агнямётныя танкі."
 
 msgid "whatsNewView/vehicleLimitations/heading"
 msgstr "Абмежаванні паводле тэхнікі"

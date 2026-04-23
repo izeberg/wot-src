@@ -10,7 +10,7 @@
 	<supplySlots>2 1 1 6 6 6 7 8 8 8</supplySlots>
 	<speedLimits>
 		<forward>55</forward>
-		<backward>20</backward>
+		<backward>23</backward>
 	</speedLimits>
 	<invisibility>
 		<moving>
@@ -4431,7 +4431,10 @@
 		<detailed>
 			<engines>
 				<V-2IS_R1_hb25>
-					<smplEnginePower>600</smplEnginePower>
+					<smplEnginePower>
+						657.3
+						<!--BW_String-->
+					</smplEnginePower>
 					<smplFwMaxSpeed>55</smplFwMaxSpeed>
 				</V-2IS_R1_hb25>
 			</engines>

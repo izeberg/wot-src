@@ -290,7 +290,7 @@ msgstr "Ошибка восстановления оборудования. По
 
 msgid "artefact_restore/success"
 msgstr ""
-"Оборудование «%(name)s» (%(count)s шт.) восстановлено. Потрачено %(money)s."
+"Оборудование «%(name)s» (%(count)s шт.) восстановлено. Потрачено %(money)s."
 
 msgid "artefact_sell/invalid_module"
 msgstr "Не ўдалося прадаць %(kind)s «%(name)s». Памылковы модуль."
@@ -1248,7 +1248,7 @@ msgstr ""
 msgid "customization/personal_number_prohibited_all_seasons"
 msgstr ""
 "Номер %(value)s недоступен.\n"
-"%(itemType)s «%(itemName)s» был снят для всех карт."
+"%(itemType)s «%(itemName)s» был снят для всех карт."
 
 msgid "customization/progression/down/style"
 msgstr "Узровень стылю «%s» зніжаны да %s"
@@ -3065,8 +3065,7 @@ msgid "premium/continueSuccess"
 msgstr "Прэміум акаўнт працягнуты на %(period)d сут. Выдаткавана %(money)s."
 
 msgid "premium/not_enough_gold"
-msgstr ""
-"Недостаточно золота для покупки Премиум аккаунта на срок %(period)d д."
+msgstr "Замала золата, каб купіць прэміум акаўнт на %(period)d сут."
 
 msgid "premium/post_battle_premium"
 msgstr ""
@@ -3075,7 +3074,7 @@ msgstr ""
 
 msgid "premium/server_error"
 msgstr ""
-"Ошибка покупки Премиум аккаунта на срок %(period)d д. Попробуйте позже."
+"Не ўдалося купіць прэміум акаўнт на %(period)d сут. Паспрабуйце пазней."
 
 msgid "premium/wallet_not_available"
 msgstr ""
@@ -3705,7 +3704,7 @@ msgstr ""
 "Інтэрфейс абноўлены %(date)s а %(time)s, бо на серверы адбыліся змены."
 
 msgid "squad/createError"
-msgstr "Создание взводов доступно только игрокам с Премиум аккаунтом."
+msgstr "Стварэнне звязу даступнае толькі гульцам з прэміум акаўнтам."
 
 msgid "squad/kickedFromQueue"
 msgstr ""
@@ -3794,8 +3793,8 @@ msgstr ""
 
 msgid "stronghold/clanSeason/quest/title"
 msgstr ""
-"За выполнение одной или нескольких задач личной прогрессии Кланового сезона "
-"вам начислена награда."
+"За выкананне адной з задач асабістай прагрэсіі Кланавага сезона вам налічана"
+" ўзнагарода."
 
 msgid "techtree/action/expireTime"
 msgstr "%(days)s сут"

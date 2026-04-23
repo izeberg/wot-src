@@ -51,13 +51,13 @@ msgid "bundles/countdown/days"
 msgstr "%(day)s сут."
 
 msgid "bundles/countdown/daysWithHours"
-msgstr "%(day)s д. %(hour)s ч."
+msgstr "%(day)s сут. %(hour)s гадз."
 
 msgid "bundles/countdown/hours"
 msgstr "%(hour)s гадз."
 
 msgid "bundles/countdown/hoursWithMinutes"
-msgstr "%(hour)s ч. %(min)s мин."
+msgstr "%(hour)s гадз. %(min)s хв."
 
 msgid "bundles/countdown/min"
 msgstr "%(min)s хв."
@@ -554,29 +554,29 @@ msgid "mainView/title/step/10"
 msgstr "Установка топливной системы"
 
 msgid "mainView/title/step/11"
-msgstr "Установка системы эжекции и вентиляции"
+msgstr "Установка системы эжекции и вентиляции"
 
 msgid "mainView/title/step/12"
 msgstr "Усталяванне гарматы"
 
 msgid "mainView/title/step/13"
-msgstr "Установка аккумуляторов и вспомогательной силовой установки"
+msgstr "Установка аккумуляторов и вспомогательной силовой установки"
 
 msgid "mainView/title/step/14"
 msgstr "Установка органов управления"
 
 msgid "mainView/title/step/15"
 msgstr ""
-"Установка оборудования отделения управления и размещение ММГ боекомплекта"
+"Установка оборудования отделения управления и размещение ММГ боекомплекта"
 
 msgid "mainView/title/step/16"
-msgstr "Установка корзины башни и системы управления огнём"
+msgstr "Установка корзины башни и системы управления огнём"
 
 msgid "mainView/title/step/17"
 msgstr "Установка внутреннего оборудования башни"
 
 msgid "mainView/title/step/18"
-msgstr "Размещение ММГ боекомплекта в башне"
+msgstr "Размещение ММГ боекомплекта в башне"
 
 msgid "mainView/title/step/19"
 msgstr "Установка башни"
@@ -585,10 +585,10 @@ msgid "mainView/title/step/2"
 msgstr "Вызначэнне габарытаў машыны"
 
 msgid "mainView/title/step/20"
-msgstr "Установка ведущих колёс и подвески"
+msgstr "Установка ведущих колёс и подвески"
 
 msgid "mainView/title/step/21"
-msgstr "Установка опорных катков и ленивцев"
+msgstr "Установка опорных катков и ленивцев"
 
 msgid "mainView/title/step/22"
 msgstr "Протяжка гусеничных лент"
@@ -694,8 +694,8 @@ msgstr "Глава %(count)d: «%(chapter_name)s» станет доступна
 
 msgid "notifications/announcement/event"
 msgstr ""
-"Бойцы! У вас есть возможность построить уникальную машину — %(tankName)s с "
-"крупнокалиберной 152-мм пушкой. Событие начинается %(startDate)s."
+"Бойцы! У вас есть возможность построить уникальную машину — %(tankName)s "
+"с крупнокалиберной 152-мм пушкой. Событие начинается %(startDate)s."
 
 msgid "notifications/announcement/heavyTank"
 msgstr "цяжкі танк"
@@ -717,8 +717,8 @@ msgstr "узнагародная"
 
 msgid "notifications/bundleOutTime"
 msgstr ""
-"Произошла ошибка при начислении жетонов строительства. Не волнуйтесь, они "
-"поступят на ваш аккаунт в ближайшее время."
+"Адбылася памылка пры налічэнні жэтонаў будаўніцтва. Не хвалюйцеся, яны "
+"неўзабаве паступяць на ваш акаўнт."
 
 msgid "notifications/collectRewards"
 msgstr ""
@@ -773,7 +773,7 @@ msgstr "Этапы пройдзены"
 
 msgid "notifications/started/chapter"
 msgstr ""
-"Доступна глава %(count)d: «%(chapter_name)s» с новыми задачами и наградами."
+"Доступна глава %(count)d: «%(chapter_name)s» с новыми задачами и наградами."
 
 msgid "notifications/started/chapter/untitled"
 msgstr "Даступны раздзел!"
@@ -950,7 +950,7 @@ msgid "rewardsView/subTitle/final"
 msgstr "Атрымана ўзнагарода за фінальны этап палігонных выпрабаванняў"
 
 msgid "rewardsView/subTitle/stage"
-msgstr "Получены награды за пройденные этапы"
+msgstr "Получены награды за пройденные этапы"
 
 msgid "rewardsView/title/stage/many"
 msgstr "ЭТАПЫ ПРОЙДЗЕНЫ!"
@@ -1019,7 +1019,7 @@ msgid "tooltip/after/weekday/7"
 msgstr "воскресенья"
 
 msgid "tooltip/chapter/disabled/doFuture/note"
-msgstr "Станет доступна%(startText)s"
+msgstr "Стане даступная: %(startText)s"
 
 msgid "tooltip/chapter/disabled/doFuture/noteDate"
 msgstr ""
@@ -1223,13 +1223,14 @@ msgid "tooltip/tab/progression/header"
 msgstr "Ангар будаўніцтва"
 
 msgid "tooltip/tab/quests/body"
-msgstr "Задачи события «Сборочный цех»."
+msgstr "Задачы падзеі «Зборачны цэх»."
 
 msgid "tooltip/tab/quests/header"
 msgstr "Задачы"
 
 msgid "tooltip/tab/quests/note"
-msgstr "Доступны: %(color_open)sc %(startDate)s до %(endDate)s%(color_close)s"
+msgstr ""
+"Даступныя: %(color_open)sc %(startDate)s до %(endDate)s%(color_close)s"
 
 msgid "tooltip/tab/quests/noteDate"
 msgstr "%(weekday)s %(day)s %(month)s %(year)s %(startTime)s"
@@ -1250,25 +1251,25 @@ msgid "tooltip/tokenStepper/press"
 msgstr "Націсніце"
 
 msgid "tooltip/weekday/1"
-msgstr "в понедельник"
+msgstr "в понедельник"
 
 msgid "tooltip/weekday/2"
-msgstr "во вторник"
+msgstr "во вторник"
 
 msgid "tooltip/weekday/3"
-msgstr "в среду"
+msgstr "в среду"
 
 msgid "tooltip/weekday/4"
-msgstr "в четверг"
+msgstr "в четверг"
 
 msgid "tooltip/weekday/5"
-msgstr "в пятницу"
+msgstr "в пятницу"
 
 msgid "tooltip/weekday/6"
-msgstr "в субботу"
+msgstr "в субботу"
 
 msgid "tooltip/weekday/7"
-msgstr "в воскресенье"
+msgstr "в воскресенье"
 
 msgid "videoRewardView/back"
 msgstr "Працягнуць"
@@ -1298,7 +1299,7 @@ msgstr[1] "%(value)s дні"
 msgstr[2] "%(value)s дзён"
 
 msgid "widget/countdown/hours"
-msgstr "%(hour)s ч. %(min)s мин."
+msgstr "%(hour)s гадз. %(min)s хв."
 
 msgid "widget/countdown/min"
 msgstr "%(min)s хв."

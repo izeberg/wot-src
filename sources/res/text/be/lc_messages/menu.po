@@ -37,7 +37,7 @@ msgid "Time/timeLeftShort/min"
 msgstr "%(min)s хв."
 
 msgid "Time/timeValue/days"
-msgstr "%(day)s д. %(hour)s ч. %(min)s мин."
+msgstr "%(day)s сут %(hour)s гадз %(min)s хв."
 
 msgid "Time/timeValue/hours"
 msgstr "%(hour)s гадз. %(min)s хв."
@@ -49,22 +49,22 @@ msgid "Time/timeValue/min"
 msgstr "%(min)s хв."
 
 msgid "Time/timeValueShort/days"
-msgstr "%(day)s д. %(hour)s ч."
+msgstr "%(day)s сут. %(hour)s гадз."
 
 msgid "Time/timeValueShort/hours"
-msgstr "%(hour)s ч. %(min)s мин."
+msgstr "%(hour)s гадз. %(min)s хв."
 
 msgid "Time/timeValueShort/lessMin"
-msgstr "01 мин."
+msgstr "01 хв."
 
 msgid "Time/timeValueShort/min"
 msgstr "%(min)s хв."
 
 msgid "Time/timeValueShort/noLeadingZeroes/days"
-msgstr "%(day)s д. %(hour)s ч."
+msgstr "%(day)s сут. %(hour)s гадз."
 
 msgid "Time/timeValueShort/noLeadingZeroes/hours"
-msgstr "%(hour)s ч. %(min)s мин."
+msgstr "%(hour)s гадз. %(min)s хв."
 
 msgid "Time/timeValueShort/noLeadingZeroes/lessMin"
 msgstr "1 хв."
@@ -73,16 +73,16 @@ msgid "Time/timeValueShort/noLeadingZeroes/min"
 msgstr "%(min)s хв."
 
 msgid "Time/timeValueWithSecs/days"
-msgstr "%(day)s д. %(hour)s ч."
+msgstr "%(day)s сут. %(hour)s гадз."
 
 msgid "Time/timeValueWithSecs/hours"
-msgstr "%(hour)s ч. %(min)s мин."
+msgstr "%(hour)s гадз. %(min)s хв."
 
 msgid "Time/timeValueWithSecs/lessMin"
 msgstr "%(sec)s с"
 
 msgid "Time/timeValueWithSecs/min"
-msgstr "%(min)s мин. %(sec)s с"
+msgstr "%(min)s хв. %(sec)s с"
 
 msgid "ability/title"
 msgstr "Мадыфікацыя"
@@ -880,10 +880,10 @@ msgid "boosters/common/name"
 msgstr "Асабісты рэзерв"
 
 msgid "boosters/timeLeft/days"
-msgstr "%(day)s д. %(hour)s ч."
+msgstr "%(day)s сут. %(hour)s гадз."
 
 msgid "boosters/timeLeft/hours"
-msgstr "%(hour)s ч. %(min)s мин."
+msgstr "%(hour)s гадз. %(min)s хв."
 
 msgid "boosters/timeLeft/lessMin"
 msgstr "1 хв."
@@ -1614,13 +1614,13 @@ msgid "cst_item_ctx_menu/prohibitSale"
 msgstr "Зняць вылучэнне"
 
 msgid "cst_item_ctx_menu/putOnFirst"
-msgstr "Поместить в слот № 1"
+msgstr "Змясціць у слот №1"
 
 msgid "cst_item_ctx_menu/putOnSecond"
-msgstr "Поместить в слот № 2"
+msgstr "Змясціць у слот №2"
 
 msgid "cst_item_ctx_menu/putOnThird"
-msgstr "Поместить в слот № 3"
+msgstr "Змясціць у слот №3"
 
 msgid "cst_item_ctx_menu/remove"
 msgstr "Прыбраць"
@@ -1790,7 +1790,7 @@ msgid "custom/shot_passion/extraParams/name/vehicleGunDamage"
 msgstr ""
 "%(defaultText)s\n"
 "\n"
-"Общий бонус к среднему урону не может превышать: %(increaseDamage)d%%"
+"Агульны бонус да сярэдніх пашкоджанняў не можа перавышаць: %(increaseDamage)d%%"
 
 msgid "customization/title"
 msgstr "Выгляд"
@@ -2017,8 +2017,8 @@ msgstr "Хуткасць павароту: да %(rotationSpeed)s град/с"
 
 msgid "descriptions/vehicleEngine"
 msgstr ""
-"Мощность: %(enginePower)s л.с.\n"
-"Вероятность пожара при попадании: %(fireStartingChance)s"
+"Магутнасць: %(enginePower)s к.с.\n"
+"Імавернасць пажару пры траплянні: %(fireStartingChance)s"
 
 msgid "descriptions/vehicleGun"
 msgstr ""
@@ -2183,9 +2183,8 @@ msgstr ""
 
 msgid "extraParams/name/abilityCooldownBonus"
 msgstr ""
-"Параметр, отвечающий за уменьшение времени перезарядки модификации при "
-"успешном уничтожении техники противника тараном во время действия "
-"модификации."
+"Параметр, які адказвае за памяншэнне часу перанабівання мадыфікацыі пры "
+"паспяховым знішчэнні тэхнікі праціўніка падчас дзеяння мадыфікацыі."
 
 msgid "extraParams/name/abilityDurationBonus"
 msgstr ""
@@ -2487,8 +2486,8 @@ msgstr ""
 
 msgid "extraParams/name/vehicleRamOrExplosionDamageResistance"
 msgstr ""
-"Параметр, отвечающий за полученный урон от ОФ-снарядов, огнесмеси и тарана. "
-"Чем больше брони в точке попадания, тем сильнее эффект."
+"Параметр, які адказвае за атрыманыя пашкоджанні ад АФ снарадаў, агнясумесі і"
+" тарану. Чым больш брані ў пункце трапляння, тым мацнейшы эфект."
 
 msgid "extraParams/name/vehicleReloadTimeAfterShellChange"
 msgstr ""
@@ -4028,7 +4027,7 @@ msgid "loading/battleTypes/30"
 msgstr "Націск"
 
 msgid "loading/battleTypes/300"
-msgstr "В космос!"
+msgstr "У космас!"
 
 msgid "loading/battleTypes/31"
 msgstr "Размінка"
@@ -4815,7 +4814,7 @@ msgid "moduleInfo/params/enginePower"
 msgstr "Магутнасць рухавіка"
 
 msgid "moduleInfo/params/enginePowerPerTon"
-msgstr "К удельной мощности (л.с./т) "
+msgstr "Да ўдзельнай магутнасці (к.с./т) "
 
 msgid "moduleInfo/params/explosionRadius"
 msgstr "Радыус паражэння"
@@ -5291,10 +5290,10 @@ msgstr "90 сутак"
 
 msgid "premium/packet/longDescriptionSpecial"
 msgstr ""
-"Наличие Премиум аккаунта позволяет вам быстрее развиваться в игре, "
-"обеспечивая дополнительный заработок серебра и опыта. Премиум аккаунт един "
-"для «Мира танков» и «Мира кораблей», поэтому, покупая его для одной игры, вы"
-" автоматически получаете его в другой."
+"Наяўнасць Прэміум акаўнту дазваляе вам хутчэй развівацца ў гульні, "
+"забяспечваючы дадатковы заробак срэбра і досведу. Прэміум акаўнт адзіны для "
+"гульняў «Мир танков» і «Мир кораблей», таму, купляючы яго для адной гульні, "
+"вы аўтаматычна атрымліваеце яго ў іншай."
 
 msgid "premium/packet/shortDescriptionSpecial"
 msgstr "+50% да досведу, срэбра і досведу экіпажу за бой"
@@ -6751,7 +6750,7 @@ msgid "tank_params/no_brackets/s"
 msgstr "c"
 
 msgid "tank_params/p"
-msgstr "(л.с.)"
+msgstr "(к.с.)"
 
 msgid "tank_params/param12"
 msgstr "Праходнасць"
@@ -6766,7 +6765,7 @@ msgid "tank_params/pitchLimits"
 msgstr "Вуглы вертыкальнай наводкі"
 
 msgid "tank_params/pt"
-msgstr "(л.с./т)"
+msgstr "(к.с./т)"
 
 msgid "tank_params/qpt"
 msgstr "(колькасць/час)"
@@ -6835,7 +6834,7 @@ msgid "tank_params/shotDispersionAngle"
 msgstr "Роскід на 100 м"
 
 msgid "tank_params/shotDispersionAngle/withAutoShoot"
-msgstr "Разброс (обобщённый) на 100 м"
+msgstr "Разброс (обобщённый) на 100 м"
 
 msgid "tank_params/shotSpeed"
 msgstr "Хуткасць палёту"
@@ -7075,28 +7074,28 @@ msgid "techtree/premiumPanel/title"
 msgstr "ПРЭМІУМ ТЭХНІКА"
 
 msgid "timeLeft/full/day"
-msgstr "{day} д. {hour} ч."
+msgstr "{day} сут. {hour} гадз."
 
 msgid "timeLeft/full/hour"
-msgstr "{hour} ч. {min} мин."
+msgstr "{hour} гадз {min} хв."
 
 msgid "timeLeft/full/lessMin"
 msgstr "1 хв."
 
 msgid "timeLeft/full/min"
-msgstr "{min} мин."
+msgstr "{min} хв."
 
 msgid "timeLeft/short/day"
-msgstr "{day} д."
+msgstr "{day} сут."
 
 msgid "timeLeft/short/hour"
-msgstr "{hour} ч."
+msgstr "{hour} гадз."
 
 msgid "timeLeft/short/lessMin"
 msgstr "1 хв."
 
 msgid "timeLeft/short/min"
-msgstr "{min} мин."
+msgstr "{min} хв."
 
 msgid "trade/in"
 msgstr "Можна абмяняць"
@@ -7418,10 +7417,10 @@ msgid "vehicleInfo/params/dualAccuracyCoolingDelay"
 msgstr "Час ахаладжэння гарматы пасля стрэлу (с)"
 
 msgid "vehicleInfo/params/enginePower"
-msgstr "Мощность двигателя (л.с.)"
+msgstr "Магутнасць рухавіка (к.с.)"
 
 msgid "vehicleInfo/params/enginePowerPerTon"
-msgstr "Удельная мощность (л.с./т)"
+msgstr "Удзельная магутнасць (к.с./т)"
 
 msgid "vehicleInfo/params/flameMaxDistance"
 msgstr "Далёкасць агнямятання (м)"
@@ -7469,7 +7468,7 @@ msgid "vehicleInfo/params/reloadTimeSecs"
 msgstr "Набіванне гарматы (с)"
 
 msgid "vehicleInfo/params/rocketAccelerationEnginePower"
-msgstr "Мощность двигателя (с ускорителями) (л.с.)"
+msgstr "Магутнасць рухавіка (з паскаральнікамі) (к.c.)"
 
 msgid "vehicleInfo/params/rocketAccelerationReuseAndDuration"
 msgstr "Рэактыўныя паскаральнікі (колькасць/час)"
@@ -7511,7 +7510,7 @@ msgid "vehicleInfo/params/turboshaftBurstFireRate"
 msgstr "Касета (турба) (с/шт./шт.)"
 
 msgid "vehicleInfo/params/turboshaftEnginePower"
-msgstr "Мощность двигателя (турбо) (л.с.)"
+msgstr "Магутнасць рухавіка (турба) (к.с.)"
 
 msgid "vehicleInfo/params/turboshaftInvisibilityMovingFactor"
 msgstr "Скрытасць машыны падчас руху (турба) (%)"
@@ -7631,7 +7630,7 @@ msgid "vehiclePreview/endTime"
 msgstr "Прапанова завяршылася"
 
 msgid "vehiclePreview/timeLeft/hours"
-msgstr "%(hour)s ч. %(min)s мин."
+msgstr "%(hour)s гадз. %(min)s хв."
 
 msgid "vehiclePreview/timeLeft/lessMin"
 msgstr "1 хв."
@@ -7643,7 +7642,7 @@ msgid "vehiclePreview/timeLeftShort/hours"
 msgstr "%(hour)s гадз."
 
 msgid "vehiclePreview/timeLeftShort/lessMin"
-msgstr "01 мин."
+msgstr "01 хв."
 
 msgid "vehiclePreview/timeLeftShort/min"
 msgstr "%(min)s хв."
@@ -7655,7 +7654,7 @@ msgid "vehicleRestore/timeLeftShort/hours"
 msgstr "%(hour)sгадз %(min)sхв."
 
 msgid "vehicleRestore/timeLeftShort/lessMin"
-msgstr "01 мин."
+msgstr "01 хв."
 
 msgid "vehicleRestore/timeLeftShort/min"
 msgstr "%(min)sхв."

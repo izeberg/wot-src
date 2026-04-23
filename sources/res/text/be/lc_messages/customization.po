@@ -12,10 +12,10 @@ msgid "arrowHint/text"
 msgstr "НАЖИМАЙТЕ КЛАВИШИ, ЧТОБЫ ИЗМЕНИТЬ ЭЛЕМЕНТ"
 
 msgid "cart/bonus"
-msgstr "+%(bonus)s к маскировке"
+msgstr "+%(bonus)s да маскіроўкі"
 
 msgid "cart/emptyDescription"
-msgstr "На машину не нанесены элементы внешнего вида."
+msgstr "На машину не нанесены элементы внешнего вида."
 
 msgid "cart/emptyTitle"
 msgstr "Сняты все элементы"
@@ -27,13 +27,13 @@ msgid "cart/seasonsName/all_seasons"
 msgstr "Все карты"
 
 msgid "cart/seasonsName/desert"
-msgstr "Пустынная карта"
+msgstr "Пустынная мапа"
 
 msgid "cart/seasonsName/summer"
-msgstr "Летняя карта"
+msgstr "Летняя мапа"
 
 msgid "cart/seasonsName/winter"
-msgstr "Зимняя карта"
+msgstr "Зімовая мапа"
 
 msgid "cartPanel/applyButton"
 msgstr "Применить"
@@ -48,56 +48,56 @@ msgid "changeButton/tooltip"
 msgstr "?empty?"
 
 msgid "customization/allSeasonsHint/shortText"
-msgstr "Наносить для всех типов карт"
+msgstr "Наносить для всех типов карт"
 
 msgid "customization/allSeasonsHint/text"
-msgstr "Наносить %(item)s для всех типов карт"
+msgstr "Наносить %(item)s для всех типов карт"
 
 msgid "customization/allSeasonsHint/tooltip/body"
 msgstr ""
-"Элементы будут нанесены сразу для всех типов карт. При нанесении нового "
-"элемента в занятый слот установленные элементы будут заменены на новые для "
-"всех типов карт."
+"Элементы будут нанесены сразу для всех типов карт. При нанесении нового "
+"элемента в занятый слот установленные элементы будут заменены на новые "
+"для всех типов карт."
 
 msgid "customization/allSeasonsHint/tooltip/header"
-msgstr "Наносить элемент для всех типов карт"
+msgstr "Наносить элемент для всех типов карт"
 
 msgid "customization/backButton"
 msgstr "НАЗАД"
 
 msgid "customization/carousel/change_button"
-msgstr "Изменить"
+msgstr "Змяніць"
 
 msgid "customization/carousel/is_already_used"
-msgstr "На другой технике"
+msgstr "На іншай тэхніцы"
 
 msgid "customization/changeButton/tooltip"
-msgstr "Нажмите, чтобы изменить стиль."
+msgstr "Націсніце, каб змяніць стыль."
 
 msgid "customization/changeButtonDisabled/tooltip"
 msgstr ""
-"Вы сможете редактировать стиль, как только будет получена этапная декаль для"
-" данной машины."
+"Рэдагаванне стылю стане даступным, калі будзе атрымана этапная дэколь для "
+"гэтай машыны."
 
 msgid "customization/closeButton"
-msgstr "ЗАКРЫТЬ"
+msgstr "ЗАКРЫЦЬ"
 
 msgid "customization/decalsBanner"
 msgstr "Этапные декали"
 
 msgid "customization/message/description"
 msgstr ""
-"Измените параметры фильтра или закройте меню настройки декали, чтобы "
+"Измените параметры фильтра или закройте меню настройки декали, чтобы "
 "отобразить элементы внешнего вида."
 
 msgid "customization/message/header"
-msgstr "По вашему запросу ничего не найдено"
+msgstr "По вашему запросу ничего не найдено"
 
 msgid "customization/resetFilter/tooltip/text"
-msgstr "Нажмите, чтобы сбросить настройки фильтра на состояние по умолчанию."
+msgstr "Нажмите, чтобы сбросить настройки фильтра на состояние по умолчанию."
 
 msgid "customization/resetFiltersBtn/label"
-msgstr "Сбросить фильтр"
+msgstr "Скінуць фільтр"
 
 msgid "customization/seasonsTabs/desert"
 msgstr "ПУСТЫННАЯ"
@@ -109,22 +109,22 @@ msgid "customization/seasonsTabs/summer"
 msgstr "ЛЕТНЯЯ"
 
 msgid "customization/seasonsTabs/winter"
-msgstr "ЗИМНЯЯ"
+msgstr "ЗІМОВАЯ"
 
 msgid "filters/labelAll"
-msgstr "Все"
+msgstr "Усе"
 
 msgid "filters/labelSale"
-msgstr "В продаже"
+msgstr "В продаже"
 
 msgid "filters/labelStock"
-msgstr "На Складе"
+msgstr "На Складзе"
 
 msgid "filters/openPanelButton"
 msgstr "Раскрыть панель"
 
 msgid "filters/selectedTitle"
-msgstr "Выбрано:"
+msgstr "Выбрана:"
 
 msgid "filtersPopover/counterText"
 msgstr "Отображаемые элементы:"
@@ -133,67 +133,67 @@ msgid "filtersPopover/filters/availabilityTitle"
 msgstr "Наличие"
 
 msgid "filtersPopover/filters/editableTitle"
-msgstr "Изменяемость"
+msgstr "Змяняльнасць"
 
 msgid "filtersPopover/filters/formfactorTitle"
-msgstr "Соотношение сторон"
+msgstr "Прапорцыі экрана"
 
 msgid "filtersPopover/filters/groupsDefaultTitle"
-msgstr "Все группы"
+msgstr "Усе групы"
 
 msgid "filtersPopover/filters/groupsTitle"
-msgstr "Группы"
+msgstr "Групы"
 
 msgid "filtersPopover/filters/hiddenFiltersCaption"
-msgstr "Новые элементы скрыты фильтром"
+msgstr "Новыя элементы схаваны фільтрам"
 
 msgid "filtersPopover/filters/historicTitle"
-msgstr "Историчность"
+msgstr "Гістарычнасць"
 
 msgid "filtersPopover/filters/onAnotherVehTitle"
-msgstr "Нанесено на другую технику"
+msgstr "Нанесено на другую технику"
 
 msgid "filtersPopover/filters/sortingDefaultTitle"
-msgstr "По умолчанию"
+msgstr "Перадвызначана"
 
 msgid "filtersPopover/filters/sortingTitle"
 msgstr "Сортировка"
 
 msgid "filtersPopover/filters/specificTitle"
-msgstr "Особые"
+msgstr "Асаблівыя"
 
 msgid "filtersPopover/title"
-msgstr "Фильтр"
+msgstr "Фільтр"
 
 msgid "itemTypes/camouflage"
 msgstr "КАМУФЛЯЖ"
 
 msgid "itemTypes/decal"
-msgstr "Декали"
+msgstr "Дэколі"
 
 msgid "itemTypes/emblem"
-msgstr "ЭМБЛЕМЫ"
+msgstr "Эмблемы"
 
 msgid "itemTypes/inscription"
-msgstr "НАДПИСИ"
+msgstr "Надпісы"
 
 msgid "itemTypes/modification"
-msgstr "ЭФФЕКТЫ"
+msgstr "Эфекты"
 
 msgid "itemTypes/outfit"
 msgstr "?empty?"
 
 msgid "itemTypes/paint"
-msgstr "КРАСКИ"
+msgstr "Фарбы"
 
 msgid "itemTypes/personalNumber"
-msgstr "Трёхзначные номера"
+msgstr "Трохзначныя нумары"
 
 msgid "itemTypes/projectionDecal"
-msgstr "ДЕКАЛИ"
+msgstr "Дэколі"
 
 msgid "itemTypes/style"
-msgstr "Стили"
+msgstr "Стылі"
 
 msgid "itemTypes/style_2d"
 msgstr "2D-СТИЛИ"
@@ -202,16 +202,16 @@ msgid "itemTypes/style_3d"
 msgstr "3D-СТИЛИ"
 
 msgid "progression/info"
-msgstr "О ПРОГРЕССИОННОМ СТИЛЕ"
+msgstr "ПРА ПРАГРЭСІЙНЫ СТЫЛЬ"
 
 msgid "tooltips/carousel/arrow"
-msgstr "Нажмите, чтобы переместиться к нанесённому элементу."
+msgstr "Нажмите, чтобы переместиться к нанесённому элементу."
 
 msgid "tooltips/cart/BuyButtonDisabledNotEnoughMoney"
-msgstr "Недостаточно средств для покупки выбранных элементов внешнего вида."
+msgstr "Недостаточно средств для покупки выбранных элементов внешнего вида."
 
 msgid "tooltips/cart/buyButtonDisabledDefault"
-msgstr "На машину не нанесены элементы внешнего вида."
+msgstr "На машину не нанесены элементы внешнего вида."
 
 msgid "tooltips/cart/cancelButtonDisabled"
 msgstr "После открытия экрана внешнего вида изменения отсутствуют."
@@ -219,13 +219,13 @@ msgstr "После открытия экрана внешнего вида из�
 msgid "tooltips/cart/cancelButtonEnabled"
 msgstr ""
 "Нажмите, чтобы отменить все изменения. Внешний вид машины будет возвращён к "
-"состоянию, которое было на момент открытия экрана внешнего вида."
+"состоянию, которое было на момент открытия экрана внешнего вида."
 
 msgid "tooltips/cart/clearButtonDisabled"
-msgstr "На машину не нанесены элементы внешнего вида."
+msgstr "На машину не нанесены элементы внешнего вида."
 
 msgid "tooltips/cart/clearButtonEnabled"
-msgstr "Нажмите, чтобы снять с техники все элементы внешнего вида."
+msgstr "Нажмите, чтобы снять с техники все элементы внешнего вида."
 
 msgid "tooltips/filters/allRadioBody"
 msgstr "Включить отображение всех доступных элементов внешнего вида."
@@ -234,151 +234,149 @@ msgid "tooltips/filters/allRadioHeader"
 msgstr "Все элементы"
 
 msgid "tooltips/filters/appliedToggleBody"
-msgstr "Включить/отключить отображение элементов внешнего вида на технике."
+msgstr "Паказваць/схаваць элементы выгляду машыны."
 
 msgid "tooltips/filters/appliedToggleHeader"
-msgstr "На технике"
+msgstr "На тэхніцы"
 
 msgid "tooltips/filters/editableToggleBody"
 msgstr ""
-"Включить/отключить отображение изменяемых стилей. Система сохраняет до 5 "
-"полученных изменённых стилей. При превышении лимита сохранённые изменения "
-"одного из стилей будут сброшены до состояния по умолчанию."
+"Включить/отключить отображение изменяемых стилей. Система сохраняет "
+"до 5 полученных изменённых стилей. При превышении лимита сохранённые "
+"изменения одного из стилей будут сброшены до состояния по умолчанию."
 
 msgid "tooltips/filters/editableToggleHeader"
-msgstr "Изменяемые стили"
+msgstr "Зменныя стылі"
 
 msgid "tooltips/filters/fantasticalToggleBody"
 msgstr ""
-"Включить/отключить отображение стилей и элементов, которые являются "
-"художественным вымыслом и с большей вероятностью не могут быть реализованы в"
-" реальной жизни."
+"Включить/отключить отображение стилей и элементов, которые являются "
+"художественным вымыслом и с большей вероятностью не могут быть реализованы "
+"в реальной жизни."
 
 msgid "tooltips/filters/fantasticalToggleHeader"
-msgstr "Вымышленные элементы"
+msgstr "Выдуманыя элементы"
 
 msgid "tooltips/filters/favoritesToggleBody"
-msgstr ""
-"Включить/отключить отображение только избранных элементов внешнего вида."
+msgstr "Паказваць/схаваць толькі выбраныя элементы выгляду."
 
 msgid "tooltips/filters/favoritesToggleHeader"
-msgstr "Избранные элементы внешнего вида"
+msgstr "Выбраныя элементы выгляду"
 
 msgid "tooltips/filters/formfactor11ToggleBody"
-msgstr "Включить/отключить отображение декали с соотношением сторон 1:1."
+msgstr "Включить/отключить отображение декали с соотношением сторон 1:1."
 
 msgid "tooltips/filters/formfactor11ToggleHeader"
 msgstr "Соотношение сторон 1:1"
 
 msgid "tooltips/filters/formfactor12ToggleBody"
-msgstr "Включить/отключить отображение декали с соотношением сторон 1:2."
+msgstr "Включить/отключить отображение декали с соотношением сторон 1:2."
 
 msgid "tooltips/filters/formfactor12ToggleHeader"
 msgstr "Соотношение сторон 1:2"
 
 msgid "tooltips/filters/formfactor13ToggleBody"
-msgstr "Включить/отключить отображение декали с соотношением сторон 1:3."
+msgstr "Включить/отключить отображение декали с соотношением сторон 1:3."
 
 msgid "tooltips/filters/formfactor13ToggleHeader"
 msgstr "Соотношение сторон 1:3"
 
 msgid "tooltips/filters/formfactor14ToggleBody"
-msgstr "Включить/отключить отображение декали с соотношением сторон 1:4."
+msgstr "Включить/отключить отображение декали с соотношением сторон 1:4."
 
 msgid "tooltips/filters/formfactor14ToggleHeader"
 msgstr "Соотношение сторон 1:4"
 
 msgid "tooltips/filters/formfactor16ToggleBody"
-msgstr "Включить/отключить отображение декали с соотношением сторон 1:6."
+msgstr "Включить/отключить отображение декали с соотношением сторон 1:6."
 
 msgid "tooltips/filters/formfactor16ToggleHeader"
 msgstr "Соотношение сторон 1:6"
 
 msgid "tooltips/filters/historicToggleBody"
-msgstr "Включить/отключить отображение историчных элементов внешнего вида."
+msgstr "Паказваць/схаваць гістарычныя элементы выгляду машыны."
 
 msgid "tooltips/filters/historicToggleHeader"
-msgstr "Историчные"
+msgstr "Гістарычныя"
 
 msgid "tooltips/filters/noneditableToggleBody"
-msgstr "Включить/отключить отображение неизменяемых стилей."
+msgstr "Паказаць/схаваць нязменныя стылі."
 
 msgid "tooltips/filters/noneditableToggleHeader"
-msgstr "Неизменяемые стили"
+msgstr "Нязменныя стылі"
 
 msgid "tooltips/filters/nonhistoricToggleBody"
-msgstr "Включить/отключить отображение неисторичных элементов внешнего вида."
+msgstr "Паказваць/схаваць негістарычныя элементы выгляду машыны."
 
 msgid "tooltips/filters/nonhistoricToggleHeader"
-msgstr "Неисторичные"
+msgstr "Негістарычныя"
 
 msgid "tooltips/filters/onAnotherVehDisabledBody"
 msgstr ""
-"Чтобы включить отображение элементов внешнего вида на другой технике, "
-"включите отображение всех элементов на панели выше."
+"Чтобы включить отображение элементов внешнего вида на другой технике, "
+"включите отображение всех элементов на панели выше."
 
 msgid "tooltips/filters/onAnotherVehDisabledTitle"
 msgstr "Отображение недоступно"
 
 msgid "tooltips/filters/onAnotherVehEnabledBody"
 msgstr ""
-"Включить/отключить отображение имеющихся элементов внешнего вида, нанесённых"
-" на другую технику."
+"Паказаць/схаваць наяўныя элементы выгляду, нанесеныя на іншую тэхніку."
 
 msgid "tooltips/filters/onAnotherVehEnabledTitle"
-msgstr "Элементы на другой технике"
+msgstr "Элементы на іншай тэхніцы"
 
 msgid "tooltips/filters/openPanelButton"
 msgstr ""
-"Нажмите, чтобы развернуть панель с элементами внешнего вида на весь экран."
+"Нажмите, чтобы развернуть панель с элементами внешнего вида на весь экран."
 
 msgid "tooltips/filters/openPanelDisabledButton"
-msgstr "Раскрытие панели недоступно в режиме редактирования элемента."
+msgstr "Раскрытие панели недоступно в режиме редактирования элемента."
 
 msgid "tooltips/filters/popoverButtonBody"
 msgstr ""
-"Настройте отображение элементов внешнего вида по наличию, историчности и "
-"другим параметрам."
+"Настройте отображение элементов внешнего вида по наличию, историчности "
+"и другим параметрам."
 
 msgid "tooltips/filters/popoverButtonTitle"
-msgstr "Фильтр по параметрам"
+msgstr "Фільтр паводле параметраў"
 
 msgid "tooltips/filters/progressionDecalsToggleBody"
-msgstr "Включить/отключить отображение этапных элементов внешнего вида."
+msgstr "Паказваць/схаваць этапныя элементы выгляду машыны."
 
 msgid "tooltips/filters/progressionDecalsToggleHeader"
-msgstr "Этапные элементы"
+msgstr "Этапныя элементы"
 
 msgid "tooltips/filters/progressionstylesToggleBody"
-msgstr "Включить/отключить отображение только прогрессионных стилей."
+msgstr "Паказваць/схаваць толькі прагрэсійныя стылі."
 
 msgid "tooltips/filters/progressionstylesToggleHeader"
-msgstr "Прогрессионные стили"
+msgstr "Прагрэсійныя стылі"
 
 msgid "tooltips/filters/saleRadioBody"
-msgstr "Включить отображение элементов внешнего вида, доступных для покупки."
+msgstr "Включить отображение элементов внешнего вида, доступных для покупки."
 
 msgid "tooltips/filters/saleRadioHeader"
-msgstr "В продаже"
+msgstr "В продаже"
 
 msgid "tooltips/filters/stockRadioBody"
-msgstr "Включить отображение элементов внешнего вида в наличии на Складе."
+msgstr "Включить отображение элементов внешнего вида в наличии на Складе."
 
 msgid "tooltips/filters/stockRadioHeader"
-msgstr "На Складе"
+msgstr "На Складзе"
 
 msgid "tooltips/tabs/camouflage_description"
 msgstr ""
-"Трёхкомпонентные цветовые схемы (башня/орудие/корпус), подходят для "
-"нанесения на большинство машин. Для бонуса к маскировке нужно нанести "
-"камуфляж на корпус."
+"Трёхкомпонентные цветовые схемы (башня/орудие/корпус), подходят "
+"для нанесения на большинство машин. Для бонуса к маскировке нужно нанести "
+"камуфляж на корпус."
 
 msgid "tooltips/tabs/camouflage_title"
 msgstr "Камуфляж"
 
 msgid "tooltips/tabs/emblem_description"
 msgstr ""
-"Эмблемы наносятся на определённые места машины и подчёркивают её "
+"Эмблемы наносятся на определённые места машины и подчёркивают её "
 "индивидуальность."
 
 msgid "tooltips/tabs/emblem_title"
@@ -386,45 +384,45 @@ msgstr "Эмблемы"
 
 msgid "tooltips/tabs/inscription_description"
 msgstr ""
-"Надписи наносятся на определённые места машины и подчёркивают её "
+"Надписи наносятся на определённые места машины и подчёркивают её "
 "индивидуальность."
 
 msgid "tooltips/tabs/inscription_title"
-msgstr "Надписи"
+msgstr "Надпісы"
 
 msgid "tooltips/tabs/modification_description"
 msgstr ""
-"Эффекты изменяют внешний вид покрытия машины: старят его или наоборот делают"
-" новее."
+"Эфекты змяняюць выгляд фарбавага пакрыцця машыны, старачы яго або наадварот "
+"робячы навейшым."
 
 msgid "tooltips/tabs/modification_title"
-msgstr "Эффекты"
+msgstr "Эфекты"
 
 msgid "tooltips/tabs/paint_description"
-msgstr "Изменяют базовый цвет машины, не влияют на показатель маскировки."
+msgstr "Изменяют базовый цвет машины, не влияют на показатель маскировки."
 
 msgid "tooltips/tabs/paint_title"
-msgstr "Краски"
+msgstr "Фарбы"
 
 msgid "tooltips/tabs/projectionDecal_description"
 msgstr ""
-"Декали — крупные наклейки — наносятся на определённые места машины и "
-"подчёркивают её индивидуальность."
+"Декали — крупные наклейки — наносятся на определённые места машины "
+"и подчёркивают её индивидуальность."
 
 msgid "tooltips/tabs/projectionDecal_title"
-msgstr "Декали"
+msgstr "Дэколі"
 
 msgid "tooltips/tabs/style_2d_description"
 msgstr ""
-"Добавляют бонус к маскировке, подходят для нанесения на большинство машин."
+"Добавляют бонус к маскировке, подходят для нанесения на большинство машин."
 
 msgid "tooltips/tabs/style_2d_title"
-msgstr "2D-стили"
+msgstr "2D-стылі"
 
 msgid "tooltips/tabs/style_3d_description"
 msgstr ""
-"Придают уникальный внешний вид определённой машине, добавляют бонус к "
-"маскировке, содержат тематические компоненты и элементы наружного обвеса."
+"Придают уникальный внешний вид определённой машине, добавляют бонус "
+"к маскировке, содержат тематические компоненты и элементы наружного обвеса."
 
 msgid "tooltips/tabs/style_3d_title"
-msgstr "3D-стили"
+msgstr "3D-стылі"

@@ -159,7 +159,8 @@ def showHBFairplayWarningDialog(reason='', callback=None):
 
 def showAwardsView(stage, closeCallback=None):
     from historical_battles.gui.impl.lobby.views.battle_quest_awards_view import BattleQuestAwardsViewWindow
-    BattleQuestAwardsViewWindow(stage, closeCallback).load()
+    windowClass = stage.get('windowClass') or BattleQuestAwardsViewWindow
+    windowClass(stage, closeCallback).load()
 
 
 def showInfoPage():

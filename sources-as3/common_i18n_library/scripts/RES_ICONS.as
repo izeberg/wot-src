@@ -25001,6 +25001,8 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_COMBOXPDIRECTIVESBATTLEBOOSTER2:String = "../maps/icons/quests/bonuses/s180x135/comboXpDirectivesBattleBooster2.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_COMBOXPDIRECTIVESBATTLEBOOSTER2BATTLEBOOSTER:String = "../maps/icons/quests/bonuses/s180x135/comboXpDirectivesBattleBooster2BattleBooster.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_COMBOXPDIRECTIVESBATTLEBOOSTER3:String = "../maps/icons/quests/bonuses/s180x135/comboXpDirectivesBattleBooster3.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_COMMANDER_SIXTHSENSE:String = "../maps/icons/quests/bonuses/s180x135/commander_sixthSense.png";
@@ -27922,6 +27924,8 @@ package
       public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_COMBOXPDIRECTIVESBATTLEBOOSTER1:String = "../maps/icons/quests/bonuses/small/comboXpDirectivesBattleBooster1.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_COMBOXPDIRECTIVESBATTLEBOOSTER2:String = "../maps/icons/quests/bonuses/small/comboXpDirectivesBattleBooster2.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_COMBOXPDIRECTIVESBATTLEBOOSTER2BATTLEBOOSTER:String = "../maps/icons/quests/bonuses/small/comboXpDirectivesBattleBooster2BattleBooster.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_COMBOXPDIRECTIVESBATTLEBOOSTER3:String = "../maps/icons/quests/bonuses/small/comboXpDirectivesBattleBooster3.png";
       

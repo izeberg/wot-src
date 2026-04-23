@@ -656,7 +656,7 @@ msgid "operationTitle/label/excellentDone"
 msgstr "Усе задачы выкананы з адзнакай"
 
 msgid "operationTitle/label/inProgress/pm2"
-msgstr "Выполняется на %(vehData)s"
+msgstr "Выконваецца на %(vehData)s"
 
 msgid "operationTitle/label/inProgress/regular"
 msgstr "Выконваць на тэхніцы галіны %(vehData)s"
@@ -674,7 +674,7 @@ msgid "operationTitle/label/toMaster"
 msgstr "Задач з адзнакай: %(count)s/%(total)s %(infoIcon)s"
 
 msgid "operationTitle/label/unlocked/pm2"
-msgstr "Выберите задачу для выполнения на %(vehData)s"
+msgstr "Выберыце задачу для выканання на %(vehData)s"
 
 msgid "operationTitle/label/unlocked/regular"
 msgstr "Выберыце задачу для выканання на тэхніцы галіны %(vehData)s"
@@ -784,7 +784,7 @@ msgid "questAwardScreen/recruitBtn/label"
 msgstr "Рэкрутаваць"
 
 msgid "questProgressTracking/status/onPause"
-msgstr "На паузе"
+msgstr "Прыпынена"
 
 msgid "questProgressTracking/trackingStatus"
 msgstr "Зараз выконваецца некалькі задач"

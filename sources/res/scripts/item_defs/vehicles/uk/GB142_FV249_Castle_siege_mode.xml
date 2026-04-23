@@ -80,27 +80,75 @@
 	</camouflage>
 	<hull>
 		<armor>
-			<armor_1>150</armor_1>
-			<armor_2>150</armor_2>
-			<armor_3>76</armor_3>
-			<armor_4>80</armor_4>
-			<armor_5>25</armor_5>
-			<armor_6>140</armor_6>
-			<armor_7>90</armor_7>
+			<armor_1>
+				152.4
+				<!--BW_String-->
+			</armor_1>
+			<armor_2>
+				152.4
+				<!--BW_String-->
+			</armor_2>
+			<armor_3>
+				76.2
+				<!--BW_String-->
+			</armor_3>
+			<armor_4>
+				50.8
+				<!--BW_String-->
+			</armor_4>
+			<armor_5>
+				25.4
+				<!--BW_String-->
+			</armor_5>
+			<armor_6>
+				139.7
+				<!--BW_String-->
+			</armor_6>
+			<armor_7>
+				88.9
+				<!--BW_String-->
+			</armor_7>
 			<armor_8>0</armor_8>
-			<armor_9>50</armor_9>
-			<armor_10>25</armor_10>
-			<armor_11>185</armor_11>
-			<armor_12>200</armor_12>
-			<armor_13>25</armor_13>
-			<armor_14>80</armor_14>
+			<armor_9>
+				50.8
+				<!--BW_String-->
+			</armor_9>
+			<armor_10>
+				25.4
+				<!--BW_String-->
+			</armor_10>
+			<armor_11>
+				184.2
+				<!--BW_String-->
+			</armor_11>
+			<armor_12>
+				203.2
+				<!--BW_String-->
+			</armor_12>
+			<armor_13>
+				25.4
+				<!--BW_String-->
+			</armor_13>
+			<armor_14>
+				50.8
+				<!--BW_String-->
+			</armor_14>
 			<armor_15>
 				3
 				<vehicleDamageFactor>0</vehicleDamageFactor>
 			</armor_15>
-			<armor_16>150</armor_16>
-			<armor_17>280</armor_17>
-			<armor_18>155</armor_18>
+			<armor_16>
+				152.4
+				<!--BW_String-->
+			</armor_16>
+			<armor_17>
+				279.4
+				<!--BW_String-->
+			</armor_17>
+			<armor_18>
+				152.4
+				<!--BW_String-->
+			</armor_18>
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>39190</weight>
@@ -2999,29 +3047,87 @@
 			<price>60000</price>
 			<notInShop>true</notInShop>
 			<armor>
-				<armor_1>260</armor_1>
-				<armor_2>120</armor_2>
-				<armor_3>105</armor_3>
-				<armor_4>90</armor_4>
-				<armor_5>45</armor_5>
-				<armor_6>120</armor_6>
-				<armor_7>180</armor_7>
+				<armor_1>254</armor_1>
+				<armor_2>127</armor_2>
+				<armor_3>
+					101.6
+					<!--BW_String-->
+				</armor_3>
+				<armor_4>
+					88.9
+					<!--BW_String-->
+				</armor_4>
+				<armor_5>
+					50.8
+					<!--BW_String-->
+				</armor_5>
+				<armor_6>127</armor_6>
+				<armor_7>
+					177.8
+					<!--BW_String-->
+				</armor_7>
 				<armor_8>0</armor_8>
-				<armor_9>25</armor_9>
-				<armor_10>25</armor_10>
-				<armor_11>100</armor_11>
-				<armor_12>115</armor_12>
-				<armor_13>265</armor_13>
-				<armor_14>120</armor_14>
-				<armor_15>40</armor_15>
-				<armor_16>110</armor_16>
-				<armor_17>85</armor_17>
-				<armor_18>100</armor_18>
-				<armor_19>120</armor_19>
-				<armor_20>100</armor_20>
-				<armor_21>80</armor_21>
-				<armor_22>155</armor_22>
-				<armor_23>180</armor_23>
+				<armor_9>
+					25.4
+					<!--BW_String-->
+				</armor_9>
+				<armor_10>
+					25.4
+					<!--BW_String-->
+				</armor_10>
+				<armor_11>
+					101.6
+					<!--BW_String-->
+				</armor_11>
+				<armor_12>
+					121.7
+					<!--BW_String-->
+				</armor_12>
+				<armor_13>
+					266.7
+					<!--BW_String-->
+				</armor_13>
+				<armor_14>
+					121.7
+					<!--BW_String-->
+				</armor_14>
+				<armor_15>
+					38.1
+					<!--BW_String-->
+				</armor_15>
+				<armor_16>
+					101.6
+					<!--BW_String-->
+				</armor_16>
+				<armor_17>
+					88.9
+					<!--BW_String-->
+				</armor_17>
+				<armor_18>
+					101.6
+					<!--BW_String-->
+				</armor_18>
+				<armor_19>127</armor_19>
+				<armor_20>
+					101.6
+					<!--BW_String-->
+				</armor_20>
+				<armor_21>
+					76.2
+					<!--BW_String-->
+				</armor_21>
+				<armor_22>
+					152.4
+					<!--BW_String-->
+				</armor_22>
+				<armor_23>
+					177.8
+					<!--BW_String-->
+				</armor_23>
+				<armor_24>
+					304.8
+					<!--BW_String-->
+				</armor_24>
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>17000</weight>
@@ -3050,15 +3156,18 @@
 					<unlocks/>
 					<armor>
 						<armor_1>
-							265
+							266.7
+							<!--BW_String-->
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_1>
 						<armor_2>
-							200
+							228.6
+							<!--BW_String-->
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_2>
 						<armor_3>
-							155
+							152.4
+							<!--BW_String-->
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_3>
 						<armor_4>
@@ -3066,17 +3175,25 @@
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_4>
 						<armor_5>
-							45
+							76.2
+							<!--BW_String-->
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_5>
 						<armor_6>
-							45
+							38.1
+							<!--BW_String-->
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_6>
 						<armor_7>
-							180
+							241.3
+							<!--BW_String-->
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_7>
+						<armor_9>
+							304.8
+							<!--BW_String-->
+							<vehicleDamageFactor>0</vehicleDamageFactor>
+						</armor_9>
 						<gun>50</gun>
 					</armor>
 					<pitchLimits>

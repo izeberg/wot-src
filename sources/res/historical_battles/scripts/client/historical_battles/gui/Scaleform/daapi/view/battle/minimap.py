@@ -38,7 +38,6 @@ _HB_BOMBER_MARKER = 'HbBomberMinimapEntryUI'
 _HISTORICAL_BATTLE_BASE_ID = 8
 _FULLMAP_ZOOM = 1.0
 _MINIMAP_ZOOM = 0.666
-_MINIMAP_1M_IN_PX = 0.21
 _FULL_MAP_PATH = ('_level0.root.{}.main.fullMap.mapContainer.entriesContainer').format(LAYER_NAMES.VIEWS)
 _logger = logging.getLogger(__name__)
 
@@ -337,7 +336,6 @@ class HistoricalBattlesMinimapPingPlugin(MinimapPingPlugin):
 class HBDeathZonesMinimapPlugin(EntriesPlugin):
     __slots__ = ('_activeDeathZones', '_scaleCoefX', '_scaleCoefY')
     _SYMBOL_NAME = 'EventDeathZoneMinimapEntryUI'
-    _MINIMAP_1M_IN_PX = 0.21
 
     def __init__(self, parentObj):
         super(HBDeathZonesMinimapPlugin, self).__init__(parentObj)
@@ -350,21 +348,46 @@ class HBDeathZonesMinimapPlugin(EntriesPlugin):
         self._scaleCoefY = minimap_utils.MINIMAP_SIZE[1] / arenaSize[1]
 
 
+class HBCenteredPersonalEntriesPlugin(CenteredPersonalEntriesPlugin):
+    __slots__ = ('__zoneCenterEntryID', )
+    _EMPTY_SYMBOL = 'HBEmptyMinimapEntryUI'
+
+    def __init__(self, parentObj):
+        super(HBCenteredPersonalEntriesPlugin, self).__init__(parentObj)
+        self.__zoneCenterEntryID = None
+        return
+
+    def start(self):
+        super(HBCenteredPersonalEntriesPlugin, self).start()
+        bb = BigWorld.player().arena.arenaType.boundingBox
+        center = Math.Vector3((bb[0][0] + bb[1][0]) / 2.0, 0, (bb[0][1] + bb[1][1]) / 2.0)
+        matrix = Math.Matrix()
+        matrix.setTranslate(center)
+        self.__zoneCenterEntryID = self._addEntry(self._EMPTY_SYMBOL, _C_NAME.PERSONAL, matrix=matrix, active=True)
+
+    def getZoneCenterEntryID(self):
+        return self.__zoneCenterEntryID
+
+
 class HistoricalMinimapComponent(HBMinimapMeta):
+
+    class _MapParams(object):
+
+        def __init__(self, sizeIndex, zoom, centerEntryID=None):
+            self.sizeIndex = sizeIndex
+            self.zoom = zoom
+            self.centerEntryID = centerEntryID
 
     def __init__(self):
         super(HistoricalMinimapComponent, self).__init__()
-        self._size = minimap_utils.MINIMAP_SIZE
         self.__isFullSize = False
-        self.__lastFullMapSize = float(settings.MINIMAP_MAX_SIZE_INDEX)
-        self.__lastMiniMapSize = float(settings.MINIMAP_MIN_SIZE_INDEX)
-        self.__lastSize = 1.0
+        self.__miniMapParams = self._MapParams(float(settings.MINIMAP_MIN_SIZE_INDEX), _MINIMAP_ZOOM)
+        self.__fullMapParams = self._MapParams(float(settings.MINIMAP_MAX_SIZE_INDEX), _FULLMAP_ZOOM)
 
-    def setCurrentSize(self, size):
-        self.__lastSize = size
-
-    def getCurrentSize(self):
-        return self.__lastSize
+    def applyNewSize(self, sizeIndex):
+        super(HistoricalMinimapComponent, self).applyNewSize(sizeIndex)
+        if not self.__isFullSize:
+            self.__miniMapParams.sizeIndex = sizeIndex
 
     def isFullViewMode(self):
         return self.__isFullSize
@@ -385,7 +408,9 @@ class HistoricalMinimapComponent(HBMinimapMeta):
         self.getComponent().setEntryParameters(entryId, doClip, scaleType)
 
     def setMinimapCenterEntry(self, entryID):
-        self.getComponent().setMinimapCenterEntry(entryID)
+        if not self.__isFullSize:
+            self.__miniMapParams.centerEntryID = entryID
+            self.getComponent().setMinimapCenterEntry(entryID)
 
     def onZoomModeChanged(self, change):
         pass
@@ -397,16 +422,17 @@ class HistoricalMinimapComponent(HBMinimapMeta):
         return GUI.ScrollingMinimapGUIComponentAS3(self.app.movie, settings.MINIMAP_COMPONENT_PATH)
 
     def _processMinimapSize(self, minSize, maxSize):
-        mapWidthPx, mapHeightPx = self._calculateDimensions(minSize, maxSize)
-        self._size = (mapWidthPx, mapHeightPx)
+        mapWidthPx, mapHeightPx = minimap_utils.metersToMinimapPixels(minSize, maxSize)
         self.as_setMapDimensionsS(mapWidthPx, mapHeightPx)
+        size = self._getMinimapSize()
+        self.__fullMapParams.zoom = min(mapWidthPx / size[0], mapHeightPx / size[1])
 
     def _setupPlugins(self, arenaVisitor):
         setup = super(HistoricalMinimapComponent, self)._setupPlugins(arenaVisitor)
         setup['bot_appear_notification'] = BotAppearNotificationPlugin
         setup['loot_objects'] = LootObjectsEntriesPlugin
         setup['vehicles'] = EventArenaVehiclesPlugin
-        setup['personal'] = CenteredPersonalEntriesPlugin
+        setup['personal'] = HBCenteredPersonalEntriesPlugin
         setup['pinging'] = HistoricalBattlesMinimapPingPlugin
         setup['equipments'] = HistoricalEquipmentsPlugin
         setup['minimap_background'] = MiniMapBackground
@@ -418,32 +444,36 @@ class HistoricalMinimapComponent(HBMinimapMeta):
 
     def _populate(self):
         super(HistoricalMinimapComponent, self)._populate()
+        personalPlugin = self.getPlugin('personal')
+        if personalPlugin is not None:
+            self.__fullMapParams.centerEntryID = personalPlugin.getZoneCenterEntryID()
         self.changeMinimapZoom(self._getZoom())
+        return
 
     def _getZoom(self):
-        if self.isFullViewMode():
-            return _FULLMAP_ZOOM
-        return _MINIMAP_ZOOM
+        return self.__mapParams.zoom
 
-    @staticmethod
-    def _calculateDimensions(minSize, maxSize):
-        mapWidthPx = abs(maxSize[0] - minSize[0]) * _MINIMAP_1M_IN_PX
-        mapHeightPx = abs(maxSize[1] - minSize[1]) * _MINIMAP_1M_IN_PX
-        return (mapWidthPx, mapHeightPx)
+    @property
+    def __mapParams(self):
+        if self.__isFullSize:
+            return self.__fullMapParams
+        return self.__miniMapParams
 
     def __setViewMode(self, toFullSize):
         if self.isFullViewMode() == toFullSize:
             return
-        if self.isFullViewMode():
-            self.__lastFullMapSize = self.getCurrentSize()
         else:
-            self.__lastMiniMapSize = self.getCurrentSize()
-        zoomToUse, sizeToUse = (_FULLMAP_ZOOM, self.__lastFullMapSize) if toFullSize else (_MINIMAP_ZOOM, self.__lastMiniMapSize)
-        self.changeMinimapZoom(zoomToUse)
-        self.as_setTabModeS(toFullSize)
-        super(HistoricalMinimapComponent, self).applyNewSize(sizeToUse)
-        self.as_setSizeS(int(sizeToUse))
-        self.__isFullSize = toFullSize
+            self.__isFullSize = toFullSize
+            centerEntryID = self.__mapParams.centerEntryID
+            if centerEntryID is not None:
+                self.getComponent().setMinimapCenterEntry(centerEntryID)
+            zoom = self.__mapParams.zoom
+            sizeIndex = self.__mapParams.sizeIndex
+            self.changeMinimapZoom(zoom)
+            self.as_setTabModeS(self.__isFullSize)
+            self.as_setSizeS(int(sizeIndex))
+            super(HistoricalMinimapComponent, self).applyNewSize(sizeIndex)
+            return
 
 
 class HBObjectivesPointMarkerPlugin(EntriesPlugin, HBStaticObjectivesMarkerComponent, HBVehicleObjectivesMarkerComponent):
@@ -619,10 +649,6 @@ class HistoricalAttackDirectionPlugin(EventScalableEntriesPlugin):
 
 
 class HBGlobalSettingsPlugin(GlobalSettingsPlugin):
-
-    def applyNewSize(self, sizeIndex):
-        super(HBGlobalSettingsPlugin, self).applyNewSize(sizeIndex)
-        self._parentObj.setCurrentSize(sizeIndex)
 
     def _toogleVisible(self):
         pass

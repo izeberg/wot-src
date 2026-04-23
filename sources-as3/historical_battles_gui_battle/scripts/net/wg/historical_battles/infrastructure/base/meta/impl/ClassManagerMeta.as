@@ -64,6 +64,7 @@ package net.wg.historical_battles.infrastructure.base.meta.impl
    import net.wg.historical_battles.gui.battle.views.minimap.components.entries.HBArrowContainer;
    import net.wg.historical_battles.gui.battle.views.minimap.components.entries.HBArrowMinimapEntry;
    import net.wg.historical_battles.gui.battle.views.minimap.components.entries.HBCustomMinimapEntry;
+   import net.wg.historical_battles.gui.battle.views.minimap.components.entries.HBEmptyMinimapEntry;
    import net.wg.historical_battles.gui.battle.views.minimap.components.entries.HBKeyTargetMinimapEntry;
    import net.wg.historical_battles.gui.battle.views.minimap.components.entries.HbMinimapEntry;
    import net.wg.historical_battles.gui.battle.views.minimap.components.entries.MineMinimapEntry;
@@ -256,6 +257,8 @@ package net.wg.historical_battles.infrastructure.base.meta.impl
       public static const NET_WG_HISTORICAL_BATTLES_GUI_BATTLE_VIEWS_MINIMAP_COMPONENTS_ENTRIES_HBARROWMINIMAPENTRY:Class = HBArrowMinimapEntry;
       
       public static const NET_WG_HISTORICAL_BATTLES_GUI_BATTLE_VIEWS_MINIMAP_COMPONENTS_ENTRIES_HBCUSTOMMINIMAPENTRY:Class = HBCustomMinimapEntry;
+      
+      public static const NET_WG_HISTORICAL_BATTLES_GUI_BATTLE_VIEWS_MINIMAP_COMPONENTS_ENTRIES_HBEMPTYMINIMAPENTRY:Class = HBEmptyMinimapEntry;
       
       public static const NET_WG_HISTORICAL_BATTLES_GUI_BATTLE_VIEWS_MINIMAP_COMPONENTS_ENTRIES_HBKEYTARGETMINIMAPENTRY:Class = HBKeyTargetMinimapEntry;
       

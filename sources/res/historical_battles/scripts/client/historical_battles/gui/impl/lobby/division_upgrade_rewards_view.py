@@ -13,17 +13,18 @@ _logger = logging.getLogger(__name__)
 
 class DivisionUpgradeRewardsView(ViewImpl):
     __gameEventController = dependency.descriptor(IGameEventController)
-    __slots__ = ('__subdivisionId', '__previousLevel', '__currentLevel')
+    __slots__ = ('__subdivisionId', '__previousLevel', '__currentLevel', '__closeCallback')
     _COMMON_SOUND_SPACE = GENERAL_SOUND_SPACE
 
-    def __init__(self, layoutID, subdivisionId, prevLvl, currLvl):
+    def __init__(self, layoutID, divisionData, closeCallback):
         settings = ViewSettings(layoutID)
         settings.flags = ViewFlags.VIEW
         settings.model = DivisionUpgradeRewardsViewModel()
         super(DivisionUpgradeRewardsView, self).__init__(settings)
-        self.__subdivisionId = subdivisionId
-        self.__previousLevel = prevLvl
-        self.__currentLevel = currLvl
+        self.__subdivisionId = divisionData.get('divisionID')
+        self.__previousLevel = divisionData.get('prevLvl')
+        self.__currentLevel = divisionData.get('currentLvl')
+        self.__closeCallback = closeCallback
 
     @property
     def viewModel(self):
@@ -48,6 +49,7 @@ class DivisionUpgradeRewardsView(ViewImpl):
         self.__updateModel()
 
     def _finalize(self):
+        self.__executeCloseCallback()
         self.__subdivisionId = None
         self.__previousLevel = None
         self.__currentLevel = None
@@ -90,11 +92,19 @@ class DivisionUpgradeRewardsView(ViewImpl):
         abilities.invalidate()
 
     def __onClose(self, *args):
+        self.__executeCloseCallback()
         self.destroyWindow()
+
+    def __executeCloseCallback(self):
+        if self.__closeCallback is not None:
+            callback = self.__closeCallback
+            self.__closeCallback = None
+            callback()
+        return
 
 
 class DivisionUpgradeRewardsViewWindow(WindowImpl):
     __slots__ = ()
 
-    def __init__(self, subdivisionId, prevLvl, currLvl, parent=None):
-        super(DivisionUpgradeRewardsViewWindow, self).__init__(WindowFlags.WINDOW | WindowFlags.WINDOW_FULLSCREEN, content=DivisionUpgradeRewardsView(R.views.historical_battles.lobby.DivisionUpgradeRewardsView(), subdivisionId, prevLvl, currLvl), parent=parent)
+    def __init__(self, divisionData, closeCallback=None, parent=None):
+        super(DivisionUpgradeRewardsViewWindow, self).__init__(WindowFlags.WINDOW | WindowFlags.WINDOW_FULLSCREEN, content=DivisionUpgradeRewardsView(R.views.historical_battles.lobby.DivisionUpgradeRewardsView(), divisionData, closeCallback), parent=parent)

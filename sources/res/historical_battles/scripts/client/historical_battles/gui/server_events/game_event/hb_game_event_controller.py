@@ -1,4 +1,4 @@
-import time, typing, logging
+import sys, time, typing, logging
 from math import ceil
 import BigWorld
 from shared_utils import first, findFirst
@@ -42,6 +42,7 @@ from tutorial.control.context import GLOBAL_FLAG
 from historical_battles_common.hb_constants import HB_GAME_PARAMS_KEY, AccountSettingsKeys
 from historical_battles_common.hb_constants_extension import PREBATTLE_TYPE, QUEUE_TYPE, ARENA_BONUS_TYPE
 import HBAccountSettings
+from historical_battles.gui.game_control.awards_controller import AwardViewer
 from historical_battles.gui.gui_constants import SCH_CLIENT_MSG_TYPE
 from historical_battles.gui.impl.lobby.hb_helpers.hangar_helpers import closeEvent
 from historical_battles.gui.server_events.game_event.front_progress import FrontsProgressController
@@ -401,8 +402,12 @@ class HBGameEventController(PerformanceAnalyzerMixin, Notifiable, IGameEventCont
            'divisionVehicles': subdivisionTanks, 
            'unlockedAbilities': unlockedAbilities}
         self.__notificationsCtrl.pushDivisionLevelUpSysMsg(data)
-        window = DivisionUpgradeRewardsViewWindow(divisionId, prevLvl, currLvl)
-        window.load()
+        awardData = {'stage': sys.maxint, 
+           'divisionID': divisionId, 
+           'prevLvl': prevLvl, 
+           'currentLvl': currLvl, 
+           'windowClass': DivisionUpgradeRewardsViewWindow}
+        AwardViewer.show(awardData)
         self.__selectVehicle()
 
     def __updateArenaBans(self):

@@ -9,8 +9,8 @@
 	</crew>
 	<supplySlots>1 1 1 6 6 6 8 8 8</supplySlots>
 	<speedLimits>
-		<forward>54</forward>
-		<backward>20</backward>
+		<forward>55</forward>
+		<backward>23</backward>
 	</speedLimits>
 	<invisibility>
 		<moving>
@@ -2440,8 +2440,11 @@
 		<detailed>
 			<engines>
 				<V_2_hb25>
-					<smplEnginePower>500</smplEnginePower>
-					<smplFwMaxSpeed>54</smplFwMaxSpeed>
+					<smplEnginePower>
+						564.06
+						<!--BW_String-->
+					</smplEnginePower>
+					<smplFwMaxSpeed>55</smplFwMaxSpeed>
 				</V_2_hb25>
 			</engines>
 			<chassis>

@@ -9,38 +9,38 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "headerButtons/historicalBattles/availability/days"
-msgstr "%(day)s д"
+msgstr "%(day)s д."
 
 msgid "headerButtons/historicalBattles/availability/hours"
-msgstr "%(hour)s ч"
+msgstr "%(hour)s ч."
 
 msgid "headerButtons/historicalBattles/availability/lessThanHour"
-msgstr "менее 1 ч"
+msgstr "менее 1 ч."
 
 msgid "headerButtons/historicalBattles/endsIn"
-msgstr "До конца события: %(timeLeft)s"
+msgstr "Да канца падзеі: %(timeLeft)s"
 
 msgid "mode/historicalBattles/description"
-msgstr "Отдельный режим с боями против ИИ, посвящённый Дню Победы."
+msgstr "Отдельный режим с боями против ИИ, посвящённый Дню Победы."
 
 msgid "mode/historicalBattles/name"
 msgstr "Время героев"
 
 msgid "mode/historicalBattles/performance/description/highRisk"
 msgstr ""
-"Производительности вашего компьютера недостаточно для данного режима.\n"
-"Будут наблюдаться проблемы с графикой и перемещением техники, возможно также аварийное закрытие клиента игры."
+"Производительности вашего компьютера недостаточно для данного режима.\n"
+"Будут наблюдаться проблемы с графикой и перемещением техники, возможно также аварийное закрытие клиента игры."
 
 msgid "mode/historicalBattles/performance/description/mediumRisk"
 msgstr ""
-"Режим требователен к компьютеру.\n"
-"Карта может долго загружаться, возможны проблемы с графикой и перемещением техники в бою. В случае недостаточной производительности попробуйте понизить настройки графики."
+"Рэжым патрабавальны да камп'ютара.\n"
+"Мапа можа доўга загружацца, магчымыя праблемы з графікай і перамяшчэннем тэхнікі ў баі. У выпадку недастатковай прадукцыйнасці паспрабуйце знізіць налады графікі."
 
 msgid "mode/historicalBattles/performance/highRisk"
-msgstr "Низкая производительность"
+msgstr "Нізкая прадукцыйнасць"
 
 msgid "mode/historicalBattles/performance/mediumRisk"
-msgstr "Снижение производительности"
+msgstr "Зніжэнне прадукцыйнасці"
 
 msgid "mode/historicalBattles/squadName"
 msgstr "Взвод «Время героев»"

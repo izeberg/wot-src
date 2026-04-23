@@ -11,8 +11,8 @@
 	<supplySlots>2 1 1 6 6 6 7 8 8 8</supplySlots>
 	<postProgressionTree>role_MT_universal</postProgressionTree>
 	<speedLimits>
-		<forward>50</forward>
-		<backward>20</backward>
+		<forward>55</forward>
+		<backward>23</backward>
 	</speedLimits>
 	<invisibility>
 		<moving>
@@ -4881,8 +4881,11 @@
 		<detailed>
 			<engines>
 				<V-54K_hb25>
-					<smplEnginePower>600</smplEnginePower>
-					<smplFwMaxSpeed>50</smplFwMaxSpeed>
+					<smplEnginePower>
+						700.35
+						<!--BW_String-->
+					</smplEnginePower>
+					<smplFwMaxSpeed>55</smplFwMaxSpeed>
 				</V-54K_hb25>
 			</engines>
 			<chassis>
