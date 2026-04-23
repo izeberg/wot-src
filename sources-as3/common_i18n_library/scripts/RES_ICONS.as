@@ -45935,6 +45935,8 @@ package
       
       public static const MAPS_ICONS_SKILLTREE_NOTIFICATIONS_PERK_AVAILABLE_VEHICLES_F136_AMX_67_IMBATTABLE:String = "../maps/icons/skillTree/notifications/perk_available/vehicles/F136_AMX_67_Imbattable.png";
       
+      public static const MAPS_ICONS_SKILLTREE_NOTIFICATIONS_PERK_AVAILABLE_VEHICLES_F143_FAUTEUR:String = "../maps/icons/skillTree/notifications/perk_available/vehicles/F143_Fauteur.png";
+      
       public static const MAPS_ICONS_SKILLTREE_NOTIFICATIONS_PERK_AVAILABLE_VEHICLES_G185_LEOPARD_120_VERBESSERT:String = "../maps/icons/skillTree/notifications/perk_available/vehicles/G185_Leopard_120_Verbessert.png";
       
       public static const MAPS_ICONS_SKILLTREE_NOTIFICATIONS_PERK_AVAILABLE_VEHICLES_G187_TASCHENRATTE:String = "../maps/icons/skillTree/notifications/perk_available/vehicles/G187_Taschenratte.png";
